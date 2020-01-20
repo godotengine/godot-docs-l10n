@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,6 +38,8 @@ msgid ""
 "Download and install the Android SDK from https://developer.android.com/"
 "studio/"
 msgstr ""
+"https://developer.android.com/studio/ からAndroid SDKをダウンロードしてインス"
+"トールします"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid "Install OpenJDK or Oracle JDK"
@@ -50,6 +52,11 @@ msgid ""
 "index.html>`__. Versions below JDK 8 may not work; some users have reported "
 "issues with the jarsigner (used to sign the APKs) in JDK 7."
 msgstr ""
+"`OpenJDK <https://github.com/ojdkbuild/ojdkbuild>` または `Oracle JDK "
+"<http://www.oracle.com/technetwork/java/javase/downloads/index.html>` をダウ"
+"ンロードしてインストールします。 JDK 8以下のバージョンは動作しない可能性があ"
+"ります。一部のユーザーは、JDK 7のjarsigner(APKの署名に使用)の問題を報告してい"
+"ます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
 msgid "Create a debug.keystore"
@@ -101,6 +108,8 @@ msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
 "for the user account in the computer (it's independent from the project)."
 msgstr ""
+"[エディタ設定]画面に入力します。この画面には、コンピュータのユーザー アカウン"
+"トのエディタ設定が含まれます (プロジェクトから独立しています)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:51
 msgid "Scroll down to the section where the Android settings are located:"
@@ -120,7 +129,7 @@ msgstr "*jarsigner* 実行可能ファイル (JDK6または8から)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:59
 msgid "The debug *keystore*"
-msgstr "デバッグ*キーストア*"
+msgstr "デバッグ\\ *キーストア*"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
 msgid "Once that is configured, everything is ready to export to Android!"
@@ -128,13 +137,16 @@ msgstr "設定が完了すれば、Androidにエクスポートできるよう�
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
 msgid "Exporting for Google Play Store"
-msgstr ""
+msgstr "Google Playストア用にエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
 msgstr ""
+"APKをGoogleのPlayストアにアップロードするには、デバッグ以外のキーストアファイ"
+"ルを使用して署名する必要があります。このようなファイルは次のように生成できま"
+"す。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
 msgid ""
@@ -143,24 +155,30 @@ msgid ""
 "guides to learn more about `APK signing <https://developer.android.com/"
 "studio/publish/app-signing>`__."
 msgstr ""
+"このキーストアとキーは、開発者の身元を確認し、パスワードを記憶し、安全な場所"
+"に保管するために使用されます。GoogleのAndroidデベロッパー ガイドを使用し"
+"て、\\ `APK 署名 <https://developer.android.com/studio/publish/app-signing>` "
+"の詳細をご覧ください。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
 msgid "Now fill in the following forms in your Android Export Presets:"
-msgstr ""
+msgstr "次に、Android エクスポートプリセットで次のフォームに入力します:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
 msgid "**Release:** Enter the path to the keystore file you just generated."
-msgstr ""
+msgstr "**Release:** 生成したばかりのキーストアファイルへのパスを入力します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
 msgid "**Release User:** Replace with the key alias."
-msgstr ""
+msgstr "**Release User:** キーエイリアスで置き換えます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
 "key password currently have to be the same."
 msgstr ""
+"**Release Password:** キーパスワード。現在、キーストアのパスワードとキーのパ"
+"スワードは同じでなければならないことに注意してください。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
 msgid ""
@@ -168,16 +186,21 @@ msgid ""
 "use a version control system, you should remove it from public repositories "
 "and add it to your ``.gitignore`` file or equivalent."
 msgstr ""
+"**export_presets.cfgファイルには機密情報が含まれるようになりました。** バー"
+"ジョン管理システムを使用する場合は、パブリックリポジトリから削除し、 ``."
+"gitignore`` ファイルまたは同等のファイルに追加する必要があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while choosing "
 "the APK's name."
 msgstr ""
+"APKの名前を選択する際は、[** Export with Debug **]チェックボックスをオフにす"
+"ることを忘れないでください。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:93
 msgid "Optimizing the APK size"
-msgstr ""
+msgstr "APKサイズの最適化"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95
 msgid ""
@@ -188,6 +211,12 @@ msgid ""
 "for a single architecture. Note that applications targeting ARMv7 can also "
 "run on ARMv8 devices, but the opposite is not true."
 msgstr ""
+"デフォルトでは、APKにはARMv7アーキテクチャとARMv8アーキテクチャの両方のネイ"
+"ティブライブラリが含まれます。これにより、サイズが大幅に増加します。より小さ"
+"なAPKを作成するには、プロジェクトのAndroidエクスポートプリセットで **Armeabi-"
+"v 7a** または **Arm 64 -v 8a** のチェックを外します。これにより、単一のアーキ"
+"テクチャのライブラリのみを含むAPKが作成されます。 ARMv7をターゲットとするアプ"
+"リケーションはARMv8デバイスでも実行できますが、その逆は当てはまりません。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
 msgid ""
@@ -199,6 +228,13 @@ msgid ""
 "creating an APK for ARMv7 and ARMv8 is usually sufficient to cover most "
 "devices in use today."
 msgstr ""
+"2019年8月以降、Google Playではすべてのアプリケーションを64ビット形式で利用可"
+"能である必要があります。これは、 ARMV7ライブラリ\\ *のみ\\* を含むAPKはアップ"
+"ロードできないことを意味します。これを解決するには、\\ `Multiple APK support "
+"<https://developer.android.com/google/play/publishing/multiple-apks>` を使用"
+"して、いくつかのAPKをGoogle Playにアップロードできます。各APKは単一のアーキテ"
+"クチャをターゲットにする必要があります。通常、ARMv7およびARMv8用のAPKを作成す"
+"るだけで、現在使用されているほとんどのデバイスをカバーできます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:109
 msgid ""
@@ -206,3 +242,6 @@ msgid ""
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "
 "information."
 msgstr ""
+"必要な機能のみを使用してAndroidエクスポートテンプレートをコンパイルすることに"
+"より、サイズをさらに最適化できます。詳細については、\\ :ref:"
+"`doc_optimizing_for_size` を参照してください。"

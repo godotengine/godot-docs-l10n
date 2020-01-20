@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:4
 msgid "Interpolation"
-msgstr ""
+msgstr "Интерполяция"
 
 #: ../../docs/tutorials/math/interpolation.rst:6
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "to become familiar with it in order to expand your horizons as a graphics "
 "developer."
 msgstr ""
+"Интерполяция — одна из самых базовых операций в программировании графики. "
+"Будет неплохо с ней ознакомиться, дабы расширить Ваши горизонты как "
+"разработчика графики."
 
 #: ../../docs/tutorials/math/interpolation.rst:8
 msgid ""
@@ -39,16 +42,21 @@ msgid ""
 "As an example if ``t`` is 0, then the state is A. If ``t`` is 1, then the "
 "state is B. Anything in-between is an *interpolation*."
 msgstr ""
+"Например, если переменная ``t`` равна 0, тогда состояние равняется A. Если "
+"же ``t`` равна 1, тогда состояние равняется B. Всё, что между ними, зовётся "
+"*интерполяцией*."
 
 #: ../../docs/tutorials/math/interpolation.rst:12
 msgid ""
 "Between two real (floating point) numbers, a simple interpolation is usually "
 "described as:"
 msgstr ""
+"Между двумя вещественными числами (т. е. с плавающей точкой), простая "
+"интерполяция обычно описывается так:"
 
 #: ../../docs/tutorials/math/interpolation.rst:19
 msgid "And often simplified to:"
-msgstr ""
+msgstr "И часто сокращается до:"
 
 #: ../../docs/tutorials/math/interpolation.rst:26
 msgid ""
@@ -56,6 +64,10 @@ msgid ""
 "another at *constant speed* is *\"linear\"*. So, when you hear about *Linear "
 "Interpolation*, you know they are referring to this simple formula."
 msgstr ""
+"Такая интерполяция, изменяющая одно значение на другое с *постоянной "
+"скоростью*, называется *линейной*. Поэтому, всякий раз, когда Вы услышите "
+"*Линейная интерполяция*, то будете знать, что имеется в виду эта простая "
+"формула."
 
 #: ../../docs/tutorials/math/interpolation.rst:28
 msgid ""
@@ -63,11 +75,13 @@ msgid ""
 "recommended read afterwards is the :ref:`Bezier <doc_beziers_and_curves>` "
 "page."
 msgstr ""
+"Существуют другие типы интерполяций, о которых мы не будем здесь говорить. "
+"Чтобы прочесть о них, Вам рекомендуется проследовать на страницу :ref:"
+"`Bezier <doc_beziers_and_curves>`."
 
 #: ../../docs/tutorials/math/interpolation.rst:31
-#, fuzzy
 msgid "Vector interpolation"
-msgstr "Операции над векторами"
+msgstr "Векторная интерполяция"
 
 #: ../../docs/tutorials/math/interpolation.rst:33
 msgid ""
@@ -77,6 +91,11 @@ msgid ""
 "<class_Vector2_method_linear_interpolate>` and :ref:`Vector3."
 "linear_interpolate() <class_Vector3_method_linear_interpolate>`."
 msgstr ""
+"Векторные типы (:ref:`Vector2 <class_Vector2>` и :ref:`Vector3 "
+"<class_Vector3>`) тоже могут быть интерполированы, так как реализуют "
+"подходящие для этого функции :ref:`Vector2.linear_interpolate() "
+"<class_Vector2_method_linear_interpolate>` и :ref:`Vector3."
+"linear_interpolate() <class_Vector3_method_linear_interpolate>`."
 
 #: ../../docs/tutorials/math/interpolation.rst:36
 msgid ""
@@ -85,11 +104,17 @@ msgid ""
 "cubic_interpolate() <class_Vector3_method_linear_interpolate>`, which do a :"
 "ref:`Bezier <doc_beziers_and_curves>` style interpolation."
 msgstr ""
+"Для кубической интерполяции, также существуют :ref:`Vector2."
+"cubic_interpolate() <class_Vector2_method_linear_interpolate>` и :ref:"
+"`Vector3.cubic_interpolate() <class_Vector3_method_linear_interpolate>`, "
+"выполняющие интерполяцию в стиле :ref:`Bezier <doc_beziers_and_curves>`."
 
 #: ../../docs/tutorials/math/interpolation.rst:38
 msgid ""
 "Here is simple pseudo-code for going from point A to B using interpolation:"
 msgstr ""
+"Ниже приведён простой псевдокод, осуществляющий переход из точки A в точку B "
+"с использованием интерполяции:"
 
 #: ../../docs/tutorials/math/interpolation.rst:48
 #, fuzzy
@@ -97,22 +122,28 @@ msgid "It will produce the following motion:"
 msgstr "Это приведёт к тому что:"
 
 #: ../../docs/tutorials/math/interpolation.rst:53
-#, fuzzy
 msgid "Transform interpolation"
-msgstr "Условие"
+msgstr "Интерполяция трансформаций"
 
 #: ../../docs/tutorials/math/interpolation.rst:55
+#, fuzzy
 msgid ""
 "It is also possible to interpolate whole transforms (make sure they have "
 "either uniform scale or, at least, the same non-uniform scale). For this, "
 "the function :ref:`Transform.interpolate_with() "
 "<class_Transform_method_interpolate_with>` can be used."
 msgstr ""
+"Также возможно интерполировать целые трансформации (убедившись, что у них "
+"равномерная шкала, или, хотя бы, одна и та же неравномерная шкала). Для "
+"этого может быть использована функция :ref:`Transform.interpolate_with() "
+"<class_Transform_method_interpolate_with>`."
 
 #: ../../docs/tutorials/math/interpolation.rst:58
 msgid ""
 "Here is an example of transforming a monkey from Position1 to Position2:"
 msgstr ""
+"Вот пример трансформирования обезьяны с первой позиции (Position1) на вторую "
+"(Position2):"
 
 #: ../../docs/tutorials/math/interpolation.rst:62
 #, fuzzy
@@ -134,6 +165,9 @@ msgid ""
 "Interpolation can be used to smooth movement, rotation, etc. Here is an "
 "example of a circle following the mouse using smoothed motion:"
 msgstr ""
+"Интерполяция может быть использована для сглаживания движений, поворотов, и "
+"т. п. Вот пример круга, следующего за мышкой с использованием плавного "
+"движения:"
 
 #: ../../docs/tutorials/math/interpolation.rst:94
 #, fuzzy
@@ -145,3 +179,6 @@ msgid ""
 "This useful for smoothing camera movement, allies following you (ensuring "
 "they stay within a certain range), and many other common game patterns."
 msgstr ""
+"Это полезно для плавного движения камеры, союзников, следующих за вами "
+"(гарантируя, что они находятся в определённом радиусе) и для многих других "
+"распространённых игровых паттернов."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,9 @@ msgid ""
 "relevant editor settings via: ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
+"Godotは、Sublime TextやVisual Studio Codeなどの外部テキストエディタでも使用で"
+"きます。外部テキストエディタを有効にするには、次の場所を参照して下さい: ``エ"
+"ディタ -> エディタ設定 -> Text Editor -> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:12
 msgid ""
@@ -36,6 +39,10 @@ msgid ""
 "open and other relevant arguments. Godot will replace the following "
 "placeholders in the flags string:"
 msgstr ""
+"2つのフィールドがあります:実行可能パスとコマンドラインフラグです。フラグを使"
+"用すると、エディターをGodotに統合して、開くファイルパスとその他の関連する引数"
+"を渡すことができます。 Godotは、フラグ文字列の次のプレースホルダーを置き換え"
+"ます。"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
@@ -43,11 +50,11 @@ msgstr "Execフラグのフィールド"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Is replaced with"
-msgstr "に置き換えられます"
+msgstr "これに置き換えられます"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "``{project}``"
-msgstr ""
+msgstr "\\ ``{project}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "The absolute path to the project directory"
@@ -55,7 +62,7 @@ msgstr "プロジェクトディレクトリへの絶対パス"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "``{file}``"
-msgstr ""
+msgstr "\\ ``{file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "The absolute path to the file"
@@ -63,7 +70,7 @@ msgstr "ファイルへの絶対パス"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "``{col}``"
-msgstr ""
+msgstr "\\ ``{col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The column number of the error"
@@ -71,7 +78,7 @@ msgstr "エラーの列番号"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "``{line}``"
-msgstr ""
+msgstr "\\ ``{line}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The line number of the error"
@@ -91,44 +98,45 @@ msgstr "Execフラグ"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "Geany/Kate"
-msgstr ""
+msgstr "\\ Geany/Kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "``{file} --line {line} --column {col}``"
-msgstr ""
+msgstr "\\ ``{file} --line {line} --column {col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "Atom/Sublime Text"
-msgstr ""
+msgstr "\\ Atom/Sublime Text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "``{file}:{line}``"
-msgstr ""
+msgstr "\\ ``{file}:{line}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "JetBrains Rider"
-msgstr ""
+msgstr "\\ JetBrains Rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "``--line {line} {file}``"
-msgstr ""
+msgstr "\\ ``--line {line} {file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "Visual Studio Code"
-msgstr ""
+msgstr "\\ Visual Studio Code"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "``{project} --goto {file}:{line}:{col}``"
-msgstr ""
+msgstr "\\ ``{project} --goto {file}:{line}:{col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "Vim (gVim)"
-msgstr ""
+msgstr "\\ Vim (gVim)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "``\"+call cursor({line}, {col})\" {file}``"
-msgstr ""
+msgstr "\\ ``\"+call cursor({line}, {col})\" {file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:45
 msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
 msgstr ""
+"Visual Studio Codeの場合、 ``code.cmd`` ファイルを指定する必要があります。"

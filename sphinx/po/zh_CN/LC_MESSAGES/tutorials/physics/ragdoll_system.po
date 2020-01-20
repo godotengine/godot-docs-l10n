@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,9 +109,10 @@ msgstr ""
 "骨骼太小而不能在模拟中产生差异，以及所有实用程序骨骼。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:38
+#, fuzzy
 msgid ""
 "For example, if we take a humanoid, you do not want to have physical bones "
-"for each finger. you can use a single bone for the entire hand instead, or "
+"for each finger. You can use a single bone for the entire hand instead, or "
 "one for the palm, one for the thumb, and a last one for the other four "
 "fingers."
 msgstr ""
@@ -119,8 +120,9 @@ msgstr ""
 "代替整个手部，或者一个用于手掌，一个用于拇指，最后一个用于其他四个手指。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:40
+#, fuzzy
 msgid ""
-"Remove these physical bones : ``MASTER``, ``waist``, ``neck``, "
+"Remove these physical bones: ``MASTER``, ``waist``, ``neck``, "
 "``headtracker``. This gives us an optimized skeleton and makes it easier to "
 "control the ragdoll."
 msgstr ""

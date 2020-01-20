@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,6 +70,17 @@ msgid ""
 "inspector, and selecting \"Convert to CPUParticles2D\" in the \"Particles\" "
 "menu of the toolbar."
 msgstr ""
+"Godotは、2Dパーティクル用に2つの異なるノード、\\ :ref:`class_Particles2D` お"
+"よび :ref:`class_CPUParticles2D` を提供します。 Particles2Dはより高度で、GPU"
+"を使用してパーティクルエフェクトを処理しますが、それはより高度なグラフィック"
+"スAPI、この場合はGLES3レンダラーに限定されます。 GLES2バックエンドを使用する"
+"プロジェクトの場合、CPUParticles2Dは、Particles2Dとほぼ同等の機能を備えたCPU"
+"駆動のオプションですが、パフォーマンスは低下します。 Particles2Dは :ref:"
+"`class_ParticlesMaterial` を介して(およびオプションでカスタムシェーダーを使用"
+"して)構成されますが、一致するオプションはCPUParticles2Dのノードプロパティを介"
+"して提供されます(トレイル設定を除く)。インスペクタでノードをクリックし、ツー"
+"ルバーの「Particles」メニューで「Convert to CPUParticles2D」を選択すると、"
+"Particles2DノードをCPUParticles2Dノードに変換できます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:36
 msgid ""
@@ -79,10 +90,14 @@ msgid ""
 "your Particles2D node in the inspector. This is because the node needs a "
 "ParticlesMaterial to function."
 msgstr ""
+"このチュートリアルの残りの部分では、Particles2Dノードを使用します。最初に、"
+"Particles2Dノードをシーンに追加します。そのノードを作成すると、白い点のみが作"
+"成され、インスペクタのParticles2Dノードの横に警告アイコンがあることに気付くで"
+"しょう。これは、ノードが機能するためにParticlesMaterialが必要だからです。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:42
 msgid "ParticlesMaterial"
-msgstr ""
+msgstr "\\ ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:44
 msgid ""
@@ -101,7 +116,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:56
 msgid "Texture"
-msgstr ""
+msgstr "\\ Texture"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:58
 msgid ""
@@ -109,6 +124,9 @@ msgid ""
 "extended to animated textures via spritesheet). The texture is set via the "
 "relevant texture property:"
 msgstr ""
+"パーティクルシステムは単一のテクスチャを使用します(将来、これはスプライトシー"
+"トを介してアニメーションテクスチャに拡張される可能性があります)。テクスチャ"
+"は、関連するテクスチャプロパティを介して設定されます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:65
 msgid "Time parameters"
@@ -116,35 +134,39 @@ msgstr "時間パラメータ"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:68
 msgid "Lifetime"
-msgstr ""
+msgstr "\\ Lifetime"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:70
 msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
 "a new particle is created to replace it."
 msgstr ""
+"すべてのパーティクルが生き続ける秒単位の時間。ライフタイムが終了すると、新し"
+"いパーティクルが作成されて置き換えられます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:73
 msgid "Lifetime: 0.5"
-msgstr ""
+msgstr "\\ Lifetime: 0.5"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:77
 msgid "Lifetime: 4.0"
-msgstr ""
+msgstr "\\ Lifetime: 4.0"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:82
 msgid "One Shot"
-msgstr ""
+msgstr "\\ One Shot"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:84
 msgid ""
 "When enabled, a Particles2D node will emit all of its particles once and "
 "then never again."
 msgstr ""
+"有効にすると、Particles2Dノードはすべてのパーティクルを一度だけ放出し、その後"
+"は二度と放出しません。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:88
 msgid "Preprocess"
-msgstr ""
+msgstr "\\ Preprocess"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:90
 msgid ""
@@ -154,10 +176,14 @@ msgid ""
 "the system process a given number of seconds before it is actually drawn the "
 "first time."
 msgstr ""
+"パーティクルシステムは、パーティクルの放出がゼロから始まり、放出を開始しま"
+"す。これは、シーンを読み込むときに不便になる場合があり、トーチ、ミストなどの"
+"システムは、入力した瞬間に放出を開始します。プリプロセスは、システムが実際に"
+"最初に描画される前に指定された秒数を処理するために使用されます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:97
 msgid "Speed Scale"
-msgstr ""
+msgstr "\\ Speed Scale"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:99
 msgid ""
@@ -165,10 +191,13 @@ msgid ""
 "of a particle system. Lowering the value will make the particles slower "
 "while increasing the value will make the particles much faster."
 msgstr ""
+"速度スケールのデフォルト値は ``1`` で、パーティクルシステムの速度を調整するた"
+"めに使用されます。値を小さくすると粒子が遅くなり、値を大きくすると粒子が非常"
+"に速くなります。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:104
 msgid "Explosiveness"
-msgstr ""
+msgstr "\\ Explosiveness"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:106
 msgid ""
@@ -176,34 +205,41 @@ msgid ""
 "emitted every 0.1 seconds. The explosiveness parameter changes this, and "
 "forces particles to be emitted all together. Ranges are:"
 msgstr ""
+"ライフタイムが ``1`` で、パーティクルが10個ある場合、0.1秒ごとにパーティクル"
+"が放出されることを意味します。explosiveness パラメータはこれを変更し、パー"
+"ティクルをすべて一緒に放出させます。範囲は次のとおりです。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:110
 msgid "0: Emit particles at regular intervals (default value)."
-msgstr ""
+msgstr "0: 一定の間隔でパーティクルを放出します(既定値)。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:111
 msgid "1: Emit all particles simultaneously."
-msgstr ""
+msgstr "1: すべてのパーティクルを同時に放出します。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:113
 msgid ""
 "Values in the middle are also allowed. This feature is useful for creating "
 "explosions or sudden bursts of particles:"
 msgstr ""
+"中間の値も使用できます。この機能は、パーティクルの爆発や突然のバーストを作成"
+"する場合に便利です。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:119
 msgid "Randomness"
-msgstr ""
+msgstr "\\ Randomness"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:121
 msgid ""
 "All physics parameters can be randomized. Random values range from ``0`` to "
 "``1``. The formula to randomize a parameter is:"
 msgstr ""
+"すべての物理パラメータをランダム化できます。ランダム値の範囲は ``0`` から "
+"``1`` です。パラメータをランダム化する数式は次のとおりです:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:129
 msgid "Fixed FPS"
-msgstr ""
+msgstr "\\ Fixed FPS"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:131
 msgid ""
@@ -212,24 +248,26 @@ msgid ""
 "render at 2 frames per second. Note this does not slow down the particle "
 "system itself."
 msgstr ""
+"この設定を使用して、固定FPSでレンダリングするようにパーティクルシステムを設定"
+"できます。たとえば、値を ``2`` に変更すると、パーティクルは毎秒2フレームでレ"
+"ンダリングされます。これにより、パーティクルシステム自体の速度が低下すること"
+"はありません。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:136
 msgid "Fract Delta"
-msgstr ""
+msgstr "\\ Fract Delta"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:138
 msgid "This can be used to turn Fract Delta on or off."
-msgstr ""
+msgstr "これを使用して、Fract Deltaをオンまたはオフにできます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
 msgid "Drawing parameters"
-msgstr ""
-"描画\n"
-"パラメータ"
+msgstr "描画パラメータ"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:144
 msgid "Visibility Rect"
-msgstr ""
+msgstr "\\ Visibility Rect"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:147
 msgid ""
@@ -237,6 +275,9 @@ msgid ""
 "If this rectangle is outside of the viewport, the engine will not render the "
 "particles on screen."
 msgstr ""
+"可視領域を設定する四角形は、画面上のパーティクルの可視性を制御します。この四"
+"角形がビューポートの外側にある場合、エンジンはパーティクルを画面にレンダリン"
+"グしません。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:149
 msgid ""
@@ -244,6 +285,9 @@ msgid ""
 "and its Height. The ``X`` and ``Y`` properties control the position of the "
 "upper-left corner of the rectangle, relative to the particle emitter."
 msgstr ""
+"長方形の ``W`` および ``H`` プロパティは、それぞれ幅と高さを制御します。\\ "
+"``X`` および ``Y`` プロパティは、パーティクルエミッタを基準とした長方形の左上"
+"隅の位置を制御します。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:153
 msgid ""
@@ -253,6 +297,11 @@ msgid ""
 "Particles2D node emitting particles for a few seconds and set the rectangle "
 "to fit the surface the particles take."
 msgstr ""
+"Godotは、2Dビューの上にあるツールバーを使用して、Visibility Rectを自動的に生"
+"成できます。これを行うには、Particles2Dノードを選択し、\\ ``Particles > "
+"Generate Visibility Rect`` をクリックします。 Godotは数秒間パーティクルを放出"
+"するParticles2Dノードをシミュレートし、パーティクルがとるサーフェスに合うよう"
+"に四角形を設定します。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:155
 msgid ""
@@ -261,10 +310,13 @@ msgid ""
 "move around, you can temporarily change the ``preprocess`` duration on the "
 "Particles2D node."
 msgstr ""
+"``Generation Time (sec)`` オプションを使用して、放出時間を制御できます。最大"
+"値は25秒です。パーティクルが移動する時間が長くなる場合は、Particles2Dノード"
+"の ``preprocess`` の継続時間を一時的に変更できます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:158
 msgid "Local Coords"
-msgstr "ローカル座標系"
+msgstr "\\ Local Coords"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:160
 msgid ""
@@ -272,16 +324,21 @@ msgid ""
 "emitted to is relative to the node. If the node is moved, all particles are "
 "moved with it:"
 msgstr ""
+"デフォルトでは、このオプションはオンになっており、パーティクルが放出される空"
+"間がノードに対して相対的であることを意味します。ノードを移動すると、すべての"
+"パーティクルも一緒に移動します:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:166
 msgid ""
 "If disabled, particles will emit to global space, meaning that if the node "
 "is moved, already emitted particles are not affected:"
 msgstr ""
+"無効にすると、パーティクルはグローバルな空間に放出され、ノードを移動しても、"
+"既に放出されたパーティクルは影響を受けません。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:172
 msgid "Draw Order"
-msgstr ""
+msgstr "\\ Draw Order"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:174
 msgid ""
@@ -289,14 +346,17 @@ msgid ""
 "means particles are drawn according to their emission order (default). "
 "``Lifetime`` means they are drawn in order of remaining lifetime."
 msgstr ""
+"これにより、個々のパーティクルが描画される順序がコントロールされます。\\ "
+"``Index`` は、パーティクルが放出順序に従って描画される事を意味します(デフォル"
+"ト)。\\ ``Lifetime`` は、残っている寿命の順に描画されることを意味します。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:179
 msgid "ParticlesMaterial settings"
-msgstr ""
+msgstr "パーティクルマテリアルの設定"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:198
 msgid "Spread"
-msgstr ""
+msgstr "\\ Spread"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:200
 msgid ""
@@ -305,18 +365,22 @@ msgid ""
 "all directions (+/- 180). For spread to do anything the \"Initial Velocity\" "
 "parameter must be greater than 0."
 msgstr ""
+"このパラメータは、基本的な ``放出方向`` に対していずれかの方向にランダムに加"
+"算される角度(度単位)です。\\ ``180`` のスプレッドでは、すべての方向(+/- 180"
+"度)で放出されます。スプレッドが作用するためには、\"Initial Velocity\"パラメー"
+"タが0より大きくなければなりません。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:208
 msgid "Gravity"
-msgstr ""
+msgstr "\\ Gravity"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:210
 msgid "The gravity applied to every particle."
-msgstr ""
+msgstr "すべてのパーティクルに適用される重力。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:215
 msgid "Initial Velocity"
-msgstr ""
+msgstr "\\ Initial Velocity"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:217
 msgid ""
@@ -324,64 +388,70 @@ msgid ""
 "sec). Speed might later be modified by gravity or other accelerations (as "
 "described further below)."
 msgstr ""
+"初期速度は、パーティクルが放出される速度(ピクセル/秒)です。速度は、後で重力ま"
+"たは他の加速度によって変更される可能性があります(後で詳しく説明します)。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:224
 msgid "Angular Velocity"
-msgstr ""
+msgstr "\\ Angular Velocity"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:226
 msgid "Angular velocity is the initial angular velocity applied to particles."
-msgstr ""
+msgstr "角速度は、パーティクルに適用される初期角速度です。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:229
 msgid "Spin Velocity"
-msgstr ""
+msgstr "\\ Spin Velocity"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:231
 msgid ""
 "Spin velocity is the speed at which particles turn around their center (in "
 "degrees/sec)."
-msgstr ""
+msgstr "回転速度は、パーティクルが中心軸で回転する速度(度/秒)です。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:237
 msgid "Orbit Velocity"
-msgstr ""
+msgstr "\\ Orbit Velocity"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:239
 msgid "Orbit velocity is used to make particles turn around their center."
-msgstr ""
+msgstr "軌道速度は、パーティクルを発生点の周で回転させるために使用されます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:244
 msgid "Linear Acceleration"
-msgstr ""
+msgstr "\\ Linear Acceleration"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:246
 msgid "The linear acceleration applied to each particle."
-msgstr ""
+msgstr "各パーティクルに適用される線形加速度。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:249
 msgid "Radial Acceleration"
-msgstr ""
+msgstr "\\ Radial Acceleration"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:251
 msgid ""
 "If this acceleration is positive, particles are accelerated away from the "
 "center. If negative, they are absorbed towards it."
 msgstr ""
+"この加速度が正の場合、パーティクルは中心から遠ざかります。負の場合は、中心に"
+"吸収されます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:257
 msgid "Tangential Acceleration"
-msgstr ""
+msgstr "\\ Tangential Acceleration"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:259
 msgid ""
 "This acceleration will use the tangent vector to the center. Combining with "
 "radial acceleration can do nice effects."
 msgstr ""
+"この加速度は、中心への接線ベクトルを使用します。radial accelerationと組み合わ"
+"せることで、素敵な効果が得られます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:265
 msgid "Damping"
-msgstr ""
+msgstr "\\ Damping"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:267
 msgid ""
@@ -389,36 +459,41 @@ msgid ""
 "especially useful for sparks or explosions, which usually begin with a high "
 "linear velocity and then stop as they fade."
 msgstr ""
+"ダンピングはパーティクルに摩擦を加え、パーティクルを強制的に停止させます。通"
+"常、速い初速(velocity)で始まり、フェードすると停止する火花または爆発に特に役"
+"立ちます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:274
 msgid "Angle"
-msgstr ""
+msgstr "\\ Angle"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:276
 msgid ""
 "Determines the initial angle of the particle (in degrees). This parameter is "
 "mostly useful randomized."
 msgstr ""
+"パーティクルの初期角度(度単位)を決定します。このパラメーターは、主にランダム"
+"化に役立ちます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:282
 msgid "Scale"
-msgstr ""
+msgstr "\\ Scale"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:284
 msgid "Determines the initial scale of the particles."
-msgstr ""
+msgstr "パーティクルの初期スケールを決定します。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:289
 msgid "Color"
-msgstr "色"
+msgstr "\\ Color"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:291
 msgid "Used to change the color of the particles being emitted."
-msgstr ""
+msgstr "放出されるパーティクルの色を変更するために使用します。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:294
 msgid "Hue variation"
-msgstr ""
+msgstr "\\ Hue variation"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:296
 msgid ""
@@ -426,10 +501,12 @@ msgid ""
 "particle. The ``Variation Random`` value controls the hue variation "
 "randomness ratio."
 msgstr ""
+"``Variation``\\ の値は、各パーティクルに適用される初期の色相変化を設定しま"
+"す。 \\ ``Variation Random`` の値は、色相変動のランダム性の比率を制御します。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:301
 msgid "Emission Shapes"
-msgstr "放射形状"
+msgstr "\\ Emission Shapes"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:303
 msgid ""
@@ -437,43 +514,50 @@ msgid ""
 "area and direction in which particles are emitted. These can be generated "
 "from textures in your project."
 msgstr ""
+"パーティクルマテリアルを使用すると、パーティクルが放出される領域と方向を指定"
+"する放出マスクを設定できます。これらは、プロジェクト内のテクスチャから生成で"
+"きます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:307
 msgid ""
 "Ensure that a ParticlesMaterial is set, and the Particles2D node is "
 "selected. A \"Particles\" menu should appear in the Toolbar:"
 msgstr ""
+"パーティクル マテリアルが設定され、パーティクル 2D ノードが選択されていること"
+"を確認します。ツールバーに「パーティクル」メニューが表示されます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:312
 msgid "Open it and select \"Load Emission Mask\":"
-msgstr ""
+msgstr "それを開き、\"Load Emission Mask\" を選択します:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:316
 msgid "Then select which texture you want to use as your mask:"
-msgstr ""
+msgstr "次に、マスクとして使用するテクスチャを選択します。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:320
 msgid "A dialog box with several settings will appear."
-msgstr ""
+msgstr "いくつかの設定を含むダイアログボックスが表示されます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:323
 msgid "Emission Mask"
-msgstr "放出マスク"
+msgstr "\\ Emission Mask"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:325
 msgid "Three types of emission masks can be generated from a texture:"
-msgstr ""
+msgstr "テクスチャからは3種類の放出マスクを生成できます:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:327
 msgid ""
 "Solid Pixels: Particles will spawn from any area of the texture, excluding "
 "transparent areas."
 msgstr ""
+"Solid Pixels: テクスチャの透過部分を除くすべての領域から、パーティクルが発"
+"生。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:332
 msgid ""
 "Border Pixels: Particles will spawn from the outer edges of the texture."
-msgstr ""
+msgstr "Border Pixels: パーティクルはテクスチャの縁から発生。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:336
 msgid ""
@@ -482,31 +566,42 @@ msgid ""
 "Note that an ``Initial Velocity`` will need to be set in order to utilize "
 "this."
 msgstr ""
+"Directed Border Pixels: Border Pixelsと同じで、さらに方向の情報をマスクに加え"
+"ることで、パーティクルは縁から遠ざかるように発生。これを使用するには"
+"\\``Initial Velocity(初速)``\\ をセットする必要があります。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:344
 msgid "Emission Colors"
-msgstr "放出時の色"
+msgstr "発光(Emission)色"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:346
 msgid ""
 "``Capture from Pixel`` will cause the particles to inherit the color of the "
 "mask at their spawn points."
 msgstr ""
+"`` Capture from Pixel`` は、パーティクルがマスクの発生ポイントから色を継承す"
+"るようにします。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:348
 msgid ""
 "Once you click \"OK\", the mask will be generated and set to the "
 "ParticlesMaterial, under the ``Emission Shape`` section:"
 msgstr ""
+"「OK」をクリックすると、マスクが生成され、\\ ``Emission Shape``\\ セクション"
+"の下にあるパーティクルマテリアルに設定されます。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:352
 msgid ""
 "All of the values within this section have been automatically generated by "
 "the \"Load Emission Mask\" menu, so they should generally be left alone."
 msgstr ""
+"このセクション内のすべての値は、「Load Emission Mask」メニューによって自動的"
+"に生成されているため、通常はそのままにしておく必要があります。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:355
 msgid ""
 "An image should not be added to ``Point Texture`` or ``Color Texture`` "
 "directly. The \"Load Emission Mask\" menu should always be used instead."
 msgstr ""
+"画像を ``Point Texture`` または ``Color Texture`` に直接追加しないでくださ"
+"い。代わりに、常に「Load Emission Mask」メニューを使用する必要があります。"

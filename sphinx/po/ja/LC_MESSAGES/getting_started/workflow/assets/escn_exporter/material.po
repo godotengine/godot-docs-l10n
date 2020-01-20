@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "マテリアル"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:5
 msgid "Using existing Godot materials"
-msgstr ""
+msgstr "既存のGodotマテリアルを使用する"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:7
 msgid ""
@@ -33,6 +33,10 @@ msgid ""
 "means that you cannot see your model with the material applied inside "
 "Blender."
 msgstr ""
+"エクスポーターがマテリアルを処理する方法の1つは、Blenderマテリアルを既存の"
+"Godotマテリアルと一致させることです。これには、Godotのマテリアルシステムのす"
+"べての機能を使用できるという利点がありますが、Blender内でマテリアルが適用され"
+"たモデルを見ることができないことを意味します。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:12
 msgid ""
@@ -43,16 +47,25 @@ msgid ""
 "is not a ``SpatialMaterial`` or ``ShaderMaterial`` or if it cannot be found, "
 "then the exporter will fall back to exporting the material from Blender."
 msgstr ""
+"この動作のために、エクスポーターはBlenderのマテリアル名と一致する名前のGodot"
+"マテリアルを見つけようとします。したがって、Blenderでマテリアル名が "
+"``PurpleDots`` のオブジェクトをエクスポートすると、エクスポーターはファイル "
+"``PurpleDots.tres`` を検索し、オブジェクトに割り当てます。このファイルが "
+"``SpatialMaterial`` または ``ShaderMaterial`` でない場合、またはファイル自体"
+"が見つからない場合、エクスポーターはBlenderからマテリアルをエクスポートするよ"
+"うにフォールバックします。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:20
 msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
 msgstr ""
+"エクスポーターが ``.tres`` ファイルを検索する場所は、「Material Search "
+"Paths」オプションによって決定されます:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:34
 msgid "This can take the value of:"
-msgstr ""
+msgstr "これには、次の値を使用できます:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:26
 msgid ""
@@ -61,6 +74,10 @@ msgid ""
 "will throw an error. This is useful for most projects where naming conflicts "
 "are unlikely."
 msgstr ""
+"Project Directory(プロジェクトディレクトリ) - ``project.Godot`` の検索を試"
+"み、サブディレクトリを再帰的に検索します。 ``project.Godot`` が見つからない場"
+"合、エラーがスローされます。これは、名前の競合が起こりそうにないほとんどのプ"
+"ロジェクトに役立ちます。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:30
 msgid ""
@@ -68,14 +85,19 @@ msgid ""
 "location. This is useful for projects where you may have duplicate material "
 "names and need more control over what material gets assigned."
 msgstr ""
+"Export Directory(エクスポートディレクトリ) - エクスポート先のサブディレクトリ"
+"にあるマテリアルを検索します。これは、重複するマテリアル名があり、割り当てら"
+"れるマテリアルをより詳細に制御する必要があるプロジェクトに役立ちます。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
 msgid "None - Do not search for materials. Export them from the Blender file."
 msgstr ""
+"None(なし) - マテリアルを検索しません。それらをBlenderファイルからエクスポー"
+"トします。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:37
 msgid "Export of Cycles/EEVEE materials"
-msgstr ""
+msgstr "Cycles/EEVEEマテリアルのエクスポート"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
 msgid ""
@@ -83,24 +105,29 @@ msgid ""
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
 "not supported yet due to difficulties in implementation, which are:"
 msgstr ""
+"エクスポーターには、Cycles/EEVEEマテリアルノードツリーをGodotシェーダーマテリ"
+"アルに変換するためのプリミティブサポートがあります。一部のシェーダーノード"
+"は、実装が困難なため、まだサポートされていないことに注意してください。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid "all the ``noisy textures``"
-msgstr ""
+msgstr "すべての ``ノイズテクスチャ``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
 msgid "``generated texture coordinates``"
-msgstr ""
+msgstr "``生成されたテクスチャ座標系``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
-msgstr ""
+msgstr "``グループノード``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
 msgstr ""
+"``PrincipledBSDF``\\ 、\\ ``Diffuse``\\ 、\\ ``Glossy``\\ 、\\ ``Glass``"
+"\\ 、\\ ``add shader`` および ``mix shader`` を除くシェーダーノード"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
 msgid ""
@@ -108,6 +135,9 @@ msgid ""
 "output shader node, it is the only one guarantee to be exactly correctly. "
 "Others are just based on approximation."
 msgstr ""
+"可能であれば、GGXディストリビューションでPrincipledBSDFノードを出力シェーダー"
+"ノードとして使用してみてください。これは、正確であることを保証する唯一の方法"
+"です。その他は近似に基づいています。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
 msgid ""
@@ -116,10 +146,14 @@ msgid ""
 "color and a few flags (e.g. unshaded) are exported and form a Spatial "
 "Material."
 msgstr ""
+"マテリアルがエクスポートに有効でない場合(サポートされていないノードがあるな"
+"ど)、またはBlender Internal Engineを使用している場合、拡散色(diffuse )といく"
+"つかのフラグ(シェーディングなしなど)のみがエクスポートされ、ほぼ空のマテリア"
+"ルを形成します。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
 msgid "Generate external materials"
-msgstr ""
+msgstr "外部マテリアルの生成"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
 msgid ""
@@ -127,9 +161,14 @@ msgid ""
 "internal to the ``escn`` file. There is an option which could enable "
 "generating external ``.material`` file when the ``escn`` file opens in Godot."
 msgstr ""
+"マテリアルのエクスポートのデフォルト設定は、すべてのマテリアルを ``escn`` "
+"ファイルの内部に保持します。オプションとして、 Godotで ``escn`` ファイルを開"
+"くときに使われる、外部 ``.material``ファイルの生成を指示することができます。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
 msgstr ""
+"``.material`` ファイルは、外部リソースとして任意のマテリアル スロットに割り当"
+"てることができます。"

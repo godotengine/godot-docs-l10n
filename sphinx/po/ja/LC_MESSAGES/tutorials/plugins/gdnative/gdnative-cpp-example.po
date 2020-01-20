@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:4
 msgid "GDNative C++ example"
-msgstr ""
+msgstr "GDNative C ++の例"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:7
 msgid "Introduction"
@@ -31,6 +31,9 @@ msgid ""
 "example <doc_gdnative_c_example>`, so we highly recommend you read that "
 "first."
 msgstr ""
+"このチュートリアルは、\\ :ref:`GDNative C example <doc_gdnative_c_example>`"
+"\\ で示されている情報の上に基づいているので、最初にそれを読むことを強くお勧め"
+"します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:13
 msgid ""
@@ -38,6 +41,9 @@ msgid ""
 "API and provide a nicer way to \"extend\" nodes in Godot using C++. This is "
 "equivalent to writing scripts in GDScript, but in C++ instead."
 msgstr ""
+"GDNativeのC ++バインディングはNativeScript GDNative APIの上に構築されており、"
+"C ++を使用してGodotでノードを「拡張」するためのより良い方法を提供します。これ"
+"は、GDScriptでスクリプトを記述するのと同じですが、代わりにC ++で記述します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:17
 msgid ""
@@ -48,44 +54,56 @@ msgid ""
 "Godot 3.0 you will need to use the 3.0 branch and the NativeScript 1.0 "
 "syntax. We'll be showing them side by side in this writeup."
 msgstr ""
+"Godot 3.1では、GDNativeチームによって、より優れたC ++バインディングライブラリ"
+"を構築できるようにするNativeScript 1.1の追加機能が導入されました。これらの変"
+"更は現在masterブランチにマージされており、今後の方法になります。 Godot 3.0も"
+"サポートするC ++ GDNativeプラグインを作成する場合は、3.0ブランチと"
+"NativeScript 1.0構文を使用する必要があります。この記事ではそれらを並べて示し"
+"ます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:24
 msgid ""
 "You can download the full example we'll be creating in this tutorial `on "
 "GitHub <https://github.com/BastiaanOlij/gdnative_cpp_example>`__."
 msgstr ""
+"このチュートリアルで作成する完全な例を `GitHub <https://github.com/"
+"BastiaanOlij/gdnative_cpp_example>` からダウンロードできます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:28
 msgid "Setting up the project"
-msgstr ""
+msgstr "プロジェクトの設定"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:30
 msgid "There are a few prerequisites you'll need:"
-msgstr ""
+msgstr "必要な前提条件がいくつかあります:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:32
 msgid "a Godot 3.x executable,"
-msgstr ""
+msgstr "Godot 3.x実行可能ファイル、"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:33
 msgid "a C++ compiler,"
-msgstr ""
+msgstr "C ++コンパイラ、"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:34
 msgid "SCons as a build tool,"
-msgstr ""
+msgstr "ビルドツールとしてのSCons、"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:35
 msgid ""
 "a copy of the `godot-cpp repository <https://github.com/GodotNativeTools/"
 "godot-cpp>`__."
 msgstr ""
+"`godot-cppリポジトリ<https://github.com/GodotNativeTools/godot-cpp>` _\\ のコ"
+"ピー。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:38
 msgid ""
 "See also :ref:`Compiling <toc-devel-compiling>` as the build tools are "
 "identical to the ones you need to compile Godot from source."
 msgstr ""
+":ref:`コンパイル <toc-devel-compiling>`\\ も参照してください。ビルドツール"
+"は、ソースからGodotをコンパイルするために必要なツールと同じです。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:41
 msgid ""
@@ -97,12 +115,20 @@ msgid ""
 "download the correct branch. Also note that the version of Godot you use to "
 "generate the ``api.json`` with becomes your minimum version."
 msgstr ""
+"これらのリポジトリをGitHubからダウンロードすることも、Gitに作業を任せることが"
+"できます。これらのリポジトリには、Godotのバージョンごとに異なるブランチがある"
+"ことに注意してください。 Godotの以前のバージョン用に書かれたGDNativeモジュー"
+"ルは、（3.0と3.1の間のARVRインターフェースの１つの重大な変更を除いて）新しい"
+"バージョンでも機能します。また、 ``api.json`` の生成に使用するGodotのバージョ"
+"ンが最小のバージョンになることに注意してください。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:49
 msgid ""
 "If you are versioning your project using Git, it is a good idea to add them "
 "as Git submodules:"
 msgstr ""
+"Git を使用してプロジェクトをバージョン管理する場合は、Git サブモジュールとし"
+"て追加することをお勧めします:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:71
 msgid ""
@@ -111,10 +137,14 @@ msgid ""
 "described here, as much of the code we'll be showcasing here assumes the "
 "project follows this layout."
 msgstr ""
+"リポジトリを単にダウンロードするか、プロジェクトフォルダに複製する場合は、"
+"フォルダのレイアウトをここで説明したものと同じにしてください。ここで紹介する"
+"コードの多くは、プロジェクトがこのレイアウトに従うことを前提としています。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:76
 msgid "Do make sure you clone recursive to pull in both repositories:"
 msgstr ""
+"両方のリポジトリをプルするために、必ず再帰的にクローンを作成してください:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:93
 msgid ""
@@ -122,6 +152,9 @@ msgid ""
 "you've manually downloaded them please make sure to place ``godot_headers`` "
 "inside of the ``godot-cpp`` folder."
 msgstr ""
+"``godot-cpp`` にはネストされたサブモジュールとして ``godot_headers`` が含まれ"
+"るようになりました。手動でダウンロードした場合は、 ``godot-cpp`` フォルダー内"
+"に ``godot_headers`` を配置してください。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:97
 msgid ""
@@ -131,34 +164,48 @@ msgid ""
 "much of the code we'll be showcasing here assumes the project has this "
 "layout."
 msgstr ""
+"この方法で行う必要はありませんが、管理するのが最も簡単であることがわかりまし"
+"た。リポジトリをダウンロードするだけの場合、またはリポジトリをフォルダに複製"
+"するだけの場合は、ここで紹介するコードの多くがプロジェクトにこのレイアウトを"
+"持つことを前提としているので、フォルダレイアウトは、ここで設定したのと同じも"
+"のにしておいてください。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:102
+#, fuzzy
 msgid ""
 "If you cloned the example from the link specified in the introduction, the "
 "submodules are not automatically initialized. You will need to execute the "
 "following commands:"
 msgstr ""
+"概要で指定されたリンクからサンプルを複製した場合、サブモジュールは自動的に初"
+"期化されません。次のコマンドを実行する必要があります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:111
 msgid "This will clone these two repositories into your project folder."
 msgstr ""
+"これにより、これら2つのリポジトリがプロジェクトフォルダに複製されます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:114
 msgid "Building the C++ bindings"
-msgstr ""
+msgstr "C++ バインディングのビルド"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:116
 msgid ""
 "Now that we've downloaded our prerequisites, it is time to build the C++ "
 "bindings."
 msgstr ""
+"前提条件に書かれた物をダウンロードしたので、C ++バインディングを作成します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:119
+#, fuzzy
 msgid ""
 "The repository contains a copy of the metadata for the current Godot "
 "release, but if you need to build these bindings for a newer version of "
 "Godot, simply call the Godot executable:"
 msgstr ""
+"リポジトリには、現在のGodotリリースのメタデータのコピーが含まれていますが、"
+"Godotの新しいバージョン用にこれらのバインディングをビルドする必要がある場合"
+"は、単にGodot実行可能ファイルを呼び出します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:127
 msgid ""
@@ -166,12 +213,17 @@ msgid ""
 "``use_custom_api_file=yes custom_api_file=../api.json`` to the scons command "
 "below."
 msgstr ""
+"結果の ``api.json`` ファイルをプロジェクトフォルダに配置し、 "
+"``use_custom_api_file = yes custom_api_file = .. / api.json`` を以下のsconsコ"
+"マンドに追加します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:131
 msgid ""
 "To generate and compile the bindings, use this command (replacing "
 "``<platform>`` with ``windows``, ``x11`` or ``osx`` depending on your OS):"
 msgstr ""
+"バインディングを生成してコンパイルするには、次のコマンドを使用します(OSに応じ"
+"て ``<platform>`` を ``windows`` 、 ``x11`` または ``osx`` に置き換えます):"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:140
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,16 +32,16 @@ msgid ""
 "referring to *Node* here, it will be implied that a *Visual Script Node* is "
 "referred to unless indicated otherwise."
 msgstr ""
-"続行する前に、*ノード*の用語を注意して使用する必要があります。*ビジュアルスク"
-"リプトノード*(または通常は*ノード*)を参照する場合、このテキストはグラフの一部"
-"である線で接続する小さなボックスを参照します。*シーンノード*を参照すると、"
-"シーンを構成する要素 (ツリーの一部) が参照されます。名前は似ていますが、機能"
-"は違います。ここで*ノード*を参照する場合、特に指定しないかぎり、*ビジュアルス"
-"クリプトノード*が参照されることを意味します。"
+"続行する前に、*ノード* の用語を注意して使用する必要があります。 *ビジュアルス"
+"クリプトノード* (または通常は *ノード* )を参照する場合、このテキストはグラフ"
+"の一部である線で接続する小さなボックスを参照します。 *シーンノード* を参照す"
+"ると、シーンを構成する要素 (ツリーの一部) が参照されます。名前は似ています"
+"が、機能は違います。ここで *ノード* を参照する場合、特に指定しないかぎり、 *"
+"ビジュアルスクリプトノード* が参照されることを意味します。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:15
 msgid "Node properties"
-msgstr ""
+msgstr "ノード・プロパティ"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:17
 msgid ""
@@ -59,18 +59,21 @@ msgid ""
 "via the *Inspector*. To edit them, select any node and edit its properties "
 "in the *Inspector*."
 msgstr ""
+"ノードは必要な情報を文字で表示していますが、しかし編集は\\ *インスペクタ*\\ "
+"を通じて行います。編集するには、ノードを選択してから\\ *インスペクタ*\\ 内に"
+"あるプロパティを編集してください。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:25
 msgid "Ports and connections"
-msgstr ""
+msgstr "ポートおよび接続"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:27
 msgid ""
 "Programming in Godot Visual Scripting is done via *Nodes* and *Port "
 "Connections* inside each function."
 msgstr ""
-"Godotビジュアルスクリプティングでのプログラミングは、各関数内の*Nodes*および"
-"*Port Connections*を介して行われます。"
+"Godotビジュアルスクリプティングでのプログラミングは、各関数内の *Nodes* およ"
+"び *Port Connections* を介して行われます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:31
 msgid "Ports"
@@ -84,7 +87,7 @@ msgid ""
 msgstr ""
 "Godot ビジュアル スクリプティングのノードには *Ports* があります。これらは"
 "ノードの左右に表示され、 *Connections* を作成するために使用できるエンドポイン"
-"トです:*Ports* には *Sequence* と *Data*の 2 種類があります。"
+"トです:*Ports* には *Sequence* と *Data* の 2 種類があります。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:40
 msgid ""
@@ -96,6 +99,12 @@ msgid ""
 "following the white lines. Not every *Node* has *Sequence Ports*. In fact, "
 "most do not."
 msgstr ""
+"\\ *シーケンス・ポート* は、操作が実行された後の状態を示しています。通常、 *"
+"ノード* が処理を終えると、右のポートから次のノードへ処理が移ります。もし何も"
+"接続されていないときは、関数はそこで終えるか、もしくは他の *シーケンス・ポー"
+"ト* が試されるでしょう(ノードによります)。これにより、白い線を追うことで関数"
+"内での処理の流れをたどることができます。すべての *ノード* が *シーケンス・"
+"ポート* を持っているわけではありません。事実、ほとんどにはありません。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:46
 msgid ""
@@ -105,11 +114,11 @@ msgid ""
 "considered an output, while, a port on the left side is an input. Connecting "
 "them allows information to flow to the next node."
 msgstr ""
-"*Data Ports* ポートには、型指定された値が含まれています。型には、ブール値、整"
-"数、文字列、ベクター3、配列、オブジェクトノード、シーンノードなど、任意の通常"
-"のGodot型を指定できます。ノードの右側にある *Data Port* は出力と見なされ、左"
-"側のポートは入力です。それらを接続すると、次のノードに情報が流れるようになり"
-"ます。"
+"\\ *データ・ポート* には、型指定された値が含まれています。型には、ブール値、"
+"整数、文字列、Vector3、配列、オブジェクトノード、シーンノードなど、任意の通常"
+"のGodot型を指定できます。ノードの右側にある *データ・ポート* は出力と見なさ"
+"れ、左側のポートは入力です。それらを接続すると、次のノードに情報が流れるよう"
+"になります。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:51
 msgid ""
@@ -117,9 +126,9 @@ msgid ""
 "Pay special attention to colors and icons, as each type has a different "
 "representation:"
 msgstr ""
-"ただし、すべての *Data Port* タイプに互換性があるわけではなく、接続も可能で"
-"す。 それぞれのタイプには異なる表現があるので、色とアイコンに特に注意を払って"
-"ください:"
+"ただし、すべての *データ・ポート* タイプの間に、互換性と接続許可が有るわけで"
+"はありません。 それぞれのタイプには異なる表現があるので、色とアイコンに特に注"
+"意を払ってください:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:58
 msgid "Connections"
@@ -130,6 +139,8 @@ msgid ""
 "Connecting is a relatively simple process. Drag an *Output Port* towards an "
 "*Input Port*."
 msgstr ""
+"接続は比較的簡単な作業です。 *出力ポート* を *入力ポート* に向かってドラッグ"
+"します。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:65
 msgid ""
@@ -137,9 +148,9 @@ msgid ""
 "happens by dragging the *Input* away, while for *Sequence Ports*, this "
 "happens by dragging the *Output* away."
 msgstr ""
-"切断にはもう少し練習が必要です。 *Data Ports* での切断は、 *Input* を離れてド"
-"ラッグして行われますが、 *Sequence Ports* の場合は、 *Output* をドラッグして"
-"行われます。"
+"切断にはもう少し練習が必要です。 *データ・ポート* での切断は、 *入力* 側から"
+"離れる様にドラッグして行いますが、 *シーケンス・ポート* の場合は、 *出力* 側"
+"をドラッグして行います。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:71
 msgid ""
@@ -147,6 +158,10 @@ msgid ""
 "(A single output port can connect to many inputs), while *Sequence Ports* "
 "are N:1 (Many sequence outputs can be connected to a single input)."
 msgstr ""
+"この操作手順の違いを最初は奇妙に思えるかもしれませんが、 *データ・ポート* の"
+"接続は 1:N (1つの出力ポートを多くの入力に接続できる)、 *シーケンス・ポート* "
+"の接続は N:1 (多くのシーケンス出力が単一の入力に接続できる) であるために発生"
+"します。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:75
 msgid ""
@@ -164,7 +179,7 @@ msgstr "データの場合、コンテキスト set/get/call メニューが開�
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:87
 msgid "Adding nodes"
-msgstr ""
+msgstr "ノードの追加"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:89
 msgid ""
@@ -178,7 +193,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:94
 msgid "Accessing scene nodes"
-msgstr ""
+msgstr "シーンノードへのアクセス"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:96
 msgid ""
@@ -188,8 +203,8 @@ msgid ""
 "to as *member function*) on this node."
 msgstr ""
 "最も一般的なタスクの 1 つは、シーンツリーノードにアクセスすることです "
-"( *Visual Script Nodes* と間違えないようにします)。シーン ツリーからドラッグ"
-"してキャンバスにドロップすると、このノードで*メソッド*(*member function*と呼"
+"(*Visual Script Nodes* と間違えないようにします)。シーン ツリーからドラッグし"
+"てキャンバスにドロップすると、このノードで *メソッド* (*member function* と呼"
 "ばれることもあります)を呼び出すように求めます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:102
@@ -216,7 +231,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:113
 msgid "Accessing scene node properties"
-msgstr ""
+msgstr "シーンノードのプロパティへのアクセス"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:115
 msgid ""
@@ -227,25 +242,29 @@ msgid ""
 msgstr ""
 "これは、ビジュアルスクリプティングで *Scene Nodes* を編集する最も一般的な方法"
 "です。 *Scene Tree* から *Scene Node* を選択し、インスペクタに移動して、編集"
-"するプロパティ(値では*ありません*)の *Name* を探し、キャンバスにドラッグしま"
-"す:"
+"するプロパティ(値では\\ *ありません*)の *Name* を探し、キャンバスにドラッグし"
+"ます:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:120
 msgid ""
 "The result is that this value can be changed from your script by writing to "
 "a *Data Port*."
 msgstr ""
-"その結果、 *Data Port* に書き込むことで、この値をスクリプトから変更できます。"
+"その結果、 *データ・ポート* に書き込むことで、この値をスクリプトから変更でき"
+"ます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
 msgid ""
 "If instead reading this value is desired, drag the node again but hold the "
 "*Control* key (or Command on Mac). This will create a getter:"
 msgstr ""
+"もしも、このノードの値を読み取る必要が有る場合は、 *Control* キー(またはMacの"
+"Command)を押したままノードをもう一度ドラッグします。これによりゲッター"
+"(getter)が作成されます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:127
 msgid "In this case, the value can be read from a *Data Port*."
-msgstr "この場合、値は *Data Port* から読み取ることができます。"
+msgstr "この場合、値は *データ・ポート* から読み取ることができます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:131
 msgid "Variables"
@@ -281,19 +300,23 @@ msgid ""
 "makes it available to other scripts via the method described in the previous "
 "step."
 msgstr ""
+"上記からわかるように、変数の型と初期値、およびいくつかのプロパティヒントを変"
+"更できます。 「エクスポート」オプションを選択すると、ノードを選択するときにこ"
+"の変数がインスペクターに表示されます。これにより、前の手順で説明した方法で他"
+"のスクリプトでも使用できるようになります。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
 msgid ""
 "To use the variable in the script, simply drag it to the canvas to create a "
 "getter:"
 msgstr ""
-"スクリプトで変数を使用するには、キャンバスにドラッグしてgetterを作成します:"
+"スクリプトで変数を使用するには、キャンバスにドラッグしてゲッターを作成します:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
 msgstr ""
-"同様に、*Control* (Mac 上の*Command*) キーを押したまま、セッターをドロップし"
-"ます:"
+"同様に、*Control* (Mac 上の*Command*) キーを押したまま、セッター(setter)をド"
+"ロップします:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 msgid "Signals"
@@ -314,6 +337,7 @@ msgid ""
 "A signal can also be edited via the right-click menu to customize its "
 "arguments:"
 msgstr ""
+"右クリックメニューから信号を編集して、引数をカスタマイズすることもできます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
 msgid ""
@@ -321,22 +345,25 @@ msgid ""
 "built-in node signals. This allows you to connect it from another script "
 "from another *Scene Node*:"
 msgstr ""
+"作成したシグナルは、組み込み済ノードのシグナルとともにインスペクターに表示さ"
+"れます。これにより、別の *Scene Node* の別のスクリプトから接続できます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:181
 msgid "Finally, to emit the signal, simply drag it to the canvas:"
-msgstr "最後に、信号を放出するには、キャンバスにドラッグするだけです:"
+msgstr ""
+"最後に、シグナルを送信するには、単にそれをキャンバスにドラッグするだけです:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:186
 msgid ""
 "Remember that emitting a signal is a sequenced operation, so it must come "
 "from a Sequence port."
 msgstr ""
-"信号の放出はシーケンス操作なので、シーケンス ポートから送信する必要がありま"
-"す。"
+"シグナルの送信はシーケンス操作なので、シーケンス ポートから送信する必要があり"
+"ます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:190
 msgid "Adding more nodes"
-msgstr ""
+msgstr "更なるノードの追加"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:192
 msgid ""
@@ -393,6 +420,10 @@ msgid ""
 "this node is not used that often because of default input values in *Data "
 "Ports*, but it's good to know it exists."
 msgstr ""
+"1 つ目は \"定数\" で、整数(例:42)から文字列(例:\"Hello!\")まで、任意の型の任"
+"意の値を定数として選択できます。一般に、 *データ・ポート* のデフォルトの入力"
+"値のために、あまりこのノードを使う事はありませんが、存在することを知っておく"
+"と便利です。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:221
 msgid ""
@@ -408,7 +439,7 @@ msgstr ""
 msgid ""
 "The third one is MathConstant, which provides typical mathematical "
 "constants, such as PI, E, etc."
-msgstr ""
+msgstr "3つ目は、PI、E などの一般的な数学定数を提供する MathConstant です。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
@@ -432,7 +463,7 @@ msgstr "ここには多くの種類のノードがあるため、簡単に説明
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr "アクション"
+msgstr "アクション(Action)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -447,7 +478,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:249
 msgid "Engine Singleton"
-msgstr "エンジン・シングルトン"
+msgstr "エンジン・シングルトン(EngineSingleton)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
 msgid ""
@@ -456,6 +487,10 @@ msgid ""
 "have several purposes, but in general, they are useful for low-level access "
 "or OS-related access."
 msgstr ""
+"エンジンシングルトンはグローバルインターフェイスです(つまり参照なしでアクセス"
+"できることを意味します。シーンノードとは異なり、常に使用可能です)。これらには"
+"いくつかの目的がありますが、一般に、低レベルのアクセスまたはOS関連のアクセス"
+"に役立ちます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:257
 msgid ""
@@ -467,7 +502,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:263
 msgid "Local Variables"
-msgstr "ローカル変数"
+msgstr "ローカル変数(LocalVarSet/LocalVarGet)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:265
 msgid ""
@@ -475,6 +510,9 @@ msgid ""
 "they all have the same name and type when using them and they will reference "
 "the same piece of memory."
 msgstr ""
+"これらは、グラフの一時的なストレージとして使用できるノードです。それらを使用"
+"するときは、すべて同じ名前と型を使用し、同じメモリを参照するようにしてくださ"
+"い。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:270
 msgid ""
@@ -486,7 +524,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
-msgstr "シーンノード"
+msgstr "シーンノード(Scene Node)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:276
 msgid ""
@@ -494,10 +532,13 @@ msgid ""
 "node by dragging the actual node from the scene tree to the canvas (this "
 "will create it and configure it)."
 msgstr ""
+"これはツリー内のノードへの参照にすぎませんが、実際のノードをシーン ツリーから"
+"キャンバスにドラッグして、このノードを使用する方が簡単です(これにより、ノード"
+"の作成と設定が行われます)。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr "セルフ"
+msgstr "セルフ(Self)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -506,6 +547,10 @@ msgid ""
 "nodes (or event the node itself that has the script) from the Scene Tree to "
 "the canvas for this."
 msgstr ""
+"まれに、このシーンノードを引数として渡すことが望ましい場合があります。 これを"
+"使用して、関数を呼び出し、プロパティを設定/取得したり、ノードをシーンツリーか"
+"らキャンバスにドラッグしたり(または、スクリプトを持っているノードをイベント化"
+"したり)することができます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
@@ -518,6 +563,10 @@ msgid ""
 "when the node is sitting in the scene and active, otherwise accessing it "
 "will return an error."
 msgstr ""
+"このノードは、アクティブなシーンを含むシーンツリーを参照するため、シングルト"
+"ンノードに似ています。 ただし、SceneTreeは、ノードがシーン内にありアクティブ"
+"な場合にのみ機能します。そうでない場合、ノードにアクセスするとエラーが返され"
+"ます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
 msgid ""
@@ -525,10 +574,13 @@ msgid ""
 "calling groups, make timers, or even load another scene. It's a good class "
 "to get familiar with."
 msgstr ""
+"SceneTreeでは、ストレッチオプションの設定、グループの呼び出し、タイマーの作"
+"成、または別のシーンの読み込みなど、多くの低レベルの処理が可能です。(ビジュア"
+"ルスクリプトに)慣れるには良いクラスです。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
-msgstr ""
+msgstr "プリロード(Preload)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
 msgid ""
@@ -536,10 +588,13 @@ msgid ""
 "resource loaded and ready to use. Rather than instancing the node, it's "
 "simpler to drag the desired resource from the filesystem dock to the canvas."
 msgstr ""
+"これは、GDScriptのpreload()と同じ機能を実行します。このリソースをロードし、使"
+"用可能な状態に保持します。ノードをインスタンス化するのではなく、目的のリソー"
+"スをファイルシステムドックからキャンバスにドラッグする方が簡単です。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr "リソースのパス"
+msgstr "リソースのパス(ResourcePath)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -551,7 +606,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
 msgid "Comment"
-msgstr "コメント"
+msgstr "コメント(Comment)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:315
 msgid ""
@@ -565,7 +620,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:322
 msgid "Flow Control"
-msgstr ""
+msgstr "フロー制御"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:324
 msgid ""
@@ -577,32 +632,32 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
 msgid "Condition"
-msgstr "条件"
+msgstr "条件(Condition)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
-#, fuzzy
 msgid ""
 "This is a simple node that checks a bool port. If ``true``, it will go via "
 "the \"true\" sequence port. If ``false``, the second. After going for either "
 "of them, it goes via the \"done\" port. Leaving sequence ports disconnected "
 "is fine if not all of them are used."
 msgstr ""
-"これはboolポートをチェックする簡単なノードです。 もしtrueなら、それは \"true"
-"\" シーケンスポートを経由します。 falseの場合、2番目です。 どちらかに行く"
-"と、 \"done\" ポートを経由します。 すべてのポートが使用されていない場合は、"
-"シーケンスポートを切断したままにしても問題ありません。"
+"これはboolポートをチェックする簡単なノードです。 もし ``true`` なら、それは "
+"\"true\" シーケンスポートを経由します。``false`` の場合は2番目のシーケンス"
+"ポートです。 それらのいずれかに行った後、\"done\" ポートを経由します。 すべて"
+"のポートが使用されていない場合は、シーケンスポートを切断したままにしても問題"
+"ありません。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
-msgstr "イテレータ"
+msgstr "イテレータ(Iterator)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:341
 msgid ""
 "Some data types in Godot (ie, arrays, dictionaries) are iterable. This means "
 "that a bit of code can run for each element that it has."
 msgstr ""
-"Godotの一部のデータ型(配列、辞書)は、この種のデータ型を使用して使用できます。"
-"つまり、ある要素ごとに少しのコードを実行できます。"
+"Godotの一部のデータ型(配列、辞書など)は反復処理が可能です。つまり、それが持つ"
+"各要素に対し、ちょっとしたコードを実行できることを意味します。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:344
 msgid ""
@@ -619,7 +674,7 @@ msgstr "完了すると、 \"exit\" シーケンスポートを経由します�
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:351
 msgid "Return"
-msgstr ""
+msgstr "リターン(Return)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:353
 msgid ""
@@ -631,7 +686,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
 msgid "Sequence"
-msgstr "シーケンス"
+msgstr "シーケンス(Sequence)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:360
 msgid ""
@@ -643,7 +698,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:364
 msgid "TypeCast"
-msgstr "型キャスト"
+msgstr "型キャスト(TypeCast)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:366
 msgid ""
@@ -651,6 +706,9 @@ msgid ""
 "other objects to the type you desire. Afterwards, you can even drag the "
 "object output to get full completion."
 msgstr ""
+"これは使用頻度の高い便利なノードです。これを使用して、引数または他のオブジェ"
+"クトを必要な型にキャストできます。その後、オブジェクトの出力をドラッグして完"
+"全に完成させることもできます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:372
 msgid ""
@@ -662,17 +720,17 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:378
 msgid "Switch"
-msgstr "スイッチ"
+msgstr "スイッチ(Switch)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:380
 msgid ""
 "The Switch node is similar to the Condition node, but it matches many values "
 "at the same time."
-msgstr "スイッチノードは条件ノードに似ていますが、同時に多数の値に一致します。"
+msgstr "スイッチノードは条件ノードに似ていますが、同時に多くの値に一致します。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr ""
+msgstr "While"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:386
 msgid ""
@@ -691,12 +749,12 @@ msgid ""
 "Functions are simple helpers, most of the time deterministic. They take some "
 "arguments as input and return an output. They are almost never sequenced."
 msgstr ""
-"関数は単純なヘルパーで、ほとんどの場合確定的です。 それらは入力としていくつか"
-"の引数を取り、出力を返します。 それらはほとんど順序付けられていません。"
+"関数(Function)は単純なヘルパーであり、ほとんどの場合確定的です。入力としてい"
+"くつかの引数を取り、出力を返します。それらはほとんどシーケンスされません。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:398
 msgid "Built-In"
-msgstr ""
+msgstr "ビルトイン"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
 msgid ""
@@ -705,10 +763,14 @@ msgid ""
 "functions, but others can be useful helpers. Make sure to take a look at the "
 "list at some point."
 msgstr ""
+"組み込みヘルパーのリストがあります。リストは、\\ :ref:"
+"`GDScript<class_@GDScript>`\\ のものとほとんど同じです。それらのほとんどは数"
+"学関数ですが、他のものは便利なヘルパーになります。時間が出来たらリストを必ず"
+"確認してください。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:404
 msgid "By Type"
-msgstr "タイプによる"
+msgstr "タイプ別"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
 msgid ""
@@ -716,25 +778,25 @@ msgid ""
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
 "most cases just search the list of nodes, it should be faster."
 msgstr ""
-"これらは、基本的な型で使用できるメソッドです。たとえば、ドット製品が必要な場"
-"合は、Vector3カテゴリの代わりに \"dot\" を検索できます。ほとんどの場合、ノー"
-"ドのリストを検索するだけで、より高速化されるはずです。"
+"これらは、基本的な型で使用できるメソッドです。たとえば、ドット積が必要な場合"
+"は、Vector3カテゴリの代わりに \"dot\" を検索できます。ほとんどの場合、ノード"
+"のリストを検索するだけで、より高速になります。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:411
 msgid "Call"
-msgstr "コール"
+msgstr "コール(Call)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
 msgstr ""
-"これは汎用呼び出しノードです。直接使用されることはほとんどありませんが、既に"
-"構成されているノード上の空き領域にドラッグします。"
+"これは汎用的な呼び出しノードです。直接使用されることはめったにありませんが、"
+"既に構成されているノードの空の領域にドラッグすることによって使用されます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr "コンストラクター"
+msgstr "コンストラクター(Construct及びConstant)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -742,31 +804,33 @@ msgid ""
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
 "be used."
 msgstr ""
-"これらは、Godot の基本的なデータ型を作成するために必要なすべての関数です。た"
-"とえば、3つの浮動小数点数のうちVector3を作成する必要がある場合は、コンストラ"
-"クタを使用する必要があります。"
+"これらはすべて、Godotの基本データ型を作成するために必要な関数です。たとえば、"
+"3つのfloatからVector3を作成する必要がある場合は、コンストラクターを使用する必"
+"要があります。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:425
 msgid "Destructor"
-msgstr "デストラクター"
+msgstr "デストラクター(Destructor)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
 msgstr ""
-"これはコンストラクタとは反対で、基本的な型(つまりVector3)をサブ要素に分離でき"
-"ます。"
+"これは、コンストラクターの反対です。任意の基本型(Vector3等)をサブ要素に分離で"
+"きます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:433
 msgid "Emit Signal"
-msgstr "信号を放出する"
+msgstr "シグナルの出力(EmitSignal)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid ""
 "Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
+"任意のオブジェクトからシグナルを出力します。一般に、キャンバスにシグナルをド"
+"ラッグする方が適切に機能するので、あまり役に立ちません。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:439
 msgid "Get/Set"
@@ -777,8 +841,8 @@ msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
-"汎用取得/設定ノード。インスペクタからプロパティをドラッグすると、ドロップ時に"
-"設定されて表示されるので、より適切に動作します。"
+"汎用的な取得(Getter)/設定(Setter)ノード。インスペクタからプロパティをドラッグ"
+"すると、ドロップ時に設定されて表示されるので、より適切に動作します。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
@@ -798,7 +862,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 msgid "Yield"
-msgstr ""
+msgstr "譲渡(Yield)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -810,7 +874,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:458
 msgid "Yield Signal"
-msgstr "譲渡・信号待ち(Yield Signal)"
+msgstr "譲渡・シグナル待ち(Yield Signal)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Same as Yield, but will wait until a given signal is emitted."
@@ -818,15 +882,15 @@ msgstr "Yieldと同じですが、特定のシグナルが放出されるまで�
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
-msgstr ""
+msgstr "インデックス(Index)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
 msgstr ""
-"汎用インデックス演算子。頻繁に使用されるわけではありませんが、念のために存在"
-"させておくとよいでしょう。"
+"汎用インデックス演算子。頻繁に使用されるわけではありませんが、万が一に備えて"
+"用意してあります。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:470
 msgid "Operators"
@@ -840,10 +904,15 @@ msgid ""
 "the operator). It is always recommended to set the right type for operators "
 "to catch errors faster and make the graph easier to read."
 msgstr ""
+"これらは主に加算、乗算、比較などの汎用演算子です。デフォルトでは、これらはほ"
+"とんどすべてのデータ型を受け入れます(供給された型が演算子によって期待されるも"
+"のと一致しない場合、実行時にエラーをスローします)。エラーをより迅速にキャッチ"
+"し、グラフを読みやすくするために、常にオペレーターに適した型を設定することを"
+"お勧めします。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:481
 msgid "Expression Node"
-msgstr "式ノード(Expression Node)"
+msgstr "式ノード(Expression)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid ""
@@ -851,6 +920,9 @@ msgid ""
 "used, it allows you to enormously simplify visual scripts that are math or "
 "logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
+"演算子の中で、 *Expression* ノードが最も強力です。うまく使用すれば、数学的"
+"だったりまたはロジック重いビジュアルスクリプトを大幅に簡素化できます。任意の"
+"式を入力すると、リアルタイムで実行されます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:486
 msgid "Expression nodes can:"

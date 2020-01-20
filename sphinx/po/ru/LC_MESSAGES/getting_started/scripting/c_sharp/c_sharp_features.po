@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
-msgstr "Особенности"
+msgstr "Свойства"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -55,7 +55,7 @@ msgstr "Для этого в C# имеются различные опции."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
 msgid "**Casting and Type Checking**"
-msgstr ""
+msgstr "** Приведение и проверка типа **"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:28
 msgid ""
@@ -63,41 +63,52 @@ msgid ""
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
 "sure it won't fail."
 msgstr ""
+"Выдает `` InvalidCastException``, если возвращаемый узел не может быть "
+"приведен к Sprite. Вы можете использовать его вместо оператора `` as``, если "
+"уверены, что он не потерпит неудачу."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
 msgid "**Using the AS operator**"
-msgstr ""
+msgstr "** Использование оператора AS **"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:38
 msgid ""
 "The ``as`` operator returns ``null`` if the node cannot be cast to Sprite, "
 "and for that reason, it cannot be used with value types."
 msgstr ""
+"Оператор ``as`` возвращает ``null``, если узел не может быть приведен к "
+"Sprite, и по этой причине его нельзя использовать с типами значений."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid "**Using the generic methods**"
-msgstr ""
+msgstr "** Использование универсальных методов **"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
 msgid ""
 "Generic methods are also provided to make this type conversion transparent."
 msgstr ""
+"Общие методы также предоставляются, чтобы сделать это преобразование типов "
+"прозрачным."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:51
 msgid ""
 "``GetNode<T>()`` casts the node before returning it. It will throw an "
 "``InvalidCastException`` if the node cannot be cast to the desired type."
 msgstr ""
+"``GetNode<T>()`` преобразует узел перед его возвратом. Он выдаст "
+"``InvalidCastException``, если узел не может быть приведен к нужному типу."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:58
 msgid ""
 "``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
 "the node cannot be cast to the desired type."
 msgstr ""
+"``GetNodeOrNull<T>()`` использует оператор ``as`` и вернет ``null``, если "
+"узел не может быть приведен к нужному типу."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
 msgid "**Type checking using the IS operator**"
-msgstr ""
+msgstr "** Проверка типа с использованием оператора IS **"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:68
 msgid ""
@@ -105,12 +116,18 @@ msgid ""
 "The ``is`` operator returns false if the node cannot be cast to Sprite, "
 "otherwise it returns true."
 msgstr ""
+"Чтобы проверить, может ли узел быть приведен к Sprite, вы можете "
+"использовать оператор ``is``. Оператор ``is`` возвращает false, если узел не "
+"может быть приведен к Sprite, в противном случае он возвращает true."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:79
 msgid ""
 "For more advanced type checking, you can look into `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 msgstr ""
+"Для более сложной проверки типов вы можете посмотреть в `Сопоставление "
+"шаблонов <https://docs.microsoft.com/ru-ru/dotnet/csharp/pattern-matching>` "
+"_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
 #, fuzzy
@@ -122,36 +139,45 @@ msgid ""
 "For a complete C# example, see the **Handling a signal** section in the step "
 "by step :ref:`doc_scripting` tutorial."
 msgstr ""
+"Для полного C# примера см. Раздел ** Обработка сигнала ** в пошаговом "
+"руководстве :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:88
 msgid ""
 "Declaring a signal in C# is done with the ``[Signal]`` attribute on a "
 "delegate."
 msgstr ""
+"Объявление сигнала в C# выполняется с помощью атрибута ``[Signal]`` делегата."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:98
 msgid ""
 "These signals can then be connected either in the editor or from code with "
-"``Connect``."
+"``Connect``. If you want to connect a signal in the editor, you need to "
+"(re)build the project assemblies to see the new signal. This build can be "
+"manually triggered by clicking the “Build” button at the top right corner of "
+"the editor window."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:118
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:119
 msgid "Emitting signals is done with the ``EmitSignal`` method."
-msgstr ""
+msgstr "Излучение сигналов осуществляется методом ``EmitSignal``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:129
 msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
 msgstr ""
+"Обратите внимание, что вы всегда можете сослаться на имя сигнала используя "
+"ключевое слово ``nameof`` (применяется к самому делегату)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:130
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:131
 msgid ""
 "It is possible to bind values when establishing a connection by passing an "
 "object array."
 msgstr ""
+"При установлении соединения можно связать значения, передав массив объектов."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:150
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:151
 msgid ""
 "Signals support parameters and bound values of all the `built-in types "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/"
@@ -160,10 +186,19 @@ msgid ""
 "compatible automatically, but custom data objects will need to extend from "
 "`Godot.Object` or one of its subclasses."
 msgstr ""
+"Сигналы поддерживают параметры и связанные значения всех `встроенных типов "
+"<https://docs.microsoft.com/ru-ru/dotnet/csharp/language-reference/keywords/"
+"built-in-types-table>`_ и Классов, полученных из :ref:`Godot.Object "
+"<class_Object>`. Следовательно, любой ``Node`` или ``Reference`` будут "
+"совместимы автоматически, но пользовательские объекты данных должны "
+"наследоваться из `Godot.Object` или одного из его подклассов."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:162
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:163
 msgid ""
 "Finally, signals can be created by calling ``AddUserSignal``, but be aware "
 "that it should be executed before any use of said signals (with ``Connect`` "
 "or ``EmitSignal``)."
 msgstr ""
+"Наконец, сигналы могут быть созданы путем вызова `` AddUserSignal``, но "
+"имейте в виду, что он должен выполниться перед любым использованием "
+"указанных сигналов (с помощью `` Connect`` или `` EmitSignal``)."

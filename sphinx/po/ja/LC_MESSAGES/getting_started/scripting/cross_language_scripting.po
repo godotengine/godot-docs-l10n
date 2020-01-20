@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:4
-#, fuzzy
 msgid "Cross-language scripting"
-msgstr "スクリプトの作成"
+msgstr "クロスランゲージでのスクリプト作成"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:6
 msgid ""
@@ -29,27 +28,31 @@ msgid ""
 "page will go through the possible interactions between two nodes writen in "
 "different languages."
 msgstr ""
+"Godot を使用すると、必要に応じてスクリプト言語を組み合わせて使用する事が出来"
+"ます。つまり、1つのプロジェクトでC#とGDScriptの両方でノードを定義できます。こ"
+"のページでは、異なる言語で記述される2つのノード間で可能な相互作用について説明"
+"します。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:11
 msgid ""
 "The following two scripts will be used as references throughout this page."
-msgstr ""
+msgstr "次の2つのスクリプトは、このページ全体で参照として使用されます。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:66
-#, fuzzy
 msgid "Instantiating nodes"
-msgstr "シーンのインスタンス化"
+msgstr "ノードのインスタンス化"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:68
 msgid ""
 "If you're not using nodes from the scene tree, you'll probably want to "
 "instantiate nodes directly from the code."
 msgstr ""
+"シーンツリーのノードを使用していない場合は、コードから直接ノードをインスタン"
+"ス化することをお勧めします。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:72
-#, fuzzy
 msgid "Instantiating C# nodes from GDScript"
-msgstr "GDScriptから使う"
+msgstr "GDScriptからのC#ノードのインスタンス化"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:74
 msgid ""
@@ -57,6 +60,9 @@ msgid ""
 "`doc_gdscript_classes_as_resources`) the script can be instantiated with :"
 "ref:`new() <class_CSharpScript_method_new>`."
 msgstr ""
+"GDScriptからC#を使用する場合、多くの作業は必要ありません。ロードされると(:"
+"ref:`doc_gdscript_classes_as_resources` を参照)、スクリプトは :ref:"
+"`new()<class_CSharpScript_method_new> ` でインスタンス化できます。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:86
 msgid ""
@@ -65,47 +71,61 @@ msgid ""
 "not exist in the file, you'll see the following error: ``Invalid call. "
 "Nonexistent function `new` in base``."
 msgstr ""
+"csスクリプトを作成する場合、Godotが使用するクラスは .csファイル自体と同じ名前"
+"のクラスであることを常に念頭に置く必要があります。そのクラスがファイルに存在"
+"しない場合は、次のエラーが表示されます: ``Invalid call. Nonexistent function "
+"`new` in base``。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:91
 msgid "For example, MyCoolNode.cs should contain a class named MyCoolNode."
 msgstr ""
+"たとえば、MyCoolNode.csにはMyCoolNodeという名前のクラスが含まれている必要があ"
+"ります。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:93
 msgid ""
 "You also need to check your .cs file is referenced in the project's .csproj "
 "file. Otherwise, the same error will occur."
 msgstr ""
+"また、プロジェクトの.csprojファイルで.csファイルが参照されていることを確認す"
+"る必要があります。そうしないと、同じエラーが発生します。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:97
 msgid "Instantiating GDScript nodes from C#"
-msgstr ""
+msgstr "C#からのGDScriptノードのインスタンス化"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:99
 msgid ""
 "From the C# side, everything work the same way. Once loaded, the GDScript "
 "can be instantiated with :ref:`GDScript.New() <class_GDScript_method_new>`."
 msgstr ""
+"C#側から見ても、すべてが同じように機能します。ロードされると、GDScriptは :"
+"ref:`GDScript.New()<class_GDScript_method_new>` でインスタンス化できます。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:107
 msgid ""
 "Here we are using an :ref:`class_Object` but you can use type convertion "
 "like explained in :ref:`doc_c_sharp_features_type_conversion_and_casting`."
 msgstr ""
+"ここでは :ref:`class_Object` を使用していますが、\\ :ref:"
+"`doc_c_sharp_features_type_conversion_and_casting` で説明したような型変換を使"
+"用できます。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:111
 msgid "Accessing fields"
-msgstr ""
+msgstr "フィールドへのアクセス"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:114
-#, fuzzy
 msgid "Accessing C# fields from GDScript"
-msgstr "GDScriptから使う"
+msgstr "GDScriptからC#フィールドにアクセスする"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:116
 msgid ""
 "Accessing C# fields from GDScript is straightforward, you shouldn't have "
 "anything to worry about."
 msgstr ""
+"GDScriptからC#フィールドにアクセスするのは簡単です。心配する必要はありませ"
+"ん。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:128
 msgid ""
@@ -113,10 +133,13 @@ msgid ""
 "attribute, but trying to set a value on a property that does not define a "
 "setter will result in a crash."
 msgstr ""
+"フィールドがプロパティまたは属性として定義されているかどうかは関係ありません"
+"が、セッターを定義していないプロパティに値を設定しようとするとクラッシュする"
+"ことに注意してください。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:133
 msgid "Accessing GDScript fields from C#"
-msgstr ""
+msgstr "C#からGDScriptフィールドにアクセスする"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:135
 msgid ""
@@ -126,6 +149,10 @@ msgid ""
 "<class_Object_method_set>`. The first argument is the name of the field you "
 "want to access."
 msgstr ""
+"C#は静的に型指定されるため、C#からGDScriptにアクセスするのはもう少し複雑で"
+"す。 :ref:`Object.Get()<class_Object_method_get>` および :ref:`Object."
+"Set()<class_Object_method_set>` を使用する必要があります。最初の引数は、アク"
+"セスするフィールドの名前です。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:148
 msgid ""
@@ -133,16 +160,18 @@ msgid ""
 "GDScript side knows about. Essentially, you want to work with built-in types "
 "as described in :ref:`doc_gdscript` or classes extending :ref:`class_Object`."
 msgstr ""
+"フィールド値を設定するときは、GDScript側が知っている型のみを使用する必要があ"
+"ることに注意してください。基本的に、\\ :ref:`doc_gdscript` または :ref:"
+"`class_Object` を拡張するクラスで説明されている組み込み型を使用する必要があり"
+"ます。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:153
-#, fuzzy
 msgid "Calling methods"
-msgstr "バインドメソッド"
+msgstr "メソッドの呼び出し"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:156
-#, fuzzy
 msgid "Calling C# methods from GDScript"
-msgstr "GDScriptから使う"
+msgstr "GDScriptからのC#メソッドの呼び出し"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:158
 msgid ""
@@ -151,11 +180,14 @@ msgid ""
 "function signatures. If that's impossible you'll see the following error: "
 "``Invalid call. Nonexistent function `FunctionName```."
 msgstr ""
+"繰り返しますが、GDScriptからC#メソッドを呼び出すことは簡単です。マーシャリン"
+"グプロセスは、引数を関数シグネチャに一致するようにキャストするために最善を尽"
+"くします。それが不可能な場合、次のエラーが表示されます: ``Invalid call. "
+"Nonexistent function `FunctionName```。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:174
-#, fuzzy
 msgid "Calling GDScript methods from C#"
-msgstr "スクリプトからJavaScriptを呼び出す"
+msgstr "C#からのGDScriptメソッドの呼び出し"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:176
 msgid ""
@@ -163,6 +195,9 @@ msgid ""
 "<class_Object_method_call>`. The first arguments is the name of the method "
 "you want to call. The following arguments will be passed to said method."
 msgstr ""
+"C#からGDScriptメソッドを呼び出すには、\\ :ref:`Object.Call() "
+"<class_Object_method_call>` を使用する必要があります。最初の引数は呼び出すメ"
+"ソッドの名前です。次の引数以降が上記のメソッドに渡されます。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:198
 msgid ""
@@ -170,3 +205,6 @@ msgid ""
 "you'll need to cast it as ``object``. Otherwise each element of your array "
 "will be treated as a single argument and the function signature won't match."
 msgstr ""
+"ご覧のとおり、呼び出されたメソッドの最初の引数が配列である場合、それを "
+"``object`` としてキャストする必要があります。そうでない場合、配列の各要素は単"
+"一の引数として扱われ、関数シグネチャは一致しません。"

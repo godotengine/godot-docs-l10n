@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -167,7 +167,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:45
 msgid "Lambert wrapping (roughness dependent) for diffuse."
-msgstr "Emballage Lambert (dépendant de la rugosité) pour diffusion."
+msgstr "Emballage Lambert (dépendant de la rugosité) pour la diffusion."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:47
 msgid "**diffuse_oren_nayar**"
@@ -571,6 +571,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:168
 msgid "Instance custom data (for particles, mostly)."
 msgstr ""
+"Données personnalisées de l'instance (pour les particules, principalement)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:172
 msgid "Fragment built-ins"
@@ -619,6 +620,7 @@ msgstr "in vec3 **VERTEX**"
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
 msgid "Vertex that comes from vertex function (default, in view space)."
 msgstr ""
+"Vertex qui provient de la fonction vertex (par défaut, dans l'espace de vue)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:319
@@ -627,7 +629,7 @@ msgstr "in vec3 **VIEW**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
 msgid "Vector from camera to fragment position (in view space)."
-msgstr ""
+msgstr "Vecteur de la caméra à la position du fragment (dans l'espace de vue)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
 msgid "in bool **FRONT_FACING**"
@@ -635,15 +637,16 @@ msgstr "in bool **FRONT_FACING**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
 msgid "``true`` if current face is front face."
-msgstr ""
+msgstr "``true`` si la face actuelle est la face avant."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
 msgid "Normal that comes from vertex function (default, in view space)."
 msgstr ""
+"Normale qui vient de la fonction vertex (par défaut, dans l'espace de vue)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
 msgid "Tangent that comes from vertex function."
-msgstr ""
+msgstr "Tangente qui provient de la fonction du vertex."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:208
 msgid "Binormal that comes from vertex function."
@@ -673,7 +676,7 @@ msgstr "in vec2 **UV**"
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:315
 msgid "UV that comes from vertex function."
-msgstr ""
+msgstr "UV qui vient de la fonction vertex."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:216
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:317
@@ -683,7 +686,7 @@ msgstr "in vec2 **UV2**"
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:216
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:317
 msgid "UV2 that comes from vertex function."
-msgstr ""
+msgstr "UV2 qui provient de la fonction vertex."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
 msgid "in vec4 **COLOR**"
@@ -691,7 +694,7 @@ msgstr "in vec4 **COLOR**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
 msgid "COLOR that comes from vertex function."
-msgstr ""
+msgstr "COLOR qui vient de la fonction vertex."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:222
 msgid "out vec3 **ALBEDO**"
@@ -699,7 +702,7 @@ msgstr "out vec3 **ALBEDO**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:222
 msgid "Albedo (default white)."
-msgstr ""
+msgstr "Albédo (blanc par défaut)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:332
@@ -720,6 +723,8 @@ msgstr "out float **ALPHA_SCISSOR**"
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:226
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr ""
+"En cas d'écriture, les valeurs inférieures à une certaine quantité d'alpha "
+"sont rejetées."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:228
 msgid "out float **METALLIC**"
@@ -742,7 +747,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:232
 msgid "Roughness (0..1)."
-msgstr ""
+msgstr "Rugosité (0..1)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:234
 msgid "out float **RIM**"
@@ -792,7 +797,7 @@ msgstr "out vec2 **ANISOTROPY_FLOW**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:244
 msgid "Distortion direction, use with flowmaps."
-msgstr ""
+msgstr "Direction de la distorsion, à utiliser avec les flowmaps."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:246
 msgid "out float **SSS_STRENGTH**"
@@ -820,7 +825,7 @@ msgstr "out vec3 **EMISSION**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:250
 msgid "Emission color (can go over 1,1,1 for HDR)."
-msgstr ""
+msgstr "Couleur d'émission (peut aller au-delà de 1,1,1 pour le HDR)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:252
 msgid "out float **AO**"
@@ -836,7 +841,7 @@ msgstr "out float **AO_LIGHT_AFFECT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:254
 msgid "How much AO affects lights (0..1; default 0)."
-msgstr ""
+msgstr "Combien d'AO affecte les lumières (0..1 ; par défaut 0)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:256
 msgid "sampler2D **SCREEN_TEXTURE**"
@@ -857,6 +862,8 @@ msgid ""
 "Built-in Texture for reading depth from the screen. Must convert to linear "
 "using INV_PROJECTION."
 msgstr ""
+"Texture intégrée pour lire la profondeur depuis l'écran. Doit être converti "
+"en linéaire en utilisant INV_PROJECTION."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:260
 msgid "out float **DEPTH**"
@@ -864,7 +871,7 @@ msgstr "out float **DEPTH**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:260
 msgid "Custom depth value (0..1)."
-msgstr ""
+msgstr "Valeur de profondeur personnalisée (0..1)."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:262
 msgid "in vec2 **SCREEN_UV**"
@@ -872,7 +879,7 @@ msgstr "in vec2 **SCREEN_UV**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:262
 msgid "Screen UV coordinate for current pixel."
-msgstr ""
+msgstr "Coordonnées UV de l'écran pour le pixel actuel."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
 msgid "in vec2 **POINT_COORD**"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,19 +30,16 @@ msgstr ""
 "paso a paso utilizando el sistema de UI del motor:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
-#, fuzzy
 msgid "A main menu."
-msgstr "El menú principal"
+msgstr "Un menú principal."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
-#, fuzzy
 msgid "A game UI with a health bar, energy bar, bomb and money counters."
 msgstr ""
 "Una UI de juego con barra de salud, barra de energía, contadores de bombas y "
-"dinero"
+"dinero."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
@@ -51,12 +48,11 @@ msgstr ""
 "Aprenderás a diseñar eficientemente la UI del juego y a usar los nodos "
 "Control de Godot. Esta página se centra en la parte visual: todo lo que "
 "haces desde el editor. Para aprender a programar una barra de vida, lee :doc:"
-"`ui_code_a_life_bar`"
+"`ui_code_a_life_bar`."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
-#, fuzzy
 msgid "The GUI you're going to create."
-msgstr "El GUI que vas a crear"
+msgstr "El GUI que vas a crear."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -77,6 +73,8 @@ msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
 "UI system works."
 msgstr ""
+"Lea :doc:`ui_introduction_to_the_ui_system` primero para aprender cómo "
+"funciona el sistema de UI de Godot."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
 msgid "How to design your game UI"
@@ -116,19 +114,18 @@ msgstr ""
 "contrario:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
-#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
 "Los gráficos pueden distorsionar la percepción de los jugadores sobre la "
-"experiencia y te perderás un valioso feedback"
+"experiencia y te perderás un valioso feedback."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
-#, fuzzy
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
 msgstr ""
-"Si la Experiencia de Usuario no funciona, tendrás que rehacer algunos sprites"
+"Si la Experiencia de Usuario no funciona, tendrás que rehacer algunos "
+"sprites."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:58
 msgid ""
@@ -151,22 +148,20 @@ msgid "There are two ways to design your UI in Godot. You can:"
 msgstr "Hay dos maneras de diseñar tu UI en Godot. Tú puedes:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
-#, fuzzy
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
 "Constrúyelo todo en una sola escena, y eventualmente guarda algunas ramas "
-"como escenas reutilizables"
+"como escenas reutilizables."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
-#, fuzzy
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
-"Crea escenas de plantilla para componentes reutilizables y crea componentes "
-"específicos que heredan de tus escenas base"
+"Crea plantillas de escenas para componentes reutilizables y crea componentes "
+"específicos que heredan de sus escenas base."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -182,13 +177,12 @@ msgstr ""
 "reutilizables, como podrás ver a continuación."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
-#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
 "Los archivos que encontrarás en Godot. Los gráficos se ven más limpios que "
-"en el diseño preliminar, pero siguen siendo marcadores de posición"
+"en el diseño preliminar, pero todavía son marcadores de posición."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -212,29 +206,26 @@ msgid "Here are my three rules of thumb to find the right containers:"
 msgstr "Aquí están mis tres reglas para encontrar los containers correctos:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
-#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button."
 msgstr ""
-"Divide la interfaz de usuario en cajas anidadas, desde las más grandes que "
-"lo contienen todo, hasta las más pequeñas, que abarcan un widget, como una "
-"barra con su etiqueta, un panel o un botón"
+"Divide la interfaz de usuario en ventanas anidadas, desde la más grande que "
+"contiene todo, hasta las más pequeñas, que abarcan un widget, como una barra "
+"con su etiqueta, un panel o un botón."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
-#, fuzzy
 msgid "If there's some padding around an area, use a ``MarginContainer``."
-msgstr "Si hay algún relleno alrededor de un área, usa un ``MarginContainer``"
+msgstr "Si hay algún relleno alrededor de un área, usa un ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
-#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
-"Si los elementos están dispuestos en filas o columnas, utiliza un "
-"```HBoxContainer`` o ```VBoxContainer``"
+"Si los elementos están distribuidos en filas o columnas, utiliza un "
+"``HBoxContainer`` o ``VBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
@@ -261,11 +252,10 @@ msgstr ""
 "derecha, centraremos la ilustración con un ``CenterContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
-#, fuzzy
 msgid "Interface building blocks, broken down using the three rules of thumb."
 msgstr ""
-"Elementos básicos de la interfaz, desglosados utilizando las tres reglas "
-"generales"
+"Bloques de construcción de la interfaz, desglosados utilizando las tres "
+"reglas generales."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -282,13 +272,12 @@ msgid "Prepare the Main Menu scene"
 msgstr "Prepara la escena del Menú Principal"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
-#, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
 "Vamos a crear el menú principal. Lo construiremos en una sola escena. Para "
-"crear una escena vacía, haz clic en el menú Escena -> Nueva escena."
+"crear una escena vacía, haz clic en **Escena > Nueva escena**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
 msgid ""
@@ -333,14 +322,17 @@ msgid "Margin Bottom: *80*"
 msgstr "Margin Bottom: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
-#, fuzzy
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
 "Queremos que el container se ajuste a la ventana. En la barra de "
 "herramientas encima del Viewport, abre el menú ``Layout`` y selecciona la "
-"última opción, ``Full Rect``."
+"última opción, ``Full Rect``.\n"
+"\n"
+"Queremos que el contenedor se ajuste a la ventana. En la barra de "
+"herramientas encima del Viewport, abre el menú **Layout** y selecciona la "
+"última opción, **Completo*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
 msgid "Add the UI sprites"
@@ -355,54 +347,47 @@ msgstr ""
 "``TextureRect``. Necesitamos:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
-#, fuzzy
 msgid "the title or logo,"
-msgstr "El título o logo"
+msgstr "el título o logo,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
-#, fuzzy
 msgid "the three text options as individual nodes,"
-msgstr "Las tres opciones de texto, como nodos individuales"
+msgstr "las tres opciones de texto como nodos individuales,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
-#, fuzzy
 msgid "the version note,"
-msgstr "Las notas de la versión"
+msgstr "Las notas de la versión,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-#, fuzzy
 msgid "and the main menu’s illustration."
-msgstr "Y la ilustración del menú principal"
+msgstr "Y la ilustración del menú principal."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press ``Meta+A`` on your keyboard. Start to "
 "type ``TextureRect`` to find the corresponding node and press enter. With "
 "the new node selected, press ``Meta+D`` five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
-"Haz clic en el botón ``Añadir Nodo`` o pulsa ``Meta+A`` en tu teclado. "
-"Comienza a escribir ``TextureRect`` para encontrar el nodo correspondiente y "
-"presiona enter. Con el nuevo nodo seleccionado, presiona ``Meta+D`` cinco "
-"veces para crear cinco instancias adicionales de ``TextureRect``."
+"Haz clic en el botón **Añadir Nodo** o presiona ``Ctrl+A`` en tu teclado. "
+"Empieza a escribir ``TextureRect`` para encontrar el nodo correspondiente y "
+"presiona enter. Con el nuevo nodo seleccionado, presiona ``Ctrl+D`` cinco "
+"veces para crear cinco instancias extra de ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
 "property and click **[empty] > Load**. A file browser opens and lets you "
 "pick a sprite to load into the texture slot."
 msgstr ""
-"Haz clic en cada uno de los nodos para seleccionarlos. En el inspector, "
-"encuentra la propiedad ``Texture`` y haz clic en ``[empty]`` -> ``Load``. Se "
-"abre un explorador de archivos que te permite elegir un sprite para cargarlo "
-"en el slot de texturas."
+"Haz clic en cada uno de los nodos para seleccionarlo. En el inspector, "
+"encuentre la propiedad **Texture** y haz clic en **[empty] > Load**. Se abre "
+"un explorador de archivos que te permite elegir un sprite para cargarlo en "
+"la ranura de textura."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
-#, fuzzy
 msgid "The file browser lets you find and load textures."
-msgstr "El navegador de archivos te permite encontrar y cargar texturas"
+msgstr "El explorador de archivos permite encontrar y cargar texturas."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
 msgid ""
@@ -420,9 +405,8 @@ msgstr ""
 "desastre."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
-#, fuzzy
 msgid "The six nodes with textures loaded."
-msgstr "Los seis nodos, con texturas cargadas"
+msgstr "Los seis nodos con texturas cargadas."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
 msgid ""
@@ -473,13 +457,12 @@ msgstr ""
 "``CenterContainer`` para la ilustración de la derecha."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
-#, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr ""
-"Deberías tener cuatro contenedores anidados, y los nodos TextureRect "
-"situados a un lado de éstos"
+"Deberías tener cuatro contenedores anidados y los nodos de TextureRect a un "
+"lado de éstos."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
 #, fuzzy

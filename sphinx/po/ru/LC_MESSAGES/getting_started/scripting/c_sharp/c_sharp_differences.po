@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,25 +19,27 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
 msgid "API differences to GDScript"
-msgstr ""
+msgstr "API различия с GDScript"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:6
 msgid "This is a (incomplete) list of API differences between C# and GDScript."
-msgstr ""
+msgstr "Это (неполный) список различий API между C# и GDScript."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:9
 msgid "General differences"
-msgstr ""
+msgstr "Общие отличия"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:11
 msgid ""
 "As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
 "instead of the ``snake_case`` used in GDScript and C++."
 msgstr ""
+"Как объясняется в :ref: `doc_c_sharp`, C# обычно использует ``PascalCase`` "
+"вместо``snake_case``, используемого в GDScript и C++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
 msgid "Global scope"
-msgstr ""
+msgstr "Глобальный контекст"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:17
 msgid ""
@@ -45,6 +47,9 @@ msgid ""
 "does not allow declaring them in namespaces. Most global constants were "
 "moved to their own enums."
 msgstr ""
+"Глобальные функции и некоторые константы пришлось перенести в классы, "
+"поскольку C# не позволяет объявлять их в пространствах имен. Большинство "
+"глобальных констант были перенесены в их собственные перечисления."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:22
 msgid "Constants"
@@ -55,6 +60,8 @@ msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
+"Глобальные константы были перенесены в собственные перечисления. Например, "
+"константы ``ERR_ * `` были перемещены в перечисление ``Error``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
 #, fuzzy
@@ -89,27 +96,27 @@ msgstr "C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``SPKEY``"
-msgstr ""
+msgstr "``SPKEY``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``GD.SpKey``"
-msgstr ""
+msgstr "``GD.SpKey``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``TYPE_*``"
-msgstr ""
+msgstr "``TYPE_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``Variant.Type`` enum"
-msgstr ""
+msgstr "``Variant.Type`` перечисление"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``OP_*``"
-msgstr ""
+msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``Variant.Operator`` enum"
-msgstr ""
+msgstr "``Variant.Operator`` перечисление"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
 #, fuzzy
@@ -122,6 +129,10 @@ msgid ""
 "``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
 "``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
 msgstr ""
+"Глобальные математические функции, такие как ``abs``, ``acos``, ``asin``, "
+"``atan`` и ``atan2``, расположены под ``Mathf`` как ``Abs``, ``Acos``, "
+"``Asin``, ``Atan`` и ``Atan2``. Константу ``PI`` можно найти как ``Mathf."
+"Pi``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
 #, fuzzy
@@ -133,6 +144,8 @@ msgid ""
 "Random global functions, like ``rand_range`` and ``rand_seed``, are located "
 "under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
 msgstr ""
+"Случайные глобальные функции, такие как ``rand_range`` и ``rand_seed``, "
+"расположены под ``GD``. Пример: ``GD.RandRange`` и ``GD.RandSeed``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
 #, fuzzy
@@ -144,6 +157,8 @@ msgid ""
 "Many other global functions like ``print`` and ``var2str`` are located under "
 "``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
 msgstr ""
+"Многие другие глобальные функции, такие как ``print`` и ``var2str``, "
+"расположены в ``GD``. Пример: ``GD.Print`` и ``GD.Var2Str``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:56
 #, fuzzy
@@ -152,23 +167,23 @@ msgstr "Функции"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``weakref(obj)``"
-msgstr ""
+msgstr "``weakref(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``Object.WeakRef(obj)``"
-msgstr ""
+msgstr "``Object.WeakRef(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
 msgid "``is_instance_valid(obj)``"
-msgstr ""
+msgstr "``is_instance_valid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
 msgid "``Object.IsInstanceValid(obj)``"
-msgstr ""
+msgstr "``Object.IsInstanceValid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:66
 msgid "Tips"
-msgstr ""
+msgstr "Советы"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:68
 msgid ""
@@ -176,6 +191,9 @@ msgid ""
 "directive allows to access the members and nested types of a class without "
 "specifying the class name."
 msgstr ""
+"Иногда может быть полезно использовать директиву ``using static``. Эта "
+"директива позволяет получить доступ к членам и вложенным типам класса без "
+"указания имени класса."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:92
@@ -184,11 +202,11 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:313
 msgid "Example:"
-msgstr ""
+msgstr "Пример:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:86
 msgid "Export keyword"
-msgstr ""
+msgstr "Ключевое слово Export"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:88
 msgid ""
@@ -197,10 +215,15 @@ msgid ""
 "`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
 "parameters. Default values can be set by assigning a value."
 msgstr ""
+"Используйте атрибут `` [Export] `` вместо ключевого слова GDScript "
+"``export``. Этот атрибут также может быть предоставлен с необязательными "
+"параметрами :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` и `` "
+"hintString``. Значения по умолчанию могут быть установлены путем присвоения "
+"значения."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:114
 msgid "Signal keyword"
-msgstr ""
+msgstr "Ключевое слово Signal"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:116
 msgid ""
@@ -208,14 +231,17 @@ msgid ""
 "``signal`` keyword. This attribute should be used on a `delegate`, whose "
 "name signature will be used to define the signal."
 msgstr ""
+"Используйте атрибут ``[Signal]`` для объявления сигнала вместо ключевого "
+"слова GDScript ``signal``. Этот атрибут должен использоваться для "
+"`делегата`, чья подпись имени будет использоваться для определения сигнала."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
 msgid "See also: :ref:`c_sharp_signals`"
-msgstr ""
+msgstr "См. также: :ref:`c_sharp_signals`"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
-msgstr ""
+msgstr "Синглтоны"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:129
 msgid ""
@@ -223,6 +249,9 @@ msgid ""
 "pattern. This is to make code less verbose than it would be with an "
 "``Instance`` property."
 msgstr ""
+"Синглтоны доступны как статические классы, а не как шаблон синглтона. Это "
+"сделано для того, чтобы сделать код менее подробным, чем это было бы со "
+"свойством `` Instance``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:138
 msgid ""
@@ -232,16 +261,24 @@ msgid ""
 "``Singleton`` that returns the singleton instance. The type of this instance "
 "is ``Godot.Object``."
 msgstr ""
+"Однако в некоторых очень редких случаях этого недостаточно. Например, вы "
+"можете захотеть получить доступ к члену из базового класса ``Godot.Object``, "
+"например ``Connect``. Для таких случаев использования мы предоставляем "
+"статическое свойство с именем ``Singleton``, которое возвращает экземпляр "
+"singleton. Тип этого экземпляра - ``Godot.Object``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:150
 msgid "String"
-msgstr ""
+msgstr "Строки"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:152
 msgid ""
 "Use ``System.String`` (``string``). Most of Godot's String methods are "
 "provided by the ``StringExtensions`` class as extension methods."
 msgstr ""
+"Используйте ``System.String`` (``string``). Большинство методов Godot для "
+"работы со строками предоставляются классом ``StringExtensions`` в качестве "
+"методов расширения."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:162
 #, fuzzy
@@ -255,6 +292,10 @@ msgid ""
 "extension method of ``StringBuilder`` instead of string. Alternatively, you "
 "can use ``string.Remove``."
 msgstr ""
+"``erase``: строки неизменны в C#, поэтому мы не можем изменить строку, "
+"переданную методу расширения. По этой причине ``Erase`` был добавлен как "
+"метод расширения ``StringBuilder`` вместо строки. Также вы можете "
+"использовать ``string.Remove``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:168
 msgid ""
@@ -262,6 +303,9 @@ msgid ""
 "which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
 "specify case sensitivity:"
 msgstr ""
+"``IsSubsequenceOf`` / ``IsSubsequenceOfi``: предоставляется дополнительный "
+"метод, который представляет собой перегрузку ``IsSubsequenceOf``, "
+"позволяющую вам явно указать чувствительность к регистру:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:179
 msgid ""
@@ -269,10 +313,13 @@ msgid ""
 "``Match`` and ``Matchn``, which allows you to explicitly specify case "
 "sensitivity:"
 msgstr ""
+"``Match`` / ``Matchn`` / ``ExprMatch``: помимо ``Match`` и ``Matchn`` "
+"предоставляется дополнительный метод, который позволяет явно указать "
+"чувствительность к регистру:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 msgid "Basis"
-msgstr ""
+msgstr "Базис"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:192
 msgid ""
@@ -280,25 +327,29 @@ msgid ""
 "Basis()`` initializes all primitive members to their default value. Use "
 "``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
 msgstr ""
+"Структуры не могут иметь конструкторов без параметров в C#. Следовательно, "
+"``new Basis ()`` инициализирует все примитивные члены их значением по "
+"умолчанию. Используйте ``Basis.Identity`` для эквивалента ``Basis ()`` в "
+"GDScript и C ++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:196
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:242
 msgid "The following method was converted to a property with a different name:"
-msgstr ""
+msgstr "Следующий метод был преобразован в свойство с другим именем:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:201
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
 msgid "``get_scale()``"
-msgstr ""
+msgstr "``get_scale()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:201
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
 msgid "``Scale``"
-msgstr ""
+msgstr "``Scale``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
 msgid "Transform2D"
-msgstr ""
+msgstr "Transform2D"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:207
 msgid ""
@@ -307,16 +358,21 @@ msgid ""
 "Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
 "in GDScript and C++."
 msgstr ""
+"Структуры не могут иметь конструкторов без параметров в C#. Следовательно, "
+"``new Transform2D () `` инициализирует все примитивные члены их значением по "
+"умолчанию. Пожалуйста, используйте ``Transform2D.Identity`` для эквивалента "
+"``Transform2D () `` в GDScript и C ++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:211
 msgid ""
 "The following methods were converted to properties with their respective "
 "names changed:"
 msgstr ""
+"Следующие методы были преобразованы в свойства с соответствующими именами:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:216
 msgid "``get_rotation()``"
-msgstr ""
+msgstr "``get_rotation()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:216
 #, fuzzy
@@ -325,51 +381,52 @@ msgstr "Векторные Операции"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:221
 msgid "Plane"
-msgstr ""
+msgstr "Плоскость"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
 msgid ""
 "The following method was converted to a property with a *slightly* different "
 "name:"
-msgstr ""
+msgstr "Следующий метод был преобразован в свойство с *немного* другим именем:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``center()``"
-msgstr ""
+msgstr "``center()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``Center``"
-msgstr ""
+msgstr "``Center``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:232
 msgid "Rect2"
-msgstr ""
+msgstr "Rect2"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:234
 msgid ""
 "The following field was converted to a property with a *slightly* different "
 "name:"
 msgstr ""
+"Следующее поле было преобразовано в свойство с *немного* другим именем:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
 msgid "``end``"
-msgstr ""
+msgstr "``end``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
 msgid "``End``"
-msgstr ""
+msgstr "``End``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:247
 msgid "``get_area()``"
-msgstr ""
+msgstr "``get_area()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:247
 msgid "``Area``"
-msgstr ""
+msgstr "``Area``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
 msgid "Quat"
-msgstr ""
+msgstr "Кват"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:253
 msgid ""
@@ -377,15 +434,19 @@ msgid ""
 "Quat()`` initializes all primitive members to their default value. Please "
 "use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
 msgstr ""
+"Структуры не могут иметь конструкторов без параметров в C#. Следовательно, "
+"``new Quat () `` инициализирует все примитивные члены их значением по "
+"умолчанию. Пожалуйста, используйте ``Quat.Identity`` для эквивалента ``Quat "
+"() `` в GDScript и C ++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:257
 msgid ""
 "The following methods were converted to a property with a different name:"
-msgstr ""
+msgstr "Следующие методы были преобразованы в свойство с другим именем:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
 msgid "``length()``"
-msgstr ""
+msgstr "``length()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
 #, fuzzy
@@ -394,11 +455,11 @@ msgstr "Путь ресурса"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``length_squared()``"
-msgstr ""
+msgstr "``length_squared()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``LengthSquared``"
-msgstr ""
+msgstr "``LengthSquared``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
 msgid "Array"
@@ -409,6 +470,8 @@ msgid ""
 "*This is temporary. PoolArrays will need their own types to be used the way "
 "they are meant to.*"
 msgstr ""
+"*Это временно. PoolArrays нуждаются в их собственных типах чтобы ими можно "
+"было пользоваться так как было задумано. *"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
 #, fuzzy
@@ -417,11 +480,11 @@ msgstr "Массив"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
 msgid "``Godot.Collections.Array``"
-msgstr ""
+msgstr "``Godot.Collections.Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
 msgid "``PoolIntArray``"
-msgstr ""
+msgstr "``PoolIntArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
 #, fuzzy
@@ -430,15 +493,15 @@ msgstr "``in``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:276
 msgid "``PoolByteArray``"
-msgstr ""
+msgstr "``PoolByteArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:276
 msgid "``byte[]``"
-msgstr ""
+msgstr "``byte[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
 msgid "``PoolFloatArray``"
-msgstr ""
+msgstr "``PoolFloatArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
 #, fuzzy
@@ -447,7 +510,7 @@ msgstr "float"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:278
 msgid "``PoolStringArray``"
-msgstr ""
+msgstr "``PoolStringArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:278
 #, fuzzy
@@ -456,7 +519,7 @@ msgstr "Строки"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 msgid "``PoolColorArray``"
-msgstr ""
+msgstr "``PoolColorArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 #, fuzzy
@@ -465,19 +528,19 @@ msgstr "Цвет"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:280
 msgid "``PoolVector2Array``"
-msgstr ""
+msgstr "``PoolVector2Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:280
 msgid "``Vector2[]``"
-msgstr ""
+msgstr "``Vector2[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid "``PoolVector3Array``"
-msgstr ""
+msgstr "``PoolVector3Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid "``Vector3[]``"
-msgstr ""
+msgstr "``Vector3[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:284
 msgid ""
@@ -485,6 +548,9 @@ msgid ""
 "Collections.Array``. Use the ``Godot.Collections.Array<T>(Godot.Collections."
 "Array)`` constructor to create one."
 msgstr ""
+"``Godot.Collections.Array <T> `` является типобезопасной оболочкой для "
+"``Godot.Collections.Array``. Используйте конструктор ``Godot.Collections."
+"Array <T> (Godot.Collections.Array)`` для его создания."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:288
 msgid "Dictionary"
@@ -492,7 +558,7 @@ msgstr "Словарь"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:290
 msgid "Use ``Godot.Collections.Dictionary``."
-msgstr ""
+msgstr "Используйте ``Godot.Collections.Dictionary``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:292
 msgid ""
@@ -500,22 +566,25 @@ msgid ""
 "Collections.Dictionary``. Use the ``Godot.Collections.Dictionary<T>(Godot."
 "Collections.Dictionary)`` constructor to create one."
 msgstr ""
+"``Godot.Collections.Dictionary <T> `` является типобезопасной оболочкой "
+"вокруг ``Godot.Collections.Dictionary``. Используйте конструктор ``Godot."
+"Collections.Dictionary <T> (Godot.Collections.Dictionary)`` для его создания."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:296
 msgid "Variant"
-msgstr ""
+msgstr "Variant"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:298
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
-msgstr ""
+msgstr "``System.Object`` (`` object``) используется вместо ``Variant``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:301
 msgid "Communicating with other scripting languages"
-msgstr ""
+msgstr "Общение с другими языками сценариев"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
-msgstr ""
+msgstr "Это подробно объясняется в :ref:`doc_cross_language_scripting`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:306
 msgid "Yield"
@@ -527,26 +596,33 @@ msgid ""
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield>`_."
 msgstr ""
+"Нечто похожее на ``yield`` в GDScript с одним параметром может быть "
+"достигнуто с помощью ключевого слова `yield C# <https://docs.microsoft.com/"
+"ru-ru/dotnet/csharp/language-reference/keywords/yield>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:311
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
 msgstr ""
+"Эквивалент выхода по сигналу может быть достигнут с помощью async / await и "
+"``Godot.Object.ToSignal``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:321
 msgid "Other differences"
-msgstr ""
+msgstr "Другие различия"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
 msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
+"``preload``, так как он работает в GDScript, недоступен в C#. Вместо этого "
+"используйте ``GD.Load`` или ``ResourceLoader.Load``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
 msgid "Other differences:"
-msgstr ""
+msgstr "Другие отличия:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 #, fuzzy
@@ -555,7 +631,7 @@ msgstr "Цвет"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 msgid "``Color.Color8``"
-msgstr ""
+msgstr "``Color.Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 #, fuzzy
@@ -564,7 +640,7 @@ msgstr "``is``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 msgid "``float.IsInfinity``"
-msgstr ""
+msgstr "``float.IsInfinity``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 #, fuzzy
@@ -573,16 +649,16 @@ msgstr "``is``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 msgid "``float.IsNaN``"
-msgstr ""
+msgstr "``float.IsNaN``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
 msgid "``dict2inst``"
-msgstr ""
+msgstr "``dict2inst``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 msgid "TODO"
-msgstr ""
+msgstr "TODO"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 #, fuzzy

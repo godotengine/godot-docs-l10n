@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,11 +27,11 @@ msgstr "サポートされているアニメーション:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
-msgstr ""
+msgstr "全タイプのオブジェクトのトラスフォームアニメーション"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
 msgid "transform animation of pose bones"
-msgstr ""
+msgstr "ポーズ ボーンのトランフォームアニメーション"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
 msgid "shape key animation"
@@ -39,15 +39,15 @@ msgstr "シェイプキーアニメーション"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
 msgid "light animation"
-msgstr "ライトアニメーション"
+msgstr "ライトのアニメーション"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
 msgid "camera animation"
-msgstr "カメラアニメーション"
+msgstr "カメラのアニメーション"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
-msgstr ""
+msgstr "単一オブジェクトの複数のアクション"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
 msgid ""
@@ -55,16 +55,22 @@ msgid ""
 "This add-on has support for exporting multiple actions all at once into a "
 "single AnimationPlayer and makes it easy to switch actions."
 msgstr ""
+"ほとんどのゲームでは、1つのオブジェクトで複数のアニメーションを切り替える必要"
+"があります。このアドオンは、複数のアクションを一度に単一のAnimationPlayerにエ"
+"クスポートすることをサポートしており、アクションを簡単に切り替えることができ"
+"ます。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
 msgid ""
 "This workflow makes use of blender nla_tracks. Here is a brief guide on how "
 "to use this feature:"
 msgstr ""
+"このワークフローは、BlenderのNLAトラックを使用します。この機能の使用方法に関"
+"する簡単なガイドを次に示します:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
 msgid "**1. Stash active action**"
-msgstr ""
+msgstr "**1. 隠しアクティブアクション**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
 msgid ""
@@ -72,14 +78,17 @@ msgid ""
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
+"新しく作成されたアクションは、常にオブジェクトにバインドされたアクティブなア"
+"クションです。アクティブなアクションをNLAトラックに配置する方法はいくつかあり"
+"ますが、1つはもちろん ``NLAエデイター`` です"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
-msgstr ""
+msgstr "または ``ドープシート`` でアクションを隠すことができます"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2. NLAトラックのミュートステータスを確認**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -87,24 +96,31 @@ msgid ""
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
+"NLAトラックは ``ミュート`` または ``ミュート解除`` にすることができ、エクス"
+"ポータはすべての ``ミュート`` 状態のNLAトラックを別のアクションとしてエクス"
+"ポートし、すべての ``ミュート解除`` 状態のNLAトラックをエクスポートされるすべ"
+"てのアクション(アクションアクションを含む)にブレンドします。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 msgid "**3. Export the scene**"
-msgstr ""
+msgstr "**3. シーンのエクスポート**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
 msgstr ""
+"``Export Stashed Actions`` オプションがオンになっていることを確認します。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
 msgid ""
 "Then all the stashed actions, as well as the active action, are exported to "
 "an AnimationPlayer."
 msgstr ""
+"その後、すべての隠されたアクションとアクティブなアクションがAnimationPlayerに"
+"エクスポートされます。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
 msgid "Constraints"
-msgstr ""
+msgstr "制約"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
 msgid ""
@@ -113,6 +129,10 @@ msgid ""
 "object has some constraint; if it does, all the constraints are baked into "
 "actions and then exported along with the object."
 msgstr ""
+"複雑なアニメーションは、オブジェクト制約を使用して作成される場合があります。"
+"通常の例はインバース キネマティクスです。アドオンは、オブジェクトに何らかの制"
+"約があるかどうかを自動的にチェックします。存在する場合、すべての制約がアク"
+"ションにベイクされ、オブジェクトとともにエクスポートされます。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
 msgid "Animation Mode"
@@ -125,20 +145,28 @@ msgid ""
 "animated node. In order to fix this inconsistence and still make the "
 "animation play versatile, this add-on has three animation exporting modes."
 msgstr ""
+"GodotとBlender は、アニメーション データを格納する構造が異なります。Godotで"
+"は、アニメーション データは、アニメーション化された各ノードではなく、"
+"AnimationPlayer ノードに格納されます。この不整合を修正し、アニメーションを汎"
+"用的に再生するために、このアドオンには 3つのアニメーション書き出しモードがあ"
+"ります。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Animation as Actions'**"
-msgstr ""
+msgstr "**'Animation as Actions' モード**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid ""
 "Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
 msgstr ""
+"すべてのアニメーションをオブジェクトアクションとして扱うので、エクスポートさ"
+"れたシーンでは、すべてのオブジェクトが独自のAnimationPlayerを持ち、そのアク"
+"ションを保持します。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Scene Animation'**"
-msgstr ""
+msgstr "**'Scene Animation' モード**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid ""
@@ -146,10 +174,13 @@ msgid ""
 "Blender's timeline, this is what you want. In this mode, all the animations "
 "in the scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
+"アニメーションがBlenderのタイムラインで再生するのと同じ結果を生成するようにし"
+"たい場合、この方法を使用します。このモードでは、シーン内のすべてのアニメー"
+"ションは、シーンルート内の1つのAnimationPlayerに配置されます。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:82
 msgid "**Mode 'Animation as Action with Squash'**"
-msgstr ""
+msgstr "**'Animation as Action with Squash' モード**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
 msgid ""
@@ -159,3 +190,8 @@ msgid ""
 "and each Skeleton and Mesh has actions; then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
+"このモードには、「Animation as Action」モードと非常によく似ていますが、生成さ"
+"れるAnimationPlayerの数は少なくなります。親子関係にあるオブジェクトは、"
+"AnimationPlayerを共有します。複数のリグがあり、各スケルトンとメッシュにアク"
+"ションがある場合に便利です。その場合、1つのリグにはAnimationPlayerが1つしかあ"
+"りません。"

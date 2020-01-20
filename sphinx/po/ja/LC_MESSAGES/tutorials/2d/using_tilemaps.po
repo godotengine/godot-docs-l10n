@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
 msgid "TileMap node"
-msgstr ""
+msgstr "TileMap ノード"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:39
 msgid ""
@@ -103,7 +103,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:52
 msgid "``Cell Size``"
-msgstr ""
+msgstr "\\ ``Cell Size``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:51
 msgid ""
@@ -111,23 +111,23 @@ msgid ""
 "tiles. The default value is ``(64, 64)``."
 msgstr ""
 "これで、グリッドのサイズを定義します。タイルのピクセルサイズと一致させる必要"
-"があります。デフォルト値は（64、64）です。"
+"があります。デフォルト値は(64、64)です。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:56
 msgid "``YSort``"
-msgstr ""
+msgstr "\\ ``YSort``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:55
 msgid ""
 "This causes tiles to be drawn in order of their ``Y`` position, so that "
 "\"lower\" tiles are drawn on top of \"higher\" ones."
 msgstr ""
-"これにより、タイルがY位置の順に描画されるため、「低い」タイルが「高い」タイル"
-"の上に描画されます。"
+"これにより、タイルが ``Y`` 位置の順に描画されるため、「低い」タイルが「高い」"
+"タイルの上に描画されます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid "``Half Offset`` and ``Tile Origin``"
-msgstr ""
+msgstr "``Half Offset`` と ``Tile Origin``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid ""
@@ -137,7 +137,7 @@ msgstr "これらのプロパティは、グリッドの位置に対するタイ
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:63
 msgid "``Quadrant``"
-msgstr ""
+msgstr "\\ ``Quadrant``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
 msgid ""
@@ -150,7 +150,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "``Custom Transform``"
-msgstr ""
+msgstr "\\ ``Custom Transform``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
@@ -185,14 +185,14 @@ msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
 "TileSet\"."
 msgstr ""
-"新しいTileSetを追加するには、「Tile Set」プロパティをクリックして、「New "
+"新しいTileSetを追加するには、「Tile Set」プロパティをクリックして、「新規 "
 "TileSet」を選択します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
 msgid ""
 "When you do this, the \"TileSet\" panel will open at the bottom of the "
 "editor window:"
-msgstr "すると、エディターウィンドウの下部に[タイルセット]パネルが開きます。"
+msgstr "すると、エディタウィンドウの下部に「TileSet」パネルが開きます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:89
 msgid ""
@@ -200,8 +200,8 @@ msgid ""
 "the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
 "image."
 msgstr ""
-"最初に、タイルに使用するテクスチャを追加する必要があります。 [テクスチャを"
-"TileSetに追加]ボタンをクリックして、tilesheet.png画像を選択します。"
+"最初に、タイルに使用するテクスチャを追加する必要があります。\"Add Texture(s) "
+"to TileSet\" ボタンをクリックして、\\ ``tilesheet.png`` 画像を選択します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
@@ -209,7 +209,7 @@ msgid ""
 "want. Click the \"Enable Snap\" button to make it easier to select the "
 "entire tile. A yellow rectangle appears around the selected tile."
 msgstr ""
-"次に、[新しい単一のタイル]をクリックし、画像内にドラッグして目的のタイルを選"
+"次に、\"New Single Tile\" をクリックし、画像内にドラッグして目的のタイルを選"
 "択します。 [スナップを有効にする]ボタンをクリックして、タイル全体を選択しやす"
 "くします。選択したタイルの周りに黄色の長方形が表示されます。"
 
@@ -252,11 +252,11 @@ msgid ""
 "button. Make sure you still have grid snap enabled, then click and drag in "
 "the tile. A square collision shape appears in light blue:"
 msgstr ""
-"エディターウィンドウの下部にある[タイルセット]をクリックして、タイルセット"
-"ツールに戻ります。以前に定義したタイルをクリックします（黄色のアウトライ"
-"ン）。 [衝突]タブを選択し、[新しい長方形の作成]ボタンをクリックします。グリッ"
-"ドスナップが有効になっていることを確認してから、タイルをクリックしてドラッグ"
-"します。正方形の衝突形状が水色で表示されます。"
+"エディターウィンドウの下部にある \"TileSet\" をクリックして、タイルセットツー"
+"ルに戻ります。以前に定義したタイルをクリックします（黄色のアウトライン）。 "
+"\"Collision\" タブを選択し、\"Create a new rectangle\" ボタンをクリックしま"
+"す。グリッドスナップが有効になっていることを確認してから、タイルをクリックし"
+"てドラッグします。正方形の衝突形状が水色で表示されます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:124
 msgid ""
@@ -266,7 +266,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:127
 msgid "Atlas tiles"
-msgstr ""
+msgstr "アトラスタイル"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:129
 msgid ""
@@ -275,8 +275,8 @@ msgid ""
 "entire tile sheet."
 msgstr ""
 "個々のタイルを1つずつ追加するのではなく、アトラスを使用してタイルのグループを"
-"一度に定義できます。 [新しいアトラス]をクリックし、ドラッグしてタイルシート全"
-"体を選択します。"
+"一度に定義できます。\"New Atlas\" をクリックし、ドラッグしてタイルシート全体"
+"を選択します。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:135
 msgid ""
@@ -284,9 +284,9 @@ msgid ""
 "settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
 "You can find this in the Inspector:"
 msgstr ""
-"まだ設定していない場合は、スナップ設定の「ステップ」を（64、64）に変更してく"
-"ださい。変更しないと、タイルが細かく切り刻まれます。これはインスペクターで見"
-"つけることができます："
+"まだ設定していない場合は、スナップ設定の \"Step\" を `(64、64)` に変更してく"
+"ださい。変更しないと、タイルが細かく切り刻まれます。これはインスペクタで見つ"
+"けることができます:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:141
 msgid ""
@@ -294,14 +294,16 @@ msgid ""
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
 "represent the atlas."
 msgstr ""
-"アトラスを定義したら、以前と同様に個々のタイルに衝突形状を追加できます。 [ア"
-"イコン]をクリックして、アトラスを表すタイルの1つを選択することもできます。"
+"アトラスを定義したら、以前と同様に個々のタイルに衝突形状を追加できます。 "
+"\"Icon\" をクリックして、アトラスを表すタイルの1つを選択することもできます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:145
 msgid ""
 "Back in the TileMap, you can select the atlas tile and you'll see all of the "
 "tiles it contains:"
 msgstr ""
+"TileMapに戻って、アトラスタイルを選択すると、そこに含まれるすべてのタイルが表"
+"示されます。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:150
 msgid ""
@@ -314,7 +316,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:154
 msgid "Tips and tricks"
-msgstr ""
+msgstr "ヒントとテクニック"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:156
 msgid ""
@@ -322,9 +324,9 @@ msgid ""
 "may notice lines appearing between your tiles. To fix this, open Project "
 "Settings and enable \"Use Pixel Snap\" in the \"Rendering/Quality\" section."
 msgstr ""
-"Camera2Dを使用してレベルをスクロールしている場合、タイル間に線が表示される場"
-"合があります。これを修正するには、プロジェクト設定を開き、「レンダリング/品"
-"質」セクションで「ピクセルスナップを使用」を有効にします。"
+":ref:`Camera2D <class_Camera2D>` を使用してレベルをスクロールしている場合、タ"
+"イル間に線が表示される場合があります。これを修正するには、プロジェクト設定を"
+"開き、\"Rendering/Quality\" セクションで \"Use Pixel Snap\" を有効にします。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:160
 msgid ""
@@ -343,5 +345,5 @@ msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."
 msgstr ""
-"コピー、貼り付け、バケット塗りつぶしなどのツールは、右上の「タイルマップ」メ"
+"コピー、貼り付け、バケット塗りつぶしなどのツールは、右上の \"TileMap\" メ"
 "ニューにあります。"

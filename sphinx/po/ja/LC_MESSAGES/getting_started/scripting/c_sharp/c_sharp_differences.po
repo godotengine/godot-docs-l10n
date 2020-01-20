@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
 msgid "API differences to GDScript"
-msgstr "GDScriptとAPIの違い"
+msgstr "GDScriptとのAPIの違い"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:6
 msgid "This is a (incomplete) list of API differences between C# and GDScript."
@@ -27,17 +27,19 @@ msgstr "これは、C#とGDScriptのAPIの相違点の(不完全な)リストで
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:9
 msgid "General differences"
-msgstr ""
+msgstr "一般的な相違点"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:11
 msgid ""
 "As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
 "instead of the ``snake_case`` used in GDScript and C++."
 msgstr ""
+":ref:`doc_c_sharp` で説明したように、C#では一般に、GDScriptおよびC++で使用さ"
+"れる ``snake_case`` の代わりに ``PascalCase`` が使用されます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
 msgid "Global scope"
-msgstr ""
+msgstr "グローバル スコープ"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:17
 msgid ""
@@ -45,6 +47,9 @@ msgid ""
 "does not allow declaring them in namespaces. Most global constants were "
 "moved to their own enums."
 msgstr ""
+"C#では名前空間で宣言できないため、グローバル関数と一部の定数をクラスに移動す"
+"る必要がありました。ほとんどのグローバル定数は、独自の列挙型に移動されまし"
+"た。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:22
 msgid "Constants"
@@ -55,10 +60,12 @@ msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
+"グローバル定数は独自の列挙型に移動されました。たとえば、\\ ``ERR_ *`` 定数は "
+"``Error`` 列挙型に移動されました。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
 msgid "Special cases:"
-msgstr ""
+msgstr "特殊なケース:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:30
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:59
@@ -88,31 +95,31 @@ msgstr "\\ C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``SPKEY``"
-msgstr ""
+msgstr "\\ ``SPKEY``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``GD.SpKey``"
-msgstr ""
+msgstr "\\ ``GD.SpKey``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``TYPE_*``"
-msgstr ""
+msgstr "\\ ``TYPE_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``Variant.Type`` enum"
-msgstr ""
+msgstr "``Variant.Type`` 列挙型"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``OP_*``"
-msgstr ""
+msgstr "\\ ``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``Variant.Operator`` enum"
-msgstr ""
+msgstr "``Variant.Operator`` 列挙型"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
 msgid "Math functions"
-msgstr ""
+msgstr "数学関数"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:40
 msgid ""
@@ -120,50 +127,58 @@ msgid ""
 "``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
 "``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
 msgstr ""
+"``abs`` 、\\ ``acos`` 、\\ ``asin`` 、\\ ``atan`` 、\\ ``atan2`` などの数学グ"
+"ローバル関数は、\\ ``Mathf`` の下に ``Abs`` 、\\ ``Acos`` 、\\ ``Asin`` 、\\ "
+"``Atan`` および ``Atan2``として、\\ ``PI`` 定数は ``Mathf.Pi`` として見つける"
+"ことができます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
 msgid "Random functions"
-msgstr ""
+msgstr "乱数生成関数"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:47
 msgid ""
 "Random global functions, like ``rand_range`` and ``rand_seed``, are located "
 "under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
 msgstr ""
+"``rand_range`` や ``rand_seed`` などの乱数生成用のグローバル関数は、\\ "
+"``GD`` の下にあります。例:``GD.RandRange`` および ``GD.RandSeed``\\ 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
 msgid "Other functions"
-msgstr ""
+msgstr "その他の関数"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:53
 msgid ""
 "Many other global functions like ``print`` and ``var2str`` are located under "
 "``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
 msgstr ""
+"``print`` や ``var2str`` のような他の多くのグローバル関数は ``GD`` の下にあり"
+"ます。例:``GD.Print`` および ``GD.Var2Str``\\ 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:56
 msgid "Exceptions:"
-msgstr ""
+msgstr "例外:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``weakref(obj)``"
-msgstr ""
+msgstr "\\ ``weakref(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``Object.WeakRef(obj)``"
-msgstr ""
+msgstr "\\ ``Object.WeakRef(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
 msgid "``is_instance_valid(obj)``"
-msgstr ""
+msgstr "\\ ``is_instance_valid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
 msgid "``Object.IsInstanceValid(obj)``"
-msgstr ""
+msgstr "\\ ``Object.IsInstanceValid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:66
 msgid "Tips"
-msgstr ""
+msgstr "ヒント"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:68
 msgid ""
@@ -171,6 +186,9 @@ msgid ""
 "directive allows to access the members and nested types of a class without "
 "specifying the class name."
 msgstr ""
+"``using static`` ディレクティブを使用すると便利な場合があります。このディレク"
+"ティブにより、クラス名を指定せずに、クラスのメンバーおよびネストされたタイプ"
+"にアクセスできます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:92
@@ -192,6 +210,10 @@ msgid ""
 "`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
 "parameters. Default values can be set by assigning a value."
 msgstr ""
+"GDScriptの ``export`` キーワードの代わりに ``[Export]`` 属性を使用します。こ"
+"の属性は、オプションの :ref:`PropertyHint <enum_ @ "
+"GlobalScope_PropertyHint>` および ``hintString`` パラメーターで提供することも"
+"できます。デフォルト値は、値を割り当てることで設定できます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:114
 msgid "Signal keyword"
@@ -203,6 +225,9 @@ msgid ""
 "``signal`` keyword. This attribute should be used on a `delegate`, whose "
 "name signature will be used to define the signal."
 msgstr ""
+"GDScriptの ``signal`` キーワードの代わりに ``[Signal]`` 属性を使用してシグナ"
+"ルを宣言します。この属性は、関数宣言と\\ ``delegate`` を組み合わせてシグナル"
+"を定義する必要があります。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
 msgid "See also: :ref:`c_sharp_signals`"
@@ -218,6 +243,9 @@ msgid ""
 "pattern. This is to make code less verbose than it would be with an "
 "``Instance`` property."
 msgstr ""
+"シングルトンは、シングルトンパターンを使用するのではなく、静的クラスとして使"
+"用できます。これは、コードを ``Instance`` プロパティを使用する場合よりも冗長"
+"にするためです。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:138
 msgid ""
@@ -227,20 +255,27 @@ msgid ""
 "``Singleton`` that returns the singleton instance. The type of this instance "
 "is ``Godot.Object``."
 msgstr ""
+"ただし、非常にまれなケースでは、これは十分ではありません。たとえば、 "
+"``Connect`` のような基本クラスから ``Godot.Object`` メンバーにアクセスしたい"
+"場合があります。そのようなユースケースのために、シングルトンインスタンスを返"
+"す ``Singleton`` という名前の静的プロパティを提供します。このインスタンスのタ"
+"イプは ``Godot.Object`` です。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:150
 msgid "String"
-msgstr ""
+msgstr "文字列"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:152
 msgid ""
 "Use ``System.String`` (``string``). Most of Godot's String methods are "
 "provided by the ``StringExtensions`` class as extension methods."
 msgstr ""
+"``System.String`` (``string``)を使用します。Godot の String メソッドのほとん"
+"どは、拡張メソッドとして ``StringExtensions`` クラスによって提供されます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:162
 msgid "There are a few differences, though:"
-msgstr ""
+msgstr "ただし、いくつかの違いがあります:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:164
 msgid ""
@@ -249,6 +284,10 @@ msgid ""
 "extension method of ``StringBuilder`` instead of string. Alternatively, you "
 "can use ``string.Remove``."
 msgstr ""
+"``erase``: 文字列は C#では変更できないため、拡張メソッドに渡される文字列を変"
+"更することはできません。このため、文字列ではなく ``StringBuilder`` の拡張メ"
+"ソッドとして ``Erase`` が追加されました。または、``string.Remove`` を使用する"
+"こともできます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:168
 msgid ""
@@ -256,6 +295,9 @@ msgid ""
 "which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
 "specify case sensitivity:"
 msgstr ""
+"``IsSubsequenceOf``/``IsSubsequenceOfi``: ``IsSubsequenceOf`` のオーバーロー"
+"ドである追加のメソッドが用意されており、大文字と小文字の区別を明示的に指定で"
+"きます:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:179
 msgid ""
@@ -263,10 +305,12 @@ msgid ""
 "``Match`` and ``Matchn``, which allows you to explicitly specify case "
 "sensitivity:"
 msgstr ""
+"``Match``/``Matchn``/``ExprMatch``: ``Match`` と ``Matchn`` に加えて、大文字"
+"と小文字の区別を明示的に指定できる追加のメソッドが提供されます:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 msgid "Basis"
-msgstr ""
+msgstr "\\ Basis"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:192
 msgid ""
@@ -274,25 +318,29 @@ msgid ""
 "Basis()`` initializes all primitive members to their default value. Use "
 "``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
 msgstr ""
+"C#では、構造体にパラメーターなしのコンストラクターを含めることはできません。"
+"したがって、\\ ``new Basis()`` はすべてのプリミティブメンバーを規定値に初期化"
+"します。 GDScriptおよびC++の ``Basis()`` に相当するものが必要な場合は "
+"``Basis.Identity``を使用します。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:196
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:242
 msgid "The following method was converted to a property with a different name:"
-msgstr ""
+msgstr "次のメソッドは、異なる名前のプロパティに変換されました:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:201
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
 msgid "``get_scale()``"
-msgstr ""
+msgstr "\\ ``get_scale()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:201
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
 msgid "``Scale``"
-msgstr ""
+msgstr "\\ ``Scale``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
 msgid "Transform2D"
-msgstr ""
+msgstr "\\ Transform2D"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:207
 msgid ""
@@ -301,6 +349,10 @@ msgid ""
 "Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
 "in GDScript and C++."
 msgstr ""
+"C#では、構造体にパラメーターなしのコンストラクターを含めることはできません。"
+"したがって、\\ ``new Transform2D()`` は、すべてのプリミティブメンバーを規定値"
+"に初期化します。 GDScriptおよびC++の ``Transform2D()`` に相当するものが必要な"
+"場合は ``Transform2D.Identity`` を使用してください。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:211
 msgid ""
@@ -310,59 +362,61 @@ msgstr "次のメソッドは、それぞれの名前が変更されたプロパ
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:216
 msgid "``get_rotation()``"
-msgstr ""
+msgstr "\\ ``get_rotation()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:216
 msgid "``Rotation``"
-msgstr ""
+msgstr "\\ ``Rotation``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:221
 msgid "Plane"
-msgstr ""
+msgstr "\\ Plane"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
 msgid ""
 "The following method was converted to a property with a *slightly* different "
 "name:"
 msgstr ""
+"次のメソッドは、\\ *わずかに*\\ 異なる名前のプロパティに変換されました:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``center()``"
-msgstr ""
+msgstr "\\ ``center()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``Center``"
-msgstr ""
+msgstr "\\ ``Center``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:232
 msgid "Rect2"
-msgstr ""
+msgstr "\\ Rect2"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:234
 msgid ""
 "The following field was converted to a property with a *slightly* different "
 "name:"
 msgstr ""
+"次のフィールドは、\\ *わずかに*\\ 異なる名前のプロパティに変換されました。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
 msgid "``end``"
-msgstr ""
+msgstr "\\ ``end``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
 msgid "``End``"
-msgstr ""
+msgstr "\\ ``End``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:247
 msgid "``get_area()``"
-msgstr ""
+msgstr "\\ ``get_area()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:247
 msgid "``Area``"
-msgstr ""
+msgstr "\\ ``Area``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
 msgid "Quat"
-msgstr ""
+msgstr "\\ Quat"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:253
 msgid ""
@@ -370,101 +424,107 @@ msgid ""
 "Quat()`` initializes all primitive members to their default value. Please "
 "use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
 msgstr ""
+"C#では、構造体にパラメーターなしのコンストラクターを含めることはできません。"
+"したがって、\\ ``new Quat()`` はすべてのプリミティブメンバーを規定値に初期化"
+"します。 GDScriptおよびC++の ``Quat()`` に相当するものが必要な場合は ``Quat."
+"Identity`` を使用してください。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:257
 msgid ""
 "The following methods were converted to a property with a different name:"
-msgstr ""
+msgstr "次のメソッドは、異なる名前のプロパティに変換されました。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
 msgid "``length()``"
-msgstr "``length()``"
+msgstr "\\ ``length()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
 msgid "``Length``"
-msgstr "``Length``"
+msgstr "\\ ``Length``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``length_squared()``"
-msgstr "``length_squared()``"
+msgstr "\\ ``length_squared()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``LengthSquared``"
-msgstr "``LengthSquared``"
+msgstr "\\ ``LengthSquared``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
 msgid "Array"
-msgstr ""
+msgstr "配列"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:269
 msgid ""
 "*This is temporary. PoolArrays will need their own types to be used the way "
 "they are meant to.*"
 msgstr ""
+"*これは一時的なものです。 PoolArrayは、本来の方法で使用するために独自の型を必"
+"要とします。*"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
 msgid "``Array``"
-msgstr "``Array``"
+msgstr "\\ ``Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
 msgid "``Godot.Collections.Array``"
-msgstr "``Godot.Collections.Array``"
+msgstr "\\ ``Godot.Collections.Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
 msgid "``PoolIntArray``"
-msgstr "``PoolIntArray``"
+msgstr "\\ ``PoolIntArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
 msgid "``int[]``"
-msgstr "``int[]``"
+msgstr "\\ ``int[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:276
 msgid "``PoolByteArray``"
-msgstr "``PoolByteArray``"
+msgstr "\\ ``PoolByteArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:276
 msgid "``byte[]``"
-msgstr "``byte[]``"
+msgstr "\\ ``byte[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
 msgid "``PoolFloatArray``"
-msgstr "``PoolFloatArray``"
+msgstr "\\ ``PoolFloatArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
 msgid "``float[]``"
-msgstr "``float[]``"
+msgstr "\\ ``float[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:278
 msgid "``PoolStringArray``"
-msgstr "``PoolStringArray``"
+msgstr "\\ ``PoolStringArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:278
 msgid "``String[]``"
-msgstr "``String[]``"
+msgstr "\\ ``String[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 msgid "``PoolColorArray``"
-msgstr "``PoolColorArray``"
+msgstr "\\ ``PoolColorArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 msgid "``Color[]``"
-msgstr "``Color[]``"
+msgstr "\\ ``Color[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:280
 msgid "``PoolVector2Array``"
-msgstr "``PoolVector2Array``"
+msgstr "\\ ``PoolVector2Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:280
 msgid "``Vector2[]``"
-msgstr "``Vector2[]``"
+msgstr "\\ ``Vector2[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid "``PoolVector3Array``"
-msgstr "``PoolVector3Array``"
+msgstr "\\ ``PoolVector3Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid "``Vector3[]``"
-msgstr "``Vector3[]``"
+msgstr "\\ ``Vector3[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:284
 msgid ""
@@ -472,14 +532,17 @@ msgid ""
 "Collections.Array``. Use the ``Godot.Collections.Array<T>(Godot.Collections."
 "Array)`` constructor to create one."
 msgstr ""
+"``Godot.Collections.Array<T>`` は ``Godot.Collections.Array`` のタイプセーフ"
+"なラッパーです。 ``Godot.Collections.Array<T>(Godot.Collections.Array)`` コン"
+"ストラクターを使用して作成します。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:288
 msgid "Dictionary"
-msgstr ""
+msgstr "辞書"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:290
 msgid "Use ``Godot.Collections.Dictionary``."
-msgstr ""
+msgstr "``Godot.Collections.Dictionary`` を使用します。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:292
 msgid ""
@@ -487,14 +550,17 @@ msgid ""
 "Collections.Dictionary``. Use the ``Godot.Collections.Dictionary<T>(Godot."
 "Collections.Dictionary)`` constructor to create one."
 msgstr ""
+"``Godot.Collections.Dictionary<T>`` は ``Godot.Collections.Dictionary`` のタ"
+"イプセーフラッパーです。 ``Godot.Collections.Dictionary<T>(Godot.Collections."
+"Dictionary)`` コンストラクターを使用して作成します。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:296
 msgid "Variant"
-msgstr ""
+msgstr "\\ Variant"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:298
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
-msgstr ""
+msgstr "``Variant`` の代わりに ``System.Object`` (``object``)が使用されます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:301
 msgid "Communicating with other scripting languages"
@@ -502,11 +568,11 @@ msgstr "他のスクリプト言語との通信"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
-msgstr ""
+msgstr "これは :ref:`doc_cross_language_scripting` で詳細に説明されています。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:306
 msgid "Yield"
-msgstr ""
+msgstr "譲渡(Yield)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:308
 msgid ""
@@ -514,12 +580,17 @@ msgid ""
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield>`_."
 msgstr ""
+"C#の `yieldキーワード<https://docs.microsoft.com/en-US/dotnet/csharp/"
+"language-reference/keywords/yield>` を使用すると、単一のパラメーターを持つ"
+"GDScriptの ``yield`` に似たものを実現できます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:311
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
 msgstr ""
+"async/awaitおよび ``Godot.Object.ToSignal`` を使用すると、シグナルのyieldと同"
+"等の結果を得ることができます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:321
 msgid "Other differences"
@@ -530,6 +601,8 @@ msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
+"GDScriptで動作する ``preload`` は、C#では使用できません。代わりに ``GD."
+"Load`` または ``ResourceLoader.Load`` を使用してください。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
 msgid "Other differences:"
@@ -537,37 +610,37 @@ msgstr "他の相違点:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 msgid "``Color8``"
-msgstr "``Color8``"
+msgstr "\\ ``Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 msgid "``Color.Color8``"
-msgstr ""
+msgstr "\\ ``Color.Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 msgid "``is_inf``"
-msgstr ""
+msgstr "\\ ``is_inf``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 msgid "``float.IsInfinity``"
-msgstr ""
+msgstr "\\ ``float.IsInfinity``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 msgid "``is_nan``"
-msgstr ""
+msgstr "\\ ``is_nan``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 msgid "``float.IsNaN``"
-msgstr ""
+msgstr "\\ ``float.IsNaN``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
 msgid "``dict2inst``"
-msgstr ""
+msgstr "\\ ``dict2inst``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 msgid "TODO"
-msgstr ""
+msgstr "\\ TODO"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 msgid "``inst2dict``"
-msgstr ""
+msgstr "\\ ``inst2dict``"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,11 @@ msgid ""
 "energy bar, and bomb and emerald counters. By the end of this tutorial, "
 "you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
+"これで基本を確認できたので、再利用可能なUIコンポーネント(ライフバー、エネル"
+"ギーバー、爆弾とエメラルドカウンターなど)を使用してゲームのグラフィカルユー"
+"ザーインターフェイス(GUI)を構築する方法を見ていきます。このチュートリアルの終"
+"わりまでには、GDscriptまたはVisualScriptで制御する準備ができたゲームGUIが完成"
+"します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
@@ -66,6 +71,8 @@ msgid ""
 "You can watch this tutorial as a `video on Youtube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
 msgstr ""
+"このチュートリアルは、\\ `YouTubeのビデオ<https://www.youtube.com/watch?"
+"v=y1E_y9AIqow> `_\\ として見ることができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
 msgid "Breaking down the UI"
@@ -77,8 +84,8 @@ msgid ""
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
 "up to three columns:"
 msgstr ""
-"最後のUIを分解し、使用するコンテナを計画します。:doc:`ui_main_menu` と同様に "
-"``MarginContainer`` から始まります。次に、最大3つの列を表示できます:"
+"最後のUIを分解し、使用するコンテナを計画します。\\ :doc:`ui_main_menu` \\ と"
+"同様に ``MarginContainer`` から始まります。次に、最大3つの列を表示できます:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
 msgid "The life and energy counters on the left"
@@ -91,7 +98,7 @@ msgstr "生命とエネルギーバー"
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
 msgid "The bomb and emerald counters on the right"
-msgstr ""
+msgstr "右側の爆弾とエメラルドのカウンター"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
@@ -114,6 +121,11 @@ msgid ""
 "``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
+"これにより、コンテナのネストが容易になります。 ``MarginContainer`` を使用して"
+"2つのカラムを管理するために ``HBoxContainer`` を使用して、画面の境界の周りに"
+"いくつかのマージンを持たせます。 2つのバーは(左側の) ``VBoxContainer`` 内で互"
+"いに積み重ねられます。そして、仕上げに爆弾とエメラルドカウンターを並べて配置"
+"するに、右側のカラムに ``HBoxContainer`` が必要です。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
@@ -142,6 +154,11 @@ msgid ""
 "it looks good, you can save entire sections of the node tree as reusable sub-"
 "scenes. We'll do that in a moment."
 msgstr ""
+"GUI の設計には、別々のシーンで要素を設計して組み合わせるか、単一のシーンです"
+"べてをプロトタイプ化して後で分解するか、という 2 つの方法があります。UI の配"
+"置とプロポーションをより速く実行できるという理由で単一のシーンで作業する方を"
+"お勧めします。デザインの見栄えが良くなったら、ノード ツリーのセクション全体を"
+"再利用可能なサブシーンとして保存できるので、皆さんすぐにそうします。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:69
 msgid "For now, let's start with a few containers."
@@ -152,6 +169,8 @@ msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
+"新しいシーンを作成し、 ``MarginContainer`` を追加します。そのノードを選択"
+"し、 ``GUI`` という名前を付けます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
 msgid ""
@@ -161,10 +180,15 @@ msgid ""
 "parent, the viewport by default. It will resize automatically on the "
 "vertical axis to make space for its child UI components."
 msgstr ""
+"インターフェイスを画面の上部に固定する必要があります。 ``GUI`` ノードを選択"
+"し、ビューポートの上部にある「レイアウト」ボタンをクリックして ``Top Wide`` "
+"オプションを選択します。 ``GUI`` ノードは、その親（デフォルトではビューポー"
+"ト）の上端に固定されます。子UIコンポーネント用のスペースを作るために、サイズ"
+"は垂直軸上で自動的に変更されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
-msgstr ""
+msgstr "シーンを ``GUI.tscn`` として保存します。 GUI全体をその中に配置します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
 msgid ""
@@ -188,6 +212,11 @@ msgid ""
 "``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
 "containers, we have the base for our GUI scene."
 msgstr ""
+"まずは ``HBoxContainer`` 内にバーを垂直に積み重ねたいと思います。 "
+"``HBoxContainer`` の子として ``VBoxContainer`` を追加し、それに ``Bars`` とい"
+"う名前を付けます。次に、親になった `` HBoxContainer``を再度選択し、その子とし"
+"て別の `` HBoxContainer``を追加します。それを ``Counters`` と呼びます。これら"
+"の4つのコンテナにより、GUIシーンのベースができました。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
@@ -364,6 +393,16 @@ msgid ""
 "Resize the node horizontally, so it takes the right half of the "
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
+"``Title`` を選択し、インスペクターで ``Stretch Mode`` プロパティを ``Keep "
+"Centered`` に変更します。次に、インスペクターで ``Rect``カテゴリを見つけ、 "
+"``Size`` プロパティを(50,40)に変更して、背景の左半分のみを取得します。次に、 "
+"``Number`` ノードを選択します。ビューポートで、 ``レイアウト`` メニューをク"
+"リックし、 ``Full Rect`` をクリックします。ノードは ``Background`` に合うよう"
+"にサイズ変更されます。インスペクターに移動し、その ``Align`` プロパティを "
+"``Right`` に変更し、 ``Valign`` プロパティを ``Center`` に変更します。テキス"
+"トは `` Background``の右端の中央にスナップするはずです。ノードを水平方向にサ"
+"イズ変更して、 `` Background``の右半分を取り、右端に少しパディングを追加しま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:195
 msgid ""
@@ -435,6 +474,8 @@ msgid ""
 "With this, we finished the hardest part of the GUI. Congratulations! Let's "
 "move on to the simpler nodes."
 msgstr ""
+"これで、GUIの最も難しい部分が完成しました。おめでとう！それではもっと単純な"
+"ノードに移りましょう。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:233
 msgid "Add the progress bar"
@@ -479,13 +520,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
 msgid "Design the bomb and emerald counters"
-msgstr ""
+msgstr "爆弾とエメラルドのカウンターをデザインする"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
 msgid ""
 "The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
+"爆弾とエメラルドのカウンターは、バーの ``Count`` ノードのようなものです。なの"
+"で、これを複製してテンプレートとして使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
 msgid ""
@@ -508,6 +551,11 @@ msgid ""
 "display the icon. In the scene tree, select the ``Title`` node, and rename "
 "it to ``Icon``."
 msgstr ""
+"``Count2`` ノードの名前を ``Counter`` に変更します。バーとは異なり、番号を左"
+"側に、アイコンを右側に配置します。設定には同様の、背景(``NinePatchRect``)、タ"
+"イトル、および数字ノードが必要です。 ``Title`` ノードは `` TextureRect`` なの"
+"で、アイコンを表示する必要があります。シーンツリーで、 ``Title`` ノードを選択"
+"し、名前を ``Icon`` に変更します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:273
 msgid "Here's how your node tree should look so far"
@@ -611,6 +659,12 @@ msgid ""
 "``Bars`` node should resize and push the counter to the right side of the "
 "screen."
 msgstr ""
+"ビューポートの右端に ``Counters`` アンカーを配置してみましょう。これを行うに"
+"は、 ``Bars`` コンテナがすべての利用可能な水平スペースを確保するように設定す"
+"る必要があります。 ``Bars`` ノードを選択し、``Size Flags`` カテゴリまで下にス"
+"クロールします。 ``Horizontal``カテゴリで、 ``Expand`` の値を確認します。 "
+"``Bars`` ノードのサイズを変更し、カウンターを画面の右側に押し付ける必要があり"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:331
 msgid ""
@@ -646,6 +700,12 @@ msgid ""
 "the scene as ``Bar.tscn``. You should see the node branch turn it to a "
 "single ``Bar`` node."
 msgstr ""
+"``Counter`` と ``Bar`` ブランチの両方を、その中身を削って ``LifeBar`` 、 "
+"``EnergyBar`` 、 ``BombCounter`` および ``EmeraldCounter`` を作成する為の素材"
+"にするために、別々のシーンとして保存します。 `` Bar`` (HBoxContainer)を選択"
+"し、それを右クリックして ``ブランチをシーンとして保存`` をクリックします。"
+"シーン名は ``Bar.tscn`` として保存してください。ノードブランチがそれを単一の "
+"``Bar`` ノードに変えるのが見えるはずです。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
 msgid ""
@@ -656,6 +716,12 @@ msgid ""
 "into the active one. Right click on any node in the Scene dock and select "
 "``Save Branch as Scene`` or ``Merge from Scene``."
 msgstr ""
+"シーンとはノードのツリーです。(樹木にたとえるなら)最上位のノードはツリーの **"
+"ルート=根** であり、階層の最下部の子は **葉** です。ルート以外のノードと1つ以"
+"上の子は、 **ブランチ=枝** です。ノードブランチを個別のシーンにカプセル化する"
+"か、他のシーンからアクティブなシーンにロードしてマージすることができます。"
+"シーンドックの任意のノードを右クリックし、 ``ブランチをシーンとして保存`` ま"
+"たは ``シーンからマージ`` を選択します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
 msgid ""
@@ -667,6 +733,13 @@ msgid ""
 "nodes, we're ready to inherit this template and create the life bar. It's "
 "the same for the ``Counter``."
 msgstr ""
+"次に、 ``Counter`` ノードを選択して同じ操作を行います。 ``ブランチをシーンと"
+"して保存`` を右クリックし、 ``Counter.tscn`` として保存します。シーンツリー"
+"の ``Bar`` ノードの右側に、新しくシーン編集アイコンが表示されるので、それをを"
+"クリックして対応するシーンを開きます。境界ボックスがコンテンツに合うように "
+"``Bar`` ノードのサイズを変更します。コントロールノードに名前を付けて配置した"
+"方法で、このテンプレートを継承してライフバーを作成する準備ができました。 "
+"``Counter`` についても同様です。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
 msgid "With no extra changes, our Bar is ready to use"
@@ -674,7 +747,7 @@ msgstr "追加の変更なしで、私たちのバーは使用する準備がで
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
 msgid "Use scene inheritance to create the remaining elements"
-msgstr ""
+msgstr "シーンの継承を使用して残りの要素を作成する"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
 msgid ""
@@ -707,6 +780,14 @@ msgid ""
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
+"継承されたシーンでは、名前の他に、すべてのノードでインスペクターのプロパティ"
+"を変更できます。親シーンを変更して保存すると、継承されたすべてのシーンが更新"
+"され、その変更が反映されます。継承されたシーンでプロパティの値を変更すると、"
+"親から継承した値は常に上書きされます(ユニーク化する)。UIは同じ要素のバリエー"
+"ションを必要とすることが多いため、これは役に立ちます。一般に、UIデザインで"
+"は、ボタンやパネルなどは、共通した基本スタイルと、(プログラムコードとの)相互"
+"作用を共有します。(継承を使えば)手動ですべてのバリエーションに共通要素をコ"
+"ピーする必要はありません。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
 msgid ""
@@ -943,7 +1024,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
 msgid "Prepare the bomb and emerald counters"
-msgstr ""
+msgstr "爆弾とエメラルドのカウンターを準備する"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
 msgid ""
@@ -974,10 +1055,20 @@ msgid ""
 "the keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
+"もう一度 `` シーン->新しい継承したシーン`` に移動し、 ``Counter.tscn`` を再度"
+"選択します。ルートノードの名前を ``EmeraldCounter`` に変更し、シーンを "
+"``EmeraldCounter.tscn`` として保存します。このシーンについては、主に爆弾アイ"
+"コンをエメラルドアイコンに置き換える必要があります。「ファイルシステム」タブ"
+"で、 ``emeralds_icon.png`` を ``Icon`` ノードの ``Texture`` スロットにドラッ"
+"グします。 ``Icon`` はすでに ``Background`` ノードの右端に固定されているた"
+"め、その位置を変更でき、 ``EmeraldCounter`` コンテナーでスケーリングおよび再"
+"配置できます。エメラルドアイコンを少しだけ右下に移動します。位置の微調整には"
+"キーボードの矢印キーを使用して下さい。保存を行えば、これですべてのUI要素が完"
+"成しました。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
 msgid "The emerald counter should look something like this"
-msgstr ""
+msgstr "エメラルドのカウンターは次のようになります"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
@@ -1006,6 +1097,8 @@ msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
 "scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
+"次に、 ``BombCounter.tscn`` と ``EmeraldCounter.tscn`` シーンを ``Counters`` "
+"ノードにドラッグ&ドロップします。サイズは自動的に変更されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
 msgid "The nodes resize to take all the available vertical space"
@@ -1020,6 +1113,12 @@ msgid ""
 "property, and check ``Shrink Center`` so the container centers inside the "
 "``HBoxContainer``."
 msgstr ""
+"``EmeraldCounter`` と ``BombCounter`` が ``Counter.tscn`` で定義したサイズを"
+"使用できるようにするには、 ``Counters`` コンテナの ``Size Flags`` を変更する"
+"必要があります。 ``Counters`` ノードを選択し、インスペクターの ``Size "
+"Flags`` セクションを展開します。 ``Vertical`` プロパティの ``Fill`` タグの"
+"チェックを外し、 ``Shrink Center`` をチェックして、コンテナが "
+"``HBoxContainer`` の内側にくるようにします。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
 msgid "Now both counters have a decent size"
@@ -1044,6 +1143,14 @@ msgid ""
 "and go back to the GUI scene, it will be aligned vertically with the "
 "``LifeBar``."
 msgstr ""
+"EnergyBarのEPラベルには1つの小さな問題が残っています。2本のバーは垂直に整列す"
+"る必要があります。 \n"
+" ``EnergyBar`` ノードの横にあるアイコンをクリックして、そのシーンを開きま"
+"す。 ``Count`` ノードを選択し、``Custom Constants`` セクションまで下にスク"
+"ロールし、 ``Margin Left`` に ``20`` を追加します。 ``Rect`` セクションでは、"
+"ノードの ``Min Size`` を100に戻します。これは、LifeBarと同じ値です。 "
+"``Count`` の左側にいくらかのマージンがあるはずです。保存してGUIシーンに戻る"
+"と、 ``LifeBar`` と垂直に整列します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:593
 msgid "The 2 bars align perfectly"
@@ -1055,6 +1162,8 @@ msgid ""
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
+"先ほど、この方法で ``EnergyBar`` を設定できました。これは、いつでも任意のシー"
+"ンに戻って微調整し、変更がプロジェクト全体に反映されることを示しています！"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
 msgid "Place the GUI onto the game's mockup"

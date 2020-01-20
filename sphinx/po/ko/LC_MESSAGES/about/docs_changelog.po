@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgid "New tutorials since version 3.1"
 msgstr "3.1 버전 이후의 새로운 튜토리얼"
 
 #: ../../docs/about/docs_changelog.rst:17
-#: ../../docs/about/docs_changelog.rst:110
+#: ../../docs/about/docs_changelog.rst:116
 msgid "Project workflow"
 msgstr "프로젝트 워크플로"
 
@@ -55,7 +55,7 @@ msgid ":ref:`doc_android_custom_build`"
 msgstr ":ref:`doc_android_custom_build`"
 
 #: ../../docs/about/docs_changelog.rst:22
-#: ../../docs/about/docs_changelog.rst:126
+#: ../../docs/about/docs_changelog.rst:132
 msgid "2D"
 msgstr "2D"
 
@@ -100,7 +100,7 @@ msgid ":ref:`doc_localization_using_gettext`"
 msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:48
-#: ../../docs/about/docs_changelog.rst:162
+#: ../../docs/about/docs_changelog.rst:168
 msgid "Shading"
 msgstr "셰이딩(Shading)"
 
@@ -133,320 +133,326 @@ msgid ":ref:`doc_webrtc`"
 msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:63
-#: ../../docs/about/docs_changelog.rst:182
-msgid "Plugins"
-msgstr "플러그인(Plugin)"
-
-#: ../../docs/about/docs_changelog.rst:65
-msgid ":ref:`doc_android_plugin`"
-msgstr ":ref:`doc_android_plugin`"
-
-#: ../../docs/about/docs_changelog.rst:66
-msgid ":ref:`doc_inspector_plugins`"
-msgstr ":ref:`doc_inspector_plugins`"
-
-#: ../../docs/about/docs_changelog.rst:67
-msgid ":ref:`doc_visual_shader_plugins`"
-msgstr ":ref:`doc_visual_shader_plugins`"
-
-#: ../../docs/about/docs_changelog.rst:70
-#: ../../docs/about/docs_changelog.rst:193
-msgid "Multi-threading"
-msgstr "멀티 스레딩(Multi-threading)"
-
-#: ../../docs/about/docs_changelog.rst:72
-msgid ":ref:`doc_using_multiple_threads`"
-msgstr ":ref:`doc_using_multiple_threads`"
-
-#: ../../docs/about/docs_changelog.rst:75
-#: ../../docs/about/docs_changelog.rst:198
-msgid "Creating content"
-msgstr "내용물 만들기(Creating content)"
-
-#: ../../docs/about/docs_changelog.rst:82
-msgid "Procedural geometry series:"
-msgstr "절차적 형상 시리즈:"
-
-#: ../../docs/about/docs_changelog.rst:78
-msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ":ref:`Procedural geometry <toc-procedural_geometry>`"
-
-#: ../../docs/about/docs_changelog.rst:79
-msgid ":ref:`doc_arraymesh`"
-msgstr ":ref:`doc_arraymesh`"
-
-#: ../../docs/about/docs_changelog.rst:80
-msgid ":ref:`doc_surfacetool`"
-msgstr ":ref:`doc_surfacetool`"
-
-#: ../../docs/about/docs_changelog.rst:81
-msgid ":ref:`doc_meshdatatool`"
-msgstr ":ref:`doc_meshdatatool`"
-
-#: ../../docs/about/docs_changelog.rst:82
-msgid ":ref:`doc_immediategeometry`"
-msgstr ":ref:`doc_immediategeometry`"
-
-#: ../../docs/about/docs_changelog.rst:85
-msgid "Optimization"
-msgstr "최적화(Optimization)"
-
-#: ../../docs/about/docs_changelog.rst:87
-msgid ":ref:`doc_using_multimesh`"
-msgstr ":ref:`doc_using_multimesh`"
-
-#: ../../docs/about/docs_changelog.rst:88
-msgid ":ref:`doc_using_servers`"
-msgstr ":ref:`doc_using_servers`"
-
-#: ../../docs/about/docs_changelog.rst:91
-msgid "Legal"
-msgstr "법률(Legal)"
-
-#: ../../docs/about/docs_changelog.rst:93
-msgid ":ref:`doc_complying_with_licenses`"
-msgstr ":ref:`doc_complying_with_licenses`"
-
-#: ../../docs/about/docs_changelog.rst:96
-msgid "New tutorials since version 3.0"
-msgstr "3.0 버전 이후 새로운 튜토리얼"
-
-#: ../../docs/about/docs_changelog.rst:99
-msgid "Step by step"
-msgstr "단계별"
-
-#: ../../docs/about/docs_changelog.rst:101
-msgid ":ref:`doc_signals`"
-msgstr ":ref:`doc_signals`"
-
-#: ../../docs/about/docs_changelog.rst:102
-msgid ":ref:`doc_exporting`"
-msgstr ":ref:`doc_exporting`"
-
-#: ../../docs/about/docs_changelog.rst:105
-msgid "Scripting"
-msgstr "스크립팅(Scripting)"
-
-#: ../../docs/about/docs_changelog.rst:107
-msgid ":ref:`doc_gdscript_static_typing`"
-msgstr ":ref:`doc_gdscript_static_typing`"
-
-#: ../../docs/about/docs_changelog.rst:112
-msgid "Best Practices:"
-msgstr "모범 사례:"
-
-#: ../../docs/about/docs_changelog.rst:114
-msgid ":ref:`doc_introduction_best_practices`"
-msgstr ":ref:`doc_introduction_best_practices`"
-
-#: ../../docs/about/docs_changelog.rst:115
-msgid ":ref:`doc_what_are_godot_classes`"
-msgstr ":ref:`doc_what_are_godot_classes`"
-
-#: ../../docs/about/docs_changelog.rst:116
-msgid ":ref:`doc_scene_organization`"
-msgstr ":ref:`doc_scene_organization`"
-
-#: ../../docs/about/docs_changelog.rst:117
-msgid ":ref:`doc_scenes_versus_scripts`"
-msgstr ":ref:`doc_scenes_versus_scripts`"
-
-#: ../../docs/about/docs_changelog.rst:118
-msgid ":ref:`doc_autoloads_versus_internal_nodes`"
-msgstr ":ref:`doc_autoloads_versus_internal_nodes`"
-
-#: ../../docs/about/docs_changelog.rst:119
-msgid ":ref:`doc_node_alternatives`"
-msgstr ":ref:`doc_node_alternatives`"
-
-#: ../../docs/about/docs_changelog.rst:120
-msgid ":ref:`doc_godot_interfaces`"
-msgstr ":ref:`doc_godot_interfaces`"
-
-#: ../../docs/about/docs_changelog.rst:121
-msgid ":ref:`doc_godot_notifications`"
-msgstr ":ref:`doc_godot_notifications`"
-
-#: ../../docs/about/docs_changelog.rst:122
-msgid ":ref:`doc_data_preferences`"
-msgstr ":ref:`doc_data_preferences`"
-
-#: ../../docs/about/docs_changelog.rst:123
-msgid ":ref:`doc_logic_preferences`"
-msgstr ":ref:`doc_logic_preferences`"
-
-#: ../../docs/about/docs_changelog.rst:128
-msgid ":ref:`doc_2d_lights_and_shadows`"
-msgstr ":ref:`doc_2d_lights_and_shadows`"
-
-#: ../../docs/about/docs_changelog.rst:129
-msgid ":ref:`doc_2d_meshes`"
-msgstr ":ref:`doc_2d_meshes`"
-
-#: ../../docs/about/docs_changelog.rst:132
-msgid "3D"
-msgstr "3D"
-
-#: ../../docs/about/docs_changelog.rst:134
-msgid ":ref:`doc_csg_tools`"
-msgstr ":ref:`doc_csg_tools`"
-
-#: ../../docs/about/docs_changelog.rst:135
-msgid ":ref:`doc_animating_thousands_of_fish`"
-msgstr ":ref:`doc_animating_thousands_of_fish`"
-
-#: ../../docs/about/docs_changelog.rst:136
-msgid ":ref:`doc_controlling_thousands_of_fish`"
-msgstr ":ref:`doc_controlling_thousands_of_fish`"
-
-#: ../../docs/about/docs_changelog.rst:139
-msgid "Physics"
-msgstr "물리(Physics)"
-
-#: ../../docs/about/docs_changelog.rst:141
-msgid ":ref:`doc_ragdoll_system`"
-msgstr ":ref:`doc_ragdoll_system`"
-
-#: ../../docs/about/docs_changelog.rst:142
-msgid ":ref:`doc_soft_body`"
-msgstr ":ref:`doc_soft_body`"
-
-#: ../../docs/about/docs_changelog.rst:145
-msgid "Animation"
-msgstr "애니메이션(Animation)"
-
-#: ../../docs/about/docs_changelog.rst:147
-msgid ":ref:`doc_2d_skeletons`"
-msgstr ":ref:`doc_2d_skeletons`"
-
-#: ../../docs/about/docs_changelog.rst:148
-msgid ":ref:`doc_animation_tree`"
-msgstr ":ref:`doc_animation_tree`"
-
-#: ../../docs/about/docs_changelog.rst:151
-msgid "GUI"
-msgstr "GUI"
-
-#: ../../docs/about/docs_changelog.rst:153
-msgid ":ref:`doc_gui_containers`"
-msgstr ":ref:`doc_gui_containers`"
-
-#: ../../docs/about/docs_changelog.rst:156
-msgid "Viewports"
-msgstr "뷰포트(Viewport)"
-
-#: ../../docs/about/docs_changelog.rst:158
-msgid ":ref:`doc_viewport_as_texture`"
-msgstr ":ref:`doc_viewport_as_texture`"
-
-#: ../../docs/about/docs_changelog.rst:159
-msgid ":ref:`doc_custom_postprocessing`"
-msgstr ":ref:`doc_custom_postprocessing`"
-
-#: ../../docs/about/docs_changelog.rst:164
-msgid ":ref:`doc_intro_to_shaders_water_workshop`"
-msgstr ":ref:`doc_intro_to_shaders_water_workshop`"
-
-#: ../../docs/about/docs_changelog.rst:165
-msgid ":ref:`doc_migrating_to_godot_shader_language`"
-msgstr ":ref:`doc_migrating_to_godot_shader_language`"
-
-#: ../../docs/about/docs_changelog.rst:166
-msgid ":ref:`doc_advanced_postprocessing`"
-msgstr ":ref:`doc_advanced_postprocessing`"
-
-#: ../../docs/about/docs_changelog.rst:168
-msgid "Shading Reference:"
-msgstr "셰이딩 참조:"
-
-#: ../../docs/about/docs_changelog.rst:170
-msgid ":ref:`doc_shaders`"
-msgstr ":ref:`doc_shaders`"
-
-#: ../../docs/about/docs_changelog.rst:171
-msgid ":ref:`doc_shading_language`"
-msgstr ":ref:`doc_shading_language`"
-
-#: ../../docs/about/docs_changelog.rst:172
-msgid ":ref:`doc_spatial_shader`"
-msgstr ":ref:`doc_spatial_shader`"
-
-#: ../../docs/about/docs_changelog.rst:173
-msgid ":ref:`doc_canvas_item_shader`"
-msgstr ":ref:`doc_canvas_item_shader`"
-
-#: ../../docs/about/docs_changelog.rst:174
-msgid ":ref:`doc_particle_shader`"
-msgstr ":ref:`doc_particle_shader`"
-
-#: ../../docs/about/docs_changelog.rst:177
 msgid "VR"
 msgstr "VR"
 
-#: ../../docs/about/docs_changelog.rst:179
-msgid ":ref:`doc_vr_starter_tutorial`"
+#: ../../docs/about/docs_changelog.rst:65
+#, fuzzy
+msgid ":ref:`doc_vr_starter_tutorial_part_one`"
 msgstr ":ref:`doc_vr_starter_tutorial`"
 
-#: ../../docs/about/docs_changelog.rst:184
+#: ../../docs/about/docs_changelog.rst:66
+#, fuzzy
+msgid ":ref:`doc_vr_starter_tutorial_part_two`"
+msgstr ":ref:`doc_vr_starter_tutorial`"
+
+#: ../../docs/about/docs_changelog.rst:69
+#: ../../docs/about/docs_changelog.rst:183
+msgid "Plugins"
+msgstr "플러그인(Plugin)"
+
+#: ../../docs/about/docs_changelog.rst:71
+msgid ":ref:`doc_android_plugin`"
+msgstr ":ref:`doc_android_plugin`"
+
+#: ../../docs/about/docs_changelog.rst:72
+msgid ":ref:`doc_inspector_plugins`"
+msgstr ":ref:`doc_inspector_plugins`"
+
+#: ../../docs/about/docs_changelog.rst:73
+msgid ":ref:`doc_visual_shader_plugins`"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+#: ../../docs/about/docs_changelog.rst:76
+#: ../../docs/about/docs_changelog.rst:194
+msgid "Multi-threading"
+msgstr "멀티 스레딩(Multi-threading)"
+
+#: ../../docs/about/docs_changelog.rst:78
+msgid ":ref:`doc_using_multiple_threads`"
+msgstr ":ref:`doc_using_multiple_threads`"
+
+#: ../../docs/about/docs_changelog.rst:81
+#: ../../docs/about/docs_changelog.rst:199
+msgid "Creating content"
+msgstr "내용물 만들기(Creating content)"
+
+#: ../../docs/about/docs_changelog.rst:88
+msgid "Procedural geometry series:"
+msgstr "절차적 형상 시리즈:"
+
+#: ../../docs/about/docs_changelog.rst:84
+msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
+msgstr ":ref:`Procedural geometry <toc-procedural_geometry>`"
+
+#: ../../docs/about/docs_changelog.rst:85
+msgid ":ref:`doc_arraymesh`"
+msgstr ":ref:`doc_arraymesh`"
+
+#: ../../docs/about/docs_changelog.rst:86
+msgid ":ref:`doc_surfacetool`"
+msgstr ":ref:`doc_surfacetool`"
+
+#: ../../docs/about/docs_changelog.rst:87
+msgid ":ref:`doc_meshdatatool`"
+msgstr ":ref:`doc_meshdatatool`"
+
+#: ../../docs/about/docs_changelog.rst:88
+msgid ":ref:`doc_immediategeometry`"
+msgstr ":ref:`doc_immediategeometry`"
+
+#: ../../docs/about/docs_changelog.rst:91
+msgid "Optimization"
+msgstr "최적화(Optimization)"
+
+#: ../../docs/about/docs_changelog.rst:93
+msgid ":ref:`doc_using_multimesh`"
+msgstr ":ref:`doc_using_multimesh`"
+
+#: ../../docs/about/docs_changelog.rst:94
+msgid ":ref:`doc_using_servers`"
+msgstr ":ref:`doc_using_servers`"
+
+#: ../../docs/about/docs_changelog.rst:97
+msgid "Legal"
+msgstr "법률(Legal)"
+
+#: ../../docs/about/docs_changelog.rst:99
+msgid ":ref:`doc_complying_with_licenses`"
+msgstr ":ref:`doc_complying_with_licenses`"
+
+#: ../../docs/about/docs_changelog.rst:102
+msgid "New tutorials since version 3.0"
+msgstr "3.0 버전 이후 새로운 튜토리얼"
+
+#: ../../docs/about/docs_changelog.rst:105
+msgid "Step by step"
+msgstr "단계별"
+
+#: ../../docs/about/docs_changelog.rst:107
+msgid ":ref:`doc_signals`"
+msgstr ":ref:`doc_signals`"
+
+#: ../../docs/about/docs_changelog.rst:108
+msgid ":ref:`doc_exporting`"
+msgstr ":ref:`doc_exporting`"
+
+#: ../../docs/about/docs_changelog.rst:111
+msgid "Scripting"
+msgstr "스크립팅(Scripting)"
+
+#: ../../docs/about/docs_changelog.rst:113
+msgid ":ref:`doc_gdscript_static_typing`"
+msgstr ":ref:`doc_gdscript_static_typing`"
+
+#: ../../docs/about/docs_changelog.rst:118
+msgid "Best Practices:"
+msgstr "모범 사례:"
+
+#: ../../docs/about/docs_changelog.rst:120
+msgid ":ref:`doc_introduction_best_practices`"
+msgstr ":ref:`doc_introduction_best_practices`"
+
+#: ../../docs/about/docs_changelog.rst:121
+msgid ":ref:`doc_what_are_godot_classes`"
+msgstr ":ref:`doc_what_are_godot_classes`"
+
+#: ../../docs/about/docs_changelog.rst:122
+msgid ":ref:`doc_scene_organization`"
+msgstr ":ref:`doc_scene_organization`"
+
+#: ../../docs/about/docs_changelog.rst:123
+msgid ":ref:`doc_scenes_versus_scripts`"
+msgstr ":ref:`doc_scenes_versus_scripts`"
+
+#: ../../docs/about/docs_changelog.rst:124
+msgid ":ref:`doc_autoloads_versus_internal_nodes`"
+msgstr ":ref:`doc_autoloads_versus_internal_nodes`"
+
+#: ../../docs/about/docs_changelog.rst:125
+msgid ":ref:`doc_node_alternatives`"
+msgstr ":ref:`doc_node_alternatives`"
+
+#: ../../docs/about/docs_changelog.rst:126
+msgid ":ref:`doc_godot_interfaces`"
+msgstr ":ref:`doc_godot_interfaces`"
+
+#: ../../docs/about/docs_changelog.rst:127
+msgid ":ref:`doc_godot_notifications`"
+msgstr ":ref:`doc_godot_notifications`"
+
+#: ../../docs/about/docs_changelog.rst:128
+msgid ":ref:`doc_data_preferences`"
+msgstr ":ref:`doc_data_preferences`"
+
+#: ../../docs/about/docs_changelog.rst:129
+msgid ":ref:`doc_logic_preferences`"
+msgstr ":ref:`doc_logic_preferences`"
+
+#: ../../docs/about/docs_changelog.rst:134
+msgid ":ref:`doc_2d_lights_and_shadows`"
+msgstr ":ref:`doc_2d_lights_and_shadows`"
+
+#: ../../docs/about/docs_changelog.rst:135
+msgid ":ref:`doc_2d_meshes`"
+msgstr ":ref:`doc_2d_meshes`"
+
+#: ../../docs/about/docs_changelog.rst:138
+msgid "3D"
+msgstr "3D"
+
+#: ../../docs/about/docs_changelog.rst:140
+msgid ":ref:`doc_csg_tools`"
+msgstr ":ref:`doc_csg_tools`"
+
+#: ../../docs/about/docs_changelog.rst:141
+msgid ":ref:`doc_animating_thousands_of_fish`"
+msgstr ":ref:`doc_animating_thousands_of_fish`"
+
+#: ../../docs/about/docs_changelog.rst:142
+msgid ":ref:`doc_controlling_thousands_of_fish`"
+msgstr ":ref:`doc_controlling_thousands_of_fish`"
+
+#: ../../docs/about/docs_changelog.rst:145
+msgid "Physics"
+msgstr "물리(Physics)"
+
+#: ../../docs/about/docs_changelog.rst:147
+msgid ":ref:`doc_ragdoll_system`"
+msgstr ":ref:`doc_ragdoll_system`"
+
+#: ../../docs/about/docs_changelog.rst:148
+msgid ":ref:`doc_soft_body`"
+msgstr ":ref:`doc_soft_body`"
+
+#: ../../docs/about/docs_changelog.rst:151
+msgid "Animation"
+msgstr "애니메이션(Animation)"
+
+#: ../../docs/about/docs_changelog.rst:153
+msgid ":ref:`doc_2d_skeletons`"
+msgstr ":ref:`doc_2d_skeletons`"
+
+#: ../../docs/about/docs_changelog.rst:154
+msgid ":ref:`doc_animation_tree`"
+msgstr ":ref:`doc_animation_tree`"
+
+#: ../../docs/about/docs_changelog.rst:157
+msgid "GUI"
+msgstr "GUI"
+
+#: ../../docs/about/docs_changelog.rst:159
+msgid ":ref:`doc_gui_containers`"
+msgstr ":ref:`doc_gui_containers`"
+
+#: ../../docs/about/docs_changelog.rst:162
+msgid "Viewports"
+msgstr "뷰포트(Viewport)"
+
+#: ../../docs/about/docs_changelog.rst:164
+msgid ":ref:`doc_viewport_as_texture`"
+msgstr ":ref:`doc_viewport_as_texture`"
+
+#: ../../docs/about/docs_changelog.rst:165
+msgid ":ref:`doc_custom_postprocessing`"
+msgstr ":ref:`doc_custom_postprocessing`"
+
+#: ../../docs/about/docs_changelog.rst:170
+msgid ":ref:`doc_intro_to_shaders_water_workshop`"
+msgstr ":ref:`doc_intro_to_shaders_water_workshop`"
+
+#: ../../docs/about/docs_changelog.rst:171
+msgid ":ref:`doc_migrating_to_godot_shader_language`"
+msgstr ":ref:`doc_migrating_to_godot_shader_language`"
+
+#: ../../docs/about/docs_changelog.rst:172
+msgid ":ref:`doc_advanced_postprocessing`"
+msgstr ":ref:`doc_advanced_postprocessing`"
+
+#: ../../docs/about/docs_changelog.rst:174
+msgid "Shading Reference:"
+msgstr "셰이딩 참조:"
+
+#: ../../docs/about/docs_changelog.rst:176
+msgid ":ref:`doc_shaders`"
+msgstr ":ref:`doc_shaders`"
+
+#: ../../docs/about/docs_changelog.rst:177
+msgid ":ref:`doc_shading_language`"
+msgstr ":ref:`doc_shading_language`"
+
+#: ../../docs/about/docs_changelog.rst:178
+msgid ":ref:`doc_spatial_shader`"
+msgstr ":ref:`doc_spatial_shader`"
+
+#: ../../docs/about/docs_changelog.rst:179
+msgid ":ref:`doc_canvas_item_shader`"
+msgstr ":ref:`doc_canvas_item_shader`"
+
+#: ../../docs/about/docs_changelog.rst:180
+msgid ":ref:`doc_particle_shader`"
+msgstr ":ref:`doc_particle_shader`"
+
+#: ../../docs/about/docs_changelog.rst:185
 msgid ":ref:`doc_making_main_screen_plugins`"
 msgstr ":ref:`doc_making_main_screen_plugins`"
 
-#: ../../docs/about/docs_changelog.rst:185
+#: ../../docs/about/docs_changelog.rst:186
 msgid ":ref:`doc_spatial_gizmo_plugins`"
 msgstr ":ref:`doc_spatial_gizmo_plugins`"
 
-#: ../../docs/about/docs_changelog.rst:188
+#: ../../docs/about/docs_changelog.rst:189
 msgid "Platform-specific"
 msgstr "플랫폼 특화(Platform-specific)"
 
-#: ../../docs/about/docs_changelog.rst:190
+#: ../../docs/about/docs_changelog.rst:191
 msgid ":ref:`doc_customizing_html5_shell`"
 msgstr ":ref:`doc_customizing_html5_shell`"
 
-#: ../../docs/about/docs_changelog.rst:195
+#: ../../docs/about/docs_changelog.rst:196
 msgid ":ref:`doc_thread_safe_apis`"
 msgstr ":ref:`doc_thread_safe_apis`"
 
-#: ../../docs/about/docs_changelog.rst:200
+#: ../../docs/about/docs_changelog.rst:201
 msgid ":ref:`doc_making_trees`"
 msgstr ":ref:`doc_making_trees`"
 
-#: ../../docs/about/docs_changelog.rst:203
+#: ../../docs/about/docs_changelog.rst:204
 msgid "Miscellaneous"
 msgstr "기타(Miscellaneous)"
 
-#: ../../docs/about/docs_changelog.rst:205
+#: ../../docs/about/docs_changelog.rst:206
 msgid ":ref:`doc_jitter_stutter`"
 msgstr ":ref:`doc_jitter_stutter`"
 
-#: ../../docs/about/docs_changelog.rst:206
+#: ../../docs/about/docs_changelog.rst:207
 msgid ":ref:`doc_running_code_in_the_editor`"
 msgstr ":ref:`doc_running_code_in_the_editor`"
 
-#: ../../docs/about/docs_changelog.rst:207
+#: ../../docs/about/docs_changelog.rst:208
 msgid ":ref:`doc_change_scenes_manually`"
 msgstr ":ref:`doc_change_scenes_manually`"
 
-#: ../../docs/about/docs_changelog.rst:208
+#: ../../docs/about/docs_changelog.rst:209
 msgid ":ref:`doc_gles2_gles3_differences`"
 msgstr ":ref:`doc_gles2_gles3_differences`"
 
-#: ../../docs/about/docs_changelog.rst:211
+#: ../../docs/about/docs_changelog.rst:212
 msgid "Compiling"
 msgstr "컴파일링(Compiling)"
 
-#: ../../docs/about/docs_changelog.rst:213
+#: ../../docs/about/docs_changelog.rst:214
 msgid ":ref:`doc_optimizing_for_size`"
 msgstr ":ref:`doc_optimizing_for_size`"
 
-#: ../../docs/about/docs_changelog.rst:214
+#: ../../docs/about/docs_changelog.rst:215
 msgid ":ref:`doc_compiling_with_script_encryption_key`"
 msgstr ":ref:`doc_compiling_with_script_encryption_key`"
 
-#: ../../docs/about/docs_changelog.rst:217
+#: ../../docs/about/docs_changelog.rst:218
 msgid "Engine development"
 msgstr "엔진 개발(Engine development)"
 
-#: ../../docs/about/docs_changelog.rst:219
+#: ../../docs/about/docs_changelog.rst:220
 msgid ":ref:`doc_binding_to_external_libraries`"
 msgstr ":ref:`doc_binding_to_external_libraries`"

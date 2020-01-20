@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for Windows"
-msgstr ""
+msgstr "Windows用のアプリケーションアイコンの変更"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
 msgid ""
@@ -27,6 +27,10 @@ msgid ""
 "most likely want to change that for your project. There are two types of "
 "icons that can be changed on Windows: the file icon and the taskbar icon."
 msgstr ""
+"デフォルトでは、エクスポートされたプロジェクトのアイコンはGodotアイコンになり"
+"ます。ほとんどの場合、プロジェクトに合わせてアイコンを変更する必要がありま"
+"す。 Windowsで変更できるアイコンには、ファイル・アイコンとタスクバー・アイコ"
+"ンの2種類があります。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
 msgid "Changing the taskbar icon"
@@ -37,12 +41,17 @@ msgid ""
 "The taskbar icon is the icon that shows up on the taskbar when your project "
 "is running."
 msgstr ""
+"タスクバー・アイコンは、プロジェクトの実行中にタスクバーに表示されるアイコン"
+"です。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Icon**. Click on the folder icon and select your desired icon."
 msgstr ""
+"タスクバー・アイコンを変更するには、\\ **プロジェクト → プロジェクト設定 → "
+"Application → Config → Icon** に移動します。フォルダアイコンをクリックして、"
+"目的のアイコンを選択します。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:22
 msgid "This is also the icon that gets displayed in the Godot project list."
@@ -57,6 +66,8 @@ msgid ""
 "The file icon is the icon of the executable that you click on to start the "
 "project."
 msgstr ""
+"ファイル・アイコンは、プロジェクトを開始するためにクリックする実行可能ファイ"
+"ルのアイコンです。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:34
 msgid ""
@@ -64,6 +75,9 @@ msgid ""
 "tool called **rcedit**. You can download it `here <https://github.com/"
 "electron/rcedit/releases>`_."
 msgstr ""
+"エクスポートオプションで選択する前に、\\ **rcedit** という追加のツールをイン"
+"ストールする必要があります。\\ `こちら<https://github.com/electron/rcedit/"
+"releases>` からダウンロードできます。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
 msgid ""
@@ -72,12 +86,18 @@ msgid ""
 "Click on the folder icon for the **rcedit** entry. Navigate to and select "
 "the rcedit executable."
 msgstr ""
+"ダウンロード後、コンピューター上のrcedit実行可能ファイルへのパスをGodotに伝え"
+"る必要があります。\\ **エディタ → エディタ設定 → Export → Windows** に移動し"
+"ます。\\ **rcedit** エントリのフォルダアイコンをクリックし、 rcedit実行可能"
+"ファイルまで移動して選択します。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:44
 msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
 msgstr ""
+"rceditをLinuxおよびmacOSユーザーが使用するためには `WINE <https://www.winehq."
+"org/>` をインストールする必要があります。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:49
 msgid ""
@@ -86,6 +106,10 @@ msgid ""
 "Export**. Assuming you have already created a Windows Desktop preset, select "
 "your icon in ICO format in the **Application → Icon** field."
 msgstr ""
+"これで、ファイル・アイコンを変更するためのすべてが準備できました。そのために"
+"は、エクスポート時にアイコンを指定する必要があります。\\ **プロジェクト → "
+"Export** に移動します。既にWindowsデスクトッププリセットを作成している場"
+"合、\\ **Application → Icon** フィールドでICO形式のアイコンを選択します。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:55
 msgid ""
@@ -93,6 +117,9 @@ msgid ""
 "information, please refer to `this tutorial <http://skyboygames.com/easily-"
 "create-a-windows-app-icon-with-gimp/>`_."
 msgstr ""
+"GIMPなどのソフトウェアを使用して、ICOイメージをエクスポートできます。詳細につ"
+"いては、\\ `このチュートリアル<http://skyboygames.com/easy-create-a-windows-"
+"app-icon-with-gimp/>` を参照してください。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
 msgid "Testing the result"
@@ -102,10 +129,12 @@ msgstr "結果のテスト"
 msgid ""
 "You can now export the project. If it worked correctly, you should see this:"
 msgstr ""
+"これで、プロジェクトをエクスポートできます。正常に機能した場合、次のように表"
+"示されます。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:69
 msgid "ICO file requirements"
-msgstr ""
+msgstr "ICOファイルの要件"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:71
 msgid ""
@@ -113,6 +142,9 @@ msgid ""
 "wikipedia.org/wiki/ICO_(file_format)>`_, there are some requirements to "
 "ensure the icon (and your executable) works on Windows."
 msgstr ""
+"`ICOファイル<https://en.wikipedia.org/wiki/ICO_(file_format)>` の作成に使用す"
+"るプログラムに関係なく、アイコン(および実行可能ファイル)がWindowsで機能するこ"
+"とを保証するための要件がいくつかあります。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:75
 msgid ""
@@ -120,12 +152,17 @@ msgid ""
 "threads: `one <https://stackoverflow.com/q/3236115/>`_, `two <https://"
 "stackoverflow.com/q/40749785/>`_."
 msgstr ""
+"次のstack overflowのスレッドに見られるように、これは少し注意が必要です: `一つ"
+"目 <https://stackoverflow.com/q/3236115/>` 、\\ `二つ目 <https://"
+"stackoverflow.com/q/40749785 /> `\\ 。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:79
 msgid ""
 "Your ICO file should at least contain icons in the following resolutions: "
 "16×16, 48×48 and 256×256."
 msgstr ""
+"ICOファイルには少なくとも16×16、48×48、および256×256の解像度のアイコンが含ま"
+"れている必要があります。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
 msgid ""
@@ -133,9 +170,14 @@ msgid ""
 "supported icon sizes on Windows 10: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, "
 "48, 56, 60, 63, 84 and one larger than 255 pixels (such as 256, 512 or 1024)."
 msgstr ""
+"高DPI画面を完全にサポートする場合、これはWindows10でサポートされるアイコンサ"
+"イズの完全なリストです: 16、20、24、28、30、31、32、40、42、47、48、56、60、 "
+"63、84、および255ピクセルよりも大きいピクセル(256、512、1024など)。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
 msgid ""
 "It is also possible to convert a PNG image to an hiDPI-friendly ICO file "
 "using this `ImageMagick <https://www.imagemagick.org/>`_ command:"
 msgstr ""
+"次の `ImageMagick <https://www.imagemagick.org/>` コマンドを使用して、PNG画像"
+"をhiDPI対応のICOァイルに変換することもできます。"

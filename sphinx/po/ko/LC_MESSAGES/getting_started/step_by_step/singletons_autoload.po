@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,13 +143,12 @@ msgstr ""
 "다:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
-#, fuzzy
 msgid ""
 "If the \"Enable\" column is checked (default ``true``) then the singleton "
 "can simply be accessed directly:"
 msgstr ""
-"\"Enable\" 항목이 체크 되어 있다면 (기본값은 true) 싱글톤을 쉽게 직접 접근할 "
-"수 있습니다:"
+"\"켜기(Enable)\" 열이 체크되어 있으면 (기본 값 ``true``) 간단하게 싱글톤으로 "
+"직접 접근할 수 있게 됩니다:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -163,7 +162,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid "Custom scene switcher"
-msgstr "커스텀 씬 전환기"
+msgstr "맞춤 씬 전환기"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
@@ -212,17 +211,17 @@ msgstr ""
 "서 상속하도록 하십시오:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
-#, fuzzy
 msgid ""
 "The next step is to add this script to the autoLoad list. Open ``Project > "
 "Project Settings`` from the menu, switch to the \"AutoLoad\" tab and select "
 "the script by clicking the browse button or typing its path: ``res://Global."
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
-"다음은 이 스크립트를 오토로드 목록으로 추가하는 것입니다. 메뉴에서 ``프로젝"
-"트 > 프로젝트 설정`` 을 열고, \"오토로드\" 탭으로 가서 ``..`` 를 클릭하거나 "
-"경로 ``res://Global.gd`` 를 입력해서 스크립트를 선택합니다. \"추가\"를 눌러 "
-"오토로드 목록에 추가하십시오:"
+"다음은 이 스크립트를 오토로드 목록에 추가하는 것입니다. 메뉴에서 ``프로젝트"
+"(Project) > 프로젝트 설정(Project Settings)``\\ 을 여세요. \"오토로드"
+"(AutoLoad)\" 탭으로 전환한 뒤, 탐색 버튼을 클릭해서 스크립트를 선택하거나, 경"
+"로를 입력하세요: ``res://Global.gd``. \"추가하기(Add)를 눌러서 오토로드 목록"
+"에 스크립트를 추가하세요:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
 msgid ""

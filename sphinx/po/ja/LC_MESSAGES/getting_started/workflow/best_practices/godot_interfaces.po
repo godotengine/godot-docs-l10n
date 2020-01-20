@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,29 +19,33 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:4
 msgid "Godot interfaces"
-msgstr ""
+msgstr "Godotインターフェース"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:6
 msgid ""
 "Often one needs scripts that rely on other objects for features. There are 2 "
 "parts to this process:"
 msgstr ""
+"多くの場合、機能を他のオブジェクトに依存するスクリプトが必要です。このプロセ"
+"スには2つの部分があります:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:9
 msgid "Acquiring a reference to the object that presumably has the features."
-msgstr ""
+msgstr "機能を持つ可能性のあるオブジェクトへの参照を取得します。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:11
 msgid "Accessing the data or logic from the object."
-msgstr ""
+msgstr "オブジェクトからデータまたはロジックにアクセスします。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:13
 msgid "The rest of this tutorial outlines the various ways of doing all this."
 msgstr ""
+"このチュートリアルの残りの部分では、これを行うさまざまな方法の概要を説明しま"
+"す。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:16
 msgid "Acquiring object references"
-msgstr ""
+msgstr "オブジェクト参照の取得"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:18
 msgid ""
@@ -49,6 +53,9 @@ msgid ""
 "them is to get a reference to an existing object from another acquired "
 "instance."
 msgstr ""
+"すべての :ref:`Object <class_Object>` について、それらを参照する最も基本的な"
+"方法は、取得した別のインスタンスから既存のオブジェクトへの参照を取得すること"
+"です。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:32
 msgid ""
@@ -56,25 +63,32 @@ msgid ""
 "While users often access :ref:`Node <class_Node>` and :ref:`Resource "
 "<class_Resource>` this way, alternative measures are available."
 msgstr ""
+"同じ原則が :ref:`Reference <class_Reference>` オブジェクトにも適用されます。"
+"ユーザーはこの方法で :ref:`Node <class_Node>` と :ref:`Resource "
+"<class_Resource>` に頻繁にアクセスしますが、代替手段も利用できます。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:36
 msgid ""
 "Instead of property or method access, one can get Resources by load access."
 msgstr ""
+"プロパティまたはメソッドアクセスの代わりに、ロードアクセスによってリソースを"
+"取得できます。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:115
 msgid "Note the following:"
-msgstr ""
+msgstr "次の点に注意してください:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:117
 msgid "There are many ways in which a language can load such resources."
-msgstr ""
+msgstr "言語がそのようなリソースをロードできる方法はたくさんあります。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:119
 msgid ""
 "When designing how objects will access data, don't forget that one can pass "
 "resources around as references as well."
 msgstr ""
+"オブジェクトがデータにアクセスする方法を設計するとき、リソースを参照としても"
+"渡すことができることを忘れないでください。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:122
 msgid ""
@@ -83,14 +97,18 @@ msgid ""
 "<class_Resource_method_duplicate>` an existing reference or instantiate one "
 "from scratch with ``new()``."
 msgstr ""
+"リソースをロードすると、エンジンによって維持されているキャッシュされたリソー"
+"スインスタンスがフェッチされることに注意してください。新しいオブジェクトを取"
+"得するには、既存の参照を :ref:`duplicate <class_Resource_method_duplicate>` "
+"するか、\\ ``new()`` でゼロからインスタンス化する必要があります。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:127
 msgid "Nodes likewise have an alternative access point: the SceneTree."
-msgstr ""
+msgstr "ノードにも同様に、代替アクセス ポイントがあります: SceneTreeです。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:242
 msgid "Accessing data or logic from an object"
-msgstr ""
+msgstr "オブジェクトからのデータまたはロジックへのアクセス"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
 msgid ""
@@ -99,6 +117,10 @@ msgid ""
 "**type**. It instead checks that the object **implements** the individual "
 "method."
 msgstr ""
+"GodotのスクリプトAPIはダック・タイプです。つまり、スクリプトが操作を実行する"
+"場合、Godotは **型(type)** による操作をサポートしているかどうかを検証しませ"
+"ん。代わりに、オブジェクトが個々のメソッドを **実装** していることをチェック"
+"します。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:248
 msgid ""
@@ -108,6 +130,11 @@ msgid ""
 "`CanvasItem.visible <class_CanvasItem_property_visible>`, then Godot would "
 "do the following checks, in order:"
 msgstr ""
+"たとえば、\\ :ref:`CanvasItem <class_CanvasItem>` クラスには ``visible`` プロ"
+"パティがあります。スクリプトAPIに公開されるすべてのプロパティは、実際には名前"
+"にバインドされたセッターとゲッターのペアです。\\ :ref:`CanvasItem.visible "
+"<class_CanvasItem_property_visible>` にアクセスしようとすると、Godot は次の"
+"チェックを順番に実行します:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:254
 msgid ""
@@ -116,6 +143,10 @@ msgid ""
 "a property defined on a base object by overriding the setter method for the "
 "property."
 msgstr ""
+"オブジェクトにスクリプトが添付されている場合、まずスクリプトを介してプロパ"
+"ティを設定しようとします。このプロパティのセッターメソッドをスクリプトでオー"
+"バーライドする手段によって、基本オブジェクトで定義されたプロパティをスクリプ"
+"トから変更することができます。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:259
 msgid ""
@@ -125,12 +156,19 @@ msgid ""
 "getter. For more information about HashMaps, see the :ref:`data preferences "
 "<doc_data_preferences>` docs."
 msgstr ""
+"スクリプトにプロパティがない場合は、CanvasItemクラスとその継承されたすべての"
+"型に対して、\"visible\"プロパティの ClassDBでハッシュマップルックアップが実行"
+"されます。見つかった場合は、バインドされたセッターまたはゲッターを呼び出しま"
+"す。ハッシュマップの詳細については、\\ :ref:`データ設定"
+"<doc_data_preferences>` ドキュメントを参照してください。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:265
 msgid ""
 "If not found, it does an explicit check to see if the user wants to access "
 "the \"script\" or \"meta\" properties."
 msgstr ""
+"見つからない場合は、ユーザーが\"script\"プロパティまたは\"meta\"プロパティに"
+"アクセスするかどうかを明示的に確認します。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:268
 msgid ""
@@ -139,6 +177,10 @@ msgid ""
 "execute logic that gives the impression that the Object has a property. This "
 "is also the case with the ``_get_property_list`` method."
 msgstr ""
+"そうでない場合は、CanvasItemおよびその継承されたタイプで(アクセスのタイプに応"
+"じて) ``_set``/``_get`` の実装をチェックします。これらのメソッドは、オブジェ"
+"クトにプロパティがあることを示すロジックを実行できます。これは "
+"``_get_property_list`` メソッドでも同様です。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:273
 msgid ""
@@ -147,6 +189,10 @@ msgid ""
 "the name of the tile with ID 1, i.e. :ref:`TileSet.tile_get_name(1) "
 "<class_TileSet_method_tile_get_name>`."
 msgstr ""
+"これは、\\ :ref:`TileSet <class_TileSet>` の \"1/tile_name\" プロパティの場合"
+"など、非正規なシンボル名の場合でも発生することに注意してください。これは、ID "
+"1のタイルの名前を指します。参照: :ref:`TileSet.tile_get_name(1) "
+"<class_TileSet_method_tile_get_name>`\\ 。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:278
 msgid ""
@@ -154,18 +200,26 @@ msgid ""
 "script, the object's class, or any class that object inherits, but only for "
 "things which extend Object."
 msgstr ""
+"その結果、このダック・タイプのシステムは、スクリプト、オブジェクトのクラス、"
+"またはオブジェクトが継承する任意のクラスのいずれかでプロパティを見つけること"
+"ができますが、これは Object を拡張するものについてのみです。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:282
 msgid ""
 "Godot provides a variety of options for performing runtime checks on these "
 "accesses:"
 msgstr ""
+"Godotは、これらのアクセスでランタイムチェックを実行するためのさまざまなオプ"
+"ションを提供します:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:285
 msgid ""
 "A duck-typed property access. These will property check (as described "
 "above). If the operation isn't supported by the object, execution will halt."
 msgstr ""
+"ダック・タイプのプロパティアクセス。これらはプロパティチェックを行います(上記"
+"を参照)。操作がオブジェクトによってサポートされていない場合、実行は停止しま"
+"す。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:313
 msgid ""
@@ -173,6 +227,9 @@ msgid ""
 "<class_CanvasItem_property_visible>`, one can access the methods, "
 "``set_visible`` and ``is_visible`` like any other method."
 msgstr ""
+"メソッドチェック。\\ :ref:`CanvasItem.visible "
+"<class_CanvasItem_property_visible>` の場合、他のメソッドと同様に "
+"``set_visible`` と ``is_visible`` のメソッドにアクセスできます。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:445
 msgid ""
@@ -180,9 +237,14 @@ msgid ""
 "useful in cases where one needs the max level of freedom from dependencies. "
 "In this case, one relies on an external context to setup the method."
 msgstr ""
+":ref:`FuncRef <class_FuncRef>` へのアクセスを外部委託します。これらは、依存関"
+"係から最大限の自由度が必要な場合に役立ちます。この場合、メソッドの設定は外部"
+"コンテキストに依存します。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:504
 msgid ""
 "These strategies contribute to Godot's flexible design. Between them, users "
 "have a breadth of tools to meet their specific needs."
 msgstr ""
+"これらの戦略は、Godotの柔軟なデザインに貢献します。それらの間から、ユーザーは"
+"特定のニーズを満たすための幅広いツールを手にできます。"

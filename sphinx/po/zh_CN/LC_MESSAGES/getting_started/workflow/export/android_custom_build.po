@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,25 +127,24 @@ msgstr ""
 "安卓开发。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:55
-#, fuzzy
 msgid "Download the command-line tools"
 msgstr "下载命令行工具"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:57
-#, fuzzy
 msgid ""
 "Go to the `Android Studio download page <https://developer.android.com/"
 "studio/#command-tools>`_. To save disk space, you don't want the full IDE, "
 "so don't download it."
 msgstr ""
-"`Android SDK <https://developer.android.com/studio/#command-tools>`_ （命令行"
-"工具就足够了）"
+"前往`Android Studio 下载页 <https://developer.android.com/studio/#command-"
+"tools>`_。为了节省磁盘空间，你应该不想要完整的IDE，所以不要下载那个。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:62
 msgid ""
 "If you do want Android Studio, read further down for instructions for doing "
 "the same using Android Studio."
 msgstr ""
+"如果你确实想要Android Studio，请查看后面关于在Android Studio中操作的说明。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:65
 #, fuzzy
@@ -157,11 +156,10 @@ msgstr ""
 "看到它们。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:70
-#, fuzzy
 msgid ""
 "Download the ZIP file for your platform, there will be a single ``tools`` "
 "folder inside:"
-msgstr "下载适合您平台的zip压缩包文件，里面有个单独的 *工具* 文件夹："
+msgstr "下载适合您平台的ZIP压缩包文件，里面单独有个 ``tools`` 文件夹："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:75
 msgid ""
@@ -170,36 +168,31 @@ msgid ""
 msgstr "这可能有点令人困惑，请务必认真遵循以下说明："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:78
-#, fuzzy
 msgid ""
 "Create a new folder anywhere you want named ``android-sdk`` (it **must** be "
 "an empty directory). On Windows, the following path is usually good enough:"
 msgstr ""
-"在你想要的任何地方，创建一个名为 ``android-sdk`` 的新文件夹（它 **必须** 是一"
-"个空目录）。在Windows平台上，"
+"在你想要的任何地方，创建一个名为 ``android-sdk`` 的文件夹（**必须**是个空目"
+"录）。在Windows平台上，用下面这个路径就可以了："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:85
-#, fuzzy
 msgid ""
 "Unzip the Android SDK ZIP file you just downloaded there. The only thing in "
 "the directory you created in the previous step should be the ``tools`` "
 "folder with its contents inside, like this:"
 msgstr ""
-"通常就够了。解压缩刚才下载的 *sdk zip文件* 到这里。在上一步中创建的目录中，唯"
-"一的内容应该是 ``tools`` 文件夹，就像这样："
+"解压缩刚才下载的 Android SDK ZIP 文件到那里。在上一步中创建的目录中，唯一的内"
+"容应该是 ``tools`` 文件夹，就像这样："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:97
-#, fuzzy
 msgid "Accepting the licenses"
 msgstr "接受许可证"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:99
-#, fuzzy
 msgid ""
 "To be able to use the Android SDK tools, Google requires you to accept its "
 "licenses."
-msgstr ""
-"到这里的一切，或多或少都很轻松，但是为了做任何事情，谷歌需要您接受它的许可。"
+msgstr "谷歌要求你接受对应的许可证，才可以使用Android SDK工具。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:102
 #, fuzzy
@@ -238,7 +231,6 @@ msgstr "之后，安装平台工具（安装 ``adb`` 需要此工具）："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:126
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:210
-#, fuzzy
 msgid "Generating the keystore"
 msgstr "生成密钥库"
 

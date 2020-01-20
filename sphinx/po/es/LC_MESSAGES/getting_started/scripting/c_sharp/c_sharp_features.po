@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,16 +151,17 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:98
 msgid ""
 "These signals can then be connected either in the editor or from code with "
-"``Connect``."
+"``Connect``. If you want to connect a signal in the editor, you need to "
+"(re)build the project assemblies to see the new signal. This build can be "
+"manually triggered by clicking the “Build” button at the top right corner of "
+"the editor window."
 msgstr ""
-"Esas señales pueden ser conectadas mediante el editor o por códibo con "
-"``Connect``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:118
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:119
 msgid "Emitting signals is done with the ``EmitSignal`` method."
 msgstr "Las señales se emiten con el método ``EmitSignal``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:129
 msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
@@ -168,7 +169,7 @@ msgstr ""
 "Tener en cuenta que se puede hacer referenciar a una señal con la palabra "
 "clave ``nameof`` (aplicado al delegate)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:130
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:131
 msgid ""
 "It is possible to bind values when establishing a connection by passing an "
 "object array."
@@ -176,7 +177,7 @@ msgstr ""
 "Es posible vincular valores al establecer una conexión pasando un objeto "
 "array."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:150
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:151
 msgid ""
 "Signals support parameters and bound values of all the `built-in types "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/"
@@ -192,7 +193,7 @@ msgstr ""
 "compatible automaticamente, pero objetos de datos personalizados deberán "
 "extender de `Godot.Object` o alguna de sus subclases."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:162
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:163
 msgid ""
 "Finally, signals can be created by calling ``AddUserSignal``, but be aware "
 "that it should be executed before any use of said signals (with ``Connect`` "

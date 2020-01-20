@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,6 @@ msgstr ""
 "contêineres"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
-#, fuzzy
 msgid ""
 "The five most common containers (you can learn more about containers in the :"
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
@@ -219,10 +218,9 @@ msgstr ""
 "para compatibilidade com versões anteriores."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
-"``Scale`` redimensiona a textura para caber no retângulo delimitador do nó"
+"``Scale`` redimensiona a textura para caber no retângulo delimitador do nó."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid "``Tile`` makes the texture repeat, but it won't scale."
@@ -336,7 +334,6 @@ msgstr ""
 "limitar o intervalo do medidor."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
-#, fuzzy
 msgid ""
 "To animate the bar, you'll want to look at the Range section. Set the "
 "``Min`` and ``Max`` properties to define the range of the gauge. For "
@@ -351,7 +348,7 @@ msgstr ""
 "exemplo, para representar a vida de um personagem, você vai querer definir "
 "``Min`` para ``0, `` e ``Max`` para a vida máxima do personagem. Altere a "
 "propriedade ``Value`` para atualizar a barra. Se você deixar os valores "
-"``Min`` e ``Max`` para o padrão de ``1`` e ``100, `` e setar a propriedade "
+"``Min`` e ``Max`` para o padrão de ``0`` e ``100, `` e definir a propriedade "
 "``Value`` para ``40``, 40% da textura ``Progress`` aparecerá, e 60% dela "
 "permanecerá oculta."
 
@@ -387,7 +384,6 @@ msgid "NinePatchRect"
 msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:160
-#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
@@ -395,9 +391,9 @@ msgid ""
 "for your UI."
 msgstr ""
 "**NinePatchRect** divide uma textura em 3 linhas e 3 colunas. O centro e os "
-"lados são ladrilhados quando você dimensiona a textura, mas nunca dimensiona "
-"os cantos. É útil criar painéis, caixas de diálogo e planos de fundo "
-"escaláveis para sua interface do usuário."
+"lados são ladrilhados quando você redimensiona a textura, mas nunca "
+"redimensiona os cantos. É útil criar painéis, caixas de diálogo e planos de "
+"fundo escaláveis para sua interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "NinePatchRect scaled with the min\\_size property"

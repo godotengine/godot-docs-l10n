@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,10 @@ msgid ""
 "tutorial suggests a workflow which should be a good starting point. We will "
 "also cover using version control with Godot."
 msgstr ""
+"Godotにはプロジェクト構造やファイルシステムの使用方法に制限がないため、エンジ"
+"ンを学習する際にファイルを整理することが難しいようです。このチュートリアルで"
+"は、出発点として適切なワークフローを提案します。また、Godotでのバージョン管理"
+"の使用についても説明します。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:15
 msgid "Organization"
@@ -42,18 +46,25 @@ msgid ""
 "Godot is scene-based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
 msgstr ""
+"Godotは本質的にシーンベースであり、メタデータやアセットデータベースなしで、"
+"ファイルシステムをそのまま使用します。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
 msgid ""
 "Unlike other engines, many resources are contained within the scene itself, "
 "so the amount of files in the filesystem is considerably lower."
 msgstr ""
+"他のエンジンとは異なり、多くのリソースはシーン自体に含まれているため、ファイ"
+"ルシステム内のファイルの量はかなり少なくなります。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:23
 msgid ""
 "Considering that, the most common approach is to group assets as close to "
 "scenes as possible; when a project grows, it makes it more maintainable."
 msgstr ""
+"それを考慮すると、最も一般的なアプローチは、可能な限りシーンに近いアセットを"
+"グループ化することです。そうしておけば、プロジェクトが大きくなった時の保守性"
+"が高まります。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:27
 msgid ""
@@ -61,6 +72,9 @@ msgid ""
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
 "They can then use a separate folder to store built levels that use them."
 msgstr ""
+"例として、通常は、スプライト画像、3Dモデルメッシュ、マテリアル、音楽などの基"
+"本的なアセットを単一のフォルダに配置できます。その後、別のフォルダを使用し"
+"て、それらを使用してビルドされたレベルを格納することもできます。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
 msgid "Importing"
@@ -72,17 +86,21 @@ msgid ""
 "project. While this can be useful in large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
+"バージョン3.0以前のGodotは、プロジェクト外部のファイルからインポートプロセス"
+"を実行しました。これは大規模なプロジェクトでは便利ですが、ほとんどの開発者に"
+"とって構成に手間がかかります。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:54
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
 msgstr ""
+"このため、アセットはプロジェクトフォルダ内から透過的にインポートされるように"
+"なりました。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
-#, fuzzy
 msgid "Ignoring specific folders"
-msgstr "書式指定子"
+msgstr "特定のフォルダを無視する"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:60
 msgid ""
@@ -90,6 +108,10 @@ msgid ""
 "an empty file called ``.gdignore`` in the folder (the leading ``.`` is "
 "required). This can be useful to speed up the initial project importing."
 msgstr ""
+"Godot が特定のフォルダに含まれるファイルをインポートしないようにするには、"
+"フォルダ内に ``.gdignore`` という空のファイルを作成します (先頭に ``.`` が必"
+"要です)。これは、(既存の構成などからの)初期プロジェクトのインポートを高速化す"
+"るのに役立ちます。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:66
 msgid ""
@@ -97,15 +119,22 @@ msgid ""
 "editor such as Notepad++ or use the following command in a command prompt: "
 "``type nul > .gdignore``"
 msgstr ""
+"Windowsでドットで始まる名前のファイルを作成するには、Notepad++などのテキスト"
+"エディタを使用するか、コマンドプロンプトで次のコマンドを使用します: ``type "
+"nul> .gdignore``"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:70
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
 "using the ``load()`` and ``preload()`` methods."
 msgstr ""
+"フォルダが無視されると、そのフォルダ内のリソースを ``load()`` および "
+"``preload()`` メソッドを使用して読み込むことができなくなります。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:73
 msgid ""
 "Ignoring a folder will also automatically hide it from the FileSystem dock, "
 "which can be useful to reduce clutter."
 msgstr ""
+"フォルダを無視すると、そのフォルダはファイルシステムドックから自動的に非表示"
+"になるので、煩雑さを軽減するのに役立ちます。"

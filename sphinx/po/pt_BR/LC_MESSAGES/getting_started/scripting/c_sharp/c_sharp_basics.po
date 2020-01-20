@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,12 +110,10 @@ msgstr ""
 "utilidades requeridas para se usar C# em Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
-#, fuzzy
 msgid "macOS and Linux"
 msgstr "macOS e Linux"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:53
-#, fuzzy
 msgid ""
 "Download and install the latest version of the `Mono SDK <http://www.mono-"
 "project.com/download/>`_. As of Godot 3.1 beta 3, the version number doesn't "
@@ -210,7 +208,6 @@ msgid "JetBrains Rider"
 msgstr "jetbrains rider"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:93
-#, fuzzy
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
@@ -411,7 +408,6 @@ msgstr ""
 "suportado"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:210
-#, fuzzy
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
@@ -505,3 +501,21 @@ msgstr ""
 "Sempre que pacotes forem adicionados ou modificados, execute a restauração "
 "do nuget no diretório principal do projeto para garantir que os pacotes "
 "nuget estejam disponíveis para uso pelo msbuild, execute::"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:264
+msgid "Profiling your C# code"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:266
+msgid ""
+"`Mono log profiler <https://www.mono-project.com/docs/debug+profile/profile/"
+"profiler/>`_ is available via `this PR <https://github.com/godotengine/godot/"
+"pull/26513>`_"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:267
+msgid ""
+"External Mono profiler like `JetBrains dotTrace <https://www.jetbrains.com/"
+"profiler/>`_ can be used as described `here <https://github.com/godotengine/"
+"godot/pull/34382>`_."
+msgstr ""

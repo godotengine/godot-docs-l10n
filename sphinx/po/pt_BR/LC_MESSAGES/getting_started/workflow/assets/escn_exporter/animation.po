@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,25 +85,23 @@ msgstr ""
 "lo no ``NLA Editor``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
-#, fuzzy
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
 msgstr "Ou pode ser feito juntando a ação em ``Dope Sheet``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
-#, fuzzy
 msgid "**2. Check mute status of NLA tracks**"
-msgstr "**2. Verificar o status 'mudo' das faixas NLA **"
+msgstr "**2. Verificar o status 'mute' das faixas NLA **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
-#, fuzzy
 msgid ""
 "An NLA track can be ``mute`` or ``unmute``, the exporter will export all the "
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
-"An NLA track can be ``mute`` or ``unmute``, the exporter will export all the "
-"``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
-"tracks into every action (including the action action) being exported."
+"Uma trilha NLA pode ser ``mute`` ou ``unmute``, o exportador irá exportar "
+"todas as trilhas NLA com ``mute`` como uma ação separada, enquanto mistura "
+"todas as trilhas NLA ``unmute`` em todas as ações (incluiondo a ação de "
+"ação) sendo exportadas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 #, fuzzy
@@ -111,7 +109,6 @@ msgid "**3. Export the scene**"
 msgstr "**4. Exporte a cena**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
-#, fuzzy
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
 msgstr "Certifique-se de que a opção ``Export Stashed Actions`` está ativada."
 
@@ -186,12 +183,10 @@ msgstr ""
 "colocadas em apenas um AnimationPlayer na raiz da cena."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:82
-#, fuzzy
 msgid "**Mode 'Animation as Action with Squash'**"
 msgstr "Animações suportadas:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
-#, fuzzy
 msgid ""
 "This mode has very similar behaviour of mode 'Animation as Action', but it "
 "can generate fewer AnimationPlayers; objects in parent-children relationship "

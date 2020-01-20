@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,17 +87,29 @@ msgstr ""
 "microsoft.com/ko-kr/dotnet/csharp/whats-new/>`_\\ 을 참고하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
-msgid "Formatting conventions"
-msgstr "형식 규칙"
+#, fuzzy
+msgid "Formatting"
+msgstr "형식"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:33
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
+#, fuzzy
+msgid "General guidelines"
+msgstr "일반적인 차이점"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
 #, fuzzy
 msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
 msgstr ""
 "새로운 파일을 생성하면, 줄 바꿈을 위해 라인피드 (*LF*) 문자를 사용하는 것을 "
 "염두하세요, *CRLF*\\ 이나 *CR*\\ 이 아닙니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:37
+msgid ""
+"Use one line feed character at the end of each file, except for `csproj` "
+"files."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:38
 #, fuzzy
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
@@ -106,7 +118,7 @@ msgstr ""
 "바이트 순서 표식 (`BOM <https://ko.wikipedia.org/wiki/바이트_순서_표식>`_)없"
 "이 UTF-8 인코딩을 사용합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:35
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:39
 #, fuzzy
 msgid ""
 "Use **4 spaces** instead of tabs for indentation (which is referred to as "
@@ -115,16 +127,16 @@ msgstr ""
 "들여 쓰기를 위해 탭 대신 4개의 스페이스를 사용합니다 ('소프트 탭'\\ 이라고 "
 "함)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:40
 msgid ""
 "Consider breaking a line into several if it's longer than 100 characters."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:39
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:44
 msgid "Line breaks and blank lines"
 msgstr "줄 바꿈 및 공백 줄"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:41
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:46
 #, fuzzy
 msgid ""
 "For a general indentation rule, follow `the \"Allman Style\" <https://en."
@@ -136,40 +148,40 @@ msgstr ""
 "wiki/Indentation_style#Allman_style>`_\\ 에 따라 제어문과 관련된 중괄호를 다"
 "음 줄에 놓으면서, 같은 높이의 들여쓰기를 하기를 권장합니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:58
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:63
 msgid "However, you may choose to omit line breaks inside brackets:"
 msgstr "그러나, 중괄호 안에 줄 바꿈을 생략할 수 있습니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:60
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:65
 msgid "For simple property accessors."
 msgstr "간단한 속성 접근자를 위해."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:61
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:66
 msgid "For simple object, array, or collection initializers."
 msgstr "간단한 객체, 배열, 혹은 컬렉션 이니셜라이저를 위해."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:62
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:67
 msgid "For abstract auto property, indexer, or event declarations."
 msgstr "추상적 auto 속성, 인덱서, 혹은 이벤트 선언을 위해."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:84
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:89
 msgid "Insert a blank line:"
 msgstr "다음 경우에 공백 줄을 넣습니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:86
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:91
 #, fuzzy
 msgid "After a list of ``using`` statements."
 msgstr "명령문 목록을 *사용한* 후."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:87
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:92
 msgid "Between method, properties, and inner type declarations."
 msgstr "메서드, 속성, 그리고 내부 타입 선언 사이."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:88
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
 msgid "At the end of each file."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:90
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
 msgid ""
 "Field and constant declarations can be grouped together according to "
 "relevance. In that case, consider inserting a blank line between the groups "
@@ -178,40 +190,40 @@ msgstr ""
 "공백과 상수 선언은 관련성에 따라 함께 묶을 수 있습니다. 이 경우, 가독성을 위"
 "해, 묶음 사이에 공백 줄을 넣는 것을 고려해볼 수 있습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:98
 msgid "Avoid inserting a blank line:"
 msgstr "다음 경우에 공백 줄을 삽입하는 것을 피하세요:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:100
 msgid "After ``{``, the opening brace."
 msgstr "``{``, 괄호 열기 이후."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:96
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:101
 msgid "Before ``}``, the closing brace."
 msgstr "``}``, 괄호 닫기 이전."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:97
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:102
 #, fuzzy
 msgid "After a comment block or a single-line comment."
 msgstr "커맨드 블록이나, 한 줄 짜리 주석 이후."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:98
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:103
 msgid "Adjacent to another blank line."
 msgstr "다른 공백 줄과 인접한 경우."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:136
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
 msgid "Using spaces"
 msgstr "공백 사용하기"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:138
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
 msgid "Insert a space:"
 msgstr "다음 경우에 공백을 넣습니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:140
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
 msgid "Around a binary and tertiary operator."
 msgstr "이진 및 삼항 연산자 주변."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:141
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
 #, fuzzy
 msgid ""
 "Between an opening parenthesis and ``if``, ``for``, ``foreach``, ``catch``, "
@@ -220,66 +232,66 @@ msgstr ""
 "괄호 열기와 *if*, *for*, *foreach*, *catch*, *while*, *lock* 혹은 *using* 키"
 "워드 사이."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:148
 msgid "Before and within a single line accessor block."
 msgstr "한 줄 접근자 블록 전이나 앞."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:143
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:149
 msgid "Between accessors in a single line accessor block."
 msgstr "한 줄 접근자 블록에서 접근자들 사이."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:150
 msgid "After a comma which is not at the end of a line."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:145
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
 #, fuzzy
 msgid "After a semicolon in a ``for`` statement."
 msgstr "*for* 명령문에서 세미콜론 이후."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:152
 #, fuzzy
 msgid "After a colon in a single line ``case`` statement."
 msgstr "한 줄 *case* 명령문에서 콜론 이후."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
 msgid "Around a colon in a type declaration."
 msgstr "타입 선언에서 콜론 주변."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:148
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
 msgid "Around a lambda arrow."
 msgstr "Lambda arrow(람다 화살표) 주변."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:149
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:155
 #, fuzzy
 msgid ""
 "After a single-line comment symbol (``//``), and before it if used at the "
 "end of a line."
 msgstr "한 줄 주석 상징 ('//')이후, 그리고 문장의 끝에서 쓰일 때는 이전."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:157
 msgid "Do not use a space:"
 msgstr "공백을 사용하지 마세요:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:159
 msgid "After type cast parentheses."
 msgstr "타입 캐스트 괄호 이후."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:160
 msgid "Within single line initializer braces."
 msgstr "한 줄 이니셜라이저 중괄호 안."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:156
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:162
 msgid ""
 "The following example shows a proper use of spaces, according to some of the "
 "above mentioned conventions:"
 msgstr "다음 예제는 위에서 언급한 규칙에 따라 적절한 공백의 사용을 보여줍니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:191
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:197
 msgid "Naming conventions"
 msgstr "명명 규칙"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:193
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:199
 #, fuzzy
 msgid ""
 "Use **PascalCase** for all namespaces, type names and member level "
@@ -289,7 +301,7 @@ msgstr ""
 "private 영역을 제외한 모든 네임스페이스, 즉 타입 이름과 멤버 레벨 식별자 "
 "(예: 메서드, 속성, 상수, 이벤트)에 *PascalCase*\\ 를 사용합니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:214
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:220
 #, fuzzy
 msgid ""
 "Use **camelCase** for all other identifiers (i.e. local variables, method "
@@ -300,7 +312,7 @@ msgstr ""
 "private 영역의 접두사로 밑줄('_')을 사용합니다 (하지만 위에서 설명했듯이, 메"
 "서드나 속성은 아닙니다):"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:228
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:234
 #, fuzzy
 msgid ""
 "There's an exception with acronyms which consist of two letters, like "
@@ -310,7 +322,7 @@ msgstr ""
 "두 글자로 구성된 약자는 예외입니다, *'UI'*\\ 같은 것으로, Pascal case가 쓰이"
 "는 곳이면 대문자로 써야하고, 그렇지 않다면 소문자를 써야합니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:231
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:237
 #, fuzzy
 msgid ""
 "Note that ``id`` is **not** an acronym, so it should be treated as a normal "
@@ -318,7 +330,7 @@ msgid ""
 msgstr ""
 "*'id'*\\ 는 약자가 **아닙니다**, 따라서 일반적인 식별자로 취급해야 합니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:242
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:248
 #, fuzzy
 msgid ""
 "It is generally discouraged to use a type name as a prefix of an identifier, "
@@ -332,7 +344,7 @@ msgstr ""
 "인터페이스에서, **반드시** 이름의 접두어 대문자 *'I'*\\ 를 갖는 것이 있습니"
 "다, *'IInventoryHolder'*\\ 나 *'IDamageable'*\\ 이 있죠."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:246
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:252
 msgid ""
 "Lastly, consider choosing descriptive names and do not try to shorten them "
 "too much if it affects readability."
@@ -340,7 +352,7 @@ msgstr ""
 "마지막으로 서술적인 이름을 고르는 것은 생각하되 너무 축약해서 가독성에 해를 "
 "끼치게 해서는 안됩니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:249
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:255
 #, fuzzy
 msgid ""
 "For instance, if you want to write code to find a nearby enemy and hit it "
@@ -349,16 +361,16 @@ msgstr ""
 "예를 들어, 근처의 적을 찾고 무기로 공격하는 코드를 짜고 싶다면 이렇게 하는 "
 "게 좋습니다"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:255
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:261
 #, fuzzy
 msgid "Rather than:"
 msgstr "이것보다는 말이죠,"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:262
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
 msgid "Implicitly typed local variables"
 msgstr "암시적 형식 지역 변수"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:264
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
 #, fuzzy
 msgid ""
 "Consider using implicitly typing (``var``) for declaration of a local "
@@ -368,19 +380,19 @@ msgstr ""
 "지역 변수의 선언을 위해 암시적 형식 (*'var'*)를 사용하는 것을 생각해보세요, "
 "하지만 할당의 오른쪽에서 **타입이 분명할 때만** 해야합니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:294
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
 msgid "Other considerations"
 msgstr "기타 고려 사항"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:296
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
 msgid "Use explicit access modifiers."
 msgstr "명시적 접근 모디파이어를 사용하세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:297
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
 msgid "Use properties instead of non-private fields."
 msgstr "비공개 영역 대신 속성을 사용하세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:298
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
 #, fuzzy
 msgid ""
 "Use modifiers in this order: ``public``/``protected``/``private``/"
@@ -390,7 +402,7 @@ msgstr ""
 "이 순서로 모디파이어를 사용하세요: *'public/protected/private/internal "
 "virtual/override/abstract/new static readonly'*."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:306
 #, fuzzy
 msgid ""
 "Avoid using fully-qualified names or ``this.`` prefix for members when it's "
@@ -399,17 +411,17 @@ msgstr ""
 "꼭 필요하지 않다면 완전한 이름이나 멤버에게 *'this.'* 접두사를 사용하지 마세"
 "요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:301
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:307
 #, fuzzy
 msgid "Remove unused ``using`` statements and unnecessary parentheses."
 msgstr "사용하지 않는 *'using'* 명령문과 불필요한 괄호는 지우세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:308
 #, fuzzy
 msgid "Consider omitting the default initial value for a type."
 msgstr "한 타입에 대한 기본 초기 값을 생략하는 것을 고려하세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:309
 msgid ""
 "Consider using null-conditional operators or type initializers to make the "
 "code more compact."
@@ -417,7 +429,7 @@ msgstr ""
 "코드를 더 간결하게 만들기 위해 null 조건의 연산자나 타입 이니셜라이저를 사용"
 "하는 것을 고려해보세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:310
 msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."

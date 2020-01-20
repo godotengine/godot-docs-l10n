@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -362,7 +362,7 @@ msgstr "while() 루프는 모든 곳에서 동일합니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:421
 msgid "Custom iterators"
-msgstr "커스텀 반복자(Iterator)"
+msgstr "맞춤 반복자(Iterator)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:422
 msgid ""
@@ -372,8 +372,8 @@ msgid ""
 "forward iterator follows:"
 msgstr ""
 "기본 반복자가 필요에 맞지 않는다면 변수 클래스의 스크립트의 ``_iter_init``, "
-"``_iter_next``, 그리고 ``_iter_get`` 함수를 오버라이딩하여 커스텀 반복자를 생"
-"성하실 수 있습니다. forward 반복자의 예제 구현은 다음과 같습니다:"
+"``_iter_next``, 그리고 ``_iter_get`` 함수를 오버라이딩하여 맞춤 반복자를 생성"
+"하실 수 있습니다. forward 반복자의 예제 구현은 다음과 같습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:454
 msgid "And it can be used like any other iterator:"
@@ -384,8 +384,8 @@ msgid ""
 "Make sure to reset the state of the iterator in ``_iter_init``, otherwise "
 "nested for-loops that use custom iterators will not work as expected."
 msgstr ""
-"``_iter_init`` 에서 반복자의 상태를 리셋해야 합니다, 그렇지 않으면 커스텀 반"
-"복자에 사용하는 중첩된 for 루프가 예상대로 작동하지 않을 것입니다."
+"``_iter_init`` 에서 반복자의 상태를 리셋해야 합니다, 그렇지 않으면 맞춤 반복"
+"자에 사용하는 중첩된 for 루프가 예상대로 작동하지 않을 것입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:466
 msgid "Duck typing"

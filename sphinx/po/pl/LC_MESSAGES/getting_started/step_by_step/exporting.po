@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,24 +81,30 @@ msgstr ""
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
-"If you wish to disable that for whatever reason, or emulate touch from mouse "
-"input, you can do that in the \"Project Settings\" under *Input Devices* and "
-"*Pointing*"
+"Godot can also emulate touch input from mouse clicks, which we will need to "
+"be able to keep playing our game on our computer after we switch to touch "
+"input. In the \"Project Settings\" under *Input Devices* and *Pointing*, set "
+"*Emulate Touch From Mouse* to \"On\"."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:38
+#: ../../docs/getting_started/step_by_step/exporting.rst:39
 #, fuzzy
 msgid ""
-"Before we change the input method, in the project settings go to *Display*, "
-"then click on *Window*. In the *Stretch* options, set *Mode* to \"2d\" and "
-"*Aspect* to \"keep\". This ensures that the game scales consistently on "
-"different sized screens."
+"We also want to ensure that the game scales consistently on different-sized "
+"screens, so in the project settings go to *Display*, then click on *Window*. "
+"In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
 "W sekcji *Stretch* ustaw *Mode* na \"2d\", a *Aspect* na \"Keep\". "
 "Gwarantuje to, że gra będzie skalowana spójnie na ekranach o różnych "
 "rozmiarach."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:44
+#: ../../docs/getting_started/step_by_step/exporting.rst:43
+msgid ""
+"Since we are already in the *Window* settings, we should also set under "
+"*Handheld* the *Orientation* to \"portrait\"."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
 "Next, we need to modify the ``Player.gd`` script to change the input method. "
 "We'll remove the key inputs and make the player move towards a \"target\" "
@@ -109,18 +115,30 @@ msgstr ""
 "przejdzie do \"celu\", który jest ustawiany przez dotknięcie (lub "
 "kliknięcie)."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:48
+#: ../../docs/getting_started/step_by_step/exporting.rst:52
 msgid ""
 "Here is the full script for the player, with comments noting what we've "
 "changed:"
 msgstr ""
 "Oto pełny skrypt dla gracza, z komentarzami wskazującymi co się zmieniło:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:123
+#: ../../docs/getting_started/step_by_step/exporting.rst:129
+#, fuzzy
+msgid "Setting a main scene"
+msgstr "Ustawianie sceny"
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:131
+msgid ""
+"The main scene is the one that your game will start in. In *Project -> "
+"Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
+"by clicking the folder icon and selecting it."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid "Export templates"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:125
+#: ../../docs/getting_started/step_by_step/exporting.rst:138
 msgid ""
 "In order to export, you need to download the *export templates* from the "
 "http://godotengine.org/download. These templates are optimized versions of "
@@ -128,60 +146,60 @@ msgid ""
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:132
+#: ../../docs/getting_started/step_by_step/exporting.rst:145
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:137
+#: ../../docs/getting_started/step_by_step/exporting.rst:150
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:141
+#: ../../docs/getting_started/step_by_step/exporting.rst:154
 #, fuzzy
 msgid "Export presets"
 msgstr "Eksportowanie projektów"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:143
+#: ../../docs/getting_started/step_by_step/exporting.rst:156
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
-"Export*:"
+"Export*."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:147
+#: ../../docs/getting_started/step_by_step/exporting.rst:158
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:150
+#: ../../docs/getting_started/step_by_step/exporting.rst:163
 msgid ""
 "At the bottom of the window are two buttons. \"Export PCK/ZIP\" only creates "
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:154
+#: ../../docs/getting_started/step_by_step/exporting.rst:167
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:157
+#: ../../docs/getting_started/step_by_step/exporting.rst:170
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:161
+#: ../../docs/getting_started/step_by_step/exporting.rst:174
 #, fuzzy
 msgid "Exporting by platform"
 msgstr "Eksportowanie w zależności od platformy"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:163
+#: ../../docs/getting_started/step_by_step/exporting.rst:176
 msgid ""
 "In this section, we'll walk through the process for each platform, including "
 "any additional software or requirements you'll need."
@@ -190,12 +208,12 @@ msgstr ""
 "dodatkowym oprogramowaniem lub wymaganiami każdej z nich, których będziesz "
 "potrzebował."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:167
+#: ../../docs/getting_started/step_by_step/exporting.rst:180
 #, fuzzy
 msgid "PC (Linux/macOS/Windows)"
 msgstr "PC (Linux/MacOS/Windows)"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:169
+#: ../../docs/getting_started/step_by_step/exporting.rst:182
 msgid ""
 "Exporting PC platforms works the same across the three supported operating "
 "systems. Open the export window and click \"Add..\" to create the preset(s) "
@@ -207,11 +225,11 @@ msgstr ""
 "\"Eksportuj projekt\" i wybierz nazwę oraz folder docelowy. Wybierz "
 "lokalizację *na zewnątrz* folderu projektu."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:174
+#: ../../docs/getting_started/step_by_step/exporting.rst:187
 msgid "Click \"Save\" and the engine will build the export files."
 msgstr "Kliknij Zapisz, a silnik wyeksportuje projekt."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:176
+#: ../../docs/getting_started/step_by_step/exporting.rst:189
 #, fuzzy
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
@@ -224,7 +242,7 @@ msgstr ""
 "powoduje utworzenie pliku `.zip`. W obu przypadkach skompresowany plik "
 "zawiera aplikację MacOS `.app`, którą można dwukrotnie kliknąć i uruchomić."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:181
+#: ../../docs/getting_started/step_by_step/exporting.rst:194
 msgid ""
 "On Windows, if you want your exported executable to have a different icon "
 "than the default one, you need to change it manually. See: :ref:"
@@ -234,11 +252,11 @@ msgstr ""
 "inną ikonę niż domyślna, musisz ręcznie ją zmienić. Patrz: :ref:"
 "`doc_changing_application_icon_for_windows`."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:186
+#: ../../docs/getting_started/step_by_step/exporting.rst:199
 msgid "Android"
 msgstr "Android"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:188
+#: ../../docs/getting_started/step_by_step/exporting.rst:201
 msgid ""
 "Mobile devices come with a wide variety of capabilities. In most cases, "
 "Godot's default settings will work, but mobile development is sometimes more "
@@ -250,7 +268,7 @@ msgstr ""
 "bardziej sztuką niż nauką i być może będziesz musiał zrobić kilka "
 "eksperymentów i szukać pomocy, aby wszystko działało."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:194
+#: ../../docs/getting_started/step_by_step/exporting.rst:207
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
@@ -258,17 +276,17 @@ msgstr ""
 "Zanim będziesz mógł wyeksportować swój projekt dla systemu Android, musisz "
 "pobrać następujące oprogramowanie:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:197
+#: ../../docs/getting_started/step_by_step/exporting.rst:210
 msgid "Android SDK: https://developer.android.com/studio/"
 msgstr "Android SDK: https://developer.android.com/studio/"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:198
+#: ../../docs/getting_started/step_by_step/exporting.rst:211
 msgid ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 msgstr ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:200
+#: ../../docs/getting_started/step_by_step/exporting.rst:213
 msgid ""
 "When you run Android Studio for the first time, click on *Configure -> SDK "
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
@@ -279,7 +297,7 @@ msgstr ""
 "narzędzie wiersza poleceń `adb` używane przez Godota do komunikowania się z "
 "urządzeniem."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:204
+#: ../../docs/getting_started/step_by_step/exporting.rst:217
 #, fuzzy
 msgid ""
 "Next, create a debug keystore by running the following command on your "
@@ -288,7 +306,7 @@ msgstr ""
 "Następnie utwórz debug keystore, uruchamiając poniższe polecenie w wierszu "
 "poleceń systemu:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:211
+#: ../../docs/getting_started/step_by_step/exporting.rst:224
 msgid ""
 "Click on *Editor -> Editor Settings* in Godot and select the *Export/"
 "Android* section. Here, you need to set the paths to the Android SDK "
@@ -299,15 +317,17 @@ msgstr ""
 "Tutaj musisz ustawić ścieżki do aplikacji Android SDK w swoim systemie i "
 "lokalizację właśnie utworzonego keystore."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:217
+#: ../../docs/getting_started/step_by_step/exporting.rst:230
+#, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
-"for Android (see above)."
+"for Android (see above). Select the Android Presets and under *Options* go "
+"to *Screen* and set *Orientation* to \"Portrait\"."
 msgstr ""
 "Teraz jesteś gotowy do eksportu. Kliknij *Projekt -> Eksportuj* i dodaj "
 "predefiniowane ustawienia dla systemu Android (zobacz powyżej)."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:220
+#: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
@@ -316,7 +336,7 @@ msgstr ""
 "pobrać na twoje urządzenie. Aby to zrobić w wierszu poleceń, użyj "
 "następujących opcji:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:227
+#: ../../docs/getting_started/step_by_step/exporting.rst:241
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
@@ -325,14 +345,14 @@ msgstr ""
 "Programistyczne*. Szczegółowe informacje można znaleźć w dokumentacji "
 "urządzenia."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:230
+#: ../../docs/getting_started/step_by_step/exporting.rst:244
 msgid ""
 "If your system supports it, connecting a compatible Android device will "
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
 "area:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:235
+#: ../../docs/getting_started/step_by_step/exporting.rst:249
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
@@ -340,11 +360,11 @@ msgstr ""
 "Kliknięcie tego przycisku spowoduje utworzenie APK i skopiowanie go do "
 "urządzenia w jednym kliknięciem."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:238
+#: ../../docs/getting_started/step_by_step/exporting.rst:252
 msgid "iOS"
 msgstr "iOS"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:240
+#: ../../docs/getting_started/step_by_step/exporting.rst:254
 #, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
@@ -353,7 +373,7 @@ msgstr ""
 "Aby zbudować swoją grę dla iOS, musisz mieć komputer MacOS z zainstalowanym "
 "Xcode."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:243
+#: ../../docs/getting_started/step_by_step/exporting.rst:257
 msgid ""
 "Before exporting, there are some settings that you *must* complete for the "
 "project to export successfully. First, the \"App Store Team Id\", which you "
@@ -365,16 +385,16 @@ msgstr ""
 "który możesz znaleźć logując się na swoje konto dewelopera Apple i "
 "przeglądając sekcję \"Membership\"."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:247
+#: ../../docs/getting_started/step_by_step/exporting.rst:261
 msgid "You must also provide icons and splash screen images as shown below:"
 msgstr ""
 "Należy również ustawić ikonę oraz ekran startowy, jak pokazano poniżej:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:251
+#: ../../docs/getting_started/step_by_step/exporting.rst:265
 msgid "Click \"Export Project\" and select a destination folder."
 msgstr "Kliknij \"Eksportuj projekt\" i wybierz folder docelowy."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:253
+#: ../../docs/getting_started/step_by_step/exporting.rst:267
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
@@ -382,7 +402,7 @@ msgstr ""
 "Po pomyślnym wyeksportowaniu projektu w wybranym miejscu zostaną utworzone "
 "następujące foldery i pliki:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:258
+#: ../../docs/getting_started/step_by_step/exporting.rst:272
 msgid ""
 "You can now open the project in Xcode and build the project for iOS. Xcode "
 "build procedure is beyond the scope of this tutorial. See https://help.apple."
@@ -392,11 +412,11 @@ msgstr ""
 "tworzenia w Xcode jest poza zakresem tego samouczka. Więcej informacji można "
 "znaleźć na stronie https://help.apple.com/xcode/mac/current/#/devc8c2a6be1 ."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:264
+#: ../../docs/getting_started/step_by_step/exporting.rst:278
 msgid "HTML5 (web)"
 msgstr "HTML5 (web)"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:266
+#: ../../docs/getting_started/step_by_step/exporting.rst:280
 msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
@@ -404,7 +424,7 @@ msgstr ""
 "Kliknij \"Eksportuj projekt\" w HTML5. Nie musimy zmieniać żadnych ustawień "
 "domyślnych."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:269
+#: ../../docs/getting_started/step_by_step/exporting.rst:283
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"
@@ -412,7 +432,7 @@ msgstr ""
 "Po zakończeniu eksportu zostanie wyświetlony folder zawierający następujące "
 "pliki:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:274
+#: ../../docs/getting_started/step_by_step/exporting.rst:288
 #, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
@@ -426,7 +446,7 @@ msgstr ""
 "Google, aby znaleźć sugestie dotyczące Twojego konkretnego systemu "
 "operacyjnego."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:279
+#: ../../docs/getting_started/step_by_step/exporting.rst:293
 msgid ""
 "Point your browser at the URL where you've placed the html file. You may "
 "have to wait a few moments while the game loads before you see the start "
@@ -436,7 +456,7 @@ msgstr ""
 "będziesz musiał poczekać kilka chwil podczas ładowania się gry, zanim "
 "zobaczysz ekran startowy."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:284
+#: ../../docs/getting_started/step_by_step/exporting.rst:298
 msgid ""
 "The console window beneath the game tells you if anything goes wrong. You "
 "can disable it by setting \"Export With Debug\" off when you export the "
@@ -446,7 +466,7 @@ msgstr ""
 "wyłączyć, ustawiając opcję \"Eksportuj z Debugowaniem\" na wyłączony przy "
 "eksportowaniu projektu."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:287
+#: ../../docs/getting_started/step_by_step/exporting.rst:301
 #, fuzzy
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "

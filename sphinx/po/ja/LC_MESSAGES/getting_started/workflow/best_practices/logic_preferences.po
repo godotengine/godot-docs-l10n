@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,20 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:4
 msgid "Logic preferences"
-msgstr ""
+msgstr "ロジックの設定"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:6
 msgid ""
 "Ever wondered whether one should approach problem X with strategy Y or Z? "
 "This article covers a variety of topics related to these dilemmas."
 msgstr ""
+"問題Xにアプローチするときに、戦略をYにするかZするかについて悩んだことはありま"
+"せんか？この記事では、これらのジレンマに関連するさまざまなトピックについて説"
+"明します。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:10
 msgid "Loading vs. preloading"
-msgstr ""
+msgstr "ロード(load) 対 プリロード(preload)"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:12
 msgid ""
@@ -38,6 +41,10 @@ msgid ""
 "possible to front-load the \"loading\" operations and avoid loading "
 "resources while in the middle of performance-sensitive code."
 msgstr ""
+"GDScript には、グローバル :ref:`preload <class_@GDScript_method_preload>` メ"
+"ソッドが存在します。\"読み込み\" 処理を前もって行い、パフォーマンスに敏感な"
+"コードの途中で、リソースの読み込が発生することを回避するために、できるだけ早"
+"くリソースを読み込みます。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:17
 msgid ""
@@ -48,12 +55,20 @@ msgid ""
 "`ResourceLoader.load(path) <class_ResourceLoader_method_load>` which is "
 "accessible to *all* scripting languages."
 msgstr ""
+"それに対応する :ref:`load <class_ @ GDScript_method_load>` メソッドは、loadス"
+"テートメントに到達したときにのみリソースをロードします。つまり、リソースをイ"
+"ンプレースでロードするため、速度低下を引き起こす可能性があり、敏感なプロセス"
+"の途中でも発生します。\\ ``load`` 関数は、\\ :ref:`ResourceLoader.load(path) "
+"<class_ResourceLoader_method_load>` のエイリアスでもあり、\\ *すべての*\\ ス"
+"クリプト言語からアクセスできます。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:24
 msgid ""
 "So, when exactly does preloading occur versus loading, and when should one "
 "use either? Let's see an example:"
 msgstr ""
+"それでは、load と比較して preload が発生するのは正確にはいつですか？例を見て"
+"みましょう:"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:88
 msgid ""
@@ -62,6 +77,9 @@ msgid ""
 "wish for it. To distinguish these situations, there are a few things one can "
 "consider:"
 msgstr ""
+"preload により、スクリプトは、スクリプトを読み込んだ瞬間にすべての読み込みを"
+"処理できます。preload は便利ですが、それを望まない場合もあります。これらの状"
+"況を区別するために、考慮できることがいくつかあります。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:93
 msgid ""
@@ -70,6 +88,10 @@ msgid ""
 "does not expect. This could lead to unintentional, variable-length load "
 "times on top of the original script's load operations."
 msgstr ""
+"スクリプトがいつロードされるかを判断できない場合、リソース、特にシーンまたは"
+"スクリプトをプリロードすると、予期しない追加のロードが発生する可能性がありま"
+"す。これにより、元のスクリプトのロード操作に加えて、意図しない可変長のロード"
+"時間が発生する可能性があります。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:98
 msgid ""
@@ -77,6 +99,9 @@ msgid ""
 "initialization), then preloading the value has no meaning. This point isn't "
 "a significant factor if one intends to always create the script on its own."
 msgstr ""
+"シーンのエクスポートされた初期化など、他の何かが値を置き換えることができる場"
+"合、値をプリロードしても意味がありません。スクリプトを常に独自に作成する場"
+"合、この点は重要な要素ではありません。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:102
 msgid ""
@@ -84,6 +109,9 @@ msgid ""
 "then using a preloaded constant is often the best course of action. However, "
 "in exceptional cases, one my wish not to do this:"
 msgstr ""
+"別のクラスリソース(スクリプトまたはシーン)のみを「インポート」したい場合は、"
+"多くの場合、プリロードされた定数を使用することが最善のアクションです。ただ"
+"し、例外的なケースでは、これを行いたくない場合もあります:"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:106
 msgid ""
@@ -91,6 +119,9 @@ msgid ""
 "instead, initialized either using an ``export`` or a ``load`` (and perhaps "
 "not even initialized until later)."
 msgstr ""
+"'imported' クラスが変更される可能性がある場合は、代わりにプロパティとして "
+"``export`` または ``load`` を使用して初期化する必要があります(そして、後で初"
+"期化されることはありません)。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:110
 msgid ""
@@ -103,10 +134,17 @@ msgid ""
 "(which, as a :ref:`Reference <class_Reference>`-extending type, will cause "
 "the resources to delete themselves from memory)."
 msgstr ""
+"スクリプトが非常に多くの依存関係を必要とし、あまり多くのメモリを消費したくな"
+"い場合、状況の変化に応じて実行時にさまざまな依存関係をロードおよびアンロード"
+"することができます。リソースを定数にプリロードする場合、これらのリソースをア"
+"ンロードする唯一の方法は、スクリプト全体をアンロードすることです。それらが代"
+"わりにプロパティとしてロードされた場合、それらを ``null`` に設定し、リソース"
+"へのすべての参照を完全に削除できます(これは :ref:`Reference "
+"<class_Reference>` 拡張型として、リソースがメモリから自分自身を削除します)。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:121
 msgid "Large levels: static vs. dynamic"
-msgstr ""
+msgstr "大きなレベル(ステージ): 静的レベル 対 動的レベル"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:123
 msgid ""
@@ -114,6 +152,9 @@ msgid ""
 "Should they create the level as one static space? Or should they load the "
 "level in pieces and shift the world's content as needed?"
 msgstr ""
+"大きなレベルを作成している場合、どの状況が最も適切ですか？レベルを1つの静的な"
+"空間として作成する必要がありますか？または、レベルを断片的にロードし、必要に"
+"応じてワールドのコンテンツをシフトする必要がありますか？"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:127
 msgid ""
@@ -121,6 +162,9 @@ msgid ""
 "dilemma associated with the two options is one of the age-old programming "
 "choices: does one optimize memory over speed, or vice versa?"
 msgstr ""
+"そうですね、簡単な答えは、「パフォーマンスにそれが必要な場合」です。2つのオプ"
+"ションに関連するジレンマは、昔からのプログラミングの選択肢の1つです: 例えば次"
+"のような。速度よりメモリの最適化を優先するか、それとも逆か？"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:131
 msgid ""
@@ -129,6 +173,10 @@ msgid ""
 "Wasting users' RAM leads to programs running slow or outright crashing from "
 "everything else the computer tries to do at the same time."
 msgstr ""
+"素朴な答えは、すべてを一度にロードする静的レベルを使用することです。ただし、"
+"プロジェクトによっては、大量のメモリを消費する可能性があります。ユーザーのRAM"
+"を浪費すると、コンピュータが同時に実行しようとする他のすべてのプログラムが、"
+"低速化または完全にクラッシュしてしまいます。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:136
 msgid ""
@@ -138,6 +186,11 @@ msgid ""
 "Games with large and varied environments or procedurally generated elements "
 "often implement these strategies to avoid wasting memory."
 msgstr ""
+"何があっても、大きなシーンを小さなシーンに分割する必要があります(資産の再利用"
+"性を高めるため)。開発者は、リソースとノードの作成/ロード、削除/アンロードをリ"
+"アルタイムで管理するノードを設計できます。大規模で多様な環境や手続き的に生成"
+"された要素を持つゲームは、多くの場合、メモリの無駄を避けるためにこれらの戦略"
+"を実装します。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:142
 msgid ""
@@ -146,14 +199,18 @@ msgid ""
 "isn't careful, they can develop a system that bloats the technical debt of "
 "the application."
 msgstr ""
+"裏を返せば、動的システムのコーディングはより複雑です。つまり、より多くのプロ"
+"グラムされたロジックを使用するため、エラーやバグが発生する可能性があります。"
+"注意しないと、アプリケーションの技術的負債を膨らませるシステムを開発してしま"
+"います。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:147
 msgid "As such, the best options would be..."
-msgstr ""
+msgstr "そのため、最良のオプションは..."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:149
 msgid "To use a static level for smaller games."
-msgstr ""
+msgstr "小さなゲームには静的レベルを使用する。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:151
 msgid ""
@@ -162,6 +219,10 @@ msgid ""
 "time, so as to improve usability and stability, then it could evolve into a "
 "reliable tool across projects."
 msgstr ""
+"中規模または大規模のゲームでは、時間/リソースが確保できる場合は、ノードとリ"
+"ソースの管理をコーディングできるライブラリまたはプラグインを作成します。使い"
+"やすさと安定性を改善するために時間の経過とともに改良されれば、プロジェクト全"
+"体で信頼性の高いツールに進化する可能性があります。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:156
 msgid ""
@@ -169,6 +230,10 @@ msgid ""
 "skills, but not the time or resources to refine the code (game's gotta get "
 "done). Could potentially refactor later to outsource the code into a plugin."
 msgstr ""
+"コーディングスキルはあるが、コードを絞り込むための時間やリソースは持っていな"
+"いため、中規模/大規模ゲームの動的ロジックをコーディングします(ゲームを完成さ"
+"せる必要があるので)。後でリファクタリングして、コードをプラグインにアウトソー"
+"スできます。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:161
 msgid ""
@@ -176,3 +241,5 @@ msgid ""
 "please see the :ref:`\"Change scenes manually\" "
 "<doc_change_scenes_manually>` documentation."
 msgstr ""
+"実行時にシーンを入れ替えるさまざまな方法の例については、\\ :ref:`「手動でシー"
+"ンを変更する」 <doc_change_scenes_manually>` ドキュメントを参照してください。"

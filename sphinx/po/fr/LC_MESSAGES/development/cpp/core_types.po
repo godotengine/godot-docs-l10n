@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:4
 msgid "Core types"
-msgstr ""
+msgstr "Types cœur"
 
 #: ../../docs/development/cpp/core_types.rst:6
 msgid ""
 "Godot has a rich set of classes and templates that compose its core, and "
 "everything is built upon them."
 msgstr ""
+"Godot a une base riche de classes et templates qui forment son cœur, et tout "
+"est construit autours d'eux."
 
 #: ../../docs/development/cpp/core_types.rst:9
 msgid ""
@@ -43,6 +45,10 @@ msgid ""
 "Reinventing the wheel for those is not fun, as it makes code more difficult "
 "to read."
 msgstr ""
+"Godot utilise les types standard du C98, comme ``uint8_t``, ``uint32_t``, "
+"``int64_t``, etc. Ces derniers sont aujourd'hui supporté par tout les "
+"compilateurs. Réinventer la roue n'est ici pas amusant, en plus de rentre le "
+"code difficile à lire."
 
 #: ../../docs/development/cpp/core_types.rst:20
 msgid ""
@@ -52,12 +58,20 @@ msgid ""
 "at least a 32 bits bus and can do such operations in one cycle. It makes "
 "code more readable too."
 msgstr ""
+"En général, on ne prend pas soin à utiliser le type le plus performant pour "
+"une tâche donnée, sauf s'il s'agit d'utiliser de grande structures ou de "
+"tableaux. ``int`` est utilisé dans la majorité du code, car aujourd'hui tout "
+"les appareilles fonctionnement au minimum avec un bus de 32bits et peuvent "
+"calculer de telles opérations en un cycle. Cela rend aussi le code plus "
+"lisible."
 
 #: ../../docs/development/cpp/core_types.rst:26
 msgid ""
 "For files or memory sizes, ``size_t`` is used, which is warranted to be 64 "
 "bits."
 msgstr ""
+"Pour les fichiers ou des tailles de mémoire on utilise ``size_t``, il "
+"garranti d'être sur 64bits."
 
 #: ../../docs/development/cpp/core_types.rst:29
 msgid ""
@@ -76,17 +90,19 @@ msgstr ""
 #: ../../docs/development/cpp/core_types.rst:220
 #: ../../docs/development/cpp/core_types.rst:233
 msgid "References:"
-msgstr ""
+msgstr "Références :"
 
 #: ../../docs/development/cpp/core_types.rst:37
 msgid ""
 "`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
 "typedefs.h>`__"
 msgstr ""
+"`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
+"typedefs.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:40
 msgid "Memory model"
-msgstr ""
+msgstr "Modèle mémoire"
 
 #: ../../docs/development/cpp/core_types.rst:42
 msgid ""
@@ -95,6 +111,12 @@ msgid ""
 "more resources the OS will swap out the inactive ones. Other architectures "
 "(like mobile or consoles) are in general more limited."
 msgstr ""
+"Les ordinateurs sont de magnifiques architectures. Ces derniers ont souvent "
+"des gigabytes de mémoire vive (RAM), des terabytes de stockage et des "
+"gigahertz de processeur, lorsqu'une application a besoin de plus de "
+"ressources le système d'exploitation lui assignera les ressources inactives. "
+"D'autres architectures (comme les téléphones ou les consoles) sont en "
+"général plus limités."
 
 #: ../../docs/development/cpp/core_types.rst:47
 msgid ""
@@ -112,6 +134,12 @@ msgid ""
 "Modern operating systems use paged memory, which helps mitigate the problem "
 "of segmentation but doesn't solve it."
 msgstr ""
+"La segmentation crée lentement des troues qui sont trop petit pour la "
+"plupart de allocations, alors la mémoire est gaspillé. Il y a beaucoup de "
+"discussion autours du tas (heap) et de la segmentation, donc ce sujet ne "
+"sera pas plus développé ici. Les systèmes d'exploitation modernes répondent "
+"au problème en utilisant de la mémoire virtuelle paginé, cela aide mais "
+"cependant ne résout pas le problème ."
 
 #: ../../docs/development/cpp/core_types.rst:58
 msgid ""
@@ -133,41 +161,57 @@ msgid ""
 "rearranged and compacted on demand. Depending on the need of the game, the "
 "programmer can configure the dynamic memory pool size."
 msgstr ""
+"Godot garantie que tout les objets qui sont alloués dynamiquement sont petit "
+"(tout au plus quelques kb). Mais que se passe-t-il si une allocation est "
+"trop grande (comme une image, un maillage gémotrique ou encore un grand "
+"tableau) ? Dans ce cas Godot peut utiliser des zones mémoires (memory pool). "
+"Cette mémoire a besoin d'être vérouiller pour être accéder, et si une "
+"allocation manque de mémoire alors la zone sera réorganisé et compacté. "
+"dépendamment des besoins du jeu, le programmeur peut configurer la taille "
+"dynamique de la zone mémoire."
 
 #: ../../docs/development/cpp/core_types.rst:74
 msgid "Allocating memory"
-msgstr ""
+msgstr "Allouer de la mémoire"
 
 #: ../../docs/development/cpp/core_types.rst:76
+#, fuzzy
 msgid ""
 "Godot has many tools for tracking memory usage in a game, especially during "
 "debug. Because of this, the regular C and C++ library calls should not be "
 "used. Instead, a few other ones are provided."
 msgstr ""
+"Godot a de nombreux outils pour traquer l'utilisation de la mémoire dans un "
+"jeu, spécialement lors du débogage. De ce fait, les allocateurs standard de "
+"C et C++ ne doivent pas être utilisés, d'autres sont fournis."
 
 #: ../../docs/development/cpp/core_types.rst:80
 msgid "For C-style allocation, Godot provides a few macros:"
-msgstr ""
+msgstr "Pour les allocations style C, Godot fourni quelques macros :"
 
 #: ../../docs/development/cpp/core_types.rst:88
 msgid ""
 "These are equivalent to the usual malloc, realloc, free of the standard C "
 "library."
 msgstr ""
+"Elles sont équivalentes au traditionnel malloc, realloc et free de la "
+"librairie standard de C."
 
 #: ../../docs/development/cpp/core_types.rst:91
 msgid "For C++-style allocation, special macros are provided:"
-msgstr ""
+msgstr "Pour les allocations style C++, des macros spéciales sont fournis :"
 
 #: ../../docs/development/cpp/core_types.rst:101
 msgid "which are equivalent to new, delete, new[] and delete[]."
-msgstr ""
+msgstr "qui sont équivalente à new, delete, new[] et delete[]."
 
 #: ../../docs/development/cpp/core_types.rst:103
 msgid ""
 "memnew/memdelete also use a little C++ magic and notify Objects right after "
 "they are created, and right before they are deleted."
 msgstr ""
+"memnew/memdelete utilise aussi un peu de lmagie du C++ pour notifier les "
+"Objets juste après leur création et juste avant leur destruction."
 
 #: ../../docs/development/cpp/core_types.rst:106
 msgid ""
@@ -175,12 +219,17 @@ msgid ""
 "standard vector class, and is very similar to vector in the C++ standard "
 "library. To create a PoolVector buffer, use this:"
 msgstr ""
+"Pour de la mémoire dynamique, la classe template PoolVector est fourni. "
+"PoolVector est fourni comme un vecteur classique et il est très similaire à "
+"std::vector de C++. Pour construire un buffer PoolVector utilisez cela :"
 
 #: ../../docs/development/cpp/core_types.rst:114
 msgid ""
 "PoolVector can be accessed using the [] operator and a few helpers exist for "
 "this:"
 msgstr ""
+"PoolVector peut être consulté en utilisant l'opérateur [] et quelques "
+"helpers existent pour cela :"
 
 #: ../../docs/development/cpp/core_types.rst:126
 msgid ""
@@ -189,12 +238,19 @@ msgid ""
 "dynamic memory operations, as read() and write() are too slow for a large "
 "amount of accesses."
 msgstr ""
+"Ces opérations permettent des lectures/écriture rapide de PoolVectors et de "
+"le regarder vérouiller jusqu'à qu'elles sortent de la portée (scope). "
+"Cependant, les PoolVectors devraient être utilisé pour de petite oéprations "
+"dynamique de mémoire, car read() et write() sont trop lent pour un grand "
+"nombre d'accès."
 
 #: ../../docs/development/cpp/core_types.rst:134
 msgid ""
 "`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
 "memory.h>`__"
 msgstr ""
+"`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
+"memory.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:135
 msgid ""
@@ -206,11 +262,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:138
 msgid "Containers"
-msgstr ""
+msgstr "Conteneurs"
 
 #: ../../docs/development/cpp/core_types.rst:140
 msgid "Godot provides also a set of common containers:"
-msgstr ""
+msgstr "Godot propose aussi un ensemble de conteneurs classiques :"
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
@@ -218,7 +274,7 @@ msgstr "Vecteur"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
-msgstr ""
+msgstr "List"
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
@@ -226,7 +282,7 @@ msgstr "Définir"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
-msgstr ""
+msgstr "Map"
 
 #: ../../docs/development/cpp/core_types.rst:147
 msgid ""
@@ -235,10 +291,14 @@ msgid ""
 "symbols and code. List, Set and Map can be iterated using pointers, like "
 "this:"
 msgstr ""
+"Ils sont simple et fait pour être le plus minimal possible, comme les "
+"templates de C++ sont souveent inliné et rendent les binaires bien plus "
+"lourd, autant en symbols de débug que de code. List, Set et Map peuvent être "
+"itérés en utilisant des pointeurs, comme cela :"
 
 #: ../../docs/development/cpp/core_types.rst:158
 msgid "The Vector<> class also has a few nice features:"
-msgstr ""
+msgstr "La classe template Vector a aussi quelques cool fonctionnalités :"
 
 #: ../../docs/development/cpp/core_types.rst:160
 msgid ""
@@ -251,28 +311,36 @@ msgid ""
 "It supports multi-threading, by using atomic operations on the reference "
 "counter."
 msgstr ""
+"Il supporte le mutli-threading, en utilisant des opérations atomiques sur le "
+"compteur de référence."
 
 #: ../../docs/development/cpp/core_types.rst:168
 msgid ""
 "`core/vector.h <https://github.com/godotengine/godot/blob/master/core/vector."
 "h>`__"
 msgstr ""
+"`core/vector.h <https://github.com/godotengine/godot/blob/master/core/vector."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:169
 msgid ""
 "`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
 "h>`__"
 msgstr ""
+"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:170
 msgid ""
 "`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
 msgstr ""
+"`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:171
 msgid ""
 "`core/map.h <https://github.com/godotengine/godot/blob/master/core/map.h>`__"
 msgstr ""
+"`core/map.h <https://github.com/godotengine/godot/blob/master/core/map.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:174
 msgid "String"
@@ -285,16 +353,22 @@ msgid ""
 "and utf8 parsing/extracting, as well as helpers for conversion and "
 "visualization."
 msgstr ""
+"Godot fournit aussi une classe String. Cette classe possède un grand nombre "
+"de fonctionnalités comme : un support de l'Unicode dans toute les fonctions "
+"et du parsing/extraction d'utf8, de même que les helpers pour la conversion "
+"et la visualisation."
 
 #: ../../docs/development/cpp/core_types.rst:184
 msgid ""
 "`core/ustring.h <https://github.com/godotengine/godot/blob/master/core/"
 "ustring.h>`__"
 msgstr ""
+"`core/ustring.h <https://github.com/godotengine/godot/blob/master/core/"
+"ustring.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:187
 msgid "StringName"
-msgstr ""
+msgstr "StringName"
 
 #: ../../docs/development/cpp/core_types.rst:189
 msgid ""
@@ -303,12 +377,19 @@ msgid ""
 "StringNames are useful for using strings as identifier, as comparing them is "
 "basically comparing a pointer."
 msgstr ""
+"Les StringNames sont comme une String, sauf qu'elles sont unique. Créer une "
+"StringName depuis une chaîne de caractères résulte en un seul pointeur en "
+"interne pour toute les chaînes égales. les StringNames sont utiles pour "
+"utiliser une chaîne de caractère comme un indentificateur, vu que les "
+"comparer revient à comparer des pointeurs."
 
 #: ../../docs/development/cpp/core_types.rst:194
 msgid ""
 "Creation of a StringName (especially a new one) is slow, but comparison is "
 "fast."
 msgstr ""
+"La construction d'un StringName (surtout un nouveau) est lent, mais la "
+"comparaison est rapide."
 
 #: ../../docs/development/cpp/core_types.rst:200
 msgid ""
@@ -335,13 +416,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:214
 msgid "NodePath"
-msgstr ""
+msgstr "NodePath"
 
 #: ../../docs/development/cpp/core_types.rst:216
 msgid ""
 "This is a special datatype used for storing paths in a scene tree and "
 "referencing them fast."
 msgstr ""
+"C'est un type spécial qui est utilisé pour stocker des echemins dans une "
+"scène arbre et les référencer rapidement."
 
 #: ../../docs/development/cpp/core_types.rst:222
 msgid ""
@@ -366,3 +449,4 @@ msgstr ""
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 msgstr ""
+"`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"

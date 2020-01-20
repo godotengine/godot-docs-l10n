@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,14 +34,12 @@ msgstr ""
 "期化時間は非常に速く、このワークフローに適しています。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
-#, fuzzy
 msgid "Command line reference"
-msgstr "コマンドライン"
+msgstr "コマンドライン リファレンス"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
-#, fuzzy
 msgid "**General options**"
-msgstr "一般的なプロパティ"
+msgstr "**一般的なオプション**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:20
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:34
@@ -49,7 +47,7 @@ msgstr "一般的なプロパティ"
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:90
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:120
 msgid "Command"
-msgstr ""
+msgstr "コマンド"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:20
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:34
@@ -60,109 +58,117 @@ msgid "Description"
 msgstr "説明"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
-#, fuzzy
 msgid "``-h``, ``--help``, ``/?``"
-msgstr "``*`` ``/`` ``%``"
+msgstr "\\ ``-h``, ``--help``, ``/?``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
-#, fuzzy
 msgid "Display the list of command line options."
-msgstr "コマンドラインツールをダウンロード"
+msgstr "コマンド ライン オプションの一覧を表示します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "``--version``"
-msgstr ""
+msgstr "\\ ``--version``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "Display the version string."
-msgstr ""
+msgstr "バージョン文字列を表示します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:26
 msgid "``-v``, ``--verbose``"
-msgstr ""
+msgstr "\\ ``-v``, ``--verbose``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:26
 msgid "Use verbose stdout mode."
-msgstr ""
+msgstr "詳細な標準出力モードを使用します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "``--quiet``"
-msgstr ""
+msgstr "\\ ``--quiet``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr ""
+"静かなモード、標準出力メッセージを出力しません。エラーは引き続き表示されま"
+"す。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:31
-#, fuzzy
 msgid "**Run options**"
-msgstr "**説明**"
+msgstr "**実行オプション**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid "``-e``, ``--editor``"
-msgstr ""
+msgstr "\\ ``-e``, ``--editor``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid ""
 "Start the editor instead of running the scene (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"シーンを実行する代わりにエディターを起動します(:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` を有効にする必要があります)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid "``-p``, ``--project-manager``"
-msgstr ""
+msgstr "\\ ``-p``, ``--project-manager``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid ""
 "Start the project manager, even if a project is auto-detected (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"プロジェクトが自動検出された場合でも、プロジェクトマネージャを起動します(:"
+"ref:`tools <doc_introduction_to_the_buildsystem_tools>` を有効にする必要があ"
+"ります)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 msgid "``-q``, ``--quit``"
-msgstr ""
+msgstr "\\ ``-q``, ``--quit``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 msgid "Quit after the first iteration."
-msgstr ""
+msgstr "最初のイテレーションの後に終了します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid "``-l <locale>``, ``--language <locale>``"
-msgstr ""
+msgstr "\\ ``-l <locale>``, ``--language <locale>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid ""
 "Use a specific locale (<locale> being a two-letter code). See :ref:"
 "`doc_locales` for more details."
 msgstr ""
+"特定のロケールを使用します(<locale>は2文字のコードです）。詳細については、 :"
+"ref:`doc_locales` を参照してください。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "``--path <directory>``"
-msgstr ""
+msgstr "\\ ``--path <directory>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "Path to a project (<directory> must contain a 'project.godot' file)."
 msgstr ""
+"プロジェクトへのパス (<directory>には 'project.godot' ファイルが含まれている"
+"必要があります)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:46
 msgid "``-u``, ``--upwards``"
-msgstr ""
+msgstr "\\ ``-u``, ``--upwards``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:46
 msgid "Scan folders upwards for 'project.godot' file."
-msgstr ""
+msgstr "'project.godot' ファイルのフォルダを上方向にスキャンします。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "``--main-pack <file>``"
-msgstr ""
+msgstr "\\ ``--main-pack <file>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "Path to a pack (.pck) file to load."
-msgstr ""
+msgstr "読み込むパック (.pck) ファイルへのパス。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:50
 msgid "``--render-thread <mode>``"
-msgstr ""
+msgstr "\\ ``--render-thread <mode>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:50
 msgid ""
@@ -170,107 +176,114 @@ msgid ""
 "<class_ProjectSettings_property_rendering/threads/thread_model>` for more "
 "details."
 msgstr ""
+"レンダー スレッド モード ('unsafe', 'safe', 'separate')。詳細については、 :"
+"ref:`Thread Model <class_ProjectSettings_property_rendering/threads/"
+"thread_model>` を参照してください。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid "``--remote-fs <address>``"
-msgstr ""
+msgstr "\\ ``--remote-fs <address>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
-msgstr ""
+msgstr "リモート ファイルシステム (``<host/IP>[:<port>]`` アドレス)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:54
 msgid "``--audio-driver <driver>``"
-msgstr ""
+msgstr "\\ ``--audio-driver <driver>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:54
 msgid ""
 "Audio driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
+"オーディオ ドライバー。最初に ``--help`` を使用して、使用可能なドライバーの一"
+"覧を表示します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:56
 msgid "``--video-driver <driver>``"
-msgstr ""
+msgstr "\\ ``--video-driver <driver>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:56
 msgid ""
 "Video driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
+"ビデオドライバー。最初に ``--help`` を使用して、使用可能なドライバーの一覧を"
+"表示します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:59
-#, fuzzy
 msgid "**Display options**"
-msgstr "**説明**"
+msgstr "**表示オプション**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:64
 msgid "``-f``, ``--fullscreen``"
-msgstr ""
+msgstr "\\ ``-f``, ``--fullscreen``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:64
 msgid "Request fullscreen mode."
-msgstr ""
+msgstr "全画面表示モードを指定します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "``-m``, ``--maximized``"
-msgstr ""
+msgstr "\\ ``-m``, ``--maximized``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "Request a maximized window."
-msgstr ""
+msgstr "ウィンドウの最大化を指定します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:68
 msgid "``-w``, ``--windowed``"
-msgstr ""
+msgstr "\\ ``-w``, ``--windowed``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:68
 msgid "Request windowed mode."
-msgstr ""
+msgstr "ウィンドウ モードを指定します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "``-t``, ``--always-on-top``"
-msgstr ""
+msgstr "\\ ``-t``, ``--always-on-top``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "Request an always-on-top window."
-msgstr ""
+msgstr "常時最前面 ウィンドウを指定します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "``--resolution <W>x<H>``"
-msgstr ""
+msgstr "\\ ``--resolution <W>x<H>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "Request window resolution."
-msgstr ""
+msgstr "ウィンドウの解像度を指定します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "``--position <X>,<Y>``"
-msgstr ""
+msgstr "\\ ``--position <X>,<Y>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "Request window position."
-msgstr ""
+msgstr "ウィンドウの位置を指定します。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
 msgid "``--low-dpi``"
-msgstr ""
+msgstr "\\ ``--low-dpi``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
 msgid "Force low-DPI mode (macOS and Windows only)."
-msgstr ""
+msgstr "低DPIモードを強制します (macOS および Windows のみ)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid "``--no-window``"
-msgstr ""
+msgstr "\\ ``--no-window``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid ""
 "Disable window creation (Windows only). Useful together with ``--script``."
 msgstr ""
+"ウィンドウの作成を無効にします (Windows のみ)。 ``-script`` と併用すると便利"
+"です。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:81
-#, fuzzy
 msgid "**Debug options**"
-msgstr "**説明**"
+msgstr "**デバッグオプション**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid ""
@@ -278,133 +291,142 @@ msgid ""
 "(they require ``debug`` or ``release_debug`` build targets, see :ref:"
 "`doc_introduction_to_the_buildsystem_target` for more details)."
 msgstr ""
+"デバッグ オプションは、エディタおよびデバッグ エクスポート テンプレートでのみ"
+"使用できます (これらには ``debug`` または ``release_debug`` ビルド ターゲット"
+"が必要です、詳細については、 :ref:"
+"`doc_introduction_to_the_buildsystem_target` を参照してください)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
 msgid "``-d``, ``--debug``"
-msgstr ""
+msgstr "\\ ``-d``, ``--debug``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
 msgid "Debug (local stdout debugger)."
-msgstr ""
+msgstr "デバッグ (ローカル stdout デバッガー)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid "``-b``, ``--breakpoints``"
-msgstr ""
+msgstr "\\ ``-b``, ``--breakpoints``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid ""
 "Breakpoint list as source::line comma-separated pairs, no spaces (use %%20 "
 "instead)."
 msgstr ""
+"ブレークポイントとしてソースの行番号をカンマで区切って列挙します。スペースは"
+"使えません(代わりに%%20を使用できます)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "``--profiling``"
-msgstr ""
+msgstr "\\ ``--profiling``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Enable profiling in the script debugger."
-msgstr ""
+msgstr "スクリプト デバッガーでプロファイリングを有効にします。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "``--remote-debug <address>``"
-msgstr ""
+msgstr "\\ ``--remote-debug <address>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "Remote debug (``<host/IP>:<port>`` address)."
-msgstr ""
+msgstr "リモート・デバッグ (addressは\\ ``<ホスト/IP>:<ポート>``\\ )."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "``--debug-collisions``"
-msgstr ""
+msgstr "\\ ``--debug-collisions``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "Show collision shapes when running the scene."
-msgstr ""
+msgstr "シーンを実行する際にコリジョン形状を表示する。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 msgid "``--debug-navigation``"
-msgstr ""
+msgstr "\\ ``--debug-navigation``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 msgid "Show navigation polygons when running the scene."
-msgstr ""
+msgstr "シーンを実行する際にナビゲーション・ポリゴンを表示する。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:104
 msgid "``--frame-delay <ms>``"
-msgstr ""
+msgstr "\\ ``--frame-delay <ms>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:104
 msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
-msgstr ""
+msgstr "高CPU負荷の再現 (毎フレームごとに <ms> ミリ秒遅らせる)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:106
 msgid "``--time-scale <scale>``"
-msgstr ""
+msgstr "\\ ``--time-scale <scale>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:106
 msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
-msgstr ""
+msgstr "タイムスケールの強制 (値が大きいほど早く、1.0が標準)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:108
 msgid "``--disable-render-loop``"
-msgstr ""
+msgstr "\\ ``--disable-render-loop``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:108
 msgid ""
 "Disable render loop so rendering only occurs when called explicitly from "
 "script."
 msgstr ""
+"レンダリングのループの無効化。スクリプトにて明示的に呼び出した時にのみレン"
+"ダーする。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "``--disable-crash-handler``"
-msgstr ""
+msgstr "\\ ``--disable-crash-handler``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "Disable crash handler when supported by the platform code."
 msgstr ""
+"プラットフォーム・コードが対応している場合もクラッシュ・ハンドラを無効にす"
+"る。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:112
 msgid "``--fixed-fps <fps>``"
-msgstr ""
+msgstr "\\ ``--fixed-fps <fps>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:112
 msgid ""
 "Force a fixed number of frames per second. This setting disables real-time "
 "synchronization."
-msgstr ""
+msgstr "フレーム毎秒の固定。この設定によりリアルタイム同期は無効化。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "``--print-fps``"
-msgstr ""
+msgstr "\\ ``--print-fps``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "Print the frames per second to the stdout."
-msgstr ""
+msgstr "stdoutにフレーム毎秒を出力。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "**Standalone tools**"
-msgstr ""
+msgstr "**スタンドアロンツール**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
 msgid "``-s <script>``, ``--script <script>``"
-msgstr ""
+msgstr "\\ ``-s <script>``\\ 、\\ ``--script <script>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
-#, fuzzy
 msgid "Run a script."
-msgstr "スクリプトの実行"
+msgstr "スクリプトの実行。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "``--check-only``"
-msgstr ""
+msgstr "\\ ``--check-only``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "Only parse for errors and quit (use with ``--script``)."
-msgstr ""
+msgstr "エラー分析のみ行って終了(``--script``\\ と同時に使用)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:126
 msgid "``--export <target>``"
-msgstr ""
+msgstr "\\ ``--export <target>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:126
 msgid ""
@@ -412,20 +434,26 @@ msgid ""
 "path ends with .pck or .zip (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"指定されたエクスポート・ターゲットに向けてプロジェクトをエクスポートする。パ"
+"スが .pck あるいは .zip で終わっている場合、メインのパックのみエクスポートす"
+"る (\\ :ref:`tools <doc_introduction_to_the_buildsystem_tools>`\\ を有効にす"
+"る必要あり)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid "``--export-debug <target>``"
-msgstr ""
+msgstr "\\ ``--export-debug <target>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid ""
 "Like ``--export``, but use debug template (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"\\ ``--export``\\ と同じだが、デバッグ・テンプレートを使用する。(\\ :ref:"
+"`tools <doc_introduction_to_the_buildsystem_tools>`\\ を有効にする必要あり)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid "``--doctool <path>``"
-msgstr ""
+msgstr "\\ ``--doctool <path>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid ""
@@ -433,46 +461,59 @@ msgid ""
 "existing files are found (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"指定した <path> にエンジンのAPIリファレンスをXML形式で出力する。すでにファイ"
+"ルが存在する場合は、それに結合する。(\\ :ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>`\\ を有効にする必要あり)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid "``--no-docbase``"
-msgstr ""
+msgstr "\\ ``--no-docbase``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid ""
 "Disallow dumping the base types (used with ``--doctool``, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"基本タイプのダンプをしない (``--doctool``\\ と共に使用。\\ :ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>`\\ を有効にする必要あり)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
 msgid "``--build-solutions``"
-msgstr ""
+msgstr "\\ ``--build-solutions``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
 msgid ""
 "Build the scripting solutions (e.g. for C# projects, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"スクリプトのソリューションをビルドする (例えばC#プロジェクトのために。\\ :"
+"ref:`tools <doc_introduction_to_the_buildsystem_tools>`\\ を有効にする必要あ"
+"り)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:136
 msgid "``--gdnative-generate-json-api``"
-msgstr ""
+msgstr "\\ ``--gdnative-generate-json-api``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:136
 msgid ""
 "Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"GDNativeバインディング用のGodot APIのJSONダンプを生成します (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` を有効にする必要があります)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
 msgid "``--test <test>``"
-msgstr ""
+msgstr "\\ ``--test <test>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
 msgid ""
 "Run a unit test. Use ``--help`` first to display the list of tests. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"単体テストを実行します。最初に ``--help`` を使用して、テストの一覧を表示しま"
+"す。(:ref:`tools <doc_introduction_to_the_buildsystem_tools>` を有効にする必"
+"要があります)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:142
 msgid "Path"
@@ -485,7 +526,7 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
-"``godot``と入力すればどこからでも簡単に実行できるように、godotバイナリをPATH"
+"``godot`` と入力すればどこからでも簡単に実行できるように、godotバイナリをPATH"
 "環境変数に含めることをお勧めします。Linuxでは、 ``/usr/local/bin`` にgodotバ"
 "イナリを配置し、それが ``godot`` と呼ばれていることを確認することで、これを行"
 "うことができます。"

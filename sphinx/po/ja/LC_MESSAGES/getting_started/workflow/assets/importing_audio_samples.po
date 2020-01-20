@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "オーディオサンプルのインポート"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
 msgid "Why import?"
-msgstr ""
+msgstr "インポートする理由は?"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
 msgid ""
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
-msgstr ""
+msgstr "それぞれに異なる利点があります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:14
 msgid ""
@@ -44,12 +44,17 @@ msgid ""
 "play back (hundreds of simultaneous voices in this format are fine), but "
 "take up significant space."
 msgstr ""
+"WAVファイルは非圧縮データまたは軽い圧縮のデータを使用し、再生時にさほどCPUの"
+"処理能力を要求しませんが(この形式の何百もの同時音声でも問題ありません)、かな"
+"りのスペースを占有します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:15
 msgid ""
 "Ogg Vorbis files use a stronger compression that results in much smaller "
 "file size, but require significantly more processing power to play back."
 msgstr ""
+"Ogg Vorbisファイルは強力な圧縮を使用しているため、ファイルサイズははるかに小"
+"さくなりますが、再生にはかなり多くの処理能力が必要です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:20
 msgid "Here is a comparative chart."
@@ -108,10 +113,12 @@ msgid ""
 "Consider using WAV for short and repetitive sound effects, and Ogg Vorbis "
 "for music, speech, and long sound effects."
 msgstr ""
+"短い繰り返しのサウンドエフェクトにはWAVを使用し、音楽、音声、および長いサウン"
+"ドエフェクトにはOgg Vorbisを使用することを検討してください。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:40
 msgid "Best practices"
-msgstr ""
+msgstr "ベストな実践"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:42
 msgid ""
@@ -120,6 +127,10 @@ msgid ""
 "reducing their size greatly and ensuring correct trimming. Say no to SFX "
 "with baked reverb!"
 msgstr ""
+"Godotには、組み込みのエフェクトを持つ :ref:`豊富なバスシステム "
+"<doc_audio_buses>`があります。これにより、SFXアーティストはサウンドエフェクト"
+"にリバーブを追加する必要がなくなり、サイズを大幅に削減し、適切なトリミングを"
+"確保できます。SFXのベイクドリバーブにノーと言いましょう！"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:49
 msgid "As you can see above, sound effects become huge with reverb added."
@@ -136,16 +147,19 @@ msgid ""
 "saving to a waveform, increase their size unnecessarily and add latency to "
 "the moment they are played back."
 msgstr ""
+"頻繁に発生する問題の1つは、サウンドの前後に長い無音が含まれた状態でエクスポー"
+"トされることです。これらは、サンドを保存するときにDAWによって挿入され、不必要"
+"にサイズを大きくし、再生に発音の遅延を起こします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
 msgid "Importing as WAV with the **Trimming** option enabled solves this."
 msgstr ""
-"\\ **トリミング**\\ オプションを有効にしてWAVとしてインポートすると、この問題"
-"が解決されます。"
+"**トリミング(Trim)** オプションを有効にしてWAVとしてインポートすると、この問"
+"題が解決されます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
 msgid "Looping"
-msgstr "ループ"
+msgstr "ループ(Loop)"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:65
 msgid ""
@@ -162,5 +176,5 @@ msgid ""
 "As an alternative, the Import dock has a **Loop** option that enables "
 "looping for the entire sample when importing."
 msgstr ""
-"別の方法として、インポート画面には\\ **ループ**\\ オプションがあり、インポー"
-"ト時にサンプル全体のループを有効にします。"
+"別の方法として、インポート画面には\\ **ループ(Loop)**\\ オプションがあり、イ"
+"ンポート時にサンプル全体のループを有効にします。"

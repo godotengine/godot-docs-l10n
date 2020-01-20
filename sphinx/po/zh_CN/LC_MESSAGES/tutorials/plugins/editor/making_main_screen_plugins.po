@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,19 +155,20 @@ msgstr "主场景"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:106
 msgid ""
-"Create a new scene with a ``Panel`` root node. Select this root node and, in "
-"the viewport, click the ``Layout`` menu and select ``Full Rect``. The panel "
+"Create a new scene with a ``Panel`` root node. Select this root node, and in "
+"the viewport, click the ``Layout`` menu and select ``Full Rect``. You also "
+"need to enable the ``Expand`` vertical size flag in the inspector. The panel "
 "now uses all the space available in the viewport. Now, let's add a new "
 "script on the root node. Name it ``main_panel.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:111
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:112
 msgid ""
 "We then add 2 children to this Panel node: first a ``Button`` node. Place it "
-"anywhere on the Panel."
+"anywhere on the Panel. Then add a ``Label`` node."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:114
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:115
 msgid ""
 "Now we need to define a behaviour when this button is pressed. This is "
 "covered by the :ref:`Handling a signal <doc_scripting_handling_a_signal>` "
@@ -182,7 +183,7 @@ msgid ""
 "pressed."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:126
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:127
 msgid ""
 "As the button gets pressed, we want the side-panel's ``Label`` node to show "
 "a specific text. As explained above, we cannot directly access the target "
@@ -191,24 +192,24 @@ msgid ""
 "``main_panel.gd`` script:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:142
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:143
 msgid ""
 "In the same way, this main scene's Label node has to show a value when it "
 "receives a specific signal. Let's create a new "
 "``_on_side_button_pressed(text_to_show)`` function for this purpose:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:151
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:152
 msgid ""
 "We are done for the main screen panel. Save the scene as ``main_panel.tscn``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:154
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:155
 #, fuzzy
 msgid "Tabbed panel scene"
 msgstr "准备场景"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:156
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:157
 msgid ""
 "The tabbed panel scene is almost identical to the main panel scene. You can "
 "either duplicate the ``main_panel.tscn`` file and name the new file "
@@ -219,25 +220,25 @@ msgid ""
 "different names. Here is the script's full content:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:178
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:179
 msgid "Connecting the two scenes in the plugin script"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:180
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:181
 msgid ""
 "We now need to update the ``main_screen_plugin.gd`` script so the plugin "
 "instances our 2 GUI scenes and places them at the right places in the "
 "editor. Here is the full ``main.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:229
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:230
 msgid ""
 "A couple of specific lines were added. First, we defined the constants that "
 "contain our 2 GUI packed scenes (``MainPanel`` and ``SidePanel``). We will "
 "use these resources to instance both scenes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:233
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:234
 msgid ""
 "The ``_enter_tree()`` function is called before ``_ready()``. This is where "
 "we actually instance the 2 GUI scenes, and add them as children of specific "
@@ -246,7 +247,7 @@ msgid ""
 "specified it will be placed in the left-side dock, upper-left tab."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:239
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:240
 msgid ""
 "``EditorPlugin`` class does not provide any function to add an element in "
 "the main viewport. We thus have to use the ``get_editor_interface()."
@@ -256,7 +257,7 @@ msgid ""
 "plugin."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:246
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:247
 msgid ""
 "The ``_exit_tree()`` is pretty straightforward. It is automatically called "
 "when the plugin is deactivated. It is then important to ``queue_free()`` the "
@@ -266,7 +267,7 @@ msgid ""
 "usage without any way to free it, which is not good."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:253
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:254
 msgid ""
 "Finally the ``make_visible()`` function is overridden to hide or show the "
 "main panel as needed. This function is automatically called by the editor "
@@ -274,12 +275,12 @@ msgid ""
 "Script."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:258
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:259
 #, fuzzy
 msgid "Try the plugin"
 msgstr "试试这个插件"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:260
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:261
 msgid ""
 "Activate the plugin in the Project Settings. You'll observe a new button "
 "next to 2D, 3D, Script above the main viewport. You'll also notice a new tab "

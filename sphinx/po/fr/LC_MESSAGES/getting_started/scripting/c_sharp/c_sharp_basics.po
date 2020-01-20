@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,6 @@ msgstr ""
 "<doc_scripting>` du tutoriel pas-à-pas."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:21
-#, fuzzy
 msgid ""
 "C# is a high-level programming language developed by Microsoft. In Godot, it "
 "is implemented with the Mono 6.x .NET framework, including full support for "
@@ -65,8 +64,8 @@ msgid ""
 "documentation."
 msgstr ""
 "C# est un langage de programmation de haut niveau développé par Microsoft. "
-"Dans Godot il est implémenté avec le framework Mono 5.x.NET incluant le "
-"support complet pour C# 7.0. Mono est une implémentation open source du "
+"Dans Godot il est implémenté avec le framework Mono 6.x.NET incluant le "
+"support complet pour C# 8.0. Mono est une implémentation open source du "
 "Framework.NET de Microsoft basé sur les standards ECMA pour C# et le Common "
 "Language Runtime. Un bon point de départ pour vérifier ses capacités est la "
 "page `Compatibilité <http://www.mono-project.com/docs/about-mono/"
@@ -174,7 +173,6 @@ msgid "Configuring an external editor"
 msgstr "Configuration d'un éditeur externe"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:79
-#, fuzzy
 msgid ""
 "C# support in Godot's script editor is minimal. Consider using an external "
 "IDE or editor, such as  `Visual Studio Code <https://code.visualstudio.com/"
@@ -184,28 +182,27 @@ msgid ""
 "click on **Editor**, and select your external editor of choice. Godot "
 "currently supports the following external editors:"
 msgstr ""
-"Bien que Godot ait son propre éditeur de scripts, son support pour C# est "
-"minimal, et il est recommandé d'utiliser un IDE ou un éditeur externe, tel "
-"que Microsoft `Visual Studio Code <https://code.visualstudio.com/>`_, ou "
-"MonoDevelop. Ceux-ci fournissent l'auto-complétion, le débogage et d'autres "
-"fonctionnalités utiles lorsque vous travaillez avec C#. Pour le configurer "
-"dans Godot, cliquez sur **Éditeur → Paramètres de l'éditeur** et faites "
-"défiler vers le bas, jusqu'aux réglages **Mono**. Sous **Mono**, cliquez sur "
-"**Éditeur**, et sur cette page, choisissez l'éditeur externe de votre choix."
+"Le support du C# dans l'éditeur de script de Godot est minimal. Envisagez "
+"d'utiliser un IDE ou un éditeur externe, tel que Microsoft `Visual Studio "
+"Code <https://code.visualstudio.com/>`_, ou MonoDevelop. Ceux-ci fournissent "
+"l'auto-complétion, le débogage et d'autres fonctionnalités utiles lorsque "
+"vous travaillez avec C#. Pour sélectionner un éditeur externe dans Godot, "
+"cliquez sur **Éditeur → Paramètres de l'éditeur** et faites défiler vers le "
+"bas, jusqu'aux réglages **Mono**. Sous **Mono**, cliquez sur **Éditeur**, et "
+"sur cette page, choisissez l'éditeur externe de votre choix. Godot supporte "
+"actuellement les éditeurs externes suivants :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:88
 msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:89
-#, fuzzy
 msgid "MonoDevelop"
-msgstr "KDevelop"
+msgstr "MonoDevelop"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:90
-#, fuzzy
 msgid "Visual Studio for Mac"
-msgstr "Visual Studio Code"
+msgstr "Visual Studio pour Mac"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:91
 msgid "JetBrains Rider"
@@ -412,8 +409,8 @@ msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr ""
-"L'état n'est actuellement ni sauvegardé, ni restauré lors d'un \"hot-"
-"reloading\", à l'exception des variables exportées."
+"L'état n'est actuellement ni sauvegardé, ni restauré lors d'un re-chargement "
+"à chaud, à l'exception des variables exportées."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
 msgid ""
@@ -507,3 +504,22 @@ msgstr ""
 "Chaque fois que des packages sont ajoutés ou modifiés, exécutez ``nuget "
 "restore`` à la racine du répertoire du projet. Afin de vous assurer que les "
 "packages NuGet seront disponibles pour msbuild, exécutez :"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:264
+#, fuzzy
+msgid "Profiling your C# code"
+msgstr "Décorer votre monde"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:266
+msgid ""
+"`Mono log profiler <https://www.mono-project.com/docs/debug+profile/profile/"
+"profiler/>`_ is available via `this PR <https://github.com/godotengine/godot/"
+"pull/26513>`_"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:267
+msgid ""
+"External Mono profiler like `JetBrains dotTrace <https://www.jetbrains.com/"
+"profiler/>`_ can be used as described `here <https://github.com/godotengine/"
+"godot/pull/34382>`_."
+msgstr ""

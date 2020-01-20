@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,10 @@ msgid ""
 "to specify how to convert and change import flags for textures, audio files, "
 "scenes, etc."
 msgstr ""
+"以前、Godot 2.xでアセットをインポートするには、ソースアセットがある個別のディ"
+"レクトリを手動でメンテナンスする必要がありました。これを行わないと、テクス"
+"チャ、オーディオファイル、シーンなどのインポートフラグを変換、および変更する"
+"方法を指定できませんでした。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
 msgid ""
@@ -41,6 +45,11 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
+"Godot 3.0では、より近代的なアプローチを使用してインポートします。アセット(画"
+"像ファイル、シーン、オーディオファイル、フォントなど)をプロジェクトフォルダに"
+"直接ドロップします(OSのファイルエクスプローラーで手動でコピーします)。 Godot"
+"はこれらのファイルを内部で自動的にインポートし、インポートしたリソースを "
+"res://.import フォルダに隠します。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid "This allows changing all the import parameters transparently."
@@ -56,12 +65,17 @@ msgid ""
 "import parameters are only present in non-native Godot resource types) is "
 "easy. Select the relevant resource in the filesystem dock:"
 msgstr ""
+"Godotでアセットのインポートパラメータを変更するのは簡単です(インポートパラ"
+"メーターはネイティブでないGodotリソースタイプにのみ存在することに注意してくだ"
+"さい)。ファイルシステムドックで関連するリソースを選択します:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:31
 msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
 msgstr ""
+"次に、パラメータを調整した後、「再インポート(Reimport)」を押します。これらの"
+"パラメータは、このアセットと今後の再インポートでのみ使用されます。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:34
 msgid ""
@@ -69,6 +83,9 @@ msgid ""
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
+"複数のアセットのインポートパラメータを同時に変更することもできます。リソース"
+"ドックでそれらをすべて一緒に選択するだけで、再インポート時に公開されたパラ"
+"メータがそれらすべてに適用されます。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
 msgid "Automatic reimport"
@@ -92,14 +109,14 @@ msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
-"インポートすると、インポート設定を含む<asset> .importファイルが追加されま"
+"インポートすると、インポート設定を含む <asset> .import ファイルが追加されま"
 "す。 必ずこれらをあなたのバージョン管理システムにコミットしてください!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:53
 msgid ""
 "Additionally, extra assets will be preset in the hidden res://.import folder:"
 msgstr ""
-"さらに、追加のアセットは、隠しrフォルダの「res://.import」にプリセットされま"
+"さらに、追加のアセットは、隠しフォルダの「res://.import」にプリセットされま"
 "す:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:57
@@ -110,6 +127,11 @@ msgid ""
 "reimporting time when checking out on another computer, but it takes "
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
+"このフォルダに存在するファイルのいずれか(またはフォルダ全体)が消去されると、"
+"アセットは自動的に再インポートされます。そのため、このフォルダをバージョン管"
+"理システムにコミットすることはオプションです。別のコンピューターでチェックア"
+"ウトするときの再インポート時間を短縮できますが、かなり多くの領域と転送時間が"
+"かかります。あなたの好きな方法を選んで下さい(Pick your poison)！"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid "Changing import resource type"
@@ -120,6 +142,8 @@ msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
 msgstr ""
+"一部のソースアセットは、さまざまなタイプのリソースとしてインポートできます。"
+"このために、必要なリソースの種別を選択し、「再インポート」を押します:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:74
 msgid "Changing default import parameters"
@@ -139,7 +163,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:84
 msgid "Simplicity is key!"
-msgstr "シンプルさが鍵!"
+msgstr "シンプルさが鍵です!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:86
 msgid ""

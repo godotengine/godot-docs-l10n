@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,9 @@ msgid ""
 "GDNative. Understanding the contents of this tutorial will help you in "
 "understanding all that is to come after this."
 msgstr ""
+"このチュートリアルでは、GDNativeモジュールの作成に最低限必要なものを紹介しま"
+"す。これがGDNativeの世界への出発点になるはずです。このチュートリアルの内容を"
+"理解することは、この後のすべてを理解するのに役立ちます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:14
 msgid ""
@@ -39,6 +42,9 @@ msgid ""
 "describe below in the `GDNative-demos repository <https://github.com/"
 "GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo>`_."
 msgstr ""
+"始める前に、以下で説明するサンプルオブジェクトのソースコードを\\ `GDNative-"
+"demos repository <https://github.com/GodotNativeTools/GDNative-demos/tree/"
+"master/c/SimpleDemo>`\\ からダウンロードできます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:18
 msgid ""
@@ -46,6 +52,9 @@ msgid ""
 "little easier, but in this tutorial we'll be doing things by hand to "
 "understand the process."
 msgstr ""
+"このサンプルプロジェクトには、コンパイルを少し簡単にするSConstructファイルも"
+"含まれていますが、このチュートリアルでは、プロセスを理解するために手動で作業"
+"を行います。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:22
 msgid ""
@@ -57,12 +66,21 @@ msgid ""
 "allows you to write logic in C or C++ in a similar fashion as you would "
 "write a GDScript file. We'll be creating the C equivalent of this GDScript:"
 msgstr ""
+"\\ :ref: `GDNative <class_GDNative>`\\ を使用すると、\\ :ref: `PluginScript "
+"<class_PluginScript>`\\ や\\ :ref: `ARVRInterfaceGDNative "
+"<class_ARVRInterfaceGDNative>`\\ などのインターフェースを利用して、Godotに追"
+"加する複数のタイプの要素を作成できます。このチュートリアルでは、\\ :ref: "
+"`NativeScript <class_NativeScript>`\\ モジュールの作成について見ていきます。 "
+"NativeScriptを使用すると、GDScriptファイルを作成するのと同様の方法でCまたはC "
+"++でロジックを作成できます。このGDScriptに相当するCを作成します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:43
 msgid ""
 "Future tutorials will focus on the other types of GDNative modules and "
 "explain when and how to use each of them."
 msgstr ""
+"今後のチュートリアルでは、他のタイプのGDNativeモジュールに焦点を当て、各モ"
+"ジュールをいつどのように使用するかを説明します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:47
 msgid "Prerequisites"
@@ -70,11 +88,11 @@ msgstr "前提条件"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:49
 msgid "Before we start you'll need a few things:"
-msgstr ""
+msgstr "始める前に、いくつかのものが必要です:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:51
 msgid "A Godot executable for your target version."
-msgstr ""
+msgstr "ターゲットバージョンのGodot実行可能ファイル。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:52
 msgid ""
@@ -82,6 +100,9 @@ msgid ""
 "manager. On macOS, you can install Xcode from the Mac App Store. On Windows, "
 "you can use Visual Studio 2015 or later, or MinGW-w64."
 msgstr ""
+"Ｃコンパイラ。 Linuxでは、パッケージマネージャーから ``gcc``または ``clang``"
+"をインストールします。 macOSでは、Mac App StoreからXcodeをインストールできま"
+"す。 Windowsでは、Visual Studio 2015以降またはMinGW-w64を使用できます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
 msgid ""
@@ -89,12 +110,17 @@ msgid ""
 "GodotNativeTools/godot_headers>`_: these are the C headers for Godot's "
 "public API exposed to GDNative."
 msgstr ""
+"`godot_headersリポジトリ<https://github.com/GodotNativeTools/godot_headers>`"
+"\\ のGitクローン 。これらはGDNative用に公開されているGodotのパブリックAPIのC"
+"ヘッダーです。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:59
 msgid ""
 "For the latter, we suggest that you create a dedicated folder for this "
 "GDNative example project, open a terminal in that folder and execute:"
 msgstr ""
+"次に行う作業については、このGDNativeサンプルプロジェクト専用のフォルダーを作"
+"成し、そのフォルダー内でターミナルを開いて実行することをお勧めします。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:66
 msgid "This will download the required files into that folder."
@@ -105,6 +131,8 @@ msgid ""
 "If you plan to use Git for your GDNative project, you can also add "
 "``godot_headers`` as a Git submodule."
 msgstr ""
+"GDNativeプロジェクトにGitを使用する予定がある場合は、Gitサブモジュールとして "
+"``godot_headers`` を追加することもできます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:75
 msgid ""
@@ -116,6 +144,13 @@ msgid ""
 "Godot headers *may* work with newer versions of the engine, but not the "
 "other way around."
 msgstr ""
+"``godot_headers`` リポジトリにはさまざまなブランチがあります。 Godotが進化す"
+"るにつれて、GDNativeも進化します。バージョン間の互換性を維持しようとしていま"
+"すが、常にGodotの安定ブランチ(例: ``3.1 `` )と理想的な実際のリリース(例: `` "
+"3.1.1-stable`` )に一致するヘッダーに対応させたGDNativeモジュールを構築する必"
+"要があります。古いバージョンのGodotヘッダーに対応して構築されたGDNativeモ"
+"ジュールは、新しいバージョンのエンジンで動作する可能性がありますが、その逆は"
+"できません。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:83
 msgid ""
@@ -123,6 +158,9 @@ msgid ""
 "with the ``master`` branch of Godot and thus contains the GDNative class and "
 "structure definitions that will work with the latest development builds."
 msgstr ""
+"``godot_headers`` リポジトリの ``master`` ブランチはGodotの ``master`` ブラン"
+"チと一致しているため、最新の開発ビルドで動作するGDNativeクラスと構造体の定義"
+"が含まれています。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:87
 msgid ""
@@ -132,6 +170,11 @@ msgid ""
 "with ``godot-``, so you can e.g. checkout the ``godot-3.1.1-stable`` tag for "
 "use with Godot 3.1.1. In your cloned repository, you can do:"
 msgstr ""
+"Godotの安定バージョン用のGDNativeモジュールを作成する場合は、使用するエンジン"
+"バージョンに一致するGitタグ（「gitタグ」を含む）を確認してください。 "
+"``godot_headers`` リポジトリでは、そのようなタグの先頭に ``godot-`` が付いて"
+"いるため、 Godot 3.1.1で使用する ``godot-3.1.1-stable`` タグをチェックアウト"
+"します。クローンリポジトリでは、次のことができます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:97
 msgid ""
@@ -139,6 +182,9 @@ msgid ""
 "fall back to the matching stable branch (e.g. ``3.1``), which you would also "
 "check out with ``git checkout 3.1``."
 msgstr ""
+"何らかの理由で安定版リリースに一致するタグが欠落している場合は、一致する安定"
+"版ブランチ（「3.1」など）にフォールバックできます。これは ``git checkout "
+"3.1`` でもチェックアウトできます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:101
 msgid ""
@@ -146,6 +192,9 @@ msgid ""
 "GDNative, you can find the updated class and structure definition in "
 "``<godotsource>/modules/gdnative/include``"
 msgstr ""
+"GDNativeに影響する独自の変更を使用してソースからGodotをビルドしている場合、更"
+"新されたクラスと構造の定義は ``<godotsource>/modules/gdnative/include`` にあ"
+"ります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:106
 msgid "Our C source"
@@ -156,6 +205,8 @@ msgid ""
 "Let's start by writing our main code. Eventually, we want to end up with a "
 "file structure that looks along those lines:"
 msgstr ""
+"メインコードを書くことから始めましょう。最終的には、下の図の各行と同様なファ"
+"イル構造を作成します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:127
 msgid ""
@@ -164,6 +215,10 @@ msgid ""
 "``project.godot`` file. Then manually create ``bin`` and ``src`` subfolders "
 "in this folder."
 msgstr ""
+"Godotを開き、 ``godot_headers`` のGitクローンを含めた\"simple\" という新しい"
+"プロジェクトを作成します。これにより、 ``simple`` フォルダーと ``project."
+"godot`` ファイルが作成されます。次に、このフォルダーに ``bin`` および "
+"``src`` サブフォルダーを手動で作成します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:132
 msgid ""
@@ -173,6 +228,11 @@ msgid ""
 "projects it is advisable to break your project up into multiple files. That "
 "however falls outside of the scope of this tutorial."
 msgstr ""
+"まず、 ``simple.c`` ファイルに何が含まれているかを見てみましょう。ここで例で"
+"は、説明を単純にするためにヘッダーを用意しない単一の C ソース ファイルを作成"
+"しています。大きなプロジェクトの作成を開始したら、プロジェクトを複数のファイ"
+"ルに分割することをお勧めします。ただし、それはこのチュートリアルの範囲外で"
+"す。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:138
 msgid ""
@@ -180,6 +240,9 @@ msgid ""
 "all be put together into one big file. Each section will be explained as we "
 "add it."
 msgstr ""
+"ソースコードを少しずつ見ていきますので、以下のすべての部分を１つの大きなファ"
+"イルにまとめて行く必要があります。各セクションの説明は、それを追加するときに"
+"行います。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:150
 msgid ""
@@ -190,6 +253,12 @@ msgid ""
 "module to have access to these functions, GDNative provides your application "
 "with a struct containing pointers to all these functions."
 msgstr ""
+"上記のコードには、GDNative API構造体ヘッダーと、文字列操作のために使用する標"
+"準ヘッダーが含まれています。次に、2つの異なる構造体への2つのポインターを定義"
+"します。 GDNativeは、メインのGodot実行可能ファイルにコールバックするための機"
+"能の、大規模なコレクションをサポートしています。モジュールがこれらの関数にア"
+"クセスできるようにするため、GDNativeはこれらすべての関数へのポインターを含む"
+"構造体をアプリケーションに提供します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:157
 msgid ""
@@ -207,8 +276,8 @@ msgid ""
 "In our example, we access one of these extension to gain access to the "
 "functions specifically needed for NativeScript."
 msgstr ""
-"この例では、これらの拡張機能の1つにアクセスして、NativeScriptに特に必要な関数"
-"にアクセスします。"
+"この例では、これらの拡張機能の１つにアクセスして、NativeScriptに特に必要な関"
+"数にアクセスします。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:164
 msgid ""
@@ -219,11 +288,11 @@ msgid ""
 "called. When that instance gets destroyed, the given destructor will be "
 "executed."
 msgstr ""
-"NativeScriptは、Godotの他のスクリプトと同様に振る舞います。NativeScript APIは"
-"かなりレベルが低いため、ライブラリはGDScript などの他のスクリプトシステムより"
-"も冗長に多くのことを指定する必要があります。NativeScriptインスタンスが作成さ"
-"れると、ライブラリ指定のコンストラクタが呼び出されます。そのインスタンスが破"
-"棄されると、指定されたデストラクタが実行されます。"
+"NativeScriptは、Godotの他のスクリプトと同様に動作します。NativeScript APIはか"
+"なりレベルが低いため、ライブラリはGDScript などの他のスクリプトシステムよりも"
+"冗長に多くのことを指定する必要があります。NativeScriptインスタンスが作成され"
+"ると、ライブラリ指定のコンストラクタが呼び出されます。そのインスタンスが破棄"
+"されると、指定されたデストラクタが実行されます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:177
 msgid ""
@@ -231,6 +300,9 @@ msgid ""
 "our object. A constructor and destructor is needed. Additionally, the object "
 "will have a single method called ``get_data``."
 msgstr ""
+"これらは、オブジェクトに実装する関数の前方宣言です。コンストラクタとデストラ"
+"クタが必要です。さらに、オブジェクトには ``get_data`` と呼ばれる単一のメソッ"
+"ドがあります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:181
 msgid ""
@@ -241,14 +313,19 @@ msgid ""
 "to a structure that contains various bits of information we may find useful "
 "among which the pointers to our API structures."
 msgstr ""
+"次は、動的ライブラリがロードされたときにGodotが呼び出す最初のエントリポイント"
+"です。これらのメソッドにはすべて ``godot_`` というプレフィックスが付いており"
+"（後から変更できます）名前が後に続きます。 ``gdnative_init`` は動的ライブラリ"
+"を初期化する関数です。 Godotは、API構造体へのポインターが、役に立つと思われる"
+"さまざまな情報を含む構造体へのポインターを提供します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:188
 msgid ""
 "For any additional API structures we need to loop through our extensions "
 "array and check the type of extension."
 msgstr ""
-"追加のAPI構造体については、拡張配列をループして拡張機能の種類を確認する必要が"
-"あります。"
+"追加のAPI構造体については、拡張機能配列をループ処理し、拡張機能の種類を確認す"
+"る必要があります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:207
 msgid ""
@@ -259,8 +336,8 @@ msgid ""
 msgstr ""
 "次は、ライブラリがアンロードされる前に呼び出される ``gdnative_terminate`` で"
 "す。 Godotは、オブジェクトがライブラリを使用しなくなったときにライブラリをア"
-"ンロードします。 ここで、必要なクリーンアップを実行できます。 この例では、単"
-"にAPIポインタをクリアします。"
+"ンロードします。 ここで、必要なクリーンアップ処理を実行できます。 この例で"
+"は、単にAPIポインタをクリアします。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:219
 msgid ""
@@ -269,6 +346,9 @@ msgid ""
 "GDNative library and communicates back to the engine what objects we make "
 "available."
 msgstr ""
+"最後に、今日必要となる最も重要な関数である ``nativescript_init`` があります。"
+"この関数は、GDNativeライブラリを読み込む処理の一部としてGodotによって呼び出さ"
+"れ、エンジンに対して使用可能なオブジェクトを返します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:244
 msgid ""
@@ -279,6 +359,12 @@ msgid ""
 "inheritance but it's close enough. Finally, our fourth and fifth parameters "
 "are descriptions for our constructor and destructor."
 msgstr ""
+"まず、 ``nativescript_register_class`` を呼び出すことで、どのクラスが実装され"
+"ているかをエンジンに伝えます。ここでの最初のパラメーターは、エンジンから与え"
+"られたハンドルポインターです。 2番目はオブジェクトクラスの名前です。 3番目"
+"は、「継承」するGodotのオブジェクトのタイプです。これは真の継承ではありません"
+"が、十分に近いものです。最後に、4番目と5番目のパラメーターは、コンストラク"
+"ターとデストラクターの説明です。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:251
 msgid ""
@@ -292,6 +378,14 @@ msgid ""
 "godot_nativescript.h`` for possible values). The fifth and final parameter "
 "is a description of which function to call when the method gets called."
 msgstr ""
+"次に、クラスの各メソッドに対して ``nativescript_register_method`` を呼び出し"
+"て、メソッド (この場合は 1 つのメソッド) について Godot に伝えます。この"
+"チュートリアルでは、単に ``get_data`` だけです。最初のパラメータは、再びハン"
+"ドルポインタです。2 つ目は、登録するオブジェクト クラスの名前です。3 つ目は、"
+"GDScript に認識される関数の名前です。4 つ目は属性設定です (可能な値について"
+"は、 ``godot_headers / nativescript / godot_nativescript.h`` の "
+"``godot_method_rpc_mode`` 列挙型を参照してください)。5 番目(最後)のパラメー"
+"ターは、メソッドが呼び出されたときに呼び出す関数の説明です。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:261
 msgid ""
@@ -306,6 +400,16 @@ msgid ""
 "function gets called when the script itself (not instance!) gets unloaded "
 "(so usually at library-unload time)."
 msgstr ""
+"構造体 ``instance_method`` の記述には、関数自体への関数ポインターが最初の"
+"フィールドとして含まれています。これらの構造体の他の2つのフィールドは、メソッ"
+"ドごとのユーザーデータを指定するためのものです。 2つ目は ``method_data`` "
+"フィールドで、これはすべての関数呼び出しで ``p_method_data`` 引数として渡され"
+"ます。これはおそらく、1つの関数を複数の異なるスクリプト クラスの異なるメソッ"
+"ドで再利用する場合に便利です。 ``method_data`` 値が解放する必要のあるメモリへ"
+"のポインタである場合、3つ目の ``free_func`` フィールドにはそのメモリを解放す"
+"る関数へのポインタを含めることができます。このフリー関数は、スクリプト自体(イ"
+"ンスタンスではありません！)がアンロードされると呼び出されます(つまり、通常は"
+"ライブラリのアンロード時に)。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:271
 msgid ""
@@ -313,8 +417,8 @@ msgid ""
 "define a structure that we use to store the member data of an instance of "
 "our GDNative class."
 msgstr ""
-"それでは、オブジェクト関数の作業を始めましょう。 まず、GDNativeクラスのインス"
-"タンスのメンバーデータを格納するために使用する構造を定義します。"
+"それでは、オブジェクトの機能に関する作業を始めましょう。 まず、GDNativeクラス"
+"のインスタンスのメンバーデータを格納するために使用する構造体を定義します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:281
 msgid ""
@@ -355,6 +459,10 @@ msgid ""
 "first need to convert our C string to a Godot string object, and then copy "
 "that string object into the variant we are returning."
 msgstr ""
+"最後に、 ``get_data`` 関数を実装します。データは常にバリアント型(Variant)とし"
+"て送受信されるため、文字列のデータを返すには、まずCの文字列をGodotの文字列オ"
+"ブジェクトに変換し、次にその文字列オブジェクトを戻り値のバリアントにコピーす"
+"る必要があります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:330
 msgid ""
@@ -366,12 +474,12 @@ msgid ""
 "zero and the memory never deallocated. The returned variant gets "
 "automatically destroyed by Godot."
 msgstr ""
-"文字列はGodotでヒープに割り当てられるため、メモリを解放するデストラクタがあり"
-"ます。 デストラクタには ``godot_TYPENAME_destroy`` という名前が付けられま"
-"す。 バリアントが文字列で作成されると、その文字列を参照します。 つまり、元の"
-"文字列を「破棄」して参照カウントを減らすことができます。 そうしないと、参照カ"
-"ウントがゼロにならず、メモリの割り当てが解除されないため、文字列メモリがリー"
-"クします。 返されたバリアントは、Godotによって自動的に破棄されます。"
+"文字列はGodotではヒープに割り当てられるため、そのメモリを解放するデストラクタ"
+"があります。 デストラクタには ``godot_TYPENAME_destroy`` という名前が付けられ"
+"ます。 バリアントが文字列で作成されると、その文字列を参照します。 つまり、元"
+"の文字列を「破棄」して参照カウントを減らすことができます。 そうしないと、参照"
+"カウントがゼロにならず、メモリの割り当てが解除されないため、文字列のメモリが"
+"リークします。 返されたバリアントは、Godotによって自動的に破棄されます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:339
 msgid ""
@@ -381,10 +489,15 @@ msgid ""
 "The String destructor would be called in C++ after the Variant was created, "
 "so the same is necessary in C."
 msgstr ""
+"より複雑な操作では、どの値の割り当てを解放するべきなのかそれとも保持するべき"
+"なのか、混乱しないように追跡する必要があります。一般的な規則として、C++で デ"
+"ストラクターが呼び出されるときには ``godot_TYPENAME_destroy`` を呼び出しま"
+"す。文字列デストラクターは、バリアント型 (Variant) の作成後に C++ で呼び出さ"
+"れるため、C でも同じことが必要です。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:345
 msgid "The variant we return is destroyed automatically by Godot."
-msgstr "返されるバリアントは、Godotによって自動的に破棄されます。"
+msgstr "戻り値として返されるバリアントは、Godotによって自動的に破棄されます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:347
 msgid "And that is the whole source code of our module."
@@ -400,6 +513,9 @@ msgid ""
 "GitHub contains a SCons configuration that does all the hard work for you, "
 "but for our tutorial here we are going to call the compilers directly."
 msgstr ""
+"次に、ソースコードをコンパイルする必要があります。前述のとおり、GitHubのサン"
+"プルプロジェクトには、すべての面倒な作業を行う「SCons configuration」が含まれ"
+"ていますが、ここでのチュートリアルでは、コンパイラを直接呼び出します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:356
 msgid ""
@@ -408,6 +524,9 @@ msgid ""
 "commands from there. Make sure to create the ``bin`` folder before you "
 "proceed."
 msgstr ""
+"上記のフォルダー構造に揃えてあると仮定すると、 ``src`` フォルダーでターミナル"
+"セッションを開き、そこからコマンドを実行するのが最善です。先に進む前に "
+"``bin``フォルダを作成してください。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:360
 msgid "On Linux:"
@@ -415,7 +534,7 @@ msgstr "Linux:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:367
 msgid "On macOS:"
-msgstr ""
+msgstr "macOS:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:374
 msgid "On Windows:"
@@ -428,6 +547,11 @@ msgid ""
 "DLL. We get it as a byproduct and we do not need it :) When exporting your "
 "game for release this file will be ignored."
 msgstr ""
+"Windowsでのビルドでは、 ``libsimple.lib`` ライブラリも作成されます。これは、"
+"(一般的には)DLLにアクセスするためにプロジェクトのコンパイルで生成されるライブ"
+"ラリです。Godotにとってはそれは単に副産物なので必要ではありません。リリースの"
+"ためにゲームをエクスポートするとき、このファイルは無視されエクスポートには含"
+"まれませんが心配はいりません。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:390
 msgid ""
@@ -436,10 +560,14 @@ msgid ""
 "were compiled objects have the ``.obj`` extension, which is also a 3D model "
 "format supported by the engine."
 msgstr ""
+"空の ``.gdignore`` ファイルを ``src`` フォルダーに追加すると、Godotはコンパイ"
+"ラで生成されたファイルを(3Dモデルデータと間違えて)インポートしようとはしませ"
+"ん。これは、エンジンでサポートされている3Dモデル形式と同じ ``.obj`` 拡張子を"
+"コンパイルされたオブジェクトが持っているWindowsで必要な仕組みです。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:396
 msgid "Creating the GDNativeLibrary (``.gdnlib``) file"
-msgstr ""
+msgstr "GDNativeLibrary( ``.gdnlib``)ファイルの作成"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:398
 msgid ""
@@ -449,12 +577,19 @@ msgid ""
 "Godot what dynamic libraries are part of our module and need to be loaded "
 "per platform."
 msgstr ""
+"モジュールをコンパイルしたら、動的ライブラリに対応する\\ :ref:"
+"`GDNativeLibrary <class_GDNativeLibrary>`\\ リソースを作成し、それを ``."
+"gdnlib`` 拡張子を付けて一緒に配置する必要があります。このファイルは、どの動的"
+"ライブラリがモジュールの一部であり、プラットフォームごとにロードする必要があ"
+"るかをGodotに伝えます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:404
 msgid ""
 "We can use Godot to generate this file, so open the \"simple\" project in "
 "the editor."
 msgstr ""
+"Godotを使用してこのファイルを生成できるため、エディターでシンプルなプロジェク"
+"トを開きます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:407
 msgid "Start by clicking the create resource button in the Inspector:"
@@ -462,7 +597,7 @@ msgstr "まず、インスペクタで 「リソースの作成」 ボタンを�
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:411
 msgid "And select ``GDNativeLibrary``:"
-msgstr ""
+msgstr "そして、 ``GDNativeLibrary`` を選択します:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:415
 msgid ""
@@ -470,6 +605,8 @@ msgid ""
 "\"Expand Bottom Panel\" button in the bottom right to expand it to full "
 "height:"
 msgstr ""
+"下部のパネルにコンテキストエディターが表示されます。右下にある[下部パネルを展"
+"開]ボタンを使用して、目いっぱいの高さにパネルを拡張します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:421
 msgid "General properties"
@@ -479,6 +616,8 @@ msgstr "一般的なプロパティ"
 msgid ""
 "In the Inspector, you have various properties to control loading the library."
 msgstr ""
+"インスペクタには、ライブラリの読み込みを制御するためのさまざまなプロパティが"
+"あります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:425
 msgid ""
@@ -488,6 +627,11 @@ msgid ""
 "create. If *Load Once* is disabled, a new copy of the library is loaded into "
 "memory each time a script accesses the library."
 msgstr ""
+"*Load Once* が有効な場合、ライブラリは一度だけ読み込まれ、ライブラリを使用す"
+"る個々のスクリプトは同じデータを使用します。グローバルに定義した変数は、作成"
+"されるオブジェクトのインスタンスからアクセスできます。*Load Once* を無効にす"
+"ると、スクリプトがライブラリにアクセスするたびに、ライブラリの新しいコピーが"
+"メモリに読み込まれます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:431
 msgid ""
@@ -495,6 +639,9 @@ msgid ""
 "function called ``godot_gdnative_singleton`` is called. We'll leave that for "
 "another tutorial."
 msgstr ""
+"*Singleton* が有効になっている場合はライブラリが自動的に読み込まれ、 "
+"``godot_gdneative_singleton`` という関数が呼び出されます。これに関しては別の"
+"チュートリアルで説明を行ないます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:435
 msgid ""
@@ -505,6 +652,11 @@ msgid ""
 "tutorial, it is only needed at this time for deployment to iOS as this "
 "platform does not like dynamic libraries."
 msgstr ""
+"*Symbol Prefix* は、これまでに見た ``godot_nativescript_init`` の ``godot_`` "
+"のようなコア関数用のプレフィックスです。静的にリンクする複数のGDNativeライブ"
+"ラリを使用する場合は、異なるプレフィックスを使用する必要があります。これもま"
+"た別のチュートリアルでさらに掘り下げる対象です。iOSは動的ライブラリを好まない"
+"ため、現時点ではこのプラットフォーム(iOS)への展開にのみ必要です。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:442
 msgid ""
@@ -512,6 +664,9 @@ msgid ""
 "loses and gains focus, typically to pick up new or modified symbols from any "
 "change made to the library externally."
 msgstr ""
+"*Reloadable* は、エディターがフォーカスを失ったときにライブラリをリロードする"
+"必要があるかどうかを定義します。通常は、外部で変更を加えられたライブラリか"
+"ら、新しいシンボルまたは変更されたシンボルを取得します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:447
 msgid "Platform libraries"
@@ -522,6 +677,8 @@ msgid ""
 "The GDNativeLibrary editor plugin lets you configure two things for each "
 "platform and architecture that you aim to support."
 msgstr ""
+"GDNativeLibraryエディタプラグインを使用すると、サポートするプラットフォームと"
+"アーキテクチャごとに2つの設定を行うことができます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:452
 msgid ""
@@ -530,6 +687,11 @@ msgid ""
 "loaded. This also informs the exporter which files need to be exported when "
 "exporting to a specific platform."
 msgstr ""
+"*ダイナミック ライブラリ*\\ 列(保存されたファイルの ``entry`` セクション)は、"
+"プラットフォームと機能の組み合わせごとに、どのダイナミックライブラリをロード"
+"する必要があるかを示しています。これは、特定のプラットフォームにエクスポート"
+"するときに、どのファイルをエクスポートする必要があるかをエクスポーターに通知"
+"します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:457
 msgid ""
@@ -538,6 +700,10 @@ msgid ""
 "to work. Say that your GDNative module uses another DLL to implement "
 "functionality from a 3rd party library, this is where you list that DLL."
 msgstr ""
+"*依存関係*列( ``dependencies``セクション)は、ライブラリが機能するために各プ"
+"ラットフォームにエクスポートする必要がある他のファイルをGodotに伝えます。 例"
+"えばGDNativeモジュールが別のDLLを使用してサードパーティライブラリの機能を実装"
+"する場合には、そのDLLをここにリストアップします。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:462
 msgid ""
@@ -545,6 +711,9 @@ msgid ""
 "you can link them in the relevant fields by clicking the folder button. If "
 "you built all three libraries, you should have something like this:"
 msgstr ""
+"この例では、Linux、macOS、Windows用のライブラリのみを構築しました。フォルダボ"
+"タンをクリックして、関連するフィールドでそれらをリンクできます。 3つのライブ"
+"ラリをすべて作成した場合、次のようなものが必要です:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:469
 msgid "Saving the resource"
@@ -555,16 +724,20 @@ msgid ""
 "We can then save our GDNativeLibrary resource as ``bin/libsimple.gdnlib`` "
 "with the Save button in the Inspector:"
 msgstr ""
+"次に、インスペクタの[保存]ボタンを使用して、GDNativeLibraryリソースを "
+"``bin / libsimple.gdnlib`` として保存できます:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:476
 msgid ""
 "The file is saved in a text-based format and should have contents similar to "
 "this:"
 msgstr ""
+"ファイルはテキストベースの形式で保存され、次のような内容が含まれている必要が"
+"あります:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:503
 msgid "Creating the NativeScript (``.gdns``) file"
-msgstr ""
+msgstr "NativeScript( ``.gdns``)ファイルの作成"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:505
 msgid ""
@@ -573,12 +746,18 @@ msgid ""
 "ref:`NativeScript <class_NativeScript>` resource file with ``.gdns`` "
 "extension."
 msgstr ""
+"`` .gdnlib`` ファイルを使用して、ライブラリを読み込む方法をGodotに指示しまし"
+"た。次に、「単純な」オブジェクトクラスについて通知する必要があります。これを"
+"行うには、拡張子が ``.gdns`` の\\ :ref:`NativeScript <class_NativeScript>`\\ "
+"リソースファイルを作成します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:509
 msgid ""
 "Like done for the GDNativeLibrary resource, click the button to create a new "
 "resource in the Inspector and select ``NativeScript``:"
 msgstr ""
+"GDNativeLibraryリソースの場合と同様に、インスペクターで新しいリソースを作成す"
+"るボタンをクリックし、 ``NativeScript`` を選択します:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:514
 msgid ""
@@ -588,10 +767,16 @@ msgid ""
 "need to select our ``.gdnlib`` file by clicking on *Library* and selecting "
 "*Load*:"
 msgstr ""
+"インスペクタは、入力する必要があるいくつかのプロパティを表示します。*Class "
+"Name*として、「Simple」を入力します。これは、 "
+"``godot_nativescript_register_class`` を呼び出すときにCソースで宣言したオブ"
+"ジェクトクラス名です。また、\\ *Library*\\ をクリックして\\ *読込み*\\ を選択"
+"し、 ``.gdnlib`` ファイルを選択する必要があります:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:521
 msgid "Finally click on the save icon and save this as ``bin/simple.gdns``:"
 msgstr ""
+"最後に保存アイコンをクリックし、これを ``bin/simple.gdns`` として保存します:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:525
 msgid ""
@@ -599,22 +784,25 @@ msgid ""
 "root and call it ``main``. Then add a Button and a Label as child nodes. "
 "Place them somewhere nice on screen and give your button a name."
 msgstr ""
+"次に、シーンを構築します。ルートとしてシーンにコントロールノードを追加し、 "
+"``main`` と名付けます。次に、ボタンとラベルを子ノードとして追加します。画面上"
+"のどこかに適当な場所にボタンを配置して、名前を付けます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:531
 msgid "Select the control node and attach a script to it:"
-msgstr ""
+msgstr "コントロール ノードを選択し、スクリプトをアタッチします:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:535
 msgid "Next link up the ``pressed`` signal on the button to your script:"
-msgstr ""
+msgstr "次に、ボタンの ``pressed`` シグナルをスクリプトにリンクします:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:539
 msgid "Don't forget to save your scene, call it ``main.tscn``."
-msgstr ""
+msgstr "``main.tscn`` と名付けてシーンを保存することを忘れないでください。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:541
 msgid "Now we can implement our ``main.gd`` code:"
-msgstr ""
+msgstr "``main.gd`` コードを実装できます:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:553
 msgid ""
@@ -622,3 +810,5 @@ msgid ""
 "will ask you what your main scene is and you select your ``main.tscn`` file "
 "and presto:"
 msgstr ""
+"これで、プロジェクトは機能するはずです。 Godotを初めて実行すると、メインシー"
+"ンが何であるかを尋ねられるので、 ``main.tscn`` ファイルを選択して実行します。"

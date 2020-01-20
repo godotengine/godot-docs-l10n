@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
 msgid "Customizing mouse cursor"
-msgstr ""
+msgstr "Personnalisation du curseur de la souris"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:6
 msgid ""
@@ -27,28 +27,36 @@ msgid ""
 "order to suit the overall design. There are two ways to customize the mouse "
 "cursor:"
 msgstr ""
+"Vous pourriez vouloir changer l'apparence du curseur de la souris dans votre "
+"jeu afin de l'adapter au design général. Il y a deux façons de personnaliser "
+"le curseur de la souris :"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:8
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:14
 msgid "Using project settings"
-msgstr ""
+msgstr "Utilisation des paramètres du projet"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:9
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:26
 msgid "Using a script"
-msgstr ""
+msgstr "Utilisation d'un script"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:11
 msgid ""
 "Using project settings is a simpler (but more limited) way to customize the "
 "mouse cursor. The second way is more customizable, but involves scripting."
 msgstr ""
+"L'utilisation des paramètres de projet est une façon plus simple (mais plus "
+"limitée) de personnaliser le curseur de la souris. La deuxième façon est "
+"plus personnalisable, mais implique un script."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:16
 msgid ""
 "Open project settings, go to Display>Mouse Cursor. You will see Custom Image "
 "and Custom Image Hotspot."
 msgstr ""
+"Ouvrez les paramètres du projet, allez dans Display>Mouse Cursor. Vous "
+"verrez Custom Image et Custom Image Hotspot."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:20
 msgid ""
@@ -56,34 +64,41 @@ msgid ""
 "cursor. Custom Hotspot is the point in the image that you would like to use "
 "as the cursor's detection point."
 msgstr ""
+"Custom Image est l'image souhaitée que vous souhaitez définir comme curseur "
+"de la souris. Custom Hotspot est le point de l'image que vous souhaitez "
+"utiliser comme point de détection du curseur."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:23
 msgid "The custom image **must** be less than 256x256."
-msgstr ""
+msgstr "L'image personnalisée **doit** être inférieure à 256x256."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:28
 msgid "Create a Node and attach the following script."
-msgstr ""
+msgstr "Créez un nœud et attachez lui le script suivant."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:64
 msgid ""
 "Check :ref:`Input.set_custom_mouse_cursor() "
 "<class_Input_method_set_custom_mouse_cursor>`."
 msgstr ""
+"Vérifiez :ref:`Input.set_custom_mouse_cursor() "
+"<class_Input_method_set_custom_mouse_cursor>`."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:68
 msgid "Demo project"
-msgstr ""
+msgstr "Projet de démonstration"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:70
 msgid ""
 "Find out more by studying this demo project: https://github.com/"
 "guilhermefelipecgs/custom_hardware_cursor"
 msgstr ""
+"Pour en savoir plus, consultez ce projet de démonstration : https://github."
+"com/guilhermefelipecgs/custom_hardware_cursor"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:74
 msgid "Cursor list"
-msgstr ""
+msgstr "Liste de curseurs"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:76
 msgid ""
@@ -91,3 +106,7 @@ msgid ""
 "**CursorShape** enum), there are multiple mouse cursors you can define. "
 "Which ones you want to use depends on your use case."
 msgstr ""
+"Comme documenté dans la classe :ref:`Input <class_Input>` (voir "
+"l'énumération **CursorShape**), il y a plusieurs curseurs de souris que vous "
+"pouvez définir. Le choix de ceux que vous voulez utiliser dépend de votre "
+"cas d'utilisation."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,63 +185,16 @@ msgstr ""
 "которые ее составляют."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
-msgid "Creating a new project"
-msgstr "Создание нового проекта"
-
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
-msgid ""
-"Let's make these abstract concepts more concrete with an example. Following "
-"a long tradition in tutorials, we'll start with a \"Hello World\" project. "
-"This will introduce us to using the editor."
-msgstr ""
-"Давайте сделаем эти абстрактные понятия более конкретными на примере. Следуя "
-"давней традиции в учебниках, мы начнем с проекта \"Hello World\". Это введет "
-"нас в использование редактора."
-
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
-msgid ""
-"If you run the Godot executable outside of a project, the Project Manager "
-"appears. This helps developers manage their projects."
-msgstr ""
-"Если вы запустите исполняемый файл Godot без проекта, появится Менеджер "
-"Проектов. Это помогает разработчикам управлять их проектами."
-
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
-msgid ""
-"To create a new project, click the \"New Project\" option. Choose and create "
-"a path for the project and specify the project name."
-msgstr ""
-"Чтобы создать новый проект, нажмите \"Новый проект\". Задайте путь для "
-"проекта и укажите его название."
-
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:91
-msgid ""
-"You can also select the rendering backend at this stage (OpenGL ES 3.0 or "
-"OpenGL ES 2.0). The advantages and disadvantages of each are listed to help "
-"you choose, and you can refer to :ref:`doc_gles2_gles3_differences` for more "
-"details. Note that you can change the backend from the project settings if "
-"you change your mind later on. For this tutorial either backend is fine."
-msgstr ""
-"На этом этапе вы также можете выбрать движок рендеринга (OpenGL ES 3.0 или "
-"OpenGL ES 2.0). Преимущества и недостатки каждого перечислены ниже, чтобы "
-"облегчить вам выбор, и вы можете обратиться к :ref:"
-"`doc_gles2_gles3_differences` за подробностями. Обратите внимание, что вы "
-"можете сменить движок в настройках проекта, если позже вы измените своё "
-"мнение. Для этого урока подойдёт любой."
-
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:100
 msgid "Editor"
 msgstr "Редактор"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:102
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
 msgid ""
-"Once you've created the \"New Project\", then open it. This will open the "
-"Godot editor:"
+"Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
+"create a new one. This will open the Godot editor:"
 msgstr ""
-"После того, как вы создали \"Новый проект\", откройте его. Запустится "
-"редактор Godot:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:107
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
 "As mentioned before, making games in Godot feels like being in a kitchen, so "
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
@@ -251,7 +204,7 @@ msgstr ""
 "поэтому давайте откроем холодильник и добавим свежие узлы в проект. Мы "
 "начнем с сообщения \"Hello World!\", которое поместим на экран."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:112
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:89
 msgid ""
 "To do this we need to add a Label node. Press the \"Add Child Node\" button "
 "at the top left of the scene dock (the icon represents a plus symbol). This "
@@ -265,7 +218,7 @@ msgstr ""
 "добавит указанный узел в качестве потомка выбранного в настоящий момент узла "
 "(или, в случае пустой сцены, в качестве \"корневого\" узла)."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
 msgid ""
 "In an empty scene (without root node), the scene dock shows several options "
 "to quickly add a root node to the scene. \"2D Scene\" adds a Node2D node, "
@@ -282,7 +235,7 @@ msgstr ""
 "Дочерний Узел\"). Вы также можете нажать на значок-звёздочку, чтобы "
 "переключить отображение на экране ваших избранных узлов."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:128
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
 msgid ""
 "Note that these presets are here for convenience and are not mandatory for "
 "the different types of scenes. Not every 3D scene needs a Spatial node as "
@@ -295,7 +248,7 @@ msgstr ""
 "интерфейс пользователя или 2D сцена нуждается в Control ноде или Node2D в "
 "качестве корневого узла."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
 "Now, to add a label node to this scene you can click on the Custom Node "
 "button or the Add Node button at the top. In scenes that aren't empty you "
@@ -306,7 +259,7 @@ msgstr ""
 "пустыми, вы можете использовать кнопку добавления ноды, чтобы создать каждый "
 "дочернюю ноду."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:139
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
@@ -314,7 +267,7 @@ msgstr ""
 "Откроется диалоговое окно Создания Узла, показывающее длинный список узлов, "
 "которые могут быть созданы:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:144
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:121
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
@@ -322,11 +275,11 @@ msgstr ""
 "Здесь выберите нод «Label». Найти его через поиск, вероятно самый быстрый "
 "способ:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:149
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr "Выберите \"Label\" и нажмите кнопку «Создать»:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:153
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:130
 msgid ""
 "First of all, the scene changes to the 2D editor (because Label is a 2D Node "
 "type), and the Label appears, selected, at the top left corner of the "
@@ -335,7 +288,7 @@ msgstr ""
 "В первую очередь, сцена меняется на 2D-редактор (потому что Label является "
 "2D Узлом) и в верхнем левом углу окна просмотра появляется Ярлык."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:156
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
 msgid ""
 "The node appears in the scene tree editor (box in the top right corner), and "
 "the label properties appear in the Inspector (box in the bottom right "
@@ -344,7 +297,7 @@ msgstr ""
 "Узел \"Label\" появляется в редакторе узлов сцены (поле в правом верхнем "
 "углу), а свойства узла отображаются в \"инспекторе\" (в нижнем правом углу)."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:160
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:137
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
@@ -352,7 +305,7 @@ msgstr ""
 "Следующим шагом будет изменение свойства «Text». Изменим его на «Hello, "
 "World!»:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:165
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:142
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
@@ -360,11 +313,11 @@ msgstr ""
 "Хорошо, сцена готова! Нажмите кнопку \"Воспроизвести сцену\" справа вверху, "
 "над панелью редактора узлов сцены (или нажмите F6):"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:147
 msgid "Aaaand... Oops."
 msgstr "Ииии... Ой."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:174
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:151
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
@@ -372,7 +325,7 @@ msgstr ""
 "Сцены должны быть сохранены перед запуском, поэтому сохраните сцену, "
 "например, как Hello.tscn через меню Сцена -> Сохранить:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:179
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:156
 msgid ""
 "And here's when something funny happens. The file dialog is a special file "
 "dialog, and only allows you to save inside the project. The project root is "
@@ -390,7 +343,7 @@ msgstr ""
 "или места установки, это способ найти, файлы ресурсов которые находятся "
 "внутри игры."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:164
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
@@ -398,11 +351,11 @@ msgstr ""
 "После сохранения сцены и повторного ее запуска, демка \"Hello, World!\" "
 "должна, наконец, запуститься:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:192
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:169
 msgid "Success!"
 msgstr "Успех!"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:173
 msgid ""
 "If this doesn't immediately work and you have a hiDPI display on at least "
 "one of your monitors, go to **Project → Project Settings → Display → "
@@ -413,11 +366,11 @@ msgstr ""
 "Окно(Project → Project Settings → Display → )**, затем включите **Allow "
 "Hidpi** находящееся под **Dpi**."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
 msgid "Configuring the project"
 msgstr "Настройка проекта"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:206
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
@@ -429,7 +382,7 @@ msgstr ""
 "несколько сцен, поэтому одна из них должна быть установлена как главная "
 "сцена. Именно эта сцена будет загружаться при каждом запуске проекта."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:211
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
 "These settings are all stored in a project.godot file, which is a plaintext "
 "file in win.ini format (for easy editing). There are dozens of settings that "
@@ -444,13 +397,13 @@ msgstr ""
 "меню настроек проекта, который действует как своего рода интерфейс для "
 "редактирования файла project.godot."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:217
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:194
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
 "Чтобы открыть это окно, выберите «Проект -> Настройки проекта». Попробуй "
 "сейчас."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:219
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
@@ -459,7 +412,7 @@ msgstr ""
 "`Application/Run/Main Scene` (`Приложение/Запуск/Главная Сцена`) и нажмите "
 "на него, чтобы выбрать 'Hello.tscn'."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:224
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:201
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
@@ -468,7 +421,7 @@ msgstr ""
 "F5), эта сцена будет запускаться независимо от того, какая сцена "
 "редактируется в данный момент."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:227
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
 msgid ""
 "The project settings dialog provides a lot of options that can be saved to a "
 "project.godot file and shows their default values. If you change a value, a "
@@ -480,7 +433,7 @@ msgstr ""
 "Если вы измените значение, появится галочка слева от ее имени. Это означает, "
 "что свойство будет сохранено в файле project.godot и запомнено."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:232
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
@@ -490,11 +443,11 @@ msgstr ""
 "конфигурации и прочитать их во время выполнения, используя одиночку "
 "(singleton) :ref:`ProjectSettings <class_ProjectSettings>`."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:236
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:213
 msgid "To be continued..."
 msgstr "Продолжение следует..."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:238
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:215
 msgid ""
 "This tutorial talked about \"scenes and nodes\", but so far there has been "
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "

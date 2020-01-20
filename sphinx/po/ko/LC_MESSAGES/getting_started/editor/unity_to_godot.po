@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,6 +36,9 @@ msgid ""
 "prefabs') were added to Unity 2018.3. Nestable prefabs are analogous to "
 "Godot's scenes, and allow a more Godot-like approach to scene organisation."
 msgstr ""
+"이 문서는 예전 버전의 Unity에 대해 말하고 있습니다. 중첩할 수 있는 프리펩('중"
+"첩된 프리펩')은 Unity 2018.3에 추가되었습니다. 중첩할 수 있는 프리펩은 Godot"
+"의 씬과 유사합니다. 그리고 Godot와 유사하게 씬 조직으로 접근할 수 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "Differences"
@@ -163,9 +166,8 @@ msgid ":ref:`Android SDK for Android export <doc_exporting_for_android>`"
 msgstr ":ref:`Android SDK for Android export <doc_exporting_for_android>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:40
-#, fuzzy
 msgid "Notable advantages"
-msgstr "**이점:**"
+msgstr "**주목할만한 이점:**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:40
 msgid "Huge community"
@@ -196,18 +198,16 @@ msgid "The editor"
 msgstr "편집기"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:52
-#, fuzzy
 msgid ""
 "Godot Engine provides a rich-featured editor that allows you to build your "
 "games. The pictures below display the default layouts of both editors with "
 "colored blocks to indicate common functionalities."
 msgstr ""
-"Godot 엔진은 당신이 게임을 만들기 위한 풍부한 기능을 가진 에디터를 제공합니"
-"다. 아래의 그림은 두 에디터 간 공통 기능을 표시하는 색칠된 사각형을 보여줍니"
-"다."
+"Godot 엔진은 게임을 제작하기 위한 풍부한 기능을 가진 편집기를 제공합니다. 밑"
+"의 사진은 두 편집기의 기본 레이아웃을 보여줍니다. 같은 기능에는 같은 색으로 "
+"된 블록으로 표시했습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:58
-#, fuzzy
 msgid ""
 "While both editors may seem similar, there are many differences below the "
 "surface. Both let you organize the project using the filesystem, but Godot's "
@@ -215,25 +215,23 @@ msgid ""
 "format, and no metadata. This makes Godot more friendly to VCS systems, such "
 "as Git, Subversion, or Mercurial."
 msgstr ""
-"두 에디터가 비슷해 보이지만, 외양 아래에 많은 차이가 있습니다. 둘 다 파일 시"
-"스템을 사용해서 프로젝트를 조직할 수 있지만, Godot의 접근은 하나의 구성 파"
-"일, 미니멀리스트 텍스트 형식, 그리고 메타데이터가 없는 것으로 더 간단합니다. "
-"이 모든 것이 Godot가 Git, Subversion, Mercurial와 같은 버전 관리 시스템에 훨"
-"씬 더 친숙한 데 기여합니다."
+"두 편집기 모두 비슷해 보이지만, 내부를 보면 많은 차이점이 있습니다. 두 편집"
+"기 모두 파일 시스템으로 프로젝트를 조직할 수 있게 해줍니다. 하지만 Godot의 접"
+"근법은 더 간단합니다. 하나의 구성 파일, 최대한 간략하게 만든 문자 형식, 그리"
+"고 메타데이터가 없죠. 이 점이 Godot를 Git, Subversion, Mercurial과 같은 버전 "
+"관리 시스템(VCS)에 더 친근하게 만들어줍니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:63
-#, fuzzy
 msgid ""
 "Godot's Scene panel is similar to Unity's Hierarchy panel but, as each node "
 "has a specific function, the approach used by Godot is more visually "
 "descriptive. It's easier to understand what a scene does at a glance."
 msgstr ""
-"Godot의 씬 패널은 유니티의 계층 패널과 비슷하지만,각 노드는 특정 기능을 갖고 "
-"있기 때문에, Godot에서 사용하는 접근은 더 시작적으로 묘사됩니다. 즉, 특정 씬"
-"이 한눈에 무엇을 하는지 더 쉽게 이해할 수 있습니다."
+"Godot의 씬 패널은 Unity의 계층 구조 패널과 유사합니다. 하지만 각 노드가 특정 "
+"기능을 갖고 있는 Godot의 특성 상, 이 접근법은 Godot에서 더 시각적으로 이해하"
+"기 좋습니다. 씬이 어떤 일을 하는 지 한눈에 이해하기가 더 쉽다는 뜻입니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:67
-#, fuzzy
 msgid ""
 "The Inspector in Godot is more minimal, it shows only properties. Thanks to "
 "this, objects can expose more useful parameters to the user without having "
@@ -242,26 +240,24 @@ msgid ""
 "or even links to resources in real-time is possible without needing to write "
 "code."
 msgstr ""
-"Godot의 인스펙터(Inspecter)는 더 미니멀리스트하고 속성 만을 보여주기 위해 설"
-"계되었습니다. 덕분에, 객체는 언어 API에서 기능성을 숨길 필요 없이 훨씬 더 넓"
-"은 유용한 매개 변수를 사용자에게 내보낼 수 있습니다. 거기에, Godot는 어떤 시"
-"각적 속성도 애니메이트 할 수 있기 때문에, 색상이나 텍스쳐, 열거, 혹은 심지어 "
-"리소스 링크를 실시간으로 변경하는 것이 코드 없이 가능합니다."
+"Godot의 인스펙터(Inspector)는 더 간략합니다. 오직 속성만 보여주죠. 덕분에 객"
+"체는 언어 API에서 기능을 숨길 필요없이 더 유용한 매개변수를 사용자에게 보여"
+"줄 수 있습니다. 게다가 Godot는 모든 속성을 시각적으로 애니메이션을 줄 수 있습"
+"니다. 색상을 바꾸거나, 텍스처, 열거, 심지어 리소스에 연결하는 것도 코드를 작"
+"성할 필요없이 실시간으로 가능합니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:72
-#, fuzzy
 msgid ""
 "The Toolbar at the top of the screen is similar in both editors, offering "
 "control over project playback. Projects in Godot run in a separate window, "
 "rather than inside the editor (but the tree and objects can still be "
 "explored in the debugger window)."
 msgstr ""
-"마지막으로, 화면 위의 툴바는 프로젝트 재생을 다루는 의미 상 비슷해 보입니다. "
-"하지만 Godot의 프로젝트는 편집기 내부에서 실행되지 않고, 분리된 창에서 실행됩"
-"니다 (하지만 디버거 창에서 트리와 객체를 계속 탐구할 수 있습니다)."
+"화면 상단의 툴바는 두 편집기 모두 유사합니다. 프로젝트 실행을 제어합니다. "
+"Godot에서는 프로젝트가 편집기 내에서가 아닌 별개의 창에서 실행됩니다 (하지만 "
+"트리와 객체는 디버거 창에서 탐색할 수 있습니다)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:76
-#, fuzzy
 msgid ""
 "This approach has the disadvantage that in Godot the running game can't be "
 "explored from different angles (though this may be supported in the future "
@@ -296,40 +292,36 @@ msgid "The editor is more stable because the game runs in a separate process."
 msgstr "게임이 별도의 프로세스에서 실행되기 때문에 편집기는 더 안정적입니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:84
-#, fuzzy
 msgid ""
 "Finally, Godot's top toolbar includes a menu for remote debugging. These "
 "options allow deployment to a device (connected phone, tablet, or browser "
 "via HTML5), and debugging/live editing on it after the game is exported."
 msgstr ""
-"마지막으로, 상단 툴바는 원격 디버깅을 위한 메뉴가 있습니다. 이 설정은 기기에 "
-"배포하기 쉽도록 만듭니다 (핸드폰, 태블릿, 혹은 HTML5를 통한 브라우저를 연"
-"결), 그리고 게임을 내보낸 후 디버그/실시간 편집을 거기서 하도록 만듭니다."
+"마지막으로 Godot의 상단 툴바에는 원격 디버그를 위한 메뉴가 있습니다. 이 설정"
+"으로 (폰, 태블릿에 연결된, 혹은 HTML5를 통한 브라우저와 같은) 기기 환경에서 "
+"개발을 할 수 있습니다. 그리고 게임을 내보낸 후 디버깅/실시간 편집이 가능합니"
+"다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:89
 msgid "The scene system"
 msgstr "씬 시스템"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:91
-#, fuzzy
 msgid ""
 "This is the most important difference between Unity and Godot and the "
 "favourite feature of most Godot users."
 msgstr ""
-"유니티와 Godot와의 가장 중요한 차이점이자, Godot 사용자들이 가장 좋아하는 기"
-"능입니다."
+"Unity와 Godot의 가장 큰 차이점이자 Godot 사용자가 가장 좋아하는 기능입니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:93
-#, fuzzy
 msgid ""
 "Working on a 'level' in Unity usually means embedding all the required "
 "assets in a scene and linking them together with components and scripts."
 msgstr ""
-"유니티의 씬 시스템은 필요한 씬에 모든 에셋을 포함하고 구성 요소와 스크립트를 "
-"설정함으로써 그들을 연결하도록 구성되어 있습니다."
+"Unity에서 'Level'에서 작업한다는 것은 보통 모든 필요한 에셋을 한 씬에 묶고, "
+"구성 요소와 스크립트로 함께 연결하는 것을 의미합니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:96
-#, fuzzy
 msgid ""
 "Godot's scene system is superficially similar to Unity. A 'level' consists "
 "of a collection of nodes, each with its own purpose: Sprite, Mesh, Light, "
@@ -338,11 +330,11 @@ msgid ""
 "you can compose a whole scene with different scenes stored in different "
 "files."
 msgstr ""
-"Godot의 씬 시스템은 다릅니다: 사실 노드로 이루어진 트리를 구성하고 있습니다. "
-"각 노드는 용도를 지니고 있습니다: 스프라이트, 메시, 빛 등. 기본적으로 유니티"
-"의 씬 시스템과 유사합니다. 하지만, 각 노드는 여러 개의 자식을 가질 수 있습니"
-"다, 그리고 그 자식들을 각기 다른 하위 씬으로 만들 수 있습니다. 즉, 서로 다른 "
-"파일에 저장된 여러 씬으로 전체 씬을 작업할 수 있습니다."
+"Godot의 씬 시스템은 Unity와 겉으로는 유사합니다. 'Level'은 노드 모음을 갖고 "
+"있으면서, 각 노드는 용도를 지니고 있습니다: Sprite, Mesh, Light 등. 하지만 "
+"Godot에서 노드는 트리로 정렬할 수 있습니다. 각 노드는 여러 자식을 가질 수 있"
+"고, 자식은 메인 씬의 하위 씬으로 이루어질 수 있습니다. 이는 즉, 다른 파일에 "
+"저장된 다른 씬으로 전체 씬을 작업할 수 있다는 것입니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:99
 msgid ""
@@ -384,55 +376,49 @@ msgstr ""
 "소가 충돌할 수 있도록 합니다. 이 원리가 Godot에서는 다릅니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:111
-#, fuzzy
 msgid ""
 "In Godot, you would split your whole scene into three separate, smaller "
 "scenes, and instance them in the main scene."
 msgstr ""
-"Godot에서, 전체 씬을 3개의, 더 작은 씬으로 나누고, 그들을 메인 씬에 인스턴스 "
-"합니다."
+"Godot에서는 전체 씬을 별개의, 더 작은 세 개의 씬으로 나눕니다. 그리고 메인 씬"
+"으로 그 씬들을 인스턴스합니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:113
-#, fuzzy
 msgid "**A scene for the Player alone.**"
-msgstr "**먼저, 플레이어만 있는 씬입니다.**"
+msgstr "**플레이어만 있는 씬**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:115
-#, fuzzy
 msgid ""
 "Consider the player as an element we'd like to use in different parent "
 "scenes (for instance 'level' scenes). In our case, the player element needs "
 "at least an AnimatedSprite node. This node contains the sprite textures "
 "necessary for various animations (for example, a walking animation)."
 msgstr ""
-"플레이어를 다른 레벨에도 재 사용 가능한 요소라고 생각해보세요. 특히 하나의 노"
-"드로 구성됩니다: 다양한 애니메이션을 구성하기 위한 스프라이트 텍스쳐를 가진 "
-"AnimatedSprite 노드 (예를 들면, 걷는 애니메이션)"
+"플레이어를 다른 부모 씬에서도 사용할 수 있는 요소라고 생각해보세요 (예를 들"
+"어 'level' 씬이죠). 이 경우에는 플레이어 요소는 적어도 하나의 AnimatedSprite "
+"노드가 필요합니다. 이 노드는 다양한 애니메이션을 주기 위해 스프라이트 텍스처"
+"가 반드시 필요합니다 (예를 들어 걷는 애니메이션)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:117
-#, fuzzy
 msgid "**A scene for the Enemy.**"
-msgstr "**두 번째, 적을 위한 씬입니다.**"
+msgstr "**적을 위한 씬**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:119
-#, fuzzy
 msgid ""
 "An enemy is also an element we'd like to use in several scenes. It's almost "
 "the same as the Player node. The only differences are the script (it needs "
 "'AI' routines to generate the enemy's behaviour) and the sprite textures "
 "used by the AnimatedSprite node."
 msgstr ""
-"역시, 적은 다른 레벨에서 재 사용 가능합니다. Player 노드와 거의 똑같습니다 - "
-"유일한 차이는 스크립트 입니다 (주로 AI를 다룹니다) 그리고 AnimatedSprite가 사"
-"용되는 스프라이트 텍스쳐입니다."
+"적도 마찬가지로 다양한 씬에서 사용할 수 있는 요소입니다. 플레이어 노드랑 거"
+"의 일치합니다. 유일한 차이점은 스크립트입니다 (적의 행동을 만드는 'AI' 루틴"
+"이 필요하죠). 그리고 AnimatedSprite 노드에 쓰이는 스프라이트도 다를 것입니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:123
-#, fuzzy
 msgid "**A Level scene.**"
-msgstr "**마지막으로, 레벨 씬입니다.**"
+msgstr "**레벨 씬.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:125
-#, fuzzy
 msgid ""
 "A Level scene is composed of Bricks (for platforms), Coins (for the player "
 "to collect) and a number of instances of the Enemy scene. Each instance is a "
@@ -441,14 +427,13 @@ msgid ""
 "scene. You can set different properties for each Enemy node (to change its "
 "color, for example)."
 msgstr ""
-"이것은 (플랫폼을 위한)블럭, (플레이어가 집을)동전 그리고 이전의 Enemy 씬의 일"
-"정한 수의 인스턴스로 구성되어 있습니다. 이들은 다른, 분리된 적으로, 행동과 양"
-"상은 같은 Enemy 씬에서 정의된 것과 같을 것입니다. 각 인스턴스는 이제 레벨 씬 "
-"트리의 노드로 취급됩니다. 물론, 각 Enemy 노드 마다 다른 속성을 설정할 수 있습"
-"니다 (예를 들어, 색상을 바꾸는 것)."
+"레벨 씬은 (플랫폼 용도) 블럭과, (플레이어가 모으는) 코인, 그리고 많은 양의 "
+"적 씬 인스턴스로 제작됩니다. 각 인스턴스는 레벨 씬 트리의 노드입니다. 이 인스"
+"턴스는 개별적인 적으로, 적 씬에서 정의한 대로 초기 값으로 행동과 모습을 공유"
+"합니다. 각 적 노드마다 다른 속성을 설정할 수 있습니다 (예를 들어, 색상을 바꾸"
+"는 것이 있죠)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:129
-#, fuzzy
 msgid ""
 "4. **A Main scene.** The Main scene would be composed of one root node with "
 "2 children: a Player instance node, and a Level instance node. The root node "
@@ -457,11 +442,11 @@ msgid ""
 "\"Spatial\" (root type of all 3D-related nodes) or \"Control\" (root type of "
 "all GUI-related nodes)."
 msgstr ""
-"마지막으로, 메인 씬은 이제 한 루트 노드와 2개의 자식으로 구성될 것입니다: "
-"Player 인스턴스 노드, 그리고 레벨 인스턴스 노드입니다. 루트 노드는 어떤 것도 "
-"될 수 있지만, 일반적으로 \"루트\" 타입은 가장 전역 타입인 \"Node\"나, (모든 "
-"2D 관련 노드의 루트 타입인) \"Node2D\", (모든 3D 관련 노드의 루트 타입인) "
-"\"Spatial\", (모든 GUI 관련 노드의 루트 타입인) \"Control\"이 됩니다."
+"4. **메인 씬.** 메인 씬은 하나의 루트 노드와 2 개의 자식으로 제작됩니다: 플레"
+"이어 인스턴스 노드, 레벨 인스턴스 노드. 루트 나도는 아무거나 가능합니다. 일반"
+"적으로 \"루트\" 유형인 노드가 있죠. 가장 전역 유형에 있는 \"Node\", (모든 2D "
+"관련 노드의 루트 유형인) \"Node2D\", (모든 3D 관련 노드의 루트 유형인) "
+"\"Spatial\", 혹은 (모든 GUI 관련 노드의 루트 유형인) \"Control\"이 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:135
 msgid ""
@@ -479,29 +464,26 @@ msgstr ""
 "<doc_physics_introduction>`\\ 를 참고하세요)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:140
-#, fuzzy
 msgid ""
 "What are the advantages of this system? Wouldn't this system potentially "
 "increase the depth of the scene tree? And doesn't Unity already allow you to "
 "organize GameObjects by putting them inside empty GameObjects?"
 msgstr ""
-"문제: 이 시스템의 장점은 무엇일까요? 이 시스템이 잠재적으로 씬 트리의 깊이를 "
-"증가시키지 않을까요? 게다가, 유니티는 비어있는 GameObjects에 그들을 넣어서 "
-"GameObjects를 조직할 수 있습니다."
+"이 시스템의 장점은 뭐가 있나요? 이 시스템이 잠재적으로 씬 트리의 깊이를 늘리"
+"진 않을까요? 그리고 Unity는 이미 빈 GameObject에 GameObject를 넣는 것으로 이"
+"를 조직하는 것이 가능할텐데요?"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:142
-#, fuzzy
 msgid ""
 "Godot's system is closer to the well-known object-oriented paradigm: Godot "
 "provides a number of nodes which are not clearly \"Game Objects\", but they "
 "provide their children with their own capabilities: this is inheritance."
 msgstr ""
-"먼저, 이 시스템은 잘 알려진 객체 기반 어형 변화표와 근접합니다: Godot는 분명"
-"하지 않은 \"Game Objects\"인 여러 노드들을 제공합니다, 하지만 그들은 자식에"
-"게 자신의 능력을 제공합니다: 이것이 상속입니다."
+"Godot의 시스템은 잘 알려진 객체 기반 패러다임과 근접합니다: Godot는 많은 노드"
+"를 제공하지만 그것이 \"Game Objects\"라고 정의하기는 어렵습니다. 하지만 노드"
+"는 자신의 자식에게 자신의 기능을 제공합니다: 이것이 상속입니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:143
-#, fuzzy
 msgid ""
 "Godot allows the extraction of a subtree of a scene to make it a scene of "
 "its own. So if a scene tree gets too deep, it can be split into smaller "
@@ -509,12 +491,11 @@ msgid ""
 "a child of any node. Putting multiple GameObjects in an empty GameObject in "
 "Unity does not provide the same functionality."
 msgstr ""
-"두 번째로, 씬의 하위 트리를 추출하여 고유의 씬을 만들 수 있습니다, 이걸로 두 "
-"번째와 세 번째 문제에 답할 수 있습니다: 비록 씬 트리가 너무 깊어지더라도, 더 "
-"작은 하위 트리로 나눌 수 있습니다. 또한 하위 트리가 어떤 노드의 자식이든지 추"
-"가될 수 있다는 점에서 재 사용 가능성에 더 좋은 해결책이 됩니다. 유니티에서 "
-"빈 GameObject에 많은 노드를 넣는 것으로는 시각적인 조직과는 별개로, 이와 같"
-"은 가능성을 제공하진 못합니다."
+"Godot는 씬의 하위 씬을 추출해서 자체적인 씬을 만드는 것이 가능합니다. 따라서 "
+"씬 트리가 너무 깊어지면, 더 작은 하위 씬으로 분리하는 것이 가능합니다. 이 점"
+"으로 노드와 자식이 있으면 하위 씬을 만들 수 있기 때문에 재활용성에 더 좋습니"
+"다. Unity에서 빈 GameObject에 여러 GameObject를 넣는 방식은 같은 기능을 제공"
+"하지 못합니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:146
 msgid "Project organization"
@@ -525,49 +506,47 @@ msgid ""
 "There is no perfect project architecture. Any architecture can be made to "
 "work in either Unity and Godot."
 msgstr ""
+"완벽한 프로젝트 구조라는 것은 없습니다. 어떤 구조라도 Unity와 Godot에서 작업"
+"을 위해 만들 수 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:153
-#, fuzzy
 msgid ""
 "However, a common architecture for Unity projects is to have one Assets "
 "folder in the root directory that contains various folders, one per type of "
 "asset: Audio, Graphics, Models, Materials, Scripts, Scenes, and so on."
 msgstr ""
-"하지만, 우리는 종종 유니티 프로젝트를 위한 공통 구조를 발견합니다, 하나의 "
-"Assets 폴더가 루트 디렉토리로 하여 타입에 맞는 다양한 폴더를 가지고 있습니"
-"다: Audio, Graphics, Models, Materials, Scripts, Scenes 등."
+"하지만 Unity 프로젝트를 위한 일반적인 구조는 루트 디렉토리에 하나의 Assets 폴"
+"더를 갖는 것입니다. 여기에는 다양한 폴더가 있으며 각 폴더마다 하나의 유형의 "
+"파일이 있습니다: 오디오, 그래픽, 모델, 머티리얼, 스크립트, 장면 등."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:156
-#, fuzzy
 msgid ""
 "Since Godot allows splitting scenes into smaller scenes, each scene and "
 "subscene existing as a file in the project, we recommend organizing your "
 "project a bit differently. This wiki provides a page for this: :ref:"
 "`doc_project_organization`."
 msgstr ""
-"앞에서 설명한 것처럼, Godot 씬 시스템은 씬을 더 작은 씬으로 분리합니다. 각 씬"
-"과 하위 씬은 사실 프로젝트에서 하나의 씬 파일이기 때문에, 우리는 프로젝트를 "
-"약간 다르게 구성하기를 추천합니다. 이 위키는 이것을 위한 페이지를 제공합니"
-"다: :ref:`doc_project_organization`."
+"Godot는 씬을 더 작은 씬으로 분리할 수 있으므로, 프로젝트에서 각 씬과 하위 씬"
+"은 하나의 파일로 존재합니다. 프로젝트를 조금 다르게 조직하는 것을 추천합니"
+"다. 여기서는 프로젝트 조직을 알려주는 페이지를 알려 드리겠습니다: :ref:"
+"`doc_project_organization`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:161
 msgid "Where are my prefabs?"
 msgstr "프리펩은 어디갔나요?"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:163
-#, fuzzy
 msgid ""
 "A prefab as provided by Unity is a 'template' element of the scene. It is "
 "reusable, and each instance of the prefab that exists in the scene has an "
 "existence of its own, but all of them have the same properties as defined by "
 "the prefab."
 msgstr ""
-"유니티가 제공하는 프리펩의 개념은 씬의 '템플릿' 요소입니다. 그것은 씬에 존재"
-"하는 재 사용이 가능하며 씬에 존재하는 프리펩의 각 인스턴스는 주체성이 있지"
-"만, 이 모두는 프리펩에 의해 정의된 같은 속성을 지닙니다."
+"Unity가 제공하는 프리펩의 개념은 씬의 '템플릿' 요소입니다. 다시 사용할 수 있"
+"고, 장면에서 프리펩의 각 인스턴스는 스스로 존재합니다. 하지만 모든 인스턴스"
+"는 프리펩에서 정의한 똑같은 속성을 갖고 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:167
-#, fuzzy
 msgid ""
 "Godot does not provide prefabs as such, but the same functionality is "
 "provided by its scene system: The scene system is organized as a tree. Godot "
@@ -577,14 +556,14 @@ msgid ""
 "instances. However, any change you make to the instance will not have any "
 "impact on the 'template' scene."
 msgstr ""
-"Godot는 그러한 프리펩을 제공하진 않지만, 씬 시스템 덕분에 그 기능이 있습니"
-"다: 우리가 씬 시스템이 트리처럼 조직된 것을 보셨습니다. Godot는 씬의 하위 트"
-"리를 자체 씬으로 저장하여 자체 파일로 저장합니다. 이 새로운 씬은 그 뒤 원하"
-"는 만큼 인스턴스 될 수 있습니다. 이 새로운 씬에 준 변화는 모든 인스턴스에 적"
-"용될 것입니다. 하지만 그 변화가 '템플릿' 씬에 영향을 주지는 않을 것입니다."
+"Godot에서는 그러한 프리펩을 제공하지 않지만, 씬 시스템으로 같은 기능을 제공합"
+"니다: 씬 시스템은 트리로 조직됩니다. Godot는 씬의 하위 트리를 씬 파일로 저장"
+"할 수 있습니다. 이 새로운 씬은 노드의 자식으로 원하는 만큼 인스턴스할 수 있습"
+"니다. 앞에서 만든 하위 트리로 만든 씬에서 일어난 변경 사항은 인스턴스로 적용"
+"될 것입니다. 하지만 인스턴스에서 일어난 변경 사항은 '템플릿' 씬에게 영향을 주"
+"지 않을 것입니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:174
-#, fuzzy
 msgid ""
 "To be precise, you can modify the parameters of an instance in the Inspector "
 "panel. The nodes that compose this instance are initially locked. You can "
@@ -595,13 +574,13 @@ msgid ""
 "add new children to every instance of your 'template' scene, then you should "
 "add them in the 'template' scene."
 msgstr ""
-"정확하게 말하면, 당신은 인스펙터(Inspecter) 패널에서 인스턴스의 매개 변수를 "
-"수정할 수 있습니다. 하지만, 비록 당신이 씬 트리에서 인스턴스를 우클릭하고 "
-"\"자식노드 편집 가능\"를 선택하여 인스턴스를 잠금 해제할 수 있지만 이 인스턴"
-"스를 만드는 노드는 잠겨있습니다. 새 자식 노드를 추가하려고 이 작업을 할 필요"
-"는 없지만 가능은 합니다. 새 자식 은 인스턴스에 속해 있습니다, '템플릿' 씬이 "
-"아닙니다. '템플릿' 씬의 모든 인스턴스에 새 자식을 추가하려면, '템플릿' 씬에 "
-"새 자식을 추가해야 합니다."
+"정확히는, 인스펙터(Inspector) 패널에서 인스턴스의 매개변수를 수정할 수 잇습니"
+"다. 이 인스턴스를 만든 노드는 초기값이 고정되어 있습니다. 고정 값을 풀고 싶다"
+"면 씬 트리에서 인스턴스를 우클릭한 뒤, 메뉴에서 \"편집할 수 있는 자식"
+"(Editable children)\"을 선택하세요. 이 노드에 *새로운* 자식 노드를 추가할 필"
+"요가 없습니다. 모든 새 자식은 인스턴스에 속하는 것이지, 디스크에 있는 '템플"
+"릿' 씬에 속하는 것이 아님을 명심하세요. '템플릿' 씬의 모든 인스턴스에게 새 자"
+"식을 추가하고 싶다면, 자식은 '템플릿' 씬에 추가해야 할 것입니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:184
 msgid "Glossary correspondence"
@@ -617,7 +596,7 @@ msgstr "컴포넌트 추가 -> 상속"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:188
 msgid "Prefab -> Reusable Scene file"
-msgstr ""
+msgstr "프리펩 -> 다시 사용할 수 있는 씬 파일"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:192
 msgid "Scripting: GDScript, C# and Visual Script"
@@ -628,16 +607,14 @@ msgid "Design"
 msgstr "디자인"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
-#, fuzzy
 msgid ""
 "Unity supports C#. C# benefits from its integration with Visual Studio and "
 "has desirable features such as static typing."
 msgstr ""
-"이미 알고 계시겠지만, Unity는 C#을 지원합니다. C#은 Visual Studio 및 정적 타"
-"입과 같은 다른 기능과의 통합을 통해 이익을 얻습니다."
+"Unity는 C#을 지원합니다. C#은 Visual Studio와의 통합의 이점이 있고 정적 타이"
+"핑과 같은 바람직한 기능을 갖고 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:199
-#, fuzzy
 msgid ""
 "Godot provides its own scripting language, :ref:`GDScript <doc_scripting>` "
 "as well as support for :ref:`Visual Script <toc-learn-scripting-"
@@ -650,11 +627,11 @@ msgid ""
 msgstr ""
 "Godot는 독자적인 스크립트 언어를 제공합니다, :ref:`GDScript <doc_scripting>`"
 "\\ 와 :ref:`Visual Script <toc-learn-scripting-visual_script>`, 그리고 :ref:"
-"`doc_c_sharp`\\ 을 지원합니다. GDScript는 Python의 문법을 빌려오지만, 관련은 "
-"없습니다. 커스텀 스크립트 언어를 쓰는 이유가 궁금하시다면, :ref:"
-"`doc_gdscript`\\ 와 :ref:`doc_faq`\\ 페이지를 읽어주시기 바랍니다. GDScript"
-"는 Godot API와 밀접하고 배우기 쉽습니다: 숙련된 프로그래머든지 막 개발을 시작"
-"한 사람이든지 말입니다."
+"`doc_c_sharp`. GDScript는 Python의 문법을 빌려왔지만 관련은 없습니다. 왜 맞"
+"춤 스크립트 언어에 대해 궁금하다면, :ref:`doc_gdscript`\\ 와 :ref:`doc_faq` "
+"페이지를 참고해주세요. GDScript는 Godot API와 강하게 연결되어 있으면서도 배우"
+"는데 오래 걸리지 않습니다: 전문적인 프로그래머와 저번 주에 막 시작한 컴퓨터 "
+"초보자에게도 말이죠."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:205
 msgid ""
@@ -696,13 +673,12 @@ msgstr ""
 "수 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:216
-#, fuzzy
 msgid ""
 "As you can see, it can be easy to turn a scene tree to a mess. Consider "
 "splitting any complicated scene into multiple, smaller branches."
 msgstr ""
-"보시다시피 씬 트리를 뒤죽박죽으로 만드는 것은 쉽습니다. 그렇기 때문에 실제 상"
-"황을 반영하고 복잡한 씬을 여러 개의 작은 분기로 나누는 것이 중요합니다."
+"보다시피, 씬 트리는 쉽게 엉망이 될 수 있습니다. 복잡한 씬을 여러 개의, 더 작"
+"은 분기로 나누는 것을 생각해보세요."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:219
 msgid "Connections: groups and signals"
@@ -728,9 +704,9 @@ msgid ""
 "<doc_gdscript_signals>`."
 msgstr ""
 "노드는 특정 동작이 발생할 때 시그널을 보냅니다. 시그널은 함수를 호출하도록 설"
-"정될 수 있습니다. 커스텀 시그널을 정의하고 언제 시그널을 보낼 지를 지정할 수 "
-"있습니다. 자세한 설명은 :ref:`시그널 문서 <doc_gdscript_signals>`\\ 를 참고하"
-"세요."
+"정될 수 있습니다. 맞춤 시그널을 정의하고 언제 시그널을 보낼 지를 지정할 수 있"
+"습니다. 자세한 설명은 :ref:`시그널 문서 <doc_gdscript_signals>`\\ 를 참고하세"
+"요."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:231
 msgid "Script serialization"
@@ -779,11 +755,11 @@ msgid ""
 "`class_Resource` will allow you to create custom serializable objects. More "
 "information about resources can be found :ref:`here <doc_resources>`."
 msgstr ""
-"Unity 또한 커스텀 애셋 객체를 직렬화 하기 위해 사용되는 ``ScriptableObject`` "
-"라는 데이터 타입을 갖고 있습니다. Godot에서 이것은 모든 리소스의 기본 클래스"
-"에 해당합니다: :ref:`class_Resource`. :ref:`class_Resource`\\ 를 상속하는 스"
-"크립트를 만드는 것으로 커스텀 직렬화 가능한 객체를 만들 수 있게 됩니다. 리소"
-"스에 관한 더 많은 정보는 :ref:`여기서 <doc_resources>` 볼 수 있습니다."
+"Unity 또한 맞춤 애셋 객체를 직렬화 하기 위해 사용되는 ``ScriptableObject`` 라"
+"는 데이터 타입을 갖고 있습니다. Godot에서 이것은 모든 리소스의 기본 클래스에 "
+"해당합니다: :ref:`class_Resource`. :ref:`class_Resource`\\ 를 상속하는 스크립"
+"트를 만드는 것으로 맞춤 직렬화 가능한 객체를 만들 수 있게 됩니다. 리소스에 관"
+"한 더 많은 정보는 :ref:`여기서 <doc_resources>` 볼 수 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:248
 msgid "Using Godot in C++"

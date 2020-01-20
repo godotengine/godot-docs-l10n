@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:4
 msgid "Importing images"
-msgstr ""
+msgstr "イメージのインポート"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
 msgid "Why import them?"
-msgstr ""
+msgstr "なぜそれらをインポートするのですか？"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
 msgid ""
@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:17
 msgid "Importing textures"
-msgstr ""
+msgstr "テクスチャのインポート"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:19
 msgid ""
@@ -54,8 +54,8 @@ msgid ""
 "drawing them efficient."
 msgstr ""
 "Godotのデフォルトのアクションは、イメージをテクスチャとして読み込む方法です。"
-"テクスチャはビデオメモリに格納され、直接アクセスすることはできません。これが"
-"それらを効率的に描く理由です。"
+"テクスチャはビデオメモリに格納され、直接アクセスすることはできません。それは"
+"それらを効率的に描く為です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:23
 msgid "Import options are vast:"
@@ -63,7 +63,7 @@ msgstr "インポートオプションは豊富です:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:28
 msgid "Detect 3D"
-msgstr "3Dの検出"
+msgstr "3Dの検出(Detect 3d)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:30
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
 msgid "Compression"
-msgstr ""
+msgstr "圧縮"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:36
 msgid ""
@@ -89,13 +89,13 @@ msgid ""
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
-"画像は、ゲーム内で最大のアセットの 1 つです。それらを効率的に処理するには、圧"
+"画像は、ゲーム内で最大のアセットの 1つです。それらを効率的に処理するには、圧"
 "縮する必要があります。Godot は、ユースケースに応じて、いくつかの圧縮方法を提"
 "供します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:40
 msgid "Compress Mode"
-msgstr "圧縮モード"
+msgstr "圧縮モード(Compress Mode)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
 msgid ""
@@ -103,9 +103,9 @@ msgid ""
 "File on disk is reduced and video memory usage is also reduced considerably. "
 "For 3D, it may present unwanted artifacts, though."
 msgstr ""
-"VRAM圧縮:これは3Dアセットの最も一般的な圧縮モードです。ディスク上のファイルが"
-"削減され、ビデオメモリの使用量も大幅に削減されます。ただし、3Dの場合は、不要"
-"なアーティファクトが表示される場合があります。"
+"VRAM圧縮(Video RAM):これは3Dアセットの最も一般的な圧縮モードです。ディスク上"
+"のファイルが削減され、ビデオメモリの使用量も大幅に削減されます。ただし、3Dの"
+"場合は、不要なアーティファクトが表示される場合があります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
 msgid ""
@@ -114,9 +114,9 @@ msgid ""
 "decent. It will use considerably more amount of video memory than VRAM, "
 "though."
 msgstr ""
-"ロスレス圧縮:これは2Dアセットで最も一般的な圧縮です。これは、人為的な影響を受"
-"けずにアセットを表示するものであり、ディスク圧縮は適切です。ただし、VRAMより"
-"もかなり多くのビデオメモリを使用します。"
+"ロスレス圧縮(Lossless):これは2Dアセットで最も一般的な圧縮です。これは、人為的"
+"な影響を受けずにアセットを表示するものであり、ディスク圧縮は適切です。ただ"
+"し、VRAM圧縮よりもかなり多くのビデオメモリを使用します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
 msgid ""
@@ -124,15 +124,17 @@ msgid ""
 "can be a great choice. It has some artifacting, but less than VRAM and the "
 "file size is almost a tenth of Lossless."
 msgstr ""
-"非可逆圧縮:大きな2Dアセットを多く使用するゲームでは、非可逆圧縮が適していま"
-"す。多少の不自然さはありますが、VRAMより小さく、ファイルサイズはロスレスの10"
-"分の1程度です。"
+"非可逆圧縮(Lossy):大きな2Dアセットを多く使用するゲームでは、非可逆圧縮が適し"
+"ています。多少の不自然さはありますが、VRAM圧縮より小さく、ファイルサイズはロ"
+"スレス圧縮の10分の1程度です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid ""
 "Uncompressed: Only useful for formats that can't be compressed (like, raw "
 "float)."
-msgstr "圧縮なし:圧縮できない書式 (生の浮動小数点型など) にのみ役立ちます。"
+msgstr ""
+"圧縮なし(Uncompressed):圧縮できないフォーマット (raw floatなど) にのみ役立ち"
+"ます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid ""
@@ -243,7 +245,7 @@ msgstr "|悪い|遅い"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:76
 msgid "HDR Mode"
-msgstr "HDRモード"
+msgstr "HDRモード(HDR Mode)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:78
 msgid ""
@@ -253,16 +255,23 @@ msgid ""
 "2.x. Modern PCs support the BC6H VRAM format, but there are still plenty "
 "that do not."
 msgstr ""
+"Godotは、高ダイナミックレンジテクスチャ(.HDRまたは.EXR)をサポートしています。"
+"これらは、Godot 2.xのキューブマップに代わる、高ダイナミックレンジの正距円筒"
+"(equirectangular)のパノラマスカイ(インターネットを検索すればたくさんあります)"
+"として非常に便利です。最近のPCはBC6H VRAM形式をサポートしていますが、まだサ"
+"ポートしていないものがたくさんあります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:81
 msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
 "textures, enable the \"Force RGBE\" option."
 msgstr ""
+"テクスチャの種類に関してGodotに完全な互換性を確保する場合は、[RGBEを強制する]"
+"オプションを有効にします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 msgid "Normal Map"
-msgstr "通常のマップ"
+msgstr "ノーマルマップ(Normal Map)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid ""
@@ -274,6 +283,13 @@ msgid ""
 "which means that if the texture is ever used as a normal map, it will be "
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
+"テクスチャをノーマル(法線)マップとして使用する場合は、赤と緑のチャンネルのみ"
+"が必要です。通常のテクスチャ圧縮アルゴリズムのノーマルマップではある程度の見"
+"栄えの悪いアーティファクトが生成されるため、RGTC圧縮形式がこのデータに最適で"
+"す。このオプションを「有効」に強制すると、GodotはRGTC圧縮として画像をインポー"
+"トします。デフォルトでは、「検出」に設定されています。つまり、テクスチャが"
+"ノーマルマップとして使用されると、「有効」に変更され、自動的に再インポートさ"
+"れます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid ""
@@ -281,10 +297,13 @@ msgid ""
 "have to adjust custom shaders that use the normal map to take this into "
 "account."
 msgstr ""
+"RGTC圧縮は、結果として得られるノーマルマップイメージに影響することに注意して"
+"ください。これを考慮するには、ノーマルマップを使用するカスタム シェーダを調整"
+"する必要があります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Flags"
-msgstr ""
+msgstr "フラグ(Flags)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid ""
@@ -296,7 +315,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:99
 msgid "Repeat"
-msgstr ""
+msgstr "リピート(Repeat)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid ""
@@ -304,14 +323,16 @@ msgid ""
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
 "\"loop\"."
 msgstr ""
+"この設定は3Dで最も一般的に使用されるため、通常2Dでは無効になっています。 0,0"
+"～1,1の範囲を超えて「ループ」するUV座標を設定します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "Repeating can optionally be set to mirrored mode."
-msgstr ""
+msgstr "リピートは、必要に応じてミラー (mirrored)モードに設定できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:106
 msgid "Filter"
-msgstr ""
+msgstr "フィルタ(Filter)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:108
 msgid ""
@@ -320,10 +341,15 @@ msgid ""
 "setting can be commonly used in 2D and 3D, but it's usually disabled when "
 "making pixel perfect games."
 msgstr ""
+"テクスチャのピクセルが画面のピクセルより大きくなると、このオプションは線形補"
+"間を有効にします。その結果、より滑らかな(ブロックの少ない)テクスチャが得られ"
+"ます。この設定は2Dおよび3Dで一般的に使用できますが、ピクセルパーフェクト(テク"
+"スチャの画素と画面の画素が1対1)なゲームを作成する場合は通常無効になっていま"
+"す。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:111
 msgid "Mipmaps"
-msgstr ""
+msgstr "ミップマップ(Mipmaps)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:113
 msgid ""
@@ -334,39 +360,45 @@ msgid ""
 msgstr ""
 "ピクセルが画面よりも小さくなると、ミップマップが始まります。これにより、テク"
 "スチャを縮小する際の粒状効果を低減するのに役立ちます。古いハードウェア "
-"(GLES2、主にモバイル) では、mipmaps を使用する要件がいくつかあります:"
+"(GLES2、主にモバイル) では、ミップマップを使用する要件がいくつかあります:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:116
 msgid "Texture width and height must be powers of 2"
-msgstr "テクスチャの幅と高さは 2 の力でなければなりません"
+msgstr ""
+"テクスチャの幅と高さは 2 のべき乗でなければなりません(16、32、64、256など)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:117
 msgid "Repeat must be enabled"
-msgstr "繰り返しを有効にする必要があります"
+msgstr "リピートを有効にする必要があります"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:119
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
-"電話ゲームやアプリケーションを作成する際には、上記の注意を要し、完全な互換性"
-"を目指し、ミップマップが必要です。"
+"携帯電話向けにゲームやアプリケーションを作成する際には、上記の注意を要し、完"
+"全な互換性を目指し、ミップマップが必要です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:121
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
+"3Dを実行する場合は、パフォーマンスも向上するので、ミップマップをオンにする必"
+"要があります(テクスチャの小さいバージョンは、遠くのオブジェクトに使用されま"
+"す)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:124
 msgid "Anisotropic"
-msgstr "異方性"
+msgstr "異方性(Anisotropic)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:126
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
 msgstr ""
+"テクスチャがビューとほぼ平行(床など)の場合、このオプションを使用すると、不鮮"
+"明さが軽減され、テクスチャがより詳細になります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:129
 msgid "SRGB"
@@ -386,16 +418,18 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:135
 msgid "Process"
-msgstr "プロセス"
+msgstr "プロセス(Process)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:137
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr ""
+"テクスチャとしてインポートする場合、いくつかの特別なプロセスを画像に適用でき"
+"ます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:140
 msgid "Fix Alpha Border"
-msgstr "アルファ境界線を修正する"
+msgstr "アルファ境界線を修正する(Fix Alpha Border)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:142
 msgid ""
@@ -403,6 +437,9 @@ msgid ""
 "transparency to non transparency. It helps mitigate the outline effect when "
 "exporting images from Photoshop and the like."
 msgstr ""
+"これにより、同じ周囲の色のピクセルが透明から非透明に移行します。 Photoshopな"
+"どから画像をエクスポートするときに、アウトライン効果を軽減するのに役立ちま"
+"す。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:147
 msgid ""
@@ -412,7 +449,7 @@ msgstr "特定の値が必要ない限り、既定のままにしておくこと
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid "Premultiplied Alpha"
-msgstr "乗算済みアルファ"
+msgstr "乗算済みアルファ(Premultiplied Alpha)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:152
 msgid ""
@@ -428,7 +465,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:156
 msgid "HDR as sRGB"
-msgstr ""
+msgstr "\\ HDR as sRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 msgid ""
@@ -436,10 +473,13 @@ msgid ""
 "use them, but, in the worst-case scenario, toggling this option on will make "
 "them look right."
 msgstr ""
+"いくつかのHDRファイルには壊れたsRGBカラーデータが含まれています。そのような"
+"ファイルを使用しないことをお勧めしますが、最悪の場合、このオプションをオンに"
+"切り替えると正しく表示されるようになります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:161
 msgid "Invert Color"
-msgstr ""
+msgstr "色の反転"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:163
 msgid ""
@@ -447,3 +487,6 @@ msgid ""
 "map generated by external programs to depth map to use with :ref:"
 "`doc_spatial_material`."
 msgstr ""
+"画像の色を反転します。これは、たとえば、外部プログラムによって生成された高さ"
+"マップを :ref:`doc_spatial_material` で使用する深度マップに変換する場合に便利"
+"です。"

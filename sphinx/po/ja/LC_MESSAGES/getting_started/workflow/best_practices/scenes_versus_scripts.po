@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:4
 msgid "When to use scenes versus scripts"
-msgstr ""
+msgstr "シーンとスクリプトを使用する場合"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:6
 msgid ""
 "We've already covered how scenes and scripts are different. Scripts define "
 "an engine class extension with imperative code, scenes with declarative code."
 msgstr ""
+"シーンとスクリプトの違いについてはすでに説明しました。スクリプトは、命令型"
+"コードでエンジンクラスの拡張を定義し、宣言型コードでシーンを定義します。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:10
 msgid ""
@@ -34,10 +36,14 @@ msgid ""
 "are often used in conjunction with a script so that the scene acts as an "
 "extension of the scripts declarative code."
 msgstr ""
+"結果として、それぞれのシステムの機能は異なります。シーンは、拡張クラスの初期"
+"化方法を定義できますが、実際の動作は定義できません。シーンは多くの場合、スク"
+"リプトと組み合わせて使用されるため、シーンはスクリプトの宣言型コードの拡張機"
+"能として機能します。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
 msgid "Anonymous types"
-msgstr ""
+msgstr "匿名型"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:18
 msgid ""
@@ -45,6 +51,9 @@ msgid ""
 "alone. This is, in essence, what the Godot Editor does, only in the C++ "
 "constructor of its objects."
 msgstr ""
+"スクリプト\\ *のみ*\\ を使用してシーンのコンテンツを完全に定義することもでき"
+"ます。これは本質的にはGodotエディタで行うべきことですが、スクリプトで行う場合"
+"はそのオブジェクトのC++コンストラクタで行います。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
 msgid ""
@@ -52,6 +61,9 @@ msgid ""
 "is identical to creating in-engine classes whereas handling scenes requires "
 "a change in API:"
 msgstr ""
+"しかし、どちらを使用するかを選択することはジレンマになる可能性があります。ス"
+"クリプトインスタンスの作成はエンジン内クラスの作成と同じですが、シーンの処理"
+"にはAPIを変更する必要があります:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:59
 msgid ""
@@ -59,10 +71,13 @@ msgid ""
 "differences between engine and script code. The larger and more complex the "
 "node, the more reason there is to build it as a scene."
 msgstr ""
+"また、エンジンとスクリプトコードの処理速度が異なるため、スクリプトの動作は"
+"シーンよりも少し遅くなります。ノードが大きく複雑になるほど、ノードをシーンと"
+"して構築する理由が増えます。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
 msgid "Named types"
-msgstr ""
+msgstr "名前付き型"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:66
 msgid ""
@@ -71,48 +86,54 @@ msgid ""
 "dialog with an optional icon. In these cases, the user's ability to use the "
 "script is much more streamlined. Rather than having to..."
 msgstr ""
+"場合によっては、ユーザーはエディタ自体の中でスクリプトを新しい型として登録で"
+"きます。これにより、ノードまたはリソース作成ダイアログに新しい型として表示さ"
+"れ、オプションのアイコンが表示されます。このような場合、ユーザーがスクリプト"
+"を使用する機能は大幅に合理化されます。むしろ..."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:71
 msgid "Know the base type of the script they would like to use."
-msgstr ""
+msgstr "使用するスクリプトの基本型を知っている。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
 msgid "Create an instance of that base type."
-msgstr ""
+msgstr "その基本型のインスタンスを作成します。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:75
 msgid "Add the script to the node."
-msgstr ""
+msgstr "ノードにスクリプトを追加します。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
 msgid "(Drag-n-drop method)"
-msgstr ""
+msgstr "(ドラッグアンドドロップ方式)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
 msgid "Find the script in the FileSystem dock."
-msgstr ""
+msgstr "ファイル システムドックでスクリプトを見つけます。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:81
 msgid "Drag and drop the script onto the node in the Scene dock."
-msgstr ""
+msgstr "スクリプトをシーンドックのノードにドラッグ アンド ドロップします。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
 msgid "(Property method)"
-msgstr ""
+msgstr "(プロパティメソッド)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:85
 msgid ""
 "Scroll down to the bottom of the Inspector to find the ``script`` property "
 "and select it."
 msgstr ""
+"インスペクタの一番下までスクロールして ``Script`` プロパティを見つけて選択し"
+"ます。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:87
 msgid "Select \"Load\" from the dropdown."
-msgstr ""
+msgstr "ドロップダウンから「読込み」を選択します。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:89
 msgid "Select the script from the file dialog."
-msgstr ""
+msgstr "ファイル ダイアログからスクリプトを選択します。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:91
 msgid ""
@@ -121,83 +142,100 @@ msgid ""
 "of the above work. The creation dialog even has a search bar to look up the "
 "type by name."
 msgstr ""
+"この手順の代わりに登録済みスクリプトを使用すると、スクリプト化された型をシス"
+"テム内の他のノードやリソースと同様な、作成オプションの一つにすることが出来ま"
+"す。なので上記の作業を行う必要はありません。作成ダイアログには、(登録済みの)"
+"型を名前で検索するための検索バーがあります。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:96
 msgid "There are two systems for registering types..."
-msgstr ""
+msgstr "型を登録するための 2つのシステムがあります..."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:98
 msgid ":ref:`Custom Types <doc_making_plugins>`"
-msgstr ""
+msgstr ":ref:`カスタム型<doc_making_plugins>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:100
 msgid "Editor-only. Typenames are not accessible at runtime."
-msgstr ""
+msgstr "エディタのみ。型名は実行時にはアクセスできません。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:102
 msgid "Does not support inherited custom types."
-msgstr ""
+msgstr "継承されたカスタム型はサポートされていません。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:104
 msgid "An initializer tool. Creates the node with the script. Nothing more."
 msgstr ""
+"初期化ツール。スクリプトを使用してノードを作成します。これ以外の方法はありま"
+"せん。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:106
 msgid ""
 "Editor has no type-awareness of the script or its relationship to other "
 "engine types or scripts."
 msgstr ""
+"エディタは、スクリプトの型や、他のエンジン内の型やスクリプトとの関係を認識し"
+"ません。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:109
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:127
 msgid "Allows users to define an icon."
-msgstr ""
+msgstr "ユーザーがアイコンを定義できます。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:111
 msgid ""
 "Works for all scripting languages because it deals with Script resources in "
 "abstract."
 msgstr ""
+"スクリプトリソースを抽象化して扱うので、すべてのスクリプト言語で動作します。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:113
 msgid ""
 "Set up using :ref:`EditorPlugin.add_custom_type "
 "<class_EditorPlugin_method_add_custom_type>`."
 msgstr ""
+":ref:`EditorPlugin.add_custom_type "
+"<class_EditorPlugin_method_add_custom_type>` を使用してセットアップします。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:115
 msgid ":ref:`Script Classes <doc_scripting_continued_class_name>`"
-msgstr ""
+msgstr ":ref:`スクリプトクラス<doc_scripting_continued_class_name>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."
-msgstr ""
+msgstr "エディタとランタイムにアクセスできます。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:119
 msgid "Displays inheritance relationships in full."
-msgstr ""
+msgstr "継承関係を完全に表示します。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:121
 msgid ""
 "Creates the node with the script, but can also change types or extend the "
 "type from the editor."
 msgstr ""
+"スクリプトを使用してノードを作成しますが、エディタから型を変更したり、型を拡"
+"張したりすることもできます。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:124
 msgid ""
 "Editor is aware of inheritance relationships between scripts, script "
 "classes, and engine C++ classes."
 msgstr ""
+"エディタは、スクリプト、スクリプトクラス、およびエンジンのC++クラス間の継承関"
+"係を認識します。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:129
 msgid ""
 "Engine developers must add support for languages manually (both name "
 "exposure and runtime accessibility)."
 msgstr ""
+"エンジン開発者は、言語のサポートを手動で追加する必要があります(名前の公開とラ"
+"ンタイムのアクセシビリティの両方)。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
 msgid "Godot 3.1+ only."
-msgstr ""
+msgstr "Godot3.1以降のみです。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
 msgid ""
@@ -205,6 +243,9 @@ msgid ""
 "scripting languages. Each scripting language must implement its own support "
 "for exposing this information."
 msgstr ""
+"エディタは、プロジェクトフォルダをスキャンし、すべてのスクリプト言語の公開名"
+"を登録します。各スクリプト言語は、この情報を公開するための独自のサポートを実"
+"装する必要があります。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:138
 msgid ""
@@ -213,6 +254,10 @@ msgid ""
 "script resource. Creating instances and accessing constants or static "
 "methods is viable from anywhere."
 msgstr ""
+"どちらの方法でも作成ダイアログに名前が追加されますが、特にスクリプト クラスを"
+"使用すると、ユーザーはスクリプト リソースを読み込まずに型名にアクセスできま"
+"す。インスタンスの作成と定数または静的メソッドへのアクセスは、どこからでも実"
+"行可能です。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:143
 msgid ""
@@ -221,11 +266,17 @@ msgid ""
 "creating in-house tools for designers to use will find an easier time of "
 "things this way."
 msgstr ""
+"このような機能を使用すると、それによってユーザーに付与される使いやすさから、"
+"その型をシーンのないスクリプトにしたい場合があります。このようにプラグインを"
+"開発したり、デザイナーが使用する社内ツールを作成したりすることで、物事をより"
+"簡単な手順で進められるようになります。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:148
 msgid ""
 "On the downside, it also means having to use largely imperative programming."
 msgstr ""
+"欠点として、大部分が命令型プログラミングを使用する必要があることも意味しま"
+"す。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
 msgid "Conclusion"
@@ -233,7 +284,7 @@ msgstr "結論"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
 msgid "In the end, the best approach is to consider the following:"
-msgstr ""
+msgstr "最後に、最善のアプローチは次のことを考慮することです。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
 msgid ""
@@ -243,6 +294,10 @@ msgid ""
 "chances are that it should probably be a script, likely one with a custom "
 "name/icon."
 msgstr ""
+"いくつかの異なるプロジェクトで再利用され、すべてのスキルレベルの人々(自分自身"
+"を「プログラマー」とラベル付けしない人を含む)が使用する可能性のある基本的な"
+"ツールを作成したい場合、それは良い機会であり、おそらくスクリプトで作成する必"
+"要があります。また、カスタム名/アイコンが付いたものでなければなりません。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:160
 msgid ""
@@ -250,6 +305,9 @@ msgid ""
 "should always be a scene. Scenes are easier to track/edit and provide more "
 "security than scripts."
 msgstr ""
+"ゲームに特化したコンセプト(モデル)を作りたい場合は、常にシーンである必要があ"
+"ります。シーンは追跡/編集が容易で、スクリプトよりもセキュリティが強化されま"
+"す。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:164
 msgid ""
@@ -257,3 +315,6 @@ msgid ""
 "this in 3.1 by declaring a script class and giving it a scene as a constant. "
 "The script becomes, in effect, a namespace:"
 msgstr ""
+"シーンに名前を付けたい場合は、スクリプトクラスを宣言し、シーンに定数として与"
+"えることで、3.1でもこれを行うことができます。スクリプトは、実際には名前空間に"
+"なります:"

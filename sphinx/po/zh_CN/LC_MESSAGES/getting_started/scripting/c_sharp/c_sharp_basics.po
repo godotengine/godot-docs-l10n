@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -397,6 +397,10 @@ msgid ""
 "is expecting the original ``snake_case`` version ``add_child``. However, you "
 "can use any custom properties or methods without this limitation."
 msgstr ""
+"``Get()``/``Set()``、``Call()``/``CallDeferred()`` 等方法，以及信号连接方法 "
+"``Connect()`` 都依赖于Godot的``snake_case``API命名规范。所以，"
+"``CallDeferred(\"AddChild\")``无法调用``AddChild`` ，因为API需要原始"
+"``snake_case``版本的``add_child``。不过，自定义属性和方法没有此限制。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
 msgid "Performance of C# in Godot"
@@ -441,3 +445,22 @@ msgid ""
 msgstr ""
 "每当添加或修改软件包时，请在项目目录的根目录中运行 ``nuget restore``。为确保 "
 "``NuGet`` 软件包可供 ``msbuild`` 使用，请运行："
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:264
+#, fuzzy
+msgid "Profiling your C# code"
+msgstr "画您的世界"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:266
+msgid ""
+"`Mono log profiler <https://www.mono-project.com/docs/debug+profile/profile/"
+"profiler/>`_ is available via `this PR <https://github.com/godotengine/godot/"
+"pull/26513>`_"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:267
+msgid ""
+"External Mono profiler like `JetBrains dotTrace <https://www.jetbrains.com/"
+"profiler/>`_ can be used as described `here <https://github.com/godotengine/"
+"godot/pull/34382>`_."
+msgstr ""

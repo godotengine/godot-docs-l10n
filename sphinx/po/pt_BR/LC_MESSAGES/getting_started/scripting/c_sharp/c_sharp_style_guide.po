@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,17 +96,28 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
 #, fuzzy
-msgid "Formatting conventions"
-msgstr "Convenções de Formatação"
+msgid "Formatting"
+msgstr "Formato"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:33
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
+#, fuzzy
+msgid "General guidelines"
+msgstr "Diferenças Gerais"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
 #, fuzzy
 msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
 msgstr ""
 "Se você criar um novo arquivo, verifique se ele usa caracteres de "
 "alimentação de linha (*LF*) para quebrar linhas, não *CRLF* ou *CR*."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:37
+msgid ""
+"Use one line feed character at the end of each file, except for `csproj` "
+"files."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:38
 #, fuzzy
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
@@ -115,7 +126,7 @@ msgstr ""
 "Use a codificação UTF-8 sem uma marca de ordem de byte (BOM <https://en."
 "wikipedia.org/wiki/Byte_order_mark>)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:35
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:39
 #, fuzzy
 msgid ""
 "Use **4 spaces** instead of tabs for indentation (which is referred to as "
@@ -124,17 +135,17 @@ msgstr ""
 "Use 4 espaços em vez de tabs para indentação (que é referido como \"tabs "
 "suaves\")."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:40
 msgid ""
 "Consider breaking a line into several if it's longer than 100 characters."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:39
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:44
 #, fuzzy
 msgid "Line breaks and blank lines"
 msgstr "Quebras de Linha e Linhas em Branco"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:41
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:46
 #, fuzzy
 msgid ""
 "For a general indentation rule, follow `the \"Allman Style\" <https://en."
@@ -147,43 +158,43 @@ msgstr ""
 "chave associada a uma declaração de controle na próxima linha, recuada para "
 "a mesmo nível:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:58
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:63
 #, fuzzy
 msgid "However, you may choose to omit line breaks inside brackets:"
 msgstr ""
 "No entanto, você pode optar por omitir quebras de linha dentro de chaves,"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:60
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:65
 msgid "For simple property accessors."
 msgstr "Para simples propriedades acessoras."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:61
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:66
 msgid "For simple object, array, or collection initializers."
 msgstr "Para inicializadores de simples objeto, array ou coleção."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:62
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:67
 msgid "For abstract auto property, indexer, or event declarations."
 msgstr "Para auto propriedade abstrata, indexador ou declarações de evento."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:84
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:89
 #, fuzzy
 msgid "Insert a blank line:"
 msgstr "Inserira uma linha em branco,"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:86
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:91
 #, fuzzy
 msgid "After a list of ``using`` statements."
 msgstr "Depois de *usar* a lista de instruções."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:87
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:92
 msgid "Between method, properties, and inner type declarations."
 msgstr "Entre o método, propriedades e declarações de tipo interno."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:88
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
 msgid "At the end of each file."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:90
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
 msgid ""
 "Field and constant declarations can be grouped together according to "
 "relevance. In that case, consider inserting a blank line between the groups "
@@ -193,45 +204,45 @@ msgstr ""
 "relevância. Nesse caso, considere inserir uma linha em branco entre os "
 "grupos para facilitar a leitura."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:98
 #, fuzzy
 msgid "Avoid inserting a blank line:"
 msgstr "Evite inserir uma linha em branco,"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:100
 #, fuzzy
 msgid "After ``{``, the opening brace."
 msgstr "Depois de uma chave de abertura ('{')."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:96
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:101
 #, fuzzy
 msgid "Before ``}``, the closing brace."
 msgstr "Antes de uma chave de fechamento ('}')."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:97
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:102
 #, fuzzy
 msgid "After a comment block or a single-line comment."
 msgstr "Depois de um bloco de comentário ou um comentário de linha única."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:98
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:103
 msgid "Adjacent to another blank line."
 msgstr "Adjacente a outra linha em branco."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:136
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
 #, fuzzy
 msgid "Using spaces"
 msgstr "Usando Espaços"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:138
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
 #, fuzzy
 msgid "Insert a space:"
 msgstr "Insira um espaço,"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:140
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
 msgid "Around a binary and tertiary operator."
 msgstr "Em torno de um operador binário e ternário."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:141
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
 #, fuzzy
 msgid ""
 "Between an opening parenthesis and ``if``, ``for``, ``foreach``, ``catch``, "
@@ -240,37 +251,37 @@ msgstr ""
 "Entre um parêntese de abertura e as palavras-chave *se*, *para*, *foreach*, "
 "*catch*, *while*, *lock* ou *using*."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:148
 msgid "Before and within a single line accessor block."
 msgstr "Antes e dentro de um bloco de acessador de linha única."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:143
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:149
 msgid "Between accessors in a single line accessor block."
 msgstr "Entre os acessadores em um bloco de acessador de linha única."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:150
 msgid "After a comma which is not at the end of a line."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:145
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
 #, fuzzy
 msgid "After a semicolon in a ``for`` statement."
 msgstr "Depois de um ponto-e-vírgula em uma declaração *para*."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:152
 #, fuzzy
 msgid "After a colon in a single line ``case`` statement."
 msgstr "Depois de dois pontos em declaração *case* de linha única."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
 msgid "Around a colon in a type declaration."
 msgstr "Em torno de dois pontos em uma declaração de tipo."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:148
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
 msgid "Around a lambda arrow."
 msgstr "Em torno de uma seta lambda."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:149
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:155
 #, fuzzy
 msgid ""
 "After a single-line comment symbol (``//``), and before it if used at the "
@@ -279,21 +290,21 @@ msgstr ""
 "Após um símbolo de comentário de linha única ('//') e antes, se usado no "
 "final de uma linha."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:157
 #, fuzzy
 msgid "Do not use a space:"
 msgstr "Não use um espaço,"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:159
 #, fuzzy
 msgid "After type cast parentheses."
 msgstr "Depois de um parênteses de um tipo de conversão."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:160
 msgid "Within single line initializer braces."
 msgstr "Dentro de chaves de inicialização de linha única."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:156
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:162
 #, fuzzy
 msgid ""
 "The following example shows a proper use of spaces, according to some of the "
@@ -302,12 +313,12 @@ msgstr ""
 "O exemplo a seguir mostra um uso adequado dos espaços, de acordo com algumas "
 "das convenções mencionadas acima:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:191
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:197
 #, fuzzy
 msgid "Naming conventions"
 msgstr "Convenções de nomes"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:193
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:199
 #, fuzzy
 msgid ""
 "Use **PascalCase** for all namespaces, type names and member level "
@@ -318,7 +329,7 @@ msgstr ""
 "de nível de membro (ou seja, métodos, propriedades, constantes, eventos), "
 "exceto para campos privados:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:214
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:220
 #, fuzzy
 msgid ""
 "Use **camelCase** for all other identifiers (i.e. local variables, method "
@@ -329,7 +340,7 @@ msgstr ""
 "locais, argumentos de método) e use sublinhado ('_') como um prefixo para "
 "campos privados (mas não para métodos ou propriedades, como explicado acima):"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:228
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:234
 #, fuzzy
 msgid ""
 "There's an exception with acronyms which consist of two letters, like "
@@ -340,7 +351,7 @@ msgstr ""
 "devem ser escritas em letras maiúsculas quando usadas onde o PascalCase "
 "seria esperado, e em letras minúsculas, caso contrário."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:231
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:237
 #, fuzzy
 msgid ""
 "Note that ``id`` is **not** an acronym, so it should be treated as a normal "
@@ -349,7 +360,7 @@ msgstr ""
 "Note que *'id'* **não** é um acrônimo, então deve ser tratado como um "
 "identificador normal:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:242
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:248
 #, fuzzy
 msgid ""
 "It is generally discouraged to use a type name as a prefix of an identifier, "
@@ -364,7 +375,7 @@ msgstr ""
 "nomeadas usando maiúsculas *'I'* como um prefixo, como *'IInventoryHolder'* "
 "ou *'IDamageable'*."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:246
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:252
 msgid ""
 "Lastly, consider choosing descriptive names and do not try to shorten them "
 "too much if it affects readability."
@@ -372,7 +383,7 @@ msgstr ""
 "Por último, considere a escolha de nomes descritivos e não tente encurtá-los "
 "demais se isso afetar a legibilidade."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:249
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:255
 #, fuzzy
 msgid ""
 "For instance, if you want to write code to find a nearby enemy and hit it "
@@ -381,17 +392,17 @@ msgstr ""
 "Por exemplo, se você quiser escrever um código para encontrar um inimigo "
 "próximo e acertar com uma arma, prefira"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:255
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:261
 #, fuzzy
 msgid "Rather than:"
 msgstr "Ao invés de,"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:262
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
 #, fuzzy
 msgid "Implicitly typed local variables"
 msgstr "Variáveis Locais Tipadas Implicitamente"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:264
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
 #, fuzzy
 msgid ""
 "Consider using implicitly typing (``var``) for declaration of a local "
@@ -402,20 +413,20 @@ msgstr ""
 "variável local, mas faça isso **somente quando o tipo for evidente** do lado "
 "direito da atribuição:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:294
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
 #, fuzzy
 msgid "Other considerations"
 msgstr "Outras considerações"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:296
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
 msgid "Use explicit access modifiers."
 msgstr "Use modificadores de acesso explícito."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:297
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
 msgid "Use properties instead of non-private fields."
 msgstr "Use propriedades em vez de campos não privados."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:298
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
 #, fuzzy
 msgid ""
 "Use modifiers in this order: ``public``/``protected``/``private``/"
@@ -425,7 +436,7 @@ msgstr ""
 "Use modificadores nesta ordem: *'public/protected/private/internal virtual/"
 "override/abstract/new static readonly'*."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:306
 #, fuzzy
 msgid ""
 "Avoid using fully-qualified names or ``this.`` prefix for members when it's "
@@ -434,18 +445,18 @@ msgstr ""
 "Evite usar nomes completos ou o prefixo *'this'* para membros, quando não "
 "for necessário."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:301
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:307
 #, fuzzy
 msgid "Remove unused ``using`` statements and unnecessary parentheses."
 msgstr ""
 "Remova as instruções *'using'* não utilizadas e parênteses desnecessários."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:308
 #, fuzzy
 msgid "Consider omitting the default initial value for a type."
 msgstr "Considere omitir o valor inicial padrão de um tipo."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:309
 msgid ""
 "Consider using null-conditional operators or type initializers to make the "
 "code more compact."
@@ -453,7 +464,7 @@ msgstr ""
 "Considere usar operadores condicionais nulos ou digite inicializadores para "
 "tornar o código mais compacto."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:310
 msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."

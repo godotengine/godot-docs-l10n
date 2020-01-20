@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,7 +147,6 @@ msgstr ""
 "として保存する方法。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
-#, fuzzy
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
@@ -309,13 +308,13 @@ msgid "Margin Bottom: *80*"
 msgstr "下マージン:\\ *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
-#, fuzzy
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
-"コンテナをウィンドウに合わせます。 ビューポートの上のツールバー中の**Layout**"
-"メニューを開き、最後のオプション**Full Rect**を選択します。"
+"コンテナをウィンドウに合わせます。 ビューポートの上のツールバー中の\\ "
+"**Layout**\\ メニューを開き、最後のオプション\\ **Full Rect**\\ を選択しま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
 msgid "Add the UI sprites"
@@ -330,27 +329,22 @@ msgstr ""
 "す。必要なもの:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
-#, fuzzy
 msgid "the title or logo,"
-msgstr "タイトルまたはロゴ"
+msgstr "タイトルまたはロゴ、"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
-#, fuzzy
 msgid "the three text options as individual nodes,"
-msgstr "個別のノードとしての3つのテキストオプション"
+msgstr "個別のノードとしての3つのテキストオプション、"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
-#, fuzzy
 msgid "the version note,"
-msgstr "バージョンノート"
+msgstr "バージョンノート、"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-#, fuzzy
 msgid "and the main menu’s illustration."
-msgstr "メインメニューのイラスト"
+msgstr "メインメニューのイラスト。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press ``Meta+A`` on your keyboard. Start to "
 "type ``TextureRect`` to find the corresponding node and press enter. With "
@@ -368,6 +362,9 @@ msgid ""
 "property and click **[empty] > Load**. A file browser opens and lets you "
 "pick a sprite to load into the texture slot."
 msgstr ""
+"各ノードをクリックして選択します。インスペクターで **Texture**プロパティを見"
+"つけ、 **[空] > 読込み**をクリックします。ファイルブラウザが開き、テクスチャ"
+"スロットにロードするスプライトを選択できます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
 msgid "The file browser lets you find and load textures."
@@ -382,6 +379,10 @@ msgid ""
 "rename them. Nothing has been placed in containers yet so this should look "
 "messy."
 msgstr ""
+"すべての ``TextureRect`` ノードに対して操作を繰り返します。ロゴ、イラスト、３"
+"つのメニューオプション、バージョンノートがそれぞれ別個のノードとして必要で"
+"す。次に、[シーン]タブの各ノードをダブルクリックして、名前を変更します。コン"
+"テナにはまだ何も配置されていないため、このままでは乱雑に見えるはずです。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
 msgid "The six nodes with textures loaded."
@@ -459,17 +460,14 @@ msgid "We're left with two problems to solve:"
 msgstr "解決すべき2つの問題が残されています:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid "The characters on the right aren't centered."
-msgstr "右側の文字が中央に配置されていません"
+msgstr "右側の文字が中央に配置されていません。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-#, fuzzy
 msgid "There's no space between the logo and the other UI elements."
-msgstr "ロゴと他のUI要素の間にスペースがありません"
+msgstr "ロゴと他のUI要素の間にスペースがありません。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "
@@ -481,25 +479,23 @@ msgid ""
 "center automatically."
 msgstr ""
 "文字を右に中央揃えするには、最初に ``CenterContainer`` を選択します。次に、イ"
-"ンスペクタで ``Size Flags`` カテゴリまで下にスクロールし、 ``Vertical`` プロ"
-"パティの右側のフィールドをクリックして、 ``Fill`` に加えて ``Expand`` を"
-"チェックします。 ``Horizontal`` プロパティについても同じことを行います。これ"
+"ンスペクタで **Size Flags** カテゴリまで下にスクロールし、 **Vertical** プロ"
+"パティの右側のフィールドをクリックして、 **Fill** に加えて **Expand** を"
+"チェックします。 **Horizontal** プロパティについても同じことを行います。これ"
 "により、 ``CenterContainer`` は、隣接する ``VBoxContainer`` を尊重しながら、"
 "使用可能なすべてのスペースに拡張されます。最後に、Charactersノードを "
 "``CenterContainer`` にドラッグアンドドロップします。Characters要素は自動的に"
 "中央に配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
-#, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer."
 msgstr ""
 "キャラクターノードは、CenterContainer内に配置するとすぐに画面の右半分の中央に"
-"配置されます"
+"配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
@@ -510,21 +506,20 @@ msgid ""
 msgstr ""
 "メニューオプションと左側のロゴを区切るために、最後のコンテナとそのサイズフラ"
 "グを使用します。 ``VBoxContainer`` を選択し、 ``Meta+A`` キーを押して内部に新"
-"しいノードを追加します。別の ``VBoxContainer`` を追加し、「メニューオプショ"
-"ン」という名前を付けます。 ``Continue`` 、 ``NewGame`` 、 ``Options`` の3つの"
-"メニューオプションをすべて選択し、新しい ``VBoxContainer`` 内にドラッグ&ド"
-"ロップします。UIのレイアウトはほとんど変わらないはずです。"
+"しいノードを追加します。別の ``VBoxContainer`` を追加し、 *MenuOptions* とい"
+"う名前を付けます。 ``Continue`` 、 ``NewGame`` 、 ``Options`` の3つのメニュー"
+"オプションをすべて選択し、新しい ``VBoxContainer`` 内にドラッグ&ドロップしま"
+"す。UIのレイアウトはほとんど変わらないはずです。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
 msgstr ""
-"新しいコンテナを他の2つのノードの間に配置して、UIのレイアウトを保持します"
+"UIのレイアウトを保持するには、他の2つのノードの間(LogoとVersionの間)に新しい"
+"コンテナーを配置します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:248
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -534,32 +529,28 @@ msgid ""
 "the available vertical space while respecting its neighbors, the ``Logo`` "
 "and ``Version`` elements."
 msgstr ""
-"文字を右に中央揃えするには、最初に ``CenterContainer`` を選択します。次に、イ"
-"ンスペクタで ``Size Flags`` カテゴリまで下にスクロールし、 ``Vertical`` プロ"
-"パティの右側のフィールドをクリックして、 ``Fill`` に加えて ``Expand`` を"
-"チェックします。 ``Horizontal`` プロパティについても同じことを行います。これ"
-"により、 ``CenterContainer`` は、隣接する ``VBoxContainer`` を尊重しながら、"
-"使用可能なすべてのスペースに拡張されます。最後に、Charactersノードを "
-"``CenterContainer`` にドラッグアンドドロップします。Characters要素は自動的に"
-"中央に配置されます。"
+"ここで、メニューオプションをグループ化して、コンテナを拡張し、できるだけ多く"
+"の垂直方向のスペースを取るように指示することができます。まず ``MenuOptions`` "
+"ノードを選択します。インスペクターで、 **Size Flags** カテゴリまでスクロール"
+"ダウンします。 **Vertical** プロパティの右側のフィールドをクリックし、 "
+"**Fill** に加えて **Expand** をチェックします。コンテナは、隣接する ``Logo`` "
+"要素と ``Version`` 要素を尊重しながら、利用可能なすべての垂直方向のスペースを"
+"取るように拡張します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:256
-#, fuzzy
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the **Alignment** property to **Center**."
 msgstr ""
 "ノードを ``VBoxContainer`` の中央に配置するには、インスペクタの一番上までスク"
-"ロールし、 ``Alignment`` プロパティを ``Center`` に変更します。"
+"ロールし、 **Alignment** プロパティを **Center** に変更します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
-#, fuzzy
 msgid "The menu options should center vertically in the UI's left column."
 msgstr ""
-"メニューオプションは、UIの左カラムの縦方向の中央に配置する必要があります"
+"メニューオプションは、UIの左カラムの縦方向の中央に配置する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:263
-#, fuzzy
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the **Custom Constants** category below **Size Flags**, and click the "
@@ -567,21 +558,20 @@ msgid ""
 "enter, the **Separation** property becomes active and Godot adds 30 pixels "
 "between menu options."
 msgstr ""
-"最後に、メニューオプション間に区切りを追加します。 ``Size Flags`` の下の "
-"``Custom Constants`` カテゴリを展開し、 ``Separation`` パラメータの横のフィー"
-"ルドをクリックします。30に設定します。Enterキーを押すと、 ``Separation`` プロ"
-"パティがアクティブになり、Godotによりメニューオプション間に30ピクセルが追加さ"
-"れます。"
+"最後に、メニューオプションの間に区切りを追加します。 **Size Flags** の下の "
+"**Custom Constants** カテゴリを展開し、 **Separation** パラメータの横のフィー"
+"ルドをクリックして、値を30に設定します。Enterキーを押すと、 **Separation** プ"
+"ロパティがアクティブになり、Godotはメニューオプションの間に30ピクセルを追加し"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
-#, fuzzy
 msgid "The final interface."
-msgstr "最後のインターフェイス"
+msgstr "完成したインターフェイス。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
-msgstr "コードが1行もなくても、正確で応答性の高いメインメニューができます。"
+msgstr "一行のコードも書かずに、正確で応答性の高いメインメニューができます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:276
 msgid ""
@@ -590,6 +580,10 @@ msgid ""
 "your own. In the next tutorial, you'll create a Game User Interface with "
 "bars and item counters."
 msgstr ""
+"おめでとうございます！完成済メニュー\\ :download:`ui_main_menu_design.zip "
+"<files/ui_main_menu_design.zip>`\\ をダウンロードして、自分で作ったメニューと"
+"比較できます。次のチュートリアルでは、バーとアイテムカウンターを含むゲーム"
+"ユーザーインターフェイスを作成します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
 msgid ""
@@ -598,6 +592,10 @@ msgid ""
 "ratios. In Godot, we use containers to control the position and the size of "
 "UI elements."
 msgstr ""
+"レスポンシブユーザーインターフェイスとは、すべての画面タイプで適切にスケーリ"
+"ングされるように作られたUIです。テレビ画面とコンピューターのディスプレイは、"
+"サイズと比率が異なります。 Godotでは、コンテナを使用してUI要素の位置とサイズ"
+"を制御します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:289
 msgid ""
@@ -609,7 +607,7 @@ msgstr ""
 "ネストの順序が重要です。UIがさまざまな画面比率にうまく適応しているかどうかを"
 "確認するには、ルートノードを選択し、Qキーを押して「Select Mode」をアクティブ"
 "にし、コンテナを選択し、コンテナのコーナーの1つをクリック&ドラッグしてサイズ"
-"を変更します。UIコンポーネントはその内部を流れる必要があります。"
+"を変更します。UIコンポーネントはその内部を流れて移動する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:295
 msgid ""
@@ -624,7 +622,6 @@ msgstr ""
 "Godotはウィンドウ全体を上下にスケーリングします。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:301
-#, fuzzy
 msgid ""
 "You can change the scale mode in the project settings: click **Project > "
 "Project Settings** in the top menu. In the window's left column, look for "
@@ -634,7 +631,8 @@ msgid ""
 "information, see :ref:`doc_multiple_resolutions`."
 msgstr ""
 "プロジェクト設定でスケールモードを変更するには、「プロジェクトメニュー->プロ"
-"ジェクト設定」をクリックします。ウィンドウの左側のカラムで、Displayカテゴリを"
-"探します。Windowサブカテゴリをクリックします。ウィンドウの右側に、Stretchセク"
-"ションがあります。Mode、Aspect、Shrinkの3つの設定は、画面サイズを制御します。"
-"詳細については、\\ :ref:`doc_multiple_resolutions`\\ を参照してください。"
+"ジェクト設定」をクリックします。ウィンドウの左側のカラムで、\\ **Display**\\ "
+"カテゴリを探します。\\ **Window**\\ サブカテゴリをクリックします。ウィンドウ"
+"の右側に、\\ **Stretch**\\ セクションがあります。\\ **Mode**\\ 、\\ "
+"**Aspect**\\ 、\\ **Shrink**\\ の3つの設定は、画面サイズを制御します。詳細に"
+"ついては、\\ :ref:`doc_multiple_resolutions`\\ を参照してください。"

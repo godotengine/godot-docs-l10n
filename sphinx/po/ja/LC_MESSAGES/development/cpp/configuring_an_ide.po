@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,30 +66,34 @@ msgid ""
 "platforms)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:20
+#: ../../docs/development/cpp/configuring_an_ide.rst:19
+msgid ":ref:`CLion<doc_configuring_an_ide_clion>` (all desktop platforms)"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:21
 msgid ""
 "It is possible to use other IDEs, but their setup is not documented yet."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:25
+#: ../../docs/development/cpp/configuring_an_ide.rst:26
 msgid "Qt Creator"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:28
+#: ../../docs/development/cpp/configuring_an_ide.rst:29
 msgid "Importing the project"
 msgstr "プロジェクトのインポート"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:30
+#: ../../docs/development/cpp/configuring_an_ide.rst:31
 msgid "Choose *New Project* -> *Import Project* -> *Import Existing Project*."
 msgstr ""
 "*新しいプロジェクト*\\  -> \\ *プロジェクトのインポート*\\  -> \\ *既存のプロ"
 "ジェクトインポートを*\\  を選択します。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:34
+#: ../../docs/development/cpp/configuring_an_ide.rst:35
 msgid "Set the path to your Godot root directory and enter the project name."
 msgstr "Godotルートディレクトリへのパスを設定し、プロジェクト名を入力します。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:38
+#: ../../docs/development/cpp/configuring_an_ide.rst:39
 msgid ""
 "Here you can choose which folders and files will be visible to the project. "
 "C/C++ files are added automatically. Potentially useful additions: \\*.py "
@@ -100,11 +104,11 @@ msgstr ""
 "ルは自動的に追加されます。便利な追加機能:ビルドシステムファイルの \\*.py、"
 "Android 開発用 \\*.java、macOS用 \\*.mm。「次へ」 をクリックします。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:44
+#: ../../docs/development/cpp/configuring_an_ide.rst:45
 msgid "Click *Finish*."
 msgstr "*終了*\\ をクリックします。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:45
+#: ../../docs/development/cpp/configuring_an_ide.rst:46
 msgid ""
 "Add a line containing ``.`` to *project_name.includes* to get working code "
 "completion."
@@ -112,29 +116,29 @@ msgstr ""
 "``.`` を含む行を\\ *project_name.includes*\\ に追加して、作業コードの完了を取"
 "得します。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:50
+#: ../../docs/development/cpp/configuring_an_ide.rst:51
 msgid "Build and run"
 msgstr "ビルドと実行"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:52
+#: ../../docs/development/cpp/configuring_an_ide.rst:53
 msgid "Build configuration:"
 msgstr "ビルド構成:"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:54
+#: ../../docs/development/cpp/configuring_an_ide.rst:55
 msgid "Click on *Projects* and open the *Build* tab."
 msgstr "*プロジェクト*\\ をクリックし、\\ *ビルド*\\ タブを開きます。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:55
+#: ../../docs/development/cpp/configuring_an_ide.rst:56
 msgid "Delete the pre-defined ``make`` build step."
 msgstr "定義済みの ``make`` ビルド ステップを削除します。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:59
+#: ../../docs/development/cpp/configuring_an_ide.rst:60
 msgid "Click *Add Build Step* -> *Custom Process Step*."
 msgstr ""
 "*ビルドステップを追加*\\  -> \\ *カスタムプロセスステップ*\\ をクリックしま"
 "す。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:63
+#: ../../docs/development/cpp/configuring_an_ide.rst:64
 msgid ""
 "Type ``scons`` in the *Command* field. If it fails with 'Could not start "
 "process \"scons\"', it can mean that ``scons`` is not in your ``PATH`` "
@@ -142,7 +146,7 @@ msgid ""
 "binary."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:66
+#: ../../docs/development/cpp/configuring_an_ide.rst:67
 msgid ""
 "Fill the *Arguments* field with your compilation options. (e.g.: ``p=x11 "
 "target=debug -j 4``)"
@@ -150,21 +154,21 @@ msgstr ""
 "*引数*\\ フィールドにコンパイルオプションを入力します。(例: ``p=x11 "
 "target=debug -j 4`` )"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:70
+#: ../../docs/development/cpp/configuring_an_ide.rst:71
 msgid "Run configuration:"
 msgstr "構成の実行:"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:72
+#: ../../docs/development/cpp/configuring_an_ide.rst:73
 msgid "Open the *Run* tab."
 msgstr "*実行*\\ タブを開きます。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:73
+#: ../../docs/development/cpp/configuring_an_ide.rst:74
 msgid ""
 "Point the *Executable* to your compiled Godot binary (e.g: ``%{buildDir}/bin/"
 "godot.x11.opt.tools.64``)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:74
+#: ../../docs/development/cpp/configuring_an_ide.rst:75
 msgid ""
 "If you want to run a specific game or project, point *Working directory* to "
 "the game directory."
@@ -172,7 +176,7 @@ msgstr ""
 "特定のゲームまたはプロジェクトを実行する場合は、\\ *作業ディレクトリ*\\ を"
 "ゲームディレクトリに指定します。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:75
+#: ../../docs/development/cpp/configuring_an_ide.rst:76
 msgid ""
 "If you want to run the editor, add ``-e`` to the *Command line arguments* "
 "field."
@@ -180,11 +184,11 @@ msgstr ""
 "エディタを実行する場合は、\\ *コマンドライン引数*\\ フィールドに ``-e`` を追"
 "加します。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:80
+#: ../../docs/development/cpp/configuring_an_ide.rst:81
 msgid "Updating sources after pulling latest commits"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:82
+#: ../../docs/development/cpp/configuring_an_ide.rst:83
 msgid ""
 "As a developer you usually want to frequently pull the latest commits from "
 "the upstream git repository or a specific fork etc. However this brings a "
@@ -195,7 +199,7 @@ msgid ""
 "the \"Projects View\" and click on \"Edit files...\""
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:92
+#: ../../docs/development/cpp/configuring_an_ide.rst:93
 msgid ""
 "Now a new dialog should appear that is similar in functionality to the one "
 "in the third step of the \"Importing the project\" section. Here you can "
@@ -205,11 +209,11 @@ msgid ""
 "work."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:100
+#: ../../docs/development/cpp/configuring_an_ide.rst:101
 msgid "Code style configuration"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:102
+#: ../../docs/development/cpp/configuring_an_ide.rst:103
 msgid ""
 "Developers must follow the project's :ref:`code style "
 "<doc_code_style_guidelines>` and IDE should help them to do it. By default, "
@@ -218,24 +222,24 @@ msgid ""
 "*Options* -> *C++*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:109
+#: ../../docs/development/cpp/configuring_an_ide.rst:110
 msgid ""
 "Click on *Edit* to change the current settings, then click on *Copy Built-in "
 "Code Style* button to set a new code style. Set a name for it (e.g. Godot) "
 "and change the Tab policy to be *Tabs Only*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:118
+#: ../../docs/development/cpp/configuring_an_ide.rst:119
 msgid "KDevelop"
 msgstr "KDevelop"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:120
+#: ../../docs/development/cpp/configuring_an_ide.rst:121
 msgid ""
 "`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
 "desktop platforms."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:122
+#: ../../docs/development/cpp/configuring_an_ide.rst:123
 msgid ""
 "You can find a video tutorial `here <https://www.youtube.com/watch?"
 "v=yNVoWQi9TJA>`_. Or you may follow this text version tutorial."
@@ -244,33 +248,33 @@ msgstr ""
 "v=yNVoWQi9TJA>`_\\ です。または、このテキストバージョンのチュートリアルに従っ"
 "てください。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:125
+#: ../../docs/development/cpp/configuring_an_ide.rst:126
 msgid "Start by opening KDevelop and choosing \"open project\"."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:129
+#: ../../docs/development/cpp/configuring_an_ide.rst:130
 msgid "Choose the directory where you cloned Godot."
 msgstr "Godotのクローンを作成したディレクトリを選択します。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:131
+#: ../../docs/development/cpp/configuring_an_ide.rst:132
 msgid ""
 "On the next screen, choose \"Custom Build System\" for the *Project manager*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:135
+#: ../../docs/development/cpp/configuring_an_ide.rst:136
 msgid "Now that the project has been imported, open the project configuration."
 msgstr ""
 "プロジェクトがインポートされたので、プロジェクトのコンフィグを開きます。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:139
+#: ../../docs/development/cpp/configuring_an_ide.rst:140
 msgid "Add the following includes/imports:"
 msgstr "次のインクルード/インポートを追加します:"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:152
+#: ../../docs/development/cpp/configuring_an_ide.rst:153
 msgid "Apply the changes."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:154
+#: ../../docs/development/cpp/configuring_an_ide.rst:155
 msgid ""
 "Switch to the \"Custom Build System\" tab. Add a build configuration and "
 "keep the build directory blank. Enable build tools and add ``scons`` as the "
@@ -278,13 +282,13 @@ msgid ""
 "you're on macOS) as the arguments."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:161
+#: ../../docs/development/cpp/configuring_an_ide.rst:162
 msgid ""
 "Next we need to tell KDevelop where to find the binary. From the \"Run\" "
 "menu, choose \"Configure Launches\"."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:166
+#: ../../docs/development/cpp/configuring_an_ide.rst:167
 msgid ""
 "Click \"Add\" if no launcher exists. Then add the path to your executable in "
 "the executable section. Your executable should be located in the ``bin/`` "
@@ -293,32 +297,32 @@ msgid ""
 "build options)."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:174
+#: ../../docs/development/cpp/configuring_an_ide.rst:175
 msgid "That's it! Now you should be good to go :)"
 msgstr "以上です!これで準備完了です (^^)"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:180
+#: ../../docs/development/cpp/configuring_an_ide.rst:181
 msgid "Xcode"
 msgstr "\\ Xcode"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:183
-#: ../../docs/development/cpp/configuring_an_ide.rst:310
+#: ../../docs/development/cpp/configuring_an_ide.rst:184
+#: ../../docs/development/cpp/configuring_an_ide.rst:311
 msgid "Project setup"
 msgstr "プロジェクトの設定"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:185
+#: ../../docs/development/cpp/configuring_an_ide.rst:186
 msgid "Create an Xcode external build project anywhere"
 msgstr "任意の場所にXcode外部ビルドプロジェクトを作成する"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:189
+#: ../../docs/development/cpp/configuring_an_ide.rst:190
 msgid "Set the *Build tool* to the path to scons"
 msgstr "*ビルドツール*\\ をsconsへのパスに設定します"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:191
+#: ../../docs/development/cpp/configuring_an_ide.rst:192
 msgid "Modify Build Target's Xcode Info Tab:"
 msgstr "ビルドターゲットのXcode情報タブを変更します:"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:193
+#: ../../docs/development/cpp/configuring_an_ide.rst:194
 msgid ""
 "Set *Arguments* to something like: platform=osx tools=yes bits=64 "
 "target=debug"
@@ -326,7 +330,7 @@ msgstr ""
 "*引数*\\ を次のようなものに設定します: platform=osx tools=はい bits=64 "
 "target=debug"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:194
+#: ../../docs/development/cpp/configuring_an_ide.rst:195
 msgid ""
 "Set *Directory* to the path to Godot's source folder. Keep it blank if "
 "project is already there."
@@ -334,30 +338,30 @@ msgstr ""
 "*Directory*\\ を Godot のソース フォルダへのパスに設定します。プロジェクトが"
 "既に存在する場合は、空白のままにします。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:195
+#: ../../docs/development/cpp/configuring_an_ide.rst:196
 msgid "You may uncheck *Pass build settings in environment*"
 msgstr "*環境内のビルド設定を渡す*\\ のチェックを外すことが\\ *できます*"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:199
+#: ../../docs/development/cpp/configuring_an_ide.rst:200
 msgid "Add a Command Line Target:"
 msgstr "コマンドラインターゲットの追加:"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:201
+#: ../../docs/development/cpp/configuring_an_ide.rst:202
 msgid ""
 "Go to Xcode File > New > Target... and add a new Xcode command line target"
 msgstr ""
 "[Xcodeファイル]> [新規]> [ターゲット...]に移動し、新しいXcodeコマンドライン"
 "ターゲットを追加します"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:207
+#: ../../docs/development/cpp/configuring_an_ide.rst:208
 msgid "Name it something so you know not to compile with this target"
 msgstr "このターゲットでコンパイルしないように名前を付けます"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:208
+#: ../../docs/development/cpp/configuring_an_ide.rst:209
 msgid "e.g. ``GodotXcodeIndex``"
 msgstr "例: ``GodotXcodeIndex``"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:209
+#: ../../docs/development/cpp/configuring_an_ide.rst:210
 msgid ""
 "Goto the newly created target's *Build Settings* tab and search for *Header "
 "Search Paths*"
@@ -365,53 +369,53 @@ msgstr ""
 "新しく作成したターゲットの\\ *ビルド設定*\\ タブに移動し、\\ *ヘッダー検索パ"
 "スを検索します*"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:210
+#: ../../docs/development/cpp/configuring_an_ide.rst:211
 msgid "Set *Header Search Paths* to an absolute path to Godot's source folder"
 msgstr "*ヘッダー検索パス*\\ をGodotのソースフォルダへの絶対パスに設定する"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:211
+#: ../../docs/development/cpp/configuring_an_ide.rst:212
 msgid "Make it recursive by adding two \\*'s to the end of the path"
 msgstr "パスの末端に 「\\*\\*」を追加して再帰的にする"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:212
+#: ../../docs/development/cpp/configuring_an_ide.rst:213
 msgid "e.g. ``/Users/me/repos/godot-source/\\**``"
 msgstr "例: ``/Users/me/repos/godot-source/\\**``"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:214
+#: ../../docs/development/cpp/configuring_an_ide.rst:215
 msgid "Add Godot Source to the Project:"
 msgstr "プロジェクトにGodotソースを追加する:"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:216
+#: ../../docs/development/cpp/configuring_an_ide.rst:217
 msgid "Drag and drop Godot source into project file browser."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:217
+#: ../../docs/development/cpp/configuring_an_ide.rst:218
 msgid "Uncheck *Create External Build System*"
 msgstr "チェックを外す: \\ *外部ビルド システムの作成*"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:221
+#: ../../docs/development/cpp/configuring_an_ide.rst:222
 msgid "Click Next"
 msgstr "次へをクリックします"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:222
+#: ../../docs/development/cpp/configuring_an_ide.rst:223
 msgid "Select *create groups*"
 msgstr "*グループの作成を選択*"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:226
+#: ../../docs/development/cpp/configuring_an_ide.rst:227
 msgid "Check off only your command line target in the *Add to targets* section"
 msgstr ""
 "*ターゲットに追加*\\ セクションでコマンドラインターゲットのみをオフにします"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:227
+#: ../../docs/development/cpp/configuring_an_ide.rst:228
 msgid "Click finish. Xcode will now index the files."
 msgstr ""
 "終了をクリックします。次に、Xcodeがファイルのインデックスを作成します。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:228
+#: ../../docs/development/cpp/configuring_an_ide.rst:229
 msgid "Grab a cup of coffee... Maybe make something to eat, too"
 msgstr "コーヒーを1杯取って...もしかしたら、何か食べるものも作るかもしれません"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:229
+#: ../../docs/development/cpp/configuring_an_ide.rst:230
 msgid ""
 "You should have jump to definition, auto completion, and full syntax "
 "highlighting when it is done."
@@ -419,27 +423,27 @@ msgstr ""
 "定義、自動補完、および完全な構文の強調表示が完了したら、その定義にジャンプす"
 "る必要があります。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:232
+#: ../../docs/development/cpp/configuring_an_ide.rst:233
 msgid "Scheme setup"
 msgstr "スキームのセットアップ"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:234
+#: ../../docs/development/cpp/configuring_an_ide.rst:235
 msgid "Edit Build Scheme of External Build Target:"
 msgstr "外部ビルドターゲットのビルドスキームの編集:"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:236
+#: ../../docs/development/cpp/configuring_an_ide.rst:237
 msgid "Open scheme editor of external build target"
 msgstr "外部ビルドターゲットのオープンスキームエディタ"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:237
+#: ../../docs/development/cpp/configuring_an_ide.rst:238
 msgid "Expand the *Build* menu"
 msgstr "*ビルド*\\ メニューを展開する"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:238
+#: ../../docs/development/cpp/configuring_an_ide.rst:239
 msgid "Goto *Post Actions*"
 msgstr "*アクションの投稿へ飛ぶ*"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:239
+#: ../../docs/development/cpp/configuring_an_ide.rst:240
 msgid ""
 "Add a new script run action, select your project in ``Provide build settings "
 "from`` as this allows you to use ``${PROJECT_DIR}`` variable."
@@ -447,11 +451,11 @@ msgstr ""
 "新しいスクリプト実行アクションを追加し、 ``Provide build settings from`` でプ"
 "ロジェクトを選択すると、 ``${PROJECT_DIR}`` 変数を使用することができます。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:243
+#: ../../docs/development/cpp/configuring_an_ide.rst:244
 msgid "Write a script that gives the binary a name that Xcode will recognize"
 msgstr "Xcodeが認識する名前をバイナリに与えるスクリプトを記述する"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:244
+#: ../../docs/development/cpp/configuring_an_ide.rst:245
 msgid ""
 "e.g. ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/"
 "godot/bin/godot``"
@@ -459,35 +463,35 @@ msgstr ""
 "例: ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/godot/"
 "bin/godot``"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:245
+#: ../../docs/development/cpp/configuring_an_ide.rst:246
 msgid "Build the external build target"
 msgstr "外部ビルドターゲットの構築"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:247
+#: ../../docs/development/cpp/configuring_an_ide.rst:248
 msgid "Edit Run Scheme of External Build Target:"
 msgstr "外部ビルドターゲットの実行スキームの編集:"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:249
+#: ../../docs/development/cpp/configuring_an_ide.rst:250
 msgid "Open the scheme editor again"
 msgstr "スキームエディターを再度開きます"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:250
+#: ../../docs/development/cpp/configuring_an_ide.rst:251
 msgid "Click Run"
 msgstr "実行をクリック"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:254
+#: ../../docs/development/cpp/configuring_an_ide.rst:255
 msgid ""
 "Set the *Executable* to the file you linked in your post build action script"
 msgstr ""
 "*Executable*\\ を、ビルド後のアクションスクリプトでリンクしたファイルに設定し"
 "ます"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:255
+#: ../../docs/development/cpp/configuring_an_ide.rst:256
 msgid "Check *Debug executable* if it isn't already"
 msgstr ""
 "まだ実行されていない場合は、\\ *デバッグ実行可能ファイル*\\ をチェックします"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:256
+#: ../../docs/development/cpp/configuring_an_ide.rst:257
 msgid ""
 "You can go to *Arguments* tab and add an -e and a -path to a project to "
 "debug the editor not the project selection screen"
@@ -495,90 +499,90 @@ msgstr ""
 "*引数*\\ タブに移動し、プロジェクトに -e と -path を追加して、プロジェクト選"
 "択画面ではなくエディタをデバッグできます"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:259
+#: ../../docs/development/cpp/configuring_an_ide.rst:260
 msgid "Test it:"
 msgstr "それをテストします:"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:261
+#: ../../docs/development/cpp/configuring_an_ide.rst:262
 msgid "Set a breakpoint in platform/osx/godot_main_osx.mm"
 msgstr "プラットフォーム /osx/godot_main_osx.mm でブレークポイントを設定する"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:262
+#: ../../docs/development/cpp/configuring_an_ide.rst:263
 msgid "It should break at the point!"
 msgstr "そのポイントで壊れるはずです!"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:268
+#: ../../docs/development/cpp/configuring_an_ide.rst:269
 msgid "Visual Studio Code"
-msgstr ""
+msgstr "\\ Visual Studio Code"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:270
+#: ../../docs/development/cpp/configuring_an_ide.rst:271
 msgid ""
 "Ensure that C/C++ extension is installed. You can find instructions in `docs "
 "<https://code.visualstudio.com/docs/languages/cpp>`_."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:272
+#: ../../docs/development/cpp/configuring_an_ide.rst:273
 msgid "Now open cloned godot folder in VS Code (File > Open Folder...)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:274
+#: ../../docs/development/cpp/configuring_an_ide.rst:275
 msgid ""
 "In order to build the project, we need two configuration files: *launch."
 "json* and *tasks.json*. To create them:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:277
+#: ../../docs/development/cpp/configuring_an_ide.rst:278
 msgid ""
 "Open Debug view (Ctrl + Shift + D) and select cogwheel with an orange dot:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:281
+#: ../../docs/development/cpp/configuring_an_ide.rst:282
 msgid ""
 "Select *C++ (GDB/LLDB)* (it might be named differently on macOS or Windows)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:283
+#: ../../docs/development/cpp/configuring_an_ide.rst:284
 msgid "Update *launch.json* to match:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:287
+#: ../../docs/development/cpp/configuring_an_ide.rst:288
 msgid ""
 "(Note that *godot.x11.tools.64* in \"program\" value might be named "
 "differently on macOS or Windows)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:289
+#: ../../docs/development/cpp/configuring_an_ide.rst:290
 msgid ""
 "Create *tasks.json* by starting the Debug process (F5). VS Code will show a "
 "dialog with a *Configure Task* button. Tap it and select *Create tasks.json "
 "file from template*, then select *Others*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:291
+#: ../../docs/development/cpp/configuring_an_ide.rst:292
 msgid "Update *tasks.json* to match:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:295
+#: ../../docs/development/cpp/configuring_an_ide.rst:296
 msgid "(Note that *platform=x11* will be different for macOX and Windows)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:297
+#: ../../docs/development/cpp/configuring_an_ide.rst:298
 msgid ""
 "You can now start the Debug process again to test that everything works."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:299
+#: ../../docs/development/cpp/configuring_an_ide.rst:300
 msgid ""
 "If the build phase fails, check the console for hints. On Linux it's most "
 "likely that some dependencies are missing. Check :ref:`Compiling for X11 "
 "(Linux, \\*BSD) <doc_compiling_for_x11>`"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:305
+#: ../../docs/development/cpp/configuring_an_ide.rst:306
 msgid "Android Studio"
 msgstr "\\ Android Studio"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:307
+#: ../../docs/development/cpp/configuring_an_ide.rst:308
 msgid ""
 "`Android Studio <https://developer.android.com/studio>`_ is a `Jetbrain "
 "<https://www.jetbrains.com/>`_ IDE for Android development. It has a feature-"
@@ -586,24 +590,64 @@ msgid ""
 "of the Godot core engine, and Android platform codebases."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:312
+#: ../../docs/development/cpp/configuring_an_ide.rst:313
 msgid ""
 "From the Android Studio *Welcome to Android Studio* window, select *Open an "
 "existing Android Studio project*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:316
+#: ../../docs/development/cpp/configuring_an_ide.rst:317
 msgid ""
 "Navigate to ``<godot root directory>/platform/android/java`` and select the "
 "``settings.gradle`` gradle file."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:317
+#: ../../docs/development/cpp/configuring_an_ide.rst:318
 msgid "Android Studio will import and index the project."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:318
+#: ../../docs/development/cpp/configuring_an_ide.rst:319
 msgid ""
 "To build the project, follow the :ref:`compiling instructions <toc-devel-"
 "compiling>`."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:324
+msgid "CLion"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:326
+msgid ""
+"`CLion <https://www.jetbrains.com/clion/>`_ is a commercial IDE for C++. It "
+"requires a ``CMakeLists.txt`` file as a project file, which is problematic "
+"for Godot which uses the SCons buildsystem and not CMake. However, there is "
+"a ``CMakeLists.txt`` configuration for :ref:`Android Studio "
+"<doc_configuring_an_ide_android_studio>` which can also be used by CLion."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:328
+msgid "Choose *File* -> *Open*."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:330
+msgid ""
+"Navigation to your Godot Git clone, and select the folder ``platform/android/"
+"java/lib`` (the ``CMakeLists.txt`` file is located there). Select the "
+"folder, not the ``CMakeLists.txt file``. Then click *Ok*."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:334
+msgid "If this popup window appears, select *This window* to open the project."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:338
+msgid ""
+"Choose *Tools* -> *CMake* -> *Change Project Root* and select the root Godot "
+"folder."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:342
+msgid ""
+"You should be now be able to see all the project files. Autocomplete should "
+"work, when the project finish indexing."
 msgstr ""

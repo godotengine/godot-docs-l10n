@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
 msgid "Blender ESCN exporter"
-msgstr ""
+msgstr "Blender ESCNエクスポーター"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:4
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "\", which can be downloaded here: https://github.com/godotengine/godot-"
 "blender-exporter"
 msgstr ""
+"この章は「Godot Blender Exporter」と呼ばれるBlenderプラグインに関連していま"
+"す。それはこちらからダウンロードできます: https://github.com/godotengine/"
+"godot-blender-exporter"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:7
 msgid ""
@@ -34,14 +37,17 @@ msgid ""
 "format called ESCN, which is similar to TSCN (text format) but will be "
 "imported as binary SCN for performance."
 msgstr ""
+"このプラグインは、ESCNと呼ばれるGodot固有のシーン形式でBlenderのシーンをエク"
+"スポートするために使用できます。ESCNはTSCN(テキスト形式)に似ていますが、パ"
+"フォーマンスのためにバイナリSCNとしてインポートされます。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:12
 msgid "Details on exporting"
-msgstr ""
+msgstr "エクスポートの詳細"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:27
 msgid "Disabling specific objects"
-msgstr ""
+msgstr "特定のオブジェクトの無効化"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
 msgid ""
@@ -49,16 +55,21 @@ msgid ""
 "for baking). An object will not be exported if it is not rendered in the "
 "scene. This can be set in the outliner:"
 msgstr ""
+"一部のオブジェクトをエクスポートしたくない場合があります (たとえば、ベイク処"
+"理に使用される高解像度モデル)。オブジェクトがシーンにレンダリングされていない"
+"場合、オブジェクトは書き出されません。これは、アウトライナーで設定できます:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:35
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
 msgstr ""
+"ビューポートで非表示のオブジェクトはエクスポートされますが、Godotシーンでは非"
+"表示になります。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:40
 msgid "Build pipeline integration"
-msgstr ""
+msgstr "ビルドパイプラインの統合"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:42
 msgid ""
@@ -69,3 +80,10 @@ msgid ""
 "systems. An example Makefile and python script that exports all the blends "
 "in a directory are present in the Godot-Blender-exporter repository."
 msgstr ""
+"数百のモデルファイルがある場合、アーティストがブレンドファイルを手動でエクス"
+"ポートすることで時間を無駄にしたくないでしょう。これに対処するために、エクス"
+"ポーターはファイルをエクスポートするために呼び出すことができるpython関数 \\ "
+"``io_scene_godot.export(out_file_path)`` を提供します。これにより、他のビルド"
+"システムと簡単に統合できます。ディレクトリ内のすべてのブレンドをエクスポート"
+"するMakefileとpythonスクリプトの例は、Godot-Blender-exporterリポジトリにあり"
+"ます。"

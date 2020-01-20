@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
-msgstr ""
+msgstr "La classe Variant"
 
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
@@ -33,10 +33,16 @@ msgid ""
 "information for long periods of time, instead they are used mainly for "
 "communication, editing, serialization and generally moving data around."
 msgstr ""
+"Le type Variant est le plus important de Godot, la classe la plus importante "
+"dans le moteur. Un Variant prend seulement 20bytes en mémoire et peut "
+"stocker presque tous les types du moteur. Les Variants sont rarement utilisé "
+"pour stocker des informations sur une longue période de temps, à la place "
+"ils sont utilisés principalement pour la communication, l'édition, la "
+"sérialisation et plus générelement déplacer des données."
 
 #: ../../docs/development/cpp/variant_class.rst:16
 msgid "A Variant can:"
-msgstr ""
+msgstr "Un Variant peu :"
 
 #: ../../docs/development/cpp/variant_class.rst:18
 msgid "Store almost any datatype"
@@ -93,7 +99,7 @@ msgstr ""
 #: ../../docs/development/cpp/variant_class.rst:38
 #: ../../docs/development/cpp/variant_class.rst:57
 msgid "References:"
-msgstr ""
+msgstr "Références :"
 
 #: ../../docs/development/cpp/variant_class.rst:40
 msgid ""

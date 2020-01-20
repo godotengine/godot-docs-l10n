@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -274,8 +274,9 @@ msgid ""
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
-"次へ進む前に、GDScriptリファレンスを必ずお読みください。シンプルに設計された"
-"言語であり、リファレンスは短いため、概要を把握するのに数分しかかかりません。"
+"次へ進む前に、\\ :ref:`GDScript<doc_gdscript>`\\ を必ずお読みください。シンプ"
+"ルに設計された言語であり、リファレンスは短いため、概要を把握するのに数分しか"
+"かかりません。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"
@@ -286,7 +287,7 @@ msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
 msgstr ""
-"シーンタブから「子ノードの追加」ダイアログにアクセスし(または ``Ctrl+A``を押"
+"シーンタブから「子ノードの追加」ダイアログにアクセスし(または``Ctrl+A`` を押"
 "して )、次のノードを持つ階層を作成します:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
@@ -299,7 +300,7 @@ msgstr "\\ Label"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr "ボタン"
+msgstr "\\ Button"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"
@@ -475,8 +476,8 @@ msgid ""
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
 "ダイアログの下部には、作成されるメソッドの名前が表示されます。デフォルトで"
-"は、メソッド名には発信ノードの名前（この場合は「ボタン」）が含まれ、「_ on_ "
-"[シグナルを発するノード名] _ [シグナル名]」になります。"
+"は、メソッド名には発信ノードの名前（この場合は「ボタン」）が含まれ、 ``_ on_ "
+"[シグナルを発するノード名] _ [シグナル名]`` になります。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
@@ -527,8 +528,8 @@ msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"最後に、\\ :ref:`Object.connect() <class_Object_method_connect>` を使用して、"
-"ボタンの「pressed」シグナルを\\ ``_ready()``\\ に接続します。"
+"最後に、\\ :ref:`Object.connect() <class_Object_method_connect>`\\ を使用し"
+"て、ボタンの「pressed」シグナルを\\ ``_ready()``\\ に接続します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"

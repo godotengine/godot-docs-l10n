@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,7 +182,6 @@ msgstr ""
 "usar a função ``load()`` a qualquer momento:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
-#, fuzzy
 msgid ""
 "You can also ``preload`` resources. Unlike ``load``, this function will read "
 "the file from disk and load it at compile-time. As a result, you cannot call "
@@ -269,7 +268,6 @@ msgid "Creating your own resources"
 msgstr "Liberando recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
-#, fuzzy
 msgid ""
 "Like any Object in Godot, users can also script Resources. Resource scripts "
 "inherit the ability to freely translate between object properties and "
@@ -299,7 +297,6 @@ msgstr ""
 "`Reference <class_Reference>` e :ref:`Resource <class_Resource>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
-#, fuzzy
 msgid ""
 "They can define constants, so constants from other data fields or objects "
 "are not needed."
@@ -308,7 +305,6 @@ msgstr ""
 "objetos de dados não são necessárias."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
-#, fuzzy
 msgid ""
 "They can define methods, including setter/getter methods for properties. "
 "This allows for abstraction and encapsulation of the underlying data. If the "
@@ -330,7 +326,6 @@ msgstr ""
 "alterações nos dados que eles gerenciam."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:171
-#, fuzzy
 msgid ""
 "They have defined properties, so users know 100% that their data will exist."
 msgstr ""
@@ -338,7 +333,6 @@ msgstr ""
 "existirão."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:173
-#, fuzzy
 msgid ""
 "Resource auto-serialization and deserialization is a built-in Godot Engine "
 "feature. Users do not need to implement custom logic to import/export a "
@@ -349,7 +343,6 @@ msgstr ""
 "para importar / exportar os dados de um arquivo de recurso."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:175
-#, fuzzy
 msgid ""
 "Resources can even serialize sub-Resources recursively, meaning users can "
 "design even more sophisticated data structures."
@@ -359,7 +352,6 @@ msgstr ""
 "sofisticadas."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:177
-#, fuzzy
 msgid ""
 "Users can save Resources as version-control-friendly text files (\\*.tres). "
 "Upon exporting a game, Godot serializes resource files as binary files (\\*."
@@ -371,7 +363,6 @@ msgstr ""
 "velocidade e compactação."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
-#, fuzzy
 msgid ""
 "Godot Engine's Inspector renders and edits Resource files out-of-the-box. As "
 "such, users often do not need to implement custom logic to visualize or edit "
@@ -385,7 +376,6 @@ msgstr ""
 "ícone da pasta no Inspetor e abra o arquivo na caixa de diálogo."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
-#, fuzzy
 msgid ""
 "They can extend **other** resource types besides just the base Resource."
 msgstr ""
@@ -408,12 +398,10 @@ msgstr ""
 "tenham desaparecido."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
-#, fuzzy
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr "Godot facilita a criação de recursos personalizados no Inspetor."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:217
-#, fuzzy
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
@@ -422,12 +410,10 @@ msgstr ""
 "deriva Resource, desde que seu script esteja estendendo esse tipo."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:218
-#, fuzzy
 msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr "Defina a propriedade `` script`` no Inspector como seu script."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:220
-#, fuzzy
 msgid ""
 "The Inspector will now display your Resource script's custom properties. If "
 "one edits those values and saves the resource, the Inspector serializes the "
@@ -462,7 +448,6 @@ msgid "Let's see some examples."
 msgstr "Alguns exemplos:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:303
-#, fuzzy
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -477,7 +462,6 @@ msgstr ""
 "criar visualizações e editores personalizados para seus dados."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:309
-#, fuzzy
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
@@ -489,7 +473,6 @@ msgstr ""
 "para um script de recurso personalizado secundário."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:345
-#, fuzzy
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
@@ -498,7 +481,6 @@ msgstr ""
 "alternativamente ..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:347
-#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
@@ -507,7 +489,6 @@ msgstr ""
 "chave ou ..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:349
-#, fuzzy
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."

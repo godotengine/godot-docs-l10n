@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,6 @@ msgid "**Using the generic methods**"
 msgstr "**Usando o operador AS**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
-#, fuzzy
 msgid ""
 "Generic methods are also provided to make this type conversion transparent."
 msgstr ""
@@ -163,16 +162,17 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:98
 msgid ""
 "These signals can then be connected either in the editor or from code with "
-"``Connect``."
+"``Connect``. If you want to connect a signal in the editor, you need to "
+"(re)build the project assemblies to see the new signal. This build can be "
+"manually triggered by clicking the “Build” button at the top right corner of "
+"the editor window."
 msgstr ""
-"Estes sinais podem então ser conectados no editor ou no código com o "
-"``Connect``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:118
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:119
 msgid "Emitting signals is done with the ``EmitSignal`` method."
 msgstr "A emissão de sinais é feita com o método ``EmitSignal``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:129
 msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
@@ -180,7 +180,7 @@ msgstr ""
 "Observe que você sempre pode referenciar um nome de sinal com a palavra-"
 "chave ``nameof`` (aplicada no próprio delegate)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:130
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:131
 msgid ""
 "It is possible to bind values when establishing a connection by passing an "
 "object array."
@@ -188,7 +188,7 @@ msgstr ""
 "É possível vincular valores ao estabelecer uma conexão passando um objeto "
 "array."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:150
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:151
 #, fuzzy
 msgid ""
 "Signals support parameters and bound values of all the `built-in types "
@@ -206,7 +206,7 @@ msgstr ""
 "personalizados precisarão ser estendidos de `Godot.Object` ou de uma de suas "
 "subclasses."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:162
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:163
 msgid ""
 "Finally, signals can be created by calling ``AddUserSignal``, but be aware "
 "that it should be executed before any use of said signals (with ``Connect`` "

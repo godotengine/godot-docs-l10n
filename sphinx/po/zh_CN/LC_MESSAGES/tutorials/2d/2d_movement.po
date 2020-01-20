@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -183,19 +183,21 @@ msgstr ""
 "最后一个示例仅使用鼠标来控制角色。 单击屏幕将使游戏角色移动到目标位置。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:335
+#, fuzzy
 msgid ""
-"Note the ``length()`` check we make prior to movement. Without this test, "
-"the body would \"jitter\" upon reaching the target position, as it moves "
-"slightly past the position and tries to move back, only to move too far and "
-"repeat."
+"Note the ``distance_to()`` check we make prior to movement. Without this "
+"test, the body would \"jitter\" upon reaching the target position, as it "
+"moves slightly past the position and tries to move back, only to move too "
+"far and repeat."
 msgstr ""
 "注意我们在移动之前做的 ``length()`` 检查。 如果没有这个检查，物体在到达目标位"
 "置时会“抖动”，因为它稍微移过该位置时就会试图向后移动，只是每次移动步长都会有"
 "点远从而导致来回重复移动。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:340
+#, fuzzy
 msgid ""
-"Uncommenting the ``rotation`` line will also turn the body to point in its "
+"Uncommenting the ``look_at()`` line will also turn the body to point in its "
 "direction of motion if you prefer."
 msgstr "如果您取消注释的 ``rotation`` 代码，这将使物体转向其运动方向。"
 

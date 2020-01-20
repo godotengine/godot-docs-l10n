@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,19 +48,19 @@ msgid ""
 "moved to their own enums."
 msgstr ""
 "C#은 네임 스페이스에서 전역 함수와 일부 상수는 선언하지 않기 때문에 이 둘은 "
-"클래스로 이동해야 합니다. 대부분의 전역 상수는 자신의 이넘으로 이동합니다."
+"클래스로 이동해야 합니다. 대부분의 전역 상수는 자신의 열거형으로 이동합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:22
 msgid "Constants"
-msgstr "상수"
+msgstr "상수(Constant)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:24
 msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
-"전역 상수는 자신의 이넘으로 이동합니다. 예를 들어 ``ERR_*`` 상수는 ``Error`` "
-"이넘으로 이동합니다."
+"전역 상수는 자신의 열거형으로 이동합니다. 예를 들어 ``ERR_*`` 상수는 "
+"``Error`` 열거형으로 이동합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
 msgid "Special cases:"
@@ -106,7 +106,7 @@ msgstr "``TYPE_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``Variant.Type`` enum"
-msgstr "``Variant.Type`` 이넘"
+msgstr "``Variant.Type`` 열거형"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``OP_*``"
@@ -114,7 +114,7 @@ msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``Variant.Operator`` enum"
-msgstr "``Variant.Operator`` 이넘"
+msgstr "``Variant.Operator`` 열거형"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
 msgid "Math functions"

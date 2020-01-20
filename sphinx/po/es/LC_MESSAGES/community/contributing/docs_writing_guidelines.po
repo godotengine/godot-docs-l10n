@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,17 +78,17 @@ msgid "There are 3 rules to describe classes:"
 msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:25
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:278
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:368
 msgid "Give an overview of the node in the brief description"
 msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:26
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:307
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:397
 msgid "Mention what methods return if it's useful"
 msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:27
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:332
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:422
 msgid "Use \"if true\" to describe booleans"
 msgstr ""
 
@@ -119,7 +119,7 @@ msgid "Active:"
 msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:59
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:313
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:403
 msgid "**Don't** use the passive voice:"
 msgstr ""
 
@@ -343,80 +343,148 @@ msgstr ""
 msgid "How to write methods and classes"
 msgstr ""
 
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:278
+#, fuzzy
+msgid "Dynamic vs static typing"
+msgstr "Y con tipado estático:"
+
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:280
+msgid ""
+"The code examples in the documentation should follow a consistent style not "
+"to confuse users. As static type hints are an optional feature of GDScript, "
+"we chose to stick to writing dynamic code. This leads to writing GDScript "
+"that is concise and accessible."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:285
+msgid "The exception is topics that explain static typing concepts to users."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:287
+msgid "**Don't** add a type hint with a colon or by casting:"
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:297
+msgid "**Do** write constants variables with dynamic typing:"
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:307
+msgid "**Don't** write functions with inferred arguments or return types:"
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:318
+#, fuzzy
+msgid "**Do** write functions using dynamic typing:"
+msgstr "Pros y contras del tipado dinámico"
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:330
+msgid "Use real-world code examples where appropriate"
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:332
+msgid ""
+"Real-world examples are more accessible to beginners than abstract ``foos`` "
+"and ``bars``. You can also copy them directly from your game projects, "
+"ensuring that any code snippet compiles without errors."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:336
+msgid ""
+"Writing ``var speed = 10`` rather than ``var my_var = 10`` allows beginners "
+"to understand code better. It gives them a frame of reference as to where "
+"they could use the code snippets in a live project."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:340
+msgid "**Don't** write made-up examples:"
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:351
+msgid "**Do** write concrete examples:"
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:363
+msgid ""
+"Of course, there are times when using real-world examples is impractical. In "
+"those situations, you should still avoid using names such as ``my_var``, "
+"``foo()`` or ``my_func()`` and consider more meaningful names for your "
+"examples."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:370
 msgid ""
 "The brief description is the reference's most important sentence. It's the "
 "user's first contact with a node:"
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:283
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:373
 msgid "It's the only description in the \"Create New Node\" dialog."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:284
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:374
 msgid "It's at the top of every page in the reference"
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:286
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:376
 msgid ""
 "The brief description should explain the node's role and its functionality, "
 "in up to 200 characters."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:289
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:379
 msgid "**Don't** write tiny and vague summaries:"
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:296
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:386
 msgid "**Do** give an overview of the node's functionality:"
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:303
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:393
 msgid ""
 "Use the node's full description to provide more information, and a code "
 "example, if possible."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:309
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:399
 msgid ""
 "Some methods return important values. Describe them at the end of the "
 "description, ideally on a new line. No need to mention the return values for "
 "any method whose name starts with ``set`` or ``get``."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:320
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:410
 msgid "**Do** always use \"Returns\"."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:327
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:417
 msgid ""
 "Notice the exception to the \"direct voice\" rule: with the move method, an "
 "external collider can influence the method and the body that calls ``move``. "
 "In this case, you can use the passive voice."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:334
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:424
 msgid ""
 "For boolean member variables, always use ``if true`` and/or ``if false``, to "
 "stay explicit. ``Controls whether or not`` may be ambiguous and won't work "
 "for every member variable."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:338
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:428
 msgid ""
 "Also surround boolean values, variable names and methods with ``[code][/"
 "code]``."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:340
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:430
 msgid "**Do** start with \"if true\":"
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:349
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:439
 msgid "Use ``[code]`` around arguments"
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:351
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:441
 msgid ""
 "In the class reference, always surround arguments with ``[code][/code]``. In "
 "the documentation and in Godot, it will display like ``this``. When you edit "
@@ -424,22 +492,22 @@ msgid ""
 "'this' or \\`this\\` with ``[code]this[/code]``."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:355
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:445
 msgid "Common vocabulary to use in godot's docs"
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:357
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:447
 msgid ""
 "The developers chose some specific words to refer to areas of the interface. "
 "They're used in the sources, in the documentation, and you should always use "
 "them instead of synonyms, so the users know what you're talking about."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:365
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:455
 msgid "Overview of the interface and common vocabulary"
 msgstr "Visión general de la interfaz y vocabulario común"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:367
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:457
 msgid ""
 "In the top left corner of the editor lie the ``main menus``. In the center, "
 "the buttons change the ``workspace``. And together the buttons in the top "
@@ -448,7 +516,7 @@ msgid ""
 "``tools`` inside the ``toolbar``."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:373
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:463
 msgid ""
 "The tabs or dockable panels on either side of the viewport are ``docks``. "
 "You have the ``FileSystem dock``, the ``Scene dock`` that contains your "
@@ -463,13 +531,13 @@ msgstr ""
 "diseño por defecto es posible colocar los paneles en pestañas: la pestaña "
 "``Escenas``, la pestaña ``Nodos``..."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:379
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:469
 msgid ""
 "The Animation, Debugger, etc. at the bottom of the viewport are ``panels``. "
 "Together they make up the ``bottom panels``."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:382
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:472
 msgid ""
 "Foldable areas of the Inspector are ``sections``. The node's parent class "
 "names, which you can't fold, are ``Classes`` e.g. the ``KinematicBody2D "
@@ -477,33 +545,33 @@ msgid ""
 "``position`` or ``modulate color`` are both ``properties``."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:389
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:479
 msgid "Image contribution guidelines"
 msgstr "Pautas para la contribución de imágenes"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:391
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:481
 msgid ""
 "A significant part of the documentation is images, and there are several "
 "important guidelines to follow."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:394
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:484
 msgid ""
 "First, you should always be using the default editor theme and text when "
 "taking screenshots."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:396
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:486
 msgid ""
 "For 3D screenshots use 4xMSAA, enable anisotropic filtering on the projects "
 "textures, and set the anisotropic filter quality to 16x in Project Settings"
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:399
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:489
 msgid "Screenshot size should not exceed 1920x1080."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:401
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:491
 msgid ""
 "When you need to highlight an area of the editor to show something, like a "
 "button or option, use a 2 pixel thick outline without a bevel."
@@ -511,7 +579,7 @@ msgstr ""
 "Cuando necesites resaltar un área del editor para mostrar algo, como un "
 "botón o una opción, utiliza un contorno de 2 píxeles de grosor sin bisel."
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:404
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:494
 msgid ""
 "Before you add or replace any images in the documentation, they should be "
 "run through a png compressor to save size. The built in lossless compressor "

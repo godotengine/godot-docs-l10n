@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,6 +38,11 @@ msgid ""
 "users of the language, we encourage you to do the same, especially if you do "
 "not have such a guide yet."
 msgstr ""
+"このページには、Godot自体の開発者および貢献者が従うコーディングスタイルガイド"
+"が含まれています。そのため、主にプロジェクトに貢献したい人を対象としています"
+"が、この記事で言及されている規約とガイドラインはこの言語のユーザーによって最"
+"も広く採用されているものなので、特に従うべぎ(チーム内の規定などの)ガイドをま"
+"だ持っていない場合は、同じことを行うことをお勧めします。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:14
 msgid ""
@@ -59,7 +64,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:21
 msgid "Language specification"
-msgstr ""
+msgstr "言語仕様"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:23
 msgid ""
@@ -67,6 +72,9 @@ msgid ""
 "code. So, before we move to a newer version, care must be taken to avoid "
 "mixing language features only available in C# 7.1 or later."
 msgstr ""
+"Godotは現在、エンジンとサンプルソースコードで **C# バージョン7.0** を使用して"
+"います。したがって、新しいバージョンに移行する前に、C# 7.1以降でのみ使用可能"
+"な言語機能が混在しないように注意する必要があります。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:27
 msgid ""
@@ -74,77 +82,99 @@ msgid ""
 "`What's New in C# <https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/"
 ">`_."
 msgstr ""
+"異なるバージョンのC#機能の詳細については、 `C#の新機能<https://docs."
+"microsoft.com/en-us/dotnet/csharp/whats-new/> ` を参照してください。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
-msgid "Formatting conventions"
-msgstr "フォーマット規定"
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:33
-msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
-msgstr ""
+#, fuzzy
+msgid "Formatting"
+msgstr "フォーマット"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
+#, fuzzy
+msgid "General guidelines"
+msgstr "一般的な相違点"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
+msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
+msgstr "CRLFやCRではなく、改行(**LF**)文字を使用して改行します。"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:37
+msgid ""
+"Use one line feed character at the end of each file, except for `csproj` "
+"files."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:38
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_."
 msgstr ""
+"`バイトオーダーマーク<https://en.wikipedia.org/wiki/Byte_order_mark>` なしで "
+"**UTF-8** エンコーディングを使用します。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:35
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:39
 msgid ""
 "Use **4 spaces** instead of tabs for indentation (which is referred to as "
 "\"soft tabs\")."
 msgstr ""
+"インデントにタブの代わりに **4つのスペース** を使用します(「ソフトタブ」と呼"
+"ばれます)。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:40
 msgid ""
 "Consider breaking a line into several if it's longer than 100 characters."
-msgstr ""
+msgstr "100文字を超える場合は、行を複数に分割することを検討してください。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:39
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:44
 msgid "Line breaks and blank lines"
-msgstr ""
+msgstr "改行と空白行"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:41
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:46
 msgid ""
 "For a general indentation rule, follow `the \"Allman Style\" <https://en."
 "wikipedia.org/wiki/Indentation_style#Allman_style>`_ which recommends "
 "placing the brace associated with a control statement on the next line, "
 "indented to the same level:"
 msgstr ""
+"一般的なインデントルールについては、\\ `\"Allman Style\"<https://en."
+"wikipedia.org/wiki/Indentation_style#Allman_style>` に従って、制御ステートメ"
+"ントに関連付けられたブレースを次の行に配置し、同じレベルにインデントすること"
+"をお勧めします。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:58
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:63
 msgid "However, you may choose to omit line breaks inside brackets:"
-msgstr ""
+msgstr "ただし、括弧内の改行を省略することもできます。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:60
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:65
 msgid "For simple property accessors."
 msgstr "単純なプロパティアクセサーの場合。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:61
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:66
 msgid "For simple object, array, or collection initializers."
 msgstr "単純なオブジェクト、配列、またはコレクションの初期化子の場合。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:62
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:67
 msgid "For abstract auto property, indexer, or event declarations."
 msgstr "抽象自動プロパティ、インデクサー、またはイベント宣言の場合。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:84
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:89
 msgid "Insert a blank line:"
-msgstr ""
+msgstr "空白行の挿入:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:86
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:91
 msgid "After a list of ``using`` statements."
-msgstr ""
+msgstr "``using`` ステートメントのリストの後。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:87
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:92
 msgid "Between method, properties, and inner type declarations."
 msgstr "メソッド、プロパティ、内部型宣言の間。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:88
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
 msgid "At the end of each file."
-msgstr ""
+msgstr "各ファイルの末尾。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:90
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
 msgid ""
 "Field and constant declarations can be grouped together according to "
 "relevance. In that case, consider inserting a blank line between the groups "
@@ -153,128 +183,139 @@ msgstr ""
 "フィールドと定数の宣言は、関連性に従ってグループ化できます。その場合は、読み"
 "やすくするためにグループ間に空白行を挿入することを検討してください。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
-msgid "Avoid inserting a blank line:"
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
-msgid "After ``{``, the opening brace."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:96
-msgid "Before ``}``, the closing brace."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:97
-msgid "After a comment block or a single-line comment."
-msgstr ""
-
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:98
+msgid "Avoid inserting a blank line:"
+msgstr "空白行の挿入を避けるべき:"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:100
+msgid "After ``{``, the opening brace."
+msgstr "``{`` 、開き括弧の後。"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:101
+msgid "Before ``}``, the closing brace."
+msgstr "``}`` 、閉じ括弧の前。"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:102
+msgid "After a comment block or a single-line comment."
+msgstr "コメントブロックまたは単一行コメントの後。"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:103
 msgid "Adjacent to another blank line."
-msgstr "別の空白行に隣接します。"
+msgstr "別の空白行に隣接する場合。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:136
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
 msgid "Using spaces"
-msgstr ""
+msgstr "スペースの使用"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:138
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
 msgid "Insert a space:"
-msgstr ""
+msgstr "スペースを挿入する:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:140
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
 msgid "Around a binary and tertiary operator."
 msgstr "二項演算子と三次演算子の周囲。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:141
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
 msgid ""
 "Between an opening parenthesis and ``if``, ``for``, ``foreach``, ``catch``, "
 "``while``, ``lock`` or ``using`` keywords."
 msgstr ""
+"左括弧と ``if`` 、\\ ``for``、\\ ``foreach``、\\ ``catch`` 、\\ "
+"``while`` 、\\ ``lock`` 、または ``using`` キーワードの間。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:148
 msgid "Before and within a single line accessor block."
 msgstr "単一行アクセサーブロックの前および中。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:143
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:149
 msgid "Between accessors in a single line accessor block."
 msgstr "単一行アクセサーブロック内のアクセサー間。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:150
 msgid "After a comma which is not at the end of a line."
-msgstr ""
+msgstr "行末にないコンマの後。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:145
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
 msgid "After a semicolon in a ``for`` statement."
-msgstr ""
+msgstr "``for`` ステートメントのセミコロンの後。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:152
 msgid "After a colon in a single line ``case`` statement."
-msgstr ""
+msgstr "単一行 ``case`` ステートメントのコロンの後。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
 msgid "Around a colon in a type declaration."
 msgstr "型宣言のコロンの周囲。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:148
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
 msgid "Around a lambda arrow."
-msgstr "ラムダ矢印の周り。"
+msgstr "ラムダ式のアロー演算子の周り。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:149
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:155
 msgid ""
 "After a single-line comment symbol (``//``), and before it if used at the "
 "end of a line."
-msgstr ""
+msgstr "単一行コメント記号 (``//``) の後、行の末尾で使用する場合はその前。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:157
 msgid "Do not use a space:"
-msgstr ""
+msgstr "スペースの挿入を避けるべき:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:159
 msgid "After type cast parentheses."
-msgstr ""
+msgstr "型キャスト括弧の後。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:160
 msgid "Within single line initializer braces."
-msgstr "単一行のイニシライザー中かっこ内。"
+msgstr "単一行イニシライザーの中括弧内。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:156
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:162
 msgid ""
 "The following example shows a proper use of spaces, according to some of the "
 "above mentioned conventions:"
 msgstr ""
+"次の例は、上記の規則に従ってスペースを適切に使用する方法を示しています:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:191
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:197
 msgid "Naming conventions"
 msgstr "命名規則"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:193
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:199
 msgid ""
 "Use **PascalCase** for all namespaces, type names and member level "
 "identifiers (i.e. methods, properties, constants, events), except for "
 "private fields:"
 msgstr ""
+"プライベートフィールドを除く、すべての名前空間、型名、およびメンバーレベル識"
+"別子（メソッド、プロパティ、定数、イベント）に **PascalCase** を使用します。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:214
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:220
 msgid ""
 "Use **camelCase** for all other identifiers (i.e. local variables, method "
 "arguments), and use an underscore (``_``) as a prefix for private fields "
 "(but not for methods or properties, as explained above):"
 msgstr ""
+"**camelCase** は、他のすべての識別子 (ローカル変数、メソッド引数) に使用し、"
+"プライベート フィールドのプレフィックスとしてアンダースコア (``_``) を使用し"
+"ます (ただし、前述のようにメソッドやプロパティには使用しません)。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:228
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:234
 msgid ""
 "There's an exception with acronyms which consist of two letters, like "
 "``UI``, which should be written in uppercase letters where PascalCase would "
 "be expected, and in lowercase letters otherwise."
 msgstr ""
+"``UI`` のような 2つの文字で構成される頭字語には例外があり、PascalCaseで予期さ"
+"れる大文字で記述する必要があります(例:**U**ser**I**nterface → UI)。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:231
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:237
 msgid ""
 "Note that ``id`` is **not** an acronym, so it should be treated as a normal "
 "identifier:"
 msgstr ""
+"``id`` は略語\\ **ではない**\\ ため、通常の識別子として扱う必要があります。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:242
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:248
 msgid ""
 "It is generally discouraged to use a type name as a prefix of an identifier, "
 "like ``string strText`` or ``float fPower``, for example. An exception is "
@@ -282,8 +323,13 @@ msgid ""
 "letter ``I`` prefixed to their names, like ``IInventoryHolder`` or "
 "``IDamageable``."
 msgstr ""
+"一般に、たとえば ``string strText`` や ``float fPower`` のように、識別子のプ"
+"レフィックスとして型名を使用することは推奨されません。ただし、インターフェイ"
+"スについては例外が設けれれています。実際には、名前に ``InventoryHolder`` や "
+"``IDamageable`` のように大文字の ``I`` が先頭に付いている\\ **必要**\\ があり"
+"ます。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:246
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:252
 msgid ""
 "Lastly, consider choosing descriptive names and do not try to shorten them "
 "too much if it affects readability."
@@ -291,61 +337,70 @@ msgstr ""
 "最後に、わかりやすい名前を選択することを検討し、読みやすさに影響を与える場合"
 "は、あまり短くしないでください。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:249
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:255
 msgid ""
 "For instance, if you want to write code to find a nearby enemy and hit it "
 "with a weapon, prefer:"
 msgstr ""
+"たとえば、近くの敵を見つけて武器で攻撃するコードを作成する場合は、次のよう書"
+"きます:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:255
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:261
 msgid "Rather than:"
-msgstr ""
+msgstr "悪い例:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:262
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
 msgid "Implicitly typed local variables"
-msgstr ""
+msgstr "暗黙的に型指定されたローカル変数"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:264
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
 msgid ""
 "Consider using implicitly typing (``var``) for declaration of a local "
 "variable, but do so **only when the type is evident** from the right side of "
 "the assignment:"
 msgstr ""
+"ローカル変数の宣言に暗黙的に ( ``var``) を入力することを検討してください。た"
+"だし、代入の右側が\\ **型が明らかな場合にのみ**\\ 行ってください。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:294
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
 msgid "Other considerations"
-msgstr ""
+msgstr "その他の考慮事項"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:296
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
 msgid "Use explicit access modifiers."
 msgstr "明示的なアクセス修飾子を使用します。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:297
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
 msgid "Use properties instead of non-private fields."
 msgstr "非プライベートフィールドの代わりにプロパティを使用します。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:298
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
 msgid ""
 "Use modifiers in this order: ``public``/``protected``/``private``/"
 "``internal``/``virtual``/``override``/``abstract``/``new``/``static``/"
 "``readonly``."
 msgstr ""
+"修飾子を次の順序で使用します:``public``/``protected``/``private``/"
+"``internal``/``virtual``/``override``/``abstract``/``new``/``static``/"
+"``readonly``\\ 。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:306
 msgid ""
 "Avoid using fully-qualified names or ``this.`` prefix for members when it's "
 "not necessary."
 msgstr ""
+"不要な場合は、メンバーに完全修飾名または ``this.`` プレフィックスを使用しない"
+"でください。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:301
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:307
 msgid "Remove unused ``using`` statements and unnecessary parentheses."
-msgstr ""
+msgstr "未使用の ``using`` ステートメントと不要な括弧を削除します。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:308
 msgid "Consider omitting the default initial value for a type."
-msgstr ""
+msgstr "型の既定の初期値を省略することを検討してください。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:309
 msgid ""
 "Consider using null-conditional operators or type initializers to make the "
 "code more compact."
@@ -353,7 +408,7 @@ msgstr ""
 "コードをよりコンパクトにするために、null条件演算子または型初期化を使用するこ"
 "とを検討してください。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:310
 msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."

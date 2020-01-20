@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,6 @@ msgid "``TYPE_*``"
 msgstr "``TYPE_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
-#, fuzzy
 msgid "``Variant.Type`` enum"
 msgstr "``Variant.Type`` enum"
 
@@ -121,7 +120,6 @@ msgid "``OP_*``"
 msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
-#, fuzzy
 msgid "``Variant.Operator`` enum"
 msgstr "``Variant.Operator`` enum"
 
@@ -187,7 +185,6 @@ msgid "``is_instance_valid(obj)``"
 msgstr "``is_instance_valid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
-#, fuzzy
 msgid "``Object.IsInstanceValid(obj)``"
 msgstr "``Object.IsInstanceValid(obj)``"
 
@@ -435,12 +432,10 @@ msgstr ""
 "nomes alterados:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
-#, fuzzy
 msgid "``end``"
 msgstr "``end``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
-#, fuzzy
 msgid "``End``"
 msgstr "``End``"
 
@@ -479,7 +474,6 @@ msgstr ""
 "nomes alterados:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
-#, fuzzy
 msgid "``length()``"
 msgstr "``length()``"
 
@@ -493,7 +487,6 @@ msgid "``length_squared()``"
 msgstr "``length_squared()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
-#, fuzzy
 msgid "``LengthSquared``"
 msgstr "``LengthSquared``"
 
@@ -643,7 +636,6 @@ msgid "Yield"
 msgstr "Conceder"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:308
-#, fuzzy
 msgid ""
 "Something similar to GDScript's ``yield`` with a single parameter can be "
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
@@ -654,7 +646,6 @@ msgstr ""
 "csharp/language-reference/keywords/yield> `_ do C#."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:311
-#, fuzzy
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
@@ -667,7 +658,6 @@ msgid "Other differences"
 msgstr "Outras diferenças"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
-#, fuzzy
 msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."

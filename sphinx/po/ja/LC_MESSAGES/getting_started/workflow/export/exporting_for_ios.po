@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,19 +59,21 @@ msgid ""
 "In the Godot editor, open the **Export** window from the **Project** menu. "
 "When the Export window opens, click **Add..** and select **iOS**."
 msgstr ""
-"Godotエディタで、**Project**メニューから**Export**ウィンドウを開きます。エク"
-"スポートウィンドウが開いたら、\\ **Add..**\\ をクリックし、**iOS**を選択しま"
-"す。"
+"Godotエディタで、\\ **プロジェクト** メニューから **エクスポート** ウィンドウ"
+"を開きます。エクスポートウィンドウが開いたら、\\ **追加..**\\ をクリック"
+"し、\\ **iOS** を選択します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:22
 msgid ""
 "The following export options are required. Leaving any blank will cause the "
 "exporter to throw an error:"
 msgstr ""
+"次のエクスポートオプションが必要です。空白のままにすると、エクスポーターはエ"
+"ラーをスローします:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:25
 msgid "In the **Application** category * **App Store Team ID**"
-msgstr "**Application**\\ カテゴリの\\ **App Store Team ID**"
+msgstr "**Application**\\ カテゴリの\\ **App Store Team Id**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:27
 msgid "Everything in the **Required Icons** category"
@@ -79,25 +81,26 @@ msgstr "**Required Icons**\\ カテゴリのすべて"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:28
 msgid "Everything in the **Landscape Launch Screens** category"
-msgstr "**Landscape Launch Screens***のすべて"
+msgstr "**Landscape Launch Screens** のすべて"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:29
 msgid "Everything in the **Portrait Launch Screens** category"
-msgstr "**Portrait Launch Screens**カテゴリのすべて"
+msgstr "**Portrait Launch Screens** カテゴリのすべて"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:31
 msgid ""
 "After you click **Export Project**, there are still two important options "
 "left:"
 msgstr ""
-"**Export Project**をクリックした後、2つの重要なオプションが残っています:"
+"**プロジェクトのエクスポート** をクリックした後、2つの重要なオプションが残っ"
+"ています:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:33
 msgid ""
 "**Path** is an empty folder that will contain the exported Xcode project "
 "files."
 msgstr ""
-"**Path**\\ は、エクスポートされたXcodeプロジェクトファイルを含む空のフォルダ"
+"**パス**\\ は、エクスポートされたXcodeプロジェクトファイルを含む空のフォルダ"
 "です。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:34
@@ -105,8 +108,8 @@ msgid ""
 "**File** will be the name of the Xcode project and several project specific "
 "files and directories."
 msgstr ""
-"**File**\\ は、Xcodeプロジェクトといくつかのプロジェクト固有のファイルとディ"
-"レクトリの名前になります。"
+"**ファイル**\\ は、Xcodeプロジェクトといくつかのプロジェクト固有のファイルと"
+"ディレクトリの名前になります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:38
 msgid ""
@@ -123,6 +126,8 @@ msgid ""
 "Avoid using spaces when you choose your **exported_xcode_project_name** as "
 "this can lead to corruption in your XCode project file."
 msgstr ""
+"**exported_xcode_project_name ** を修正するときに名称にスペースを使用しないで"
+"ください。XCodeプロジェクトファイルが破損する可能性があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:45
 msgid "When the export completes, the output folder should look like this:"
@@ -174,7 +179,7 @@ msgstr "**godot_project_to_export**\\ はGodotプロジェクトの名前です�
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:67
 msgid "Steps to link a Godot project folder to Xcode"
-msgstr ""
+msgstr "GodotプロジェクトフォルダをXcodeにリンクする手順"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:69
 msgid "Start from an exported iOS project (follow the steps above)."
@@ -192,9 +197,9 @@ msgid ""
 "means you will be able to continue to edit your Godot project in its current "
 "location."
 msgstr ""
-"3. ダイアログで**Create folder references**\\ が選択されていることを確認しま"
-"す。つまり、現在の場所で Godot プロジェクトを編集し続けることができるというこ"
-"とです。"
+"3. ダイアログで **Create folder references**\\ が選択されていることを確認しま"
+"す。つまり、現在の場所でGodotプロジェクトを編集し続けることができるということ"
+"です。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:79
 msgid "See the **godot_project_to_export** folder in the Xcode file browser."
@@ -213,8 +218,8 @@ msgid ""
 "named **godot_path** (this is the real key name) with a value "
 "**godot_project_to_export** (this is the name of your project)"
 msgstr ""
-"6.\\ ****export_xcode_project_name-Info.plist**\\ を開き、\\ **godot_path**"
-"\\ という名前の文字列プロパティ(これは実際のキー名)と値\\ "
+"6.\\ **export_xcode_project_name-Info.plist**\\ を開き、\\ **godot_path**\\ "
+"という名前の文字列プロパティ(これは実際のキー名)と値\\ "
 "**godot_project_to_export**\\ これはプロジェクトの名前です)を追加します"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:90
@@ -234,5 +239,5 @@ msgid ""
 "Special iOS services can be used in Godot. Check out the :ref:"
 "`doc_services_for_ios` page."
 msgstr ""
-"特別なiOSサービスをGodotで使用することができます。\\ :"
-"ref:'doc_services_for_ios' ページを確認してください。"
+"特別なiOSサービスをGodotで使用することができます。\\ :ref:"
+"`doc_services_for_ios` ページを確認してください。"

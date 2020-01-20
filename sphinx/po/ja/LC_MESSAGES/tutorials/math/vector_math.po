@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:4
 msgid "Vector math"
-msgstr ""
+msgstr "ベクトル演算"
 
 #: ../../docs/tutorials/math/vector_math.rst:7
 msgid "Introduction"
@@ -45,12 +45,12 @@ msgid ""
 "the mathematics, see https://www.khanacademy.org/math/linear-algebra"
 msgstr ""
 "このチュートリアルは、線形代数に関する正式な教科書ではありません。それがゲー"
-"ム開発にどのように適用されるかだけを見ていきます。数学の詳細については、"
-"https://www.khanacademy.org/math/linear-algebraを見てください"
+"ム開発にどのように適用されるかだけを見ていきます。数学の詳細については、\\ "
+"https://www.khanacademy.org/math/linear-algebra\\ を見てください(英語)"
 
 #: ../../docs/tutorials/math/vector_math.rst:21
 msgid "Coordinate systems (2D)"
-msgstr ""
+msgstr "座標系 (2D)"
 
 #: ../../docs/tutorials/math/vector_math.rst:23
 msgid ""
@@ -58,8 +58,8 @@ msgid ""
 "vertical axis (``y``). A particular position in 2D space is written as a "
 "pair of values such as ``(4, 3)``."
 msgstr ""
-"2D空間では、座標は水平軸（x）と垂直軸（y）を使用して定義されます。 2D空間の特"
-"定の位置は、（4、3）などの値のペアとして書き込まれます。"
+"2D空間では、座標は水平軸 (``x``) と垂直軸 (``y``) を使用して定義されます。 2D"
+"空間の特定の位置は、\\ ``(4, 3)``\\ などの値のペアとして書き込まれます。"
 
 #: ../../docs/tutorials/math/vector_math.rst:29
 msgid ""
@@ -117,7 +117,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:58
 msgid "Vector operations"
-msgstr ""
+msgstr "ベクトル操作"
 
 #: ../../docs/tutorials/math/vector_math.rst:60
 msgid ""
@@ -143,7 +143,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:81
 msgid "Member access"
-msgstr ""
+msgstr "メンバアクセス"
 
 #: ../../docs/tutorials/math/vector_math.rst:83
 msgid ""
@@ -152,7 +152,7 @@ msgstr "ベクトルの個々のコンポーネントには、名前で直接ア
 
 #: ../../docs/tutorials/math/vector_math.rst:105
 msgid "Adding vectors"
-msgstr ""
+msgstr "ベクトルの加算"
 
 #: ../../docs/tutorials/math/vector_math.rst:107
 msgid ""
@@ -175,7 +175,7 @@ msgstr "a + bは、b + aと同じ結果になることに注意してくださ�
 
 #: ../../docs/tutorials/math/vector_math.rst:126
 msgid "Scalar multiplication"
-msgstr ""
+msgstr "スカラー乗算"
 
 #: ../../docs/tutorials/math/vector_math.rst:128
 msgid ""
@@ -199,7 +199,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:150
 msgid "Practical applications"
-msgstr ""
+msgstr "実際の応用"
 
 #: ../../docs/tutorials/math/vector_math.rst:152
 msgid "Let's look at two common uses for vector addition and subtraction."
@@ -207,7 +207,7 @@ msgstr "ベクトルの加算と減算の2つの一般的な使用方法を見�
 
 #: ../../docs/tutorials/math/vector_math.rst:155
 msgid "Movement"
-msgstr ""
+msgstr "移動"
 
 #: ../../docs/tutorials/math/vector_math.rst:157
 msgid ""
@@ -234,7 +234,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:169
 msgid "Pointing toward a target"
-msgstr ""
+msgstr "ターゲットへ向く"
 
 #: ../../docs/tutorials/math/vector_math.rst:171
 msgid ""
@@ -251,7 +251,7 @@ msgstr "AからBへ向くベクトルを求めるにはB－Aとします。"
 
 #: ../../docs/tutorials/math/vector_math.rst:180
 msgid "Unit vectors"
-msgstr ""
+msgstr "単位ベクトル"
 
 #: ../../docs/tutorials/math/vector_math.rst:182
 msgid ""
@@ -259,13 +259,13 @@ msgid ""
 "also sometimes referred to as **direction vectors** or **normals**. Unit "
 "vectors are helpful when you need to keep track of a direction."
 msgstr ""
-"大きさが1のベクトルを、単位ベクトルと呼びます。また、方向ベクトルまたは法線と"
-"呼ばれることもあります。単位ベクトルは、方向を追跡する必要がある場合に役立ち"
-"ます。"
+"大きさが1のベクトルを、\\ **単位ベクトル**\\ と呼びます。また、\\ **方向ベク"
+"トル**\\ または\\ **法線**\\ と呼ばれることもあります。単位ベクトルは、方向を"
+"追跡する必要がある場合に役立ちます。"
 
 #: ../../docs/tutorials/math/vector_math.rst:187
 msgid "Normalization"
-msgstr ""
+msgstr "正規化"
 
 #: ../../docs/tutorials/math/vector_math.rst:189
 msgid ""
@@ -273,15 +273,16 @@ msgid ""
 "its direction. This is done by dividing each of its components by its "
 "magnitude:"
 msgstr ""
-"ベクトルの正規化とは、方向を維持しながら長さを1に減らすことを意味します。これ"
-"は、各コンポーネントをその大きさで除算することにより行われます。"
+"ベクトルの\\ **正規化**\\ とは、方向を維持しながら長さを1に減らすことを意味し"
+"ます。これは、各コンポーネントをその大きさで除算することにより行われます。"
 
 #: ../../docs/tutorials/math/vector_math.rst:208
 msgid ""
 "Because this is such a common operation, ``Vector2`` and ``Vector3`` provide "
 "a method for normalizing:"
 msgstr ""
-"これはよくある操作なので、Vector2 と Vector3で正規化のメソッドがあります。"
+"これはよくある操作なので、\\ ``Vector2``\\ と\\ ``Vector3``\\ には正規化のた"
+"めのメソッドがあります。"
 
 #: ../../docs/tutorials/math/vector_math.rst:221
 msgid ""
@@ -294,7 +295,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:226
 msgid "Reflection"
-msgstr ""
+msgstr "反射"
 
 #: ../../docs/tutorials/math/vector_math.rst:228
 msgid ""
@@ -303,15 +304,17 @@ msgid ""
 "They are commonly used for lighting, collisions, and other operations "
 "involving surfaces."
 msgstr ""
-"単位ベクトルの一般的な用途は、法線を示すことです。法線ベクトルは、面の表面に"
-"垂直に配置され、その方向を定義する単位ベクトルです。これらは一般に、照明、衝"
-"突、およびサーフェスに関連する他の操作に使用されます。"
+"単位ベクトルの一般的な用途は、\\ **法線**\\ を示すことです。法線ベクトルは、"
+"面の表面に垂直に配置され、その方向を定義する単位ベクトルです。これらは一般"
+"に、照明、衝突、およびサーフェスに関連する他の操作に使用されます。"
 
 #: ../../docs/tutorials/math/vector_math.rst:233
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
 msgstr ""
+"例として、動いているボールを想像してみましょう。壁や他の物体に当たったら跳ね"
+"返ってほしいですね:"
 
 #: ../../docs/tutorials/math/vector_math.rst:238
 msgid ""
@@ -322,14 +325,16 @@ msgid ""
 "handle this. Here is a GDScript example of the diagram above using a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`:"
 msgstr ""
-"図の面は水平面であるため、表面法線の値は（0、-1）です。ボールが衝突すると、残"
-"りの動き（表面に当たったときに残った量）を計算し、法線を使用してそれを反射さ"
-"せます。 Godotでは、Vector2クラスにこれを処理するbounce（）メソッドがありま"
-"す。以下は、KinematicBody2Dを使用した上記の図のGDScriptの例です。"
+"図の面は水平面であるため、表面法線の値は\\ ``(0, -1)``\\ です。ボールが衝突す"
+"ると、残りの動き（表面に当たったときに残った量）を計算し、法線を使用してそれ"
+"を反射させます。 Godotでは、\\ :ref:`Vector2 <class_Vector2>`\\ クラスにこれ"
+"を処理する\\ ``bounce()``\\ メソッドがあります。以下は、\\ :ref:"
+"`KinematicBody2D <class_KinematicBody2D>`\\ を使用した上記の図のGDScriptの例"
+"です。"
 
 #: ../../docs/tutorials/math/vector_math.rst:268
 msgid "Dot product"
-msgstr ""
+msgstr "内積 (ドット積)"
 
 #: ../../docs/tutorials/math/vector_math.rst:270
 msgid ""
@@ -338,9 +343,9 @@ msgid ""
 "returns a **scalar**. Unlike a vector, which contains both magnitude and "
 "direction, a scalar value has only magnitude."
 msgstr ""
-"内積は、ベクトル数学の最も重要な概念の1つですが、誤解されることがよくありま"
-"す。内積は、2つのベクトルを演算してスカラーを返します。大きさと方向の両方を含"
-"むベクトルとは異なり、スカラーは大きさのみを持ちます。"
+"\\ **内積**\\ は、ベクトル数学の最も重要な概念の1つですが、誤解されることがよ"
+"くあります。内積は、2つのベクトルを演算して\\ **スカラー**\\ を返します。大き"
+"さと方向の両方を含むベクトルとは異なり、スカラーは大きさのみを持ちます。"
 
 #: ../../docs/tutorials/math/vector_math.rst:275
 msgid "The formula for dot product takes two common forms:"
@@ -350,6 +355,7 @@ msgstr "内積の式には、2つの一般的な形式があります。"
 msgid ""
 "A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 msgstr ""
+"A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 
 #: ../../docs/tutorials/math/vector_math.rst:281
 msgid "and"
@@ -357,7 +363,7 @@ msgstr "そして"
 
 #: ../../docs/tutorials/math/vector_math.rst:283
 msgid "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
-msgstr ""
+msgstr "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
 
 #: ../../docs/tutorials/math/vector_math.rst:287
 msgid ""
@@ -385,7 +391,7 @@ msgstr "単位ベクトルを利用すると結果は-1(180°)から 1 (0°)に�
 
 #: ../../docs/tutorials/math/vector_math.rst:311
 msgid "Facing"
-msgstr ""
+msgstr "正面"
 
 #: ../../docs/tutorials/math/vector_math.rst:313
 msgid ""
@@ -417,7 +423,7 @@ msgstr "コードでは次のように表せます。"
 
 #: ../../docs/tutorials/math/vector_math.rst:344
 msgid "Cross product"
-msgstr ""
+msgstr "外積 (クロス積)"
 
 #: ../../docs/tutorials/math/vector_math.rst:346
 msgid ""
@@ -427,15 +433,17 @@ msgid ""
 "two vectors are parallel, the result of their cross product will be a null "
 "vector."
 msgstr ""
-"内積と同様に、外積は2つのベクトルの演算です。ただし、外積の結果は、両方に垂直"
-"な方向を持つベクトルです。その大きさは、相対的な角度に依存します。 2つのベク"
-"トルが平行である場合、それらの外積の結果はヌルベクトルになります。"
+"内積と同様に、\\ **外積**\\ は2つのベクトルの演算です。ただし、外積の結果は、"
+"両方に垂直な方向を持つベクトルです。その大きさは、相対的な角度に依存します。 "
+"2つのベクトルが平行である場合、それらの外積の結果はヌルベクトルになります。"
 
 #: ../../docs/tutorials/math/vector_math.rst:351
 msgid ""
 "\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
 "\\right \\|\\ |\\sin(a,b)|"
 msgstr ""
+"\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
+"\\right \\|\\ |\\sin(a,b)|"
 
 #: ../../docs/tutorials/math/vector_math.rst:357
 msgid "The cross product is calculated like this:"
@@ -451,12 +459,12 @@ msgid ""
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
 "directions."
 msgstr ""
-"外積では、順序が重要です。 a.cross（b）はb.cross（a）と同じ結果にはなりませ"
-"ん。結果のベクトルは反対方向を指します。"
+"外積では、順序が重要です。\\ ``a.cross(b)``\\ は\\ ``b.cross(a)``\\ と同じ結"
+"果にはなりません。結果のベクトルは\\ **反対方向**\\ を指します。"
 
 #: ../../docs/tutorials/math/vector_math.rst:392
 msgid "Calculating normals"
-msgstr ""
+msgstr "法線の計算"
 
 #: ../../docs/tutorials/math/vector_math.rst:394
 msgid ""
@@ -476,7 +484,7 @@ msgstr "三角形の法線を計算する関数は以下のとおりです。"
 
 #: ../../docs/tutorials/math/vector_math.rst:423
 msgid "Pointing to a target"
-msgstr ""
+msgstr "ターゲットへの方向"
 
 #: ../../docs/tutorials/math/vector_math.rst:425
 msgid ""
@@ -504,8 +512,8 @@ msgstr "Godotでのベクターについてのより詳しいことは以下の�
 
 #: ../../docs/tutorials/math/vector_math.rst:437
 msgid ":ref:`doc_vectors_advanced`"
-msgstr ""
+msgstr ":ref:`doc_vectors_advanced`"
 
 #: ../../docs/tutorials/math/vector_math.rst:438
 msgid ":ref:`doc_matrices_and_transforms`"
-msgstr ""
+msgstr ":ref:`doc_matrices_and_transforms`"

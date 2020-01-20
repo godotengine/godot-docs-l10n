@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,16 +146,17 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:98
 msgid ""
 "These signals can then be connected either in the editor or from code with "
-"``Connect``."
+"``Connect``. If you want to connect a signal in the editor, you need to "
+"(re)build the project assemblies to see the new signal. This build can be "
+"manually triggered by clicking the “Build” button at the top right corner of "
+"the editor window."
 msgstr ""
-"이 시그널들은 ``Connect``\\ 로 코드나 편집기에서 한 쪽으로 연결될 수 있습니"
-"다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:118
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:119
 msgid "Emitting signals is done with the ``EmitSignal`` method."
 msgstr "``EmitSignal`` 메서드로 시그널을 방출할 수 있습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:128
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:129
 msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
@@ -163,13 +164,13 @@ msgstr ""
 "``nameof`` 키워드로 항상 시그널 이름을 참조할 수 있다는 것을 명심하세요 델리"
 "게이트 자체에 적용됨)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:130
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:131
 msgid ""
 "It is possible to bind values when establishing a connection by passing an "
 "object array."
 msgstr "객체 배열을 전달함으로써 연결을 지을 때 값들을 묶을 수 있습니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:150
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:151
 msgid ""
 "Signals support parameters and bound values of all the `built-in types "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/"
@@ -181,11 +182,10 @@ msgstr ""
 "시그널은 매개변수를 지원하고, 모든 `내장 타입 <https://docs.microsoft.com/en-"
 "us/dotnet/csharp/language-reference/keywords/built-in-types-table>`_\\ 의 값"
 "들과 :ref:`Godot.Object <class_Object>`\\ 에서 파생된 클래스들을 묶습니다. 결"
-"과적으로, 모든 ``Node``\\ 나 ``Reference``\\ 는 자동으로 호환될 것이지만, 커"
-"스텀 데이터 객체는 `Godot.Object`\\ 나 그 하위 클래스에서 확장해야 할 것입니"
-"다."
+"과적으로, 모든 ``Node``\\ 나 ``Reference``\\ 는 자동으로 호환될 것이지만, 맞"
+"춤 데이터 객체는 `Godot.Object`\\ 나 그 하위 클래스에서 확장해야 할 것입니다."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:162
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:163
 msgid ""
 "Finally, signals can be created by calling ``AddUserSignal``, but be aware "
 "that it should be executed before any use of said signals (with ``Connect`` "

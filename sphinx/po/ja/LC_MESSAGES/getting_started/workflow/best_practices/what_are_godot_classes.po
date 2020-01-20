@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
 msgid "Godot scenes and scripts are classes"
-msgstr ""
+msgstr "Godotのシーンとスクリプトはクラスです"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
@@ -29,6 +29,11 @@ msgid ""
 "while scripts can contain `imperative code <https://en.wikipedia.org/wiki/"
 "Imperative_programming>`_."
 msgstr ""
+"Godotでは、スクリプトとシーンの両方をオブジェクト指向プログラミング言語のクラ"
+"スに相当させることができます。主な違いは、シーンは `宣言型コード<https://en."
+"wikipedia.org/wiki/Declarative_programming>` であるのに対して、スクリプトに"
+"は `命令型コード<https://en.wikipedia.org/wiki/Imperative_programming>` を含"
+"めることができることです。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:12
 msgid ""
@@ -36,6 +41,8 @@ msgid ""
 "Oriented design principles to the scenes, nodes, or script that make up your "
 "game."
 msgstr ""
+"その結果、Godotの多くのベストプラクティスは、ゲームを構成するシーン、ノード、"
+"またはスクリプトにオブジェクト指向の設計原則を適用することに要約されます。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:15
 msgid ""
@@ -43,10 +50,13 @@ msgid ""
 "help you get a sense of how Godot works under the hood, and to help you "
 "better understand where some of this series' best practices come from."
 msgstr ""
+"このガイドでは、スクリプトとシーンがエンジンのコアでどのように機能するかを説"
+"明し、Godotが内部でどのように機能するかを理解し、このシリーズのベストプラク"
+"ティスの一部を理解するのに役立ちます。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:20
 msgid "Making sense of classes in Godot"
-msgstr ""
+msgstr "Godotのクラスを理解する"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:22
 msgid ""
@@ -55,6 +65,10 @@ msgid ""
 "tell the engine a sequence of initializations to perform on one of the "
 "engine's built-in classes."
 msgstr ""
+"Godotエンジンには :ref:`node <class_Node>` のような組み込みクラスが用意されて"
+"います。ユーザーが作成した型は、技術的にはクラスではありません。そうではな"
+"く、エンジンの組み込みクラスの 1つで実行する初期化のシーケンスをエンジンに指"
+"示するリソースです。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
 msgid ""
@@ -62,14 +76,18 @@ msgid ""
 "ref:`ClassDB <class_ClassDB>`. This database provides runtime access to "
 "class information. ``ClassDB`` contains information about classes like:"
 msgstr ""
+"Godotの内部クラスには、クラスのデータを :ref:`ClassDB <class_ClassDB>` に登録"
+"するメソッドがあります。このデータベースは、クラス情報へのランタイムアクセス"
+"を提供します。\\ ``ClassDB`` には、次のようなクラスに関する情報が含まれていま"
+"す。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
 msgid "properties"
-msgstr ""
+msgstr "プロパティ"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
 msgid "methods"
-msgstr ""
+msgstr "メソッド"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:33
 msgid "constants"
@@ -86,6 +104,10 @@ msgid ""
 "database's records and the records of the Object's base types to see if the "
 "Object supports the operation."
 msgstr ""
+"この ``ClassDB`` は、プロパティへのアクセスやメソッドの呼び出しなどの操作を実"
+"行するときにオブジェクトがチェックするものです。\\ ``ClassDB`` は、データベー"
+"スのレコードとオブジェクトの基本型のレコードをチェックして、オブジェクトが操"
+"作をサポートしているかどうかを確認します。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
 msgid ""
@@ -95,6 +117,10 @@ msgid ""
 "signals available from the ``ClassDB`` by attaching a :ref:`Script "
 "<class_Script>` to your node."
 msgstr ""
+"エンジン側では、すべてのクラスが静的な ``_bind_methods()`` 関数を定義し、デー"
+"タベースに登録するC ++コンテンツとその方法を記述します。エンジンを使用する場"
+"合、ノードに :ref:`Script <class_Script>` をアタッチすることにより\\ "
+"``ClassDB`` から利用可能なメソッド、プロパティ、シグナルを拡張できます。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:46
 msgid ""
@@ -104,6 +130,11 @@ msgid ""
 "properties the Object fetches from the ClassDB. The same is true for other "
 "declarative code."
 msgstr ""
+"オブジェクトは、データベースより以前にアタッチされたスクリプトをチェックしま"
+"す。このため、スクリプトは組み込みメソッドをオーバーライドできます。スクリプ"
+"トで ``_get_property_list()`` メソッドが定義されている場合、Godotはオブジェク"
+"トがClassDBから取得するプロパティのリストにそのデータを追加します。同じことが"
+"他の宣言型コードにも当てはまります。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:51
 msgid ""
@@ -113,16 +144,23 @@ msgid ""
 "Object to defer to the script's content where the engine logic deems "
 "appropriate."
 msgstr ""
+"組み込み型から継承しないスクリプト、つまり ``extends`` キーワードで始まらない"
+"スクリプトでさえ、エンジンのベース :ref:`Reference <class_Reference>` クラス"
+"から暗黙的に継承します。これにより、オブジェクトは、エンジンロジックが適切と"
+"考えるスクリプトのコンテンツに従うことができます。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid ""
 "As a result, you can instance scripts without the ``extends`` keyword from "
 "code, but you cannot attach them to a :ref:`Node <class_Node>`"
 msgstr ""
+"その結果、コードから ``extends`` キーワードを指定せずにスクリプトをインスタン"
+"ス化することはできますが、\\ :ref:`Node <class_Node>` にアタッチすることはで"
+"きません"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:63
 msgid "Scripting performances and PackedScene"
-msgstr ""
+msgstr "スクリプトのパフォーマンスとPackedScene"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:65
 msgid ""
@@ -130,6 +168,9 @@ msgid ""
 "grows much, much larger. Creating node hierarchies demonstrates this. Each "
 "individual Node's logic could be several hundred lines of code in length."
 msgstr ""
+"オブジェクトのサイズが大きくなるにつれて、作成に必要なスクリプトのサイズがど"
+"んどん大きくなります。ノード階層を作成すると、これが実証されます。個々のノー"
+"ドのロジックは、長さが数百行のコードになる可能性があります。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:69
 msgid ""
@@ -138,6 +179,10 @@ msgid ""
 "sets its future parent as its owner so it gets saved to disk along with it, "
 "and finally adds it as a child of the ``Main`` node:"
 msgstr ""
+"単一の ``Node`` を子として作成する簡単な例を見てみましょう。以下のコードは、"
+"新しい ``Node`` を作成し、その名前を変更し、スクリプトをそれに割り当て、将来"
+"の親(``Main``)を所有者として設定し、それとともにディスクに保存され、最後に "
+"``Main``ノードの子として追加します:"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:109
 msgid ""
@@ -145,6 +190,9 @@ msgid ""
 "makes a separate call to the scripting API which leads to many \"look-ups\" "
 "on the back-end to find the logic to execute."
 msgstr ""
+"このようなスクリプト コードは、エンジン側の C++コードよりもはるかに低速です。"
+"各変更は、実行するロジックを見つけるためにバックエンドで多くの「ルックアッ"
+"プ」につながるスクリプトAPIを個別に呼び出します。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:113
 msgid ""
@@ -153,6 +201,11 @@ msgid ""
 "that use serialized data to create objects. The engine can process scenes in "
 "batches on the back-end and provide much better performance than scripts."
 msgstr ""
+"シーンは、このパフォーマンスの問題を回避するのに役立ちます。\\:ref:"
+"`PackedScene <class_PackedScene>` は、シーンが継承する基本型であり、シリアル"
+"化されたデータを使用してオブジェクトを作成するリソースです。エンジンは、バッ"
+"クエンドでシーンをバッチ処理し、スクリプトよりもはるかに優れたパフォーマンス"
+"を提供できます。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
 msgid "Scenes and scripts are objects"
@@ -165,40 +218,49 @@ msgid ""
 "the sub-nodes. This means that the scene is often an extension of the "
 "script's declarative code."
 msgstr ""
+"シーン編成にとって、これが重要なのはなぜですか？ なぜなら、シーン\\ *は*\\ オ"
+"ブジェクトだからです。サブノードを利用するスクリプト化されたルートノードと"
+"シーンをペアにすることがよくあります。これは、シーンがスクリプトの宣言コード"
+"の拡張であることが多いことを意味します。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
 msgid "The content of a scene helps to define:"
-msgstr ""
+msgstr "シーンのコンテンツは、以下を定義するのに役立ちます:"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
 msgid "What nodes are available to the script"
-msgstr ""
+msgstr "スクリプトで使用可能なノード"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
 msgid "How they are organized"
-msgstr ""
+msgstr "どのように構成されているか"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
 msgid "How are they initialized"
-msgstr ""
+msgstr "どのように初期化されるか"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:131
 msgid "What signal connections they have with each other"
-msgstr ""
+msgstr "それら相互のシグナル接続"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:133
 msgid ""
 "Many Object-Oriented principles which apply to written code *also* apply to "
 "scenes."
 msgstr ""
+"記述されたコードに適用される多くのオブジェクト指向の原則は、シーン\\ **にも**"
+"\\ 適用されます。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:136
 msgid ""
 "The scene is *always an extension of the script attached to its root node*. "
 "You can see all the nodes it contains as part of a single class."
 msgstr ""
+"シーンは *常にルートノードにアタッチされたスクリプトの拡張* です 。1つのクラ"
+"スの一部として、そのノードに含まれるすべてのノードを確認できます。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:139
 msgid ""
 "Most of the tips and techniques explained in this series will build on this."
 msgstr ""
+"このシリーズで説明するヒントとテクニックのほとんどは、これに基づいています。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,23 +19,28 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:2
 msgid "Physics properties"
-msgstr ""
+msgstr "物理演算のプロパティ"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:4
 msgid ""
 "Exporting physics properties is done by enabling \"Rigid Body\" in Blender's "
 "physics tab:"
 msgstr ""
+"物理演算プロパティのエクスポートは、Blenderの[物理演算(physics)]タブで[リジッ"
+"ド ボディ(Rigid Body)]を有効にすることで実行されます。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:10
 msgid ""
 "By default, a single Blender object with rigid body enabled will export as "
 "three nodes: a PhysicsBody, a CollisionShape, and a MeshInstance."
 msgstr ""
+"デフォルトでは、リジッドボディを有効にした単一のBlenderオブジェクトを、"
+"PhysicsBody、CollisionShape、MeshInstanceの3つのノードとしてエクスポートしま"
+"す。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:14
 msgid "Body type"
-msgstr ""
+msgstr "ボディタイプ"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:16
 msgid ""
@@ -43,6 +48,10 @@ msgid ""
 "These turn into Static and RigidBody nodes. To create a kinematic body, "
 "enable the \"animated\" checkbox on an \"Active\" body:"
 msgstr ""
+"Blenderには「アクティブ」および「パッシブ」リジッドボディの概念しかありませ"
+"ん。これらは、StaticBodyノードとRigidBodyノードに変わります。キネマティックボ"
+"ディを作成するには、「アクティブ」ボディの「アニメ」チェックボックスを有効に"
+"します:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:23
 msgid "Collision shapes"
@@ -55,10 +64,14 @@ msgid ""
 "the options in Blender's rigid body collision and rigid body dynamics "
 "interfaces are supported:"
 msgstr ""
+"コリジョン形状のパラメーターの多くがBlenderでは欠落しており、(Godotにはある)"
+"コリジョン形状の多くも存在しません。ただし、Blenderのリジッドボディコリジョン"
+"およびリジッドボディダイナミクスインターフェースのほとんどすべてのオプション"
+"がサポートされています:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:39
 msgid "There are the following caveats:"
-msgstr ""
+msgstr "次の注意事項があります:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:33
 msgid ""
@@ -66,6 +79,9 @@ msgid ""
 "Hull``, ``Capsule``, ``Sphere`` and ``Box`` are supported in both Blender "
 "and Godot"
 msgstr ""
+"すべてのコリジョン形状がサポートされているわけではありません。 BlenderとGodot"
+"の両方でサポートされているのは、\\ ``Mesh``\\ 、\\ ``Convex Hull``\\ 、\\ "
+"``Capsule``\\ 、\\ ``Sphere``\\ 、\\ ``Box`` のみです"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:36
 msgid ""
@@ -74,6 +90,10 @@ msgid ""
 "collision mask is equal to its collision group. Most of the time, this is "
 "what you want."
 msgstr ""
+"Godotでは、さまざまなコリジョングループとコリジョンマスクを使用できます。 "
+"Blenderにはコリジョングループのみがあります。その結果、エクスポートされたオブ"
+"ジェクトのコリジョンマスクは、コリジョングループと等しくなります。ほとんどの"
+"場合、これはあなたが望んだ結果と同じです。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:42
 msgid ""
@@ -81,10 +101,13 @@ msgid ""
 "rigid body enabled. The physics properties are taken from the parent-most "
 "rigid body, and the rest are used as collision shapes."
 msgstr ""
+"複合的な物理演算シェイプを作成するには、リジッドボディを有効にして複数のオブ"
+"ジェクトに親子関係を持たせます。物理演算プロパティは、最上位の親のリジッドボ"
+"ディから取得され、残りはコリジョン形状として使用されます。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:47
 msgid "Collision geometry only"
-msgstr ""
+msgstr "コリジョンジオメトリのみ"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:49
 msgid ""
@@ -93,6 +116,10 @@ msgid ""
 "the collision shape. To only export the collision shape, set the object's "
 "maximum draw type to Wire:"
 msgstr ""
+"多くの場合、コリジョンメッシュと表示用メッシュに異なるジオメトリが必要です"
+"が、デフォルトでは、エクスポータはコリジョン形状とともに表示用メッシュを書き"
+"出します。コリジョン形状のみを書き出すには、オブジェクトの最大描画タイプを"
+"Wireに設定します:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:56
 msgid ""
@@ -100,3 +127,6 @@ msgid ""
 "of the time, you want your collision geometry to be shown see-through when "
 "working on the models, so this works out fairly nicely."
 msgstr ""
+"これは、Blenderのビューポートでのオブジェクトの表示方法にも影響します。ほとん"
+"どの場合、モデルで作業するときにコリジョンジオメトリをシースルーで表示するの"
+"で、これはかなりうまく機能します。"

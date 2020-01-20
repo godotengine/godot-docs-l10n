@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgid ""
 "translations written in the gettext ``.po`` format. See :ref:"
 "`doc_localization_using_gettext` for details."
 msgstr ""
-"もっと強力なファイル形式を必要としているなら、gettext ``.po`` 形式に書かれた"
+"もっと強力なファイル形式を必要としているなら、gettext ``.po`` 形式で書かれた"
 "翻訳の読み込みもGodotはサポートしています。詳細は:ref:"
 "`doc_localization_using_gettext` を見て下さい。"
 
@@ -218,20 +218,46 @@ msgstr "\\ Adiós"
 msgid "さようなら"
 msgstr "\\ さようなら"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+msgid "QUOTE"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+msgid "\"Hello\" said the man."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+msgid "\"Hola\" dijo el hombre."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+msgid "「こんにちは」男は言いました"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
+#, fuzzy
 msgid ""
 "The same example is shown below as a comma-separated plain text file, which "
 "should be the result of editing the above in a spreadsheet. When editing the "
-"plain text version, be sure to enclose any message that contains a comma "
-"with double quotes, so that the comma is not parsed as delimiter. "
-"Alternatively, you can select another delimiter in the import options."
+"plain text version, be sure to enclose with double quotes any message that "
+"contains commas, line breaks or double quotes, so that commas are not parsed "
+"as delimiters, line breaks don't create new entries and double quotes are "
+"not parsed as enclosing characters. Be sure to escape any double quotes a "
+"message may contain by preceding them with another double quote. "
+"Alternatively, you can select another delimiter than comma in the import "
+"options."
 msgstr ""
+"同じ例をカンマ区切りのプレーンテキストファイルとして以下に示します。これはス"
+"プレッドシートで上記を編集した結果です。プレーンテキストバージョンを編集する"
+"ときは、コンマが区切り文字として解析されないように、コンマを含むメッセージは"
+"必ず二重引用符で囲んでください。または、インポートオプションで別の区切り文字"
+"を選択できます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:91
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:97
 msgid "CSV importer"
-msgstr ""
+msgstr "CSVインポーター"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:93
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:99
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
@@ -239,7 +265,7 @@ msgstr ""
 "GodotはデフォルトでCSVファイルを翻訳として扱います。インポートし、その横に 1"
 "つ以上の圧縮翻訳リソースファイルを生成します。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:96
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:102
 msgid ""
 "Importing will also add the translation to the list of translations to load "
 "when the game runs, specified in project.godot (or the project settings). "
@@ -249,13 +275,18 @@ msgstr ""
 "に読み込む翻訳の一覧にも翻訳が追加されます。Godotでは、実行時に翻訳を読み込"
 "み、削除することもできます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
 msgid ""
 "Select the ``.csv`` file and access the \"Import\" dock to define import "
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
+"``.csv`` ファイルを選択し、「インポート」ドックにアクセスしてインポートオプ"
+"ションを定義します。インポートした翻訳の圧縮を切り替えたり、CSVファイルの解析"
+"時に使用する区切り文字を選択したりできます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:113
 msgid "Be sure to click \"Reimport\" after any change to these options."
 msgstr ""
+"これらのオプションを変更した後は、必ず「再インポート」をクリックしてくださ"
+"い。"

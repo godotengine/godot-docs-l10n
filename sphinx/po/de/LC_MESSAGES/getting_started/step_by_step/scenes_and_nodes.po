@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,64 +187,16 @@ msgstr ""
 "einer Szene und den Nodes, aus denen sie besteht."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
-msgid "Creating a new project"
-msgstr "Erstellen eines neuen Projekts"
-
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
-msgid ""
-"Let's make these abstract concepts more concrete with an example. Following "
-"a long tradition in tutorials, we'll start with a \"Hello World\" project. "
-"This will introduce us to using the editor."
-msgstr ""
-"Veranschaulichen wir die abstrakten Konzepte an einem Beispiel. Einer langen "
-"Tradition folgend, beginnen wir mit einem \"Hello World\"-Projekt. Das wird "
-"unser Einstieg in die Nutzung des Editors sein."
-
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
-msgid ""
-"If you run the Godot executable outside of a project, the Project Manager "
-"appears. This helps developers manage their projects."
-msgstr ""
-"Wenn Du die Godot-Programmdatei außerhalb eines Projekts ausführst, wird die "
-"Projektverwaltung angezeigt. Dieser hilft Entwicklern bei der Organisation "
-"ihrer Projekte."
-
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
-msgid ""
-"To create a new project, click the \"New Project\" option. Choose and create "
-"a path for the project and specify the project name."
-msgstr ""
-"Um ein neues Projekt anzulegen, klicke auf die Schaltfläche \"Neues Projekt"
-"\". Wähle und erstelle einen Verzeichnispfad für das Spiel und gib den "
-"Projektnamen ein."
-
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:91
-msgid ""
-"You can also select the rendering backend at this stage (OpenGL ES 3.0 or "
-"OpenGL ES 2.0). The advantages and disadvantages of each are listed to help "
-"you choose, and you can refer to :ref:`doc_gles2_gles3_differences` for more "
-"details. Note that you can change the backend from the project settings if "
-"you change your mind later on. For this tutorial either backend is fine."
-msgstr ""
-"Du kannst auch das grafische Backend (OpenGL ES 3.0 oder OpenGL ES 2.0) "
-"festlegen. Die Vor- und Nachteile der beiden Optionen sind dort ebenfalls "
-"aufgelistet, eine detaillierte Liste findest Du unter :ref:"
-"`doc_gles2_gles3_differences`. Du kannst diese Einstellung später jederzeit "
-"ändern. Für dieses Tutorial spielt diese Einstellung keine Rolle."
-
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:100
 msgid "Editor"
 msgstr "Editor"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:102
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
 msgid ""
-"Once you've created the \"New Project\", then open it. This will open the "
-"Godot editor:"
+"Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
+"create a new one. This will open the Godot editor:"
 msgstr ""
-"Nachdem Du \"Neues Projekt\" angelegt hast, öffne es. Dadurch wird der Godot-"
-"Editor gestartet:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:107
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
 "As mentioned before, making games in Godot feels like being in a kitchen, so "
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
@@ -255,7 +207,7 @@ msgstr ""
 "fügen dem Projekt ein paar frische Nodes hinzu. Wir beginnen mit einer "
 "\"Hello World\"-Nachricht, die wir auf dem Bildschirm ausgeben werden."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:112
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:89
 msgid ""
 "To do this we need to add a Label node. Press the \"Add Child Node\" button "
 "at the top left of the scene dock (the icon represents a plus symbol). This "
@@ -270,7 +222,7 @@ msgstr ""
 "ausgewählten Node sein. Wenn keine Node ausgewählt ist, wird die neue Node "
 "ein Kind der Haupt (\"root\")-Node."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
 msgid ""
 "In an empty scene (without root node), the scene dock shows several options "
 "to quickly add a root node to the scene. \"2D Scene\" adds a Node2D node, "
@@ -288,7 +240,7 @@ msgstr ""
 "Favoriten an, damit du sie direkt als \"Selbst-erstellte Node\" benutzen "
 "kannst."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:128
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
 msgid ""
 "Note that these presets are here for convenience and are not mandatory for "
 "the different types of scenes. Not every 3D scene needs a Spatial node as "
@@ -301,7 +253,7 @@ msgstr ""
 "wie jede GUI- oder 2D-Szene eine Control-Node oder Node2D als Haupt-Node "
 "braucht."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
 "Now, to add a label node to this scene you can click on the Custom Node "
 "button or the Add Node button at the top. In scenes that aren't empty you "
@@ -312,7 +264,7 @@ msgstr ""
 "die nicht leer sind, verwendst Du die Schaltfläche Node hinzufügen, um "
 "Unternodes zu erstellen."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:139
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
@@ -320,7 +272,7 @@ msgstr ""
 "Daraufhin öffnet sich der Dialog \"Node erstellen\", in dem die lange Liste "
 "der Nodes angezeigt wird, die erzeugt werden können:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:144
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:121
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
@@ -328,13 +280,13 @@ msgstr ""
 "Wähle aus der Liste den \"Label\"-Node aus. Am schnellsten findest Du den "
 "Node wahrscheinlich durch die Suche:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:149
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
 "Jetzt nur noch auf \"Erstellen\" drücken! Nach einem Druck auf die "
 "Schaltfläche passiert eine ganze Menge:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:153
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:130
 msgid ""
 "First of all, the scene changes to the 2D editor (because Label is a 2D Node "
 "type), and the Label appears, selected, at the top left corner of the "
@@ -344,7 +296,7 @@ msgstr ""
 "Typ ist), und das Label erscheint, vorausgewählt, in der oberen linken Ecke "
 "des Ansichtsfensters."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:156
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
 msgid ""
 "The node appears in the scene tree editor (box in the top right corner), and "
 "the label properties appear in the Inspector (box in the bottom right "
@@ -353,7 +305,7 @@ msgstr ""
 "Der Node erscheint als neuer Eintrag im Szenenbaum (oben rechts) und die "
 "Label-Eigenschaften werden im Inspektor aufgeführt (unten rechts)."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:160
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:137
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
@@ -361,7 +313,7 @@ msgstr ""
 "Mit dem nächsten Schritt wird die \"Text\"-Eigenschaft des Labels geändert. "
 "Ändern wir es zu \"Hello World\":"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:165
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:142
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
@@ -370,11 +322,11 @@ msgstr ""
 "Schaltfläche oben rechts (die kleine Filmklappe mit dem Play-Symbol) oder "
 "drücke F6:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:147
 msgid "Aaaand... Oops."
 msgstr "Uuuund... Ups."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:174
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:151
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
@@ -383,7 +335,7 @@ msgstr ""
 "Speichere also die Szene bspw. als \n"
 "\"Hello.tscn\" in \"Szene\" -> \"Szene speichern\" ab:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:179
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:156
 msgid ""
 "And here's when something funny happens. The file dialog is a special file "
 "dialog, and only allows you to save inside the project. The project root is "
@@ -402,7 +354,7 @@ msgstr ""
 "steht und unabhängig von Plattform oder Installationsort stets dafür genutzt "
 "wird, um auf Dateien innerhalb des Spiels heraus zuzugreifen."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:164
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
@@ -410,11 +362,11 @@ msgstr ""
 "Nach dem Abspeichern der Szene und nochmaligen Drücken von \"Szene starten\" "
 "sollte die \"Hello World\"-Demo nun endlich ausgeführt werden:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:192
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:169
 msgid "Success!"
 msgstr "Geschafft!"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:173
 msgid ""
 "If this doesn't immediately work and you have a hiDPI display on at least "
 "one of your monitors, go to **Project → Project Settings → Display → "
@@ -424,11 +376,11 @@ msgstr ""
 "kann dies unter **Projekt → Projekteinstellungen → Display → Window** "
 "aktiviert werden, indem unter **Dpi**, **Allow Hidpi** eingeschaltet wird."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
 msgid "Configuring the project"
 msgstr "Konfigurieren des Projekts"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:206
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
@@ -441,7 +393,7 @@ msgstr ""
 "Hauptszene bestimmt werden. Das ist die Szene, die gestartet wird, wenn das "
 "Projekt ausgeführt wird."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:211
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
 "These settings are all stored in a project.godot file, which is a plaintext "
 "file in win.ini format (for easy editing). There are dozens of settings that "
@@ -455,13 +407,13 @@ msgstr ""
 "auszuführen ist. Um das Bearbeiten dieser Einstellungen zu vereinfachen, "
 "stellt Godot den \"Projekteinstellungen\"-Dialog zur Verfügung."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:217
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:194
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
 "Um diesen Dialog aufzurufen, wähle im Menü \"Projekt\" -> "
 "\"Projekteinstellungen\" aus. Versuch es jetzt einmal."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:219
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
@@ -471,7 +423,7 @@ msgstr ""
 "rechts auf das kleine Dateisymbol, um die 'Hello.tscn' als Hauptszene zu "
 "selektieren."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:224
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:201
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
@@ -480,7 +432,7 @@ msgstr ""
 "(oder F5) diese Szene ausgeführt, ganz gleich, welche Szene Du gerade "
 "bearbeitest."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:227
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
 msgid ""
 "The project settings dialog provides a lot of options that can be saved to a "
 "project.godot file and shows their default values. If you change a value, a "
@@ -494,7 +446,7 @@ msgstr ""
 "bedeutet, dass die Eigenschaft in der Datei project.godot gespeichert wird. "
 "Ein Klick auf diesen Pfeil setzt den Wert wieder auf Standard."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:232
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
@@ -504,11 +456,11 @@ msgstr ""
 "und diese während der Laufzeit über den :ref:`ProjectSettings "
 "<class_ProjectSettings>`-Singelton abzufragen."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:236
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:213
 msgid "To be continued..."
 msgstr "Fortsetzung folgt..."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:238
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:215
 msgid ""
 "This tutorial talked about \"scenes and nodes\", but so far there has been "
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "

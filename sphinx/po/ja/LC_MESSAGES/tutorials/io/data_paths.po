@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:16
 msgid "Resource path"
-msgstr ""
+msgstr "リソースパス"
 
 #: ../../docs/tutorials/io/data_paths.rst:18
 msgid ""
@@ -97,7 +97,7 @@ msgstr "タイプ（型）"
 
 #: ../../docs/tutorials/io/data_paths.rst:51
 msgid "Location"
-msgstr "場所"
+msgstr "場所(Location)"
 
 #: ../../docs/tutorials/io/data_paths.rst:53
 msgid "User data"
@@ -165,11 +165,18 @@ msgid ""
 "specification to change the editor (and project) data paths."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:78
+#: ../../docs/tutorials/io/data_paths.rst:77
+msgid ""
+"If you use `Godot packaged as a Flatpak <https://flathub.org/apps/details/"
+"org.godotengine.Godot>`__, the editor data paths will be located in "
+"subfolders in ``~/.var/app/org.godotengine.Godot/``."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:83
 msgid "Self-contained mode"
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:80
+#: ../../docs/tutorials/io/data_paths.rst:85
 msgid ""
 "If you create a file called ``._sc_`` or ``_sc_`` in the same directory as "
 "the editor binary, Godot will enable *self-contained mode*. This will make "
@@ -178,7 +185,7 @@ msgid ""
 "installation, which can then be placed on an USB drive."
 msgstr ""
 
-#: ../../docs/tutorials/io/data_paths.rst:86
+#: ../../docs/tutorials/io/data_paths.rst:91
 msgid ""
 "The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "
 "uses self-contained mode by default."

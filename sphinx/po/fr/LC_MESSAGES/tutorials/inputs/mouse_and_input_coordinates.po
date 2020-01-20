@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:4
 msgid "Mouse and input coordinates"
-msgstr ""
+msgstr "Souris et coordonnées d'entrée"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 msgid "About"
@@ -30,10 +30,13 @@ msgid ""
 "The reason for this small tutorial is to clear up many common mistakes about "
 "input coordinates, obtaining mouse position and screen resolution, etc."
 msgstr ""
+"La raison de ce petit tutoriel est d'éclaircir de nombreuses erreurs "
+"courantes concernant les coordonnées d'entrée, l'obtention de la position de "
+"la souris et la résolution de l'écran, etc."
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:14
 msgid "Hardware display coordinates"
-msgstr ""
+msgstr "Coordonnées d'affichage matériel"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:16
 msgid ""
@@ -41,10 +44,14 @@ msgid ""
 "meant to run on PC, such as editors, MMOs, tools, etc. However, it does not "
 "make as much sense outside of that scope."
 msgstr ""
+"L'utilisation des coordonnées matérielles est logique dans le cas de "
+"l'écriture d'interfaces utilisateur complexes destinées à fonctionner sur "
+"PC, telles que des éditeurs, des MMO, des outils, etc. Cependant, cela n'a "
+"pas autant de sens en dehors de ce cadre."
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:21
 msgid "Viewport display coordinates"
-msgstr ""
+msgstr "Coordonnées d'affichage du viewport"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:23
 msgid ""
@@ -53,11 +60,17 @@ msgid ""
 "the functions in nodes to obtain the mouse coordinates and viewport size, "
 "for example:"
 msgstr ""
+"Godot utilise les viewports pour afficher du contenu, et les viewports "
+"peuvent être mis à l'échelle par plusieurs options (voir le tutoriel :ref:"
+"`doc_multiple_resolutions`). Utilisez ensuite les fonctions dans les nœuds "
+"pour obtenir les coordonnées de la souris et la taille de la fenêtre, par "
+"exemple :"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:55
 msgid ""
 "Alternatively, it's possible to ask the viewport for the mouse position:"
 msgstr ""
+"Il est également possible de demander au viewport la position de la souris :"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:66
 msgid ""
@@ -66,3 +79,8 @@ msgid ""
 "Use ``event.relative`` instead of ``event.position`` and ``event.speed`` to "
 "process mouse movement and position changes."
 msgstr ""
+"Quand le mode de la souris est réglé sur ``Input.MOUSE_MODE_CAPTURED``, la "
+"valeur ``event.position`` de ``InputEventMouseMotion`` est le centre de "
+"l'écran. Utilisez ``event.relative`` au lieu de ``event.position`` et "
+"``event.speed`` pour traiter les mouvements de la souris et les changements "
+"de position."

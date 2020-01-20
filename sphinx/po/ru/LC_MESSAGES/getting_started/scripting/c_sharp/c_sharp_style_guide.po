@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:4
 msgid "C# style guide"
-msgstr ""
+msgstr "Руководство по стилю C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:6
 msgid ""
 "Having well-defined and consistent coding conventions is important for every "
 "project, and Godot is no exception to this rule."
 msgstr ""
+"Наличие четко определенных и согласованных соглашений о программировании "
+"важно для каждого проекта, и Godot не является исключением из этого правила."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:9
 msgid ""
@@ -36,6 +38,12 @@ msgid ""
 "users of the language, we encourage you to do the same, especially if you do "
 "not have such a guide yet."
 msgstr ""
+"Эта страница содержит руководство по стилю программирования, за которым "
+"следуют разработчики и участники самого Godot. Как таковой, он в основном "
+"предназначен для тех, кто хочет внести свой вклад в проект, но так как "
+"соглашения и руководящие указания, упомянутые в этой статье, являются "
+"наиболее широко принятыми пользователями языка, мы рекомендуем вам следовать "
+"им, особенно если у вас еще нет подобного руководства."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:14
 msgid ""
@@ -47,10 +55,17 @@ msgid ""
 "`Framework Design Guidelines <https://docs.microsoft.com/en-us/dotnet/"
 "standard/design-guidelines/naming-guidelines>`_."
 msgstr ""
+"Эта статья ни в коем случае не является исчерпывающим руководством о том, "
+"как следовать стандартным правилам или рекомендациям по программированию. "
+"Если вы не уверены в аспекте, который здесь не описан, обратитесь к более "
+"полной документации, такой как `Соглашения о написании кода на C# <https://"
+"docs.microsoft.com/ru-ru/dotnet/csharp/programming-guide/inside-a-program/"
+"coding-conventions>`_ или `Правила именования С# <https://docs.microsoft.com/"
+"ru-ru/dotnet/standard/design-guidelines/naming-guidelines>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:21
 msgid "Language specification"
-msgstr ""
+msgstr "Спецификация языка"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:23
 msgid ""
@@ -58,6 +73,10 @@ msgid ""
 "code. So, before we move to a newer version, care must be taken to avoid "
 "mixing language features only available in C# 7.1 or later."
 msgstr ""
+"Godot в настоящее время использует **C # версию 7.0** в своем движке и "
+"пример исходного кода. Поэтому, прежде чем перейти к более новой версии, "
+"необходимо позаботиться о том, чтобы не смешивать языковые функции, "
+"доступные только в C# 7.1 или более поздней версии."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:27
 msgid ""
@@ -65,209 +84,257 @@ msgid ""
 "`What's New in C# <https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/"
 ">`_."
 msgstr ""
+"Для получения подробной информации о возможностях C# в различных версиях см. "
+"`Что нового в C# <https://docs.microsoft.com/ru-ru/dotnet/csharp/whats-new/"
+"csharp-8>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
 #, fuzzy
-msgid "Formatting conventions"
-msgstr "Соглашения о форматировании"
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:33
-msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
-msgstr ""
+msgid "Formatting"
+msgstr "Формат"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
+#, fuzzy
+msgid "General guidelines"
+msgstr "Общие отличия"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
+msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
+msgstr ""
+"Для перевода строки используйте символы перевода строки (**LF**), а не CRLF "
+"или CR."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:37
+msgid ""
+"Use one line feed character at the end of each file, except for `csproj` "
+"files."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:38
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_."
 msgstr ""
+"Используйте кодировку **UTF-8** без `маркера последовательности байтов "
+"<https://ru.wikipedia.org/wiki/Маркер_последовательности_байтов>`_."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:35
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:39
 msgid ""
 "Use **4 spaces** instead of tabs for indentation (which is referred to as "
 "\"soft tabs\")."
 msgstr ""
+"Используйте **4 пробела** вместо табов для отступа (которые называются "
+"«мягкими табами»)."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:40
 msgid ""
 "Consider breaking a line into several if it's longer than 100 characters."
-msgstr ""
+msgstr "Попробуйте разбить строку на несколько, если она длиннее 100 символов."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:39
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:44
 msgid "Line breaks and blank lines"
-msgstr ""
+msgstr "Разрывы строки и пустые строки"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:41
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:46
 msgid ""
 "For a general indentation rule, follow `the \"Allman Style\" <https://en."
 "wikipedia.org/wiki/Indentation_style#Allman_style>`_ which recommends "
 "placing the brace associated with a control statement on the next line, "
 "indented to the same level:"
 msgstr ""
+"Для общего правила отступа следуйте `\" стилю Олмана \" <https://ru."
+"wikipedia.org/wiki/Отступ_(программирование)#Стиль_Олмана>`_, который "
+"рекомендует размещать фигурную скобку, связанную с оператором управления, на "
+"следующей строке, с отступом к тому же уровню:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:58
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:63
 msgid "However, you may choose to omit line breaks inside brackets:"
-msgstr ""
+msgstr "Однако вы можете пропустить разрывы строк внутри скобок:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:60
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:65
+#, fuzzy
 msgid "For simple property accessors."
-msgstr ""
+msgstr "Для простых свойств собственности."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:61
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:66
 msgid "For simple object, array, or collection initializers."
-msgstr ""
+msgstr "Для простых инициализаторов объектов, массивов или коллекций."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:62
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:67
 msgid "For abstract auto property, indexer, or event declarations."
 msgstr ""
+"Для абстрактного автоматического свойства, индексатора или объявлений "
+"событий."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:84
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:89
 msgid "Insert a blank line:"
-msgstr ""
+msgstr "Вставить пустую строку:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:86
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:91
 msgid "After a list of ``using`` statements."
-msgstr ""
+msgstr "После списка операторов ``using``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:87
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:92
 msgid "Between method, properties, and inner type declarations."
-msgstr ""
+msgstr "Между методом, свойствами и внутренними объявлениями типов."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:88
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
 #, fuzzy
 msgid "At the end of each file."
 msgstr "А затем файл cpp."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:90
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
 msgid ""
 "Field and constant declarations can be grouped together according to "
 "relevance. In that case, consider inserting a blank line between the groups "
 "for easier reading."
 msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
-msgid "Avoid inserting a blank line:"
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
-msgid "After ``{``, the opening brace."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:96
-msgid "Before ``}``, the closing brace."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:97
-msgid "After a comment block or a single-line comment."
-msgstr ""
+"Объявления полей и констант могут быть сгруппированы в соответствии с "
+"релевантностью. В этом случае попробуйте вставить пустую строку между "
+"группами для облегчения чтения."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:98
-msgid "Adjacent to another blank line."
-msgstr ""
+msgid "Avoid inserting a blank line:"
+msgstr "Избегайте вставки пустой строки:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:136
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:100
+msgid "After ``{``, the opening brace."
+msgstr "После ``{`` открывающей скобки."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:101
+msgid "Before ``}``, the closing brace."
+msgstr "Перед ``}`` закрывающей скобкой."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:102
+msgid "After a comment block or a single-line comment."
+msgstr "После блока комментариев или однострочного комментария."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:103
+msgid "Adjacent to another blank line."
+msgstr "Рядом с другой пустой строкой."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
 #, fuzzy
 msgid "Using spaces"
 msgstr "Инстанцирование сцен"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:138
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
 msgid "Insert a space:"
-msgstr ""
+msgstr "Вставьте пробел:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:140
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
 msgid "Around a binary and tertiary operator."
-msgstr ""
+msgstr "Вокруг бинарного и третичного оператора."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:141
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
 msgid ""
 "Between an opening parenthesis and ``if``, ``for``, ``foreach``, ``catch``, "
 "``while``, ``lock`` or ``using`` keywords."
 msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
-msgid "Before and within a single line accessor block."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:143
-msgid "Between accessors in a single line accessor block."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
-msgid "After a comma which is not at the end of a line."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:145
-msgid "After a semicolon in a ``for`` statement."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
-msgid "After a colon in a single line ``case`` statement."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
-msgid "Around a colon in a type declaration."
-msgstr ""
+"Между открывающей скобкой и ключевыми словами ``if``, ``for``, ``foreach``, "
+"``catch``, ``while``, ``lock`` или ``using``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:148
-msgid "Around a lambda arrow."
-msgstr ""
+msgid "Before and within a single line accessor block."
+msgstr "До и внутри однострочного блока доступа."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:149
+msgid "Between accessors in a single line accessor block."
+msgstr "Между аксессорами в однострочном блоке аксессоров."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:150
+msgid "After a comma which is not at the end of a line."
+msgstr "После запятой, которая не находится в конце строки."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
+msgid "After a semicolon in a ``for`` statement."
+msgstr "После точки с запятой в выражении ``for``."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:152
+msgid "After a colon in a single line ``case`` statement."
+msgstr "После двоеточия в однострочном операторе ``case``."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
+msgid "Around a colon in a type declaration."
+msgstr "Вокруг двоеточия в объявлении типа."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
+msgid "Around a lambda arrow."
+msgstr "Вокруг лямбда-стрелки."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:155
 msgid ""
 "After a single-line comment symbol (``//``), and before it if used at the "
 "end of a line."
 msgstr ""
+"После однострочного символа комментария (``//``) и перед ним, если "
+"используется в конце строки."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:157
 msgid "Do not use a space:"
-msgstr ""
+msgstr "Не используйте пробел:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:159
 msgid "After type cast parentheses."
-msgstr ""
+msgstr "После приведения типа в круглых скобках."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:160
 msgid "Within single line initializer braces."
-msgstr ""
+msgstr "В пределах однострочных инициализирующих скобок."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:156
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:162
 msgid ""
 "The following example shows a proper use of spaces, according to some of the "
 "above mentioned conventions:"
 msgstr ""
+"В следующем примере показано правильное использование пробелов в "
+"соответствии с некоторыми из вышеупомянутых соглашений:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:191
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:197
 #, fuzzy
 msgid "Naming conventions"
 msgstr "Соглашения в именовании"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:193
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:199
 msgid ""
 "Use **PascalCase** for all namespaces, type names and member level "
 "identifiers (i.e. methods, properties, constants, events), except for "
 "private fields:"
 msgstr ""
+"Используйте **PascalCase** для всех пространств имен, имен типов и "
+"идентификаторов уровня элемента (то есть методов, свойств, констант, "
+"событий), кроме закрытых полей:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:214
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:220
 msgid ""
 "Use **camelCase** for all other identifiers (i.e. local variables, method "
 "arguments), and use an underscore (``_``) as a prefix for private fields "
 "(but not for methods or properties, as explained above):"
 msgstr ""
+"Используйте **camelCase** для всех других идентификаторов (то есть локальных "
+"переменных, аргументов метода) и используйте подчеркивание (``_``) в "
+"качестве префикса для закрытых полей (но не для методов или свойств, как "
+"описано выше):"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:228
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:234
 msgid ""
 "There's an exception with acronyms which consist of two letters, like "
 "``UI``, which should be written in uppercase letters where PascalCase would "
 "be expected, and in lowercase letters otherwise."
 msgstr ""
+"Исключение составляют аббревиатуры, которые состоят из двух букв, таких как "
+"``UI``, которые должны быть написаны заглавными буквами, где ожидается "
+"PascalCase, и строчными буквами в противном случае."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:231
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:237
 msgid ""
 "Note that ``id`` is **not** an acronym, so it should be treated as a normal "
 "identifier:"
 msgstr ""
+"Обратите внимание, что ``id`` **не является** аббревиатурой, поэтому его "
+"следует рассматривать как обычный идентификатор:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:242
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:248
 msgid ""
 "It is generally discouraged to use a type name as a prefix of an identifier, "
 "like ``string strText`` or ``float fPower``, for example. An exception is "
@@ -275,77 +342,98 @@ msgid ""
 "letter ``I`` prefixed to their names, like ``IInventoryHolder`` or "
 "``IDamageable``."
 msgstr ""
+"Как правило, не рекомендуется использовать имя типа в качестве префикса "
+"идентификатора, например, ``string strText`` или ``float fPower``. Однако "
+"сделано исключение для интерфейсов, которые **должны**, на самом деле, иметь "
+"заглавную букву ``I`` с префиксом к своим именам, например "
+"``IInventoryHolder`` или ``IDamageable``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:246
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:252
 msgid ""
 "Lastly, consider choosing descriptive names and do not try to shorten them "
 "too much if it affects readability."
 msgstr ""
+"Наконец, рассмотрите возможность выбора описательных имен и не пытайтесь их "
+"укорачивать слишком сильно, если это влияет на читабельность."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:249
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:255
 msgid ""
 "For instance, if you want to write code to find a nearby enemy and hit it "
 "with a weapon, prefer:"
 msgstr ""
+"Например, если вы хотите написать код, чтобы найти ближайшего врага и "
+"поразить его оружием, лучше будет:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:255
-#, fuzzy
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:261
 msgid "Rather than:"
-msgstr "Другие чаты"
+msgstr "А не:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:262
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
 msgid "Implicitly typed local variables"
-msgstr ""
+msgstr "Неявно типизированные локальные переменные"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:264
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
 msgid ""
 "Consider using implicitly typing (``var``) for declaration of a local "
 "variable, but do so **only when the type is evident** from the right side of "
 "the assignment:"
 msgstr ""
+"Попробуйте использовать неявную типизацию (``var``) для объявления локальной "
+"переменной, но делайте это **только тогда, когда тип очевиден** с правой "
+"стороны присваивания:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:294
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
 #, fuzzy
 msgid "Other considerations"
 msgstr "Векторные Операции"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:296
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
 msgid "Use explicit access modifiers."
-msgstr ""
+msgstr "Используйте явные модификаторы доступа."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:297
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
 msgid "Use properties instead of non-private fields."
-msgstr ""
+msgstr "Используйте свойства вместо не закрытых полей."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:298
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
 msgid ""
 "Use modifiers in this order: ``public``/``protected``/``private``/"
 "``internal``/``virtual``/``override``/``abstract``/``new``/``static``/"
 "``readonly``."
 msgstr ""
+"Используйте модификаторы в следующем порядке: ``public`` / ``protected`` / "
+"``private`` / ``internal`` / ``virtual`` / ``override`` / ``abstract`` / "
+"``new`` / ``static`` / ``readonly``."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:306
 msgid ""
 "Avoid using fully-qualified names or ``this.`` prefix for members when it's "
 "not necessary."
 msgstr ""
+"Избегайте использования полностью определенных имен или префикса ``this.`` "
+"для членов, когда в этом нет необходимости."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:301
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:307
 msgid "Remove unused ``using`` statements and unnecessary parentheses."
-msgstr ""
+msgstr "Удалите неиспользуемые операторы ``using`` и лишние скобки."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:308
 msgid "Consider omitting the default initial value for a type."
-msgstr ""
+msgstr "Попробуйте пропустить начальное значение по умолчанию для типа."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:309
 msgid ""
 "Consider using null-conditional operators or type initializers to make the "
 "code more compact."
 msgstr ""
+"Подумайте об использовании нулевых условных операторов или инициализаторов "
+"типов, чтобы сделать код более компактным."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:310
 msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."
 msgstr ""
+"Используйте безопасное приведение, когда существует вероятность того, что "
+"значение имеет другой тип, и используйте прямое приведение в противном "
+"случае."

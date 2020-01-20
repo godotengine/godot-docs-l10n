@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "プロジェクトのエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:9
 msgid "Why export?"
-msgstr ""
+msgstr "エクスポートする理由は?"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:11
 msgid ""
@@ -55,6 +55,9 @@ msgid ""
 "binary in the same directory as the ``project.godot`` file, then compress "
 "the project directory and you are done."
 msgstr ""
+"Godotを使用してPC上でゲームプロジェクトを配布することはかなり簡単です。Godot"
+"バイナリを ``project.godot`` ファイルと同じディレクトリにドロップし、プロジェ"
+"クトディレクトリを圧縮すれば完了です。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:26
 msgid ""
@@ -66,6 +69,13 @@ msgid ""
 "binary, which is smaller in size, more optimized and does not include tools "
 "like the editor and debugger."
 msgstr ""
+"これは簡単に聞こえますが、おそらく開発者がこれをしたくない理由がいくつかあり"
+"ます。 1つ目は、ファイルの読み込みを分散することが望ましくない場合があること"
+"です。一部の開発者は、好奇心旺盛なゲームユーザーがゲームの作成方法を覗き見る"
+"のを好まない場合があり、また他の開発者はゲームが洗練されていないなどと感じる"
+"かもしれません。もう1つの理由は、開発者が特別にコンパイルされたバイナリを好む"
+"可能性があることです。バイナリはサイズが小さく、より最適化されており、エディ"
+"タやデバッガなどのツールは含まれません。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:34
 msgid ""
@@ -85,6 +95,9 @@ msgid ""
 "project on those devices, a binary for each of those platforms is built, "
 "then added to a native project together with the game data."
 msgstr ""
+"モバイルプラットフォームでの同じシナリオは少し厄介です。これらのデバイスでプ"
+"ロジェクトを配布するには、これらの各プラットフォームのバイナリがビルドされ、"
+"ゲームデータと共にネイティブプロジェクトに追加されます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid ""
@@ -93,10 +106,10 @@ msgid ""
 "While learning each SDK is always encouraged, it can be frustrating to be "
 "forced to do it at an undesired time."
 msgstr ""
-"これは、開発者がエクスポートする前に各プラットフォームのSDK に精通している必"
-"要があることを意味するため、面倒な場合があります。各SDKを学ぶことは常に奨励さ"
-"れていますが、望ましくない時間にそれを行うことを余儀なくされることはイライラ"
-"する可能性があります。"
+"これは、開発者がエクスポートする前に各プラットフォームのSDKに精通している必要"
+"があることを意味するため、面倒な場合があります。各SDKを学ぶことは常に奨励され"
+"ていますが、望ましくない時間にそれを行うことを余儀なくされることはイライラす"
+"る可能性があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:50
 msgid ""
@@ -106,6 +119,11 @@ msgid ""
 "standardized for more than a decade, but mobile devices use different "
 "formats for texture compression, such as PVRTC (iOS) or ETC (Android)."
 msgstr ""
+"このアプローチには別の問題もあります。異なるデバイスは、実行するのに異なる形"
+"式のデータを好みます。この主な例は、テクスチャ圧縮です。すべてのPCハードウェ"
+"アはS3TC(BC)圧縮を使用し、10年以上にわたって標準化されていますが、モバイルデ"
+"バイスはPVRTC(iOS)やETC(Android)などのさまざまな形式のテクスチャ圧縮を使用し"
+"ます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
 msgid "Export menu"
@@ -124,13 +142,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
 msgid "To open the export menu, click the **Export** button:"
-msgstr ""
+msgstr "エクスポートメニューを開くには、[エクスポート]ボタンをクリックします:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
 msgid ""
 "The export menu will open. However, it will be completely empty. This is "
 "because we need to add an export preset."
 msgstr ""
+"エクスポートメニューが開きます。ただし、完全に空の状態です。これは、エクス"
+"ポートプリセットを追加する必要があるためです。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:73
 msgid ""
@@ -138,6 +158,9 @@ msgid ""
 "export menu. This will open a drop-down list of platforms to choose from for "
 "an export preset."
 msgstr ""
+"エクスポートプリセットを作成するには、エクスポートメニューの上部にある[**追"
+"加…**]ボタンをクリックします。これにより、エクスポートプリセット用に選択でき"
+"るプラットフォームのドロップダウンリストが開きます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:79
 msgid ""
@@ -148,6 +171,12 @@ msgid ""
 "is missing and will not allow the user to export for that platform until "
 "they resolve it:"
 msgstr ""
+"多くの場合、エクスポートするにはデフォルトのオプションで十分なので、それらを"
+"微調整する必要は通常ありません。ただし、多くのプラットフォームでは、エクス"
+"ポートできるように追加のツール(SDK)をインストールする必要があります。さらに、"
+"Godotはパッケージを作成するためにエクスポートテンプレートをインストールする必"
+"要があります。エクスポートメニューは、何かが欠けていると文句を言い、ユーザー"
+"が解決するまでそのプラットフォームにエクスポートすることを許可しません。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:88
 msgid ""
@@ -168,12 +197,18 @@ msgid ""
 "a renamed ZIP archive) from the `download page of the website <https://www."
 "godotengine.org/download>`_."
 msgstr ""
+"プラットフォームの設定とは別に、プロジェクトをエクスポートできるようにエクス"
+"ポートテンプレートをインストールする必要があります。これらは、\\ `ウェブサイ"
+"トのダウンロードページ<https://www.godotengine.org/download>` からTPZファイル"
+"(名前が変更されたZIPアーカイブ)として取得できます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
 msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
 msgstr ""
+"ダウンロードしたら、エディタの **エクスポートテンプレートの管理 [ファイルから"
+"インストール]** オプションを使用してインストールできます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:105
 msgid "Export mode"
@@ -189,15 +224,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
 msgid "Export every single file in the project"
-msgstr "プロジェクト内のすべてのファイルをエクスポートする"
+msgstr "プロジェクト内のすべてのファイルをエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
 msgid "Export only resources (+ custom filter), this is the default."
-msgstr ""
+msgstr "リソースのみをエクスポート(+カスタムフィルタ)、これがデフォルトです。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
 msgid "Export only selected resources (+ custom filter)"
-msgstr ""
+msgstr "選択したリソースのみをエクスポート(+カスタムフィルタ)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
 msgid ""
@@ -206,6 +241,10 @@ msgid ""
 "developers often have a lot of unrelated stuff around in the project "
 "directory, which makes it a bad idea."
 msgstr ""
+"**プロジェクト内のリソースをすべてエクスポート** - このモードでは、プロジェク"
+"ト内のすべてのファイルがエクスポートされます。これは何かが忘れられているかど"
+"うかをテストするのに適していますが、多くの場合、開発者はプロジェクトディレク"
+"トリに無関係なものをたくさん配置しているので、それは良い考えとはいえません。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
 msgid ""
@@ -214,6 +253,11 @@ msgid ""
 "their games. To compensate for this, filters can be added for extra "
 "extensions (for instance, ``*.txt,*.csv``)."
 msgstr ""
+"**選択したシーン(と依存関係にあるもの)をエクスポート** - リソースのみがエクス"
+"ポートされます。ほとんどのプロジェクトでは、これで十分です。ただし、多くの開"
+"発者は、ゲームでカスタムデータファイルを使用することを好みます。これを補うた"
+"めに、追加の拡張子用のフィルターを追加できます(たとえば、\\ ``*.txt、*."
+"csv``)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid ""
@@ -223,10 +267,15 @@ msgid ""
 "is exported. Individual resources can be selected and dependency detection "
 "is performed to ensure that everything needed is added."
 msgstr ""
+"**選択したリソース(と依存関係にあるもの)をエクスポート** - リストから選択した"
+"リソースのみがエクスポートされます。これはおそらくほとんどのプロジェクトでは"
+"やり過ぎですが、場合によっては正当化されます(通常は巨大なプロジェクト)。この"
+"モードでは、エクスポート対象を完全に制御できます。個々のリソースを選択し、依"
+"存関係の検出を実行して、必要なものがすべて追加されていることを確認できます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
 msgid "Exporting from the command line"
-msgstr ""
+msgstr "コマンドラインからエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
 msgid ""
@@ -235,6 +284,10 @@ msgid ""
 "from the command line still requires an export preset to define the export "
 "parameters. A basic invocation of the command would be:"
 msgstr ""
+"制作においては自動ビルドが便利ですが、Godotではコマンドラインのパラメータ\\ "
+"``--export``\\ および\\ ``--export-debug``\\ を使うことで可能になります。コマ"
+"ンドラインからのエクスポートでも、設定のためにエクスポート用プリセットを指定"
+"する必要があります。コマンドラインでの基本的な呼び出し方はこうです:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
 msgid ""
@@ -243,6 +296,10 @@ msgid ""
 "relative to the project path or absolute; it does not respect the directory "
 "the command was invoked from."
 msgstr ""
+"\"Windows Desktop\" というプリセットと、テンプレートが見つかれば、これで\\ "
+"``some_name.exe``\\ へとエクスポートします。出力先のパスは、プロジェクトから"
+"の相対パスか、絶対パスを指定します。コマンド実行時のディレクトリは関係ありま"
+"せん。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
 msgid ""
@@ -250,9 +307,14 @@ msgid ""
 "single export to be used with multiple Godot executables. This takes place "
 "if the target name ends with ``.pck`` or ``.zip``."
 msgstr ""
+"PCKあるいはZIPファイルのみをエクスポートする設定も可能で、これなら一回エクス"
+"ポートすれば複数のGodot実行ファイルで使用できます。設定するには、ターゲットの"
+"ファイル名の拡張子に\\ ``.pck``\\ あるいは\\ ``.zip``\\ を指定します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
 msgstr ""
+"自動エクスポートには、\\ ``--export``\\ フラグに\\ ``--path``\\ フラグを組み"
+"合わせたり、専用のプリセットを作ると便利でしょう。"

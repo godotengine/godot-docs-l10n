@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
 msgid "Feature tags"
-msgstr ""
+msgstr "フィーチャータグ"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:7
 msgid "Introduction"
@@ -30,6 +30,8 @@ msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
 "is represented as a string, which can refer to many of the following:"
 msgstr ""
+"Godotは、機能の可用性をタグ付けするための特別なシステムを持っています。各 *"
+"フィーチャー* は文字列として表され、次の多くを参照できます。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:12
 msgid "Platform name."
@@ -37,47 +39,52 @@ msgstr "プラットフォーム名。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:13
 msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
-msgstr ""
+msgstr "プラットフォームアーキテクチャ(64ビットまたは32ビット、x86またはARM)。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
 msgid "Platform type (desktop, mobile, Web)."
-msgstr ""
+msgstr "プラットフォームの種類 (デスクトップ、モバイル、Web)。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
 msgid "Supported texture compression algorithms on the platform."
-msgstr ""
+msgstr "プラットフォームでサポートされているテクスチャ圧縮アルゴリズム。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
 msgstr ""
+"ビルドが ``debug`` か ``release`` か(``debug`` にはエディターが含まれます)。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
 "Whether the project is running from the editor or a \"standalone\" binary."
 msgstr ""
+"プロジェクトがエディターから実行されているか、「スタンドアロン」バイナリから"
+"実行されているか。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:18
 msgid "Many more things."
-msgstr "もっと多くの事。"
+msgstr "その他のもの。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:20
 msgid "Features can be queried at run-time from the singleton API by calling:"
-msgstr ""
+msgstr "機能は、次の呼び出しによってシングルトンAPIから実行時に照会できます:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:28
 msgid "Default features"
-msgstr "デフォルトの機能"
+msgstr "デフォルトのフィーチャー"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:30
 msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are **case-"
 "sensitive**:"
 msgstr ""
+"Godotのほとんどのフィーチャータグのリストを次に示します。\\ **大文字と小文字"
+"を区別する** ことに注意してください："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Feature tag**"
-msgstr ""
+msgstr "**フィーチャータグ**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Description**"
@@ -145,47 +152,47 @@ msgstr "\\ **X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
-msgstr ""
+msgstr "X11 で実行 (Linux/BSD デスクトップ)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "**Server**"
-msgstr ""
+msgstr "\\ **Server**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "Running on the headless server platform"
-msgstr ""
+msgstr "ヘッドレスサーバープラットフォームで実行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "**debug**"
-msgstr ""
+msgstr "\\ **debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "Running on a debug build (including the editor)"
-msgstr ""
+msgstr "デバッグ ビルドで実行 (エディターを含む)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
-msgstr ""
+msgstr "\\ **release**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "Running on a release build"
-msgstr "リリースビルドでの実行"
+msgstr "リリースビルドで実行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "**editor**"
-msgstr ""
+msgstr "\\ **editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "Running on an editor build"
-msgstr ""
+msgstr "エディタビルドで実行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "**standalone**"
-msgstr ""
+msgstr "\\ **standalone**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "Running on a non-editor build"
-msgstr ""
+msgstr "エディタビルド以外で実行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
@@ -193,7 +200,7 @@ msgstr "\\ **64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "Running on a 64-bit build (any architecture)"
-msgstr ""
+msgstr "64ビット ビルドで実行 (任意のアーキテクチャ)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
@@ -201,43 +208,43 @@ msgstr "\\ **32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "Running on a 32-bit build (any architecture)"
-msgstr ""
+msgstr "32ビットビルドでの実行 (任意のアーキテクチャ)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "**x86_64**"
-msgstr ""
+msgstr "\\ **x86_64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "Running on a 64-bit x86 build"
-msgstr ""
+msgstr "x86の64ビットビルドで実行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "**x86**"
-msgstr ""
+msgstr "\\ **x86**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "Running on a 32-bit x86 build"
-msgstr ""
+msgstr "x86の32ビットビルドで実行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "**arm64**"
-msgstr ""
+msgstr "\\ **arm64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "Running on a 64-bit ARM build"
-msgstr ""
+msgstr "ARMの64ビットビルドで実行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "**arm**"
-msgstr ""
+msgstr "\\ **arm**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "Running on a 32-bit ARM build"
-msgstr ""
+msgstr "ARMの32ビットビルドで実行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "**mobile**"
-msgstr "**モバイル**"
+msgstr "\\ **mobile**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "Host OS is a mobile platform"
@@ -245,7 +252,7 @@ msgstr "ホストOSはモバイルプラットフォーム"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "**pc**"
-msgstr "**PC**"
+msgstr "\\ **pc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "Host OS is a PC platform (desktop/laptop)"
@@ -253,7 +260,7 @@ msgstr "ホストOSはPCプラットフォーム(デスクトップ/ラップト
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "**web**"
-msgstr "**Web**"
+msgstr "\\ **web**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "Host OS is a Web browser"
@@ -261,7 +268,7 @@ msgstr "ホストOSはWebブラウザ"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "**etc**"
-msgstr ""
+msgstr "\\ **etc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "Textures using ETC1 compression are supported"
@@ -269,7 +276,7 @@ msgstr "ETC1圧縮を使用したテクスチャがサポートされていま�
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "**etc2**"
-msgstr ""
+msgstr "\\ **etc2**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "Textures using ETC2 compression are supported"
@@ -277,7 +284,7 @@ msgstr "ETC2圧縮を使用したテクスチャがサポートされていま�
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "**s3tc**"
-msgstr ""
+msgstr "\\ **s3tc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "Textures using S3TC (DXT/BC) compression are supported"
@@ -285,7 +292,7 @@ msgstr "S3TC(DXT/BC)圧縮を使用したテクスチャがサポートされて
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "**pvrtc**"
-msgstr ""
+msgstr "\\ **pvrtc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "Textures using PVRTC compression are supported"
@@ -300,6 +307,8 @@ msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
+"ビルドにカスタム機能を追加することができます。生成に使用される *エクスポート"
+"プリセット* の関連フィールドを使用します。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Overriding project settings"
@@ -311,6 +320,8 @@ msgid ""
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
+"機能を使用して、\\ *プロジェクト設定*\\ の特定の構成値を上書きできます。これ"
+"により、ビルドを実行するときに構成をより適切にカスタマイズできます。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
 msgid ""
@@ -318,6 +329,8 @@ msgid ""
 "the game (which was customized in a special export preset, which, in turn, "
 "includes only demo levels)."
 msgstr ""
+"次の例では、ゲームのデモビルドに別のアイコンが追加されています(特別なエクス"
+"ポートプリセットでカスタマイズされ、デモレベルのみが含まれています)。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid "After overriding, a new field is added for this specific configuration:"
@@ -333,10 +346,12 @@ msgid ""
 "There are already a lot of settings that come with overrides by default; "
 "they can be found in many sections of the project settings."
 msgstr ""
+"デフォルトでは、すでに多くの設定がオーバーライドされています。プロジェクト設"
+"定の多くのセクションにあります。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:121
 msgid "Customizing the build"
-msgstr ""
+msgstr "ビルドのカスタマイズ"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:123
 msgid ""
@@ -344,3 +359,6 @@ msgid ""
 "custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
+"カスタム ** ExportPlugin ** を記述することにより、フィーチャータグを使用して"
+"ビルドプロセスをカスタマイズすることもできます。また、\\ **GDNative** でロー"
+"ドおよびエクスポートされる共有ライブラリを指定するためにも使用されます。"

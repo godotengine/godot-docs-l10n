@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -217,21 +217,41 @@ msgstr "Żegnaj"
 msgid "さようなら"
 msgstr "Żegnaj"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+msgid "QUOTE"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+msgid "\"Hello\" said the man."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+msgid "\"Hola\" dijo el hombre."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+msgid "「こんにちは」男は言いました"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid ""
 "The same example is shown below as a comma-separated plain text file, which "
 "should be the result of editing the above in a spreadsheet. When editing the "
-"plain text version, be sure to enclose any message that contains a comma "
-"with double quotes, so that the comma is not parsed as delimiter. "
-"Alternatively, you can select another delimiter in the import options."
+"plain text version, be sure to enclose with double quotes any message that "
+"contains commas, line breaks or double quotes, so that commas are not parsed "
+"as delimiters, line breaks don't create new entries and double quotes are "
+"not parsed as enclosing characters. Be sure to escape any double quotes a "
+"message may contain by preceding them with another double quote. "
+"Alternatively, you can select another delimiter than comma in the import "
+"options."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:91
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:97
 #, fuzzy
 msgid "CSV importer"
 msgstr "Importer CSV"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:93
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:99
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
@@ -240,7 +260,7 @@ msgstr ""
 "i wygeneruje jedną lub więcej skompresowanych plików źródłowych tłumaczenia "
 "obok tego."
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:96
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:102
 msgid ""
 "Importing will also add the translation to the list of translations to load "
 "when the game runs, specified in project.godot (or the project settings). "
@@ -250,13 +270,13 @@ msgstr ""
 "gry, ustalonych w project.godot (lub ustawieniach projektu). Godot pozwala "
 "także na wczytywanie i usuwanie tłumaczeń w czasie działania programu."
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
 msgid ""
 "Select the ``.csv`` file and access the \"Import\" dock to define import "
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:113
 msgid "Be sure to click \"Reimport\" after any change to these options."
 msgstr ""

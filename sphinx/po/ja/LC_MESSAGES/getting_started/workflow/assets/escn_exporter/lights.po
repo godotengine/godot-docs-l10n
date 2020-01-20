@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,29 +19,35 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:2
 msgid "Lights"
-msgstr ""
+msgstr "ライト"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:4
 msgid ""
 "By default, lamps in Blender have shadows enabled. This can cause "
 "performance issues in Godot."
 msgstr ""
+"デフォルトでは、Blenderのランプはシャドウを有効にしています。これにより、"
+"Godotでパフォーマンスの問題が発生する可能性があります。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:8
 msgid ""
 "Lamps are exported using their \"Blender Render\" settings. When Blender 2.8 "
 "is released, this will be removed and this part of the exporter will change."
 msgstr ""
+"ランプは、「Blender Render」設定を使用してエクスポートされます。 Blender 2.8"
+"がリリースされると、これは削除され、エクスポーターのこの部分が変更されます。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:11
 msgid ""
 "Sun, point and spot lamps are all exported from Blender along with many of "
 "their properties:"
 msgstr ""
+"サン、ポイント、スポットのランプはすべて、Blenderから多くのプロパティとともに"
+"エクスポートされます:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
 msgid "There are some things to note:"
-msgstr ""
+msgstr "注意すべき点がいくつかあります:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
 msgid ""
@@ -49,12 +55,18 @@ msgid ""
 "clamped by the attenuation distance. To most closely match between the "
 "viewport and Godot, enable the \"Sphere\" checkbox. (Highlighted green)"
 msgstr ""
+"Blenderでは、ライトは無限遠まで光を放ちます。 Godotでは、減衰距離"
+"(attenuation distance)によってクランプされます。BlenderのビューポートとGodot"
+"を最も厳密に一致させるには、「Sphere」チェックボックスを有効にします。(緑の強"
+"調表示)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:21
 msgid ""
 "Light attenuation models differ between Godot and Blender. The exporter "
 "attempts to make them match, but it isn't always very good."
 msgstr ""
+"光の減衰モデルはGodotとBlenderで異なります。エクスポーターはそれらを一致させ"
+"ようとしますが、常に非常に良い結果とは限りません。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:23
 msgid ""
@@ -62,8 +74,11 @@ msgid ""
 "The exporter attempts to make them similar, but it doesn't always look the "
 "same."
 msgstr ""
+"スポットライトの角度減衰モデルもGodotとBlenderで異なります。エクスポーターは"
+"それらを類似させようとしますが、常に同じように見えるとは限りません。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:26
 msgid ""
 "There is no difference between buffer shadow and ray shadow in the export."
 msgstr ""
+"エクスポートでは、バッファシャドウとレイシャドウの間に違いはありません。"

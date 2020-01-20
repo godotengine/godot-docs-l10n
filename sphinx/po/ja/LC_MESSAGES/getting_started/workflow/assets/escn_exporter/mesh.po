@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,17 +23,19 @@ msgstr "メッシュ"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
-msgstr ""
+msgstr "モディファイヤ"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:6
 msgid ""
 "There is an exporting option :code:`Apply Modifiers` to control whether mesh "
 "modifiers are applied to the exported mesh."
 msgstr ""
+"エクスポートされるメッシュにメッシュモディファイヤを適用するかどうかを制御す"
+"るエクスポートオプション :code:`Apply Modifiers` があります。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:11
 msgid "Shape Key"
-msgstr ""
+msgstr "シェイプキー"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:12
 msgid ""
@@ -41,6 +43,9 @@ msgid ""
 "almost like exporting the mesh again, so don't be surprised it takes a "
 "relatively long time."
 msgstr ""
+"メッシュシェイプキーのエクスポートはサポートされていますが、各シェイプキーの"
+"エクスポートはメッシュを都度エクスポートするのとほとんど同じであるため、比較"
+"的長い時間がかかることに驚かないでください。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:17
 msgid ""
@@ -51,3 +56,9 @@ msgid ""
 "github.com/godotengine/godot-blender-exporter/issues>`__, which helps to "
 "develop the exporter to have a more precise check of modifiers."
 msgstr ""
+"多くのモディファイヤはシェイプキーと互換性がありません(サブサーフェスモディ"
+"ファイヤなど)。したがって、誤ったシェイプキーがエクスポートされていることがわ"
+"かった場合は、 :code:`Apply Modifiers` を無効にして、エクスポートを再試行して"
+"ください。さらに、互換性のないモディファイヤを `問題リスト<https://github."
+"com/godotengine/godot-blender-exporter/issues>` に報告しておくと、モディファ"
+"イヤをより正確にチェックするエクスポーターを開発することに役立ちます。"

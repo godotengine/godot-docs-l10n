@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,28 +32,40 @@ msgid ""
 "tutorial suggests a workflow which should be a good starting point. We will "
 "also cover using version control with Godot."
 msgstr ""
+"Поскольку Godot не имеет ограничений по структуре проекта или использованию "
+"файловой системы, организация файлов при изучении движка может показаться "
+"сложной задачей. Этот учебник предлагает рабочий процесс, который должен "
+"быть хорошей отправной точкой. Мы также рассмотрим использование контроля "
+"версий с Godot."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:15
 msgid "Organization"
-msgstr ""
+msgstr "Организация"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:17
 msgid ""
 "Godot is scene-based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
 msgstr ""
+"Godot по своей природе основан на сценах и использует файловую систему как "
+"есть, без метаданных или базы данных ресурсов."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
 msgid ""
 "Unlike other engines, many resources are contained within the scene itself, "
 "so the amount of files in the filesystem is considerably lower."
 msgstr ""
+"В отличие от других движков, многие ресурсы содержатся внутри самой сцены, "
+"поэтому количество файлов в файловой системе значительно ниже."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:23
 msgid ""
 "Considering that, the most common approach is to group assets as close to "
 "scenes as possible; when a project grows, it makes it more maintainable."
 msgstr ""
+"Учитывая это, наиболее распространенным подходом является группирование "
+"ресурсов как можно ближе к сценам; когда проект будет расти, это делает его "
+"обслуживание легче."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:27
 msgid ""
@@ -61,10 +73,14 @@ msgid ""
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
 "They can then use a separate folder to store built levels that use them."
 msgstr ""
+"Например, обычно можно поместить в одну папку основные ресурсы, такие как "
+"изображения спрайтов, сетки 3D-моделей, материалы и музыку и т.д. Затем "
+"можно использовать отдельную папку для хранения созданных уровней, которые "
+"их используют."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
 msgid "Importing"
-msgstr ""
+msgstr "Импорт"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
 msgid ""
@@ -72,12 +88,16 @@ msgid ""
 "project. While this can be useful in large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
+"Версии Godot до 3.0 импортировали файлы вне проекта. Хотя это может быть "
+"полезно в больших проектах, это привело к хлопотам в организации для "
+"большинства разработчиков."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:54
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
 msgstr ""
+"Благодаря этому ресурсы теперь прозрачно импортируются из папки проекта."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 #, fuzzy
@@ -90,6 +110,10 @@ msgid ""
 "an empty file called ``.gdignore`` in the folder (the leading ``.`` is "
 "required). This can be useful to speed up the initial project importing."
 msgstr ""
+"Чтобы запретить Godot импортировать файлы, содержащиеся в определенной "
+"папке, создайте в этой папке пустой файл с именем ``.gdignore`` (необходим "
+"ведущий ``.``). Это может оказаться полезным для ускорения первоначального "
+"импорта проекта."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:66
 msgid ""
@@ -97,15 +121,22 @@ msgid ""
 "editor such as Notepad++ or use the following command in a command prompt: "
 "``type nul > .gdignore``"
 msgstr ""
+"Чтобы создать файл, имя которого начинается с точки в Windows, вы можете "
+"использовать текстовый редактор, например Notepad ++, или использовать "
+"следующую команду в командной строке: ``type nul> .gdignore``"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:70
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
 "using the ``load()`` and ``preload()`` methods."
 msgstr ""
+"Как только папка игнорируется, ресурсы в этой папке больше не могут быть "
+"загружены с использованием методов ``load ()`` и ``preload ()``."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:73
 msgid ""
 "Ignoring a folder will also automatically hide it from the FileSystem dock, "
 "which can be useful to reduce clutter."
 msgstr ""
+"Игнорирование папки также автоматически скрывает ее от меню FileSystem, что "
+"может быть полезно для уменьшения беспорядка."

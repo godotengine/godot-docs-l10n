@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 12:27+0100\n"
+"POT-Creation-Date: 2020-01-20 15:59+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,16 +30,12 @@ msgstr ""
 "пользовательский интерфейс:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
-#, fuzzy
 msgid "A main menu."
-msgstr "Главное меню"
+msgstr "Главное меню."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
-#, fuzzy
 msgid "A game UI with a health bar, energy bar, bomb and money counters."
-msgstr ""
-"Игровой интерфейс пользователя с шкалой здоровья, энергии, счетчиками бомб и "
-"денег"
+msgstr "Игровой UI со шкалой здоровья и энергии, счетчиками бомб и денег."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
 #, fuzzy
@@ -54,9 +50,8 @@ msgstr ""
 "для шкалы здоровья, читайте :doc:`ui_code_a_life_bar`"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
-#, fuzzy
 msgid "The GUI you're going to create."
-msgstr "Графический интерфейс, который вы будете создавать"
+msgstr "Графический интерфейс, который вы будете создавать."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -77,6 +72,8 @@ msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
 "UI system works."
 msgstr ""
+"Сначала прочитайте :doc:`ui_introduction_to_the_ui_system`, чтобы узнать, "
+"как работает система пользовательского интерфейса Godot."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
 msgid "How to design your game UI"
@@ -125,11 +122,10 @@ msgstr ""
 "тестерами вашего интерфейса и вы лишитесь ценных отзывов"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
-#, fuzzy
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
 msgstr ""
-"Если пользовательский интерфейс работает не должным образом, переделайте "
-"часть спрайтов-заглушек"
+"Если пользовательский интерфейс не заработает должным образом, придется "
+"переделывать часть спрайтов."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:58
 msgid ""
@@ -152,22 +148,20 @@ msgstr ""
 "Вы можете:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
-#, fuzzy
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
-"Создать интерфейс в одной сцене и сохранить некоторые его части в отдельные "
-"сцены для многоразового использования"
+"Создать интерфейс в одной сцене и позже сохранить некоторые его части в "
+"отдельные сцены для многоразового использования."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
-#, fuzzy
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
-"Собрать шаблоны из базовых элементов и создавать определенные компоненты, "
-"использую как основу базовые сцены"
+"Собрать шаблонные сцены из базовых элементов и создавать определенные "
+"компоненты, используя как основу эти шаблоны."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -183,12 +177,12 @@ msgstr ""
 "части многоразовыми, как показано ниже."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
-#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
-"Графика выглядит лучше, чем в грубом дизайне, но является еще незавершенной"
+"Файлы, которые вы увидите в Godot. Графика выглядит лучше, чем в грубом "
+"дизайне, но все еще является незавершенной."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -213,30 +207,28 @@ msgstr ""
 "Это мои три правила большого пальца, чтобы подобрать правильный контейнер:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
-#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button."
 msgstr ""
 "Разбейте пользовательский интерфейс на вложенные контейнеры, от большого, в "
-"котором содержится все, до маленького, содержащего один виджет с полоской "
-"состояния и ее названием, панелью или кнопкой"
+"котором содержится все, до маленького, содержащего один виджет, например с "
+"полоской состояния и ее названием, панелью или кнопкой."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
-#, fuzzy
 msgid "If there's some padding around an area, use a ``MarginContainer``."
 msgstr ""
-"Если есть некоторые отступы вокруг участка, используйте ``MarginContainer``"
+"Если требуются некоторые отступы вокруг участка, используйте "
+"``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
-#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
-"Если элементы, расположены в строках или столбцах, используйте "
-"``HBoxContainer`` или ``VBoxContainer``"
+"Если элементы расположены в строках или столбцах, используйте "
+"``HBoxContainer`` или ``VBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
@@ -262,9 +254,8 @@ msgstr ""
 "правой колонке будет иллюстрация в центре  ``CenterContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
-#, fuzzy
 msgid "Interface building blocks, broken down using the three rules of thumb."
-msgstr "Блоки интерфейса разбиты с помощью трёх правил"
+msgstr "Блоки интерфейса, разбитые с помощью трёх вышепреведённых правил."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -281,13 +272,12 @@ msgid "Prepare the Main Menu scene"
 msgstr "Подготовка сцены главного меню"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
-#, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
-"Создадим главное меню. Мы построим его в одной сцене. Чтобы создать пустую "
-"сцену, нажмите на меню Сцена-> Новая Сцена."
+"Создадим главное меню. Мы создадим его в одной сцене. Чтобы создать пустую "
+"сцену, нажмите на меню **Сцена -> Новая Сцена**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
 msgid ""
@@ -331,13 +321,13 @@ msgid "Margin Bottom: *80*"
 msgstr "Margin Bottom: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
-#, fuzzy
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
-"Мы хотим, чтобы контейнер соответствовал окну. В окне просмотра откройте "
-"меню ``Layout`` и выберите последний вариант, ``Full Rect``."
+"Мы хотим, чтобы контейнер соответствовал окну. На панели инструментов над "
+"окном просмотра откройте меню ``Layout`` и выберите последний вариант, "
+"``Full Rect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
 msgid "Add the UI sprites"
@@ -351,56 +341,49 @@ msgstr ""
 "Выберите``MarginContainer`` и создайте узел ``TextureRect``.  Нам нужно:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
-#, fuzzy
 msgid "the title or logo,"
-msgstr "Название или логотип"
+msgstr "Название или логотип,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
-#, fuzzy
 msgid "the three text options as individual nodes,"
-msgstr "Три варианта текста, как отдельные узлы"
+msgstr "Три варианта текста, как отдельные узлы,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
-#, fuzzy
 msgid "the version note,"
-msgstr "Информация о версии"
+msgstr "Информация о версии,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-#, fuzzy
 msgid "and the main menu’s illustration."
-msgstr "И иллюстрация главного меню"
+msgstr "И иллюстрация главного меню."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press ``Meta+A`` on your keyboard. Start to "
 "type ``TextureRect`` to find the corresponding node and press enter. With "
 "the new node selected, press ``Meta+D`` five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
-"Нажмите кнопку ``Добавить узел`` или нажмите ``Ctrl+A`` на клавиатуре. "
+"Нажмите кнопку ``Добавить узел``, или нажмите ``Ctrl+A`` на клавиатуре. "
 "Начните вводить ``TextureRect``, чтобы найти соответствующий узел, и нажмите "
 "Enter. Выбрав новый узел, нажмите ``Ctrl+D`` пять раз, чтобы создать пять "
 "дополнительных экземпляров ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
 "property and click **[empty] > Load**. A file browser opens and lets you "
 "pick a sprite to load into the texture slot."
 msgstr ""
-"Щелкните на каждый из узлов, чтобы выбрать его. В инспекторе щелкните значок "
-"``Texture`` справа от свойства Texture и выберите ``Load``. Откроется "
-"проводник, который позволяет выбрать спрайт для загрузки в слот текстуры."
+"Щелкните на каждый из узлов, чтобы выбрать его. В инспекторе найдите "
+"свойство **Texture**. Нажмите справа от свойства Texture и выберите "
+"``Load``. Откроется проводник, который позволяет выбрать спрайт для загрузки "
+"в слот текстуры."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
-#, fuzzy
 msgid "The file browser lets you find and load textures."
-msgstr "Файловый проводник позволяет находить и загружать текстуры"
+msgstr "Файловый проводник позволит найти и загрузить текстуры."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
-#, fuzzy
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
@@ -408,15 +391,15 @@ msgid ""
 "rename them. Nothing has been placed in containers yet so this should look "
 "messy."
 msgstr ""
-"Повторите операцию для всех ``TextureRect`` узлов. У вас должен быть "
+"Повторите операцию для всех узлов ``TextureRect``. У вас должен быть "
 "логотип, иллюстрация, три варианта меню и информация о версии, каждая как "
-"отдельный узел. Затем дважды щелкните на каждом из узлов на вкладке сцена, "
-"чтобы переименовать их."
+"отдельный узел. Затем дважды щелкните на каждом из узлов на вкладке Сцена, "
+"чтобы переименовать их. Пока что элементы не были помещены в контейнеры, "
+"поэтому это будет выглядеть странно."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
-#, fuzzy
 msgid "The six nodes with textures loaded."
-msgstr "Шесть узлов с загруженными текстурами"
+msgstr "Шесть узлов с загруженными текстурами."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
 msgid ""
@@ -465,16 +448,14 @@ msgstr ""
 "опций меню слева, и ``CenterContainer`` для картинки справа."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
-#, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr ""
-"У вас должно быть четыре вложенных контейнера, а узлы TextureRect "
-"расположены отдельно от него"
+"У вас должно быть четыре вложенных контейнера и узлы TextureRect "
+"расположеные отдельно от них."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
@@ -483,8 +464,7 @@ msgid ""
 msgstr ""
 "В дереве узлов выберите все узлы ``TextureRect``, которые должны идти с "
 "левой стороны: логотип, параметры и информация о версии. Перетащите их в "
-"``VBoxContainer``. Затем перетащите узел с картинкой в ``CenterContainer``. "
-"Узлы должны позиционироваться автоматически."
+"``VBoxContainer``. Узлы должны позиционироваться автоматически."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "Containers automatically place and resize textures"
@@ -495,17 +475,14 @@ msgid "We're left with two problems to solve:"
 msgstr "Нам осталось решить две проблемы:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid "The characters on the right aren't centered."
-msgstr "Картинка справа не центрирована"
+msgstr "Картинка справа не центрирована."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-#, fuzzy
 msgid "There's no space between the logo and the other UI elements."
-msgstr "Между логотипом и другими элементами UI нет места"
+msgstr "Между логотипом и другими элементами UI нет места."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "
@@ -517,24 +494,22 @@ msgid ""
 "center automatically."
 msgstr ""
 "Чтобы центрировать картинку справа, мы будем использовать "
-"``CenterContainer``.  Добавьте узел ``CenterContainer`` в качестве дочернего "
+"``CenterContainer``. Добавьте узел ``CenterContainer`` в качестве дочернего "
 "элемента ``HBoxContainer``. Затем в инспекторе, прокрутите вниз до ``Size "
-"Flags`` и нажмите на поле справа от ``Vertical`` свойства, и выбрать "
+"Flags`` и нажмите на поле справа от свойства ``Vertical``, и выберите "
 "``Expand``. Сделайте то же самое для свойства ``Horizontal``. Наконец "
-"перетащить картинку в ``CenterContainer``. Картинка будет центрирована "
+"перетащите картинку в ``CenterContainer``. Картинка будет центрирована "
 "автоматически."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
-#, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer."
 msgstr ""
-"Узел character будет центрирован в правой половине экрана, как только вы "
-"поместите его внутрь CenterContainer"
+"Картинка будет центрирована в правой половине экрана, как только вы "
+"поместите её внутрь CenterContainer."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
@@ -546,20 +521,20 @@ msgstr ""
 "Чтобы добавить пространство между меню и логотипом слева, мы будем "
 "использовать один последний контейнер и его флаги размера(size flags). "
 "Выберите ``VBoxContainer`` и нажмите ``Ctrl+A``, чтобы добавить в него новый "
-"узел. Добавьте второй ``VBoxContainer`` и назовите его \"MenuOptions\". "
+"узел. Добавьте второй ``VBoxContainer`` и назовите его *MenuOptions*. "
 "Выберите все три варианта меню, ``Continue``, ``NewGame`` и``Options``, и "
-"перетащите их в новый ``VBoxContainer``. Макет UI должен едва измениться, "
-"если вообще изменится."
+"перетащите их в новый ``VBoxContainer``. Макет UI должен едва, если вообще "
+"изменится."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
-msgstr "Поместите новый контейнер между двумя другими узлами"
+msgstr ""
+"Поместите новый контейнер между другими двумя узлами, чтобы сохранить макет "
+"пользовательского интерфейса."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:248
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -569,15 +544,15 @@ msgid ""
 "the available vertical space while respecting its neighbors, the ``Logo`` "
 "and ``Version`` elements."
 msgstr ""
-"Теперь мы сгруппировали варианты меню вместе, мы можем сказать их "
+"Теперь мы сгруппировали варианты меню вместе, мы можем указать их "
 "контейнерам расшириться как можно больше вертикально. Выберите узел "
 "``MenuOptions``. В инспекторе прокрутите вниз до категории ``Size Flags``. "
 "Нажмите на поле справа от свойства ``Vertical`` и установите флажок "
-"``Expand``. Контейнер расширится, чтобы взять все доступное вертикальное "
-"пространство. Но он уважает своих соседей, ``Logo`` и``Version``."
+"``Expand`` в дополнение к ``Fill``. Контейнер расширится, чтобы взять все "
+"доступное вертикальное пространство, уважая при этом своих соседей, ``Logo`` "
+"и``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:256
-#, fuzzy
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the **Alignment** property to **Center**."
@@ -606,9 +581,8 @@ msgstr ""
 "становится активным и Godot добавляет 30 пикселей между MenuOptions."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
-#, fuzzy
 msgid "The final interface."
-msgstr "Финальный интерфейс"
+msgstr "Финальный интерфейс."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
