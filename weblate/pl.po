@@ -14,7 +14,9 @@
 # Dariusz Siek <dariuszynski@gmail.com>, 2018.
 # Igor <igor.gielzak@gmail.com>, 2018.
 # Jacek Witkowski <jacek_witkowski@wp.pl>, 2018.
+# Jakub Korsak <jakub.korsak@protonmail.com>, 2020.
 # KolegaLiterat <jawor34@gmail.com>, 2018.
+# Letero <jkurzynski93@gmail.com>, 2020.
 # luluu9 <maxmax89_89@o2.pl>, 2018.
 # Maciej <WriteToFeniks@gmail.com>, 2019.
 # Michael <michael0march@gmail.com>, 2019.
@@ -40,8 +42,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-21 12:27+0100\n"
-"PO-Revision-Date: 2019-12-21 08:38+0000\n"
-"Last-Translator: Tomek <kobewi4e@gmail.com>\n"
+"PO-Revision-Date: 2020-01-11 03:06+0000\n"
+"Last-Translator: Letero <jkurzynski93@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -50,7 +52,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 3.10.1\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -315,6 +317,10 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Jeżeli napotkasz problemy związane z samouczkami lub twoim projektem, możesz "
+"szukać pomocy na różnych :ref:`Kanałach "
+"społeczności<doc_community_channels>`, zwłaszcza społeczność Godot na "
+"Discordzie, Q&A oraz IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -444,7 +450,6 @@ msgstr ""
 "także :ref:'doc_faq'."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
@@ -454,8 +459,8 @@ msgstr ""
 "Sekcja :ref:`sec-learn` jest głównym *raison d'être* tej dokumentacji, "
 "ponieważ zawiera wszystkie niezbędne informacje na temat korzystania z "
 "silnika do tworzenia gier. Rozpoczyna się od samouczka :ref:`Krok po kroku "
-"<toc-learn-step_by_step>`, który powinien być punktem wejścia dla wszystkich "
-"nowych użytkowników."
+"<toc-learn-step_by_step>`, od którego nowi użytkownicy powinni zaczynać "
+"swoją przygodę z silnikiem Godot. "
 
 #: ../../docs/about/introduction.rst:91
 msgid ""
@@ -1300,7 +1305,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:294
-#, fuzzy
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
@@ -1313,34 +1317,46 @@ msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"W przypadku dużych tablic wykorzystujemy pamięć zbiorczą, która może być "
+"zmapowana do wstępnie przydzielonego bufora lub pamięci wirtualnej."
 
 #: ../../docs/about/faq.rst:296
+#, fuzzy
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"Używamego naszego własnego typu String, ponieważ ten z STL jest zbyt prosty "
+"i brakuje mu wsparcia umiędzynarodowiania."
 
 #: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "Dlaczego Godot nie używa wyjątków?"
 
 #: ../../docs/about/faq.rst:301
+#, fuzzy
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"Wierzymy w to, że niezależnie od wszystkiego, gry nie powinny crashować. "
+"Jeśli wydarzy się coś niespodziewanego Godot wyprintuje błąd (który można "
+"prześledzić nawet do skryptu), ale potem spróbuje jak najłagodniej wstać i "
+"działać dalej."
 
 #: ../../docs/about/faq.rst:306
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
+"Dodatkowo, wyjątki znacznie zwiększają rozmiar pliku binarnego pliku "
+"wykonywalnego."
 
 #: ../../docs/about/faq.rst:310
 msgid "Why does Godot not enforce RTTI?"
-msgstr ""
+msgstr "Dlaczego Godot nie wymusza użycia RTTI?"
 
 #: ../../docs/about/faq.rst:312
 msgid ""
@@ -1348,10 +1364,16 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
+"Godot dostarcza swój własny system rzutowania typów, który może opcjonalnie "
+"używać RTTI wewnętrznie. Wyłączenie RTTI w Godocie pozwala uzyskać znacznie "
+"mniejsze rozmiary plików binarnych, przy niewielkim spadku wydajności."
 
 #: ../../docs/about/faq.rst:317
+#, fuzzy
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
+"Dlaczego Godot nie zmusza użytkowników do implementowania DoD (Data oriented "
+"Design)?"
 
 #: ../../docs/about/faq.rst:319
 msgid ""
@@ -1359,6 +1381,10 @@ msgid ""
 "use cache coherency as best as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"Podczas gdy Godot wewnętrznie, dla wielu zadań wymagających dużej "
+"wydajności, próbuje wykorzystać spójność pamięci najlepiej jak to możliwe, "
+"wierzymy, że większość użytkowników tak naprawdę nie musi być zmuszana do "
+"używania praktyk DoD."
 
 #: ../../docs/about/faq.rst:323
 msgid ""
@@ -1368,12 +1394,19 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"DoD to głównie optymalizacja spójności pamięci, która daje znaczny wzrost "
+"wydajności tylko w przypadku, gdy ma do czynienia z dziesiątkami tysięcy "
+"obiektów (które są przetwarzane w każdej klatce z lekką modyfikacją). Jeśli "
+"więc poruszasz kilkaset obiektów w jednej klatce, DoD Ci nie pomoże i "
+"powinieneś spróbować innego podejścia do optymalizacji."
 
 #: ../../docs/about/faq.rst:330
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"Znaczna więkoszśc gier nie potrzebuje tego i Godot zapewnia przydatne "
+"narzędzia dla większości przypadków, w których by to było potrzebne."
 
 #: ../../docs/about/faq.rst:333
 msgid ""
@@ -1381,6 +1414,9 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"Jeżeli Twoja gra naprawdę musi przetworzyć tak dużą ilość obiektów, "
+"rekomendujemy użycie języka C++ lub GDNative dla części wymagających "
+"największej wydajności, zaś GDScript (lub C#) dla reszty gry."
 
 #: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
@@ -1429,9 +1465,8 @@ msgstr ""
 "zostały one wspomniane w tym dokumencie."
 
 #: ../../docs/about/docs_changelog.rst:14
-#, fuzzy
 msgid "New tutorials since version 3.1"
-msgstr "Nowe poradniki wprowadzone po wersji 3.0"
+msgstr "Nowe poradniki od wersji 3.1"
 
 #: ../../docs/about/docs_changelog.rst:17
 #: ../../docs/about/docs_changelog.rst:110
@@ -1441,7 +1476,7 @@ msgstr "Workflow projektu"
 
 #: ../../docs/about/docs_changelog.rst:19
 msgid ":ref:`doc_android_custom_build`"
-msgstr ""
+msgstr ":ref:`doc_android_custom_build`"
 
 #: ../../docs/about/docs_changelog.rst:22
 #: ../../docs/about/docs_changelog.rst:126 ../../docs/tutorials/2d/index.rst:2
@@ -1449,9 +1484,8 @@ msgid "2D"
 msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:24
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr ":ref:`Organizacja sceny <doc_scene_organization>`"
+msgstr ":ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2

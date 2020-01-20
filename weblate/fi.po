@@ -8,9 +8,10 @@
 # Elias Vähänen <eliasvaha@gmail.com>, 2019.
 # Joonas Muuttoranta <joonas.muuttoranta@live.fi>, 2018.
 # spiderfly <spiderfly@protonmail.com>, 2018.
-# Tapani Niemi <tapani.niemi@kapsi.fi>, 2018-2019.
+# Tapani Niemi <tapani.niemi@kapsi.fi>, 2018-2020.
 # TheFinnishArmy <thefinnisharmy@gmail.com>, 2019.
 # Touko Jaakkola <grulps@gmail.com>, 2019.
+# Tuomas Lähteenmäki <lahtis@gmail.com>, 2019-2020.
 # Ville Pennala <vilihu@gmail.com>, 2018.
 #
 msgid ""
@@ -18,8 +19,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-21 12:27+0100\n"
-"PO-Revision-Date: 2019-12-03 07:10+0000\n"
-"Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
+"PO-Revision-Date: 2020-01-11 03:06+0000\n"
+"Last-Translator: Tuomas Lähteenmäki <lahtis@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
 "Language: fi\n"
@@ -27,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.10.1\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -70,9 +71,9 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
-"Osa kappaleista tai kokonaisista sivuista voi olla vielä englanniksi "
-"riippuen käännösten valmiustasosta. Voit auttaa yhteisöä tekemällä uusia tai "
-"tarkistamalla jo olemassa olevia käännöksiä Weblatessa."
+"Käännöstyön tuloksista riippuen saatat löytää kappaleita tai kokonaisia "
+"sivuja, jotka ovat vielä englanniksi. Voit auttaa yhteisöä tarjoamalla uusia "
+"käännöksiä tai tarkastelemalla olemassa olevia Weblate sivustolla."
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -80,6 +81,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"Toistaisesti käännökset ovat saatavilla vain \"latest\" (kehitys) -haarassa, "
+"mutta sen käyttö sopii viimeisimmän vakaan Godot-julkaisun opetteluun."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -265,13 +268,13 @@ msgid ""
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"Tämä sivu antaa laajan kuvan pelimoottorista ja tämän dokumentaation "
-"sisällöstä, jotta tietäsit mistä aloittaa, jos olet aloittelija, tai mistä "
-"tietoa tietystä ominaisuudesta löytyy."
+"Tämän sivun tarkoitus on antaa laaja kuva pelimoottorista ja tämän "
+"dokumentaation sisällöstä, jotta tietäsit mistä aloittaa jos olet "
+"aloittelija tai mistä löytää tietoa jostain tietystä ominaisuudesta."
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Ennen kuin aloitat"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -289,7 +292,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
-msgstr "Tietoa Godot Enginestä"
+msgstr "Tietoa Godot-pelimoottorista"
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -1242,7 +1245,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "Miksi Godot ei käytä STL:ää (Standard Template Library)"
 
 #: ../../docs/about/faq.rst:288
 msgid ""
@@ -2521,8 +2524,8 @@ msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
-"Skenet täytyy tallentaa ennen kuin ne voidaan ajaa, joten tallenna skene "
-"joksikin, kuten Hello.tscn, valikossa Skene -> Tallenna skene:"
+"Kohtaukset on tallennettava ennen kuin ne voidaan suorittaa, joten Tallenna "
+"kohtaus Hello. tscn Kohtaus -> Tallenna:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:179
 #, fuzzy

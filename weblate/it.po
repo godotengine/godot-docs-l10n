@@ -20,6 +20,8 @@
 # Giuseppe Tomasello <g.tomas98@gmail.com>, 2019.
 # Graziano Schrödinger Lenzi <burstina@hotmail.com>, 2019.
 # Hairic95 <hairic95@gmail.com>, 2019.
+# Jacopo Farina <jacopo1.farina@gmail.com>, 2020.
+# Katia Piazza <gydey@ridiculousglitch.com>, 2019.
 # Luana Pau <ezhael@gmail.com>, 2018.
 # Luca meremma <oea44041@bcaoo.com>, 2019.
 # Marabese Fabio <marabesefabio@outlook.it>, 2019.
@@ -34,6 +36,7 @@
 # Micila Micillotto <micillotto@gmail.com>, 2019.
 # Mirko Soppelsa <miknsop@gmail.com>, 2019.
 # Myself <whatamidoing.wt@gmail.com>, 2018.
+# nickfla1 <lanterniniflavio@gmail.com>, 2019.
 # Nicolas Bonet <nicolasbonet2004@gmail.com>, 2018.
 # Omar Ruggero Manca <o.r.manca1@outlook.it>, 2019.
 # Red Pill <redpill902@gmail.com>, 2018.
@@ -53,8 +56,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-21 12:27+0100\n"
-"PO-Revision-Date: 2019-12-17 10:52+0000\n"
-"Last-Translator: maxbarrett9 <barretma@dickinson.edu>\n"
+"PO-Revision-Date: 2020-01-14 15:17+0000\n"
+"Last-Translator: Jacopo Farina <jacopo1.farina@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -62,7 +65,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -1998,15 +2001,16 @@ msgid "|image1|"
 msgstr "|image1|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:23
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos to help you get started faster. Just select the template or demo "
 "you want, click download, once it's finished downloading click install and "
 "choose where you want the project to go."
 msgstr ""
-"Dalla scheda **Templates** puoi scaricare i modelli di progetto open source "
-"e i progetti dimostrativi per riuscire ad iniziare più in fretta."
+"Dalla scheda **Templates** puoi scaricare i template di progetto open source "
+"e i progetti dimostrativi per iniziare più in fretta. Semplicemente "
+"seleziona il template o la demo che vuoi, clicca download e quando ha finito "
+"di scaricare clicca installa e scegli dove vuoi salvare il progetto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:28
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
@@ -2528,6 +2532,12 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
+"A questo punto puoi anche scegliere il backend per il rendering (OpenGL ES "
+"3.0 or OpenGL ES 2.0). I vantaggi e gli svantaggi di ognuno sono elencati "
+"per aiutarti a scegliere, e puoi fare riferimento a :ref:"
+"`doc_gles2_gles3_differences` per ulteriori dettagli. Nota che puoi cambiare "
+"il backend dalle impostazioni del progetto se cambi idea più avanti. Per "
+"questo tutorial entrambi vanno bene."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:100
 #: ../../docs/getting_started/editor/external_editor.rst:32
@@ -13136,7 +13146,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:372
 msgid "Functions"
-msgstr ""
+msgstr "Funzioni"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:674
 msgid ""
@@ -71109,9 +71119,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
-#, fuzzy
 msgid "Network Profiler"
-msgstr "Profiler"
+msgstr "Profiler di Rete"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:151
 msgid ""

@@ -4,6 +4,7 @@
 #
 # Alexander <adcrashday@googlemail.com>, 2018.
 # Alexander Botor <alexander.botor@das-ernste.de>, 2019.
+# Alexander Erlemann <alexander.erlemann@tiusoft.com>, 2020.
 # Alexander Hausmann <alexander-hausmann+weblate@posteo.de>, 2019.
 # Andreas Binczyk <andreas.binczyk@gmail.com>, 2019.
 # Andreas During <anduring@web.de>, 2019.
@@ -59,14 +60,17 @@
 # Nathan Reiner <nathan.reiner@icloud.com>, 2019.
 # Neicul <neicul@gmx.de>, 2018-2019.
 # Nijco <heijnk@posteo.de>, 2018.
+# Nils <nfa106008@iet-gibb.ch>, 2020.
 # nimradium <nimra242001@gmail.com>, 2018-2019.
 # Otto Hakstetter <otto@hakstetter.de>, 2018.
 # Patrick Schönberger <patrick.schoenberger@posteo.de>, 2018.
 # Peter Koppatz <norbert@koppatz.com>, 2018-2019.
 # Philipp Wabnitz <philipp.wabnitz@s2011.tu-chemnitz.de>, 2018.
 # Phillip Thelen <viirus@pherth.net>, 2019.
+# Ralf Dietrich <rtdietrich@googlemail.com>, 2020.
 # rama0x9 <5393a6cuwlun@opayq.com>, 2018.
 # RamonP.FreedomUnited <freedomunited@yandex.com>, 2018.
+# Rémi Verschelde <akien@godotengine.org>, 2020.
 # Reneator <reneator@googlemail.com>, 2019.
 # Rene Polak <rene.polak@gmx.at>, 2019.
 # R. K <rene.kling1992@gmail.com>, 2018-2019.
@@ -92,8 +96,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-21 12:27+0100\n"
-"PO-Revision-Date: 2019-12-15 05:53+0000\n"
-"Last-Translator: So Wieso <sowieso@dukun.de>\n"
+"PO-Revision-Date: 2020-01-20 11:39+0000\n"
+"Last-Translator: Nils <nfa106008@iet-gibb.ch>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -101,7 +105,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -133,8 +137,8 @@ msgid ""
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
 "Diese Dokumentation wurde von der `originalen englischen Version <https://"
-"docs.godotengine.org/en/latest>` _von Gemeinschaftsmitgliedern auf `Weblate "
-"<https://hosted.weblate.org/projects/godot-engine/godot-docs> übersetzt`_."
+"docs.godotengine.org/en/latest>`_ von Gemeinschaftsmitgliedern auf `Weblate "
+"<https://hosted.weblate.org/projects/godot-engine/godot-docs>`_ übersetzt."
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -838,7 +842,7 @@ msgstr ""
 "Programmiersprache wie Python entwickelt haben, werden Sie sich bei GDScript "
 "schnell wie zu Hause fühlen. Für Beispiele, eine Versionshistorie und eine "
 "komplette Übersicht, was GDScript so bietet, schauen Sie die `GDScript-"
-"Anleitung <gdscript_basics>`_ an."
+"Anleitung <doc_gdscript>`_ an."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -3764,6 +3768,9 @@ msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
+"Im oberen Teil des Dialogs wird eine Liste der Knoten Ihrer Szene angezeigt, "
+"wobei der Name des emittierenden Knotens blau hervorgehoben ist. Wählen Sie "
+"hier den Knoten \"Panel\" aus."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
@@ -3771,6 +3778,10 @@ msgid ""
 "created. By default, the method name will contain the emitting node's name "
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
+"Im unteren Teil des Dialogs wird der Name der zu erstellenden Methode "
+"angezeigt. Standardmäßig enthält der Methodenname den Namen des "
+"emittierenden Knotens (\"Button\" in diesem Fall), was in "
+"``_on_[EmitterNode]_[signal_name]`` resultiert."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
@@ -4093,7 +4104,6 @@ msgstr ""
 "() <class_Object_method__notification>` in Deinem Skript einfügen:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
-#, fuzzy
 msgid ""
 "The documentation of each class in the :ref:`Class Reference <toc-class-"
 "ref>` shows the notifications it can receive. However, in most cases "
@@ -4104,18 +4114,16 @@ msgstr ""
 "Fällen bietet GDScript jedoch einfachere überschreibbare Funktionen."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
-#, fuzzy
 msgid "Overridable functions"
 msgstr "Überschreibbare Funktionen"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
-#, fuzzy
 msgid ""
 "Such overridable functions, which are described as follows, can be applied "
 "to nodes:"
 msgstr ""
-"Solche überschreibbaren Funktionen, die wie folgt beschrieben werden, können "
-"auf Nodes angewendet werden:"
+"Solche überschreibbaren Funktionen, welche im Folgenden beschrieben werden, "
+"können auf Nodes angewendet werden:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
@@ -7738,19 +7746,16 @@ msgstr ""
 "erstellen:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
-#, fuzzy
 msgid "A main menu."
-msgstr "Ein Hauptmenü"
+msgstr "Ein Hauptmenü."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
-#, fuzzy
 msgid "A game UI with a health bar, energy bar, bomb and money counters."
 msgstr ""
 "Die Benutzeroberfläche eines Spiels, mit Lebensbalken, Energiebalken, "
-"Bomben- und Geldzähler"
+"Bomben- und Geldzähler. "
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
@@ -7760,12 +7765,11 @@ msgstr ""
 "gestaltet, und wie man Godots Control Nodes verwendet. Diese Seite "
 "fokussiert sich auf den sichtbaren Teil: alles was du vom Editor aus machen "
 "kannst. Um zu lernen wie man einen Lebensbalken programmiert, ließ :doc:"
-"`ui_code_a_life_bar`"
+"`ui_code_a_life_bar`. "
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
-#, fuzzy
 msgid "The GUI you're going to create."
-msgstr "Die graphische Benutzeroberfläche die du erstellen wirst"
+msgstr "Die grafische Benutzeroberfläche die du erstellen wirst."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -7782,13 +7786,12 @@ msgstr ""
 "main_menu``` Ordner."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
-#, fuzzy
 msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
 "UI system works."
 msgstr ""
 "Lesen Sie zuerst das :doc:`ui_introduction_to_the_ui_system`, um zu "
-"erfahren, wie das UI-System von Godot funktioniert"
+"erfahren, wie das UI-System von Godot funktioniert. "
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
 msgid "How to design your game UI"
@@ -7829,20 +7832,18 @@ msgstr ""
 "haben. Ansonsten:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
-#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
-"Die Graphik könnte die Wahrnehmung des Spielers verzerren und du verpasst "
-"wertvolle Rückmeldungen"
+"Die Grafik könnte die Wahrnehmung der Spieler verzerren und du verpasst "
+"wertvolles Feedback."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
-#, fuzzy
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
 msgstr ""
-"Wenn die Benutzer Erfahrung nicht funktioniert, musst du einige Sprites neu "
-"anfertigen"
+"Wenn die Benutzer-Erfahrung nicht gut ist, musst du einige Sprites neu "
+"anfertigen."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:58
 msgid ""
@@ -7865,13 +7866,12 @@ msgstr ""
 "Es gibt zwei Wege deine Benutzeroberfläche in Godot zu gestalten. Du kannst:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
-#, fuzzy
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
 "Alles in einer einzigen Szene erstellen, und möglicherweise einige Zweige "
-"als wiederverwendbare Szenen speichern"
+"als wiederverwendbare Szenen speichern."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
 #, fuzzy
@@ -37975,6 +37975,8 @@ msgid ""
 "``blast_area``: The blast :ref:`Area <class_Area>` used to damage things "
 "when the grenade explodes."
 msgstr ""
+"``blast_area``: Die blast :ref:`Area <class_Area>` wird gebraucht, um Dingen "
+"Schaden zuzufügen, wenn eine Granate explodiert."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:100
 msgid ""
@@ -82045,13 +82047,15 @@ msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
 
 #: ../../docs/community/tutorials.rst:44
 msgid "Devlogs"
-msgstr ""
+msgstr "Devlogs"
 
 #: ../../docs/community/tutorials.rst:46
 msgid ""
 "`Andrea Catania (Physics & AI) <https://www.youtube.com/channel/"
 "UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 msgstr ""
+"`Andrea Catania (Physik & KI) <https://www.youtube.com/channel/"
+"UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 
 #: ../../docs/community/tutorials.rst:47
 msgid ""

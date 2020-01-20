@@ -11,6 +11,7 @@
 # Alejandro Gil <Alejandrogil497@gmail.com>, 2019.
 # Alejo <patto.revuelto@gmail.com>, 2018.
 # Alvaro García <alvarofernandogarcia@gmail.com>, 2019.
+# Andrés Godoy <andresgg.games@gmail.com>, 2020.
 # Andrus Diaz German <andrusdiazaleman@gmail.com>, 2018.
 # Ángel Sillero Navajas <xenmai95@gmail.com>, 2019.
 # Angelvel Jesus Marrufo Pava <angelvelmarrufo14@hotmail.com>, 2019.
@@ -41,13 +42,14 @@
 # Fidel Dalmasso <fidelmasso@gmail.com>, 2018.
 # Franco F <ezefran256@gmail.com>, 2018.
 # Gonzalo León Toro <gf.leontoro@gmail.com>, 2019.
+# Gustavo León Tramontin <gust989@gmail.com>, 2019.
 # Hernan Campillo Mecklenburg <hcampillo.88@gmail.com>, 2018.
 # Hernan Prado <pradoh97@gmail.com>, 2018.
 # Hisonic <nosoyhackercodigo@gmail.com>, 2018.
 # Jaja No <jordydumbledore@gmail.com>, 2019.
-# Javier López Úbeda <jlopezcur@gmail.com>, 2018.
+# Javier López Úbeda <jlopezcur@gmail.com>, 2018.x
 # Javier Meza <javenmeza@gmail.com>, 2019.
-# Javier Ocampos <xavier.ocampos@gmail.com>, 2018-2019.
+# Javier Ocampos <xavier.ocampos@gmail.com>, 2018-2020.
 # Joaquin Bozzalla <joaco.mbb@gmail.com>, 2018.
 # jonagamerpro1234 ss <js398704@gmail.com>, 2019.
 # Jonasfxh <Jonasfxh@gmail.com>, 2018.
@@ -95,8 +97,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-21 12:27+0100\n"
-"PO-Revision-Date: 2019-12-21 08:38+0000\n"
-"Last-Translator: Cristofer Fuentes <contacto@cristoferfb.com>\n"
+"PO-Revision-Date: 2020-01-19 13:12+0000\n"
+"Last-Translator: Andrés Godoy <andresgg.games@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -104,7 +106,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 3.10.2\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -2545,9 +2547,8 @@ msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name."
 msgstr ""
-"Para crear un nuevo proyecto, haga clic en la opción \"Nuevo proyecto\". "
-"Elija y cree una ruta para el proyecto y especifique el nombre del proyecto "
-"\"Nuevo proyecto\""
+"Para crear un nuevo proyecto, haz clic en la opción \"Nuevo proyecto\". "
+"Elige y crea una ruta para el proyecto y especifica el nombre del proyecto."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:91
 msgid ""
@@ -4069,18 +4070,16 @@ msgstr ""
 "con la misma tarea."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
-#, fuzzy
 msgid "Overridable functions"
-msgstr "Funciones anulables"
+msgstr "Funciones de anulación"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
-#, fuzzy
 msgid ""
 "Such overridable functions, which are described as follows, can be applied "
 "to nodes:"
 msgstr ""
-"Estas funciones, que se describen a continuación, se pueden aplicar a los "
-"nodos:"
+"Estas funciones de anulación, que se describen a continuación, pueden "
+"aplicarse a los nodos:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
@@ -4285,16 +4284,15 @@ msgid "Timer example"
 msgstr "Ejemplo de Timer"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
 "Para ver cómo funcionan las señales, intentemos usar un nodo :ref:`Timer "
-"<class_Timer>`. Creamos una nueva escena con un Node y dos hijos: un Timer y "
-"un :ref:`Sprite <class_Sprite>`. En el dock de Escenas, cambia el nombre de "
-"Node a TimerExample."
+"<class_Timer>`. Creamos una nueva escena con un Node2D y dos hijos: un Timer "
+"y un :ref:`Sprite <class_Sprite>`. En la parte de Escenas, cambia el nombre "
+"del Node2D a TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -4303,9 +4301,10 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
-"cualquier otra imagen que desees. Para ello, selecciona ``Load`` en el menú "
-"desplegable del atributo Texture del Sprite. Agrega un script al nodo raíz, "
-"pero no le añadas ningún código todavía."
+"Para la textura del Sprite, puedes usar el icono de Godot, o cualquier otra "
+"imagen que desees. Para ello, desde el inspector del elemento Sprite, en el "
+"atributo ``Texture`` selecciona ``Load`` en el menú desplegable. Agrega un "
+"script al nodo raíz, pero no le añadas ningún código todavía."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -4364,18 +4363,17 @@ msgstr ""
 "error."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"En la parte inferior de la ventana hay un campo llamado \"Method In Node\". "
-"Es el nombre de la función del script del nodo de destino que queremos "
-"utilizar. Por defecto, Godot creará esta función usando la convención de "
-"nomenclatura ``_on_<node_name>_<signal_name>`` pero puedes cambiarla si así "
-"lo deseas."
+"En la parte inferior de la ventana hay un campo denominado \"Método Receptor"
+"\". Este es el nombre de la función en el script del nodo destino que "
+"queremos usar. Por defecto, Godot creará esta función usando la convención "
+"de nombres ``_on_<node_name>_<signal_name>`` pero puedes cambiarla si lo "
+"deseas."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:68
 msgid ""
@@ -5646,13 +5644,12 @@ msgstr ""
 "detalles, ver  :ref:`doc_design_interfaces_with_the_control_nodes`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:915
-#, fuzzy
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
 msgstr ""
 "Organiza los nodos como se muestra a continuación. Haz clic en el botón "
-"\"Disposición\"para establecer el anclaje de un nodo de Control:"
+"\"Layout\" para establecer la disposición de un nodo de Control:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:920
 msgid ""
@@ -6445,17 +6442,17 @@ msgstr ""
 "siguientes archivos:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:274
-#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
 "you don't have one set up on your computer, you can search online to find "
 "suggestions for your specific OS."
 msgstr ""
-"Ver el archivo `.html` en tu navegador te permite jugarlo. Sin embargo, no "
-"se puede abrir el archivo directamente, es necesario que sea entregado por "
-"un servidor web. Si no tienes uno configurado en tu computadora, puedes usar "
-"Google para encontrar sugerencias para tu SO específico."
+"Ver el archivo `.html` en tu navegador te permite jugar al juego. Sin "
+"embargo, no puedes abrir el archivo directamente, necesita ser distribuido "
+"por un servidor web. Si no tienes uno configurado en tu computadora, puedes "
+"buscar en línea para encontrar sugerencias para tu sistema operativo "
+"específico."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
 msgid ""
@@ -6478,7 +6475,6 @@ msgstr ""
 "el proyecto."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:287
-#, fuzzy
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "
 "technology and you may find some things that don't work. Make sure you have "
@@ -6486,11 +6482,11 @@ msgid ""
 "find at the `Godot Github repository <https://github.com/godotengine/godot/"
 "issues>`_."
 msgstr ""
-"El soporte del navegador para WASM no está muy extendido. Tanto Firefox como "
-"Chrome lo soportan, pero aún puedes encontrar algunas cosas que no "
-"funcionen. Asegúrate de haber actualizado tu navegador a la versión más "
-"reciente, e informa de cualquier error que encuentres en el `repositorio de "
-"Godot en Github <https://github.com/godotengine/godot/issues>`_."
+"Aunque WASM es compatible con los principales navegadores, sigue siendo una "
+"tecnología emergente y es posible que encuentres algunas cosas que no "
+"funcionan. Asegúrate de que has actualizado tu navegador a la versión más "
+"reciente, y reporta cualquier error que encuentres en el repositorio `Godot "
+"Github <https://github.com/godotengine/godot/issues>`_."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
 msgid "Godot’s design philosophy"
@@ -7652,19 +7648,16 @@ msgstr ""
 "paso a paso utilizando el sistema de UI del motor:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
-#, fuzzy
 msgid "A main menu."
-msgstr "El menú principal"
+msgstr "Un menú principal."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
-#, fuzzy
 msgid "A game UI with a health bar, energy bar, bomb and money counters."
 msgstr ""
 "Una UI de juego con barra de salud, barra de energía, contadores de bombas y "
-"dinero"
+"dinero."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
@@ -7673,12 +7666,11 @@ msgstr ""
 "Aprenderás a diseñar eficientemente la UI del juego y a usar los nodos "
 "Control de Godot. Esta página se centra en la parte visual: todo lo que "
 "haces desde el editor. Para aprender a programar una barra de vida, lee :doc:"
-"`ui_code_a_life_bar`"
+"`ui_code_a_life_bar`."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
-#, fuzzy
 msgid "The GUI you're going to create."
-msgstr "El GUI que vas a crear"
+msgstr "El GUI que vas a crear."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -7699,6 +7691,8 @@ msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
 "UI system works."
 msgstr ""
+"Lea :doc:`ui_introduction_to_the_ui_system` primero para aprender cómo "
+"funciona el sistema de UI de Godot."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
 msgid "How to design your game UI"
@@ -7738,19 +7732,18 @@ msgstr ""
 "contrario:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
-#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
 "Los gráficos pueden distorsionar la percepción de los jugadores sobre la "
-"experiencia y te perderás un valioso feedback"
+"experiencia y te perderás un valioso feedback."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
-#, fuzzy
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
 msgstr ""
-"Si la Experiencia de Usuario no funciona, tendrás que rehacer algunos sprites"
+"Si la Experiencia de Usuario no funciona, tendrás que rehacer algunos "
+"sprites."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:58
 msgid ""
@@ -7773,22 +7766,20 @@ msgid "There are two ways to design your UI in Godot. You can:"
 msgstr "Hay dos maneras de diseñar tu UI en Godot. Tú puedes:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
-#, fuzzy
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
 "Constrúyelo todo en una sola escena, y eventualmente guarda algunas ramas "
-"como escenas reutilizables"
+"como escenas reutilizables."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
-#, fuzzy
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
-"Crea escenas de plantilla para componentes reutilizables y crea componentes "
-"específicos que heredan de tus escenas base"
+"Crea plantillas de escenas para componentes reutilizables y crea componentes "
+"específicos que heredan de sus escenas base."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -7804,13 +7795,12 @@ msgstr ""
 "reutilizables, como podrás ver a continuación."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
-#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
 "Los archivos que encontrarás en Godot. Los gráficos se ven más limpios que "
-"en el diseño preliminar, pero siguen siendo marcadores de posición"
+"en el diseño preliminar, pero todavía son marcadores de posición."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -7834,29 +7824,26 @@ msgid "Here are my three rules of thumb to find the right containers:"
 msgstr "Aquí están mis tres reglas para encontrar los containers correctos:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
-#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button."
 msgstr ""
-"Divide la interfaz de usuario en cajas anidadas, desde las más grandes que "
-"lo contienen todo, hasta las más pequeñas, que abarcan un widget, como una "
-"barra con su etiqueta, un panel o un botón"
+"Divide la interfaz de usuario en ventanas anidadas, desde la más grande que "
+"contiene todo, hasta las más pequeñas, que abarcan un widget, como una barra "
+"con su etiqueta, un panel o un botón."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
-#, fuzzy
 msgid "If there's some padding around an area, use a ``MarginContainer``."
-msgstr "Si hay algún relleno alrededor de un área, usa un ``MarginContainer``"
+msgstr "Si hay algún relleno alrededor de un área, usa un ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
-#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
-"Si los elementos están dispuestos en filas o columnas, utiliza un "
-"```HBoxContainer`` o ```VBoxContainer``"
+"Si los elementos están distribuidos en filas o columnas, utiliza un "
+"``HBoxContainer`` o ``VBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
@@ -7883,11 +7870,10 @@ msgstr ""
 "derecha, centraremos la ilustración con un ``CenterContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
-#, fuzzy
 msgid "Interface building blocks, broken down using the three rules of thumb."
 msgstr ""
-"Elementos básicos de la interfaz, desglosados utilizando las tres reglas "
-"generales"
+"Bloques de construcción de la interfaz, desglosados utilizando las tres "
+"reglas generales."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -7904,13 +7890,12 @@ msgid "Prepare the Main Menu scene"
 msgstr "Prepara la escena del Menú Principal"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
-#, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
 "Vamos a crear el menú principal. Lo construiremos en una sola escena. Para "
-"crear una escena vacía, haz clic en el menú Escena -> Nueva escena."
+"crear una escena vacía, haz clic en **Escena > Nueva escena**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
 msgid ""
@@ -7955,14 +7940,17 @@ msgid "Margin Bottom: *80*"
 msgstr "Margin Bottom: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
-#, fuzzy
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
 "Queremos que el container se ajuste a la ventana. En la barra de "
 "herramientas encima del Viewport, abre el menú ``Layout`` y selecciona la "
-"última opción, ``Full Rect``."
+"última opción, ``Full Rect``.\n"
+"\n"
+"Queremos que el contenedor se ajuste a la ventana. En la barra de "
+"herramientas encima del Viewport, abre el menú **Layout** y selecciona la "
+"última opción, **Completo*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
 msgid "Add the UI sprites"
@@ -7977,54 +7965,47 @@ msgstr ""
 "``TextureRect``. Necesitamos:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
-#, fuzzy
 msgid "the title or logo,"
-msgstr "El título o logo"
+msgstr "el título o logo,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
-#, fuzzy
 msgid "the three text options as individual nodes,"
-msgstr "Las tres opciones de texto, como nodos individuales"
+msgstr "las tres opciones de texto como nodos individuales,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
-#, fuzzy
 msgid "the version note,"
-msgstr "Las notas de la versión"
+msgstr "Las notas de la versión,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-#, fuzzy
 msgid "and the main menu’s illustration."
-msgstr "Y la ilustración del menú principal"
+msgstr "Y la ilustración del menú principal."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press ``Meta+A`` on your keyboard. Start to "
 "type ``TextureRect`` to find the corresponding node and press enter. With "
 "the new node selected, press ``Meta+D`` five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
-"Haz clic en el botón ``Añadir Nodo`` o pulsa ``Meta+A`` en tu teclado. "
-"Comienza a escribir ``TextureRect`` para encontrar el nodo correspondiente y "
-"presiona enter. Con el nuevo nodo seleccionado, presiona ``Meta+D`` cinco "
-"veces para crear cinco instancias adicionales de ``TextureRect``."
+"Haz clic en el botón **Añadir Nodo** o presiona ``Ctrl+A`` en tu teclado. "
+"Empieza a escribir ``TextureRect`` para encontrar el nodo correspondiente y "
+"presiona enter. Con el nuevo nodo seleccionado, presiona ``Ctrl+D`` cinco "
+"veces para crear cinco instancias extra de ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
 "property and click **[empty] > Load**. A file browser opens and lets you "
 "pick a sprite to load into the texture slot."
 msgstr ""
-"Haz clic en cada uno de los nodos para seleccionarlos. En el inspector, "
-"encuentra la propiedad ``Texture`` y haz clic en ``[empty]`` -> ``Load``. Se "
-"abre un explorador de archivos que te permite elegir un sprite para cargarlo "
-"en el slot de texturas."
+"Haz clic en cada uno de los nodos para seleccionarlo. En el inspector, "
+"encuentre la propiedad **Texture** y haz clic en **[empty] > Load**. Se abre "
+"un explorador de archivos que te permite elegir un sprite para cargarlo en "
+"la ranura de textura."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
-#, fuzzy
 msgid "The file browser lets you find and load textures."
-msgstr "El navegador de archivos te permite encontrar y cargar texturas"
+msgstr "El explorador de archivos permite encontrar y cargar texturas."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
 msgid ""
@@ -8042,9 +8023,8 @@ msgstr ""
 "desastre."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
-#, fuzzy
 msgid "The six nodes with textures loaded."
-msgstr "Los seis nodos, con texturas cargadas"
+msgstr "Los seis nodos con texturas cargadas."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
 msgid ""
@@ -8095,13 +8075,12 @@ msgstr ""
 "``CenterContainer`` para la ilustración de la derecha."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
-#, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr ""
-"Deberías tener cuatro contenedores anidados, y los nodos TextureRect "
-"situados a un lado de éstos"
+"Deberías tener cuatro contenedores anidados y los nodos de TextureRect a un "
+"lado de éstos."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
 #, fuzzy
@@ -19132,7 +19111,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
-msgstr "Precarga"
+msgstr "Preload"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
 msgid ""
@@ -35260,6 +35239,8 @@ msgstr "Clearcoat"
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:353
 msgid "*This feature is only available when using the GLES3 backend.*"
 msgstr ""
+"*Esta característica sólo está disponible cuando se utiliza el backend GLES3."
+"*"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:386
 msgid ""
@@ -35491,7 +35472,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:14
 msgid "Light Nodes: Directional, Omni and Spot."
-msgstr "Light Nodes: Directional, Omni y Spot."
+msgstr "Nodos de luz: Directional, Omni y Spot."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:15
 msgid "Ambient Light in the :ref:`Environment <class_Environment>`."
@@ -35511,7 +35492,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:23
 msgid "Light nodes"
-msgstr "Light nodes"
+msgstr "Nodos de luz"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:25
 msgid ""
@@ -35536,8 +35517,8 @@ msgid ""
 "**Energy**: Energy multiplier. This is useful for saturating lights or "
 "working with :ref:`doc_high_dynamic_range`."
 msgstr ""
-"**Energía**: Multiplicador de energía. Resulta útil para luces saturadas o "
-"para trabajar con :ref:`doc_high_dynamic_range`."
+"**Energy**: Multiplicador de energía. Resulta útil para saturar luces o para "
+"trabajar con :ref:`doc_high_dynamic_range`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:35
 msgid ""
@@ -35560,7 +35541,7 @@ msgid ""
 "**Specular**: Affects the intensity of the specular blob in objects affected "
 "by this light. At zero, this light becomes a pure diffuse light."
 msgstr ""
-"**Specular**: Afecta a la intensidad de specular blob en los objetos "
+"**Specular**: Afecta la intensidad del specular blob en los objetos "
 "afectados por esta luz. A cero, esta luz se convierte en una luz pura y "
 "difusa."
 
@@ -35569,18 +35550,20 @@ msgid ""
 "**Bake Mode**: Sets the bake mode for the light. For more information see :"
 "ref:`doc_baked_lightmaps`"
 msgstr ""
+"**Bake Mode**: Establece el modo de \"bake\" para la luz. Para más "
+"información vea :ref:`doc_baked_lightmaps`"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:39
 msgid ""
 "**Cull Mask**: Objects that are in the selected layers below will be "
 "affected by this light."
 msgstr ""
-"**Cul Mask**: Los objetos que se encuentren bajo las capas seleccionadas "
-"serán afectadas por esta luz."
+"**Cull Mask**: Los objetos que se encuentren en las capas seleccionadas "
+"abajo serán afectadas por esta luz."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:42
 msgid "Shadow mapping"
-msgstr "Shadow Mapping"
+msgstr "Shadow Mapping (Mapeo de sombras)"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:44
 msgid ""
@@ -35616,14 +35599,14 @@ msgstr ""
 "que mejor funcione para ti."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:51
-#, fuzzy
 msgid ""
 "**Contact**: Performs a short screen-space raycast to reduce the gap "
 "generated by the bias. Contact shadows are only available when using the "
 "GLES3 backend."
 msgstr ""
 "**Contact**: Realiza un raycast corto en el espacio de la pantalla para "
-"reducir el hueco generado por la inclinación."
+"reducir el hueco generado por el Bias. Esto sólo está disponible cuando se "
+"usa el backend GLES3."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:52
 msgid ""
@@ -35645,7 +35628,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:59
 msgid "Finally, if gaps can't be solved, the **Contact** option can help:"
 msgstr ""
-"Finalmente, si las grietas no se pueden resolver, la opción **Contact** "
+"Finalmente, si las grietas no se pueden solucionar, la opción **Contact** "
 "puede ayudar:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:63
@@ -35654,13 +35637,13 @@ msgid ""
 "resolution, although that may lead to decreased performance on low-end "
 "hardware."
 msgstr ""
-"Cualquier tipo de problema de inclinaciñon siempre se puede corregir "
-"incrementando la resolución del mapa de sombra, aunque eso puede llevar a "
-"una disminución del rendimiento en el hardware de gama baja."
+"Cualquier problema producido por el bias puede ser arreglado incrementando "
+"la resolución del mapa de sombras, aunque esto puede producir una pérdida de "
+"rendimiento en hardware de gama baja."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:67
 msgid "Directional light"
-msgstr "Luz direccional"
+msgstr "Directional light (Luz direccional)"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:69
 msgid ""
@@ -35672,7 +35655,7 @@ msgstr ""
 "Este es el tipo de luz más común y representa una fuente de luz muy lejana "
 "(como el sol). También es la luz menos costosa de calcular y debería "
 "utilizarse siempre que sea posible (aunque no es el mapa de sombras menos "
-"costoso de calcular, pero se explicará más adelante)."
+"costoso de calcular, pero eso se explicará más adelante)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:73
 msgid ""
@@ -35693,7 +35676,7 @@ msgid ""
 "others stay dark. Most light types have specific parameters, but directional "
 "lights are pretty simple in nature, so they don't."
 msgstr ""
-"Cada cara, cuyo lado frontal es golpeado por los rayos de luz, se ilumina "
+"Cada cara, cuyo lado frontal es golpeado por los rayos de luz se ilumina, "
 "mientras las otras permanecen oscuras. La mayoría de los tipos de luces "
 "tienen parámetros específicos, pero las luces direccionales son de "
 "naturaleza bastante simple y no los tienen."
@@ -35722,13 +35705,13 @@ msgid ""
 "shadow resolution as a huge, far-away area."
 msgstr ""
 "Para solucionarlo, se utiliza una técnica llamada \"Parallel Split Shadow "
-"Maps\" (o PSSM). Esto divide la view frustum en 2 o 4 áreas. Cada área tiene "
-"su propio mapa de sombras. Esto permite que áreas pequeñas cercanas al "
+"Maps\" (o PSSM). Esto divide el campo de visión en 2 o 4 áreas. Cada área "
+"tiene su propio mapa de sombras. Esto permite que áreas pequeñas cercanas al "
 "espectador tengan la misma resolución de sombra que un área enorme y lejana."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:97
 msgid "With this, shadows become more detailed:"
-msgstr "Con esto, las sombras son más detalladas:"
+msgstr "Con esto, las sombras se vuelven más detalladas:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:101
 msgid "To control PSSM, a number of parameters are exposed:"
@@ -35742,8 +35725,9 @@ msgid ""
 "values generally work well, but tweaking the first split a bit is common to "
 "give more detail to close objects (like a character in a third person game)."
 msgstr ""
-"Cada distancia dividida se controla con respecto a la cámara (o sombra **Max "
-"Distance** si es mayor que cero), por lo que *0.0* es la posición del ojo y "
+"Cada distancia dividida se controla con respecto a la cámara o con el "
+"parámetro **Max Distance** (que establece una distancia máxima de "
+"sombreado), si es mayor que cero, por lo que *0.0* es la posición del ojo y "
 "*1.0* es donde la sombra termina a una distancia. Las divisiones están en el "
 "medio. Los valores predeterminados generalmente funcionan bien, pero ajustar "
 "la primera división un poco es común para dar más detalles a los objetos "
@@ -35775,9 +35759,8 @@ msgid ""
 "that it makes the shadow a bit thinner."
 msgstr ""
 "El parámetro **\"Normal Bias\"** se puede usar para corregir casos "
-"especiales de sombreado automático cuando los objetos son perpendiculares a "
-"la luz. El único inconveniente es que hace que la sombra sea un poco más "
-"delgada."
+"especiales de autosombreado cuando los objetos son perpendiculares a la luz. "
+"El único inconveniente es que hace que la sombra sea un poco más delgada."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:126
 msgid ""
@@ -35821,7 +35804,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:134
 msgid "Just experiment which setting works better for your scene."
-msgstr "Experimenta para encontrar el que mejor funcione en tu escena."
+msgstr "Solo experimenta qué configuración funciona mejor en tu escena."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:136
 msgid ""
@@ -35836,21 +35819,20 @@ msgid ""
 "Increasing it can solve bias problems, but decrease performance. Shadow "
 "mapping is an art of tweaking."
 msgstr ""
-"Aumentarlo puede arreglar problemas de inclinación pero reduce el "
-"rendimiento. El mapeo de sombras es un elemento que requiere mucho ajuste "
-"fino."
+"Aumentarlo puede solucionar problemas generados por el bias pero reduce el "
+"rendimiento. Ajustar el mapeo de sombras es un arte."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:143
 msgid "Omni light"
-msgstr "Omni luz"
+msgstr "Omni light (luz omnidireccional)"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:145
 msgid ""
 "Omni light is a point source that emits light spherically in all directions "
 "up to a given radius."
 msgstr ""
-"Omni light es una fuente puntual que emite luz esférica en todas las "
-"direcciones hasta un radio dado."
+"Omni light es un punto que emite luz esféricamente en todas las direcciones "
+"hasta un radio dado."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:150
 msgid ""
@@ -35867,8 +35849,8 @@ msgstr ""
 msgid ""
 "To solve this, a *Range* is introduced together with an attenuation function."
 msgstr ""
-"Para resolver esto, se introduce un *Rango* junto con una función de "
-"atenuación."
+"Para resolver esto, se introduce un *Rango (Range)* junto con una función de "
+"atenuación (Attenuation)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:157
 msgid ""
@@ -35880,13 +35862,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:163
 msgid "Omni shadow mapping"
-msgstr "Omni shadow mapping"
+msgstr "Mapeo de sombras omnidireccional"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:165
 msgid ""
 "Omni light shadow mapping is relatively straightforward. The main issue that "
 "needs to be considered is the algorithm used to render it."
 msgstr ""
+"El mapeo de sombras para una Omni light es relativamente sencillo. Lo "
+"principal a considerar es el algoritmo que se utilizará para renderizarlo."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:168
 msgid ""
@@ -35894,6 +35878,10 @@ msgid ""
 "\"**. The former renders quickly, but can cause deformations, while the "
 "later is more correct, but costlier."
 msgstr ""
+"Las sombras omnidireccionales pueden ser renderizadas utilizando **\"Dual "
+"Paraboloid\" o \"Cube Mapped \"**. El primero se renderiza rápidamente, pero "
+"puede causar deformaciones, mientras que el segundo es más correcto, pero "
+"más costoso."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:174
 msgid ""
@@ -35902,10 +35890,15 @@ msgid ""
 "(more on that at the end), it may not make a difference in performance for "
 "most scenes."
 msgstr ""
+"Si los objetos que se renderizan son en su mayoría irregulares, Dual "
+"Paraboloid suele ser suficiente. En cualquier caso, como estas sombras se "
+"almacenan en caché en un atlas de sombra (más sobre eso al final), puede que "
+"no signifique una diferencia en el rendimiento para la mayoría de las "
+"escenas."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:179
 msgid "Spot light"
-msgstr ""
+msgstr "Spot light (luz focal)"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:181
 msgid ""
@@ -35914,26 +35907,34 @@ msgid ""
 "reflectors, spots, etc. This type of light is also attenuated towards the "
 "opposite direction it points to."
 msgstr ""
+"Las luces focales (o puntuales) son similares a las omnidireccionales (omni "
+"lights), excepto porque emiten luz solamente en un cono (o \"corte\"). Son "
+"útiles para simular linternas, luces de coche, reflectores, focos, etc. Este "
+"tipo de luz además se atenúa en la dirección opuesta a la que apunta."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:188
 msgid ""
 "Spot lights share the same **Range** and **Attenuation** as **OmniLight**, "
 "and add two extra parameters:"
 msgstr ""
+"Las luces focales comparten los mismos parámetros **Range** y "
+"**Attenuation** con **OmniLight**, y añade dos más:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:190
 msgid "**Angle**: The aperture angle of the light"
-msgstr ""
+msgstr "**Angle**: El ángulo de apertura de la luz"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:191
 msgid ""
 "**Angle Attenuation**: The cone attenuation, which helps soften the cone "
 "borders."
 msgstr ""
+"**Angle Attenuation**: La atenuación del cono, que ayuda a suavizar los "
+"bordes del cono."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:194
 msgid "Spot shadow mapping"
-msgstr "Spot shadow mapping"
+msgstr "Mapeo de sombras focal"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:196
 msgid ""
@@ -35941,10 +35942,14 @@ msgid ""
 "more than 89 degrees of aperture, shadows stop functioning for spots, and "
 "you should consider using an Omni light instead."
 msgstr ""
+"Las luces focales no necesitan ningún parámetro para el mapeo de sombras. "
+"Ten en cuenta que, para ángulos de apertura mayores de 80 grados, las "
+"sombras dejan de funcionar y resulta más conveniente utilizar luces "
+"omnidireccionales."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:200
 msgid "Shadow atlas"
-msgstr "Shadow atlas"
+msgstr "Shadow atlas (atlas de sombra)"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:202
 msgid ""
@@ -35952,18 +35957,26 @@ msgid ""
 "Spot lights are assigned to slots of a shadow atlas. This atlas can be "
 "configured in Project Settings -> Rendering -> Quality -> Shadow Atlas."
 msgstr ""
+"A diferencia de las luces direccionales, que tienen su propia textura de "
+"sombra, las luces omnidireccionales y focales se asignan a espacios de un "
+"atlas de sombra. Este atlas se puede configurar en Project Settings -> "
+"Rendering -> Quality -> Shadow Atlas."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:207
 msgid ""
 "The resolution applies to the whole Shadow Atlas. This atlas is divided into "
 "four quadrants:"
 msgstr ""
+"La resolución se aplica a todo el Atlas de las Sombras. Este atlas se divide "
+"en cuatro cuadrantes:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:211
 msgid ""
 "Each quadrant can be subdivided to allocate any number of shadow maps; the "
 "following is the default subdivision:"
 msgstr ""
+"Cada cuadrante se puede subdividir para asignar cualquier número de mapas de "
+"sombras; la siguiente es la subdivisión predeterminada:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:215
 msgid ""
@@ -35972,34 +35985,49 @@ msgid ""
 "Subdivisions (smaller maps) represent shadows for lights that are further "
 "away from view and proportionally smaller."
 msgstr ""
+"La lógica de asignación es simple. El tamaño de mapa de sombras más grande "
+"(cuando no se utiliza ninguna subdivisión) representa una luz del tamaño de "
+"la pantalla (o mayor). Las subdivisiones (mapas más pequeños) representan "
+"sombras para las luces que están más lejos de la vista y proporcionalmente "
+"más pequeñas."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:220
 msgid "Every frame, the following procedure is performed for all lights:"
 msgstr ""
+"En Cada fotograma, se realiza el siguiente procedimiento para todas las "
+"luces:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:222
 msgid ""
 "Check if the light is on a slot of the right size. If not, re-render it and "
 "move it to a larger/smaller slot."
 msgstr ""
+"Se comprueba si la luz está en un espacio del tamaño correcto. Si no es así, "
+"se vuelve a renderizar y se mueve a un espacio más grande o más pequeño."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:223
 msgid ""
 "Check if any object affecting the shadow map has changed. If it did, re-"
 "render the light."
 msgstr ""
+"Se comprueba si ha cambiado algún objeto que afecte al mapa de sombras. Si "
+"esto sucedió, se renderiza de nuevo la luz."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:224
 msgid ""
 "If neither of the above has happened, nothing is done, and the shadow is "
 "left untouched."
 msgstr ""
+"Si no ha ocurrido nada de lo anterior, no se hace nada, y la sombra queda "
+"intacta."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:226
 msgid ""
 "If the slots in a quadrant are full, lights are pushed back to smaller "
 "slots, depending on size and distance."
 msgstr ""
+"Si los espacios de un cuadrante están llenos, las luces son devueltas a "
+"espacios más pequeños, dependiendo del tamaño y la distancia."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:228
 msgid ""
@@ -36007,10 +36035,14 @@ msgid ""
 "separate one in some cases (for example, a top-down game where all lights "
 "are around the same size and quadrants may all have the same subdivision)."
 msgstr ""
+"Esta estrategia de asignación funciona para la mayoría de los juegos, pero "
+"es posible que desee utilizar una diferente en algunos casos (por ejemplo, "
+"un juego top-down donde todas las luces tienen más o menos el mismo tamaño y "
+"todos los cuadrantes pueden tener la misma subdivisión)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:232
 msgid "Shadow filter quality"
-msgstr ""
+msgstr "Calidad del filtro de sombras"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:234
 msgid ""
@@ -36018,10 +36050,13 @@ msgid ""
 "Settings -> Rendering -> Quality -> Shadows. Godot supports no filter, PCF5 "
 "and PCF13."
 msgstr ""
+"La calidad del filtro de las sombras se puede ajustar. Esto se puede "
+"encontrar en Project Settings -> Rendering -> Quality -> Shadows. Godot "
+"soporta los filtros PCF5, PCF13, y también permite no filtrar."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:240
 msgid "It affects the blockyness of the shadow outline:"
-msgstr ""
+msgstr "Esto influye en el efecto de pixelado del borde de la sombra:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:4
 msgid "Reflection probes"
@@ -41002,6 +41037,8 @@ msgid ""
 "Now, we need to add one more function to the player, and then the player is "
 "ready to start firing the weapons!"
 msgstr ""
+"Ahora, necesitamos añadir una función más al jugador, ¡y entonces estará "
+"listo para empezar a disparar sus armas!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1139
 msgid ""

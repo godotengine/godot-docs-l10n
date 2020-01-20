@@ -6,6 +6,7 @@
 # Accácio <raccacio@poli.ufrj.br>, 2018-2019.
 # Alan Araújo <alan.r.araujo@gmail.com>, 2018.
 # Alan Valmorbida <alanvalmorbida@gmail.com>, 2019.
+# Alfred Reinold Baudisch <alfred@alfredbaudisch.com>, 2019.
 # Alisson Damasceno <damascenoalisson@gmail.com>, 2018.
 # Anderson Araujo <anderson.araujoprog@gmail.com>, 2018.
 # Anderson Jonas <lambosanm.d@gmail.com>, 2018.
@@ -52,10 +53,12 @@
 # Iago Barbosa da Silva <ErnestoGilgamesh@gmail.com>, 2018.
 # Ian Pontes Louzada <ianlouzad4@gmail.com>, 2019.
 # Ivan Camargo dos Santos <camargo65@gmail.com>, 2019.
+# Jairo <jairom@protonmail.ch>, 2019.
 # Jessé Silva <starclock@gmail.com>, 2018.
 # João Victor Lima <victordevtb@outlook.com>, 2018.
-# Joaquim Ferreira <joaquimferreira1996@bol.com.br>, 2018-2019.
+# Joaquim Ferreira <joaquimferreira1996@bol.com.br>, 2018-2020.
 # Joel Landgraf Filho <joel.landgraf@gmail.com>, 2019.
+# John L.F. Silver <contatojohnlfs@gmail.com>, 2020.
 # johnnybigoode <jamarson@gmail.com>, 2019.
 # José Leonardo Ayres Pereira <leonardo.ayres@gmail.com>, 2019.
 # Julio Yagami <juliohenrique31501234@hotmail.com>, 2018-2019.
@@ -89,9 +92,10 @@
 # Miguel R. Araújo <leuugz@gmail.com>, 2019.
 # miketangogamer <miketangogamer@gmail.com>, 2018-2019.
 # Mosca Morta <ewersonffranco@gmail.com>, 2018.
-# Nataniel Sousa <natannada08@gmail.com>, 2019.
+# Nataniel Sousa <natannada08@gmail.com>, 2019-2020.
 # Neymar Junior <wizureye@nextmail.in>, 2019.
 # Nome Aleatorio <enviartrabalhopramim@gmail.com>, 2019.
+# patrickvob <patrickvob@gmail.com>, 2020.
 # Paulo Sergio Nogueira da Silva <paulozero357@gmail.com>, 2018.
 # Pedro Silva <pedrosgregorio9@gmail.com>, 2018.
 # Pietro Benati Carrara <piticarrara@gmail.com>, 2019.
@@ -111,6 +115,7 @@
 # ronybezerra <ronybezerra@gmail.com>, 2018.
 # Sergio Henrique C Miranda <sergiogbrox@gmail.com>, 2019.
 # ShallZ <vzinbr@gmail.com>, 2018.
+# sribgui <sribgui@gmail.com>, 2020.
 # Stephann Vasconcelos <stephann@protonmail.com>, 2019.
 # suxuf@2odem.com <suxuf@2odem.com>, 2018.
 # Thiago Amendola <amendolathiago@gmail.com>, 2019.
@@ -125,14 +130,15 @@
 # Wesley <wsplay357@gmail.com>, 2019.
 # William Batista Costa <costa.williambatista@gmail.com>, 2019.
 # Wow Bitch <hahaj@itmailr.com>, 2019.
+# Zeero <igcdzeero@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-12-21 12:27+0100\n"
-"PO-Revision-Date: 2019-12-21 08:38+0000\n"
-"Last-Translator: johnnybigoode <jamarson@gmail.com>\n"
+"PO-Revision-Date: 2020-01-19 13:12+0000\n"
+"Last-Translator: Joaquim Ferreira <joaquimferreira1996@bol.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -140,7 +146,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 3.10.2\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -1957,7 +1963,9 @@ msgstr "Específico de plataforma"
 
 #: ../../docs/about/docs_changelog.rst:190
 msgid ":ref:`doc_customizing_html5_shell`"
-msgstr ":ref:`doc_customizing_html5_shell`"
+msgstr ""
+":ref:`Personalizando a página Web de exportação de HTML "
+"<doc_customizing_html5_shell>`"
 
 #: ../../docs/about/docs_changelog.rst:195
 msgid ":ref:`doc_thread_safe_apis`"
@@ -1965,7 +1973,7 @@ msgstr ":ref:`doc_thread_safe_apis`"
 
 #: ../../docs/about/docs_changelog.rst:200
 msgid ":ref:`doc_making_trees`"
-msgstr ":ref:`doc_making_trees`"
+msgstr ":ref:`Criando árvores <doc_making_trees>`"
 
 #: ../../docs/about/docs_changelog.rst:203
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1974,11 +1982,11 @@ msgstr "Diversos"
 
 #: ../../docs/about/docs_changelog.rst:205
 msgid ":ref:`doc_jitter_stutter`"
-msgstr ":ref:`doc_jitter_stutter`"
+msgstr ":ref:`Consertando jitter e stutter <doc_jitter_stutter>`"
 
 #: ../../docs/about/docs_changelog.rst:206
 msgid ":ref:`doc_running_code_in_the_editor`"
-msgstr ":ref:`doc_running_code_in_the_editor`"
+msgstr ":ref: Executando código no editor `doc_running_code_in_the_editor`"
 
 #: ../../docs/about/docs_changelog.rst:207
 msgid ":ref:`doc_change_scenes_manually`"
@@ -2002,11 +2010,13 @@ msgstr "Compilando"
 
 #: ../../docs/about/docs_changelog.rst:213
 msgid ":ref:`doc_optimizing_for_size`"
-msgstr ":ref:`doc_optimizing_for_size`"
+msgstr ":ref: Otimizado para tamanho `doc_optimizing_for_size`"
 
 #: ../../docs/about/docs_changelog.rst:214
 msgid ":ref:`doc_compiling_with_script_encryption_key`"
-msgstr ":ref:`doc_compiling_with_script_encryption_key`"
+msgstr ""
+":ref: Compilando com Encryption Key em script "
+"`doc_compiling_with_script_encryption_key`"
 
 #: ../../docs/about/docs_changelog.rst:217
 #: ../../docs/development/cpp/index.rst:2
@@ -2015,7 +2025,8 @@ msgstr "Desenvolvimento da Engine"
 
 #: ../../docs/about/docs_changelog.rst:219
 msgid ":ref:`doc_binding_to_external_libraries`"
-msgstr ":ref:`doc_binding_to_external_libraries`"
+msgstr ""
+":ref: Binding de bibliotecas externas `doc_binding_to_external_libraries`"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
@@ -2028,8 +2039,8 @@ msgid ""
 "to get started with the engine."
 msgstr ""
 "Este tutorial vai lhe apresentar a interface do Godot. Vamos dar uma olhada "
-"no **Gerenciador de Projetos, painéis, workspaces** e tudo que você precisa "
-"conhecer para começar a usar a engine ."
+"no **Gerenciador de Projetos, painéis, áreas de trabalho** e tudo que você "
+"precisa conhecer para começar a usar a engine."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
@@ -4456,7 +4467,7 @@ msgid ""
 "connected in the same way as a node's built-in signals."
 msgstr ""
 "Quando declarado, seus sinais personalizados aparecerão no Inspetor e podem "
-"ser conectados da mesma forma que os sinais pré-incorporados em um node."
+"ser conectados em um node da mesma forma que os sinais predefinidos."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:183
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
@@ -5707,9 +5718,8 @@ msgid "*Layout* : \"HCenter Wide\""
 msgstr "*Layout* : \"Center\" (Centro)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
-#, fuzzy
 msgid "*Autowrap* : \"On\""
-msgstr "*Autowrap* : \"On\""
+msgstr "*Autowrap* : \"Ativo\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:939
 msgid "StartButton"
@@ -6913,7 +6923,6 @@ msgstr ""
 "contêineres"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
-#, fuzzy
 msgid ""
 "The five most common containers (you can learn more about containers in the :"
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
@@ -7070,10 +7079,9 @@ msgstr ""
 "para compatibilidade com versões anteriores."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
-#, fuzzy
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
-"``Scale`` redimensiona a textura para caber no retângulo delimitador do nó"
+"``Scale`` redimensiona a textura para caber no retângulo delimitador do nó."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid "``Tile`` makes the texture repeat, but it won't scale."
@@ -7187,7 +7195,6 @@ msgstr ""
 "limitar o intervalo do medidor."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
-#, fuzzy
 msgid ""
 "To animate the bar, you'll want to look at the Range section. Set the "
 "``Min`` and ``Max`` properties to define the range of the gauge. For "
@@ -7202,7 +7209,7 @@ msgstr ""
 "exemplo, para representar a vida de um personagem, você vai querer definir "
 "``Min`` para ``0, `` e ``Max`` para a vida máxima do personagem. Altere a "
 "propriedade ``Value`` para atualizar a barra. Se você deixar os valores "
-"``Min`` e ``Max`` para o padrão de ``1`` e ``100, `` e setar a propriedade "
+"``Min`` e ``Max`` para o padrão de ``0`` e ``100, `` e definir a propriedade "
 "``Value`` para ``40``, 40% da textura ``Progress`` aparecerá, e 60% dela "
 "permanecerá oculta."
 
@@ -7234,7 +7241,6 @@ msgid "NinePatchRect"
 msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:160
-#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
@@ -7242,9 +7248,9 @@ msgid ""
 "for your UI."
 msgstr ""
 "**NinePatchRect** divide uma textura em 3 linhas e 3 colunas. O centro e os "
-"lados são ladrilhados quando você dimensiona a textura, mas nunca dimensiona "
-"os cantos. É útil criar painéis, caixas de diálogo e planos de fundo "
-"escaláveis para sua interface do usuário."
+"lados são ladrilhados quando você redimensiona a textura, mas nunca "
+"redimensiona os cantos. É útil criar painéis, caixas de diálogo e planos de "
+"fundo escaláveis para sua interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "NinePatchRect scaled with the min\\_size property"
@@ -7673,19 +7679,16 @@ msgstr ""
 "o sistema de UI da engine:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
-#, fuzzy
 msgid "A main menu."
-msgstr "Um menu inicial"
+msgstr "Um menu principal."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
-#, fuzzy
 msgid "A game UI with a health bar, energy bar, bomb and money counters."
 msgstr ""
-"Um UI de jogo com uma barra de vida, barra de energia e contador de bombas e "
-"dinheiro"
+"Uma interface gráfica de jogo com uma barra de vida, barra de energia, "
+"contador de bombas e de dinheiro."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
@@ -7694,12 +7697,11 @@ msgstr ""
 "Você aprenderá a projetar a interface do usuário do jogo de maneira "
 "eficiente e a usar os nós de controle do Godot. Esta página se concentra na "
 "parte visual: tudo que você faz no editor. Para aprender como codificar uma "
-"barra de vida, leia :doc:`ui_code_a_life_bar`"
+"barra de vida, leia :doc:`ui_code_a_life_bar`."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
-#, fuzzy
 msgid "The GUI you're going to create."
-msgstr "A GUI que você vai criar"
+msgstr "A GUI que você vai criar."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -7716,13 +7718,12 @@ msgstr ""
 "main_menu``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
-#, fuzzy
 msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
 "UI system works."
 msgstr ""
 "Leia o :doc:`ui_introduction_to_the_ui_system` primeiro para entender como o "
-"sistema de Interface do Usuário do Godot funciona"
+"sistema de Interface do Usuário do Godot funciona."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
 msgid "How to design your game UI"
@@ -7752,7 +7753,6 @@ msgid "The UI's rough plan or mockup"
 msgstr "O esboço de plano ou protótipo da interface do usuário"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:48
-#, fuzzy
 msgid ""
 "Placeholder doesn't have to mean ugly, but you should keep the graphics "
 "simple and clean. Avoid special effects, animation, and detailed "
@@ -7764,20 +7764,18 @@ msgstr ""
 "usuário. De outra forma:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
-#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
 "Os gráficos podem distorcer a percepção dos jogadores sobre a experiência e "
-"você perderá um feedback valioso"
+"você perderá um feedback valioso."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
-#, fuzzy
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
 msgstr ""
 "Se a Experiência do Usuário não funcionar, você terá que refazer alguns "
-"sprites"
+"sprites."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:58
 msgid ""
@@ -7802,22 +7800,20 @@ msgstr ""
 "pode:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
-#, fuzzy
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
 "Construa tudo em uma única cena e, eventualmente, salve alguns ramos como "
-"cenas reutilizáveis"
+"cenas reutilizáveis."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
-#, fuzzy
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
 "Crie modelos de cenas para componentes reutilizáveis e crie componentes "
-"específicos que herdam de suas cenas base"
+"específicos que herdam de suas cenas base."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -7833,13 +7829,12 @@ msgstr ""
 "reutilizáveis, como você verá abaixo."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
-#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
 "Os arquivos que você encontrará no Godot. Os gráficos parecem mais limpos do "
-"que no esboço de projeto, mas ainda são marcadores de espaço"
+"que no esboço de projeto, mas ainda são marcadores de espaço."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -7864,7 +7859,6 @@ msgstr ""
 "Aqui estão minhas três regras básicas para encontrar os contêineres certos:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
-#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
@@ -7872,23 +7866,21 @@ msgid ""
 msgstr ""
 "Divida a interface do usuário em caixas aninhadas, desde a maior que contém "
 "tudo, até as menores, que abrangem um widget, como uma barra com seu rótulo, "
-"um painel ou um botão"
+"um painel ou um botão."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
-#, fuzzy
 msgid "If there's some padding around an area, use a ``MarginContainer``."
 msgstr ""
 "Se houver algum preenchimento em torno de uma área, use um "
-"``MarginContainer``"
+"``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
-#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
 "Se os elementos estiverem dispostos em linhas ou colunas, use um "
-"``HBoxContainer`` ou ``VBoxContainer``"
+"``HBoxContainer`` ou ``VBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
@@ -7915,10 +7907,9 @@ msgstr ""
 "ilustração com um ``CenterContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
-#, fuzzy
 msgid "Interface building blocks, broken down using the three rules of thumb."
 msgstr ""
-"Blocos de construção de interface, divididos usando as três regras básicas"
+"Blocos de construção de interface, divididos usando as três regras básicas."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -7936,12 +7927,11 @@ msgid "Prepare the Main Menu scene"
 msgstr "Prepare a cena do Menu Principal"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
-#, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
-"Vamos criar o menu principal. Nós vamos construir em uma única cena. Para "
+"Vamos criar o menu principal. Nós vamos construí-lo em uma única cena. Para "
 "criar uma cena vazia, clique no menu Cena -> Nova Cena."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
@@ -7986,13 +7976,12 @@ msgid "Margin Bottom: *80*"
 msgstr "Margem Inferior: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
-#, fuzzy
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
 "Queremos que o contêiner se encaixe na janela. No Viewport, abra o menu "
-"``Layout`` e selecione a última opção, ``Full Rect``."
+"**Layout** e selecione a última opção, **Full Rect**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
 msgid "Add the UI sprites"
@@ -8007,27 +7996,22 @@ msgstr ""
 "como nós ``TextureRect``. Nós precisamos:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
-#, fuzzy
 msgid "the title or logo,"
-msgstr "O título ou logotipo"
+msgstr "O título ou logotipo,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
-#, fuzzy
 msgid "the three text options as individual nodes,"
-msgstr "As três opções de texto, como nós individuais"
+msgstr "As três opções de texto, como nós individuais,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
-#, fuzzy
 msgid "the version note,"
-msgstr "A nota de versão"
+msgstr "A nota de versão,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-#, fuzzy
 msgid "and the main menu’s illustration."
-msgstr "E a ilustração do menu principal"
+msgstr "E a ilustração do menu principal."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press ``Meta+A`` on your keyboard. Start to "
 "type ``TextureRect`` to find the corresponding node and press enter. With "
@@ -8037,10 +8021,9 @@ msgstr ""
 "Clique no botão ``Add Node`` ou pressione ``Meta+A`` no seu teclado. Comece "
 "a digitar ``TextureRect`` para encontrar o nó correspondente e pressione "
 "enter. Com o novo nó selecionado, pressione ``Meta+D`` cinco vezes para "
-"criar cinco instâncias extras ``TextureRect``."
+"criar cinco instâncias extras de ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
 "property and click **[empty] > Load**. A file browser opens and lets you "
@@ -8048,16 +8031,14 @@ msgid ""
 msgstr ""
 "Clique em cada um dos nós para selecioná-lo. No inspetor, encontre a "
 "propriedade ``Texture`` e clique em ``[empty]`` -> ``Load`` . Um navegador "
-"de arquivos é aberto e permite escolher uma sprite para carregar no slot de "
-"textura."
+"de arquivos será aberto e permitirá escolher um sprite para carregar no slot "
+"de textura."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
-#, fuzzy
 msgid "The file browser lets you find and load textures."
-msgstr "O navegador de arquivos permite encontrar e carregar texturas"
+msgstr "O navegador de arquivos permite encontrar e carregar texturas."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
-#, fuzzy
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
@@ -8065,15 +8046,14 @@ msgid ""
 "rename them. Nothing has been placed in containers yet so this should look "
 "messy."
 msgstr ""
-"Repita a operação para todos os nós ``TextureRect``. Você deve ter o "
+"Repita a operação para todos os nós do tipo ``TextureRect``. Você deve ter o "
 "logotipo, a ilustração, as três opções de menu e a nota de versão, cada uma "
 "como um nó separado. Em seguida, clique duas vezes em cada um dos nós na "
 "guia Cena para renomeá-los."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
-#, fuzzy
 msgid "The six nodes with textures loaded."
-msgstr "Os seis nós, com texturas carregadas"
+msgstr "Os seis nós, com texturas carregadas."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
 msgid ""
@@ -8126,16 +8106,14 @@ msgstr ""
 "``CenterContainer`` para a ilustração à direita."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
-#, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr ""
 "Você deve ter quatro contêineres aninhados e os nós TextureRect separados "
-"deles"
+"deles."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
@@ -8155,18 +8133,15 @@ msgid "We're left with two problems to solve:"
 msgstr "Ficamos com dois problemas para resolver:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid "The characters on the right aren't centered."
-msgstr "Os caracteres da direita não estão centralizados"
+msgstr "Os caracteres da direita não estão centralizados."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-#, fuzzy
 msgid "There's no space between the logo and the other UI elements."
 msgstr ""
-"Não há espaço entre o logotipo e os outros elementos da interface do usuário"
+"Não há espaço entre o logotipo e os outros elementos da interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "
@@ -8178,25 +8153,23 @@ msgid ""
 "center automatically."
 msgstr ""
 "Para centralizar os caracteres à direita, primeiro selecione o "
-"``CenterContainer``.  Então, no inspetor, role abaixo para a categoria "
-"``Size Flags`` e clique no campo à direita da propriedade  ``Vertical``, e "
-"marque ``Expand`` além de ``Fill``. Faça o mesmo com a propriedade "
-"``Horizontal``. Isso faz o ``CenterContainer`` se expandir para todo o "
-"espaço disponível respeitando seu vizinho ``VBoxContainer``. Finalmente, "
-"arraste e solte os caracteres no ``CenterContainer``. O elemento Caracteres "
-"será centralizado automaticamente."
+"``CenterContainer``. Então, no inspetor, desça para a categoria **Size "
+"Flags** e clique no campo à direita da propriedade **Vertical**, e marque "
+"**Expand** além de **Fill**. Faça o mesmo com a propriedade **Horizontal**. "
+"Isso faz o **CenterContainer** se expandir para todo o espaço disponível "
+"respeitando o **VBoxContainer** vizinho. Finalmente, arraste e solte o nó "
+"Characters no **CenterContainer**. O elemento Characteres será centralizado "
+"automaticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
-#, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer."
 msgstr ""
 "O nó de caractere centraliza-se dentro da metade direita da tela assim que "
-"você o coloca dentro do CenterContainer"
+"você o coloca dentro do Contêiner Central."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
@@ -8205,22 +8178,21 @@ msgid ""
 "``Options``, and drag and drop them inside the new ``VBoxContainer``. The "
 "UI's layout should barely change, if at all."
 msgstr ""
-"Para espaçar as opções de menu e o logotipo à esquerda, usaremos um "
-"contêiner final e suas flags de tamanho. Selecione ``VBoxContainer`` e "
-"pressione ``Meta+A`` para adicionar um novo nó dentro dele. Adicione um "
-"segundo ``VBoxContainer`` e nomeie-o como \"MenuOptions\". Selecione todas "
-"as três opções de menu, ``Continue``, ``NewGame`` e ``Options``, e arraste e "
-"solte-as dentro do novo ``VBoxContainer``. A disposição da interface do "
-"usuário deve mudar pouco, isso se mudar."
+"Para espaçar as opções de menu e o logotipo à esquerda, usaremos um ultimo "
+"contêiner e suas flags de tamanho. Selecione ``VBoxContainer`` e pressione "
+"``Meta+A`` para adicionar um novo Node dentro dele. Adicione um segundo "
+"``VBoxContainer`` e nomeie-o como *MenuOptions*. Selecione todas as três "
+"menu de opções, ``Continue``, ``NewGame`` e ``Options``, arraste eles e "
+"solte-os dentro do novo ``VBoxContainer``. A Interface de Usuario deve mudar "
+"um pouco, isso se mudar."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
 msgstr ""
-"Coloque o novo contêiner entre os outros dois nós para manter o layout da "
-"interface do usuário"
+"Coloque o novo contêiner entre os outros dois Nodes para manter o layout da "
+"interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:248
 #, fuzzy
@@ -8242,13 +8214,12 @@ msgstr ""
 "``Logo`` e ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:256
-#, fuzzy
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the **Alignment** property to **Center**."
 msgstr ""
 "Para centralizar os nós no ``VBoxContainer``, vá até o topo do Inspetor e "
-"altere a propriedade ``Alignment`` para ``Center``."
+"altere a propriedade **Alignment** para **Center**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
 #, fuzzy
@@ -10717,7 +10688,6 @@ msgstr ""
 "los automaticamente."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
-#, fuzzy
 msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 msgstr ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 
@@ -11075,7 +11045,6 @@ msgstr ""
 "usar a função ``load()`` a qualquer momento:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
-#, fuzzy
 msgid ""
 "You can also ``preload`` resources. Unlike ``load``, this function will read "
 "the file from disk and load it at compile-time. As a result, you cannot call "
@@ -11162,7 +11131,6 @@ msgid "Creating your own resources"
 msgstr "Liberando recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
-#, fuzzy
 msgid ""
 "Like any Object in Godot, users can also script Resources. Resource scripts "
 "inherit the ability to freely translate between object properties and "
@@ -11192,7 +11160,6 @@ msgstr ""
 "`Reference <class_Reference>` e :ref:`Resource <class_Resource>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
-#, fuzzy
 msgid ""
 "They can define constants, so constants from other data fields or objects "
 "are not needed."
@@ -11201,7 +11168,6 @@ msgstr ""
 "objetos de dados não são necessárias."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
-#, fuzzy
 msgid ""
 "They can define methods, including setter/getter methods for properties. "
 "This allows for abstraction and encapsulation of the underlying data. If the "
@@ -11223,7 +11189,6 @@ msgstr ""
 "alterações nos dados que eles gerenciam."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:171
-#, fuzzy
 msgid ""
 "They have defined properties, so users know 100% that their data will exist."
 msgstr ""
@@ -11231,7 +11196,6 @@ msgstr ""
 "existirão."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:173
-#, fuzzy
 msgid ""
 "Resource auto-serialization and deserialization is a built-in Godot Engine "
 "feature. Users do not need to implement custom logic to import/export a "
@@ -11242,7 +11206,6 @@ msgstr ""
 "para importar / exportar os dados de um arquivo de recurso."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:175
-#, fuzzy
 msgid ""
 "Resources can even serialize sub-Resources recursively, meaning users can "
 "design even more sophisticated data structures."
@@ -11252,7 +11215,6 @@ msgstr ""
 "sofisticadas."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:177
-#, fuzzy
 msgid ""
 "Users can save Resources as version-control-friendly text files (\\*.tres). "
 "Upon exporting a game, Godot serializes resource files as binary files (\\*."
@@ -11264,7 +11226,6 @@ msgstr ""
 "velocidade e compactação."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
-#, fuzzy
 msgid ""
 "Godot Engine's Inspector renders and edits Resource files out-of-the-box. As "
 "such, users often do not need to implement custom logic to visualize or edit "
@@ -11278,7 +11239,6 @@ msgstr ""
 "ícone da pasta no Inspetor e abra o arquivo na caixa de diálogo."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
-#, fuzzy
 msgid ""
 "They can extend **other** resource types besides just the base Resource."
 msgstr ""
@@ -11301,12 +11261,10 @@ msgstr ""
 "tenham desaparecido."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
-#, fuzzy
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr "Godot facilita a criação de recursos personalizados no Inspetor."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:217
-#, fuzzy
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
@@ -11315,12 +11273,10 @@ msgstr ""
 "deriva Resource, desde que seu script esteja estendendo esse tipo."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:218
-#, fuzzy
 msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr "Defina a propriedade `` script`` no Inspector como seu script."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:220
-#, fuzzy
 msgid ""
 "The Inspector will now display your Resource script's custom properties. If "
 "one edits those values and saves the resource, the Inspector serializes the "
@@ -11355,7 +11311,6 @@ msgid "Let's see some examples."
 msgstr "Alguns exemplos:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:303
-#, fuzzy
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -11370,7 +11325,6 @@ msgstr ""
 "criar visualizações e editores personalizados para seus dados."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:309
-#, fuzzy
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
@@ -11382,7 +11336,6 @@ msgstr ""
 "para um script de recurso personalizado secundário."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:345
-#, fuzzy
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
@@ -11391,7 +11344,6 @@ msgstr ""
 "alternativamente ..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:347
-#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
@@ -11400,7 +11352,6 @@ msgstr ""
 "chave ou ..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:349
-#, fuzzy
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
@@ -12119,7 +12070,6 @@ msgstr ""
 "pode simplesmente ser acessado diretamente:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
-#, fuzzy
 msgid ""
 "Note that autoload objects (scripts and/or scenes) are accessed just like "
 "any other node in the scene tree. In fact, if you look at the running scene "
@@ -12226,7 +12176,6 @@ msgstr ""
 "e a substitui pela cena requisitada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
-#, fuzzy
 msgid ""
 "Using :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, the "
 "second function will only run once all code from the current scene has "
@@ -12310,7 +12259,6 @@ msgid "Unity"
 msgstr "Unity"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
-#, fuzzy
 msgid "Godot"
 msgstr "Godot"
 
@@ -12359,12 +12307,10 @@ msgid "**Web:** WebAssembly or asm.js"
 msgstr "**Web:** WebAssembly ou asm.js"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
-#, fuzzy
 msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 msgstr "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
-#, fuzzy
 msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
 "HoloLens"
@@ -12385,7 +12331,6 @@ msgid "**Mobile:** Android, iOS"
 msgstr "**Dispositivos móveis:** Android, iOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
-#, fuzzy
 msgid "**Web:** WebAssembly"
 msgstr "**Web:** WebAssembly"
 
@@ -12394,7 +12339,6 @@ msgid "**Console:** See :ref:`doc_consoles`"
 msgstr "**Console:** Ver :ref:`doc_consoles`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
-#, fuzzy
 msgid "**VR:** Oculus Rift, SteamVR"
 msgstr "**VR:** Oculus Rift, SteamVR"
 
@@ -12407,7 +12351,6 @@ msgid "Component/Scene (GameObject > Component)"
 msgstr "Componente/Cena (GameObject > Component)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:35
-#, fuzzy
 msgid "Prefabs"
 msgstr "Prefabs"
 
@@ -13161,7 +13104,7 @@ msgstr "Propriedades do Node"
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:120
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "Command"
-msgstr ""
+msgstr "Comando"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:20
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:34
@@ -13234,11 +13177,11 @@ msgstr "Carregando recursos a partir do código"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "``--version``"
-msgstr ""
+msgstr "``--versão``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "Display the version string."
-msgstr ""
+msgstr "Exibe a string da versão."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:26
 #, fuzzy
@@ -13256,6 +13199,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr ""
+"Modo silencioso, silencia mensagens stdout. Os erros ainda são exibidos."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:31
 #, fuzzy
@@ -13272,6 +13216,8 @@ msgid ""
 "Start the editor instead of running the scene (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Inicia o editor ao invés de rodar a cena (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` deve estar ativado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid "``-p``, ``--project-manager``"
@@ -13282,6 +13228,9 @@ msgid ""
 "Start the project manager, even if a project is auto-detected (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Inicia o gerenciador de projetos, mesmo que um projeto seja detectado "
+"automaticamente (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` "
+"deve estar ativado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 #, fuzzy
@@ -13290,17 +13239,20 @@ msgstr "``+`` ``-``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 msgid "Quit after the first iteration."
-msgstr ""
+msgstr "Sair depois da primeira iteração."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid "``-l <locale>``, ``--language <locale>``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
+#, fuzzy
 msgid ""
 "Use a specific locale (<locale> being a two-letter code). See :ref:"
 "`doc_locales` for more details."
 msgstr ""
+"Use um local específico (<locale> sendo um código de duas letras). Veja :ref:"
+"`doc_locales` para mais detalhes."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "``--path <directory>``"
@@ -13309,6 +13261,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "Path to a project (<directory> must contain a 'project.godot' file)."
 msgstr ""
+"Caminho para um projeto (<directory> deve conter um arquivo 'project.godot')."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:46
 #, fuzzy
@@ -13317,7 +13270,7 @@ msgstr "``+`` ``-``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:46
 msgid "Scan folders upwards for 'project.godot' file."
-msgstr ""
+msgstr "Escanear pastas acima por arquivo 'project.godot'"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "``--main-pack <file>``"
@@ -13325,7 +13278,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "Path to a pack (.pck) file to load."
-msgstr ""
+msgstr "Caminho para um arquivo de pacote (.pck) a ser carregado."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:50
 msgid "``--render-thread <mode>``"
@@ -13344,7 +13297,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
-msgstr ""
+msgstr "Sistema de Arquivos Remoto (endereço ``<host/IP>[:<port>]``)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:54
 msgid "``--audio-driver <driver>``"
@@ -13354,6 +13307,8 @@ msgstr ""
 msgid ""
 "Audio driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
+"Driver de áudio. Use `` --help`` primeiro para exibir a lista de drivers "
+"disponíveis."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:56
 msgid "``--video-driver <driver>``"
@@ -13363,6 +13318,8 @@ msgstr ""
 msgid ""
 "Video driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
+"Driver de vídeo. Use `` --help`` primeiro para exibir a lista de drivers "
+"disponíveis."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:59
 #, fuzzy
@@ -13375,7 +13332,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:64
 msgid "Request fullscreen mode."
-msgstr ""
+msgstr "Solicitar o modo Tela Cheia."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "``-m``, ``--maximized``"
@@ -13383,7 +13340,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "Request a maximized window."
-msgstr ""
+msgstr "Solicitar uma janela maximizada."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:68
 #, fuzzy
@@ -13392,7 +13349,7 @@ msgstr "``+`` ``-``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:68
 msgid "Request windowed mode."
-msgstr ""
+msgstr "Solicitar o Modo Janela."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "``-t``, ``--always-on-top``"
@@ -13400,7 +13357,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "Request an always-on-top window."
-msgstr ""
+msgstr "Solicitar uma Janela Sempre Visível."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "``--resolution <W>x<H>``"
@@ -13408,7 +13365,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "Request window resolution."
-msgstr ""
+msgstr "Solicitar a Resolução de Janela."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "``--position <X>,<Y>``"
@@ -13416,7 +13373,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "Request window position."
-msgstr ""
+msgstr "Solicitar a Posição da Janela."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
 msgid "``--low-dpi``"
@@ -13424,7 +13381,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
 msgid "Force low-DPI mode (macOS and Windows only)."
-msgstr ""
+msgstr "Forçar Modo de baixo DPI (Apenas para macOS e Windows)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid "``--no-window``"
@@ -13434,11 +13391,12 @@ msgstr ""
 msgid ""
 "Disable window creation (Windows only). Useful together with ``--script``."
 msgstr ""
+"Desativar a Criação de Janela (Apenas para Windows). Útil em conjunto com "
+"``--script``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:81
-#, fuzzy
 msgid "**Debug options**"
-msgstr "**Descrição**"
+msgstr "**Opções de Depuração**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid ""
@@ -13446,15 +13404,18 @@ msgid ""
 "(they require ``debug`` or ``release_debug`` build targets, see :ref:"
 "`doc_introduction_to_the_buildsystem_target` for more details)."
 msgstr ""
+"As opções de depuração estão disponíveis apenas no editor e nos modelos de "
+"exportação de depuração (eles exigem destinos de compilação `` debug`` ou `` "
+"release_debug``, consulte: ref: `doc_introduction_to_the_buildsystem_target` "
+"para obter mais detalhes)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
-#, fuzzy
 msgid "``-d``, ``--debug``"
-msgstr "``+`` ``-``"
+msgstr "``-d``, ``--debug``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
 msgid "Debug (local stdout debugger)."
-msgstr ""
+msgstr "Depurar (Depuração stdout local)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid "``-b``, ``--breakpoints``"
@@ -13472,7 +13433,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Enable profiling in the script debugger."
-msgstr ""
+msgstr "Habilite a criação de perfil no depurador de scripts."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "``--remote-debug <address>``"
@@ -13480,7 +13441,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "Remote debug (``<host/IP>:<port>`` address)."
-msgstr ""
+msgstr "Depuração Remota (endereço ``<host/IP>:<port>`` )."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "``--debug-collisions``"
@@ -13488,7 +13449,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "Show collision shapes when running the scene."
-msgstr ""
+msgstr "Mostrar formas de colisão ao executar a cena."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 msgid "``--debug-navigation``"
@@ -13496,7 +13457,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 msgid "Show navigation polygons when running the scene."
-msgstr ""
+msgstr "Mostrar polígonos de navegação ao executar a cena."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:104
 msgid "``--frame-delay <ms>``"
@@ -13504,7 +13465,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:104
 msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
-msgstr ""
+msgstr "Simular alta carga de CPU (atrase cada quadro em <ms> milissegundos)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:106
 msgid "``--time-scale <scale>``"
@@ -13513,6 +13474,8 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:106
 msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
 msgstr ""
+"Forçar escala de tempo (valores mais altos são mais rápidos, 1,0 é "
+"velocidade normal)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:108
 msgid "``--disable-render-loop``"
@@ -13523,6 +13486,8 @@ msgid ""
 "Disable render loop so rendering only occurs when called explicitly from "
 "script."
 msgstr ""
+"Desabilitar o loop de renderização de modo que a renderização só ocorra "
+"quando for explicitamente chamado pelo script."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "``--disable-crash-handler``"
@@ -13531,6 +13496,8 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "Disable crash handler when supported by the platform code."
 msgstr ""
+"Desabilite o manipulador de falhas quando suportado pelo código da "
+"plataforma."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:112
 msgid "``--fixed-fps <fps>``"
@@ -13541,6 +13508,8 @@ msgid ""
 "Force a fixed number of frames per second. This setting disables real-time "
 "synchronization."
 msgstr ""
+"Force um número fixo de quadros por segundo. Essa configuração desativa a "
+"sincronização em tempo real."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "``--print-fps``"
@@ -13548,7 +13517,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "Print the frames per second to the stdout."
-msgstr ""
+msgstr "Imprima os quadros por segundo para o stdout."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "**Standalone tools**"
@@ -13559,17 +13528,17 @@ msgid "``-s <script>``, ``--script <script>``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
-#, fuzzy
 msgid "Run a script."
-msgstr "Executando um script"
+msgstr "Executar um script."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "``--check-only``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
+#, fuzzy
 msgid "Only parse for errors and quit (use with ``--script``)."
-msgstr ""
+msgstr "Analise apenas erros e saia (use com `` --script``)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:126
 msgid "``--export <target>``"
@@ -13581,6 +13550,9 @@ msgid ""
 "path ends with .pck or .zip (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Exporte o projeto usando o destino de exportação especificado. Exporte "
+"apenas o pacote principal se o caminho terminar com .pck ou .zip (: ref: "
+"`tools <doc_introduction_to_the_buildsystem_tools>` deve estar ativado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid "``--export-debug <target>``"
@@ -13597,11 +13569,15 @@ msgid "``--doctool <path>``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
+#, fuzzy
 msgid ""
 "Dump the engine API reference to the given <path> in XML format, merging if "
 "existing files are found (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Despeje a referência da API do motor para o <caminho> dado em formato XML, "
+"fundindo se arquivos existentes forem encontrados (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid "``--no-docbase``"
@@ -13618,30 +13594,40 @@ msgid "``--build-solutions``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
+#, fuzzy
 msgid ""
 "Build the scripting solutions (e.g. for C# projects, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Construa as soluções de script (por exemplo, para projetos em C #, ref: "
+"`tools <doc_introduction_to_the_buildsystem_tools>` deve estar ativado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:136
 msgid "``--gdnative-generate-json-api``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:136
+#, fuzzy
 msgid ""
 "Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Gerar despejo JSON da API do Godot para as ligações do GDNative (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` deve estar habilitado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
 msgid "``--test <test>``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
+#, fuzzy
 msgid ""
 "Run a unit test. Use ``--help`` first to display the list of tests. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Execute um teste unitário. Utilize ``-help'' primeiro para exibir a lista de "
+"testes. (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` deve estar "
+"habilitado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:142
 msgid "Path"
@@ -13655,11 +13641,11 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
-"Recomenda-se que o seu binário na Godot esteja na sua variável de ambiente "
+"É Recomendado que o seu binário na Godot esteja na sua variável de ambiente "
 "PATH, de modo que possa ser executado facilmente de qualquer lugar, "
-"digitando `` godot``. Você pode fazer isso no Linux colocando o binário "
-"Godot em `` / usr / local / bin`` e certificando-se de que ele é chamado  "
-"pela `` godot``."
+"digitando `` godot``. Você pode fazer isso no Linux colocando o binário da "
+"Godot em `` / usr / local / bin`` e certificando-se de que ele é chamado "
+"como `` godot``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:150
 msgid "Setting the project path"
@@ -13927,7 +13913,6 @@ msgid "Some example Exec Flags for various editors include:"
 msgstr "Alguns exemplos de Exec Flags para vários editores incluem:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
-#, fuzzy
 msgid "Exec Flags"
 msgstr "Exec Flags"
 
@@ -13980,7 +13965,7 @@ msgstr "Vim (gVim)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "``\"+call cursor({line}, {col})\" {file}``"
-msgstr ""
+msgstr "``\"+call cursor({line}, {col})\" {file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:45
 #, fuzzy
@@ -15270,7 +15255,7 @@ msgstr "Classes de script declaradas com a palavra-chave `` class_name``."
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:579
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:85
 msgid "Casting"
-msgstr "Fundição"
+msgstr "Conversão"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:581
 msgid ""
@@ -15372,6 +15357,9 @@ msgid ""
 "constants. They should be accessed prefixed by the enum's name (``Name."
 "KEY``); see an example below."
 msgstr ""
+"A partir do Godot 3.1, chaves em um enum nomeado não são registradas como "
+"constantes globais. Elas devem ser acessadas com o prefixo do nome do enum "
+"(``Name.KEY``); veja no exemplo abaixo."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:672
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
@@ -15814,7 +15802,6 @@ msgid "Here's a class file example:"
 msgstr "Aqui está um exemplo simples de como funciona:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1029
-#, fuzzy
 msgid ""
 "Godot's class syntax is compact: it can only contain member variables or "
 "functions. You can use static functions, but not static member variables. In "
@@ -16120,6 +16107,10 @@ msgid ""
 "script (especially the script's owner itself). As tool scripts run their "
 "code in the editor, misusing them may lead to crashing the editor."
 msgstr ""
+"Seja cauteloso ao liberar nós com ``queue_free()`` ou ``free()`` em um "
+"script de ferramenta (especialmente o próprio dono do script). Como os "
+"scripts de ferramentas executam o seu código no editor, o seu uso indevido "
+"pode causar falhas no editor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1265
 msgid "Memory management"
@@ -16164,6 +16155,7 @@ msgstr ""
 "para uma classe usando a palavra-chave ``signal``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1296
+#, fuzzy
 msgid ""
 "Signals are a `Callback <https://en.wikipedia.org/wiki/"
 "Callback_(computer_programming)>`_ mechanism. They also fill the role of "
@@ -16171,6 +16163,11 @@ msgid ""
 "`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ in "
 "the Game Programming Patterns ebook."
 msgstr ""
+"Os sinais são um mecanismo de `Callback <https://en.wikipedia.org/wiki/"
+"Callback_(computer_programming)>`_. Eles também preenchem o papel de "
+"Observadores, um padrão de programação comum. Para mais informações, leia o "
+"tutorial `Observer tutorial <https://gameprogrammingpatterns.com/observer."
+"html>`_ no ebook Game Programming Patterns."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1303
 #, fuzzy
@@ -16183,11 +16180,15 @@ msgstr ""
 "`class_RigidBody`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
+#, fuzzy
 msgid ""
 "In the example below, we connect the ``health_depleted`` signal from a "
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
 "signal, the game node's ``_on_Character_health_depleted`` is called::"
 msgstr ""
+"No exemplo abaixo, conectamos o sinal ''health_depleted'' de um nó "
+"''Character'' a um nó ''Game'' Quando o nó ''Character'' emite o sinal, o nó "
+"do jogo ''_on_Character_health_depleted'' é chamado::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
 msgid "You can emit as many arguments as you want along with a signal."
@@ -17570,7 +17571,6 @@ msgstr ""
 "conversão de um valor de um tipo para outro."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:150
-#, fuzzy
 msgid ""
 "Imagine an Enemy in your game, that ``extends Area2D``. You want it to "
 "collide with the Player, a ``KinematicBody2D`` with a script called "
@@ -17596,7 +17596,6 @@ msgstr ""
 "``PlayerController``:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:170
-#, fuzzy
 msgid ""
 "As we’re dealing with a custom type, if the ``body`` doesn’t extend "
 "``PlayerController``, the ``player``\\ variable will be set to ``null``. We "
@@ -17636,7 +17635,6 @@ msgstr ""
 "execução."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:188
-#, fuzzy
 msgid ""
 "This happens when you get a child node. Let’s take a timer for example: with "
 "dynamic code, you can get the node with ``$Timer``. GDScript supports `duck-"
@@ -19589,7 +19587,6 @@ msgid "Call"
 msgstr "Call"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
-#, fuzzy
 msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
@@ -19868,12 +19865,10 @@ msgstr ""
 "utilidades requeridas para se usar C# em Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
-#, fuzzy
 msgid "macOS and Linux"
 msgstr "macOS e Linux"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:53
-#, fuzzy
 msgid ""
 "Download and install the latest version of the `Mono SDK <http://www.mono-"
 "project.com/download/>`_. As of Godot 3.1 beta 3, the version number doesn't "
@@ -19958,7 +19953,6 @@ msgid "Visual Studio for Mac"
 msgstr "Visual Studio ou VS Code"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:93
-#, fuzzy
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
@@ -20161,7 +20155,6 @@ msgstr ""
 "suportado"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:210
-#, fuzzy
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
@@ -20329,7 +20322,6 @@ msgid "**Using the generic methods**"
 msgstr "**Usando o operador AS**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
-#, fuzzy
 msgid ""
 "Generic methods are also provided to make this type conversion transparent."
 msgstr ""
@@ -20521,7 +20513,6 @@ msgid "``TYPE_*``"
 msgstr "``TYPE_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
-#, fuzzy
 msgid "``Variant.Type`` enum"
 msgstr "``Variant.Type`` enum"
 
@@ -20530,7 +20521,6 @@ msgid "``OP_*``"
 msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
-#, fuzzy
 msgid "``Variant.Operator`` enum"
 msgstr "``Variant.Operator`` enum"
 
@@ -20596,7 +20586,6 @@ msgid "``is_instance_valid(obj)``"
 msgstr "``is_instance_valid(obj)``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:62
-#, fuzzy
 msgid "``Object.IsInstanceValid(obj)``"
 msgstr "``Object.IsInstanceValid(obj)``"
 
@@ -20856,12 +20845,10 @@ msgstr ""
 "nomes alterados:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
-#, fuzzy
 msgid "``end``"
 msgstr "``end``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
-#, fuzzy
 msgid "``End``"
 msgstr "``End``"
 
@@ -20900,7 +20887,6 @@ msgstr ""
 "nomes alterados:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
-#, fuzzy
 msgid "``length()``"
 msgstr "``length()``"
 
@@ -20914,7 +20900,6 @@ msgid "``length_squared()``"
 msgstr "``length_squared()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
-#, fuzzy
 msgid "``LengthSquared``"
 msgstr "``LengthSquared``"
 
@@ -21052,7 +21037,6 @@ msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:308
-#, fuzzy
 msgid ""
 "Something similar to GDScript's ``yield`` with a single parameter can be "
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
@@ -21063,7 +21047,6 @@ msgstr ""
 "csharp/language-reference/keywords/yield> `_ do C#."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:311
-#, fuzzy
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
@@ -21076,7 +21059,6 @@ msgid "Other differences"
 msgstr "Outras diferenças"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
-#, fuzzy
 msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
@@ -21729,7 +21711,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:9
-#, fuzzy
 msgid ""
 "Since Godot has no restrictions on project structure or filesystem usage, "
 "organizing files when learning the engine can seem challenging. This "
@@ -21855,7 +21836,6 @@ msgstr ""
 "blender-exporter"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:7
-#, fuzzy
 msgid ""
 "This plugin can be used to export Blender scenes in a Godot-specific scene "
 "format called ESCN, which is similar to TSCN (text format) but will be "
@@ -21957,7 +21937,6 @@ msgstr ""
 "Blender."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:20
-#, fuzzy
 msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
@@ -21992,7 +21971,6 @@ msgstr ""
 "materiais duplicados e precisar de mais controle sobre o material atribuído."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
-#, fuzzy
 msgid "None - Do not search for materials. Export them from the Blender file."
 msgstr "Nenhum - Não procure materiais. Exportá-los do arquivo do Blender."
 
@@ -22002,7 +21980,6 @@ msgid "Export of Cycles/EEVEE materials"
 msgstr "Modelos de Exportação"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
-#, fuzzy
 msgid ""
 "The exporter has a primitive support for converting Cycles/EEVEE material "
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
@@ -22014,22 +21991,18 @@ msgstr ""
 "são:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
-#, fuzzy
 msgid "all the ``noisy textures``"
 msgstr "todas as ``noisy textures``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
-#, fuzzy
 msgid "``generated texture coordinates``"
 msgstr "``generated texture coordinates``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
-#, fuzzy
 msgid "``group node``"
 msgstr "``group node``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
-#, fuzzy
 msgid ""
 "shader nodes except ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, "
 "``add shader`` and ``mix shader``"
@@ -22060,7 +22033,6 @@ msgstr ""
 "exemplo, sem sombra) são exportadas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
-#, fuzzy
 msgid "Generate external materials"
 msgstr "Gere materiais externos"
 
@@ -22166,7 +22138,6 @@ msgstr ""
 "vezes, isso é o que você quer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:42
-#, fuzzy
 msgid ""
 "To build compound physics shapes, parent together multiple objects with "
 "rigid body enabled. The physics properties are taken from the parent-most "
@@ -22240,7 +22211,6 @@ msgid "There are some things to note:"
 msgstr "Há algumas coisas para observar:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
-#, fuzzy
 msgid ""
 "In Blender, a light casts light all the way to infinity. In Godot, it is "
 "clamped by the attenuation distance. To most closely match between the "
@@ -22284,7 +22254,6 @@ msgid "Modifiers"
 msgstr "Identificadores"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:6
-#, fuzzy
 msgid ""
 "There is an exporting option :code:`Apply Modifiers` to control whether mesh "
 "modifiers are applied to the exported mesh."
@@ -22293,7 +22262,6 @@ msgstr ""
 "modificadores de mesh são aplicados à mesh exportada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:11
-#, fuzzy
 msgid "Shape Key"
 msgstr "Forma chave"
 
@@ -22309,7 +22277,6 @@ msgstr ""
 "se levar muito tempo."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:17
-#, fuzzy
 msgid ""
 "A lot of modifiers are not compatible with shape keys (e.g. subsurface "
 "modifier), so if you found you have incorrect shape keys exported, try to "
@@ -22336,7 +22303,6 @@ msgid "Rest Bone"
 msgstr "Osso de Repouso"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:9
-#, fuzzy
 msgid ""
 "Armature object in Blender is exported as a Skeleton node along with rest "
 "position (transform in Godot) of bones."
@@ -22372,7 +22338,6 @@ msgid "Bone Weights"
 msgstr "Peso dos ossos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:24
-#, fuzzy
 msgid ""
 "Blender put rigged mesh vertices which has no bone weights at its original "
 "position, but these vertices would be placed at (0, 0, 0) in Godot, making "
@@ -22477,25 +22442,23 @@ msgstr ""
 "lo no ``NLA Editor``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
-#, fuzzy
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
 msgstr "Ou pode ser feito juntando a ação em ``Dope Sheet``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
-#, fuzzy
 msgid "**2. Check mute status of NLA tracks**"
-msgstr "**2. Verificar o status 'mudo' das faixas NLA **"
+msgstr "**2. Verificar o status 'mute' das faixas NLA **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
-#, fuzzy
 msgid ""
 "An NLA track can be ``mute`` or ``unmute``, the exporter will export all the "
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
-"An NLA track can be ``mute`` or ``unmute``, the exporter will export all the "
-"``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
-"tracks into every action (including the action action) being exported."
+"Uma trilha NLA pode ser ``mute`` ou ``unmute``, o exportador irá exportar "
+"todas as trilhas NLA com ``mute`` como uma ação separada, enquanto mistura "
+"todas as trilhas NLA ``unmute`` em todas as ações (incluiondo a ação de "
+"ação) sendo exportadas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 #, fuzzy
@@ -22503,7 +22466,6 @@ msgid "**3. Export the scene**"
 msgstr "**4. Exporte a cena**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
-#, fuzzy
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
 msgstr "Certifique-se de que a opção ``Export Stashed Actions`` está ativada."
 
@@ -22578,12 +22540,10 @@ msgstr ""
 "colocadas em apenas um AnimationPlayer na raiz da cena."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:82
-#, fuzzy
 msgid "**Mode 'Animation as Action with Squash'**"
 msgstr "Animações suportadas:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
-#, fuzzy
 msgid ""
 "This mode has very similar behaviour of mode 'Animation as Action', but it "
 "can generate fewer AnimationPlayers; objects in parent-children relationship "
@@ -22648,7 +22608,6 @@ msgid "Changing import parameters"
 msgstr "Alterando Parâmetros de Importação"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:25
-#, fuzzy
 msgid ""
 "Changing the import parameters of an asset in Godot (again, keep in mind "
 "import parameters are only present in non-native Godot resource types) is "
@@ -22699,7 +22658,6 @@ msgid "Files generated"
 msgstr "Arquivos gerados"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
-#, fuzzy
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
@@ -22829,12 +22787,10 @@ msgid "Import options are vast:"
 msgstr "As opções de importação são vastas:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:28
-#, fuzzy
 msgid "Detect 3D"
 msgstr "Detecção 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:30
-#, fuzzy
 msgid ""
 "This option makes Godot be aware of when a texture (which is imported for 2D "
 "as default) is used in 3D. If this happens, setting are changed so the "
@@ -22868,7 +22824,6 @@ msgid "Compress Mode"
 msgstr "Modo de compactação"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
-#, fuzzy
 msgid ""
 "VRAM Compression: This is the most common compression mode for 3D assets. "
 "File on disk is reduced and video memory usage is also reduced considerably. "
@@ -22929,7 +22884,6 @@ msgid "Compress Lossy (WebP)"
 msgstr "Comprimir com perdas (WebP)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
-#, fuzzy
 msgid "Compress VRAM"
 msgstr "Comprimir com VRAM"
 
@@ -22955,7 +22909,6 @@ msgstr "Tamanho no disco"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
-#, fuzzy
 msgid "|bad| Large"
 msgstr "| mau | ampla"
 
@@ -22976,7 +22929,6 @@ msgid "|good| Small"
 msgstr "bom | Pequeno"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:62
-#, fuzzy
 msgid "Performance"
 msgstr "Performance"
 
@@ -23124,7 +23076,6 @@ msgstr ""
 "2D e 3D, mas geralmente é desativada ao criar jogos pixel-perfect."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:111
-#, fuzzy
 msgid "Mipmaps"
 msgstr "Mipmaps"
 
@@ -23166,7 +23117,6 @@ msgstr ""
 "(versões menores da textura são usadas para objetos mais distantes)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:124
-#, fuzzy
 msgid "Anisotropic"
 msgstr "Anisotrópico"
 
@@ -23196,7 +23146,6 @@ msgstr ""
 "textura será marcada como SRGB quando usada em canais de albedo."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:135
-#, fuzzy
 msgid "Process"
 msgstr "Processo"
 
@@ -23209,12 +23158,10 @@ msgstr ""
 "como textura."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:140
-#, fuzzy
 msgid "Fix Alpha Border"
 msgstr "Corrigir a borda de Alpha"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:142
-#, fuzzy
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
 "transparency to non transparency. It helps mitigate the outline effect when "
@@ -23237,7 +23184,6 @@ msgid "Premultiplied Alpha"
 msgstr "Alpha pré-multiplicado"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:152
-#, fuzzy
 msgid ""
 "An alternative to fix darkened borders is to use premultiplied alpha. By "
 "enabling this option, the texture will be converted to this format. Keep in "
@@ -23254,7 +23200,6 @@ msgid "HDR as sRGB"
 msgstr "HDR como sRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:158
-#, fuzzy
 msgid ""
 "A few HDR files are broken and contain sRGB color data. It is advised not to "
 "use them, but, in the worst-case scenario, toggling this option on will make "
@@ -23269,7 +23214,6 @@ msgid "Invert Color"
 msgstr "Inverter Cor"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:163
-#, fuzzy
 msgid ""
 "Reverses the image's color. This is useful, for example, to convert a height "
 "map generated by external programs to depth map to use with :ref:"
@@ -23322,7 +23266,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:20
-#, fuzzy
 msgid "Here is a comparative chart."
 msgstr "Aqui está uma tabela comparativa."
 
@@ -23392,7 +23335,6 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:40
 #: ../../docs/getting_started/workflow/best_practices/index.rst:2
-#, fuzzy
 msgid "Best practices"
 msgstr "Boas práticas"
 
@@ -23416,12 +23358,10 @@ msgstr ""
 "reverberação adicionada."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
-#, fuzzy
 msgid "Trimming"
 msgstr "Trimming"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:54
-#, fuzzy
 msgid ""
 "One issue that happens often is that the waveform is exported with long "
 "silences at the beginning and at the end. These are inserted by DAWs when "
@@ -23440,7 +23380,6 @@ msgstr ""
 "A importação de WAV com a opção de corte ativada resolve esse problema."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
-#, fuzzy
 msgid "Looping"
 msgstr "Looping"
 
@@ -23465,17 +23404,14 @@ msgstr ""
 "ativa looping para o entire sample when importing."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
-#, fuzzy
 msgid "Importing translations"
 msgstr "Importando traduções"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:7
-#, fuzzy
 msgid "Games and internationalization"
 msgstr "Jogos e internacionalização"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
-#, fuzzy
 msgid ""
 "The world is full of different markets and cultures and, to maximize "
 "profits™, nowadays games are released in several languages. To solve this, "
@@ -23487,20 +23423,19 @@ msgstr ""
 "moderna."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:14
-#, fuzzy
 msgid ""
 "In regular desktop or mobile applications, internationalized text is usually "
 "located in resource files (or .po files for GNU stuff). Games, however, can "
 "use several orders of magnitude more text than applications, so they must "
 "support efficient methods for dealing with loads of multilingual text."
 msgstr ""
-"In regular desktop or mobile applications, internationalized text is usually "
-"located in resource files (or .po files for GNU stuff). Games, however, can "
-"use several orders of magnitude more text than applications, so they must "
-"support efficient methods for dealing with loads of multilingual text."
+"Em aplicações desktop ou mobile regulares, internacionalização de texto é "
+"normalmente localizada em arquivos de recursos (ou arquivos .po para GNU). "
+"Jogos, no entanto, podem utilizar muito mais texto do que aplicações, então "
+"devem suportar métodos eficientes para lidar com grande quantidade de textos "
+"em múltiplos idiomas."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
-#, fuzzy
 msgid ""
 "There are two approaches to generate multilingual language games and "
 "applications. Both are based on a key:value system. The first is to use one "
@@ -23509,25 +23444,25 @@ msgid ""
 "if a game is released first in English, later in other languages, but a "
 "complete nightmare if working with many languages at the same time."
 msgstr ""
-"There are two approaches to generate multilingual language games and "
-"applications. Both are based on a key:value system. The first is to use one "
-"of the languages as the key (usually English), the second is to use a "
-"specific identifier. The first approach is probably easier for development "
-"if a game is released first in English, later in other languages, but a "
-"complete nightmare if working with many languages at the same time."
+"Existem duas abordagens para gerar jogos e aplicações multi-idiomas. Ambas "
+"são baseadas em um sistema de chave:valor. O primeiro é utilizar uma das "
+"linguagens como chave (normalmente Inglês), o segundo é usar um "
+"identificador específico. A primeira abordagem é provavelmente mais fácil "
+"para desenvolver se o jogo for lançado primeiro em inglês, e depois em "
+"outros idiomas, mas um completo pesadelo se estiver trabalhando com muitos "
+"idiomas ao mesmo tempo."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:28
-#, fuzzy
 msgid ""
 "In general, games use the second approach and a unique ID is used for each "
 "string. This allows you to revise the text while it is being translated to "
 "other languages. The unique ID can be a number, a string, or a string with a "
 "number (it's just a unique string anyway)."
 msgstr ""
-"In general, games use the second approach and a unique ID is used for each "
-"string. This allows you to revise the text while it is being translated to "
-"other languages. The unique ID can be a number, a string, or a string with a "
-"number (it's just a unique string anyway)."
+"Em geral, jogos usam a segunda abordagem e um ID único é utilizado para cada "
+"string. Isto permite que você revise o texto enquanto ele está sendo "
+"traduzido para outros idiomas. O ID único pode ser um número, uma string, ou "
+"uma string com número (que é uma string de qualquer forma)."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
 msgid ""
@@ -23537,12 +23472,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
-#, fuzzy
 msgid "Translation format"
 msgstr "Formato de tradução"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
-#, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
 "has a special importer that can read CSV files. All spreadsheet editors (be "
@@ -23551,12 +23484,12 @@ msgid ""
 "arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
 "as follows:"
 msgstr ""
-"To complete the picture and allow efficient support for translations, Godot "
-"has a special importer that can read CSV files. All spreadsheet editors (be "
-"it Libreoffice, Microsoft Office, Google Docs, etc.) can export to this "
-"format, so the only requirement is that the files have a special "
-"arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
-"as follows:"
+"Para permitir suporte eficiente a traduções, Godot possui um importador "
+"especial que pode ler arquivos CSV. Todos os editores de planilhas (seja ele "
+"LibreOffice, Microsoft Office, Google Docs, etc.) podem exportar para este "
+"formato, então o único requisito é que os arquivos tenham uma organização "
+"especial. Os arquivos CSV devem ser salvos com codificação UTF-8 e "
+"formatados como se segue:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
@@ -23564,22 +23497,18 @@ msgid "keys"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
-#, fuzzy
 msgid "<lang1>"
 msgstr "<lang1>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
-#, fuzzy
 msgid "<lang2>"
 msgstr "<lang2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
-#, fuzzy
 msgid "<langN>"
 msgstr "<langN>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
-#, fuzzy
 msgid "KEY1"
 msgstr "KEY1"
 
@@ -23587,17 +23516,14 @@ msgstr "KEY1"
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:33
-#, fuzzy
 msgid "string"
 msgstr "string"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
-#, fuzzy
 msgid "KEY2"
 msgstr "KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
-#, fuzzy
 msgid "KEYN"
 msgstr "KEYN"
 
@@ -23619,19 +23545,16 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 #: ../../docs/tutorials/i18n/locales.rst:178
-#, fuzzy
 msgid "en"
 msgstr "en"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 #: ../../docs/tutorials/i18n/locales.rst:220
-#, fuzzy
 msgid "es"
 msgstr "es"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 #: ../../docs/tutorials/i18n/locales.rst:372
-#, fuzzy
 msgid "ja"
 msgstr "ja"
 
@@ -23640,7 +23563,6 @@ msgid "GREET"
 msgstr "SAUDAÇÃO"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
-#, fuzzy
 msgid "Hello, friend!"
 msgstr "Olá, amigo!"
 
@@ -23650,7 +23572,6 @@ msgid "Hola, amigo!"
 msgstr "Hola, Amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
-#, fuzzy
 msgid "こんにちは"
 msgstr "こんにちは"
 
@@ -23659,17 +23580,14 @@ msgid "ASK"
 msgstr "PERGUNTAR"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
-#, fuzzy
 msgid "How are you?"
 msgstr "Como vai você?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
-#, fuzzy
 msgid "Cómo está?"
 msgstr "Cómo está?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
-#, fuzzy
 msgid "元気ですか"
 msgstr "元気ですか"
 
@@ -23683,12 +23601,10 @@ msgid "Goodbye"
 msgstr "Adeus"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
-#, fuzzy
 msgid "Adiós"
 msgstr "Adiós"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
-#, fuzzy
 msgid "さようなら"
 msgstr "さようなら"
 
@@ -23707,7 +23623,6 @@ msgid "CSV importer"
 msgstr "Por que importar?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:93
-#, fuzzy
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
@@ -23716,7 +23631,6 @@ msgstr ""
 "e gerar um ou mais arquivos de recurso de tradução compressas próximas a ele."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:96
-#, fuzzy
 msgid ""
 "Importing will also add the translation to the list of translations to load "
 "when the game runs, specified in project.godot (or the project settings). "
@@ -23748,14 +23662,12 @@ msgid "Godot scene importer"
 msgstr "Godot-Blender-Exporter"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:9
-#, fuzzy
 msgid ""
 "When dealing with 3D assets, Godot has a flexible and configurable importer."
 msgstr ""
 "Ao lidar com assets 3D, Godot tem um flexível e configurável importador."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:11
-#, fuzzy
 msgid ""
 "Godot works with *scenes*. This means that the entire scene being worked on "
 "in your favorite 3D DCC will be transferred as close as possible."
@@ -24021,7 +23933,6 @@ msgid "Custom Script"
 msgstr "Script Personalizado"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
-#, fuzzy
 msgid ""
 "A special script to process the whole scene after import can be provided. "
 "This is great for post processing, changing materials, doing funny stuff "
@@ -24108,7 +24019,6 @@ msgid "Keep On Reimport"
 msgstr "Manter ao Reimportar"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:172
-#, fuzzy
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
 "edited ones and ignore the ones coming from the source scene. This option is "
@@ -25708,7 +25618,6 @@ msgid "Installing the package"
 msgstr "Instalando o pacote"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:73
-#, fuzzy
 msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
@@ -25717,7 +25626,6 @@ msgstr ""
 "simplesmente dando dois cliques no arquivo ``.appx`` do Windows Explorer."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:76
-#, fuzzy
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
@@ -25725,7 +25633,6 @@ msgstr ""
 "Também é possível instalar usando o ``Add-AppxPackage`` PowerShell cmdlet."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:78
-#, fuzzy
 msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."
@@ -25734,7 +25641,6 @@ msgstr ""
 "número de versão no novo pacote ou primeiro desinstalar o pacote anterior."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:4
-#, fuzzy
 msgid "Exporting for Android"
 msgstr "Exportando para Android"
 
@@ -30161,7 +30067,6 @@ msgid "2D movement overview"
 msgstr "Visão geral de movimento 2D"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:9
-#, fuzzy
 msgid ""
 "Every beginner has been there: \"How do I move my character?\" Depending on "
 "the style of game you're making, you may have special requirements, but in "
@@ -44717,7 +44622,6 @@ msgstr ""
 "`CollisionObject2D <class_CollisionObject2D>`:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:35
-#, fuzzy
 msgid ":ref:`Area2D <class_Area2D>`"
 msgstr ":ref:`Area2D <class_Area2D>`"
 
@@ -44743,7 +44647,6 @@ msgstr ""
 "<class_PhysicsBody2D>`:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:43
-#, fuzzy
 msgid ":ref:`StaticBody2D <class_StaticBody2D>`"
 msgstr ":ref:`StaticBody2D <class_StaticBody2D>`"
 
@@ -44760,7 +44663,6 @@ msgstr ""
 "necessitam de ter qualquer comportamento dinâmico."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:48
-#, fuzzy
 msgid ":ref:`RigidBody2D <class_RigidBody2D>`"
 msgstr ":ref:`RigidBody2D <class_RigidBody2D>`"
 
@@ -44777,7 +44679,6 @@ msgstr ""
 "sobre o uso de corpos rígidos. <doc_rigid_body>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:52
-#, fuzzy
 msgid ":ref:`KinematicBody2D <class_KinematicBody2D>`"
 msgstr ":ref:`KinematicBody2D <class_KinematicBody2D>`"
 
@@ -44870,7 +44771,6 @@ msgid "Collision layers and masks"
 msgstr "Camadas e Máscaras de colisão"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:92
-#, fuzzy
 msgid ""
 "One of the most powerful, but frequently misunderstood, collision features "
 "is the collision layer system. This system allows you to build up complex "
@@ -44878,18 +44778,17 @@ msgid ""
 "and **masks**. Each ``CollisionObject2D`` has 20 different physics layers it "
 "can interact with."
 msgstr ""
-"Uma das funcionalidades de colisão mais poderosas e frequentemente "
-"incompreendidas é o sistema de camadas de colisão. Esse sistema lhe permite "
-"construir interações complexas entre uma variedade de objetos. Os conceitos "
-"chaves são **camadas** e **máscaras**. Todo ``CollisionObject2D`` tem 20 "
-"camadas de física diferentes com as quais ele pode interagir."
+"Um dos recursos mais poderosos porém pouco compreendida é o sistema de "
+"camadas de colisão. Esse sistema lhe permite construir interações complexas "
+"entre uma variedade de objetos. Os conceitos chaves são **camadas** e "
+"**máscaras**. Todo ``CollisionObject2D`` tem 20 camadas de física diferentes "
+"com as quais ele pode interagir."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:98
 msgid "Let's look at each of the properties in turn:"
 msgstr "Vamos olhar cada propriedade por vez:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:102
-#, fuzzy
 msgid "collision_layer"
 msgstr "collision_layer"
 
@@ -44902,7 +44801,6 @@ msgstr ""
 "corpos estão na camada ``1``."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:107
-#, fuzzy
 msgid "collision_mask"
 msgstr "collision_mask"
 
@@ -44965,7 +44863,6 @@ msgstr ""
 "isto:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:133
-#, fuzzy
 msgid "Area2D"
 msgstr "Area2D"
 
@@ -45008,7 +44905,6 @@ msgid "By default, areas also receive mouse and touchscreen input."
 msgstr "Por padrão, áreas também recebem entradas de mouse e tela de toque."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:151
-#, fuzzy
 msgid "StaticBody2D"
 msgstr "StaticBody2D"
 
@@ -45052,7 +44948,6 @@ msgid "Walls and other obstacles"
 msgstr "Paredes e outros obstáculos"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:168
-#, fuzzy
 msgid "RigidBody2D"
 msgstr "RigidBody2D"
 
@@ -45255,7 +45150,6 @@ msgstr ""
 "<class_RigidBody2D>` para a lista de sinais disponíveis."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:286
-#, fuzzy
 msgid "KinematicBody2D"
 msgstr "KinematicBody2D"
 
@@ -45903,7 +45797,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:158
-#, fuzzy
 msgid ""
 "See :ref:`doc_2d_movement` for examples of implementing 2D movement schemes."
 msgstr ""
@@ -46402,6 +46295,9 @@ msgid ""
 "Make sure to set up your collision layers and masks properly so the "
 "``KinematicBody``'s capsule doesn't get in the way of the physics simulation:"
 msgstr ""
+"Tenha certeza que as propriedades físicas de mascaras e camadas estejam "
+"corretas para que a capsula do ``KinematicBody`` não atrapalhe as simulações "
+"físicas:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
 msgid "For more information, read :ref:`doc_physics_introduction`"
@@ -46727,12 +46623,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:21
-#, fuzzy
 msgid "Coordinate systems (2D)"
 msgstr "Sistema de Coordenadas (2D)"
 
 #: ../../docs/tutorials/math/vector_math.rst:23
-#, fuzzy
 msgid ""
 "In 2D space, coordinates are defined using a horizontal axis (``x``) and a "
 "vertical axis (``y``). A particular position in 2D space is written as a "
@@ -46743,7 +46637,6 @@ msgstr ""
 "um par de valores como ``(4, 3)``."
 
 #: ../../docs/tutorials/math/vector_math.rst:29
-#, fuzzy
 msgid ""
 "If you're new to computer graphics, it might seem odd that the positive "
 "``y`` axis points **downwards** instead of upwards, as you probably learned "
@@ -53270,7 +53163,6 @@ msgid "Interlingua (France)"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:352
-#, fuzzy
 msgid "id"
 msgstr "id"
 
@@ -84253,7 +84145,6 @@ msgstr ""
 "orientações importantes para seguir."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:394
-#, fuzzy
 msgid ""
 "First, you should always be using the default editor theme and text when "
 "taking screenshots."
@@ -84262,7 +84153,6 @@ msgstr ""
 "quando estiver tirando screenshots."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:396
-#, fuzzy
 msgid ""
 "For 3D screenshots use 4xMSAA, enable anisotropic filtering on the projects "
 "textures, and set the anisotropic filter quality to 16x in Project Settings"
@@ -84272,7 +84162,6 @@ msgstr ""
 "configurações do projeto"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:399
-#, fuzzy
 msgid "Screenshot size should not exceed 1920x1080."
 msgstr "O tamanho da screenshot não deve ser maior que 1920x1080."
 
@@ -84304,7 +84193,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:9
-#, fuzzy
 msgid ""
 "But it's incomplete. Some methods, variables and signals lack descriptions. "
 "Others changed with recent releases and need updates. The developers can't "
@@ -84317,7 +84205,6 @@ msgstr ""
 "para contribuir."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:12
-#, fuzzy
 msgid ""
 "**Important:** If you are planning to make larger changes or a more "
 "substantial contribution, it is usually a good idea to create an issue (or a "
@@ -84350,7 +84237,6 @@ msgid "There are 5 steps to update the class reference (full guide below):"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:25
-#, fuzzy
 msgid "Fork `Godot's repository <https://github.com/godotengine/godot>`_"
 msgstr ""
 "Dê um Fork `Repositório do  Godot<https://github.com/godotengine/godot>`_"
@@ -85016,7 +84902,6 @@ msgid "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
 msgstr "`Grupo do Facebook <https://www.facebook.com/groups/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:48
-#, fuzzy
 msgid "`Twitter (also, #godotengine) <https://twitter.com/godotengine>`_"
 msgstr "`Twitter (also, #godotengine) <https://twitter.com/godotengine>`_"
 
@@ -85025,7 +84910,6 @@ msgid "`Reddit <https://www.reddit.com/r/godot>`_"
 msgstr ""
 
 #: ../../docs/community/channels.rst:50
-#, fuzzy
 msgid "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
 msgstr "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
 
