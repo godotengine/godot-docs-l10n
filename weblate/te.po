@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: 2019-01-20 08:54+0000\n"
 "Last-Translator: suresh p <suresh9247@gmail.com>\n"
 "Language-Team: Telugu <https://hosted.weblate.org/projects/godot-engine/"
@@ -207,13 +207,12 @@ msgstr "గురించి"
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:7
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:7
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:7
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:7
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:11
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:7
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:7
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:7
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:7
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:7
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:7
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:7
 #: ../../docs/development/cpp/custom_audiostreams.rst:7
 #: ../../docs/development/cpp/custom_godot_servers.rst:7
@@ -2416,7 +2415,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:260
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:272
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:329
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:86
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:101
 msgid "GDScript"
 msgstr ""
 
@@ -3094,7 +3093,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:4
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1287
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:462
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:694
 #: ../../docs/development/cpp/object_class.rst:211
@@ -9448,9 +9447,9 @@ msgstr ""
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:21
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:451
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:497
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:561
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:467
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:513
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:577
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:15
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
@@ -9464,7 +9463,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:92
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:158
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:218
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:240
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:92
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:101
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:110
@@ -10149,7 +10148,7 @@ msgid "``{file}:{line}``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:91
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
 msgid "JetBrains Rider"
 msgstr ""
 
@@ -10158,7 +10157,7 @@ msgid "``--line {line} {file}``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:88
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:89
 #: ../../docs/development/cpp/configuring_an_ide.rst:269
 msgid "Visual Studio Code"
 msgstr ""
@@ -12674,23 +12673,29 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:208
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:233
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:253
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:279
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:568
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:146
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:199
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:223
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:270
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:300
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:325
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:345
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:371
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:660
 msgid "**Good**:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:135
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:188
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:215
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:240
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:260
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:289
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:576
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:169
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:210
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:229
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:280
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:307
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:332
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:352
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:381
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
 msgid "**Bad**:"
 msgstr ""
 
@@ -12700,274 +12705,297 @@ msgid ""
 "blocks."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:144
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:143
+msgid ""
+"Exceptions to this rule are arrays, dictionaries, and enums. Use a single "
+"indentation level to distinguish continuation lines:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
+msgid "Trailing comma"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
+msgid ""
+"Use a trailing comma on the last line in arrays, dictionaries, and enums. "
+"This results in easier refactoring and better diffs in version control as "
+"the last line doesn't need to be modified when adding new elements."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:221
+msgid ""
+"Trailing commas are unnecessary in single-line lists, so don't add them in "
+"this case."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:236
 msgid "Blank lines"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:146
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
 msgid "Surround functions and class definitions with two blank lines:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:161
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:253
 msgid "Use one blank line inside functions to separate logical sections."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:164
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:256
 msgid "Line length"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:166
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
 msgid "Keep individual lines of code under 100 characters."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:168
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:260
 msgid ""
 "If you can, try to keep lines under 80 characters. This helps to read the "
 "code on small displays and with two scripts opened side-by-side in an "
 "external text editor. For example, when looking at a differential revision."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:173
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:265
 msgid "One statement per line"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:175
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:267
 msgid ""
 "Never combine multiple statements on a single line. No, C programmers, not "
 "even with a single line conditional statement."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:196
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:288
 msgid "The only exception to that rule is the ternary operator:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:203
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:295
 msgid "Avoid unnecessary parentheses"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:205
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
 msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations, they only reduce readability."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:223
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:315
 msgid "Boolean operators"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:225
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
 msgid ""
 "Prefer the plain English versions of boolean operators, as they are the most "
 "accessible:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:227
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
 msgid "Use ``and`` instead of ``&&``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:228
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:320
 msgid "Use ``or`` instead of ``||``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:230
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
 msgid ""
 "You may also use parentheses around boolean operators to clear any "
 "ambiguity. This can make long expressions easier to read."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:248
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:340
 msgid "Comment spacing"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:250
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:342
 msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:269
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:361
 msgid ""
 "In the script editor, to toggle the selected code commented, press "
 "<kbd>Ctrl</kbd> <kbd>K</kbd>. This feature adds a single # sign at the start "
 "of the selected lines."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:274
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:366
 msgid "Whitespace"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:276
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 msgid ""
 "Always use one space around operators and after commas. Also, avoid extra "
 "spaces in dictionary references and function calls."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:299
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:391
 msgid "Don't use spaces to align expressions vertically:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:308
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:400
 msgid "Quotes"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:310
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
 msgid ""
 "Use double quotes unless single quotes make it possible to escape fewer "
 "characters in a given string. See the examples below:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:330
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:197
 msgid "Naming conventions"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:332
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, leading to "
 "inconsistent code."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:337
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:429
 msgid "Classes and nodes"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:339
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
 msgid "Use PascalCase for class and node names:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:345
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:437
 msgid "Also use PascalCase when loading a class into a constant or a variable:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:352
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:444
 msgid "Functions and variables"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:446
 msgid "Use snake\\_case to name functions and variables:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:361
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:453
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods functions the user must "
 "override, private functions, and private variables:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:372
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:464
 msgid "Use the past tense to name signals:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:380
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:472
 msgid "Constants and enums"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:382
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:474
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:389
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:481
 msgid ""
 "Use PascalCase for enum *names* and CONSTANT\\_CASE for their members, as "
 "they are constants:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:403
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:495
 msgid "Code order"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:405
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:497
 msgid ""
 "This first section focuses on code order. For formatting, see :ref:"
 "`formatting`. For naming conventions, see :ref:`naming_conventions`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:408
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:500
 msgid "We suggest to organize GDScript code this way:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:523
 msgid ""
 "We optimized the order to make it easy to read the code from top to bottom, "
 "to help developers reading the code for the first time understand how it "
 "works, and to avoid errors linked to the order of variable declarations."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:435
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:527
 msgid "This code order follows four rules of thumb:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:437
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:529
 msgid "Properties and signals come first, followed by methods."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:438
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:530
 msgid "Public comes before private."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:439
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:531
 msgid "Virtual callbacks come before the class's interface."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:440
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:532
 msgid ""
 "The object's construction and initialization functions, ``_init`` and "
 "``_ready``, come before functions that modify the object at runtime."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:445
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:537
 msgid "Class declaration"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:447
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:539
 msgid ""
 "If the code is meant to run in the editor, place the ``tool`` keyword on the "
 "first line of the script."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:450
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:542
 msgid ""
 "Follow with the `class_name` if necessary. You can turn a GDScript file into "
 "a global type in your project using this feature. For more information, see :"
 "ref:`doc_gdscript`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:454
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:546
 msgid "Then, add the `extends` keyword if the class extends a built-in type."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:456
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:548
 msgid ""
 "Following that, you should have the class's optional docstring as comments. "
 "You can use that to explain the role of your class to your teammates, how it "
 "works, and how other developers should use it, for example."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:468
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:560
 msgid "Signals and properties"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:470
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:562
 msgid ""
 "Write signal declarations, followed by properties, that is to say, member "
 "variables, after the docstring."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:473
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:565
 msgid ""
 "Enums should come after signals, as you can use them as export hints for "
 "other properties."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:476
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:568
 msgid ""
 "Then, write constants, exported variables, public, private, and onready "
 "variables, in that order."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:499
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:591
 msgid ""
 "The GDScript compiler evaluates onready variables right before the "
 "``_ready`` callback. You can use that to cache node dependencies, that is to "
@@ -12975,67 +13003,67 @@ msgid ""
 "the example above shows."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:506
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:598
 msgid "Methods and static functions"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:508
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:600
 msgid "After the class's properties come the methods."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:510
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:602
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
 "Godot calls when it adds a node to the scene tree."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:514
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:517
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:609
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
 "and interactions with the game engine."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:521
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:558
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:650
 msgid "Static typing"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:560
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:652
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:563
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:655
 msgid "Type hints"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:565
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:657
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:584
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:676
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:590
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:682
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr ""
@@ -14990,34 +15018,44 @@ msgid ""
 "currently supports the following external editors:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:89
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:88
+msgid "Visual Studio 2019"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:90
 #, fuzzy
 msgid "MonoDevelop"
 msgstr "అభివృద్ధి పరచడం"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:90
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:91
 msgid "Visual Studio for Mac"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:93
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:98
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
+msgid ""
+"If you are using Visual Studio 2019, you must follow the instructions found "
+"in the \"Configure VS2019 for Debugging\" section below."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:103
 msgid "Creating a C# script"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:100
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:105
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting ``Attach script`` in the context menu of a node in "
 "your scene:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:105
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:110
 msgid ""
 "Note that while some specifics change, most concepts work the same when "
 "using C# for scripting. If you're new to Godot, you may want to follow the "
@@ -15026,11 +15064,11 @@ msgid ""
 "easily from GDScript."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:112
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:117
 msgid "Project setup and workflow"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:114
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:119
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
 "for your Godot project. This includes generating a C# solution (``.sln``) "
@@ -15042,7 +15080,7 @@ msgid ""
 "let it regenerate."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:123
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
 msgid ""
 "Note that currently, there are some issues where Godot and the C# project "
 "don't stay in sync; if you delete, rename or move a C# script, the change "
@@ -15050,7 +15088,7 @@ msgid ""
 "have to edit the C# project file manually."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:133
 msgid ""
 "For example, if you created a script (e.g. ``Test.cs``) and delete it in "
 "Godot, compilation will fail because the missing file is still expected to "
@@ -15059,25 +15097,25 @@ msgid ""
 "included like the following:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:142
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
 msgid ""
 "Simply remove that line and your project should build correctly again. Same "
 "for renaming and moving things, simply rename and move them in the project "
 "file if needed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:152
 #: ../../docs/tutorials/io/background_loading.rst:87
 #: ../../docs/tutorials/misc/pausing_games.rst:80
 msgid "Example"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:154
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:176
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:181
 msgid ""
 "As you can see, functions normally in global scope in GDScript like Godot's "
 "``print`` function are available in the ``GD`` class which is part of the "
@@ -15086,7 +15124,7 @@ msgid ""
 "`@GlobalScope <class_@globalscope>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:183
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:188
 msgid ""
 "Keep in mind that the class you wish to attach to your node should have the "
 "same name as the ``.cs`` file. Otherwise, you will get the following error "
@@ -15094,11 +15132,11 @@ msgid ""
 "res://XXX.cs\"*"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:189
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
 msgid "General differences between C# and GDScript"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:191
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:196
 msgid ""
 "The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++. "
 "Where possible, fields and getters/setters have been converted to "
@@ -15106,15 +15144,15 @@ msgid ""
 "reasonably possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:195
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
 msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:198
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:203
 msgid "Current gotchas and known issues"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:205
 msgid ""
 "As C# support is quite new in Godot, there are some growing pains and things "
 "that need to be ironed out. Below is a list of the most important issues you "
@@ -15123,25 +15161,25 @@ msgid ""
 "godotengine/godot/labels/topic%3Amono>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:206
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:211
 msgid ""
 "As explained above, the C# project isn't always kept in sync automatically "
 "when things are deleted, renamed or moved in Godot (`#12917 <https://github."
 "com/godotengine/godot/issues/12917>`_)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:209
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:214
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:210
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:215
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:217
 msgid ""
 "Exporting Mono projects is only supported for desktop platforms (Linux, "
 "Windows and macOS). Android, iOS, HTML5 and UWP are not currently supported "
@@ -15151,13 +15189,13 @@ msgid ""
 "godotengine/godot/issues/20271>`_)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:218
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:223
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:220
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:225
 msgid ""
 "There are some methods such as ``Get()``/``Set()``, ``Call()``/"
 "``CallDeferred()`` and signal connection method ``Connect()`` that rely on "
@@ -15167,11 +15205,11 @@ msgid ""
 "can use any custom properties or methods without this limitation."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:228
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:233
 msgid "Performance of C# in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:230
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:235
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
 "bunnymark>`_, the performance of C# in Godot — while generally in the same "
@@ -15182,11 +15220,11 @@ msgid ""
 "when talking to Godot."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:238
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:243
 msgid "Using NuGet packages in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:240
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:245
 msgid ""
 "`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
 "Godot, as with any C# project. Many IDEs are able to add packages directly. "
@@ -15194,29 +15232,96 @@ msgid ""
 "csproj`` file located in the project root:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:255
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:260
 msgid ""
 "Whenever packages are added or modified, run ``nuget restore`` in the root "
 "of the project directory. To ensure that NuGet packages will be available "
 "for msbuild to use, run:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:264
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:269
 msgid "Profiling your C# code"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:266
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:271
 msgid ""
 "`Mono log profiler <https://www.mono-project.com/docs/debug+profile/profile/"
 "profiler/>`_ is available via `this PR <https://github.com/godotengine/godot/"
-"pull/26513>`_"
+"pull/26513>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:267
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:272
 msgid ""
 "External Mono profiler like `JetBrains dotTrace <https://www.jetbrains.com/"
 "profiler/>`_ can be used as described `here <https://github.com/godotengine/"
 "godot/pull/34382>`_."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:275
+msgid "Configuring VS 2019 for debugging"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:279
+msgid ""
+"Godot has built-in support for workflows involving several popular C# IDEs. "
+"Built-in support for Visual Studio will be including in future versions, but "
+"in the meantime, the steps below can let you configure VS 2019 for use with "
+"Godot C# projects."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:284
+msgid ""
+"Install VS 2019 with ``.NET desktop development`` and ``Desktop development "
+"with C++`` workloads selected."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:285
+msgid ""
+"**Ensure that you do not have Xamarin installed.** Do not choose the "
+"``Mobile development with .NET`` workload. Xamarin changes the DLLs used by "
+"MonoDebugger, which breaks debugging."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:286
+msgid ""
+"Install the `VSMonoDebugger extension <https://marketplace.visualstudio.com/"
+"items?itemName=GordianDotNet.VSMonoDebugger0d62>`_."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:287
+msgid "In VS 2019 --> Extensions --> Mono --> Settings:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:289
+msgid "Select ``Debug/Deploy to local Windows``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:290
+msgid "Leave ``Local Deploy Path`` blank."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:291
+msgid ""
+"Set the ``Mono Debug Port`` to the port in Godot --> Project --> Project "
+"Settings --> Mono --> Debugger Agent."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:292
+msgid ""
+"Also select ``Wait for Debugger`` in the Godot Mono options. `This Godot "
+"Addon <https://godotengine.org/asset-library/asset/435>`_ may be helpful."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:294
+msgid ""
+"Run the game in Godot. It should hang at the Godot splash screen while it "
+"waits for your debugger to attach."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:295
+msgid ""
+"In VS 2019, open your project and choose Extensions --> Mono --> Attach to "
+"Mono Debugger."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
@@ -15554,8 +15659,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:150
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 #: ../../docs/development/cpp/core_types.rst:174
 msgid "String"
 msgstr ""
@@ -19878,16 +19983,93 @@ msgid "Once that is configured, everything is ready to export to Android!"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
-msgid "Exporting for Google Play Store"
+msgid "Providing launcher icons"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
+msgid ""
+"Launcher icons are used by Android launcher apps to represent your "
+"application to users. Godot only requires high-resolution icons (for "
+"``xxxhdpi`` density screens) and will automatically generate lower-"
+"resolution variants."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:68
+msgid "There are two types of icons required by Godot:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:70
+msgid ""
+"**Main Icon:**: The \"classic\" icon. This will be used on all Android "
+"versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:71
+msgid ""
+"**Adaptive Icons:** Starting from Android 8 (inclusive), `Adaptive Icons "
+"<https://developer.android.com/guide/practices/ui_guidelines/"
+"icon_design_adaptive>`_ were introduced. Applications will need to include "
+"separate background and foreground icons to have a native look. The user's "
+"launcher application will control the icon's animation and masking. Must be "
+"at least 432×432 px."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
+msgid ""
+"It's important to adhere to some rules when designing adaptive icons. "
+"`Google Design has provided a nice article <https://medium.com/google-design/"
+"designing-adaptive-icons-515af294c783>`_ that helps to understand those "
+"rules and some of the capabilities of adaptive icons."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:75
+msgid ""
+"The most important adaptive icon design rule is to have your icon critical "
+"elements inside the safe zone: a centered circle with a radius of 66dp (264 "
+"pixels on ``xxxhdpi``) to avoid being clipped by the launcher."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:77
+msgid ""
+"If you don't provide some of the requested icons, Godot will replace them "
+"using a fallback chain, trying the next in line when the current one fails:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
+msgid ""
+"**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
+msgid ""
+"**Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon "
+"-> Project icon -> Default Godot foreground icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
+msgid ""
+"**Adaptive Icon Background:** Provided background icon -> Default Godot "
+"background icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:83
+msgid ""
+"It's highly recommended to provide all of the requested icons, and at least "
+"with the specified resolutions. Only this way your application will look "
+"great on all the Android devices and versions."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
+msgid "Exporting for Google Play Store"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95
 msgid ""
 "This keystore and key are used to verify your developer identity, remember "
 "the password and keep it in a safe place! Use Google's Android Developer "
@@ -19895,42 +20077,42 @@ msgid ""
 "studio/publish/app-signing>`__."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:98
 msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
 msgid "**Release:** Enter the path to the keystore file you just generated."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:103
 msgid "**Release User:** Replace with the key alias."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:104
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
 "key password currently have to be the same."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:106
 msgid ""
 "**Your export_presets.cfg file now contains sensitive information.** If you "
 "use a version control system, you should remove it from public repositories "
 "and add it to your ``.gitignore`` file or equivalent."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:110
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while choosing "
 "the APK's name."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:93
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:115
 msgid "Optimizing the APK size"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:117
 msgid ""
 "By default, the APK will contain native libraries for both ARMv7 and ARMv8 "
 "architectures. This increases its size significantly. To create a smaller "
@@ -19940,7 +20122,7 @@ msgid ""
 "run on ARMv8 devices, but the opposite is not true."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:124
 msgid ""
 "Since August 2019, Google Play requires all applications to be available in "
 "64-bit form. This means you cannot upload an APK that contains *just* an "
@@ -19951,7 +20133,7 @@ msgid ""
 "devices in use today."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:109
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:131
 msgid ""
 "You can optimize the size further by compiling an Android export template "
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "
@@ -23357,11 +23539,11 @@ msgstr ""
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 #: ../../docs/tutorials/io/data_paths.rst:51
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:21
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:497
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:513
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:92
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:158
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:218
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:240
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:92
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:101
@@ -43090,7 +43272,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/2d_skeletons.rst:84
 msgid ""
 "After moving the polygon, remember to update the UV by selecting Edit -> "
-"Polygon -> UV” in the Polygon 2D UV Editor."
+"\"Polygon -> UV\" in the Polygon 2D UV Editor."
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:89
@@ -43274,15 +43456,11 @@ msgid ""
 "get the results you like."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:231
+#: ../../docs/tutorials/animation/2d_skeletons.rst:230
 msgid ""
 "**Note:** Don't forget that your newly added internal vertices also need "
-"weight"
-msgstr ""
-
-#: ../../docs/tutorials/animation/2d_skeletons.rst:231
-msgid ""
-"painting! Go to the *Bones* section again to assign them to the right bones."
+"weight painting! Go to the *Bones* section again to assign them to the right "
+"bones."
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:233
@@ -51038,7 +51216,7 @@ msgid "Void datatype, useful only for functions that return nothing."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:25
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:522
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:538
 msgid "**bool**"
 msgstr ""
 
@@ -51071,7 +51249,7 @@ msgid "Four-component vector of booleans."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:33
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:524
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:540
 msgid "**int**"
 msgstr ""
 
@@ -51136,7 +51314,7 @@ msgid "Four-component vector of unsigned integers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:49
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:526
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:542
 msgid "**float**"
 msgstr ""
 
@@ -51145,7 +51323,7 @@ msgid "Floating point scalar."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:51
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:528
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:544
 msgid "**vec2**"
 msgstr ""
 
@@ -51154,7 +51332,7 @@ msgid "Two-component vector of floating point values."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:53
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:530
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:546
 msgid "**vec3**"
 msgstr ""
 
@@ -51163,8 +51341,8 @@ msgid "Three-component vector of floating point values."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:55
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:499
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:532
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:515
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:548
 msgid "**vec4**"
 msgstr ""
 
@@ -51189,8 +51367,8 @@ msgid "3x3 matrix, in column major order."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:61
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:534
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:536
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:550
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:552
 msgid "**mat4**"
 msgstr ""
 
@@ -51199,12 +51377,12 @@ msgid "4x4 matrix, in column major order."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:63
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:503
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:505
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:507
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:509
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:511
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:513
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:519
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:521
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
 msgid "**sampler2D**"
 msgstr ""
 
@@ -51388,7 +51566,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:193
 msgid ""
 "Arrays are containers for multiple variables of a similar type. Note: As of "
-"Godot 3.2, only local arrays have been implemented."
+"Godot 3.2, only local and varying arrays have been implemented."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:197
@@ -51799,48 +51977,52 @@ msgid ""
 "and the value is interpolated for every pixel in the fragment processor."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:429
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:428
+msgid "Varying can also be an array:"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:445
 msgid "Interpolation qualifiers"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:431
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:447
 msgid ""
 "Certain values are interpolated during the shading pipeline. You can modify "
 "how these interpolations are done by using *interpolation qualifiers*."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:448
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:464
 msgid "There are two possible interpolation qualifiers:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:451
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:467
 msgid "Qualifier"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:453
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:469
 msgid "**flat**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:453
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:469
 msgid "The value is not interpolated."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:455
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:471
 msgid "**smooth**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:455
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:471
 msgid ""
 "The value is interpolated in a perspective-correct fashion. This is the "
 "default."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:460
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:476
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:192
 msgid "Uniforms"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:462
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:478
 msgid ""
 "Passing values to shaders is possible. These are global to the whole shader "
 "and are called *uniforms*. When a shader is later assigned to a material, "
@@ -51848,939 +52030,939 @@ msgid ""
 "written from within the shader."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:472
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:488
 msgid ""
 "You can set uniforms in the editor in the material. Or you can set them "
 "through GDScript:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:478
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:494
 msgid ""
 "The first argument to ``set_shader_param`` is the name of the uniform in the "
 "shader. It must match *exactly* to the name of the uniform in the shader or "
 "else it will not be recognized."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:481
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:497
 msgid ""
 "Any GLSL type except for *void* can be a uniform. Additionally, Godot "
 "provides optional shader hints to make the compiler understand for what the "
 "uniform is used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:492
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:508
 msgid ""
 "It's important to understand that textures that are supplied as color "
 "require hints for proper sRGB->linear conversion (i.e. ``hint_albedo``), as "
 "Godot’s 3D engine renders in linear color space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:494
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:510
 msgid "Full list of hints below:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:497
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:513
 msgid "Hint"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:499
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:515
 msgid "hint_color"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:499
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:515
 msgid "Used as color"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:501
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:517
 msgid "**int, float**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:501
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:517
 msgid "hint_range(min,max [,step] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:501
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:517
 msgid "Used as range (with min/max/step)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:503
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:519
 msgid "hint_albedo"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:503
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:519
 msgid "Used as albedo color, default white"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:505
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:521
 msgid "hint_black_albedo"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:505
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:521
 msgid "Used as albedo color, default black"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:507
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
 msgid "hint_normal"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:507
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
 msgid "Used as normalmap"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:509
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
 msgid "hint_white"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:509
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
 msgid "As value, default to white."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:511
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
 msgid "hint_black"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:511
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
 msgid "As value, default to black"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:513
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
 msgid "hint_aniso"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:513
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
 msgid "As flowmap, default to right."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:516
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:532
 msgid ""
 "GDScript uses different variable types than GLSL does, so when passing "
 "variables from GDScript to shaders, Godot converts the type automatically. "
 "Below is a table of the corresponding types:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:520
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:536
 msgid "GDScript type"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:520
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:536
 msgid "GLSL type"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:528
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:544
 msgid "**Vector2**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:530
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:546
 msgid "**Vector3**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:532
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:548
 msgid "**Color**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:534
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:550
 msgid "**Transform**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:536
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:552
 msgid "**Transform2D**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:539
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:555
 msgid ""
 "Be careful when setting shader uniforms from GDScript, no error will be "
 "thrown if the type does not match. Your shader will just exhibit undefined "
 "behaviour."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:542
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:558
 msgid "Uniforms can also be assigned default values:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:552
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:568
 msgid "Built-in functions"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:554
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:570
 msgid ""
 "A large number of built-in functions are supported, conforming to GLSL ES "
 "3.0. When vec_type (float), vec_int_type, vec_uint_type, vec_bool_type "
 "nomenclature is used, it can be scalar or vector."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:557
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:573
 msgid ""
 "For a list of the functions that are not available in the GLES2 backend, "
 "please see the :ref:`Differences between GLES2 and GLES3 doc "
 "<doc_gles2_gles3_differences>`."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:561
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:577
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:135
 msgid "Function"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:563
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:579
 msgid "vec_type **radians** ( vec_type degrees )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:563
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:579
 msgid "Convert degrees to radians"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:565
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:581
 msgid "vec_type **degrees** ( vec_type radians )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:565
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:581
 msgid "Convert radians to degrees"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:567
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:583
 msgid "vec_type **sin** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:567
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:583
 msgid "Sine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:569
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
 msgid "vec_type **cos** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:569
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
 msgid "Cosine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:571
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:587
 msgid "vec_type **tan** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:571
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:587
 msgid "Tangent"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:573
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:589
 msgid "vec_type **asin** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:573
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:589
 msgid "Arc-Sine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:575
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:591
 msgid "vec_type **acos** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:575
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:591
 msgid "Arc-Cosine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:577
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:593
 msgid "vec_type **atan** ( vec_type y_over_x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:577
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:593
 msgid "Arc-Tangent"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:579
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:595
 msgid "vec_type **atan** ( vec_type y, vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:579
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:595
 msgid "Arc-Tangent to convert vector to angle"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:581
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:597
 msgid "vec_type **sinh** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:581
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:597
 msgid "Hyperbolic-Sine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:583
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:599
 msgid "vec_type **cosh** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:583
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:599
 msgid "Hyperbolic-Cosine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
 msgid "vec_type **tanh** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
 msgid "Hyperbolic-Tangent"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:587
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
 msgid "vec_type **asinh** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:587
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
 msgid "Inverse-Hyperbolic-Sine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:589
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:605
 msgid "vec_type **acosh** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:589
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:605
 msgid "Inverse-Hyperbolic-Cosine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:591
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:607
 msgid "vec_type **atanh** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:591
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:607
 msgid "Inverse-Hyperbolic-Tangent"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:593
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:609
 msgid "vec_type **pow** ( vec_type x, vec_type y )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:593
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:609
 msgid "Power"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:595
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:611
 msgid "vec_type **exp** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:595
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:611
 msgid "Base-e Exponential"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:597
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:613
 msgid "vec_type **exp2** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:597
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:613
 msgid "Base-2 Exponential"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:599
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:615
 msgid "vec_type **log** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:599
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:615
 msgid "Natural Logarithm"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:617
 msgid "vec_type **log2** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:617
 msgid "Base-2 Logarithm"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:619
 msgid "vec_type **sqrt** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:619
 msgid "Square Root"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:605
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:621
 msgid "vec_type **inversesqrt** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:605
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:621
 msgid "Inverse Square Root"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:607
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:623
 msgid "vec_type **abs** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:607
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:609
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:623
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:625
 msgid "Absolute"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:609
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:625
 msgid "ivec_type **abs** ( ivec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:611
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:627
 msgid "vec_type **sign** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:611
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:613
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:627
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:629
 msgid "Sign"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:613
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:629
 msgid "ivec_type **sign** ( ivec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:615
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:631
 msgid "vec_type **floor** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:615
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:631
 msgid "Floor"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:617
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:633
 msgid "vec_type **round** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:617
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:633
 msgid "Round"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:619
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:635
 msgid "vec_type **roundEven** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:619
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:635
 msgid "Round nearest even"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:621
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:637
 msgid "vec_type **trunc** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:621
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:637
 msgid "Truncation"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:623
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:639
 msgid "vec_type **ceil** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:623
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:639
 msgid "Ceil"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:625
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:641
 msgid "vec_type **fract** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:625
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:641
 msgid "Fractional"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:627
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:643
 msgid "vec_type **mod** ( vec_type x, vec_type y )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:627
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:629
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:643
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
 msgid "Remainder"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:629
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
 msgid "vec_type **mod** ( vec_type x , float y )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:631
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:647
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:137
 msgid "vec_type **modf** ( vec_type x, out vec_type i )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:631
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:647
 msgid "Fractional of x, with i has integer part"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:633
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:649
 msgid "vec_type  **min** ( vec_type a, vec_type b )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:633
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:649
 msgid "Minimum"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:635
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
 msgid "vec_type  **max** ( vec_type a, vec_type b )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:635
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
 msgid "Maximum"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:637
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
 msgid "vec_type **clamp** ( vec_type x, vec_type min, vec_type max )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:637
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
 msgid "Clamp to Min-Max"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:639
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
 msgid "vec_type **mix** ( float a, float b, float c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:639
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
 msgid "Linear Interpolate"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:641
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
 msgid "vec_type **mix** ( vec_type a, vec_type b, float c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:641
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
 msgid "Linear Interpolate (Scalar Coef.)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:643
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:659
 msgid "vec_type **mix** ( vec_type a, vec_type b, vec_type c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:643
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:659
 msgid "Linear Interpolate (Vector Coef.)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
 msgid "vec_type **mix** ( vec_type a, vec_type b, bvec_type c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
 msgid "Linear Interpolate (Boolean-Vector Selection)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:647
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
 msgid "vec_type **step** ( vec_type a, vec_type b )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:647
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
 msgid "``b[i] < a[i] ? 0.0 : 1.0``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:649
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:665
 msgid "vec_type **step** ( float a, vec_type b)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:649
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:665
 msgid "``b[i] < a ? 0.0 : 1.0``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
 msgid "vec_type **smoothstep** ( vec_type a, vec_type b, vec_type c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
 msgid "Hermite Interpolate"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
 msgid "vec_type **smoothstep** ( float a, float b, vec_type c )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:671
 msgid "bvec_type **isnan** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:671
 msgid "Scalar, or vector component being NaN"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
 msgid "bvec_type **isinf** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
 msgid "Scalar, or vector component being INF"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:659
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:675
 msgid "ivec_type **floatBitsToInt** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:659
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:675
 msgid "Float->Int bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
 msgid "uvec_type **floatBitsToUint** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
 msgid "Float->UInt bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
 msgid "vec_type **intBitsToFloat** ( ivec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
 msgid "Int->Float bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:665
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
 msgid "vec_type **uintBitsToFloat** ( uvec_type x  )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:665
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
 msgid "UInt->Float bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:683
 msgid "float **length** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:683
 msgid "Vector Length"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:685
 msgid "float **distance** ( vec_type a, vec_type b )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:685
 msgid "Distance between vectors i.e ``length(a - b)``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:671
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:687
 msgid "float **dot** ( vec_type a, vec_type b )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:671
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:687
 msgid "Dot Product"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:689
 msgid "vec3 **cross** ( vec3 a, vec3 b )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:689
 msgid "Cross Product"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:675
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:691
 msgid "vec_type **normalize** ( vec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:675
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:691
 msgid "Normalize to unit length"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:693
 msgid "vec3 **reflect** ( vec3 I, vec3 N )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:693
 msgid "Reflect"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:695
 msgid "vec3 **refract** ( vec3 I, vec3 N, float eta )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:695
 msgid "Refract"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:697
 msgid "vec_type **faceforward** ( vec_type N, vec_type I, vec_type Nref )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:697
 msgid "If dot(Nref, I) < 0, return N, otherwise –N"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:683
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:699
 msgid "mat_type **matrixCompMult** ( mat_type x, mat_type y )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:683
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:699
 msgid "Matrix Component Multiplication"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:685
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
 msgid "mat_type **outerProduct** ( vec_type column, vec_type row )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:685
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
 msgid "Matrix Outer Product"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:687
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:703
 msgid "mat_type **transpose** ( mat_type m )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:687
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:703
 msgid "Transpose Matrix"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:689
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:705
 msgid "float **determinant** ( mat_type m )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:689
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:705
 msgid "Matrix Determinant"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:691
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
 msgid "mat_type **inverse** ( mat_type m )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:691
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
 msgid "Inverse Matrix"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:693
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:709
 msgid "bvec_type **lessThan** ( vec_type x, vec_type y )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:693
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:709
 msgid "Bool vector cmp on < int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:695
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
 msgid "bvec_type **greaterThan** ( vec_type x, vec_type y )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:695
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
 msgid "Bool vector cmp on > int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:697
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
 msgid "bvec_type **lessThanEqual** ( vec_type x, vec_type y )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:697
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
 msgid "Bool vector cmp on <= int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:699
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
 msgid "bvec_type **greaterThanEqual** ( vec_type x, vec_type y )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:699
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
 msgid "Bool vector cmp on >= int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
 msgid "bvec_type **equal** ( vec_type x, vec_type y )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
 msgid "Bool vector cmp on == int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:703
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:719
 msgid "bvec_type **notEqual** ( vec_type x, vec_type y )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:703
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:719
 msgid "Bool vector cmp on != int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:705
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:721
 msgid "bool **any** ( bvec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:705
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:721
 msgid "Any component is ``true``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:723
 msgid "bool **all** ( bvec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:723
 msgid "All components are ``true``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:709
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
 msgid "bvec_type **not** ( bvec_type x )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:709
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
 msgid "Invert boolean vector"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:727
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:147
 msgid "ivec2 **textureSize** ( sampler2D_type s, int lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:727
 msgid "Get the size of a 2D texture"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
 msgid "ivec3 **textureSize** ( sampler2DArray_type s, int lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
 msgid "Get the size of a 2D texture array"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:731
 msgid "ivec3 **textureSize** ( sampler3D s, int lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:731
 msgid "Get the size of a 3D texture"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:733
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:149
 msgid "ivec2 **textureSize** ( samplerCube s, int lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:733
 msgid "Get the size of a Cube texture"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:719
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:735
 msgid "vec4_type **texture** ( sampler2D_type s, vec2 uv [, float bias] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:719
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:735
 msgid "Perform a 2D texture read"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:721
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:737
 msgid ""
 "vec4_type  **texture** ( sampler2DArray_type s, vec3 uv [, float bias] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:721
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:737
 msgid "Perform a 2D texture array read"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:723
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:739
 msgid "vec4_type  **texture** ( sampler3D_type s, vec3 uv [, float bias] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:723
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:739
 msgid "Perform a 3D texture read"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:741
 msgid "vec4 **texture** ( samplerCube s, vec3 uv [, float bias] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:741
 msgid "Perform an Cube texture read"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:727
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
 msgid "vec4_type **textureProj** ( sampler2D_type s, vec3 uv [, float bias] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:727
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
 msgid "Perform a 2D texture read with projection"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
 msgid "vec4_type **textureProj** ( sampler2D_type s, vec4 uv [, float bias] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:731
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:747
 msgid "vec4_type  **textureProj** ( sampler3D_type s, vec4 uv [, float bias] )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:731
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:747
 msgid "Perform a 3D texture read with projection"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:733
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:749
 msgid "vec4_type **textureLod** ( sampler2D_type s, vec2 uv, float lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:733
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:749
 msgid "Perform a 2D texture read at custom mipmap"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:735
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:751
 msgid "vec4_type **textureLod** ( sampler2DArray_type s, vec3 uv, float lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:735
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:751
 msgid "Perform a 2D texture array read at custom mipmap"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:737
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:753
 msgid "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:737
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:739
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:753
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:755
 msgid "Perform a 3D texture read at custom mipmap"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:739
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:755
 msgid "vec4 **textureLod** ( samplerCube s, vec3 uv, float lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:741
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:757
 msgid "vec4_type **textureProjLod** ( sampler2D_type s, vec3 uv, float lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:741
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:757
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:759
 msgid "Perform a 2D texture read with projection/lod"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:759
 msgid "vec4_type **textureProjLod** ( sampler2D_type s, vec4 uv, float lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:761
 msgid "vec4_type **textureProjLod** ( sampler3D_type s, vec4 uv, float lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:761
 msgid "Perform a 3D texture read with projection/lod"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:747
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:763
 msgid "vec4_type **texelFetch** ( sampler2D_type s, ivec2 uv, int lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:747
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:749
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:751
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:763
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:765
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:767
 msgid "Fetch a single texel using integer coords"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:749
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:765
 msgid "vec4_type **texelFetch** ( sampler2DArray_type s, ivec3 uv, int lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:751
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:767
 msgid "vec4_type **texelFetch** ( sampler3D_type s, ivec3 uv, int lod )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:753
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:769
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:161
 msgid "vec_type **dFdx** ( vec_type p )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:753
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:769
 msgid "Derivative in x using local differencing"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:755
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:771
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:163
 msgid "vec_type **dFdy** ( vec_type p )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:755
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:771
 msgid "Derivative in y using local differencing"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:757
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:773
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:165
 msgid "vec_type **fwidth** ( vec_type p )"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:757
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:773
 msgid "Sum of absolute derivative in x and y"
 msgstr ""
 
@@ -62748,7 +62930,14 @@ msgstr ""
 msgid "Import plugins"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:9
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:6
+msgid ""
+"This tutorial assumes you already know how to make generic plugins. If in "
+"doubt, refer to the :ref:`doc_making_plugins` page. This also assumes you "
+"are acquainted with Godot's import system."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:13
 msgid ""
 "An import plugin is a special type of editor tool that allows custom "
 "resources to be imported by Godot and be treated as first-class resources. "
@@ -62757,45 +62946,33 @@ msgid ""
 "sounds, and many more."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:14
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:18
 msgid ""
 "This tutorial will show you how to create a simple import plugin to load a "
 "custom text file as a material resource. This text file will contain three "
 "numeric values separated by comma, which represents the three channels of a "
 "color, and the resulting color will be used as the albedo (main color) of "
-"the imported material."
+"the imported material. In this example it will contain the pure blue color "
+"(zero red, zero green, and full blue):"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:20
-msgid ""
-"This tutorial assumes you already know how to make generic plugins. If in "
-"doubt, refer to the :ref:`doc_making_plugins` page. This also assumes you "
-"are acquainted with Godot's import system."
-msgstr ""
-
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:24
-msgid ""
-"The sample file to import contains only a line representing the pure blue "
-"color (zero red, zero green, and full blue):"
-msgstr ""
-
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:32
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:30
 msgid "Configuration"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:34
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:32
 msgid ""
 "First we need a generic plugin that will handle the initialization and "
 "destruction of our import plugin. Let's add the ``plugin.cfg`` file first:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:47
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:45
 msgid ""
 "Then we need the ``material_import.gd`` file to add and remove the import "
 "plugin when needed:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:66
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:64
 msgid ""
 "When this plugin is activated, it will create a new instance of the import "
 "plugin (which we'll soon make) and add it to the editor using the :ref:"
@@ -62807,53 +62984,53 @@ msgid ""
 "import plugin isn't available anymore."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:75
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:73
 msgid ""
-"Note that the import plugin is a reference type  so it doesn't need to be "
-"explicitly released from the memory with the ``free()`` function. It will be "
+"Note that the import plugin is a reference type, so it doesn't need to be "
+"explicitly released from memory with the ``free()`` function. It will be "
 "released automatically by the engine when it goes out of scope."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:80
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:78
 msgid "The EditorImportPlugin class"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:82
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:80
 msgid ""
 "The main character of the show is the :ref:`EditorImportPlugin class "
-"<class_EditorImportPlugin>`. It is responsible to implement the methods that "
-"are called by Godot when it needs to know how to deal with files."
+"<class_EditorImportPlugin>`. It is responsible for implementing the methods "
+"that are called by Godot when it needs to know how to deal with files."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:87
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:85
 msgid "Let's begin to code our plugin, one method at time:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:98
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:96
 msgid ""
 "The first method is the :ref:"
 "`get_importer_name()<class_EditorImportPlugin_method_get_importer_name>`. "
-"This is a unique name to your plugin that is used by Godot to know which "
+"This is a unique name for your plugin that is used by Godot to know which "
 "import was used in a certain file. When the files needs to be reimported, "
 "the editor will know which plugin to call."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:109
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:107
 msgid ""
 "The :ref:"
 "`get_visible_name()<class_EditorImportPlugin_method_get_visible_name>` "
-"method is responsible to inform the name of the type it imports and will be "
-"shown to the user in the Import dock."
+"method is responsible for returning the name of the type it imports and it "
+"will be shown to the user in the Import dock."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:113
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:111
 msgid ""
-"You should choose this name as a continuation to \"Import as\". Eg. *"
-"\"Import as Silly Material\"*. Yes, this one is a bit silly, but you "
-"certainly can come up with a descriptive name for your plugin."
+"You should choose this name as a continuation to \"Import as\", e.g. *"
+"\"Import as Silly Material\"*. You can name it whatever you want but we "
+"recommend a descriptive name for your plugin."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:122
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:120
 msgid ""
 "Godot's import system detects file types by their extension. In the :ref:"
 "`get_recognized_extensions()<class_EditorImportPlugin_method_get_recognized_extensions>` "
@@ -62862,7 +63039,7 @@ msgid ""
 "plugin, the user can select which one to use when importing the files."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:128
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:126
 msgid ""
 "Common extensions like ``.json`` and ``.txt`` might be used by many plugins. "
 "Also, there could be files in the project that are just data for the game "
@@ -62870,16 +63047,16 @@ msgid ""
 "validate the data. Never expect the file to be well-formed."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:138
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:136
 msgid ""
 "The imported files are saved in the ``.import`` folder at the project's "
 "root. Their extension should match the type of resource you are importing, "
 "but since Godot can't tell what you'll use (because there might be multiple "
-"valid extensions for the same resource), you need to inform what will be the "
+"valid extensions for the same resource), you need to declare what will be "
 "used in the import."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:144
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:142
 msgid ""
 "Since we're importing a Material, we'll use the special extension for such "
 "resource types. If you are importing a scene, you can use ``scn``. Generic "
@@ -62887,31 +63064,31 @@ msgid ""
 "any way by the engine."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:154
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:152
 msgid ""
 "The imported resource has a specific type, so the editor can know which "
 "property slot it belongs to. This allows drag and drop from the FileSystem "
 "dock to a property in the Inspector."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:158
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:156
 msgid ""
 "In our case it's a :ref:`class_SpatialMaterial`, which can be applied to 3D "
 "objects."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:161
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:159
 msgid ""
 "If you need to import different types from the same extension, you have to "
 "create multiple import plugins. You can abstract the import code on another "
 "file to avoid duplication in this regard."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:166
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:164
 msgid "Options and presets"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:168
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:166
 msgid ""
 "Your plugin can provide different options to allow the user to control how "
 "the resource will be imported. If a set of selected options is common, you "
@@ -62919,19 +63096,19 @@ msgid ""
 "following image shows how the options will appear in the editor:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:175
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:173
 msgid ""
 "Since there might be many presets and they are identified with a number, "
 "it's a good practice to use an enum so you can refer to them using names."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:187
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:185
 msgid ""
 "Now that the enum is defined, let's keep looking at the methods of an import "
 "plugin:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:195
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:193
 msgid ""
 "The :ref:`get_preset_count() "
 "<class_EditorImportPlugin_method_get_preset_count>` method returns the "
@@ -62940,7 +63117,7 @@ msgid ""
 "``Presets`` enumeration."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:210
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:208
 msgid ""
 "Here we have the :ref:`get_preset_name() "
 "<class_EditorImportPlugin_method_get_preset_name>` method, which gives names "
@@ -62948,7 +63125,7 @@ msgid ""
 "short and clear names."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:215
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:213
 msgid ""
 "We can use the ``match`` statement here to make the code more structured. "
 "This way it's easy to add new presets in the future. We use the catch all "
@@ -62956,13 +63133,13 @@ msgid ""
 "the preset count you defined, it's always better to be on the safe side."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:220
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:218
 msgid ""
 "If you have only one preset you could simply return its name directly, but "
 "if you do this you have to be careful when you add more presets."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:235
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:233
 msgid ""
 "This is the method which defines the available options. :ref:"
 "`get_import_options() <class_EditorImportPlugin_method_get_import_options>` "
@@ -62971,75 +63148,75 @@ msgid ""
 "following table shows the possible keys:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:240
 msgid "Key"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 #: ../../docs/development/file_formats/tscn.rst:167
 msgid "``name``"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 msgid ""
 "The name of the option. When showed, underscores become spaces and first "
 "letters are capitalized."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
 msgid "``default_value``"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
 msgid "Any"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
 msgid "The default value of the option for this preset."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "``property_hint``"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:252
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
 msgid "Enum value"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid ""
 "One of the :ref:`PropertyHint <enum_@GlobalScope_PropertyHint>` values to "
 "use as hint."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 msgid "``hint_string``"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 msgid ""
 "The hint text of the property. The same as you'd add in the ``export`` "
 "statement in GDScript."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:252
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
 msgid "``usage``"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:252
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
 msgid ""
 "One of the :ref:`PropertyUsageFlags <enum_@GlobalScope_PropertyUsageFlags>` "
 "values to define the usage."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:255
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:253
 msgid ""
 "The ``name`` and ``default_value`` keys are **mandatory**, the rest are "
 "optional."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:257
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:255
 msgid ""
 "Note that the ``get_import_options`` method receives the preset number, so "
 "you can configure the options for each different preset (especially the "
@@ -63048,14 +63225,14 @@ msgid ""
 "create the array of options first and then change it based on the preset."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:263
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:261
 msgid ""
 "The ``get_import_options`` method is called even if you don't define presets "
 "(by making ``get_preset_count`` return zero). You have to return an array "
 "even it's empty, otherwise you can get errors."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:273
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:271
 msgid ""
 "For the :ref:`get_option_visibility() "
 "<class_EditorImportPlugin_method_get_option_visibility>` method, we simply "
@@ -63063,59 +63240,59 @@ msgid ""
 "are visible all the time."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:278
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:276
 msgid ""
 "If you need to make certain option visible only if another is set with a "
 "certain value, you can add the logic in this method."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:282
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:280
 msgid "The ``import`` method"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:284
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:282
 msgid ""
-"The heavy part of the process, responsible for the converting the files into "
+"The heavy part of the process, responsible for converting the files into "
 "resources, is covered by the :ref:`import() "
 "<class_EditorImportPlugin_method_import>` method. Our sample code is a bit "
 "long, so let's split in a few parts:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:300
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:298
 msgid ""
 "The first part of our import method opens and reads the source file. We use "
 "the :ref:`File <class_File>` class to do that, passing the ``source_file`` "
 "parameter which is provided by the editor."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:304
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:302
 msgid ""
 "If there's an error when opening the file, we return it to let the editor "
 "know that the import wasn't successful."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:319
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:317
 msgid ""
 "This code takes the line of the file it read before and splits it in pieces "
 "that are separated by a comma. If there are more or less than the three "
 "values, it considers the file invalid and reports an error."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:323
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:321
 msgid ""
 "Then it creates a new :ref:`Color <class_Color>` variable and sets its "
 "values according to the input file. If the ``use_red_anyway`` option is "
 "enabled, then it sets the color as a pure red instead."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:332
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:330
 msgid ""
 "This part makes a new :ref:`SpatialMaterial <class_SpatialMaterial>` that is "
 "the imported resource. We create a new instance of it and then set its "
 "albedo color as the value we got before."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:340
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:338
 msgid ""
 "This is the last part and quite an important one, because here we save the "
 "made resource to the disk. The path of the saved file is generated and "
@@ -63125,18 +63302,18 @@ msgid ""
 "that we defined earlier, so we can be sure that they won't get out of sync."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:347
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:345
 msgid ""
 "We also return the result from the :ref:`ResourceSaver.save() "
 "<class_ResourceSaver_method_save>` method, so if there's an error in this "
 "step, the editor will know about it."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:352
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:350
 msgid "Platform variants and generated files"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:354
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:352
 msgid ""
 "You may have noticed that our plugin ignored two arguments of the ``import`` "
 "method. Those are *return arguments* (hence the ``r`` at the beginning of "
@@ -63145,7 +63322,7 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:359
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:357
 msgid ""
 "The ``r_platform_variants`` argument is used if you need to import the "
 "resource differently depending on the target platform. While it's called "
@@ -63154,20 +63331,20 @@ msgid ""
 "depending on the setup."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:364
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:362
 msgid ""
 "To import a platform variant, you need to save it with the feature tag "
 "before the extension, and then push the tag to the ``r_platform_variants`` "
 "array so the editor can know that you did."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:368
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:366
 msgid ""
-"For an example, let's say we save a different material for mobile platform. "
+"For example, let's say we save a different material for a mobile platform. "
 "We would need to do something like the following:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:376
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:374
 msgid ""
 "The ``r_gen_files`` argument is meant for extra files that are generated "
 "during your import process and need to be kept. The editor will look at it "
@@ -63175,18 +63352,18 @@ msgid ""
 "inadvertently deleted."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:381
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:379
 msgid ""
 "This is also an array and should be filled with full paths of the files you "
 "save. As an example, let's create another material for the next pass and "
 "save it in a different file:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:397
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:395
 msgid "Trying the plugin"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:399
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:397
 msgid ""
 "This has been theoretical, but now that the import plugin is done, let's "
 "test it. Make sure you created the sample file (with the contents described "
@@ -63194,7 +63371,7 @@ msgid ""
 "plugin in the Project Settings."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:404
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:402
 msgid ""
 "If everything goes well, the import plugin is added to the editor and the "
 "file system is scanned, making the custom resource appear on the FileSystem "
@@ -63202,7 +63379,7 @@ msgid ""
 "option to select there."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:409
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:407
 msgid ""
 "Create a MeshInstance node in the scene, and for its Mesh property set up a "
 "new SphereMesh. Unfold the Material section in the Inspector and then drag "
@@ -63210,14 +63387,14 @@ msgid ""
 "update in the viewport with the blue color of the imported material."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:416
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:414
 msgid ""
 "Go to Import dock, enable the \"Use Red Anyway\" option, and click on "
 "\"Reimport\". This will update the imported material and should "
 "automatically update the view showing the red color instead."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/import_plugins.rst:420
+#: ../../docs/tutorials/plugins/editor/import_plugins.rst:418
 msgid ""
 "And that's it! Your first import plugin is done! Now get creative and make "
 "plugins for your own beloved formats. This can be quite useful to write your "
@@ -68685,81 +68862,92 @@ msgid ""
 "make that drawing code execute in the editor to see your player."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:18
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:19
+msgid ""
+"``tool`` scripts run inside the editor, and let you access the scene tree of "
+"the currently edited scene. This is a powerful feature which also comes with "
+"caveats, as the editor does not include protections for potential misuse of "
+"``tool`` scripts. Be **extremely** cautious when manipulating the scene "
+"tree, especially via :ref:`Node.queue_free<class_Node_method_queue_free>`, "
+"as it can cause crashes if you free a node while the editor runs logic "
+"involving it."
+msgstr ""
+
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:28
 msgid "How to use it"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:20
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:30
 msgid ""
 "To turn a script into a tool, add ``tool`` keyword at the top of your code."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:22
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:32
 msgid ""
 "To check if you are currently in the editor, use: ``Engine.editor_hint``."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:24
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:34
 msgid "For example, if you want to execute some code only in editor, use:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:32
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "previous expression:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:40
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
 msgid ""
 "Pieces of code that are not having any of the 2 conditions above will run "
 "both in editor and in game."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
 msgid "Here is how a ``_process()`` function might look like for you:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:56
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
 msgid ""
 "Modifications in editor are permanent. In our case, when we remove the "
 "script, the node will keep its rotation direction. Be careful so that you "
 "don't make unwanted modifications."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:59
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:69
 msgid "Try it out"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:61
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:71
 msgid ""
 "Add a ``Sprite`` node to your scene and set the texture to Godot icon. "
 "Attach and open a script, and change it to this:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:72
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:82
 msgid ""
 "Save the script and return to the editor. You should now see your object "
 "rotate. If you run the game, it will also rotate."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:76
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:86
 msgid ""
 "If you don't see the changes, reload the scene (close it and open it again)."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:78
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:88
 msgid ""
 "Now let's choose which code runs when. Modify your ``_process()`` function "
 "to look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:89
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:99
 msgid ""
 "Save the script. Now the object will spin clockwise in the editor, but if "
 "you run the game, it will spin counter-clockwise."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:91
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:101
 msgid ""
 "Code from other nodes doesn't run in the editor. Your access to other nodes "
 "is limited. You can access the tree and nodes, and their default properties, "
@@ -68768,7 +68956,7 @@ msgid ""
 "all."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:93
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:103
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "
 "write the code how you want it, and only then add the ``tool`` keyword to "
@@ -69397,246 +69585,282 @@ msgstr ""
 msgid "Overview of debugging tools"
 msgstr ""
 
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:6
+msgid ""
+"This guide will give you an overview of the available debugging tools in the "
+"engine."
+msgstr ""
+
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:9
 msgid ""
-"When developing your game, you want to test your game and debug when "
-"problems occur. Godot provides several debugging options and tools which aid "
-"your debugging process. There are the debug dropdown options, Script editor "
-"debug options, debug project settings, and the debugger."
+"Godot comes with a powerful debugger and profilers to track down bugs, "
+"inspect your game at runtime, monitor essential metrics, and measure "
+"performances. It also offers options to visualize collision boxes and "
+"navigation polygons in the running game."
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:14
-msgid "Debug dropdown options"
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:16
 msgid ""
-"There are a few options that you can enable when running your game in the "
-"editor which can help you in debugging your game. These options are located "
-"in ``DEBUG`` in the main menus."
+"Finally, you have options to debug the game running on a remote device and "
+"to reload changes to your scenes or your code while the game is running."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:21
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:18
+msgid "Debug menu options"
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:20
+msgid ""
+"There are a few common debug options you can toggle on or off when running "
+"your game in the editor, which can help you in debugging your game."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:23
+msgid "You can find these options in the **Debug** editor menu."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
 msgid "Here are the descriptions of the options:"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:30
 msgid "Deploy with Remote Debug"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:26
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:32
 msgid ""
 "When exporting and deploying, the resulting executable will attempt to "
-"connect to the IP of your computer, in order to be debugged."
+"connect to the IP of your computer for debugging."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
 msgid "Small Deploy with Network FS"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:31
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid ""
-"Export or deploy will produce minimal executable. The filesystem will be "
-"provided from the project by the editor over the network. On Android, deploy "
-"will use the USB cable for faster performance. This option speeds up testing "
-"for games with a large footprint."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
-msgid "Visible Collision Shapes"
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:37
-msgid ""
-"Collision shapes and raycast nodes(for 2D and 3D) will be visible on the "
-"running game."
+"This option speeds up testing for games with a large footprint on remote "
+"devices."
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
-msgid "Visible Navigation"
+msgid ""
+"When **Small Deploy with Network FS** is on, instead of exporting the full "
+"game, deploying the game builds a minimal executable. The editor then "
+"provides files from the project over the network."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:42
-msgid "Navigation meshes and polygons will be visible on the running game."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:45
-msgid "Sync Scene Changes"
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:44
+msgid ""
+"Also, on Android, the game is deployed using the USB cable to speed up "
+"deployment."
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:47
-msgid ""
-"Any changes made to the scene in the editor will be replicated in the "
-"running game. When used remotely on a device, this is more efficient with "
-"network filesystem."
+msgid "Visible Collision Shapes"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:51
-msgid "Sync Script Changes"
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
+msgid ""
+"This option makes collision shapes and raycast nodes visible in the running "
+"game."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:53
-msgid ""
-"Any script that is saved will be reloaded on the running game. When used "
-"remotely on a device, this is more efficient with network filesystem."
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:52
+msgid "Visible Navigation"
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:54
+msgid "Navigation meshes and polygons will be visible on the running game."
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:57
-msgid "Script editor debug tools and options"
+msgid "Sync Scene Changes"
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:59
 msgid ""
-"The script editor has its own set of debug tools for use with breakpoints, "
-"and two options. The breakpoint tools can also be found in the \"Debugger\" "
-"tab of the debugger."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:62
-msgid "..image:: img/overview_script_editor.png"
+"With this option, any change you make to a scene in the editor at runtime "
+"appears instantly. When used remotely on a device, this is more efficient "
+"with the network filesystem."
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:64
-msgid ""
-"The ``Break`` button causes a break in the script like a breakpoint would. "
-"``Continue`` makes the game continue after pausing at a breakpoint. ``Step "
-"Over`` goes to the next line of code, and ``Step Into`` goes into a function "
-"if possible, otherwise it does the same thing as ``Step Over``."
+msgid "Sync Script Changes"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:69
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:66
 msgid ""
-"The ``Keep Debugger Open`` option keeps the debugger open after a scene has "
-"been closed. And the ``Debug with External Editor`` option lets you debug "
+"Any script that is saved will be reloaded on the running game. When used "
+"remotely on a device, this is more efficient with the network filesystem."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:70
+msgid "Script editor debug tools and options"
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:72
+msgid ""
+"The script editor has its own set of debug tools for use with breakpoints "
+"and two options. The breakpoint tools can also be found in the **Debugger** "
+"tab of the debugger."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
+msgid ""
+"The **Break** button causes a break in the script like a breakpoint would. "
+"**Continue** makes the game continue after pausing at a breakpoint. **Step "
+"Over** goes to the next line of code, and **Step Into** goes into a function "
+"if possible. Otherwise, it does the same thing as **Step Over**."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:83
+msgid ""
+"The **Keep Debugger Open** option keeps the debugger open after a scene has "
+"been closed. And the **Debug with External Editor** option lets you debug "
 "your game with an external editor."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:74
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:88
 msgid "Debug project settings"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:76
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:90
 msgid ""
-"In the project settings there is a \"Debug\" category with three sub "
-"categories which control different things."
+"In the project settings, there is a **Debug** category with three "
+"subcategories which control different things."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:80
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:94
 #, fuzzy
 msgid "Settings"
 msgstr "మొదలు పెట్టడానికి"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:82
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:96
 msgid ""
 "These are some general settings such as printing the current FPS to the "
-"Output panel, the maximum amount of functions when profiling and others."
+"**Output** panel, the maximum amount of functions when profiling and others."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:88
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:103
 msgid ""
-"These settings allow you to turn specific GDScript warnings, such as an "
-"unused variable, on or off. You can also turn off warnings completely."
+"These settings allow you to toggle specific GDScript warnings, such as for "
+"unused variables. You can also turn off warnings completely."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:92
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:107
 msgid "Shapes"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:94
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:109
 msgid ""
-"Shapes is where you can adjust the color of shapes that only appear for "
+"Shapes are where you can adjust the color of shapes that only appear for "
 "debugging purposes, such as collision and navigation shapes."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:98
-msgid "Debugging tools"
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:100
-msgid ""
-"The ``Debugger`` can be found in Godot's bottom panel. Click on it and the "
-"panel expands to show all the debugging tools."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:105
-msgid "There are multiple parts of the debugger, each is for a specific task."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:108
-msgid "Debugger"
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:110
-msgid ""
-"The debugger tab is for working with breakpoints in the script. When a "
-"script reaches a breakpoint this panel gives you information on it."
-msgstr ""
-
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
-msgid "The buttons in the top right can be used respectively to:"
+msgid "Debugging tools"
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:115
 msgid ""
-"Skip all defined breakpoints, without removing them (so you can toggle them "
-"on or off while testing)."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:116
-msgid "Copy the current error message."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:117
-msgid ""
-"Step Into goes to the next line of code, and if it's a function, it step "
-"line by line through the function."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:118
-msgid ""
-"Step Over goes to the next line of code, but does not go down into function "
-"code."
+"You can find the debugger in the bottom panel. Click on **Debugger** to open "
+"it."
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:119
-msgid "Break pauses the game like a breakpoint would."
+msgid ""
+"The debugger is split into several tabs, each focusing on a specific task."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:120
-msgid "Continue resumes the game after a breakpoint or pause."
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:122
+msgid "Debugger"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:123
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:124
+msgid ""
+"The debugger tab opens automatically when the GDScript compiler reaches a "
+"breakpoint in your code."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:127
+msgid ""
+"It gives you a `stack trace <https://en.wikipedia.org/wiki/Stack_trace>`__, "
+"information about the state of the object, and buttons to control the "
+"program's execution."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:131
+msgid "You can use the buttons in the top-right to:"
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
+msgid ""
+"Skip all breakpoints. That way, you can save breakpoints for future "
+"debugging sessions."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:135
+msgid "Copy the current error message."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:136
+msgid ""
+"**Step Into** the code. This button takes you to the next line of code, and "
+"if it's a function, it steps line-by-line through the function."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:138
+msgid ""
+"**Step Over** the code. This button goes to the next line of code, but it "
+"doesn't step line-by-line through functions."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:140
+msgid "**Break**. This button pauses the game's execution."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:141
+msgid "**Continue**. This button resumes the game after a breakpoint or pause."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:144
 msgid "Errors"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:125
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:146
 msgid ""
 "This is where errors and warning messages are printed while running the game."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:128
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
 msgid "Profiler"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:130
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:151
+msgid ""
+"The debugger comes with three profilers for your processor, network "
+"operations, and video memory."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:154
 msgid ""
 "The profiler is used to show why individual frames take as long as they do "
 "to process and render."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:132
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:157
 msgid ""
-"Unlike other debugging tools the profiler does not start automatically. It "
+"Unlike other debugging tools, the profiler does not start automatically. It "
 "can be started at any time during gameplay by pressing the start button. You "
-"can even start the profiler before opening the game to profile start up "
+"can even start the profiler before opening the game to profile startup "
 "performance. It can also be started and stopped while the game is running "
 "without losing information from when it was last running. The information it "
 "records won't go away unless you click clear, or close the game, reopen it "
 "and start the profiler again."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:138
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:165
 msgid ""
 "After starting and stopping the profiler you should see things being kept "
 "track of on the left and a graph on the right. The items listed on the left "
@@ -69644,37 +69868,37 @@ msgid ""
 "value for time and calls for the current frame you are looking at."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:142
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:170
 msgid ""
 "The frame number in the top right tells you which frame you are currently "
 "looking at. You can change this by using the up or down arrows, typing in "
 "the frame number, or clicking on the graph."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:145
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:174
 msgid ""
 "If you want to add something to your graph, or think it looks too cluttered, "
 "you can check and uncheck the box next to an item to add or remove it from "
 "the graph."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:179
 msgid "Network Profiler"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:151
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:181
 msgid ""
 "The Network Profiler contains a list of all the nodes that communicate over "
 "the multiplayer API and, for each one, some counters on the amount of "
 "incoming and outgoing network interactions. It also features a bandwidth "
-"meter that displays the total bandwidth usage at any given moment"
+"meter that displays the total bandwidth usage at any given moment."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:156
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:187
 msgid "Monitors"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:158
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:189
 msgid ""
 "The monitors are graphs of several aspects of the game while its running "
 "such as FPS, memory usage, how many nodes are in a scene and more. All "
@@ -69683,42 +69907,50 @@ msgid ""
 "changed."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:163
-msgid "Video Mem"
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:195
+msgid "Video Memory"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:165
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:197
 msgid ""
-"Video Mem list the video memory usage of the running game and which resource "
-"is using it."
+"The **Video Mem** tab lists the video memory usage of the running game and "
+"the resources using it."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:168
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:201
 msgid "Misc"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:170
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:203
 msgid ""
-"Misc is used to identify which control node you are clicking while the game "
-"is running. \"Clicked Control\" shows where on the scene tree the node is. "
-"\"Clicked Control Type\" tells you what type of node it is."
+"The **Misc** tab contains tools to identify the control nodes you are "
+"clicking at runtime:"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:174
-msgid "Remote in Scene dock"
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:206
+msgid ""
+"**Clicked Control** tells you where the clicked node is in the scene tree."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:176
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:207
+msgid "**Clicked Control Type** tells you the type of the node you clicked is."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:210
+msgid "Remote in scene dock"
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:212
 msgid ""
 "When running a game in the editor two options appear at the top of the "
-"``Scene`` dock, ``Remote`` and ``Local``. While using ``Remote`` you can "
-"inspect or change the nodes' parameters in the running game."
+"**Scene** dock, **Remote** and **Local**. While using **Remote** you can "
+"inspect or change the nodes' parameters in the running project."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:182
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:218
 msgid ""
-"Some editor settings related to debugging can be found inside the ``Editor "
-"Settings``, under Network>Debug and Debugger sections."
+"Some editor settings related to debugging can be found inside the **Editor "
+"Settings**, under the **Network > Debug** and **Debugger** sections."
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:4
@@ -73970,34 +74202,44 @@ msgid "You can now use your newly created module from any script:"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:245
-msgid "And the output will be ``60``."
+msgid "The output will be ``60``."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:247
 msgid ""
 "The previous Summator example is great for small, custom modules, but what "
-"if you want to use a larger, external library?  Refer to :ref:"
+"if you want to use a larger, external library? Refer to :ref:"
 "`doc_binding_to_external_libraries` for details about binding to external "
 "libraries."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:253
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:252
+msgid ""
+"If your module is meant to be accessed from the running project (not just "
+"from the editor), you must also recompile every export template you plan to "
+"use, then specify the path to the custom template in each export preset. "
+"Otherwise, you'll get errors when running the project as the module isn't "
+"compiled in the export template. See the :ref:`Compiling <toc-devel-"
+"compiling>` pages for more information."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:261
 msgid "Improving the build system for development"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:255
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:263
 msgid ""
 "So far we defined a clean and simple SCsub that allows us to add the sources "
 "of our new module as part of the Godot binary."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:258
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:266
 msgid ""
 "This static approach is fine when we want to build a release version of our "
 "game given we want all the modules in a single binary."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:261
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:269
 msgid ""
 "However the trade-off is every single change means a full recompilation of "
 "the game. Even if SCons is able to detect and recompile only the file that "
@@ -74005,13 +74247,13 @@ msgid ""
 "a long and costly part."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:266
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:274
 msgid ""
 "The solution to avoid such a cost is to build our own module as a shared "
 "library that will be dynamically loaded when starting our game's binary."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:299
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:307
 msgid ""
 "Once compiled, we should end up with a ``bin`` directory containing both the "
 "``godot*`` binary and our ``libsummator*.so``. However given the .so is not "
@@ -74019,13 +74261,13 @@ msgid ""
 "it during runtime with the ``LD_LIBRARY_PATH`` environ variable:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:309
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:317
 msgid ""
 "**note**: Pay attention you have to ``export`` the environ variable "
 "otherwise you won't be able to play your project from within the editor."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:312
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:320
 msgid ""
 "On top of that, it would be nice to be able to select whether to compile our "
 "module as shared library (for development) or as a part of the Godot binary "
@@ -74033,23 +74275,23 @@ msgid ""
 "using the `ARGUMENT` command:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:344
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:352
 msgid ""
 "Now by default ``scons`` command will build our module as part of Godot's "
 "binary and as a shared library when passing ``summator_shared=yes``."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:347
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:355
 msgid ""
 "Finally you can even speedup build further by explicitly specifying your "
 "shared module as target in the scons command:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:355
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:363
 msgid "Writing custom documentation"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:357
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:365
 msgid ""
 "Writing documentation may seem like a boring task, but it is highly "
 "recommended to document your newly created module in order to make it easier "
@@ -74058,22 +74300,22 @@ msgid ""
 "someone else, so be kind to your future self!"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:363
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:371
 msgid "There are several steps in order to setup custom docs for the module:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:365
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:373
 msgid ""
 "Make a new directory in the root of the module. The directory name can be "
 "anything, but we'll be using the ``doc_classes`` name throughout this "
 "section."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:368
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:376
 msgid "Append the following code snippet to ``config.py``:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:380
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:388
 msgid ""
 "The ``get_doc_classes()`` method is necessary for the build system to know "
 "which documentation classes of the module must be merged, since the module "
@@ -74082,18 +74324,18 @@ msgid ""
 "one class, append those as well."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:386
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:394
 msgid ""
 "The ``get_doc_path()`` method is used by the build system to determine the "
 "location of the docs. In our case, they will be located in the "
 "``doc_classes`` directory."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:390
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:398
 msgid "Run command:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:396
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:404
 msgid ""
 "This will dump the engine API reference to the given ``<path>`` in XML "
 "format. Notice that you'll need to configure your ``PATH`` to locate Godot's "
@@ -74101,17 +74343,17 @@ msgid ""
 "might encounter an error similar to the following:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:406
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:414
 msgid "Get generated doc file from ``godot/doc/classes/ClassName.xml``"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:408
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:416
 msgid ""
 "Copy this file to ``doc_classes``, optionally edit it, then compile the "
 "engine."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:410
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:418
 msgid ""
 "The build system will fetch the documentation files from the ``doc_classes`` "
 "directory and merge them with the base types. Once the compilation process "
@@ -74119,95 +74361,95 @@ msgid ""
 "documentation system."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:414
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:422
 msgid ""
 "In order to keep documentation up-to-date, all you'll have to do is simply "
 "modify one of the ``ClassName.xml`` files and recompile the engine from now "
 "on."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:420
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:428
 msgid "Adding custom editor icons"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:422
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:430
 msgid ""
 "Similarly to how you can write self-contained documentation within a module, "
 "you can also create your own custom icons for classes to appear in the "
 "editor."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:425
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:433
 msgid ""
 "For the actual process of creating editor icons to be integrated within the "
 "engine, please refer to :ref:`doc_editor_icons` first."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:428
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:436
 msgid "Once you've created your icon(s), proceed with the following steps:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:430
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:438
 msgid ""
 "Make a new directory in the root of the module named ``icons``. This is the "
 "default path for the engine to look for module's editor icons."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:433
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:441
 msgid ""
 "Move your newly created ``svg`` icons (optimized or not) into that folder."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:435
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:443
 msgid ""
 "Recompile the engine and run the editor. Now the icon(s) will appear in "
 "editor's interface where appropriate."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:438
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:446
 msgid ""
 "If you'd like to store your icons somewhere else within your module, add the "
 "following code snippet to ``config.py`` to override the default path:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:447
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:455
 msgid "Summing up"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:449
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:457
 msgid "Remember to:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:451
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:459
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:452
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:460
 msgid ""
 "use ``_bind_methods`` to bind your functions to scripting, and to allow them "
 "to work as callbacks for signals."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:455
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:463
 msgid ""
 "But this is not all, depending what you do, you will be greeted with some "
 "(hopefully positive) surprises."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:458
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:466
 msgid ""
 "If you inherit from :ref:`class_Node` (or any derived node type, such as "
 "Sprite), your new class will appear in the editor, in the inheritance tree "
 "in the \"Add Node\" dialog."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:461
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:469
 msgid ""
 "If you inherit from :ref:`class_Resource`, it will appear in the resource "
 "list, and all the exposed properties can be serialized when saved/loaded."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:464
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:472
 msgid ""
 "By this same logic, you can extend the Editor and almost any area of the "
 "engine."
