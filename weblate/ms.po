@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Muhammad Hazim bin Hafizalshah <muhammadhazimhafizalshah@gmail.com>, 2020.
 # Nafis Ibrahim <thepreciousnafis@gmail.com>, 2018.
 # Razman Ramly <razman90a@yahoo.com.my>, 2019.
 # Syaz Amirin <amirin123z@gmail.com>, 2018.
@@ -11,8 +12,9 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-20 15:59+0100\n"
-"PO-Revision-Date: 2019-03-10 09:56+0000\n"
-"Last-Translator: Razman Ramly <razman90a@yahoo.com.my>\n"
+"PO-Revision-Date: 2020-01-27 07:15+0000\n"
+"Last-Translator: Muhammad Hazim bin Hafizalshah "
+"<muhammadhazimhafizalshah@gmail.com>\n"
 "Language-Team: Malay <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/ms/>\n"
 "Language: ms\n"
@@ -20,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.5.1-dev\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -35,15 +37,14 @@ msgstr ""
 "\"Read the Docs\" di bawah bar sisi untuk melihat senarai."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the development (master) branch. Looking for "
 "the documentation of the current **stable** branch? `Have a look here "
 "<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
-"Dokumentasi ini ialah untuk cawangan (master) yang tidak stabil. Sedang "
-"mencari cawangan dokumentasi **stable** terkini? 'Cuba di sini <http://docs."
-"godotengine.org/en/stable>'_."
+"Dokumentasi ini ialah untuk cawangan perkembangan (master). Sedang mencari "
+"dokumentasi cawangan **stable** terkini? `Cuba di sini <http://docs."
+"godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:16
 msgid ""
@@ -134,7 +135,7 @@ msgstr ""
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -273,7 +274,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Sebelum anda mula"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -281,6 +282,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"Halaman :ref:`Tutorials and resources <doc_community_tutorials>` "
+"menyenaraikan video tutorial yang disumbang oleh komuniti. Jika anda lebih "
+"suka video berbanding teks, ia mungkin berbaloi untuk ditinjau."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -288,17 +292,27 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Sekiranya anda mempunyai masalah dengan salah satu tutorial atau projek "
+"anda, anda boleh cari bantuan pada pelbagai :ref:`Community channels "
+"<doc_community_channels>`, terutama sekali komuniti Discord Godot, Q&A, dan "
+"IRC."
 
 #: ../../docs/about/introduction.rst:32
+#, fuzzy
 msgid "About Godot Engine"
 msgstr "Tentang Godot Engine"
 
 #: ../../docs/about/introduction.rst:34
+#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
+"Enjin permainan adalah alat yang kompleks, oleh sebab itu, ia adalah sukar "
+"untuk mempamerkan Godot dalam sedikit perkataan. Ini sinopsis singkat, yang "
+"anda boleh berasa bebas untuk guna semula jika anda memerlukan ulasan "
+"tentang Godot Engine."
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -6882,7 +6896,7 @@ msgstr ""
 #, fuzzy
 msgid "The LifeBar and the EnergyBar align automatically"
 msgstr ""
-"LifeBar(BarNyawa) dan EnergyBar(BarTenaga) diselaraskan secara automatik"
+"LifeBar (BarNyawa) dan EnergyBar (BarTenaga) diselaraskan secara automatik"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
 msgid ""
@@ -6948,9 +6962,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:607
-#, fuzzy
 msgid "Head to the FileSystem dock and open ``LevelMockup.tscn``."
-msgstr "Menuju ke dok FileSystem dan buka ``LevelMockup.tscn``."
+msgstr "Tuju ke dok FileSystem dan buka ``LevelMockup.tscn``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:609
 msgid ""
@@ -8905,7 +8918,7 @@ msgstr "Windows, macOS, Linux (tidak rasmi dan tidak disokong)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "OS (export)"
@@ -11404,7 +11417,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:374
 msgid "Functions"
-msgstr ""
+msgstr "Fungsi"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:676
 msgid ""
@@ -14538,7 +14551,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Aksi"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -43353,9 +43366,8 @@ msgid "Once you are all set, you will get much better results:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "AnimationTree"
-msgstr "Mencipta Kandungan"
+msgstr "AnimationTree"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -58676,7 +58688,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:86
 msgid "**Type**:"
-msgstr "**Jenis**"
+msgstr "**Jenis**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:87
 msgid "Either an image, or a video."

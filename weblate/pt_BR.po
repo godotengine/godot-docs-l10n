@@ -75,6 +75,7 @@
 # Luccas Brandão <srluccasbrandao@gmail.com>, 2018.
 # Luciano Pestana Santos <lucianopestana@hotmail.com>, 2018.
 # Luigi <luigimendeszanchett@gmail.com>, 2019.
+# Luiz Carlos L. G. de Oliveira <luizcarlos1405@gmail.com>, 2020.
 # Luiz Montevechio <montevechiol@gmail.com>, 2019.
 # Luk3M <luk3@hotmail.com.br>, 2018.
 # M4gma <lucboari@gmail.com>, 2018.
@@ -88,6 +89,7 @@
 # Mauricio Lucas <mauricio.lucas@yahoo.com>, 2019.
 # Michael Alexsander Silva Dias <michaelalexsander@protonmail.com>, 2018.
 # Michael Canesche <michael.canesche@gmail.com>, 2018.
+# Michael Leocádio <aeronmike@gmail.com>, 2020.
 # Michel G. Souza <Michelgomesdes@hotmail.com>, 2018.
 # Miguel R. Araújo <leuugz@gmail.com>, 2019.
 # miketangogamer <miketangogamer@gmail.com>, 2018-2019.
@@ -137,8 +139,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-20 15:59+0100\n"
-"PO-Revision-Date: 2020-01-19 13:12+0000\n"
-"Last-Translator: Joaquim Ferreira <joaquimferreira1996@bol.com.br>\n"
+"PO-Revision-Date: 2020-01-27 07:14+0000\n"
+"Last-Translator: Michael Leocádio <aeronmike@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -146,7 +148,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.10.2\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -619,7 +621,7 @@ msgstr "Divirta-se lendo e fazendo jogos com Godot Engine!"
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "Perguntas Frequentes"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -630,7 +632,7 @@ msgstr "Perguntas Frequentes"
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
 msgstr ""
-"O que eu posso fazer com o Godot? Quanto custa? Quais são os termos de "
+"O que eu posso fazer com a Godot? Quanto custa? Quais são os termos de "
 "licença?"
 
 #: ../../docs/about/faq.rst:12
@@ -1675,9 +1677,8 @@ msgid "VR"
 msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr ":ref:`Tutorial de iniciante de VR <doc_vr_starter_tutorial>`"
+msgstr ":ref:`Tutorial para iniciantes de VR <doc_vr_starter_tutorial>`"
 
 #: ../../docs/about/docs_changelog.rst:66
 #, fuzzy
@@ -2057,23 +2058,21 @@ msgid "Project manager"
 msgstr "Gerenciador de Projetos"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
-"Quando você executa o Godot, a primeira janela que vê é o Gerenciador de "
+"Quando você executa a Godot, a primeira janela que vê é o Gerenciador de "
 "Projetos. Ele lhe permite criar, remover, importar e jogar projetos."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
-#, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"Quando você executa o Godot, a primeira janela que vê é o Gerenciador de "
-"Projetos. Ele lhe permite criar, remover, importar e jogar projetos."
+"Agora você deve ver o gerenciador de projetos. Ele te permite criar, "
+"remover, importar ou jogar projetos de jogo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
@@ -2084,7 +2083,6 @@ msgstr ""
 "idioma do editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -2096,21 +2094,22 @@ msgstr ""
 "projeto de código aberto para lhe ajudar a aprender mais rápido. Apenas "
 "selecione o modelo ou demo desejado, clique em baixar, uma vez que tenha "
 "terminado de baixar, clique em instalar e escolha onde você quer que o "
-"projeto fique."
+"projeto fique. Você pode aprender mais sobre isso em :ref:"
+"`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
 msgstr "Criar ou importar um projeto"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
 "Para criar um novo projeto, clique no botão ``Novo Projeto`` à direita. Dê "
-"um nome e escolha uma pasta vazia do seu computador para salvá-lo."
+"um nome, escolha uma pasta vazia do seu computador para salvá-lo e escolha "
+"um renderizador."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
@@ -4871,10 +4870,9 @@ msgid ""
 "to the bottom of the ``_process`` function:"
 msgstr ""
 "Agora que temos uma direção de movimento, podemos atualizar a posição do "
-"jogador. Podemos utilizar ``clamp()`` (segurar, como quando utilizamos uma "
-"braçadeira ou um torno) para impedir que ele saia da tela. *Segurar* um "
-"valor significa restringi-lo a um intervalo. Adicione o seguinte código no "
-"final da função ``_process``:"
+"jogador. Podemos também usar ``clamp()`` para impedir que ele saia da tela. "
+"*Clamp* (fixar) um valor significa restringi-lo a um determinado intervalo. "
+"Adicione o seguinte código embaixo da função ``_process``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:335
 msgid ""

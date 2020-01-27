@@ -7,7 +7,7 @@
 # Yuri Chornoivan <yurchor@ukr.net>, 2018-2019.
 # Александр <ol-vin@mail.ru>, 2018.
 # Богдан Альфавіцький <bromandarin@gmail.com>, 2019.
-# Богдан Матвіїв <bomtvv@gmail.com>, 2019.
+# Богдан Матвіїв <bomtvv@gmail.com>, 2019-2020.
 # Максим Якимчук <xpinovo@gmail.com>, 2018-2019.
 #
 msgid ""
@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-20 15:59+0100\n"
-"PO-Revision-Date: 2019-12-03 07:09+0000\n"
-"Last-Translator: Богдан Альфавіцький <bromandarin@gmail.com>\n"
+"PO-Revision-Date: 2020-01-21 23:24+0000\n"
+"Last-Translator: Богдан Матвіїв <bomtvv@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
 "Language: uk\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -56,9 +56,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
-"Ця документація перекладена з `оригінальної англійської  <https://docs."
-"godotengine.org/en/latest>`_  учасниками спільноти  на `Weblate <https://"
-"hosted.weblate.org/projects/godot-engine/godot-docs>`_."
+"Ця документація перекладена з оригінальної англійської <https://docs."
+"godotengine.org/en/latest> учасниками спільноти на `Weblate <https://hosted."
+"weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -137,7 +137,7 @@ msgstr ""
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -420,7 +420,6 @@ msgstr ""
 "його історію, ліцензування, авторів тощо. Він також містить :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
@@ -495,7 +494,7 @@ msgstr "Веселого читання і створення ігор з Godot 
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -530,7 +529,7 @@ msgid ""
 "profit, commercial, or otherwise."
 msgstr ""
 "Ви можете вільно отримати Godot і користуватися ним для будь-яких потреб, "
-"особистих, некомерційних, комерційних або інших;"
+"особистих, некомерційних, комерційних або інших."
 
 #: ../../docs/about/faq.rst:17
 msgid ""
@@ -1165,6 +1164,8 @@ msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
+"Більшість розробників в спільноті Godot буде цікавіше дізнатися про такі "
+"речі, як:"
 
 #: ../../docs/about/faq.rst:266
 msgid ""
@@ -1194,7 +1195,6 @@ msgid "The parts of your workflow you would like to see optimized."
 msgstr "Частини вашого робочого процесу, які б ви хотіли оптимізувати."
 
 #: ../../docs/about/faq.rst:272
-#, fuzzy
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
@@ -1676,7 +1676,7 @@ msgstr "Файлова система"
 #: ../../docs/about/docs_changelog.rst:148
 #, fuzzy
 msgid ":ref:`doc_soft_body`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`doc_soft_body`"
 
 #: ../../docs/about/docs_changelog.rst:151
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:2
@@ -1688,7 +1688,7 @@ msgstr "Анімація"
 #: ../../docs/about/docs_changelog.rst:153
 #, fuzzy
 msgid ":ref:`doc_2d_skeletons`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`doc_2d_skeletons`"
 
 #: ../../docs/about/docs_changelog.rst:154
 #, fuzzy
@@ -1717,7 +1717,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:165
 #, fuzzy
 msgid ":ref:`doc_custom_postprocessing`"
-msgstr "Змінні середовища"
+msgstr ":ref:`doc_custom_postprocessing`"
 
 #: ../../docs/about/docs_changelog.rst:170
 msgid ":ref:`doc_intro_to_shaders_water_workshop`"
@@ -1730,7 +1730,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:172
 #, fuzzy
 msgid ":ref:`doc_advanced_postprocessing`"
-msgstr "Змінні середовища"
+msgstr ":ref:`doc_advanced_postprocessing`"
 
 #: ../../docs/about/docs_changelog.rst:174
 #, fuzzy

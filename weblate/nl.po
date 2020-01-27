@@ -11,7 +11,7 @@
 # Gaetan Deglorie <sharkithepointed@gmail.com>, 2018-2019.
 # jaron maene <jaron.maene@gmail.com>, 2018.
 # jef dered <themen098s@vivaldi.net>, 2019.
-# Julian <jdhoogvorst@gmail.com>, 2019.
+# Julian <jdhoogvorst@gmail.com>, 2019-2020.
 # Laurent Windels <laurentwindels@yahoo.com>, 2018.
 # Melvin Louwerse <aterlamia@gmail.com>, 2018.
 # Peter <pshijma@gmail.com>, 2018.
@@ -27,8 +27,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-20 15:59+0100\n"
-"PO-Revision-Date: 2020-01-19 13:13+0000\n"
-"Last-Translator: Stijn Hinlopen <f.a.hinlopen@gmail.com>\n"
+"PO-Revision-Date: 2020-01-23 15:06+0000\n"
+"Last-Translator: Julian <jdhoogvorst@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/nl/>\n"
 "Language: nl\n"
@@ -36,7 +36,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10.2\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -512,7 +512,7 @@ msgstr "Veel plezier met lezen en games maken met de Godot Engine!"
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -2416,6 +2416,9 @@ msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
+"Open het project dat u heeft gemaakt in :ref:"
+"`doc_intro_to_the_editor_interface` of maak een nieuwe aan. Deze actie opent "
+"de Godot editor:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
@@ -4446,6 +4449,8 @@ msgid ""
 "Godot will display a warning icon next to the node in the scene tree. You "
 "can ignore it for now. We will address it later."
 msgstr ""
+"Godot laat een waarschuwingsicoon zien naast de knoop in de scene tree. Deze "
+"kunt u nu negeren. Dit gaan we later behandelen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:73
 msgid ""
@@ -4818,7 +4823,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:350
 msgid "Choosing animations"
-msgstr ""
+msgstr "Animaties kiezen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:352
 msgid ""
@@ -4829,6 +4834,13 @@ msgid ""
 "``flip_v`` for downward movement. Let's place this code at the end of our "
 "``_process()`` function:"
 msgstr ""
+"Nu de speler kan bewegen, moeten we de animatie die de AnimatedSprite "
+"afspeelt veranderen op basis van de richting. We hebben een “right” "
+"animatie, die horizontaal gespiegeld kan worden met de eigenschap ``flip_h`’ "
+"voor naar het bewegen naar links, en een “up” animatie, die verticaal "
+"gespiegeld kan worden met de eigenschap ``flip_v`` voor het bewegen naar "
+"beneden. Laten we deze code plaatsen aan het einde van onze ``_process()`` "
+"functie:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:386
 msgid ""
@@ -4836,6 +4848,9 @@ msgid ""
 "programmers. Consider this code versus the shortened boolean assignment "
 "above:"
 msgstr ""
+"De booleaanse toewijzingen in de bovenstaande code zijn veelgebruikt door "
+"programmeurs. Beschouw deze code en de verkorte booleaanse opdracht "
+"hierboven:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:405
 msgid ""

@@ -12,6 +12,7 @@
 # Daniel Kulas <danielkulas27@gmail.com>, 2019.
 # Dariusz Król <rexioweb@gmail.com>, 2018-2019.
 # Dariusz Siek <dariuszynski@gmail.com>, 2018.
+# Dominik Szaradowski <d.szaradowski@gmail.com>, 2020.
 # Igor <igor.gielzak@gmail.com>, 2018.
 # Jacek Witkowski <jacek_witkowski@wp.pl>, 2018.
 # Jakub Korsak <jakub.korsak@protonmail.com>, 2020.
@@ -34,7 +35,7 @@
 # Sebastian Pasich <sebastian.pasich@gmail.com>, 2018-2019.
 # silicius <silicius42@gmail.com>, 2018.
 # Szymon Nowakowski <smnbdg13@gmail.com>, 2019.
-# Tomek <kobewi4e@gmail.com>, 2018-2019.
+# Tomek <kobewi4e@gmail.com>, 2018-2020.
 # Zamulacz <mcichocki@protonmail.com>, 2019.
 #
 msgid ""
@@ -42,8 +43,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-20 15:59+0100\n"
-"PO-Revision-Date: 2020-01-11 03:06+0000\n"
-"Last-Translator: Letero <jkurzynski93@gmail.com>\n"
+"PO-Revision-Date: 2020-01-23 15:05+0000\n"
+"Last-Translator: Dominik Szaradowski <d.szaradowski@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -52,7 +53,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.10.1\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -524,7 +525,7 @@ msgstr "Miłej zabawy podczas czytania i tworzenia gier w silniku Godot!"
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -941,7 +942,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Dla Godot 3.0 istnieje wsparcie dla glTF."
 
 #: ../../docs/about/faq.rst:156
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -1325,30 +1325,28 @@ msgstr ""
 "zmapowana do wstępnie przydzielonego bufora lub pamięci wirtualnej."
 
 #: ../../docs/about/faq.rst:299
-#, fuzzy
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
-"Używamego naszego własnego typu String, ponieważ ten z STL jest zbyt prosty "
-"i brakuje mu wsparcia umiędzynarodowiania."
+"Używamy naszego własnego typu String, ponieważ ten wprowadzony przez "
+"bibliotekę STL jest zbyt prosty i brakuje mu wsparcia internacjonalizacji."
 
 #: ../../docs/about/faq.rst:302
 msgid "Why does Godot not use exceptions?"
 msgstr "Dlaczego Godot nie używa wyjątków?"
 
 #: ../../docs/about/faq.rst:304
-#, fuzzy
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
-"Wierzymy w to, że niezależnie od wszystkiego, gry nie powinny crashować. "
-"Jeśli wydarzy się coś niespodziewanego Godot wyprintuje błąd (który można "
-"prześledzić nawet do skryptu), ale potem spróbuje jak najłagodniej wstać i "
-"działać dalej."
+"Wierzymy, że gry powinny działać stabilnie, niezależnie od wszystkiego. "
+"Jeśli wydarzy się coś niespodziewanego Godot wskaże błąd (który można "
+"prześledzić w skrypcie), ale potem spróbuje przywrócić program do "
+"prawidłowego działania, tak dobrze jak jest to możliwe."
 
 #: ../../docs/about/faq.rst:309
 msgid ""
@@ -1497,9 +1495,8 @@ msgid "Audio"
 msgstr "Dźwięk"
 
 #: ../../docs/about/docs_changelog.rst:29
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr ":ref:`Shadery <doc_shaders>`"
+msgstr ":ref:`doc_sync_with_audio`"
 
 #: ../../docs/about/docs_changelog.rst:32 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
@@ -1518,7 +1515,7 @@ msgstr ":ref:`Eksportowanie <class_exportowanie>`"
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
 msgid "Inputs"
-msgstr ""
+msgstr "Wejścia"
 
 #: ../../docs/about/docs_changelog.rst:40
 #, fuzzy
@@ -1629,7 +1626,7 @@ msgstr "Tworzenie zawartości"
 
 #: ../../docs/about/docs_changelog.rst:88
 msgid "Procedural geometry series:"
-msgstr ""
+msgstr "Geometria proceduralna:"
 
 #: ../../docs/about/docs_changelog.rst:84
 #, fuzzy

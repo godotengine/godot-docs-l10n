@@ -7,6 +7,7 @@
 # Alex Afterlife <main-site-maker@yandex.ru>, 2018-2019.
 # Alexander <loginrus@mail.ru>, 2019.
 # Alexander Danilov <modos189@protonmail.com>, 2019.
+# Alexander Lunev <placidbastard@gmail.com>, 2020.
 # Alexander Pushkar <alexanderpushkar86@gmail.com>, 2018.
 # Alexandr <cat-elf@yandex.ru>, 2019.
 # Alexandr Eremeev <ae125529@gmail.com>, 2019.
@@ -112,6 +113,7 @@
 # Михаил <gagaran480@gmail.com>, 2018.
 # Озвучивает R2 <magabumbum@gmail.com>, 2018.
 # Олег Бених <xlegioner@gmail.com>, 2019.
+# Павел Фанасков <lonelygriffin@gmail.com>, 2020.
 # Семён Рассохин <forzcross@gmail.com>, 2018.
 # Сергей <anaxronik@gmail.com>, 2019.
 #
@@ -120,7 +122,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-20 15:59+0100\n"
-"PO-Revision-Date: 2020-01-20 14:28+0000\n"
+"PO-Revision-Date: 2020-01-27 07:14+0000\n"
 "Last-Translator: Евгений <ge-rom@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
@@ -422,12 +424,12 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot это полный возможностей, кросс-платформенный игровой движок для "
-"создания 2D и 3D игр с помощью удобной среды разработки. Он предоставляет "
-"внушительный набор необходимых инструментов, чтобы пользователи могли "
-"сосредоточиться на создании игр без изобретения велосипедов. Игры могут быть "
-"экспортированы одним нажатием на множество платформ, включая главные "
-"десктопные (Linux, macOS, Windows), а также мобильные (Android, iOS) и веб-"
+"Godot Engine - многофункциональный, кросс-платформенный игровой движок, для "
+"создания 2D и 3D игр. Он предоставляет обширный набор распространенных "
+"инструментов, таким образом, пользователи могут сосредоточиться на создании "
+"игр без необходимости изобретать колесо. Игры могут быть экспортированы в "
+"один клик на ряд платформ, включая главные настольные платформы (Linux, "
+"macOS, Windows), а так же мобильные (Android, IOS) и веб-ориентированные "
 "платформы (HTML5)."
 
 #: ../../docs/about/introduction.rst:45
@@ -601,7 +603,7 @@ msgstr "Весёлого чтения и создания игр на движк
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "Вопросы и ответы"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -636,7 +638,7 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Вы можете бесплатно скачивать и использовать Godot для любых целей: личных, "
+"Вы можете свободно скачивать и использовать Godot для любых целей: личных, "
 "некоммерческих, коммерческих или иных."
 
 #: ../../docs/about/faq.rst:17
@@ -2025,25 +2027,23 @@ msgid "Project manager"
 msgstr "Менеджер проекта"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
-"Когда вы запускаете Godot, первое окно, которое вы увидите - Менеджер "
-"Проектов. Он позволяет создавать, удалять, импортировать или запускать "
-"игровые проекты."
+"Когда вы запускаете Godot, первое окно, которое вы увидите - менеджер "
+"проектов. Так как у вас нет проектов появится всплывающее окно спрашивающее "
+"хотите ли вы открыть библиотеку шаблонов, просто нажмите отмена, мы вернемся "
+"к этому позже."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
-#, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"Когда вы запускаете Godot, первое окно, которое вы увидите - Менеджер "
-"Проектов. Он позволяет создавать, удалять, импортировать или запускать "
-"игровые проекты."
+"Теперь вы должны увидеть менеджер проектов. Он позволяет создавать, удалять, "
+"импортировать или запускать игровые проекты."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
@@ -2054,7 +2054,6 @@ msgstr ""
 "интерфейса редактора."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -2062,25 +2061,26 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"Во вкладке Шаблоны вы можете скачать шаблоны проектов с открытым исходным "
-"кодом и демо, которые могут помочь вам начать работу быстрее. Просто "
-"выберите шаблон или демо, которое вы хотите, кликните Скачать, после "
-"завершения скачивания нажмите кнопку Установить и выберите место, куда вы "
-"хотите поместить проект."
+"Во вкладке **Шаблоны** вы можете скачать шаблоны проектов с открытым "
+"исходным кодом и демо из библиотеки шаблонов, которые помогут вам начать "
+"работу быстрее. Просто выберите шаблон или демо, которое хотите, кликните "
+"загрузить, после завершения скачивания нажмите кнопку установить и выберите "
+"место, куда вы хотите поместить проект. Вы можете узнать больше об этом в :"
+"ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
 msgstr "Создание или импортирование проекта"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
 "Чтобы создать новый проект, нажмите кнопку ``Новый Проект`` справа. Дайте "
-"ему имя и выберите пустую папку для сохранения на вашем компьютере."
+"ему имя, выберите пустую папку для сохранения на вашем компьютере и выберете "
+"программу исполнения."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
@@ -2091,7 +2091,6 @@ msgstr ""
 "расположение папки или ввести путь к папке вручную через поле Путь Проекта."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
-#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
@@ -2099,11 +2098,10 @@ msgid ""
 "project."
 msgstr ""
 "Когда вы видите зеленую галочку справа, это означает, что движок обнаружил "
-"пустую папку и вы можете нажать кнопку ``Создать``. Godot создаст для вас "
-"проект и откроет его в редакторе."
+"пустую папку. Вы также можете нажать кнопку ``Создать`` рядом с названием "
+"вашего проекта, будет создана пустая папка с таким именем для проекта."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
-#, fuzzy
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -2111,31 +2109,28 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
-"На этом этапе вы также можете выбрать движок рендеринга (OpenGL ES 3.0 или "
+"Наконец, вам нужно выбрать какой отрисовщик использовать (OpenGL ES 3.0 или "
 "OpenGL ES 2.0). Преимущества и недостатки каждого перечислены ниже, чтобы "
-"облегчить вам выбор, и вы можете обратиться к :ref:"
+"облегчить вам выбор, вы можете обратиться к :ref:"
 "`doc_gles2_gles3_differences` за подробностями. Обратите внимание, что вы "
-"можете сменить движок в настройках проекта, если позже вы измените своё "
-"мнение. Для этого урока подойдёт любой."
+"можете сменить движок в настройках проекта, если позже вы передумаете. Для "
+"этого урока подойдёт любой."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"Когда вы видите зеленую галочку справа, это означает, что движок обнаружил "
-"пустую папку и вы можете нажать кнопку ``Создать``. Godot создаст для вас "
-"проект и откроет его в редакторе."
+"Как только вы закончите, нажмите ``Создать и редактировать``. Godot создаст "
+"для вас проект и откроет его в редакторе."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"В следующий раз, когда вы откроете Godot, вы увидите ваш новый проект в "
-"списке. Дважды щелкните по нему чтобы открыть его в редакторе."
+"В следующий раз, когда вы откроете менеджер проекта, вы увидите ваш новый "
+"проект в списке. Дважды кликните по нему, чтобы открыть его в редакторе."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -2156,12 +2151,12 @@ msgid "Your first look at Godot’s editor"
 msgstr "Ваш первый взгляд на редактор Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with empty docks on the right side."
 msgstr ""
-"Сейчас вы должны увидеть этот интерфейс с пустыми доками с правой стороны."
+"Добро пожаловать в Godot! Когда ваш проект открыт, вы должны увидеть "
+"интерфейс редактора с пустыми панелями справа."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -2172,13 +2167,12 @@ msgstr ""
 "области** и **кнопки воспроизведения**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
-#, fuzzy
 msgid ""
 "On the bottom left side, you have the **FileSystem dock**, where you’ll "
 "manage your project files and assets."
 msgstr ""
-"Слева у вас есть **файловая система**, где вы будете управлять файлами и "
-"ассетами вашего проекта."
+"Снизу, с левой стороны у вас есть панель **Файловая система**, где вы будете "
+"управлять файлами и ассетами вашего проекта."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
@@ -2240,13 +2234,12 @@ msgstr ""
 "нему."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
 msgstr ""
-"Обратите внимание на текст [перспектива] под панелью инструментов. Это "
-"кнопка, которая открывает список опций, связанных с 3D-окном просмотра."
+"Обратите внимание на кнопку *Перспективный* под панелью инструментов. Она "
+"открывает список опций, связанных с 3D-окном просмотра."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""
@@ -2492,6 +2485,9 @@ msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
+"Откройте проект, который вы сделали в :ref:"
+"`doc_intro_to_the_editor_interface`, или создайте еще один. Это откроет "
+"редактор Godot:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
@@ -4516,6 +4512,8 @@ msgid ""
 "Godot will display a warning icon next to the node in the scene tree. You "
 "can ignore it for now. We will address it later."
 msgstr ""
+"Godot отобразит значок предупреждения рядом с этим узлом в древе сцены. Пока "
+"что не обращайте внимание на это. Мы рассмотрим это позже."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:73
 msgid ""
@@ -6007,6 +6005,8 @@ msgid ""
 "Since we are already in the *Window* settings, we should also set under "
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
+"Так как мы уже в настройках *Window*, нам так же необходимо установить для "
+"*Handheld* *Orientation* значение \"portrait\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
@@ -6035,6 +6035,9 @@ msgid ""
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
 "by clicking the folder icon and selecting it."
 msgstr ""
+"Главная сцена это то, где начинается ваша игра. В *Project -> Project "
+"Settings -> Application -> Run*, задайте для *Main Scene* \"Main.tscn\" "
+"кликнув по иконке папки и выбрав его."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
@@ -6077,12 +6080,10 @@ msgid "Export presets"
 msgstr "Экспорт предустановок(пресетов)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
-msgstr ""
-"Теперь можно изменить настройки экспорта, нажав на *Project -> Export*:"
+msgstr "Дальше вы можете настроить экспорт, кликнув на *Проект -> Экспорт*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:158
 msgid ""
@@ -6239,14 +6240,14 @@ msgstr ""
 "создали."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:230
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
 "to *Screen* and set *Orientation* to \"Portrait\"."
 msgstr ""
 "Теперь вы готовы экспортировать. Нажмите на *Проект-> Экспорт* и добавьте "
-"предустановку для Android (см. выше)."
+"предустановку для Android (см. выше). Выберете Android и в *Параметры* "
+"перейдите к *Screen* и установите *Orientation* в \"Portrait\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""
@@ -16950,12 +16951,18 @@ msgid ""
 "to apply some of the guidelines below. When that happens, use your best "
 "judgment, and ask fellow developers for insights."
 msgstr ""
+"Руководства по стилю не являются жестким сводом правил. Иногда у вас не "
+"будет возможности применить ниже приведенные рекомендации.  Когда это "
+"случится, поступайте по своему усмотрению и попросите коллег-разработчиков "
+"поделиться своими соображениями."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:19
 msgid ""
 "In general, keeping your code consistent in your projects and within your "
 "team is more important than following this guide to a tee."
 msgstr ""
+"В целом, поддержание согласованности кода в ваших проектах и в команде "
+"важнее, чем следование этому руководству."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:22
 msgid ""
@@ -16993,6 +17000,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:98
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
+"Используйте символ перевода строки в конце каждого файла. *(editor default)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:99
 #, fuzzy
@@ -17072,7 +17080,7 @@ msgstr "Длительность анимации"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:166
 msgid "Keep individual lines of code under 100 characters."
-msgstr ""
+msgstr "Придерживайтесь длине строк кода не более 100 символов."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:168
 msgid ""
@@ -17080,6 +17088,9 @@ msgid ""
 "code on small displays and with two scripts opened side-by-side in an "
 "external text editor. For example, when looking at a differential revision."
 msgstr ""
+"Если можете, постарайтесь придерживаться длине строк в 80 символов. Это "
+"поможет читать код на небольших дисплеях и с двумя скриптами открытыми бок о "
+"бок в стороннем текстовом редакторе. Например, чтобы посмотреть на различия."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:173
 #, fuzzy
@@ -17098,7 +17109,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:196
 msgid "The only exception to that rule is the ternary operator:"
-msgstr ""
+msgstr "Единственным исключением из этого правила является тернарный оператор:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:203
 #, fuzzy
@@ -17124,6 +17135,8 @@ msgid ""
 "Prefer the plain English versions of boolean operators, as they are the most "
 "accessible:"
 msgstr ""
+"Отдавайте предпочтение простым английским версиям логических операторов, так "
+"как они наиболее доступны:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:227
 #, fuzzy
@@ -17140,6 +17153,8 @@ msgid ""
 "You may also use parentheses around boolean operators to clear any "
 "ambiguity. This can make long expressions easier to read."
 msgstr ""
+"Вы также можете использовать круглые скобки вокруг логических операторов во "
+"избежание неоднозначностей. Это может облегчить чтение длинных выражений."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:248
 #, fuzzy
@@ -17162,6 +17177,8 @@ msgid ""
 "<kbd>Ctrl</kbd> <kbd>K</kbd>. This feature adds a single # sign at the start "
 "of the selected lines."
 msgstr ""
+"В редакторе скриптов, чтобы закомментировать выбранный код, нажмите "
+"<kbd>Ctrl</kbd> <kbd>K</kbd>. Это добавит символ # в начале выбранных строк."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:274
 msgid "Whitespace"
@@ -17179,7 +17196,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:299
 msgid "Don't use spaces to align expressions vertically:"
-msgstr ""
+msgstr "Не используйте пробелы для вертикального выравнивания выражений:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:308
 msgid "Quotes"
@@ -17217,7 +17234,7 @@ msgstr "Классы и Узлы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:339
 msgid "Use PascalCase for class and node names:"
-msgstr ""
+msgstr "Используйте PascalCase для имен классов и узлов:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:345
 #, fuzzy
@@ -48102,8 +48119,8 @@ msgid ""
 "The :ref:`class_AnimationPlayer` node allows you to create anything from "
 "simple to complex animations."
 msgstr ""
-"Узел :ref:`class_AnimationPlayer` позволяет создавать вам что угодно, от "
-"простой до сложной анимации."
+"Узел :ref:`AnimationPlayer` позволяет создавать вам что угодно, от простой "
+"до сложной анимации."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:12
 msgid "In this guide you learn to:"
@@ -48146,8 +48163,8 @@ msgid ""
 "To use the animation tools we first have to create an :ref:"
 "`class_AnimationPlayer` node."
 msgstr ""
-"Чтобы использовать инструменты анимации, мы сначала должны создать узел :ref:"
-"`class_AnimationPlayer`."
+"Чтобы использовать инструменты анимации, мы сначала должны создать узел  :"
+"ref:`class_AnimationPlayer`."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:30
 msgid ""
@@ -48190,7 +48207,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:55
 msgid "The tracks listing"
-msgstr "Список дорожек"
+msgstr "Список дорожек(треков)"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:56
 msgid "The timeline with keyframes"
@@ -48201,8 +48218,8 @@ msgid ""
 "The timeline and track controls, where you can zoom the timeline and edit "
 "tracks for example."
 msgstr ""
-"Управление шкалой времени и дорожками, где ты можешь зуммировать шкалу "
-"времени и редактировать дорожки."
+"Управление шкалой времени и треками, где вы можете масштабировать шкалу "
+"времени и редактировать треки."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:61
 msgid "Computer animation relies on keyframes"
@@ -48248,7 +48265,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:87
 msgid "The timeline in the animation panel"
-msgstr "Шкала времени в панели анимации"
+msgstr "Шкала времени на панели анимации"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:89
 msgid ""
@@ -48313,7 +48330,7 @@ msgid ""
 msgstr ""
 "Добавление узлов с анимацией в качестве дочерних к узлу AnimationPlayer не "
 "требуется, но это хороший способ отличить узлы с анимацией от узлов без "
-"анимации в дереве сцен."
+"анимации в дереве сцены."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:130
 msgid ""
@@ -48337,8 +48354,8 @@ msgstr "Добавление трека"
 msgid ""
 "To add a new track for our sprite, select it and take a look in the toolbar:"
 msgstr ""
-"Чтобы добавить новый трек для нашего спрайта, выберите его и посмотрите на "
-"панель инструментов:"
+"Чтобы добавить новый трек для нашего спрайта, выберите спрайт и посмотрите "
+"на панель инструментов:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:149
 msgid "Convenience buttons"
@@ -48378,7 +48395,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:167
 msgid "The sprite track"
-msgstr ""
+msgstr "Дорожка спрайта"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:170
 msgid "The second keyframe"
@@ -48400,7 +48417,7 @@ msgid ""
 msgstr ""
 "Допустим, мы хотим, чтобы переход к другой точке занял 2 секунды. По "
 "умолчанию анимация длится всего 1 секунду, поэтому измените ее на 2 в "
-"элементах управления временной шкалы в нижней части панели анимации."
+"элементах управления временной шкалой(в нижней части панели анимации)."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:182
 msgid "Animation length"
@@ -48518,32 +48535,40 @@ msgid ""
 "In normal animations, you usually use \"Continuous\". The other types are "
 "used to script complex animations."
 msgstr ""
+"Для нормальной анимации используется режим «Непрерывная». Другие режимы "
+"используются для сложных анимаций."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:246
 msgid ""
 "The interpolation tells Godot how to calculate the frame values between the "
 "keyframes. These interpolation modes are supported:"
 msgstr ""
+"Интерполяция говорит Godot, как рассчитать значения кадра между ключевыми "
+"кадрами. Поддерживаются следующие режимы интерполяции:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:249
 msgid "Nearest: Set the nearest keyframe value"
-msgstr ""
+msgstr "Ближайший(Nearest): установить значение ближайшего ключевого кадра"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:250
 msgid ""
 "Linear: Set the value based on a linear function calculation between the two "
 "keyframes"
 msgstr ""
+"Линейный(Linear): установить значение на основе вычисления линейной функции "
+"между двумя ключевыми кадрами"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:252
 msgid ""
 "Cubic: Set the value based on a cubic function calculation between the two "
 "keyframes"
 msgstr ""
+"Кубическая(Cubic): установить значение на основе вычисления кубической "
+"функции между двумя ключевыми кадрами"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:258
 msgid "Track interpolation"
-msgstr ""
+msgstr "Переходы трека"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:260
 msgid ""
@@ -48551,16 +48576,21 @@ msgid ""
 "slower at a keyframe and faster between keyframes. This is usually used for "
 "character animation. Linear interpolation creates more of a robotic movement."
 msgstr ""
+"Кубическая интерполяция приводит к более естественному движению, плавный "
+"переход между ключевыми кадрами. Это обычно используется для анимации "
+"персонажа. Линейная интерполяция создает ощущение роботизированного движения."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:265
 msgid ""
 "Godot supports two loop modes, which affect the animation if it's set to "
 "loop:"
 msgstr ""
+"Godot поддерживает два режима обработки зацикливания, которые влияют на "
+"анимацию:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:271
 msgid "Loop modes"
-msgstr ""
+msgstr "Режимы циклов"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:273
 msgid ""
@@ -48568,6 +48598,10 @@ msgid ""
 "the last keyframe for this track. When the first keyframe is reached again, "
 "the animation will reset to its values."
 msgstr ""
+"Обрезание Перехода Зацикливания: при выборе этого варианта анимация "
+"останавливается после последнего ключевого кадра для этой дорожки. Когда "
+"первый ключевой кадр будет достигнут снова, анимация вернется к своим "
+"значениям."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:276
 msgid ""
@@ -48575,17 +48609,22 @@ msgid ""
 "animation after the last keyframe to reach the values of the first keyframe "
 "again."
 msgstr ""
+"Обработка Перехода Зацикливания: Godot рассчитывает анимацию после "
+"последнего ключевого кадра, чтобы снова достичь значений первого ключевого "
+"кадра."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:281
 #: ../../docs/tutorials/animation/introduction_2d.rst:294
 msgid "Keyframes for other properties"
-msgstr ""
+msgstr "Ключевые кадры для других свойств"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:283
 msgid ""
 "Godot doesn't restrict you to only edit transform properties. Every property "
 "can be used as a track where you can set keyframes."
 msgstr ""
+"В Godot можно анимировать не только свойства трансформации. Любое свойство "
+"может иметь трек с ключевыми кадрами."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:286
 msgid ""
@@ -48594,10 +48633,14 @@ msgid ""
 "button and Godot automatically adds a track and keyframe to the current "
 "animation."
 msgstr ""
+"Если вы выберете свой спрайт, когда панель анимации видима, вы получите "
+"маленькую кнопку ключевого кадра (около свойств спрайта). Нажмите на эту "
+"кнопку, и Godot автоматически добавит трек и ключевой кадр к текущей "
+"анимации."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:297
 msgid "Edit keyframes"
-msgstr ""
+msgstr "Редактирование ключевых кадров"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:299
 msgid ""
@@ -48605,6 +48648,9 @@ msgid ""
 "bring up the keyframe editor in the inspector. You can use this to directly "
 "edit its values."
 msgstr ""
+"Для редактирования ключевых кадров вы можете щелкнуть по ним, чтобы открыть "
+"редактор ключевых кадров в инспекторе. Вы можете использовать это для "
+"редактирования значений выбранного ключевого кадра."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:306
 msgid "Keyframe editor editing a key"
@@ -48616,16 +48662,22 @@ msgid ""
 "clicking and dragging the easing setting. This tells Godot, how to change "
 "the property values when it reaches this keyframe."
 msgstr ""
+"Кроме того, вы можете также изменить значение параметра easing(замедление) "
+"для этого ключевого кадра, щелкнув и перетащив параметр. Это говорит Godot, "
+"как изменять значения свойства, когда анимация достигает этого ключевого "
+"кадра."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:312
 msgid ""
 "You usually tweak your animations this way, when the movement doesn't \"look "
 "right\"."
 msgstr ""
+"Используйте такой способ для настройки своей анимации, когда движение "
+"выглядит \"не очень\"."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:316
 msgid "Advanced: Call Method tracks"
-msgstr ""
+msgstr "Дополнительно: Трек Вызова Метода"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:318
 msgid ""
@@ -48634,12 +48686,18 @@ msgid ""
 "index` you know that each node type is a class and has a bunch of callable "
 "methods."
 msgstr ""
+"Движок анимации Godot на этом не останавливается. Если вы уже знакомы с "
+"языком сценариев Godot :ref:`doc_gdscript`и :doc:`/classes/index`, вы "
+"знаете, что каждый узел в сцене является экземпляром класса и имеет "
+"множество методов которые можно вызывать."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:324
 msgid ""
 "For example, the :ref:`class_AudioStreamPlayer` node type has a method to "
 "play an audio stream."
 msgstr ""
+"Например, тип узла :ref:`class_AudioStreamPlayer` имеет метод для "
+"воспроизведения аудиопотока."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:327
 msgid ""
@@ -48649,6 +48707,11 @@ msgid ""
 "holds the name and arguments of a method, that Godot should call when it "
 "reaches this keyframe."
 msgstr ""
+"Разве не здорово было бы вызывать метод на определенном ключевом кадре "
+"анимации? Вот где «Трек Вызова Метода» пригодятся. Эти треки ссылаются на "
+"узел, но на этот раз без ссылки на свойство. Вместо этого ключевой кадр "
+"содержит имя и аргументы метода, который Godot должен вызывать при "
+"достижении этого ключевого кадра."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:333
 msgid ""
@@ -48656,6 +48719,10 @@ msgid ""
 "specific keyframe. Normally to play audio you should use an audio track, but "
 "for the sake of demonstrating methods we're going to do it this way."
 msgstr ""
+"В качестве демонстрации, мы собираемся использовать «Трек Вызова Метода» для "
+"воспроизведения аудио на определенном ключевом кадре. Обычно для "
+"воспроизведения аудио вы должны использовать “Трек Аудио Дорожки”, но для "
+"демонстрации мы собираемся сделать это следующим образом."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:337
 msgid ""
