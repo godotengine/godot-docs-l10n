@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
 msgid "Customizing mouse cursor"
-msgstr ""
+msgstr "マウスカーソルのカスタマイズ"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:6
 msgid ""
@@ -27,28 +27,35 @@ msgid ""
 "order to suit the overall design. There are two ways to customize the mouse "
 "cursor:"
 msgstr ""
+"全体的なデザインに合うように、ゲームのマウスカーソルの外観を変更することがで"
+"きます。マウスカーソルをカスタマイズするには2つの方法があります:"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:8
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:14
 msgid "Using project settings"
-msgstr ""
+msgstr "プロジェクト設定を使用する"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:9
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:26
 msgid "Using a script"
-msgstr ""
+msgstr "スクリプトを使用する"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:11
 msgid ""
 "Using project settings is a simpler (but more limited) way to customize the "
 "mouse cursor. The second way is more customizable, but involves scripting."
 msgstr ""
+"プロジェクト設定の使用は、マウスカーソルをカスタマイズするためのより簡単な(た"
+"だしより制限された)方法です。 2番目の方法はよりカスタマイズ可能ですが、スクリ"
+"プトを使用します。"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:16
 msgid ""
 "Open project settings, go to Display>Mouse Cursor. You will see Custom Image "
 "and Custom Image Hotspot."
 msgstr ""
+"プロジェクト設定を開き、[Display] -> [Mouse Cursor]に移動します。\"Custom "
+"Image\" と \"Custom Image Hotspot\" が表示されます。"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:20
 msgid ""
@@ -56,34 +63,41 @@ msgid ""
 "cursor. Custom Hotspot is the point in the image that you would like to use "
 "as the cursor's detection point."
 msgstr ""
+"カスタムイメージ(Custom Image)は、マウスカーソルとして設定する目的のイメージ"
+"です。カスタムホットスポット(Custom Hotspot)は、カーソルの検出ポイントとして"
+"使用する画像内のポイントです。"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:23
 msgid "The custom image **must** be less than 256x256."
-msgstr ""
+msgstr "カスタムイメージは256x256未満である\\ **必要**\\ があります。"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:28
 msgid "Create a Node and attach the following script."
-msgstr ""
+msgstr "ノードを作成し、次のスクリプトを添付します。"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:64
 msgid ""
 "Check :ref:`Input.set_custom_mouse_cursor() "
 "<class_Input_method_set_custom_mouse_cursor>`."
 msgstr ""
+":ref:`Input.set_custom_mouse_cursor() "
+"<class_Input_method_set_custom_mouse_cursor>` を確認してください。"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:68
 msgid "Demo project"
-msgstr ""
+msgstr "デモプロジェクト"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:70
 msgid ""
 "Find out more by studying this demo project: https://github.com/"
 "guilhermefelipecgs/custom_hardware_cursor"
 msgstr ""
+"このデモプロジェクトを勉強して詳細をご覧ください: https://github.com/"
+"guilhermefelipecgs/custom_hardware_cursor"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:74
 msgid "Cursor list"
-msgstr ""
+msgstr "カーソルリスト"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:76
 msgid ""
@@ -91,3 +105,6 @@ msgid ""
 "**CursorShape** enum), there are multiple mouse cursors you can define. "
 "Which ones you want to use depends on your use case."
 msgstr ""
+":ref:`Input <class_Input>` クラス(**CursorShape** 列挙型を参照)で文書化されて"
+"いるように、定義できるマウスカーソルは複数あります。どちらを使用するかは、"
+"ユースケースによって異なります。"

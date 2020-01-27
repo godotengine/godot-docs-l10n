@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,7 +74,6 @@ msgstr ""
 "있기 때문에, 우리는 게임을 클릭-그리고-움직임 입력 스타일로 만들어야합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -83,28 +82,30 @@ msgid ""
 "input. In the \"Project Settings\" under *Input Devices* and *Pointing*, set "
 "*Emulate Touch From Mouse* to \"On\"."
 msgstr ""
-"기본적으로 Godot는 터치 입력에서 마우스 입력을 에뮬레이트합니다. 즉, 마우스 "
-"이벤트로 발생하도록 코딩된 것을, 터치로도 조작할 수 있습니다. 어떤 이유로든"
-"지 그것을 비활성화하거나, 마우스 입력에서 터치를 에뮬레이트하고 싶다면, \"프"
-"로젝트 설정\"에서 *Input Devices*\\ 와 *Pointing*\\ 으로 할 수 있습니다"
+"기본적으로 Godot는 터치 입력에서 마우스 입력을 재현합니다. 즉, 마우스 이벤트"
+"로 발생할 수 있는 모든 일은 터치 이벤트로도 가능하다는 것입니다. 반대로 Godot"
+"는 마우스 클릭에서 터치 입력을 재현할 수 있는데, 터치 입력으로 게임을 바꾼 뒤"
+"에도 컴퓨터에서도 게임이 가능하도록 만들 때 필요합니다. \"프로젝트 설정"
+"(Project Settings)\"에서 *Input Devices*\\ 의 *Pointing*\\ 으로 간 뒤, "
+"*Emulate Touch From Mouse*\\ 를 \"사용(On)\"으로 설정하세요."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:39
-#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to *Display*, then click on *Window*. "
 "In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
-"입력 방식을 바꾸기 전에, 프로젝트 설정에서 *Display*\\ 로 갑니다, 그리고 "
-"*Window*\\ 를 클릭합니다. *Stretch* 옵션에서, *Mode*\\ 를 \"2d\"로 설정하고 "
-"*Aspect*\\ 를 \"keep\"으로 설정합니다. 이걸로 다른 크기의 화면에서도 게임은 "
-"일정하게 유지됩니다."
+"그리고 다른 화면에서 게임의 크기는 일정하게 만들어야 합니다. 따라서 프로젝트 "
+"설정(Project Settings)에서 *Display*\\ 의 *Window*\\ 로 갑니다. *Stretch* 설"
+"정에서 *Mode*\\ 를 \"2d\"로 설정하고, *Aspect*\\ 를 \"keep\"으로 설정합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
 msgid ""
 "Since we are already in the *Window* settings, we should also set under "
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
+"*Window* 설정은 마쳤지만, *Handheld*\\ 의 *Orientation*\\ 을 \"portrait\"로 "
+"따로 설정해야 합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
@@ -125,20 +126,18 @@ msgstr ""
 "다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:129
-#, fuzzy
 msgid "Setting a main scene"
-msgstr "씬 설정하기"
+msgstr "메인 씬 설정하기"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
-#, fuzzy
 msgid ""
 "The main scene is the one that your game will start in. In *Project -> "
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
 "by clicking the folder icon and selecting it."
 msgstr ""
-"작업 표시줄 아이콘을 바꾸기 위해선, **프로젝트 → 프로젝트 설정 → Application "
-"→ Config → Icon**\\ 으로 갑니다. 폴더 아이콘을 클릭하고 원하는 아이콘을 선택"
-"합니다."
+"메인 씬은 게임이 시작하는 씬입니다. *프로젝트(Project) -> 프로젝트 설정"
+"(Project Settings) -> Application -> Run*\\ 에서, *Main Scene*\\ 에 있는 폴"
+"더 아이콘을 클릭하고 \"Main.tscn\"을 설정합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid "Export templates"
@@ -177,11 +176,12 @@ msgid "Export presets"
 msgstr "프리셋 내보내기"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
-msgstr "다음은, *프로젝트 -> 내보내기* 로 내보내기 설정을 구성할 수 있습니다:"
+msgstr ""
+"다음은 *프로젝트(Project) -> 내보내기(Export)*\\ 에서 내보내기 설정을 구성할 "
+"수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:158
 msgid ""
@@ -325,35 +325,37 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
-"Godot에서 *편집기 -> 편집기 설정* 으로 가서 *Export/Android*섹션을 선택합니"
+"Godot에서 *편집기 -> 편집기 설정* 으로 가서 *Export/Android* 섹션을 선택합니"
 "다. 여기에서, 당신은 Android SDK 응용 프로그램의 위치와 당신이 방금 만든 키 "
 "저장소의 위치를 설정해줘야 합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:230
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
 "to *Screen* and set *Orientation* to \"Portrait\"."
 msgstr ""
-"이제 만들 준비가 됬습니다. *프로젝트 -> 내보내기* 를 누르고 (위에서 본) "
-"Android의 프리셋을 추가하세요."
+"이제 내보낼 준비가 끝났습니다. *프로젝트(Project) -> 내보내기(Export)*\\ 를 "
+"클릭하고, Android 용 프리셋을 추가하세요 (위의 추가하기). Android 프리셋을 선"
+"택하고 *옵션* 아래의 *Screen*\\ 으로 가서 *Orientation*\\ 을 \"Portrait\"로 "
+"설정하세요."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
-"\"프로젝트 내보내기\" 버튼을 클릭하면 Godot가 APK를 만들고 휴대용 기기에 다운"
-"로드 할 수 있게 됩니다. 명령줄에서 하려면, 이것을 사용하세요:"
+"\"프로젝트 내보내기(Export Project)\" 버튼을 클릭하면 기기에서 다운로드할 수 "
+"있는 APK 파일을 만들어 냅니다. 이 작업을 명령줄에서 하려면 다음 코드를 입력하"
+"세요:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:241
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
 msgstr ""
-"당신의 기기가 *개발자 모드* 이어야 합니다. 자세한 내용은 장치 설명서를 참고하"
-"세요."
+"기기가 *개발자 모드*\\ 이어야 합니다. 자세한 내용은 기기의 설명서를 참고하세"
+"요."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:244
 msgid ""
@@ -361,14 +363,14 @@ msgid ""
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
 "area:"
 msgstr ""
-"시스템이 지원한다면, Godot의 실행 버튼 영역에 \"원 클릭 배포\" 버튼이 표시되"
-"어 호환 가능한 Android 기기와 연결합니다:"
+"시스템이 지원한다면, 호환하는 Android 기기와 연결할 때 Godot의 실행 및 테스"
+"트 버튼 영역에 \"원 클릭 배포\" 버튼이 나타납니다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:249
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
-msgstr "이 버튼을 누르면 APK를 만들고 당신의 기기로 복사됩니다."
+msgstr "이 버튼만 클릭하면 APK가 만들어지고 그 사본이 기기에 설치됩니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
 msgid "iOS"

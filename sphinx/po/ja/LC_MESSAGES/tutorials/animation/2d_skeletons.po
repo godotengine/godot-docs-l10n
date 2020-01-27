@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:4
 msgid "2D skeletons"
-msgstr ""
+msgstr "2Dスケルトン"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:7
 msgid "Introduction"
@@ -32,6 +32,10 @@ msgid ""
 "function is not used as often, it's difficult to find mainstream software "
 "aimed for this."
 msgstr ""
+"3Dを使用する場合、スケルタル(ボーン)変形はキャラクターやクリーチャーによく見"
+"られ、ほとんどの3Dモデリングアプリケーションはそれをサポートしています。 2Dの"
+"場合、この機能はあまり使用されないため、これを目的とした主流のソフトウェアを"
+"見つけることは困難です。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:13
 msgid ""
@@ -39,34 +43,45 @@ msgid ""
 "Dragonbones. From Godot 3.1 onwards, though, this functionality is supported "
 "built-in."
 msgstr ""
+"1つのオプションは、SpineやDragonbonesなどのサードパーティソフトウェアでアニ"
+"メーションを作成することです。ただし、Godot 3.1以降では、この機能は組み込みで"
+"サポートされています。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:17
 msgid ""
 "Why would you want to do skeletal animations directly in Godot? The answer "
 "is that there are many advantages to it:"
 msgstr ""
+"スケルタルアニメーションをGodotで直接行いたいのはなぜですか？答えは、多くの利"
+"点があることです:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:20
 msgid ""
 "Better integration with the engine, so less hassle importing and editing "
 "from an external tool."
 msgstr ""
+"エンジンとの統合が改善されているため、外部ツールからのインポートや編集の手間"
+"が軽減されます。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:22
 msgid ""
 "Ability to control particle systems, shaders, sounds, call scripts, colors, "
 "transparency, etc. in animations."
 msgstr ""
+"アニメーションのパーティクルシステム、シェーダー、サウンド、スクリプト呼出"
+"し、色、透明度などを制御する能力。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:24
 msgid ""
 "The built-in skeletal system in Godot is very efficient and designed for "
 "performance."
 msgstr ""
+"Godotに組み込まれているスケルタルシステムは非常に効率的であり、パフォーマンス"
+"のために設計されています。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:27
 msgid "The following tutorial will, then, explain 2D skeletal deformations."
-msgstr ""
+msgstr "次のチュートリアルでは、2Dスケルタル変形について説明します。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:30
 msgid "Setup"
@@ -78,6 +93,8 @@ msgid ""
 "`doc_cutout_animation` tutorial to gain a general understanding of animating "
 "within Godot."
 msgstr ""
+"始める前に、\\ :ref:`doc_cutout_animation` チュートリアルを実行して、Godotで"
+"のアニメーション化の一般的な理解を得ることをお勧めします。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:38
 msgid ""
@@ -85,6 +102,9 @@ msgid ""
 "character. Download it from :download:`gBot_pieces.png <img/gBot_pieces."
 "png>` or save the image below."
 msgstr ""
+"このチュートリアルでは、単一の画像を使用してキャラクターを構築します。\\ :"
+"download:`gBot_pieces.png <img/gBot_pieces.png>` からダウンロードするか、下の"
+"画像を保存して下さい。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:44
 msgid ""
@@ -92,6 +112,9 @@ msgid ""
 "`gBot_complete.png <img/gBot_complete.png>` to have a good reference for "
 "putting the different pieces together."
 msgstr ""
+"さまざまなピースをまとめるための良いリファレンスとして、最終的なキャラクター"
+"画像をダウンロードすることもお勧めします。\\ :download:`gBot_complete.png "
+"<img/gBot_complete.png>` を用意してください。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:51
 msgid "Creating the polygons"
@@ -103,30 +126,40 @@ msgid ""
 "character, you may want to use a ``KinematicBody2D``). For ease of use, an "
 "empty 2D node is created as a root for the polygons."
 msgstr ""
+"モデルの新しいシーンを作成します(アニメーション化されたキャラクターになる場合"
+"は ``KinematicBody2D`` を使用できます)。使いやすいように、空の2Dノードをポリ"
+"ゴンのルートとして作成します。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:57
 msgid ""
 "Begin with a ``Polygon2D`` node. There is no need to place it anywhere in "
 "the scene for now, so simply create it like this:"
 msgstr ""
+"``Polygon2D``ノードから始めます。現時点では、シーンのどこかに配置する必要はあ"
+"りませんので、次のように作成するだけです:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:62
 msgid ""
 "Select it and assign the texture with the character pieces you have "
 "downloaded before:"
 msgstr ""
+"それを選択し、テクスチャにダウンロードしておいたキャラクターのピース集を割り"
+"当てます:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:67
 msgid ""
 "Drawing a polygon directly is not advised. Instead, open the \"UV\" dialog "
 "for the polygon:"
 msgstr ""
+"ポリゴンを直接描画することはお勧めしません。代わりに、ポリゴンの \"UV\" ダイ"
+"アログを開きます:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:72
 msgid ""
 "Head over to the *Points* mode, select the pencil and draw a polygon around "
 "the desired piece:"
 msgstr ""
+"*点* モードに移動し、鉛筆を選択し、目的のピースの周りにポリゴンを描きます:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:77
 msgid ""
@@ -134,22 +167,29 @@ msgid ""
 "dialog again and replace the old polygon with another one in the new desired "
 "piece."
 msgstr ""
+"ポリゴンノードを複製し、適切な名前を付けます。次に、\"UV\" ダイアログを再度開"
+"き、古いポリゴンを希望する新しいピース用の別のポリゴンに置き換えます。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:81
 msgid ""
 "When you duplicate nodes and the next piece has a similar shape, you can "
 "edit the previous polygon instead of drawing a new one."
 msgstr ""
+"ノードを複製したとき、次のピースの形状が今のものと似ている場合は、新しいポリ"
+"ゴンを描画する代わりに前のポリゴンを編集できます。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:84
+#, fuzzy
 msgid ""
 "After moving the polygon, remember to update the UV by selecting Edit -> "
-"Polygon -> UV” in the Polygon 2D UV Editor."
+"\"Polygon -> UV\" in the Polygon 2D UV Editor."
 msgstr ""
+"ポリゴンを移動した後、ポリゴン2D UVエディタで[編集] -> [Polygon->UV]を選択し"
+"て、UVを必ず更新してください。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:89
 msgid "Keep doing this until you mapped all pieces."
-msgstr ""
+msgstr "すべてのピースをマッピングするまでこれを繰り返してください。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:93
 msgid ""
@@ -157,6 +197,9 @@ msgid ""
 "in the original texture. This is because by default, when you draw a "
 "polygon, the UV and points are the same."
 msgstr ""
+"ノードのピースは、元のテクスチャと同じレイアウトで表示されることに気付くはず"
+"です。これは、デフォルトでは、ポリゴンを描画するときにUVとポイントが同じであ"
+"るためです。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:97
 msgid ""
@@ -164,17 +207,23 @@ msgid ""
 "There is no need to change pivots, so don't bother making sure rotation "
 "pivots for each piece are right; you can leave them be for now."
 msgstr ""
+"ピースを並べ替えてキャラクターを構築します。これはかなり短時間でできるはずで"
+"す。ピボットを変更する必要はないので、各ピースの回転ピボットが正しいことを確"
+"認する必要はありません。今のところそのままにしておくことができます。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:103
 msgid ""
 "Ah, the visual order of the pieces is not correct yet, as some are covering "
 "wrong pieces. Rearrange the order of the nodes to fix this:"
 msgstr ""
+"ああ、いくつかは間違ったピースをカバーしているので、ピースの視覚的な順序はま"
+"だ正しくありません。これを修正するためにノードの順序を並べ替えます:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:108
 msgid ""
 "And there you go! It was definitely much easier than in the cutout tutorial."
 msgstr ""
+"そして到達しました！カットアウトチュートリアルよりもはるかに簡単でしたね。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:111
 msgid "Creating the skeleton"
@@ -185,6 +234,8 @@ msgid ""
 "Create a ``Skeleton2D`` node as a child of the root node. This will be the "
 "base of our skeleton:"
 msgstr ""
+"ルートノードの子として ``Skeleton2D`` ノードを作成します。これがスケルトンの"
+"ベースになります:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:118
 msgid ""
@@ -192,10 +243,13 @@ msgid ""
 "(usually skeletons start here). The bone will be pointing to the right, but "
 "you can ignore this for now."
 msgstr ""
+"スケルトンの子として ``Bone2D`` ノードを作成します。そして、それを腰に配置し"
+"ます(通常、スケルトンはここから始まります)。ボーンは右を向いていますが、それ"
+"は今のところ無視できます。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:124
 msgid "Keep creating bones in hierarchy and naming them accordingly."
-msgstr ""
+msgstr "階層的にボーンを作成し続け、それに応じて名前を付けます。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:128
 msgid ""
@@ -203,6 +257,9 @@ msgid ""
 "short and pointing to the right. This is normal for bones without children. "
 "The length of *tip* bones can be changed with a property in the inspector:"
 msgstr ""
+"このチェーンの最後に、\\ * jaw* ノードがあります。これも非常に短く、右を指し"
+"ます。これは、子供のいないボーンでは正常です。\\ *先端*\\ ボーンの長さは、イ"
+"ンスペクタのプロパティで変更できます:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:134
 msgid ""
@@ -211,10 +268,14 @@ msgid ""
 "Again, this is only really needed for tip bones as nodes with children don't "
 "usually need a length or a specific rotation."
 msgstr ""
+"この場合、ボーンを回転させる必要はありません(偶然に jaw はスプライトの右を指"
+"しています)が、必要な場合は、自由に回転させてください。繰り返しますが、通常、"
+"子を持つノードは長さや特定の回転を必要としないので、これは先端のボーンでのみ"
+"必要です。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:139
 msgid "Keep going and build the whole skeleton:"
-msgstr ""
+msgstr "続けて、スケルトン全体を構築します:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:143
 msgid ""
@@ -223,16 +284,23 @@ msgid ""
 "and create a rest pose. This pose is the default one, you can come back to "
 "it anytime you want (which is very handy for animating):"
 msgstr ""
+"すべてのボーンが、レストポーズの欠落について迷惑な警告を発していることに気付"
+"くでしょう。これは、それを設定するべき時が来たことを意味します。\\ "
+"*skeleton* ノードに移動して、レストポーズを作成します。このポーズはデフォルト"
+"のポーズです。いつでも好きなときにこれに戻ることができます(アニメーション化に"
+"非常に便利です):"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:150
 msgid ""
 "The warnings will go away. If you modify the skeleton (add/remove bones) you "
 "will need to set the rest pose again."
 msgstr ""
+"警告は消えます。スケルトンを変更する(ボーンを追加/削除する)場合は、レストポー"
+"ズを再度設定する必要があります。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:154
 msgid "Deforming the polygons"
-msgstr ""
+msgstr "ポリゴンの変形"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:156
 msgid ""
@@ -240,15 +308,19 @@ msgid ""
 "``Skeleton`` property. This will ensure that they can eventually be deformed "
 "by it."
 msgstr ""
+"以前に作成したポリゴンを選択し、スケルトンノードを ``Skeleton`` プロパティに"
+"割り当てます。これにより、最終的にそれらが変形できるようになります。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:162
 msgid "Click the property highlighted above and select the skeleton node:"
 msgstr ""
+"上で強調表示されているプロパティをクリックして、スケルトンノードを選択します:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:166
 msgid ""
 "Again, open the UV editor for the polygon and go to the *Bones* section."
 msgstr ""
+"再度、ポリゴンのUVエディタを開き、\\ * ボーン* セクションに移動します。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:170
 msgid ""
@@ -259,6 +331,12 @@ msgid ""
 "polygon, even if a skeleton node is accidentally lost or the skeleton "
 "modified. Push the \"Sync Bones to Polygon\" button to sync the list."
 msgstr ""
+"ウェイトはまだペイントすることはできません。そのためには、スケルトンのボーン"
+"のリストをポリゴンと同期させる必要があります。このステップは、(ボーンの追加/"
+"削除/名前変更によってスケルトンが変更された場合を除いて)一度だけ手動で行われ"
+"ます。これにより、スケルトンノードが誤って失われたり、スケルトンが変更された"
+"りした場合でも、リギング情報がポリゴンに保持されます。”Sync Bones to Polygon"
+"\" ボタンを押して、リストを同期します。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:179
 msgid ""
@@ -266,6 +344,9 @@ msgid ""
 "weight assigned to any of them. Select the bones you want to assign weight "
 "to and paint them:"
 msgstr ""
+"ボーンのリストが自動的に表示されます。デフォルトでは、ポリゴンにはどのウェイ"
+"トも割り当てられていません。ウェイトを割り当てるボーンを選択してペイントしま"
+"す:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:185
 msgid ""
@@ -275,6 +356,10 @@ msgid ""
 "not that much need to use shades in-between unless you want to polish the "
 "bending effect)."
 msgstr ""
+"白のポイントには完全なウェイトが割り当てられていますが、黒のポイントはボーン"
+"の影響を受けません。複数のボーンに対して同じ点を白く塗った場合、影響はそれら"
+"の間で分散されます(通常は折り曲げ効果に磨きをかけたい場合を除いて、中間の塗り"
+"を使用する必要はありません)。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:193
 msgid ""
@@ -282,12 +367,18 @@ msgid ""
 "have the desired effect of modifying and bending the polygons accordingly. "
 "As you only need to animate bones in this approach, work becomes much easier!"
 msgstr ""
+"ウェイトをペイントした後、ボーン(ポリゴンではなく！)をアニメートすると、それ"
+"に応じてポリゴンを修正して曲げるという望ましい効果が得られます。このアプロー"
+"チではボーンをアニメーション化するだけでよいため、作業がはるかに簡単になりま"
+"す！"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:197
 msgid ""
 "But it's not all roses. Trying to animate bones that bend the polygon will "
 "often yield unexpected results:"
 msgstr ""
+"しかし、それは完璧なものではありません。ポリゴンを曲げるボーンをアニメーショ"
+"ン化しようとすると、多くの場合、予期しない結果が生じます:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:202
 msgid ""
@@ -296,16 +387,22 @@ msgid ""
 "expect. To solve this, you need to set hints in the geometry to clarify how "
 "you expect it to deform."
 msgstr ""
+"これは、ポリゴンを描画するときに、ポイント同士を接続する内部三角形がGodotに"
+"よって生成されるためです。それらはいつもあなたが期待する通りに曲げるとは限り"
+"ません。これを解決するには、ジオメトリにヒントを設定して、どのように変形する"
+"かを明確にする必要があります。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:208
 msgid "Internal vertices"
-msgstr ""
+msgstr "内部頂点"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:210
 msgid ""
 "Open the UV menu for each bone again and go to the *Points* section. Add "
 "some internal vertices in the regions where you expect the geometry to bend:"
 msgstr ""
+"各ボーンのUVメニューを再度開き、\\ *ポイント* セクションに移動します。ジオメ"
+"トリが曲がると予想される領域にいくつかの内部頂点を追加します:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:215
 msgid ""
@@ -313,12 +410,16 @@ msgid ""
 "detail. Imagine that, as your polygons bend, you need to make sure they "
 "deform the least possible, so experiment a bit to find the right setup."
 msgstr ""
+"ここで、\\ *ポリゴン* セクションに移動し、より詳細に独自のポリゴンを再描画し"
+"ます。ポリゴンが曲がるとき、変形を最小限に抑える必要があることを想像してくだ"
+"さい。少し実験して正しいセットアップを見つけてください。"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:221
 msgid ""
 "Once you start drawing, the original polygon will disappear and you will be "
 "free to create your own:"
 msgstr ""
+"描画を開始すると、元のポリゴンが消え、自由に独自のポリゴンを作成できます:"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:226
 msgid ""
@@ -326,18 +427,19 @@ msgid ""
 "grained control over where triangles go. Experiment by yourself until you "
 "get the results you like."
 msgstr ""
+"通常、この詳細化で問題ありませんが、三角形の移動先をよりきめ細かく制御したい"
+"場合もあります。好みの結果が得られるまで、自分で実験してください。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:231
+#: ../../docs/tutorials/animation/2d_skeletons.rst:230
+#, fuzzy
 msgid ""
 "**Note:** Don't forget that your newly added internal vertices also need "
-"weight"
+"weight painting! Go to the *Bones* section again to assign them to the right "
+"bones."
 msgstr ""
-
-#: ../../docs/tutorials/animation/2d_skeletons.rst:231
-msgid ""
-"painting! Go to the *Bones* section again to assign them to the right bones."
-msgstr ""
+"**注:**\\ 新しく追加した内部頂点にもウェイトが必要であることを忘れないでくだ"
+"さい"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:233
 msgid "Once you are all set, you will get much better results:"
-msgstr ""
+msgstr "すべての設定が完了すると、より良い結果が得られます:"

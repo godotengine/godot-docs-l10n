@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,25 +36,23 @@ msgid "Project manager"
 msgstr "Gestionnaire de projets"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
-"Lorsque vous ouvrez Godot, la première fenêtre que vous voyez est le "
-"Gestionnaire de projets. Il vous permet de créer, supprimer, importer ou "
-"lancer les projets."
+"La première fenêtre que vous voyez en ouvrant Godot est le Gestionnaire de "
+"projets. Tant que vous n'avez créé ou importé aucun projet, un message "
+"d'information vous proposera d'ouvrir la bibliothèque de ressources. Refusez "
+"la demande, nous verrons cela plus tard."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
-#, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"Lorsque vous ouvrez Godot, la première fenêtre que vous voyez est le "
-"Gestionnaire de projets. Il vous permet de créer, supprimer, importer ou "
-"lancer les projets."
+"Vous devriez maintenant voir le gestionnaire de projets. Il vous permet de "
+"créer, supprimer, importer ou lancer les projets."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
@@ -65,7 +63,6 @@ msgstr ""
 "la langue de l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -74,25 +71,25 @@ msgid ""
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
 "Depuis l'onglet **Modèles** vous pouvez télécharger des modèles de projet "
-"open source et des démos pour vous aider à démarrer plus rapidement. "
-"Sélectionnez simplement le modèle ou la démo que vous voulez, cliquez sur "
-"télécharger, une fois le téléchargement terminé, cliquez sur installer et "
-"choisissez l'emplacement du projet."
+"open source et des démos depuis l'Asset Library(librairie de ressource) pour "
+"vous aider à démarrer plus rapidement. Sélectionnez simplement le modèle ou "
+"la démo que vous voulez, cliquez sur télécharger, une fois le téléchargement "
+"terminé, cliquez sur installer et choisissez l'emplacement du projet. Vous "
+"pouvez en apprendre plus à ce sujet dans :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
 msgstr "Créer ou importer un projet"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
-"Pour créer un nouveau projet, cliquez le bouton ``Nouveau projet`` sur la "
-"droite. Donnez-lui un nom et choisissez un répertoire vide sur votre "
-"ordinateur pour le sauvegarder."
+"Pour créer un nouveau projet, cliquez sur le bouton ``Nouveau projet`` sur "
+"la droite. Donnez-lui un nom, choisissez un répertoire vide sur votre "
+"ordinateur où le sauvegarder et sélectionnez un moteur de rendu."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
@@ -104,19 +101,18 @@ msgstr ""
 "champ \"Chemin du projet\"."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
-#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"Lorsque vous voyez la coche verte à droite, cela signifie que le moteur a "
-"détecté un répertoire vide, vous pouvez alors cliquer le bouton ``Créer et "
-"éditer``. Godot ouvrira le projet pour vous et l'affichera dans l'éditeur."
+"Lorsque vous voyez la coche verte à droite, cela signifie que Godot a "
+"détecté un répertoire vide. Vous pouvez également cliquer sur le bouton "
+"``Créer un Dossier`` à côté du nom de votre projet et un dossier vide "
+"portant le même nom sera créé."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
-#, fuzzy
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -124,8 +120,8 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
-"Vous pouvez aussi choisir le système de rendu à cette étape (OpenGL ES 3.0 "
-"ou OpenGL ES 2.0). Les avantages et inconvénients de chacun sont listés pour "
+"Enfin Vous devez choisir le système de rendu à utiliser (OpenGL ES 3.0 ou "
+"OpenGL ES 2.0). Les avantages et inconvénients de chacun sont listés pour "
 "vous aider à choisir, et vous pouvez consulter :ref:"
 "`doc_gles2_gles3_differences` pour plus de détails. Notez que vous pouvez "
 "changer de système de rendu dans les paramètres du projet si vous changez "
@@ -133,23 +129,21 @@ msgstr ""
 "deux."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"Lorsque vous voyez la coche verte à droite, cela signifie que le moteur a "
-"détecté un répertoire vide, vous pouvez alors cliquer le bouton ``Créer et "
-"éditer``. Godot ouvrira le projet pour vous et l'affichera dans l'éditeur."
+"Une fois terminé, cliquez sur ``Créer et ouvrir``. Godot créera le projet "
+"pour vous et l'ouvrira dans l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"La prochaine fois que Godot s'ouvrira, vous verrez votre nouveau projet dans "
-"la liste. Double-cliquez dessus pour l'ouvrir dans l'éditeur."
+"La prochaine fois que vous ouvrirez le gestionnaire de projets, vous verrez "
+"votre nouveau projet dans la liste. Double-cliquez dessus pour l'ouvrir dans "
+"l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -170,13 +164,12 @@ msgid "Your first look at Godot’s editor"
 msgstr "Premiers pas avec l'éditeur de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with empty docks on the right side."
 msgstr ""
-"Vous devriez maintenant voir cette interface, avec le dock vide sur le côté "
-"droit."
+"Bienvenu dans Godot ! Avec votre projet ouvert, vous devriez maintenant voir "
+"l'interface de l'éditeur avec un panneau vide sur la droite."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -187,13 +180,12 @@ msgstr ""
 "**fenêtres d'affichage**, et les **boutons de test**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
-#, fuzzy
 msgid ""
 "On the bottom left side, you have the **FileSystem dock**, where you’ll "
 "manage your project files and assets."
 msgstr ""
-"Sur la gauche vous voyez le dock **Système de fichiers**, où vous gérerez "
-"les fichiers et ressources de vos projets."
+"En bas à gauche se trouve le **dock Système de fichiers**, où vous gérerez "
+"les fichiers et ressources de votre projet."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
@@ -254,13 +246,12 @@ msgstr ""
 "accéder."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
 msgstr ""
-"Notez le texte [Perspective] sous la barre d'outils, c'est un bouton qui "
-"ouvre une liste d'options liées à la vue 3D."
+"Remarquez le bouton perspective sous la barre d'outils, il ouvre une liste "
+"d'options liées au viewport 3D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""

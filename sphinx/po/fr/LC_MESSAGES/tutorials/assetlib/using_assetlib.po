@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,12 +73,18 @@ msgid ""
 "developers. Currently, these include the official engine demos, which "
 "showcase how various areas of the engine work."
 msgstr ""
+"Les assets **Official** sont créés et maintenus par les développeurs "
+"officiels du moteur Godot. Actuellement, il s'agit des démonstrations "
+"officielles du moteur, qui montrent comment fonctionnent les différents "
+"domaines du moteur."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:38
 msgid ""
 "**Community** assets are submitted and maintained by the members of the "
 "Godot community."
 msgstr ""
+"Les assets de la **Community** sont soumis et entretenus par les membres de "
+"la communauté Godot."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:41
 msgid ""
@@ -86,6 +92,10 @@ msgid ""
 "issues. They are not recommended for use in serious projects, but you are "
 "encouraged to download, test them, and submit issues to the original authors."
 msgstr ""
+"Les assets de **Testing** sont des travaux en cours, et peuvent contenir des "
+"bogues et des problèmes d'utilisation. Leur utilisation n'est pas "
+"recommandée dans le cadre de projets sérieux, mais vous êtes encouragé à les "
+"télécharger, à les tester et à soumettre les problèmes aux auteurs originaux."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:45
 msgid ""
@@ -93,6 +103,9 @@ msgid ""
 "clicking the Search button, receive the list of all assets in the Library "
 "that match them."
 msgstr ""
+"Vous pouvez combiner tous les filtres et critères de recherche et, en "
+"cliquant sur le bouton Recherche, recevoir la liste de tous les assets de la "
+"bibliothèque qui y correspondent."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:48
 msgid "|image1|"
@@ -103,16 +116,21 @@ msgid ""
 "Note that the search results are not updated in real-time, so you will have "
 "to re-submit the search query each time you change the query settings."
 msgstr ""
+"Notez que les résultats de recherche ne sont pas mis à jour en temps réel, "
+"il vous faudra renvoyer la requête à chaque fois que vous en modifierez les "
+"paramètres."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:54
 msgid "Breakdown of an asset"
-msgstr ""
+msgstr "Composition d'un asset"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:56
 msgid ""
 "Now let's take a look at what an asset's page looks like and what it "
 "contains."
 msgstr ""
+"Regardons maintenant à quoi ressemble la page d'une ressource et ce qu'elle "
+"contient."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:58
 msgid "|image2|"
@@ -120,57 +138,61 @@ msgstr "|image2|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:60
 msgid "Asset's thumbnail/icon."
-msgstr ""
+msgstr "La miniature / icône de la ressource."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:61
 msgid "Asset's name."
-msgstr ""
+msgstr "Le nom de la ressource."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:62
 msgid "Current version number of the asset."
-msgstr ""
+msgstr "Le numéro de version actuel de la ressource."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:63
 msgid ""
 "Asset's average rating, displayed in stars. (This is currently "
 "unimplemented.)"
 msgstr ""
+"La note moyenne de l'asset, affiché en nombre d'étoiles. (Actuellement non "
+"implémenté.)"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:64
 msgid "Asset's category, Godot version, and support status."
-msgstr ""
+msgstr "Catégorie de l'asset, version Godot et statut de support."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:65
 msgid "Asset's original author/submitter."
-msgstr ""
+msgstr "L'auteur/fournisseur originel de l'asset."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:66
 msgid "The license the asset is distributed under."
-msgstr ""
+msgstr "La licence sous lequel l'asset est distribué."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:67
 msgid "The date of the asset's latest edit/update."
-msgstr ""
+msgstr "La date de la dernière modification / mise à jour de la ressource."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:68
 msgid "A textual description of the asset."
-msgstr ""
+msgstr "Une description textuelle de la ressource."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:69
 msgid "Links related to the asset (download link, file list, issue tracker)."
 msgstr ""
+"Liens relatifs à la ressource (lien de téléchargement, liste de fichiers, "
+"suivi des problèmes)."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:70
 msgid "A SHA-256 hash of the asset, for download validation purposes."
-msgstr ""
+msgstr "Un hachage SHA-256 de l'asset, pour la validation du téléchargement."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:71
 msgid "Images and videos showcasing the asset."
-msgstr ""
+msgstr "Images et vidéos présentant la ressource."
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:74
 msgid "Registering and logging in"
-msgstr ""
+msgstr "Inscription et connexion"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:76
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,8 +41,8 @@ msgid ""
 "but the principles will apply to other node types (Area2D, RigidBody2D) as "
 "well."
 msgstr ""
-"この例ではKinematicBody2Dを使用しますが、同じことが他のノードタイプ（Area2D、"
-"RigidBody2D）にも適用されます。"
+"この例ではKinematicBody2Dを使用しますが、同じことが他のノードタイプ(Area2D、"
+"RigidBody2D)にも適用されます。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:17
 msgid "Setup"
@@ -57,7 +57,7 @@ msgid ""
 msgstr ""
 "以下の各例では、同じシーン設定を使用しています。スプライトとCollisionShape2D"
 "の2つの子を持つKinematicBody2Dから始めます。スプライトのテクスチャにGodotアイ"
-"コン（ \"icon.png\"）を使用するか、他の2Dイメージを使用できます。"
+"コン( \"icon.png\")を使用するか、他の2Dイメージを使用できます。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:23
 msgid ""
@@ -189,25 +189,23 @@ msgstr ""
 "クすると、プレイヤーが目的の場所に移動します。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:335
-#, fuzzy
 msgid ""
 "Note the ``distance_to()`` check we make prior to movement. Without this "
 "test, the body would \"jitter\" upon reaching the target position, as it "
 "moves slightly past the position and tries to move back, only to move too "
 "far and repeat."
 msgstr ""
-"移動前に ``length()`` のチェックを行います。このテストを行わないと、ボディは"
-"ターゲット位置に到達したときに \"ジッタ\" 、その位置をわずかに超えて移動し、"
-"後ろに戻ろうとしますが、動きすぎて繰り返します。"
+"移動前に行う ``distance_to()`` チェックに注意してください。このテストを行わな"
+"いと、身体は目標位置に到達すると、位置をわずかに越えて前後に移動しようとする"
+"ので、動き過ぎを繰り返す「ジッタ」を起こします。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:340
-#, fuzzy
 msgid ""
 "Uncommenting the ``look_at()`` line will also turn the body to point in its "
 "direction of motion if you prefer."
 msgstr ""
-"``rotation`` 線のコメントを解除すると、必要に応じてボディが移動方向を指すよう"
-"になります。"
+"好みに応じて ``look_at()`` 行のコメントを外すと、ボディが動きの方向を指すよう"
+"に回転します。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:343
 msgid ""

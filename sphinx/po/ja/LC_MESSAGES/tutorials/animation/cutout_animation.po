@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:4
 msgid "Cutout animation"
-msgstr ""
+msgstr "カットアウトアニメーション"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:7
 msgid "What is it?"
-msgstr ""
+msgstr "それは何ですか？"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:9
 msgid ""
@@ -37,12 +37,14 @@ msgid ""
 "small increments between each shot to create the illusion of movement when "
 "the images are played back quickly in sequence."
 msgstr ""
-"カットアウトアニメーションはストップモーションアニメーションの一種で、紙片"
-"（または他の薄い素材）を特殊な形状にカットし、キャラクターやオブジェクトを2次"
-"元に配置します。キャラクターの体は通常、いくつかのピースで構成されています。"
-"このピースは、フィルムの各フレームごとに配置され、撮影されます。アニメーター"
-"は、各ショット間でパーツを少しずつ移動および回転させて、イメージを順番にすば"
-"やく再生して動いているように見せます。"
+"`カットアウトアニメーション <https://en.wikipedia.org/wiki/"
+"Cutout_animation>` は `ストップモーションアニメーション <https://en."
+"wikipedia.org/wiki/Stop_motion>` の一種で、紙片(または他の薄い素材)を特殊な形"
+"状にカットし、キャラクターやオブジェクトを2次元に配置します。キャラクターの体"
+"は通常、いくつかのピースで構成されています。このピースは、フィルムの各フレー"
+"ムごとに配置され、撮影されます。アニメーターは、各ショット間でパーツを少しず"
+"つ移動および回転させて、イメージを順番にすばやく再生して動いているように見せ"
+"ます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:18
 msgid ""
@@ -51,6 +53,10 @@ msgid ""
 "Never Land Pirates <https://en.wikipedia.org/wiki/"
 "Jake_and_the_Never_Land_Pirates>`__."
 msgstr ""
+"カットアウトアニメーションのシミュレーションを、\\ `South Park <https://en."
+"wikipedia.org/wiki/South_Park>`__ と `Jake and the Never Land Pirates "
+"<https://en.wikipedia.org/wiki/Jake_and_the_Never_Land_Pirates>`__ に見られる"
+"ように、ソフトウェアを使用して作成できるようになりました。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:22
 msgid ""
@@ -58,16 +64,21 @@ msgid ""
 "`Paper Mario <https://en.wikipedia.org/wiki/Super_Paper_Mario>`__ or `Rayman "
 "Origins <https://en.wikipedia.org/wiki/Rayman_Origins>`__ ."
 msgstr ""
+"ビデオゲームでは、このテクニックも人気となっています。その例としては、 `ペー"
+"パーマリオ <https://en.wikipedia.org/wiki/Super_Paper_Mario>`__ または「`レイ"
+"マン オリジン <https://en.wikipedia.org/wiki/Rayman_Origins>`__ があります。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:27
 msgid "Cutout animation in Godot"
-msgstr ""
+msgstr "Godotのカットアウトアニメーション"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:29
 msgid ""
 "Godot provides tools for working with cutout rigs, and is ideal for the "
 "workflow:"
 msgstr ""
+"Godotは、カットアウトリグを操作するためのツールを提供し、ワークフローに最適で"
+"す:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:31
 msgid ""
@@ -76,6 +87,10 @@ msgid ""
 "sprite sizes, pivots, opacity, color modulation, and more, can all be "
 "animated and blended."
 msgstr ""
+"**アニメーションシステムはエンジンと完全に統合されています**: これは、アニ"
+"メーションがオブジェクトの動き以上のものを制御できることを意味します。テクス"
+"チャ、スプライトサイズ、ピボット、不透明度、色変調などをすべてアニメーション"
+"化およびブレンドできます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:35
 msgid ""
@@ -86,38 +101,53 @@ msgid ""
 "animation can be used selectively for complex parts such as hands, feet, "
 "changing facial expressions, etc."
 msgstr ""
+"**アニメーションスタイルを組み合わせる**: AnimatedSpriteでは、カットアウトア"
+"ニメーションと一緒に従来のセルアニメーションを使用できます。セルアニメーショ"
+"ンでは、異なるアニメーションフレームは、同じピースが異なる位置に配置されるの"
+"ではなく、まったく異なる図面を使用します。カットアウトベースのアニメーション"
+"では、セルアニメーションを手、足、表情の変化などの複雑なパーツに選択的に使用"
+"できます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:41
 msgid ""
 "**Custom Shaped Elements**: Custom shapes can be created with :ref:"
 "`Polygon2D <class_Polygon2D>` allowing UV animation, deformations, etc."
 msgstr ""
+"**カスタムシェイプエレメント**: カスタムシェイプは、\\ :ref:`Polygon2D "
+"<class_Polygon2D>` で作成でき、UVアニメーション、変形などが可能です。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:44
 msgid ""
 "**Particle Systems**: A cutout animation rig can be combined with particle "
 "systems. This can useful for magic effects, jetpacks, etc."
 msgstr ""
+"**パーティクルシステム**: カットアウトアニメーションリグは、パーティクルシス"
+"テムと組み合わせることができます。これは魔法の効果、ジェットパックなどに役立"
+"ちます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:46
 msgid ""
 "**Custom Colliders**: Set colliders and influence areas in different parts "
 "of the skeletons, great for bosses and fighting games."
 msgstr ""
+"**カスタムコライダー**: スケルトンの異なる部分にコライダー(衝突検知)と影響領"
+"域を設定し、ボスや格闘ゲームに最適です。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:48
 msgid ""
 "**Animation Tree**: Allows complex combinations and blending between several "
 "animations, the same way it works in 3D."
 msgstr ""
+"**アニメーションツリー**: 3Dでの動作と同じように、複数のアニメーションを複雑"
+"に組み合わせたりブレンドしたりできます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:51
 msgid "And much more!"
-msgstr ""
+msgstr "さらに多くも！"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:54
 msgid "Making of GBot"
-msgstr ""
+msgstr "GBotの作成"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:56
 msgid ""
@@ -126,31 +156,40 @@ msgid ""
 "v=S13FrWuBMx4&list=UUckpus81gNin1aV8WSffRKw>`__ character, created by "
 "Andreas Esau."
 msgstr ""
+"このチュートリアルでは、Andreas Esauが作成した `GBot <https://www.youtube."
+"com/watch?v=S13FrWuBMx4&list=UUckpus81gNin1aV8WSffRKw>`__ キャラクターの一部"
+"をデモコンテンツとして使用します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:62
 msgid ""
 "Get your assets: :download:`gbot_resources.zip <files/gbot_resources.zip>`."
 msgstr ""
+"アセットを取得します: :download:`gbot_resources.zip <files/gbot_resources."
+"zip>`\\ 。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:65
 msgid "Setting up the rig"
-msgstr ""
+msgstr "リグのセットアップ"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:67
 msgid "Create an empty Node2D as root of the scene, we will work under it:"
-msgstr ""
+msgstr "空のNode2Dをシーンのルートとして作成し、その下で作業します:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:71
 msgid ""
 "The first node of the model is the hip. Generally, both in 2D and 3D, the "
 "hip is the root of the skeleton. This makes it easier to animate:"
 msgstr ""
+"モデルの最初のノードは腰です。一般に、2Dと3Dの両方で、腰はスケルトンのルート"
+"です。これにより、アニメーションが簡単になります:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:77
 msgid ""
 "Next will be the torso. The torso needs to be a child of the hip, so create "
 "a child sprite and load the torso texture, later accommodate it properly:"
 msgstr ""
+"次は胴体になります。胴体は腰の子である必要があるため、子スプライトを作成して"
+"胴体のテクスチャをロードし、後で適切に調整します:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:82
 msgid ""
@@ -158,25 +197,30 @@ msgid ""
 "the torso. We can do this be pressing ``E`` to enter rotate mode, and "
 "dragging with the left mouse button. To exit rotate mode hit ``ESC``."
 msgstr ""
+"これはよさそうです。胴体を回転させて、階層がスケルトンとして機能するかどうか"
+"を見てみましょう。これを行うには、\\ ``E`` を押して回転モードに入り、マウスの"
+"左ボタンでドラッグします。回転モードを終了するには、\\ ``ESC`` を押します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:88
 msgid "The rotation pivot is wrong and needs to be adjusted."
-msgstr ""
+msgstr "回転ピボットが間違っているため、調整する必要があります。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:90
 msgid ""
 "This small cross in the middle of the :ref:`Sprite <class_Sprite>` is the "
 "rotation pivot:"
 msgstr ""
+":ref:`Sprite <class_Sprite>` の中央にあるこの小さな十字が回転ピボットです:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:96
 msgid "Adjusting the pivot"
-msgstr ""
+msgstr "ピボットの調整"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:98
 msgid ""
 "The pivot can be adjusted by changing the *offset* property in the Sprite:"
 msgstr ""
+"ピボットは、スプライトの *offset* プロパティを変更することで調整できます:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:103
 msgid ""
@@ -184,6 +228,9 @@ msgid ""
 "pivot point,  press the \"v\" key to move the pivot there for the selected "
 "Sprite. There is also a tool in the tool bar that has a similar function."
 msgstr ""
+"ピボットは *視覚的に* 調整することもできます。目的のピボットポイントにカーソ"
+"ルを合わせながら、\"v\" キーを押して、選択したスプライトのピボットをそこに移"
+"動します。ツールバーには、同様の機能を持つツールもあります。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:110
 msgid ""
@@ -191,12 +238,14 @@ msgid ""
 "each sprite in its correct place in the hierarchy, so its rotations and "
 "translations are relative to its parent:"
 msgstr ""
+"右腕からボディピースを追加していきます。各スプライトを階層内の正しい位置に配"
+"置し、その回転と移動が親に対して相対的になるようにしてください:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:116
 msgid ""
 "With the left arm there's a problem. In 2D, child nodes appear in front of "
 "their parents:"
-msgstr ""
+msgstr "左腕には問題があります。2D では、子ノードは親ノードの前に表示されます:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:121
 msgid ""
@@ -206,16 +255,22 @@ msgid ""
 "hierarchy. This means it wouldn't be affected the movement of the torso. "
 "We'll fix this problem with ``RemoteTransform2D`` nodes."
 msgstr ""
+"左腕が腰と胴体の\\ *後ろ*\\ に表示されるようにします。左腕のノードを腰の後ろ"
+"(シーン階層のヒップノードの上)に移動することはできますが、左腕は階層内の適切"
+"な位置にいなくなります。これは、胴体の動きに影響を受けないことを意味しま"
+"す。\\ ``RemoteTransform2D`` ノードを使ってこの問題を修正します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:127
 msgid ""
 "You can also fix depth ordering problems by adjusting the Z property of any "
 "node inheriting from Node2D."
 msgstr ""
+"Node2Dから継承するノードのZプロパティを調整することで、深度の順序の問題を修正"
+"することもできます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:131
 msgid "RemoteTransform2D node"
-msgstr ""
+msgstr "RemoteTransform2Dノード"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:133
 msgid ""
@@ -224,12 +279,17 @@ msgid ""
 "(including any transformation it inherits from its parents) to the remote "
 "node it targets."
 msgstr ""
+":ref:`RemoteTransform2D <class_RemoteTransform2D>` ノードは、階層内の別の場所"
+"にあるノードを変形します。このノードは、自身の幾何学変換(親から継承した幾何学"
+"変換の状態を含む)をターゲットのリモートノードに適用します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:137
 msgid ""
 "This allows us to correct the visibility order of our elements independent "
 "from the locations of those parts in the cutout hierarchy."
 msgstr ""
+"これにより、要素の表示順序を、カットアウト階層内の部品の位置に関係なく独立し"
+"て修正することができます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:140
 msgid ""
@@ -238,32 +298,45 @@ msgid ""
 "call it ``remote_hand_l``. Use the ``Remote Path`` property of the two new "
 "nodes to target the ``arm_l`` and ``hand_l`` sprites respectively:"
 msgstr ""
+"胴体の子として ``RemoteTransform2D`` ノードを作成します。それを "
+"``remote_arm_l`` と呼びます。最初のノード内に別のRemoteTransform2Dノードを作"
+"成し、\\ ``remote_hand_l`` と呼びます。 2つの新しいノードの ``Remote Path` プ"
+"ロパティを使用して、それぞれ ``arm_l`` スプライトと ``hand_l`` スプライトを"
+"ターゲットにします。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:147
 msgid ""
 "Moving the ``RemoteTransform2D`` nodes now moves the sprites. So we can "
 "create animations by adjusting the ``RemoteTransform2D`` transforms:"
 msgstr ""
+"``RemoteTransform2D`` ノードを移動すると、それに対応するスプライトが移動しま"
+"す。\\ ``RemoteTransform2D`` の幾何学変換を調整することでアニメーションを作成"
+"できます:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:153
 msgid "Completing the skeleton"
-msgstr ""
+msgstr "スケルトンの完成"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:155
 msgid ""
 "Complete the skeleton by following the same steps for the rest of the parts. "
 "The resulting scene should look similar to this:"
 msgstr ""
+"残りのパーツについても同じ手順を実行して、スケルトンを完成させます。結果の"
+"シーンは次のようになります:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:160
 msgid ""
 "The resulting rig will be easy to animate. By selecting the nodes and "
 "rotating them you can animate forward kinematics (FK) efficiently."
 msgstr ""
+"結果として得られるリグは、アニメーション化が容易になります。ノードを選択して"
+"回転させると、フォワードキネマティック(FK)が効率的にアニメートされます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:163
 msgid "For simple objects and rigs this is fine, but there are limitations:"
 msgstr ""
+"単純なオブジェクトとリグの場合、これは問題ありませんが、制限があります:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:165
 msgid ""
@@ -271,40 +344,51 @@ msgid ""
 "The scene tree ends up being used to select parts instead, which can be "
 "slower."
 msgstr ""
+"複雑なリグでは、メイン ビューポートでスプライトを選択するのが難しくなる場合が"
+"あります。代わりに、シーンツリーがパーツの選択に使用されることになり、作業が"
+"より遅くなる可能性があります。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:167
 msgid ""
 "Inverse Kinematics (IK) is useful for animating extremities like hands and "
 "feet, and can't be used with our rig in its current state."
 msgstr ""
+"インバースキネマティクス(IK)は、手や足などの四肢をアニメートするのに便利です"
+"が、現在の状態のリグでは使用できません。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:170
 msgid "To solve these problems we'll use Godot's skeletons."
-msgstr ""
+msgstr "これらの問題を解決するために、Godotのスケルトンを使用します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:173
 msgid "Skeletons"
-msgstr ""
+msgstr "スケルトン"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:175
 msgid ""
 "In Godot there is a helper to create \"bones\" between nodes. The bone-"
 "linked nodes are called skeletons."
 msgstr ""
+"ゴドーにはノード間に「ボーン」を作成するヘルパーがあります。ボーンにリンクさ"
+"れたノードはスケルトンと呼ばれます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:178
 msgid ""
 "As an example, let's turn the right arm into a skeleton. To create a "
 "skeleton, a chain of nodes must be selected from top to bottom:"
 msgstr ""
+"例として、右腕をスケルトンに変えてみましょう。スケルトンを作成するには、ノー"
+"ドのチェーンを上から下に選択する必要があります:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:183
 msgid "Then, click on the Skeleton menu and select ``Make Bones``."
 msgstr ""
+"次に、[スケルトンのオプション]メニューをクリックし、\\ ``Make Bones``(v3.1.2"
+"ではMake Custom Bone(s)...です)を選択します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:187
 msgid "This will add bones covering the arm, but the result may be surprising."
-msgstr ""
+msgstr "これにより、腕を覆う骨が追加されますが、結果に驚くかもしれません。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:191
 msgid ""
@@ -312,6 +396,9 @@ msgid ""
 "parent. And there's currently no child of the hand node. With this knowledge "
 "let's try again."
 msgstr ""
+"手には骨がないのはなぜですか？ Godotでは、ボーンはノードをその親に接続しま"
+"す。そして、現在、手のノードに子はありません。この知識を得た上でもう一度試し"
+"てみましょう。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:195
 msgid ""
@@ -319,17 +406,22 @@ msgid ""
 "ref:`Position2D <class_Position2D>` is preferred because it's visible in the "
 "editor. The endpoint node will ensure that the last bone has orientation."
 msgstr ""
+"最初の手順は、終点ノードの作成です。どのような種類のノードでも実行できます"
+"が、エディタに表示されるため、\\ :ref:`Position2D <class_Position2D>` が適し"
+"ています。終点ノードは、最後のボーンの方向を確定します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:202
 msgid ""
 "Now select the whole chain, from the endpoint to the arm and create bones:"
-msgstr ""
+msgstr "次に、終点から腕までのチェーン全体を選択し、ボーンを作成します:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:207
 msgid ""
 "The result resembles a skeleton a lot more, and now the arm and forearm can "
 "be selected and animated."
 msgstr ""
+"結果はスケルトンにとても似ており、腕と前腕を選択してアニメーション化できるよ"
+"うになりました。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:210
 msgid ""
@@ -337,6 +429,8 @@ msgid ""
 "articulable parts of the cutout, with the hip as the ultimate connection "
 "between all of them."
 msgstr ""
+"すべての重要な四肢の終点を作成します。カットアウトの関節化が可能なすべての部"
+"分で骨を生成し、腰をすべての最終的な接続先として使用します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:214
 msgid ""
@@ -345,26 +439,34 @@ msgid ""
 "we don't want that. To fix this, select the root and hip node, open the "
 "Skeleton menu, click ``clear bones``."
 msgstr ""
+"腰と胴体を接続すると、余分な骨が作成されることに気付くかもしれません。 Godot"
+"は腰ノードをボーンでシーンルートに接続しましたが、これは望ましくありません。"
+"これを修正するには、ルートと腰ノードを選択し、スケルトンメニューを開き、\\ ``"
+"ボーンをクリア``(v3.1.2ではカスタムボーンをクリア)をクリックします。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:221
 msgid "Your final skeleton should look something like this:"
-msgstr ""
+msgstr "最終的なスケルトンは次のようになります:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:225
 msgid ""
 "You might have noticed a second set of endpoints in the hands. This will "
 "make sense soon."
 msgstr ""
+"手の中に2つ目の終点のセットが表示されていることに気付いたかもしれません。これ"
+"は少し先で理解できます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:228
 msgid ""
 "Now that the whole figure is rigged, the next step is setting up the IK "
 "chains. IK chains allow for more natural control of extremities."
 msgstr ""
+"フィギュア全体がリギングされたので、次のステップはIKチェーンの設定です。IK"
+"チェーンを使用すると、四肢をより自然に制御できます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:232
 msgid "IK chains"
-msgstr ""
+msgstr "IKチェーン"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:234
 msgid ""
@@ -375,11 +477,18 @@ msgid ""
 "rotating and positioning several other bones (the shin and the thigh at "
 "least). This would be quite complex and lead to imprecise results."
 msgstr ""
+"IKはンバースキネマティックの略です。これは、手、足、その他のリグの先端の位置"
+"をアニメーション化するときに便利な手法です。キャラクターの足を地面の特定の位"
+"置にポーズしたいと想像してください。 IKチェーンがなければ、足の各動作には、他"
+"のいくつかのボーン(少なくともすねと太もも)を回転させて配置する必要がありま"
+"す。これは非常に複雑で、不正確な結果につながります。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:241
 msgid ""
 "IK allows us to move directly the foot while the shin and thigh self-adjust."
 msgstr ""
+"IKを使用すると、すねと太ももを自己調整しながら、足を直接動かすことができま"
+"す。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:243
 msgid ""
@@ -387,14 +496,18 @@ msgid ""
 "the chain. For example, to create an IK chain for the right leg, select the "
 "following:"
 msgstr ""
+"IKチェーンを作成するには、チェーンの終点からベースまでのボーンのチェーンを選"
+"択します。たとえば、右脚のIKチェーンを作成するには、次を選択します:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:249
 msgid "Then enable this chain for IK. Go to Edit > Make IK Chain."
 msgstr ""
+"次に、このチェーンをIKに対して有効にします。 [スケルトンのオプション] -> [IK"
+"チェーンを作成]に移動します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:253
 msgid "As a result, the base of the chain will turn *Yellow*."
-msgstr ""
+msgstr "その結果、チェーンのベースが\\ *黄色*\\ に変わります。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:257
 msgid ""
@@ -402,10 +515,12 @@ msgid ""
 "chain (e.g. a foot) and move it. You'll see the rest of the chain adjust as "
 "you adjust its position."
 msgstr ""
+"IKチェーンを設定したら、チェーンのベースの子または孫(足など)をつかんで移動し"
+"ます。チェーンの位置を調整すると、チェーンの残りの部分も調整されます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:264
 msgid "Animation tips"
-msgstr "アニメーションのコツ"
+msgstr "アニメーションのヒント"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:266
 msgid ""
@@ -413,22 +528,29 @@ msgid ""
 "for your cutout rigs. For more information on how the animation system in "
 "Godot works, see :ref:`doc_animations`."
 msgstr ""
+"次のセクションは、カットアウトリグのアニメーションを作成するためのヒント集で"
+"す。Godot のアニメーション システムの動作の詳細については、\\ :ref:"
+"`doc_animations` を参照してください。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:271
 msgid "Setting keyframes and excluding properties"
-msgstr ""
+msgstr "キーフレームの設定とプロパティの除外"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:273
 msgid ""
 "Special contextual elements appear in the top toolbar when the animation "
 "editor window is open:"
 msgstr ""
+"アニメーションエディタウィンドウが開いていると、特別なコンテキスト要素が上部"
+"のツールバーに表示されます:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:278
 msgid ""
 "The key button inserts location, rotation, and scale keyframes for the "
 "selected objects or bones at the current playhead position."
 msgstr ""
+"キーボタンは、選択したオブジェクトまたはボーンの位置、回転、およびスケールの"
+"キーフレームを現在の再生ヘッドの位置に挿入します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:281
 msgid ""
@@ -436,6 +558,9 @@ msgid ""
 "button modify its function, allowing you to specify which of the three "
 "properties keyframes will be created for."
 msgstr ""
+"キーボタンの左側にある \"loc\"、\"rot\" および \"scl\" トグルボタンはその機能"
+"を変更し、3つのプロパティのとれにキーフレームが作成されるかを指定できるように"
+"します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:285
 msgid ""
@@ -447,36 +572,49 @@ msgid ""
 "when you add a new keyframe. This way, you can avoid adding unwanted scale "
 "keyframes which would disrupt the existing scale animation."
 msgstr ""
+"これがどのように役立つかを説明します: すでに2つのキーフレームがそのスケールの"
+"みをアニメーション化しているノードがあるとします。そして、その同じノードに"
+"オーバーラップする回転移動を追加しますが、この回転動作は、既に設定されている"
+"スケールの変更とは異なる時間に開始および終了する必要があります。このような場"
+"合は、トグルボタンを使用することで、新しいキーフレームを追加するときに回転情"
+"報のみを追加できます。これにより、既存のスケールアニメーションを乱すような不"
+"要なスケールキーフレームの追加を回避できます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:294
 msgid "Creating a rest pose"
-msgstr "休憩ポーズの作成"
+msgstr "レストポーズの作成"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:296
 msgid ""
 "Think of a rest pose as a default pose that your cutout rig should be set to "
 "when no other pose is active in your game. Create a rest pose as follows:"
 msgstr ""
+"レストポーズは、ゲーム内で他のポーズがアクティブでないときに、カットアウトリ"
+"グを設定する既定のポーズと考えてください。次のように、レストポーズを作成しま"
+"す:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:299
 msgid ""
 "1. Make sure the rig parts are positioned in what looks like a \"resting\" "
 "arrangement."
-msgstr ""
+msgstr "1. リグパーツが「休息」の位置に配置されていることを確認します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:302
 msgid "Create a new animation, rename it \"rest\"."
-msgstr "新しいアニメーションを作成し、「rest」 に名前を変更します。"
+msgstr "新しいアニメーションを作成し、\"rest\" に名前を変更します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:304
 msgid "Select all nodes in your rig (box selection should work fine)."
 msgstr ""
+"リグ内のすべてのノードを選択します(ボックス選択は正常に機能するはずです)。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:306
 msgid ""
 "4. Make sure the \"loc\", \"rot\", and \"scl\" toggle buttons are all active "
 "in the toolbar."
 msgstr ""
+"4. ツールバーで「loc」、「rot」および「scl」のトグルボタンがすべてアクティブ"
+"になっていることを確認します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:309
 msgid ""
@@ -484,32 +622,41 @@ msgid ""
 "storing their current arrangement. This pose can now be recalled when "
 "necessary in your game by playing the \"rest\" animation you've created."
 msgstr ""
+"5. キーボタンを押します。現在の配置を保存している選択したすべての部品にキーが"
+"挿入されます。このポーズは、作成した \"rest\" アニメーションを再生すること"
+"で、ゲームで必要なときに呼び出すことができます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:316
 msgid "Modifying rotation only"
-msgstr ""
+msgstr "回転のみを修正する"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:318
 msgid ""
 "When animating a cutout rig, often it's only the rotation of the nodes that "
 "needs to change. Location and scale are rarely used."
 msgstr ""
+"カットアウトリグをアニメーション化する場合、多くの場合、変更する必要があるの"
+"はノードの回転だけです。場所と縮尺はほとんど使用されません。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:322
 msgid ""
 "So when inserting keys, you might find it convenient to have only the \"rot"
 "\" toggle active most of the time:"
 msgstr ""
+"したがって、キーを挿入する際には、ほとんどの場合、「rot」トグルのみをアクティ"
+"ブにすると便利です。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:327
 msgid ""
 "This will avoid the creation of unwanted animation tracks for position and "
 "scale."
 msgstr ""
+"これにより、位置と縮尺の不要なアニメーショントラックが作成されることを回避で"
+"きます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:331
 msgid "Keyframing IK chains"
-msgstr ""
+msgstr "IKチェーンのキーフレーム"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:333
 msgid ""
@@ -517,10 +664,13 @@ msgid ""
 "keyframes. Selecting the endpoint of the chain and inserting a keyframe will "
 "automatically insert keyframes for all other parts of the chain too."
 msgstr ""
+"IKチェーンを編集する場合、キーフレームを追加するためにチェーン全体を選択する"
+"必要はありません。チェーンの終点を選択してキーフレームを挿入すると、チェーン"
+"の他のすべての部分にもキーフレームが自動的に挿入されます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:338
 msgid "Visually move a sprite behind its parent"
-msgstr ""
+msgstr "親の背後にスプライトを視覚的に移動する"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:340
 msgid ""
@@ -530,6 +680,11 @@ msgid ""
 "him. During this animation the whole arm and the object in his hand would "
 "need to change their visual depth relative to the body of the character."
 msgstr ""
+"アニメーション中に、親ノードを基準にしてノードの視覚的な深さ(前後関係)を変更"
+"する必要がある場合があります。カメラの方を向くキャラクターを考えてみてくださ"
+"い。キャラクターが背中の後ろから何かを引き出し、目の前に差し出します。このア"
+"ニメーション中に、腕全体と手のオブジェクトは、キャラクターの体に対して視覚的"
+"な深さを変更する必要があります。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:346
 msgid ""
@@ -539,32 +694,38 @@ msgid ""
 "Parent\" and/or RemoteTransform2D nodes. They provide overlapping "
 "functionality."
 msgstr ""
+"これを支援するために、すべてのNode2D継承ノードにキーフレーム化が可能な "
+"\"Behind Parent\" プロパティがあります。リグを計画するときは、実行する必要の"
+"ある動きについて考え、\"Behind Parent\" やRemoteTransform2Dノードをどのように"
+"使用するかについて考えてください。これらは、重複する機能を提供しています。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:354
 msgid "Setting easing curves for multiple keys"
-msgstr ""
+msgstr "複数のキーのイージング曲線を設定する"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:356
 msgid "To apply the same the easing curve to multiple keyframes at once:"
-msgstr ""
+msgstr "同じイージング曲線を複数のキーフレームに一度に適用するには:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:358
 msgid "Select the relevant keys."
-msgstr ""
+msgstr "関連するキーを選択します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:359
 msgid ""
 "Click on the pencil icon in the bottom right of the animation panel, this "
 "will open the transition editor."
 msgstr ""
+"アニメーションパネルの右下にある鉛筆アイコンをクリックすると、トランジション"
+"エディタが開きます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
 msgid "In the transition editor click on the desired curve to apply it."
-msgstr ""
+msgstr "トランジションエディタで、目的のカーブをクリックして適用します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:366
 msgid "2D Skeletal deform"
-msgstr ""
+msgstr "2Dスケルタル(ボーン)変形"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:368
 msgid ""
@@ -572,8 +733,12 @@ msgid ""
 "to deform organically (e.g. antennae that wobble as an insect character "
 "walks)."
 msgstr ""
+"スケルタル変形を使用して、カットリグを補強し、単一のピースを有機的に変形させ"
+"ることができます(たとえば、昆虫のキャラクターが歩くとぐらつく触覚)。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:371
 msgid ""
 "This process is described in a :ref:`separate tutorial <doc_2d_skeletons>`."
 msgstr ""
+"このプロセスは、\\ :ref:`別のチュートリアル <doc_2d_skeletons>` で説明されて"
+"います。"

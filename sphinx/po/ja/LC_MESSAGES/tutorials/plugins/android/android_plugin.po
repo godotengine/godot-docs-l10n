@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,10 +38,12 @@ msgid ""
 "This area is complex, usually a mobile game that monetizes needs special "
 "connections to a server for things like:"
 msgstr ""
+"このエリアは複雑です。通常、収益化を行うモバイル ゲームでは、次のような目的で"
+"サーバーへの特別な接続が必要です。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:15
 msgid "Analytics"
-msgstr "アナリティクス"
+msgstr "分析"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:16
 msgid "In-app purchases"
@@ -49,7 +51,7 @@ msgstr "アプリ内購入"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:17
 msgid "Receipt validation"
-msgstr "領収書の検証"
+msgstr "証明書の検証"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:18
 msgid "Install tracking"
@@ -69,7 +71,7 @@ msgstr "クロスプロモーション"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:22
 msgid "In-game soft & hard currencies"
-msgstr "ゲーム内ソフト&ハード通貨"
+msgstr "ゲーム内のソフト通貨とハード通貨"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:23
 msgid "Promo codes"
@@ -85,7 +87,7 @@ msgstr "ログイン"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:26
 msgid "Cloud saves"
-msgstr "クラウドセーブ"
+msgstr "クラウド保存"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:27
 msgid "Leaderboards and scores"
@@ -97,7 +99,7 @@ msgstr "ユーザーサポートとフィードバック"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:29
 msgid "Posting to Facebook, Twitter, etc."
-msgstr "フェイスブック、ツイッター等への投稿。"
+msgstr "Facebook、Twitterなどへの投稿。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:30
 msgid "Push notifications"
@@ -155,6 +157,8 @@ msgid ""
 "Writing an Android plugin is now possible, beginning with Godot 3.2. It's "
 "also pretty easy! Re-compiling the engine is no longer needed."
 msgstr ""
+"Godot 3.2以降、Androidプラグインを作成できるようになりました。また、非常に簡"
+"単です！エンジンを再コンパイルする必要はなくなりました。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:57
 msgid ""
@@ -295,6 +299,10 @@ msgid ""
 "any additional resources you have provided for the module will be in the "
 "``com.godot.game.R`` class, so you'll likely want to import it."
 msgstr ""
+"通常、Androidプラグインにはそれをロードするシングルトンクラスがあり、このクラ"
+"スは ``Godot.SingletonBase`` を継承します。モジュールに指定した追加リソースの"
+"リソース識別子は ``com.godot.game.R`` クラスに含まれるため、インポートする必"
+"要があります。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:169
 msgid "A singleton object template follows:"
@@ -302,7 +310,7 @@ msgstr "シングルトンオブジェクトテンプレートは次のとおり
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:239
 msgid "Calling back to Godot"
-msgstr ""
+msgstr "Godotにコールバックする"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:241
 msgid ""
@@ -325,11 +333,11 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:254
 msgid "Godot will detect this singleton and initialize it at the proper time."
-msgstr ""
+msgstr "Godotはこのシングルトンを検出し、適切なタイミングで初期化します。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:257
 msgid "Using it from GDScript"
-msgstr "GDScriptから使う"
+msgstr "GDScriptから使用する"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:259
 msgid ""
@@ -339,10 +347,15 @@ msgid ""
 "The module should include the full Java path. For our example: ``org/"
 "godotengine/godot/MySingleton``."
 msgstr ""
+"最初に、ロードするAndroidモジュールにシングルトンを追加する必要があります。 "
+"「プロジェクト -> プロジェクト設定」に進みます。次に、「一般」タブで"
+"「Android」セクションに移動し、モジュール部分にモジュール名を入力します。モ"
+"ジュールには完全なJavaパスが含まれている必要があります。例: ``org/"
+"godotengine/godot/MySingleton``\\ 。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:265
 msgid "Then, from your script:"
-msgstr "この時、あなたのスクリプトから:"
+msgstr "次に、スクリプトから:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:274
 msgid "Troubleshooting"
@@ -379,8 +392,8 @@ msgid ""
 "Godot has an experimental Java API Wrapper that allows to use the entire "
 "Java API from GDScript."
 msgstr ""
-"Godotには実験的なJava API ラッパーがあり、GDScriptからJava API全体を使用でき"
-"ます。"
+"Godotには実験的なJava APIラッパーがあり、GDScriptからJava API全体を使用できま"
+"す。"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:291
 msgid "It's simple to use and it's used like this:"
@@ -391,3 +404,5 @@ msgid ""
 "This is most likely not functional yet, if you want to test it and help us "
 "make it work, contact us on irc.freenode.org:#godotengine-devel."
 msgstr ""
+"これはまだ機能していない可能性があります。テストして機能させるために、irc."
+"freenode.org:#godotengine-develでご連絡ください。"

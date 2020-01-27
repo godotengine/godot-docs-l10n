@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,8 @@ msgid ""
 "supports loading translation files written in the GNU gettext (``.po``) "
 "format."
 msgstr ""
+"CSV形式の :ref:`doc_importing_translations` に加えて、GodotはGNU gettext(``."
+"po``)形式で記述された翻訳ファイルの読み込みもサポートしています。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:10
 msgid ""
@@ -35,10 +37,14 @@ msgid ""
 "html>`_. It's written with C projects in mind, but much of the advice also "
 "applies to Godot (with the exception of ``xgettext``)."
 msgstr ""
+"gettextの概要については、\\ `A Quick Gettext Tutorial <https://www.labri.fr/"
+"perso/fleury/posts/programming/a-quick-gettext-tutorial.html>`_ をご覧くださ"
+"い。 Cプロジェクトを念頭に置いて書かれていますが、アドバイスの多くはGodotにも"
+"当てはまります(``xgettext``を除く)。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:16
 msgid "Advantages"
-msgstr ""
+msgstr "利点"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:18
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,10 +53,11 @@ msgstr ""
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:20
 msgid "Art for the following examples by https://opengameart.org/users/ansimuz"
 msgstr ""
+"次のサンプルのアートは https://opengameart.org/users/ansimuz から入手しました"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:23
 msgid "Individual images with AnimatedSprite"
-msgstr ""
+msgstr "AnimatedSpriteと個々の画像"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:25
 msgid ""
@@ -72,6 +73,8 @@ msgid ""
 "You can download the images here: :download:`run_animation.zip <files/"
 "run_animation.zip>`"
 msgstr ""
+"画像はこちらからダウンロードできます: :download:`run_animation.zip </"
+"run_animation.zip>`"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:34
 msgid ""
@@ -122,15 +125,15 @@ msgstr ""
 "ます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:62
-#, fuzzy
 msgid ""
 "Back in the Inspector, check the box for the *Playing* property. You should "
 "now see the animation playing in the viewport. However, it is a bit slow. To "
 "fix this, change the *Speed (FPS)* setting in the SpriteFrames panel to 10."
 msgstr ""
-"インスペクターに戻り、Playingプロパティのボックスをチェックします。これで、"
-"ビューポートでアニメーションが再生されます。しかし、それは少し遅いです。これ"
-"を修正するには、SpriteFramesパネルのSpeed（FPS）設定を変更します。"
+"インスペクターに戻り、\\ *Playing* プロパティのチェックボックスをオンにしま"
+"す。これで、アニメーションがビューポートで再生されます。しかし、それは少し遅"
+"いです。この問題を解決するには、SpriteFramesパネルの *Speed(FPS)* 設定を10に"
+"変更します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:66
 msgid ""
@@ -167,22 +170,32 @@ msgid ""
 "animate the change from texture to texture with :ref:`AnimationPlayer "
 "<class_AnimationPlayer>`."
 msgstr ""
+"すべてのアニメーションフレームを含むスプライトシートがある場"
+"合、\\``AnimatedSprite`` を簡単に使用することはできません。代わりに、標準の :"
+"ref:`Sprite <class_Sprite>` ノードを使用してテクスチャを表示し、\\ :ref:"
+"`AnimationPlayer <class_AnimationPlayer>` を使用してテクスチャからテクスチャ"
+"への変更をアニメーション化できます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:97
 msgid "Consider this sprite sheet, which contains 6 frames of animation:"
 msgstr ""
+"6フレームのアニメーションを含むこのスプライトシートを考えてみましょう。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:101
 msgid ""
 "Right-click the image and choose \"Save Image As\" to download, then copy "
 "the image into your project folder."
 msgstr ""
+"画像を右クリックして[名前を付けて保存]を選択してダウンロードし、イメージをプ"
+"ロジェクトフォルダにコピーします。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:104
 msgid ""
 "Our goal is to display these images one after another in a loop. Start by "
 "setting up your scene tree:"
 msgstr ""
+"私たちの目標は、これらの画像をループで次々に表示することです。シーンツリーを"
+"設定することから始めます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:116
 msgid ""
@@ -192,6 +205,11 @@ msgid ""
 "*Hframes* to ``6``. *Hframes* and *Vframes* are the number of horizontal and "
 "vertical frames in your sprite sheet."
 msgstr ""
+"スプライトシートをスプライトの *Texture* プロパティにドラッグすると、シート全"
+"体が画面に表示されます。個々のフレームにスライスするには、インスペクタの "
+"*Animation* セクションを展開し、\\ *Hframes* を ``6`` に設定します。\\ "
+"*Hframes* および *Vframes* は、スプライトシート内の水平フレームと垂直フレーム"
+"の数です。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:124
 msgid ""
@@ -199,6 +217,9 @@ msgid ""
 "ranges from ``0`` to ``5`` and the image displayed by the Sprite changes "
 "accordingly. This is the property we'll be animating."
 msgstr ""
+"次に、\\ *Frame* プロパティの値を変更してみてください。範囲が ``0`` から "
+"``5`` であり、それに応じてスプライトによって表示される画像が変化することがわ"
+"かります。これが、アニメーション化のプロパティです。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:128
 msgid ""
@@ -206,11 +227,17 @@ msgid ""
 "by \"New\". Name the new animation \"walk\". Set the animation length to "
 "``0.6`` and click the \"Loop\" button so that our animation will repeat."
 msgstr ""
+"``AnimationPlayer`` を選択し、[アニメーション] ボタンをクリックしてから [新"
+"規] をクリックします。新しいアニメーションに「walk」という名前を付けます。ア"
+"ニメーションの長さを ``0.6`` に設定し、[ループ] ボタンをクリックして、アニ"
+"メーションが繰り返されるようにします。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:134
 msgid ""
 "Now select the ``Sprite`` node and click the key icon to add a new track."
 msgstr ""
+"次に、\\ ``Sprite`` ノードを選択し、鍵のアイコンをクリックして新しいトラック"
+"を追加します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:138
 msgid ""
@@ -218,27 +245,31 @@ msgid ""
 "default), until you have all the frames from 0 to 5. You'll see the frames "
 "actually appearing in the animation track:"
 msgstr ""
+"タイムラインの各ポイント(デフォルトでは ``0.1``\\ 秒刻み)で、0から5までのすべ"
+"てのフレームが追加されるまで、鍵アイコンをクリックしてフレームの追加を続けま"
+"す。アニメーショントラックに実際にフレームが表示されます:"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:144
 msgid "Press \"Play\" on the animation to see how it looks."
 msgstr ""
+"アニメーションの [再生] をクリックすると、アニメーションがどのように表示され"
+"るかを確認できます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:149
-#, fuzzy
 msgid "Controlling an AnimationPlayer animation"
-msgstr "アニメーションのコントロール"
+msgstr "AnimationPlayerアニメーションの制御"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
-#, fuzzy
 msgid ""
 "Like with AnimatedSprite, you can control the animation via code using the "
 "``play()`` and ``stop()`` methods. Again, here is an example to play the "
 "animation while the right arrow key is held, and stop it when the key is "
 "released."
 msgstr ""
-"アニメーションが完了すると、play()メソッドとstop()メソッドを使用して、コード"
-"でアニメーションを制御できます。右矢印キーを押したままアニメーションを再生"
-"し、キーを放したときにアニメーションを停止する簡単な例を次に示します。"
+"AnimatedSpriteと同様に、\\ ``play()`` メソッドと ``stop()`` メソッドを使用し"
+"て、コードを介してアニメーションを制御できます。ここでも、右矢印キーを押した"
+"ままアニメーションを再生し、キーを放したときにアニメーションを停止する例を次"
+"に示します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:168
 msgid ""
@@ -252,6 +283,16 @@ msgid ""
 "this turns out to be a problem, after calling ``play()``, you can call "
 "``advance(0)`` to update the animation immediately."
 msgstr ""
+"アニメーションと個別のプロパティの両方を一度に更新する場合 (たとえば、プラッ"
+"トフォームゲームの場合、「ターン」アニメーションの開始中に、キャラクタの方向"
+"転のために、スプライトの ``h_flip``/``v_flip`` プロパティを更新する場合があり"
+"ます)、\\ ``play()`` では即座に適用されないことに注意してください。代わりに、"
+"次回 :ref:`AnimationPlayer <class_AnimationPlayer>` が処理されるときに適用さ"
+"れます。この更新は次のフレームで確定するので、プロパティの更新は行われていて"
+"も、それがアニメーションには適用されていない「グリッチ」フレームが発生する可"
+"能性があります。これが問題であることが判明した場合は、\\ ``play()`` を呼び出"
+"した後に ``advance(0)`` を呼び出すことでアニメーションをすぐに更新することが"
+"できます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:179
 msgid "Summary"
@@ -265,3 +306,8 @@ msgid ""
 "animate other properties like position or scale. Experiment and see which "
 "works best for your needs."
 msgstr ""
+"これらの例は、2Dアニメーションで発生する最も一般的な2つの状況を示しています。"
+"それぞれに利点があります。\\ ``AnimationPlayer`` の操作はもう少し複雑ですが、"
+"位置やスケールなどの他のプロパティをアニメーション化することもできるため、追"
+"加の機能が提供されます。どれがあなたのニーズに最適なのかを試してみてくださ"
+"い。"

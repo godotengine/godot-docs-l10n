@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,6 @@ msgid "Setup"
 msgstr "Configuration"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:34
-#, fuzzy
 msgid ""
 "Before starting, we recommend you to go through the :ref:"
 "`doc_cutout_animation` tutorial to gain a general understanding of animating "
@@ -168,44 +167,47 @@ msgstr ""
 "autour de la pièce désirée :"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:77
-#, fuzzy
 msgid ""
 "Duplicate the polygon node and give it a proper name. Then, enter the \"UV\" "
 "dialog again and replace the old polygon with another one in the new desired "
 "piece."
 msgstr ""
-"Dupliquer le nœud polygone, renommer le correctement, entrer à nouveau dans "
-"le dialogue \"UV\" et remplacer l'ancien polygone par un autre dans la "
-"nouvelle pièce désirée."
+"Dupliquez le nœud polygone et renommez-le correctement. Ensuite, entrez à "
+"nouveau dans la boîte de dialogue \"UV\" et remplacez l'ancien polygone par "
+"un autre dans la nouvelle pièce désirée."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:81
 msgid ""
 "When you duplicate nodes and the next piece has a similar shape, you can "
 "edit the previous polygon instead of drawing a new one."
 msgstr ""
+"Lorsque vous dupliquez des nœuds et que la pièce suivante a une forme "
+"similaire, vous pouvez modifier le polygone précédent au lieu d'en dessiner "
+"un nouveau."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:84
+#, fuzzy
 msgid ""
 "After moving the polygon, remember to update the UV by selecting Edit -> "
-"Polygon -> UV” in the Polygon 2D UV Editor."
+"\"Polygon -> UV\" in the Polygon 2D UV Editor."
 msgstr ""
+"Après avoir déplacé le polygone, n'oubliez pas de mettre à jour les UV en "
+"sélectionnant Édition -> \"Polygone -> UV\" dans l'éditeur d'UV du Polygon2D."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:89
-#, fuzzy
 msgid "Keep doing this until you mapped all pieces."
 msgstr ""
-"Continuez à faire ça jusqu'à ce que tous les morceaux soient cartographiés."
+"Continuez à faire ça jusqu'à ce que toutes les pièces soient cartographiées."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:93
-#, fuzzy
 msgid ""
 "You will notice that pieces for nodes appear in the same layout as they do "
 "in the original texture. This is because by default, when you draw a "
 "polygon, the UV and points are the same."
 msgstr ""
 "Vous remarquerez que les pièces pour les nœuds apparaissent dans la même "
-"disposition que dans la texture originale. C'est parce que (par défaut) "
-"quand vous dessinez un polygone, les UV et les points sont les mêmes."
+"disposition que dans la texture originale. C'est parce que par défaut, quand "
+"vous dessinez un polygone, les UV et les points sont les mêmes."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:97
 msgid ""
@@ -315,15 +317,14 @@ msgid "Deforming the polygons"
 msgstr "Déformer les polygones"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:156
-#, fuzzy
 msgid ""
 "Select the previously created polygons and assign the skeleton node to their "
 "``Skeleton`` property. This will ensure that they can eventually be deformed "
 "by it."
 msgstr ""
 "Sélectionnez les polygones précédemment créés et affectez le nœud du "
-"squelette à leur propriété ``Skeleton``. Cela permettra de s'assurer qu'ils "
-"peuvent éventuellement être déformés par lui."
+"squelette à leur propriété ``Skeleton``. Cela garantira qu'ils peuvent "
+"effectivement être déformés par lui."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:162
 msgid "Click the property highlighted above and select the skeleton node:"
@@ -454,24 +455,15 @@ msgstr ""
 "triangles. Expérimentez par vous-même jusqu'à obtenir les résultats que vous "
 "aimez."
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:231
+#: ../../docs/tutorials/animation/2d_skeletons.rst:230
 #, fuzzy
 msgid ""
 "**Note:** Don't forget that your newly added internal vertices also need "
-"weight"
+"weight painting! Go to the *Bones* section again to assign them to the right "
+"bones."
 msgstr ""
-"**Note :** N'oubliez pas que vos vertices internes nouvellement ajoutés ont "
-"aussi besoin de peinture de poids ! Allez à nouveau à la section *Bones* "
-"pour les assigner aux bons os."
-
-#: ../../docs/tutorials/animation/2d_skeletons.rst:231
-#, fuzzy
-msgid ""
-"painting! Go to the *Bones* section again to assign them to the right bones."
-msgstr ""
-"**Note :** N'oubliez pas que vos vertices internes nouvellement ajoutés ont "
-"aussi besoin de peinture de poids ! Allez à nouveau à la section *Bones* "
-"pour les assigner aux bons os."
+"**Note:** N'oubliez pas que vos sommets internes nouvellement ajoutés ont "
+"également besoin de poids"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:233
 msgid "Once you are all set, you will get much better results:"

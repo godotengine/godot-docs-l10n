@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:4
 msgid "Viewport and canvas transforms"
-msgstr "Viewportおよびキャンバス変換"
+msgstr "Viewportおよびキャンバスの幾何学変換"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:7
 msgid "Introduction"
@@ -32,12 +32,12 @@ msgid ""
 "This overview discusses very low level details of the engine."
 msgstr ""
 "ここでは、ノードがコンテンツをローカルに描画してから画面に描画するまでの間に"
-"行われる2D変換の概要について説明します。この概要では、エンジンの非常に低いレ"
-"ベルの詳細について説明します。"
+"行われる2D幾何学変換の概要について説明します。この概要では、エンジンの非常に"
+"低いレベルの詳細について説明します。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:14
 msgid "Canvas transform"
-msgstr "キャンバス変換"
+msgstr "キャンバスの幾何学変換"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:16
 msgid ""
@@ -51,7 +51,7 @@ msgstr ""
 "CanvasItemノード(Node2DおよびControlベースのノードはCanvasItemを共通のルート"
 "として使用することに注意してください)は*キャンバス・レイヤー*に存在します。 "
 "すべてのキャンバス・レイヤーには、 \\ :ref:`Transform2D <class_Transform2D>` "
-"としてアクセスできる変換(平行移動、回転、拡大縮小など)があります。"
+"としてアクセスできる幾何学変換(平行移動、回転、拡大縮小など)があります。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:22
 msgid ""
@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:27
 msgid "Global canvas transform"
-msgstr "グローバル・キャンバス変換"
+msgstr "グローバル・キャンバスの幾何学変換"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:29
 msgid ""
@@ -74,14 +74,14 @@ msgid ""
 "individual *Canvas Layer* transforms. Generally, this transform is not of "
 "much use, but is used in the CanvasItem Editor in Godot's editor."
 msgstr ""
-"Viewportにはグローバル・キャンバス変換もあります(これも \\ :ref:`Transform2D "
-"<class_Transform2D>` です)。 これはマスター変換であり、すべての個々の*Canvas "
-"Layer*変換に影響します。通常、この変換はあまり使用されませんが、Godotのエディ"
-"タのCanvasItemエディタで使用されます。"
+"Viewportにはグローバル・キャンバスの幾何学変換もあります(これも \\ :ref:"
+"`Transform2D <class_Transform2D>` です)。 これはマスターの幾何学変換であり、"
+"すべての個々の *Canvas Layer* の幾何学変換に影響します。通常、この幾何学変換"
+"はあまり使用されませんが、GodotのエディタのCanvasItemエディタで使用されます。"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:36
 msgid "Stretch transform"
-msgstr "ストレッチ変換"
+msgstr "ストレッチ幾何学変換"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:38
 msgid ""
@@ -91,7 +91,7 @@ msgid ""
 "viewport."
 msgstr ""
 "最後に、Viewportには*Stretch Transform*があります。これは、画面のサイズ変更や"
-"ストレッチを行うときに使用されます。 この変換は( \\ :ref:"
+"ストレッチを行うときに使用されます。 この幾何学変換は( \\ :ref:"
 "`doc_multiple_resolutions` で説明されているように)内部的に使われますが、各"
 "Viewportで手動で設定することもできます。"
 
@@ -132,11 +132,11 @@ msgstr "各変換を取得するには、次の関数を使用します:"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Type"
-msgstr "タイプ（型）"
+msgstr "タイプ(型)"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
-msgstr "変形"
+msgstr "幾何学変換(変形)"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"

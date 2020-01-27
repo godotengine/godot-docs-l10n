@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:4
 msgid "Encrypting save games"
-msgstr ""
+msgstr "セーブデータの暗号化"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:7
 msgid "Why?"
-msgstr ""
+msgstr "どうして？"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:9
 msgid ""
@@ -39,6 +39,15 @@ msgid ""
 "spending money on them to extend their experience, and their preferred way "
 "of doing so is through in-app purchases and virtual currency."
 msgstr ""
+"なぜなら、今日の世界は昨日の世界ではないからです。資本主義の少数独裁者は世界"
+"を運営し、この腐敗した社会の歯車を軌道に乗せるために私たちに消費を強制しま"
+"す。そのため、今日のビデオゲームの消費における最大の市場はモバイル市場です。"
+"それは、日常生活の苦悩、通勤、または支配階級の商品やサービスの生産に使用して"
+"いない他の短い自由時間を忘れるために、強制的にデジタルコンテンツを消費するこ"
+"とを余儀なくされた貧しい亡霊たちの市場です。これらの個人は、ビデオゲームに集"
+"中し続ける必要があります(そうしないと、現実的な不安にとらわれてしまいます)。"
+"そのため、彼らは自分の経験を伸ばすためにそれにお金を費やしますが、彼らの好む"
+"方法はアプリ内購入と仮想通貨を使用することです。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:22
 msgid ""
@@ -49,16 +58,24 @@ msgid ""
 "them to think, and the tremendous agony of realizing their own irrelevance "
 "would again take over their life."
 msgstr ""
+"しかし、誰かが保存されたゲームを編集し、手間をかけずにアイテムと通貨を割り当"
+"てる方法を見つけたらどうでしょうか？それはプレイヤーがはるかに速くコンテンツ"
+"を消費し、したがって、予想よりも早くそれを使い果たすのを助けるので、それはひ"
+"どい結果になります。それが起こると、彼らが現実から目を背けるためのものは何も"
+"なくなり、自分自身の無意味さに気付くという恐ろしい苦悩が再び彼らの人生を覆い"
+"つくすでしょう。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:29
 msgid ""
 "No, we definitely do not want that to happen, so let's see how to encrypt "
 "savegames and protect the world order."
 msgstr ""
+"いいえ、私たちは絶対にそれを望まないので、セーブゲームを暗号化し、世界の秩序"
+"を保護する方法を見てみましょう。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:33
 msgid "How?"
-msgstr ""
+msgstr "どうやって？"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:35
 msgid ""
@@ -66,6 +83,9 @@ msgid ""
 "write data (integers, strings and variants). It also supports encryption. To "
 "create an encrypted file, a passphrase must be provided, like this:"
 msgstr ""
+"クラス :ref:`File <class_File>` は、ある場所でファイルを開き、データ(整数、文"
+"字列、バリアント)を読み書きできます。暗号化もサポートしています。暗号化された"
+"ファイルを作成するには、次のようにパスフレーズを提供する必要があります:"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:55
 msgid ""
@@ -73,14 +93,18 @@ msgid ""
 "from sharing savefiles. To solve this, use the device unique id or some "
 "unique user identifier, for example:"
 msgstr ""
+"これにより、ユーザーはファイルを読み取れなくなりますが、ユーザーがセーブファ"
+"イルを共有できなくなることはありません。これを解決するには、デバイスの一意の"
+"IDまたは一意のユーザー識別子を使用します。次に例を示します:"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:74
 msgid "Note that ``OS.get_unique_id()`` does not work on UWP or HTML5."
 msgstr ""
+"``OS.get_unique_id()`` はUWPまたはHTML5では機能しないことに注意してください。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:76
 msgid "That is all! Thank you for your cooperation, citizen."
-msgstr ""
+msgstr "それだけです！市民の皆さん、ご協力ありがとうございます。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:78
 msgid ""
@@ -91,3 +115,9 @@ msgid ""
 "server, where players can only make authorized changes to their save data. "
 "If your game deals with real money, you need to be doing this anyway."
 msgstr ""
+"暗号化キーはゲーム内に保存されているため、プレイヤーはファイルを自分で復号化"
+"および編集できるため、この方法では、プレイヤーがセーブゲームをローカルで編集"
+"することを実際に防ぐことはできません。これができないようにする唯一の方法は、"
+"セーブデータをリモートサーバーに保存することです。この場合、プレイヤーはセー"
+"ブデータに対して許可された変更のみを行うことができます。ゲームで実際のお金を"
+"扱う場合は、とにかくこれを行う必要があります。"

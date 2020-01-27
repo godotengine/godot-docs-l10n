@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:4
 msgid "GDNative C++ example"
-msgstr "GDNative C ++の例"
+msgstr "GDNative C++の例"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:7
 msgid "Introduction"
@@ -118,7 +118,7 @@ msgstr ""
 "これらのリポジトリをGitHubからダウンロードすることも、Gitに作業を任せることが"
 "できます。これらのリポジトリには、Godotのバージョンごとに異なるブランチがある"
 "ことに注意してください。 Godotの以前のバージョン用に書かれたGDNativeモジュー"
-"ルは、（3.0と3.1の間のARVRインターフェースの１つの重大な変更を除いて）新しい"
+"ルは、(3.0と3.1の間のARVRインターフェースの１つの重大な変更を除いて)新しい"
 "バージョンでも機能します。また、 ``api.json`` の生成に使用するGodotのバージョ"
 "ンが最小のバージョンになることに注意してください。"
 
@@ -171,14 +171,13 @@ msgstr ""
 "のにしておいてください。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:102
-#, fuzzy
 msgid ""
 "If you cloned the example from the link specified in the introduction, the "
 "submodules are not automatically initialized. You will need to execute the "
 "following commands:"
 msgstr ""
-"概要で指定されたリンクからサンプルを複製した場合、サブモジュールは自動的に初"
-"期化されません。次のコマンドを実行する必要があります。"
+"概要で指定したリンクからサンプルを複製した場合、サブモジュールは自動的に初期"
+"化されません。次のコマンドを実行する必要があります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:111
 msgid "This will clone these two repositories into your project folder."
@@ -187,7 +186,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:114
 msgid "Building the C++ bindings"
-msgstr "C++ バインディングのビルド"
+msgstr "C++バインディングのビルド"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:116
 msgid ""
@@ -197,15 +196,14 @@ msgstr ""
 "前提条件に書かれた物をダウンロードしたので、C ++バインディングを作成します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:119
-#, fuzzy
 msgid ""
 "The repository contains a copy of the metadata for the current Godot "
 "release, but if you need to build these bindings for a newer version of "
 "Godot, simply call the Godot executable:"
 msgstr ""
-"リポジトリには、現在のGodotリリースのメタデータのコピーが含まれていますが、"
-"Godotの新しいバージョン用にこれらのバインディングをビルドする必要がある場合"
-"は、単にGodot実行可能ファイルを呼び出します。"
+"リポジトリには、現在のGodotリリースのメタデータのコピーが含まれていますが、新"
+"しいバージョンのGodot用にこれらのバインディングをビルドする必要がある場合は、"
+"単にGodot実行可能ファイルを呼び出すだけです。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:127
 msgid ""
@@ -231,58 +229,76 @@ msgid ""
 "libraries that can be compiled into your project stored in ``godot-cpp/bin/"
 "``."
 msgstr ""
+"この手順にはしばらく時間がかかります。完了後、プロジェクト内の \\ ``godot-"
+"cpp/bin/`` に、コンパイルされた静的ライブラリが格納されているはずです。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:143
 msgid ""
 "At some point in the future, compiled binaries will be available, making "
 "this step optional."
 msgstr ""
+"将来のある時点で、コンパイル済みのバイナリが利用可能になり、この手順は省略可"
+"能になります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:148
 msgid ""
 "You may need to add ``bits=64`` to the command on Windows or Linux. We're "
 "still working on better auto detection."
 msgstr ""
+"Windows または Linux のコマンドに ``bits=64`` を追加する必要がある場合があり"
+"ます。我々は自動検出の改善に引き続き取り組んでいます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:152
 msgid "Creating a simple plugin"
-msgstr ""
+msgstr "シンプルなプラグインの作成"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:154
 msgid ""
 "Now it's time to build an actual plugin. We'll start by creating an empty "
 "Godot project in which we'll place a few files."
 msgstr ""
+"次に、実際のプラグインを作成します。まず、空のGodotプロジェクトを作成し、そこ"
+"にいくつかのファイルを配置します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:157
 msgid ""
 "Open Godot and create a new project. For this example, we will place it in a "
 "folder called ``demo`` inside our GDNative module's folder structure."
 msgstr ""
+"Godotを開き、新しいプロジェクトを作成します。この例では、GDNativeモジュールの"
+"フォルダ構造内に ``demo`` という名前のフォルダを配置します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:160
 msgid ""
 "In our demo project, we'll create a scene containing a Node called \"Main\" "
 "and we'll save it as ``main.tscn``. We'll come back to that later."
 msgstr ""
+"デモプロジェクトでは、\"Main\" というノードを含むシーンを作成し、\\ ``main."
+"tscn`` として保存します。それについては後で説明します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:163
 msgid ""
 "Back in the top-level GDNative module folder, we're also going to create a "
 "subfolder called ``src`` in which we'll place our source files."
 msgstr ""
+"最上位の GDNativeモジュールフォルダに戻り、ソース ファイルを配置する ``src`` "
+"というサブフォルダも作成します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:166
 msgid ""
 "You should now have ``demo``, ``godot-cpp``, ``godot_headers``, and ``src`` "
 "directories in your GDNative module."
 msgstr ""
+"これで、GDNativeモジュールに ``demo``\\ 、\\ ``godot-cpp``\\ 、\\ "
+"``godot_headers``\\ および ``src`` ディレクトリが含まれるはずです。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:169
 msgid ""
 "In the ``src`` folder, we'll start with creating our header file for the "
 "GDNative node we'll be creating. We will name it ``gdexample.h``:"
 msgstr ""
+"作成するGDNativeノードのヘッダーファイルを、\\ `` src``\\ フォルダ内に作成す"
+"ることから始めます。\\ ``gdexample.h`` という名前を付けます:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:233
 msgid ""
@@ -291,12 +307,17 @@ msgid ""
 "hpp`` which contains bindings to the Sprite class. We'll be extending this "
 "class in our module."
 msgstr ""
+"上記にはいくつかの注意事項があります。まず、すべての基本的な定義を含む "
+"``Godot.hpp`` を含めています。その後、Spriteクラスへのバインディングを含む "
+"``Sprite.hpp``を含めます。このクラスが作成するモジュールで拡張されます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:238
 msgid ""
 "We're using the namespace ``godot``, since everything in GDNative is defined "
 "within this namespace."
 msgstr ""
+"GDNativeのすべてがこの名前空間内で定義されているため、namespace ``godot`` を"
+"使用しています。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:241
 msgid ""
@@ -304,10 +325,13 @@ msgid ""
 "container class. We'll see a few side effects of this later on. The "
 "``GODOT_CLASS`` macro sets up a few internal things for us."
 msgstr ""
+"次に、コンテナ クラスを通じてSpriteから継承するクラス定義を作成します。これに"
+"ついては、後でいくつかの副作用が表示されます。\\ ``GODOT_CLASS`` マクロはいく"
+"つかの内部的なものをセットアップします。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:245
 msgid "After that, we declare a single member variable called ``time_passed``."
-msgstr ""
+msgstr "その後、\\ ``time_passed`` という単一のメンバー変数を宣言します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:247
 msgid ""
@@ -315,6 +339,9 @@ msgid ""
 "constructor and destructor defined, but there are two other functions that "
 "will likely look familiar to some, and one new method."
 msgstr ""
+"メソッドを定義する次のブロックでは、明示的にコンストラクタとデストラクタが定"
+"義されています。その他の関数のうち2つのは見慣れたものですが、新しいメソッドが"
+"1つあります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:251
 msgid ""
@@ -326,10 +353,15 @@ msgid ""
 "has properly set up our object. It has to exist even if you don't place any "
 "code in it."
 msgstr ""
+"最初は ``_register_methods`` で、これはGodotがNativeScriptで呼び出すことがで"
+"きるメソッドと、それが公開するプロパティを調べるために呼び出す静的関数です。2"
+"つ目は ``_process`` 関数で、GDScriptで慣れている ``_process`` 関数とまったく"
+"同じように機能します。3つ目は、Godotがオブジェクトを適切に設定した後に呼び出"
+"される ``_init`` 関数です。コードを配置しなくても存在する必要があります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:258
 msgid "Let's implement our functions by creating our ``gdexample.cpp`` file:"
-msgstr ""
+msgstr "``gdexample.cpp`` ファイルを作成して関数を実装してみましょう:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:318
 msgid ""
@@ -339,6 +371,11 @@ msgid ""
 "able to use it. However, we do not have to tell Godot about our constructor, "
 "destructor and ``_init`` functions."
 msgstr ""
+"これは簡単なはずです。ヘッダーファイルで定義したクラスの各メソッドを実装して"
+"います。\\ ``register_method`` の呼び出しでは\\ **必ず** ``_ process`` メソッ"
+"ドを公開する必要があることに注意してください。さもないと、Godotはそれを使用で"
+"きなくなります。ただし、コンストラクタ、デストラクタ、および\\ ``_init`` 関数"
+"についてGodotに伝える必要はありません。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:324
 msgid ""
@@ -350,6 +387,13 @@ msgid ""
 "actual Sprite node our script relates to. In the upcoming NativeScript 1.1, "
 "``set_position`` can be called directly on our class."
 msgstr ""
+"もう1つの注目すべきメソッドは、\\ ``_ process`` 関数です。これは、経過時間を"
+"追跡し、単純にサイン関数とコサイン関数を使用して、スプライトの新しい位置を計"
+"算するだけです。注目すべき点は、\\ ``owner->set_position`` を呼び出して、"
+"Spriteのメソッドのビルドの1つを呼び出すことです(NativeScript 1.0の場合)。これ"
+"は、クラスがコンテナクラスであるためです。\\ ``owner`` は、スクリプトが関連す"
+"る実際のSpriteノードを指します。今後のNativeScript 1.1では、クラスで直接 "
+"``set_position`` を呼び出すことができます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:332
 msgid ""
@@ -359,12 +403,19 @@ msgid ""
 "we need now is a small bit of code that tells Godot about all the "
 "NativeScripts in our GDNative plugin."
 msgstr ""
+"必要なC++ファイルがもう1つあるので、それには ``gdlibrary.cpp``という名前を付"
+"けます。 GDNativeプラグインには複数のNativeScriptを含めることができ、上記の "
+"``GDExample`` を実装したように、それぞれに独自のヘッダーとソースファイルがあ"
+"ります。今必要なのは、GDNativeプラグイン内のすべてのNativeScriptについてGodot"
+"に伝える小さなコードです。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:356
 msgid ""
 "Note that we are not using the ``godot`` namespace here, since the three "
 "functions implemented here need to be defined without a namespace."
 msgstr ""
+"ここで実装されている3つの関数は名前空間なしで定義する必要があるため、ここで"
+"は ``godot`` という名前空間を使用していないことに注意してください。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:359
 msgid ""
@@ -374,6 +425,10 @@ msgid ""
 "initialize them, but you might have to set up more things depending on your "
 "needs."
 msgstr ""
+"``godot_gdnative_init`` および ``godot_gdnative_terminate`` 関数は、Godotがプ"
+"ラグインをロードするときとアンロードするときにそれぞれ呼び出されます。ここで"
+"行っているのは、バインディングモジュールの関数を解析してそれらを初期化するこ"
+"とだけですが、必要に応じてより多くのことを設定する必要がある場合があります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:365
 msgid ""
@@ -382,10 +437,13 @@ msgid ""
 "library that does its usual stuff. After that, we call the function "
 "``register_class`` for each of our classes in our library."
 msgstr ""
+"重要な関数は ``godot_nativescript_init``と呼ばれる3番目の関数です。まず、通常"
+"の処理を行うバインディングライブラリの関数を呼び出します。その後、ライブラリ"
+"の各クラスに対して関数 ``register_class`` を呼び出します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:371
 msgid "Compiling the plugin"
-msgstr ""
+msgstr "プラグインのコンパイル"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:373
 msgid ""
@@ -395,6 +453,11 @@ msgid ""
 "We'll cover a more customizable, detailed example on how to use these build "
 "files in a subsequent tutorial."
 msgstr ""
+"SConsがビルドに使用する ``SConstruct`` ファイルを手で簡単に書くことはできませ"
+"ん。この例では、準備されている :download:`his hardcoded SConstruct file "
+"<cpp_example/SConstruct>` を使用します。以降のチュートリアルでは、これらのビ"
+"ルドファイルの使用方法について、よりカスタマイズ可能で詳細な例を取り上げま"
+"す。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:381
 msgid ""
@@ -402,6 +465,10 @@ msgid ""
 "cpp`` master, you may need to make small changes using it with older "
 "versions or refer to the ``SConstruct`` file in the Godot 3.0 documentation."
 msgstr ""
+"この ``SConstruct``ファイルは、最新の ``godot-cpp`` マスターで使用するために"
+"作成されました。古いバージョンで使用するときは必要に応じて小さな変更を加える"
+"か、Godot 3.0 のドキュメント内の ``SConstruct`` ファイルを参照する必要があり"
+"ます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:385
 msgid ""
@@ -409,10 +476,15 @@ msgid ""
 "module folder besides ``godot-cpp``, ``godot_headers`` and ``demo``, then "
 "run:"
 msgstr ""
+"``SConstruct`` ファイルをダウンロードしたら、\\ ``godot-cpp``\\ 、\\ "
+"``godot_headers``\\ 、\\ ``demo`` 以外のGDNativeモジュールフォルダに配置し、"
+"次を実行します:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:392
 msgid "You should now be able to find the module in ``demo/bin/<platform>``."
 msgstr ""
+"これで ``demo/bin/<platform> `` 内でモジュールを見つけることができるはずで"
+"す。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:396
 msgid ""
@@ -420,10 +492,13 @@ msgid ""
 "builds. For optimized builds, you should compile them using the "
 "``target=release`` switch."
 msgstr ""
+"ここでは、godot-cpp と gdexample ライブラリの両方を、デバッグビルドとしてコン"
+"パイルしました。最適化されたビルドの場合は、\\ ``target=release`` スイッチを"
+"使用してコンパイルする必要があります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:401
 msgid "Using the GDNative module"
-msgstr ""
+msgstr "GDNativeモジュールの使用"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:403
 msgid ""
@@ -431,12 +506,17 @@ msgid ""
 "bin/``. Both can be created using the Godot editor, but it may be faster to "
 "create them directly."
 msgstr ""
+"Godotに戻る前に、\\ ``demo/bin/`` にさらに2つのファイルを作成する必要がありま"
+"す。どちらもGodotエディタを使用して作成できますが、直接作成する方が高速な場合"
+"があります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:407
 msgid ""
 "The first one is a file that lets Godot know what dynamic libraries should "
 "be loaded for each platform and is called ``gdexample.gdnlib``."
 msgstr ""
+"1つ目は、プラットフォーム別に読み込む必要があるダイナミック ライブラリをGodot"
+"に知らせるファイルで、\\ ``gdexample.gdnlib`` と呼ばれます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:431
 msgid ""
@@ -447,6 +527,12 @@ msgid ""
 "doesn't allow dynamic libraries to be deployed, yet GDNative modules are "
 "linked statically."
 msgstr ""
+"このファイルには、モジュールの読み込み方法を制御する ``general`` セクションが"
+"含まれています。また、今のところ ``godot_`` に残すべきプレフィックスセクショ"
+"ンも含まれています。これを変更する場合は、エントリポイントとして使用されるさ"
+"まざまな関数の名前を変更する必要があります。これは、動的ライブラリをデプロイ"
+"できないiPhoneプラットフォーム用に追加されましたが、GDNativeモジュールは静的"
+"にリンクされています。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:437
 msgid ""
@@ -456,6 +542,11 @@ msgid ""
 "project, which means the data pack won't contain libraries that are "
 "incompatible with the target platform."
 msgstr ""
+"``entry`` セクションは重要な要素です: サポートされている各プラットフォームの"
+"プロジェクトのファイルシステム内の動的ライブラリの場所をGodotに指示します。ま"
+"た、プロジェクトをエクスポートするときにそのファイル\\ *だけが*\\ エクスポー"
+"トされるため、データパックにはターゲットプラットフォームと互換性のないライブ"
+"ラリは含まれません。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:443
 msgid ""
@@ -464,12 +555,18 @@ msgid ""
 "GDNative plugin implements someone else's library and requires you to supply "
 "a third-party dynamic library with your project."
 msgstr ""
+"最後に、\\ ``dependencies``(依存関係)セクションでは、組み込みを許可する必要が"
+"ある追加の動的ライブラリの名前を記載します。これは、GDNativeプラグインが他の"
+"ユーザーのライブラリを実装し、サードパーティの動的ライブラリをプロジェクトに"
+"提供する必要がある場合に重要です。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:448
 msgid ""
 "If you double click on the ``gdexample.gdnlib`` file within Godot, you'll "
 "see there are far more options to set:"
 msgstr ""
+"Godot内の ``gdexample.gdnlib`` ファイルをダブルクリックすると、さらに多くのオ"
+"プションを設定できます:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:453
 msgid ""
@@ -477,6 +574,9 @@ msgid ""
 "added to our plugin. We'll name it ``gdexample.gdns`` for our gdexample "
 "NativeScript."
 msgstr ""
+"作成する必要がある2番目のファイルは、プラグインに追加した各NativeScriptで使用"
+"されるファイルです。gdexampleのNativeScriptに ``gdexample.gdns``という名前を"
+"付けます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:469
 msgid ""
@@ -487,12 +587,19 @@ msgid ""
 "``class_name`` which identifies the NativeScript in our plugin we want to "
 "use."
 msgstr ""
+"これは標準のGodotリソースです。シーンで直接作成することもできますが、ファイル"
+"に保存すると、他の場所で再利用するのがはるかに簡単になります。このリソースは"
+"gdnlibファイルを指しているため、どの動的ライブラリにNativeScriptが含まれてい"
+"るかを Godot が知ることができます。また、プラグイン内の使用したいNativeScript"
+"を識別する ``class_name`` も定義します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:475
 msgid ""
 "Time to jump back into Godot. We load up the main scene we created way back "
 "in the beginning and now add a Sprite to our scene:"
 msgstr ""
+"Godotに戻る時間です。最初に作成したメインシーンを読み込み、シーンにスプライト"
+"を追加します:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:480
 msgid ""
@@ -500,14 +607,17 @@ msgid ""
 "the ``centered`` property and drag our ``gdexample.gdns`` file onto the "
 "``script`` property of the sprite:"
 msgstr ""
+"このスプライトに Godot ロゴをテクスチャとして割り当て、\\ ``Centered`` プロパ"
+"ティを無効にし、\\ ``gdexample.gdns`` ファイルをスプライトの ``Script`` プロ"
+"パティにドラッグします。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:486
 msgid "We're finally ready to run the project:"
-msgstr ""
+msgstr "プロジェクトを実行する準備ができました:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:491
 msgid "Adding properties"
-msgstr ""
+msgstr "プロパティの追加"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:493
 msgid ""
@@ -516,6 +626,10 @@ msgid ""
 "ways of doing this. You can either bind directly to a member or use a setter "
 "and getter function."
 msgstr ""
+"GDScriptでは、\\ ``export`` キーワードを使用してスクリプトにプロパティを追加"
+"できます。GDNativeでは、プロパティを登録する必要があり、これを行う2つの方法が"
+"あります。メンバーに直接バインドすることも、セッター関数とゲッター関数を使用"
+"することもできます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:500
 msgid ""
@@ -523,17 +637,23 @@ msgid ""
 "the ``_get_property_list``, ``_get`` and ``_set`` methods of an object but "
 "that goes far beyond the scope of this tutorial."
 msgstr ""
+"第3のオプションもあります。GDScriptと同様に、オブジェクトの "
+"``_get_property_list``\\ 、\\ ``_get`` および ``_set`` メソッドを直接実装でき"
+"ますが、このチュートリアルの範囲をはるかに超えています。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:504
 msgid ""
 "We'll examine both starting with the direct bind. Lets add a property that "
 "allows us to control the amplitude of our wave."
 msgstr ""
+"直接バインドする方法から始めて両方を調べます。波の振幅を制御できるプロパティ"
+"を追加しましょう。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:507
 msgid ""
 "In our ``gdexample.h`` file we simply need to add a member variable like so:"
 msgstr ""
+"``gdexample.h`` ファイルでは、次のようなメンバー変数を追加するだけです:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:517
 msgid ""
@@ -541,6 +661,8 @@ msgid ""
 "only show the methods we end up changing, don't remove the lines we're "
 "omitting:"
 msgstr ""
+"``gdexample.cpp`` ファイルでは、いくつかの変更を行う必要があります。変更する"
+"メソッドのみを表示しているので、省略されている行は削除しないでください:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:569
 msgid ""
@@ -549,6 +671,10 @@ msgid ""
 "and when you run your project, you will see that our Godot icon travels "
 "along a larger figure."
 msgstr ""
+"これらの変更を加えてモジュールをコンパイルすると、インターフェイスにプロパ"
+"ティが追加されていることがわかります。これでこのプロパティを変更できるように"
+"なったため、プロジェクトを実行すると、Godotアイコンが大きな図に沿って移動する"
+"ことがわかります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:576
 msgid ""
@@ -556,6 +682,9 @@ msgid ""
 "``true`` for the Godot editor to automatically pick up the newly added "
 "property."
 msgstr ""
+"Godotエディタが新しく追加されたプロパティを自動的に取得するには、\\ "
+"``gdexample.gdnlib`` ファイルの ``reloadable`` プロパティを ``rue`` に設定す"
+"る必要があります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:580
 msgid ""
@@ -563,6 +692,9 @@ msgid ""
 "are used, as the editor might hold objects then that have script instances "
 "attached to them that are managed by a GDNative library."
 msgstr ""
+"ただし、この設定は、ツールクラスを使用する場合は特に注意して使用する必要があ"
+"ります。エディタは、GDNativeライブラリによって管理されるスクリプトインスタン"
+"スがアタッチされたオブジェクトを保持する可能性があるためです。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:584
 msgid ""
@@ -570,6 +702,9 @@ msgid ""
 "getter function. Our ``gdexample.h`` header file again only needs a few more "
 "lines of code:"
 msgstr ""
+"同じようなことを、アニメーションの速度のために、セッターとゲッター関数を使用"
+"しておこないます。\\ ``gdexample.h`` ヘッダーファイルには、さらに数行のコード"
+"追加しか必要ありません:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:599
 msgid ""
@@ -577,12 +712,17 @@ msgid ""
 "only showing the methods that have changed so don't remove anything we're "
 "omitting:"
 msgstr ""
+"このために ``gdexample.cpp`` ファイルにさらにいくつかの変更を行う必要がありま"
+"すが、ここでも変更されたメソッドのみを表示しているため、省略されているものを"
+"削除しないでください:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:671
 msgid ""
 "Now when the project is compiled we'll see another property called speed. "
 "Changing its value will make the animation go faster or slower."
 msgstr ""
+"プロジェクトがコンパイルされると、speedという別のプロパティが表示されます。値"
+"を変更すると、アニメーションが速くなったり遅くなったりします。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:674
 msgid ""
@@ -591,12 +731,18 @@ msgid ""
 "good reason for a setter if you want to react on the variable being changed "
 "but in many cases just binding the variable will be enough."
 msgstr ""
+"この例では、セッターとゲッターを使用する明らかな利点はありません。書いただけ"
+"のコードです。簡単な例をあげると、変数の変更と同時に何らかの反応を行いたい場"
+"合などにはセッターの正当な理由があるかもしれません。ですが多くの場合、変数を"
+"バインドするだけで十分です。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:679
 msgid ""
 "Getters and setters become far more useful in more complex scenarios where "
 "you need to make additional choices based on the state of your object."
 msgstr ""
+"ゲッターとセッターは、オブジェクトの状態に基づいて追加の選択を行う必要があ"
+"る、より複雑なシナリオではるかに役立ちます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:684
 msgid ""
@@ -605,6 +751,10 @@ msgid ""
 "``rpc_mode``, ``usage``, ``hint`` and ``hint_string``. These can be used to "
 "further configure how properties are displayed and set on the Godot side."
 msgstr ""
+"わかりやすくするために、register_property <class, type>メソッド呼び出しのオプ"
+"ションパラメータは省略しました。これらのパラメータは ``rpc_mode``\\ 、\\ "
+"``usage``\\ 、\\ ``hint`` および ``hint_string`` です。これらを使用して、"
+"Godot側でのプロパティの表示方法と設定方法をさらに構成できます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:689
 msgid ""
@@ -612,6 +762,9 @@ msgid ""
 "you to omit the ``<GDExample, float>`` part of our ``register_property`` "
 "method. We've had mixed experiences with this however."
 msgstr ""
+"最新のC++コンパイラでは、クラスと変数の型を推測するので、\\ "
+"``register_property`` メソッドの ``<GDExample, float>`` 部分を省略できます。"
+"ただし、これについてはさまざまな経験があります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:694
 msgid "Signals"
@@ -624,16 +777,22 @@ msgid ""
 "``connect`` on that object. We can't think of a good example for our "
 "wobbling Godot icon, we would need to showcase a far more complete example."
 msgstr ""
+"最後に、シグナルはGDNativeでも完全に機能します。モジュールが別のオブジェクト"
+"によって与えられたシグナルに反応するには、そのオブジェクトに対して "
+"``connect`` を呼び出す必要があります。揺れるゴドーのアイコンのための良い例を"
+"考えることができませんので、もっと完全な例を紹介する必要があります。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:701
 msgid "This however is the required syntax:"
-msgstr ""
+msgstr "まず、これは必須の構文です:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:712
 msgid ""
 "Note that you can only call ``my_method`` if you've previously registered it "
 "in your ``_register_methods`` method."
 msgstr ""
+"``_register_methods`` メソッドで事前に登録した場合にのみ ``my_method`` を呼び"
+"出すことができることに注意してください。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:715
 msgid ""
@@ -642,12 +801,17 @@ msgid ""
 "to emit a signal every time a second has passed and pass the new location "
 "along."
 msgstr ""
+"オブジェクトがシグナルを送信する方がはるかに一般的です。揺れるゴドーのアイコ"
+"ンのために、それがどのように機能するかを示す目的であまり意味の無いことをしま"
+"す。1秒が経過するたびにシグナルを発信し、新しい位置を伝達します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:719
 msgid ""
 "In our ``gdexample.h`` header file we just need to define a new member "
 "``time_emit``:"
 msgstr ""
+"``gdexample.h`` ヘッダーファイルでは、新しいメンバー ``time_emit`` を定義する"
+"だけです:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:730
 msgid ""
@@ -655,12 +819,17 @@ msgid ""
 "you'll need to set ``time_emit = 0.0;`` in either our ``_init`` method or in "
 "our constructor. But the other two needed changes we'll look at one by one."
 msgstr ""
+"`` gdexample.cpp``の変更は今回はもう少し複雑です。まず、\\ ``_ init`` メソッ"
+"ドまたはコンストラクタで ``time_emit = 0.0;`` を設定する必要があります。です"
+"が、他の2つは、必要な変更を1つずつ見ていきます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:734
 msgid ""
 "In our ``_register_methods`` method we need to declare our signal and we do "
 "this as follows:"
 msgstr ""
+"``_register_methods`` メソッドでシグナルを宣言する必要があり、これを次のよう"
+"に行います:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:761
 msgid ""
@@ -669,6 +838,10 @@ msgid ""
 "name, then having pairs of values specifying the parameter name and type of "
 "each parameter we'll send along with this signal."
 msgstr ""
+"ここでは、最新バージョンのgodot-cppで素晴らしい改善が見られます。"
+"``register_signal`` メソッドは、最初にシグナル名を受け取り、次にパラメータ名"
+"と各パラメータのタイプを指定する値のペアを指定する、単一の呼び出しだけでシグ"
+"ナルを送信します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:766
 msgid ""
@@ -676,10 +849,12 @@ msgid ""
 "about the types of arguments we will pass to our signal, and then register "
 "it."
 msgstr ""
+"NativeScript 1.0の場合、まずシグナルに渡す引数のタイプをGodotに伝える辞書を作"
+"成し、それを登録します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:769
 msgid "Next we'll need to change our ``_process`` method:"
-msgstr ""
+msgstr "次に ``_process`` メソッドを変更する必要があります:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:815
 msgid ""
@@ -688,6 +863,10 @@ msgid ""
 "``emit_signal``. In NativeScript 1.0 We first build an array of values and "
 "then call ``emit_signal``."
 msgstr ""
+"1秒が経過した後、シグナルを発信し、カウンターをリセットします。godot-cppの新"
+"しいバージョンでは、パラメータ値を ``emit_signal`` に直接追加できます。 "
+"NativeScript 1.0では、最初に値の配列を作成してから ``emit_signal`` を呼び出し"
+"ます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:820
 msgid ""
@@ -695,14 +874,17 @@ msgid ""
 "``Node`` tab we find our new signal and link it up by pressing connect. "
 "We've added a script on our main node and implemented our signal like this:"
 msgstr ""
+"コンパイルしたら、Godotに移動してスプライトノードを選択できます。\\``ノード"
+"`` タブで新しいシグナルを見つけ、接続を押してリンクします。メインノードにスク"
+"リプトを追加し、次のように信号を実装しました:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:831
 msgid "Every second we simply output our position to the console."
-msgstr ""
+msgstr "毎秒、単に自分の位置をコンソールに出力します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:834
 msgid "NativeScript 1.1 vs NativeScript 1.0"
-msgstr ""
+msgstr "NativeScript1.1 対 NativeScript1.0"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:836
 msgid ""
@@ -711,6 +893,9 @@ msgid ""
 "and we no longer use the ``owner`` member to call methods on the Godot side "
 "of our object. A lot of the improvements are hidden under the hood."
 msgstr ""
+"これまでの例では、古い構文と新しい構文に大きな違いはないようです。クラスの定"
+"義が若干異なり、\\ ``owner`` メンバーを使用してオブジェクトのGodot側のメソッ"
+"ドを呼び出す必要がなくなりました。多くの改善点は内部に隠されています。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:841
 msgid ""
@@ -719,10 +904,13 @@ msgid ""
 "methods that require more complex parameters, NativeScript 1.1 does start to "
 "show its benefits."
 msgstr ""
+"この例では、単純な変数と単純なメソッドのみを扱います。特に、他のオブジェクト"
+"への参照の受け渡しを開始するか、より複雑なパラメータを必要とするメソッドを呼"
+"び出し始めたりすると、NativeScript 1.1はその利点を発揮し始めます。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:847
 msgid "Next steps"
-msgstr ""
+msgstr "次のステップ"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:849
 msgid ""
@@ -730,9 +918,14 @@ msgid ""
 "can build upon this example to create full-fledged scripts to control nodes "
 "in Godot using C++."
 msgstr ""
+"上記は簡単な例にすぎませんが、基本を示してくれることを願っています。この例を"
+"基にして、C++を使用してGodotのノードを制御する本格的なスクリプトを作成できま"
+"す。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:853
 msgid ""
 "You should be able to edit and recompile the plugin while the Godot editor "
 "remains open; just rerun the project after the library has finished building."
 msgstr ""
+"Godotエディタが開いたままでプラグインを編集および再コンパイルできるはずです。"
+"ライブラリの構築が完了したら、プロジェクトを再実行してください。"

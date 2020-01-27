@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,25 +66,23 @@ msgstr ""
 "Pour ceux qui ne la connaissent pas, on peut l'expliquer par quelques faits :"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:25
-#, fuzzy
 msgid ""
 "The decibel (dB) scale is a relative scale. It represents the ratio of sound "
 "power by using 20 times the base 10 logarithm of the ratio (20 × log\\ :sub:"
 "`10`\\ (P/P\\ :sub:`0`\\ ))."
 msgstr ""
-"L'échelle des décibels (dB) est une échelle relative. Il représente le "
-"rapport de la puissance acoustique en utilisant 10 fois le logarithme de "
-"base 10 du rapport (10 × log\\ :sub:`10`\\ (P/P\\ :sub:`0`\\ ))."
+"L'échelle des décibels (dB) est une échelle relative. Elle représente le "
+"rapport de la puissance acoustique en utilisant 20 fois le logarithme de "
+"base 10 du rapport (20 × log\\ :sub:`10`\\ (P/P\\ :sub:`0`\\ ))."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:28
-#, fuzzy
 msgid ""
 "For every 6 dB, sound amplitude doubles or halves. 12 dB represents a factor "
 "of 4, 18 dB a factor of 8, 20 dB a factor of 10, 40 dB a factor of 100, etc."
 msgstr ""
-"Pour chaque 3 dB, l'amplitude du son double ou diminue de moitié. 6 dB "
-"représente un facteur de 4, 9 dB un facteur de 8, 10 dB un facteur de 10, 20 "
-"dB un facteur de 100, etc."
+"Pour chaque 6 dB, l'amplitude du son double ou diminue de moitié. 12 dB "
+"représente un facteur de 4, 18 dB un facteur de 8, 20 dB un facteur de 10, "
+"40 dB un facteur de 100, etc."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:30
 msgid ""
@@ -116,15 +114,14 @@ msgstr ""
 "tard) ne dépasse jamais 0dB."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:37
-#, fuzzy
 msgid ""
 "Every 6 dB below the 0 dB limit, sound energy is *halved*. It means the "
 "sound volume at -6 dB is half as loud as 0dB. -12 dB is half as loud as -6 "
 "dB and so on."
 msgstr ""
-"Tous les 3 dB en dessous de la limite de 0 dB, l'énergie sonore est "
-"*diminuée de moitié*. Cela signifie que le volume sonore à -3 dB est deux "
-"fois moins fort que 0 dB. -6 dB est deux fois moins fort que -3 dB et ainsi "
+"Tous les 6 dB en dessous de la limite de 0 dB, l'énergie sonore est "
+"*diminuée de moitié*. Cela signifie que le volume sonore à -6 dB est deux "
+"fois moins fort que 0 dB. -12 dB est deux fois moins fort que -6 dB et ainsi "
 "de suite."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:40

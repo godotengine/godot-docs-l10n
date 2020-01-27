@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,12 +33,21 @@ msgid ""
 "engine and other modules. In addition, the server claims ownership for its "
 "RID allocations."
 msgstr ""
+"Godot met en œuvre le multithreading en tant que serveurs. Les serveurs sont "
+"des processus en arrière plan qui gèrent les données, les traitent et "
+"poussent le résultat. Les serveurs implémentent le patron de conception "
+"Mediator qui interprète l'identification des ressources ID et traite les "
+"données pour le moteur et les autres modules. De plus, le serveur revendique "
+"la propriété de ses allocations RID."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:15
 msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to :ref:`doc_custom_modules_in_c++`."
 msgstr ""
+"Ce guide part du principe que le lecteur sait comment créer des modules C++ "
+"et des types de données Godot. Si ce n'est pas le cas, voir :ref:"
+"`doc_custom_modules_in_c++`."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:19
 #: ../../docs/development/cpp/custom_godot_servers.rst:316
@@ -65,15 +74,15 @@ msgstr "Pourquoi ?"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:28
 msgid "Adding artificial intelligence."
-msgstr ""
+msgstr "Ajouter une intelligence artificielle."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:29
 msgid "Adding custom asynchronous threads."
-msgstr ""
+msgstr "Ajouter des threads asynchrones personnalisés."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:30
 msgid "Adding support for a new input device."
-msgstr ""
+msgstr "Ajouter la prise en charge d'un nouveau périphérique d'entrées."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:31
 msgid "Adding writing threads."
@@ -81,11 +90,11 @@ msgstr "Ajout de threads d'écriture."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:32
 msgid "Adding a custom VoIP protocol."
-msgstr ""
+msgstr "Ajouter un protocole de VoIP personnalisé."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:33
 msgid "And more..."
-msgstr ""
+msgstr "Et plus..."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:36
 msgid "Creating a Godot server"
@@ -96,6 +105,9 @@ msgid ""
 "At minimum, a server must have a static instance, a sleep timer, a thread "
 "loop, an initialization state and a cleanup procedure."
 msgstr ""
+"Au minimum, un serveur doit avoir une instance statique, un minuteur de "
+"sommeil, une boucle d’exécution, un état d'initialisation et une procédure "
+"de nettoyage."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:274
 msgid "Custom managed resource data"
@@ -129,6 +141,9 @@ msgid ""
 "static instance and ``init()`` creates the managed thread; "
 "``unregister_types.cpp`` cleans up the server."
 msgstr ""
+"Les serveurs sont alloués dans ``register_types.cpp``. Le constructeur "
+"définit l'instance statique et ``init()`` créé le thread associé ; "
+"``unregister_types.cpp`` nettoie le serveur."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:328
 msgid ""
@@ -137,6 +152,10 @@ msgid ""
 "Therefore, a dummy class must be created to reference the proper Godot "
 "server."
 msgstr ""
+"Puisqu'une classe serveur Godot créée une instance et la lie à un singleton "
+"statique, lier la classe pourrait ne pas faire référence à la bonne "
+"instance. Toutefois, une classe factice doit être créée pour référencer le "
+"serveur Godot approprié."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:332
 msgid ""
@@ -152,13 +171,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:379
 msgid "Bind methods"
-msgstr ""
+msgstr "Méthodes liées"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:381
 msgid ""
 "The dummy class binds singleton methods to GDScript. In most cases, the "
 "dummy class methods wraps around."
 msgstr ""
+"La classe factice lie les méthodes singleton au GDScript. Dans la plupart "
+"des cas, les méthodes de la classe factices sont englobées."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:389
 msgid "Binding Signals"
@@ -169,6 +190,8 @@ msgid ""
 "It is possible to emit signals to GDScript by calling the GDScript dummy "
 "object."
 msgstr ""
+"Il est possible d'émettre des signaux vers GDScript en appelant l'objet "
+"factice GDScript."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:466
 msgid "MessageQueue"

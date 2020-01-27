@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,41 +70,52 @@ msgstr ""
 "如果您的游戏角色不使用精灵，却使用代码来绘制，您可以在编辑器中执行该绘图代码"
 "以查看您的游戏角色。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:18
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:19
+msgid ""
+"``tool`` scripts run inside the editor, and let you access the scene tree of "
+"the currently edited scene. This is a powerful feature which also comes with "
+"caveats, as the editor does not include protections for potential misuse of "
+"``tool`` scripts. Be **extremely** cautious when manipulating the scene "
+"tree, especially via :ref:`Node.queue_free<class_Node_method_queue_free>`, "
+"as it can cause crashes if you free a node while the editor runs logic "
+"involving it."
+msgstr ""
+
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:28
 msgid "How to use it"
 msgstr "如何使用它"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:20
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:30
 msgid ""
 "To turn a script into a tool, add ``tool`` keyword at the top of your code."
 msgstr "要将脚本转换为工具，请在代码顶部添加 ``tool`` 关键字。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:22
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:32
 msgid ""
 "To check if you are currently in the editor, use: ``Engine.editor_hint``."
 msgstr "要检查您当前是否在编辑器中，请使用 : ``Engine.editor_hint``。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:24
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:34
 msgid "For example, if you want to execute some code only in editor, use:"
 msgstr "例如，如果只想在编辑器中执行某些代码，请使用:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:32
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "previous expression:"
 msgstr "另一方面，如果您只想在游戏中执行代码，只需否定先前的表达式:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:40
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
 msgid ""
 "Pieces of code that are not having any of the 2 conditions above will run "
 "both in editor and in game."
 msgstr "没有上述任何条件的代码片段将在编辑器和游戏中运行。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
 msgid "Here is how a ``_process()`` function might look like for you:"
 msgstr "以下是 ``_process()`` 函数的示例:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:56
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
 msgid ""
 "Modifications in editor are permanent. In our case, when we remove the "
 "script, the node will keep its rotation direction. Be careful so that you "
@@ -113,11 +124,11 @@ msgstr ""
 "编辑器中的修改是永久性的。 在我们的示例中，当我们删除脚本时，节点将保持其旋转"
 "方向。 请注意不要进行不必要的修改。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:59
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:69
 msgid "Try it out"
 msgstr "试试看"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:61
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:71
 msgid ""
 "Add a ``Sprite`` node to your scene and set the texture to Godot icon. "
 "Attach and open a script, and change it to this:"
@@ -125,7 +136,7 @@ msgstr ""
 "在场景中添加一个 ``Sprite`` 节点，并将纹理设置为Godot图标。 添加并打开脚本，"
 "并将其更改为:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:72
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:82
 msgid ""
 "Save the script and return to the editor. You should now see your object "
 "rotate. If you run the game, it will also rotate."
@@ -133,18 +144,18 @@ msgstr ""
 "保存脚本并返回编辑器。 现在您应该看到您的对象在旋转。 如果您运行游戏，它也会"
 "旋转。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:76
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:86
 msgid ""
 "If you don't see the changes, reload the scene (close it and open it again)."
 msgstr "如果您没有看到变化，请重新加载场景(关闭它并再次打开)。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:78
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:88
 msgid ""
 "Now let's choose which code runs when. Modify your ``_process()`` function "
 "to look like this:"
 msgstr "现在让我们选择何时运行代码。 将 ``_process()`` 函数修改为:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:89
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:99
 msgid ""
 "Save the script. Now the object will spin clockwise in the editor, but if "
 "you run the game, it will spin counter-clockwise."
@@ -152,7 +163,7 @@ msgstr ""
 "保存脚本。 现在，对象将在编辑器中顺时针旋转，但如果您运行游戏，它将逆时针旋"
 "转。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:91
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:101
 msgid ""
 "Code from other nodes doesn't run in the editor. Your access to other nodes "
 "is limited. You can access the tree and nodes, and their default properties, "
@@ -164,7 +175,7 @@ msgstr ""
 "问树和节点及其默认属性，但无法访问用户变量。 如果要这样做，其他节点也必须在编"
 "辑器中运行。 AutoLoad节点时无法在编辑器中访问的。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:93
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:103
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "
 "write the code how you want it, and only then add the ``tool`` keyword to "

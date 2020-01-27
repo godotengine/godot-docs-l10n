@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:4
-#, fuzzy
 msgid "Autoloads versus regular nodes"
-msgstr "自動読み込みと内部ノード"
+msgstr "自動読み込みと通常ノード"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:6
 msgid ""
@@ -30,33 +29,37 @@ msgid ""
 "freed when you change the scene from code with :ref:`SceneTree.change_scene "
 "<class_SceneTree_method_change_scene>`."
 msgstr ""
+"Godot には、プロジェクトのルートにあるノードを自動的に読み込む機能が用意され"
+"ており、グローバルにアクセスできるようにすることで、シングルトンの役割を果た"
+"すことができます: :ref:`doc_singletons_autoload`\\ 。これらの自動ロードされた"
+"ノードは、\\ :ref:`SceneTree.change_scene "
+"<class_SceneTree_method_change_scene>` を使用してコードからシーンを変更しても"
+"解放されません。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:11
 msgid ""
 "In this guide, you will learn when to use the Autoload feature, and "
 "techniques you can use to avoid it."
 msgstr ""
+"このガイドでは、オートロード機能をいつ使用するか、およびそれを回避するために"
+"使用できるテクニックを学習します。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:15
-#, fuzzy
 msgid "The cutting audio issue"
-msgstr "開始値"
+msgstr "オーディオが切断される問題"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:17
-#, fuzzy
 msgid ""
 "Other engines can encourage the use of creating manager classes, singletons "
 "that organize a lot of functionality into a globally accessible object. "
 "Godot offers many ways to avoid global state thanks to the node tree and "
 "signals."
 msgstr ""
-"他のエンジンは、多くの機能をグローバルにアクセス可能なエンティティに編成する"
-"「マネージャー」クラスの作成を奨励する場合があります。 Godotは、そのようなオ"
-"ブジェクトのサイズを削減する方法をサポートすることで繁栄します。代わりに、コ"
-"ンテンツを可能な限り個々のノードに移行します。"
+"他のエンジンは、多くの機能をグローバルにアクセス可能なオブジェクトに編成する"
+"シングルトンであるマネージャークラスの作成を奨励します。 Godotは、ノードツ"
+"リーとシグナルのおかげで、グローバルな状態を回避する多くの方法を提供します。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:21
-#, fuzzy
 msgid ""
 "For example, let's say we are building a platformer and want to collect "
 "coins that play a sound effect. There's a node for that: the :ref:"
@@ -65,14 +68,12 @@ msgid ""
 "interrupts the first."
 msgstr ""
 "たとえば、開発者がプラットフォーム・ゲームを構築していて、効果音を鳴らすコイ"
-"ンを収集したい場合はどうでしょうか？ まぁ、そのためのノードがあります: :ref:"
-"`AudioStreamPlayer <class_AudioStreamPlayer>` です。しかし、テストをしてみる"
-"と、すでにサウンドを再生している最中にAudioStreamPlayerを「play」すると、新し"
-"いサウンドが最初のサウンドを中断し、それを再生する前に終了することに気付きま"
-"す。"
+"ンを収集したいとします。それに使えるノードがあります: :ref:"
+"`AudioStreamPlayer <class_AudioStreamPlayer>` です。しかし、すでにサウンドを"
+"再生している最中にAudioStreamPlayerを呼び出すと、新しいサウンドが最初のサウン"
+"ドを中断します。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:26
-#, fuzzy
 msgid ""
 "A solution is to code a global, auto-loaded sound manager class. It "
 "generates a pool of ``AudioStreamPlayer`` nodes that cycle through as each "
@@ -81,33 +82,32 @@ msgid ""
 "play(\"coin_pickup.ogg\")``. This solves the problem in the short term but "
 "causes more problems:"
 msgstr ""
-"ユーザーは、SoundManagerの自動読み込みノードを作成することで、システム全体を"
-"よりスマートにすることが最善の解決策であると考える傾向があります。サウンドエ"
-"フェクトの新しいリクエストが入るたびに循環する AudioStreamPlayers のプールを"
-"生成します。次に、このSoundManagerをオートロードにして、\\ `SFX."
-"play(\"coin_pickup.ogg\")` でどこからでもアクセスできるようにします。ですが、"
-"彼らはそれが彼らのコードに非常に多くのの合併症を招くことを知りません。"
+"これに対する解決策は、グローバルな自動読み込みサウンド マネージャ クラスを"
+"コーディングすることです。サウンドエフェクトの新しいリクエストが入るたびに循"
+"環する ``AudioStreamPlayer`` ノードのプールを生成します。そして、そのクラス"
+"を ``Sound`` と命名し、\\ ``Sound.play(\"coin_pickup.ogg\")`` のような形で呼"
+"び出すことで、プロジェクトのどこからでも使用できます。この方法でとりあえずは"
+"問題は解決しますが、新たにより多くの問題が発生します。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:32
-#, fuzzy
 msgid ""
 "**Global state**: one object is now responsible for all objects' data. If "
 "the ``Sound`` class has errors or doesn't have an AudioStreamPlayer "
 "available, all the nodes calling it can break."
 msgstr ""
 "**グローバルな状態**\\ : 1つのオブジェクトがすべてのオブジェクトのデータを担"
-"当するようになっています。SFXにエラーがあるか、使用できるAudioStreamPlayerが"
-"無い場合、すべてが停止します。"
+"当するようになっています。\\ ``Sound`` クラスにエラーがある場合、または利用可"
+"能なAudioStreamPlayerがない場合、それを呼び出すすべてのノードが中断する可能性"
+"があります。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:36
-#, fuzzy
 msgid ""
 "**Global access**: now that any object can call ``Sound.play(sound_path)`` "
 "from anywhere, there's no longer an easy way to find the source of a bug."
 msgstr ""
-"**グローバルなアクセス**: どのオブジェクトもどこからでも `SFX."
-"play(sound_path)` を呼び出すことができるので、SFXのバグがどこから始まったかを"
-"追跡する簡単な方法がなくなります。"
+"**グローバルなアクセス**: 任意のオブジェクトがどこからでも ``Sound."
+"play(sound_path)`` を呼び出すことができるので、バグの原因を見つける簡単な方法"
+"はありません。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:39
 msgid ""
@@ -115,6 +115,9 @@ msgid ""
 "stored from the start, you can either have too few and face bugs, or too "
 "many and use more memory than you need."
 msgstr ""
+"**グローバルなリソース割り当て**: 最初から ``AudioStreamPlayer`` ノードのプー"
+"ルを使用すると、その個数が少なすぎてバグに直面したり、逆に必要以上に多くのメ"
+"モリを使用したりする可能性があります。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:45
 msgid ""
@@ -122,21 +125,25 @@ msgid ""
 "data to the ``Sound`` autoload in our example. As a result, the domain to "
 "explore to fix the bug spans the entire project."
 msgstr ""
+"グローバルアクセスに関する問題は、この例では、任意のコードが間違ったデータを "
+"``Sound`` オートロードに渡す可能性があることです。その結果、バグを修正するた"
+"めに探索する範囲はプロジェクト全体に及びます。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:49
 msgid ""
 "When you keep code inside a scene, only one or two scripts may be involved "
 "in audio."
 msgstr ""
+"シーン内にコードを保持する場合、オーディオに関係するスクリプトは1つまたは2つ"
+"だけです。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:52
-#, fuzzy
 msgid ""
 "Contrast this with each scene keeping as many ``AudioStreamPlayer`` nodes as "
 "it needs within itself and all these problems go away:"
 msgstr ""
-"これと対照的に、各シーンが必要なだけのAudioStreamPlayerノードを保持すれば、こ"
-"れらの問題はすべて解消されます。"
+"これとは対照的に、各シーンが必要な数の ``AudioStreamPlayer`` ノードを自分で保"
+"持すれば、これらの問題はすべて解決します。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:55
 msgid ""
@@ -151,20 +158,24 @@ msgid ""
 "Each scene accesses only its own nodes. Now, if there is a bug, it's easy to "
 "find which node is at fault."
 msgstr ""
+"各シーンは、独自のノードのみにアクセスします。バグがある場合、どのノードに障"
+"害があるかを簡単に見つけることができます。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:61
 msgid "Each scene allocates exactly the amount of resources it needs."
-msgstr ""
+msgstr "各シーンは、必要なリソースの量を正確に割り当てます。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:64
 msgid "Managing shared functionality or data"
-msgstr ""
+msgstr "共有機能またはデータの管理"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:66
 msgid ""
 "Another reason to use an Autoload can be that you want to reuse the same "
 "method or data across many scenes."
 msgstr ""
+"自動読み込みを使用するもう1つの理由は、同じメソッドまたはデータを多数のシーン"
+"で再利用する場合です。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:69
 msgid ""
@@ -172,30 +183,36 @@ msgid ""
 "provides that feature for an individual scene using the :ref:`class_name "
 "<doc_scripting_continued_class_name>` keyword in GDScript."
 msgstr ""
+"関数の場合、GDScriptの :ref:`class_name "
+"<doc_scripting_continued_class_name>` キーワードを使用して、個々のシーンにそ"
+"の機能を提供する新しいタイプの ``Node`` を作成できます。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:73
 msgid "When it comes to data, you can either:"
-msgstr ""
+msgstr "データに関しては、次のいずれかが可能です:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:75
 msgid ""
 "Create a new type of :ref:`Resource <class_Resource>` to share the data."
 msgstr ""
+"データを共有するには、新しいタイプの :ref:`Resource <class_Resource>` を作成"
+"します。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:77
 msgid ""
 "Store the data in an object to which each node has access, for example using "
 "the ``owner`` property to access the scene's root node."
 msgstr ""
+"たとえば、\\ ``owner`` プロパティを使用してシーンのルートノードにアクセスする"
+"など、各ノードがアクセスできるオブジェクトにデータを保存します。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:81
-#, fuzzy
 msgid "When you should use an Autoload"
-msgstr "では、自動読み込みを使用する\\ *必要がある*\\ のはいつですか？"
+msgstr "自動読み込みを使用する必要がある場合"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:83
 msgid "Auto-loaded nodes can simplify your code in some cases:"
-msgstr ""
+msgstr "自動読み込みノードを使用すると、場合によってはコードを簡略化できます:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:85
 msgid ""
@@ -203,25 +220,26 @@ msgid ""
 "database, then an autoload can be a good tool. There is no scripting API in "
 "Godot to create and manage static data otherwise."
 msgstr ""
+"**静的データ**: データベースなど、1つのクラス専用のデータが必要な場合は、自動"
+"読み込みが優れたツールになります。 Godotには、静的データを作成および管理する"
+"スクリプトAPIはありません。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:89
 msgid ""
 "**Static functions**: creating a library of functions that only return "
 "values."
-msgstr ""
+msgstr "**静的関数**: 値のみを返す関数のライブラリを作成します。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:91
-#, fuzzy
 msgid ""
 "**Systems with a wide scope**: If the singleton is managing its own "
 "information and not invading the data of other objects, then it's a great "
 "way to create systems that handle broad-scoped tasks. For example, a quest "
 "or a dialogue system."
 msgstr ""
-"シングルトンが独自の情報を管理しており、他のオブジェクトのデータを侵害しない"
-"場合は、広範囲のタスクを処理する「システム」クラスを作成するのに最適な方法で"
-"す。たとえば、ターゲットシステム、クエストシステム、または対話システムは、シ"
-"ングルトン実装の優れたユースケースです。"
+"**広いスコープを持つシステム**: シングルトンが独自の情報を管理し、他のオブ"
+"ジェクトのデータに侵入しない場合は、広範なスコープのタスクを処理するシステム"
+"を作成する優れた方法です。たとえば、クエストや対話システムなどです。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:96
 msgid ""
@@ -231,6 +249,11 @@ msgid ""
 "``class_name`` keyword instead to get auto-completion for a type in your "
 "entire project."
 msgstr ""
+"Godot 3.1より前までは、便宜上、別の用途がありました。自動読み込みには、"
+"GDScriptで名前が生成されたグローバル変数があり、プロジェクト内の任意のスクリ"
+"プトファイルから呼び出すことができます。しかし、今では、代わりに "
+"``class_name`` キーワードを使用して、プロジェクト全体の型のオートコンプリート"
+"を取得できます。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:103
 msgid ""
@@ -240,9 +263,15 @@ msgid ""
 "game's node structure or which scene you run, e.g. by pressing the ``F6`` "
 "key."
 msgstr ""
+"自読み込みは正確にはシングルトンではありません。自動で読み込まれたノードのコ"
+"ピーをインスタンス化することを妨げるものは何もありません。これは、ゲームの"
+"ノード構造や実行するシーンに関係なく、ノードをシーンツリーのルートの子として"
+"自動的に読み込むツールです。 例: ``F6`` キーを押します。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:108
 msgid ""
 "As a result, you can get the auto-loaded node, for example an autoload "
 "called ``Sound``, by calling ``get_node(\"/root/Sound\")``."
 msgstr ""
+"その結果、例えば、自動読み込みされた ``Sound`` と呼ばれる自動読み込みノード"
+"を、\\ ``get_node(\"/root/Sound\")`` を呼び出すことによって、取得できます。"

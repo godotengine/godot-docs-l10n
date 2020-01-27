@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,7 +74,6 @@ msgstr ""
 "うことでゲームをクリックして移動するようにできます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -83,29 +82,31 @@ msgid ""
 "input. In the \"Project Settings\" under *Input Devices* and *Pointing*, set "
 "*Emulate Touch From Mouse* to \"On\"."
 msgstr ""
-"デフォルトでGodotはタッチ入力からマウス入力をエミュレートします。マウスイベン"
-"ト対応にプログラムされていれば、タッチも同じように動作します。なんらかの理由"
-"でこのようにしたくないときや、マウス入力からタッチをエミュレートしたいとき"
-"は、「入力装置」と「ポインティング」の下の「プロジェクト設定」で設定できま"
-"す。"
+"デフォルトでは、Godotはタッチ入力からマウス入力をエミュレートします。つまり、"
+"何かがマウスイベントで発生するようにコーディングされている場合、タッチもそれ"
+"をトリガーします。 Godotは、マウスクリックからタッチ入力をエミュレートするこ"
+"ともできますが、タッチ入力に切り替えた後でも、コンピューターでゲームをプレイ"
+"し続けることができる必要があります。 [プロジェクト設定]で *Input Devices* の "
+"*Pointing* 内にある、\\ *Emulate Touch From Mouse* を[オン]に設定します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:39
-#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to *Display*, then click on *Window*. "
 "In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
-"入力方法を変更する前に、プロジェクト設定で\\ *Display*\\ に移動し、\\ "
-"*Window*\\ をクリックします。 \\ *Stretch*\\ オプションで、\\ *Mode*\\ を "
-"\"2d\"に、\\ *Aspect*\\ を \"keep\"に設定します。 これにより、さまざまなサイ"
-"ズの画面でゲームが一貫してスケーリングされます。"
+"また、ゲームが異なるサイズの画面上で一貫してスケーリングされるようにするた"
+"め、プロジェクト設定で *Display* に移動し、\\ *Window* をクリックします。\\ "
+"*Stretch* オプションで、\\ *Mode* を\"2d\"に、\\ *Aspect* を\"keep\"に設定し"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
 msgid ""
 "Since we are already in the *Window* settings, we should also set under "
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
+"すでに*Window*の設定になっているので、続いて *Handheld* 内の *Orientation* を"
+"\"portrait\"に設定する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
@@ -114,7 +115,7 @@ msgid ""
 "that's set by the touch (or click) event."
 msgstr ""
 "次に、 ``Player.gd`` スクリプトを変更して、入力メソッドを変更する必要がありま"
-"す。 キー入力を削除し、タッチ（またはクリック）イベントで設定された「ターゲッ"
+"す。 キー入力を削除し、タッチ(またはクリック)イベントで設定された「ターゲッ"
 "ト」にプレイヤーを移動させます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:52
@@ -126,20 +127,18 @@ msgstr ""
 "ます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:129
-#, fuzzy
 msgid "Setting a main scene"
-msgstr "シーンのスクリプト"
+msgstr "メイン シーンの設定"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
-#, fuzzy
 msgid ""
 "The main scene is the one that your game will start in. In *Project -> "
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
 "by clicking the folder icon and selecting it."
 msgstr ""
-"タスクバー・アイコンを変更するには、\\ **プロジェクト → プロジェクト設定 → "
-"Application → Config → Icon** に移動します。フォルダアイコンをクリックして、"
-"目的のアイコンを選択します。"
+"メインシーンは、ゲームが開始されるシーンです。\\ *プロジェクト -> プロジェク"
+"ト設定 -> Application -> Run* で、フォルダアイコンをクリックして選択し、\\ "
+"*Main Scene* を\"Main.tscn\"に設定します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid "Export templates"
@@ -180,13 +179,12 @@ msgid "Export presets"
 msgstr "プリセットのエクスポート"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
 msgstr ""
-"次に、\\ *Project-> Export*\\ をクリックして、エクスポート設定を構成できま"
-"す。"
+"次に、\\ *プロジェクト -> エクスポート* の順にクリックして、エクスポート設定"
+"を構成できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:158
 msgid ""
@@ -343,14 +341,15 @@ msgstr ""
 "したキーストアへのパスを指定します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:230
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
 "to *Screen* and set *Orientation* to \"Portrait\"."
 msgstr ""
-"これでエクスポートの準備がととのいました。「プロジェクト → エクスポート」をク"
-"リックして、Androidのプリセットを追加してください (上記参照)。"
+"これで、エクスポートする準備ができました。\\ *プロジェクト -> エクスポート* "
+"をクリックし、Android用のプリセットを追加します(上記を参照)。 Androidプリセッ"
+"トを選択し、\\ *オプション* で *Screen* に移動し、\\ *Orientation* を"
+"\"Portrait\"に設定します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""

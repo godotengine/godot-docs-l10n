@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,16 +30,22 @@ msgid ""
 "Threads allow simultaneous execution of code. It allows off-loading work "
 "from the main thread."
 msgstr ""
+"Les threads permettent l'exécution simultanée de code. Cela permet de "
+"décharger le travail du thread principal."
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:12
 msgid "Godot supports threads and provides many handy functions to use them."
 msgstr ""
+"Godot supporte les threads et fournit de nombreuses fonctions pratiques pour "
+"les utiliser."
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:14
 msgid ""
 "If using other languages (C#, C++), it may be easier to use the threading "
 "classes they support."
 msgstr ""
+"Si vous utilisez d'autres langages (C#, C++), il peut être plus facile "
+"d'utiliser directement les classes de threads qu'ils supportent."
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:18
 msgid "Creating a Thread"
@@ -61,7 +67,7 @@ msgstr ""
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:51
 msgid "Mutexes"
-msgstr ""
+msgstr "Mutexes"
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:53
 msgid ""
@@ -70,6 +76,11 @@ msgid ""
 "`Thread safe APIs<doc_thread_safe_apis>` to understand which engine APIs "
 "support multiple thread access."
 msgstr ""
+"Accéder à des objets ou des données depuis plusieurs threads n'est pas "
+"toujours supporté (si vous le faites, cela provoquera des comportements "
+"inattendus ou des plantages). Lisez le :ref:`Thread safe "
+"APIs<doc_thread_safe_apis>` pour comprendre quelles API du moteur supportent "
+"l'accès par plusieurs threads."
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:57
 msgid ""
@@ -79,6 +90,13 @@ msgid ""
 "CPU cores when modified. Always use a :ref:`Mutex<class_Mutex>` when "
 "accessing a piece of data from different threads."
 msgstr ""
+"En règle générale, lorsque vous traitez vos propres données ou que vous "
+"appelez vos propres fonctions, essayez d'éviter d'accéder aux mêmes données "
+"directement depuis différents threads. Vous pouvez rencontrer des problèmes "
+"de synchronisation, car les données ne sont pas toujours mises à jour entre "
+"les cœurs du processeur lorsqu'elles sont modifiées. Utilisez toujours un :"
+"ref:`Mutex<class_Mutex>` lorsque vous accédez à une donnée depuis différents "
+"threads."
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:63
 msgid ""

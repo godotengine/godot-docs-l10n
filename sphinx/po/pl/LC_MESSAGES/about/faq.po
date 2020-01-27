@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../docs/about/faq.rst:7
 msgid "Frequently asked questions"
@@ -428,7 +428,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Dla Godot 3.0 istnieje wsparcie dla glTF."
 
 #: ../../docs/about/faq.rst:156
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -812,30 +811,28 @@ msgstr ""
 "zmapowana do wstępnie przydzielonego bufora lub pamięci wirtualnej."
 
 #: ../../docs/about/faq.rst:299
-#, fuzzy
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
-"Używamego naszego własnego typu String, ponieważ ten z STL jest zbyt prosty "
-"i brakuje mu wsparcia umiędzynarodowiania."
+"Używamy naszego własnego typu String, ponieważ ten wprowadzony przez "
+"bibliotekę STL jest zbyt prosty i brakuje mu wsparcia internacjonalizacji."
 
 #: ../../docs/about/faq.rst:302
 msgid "Why does Godot not use exceptions?"
 msgstr "Dlaczego Godot nie używa wyjątków?"
 
 #: ../../docs/about/faq.rst:304
-#, fuzzy
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
-"Wierzymy w to, że niezależnie od wszystkiego, gry nie powinny crashować. "
-"Jeśli wydarzy się coś niespodziewanego Godot wyprintuje błąd (który można "
-"prześledzić nawet do skryptu), ale potem spróbuje jak najłagodniej wstać i "
-"działać dalej."
+"Wierzymy, że gry powinny działać stabilnie, niezależnie od wszystkiego. "
+"Jeśli wydarzy się coś niespodziewanego Godot wskaże błąd (który można "
+"prześledzić w skrypcie), ale potem spróbuje przywrócić program do "
+"prawidłowego działania, tak dobrze jak jest to możliwe."
 
 #: ../../docs/about/faq.rst:309
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,82 +60,93 @@ msgid ""
 "make that drawing code execute in the editor to see your player."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:18
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:19
+msgid ""
+"``tool`` scripts run inside the editor, and let you access the scene tree of "
+"the currently edited scene. This is a powerful feature which also comes with "
+"caveats, as the editor does not include protections for potential misuse of "
+"``tool`` scripts. Be **extremely** cautious when manipulating the scene "
+"tree, especially via :ref:`Node.queue_free<class_Node_method_queue_free>`, "
+"as it can cause crashes if you free a node while the editor runs logic "
+"involving it."
+msgstr ""
+
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:28
 #, fuzzy
 msgid "How to use it"
 msgstr "E como executá-lo:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:20
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:30
 msgid ""
 "To turn a script into a tool, add ``tool`` keyword at the top of your code."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:22
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:32
 msgid ""
 "To check if you are currently in the editor, use: ``Engine.editor_hint``."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:24
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:34
 msgid "For example, if you want to execute some code only in editor, use:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:32
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "previous expression:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:40
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
 msgid ""
 "Pieces of code that are not having any of the 2 conditions above will run "
 "both in editor and in game."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
 msgid "Here is how a ``_process()`` function might look like for you:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:56
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
 msgid ""
 "Modifications in editor are permanent. In our case, when we remove the "
 "script, the node will keep its rotation direction. Be careful so that you "
 "don't make unwanted modifications."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:59
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:69
 msgid "Try it out"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:61
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:71
 msgid ""
 "Add a ``Sprite`` node to your scene and set the texture to Godot icon. "
 "Attach and open a script, and change it to this:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:72
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:82
 msgid ""
 "Save the script and return to the editor. You should now see your object "
 "rotate. If you run the game, it will also rotate."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:76
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:86
 msgid ""
 "If you don't see the changes, reload the scene (close it and open it again)."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:78
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:88
 msgid ""
 "Now let's choose which code runs when. Modify your ``_process()`` function "
 "to look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:89
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:99
 msgid ""
 "Save the script. Now the object will spin clockwise in the editor, but if "
 "you run the game, it will spin counter-clockwise."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:91
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:101
 msgid ""
 "Code from other nodes doesn't run in the editor. Your access to other nodes "
 "is limited. You can access the tree and nodes, and their default properties, "
@@ -144,7 +155,7 @@ msgid ""
 "all."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:93
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:103
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "
 "write the code how you want it, and only then add the ``tool`` keyword to "

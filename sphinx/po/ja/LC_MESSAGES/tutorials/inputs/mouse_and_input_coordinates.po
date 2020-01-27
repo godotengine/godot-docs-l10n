@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:4
 msgid "Mouse and input coordinates"
-msgstr ""
+msgstr "マウスと入力座標"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 msgid "About"
@@ -30,10 +30,12 @@ msgid ""
 "The reason for this small tutorial is to clear up many common mistakes about "
 "input coordinates, obtaining mouse position and screen resolution, etc."
 msgstr ""
+"この小さなチュートリアルの理由は、入力座標、マウスの位置や画面の解像度などに"
+"関する多くのよくある間違いを解決するためです。"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:14
 msgid "Hardware display coordinates"
-msgstr ""
+msgstr "ハードウェア表示の座標"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:16
 msgid ""
@@ -41,10 +43,13 @@ msgid ""
 "meant to run on PC, such as editors, MMOs, tools, etc. However, it does not "
 "make as much sense outside of that scope."
 msgstr ""
+"エディター、MMO、ツールなど、PC上で実行する複雑なUIを記述する場合、ハードウェ"
+"ア座標の使用は理にかなっています。しかし、その以外ではあまり意味がありませ"
+"ん。"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:21
 msgid "Viewport display coordinates"
-msgstr ""
+msgstr "ビューポート表示の座標"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:23
 msgid ""
@@ -53,11 +58,15 @@ msgid ""
 "the functions in nodes to obtain the mouse coordinates and viewport size, "
 "for example:"
 msgstr ""
+"Godotはビューポートを使用してコンテンツを表示し、ビューポートはいくつかのオプ"
+"ションでスケーリングできます(:ref:`doc_multiple_resolutions` チュートリアルを"
+"参照)。次に、ノード内の関数を使用して、マウス座標とビューポートサイズを取得し"
+"ます。次に例を示します:"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:55
 msgid ""
 "Alternatively, it's possible to ask the viewport for the mouse position:"
-msgstr ""
+msgstr "または、ビューポートにマウスの位置を問い合わせるようにします:"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:66
 msgid ""
@@ -66,3 +75,7 @@ msgid ""
 "Use ``event.relative`` instead of ``event.position`` and ``event.speed`` to "
 "process mouse movement and position changes."
 msgstr ""
+"マウスモードが ``Input.MOUSE_MODE_CAPTURED`` に設定されている場合、\\ "
+"``InputEventMouseMotion`` の ``event.position`` 値は画面の中心になります。マ"
+"ウスの移動と位置の変更を処理するには、\\ ``event.position``と ``event."
+"speed`` の代わりに ``event.relative`` を使用します。"

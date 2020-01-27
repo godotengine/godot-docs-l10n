@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,25 +36,23 @@ msgid "Project manager"
 msgstr "Менеджер проекта"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
-"Когда вы запускаете Godot, первое окно, которое вы увидите - Менеджер "
-"Проектов. Он позволяет создавать, удалять, импортировать или запускать "
-"игровые проекты."
+"Когда вы запускаете Godot, первое окно, которое вы увидите - менеджер "
+"проектов. Так как у вас нет проектов появится всплывающее окно спрашивающее "
+"хотите ли вы открыть библиотеку шаблонов, просто нажмите отмена, мы вернемся "
+"к этому позже."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
-#, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"Когда вы запускаете Godot, первое окно, которое вы увидите - Менеджер "
-"Проектов. Он позволяет создавать, удалять, импортировать или запускать "
-"игровые проекты."
+"Теперь вы должны увидеть менеджер проектов. Он позволяет создавать, удалять, "
+"импортировать или запускать игровые проекты."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
@@ -65,7 +63,6 @@ msgstr ""
 "интерфейса редактора."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -73,25 +70,26 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"Во вкладке Шаблоны вы можете скачать шаблоны проектов с открытым исходным "
-"кодом и демо, которые могут помочь вам начать работу быстрее. Просто "
-"выберите шаблон или демо, которое вы хотите, кликните Скачать, после "
-"завершения скачивания нажмите кнопку Установить и выберите место, куда вы "
-"хотите поместить проект."
+"Во вкладке **Шаблоны** вы можете скачать шаблоны проектов с открытым "
+"исходным кодом и демо из библиотеки шаблонов, которые помогут вам начать "
+"работу быстрее. Просто выберите шаблон или демо, которое хотите, кликните "
+"загрузить, после завершения скачивания нажмите кнопку установить и выберите "
+"место, куда вы хотите поместить проект. Вы можете узнать больше об этом в :"
+"ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
 msgstr "Создание или импортирование проекта"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
 "Чтобы создать новый проект, нажмите кнопку ``Новый Проект`` справа. Дайте "
-"ему имя и выберите пустую папку для сохранения на вашем компьютере."
+"ему имя, выберите пустую папку для сохранения на вашем компьютере и выберете "
+"программу исполнения."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
@@ -102,7 +100,6 @@ msgstr ""
 "расположение папки или ввести путь к папке вручную через поле Путь Проекта."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
-#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
@@ -110,11 +107,10 @@ msgid ""
 "project."
 msgstr ""
 "Когда вы видите зеленую галочку справа, это означает, что движок обнаружил "
-"пустую папку и вы можете нажать кнопку ``Создать``. Godot создаст для вас "
-"проект и откроет его в редакторе."
+"пустую папку. Вы также можете нажать кнопку ``Создать`` рядом с названием "
+"вашего проекта, будет создана пустая папка с таким именем для проекта."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
-#, fuzzy
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -122,31 +118,28 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
-"На этом этапе вы также можете выбрать движок рендеринга (OpenGL ES 3.0 или "
+"Наконец, вам нужно выбрать какой отрисовщик использовать (OpenGL ES 3.0 или "
 "OpenGL ES 2.0). Преимущества и недостатки каждого перечислены ниже, чтобы "
-"облегчить вам выбор, и вы можете обратиться к :ref:"
+"облегчить вам выбор, вы можете обратиться к :ref:"
 "`doc_gles2_gles3_differences` за подробностями. Обратите внимание, что вы "
-"можете сменить движок в настройках проекта, если позже вы измените своё "
-"мнение. Для этого урока подойдёт любой."
+"можете сменить движок в настройках проекта, если позже вы передумаете. Для "
+"этого урока подойдёт любой."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"Когда вы видите зеленую галочку справа, это означает, что движок обнаружил "
-"пустую папку и вы можете нажать кнопку ``Создать``. Godot создаст для вас "
-"проект и откроет его в редакторе."
+"Как только вы закончите, нажмите ``Создать и редактировать``. Godot создаст "
+"для вас проект и откроет его в редакторе."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"В следующий раз, когда вы откроете Godot, вы увидите ваш новый проект в "
-"списке. Дважды щелкните по нему чтобы открыть его в редакторе."
+"В следующий раз, когда вы откроете менеджер проекта, вы увидите ваш новый "
+"проект в списке. Дважды кликните по нему, чтобы открыть его в редакторе."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -167,12 +160,12 @@ msgid "Your first look at Godot’s editor"
 msgstr "Ваш первый взгляд на редактор Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with empty docks on the right side."
 msgstr ""
-"Сейчас вы должны увидеть этот интерфейс с пустыми доками с правой стороны."
+"Добро пожаловать в Godot! Когда ваш проект открыт, вы должны увидеть "
+"интерфейс редактора с пустыми панелями справа."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -183,13 +176,12 @@ msgstr ""
 "области** и **кнопки воспроизведения**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
-#, fuzzy
 msgid ""
 "On the bottom left side, you have the **FileSystem dock**, where you’ll "
 "manage your project files and assets."
 msgstr ""
-"Слева у вас есть **файловая система**, где вы будете управлять файлами и "
-"ассетами вашего проекта."
+"Снизу, с левой стороны у вас есть панель **Файловая система**, где вы будете "
+"управлять файлами и ассетами вашего проекта."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
@@ -251,13 +243,12 @@ msgstr ""
 "нему."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
 msgstr ""
-"Обратите внимание на текст [перспектива] под панелью инструментов. Это "
-"кнопка, которая открывает список опций, связанных с 3D-окном просмотра."
+"Обратите внимание на кнопку *Перспективный* под панелью инструментов. Она "
+"открывает список опций, связанных с 3D-окном просмотра."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "高度なベクトル演算"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:7
 msgid "Planes"
-msgstr ""
+msgstr "平面(およびplane関数)"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:9
 msgid ""
@@ -33,6 +33,10 @@ msgid ""
 "(under the plane), and (contrary to popular belief) you can also use their "
 "math in 2D:"
 msgstr ""
+"ドット積には、単位ベクトルに関する別の興味深い特性があります。そのベクトルに"
+"垂直な（そして原点を通る）平面を通過すると想像してください。平面は空間全体を"
+"正(平面上)と負(平面下)に分割し、(一般的な信念に反して)2Dで計算をすることもで"
+"きます:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:17
 msgid ""
@@ -43,6 +47,12 @@ msgid ""
 "**normal** *is* a **unit vector**, but it's called *normal* because of its "
 "usage. (Just like we call (0,0) the Origin!)."
 msgstr ""
+"サーフェスに対して垂直な(したがって、サーフェスの方向を表す)単位ベクトルは **"
+"単位法線ベクトル(unit normal vectors)** と呼ばれます。ただし、通常は *法線"
+"(normal)* と省略されます。法線は平面、3Dジオメトリ(各面または頂点のサイディン"
+"グの位置を決定するため)などに表示されます。\\ **法線** *は* **単位ベクトル** "
+"ですが、その使用上は *法線* と呼ばれています。(普通に(0,0)をオリジンと呼んで"
+"いるのと同様に！)。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:24
 msgid ""
@@ -53,10 +63,15 @@ msgid ""
 "is an infinite surface (imagine an infinite, flat sheet of paper that you "
 "can orient and is pinned to the origin) instead of a line."
 msgstr ""
+"それは、見た目と同じくらい簡単です。平面は原点を通り、そのサーフェスは単位ベ"
+"クトル(または *法線*)に垂直です。ベクトルが指す側は正の半空間であり、反対側は"
+"負の半空間です。3Dでは、平面が線ではなく無限のサーフェス(方向を指定でき、原点"
+"に固定されている無限に広がる平らな用紙を想像してください)という点を除けば、こ"
+"れはまったく同じです。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:33
 msgid "Distance to plane"
-msgstr ""
+msgstr "平面までの距離"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:35
 msgid ""
@@ -65,20 +80,25 @@ msgid ""
 "time we do dot product between vector and position), returns the **distance "
 "from the point to the plane**:"
 msgstr ""
+"平面が何であるかが明確になったので、ドット積に戻りましょう。\\ **単位ベクトル"
+"** と空間内の **ポイント** 間のドット積(今回はベクトルと位置の間のドット積を"
+"行います)は、\\ **ポイントから平面までの距離** を返します:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:49
 msgid ""
 "But not just the absolute distance, if the point is in the negative half "
 "space the distance will be negative, too:"
 msgstr ""
+"ただし、符号のない絶対距離ではなく、ポイントが負の半空間にある場合は、距離も"
+"負になります:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:54
 msgid "This allows us to tell which side of the plane a point is."
-msgstr ""
+msgstr "これにより、ポイントが平面のどちら側にあるかを知ることができます。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:57
 msgid "Away from the origin"
-msgstr ""
+msgstr "原点から離れて"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:59
 msgid ""
@@ -86,6 +106,10 @@ msgid ""
 "everywhere in space, not only passing through the origin. You want real "
 "*plane* action and you want it *now*."
 msgstr ""
+"私はあなたが何を考えているか知っています！これまでのところ、これは素晴らしい"
+"ですが、\\ *実際*\\ の平面は、原点を通過するだけでなく、空間のいたるところに"
+"あります。あなたは本当の *平面* アクションを、まさに\\ *今*\\ 望んでいるはす"
+"です。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:63
 msgid ""
@@ -93,6 +117,9 @@ msgid ""
 "*polarity*. This means that it is possible to have perfectly overlapping "
 "planes, but their negative and positive half-spaces are swapped."
 msgstr ""
+"平面は空間を2つに分割するだけでなく、\\ *極性*\\ も持っていることに注意してく"
+"ださい。これは、完全にオーバーラップする平面を持つことは可能ですが、負と正の"
+"半空間が入れ替わりうることを意味します。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:67
 msgid ""
@@ -100,12 +127,17 @@ msgid ""
 "**distance from the origin** scalar *D*. Thus, our plane is represented by N "
 "and D. For example:"
 msgstr ""
+"これを念頭に置いて、完全な平面を\\ **法線**\\ *N *\\ および\\ **原点からの距"
+"離**\\ スカラー *D* として説明しましょう。したがって、平面はNとDで表されま"
+"す。たとえば、次のとおりです:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:73
 msgid ""
 "For 3D math, Godot provides a :ref:`Plane <class_Plane>` built-in type that "
 "handles this."
 msgstr ""
+"3D演算の場合、Godotはこれを処理する組み込み型 :ref:`Plane <class_Plane>` を提"
+"供します。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:76
 msgid ""
@@ -115,6 +147,9 @@ msgid ""
 "plane, travelling in N direction. As an example, imagine you want to reach a "
 "point in the plane, you will just do:"
 msgstr ""
+"基本的に、NとDは2Dでも3Dでも(Nの次元の量に応じて)空間内の任意の平面を表すこと"
+"ができ、数学は両方で同じです。前と同じですが、Dは原点から平面までの距離で、N"
+"方向に移動します。例として、平面のある地点に到達したい場合、次のようにします:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:91
 msgid ""
@@ -123,14 +158,18 @@ msgid ""
 "seems. If we want to tell, again, the distance from the point to the plane, "
 "we do the same but adjusting for distance:"
 msgstr ""
+"これにより、法線ベクトルが伸縮(サイズ変更)され、平面に接触します。この数学は"
+"混乱しているように見えるかもしれませんが、実際には見かけよりもはるかに簡単で"
+"す。もう一度、ポイントから平面までの距離を伝えたい場合は、距離を調整しながら"
+"同じことを行います:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:105
 msgid "The same thing, using a built-in function:"
-msgstr ""
+msgstr "同じことを、組み込み関数を使用すると:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:116
 msgid "This will, again, return either a positive or negative distance."
-msgstr ""
+msgstr "これもまた、正または負の距離を返します。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:118
 msgid ""
@@ -138,16 +177,19 @@ msgid ""
 "This will result in a plane in the same position, but with inverted negative "
 "and positive half spaces:"
 msgstr ""
+"平面の極性を反転させるには、NとDの両方を反極性にします(+-の反転)。これによ"
+"り、平面は同じ位置になりますが、負と正の半空間が逆になります:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:133
 msgid ""
 "Of course, Godot also implements this operator in :ref:`Plane "
 "<class_Plane>`, so doing:"
 msgstr ""
+"もちろん、Godotは :ref:`Plane <class_Plane>` にもこの演算子を実装しています:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:145
 msgid "Will work as expected."
-msgstr ""
+msgstr "期待どおりに動作します。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:147
 msgid ""
@@ -155,10 +197,13 @@ msgid ""
 "the distance to it. So, why is it useful to calculate the distance from a "
 "point to a plane? It's extremely useful! Let's see some simple examples.."
 msgstr ""
+"ですから、その主な実用的な用途は、平面への距離を計算することと覚えておいてく"
+"ださい。それでは、なぜ点から平面までの距離を計算できると便利なのでしょうか？"
+"それはとても便利です！いくつかの簡単な例を見てみましょう..。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:153
 msgid "Constructing a plane in 2D"
-msgstr ""
+msgstr "2Dで平面を構築する"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:155
 msgid ""
@@ -166,6 +211,9 @@ msgid ""
 "Constructing them in 2D is easy, this can be done from either a normal (unit "
 "vector) and a point, or from two points in space."
 msgstr ""
+"平面は明らかにどこからともなく出てはこないので、構築する必要があります。それ"
+"らを2Dで作成するのは簡単です。これは、法線(単位ベクトル)と点、または空間内の2"
+"つの点のいずれかから実行できます。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:159
 msgid ""
@@ -173,6 +221,8 @@ msgid ""
 "is already computed, so just calculate D from the dot product of the normal "
 "and the point."
 msgstr ""
+"法線と点の場合、法線はすでに計算されているため、ほとんどの作業が行われます。"
+"したがって、法線と点のドット積からDを計算するだけです。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:174
 msgid ""
@@ -182,22 +232,27 @@ msgid ""
 "must be obtained first, and then it needs to be rotated 90° degrees to "
 "either side:"
 msgstr ""
+"空間内の2つのポイントには、それらを通過する2つの平面があり、同じ空間を共有し"
+"ますが、法線は反対方向を指します。 2点から法線を計算するには、最初に方向ベク"
+"トルを取得してから、どちらかの側に90度回転する必要があります:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:201
 msgid ""
 "The rest is the same as the previous example, either point_a or point_b will "
 "work since they are in the same plane:"
 msgstr ""
+"残りは前の例と同じですが、point_aまたはpoint_bは同じ平面上にあるのでどちらで"
+"も動作します:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:219
 msgid ""
 "Doing the same in 3D is a little more complex and will be explained further "
 "down."
-msgstr ""
+msgstr "3Dで同じことを行うことは、もう少し複雑でなので、後に詳しく説明します。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:223
 msgid "Some examples of planes"
-msgstr ""
+msgstr "平面処理に関するいくつかの例"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:225
 msgid ""
@@ -206,6 +261,10 @@ msgid ""
 "example, a rectangle, a trapezoid, a triangle, or just any polygon where no "
 "faces bend inwards."
 msgstr ""
+"ここでは、平面処理用の関数が役立つ簡単な例を示します。 `凸型(convex) "
+"<https://www.mathsisfun.com/definitions/convex.html>`__ ポリゴンがあるとしま"
+"す。たとえば、四角形、台形、三角形、またはフェースが内側に曲がらないポリゴン"
+"などです。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:230
 msgid ""
@@ -213,6 +272,9 @@ msgid ""
 "segment. Once we have the list of planes, we can do neat things, for example "
 "checking if a point is inside the polygon."
 msgstr ""
+"ポリゴンのすべてのセグメントについて、そのセグメントを通過する平面を計算しま"
+"す。平面のリストを取得したら、あるポイントがポリゴン内にあるかどうかを確認す"
+"るなどの、きちんとした操作を行うことができます。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:234
 msgid ""
@@ -220,11 +282,13 @@ msgid ""
 "point is positive, then the point is outside the polygon. If we can't, then "
 "the point is inside."
 msgstr ""
+"ポイントまでの距離が正である平面を一つでも見つけることができれば、ポイントは"
+"ポリゴンの外側にあります。できない場合、ポイントはポリゴンの内側にあります。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:240
 #: ../../docs/tutorials/math/vectors_advanced.rst:279
 msgid "Code should be something like this:"
-msgstr ""
+msgstr "コードは次のようになります:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:265
 msgid ""
@@ -233,6 +297,10 @@ msgid ""
 "This is called the Separating Axis Theorem (or SAT) and most physics engines "
 "use this to detect collision."
 msgstr ""
+"すごくクールですか？しかし、これははるかに良くできます！もう少し努力すれば、"
+"同様のロジックを使用して、2つの凸ポリゴンが重なっていることがわかります。これ"
+"は分離軸定理(またはSAT)と呼ばれ、ほとんどの物理エンジンはこれを使用して衝突を"
+"検出します。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:270
 msgid ""
@@ -242,6 +310,11 @@ msgid ""
 "it. This check is performed with the planes of A against the points of B, "
 "and then with the planes of B against the points of A:"
 msgstr ""
+"ポイントの場合、平面までの距離が正の値を返すかどうかを確認するだけで、ポイン"
+"トが外側にあるかどうかを判断できます。別ポリゴンの場合は、\\ *そのポリゴンの"
+"全ての点*\\ が正の距離を返す平面を見つける必要があります。このチェックは、Aの"
+"平面に対するBのポイントを対象に実行され、次にBの平面に対するAのポイントに対象"
+"に実行されます:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:370
 msgid ""
@@ -250,10 +323,14 @@ msgid ""
 "usually just handled by splitting the concave polygon into smaller convex "
 "polygons, or using a technique such as BSP (which is not used much nowadays)."
 msgstr ""
+"ご覧のとおり、平面処理関数は非常に便利です。これが氷山の一角です。非凸ポリゴ"
+"ンで何が起こるか疑問に思うかもしれません。これは通常、凹面のポリゴンをより小"
+"さな凸面のポリゴンに分割するか、BSP(バイナリ空間分割、最近ではあまり使用され"
+"ていない)などの手法を使用して処理されます。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:377
 msgid "Collision detection in 3D"
-msgstr ""
+msgstr "3Dでの衝突検出"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:379
 msgid ""
@@ -263,6 +340,10 @@ msgid ""
 "pretty well) but it's used by almost all physics engines and collision "
 "detection libraries :)"
 msgstr ""
+"これはもう1つのボーナスです。辛抱強く、この長いチュートリアルに遅れずについて"
+"いくことに対する報酬です。ここにもう一つの知恵があります。これは直接的な使用"
+"例ではないかもしれませんが(Godotはすでに衝突検出をかなりうまく行います)、ほと"
+"んどすべての物理エンジンと衝突検出ライブラリで使用されています(^^)"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:385
 msgid ""
@@ -270,6 +351,8 @@ msgid ""
 "useful for collision detection? You could detect if a point was inside any "
 "convex shape, or if two 2D convex shapes were overlapping."
 msgstr ""
+"2Dの凸形状を2D平面の配列に変換することは、衝突検出に役立つことを覚えています"
+"か？点が凸形状の内側にあるか、2つの2D凸形状が重なっているかを検出できます。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:389
 msgid ""
@@ -277,6 +360,9 @@ msgid ""
 "won't be able to find a separating plane. If a separating plane is found, "
 "then the shapes are definitely not colliding."
 msgstr ""
+"そう、これは3Dでも機能します。2つの3D多面体形状が衝突している場合、分離平面を"
+"見つけることができません。分離平面が見つかった場合は、形状は明らかに衝突して"
+"いません。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:393
 msgid ""
@@ -285,6 +371,9 @@ msgid ""
 "side. This plane is always one of the face-planes of either polygon A or "
 "polygon B."
 msgstr ""
+"分離平面に関する考えを少し更新すると、ポリゴンAのすべての頂点がその平面の片側"
+"にあり、ポリゴンBのすべての頂点が反対側にあることを意味します。この平面は、常"
+"にポリゴンAまたはポリゴンBのいずれかの面平面の1つです。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:398
 msgid ""
@@ -292,6 +381,8 @@ msgid ""
 "that, in some cases a separating plane can't be found. This is an example of "
 "such situation:"
 msgstr ""
+"ただし、3Dでは、このアプローチには問題があります。これは、場合によっては分離"
+"平面が見つからない可能性があるためです。これはそのような状況の例です:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:404
 msgid ""
@@ -299,7 +390,9 @@ msgid ""
 "are the cross product between the edges of polygon A and the edges of "
 "polygon B"
 msgstr ""
+"それを回避するには、いくつかの余分な平面をセパレータとしてテストする必要があ"
+"ります。これらの平面は、ポリゴンAのエッジとポリゴンBのエッジ間の外積です"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:410
 msgid "So the final algorithm is something like:"
-msgstr ""
+msgstr "したがって、最終的なアルゴリズムは次のようになります:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:4
 msgid "Data paths"
-msgstr ""
+msgstr "データパス"
 
 #: ../../docs/tutorials/io/data_paths.rst:7
 msgid "Path separators"
-msgstr ""
+msgstr "パスの区切り記号"
 
 #: ../../docs/tutorials/io/data_paths.rst:9
 msgid ""
@@ -31,10 +31,13 @@ msgid ""
 "UNIX-style path separators (``/``). These work on all platforms, including "
 "Windows."
 msgstr ""
+"できるだけ多くのプラットフォームをサポートするために、GodotはUNIXスタイルのパ"
+"ス区切り文字 (``/``) のみを受け入れます。これらは、Windowsを含むすべてのプ"
+"ラットフォームで機能します。"
 
 #: ../../docs/tutorials/io/data_paths.rst:13
 msgid "A path like ``C:\\Projects`` will become ``C:/Projects``."
-msgstr ""
+msgstr "``C:\\Projects`` のようなパスは ``C:/Projects`` になります。"
 
 #: ../../docs/tutorials/io/data_paths.rst:16
 msgid "Resource path"
@@ -46,6 +49,9 @@ msgid ""
 "project exists in any given folder that contains a ``project.godot`` text "
 "file, even if such file is empty."
 msgstr ""
+":ref:`doc_command_line_tutorial` で述べたように、Godotは例えそのファイルが空"
+"であったとしても ``project.godot`` テキストファイルを含む任意のフォルダにプロ"
+"ジェクトが存在すると見なします。"
 
 #: ../../docs/tutorials/io/data_paths.rst:22
 msgid ""
@@ -53,10 +59,13 @@ msgid ""
 "base. For example, a texture located in the root of the project folder may "
 "be opened from the following path: ``res://some_texture.png``."
 msgstr ""
+"プロジェクトファイルへのアクセスは、\\ ``res://`` をベースとして任意のパスを"
+"開くことで実行できます。たとえば、プロジェクトフォルダのルートにあるテクス"
+"チャは、次のパスから開くことができます: ``res://some_texture.png``\\ 。"
 
 #: ../../docs/tutorials/io/data_paths.rst:27
 msgid "User path (persistent data)"
-msgstr ""
+msgstr "ユーザーパス(永続的なデータ)"
 
 #: ../../docs/tutorials/io/data_paths.rst:29
 msgid ""
@@ -64,12 +73,17 @@ msgid ""
 "will be read-only, due to it being inside a package, self-contained "
 "executable, or system-wide install location."
 msgstr ""
+"プロジェクトの実行中は、パッケージ、自己完結型の実行可能ファイル、またはシス"
+"テム全体のインストール場所の中にあるため、一般的なシナリオではリソースパスは"
+"読み取り専用になります。"
 
 #: ../../docs/tutorials/io/data_paths.rst:33
 msgid ""
 "Storing persistent files in such scenarios should be done by using the "
 "``user://`` prefix, for example: ``user://game_save.txt``."
 msgstr ""
+"このようなシナリオで永続的なファイルを格納するには、\\ ``user://`` プレフィッ"
+"クスを使用する必要があります。例: ``user://game_save.txt``。"
 
 #: ../../docs/tutorials/io/data_paths.rst:36
 msgid ""
@@ -80,6 +94,12 @@ msgid ""
 "the Project Settings, but it can be overridden on a per-platform basis "
 "using :ref:`feature tags <doc_feature_tags>`."
 msgstr ""
+"一部のデバイス(モバイルやコンソールなど)では、このパスはプロジェクトに固有で"
+"す。デスクトップオペレーティングシステムでは、エンジンはmacOSとLinuxでは典型"
+"的な ``~/.local/share/godot/app_userdata/Name`` を使用し、Windowsでは ``"
+"%APPDATA%/Name`` を使用します。\\ ``Name`` はプロジェクト設定で定義されたアプ"
+"リケーション名から取得されますが、プラットフォームごとに :ref:`feature tags "
+"<doc_feature_tags>` を使用して上書きできます。"
 
 #: ../../docs/tutorials/io/data_paths.rst:45
 msgid "Editor data paths"
@@ -90,10 +110,13 @@ msgid ""
 "The editor uses different paths for user data, user settings and cache "
 "depending on the platform. By default, these paths are:"
 msgstr ""
+"エディタは、プラットフォームに応じて、ユーザーデータ、ユーザー設定、および"
+"キャッシュに異なるパスを使用します。デフォルトでは、これらのパスは次のとおり"
+"です:"
 
 #: ../../docs/tutorials/io/data_paths.rst:51
 msgid "Type"
-msgstr "タイプ（型）"
+msgstr "タイプ(型)"
 
 #: ../../docs/tutorials/io/data_paths.rst:51
 msgid "Location"
@@ -106,16 +129,16 @@ msgstr "ユーザーデータ"
 #: ../../docs/tutorials/io/data_paths.rst:53
 #: ../../docs/tutorials/io/data_paths.rst:57
 msgid "Windows: ``%APPDATA%\\Godot\\``"
-msgstr ""
+msgstr "\\ Windows: ``%APPDATA%\\Godot\\``"
 
 #: ../../docs/tutorials/io/data_paths.rst:54
 #: ../../docs/tutorials/io/data_paths.rst:58
 msgid "macOS: ``~/Library/Application Support/Godot/``"
-msgstr ""
+msgstr "\\ macOS: ``~/Library/Application Support/Godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:55
 msgid "Linux: ``~/.local/share/godot/``"
-msgstr ""
+msgstr "\\ Linux: ``~/.local/share/godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:57
 msgid "User settings"
@@ -123,39 +146,45 @@ msgstr "ユーザー設定"
 
 #: ../../docs/tutorials/io/data_paths.rst:59
 msgid "Linux: ``~/.config/godot/``"
-msgstr ""
+msgstr "\\ Linux: ``~/.config/godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:61
 msgid "Cache"
-msgstr ""
+msgstr "キャッシュ"
 
 #: ../../docs/tutorials/io/data_paths.rst:61
 msgid "Windows: ``%TEMP%\\Godot\\``"
-msgstr ""
+msgstr "\\ Windows: ``%TEMP%\\Godot\\``"
 
 #: ../../docs/tutorials/io/data_paths.rst:62
 msgid "macOS: ``~/Library/Caches/Godot/``"
-msgstr ""
+msgstr "\\ macOS: ``~/Library/Caches/Godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:63
 msgid "Linux: ``~/.cache/godot/``"
-msgstr ""
+msgstr "\\ Linux: ``~/.cache/godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:66
 msgid "**User data** contains export templates and project-specific data."
 msgstr ""
+"**ユーザーデータ** には、エクスポートテンプレートとプロジェクト固有のデータが"
+"含まれます。"
 
 #: ../../docs/tutorials/io/data_paths.rst:67
 msgid ""
 "**User settings** contains editor settings, text editor themes, script "
 "templates, etc."
 msgstr ""
+"**ユーザー設定** には、エディタ設定、テキストエディタのテーマ、スクリプトテン"
+"プレートなどが含まれます。"
 
 #: ../../docs/tutorials/io/data_paths.rst:69
 msgid ""
 "**Cache** contains temporary data. It can safely be removed when Godot is "
 "closed."
 msgstr ""
+"**キャッシュ** には一時データが含まれます。 Godotを閉じたときに安全に削除でき"
+"ます。"
 
 #: ../../docs/tutorials/io/data_paths.rst:72
 msgid ""
@@ -164,6 +193,10 @@ msgid ""
 "all platforms. Environment variables can be overridden as per the "
 "specification to change the editor (and project) data paths."
 msgstr ""
+"Godotは、すべてのプラットフォームで `XDG Base Directory Specification "
+"<https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest."
+"html>`__ に準拠しています。環境変数は、仕様に従ってオーバーライドして、エディ"
+"タ(およびプロジェクト)データパスを変更できます。"
 
 #: ../../docs/tutorials/io/data_paths.rst:77
 msgid ""
@@ -171,10 +204,13 @@ msgid ""
 "org.godotengine.Godot>`__, the editor data paths will be located in "
 "subfolders in ``~/.var/app/org.godotengine.Godot/``."
 msgstr ""
+"`フラットパック(Flatpak)としてパッケージ化されたGodot <https://flathub.org/"
+"apps/details/org.godotengine.Godot>`__ を使用する場合、エディタのデータパス"
+"は ``~/.var/app/org.godotengine.Godot/`` のサブフォルダに配置されます。"
 
 #: ../../docs/tutorials/io/data_paths.rst:83
 msgid "Self-contained mode"
-msgstr ""
+msgstr "自己完結型モード"
 
 #: ../../docs/tutorials/io/data_paths.rst:85
 msgid ""
@@ -184,9 +220,16 @@ msgid ""
 "directory as the editor binary. This is useful to create a \"portable\" "
 "installation, which can then be placed on an USB drive."
 msgstr ""
+"エディタバイナリと同じディレクトリに ``._sc_`` または ``_sc_`` というファイル"
+"を作成すると、Godotは *自己完結型モード* を有効にします。これにより、Godotは"
+"すべてのユーザーデータを、エディタバイナリと同じディレクトリにある "
+"``editor_data/`` という名前のディレクトリに書き込みます。これは、USBドライブ"
+"に配置できる「ポータブル」インストールを作成するのに便利です。"
 
 #: ../../docs/tutorials/io/data_paths.rst:91
 msgid ""
 "The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "
 "uses self-contained mode by default."
 msgstr ""
+"`Steam用にリリースされるGodot <https://store.steampowered.com/app/404790/"
+">`__ は、デフォルトで自己完結型モードを使用します。"

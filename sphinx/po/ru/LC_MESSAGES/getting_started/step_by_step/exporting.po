@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,6 +109,8 @@ msgid ""
 "Since we are already in the *Window* settings, we should also set under "
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
+"Так как мы уже в настройках *Window*, нам так же необходимо установить для "
+"*Handheld* *Orientation* значение \"portrait\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
@@ -137,6 +139,9 @@ msgid ""
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
 "by clicking the folder icon and selecting it."
 msgstr ""
+"Главная сцена это то, где начинается ваша игра. В *Project -> Project "
+"Settings -> Application -> Run*, задайте для *Main Scene* \"Main.tscn\" "
+"кликнув по иконке папки и выбрав его."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid "Export templates"
@@ -176,12 +181,10 @@ msgid "Export presets"
 msgstr "Экспорт предустановок(пресетов)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
-msgstr ""
-"Теперь можно изменить настройки экспорта, нажав на *Project -> Export*:"
+msgstr "Дальше вы можете настроить экспорт, кликнув на *Проект -> Экспорт*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:158
 msgid ""
@@ -342,14 +345,14 @@ msgstr ""
 "создали."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:230
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
 "to *Screen* and set *Orientation* to \"Portrait\"."
 msgstr ""
 "Теперь вы готовы экспортировать. Нажмите на *Проект-> Экспорт* и добавьте "
-"предустановку для Android (см. выше)."
+"предустановку для Android (см. выше). Выберете Android и в *Параметры* "
+"перейдите к *Screen* и установите *Orientation* в \"Portrait\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""

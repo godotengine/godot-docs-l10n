@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
 msgid "AnimationTree"
-msgstr "アニメーションツリー"
+msgstr "AnimationTree(アニメーションツリー)"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:7
 msgid "Introduction"
@@ -274,26 +274,32 @@ msgid ""
 "This node will execute a sub-animation and return once it finishes. Blend "
 "times for fading in and out can be customized, as well as filters."
 msgstr ""
+"このノードは、副アニメーションを実行し、完了すると元に戻ります。フィルターだ"
+"けでなく、フェードインとフェードアウトのブレンド時間もカスタマイズできます。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:97
 msgid "Seek"
-msgstr ""
+msgstr "Seek"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:99
 msgid ""
 "This node can be used to cause a seek command to happen to any sub-children "
 "of the graph. After setting the time, this value returns to -1."
 msgstr ""
+"このノードは、グラフのどんな副子ノードに対してもシーク命令を送ります。時間を"
+"セットした後は、値は -1 に戻ります。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:102
 msgid "TimeScale"
-msgstr ""
+msgstr "TimeScale"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:104
 msgid ""
 "Allows scaling the speed of the animation (or reverse it) in any children "
 "nodes. Setting it to 0 will pause the animation."
 msgstr ""
+"アニメーションの再生速度の変更 (あるいは逆再生) を可能にします。0 にセットす"
+"るとアニメーションを一時停止します。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:107
 msgid "Transition"
@@ -305,10 +311,12 @@ msgid ""
 "``StateMachine`` node). Animations can be connected to the outputs and "
 "transition times can be specified."
 msgstr ""
+"とても単純なステートマシンです (\\ ``StateMachine``\\ ノードを扱いたくない時"
+"に)。複数のアニメーションを接続でき、トランジションの時間を指定できます。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:112
 msgid "BlendSpace2D"
-msgstr ""
+msgstr "BlendSpace2D"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:114
 msgid ""
@@ -316,6 +324,8 @@ msgid ""
 "are added to a two dimensional space and then a position can be controlled "
 "to determine blending:"
 msgstr ""
+"\\ ``BlendSpace2D``\\ は二次元でより高度なブレンドをするためのノードです。二"
+"次元空間に点を追加し、それらの位置をコントロールしてブレンドを決めます。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:119
 msgid ""
@@ -324,12 +334,17 @@ msgid ""
 "system or use the *add point* button) and triangles will be generated "
 "automatically using Delaunay."
 msgstr ""
+"X および Y の範囲でコントロールできます (それぞれ別の名称に変更可)。デフォル"
+"トでは、点はどこにでも置けます(座標系の上で右クリックするか、\\ *点を作成*\\ "
+"ボタンを使う)。三角形はドロネー分割で自動生成されます。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:124
 msgid ""
 "It is also possible to draw the triangles manually by disabling the *auto "
 "triangle* option, though this is rarely necessary:"
 msgstr ""
+"\\ *三角形の自動作成*\\ をオフにすれば、三角形を手動で作成することもできます"
+"が、必要になることはあまり無いでしょう:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:128
 msgid ""
@@ -340,20 +355,27 @@ msgid ""
 "switching between discrete animations, there is a *Carry* mode. This mode "
 "can be changed in the *Blend* menu:"
 msgstr ""
+"最後に、ブレンドモードは変更することができます。標準状態では、一番近い三角形"
+"の中で補完された点によってブレンドされますが、もし対象が(フレームごとに動か"
+"す)2Dアニメーションなら、\\ *離散*\\ モードに切り替えてもよいでしょう。あるい"
+"は、離散アニメーション間においても現在の再生位置を維持したい場合のために、\\ "
+"*キャリー*\\ モードもあります。モードは\\ *ブレンド*\\ メニューから変更できま"
+"す。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:136
 msgid "BlendSpace1D"
-msgstr ""
+msgstr "BlendSpace1D"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:138
 msgid ""
 "This is similar to 2D blend spaces, but in one dimension (so triangles are "
 "not needed)."
 msgstr ""
+"これは2Dブレンドスペースと同様ですが、一次元のみです (そのため三角形は不要)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:141
 msgid "StateMachine"
-msgstr ""
+msgstr "StateMachine"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:143
 msgid ""

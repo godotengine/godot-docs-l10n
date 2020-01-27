@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -220,22 +220,21 @@ msgstr "\\ さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
 msgid "QUOTE"
-msgstr ""
+msgstr "\\ QUOTE"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
 msgid "\"Hello\" said the man."
-msgstr ""
+msgstr "\\ \"Hello\" said the man."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
 msgid "\"Hola\" dijo el hombre."
-msgstr ""
+msgstr "\\ \"Hola\" dijo el hombre."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
 msgid "「こんにちは」男は言いました"
-msgstr ""
+msgstr "\\ 「こんにちは」男は言いました"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
-#, fuzzy
 msgid ""
 "The same example is shown below as a comma-separated plain text file, which "
 "should be the result of editing the above in a spreadsheet. When editing the "
@@ -247,11 +246,14 @@ msgid ""
 "Alternatively, you can select another delimiter than comma in the import "
 "options."
 msgstr ""
-"同じ例をカンマ区切りのプレーンテキストファイルとして以下に示します。これはス"
-"プレッドシートで上記を編集した結果です。プレーンテキストバージョンを編集する"
-"ときは、コンマが区切り文字として解析されないように、コンマを含むメッセージは"
-"必ず二重引用符で囲んでください。または、インポートオプションで別の区切り文字"
-"を選択できます。"
+"同じ例を、コンマ区切りのプレーンテキストファイルとして以下に示します。これ"
+"は、スプレッドシートで上記を編集した結果です。プレーンテキストバージョンを編"
+"集するときは、コンマ、区切り、または二重引用符を含むメッセージを二重引用符で"
+"囲むようにしてください。その場合、含まれるコンマは区切り文字として解析され"
+"ず、同様に改行は新しいエントリを作成せず、そして二重引用符は囲み文字として解"
+"析されません。メッセージに含まれる可能性のある二重引用符は、その前に別の二重"
+"引用符を付けてエスケープしてください。または、インポートオプションでコンマ以"
+"外の区切り文字を選択することもできます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:97
 msgid "CSV importer"

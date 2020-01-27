@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "\\ FAQ"
 
 #: ../../docs/about/faq.rst:7
 msgid "Frequently asked questions"
@@ -355,7 +355,7 @@ msgstr ""
 "既存の多くの言語(Lua、Python、Squirrel、JS など)には、C++にバインドするための"
 "出来の悪いインターフェイスがあり、大量のコード、バグ、ボトルネック、および一"
 "般的な非効率性 がそれによって発生します。なので私たちは、多くの言語との統合で"
-"はなく、偉大なエンジン（Godot）その物に焦点を当てたかったのです。"
+"はなく、偉大なエンジン(Godot)その物に焦点を当てたかったのです。"
 
 #: ../../docs/about/faq.rst:136
 msgid ""
@@ -675,8 +675,8 @@ msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
-"あなたがソフトウェアを使って得た体験と問題（我々は改善のアイデアよりも、これ"
-"に重きをおいています）。"
+"あなたがソフトウェアを使って得た体験と問題(我々は改善のアイデアよりも、これに"
+"重きをおいています)。"
 
 #: ../../docs/about/faq.rst:268
 msgid ""
@@ -731,8 +731,8 @@ msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
-"スクリーンショット、具体的な数字、テストケース、またはサンプルプロジェクト"
-"（該当する場合）はボーナスポイントをもたらします。"
+"スクリーンショット、具体的な数字、テストケース、またはサンプルプロジェクト(該"
+"当する場合)はボーナスポイントをもたらします。"
 
 #: ../../docs/about/faq.rst:289
 msgid "Why does Godot not use STL (Standard Template Library)"
@@ -805,7 +805,7 @@ msgid ""
 "going."
 msgstr ""
 "私たちは、ゲームが何であれ、クラッシュすべきではないと考えています。予期しな"
-"い状況が発生した場合、Godotはエラーを出力します（スクリプトまでトレース可能）"
+"い状況が発生した場合、Godotはエラーを出力します(スクリプトまでトレース可能)"
 "が、その後、可能な限り正常に回復し、動き続けます。"
 
 #: ../../docs/about/faq.rst:309
@@ -832,8 +832,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:320
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
-msgstr ""
-"GodotがユーザーにDoD（データ指向設計）の実装を強制しないのはなぜですか？"
+msgstr "GodotがユーザーにDoD(データ指向設計)の実装を強制しないのはなぜですか？"
 
 #: ../../docs/about/faq.rst:322
 msgid ""
@@ -853,11 +852,10 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
-"DoDは主にキャッシュコヒーレンシ最適化であり、何十万ものオブジェクト（ほとんど"
-"変更なしでフレームごとに処理される）を処理する場合にのみ、大幅なパフォーマン"
-"スの向上が得られます。たとえば、フレームごとに数百のスプライトまたは敵を移動"
-"する場合、DoDは役に立ちません。最適化の別のアプローチを検討する必要がありま"
-"す。"
+"DoDは主にキャッシュコヒーレンシ最適化であり、何十万ものオブジェクト(ほとんど"
+"変更なしでフレームごとに処理される)を処理する場合にのみ、大幅なパフォーマンス"
+"の向上が得られます。たとえば、フレームごとに数百のスプライトまたは敵を移動す"
+"る場合、DoDは役に立ちません。最適化の別のアプローチを検討する必要があります。"
 
 #: ../../docs/about/faq.rst:333
 msgid ""
@@ -874,8 +872,8 @@ msgid ""
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
 "このような大量のオブジェクトを本当に処理する必要があるゲームが必要な場合、推"
-"奨されるのは、高性能部分にはC ++とGDNativeを、残りのゲームにはGDScript（また"
-"はC＃）を使用することです。"
+"奨されるのは、高性能部分にはC ++とGDNativeを、残りのゲームにはGDScript(または"
+"C#)を使用することです。"
 
 #: ../../docs/about/faq.rst:341
 msgid "How can I support Godot development or contribute?"

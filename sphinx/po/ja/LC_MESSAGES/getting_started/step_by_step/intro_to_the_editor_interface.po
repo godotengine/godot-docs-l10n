@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,23 +36,22 @@ msgid "Project manager"
 msgstr "プロジェクトマネージャー"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
-"Godotを起動したら、最初にプロジェクトマネージャーウィンドウが見えるでしょう。"
-"そこからゲームプロジェクトを作成、削除、インポートもしくはプレイしましょう。"
+"Godotを起動すると、最初に表示されるウィンドウはプロジェクトマネージャーです。"
+"プロジェクトがないため、アセットライブラリを開くかどうかを確認するポップアッ"
+"プが表示されます。とりあえず今は[キャンセル]をクリックし、後で確認します。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
-#, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"Godotを起動したら、最初にプロジェクトマネージャーウィンドウが見えるでしょう。"
-"そこからゲームプロジェクトを作成、削除、インポートもしくはプレイしましょう。"
+"これで、プロジェクトマネージャーが表示されます。ゲームプロジェクトを作成、削"
+"除、インポート、またはプレイできます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
@@ -63,7 +62,6 @@ msgstr ""
 "しょう。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -71,24 +69,26 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"**テンプレート**\\ タブからオープンソースプロジェクトテンプレートやデモをダウ"
-"ンロードでき、すばやく開発を始めることができます。欲しいテンプレートもしくは"
-"デモを選びダウンロードをクリックし,一度ダウンロードが終わったらインストールを"
-"クリックしプロジェクトの保存場所を選んで下さい。"
+"**テンプレート** タブに表示されるアセットライブラリから、オープンソースのプロ"
+"ジェクトテンプレートとデモをダウンロードして、より迅速に作業を開始できます。"
+"目的のテンプレートまたはデモを選択し、[ダウンロード] をクリックするだけで、ダ"
+"ウンロードが完了したら [インストール] をクリックし、プロジェクトを配置する場"
+"所を選択します。詳細については、\\ :ref:`doc_what_is_assetlib` を参照してくだ"
+"さい。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
 msgstr "プロジェクトの作成もしくはプロジェクトのインポート"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
-"プロジェクトを作成するには、右の ``New Project`` ボタンをクリックします。名前"
-"とコンピューター上の空フォルダを入力して保存します。"
+"新しいプロジェクトを作成するには、右側の ``新規プロジェクト`` ボタンをクリッ"
+"クします。ここで名前を付け、保存先のコンピュータ上の空のフォルダを選択し、レ"
+"ンダラーを選択します。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
@@ -99,18 +99,17 @@ msgstr ""
 "フォルダパスをプロジェクトパスに入力します。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
-#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"右に緑のチェックマークがある場合は、空フォルダーだという意味であり、 ``作成"
-"`` をクリックするとGodotはプロジェクトを作成してからエディターを開きます。"
+"右側に緑色のチェックマークが表示されている場合は、エンジンが空のフォルダを検"
+"出します。プロジェクト名の横にある ``フォルダを作成`` ボタンをクリックする"
+"と、プロジェクトの名前で空のフォルダが作成されます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
-#, fuzzy
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -118,30 +117,27 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
-"この段階でレンダリングバックエンド(OpenGL ES 3.0かOpenGL ES 2.0)を選ぶことも"
-"できます。それぞれの利点と欠点は一覧化されており、選ぶ際に参考にしてくださ"
-"い。詳細は :ref:`doc_gles2_gles3_differences` をご覧ください。気が変わったら"
-"後からでもプロジェクト設定からレンダリングバックエンドを切り替えることができ"
-"ます。このチュートリアルにおいてはどちらのレンダリングバックエンドでも問題は"
-"ありません。"
+"最後に、使用するレンダラーを選択する必要があります(OpenGL ES 3.0またはOpenGL "
+"ES 2.0)。それぞれの長所と短所は、選択しやすいようにリストされています。詳細に"
+"ついては、\\ :ref:`doc_gles2_gles3_differences` を参照してください。後で気が"
+"変わった場合は、プロジェクト設定からバックエンドを変更できることを覚えておい"
+"てください。このチュートリアルでは、どちらのバックエンドでも問題ありません。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"右に緑のチェックマークがある場合は、空フォルダーだという意味であり、 ``作成"
-"`` をクリックするとGodotはプロジェクトを作成してからエディターを開きます。"
+"完了したら、\\ ``作成して編集`` をクリックします。Godot によってプロジェクト"
+"が作成され、エディタで開きます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"次回からGodotを起動すると、新しく作ったプロジェクトがリストに表示されます。リ"
-"スト項目をダブルクリックをするとエディターが開きます。"
+"次回にプロジェクトマネージャーを開くと、リストに新しいプロジェクトが表示され"
+"ます。ダブルクリックしてエディタで開きます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -162,11 +158,12 @@ msgid "Your first look at Godot’s editor"
 msgstr "はじめてのGodotエディタ"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with empty docks on the right side."
-msgstr "こちらのインターフェイスになり、右側のドックは空っぽです。"
+msgstr ""
+"ゴドーへようこそ！プロジェクトを開くと、右側に空のドックがあるエディタのイン"
+"ターフェースが表示されます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -177,13 +174,12 @@ msgstr ""
 "そして\\ **テストプレイボタン**\\ があります。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
-#, fuzzy
 msgid ""
 "On the bottom left side, you have the **FileSystem dock**, where you’ll "
 "manage your project files and assets."
 msgstr ""
-"左側には、\\ **ファイルシステム・ドック**\\ があり、プロジェクトファイルやア"
-"セットはこちらで管理します。"
+"左下には、プロジェクトファイルとアセットを管理する **ファイルシステムドック"
+"** があります。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
@@ -243,13 +239,12 @@ msgstr ""
 "ンが行えます。F2キーで開けます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
 msgstr ""
-"ツールバーの下にある[透視投影]を見てください。これはボタンで、押すと3Dビュー"
-"ポートに関するオプションがリスト表示されます。"
+"ツールバーの下の透視投影ボタンに注目してください。3Dビューポートに関連するオ"
+"プションのリストが開きます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""

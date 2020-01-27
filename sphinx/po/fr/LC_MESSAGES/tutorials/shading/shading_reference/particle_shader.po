@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,7 @@ msgstr "Ignorer la valeur de **VELOCITY**."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
 msgid "Vertex built-ins"
-msgstr "Sommets intégrés"
+msgstr "Variables intégrées de sommet"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:42
 msgid ""
@@ -103,6 +103,12 @@ msgid ""
 "marked as \"inout\" provide a sensible default value, and can optionally be "
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
+"Les valeurs marquées comme \"in\" sont en lecture seule. Les valeurs "
+"marquées comme \"out\" sont pour l'écriture facultative et ne contiendront "
+"pas nécessairement de valeurs sensibles. Les valeurs marquées comme \"inout"
+"\" fournissent une valeur par défaut sensible et peuvent éventuellement être "
+"réécrites. Les échantillonneurs ne sont pas soumis à l'écriture et ne sont "
+"pas marqués."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:47
 msgid ""
@@ -110,10 +116,13 @@ msgid ""
 "``use_vertex_as_albedo`` to ``true``. In a ShaderMaterial, access it with "
 "the ``COLOR`` variable."
 msgstr ""
+"Afin d'utiliser la variable ``COLOR`` dans un SpatialMaterial, définissez "
+"``use_vertex_as_albedo`` sur ``true``. Dans un ShaderMaterial, accédez-y "
+"avec la variable ``COLOR``."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
 msgid "Built-in"
-msgstr ""
+msgstr "Variable intégrée"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
 msgid "inout vec4 **COLOR**"
@@ -168,6 +177,8 @@ msgstr "inout vec4 **CUSTOM**"
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
 msgstr ""
+"Données personnalisées des particules. Accessible depuis le shader de la "
+"maille comme **INSTANCE_CUSTOM**."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
 msgid "inout mat4 **TRANSFORM**"
@@ -175,15 +186,15 @@ msgstr "inout mat4 **TRANSFORM**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
 msgid "Particle transform."
-msgstr ""
+msgstr "Transformation de particules."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid "in float **TIME**"
-msgstr ""
+msgstr "in float **TIME**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid "Global time in seconds."
-msgstr ""
+msgstr "Temps global en secondes."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 msgid "in float **LIFETIME**"
@@ -191,7 +202,7 @@ msgstr "in float **LIFETIME**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 msgid "Particle lifetime."
-msgstr ""
+msgstr "Durée de vie des particules."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 msgid "in float **DELTA**"
@@ -199,7 +210,7 @@ msgstr "in float **DELTA**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 msgid "Delta process time."
-msgstr ""
+msgstr "Durée du processus Delta."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 msgid "in uint **NUMBER**"
@@ -207,7 +218,7 @@ msgstr "in uint **NUMBER**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 msgid "Unique number since emission start."
-msgstr ""
+msgstr "Numéro unique depuis le début de l'émission."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
 msgid "in int **INDEX**"
@@ -223,7 +234,7 @@ msgstr "in mat4 **EMISSION_TRANSFORM**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
 msgid "Emitter transform (used for non-local systems)."
-msgstr ""
+msgstr "Transformation de l'émetteur (utilisée pour les systèmes non locaux)."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
 msgid "in uint **RANDOM_SEED**"
@@ -231,4 +242,4 @@ msgstr "in uint **RANDOM_SEED**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
 msgid "Random seed used as base for random."
-msgstr ""
+msgstr "Graine aléatoire utilisée comme base pour le hasard."

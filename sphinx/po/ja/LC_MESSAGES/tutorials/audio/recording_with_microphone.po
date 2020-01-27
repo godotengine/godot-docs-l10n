@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:4
 msgid "Recording with microphone"
-msgstr ""
+msgstr "マイクでの録音"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:6
 msgid ""
 "Godot supports in-game audio recording for Windows, macOS, Linux, Android "
 "and iOS."
 msgstr ""
+"Godotは、Windows、macOS、Linux、Android、およびiOSのゲーム内オーディオ録音を"
+"サポートしています。"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:9
 msgid ""
@@ -33,17 +35,21 @@ msgid ""
 "support for this tutorial: `<https://github.com/godotengine/godot-demo-"
 "projects/tree/master/audio/mic_record>`_."
 msgstr ""
+"簡単なデモが公式デモプロジェクトに含まれており、このチュートリアルのサポート"
+"として使用されます: `<https://github.com/godotengine/godot-demo-projects/"
+"tree/master/audio/mic_record>`_。"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:14
-#, fuzzy
 msgid "The structure of the demo"
-msgstr "ルートノードの大きさ。"
+msgstr "デモの構造"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:16
 msgid ""
 "The demo consists of a single scene. This scene includes two major parts: "
 "the GUI and the audio."
 msgstr ""
+"デモは単一のシーンで構成されています。このシーンには、GUIとオーディオの2つの"
+"主要部分が含まれます。"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:19
 msgid ""
@@ -51,6 +57,10 @@ msgid ""
 "the effect ``Record`` is created to handle the audio recording. An "
 "``AudioStreamPlayer`` named ``AudioStreamRecord`` is used for recording."
 msgstr ""
+"オーディオ部分に焦点を当てます。このデモでは、オーディオ録音を処理するため"
+"に、\\ ``Record``\\ エフェクトを持つ ``Record`` という名前のバスが作成されま"
+"す。録音には ``AudioStreamRecord`` という名前の ``AudioStreamPlayer`` が使用"
+"されます。"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:40
 msgid ""
@@ -61,6 +71,12 @@ msgid ""
 "`set_recording_active() "
 "<class_AudioEffectRecord_method_set_recording_active>`."
 msgstr ""
+"オーディオ録音は、\\ :ref:`get_recording() "
+"<class_AudioEffectRecord_method_get_recording>`\\ 、\\ :ref:"
+"`is_recording_active() <class_AudioEffectRecord_method_is_recording_active>` "
+"および :ref:`set_recording_active() "
+"<class_AudioEffectRecord_method_set_recording_active>` の3つのメソッドを持"
+"つ :ref:`class_AudioEffectRecord` リソースで処理されます。"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:64
 msgid ""
@@ -68,6 +84,9 @@ msgid ""
 "presses the ``RecordButton``, the effect is enabled with "
 "``set_recording_active(true)``."
 msgstr ""
+"デモの開始時には、録音エフェクトはアクティブではありません。ユーザーが "
+"``RecordButton`` を押すと、エフェクトは ``set_recording_active(true)`` で有効"
+"になります。"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:68
 msgid ""
@@ -75,15 +94,23 @@ msgid ""
 "the recorded stream can be stored into the ``recording`` variable by calling "
 "``effect.get_recording()``."
 msgstr ""
+"次のボタンを押すと、\\ ``effect.is_recording_active()`` は ``true`` なの"
+"で、\\ ``effect.get_recording()`` を呼び出すことで、記録されたストリームを "
+"``recording`` 変数に保存できます。"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:86
 msgid ""
 "To playback the recording, you assign the recording as the stream of the "
 "``AudioStreamPlayer`` and call ``play()``."
 msgstr ""
+"録音を再生するには、録音を ``AudioStreamPlayer`` のストリームとして割り当"
+"て、\\ ``play()`` を呼び出します。"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:97
 msgid ""
 "To save the recording, you call ``save_to_wav()`` with the path to a file. "
 "In this demo, the path is defined by the user via a ``LineEdit`` input box."
 msgstr ""
+"記録を保存するには、ファイルへのパスを指定して ``save_to_wav()`` を呼び出しま"
+"す。このデモでは、パスは ``LineEdit`` 入力ボックスを介してユーザーが定義しま"
+"す。"

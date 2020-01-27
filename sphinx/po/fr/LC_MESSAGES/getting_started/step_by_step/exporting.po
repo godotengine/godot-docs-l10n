@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,6 @@ msgstr ""
 "convertir le jeu vers un style de commande clic-déplacement."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -88,30 +87,32 @@ msgid ""
 "*Emulate Touch From Mouse* to \"On\"."
 msgstr ""
 "Par défaut, Godot émule l'entrée de la souris à partir de l'entrée tactile. "
-"Cela signifie que si quelque chose est codé pour se produire lors d'un "
-"événement souris, le toucher le déclenchera également. Si vous souhaitez "
-"désactiver cette fonction pour quelque raison que ce soit, ou émuler le "
-"toucher à partir de l'entrée de la souris, vous pouvez le faire dans les "
-"\"Paramètres du projet\" sous *Dispositifs d'entrée* et *Pointing*"
+"Cela signifie que si quelque chose est codé pour se produire sur un "
+"événement de souris, un événement de l'entrée tactile va le déclencher "
+"ainsi. Godot peut également émuler l'entrée tactile depuis les clics de "
+"souris, dont nous aurons besoin pour être en mesure de continuer à jouer à "
+"notre jeu sur notre ordinateur après être passé à l'entrée tactile. Dans les "
+"\"Paramètres de projet\" sous *Input Devices* et *Pointing*, définir "
+"*Emulate Touch From Mouse* à \"On\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:39
-#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to *Display*, then click on *Window*. "
 "In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
-"Avant de changer la méthode d'entrée, dans les paramètres du projet, allez "
-"dans *Display*, puis cliquez sur *Window*. Dans les options *Stretch*, "
-"réglez *Mode* sur \"2d\" et *Aspect* sur \"keep\". Cela permet de s'assurer "
-"que le jeu se mette à l'échelle uniformément sur des écrans de différentes "
-"tailles."
+"Nous voulons également nous assurer que le jeu s'adapte de manière cohérente "
+"sur des écrans de différentes tailles, donc dans les paramètres du projet "
+"allez sur *Display*, puis cliquez sur *Window*. Dans les options *Stretch*, "
+"réglez *Mode* sur \"2d\" et *Aspect* sur \"keep\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
 msgid ""
 "Since we are already in the *Window* settings, we should also set under "
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
+"Puisque nous sommes déjà dans les paramètres de la *Window*, nous devrions "
+"également régler sous *Handheld* l' *Orientation* sur \"portrait\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
@@ -133,20 +134,18 @@ msgstr ""
 "que nous avons changé :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:129
-#, fuzzy
 msgid "Setting a main scene"
-msgstr "Mise en place de la scène"
+msgstr "Mise en place de la scène principale"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
-#, fuzzy
 msgid ""
 "The main scene is the one that your game will start in. In *Project -> "
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
 "by clicking the folder icon and selecting it."
 msgstr ""
-"Pour changer l'icône de la barre des tâches, allez dans Projet>Paramètres du "
-"projet>Application>Config>Icône. Cliquez sur l'icône de dossier et "
-"sélectionnez l'icône désirée."
+"La scène principale est celle avec laquelle votre jeu va commencer. Dans "
+"*Projet-> Project Settings -> Application -> Run*, set *Main Scene* pour "
+"\"Main.tscn\" en cliquant sur l'icône de dossier et de sélection."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid "Export templates"
@@ -187,13 +186,12 @@ msgid "Export presets"
 msgstr "Réglages d'export par défaut"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
 msgstr ""
 "Ensuite, vous pouvez configurer les paramètres d'exportation en cliquant sur "
-"*Projet -> Exporter* :"
+"*Projet -> Exporter*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:158
 msgid ""
@@ -359,14 +357,15 @@ msgstr ""
 "vous venez de créer."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:230
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
 "to *Screen* and set *Orientation* to \"Portrait\"."
 msgstr ""
-"Vous êtes maintenant prêt à exporter. Cliquez sur *Projet -> Exporter* et "
-"ajoutez un pré-réglage pour Android (voir ci-dessus)."
+"Maintenant, vous êtes prêt à exporter. Cliquez sur *Projet -> Export* et "
+"ajoutez un préréglage pour Android (voir ci-dessus). Sélectionnez les "
+"préréglages Android et sous *Options* allez à *Screen* et réglez "
+"*Orientation* sur \"Portrait\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""

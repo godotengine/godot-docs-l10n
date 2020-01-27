@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,36 +18,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
-#, fuzzy
 msgid "GDScript exports"
-msgstr "GDScript"
+msgstr "GDScript 내보내기(Export)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
-#, fuzzy
 msgid "Introduction to exports"
-msgstr "3D 소개"
+msgstr "내보내기 소개"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
 "they're attached to. They will also be available for editing in the property "
 "editor. Exporting is done by using the ``export`` keyword::"
 msgstr ""
-"클래스 멤버는 내보내질 수 있습니다. 즉, 값이 첨부된 리소스와 함께 저장됩니다 "
-"(예 the :ref:`scene <class_PackedScene>`). 그들은 또한 속성 편집기에서 편집하"
-"는 것이 가능합니다. 내보내는 것은 ``export`` 키워드를 사용합니다::"
+"Godot에서 클래스 멤버는 내보낼 수 있습니다. 즉, 멤버의 값은 (:ref:`씬 "
+"<class_PackedScene>`\\ 처럼) 붙어있는 리소스와 함께 저장됩니다. 그리고 속성"
+"(Property) 편집기에서 편집할 수 있습니다. 내보내려면 ``export`` 키워드를 사용"
+"합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
-#, fuzzy
 msgid ""
 "An exported variable must be initialized to a constant expression or have an "
 "export hint in the form of an argument to the ``export`` keyword (see the "
 "*Examples* section below)."
 msgstr ""
-"내보낸 변수는 상수 표현식으로 초기화 되거나 내보내기 힌트를 export 키워드에 "
-"인수의 형태로 가져야 합니다 (하단을 참고하세요)."
+"내보낸 변수는 상수 표현식으로 초기화하거나, 인수의 형태에 ``export`` 키워드"
+"로 내보내기 힌트가 있어야 합니다 (아래의 *예제* 섹션을 참고하세요)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
 msgid ""
@@ -65,44 +62,44 @@ msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
 "syntax varies depending on the language."
 msgstr ""
+"속성 내보내기는 C#과 같은 다른 언어에서도 가능합니다. 문법은 언어에 따라 다릅"
+"니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
 msgid "Examples"
 msgstr "예제"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
-#, fuzzy
 msgid ""
 "It must be noted that even if the script is not being run while in the "
 "editor, the exported properties are still editable. This can be used in "
 "conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
-"심지어 스크립트가 편집기에서 실행되지 않더라도, 내보낸 속성은 여전히 편집 가"
-"능합니다 (아래 \"툴\"을 참고하세요)."
+"스크립트가 편집기에서 실행하지 않는다면, 내보낸 속성은 편집할 수 있다는 것은 "
+"꼭 알아두세요. 왜냐하면 :ref:`\"Tool(도구) 모드에서 스크립트 "
+"<doc_gdscript_tool_mode>`\\ 를 사용할 수 있기 때문입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
 msgid "Exporting bit flags"
 msgstr "비트 플래그(bit flags) 내보내기"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
 "set from the editor::"
 msgstr ""
-"비트 플래그로 사용되는 정수는 한 속성에 많은 ``참``/``거짓`` (불리언) 값을 저"
-"장할 수 있습니다. 내보내기 힌트 ``int, FLAGS``\\ 를 사용하여, 이를 편집기에"
-"서 설정할 수 있습니다:"
+"비트 플래그로 사용되는 정수는 한 속성에 여러 ``참``/``거짓`` (불리언) 값을 저"
+"장할 수 있습니다. 편집기에서 설정하도록 하려면 ``int, FLAGS`` 내보내기 힌트"
+"를 사용합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
-#, fuzzy
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax::"
 msgstr ""
-"플래그를 특정 수의 명명된 플래그로 제한하는 것도 가능합니다. 문법은 열거 문법"
-"과 비슷합니다:"
+"플래그를 특정 개수의 이름있는 플래그로 제한하는 것도 가능합니다. 문법은 열거"
+"형 문법과 유사합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:139
 msgid ""
@@ -127,7 +124,6 @@ msgid "Exporting arrays"
 msgstr "배열 내보내기"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
-#, fuzzy
 msgid ""
 "Exporting arrays works, but with an important caveat: while regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -136,7 +132,7 @@ msgid ""
 "initializers, but they must be constant expressions."
 msgstr ""
 "배열을 내보낼 수 있지만 중요한 주의 사항이 있습니다: 정규 배열은 모든 클래스 "
-"인스턴스에 지역으로 만들어 지지만, 내보낸 배열은 모든 인스턴스 간에 *공유됩니"
-"다*. 즉, 한 인스턴스에서 배열을 편집하면 다른 인스턴스에서도 영향을 줍니다. "
-"내보낸 배열은 이니셜라이저를 가질 수 있지만, 반드시 상수 표현식이 되어야 합니"
-"다."
+"인스턴스에 지역(Local)으로 만들어지지만, 내보낸 배열은 모든 인스턴스 간에 *공"
+"유됩니다*. 즉, 한 인스턴스에서 배열을 편집하면 다른 인스턴스에서도 영향을 줍"
+"니다. 내보낸 배열은 이니셜라이저(Initializer)를 갖지만, 반드시 상수 표현식이 "
+"되어야 합니다."

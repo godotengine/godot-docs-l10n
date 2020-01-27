@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,10 +134,88 @@ msgid "Once that is configured, everything is ready to export to Android!"
 msgstr "일단 구성되면, Android에 내보낼 준비가 끝납니다!"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
+msgid "Providing launcher icons"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
+msgid ""
+"Launcher icons are used by Android launcher apps to represent your "
+"application to users. Godot only requires high-resolution icons (for "
+"``xxxhdpi`` density screens) and will automatically generate lower-"
+"resolution variants."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:68
+#, fuzzy
+msgid "There are two types of icons required by Godot:"
+msgstr "Godot에는 UI를 디자인하는 두 가지 방법이 있습니다. 먼저 당신은:"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:70
+msgid ""
+"**Main Icon:**: The \"classic\" icon. This will be used on all Android "
+"versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:71
+msgid ""
+"**Adaptive Icons:** Starting from Android 8 (inclusive), `Adaptive Icons "
+"<https://developer.android.com/guide/practices/ui_guidelines/"
+"icon_design_adaptive>`_ were introduced. Applications will need to include "
+"separate background and foreground icons to have a native look. The user's "
+"launcher application will control the icon's animation and masking. Must be "
+"at least 432×432 px."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
+msgid ""
+"It's important to adhere to some rules when designing adaptive icons. "
+"`Google Design has provided a nice article <https://medium.com/google-design/"
+"designing-adaptive-icons-515af294c783>`_ that helps to understand those "
+"rules and some of the capabilities of adaptive icons."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:75
+msgid ""
+"The most important adaptive icon design rule is to have your icon critical "
+"elements inside the safe zone: a centered circle with a radius of 66dp (264 "
+"pixels on ``xxxhdpi``) to avoid being clipped by the launcher."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:77
+msgid ""
+"If you don't provide some of the requested icons, Godot will replace them "
+"using a fallback chain, trying the next in line when the current one fails:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
+msgid ""
+"**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
+msgid ""
+"**Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon "
+"-> Project icon -> Default Godot foreground icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
+msgid ""
+"**Adaptive Icon Background:** Provided background icon -> Default Godot "
+"background icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:83
+msgid ""
+"It's highly recommended to provide all of the requested icons, and at least "
+"with the specified resolutions. Only this way your application will look "
+"great on all the Android devices and versions."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
 msgid "Exporting for Google Play Store"
 msgstr "구글 플레이 스토어로 내보내기"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
@@ -145,7 +223,7 @@ msgstr ""
 "APK를 구글 플레이 스토어에 업로드 하려면 비 디버그 키스토어 파일을 서명해야합"
 "니다; 그러한 파일은 다음과 같이 생성될 수 있습니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95
 msgid ""
 "This keystore and key are used to verify your developer identity, remember "
 "the password and keep it in a safe place! Use Google's Android Developer "
@@ -157,21 +235,21 @@ msgstr ""
 "app-signing>`__\\ 에 대해 더 자세히 배우고 싶다면 구글 Android 개발자 가이드"
 "를 사용하세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:98
 msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr "이제 Android 내보내기 프리셋에서 다음 항목을 채우세요:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
 #, fuzzy
 msgid "**Release:** Enter the path to the keystore file you just generated."
 msgstr "Release: 막 생성한 키스토어 파일의 경로를 입력하세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:103
 #, fuzzy
 msgid "**Release User:** Replace with the key alias."
 msgstr "Release User: 키 별명으로 바꾸세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:104
 #, fuzzy
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
@@ -179,7 +257,7 @@ msgid ""
 msgstr ""
 "Release Password: 키 암호. 키스토어 암호와 키 암호는 현재로선 같아야 합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:106
 #, fuzzy
 msgid ""
 "**Your export_presets.cfg file now contains sensitive information.** If you "
@@ -189,7 +267,7 @@ msgstr ""
 "**이제 export_presets.cfg 파일에는 민감한 정보가 들어있습니다;** 버전 제어 시"
 "스템을 사용한다면, 공개 저장소에서 이것을 제거하는 것이 좋을 것입니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:110
 #, fuzzy
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while choosing "
@@ -198,11 +276,11 @@ msgstr ""
 "APK의 이름을 고르면서 ``Export With Debug`` 버튼을 비활성화하는 것을 잊지마세"
 "요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:93
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:115
 msgid "Optimizing the APK size"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:117
 msgid ""
 "By default, the APK will contain native libraries for both ARMv7 and ARMv8 "
 "architectures. This increases its size significantly. To create a smaller "
@@ -212,7 +290,7 @@ msgid ""
 "run on ARMv8 devices, but the opposite is not true."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:124
 msgid ""
 "Since August 2019, Google Play requires all applications to be available in "
 "64-bit form. This means you cannot upload an APK that contains *just* an "
@@ -223,7 +301,7 @@ msgid ""
 "devices in use today."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:109
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:131
 msgid ""
 "You can optimize the size further by compiling an Android export template "
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "

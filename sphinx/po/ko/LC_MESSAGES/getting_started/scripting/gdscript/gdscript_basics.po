@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 15:59+0100\n"
+"POT-Creation-Date: 2020-01-27 08:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -560,12 +560,11 @@ msgstr "속성 참조"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
 msgid "``foo()``"
-msgstr ""
+msgstr "``foo()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
-#, fuzzy
 msgid "Function call"
-msgstr "함수(Function)"
+msgstr "함수 호출"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:255
 msgid "``is``"
@@ -837,9 +836,8 @@ msgstr ""
 "라도 할당할 수 없습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:352
-#, fuzzy
 msgid ":ref:`bool <class_bool>`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`bool <class_bool>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:354
 msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
@@ -847,9 +845,8 @@ msgstr ""
 "\"불리언(Boolean)\"의 약자로, 오직 ``true`` 또는 ``false``\\ 만 갖습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:357
-#, fuzzy
 msgid ":ref:`int <class_int>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`int <class_int>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:359
 msgid ""
@@ -860,9 +857,8 @@ msgstr ""
 "로 저장하며, 이는 C++에서 \"int64_t\"와 같습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:363
-#, fuzzy
 msgid ":ref:`float <class_float>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`float <class_float>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:365
 msgid ""
@@ -901,7 +897,6 @@ msgid ":ref:`Vector2 <class_Vector2>`"
 msgstr ":ref:`Vector2 <class_Vector2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
-#, fuzzy
 msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
 "array."
@@ -1956,9 +1951,9 @@ msgid ""
 "``return`` the desired value. Below is an example::"
 msgstr ""
 "``변수``\\ 의 값이 (클래스에서 지역 범위의 사용이 아닌) *외부* 소스에 의해 수"
-"정되었다면, (위 예시에서 ``setterfunc``에 해당하는) *Setter* 함수가 호출됩니"
-"다. 호출은 값이 변하기 *전*\\ 에 일어납니다. *Setter*\\ 는 새 값으로 수행할 "
-"작업을 결정해야 합니다. 반대로, ``변수``\\ 에 접근할 때, (위 예시에서 "
+"정되었다면, (위 예시에서 ``setterfunc``\\ 에 해당하는) *Setter* 함수가 호출됩"
+"니다. 호출은 값이 변하기 *전*\\ 에 일어납니다. *Setter*\\ 는 새 값으로 수행"
+"할 작업을 결정해야 합니다. 반대로, ``변수``\\ 에 접근할 때, (위 예시에서 "
 "``getterfunc``\\ 에 해당하는) *Getter* 함수는 반드시 그에 맞는 값을 ``반환``"
 "\\ 합니다. 아래는 예제입니다::"
 
@@ -2003,9 +1998,8 @@ msgstr ""
 "상단에 배치되어야 합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1262
-#, fuzzy
 msgid "See :ref:`doc_running_code_in_the_editor` for more information."
-msgstr ":ref:`doc_running_code_in_the_editor`"
+msgstr "자세한 설명은 :ref:`doc_running_code_in_the_editor`\\ 를 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1264
 msgid ""
@@ -2013,6 +2007,9 @@ msgid ""
 "script (especially the script's owner itself). As tool scripts run their "
 "code in the editor, misusing them may lead to crashing the editor."
 msgstr ""
+"Tool 스크립트에서 ``queue_free()``\\ 나 ``free()``\\ 로 노드를 해제할 때는 조"
+"심하세요 (특히 스크립트의 소유권이 자기 자신일 때). Tool 스크립트는 편집기에"
+"서 코드를 실행하기 때문에, 잘못 해제하면 편집기가 튕길 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1270
 msgid "Memory management"
@@ -2049,13 +2046,13 @@ msgid "Signals"
 msgstr "시그널(Signal)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1289
-#, fuzzy
 msgid ""
 "Signals are a tool to emit messages from an object that other objects can "
 "react to. To create custom signals for a class, use the ``signal`` keyword."
 msgstr ""
-"시그널은 한 객체에서 다른 객체로 들을 수 있는 신호 메시지를 전달하는 일반적"
-"인 방식입니다. ``signal`` 키워드로 클래스를 위한 맞춤 시그널을 만드세요."
+"시그널은 한 객체에서 메시지를 방출해서 메시지를 받을 수 있는 다른 객체가 받"
+"는 도구입니다. 클래스에서 맞춤 시그널을 만들려면, ``signal`` 키워드를 사용하"
+"세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1301
 msgid ""
@@ -2065,15 +2062,18 @@ msgid ""
 "`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ in "
 "the Game Programming Patterns ebook."
 msgstr ""
+"시그널은 `콜백 <https://ko.wikipedia.org/wiki/%EC%BD%9C%EB%B0%B1>`_ 메커니즘"
+"입니다. 그리고 일반적인 프로그래밍 패턴인 옵저버(Observer) 규칙도 있습니다. "
+"자세한 정보는 Game Programming Patterns의 전자책, `Observer tutorial "
+"<https://gameprogrammingpatterns.com/observer.html>`_\\ 을 참고해주세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1308
-#, fuzzy
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
 "signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
 msgstr ""
-"내장된 노드, :ref:`class_Button`\\ 이나 :ref:`class_RigidBody`\\ 의 시그널과 "
-"같은 방식으로 이 시그널도 연결할 수 있습니다."
+"맞춤 시그널도 :ref:`class_Button`\\ 나 :ref:`class_RigidBody`\\ 와 같은 노드"
+"에 내장된 시그널을 연결하는 방법과 같은 방식으로 메서드에 연결할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1311
 msgid ""
@@ -2081,10 +2081,13 @@ msgid ""
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
 "signal, the game node's ``_on_Character_health_depleted`` is called::"
 msgstr ""
+"아래의 예제에서, ``Character`` 노드의 ``health_depleted`` 시그널을 ``Game`` "
+"노드에 연결했습니다. ``Character`` 노드가 시그널을 방출하면, Game 노드의 "
+"``_on_Character_health_depleted``\\ 가 호출됩니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1324
 msgid "You can emit as many arguments as you want along with a signal."
-msgstr ""
+msgstr "하나의 시그널에 원하는 만큼 많은 인수를 함께 방출할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1326
 msgid ""
@@ -2092,6 +2095,9 @@ msgid ""
 "screen to react to health changes with an animation, but we want to keep the "
 "user interface separate from the player in our scene tree."
 msgstr ""
+"어디서 이 점이 유용하게 쓰이는 지 예제와 함께 알아봅시다. 한 번 상상해봅시"
+"다. 체력 막대가 필요합니다. 체력이 변하면 체력 막대도 따라서 변합니다. 하지"
+"만 씬 트리에서 플레이어와 사용자 인터페이스는 분리되어 있어야 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1330
 msgid ""
@@ -2101,12 +2107,19 @@ msgid ""
 "``Lifebar`` using the :ref:`Object.connect() <class_Object_method_connect>` "
 "method::"
 msgstr ""
+"``Character.gd`` 스크립트에서 ``health_changed`` 시그널을 정의했습니다. 그리"
+"고 :ref:`Object.emit_signal() <class_Object_method_emit_signal>`\\ 로 방출합"
+"니다. 그리고 앁 트리에서 가장 높이 있는 ``Game`` 노드에서 :ref:`Object."
+"connect() <class_Object_method_connect>` 메서드를 사용해 시그널을 ``Lifebar``"
+"\\ 에 연결합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1370
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
 msgstr ""
+"시그널을 쓰려면, 클래스가 ``Object`` 클래스나 다른 확장하는 클래스, "
+"``Node``, ``KinematicBody``, ``Control`` 등을 확장(extend)해야 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1373
 msgid ""
@@ -2114,18 +2127,24 @@ msgid ""
 "then connect the character, that emits the signal, to the receiver, the "
 "``Lifebar`` node in this case."
 msgstr ""
+"``Game`` 노드에는 ``Character``\\ 와 ``Lifebar`` 노드 둘 다 갖고 있습니다. "
+"Character를 연결(Connect)하고 시그널을 리시버로 방출합니다. 이 경우는 "
+"``Lifebar``\\ 가 해당하겠죠."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1387
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
 msgstr ""
+"이렇게 하면 ``Lifebar``\\ 는 ``Character`` 노드와 묶지 않고도 체력 변화에 반"
+"응할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1390
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
 msgstr ""
+"시그널을 정의한 후에, 개별적으로 괄호 안에 인수 이름을 적을 수 있습니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1396
 msgid ""
@@ -2134,19 +2153,20 @@ msgid ""
 "of arguments when you emit signals; it's up to you to emit the correct "
 "values."
 msgstr ""
+"인수는 편집기의 노드(Node) 독에 보입니다. 그리고 Godot는 이 인수로 콜백 함수"
+"를 생성할 수 있습니다. 하지만 시그널을 방출할 때 여전히 많은 수의 인수를 방출"
+"할 수 있습니다. 다시 말해 올바른 값을 방출하는 일은 당신에게 달린 것입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1402
-#, fuzzy
 msgid ""
 "GDScript can bind an array of values to connections between a signal and a "
 "method. When the signal is emitted, the callback method receives the bound "
 "values. These bound arguments are unique to each connection, and the values "
 "will stay the same."
 msgstr ""
-"GDScript는 인수를 신호와 메서드 사이의 연결에 바인딩 할 수 있습니다. 시그널"
-"이 보내질 때, 연결된 메소드를 호출하면 바인딩 된 인자가 메소드에 주어집니다. "
-"이러한 바운드 인수는 신호 또는 메서드가 아닌 연결에만 적용되므로 각 연결마다 "
-"고유 한 바인딩이 있음을 의미합니다."
+"GDScript는 시그널과 메서드 간 연결을 위해 배열의 값에 바인딩할 수 있습니다. "
+"시그널을 방출할 때, 콜백 메서드는 바운드 값을 받습니다. 이 바운드 인수는 각 "
+"연결에서 유일하며, 값도 똑같이 유지됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1407
 msgid ""
@@ -2154,6 +2174,8 @@ msgid ""
 "connection if the emitted signal itself doesn't give you access to all the "
 "data that you need."
 msgstr ""
+"이 배열의 값으로 연결에 여분의 상수 정보를 추가할 수 있습니다. 시그널이 방출"
+"됐지만 필요한 데이터로 접근하지 못할 수도 있으니까요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1411
 msgid ""
@@ -2163,19 +2185,23 @@ msgid ""
 "that took damage. So when we connect the signal to the in-game console, we "
 "can add the character's name in the binds array argument::"
 msgstr ""
+"위의 예제를 바탕으로, 화면에서 각 캐릭터가 받은 대미지의 로그를 표시해봅시"
+"다. 예를 들면 ``Player1은 22의 대미지를 받았다.``\\ 같이 말이죠. "
+"``health_changed`` 시그널은 대미지를 받는 Character의 이름을 주고 있지 않습니"
+"다. 따라서 시그널을 게임 내 콘솔에 연결하면, 바인딩 배열 인수에 Character의 "
+"이름을 추가할 수 있습니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1425
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
-msgstr ""
+msgstr "``BattleLog`` 노드는 바인딩 배열의 각 요소를 추가 인수로 받습니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1437
 msgid "Coroutines with yield"
 msgstr "yield를 가진 코루틴(Coroutine)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1439
-#, fuzzy
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the :ref:`yield<class_@GDScript_method_yield>` built-in "
@@ -2185,48 +2211,45 @@ msgid ""
 "and return whatever the function returns. Once resumed, the state object "
 "becomes invalid. Here is an example::"
 msgstr ""
-"GDScript ``yield`` 내장 함수를 통해 `코루틴(coroutines) <https://en."
-"wikipedia.org/wiki/Coroutine>`_\\ 을 지원합니다. ``yield()``\\ 를 호출하면 반"
-"환 값과 같은 함수가 고정 상태가 되면서, 현재 함수에서 즉시 반환됩니다. 이 결"
-"과 ``resume``\\ 을 호출하면 실행이 계속되고 함수가 반환하는 값을 반환합니다. "
-"다시 시작하면 상태 객체는 무효화됩니다. 여기 예제가 있습니다:"
+"GDScript는 :ref:`yield<class_@GDScript_method_yield>` 내장 함수를 통해 `코루"
+"틴(Coroutines) <https://en.wikipedia.org/wiki/Coroutine>`_\\ 을 지원합니다. "
+"``yield()``\\ 를 호출하면 즉시 현재 함수에서 같은 함수의 현재 상태를 반환합니"
+"다. 그리고 ``resume``\\ 을 결과 객체에 호출하면 실행이 계속되고 함수가 반환하"
+"는 값을 반환합니다. 다시 시작하면 상태 객체는 무효화됩니다. 여기 예제가 있습"
+"니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1459
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1479
-#, fuzzy
 msgid "Will print::"
-msgstr "이렇게 프린트 될 것입니다:"
+msgstr "이렇게 프린트됩니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1465
-#, fuzzy
 msgid ""
 "It is also possible to pass values between ``yield()`` and ``resume()``, for "
 "example::"
-msgstr "yield()와 resume() 사이에 값을 보내는 것도 가능합니다, 예를 들어:"
+msgstr ""
+"``yield()``\\ 와 ``resume()`` 사이에 값을 전달할 수도 있습니다. 예를 들면::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1486
 msgid "Coroutines & signals"
 msgstr "코루틴 & 시그널"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1488
-#, fuzzy
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples::"
 msgstr ""
-"``yield``\\ 를 사용하는 진정한 힘은 시그널과 결합될 때 나타납니다. ``yield``"
-"\\ 는 두 개의 매개 변수를 받아 들일 수 있는데, 객체와 시그널 입니다. 시그널"
-"을 받게되면, 실행이 다시 시작됩니다. 여기 몇 가지 예제가 있습니다:"
+"``yield``\\ 의 진정한 힘은 시그널과 결합할 때 나타납니다. ``yield``\\ 는 두 "
+"개의 인수를 받을 수 있습니다.하나는 객체, 다른 하나는 시그널이죠. 시그널을 받"
+"으면 실행이 다시 시작됩니다. 여기 몇 가지 예제가 있습니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1501
-#, fuzzy
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example::"
 msgstr ""
-"코루틴은 무효 상태로 전환 될 때, ``completed`` 시그널을 사용합니다, 예를 들"
-"어:"
+"코루틴은 무효 상태로 전환할 때 ``complated`` 시그널을 사용합니다. 예를 들어::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1512
 msgid ""
@@ -2238,28 +2261,27 @@ msgid "Onready keyword"
 msgstr "Onready 키워드"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1517
-#, fuzzy
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
 "entering the active scene tree, the sub-nodes can only be obtained when a "
 "call to ``Node._ready()`` is made."
 msgstr ""
-"노드를 사용할 때, 변수에서 씬의 일부에 대한 참조를 유지하려는 것이 일반적입니"
-"다. 활성 씬 트리에 들어갈 때 씬만 구성되므로, 하위 노드는 오직 Node._ready()"
-"에 대한 호출이 있을 때만 얻을 수 있습니다."
+"노드를 쓸 때, 씬의 일부를 변수로 참조하는 것이 일반적입니다. 씬은 활성 씬 트"
+"리에 들어갈 때만 구성하기 때문에, 하위 노드는 ``Node._ready()``\\ 로의 호출"
+"이 있을 때만 가져올 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1529
-#, fuzzy
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
 "defers initialization of a member variable until ``_ready()`` is called. It "
 "can replace the above code with a single line::"
 msgstr ""
-"특히 노드와 외부 참조가 쌓이면서 성가시게 됩니다. 이를 위해, GDScript는 "
-"``onready`` 라는, _ready가 호출될 때까지 멤버 변수의 초기화를 지연하는 키워드"
-"를 갖고 있습니다. 이걸로 위의 코드를 한 줄로 바꿀 수 있습니다:"
+"이 작업은 특히, 노드와 외부 참조가 쌓이다 보면 번거로울 수 있습니다. 이를 위"
+"해 GDScript는 ``onready`` 키워드를 갖고 있습니다. 이 키워드로 멤버 변수의 초"
+"기화는 ``_ready()``\\ 를 호출할 때까지 지연합니다. 위의 코드를 한 줄로 대체"
+"가 가능합니다::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1537
 msgid "Assert keyword"
@@ -2274,9 +2296,16 @@ msgid ""
 "have side effects. Otherwise, the behavior of the script would vary "
 "depending on whether the project is run in a debug build."
 msgstr ""
+"``assert`` 키워드는 디버그 빌드에서 상태를 확인할 때 사용할 수 있습니다. 디버"
+"그 빌드가 아니면 assert 키워드는 무시됩니다. 즉, 인수로 보낸 명령문은 출시 모"
+"드로 내보낸 프로젝트에서 평가하지 않습니다. 이 때문에, assert는 반드시 역효과"
+"를 일으킬 소지가 있는 표현식을 가질 수 **없습니다**. 그렇지 않으면, 스크립트"
+"는 프로젝트가 디버그 빌드인지 여부에 따라 매우 다르게 동작할 것입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1551
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."
 msgstr ""
+"편집기에서 프로젝트를 실행할 때, assert 오류가 발생하면 프로젝트는 일시정지합"
+"니다."
