@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,9 @@ msgid ""
 "GDScript offers a feature called *format strings*, which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
-"GDScriptは*フォーマット文字列*と呼ばれる機能を提供します。これはテキストテン"
-"プレートを再利用して、異なるが似ている文字列を簡潔に作成することを可能にしま"
-"す。"
+"GDScriptは\\ *フォーマット文字列*\\ と呼ばれる機能を提供します。これはテキス"
+"トテンプレートを再利用して、異なるが似ている文字列を簡潔に作成することを可能"
+"にします。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -175,7 +175,7 @@ msgstr "``s``"
 msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
-msgstr "暗黙的な文字列変換と同じメソッドによる文字列への**単純な**変換。"
+msgstr "暗黙的な文字列変換と同じメソッドによる文字列への\\ **単純な**\\ 変換。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
@@ -186,8 +186,8 @@ msgid ""
 "A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
 "for a code point or a single-character string."
 msgstr ""
-"単一の**Unicode文字**。 コードポイントまたは1文字の文字列には、符号なし8ビッ"
-"ト整数(0〜255)が必要です。"
+"単一の\\ **Unicode文字**\\ 。 コードポイントまたは1文字の文字列には、符号なし"
+"8ビット整数(0〜255)が必要です。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``d``"
@@ -198,8 +198,8 @@ msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
-"単一の**10進整数**。整数または実数(floorで切り捨てられます)を指定してくださ"
-"い。"
+"単一の\\ **10進整数**\\ 。整数または実数(floorで切り捨てられます)を指定してく"
+"ださい。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
@@ -210,8 +210,8 @@ msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
-"単一の**8進整数**。整数または実数(floorで切り捨てられます)を指定してくださ"
-"い。"
+"単一の\\ **8進整数**\\ 。整数または実数(floorで切り捨てられます)を指定してく"
+"ださい。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
@@ -222,8 +222,8 @@ msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
-"単一の**小文字の16進整数**。整数または実数(floorで切り捨てられます)を指定して"
-"ください。"
+"単一の\\ **小文字の16進整数**\\ 。整数または実数(floorで切り捨てられます)を指"
+"定してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
@@ -234,8 +234,8 @@ msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
-"単一の**大文字の16進整数**。整数または実数(floorで切り捨てられます)を指定して"
-"ください。"
+"単一の\\ **大文字の16進整数**\\ 。整数または実数(floorで切り捨てられます)を指"
+"定してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
@@ -243,7 +243,7 @@ msgstr "``f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
-msgstr "単一の**10進実数**。整数または実数を指定してください。"
+msgstr "単一の\\ **10進実数**\\ 。整数または実数を指定してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "Placeholder modifiers"
@@ -263,7 +263,7 @@ msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "In number specifiers, **show + sign** if positive."
-msgstr "数値指定子で、正の場合は**+記号を表示**します。"
+msgstr "数値指定子で、正の場合は\\ **+記号を表示**\\ します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid "Integer"
@@ -274,9 +274,9 @@ msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer placeholder. When used after ``.``, see ``.``."
 msgstr ""
-"**パディング**を設定します。 整数プレースホルダ内で整数が ``0`` で始まる場合"
-"は、スペースまたはゼロでパディングされます。後に ``.``を使用する場合は、 ``."
-"`` を参照してください。"
+"**パディング**\\ を設定します。 整数プレースホルダ内で整数が ``0`` で始まる場"
+"合は、スペースまたはゼロでパディングされます。後に ``.`` を使用する場合"
+"は、\\ ``.`` を参照してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid "``.``"
@@ -287,8 +287,8 @@ msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
 msgstr ""
-"``f`` の**前に**、精度を小数点以下0桁に設定します。 変更する数字でフォロー"
-"アップすることができます。 ゼロでパディングされます。"
+"``f`` の\\ **前に**\\ 、精度を小数点以下0桁に設定します。 変更する数字でフォ"
+"ローアップすることができます。 ゼロでパディングされます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "``-``"
@@ -307,8 +307,8 @@ msgid ""
 "**Dynamic padding**, expect additional integral parameter to set padding or "
 "precision after ``.``, see `dynamic padding`_."
 msgstr ""
-"**動的パディング**。 ``.`` の後にパディングまたは精度を設定するために追加の整"
-"数パラメータが必要です。`動的パディング` を参照してください。"
+"**動的パディング**\\ 。 ``.`` の後にパディングまたは精度を設定するために追加"
+"の整数パラメータが必要です。`動的パディング` を参照してください。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,9 +140,9 @@ msgid ""
 "+, or C# but never used a dynamically typed one before, it is advised you "
 "read this tutorial: :ref:`doc_gdscript_more_efficiently`."
 msgstr ""
-"C、C ++、C＃などの静的型付き言語の経験があるが、これまでに動的型付き言語を使"
-"用したことがない場合は、以下のチュートリアルを読むことをお勧めします。\\ :"
-"ref:`doc_gdscript_more_efficiently`。"
+"C、C++、C#などの静的型付き言語の経験があるが、これまでに動的型付き言語を使用"
+"したことがない場合は、以下のチュートリアルを読むことをお勧めします。\\ :ref:"
+"`doc_gdscript_more_efficiently`。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:134
 msgid "Language"
@@ -195,7 +195,7 @@ msgid ""
 "godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
 "case you want to take a look under the hood."
 msgstr ""
-"キーワードは `GDScriptのトークナイザー<https://github.com/godotengine/godot/"
+"キーワードは `GDScriptのトークナイザー <https://github.com/godotengine/godot/"
 "blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_\\ で定義されているの"
 "で、内部を調べたい場合に便利です。"
 
@@ -209,7 +209,7 @@ msgstr "説明"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:162
 msgid "if"
-msgstr "if"
+msgstr "\\ if"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:162
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:164
@@ -219,16 +219,16 @@ msgstr "`if/else/elif`_ を参照して下さい。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:164
 msgid "elif"
-msgstr "elif"
+msgstr "\\ elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:166
 msgid "else"
-msgstr "else"
+msgstr "\\ else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:804
 msgid "for"
-msgstr "for"
+msgstr "\\ for"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 msgid "See for_."
@@ -237,7 +237,7 @@ msgstr "for_\\ を参照して下さい。"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:793
 msgid "while"
-msgstr "while"
+msgstr "\\ while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
 msgid "See while_."
@@ -246,7 +246,7 @@ msgstr "while_\\ を参照して下さい。"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:839
 msgid "match"
-msgstr "match"
+msgstr "\\ match"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 msgid "See match_."
@@ -254,7 +254,7 @@ msgstr "match_\\ を参照して下さい。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "break"
-msgstr "break"
+msgstr "\\ break"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "Exits the execution of the current ``for`` or ``while`` loop."
@@ -262,7 +262,7 @@ msgstr "現在の\\ ``for``\\ または\\ ``while``\\ ループの実行を終�
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 msgid "continue"
-msgstr "continue"
+msgstr "\\ continue"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 msgid ""
@@ -271,7 +271,7 @@ msgstr "``for`` または ``while`` ループの次の反復に直ちにスキ�
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid "pass"
-msgstr "pass"
+msgstr "\\ pass"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid ""
@@ -283,7 +283,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:180
 msgid "return"
-msgstr "return"
+msgstr "\\ return"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:180
 msgid "Returns a value from a function."
@@ -291,7 +291,7 @@ msgstr "関数から値を返します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid "class"
-msgstr "class"
+msgstr "\\ class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid "Defines a class."
@@ -299,7 +299,7 @@ msgstr "クラスを定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:184
 msgid "extends"
-msgstr "extends"
+msgstr "\\ extends"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:184
 msgid "Defines what class to extend with the current class."
@@ -307,7 +307,7 @@ msgstr "現在のクラスで拡張するクラスを定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:186
 msgid "is"
-msgstr "is"
+msgstr "\\ is"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:186
 msgid ""
@@ -319,7 +319,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "as"
-msgstr "as"
+msgstr "\\ as"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "Cast the value to a given type if possible."
@@ -327,7 +327,7 @@ msgstr "可能であれば、指定した型に値をキャストします。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "self"
-msgstr "self"
+msgstr "\\ self"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "Refers to current class instance."
@@ -335,7 +335,7 @@ msgstr "現在のクラスインスタンスを参照します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "tool"
-msgstr "tool"
+msgstr "\\ tool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "Executes the script in the editor."
@@ -343,7 +343,7 @@ msgstr "エディタでスクリプトを実行します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "signal"
-msgstr "signal"
+msgstr "\\ signal"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "Defines a signal."
@@ -351,7 +351,7 @@ msgstr "シグナルを定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "func"
-msgstr "func"
+msgstr "\\ func"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "Defines a function."
@@ -359,7 +359,7 @@ msgstr "関数を定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "static"
-msgstr "static"
+msgstr "\\ static"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "Defines a static function. Static member variables are not allowed."
@@ -367,7 +367,7 @@ msgstr "静的関数を定義します。静的メンバー変数は使用でき
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:200
 msgid "const"
-msgstr "const"
+msgstr "\\ const"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:200
 msgid "Defines a constant."
@@ -375,7 +375,7 @@ msgstr "定数を定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:202
 msgid "enum"
-msgstr "enum"
+msgstr "\\ enum"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:202
 msgid "Defines an enum."
@@ -383,7 +383,7 @@ msgstr "列挙型を定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:204
 msgid "var"
-msgstr "var"
+msgstr "\\ var"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:204
 msgid "Defines a variable."
@@ -391,7 +391,7 @@ msgstr "変数を定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:206
 msgid "onready"
-msgstr "onready"
+msgstr "\\ onready"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:206
 msgid ""
@@ -403,7 +403,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:208
 msgid "export"
-msgstr "export"
+msgstr "\\ export"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:208
 msgid ""
@@ -415,7 +415,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
 msgid "setget"
-msgstr "setget"
+msgstr "\\ setget"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
 msgid "Defines setter and getter functions for a variable."
@@ -423,7 +423,7 @@ msgstr "変数の設定および取得関数を定義します。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "breakpoint"
-msgstr "breakpoint"
+msgstr "\\ breakpoint"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "Editor helper for debugger breakpoints."
@@ -431,7 +431,7 @@ msgstr "デバッガブレークポイント用のエディタヘルパー。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "preload"
-msgstr "preload"
+msgstr "\\ preload"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "Preloads a class or variable. See `Classes as resources`_."
@@ -441,7 +441,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid "yield"
-msgstr "yield"
+msgstr "\\ yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid "Coroutine support. See `Coroutines with yield`_."
@@ -449,7 +449,7 @@ msgstr "コルーチンサポート 。`Coroutines with yield`_ を参照して�
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid "assert"
-msgstr "assert"
+msgstr "\\ assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid ""
@@ -461,7 +461,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 msgid "remote"
-msgstr "remote"
+msgstr "\\ remote"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
@@ -478,27 +478,27 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
 msgid "master"
-msgstr "master"
+msgstr "\\ master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:224
 msgid "puppet"
-msgstr "puppet"
+msgstr "\\ puppet"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
 msgid "remotesync"
-msgstr "remotesync"
+msgstr "\\ remotesync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
 msgid "mastersync"
-msgstr "mastersync"
+msgstr "\\ mastersync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "puppetsync"
-msgstr "puppetsync"
+msgstr "\\ puppetsync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "PI"
-msgstr "PI"
+msgstr "\\ PI"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "PI constant."
@@ -506,7 +506,7 @@ msgstr "PI定数。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "TAU"
-msgstr "TAU"
+msgstr "\\ TAU"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "TAU constant."
@@ -514,7 +514,7 @@ msgstr "TAU定数。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "INF"
-msgstr "INF"
+msgstr "\\ INF"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "Infinity constant. Used for comparisons."
@@ -522,7 +522,7 @@ msgstr "Infinity定数。比較に使用されます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "NAN"
-msgstr "NAN"
+msgstr "\\ NAN"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "NAN (not a number) constant. Used for comparisons."
@@ -869,11 +869,9 @@ msgid ""
 "data structures such as Vector2, Vector3, and PoolRealArray store 32-bit "
 "single-precision \"float\" values."
 msgstr ""
-"小数を含んだ実数を格納し、浮動小数点の値を使います。それは64-bitの値で格納"
-"し、\n"
-" C++の\"double\"と同等です。ノート：現在、Vector2と\\Vector3とPoolRealArray "
-"のようなデータ構造\n"
-"は32-bit単精度\"浮動\"の値です。"
+"浮動小数点値を使用して、小数を含む実数を格納します。 C ++の \"double\" に相当"
+"する64ビット値として保存されます。注: 現在、Vector2、Vector3、PoolRealArrayな"
+"どのデータ構造には、32ビット単精度の\"float\"値が格納されています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:371
 msgid ":ref:`String <class_String>`"
@@ -985,9 +983,9 @@ msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
 msgstr ""
-"3Dの回転と拡大縮小に使用される3x3のマトリックス。これには3つのベクトルフィー"
-"ルド( ``x`` 、 ``y`` 、 ``z`` )が含まれ、3Dベクトルの配列としてアクセスするこ"
-"ともできます。"
+"3Dの回転と拡大縮小に使用される3x3の行列。これには3つのベクトルフィールド"
+"(``x``\\ 、\\ ``y``\\ 、\\ ``z``)が含まれ、3Dベクトルの配列としてアクセスする"
+"こともできます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:431
 msgid ":ref:`Transform <class_Transform>`"
@@ -997,8 +995,8 @@ msgstr "\\ :ref:`Transform <class_Transform>`"
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
-"3DTransformには、基底フィールド ``basis`` とVector3フィールド ``origin`` が含"
-"まれています。"
+"3DTransformには、基底(基準軸)フィールド ``basis`` とVector3フィールド "
+"``origin`` が含まれています。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:437
 msgid "Engine built-in types"
@@ -2221,13 +2219,12 @@ msgid ""
 "and return whatever the function returns. Once resumed, the state object "
 "becomes invalid. Here is an example::"
 msgstr ""
-"GDScriptは、 :ref:`yield<class_@GDScript_method_yield>` \\  組み込み関数に"
-"よって`コルーチン<https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%AB%E3%83%BC"
-"%E3%83%81%E3%83%B3>`_\\ をサポートしています。 ``yield()`` をコールすると、同"
-"じ関数の現在のfrozen状態を戻り値として、すぐに現在の関数から戻ります。結果と"
-"して得られたオブジェクトに対して ``resume()`` を呼び出すと、実行が継続され、"
-"関数が返す内容が戻されます。１回resumeすると、状態オブジェクトは無効になりま"
-"す。次に例を示します::"
+"GDScriptは、組み込み関数 :ref:`yield<class_@GDScript_method_yield>` を介して "
+"`coroutines <https://en.wikipedia.org/wiki/Coroutine>`_ をサポートしていま"
+"す。 ``yield()`` を呼び出すと、現在の関数から即座に戻り、戻り値と同じ関数の現"
+"在の凍結状態が返されます。この結果のオブジェクトで ``resume()`` を呼び出す"
+"と、実行を継続し、関数が返すものを返します。再開すると、状態オブジェクトは無"
+"効になります。次に例を示します:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1459
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1479

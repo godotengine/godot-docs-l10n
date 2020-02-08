@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,17 +93,18 @@ msgid ""
 "CollisionShape2D. See :ref:`Physics Introduction <doc_physics_introduction>` "
 "for more information."
 msgstr ""
-"ルートノードは、Area2DまたはRigidBody2Dにすることもできます。アニメーションは"
-"引き続き同じ方法で作成されます。アニメーションが完成したら、CollisionShape2D"
-"にシェイプを割り当てることができます。詳細については、物理の概要を参照してく"
-"ださい。"
+"ルートノードは、\\ :ref:`Area2D <class_Area2D>` または :ref:`RigidBody2D "
+"<class_RigidBody2D>` にすることもできます。アニメーションは引き続き同じ方法で"
+"作成されます。アニメーションが完成したら、CollisionShape2Dにシェイプを割り当"
+"てることができます。詳細については、\\ :ref:`Physics Introduction "
+"<doc_physics_introduction>` を参照してください。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:46
 msgid ""
 "Now select the ``AnimatedSprite`` and in its *SpriteFrames* property, select "
 "\"New SpriteFrames\"."
 msgstr ""
-"次に、AnimatedSpriteを選択し、そのSpriteFramesプロパティで「New "
+"次に、\\ ``AnimatedSprite`` を選択し、その *SpriteFrames* プロパティで「新規 "
 "SpriteFrames」を選択します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:51
@@ -111,8 +112,8 @@ msgid ""
 "Click on the new SpriteFrames resource and you'll see a new panel appear at "
 "the bottom of the editor window:"
 msgstr ""
-"新しいSpriteFramesリソースをクリックすると、エディターウィンドウの下部に新し"
-"いパネルが表示されます。"
+"新しいSpriteFramesリソースをクリックすると、エディタウィンドウの下部に新しい"
+"パネルが表示されます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:56
 msgid ""

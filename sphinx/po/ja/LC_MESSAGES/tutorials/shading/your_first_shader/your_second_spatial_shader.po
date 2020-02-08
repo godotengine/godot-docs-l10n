@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:4
 msgid "Your first Spatial shader: part 2"
-msgstr ""
+msgstr "最初のSpatial シェーダー: パート2"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:6
 msgid ""
@@ -33,12 +33,23 @@ msgid ""
 "allows you to ignore all these parameters and write a fully customized "
 "shader."
 msgstr ""
+"高いレベルから、Godotが行うことは、オプションで設定できる一連のパラメーターを"
+"ユーザーに提供することです(``AO``\\ 、\\ ``SSS_Strength``\\ 、\\ ``RIM`` な"
+"ど)。これらのパラメーターは、さまざまな複雑な効果(アンビエントオクルージョ"
+"ン、サブサーフェススキャタリング、リムライティングなど)に対応しています。書き"
+"込まれていない場合、コードはコンパイルされる前に破棄されるため、シェーダーは"
+"追加機能のコストを負担しません。これにより、ユーザーは複雑なシェーダーを作成"
+"せずに、複雑なPBR補正シェーディングを簡単に作成できます。もちろん、Godotでは"
+"これらのパラメーターをすべて無視して、完全にカスタマイズされたシェーダーを作"
+"成することもできます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:13
 msgid ""
 "For a full list of these parameters see the :ref:`spatial shader "
 "<doc_spatial_shader>` reference doc."
 msgstr ""
+"これらのパラメーターの完全なリストについては、\\ :ref:`spatial shader "
+"<doc_spatial_shader>` リファレンスドキュメントを参照してください。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:15
 msgid ""
@@ -48,10 +59,14 @@ msgid ""
 "most importantly, sets the ``ALBEDO`` color of the :ref:"
 "`Mesh<class_MeshInstance>`."
 msgstr ""
+"頂点関数とフラグメント関数の違いは、頂点関数は頂点ごとに実行され、\\ "
+"``VERTEX`` (位置)や ``NORMAL`` などのプロパティを設定しますが、フラグメント"
+"シェーダーはピクセルごとに実行され、最も重要なことは、\\ :ref:`Mesh "
+"<class_MeshInstance>` の ``ALBEDO`` 色を設定します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:20
 msgid "Your first spatial fragment function"
-msgstr ""
+msgstr "最初のspatialフラグメント関数"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:22
 msgid ""
@@ -62,12 +77,20 @@ msgid ""
 "the shader, directly below ``shader_type``, and they specify what sort of "
 "functionality you want the built-in aspects of the shader to have."
 msgstr ""
+"このチュートリアルの前の部分で述べたように。 Godotのフラグメント関数の標準的"
+"な使用法は、さまざまなマテリアルプロパティを設定し、Godotに残りを処理させるこ"
+"とです。さらに柔軟性を提供するために、Godotはレンダリングモードと呼ばれるもの"
+"も提供します。レンダリングモードは、シェーダーの上部、\\ ``shader_type`` のす"
+"ぐ下に設定され、シェーダーのビルトイン要素にどのような機能を持たせるかを指定"
+"します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:28
 msgid ""
 "For example, if you do not want to have lights affect an object, set the "
 "render mode to ``unshaded``:"
 msgstr ""
+"たとえば、ライトをオブジェクトに影響させたくない場合は、レンダリングモードを "
+"``unshaded`` に設定します:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:35
 msgid ""
@@ -75,49 +98,62 @@ msgid ""
 "to use toon shading instead of more-realistic PBR shading, set the diffuse "
 "mode and specular mode to toon:"
 msgstr ""
+"複数のレンダリングモードをスタックすることもできます。たとえば、よりリアルな"
+"PBRシェーディングの代わりにトゥーンシェーディングを使用する場合は、拡散モード"
+"と鏡面反射モードをトゥーンに設定します:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:42
 msgid ""
 "This model of built-in functionality allows you to write complex custom "
 "shaders by changing only a few parameters."
 msgstr ""
+"ビルトイン機能のこのモデルを使用すると、いくつかのパラメーターを変更するだけ"
+"で複雑なカスタムシェーダーを作成できます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:45
 msgid ""
 "For a full list of render modes see the :ref:`Spatial shader reference "
 "<doc_spatial_shader>`."
 msgstr ""
+"レンダリングモードの完全なリストについては、\\ :ref:`Spatialシェーダーリファ"
+"レンス <doc_spatial_shader>` を参照してください。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:47
 msgid ""
 "In this part of the tutorial, we will walk through how to take the bumpy "
 "terrain from the previous part and turn it into an ocean."
 msgstr ""
+"チュートリアルのこの部分では、前の部分からでこぼこの地形を取り、海に変える方"
+"法を説明します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:50
 msgid ""
 "First let's set the color of the water. We do that by setting ``ALBEDO``."
 msgstr ""
+"まず、水の色を設定しましょう。これを行うには、\\ ``ALBEDO``を設定します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:52
 msgid "``ALBEDO`` is a ``vec3`` that contains the color of the object."
-msgstr ""
+msgstr "``ALBEDO`` はオブジェクトの色を含む ``vec3`` です。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:54
 msgid "Let's set it to a nice shade of blue."
-msgstr ""
+msgstr "青の素敵な色合いに設定してみましょう。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:64
 msgid ""
 "We set it to a very dark shade of blue because most of the blueness of the "
 "water will come from reflections from the sky."
 msgstr ""
+"水の青さのほとんどは空からの反射から来るため、非常に暗い青に設定しました。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:67
 msgid ""
 "The PBR model that Godot uses relies on two main parameters: ``METALLIC`` "
 "and ``ROUGHNESS``."
 msgstr ""
+"Godotが使用するPBRモデルは、\\``METALLIC`` と ``ROUGHNESS`` の2つの主要なパラ"
+"メーターに依存しています。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:69
 msgid ""
@@ -125,6 +161,9 @@ msgid ""
 "``ROUGHNESS`` will make a material appear like a shiny plastic, while a high "
 "roughness makes the material appear more solid in color."
 msgstr ""
+"``ROUGHNESS``は、材料の表面の滑らかさ/粗さを指定します。\\ ``ROUGHNESS`` が低"
+"いと、素材は光沢のあるプラスチックのように見えますが、粗さが大きいと、素材の"
+"色はより均一になります。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:73
 msgid ""
@@ -135,18 +174,28 @@ msgid ""
 "low ``METALLIC`` has a more equal representation of sky color and ``ALBEDO`` "
 "color."
 msgstr ""
+"``METALLIC`` は、オブジェクトが金属にどれだけ似ているかを指定します。\\ "
+"``0`` または ``1`` の近くに設定することをお勧めします。\\ ``METALLIC`` は、反"
+"射と ``ALBEDO`` カラーのバランスを変えるものと考えてください。高い "
+"``METALLIC`` は ``ALBEDO`` をほとんど無視し、空を映す鏡のように見えます。低"
+"い ``METALLIC`` では、空の色と `` ALBEDO`` の色がより均等に表現されます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:78
 msgid ""
 "``ROUGHNESS`` increases from ``0`` to ``1`` from left to right while "
 "``METALLIC`` increase from ``0`` to ``1`` from top to bottom."
 msgstr ""
+"``ROUGHNESS`` は左から右に ``0`` から ``1`` に増加し、\\ ``METALLIC`` は上か"
+"ら下に ``0`` から ``1`` に増加します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:83
 msgid ""
 "``METALLIC`` should be close to ``0`` or ``1`` for proper PBR shading. Only "
 "set it between them for blending between materials."
 msgstr ""
+"適切なPBRシェーディングを行うには、\\``METALLIC`` を ``0`` または ``1`` に近"
+"づける必要があります。それらの間でのみ設定して、マテリアル間でブレンドしま"
+"す。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:86
 msgid ""
@@ -154,6 +203,8 @@ msgid ""
 "Water is also highly reflective, so we will set its ``ROUGHNESS`` property "
 "to be quite low as well."
 msgstr ""
+"水は金属ではないため、\\``METALLIC``プロパティを ``0.0`` に設定します。また、"
+"水は反射率が高いため、\\ ``ROUGHNESS`` プロパティも非常に低く設定します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:99
 msgid ""
@@ -166,6 +217,13 @@ msgid ""
 "objects to become more reflective at shallow angles. It is the reason why "
 "you can see into water below you, but farther away it reflects the sky."
 msgstr ""
+"表面が滑らかなプラスチックになりました。エミュレートしたい水の特定の特性につ"
+"いて考える時が来ました。これを奇妙なプラスチックの表面から素敵な定型化された"
+"水に変える主なものが2つあります。 1つは鏡面反射です。鏡面反射とは、太陽が目に"
+"直接反射する場所から見える明るいスポットです。 2つ目はフレネル反射です。フレ"
+"ネル反射率は、オブジェクトが浅い角度でより反射する特性です。それはあなたがあ"
+"なたの真下の水を見ることができる理由ですが、それより遠くは空を反映していま"
+"す。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:106
 msgid ""
@@ -173,6 +231,9 @@ msgid ""
 "we will change the render mode for specular to toon because the toon render "
 "mode has larger specular highlights."
 msgstr ""
+"鏡面反射を増やすために、2つのことを行います。最初に、トゥーンレンダリングモー"
+"ドの方が鏡面反射ハイライトが大きくなるため、スペキュラーのレンダリングモード"
+"をトゥーンに変更します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:115
 msgid ""
@@ -181,6 +242,9 @@ msgid ""
 "through fabric on the edges of an object, but we will use it here to help "
 "achieve a nice watery effect."
 msgstr ""
+"次に、リム照明を追加します。リム照明は、かすかな角度で光の効果を高めます。通"
+"常、オブジェクトの端にある布地を光が通過する方法をエミュレートするために使用"
+"されますが、ここでは素敵な水のような効果を達成するために使用します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:131
 msgid ""
@@ -192,6 +256,12 @@ msgid ""
 "surface. The dot product between them is a handy way to tell when you are "
 "looking at the surface head-on your at a glancing angle."
 msgstr ""
+"フレネル反射率を追加するために、フラグメントシェーダーでフレネル項を計算しま"
+"す。実際のフレネル項を使用するつもりはありませんが、代わりに ``NORMAL`` と "
+"``VIEW`` ベクトルのドット積を使用して近似します。\\ ``NORMAL`` ベクトルはサー"
+"フェスから離れて行く方向を指し、\\ ``VIEW`` ベクトルは視点とサーフェス上のそ"
+"の点の間の方向です。それらの間のドット積は、サーフェスを正面から見ているとき"
+"に、傾きの角度を見分けるのに便利な方法です。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:142
 msgid ""
@@ -200,6 +270,10 @@ msgid ""
 "these properties with a texture, or to a flat number. But with shaders we "
 "can set them based on any mathematical function that we can dream up."
 msgstr ""
+"そしてそれを ``ROUGHNESS`` と ``ALBEDO`` の両方に混ぜます。これは、"
+"SpatialMaterialよりもShaderMaterialの利点です。 SpatialMaterialを使用すると、"
+"これらのプロパティをテクスチャまたはフラットな数値に設定できます。しかし、"
+"シェーダーを使用すれば、思いつく任意の数学関数に基づいて設定できます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:159
 msgid ""
@@ -208,22 +282,29 @@ msgid ""
 "This is done easily by decreasing the values of the ``vec3`` we pass into "
 "``ALBEDO``. Let's set them to ``vec3(0.01, 0.03, 0.05)``."
 msgstr ""
+"そして今、わずか5行のコードで、複雑な外観の水を使用できます。照明ができたの"
+"で、この水は明るすぎます。暗くしましょう。これは、\\ ``ALBEDO`` に渡す "
+"``vec3`` の値を減らすことで簡単に行えます。それらを ``vec3(0.01, 0.03, "
+"0.05)``に設定しましょう。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:167
 msgid "Animating with ``TIME``"
-msgstr ""
+msgstr "``TIME`` でアニメートする"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:169
 msgid ""
 "Going back to the vertex function, we can animated the waves using the built-"
 "in variable ``TIME``."
 msgstr ""
+"頂点関数に戻ると、組み込み変数 ``TIME`` を使用して波をアニメーション化できま"
+"す。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:171
 msgid ""
 "``TIME`` is a built-in variable that is accessible from the vertex and "
 "fragment functions."
 msgstr ""
+"``TIME`` は、頂点関数とフラグメント関数からアクセス可能なビルトイン変数です。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:174
 msgid ""
@@ -231,15 +312,19 @@ msgid ""
 "this tutorial, we will do the same. Put the heightmap code in a function "
 "called ``height()``."
 msgstr ""
+"最後のチュートリアルでは、高さマップから読み取ることで高さを計算しました。こ"
+"のチュートリアルでは、同じことを行います。ハイトマップコードを ``height()`` "
+"という関数に入れます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:183
 msgid ""
 "In order to use ``TIME`` in the ``height()`` function we need to pass it in."
 msgstr ""
+"``height()`` 関数で ``TIME`` を使用するには、それを渡す必要があります。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:190
 msgid "And make sure to correctly pass it in inside the vertex function."
-msgstr ""
+msgstr "そして、頂点関数内でそれを正しく渡すようにしてください。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:200
 msgid ""
@@ -247,18 +332,24 @@ msgid ""
 "them manually in the ``vertex()`` function. To do so use the following line "
 "of code."
 msgstr ""
+"法線を計算するために法線マップを使用する代わりに。 ``vertex()`` 関数でそれら"
+"を手動で計算します。そのためには、次のコード行を使用します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:207
 msgid ""
 "We need to compute ``NORMAL`` manually because in the next section we will "
 "be using math to create complex-looking waves."
 msgstr ""
+"次のセクションでは数学を使用して複雑に見える波を作成するため、手動で "
+"``NORMAL`` を計算する必要があります。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:210
 msgid ""
 "Now, we are going to make the ``height()`` function a little more "
 "complicated by offsetting ``position`` by the cosine of ``TIME``."
 msgstr ""
+"ここで、 ``TIME`` のコサインで ``position`` をオフセットすることにより、\\ "
+"``height()`` 関数をもう少し複雑にします。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:220
 msgid ""
@@ -267,10 +358,13 @@ msgid ""
 "effects, in this case realistic waves, by adding a few more mathematical "
 "functions."
 msgstr ""
+"これにより、波はゆっくりと移動しますが、自然な方法ではありません。次のセク"
+"ションでは、さらにいくつかの数学関数を追加して、シェーダーを使用してより複雑"
+"な効果(この場合は現実的な波)を作成する方法について詳しく説明します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:225
 msgid "Advanced effects: waves"
-msgstr ""
+msgstr "高度な効果: 波"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:227
 msgid ""
@@ -279,28 +373,37 @@ msgid ""
 "level by modifying the ``height()`` function and by introducing a new "
 "function called ``wave()``."
 msgstr ""
+"シェーダーが非常に強力なのは、数学を使用して複雑な効果を実現できることです。"
+"これを説明するために、 ``height()`` 関数を修正し、\\ ``wave()`` と呼ばれる新"
+"しい関数を導入することで、波を次のレベルに引き上げます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:231
 msgid ""
 "``wave()`` has one parameter, ``position``, which is the same as it is in "
 "``height()``."
 msgstr ""
+"``wave()`` にはパラメーター ``position`` があり、これは ``height()`` と同じで"
+"す。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:233
 msgid ""
 "We are going to call ``wave()`` multiple times in ``height()`` in order to "
 "fake the way waves look."
 msgstr ""
+"波の見かけを模倣するために、\\ ``height()`` で ``wave()`` を複数回呼び出しま"
+"す。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:243
 msgid "At first this looks complicated. So let's go through it line-by-line."
-msgstr ""
+msgstr "最初はこれは複雑に見えます。それでは、行ごとに見ていきましょう。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:249
 msgid ""
 "Offset the position by the ``noise`` texture. This will make the waves curve "
 "so they are not straight lines completely aligned with the grid."
 msgstr ""
+"``ノイズ`` テクスチャによって位置をオフセットします。これにより、波は曲線にな"
+"り、グリッドと完全に整列した直線ではなくなります。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:256
 msgid ""
@@ -309,6 +412,10 @@ msgid ""
 "sharp ridge and constrain them to the 0-1 range. And then we subtract it "
 "from ``1.0`` to put the peak on top."
 msgstr ""
+"``sin()`` と ``position`` を使用して波のような関数を定義します。通常、\\ "
+"``sin()`` 波は非常に丸いです。絶対値にするために ``abs()`` を使用して、鋭い隆"
+"起を与え、0-1の範囲に制限します。そして、\\ ``1.0`` からそれを差し引いて、"
+"ピークを一番上に置きます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:264
 msgid ""
@@ -316,25 +423,30 @@ msgid ""
 "power to sharpen the peaks. Then subtract that from ``1.0`` so that the "
 "ridges become peaks and raise that to a power to sharpen the ridges."
 msgstr ""
+"x方向の波にy方向の波を掛け、それを累乗してピークをシャープにします。次に、\\ "
+"``1.0`` からそれを差し引くと、尾根がピークになり、それを累乗して尾根をシャー"
+"プにします。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:268
 msgid ""
 "We can now replace the contents of our ``height()`` function with ``wave()``."
-msgstr ""
+msgstr "``height()`` 関数の内容を ``wave()`` に置き換えることができます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:276
 msgid "Using this you get:"
-msgstr ""
+msgstr "これを使用すると以下が得られます:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:280
 msgid ""
 "The shape of the sin wave is too obvious. So let's spread the waves out a "
 "bit. We do this by scaling ``position``."
 msgstr ""
+"正弦波の形状があまりにも明白です。それでは、波を少し広げてみましょう。これを"
+"行うには、\\ ``position`` をスケーリングします。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:288
 msgid "Now it looks much better."
-msgstr ""
+msgstr "今ではずっと良く見えます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:292
 msgid ""
@@ -344,12 +456,16 @@ msgid ""
 "And we are going to multiply the output of the wave to make them shorter or "
 "taller (amplitude)."
 msgstr ""
+"さまざまな周波数と振幅で複数の波を重ねると、さらに改善できます。これが意味す"
+"ることは、それぞれの位置をスケーリングして、波を細くしたり広くしたりすること"
+"です(周波数)。そして、波の出力を乗算して、それらをより短くまたはより高く(振"
+"幅)します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:297
 msgid ""
 "Here is an example for how you could layer the four waves to achieve nicer "
 "looking waves."
-msgstr ""
+msgstr "見栄えの良い波を実現するために4つの波を重ねる方法の例を次に示します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:309
 msgid ""
@@ -358,12 +474,18 @@ msgid ""
 "that the amplitudes (the number the result is multiplied by) all add up to "
 "``1.0``. This keeps the wave in the 0-1 range."
 msgstr ""
+"2に時間を追加し、他の2つからそれを減算することに注意してください。これによ"
+"り、波がさまざまな方向に移動し、複雑な効果が生まれます。また、振幅(結果に乗算"
+"される数)がすべて ``1.0`` になることにも注意してください。これにより、波は0〜"
+"1の範囲に維持されます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:313
 msgid ""
 "With this code you should end up with more complex looking waves and all you "
 "had to do was add a little bit of math!"
 msgstr ""
+"このコードを使用すると、より複雑な外観の波になります。必要なのは、少しの数学"
+"を追加することだけです！"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:318
 msgid ""
@@ -373,3 +495,8 @@ msgid ""
 "`Shading section <toc-learn-features-shading>` and the :ref:`3D <toc-learn-"
 "features-3d>` sections."
 msgstr ""
+"Spatialシェーダーの詳細については、\\ :ref:`Shading Language "
+"<doc_shading_language>` のドキュメントと :ref:`Spatial Shaders "
+"<doc_spatial_shader>` のドキュメントを参照してください。\\ :ref:`Shading "
+"section <toc-learn-features-shading>` および :ref:`3D <toc-learn-"
+"features-3d>` セクションのより高度なチュートリアルも参照してください。"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,19 +98,18 @@ msgstr ""
 "local, ou digite o caminho da pasta no campo Caminho do Projeto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
-#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"Quando vir uma marca verde à direita, significa que o motor detectou uma "
-"pasta vazia, e você pode clicar em ``Criar``. O Godot vai criar o projeto "
-"para você e abri-lo no editor."
+"Quando você ver uma marca verde na direita, significa que o motor detectou "
+"uma pasta vazia. Você também pode clicar no botão ``Criar Pasta`` perto do "
+"nome do seu projeto e uma pasta vazia vai ser criada com aquele nome para o "
+"projeto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
-#, fuzzy
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -118,25 +117,22 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
-"Você também pode selecionar o backend de renderização nesse estágio (OpenGL "
-"ES 3.0 ou OpenGL ES 2.0). As vantagens e desvantagens de cada uma estão "
-"listadas para ajudá-lo a escolher, e você pode consultar :ref:"
+"Por último, você precisa escolher qual renderizador usar (OpenGL ES 3.0 ou "
+"OpenGL ES 2.0). As vantagens e desvantagens de cada um estão listadas para "
+"ajudá-lo a escolher, e você pode consultar :ref:"
 "`doc_gles2_gles3_differences` para mais detalhes. Observe que você pode "
-"alterar o backend nas configurações do projeto, se mudar de ideia "
-"posteriormente. Para este tutorial qualquer backend está bom."
+"alterar o backend nas configurações do projeto, se mudar de ideia depois. "
+"Para este tutorial qualquer backend está bom."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"Quando vir uma marca verde à direita, significa que o motor detectou uma "
-"pasta vazia, e você pode clicar em ``Criar``. O Godot vai criar o projeto "
-"para você e abri-lo no editor."
+"Quando estiver tudo pronto, clique em ``Criar e Editar``. Godot vai criar o "
+"projeto pra você e abrir ele no editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
@@ -165,13 +161,12 @@ msgid "Your first look at Godot’s editor"
 msgstr "Seu primeiro olhar no editor do Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with empty docks on the right side."
 msgstr ""
-"Agora você consegue ver esta interface, com os painéis vazios no lado "
-"direito."
+"Bem vindo ao Godot! Com seu projeto aberto, você deve ver a interface do "
+"editor com painéis vazios no lado direito."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -182,13 +177,12 @@ msgstr ""
 "as **workspaces** e os **botões de teste**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
-#, fuzzy
 msgid ""
 "On the bottom left side, you have the **FileSystem dock**, where you’ll "
 "manage your project files and assets."
 msgstr ""
-"À esquerda, você tem o **Painel Arquivos**, por onde você gerencia seus "
-"arquivos e ativos do projeto."
+"No lado esquerdo, a baixo, você tem o **Painel Arquivos**, onde você vai "
+"gerenciar seus arquivos do projeto e assets."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
@@ -248,13 +242,12 @@ msgstr ""
 "projetar de níveis para jogos 3D. Pressione F2 para acessá-lo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
 msgstr ""
-"Repare o texto [perspectiva] abaixo da barra de ferramentas: é um botão que "
-"abre uma lista de opções relacionadas para a vista 3D."
+"Repare no botão ``Perspectiva`` abaixo da barra de ferramentas, ele abre uma "
+"lista de opções relacionadas ao ponto de vista 3D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""
@@ -286,10 +279,11 @@ msgid "Modify the interface"
 msgstr "Modificar a interface"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
+#, fuzzy
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
-"Atom or Visual Studio for instance."
+"Atom or Visual Studio Code for instance."
 msgstr ""
 "A interface do Godot fica em uma única janela. Você não pode dividi-la para "
 "várias telas, embora possa trabalhar com um editor de código externo como "

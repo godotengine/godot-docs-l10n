@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
-msgstr ""
+msgstr "Cada una tiene distintas ventajas."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:14
 #, fuzzy
@@ -58,6 +58,9 @@ msgid ""
 "Ogg Vorbis files use a stronger compression that results in much smaller "
 "file size, but require significantly more processing power to play back."
 msgstr ""
+"Los archivos Ogg Vorbis usan una mayor compresión lo que resulta en un "
+"tamaño de archivo mucho más pequeño, pero requieren mucha más potencia de "
+"procesamiento para reproducirse."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:20
 msgid "Here is a comparative chart."
@@ -68,57 +71,60 @@ msgid "Format"
 msgstr "Formato"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
-#, fuzzy
 msgid "1 second of audio"
-msgstr "1 Segundo de Audio"
+msgstr "1 segundo de audio"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
 #, fuzzy
 msgid "WAV 24-bit, 96 kHz, stereo"
-msgstr "WAV 24 bits, 96 kHz, Stereo"
+msgstr "WAV 24-bit, 96 kHz, stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
+#, fuzzy
 msgid "576 KB"
-msgstr ""
+msgstr "576 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
 #, fuzzy
 msgid "WAV 16-bit, 44 kHz, mono"
-msgstr "WAV 16 bits, 44 kHz, Mono"
+msgstr "WAV 16-bit, 44 kHz, mono"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
+#, fuzzy
 msgid "88 KB"
-msgstr ""
+msgstr "88 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
 #, fuzzy
 msgid "WAV 16-bit, IMA-ADPCM, mono"
-msgstr "WAV 16 bits, IMA-ADPCM, Mono"
+msgstr "WAV 16-bit, IMA-ADPCM, mono"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
+#, fuzzy
 msgid "22 KB"
-msgstr ""
+msgstr "22 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
 #, fuzzy
 msgid "Ogg Vorbis 128 Kb/s, stereo"
-msgstr "OGG Vorbis 96kbps, Stereo"
+msgstr "Ogg Vorbis 128 Kb/s, stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
+#, fuzzy
 msgid "16 KB"
-msgstr ""
+msgstr "16 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 #, fuzzy
 msgid "Ogg Vorbis 96 Kb/s, stereo"
-msgstr "OGG Vorbis 96kbps, Stereo"
+msgstr "Ogg Vorbis 96 Kb/s, stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
+#, fuzzy
 msgid "12 KB"
-msgstr ""
+msgstr "12 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:36
-#, fuzzy
 msgid ""
 "Consider using WAV for short and repetitive sound effects, and Ogg Vorbis "
 "for music, speech, and long sound effects."
@@ -131,17 +137,16 @@ msgid "Best practices"
 msgstr "Buenas prácticas"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:42
-#, fuzzy
 msgid ""
 "Godot has an :ref:`extensive bus system <doc_audio_buses>` with built-in "
 "effects. This saves SFX artists the need to add reverb to the sound effects, "
 "reducing their size greatly and ensuring correct trimming. Say no to SFX "
 "with baked reverb!"
 msgstr ""
-"Godot 3+ tiene un increíble sistema de bus con efectos incorporados. Esto "
-"ahorra a los artistas de SFX la necesidad de agregar reverberación a los "
-"efectos de sonido, reduciendo su tamaño en gran medida y asegurando un "
-"correcto recorte. ¡Diga no a SFX con reverberación preparada!"
+"Godot tiene un :ref:`extenso sistema de buses <doc_audio_buses>` con efectos "
+"incorporados. Esto ahorra a los artistas de SFX la necesidad de agregar "
+"reverberación a los efectos de sonido, reduciendo su tamaño en gran medida y "
+"asegurando un correcto recorte. ¡Di no a SFX con reverberación incorporada!"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:49
 msgid "As you can see above, sound effects become huge with reverb added."
@@ -167,33 +172,30 @@ msgstr ""
 "que se reproducen."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
-#, fuzzy
 msgid "Importing as WAV with the **Trimming** option enabled solves this."
 msgstr ""
-"La importación como WAV con la opción de Trimming activada resuelve este "
-"problema."
+"La importación como WAV con la opción de **Trimming** habilitada resuelve "
+"esto."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
 msgid "Looping"
 msgstr "Looping"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:65
-#, fuzzy
 msgid ""
 "Godot supports looping in the samples (tools such as Sound Forge or Audition "
 "can add loop points to WAV files). This is useful for sound effects, such as "
 "engines, machine guns etc. Ping-pong looping is also supported."
 msgstr ""
 "Godot soporta looping en las muestras de audio (herramientas como Sound "
-"Forge o Audition pueden añadir puntos de loop a los archivos wav). Esto es "
+"Forge o Audition pueden añadir puntos de loop a los archivos WAV). Esto es "
 "útil para efectos de sonido como motores, ametralladoras, etc. También "
-"soporta el Ping-pong looping."
+"soporta ping-pong looping."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:70
-#, fuzzy
 msgid ""
 "As an alternative, the Import dock has a **Loop** option that enables "
 "looping for the entire sample when importing."
 msgstr ""
-"Como alternativa, la pantalla de importación tiene una opción de \"repetir\" "
-"que permite la repetición de la totalidad de la muestra al importar."
+"Como alternativa, el panel de importación tiene una opción de \"Loop\" que "
+"permite la repetición de la totalidad de la muestra al importar."

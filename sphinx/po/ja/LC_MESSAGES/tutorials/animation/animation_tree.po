@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -240,7 +240,7 @@ msgstr "下記は利用可能なノードの短い説明です:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:76
 msgid "Blend2 / Blend3"
-msgstr "Blend2 / Blend3"
+msgstr "\\ Blend2 / Blend3"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:78
 msgid ""
@@ -267,7 +267,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:90
 msgid "OneShot"
-msgstr "OneShot"
+msgstr "\\ OneShot"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:92
 msgid ""
@@ -279,7 +279,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:97
 msgid "Seek"
-msgstr "Seek"
+msgstr "\\ Seek"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:99
 msgid ""
@@ -291,7 +291,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:102
 msgid "TimeScale"
-msgstr "TimeScale"
+msgstr "\\ TimeScale"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:104
 msgid ""
@@ -316,7 +316,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:112
 msgid "BlendSpace2D"
-msgstr "BlendSpace2D"
+msgstr "\\ BlendSpace2D"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:114
 msgid ""
@@ -364,7 +364,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:136
 msgid "BlendSpace1D"
-msgstr "BlendSpace1D"
+msgstr "\\ BlendSpace1D"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:138
 msgid ""
@@ -375,7 +375,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:141
 msgid "StateMachine"
-msgstr "StateMachine"
+msgstr "\\ StateMachine"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:143
 msgid ""
@@ -384,46 +384,62 @@ msgid ""
 "connections with special properties. Transitions are uni-directional, but "
 "two can be used to connect in both ways."
 msgstr ""
+"このノードは比較的シンプルなステートマシンです。ルートノードを作り、線をつな"
+"いで接続します。ステートは、独自のプロパティを持つ\\ *トランジション*\\ を用"
+"いて接続します。トランジションは一方通行ですが、ふたつを互いに接続させあうこ"
+"とができます。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:148
 msgid "There are many types of transitions:"
-msgstr ""
+msgstr "トランジションにはいくつもの種類があります:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:152
 msgid ""
 "*Immediate*: Will switch to the next state immediately. The current state "
 "will end and blend into the beginning of the new one."
 msgstr ""
+"\\ *即座* (Immediate): 次のステートへと即座に切り替わります。現在のステートが"
+"終わると、新しいほうの先頭から始まります。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:153
 msgid ""
 "*Sync*: Will switch to the next state immediately, but will seek the new "
 "state to the playback position of the old state."
 msgstr ""
+"\\ *同期* (Sync): 次のステートへと即座に切り替わりますが、新しいステートでも"
+"古いステートと同じ再生位置になります。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:154
 msgid ""
 "*At End*: Will wait for the current state playback to end, then switch to "
 "the beginning of the next state animation."
 msgstr ""
+"\\ *終わりに* (At End): 現在のステートの再生位置が最後になるまで待ち、それか"
+"ら次のステートの先頭に切り替わります。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:156
 msgid ""
 "Transitions also have a few properties. Click any transition and it will be "
 "displayed in the inspector dock:"
 msgstr ""
+"トランジションはまた、いくつかのプロパティを持ちます。トランジションをクリッ"
+"クすると、インスペクタ ドックに表示されます:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:160
 msgid ""
 "*Switch Mode* is the transition type (see above), it can be modified after "
 "creation here."
 msgstr ""
+"\\ *Switch Mode* はトランジションの種類です (上記参照)。作成した後でもここで"
+"変更できます。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:161
 msgid ""
 "*Auto Advance* will turn on the transition automatically when this state is "
 "reached. This works best with the *At End* switch mode."
 msgstr ""
+"\\ *Auto Advance* (自動移行)は、このステートに到達したらすぐにトランジション"
+"がオンになります。これは *At End* スイッチモードと合わせるのが最適です。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:162
 msgid ""
@@ -431,10 +447,15 @@ msgid ""
 "This is a custom text field that can be filled with a variable name. The "
 "variable can be modified from code (more on this later)."
 msgstr ""
+"\\ *Advance Condition* (移行条件) は、この条件が満たされた場合に自動移行させ"
+"ます。テキストフィールドには変数名を入れます。この変数はコードから変更するこ"
+"とができます (詳しくは後述)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:164
 msgid "*Xfade Time* is the time to cross-fade between this state and the next."
 msgstr ""
+"\\ *Xfade Time* は、このステートと次との間でのクロスフェードにかかる時間で"
+"す。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:165
 msgid ""
@@ -442,16 +463,21 @@ msgid ""
 "on this later). When travelling from a state to another, give more priority "
 "to this node."
 msgstr ""
+"\\ *Priority* (優先度) は、コード内での\\ ``travel()``\\ 関数と共に使用しま"
+"す (詳しくは後述)。ひとつのステートから別へと移動するときの、このノードの優先"
+"度を設定します。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:166
 msgid ""
 "*Disabled* allows to disable this transition (it will not be used during "
 "travel or auto advance)."
 msgstr ""
+"\\ *Disabled* (無効) は、このトランジションを無効にします (ただし travel や自"
+"動移行では無視されます)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:170
 msgid "Root motion"
-msgstr ""
+msgstr "ルート モーション"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:172
 msgid ""
@@ -460,6 +486,10 @@ msgid ""
 "allows animating characters in a way where steps actually match the floor "
 "below. It also allows precise interaction with objects during cinematics."
 msgstr ""
+"3Dアニメーションの作業では、スケルトンを動かすためにルート・スケルトン ボーン"
+"を用意するのが一般的なテクニックです。これにより、キャラクターを床に合わせて"
+"歩かせることが可能になります。また、ムービー場面においても、正確に物体に触れ"
+"させられるようになります。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:175
 msgid ""
@@ -467,12 +497,17 @@ msgid ""
 "as the *root motion track*. Doing so will cancel the bone transformation "
 "visually (the animation will stay in place)."
 msgstr ""
+"Godot内でアニメーションを再生するときは、このボーンを *ルート・モーション ト"
+"ラック* に指定することができます。そうすると、そのボーンの見た目の変化は打ち"
+"消されます (アニメーションはそのまま)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:180
 msgid ""
 "Afterwards, the actual motion can be retrieved via the :ref:`AnimationTree "
 "<class_AnimationTree>` API as a transform:"
 msgstr ""
+"そのあと、実際のモーションは\\ :ref:`AnimationTree <class_AnimationTree>` API"
+"からトランスフォームとして取得します:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:191
 msgid ""
@@ -480,6 +515,9 @@ msgid ""
 "<class_KinematicBody_method_move_and_slide>` to control the character "
 "movement."
 msgstr ""
+"これを\\ :ref:`KinematicBody.move_and_slide "
+"<class_KinematicBody_method_move_and_slide>`\\ などの関数に渡すことで、キャラ"
+"クターの動きをコントロールできます。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:193
 msgid ""
@@ -487,16 +525,21 @@ msgid ""
 "and will act as a custom floor for your character and animations (this node "
 "is normally disabled during the game)."
 msgstr ""
+"また、ツールノードとして\\ ``RootMotionView``\\ があり、シーン中に置くことで"
+"キャラクターとアニメーション用のフロアが表示されます (通常このノードはゲーム"
+"中は無効にされます)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:200
 msgid "Controlling from code"
-msgstr ""
+msgstr "コードからコントロールする"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:202
 msgid ""
 "After building the tree and previewing it, the only question remaining is "
 "\"How is all this controlled from code?\"."
 msgstr ""
+"ツリーを作成してプレビューしたら、最後に残る質問は「これを全部コードからコン"
+"トロールする方法は？」です。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:204
 msgid ""
@@ -507,6 +550,13 @@ msgid ""
 "your animation tree, or reuse nodes with a complex layout (such as a state "
 "machine or blend space) in different animation trees."
 msgstr ""
+"注意していただきたいのは、アニメーション ノードはリソースであり、したがって、"
+"すべてのインスタンス間で共有されます。ノードの値を直接変更すると、この\\ "
+"``AnimationTree``\\ を使用するシーンにある、すべてのインスタンスも影響を受け"
+"ます。しかし、これにはクールな応用方法もあります。例えば、アニメーションツ"
+"リーの一部をコピー＆ペーストできますし、(ステートマシンやブレンドスペースのよ"
+"うな)複雑なレイアウトのノードを、異なるアニメーションツリー間で再利用できま"
+"す。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:209
 msgid ""
@@ -515,6 +565,10 @@ msgid ""
 "``AnimationTree`` node to see all the parameters that can be modified in "
 "real-time:"
 msgstr ""
+"実際のアニメーション データは\\ ``AnimationTree``\\ ノードに格納されており、"
+"プロパティを通じてアクセスします。\\ ``AnimationTree``\\ の Parameters セク"
+"ションに、リアルタイムで変更できるパラメーターが全てあるので確認してみてくだ"
+"さい:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:214
 msgid ""
@@ -522,20 +576,25 @@ msgid ""
 "``AnimationPlayer``, or even the ``AnimationTree`` itself, allowing the "
 "realisation of very complex animation logic."
 msgstr ""
+"これらは\\ ``AnimationPlayer``\\ や、\\ ``AnimationTree``\\ 自身からすらもア"
+"ニメーション化できるので便利です。これで非常に複雑なアニメーション ロジックを"
+"実現できます。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:217
 msgid ""
 "To modify these values from code, the property path must be obtained. This "
 "is done easily by hovering the mouse over any of the parameters:"
 msgstr ""
+"これらの値をコードから変更する場合は、プロパティ パスを知る必要があります。そ"
+"れには、パラメーターの上にマウスをホバーするだけです。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:221
 msgid "Which allows setting them or reading them:"
-msgstr ""
+msgstr "そうすれば、それらを設定したり読み込めます:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:236
 msgid "State machine travel"
-msgstr ""
+msgstr "ステートマシン travel"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:238
 msgid ""
@@ -544,6 +603,9 @@ msgid ""
 "to another one, while visiting all the intermediate ones. This is done via "
 "the A\\* algorithm."
 msgstr ""
+"Godotの\\ ``StateMachine``\\ 実装にあるナイスな機能のひとつは、travel (移動)"
+"です。現在のステートからの移動を指示すると、グラフは中間のものを全て通ってか"
+"ら、別のステートへと移ります。これはA\\* アルゴリズムにて行われます。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:241
 msgid ""
@@ -552,9 +614,13 @@ msgid ""
 "<class_AnimationNodeStateMachinePlayback>` object from the ``AnimationTree`` "
 "node (it is exported as a property)."
 msgstr ""
+"travel機能を使うには、まず\\ ``AnimationTree``\\ ノードから\\ :ref:"
+"`AnimationNodeStateMachinePlayback "
+"<class_AnimationNodeStateMachinePlayback>` オブジェクトを取得します (プロパ"
+"ティのひとつ)。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:254
 msgid ""
 "Once retrieved, it can be used by calling one of the many functions it "
 "offers:"
-msgstr ""
+msgstr "取得したら、その多くの関数の中からひとつ呼び出せば使えます:"

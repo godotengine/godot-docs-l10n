@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -389,44 +389,36 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "Godot는 무슨 유형의 3D 모델을 지원하나요?"
 
 #: ../../docs/about/faq.rst:150
+#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
-"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
+"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
+"using Blender, take a look at our own `Better Collada Exporter <https://"
+"godotengine.org/download>`_."
 msgstr ""
-"Godot는 `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
-"OpenCOLLADA-Tools>`_ 내보내기를 통해 Collada를 지원합니다 (Maya, 3DSMax)."
+"그렇지만 고도의 Collada 지원이 정말 좋기 때문에 Maya나 3DS Max를 사용한다면 "
+"가장 호환성이 좋은 `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/"
+"wiki/OpenCOLLADA-Tools>`_ 내보내기 도구를 사용해주세요. Blender를 사용한다면 "
+"우리가 만든 `Better Collada Exporter <https://godotengine.org/download>`_ 를 "
+"살펴보세요."
 
-#: ../../docs/about/faq.rst:152
-msgid ""
-"If you are using Blender, take a look at our own `Better Collada Exporter "
-"<https://godotengine.org/download>`_."
-msgstr ""
-"Blender를 사용한다면, 우리의 `Better Collada Exporter <https://godotengine."
-"org/download>`_\\ 를 참고하세요."
-
-#: ../../docs/about/faq.rst:154
+#: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
 msgstr "Godot 3.0부터 glTF를 지원합니다."
 
-#: ../../docs/about/faq.rst:156
+#: ../../docs/about/faq.rst:155
 msgid ""
-"FBX SDK has a `restrictive license <https://www.blender.org/bf/"
-"Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
-"<https://opensource.org/licenses/MIT>`_ provided by Godot. That being said, "
-"FBX support could still be provided by third parties as a plugin. (See "
-"Plugins question below.)"
+"FBX is supported via the Open Asset Import library. However, FBX is "
+"proprietary so we recommend using other formats listed above, if suitable "
+"for your workflow."
 msgstr ""
-"FBX SDK는 `제한적인 라이센스 <http://www.blender.org/bf/Autodesk_FBX_License."
-"rtf>`_\\ 를 갖고 있기 때문에, Godot의 `오픈 라이선스 <http://opensource.org/"
-"licenses/MIT>`_\\ 와 맞지 않습니다. 즉, FBX 지원은 아직 제 3자의 플러그인으로"
-"만 사용할 수 있습니다. (아래의 플러그인 질문을 참고하세요.)"
 
-#: ../../docs/about/faq.rst:162
+#: ../../docs/about/faq.rst:159
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr "Godot에서 [FMOD, GameWorks 등 클로즈 SDK]가 지원될까요?"
 
-#: ../../docs/about/faq.rst:164
+#: ../../docs/about/faq.rst:161
 msgid ""
 "The aim of Godot is to create a free and open-source MIT-licensed engine "
 "that is modular and extendable. There are no plans for the core engine "
@@ -438,7 +430,7 @@ msgstr ""
 "록 하는 계획은 없습니다. 이것들을 통합하는 것은 Godot의 정신에 반대되는 것입"
 "니다."
 
-#: ../../docs/about/faq.rst:169
+#: ../../docs/about/faq.rst:166
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
@@ -448,7 +440,7 @@ msgstr ""
 "듈로 추가해서 여러분의 게임에 사용해 출시해도 무방합니다--오픈 소스든지 클로"
 "즈 소스든지 말이죠."
 
-#: ../../docs/about/faq.rst:173
+#: ../../docs/about/faq.rst:170
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
@@ -456,7 +448,7 @@ msgstr ""
 "선택한 SDK에 대한 지원이 어떻게 제공되는지 알아보려면 아래 플러그인 질문을 참"
 "고하세요."
 
-#: ../../docs/about/faq.rst:176
+#: ../../docs/about/faq.rst:173
 msgid ""
 "If you know of a third-party SDK that is not supported by Godot but that "
 "offers free and open-source integration, consider starting the integration "
@@ -467,14 +459,14 @@ msgstr ""
 "직접 통합 작업을 시작해보세요. Godot는 한 사람의 것이 아닙니다; 커뮤니티에 속"
 "해 있고 당신과 같은 야심 찬 커뮤니티 기여자들과 함께 자랍니다."
 
-#: ../../docs/about/faq.rst:182
+#: ../../docs/about/faq.rst:179
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
 "다양한 해상도와 화면 비율에 맞도록 하려면 어떻게 애셋을 만들어야 할까요?"
 
-#: ../../docs/about/faq.rst:184
+#: ../../docs/about/faq.rst:181
 msgid ""
 "This question pops up often and it's probably thanks to the misunderstanding "
 "created by Apple when they originally doubled the resolution of their "
@@ -491,7 +483,7 @@ msgstr ""
 "율을 가진 여러 Android와 Apple 기기가 만들어졌습니다. 그들은 매우 넓은 화면"
 "과 DPI를 갖고 있었죠."
 
-#: ../../docs/about/faq.rst:192
+#: ../../docs/about/faq.rst:189
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
@@ -502,7 +494,7 @@ msgstr ""
 "세로 비율 만을 다르게 하는 것입니다. 2D라면 이 작업이 필요하겠지만, 3D에서는 "
 "카메라 X시야나 Y시야의 단순한 문제입니다."
 
-#: ../../docs/about/faq.rst:196
+#: ../../docs/about/faq.rst:193
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -517,7 +509,7 @@ msgstr ""
 "(1280x720) 근처입니다. 해상도가 높으면 애셋은 더 커지고 더 많은 메모리를 먹"
 "고 더 긴 로딩이 걸릴 것이니 명심하세요."
 
-#: ../../docs/about/faq.rst:204
+#: ../../docs/about/faq.rst:201
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
@@ -527,7 +519,7 @@ msgstr ""
 "니다. 사용하는 방법은 :ref:`doc_multiple_resolutions` 튜토리얼에서 확인해보세"
 "요."
 
-#: ../../docs/about/faq.rst:208
+#: ../../docs/about/faq.rst:205
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -538,7 +530,7 @@ msgstr ""
 "으로 펼칠 수 있습니다. 아니면 화면 비율을 유지하는 대신 검은 여백이 나타나게 "
 "할 수 있습니다. 이 또한 :ref:`doc_multiple_resolutions`\\ 에서 설명합니다."
 
-#: ../../docs/about/faq.rst:213
+#: ../../docs/about/faq.rst:210
 msgid ""
 "For user interfaces, use the :ref:`anchoring <doc_size_and_anchors>` to "
 "determine where controls should stay and move. If UIs are more complex, "
@@ -548,11 +540,11 @@ msgstr ""
 "서 Control이 이동하거나 정지해야 할 위치를 결정하세요. UI가 더 복잡하다면 "
 "Container 사용을 고려해보세요."
 
-#: ../../docs/about/faq.rst:217
+#: ../../docs/about/faq.rst:214
 msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "다 됐습니다! 게임이 이제 다양한 해상도에서 작동합니다."
 
-#: ../../docs/about/faq.rst:219
+#: ../../docs/about/faq.rst:216
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
@@ -563,11 +555,11 @@ msgstr ""
 "원한다면, 내보내기 설정으로 이미지를 압축해서 App Store나 구글 플레이에 적합"
 "한 화면으로 만들 수 있습니다."
 
-#: ../../docs/about/faq.rst:225
+#: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
 msgstr "어떻게 Godot를 확장할 수 있나요?"
 
-#: ../../docs/about/faq.rst:227
+#: ../../docs/about/faq.rst:224
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
@@ -576,11 +568,11 @@ msgstr ""
 "Godot 편집기 플러그인 제작이나 추가적인 언어 지원을 하고 싶다면 :ref:`편집기 "
 "플러그인 <doc_making_plugins>`\\ 과 tool 스크립트를 참고하세요."
 
-#: ../../docs/about/faq.rst:231
+#: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
 msgstr "또한 이 주제에 관한 공식 블로그 게시물도 참고하세요:"
 
-#: ../../docs/about/faq.rst:233
+#: ../../docs/about/faq.rst:230
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
@@ -588,11 +580,11 @@ msgstr ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 
-#: ../../docs/about/faq.rst:234
+#: ../../docs/about/faq.rst:231
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 msgstr "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 
-#: ../../docs/about/faq.rst:236
+#: ../../docs/about/faq.rst:233
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
@@ -603,11 +595,11 @@ msgstr ""
 "com/touilleMan/godot-python>`_\\ 을 살펴볼 수도 있습니다. 이것이 Godot가 어떻"
 "게 제 3자 라이브러리와 통합하는 지를 보여주는 좋은 출발점이 될 것입니다."
 
-#: ../../docs/about/faq.rst:242
+#: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
 msgstr "저도 기여하고 싶어요! 어떻게 시작해야 하나요?"
 
-#: ../../docs/about/faq.rst:244
+#: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
@@ -615,7 +607,7 @@ msgstr ""
 "멋집니다! 오픈 소스 프로젝트인 만큼 Godot는 당신같이 혁신적이고 야심 찬 개발"
 "자들에 의해 번창합니다."
 
-#: ../../docs/about/faq.rst:247
+#: ../../docs/about/faq.rst:244
 msgid ""
 "The first place to get started is in the `issues <https://github.com/"
 "godotengine/godot/issues>`_. Find an issue that resonates with you, then "
@@ -629,11 +621,11 @@ msgstr ""
 "md#contributing-pull-requests>`_ 가이드를 따라가세요. 변경 사항과 함께 Pull "
 "Request (PR)를 포크 요청, 수정 및 제출하는 법을 배울 수 있습니다."
 
-#: ../../docs/about/faq.rst:252
+#: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Godot에 대한 좋은 아이디어가 있습니다. 어떻게 이것을 공유할 수 있나요?"
 
-#: ../../docs/about/faq.rst:254
+#: ../../docs/about/faq.rst:251
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -654,14 +646,14 @@ msgstr ""
 "요약한 대로 핵심 기능과 `버그를 없애고 이슈를 다루는 것 <https://github.com/"
 "godotengine/godot/issues>`_, 그리고 Godot 커뮤니티 회원과의 대화입니다."
 
-#: ../../docs/about/faq.rst:263
+#: ../../docs/about/faq.rst:260
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
 "Godot 커뮤니티의 개발자 대부분은 이런 것을 배우는 데 더 흥미를 가질 것입니다:"
 
-#: ../../docs/about/faq.rst:266
+#: ../../docs/about/faq.rst:263
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
@@ -669,28 +661,28 @@ msgstr ""
 "소프트웨어를 사용한 경험과 문제 (우리는 아이디어보다 이것을 개선하는 일을 더 "
 "중요하게 여깁니다)."
 
-#: ../../docs/about/faq.rst:268
+#: ../../docs/about/faq.rst:265
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr "프로젝트에 필요해서 구현하고자 하는 기능."
 
-#: ../../docs/about/faq.rst:270
+#: ../../docs/about/faq.rst:267
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr "소프트웨어를 배우면서 이해하기 어려운 개념."
 
-#: ../../docs/about/faq.rst:271
+#: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
 msgstr "최적화하고 싶은 워크플로 부분."
 
-#: ../../docs/about/faq.rst:272
+#: ../../docs/about/faq.rst:269
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr "깔끔한 튜토리얼이 없거나 깔끔하지 않은 문서 부분."
 
-#: ../../docs/about/faq.rst:274
+#: ../../docs/about/faq.rst:271
 msgid ""
 "Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
 "reformulate them as a problem first, so developers and the community have a "
@@ -700,7 +692,7 @@ msgstr ""
 "개발자와 커뮤니티가 생각을 바탕으로 기술적 토대를 마련하기 위해, 먼저 문제점 "
 "순으로 재구성해주세요."
 
-#: ../../docs/about/faq.rst:278
+#: ../../docs/about/faq.rst:275
 msgid ""
 "A good way to approach sharing your ideas and problems with the community is "
 "as a set of user stories. Explain what you are trying to do, what behavior "
@@ -713,7 +705,7 @@ msgstr ""
 "는 지를 설명하세요. 이 방법으로 문제와 생각을 정리하면 전체 커뮤니티가 개발"
 "자 경험을 개선하는데 집중할 수 있습니다."
 
-#: ../../docs/about/faq.rst:284
+#: ../../docs/about/faq.rst:281
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
@@ -721,11 +713,11 @@ msgstr ""
 "스크린샷이나, 구체적인 값, 실험 사례, (가능하다면) 예제 프로젝트를 가져오면 "
 "추가 점수가 될 것입니다."
 
-#: ../../docs/about/faq.rst:289
+#: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
 msgstr "Godot가 STL (표준 템플릿 라이브러리)을 사용하지 않는 이유"
 
-#: ../../docs/about/faq.rst:291
+#: ../../docs/about/faq.rst:288
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
@@ -735,7 +727,7 @@ msgstr ""
 "STL이 훌륭한 범용 라이브러리라고 생각하지만, Godot에게는 특별한 요구 사항이 "
 "있었습니다."
 
-#: ../../docs/about/faq.rst:295
+#: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
@@ -743,7 +735,7 @@ msgstr ""
 "STL 템플릿은 매우 큰 심볼들을 만들고, 그것은 거대한 디버그 바이너리를 초래합"
 "니다. 우리는 대신 매우 짧은 이름의 템플릿을 거의 사용하지 않습니다."
 
-#: ../../docs/about/faq.rst:296
+#: ../../docs/about/faq.rst:293
 msgid ""
 "Most of our containers cater to special needs, like Vector, which uses copy "
 "on write and we use to pass data around, or the RID system, which requires "
@@ -755,7 +747,7 @@ msgstr ""
 "니다, RID 시스템의 경우, 성능을 위해 O(1) 접근 시간이 필요합니다. 마찬가지로 "
 "해시 맵 구현은 내부 엔진 유형과 부드럽게 통합하도록 설계되었습니다."
 
-#: ../../docs/about/faq.rst:297
+#: ../../docs/about/faq.rst:294
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
@@ -763,7 +755,7 @@ msgstr ""
 "컨테이너는 메모리 추적 기능이 내장되어 있어서, 메모리 사용량을 추적하는데 더 "
 "도움이 됩니다."
 
-#: ../../docs/about/faq.rst:298
+#: ../../docs/about/faq.rst:295
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
@@ -771,7 +763,7 @@ msgstr ""
 "큰 배열의 경우, 풀(Pool)로 된 메모리를 사용합니다, 사전에 지정된 버퍼 메모리 "
 "혹은 가상 메모리에 매핑될 수 있습니다."
 
-#: ../../docs/about/faq.rst:299
+#: ../../docs/about/faq.rst:296
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
@@ -779,11 +771,11 @@ msgstr ""
 "STL에서 제공하는 문자열 유형은 너무 단순하고 현지화 지원 기능이 부족해서 맞"
 "춤 문자열 유형을 사용합니다."
 
-#: ../../docs/about/faq.rst:302
+#: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
 msgstr "왜 Godot는 예외(Exception)를 사용하지 않나요?"
 
-#: ../../docs/about/faq.rst:304
+#: ../../docs/about/faq.rst:301
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
@@ -794,17 +786,17 @@ msgstr ""
 "태가 벌어지면, Godot는 오류를 작성합니다 (스크립트에서도 추적할 수 있습니"
 "다), 그런 다음 가능한 한 정상적으로 복구한 후 계속 진행합니다."
 
-#: ../../docs/about/faq.rst:309
+#: ../../docs/about/faq.rst:306
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr "또한 예외는 실행 파일에서 이진 크기를 상당히 늘립니다."
 
-#: ../../docs/about/faq.rst:313
+#: ../../docs/about/faq.rst:310
 msgid "Why does Godot not enforce RTTI?"
 msgstr "왜 Godot는 런타임 유형 정보(RTTI)를 시행하지 않나요?"
 
-#: ../../docs/about/faq.rst:315
+#: ../../docs/about/faq.rst:312
 msgid ""
 "Godot provides its own type-casting system, which can optionally use RTTI "
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
@@ -814,11 +806,11 @@ msgstr ""
 "사용할 수 있습니다. Godot에서 런타임 유형 정보를 끄게 되면 약간의 성능 가격으"
 "로 상당히 작은 이진 크기를 얻을 수 있습니다."
 
-#: ../../docs/about/faq.rst:320
+#: ../../docs/about/faq.rst:317
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr "왜 Godot는 사용자에게 DoD(데이터 지향 디자인) 구현을 강요하지 않나요?"
 
-#: ../../docs/about/faq.rst:322
+#: ../../docs/about/faq.rst:319
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as best as possible, we believe most users don't really "
@@ -828,7 +820,7 @@ msgstr ""
 "용하려 하지만, 우리는 대부분의 사용자가 DoD 관행을 따라야 할 필요가 없다고 생"
 "각합니다."
 
-#: ../../docs/about/faq.rst:326
+#: ../../docs/about/faq.rst:323
 msgid ""
 "DoD is mostly a cache coherency optimization that can only gain you "
 "significant performance improvements when dealing with dozens of thousands "
@@ -842,7 +834,7 @@ msgstr ""
 "한다 하면, DoD는 도움이 되지 않습니다, 당신은 최적화에 있어서 다른 접근법을 "
 "생각해 봐야 하는 것이죠."
 
-#: ../../docs/about/faq.rst:333
+#: ../../docs/about/faq.rst:330
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
@@ -850,7 +842,7 @@ msgstr ""
 "대부분의 게임에는 필요하지 않을 테지만, Godot는 이런 작업의 대부분의 경우에 "
 "도움을 줄 편리한 도우미를 제공합니다."
 
-#: ../../docs/about/faq.rst:336
+#: ../../docs/about/faq.rst:333
 msgid ""
 "If a game that really needs to process such large amount of objects is "
 "needed, our recommendation is to use C++ and GDNative for the high "
@@ -860,19 +852,19 @@ msgstr ""
 "요한 부분은 C++과 GDNative 사용하고, 그 외 나머지 부분은 GDScript (혹은 C#)"
 "을 사용하는 것입니다."
 
-#: ../../docs/about/faq.rst:341
+#: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
 msgstr "어떻게 Godot 개발을 돕거나 후원할 수 있나요?"
 
-#: ../../docs/about/faq.rst:343
+#: ../../docs/about/faq.rst:340
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr ":ref:`doc_ways_to_contribute`\\ 를 참고하세요."
 
-#: ../../docs/about/faq.rst:346
+#: ../../docs/about/faq.rst:343
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Godot는 누가 만드나요? 제가 연락할 수 있을까요?"
 
-#: ../../docs/about/faq.rst:348
+#: ../../docs/about/faq.rst:345
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."

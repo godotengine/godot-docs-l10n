@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,8 +101,8 @@ msgid ""
 "That is, one should create scenes that keep everything they need within "
 "themselves."
 msgstr ""
-"** Si es posible, las escenas deberían diseñarse para que no tengan "
-"dependencias. ** O lo que es lo mismo, que mantengan todo lo que necesitan "
+"**Si es posible, las escenas deberían diseñarse para que no tengan "
+"dependencias.** O lo que es lo mismo, que mantengan todo lo que necesitan "
 "dentro de sí mismas."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:43
@@ -168,9 +168,8 @@ msgid ""
 "another context without any extra changes to its API."
 msgstr ""
 "Estas opciones ocultan la fuente de accesos del nodo hijo. Esto a su vez "
-"mantiene al nodo hijo ** acoplado libremente ** a su entorno. Esto "
-"permitiría reutilizarlo en otro contexto sin ningún cambio adicional en su "
-"API."
+"mantiene al nodo hijo **acoplado libremente** a su entorno. Esto permitiría "
+"reutilizarlo en otro contexto sin ningún cambio adicional en su API."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:157
 msgid ""
@@ -181,8 +180,8 @@ msgid ""
 msgstr ""
 "Aunque los ejemplos anteriores ilustran las relaciones padre-hijo, los "
 "mismos principios aplican a todas las relaciones entre objetos. Los nodos "
-"hermanos sólo deben percatarse de su jerarquía, mientras que sus ancestros "
-"mediarán sus comuniaciones y referencias."
+"hermanos sólo deben percatarse de sus jerarquías, mientras que un ancestro "
+"mediará sus comunicaciones y referencias."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:204
 msgid ""
@@ -229,15 +228,15 @@ msgid ""
 "duplication via documentation is necessary."
 msgstr ""
 "para evitar crear y mantener tal documentación, uno convierte el nodo "
-"dependiente (arriba de \"child\") en una herramienta script que implementa: "
+"dependiente (arriba de \"child\") en una herramienta script que implementa :"
 "ref:`_get_configuration_warning() "
-"<class_Node_method__get_configuration_warning>. Regresando una cadena no "
-"vacía de ello que hará a la ventana Escena generar un ícono de advertencia "
+"<class_Node_method__get_configuration_warning>`. Regresando una cadena no "
+"vacía de ello que hará al panel de Escena generar un ícono de advertencia "
 "con la cadena como una información por el nodo. Éste es el mismo icono que "
-"aparece para nodos tal como el nodo: :ref:`Area2D <class_Area2D>` cuando no "
+"aparece para nodos tal como el nodo :ref:`Area2D <class_Area2D>` cuando no "
 "tiene nodos descendientes :ref:`CollisionShape2D <class_CollisionShape2D>` "
-"definidos. El editor entonces autodocumenta la escena através del código del "
-"script. No es necesaria la duplicación de contenido a través de la "
+"definidos. El editor entonces auto-documenta la escena a través del código "
+"del script. No es necesaria la duplicación de contenido a través de la "
 "documentación."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:230

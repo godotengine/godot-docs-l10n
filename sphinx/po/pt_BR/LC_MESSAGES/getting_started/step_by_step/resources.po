@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,33 +26,30 @@ msgid "Nodes and resources"
 msgstr "Nós e recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
-#, fuzzy
 msgid ""
 "Up to this tutorial, we focused on the :ref:`Node <class_Node>` class in "
 "Godot as that's the one you use to code behavior and most of the engine's "
 "features rely on it. There is another datatype that is just as important: :"
 "ref:`Resource <class_Resource>`."
 msgstr ""
-"Até agora, :ref:`Nós <class_Node>` têm sido o tipo de dados mais importante "
-"no Godot, já que a maioria dos comportamentos e funcionalidades do motor são "
+"Até agora, focamos muito na classe de :ref:`Nós <class_Node>` na Godot, já "
+"que a maioria dos comportamentos e funcionalidades do motor são "
 "implementados através deles. Existe outro tipo de dados que é igualmente "
 "importante: :ref:`Recurso <class_Resource>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
-#, fuzzy
 msgid ""
 "*Nodes* give you functionality: they draw sprites, 3D models, simulate "
 "physics, arrange user interfaces, etc. **Resources** are **data "
 "containers**. They don't do anything on their own: instead, nodes use the "
 "data contained in resources."
 msgstr ""
-"*Nodes* dão sua funcionalidade: eles desenham sprites, modelos 3D, simulam "
-"física, organizam a interface do usuário, etc. **Recursos** são **containers "
-"de dados**. Eles não fazem qualquer coisa na sua conta: ao invés de nós "
-"usarem os dados contidos em recursos."
+"*Nós* dão funcionalidade: eles desenham sprites, modelos 3D, simulam física, "
+"organizam a interface do usuário, etc. **Recursos** são **containers de "
+"dados**. Eles não fazem nada sozinhos: ao invés disso, os nós usam os dados "
+"contidos em recursos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
-#, fuzzy
 msgid ""
 "Anything Godot saves or loads from disk is a resource. Be it a scene (a ``."
 "tscn`` or an ``.scn`` file), an image, a script... Here are some "
@@ -61,62 +58,55 @@ msgid ""
 "<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
 "<class_Font>`, :ref:`Translation <class_Translation>`."
 msgstr ""
-"Exemplos de recursos são :ref:`Textura <class_Texture>`, :ref:`Roteiro "
+"Qualquer coisa que a Godot salva ou carrega do disco é um recurso, seja ele "
+"uma cena (um arquivo ``.tscn`` or ``.scn``), uma imagem, um script... "
+"Exemplos de ``Recursos`` são: :ref:`Textura <class_Texture>`, :ref:`Script "
 "<class_Script>`, :ref:`Malha <class_Mesh>`, :ref:`Animação "
 "<class_Animation>`, :ref:`Fluxo de áudio <class_AudioStream>`, :ref:`Fonte "
-"<class_Font>`, :ref:`Tradução <class_Translation>`, etc."
+"<class_Font>`, :ref:`Tradução <class_Translation>`..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
-#, fuzzy
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
 "copy of that resource is already in memory, trying to load the resource "
 "again will return the same copy every time. As resources only contain data, "
 "there is no need to duplicate them."
 msgstr ""
-"Quando um recurso é carregado do disco, **sempre é carregado só uma vez**. "
-"Isso significa que, se houver uma cópia desse recurso já carregado na "
-"memória, tentar carregar o recurso novamente retornará a mesma cópia várias "
-"vezes. Isso corresponde ao fato de que os recursos são apenas contêineres de "
-"dados, portanto, não é necessário duplicá-los."
+"Quando um recurso é carregado do disco, **é carregado só uma vez**. Se "
+"houver uma cópia desse recurso já carregado na memória, tentar carregar o "
+"recurso novamente retornará a mesma cópia várias vezes. Como recursos são "
+"apenas contêineres de dados, não é necessário duplicá-los."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
-#, fuzzy
 msgid ""
 "Every object, be it a Node or a Resource, can export properties. There are "
 "many types of Properties, like String, integer, Vector2, etc., and any of "
 "these types can become a resource. This means that both nodes and resources "
 "can contain resources as properties:"
 msgstr ""
-"Normalmente, todos os objetos em Godot (Nós, Recursos ou qualquer outra "
-"coisa) podem exportar propriedades. Elas podem ser de vários tipos (como "
-"texto, número inteiro, Vector2, etc) e um desses tipos pode ser um recurso. "
-"Isso significa que os nós e os recursos podem conter recursos como "
-"propriedades. Para tornar isso um pouco mais visual:"
+"Todos os objetos em Godot (Nós, Recursos ou qualquer outra coisa) podem "
+"exportar propriedades. Elas podem ser de vários tipos (como texto, número "
+"inteiro, Vector2, etc), e qualquer desses tipos pode virar um recurso. Isso "
+"significa que os nós e os recursos podem conter recursos como propriedades:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:39
 msgid "External vs built-in"
 msgstr "Externo vs embutido"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:41
-#, fuzzy
 msgid "There are two ways to save resources. They can be:"
-msgstr ""
-"Existem duas maneiras de projetar sua interface do usuário no Godot. Você "
-"pode:"
+msgstr "Existem duas maneiras de salvar recursos. Pode ser:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
-#, fuzzy
 msgid "**External** to a scene, saved on the disk as individual files."
-msgstr "**External** para uma cena, salva no disco como arquivos individuais."
+msgstr "**Externo** a uma cena, salvo no disco como arquivos individuais."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
-#, fuzzy
 msgid ""
 "**Built-in**, saved inside the ``.tscn`` or the ``.scn`` file they're "
 "attached to."
 msgstr ""
-"**Built-in**, salva dentro da \\*.tscn ou o \\*.scn arquivo eles estão "
+"**Embutido**, salvo dentro do arquivo ``.tscn`` ou ``.scn`` ao qual estão "
 "anexados."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
@@ -128,46 +118,40 @@ msgstr ""
 "nó :ref:`Sprite <class_Sprite>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
-#, fuzzy
 msgid ""
 "Clicking the resource preview allows us to view and edit the resource's "
 "properties."
-msgstr ""
-"Clique com o botão direito na variável para permitir que você configure suas "
-"propiedades:"
+msgstr "Clicar no recurso permite que você veja e edite suas propriedades."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
-#, fuzzy
 msgid ""
 "The path property tells us where the resource comes from. In this case, it "
 "comes from a PNG image called ``robi.png``. When the resource comes from a "
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes a built-in resource."
 msgstr ""
-"A propriedade da caminho nos diz de onde o recurso vem. Nesse caso ele vem "
-"de uma imagem PNG chamada ``robi.png``. Quando o recurso vem de um arquivo "
-"como esse, ele é um recurso externo. Se você apagar o caminho ou esse "
-"caminho estiver vazio, ele se transforma em um recurso embutido."
+"A propriedade caminho nos diz de onde o recurso vem. Nesse caso ele vem de "
+"uma imagem PNG chamada ``robi.png``. Quando o recurso vem de um arquivo como "
+"esse, ele é um recurso externo. Se você apagar o caminho ou esse caminho "
+"estiver vazio, ele se transforma em um recurso embutido."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
-#, fuzzy
 msgid ""
 "The switch between built-in and external resources happens when you save the "
 "scene. In the example above, if you erase the path ``\"res://robi.png\"`` "
 "and save, Godot will save the image inside the ``.tscn`` scene file."
 msgstr ""
-"A mudança entre recursos embutidos e externos acontece quando você a cena. "
-"No exemplo acima, se você apaga o caminho \\`\"res://robi.png\"\\` e salva, "
-"Godot vai salvar a imagem dentro do arquivo de cena .tscn."
+"A mudança entre recursos embutidos e externos acontece quando você salva a "
+"cena. No exemplo acima, se você apaga o caminho ``\"res://robi.png\"`` e "
+"salva, a Godot vai salvar a imagem dentro do arquivo de cena ``.tscn``."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
-#, fuzzy
 msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
 "Mesmo se você salvar um recurso interno, quando você instancia uma cena "
-"várias vezes, o mecanismo carregará apenas uma cópia dela."
+"várias vezes, o motor carregará apenas uma cópia dela."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
 msgid "Loading resources from code"
@@ -197,7 +181,6 @@ msgid "Loading scenes"
 msgstr "Carregando cenas"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:108
-#, fuzzy
 msgid ""
 "Scenes are also resources, but there is a catch. Scenes saved to disk are "
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
@@ -208,7 +191,6 @@ msgstr ""
 "a cena é compactada dentro de um recurso."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
-#, fuzzy
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instance() <class_PackedScene_method_instance>` method."
@@ -217,18 +199,15 @@ msgstr ""
 "<class_PackedScene_method_instance>` deve ser usado."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
-#, fuzzy
 msgid ""
 "This method creates the nodes in the scene's hierarchy, configures them, and "
 "returns the root node of the scene. You can then add it as a child of any "
 "other node."
 msgstr ""
-"Esse método cria os nós na hierarquia da cena, configura-os (define todas as "
-"propriedades) e retorna o nó raiz da cena, que pode ser adicionado a "
-"qualquer outro nó."
+"Esse método cria os nós na hierarquia da cena, configura-os, e retorna o nó "
+"raiz da cena, que pode ser adicionado como filho de qualquer outro nó."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
-#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` function is fast, you can create new "
@@ -237,35 +216,31 @@ msgid ""
 "between the scene instances."
 msgstr ""
 "Essa abordagem tem várias vantagens. Como a função :ref:`PackedScene."
-"instance() <class_PackedScene_method_instance>` é bastante rápida, adicionar "
-"conteúdo extra à cena pode ser feito de forma eficiente. Novos inimigos, "
-"tiros, efeitos, etc podem ser adicionados ou removidos rapidamente, sem ter "
-"que carregá-los novamente a partir do disco toda vez. É importante lembrar "
-"que, como sempre, imagens, malhas, etc. são todos compartilhados entre as "
-"instâncias da cena."
+"instance() <class_PackedScene_method_instance>` é bastante rápida, novos "
+"inimigos, tiros, efeitos, etc. podem ser adicionados ou removidos "
+"rapidamente, sem ter que carregá-los novamente do disco toda vez. É "
+"importante lembrar que, como sempre, imagens, malhas, etc. são todos "
+"compartilhados entre as instâncias da cena."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
 msgid "Freeing resources"
 msgstr "Liberando recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:146
-#, fuzzy
 msgid ""
 "When a ``Resource`` is no longer in use, it will automatically free itself. "
 "Since, in most cases, Resources are contained in Nodes, when you free a "
 "node, the engine frees all the resources it owns as well if no other node "
 "uses them."
 msgstr ""
-"Recurso é uma extensão da classe :ref:`Reference <class_Reference>`. Assim, "
-"quando um recurso não estiver mais em uso, ele será automaticamente "
+"Quando um ``Recurso ``não estiver mais em uso, ele será automaticamente "
 "liberado. Como, na maioria dos casos, os recursos estão contidos em nós, "
 "scripts ou outros recursos, quando um nó é removido ou liberado, todos os "
-"recursos filhos são liberados também."
+"recursos filhos são liberados também se nenhum outro nó os usa."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:151
-#, fuzzy
 msgid "Creating your own resources"
-msgstr "Liberando recursos"
+msgstr "Criando seus próprios recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
 msgid ""
@@ -317,7 +292,6 @@ msgstr ""
 "recurso também não precisará ser alterado."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:169
-#, fuzzy
 msgid ""
 "They can define signals, so Resources can trigger responses to changes in "
 "the data they manage."
@@ -382,7 +356,6 @@ msgstr ""
 "Eles podem estender ** outros ** tipos de recursos além do recurso base."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
-#, fuzzy
 msgid ""
 "Resources and Dictionaries are both passed by reference, but only Resources "
 "are reference-counted. This means that if a Dictionary is passed between "
@@ -390,12 +363,11 @@ msgid ""
 "the Dictionary will be invalidated. Conversely, Resources will not be freed "
 "from memory until *all* the objects are deleted."
 msgstr ""
-"Recursos e dicionários também são diferentes, pois ambos são passados por "
-"referência, mas apenas Recursos são contados por referência. Isso significa "
-"que, se um dicionário for passado entre objetos e o primeiro objeto for "
-"excluído, ele invalidará a variável do segundo objeto. Isso não é assim para "
-"os Recursos, que não irão liberar sua memória até que todas as instâncias "
-"tenham desaparecido."
+"Recursos e dicionários são ambos passados por referência, mas apenas "
+"Recursos são contados por referência. Isso significa que, se um dicionário "
+"for passado entre objetos e o primeiro objeto for excluído, ele invalidará a "
+"variável do segundo objeto. Isso não é assim para os Recursos, que não serão "
+"liberados da memória até que todos os objetos tenham sido deletados."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
 msgid "Godot makes it easy to create custom Resources in the Inspector."
@@ -427,7 +399,6 @@ msgstr ""
 "e selecione \"Salvar\" ou \"Salvar como ...\"."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
-#, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -435,17 +406,15 @@ msgid ""
 "creation dialog. This will auto-add your script to the Resource object you "
 "create."
 msgstr ""
-"Se o idioma do script oferecer suporte a `script classes <https://godot."
-"readthedocs.io/en/latest/getting_started/step_by_step/scripting_continued."
-"html#register-scripts-as-classes>` __, ele simplificará o processo. Definir "
-"um nome apenas para o seu script irá adicioná-lo ao diálogo de criação do "
-"Inspetor. Isso adicionará automaticamente seu script ao objeto Resource "
+"Se a linguagem do script oferecer suporte a :ref:`classes de script "
+"<doc_scripting_continued_class_name>`, então o processo fica mais simples. "
+"Definir um nome para o seu script já irá adicioná-lo ao diálogo de criação "
+"do Inspetor. Isso adicionará automaticamente seu script ao objeto Resource "
 "criado por você."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:230
-#, fuzzy
 msgid "Let's see some examples."
-msgstr "Alguns exemplos:"
+msgstr "Vamos ver alguns exemplos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:303
 msgid ""
@@ -497,13 +466,12 @@ msgstr ""
 "ao Inspector ao abrir esses tipos de recursos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
-#, fuzzy
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
-"CurveTables são a mesma coisa, exceto mapeado para uma matriz de valores "
-"float ou um objeto de recurso: ref: `Curve <class_Curve>` /: ref: `Curve2D "
+"CurveTables são a mesma coisa, mas mapeadas em uma matriz de valores float "
+"ou um objeto de recurso :ref: `Curve <class_Curve>` /: ref: `Curve2D "
 "<class_Curve2D>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:357

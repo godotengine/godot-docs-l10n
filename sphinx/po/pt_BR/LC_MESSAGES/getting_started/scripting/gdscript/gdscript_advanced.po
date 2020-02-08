@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,7 +122,6 @@ msgstr ""
 "só são reconhecidos na execução)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
-#, fuzzy
 msgid ""
 "This, translated to reality, means that Godot+GDScript are a combination "
 "designed to create games quickly and efficiently. For games that are very "
@@ -135,11 +134,10 @@ msgstr ""
 "Isso, traduzido para a realidade, significa que Godot+GDScript é uma "
 "combinação projetada para criar jogos de forma rápida e eficiente. Para "
 "jogos que são muito intensivos em computação e não podem se beneficiar das "
-"ferramentas internas do mecanismo (como os tipos Vector, Mecanismo de "
-"Física, Biblioteca de Matemática, etc), a possibilidade de usar o C++ também "
-"está presente. Isso permite ainda criar o jogo inteiro em GDScript e "
-"adicionar pequenos pedaços de C++ nas áreas que precisam de um aumento de "
-"desempenho."
+"ferramentas internas do mecanismo (como os tipos Vector, Engine de Física, "
+"biblioteca de Matemática, etc), a possibilidade de usar o C++ também está "
+"presente. Isso permite ainda criar o jogo inteiro em GDScript e adicionar "
+"pequenos pedaços de C++ nas áreas que precisam de um desempenho maior."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
@@ -182,31 +180,29 @@ msgid "Pointers & referencing:"
 msgstr "Ponteiros & referência:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:109
-#, fuzzy
 msgid ""
 "In static languages, such as C or C++ (and to some extent Java and C#), "
 "there is a distinction between a variable and a pointer/reference to a "
 "variable. The latter allows the object to be modified by other functions by "
 "passing a reference to the original one."
 msgstr ""
-"Em linguagens estáticas como C ou C++ (e, em certa medida, Java e C#), "
-"existe uma distinção entre uma variável e um ponteiro/referência para uma "
-"variável. O último ajuda o objeto a ser modificado por outras funções "
-"através da passagem de uma referência para o original."
+"Em linguagens estáticas como C ou C++ (e de certa medida Java e C#), existe "
+"uma distinção entre uma variável e um ponteiro/referência a uma variável. "
+"Esse último deixa o objeto ser modificado por outras funções através da "
+"passagem de uma referência ao original."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:114
-#, fuzzy
 msgid ""
 "In C# or Java, everything not a built-in type (int, float, sometimes String) "
 "is always a pointer or a reference. References are also garbage-collected "
 "automatically, which means they are erased when no longer used. Dynamically "
 "typed languages tend to use this memory model, too. Some Examples:"
 msgstr ""
-"Em C# ou Java, tudo que não é um tipo embutido (inteiro, real ou, às vezes, "
-"uma string) é sempre um ponteiro ou uma referência. Referências são "
-"coletadas pelo coletor de lixo automaticamente, o que significa que são "
-"apagadas quando não mais usadas. Linguagens tipadas dinamicamente tendem a "
-"usar esse modelo de memória também. Alguns exemplos:"
+"Em C# ou Java, tudo que não é um tipo embutido (int, float ou, às vezes "
+"string) é sempre um ponteiro ou uma referência. Referências são coletadas "
+"pelo coletor de lixo automaticamente, o que significa que são apagadas "
+"quando não mais usadas. Linguagens tipadas dinamicamente tendem a usar esse "
+"modelo de memória também. Alguns exemplos:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:120
 msgid "C++:"
@@ -273,7 +269,6 @@ msgid "Dictionaries"
 msgstr "Dictionaries"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
-#, fuzzy
 msgid ""
 "Dictionaries are a powerful tool in dynamically typed languages. Most "
 "programmers that come from statically typed languages (such as C++ or C#) "
@@ -283,9 +278,9 @@ msgid ""
 msgstr ""
 "Os dicionários são uma ferramenta poderosa em linguagens dinamicamente "
 "tipadas. A maioria dos programadores que vêm de linguagens estaticamente "
-"tipadas (como C ++ ou C #) ignoram sua existência e tornam sua vida "
+"tipadas (como C++ ou C#) ignoram sua existência e tornam sua vida "
 "desnecessariamente mais difícil. Esse tipo de dados geralmente não está "
-"presente nesses idiomas (ou apenas em formato limitado)."
+"presente nessas linguagens (ou apenas em formato limitado)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:239
 msgid ""
@@ -324,15 +319,14 @@ msgstr ""
 "de batalha naval simples:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
-#, fuzzy
 msgid ""
 "Dictionaries can also be used as data markup or quick structures. While "
 "GDScript's dictionaries resemble python dictionaries, it also supports Lua "
 "style syntax and indexing, which makes it useful for writing initial states "
 "and quick structs:"
 msgstr ""
-"Os dicionários também podem ser usados como marcação de dados ou estruturas "
-"rápidas. Enquanto dicionários GDScript lembram dicionários python, ele "
+"Dicionários também podem ser usados como marcação de dados ou estruturas "
+"rápidas. Enquanto dicionários em GDScript lembram dicionários do Python, ele "
 "também suporta sintaxe e indexação no estilo Lua, o que o torna útil para "
 "escrever estados iniciais e estruturas rápidas:"
 
@@ -369,11 +363,8 @@ msgid "The range() function can take 3 arguments:"
 msgstr "A função range() pode ter 3 argumentos:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:371
-#, fuzzy
 msgid "Some statically typed programming language examples:"
-msgstr ""
-"Iterar em algumas linguagens estaticamente tipadas pode ser bastante "
-"complexo:"
+msgstr "Alguns exemplos em linguagens estaticamente tipadas:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:381
 msgid "Translate to:"
@@ -517,17 +508,16 @@ msgid "Yes, we should call it Hulk typing instead."
 msgstr "Sim, nós deveríamos chamar isso de tipo Hulk ao invés disso."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
-#, fuzzy
 msgid ""
 "It's possible that the object being hit doesn't have a smash() function. "
 "Some dynamically typed languages simply ignore a method call when it doesn't "
 "exist (like Objective C), but GDScript is stricter, so checking if the "
 "function exists is desirable:"
 msgstr ""
-"É possível que o objeto que está sendo atingido não tenha uma função smash "
-"(). Algumas linguagens tipadas dinamicamente simplesmente ignoram uma "
+"É possível que o objeto que está sendo atingido não tenha uma função "
+"smash(). Algumas linguagens tipadas dinamicamente simplesmente ignoram uma "
 "chamada de método quando ela não existe (como o Objective C), mas o GDScript "
-"é mais estrito, então verificar se a função existe é desejável:"
+"é mais rígido, então verificar se a função existe é desejável:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:527
 msgid ""

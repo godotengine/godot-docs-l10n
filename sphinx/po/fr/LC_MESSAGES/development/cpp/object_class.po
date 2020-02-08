@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -272,7 +272,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:233
 msgid "References"
-msgstr ""
+msgstr "References"
 
 #: ../../docs/development/cpp/object_class.rst:235
 msgid ""
@@ -280,6 +280,10 @@ msgid ""
 "reference count. It is the base for reference counted object types. "
 "Declaring them must be done using Ref<> template. For example:"
 msgstr ""
+":ref:`Reference <class_reference>` hérite de Object et contient un compteur "
+"de références. Il constitue la base pour les types d'objets dont les "
+"références sont comptées. Leur déclaration doit être faite en utilisant le "
+"modèle Ref<>. Par exemple :"
 
 #: ../../docs/development/cpp/object_class.rst:247
 msgid ""
@@ -292,6 +296,8 @@ msgid ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
 "reference.h>`__"
 msgstr ""
+"`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
+"reference.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:256
 msgid "Resources:"
@@ -305,24 +311,35 @@ msgid ""
 "This is normally done by the resource loader though. No two different "
 "resources can have the same path, attempt to do so will result in an error."
 msgstr ""
+":ref:`Resource <class_resource>` hérite de Reference, donc toutes les "
+"références aux ressources sont comptées. Les ressources peuvent "
+"facultativement contenir un chemin d'accès, qui fait référence à un fichier "
+"sur le disque. Ceci peut être défini avec ``resource.set_path(path)``. "
+"Cependant, c'est généralement le chargeur de ressources qui s'en charge. "
+"Deux ressources différentes ne peuvent pas avoir le même chemin, tenter de "
+"le faire entraînera une erreur."
 
 #: ../../docs/development/cpp/object_class.rst:264
 msgid "Resources without a path are fine too."
-msgstr ""
+msgstr "Une ressource sans chemin est également correcte."
 
 #: ../../docs/development/cpp/object_class.rst:269
 msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
 "resource.h>`__"
 msgstr ""
+"`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
+"resource.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:272
 msgid "Resource loading"
-msgstr ""
+msgstr "Chargement des ressources"
 
 #: ../../docs/development/cpp/object_class.rst:274
 msgid "Resources can be loaded with the ResourceLoader API, like this:"
 msgstr ""
+"Les ressources peuvent être chargées en utilisant l'API ResourceLoader, "
+"comme ceci :"
 
 #: ../../docs/development/cpp/object_class.rst:280
 msgid ""
@@ -330,6 +347,10 @@ msgid ""
 "the resource loader will return that reference. This means that there can be "
 "only one resource loaded from a file referenced on disk at the same time."
 msgstr ""
+"Si une référence à cette ressource a déjà été chargée précédemment et existe "
+"en mémoire, le chargeur de ressources retournera cette référence. Cela "
+"signifie qu'il ne peut y avoir qu'une seule ressource chargée par fichier "
+"référencé sur le disque à la fois."
 
 #: ../../docs/development/cpp/object_class.rst:285
 msgid "resourceinteractiveloader (TODO)"
@@ -340,6 +361,8 @@ msgid ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_loader.h>`__"
 msgstr ""
+"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/resource_loader.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:293
 msgid "Resource saving"

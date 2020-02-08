@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -413,47 +413,43 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "Quels types de formats de modèles 3D sont pris en charge par Godot ?"
 
 #: ../../docs/about/faq.rst:150
+#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
-"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
+"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
+"using Blender, take a look at our own `Better Collada Exporter <https://"
+"godotengine.org/download>`_."
 msgstr ""
-"Godot supporte Collada via l'exporteur `OpenCollada <https://github.com/"
-"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ (Maya, 3DSMax)."
+"Cela dit, le support de Collada par Godot est vraiment bon, veuillez "
+"utiliser l'exporteur `OpenCollada <https://github.com/KhronosGroup/"
+"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ pour une compatibilité maximale si "
+"vous utilisez Maya ou 3DS Max. Si vous utilisez Blender, jetez un coup d’œil "
+"à notre propre exporteur `Better Collada Exporter <https://godotengine.org/"
+"download>`_."
 
-#: ../../docs/about/faq.rst:152
-msgid ""
-"If you are using Blender, take a look at our own `Better Collada Exporter "
-"<https://godotengine.org/download>`_."
-msgstr ""
-"Si vous utilisez Blender, jetez un coup d’œil à notre propre `Better Collada "
-"Exporter <https://godotengine.org/download>`_."
-
-#: ../../docs/about/faq.rst:154
+#: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
 msgstr "À partir de Godot 3.0, glTF est pris en charge."
 
-#: ../../docs/about/faq.rst:156
+#: ../../docs/about/faq.rst:155
+#, fuzzy
 msgid ""
-"FBX SDK has a `restrictive license <https://www.blender.org/bf/"
-"Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
-"<https://opensource.org/licenses/MIT>`_ provided by Godot. That being said, "
-"FBX support could still be provided by third parties as a plugin. (See "
-"Plugins question below.)"
+"FBX is supported via the Open Asset Import library. However, FBX is "
+"proprietary so we recommend using other formats listed above, if suitable "
+"for your workflow."
 msgstr ""
-"Le SDK du format FBX a une `licence très restrictive <http://www.blender.org/"
-"bf/Autodesk_FBX_License.rtf>`_, qui est incompatible avec la `licence libre "
-"<http://opensource.org/licenses/MIT>`_ fournie par Godot. Ceci étant dit, "
-"FBX peut tout de même être fourni par des tiers en tant que plugins. (Voir "
-"la section Plugins ci-dessus.)"
+"FBX, pris en charge via la bibliothèque Open Asset Import. Cependant, FBX "
+"est propriétaire, nous vous recommandons donc d'utiliser d'autres formats "
+"listés ci-dessus, si cela convient à votre flux de travail."
 
-#: ../../docs/about/faq.rst:162
+#: ../../docs/about/faq.rst:159
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
 "Est-ce que [Insérer un SDK fermé tel que FMOD, GameWorks, etc.] sera un "
 "jour, supporté dans Godot ?"
 
-#: ../../docs/about/faq.rst:164
+#: ../../docs/about/faq.rst:161
 msgid ""
 "The aim of Godot is to create a free and open-source MIT-licensed engine "
 "that is modular and extendable. There are no plans for the core engine "
@@ -465,7 +461,7 @@ msgstr ""
 "jeu ne prévoit aucun support de projets tiers/SDK propriétaire, du fait que "
 "leur intégration irait à l'encontre de l'éthique de Godot."
 
-#: ../../docs/about/faq.rst:169
+#: ../../docs/about/faq.rst:166
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
@@ -476,7 +472,7 @@ msgstr ""
 "que module et que vous les livriez avec votre jeu -- qu'il soient open-"
 "source ou non."
 
-#: ../../docs/about/faq.rst:173
+#: ../../docs/about/faq.rst:170
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
@@ -484,7 +480,7 @@ msgstr ""
 "Pour voir comment votre SDK préféré pourrait être supporté, jetez un œil à "
 "la question des plugins ci-dessous."
 
-#: ../../docs/about/faq.rst:176
+#: ../../docs/about/faq.rst:173
 msgid ""
 "If you know of a third-party SDK that is not supported by Godot but that "
 "offers free and open-source integration, consider starting the integration "
@@ -497,7 +493,7 @@ msgstr ""
 "appartient à la communauté, et il grandit avec des contributeurs ambitieux "
 "comme vous."
 
-#: ../../docs/about/faq.rst:182
+#: ../../docs/about/faq.rst:179
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
@@ -505,7 +501,7 @@ msgstr ""
 "Comment créer des ressources pour gérer plusieurs résolutions et rapports "
 "d'aspect ?"
 
-#: ../../docs/about/faq.rst:184
+#: ../../docs/about/faq.rst:181
 msgid ""
 "This question pops up often and it's probably thanks to the misunderstanding "
 "created by Apple when they originally doubled the resolution of their "
@@ -524,7 +520,7 @@ msgstr ""
 "résolutions et des rapports d'aspect différents ont été créés, avec une très "
 "large gamme de tailles et de DPIs."
 
-#: ../../docs/about/faq.rst:192
+#: ../../docs/about/faq.rst:189
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
@@ -536,7 +532,7 @@ msgstr ""
 "aspects d'écran. C'est principalement nécessaire pour la 2D, puisque c'est "
 "juste une question de champ de vision caméra X ou Y en en 3D."
 
-#: ../../docs/about/faq.rst:196
+#: ../../docs/about/faq.rst:193
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -553,7 +549,7 @@ msgstr ""
 "que plus la résolution est élevée, plus vos ressources seront volumineuses, "
 "plus elles prendront de mémoire et plus le temps de chargement sera long."
 
-#: ../../docs/about/faq.rst:204
+#: ../../docs/about/faq.rst:201
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
@@ -563,7 +559,7 @@ msgstr ""
 "de l'aspect fonctionne le mieux. Consultez le tutoriel :ref:"
 "`doc_multiple_resolutions` sur la façon d'y parvenir."
 
-#: ../../docs/about/faq.rst:208
+#: ../../docs/about/faq.rst:205
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -576,7 +572,7 @@ msgstr ""
 "barres noires apparaissent à la place. Ceci est également expliqué dans :ref:"
 "`doc_multiple_resolutions`."
 
-#: ../../docs/about/faq.rst:213
+#: ../../docs/about/faq.rst:210
 msgid ""
 "For user interfaces, use the :ref:`anchoring <doc_size_and_anchors>` to "
 "determine where controls should stay and move. If UIs are more complex, "
@@ -587,12 +583,12 @@ msgstr ""
 "se déplacer. Si l'UI est plus complexe, songez à vous renseigner sur les "
 "conteneurs."
 
-#: ../../docs/about/faq.rst:217
+#: ../../docs/about/faq.rst:214
 msgid "And that's it! Your game should work in multiple resolutions."
 msgstr ""
 "Et c'est tout ! Votre jeu devrait fonctionner en plusieurs résolutions."
 
-#: ../../docs/about/faq.rst:219
+#: ../../docs/about/faq.rst:216
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
@@ -605,11 +601,11 @@ msgstr ""
 "l'utilisation de ce build pour certaines tailles d'écran dans l'App Store ou "
 "Google Play."
 
-#: ../../docs/about/faq.rst:225
+#: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
 msgstr "Comment puis-je améliorer Godot ?"
 
-#: ../../docs/about/faq.rst:227
+#: ../../docs/about/faq.rst:224
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
@@ -619,11 +615,11 @@ msgstr ""
 "supporter un langage supplémentaire, consultez les :ref:`EditorPlugins "
 "<doc_making_plugins>` et les outils de scripting."
 
-#: ../../docs/about/faq.rst:231
+#: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
 msgstr "Voir aussi les articles du blog officiel sur ces sujets :"
 
-#: ../../docs/about/faq.rst:233
+#: ../../docs/about/faq.rst:230
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
@@ -631,11 +627,11 @@ msgstr ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 
-#: ../../docs/about/faq.rst:234
+#: ../../docs/about/faq.rst:231
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 msgstr "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 
-#: ../../docs/about/faq.rst:236
+#: ../../docs/about/faq.rst:233
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
@@ -648,11 +644,11 @@ msgstr ""
 "départ pour observer comment les bibliothèques tierces s'intègrent dans "
 "Godot."
 
-#: ../../docs/about/faq.rst:242
+#: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
 msgstr "J'aimerai contribuer ! Où puis-je commencer ?"
 
-#: ../../docs/about/faq.rst:244
+#: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
@@ -660,7 +656,7 @@ msgstr ""
 "Super ! En tant que logiciel libre, Godot progresse grâce aux améliorations "
 "et innovations apportées par des développeuses et développeurs comme vous."
 
-#: ../../docs/about/faq.rst:247
+#: ../../docs/about/faq.rst:244
 msgid ""
 "The first place to get started is in the `issues <https://github.com/"
 "godotengine/godot/issues>`_. Find an issue that resonates with you, then "
@@ -675,11 +671,11 @@ msgstr ""
 "requests>`_ pour déterminer comment récupérer le projet, le modifier, puis "
 "soumettre une Pull Request (PR) contenant vos modifications."
 
-#: ../../docs/about/faq.rst:252
+#: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
 msgstr "J'ai une super idée pour Godot. Comment puis-je la partager ?"
 
-#: ../../docs/about/faq.rst:254
+#: ../../docs/about/faq.rst:251
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -703,7 +699,7 @@ msgstr ""
 "godotengine/godot/issues>`_, et sur les discussions entre membres de la "
 "communauté Godot."
 
-#: ../../docs/about/faq.rst:263
+#: ../../docs/about/faq.rst:260
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
@@ -711,7 +707,7 @@ msgstr ""
 "La plupart des développeuses et développeurs de la communauté préféreront "
 "entendre parler de :"
 
-#: ../../docs/about/faq.rst:266
+#: ../../docs/about/faq.rst:263
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
@@ -720,7 +716,7 @@ msgstr ""
 "rencontrez (nous nous soucions de cela bien plus que des idées sur la façon "
 "de l'améliorer)."
 
-#: ../../docs/about/faq.rst:268
+#: ../../docs/about/faq.rst:265
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
@@ -728,19 +724,19 @@ msgstr ""
 "Les fonctionnalités que vous aimeriez voir mises en œuvre parce que vous en "
 "avez besoin pour votre projet."
 
-#: ../../docs/about/faq.rst:270
+#: ../../docs/about/faq.rst:267
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr ""
 "Les concepts que vous avez eu du mal à appréhender lors de votre utilisation "
 "du logiciel."
 
-#: ../../docs/about/faq.rst:271
+#: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
 msgstr ""
 "Les parties de votre flux de travail que vous aimeriez voir optimisées."
 
-#: ../../docs/about/faq.rst:272
+#: ../../docs/about/faq.rst:269
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
@@ -748,7 +744,7 @@ msgstr ""
 "Les parties où vous avez manqué de tutoriels clairs ou bien où la "
 "documentation n'était pas à la hauteur."
 
-#: ../../docs/about/faq.rst:274
+#: ../../docs/about/faq.rst:271
 msgid ""
 "Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
 "reformulate them as a problem first, so developers and the community have a "
@@ -759,7 +755,7 @@ msgstr ""
 "vos idées tenteraient de répondre, afin que les développeurs et la "
 "communauté aient des arguments sur lesquels s'appuyer pour en débattre."
 
-#: ../../docs/about/faq.rst:278
+#: ../../docs/about/faq.rst:275
 msgid ""
 "A good way to approach sharing your ideas and problems with the community is "
 "as a set of user stories. Explain what you are trying to do, what behavior "
@@ -774,7 +770,7 @@ msgstr ""
 "des problèmes de cette manière permettra à la communauté de rester "
 "concentrée sur l'amélioration de l'expérience utilisateur dans son ensemble."
 
-#: ../../docs/about/faq.rst:284
+#: ../../docs/about/faq.rst:281
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
@@ -782,11 +778,11 @@ msgstr ""
 "Point bonus si vous ajoutez des captures d'écran, des chiffres concrets, des "
 "cas de test ou des exemples de projets le cas échéant."
 
-#: ../../docs/about/faq.rst:289
+#: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
 msgstr "Pourquoi Godot n'utilise pas la STL (Standard Template Library)"
 
-#: ../../docs/about/faq.rst:291
+#: ../../docs/about/faq.rst:288
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
@@ -796,7 +792,7 @@ msgstr ""
 "la STL. Nous pensons que la STL est une très bonne bibliothèque pour un "
 "usage général, mais nous avons des besoins spécifiques pour Godot."
 
-#: ../../docs/about/faq.rst:295
+#: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
@@ -805,7 +801,7 @@ msgstr ""
 "binaires de debogage. Nous utilisons quelques templates avec des noms très "
 "courts à la place."
 
-#: ../../docs/about/faq.rst:296
+#: ../../docs/about/faq.rst:293
 msgid ""
 "Most of our containers cater to special needs, like Vector, which uses copy "
 "on write and we use to pass data around, or the RID system, which requires "
@@ -819,7 +815,7 @@ msgstr ""
 "O(1). De la même manière, l'implémentation des HashMap (table de hashage),"
 "est conçue pour s'intégrer parfaitement avec les types internes au moteur."
 
-#: ../../docs/about/faq.rst:297
+#: ../../docs/about/faq.rst:294
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
@@ -827,7 +823,7 @@ msgstr ""
 "Les conteneurs intègrent un système de traçage de la mémoire, ce qui permet "
 "le suivi de l'utilisation de la mémoire au cours du temps."
 
-#: ../../docs/about/faq.rst:298
+#: ../../docs/about/faq.rst:295
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
@@ -836,7 +832,7 @@ msgstr ""
 "quelque sorte), qui peut être attaché soit à de la mémoire virtuelle, soit à "
 "une mémoire tampon."
 
-#: ../../docs/about/faq.rst:299
+#: ../../docs/about/faq.rst:296
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
@@ -845,11 +841,11 @@ msgstr ""
 "de supporter l'internationalisation (i18n pour l'abbréviation), nous "
 "utilisons notre propre type de String (chaîne de caractère)."
 
-#: ../../docs/about/faq.rst:302
+#: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
 msgstr "Pourquoi n'y a-t-il pas de gestion d'exceptions dans Godot ?"
 
-#: ../../docs/about/faq.rst:304
+#: ../../docs/about/faq.rst:301
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
@@ -861,7 +857,7 @@ msgstr ""
 "(qui va vous permettre de remonter jusqu'au script fautif), puis il va "
 "essayer de continuer de fonctionner en mode dégradé."
 
-#: ../../docs/about/faq.rst:309
+#: ../../docs/about/faq.rst:306
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
@@ -869,12 +865,12 @@ msgstr ""
 "De plus, gérer des exceptions nécessiterait d'avoir des fichiers exécutables "
 "bien plus lourds."
 
-#: ../../docs/about/faq.rst:313
+#: ../../docs/about/faq.rst:310
 msgid "Why does Godot not enforce RTTI?"
 msgstr ""
 "Pourquoi Godot Engine ne renforce pas le RTTI (Run-time type information) ?"
 
-#: ../../docs/about/faq.rst:315
+#: ../../docs/about/faq.rst:312
 msgid ""
 "Godot provides its own type-casting system, which can optionally use RTTI "
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
@@ -885,13 +881,13 @@ msgstr ""
 "considérablement la taille des fichiers binaires mais impact légèrement les "
 "performances."
 
-#: ../../docs/about/faq.rst:320
+#: ../../docs/about/faq.rst:317
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
 "Pourquoi Godot Engine ne force t il pas les utilisateurs a implémenter le "
 "DoD (Data oriented Design) ?"
 
-#: ../../docs/about/faq.rst:322
+#: ../../docs/about/faq.rst:319
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as best as possible, we believe most users don't really "
@@ -901,7 +897,7 @@ msgstr ""
 "essaiera d'utiliser au mieux le cache. Malgré cela, nous pensons que la "
 "plupart des utilisateurs ne devraient pas être forcés à pratiquer la DoD."
 
-#: ../../docs/about/faq.rst:326
+#: ../../docs/about/faq.rst:323
 msgid ""
 "DoD is mostly a cache coherency optimization that can only gain you "
 "significant performance improvements when dealing with dozens of thousands "
@@ -915,7 +911,7 @@ msgstr ""
 "Sprites (ou d'ennemis), le DoD ne vous sera pas utile et vous devrez adopter "
 "une approche différente."
 
-#: ../../docs/about/faq.rst:333
+#: ../../docs/about/faq.rst:330
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
@@ -924,7 +920,7 @@ msgstr ""
 "fournir des fonctions pratiques pour vous aider dans ce que vous voulez "
 "faire."
 
-#: ../../docs/about/faq.rst:336
+#: ../../docs/about/faq.rst:333
 msgid ""
 "If a game that really needs to process such large amount of objects is "
 "needed, our recommendation is to use C++ and GDNative for the high "
@@ -935,19 +931,19 @@ msgstr ""
 "autres parties du jeu, qui ne sont pas autant demandantes en terme de "
 "performance, le GDScript ou le C# feront l'affaire."
 
-#: ../../docs/about/faq.rst:341
+#: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
 msgstr "Comment puis-je soutenir le développement de Godot ou y contribuer ?"
 
-#: ../../docs/about/faq.rst:343
+#: ../../docs/about/faq.rst:340
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr "Voir :ref:`doc_ways_to_contribute`."
 
-#: ../../docs/about/faq.rst:346
+#: ../../docs/about/faq.rst:343
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Qui travaille sur Godot ? Comment puis-je vous contacter ?"
 
-#: ../../docs/about/faq.rst:348
+#: ../../docs/about/faq.rst:345
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."

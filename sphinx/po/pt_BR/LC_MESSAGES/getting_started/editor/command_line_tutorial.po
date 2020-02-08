@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Command line tutorial"
 msgstr "Tutorial de linha de comando"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
-#, fuzzy
 msgid ""
 "Some developers like using the command line extensively. Godot is designed "
 "to be friendly to them, so here are the steps for working entirely from the "
@@ -30,20 +29,18 @@ msgid ""
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
 "Alguns desenvolvedores gostam de usar a linha de comando extensivamente. "
-"Godot é projetado para ser amigável para elas, então aqui estão os passos "
-"para trabalhar inteiramente a partir da linha de comando. Como o mecanismo "
-"depende de pouca ou nenhuma biblioteca externa, os tempos de inicialização "
-"são muito rápidos, o que o torna adequado para esse fluxo de trabalho."
+"Godot é projetado para funcionar com elas, então aqui estão os passos para "
+"trabalhar inteiramente a partir da linha de comando. Como a engine depende "
+"de quase nenhuma biblioteca externa, os tempos de inicialização são muito "
+"rápidos, o que o torna adequado para esse fluxo de trabalho."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
-#, fuzzy
 msgid "Command line reference"
-msgstr "Alterando a cena atual"
+msgstr "Referência para linha de comando"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
-#, fuzzy
 msgid "**General options**"
-msgstr "Propriedades do Node"
+msgstr "**Opções gerais**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:20
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:34
@@ -62,14 +59,12 @@ msgid "Description"
 msgstr "Descrição"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
-#, fuzzy
 msgid "``-h``, ``--help``, ``/?``"
-msgstr "``*`` ``/`` ``%``"
+msgstr "``-h``, ``--help``, ``/?``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
-#, fuzzy
 msgid "Display the list of command line options."
-msgstr "Carregando recursos a partir do código"
+msgstr "Exiba a lista de opções para linha de comando."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "``--version``"
@@ -80,17 +75,16 @@ msgid "Display the version string."
 msgstr "Exibe a string da versão."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:26
-#, fuzzy
 msgid "``-v``, ``--verbose``"
-msgstr "``+`` ``-``"
+msgstr "``-v``, ``--verbose``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:26
 msgid "Use verbose stdout mode."
-msgstr ""
+msgstr "Usar modo de saída verbose."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "``--quiet``"
-msgstr ""
+msgstr "``--quiet``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
@@ -98,14 +92,12 @@ msgstr ""
 "Modo silencioso, silencia mensagens stdout. Os erros ainda são exibidos."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:31
-#, fuzzy
 msgid "**Run options**"
-msgstr "**Descrição**"
+msgstr "**Opções de execução**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
-#, fuzzy
 msgid "``-e``, ``--editor``"
-msgstr "``+`` ``-``"
+msgstr "``-e``, ``--editor``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid ""
@@ -117,7 +109,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid "``-p``, ``--project-manager``"
-msgstr ""
+msgstr "``-p``, ``--project-manager``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid ""
@@ -129,9 +121,8 @@ msgstr ""
 "deve estar ativado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
-#, fuzzy
 msgid "``-q``, ``--quit``"
-msgstr "``+`` ``-``"
+msgstr "``-q``, ``--quit``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 msgid "Quit after the first iteration."
@@ -139,20 +130,19 @@ msgstr "Sair depois da primeira iteração."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid "``-l <locale>``, ``--language <locale>``"
-msgstr ""
+msgstr "``-l <código de localidade>``, ``--language <código de localidade>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
-#, fuzzy
 msgid ""
 "Use a specific locale (<locale> being a two-letter code). See :ref:"
 "`doc_locales` for more details."
 msgstr ""
-"Use um local específico (<locale> sendo um código de duas letras). Veja :ref:"
-"`doc_locales` para mais detalhes."
+"Use um local específico (<código de localidade> sendo um código de duas "
+"letras). Veja :ref:`doc_locales` para mais detalhes."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "``--path <directory>``"
-msgstr ""
+msgstr "``--path <diretório>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "Path to a project (<directory> must contain a 'project.godot' file)."
@@ -160,17 +150,16 @@ msgstr ""
 "Caminho para um projeto (<directory> deve conter um arquivo 'project.godot')."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:46
-#, fuzzy
 msgid "``-u``, ``--upwards``"
-msgstr "``+`` ``-``"
+msgstr "``-u``, ``--upwards``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:46
 msgid "Scan folders upwards for 'project.godot' file."
-msgstr "Escanear pastas acima por arquivo 'project.godot'"
+msgstr "Escanear pastas acima por arquivo 'project.godot'."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "``--main-pack <file>``"
-msgstr ""
+msgstr "``--main-pack <arquivo>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "Path to a pack (.pck) file to load."
@@ -178,7 +167,7 @@ msgstr "Caminho para um arquivo de pacote (.pck) a ser carregado."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:50
 msgid "``--render-thread <mode>``"
-msgstr ""
+msgstr "``--render-thread <modo>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:50
 msgid ""
@@ -186,10 +175,13 @@ msgid ""
 "<class_ProjectSettings_property_rendering/threads/thread_model>` for more "
 "details."
 msgstr ""
+"Modo de thread de renderização ('unsafe', 'safe', 'separate'). Veja :ref:"
+"`Modelo de Thread <class_ProjectSettings_property_rendering/threads/"
+"thread_model>` para mais detalhes."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid "``--remote-fs <address>``"
-msgstr ""
+msgstr "``--remote-fs <endereço>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
@@ -197,7 +189,7 @@ msgstr "Sistema de Arquivos Remoto (endereço ``<host/IP>[:<port>]``)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:54
 msgid "``--audio-driver <driver>``"
-msgstr ""
+msgstr "``--audio-driver <driver>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:54
 msgid ""
@@ -208,7 +200,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:56
 msgid "``--video-driver <driver>``"
-msgstr ""
+msgstr "``--video-driver <driver>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:56
 msgid ""
@@ -218,13 +210,12 @@ msgstr ""
 "disponíveis."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:59
-#, fuzzy
 msgid "**Display options**"
-msgstr "**Descrição**"
+msgstr "**Opções de exibição**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:64
 msgid "``-f``, ``--fullscreen``"
-msgstr ""
+msgstr "``-f``, ``--fullscreen``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:64
 msgid "Request fullscreen mode."
@@ -232,16 +223,15 @@ msgstr "Solicitar o modo Tela Cheia."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "``-m``, ``--maximized``"
-msgstr ""
+msgstr "``-m``, ``--maximized``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "Request a maximized window."
 msgstr "Solicitar uma janela maximizada."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:68
-#, fuzzy
 msgid "``-w``, ``--windowed``"
-msgstr "``+`` ``-``"
+msgstr "``-w``, ``--windowed``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:68
 msgid "Request windowed mode."
@@ -249,7 +239,7 @@ msgstr "Solicitar o Modo Janela."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "``-t``, ``--always-on-top``"
-msgstr ""
+msgstr "``-t``, ``--always-on-top``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "Request an always-on-top window."
@@ -257,7 +247,7 @@ msgstr "Solicitar uma Janela Sempre Visível."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "``--resolution <W>x<H>``"
-msgstr ""
+msgstr "``--resolution <largura>x<altura>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "Request window resolution."
@@ -265,7 +255,7 @@ msgstr "Solicitar a Resolução de Janela."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "``--position <X>,<Y>``"
-msgstr ""
+msgstr "``--position <X>,<Y>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "Request window position."
@@ -273,7 +263,7 @@ msgstr "Solicitar a Posição da Janela."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
 msgid "``--low-dpi``"
-msgstr ""
+msgstr "``--low-dpi``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
 msgid "Force low-DPI mode (macOS and Windows only)."
@@ -281,7 +271,7 @@ msgstr "Forçar Modo de baixo DPI (Apenas para macOS e Windows)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid "``--no-window``"
-msgstr ""
+msgstr "``--no-window``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid ""
@@ -315,17 +305,19 @@ msgstr "Depurar (Depuração stdout local)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid "``-b``, ``--breakpoints``"
-msgstr ""
+msgstr "``-b``, ``--breakpoints``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid ""
 "Breakpoint list as source::line comma-separated pairs, no spaces (use %%20 "
 "instead)."
 msgstr ""
+"Lista de pontos de interrupção com pares de fonte::linha separados por "
+"vírgulas, sem espaços (use %%20 no lugar)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "``--profiling``"
-msgstr ""
+msgstr "``--profiling``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Enable profiling in the script debugger."
@@ -333,7 +325,7 @@ msgstr "Habilite a criação de perfil no depurador de scripts."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "``--remote-debug <address>``"
-msgstr ""
+msgstr "``--remote-debug <endereço>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "Remote debug (``<host/IP>:<port>`` address)."
@@ -341,7 +333,7 @@ msgstr "Depuração Remota (endereço ``<host/IP>:<port>`` )."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "``--debug-collisions``"
-msgstr ""
+msgstr "``--debug-collisions``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "Show collision shapes when running the scene."
@@ -349,7 +341,7 @@ msgstr "Mostrar formas de colisão ao executar a cena."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 msgid "``--debug-navigation``"
-msgstr ""
+msgstr "``--debug-navigation``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 msgid "Show navigation polygons when running the scene."
@@ -357,7 +349,7 @@ msgstr "Mostrar polígonos de navegação ao executar a cena."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:104
 msgid "``--frame-delay <ms>``"
-msgstr ""
+msgstr "``--frame-delay <ms>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:104
 msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
@@ -365,7 +357,7 @@ msgstr "Simular alta carga de CPU (atrase cada quadro em <ms> milissegundos)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:106
 msgid "``--time-scale <scale>``"
-msgstr ""
+msgstr "``--time-scale <escala>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:106
 msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
@@ -375,7 +367,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:108
 msgid "``--disable-render-loop``"
-msgstr ""
+msgstr "``--disable-render-loop``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:108
 msgid ""
@@ -387,7 +379,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "``--disable-crash-handler``"
-msgstr ""
+msgstr "``--disable-crash-handler``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "Disable crash handler when supported by the platform code."
@@ -397,7 +389,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:112
 msgid "``--fixed-fps <fps>``"
-msgstr ""
+msgstr "``--fixed-fps <fps>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:112
 msgid ""
@@ -409,7 +401,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "``--print-fps``"
-msgstr ""
+msgstr "``--print-fps``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "Print the frames per second to the stdout."
@@ -417,11 +409,11 @@ msgstr "Imprima os quadros por segundo para o stdout."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "**Standalone tools**"
-msgstr ""
+msgstr "**Ferramentas independentes**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
 msgid "``-s <script>``, ``--script <script>``"
-msgstr ""
+msgstr "``-s <script>``, ``--script <script>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
 msgid "Run a script."
@@ -429,16 +421,15 @@ msgstr "Executar um script."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "``--check-only``"
-msgstr ""
+msgstr "``--check-only``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
-#, fuzzy
 msgid "Only parse for errors and quit (use with ``--script``)."
-msgstr "Analise apenas erros e saia (use com `` --script``)."
+msgstr "Apenas procure erros e saia (use com `` --script``)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:126
 msgid "``--export <target>``"
-msgstr ""
+msgstr "``--export <destino>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:126
 msgid ""
@@ -452,58 +443,59 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid "``--export-debug <target>``"
-msgstr ""
+msgstr "``--export-debug <destino>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid ""
 "Like ``--export``, but use debug template (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Como o ``--export``, mas usa o template de debug (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` deve estar habilitado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid "``--doctool <path>``"
-msgstr ""
+msgstr "``--doctool <caminho>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
-#, fuzzy
 msgid ""
 "Dump the engine API reference to the given <path> in XML format, merging if "
 "existing files are found (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
-"Despeje a referência da API do motor para o <caminho> dado em formato XML, "
+"Despeje a referência da API da engine para o <caminho> dado em formato XML, "
 "fundindo se arquivos existentes forem encontrados (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"<doc_introduction_to_the_buildsystem_tools>` deve estar habilitado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid "``--no-docbase``"
-msgstr ""
+msgstr "``--no-docbase``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid ""
 "Disallow dumping the base types (used with ``--doctool``, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Não permitir o despejamento de tipos base (usado com ``--doctool``, :ref:"
+"`tools <doc_introduction_to_the_buildsystem_tools>` deve estar habilitado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
 msgid "``--build-solutions``"
-msgstr ""
+msgstr "``--build-solutions``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
-#, fuzzy
 msgid ""
 "Build the scripting solutions (e.g. for C# projects, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
-"Construa as soluções de script (por exemplo, para projetos em C #, ref: "
+"Construa as soluções de script (por exemplo, para projetos em C#, :ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` deve estar ativado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:136
 msgid "``--gdnative-generate-json-api``"
-msgstr ""
+msgstr "``--gdnative-generate-json-api``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:136
-#, fuzzy
 msgid ""
 "Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -513,10 +505,9 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
 msgid "``--test <test>``"
-msgstr ""
+msgstr "``--test <teste>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
-#, fuzzy
 msgid ""
 "Run a unit test. Use ``--help`` first to display the list of tests. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -530,7 +521,6 @@ msgid "Path"
 msgstr "Caminho"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:144
-#, fuzzy
 msgid ""
 "It is recommended that your Godot binary be in your PATH environment "
 "variable, so it can be executed easily from any place by typing ``godot``. "
@@ -538,10 +528,9 @@ msgid ""
 "making sure it is called ``godot``."
 msgstr ""
 "É Recomendado que o seu binário na Godot esteja na sua variável de ambiente "
-"PATH, de modo que possa ser executado facilmente de qualquer lugar, "
-"digitando `` godot``. Você pode fazer isso no Linux colocando o binário da "
-"Godot em `` / usr / local / bin`` e certificando-se de que ele é chamado "
-"como `` godot``."
+"PATH, de modo que possa ser executado facilmente de qualquer lugar digitando "
+"`` godot``. Você pode fazer isso no Linux colocando o binário da Godot em ``/"
+"usr/local/bin`` e certificando-se de que ele se chama ``godot``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:150
 msgid "Setting the project path"
@@ -598,13 +587,12 @@ msgid "Running the editor"
 msgstr "Executando o editor"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:196
-#, fuzzy
 msgid ""
 "Running the editor is done by executing Godot with the ``-e`` flag. This "
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
-"Rodar o editor é feito executando godot com o sinalizador `` -e``. Isso deve "
+"Rodar o editor é feito executando Godot com o sinalizador ``-e``. Isso deve "
 "ser feito a partir do diretório do projeto ou de um subdiretório, caso "
 "contrário, o comando será ignorado e o gerenciador de projetos será exibido."
 
@@ -655,16 +643,15 @@ msgid "Debugging"
 msgstr "Depuração"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:242
-#, fuzzy
 msgid ""
 "Catching errors in the command line can be a difficult task because they "
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for running either the game or a simple scene."
 msgstr ""
 "Capturar erros na linha de comando pode ser uma tarefa difícil porque eles "
-"simplesmente voam. Para isso, um depurador de linha de comando é fornecido "
-"adicionando `` -d``. Funciona tanto para rodar o jogo quanto para uma cena "
-"simples."
+"simplesmente passam voando. Para isso, um depurador de linha de comando é "
+"fornecido adicionando ``-d``. Funciona tanto para rodar o jogo quanto para "
+"uma cena simples."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:257
 msgid "Exporting"

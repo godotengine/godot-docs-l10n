@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,15 +72,15 @@ msgstr ""
 msgid "Here is a complete class example based on these guidelines:"
 msgstr "이 가이드라인을 기반으로 한 전체 클래스 예제입니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:92
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:94
 msgid "Formatting"
 msgstr "서식(Formatting)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:95
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:97
 msgid "Encoding and special characters"
 msgstr "인코딩과 특수 문자"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:97
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:99
 msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
@@ -88,12 +88,12 @@ msgstr ""
 "줄 바꿈을 위해 라인 피드 (**LF**) 문자를 사용합니다. CRLF나 CR은 사용하지 않"
 "습니다 *(편집기 기본 설정)*"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:98
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:100
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
 "각 파일의 끝에 하나의 라인 피드 문자를 사용합니다. *(편집기 기본 설정)*"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:99
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:101
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
@@ -102,99 +102,104 @@ msgstr ""
 "%EC%88%9C%EC%84%9C_%ED%91%9C%EC%8B%9D>`_ 없이 **UTF-8** 인코딩을 사용합니다. "
 "*(편집기 기본 설정)*"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:100
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
 "들여쓰기로 스페이스바 대신 **Tab(탭)** 키를 사용합니다. *(편집기 기본 설정)*"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:103
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 msgid "Indentation"
 msgstr "들여쓰기(Indentation)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
-msgid "Each indent level should be one greater than the block containing it."
-msgstr "각 들여쓰기 수준은 그것을 포함하는 블록보다 한 단계 더 커야합니다."
-
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:146
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:199
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:223
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:270
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:300
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:325
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:345
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:371
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:660
+msgid "Each indent level should be one greater than the block containing it."
+msgstr "들여쓰기 너비는 블록 바깥보다 한 칸 더 커야 됩니다."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:109
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:129
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:148
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:201
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:225
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:272
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:302
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:662
 msgid "**Good**:"
 msgstr "**좋음**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:135
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:169
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:210
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:229
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:280
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:307
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:332
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:352
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:381
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:116
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:171
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:212
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:231
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:309
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 msgid "**Bad**:"
 msgstr "**나쁨**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:124
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:126
 msgid ""
 "Use 2 indent levels to distinguish continuation lines from regular code "
 "blocks."
 msgstr ""
-"계속되는 줄은 정규 코드 블록과 구분하기 위해 2단계의 들여쓰기 수준을 사용합니"
-"다."
+"정규 코드 블록과 이어지는 줄을 구분하기 위해 2 칸 들여쓰기를 사용하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:143
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:145
 msgid ""
 "Exceptions to this rule are arrays, dictionaries, and enums. Use a single "
 "indentation level to distinguish continuation lines:"
 msgstr ""
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
-msgid "Trailing comma"
-msgstr ""
+"이 규칙의 예외는 배열, 딕셔너리, 열거형입니다. 연속 선을 구분하려면 한 칸 들"
+"여쓰기를 사용하세요:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
+msgid "Trailing comma"
+msgstr "쉼표 매달기(Trailing comma)"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:197
 msgid ""
 "Use a trailing comma on the last line in arrays, dictionaries, and enums. "
 "This results in easier refactoring and better diffs in version control as "
 "the last line doesn't need to be modified when adding new elements."
 msgstr ""
+"배열, 딕셔너리, 열거형의 마지막 줄에 쉼표 매달기를 사용하세요. 이렇게 하면 "
+"새 요소를 추가해도 마지막 줄을 수정하지 않아도 되기 때문에, 리팩토링하기 쉽"
+"고 버전 제어에서 비교가 더 좋습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:221
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:223
 msgid ""
 "Trailing commas are unnecessary in single-line lists, so don't add them in "
 "this case."
 msgstr ""
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:236
-msgid "Blank lines"
-msgstr "공백 줄"
+"쉼표 매달기는 한 줄 목록에는 불필요합니다. 따라서 이 경우는 사용하지 마세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
+msgid "Blank lines"
+msgstr "공백 줄(Blank lines)"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:240
 msgid "Surround functions and class definitions with two blank lines:"
 msgstr "함수와 클래스 정의를 두 개의 공백 줄로 묶습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:253
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:255
 msgid "Use one blank line inside functions to separate logical sections."
 msgstr "논리 섹션을 분리하기 위해 함수 안에 하나의 공백 줄을 사용합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:256
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
 msgid "Line length"
 msgstr "줄 길이"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:260
 msgid "Keep individual lines of code under 100 characters."
 msgstr "코드 한 줄은 100 문자 이내로 유지합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:260
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:262
 msgid ""
 "If you can, try to keep lines under 80 characters. This helps to read the "
 "code on small displays and with two scripts opened side-by-side in an "
@@ -204,11 +209,11 @@ msgstr ""
 "기 쉽고, 외부 텍스트 편집기에서 양쪽에 두 스크립트가 열려있는 화면에서도 읽"
 "기 쉽습니다. 예를 들어 서로 다른 코드 개정판을 볼 때가 있죠."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:265
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:267
 msgid "One statement per line"
 msgstr "한 줄에 하나의 명령문"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:267
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:269
 msgid ""
 "Never combine multiple statements on a single line. No, C programmers, not "
 "even with a single line conditional statement."
@@ -216,15 +221,15 @@ msgstr ""
 "한 줄에 여러 명령문을 묶지 마세요. C 프로그래머라면 한 줄에 조건문을 함께 사"
 "용하지 마세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:288
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:290
 msgid "The only exception to that rule is the ternary operator:"
 msgstr "유일한 예외라면 삼항(Ternary) 연산자일 것입니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:295
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
 msgid "Avoid unnecessary parentheses"
 msgstr "불필요한 괄호 피하기"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:299
 msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations, they only reduce readability."
@@ -232,25 +237,25 @@ msgstr ""
 "표현식과 조건문에 괄호를 사용하지 마십시오. 연산 명령에 필요한 경우가 아니라"
 "면, 가독성만 떨어뜨릴 것입니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:315
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
 msgid "Boolean operators"
 msgstr "불리언(Boolean) 연산자"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
 msgid ""
 "Prefer the plain English versions of boolean operators, as they are the most "
 "accessible:"
 msgstr "불리언 연산자의 영어 버전이 가장 접근하기 쉽습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:321
 msgid "Use ``and`` instead of ``&&``."
 msgstr "``&&`` 대신 ``and``\\ 를 사용하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:320
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
 msgid "Use ``or`` instead of ``||``."
 msgstr "``||`` 대신 ``or``\\ 를 사용하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:324
 msgid ""
 "You may also use parentheses around boolean operators to clear any "
 "ambiguity. This can make long expressions easier to read."
@@ -258,11 +263,11 @@ msgstr ""
 "모호한 표현을 막고자 불리언 연산자 주변에 괄호를 사용합니다. 이렇게 하면 긴 "
 "표현식도 읽기 쉬워집니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:340
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:342
 msgid "Comment spacing"
 msgstr "주석(Comment) 간격"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:342
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:344
 msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
@@ -270,7 +275,7 @@ msgstr ""
 "표준 주석은 한 칸 띄고 시작해야 합니다. 하지만 코드에 놓은 주석은 띄지 않습니"
 "다. 이렇게 하면 코드를 비활성화한 것과 텍스트 주석을 구분하기 좋습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:361
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:363
 msgid ""
 "In the script editor, to toggle the selected code commented, press "
 "<kbd>Ctrl</kbd> <kbd>K</kbd>. This feature adds a single # sign at the start "
@@ -279,11 +284,11 @@ msgstr ""
 "스크립트 편집기에서 선택한 코드를 주석으로 바꾸려면 <kbd>Ctrl</kbd> <kbd>K</"
 "kbd>\\ 를 누르세요. 누르면 선택한 줄의 처음 부분에 # 기호가 생깁니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:366
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 msgid "Whitespace"
 msgstr "공백"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
 msgid ""
 "Always use one space around operators and after commas. Also, avoid extra "
 "spaces in dictionary references and function calls."
@@ -291,15 +296,15 @@ msgstr ""
 "연산자와 쉼표 뒤에는 한 칸을 띄어주세요. 그리고 딕셔너리 참조와 함수 호출에"
 "는 띄어쓰기를 피하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:391
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:393
 msgid "Don't use spaces to align expressions vertically:"
 msgstr "표현식이 수직으로 나열하는 띄어쓰기를 하지 마세요:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:400
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
 msgid "Quotes"
 msgstr "따옴표"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:404
 msgid ""
 "Use double quotes unless single quotes make it possible to escape fewer "
 "characters in a given string. See the examples below:"
@@ -307,11 +312,11 @@ msgstr ""
 "작은 따옴표로 주어진 문자열을 더 작은 문자 수로 이스케이프하게 만드는 것이 아"
 "니라면 큰 따옴표를 사용하세요. 아래의 예제를 참고하세요:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 msgid "Naming conventions"
 msgstr "명명 규칙"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:426
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, leading to "
@@ -320,29 +325,29 @@ msgstr ""
 "이러한 명명 규칙은 Godot 엔진 스타일을 따릅니다. 이 규칙을 깨면 코드는 내장 "
 "명명 규칙으로 망가지며, 일관되지 않은 코드가 됩니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:429
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
 msgid "Classes and nodes"
 msgstr "클래스와 노드"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 msgid "Use PascalCase for class and node names:"
 msgstr "클래스와 노드 이름에는 파스칼 표기법(PascalCase)을 사용하세요:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:437
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:439
 msgid "Also use PascalCase when loading a class into a constant or a variable:"
 msgstr ""
 "그리고 상수 또는 변수로 클래스를 불러올 때도 파스칼 표기법(PascalCase)을 사용"
 "하세요:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:444
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:446
 msgid "Functions and variables"
 msgstr "함수와 변수"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:446
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:448
 msgid "Use snake\\_case to name functions and variables:"
 msgstr "함수와 변수 이름에는 스네이크 표기법(snake\\_case)를 사용하세요:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:453
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:455
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods functions the user must "
 "override, private functions, and private variables:"
@@ -350,19 +355,19 @@ msgstr ""
 "개인 함수, 개인 변수, 사용자가 다시 정의하는 가상 메서드 함수 앞에는 밑줄 "
 "(\\_) 하나가 있어야 합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:462
-msgid "Signals"
-msgstr "시그널(Signal)"
-
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:464
+msgid "Signals"
+msgstr "시그널"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:466
 msgid "Use the past tense to name signals:"
 msgstr "시그널의 이름에는 과거형을 사용합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:472
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:474
 msgid "Constants and enums"
 msgstr "상수(Constant)와 열거형(enum)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:474
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:476
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
@@ -370,7 +375,7 @@ msgstr ""
 "CONSTANT\\_CASE로 상수를 작성합니다. 다시 말해, 모든 단어는 대문자로 하고 띄"
 "어쓰기 대신 밑줄 (\\_)을 사용합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:481
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:483
 msgid ""
 "Use PascalCase for enum *names* and CONSTANT\\_CASE for their members, as "
 "they are constants:"
@@ -378,11 +383,11 @@ msgstr ""
 "열거형 *이름*\\ 에는 파스칼 표기법(PascalCase)을 사용하고, 열거형의 멤버에는 "
 "상수와 마찬가지로 CONSTANT\\_CASE를 사용합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:495
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:497
 msgid "Code order"
 msgstr "코드 순서"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:497
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:499
 msgid ""
 "This first section focuses on code order. For formatting, see :ref:"
 "`formatting`. For naming conventions, see :ref:`naming_conventions`."
@@ -391,11 +396,11 @@ msgstr ""
 "참고해주세요. 명명 규칙에 관해서는 :ref:`naming_conventions`\\ 을 참고해주세"
 "요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:500
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:502
 msgid "We suggest to organize GDScript code this way:"
 msgstr "제안하는 GDScript 코드 구조는 다음과 같습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:523
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:525
 msgid ""
 "We optimized the order to make it easy to read the code from top to bottom, "
 "to help developers reading the code for the first time understand how it "
@@ -405,25 +410,25 @@ msgstr ""
 "코드가 어떻게 작동하는 지 알도록, 그리고 변수 선언의 순서와 관련된 오류가 발"
 "생하지 않도록 말이죠."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:527
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:529
 msgid "This code order follows four rules of thumb:"
 msgstr "이 코드 순서는 네 가지 규칙을 따릅니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:529
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:531
 msgid "Properties and signals come first, followed by methods."
 msgstr "속성과 시그널이 첫 번째로 옵니다. 그 뒤는 메서드가 나옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:530
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:532
 msgid "Public comes before private."
 msgstr "공개(Public) 코드가 개인(Private) 코드보다 먼저 옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:531
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:533
 msgid "Virtual callbacks come before the class's interface."
 msgstr ""
 "가상 콜백(Virtual Callback)이 클래스의 인터페이스(Class's Interface)보다 먼"
 "저 옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:532
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:534
 msgid ""
 "The object's construction and initialization functions, ``_init`` and "
 "``_ready``, come before functions that modify the object at runtime."
@@ -431,11 +436,11 @@ msgstr ""
 "객체의 구조와 초기화 함수인 ``_init``\\ 과 ``_ready``\\ 는 런타임에서 객체를 "
 "수정하도록 함수 이전에 옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:537
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:539
 msgid "Class declaration"
 msgstr "클래스 선언(Declaration)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:539
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:541
 msgid ""
 "If the code is meant to run in the editor, place the ``tool`` keyword on the "
 "first line of the script."
@@ -443,119 +448,145 @@ msgstr ""
 "코드가 편집기에서 작동하게 하려면, 스크립트의 첫 번째 줄에 ``tool`` 키워드를 "
 "배치하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:542
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:544
 msgid ""
 "Follow with the `class_name` if necessary. You can turn a GDScript file into "
 "a global type in your project using this feature. For more information, see :"
 "ref:`doc_gdscript`."
 msgstr ""
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:546
-msgid "Then, add the `extends` keyword if the class extends a built-in type."
-msgstr ""
+"`class_name`\\ 이 있다면 바로 아래에 배치하세요. tool 기능을 사용하면 "
+"GDScript를 프로젝트의 전역 유형으로 바꿀 수 있습니다. 자세한 설명은 :ref:"
+"`doc_gdscript`\\ 를 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:548
+msgid "Then, add the `extends` keyword if the class extends a built-in type."
+msgstr ""
+"다음으로, 클래스가 내장 유형을 확장하고 있다면 `extends` 키워드를 추가하세요."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:550
 msgid ""
 "Following that, you should have the class's optional docstring as comments. "
 "You can use that to explain the role of your class to your teammates, how it "
 "works, and how other developers should use it, for example."
 msgstr ""
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:560
-#, fuzzy
-msgid "Signals and properties"
-msgstr "노드 속성"
+"이 밑에는 클래스에 관한 별개의 문서(Docstring)를 주석으로 넣어야 합니다. 클래"
+"스의 역할을 설명할 때 사용할 수 있습니다. 다른 동료나 사용설명서 등으로 쓸 "
+"수 있죠."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:562
+msgid "Signals and properties"
+msgstr "시그널(Signal)과 속성(Property)"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:564
 msgid ""
 "Write signal declarations, followed by properties, that is to say, member "
 "variables, after the docstring."
 msgstr ""
+"Docstring이 끝나면 시그널 선언을 작성한 뒤에 속성, 즉, 멤버 변수를 작성합니"
+"다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:565
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:567
 msgid ""
 "Enums should come after signals, as you can use them as export hints for "
 "other properties."
 msgstr ""
+"열거형(Enum)은 시그널 뒤에 나와야 합니다. 다른 속성의 내보내기 힌트로 사용할 "
+"수 있기 때문이죠."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:568
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:570
 msgid ""
 "Then, write constants, exported variables, public, private, and onready "
 "variables, in that order."
 msgstr ""
+"그런 다음, 상수(Constant), 내보낸 변수, 공개(Public), 개인(Private), onready "
+"변수를 순서대로 작성하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:591
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:593
 msgid ""
 "The GDScript compiler evaluates onready variables right before the "
 "``_ready`` callback. You can use that to cache node dependencies, that is to "
 "say, to get child nodes in the scene that your class relies on. This is what "
 "the example above shows."
 msgstr ""
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:598
-#, fuzzy
-msgid "Methods and static functions"
-msgstr "정적 함수(Static functions)"
+"GDScript 컴파일러는 onready 변수를 ``_ready`` 콜백 바로 이전에 실행합니다. 따"
+"라서 노드 종속성을 처리할 때 사용할 수 있습니다. 말 그대로 씬에서 클래스에 의"
+"존하는 자식 노드를 가져올 수 있다는 것이죠. 위 예제에서 이 작업을 보여줍니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:600
-msgid "After the class's properties come the methods."
-msgstr ""
+msgid "Methods and static functions"
+msgstr "메서드(Method)와 정적(Static) 함수"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:602
+msgid "After the class's properties come the methods."
+msgstr "클래스 속성 뒤에는 메서드가 옵니다."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:604
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
 "Godot calls when it adds a node to the scene tree."
 msgstr ""
+"엔진이 메모리에 객체를 만들 때 호출하는 ``_init()`` 콜백 메서드로 시작하세"
+"요. 그 뒤로 Godot가 씬 트리에 노드를 추가할 때 호출하는 ``_ready()`` 콜백이 "
+"옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:608
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
 msgstr ""
+"이 함수가 객체를 어떻게 초기화할 지 보여주기 때문에 가장 먼저 와야 합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:609
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:611
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
 "and interactions with the game engine."
 msgstr ""
+"``_unhandled_input()``\\ 과 ``_physics_process``\\ 와 같은 다른 내장 가상 콜"
+"백은 다음에 나와야 합니다. 이 메서드는 객체의 메인 루프와 게임 엔진과의 상호"
+"작용을 제어합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
 msgstr ""
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:650
-#, fuzzy
-msgid "Static typing"
-msgstr "정적 함수"
+"이 다음은 순서에 따라 클래스 인터페이스의 나머지인, 공개 메서드와 개인 메서드"
+"가 옵니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:652
+msgid "Static typing"
+msgstr "정적 타이핑(Static Typing)"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:654
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:655
-#, fuzzy
-msgid "Type hints"
-msgstr "타입(Types)"
+"Godot 3.1부터, GDScript는 :ref:`선택 정적 타이핑<doc_gdscript_static_typing>`"
+"\\ 을 지원합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:657
+msgid "Type hints"
+msgstr "유형 힌트(Type Hint)"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:659
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
+"변수의 이름 바로 뒤에, 띄어쓰기 없이 쌍점을 배치하세요. 그러면 GDScript 컴파"
+"일러는 변수의 유형을 추론합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:676
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:678
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
+"컴파일러가 유형 힌트를 추론할 때는 쌍점과 등호를 함께 작성합니다: ``:=``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:682
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:684
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
-msgstr ""
+msgstr "함수를 정의할 때, 반환 유형 화살표의 양쪽에는 띄어쓰기를 추가하세요."

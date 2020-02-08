@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,28 +27,34 @@ msgid ""
 "to become familiar with it in order to expand your horizons as a graphics "
 "developer."
 msgstr ""
+"補間は、グラフィックプログラミングの非常に基本的な操作です。グラフィックス開"
+"発者としての視野を広げるために、これに慣れることは良いことです。"
 
 #: ../../docs/tutorials/math/interpolation.rst:8
 msgid ""
 "The basic idea is that you want to transition from A to B. A value ``t``, "
 "represents the states in-between."
 msgstr ""
+"基本的な考え方は、AからBに移行することです。値 ``t`` は、中間の状態を表しま"
+"す。"
 
 #: ../../docs/tutorials/math/interpolation.rst:10
 msgid ""
 "As an example if ``t`` is 0, then the state is A. If ``t`` is 1, then the "
 "state is B. Anything in-between is an *interpolation*."
 msgstr ""
+"たとえば、\\ ``t`` が0の場合、状態はAです。\\ ``t`` が1の場合、状態はBです。"
+"中間はすべて\\ *補間*\\ です。"
 
 #: ../../docs/tutorials/math/interpolation.rst:12
 msgid ""
 "Between two real (floating point) numbers, a simple interpolation is usually "
 "described as:"
-msgstr ""
+msgstr "2つの実数(浮動小数点)の間では、単純な補間は通常次のように記述されます:"
 
 #: ../../docs/tutorials/math/interpolation.rst:19
 msgid "And often simplified to:"
-msgstr ""
+msgstr "多くの場合、次のように簡略化されます:"
 
 #: ../../docs/tutorials/math/interpolation.rst:26
 msgid ""
@@ -56,6 +62,9 @@ msgid ""
 "another at *constant speed* is *\"linear\"*. So, when you hear about *Linear "
 "Interpolation*, you know they are referring to this simple formula."
 msgstr ""
+"*一定の速度*\\ で値を別の値に変換するこのタイプの補間の名前は\\ *\"線形"
+"(linear)\"*\\ です。したがって、\\ *線形補間*\\ について聞いたとき、あなたは"
+"彼らがこの単純な式を参照していることを知っています。"
 
 #: ../../docs/tutorials/math/interpolation.rst:28
 msgid ""
@@ -63,6 +72,8 @@ msgid ""
 "recommended read afterwards is the :ref:`Bezier <doc_beziers_and_curves>` "
 "page."
 msgstr ""
+"他のタイプの補間がありますが、ここでは説明しません。後で :ref:`Bezier "
+"<doc_beziers_and_curves>` のページを読むことをお勧めします。"
 
 #: ../../docs/tutorials/math/interpolation.rst:31
 msgid "Vector interpolation"
@@ -76,6 +87,11 @@ msgid ""
 "<class_Vector2_method_linear_interpolate>` and :ref:`Vector3."
 "linear_interpolate() <class_Vector3_method_linear_interpolate>`."
 msgstr ""
+"ベクトルタイプ(:ref:`Vector2 <class_Vector2>` および :ref:`Vector3 "
+"<class_Vector3>`)も補間できます。それらはそれを行う便利な関数を備えています :"
+"ref:`Vector2.linear_interpolate() <class_Vector2_method_linear_interpolate>` "
+"および :ref: `Vector3.linear_interpolate() "
+"<class_Vector3_method_linear_interpolate>` です。"
 
 #: ../../docs/tutorials/math/interpolation.rst:36
 msgid ""
@@ -84,19 +100,24 @@ msgid ""
 "cubic_interpolate() <class_Vector3_method_linear_interpolate>`, which do a :"
 "ref:`Bezier <doc_beziers_and_curves>` style interpolation."
 msgstr ""
+"三次補間の場合、\\ :ref:`Vector2.cubic_interpolate() "
+"<class_Vector2_method_linear_interpolate>` および :ref:`Vector3."
+"cubic_interpolate() <class_Vector3_method_linear_interpolate>` もあり、これら"
+"は :ref:`Bezier <doc_beziers_and_curves>` スタイルの補間を行います。"
 
 #: ../../docs/tutorials/math/interpolation.rst:38
 msgid ""
 "Here is simple pseudo-code for going from point A to B using interpolation:"
 msgstr ""
+"補間を使用してポイントAからBに移動するための簡単な擬似コードを次に示します:"
 
 #: ../../docs/tutorials/math/interpolation.rst:48
 msgid "It will produce the following motion:"
-msgstr ""
+msgstr "次のモーションを生成します:"
 
 #: ../../docs/tutorials/math/interpolation.rst:53
 msgid "Transform interpolation"
-msgstr "変形補間"
+msgstr "幾何学変換(変形)の補間"
 
 #: ../../docs/tutorials/math/interpolation.rst:55
 msgid ""
@@ -105,19 +126,23 @@ msgid ""
 "the function :ref:`Transform.interpolate_with() "
 "<class_Transform_method_interpolate_with>` can be used."
 msgstr ""
+"また、変換全体を補間することもできます(使用するばあいは、均一なスケール、また"
+"は少なくとも同じ非均一なスケールを持っていることを確認してください)。このため"
+"に、関数 :ref:`Transform.interpolate_with() "
+"<class_Transform_method_interpolate_with>` を使用できます。"
 
 #: ../../docs/tutorials/math/interpolation.rst:58
 msgid ""
 "Here is an example of transforming a monkey from Position1 to Position2:"
-msgstr ""
+msgstr "以下は、猿をPosition1からPosition2に変換する例です:"
 
 #: ../../docs/tutorials/math/interpolation.rst:62
 msgid "Using the following pseudocode:"
-msgstr ""
+msgstr "次の擬似コードを使用します:"
 
 #: ../../docs/tutorials/math/interpolation.rst:74
 msgid "And again, it will produce the following motion:"
-msgstr ""
+msgstr "また、次のモーションを生成します:"
 
 #: ../../docs/tutorials/math/interpolation.rst:80
 msgid "Smoothing motion"
@@ -128,13 +153,17 @@ msgid ""
 "Interpolation can be used to smooth movement, rotation, etc. Here is an "
 "example of a circle following the mouse using smoothed motion:"
 msgstr ""
+"補間は、動きや回転などを滑らかにするために使用できます。これは、滑らかな動き"
+"を使用したマウスに追従する円の例です:"
 
 #: ../../docs/tutorials/math/interpolation.rst:94
 msgid "Here is how it looks:"
-msgstr ""
+msgstr "次の様に見えます:"
 
 #: ../../docs/tutorials/math/interpolation.rst:98
 msgid ""
 "This useful for smoothing camera movement, allies following you (ensuring "
 "they stay within a certain range), and many other common game patterns."
 msgstr ""
+"これは、カメラの動きを滑らかにしたり、仲間を追いかけたり(一定範囲内にとどまる"
+"ようにしたり)、その他多くの一般的なゲームパターンに役立ちます。"

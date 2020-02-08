@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:4
 msgid "Nodes and terminology"
-msgstr "노드와 전문 용어"
+msgstr "노드와 전문 용어(Nodes and terminology)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:6
 msgid ""
@@ -32,16 +32,16 @@ msgid ""
 "referring to *Node* here, it will be implied that a *Visual Script Node* is "
 "referred to unless indicated otherwise."
 msgstr ""
-"계속 하기 전에, *Node* 용어 사용에 유의해야 합니다. *Visual Script Nodes* (또"
-"는 일반적으로 *Nodes*)를 볼 때 이 텍스트는 당신이 그래프의 일부인 선으로 연결"
-"한 작은 상자를 보여줄 것입니다. *Scene Nodes*\\ 를 볼 때, 씬이 보이도록 구성"
-"하는 요소로, 트리의 일부분임을 상징합니다. 그들의 이름은 비슷하지만 그들의 함"
-"수는 다릅니다. 여기에서 *Node*\\ 를 본다면, 달리 명시되지 않는 한 *Visual "
-"Script Node*\\ 가 보여지는 것을 상징할 것입니다."
+"계속하기 전, *노드(Node)* 용어 사용을 유의해야 합니다. *Visual Script "
+"Nodes(비주얼 스크립트 노드)* (혹은 일반적으로 *Nodes*)를 언급할 때 이 단어는 "
+"선으로 연결되어 있는 작은 상자를 의미합니다. 그래프의 일부분이죠. 만일 *씬 노"
+"드(Scene Node)*\\ 를 언급하면 그것은 씬(Scene)을 구성하는 요소를 함축하고 있"
+"습니다. 이는 트리의 일부분이죠. 이 둘의 이름은 비슷하지만 기능은 천차만별입니"
+"다. 여기서 언급하는 *노드(Node)*\\ 는 *Visual Script Node*\\ 만을 의미합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:15
 msgid "Node properties"
-msgstr "노드 속성"
+msgstr "노드 속성(Node Property)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:17
 msgid ""
@@ -49,9 +49,9 @@ msgid ""
 "properties. In Godot, though, we try to avoid bloating the nodes with "
 "editable controls for the sake of readability."
 msgstr ""
-"대부분의 Visual scripting 구현과 마찬가지로, 각 노드에는 편집 가능한 속성이 "
-"있습니다. 하지만 godot에서는, 가독성을 높이기 위해 편집 가능한 제어 수단을 사"
-"용하여 노드가 팽창하는 것을 방지하려고 합니다."
+"대부분의 Visual scripting 구현과 마찬가지로, 각 노드는 편집할 수 있는 속성을 "
+"갖습니다. 하지만 Godot는 가독성을 위해, 편집할 수 있는 기능으로 인해 노드가 "
+"부풀려지는 일을 피하려고 했습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:20
 msgid ""
@@ -115,8 +115,8 @@ msgid ""
 "considered an output, while, a port on the left side is an input. Connecting "
 "them allows information to flow to the next node."
 msgstr ""
-"*데이터 포트(Data Ports)* 포트는 타입 값을 포함합니다. 타입은 부울, 정수, 문"
-"자열, Vector3, 배열, 모든 객체 또는 씬 노드 등과 같은 일반 Godot 타입이 될 "
+"*데이터 포트(Data Ports)* 포트는 타입 값을 포함합니다. 타입은 불리언, 정수, "
+"문자열, Vector3, 배열, 모든 객체 또는 씬 노드 등과 같은 일반 Godot 타입이 될 "
 "수 있습니다. 노드의 오른쪽에 있는 *데이터 포트*는 출력으로 간주되며, 한편 왼"
 "쪽의 포트는 입력입니다. 이들을 연결하면 정보를 다음 노드로 전달할 수 있습니"
 "다."
@@ -318,7 +318,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 msgid "Signals"
-msgstr "시그널(Signal)"
+msgstr "시그널"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:166
 msgid ""
@@ -398,7 +398,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:211
 msgid "Constants"
-msgstr "상수(Constant)"
+msgstr "상수"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:213
 msgid ""

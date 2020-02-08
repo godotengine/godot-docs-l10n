@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,41 +18,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
-#, fuzzy
 msgid "GDScript exports"
-msgstr "GDScript"
+msgstr "Exports no GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
-#, fuzzy
 msgid "Introduction to exports"
-msgstr "Introdução ao editor do Godot"
+msgstr "Introdução a exports"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
 "they're attached to. They will also be available for editing in the property "
 "editor. Exporting is done by using the ``export`` keyword::"
 msgstr ""
-"Membros de classe podem ser exportados. Isso significa que seus valores são "
-"salvos junto com o recurso (por exemplo, a :ref:`scene <class_PackedScene>`) "
-"a que estão anexados. Eles também ficarão disponíveis para edição no editor "
-"de propriedades. A exportação é feita pela palavra-chave ``export``::"
+"Na Godot, membros de classe podem ser exportados. Isso significa que seus "
+"valores são salvos junto com o recurso (por exemplo, a :ref:`cena "
+"<class_PackedScene>`) a que estão anexados. Eles também ficarão disponíveis "
+"para edição no editor de propriedades. A exportação é feita pela palavra-"
+"chave ``export``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
-#, fuzzy
 msgid ""
 "An exported variable must be initialized to a constant expression or have an "
 "export hint in the form of an argument to the ``export`` keyword (see the "
 "*Examples* section below)."
 msgstr ""
 "Uma variável exportada deve inicializada por uma expressão constante ou ter "
-"uma dica de exportação na forma de um argumento da palavra-chave export "
-"(veja abaixo)."
+"uma dica de exportação na forma de um argumento da palavra-chave ``export`` "
+"(veja abaixo a seção *Exemplos*)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
-#, fuzzy
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
 "them visible and editable in the editor. This way, artists and game "
@@ -69,45 +65,44 @@ msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
 "syntax varies depending on the language."
 msgstr ""
+"Exportar propriedades também é possível em outras linguagens como C#. A "
+"sintaxe varia dependendo da linguagem."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
 msgid "Examples"
 msgstr "Exemplos"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
-#, fuzzy
 msgid ""
 "It must be noted that even if the script is not being run while in the "
 "editor, the exported properties are still editable. This can be used in "
 "conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
 "Perceba que mesmo se o script não estiver em execução enquanto estiver no "
-"editor, as propriedades exportadas ainda são editáveis (veja \"ferramenta\" "
-"abaixo)."
+"editor, as propriedades exportadas ainda são editáveis. Isso pode ser usado "
+"em conjunto com um :ref:`script em modo \"tool\" <doc_gdscript_tool_mode>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
 msgid "Exporting bit flags"
 msgstr "Exportando sinalizadores"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
 "set from the editor::"
 msgstr ""
 "Inteiros usados como sinalizadores podem armazenar múltiplos valores "
-"``verdadeiro``/``falso`` (boolianos) em uma propriedade. Usando a dica de "
-"exportação ``int, FLAGS``, eles podem ser configurados a partir do editor:"
+"``true``/``false`` (booleanos) em uma propriedade. Usando a dica de "
+"exportação ``int, FLAGS``, eles podem ser configurados a partir do editor::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
-#, fuzzy
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax::"
 msgstr ""
 "Restringir as flags a um certo número de flags nomeadas também é possível. A "
-"sintaxe é semelhante à sintaxe de enumeração:"
+"sintaxe é semelhante à sintaxe de enumeração::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:139
 msgid ""
@@ -133,7 +128,6 @@ msgid "Exporting arrays"
 msgstr "Exportando arrays"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
-#, fuzzy
 msgid ""
 "Exporting arrays works, but with an important caveat: while regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -141,9 +135,9 @@ msgid ""
 "cause them to change in all other instances. Exported arrays can have "
 "initializers, but they must be constant expressions."
 msgstr ""
-"Exportar arrays funciona, mas com uma importante ressalva: enquanto arrays "
-"comuns são criados localmente para cada instância da classe, arrays "
-"exportados são *compartilhados* entre todas as instâncias. Isso quer dizer "
-"que editá-los em uma instância os alterará em todas as outras também. Arrays "
-"exportados podem ter inicializadores, mas eles precisam ser expressões "
-"constantes."
+"Exportar matrizes funciona, mas com uma importante ressalva: enquanto "
+"matrizes comuns são criadas localmente para cada instância da classe, "
+"matrizes exportadas são *compartilhadas* entre todas as instâncias. Isso "
+"quer dizer que editá-las em uma instância as alterará em todas as outras "
+"também. Matrizes exportadas podem ter inicializadores, mas elas precisam ser "
+"expressões constantes."

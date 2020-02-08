@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/websocket.rst:4
 msgid "WebSocket"
-msgstr ""
+msgstr "\\ WebSocket"
 
 #: ../../docs/tutorials/networking/websocket.rst:7
 msgid "HTML5 and WebSocket"
-msgstr ""
+msgstr "HTML5およびWebSocket"
 
 #: ../../docs/tutorials/networking/websocket.rst:9
 msgid ""
@@ -32,6 +32,10 @@ msgid ""
 "server. Before that, browsers used to only support HTTPRequests, which is "
 "not well suited for bidirectional communication."
 msgstr ""
+"WebSocketプロトコルは、ブラウザがサーバーとの安定した双方向の接続を作成できる"
+"ようにするという当初の目標で、2011年に標準化されました。それ以前は、ブラウザ"
+"はHTTPRequestのみをサポートしていましたが、これは双方向通信にはあまり適してい"
+"ません。"
 
 #: ../../docs/tutorials/networking/websocket.rst:12
 msgid ""
@@ -42,6 +46,11 @@ msgid ""
 "VoIP and fast-paced games (see :ref:`WebRTC <doc_webrtc>` for those use "
 "cases)."
 msgstr ""
+"プロトコルは非常にシンプルで、メッセージベースであり、ブラウザにプッシュ通知"
+"を送信するための非常に強力なツールであり、チャット、ターンベースのゲームなど"
+"を実装するために使用されています。遅延のため、VoIPやテンポの速いゲームなどの"
+"リアルタイムアプリケーションには適していません(これらのユースケースについて"
+"は、\\ :ref:`WebRTC <doc_webrtc>` を参照してください)。"
 
 #: ../../docs/tutorials/networking/websocket.rst:14
 msgid ""
@@ -49,10 +58,15 @@ msgid ""
 "a raw TCP connection, WebSocket soon started to spread outside the browsers, "
 "in native applications as a mean to communicate with network servers."
 msgstr ""
+"そのシンプルさ、幅広い互換性、および生のTCP接続より使いやすいため、WebSocket"
+"は、ネットワークサーバーと通信するための手段として、ブラウザ以外のネイティブ"
+"アプリケーションですぐに広がり始めました。"
 
 #: ../../docs/tutorials/networking/websocket.rst:16
 msgid "Godot supports WebSocket in both native and HTML5 exports."
 msgstr ""
+"Godotは、ネイティブエクスポートとHTML5エクスポートの両方でWebSocketをサポート"
+"しています。"
 
 #: ../../docs/tutorials/networking/websocket.rst:19
 msgid "Using WebSocket in Godot"
@@ -67,38 +81,48 @@ msgid ""
 "See section on :ref:`high-level multiplayer <doc_high_level_multiplayer>` "
 "for more details."
 msgstr ""
+"WebSocketは、3つのメインクラス :ref:`WebSocketClient <class_WebSocketClient>`"
+"\\ 、\\ :ref:`WebSocketServer <class_WebSocketServer>` および :ref:"
+"`WebSocketPeer <class_WebSocketPeer>` を介してGodotに実装されます。WebSocket"
+"実装は、High Level Multiplayerと互換性があります。詳細については、\\ :ref:"
+"`high-level multiplayer <doc_high_level_multiplayer>` のセクションを参照して"
+"ください。"
 
 #: ../../docs/tutorials/networking/websocket.rst:24
 msgid "Minimal client example"
-msgstr "最小のクライアントの例"
+msgstr "最小限のクライアントの例"
 
 #: ../../docs/tutorials/networking/websocket.rst:26
 msgid ""
 "This example will show you how to create a WebSocket connection to a remote "
 "server, and how to send and receive data."
 msgstr ""
+"この例では、リモートサーバーへのWebSocket接続を作成する方法と、データを送受信"
+"する方法を示します。"
 
 #: ../../docs/tutorials/networking/websocket.rst:79
 msgid "This will print:"
-msgstr ""
+msgstr "これは次のように出力されます:"
 
 #: ../../docs/tutorials/networking/websocket.rst:87
 msgid "Minimal server example"
-msgstr ""
+msgstr "最小限のサーバーの例"
 
 #: ../../docs/tutorials/networking/websocket.rst:89
 msgid ""
 "This example will show you how to create a WebSocket server that listen for "
 "remote connections, and how to send and receive data."
 msgstr ""
+"この例では、リモート接続をリッスンするWebSocketサーバーを作成する方法と、デー"
+"タを送受信する方法を示します。"
 
 #: ../../docs/tutorials/networking/websocket.rst:145
 msgid "This will print (when a client connects) something similar to this:"
-msgstr ""
+msgstr "これは(クライアントが接続したときに)次のようなものを出力します:"
 
 #: ../../docs/tutorials/networking/websocket.rst:153
 msgid "Advanced chat demo"
-msgstr ""
+msgstr "高度なチャットデモ"
 
 #: ../../docs/tutorials/networking/websocket.rst:155
 msgid ""
@@ -107,3 +131,7 @@ msgid ""
 "demo projects <https://github.com/godotengine/godot-demo-projects>`_ under "
 "`networking/websocket_chat` and `networking/websocket_multiplayer`."
 msgstr ""
+"オプションとして、マルチプレイヤーの中レベルの抽象化とハイレベルマルチプレイ"
+"ヤーデモを使用するより高度なチャットデモは、\\ `networking/websocket_chat` "
+"と `networking/websocket_multiplayer` 内の `godot demo projects <https://"
+"github.com/godotengine/godot-demo-projects> `_ にあります。"

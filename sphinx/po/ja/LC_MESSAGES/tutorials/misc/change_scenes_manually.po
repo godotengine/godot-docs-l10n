@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:4
 msgid "Change scenes manually"
-msgstr ""
+msgstr "シーンを手動で変更する"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:6
 msgid ""
@@ -29,6 +29,11 @@ msgid ""
 "the \"current\" scene. Autoloads fall into this category, but so do scenes "
 "which one instances and adds to the tree at runtime:"
 msgstr ""
+"シーンを入れ替える方法をより詳細に制御できると便利な場合があります。前述のよ"
+"うに、\\ :ref:`Viewport <class_Viewport>` の子ノードは、生成する画像にレンダ"
+"リングします。これは、「現在の」シーン外のノードにも当てはまります。自動ロー"
+"ドはこのカテゴリに分類されますが、実行時にツリーにインスタンスを追加するシー"
+"ンも同様です:"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:38
 msgid ""
@@ -38,6 +43,10 @@ msgid ""
 "balancing operation speed and memory consumption as well as balancing data "
 "access and integrity."
 msgstr ""
+"サイクルを完了し、古いシーンと新しいシーンを交換するとき、開発者には複数の選"
+"択肢があります。\\ :ref:`Viewport <class_Viewport>` のビューからシーンを削除"
+"する方法は数多く存在します。トレードオフには、操作速度とメモリ消費のバランス"
+"をとることと、データアクセスと整合性のバランスを取る必要があります。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:44
 msgid ""
@@ -48,14 +57,20 @@ msgid ""
 "root node's name is \"Main\", one could do ``get_node(\"/root/Main\")."
 "free()`` to delete the whole scene."
 msgstr ""
+"**既存のシーンを削除できます。** :ref:`SceneTree.change_scene() "
+"<class_SceneTree_method_change_scene>` および :ref:`SceneTree."
+"change_scene_to() <class_SceneTree_method_change_scene_to>` は現在のシーンを"
+"すぐに削除します。ただし、開発者はメインシーンを削除することもできます。ルー"
+"トノードの名前が \"Main\" だとすると、\\ ``get_node(\"/root/Main\").free()`` "
+"を実行してシーン全体を削除できます。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:51
 msgid "Unloads memory."
-msgstr ""
+msgstr "メモリをアンロードします。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:53
 msgid "Pro: RAM is no longer dragging the dead weight."
-msgstr ""
+msgstr "長所: RAMはもはやデッドウェイトを引きずっていません。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:55
 msgid ""
@@ -63,12 +78,16 @@ msgid ""
 "back into memory again (takes time AND memory). Not a problem if returning "
 "soon is unnecessary."
 msgstr ""
+"短所: 再びメモリにロードし直す必要があるため、そのシーンに戻るのにコストがか"
+"かります(時間がかかります)。すぐに戻る必要がない場合は問題ありません。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:59
 msgid ""
 "Con: No longer have access to that scene's data. Not a problem if using that "
 "data soon is unnecessary."
 msgstr ""
+"短所: そのシーンのデータにアクセスできなくなります。そのデータをすぐに使用す"
+"る必要がない場合は問題ありません。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:62
 msgid ""
@@ -76,22 +95,30 @@ msgid ""
 "re-attaching one or more of its nodes to a different scene, or even directly "
 "to the :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
+"注: 1つまたは複数のノードを別のシーンに再アタッチするか、\\ :ref:`SceneTree "
+"<class_SceneTree>` に直接アタッチすることで、間もなく削除されるシーンのデータ"
+"を保存すると便利です。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:66
 msgid "Processing stops."
-msgstr ""
+msgstr "処理の停止。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:68
 msgid ""
 "Pro: No nodes means no process, physics process, or input handling. The CPU "
 "is available to work on the new scene's contents."
 msgstr ""
+"長所: ノードがないということは、プロセス、物理プロセス、または入力処理がない"
+"ことを意味します。 CPUは、新しいシーンのコンテンツを処理するために使用できま"
+"す。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:71
 msgid ""
 "Con: Those nodes' processing and input handling no longer operate. Not a "
 "problem if using the updated data is unnecessary."
 msgstr ""
+"短所: これらのノードの処理と入力処理は動作しなくなります。更新されたデータを"
+"使用する必要がない場合は問題ありません。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:74
 msgid ""
@@ -99,40 +126,48 @@ msgid ""
 "detection of the nodes, we can hide the entire node sub-tree from the "
 "player's perspective."
 msgstr ""
+"**既存のシーンを非表示にできます。** ノードの可視性または衝突検出を変更するこ"
+"とにより、プレイヤーの視点からノードサブツリー全体を隠すことができます。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:78
 msgid "Memory still exists."
-msgstr ""
+msgstr "メモリはまだ存在しています。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:80
 msgid "Pro: One can still access the data if need be."
-msgstr ""
+msgstr "長所: 必要に応じてデータにアクセスできます。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:82
 msgid "Pro: There's no need to move any more nodes around to save data."
-msgstr ""
+msgstr "長所: データを保存するためにノードを移動する必要はありません。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:84
 msgid ""
 "Con: More data is being kept in memory which will be become a problem on "
 "memory-sensitive platforms like web or mobile."
 msgstr ""
+"短所: より多くのデータがメモリに保持されているため、Webやモバイルなどのメモリ"
+"に敏感なプラットフォームで問題になります。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:87
 msgid "Processing continues."
-msgstr ""
+msgstr "処理は続行されます。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:89
 msgid ""
 "Pro: Data continues to receive processing updates, so the scene will keep "
 "updated any data within it that relies on delta time or frame data."
 msgstr ""
+"長所: データは処理の更新を引き続き受信するため、シーンは、デルタ時間またはフ"
+"レームデータに依存するデータを更新し続けます。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:93
 msgid ""
 "Pro: Nodes are still members of groups (since groups belong to the :ref:"
 "`SceneTree <class_SceneTree>`)."
 msgstr ""
+"長所: ノードはまだグループのメンバーです(グループは :ref:`SceneTree "
+"<class_SceneTree>` に属しているため)。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:96
 msgid ""
@@ -141,6 +176,9 @@ msgid ""
 "they go to ensure the target platform can support the load they are giving "
 "it."
 msgstr ""
+"短所: CPUの負担は両方のシーンに分かれています。負荷が多すぎると、フレームレー"
+"トが低下する可能性があります。ターゲットプラットフォームが提供する負荷をサ"
+"ポートできることを確認するために、パフォーマンスをテストする必要があります。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:101
 msgid ""
@@ -148,14 +186,18 @@ msgid ""
 "existing scene's root node. Then use :ref:`Node.remove_child(Node) "
 "<class_Node_method_remove_child>` to detach the entire scene from the tree."
 msgstr ""
+"**既存のシーンをツリーから削除できます。** 変数を既存のシーンのルートノードに"
+"割り当てます。次に :ref:`Node.remove_child(Node) "
+"<class_Node_method_remove_child>` を使用して、シーン全体をツリーからデタッチ"
+"します。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:106
 msgid "Memory still exists (similar pros/cons as with hiding it from view)."
-msgstr ""
+msgstr "メモリはまだ存在します(ビューから隠す場合と同様の長所と短所)。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:108
 msgid "Processing stops (similar pros/cons as with deleting it completely)."
-msgstr ""
+msgstr "処理は停止します(完全に削除する場合と同様の長所と短所)。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:110
 msgid ""
@@ -164,6 +206,10 @@ msgid ""
 "only call the one method add/remove_child pair of methods. It is similar to "
 "disabling game objects in other engines."
 msgstr ""
+"長所: この「非表示」のバリエーションは、表示/非表示がはるかに簡単です。シーン"
+"に対する複数の変更を追跡するのではなく、1つの add/remove_child のメソッドペア"
+"のみを呼び出す必要があります。他のエンジンでゲームオブジェクトを無効にする方"
+"法と似ています。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:115
 msgid ""
@@ -171,6 +217,9 @@ msgid ""
 "scene will become stale if it relies on delta time, input, groups, or other "
 "data that is derived from :ref:`SceneTree <class_SceneTree>` access."
 msgstr ""
+"短所: 表示のみから非表示にする場合とは異なり、デルタ時間、入力、グループ、ま"
+"たは :ref:`SceneTree <class_SceneTree>` アクセスから派生した他のデータに依存"
+"している場合、シーン内に含まれるデータは、古いままになってしまいます。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:120
 msgid ""
@@ -179,6 +228,9 @@ msgid ""
 "preserving a a scene's data between scene changes (adding the scene to the "
 "root node)."
 msgstr ""
+"多くのシーンを同時に表示したい場合もあります。おそらく、実行時に独自のシング"
+"ルトンを追加するか、シーンの変更間でシーンのデータを保持する(シーンをルート"
+"ノードに追加する)のでしょう。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:133
 msgid ""
@@ -187,6 +239,10 @@ msgid ""
 "cases where the intent is to render different content in different parts of "
 "the screen. Minimaps and split-screen multiplayer are good examples."
 msgstr ""
+"代わりに、\\ :ref:`ViewportContainers <class_ViewportContainer>` を使用して、"
+"複数のシーンを同時に表示したい場合があります。これは、画面のさまざまな部分に"
+"さまざまなコンテンツを表示することが目的の場合に最適です。ミニマップと分割画"
+"面マルチプレイヤーが良い例です。"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:138
 msgid ""
@@ -194,3 +250,5 @@ msgid ""
 "examine the effects of each and determine what path best fits their unique "
 "situation."
 msgstr ""
+"各オプションには最適なケースがあるため、それぞれの効果を調べて、それぞれの状"
+"況に最適なパスを決定する必要があります。"

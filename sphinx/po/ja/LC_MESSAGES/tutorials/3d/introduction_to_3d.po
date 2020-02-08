@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,12 @@ msgid ""
 "3D kinematic character tutorials, which are almost identical to their 2D "
 "counterparts."
 msgstr ""
+"3Dゲームの作成は難しい場合があります。 その余分なZ座標により、2Dゲームをシン"
+"プルにするのに役立った多くの一般的な手法が機能しなくなります。 この移行を支援"
+"するために、Godotは2Dおよび3Dに同様のAPIを使用していることに言及する価値があ"
+"ります。 ほとんどのノードは同じであり、2Dバージョンと3Dバージョンの両方に存在"
+"します。 実際、3Dプラットフォーマーチュートリアル、または3Dキネマティックキャ"
+"ラクターチュートリアルを確認する価値があります。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:14
 msgid ""
@@ -39,10 +45,14 @@ msgid ""
 "developers, not mathematicians or engineers) will help pave the way for you "
 "to develop 3D games efficiently."
 msgstr ""
+"3Dでは、数学は2Dよりもやや複雑です。したがって、wikiの :ref:"
+"`doc_vector_math` エントリ(数学者やエンジニアではなく、ゲーム開発者向けに特別"
+"に作成されたもの)をチェックすることで、3Dゲームを効率的に開発する道を開くのに"
+"役立ちます。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
-msgstr ""
+msgstr "Spatialノード"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 msgid ""
@@ -51,6 +61,9 @@ msgid ""
 "reasoning, the 3D engine uses the :ref:`Spatial <class_Spatial>` node for "
 "everything 3D."
 msgstr ""
+":ref:`Node2D <class_Node2D>` は2Dのベースノードです。\\ :ref:`Control "
+"<class_Control>` は、すべてのGUIのベースノードです。 この推論に従って、3Dエン"
+"ジンはすべての3Dに対して :ref:`Spatial <class_Spatial>` ノードを使用します。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 msgid ""
@@ -60,10 +73,15 @@ msgid ""
 "<class_Transform>`, or as 3 :ref:`Vector3 <class_Vector3>` members "
 "representing location, Euler rotation (x,y and z angles) and scale."
 msgstr ""
+"Spatialノードには、親ノードに相対的なローカルな幾何学変換があります(親ノード"
+"もSpatial型で\\ **あるか、または継承している**\\ 限り）。この変換は、4x3 :"
+"ref:`Transform <class_Transform>` として、または位置、オイラー回転(x、y、zの"
+"角度)およびスケールを表す3 :ref:`Vector3 <class_Vector3>` メンバーとしてアク"
+"セスできます。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
-msgstr ""
+msgstr "3Dコンテンツ"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:41
 msgid ""
@@ -73,6 +91,10 @@ msgid ""
 "in order to be imported in Godot (3D formats are not as standardized as "
 "images)."
 msgstr ""
+"画像コンテンツの読み込みと描画が簡単な2Dとは異なり、3Dはもう少し難しくなりま"
+"す。コンテンツは、特別な3Dツール(通常DCCと呼ばれます)で作成し、Godotでイン"
+"ポートするために交換用のファイル形式にエクスポートする必要があります(3D形式は"
+"画像ほど標準化されていません)。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:48
 msgid "DCC-created models"

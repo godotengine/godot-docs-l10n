@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,8 @@ msgid ""
 "approach to coding, VisualShaders are the visual alternative for creating "
 "shaders."
 msgstr ""
+"VisualScriptがコーディングにグラフィカルなアプローチを好むユーザーの代替手段"
+"であるように、VisualShadersはシェーダーを作成するための視覚的な代替手段です。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:10
 msgid ""
@@ -36,16 +38,23 @@ msgid ""
 "not expose all features of the shader script and using both in parallel "
 "might be necessary for specific effects."
 msgstr ""
+"シェーダーは本質的にビジュアルにリンクされているため、テクスチャ、マテリアル"
+"などのプレビューを使用したグラフベースのアプローチは、純粋にスクリプトベース"
+"のシェーダーと比較してさらに多くの利便性を提供します。一方、VisualShaderは"
+"シェーダースクリプトのすべての機能を公開するわけではなく、特定の効果のために"
+"両方を同時に使用する必要がある場合があります。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:18
 msgid ""
 "If you are not familiar with shaders, start by reading :ref:"
 "`doc_what_are_shaders`."
 msgstr ""
+"シェーダーに慣れていない場合は、\\ :ref:`doc_what_are_shaders` を読むことから"
+"始めてください。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:22
 msgid "Creating a VisualShader"
-msgstr "ビジュアルシェーダーの作成"
+msgstr "VisualShader(ビジュアルシェーダー)の作成"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:24
 msgid ""
@@ -53,11 +62,16 @@ msgid ""
 "using VisualShaders, create a new ``ShaderMaterial`` in an object of your "
 "choice."
 msgstr ""
+"VisualShaderは、任意の :ref:`class_ShaderMaterial` で作成できます。 "
+"VisualShaderの使用を開始するには、選択したオブジェクトに新しい "
+"``ShaderMaterial`` を作成します。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:29
 msgid ""
 "Then assign a :ref:`class_VisualShader` resource to the ``Shader`` property."
 msgstr ""
+"次に、\\ :ref:`class_VisualShader` リソースを ``Shader`` プロパティに割り当て"
+"ます。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:33
 msgid ""
@@ -65,33 +79,43 @@ msgid ""
 "open automatically. The layout of the Visual Shader Editor comprises two "
 "parts: the upper toolbar and the graph itself."
 msgstr ""
+"新しい ``VisualShader`` リソースをクリックすると、ビジュアルシェーダーエディ"
+"タが自動的に開きます。ビジュアルシェーダーエディタのレイアウトは、上部のツー"
+"ルバーとグラフ自体の2つの部分で構成されています。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:39
 msgid "From left to right in the toolbar:"
-msgstr ""
+msgstr "ツールバーの左から右へ:"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:41
 msgid ""
 "The ``Add Node`` button displays a popup menu to let you add nodes to the "
 "shader graph."
 msgstr ""
+"``ノードを追加...`` ボタンは、シェーダーグラフにノードを追加できるポップアッ"
+"プメニューを表示します。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:43
 msgid ""
 "The drop-down menu is the shader type: Vertex, Fragment and Light. Like for "
 "script shaders, it defines what built-in nodes will be available."
 msgstr ""
+"ドロップダウンメニューは、シェーダータイプ(頂点、フラグメント、Light)です。ス"
+"クリプトシェーダーの場合と同様に、使用可能なビルトインノードを定義します。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:45
 msgid ""
 "The following buttons and number input control the zooming level, grid "
 "snapping and distance between grid lines (in pixels)."
 msgstr ""
+"次のボタンと数値入力は、ズームレベル、グリッドスナップ、グリッドライン間の距"
+"離(ピクセル単位)を制御します。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:47
 msgid ""
 "The last icon shows the generated shader code corresponding to your graph."
 msgstr ""
+"最後のアイコンは、グラフに対応する生成されたシェーダーコードを示しています。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:51
 msgid ""
@@ -99,6 +123,9 @@ msgid ""
 "script shaders. It is advised to learn the basics of both to have a good "
 "understanding of the shading pipeline."
 msgstr ""
+"VisualShaderはコーディングを必要としませんが、スクリプトシェーダーと同じロ"
+"ジックを共有します。シェーディングパイプラインを十分に理解するために、両方の"
+"基本を学ぶことをお勧めします。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:55
 msgid ""
@@ -107,6 +134,9 @@ msgid ""
 "can be convenient to understand what a given node does and how to reproduce "
 "it in scripts."
 msgstr ""
+"ビジュアルシェーダーグラフは、背後でスクリプトシェーダーに変換されます。ツー"
+"ルバーの最後のボタンを押すと、このコードを表示できます。これは、特定のノード"
+"が何をするか、スクリプトでそれを再現する方法を理解するのに便利です。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:61
 msgid "Using the Visual Shader Editor"
@@ -120,10 +150,15 @@ msgid ""
 "button on the upper left corner or right click on any empty location in the "
 "graph, and a menu will pop up."
 msgstr ""
+"デフォルトでは、すべての新しい ``VisualShader`` には出力ノードがあります。す"
+"べてのノード接続は、出力ノードのソケットの1つで終了します。ノードは、シェー"
+"ダーを作成するための基本単位です。新しいノードを追加するには、左上隅の[ノード"
+"の追加]ボタンをクリックするか、グラフ内の空の場所を右クリックすると、メニュー"
+"がポップアップ表示されます。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:71
 msgid "This popup has the following properties:"
-msgstr "このポップアップには、次のプロパティがあります:"
+msgstr "このポップアップには次のプロパティがあります。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:73
 msgid ""
@@ -131,6 +166,9 @@ msgid ""
 "position and the created node, in that case, will also be placed under that "
 "position; otherwise, it will be created at the graph's center."
 msgstr ""
+"グラフを右クリックすると、このメニューがカーソル位置で呼び出され、作成された"
+"ノードもその場合、その位置の下に配置されます。それ以外の場合は、グラフの中心"
+"に作成されます。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:76
 msgid ""
@@ -139,16 +177,23 @@ msgid ""
 "so if you suddenly closed the popup you can easily restore its previous "
 "state."
 msgstr ""
+"水平および垂直にサイズを変更して、より多くのコンテンツを表示できます。サイズ"
+"変換とツリーコンテンツの位置は呼び出し間で保存されるため、ポップアップを突然"
+"閉じた場合は、以前の状態を簡単に復元できます。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:79
 msgid ""
 "The ``Expand All`` and ``Collapse All`` options in the drop-down option menu "
 "can be used to easily list the available nodes."
 msgstr ""
+"ドロップダウンオプションメニューの[すべて展開]および[すべて折りたたむ]オプ"
+"ションを使用して、使用可能なノードを簡単にリストできます。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:81
 msgid "You can also drag and drop nodes from the popup onto the graph."
 msgstr ""
+"また、ポップアップからグラフにノードをドラッグアンドドロップすることもできま"
+"す。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:83
 msgid ""
@@ -156,18 +201,25 @@ msgid ""
 "first. Try to add some of the nodes, plug them in the output socket and "
 "observe what happens."
 msgstr ""
+"ポップアップにはカテゴリに分類されたノードがありますが、最初は圧倒されるよう"
+"に見えます。いくつかのノードを追加し、それらを出力ソケットに接続して、何が起"
+"こるかを観察してください。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:87
 msgid ""
 "When connecting any ``scalar`` output to a ``vector`` input, all components "
 "of the vector will take the value of the scalar."
 msgstr ""
+"いずれかの ``scalar`` 出力を ``vector`` 入力に接続すると、ベクトルのすべての"
+"要素がスカラーの値を取ります。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:90
 msgid ""
 "When connecting any ``vector`` output to a ``scalar`` input, the value of "
 "the scalar will be the average of the vector's components."
 msgstr ""
+"``vector`` 出力を ``scalar`` 入力に接続すると、スカラーの値はベクトルの要素の"
+"平均になります。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:94
 msgid "Visual Shader nodes"
@@ -178,6 +230,8 @@ msgid ""
 "Below are some special nodes that are worth knowing about. The list is not "
 "exhaustive and might be expanded with more nodes and examples."
 msgstr ""
+"以下は、知っておく価値のある特別なノードです。このリストは完全なものではな"
+"く、より多くのノードと例で展開される場合があります。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:100
 msgid "Expression node"
@@ -194,6 +248,13 @@ msgid ""
 "tab. The outputs are initialized to their zero value by default. The node is "
 "located under the Special tab and can be used in all shader modes."
 msgstr ""
+"``Expression`` ノードを使用すると、ビジュアルシェーダー内にGodot Shading "
+"Language(GLSLのような)式を記述できます。ノードには、必要な量の入力ポートと出"
+"力ポートを追加するボタンがあり、サイズを変更できます。各ポートの名前とタイプ"
+"を設定することもできます。入力した式は、すぐにマテリアルに適用されます(フォー"
+"カスが式テキストボックスを離れると)。解析エラーまたはコンパイルエラーは、[出"
+"力]タブに出力されます。出力はデフォルトでゼロ値に初期化されます。このノードは"
+"[Special]タブの下にあり、すべてのシェーダーモードで使用できます。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:113
 msgid ""
@@ -201,6 +262,9 @@ msgid ""
 "procedures, and use all the power of text-based shaders, such as loops, the "
 "``discard`` keyword, extended types, etc. For example:"
 msgstr ""
+"このノードの可能性はほとんど無限です。複雑な手順を記述し、ループ、\\ "
+"``discard`` キーワード、拡張タイプなどのテキストベースのシェーダーのすべての"
+"機能を使用できます。次に例を示します:"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:120
 msgid "Fresnel node"
@@ -213,10 +277,10 @@ msgid ""
 "Additionally, you can setup the inversion and the power of equation. The "
 "``Fresnel`` node is great for adding a rim-like lighting effect to objects."
 msgstr ""
-"''フレネル(Fresnel)'' ノードは、法線ベクトルとビュー ベクトルを受け入れるよう"
-"に設計されており、それらの間の飽和ドット積であるスカラーを生成します。さら"
-"に、反転と方程式の強さを設定できます。''フレネル''ノードは、オブジェクトに縁"
-"取りのような照明効果を追加するのに最適です。"
+"``Fresnel`` ノードは、法線ベクトルとビューベクトルを受け入れ、それらの間の飽"
+"和ドット積であるスカラーを生成するように設計されています。さらに、反転と方程"
+"式の力を設定できます。\\ ``Fresnel``ノードは、オブジェクトに縁取りのような照"
+"明効果を追加するのに最適です。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:130
 msgid "Boolean node"
@@ -229,10 +293,10 @@ msgid ""
 "This property can be used to enable or disable some effect parts with one "
 "click."
 msgstr ""
-"''ブール型(Boolean)''ノードは、''Scalar''の場合は ''0'' または ''1'' を表すた"
-"めに、''Vector''の場合は''(0, 0, 0)''または''(1, 1, 1)''を表すために、それぞ"
-"れの値に変換できます。このプロパティを使用すると、一部のエフェクト パーツを "
-"1 回のクリックで有効または無効にできます。"
+"``Boolean`` ノードは ``Scalar`` または ``Vector`` に変換して ``0`` または "
+"``1`` および ``'0, 0, 0)`` または ``(1, 1, 1, )`` を表すことができます。この"
+"プロパティを使用すると、一部のエフェクトパーツをワンクリックで有効または無効"
+"にできます。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:139
 msgid "If node"
@@ -246,6 +310,10 @@ msgid ""
 "provided as a comparison threshold – by default it is equal to the minimal "
 "value, i.e. ``0.00001``), ``a > b`` and ``a < b``."
 msgstr ""
+"``If`` ノードを使用すると、\\ ``a`` と ``b`` の比較結果を返すベクトルを設定で"
+"きます。返される可能性のあるベクトルは3つあります: ``a == b`` (この場合、許容"
+"範囲パラメーターは比較のしきい値として提供されます - デフォルトでは最小値、つ"
+"まり ``0.00001``に等しい)、\\ ``a> b`` および ``a <b`` です。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:150
 msgid "Switch node"
@@ -257,9 +325,14 @@ msgid ""
 "``false``. ``Boolean`` was introduced above. If you convert a vector to a "
 "true boolean, all components of the vector should be above zero."
 msgstr ""
+"``Switch`` ノードは、ブール条件が ``true`` または ``false`` の場合にベクトル"
+"を返します。\\ ``Boolean`` は、上記で導入されました。ベクトルを真(true)のブー"
+"ル値に変換する場合、ベクトルのすべての要素はゼロより上でなければなりません。"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:160
 msgid ""
 "The ``Switch`` node is only available on the GLES3 backed. If you are "
 "targeting GLES2 devices, you cannot use ``switch`` statements."
 msgstr ""
+"``Switch`` ノードは、GLES3でのみ使用可能です。 GLES2デバイスをターゲットにし"
+"ている場合、\\ ``switch`` ステートメントは使用できません。"

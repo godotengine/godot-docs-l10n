@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:4
-#, fuzzy
 msgid "Static typing in GDScript"
-msgstr "Uso na GDScript"
+msgstr "Tipagem estática em GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:6
-#, fuzzy
 msgid "In this guide, you will learn:"
 msgstr "Neste guia, você aprenderá:"
 
@@ -207,9 +205,8 @@ msgstr ""
 "fazer isso para tornar a intenção do seu código mais clara."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:117
-#, fuzzy
 msgid "Custom variable types"
-msgstr "Criando nós"
+msgstr "Tipos customizados de variável"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:119
 msgid ""
@@ -240,9 +237,8 @@ msgstr ""
 "uma constante:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:145
-#, fuzzy
 msgid "Variable casting"
-msgstr "Variáveis"
+msgstr "Conversão de variáveis"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:147
 msgid ""
@@ -287,7 +283,8 @@ msgstr ""
 "Como nós estamos lidando com um tipo personalizado, se o ``body`` não "
 "extende ``PlayerController``, a variável do ``player``\\ vai ser definida "
 "como ``null``. Nós podemos usar isso para checar se o body é o player or "
-"não. Nós vamos também"
+"não. Nós também poderemos usar preenchimento automático completo no variável "
+"do player graças a essa conversão."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:177
 msgid ""
@@ -297,9 +294,8 @@ msgstr ""
 "Se você tentar moldar com um tipo embutido e falhar, Godot lançará um erro."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:180
-#, fuzzy
 msgid "Safe lines"
-msgstr "Linhas em branco"
+msgstr "Linhas seguras"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
 msgid ""
@@ -326,9 +322,12 @@ msgid ""
 "node’s type as long as it has the methods you need to call."
 msgstr ""
 "Isso acontece quando você pega um nó filho. Vamos tomar um Timer como "
-"exemplo: com código dinâmico, você pode pegar o nó com ``$Timer``. GDScript "
-"suporta `duck-typing <https://stackoverflow.com/a/4205163/8125343>`__, então "
-"sempre"
+"exemplo: com código dinâmico, você pode pegar o nó usando ``$Timer``. "
+"GDScript suporta `duck-typing <https://stackoverflow.com/"
+"a/4205163/8125343>`__, então mesmo que o seu timer seja do tipo ``Timer``, "
+"ele também é um ``Node`` e um ``Object``, extendendo duas classes. Com "
+"GDScript dinâmico, você não se importa com o tipo do nó desde que ele tenha "
+"os métodos que você quer chamar."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:196
 msgid ""
@@ -358,7 +357,6 @@ msgid "Define the return type of a function with the arrow ->"
 msgstr "Defina o tipo de retorno de uma função com a seta ->"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:213
-#, fuzzy
 msgid ""
 "To define the return type of a function, write a dash and a right angle "
 "bracket ``->`` after its declaration, followed by the return type:"
@@ -424,13 +422,12 @@ msgid "And the same callback, with type hints:"
 msgstr "E a mesma chamada de retorno, com as dicas de tipo:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:291
-#, fuzzy
 msgid ""
 "You’re free to replace, e.g. the ``CollisionObject2D``, with your own type, "
 "to cast parameters automatically:"
 msgstr ""
-"Você é livre pra substituir, ex.: O ``PhysicsBody2D``, com seu próprio tipo, "
-"para converter os parâmetros automaticamente:"
+"Você é livre pra substituir, ex.: O ``CollisionObject2D``, com seu próprio "
+"tipo, para converter os parâmetros automaticamente:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:301
 msgid ""
@@ -446,9 +443,8 @@ msgstr ""
 "será ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:307
-#, fuzzy
 msgid "Warning system"
-msgstr "Sistema de arquivos"
+msgstr "Sistema de alertas"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:309
 msgid ""
@@ -469,9 +465,8 @@ msgstr ""
 "chamada ``GDScript``:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
-#, fuzzy
 msgid "warning system project settings"
-msgstr "Preparando o projeto"
+msgstr "sistema de alertas na configurações do projeto"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:321
 msgid ""
@@ -482,12 +477,10 @@ msgstr ""
 "alertas para o arquivo GDScript ativo. O exemplo abaixo tem três alertas:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
-#, fuzzy
 msgid "warning system example"
-msgstr "Instância em exemplo"
+msgstr "exemplo do sistema de alerta"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
-#, fuzzy
 msgid ""
 "To ignore specific warnings in one file, insert a special comment of the "
 "form ``# warning-ignore:warning-id``, or click on the ignore link to the "
@@ -497,14 +490,13 @@ msgid ""
 msgstr ""
 "Para ignorar alertas específicos em um arquivo, insira um comentário "
 "especial na forma de ``#warning-ignore:warning-id``, ou clique no link de "
-"ignorar, à direita da descrição do alerta, assim a Godot irá adicionar um "
+"ignorar à direita da descrição do alerta, assim a Godot irá adicionar um "
 "comentário acima da linha correspondente e o código não irá mais disparar o "
 "alerta correspondente:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
-#, fuzzy
 msgid "warning system ignore example"
-msgstr "Instância em exemplo"
+msgstr "exemplo de sistema de alerta ignorando"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:340
 msgid ""
@@ -512,6 +504,10 @@ msgid ""
 "type in this file with ``# warning-ignore-all:warning-id``. To ignore all "
 "warnings of all types in a file add the comment ``# warnings-disable`` to it."
 msgstr ""
+"Você também pode optar por ignorar não apenas um mas todos os avisos de um "
+"determinado tipo, neste arquivo, com ``# warning-ignore-all:warning-id``. "
+"Para ignorar todos os avisos de todos os tipos em um arquivo, adicione o "
+"comentário ``# warnings-disable``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:344
 msgid ""

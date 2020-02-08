@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:4
 msgid "Using the MeshDataTool"
-msgstr "メッシュデータツールの使用"
+msgstr "MeshDataToolの使用"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:6
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "dynamically altering geometry, for example if you want to write a script to "
 "tessellate, simplify, or deform meshes."
 msgstr ""
+"MeshDataToolは、ジオメトリの生成には使用されません。ただし、たとえば、メッ"
+"シュをテッセレーション、単純化、または変形するスクリプトを作成する場合など、"
+"ジオメトリを動的に変更する場合に役立ちます。"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:9
 msgid ""
@@ -37,18 +40,27 @@ msgid ""
 "for certain mesh algorithms. If you do not need this extra information then "
 "it may be better to use an ArrayMesh."
 msgstr ""
+"MeshDataToolは、ArrayMeshを使用して配列を直接変更するほど高速ではありません。"
+"ただし、ArrayMeshよりも多くの情報とメッシュを操作するツールを提供します。 "
+"MeshDataToolを使用すると、特定のメッシュアルゴリズムに必要なFace(面)や"
+"Edge(エッジ/辺)などのArrayMeshでは使用できないメッシュデータが計算されます。"
+"この追加情報が必要ない場合は、ArrayMeshを使用することをお勧めします。"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:14
 msgid ""
 "MeshDataTool can only be used on Meshes that use the PrimitiveType ``Mesh."
 "PRIMITIVE_TRIANGLES``."
 msgstr ""
+"MeshDataToolは、PrimitiveType ``Mesh.PRIMITIVE_TRIANGLES`` を使用するメッシュ"
+"でのみ使用できます。"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:16
 msgid ""
 "As an example, let's walk through the process of deforming the mesh "
 "generated in the :ref:`ArrayMesh tutorial <doc_arraymesh>`."
 msgstr ""
+"例として、\\ :ref:`ArrayMeshチュートリアル <doc_arraymesh>` で生成されたメッ"
+"シュを変形するプロセスを見てみましょう。"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:18
 msgid ""
@@ -58,12 +70,19 @@ msgid ""
 "``create_from_surface()`` will clear it for you. Alternatively, you can call "
 "``clear()`` yourself before re-using the MeshDataTool"
 msgstr ""
+"メッシュが ``mesh`` という名前のArrayMeshに保存されていると仮定します。次"
+"に、\\ ``create_from_surface()`` を呼び出して、\\ ``mesh`` からMeshDataToolを"
+"初期化します。 MeshDataToolで初期化されたデータが既にある場合、\\ "
+"``create_from_surface()`` を呼び出すとデータがクリアされます。または、"
+"MeshDataToolを再利用する前に、自分で `` clear()`` を呼び出すことができます"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:29
 msgid ""
 "``create_from_surface()`` uses the vertex arrays from the ArrayMesh to "
 "calculate two additional arrays, one for edges and one for faces."
 msgstr ""
+"``create_from_surface()`` は、ArrayMeshの頂点配列を使用して、エッジ用と面用の"
+"2つの追加配列を計算します。"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:32
 msgid ""
@@ -71,6 +90,8 @@ msgid ""
 "array contains a reference to the two vertices it is composed of, and up to "
 "two faces that it is contained within."
 msgstr ""
+"エッジは、任意の2つの頂点間の接続です。エッジ配列の各エッジには、それが構成す"
+"る2つの頂点への参照と、それが含まれる最大2つの面が含まれます。"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:35
 msgid ""
@@ -78,24 +99,32 @@ msgid ""
 "edges. Each face in the face array contains a reference to the three "
 "triangles and three edges it is composed of."
 msgstr ""
+"面は、3つの頂点と3つの対応するエッジで構成される三角形です。面配列の各面に"
+"は、3つの三角形とそれが構成される3つのエッジへの参照が含まれています。"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:38
 msgid ""
 "The vertex array contains edges, faces, normals, color, tangent, uv, uv2, "
 "bones, and weight information connected with each vertex."
 msgstr ""
+"頂点配列には、各頂点に接続されたエッジ、面、法線、色、接線、uv、uv2、ボーン、"
+"およびウェイト情報が含まれます。"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:41
 msgid ""
 "To access information from these arrays you use a function of the form "
 "``get_****()``:"
 msgstr ""
+"これらの配列から情報にアクセスするには、\\ ``get _****()`` 形式の関数を使用し"
+"ます:"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:51
 msgid ""
 "What you choose to do with these functions is up to you. A common use case "
 "is to iterate over all vertices and transform them in some way:"
 msgstr ""
+"これらの関数で何をするかはあなた次第です。一般的な使用例は、すべての頂点を反"
+"復処理し、何らかの方法で変換することです。"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:62
 msgid ""
@@ -103,9 +132,13 @@ msgid ""
 "you are dynamically updating an existing ArrayMesh, first delete the "
 "existing surface before adding a new one."
 msgstr ""
+"最後に、\\ ``commit_to_surface()`` はArrayMeshに新しいサーフェスを追加しま"
+"す。したがって、既存のArrayMeshを動的に更新する場合は、新しいサーフェスを追加"
+"する前に既存のサーフェスを削除してください。"
 
 #: ../../docs/tutorials/content/procedural_geometry/meshdatatool.rst:71
 msgid ""
 "Below is a complete example that creates a pulsing blob complete with new "
 "normals and vertex colors."
 msgstr ""
+"以下は、新しい法線と頂点の色で完全な脈動するブロブを作成する完全な例です。"

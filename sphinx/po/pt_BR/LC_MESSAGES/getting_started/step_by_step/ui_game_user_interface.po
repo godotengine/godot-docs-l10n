@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -395,7 +395,6 @@ msgstr ""
 "Count MarginContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
-#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -412,13 +411,13 @@ msgstr ""
 "para ``Keep Centered``. Em seguida, encontre a categoria ``Rect`` no "
 "Inspetor e altere a propriedade ``Size`` para (50, 40), de modo que ela só "
 "ocupe a metade esquerda do background. Em seguida, selecione o nó "
-"``Number``. Na viewport, clique no menu ``Layout`` e clique em ``Full "
-"Rect``. O nó será redimensionado para caber no ``Background``. Dirija-se ao "
-"Inspetor e altere sua propriedade ``Align`` para ``Right`` e a propriedade "
-"``VAlign`` para ``Center``. O texto deve se encaixar no centro da borda "
-"direita do ``Background``. Redimensione o nó horizontalmente para que ele "
-"pegue a metade direita do ``Background`` e tenha um pouco de preenchimento "
-"com a borda direita."
+"``Number``. No viewport, clique no menu ``Layout`` e clique em ``Rect "
+"Completo``. O nó será redimensionado para caber no ``Background``. Dirija-se "
+"ao Inspetor e altere sua propriedade ``Align`` para ``Right``, e a "
+"propriedade ``VAlign`` para ``Center``. O texto deve se encaixar no centro "
+"da borda direita do ``Background``. Redimensione o nó horizontalmente para "
+"que ele pegue a metade direita do ``Background`` e tenha um pouco de "
+"preenchimento com a borda direita."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:195
 msgid ""
@@ -463,7 +462,6 @@ msgstr ""
 "``28``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
-#, fuzzy
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -474,12 +472,12 @@ msgid ""
 "``Custom Font`` category again and tweak the ``Bottom`` property until the "
 "text aligns with the ``Title`` node. I used a value of ``2`` pixels."
 msgstr ""
-"Agora precisamos da linha de base do texto, a borda inferior do número, para "
-"alinhar com a textura da HP à esquerda. Para fazer isso, ainda no recurso "
+"Agora precisamos que a linha de base do texto, a borda inferior do número, "
+"alinhe com a textura de HP à esquerda. Para fazer isso, ainda no recurso "
 "``DynamicFont``, você pode ajustar a propriedade ``Bottom`` sob a categoria "
-"``Extra Spacing``. Adicione um preenchimento inferior ao texto. Clique no nó "
-"``Number`` na aba Scene para retornar às propriedades do nó e mudar o "
-"``VAlign`` para ``Bottom``. Para ajustar a linha de base do texto, clique no "
+"``Extra Spacing``. Ela adiciona preenchimento inferior ao texto. Clique no "
+"nó ``Number`` na aba Cena para retornar às propriedades do nó e mude o "
+"``Valign`` para ``Bottom``. Para ajustar a linha de base do texto, clique no "
 "campo da fonte sob a categoria ``Custom Font`` novamente e ajuste a "
 "propriedade ``Bottom`` até que o texto se alinhe com o nó ``Title``. Eu usei "
 "um valor de ``2`` pixels."
@@ -539,17 +537,15 @@ msgstr ""
 "foi? Isso graças à nossa configuração robusta de contêineres."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
-#, fuzzy
 msgid "Design the bomb and emerald counters"
-msgstr "Projetar os contadores de bombas e dinheiro"
+msgstr "Projetar os contadores de bombas e esmeraldas"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
-#, fuzzy
 msgid ""
 "The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
-"Os contadores de bomba e dinheiro são como o nó da barra ``Count``. Então "
+"Os contadores de bomba e esmeraldas são como o nó ``Count`` da barra. Então "
 "vamos duplicá-lo e usá-lo como modelo."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
@@ -565,7 +561,6 @@ msgstr ""
 "Não se preocupe com isso por enquanto, vamos corrigir o tamanho em breve."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
-#, fuzzy
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -576,8 +571,8 @@ msgid ""
 msgstr ""
 "Renomeie o nó ``Count2`` para ``Counter``. Ao contrário das barras, queremos "
 "que o número esteja à esquerda e um ícone fique à direita. A configuração é "
-"a mesma: precisamos de background, um ``NinePatchFrame``, o título e os nós "
-"numéricos. O nó ``Title`` é um ``TextureRect``, então é o que precisamos "
+"a mesma: precisamos de um background (um ``NinePatchRect``), o título, e os "
+"nós de número. O nó ``Title`` é um ``TextureRect``, então é o que precisamos "
 "para exibir o ícone. Na árvore de cena, selecione o nó ``Title`` e renomeie "
 "para ``Icon``."
 
@@ -607,7 +602,6 @@ msgstr ""
 "Os nós ancoram em todo o plano de fundo, mas sua posição está desativada"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -617,10 +611,9 @@ msgid ""
 msgstr ""
 "Vamos alterar as propriedades de alinhamento do ``Number`` para movê-lo para "
 "a esquerda e para o centro do ``Background``. Selecione o nó ``Number``, "
-"altere sua propriedade ``Align`` para a esquerda e a propriedade ``VAlign`` "
-"para o centro. Em seguida, redimensione um pouco a borda esquerda para "
-"adicionar um preenchimento entre a borda esquerda do ``Background`` e o "
-"texto."
+"altere sua propriedade ``Align`` para left e a propriedade ``VAlign`` para "
+"center. Em seguida, redimensione um pouco a borda esquerda para adicionar um "
+"preenchimento entre a borda esquerda do ``Background`` e o texto."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
 msgid "The Number node aligned to the left and centre"
@@ -681,7 +674,6 @@ msgstr ""
 "esperado."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
-#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
 "so, we need to set the ``Bars`` container take all the available horizontal "
@@ -690,12 +682,12 @@ msgid ""
 "``Bars`` node should resize and push the counter to the right side of the "
 "screen."
 msgstr ""
-"Enquanto estamos nisso, vamos fazer com que os ``Counters`` se encaixem na "
-"borda direita da viewport. Para conseguir isso, definiremos o contêiner "
-"``Bars`` para expandir e ocupar todo o espaço horizontal. Selecione o nó "
-"``Bars`` e role para baixo até a categoria ``Size Flags``. Na categoria "
-"``Horizontal``, verifique o valor ``Expand``. O nó ``Bars`` deve "
-"redimensionar e empurrar o contador para a direita da tela."
+"Vamos fazer com que os ``Counters`` se encaixem na borda direita do "
+"viewport. Para isso, definiremos o contêiner ``Bars`` para expandir e ocupar "
+"todo o espaço horizontal. Selecione o nó ``Bars`` e role para baixo até a "
+"categoria ``Size Flags``. Na categoria ``Horizontal``, verifique o valor "
+"``Expand``. O nó ``Bars`` deve redimensionar e empurrar o contador para a "
+"direita da tela."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:331
 msgid ""
@@ -725,7 +717,6 @@ msgstr ""
 "trabalhar com variações. O Godot nos permite fazer isso com Cenas Herdadas."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
-#, fuzzy
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
@@ -734,14 +725,13 @@ msgid ""
 "the scene as ``Bar.tscn``. You should see the node branch turn it to a "
 "single ``Bar`` node."
 msgstr ""
-"Vamos salvar as ramificações ``Counter`` e ``Bar`` como cenas separadas que "
-"serão reduzidas para criar o ``LifeBar``, o ``EnergyBar``, o ``BombCounter`` "
-"e o ``RupeeCounter``. Selecione o HBoxContainer do ``Bar``. Clique com o "
-"botão direito e clique em `Save Branch as Scene``. Salve a cena como ``Bar."
-"tscn``. Você deve ver a ramificação do nó para um único nó ``Bar``."
+"Vamos salvar os ramos ``Counter`` e ``Bar`` como cenas separadas que serão "
+"reduzidas para criar o ``LifeBar``, o ``EnergyBar``, o ``BombCounter`` e o "
+"``EmeraldCounter``. Selecione o HBoxContainer ``Bar``. Clique com o botão "
+"direito nele e clique em ``Salvar Ramo como Cena``. Salve a cena como ``Bar."
+"tscn``. Você deve ver o ramo virar um único nó ``Bar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
-#, fuzzy
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
@@ -751,14 +741,13 @@ msgid ""
 "``Save Branch as Scene`` or ``Merge from Scene``."
 msgstr ""
 "Uma cena é uma árvore de nós. O nó mais alto é a **raiz** da árvore e os "
-"filhos na parte inferior da hierarquia são **folhas**. Qualquer nó diferente "
-"da raiz junto com mais um filho é uma **branch (ramificação)**. Podemos "
-"encapsular ramificações de nós em cenas separadas ou carregá-las e mesclá-"
-"las de outras cenas na cena ativa. Clique com o botão direito em qualquer nó "
-"na aba Scene e selecione ``Save Branch as Scene`` ou ``Merge from Scene``."
+"filhos abaixo na hierarquia são **folhas**. Qualquer nó diferente da raiz "
+"junto com mais um filho é uma **branch (ramo)**. Podemos encapsular "
+"ramificações de nós em cenas separadas ou carregá-las e mesclá-las de outras "
+"cenas na cena ativa. Clique com o botão direito em qualquer nó na aba Cena e "
+"selecione ``Salvar Ramo como Cena`` ou ``Fundir a Partir de Cena``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
-#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -769,21 +758,20 @@ msgid ""
 "the same for the ``Counter``."
 msgstr ""
 "Então, selecione o nó ``Counter`` e faça o mesmo. Clique com o botão "
-"direito, ``Salvar Ramificação como Cena`` e salve-a como ``Counter.tscn``. "
-"Um novo ícone de cena de edição aparece à direita dos nós na árvore de cena. "
-"Clique no próximo ao ``Bar`` para abrir a cena correspondente. Redimensione "
-"o nó ``Bar`` para que sua caixa delimitadora se ajuste ao seu conteúdo. A "
-"maneira como nomeamos e colocamos os nós de controle, estamos prontos para "
-"herdar esse modelo e criar a barra de vida. É o mesmo para o ``Counter``."
+"direito, ``Salvar Ramo como Cena``, e salve-a como ``Counter.tscn``. Um novo "
+"ícone de editar cena aparece à direita dos nós na árvore da cena. Clique no "
+"ícone próximo ao ``Bar`` para abrir a cena correspondente. Redimensione o nó "
+"``Bar`` para que sua caixa delimitadora se ajuste ao seu conteúdo. Da "
+"maneira como nomeamos e colocamos os nós de Controle, estamos prontos para "
+"herdar esse modelo e criar a barra de vida. Mesma coisa para o ``Counter``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
 msgid "With no extra changes, our Bar is ready to use"
 msgstr "Sem alterações extras, nossa Barra está pronta para uso"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
-#, fuzzy
 msgid "Use scene inheritance to create the remaining elements"
-msgstr "Use a herança de cena para criar os elementos restantes"
+msgstr "Use herança de cena para criar os elementos restantes"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
 msgid ""
@@ -809,7 +797,6 @@ msgstr ""
 "apenas contêineres e um nó para cada componente da interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
-#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -823,10 +810,10 @@ msgstr ""
 "inspetor, além de seu nome. Se você modificar e salvar a cena pai, todas as "
 "cenas herdadas serão atualizadas para refletir as alterações. Se você "
 "alterar um valor na cena herdada, ele sempre substituirá a propriedade do "
-"pai. É útil para as interfaces de usuário, pois elas geralmente exigem "
-"variações dos mesmos elementos. Em geral, no design da interface do usuário, "
-"botões, painéis, etc. compartilham um estilo de base e interações comuns. "
-"Não queremos copiá-lo para todas as variações manualmente."
+"pai. É útil para interfaces de usuário, pois elas geralmente exigem "
+"variações dos mesmos elementos. Em geral, em design de interfaces de "
+"usuário, botões, painéis, etc. compartilham um estilo de base e interações "
+"em comum. Não queremos copiá-lo para todas as variações manualmente."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
 msgid ""
@@ -1065,9 +1052,8 @@ msgstr ""
 "os dois medidores se alinharão perfeitamente."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-#, fuzzy
 msgid "Prepare the bomb and emerald counters"
-msgstr "Prepare os contadores de bombas e dinheiro"
+msgstr "Prepare os contadores de bombas e esmeraldas"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
 msgid ""
@@ -1086,7 +1072,6 @@ msgid "The bomb counter is the same as the original Counter scene"
 msgstr "O contador da bomba é o mesmo que a cena do Counter original"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``EmeraldCounter`` and save the scene as "
@@ -1099,21 +1084,20 @@ msgid ""
 "the keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
-"Vá para ``Scene -> New Inherited Scene`` novamente e selecione ``Counter."
-"tscn`` mais uma vez. Renomeie o nó raiz ``RupeeCounter`` e salve a cena como "
-"``RupeeCounter.tscn``. Para este, precisamos principalmente substituir o "
-"ícone da bomba pelo ícone do dinheiro. Na aba FileSystem, arraste o "
-"``rupees_icon.png`` para o slot ``Texture`` do nó ``Icon``. O ``Icon`` já se "
-"ancora na borda direita do nó ``Background``para que possamos mudar sua "
-"posição e ele irá escalar e reposicionar com o contêiner ``RupeeCounter``. "
-"Mude o ícone do dinheiro um pouco para a direita e para baixo. Use as setas "
-"do teclado para ajustar sua posição. Salve e concluímos todos os elementos "
-"da interface do usuário."
+"Vá para ``Cena -> Nova Cena Herdade`` novamente e selecione ``Counter.tscn`` "
+"mais uma vez. Renomeie o nó raiz ``EmeraldCounter`` e salve a cena como "
+"``EmeraldCounter.tscn``. Para este, precisamos principalmente substituir o "
+"ícone da bomba pelo ícone de esmeralda. Na aba Arquivos, arraste o "
+"``emeralds_icon.png`` para o slot ``Texture`` do nó ``Icon``. O ``Icon`` já "
+"se ancora na borda direita do nó ``Background``para que possamos mudar sua "
+"posição e ele irá escalonar e reposicionar com o contêiner "
+"``EmeraldCounter``. Mude o ícone de esmeralda um pouco para a direita e para "
+"baixo. Use as setas do teclado para ajustar sua posição. Salve, e concluímos "
+"todos os elementos da interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The emerald counter should look something like this"
-msgstr "O contador de dinheiro deve ficar assim"
+msgstr "O contador de esmeraldas deve ficar assim"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
@@ -1138,13 +1122,12 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "A LifeBar e a EnergyBar se alinham automaticamente"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
-#, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
 "scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
-"Agora, arraste e solte as cenas ``BombCounter.tscn`` e ``RupeeCounter.tscn`` "
-"no nó ``Counters``. Eles serão redimensionados automaticamente."
+"Agora, arraste e solte as cenas ``BombCounter.tscn`` e ``EmeraldCounter."
+"tscn`` no nó ``Counters``. Eles serão redimensionados automaticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
 msgid "The nodes resize to take all the available vertical space"
@@ -1152,7 +1135,6 @@ msgstr ""
 "Os nós são redimensionados para ocupar todo o espaço vertical disponível"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
-#, fuzzy
 msgid ""
 "To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -1161,10 +1143,10 @@ msgid ""
 "property, and check ``Shrink Center`` so the container centers inside the "
 "``HBoxContainer``."
 msgstr ""
-"Para permitir que ``RupeeCounter`` e ``BombCounter`` usem o tamanho que "
-"definimos em ``Counter.tscn``, precisamos alterar o ``Size Flags`` no "
-"contêiner ``Counters``. Selecione o nó ``Counters`` e desdobre a seção "
-"``Size Flags`` no Inspetor. Desmarque a tag ``Fill`` para a propriedade "
+"Para permitir que ``EmeraldCounter`` e ``BombCounter`` usem o tamanho que "
+"definimos em ``Counter.tscn``, precisamos alterar os ``Size Flags`` no "
+"contêiner ``Counters``. Selecione o nó ``Counters`` e abra a seção ``Size "
+"Flags`` no Inspetor. Desmarque a tag ``Fill`` para a propriedade "
 "``Vertical`` e marque ``Shrink Center`` para que o contêiner centralize "
 "dentro do ``HBoxContainer``."
 
@@ -1181,7 +1163,6 @@ msgstr ""
 "altura do plano de fundo dos contadores."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
-#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -1198,7 +1179,7 @@ msgstr ""
 "``Custom Constant``. Adicione uma ``Margin Left`` de ``20``. Na seção "
 "``Rect``, configure o ``Min Size`` do nó de volta para 100, o mesmo valor "
 "que na LifeBar. O ``Count`` agora deve ter alguma margem à esquerda. Se você "
-"salvar e voltar para a cena GUI, ela será alinhada verticalmente com a "
+"salvar e voltar para a cena GUI, ela estará alinhada verticalmente com a "
 "``LifeBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:593
@@ -1206,15 +1187,14 @@ msgid "The 2 bars align perfectly"
 msgstr "As duas barras alinham-se perfeitamente"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
-#, fuzzy
 msgid ""
 "We could have set up the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
-"Poderíamos ter configurado a ``EnergyBar`` dessa maneira há alguns "
-"instantes. Mas isso mostra que você pode voltar a qualquer cena a qualquer "
-"momento, ajustá-la e ver as mudanças se propagarem pelo projeto!"
+"Poderíamos ter configurado a ``EnergyBar`` dessa maneira já desde antes. Mas "
+"isso mostra que você pode voltar a qualquer cena a qualquer momento, ajustá-"
+"la e ver as mudanças se propagarem pelo projeto!"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
 msgid "Place the GUI onto the game's mockup"
@@ -1248,14 +1228,13 @@ msgstr ""
 "parece no contexto do jogo."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
-#, fuzzy
 msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
 "the final project here: :download:`ui_gui_design.zip <files/ui_gui_design."
 "zip>`."
 msgstr ""
 "Parabéns por chegar ao final deste longo tutorial. Você pode encontrar o "
-"projeto final `aqui <#>`__."
+"projeto final aqui: :download:`ui_gui_design.zip <files/ui_gui_design.zip>`."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
 msgid ""

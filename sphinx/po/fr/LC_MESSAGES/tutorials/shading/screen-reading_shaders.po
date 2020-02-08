@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:4
 msgid "Screen-reading shaders"
-msgstr ""
+msgstr "Shaders de lecture d'écran"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:7
 msgid "Introduction"
@@ -34,6 +34,12 @@ msgid ""
 "problems. As a result, not even the most modern hardware supports this "
 "properly."
 msgstr ""
+"Très souvent, on souhaite faire un shader qui lit à partir du même écran que "
+"celui sur lequel il écrit. Les API 3D, telles que OpenGL ou DirectX, rendent "
+"la tâche très difficile en raison de limitations matérielles internes. Les "
+"GPU sont extrêmement parallèles, de sorte que la lecture et l'écriture "
+"causent toutes sortes de problèmes de cache et de cohérence. Par conséquent, "
+"même le matériel le plus moderne ne le supporte pas correctement."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:16
 msgid ""
@@ -41,10 +47,13 @@ msgid ""
 "a back-buffer and then read from it while drawing. Godot provides a few "
 "tools that make this process easy!"
 msgstr ""
+"La solution consiste à faire une copie de l'écran, ou d'une partie de "
+"l'écran, dans une mémoire tampon, puis à la lire pendant le dessin. Godot "
+"fournit quelques outils qui rendent ce processus facile !"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:21
 msgid "SCREEN_TEXTURE built-in texture"
-msgstr ""
+msgstr "SCREEN_TEXTURE texture intégrée"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:23
 msgid ""
@@ -54,10 +63,17 @@ msgid ""
 "special built-in varying: SCREEN_UV can be used to obtain the UV for the "
 "current fragment. As a result, this simple 2D fragment shader:"
 msgstr ""
+"Godot :ref:`doc_shading_language` a une texture spéciale, \"SCREEN_TEXTURE"
+"\" (et \"DEPTH_TEXTURE\" pour la profondeur, dans le cas de la 3D). Il prend "
+"comme argument l'UV de l'écran et renvoie un vec3 RGB avec la couleur. Une "
+"varying spéciale intégrée : SCREEN_UV peut être utilisé pour obtenir l'UV du "
+"fragment actuel. Le résultat est ce simple shader de fragments en 2D :"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:34
 msgid "results in an invisible object, because it just shows what lies behind."
 msgstr ""
+"résulte en un objet invisible, car il ne fait que montrer ce qui se cache "
+"derrière."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:36
 msgid ""
@@ -65,16 +81,21 @@ msgid ""
 "chunk of the screen, it also does an efficient separatable gaussian blur to "
 "its mipmaps."
 msgstr ""
+"La raison pour laquelle textureLod doit être utilisé est que, lorsque Godot "
+"copie une partie de l'écran, il effectue également un flou gaussien "
+"séparable efficace sur ses mipmaps."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:39
 msgid ""
 "This allows for not only reading from the screen, but reading from it with "
 "different amounts of blur at no cost."
 msgstr ""
+"Cela permet non seulement de lire depuis l'écran, mais aussi de lire depuis "
+"celui-ci avec différentes quantités de flou sans frais."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:43
 msgid "SCREEN_TEXTURE example"
-msgstr ""
+msgstr "Exemple SCREEN_TEXTURE"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:45
 msgid ""
@@ -82,10 +103,14 @@ msgid ""
 "*Screen Space Shaders*, that you can download to see and learn. One example "
 "is a simple shader to adjust brightness, contrast and saturation:"
 msgstr ""
+"SCREEN_TEXTURE peut être utilisé pour beaucoup de choses. Il existe une démo "
+"spéciale pour *Screen Space Shaders*, que vous pouvez télécharger pour voir "
+"et apprendre. Un exemple est un simple shader pour ajuster la luminosité, le "
+"contraste et la saturation :"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:69
 msgid "Behind the scenes"
-msgstr ""
+msgstr "Dans les coulisses"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:71
 msgid ""
@@ -94,12 +119,20 @@ msgid ""
 "buffer. Subsequent nodes that use it in shaders will not have the screen "
 "copied for them, because this ends up being inefficient."
 msgstr ""
+"Bien que cela semble magique, ce n'est pas le cas. La fonction "
+"SCREEN_TEXTURE intégrée, lorsqu'elle est trouvée pour la première fois dans "
+"un nœud sur le point d'être dessiné, effectue une copie plein écran vers une "
+"mémoire tampon. Les nœuds ultérieurs qui l'utilisent dans les shaders "
+"n'auront pas l'écran copié pour eux, car cela finit par être inefficace."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:77
 msgid ""
 "As a result, if shaders that use SCREEN_TEXTURE overlap, the second one will "
 "not use the result of the first one, resulting in unexpected visuals:"
 msgstr ""
+"Par conséquent, si les shaders qui utilisent SCREEN_TEXTURE se chevauchent, "
+"le second n'utilisera pas le résultat du premier, ce qui entraînera des "
+"visuels inattendus :"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:83
 msgid ""
@@ -107,12 +140,17 @@ msgid ""
 "for SCREEN_TEXTURE as the first one below, so the first one \"disappears\", "
 "or is not visible."
 msgstr ""
+"Dans l'image ci-dessus, la deuxième sphère (en haut à droite) utilise la "
+"même source pour SCREEN_TEXTURE que la première en dessous, donc la première "
+"\"disparaît\", ou n'est pas visible."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:87
 msgid ""
 "In 3D, this is unavoidable because copying happens when opaque rendering "
 "completes."
 msgstr ""
+"En 3D, c'est inévitable car la copie se produit lorsque le rendu opaque se "
+"termine."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:90
 msgid ""
@@ -121,20 +159,28 @@ msgid ""
 "spheres. BackBufferCopy can work by either specifying a screen region or the "
 "whole screen:"
 msgstr ""
+"En 2D, cela peut être corrigé via le nœud :ref:`BackBufferCopy "
+"<class_BackBufferCopy>`, qui peut être instancié entre les deux sphères. "
+"BackBufferCopy peut fonctionner en spécifiant soit une région de l'écran, "
+"soit l'écran entier :"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:96
 msgid "With correct back-buffer copying, the two spheres blend correctly:"
 msgstr ""
+"Avec une copie correcte du back-buffer, les deux sphères se mélangent "
+"correctement :"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:101
 msgid "Back-buffer logic"
-msgstr ""
+msgstr "Logique du back-buffer"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:103
 msgid ""
 "So, to make it clearer, here's how the backbuffer copying logic works in "
 "Godot:"
 msgstr ""
+"Donc, pour être plus clair, voici comment fonctionne la logique de copie du "
+"backbuffer dans Godot :"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:106
 msgid ""
@@ -142,6 +188,9 @@ msgid ""
 "buffer before drawing that node. This only happens the first time; "
 "subsequent nodes do not trigger this."
 msgstr ""
+"Si un nœud utilise la SCREEN_TEXTURE, l'écran entier est copié dans le back "
+"buffer avant de dessiner ce nœud. Cela ne se produit que la première fois ; "
+"les nœuds suivants ne déclenchent pas cette situation."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:109
 msgid ""
@@ -151,6 +200,12 @@ msgid ""
 "screen only happens if SCREEN_TEXTURE is used in a node for the first time "
 "and no BackBufferCopy node (not disabled) was found before in tree-order."
 msgstr ""
+"Si un nœud BackBufferCopy a été traité avant la situation décrite au point "
+"ci-dessus (même si SCREEN_TEXTURE n'a pas été utilisé), le comportement "
+"décrit au point ci-dessus ne se produit pas. En d'autres termes, la copie "
+"automatique de l'écran entier ne se produit que si SCREEN_TEXTURE est "
+"utilisé dans un nœud pour la première fois et qu'aucun nœud BackBufferCopy "
+"(non désactivé) n'a été trouvé auparavant dans l'ordre de l'arbre."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:115
 msgid ""
@@ -161,10 +216,17 @@ msgid ""
 "to copy back a region of the screen and then use SCREEN_TEXTURE on a "
 "different region. Avoid this behavior!"
 msgstr ""
+"BackBufferCopy peut copier soit l'écran entier, soit une région. S'il est "
+"réglé sur une seule région (et non sur l'ensemble de l'écran) et que votre "
+"shader utilise des pixels qui ne se trouvent pas dans la région copiée, le "
+"résultat de cette lecture est indéfini (très probablement les déchets des "
+"images précédentes). En d'autres termes, il est possible d'utiliser "
+"BackBufferCopy pour recopier une région de l'écran et d'utiliser ensuite "
+"SCREEN_TEXTURE sur une autre région. Évitez ce comportement !"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:124
 msgid "DEPTH_TEXTURE"
-msgstr ""
+msgstr "DEPTH_TEXTURE"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:126
 msgid ""
@@ -172,8 +234,12 @@ msgid ""
 "this, the DEPTH_TEXTURE built-in is used. This texture is not linear; it "
 "must be converted via the inverse projection matrix."
 msgstr ""
+"Pour les shaders 3D, il est également possible d'accéder au buffer de "
+"profondeur de l'écran. Pour cela, on utilise la DEPTH_TEXTURE intégrée. "
+"Cette texture n'est pas linéaire, elle doit être convertie via la matrice de "
+"projection inverse."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:130
 msgid ""
 "The following code retrieves the 3D position below the pixel being drawn:"
-msgstr ""
+msgstr "Le code suivant récupère la position 3D sous le pixel dessiné :"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgid ""
 "sparks, fire, magic particles, smoke, mist, etc."
 msgstr ""
 "Godot提供了一种简单(但对于大多数用途而言足够灵活)的粒子系统。 粒子系统用于模"
-"拟复杂的物理效应，如火花，火焰，魔法粒子，烟雾，雾气，魔法等。"
+"拟复杂的物理效应，如火花，火焰，魔法粒子，烟雾，雾气，等。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:13
 msgid ""
@@ -44,13 +44,13 @@ msgid ""
 "and then adding randomness to them."
 msgstr ""
 "这个想法是以固定的间隔发射具有固定的寿命的“粒子”。 在其生命周期中，每个粒子都"
-"具有相同的基本行为。 每个参数相关的“随机性”是让每个粒子变得不同并呈现出具有组"
-"织的外观。 实质上，创建粒子系统意味着设置基本物理参数，然后为它们添加随机性。"
+"具有相同的基本行为。 让每个粒子变得不同并提供整体更加\"有机\"外观的是与各个参"
+"数相关的“随机性”。 实质上，创建粒子系统意味着设置基本物理参数，然后为它们添加"
+"随机性。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:21
-#, fuzzy
 msgid "Particle nodes"
-msgstr "ParticlesMaterial"
+msgstr "粒子节点"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:23
 msgid ""
@@ -67,9 +67,16 @@ msgid ""
 "inspector, and selecting \"Convert to CPUParticles2D\" in the \"Particles\" "
 "menu of the toolbar."
 msgstr ""
+"Godot为2D粒子提供了两个不同的节点： :ref:`class_Particles2D` 和 :ref:"
+"`class_CPUParticles2D` 。 Particles2D更为先进，并使用GPU处理粒子效果，但这将"
+"其限制于相对高端的图形API中，在我们的情况下仅限于GLES3渲染器。对于使用GLES2后"
+"端的项目，CPUParticles2D是一个CPU驱动的选项。其功能与Particles2D接近，但性能"
+"较低。Particles2D是通过 :ref:`class_ParticlesMaterial` （以及可选的自定义"
+"Shader）来配置的，但相应的选项在CPUParticles2D中是通过节点属性提供的（轨迹设"
+"置除外）。您可以通过单击场景中的节点，然后在工具栏的“粒子”菜单中选择“转换为"
+"CPU粒子”，将Particles2D节点转换为CPUParticles2D节点。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:36
-#, fuzzy
 msgid ""
 "The rest of this tutorial is going to use the Particles2D node. First, add a "
 "Particles2D node to your scene. After creating that node you will notice "
@@ -77,13 +84,14 @@ msgid ""
 "your Particles2D node in the inspector. This is because the node needs a "
 "ParticlesMaterial to function."
 msgstr ""
-"粒子系统通过 :ref:`Particles2D <class_Particles2D>` 节点添加到场景中。 但是，"
-"在创建该节点后，您会注意到只创建了一个白点，并且在Particles2D节点的属性面板旁"
-"边有一个警告图标。 这是因为节点需要ParticlesMaterial才能运行。"
+"这个教程的其余部分将使用Particles2D节点。首先, 添加一个Particles2D节点到场景"
+"中。 在创建该节点后，您会注意到只创建了一个白点，并且在场景面板(左上角)的"
+"Particles2D节点旁边有一个警告图标。 这是因为节点需要ParticlesMaterial才能工"
+"作。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:42
 msgid "ParticlesMaterial"
-msgstr "ParticlesMaterial"
+msgstr "ParticlesMaterial(粒子材质)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:44
 msgid ""
@@ -91,8 +99,9 @@ msgid ""
 "in your inspector panel. Click on the box next to ``Material``, and from the "
 "dropdown menu select ``New ParticlesMaterial``."
 msgstr ""
-"要将过程材质添加到粒子节点，请转到“属性面板”面板中的“处理材质”。 单击材质旁边"
-"的框，然后从下拉菜单中选择New Particles Material。"
+"要将运行材质添加到粒子节点，请转到 ``属性面板`` 面板中的 ``Process "
+"Material`` 。 单击 ``Material`` 旁边的框，然后从下拉菜单中选择 ``New "
+"Particles Material`` 。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:50
 msgid "Your Particles2D node should now be emitting white points downward."
@@ -100,7 +109,7 @@ msgstr "您的Particles2D节点现在应该可以向下发射白点了。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:56
 msgid "Texture"
-msgstr "纹理"
+msgstr "Texture (纹理)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:58
 msgid ""
@@ -108,16 +117,16 @@ msgid ""
 "extended to animated textures via spritesheet). The texture is set via the "
 "relevant texture property:"
 msgstr ""
-"粒子系统使用单个纹理(将来可能会通过spritesheet扩展到动画纹理)。 纹理通过相关"
-"的纹理属性设置:"
+"粒子系统只能使用单个纹理(将来可能会通过spritesheet扩展到动画纹理)。 纹理通过"
+"相关的纹理属性设置:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:65
 msgid "Time parameters"
-msgstr "时间参数"
+msgstr "Time (时间)参数"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:68
 msgid "Lifetime"
-msgstr "寿命"
+msgstr "Lifetime(寿命)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:70
 msgid ""
@@ -128,15 +137,15 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:73
 msgid "Lifetime: 0.5"
-msgstr "寿命: 0.5"
+msgstr "寿命 : 0.5"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:77
 msgid "Lifetime: 4.0"
-msgstr "寿命: 4.0"
+msgstr "寿命 : 4.0"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:82
 msgid "One Shot"
-msgstr "一发"
+msgstr "One Shot (一次性)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:84
 msgid ""
@@ -146,7 +155,7 @@ msgstr "启用后，Particles2D节点将一次性发出所有粒子，然后再�
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:88
 msgid "Preprocess"
-msgstr "预处理"
+msgstr "Preprocess(预处理)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:90
 msgid ""
@@ -156,13 +165,13 @@ msgid ""
 "the system process a given number of seconds before it is actually drawn the "
 "first time."
 msgstr ""
-"粒子系统从零粒子发射开始，然后开始发射。 当加载场景如火炬，雾等系统时可能会带"
-"来不便，因为它会在您进入的那一刻开始发射。 预处理用于让系统在第一次实际绘制之"
-"前处理给定的秒数。"
+"粒子系统从没有粒子被发射开始，然后开始发射。 当加载场景如火炬，雾等系统时可能"
+"会带来不便，因为它会在进入场景的那一刻开始发射。 预处理用于让系统在第一次实际"
+"绘制之前处理给定的秒数。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:97
 msgid "Speed Scale"
-msgstr "速度大小"
+msgstr "Speed Scale(速度比例)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:99
 msgid ""
@@ -170,12 +179,12 @@ msgid ""
 "of a particle system. Lowering the value will make the particles slower "
 "while increasing the value will make the particles much faster."
 msgstr ""
-"速度大小具有默认值 ``1`` ，用于调整粒子系统的速度。 降低值会使粒子变慢，而增"
+"速度比例具有默认值 ``1`` ，用于调整粒子系统的速度。 降低值会使粒子变慢，而增"
 "加值会使粒子更快。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:104
 msgid "Explosiveness"
-msgstr "爆炸性"
+msgstr "Explosiveness(爆炸性)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:106
 msgid ""
@@ -202,17 +211,18 @@ msgstr "中间的值也是允许的。 此功能对于创建爆炸或突然爆�
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:119
 msgid "Randomness"
-msgstr "随机性"
+msgstr "Randomness(随机性)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:121
 msgid ""
 "All physics parameters can be randomized. Random values range from ``0`` to "
 "``1``. The formula to randomize a parameter is:"
-msgstr "所有物理参数都可以随机化。随机值范围从“0”到“1”。随机化参数的公式为:"
+msgstr ""
+"所有物理参数都可以随机化。随机值范围从 ``0`` 到 ``1`` 。随机化参数的公式为:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:129
 msgid "Fixed FPS"
-msgstr "固定FPS"
+msgstr "Fixed FPS(固定帧率)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:131
 msgid ""
@@ -221,12 +231,12 @@ msgid ""
 "render at 2 frames per second. Note this does not slow down the particle "
 "system itself."
 msgstr ""
-"此设置可用于将粒子系统设置为以固定FPS渲染。 例如，将值更改为 ``2`` 将使粒子以"
-"每秒2帧的速度渲染。 请注意，这不会减慢粒子系统本身的速度。"
+"此设置可用于将粒子系统设置为以固定的帧率渲染。 例如，将值更改为 ``2`` 将使粒"
+"子以每秒2帧的速度渲染。 请注意，这不会减慢粒子系统本身的速度。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:136
 msgid "Fract Delta"
-msgstr "分形间隔"
+msgstr "Fract Delta"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:138
 msgid "This can be used to turn Fract Delta on or off."
@@ -234,11 +244,11 @@ msgstr "这可用于打开或关闭Fract Delta。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
 msgid "Drawing parameters"
-msgstr "绘图参数"
+msgstr "Drawing parameters (绘图参数)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:144
 msgid "Visibility Rect"
-msgstr "可见性矩形"
+msgstr "Visibility Rect(可见性区域)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:147
 msgid ""
@@ -266,9 +276,9 @@ msgid ""
 "Particles2D node emitting particles for a few seconds and set the rectangle "
 "to fit the surface the particles take."
 msgstr ""
-"您可以使用2d视图上方的工具栏自动生成可见性矩形。 为此，请选择Particles2D节"
-"点，然后单击 ``Particles > Generate Visibility Rect`` 。 Godot将模拟"
-"Particles2D节点发射粒子几秒钟，并将矩形设置为适合粒子所采用的表面。"
+"可以使用2D视图上方的工具栏自动生成可见性区域。为此，请选择Particles2D节点，然"
+"后单击 ``粒子 > 生成可视化区域`` 。 Godot将模拟Particles2D节点发射粒子几秒"
+"钟，并将矩形区域设置为适合粒子的大小。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:155
 msgid ""
@@ -277,13 +287,13 @@ msgid ""
 "move around, you can temporarily change the ``preprocess`` duration on the "
 "Particles2D node."
 msgstr ""
-"您可以使用 ``Generation Time (sec)`` 选项控制发射持续时间。 最大值为25秒。 如"
+"你可以使用 ``Generation Time (sec)`` 选项控制发射持续时间。 最大值为25秒。 如"
 "果您需要更多时间让粒子移动，您可以暂时更改Particles2D节点上的 ``preprocess`` "
-"持续时间。"
+"时间。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:158
 msgid "Local Coords"
-msgstr "本地坐标"
+msgstr "Local Coords(局部坐标)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:160
 msgid ""
@@ -291,8 +301,8 @@ msgid ""
 "emitted to is relative to the node. If the node is moved, all particles are "
 "moved with it:"
 msgstr ""
-"默认情况下，此选项处于启用状态，这意味着粒子发射的空间是相对于节点。 如果移动"
-"节点，则随之移动所有粒子:"
+"默认情况下，此选项处于启用状态，这意味着粒子发射的空间是相对于节点来算的。 如"
+"果移动节点，则所有粒子会随之移动:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:166
 msgid ""
@@ -304,7 +314,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:172
 msgid "Draw Order"
-msgstr "绘图顺序"
+msgstr "Draw Order(绘图顺序)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:174
 msgid ""
@@ -317,48 +327,46 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:179
 msgid "ParticlesMaterial settings"
-msgstr "ParticlesMaterial设置"
+msgstr "ParticlesMaterial(粒子材质)设置"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:198
 msgid "Spread"
-msgstr "传播"
+msgstr "Spread(铺开角度)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:200
-#, fuzzy
 msgid ""
 "This parameter is the angle in degrees which will be randomly added in "
 "either direction to the base ``Direction``. A spread of ``180`` will emit in "
 "all directions (+/- 180). For spread to do anything the \"Initial Velocity\" "
 "parameter must be greater than 0."
 msgstr ""
-"此参数是以度为单位的角度，它将在任一方向上随机添加到基础 ``Direction`` 。 "
-"``180`` 的传播将向所有方向发射(+/- 180)。"
+"此参数是以度为单位的角度，它会被随机加减到基础 ``Direction`` 上。 ``180`` 的"
+"铺开角度将向所有方向发射(+/- 180)。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:208
 msgid "Gravity"
-msgstr "重力"
+msgstr "Gravity(重力)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:210
 msgid "The gravity applied to every particle."
-msgstr "重力应用于每个粒子。"
+msgstr "应用于每个粒子上的重力。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:215
 msgid "Initial Velocity"
-msgstr "初始速度"
+msgstr "Initial Velocity(初始速度)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:217
-#, fuzzy
 msgid ""
 "Initial velocity is the speed at which particles will be emitted (in pixels/"
 "sec). Speed might later be modified by gravity or other accelerations (as "
 "described further below)."
 msgstr ""
-"线速度是粒子发射的速度(以像素/秒为单位)。 以后可以通过重力或其他加速度来修改"
-"速度(下面将进一步描述)。"
+"初始速度是粒子发射的速度(以像素/秒为单位)。 以后可以通过重力或其他加速度来修"
+"改速度(下面将进一步描述)。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:224
 msgid "Angular Velocity"
-msgstr "角速度"
+msgstr "Angular Velocity(角速度)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:226
 msgid "Angular velocity is the initial angular velocity applied to particles."
@@ -366,7 +374,7 @@ msgstr "角速度是应用于粒子的初始角速度。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:229
 msgid "Spin Velocity"
-msgstr "旋转速度"
+msgstr "Spin Velocity(旋转速度)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:231
 msgid ""
@@ -376,15 +384,15 @@ msgstr "旋转速度是粒子围绕其中心转动的速度(以度/秒为单位)
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:237
 msgid "Orbit Velocity"
-msgstr "轨道速度"
+msgstr "Orbit Velocity(环绕速度)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:239
 msgid "Orbit velocity is used to make particles turn around their center."
-msgstr "轨道速度用于使粒子绕它们的中心转动。"
+msgstr "环绕速度速度用于使粒子绕它们的中心转动。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:244
 msgid "Linear Acceleration"
-msgstr "线性加速度"
+msgstr "Linear Acceleration(线性加速度)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:246
 msgid "The linear acceleration applied to each particle."
@@ -392,27 +400,30 @@ msgstr "应用于每个粒子的线性加速度。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:249
 msgid "Radial Acceleration"
-msgstr "径向加速度"
+msgstr "Radial Acceleration(径向加速度)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:251
 msgid ""
 "If this acceleration is positive, particles are accelerated away from the "
 "center. If negative, they are absorbed towards it."
-msgstr "如果此加速度为正，则粒子会从发射中心加速。 如果是负的，他们会被吸收。"
+msgstr ""
+"如果此加速度为正，则粒子会向远离发射中心加速。 如果是负的，他们会被加速吸进"
+"去。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:257
 msgid "Tangential Acceleration"
-msgstr "切向加速度"
+msgstr "Tangential Acceleration(切向加速度)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:259
 msgid ""
 "This acceleration will use the tangent vector to the center. Combining with "
 "radial acceleration can do nice effects."
-msgstr "该加速度会使用到中心点的切向量，结合径向加速度可以做出很酷炫的效果。"
+msgstr ""
+"该加速度会使用从粒子到中心点的切向量，结合径向加速度可以做出很酷炫的效果。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:265
 msgid "Damping"
-msgstr "衰减"
+msgstr "Damping(阻尼)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:267
 msgid ""
@@ -420,23 +431,22 @@ msgid ""
 "especially useful for sparks or explosions, which usually begin with a high "
 "linear velocity and then stop as they fade."
 msgstr ""
-"阻尼对颗粒施加摩擦力，迫使它们停止。 它特别适用于火花或爆炸，火花或爆炸通常以"
-"高线速度开始，然后在褪色时停止。"
+"阻尼选项会对颗粒施加摩擦力，迫使它们停止。 它特别适用于火花或爆炸，火花或爆炸"
+"通常以高线速度开始，然后在他们隐去时停下来。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:274
 msgid "Angle"
-msgstr "角度"
+msgstr "Angle(角度)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:276
-#, fuzzy
 msgid ""
 "Determines the initial angle of the particle (in degrees). This parameter is "
 "mostly useful randomized."
-msgstr "确定粒子的初始角度(以度为单位)。 该参数主要用于随机化。"
+msgstr "确定粒子的初始角度(以度为单位)。 该参数通常在随机化后会有用。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:282
 msgid "Scale"
-msgstr "规模"
+msgstr "Scale(大小)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:284
 msgid "Determines the initial scale of the particles."
@@ -444,15 +454,15 @@ msgstr "确定粒子的初始大小。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:289
 msgid "Color"
-msgstr "颜色"
+msgstr "Color(颜色)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:291
 msgid "Used to change the color of the particles being emitted."
-msgstr "用于改变发射中的粒子颜色。"
+msgstr "用于改变发射出来的粒子颜色。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:294
 msgid "Hue variation"
-msgstr "色调变化"
+msgstr "Hue Variation(色调变化)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:296
 msgid ""
@@ -460,13 +470,12 @@ msgid ""
 "particle. The ``Variation Random`` value controls the hue variation "
 "randomness ratio."
 msgstr ""
-"Variation值设置应用于每个粒子的初始色调变化。 Variation Rand值控制色调变化随"
-"机性比率。"
+"``Variation`` 值设置的是应用于每个粒子的初始色调变化。 ``Variation Rand`` 值"
+"控制色调变化的随机性比率。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:301
-#, fuzzy
 msgid "Emission Shapes"
-msgstr "碰撞形状"
+msgstr "Emission Shapes(发射形状)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:303
 msgid ""
@@ -474,30 +483,32 @@ msgid ""
 "area and direction in which particles are emitted. These can be generated "
 "from textures in your project."
 msgstr ""
-"粒子材质可以让你设置一个发射遮罩，它决定了粒子发射的区域和方向。这些可以从项"
-"目中的纹理产生。"
+"ParticlesMaterial 可以让你设置一个发射遮挡(Emission Mask)，它决定了粒子发射的"
+"区域和方向。这些可以用项目中的纹理来生成。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:307
 msgid ""
 "Ensure that a ParticlesMaterial is set, and the Particles2D node is "
 "selected. A \"Particles\" menu should appear in the Toolbar:"
-msgstr "确保设置了粒子材质，选择二维粒子节点。工具栏中应显示“粒子”菜单："
+msgstr ""
+"确保设置了ParticlesMaterial，选中Particles2D节点。工具栏中应显示“Particles(粒"
+"子)”菜单："
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:312
 msgid "Open it and select \"Load Emission Mask\":"
-msgstr "打开它，选择“加载发射遮罩”："
+msgstr "打开它，选择“加载 Emission Mask(发射遮挡)”："
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:316
 msgid "Then select which texture you want to use as your mask:"
-msgstr "然后选择你想要用作遮罩的纹理："
+msgstr "然后选择你想要用作遮挡的纹理："
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:320
 msgid "A dialog box with several settings will appear."
-msgstr "将出现一个具有多个设置的对话框。"
+msgstr "会出现一个具有多个设置的对话框。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:323
 msgid "Emission Mask"
-msgstr "发射遮罩"
+msgstr "Emission Mask(发射遮挡)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:325
 msgid "Three types of emission masks can be generated from a texture:"
@@ -507,12 +518,12 @@ msgstr "纹理可以生成三种类型的发射遮罩："
 msgid ""
 "Solid Pixels: Particles will spawn from any area of the texture, excluding "
 "transparent areas."
-msgstr "实体像素：粒子将从纹理的任何区域产生，透明区域除外。"
+msgstr "Solid Pixels(实心像素)：粒子将从纹理的任何区域产生，透明区域除外。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:332
 msgid ""
 "Border Pixels: Particles will spawn from the outer edges of the texture."
-msgstr "边界像素：粒子将从纹理的外边缘产生。"
+msgstr "Border Pixels(边界像素)：粒子将从纹理的外边缘产生。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:336
 msgid ""
@@ -521,35 +532,39 @@ msgid ""
 "Note that an ``Initial Velocity`` will need to be set in order to utilize "
 "this."
 msgstr ""
-"定向边界像素：类似于边界像素，在遮罩中添加额外的信息，使粒子能够从边缘发射出"
-"去。请注意，想要使用它，需要设置一个“初始速度”。"
+"Directed Border Pixels(定向边界像素)：类似于边界像素，在遮罩中添加额外的信"
+"息，使粒子能够从边缘发射出去。请注意，想要使用它，需要设置一个 ``初始速度``。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:344
 msgid "Emission Colors"
-msgstr "发光颜色"
+msgstr "Emission Colors(发射颜色)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:346
 msgid ""
 "``Capture from Pixel`` will cause the particles to inherit the color of the "
 "mask at their spawn points."
-msgstr "“从像素捕获”会使粒子在其产生点处继承遮罩的颜色。"
+msgstr "``Capture from Pixel`` 会使粒子在其产生点处继承遮挡材质的颜色。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:348
 msgid ""
 "Once you click \"OK\", the mask will be generated and set to the "
 "ParticlesMaterial, under the ``Emission Shape`` section:"
-msgstr "一旦你点击“确定”，将生成遮罩并设置为粒子材质，在“发射形状”部分："
+msgstr ""
+"一旦你点击“确定”，将生成遮挡并设置为粒子材质。可以在 ``Emission Shape(发射形"
+"状)`` 部分看到它："
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:352
 msgid ""
 "All of the values within this section have been automatically generated by "
 "the \"Load Emission Mask\" menu, so they should generally be left alone."
 msgstr ""
-"“加载发射遮罩”菜单在这个部分自动生成了所有的值，所以通常他们应该被单独留下。"
+"这个部分所有提到的值, “加载Emission Mask(发射遮挡)”菜单都会自动生成，所以通常"
+"他们放着不管就可以了。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:355
 msgid ""
 "An image should not be added to ``Point Texture`` or ``Color Texture`` "
 "directly. The \"Load Emission Mask\" menu should always be used instead."
 msgstr ""
-"图像不应该直接添加到“点纹理”或“颜色纹理”中。应该始终使用“加载发射遮罩”菜单。"
+"不应该直接添加图像到 ``Point Texture`` 或 ``Color Texture`` 中。应该始终使"
+"用“加载Emisson Mask(发射遮挡)”菜单。"

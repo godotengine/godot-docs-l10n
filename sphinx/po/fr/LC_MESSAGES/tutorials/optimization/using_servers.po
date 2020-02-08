@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -256,6 +256,9 @@ msgid ""
 "identical (using :ref:`RigidBody <class_RigidBody>` and :ref:`PhysicsServer "
 "<class_PhysicsServer>` respectively)."
 msgstr ""
+"La version 3D devrait être très similaire, car les serveurs de physique 2D "
+"et 3D sont identiques (en utilisant respectivement :ref:`RigidBody "
+"<class_RigidBody>` et :ref:`PhysicsServer <class_PhysicsServer>`)."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:180
 msgid "Getting data from the servers"
@@ -271,6 +274,14 @@ msgid ""
 "called. This will severely decrease performance if you call them every frame "
 "(and it won't be obvious why)."
 msgstr ""
+"Essayez de ne **jamais** demander d'informations au ``VisualServer``, "
+"``PhysicsServer`` ou au ``Physics2DServer`` en appelant des fonction sauf si "
+"vous savez ce que vous faites. Ces serveurs fonctionnent souvent de manière "
+"asynchrone pour des raisons de performance et le fait d'appeler une fonction "
+"qui renvoie une valeur les bloque et les force à traiter tout ce qui est en "
+"attente jusqu'à ce que la fonction soit finalement appelée. Cela réduira "
+"considérablement les performances si vous les appelez à chaque trame (et la "
+"raison ne sera pas évidente)."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:188
 msgid ""
@@ -278,3 +289,6 @@ msgid ""
 "possible to request information back, until it's actual data that can be "
 "saved."
 msgstr ""
+"Pour cette raison, la plupart des API de ces serveurs sont conçues de telle "
+"sorte qu'il est impossible de demander des informations en retour, jusqu'à "
+"ce que ses données actuelles puissent être sauvegardées."

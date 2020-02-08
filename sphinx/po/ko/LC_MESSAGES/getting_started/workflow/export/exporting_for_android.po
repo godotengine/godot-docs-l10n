@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,7 +135,7 @@ msgstr "일단 구성되면, Android에 내보낼 준비가 끝납니다!"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
 msgid "Providing launcher icons"
-msgstr ""
+msgstr "실행 아이콘 제공"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
@@ -144,6 +144,9 @@ msgid ""
 "``xxxhdpi`` density screens) and will automatically generate lower-"
 "resolution variants."
 msgstr ""
+"런처 아이콘은 Android 앱에서 사용자에게 애플리케이션을 나타내는 데 사용됩니"
+"다. Godot은 고해상도 아이콘 (``xxxhdpi``) 만 필요하며 저해상도는 자동으로 생"
+"성합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:68
 #, fuzzy
@@ -155,6 +158,8 @@ msgid ""
 "**Main Icon:**: The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
+"** Main Icon : ** : \"classic\" icon. 이는 모든 Android 버전에서 최대 "
+"Android 8 (Oreo)까지만 사용됩니다. 192 × 192 픽셀 이상이어야합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:71
 msgid ""
@@ -165,6 +170,11 @@ msgid ""
 "launcher application will control the icon's animation and masking. Must be "
 "at least 432×432 px."
 msgstr ""
+"** Adaptive Icons : ** Android 8 (포함)부터 `Adaptive Icons <https://"
+"developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive>`_ "
+"가 도입되었습니다. 앱은 배경 및 전경 아이콘을 포함해야합니다. 사용자의 런처 "
+"응용 프로그램은 아이콘의 애니메이션 및 마스킹을 제어합니다. 432 × 432 픽셀 이"
+"상이어야합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
 msgid ""

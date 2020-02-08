@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:4
 msgid "Instancing with signals"
-msgstr ""
+msgstr "信号によるインスタンス化"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:6
 msgid ""
@@ -31,14 +31,20 @@ msgid ""
 "instancing objects at runtime and may want to place them in an arbitrary "
 "location in the running scene tree."
 msgstr ""
+"シグナルは、ゲームオブジェクトを分離する方法を提供し、ノードの固定配置を強制"
+"することを回避できます。シグナルが必要となる兆候の1つは、\\ ``get_parent()`` "
+"を使用して自分自身を見つけたときです。ノードの親を直接参照するということは、"
+"そのノードをシーンツリー内の別の場所に簡単に移動できないことを意味します。こ"
+"れは、実行時にオブジェクトをインスタンス化し、実行中のシーンツリーの任意の場"
+"所に配置する場合に特に問題になる可能性があります。"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:13
 msgid "Below we'll consider an example of such a situation: firing bullets."
-msgstr ""
+msgstr "以下に、そのような状況の例を考えます: 弾丸を発射します。"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:16
 msgid "Shooting example"
-msgstr ""
+msgstr "発射処理の例"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:18
 msgid ""
@@ -46,18 +52,25 @@ msgid ""
 "Every time the mouse button is clicked, we create an instance of the bullet "
 "at the player's location. See :ref:`doc_instancing` for details."
 msgstr ""
+"マウスに向かって回転して弾を撃つことができるプレイヤーキャラクターを考えてみ"
+"ましょう。マウスボタンがクリックされるたびに、プレイヤーの場所に弾丸のインス"
+"タンスが作成されます。詳細については、\\ :ref:`doc_instancing` を参照してくだ"
+"さい。"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:22
 msgid ""
 "We'll use an ``Area2D`` for the bullet, which moves in a straight line at a "
 "given velocity:"
 msgstr ""
+"弾丸には ``Area2D`` を使用します。これは、指定された速度で直線的に移動します:"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:47
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
 msgstr ""
+"ただし、弾丸がプレイヤーの子として追加された場合、プレイヤーが回転したとき"
+"に、弾丸も「アタッチ」されたままになります:"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:52
 msgid ""
@@ -68,10 +81,15 @@ msgid ""
 "\"main\" game scene, which may be the player's parent or even further up the "
 "tree."
 msgstr ""
+"代わりに、弾丸はプレイヤーの動きから独立している必要があります。発射された"
+"ら、弾丸は直線で移動し続ける必要があり、プレイヤーは弾丸に影響を与えることが"
+"できなくなります。プレイヤーの子としてシーンツリーに追加する代わりに、弾丸を"
+"プレイヤーの親またはツリーのさらに上位にある「メイン」ゲームシーンの子として"
+"追加する方が理にかなっています。"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:58
 msgid "You could do this by adding the bullet to the main scene directly:"
-msgstr ""
+msgstr "これを行うには、弾丸をメインシーンに直接追加します:"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:71
 msgid ""
@@ -82,6 +100,11 @@ msgid ""
 "scene's node structure, the player's parent may no longer be the appropriate "
 "node to receive the bullets."
 msgstr ""
+"ただし、これは別の問題につながります。 「プレイヤー」シーンを個別にテストしよ"
+"うとすると、(弾丸の追加先として)アクセスする親ノードがないため、確認時にク"
+"ラッシュします。これにより、プレイヤーコードを個別にテストすることが非常に難"
+"しくなります。また、メインシーンのノード構造を変更する場合、プレイヤーの親が"
+"弾丸を受け取る適切なノードではなくなる可能性があります。"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:78
 msgid ""
@@ -90,19 +113,25 @@ msgid ""
 "after that - whatever node is connected to the signal can \"receive\" the "
 "bullets and take the appropriate action to spawn them."
 msgstr ""
+"これに対する解決策は、プレイヤーから弾丸を「放出」するシグナルを使用すること"
+"です。プレイヤーはその後、弾丸に何が起こるかを「知る」必要はありません - 信号"
+"に接続されているノードは、弾丸を「受信」し、弾丸を発生させるために適切なアク"
+"ションを実行できます。"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:83
 msgid "Here is the code for the player using signals to emit the bullet:"
-msgstr ""
+msgstr "シグナルを使用して弾丸を発射するプレイヤーのコードは次のとおりです:"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:128
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
 msgstr ""
+"メインシーンで、プレイヤーのシグナルを接続します([ノード]タブに表示されま"
+"す)。"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:152
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"
-msgstr ""
+msgstr "これで、弾丸はプレイヤーの回転に関係なく独自の動きを維持します:"

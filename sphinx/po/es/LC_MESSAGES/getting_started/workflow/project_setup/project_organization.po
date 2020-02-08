@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,9 +72,10 @@ msgid ""
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
 "They can then use a separate folder to store built levels that use them."
 msgstr ""
-"Como ejemplo ejemplo, uno normalmente ubica los recursos básicos como "
-"imágenes, modelos de escenas 3D, materiales, etcétera, todos en una carpeta. "
-"Y una carpeta separada es utilizada para construir los niveles que los usan."
+"Como ejemplo, normalmente puedes ubicar en una sola carpeta los recursos "
+"básicos, como imágenes, mallas de modelos 3D, materiales, música, etc. y "
+"utilizar una carpeta separada para almacenar los niveles construidos que los "
+"usan."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
 msgid "Importing"
@@ -100,9 +101,8 @@ msgstr ""
 "carpeta del proyecto, transparentemente."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
-#, fuzzy
 msgid "Ignoring specific folders"
-msgstr "Deshabilitar objetos específicos"
+msgstr "Ignorando carpetas específicas"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:60
 msgid ""
@@ -110,6 +110,10 @@ msgid ""
 "an empty file called ``.gdignore`` in the folder (the leading ``.`` is "
 "required). This can be useful to speed up the initial project importing."
 msgstr ""
+"Para evitar que Godot importe archivos contenidos en una carpeta específica, "
+"cree un archivo vacío llamado ``.gdignore`` en la carpeta (se requiere el "
+"`` .`` inicial). Esto puede ser útil para acelerar la importación inicial "
+"del proyecto."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:66
 msgid ""
@@ -117,15 +121,22 @@ msgid ""
 "editor such as Notepad++ or use the following command in a command prompt: "
 "``type nul > .gdignore``"
 msgstr ""
+"Para crear un archivo cuyo nombre empiece con un punto en Windows, puedes "
+"usar un editor de texto como Notepad++ o usar el siguiente comando en el "
+"símbolo del sistema: ``type nul > .gdignore``"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:70
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
 "using the ``load()`` and ``preload()`` methods."
 msgstr ""
+"Una vez que la carpeta se ignora, los recursos en esa carpeta ya no se "
+"pueden cargar utilizando los métodos ``load()`` y ``preload()``."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:73
 msgid ""
 "Ignoring a folder will also automatically hide it from the FileSystem dock, "
 "which can be useful to reduce clutter."
 msgstr ""
+"Ignorar una carpeta también la ocultará automáticamente del Panel de Sistema "
+"de Archivos, lo que puede ser útil para reducir el desorden."

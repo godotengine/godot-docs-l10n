@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -285,8 +285,8 @@ msgid ""
 msgstr ""
 "バーの `TextureProgress` では、デフォルトで `max_value` が `100` になっていま"
 "す。 キャラクターの体力を数字で表示する必要がない場合は、その `max_value` プ"
-"ロパティを変更する必要はありません。代わりに、 `Player ` から `GUI` にパーセ"
-"ンテージを送信します。 `health / max_health * 100` 。"
+"ロパティを変更する必要はありません。代わりに、 `Player` から `GUI` にパーセン"
+"テージを送信します: \\ `health / max_health * 100`\\ 。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:143
 msgid ""
@@ -498,8 +498,8 @@ msgid ""
 "You can optionally connect nodes from the code. However doing it from the "
 "editor has two advantages:"
 msgstr ""
-"必要に応じて、コードからノードを接続できます。ただし、エディターから実行する"
-"ことには、次の2つの利点があります:"
+"必要に応じて、コードからノードを接続できます。ただし、エディタから実行するこ"
+"とには、次の2つの利点があります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
 msgid "Godot can write new callback functions for you in the connected script"

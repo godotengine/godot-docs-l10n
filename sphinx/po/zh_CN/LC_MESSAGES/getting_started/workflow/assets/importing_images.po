@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,10 +75,78 @@ msgstr ""
 "``显存（VRAM）``）。纹理也自动重新导入。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
+#, fuzzy
+msgid "Supported image formats"
+msgstr "精灵动画"
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:36
+#, fuzzy
+msgid "Godot can import the following image formats:"
+msgstr "Godot支持以下3D *场景文件格式*："
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:38
+msgid "BMP (``.bmp``)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:39
+msgid ""
+"DirectDraw Surface (``.dds``) - If mipmaps are present in the texture, they "
+"will be loaded directly. This can be used to achieve effects using custom "
+"mipmaps."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:42
+msgid ""
+"OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:44
+msgid ""
+"Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
+"skies)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:46
+msgid ""
+"JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
+"limitations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:48
+msgid ""
+"PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
+"(no HDR images)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:50
+msgid "Truevision Targa (``.tga``)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:51
+msgid ""
+"SVG (``.svg``, ``.svgz``) - SVGs are rasterized using `NanoSVG <https://"
+"github.com/memononen/nanosvg>`__ when importing them. Support is limited; "
+"complex vectors may not render correctly. For complex vectors, rendering "
+"them to PNGs using Inkscape is often a better solution. This can be "
+"automated thanks to its `command-line interface <https://wiki.inkscape.org/"
+"wiki/index.php/Using_the_Command_Line#Export_files>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+msgid "WebP (``.webp``)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
+msgid ""
+"If you've compiled the Godot editor from source with specific modules "
+"disabled, some formats may not be available."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "Compression"
 msgstr "压缩"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:36
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid ""
 "Images are one of the largest assets in a game. To handle them efficiently, "
 "they need to be compressed. Godot offers several compression methods, "
@@ -87,156 +155,162 @@ msgstr ""
 "图像是游戏中最大的素材之一。为了有效地处理它们，它们被需要压缩。Godot根据使用"
 "情况提供了几种压缩方法。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:40
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:70
 msgid "Compress Mode"
 msgstr "压缩模式"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:42
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:72
+#, fuzzy
 msgid ""
-"VRAM Compression: This is the most common compression mode for 3D assets. "
-"File on disk is reduced and video memory usage is also reduced considerably. "
-"For 3D, it may present unwanted artifacts, though."
+"**VRAM Compression:** This is the most common compression mode for 3D "
+"assets. Size on disk is reduced and video memory usage is also decreased "
+"considerably (usually by a factor between 4 and 6). This mode should be "
+"avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
 "VRAM压缩：这是3D素材最常见的压缩模式。磁盘上的文件减小了，显存使用量也大大减"
 "少了。但对 3D 来说，它可能会因此出现不期望的失真。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:44
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:76
+#, fuzzy
 msgid ""
-"Lossless Compression: This is the most common compression for 2D assets. It "
-"shows assets without any kind of artifacting, and disk compression is "
-"decent. It will use considerably more amount of video memory than VRAM, "
-"though."
+"**Lossless Compression:** This is the most common compression mode for 2D "
+"assets. It shows assets without any kind of artifacting, and disk "
+"compression is decent. It will use considerably more amount of video memory "
+"than VRAM Compression, though. This is also the recommended setting for "
+"pixel art."
 msgstr ""
 "无损压缩：这是2D素材最常见的压缩。这说明素材没有任何形式的失真，并且磁盘压缩"
 "率也不错。但是，它将使用比VRAM多得多的显存。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:46
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:80
 msgid ""
-"Lossy Compression: For games with lots of large 2D assets, lossy compression "
-"can be a great choice. It has some artifacting, but less than VRAM and the "
-"file size is almost a tenth of Lossless."
+"**Lossy Compression:** This is a good choice for large 2D assets. It has "
+"some artifacts, but less than VRAM and the file size is several times lower "
+"compared to Lossless or Uncompressed. Video memory usage isn't decreased by "
+"this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
-"有损压缩：对于拥有大量大型2D素材的游戏，有损压缩可能是一个不错的选择。它有一"
-"些失真，但少于 VRAM ，文件大小几乎是无损的十分之一。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:84
+#, fuzzy
 msgid ""
-"Uncompressed: Only useful for formats that can't be compressed (like, raw "
-"float)."
+"**Uncompressed:** Only useful for formats that can't be compressed (such as "
+"raw float images)."
 msgstr "未压缩：仅适用于无法压缩的格式（例如 ``raw float``）。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:50
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:87
+#, fuzzy
 msgid ""
 "In this table, each of the four options are described together with their "
-"advantages and disadvantages ( |good| = Best, |bad| =Worst ):"
+"advantages and disadvantages (|good| = best, |bad| = worst):"
 msgstr ""
 "在这张表中，四个选项中的每一个都描述了它们的优缺点（ |good| = 最好的， |bad| "
 "= 最差的）："
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid "Uncompressed"
 msgstr "未压缩"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid "Compress Lossless (PNG)"
 msgstr "无损压缩（PNG）"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid "Compress Lossy (WebP)"
 msgstr "有损压缩（WebP）"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid "Compress VRAM"
 msgstr "VRAM压缩"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
 msgid "Description"
 msgstr "描述"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
 msgid "Stored as raw pixels"
 msgstr "存储为原始像素"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
 msgid "Stored as PNG"
 msgstr "存储为 PNG"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
 msgid "Stored as WebP"
 msgstr "存储为 WebP"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
-msgid "Stored as S3TC/BC,PVRTC/ETC, depending on platform"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+#, fuzzy
+msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
 msgstr "存储为 S3TC/BC、PVRTC/ETC，具体取决于平台"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "Size on Disk"
 msgstr "磁盘占用"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
 msgid "|bad| Large"
 msgstr "|bad| 巨大"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "|regular| Small"
 msgstr "|regular| 小"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "|good| Very Small"
 msgstr "|good| 非常小"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
 msgid "Memory Usage"
 msgstr "内存占用"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
 msgid "|good| Small"
 msgstr "|good| 小"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:62
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
 msgid "Performance"
 msgstr "性能"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:62
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "|regular| Normal"
 msgstr "|regular| 普通"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:62
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "|good| Fast"
 msgstr "|good| 快"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid "Quality Loss"
 msgstr "质量损失"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid "|good| None"
 msgstr "|good| 无"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid "|regular| Slight"
 msgstr "|regular| 轻微"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid "|bad| Moderate"
 msgstr "|bad| 中等"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "Load Time"
 msgstr "加载时间"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "|bad| Slow"
 msgstr "|bad| 慢"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:76
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:113
 msgid "HDR Mode"
 msgstr "HDR 模式"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:78
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:115
 msgid ""
 "Godot supports high dynamic range textures (as .HDR or .EXR). These are "
 "mostly useful as high dynamic range equirectangular panorama skies (the "
@@ -248,17 +322,17 @@ msgstr ""
 "景天空中很有用（如果您要搜索，则互联网上有很多），它代替了Godot 2.x中的立方体"
 "贴图。现代个人电脑支持 BC6H VRAM 格式，但仍有很多电脑不支持。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:81
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:118
 msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
 "textures, enable the \"Force RGBE\" option."
 msgstr "如果您希望 Godot 确保完全兼容各种纹理，请启用 ``强制 RGBE`` 选项。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:84
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:121
 msgid "Normal Map"
 msgstr "法线贴图"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:86
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:123
 msgid ""
 "When using a texture as normal map, only the red and green channels are "
 "required. Given regular texture compression algorithms produce artifacts "
@@ -273,7 +347,7 @@ msgstr ""
 "`` 将使Godot导入 RGTC 压缩的图像。默认情况下，它被设置为 ``Detect``，这意味着"
 "如果纹理一旦被用作法线贴图，则会将其更改为 ``Enabled`` 并自动重新导入。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:128
 msgid ""
 "Note that RGTC compression affects the resulting normal map image. You will "
 "have to adjust custom shaders that use the normal map to take this into "
@@ -282,21 +356,21 @@ msgstr ""
 "请注意，RGTC压缩会影响生成的法线贴图图像。您必须在调整使用法线贴图的自定义着"
 "色器时，考虑到这一点。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:131
 msgid "Flags"
 msgstr "标志"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:96
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:133
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
 msgstr "根据使用情况，很多设置在将图像作为纹理导入时，可以被切换。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:136
 msgid "Repeat"
 msgstr "重复"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:138
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
@@ -305,15 +379,15 @@ msgstr ""
 "此设置最常用于3D，因此通常在2D中被禁用。它将超出 0,0 -1,1 范围的UV坐标设置为 "
 "``循环``。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:140
 msgid "Repeating can optionally be set to mirrored mode."
 msgstr "可以选择将重复设置为镜像模式。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:106
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:143
 msgid "Filter"
 msgstr "过滤器"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:108
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:145
 msgid ""
 "When pixels become larger than the screen pixels, this option enables linear "
 "interpolation for them. The result is a smoother (less blocky) texture. This "
@@ -323,11 +397,11 @@ msgstr ""
 "当像素大于屏幕像素时，此选项可为它们启用线性插值。结果是更平滑的（更少块状）"
 "纹理。此设置通常可用于2D和3D，但在制作像素完美游戏时通常会禁用此设置。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:111
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:148
 msgid "Mipmaps"
 msgstr "Mipmaps"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:113
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid ""
 "When pixels become smaller than the screen, mipmaps kick in. This helps "
 "reduce the grainy effect when shrinking the textures. Keep in mind that, in "
@@ -338,22 +412,22 @@ msgstr ""
 "请记住，在较旧的硬件（GLES2，主要是移动设备）中，使用 ``mipmap`` 需要满足一些"
 "要求："
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:116
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:153
 msgid "Texture width and height must be powers of 2"
 msgstr "纹理宽度和高度必须是2的幂"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:117
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:154
 msgid "Repeat must be enabled"
 msgstr "必须启用 ``Repeat``"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:119
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:156
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
 "在制作手机游戏和应用程序时，希望完全兼容并使用 ``mipmap``，请牢记以上内容。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:121
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
@@ -361,22 +435,22 @@ msgstr ""
 "在 3D 模式下，应该打开 ``mipmap``，因为这也会提高性能（更小大小的纹理用于更远"
 "的对象）。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:124
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:161
 msgid "Anisotropic"
 msgstr "各向异性"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:126
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:163
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
 msgstr ""
 "当纹理几乎与视图平行时（如地板），该选项通过减少模糊程度使它们具有更多细节。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:129
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:166
 msgid "SRGB"
 msgstr "SRGB"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:131
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:168
 msgid ""
 "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or "
 "detail channels need to have this option turned on in order for colors to "
@@ -387,20 +461,20 @@ msgstr ""
 "的纹理需要打开此选项，才能使颜色看起来正确。当设置为 ``Detect`` 模式时，纹理"
 "当在反照率通道中使用时，将被标记为 SRGB 。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:135
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:172
 msgid "Process"
 msgstr "过程"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:137
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:174
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr "当作为纹理导入时，某些特殊过程可以应用于图像。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:140
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:177
 msgid "Fix Alpha Border"
 msgstr "修复 Alpha 边界"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:142
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:179
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
 "transparency to non transparency. It helps mitigate the outline effect when "
@@ -409,17 +483,17 @@ msgstr ""
 "这样会使周围颜色相同的像素从透明过渡到非透明。从Photoshop等导出图像时，它有助"
 "于减轻轮廓效果。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:147
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:184
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
 msgstr "除非需要特定的值，否则最好在保持默认值。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:187
 msgid "Premultiplied Alpha"
 msgstr "预乘Alpha"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:152
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:189
 msgid ""
 "An alternative to fix darkened borders is to use premultiplied alpha. By "
 "enabling this option, the texture will be converted to this format. Keep in "
@@ -430,11 +504,11 @@ msgstr ""
 "请记住，在画布物体上使用预乘 ALPHA 混合模式需要创建一个材质。请记住，在画布上"
 "的使用PREMULT ALPHA混合模式的项目，需要创建一个材质，而该材质需要它。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:156
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:193
 msgid "HDR as sRGB"
 msgstr "HDR 转为 SRGB"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:158
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:195
 msgid ""
 "A few HDR files are broken and contain sRGB color data. It is advised not to "
 "use them, but, in the worst-case scenario, toggling this option on will make "
@@ -443,11 +517,11 @@ msgstr ""
 "一些HDR文件已损坏，并包含sRGB颜色数据。建议不要使用它们，但是在最坏的情况下，"
 "启用此选项会使它们看起来正确。"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:161
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:198
 msgid "Invert Color"
 msgstr "反转颜色"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:163
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:200
 msgid ""
 "Reverses the image's color. This is useful, for example, to convert a height "
 "map generated by external programs to depth map to use with :ref:"

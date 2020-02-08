@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,7 +62,6 @@ msgstr ""
 "Editors zu ändern."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -73,7 +72,8 @@ msgstr ""
 "Aus dem **Vorlagen**-Tab kannst Du öffentliche Projektvorlagen und Demos "
 "herunterladen, die Dir einen schnelleren Einstieg ermöglichen. Wähle dazu "
 "die zu herunterladene Projektvorlage oder Demo aus, drücke auf "
-"Herunterladen, und, sobald es fertig ist, wähle den Instalationsort aus."
+"Herunterladen, und, sobald es fertig ist, wähle den Installationsort aus. "
+"Erfahre mehr in :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
@@ -280,10 +280,11 @@ msgid "Modify the interface"
 msgstr "Oberfläche anpassen"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
+#, fuzzy
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
-"Atom or Visual Studio for instance."
+"Atom or Visual Studio Code for instance."
 msgstr ""
 "Godot nutzt ein einzelnes Programmfenster. Du kannst es also nicht auf "
 "mehrere Bildschirme aufteilen. Allerdings besteht die Möglichkeit, einen "

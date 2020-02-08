@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,17 +129,18 @@ msgstr ""
 "``PrincipledBSDF``\\ 、\\ ``Diffuse``\\ 、\\ ``Glossy``\\ 、\\ ``Glass``"
 "\\ 、\\ ``add shader`` および ``mix shader`` を除くシェーダーノード"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:50
+#, fuzzy
 msgid ""
-"If possible try to use PrincipledBSDF node with GGX distribution as the "
-"output shader node, it is the only one guarantee to be exactly correctly. "
+"If possible, try to use PrincipledBSDF node with GGX distribution as the "
+"output shader node, it is the only one guaranteed to be exactly correct. "
 "Others are just based on approximation."
 msgstr ""
 "可能であれば、GGXディストリビューションでPrincipledBSDFノードを出力シェーダー"
 "ノードとして使用してみてください。これは、正確であることを保証する唯一の方法"
 "です。その他は近似に基づいています。"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:53
 msgid ""
 "Sometimes materials may not be valid for exporting (e.g. has some "
 "unsupported node) or it is using Blender Internal Engine, only the diffuse "
@@ -148,14 +149,14 @@ msgid ""
 msgstr ""
 "マテリアルがエクスポートに有効でない場合(サポートされていないノードがあるな"
 "ど)、またはBlender Internal Engineを使用している場合、拡散色(diffuse )といく"
-"つかのフラグ(シェーディングなしなど)のみがエクスポートされ、ほぼ空のマテリア"
-"ルを形成します。"
+"つかのフラグ(シェーディングなしなど)のみがエクスポートされ、Spatialマテリアル"
+"を形成します。"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:59
 msgid "Generate external materials"
 msgstr "外部マテリアルの生成"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:61
 msgid ""
 "The default configuration of material exporting would keep all the materials "
 "internal to the ``escn`` file. There is an option which could enable "
@@ -165,7 +166,7 @@ msgstr ""
 "ファイルの内部に保持します。オプションとして、 Godotで ``escn`` ファイルを開"
 "くときに使われる、外部 ``.material``ファイルの生成を指示することができます。"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:67
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."

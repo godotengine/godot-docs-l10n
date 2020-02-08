@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:4
 msgid "Binary serialization API"
-msgstr ""
+msgstr "バイナリシリアル化API"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:7
 msgid "Introduction"
@@ -33,10 +33,15 @@ msgid ""
 "the packet APIs for :ref:`class_PacketPeer`. This format is not used for "
 "binary scenes and resources."
 msgstr ""
+"Godotには、Variantに基づくシンプルなシリアル化APIがあります。データ型をバイト"
+"配列に効率的に変換するために使用されます。このAPIは、\\ :ref:`class_File` の "
+"``get_var`` および ``store_var`` 関数で使用されるほか、\\ :ref:"
+"`class_PacketPeer` のパケットAPIでも使用されます。この形式は、バイナリシーン"
+"およびリソースには使用されません。"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:16
 msgid "Packet specification"
-msgstr ""
+msgstr "パケットの仕様"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:18
 msgid ""
@@ -44,6 +49,9 @@ msgid ""
 "endian encoded. All packets have a 4 byte header representing an integer, "
 "specifying the type of data:"
 msgstr ""
+"パケットは、常に4バイトに埋め込まれるように設計されています。すべての値はリト"
+"ルエンディアンでエンコードされています。すべてのパケットには、データのタイプ"
+"を指定する整数を表す4バイトのヘッダーがあります:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:92
@@ -83,7 +91,7 @@ msgstr "値"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "0"
-msgstr ""
+msgstr "\\ 0"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "null"
@@ -92,23 +100,23 @@ msgstr "null"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:27
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:387
 msgid "1"
-msgstr ""
+msgstr "\\ 1"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:27
 msgid "bool"
-msgstr "bool"
+msgstr "\\ bool"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 msgid "2"
-msgstr ""
+msgstr "\\ 2"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 msgid "integer"
-msgstr ""
+msgstr "\\ integer"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "3"
-msgstr ""
+msgstr "\\ 3"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "float"
@@ -199,7 +207,7 @@ msgstr "\\ float"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "4"
-msgstr ""
+msgstr "\\ 4"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:33
 msgid "string"
@@ -207,27 +215,27 @@ msgstr "\\ string"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:35
 msgid "5"
-msgstr ""
+msgstr "\\ 5"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:35
 msgid "vector2"
-msgstr ""
+msgstr "\\ vector2"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "6"
-msgstr ""
+msgstr "\\ 6"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "rect2"
-msgstr ""
+msgstr "\\ rect2"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
 msgid "7"
-msgstr ""
+msgstr "\\ 7"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
 msgid "vector3"
-msgstr ""
+msgstr "\\ vector3"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:41
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:123
@@ -244,35 +252,35 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:321
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:334
 msgid "8"
-msgstr ""
+msgstr "\\ 8"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:41
 msgid "transform2d"
-msgstr ""
+msgstr "\\ transform2d"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
 msgid "9"
-msgstr ""
+msgstr "\\ 9"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
 msgid "plane"
-msgstr ""
+msgstr "\\ plane"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:45
 msgid "10"
-msgstr ""
+msgstr "\\ 10"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:45
 msgid "quat"
-msgstr ""
+msgstr "\\ quat"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
 msgid "11"
-msgstr ""
+msgstr "\\ 11"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
 msgid "aabb"
-msgstr ""
+msgstr "\\ aabb"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:49
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:149
@@ -285,35 +293,35 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:270
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:301
 msgid "12"
-msgstr ""
+msgstr "\\ 12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:49
 msgid "basis"
-msgstr ""
+msgstr "\\ basis"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "13"
-msgstr ""
+msgstr "\\ 13"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "transform"
-msgstr ""
+msgstr "\\ transform"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "14"
-msgstr ""
+msgstr "\\ 14"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "color"
-msgstr ""
+msgstr "\\ color"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "15"
-msgstr ""
+msgstr "\\ 15"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "node path"
-msgstr ""
+msgstr "\\ node path"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:151
@@ -325,35 +333,35 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:272
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:303
 msgid "16"
-msgstr ""
+msgstr "\\ 16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
 msgid "rid"
-msgstr ""
+msgstr "\\ rid"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "17"
-msgstr ""
+msgstr "\\ 17"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "object"
-msgstr ""
+msgstr "\\ object"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "18"
-msgstr ""
+msgstr "\\ 18"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "dictionary"
-msgstr ""
+msgstr "\\ dictionary"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "19"
-msgstr ""
+msgstr "\\ 19"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "array"
-msgstr ""
+msgstr "\\ array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:65
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:181
@@ -361,35 +369,35 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:249
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:274
 msgid "20"
-msgstr ""
+msgstr "\\ 20"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:65
 msgid "raw array"
-msgstr ""
+msgstr "\\ raw array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
 msgid "21"
-msgstr ""
+msgstr "\\ 21"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
 msgid "int array"
-msgstr ""
+msgstr "\\ int array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "22"
-msgstr ""
+msgstr "\\ 22"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "real array"
-msgstr ""
+msgstr "\\ real array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:71
 msgid "23"
-msgstr ""
+msgstr "\\ 23"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:71
 msgid "string array"
-msgstr ""
+msgstr "\\ string array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:73
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:183
@@ -397,49 +405,49 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:251
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:276
 msgid "24"
-msgstr ""
+msgstr "\\ 24"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:73
 msgid "vector2 array"
-msgstr ""
+msgstr "\\ vector2 array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "25"
-msgstr ""
+msgstr "\\ 25"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "vector3 array"
-msgstr ""
+msgstr "\\ vector3 array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:77
 msgid "26"
-msgstr ""
+msgstr "\\ 26"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:77
 msgid "color array"
-msgstr ""
+msgstr "\\ color array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:79
 msgid "27"
-msgstr ""
+msgstr "\\ 27"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:79
 msgid "max"
-msgstr ""
+msgstr "\\ max"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:82
 msgid ""
 "Following this is the actual packet contents, which varies for each type of "
 "packet:"
-msgstr ""
+msgstr "次は実際のパケットの内容であり、パケットのタイプごとに異なります:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:86
 msgid "0: null"
-msgstr ""
+msgstr "\\ 0: null"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:89
 msgid "1: :ref:`bool<class_bool>`"
-msgstr ""
+msgstr "\\ 1: :ref:`bool<class_bool>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:92
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:101
@@ -470,7 +478,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:452
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:467
 msgid "Offset"
-msgstr ""
+msgstr "\\ Offset"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:92
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:101
@@ -501,7 +509,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:452
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:467
 msgid "Len"
-msgstr ""
+msgstr "バイト長"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:92
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:101
@@ -558,19 +566,19 @@ msgstr "整数"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:94
 msgid "0 for False, 1 for True"
-msgstr ""
+msgstr "0 が False、1 が True"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:98
 msgid "2: :ref:`int<class_int>`"
-msgstr ""
+msgstr "\\ 2: :ref:`int<class_int>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:103
 msgid "Signed, 32-Bit Integer"
-msgstr ""
+msgstr "符号付き32ビット整数"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:107
 msgid "3: :ref:`float<class_float>`/real"
-msgstr ""
+msgstr "\\ 3: :ref:`float<class_float>`/real"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:112
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:134
@@ -637,48 +645,48 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "Float"
-msgstr ""
+msgstr "浮動小数点数"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:112
 msgid "IEE 754 32-Bits Float"
-msgstr ""
+msgstr "IEE 754 32ビット浮動小数点"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:116
 msgid "4: :ref:`String<class_string>`"
-msgstr ""
+msgstr "\\ 4: :ref:`String<class_string>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:121
 msgid "String Length (in Bytes)"
-msgstr ""
+msgstr "文字列の長さ(バイト)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:123
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:321
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:344
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:430
 msgid "X"
-msgstr ""
+msgstr "\\ X"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:123
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:321
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:344
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:430
 msgid "Bytes"
-msgstr ""
+msgstr "バイト列"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:123
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:321
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:344
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:430
 msgid "UTF-8 Encoded String"
-msgstr ""
+msgstr "UTF-8エンコードされた文字列"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:126
 msgid "This field is padded to 4 bytes."
-msgstr ""
+msgstr "このフィールドは4バイトにパディングされます。"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:129
 msgid "5: :ref:`Vector2<class_vector2>`"
-msgstr ""
+msgstr "\\ 5: :ref:`Vector2<class_vector2>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:134
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:145
@@ -687,7 +695,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:443
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 msgid "X Coordinate"
-msgstr ""
+msgstr "X座標"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:136
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:147
@@ -696,410 +704,416 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:445
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:458
 msgid "Y Coordinate"
-msgstr ""
+msgstr "Y座標"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:140
 msgid "6: :ref:`Rect2<class_rect2>`"
-msgstr ""
+msgstr "\\ 6: :ref:`Rect2<class_rect2>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:149
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:228
 msgid "X Size"
-msgstr ""
+msgstr "Xサイズ"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:151
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:230
 msgid "Y Size"
-msgstr ""
+msgstr "Yサイズ"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:155
 msgid "7: :ref:`Vector3<class_vector3>`"
-msgstr ""
+msgstr "\\ 7: :ref:`Vector3<class_vector3>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:164
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:226
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:460
 msgid "Z Coordinate"
-msgstr ""
+msgstr "Z座標"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:168
 msgid "8: :ref:`Transform2D<class_transform2d>`"
-msgstr ""
+msgstr "\\ 8: :ref:`Transform2D<class_transform2d>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:173
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:241
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:266
 msgid "[0][0]"
-msgstr ""
+msgstr "\\ [0][0]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:175
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:243
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:268
 msgid "[0][1]"
-msgstr ""
+msgstr "\\ [0][1]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:177
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:247
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:272
 msgid "[1][0]"
-msgstr ""
+msgstr "\\ [1][0]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:179
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:249
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:274
 msgid "[1][1]"
-msgstr ""
+msgstr "\\ [1][1]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:181
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:253
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:278
 msgid "[2][0]"
-msgstr ""
+msgstr "\\ [2][0]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:183
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:255
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:280
 msgid "[2][1]"
-msgstr ""
+msgstr "\\ [2][1]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:187
 msgid "9: :ref:`Plane<class_plane>`"
-msgstr ""
+msgstr "\\ 9: :ref:`Plane<class_plane>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:192
 msgid "Normal X"
-msgstr ""
+msgstr "法線X"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:194
 msgid "Normal Y"
-msgstr ""
+msgstr "法線Y"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:196
 msgid "Normal Z"
-msgstr ""
+msgstr "法線Z"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:198
 msgid "Distance"
-msgstr ""
+msgstr "距離"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:202
 msgid "10: :ref:`Quat<class_quat>`"
-msgstr ""
+msgstr "\\ 10: :ref:`Quat<class_quat>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:207
 msgid "Imaginary X"
-msgstr ""
+msgstr "虚数X"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:209
 msgid "Imaginary Y"
-msgstr ""
+msgstr "虚数Y"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:211
 msgid "Imaginary Z"
-msgstr ""
+msgstr "虚数Z"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:213
 msgid "Real W"
-msgstr ""
+msgstr "実数W"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:217
 msgid "11: :ref:`AABB<class_aabb>`"
-msgstr ""
+msgstr "\\ 11: :ref:`AABB<class_aabb>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:232
 msgid "Z Size"
-msgstr ""
+msgstr "Zサイズ"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:236
 msgid "12: :ref:`Basis<class_basis>`"
-msgstr ""
+msgstr "\\ 12: :ref:`Basis<class_basis>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:245
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:270
 msgid "[0][2]"
-msgstr ""
+msgstr "\\ [0][2]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:251
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:276
 msgid "[1][2]"
-msgstr ""
+msgstr "\\ [1][2]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:253
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:278
 msgid "28"
-msgstr ""
+msgstr "\\ 28"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:255
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:280
 msgid "32"
-msgstr ""
+msgstr "\\ 32"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:257
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:282
 msgid "36"
-msgstr ""
+msgstr "\\ 36"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:257
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:282
 msgid "[2][2]"
-msgstr ""
+msgstr "\\ [2][2]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:261
 msgid "13: :ref:`Transform<class_transform>`"
-msgstr ""
+msgstr "\\ 13: :ref:`Transform<class_transform>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:284
 msgid "40"
-msgstr ""
+msgstr "\\ 40"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:284
 msgid "[3][0]"
-msgstr ""
+msgstr "\\ [3][0]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:286
 msgid "44"
-msgstr ""
+msgstr "\\ 44"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:286
 msgid "[3][1]"
-msgstr ""
+msgstr "\\ [3][1]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:288
 msgid "48"
-msgstr ""
+msgstr "\\ 48"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:288
 msgid "[3][2]"
-msgstr ""
+msgstr "\\ [3][2]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:292
 msgid "14: :ref:`Color<class_color>`"
-msgstr ""
+msgstr "\\ 14: :ref:`Color<class_color>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:297
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Red (0..1)"
-msgstr ""
+msgstr "赤 (0..1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:299
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:473
 msgid "Green (0..1)"
-msgstr ""
+msgstr "緑 (0..1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:301
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 msgid "Blue (0..1)"
-msgstr ""
+msgstr "青 (0..1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:303
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "Alpha (0..1)"
-msgstr ""
+msgstr "アルファ (0..1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:307
 msgid "15: :ref:`NodePath<class_nodepath>`"
-msgstr ""
+msgstr "\\ 15: :ref:`NodePath<class_nodepath>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:312
 msgid ""
 "String Length, or New Format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
 msgstr ""
+"文字列の長さ、または新しい形式(val&0x80000000!=0 及び "
+"NameCount=val&0x7FFFFFFF)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:316
 msgid "For old format:"
-msgstr ""
+msgstr "古い形式の場合:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:324
 msgid "Padded to 4 bytes."
-msgstr ""
+msgstr "4バイトにパディングされます。"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:327
 msgid "For new format:"
-msgstr ""
+msgstr "新しい形式の場合:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:332
 msgid "Sub-Name Count"
-msgstr ""
+msgstr "サブネームのカウント"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:334
 msgid "Flags (absolute: val&1 != 0 )"
-msgstr ""
+msgstr "フラグ (絶対値: val&1 != 0)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:337
 msgid "For each Name and Sub-Name"
-msgstr ""
+msgstr "名前とサブネームごと"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:342
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:428
 msgid "X+0"
-msgstr ""
+msgstr "\\ X+0"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:342
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:428
 msgid "String Length"
-msgstr ""
+msgstr "文字列の長さ"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:344
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:430
 msgid "X+4"
-msgstr ""
+msgstr "\\ X+4"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:347
 msgid "Every name string is padded to 4 bytes."
-msgstr ""
+msgstr "すべての名前文字列は4バイトにパディングされます。"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:350
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
-msgstr ""
+msgstr "16: :ref:`RID<class_rid>` (サポートされていません)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:353
 msgid "17: :ref:`Object<class_object>` (unsupported)"
-msgstr ""
+msgstr "17: :ref:`Object<class_object>` (サポートされていません)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:356
 msgid "18: :ref:`Dictionary<class_dictionary>`"
-msgstr ""
+msgstr "\\ 18: :ref:`Dictionary<class_dictionary>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:361
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:373
 msgid "val&0x7FFFFFFF = elements, val&0x80000000 = shared (bool)"
-msgstr ""
+msgstr "val&0x7FFFFFFF = elements、 val&0x80000000 = shared (bool)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:364
 msgid ""
 "Then what follows is, for amount of \"elements\", pairs of key and value, "
 "one after the other, using this same format."
 msgstr ""
+"これに続き、この同じ形式を使用して、”elements” の個数分、キーと値のペアを次々"
+"に作成します。"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:368
 msgid "19: :ref:`Array<class_array>`"
-msgstr ""
+msgstr "\\ 19: :ref:`Array<class_array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:376
 msgid ""
 "Then what follows is, for amount of \"elements\", values one after the "
 "other, using this same format."
 msgstr ""
+"これに続き、\"elements\" の個数分、この同じ形式を使用して次々に値を設定しま"
+"す。"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:380
 msgid "20: :ref:`PoolByteArray<class_poolbytearray>`"
-msgstr ""
+msgstr "\\ 20: :ref:`PoolByteArray<class_poolbytearray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:385
 msgid "Array Length (Bytes)"
-msgstr ""
+msgstr "配列の長さ (バイト)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:387
 msgid "8..8+length"
-msgstr ""
+msgstr "8..8+長さ"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:387
 msgid "Byte"
-msgstr ""
+msgstr "\\ Byte"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:387
 msgid "Byte (0..255)"
-msgstr ""
+msgstr "Byte (符号なし: 0..255)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:390
 msgid "The array data is padded to 4 bytes."
-msgstr ""
+msgstr "配列データは4バイトにパディングされます。"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:393
 msgid "21: :ref:`PoolIntArray<class_poolintarray>`"
-msgstr ""
+msgstr "\\ 21: :ref:`PoolIntArray<class_poolintarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:398
 msgid "Array Length (Integers)"
-msgstr ""
+msgstr "配列の長さ (整数)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:400
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:411
 msgid "8..8+length\\*4"
-msgstr ""
+msgstr "8..8+長さ\\*4"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:400
 msgid "32 Bits Signed Integer"
-msgstr ""
+msgstr "32ビット符号付き整数"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:404
 msgid "22: :ref:`PoolRealArray<class_poolrealarray>`"
-msgstr ""
+msgstr "\\ 22: :ref:`PoolRealArray<class_poolrealarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:409
 msgid "Array Length (Floats)"
-msgstr ""
+msgstr "配列の長さ (浮動小数点数)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:411
 msgid "32 Bits IEE 754 Float"
-msgstr ""
+msgstr "32ビットIEE 754浮動小数点"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:415
 msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"
-msgstr ""
+msgstr "\\ 23: :ref:`PoolStringArray<class_poolstringarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:420
 msgid "Array Length (Strings)"
-msgstr ""
+msgstr "配列の長さ (文字列)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:423
 msgid "For each String:"
-msgstr ""
+msgstr "各文字列に対して:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:433
 msgid "Every string is padded to 4 bytes."
-msgstr ""
+msgstr "すべての文字列は4バイトにパディングされます。"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:436
 msgid "24: :ref:`PoolVector2Array<class_poolvector2array>`"
-msgstr ""
+msgstr "\\ 24: :ref:`PoolVector2Array<class_poolvector2array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:441
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:454
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:469
 msgid "Array Length"
-msgstr ""
+msgstr "配列の長さ"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:443
 msgid "8..8+length\\*8"
-msgstr ""
+msgstr "8..8+長さ\\*8"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:445
 msgid "8..12+length\\*8"
-msgstr ""
+msgstr "8..12+長さ\\*8"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:449
 msgid "25: :ref:`PoolVector3Array<class_poolvector3array>`"
-msgstr ""
+msgstr "\\ 25: :ref:`PoolVector3Array<class_poolvector3array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 msgid "8..8+length\\*12"
-msgstr ""
+msgstr "8..8+長さ\\*12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:458
 msgid "8..12+length\\*12"
-msgstr ""
+msgstr "8..12+長さ\\*12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:460
 msgid "8..16+length\\*12"
-msgstr ""
+msgstr "8..16+長さ\\*12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:464
 msgid "26: :ref:`PoolColorArray<class_poolcolorarray>`"
-msgstr ""
+msgstr "\\ 26: :ref:`PoolColorArray<class_poolcolorarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "8..8+length\\*16"
-msgstr ""
+msgstr "8..8+長さ\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:473
 msgid "8..12+length\\*16"
-msgstr ""
+msgstr "8..12+長さ\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 msgid "8..16+length\\*16"
-msgstr ""
+msgstr "8..16+長さ\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "8..20+length\\*16"
-msgstr ""
+msgstr "8..20+長さ\\*16"

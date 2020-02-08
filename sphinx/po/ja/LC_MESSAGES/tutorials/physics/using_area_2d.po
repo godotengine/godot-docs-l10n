@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,16 +34,23 @@ msgid ""
 "tutorial, we'll look at the :ref:`Area2D <class_Area2D>` node and show some "
 "examples of how it can be used."
 msgstr ""
+"Godotは、衝突の検出と応答の両方を提供する多数のコリジョンオブジェクトを提供し"
+"ます。プロジェクトに使用するものを決定しようとすると、混乱する可能性がありま"
+"す。問題のそれぞれがどのように機能し、その長所と短所が何であるかを理解すれ"
+"ば、問題を回避して開発を簡素化できます。このチュートリアルでは、\\ :ref:"
+"`Area2D <class_Area2D>` ノードを見て、その使用方法の例をいくつか示します。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:15
 msgid ""
 "This document assumes you're familiar with Godot's various physics bodies. "
 "Please read :ref:`doc_physics_introduction` first."
 msgstr ""
+"このドキュメントは、あなたがGodotのさまざまな物理ボディに精通していることを前"
+"提としています。最初に :ref:`doc_physics_introduction` をお読みください。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:19
 msgid "What is an area?"
-msgstr "areaとは何ですか?"
+msgstr "Areaとは何ですか?"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:21
 msgid ""
@@ -52,36 +59,48 @@ msgid ""
 "entering, and exiting. Areas also allow for overriding local physics "
 "properties. We'll explore each of these functions below."
 msgstr ""
+"Area2Dは、2D空間の領域を定義します。このスペースでは、他の :ref:"
+"`CollisionObject2D <class_CollisionObject2D>` ノードが進入、オーバラップ、お"
+"よび退出することを検出できます。Areaでは、ローカルの物理プロパティをオーバー"
+"ライドすることもできます。これらの各機能を以下で説明します。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:27
 msgid "Area properties"
-msgstr "area プロパティ"
+msgstr "Areaのプロパティ"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:29
 msgid "Areas have many properties you can use to customize their behavior."
 msgstr ""
+"Areaには、動作をカスタマイズするために使用できる多くのプロパティがあります。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:33
 msgid ""
 "The first eight properties are used to configure the area's physics override "
 "behavior. We'll look at how to use those in the section below."
 msgstr ""
+"最初の8つのプロパティは、Areaの物理に対するオーバーライド動作を構成するために"
+"使用されます。これらの使用方法については、以下のセクションで説明します。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:36
 msgid "*Monitoring* and *Monitorable* are used to enable and disable the area."
 msgstr ""
+"*Monitoring*(監視)および *Monitorable*(監視可能)は、Areaを有効または無効にす"
+"るために使用されます。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:38
 msgid ""
 "The \"Collision\" section is where you configure the area's collision "
 "layer(s) and mask(s)."
 msgstr ""
+"\"Collision\"セクションでは、Areaのコリジョンレイヤーとマスクを設定します。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:41
 msgid ""
 "The \"Audio Bus\" section allows you to override audio in the area, for "
 "example to apply an audio effect when the player moves through."
 msgstr ""
+"\"Audio Bus\"セクションでは、たとえばプレイヤーが移動するときにオーディオ効果"
+"を適用するために、Area内のオーディオをオーバーライドできます。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:44
 msgid ""
@@ -89,10 +108,13 @@ msgid ""
 "so it also provides properties inherited from that class, such as "
 "``input_pickable``."
 msgstr ""
+"Area2Dは :ref:`CollisionObject2D <class_CollisionObject2D>` を拡張するた"
+"め、\\ ``input_pickable`` など、そのクラスから継承されたプロパティも提供する"
+"ことに注意してください。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:48
 msgid "Overlap detection"
-msgstr "重なり検出"
+msgstr "オーバーラップ検出"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:50
 msgid ""
@@ -100,6 +122,9 @@ msgid ""
 "detection. When you need to know that two objects have touched, but don't "
 "need physical collision, you can use an area to notify you of the contact."
 msgstr ""
+"おそらく、Area2Dノードの最も一般的な使用方法は、接触とオーバーラップの検出で"
+"す。 2つのオブジェクトが触れたが、物理的な衝突は必要ないことを知る必要がある"
+"場合、Areaを使用して連絡先に通知できます。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:54
 msgid ""
@@ -107,10 +132,13 @@ msgid ""
 "coin is not a solid object - the player can't stand on it or push it - we "
 "just want it to disappear when the player touches it."
 msgstr ""
+"たとえば、プレイヤーが受け取るコインを作っているとしましょう。 コインは堅固な"
+"オブジェクトではありません - プレイヤーはそれの上に立ったり押したりすることは"
+"できません - プレイヤーが触れたときにコインが消えるようにしたいだけです。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:58
 msgid "Here's the node setup for the coin:"
-msgstr ""
+msgstr "コインのノード設定は次のとおりです:"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:62
 msgid ""
@@ -120,16 +148,23 @@ msgid ""
 "``KinematicBody2D`` (and therefore a ``CollisionObject2D`` type), so we'll "
 "connect the ``body_entered`` signal."
 msgstr ""
+"オーバーラップを検出するために、Area2dに適切なシグナルを接続します。 使用する"
+"シグナルは、プレイヤーのノードタイプによって異なります。プレイヤーが別のArea"
+"である場合、\\ ``area_entered`` を使用します。ただし、プレイヤーが "
+"``KinematicBody2D``(したがって ``CollisionObject2D``\\ 型)であると仮定し"
+"て、\\ ``body_entered`` シグナルを接続します。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:68
 msgid ""
 "If you're not familiar with using signals, see :ref:`doc_signals` for an "
 "introduction."
 msgstr ""
+"シグナルの使用に慣れていない場合は、概要について :ref:`doc_signals` を参照し"
+"てください。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:90
 msgid "Now our player can collect the coins!"
-msgstr ""
+msgstr "今、私たちのプレイヤーは、コインを収集することができます！"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:92
 msgid "Some other usage examples:"
@@ -140,27 +175,35 @@ msgid ""
 "Areas are great for bullets and other projectiles that hit and deal damage, "
 "but don't need any other physics such as bouncing."
 msgstr ""
+"Areaは、弾丸やその他の発射物が命中してダメージを与える場合に最適ですが、反発"
+"などの物理は必要ありません。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:95
 msgid ""
 "Use a large circular area around an enemy to define its \"detect\" radius. "
 "When the player is outside the area, the enemy can't \"see\" it."
 msgstr ""
+"敵の周囲の大きな円形エリアを使用して、その\"detect\"(検出)半径を定義します。 "
+"プレイヤーがエリアの外にいるとき、敵はそれを「見る」ことができません。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:96
 msgid ""
 "\"Security cameras\" - In a large level with multiple cameras, attach areas "
 "to each camera and activate them when the player enters."
 msgstr ""
+"「セキュリティカメラ」- 複数のカメラがある大規模なレベルでは、各カメラにArea"
+"を取り付けて、プレイヤーが入るときにそれらをアクティブにします。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:98
 msgid ""
 "See the :ref:`doc_your_first_game` for an example of using Area2D in a game."
 msgstr ""
+"ゲームでArea2Dを使用する例については、\\ :ref:`doc_your_first_game` を参照し"
+"てください。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:101
 msgid "Area influence"
-msgstr ""
+msgstr "Areaの影響"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:103
 msgid ""
@@ -169,17 +212,21 @@ msgid ""
 "property. When areas overlap, they are processed in *Priority* order (higher "
 "priority areas are processed first). There are four options for override:"
 msgstr ""
+"Areaノードの2番目の主な用途は、物理を変更することです。 デフォルトでは、エリ"
+"アはこれを行いませんが、\\ *Space Override* プロパティでこれを有効にできま"
+"す。 Areaが重複する場合、それらは\\ *Priority*\\ 順で処理されます(優先度の高"
+"いAreaが最初に処理されます)。 オーバーライドには4つのオプションがあります:"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:108
 msgid ""
 "*Combine* - The area adds its values to what has been calculated so far."
-msgstr ""
+msgstr "*Combine* - Areaは、これまでに計算された値にその値を加算します。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:109
 msgid ""
 "*Replace* - The area replaces physics properties, and lower priority areas "
 "are ignored."
-msgstr ""
+msgstr "*Replace* - Areaは物理特性を置換し、優先度の低いAreaは無視されます。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:110
 msgid ""
@@ -187,48 +234,58 @@ msgid ""
 "been calculated so far (in priority order), ignoring any lower priority "
 "areas."
 msgstr ""
+"*Combine-Replace* - Areaは、これまでに計算されたものに優先度の高い値を加算"
+"し、優先度の低いAreaを無視します。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:111
 msgid ""
 "*Replace-Combine* - The area replaces any gravity/damping calculated so far, "
 "but keeps calculating the rest of the areas."
 msgstr ""
+"*Replace-Combine* - このAreaは、これまでに計算された重力/減衰を置き換えます"
+"が、残りのAreaの計算を続けます。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:113
 msgid ""
 "Using these properties, you can create very complex behavior with multiple "
 "overlapping areas."
 msgstr ""
+"これらのプロパティを使用すると、複数の重なり合う領域を持つ非常に複雑な動作を"
+"作成できます。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:116
 msgid "The physics properties that can be overridden are:"
-msgstr ""
+msgstr "オーバーライドできる物理特性は次のとおりです:"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:118
 msgid "*Gravity* - Gravity's strength inside the area."
-msgstr ""
+msgstr "*Gravity* - Area内の重力の強さ。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:119
 msgid ""
 "*Gravity Vec* - Gravity's direction. This vector does not need to be "
 "normalized."
-msgstr ""
+msgstr "*Gravity Vec* - 重力の方向。このベクトルは正規化する必要はありません。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:120
 msgid ""
 "*Linear Damp* - How quickly objects stop moving - linear velocity lost per "
 "second."
 msgstr ""
+"*Linear Damp* - オブジェクトの減速量 - 毎秒 linear velocity からこの値が失わ"
+"れます。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:121
 msgid ""
 "*Angular Damp* - How quickly objects stop spinning - angular velocity lost "
 "per second."
 msgstr ""
+"* Angular Damp * - オブジェクトの回転の減速量 - 毎秒 angular velocity からこ"
+"の値が失われます。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:124
 msgid "Point gravity"
-msgstr ""
+msgstr "ポイント重力"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:126
 msgid ""
@@ -237,6 +294,10 @@ msgid ""
 "property. Values are relative to the Area2D, so for example using ``(0, 0)`` "
 "will attract objects to the center of the area."
 msgstr ""
+"*Gravity Point* プロパティを使用すると、「アトラクター」を作成できます。 エリ"
+"アの重力は、\\ *Gravity Vec* プロパティで指定されたポイントに向かって計算され"
+"ます。 値はArea2Dに相対的であるため、たとえば ``(0, 0)`` を使用すると、オブ"
+"ジェクトが領域の中心に引き付けられます。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:132
 msgid "Examples"
@@ -247,6 +308,8 @@ msgid ""
 "The example project attached below has three areas demonstrating physics "
 "override."
 msgstr ""
+"以下に添付されているサンプルプロジェクトには、物理オーバーライドを示す3つの領"
+"域があります。"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:139
 msgid ""

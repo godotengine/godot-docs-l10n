@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,6 +51,8 @@ msgid ""
 "gettext is a standard format, which can be edited using any text editor or "
 "GUI editors such as `Poedit <https://poedit.net/>`_."
 msgstr ""
+"gettextは標準形式であり、任意のテキストエディタまたは `Poedit <https://"
+"poedit.net/>`_ などのGUIエディタを使用して編集できます。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:20
 msgid ""
@@ -58,28 +60,37 @@ msgid ""
 "www.transifex.com/>`_ and `Weblate <https://weblate.org/>`_, which makes it "
 "easier for people to collaborate to localization."
 msgstr ""
+"gettextは、\\ `Transifex <https://www.transifex.com/>`_ や `Weblate <https://"
+"weblate.org/>`_ などの翻訳プラットフォームでサポートされており、人々がローカ"
+"ライズに協力しやすくなります。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:23
 msgid ""
 "Compared to CSV, gettext works better with version control systems like Git, "
 "as each locale has its own messages file."
 msgstr ""
+"CSVに比べて、gettextは各ロケール用に個別のメッセージファイルがあるため、Gitな"
+"どのバージョン管理システムでより適切に動作します。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:25
 msgid ""
 "Multiline strings are more convenient to edit in gettext files compared to "
 "CSV files."
 msgstr ""
+"複数行の文字列は、CSVファイルと比べるとgettextファイルで編集する方が便利で"
+"す。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:29
 msgid "Disadvantages"
-msgstr ""
+msgstr "欠点"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:31
 msgid ""
 "gettext is a more complex format than CSV and can be harder to grasp for "
 "people new to software localization."
 msgstr ""
+"gettextはCSVよりも複雑な形式であり、ソフトウェアのローカライズを初めて行う人"
+"にとっては把握が難しい場合があります。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:33
 msgid ""
@@ -88,10 +99,14 @@ msgid ""
 "(``.mo``), translators can test their work without having to install gettext "
 "tools."
 msgstr ""
+"ローカリゼーションファイルを管理する人は、システムにgettextツールをインストー"
+"ルする必要があります。ただし、Godotはコンパイルされたメッセージオブジェクト"
+"ファイル(``.mo``)を使用しないため、翻訳者はgettextツールをインストールしなく"
+"ても作業をテストできます。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:39
 msgid "Caveats"
-msgstr ""
+msgstr "注意事項"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:41
 msgid ""
@@ -99,10 +114,13 @@ msgid ""
 "limited than the reference GNU gettext implementation), some features such "
 "as pluralization aren't supported."
 msgstr ""
+"Godotは独自のPOファイルパーサーをバックグラウンドで使用するため(GNU gettextの"
+"リファレンス実装よりも制限されています)、複数形化などの一部の機能はサポートさ"
+"れていません。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:46
 msgid "Installing gettext tools"
-msgstr ""
+msgstr "gettextツールのインストール"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:48
 msgid ""
@@ -110,6 +128,9 @@ msgid ""
 "operations, such as updating message files. Therefore, it's strongly "
 "recommended to install them."
 msgstr ""
+"メッセージファイルの更新などのメンテナンス操作を実行するには、コマンドライン"
+"のgettextツールが必要です。したがって、それらをインストールすることを強くお勧"
+"めします。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:52
 msgid ""
@@ -117,18 +138,26 @@ msgid ""
 "io/articles/gettext-iconv-windows.html>`_. Any architecture and binary type "
 "(shared or static) works; if in doubt, choose the 64-bit static installer."
 msgstr ""
+"**Windows:** `このページ <https://mlocati.github.io/articles/gettext-iconv-"
+"windows.html>`_ からインストーラーをダウンロードします。すべてのアーキテク"
+"チャおよびバイナリタイプ(共有または静的)が機能します。疑わしい場合は、64ビッ"
+"トの静的インストーラーを選択してください。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:56
 msgid ""
 "**macOS:** Use `Homebrew <https://brew.sh/>`_ to install gettext with the "
 "``brew install gettext`` command."
 msgstr ""
+"**macOS:** `Homebrew <https://brew.sh/>`_ を使用して ``brew install "
+"gettext`` コマンドでgettextをインストールします。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:58
 msgid ""
 "**Linux:** On most distributions, install the ``gettext`` package from your "
 "distribution's package manager."
 msgstr ""
+"**Linux:** ほとんどのディストリビューションでは、ディストリビューションのパッ"
+"ケージマネージャーから ``gettext`` パッケージをインストールします。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:62
 msgid "Creating the PO template (POT) manually"
@@ -141,12 +170,19 @@ msgid ""
 "be placed anywhere in the project directory, but it's recommended to keep it "
 "in a subdirectory, as each locale will be defined in its own file."
 msgstr ""
+"Godotは現在、\\ ``xgettext`` を使用したソース文字列の抽出をサポートしていない"
+"ため、\\ ``.pot`` ファイルを手動で作成する必要があります。このファイルはプロ"
+"ジェクトディレクトリのどこにでも配置できますが、各ロケールは個別のファイルで"
+"定義されるため、サブディレクトリに保存することをお勧めします。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:69
 msgid ""
 "Create a directory named `locale` in the project directory. In this "
 "directory, save a file named ``messages.pot`` with the following contents:"
 msgstr ""
+"プロジェクトディレクトリに `locale` という名前のディレクトリを作成します。こ"
+"のディレクトリに、次の内容の ``messages.pot`` という名前のファイルを保存しま"
+"す:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:81
 msgid ""
@@ -154,12 +190,17 @@ msgid ""
 "the source string (usually in English), ``msgstr`` will be the translated "
 "string."
 msgstr ""
+"gettextのメッセージは、\\ ``msgid`` と ``msgstr`` のペアで構成されていま"
+"す。\\ ``msgid`` はソース文字列(通常は英語)で、\\ ``msgstr`` は翻訳された文字"
+"列です。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:85
 msgid ""
 "The ``msgstr`` value in PO template files (``.pot``) should **always** be "
 "empty. Localization will be done in the generated ``.po`` files instead."
 msgstr ""
+"POテンプレートファイル(``.pot``)の ``msgstr`` 値は\\ **常に**\\ 空である必要"
+"があります。代わりに、生成された ``.po`` ファイルでローカライズが行われます。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:89
 msgid "Creating the PO template (POT) using pybabel"
@@ -171,10 +212,13 @@ msgid ""
 "automatically create and update the POT file from your scene files and "
 "scripts."
 msgstr ""
+"PythonツールpybabelはGodotをサポートしており、シーンファイルとスクリプトから"
+"POTファイルを自動的に作成および更新するために使用できます。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:94
 msgid "After installing ``babel`` and ``babel-godot``, for example using pip:"
 msgstr ""
+"``babel`` と ``babel-godot`` をインストールした後、例えばpipを使用して:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:100
 msgid ""
@@ -182,10 +226,13 @@ msgid ""
 "files pybabel needs to process (note that we process GDScript as Python, "
 "which is generally sufficient):"
 msgstr ""
+"pybabelが処理する必要があるファイルを示すマッピングファイル(たとえば "
+"``babelrc``)を記述します(GDScriptをPythonとして処理することに注意してくださ"
+"い。通常はこれで事足ります):"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:112
 msgid "You can then run pybabel like so:"
-msgstr ""
+msgstr "pybabelを次のように実行できます:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:118
 msgid ""
@@ -194,10 +241,14 @@ msgid ""
 "well as properties named \"text\" (commonly used by Control nodes) and "
 "LineEdit's \"placeholder_text\" property."
 msgstr ""
+"抽出する必要があるものを指定するには、\\ ``-k`` オプションを使用します。この"
+"場合、\\ :ref:`tr() <class_Object_method_tr>` への引数と、(コントロールノード"
+"で一般的に使用される)\"text\"、およびLineEditの \"placeholder_text\"という名"
+"前のプロパティが変換されます。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:124
 msgid "Creating a messages file from a PO template"
-msgstr ""
+msgstr "POテンプレートからメッセージファイルを作成する"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:126
 msgid ""
@@ -205,22 +256,29 @@ msgid ""
 "For instance, to create a French localization file, use the following "
 "command while in the ``locale`` directory:"
 msgstr ""
+"``msginit`` コマンドは、POテンプレートをメッセージファイルに変換するために使"
+"用されます。たとえば、フランス語のローカライズファイルを作成するには、\\ "
+"``locale`` ディレクトリで次のコマンドを使用します:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:134
 msgid ""
 "The command above will create a file named ``fr.po`` in the same directory "
 "as the PO template."
 msgstr ""
+"上記のコマンドは、POテンプレートと同じディレクトリに ``fr.po`` という名前の"
+"ファイルを作成します。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:137
 msgid ""
 "Alternatively, you can do that graphically using Poedit, or by uploading the "
 "POT file to your web platform of choice."
 msgstr ""
+"または、Poeditを使用してグラフィカルに行うか、選択したWebプラットフォームに"
+"POTファイルをアップロードします。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:141
 msgid "Loading a messages file in Godot"
-msgstr ""
+msgstr "Godot でのメッセージ ファイルの読み込み"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:143
 msgid ""
@@ -230,16 +288,23 @@ msgid ""
 "dialog. The locale will be inferred from the ``\"Language: <code>\\n\"`` "
 "property in the messages file."
 msgstr ""
+"メッセージファイルをプロジェクトの翻訳として登録するには、\\ **プロジェクト設"
+"定**\\ を開き、\\ **ローカライズ**\\ タブに移動します。\\ **翻訳**\\ で、\\ "
+"**追加…**\\ をクリックし、ファイルダイアログで ``.po`` ファイルを選択します。"
+"ロケールは、メッセージファイルの ``\"Language:<code>\\n\"`` プロパティから推"
+"測されます。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:149
 msgid ""
 "See :ref:`doc_internationalizing_games` for more information on importing "
 "and testing translations in Godot."
 msgstr ""
+"Godotでの翻訳のインポートとテストの詳細については、\\ :ref:"
+"`doc_internationalizing_games` を参照してください。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:153
 msgid "Updating message files to follow the PO template"
-msgstr ""
+msgstr "POテンプレートに従うようにメッセージファイルを更新する"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:155
 msgid ""
@@ -248,25 +313,35 @@ msgid ""
 "present in the PO template removed in the PO template. This can be done "
 "automatically using the ``msgmerge`` tool:"
 msgstr ""
+"POテンプレートを更新した後、POテンプレートで削除されたPOテンプレートに存在し"
+"なくなった文字列を削除すると同時に、新しい文字列を含むようにメッセージファイ"
+"ルを更新する必要があります。これは ``msgmerge`` ツールを使用して自動的に実行"
+"できます:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:165
 msgid ""
 "If you want to keep a backup of the original message file (which would be "
 "saved as ``fr.po~`` in this example), remove the ``--backup=none`` argument."
 msgstr ""
+"元のメッセージファイル(この例では ``fr.po~`` として保存される)のバックアップ"
+"を保持する場合は、\\ ``--backup=none`` 引数を削除します。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:169
 msgid "Checking the validity of a PO file or template"
-msgstr ""
+msgstr "POファイルまたはテンプレートの有効性の確認"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:171
 msgid ""
 "It is possible to check whether a gettext file's syntax is valid by running "
 "the command below:"
 msgstr ""
+"以下のコマンドを実行すると、gettextファイルの構文が有効かどうかを確認できま"
+"す:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:178
 msgid ""
 "If there are syntax errors or warnings, they will be displayed in the "
 "console. Otherwise, ``msgfmt`` won't output anything."
 msgstr ""
+"構文エラーまたは警告がある場合は、コンソールに表示されます。そうでなけれ"
+"ば、\\ ``msgfmt`` は何も出力しません。"

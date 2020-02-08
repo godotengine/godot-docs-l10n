@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,75 +69,75 @@ msgstr ""
 msgid "Here is a complete class example based on these guidelines:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:92
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:94
 #, fuzzy
 msgid "Formatting"
 msgstr "Format"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:95
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:97
 #, fuzzy
 msgid "Encoding and special characters"
 msgstr "Mit einem Signal (Seitenverhältnis) umgehen"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:97
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:99
 msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:98
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:100
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:99
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:101
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:100
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:103
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 msgid "Indentation"
 msgstr "Einrückungen"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 msgid "Each indent level should be one greater than the block containing it."
 msgstr ""
 "Jede Einrückungsebene sollte um eins größer sein als die des umgebenden "
 "Blocks."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:146
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:199
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:223
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:270
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:300
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:325
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:345
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:371
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:660
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:109
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:129
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:148
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:201
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:225
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:272
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:302
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:662
 msgid "**Good**:"
 msgstr "**Gut**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:135
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:169
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:210
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:229
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:280
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:307
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:332
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:352
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:381
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:116
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:171
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:212
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:231
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:309
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 msgid "**Bad**:"
 msgstr "**Schlecht**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:124
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:126
 msgid ""
 "Use 2 indent levels to distinguish continuation lines from regular code "
 "blocks."
@@ -145,66 +145,66 @@ msgstr ""
 "Rücke 2 Ebenen ein, um fortgesetzte Zeilen von regulären Codeblöcken zu "
 "unterscheiden."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:143
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:145
 msgid ""
 "Exceptions to this rule are arrays, dictionaries, and enums. Use a single "
 "indentation level to distinguish continuation lines:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
 msgid "Trailing comma"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:197
 msgid ""
 "Use a trailing comma on the last line in arrays, dictionaries, and enums. "
 "This results in easier refactoring and better diffs in version control as "
 "the last line doesn't need to be modified when adding new elements."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:221
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:223
 msgid ""
 "Trailing commas are unnecessary in single-line lists, so don't add them in "
 "this case."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:236
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
 msgid "Blank lines"
 msgstr "Leere Zeilen"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:240
 #, fuzzy
 msgid "Surround functions and class definitions with two blank lines:"
 msgstr ""
 "Vor und nach einer Funktion bzw. Klassendefinition sollte eine Leerzeile "
 "sein."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:253
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:255
 msgid "Use one blank line inside functions to separate logical sections."
 msgstr ""
 "Verwende eine Leerzeile um logische Abschnitte innerhalb einer Funktion zu "
 "separieren."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:256
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
 msgid "Line length"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:260
 msgid "Keep individual lines of code under 100 characters."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:260
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:262
 msgid ""
 "If you can, try to keep lines under 80 characters. This helps to read the "
 "code on small displays and with two scripts opened side-by-side in an "
 "external text editor. For example, when looking at a differential revision."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:265
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:267
 msgid "One statement per line"
 msgstr "Eine Anweisung pro Zeile"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:267
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:269
 #, fuzzy
 msgid ""
 "Never combine multiple statements on a single line. No, C programmers, not "
@@ -214,15 +214,15 @@ msgstr ""
 "Programmierer, auch keine einzeiligen bedingten Anweisungen (außer der "
 "Ternäroperator)!"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:288
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:290
 msgid "The only exception to that rule is the ternary operator:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:295
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
 msgid "Avoid unnecessary parentheses"
 msgstr "Vermeide unnötige Klammern"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:299
 msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations, they only reduce readability."
@@ -230,56 +230,56 @@ msgstr ""
 "Vermeide Klammern in Ausdrücken und Bedingungen. Außer um logische "
 "Reihenfolgen zu bestimmen, sie verringern nur die Lesbarkeit."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:315
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
 #, fuzzy
 msgid "Boolean operators"
 msgstr "Boolsches ODER"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
 msgid ""
 "Prefer the plain English versions of boolean operators, as they are the most "
 "accessible:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:321
 #, fuzzy
 msgid "Use ``and`` instead of ``&&``."
 msgstr "``and`` ``&&``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:320
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
 #, fuzzy
 msgid "Use ``or`` instead of ``||``."
 msgstr "``or`` ``||``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:324
 msgid ""
 "You may also use parentheses around boolean operators to clear any "
 "ambiguity. This can make long expressions easier to read."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:340
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:342
 #, fuzzy
 msgid "Comment spacing"
 msgstr "Kommentare"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:342
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:344
 msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:361
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:363
 msgid ""
 "In the script editor, to toggle the selected code commented, press "
 "<kbd>Ctrl</kbd> <kbd>K</kbd>. This feature adds a single # sign at the start "
 "of the selected lines."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:366
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 msgid "Whitespace"
 msgstr "Leerzeichen"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
 #, fuzzy
 msgid ""
 "Always use one space around operators and after commas. Also, avoid extra "
@@ -289,25 +289,25 @@ msgstr ""
 "zusätzliche Leerzeichen in Dictionary-Referenzen oder Funktionsaufrufen, "
 "oder um \"Spalten\" zu erzeugen."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:391
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:393
 msgid "Don't use spaces to align expressions vertically:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:400
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
 msgid "Quotes"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:404
 msgid ""
 "Use double quotes unless single quotes make it possible to escape fewer "
 "characters in a given string. See the examples below:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 msgid "Naming conventions"
 msgstr "Benennungsrichtlinien"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:426
 #, fuzzy
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
@@ -318,30 +318,30 @@ msgstr ""
 "Nichtbeachtung wird dein Code mit den eingebauten Bennennungsrichtlinien "
 "kollidieren, was hässlich ist."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:429
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
 msgid "Classes and nodes"
 msgstr "Klassen und Nodes"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 msgid "Use PascalCase for class and node names:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:437
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:439
 #, fuzzy
 msgid "Also use PascalCase when loading a class into a constant or a variable:"
 msgstr ""
 "Außerdem beim abspeichern einer Klasse in einer Konstante oder Variable:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:444
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:446
 msgid "Functions and variables"
 msgstr "Funktionen und Variablen"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:446
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:448
 #, fuzzy
 msgid "Use snake\\_case to name functions and variables:"
 msgstr "Funktionen und Variablen"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:453
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:455
 #, fuzzy
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods functions the user must "
@@ -351,21 +351,21 @@ msgstr ""
 "private Funktionen und private Variablen mit führendem Unterstrich: ``func "
 "_ready()``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:462
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:464
 msgid "Signals"
 msgstr "Signale"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:464
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:466
 #, fuzzy
 msgid "Use the past tense to name signals:"
 msgstr "Vergangenheitsform benutzen:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:472
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:474
 #, fuzzy
 msgid "Constants and enums"
 msgstr "Konstantes Schema"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:474
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:476
 #, fuzzy
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
@@ -374,108 +374,108 @@ msgstr ""
 "Verwende  CONSTANT\\_CASE, alles in Großbuchstaben, mit einem Unterstrich "
 "zur Worttrennung: ``const MAX_SPEED = 200``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:481
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:483
 msgid ""
 "Use PascalCase for enum *names* and CONSTANT\\_CASE for their members, as "
 "they are constants:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:495
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:497
 #, fuzzy
 msgid "Code order"
 msgstr "Ablaufsteuerung"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:497
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:499
 msgid ""
 "This first section focuses on code order. For formatting, see :ref:"
 "`formatting`. For naming conventions, see :ref:`naming_conventions`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:500
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:502
 msgid "We suggest to organize GDScript code this way:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:523
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:525
 msgid ""
 "We optimized the order to make it easy to read the code from top to bottom, "
 "to help developers reading the code for the first time understand how it "
 "works, and to avoid errors linked to the order of variable declarations."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:527
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:529
 msgid "This code order follows four rules of thumb:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:529
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:531
 msgid "Properties and signals come first, followed by methods."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:530
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:532
 msgid "Public comes before private."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:531
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:533
 msgid "Virtual callbacks come before the class's interface."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:532
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:534
 msgid ""
 "The object's construction and initialization functions, ``_init`` and "
 "``_ready``, come before functions that modify the object at runtime."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:537
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:539
 msgid "Class declaration"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:539
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:541
 msgid ""
 "If the code is meant to run in the editor, place the ``tool`` keyword on the "
 "first line of the script."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:542
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:544
 msgid ""
 "Follow with the `class_name` if necessary. You can turn a GDScript file into "
 "a global type in your project using this feature. For more information, see :"
 "ref:`doc_gdscript`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:546
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:548
 msgid "Then, add the `extends` keyword if the class extends a built-in type."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:548
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:550
 msgid ""
 "Following that, you should have the class's optional docstring as comments. "
 "You can use that to explain the role of your class to your teammates, how it "
 "works, and how other developers should use it, for example."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:560
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:562
 #, fuzzy
 msgid "Signals and properties"
 msgstr "Node-Eigenschaften"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:562
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:564
 msgid ""
 "Write signal declarations, followed by properties, that is to say, member "
 "variables, after the docstring."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:565
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:567
 msgid ""
 "Enums should come after signals, as you can use them as export hints for "
 "other properties."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:568
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:570
 msgid ""
 "Then, write constants, exported variables, public, private, and onready "
 "variables, in that order."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:591
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:593
 msgid ""
 "The GDScript compiler evaluates onready variables right before the "
 "``_ready`` callback. You can use that to cache node dependencies, that is to "
@@ -483,70 +483,70 @@ msgid ""
 "the example above shows."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:598
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:600
 #, fuzzy
 msgid "Methods and static functions"
 msgstr "Statische Funktionen"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:600
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:602
 msgid "After the class's properties come the methods."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:602
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:604
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
 "Godot calls when it adds a node to the scene tree."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:608
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:609
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:611
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
 "and interactions with the game engine."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:650
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:652
 #, fuzzy
 msgid "Static typing"
 msgstr "Statische Funktionen"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:652
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:654
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:655
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:657
 #, fuzzy
 msgid "Type hints"
 msgstr "Typen"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:657
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:659
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:676
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:678
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:682
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:684
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr ""

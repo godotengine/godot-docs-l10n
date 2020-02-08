@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:4
 msgid "Code style guidelines"
-msgstr ""
+msgstr "Lignes directrices pour le style du code"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:8
 msgid ""
@@ -29,10 +29,16 @@ msgid ""
 "best setup your system as outlined below to ensure all your commits follow "
 "the guidelines."
 msgstr ""
+"Lorsque vous contribuez au code source de Godot, vous devez suivre les "
+"directives de style décrites ci-dessous. Certaines d'entre elles sont "
+"vérifiées par le biais du processus d'intégration continue et les "
+"examinateurs vous demanderont de résoudre les problèmes potentiels. Il est "
+"donc préférable de configurer votre système comme indiqué ci-dessous pour "
+"vous assurer que tous vos commits respectent les directives."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:15
 msgid "C++ and Objective-C"
-msgstr ""
+msgstr "C++ et Objective-C"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:17
 msgid ""
@@ -41,25 +47,35 @@ msgid ""
 "ClangFormat.html>`__ code beautifier, which takes care for you of all our "
 "conventions. To name a few:"
 msgstr ""
+"Il n'y a pas de directives écrites, mais le style de code convenu par les "
+"développeurs est appliqué via le metteur en forme de code `clang-format "
+"<http://clang.llvm.org/docs/ClangFormat.html>`__, qui s'occupe pour vous de "
+"toutes nos conventions. Pour n'en citer que quelques-unes :"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:22
 msgid ""
 "Indentation and alignment are both tab based (respectively one and two tabs)"
 msgstr ""
+"L'indentation et l'alignement sont tous les deux basés sur des tabulations "
+"(respectivement une et deux tabulations)"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:23
 msgid "One space around math and assignments operators as well as after commas"
 msgstr ""
+"Un espace autour des opérateurs mathématiques et d'affectation, ainsi "
+"qu'après les virgules"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:24
 msgid ""
 "Pointer and reference operators are affixed to the variable identifier, not "
 "to the type name"
 msgstr ""
+"Les opérateurs de pointeurs et de références sont attachés à l'identifiant "
+"de la variable, pas au nom du type"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:26
 msgid "See further down regarding header includes"
-msgstr ""
+msgstr "Voir plus loin concernant les inclusions en en-tête"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:28
 msgid ""
@@ -67,6 +83,9 @@ msgid ""
 "github.com/godotengine/godot/blob/master/.clang-format>`__ file of the Godot "
 "repository."
 msgstr ""
+"Les règles utilisées par clang-format sont décrites dans le fichier `.clang-"
+"format <https://github.com/godotengine/godot/blob/master/.clang-format>`__ "
+"du dépôt de Godot."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:32
 msgid ""
@@ -76,6 +95,12 @@ msgid ""
 "advise that you setup clang-format locally to check and automatically fix "
 "all your commits."
 msgstr ""
+"Tant que vous veillez à ce que votre style corresponde au code environnant "
+"et que vous n'introduisez pas d'espaces de fin de ligne ou d'indentation "
+"basée sur des espaces, tout devrait bien se passer. Toutefois, si vous avez "
+"l'intention de participer régulièrement, nous vous conseillons vivement de "
+"configurer clang-format localement pour vérifier et corriger automatiquement "
+"tous vos commits."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:37
 msgid ""
@@ -97,7 +122,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:52
 msgid "Using clang-format locally"
-msgstr ""
+msgstr "Utiliser clang-format localement"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:54
 msgid ""
@@ -106,14 +131,19 @@ msgid ""
 "versions might be suitable, but previous versions had bugs that will cause "
 "formatting changes to the current code base."
 msgstr ""
+"Tout d'abord, vous devrez installer clang-format. Pour le moment, vous devez "
+"utiliser **clang-format 8.x** pour être compatible avec le format de Godot. "
+"Les versions ultérieures pourraient convenir, mais les versions précédentes "
+"comportaient des bugs qui entraîneront des modifications dans le formatage "
+"du code actuel."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:60
 msgid "Installation"
-msgstr ""
+msgstr "Installation"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:62
 msgid "Here's how to install clang-format:"
-msgstr ""
+msgstr "Voici comment installer clang-format :"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:64
 msgid ""
@@ -123,6 +153,12 @@ msgid ""
 "releases.llvm.org/download.html>`__, or if you are on a Debian derivative, "
 "use the `upstream repos <http://apt.llvm.org/>`__."
 msgstr ""
+"Linux : Il sera généralement disponible prêt à l'emploi avec la chaîne "
+"d'outils de clang empaquetée par votre distribution. Si la version de votre "
+"distribution n'est pas celle requise, vous pouvez télécharger une version "
+"pré-compilée sur le `site web de la LLVM <http://releases.llvm.org/download."
+"html>`__, ou si vous êtes sur un dérivé de Debian, utilisez les `dépôts "
+"upstream <http://apt.llvm.org/>`__."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:69
 msgid ""
@@ -131,27 +167,39 @@ msgid ""
 "path to the binary's folder to your system's ``PATH`` environment variable "
 "to be able to call ``clang-format`` out of the box."
 msgstr ""
+"macOS et Windows : Vous pouvez télécharger les binaires pré-compilées depuis "
+"le `site web de LLVM <http://releases.llvm.org/download.html>`__. Vous "
+"devrez peut-être ajouter le chemin du répertoire des binaires à votre "
+"variable d'environnement ``PATH`` pour pouvoir appeler ``clang-format`` "
+"depuis n'importe quel endroit."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:74
 msgid ""
 "You then have different possibilities to apply clang-format to your changes:"
 msgstr ""
+"Vous avez alors différentes possibilités pour appliquer le clang-format à "
+"vos modifications :"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:77
 msgid "Manual usage"
-msgstr ""
+msgstr "Utilisation manuelle"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:79
 msgid ""
 "You can apply clang-format manually one or more files with the following "
 "command:"
 msgstr ""
+"Vous pouvez appliquer manuellement clang-format à un ou plusieurs fichiers "
+"avec la commande suivante :"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:86
 msgid ""
 "``-i`` means that the changes should be written directly to the file (by "
 "default clang-format would only output the fixed version to the terminal)."
 msgstr ""
+"``-i`` signifie que les modifications doivent être écrites directement dans "
+"le fichier (par défaut, clang-format n'affichera la version corrigée que "
+"dans le terminal)."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:88
 msgid ""

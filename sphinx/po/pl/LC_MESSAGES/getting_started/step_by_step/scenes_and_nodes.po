@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,6 +189,8 @@ msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
+"Otwórz projekt, który utworzyłeś w :ref:`doc_intro_to_the_editor_interface`, "
+"lub stwórz nowy. To uruchomi edytor Godot:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
@@ -208,6 +210,11 @@ msgid ""
 "chosen node as a child of the currently selected node (or, in an empty "
 "scene, as the \"root\" node)."
 msgstr ""
+"By tego dokonać, musimy dodać węzeł Label. Wciśnij przycisk \"Dodaj węzeł - "
+"dziecko\" w lewym górnym rogu interfejsu sceny (ikona \"+\"). Ten przycisk "
+"to główny sposób na dodawanie nowych węzłów do sceny i zawsze będzie on "
+"dodawał wybrane węzły jako dzieci obecnie zaznaczonych węzłów (albo, w "
+"przypadku pustej sceny, jako \"korzeń\" węzła)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
 msgid ""
@@ -218,6 +225,12 @@ msgid ""
 "pressing the \"Add Child Node\" button). You can also press the star-shaped "
 "icon to toggle the display of your favorited nodes."
 msgstr ""
+"W pustej scenie (bez węzła - korzenia [root node]) interfejs ma kilka opcji, "
+"dzięki którym możesz dodać węzeł - korzeń do sceny. \"Scena 2D\" dodaje "
+"węzeł Node2D, \"Scena 3D\" dodaje węzeł Spatial, \"Interfejs Użytkownika\" "
+"dodaje węzeł Control, a \"Węzeł niestandardowy\" pozwala ci na wybranie "
+"każdego węzła (podobnie jak wciśnięcie przycisku \"Dodaj węzeł - dziecko\"). "
+"Możesz także kliknąć ikonkę gwiazdki, by zobaczyć swoje ulubione węzły."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
 msgid ""
@@ -226,6 +239,10 @@ msgid ""
 "its root node, likewise not every GUI or 2D scene needs a Control node or "
 "Node2D as their root node."
 msgstr ""
+"Pamiętaj, że te ustawienia powstały w celach wygody, nie są jednak "
+"obowiązkowe dla różnych typów scen. Nie każda scena 3D potrzebuje węzła "
+"Spatial jako swojego głównego, tak samo jak nie każdy interfejs użytkownika "
+"lub scena 2D potrzebują węzłów Control i Node2D."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
@@ -233,27 +250,30 @@ msgid ""
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
+"Teraz, by dodać węzeł Label do tej sceny musisz kliknąć przycisk Węzła "
+"Niestandardowego lub \"Dodaj Węzeł\". W scenach, które nie są puste, możesz "
+"użyć przycisku \"Dodaj Węzeł\", by utworzyć wszystkie węzły - dzieci."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
-"Spowoduje to otwarcie okna dialogowego Utwórz węzeł, pokazującego długą "
-"listę węzłów, które można utworzyć:"
+"Spowoduje to otwarcie okna \"Utwórz węzeł\", pokazującego długą listę "
+"węzłów, które można utworzyć:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:121
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
-"Z tego poziomu, wybierz węzeł \"Etykieta\". Najszybciej będzie użyć "
+"Następnie wybierz węzeł \"Label\". Najszybciej będzie skorzystać "
 "wyszukiwarki:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
-"I na koniec, stwórz Label! Wiele dzieje się po naciśnięciu przycisku Utwórz:"
+"I na koniec, stwórz Label! Wiele się dzieje po naciśnięciu przycisku Utwórz:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:130
 msgid ""
@@ -262,7 +282,7 @@ msgid ""
 "viewport."
 msgstr ""
 "Najpierw widok zmieni się na tryb 2D (ponieważ Label jest typem węzła 2D), a "
-"Label pojawi się, wybrany, w lewym górnym rogu widoku."
+"Label pojawi się w lewym górnym rogu widoku."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
 msgid ""

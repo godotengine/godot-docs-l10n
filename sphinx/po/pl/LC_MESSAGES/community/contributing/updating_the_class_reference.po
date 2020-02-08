@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,6 +120,7 @@ msgstr "Posiadać wraz z innymi aktualną wersję forka"
 #: ../../docs/community/contributing/updating_the_class_reference.rst:40
 msgid "Create a pull request so your improvements end in the official docs"
 msgstr ""
+"Zrób pull request, by twoje zmiany znalazły się w oficjalnej dokumentacji"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:42
 msgid ""
@@ -127,6 +128,10 @@ msgid ""
 "`GitHub's interactive guide <https://try.github.io/levels/1/challenges/1>`_. "
 "You'll learn some essential vocabulary and get a sense for the tool."
 msgstr ""
+"Jeśli dopiero zaczynasz przygodę z Gitem, systemem kontroli wersji, z "
+"którego korzysta Godot, to sprawdź interaktywny poradnik GitHuba `<https://"
+"try.github.io/levels/1/challenges/1>`_. Poznasz w ten sposób słownictwo i "
+"zrozumiesz na czym polega to narzędzie."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:45
 msgid "Fork Godot"
@@ -197,6 +202,8 @@ msgid ""
 "If you made changes you don't want to keep in your local branch, use the "
 "following commands instead:"
 msgstr ""
+"Jeśli wprowadziłeś zmiany, których nie chcesz zatrzymać w swoim lokalnym "
+"branchu, skorzystaj z poniższych komend:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:105
 msgid ""
@@ -204,12 +211,17 @@ msgid ""
 "``upstream master`` branch. It will discard all local changes. Make sure to "
 "only run this *before* you make important changes."
 msgstr ""
+"**Uwaga:** Powyższa komenda spowoduje zresetowanie twojego brancha do stanu "
+"``upstream master`` brancha. Usunie to wszystkie lokalne zmiany. Upewnij "
+"się, że używasz jej wyłącznie przed przeprowadzeniem ważnych modyfikacji."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:107
 msgid ""
 "Another option is to delete the branch you're working on, synchronize the "
 "master branch with the Godot repository, and create a brand new branch:"
 msgstr ""
+"Inną opcją jest skasowanie brancha, nad którym pracujesz, zsynchronizowanie "
+"master brancha z repozytorium Godot i stworzenie kompletnie nowego brancha:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:116
 msgid ""
@@ -250,6 +262,9 @@ msgid ""
 "forcefully need to go through these steps (unless you know that the class "
 "you plan to edit *has* been modified recently)."
 msgstr ""
+"**Uwaga!** Jeśli to zostało zrobione przez innego członka społeczności, nie "
+"musisz wykonywać tych kroków (chyba, że wiesz, że klasa, którą chciałeś "
+"edytować została zmieniona niedawno)."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:139
 msgid "Push and request a pull of your changes"
@@ -614,6 +629,9 @@ msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
+"Nie ma problemu. Zostaw to i listę metod, które pominąłeś, kiedy tworzyłeś "
+"pull request dla wprowadzanych zmian. Inny twórca dokumentacji się tym "
+"zajmie."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:280
 msgid ""
@@ -621,6 +639,10 @@ msgid ""
 "code on GitHub. Also, if you have doubts, feel free to ask on the `Q&A "
 "website <https://godotengine.org/qa/>`__ and on IRC (freenode, #godotengine)."
 msgstr ""
+"Możesz także spojrzeć na to, jak implementowane są metody w kodzie źródłowym "
+"Godot umieszczonym na GitHubie. Dodatkowo, jeśli masz jakieś wątpliwości, to "
+"zapraszamy do zadawania pytań na `Q&A website <https://godotengine.org/qa/"
+">`_ oraz na IRC (freenode, #godotengine)."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:284
 msgid "Localization"
@@ -631,6 +653,8 @@ msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 msgstr ""
+"Dokumentacja może być tłumaczona na każdy język na `Hosted Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:289
 #, fuzzy
@@ -650,3 +674,7 @@ msgid ""
 "of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "
 "think that a new language is complete enough to get its own instance."
 msgstr ""
+"Wersje językowe, które są już w dużej części skończone, mają swoje zakładki "
+"w ReadTheDocs. Możesz założyć issue w repozytorium ``godot-docs-l10n`` jeśli "
+"uważasz, że nowy język jest wystarczająco gotowy, by mieć stworzoną własną "
+"zakładkę."

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,6 +222,10 @@ msgid ""
 "`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
 "parameters. Default values can be set by assigning a value."
 msgstr ""
+"Use o atributo ``[Export]`` em vez da palavra-chave de GDScript ``export``. "
+"Este atributo também pode ser utilizado com parâmetros opcionais :ref:"
+"`PropertyHint<enum_@GlobalScope_PropertyHint>` e ``hintString`` . Os valores "
+"padrão podem ser definidos atribuindo um valor."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:114
 msgid "Signal keyword"
@@ -630,10 +634,11 @@ msgstr "Comunicando com outras linguagens de script"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
 msgstr ""
+"Isso é explicado extensivamente em :ref:`doc_cross_language_scripting`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:306
 msgid "Yield"
-msgstr "Conceder"
+msgstr "Yield"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:308
 msgid ""

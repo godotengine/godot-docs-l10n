@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,10 @@ msgid ""
 "color, position, and rotation. They are drawn with any regular material for "
 "CanvasItem or Spatial, depending on whether they are 2D or 3D."
 msgstr ""
+"パーティクルシェーダーは、オブジェクトが描画される前に実行される特別なタイプ"
+"の頂点シェーダーです。これらは、色、位置、回転などのマテリアル特性の計算に使"
+"用されます。 2Dか3Dかによって、CanvasItemまたはSpatialの通常のマテリアルで描"
+"画されます。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:11
 msgid ""
@@ -36,6 +40,10 @@ msgid ""
 "by the CanvasItem of Spatial shader. They contain only a vertex processor "
 "function that outputs multiple properties (see built-ins below)."
 msgstr ""
+"パーティクルシェーダーは、オブジェクト自体の描画には使用されないため、ユニー"
+"クです。これらはパーティクルプロパティの計算に使用され、Spatialシェーダーの"
+"CanvasItemによって使用されます。これらには、複数のプロパティを出力する頂点プ"
+"ロセッサ関数のみが含まれています(以下のビルトインを参照)。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:16
 msgid ""
@@ -47,20 +55,29 @@ msgid ""
 "shaders that discard the data they have calculated once they draw to the "
 "frame buffer."
 msgstr ""
+"パーティクルシェーダーは、独自に実行される特殊なタイプの頂点シェーダーである"
+"変換フィードバックシェーダーを使用します。通常の頂点シェーダーと同様にバッ"
+"ファー内のデータを取り込みますが、ピクセル処理のためにフラグメントシェーダー"
+"に出力する代わりに、データバッファーに出力します。このため、トランスフォーム"
+"フィードバックシェーダーは、フレームバッファーに描画した後に計算したデータを"
+"破棄する他のシェーダーとは異なり、実行ごとに自身で構築できます。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:23
 msgid ""
 "Particle shaders are only available in the GLES3 backend. If you need "
 "particles in GLES2, use :ref:`CPUParticles <class_CPUParticles>`."
 msgstr ""
+"パーティクルシェーダーは、GLES3バックエンドでのみ使用できます。 GLES2でパー"
+"ティクルが必要な場合は、\\ :ref:`CPUParticles <class_CPUParticles>` を使用し"
+"ます。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:27
 msgid "Render modes"
-msgstr ""
+msgstr "レンダリングモード"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:30
 msgid "Render mode"
-msgstr ""
+msgstr "レンダリングモード"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:30
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
@@ -69,31 +86,31 @@ msgstr "説明"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:32
 msgid "**keep_data**"
-msgstr ""
+msgstr "\\ **keep_data**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:32
 msgid "Do not clear previous data on restart."
-msgstr ""
+msgstr "再起動時に以前のデータをクリアしない。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:34
 msgid "**disable_force**"
-msgstr ""
+msgstr "\\ **disable_force**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:34
 msgid "Disable attractor force. (Not currently implemented in 3.1)"
-msgstr ""
+msgstr "アトラクターの力を無効にします。(3.1ではまだ実装されていません)"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:36
 msgid "**disable_velocity**"
-msgstr ""
+msgstr "\\ **disable_velocity**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:36
 msgid "Ignore **VELOCITY** value."
-msgstr ""
+msgstr "**VELOCITY** 値を無視します。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
 msgid "Vertex built-ins"
-msgstr ""
+msgstr "頂点用ビルトイン"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:42
 msgid ""
@@ -102,6 +119,10 @@ msgid ""
 "marked as \"inout\" provide a sensible default value, and can optionally be "
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
+"\"in\"としてマークされた値は読み取り専用です。\"out\"とマークされた値はオプ"
+"ションの書き込み用であり、必ずしも適切な値を含むとは限りません。\"inout\"と"
+"マークされた値は、適切なデフォルト値を提供し、オプションで書き込むことができ"
+"ます。サンプラーは書込みの対象ではなく、マークされていません。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:47
 msgid ""
@@ -109,121 +130,129 @@ msgid ""
 "``use_vertex_as_albedo`` to ``true``. In a ShaderMaterial, access it with "
 "the ``COLOR`` variable."
 msgstr ""
+"SpatialMaterialで ``COLOR`` 変数を使用するには、\\ ``use_vertex_as_albedo`` "
+"を ``true`` に設定します。 ShaderMaterialで、\\ ``COLOR`` 変数を使用してアク"
+"セスします。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
 msgid "Built-in"
-msgstr ""
+msgstr "ビルトイン"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
 msgid "inout vec4 **COLOR**"
-msgstr ""
+msgstr "\\ inout vec4 **COLOR**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
 msgid ""
 "Particle color, can be written to and accessed in mesh's vertex function."
-msgstr ""
+msgstr "パーティクルの色。メッシュの頂点関数に書き込み、アクセスできます。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
 msgid "inout vec3 **VELOCITY**"
-msgstr ""
+msgstr "\\ inout vec3 **VELOCITY**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
 msgid "Particle velocity, can be modified."
-msgstr ""
+msgstr "パーティクルの速度は変更できます。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:57
 msgid "out float **MASS**"
-msgstr ""
+msgstr "\\ out float **MASS**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:57
 msgid "Particle mass, use for attractors (not implemented in 3.1)."
-msgstr ""
+msgstr "パーティクルの質量、アトラクターで使用(3.1では実装されていません)。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
 msgid "inout bool **ACTIVE**"
-msgstr ""
+msgstr "\\ inout bool **ACTIVE**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
 msgid "``true`` when Particle is active, can be set to ``false``."
 msgstr ""
+"パーティクルがアクティブな場合は ``true`` を ``false`` に設定できます。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:61
 msgid "in bool **RESTART**"
-msgstr ""
+msgstr "\\ in bool **RESTART**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:61
 msgid "``true`` when particle must restart (lifetime cycled)."
 msgstr ""
+"パーティクルを再起動する必要がある(ライフサイクルが繰り返される)場合は "
+"``true``\\ 。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:63
 msgid "inout vec4 **CUSTOM**"
-msgstr ""
+msgstr "\\ inout vec4 **CUSTOM**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:63
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
 msgstr ""
+"カスタムパーティクルデータ。メッシュのシェーダーから **INSTANCE_CUSTOM** とし"
+"てアクセス可能。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
 msgid "inout mat4 **TRANSFORM**"
-msgstr ""
+msgstr "\\ inout mat4 **TRANSFORM**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
 msgid "Particle transform."
-msgstr ""
+msgstr "パーティクルの変換。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid "in float **TIME**"
-msgstr ""
+msgstr "\\ in float **TIME**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid "Global time in seconds."
-msgstr ""
+msgstr "秒単位のグローバル時間。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 msgid "in float **LIFETIME**"
-msgstr ""
+msgstr "\\ in float **LIFETIME**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 msgid "Particle lifetime."
-msgstr ""
+msgstr "パーティクルの寿命。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 msgid "in float **DELTA**"
-msgstr ""
+msgstr "\\ in float **DELTA**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 msgid "Delta process time."
-msgstr ""
+msgstr "デルタプロセス時間。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 msgid "in uint **NUMBER**"
-msgstr ""
+msgstr "\\ in uint **NUMBER**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 msgid "Unique number since emission start."
-msgstr ""
+msgstr "放出開始以降のユニークな番号。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
 msgid "in int **INDEX**"
-msgstr ""
+msgstr "\\ in int **INDEX**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
 msgid "Particle index (from total particles)."
-msgstr ""
+msgstr "パーティクル インデックス(パーティクル全体から)。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
 msgid "in mat4 **EMISSION_TRANSFORM**"
-msgstr ""
+msgstr "\\ in mat4 **EMISSION_TRANSFORM**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
 msgid "Emitter transform (used for non-local systems)."
-msgstr ""
+msgstr "エミッタの変換(非ローカルシステムに使用)。"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
 msgid "in uint **RANDOM_SEED**"
-msgstr ""
+msgstr "\\ in uint **RANDOM_SEED**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
 msgid "Random seed used as base for random."
-msgstr ""
+msgstr "乱数のベースとして使用される乱数シード。"

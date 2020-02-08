@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,9 +193,8 @@ msgid "Visual Studio 2019"
 msgstr "Visual Studio ou VS Code"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:89
-#, fuzzy
 msgid "Visual Studio Code"
-msgstr "Visual Studio ou VS Code"
+msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:90
 #, fuzzy
@@ -208,22 +207,26 @@ msgid "Visual Studio for Mac"
 msgstr "Visual Studio ou VS Code"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
-#, fuzzy
 msgid "JetBrains Rider"
-msgstr "jetbrains rider"
+msgstr "JetBrains Rider"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
-msgstr "Se você está usando Visual Studio Code,"
+msgstr ""
+"Se você está usando Visual Studio Code, baixe e instale a `extensão de C# "
+"<https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp>`_ "
+"para permitir recursos como marcação de sintaxe e IntelliSense."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
 msgid ""
 "If you are using Visual Studio 2019, you must follow the instructions found "
 "in the \"Configure VS2019 for Debugging\" section below."
 msgstr ""
+"Se você estiver usando o Visual Studio 2019, você deve seguir as instruções "
+"encontradas na seção \"Configurar VS2019 para Depuração\" abaixo."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:103
 msgid "Creating a C# script"
@@ -458,6 +461,13 @@ msgid ""
 "is expecting the original ``snake_case`` version ``add_child``. However, you "
 "can use any custom properties or methods without this limitation."
 msgstr ""
+"Existem alguns métodos como ``Get()``/``Set()``, ``Call()``/"
+"``CallDeferred()`` e método de conexão de sinal ``Connect()`` que dependem "
+"dos padrões de nomeação da API ``snake_case`` de Godot. Então, por exemplo "
+"ao usar ``CallDeferred(\"AddChild\")``, ``AddChild`` não vai funcionar "
+"porque a API está esperando a chamada no formato ``snake_case`` como "
+"``add_child``. No entanto, você pode usar quaisquer propriedades ou métodos "
+"personalizados sem essa limitação."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:233
 msgid "Performance of C# in Godot"
@@ -515,7 +525,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:269
 msgid "Profiling your C# code"
-msgstr ""
+msgstr "Perfilando seu código C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:271
 msgid ""
@@ -523,6 +533,9 @@ msgid ""
 "profiler/>`_ is available via `this PR <https://github.com/godotengine/godot/"
 "pull/26513>`_."
 msgstr ""
+"`Mono log profiler <https://www.mono-project.com/docs/debug+profile/profile/"
+"profiler/>`_ está disponível através `deste PR <https://github.com/"
+"godotengine/godot/pull/26513>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:272
 msgid ""
@@ -530,10 +543,13 @@ msgid ""
 "profiler/>`_ can be used as described `here <https://github.com/godotengine/"
 "godot/pull/34382>`_."
 msgstr ""
+"Profiler de Mono Externo como `JetBrains dotTrace <https://www.jetbrains.com/"
+"profiler/>`_ pode ser usado como descrito `aqui <https://github.com/"
+"godotengine/godot/pull/34382>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:275
 msgid "Configuring VS 2019 for debugging"
-msgstr ""
+msgstr "Configuração VS 2019 para depuração"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:279
 msgid ""
@@ -542,12 +558,18 @@ msgid ""
 "in the meantime, the steps below can let you configure VS 2019 for use with "
 "Godot C# projects."
 msgstr ""
+"Godot tem suporte integrado para fluxos de trabalho envolvendo várias IDEs "
+"populares de C#. O suporte nativo para o Visual Studio será incluso em "
+"versões futuras, mas enquanto isso, os passos abaixo podem permitir que você "
+"configure o Visual Studio 2019 para utilização dos projetos de Godot em C#."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:284
 msgid ""
 "Install VS 2019 with ``.NET desktop development`` and ``Desktop development "
 "with C++`` workloads selected."
 msgstr ""
+"Instale o Visual Studio 2019 com os componentes ``.NET desktop development`` "
+"e ``Desktop development with C++`` selecionados."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:285
 msgid ""
@@ -555,45 +577,59 @@ msgid ""
 "``Mobile development with .NET`` workload. Xamarin changes the DLLs used by "
 "MonoDebugger, which breaks debugging."
 msgstr ""
+"**Certifique-se de não ter Xamarin instalado.** Não escolha a opção ``Mobile "
+"development with .NET``. Xamarin altera as DLLs usadas pelo MonoDebugger, "
+"que quebra a depuração."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:286
 msgid ""
 "Install the `VSMonoDebugger extension <https://marketplace.visualstudio.com/"
 "items?itemName=GordianDotNet.VSMonoDebugger0d62>`_."
 msgstr ""
+"Instale a extensão ``VSMonoDebugger <https://marketplace.visualstudio.com/"
+"items?itemName=GordianDotNet.VSMonoDebugger0d62>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:287
 msgid "In VS 2019 --> Extensions --> Mono --> Settings:"
-msgstr ""
+msgstr "No VS 2019 --> Extensions --> Mono ->Settings:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:289
 msgid "Select ``Debug/Deploy to local Windows``."
-msgstr ""
+msgstr "Selecione ``Debug/Deploy to local Windows``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:290
 msgid "Leave ``Local Deploy Path`` blank."
-msgstr ""
+msgstr "Deixe ``Local Deploy Path`` em branco."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:291
 msgid ""
 "Set the ``Mono Debug Port`` to the port in Godot --> Project --> Project "
 "Settings --> Mono --> Debugger Agent."
 msgstr ""
+"Defina a porta de depuração em ``Mono Debug Port`` para a porta definida em "
+"Godot --> Projeto --> Configurações de projeto --> Mono --> Agente depurador."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:292
 msgid ""
 "Also select ``Wait for Debugger`` in the Godot Mono options. `This Godot "
 "Addon <https://godotengine.org/asset-library/asset/435>`_ may be helpful."
 msgstr ""
+"Selecione também ``Wait for Debugger`` nas opções do Mono dentro do Godot. "
+"`Este Godot Addon <https://godotengine.org/asset-library/asset/435>`_ pode "
+"ser útil."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:294
 msgid ""
 "Run the game in Godot. It should hang at the Godot splash screen while it "
 "waits for your debugger to attach."
 msgstr ""
+"Execute o jogo em Godot. Godot apresentará a splash screen enquanto espera "
+"que seu depurador se conecte."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:295
 msgid ""
 "In VS 2019, open your project and choose Extensions --> Mono --> Attach to "
 "Mono Debugger."
 msgstr ""
+"No VS 2019, abra seu projeto e escolha Extensions --> Mono --> Attach to "
+"Mono Debugger."

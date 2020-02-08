@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,6 @@ msgstr ""
 "窗，询问你是否想要打开素材库，点击取消即可，我们稍后再回来看这个东西。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
-#, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
@@ -75,14 +74,13 @@ msgid "Create or import a project"
 msgstr "创建或导入项目"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
 "要创建新项目，点击右侧的 ``新建项目`` 按钮。为其命名并在计算机上选择一个空文"
-"件夹来保存它。"
+"件夹来保存它，最后选择一个渲染器。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
@@ -93,18 +91,16 @@ msgstr ""
 "径。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
-#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"当看到右侧出现绿色对号，表示引擎检测到了这个空目录，点击 ``创建`` ，Godot会创"
-"建项目并在编辑器打开它。"
+"当看到右侧出现绿色的勾，表示引擎检测到了一个空文件夹．你也可以点击项目名称旁"
+"边的 ``创建``按钮 ，Godot会创建项目并在编辑器打开它。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
-#, fuzzy
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -112,27 +108,25 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
-"在这个步骤你可以选择渲染后端（opengl es3.0 或者 opengl es2.0）。两者的优缺点"
-"已经列出帮助你做出选择，详细内容请参考:ref:`doc_gles2_gles3_differences`。你"
-"也可以在之后任何时候通过项目设置面板来更改渲染后端。对于本样例内容，两者任选"
-"其一都是ok的。"
+"在这个步骤你可以选择渲染后端（OpenGL ES 3.0 或者 OpenGL ES 2.0）。两者的优缺"
+"点已经列出帮助你做出选择，详细内容请参考 :ref:`doc_gles2_gles3_differences` "
+"你也可以在之后任何时候通过项目设置面板来更改渲染后端。对于本样例内容，两者任"
+"选其一都是ok的。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"当看到右侧出现绿色对号，表示引擎检测到了这个空目录，点击 ``创建`` ，Godot会创"
-"建项目并在编辑器打开它。"
+"当你完成之后，点击``创建 & 编辑``。引擎会帮你创建项目并在编辑器中打开。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"下次打开Godot时，就可以在列表里看到新项目了。双击它可以在编辑器打开它。"
+"下次打开项目管理器的时候，就可以在列表里看到新项目了。双击它可以在编辑器打开"
+"它。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -152,11 +146,11 @@ msgid "Your first look at Godot’s editor"
 msgstr "初识Godot编辑器"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with empty docks on the right side."
-msgstr "现在应该能看到这个界面，在右侧有着空停靠面板。"
+msgstr ""
+"欢迎来到Godot! 项目打开了, 应该能看到编辑器的界面，在右侧有些空的面板。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -223,11 +217,10 @@ msgstr ""
 "在 **3D工作区** 里，可以使用网格、灯光并设计3D游戏关卡。按 :kbd:`F2` 访问它。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
-msgstr "注意工具栏下面的[透视]，这是一个按钮，用于打开与3D视图相关的选项列表。"
+msgstr "注意工具栏下的透视图按钮，它会打开一个与3D视图相关的选项列表。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""
@@ -254,10 +247,11 @@ msgid "Modify the interface"
 msgstr "调整界面"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
+#, fuzzy
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
-"Atom or Visual Studio for instance."
+"Atom or Visual Studio Code for instance."
 msgstr ""
 "Godot的界面存在于单一窗口中。不能把它拆分到多个屏幕中，不过可以使用外置的代码"
 "编辑器如Atom或Visual Studio一起工作。"

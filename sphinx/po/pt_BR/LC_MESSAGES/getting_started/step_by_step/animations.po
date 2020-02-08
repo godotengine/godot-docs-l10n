@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,16 +71,15 @@ msgid "Creating the animation"
 msgstr "Criando a animação"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:33
-#, fuzzy
 msgid ""
 "It's time to create a new animation! Press the Animation button then select "
 "new from the menu. Name the animation \"intro\" when the dialog appears."
 msgstr ""
-"Chegou a hora de criar uma nova animação! Pressione o novo botão de animação "
-"e nomeie a animação \"intro\" quando a caixa de diálogo aparecer."
+"Chegou a hora de criar uma nova animação! Pressione o botão Animação e "
+"selecione Novo do menu. Nomeie a animação \"intro\" quando a caixa de "
+"diálogo aparecer."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:40
-#, fuzzy
 msgid ""
 "Now that we have an animation, the property editor enters \"animation editing"
 "\" mode. In this mode, a key icon appears next to every property of the "
@@ -88,7 +87,7 @@ msgid ""
 msgstr ""
 "Agora que temos uma animação, o editor de propriedades entra no modo "
 "\"edição de animação\". Neste modo, um ícone de chave aparece ao lado de "
-"todas as propriedades do editor de propriedades. Em Godot, qualquer "
+"todas as propriedades do editor de propriedades. Na Godot, qualquer "
 "propriedade de um objeto pode ser animada:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:48
@@ -100,7 +99,6 @@ msgid "The logo will appear from the top of the screen."
 msgstr "O logotipo aparecerá na parte superior da tela."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:52
-#, fuzzy
 msgid ""
 "With the animation editor panel open, select the \"logo\" node and set the "
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
@@ -108,7 +106,7 @@ msgid ""
 msgstr ""
 "Com o painel do editor de animação aberto, selecione o nó \"logo\" e defina "
 "a propriedade \"Rect / Position\" para \"(118, -400)\" e pressione o botão "
-"ao lado da propriedade:"
+"ao lado da propriedade para adicionar um quadro chave:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:58
 msgid "When the dialog appears, confirm that you are creating a new track."
@@ -121,18 +119,16 @@ msgid "The keyframe will be added in the animation player editor:"
 msgstr "O quadro-chave será adicionado ao editor do player de animação:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:64
-#, fuzzy
 msgid "Move the editor cursor forward in time by clicking here:"
-msgstr "Mova o cursor do editor para o final, clicando aqui:"
+msgstr "Mova o cursor do editor para frente clicando aqui:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:68
-#, fuzzy
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes with different values, the animation happens."
 msgstr ""
 "Mude a posição do logo para `` (118, 0) `` e adicione um quadro-chave "
-"novamente. Com dois quadros-chave, a animação acontece."
+"novamente. Com dois quadros-chave de valores diferentes, a animação acontece."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:73
 msgid ""

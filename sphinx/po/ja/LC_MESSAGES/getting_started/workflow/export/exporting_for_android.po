@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,7 +137,7 @@ msgstr "設定が完了すれば、Androidにエクスポートできるよう�
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
 msgid "Providing launcher icons"
-msgstr ""
+msgstr "ランチャーアイコンの提供"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
@@ -146,11 +146,13 @@ msgid ""
 "``xxxhdpi`` density screens) and will automatically generate lower-"
 "resolution variants."
 msgstr ""
+"ランチャーアイコンは、Androidランチャーアプリでユーザーにアプリケーションを表"
+"すために使用されます。 Godotは高解像度アイコン(``xxxhdpi`` 密度画面用)のみを"
+"必要とし、低解像度のバリアントを自動的に生成します。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:68
-#, fuzzy
 msgid "There are two types of icons required by Godot:"
-msgstr "GodotでUIをデザインするには2つの方法があります。次のことができます:"
+msgstr "Godotに必要なアイコンには2つのタイプがあります:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:70
 msgid ""

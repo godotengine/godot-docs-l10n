@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:4
 msgid "Ragdoll system"
-msgstr ""
+msgstr "ラグドールシステム"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:7
 msgid "Introduction"
@@ -31,11 +31,16 @@ msgid ""
 "simulation to create realistic procedural animation. They are used for death "
 "animations in many games."
 msgstr ""
+"バージョン3.1以降、Godotはラグドール物理をサポートしています。 ラグドールは物"
+"理シミュレーションに依存して、現実的な手続き型アニメーションを作成します。 多"
+"くのゲームで死のアニメーションに使用されます。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:11
 msgid ""
 "In this tutorial, we will be using the Platformer3D demo to set up a ragdoll."
 msgstr ""
+"このチュートリアルでは、Platformer3Dデモを使用してラグドールをセットアップし"
+"ます。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:13
 msgid ""
@@ -43,14 +48,17 @@ msgid ""
 "godotengine/godot-demo-projects/tree/master/3d/platformer>`_ or using the "
 "`Asset Library <https://godotengine.org/asset-library/asset/125>`_."
 msgstr ""
+"Platformer3Dデモは、\\ `GitHub <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/3d/platformer>`_から、または `Asset Library <https://"
+"godotengine.org/asset-library/asset/125>`_を使用してダウンロードできます。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:16
 msgid "Setting up the ragdoll"
-msgstr ""
+msgstr "ラグドールの設定"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:19
 msgid "Creating physical bones"
-msgstr "フィジカルボーンの作成"
+msgstr "物理ボーン(Physical Bone)の作成"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:21
 msgid ""
@@ -59,12 +67,19 @@ msgid ""
 "you can generate ``PhysicalBone`` nodes with the \"Create physical skeleton"
 "\" feature in the skeleton node."
 msgstr ""
+"エンジンの他の多くの機能と同様に、ラグドールをセットアップするノードがありま"
+"す: :ref:`PhysicalBone <class_PhysicalBone>` ノードです。 セットアップを簡素"
+"化するために、スケルトンノードで[物理スケルトンを作成する]機能を使用して "
+"``PhysicalBone`` ノードを生成できます。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
 msgid ""
 "Open the platformer demo in Godot, and then the Robi scene. Select the "
 "``Skeleton`` node. A skeleton button appears on the top bar menu:"
 msgstr ""
+"Godotでプラットフォーマーデモを開き、次にRobiのシーンを開きます。\\ "
+"``Skeleton`` ノードを選択します。 スケルトンボタンがトップバーメニューに表示"
+"されます:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:27
 msgid ""
@@ -72,16 +87,21 @@ msgid ""
 "generate ``PhysicalBone`` nodes and collision shapes for each bone in the "
 "skeleton and pin joints to connect them together:"
 msgstr ""
+"それをクリックして、[物理スケルトンを作成する]オプションを選択します。 Godot"
+"は ``PhysicalBone`` ノードとスケルトンの各ボーンの衝突形状を生成し、それらを"
+"接続するためにジョイントを固定します:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:31
 msgid ""
 "Some of the generated bones aren't necessary: the ``MASTER`` bone for "
 "example. So we're going to clean up the skeleton by removing them."
 msgstr ""
+"生成されたボーンのいくつかは必要ありません：例えば ``MASTER`` ボーン。 そのた"
+"め、スケルトンを削除してクリーンアップします。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:34
 msgid "Cleaning up the skeleton"
-msgstr ""
+msgstr "スケルトンのクリーンアップ"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:36
 msgid ""
@@ -89,6 +109,9 @@ msgid ""
 "so you want to remove every bone that is too small to make a difference in "
 "the simulation, as well as all utility bones."
 msgstr ""
+"エンジンがシミュレートする必要のある ``PhysicalBone`` にはそれぞれパフォーマ"
+"ンスコストがあるため、シミュレーションで違いを生むには小さすぎるすべてのボー"
+"ンとすべてのユーティリティボーンを削除する必要があります。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:38
 msgid ""
@@ -97,6 +120,9 @@ msgid ""
 "one for the palm, one for the thumb, and a last one for the other four "
 "fingers."
 msgstr ""
+"たとえば、ヒューマノイドを使用する場合、各指に物理的なボーンは必要ありませ"
+"ん。 代わりに、手全体に1つのボーンを使用するか、手のひらに1つ、親指に1つ、残"
+"りの4つを他の4本の指に使用できます。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:40
 msgid ""
@@ -104,6 +130,9 @@ msgid ""
 "``headtracker``. This gives us an optimized skeleton and makes it easier to "
 "control the ragdoll."
 msgstr ""
+"これらの物理ボーンを削除します: ``MASTER``\\ 、\\ ``waist``\\ 、\\ ``neck``"
+"\\ 、\\ ``headtracker``\\ 。 これにより、最適化されたスケルトンが提供され、ラ"
+"グドールの制御が容易になります。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:43
 msgid "Collision shape adjustment"
@@ -114,10 +143,12 @@ msgid ""
 "The next task is adjusting the collision shape and the size of physical "
 "bones to match the part of the body that each bone should simulate."
 msgstr ""
+"次のタスクは、コリジョンの形状と物理ボーンのサイズを調整して、各ボーンがシ"
+"ミュレートする身体の部分に一致させることです。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:50
 msgid "Joints adjustment"
-msgstr ""
+msgstr "関節の調整"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:52
 msgid ""
@@ -128,14 +159,19 @@ msgid ""
 "constraint type in the ``Joint`` section. There, you can change the "
 "constraint's orientation and its limits."
 msgstr ""
+"コリジョン形状を調整すると、ラグドールの準備がほぼ整います。 より良いシミュ"
+"レーションを得るには、ピンジョイントを調整するだけです。\\ ``PhysicalBone`` "
+"ノードには、デフォルトで制約のないピンジョイントが割り当てられています。 ピン"
+"ジョイントを変更するには、\\ ``PhysicalBone`` を選択し、 \\``Joint`` セクショ"
+"ンで拘束タイプを変更します。 そこで、拘束の方向と限界を変更できます。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:56
 msgid "This is the final result:"
-msgstr ""
+msgstr "これが最終結果です:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:61
 msgid "Simulating the ragdoll"
-msgstr ""
+msgstr "ラグドールをシミュレートする"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:63
 msgid ""
@@ -144,28 +180,39 @@ msgid ""
 "method. Attach a script to the skeleton node and call the method in the "
 "``_ready`` method:"
 msgstr ""
+"これでラグドールを使用する準備ができました。 シミュレーションを開始してラグ"
+"ドールアニメーションを再生するには、\\ ``physical_bones_start_simulation`` メ"
+"ソッドを呼び出す必要があります。 スクリプトをスケルトンノードにアタッチ"
+"し、\\ ``_ready`` メソッドでメソッドを呼び出します:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:71
 msgid ""
 "To stop the simulation, call the ``physical_bones_stop_simulation()`` method."
 msgstr ""
+"シミュレーションを停止するには、\\ ``physical_bones_stop_simulation()`` メ"
+"ソッドを呼び出します。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:75
 msgid ""
 "You can also limit the simulation to only a few bones. To do so, pass the "
 "bone names as a parameter. Here's an example of partial ragdoll simulation:"
 msgstr ""
+"シミュレーションをいくつかのボーンのみに制限することもできます。 そのために"
+"は、ボーン名をパラメーターとして渡します。 部分的なラグドールシミュレーション"
+"の例を次に示します:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:80
 msgid "Collision layer and mask"
-msgstr ""
+msgstr "コリジョンレイヤーとマスク"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:82
 msgid ""
 "Make sure to set up your collision layers and masks properly so the "
 "``KinematicBody``'s capsule doesn't get in the way of the physics simulation:"
 msgstr ""
+"コリジョンレイヤーとマスクを適切に設定して、\\ ``KinematicBody`` のカプセルが"
+"物理シミュレーションの邪魔にならないようにしてください:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
 msgid "For more information, read :ref:`doc_physics_introduction`"
-msgstr ""
+msgstr "詳細については、次を参照してください :ref:`doc_physics_introduction`"

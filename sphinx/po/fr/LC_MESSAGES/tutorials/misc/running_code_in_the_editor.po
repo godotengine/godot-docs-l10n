@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Exécuter le code dans l'éditeur"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:7
 msgid "What is ``tool``?"
-msgstr ""
+msgstr "Que signifie ``tool`` ?"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:9
 msgid ""
@@ -31,6 +31,10 @@ msgid ""
 "script, makes it execute in the editor. You can also decide which parts of "
 "the script execute in the editor, which in game, and which in both."
 msgstr ""
+"``tool`` est une puissante ligne de code qui, lorsqu'elle est ajoutée en "
+"haut de votre script, lui permet de s'exécuter dans l'éditeur. Vous pouvez "
+"également définir quelles parties du script s'exécutent dans l'éditeur, dans "
+"le jeu, ou les deux."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:11
 msgid ""
@@ -38,6 +42,9 @@ msgid ""
 "design for visually presenting things that are hard to predict ourselves. "
 "Here are some use cases:"
 msgstr ""
+"Vous pouvez l'utiliser pour faire beaucoup de choses, mais c'est est surtout "
+"utile dans la conception de niveaux pour représenter visuellement des choses "
+"qui sont difficiles à prévoir nous-mêmes. Voici quelques cas d'utilisation :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:13
 msgid ""
@@ -45,6 +52,9 @@ msgid ""
 "you can draw cannonball's trajectory in the editor, making level design a "
 "lot easier."
 msgstr ""
+"Si vous avez un canon qui tire des boulets de canon affectés par la physique "
+"(gravité), vous pouvez dessiner la trajectoire du boulet de canon dans "
+"l'éditeur, ce qui facilite grandement la conception des niveaux."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:14
 msgid ""
@@ -52,12 +62,18 @@ msgid ""
 "jump height a player would reach if it jumped on one, also making level "
 "design easier."
 msgstr ""
+"Si vous avez des tremplins avec différentes hauteurs de saut, vous pouvez "
+"dessiner la hauteur maximum que le joueur atteindrait s'il sautait sur l'un "
+"d'eux, facilitant encore une fois la conception du niveau."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:15
 msgid ""
 "If your player doesn't use a sprite, but draws itself using code, you can "
 "make that drawing code execute in the editor to see your player."
 msgstr ""
+"Si votre personnage n'utilise pas de sprite mais se dessine lui même depuis "
+"le code, vous pouvez faire en sorte que ce code de dessin s'exécute dans "
+"l'éditeur, vous permettant ainsi de voir votre joueur."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:19
 msgid ""
@@ -69,6 +85,15 @@ msgid ""
 "as it can cause crashes if you free a node while the editor runs logic "
 "involving it."
 msgstr ""
+"Les scripts ``tool`` s'exécutent à l'intérieur de l'éditeur, et vous "
+"permettent d'accéder à l'arbre de la scène en cours d'édition. Il s'agit "
+"d'une fonctionnalité puissante qui s'accompagne également de mises en garde, "
+"car l'éditeur n'inclut pas de protections contre les mauvaises utilisations "
+"des scripts ``tool``. Soyez **extrêmement** prudent lorsque vous manipulez "
+"l'arbre de la scène, en particulier en utilisant :ref:`Node."
+"queue_free<class_Node_method_queue_free>` car cela peut causer des plantages "
+"si vous libérez un nœud pendant que l'éditeur exécute une logique "
+"l'impliquant."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:28
 msgid "How to use it"
@@ -78,31 +103,42 @@ msgstr "Comment l'utiliser"
 msgid ""
 "To turn a script into a tool, add ``tool`` keyword at the top of your code."
 msgstr ""
+"Pour transformer un script en outil, ajoutez le mot-clé ``tool`` en haut de "
+"votre code."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:32
 msgid ""
 "To check if you are currently in the editor, use: ``Engine.editor_hint``."
 msgstr ""
+"Pour vérifier si vous êtes actuellement dans l'éditeur, utilisez : ``Engine."
+"editor_hint``."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:34
 msgid "For example, if you want to execute some code only in editor, use:"
 msgstr ""
+"Par exemple, si vous souhaitez exécuter du code uniquement dans l'éditeur, "
+"utilisez :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "previous expression:"
 msgstr ""
+"En revanche, si vous voulez exécuter du code uniquement dans le jeu, il "
+"suffit d'utiliser la négation de l'expression précédente :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
 msgid ""
 "Pieces of code that are not having any of the 2 conditions above will run "
 "both in editor and in game."
 msgstr ""
+"Les morceaux de code qui n'utilisent aucune des 2 conditions ci-dessus "
+"seront exécutés à la fois dans l'éditeur et dans le jeu."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
 msgid "Here is how a ``_process()`` function might look like for you:"
 msgstr ""
+"Voici à quoi une fonction ``_process()`` pourrait ressembler pour vous :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
 msgid ""
@@ -110,39 +146,53 @@ msgid ""
 "script, the node will keep its rotation direction. Be careful so that you "
 "don't make unwanted modifications."
 msgstr ""
+"Les modifications dans l'éditeur sont permanentes. Dans notre cas, lorsque "
+"nous supprimons le script, le nœud conserve son sens de rotation. Faites "
+"attention à ne pas faire de modifications non souhaitées."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:69
 msgid "Try it out"
-msgstr ""
+msgstr "Testez-le"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:71
 msgid ""
 "Add a ``Sprite`` node to your scene and set the texture to Godot icon. "
 "Attach and open a script, and change it to this:"
 msgstr ""
+"Ajoutez un nœud ``Sprite`` à votre scène et donnez lui la texture de l'icône "
+"Godot. Attachez-lui un script, ouvrez-le, et changez-le en ceci :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:82
 msgid ""
 "Save the script and return to the editor. You should now see your object "
 "rotate. If you run the game, it will also rotate."
 msgstr ""
+"Sauvegardez le script et revenez à l'éditeur. Vous devriez maintenant voir "
+"votre objet tourner. Si vous lancez le jeu, il tournera également."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:86
 msgid ""
 "If you don't see the changes, reload the scene (close it and open it again)."
 msgstr ""
+"Si vous ne voyez pas les modifications, rechargez la scène (fermez-la et "
+"ouvrez-la à nouveau)."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:88
 msgid ""
 "Now let's choose which code runs when. Modify your ``_process()`` function "
 "to look like this:"
 msgstr ""
+"Choisissons maintenant quel code fonctionne à quel moment. Modifiez votre "
+"fonction ``_process()`` pour qu'elle ressemble à ceci :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:99
 msgid ""
 "Save the script. Now the object will spin clockwise in the editor, but if "
 "you run the game, it will spin counter-clockwise."
 msgstr ""
+"Sauvegardez le script. Maintenant, l'objet tournera dans le sens horaire "
+"dans l'éditeur, mais si vous exécutez le jeu, il tournera dans le sens "
+"antihoraire."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:101
 msgid ""
@@ -152,6 +202,12 @@ msgid ""
 "to run in the editor too. AutoLoad nodes cannot be accessed in the editor at "
 "all."
 msgstr ""
+"Le code des autres nœuds ne s'exécute pas dans l'éditeur. Votre accès aux "
+"autres nœuds est limité. Vous pouvez accéder à l'arbre et aux nœuds, ainsi "
+"qu'à leurs propriétés par défaut, mais vous ne pouvez pas accéder aux "
+"variables définies par l'utilisateur. Si vous voulez le faire, les autres "
+"nœuds doivent également s'exécuter dans l'éditeur. Les nœuds chargés "
+"automatiquement (Autoload) ne sont pas du tout accessibles dans l'éditeur."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:103
 msgid ""
@@ -160,3 +216,9 @@ msgid ""
 "the top. Also make sure you divide your code into part that runs in editor "
 "and part that runs in game. This way you can find your bug easier."
 msgstr ""
+"L'utilisation inappropriée de ``tool`` peut entraîner de nombreuses erreurs. "
+"Il est conseillé d'écrire d'abord le code comme vous le souhaitez, et "
+"seulement ensuite d'ajouter le mot-clé ``tool`` en haut. Veillez également à "
+"diviser votre code en une partie qui fonctionne dans l'éditeur et une partie "
+"qui s'exécute dans le jeu. De cette manières, vous pourrez trouver les "
+"bogues plus facilement."

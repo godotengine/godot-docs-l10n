@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -167,6 +167,11 @@ msgid ""
 "manually triggered by clicking the “Build” button at the top right corner of "
 "the editor window."
 msgstr ""
+"Esses sinais podem então ser conectados no editor ou no código com "
+"``Connect``. Se você quiser conectar um sinal no editor, você precisa "
+"(re)build as DLLs do projeto para ver o novo sinal. Esta compilação pode ser "
+"acionada manualmente clicando no botão \"Build\" no canto superior direito "
+"da janela do editor."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:119
 msgid "Emitting signals is done with the ``EmitSignal`` method."

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -547,7 +547,6 @@ msgstr ""
 "interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:248
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -557,13 +556,12 @@ msgid ""
 "the available vertical space while respecting its neighbors, the ``Logo`` "
 "and ``Version`` elements."
 msgstr ""
-"Agora agrupamos as opções de menu juntas, podemos dizer que o contêiner "
-"delas é expandido para ocupar o máximo de espaço vertical possível. "
-"Selecione o nó ``MenuOptions``. No Inspetor, role para baixo até a categoria "
-"``Size Flags``. Clique no campo à direita da propriedade ``Vertical`` e "
-"marque ``Expand`` além de ``Fill`` . O contêiner se expande para ocupar todo "
-"o espaço vertical disponível. Mas respeita seus vizinhos, os elementos "
-"``Logo`` e ``Version``."
+"Agora que agrupamos as opções do menu, podemos mandar o contêiner expandir "
+"para tomar todo o espaço vertical que conseguir. Selecione o nó "
+"``MenuOptions``. No Inspetor, vá para a categoria **Size Flags**. Clique no "
+"campo à direita da propriedade **Vertical**, e marque **Expand** em adição a "
+"**Fill**. O contêiner expande para ocupar todo o espaço vertical disponível "
+"respeitando seus vizinhos, os elementos ``Logo`` e ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:256
 msgid ""
@@ -574,14 +572,12 @@ msgstr ""
 "altere a propriedade **Alignment** para **Center**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
-#, fuzzy
 msgid "The menu options should center vertically in the UI's left column."
 msgstr ""
 "As opções do menu devem centralizar verticalmente na coluna esquerda da "
-"interface do usuário"
+"interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:263
-#, fuzzy
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the **Custom Constants** category below **Size Flags**, and click the "
@@ -589,16 +585,15 @@ msgid ""
 "enter, the **Separation** property becomes active and Godot adds 30 pixels "
 "between menu options."
 msgstr ""
-"Para envolver as coisas, vamos adicionar alguma separação entre as opções do "
-"menu. Expanda a categoria ``Custom Constants`` abaixo de ``Size Flags`` e "
-"clique no campo próximo ao parâmetro ``Separation``. Defina-o como 30. "
-"Depois de pressionar enter, a propriedade ``Separation`` fica ativa e o "
-"Godot adiciona 30 pixels entre as opções do menu."
+"Para terminar, vamos adicionar uma separação entre as opções do menu. "
+"Expanda a categoria **Custom Constants** abaixo de **Size Flags**, e clique "
+"no campo próximo ao parâmetro **Separation**. Defina-o como 30. Depois de "
+"pressionar enter, a propriedade **Separation** fica ativa e a Godot adiciona "
+"30 pixels entre as opções do menu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
-#, fuzzy
 msgid "The final interface."
-msgstr "A interface final"
+msgstr "A interface final."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
@@ -658,7 +653,6 @@ msgstr ""
 "escala a janela inteira para cima e para baixo."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:301
-#, fuzzy
 msgid ""
 "You can change the scale mode in the project settings: click **Project > "
 "Project Settings** in the top menu. In the window's left column, look for "
@@ -667,9 +661,10 @@ msgid ""
 "**Mode**, **Aspect**, and **Shrink**, control the screen size. For more "
 "information, see :ref:`doc_multiple_resolutions`."
 msgstr ""
-"Você pode alterar o modo de escala nas configurações do projeto: clique no "
-"menu Projeto -> Configurações do Projeto. Na coluna da esquerda da janela, "
-"procure a categoria Display. Clique na subcategoria Window. No lado direito "
-"da janela, você encontrará a seção Stretch. As três configurações, Mode, "
-"Aspect e Shrink, controlam o tamanho da tela. Para mais informações, "
-"consulte: ref:`doc_multiple_resolutions`."
+"Você pode alterar o modo de escala nas configurações do projeto: clique em "
+"**Projeto > Configurações do Projeto** no menu superior. Na coluna esquerda "
+"da janela, procure a categoria **Display**. Clique na subcategoria "
+"**Window**. No lado direito da janela, você encontrará a seção **Stretch**. "
+"As três configurações, **Mode**, **Aspect** e **Shrink**, controlam o "
+"tamanho da tela. Para mais informações, consulte :ref:"
+"`doc_multiple_resolutions`."

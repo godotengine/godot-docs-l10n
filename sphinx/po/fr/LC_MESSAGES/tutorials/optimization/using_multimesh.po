@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:4
 msgid "Optimization using MultiMeshes"
-msgstr ""
+msgstr "Optimisations en utilisant des MultiMeshes"
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:6
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "processed (and certain amount of control needs to be retained), :ref:`using "
 "servers directly <doc_using_servers>` is the recommended optimization."
 msgstr ""
+"Pour un grand nombre d'instances (en milliers), qui doivent être traitées en "
+"permanence (et qui nécessitent un certain contrôle), :ref:`utiliser "
+"directement les serveurs <doc_using_servers>` est l'optimisation recommandée."
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:10
 msgid ""
@@ -34,6 +37,9 @@ msgid ""
 "of these approaches are efficient anymore. Still, depending on the "
 "requirements, there is one more optimization possible."
 msgstr ""
+"Quand la quantité d'objets atteint des centaines de milliers ou même des "
+"millions, aucune de ces approches ne reste efficace. Il reste cependant, en "
+"fonction des besoins, une optimisation supplémentaire possible."
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:15
 msgid "MultiMeshes"
@@ -104,3 +110,6 @@ msgid ""
 "GDScript may be more efficient for millions of objects, but for a few "
 "thousands, GDScript should be fine."
 msgstr ""
+"Voici un exemple d'utilisation d'un MultiMesh depuis du code. Les langages "
+"autres que GDScript peuvent être plus efficaces pour des millions d'objets, "
+"mais pour quelques milliers, GDScript devrait convenir."

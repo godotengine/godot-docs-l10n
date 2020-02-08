@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,11 +96,19 @@ msgstr ""
 "将显示可以禁用的模块列表以及所有构建选项。如果您正在开发简单的2D游戏，则可以"
 "禁用其中的许多功能："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:62
+#: ../../docs/development/compiling/optimizing_for_size.rst:61
+msgid ""
+"If this proves not to work for your use case, you should review the list of "
+"modules and see which ones you actually still need for your game (e.g. you "
+"might want to keep networking-related modules, regex support, or theora/webm "
+"to play videos)."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:67
 msgid "Optimizing for size instead of speed"
 msgstr "针对大小而不是速度优化"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:64
+#: ../../docs/development/compiling/optimizing_for_size.rst:69
 msgid ""
 "Godot 3.1 onwards allows to compile using size optimizations. To enable "
 "this, just set the ``optimize`` flag to ``size``:"
@@ -108,15 +116,15 @@ msgstr ""
 "Godot 3.1以后允许使用尺寸优化选项进行编译。要启用它，只需将 ``optimize`` 标志"
 "设置为 ``size``："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:71
+#: ../../docs/development/compiling/optimizing_for_size.rst:76
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr "某些平台如WebAssembly默认情况下已使用此模式。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:74
+#: ../../docs/development/compiling/optimizing_for_size.rst:79
 msgid "Compiling with link-time optimization"
 msgstr "编译时使用连接时间优化"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:76
+#: ../../docs/development/compiling/optimizing_for_size.rst:81
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
 "terms of performance and file size. It works by eliminating duplicate "
@@ -126,26 +134,26 @@ msgstr ""
 "启用链接时优化可以在性能和文件大小方面生成更高效的二进制文件。它通过消除重复"
 "的模板功能和未使用的代码来工作。目前，它可以与GCC和MSVC编译器一起使用："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:85
+#: ../../docs/development/compiling/optimizing_for_size.rst:90
 msgid ""
 "Linking becomes much slower with this option, so it should be used only for "
 "release builds."
 msgstr "使用此选项，链接变得慢得多，因此它应该仅用于发布版本。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:89
+#: ../../docs/development/compiling/optimizing_for_size.rst:94
 msgid "Stripping binaries"
 msgstr "剥离二进制文件"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:91
+#: ../../docs/development/compiling/optimizing_for_size.rst:96
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr "如果从源代码构建，请记住从二进制文件中剥离调试符号："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:98
+#: ../../docs/development/compiling/optimizing_for_size.rst:103
 msgid "Using UPX to compress binaries"
 msgstr "使用UPX压缩二进制文件"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:100
+#: ../../docs/development/compiling/optimizing_for_size.rst:105
 msgid ""
 "If you are targeting desktop platforms, the `UPX <https://upx.github.io/>`_ "
 "compressor can be used. This can reduce binary size considerably."
@@ -153,7 +161,7 @@ msgstr ""
 "如果您的目标是桌面平台，可以使用 `UPX <https://upx.github.io/>`_ 压缩器。这可"
 "以大大减少二进制大小。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:104
+#: ../../docs/development/compiling/optimizing_for_size.rst:109
 msgid ""
 "However, keep in mind that some antivirus programs may detect UPX-packed "
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "

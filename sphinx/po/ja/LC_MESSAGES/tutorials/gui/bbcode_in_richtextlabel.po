@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:4
 msgid "BBCode in RichTextLabel"
-msgstr ""
+msgstr "RichTextLabelのBBCode"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:7
 msgid "Introduction"
@@ -33,6 +33,11 @@ msgid ""
 "be one color, or only one part of the text be centered. To get around this "
 "limitation you would use a :ref:`class_RichTextLabel`."
 msgstr ""
+"ラベルノードは基本的なテキストの表示には適していますが、制限があります。テキ"
+"ストの色または配置を変更する場合、その変更はラベルノード内のすべてのテキスト"
+"に影響します。テキストの一部のみを別の色にしたり、テキストの一部のみを中央に"
+"配置したりすることはできません。この制限を回避するには、\\ :ref:"
+"`class_RichTextLabel` を使用します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:15
 msgid ""
@@ -40,16 +45,21 @@ msgid ""
 "Control. It has a built-in API for generating the markup, but can also parse "
 "a BBCode."
 msgstr ""
+":ref:`class_RichTextLabel` を使用すると、コントロールで複雑なテキストマーク"
+"アップを表示できます。マークアップを生成するための組み込みAPIがありますが、"
+"BBCodeを解析することもできます。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:18
 msgid ""
 "Note that the BBCode tags can also be used, to some extent, in the :ref:`XML "
 "source of the class reference <doc_updating_the_class_reference>`."
 msgstr ""
+"BBCodeタグは、\\ :ref:`XML source of the class reference "
+"<doc_updating_the_class_reference>`でもある程度使用することができます。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:22
 msgid "Using BBCode"
-msgstr "BBCodeの使用"
+msgstr "BBCodeを使用する"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:24
 msgid ""
@@ -60,12 +70,20 @@ msgid ""
 "this happens, you need to toggle the \"Enabled\" checkbox in the \"Bb Code\" "
 "section (``bbcode_enabled``)."
 msgstr ""
+"均一に書式設定されたテキストの場合は、\"Text\" プロパティで記述できますが、"
+"BBCodeマークアップを使用する場合は、代わりに \"Bb Code\" セクションの \"Text"
+"\" プロパティを使用する必要があります(``bbcode_text``)。このプロパティに書き"
+"込むと、マークアップの解析がトリガーされ、要求に応じてテキストの書式が設定さ"
+"れます。この処理を行う前に、”Bb Code\" セクションの \"Enabled\"チェックボック"
+"ス(``bbcode_enabled``)を切り替える必要があります。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:32
 msgid ""
 "For example, ``BBCode [color=blue]blue[/color]`` would render the word \"blue"
 "\" with a blue color."
 msgstr ""
+"たとえば、\\ ``BBCode [color=blue]blue[/color]`` は、単語 \"blue\" を青色でレ"
+"ンダリングします。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid ""
@@ -75,16 +93,23 @@ msgid ""
 "property or you'll lose the BBCode markup. All changes to the text must be "
 "done in the BBCode parameter."
 msgstr ""
+"BBCodeの \"Text\" プロパティに書き込んだ後、通常の \"Text\" プロパティに"
+"BBCodeのないテキストが含まれていることに気付くとおもいます。テキストプロパ"
+"ティはBBCodeプロパティによって更新されるので、テキストプロパティを編集できな"
+"いか、または編集するとBBCodeマークアップが失われます。テキストに対するすべて"
+"の変更は、BBCodeパラメーターで行う必要があります。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:44
 msgid ""
 "For BBCode tags such as ``[b]`` (bold) or ``[i]`` (italics) to work you must "
 "set up custom fonts for the RichTextLabel node first."
 msgstr ""
+"``[b]``(太字)や ``[i]``(斜体)などのBBCodeタグが機能するには、最初に"
+"RichTextLabelノードのカスタムフォントを設定する必要があります。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:48
 msgid "Reference"
-msgstr "\\ Reference"
+msgstr "リファレンス"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "Command"
@@ -100,270 +125,272 @@ msgstr "説明"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "**bold**"
-msgstr ""
+msgstr "**太字**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "``[b]{text}[/b]``"
-msgstr ""
+msgstr "\\ ``[b]{text}[/b]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "Makes {text} bold."
-msgstr ""
+msgstr "{text}を太字にします。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
 msgid "**italics**"
-msgstr ""
+msgstr "**斜体**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
 msgid "``[i]{text}[/i]``"
-msgstr ""
+msgstr "\\ ``[i]{text}[/i]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
 msgid "Makes {text} italics."
-msgstr ""
+msgstr "{text}を斜体にします。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
 msgid "**underline**"
-msgstr ""
+msgstr "**下線**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
 msgid "``[u]{text}[/u]``"
-msgstr ""
+msgstr "\\ ``[u]{text}[/u]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
 msgid "Makes {text} underline."
-msgstr ""
+msgstr "{text}に下線を付けます。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
 msgid "**strikethrough**"
-msgstr ""
+msgstr "**取り消し線**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
 msgid "``[s]{text}[/s]``"
-msgstr ""
+msgstr "\\ ``[s]{text}[/s]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
 msgid "Makes {text} strikethrough."
-msgstr ""
+msgstr "{text}に取り消し線を付けます。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
 msgid "**code**"
-msgstr ""
+msgstr "**コード**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
 msgid "``[code]{text}[/code]``"
-msgstr ""
+msgstr "\\ ``[code]{text}[/code]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
 msgid "Makes {text} monospace."
-msgstr ""
+msgstr "{text}をモノスペース(等倍)にします。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "**center**"
-msgstr ""
+msgstr "**センター**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "``[center]{text}[/center]``"
-msgstr ""
+msgstr "\\ ``[center]{text}[/center]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "Makes {text} centered."
-msgstr ""
+msgstr "{text}を中央揃えで配置します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "**right**"
-msgstr ""
+msgstr "**右**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "``[right]{text}[/right]``"
-msgstr ""
+msgstr "\\ ``[right]{text}[/right]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "Makes {text} right-aligned."
-msgstr ""
+msgstr "{text}を右揃えにします。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "**fill**"
-msgstr ""
+msgstr "**フィル**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "``[fill]{text}[/fill]``"
-msgstr ""
+msgstr "\\ ``[fill]{text}[/fill]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "Makes {text} fill width."
-msgstr ""
+msgstr "{text}を幅いっぱいに広げます。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "**indent**"
-msgstr ""
+msgstr "**インデント**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "``[indent]{text}[/indent]``"
-msgstr ""
+msgstr "\\ ``[indent]{text}[/indent]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "Increase indent level of {text}."
-msgstr ""
+msgstr "{text}のインデントレベルを上げます。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "**url**"
-msgstr ""
+msgstr "** URL **"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "``[url]{url}[/url]``"
-msgstr ""
+msgstr "\\ ``[url]{url}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "Show {url} as such."
-msgstr ""
+msgstr "{url}をそのまま表示します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "**url (ref)**"
-msgstr ""
+msgstr "**URL(名称)**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "``[url=<url>]{text}[/url]``"
-msgstr ""
+msgstr "\\ ``[url=<url>]{text}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "Makes {text} reference <url>."
-msgstr ""
+msgstr "{text}名付きの<url>を作成します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "**image**"
-msgstr ""
+msgstr "**画像**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "``[img]{path}[/img]``"
-msgstr ""
+msgstr "\\ ``[img]{path}[/img]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "Insert image at resource {path}."
-msgstr ""
+msgstr "リソース{path}の画像を挿入します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
 msgid "**resized image**"
-msgstr ""
+msgstr "**サイズ変更された画像**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "``[img=<width>]{path}[/img]``"
-msgstr ""
+msgstr "\\ ``[img=<width>]{path}[/img]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "Insert image at resource {path} using <width> (keeps ratio)."
-msgstr ""
+msgstr "(比率を保ちつつ)<width>を使用して、リソース{path}の画像を挿入します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
 msgid "``[img=<width>x<height>]{path}[/img]``"
-msgstr ""
+msgstr "\\ ``[img=<width>x<height>]{path}[/img]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
 msgid "Insert image at resource {path} using <width> & <height>."
-msgstr ""
+msgstr "<width>と<height>を使用して、リソース{path}の画像を挿入します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
 msgid "**font**"
-msgstr ""
+msgstr "**フォント**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
 msgid "``[font=<path>]{text}[/font]``"
-msgstr ""
+msgstr "\\ ``[font=<path>]{text}[/font]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
 msgid "Use custom font at <path> for {text}."
-msgstr ""
+msgstr "<path>のカスタムフォントを{text}に使用します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
 msgid "**color**"
-msgstr ""
+msgstr "**色**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
 msgid "``[color=<code/name>]{text}[/color]``"
-msgstr ""
+msgstr "\\ ``[color=<code/name>]{text}[/color]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
 msgid "Change {text} color; use name or # format, such as #ff00ff."
-msgstr ""
+msgstr "{text}の色を変更します。名前または#ff00ffなどの#形式を使用します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
 msgid "Built-in color names"
-msgstr ""
+msgstr "組み込みの色名"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
 msgid "List of valid color names for the [color=<name>] tag:"
-msgstr ""
+msgstr "[color = <name>]タグで有効な色名のリスト:"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:91
 msgid "aqua"
-msgstr ""
+msgstr "\\ aqua"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:92
 msgid "black"
-msgstr ""
+msgstr "\\ black"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:93
 msgid "blue"
-msgstr ""
+msgstr "\\ blue"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:94
 msgid "fuchsia"
-msgstr ""
+msgstr "\\ fuchsia"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:95
 msgid "gray"
-msgstr ""
+msgstr "\\ gray"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:96
 msgid "green"
-msgstr ""
+msgstr "\\ green"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:97
 msgid "lime"
-msgstr ""
+msgstr "\\ lime"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:98
 msgid "maroon"
-msgstr ""
+msgstr "\\ maroon"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:99
 msgid "navy"
-msgstr ""
+msgstr "\\ navy"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:100
 msgid "purple"
-msgstr ""
+msgstr "\\ purple"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:101
 msgid "red"
-msgstr ""
+msgstr "\\ red"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:102
 msgid "silver"
-msgstr ""
+msgstr "\\ silver"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:103
 msgid "teal"
-msgstr ""
+msgstr "\\ teal"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:104
 msgid "white"
-msgstr ""
+msgstr "\\ white"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:105
 msgid "yellow"
-msgstr ""
+msgstr "\\ yellow"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:108
 msgid "Hexadecimal color codes"
-msgstr ""
+msgstr "16進カラーコード"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:110
 msgid ""
 "For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
 "``[color=#ffffff]white[/color]``."
 msgstr ""
+"不透明なRGBカラーの場合、桁の省略をしない6桁の16進コードがサポートされます。"
+"例 ``[color=#ffffff]white[/color]``。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:112
 msgid ""
@@ -371,30 +398,38 @@ msgid ""
 "``[color=#88ffffff]translucent white[/color]``. In this case, note that the "
 "alpha channel is the **first** component of the color code, not the last one."
 msgstr ""
+"透明なRGBカラーの場合、8桁の16進コードを使用できます。例 "
+"``[color=#88ffffff]translucent white[/color]``。この場合、アルファチャネルは"
+"カラーコードの **最初の** コンポーネントであり、最後のコンポーネントではない"
+"ことに注意してください。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:116
 msgid "Image vertical offset"
-msgstr ""
+msgstr "画像の垂直オフセット"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:118
 msgid "You use a custom font for your image in order to align it vertically."
-msgstr ""
+msgstr "画像を縦に揃えるには、画像にカスタムフォントを使用します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:120
 msgid "Create a ``BitmapFont`` resource"
-msgstr ""
+msgstr "``BitmapFont``リソースを作成する"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:121
 msgid ""
 "Set this bitmap font with a positive value for the ``ascent`` property, "
 "that's your height offset"
 msgstr ""
+"``ascent`` プロパティに正の値を設定して、このビットマップフォントを設定しま"
+"す。これが高さオフセットです"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:122
 msgid ""
 "Set the BBCode tag this way: ``[font=<font-path>][img]{image-path}[/img][/"
 "font]``"
 msgstr ""
+"BBCodeタグを次のように設定します: ``[font=<font-path>][img]{image-path}[/img]"
+"[/font]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:125
 msgid "Animation effects"
@@ -406,10 +441,13 @@ msgid ""
 "customizable effects are provided out of the box, and you can easily create "
 "your own."
 msgstr ""
+"BBCodeを使用して、さまざまなテキストアニメーションエフェクトを作成することも"
+"できます。カスタマイズ可能な5つのエフェクトがすぐに使用でき、独自のエフェクト"
+"も簡単に作成できます。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:131
 msgid "Wave"
-msgstr ""
+msgstr "Wave(波)"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:135
 msgid ""
@@ -417,10 +455,13 @@ msgid ""
 "[/wave]``. ``amp`` controls how high and low the effect goes, and ``freq`` "
 "controls how fast the text goes up and down."
 msgstr ""
+"Waveはテキストを上下に動かします。タグの形式は ``[wave amp=50 freq=2][/"
+"wave]`` です。\\ ``amp`` は効果の高低を制御し、\\ ``freq`` はテキストの上下移"
+"動の速度を制御します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:140
 msgid "Tornado"
-msgstr ""
+msgstr "Tornado(竜巻)"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:144
 msgid ""
@@ -428,10 +469,13 @@ msgid ""
 "radius=5 freq=2][/tornado]``. ``radius`` is the radius of the circle that "
 "controls the offset, ``freq`` is how fast the text moves in a circle."
 msgstr ""
+"Tornaoは、テキストを円状に動かします。タグの形式は ``[tornado radius=5 "
+"freq=2][/tornado]`` です。\\ ``radius`` はオフセットを制御する円の半径、\\ "
+"``freq`` はテキストが円内を移動する速度です。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:150
 msgid "Shake"
-msgstr ""
+msgstr "Shake(シェイク)"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:154
 msgid ""
@@ -439,10 +483,13 @@ msgid ""
 "shake]``. ``rate`` controls how fast the text shakes, ``level`` controls how "
 "far the text is offset from the origin."
 msgstr ""
+"Shakeを指定するとテキストが揺れます。タグの形式は ``[shake rate=5 level=10][/"
+"shake]`` です。\\ ``rate`` はテキストの揺れの速さを制御し、\\ ``level`` はテ"
+"キストが原点からどれだけオフセットされるかを制御します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:159
 msgid "Fade"
-msgstr ""
+msgstr "Fade(フェード)"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:163
 msgid ""
@@ -452,10 +499,14 @@ msgid ""
 "inserted, ``length`` controls over how many characters should the fade out "
 "take place."
 msgstr ""
+"Fadeは、アニメーション化されていないテキストにフェード効果を作成します。タグ"
+"の形式は ``[fade start=4 length=14][/fade]`` です。\\ ``start`` は、フェード"
+"コマンドが挿入される場所に関連するフォールオフの開始位置を制御し、\\ "
+"``length`` は、フェードアウトを行う文字数を制御します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:170
 msgid "Rainbow"
-msgstr ""
+msgstr "Rainbow(虹)"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:174
 msgid ""
@@ -464,10 +515,13 @@ msgid ""
 "number of full rainbow cycles per second, ``sat`` is the saturation of the "
 "rainbow, ``val`` is the value of the rainbow."
 msgstr ""
+"Rainbowは、時間とともに変化する虹色をテキストに与えます。タグ形式は "
+"``[rainbow freq=0.2 sat=10 val=20][/rainbow]`` です。\\ ``freq`` は1秒あたり"
+"の虹色が一周する数、\\ ``sat`` は虹の彩度、\\ ``val`` は虹の値です。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:180
 msgid "Custom BBCode tags and text effects"
-msgstr ""
+msgstr "カスタムBBCodeタグとテキストエフェクト"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:182
 msgid ""
@@ -478,6 +532,11 @@ msgid ""
 "itself. The RichTextLabel does not need to have a script attached, nor does "
 "it need to be running in ``tool`` mode."
 msgstr ""
+":ref:`class_RichTextEffect` リソースタイプを拡張して、独自のカスタムBBCodeタ"
+"グを作成できます。最初に\\ :ref:`class_RichTextEffect` リソースタイプを拡張し"
+"ます。これらのカスタムエフェクトをエディタ内で実行する場合は、GDScriptファイ"
+"ルに ``tool`` プレフィックスを追加します。 RichTextLabelにはスクリプトを添付"
+"する必要も、\\ ``tool`` モードで実行する必要もありません。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:188
 msgid ""
@@ -487,10 +546,14 @@ msgid ""
 "check the ``bbcode`` property automatically or will use the name of the file "
 "to determine what the BBCode tag should be."
 msgstr ""
+"拡張する必要がある関数は: ``_process_custom_fx(char_fx)`` のみです。オプショ"
+"ンで、メンバー名 ``bbcode`` を追加するだけで、カスタムBBCode識別子を提供する"
+"こともできます。コードは ``bbcode`` プロパティを自動的にチェックするか、ファ"
+"イルの名前を使用してBBCodeタグの内容を決定します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:194
 msgid "``_process_custom_fx``"
-msgstr ""
+msgstr "\\ ``_process_custom_fx``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:196
 msgid ""
@@ -499,46 +562,60 @@ msgid ""
 "`class_CharFXTransform` object, which holds a few variables to control how "
 "the associated character is rendered:"
 msgstr ""
+"これは、各エフェクトのロジックが発生する場所であり、テキストレンダリングの描"
+"画段階で文字ごとに1回呼び出されます。これは :ref:`class_CharFXTransform` オブ"
+"ジェクトを渡します。このオブジェクトには、関連する文字のレンダリング方法を制"
+"御するいくつかの変数が含まれています:"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:200
 msgid ""
 "``identity`` specifies which custom effect is being processed. You should "
 "use that for code flow control."
 msgstr ""
+"``identity`` は、どのカスタムエフェクトが処理されているかを指定します。コード"
+"フロー制御に使用する必要があります。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:202
 msgid ""
 "``relative_index`` tells you how far into a given custom effect block you "
 "are in as an index."
 msgstr ""
+"``relative_index`` は、与えられたカスタムエフェクトブロックにどれだけのイン"
+"デックスを持っているかを示します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:204
 msgid ""
 "``absolute_index`` tells you how far into the entire text you are as an "
 "index."
 msgstr ""
+"``absolute_index`` は、インデックスとしてテキスト全体にどの程度まで入るかを示"
+"します。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:205
 msgid ""
 "``elapsed_time`` is the total amount of time the text effect has been "
 "running."
-msgstr ""
+msgstr "``elapsed_time`` は、テキストエフェクトが実行されている合計時間です。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:206
 msgid ""
 "``visible`` will tell you whether the character is visible or not and will "
 "also allow you to hide a given portion of text."
 msgstr ""
+"`` visible`` は、文字が表示されているかどうかを示し、テキストの特定の部分を非"
+"表示にすることもできます。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:208
 msgid ""
 "``offset`` is an offset position relative to where the given character "
 "should render under normal circumstances."
 msgstr ""
+"``offset`` は、通常の状況で指定された文字がレンダリングされる場所に対する、相"
+"対的なオフセット位置です。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:210
 msgid "``color`` is the color of a given character."
-msgstr ""
+msgstr "``color`` は、指定された文字の色です。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:211
 msgid ""
@@ -549,6 +626,13 @@ msgid ""
 "custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in "
 "its ` `env`` Dictionary. See below for more usage examples."
 msgstr ""
+"最後に、\\ ``env`` は、特定のカスタムエフェクトに割り当てられたパラメータの :"
+"ref:`class_Dictionary` です。ユーザーが指定した場合、\\ :ref:`get() "
+"<class_Dictionary_method_get>` をオプションのデフォルト値とともに使用して、各"
+"パラメータを取得できます。たとえば、\\ ``[custom_fx spread=0.5 "
+"color=#FFFF00]test[/custom_fx]`` は、\\ ``env`` ディクショナリに浮動小数点数"
+"の ``spread`` と色の ``color`` パラメータを持つことになります。その他の使用例"
+"については、以下を参照してください。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:217
 msgid ""
@@ -558,6 +642,11 @@ msgid ""
 "of rendering custom effects entirely until the user fixes whatever error "
 "cropped up in their custom effect logic."
 msgstr ""
+"この関数について最後に注意することは、効果が正しく処理されたことを確認するた"
+"めにブール値の ``true`` を返す必要があるということです。このように、特定の文"
+"字のレンダリングに問題がある場合、ユーザーがカスタムエフェクトロジックで発生"
+"したエラーを修正するまで、カスタムエフェクトのレンダリングが完全に行えなくな"
+"ります。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:222
 msgid "Here are some examples of custom effects:"
@@ -565,16 +654,16 @@ msgstr "カスタムエフェクトの例を次に示します:"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:225
 msgid "Ghost"
-msgstr ""
+msgstr "\\ Ghost"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:247
 msgid "Pulse"
-msgstr ""
+msgstr "\\ Pulse"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:273
 msgid "Matrix"
-msgstr ""
+msgstr "\\ Matrix"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:307
 msgid "This will add a few new BBCode commands, which can be used like so:"
-msgstr "いくつかの新しいBBCodeコマンドが追加され、その様に使う事が出来ます:"
+msgstr "これにより、次のように使用できる新しいBBCodeコマンドが追加されます:"

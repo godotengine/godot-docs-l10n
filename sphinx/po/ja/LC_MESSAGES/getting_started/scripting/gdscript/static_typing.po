@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr "**GDScriptで型を使用する方法**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:9
 msgid "That **static types can help you avoid bugs**"
-msgstr "静的型は**バグの回避に役立つ**"
+msgstr "静的型は\\ **バグの回避に役立ちます**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:11
 msgid ""
@@ -84,10 +84,10 @@ msgid ""
 "issues at runtime, but lets you decide whether or not you want to leave the "
 "code as it is. More on that in a moment."
 msgstr ""
-"型付きGDScriptのもう1つの重要な利点は、新しい**警告システム**です。バージョン"
-"3.1以降のGodotではコードを記述する際に警告が表示されます:実行時に問題を引き起"
-"こす可能性のあるコードのセクションが識別されますが、コードをそのままにしてお"
-"くかどうかを決めることができます。これについては後で説明します。"
+"型付きGDScriptのもう1つの重要な利点は、新しい\\ **警告システム**\\ です。バー"
+"ジョン3.1以降のGodotではコードを記述する際に警告が表示されます: 実行時に問題"
+"を引き起こす可能性のあるコードのセクションが識別されますが、コードをそのまま"
+"にしておくかどうかを決めることができます。これについては後で説明します。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:54
 msgid ""
@@ -249,7 +249,7 @@ msgid ""
 "a generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
 "``_on_body_entered`` callback."
 msgstr ""
-"``extends Area2D``であなたのゲームに敵がいると仮定してください。あなたはそれ"
+"``extends Area2D`` であなたのゲームに敵がいると仮定してください。あなたはそれ"
 "を ``PlayerController`` と呼ばれるスクリプトが付いている ``KinematicBody2D`` "
 "と衝突させたいのです。衝突を検出するには ``on_body_entered`` シグナルを使用し"
 "ます。型付きコードでは、 ``_on_body_entered`` コールバックでは、検出したボ"
@@ -314,9 +314,9 @@ msgid ""
 "node’s type as long as it has the methods you need to call."
 msgstr ""
 "これは子ノードを取得したときに起こります。たとえばタイマーを考えてみましょ"
-"う。動的コードでは、 ``$Timer`` でノードを取得できます。GDScriptは`ダック・タ"
-"イピング <https://stackoverflow.com/a/4205163/8125343>`をサポートしているの"
-"で、あなたのタイマーが ``Timer`` 型であっても、それは ``Node`` であり "
+"う。動的コードでは、\\ ``$Timer`` でノードを取得できます。GDScriptは `ダッ"
+"ク・タイピング <https://stackoverflow.com/a/4205163/8125343>` をサポートして"
+"いるので、あなたのタイマーが ``Timer`` 型であっても、それは ``Node`` であり "
 "``Object`` でもあり、2つのクラスが拡張しています。動的GDScriptでは、呼び出す"
 "必要のあるメソッドがある限り、ノードの種類についても気にする必要はありませ"
 "ん。"
@@ -521,7 +521,7 @@ msgid ""
 "type hints. All the examples below **will trigger errors**."
 msgstr ""
 "この紹介の締めくくりに、タイプヒントを使用できないいくつかのケースを取り上げ"
-"ましょう。 以下の例はすべて**エラーを引き起こします**。"
+"ましょう。 以下の例はすべて\\ **エラーを引き起こします**\\ 。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:361
 msgid "You can’t use Enums as types:"

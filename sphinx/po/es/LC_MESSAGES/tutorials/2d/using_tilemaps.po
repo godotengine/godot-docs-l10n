@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,7 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
+#, fuzzy
 msgid ""
 "A tilemap is a grid of tiles used to create a game's layout. There are "
 "several benefits to using :ref:`TileMap <class_TileMap>` nodes to design "
@@ -36,24 +37,42 @@ msgid ""
 "Finally, you can add collision, occlusion, and navigation shapes to tiles, "
 "adding additional functionality to the TileMap."
 msgstr ""
+"Un tilemap es una cuadrícula de mosaicos que se utiliza para crear el mapa "
+"de un juego. Hay varios beneficios al usar los nodos :ref:`TileMap "
+"<class_TileMap>` para diseñar tus niveles. Primero, hacen posible dibujar el "
+"mapa \"pintando\" los tiles en una cuadrícula, lo que es mucho más rápido "
+"que colocar nodos :ref:`Sprite <class_Sprite>` individuales uno por uno. "
+"Segundo, permiten niveles mucho más grandes porque están optimizados para "
+"dibujar un gran número de tiles. Finalmente, puedes añadir formas de "
+"colisión, oclusión y navegación a los tiles, añadiendo funcionalidad "
+"adicional al TileMap."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid "Project setup"
 msgstr "Configuración del proyecto"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:23
+#, fuzzy
 msgid ""
 "This demo we'll use the following tiles taken from Kenney's \"Abstract "
 "Platformer\" art pack. You can find the complete set `here <https://kenney."
 "nl/assets/abstract-platformer>`_ but for this demo we'll stick to this small "
 "set."
 msgstr ""
+"En esta demostración usaremos los siguientes tiles tomados del paquete de "
+"arte \"Abstract Platformer\" de Kenney. Pueden encontrar el conjunto "
+"completo `aquí <https://kenney.nl/assets/abstract-platformer>`_ pero para "
+"esta demo nos ceñiremos a este pequeño conjunto."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
+#, fuzzy
 msgid "Create a new project and place the above image in the project folder."
 msgstr ""
+"Cree un nuevo proyecto y coloque la imagen anterior en la carpeta de "
+"proyectos."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:31
+#, fuzzy
 msgid ""
 "When using a tileset, it's important that adjacent tiles match up. Godot's "
 "default is to import 2D images using an interpolated \"filter\" mode, which "
@@ -61,6 +80,12 @@ msgid ""
 "the Import tab. Turn off ``Filter`` and click \"Reimport\". See :ref:"
 "`doc_import_images` for details."
 msgstr ""
+"Cuando se usa un tileset, es importante que los tiles adyacentes coincidan. "
+"Godot por defecto importa imágenes 2D usando un modo de \"filter\" "
+"interpolado, lo que resultará en unos bordes feos entre los tiles. "
+"Selecciona la imagen y haz clic en la pestaña Importar. Desactiva el "
+"``Filter`` y haz clic en \"Reimport\". Ver :ref:`doc_import_images` para más "
+"detalles."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
 #, fuzzy
@@ -73,23 +98,30 @@ msgid ""
 "TileMap uses a square grid of tiles. You can also use a perspective-based "
 "\"Isometric\" mode or define your own custom tile shape."
 msgstr ""
+"Añade un nuevo nodo :ref:`TileMap <class_TileMap>` a la escena. Por defecto, "
+"un TileMap utiliza una cuadrícula cuadrada de azulejos. También puede "
+"utilizar un modo \"Isométrico\" basado en la perspectiva o definir su propia "
+"forma de tiles personalizada."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid ""
 "Under the \"Cell\" section in the Inspector are many properties you can "
 "adjust to customize your tilemap's behavior:"
 msgstr ""
+"En la sección \"Cell\" del Inspector hay muchas propiedades que puedes "
+"ajustar para personalizar el comportamiento de tu mapa de tiles:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:52
-#, fuzzy
 msgid "``Cell Size``"
-msgstr "``Center``"
+msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:51
 msgid ""
 "This defines the size of the grid. This should match the pixel size of your "
 "tiles. The default value is ``(64, 64)``."
 msgstr ""
+"Esto define el tamaño de la grilla. Esto debería coincidir con el tamaño de "
+"los píxeles de tus tiles. El valor por defecto es ``(64, 64)``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:56
 msgid "``YSort``"
@@ -100,6 +132,8 @@ msgid ""
 "This causes tiles to be drawn in order of their ``Y`` position, so that "
 "\"lower\" tiles are drawn on top of \"higher\" ones."
 msgstr ""
+"Esto hace que los tiles se dibujen en orden de su posición ``Y``, de modo "
+"que los tiles \"inferiores\" se dibujan encima de otros \"\"superiores\"\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid "``Half Offset`` and ``Tile Origin``"
@@ -110,16 +144,22 @@ msgid ""
 "These properties affect the position of the tile relative to the grid "
 "position."
 msgstr ""
+"Estas propiedades afectan a la posición de los tiles en relación con la "
+"posición de la grilla."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:63
 msgid "``Quadrant``"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
+#, fuzzy
 msgid ""
 "Defines the chunk size used for batched drawing. This can negatively affect "
 "performance. Don't change it unless you know what you're doing."
 msgstr ""
+"Define el tamaño del trozo utilizado para el dibujo en lote. Esto puede "
+"afectar negativamente el rendimiento. No lo cambies a menos que sepas lo que "
+"estás haciendo."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 #, fuzzy
@@ -129,15 +169,16 @@ msgstr "Transformar"
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
 msgstr ""
+"Se usa para alterar la forma del tile. Usa esto si tienes tiles no cuadrados."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:68
 msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
+"Todas estas opciones pueden dejarse por defecto para esta demostración."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
-#, fuzzy
 msgid "Creating a TileSet"
-msgstr "Exportando un Tileset"
+msgstr "Creando un Tileset"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
@@ -147,12 +188,19 @@ msgid ""
 "other properties. When the game runs, the TileMap combines the individual "
 "tiles into a single object."
 msgstr ""
+"Una vez que hayas configurado tu tilemap, es hora de añadir un :ref:`TileSet "
+"<class_TileSet>`. Un TileSet es un :ref:`Resource <class_Resource>` que "
+"contiene los datos de tus tiles sus texturas, formas de colisión, y otras "
+"propiedades. Cuando el juego se ejecuta, el TileMap combina los tiles "
+"individuales en un solo objeto."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:79
 msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
 "TileSet\"."
 msgstr ""
+"Para añadir un nuevo TileSet, haga clic en la propiedad \"Tile Set\" y "
+"seleccione \"New TileSet\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
 #, fuzzy

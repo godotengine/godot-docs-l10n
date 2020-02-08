@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:4
 msgid "Handling quit requests"
-msgstr ""
+msgstr "終了リクエストの処理"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:7
 msgid "Quitting"
-msgstr ""
+msgstr "終了"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:9
 msgid ""
@@ -32,10 +32,14 @@ msgid ""
 "On Android, the back button is used to quit when on the main screen (and to "
 "go back otherwise)."
 msgstr ""
+"ほとんどのプラットフォームには、アプリケーションの終了を要求するオプションが"
+"あります。デスクトップでは、これは通常、ウィンドウのタイトルバーにある \"x\" "
+"アイコンで行われます。Androidでは、戻るボタンを使用して、メイン画面上で終了し"
+"ます(終了以外の場合は戻ります)。"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:15
 msgid "Handling the notification"
-msgstr ""
+msgstr "通知の処理"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:17
 msgid ""
@@ -43,6 +47,9 @@ msgid ""
 "``MainLoop.NOTIFICATION_WM_QUIT_REQUEST`` notification that is sent to all "
 "nodes when quitting is requested."
 msgstr ""
+"デスクトッププラットフォームでは、\\ :ref:`MainLoop <class_MainLoop>` には、"
+"終了が要求されたときにすべてのノードに送信される特別な ``MainLoop."
+"NOTIFICATION_WM_QUIT_REQUEST`` 通知があります。"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:21
 msgid ""
@@ -51,25 +58,35 @@ msgid ""
 "> Quit On Go Back** is checked in the Project Settings (which is the "
 "default)."
 msgstr ""
+"Androidでは、代わりに ``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` が送信され"
+"ます。プロジェクト設定で **Application -> Config -> Quit On Go Back** が"
+"チェックされている場合(規定値)、[戻る]ボタンを押すとアプリケーションが終了し"
+"ます。"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:28
 msgid ""
 "``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` isn't supported on iOS, as iOS "
 "devices don't have a physical Back button."
 msgstr ""
+"iOSデバイスには物理的な [戻る] ボタンが付いていないため、iOSでは ``MainLoop."
+"NOTIFICATION_WM_GO_BACK_REQUEST`` はサポートされません。"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:31
 msgid "Handling the notification is done as follows (on any node):"
-msgstr ""
+msgstr "通知の処理は、(任意のノードで) 次のように行われます:"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:48
 msgid ""
 "When developing mobile apps, quitting is not desired unless the user is on "
 "the main screen, so the behavior can be changed."
 msgstr ""
+"モバイルアプリを開発する場合、ユーザーがメイン画面にいる場合を除き、終了する"
+"ことは望ましくないため、動作を変更できます。"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:51
 msgid ""
 "It is important to note that by default, Godot apps have the built-in "
 "behavior to quit when quit is requested, this can be changed:"
 msgstr ""
+"デフォルトでは、Godotアプリには、終了が要求されたときに終了する組み込みの動作"
+"があり、これを変更できることに注意してください:"

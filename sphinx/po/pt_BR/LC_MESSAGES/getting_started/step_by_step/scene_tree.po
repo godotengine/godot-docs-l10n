@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,15 +27,14 @@ msgid "Introduction"
 msgstr "Introdução"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
-#, fuzzy
 msgid ""
 "In previous tutorials, everything revolved around the concept of nodes. "
 "Scenes are collections of nodes. They become active once they enter the "
 "*scene tree*."
 msgstr ""
 "Nos tutoriais anteriores, tudo girava em torno do conceito de nós. Cenas são "
-"simplesmente uma coleção de nós. Elas se tornam ativos quando entram na * "
-"árvore de cena *."
+"simplesmente uma coleção de nós. Elas se tornam ativos quando entram na "
+"*árvore de cena*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:14
 msgid "MainLoop"
@@ -96,16 +95,14 @@ msgstr ""
 "os servidores são a API de baixo nível."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
-#, fuzzy
 msgid ""
 "The scene system provides its own main loop to OS, :ref:`SceneTree "
 "<class_SceneTree>`. This is automatically instanced and set when running a "
 "scene, no need to do any extra work."
 msgstr ""
-"Em qualquer caso, o sistema de cena fornece seu próprio loop principal para "
-"o SO,: ref: `SceneTree <class_SceneTree>`. Isso é automaticamente "
-"instanciado e definido ao executar uma cena, sem necessidade de qualquer "
-"trabalho extra."
+"O sistema de cena fornece seu próprio loop principal para o SO, :ref:"
+"`SceneTree <class_SceneTree>`. Isso é automaticamente instanciado e definido "
+"ao executar uma cena, sem necessidade de qualquer trabalho extra."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
@@ -115,15 +112,14 @@ msgstr ""
 "É importante saber que essa classe existe porque tem alguns usos importantes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:49
-#, fuzzy
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
 "added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)."
 msgstr ""
-"Ele contém a raiz: ref: `Viewport <class_Viewport>`, para a qual uma cena é "
-"adicionada como uma criança quando é aberta pela primeira vez, para se "
-"tornar parte da * Scene Tree * (mais sobre isso a seguir)"
+"Ele contém o :ref:`Viewport <class_Viewport>` raiz, para o qual uma cena é "
+"adicionada como filha quando é aberta pela primeira vez, para se tornar "
+"parte da *Árvore da Cena* (mais sobre isso a seguir)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:52
 msgid ""
@@ -142,15 +138,14 @@ msgstr ""
 "pausa ou encerrar o processo."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "When a node is part of the Scene Tree, the :ref:`SceneTree "
 "<class_SceneTree>` singleton can be obtained by calling :ref:`Node."
 "get_tree() <class_Node_method_get_tree>`."
 msgstr ""
-"Quando um nó é parte da Scene Tree, o singleton: ref: `SceneTree "
-"<class_SceneTree> pode ser obtido simplesmente chamando: ref:` Node.get_tree "
-"() <class_Node_method_get_tree> `."
+"Quando um nó é parte da Scene Tree, o singleton :ref:`SceneTree "
+"<class_SceneTree>` pode ser obtido chamando :ref:`Node.get_tree() "
+"<class_Node_method_get_tree>`."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:63
 msgid "Root viewport"
@@ -165,17 +160,16 @@ msgstr ""
 "nó, ele pode ser obtido de duas maneiras diferentes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:80
-#, fuzzy
 msgid ""
 "This node contains the main viewport. Anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
 "sense that the top of all nodes is always a node of this type otherwise "
 "nothing would be seen."
 msgstr ""
-"Este nó contém o viewport principal, qualquer coisa que é filho de: ref: "
+"Este nó contém o viewport principal. Qualquer coisa que é filho de um :ref:"
 "`Viewport <class_Viewport>` é desenhado dentro dele por padrão, então faz "
 "sentido que o topo de todos os nós seja sempre um nó deste tipo, caso "
-"contrário nada seria visto!"
+"contrário nada seria visto."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:85
 msgid ""
@@ -208,34 +202,32 @@ msgstr ""
 "retornos de chamada _enter_tree () e _ready () (assim como _exit_tree ())."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:100
-#, fuzzy
 msgid ""
 "When nodes enter the *Scene Tree*, they become active. They get access to "
 "everything they need to process, get input, display 2D and 3D visuals, "
 "receive and send notifications, play sounds, etc. When they are removed from "
 "the *scene tree*, they lose these abilities."
 msgstr ""
-"Quando os nós entram na * Scene Tree *, eles se tornam ativos. Eles têm "
-"acesso a tudo o que precisam para processar, obter entrada, exibir 2D e 3D, "
-"notificações, reproduzir sons, grupos etc. Quando são removidos da * árvore "
-"de cena *, eles perdem o acesso."
+"Quando os nós entram na *Scene Tree*, eles se tornam ativos. Eles têm acesso "
+"a tudo o que precisam para processar, obter entrada, exibir visuais em 2D e "
+"3D, enviar e receber notificações, reproduzir sons, etc. Quando são "
+"removidos da *árvore de cena*, eles perdem essas habilidades."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:106
 msgid "Tree order"
 msgstr "Ordem da árvore"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:108
-#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
 "with a lower rank in the tree order will get notified before the current "
 "node."
 msgstr ""
-"A maioria das operações de nó na Godot, como desenhar 2D, processar ou obter "
-"notificações, é feita em ordem de árvore. Isso significa que pais e irmãos "
-"com uma classificação menor na ordem de árvore serão notificados antes do nó "
-"atual."
+"A maioria das operações de nó na Godot, como desenhar 2D, processar, ou "
+"obter notificações, é feita em ordem de árvore. Isso significa que pais e "
+"irmãos com uma classificação menor na ordem de árvore serão notificados "
+"antes do nó atual."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
 msgid "\"Becoming active\" by entering the *Scene Tree*"
@@ -307,7 +299,6 @@ msgstr ""
 "<class_SceneTree_method_change_scene_to>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:174
-#, fuzzy
 msgid ""
 "These are quick and useful ways to switch scenes but have the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
@@ -316,9 +307,9 @@ msgid ""
 "(background) loading. This must be done manually using autoloads (see next "
 "chapter) and :ref:`doc_background_loading`."
 msgstr ""
-"Esta é uma maneira rápida e útil de trocar de cena, mas tem a desvantagem de "
-"o jogo parar até que a nova cena seja carregada e executada. Em algum "
+"Estas são maneiras rápidas e úteis de trocar de cena, mas têm a desvantagem "
+"de o jogo travar até que a nova cena seja carregada e executada. Em algum "
 "momento do seu jogo, pode ser necessário criar telas de carregamento "
 "adequadas com barra de progresso, indicadores animados ou carregamento de "
-"thread (plano de fundo). Isso deve ser feito manualmente usando autoloads "
-"(veja o próximo capítulo!) E: ref: `doc_background_loading`."
+"thread (no fundo). Isso deve ser feito manualmente usando autoloads (veja o "
+"próximo capítulo) e :ref:`doc_background_loading`."

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 msgid "High level multiplayer"
-msgstr ""
+msgstr "하이 레벨 멀티플레이어(High level multiplayer)"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
 msgid "High level vs low level API"
-msgstr ""
+msgstr "하이 레벨 vs 로우 레벨 API(High level vs low level API)"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
 msgid ""
@@ -32,6 +32,10 @@ msgid ""
 "add networking to your first nodes, skip to `Initializing the network`_ "
 "below. But make sure to read the rest later on!"
 msgstr ""
+"여기부터는 몇 가지 기본 사항과 함께, Godot에서 하이 레벨 네트워킹과 로우 레"
+"벨 네트워킹의 차이를 설명합니다. 바로 실전으로 가서 첫 노드에 네트워킹을 추가"
+"하고 싶다면, 아래의 `네트워크 초기화하기(Initializing the network)`_\\ 로 건"
+"너 뛰세요. 하지만 나중에라도 이 부분을 읽어주세요!"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
 msgid ""
@@ -44,10 +48,17 @@ msgid ""
 "consider Godot's high-level networking API, which sacrifices some of the "
 "fine-grained control of low-level networking for greater ease of use."
 msgstr ""
+"Godot는 항상 UDP, TCP, 그 외 SSL이나 HTTP와 같은 일부 하이 레벨 프로토콜을 통"
+"해, 일반적인 로우 레벨 네트워킹을 지원했습니다. 이 프로토콜은 유연하고 거의 "
+"모든 것에 사용될 수 있습니다. 하지만 게임 상태를 일일이 동기화하기 위해 이 프"
+"로토콜을 사용하는 일은 많은 작업이 필요합니다. 때로는 그 작업이 필요하고, 가"
+"치가 있습니다. 예를 들면 백엔드에서 맞춤 서버 구현을 작업할 때가 있죠. 하지"
+"만, 대부분의 경우, Godot의 하이 레벨 네트워킹 API를 생각하게 만들었습니다. 쉽"
+"게 쓸 수 있지만, 로우 레벨 네트워킹의 세밀한 제어를 희생하죠."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
 msgid "This is due to the inherent limitations of the low-level protocols:"
-msgstr ""
+msgstr "이는 로우 레벨 프로토콜의 고유의 한계 때문입니다:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:16
 msgid ""
@@ -60,6 +71,14 @@ msgid ""
 "for games. Some of this can be configured and disabled (e.g. by disabling "
 "\"Nagle's algorithm\" for the TCP connection)."
 msgstr ""
+"TCP는 패킷(Packet)이 항상 안전하게 도착하도록 보장합니다. 하지만 오류 연결 때"
+"문에 지연 시간은 점진적으로 길어집니다. 이 또한 복잡한 프로토콜입니다. 왜냐하"
+"면 무엇이 \"연결(Connection)\"인지를 이해해야 하고, 멀티플레이어 게임과 같은 "
+"애플리케이션과는 맞지 않은 목적을 이루기 위해 최적화를 해야 합니다. 패킷은 "
+"더 큰 배치(Batch)로 전송되도록 버퍼링됩니다. 그렇게 되면 전달하는 패킷 당 오"
+"버헤드(Overhead)는 줄어들고 지연 시간이 길어집니다. 이는 HTTP에는 유용하겠지"
+"만, 일반적인 게임에는 아니죠. 일부 프로토콜은 이를 설정하거나 끌 수 있습니"
+"다. (예: TCP 연결의 \"네이글 알고리즘(Nagle Algorithm)\"을 끔)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:18
 msgid ""
@@ -70,6 +89,12 @@ msgid ""
 "hundred bytes), so transmitting larger packets means splitting them, "
 "reorganizing them and retrying if a part fails."
 msgstr ""
+"UDP는 더 간단한 프로토콜로, 패킷을 보내기만 합니다 (즉, \"연결"
+"(Connection)\"의 개념이 없습니다). 오류 연결이 없어서 꽤 빠릅니다 (짧은 지연 "
+"시간). 하지만 패킷을 보내는 과정에서 잃을 수 있고, 잘못된 상대방이 받을 수 있"
+"습니다. 게다가, UDP의 MTU (최대 패킷 크기)는 (겨우 몇 백 바이트로) 보통 낮습"
+"니다. 따라서 더 큰 패킷을 전송하려면 패킷을 분리하고, 다시 구조화하고, 만일 "
+"일부분이 잘못되면 다시 시도해야 합니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:23
 msgid ""
@@ -81,6 +106,13 @@ msgid ""
 "this, most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
+"보통은, TCP를 신뢰할 수 있고 질서 있고 느리다고 생각할 수 있습니다. 반대로 "
+"UDP는 신뢰할 수 없고, 무질서하며, 빠르다고 생각하겠죠. 그 이유는 둘 간의 큰 "
+"성능 차이입니다. 종종 게임에 필요한 TCP 부분을 새로 만드는 것이 합리적이기도 "
+"합니다 (선택적인 안정성과 패킷 순서). 그러면서 원하지 않은 부분은 피할 수 있"
+"으니까요 (혼잡(Congestion)/트래픽(traffic) 제어 기능, 네이글 알고리즘 등). "
+"이 때문에 대부분의 게임 엔진은 이러한 네트워킹 구현을 제공합니다. Godot 역시 "
+"예외가 아니죠."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
 msgid ""
@@ -89,6 +121,10 @@ msgid ""
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
 msgstr ""
+"요약해서 말하자면, 최대한의 제어와 순수한 네트워크 프로토콜에서 모든 것을 구"
+"현하려면, 로우 레벨 네트워킹 API를 사용할 수 있습니다. 혹은 일반적으로 최적"
+"화 된 방식에서 씬 뒤로 대부분의 무거운 리프팅을 수행하는 :ref:`SceneTree(씬 "
+"트리) <class_SceneTree>`\\ 에서 하이 레벨 API를 사용할 수 있습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:28
 msgid ""
@@ -99,12 +135,20 @@ msgid ""
 "currently only offers WebSocket support and lacks some of the higher level "
 "features as well as raw access to low-level protocols like TCP and UDP."
 msgstr ""
+"Godot의 지원하는 플랫폼 대부분은 앞서 언급한 하이 레벨과 로우 레벨 네트워킹 "
+"기능을 거의 전부 제공합니다. 그러나 네트워킹은 항상 하드웨어와 운영체제에 따"
+"라 크게 달라지므로, 일부 기능은 특정 플랫폼에서 달라지거나 이용할 수 없을지"
+"도 모릅니다. 가장 주목할 것으로, HTML5 플랫폼은 현재로써 오직 WebSocket 지원"
+"을 제공하고 하이 레벨 기능은 부족하고, TCP 및 UDP와 같은 로우 레벨 프로토콜"
+"로 원시 접근만 지원합니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:34
 msgid ""
 "More about TCP/IP, UDP, and networking: https://gafferongames.com/post/"
 "udp_vs_tcp/"
 msgstr ""
+"TCP/IP, UDP, 네트워킹에 더 알아보세요: https://gafferongames.com/post/"
+"udp_vs_tcp/"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:37
 msgid ""
@@ -114,6 +158,10 @@ msgid ""
 "gafferongames.com/post/"
 "what_every_programmer_needs_to_know_about_game_networking/>`__."
 msgstr ""
+"Gaffer On Games에는 게임의 네트워크에 관한 많은 유용한 기사가 있습니다 (`여기"
+"로 <https://gafferongames.com/tags/networking>`__). 기사 중에는 포괄적인 `게"
+"임에서 네트워킹 모델 소개 <https://gafferongames.com/post/"
+"what_every_programmer_needs_to_know_about_game_networking/>`__\\ 도 있습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:41
 msgid ""
@@ -121,6 +169,8 @@ msgid ""
 "Godot's built-in networking, see here for an example: https://github.com/"
 "PerduGames/gdnet3"
 msgstr ""
+"Godot의 내장 네트워킹 대신 로우 레벨 네트워킹 라이브러리를 쓰고 싶다면, 여기"
+"서 예제를 확인하세요: https://github.com/PerduGames/gdnet3"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:45
 msgid ""
@@ -130,6 +180,10 @@ msgid ""
 "application runs on and use your servers to send spam, attack others or "
 "steal your users data if they play your game."
 msgstr ""
+"게임에 네트워킹을 추가하는 일은 책임도 따릅니다. 이 작업은 애플리케이션이 잘"
+"못되어 사기나 착취에 취약해질 수 있습니다. 게다가 공격자가 실행 중인 애플리케"
+"이션의 시스템을 손상시키고, 서버를 통해 스팸을 보내거나, 다른 이를 공격하고, "
+"게임을 하고 있던 사용자 정보를 훔칠 수도 있습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:50
 msgid ""
@@ -137,10 +191,13 @@ msgid ""
 "with Godot. You can of course experiment, but when you release a networked "
 "application, always take care of any possible security concerns."
 msgstr ""
+"이 일은 네트워킹에 관련되어 있고 Godot와는 관련이 없는 경우입니다. 물론 시험"
+"을 해볼 수는 있지만, 네트워크가 연결된 애플리케이션을 출시하면, 가능한 보안 "
+"문제를 항상 관리하세요."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:55
 msgid "Mid level abstraction"
-msgstr ""
+msgstr "중급 추상화(Mid level abstraction)"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:57
 msgid ""
@@ -148,6 +205,8 @@ msgid ""
 "network, it can be helpful to understand how the base network API for "
 "synchronization works."
 msgstr ""
+"어떻게 네트워크를 통해 게임을 동기화할 지 알아보기 전에, 기본 네트워크 API가 "
+"어떻게 동기화에 작동하는지 이해하는 것이 좋습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:59
 msgid ""
@@ -155,6 +214,9 @@ msgid ""
 "<class_NetworkedMultiplayerPeer>`. This object is not meant to be created "
 "directly, but is designed so that several implementations can provide it:"
 msgstr ""
+"Godot는 중급(mid level) 객체로 :ref:`NetworkedMultiplayerPeer "
+"<class_NetworkedMultiplayerPeer>`\\ 를 사용합니다. 이 객체는 바로 네트워크를 "
+"만드는 것은 아니지만, 설계를 함으로써 여러 구현 기능을 제공합니다:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:64
 msgid ""
@@ -163,6 +225,10 @@ msgid ""
 "On top of that, it adds methods to set a peer, transfer mode, etc. It also "
 "includes signals that will let you know when peers connect or disconnect."
 msgstr ""
+"이 객체는 :ref:`PacketPeer <class_PacketPeer>`\\ 에서 확장됩니다. 따라서 직렬"
+"화(Serialize), 데이터 보내기 및 받기에 유용한 메서드를 갖습니다. 또한 피어"
+"(Peer), 전송 모드(Transfer Mode) 등을 설정하는 메소드를 추가합니다. 그리고 시"
+"그널을 갖고 있어 언제 피어가 연결되고 끊기는지 알 수 있습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:66
 msgid ""

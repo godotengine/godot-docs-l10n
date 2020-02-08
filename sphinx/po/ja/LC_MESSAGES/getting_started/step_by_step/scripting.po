@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,9 +53,9 @@ msgid ""
 msgstr ""
 "ただし、Godotの「主要な」言語はGDScriptとVisualScriptです。それらを選択する主"
 "な理由は、Godotとの統合レベルが高いからです。これにより、開発作業がよりスムー"
-"ズになります。どちらも洗練されたエディターと統合されています。一方、C＃とC +"
-"+は別のIDEで編集する必要があります。もしもあなたが静的に型付けされた言語の大"
-"ファンであれば、C＃とC ++を使用してください。"
+"ズになります。どちらも洗練されたエディタと統合されています。一方、C＃とC ++は"
+"別のIDEで編集する必要があります。もしもあなたが静的に型付けされた言語の大ファ"
+"ンであれば、C＃とC ++を使用してください。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
@@ -87,8 +87,8 @@ msgid ""
 "The editor integration is a pleasure to work with, with code completion for "
 "nodes, signals, and many other items pertaining to the scene being edited."
 msgstr ""
-"エディターの統合は、ノード、シグナル、および編集中のシーンに関連する他の多く"
-"の項目のコード補完を使用してくれるので作業するのが楽しいです。"
+"エディタの統合は、ノード、シグナル、および編集中のシーンに関連する他の多くの"
+"項目のコード補完を使用してくれるので作業するのが楽しいです。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:31
 msgid ""
@@ -440,8 +440,8 @@ msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
 msgstr ""
-"このチュートリアルの残りの部分ではコードを使用しますが、今後のためにエディ"
-"ターインターフェースがどのように機能するかについて説明します。"
+"このチュートリアルの残りの部分ではコードを使用しますが、今後のためにエディタ"
+"インターフェースがどのように機能するかについて説明します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:194
 msgid ""
@@ -524,9 +524,10 @@ msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "次に、ボタンを押したときに呼び出される関数を書きます:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
+#, fuzzy
 msgid ""
-"Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
-"ref:`Object.connect() <class_Object_method_connect>`."
+"Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
+"by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
 "最後に、\\ :ref:`Object.connect() <class_Object_method_connect>`\\ を使用し"
 "て、ボタンの「pressed」シグナルを\\ ``_ready()``\\ に接続します。"

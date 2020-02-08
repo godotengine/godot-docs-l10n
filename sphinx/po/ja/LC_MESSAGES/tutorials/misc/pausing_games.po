@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/pausing_games.rst:4
 msgid "Pausing games"
-msgstr ""
+msgstr "ゲームの一時停止"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:7
 msgid "Pause?"
-msgstr ""
+msgstr "一時停止？"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:9
 msgid ""
@@ -32,6 +32,10 @@ msgid ""
 "not as simple as it seems. The game might be stopped, but it might be "
 "desirable that some menus and animations continue working."
 msgstr ""
+"ほとんどのゲームでは、ある時点でゲームを中断して、休憩やオプションの変更な"
+"ど、他の何かを行うことが望ましいです。 しかし、これは見かけほど簡単ではありま"
+"せん。 ゲームは停止する場合がありますが、一部のメニューとアニメーションは引き"
+"続き動作することが望ましい場合があります。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:15
 msgid ""
@@ -39,10 +43,12 @@ msgid ""
 "not) is a lot of work, so a simple framework for pausing is provided in "
 "Godot."
 msgstr ""
+"一時停止できるもの(およびできないもの)をきめ細かく制御することは多くの作業で"
+"あるため、一時停止のためのシンプルなフレームワークがGodotで提供されています。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:20
 msgid "How pausing works"
-msgstr ""
+msgstr "一時停止の仕組み"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:22
 msgid ""
@@ -50,23 +56,26 @@ msgid ""
 "``true`` to the :ref:`SceneTree.paused <class_SceneTree_property_paused>` "
 "property:"
 msgstr ""
+"一時停止モードにするには、一時停止状態を設定する必要があります。これは :ref:"
+"`SceneTree.paused <class_SceneTree_property_paused>` プロパティに ``true`` を"
+"割り当てることで行われます:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:34
 msgid "Doing so will have the following behavior:"
-msgstr ""
+msgstr "これを行うと、次の動作が発生します:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:36
 msgid "2D and 3D physics will be stopped."
-msgstr ""
+msgstr "2Dおよび3Dの物理演算が停止します。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:37
 msgid ""
 "``_process`` and ``_physics_process`` will not be called anymore in nodes."
-msgstr ""
+msgstr "``_process`` と ``_physics_process`` はノードでもう呼び出されません。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:38
 msgid "``_input`` and ``_input_event`` will not be called anymore either."
-msgstr ""
+msgstr "``_input`` と ``_input_event`` ももう呼び出されません。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:40
 msgid ""
@@ -74,10 +83,12 @@ msgid ""
 "by default, will result in an unrecoverable state (nothing will work "
 "anymore!)."
 msgstr ""
+"これは効果的にゲーム全体を停止します。スクリプトからこの関数を呼び出すと、デ"
+"フォルトでは、回復不能な状態になります(もう何も動作しません！)。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:45
 msgid "White-listing nodes"
-msgstr ""
+msgstr "ホワイトリストノード"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:47
 msgid ""
@@ -85,10 +96,13 @@ msgid ""
 "pause are white-listed. This is done by editing the \"Pause Mode\" property "
 "in a node:"
 msgstr ""
+"一時停止を有効にする前に、一時停止中も機能し続ける必要があるノードがホワイト"
+"リストに登録されていることを確認してください。これを行うには、ノードの "
+"\"Pause Mode\" プロパティを編集します:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:53
 msgid "You can achieve the same result in code:"
-msgstr ""
+msgstr "コードで同じ結果を得ることができます:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:62
 msgid ""
@@ -100,28 +114,40 @@ msgid ""
 "This means that, by default, when the game is paused every node will be "
 "paused."
 msgstr ""
+"デフォルトでは、すべてのノードに \"Inherit(継承)\" 状態のこのプロパティがあり"
+"ます。つまり、親ノードに設定されている同じプロパティに応じて処理する (または"
+"処理しない) ことを意味します。親が \"Inherit\" に設定されている場合、祖父母が"
+"チェックされます。最終的に、いずれかの祖先に状態が見つからない場合、SceneTree"
+"の一時停止状態が使用されます。これは、デフォルトでは、ゲームが一時停止する"
+"と、すべてのノードが一時停止することを意味します。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:70
 msgid "So the three possible states for a node are:"
-msgstr ""
+msgstr "したがって、ノードの3つの可能な状態は次のとおりです:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:72
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
 "The first parent that has a non-Inherit state."
 msgstr ""
+"**Inherit(継承)**: 親、祖父母などの状態に応じたプロセス。最初の親は非継承状態"
+"を持っている。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:74
 msgid ""
 "**Stop**: Stop the node no matter what (and children in Inherit mode). When "
 "paused this node will not process."
 msgstr ""
+"**Stop(停止)**: 無条件にノードを停止します(Inherit モードの子も)。一時停止す"
+"ると、このノードはもう処理されません。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:76
 msgid ""
 "**Process**: Process the node no matter what (and children in Inherit mode). "
 "Paused or not this node will process."
 msgstr ""
+"** Process(処理)**: 無条件にノードを処理します(Inherit モードのも)。このノー"
+"ドは一時停止中か否かを問わず処理されます。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:80
 msgid "Example"
@@ -132,6 +158,8 @@ msgid ""
 "An example of this is creating a popup or panel with controls inside, and "
 "set its pause mode to \"Process\" then hide it:"
 msgstr ""
+"この例は、内部にコントロールを持つポップアップまたはパネルを作成し、一時停止"
+"モードを \"Process\" に設定してから非表示にします:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:87
 msgid ""
@@ -139,17 +167,23 @@ msgid ""
 "grandchildren will inherit that state. This way, this branch of the scene "
 "tree will continue working when paused."
 msgstr ""
+"一時停止ポップアップのルートを \"Process\" に設定するだけで、すべての子と孫が"
+"その状態を継承します。この場合、シーンツリーのこのブランチは、一時停止しても"
+"機能し続けます。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:91
 msgid ""
 "Finally, make it so when a pause button is pressed (any button will do), "
 "enable the pause and show the pause screen."
 msgstr ""
+"最後に、一時停止ボタンが押されたとき(どのボタンでも実行可能)、一時停止を有効"
+"にして一時停止画面を表示するようにします。"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:109
 msgid "To remove the pause, do the opposite when the pause screen is closed:"
 msgstr ""
+"一時停止を解除するには、一時停止画面が閉じているときに反対の操作を行います:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:127
 msgid "And that should be all!"
-msgstr ""
+msgstr "そして、これですべてです！"

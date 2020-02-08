@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,15 +32,14 @@ msgstr ""
 "mundo do Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:15
-#, fuzzy
 msgid ""
 "This article talks about older versions of Unity. Nestable prefabs ('Nested "
 "prefabs') were added to Unity 2018.3. Nestable prefabs are analogous to "
 "Godot's scenes, and allow a more Godot-like approach to scene organisation."
 msgstr ""
-"Este artigo fala sobre as versões antigas da Unity. Prefabs aninhados "
+"Este artigo fala sobre versões mais antigas da Unity. Prefabs aninhados "
 "('Nested prefabs') foram adicionados a Unity 2018.3. Prefabs aninhados são "
-"análogos as cenas da Godot, e permitem uma abordagem mais parecida com Godot "
+"análogos às cenas da Godot, e permitem uma abordagem mais parecida com Godot "
 "na organização das cenas."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
@@ -107,8 +106,8 @@ msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
 "HoloLens"
 msgstr ""
-"**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
-"HoloLens"
+"**Realidade virtual:** Oculus Rift, SteamVR, Google Cardboard, Playstation "
+"VR, Gear VR, HoloLens"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "**TV:** Android TV, Samsung SMART TV, tvOS"
@@ -132,7 +131,7 @@ msgstr "**Console:** Ver :ref:`doc_consoles`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
 msgid "**VR:** Oculus Rift, SteamVR"
-msgstr "**VR:** Oculus Rift, SteamVR"
+msgstr "**Realidade virtual:** Oculus Rift, SteamVR"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid "Scene system"
@@ -204,18 +203,16 @@ msgid "The editor"
 msgstr "O editor"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:52
-#, fuzzy
 msgid ""
 "Godot Engine provides a rich-featured editor that allows you to build your "
 "games. The pictures below display the default layouts of both editors with "
 "colored blocks to indicate common functionalities."
 msgstr ""
-"A Godot Engine fornece um editor rico em recursos que lhe permitem construir "
+"A Godot Engine fornece um editor rico em recursos que lhe permite construir "
 "seus jogos. As imagens abaixo exibem os dois editores com blocos coloridos "
-"para indicar funcionalidades comuns."
+"para indicar funcionalidades em comum."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:58
-#, fuzzy
 msgid ""
 "While both editors may seem similar, there are many differences below the "
 "surface. Both let you organize the project using the filesystem, but Godot's "
@@ -225,25 +222,23 @@ msgid ""
 msgstr ""
 "Embora ambos os editores possam parecer semelhantes, há muitas diferenças "
 "por trás. Ambos permitem organizar o projeto usando o sistema de arquivos, "
-"mas a abordagem da Godot é mais simples, com um único arquivo de "
+"mas a abordagem da Godot é mais simples com um único arquivo de "
 "configuração, formato de texto minimalista e nenhum metadado. Tudo isso "
 "contribui para a Godot ser muito mais amigável para sistemas VCS, como Git, "
 "Subversion ou Mercurial."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:63
-#, fuzzy
 msgid ""
 "Godot's Scene panel is similar to Unity's Hierarchy panel but, as each node "
 "has a specific function, the approach used by Godot is more visually "
 "descriptive. It's easier to understand what a scene does at a glance."
 msgstr ""
-"O painel Scene da Godot é semelhante ao painel Hierarquia da Unity, mas, "
-"como cada nó tem uma função específica, a abordagem usada pela Godot é mais "
-"visualmente descritiva. Em outras palavras, é mais fácil entender o que uma "
-"cena específica faz de relance."
+"O painel Cena da Godot é semelhante ao painel Hierarquia da Unity, mas, como "
+"cada nó tem uma função específica, a abordagem usada pela Godot é mais "
+"visualmente descritiva. É mais fácil entender o que uma cena específica faz "
+"de relance."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:67
-#, fuzzy
 msgid ""
 "The Inspector in Godot is more minimal, it shows only properties. Thanks to "
 "this, objects can expose more useful parameters to the user without having "
@@ -252,30 +247,28 @@ msgid ""
 "or even links to resources in real-time is possible without needing to write "
 "code."
 msgstr ""
-"O inspetor na Godot é mais minimalista e projetado para mostrar apenas "
-"propriedades. Graças a isso, os objetos podem exportar uma quantidade muito "
-"maior de parâmetros úteis para o usuário sem precisar ocultar a "
-"funcionalidade nas APIs de idioma. Como um acréscimo, Godot permite a "
-"animação visualmente de qualquer uma dessas propriedades, portanto é "
-"possível alterar cores, texturas, enumerações ou mesmo links para recursos "
-"em tempo real sem envolver código."
+"O inspetor na Godot é mais minimalista, mostrando apenas propriedades. "
+"Graças a isso, os objetos podem expor uma quantidade muito maior de "
+"parâmetros úteis para o usuário sem precisar ocultar a funcionalidade nas "
+"APIs da linguagem. Como um acréscimo, Godot permite a animação visual de "
+"qualquer uma dessas propriedades, portanto é possível alterar cores, "
+"texturas, enumerações ou mesmo links para recursos em tempo real sem "
+"envolver código."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:72
-#, fuzzy
 msgid ""
 "The Toolbar at the top of the screen is similar in both editors, offering "
 "control over project playback. Projects in Godot run in a separate window, "
 "rather than inside the editor (but the tree and objects can still be "
 "explored in the debugger window)."
 msgstr ""
-"Finalmente, a barra de ferramentas na parte superior da tela é semelhante no "
-"sentido de permitir o controle da reprodução do projeto, mas os projetos na "
-"Godot são executados em uma janela separada, pois não são executados no "
-"editor (mas a árvore e os objetos ainda podem ser explorados na janela do "
+"A barra de ferramentas na parte superior da tela é semelhante no sentido de "
+"permitir o controle da reprodução do projeto, mas os projetos na Godot são "
+"executados em uma janela separada ao invés de serem executados no editor "
+"(mas a árvore e os objetos ainda podem ser explorados na janela do "
 "depurador)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:76
-#, fuzzy
 msgid ""
 "This approach has the disadvantage that in Godot the running game can't be "
 "explored from different angles (though this may be supported in the future "
@@ -284,7 +277,7 @@ msgid ""
 msgstr ""
 "Esta abordagem tem a desvantagem de que o jogo em execução não pode ser "
 "explorado de diferentes ângulos (embora isso possa ser suportado no futuro e "
-"exibir dispositivos de colisão no jogo em execução já seja possível), mas em "
+"exibir dispositivos de colisão no jogo em execução já é possível), mas em "
 "troca tem várias vantagens:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:80
@@ -313,7 +306,6 @@ msgstr ""
 "O editor é mais estável porque o jogo é executado em um processo separado."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:84
-#, fuzzy
 msgid ""
 "Finally, Godot's top toolbar includes a menu for remote debugging. These "
 "options allow deployment to a device (connected phone, tablet, or browser "
@@ -321,24 +313,22 @@ msgid ""
 msgstr ""
 "Finalmente, a barra de ferramentas superior inclui um menu para depuração "
 "remota. Essas opções simplificam a implantação em um dispositivo (telefone "
-"conectado, tablet ou navegador via HTML5) e a edição de depuração / edição "
-"ao vivo após a exportação do jogo."
+"conectado, tablet ou navegador via HTML5), e a edição de depuração/edição ao "
+"vivo após a exportação do jogo."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:89
 msgid "The scene system"
 msgstr "O sistema de cena"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:91
-#, fuzzy
 msgid ""
 "This is the most important difference between Unity and Godot and the "
 "favourite feature of most Godot users."
 msgstr ""
-"Esta é a diferença mais importante entre a Unity e a Godot, na verdade, a "
+"Esta é a diferença mais importante entre a Unity e a Godot e a "
 "característica favorita da maioria dos usuários da Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:93
-#, fuzzy
 msgid ""
 "Working on a 'level' in Unity usually means embedding all the required "
 "assets in a scene and linking them together with components and scripts."
@@ -348,7 +338,6 @@ msgstr ""
 "eles."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:96
-#, fuzzy
 msgid ""
 "Godot's scene system is superficially similar to Unity. A 'level' consists "
 "of a collection of nodes, each with its own purpose: Sprite, Mesh, Light, "
@@ -357,12 +346,12 @@ msgid ""
 "you can compose a whole scene with different scenes stored in different "
 "files."
 msgstr ""
-"O sistema de cena da Godot é diferente: na verdade consiste em uma árvore "
-"feita de nós. Cada nó serve a um propósito: Sprite, Malha, Luz, etc. "
-"Basicamente, isso é semelhante ao sistema de cena da Unity. No entanto, cada "
-"nó pode ter vários filhos, o que torna cada um sub-cena da cena principal. "
-"Isso significa que você pode compor uma cena inteira com cenas diferentes "
-"armazenadas em arquivos diferentes."
+"O sistema de cena da Godot é parecido superficialmente com a da Unity. Um "
+"'nível' consiste de uma coleção de nós, cada um com um propósito: Sprite, "
+"Malha, Luz, etc. No entanto, os nós da Godot são organizados em forma de "
+"árvore. Cada nó pode ter vários filhos, o que torna cada um sub-cena da cena "
+"principal. Isso significa que você pode compor uma cena inteira com cenas "
+"diferentes armazenadas em arquivos diferentes."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:99
 msgid ""
@@ -406,56 +395,50 @@ msgstr ""
 "na Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:111
-#, fuzzy
 msgid ""
 "In Godot, you would split your whole scene into three separate, smaller "
 "scenes, and instance them in the main scene."
 msgstr ""
-"Na Godot, você dividiria toda a sua cena em três cenas menores e menores, "
-"que você veria na cena principal."
+"Na Godot, você dividiria toda a sua cena em três cenas separadas e menores, "
+"que você instanciaria na cena principal."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:113
-#, fuzzy
 msgid "**A scene for the Player alone.**"
-msgstr "**Primeiro, uma cena para o Jogador sozinho.**"
+msgstr "**Uma cena para o Jogador sozinho.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:115
-#, fuzzy
 msgid ""
 "Consider the player as an element we'd like to use in different parent "
 "scenes (for instance 'level' scenes). In our case, the player element needs "
 "at least an AnimatedSprite node. This node contains the sprite textures "
 "necessary for various animations (for example, a walking animation)."
 msgstr ""
-"Considere o jogador como um elemento reutilizável em outros níveis. É "
-"composto de um nó em particular: um nó AnimatedSprite, que contém as "
-"texturas do sprite para formar várias animações (por exemplo, animação "
-"andando)"
+"Considere o jogador como um elemento reutilizável em outros níveis. Em nosso "
+"caso, o elemento de jogador precisa pelo menos de um nó AnimatedSprite. Este "
+"nó contém as texturas do sprite necessárias para formar várias animações "
+"(por exemplo, animação de andar)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:117
-#, fuzzy
 msgid "**A scene for the Enemy.**"
-msgstr "**Segundo, uma cena para o Inimigo.**"
+msgstr "**Uma cena para o Inimigo.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:119
-#, fuzzy
 msgid ""
 "An enemy is also an element we'd like to use in several scenes. It's almost "
 "the same as the Player node. The only differences are the script (it needs "
 "'AI' routines to generate the enemy's behaviour) and the sprite textures "
 "used by the AnimatedSprite node."
 msgstr ""
-"Novamente, um inimigo é um elemento reutilizável em outros níveis. É quase o "
-"mesmo que o nó do Player - as únicas diferenças são o script (que gerencia "
-"AI, principalmente) e as texturas de sprites usadas pelo AnimatedSprite."
+"Um inimigo também é um elemento que queremos reutilizar em outros níveis. É "
+"quase o mesmo que o nó do Player. As únicas diferenças são o script (que "
+"precisa de 'AI' para gerar o comportamento do inimigo) e as texturas de "
+"sprites usadas pelo nó AnimatedSprite."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:123
-#, fuzzy
 msgid "**A Level scene.**"
-msgstr "**Por último, a cena do Nível.**"
+msgstr "**Uma cena de nível.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:125
-#, fuzzy
 msgid ""
 "A Level scene is composed of Bricks (for platforms), Coins (for the player "
 "to collect) and a number of instances of the Enemy scene. Each instance is a "
@@ -464,15 +447,14 @@ msgid ""
 "scene. You can set different properties for each Enemy node (to change its "
 "color, for example)."
 msgstr ""
-"Ele é composto de Bricks (para plataformas), Coins (para o jogador pegar) e "
-"um certo número de instâncias da cena anterior do Inimigo. Estes serão "
-"inimigos distintos, separados, cujo comportamento e aparência serão os "
-"mesmos definidos na cena Inimigo. Cada instância é então considerada como um "
-"nó na árvore de cena de Level. Naturalmente, você pode definir propriedades "
-"diferentes para cada nó do Inimigo (para alterar sua cor, por exemplo)."
+"Uma cena de nível é composta de Bricks (para plataformas), Coins (para o "
+"jogador pegar) e um certo número de instâncias da cena anterior do Inimigo. "
+"Cada instância é considerada como um nó na árvore de cena de Level. Estes "
+"serão inimigos distintos, separados, cujo comportamento e aparência serão os "
+"mesmos definidos na cena Inimigo. Você pode definir propriedades diferentes "
+"para cada nó do Inimigo (para alterar sua cor, por exemplo)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:129
-#, fuzzy
 msgid ""
 "4. **A Main scene.** The Main scene would be composed of one root node with "
 "2 children: a Player instance node, and a Level instance node. The root node "
@@ -481,15 +463,14 @@ msgid ""
 "\"Spatial\" (root type of all 3D-related nodes) or \"Control\" (root type of "
 "all GUI-related nodes)."
 msgstr ""
-"Finalmente, a cena principal seria composta de um nó raiz com 2 filhos: um "
-"nó de instância do Player e um nó de instância do Nível. O nó raiz pode ser "
-"qualquer coisa, geralmente um tipo \"raiz\" como \"Nó\", que é o tipo mais "
-"global, ou \"Node2D\" (tipo raiz de todos os nós relacionados a 2D), "
-"\"Espacial\" (tipo raiz de todos os 3D- nós relacionados) ou \"Control"
-"\" (tipo de raiz de todos os nós relacionados à GUI)."
+"4. **Uma cena principal.** A cena principal seria composta de um nó raiz com "
+"2 filhos: um nó de instância do Player e um nó de instância do Nível. O nó "
+"raiz pode ser qualquer coisa, geralmente um tipo \"raiz\" como \"Node\", que "
+"é o tipo mais global, ou \"Node2D\" (tipo raiz de todos os nós relacionados "
+"a 2D), \"Espacial\" (tipo raiz de todos os nós relacionados a 3D) ou "
+"\"Control\" (tipo raiz de todos os nós relacionados à GUI)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:135
-#, fuzzy
 msgid ""
 "As you can see, every scene is organized as a tree. The same goes for nodes' "
 "properties: you don't *add* a collision component to a node to make it "
@@ -506,30 +487,27 @@ msgstr ""
 "`Introdução à física <doc_physics_introduction>`)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:140
-#, fuzzy
 msgid ""
 "What are the advantages of this system? Wouldn't this system potentially "
 "increase the depth of the scene tree? And doesn't Unity already allow you to "
 "organize GameObjects by putting them inside empty GameObjects?"
 msgstr ""
-"Pergunta: Quais são as vantagens deste sistema? Esse sistema não aumentaria "
-"potencialmente a profundidade da árvore de cena? Além disso, a Unity permite "
-"organizar GameObjects colocando-os em GameObjects vazios."
+"Quais são as vantagens deste sistema? Esse sistema não aumentaria "
+"potencialmente a profundidade da árvore de cena? Além disso, a Unity não te "
+"permite organizar GameObjects colocando-os em GameObjects vazios?"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:142
-#, fuzzy
 msgid ""
 "Godot's system is closer to the well-known object-oriented paradigm: Godot "
 "provides a number of nodes which are not clearly \"Game Objects\", but they "
 "provide their children with their own capabilities: this is inheritance."
 msgstr ""
 "Em primeiro lugar, este sistema está mais próximo do paradigma bem conhecido "
-"orientado a objetos: Godot fornece um número de nós que não são claramente "
-"\"Objetos de Jogo\", mas eles fornecem seus filhos com suas próprias "
-"capacidades: isto é herança."
+"da orientação a objetos: Godot fornece um número de nós que não são "
+"claramente \"Objetos de Jogo\", mas eles fornecem seus filhos com suas "
+"próprias capacidades: isto é herança."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:143
-#, fuzzy
 msgid ""
 "Godot allows the extraction of a subtree of a scene to make it a scene of "
 "its own. So if a scene tree gets too deep, it can be split into smaller "
@@ -537,29 +515,26 @@ msgid ""
 "a child of any node. Putting multiple GameObjects in an empty GameObject in "
 "Unity does not provide the same functionality."
 msgstr ""
-"Segundo, permite a extração de uma sub-árvore de cena para torná-la uma cena "
-"própria, que responde à segunda e à terceira pergunta: mesmo que uma árvore "
-"de cena fique muito profunda, ela pode ser dividida em sub-árvores menores. "
-"Isso também permite uma solução melhor para a capacidade de reutilização, já "
-"que você pode incluir qualquer sub-árvore como filho de qualquer nó. Colocar "
-"vários nós em um GameObject vazio na Unity não oferece a mesma "
-"possibilidade, além de uma organização visual."
+"Godot permite a extração de uma sub-árvore de cena para torná-la uma cena "
+"própria. Então mesmo que uma árvore de cena fique muito profunda, ela pode "
+"ser dividida em sub-árvores menores. Isso é melhor para a capacidade de "
+"reutilização, já que você pode incluir qualquer sub-árvore como filho de "
+"qualquer nó. Colocar vários GameObjects em um GameObject vazio na Unity não "
+"oferece a mesma possibilidade."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:146
 msgid "Project organization"
 msgstr "Organização do projeto"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:150
-#, fuzzy
 msgid ""
 "There is no perfect project architecture. Any architecture can be made to "
 "work in either Unity and Godot."
 msgstr ""
-"Não existe arquitetura de projeto perfeita. Quaquer arquitetura pode "
+"Não existe arquitetura de projeto perfeita. Qualquer arquitetura pode "
 "funcionar para ambas Unity e Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:153
-#, fuzzy
 msgid ""
 "However, a common architecture for Unity projects is to have one Assets "
 "folder in the root directory that contains various folders, one per type of "
@@ -567,29 +542,26 @@ msgid ""
 msgstr ""
 "No entanto, frequentemente observamos uma arquitetura comum para projetos "
 "Unity, que consiste em ter uma pasta Assets no diretório raiz que contém "
-"várias pastas, uma por tipo de ativo: Áudio, Gráficos, Modelos, Materiais, "
+"várias pastas, uma por tipo de recurso: Áudio, Gráficos, Modelos, Materiais, "
 "Scripts, Cenas, etc."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:156
-#, fuzzy
 msgid ""
 "Since Godot allows splitting scenes into smaller scenes, each scene and "
 "subscene existing as a file in the project, we recommend organizing your "
 "project a bit differently. This wiki provides a page for this: :ref:"
 "`doc_project_organization`."
 msgstr ""
-"Como descrito anteriormente, o sistema de cenas da Godot permite dividir as "
-"cenas em cenas menores. Como cada cena é uma sub-cena, na verdade, um "
-"arquivo de cena no projeto, recomendamos que você organize seu projeto de "
-"maneira um pouco diferente. Este wiki fornece uma página para isto:: ref: "
-"`doc_project_organization`."
+"Como o sistema de cenas da Godot permite dividir as cenas em cenas menores, "
+"cada cena e sub-cena existindo como um arquivo de cena no projeto, "
+"recomendamos que você organize seu projeto de maneira um pouco diferente. "
+"Esta wiki fornece uma página para isto: :ref:`doc_project_organization`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:161
 msgid "Where are my prefabs?"
 msgstr "Onde estão meus prefabs?"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:163
-#, fuzzy
 msgid ""
 "A prefab as provided by Unity is a 'template' element of the scene. It is "
 "reusable, and each instance of the prefab that exists in the scene has an "
@@ -602,7 +574,6 @@ msgstr ""
 "prefab."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:167
-#, fuzzy
 msgid ""
 "Godot does not provide prefabs as such, but the same functionality is "
 "provided by its scene system: The scene system is organized as a tree. Godot "
@@ -613,16 +584,14 @@ msgid ""
 "impact on the 'template' scene."
 msgstr ""
 "Godot não fornece prefabs como tal, mas esta funcionalidade está aqui, "
-"novamente, preenchida graças ao seu sistema de cena: Como vimos, o sistema "
-"de cena é organizado como uma árvore. Godot permite que você salve uma sub-"
-"árvore de uma cena como sua própria cena, assim salva em seu próprio "
-"arquivo. Essa nova cena pode ser instanciada quantas vezes você quiser. "
-"Qualquer alteração que você fizer nessa cena nova e separada será aplicada a "
-"suas instâncias. No entanto, qualquer alteração feita na instância não terá "
-"impacto na cena \"modelo\"."
+"graças ao seu sistema de cena: O sistema de cena é organizado como uma "
+"árvore. Godot permite que você salve uma sub-árvore de uma cena como seu "
+"próprio arquivo de cena. Essa nova cena pode ser instanciada quantas vezes "
+"você quiser. Qualquer alteração que você fizer nessa cena nova e separada "
+"será aplicada a suas instâncias. No entanto, qualquer alteração feita na "
+"instância não terá impacto na cena \"modelo\"."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:174
-#, fuzzy
 msgid ""
 "To be precise, you can modify the parameters of an instance in the Inspector "
 "panel. The nodes that compose this instance are initially locked. You can "
@@ -634,13 +603,13 @@ msgid ""
 "add them in the 'template' scene."
 msgstr ""
 "Para ser preciso, você pode modificar os parâmetros da instância no painel "
-"Inspetor. No entanto, os nós que compõem essa instância são bloqueados, "
-"embora você possa desbloqueá-los se precisar clicando com o botão direito do "
-"mouse na árvore Scene e selecionando \"Editable children\" no menu. Você não "
-"precisa fazer isso para adicionar novos nós filhos a esse nó, mas é "
-"possível. Lembre-se de que esses novos filhos pertencerão à instância, não à "
-"cena \"modelo\". Se você quiser adicionar novos filhos a todas as instâncias "
-"da sua cena de 'modelo', você precisa adicioná-los na cena 'modelo'."
+"Inspetor. Os nós que compõem essa instância são bloqueados inicialmente. "
+"Você pode desbloqueá-los, se precisar, clicando com o botão direito do mouse "
+"na instância e selecionando \"Filhos Editáveis\" no menu. Você não precisa "
+"fazer isso para adicionar *novos* nós filhos a esse nó, mas lembre-se de que "
+"esses novos filhos pertencerão à instância, não à cena \"modelo\" salva no "
+"disco. Se você quiser adicionar novos filhos a todas as instâncias da sua "
+"cena de 'modelo', você precisa adicioná-los na cena 'modelo'."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:184
 msgid "Glossary correspondence"
@@ -667,17 +636,14 @@ msgid "Design"
 msgstr "Design"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
-#, fuzzy
 msgid ""
 "Unity supports C#. C# benefits from its integration with Visual Studio and "
 "has desirable features such as static typing."
 msgstr ""
-"Como você já deve saber, a Unity suporta o C #. O C # se beneficia da "
-"integração com o Visual Studio e de outros recursos, como a digitação "
-"estática."
+"A Unity suporta o C#. O C# se beneficia da integração com o Visual Studio e "
+"de outros recursos, como os tipos estáticos."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:199
-#, fuzzy
 msgid ""
 "Godot provides its own scripting language, :ref:`GDScript <doc_scripting>` "
 "as well as support for :ref:`Visual Script <toc-learn-scripting-"
@@ -688,14 +654,14 @@ msgid ""
 "take long to learn: Between one evening for an experienced programmer and a "
 "week for a complete beginner."
 msgstr ""
-"Godot fornece sua própria linguagem de script, ref: `GDScript "
-"<doc_scripting>` bem como suporte para: ref: `Visual Script <toc-learn-"
-"scripting-visual_script> e: ref:` doc_c_sharp`. O GDScript empresta sua "
+"Godot fornece sua própria linguagem de script, :ref:`GDScript "
+"<doc_scripting>` bem como suporte para :ref:`Visual Script <toc-learn-"
+"scripting-visual_script>` e :ref:`C# <doc_c_sharp>`. O GDScript empresta sua "
 "sintaxe do Python, mas não está relacionado a ele. Se você quer saber sobre "
-"o raciocínio para uma linguagem de script customizada, por favor leia: ref: "
-"`GDScript <doc_gdscript>` e `FAQ <faq>` _ pages. GDScript é fortemente "
-"ligado à API de Godot e é realmente fácil de aprender: Entre uma noite para "
-"um programador experiente e uma semana para um iniciante completo."
+"por que é usada uma linguagem de script customizada, por favor leia :ref:"
+"`GDScript <doc_gdscript>` e :ref:`FAQ <doc_faq>`. GDScript é fortemente "
+"ligado à API de Godot e não demora para aprender: Entre uma noite para um "
+"programador experiente e uma semana para um iniciante completo."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:205
 msgid ""
@@ -730,7 +696,6 @@ msgstr ""
 "script a esse novo nó."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:214
-#, fuzzy
 msgid ""
 "or, you can split your target node into multiple children and attach one "
 "script to each of them."
@@ -739,50 +704,43 @@ msgstr ""
 "cada um deles."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:216
-#, fuzzy
 msgid ""
 "As you can see, it can be easy to turn a scene tree to a mess. Consider "
 "splitting any complicated scene into multiple, smaller branches."
 msgstr ""
-"Como você pode ver, pode ser fácil transformar uma cena em uma bagunça. É "
-"por isso que é importante ter uma reflexão real e considerar a divisão de "
-"uma cena complicada em vários ramos menores."
+"Como você pode ver, pode ser fácil transformar uma cena em uma bagunça. "
+"Considere dividir uma cena complicada em vários ramos menores."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:219
 msgid "Connections: groups and signals"
 msgstr "Conexões: grupos e sinais"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:221
-#, fuzzy
 msgid ""
 "You can control nodes by accessing them via script and calling built-in or "
 "user-defined functions on them. You can also place nodes in a group and call "
 "functions on all nodes in this group. See more in the :ref:`scripting "
 "documentation <doc_scripting_continued>`."
 msgstr ""
-"Você pode controlar os nós, acessando-os usando um script e chamando funções "
-"(built-in ou definidos pelo usuário) sobre eles. Mas há mais: você também "
-"pode colocá-los em um grupo e chamar uma função em todos os nós contidos "
-"neste grupo! Isto é explicado em: ref: `this page <doc_scripting_continued>`."
+"Você pode controlar nós acessando-os usando um script e chamando funções "
+"embutidas ou definidas pelo usuário neles. Você também pode colocar nós em "
+"um grupo e chamar uma função em todos os nós contidos neste grupo. Isto é "
+"explicado na :ref:`documentação sobre scripting <doc_scripting_continued>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:226
-#, fuzzy
 msgid ""
 "Nodes can send a signal when a specified action occurs. A signal can be set "
 "to call any function. You can define custom signals and specify when they "
 "are triggered. See more in the :ref:`signals documentation "
 "<doc_gdscript_signals>`."
 msgstr ""
-"Mas tem mais! Alguns nós emitem sinais quando certas ações ocorrem. Você "
-"pode conectar esses sinais para chamar uma função específica quando eles "
-"acontecerem. Note que você pode definir seus próprios sinais e enviá-los "
-"sempre que quiser. Esse recurso está documentado `here <gdscript.html # "
-"signals>` _."
+"Nós podem emitir sinais quando certas ações ocorrem. Você pode conectar "
+"esses sinais para chamar uma função específica quando eles acontecem. Veja "
+"mais na :ref:`documentação sobre sinais <doc_gdscript_signals>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:231
-#, fuzzy
 msgid "Script serialization"
-msgstr "Animação por Sprites"
+msgstr "Serialização de scripts"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
 msgid "Unity can handle script serialization in two ways:"
@@ -802,7 +760,7 @@ msgid ""
 "attribute."
 msgstr ""
 "Explicito: Campos não públicos podem ser serializados usando o atributo "
-"``[SerializarCampo] ``."
+"``[SerializeField] ``."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:238
 msgid ""
@@ -814,10 +772,10 @@ msgid ""
 msgstr ""
 "Godot também possui um sistema de serialização de scripts embutido, mas "
 "funciona apenas explicitamente. Você pode serializar qualquer tipo "
-"serializável (: ref: `built-in e vários tipos de mecanismos "
-"<doc_binary_serialization_api>`, incluindo: ref: `class_Array` e: ref:` "
-"class_dictionary`) usando a palavra-chave `` export``. Veja a: ref: "
-"`documentação de exportações <doc_gdscript_exports>` para detalhes."
+"serializável (:ref: `embutidos e vários tipos da engine "
+"<doc_binary_serialization_api>`, incluindo :ref: `class_Array` e :ref:"
+"`class_Dictionary`) usando a palavra-chave ``export``. Veja a :ref: "
+"`documentação sobre exportações <doc_gdscript_exports>` para detalhes."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:243
 msgid ""
@@ -828,34 +786,33 @@ msgid ""
 "information about resources can be found :ref:`here <doc_resources>`."
 msgstr ""
 "Unity também tem um tipo de dados chamado `` ScriptableObject`` usado para "
-"serializar objetos de ativos personalizados. Seu equivalente em Godot é a "
-"classe base para todos os recursos:: ref: `class_Resource`. Criar um script "
-"que herda: ref: `class_Resource` permitirá que você crie objetos "
+"serializar objetos de recursos personalizados. Seu equivalente em Godot é a "
+"classe base para todos os recursos: :ref:`class_Resource`. Criar um script "
+"que herda :ref:`class_Resource` permitirá que você crie objetos "
 "serializáveis personalizados. Mais informações sobre recursos podem ser "
-"encontradas: ref: `here <doc_resources>`."
+"encontradas :ref:`aqui <doc_resources>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:248
 msgid "Using Godot in C++"
-msgstr "Usando Godot com C ++"
+msgstr "Usando Godot em C++"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:250
-#, fuzzy
 msgid ""
 "Godot allows you to develop your project directly in C++ by using its API, "
 "which is not possible with Unity at the moment. As an example, you can "
 "consider Godot Engine's editor as a \"game\" written in C++ using the Godot "
 "API."
 msgstr ""
-"Para sua informação, Godot também permite que você desenvolva seu projeto "
-"diretamente em C ++ usando sua API, o que não é possível com a Unity no "
-"momento. Como exemplo, você pode considerar o editor do Godot Engine como um "
-"\"jogo\" escrito em C ++ usando a Godot API."
+"Godot permite que você desenvolva seu projeto diretamente em C++ usando sua "
+"API, o que não é possível com a Unity no momento. Como exemplo, você pode "
+"considerar o editor da Godot Engine como um \"jogo\" escrito em C ++ usando "
+"a API da Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:253
 msgid ""
 "If you are interested in using Godot in C++, you may want to start reading "
 "the :ref:`Developing in C++ <doc_introduction_to_godot_development>` page."
 msgstr ""
-"Se você estiver interessado em usar Godot com C ++, você pode querer começar "
-"a ler a página: ref: `Desenvolvendo em C ++ "
+"Se você estiver interessado em usar Godot com C++, você pode querer começar "
+"a ler a página :ref:`Desenvolvendo em C++ "
 "<doc_introduction_to_godot_development>`."

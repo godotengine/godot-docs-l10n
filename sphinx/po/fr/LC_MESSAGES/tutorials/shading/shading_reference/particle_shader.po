@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,11 @@ msgid ""
 "color, position, and rotation. They are drawn with any regular material for "
 "CanvasItem or Spatial, depending on whether they are 2D or 3D."
 msgstr ""
+"Les shaders de particules sont un type spécial de vert shader qui s'exécute "
+"avant que l'objet ne soit dessiné. Ils sont utilisés pour calculer les "
+"propriétés des matériaux telles que la couleur, la position et la rotation. "
+"Ils sont dessinés avec n'importe quel matériau de base de CanvasItem ou "
+"Spatial, selon qu'ils sont 2D ou 3D."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:11
 msgid ""
@@ -36,6 +41,11 @@ msgid ""
 "by the CanvasItem of Spatial shader. They contain only a vertex processor "
 "function that outputs multiple properties (see built-ins below)."
 msgstr ""
+"Les shaders de particules sont uniques car ils ne sont pas utilisés pour "
+"dessiner l'objet lui-même. Ils sont utilisés pour calculer les propriétés "
+"des particules, qui sont ensuite utilisées par le shader du CanvasItem ou du "
+"Spatial. Ils ne contiennent qu'une fonction de processeur de sommet qui a "
+"plusieurs propriétés en sortie (voir les propriétés intégrées ci-dessous)."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:16
 msgid ""
@@ -47,12 +57,24 @@ msgid ""
 "shaders that discard the data they have calculated once they draw to the "
 "frame buffer."
 msgstr ""
+"Les shaders de particules utilisent un shader de feedback de transformation, "
+"qui est un type spécial de vertex shader qui fonctionne tout seul. Il prend "
+"les données d'entrée dans un tampon comme le fait un vertex shader "
+"ordinaire, mais il sort également les données vers un tampon au lieu de les "
+"envoyer vers le fragment shader pour le traitement des pixels. Pour cette "
+"raison, les shaders de feedback de transformation peuvent s'appuyer sur eux-"
+"mêmes à chaque exécution, contrairement aux autres shaders qui rejettent les "
+"données qu'ils ont calculées une fois qu'ils dessinent dans le tampon de "
+"trame."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:23
 msgid ""
 "Particle shaders are only available in the GLES3 backend. If you need "
 "particles in GLES2, use :ref:`CPUParticles <class_CPUParticles>`."
 msgstr ""
+"Les shaders de particules sont uniquement disponibles dans le backend GLES3. "
+"Si vous avez besoin de particules dans GLES2, utilisez des :ref:"
+"`CPUParticles <class_CPUParticles>`."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:27
 msgid "Render modes"
@@ -226,7 +248,7 @@ msgstr "in int **INDEX**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
 msgid "Particle index (from total particles)."
-msgstr ""
+msgstr "Indice de particule (sur le nombre total de particules)."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
 msgid "in mat4 **EMISSION_TRANSFORM**"

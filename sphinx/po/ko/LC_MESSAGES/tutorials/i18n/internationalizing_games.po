@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,7 @@ msgid "Introduction"
 msgstr "소개"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:9
+#, fuzzy
 msgid ""
 "Sería excelente que el mundo hablara solo un idioma (It would be great if "
 "the world spoke only one language). Unfortunately for us developers, that is "
@@ -34,6 +35,12 @@ msgid ""
 "offers many tools to make this process more straightforward, so this "
 "tutorial is more like a collection of tips and tricks."
 msgstr ""
+"Sería excelente que el mundo hablara solo un idioma(만약 세계가 오직 하나의 "
+"언어로 말할수 있었다면 굉장했을 것이다). 불행하게도, 우리 개발자들은 저러한 "
+"상황이 아닙니다. 인디게임 혹은 틈새게임은 보통 현지화를 필요로 하지 않습니"
+"다. 하지만 훨씬 더큰 시장을 목표로 삼은 게임들은 현지화가 자주 필요합니다. "
+"Godot은 이러한것을 더욱 간단하게 진행하도록 만드는 많은 기능들을 제공합니다. "
+"따라서 이번 튜토리얼은 팁과 재주의 콜랙숀과 같은 것입니다."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:17
 msgid ""
@@ -50,10 +57,13 @@ msgid ""
 "We will be using the official demo as an example; you can `download it from "
 "the Asset Library <https://godotengine.org/asset-library/asset/134>`_."
 msgstr ""
+"예제로써 공식 데모를 이용할 것 입니다.; `애셋라이브러리에서 다운 받을수 있습"
+"니다. <https://godotengine.org/asset-library/asset/134>`_."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:29
+#, fuzzy
 msgid "Configuring the imported translation"
-msgstr ""
+msgstr "번역을 가져와서 구성하기"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:31
 msgid ""
@@ -61,14 +71,18 @@ msgid ""
 "still have to be added to the project. This is done in **Project → Project "
 "Settings → Localization**:"
 msgstr ""
+"번역들은 바뀌었을때 업데이트 되고 다시 임포트 될수 있습니다. 하지만 여전히 프"
+"로젝트에 추가해야합니다. 이것은 다음 경로에서 완수됩니다 **Project → Project "
+"Settings → Localization**:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:37
 msgid "The above dialog is used to add or remove translations project-wide."
 msgstr ""
+"위의 대화 상자는 프로젝트 전체적으로 번역을 추가 혹은 제거에 사용합니다."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:40
 msgid "Localizing resources"
-msgstr ""
+msgstr "리소스 현지화"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:42
 msgid ""
@@ -76,6 +90,8 @@ msgid ""
 "(resources) depending on the current language. The **Remaps** tab can be "
 "used for this:"
 msgstr ""
+"또한 이는 Godot을 현재 언어에 의존하는 애셋의 버전을 오가며 사용할 수 있도록 "
+"구성하는게 가능합니다. **Remaps** 탭이 이를 위해 사용됩니다:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:48
 msgid ""
@@ -85,7 +101,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:52
 msgid "Converting keys to text"
-msgstr ""
+msgstr "key들을 text로 컨버팅하기"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:54
 msgid ""
@@ -95,6 +111,10 @@ msgid ""
 "\"MAIN_SCREEN_GREETING1\" and that key exists in the current translation, "
 "then the text will automatically be translated."
 msgstr ""
+":ref:`Button <class_Button>` 그리고 :ref:`Label <class_Label>`과 같은 컨트롤"
+"들은 만약 그 안의 text가 번역key와 동일하다면 자동적으로 번역이 적용됩니다. "
+"예로 들어, 만약 label의 text가 \"MAIN_SCREEN_GREETING1\" 이고 저 key가 현재 "
+"번역에 존재한다면, text는 자동적으로 번역이 될것입니다."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:59
 msgid ""
@@ -102,6 +122,8 @@ msgid ""
 "used. This will just look up the text in the translations and convert it if "
 "found:"
 msgstr ""
+"코드에서는 :ref:`Object.tr() <class_Object_method_tr>` 함수가 사용됩니다. 이"
+"것은 번역안에 있는 text를 찾고 발견되면 그것을 변환합니다:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:69
 msgid "Making controls resizable"

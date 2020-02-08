@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:4
 msgid "GUI skinning"
-msgstr "GUIスキニング"
+msgstr "GUIのスキン処理"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:7
 msgid "Oh, beautiful GUI!"
-msgstr ""
+msgstr "ああ、美しいGUI！"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:9
 msgid ""
@@ -32,6 +32,11 @@ msgid ""
 "<class_Label>`, :ref:`TextureRect <class_TextureRect>`, :ref:`TextureButton "
 "<class_TextureButton>` and :ref:`TextureProgress <class_TextureProgress>`."
 msgstr ""
+"このチュートリアルは、ユーザーインターフェイスの高度なスキン処理に関するもの"
+"です。通常、ほとんどのゲームは :ref:`Label <class_Label>`\\ 、\\ ref:"
+"`TextureRect <class_TextureRect>`\\ 、\\ :ref:`TextureButton "
+"<class_TextureButton>` および :ref:`TextureProgress <class_TextureProgress>` "
+"に依存するため、これを必要としません。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:15
 msgid ""
@@ -40,12 +45,19 @@ msgid ""
 "also common in some games that include editors to create content, or "
 "interfaces for network connectivity."
 msgstr ""
+"ただし、多くの種類のゲームでは、MMO、従来のRPG、シミュレーター、戦略などの複"
+"雑なユーザーインターフェイスが必要になることがよくあります。これらの種類のイ"
+"ンターフェイスは、コンテンツを作成するエディタやネットワーク接続用のインター"
+"フェイスを含む一部のゲームでも一般的です。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:20
 msgid ""
 "Godot's user interface uses these kinds of control with the default theme, "
 "but they can be skinned to resemble pretty much any kind of user interface."
 msgstr ""
+"Godotのユーザーインターフェイスは、デフォルトテーマでこれらの種類のコントロー"
+"ルを使用しますが、それらは、ほぼすべての種類のユーザーインターフェイスに似せ"
+"てスキン化できます。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
 msgid "Theme"
@@ -64,6 +76,16 @@ msgid ""
 "rest of this document will explain the different tools used to customize the "
 "theme."
 msgstr ""
+"GUIは :ref:`Theme <class_Theme>` リソースを通じてスキン化されています。テーマ"
+"には、すべてのコントロールの視覚的なスタイル全体を変更するために必要なすべて"
+"の情報が含まれています。テーマオプションには名前が付けられているため、どの名"
+"前が(特にコードから)何を変更するかは明確ではありませんが、いくつかのツールが"
+"提供されています。各コントロールの各テーマオプションが何であるかを確認する究"
+"極の場所は、どのドキュメントよりも常に最新である、\\ `scene/resources/"
+"default_theme/default_theme.cpp <https://github.com/godotengine/godot/blob/"
+"master/scene/resources/default_theme/default_theme.cpp>`__ ファイルです。この"
+"ドキュメントの残りの部分では、テーマのカスタマイズに使用されるさまざまなツー"
+"ルについて説明します。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:38
 msgid ""
@@ -74,26 +96,36 @@ msgid ""
 "towards the root. If nothing was found, the default theme is used. This "
 "system allows for flexible overriding of themes in complex user interfaces."
 msgstr ""
+"テーマは、シーン内の任意のコントロールに適用できます。その結果、すべての子コ"
+"ントロールと孫コントロールも同じテーマを使用します(ツリーの下で別のテーマが指"
+"定されていない限り)。テーマで値が見つからない場合、ルートに向かって階層の上位"
+"のテーマで検索されます。何も見つからなかった場合、デフォルトのテーマが使用さ"
+"れます。このシステムにより、複雑なユーザーインターフェイスでテーマを柔軟に"
+"オーバーライドできます。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:47
 msgid "Theme options"
-msgstr ""
+msgstr "テーマのオプション"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:49
 msgid "Each kind of option in a theme can be:"
-msgstr ""
+msgstr "テーマ内のオプションの種類は次のとおりです:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:51
 msgid ""
 "**An integer constant**: A single numerical constant. Generally used to "
 "define spacing between components or alignment."
 msgstr ""
+"**整数定数**: 単一の数値定数。通常、コンポーネント間の間隔または配置を定義す"
+"るために使用されます。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:53
 msgid ""
 "**A Color**: A single color, with or without transparency. Colors are "
 "usually applied to fonts and icons."
 msgstr ""
+"**色**: 透過の有無にかかわらず、単色。通常、色はフォントとアイコンに適用され"
+"ます。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:55
 msgid ""
@@ -101,34 +133,41 @@ msgid ""
 "are, they represent handles to pick or icons in a complex control (such as a "
 "file dialog)."
 msgstr ""
+"**テクスチャ**: 単一の画像。テクスチャはあまり使用されませんが、使用される場"
+"合は、選択用のハンドルまたは複雑なコントロール(ファイルダイアログなど)のアイ"
+"コンを表します。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:58
 msgid ""
 "**A Font**: Every control that uses text can be assigned the fonts used to "
 "draw strings."
 msgstr ""
+"**フォント**: テキストを使用するすべてのコントロールには、文字列の描画に使用"
+"されるフォントを割り当てることができます。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:60
 msgid ""
 "**A StyleBox**: Stylebox is a resource that defines how to draw a panel in "
 "varying sizes (more information on them later)."
 msgstr ""
+"**StyleBox **: Styleboxは、さまざまなサイズでパネルを描画する方法を定義するリ"
+"ソースです(詳細については後で説明します)。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:63
 msgid "Every option is associated with:"
-msgstr ""
+msgstr "すべてのオプションは、次の項目と関連付けられています:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:65
 msgid "A name (the name of the option)"
-msgstr ""
+msgstr "名前(オプションの名前)"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:66
 msgid "A Control (the name of the control)"
-msgstr ""
+msgstr "コントロール(コントロールの名前)"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:68
 msgid "An example usage:"
-msgstr ""
+msgstr "使用例:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:87
 msgid ""
@@ -136,6 +175,9 @@ msgid ""
 "changed and then applied to a label. As a result, the label (and all "
 "children and grandchildren labels) will use that color."
 msgstr ""
+"上記の例では、新しいテーマが作成されます。”font_color\" オプションが変更さ"
+"れ、ラベルに適用されます。その結果、ラベル(およびすべての子および孫ラベル)は"
+"その色を使用します。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:91
 msgid ""
@@ -143,6 +185,10 @@ msgid ""
 "and only for a specific control, by using the override API in :ref:`Control."
 "add_color_override() <class_Control_method_add_color_override>`:"
 msgstr ""
+":ref:`Control.add_color_override() "
+"<class_Control_method_add_color_override>` のオーバーライドAPIを使用すること"
+"により、テーマを直接使用せずに、特定のコントロールに対してだけ、これらのオプ"
+"ションをオーバーライドすることもできます。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:106
 msgid ""
@@ -150,10 +196,13 @@ msgid ""
 "options are overridable, or check the :ref:`Control <class_Control>` class "
 "reference."
 msgstr ""
+"Godo のインライン ヘルプ(スクリプト タブ) で、オーバーライド可能なテーマ オプ"
+"ションを確認するか、\\ :ref:`Control <class_Control>` クラスのリファレンスを"
+"チェックしてください。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:110
 msgid "Customizing a control"
-msgstr ""
+msgstr "コントロールのカスタマイズ"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:112
 msgid ""
@@ -161,6 +210,10 @@ msgid ""
 "create a new theme. Controls offer their theme options as special kinds of "
 "properties. If checked, overriding will take place:"
 msgstr ""
+"いくつかのコントロールのみをスキン化する必要がある場合、多くの場合、新しい"
+"テーマを作成する必要はありません。コントロールは、特別な種類のプロパティとし"
+"てテーマオプションを提供します。チェックをオンにすると、オーバーライドが行わ"
+"れます:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:118
 msgid ""
@@ -168,10 +221,13 @@ msgid ""
 "checked, they can be used to override the value of the theme just for that "
 "control."
 msgstr ""
+"上の画像に見られるように、テーマオプションには小さなチェックボックスがありま"
+"す。チェックされている場合、それらはコントロールのテーマの値をオーバーライド"
+"するために使用できます。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:123
 msgid "Creating a theme"
-msgstr ""
+msgstr "テーマの作成"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:125
 msgid ""
@@ -179,16 +235,21 @@ msgid ""
 "Theme from the resource menu; the editor will appear immediately. After "
 "that, save it (for example, with the name mytheme.theme):"
 msgstr ""
+"テーマを作成する最も簡単な方法は、テーマリソースを編集することです。リソース"
+"メニューからテーマを作成します。エディタがすぐに表示されます。その後、それを"
+"保存します(たとえば、mytheme.themeという名前で):"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:131
 msgid ""
 "This will create an empty theme that can later be loaded and assigned to "
 "controls."
 msgstr ""
+"これにより、後でコントロールに読み込んで割り当てることができる空のテーマが作"
+"成されます。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:135
 msgid "Example: theming a button"
-msgstr ""
+msgstr "例: ボタンのテーマ化"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:137
 msgid ""
@@ -196,18 +257,25 @@ msgid ""
 "and add them to your project. Open the theme editor, click on \"Edit Theme\" "
 "and select \"Add Class Items\":"
 msgstr ""
+"これらのアセット(:download:`skin_assets.zip <files / skin_assets.zip>`)をダウ"
+"ンロードして、プロジェクトに追加します。テーマエディタを開き、 \"Edit Theme"
+"\" をクリックして、[クラスアイテム追加]を選択します:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:143
 msgid ""
 "A menu will appear prompting the type of control to create. Select \"Button"
 "\":"
 msgstr ""
+"作成するコントロールのタイプを求めるメニューが表示されます。 \"Button\" を選"
+"択します:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:148
 msgid ""
 "Immediately, all button theme options will appear in the property editor, "
 "where they can be edited:"
 msgstr ""
+"すぐに、すべてのボタンテーマオプションがプロパティエディタに表示され、そこで"
+"編集できます:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:153
 msgid ""
@@ -217,6 +285,11 @@ msgid ""
 "that will not stretch when the texture is stretched. This is called \"3x3\" "
 "stretching:"
 msgstr ""
+"``Styles`` 内で、\"Normal\" の横にある、おそらく[空]と表示されているドロップ"
+"ダウンメニューを開き、「新規　StyleBoxTexture」を作成して編集します。テクス"
+"チャスタイルボックスには、基本的にテクスチャと、テクスチャが引き伸ばされたと"
+"きに引き伸ばされないマージンのサイズが含まれます。これは ”3x3\" ストレッチン"
+"グと呼ばれます:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:161
 msgid ""
@@ -225,19 +298,27 @@ msgid ""
 "supplied font as the button font and change the font color to black. Soon, "
 "your button will look different and retro:"
 msgstr ""
+"手順を繰り返して、他のアセットを追加します。サンプルファイルにはホバーまたは"
+"無効な画像がないため、通常と同じスタイルボックスを使用します。提供されたフォ"
+"ントをボタンのフォントとして設定し、フォントの色を黒に変更します。すぐに、ボ"
+"タンはレトロな見ために変わります:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:168
 msgid ""
 "Save this theme to the .theme file. Go to the 2D editor and create a few "
 "buttons:"
 msgstr ""
+"このテーマを.themeファイルに保存します。 2Dエディタに移動して、いくつかのボタ"
+"ンを作成します:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:173
 msgid ""
 "Now, go to the root node of the scene and locate the \"theme\" property, "
 "replace it with the theme that was just created. It should look like this:"
 msgstr ""
+"次に、シーンのルートノードに移動し、”Theme” プロパティを見つけて、作成した"
+"テーマに置き換えます。次のようになります:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:178
 msgid "Congratulations! You have created a reusable GUI Theme!"
-msgstr ""
+msgstr "おめでとう！再利用可能なGUIテーマが作成されました！"

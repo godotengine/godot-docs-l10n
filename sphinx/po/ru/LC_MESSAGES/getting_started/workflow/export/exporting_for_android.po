@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
 msgid "Make sure you have adb"
-msgstr ""
+msgstr "Убедитесь, что у вас есть adb"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:38
 msgid ""
@@ -78,6 +78,10 @@ msgid ""
 "one (any) of the Android API levels for it to be installed in the SDK "
 "directory."
 msgstr ""
+"Android Debug Bridge (adb) — инструмент командной строки, используемый для "
+"связи с устройствами Android. Он установлен с SDK, но вам может понадобиться "
+"установить один (любой) из уровней Android API для того, чтобы он был "
+"установлен в каталоге SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:43
 msgid "Setting it up in Godot"
@@ -91,11 +95,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:51
 msgid "Scroll down to the section where the Android settings are located:"
-msgstr ""
+msgstr "Прокрутите вниз в раздел, где расположены настройки Android:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:55
 msgid "In that screen, the path to 3 files needs to be set:"
-msgstr ""
+msgstr "На этом экране необходимо указать путь к 3 файлам:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
 msgid "The *adb* executable (adb.exe on Windows)"
@@ -111,7 +115,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
 msgid "Once that is configured, everything is ready to export to Android!"
-msgstr ""
+msgstr "Как только это настроено, все готово к экспорту на Android!"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
 msgid "Providing launcher icons"

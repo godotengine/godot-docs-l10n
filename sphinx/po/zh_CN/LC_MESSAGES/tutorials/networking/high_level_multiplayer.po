@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,6 @@ msgstr ""
 "分!"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
-#, fuzzy
 msgid ""
 "Godot always supported standard low-level networking via UDP, TCP and some "
 "higher level protocols such as SSL and HTTP. These protocols are flexible "
@@ -48,7 +47,7 @@ msgid ""
 "consider Godot's high-level networking API, which sacrifices some of the "
 "fine-grained control of low-level networking for greater ease of use."
 msgstr ""
-"Godot始终支持通过UDP、TCP和一些更高级别的协议(如SSL和HTTP)进行标准的低级网络"
+"Godot始终支持通过UDP、TCP 和一些更高级别的协议(如SSL和HTTP)进行标准的低级网络"
 "连接。这些协议非常灵活，几乎可以用于任何事情。然而，使用它们来手动同步游戏状"
 "态可能需要大量的工作。有时这种工作是无法避免的，或者是值得的，例如在后台使用"
 "自定义服务器实现时。但在大多数情况下，考虑Godot的高级网络API是值得的，它牺牲"
@@ -76,7 +75,6 @@ msgstr ""
 "连接的 \"Nagle's algorithm\" )。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:18
-#, fuzzy
 msgid ""
 "UDP is a simpler protocol, which only sends packets (and has no concept of a "
 "\"connection\"). No error correction makes it pretty quick (low latency), "
@@ -85,13 +83,12 @@ msgid ""
 "hundred bytes), so transmitting larger packets means splitting them, "
 "reorganizing them and retrying if a part fails."
 msgstr ""
-"UDP是一个简单的协议，它只发送数据包(没有“连接”的概念)。没有错误纠正使其非常快"
-"(低延迟)，但是包可能在过程中丢失或以错误的顺序接收。此外，UDP的MTU(最大数据包"
-"大小)通常很低(只有几百字节)，因此传输更大的数据包意味着对它们进行分割、重新组"
-"织它们，并在部分失败时重试。"
+"UDP 是一个更简单的协议，它只发送数据包(没有“连接”的概念)。没有错误纠正使其非"
+"常快(低延迟)，但是包可能在过程中丢失或以错误的顺序接收。此外，UDP 的 MTU (最"
+"大数据包大小)通常很低(只有几百字节)，因此传输更大的数据包意味着对它们进行分"
+"割、重新组织它们，并在部分失败时重试。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:23
-#, fuzzy
 msgid ""
 "In general, TCP can be thought of as reliable, ordered, and slow; UDP as "
 "unreliable, unordered and fast. Because of the large difference in "
@@ -101,22 +98,21 @@ msgid ""
 "this, most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
-"一般来说，TCP可以被认为是可靠的、有序的和缓慢的;UDP作为不可靠，无序和快速。由"
-"于性能上的巨大差异，在避免不需要的部分(拥塞/流量控制特性、Nagle算法等)的同"
-"时，重新构建游戏所需的TCP部分(可选的可靠性和包顺序)通常是有意义的。正因为如"
-"此，大多数游戏引擎都带有这样的实现，Godot也不例外。"
+"一般来说，TCP 可以被认为是可靠的、有序的和缓慢的; UDP则是不可靠，无序, 但是速"
+"度快。由于性能上的巨大差异，在避免不需要的部分(拥塞/流量控制特性、Nagle算法"
+"等)的同时，重新构建游戏所需的TCP部分(可选的可靠性和包顺序)通常是合理的。正因"
+"为如此，大多数游戏引擎都带有这样的实现，Godot也不例外。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
-#, fuzzy
 msgid ""
 "In summary, you can use the low-level networking API for maximum control and "
 "implement everything on top of bare network protocols or use the high-level "
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
 msgstr ""
-"综上所述，您可以使用低级网络API来实现最大限度的控制，并在裸网络协议之上实现所"
-"有功能，或者使用基于 :ref:`SceneTree <class_SceneTree>` 的高级API，后者以通常"
-"优化的方式在后台完成大部分繁重的工作。"
+"综上所述，您可以使用低级网络API来实现最大限度的控制，并在完全裸露的网络协议之"
+"上实现所有功能，或者使用基于 :ref:`SceneTree <class_SceneTree>` 的高级API，后"
+"者以通常以一种比较优化的方式在后台完成大部分繁重的工作。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:28
 msgid ""

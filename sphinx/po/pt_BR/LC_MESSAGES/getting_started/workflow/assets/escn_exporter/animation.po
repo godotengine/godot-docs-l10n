@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:82
 msgid "**Mode 'Animation as Action with Squash'**"
-msgstr "Animações suportadas:"
+msgstr "**Modo 'Animações como Ações com Alongamento'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
 msgid ""
@@ -194,8 +194,8 @@ msgid ""
 "and each Skeleton and Mesh has actions; then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
-"Este modo tem um comportamento muito similar ao modo 'Animation as Action', "
-"mas pode gerar AnimationPlayers em menor quantidade; objetos em "
-"relacionamento pai-filho devem compartilhar suas AnimationPlayer. É útil "
-"quando se tem várias plataformas, e cada Esqueleto e Malha tem ações; então "
-"uma plataforma teria apenas uma AnimationPlayer"
+"Este modo tem comportamento bem similar ao do modo \"Animação como Ação\", "
+"mas pode gerar menos AnimationPlayers; objetos em relacionamento pai-filho "
+"compartilham seu AnimationPlayer. É útil quando você tem vários \"rigs\", e "
+"cada Esqueleto e Malha tem ações; então um \"rig\" teria somente um "
+"AnimationPlayer."

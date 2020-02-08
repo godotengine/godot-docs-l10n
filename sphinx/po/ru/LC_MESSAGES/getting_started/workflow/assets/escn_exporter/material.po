@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,17 +136,18 @@ msgstr ""
 "шейдерные узлы, кроме ``PrincipledBSDF``, ``Diffuse``, ``Glossy``, "
 "``Glass``, ``add shader`` и ``mix shader``"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:50
+#, fuzzy
 msgid ""
-"If possible try to use PrincipledBSDF node with GGX distribution as the "
-"output shader node, it is the only one guarantee to be exactly correctly. "
+"If possible, try to use PrincipledBSDF node with GGX distribution as the "
+"output shader node, it is the only one guaranteed to be exactly correct. "
 "Others are just based on approximation."
 msgstr ""
 "Если возможно, попробуйте использовать узел PrincipledBSDF с распределением "
 "GGX в качестве выходного шейдерного узла, это единственная гарантия того, "
 "что он будет абсолютно корректным. Другие просто основаны на приближении."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:53
 #, fuzzy
 msgid ""
 "Sometimes materials may not be valid for exporting (e.g. has some "
@@ -160,11 +161,11 @@ msgstr ""
 "(например, unshaded флаг), которые образуют Пространственный Материал "
 "(Spatial Material)."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:59
 msgid "Generate external materials"
 msgstr "Генерация внешних материалов"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:61
 msgid ""
 "The default configuration of material exporting would keep all the materials "
 "internal to the ``escn`` file. There is an option which could enable "
@@ -174,7 +175,7 @@ msgstr ""
 "файла ``escn``. Есть опция, которая может позволить генерировать внешний "
 "файл ``.material``, когда файл ``escn`` открывается в Godot."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:67
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."

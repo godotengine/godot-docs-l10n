@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:4
 msgid "Using the SurfaceTool"
-msgstr "サーフェスツールのの使用"
+msgstr "SurfaceToolの使用"
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:6
 msgid ""
@@ -29,16 +29,22 @@ msgid ""
 "attribute (e.g. normal, uv, color) and then when you add a vertex it "
 "captures the attributes."
 msgstr ""
+":ref:`SurfaceTool <doc_surfacetool>` は、ジオメトリを構築するための便利なイン"
+"ターフェイスを提供します。このインターフェースは :ref:`ImmediateGeometry "
+"<class_immediategeometry>` ノードに似ています。頂点ごとの各属性(例: normal、"
+"uv、color)を設定し、頂点を追加すると属性がキャプチャされます。"
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:11
 msgid ""
 "The SurfaceTool also provides some useful helper functions like ``index()`` "
 "and ``generate_normals()``."
 msgstr ""
+"SurfaceToolは、\\ ``index()`` や ``generate_normals()`` などの便利なヘルパー"
+"関数も提供します。"
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:13
 msgid "Attributes are added before each vertex is added:"
-msgstr ""
+msgstr "各頂点が追加される前に次の属性が追加されます:"
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:24
 msgid ""
@@ -48,10 +54,15 @@ msgid ""
 "appends a new surface to the end of the ArrayMesh. While if nothing is "
 "passed in, ``commit()`` returns an ArrayMesh."
 msgstr ""
+":ref:`SurfaceTool <class_surfacetool>` によるジオメトリの生成が終了した"
+"ら、\\ ``commit()`` を呼び出してメッシュの生成を終了します。\\ :ref:"
+"`ArrayMesh <class_ArrayMesh>` が ``commit()`` に渡されると、ArrayMeshの最後に"
+"新しいサーフェスが追加されます。一方、何も渡されない場合、\\ ``commit()`` は"
+"ArrayMeshを返します。"
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:36
 msgid "Code creates a triangle with indices"
-msgstr ""
+msgstr "コードはインデックス付きの三角形を作成します"
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:62
 msgid ""
@@ -59,6 +70,9 @@ msgid ""
 "adding vertices to the index array or by calling ``index()`` which shrinks "
 "the vertex array to remove duplicate vertices."
 msgstr ""
+"オプションで ``add_index()`` を呼び出して頂点をインデックス配列に追加するか、"
+"頂点配列を縮小して重複する頂点を削除する ``index()`` を呼び出すことで、イン"
+"デックス配列を追加できます。"
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:82
 msgid ""
@@ -66,12 +80,17 @@ msgid ""
 "(e.g. because you want to use unique normals or colors per face instead of "
 "per-vertex), you can call ``deindex()``."
 msgstr ""
+"同様に、インデックス配列があるが、各頂点を一意にしたい場合(たとえば、頂点ごと"
+"ではなく面ごとに一意の法線または色を使用するため)、\\ ``deindex()`` を呼び出"
+"すことができます。"
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:90
 msgid ""
 "If you don't add custom normals yourself, you can add them using "
 "``generate_normals()``. The same goes for tangents."
 msgstr ""
+"自分でカスタム法線を追加しない場合は、\\ ``generate_normals()`` を使用して追"
+"加できます。同じことが接線にも当てはまります。"
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:98
 msgid ""
@@ -81,3 +100,8 @@ msgid ""
 "building the geometry, e.g. before the call to ``add_vertex()`` (if non-"
 "indexed) or ``add_index()`` (if indexed)."
 msgstr ""
+"デフォルトでは、法線を生成するとき、それらは面ごとに計算されます。滑らかな頂"
+"点法線が必要な場合、頂点を追加するときに ``add_smooth_group()`` を呼び出しま"
+"す。ジオメトリの構築中に ``add_smooth_group()`` を呼び出す必要があります。例"
+"えば、\\ `` add_vertex()`` (インデックス化されていない場合)または "
+"``add_index()`` (インデックス化されている場合)の呼び出しの前にです。"

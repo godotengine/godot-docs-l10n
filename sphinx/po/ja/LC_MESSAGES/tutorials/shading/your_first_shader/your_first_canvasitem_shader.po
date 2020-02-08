@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:4
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:51
 msgid "Your first CanvasItem shader"
-msgstr ""
+msgstr "最初のキャンバスアイテム(CanvasItem)シェーダー"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:7
 msgid "Introduction"
@@ -33,6 +33,10 @@ msgid ""
 "detailed description of what shaders are please see :ref:`What are shaders "
 "<doc_what_are_shaders>`."
 msgstr ""
+"シェーダーは、GPUで実行される特別なプログラムで、グラフィックのレンダリングに"
+"使用されます。 最新のレンダリングはすべてシェーダーで行われます。 シェーダー"
+"の詳細については、\\ :ref:`シェーダーとは <doc_what_are_shaders>` を参照して"
+"ください。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:13
 msgid ""
@@ -40,6 +44,10 @@ msgid ""
 "by walking you through the process of writing a shader with both vertex and "
 "fragment functions. This tutorial targets absolute beginners to shaders."
 msgstr ""
+"このチュートリアルでは、頂点関数とフラグメント関数の両方を使用してシェーダー"
+"を作成するプロセスを順を追って説明し、シェーダープログラムを作成する実用的な"
+"側面に焦点を当てます。 このチュートリアルは、シェーダーの初心者を対象にしてい"
+"ます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:17
 msgid ""
@@ -47,6 +55,9 @@ msgid ""
 "of how shaders work in Godot, see the :ref:`Shading Reference <toc-shading-"
 "reference>`."
 msgstr ""
+"シェーダーの作成経験があり、Godotでのシェーダーの動作の概要を探しているだけの"
+"場合は、\\ :ref:`シェーディングリファレンス <toc-shading-reference>` を参照し"
+"てください。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:21
 msgid "Setup"
@@ -58,6 +69,9 @@ msgid ""
 "objects in Godot, while :ref:`Spatial <doc_spatial_shader>` shaders are used "
 "to draw all 3D objects."
 msgstr ""
+":ref:`CanvasItem <doc_canvas_item_shader>` シェーダーはGodotのすべての2Dオブ"
+"ジェクトを描画するために使用され、\\ :ref:`Spatial <doc_spatial_shader>` "
+"シェーダーはすべての3Dオブジェクトを描画するために使用されます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:26
 msgid ""
@@ -66,6 +80,10 @@ msgid ""
 "of :ref:`Resource <doc_resources>`. To draw multiple objects with the same "
 "material, the material must be attached to each object."
 msgstr ""
+"シェーダーを使用するには、オブジェクトにアタッチする必要がある :ref:"
+"`Material <class_material>` 内にアタッチする必要があります。 マテリアルは :"
+"ref:`Resource <doc_resources>` の一種です。 同じマテリアルで複数のオブジェク"
+"トを描画するには、マテリアルを各オブジェクトにアタッチする必要があります。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:30
 msgid ""
@@ -76,12 +94,20 @@ msgid ""
 "inherit their parent's material. This can be useful if you have a large "
 "number of nodes that you want to use the same material."
 msgstr ""
+":ref:`CanvasItem <class_canvasitem>` から派生したすべてのオブジェクトには、マ"
+"テリアルプロパティがあります。 これには、すべての :ref:`GUI要素 "
+"<class_Control>`\\ 、\\ :ref:`スプライト <class_sprite>`\\ 、\\ :ref:`タイル"
+"マップ <class_tilemap>`\\ 、\\ :ref:`MeshInstance2D <class_meshinstance2d>` "
+"などがあります。オプションもあります。 親のマテリアルを継承します。 これは、"
+"同じマテリアルを使用するノードが多数ある場合に役立ちます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:36
 msgid ""
 "To begin, create a Sprite node. You can use any CanvasItem, but for this "
 "tutorial we will use a Sprite."
 msgstr ""
+"ではまず、スプライトノードを作成します。 任意のCanvasItemを使用できますが、こ"
+"のチュートリアルではSpriteを使用します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:39
 msgid ""
@@ -89,6 +115,9 @@ msgid ""
 "select \"Load\", then select \"Icon.png\". For new projects, this is the "
 "Godot icon. You should now see the icon in the viewport."
 msgstr ""
+"インスペクタで、\"Texture\"の横にある[空]をクリックして[読込み]を選択"
+"し、”Icon.png\"を選択します。 新しいプロジェクトの場合、これはGodotアイコンで"
+"す。 ビューポートにアイコンが表示されます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:42
 msgid ""
@@ -99,6 +128,12 @@ msgid ""
 "previews the output of spatial shaders. So what you are seeing is the output "
 "of the default Spatial Shader."
 msgstr ""
+"次に、インスペクタのCanvasItemセクションの下を見て、「Material」の横をクリッ"
+"クし、「新規 ShaderMaterial」を選択します。 これにより、新しいマテリアルリ"
+"ソースが作成されます。 表示される球をクリックします。 Godotは現在、CanvasItem"
+"シェーダーとSpatialシェーダーのどちらを記述しているかを認識せず、Spatial"
+"シェーダーの出力をプレビューします。 したがって、表示されているのは、デフォル"
+"トのSpatialシェーダーの出力です。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:47
 msgid ""
@@ -106,24 +141,31 @@ msgid ""
 "shader resource and the shader editor will open. You are now ready to begin "
 "writing your first shader."
 msgstr ""
+"\"Shader\"の横をクリックし、「新規 Shader」を選択します。 最後に、新しい"
+"シェーダーリソースをクリックすると、シェーダーエディタが開きます。 これで、最"
+"初のシェーダーを書き始める準備ができました。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:53
 msgid ""
 "In Godot, all shaders start with a line specifying what type of shader they "
 "are. It uses the following format:"
 msgstr ""
+"Godotでは、すべてのシェーダーは、シェーダーのタイプを指定する行で始まりま"
+"す。 次の形式を使用します:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:60
 msgid ""
 "Because we are writing a CanvasItem shader, we specify ``canvas_item`` in "
 "the first line. All our code will go beneath this declaration."
 msgstr ""
+"CanvasItemシェーダーを記述しているため、最初の行で ``canvas_item`` を指定しま"
+"す。 すべてのコードは、この宣言の下に配置されます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:63
 msgid ""
 "This line tells the engine which built-in variables and functionality to "
 "supply you with."
-msgstr ""
+msgstr "この行は、どの組み込み変数と関数を提供するかをエンジンに伝えます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:65
 msgid ""
@@ -133,28 +175,39 @@ msgid ""
 "functions are significantly more complex than vertex and fragment functions "
 "and so will not be covered here."
 msgstr ""
+"Godotでは、3つの関数をオーバーライドして、シェーダーの動作を制御できます。\\ "
+"``vertex``\\ 、\\ ``fragment``\\ 、および ``light``\\ 。 このチュートリアルで"
+"は、頂点(vertex)関数とフラグメント(fragment)関数の両方を使用してシェーダーを"
+"作成する方法を説明します。 ライト(light)関数は、頂点関数やフラグメント関数よ"
+"りもかなり複雑なので、ここでは説明しません。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:70
 msgid "Your first fragment function"
-msgstr ""
+msgstr "最初のフラグメント関数"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:72
 msgid ""
 "The fragment function runs for every pixel in a Sprite and determines what "
 "color that pixel should be."
 msgstr ""
+"フラグメント関数は、Sprite内のすべてのピクセルに対して実行され、そのピクセル"
+"の色を決定します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:74
 msgid ""
 "They are restricted to the pixels covered by the Sprite, that means you "
 "cannot use one to, for example, create an outline around a Sprite."
 msgstr ""
+"これらはSpriteでカバーされるピクセルに制限されているため、Spriteの周囲にアウ"
+"トラインを作成する場合などは使用できません。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:77
 msgid ""
 "The most basic fragment function does nothing except assign a single color "
 "to every pixel."
 msgstr ""
+"最も基本的なフラグメント関数は、すべてのピクセルに単一の色を割り当てること以"
+"外は何もしません。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:79
 msgid ""
@@ -164,16 +217,22 @@ msgid ""
 "``COLOR`` is both an input variable to the fragment function and the final "
 "output from it."
 msgstr ""
+"そのためには、組み込み変数 ``COLOR`` に ``vec4`` を書き込みます。\\ ``vec4`` "
+"は、4つの数値でベクトルを構築するための省略表現です。 ベクトルの詳細について"
+"は、\\ :ref:`ベクトル演算チュートリアル <doc_vector_math>`を参照してくださ"
+"い。\\ ``COLOR`` はフラグメント関数への入力変数であり、フラグメント関数からの"
+"最終出力です。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:91
 msgid ""
 "Congratulations! You're done. You have successfully written your first "
 "shader in Godot."
 msgstr ""
+"おめでとう！ できました。 Godotで最初のシェーダーの作成に成功しました。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:93
 msgid "Now let's make things more complex."
-msgstr ""
+msgstr "それでは、もっと複雑にしましょう。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:95
 msgid ""
@@ -182,26 +241,33 @@ msgid ""
 "in your Sprite (without you knowing it!) and they tell the shader where to "
 "read from textures for each part of the mesh."
 msgstr ""
+"``COLOR`` の計算に使用できるフラグメント関数には多くの入力があります。\\ "
+"``UV`` もその1つです。 UV座標は(知らないうちに)スプライトで指定され、メッシュ"
+"の各部分のテクスチャから読み取る場所をシェーダーに伝えます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:99
 msgid ""
 "In the fragment function you can only read from ``UV``, but you can use it "
 "in other functions or to assign values to ``COLOR`` directly."
 msgstr ""
+"フラグメント関数では ``UV`` からしか読み取ることができませんが、他の関数で使"
+"用したり、値を ``COLOR`` に直接割り当てることができます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:102
 msgid "``UV`` varies between 0-1 from left-right and from top-bottom."
-msgstr ""
+msgstr "``UV`` は、左から右、上から下で0～1の間で変化します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:115
 msgid "Using ``TEXTURE`` built-in"
-msgstr ""
+msgstr "``TEXTURE`` ビルトインを使用する"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:117
 msgid ""
 "When you want to adjust a color in a Sprite you cannot just adjust the color "
 "from the texture manually like in the code below."
 msgstr ""
+"スプライトの色を調整する場合、以下のコードのようにテクスチャの色を手動で調整"
+"することはできません。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:127
 msgid ""
@@ -212,31 +278,41 @@ msgid ""
 "that can be accessed in the shader using ``TEXTURE``. Use it together with "
 "``UV`` and ``texture`` to draw the Sprite."
 msgstr ""
+"デフォルトのフラグメント関数は、テクスチャから読み取り、それを表示します。デ"
+"フォルトのフラグメント関数を上書きすると、その機能が失われるため、自分で実装"
+"する必要があります。 \\ ``texture`` 関数を使用してテクスチャから読み取りま"
+"す。スプライトのような特定のノードには、\\ ``TEXTURE`` を使用してシェーダーで"
+"アクセスできる専用のテクスチャー変数があります。スプライトを描画するには、\\ "
+"``UV`` および ``texture`` を一緒に使用します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:142
 msgid "Uniform input"
-msgstr ""
+msgstr "Uniform入力"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:144
 msgid ""
 "Uniform input is used to pass data into a shader that will be the same "
 "across the entire shader."
 msgstr ""
+"Uniform入力は、シェーダー全体で同一のデータを、シェーダーに渡すために使用され"
+"ます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:146
 msgid ""
 "You can use uniforms by defining them at the top of your shader like so:"
-msgstr ""
+msgstr "Uniformを使用するには、シェーダーの上部で次のように定義します:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:152
 msgid ""
 "For more information about usage see the :ref:`Shading Language doc "
 "<doc_shading_language>`."
 msgstr ""
+"使用法の詳細については、\\ :ref:`シェーディング言語ドキュメント "
+"<doc_shading_language>` を参照してください。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:154
 msgid "Add a uniform to change the amount of blue in our Sprite."
-msgstr ""
+msgstr "uniformを追加して、スプライトの青の量を変更します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:165
 msgid ""
@@ -246,10 +322,14 @@ msgid ""
 "uniform you just declared. If you change the value in the editor, it will "
 "overwrite the default value you provided in the shader."
 msgstr ""
+"これで、エディタからスプライトの青の量を変更できます。シェーダーを作成した場"
+"所のインスペクタを再確認すると、\\``Shader Param`` というセクションが表示され"
+"るはずです。そのセクションを展開すると、宣言したuniformが表示されます。エディ"
+"タで値を変更すると、シェーダーで指定したデフォルト値が上書きされます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:171
 msgid "Interacting with shaders from code"
-msgstr ""
+msgstr "コードからシェーダーを操作する"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:173
 msgid ""
@@ -257,26 +337,31 @@ msgid ""
 "which is called on the node's material resource. With a Sprite node, the "
 "following code can be used to set the ``blue`` uniform."
 msgstr ""
+"ノードのマテリアルリソースで呼び出される ``set_shader_param()`` 関数を使用し"
+"て、コードからuniformを変更できます。 Spriteノードでは、次のコードを使用して "
+"``blue`` uniformを設定できます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:181
 msgid ""
 "Note that the name of the uniform is a string. The string must match exactly "
 "with how it is written in the shader, including spelling and case."
 msgstr ""
+"uniformの名前は文字列であることに注意してください。文字列は、スペルや大文字小"
+"文字を含め、シェーダーでの記述方法と正確に一致する必要があります。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:185
 msgid "Your first vertex function"
-msgstr ""
+msgstr "最初の頂点関数"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:187
 msgid "Now that we have a fragment function, let's write a vertex function."
-msgstr ""
+msgstr "フラグメント関数ができたので、頂点関数を書きましょう。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:189
 msgid ""
 "Use the vertex function to calculate where on the screen each vertex should "
 "end up."
-msgstr ""
+msgstr "頂点関数を使用して、各頂点が画面のどこに出現するかを計算します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:191
 msgid ""
@@ -286,16 +371,22 @@ msgid ""
 "that is initially presented in local-space (i.e. not relative to the camera, "
 "viewport, or parent nodes)."
 msgstr ""
+"頂点関数の最も重要な変数は ``VERTEX`` です。最初はモデルの頂点座標を指定しま"
+"すが、実際にそれらの頂点を描画する場所を決定するために書き込むこともできま"
+"す。\\ ``VERTEX`` は、ローカル空間で最初に表示される ``vec2`` です(つまり、カ"
+"メラ、ビューポート、または親ノードに関連しません)。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:196
 msgid "You can offset the vertices by directly adding to ``VERTEX``."
-msgstr ""
+msgstr "``VERTEX`` に直接追加することにより、頂点をオフセットできます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:204
 msgid ""
 "Combined with the ``TIME`` built-in variable, this can be used for simple "
 "animation."
 msgstr ""
+"``TIME`` 組み込み変数と組み合わせて、これを単純なアニメーションに使用できま"
+"す。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:214
 msgid "Conclusion"
@@ -307,6 +398,9 @@ msgid ""
 "and ``COLOR``. It is up to you to dream up more complex mathematical "
 "strategies for assigning values to those variables."
 msgstr ""
+"コアでは、シェーダーはこれまで見てきたことを実行し、\\ ``VERTEX`` と "
+"``COLOR`` を計算します。これらの変数に値を割り当てるためのより複雑な数学的戦"
+"略を考え出すのはあなた次第です。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:219
 msgid ""
@@ -315,3 +409,7 @@ msgid ""
 "query=&sort=popular&from=10&num=4>`_ and `The Book of Shaders <https://"
 "thebookofshaders.com>`_."
 msgstr ""
+"インスピレーションを得るには、\\ `Shadertoy <https://www.shadertoy.com/"
+"results?query=&sort=popular&from=10&num=4>`_ や `The Book of Shaders "
+"<https://thebookofshaders.com>`_などのより高度なシェーダーチュートリアルをい"
+"くつか見てください。"

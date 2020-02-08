@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:4
 msgid "Custom post-processing"
-msgstr ""
+msgstr "カスタムポストプロセッシング"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:7
 msgid "Introduction"
@@ -31,6 +31,9 @@ msgid ""
 "DOF, and SSAO. Sometimes you want to write your own custom effect. Here's "
 "how you can do so."
 msgstr ""
+"Godotは、ブルーム、DOF、SSAOを含む多くのポストプロセッシング効果をすぐに利用"
+"できます。でも時々、独自のカスタム効果を作成したい場合もあります。そのための"
+"方法は次のとおりです。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:12
 msgid ""
@@ -39,6 +42,10 @@ msgid ""
 "<class_Viewport>`, then render the ``Viewport`` inside a :ref:"
 "`ViewportTexture <class_ViewportTexture>` and show it on the screen."
 msgstr ""
+"ポストプロセッシング効果は、Godotがフレームをレンダリングした後に適用される"
+"シェーダーです。最初にシーンを :ref:`Viewport <class_Viewport>` にレンダリン"
+"グし、次に :ref:`ViewportTexture <class_ViewportTexture>` 内で ``Viewport`` "
+"をレンダリングして、画面に表示します。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:16
 msgid ""
@@ -47,6 +54,10 @@ msgid ""
 "familiar with this, you should read the :ref:`Screen Reading Shaders "
 "Tutorial <doc_screen-reading_shaders>` first."
 msgstr ""
+"カスタムのポストプロセッシングシェーダーを実装する最も簡単な方法は、Godotの組"
+"み込み機能を使用して画面テクスチャから読み取ることです。これに慣れていない場"
+"合は、最初に :ref:`Screen Reading Shaders Tutorial <doc_screen-"
+"reading_shaders>` を読む必要があります。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:22
 msgid ""
@@ -55,10 +66,13 @@ msgid ""
 "to normals or other render passes. You only have access to the rendered "
 "frame."
 msgstr ""
+"執筆時点では、Godotは複数のバッファーへの同時レンダリングをサポートしていませ"
+"ん。ポストプロセッシングシェーダーは、法線または他のレンダーパスにアクセスで"
+"きません。レンダリングされたフレームにのみアクセスできます。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:27
 msgid "Single pass post-processing"
-msgstr ""
+msgstr "シングルパスポストプロセッシング"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:29
 msgid ""
@@ -67,6 +81,10 @@ msgid ""
 "<class_ViewportContainer>` to display your ``Viewport`` on the entire screen "
 "or inside another :ref:`Control <class_Control>` node."
 msgstr ""
+"シーンをレンダリングするための ``Viewport`` と、画面上で ``Viewport`` をレン"
+"ダリングするためのシーンが必要になります。\\ :ref:`ViewportContainer "
+"<class_ViewportContainer>` を使用して、画面全体または別の :ref:`Control "
+"<class_Control>` ノード内に ``Viewport`` を表示できます。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:36
 msgid ""
@@ -74,6 +92,9 @@ msgid ""
 "including the framerate, and you can use the ``ViewportContainer`` to render "
 "3D objects in a 2D scene."
 msgstr ""
+"``Viewport`` を使用してレンダリングすると、フレームレートを含むシーンのレンダ"
+"リング方法を制御できます。また、\\ ``ViewportContainer`` を使用して2Dシーンに"
+"3Dオブジェクトをレンダリングできます。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:40
 msgid ""
@@ -81,12 +102,17 @@ msgid ""
 "``ViewportContainer`` and finally a ``Viewport``. Your **Scene** tab should "
 "look like this:"
 msgstr ""
+"このデモでは、\\ :ref:`Node2D <class_Node2D>` を ``ViewportContainer`` ととも"
+"に使用し、最後に ``Viewport`` を使用します。 [**シーン**]タブは次のようになり"
+"ます:"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:45
 msgid ""
 "Inside the ``Viewport``, you can have whatever you want. This will contain "
 "your main scene. For this tutorial, we will use a field of random boxes:"
 msgstr ""
+"``Viewport``の中には、望みのものを保持できます。これにはメインシーンが含まれ"
+"ます。このチュートリアルでは、ランダムボックスのフィールドを使用します:"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:50
 msgid ""
@@ -94,6 +120,10 @@ msgid ""
 "``ViewportContainer``, and assign a new shader resource to it. You can "
 "access your rendered ``Viewport`` with the built-in ``TEXTURE`` uniform."
 msgstr ""
+"新しい :ref:`ShaderMaterial <class_ShaderMaterial>` を ``ViewportContainer`` "
+"に追加し、新しいシェーダーリソースを割り当てます。レンダリングされた "
+"``Viewport`` には、組み込みの ``TEXTURE`` ユニフォーム(uniform)を使用してアク"
+"セスできます。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:55
 msgid ""
@@ -101,10 +131,14 @@ msgid ""
 "will need to create your own uniform in the shader and pass the ``Viewport`` "
 "texture in manually, like so:"
 msgstr ""
+"``ViewportContainer`` を使用しないこともできますが、使用する場合は、シェー"
+"ダーで独自のユニフォーム(uniform)を作成し、次のように ``Viewport`` テクスチャ"
+"を手動で渡す必要があります:"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:64
 msgid "And you can pass the texture into the shader from GDScript like so:"
 msgstr ""
+"そして、次のように、GDScriptからシェーダーにテクスチャを渡すことができます:"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:72
 msgid ""
@@ -112,6 +146,9 @@ msgid ""
 "detection filter, a `Sobel filter <https://en.wikipedia.org/wiki/"
 "Sobel_operator>`_."
 msgstr ""
+"次のコードをシェーダーにコピーします。このコードは、シングルパスエッジ検出"
+"フィルター、\\ `Sobel filter <https://en.wikipedia.org/wiki/"
+"Sobel_operator>`_ です。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:94
 msgid ""
@@ -122,10 +159,15 @@ msgid ""
 "You can use different kernels to create edge detection filters, outlines, "
 "and all sorts of effects."
 msgstr ""
+"Sobelフィルターは、現在のピクセルの周囲の9x9グリッドのピクセルを読み取り、重"
+"みを使用してそれらを加算します。興味深いのは、各ピクセルに重みを割り当てるこ"
+"とです。中心の周りの8個のそれぞれに+1、中心のピクセルに-8。重みの選択は「カー"
+"ネル」と呼ばれます。異なるカーネルを使用して、エッジ検出フィルター、アウトラ"
+"イン、およびあらゆる種類の効果を作成できます。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:102
 msgid "Multi-pass post-processing"
-msgstr ""
+msgstr "マルチパスポストプロセッシング"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:104
 msgid ""
@@ -134,6 +176,9 @@ msgid ""
 "a multipass material, each pass takes the result from the previous pass as "
 "an input and processes it."
 msgstr ""
+"ぼかしなどの後処理の効果の中には、リソースを大量に消費するものがあります。た"
+"だし、複数のパスでそれらを分解する場合、それらをはるかに高速に実行できます。"
+"マルチパスマテリアルでは、各パスは前のパスの結果を入力として処理します。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:108
 msgid ""
@@ -144,10 +189,16 @@ msgid ""
 "``Viewport`` into another and then rendering the last ``Viewport`` into the "
 "root ``Viewport``."
 msgstr ""
+"マルチパスポストプロセッシングシェーダーを作成するには、\\ ``Viewport`` ノー"
+"ドをスタックします。上記の例では、\\ ``ViewportContainer`` ノードを介して、1"
+"つの ``Viewport`` オブジェクトのコンテンツをルート ``Viewport`` にレンダリン"
+"グしました。マルチパスシェーダーに対して同じことを行うには、ある "
+"``Viewport`` のコンテンツを別の ``Viewport`` にレンダリングし、最後の "
+"``Viewport`` をルート ``Viewport`` にレンダリングします。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:113
 msgid "Your scene hierarchy will look something like this:"
-msgstr ""
+msgstr "シーンの階層は次のようになります:"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:117
 msgid ""
@@ -155,6 +206,9 @@ msgid ""
 "passes matters for your shaders, make sure that you assign the shader you "
 "want to apply first to the lowest ``ViewportContainer`` in the tree."
 msgstr ""
+"Godotは下の ``Viewport`` ノードを最初にレンダリングします。したがって、シェー"
+"ダーにとってパスの順序が重要な場合は、最初に適用するシェーダーをツリー内の最"
+"も低い ``ViewportContainer`` に割り当てるようにしてください。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:123
 msgid ""
@@ -162,12 +216,16 @@ msgid ""
 "this. You just need to use two Viewports and to render them one after the "
 "other."
 msgstr ""
+"このようにネストせずに、ビューポートを個別にレンダリングすることもできます。 "
+"2つのビューポートを使用し、それらを次々にレンダリングするだけです。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:126
 msgid ""
 "Apart from the node structure, the steps are the same as with the single-"
 "pass post-processing shader."
 msgstr ""
+"ノード構造を除き、手順はシングルパスポストプロセッシングシェーダーと同じで"
+"す。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:128
 msgid ""
@@ -176,15 +234,20 @@ msgid ""
 "`ViewportContainers <class_ViewportContainer>`. The order in which you apply "
 "the shaders does not matter:"
 msgstr ""
+"例として、次のコードを各 :ref:`ViewportContainers <class_ViewportContainer>` "
+"に添付することにより、フルスクリーンのガウスぼかし効果を作成できます。シェー"
+"ダーを適用する順序は重要ではありません:"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:168
 msgid ""
 "Using the above code, you should end up with a full screen blur effect like "
 "below."
-msgstr ""
+msgstr "上記のコードを使用すると、次のような全画面ぼかし効果が得られます。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:172
 msgid ""
 "For more information on how ``Viewport`` nodes work, see the :ref:`Viewports "
 "Tutorial <doc_viewports>`."
 msgstr ""
+"``Viewport`` ノードの機能の詳細については、\\ :ref:`Viewports Tutorial "
+"<doc_viewports>` を参照してください。"

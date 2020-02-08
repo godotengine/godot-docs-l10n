@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:4
 msgid "Optimization using Servers"
-msgstr ""
+msgstr "サーバーを使用した最適化"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:6
 msgid ""
@@ -28,26 +28,30 @@ msgid ""
 "`Scene System<doc_scene_tree>`. Using nodes and resources simplifies project "
 "organization and asset management in complex games."
 msgstr ""
+"Godotのようなエンジンは、高レベルの構造と機能により、使いやすさが向上していま"
+"す。それらのほとんどは、\\ :ref:`Scene System <doc_scene_tree>` を介してアク"
+"セスおよび使用されます。ノードとリソースを使用すると、複雑なゲームのプロジェ"
+"クト編成と資産管理が簡素化されます。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:10
 msgid "There are, of course, always drawbacks:"
-msgstr ""
+msgstr "もちろん、常に欠点もあります:"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:12
 msgid "There is an extra layer of complexity"
-msgstr ""
+msgstr "(目に見える以上の)さらに複雑な層があります"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:13
 msgid "Performance is lower than using simple APIs directly"
-msgstr ""
+msgstr "単純なAPIを直接使用するよりもパフォーマンスが低くなります"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:14
 msgid "It is not possible to use multiple threads to control them"
-msgstr ""
+msgstr "複数のスレッドを使用してそれらを制御することはできません"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:15
 msgid "More memory is needed."
-msgstr ""
+msgstr "より多くのメモリが必要になります。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:17
 msgid ""
@@ -57,6 +61,10 @@ msgid ""
 "instances for something that needs to be processed every frame can be a "
 "bottleneck."
 msgstr ""
+"多くの場合、これは実際には問題ではありません(Godotは非常に最適化されており、"
+"ほとんどの操作はシグナルで処理されるため、ポーリングは不要です)。それでも、時"
+"にはそれが必要です。たとえば、フレームごとに処理する必要がある何かのインスタ"
+"ンスを数万件処理することがボトルネックになる可能性があります。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:21
 msgid ""
@@ -64,14 +72,16 @@ msgid ""
 "and wish they could go back to a more handcrafted, low level implementation "
 "of game code."
 msgstr ""
+"このような状況では、プログラマはゲームエンジンを使用していることを後悔し、よ"
+"り手作りの低レベルのゲームコード実装に戻ることを望みます。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:24
 msgid "Still, Godot is designed to work around this problem."
-msgstr ""
+msgstr "それでも、Godotはこの問題を回避するように設計されています。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:27
 msgid "Servers"
-msgstr ""
+msgstr "サーバー"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:29
 msgid ""
@@ -79,6 +89,9 @@ msgid ""
 "whole scene system is *optional*. While it is not currently possible to "
 "compile it out, it can be completely bypassed."
 msgstr ""
+"Godotの最も興味深い設計上の決定の1つは、シーンシステム全体が *オプション* で"
+"あるという事実です。現在、その様にコンパイルすることはできませんが、完全にバ"
+"イパスすることができます。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:32
 msgid ""
@@ -86,39 +99,53 @@ msgid ""
 "to control rendering, physics, sound, etc. The scene system is built on top "
 "of them and uses them directly. The most common servers are:"
 msgstr ""
+"コアでは、Godotはサーバーの概念を使用します。これらは、レンダリング、物理演"
+"算、サウンドなどを制御するための非常に低レベルのAPIです。シーンシステムはそれ"
+"らの上に構築され、それらを直接使用します。最も一般的なサーバーは次のとおりで"
+"す:"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:36
 msgid ""
 ":ref:`VisualServer <class_VisualServer>`: handles everything related to "
 "graphics."
 msgstr ""
+":ref:`VisualServer <class_VisualServer>`: グラフィックに関連するすべてを処理"
+"します。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:37
 msgid ""
 ":ref:`PhysicsServer <class_PhysicsServer>`: handles everything related to 3D "
 "physics."
 msgstr ""
+":ref:`PhysicsServer <class_PhysicsServer>`: 3D物理演算に関連するすべてを処理"
+"します。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:38
 msgid ""
 ":ref:`Physics2DServer <class_Physics2DServer>`: handles everything related "
 "to 2D physics."
 msgstr ""
+":ref:`Physics2DServer <class_Physics2DServer>`: 2D物理演算に関連するすべてを"
+"処理します。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:39
 msgid ""
 ":ref:`AudioServer <class_AudioServer>`: handles everything related to audio."
 msgstr ""
+":ref:`AudioServer <class_AudioServer>`: オーディオに関連するすべてを処理しま"
+"す。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:41
 msgid ""
 "Just explore their APIs and you will realize that the all functions provided "
 "are low-level implementations of everything Godot allows you to do."
 msgstr ""
+"APIを調べるだけで、提供されるすべての機能がGodotで実行可能なすべての低レベル"
+"実装であることに気付くでしょう。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:45
 msgid "RIDs"
-msgstr ""
+msgstr "\\ RIDs"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:47
 msgid ""
@@ -127,6 +154,10 @@ msgid ""
 "implementation. They are allocated and freed manually. Almost every function "
 "in the servers requires RIDs to access the actual resource."
 msgstr ""
+"サーバーを使用する鍵は、リソースID(:ref:`RID <class_RID>`)オブジェクトを理解"
+"することです。これらは、サーバー実装への不透明なハンドルです。それらは手動で"
+"割り当てられ、解放されます。サーバーのほぼすべての機能には、実際のリソースに"
+"アクセスするためのRIDが必要です。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:51
 msgid ""
@@ -138,10 +169,17 @@ msgid ""
 "RIDs. Just make sure to keep references to the resources outside the server, "
 "because if the resource is erased, the internal RID is erased too."
 msgstr ""
+"ほとんどのGodotのノードとリソースには、サーバーからこれらのRIDが内部的に含ま"
+"れており、さまざまな機能で取得できます。実際、\\ :ref:`Resource "
+"<class_Resource>` を継承するものはすべてRIDに直接キャストできます(ただし、す"
+"べてのリソースにRIDが含まれるわけではありませんが、そのような場合、RIDは空に"
+"なります)。実際、リソースはRIDとしてサーバーAPIに渡すことができます。リソース"
+"が消去されると、内部RIDも消去されるため、サーバー外部のリソースへの参照を必ず"
+"保持してください。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:58
 msgid "For nodes, there are many functions available:"
-msgstr ""
+msgstr "ノードには、次の多くの機能が用意されています:"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:60
 msgid ""
@@ -149,6 +187,9 @@ msgid ""
 "<class_CanvasItem_method_get_canvas_item>` method will return the canvas "
 "item RID in the server."
 msgstr ""
+"CanvasItemの場合、\\:ref:`CanvasItem.get_canvas_item() "
+"<class_CanvasItem_method_get_canvas_item>` メソッドは、サーバー内のキャンバス"
+"アイテムRIDを返します。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:62
 msgid ""
@@ -156,6 +197,9 @@ msgid ""
 "<class_CanvasLayer_method_get_canvas>` method will return the canvas RID in "
 "the server."
 msgstr ""
+"CanvasLayerの場合、\\ :ref:`CanvasLayer.get_canvas() "
+"<class_CanvasLayer_method_get_canvas>` メソッドはサーバーのキャンバスRIDを返"
+"します。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:64
 msgid ""
@@ -163,6 +207,9 @@ msgid ""
 "<class_Viewport_method_get_viewport_rid>` method will return the viewport "
 "RID in the server."
 msgstr ""
+"ビューポートの場合、\\ :ref:`Viewport.get_viewport_rid() "
+"<class_Viewport_method_get_viewport_rid>` メソッドはサーバーのビューポートRID"
+"を返します。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:66
 msgid ""
@@ -172,6 +219,11 @@ msgid ""
 "*PhysicsServer Space*. This allows creating 3D objects directly with the "
 "server API and using them."
 msgstr ""
+"3Dの場合、\\ :ref:`World <class_World>` リソース(:ref:`Viewport "
+"<class_Viewport>` および :ref:`Spatial <class_Spatial>` ノードで取得可能)に"
+"は *VisualServer Scenario* と *PhysicsServer Space* を取得する関数が含まれま"
+"す。これにより、サーバーAPIを使用して3Dオブジェクトを直接作成し、使用すること"
+"ができます。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:70
 msgid ""
@@ -181,6 +233,11 @@ msgid ""
 "*Physics2DServer Space*. This allows creating 2D objects directly with the "
 "server API and using them."
 msgstr ""
+"2Dの場合、\\:ref:`World2D <class_World2D>` リソース(:ref:`Viewport "
+"<class_Viewport>` および :ref:`CanvasItem <class_CanvasItem>` ノードで取得可"
+"能)には、\\ *VisualServer Canvas* と *Physics2DServer Space* を取得する関数が"
+"含まれます 。これにより、サーバーAPIで2Dオブジェクトを直接作成して使用できま"
+"す。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:74
 msgid ""
@@ -190,12 +247,19 @@ msgid ""
 "`VisualInstance.get_base() <class_VisualInstance_method_get_base>` "
 "respectively."
 msgstr ""
+":ref:`VisualInstance <class_VisualInstance>` クラスは、\\ :ref:"
+"`VisualInstance.get_instance() <class_VisualInstance_method_get_instance>` お"
+"よび :ref:`VisualInstance.get_base() <class_VisualInstance_method_get_base>` "
+"を介して、それぞれscenarioの *instance* および *instance base* を取得できま"
+"す。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:78
 msgid ""
 "Just explore the nodes and resources you are familiar with and find the "
 "functions to obtain the server *RIDs*."
 msgstr ""
+"使い慣れたノードとリソースを調べて、サーバー*RID*を取得する関数を見つけてくだ"
+"さい。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:80
 msgid ""
@@ -203,6 +267,9 @@ msgid ""
 "associated. Instead, server functions should always be used for creating and "
 "controlling new ones and interacting with the existing ones."
 msgstr ""
+"すでにノードが関連付けられているオブジェクトからRIDを制御することはお勧めしま"
+"せん。代わりに、サーバー関数を常に使用して、新しい関数を作成および制御し、既"
+"存の関数と対話する必要があります。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:84
 msgid "Creating a sprite"
@@ -213,6 +280,8 @@ msgid ""
 "This is a simple example of how to create a sprite from code and move it "
 "using the low-level :ref:`CanvasItem <class_CanvasItem>` API."
 msgstr ""
+"これは、コードからスプライトを作成し、低レベルの :ref:`CanvasItem "
+"<class_CanvasItem>` APIを使用して移動する方法の簡単な例です。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:108
 msgid ""
@@ -221,24 +290,29 @@ msgid ""
 "primitives re-added (this is not the case for setting the transform, which "
 "can be done as many times as desired)."
 msgstr ""
+"サーバーのCanvas Item APIを使用すると、描画プリミティブを追加できます。追加し"
+"た後は変更できません。アイテムをクリアし、プリミティブを再度追加する必要があ"
+"ります(これは、幾何学変換を設定する場合には当てはまりません。これは、必要な回"
+"数だけ実行できます)。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:112
 msgid "Primitives are cleared this way:"
-msgstr ""
+msgstr "プリミティブは次の方法でクリアされます:"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:121
 msgid "Instantiating a Mesh into 3D space"
-msgstr ""
+msgstr "メッシュを3D空間にインスタンス化する"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:123
 msgid ""
 "The 3D APIs are different than the 2D ones, so the instantiation API must be "
 "used."
 msgstr ""
+"3D APIは2D APIとは異なるため、インスタンス化APIを使用する必要があります。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:146
 msgid "Creating a 2D RigidBody and moving a sprite with it"
-msgstr ""
+msgstr "2D RigidBodyの作成とスプライトの移動"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:148
 msgid ""
@@ -246,6 +320,9 @@ msgid ""
 "`Physics2DServer <class_Physics2DServer>` API, and moves a :ref:`CanvasItem "
 "<class_CanvasItem>` when the body moves."
 msgstr ""
+"これは :ref:`Physics2DServer <class_Physics2DServer>` APIを使用して :ref:"
+"`RigidBody2D <class_RigidBody2D>` を作成し、ボディが移動すると :ref:"
+"`CanvasItem <class_CanvasItem>` を移動します。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:176
 msgid ""
@@ -253,10 +330,13 @@ msgid ""
 "identical (using :ref:`RigidBody <class_RigidBody>` and :ref:`PhysicsServer "
 "<class_PhysicsServer>` respectively)."
 msgstr ""
+"2Dおよび3D物理サーバーは同一であるため(それぞれ :ref:`RigidBody "
+"<class_RigidBody>` および :ref:`PhysicsServer <class_PhysicsServer>` を使"
+"用)、3Dバージョンも非常に似ているはずです。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:180
 msgid "Getting data from the servers"
-msgstr ""
+msgstr "サーバーからデータを取得する"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:182
 msgid ""
@@ -268,6 +348,12 @@ msgid ""
 "called. This will severely decrease performance if you call them every frame "
 "(and it won't be obvious why)."
 msgstr ""
+"自分が何をしているのか理解していないのなら、\\ **絶対に**\\ 関数を呼び出して "
+"``VisualServer``\\ 、\\ ``PhysicsServer``\\ 、または\\ ``Physics2DServer`` に"
+"情報を要求しないでください。これらのサーバーは、多くの場合、パフォーマンスの"
+"ために非同期に実行され、値を返す関数を呼び出すと、関数が実際に呼び出されるま"
+"で、それらの関数が停止し、保留中の処理を強制します。これをフレームごとに呼び"
+"出すと、パフォーマンスが大幅に低下します(理由は明らかではありません)。"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:188
 msgid ""
@@ -275,3 +361,5 @@ msgid ""
 "possible to request information back, until it's actual data that can be "
 "saved."
 msgstr ""
+"このため、このようなサーバーのほとんどのAPIは、保存可能な実際のデータができる"
+"まで、情報を要求することさえできないように設計されています。"

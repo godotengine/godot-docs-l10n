@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:4
 msgid "Exporting for iOS"
-msgstr ""
+msgstr "Exportando para iOS"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:6
 msgid ""
@@ -27,71 +27,89 @@ msgid ""
 "build and deploy to an iOS device, build a release for the App Store, and do "
 "everything else you can normally do with Xcode."
 msgstr ""
+"Estas são as etapas para carregar um projeto Godot em Xcode. Isso permite "
+"que você compile e instale em um dispositivo iOS, compile uma versão para a "
+"App Store e faça tudo o que você normalmente pode fazer com xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:11
 msgid "Requirements"
-msgstr ""
+msgstr "Requisitos"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:13
 msgid ""
 "You must export for iOS from a computer running macOS with Xcode installed."
 msgstr ""
+"Você deve exportar para iOS a partir de um computador executando macOS com "
+"Xcode instalado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:14
 msgid ""
 "Download the Godot export templates. Use the Godot menu: Editor > Manage "
 "Export Templates"
 msgstr ""
+"Baixe os modelos de exportação godot. Use o menu Godot: Editor > Gerenciar "
+"modelos de exportação"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:17
 msgid "Export a Godot project to Xcode"
-msgstr ""
+msgstr "Exportar um projeto Godot para Xcode"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:19
 msgid ""
 "In the Godot editor, open the **Export** window from the **Project** menu. "
 "When the Export window opens, click **Add..** and select **iOS**."
 msgstr ""
+"No editor do Godot, abra a janela **Exportar** do menu **Projeto** Quando a "
+"janela de exportação for aberta, clique em **Adicionar.. ** e selecione "
+"**iOS**."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:22
 msgid ""
 "The following export options are required. Leaving any blank will cause the "
 "exporter to throw an error:"
 msgstr ""
+"São necessárias as seguintes opções de exportação. Deixar qualquer campo em "
+"branco fará com que o exportador dê um erro:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:25
 msgid "In the **Application** category * **App Store Team ID**"
-msgstr ""
+msgstr "Na categoria **Application** o campo **App Store Team ID**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:27
 msgid "Everything in the **Required Icons** category"
-msgstr ""
+msgstr "Tudo na categoria **Required Icons**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:28
 msgid "Everything in the **Landscape Launch Screens** category"
-msgstr ""
+msgstr "Tudo na categoria **Landscape Launch Screens**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:29
 msgid "Everything in the **Portrait Launch Screens** category"
-msgstr ""
+msgstr "Tudo na categoria **Portrait Launch Screens**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:31
 msgid ""
 "After you click **Export Project**, there are still two important options "
 "left:"
 msgstr ""
+"Depois de clicar em **Projeto de Exportação**, ainda restam duas opções "
+"importantes:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:33
 msgid ""
 "**Path** is an empty folder that will contain the exported Xcode project "
 "files."
 msgstr ""
+"**Path** é uma pasta vazia que conterá os arquivos do projeto Xcode "
+"exportados."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:34
 msgid ""
 "**File** will be the name of the Xcode project and several project specific "
 "files and directories."
 msgstr ""
+"**File** será o nome do projeto Xcode e vários arquivos e diretórios "
+"específicos do projeto."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:38
 msgid ""

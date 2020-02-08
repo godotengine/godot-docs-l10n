@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,22 +77,28 @@ msgid ""
 "it for 2D in a drawing such as Paint.net, Gimp, Photoshop, etc. or in 3D "
 "through a 3D DCC tool such as Blender, Max, Maya, etc."
 msgstr ""
+"ある時点で、誰かがこの宇宙船を\\ *設計*\\ したことを理解する必要があります。"
+"Paint.net、Gimp、Photoshopなどの図面で2Dを作成するか、Blender、Max、Mayaなど"
+"の3D DCCツールを使用して3Dを作成します。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:35
 msgid ""
 "When it was designed, it was not rotated. It was designed in its own "
 "*coordinate system*."
 msgstr ""
+"設計時には、回転していませんでした。独自の\\ *座標系*\\ で設計されました。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:40
 msgid ""
 "This means that the tip of the ship has a coordinate, the fin has another, "
 "etc. Be it in pixels (2D) or vertices (3D)."
 msgstr ""
+"これは、船の先端に座標があり、フィンに別の座標があることを意味します。ピクセ"
+"ル(2D)または頂点(3D)のいずれかです。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:43
 msgid "So, let's recall again that the ship was somewhere in space:"
-msgstr ""
+msgstr "それでは、船が宇宙のどこかにあったことをもう一度思い出しましょう:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:47
 msgid ""
@@ -101,6 +107,9 @@ msgid ""
 "was *transformed* from their original position to the new one. This allows "
 "the ship to be displayed where it is."
 msgstr ""
+"どうやってそこに行きましたか？何が移動して、設計された場所から現在の位置に回"
+"転したのでしょうか？答えは...\\ **変換**\\ です。船は元の位置から新しい位置に"
+"\\ *変換*\\ されました。これにより、船舶を現在の場所に表示できます。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:52
 msgid ""
@@ -108,6 +117,8 @@ msgid ""
 "this puzzle, we will superimpose the ship's original design position at "
 "their current position:"
 msgstr ""
+"しかし、変換はこのプロセスを説明するには一般的な用語です。このパズルを解決す"
+"るために、船の元の設計位置を現在の位置に重ね合わせます:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:58
 msgid ""
@@ -116,49 +127,65 @@ msgid ""
 "a unit vector pointing towards X positive, a unit vector pointing towards Y "
 "positive and a translation."
 msgstr ""
+"そのため、\\ ``デザインスペース`` も変化していることがわかります。この変換を"
+"どのように最もよく表現できますか？これに3つのベクトル(2D)を使用してみましょ"
+"う。Xの正の方向を指す単位ベクトル、Yの正の方向を指す単位ベクトル、および平行"
+"移動です。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:65
 msgid ""
 "Let's call the 3 vectors \"X\", \"Y\" and \"Origin\", and let's also "
 "superimpose them over the ship so it makes more sense:"
 msgstr ""
+"3つのベクトルを\"X\"、\"Y\"、\"Origin(原点)\"と呼び、さらにそれらを船の上に重"
+"ねて、より意味のあるものにしましょう:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:70
 msgid ""
 "Ok, this is nicer, but it still does not make sense. What do X,Y and Origin "
 "have to do with how the ship got there?"
 msgstr ""
+"さて、これは良い感じですが、まだ意味をなしていません。X、Y、Originは船がそこ"
+"に着いた方法と何の関係があるのでしょうか？"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:73
 msgid "Well, let's take the point from top tip of the ship as reference:"
-msgstr ""
+msgstr "では、船の先端のポイントを参考にしてみましょう:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:77
 msgid ""
 "And let's apply the following operation to it (and to all the points in the "
 "ship too, but we'll track the top tip as our reference point):"
 msgstr ""
+"そして、次の操作をそれに適用してみましょう(そして船内のすべてのポイントにも適"
+"用しますが、基準点として先端を追跡します):"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:89
 msgid "Doing this to the selected point will move it back to the center:"
-msgstr ""
+msgstr "選択したポイントにこれを行うと、中心に戻ります:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:93
 msgid ""
 "This was expected, but then let's do something more interesting. Use the dot "
 "product of X and the point, and add it to the dot product of Y and the point:"
 msgstr ""
+"これは予想されていましたが、それからもっと面白いことをしましょう。Xと点の内積"
+"を使用し、Yと点の内積に追加します。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:106
 msgid ""
 "Then what we have is.. wait a minute, it's the ship in its design position!"
 msgstr ""
+"そして、私たちが持っているのは...ちょっと待ってください、それは元の設計位置に"
+"ある船です！"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:111
 msgid ""
 "How did this black magic happen? The ship was lost in space, and now it's "
 "back home!"
 msgstr ""
+"この黒魔術はどのようして起きたのですか？船は宇宙から消え、今では家に戻ってい"
+"ます！"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:114
 msgid ""
@@ -168,6 +195,10 @@ msgid ""
 "a direction or plane was one of the uses for the dot product. This was "
 "enough to obtain back the design coordinates for every point in the ship."
 msgstr ""
+"奇妙に見えるかもしれませんが、多くのロジックがあります。\\ :ref:"
+"`doc_vector_math` で見たように、X軸までの距離とY軸までの距離が計算されたこと"
+"を思い出してください。方向または平面での距離の計算は、内積の用途の1つです。こ"
+"れは、船内のすべてのポイントの設計座標を取り戻すのに十分でした。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:121
 msgid ""
@@ -175,6 +206,9 @@ msgid ""
 "*Oriented Coordinate System*. X an Y are the **Basis**, and *Origin* is the "
 "offset."
 msgstr ""
+"そのため、これまで(X、Y、およびOriginを使用して)取り組んできたのは \\*指向座"
+"標系(OCS)*\\です。 XとYは\\**基準軸(基底)**\\で、\\* Origin*\\はオフセットで"
+"す。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:126
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:614
@@ -188,6 +222,9 @@ msgid ""
 "is why it's called *Origin*, But in practice, it's just an offset to the new "
 "position."
 msgstr ""
+"Originが何であるかを知っています。これは、新しい位置に変換された後、設計座標"
+"系の0,0(原点)が終わった場所です。これが\\*Origin*\\と呼ばれる理由ですが、実際"
+"には、新しい位置へのオフセットにすぎません。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:133
 msgid ""
@@ -197,12 +234,18 @@ msgid ""
 "original X and Y axes of your design are *right here*, pointing towards "
 "*these directions*.\""
 msgstr ""
+"基準軸はもっと面白いです。基準軸は、新しい変換された場所からのOCSのXおよびYの"
+"方向です。変更内容を2Dまたは3Dで通知します。 Origin(オフセット)とBasis(方向)"
+"は、次のように伝えます「デザインの元のX軸とY軸は\\ *ここ*\\ にあり、\\ *これ"
+"らの方向*\\ を指しています」"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:139
 msgid ""
 "So, let's change the representation of the basis. Instead of 2 vectors, "
 "let's use a *matrix*."
 msgstr ""
+"それでは、基準軸の表現を変更しましょう。 2つのベクトルの代わりに、\\ *matrix*"
+"\\ を使用しましょう。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:144
 msgid ""
@@ -210,10 +253,12 @@ msgid ""
 "is that.. what is this matrix thing? Well, we'll assume you've never heard "
 "of a matrix."
 msgstr ""
+"ベクトルは、行列(matrix/マトリックス)内の水平方向にあります。次の問題は、それ"
+"です..この行列って何ですか？さて、行列について聞いたことがないと仮定します。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:149
 msgid "Transforms in Godot"
-msgstr ""
+msgstr "Godotで変換(幾何学変換)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:151
 msgid ""
@@ -222,6 +267,10 @@ msgid ""
 "be a lot simpler to understand after completing this tutorial. We'll just "
 "explain how to use transforms."
 msgstr ""
+"このチュートリアルでは、行列の数学(およびその演算)については詳しく説明せず、"
+"実用的な使い方のみを説明します。そのための資料はたくさんありますが、この"
+"チュートリアルを完了すると、理解しやすくなります。変換(Transform)の使用方法を"
+"説明します。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:157
 msgid "Transform2D"
@@ -234,32 +283,37 @@ msgid ""
 "and \"Origin\" is element 2. It's not divided in basis/origin for "
 "convenience, due to its simplicity."
 msgstr ""
+":ref:`class_Transform2D` は3x2行列です。 3つのVector2要素があり、2Dに使用され"
+"ます。\"X\"軸は要素0、\"Y\"軸は要素1、\"Origin\"は要素2です。その単純さのた"
+"め、便宜上、基準軸/原点で分割されていません。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:179
 msgid ""
 "Most operations will be explained with this datatype (Transform2D), but the "
 "same logic applies to 3D."
 msgstr ""
+"ほとんどの操作はこのデータ型(Transform2D)で説明されますが、同じロジックが3Dに"
+"も適用されます。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:183
 msgid "Identity"
-msgstr ""
+msgstr "単位"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:185
 msgid "An important transform is the \"identity\" matrix. This means:"
-msgstr ""
+msgstr "重要なTransformは「単位」行列です。これの意味は:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:187
 msgid "'X' Points right: Vector2(1,0)"
-msgstr ""
+msgstr "'X'ポイント 右: Vector2(1,0)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:188
 msgid "'Y' Points up (or down in pixels): Vector2(0,1)"
-msgstr ""
+msgstr "'Y'ポイント 上(またはピクセルの下): Vector2(0,1)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:189
 msgid "'Origin' is the origin Vector2(0,0)"
-msgstr ""
+msgstr "'Origin'は原点 Vector2(0,0)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:193
 msgid ""
@@ -267,32 +321,36 @@ msgid ""
 "the transform to its parent coordinate system. It's an *OCS* that hasn't "
 "been translated, rotated or scaled."
 msgstr ""
+"* 単位*\\ 行列は、変換を親座標系に合わせた行列にすぎないと推測するのは簡単で"
+"す。これは、変換、回転、またはスケーリングされていない *OCS* です。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:220
 msgid "Operations"
-msgstr ""
+msgstr "操作"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:223
 msgid "Rotation"
-msgstr ""
+msgstr "回転"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:225
 msgid "Rotating Transform2D is done by using the \"rotated\" function:"
-msgstr ""
+msgstr "Transform2Dの回転は、\"rotated\"関数を使用して行われます:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:241
 msgid "Translation"
-msgstr ""
+msgstr "翻訳"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:243
 msgid ""
 "There are two ways to translate a Transform2D, the first one is moving the "
 "origin:"
 msgstr ""
+"Transform2Dの処理を翻訳するには2つの方法があります。最初の方法は原点を移動す"
+"ることです:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:263
 msgid "This will always work in global coordinates."
-msgstr ""
+msgstr "これは常にグローバル座標で機能します。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:265
 msgid ""
@@ -300,27 +358,33 @@ msgid ""
 "(towards where the *basis* is oriented), there is the :ref:`Transform2D."
 "translated() <class_Transform2D_method_translated>` method:"
 msgstr ""
+"代わりに、行列の\\ *local*\\ 座標(\\ *基準軸*\\ が向いている方向)での変換が必"
+"要な場合、\\ :ref:`Transform2D.translated() "
+"<class_Transform2D_method_translated>` メソッドがあります:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:287
 msgid ""
 "You could also transform the global coordinates to local coordinates "
 "manually:"
-msgstr ""
+msgstr "グローバル座標をローカル座標に手動で変換することもできます:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:298
 msgid ""
 "But even better, there are helper functions for this as you can read in the "
 "next sections."
 msgstr ""
+"しかし、さらに良いことに、次のセクションに書かれているように、このためのヘル"
+"パー関数があります。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:301
 msgid "Local to global coordinates and vice versa"
-msgstr ""
+msgstr "ローカル座標からグローバル座標、およびその逆"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:303
 msgid ""
 "There are helper methods for converting between local and global coordinates."
 msgstr ""
+"ローカル座標とグローバル座標を変換するためのヘルパーメソッドがあります。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:305
 msgid ""
@@ -329,6 +393,10 @@ msgid ""
 "`Spatial.to_local() <class_Spatial_method_to_local>` and :ref:`Spatial."
 "to_global() <class_Spatial_method_to_global>` for 3D."
 msgstr ""
+"2Dの場合は :ref:`Node2D.to_local() <class_Node2D_method_to_local>` と :ref:"
+"`Node2D.to_global() <class_Node2D_method_to_global>`\\ 、3Dには :ref:"
+"`Spatial.to_local() <class_Spatial_method_to_local>`\\ 、および :ref:` "
+"Spatial.to_global() <class_Spatial_method_to_global>` があります。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:309
 msgid "Scale"
@@ -340,6 +408,9 @@ msgid ""
 "vector (X vector by x component of the scale, Y vector by y component of the "
 "scale). It will leave the origin alone:"
 msgstr ""
+"行列も拡大縮小できます。スケーリングは、基底ベクトル(基準軸)にベクトルを乗算"
+"します(Xベクトルとスケールのx要素、Yベクトルをスケールのy要素で乗算します)。"
+"このばあい原点はそのまま残します:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:330
 msgid ""
@@ -347,6 +418,9 @@ msgid ""
 "starts relative to the previous one. For those who have been living on this "
 "planet long enough, a good reference of how transform works is this:"
 msgstr ""
+"行列内のこの種の演算は累積的です。これは、すべてが前のものに関連して開始する"
+"ことを意味します。この惑星に十分長く住んでいる人にとって、変換がどのように機"
+"能するかについての良いリファレンスはこれです:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:337
 msgid ""
@@ -354,6 +428,10 @@ msgid ""
 "inside (and you are likely learning this many years *after* discovering "
 "Santa is not real)."
 msgstr ""
+"行列はタートルと同様に使用されます。カメはおそらく内部に行列を持っていました"
+"(そして、おそらくサンタが本物ではないことを発見した\\ *後*\\ 、あなたはこの何"
+"年も学んでいるでしょう)。訳注: 海外のプログラミング教育でLOGOなどのタートルグ"
+"ラフィックスが使用されている事に関連した文だと思われます。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:342
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:703
@@ -366,50 +444,58 @@ msgid ""
 "position (either 2D or 3D) from \"designer\" coordinate system to the OCS, "
 "the \"xform\" method is used."
 msgstr ""
+"変換とは、座標系を切り替えることです。位置(2Dまたは3D)を「デザイナー」座標系"
+"からOCSに変換するには、\"xform\"メソッドが使用されます。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:357
 msgid "And only for basis (no translation):"
-msgstr ""
+msgstr "そして、基準軸のみ(変換なし):"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:369
 msgid "Inverse transform"
-msgstr ""
+msgstr "逆変換"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:371
 msgid ""
 "To do the opposite operation (what we did up there with the rocket), the "
 "\"xform_inv\" method is used:"
 msgstr ""
+"逆の操作(ロケットで行ったこと)を行うには、\"xform_inv\"メソッドが使用されま"
+"す:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:383
 msgid "Only for Basis:"
-msgstr ""
+msgstr "基準軸のみ:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:395
 msgid "Orthonormal matrices"
-msgstr ""
+msgstr "直交行列"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:397
 msgid ""
 "However, if the matrix has been scaled (vectors are not unit length), or the "
 "basis vectors are not orthogonal (90°), the inverse transform will not work."
 msgstr ""
+"ただし、行列がスケーリングされている場合(ベクトルが単位長ではありません)、ま"
+"たは基底ベクトルが直交(90°で交差)していない場合、逆変換は機能しません。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:401
 msgid ""
 "In other words, inverse transform is only valid in *orthonormal* matrices. "
 "For this, these cases an affine inverse must be computed."
 msgstr ""
+"言い換えれば、逆変換は\\ *直交*\\ 行列でのみ有効です。このため、これらの場"
+"合、アフィン変換の逆行列を計算する必要があります。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:404
 msgid ""
 "The transform, or inverse transform of an identity matrix will return the "
 "position unchanged:"
-msgstr ""
+msgstr "変換、または単位行列の逆変換は、変更されていない位置を返します:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:419
 msgid "Affine inverse"
-msgstr ""
+msgstr "アフィン逆行列"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:421
 msgid ""
@@ -418,25 +504,28 @@ msgid ""
 "orthogonal. The affine inverse is calculated with the affine_inverse() "
 "method:"
 msgstr ""
+"アフィン逆行列は、行列にスケールがあるか、軸ベクトルが直交していないかに関係"
+"なく、別の行列の逆演算を行う行列です。アフィン逆行列は、affine_inverse()メ"
+"ソッドを使用して計算されます:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:441
 msgid "If the matrix is orthonormal, then:"
-msgstr ""
+msgstr "行列が正規直交の場合には:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:459
 msgid "Matrix multiplication"
-msgstr ""
+msgstr "行列乗算"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:461
 msgid ""
 "Matrices can be multiplied. Multiplication of two matrices \"chains"
 "\" (concatenates) their transforms."
-msgstr ""
+msgstr "行列は乗算できます。 2つの行列の乗算は、変換を「結合」(連結)します。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:464
 msgid ""
 "However, as per convention, multiplication takes place in reverse order."
-msgstr ""
+msgstr "ただし、慣例に従って、乗算は逆の順序で行われます。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:467
 msgid "Example:"
@@ -444,75 +533,83 @@ msgstr "例:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:478
 msgid "To make it a little clearer, this:"
-msgstr ""
+msgstr "もう少し明確にするために、次の手順を実行します:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:491
 msgid "Is the same as:"
-msgstr ""
+msgstr "次の場合と同じです:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:504
 msgid "However, this is not the same:"
-msgstr ""
+msgstr "ただし、これは同じではありません:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:517
 msgid "Because in matrix math, A * B is not the same as B * A."
-msgstr ""
+msgstr "行列演算では、A * B は B * A と同じではないからです。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:520
 msgid "Multiplication by inverse"
-msgstr ""
+msgstr "逆行列による乗算"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:522
 msgid "Multiplying a matrix by its inverse, results in identity:"
-msgstr ""
+msgstr "行列に逆行列を掛けると、次の結果が得られます:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:536
 msgid "Multiplication by identity"
-msgstr ""
+msgstr "単位行列による乗算"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:538
 msgid "Multiplying a matrix by identity, will result in the unchanged matrix:"
-msgstr ""
+msgstr "行列を単位行列で乗算すると、変更されない行列が生まれます:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:552
 msgid "Matrix tips"
-msgstr ""
+msgstr "行列のヒント"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:554
 msgid ""
 "When using a transform hierarchy, remember that matrix multiplication is "
 "reversed! To obtain the global transform for a hierarchy, do:"
 msgstr ""
+"階層変換を使用する場合、行列の乗算が逆になることに注意してください！階層のグ"
+"ローバル変換を取得するには、次を実行します:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:566
 msgid "For 3 levels:"
-msgstr ""
+msgstr "3つのレベルの場合:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:577
 msgid ""
 "To make a matrix relative to the parent, use the affine inverse (or regular "
 "inverse for orthonormal matrices)."
 msgstr ""
+"親を基準にして行列を作成するには、アフィン逆行列(または正規直交行列の場合は通"
+"常の逆行列)を使用します。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:591
 msgid "Revert it just like the example above:"
-msgstr ""
+msgstr "上記の例と同じように元に戻します:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:604
 msgid ""
 "OK, hopefully this should be enough! Let's complete the tutorial by moving "
 "to 3D matrices."
 msgstr ""
+"さて、うまくいけばこれで十分でしょう！ 3Dマトリックスに移動してチュートリアル"
+"を完了しましょう。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:608
 msgid "Matrices & transforms in 3D"
-msgstr ""
+msgstr "3Dの行列と変換"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:610
 msgid ""
 "As mentioned before, for 3D, we deal with 3 :ref:`Vector3 <class_Vector3>` "
 "vectors for the rotation matrix, and an extra one for the origin."
 msgstr ""
+"前に述べたように、3Dの場合、回転行列用に3つの :ref:`Vector3 <class_Vector3>` "
+"ベクトルを処理し、原点用に追加のベクトルを処理します。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:616
 msgid ""
@@ -520,22 +617,25 @@ msgid ""
 "It can be used to represent a 3D rotation and scale. Sub vectors can be "
 "accessed as:"
 msgstr ""
+"Godotには、\\ :ref:`Basis <class_Basis>` という名前の3x3行列用の特別な型があ"
+"ります。 3Dの回転とスケールを表すために使用できます。サブベクトルには次のよう"
+"にアクセスできます:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:635
 msgid "Or, alternatively as:"
-msgstr ""
+msgstr "または、次のようにします:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:652
 msgid "The Identity Basis has the following values:"
-msgstr ""
+msgstr "単位基底(基準軸/Basis)には次の値があります:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:656
 msgid "And can be accessed like this:"
-msgstr ""
+msgstr "そして、次のようにアクセスできます:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:680
 msgid "Rotation in 3D"
-msgstr ""
+msgstr "3Dでの回転"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:682
 msgid ""
@@ -543,33 +643,41 @@ msgid ""
 "same), because rotation is an implicit 2D operation. To rotate in 3D, an "
 "*axis*, must be picked. Rotation, then, happens around this axis."
 msgstr ""
+"3Dの回転は、2Dよりも複雑です(平行移動とスケールは同じです)。3Dで回転するに"
+"は、\\ *軸*\\ を選択する必要があります。回転はこの軸の周りに発生します。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:686
 msgid ""
 "The axis for the rotation must be a *normal vector*. As in, a vector that "
 "can point to any direction, but length must be one (1.0)."
 msgstr ""
+"回転の軸は\\ *正規化ベクトル*\\ でなければなりません。なので、任意の方向を指"
+"すことができるベクトルですが、長さは1(1.0)でなければなりません。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:705
 msgid ""
 "To add the final component to the mix, Godot provides the :ref:`Transform "
 "<class_Transform>` type. Transform has two members:"
 msgstr ""
+"ミックスに最後の要素を追加するために、Godotは :ref:`Transform "
+"<class_Transform>` タイプを提供します。 Transformには2つのメンバーがあります:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:708
 msgid "*basis* (of type :ref:`Basis <class_Basis>`)"
-msgstr ""
+msgstr "*basis* (タイプ :ref:`Basis <class_Basis>`\\ の)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:709
 msgid "*origin* (of type :ref:`Vector3 <class_Vector3>`)"
-msgstr ""
+msgstr "*origin* (タイプ :ref:`Vector3 <class_Vector3>`\\ の)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:711
 msgid ""
 "Any 3D transform can be represented with Transform, and the separation of "
 "basis and origin makes it easier to work translation and rotation separately."
 msgstr ""
+"どの3D変換もTransformで表すことができ、基底と原点を分離することで、移動/変形"
+"と回転を別々に簡単に行うことができます。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:715
 msgid "An example:"
-msgstr ""
+msgstr "例:"

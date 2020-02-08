@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,25 +36,23 @@ msgid "Project manager"
 msgstr "Administrador de proyectos"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
-"Cuando ejecutas Godot, la primera ventana que aparece es el Administrador de "
-"Proyectos. Este te permite crear, borrar, importar o ejecutar proyectos de "
-"juegos."
+"Cuando inicies a Godot, la primera ventana que verás es la del Administrador "
+"de Proyectos. Como no tienes proyectos, aparecerá una ventana emergente que "
+"te preguntará si quieres abrir la biblioteca de assets, sólo tienes que "
+"hacer clic en cancelar, ya lo veremos más tarde."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
-#, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"Cuando ejecutas Godot, la primera ventana que aparece es el Administrador de "
-"Proyectos. Este te permite crear, borrar, importar o ejecutar proyectos de "
-"juegos."
+"Ahora deberías ver el administrador de proyectos. Te permite crear, "
+"eliminar, importar o jugar proyectos de juegos."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
@@ -65,7 +63,6 @@ msgstr ""
 "cambiar el idioma del editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -73,25 +70,26 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"En la pestaña **Plantillas** podrás descargar plantillas de código abierto y "
-"demos que te ayudarán a comenzar rápidamente. Solo selecciona la plantilla o "
-"demo que gustes, haz clic en descargar, una vez haya finalizado de "
-"descargar, haz clic en instalar y elige dónde quieres que este el proyecto."
+"Desde la pestaña **Plantillas** puedes descargar plantillas de proyectos de "
+"código abierto y demostraciones de la Biblioteca de Assets para ayudarte a "
+"empezar más rápido. Simplemente selecciona la plantilla o demostración que "
+"desees, haz clic en descargar y una vez que finalice la descarga haz clic en "
+"instalar y elige dónde quieres que vaya el proyecto. Puedes obtener más "
+"información en :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
 msgstr "Crear o importar un proyecto"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
-"Para crear un nuevo proyecto, haz clic en el botón ``Nuevo proyecto`` a la "
-"derecha. Dale un nombre y elige una carpeta vacía en tu ordenador para "
-"guardarlo."
+"Para crear un nuevo proyecto, haz clic en el botón ``Nuevo Proyecto`` de la "
+"derecha. Aquí le darás un nombre, elegirás una carpeta vacía en tu equipo "
+"para guardarlo y elegirás un renderizador."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
@@ -103,19 +101,18 @@ msgstr ""
 "del proyecto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
-#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"Cuando veas la marca verde a la derecha, significa que el engine detecta una "
-"carpeta vacía y puedes hacer clic en ``Crear y editar``. Godot creará el "
-"proyecto por ti y lo abrirá en el editor."
+"Cuando veas la marca verde a la derecha significa que el motor detecta una "
+"carpeta vacía. También puedes hacer clic en el botón ``Crear Carpeta`` junto "
+"al nombre del proyecto y se creará una carpeta vacía con dicho nombre "
+"automáticamente."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
-#, fuzzy
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -123,31 +120,28 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
-"En este paso también puedes seleccionar el método de representación (OpenGL "
-"ES 3.0 u OpenGL ES 2.0). Las ventajas y desventajas de cada una se enumeran "
-"para ayudarte a elegir y puedes consultar: ref: "
-"`doc_gles2_gles3_differences` para obtener más detalles. Ten en cuenta que "
-"puedes cambiar el método desde la configuración del proyecto si cambias de "
-"opinión más adelante. Para este tutorial, cualquier método está bien."
+"Finalmente, hay que elegir el motor de render que se quiere usar (OpenGL ES "
+"3.0 u OpenGL ES 2.0). Las ventajas y desventajas de cada uno se enumeran "
+"para ayudarte a elegir y puedes consultar: `doc_gles2_gles3_differences` "
+"para obtener más detalles. Ten en cuenta que puedes cambiar el método desde "
+"la configuración del proyecto si cambias de opinión más adelante. Para este "
+"tutorial, cualquier método está bien."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"Cuando veas la marca verde a la derecha, significa que el engine detecta una "
-"carpeta vacía y puedes hacer clic en ``Crear y editar``. Godot creará el "
-"proyecto por ti y lo abrirá en el editor."
+"Cuando hayas terminado haz clic en ``Crear y editar ``. Godot creará el "
+"proyecto y lo abrirá en el editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"La próxima vez que abras Godot, verás tu nuevo proyecto en la lista. Haz "
-"doble clic sobre él para abrirlo en el editor."
+"La próxima vez que abras el administrador de proyectos, verás tu nuevo "
+"proyecto en la lista. Haz doble clic sobre él para abrirlo en el editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -168,11 +162,12 @@ msgid "Your first look at Godot’s editor"
 msgstr "Una primera mirada al editor de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with empty docks on the right side."
-msgstr "Ahora se verá esta interfaz, con los paneles vacíos a la derecha."
+msgstr ""
+"¡Bienvenide a Godot! Una vez abierto el proyecto deberías ver la interfaz "
+"del editor con paneles vacíos a la derecha."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -184,13 +179,12 @@ msgstr ""
 "prueba**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
-#, fuzzy
 msgid ""
 "On the bottom left side, you have the **FileSystem dock**, where you’ll "
 "manage your project files and assets."
 msgstr ""
-"En el lado izquierdo está el **Panel de Sistema de Archivos**, donde se "
-"administrarán los archivos y recursos del proyecto."
+"Abajo a la izquierda está el panel **Sistema de archivos**, donde se "
+"administrarán los archivos y assets del proyecto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
@@ -252,7 +246,6 @@ msgstr ""
 "diseñar niveles para juegos 3D. Presione F2 para acceder a este modo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
@@ -289,10 +282,11 @@ msgid "Modify the interface"
 msgstr "Modificando la interfaz"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
+#, fuzzy
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
-"Atom or Visual Studio for instance."
+"Atom or Visual Studio Code for instance."
 msgstr ""
 "La interfaz de Godot se encuentra en una ventana única. No se puede separar "
 "en múltiples pantallas pero se puede trabajar con editor de código externo "

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
 msgid "Design the GUI"
-msgstr "Entwurf der Oberfläche"
+msgstr "Gestaltung der Oberfläche"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
 msgid ""
@@ -28,9 +28,9 @@ msgid ""
 "energy bar, and bomb and emerald counters. By the end of this tutorial, "
 "you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
-"Jetzt da du die Grundlagen drauf hast, sehen wir uns an, wie wir die "
-"Graphische Benutzeroberfläche (engl. Graphical User Interface, kurz GUI) aus "
-"wiederverwendbaren Bausteinen erzeugen können: einem Lebensleiste, einer "
+"Jetzt, da du die Grundlagen drauf hast, sehen wir uns an, wie wir die "
+"grafische Benutzeroberfläche (engl. Graphical User Interface, kurz GUI) aus "
+"wiederverwendbaren Bausteinen erzeugen können: einer Lebensleiste, einer "
 "Energieleiste, einer Bombe und einem Smaragdzähler. Am Ende dieser Anleitung "
 "wirst du eine fertige GUI haben, die mit GDScript oder Visualscript "
 "gesteuert werden kann:"
@@ -609,7 +609,6 @@ msgstr ""
 "stimmt so noch nicht"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -617,11 +616,12 @@ msgid ""
 "resize its left edge a little bit to add some padding between the left edge "
 "of the ``Background`` and the text."
 msgstr ""
-"Lass uns nun die Eigenschaften der ``Number``'s Ausrichtung ändern um sie "
-"mittig links im ``Background`` anzuordnen. Wähle die ``Number`` Node, setze "
-"ihre ``Align`` Eigenschaft auf links und die ``VAlign`` Eigenschaft auf "
-"zentriert. Ändere dann die Größe der linken Kante ein bisschen, um etwas "
-"Abstand zwischen den linken Rand des ``Background``s und dem Text einzufügen."
+"Lassen Sie uns nun die Eigenschaften der ``Number``s Ausrichtung ändern um "
+"sie mittig links im ``Background`` anzuordnen. Wähle Sie die ``Number`` "
+"Node, setzen Sie ihre ``Align`` Eigenschaft auf links und die ``VAlign`` "
+"Eigenschaft auf zentriert. Änderen Sie dann die Größe der linken Kante ein "
+"bisschen, um etwas Abstand zwischen den linken Rand des ``Background``s und "
+"dem Text einzufügen."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
 msgid "The Number node aligned to the left and centre"

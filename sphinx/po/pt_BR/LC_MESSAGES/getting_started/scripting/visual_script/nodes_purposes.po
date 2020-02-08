@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -865,7 +865,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:433
 msgid "Emit Signal"
-msgstr "Emitir sinal"
+msgstr "Emit Signal"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid ""
@@ -877,21 +877,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:439
 msgid "Get/Set"
-msgstr "Prepare-se"
+msgstr "Get/Set"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
-#, fuzzy
 msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
-"Generic Getter/Setter Node (Adquirente genérico/Nó modificador). As "
-"propriedades de arrastamento do Inspector funcionam melhor, já que aparecem "
-"corretamente configuradas ao soltar."
+"Nó Getter/Setter genérico. As propriedades de arrastamento do Inspetor "
+"funcionam melhor, já que aparecem corretamente configuradas ao soltar."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
-msgstr "Esperar"
+msgstr "Wait"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid ""
@@ -900,14 +898,14 @@ msgid ""
 "you to wait for a frame to pass, a fixed frame or a given amount of time "
 "until execution is resumed."
 msgstr ""
-"Os nós de espera suspenderão a execução da função até que algo aconteça "
-"(muitos quadros podem passar até a retomada, na verdade). Os nós padrão "
-"permitem que você aguarde a passagem de um quadro, um quadro fixo ou um "
-"determinado período de tempo até que a execução seja retomada."
+"Os nós Wait suspenderão a execução da função até que algo aconteça (muitos "
+"quadros podem passar até a retomada, na verdade). Os nós padrão permitem que "
+"você aguarde a passagem de um quadro, um quadro fixo ou um determinado "
+"período de tempo até que a execução seja retomada."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 msgid "Yield"
-msgstr "Conceder"
+msgstr "Yield"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -919,7 +917,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:458
 msgid "Yield Signal"
-msgstr "Conceder Sinal"
+msgstr "Yield Signal"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Same as Yield, but will wait until a given signal is emitted."

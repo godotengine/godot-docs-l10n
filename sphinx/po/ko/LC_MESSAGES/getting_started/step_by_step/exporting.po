@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,11 +125,11 @@ msgstr ""
 "여기 플레이어를 위한 전체 스크립트가 있습니다, 변경한 점에는 코멘트가 있습니"
 "다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:129
+#: ../../docs/getting_started/step_by_step/exporting.rst:246
 msgid "Setting a main scene"
 msgstr "메인 씬 설정하기"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:131
+#: ../../docs/getting_started/step_by_step/exporting.rst:248
 msgid ""
 "The main scene is the one that your game will start in. In *Project -> "
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
@@ -139,11 +139,11 @@ msgstr ""
 "(Project Settings) -> Application -> Run*\\ 에서, *Main Scene*\\ 에 있는 폴"
 "더 아이콘을 클릭하고 \"Main.tscn\"을 설정합니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:136
+#: ../../docs/getting_started/step_by_step/exporting.rst:253
 msgid "Export templates"
 msgstr "템플릿 내보내기"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:138
+#: ../../docs/getting_started/step_by_step/exporting.rst:255
 msgid ""
 "In order to export, you need to download the *export templates* from the "
 "http://godotengine.org/download. These templates are optimized versions of "
@@ -155,7 +155,7 @@ msgstr ""
 "된 버전으로 각 플렛폼에 따로 컴파일된 편집기가 필요 없습니다. 당신은 또한 "
 "Godot에서 *편집기 -> 내보내기 템플릿 관리* 를 통해 다운로드 할 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:145
+#: ../../docs/getting_started/step_by_step/exporting.rst:262
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
@@ -163,7 +163,7 @@ msgstr ""
 "나타나는 창에서, \"다운로드\" 를 눌러서 당신의 Godot 버전과 맞는 템플릿을 다"
 "운로드 할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:150
+#: ../../docs/getting_started/step_by_step/exporting.rst:267
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
@@ -171,11 +171,11 @@ msgstr ""
 "Godot를 업그레이드 하셨다면, 새로운 버전에 맞는 템플릿을 다운로드 해야 하고 "
 "그렇지 않으면 프로젝트가 제대로 내보내기가 작동하지 않습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:154
+#: ../../docs/getting_started/step_by_step/exporting.rst:271
 msgid "Export presets"
 msgstr "프리셋 내보내기"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:156
+#: ../../docs/getting_started/step_by_step/exporting.rst:273
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
@@ -183,7 +183,7 @@ msgstr ""
 "다음은 *프로젝트(Project) -> 내보내기(Export)*\\ 에서 내보내기 설정을 구성할 "
 "수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:158
+#: ../../docs/getting_started/step_by_step/exporting.rst:275
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
@@ -191,7 +191,7 @@ msgstr ""
 "\"추가...\"를 눌러서 새 내보내기 프리셋을 만들고 플랫폼을 선택하세요. 다양한 "
 "설정과 함께 당신은 많은 프리셋를 만들 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:163
+#: ../../docs/getting_started/step_by_step/exporting.rst:280
 msgid ""
 "At the bottom of the window are two buttons. \"Export PCK/ZIP\" only creates "
 "a packed version of your project's data. This doesn't include an executable "
@@ -201,7 +201,7 @@ msgstr ""
 "를 압축된 버전으로 만듭니다. 이것은 실행 파일이 아니므로 프로젝트가 스스로 실"
 "행되지 못합니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:167
+#: ../../docs/getting_started/step_by_step/exporting.rst:284
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
@@ -209,7 +209,7 @@ msgstr ""
 "두 번째 버튼, \" 프로젝트 내보내기\", 게임의 완전 실행가능한 버전을 만듭니"
 "다, 마치 Android의 `.apk` 나 Windows의 `.exe` 처럼 말이죠."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:170
+#: ../../docs/getting_started/step_by_step/exporting.rst:287
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
@@ -217,11 +217,11 @@ msgstr ""
 "\"리소스\"와 \"기능\" 탭에서 당신은 게임이 각 플랫폼으로 어떻게 만들어질지를 "
 "설정할 수 있습니다. 지금은 이 설정을 그냥 놔 두어도 됩니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:174
+#: ../../docs/getting_started/step_by_step/exporting.rst:291
 msgid "Exporting by platform"
 msgstr "플랫폼 별 내보내기"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:176
+#: ../../docs/getting_started/step_by_step/exporting.rst:293
 msgid ""
 "In this section, we'll walk through the process for each platform, including "
 "any additional software or requirements you'll need."
@@ -229,11 +229,11 @@ msgstr ""
 "이 섹션에서, 추가 소프트웨어나 요구 사항과 함께 각 플랫폼의 프로세스를 단계적"
 "으로 배울겁니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:180
+#: ../../docs/getting_started/step_by_step/exporting.rst:297
 msgid "PC (Linux/macOS/Windows)"
 msgstr "PC (Linux/macOS/Windows)"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:182
+#: ../../docs/getting_started/step_by_step/exporting.rst:299
 msgid ""
 "Exporting PC platforms works the same across the three supported operating "
 "systems. Open the export window and click \"Add..\" to create the preset(s) "
@@ -245,11 +245,11 @@ msgstr ""
 "로젝트 내보내기\"를 클릭하고 이름과 목적 폴더를 지정합니다. 당신의 프로젝트 "
 "폴더 *바깥* 에 위치를 지정하세요."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:187
+#: ../../docs/getting_started/step_by_step/exporting.rst:304
 msgid "Click \"Save\" and the engine will build the export files."
 msgstr "\"저장\"을 누르면 엔진이 내보내기 파일을 만들겁니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:189
+#: ../../docs/getting_started/step_by_step/exporting.rst:306
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
@@ -260,7 +260,7 @@ msgstr ""
 "이고, 반면에 Linux나 Windows는 `.zip` 으로 생성합니다. 어떤 경우든지, 압축된 "
 "파일은 macOS의 `.app` 을 갖고 있으므로 더블 클릭해서 실행할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:194
+#: ../../docs/getting_started/step_by_step/exporting.rst:311
 msgid ""
 "On Windows, if you want your exported executable to have a different icon "
 "than the default one, you need to change it manually. See: :ref:"
@@ -270,11 +270,11 @@ msgstr ""
 "면, 수동으로 교체해야합니다. 여기를 참고하세요: :ref:"
 "`doc_changing_application_icon_for_windows`."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:199
+#: ../../docs/getting_started/step_by_step/exporting.rst:316
 msgid "Android"
 msgstr "Android"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:201
+#: ../../docs/getting_started/step_by_step/exporting.rst:318
 msgid ""
 "Mobile devices come with a wide variety of capabilities. In most cases, "
 "Godot's default settings will work, but mobile development is sometimes more "
@@ -285,23 +285,23 @@ msgstr ""
 "먹히지만, 모바일 개발은 때로는 과학보단 더 예술에 가깝습니다, 그리고 모든 것"
 "이 작동시키기 위해 도움을 청하고 몇 가지 실험을 하게 될지도 모릅니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:207
+#: ../../docs/getting_started/step_by_step/exporting.rst:324
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
 msgstr "Android에 내보내기 전에, 다음의 소프트웨어를 다운받으셔야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:210
+#: ../../docs/getting_started/step_by_step/exporting.rst:327
 msgid "Android SDK: https://developer.android.com/studio/"
 msgstr "Android SDK: https://developer.android.com/studio/"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:211
+#: ../../docs/getting_started/step_by_step/exporting.rst:328
 msgid ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 msgstr ""
 "자바 JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:213
+#: ../../docs/getting_started/step_by_step/exporting.rst:330
 msgid ""
 "When you run Android Studio for the first time, click on *Configure -> SDK "
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
@@ -311,14 +311,14 @@ msgstr ""
 "\"Android SDK Platform Tools\" 을 실행하세요. 이것은 Godot가 장치와 통신하도"
 "록 만드는 `adb` 명령줄 도구를 실행시킵니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:217
+#: ../../docs/getting_started/step_by_step/exporting.rst:334
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
 msgstr ""
 "다음으로, 시스템의 명령줄에 다음의 명령을 실행시켜 debug keystore를 만드세요:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:224
+#: ../../docs/getting_started/step_by_step/exporting.rst:341
 msgid ""
 "Click on *Editor -> Editor Settings* in Godot and select the *Export/"
 "Android* section. Here, you need to set the paths to the Android SDK "
@@ -329,7 +329,7 @@ msgstr ""
 "다. 여기에서, 당신은 Android SDK 응용 프로그램의 위치와 당신이 방금 만든 키 "
 "저장소의 위치를 설정해줘야 합니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:230
+#: ../../docs/getting_started/step_by_step/exporting.rst:347
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
@@ -340,7 +340,7 @@ msgstr ""
 "택하고 *옵션* 아래의 *Screen*\\ 으로 가서 *Orientation*\\ 을 \"Portrait\"로 "
 "설정하세요."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:234
+#: ../../docs/getting_started/step_by_step/exporting.rst:351
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
@@ -349,7 +349,7 @@ msgstr ""
 "있는 APK 파일을 만들어 냅니다. 이 작업을 명령줄에서 하려면 다음 코드를 입력하"
 "세요:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:241
+#: ../../docs/getting_started/step_by_step/exporting.rst:358
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
@@ -357,7 +357,7 @@ msgstr ""
 "기기가 *개발자 모드*\\ 이어야 합니다. 자세한 내용은 기기의 설명서를 참고하세"
 "요."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:244
+#: ../../docs/getting_started/step_by_step/exporting.rst:361
 msgid ""
 "If your system supports it, connecting a compatible Android device will "
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
@@ -366,17 +366,17 @@ msgstr ""
 "시스템이 지원한다면, 호환하는 Android 기기와 연결할 때 Godot의 실행 및 테스"
 "트 버튼 영역에 \"원 클릭 배포\" 버튼이 나타납니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:249
+#: ../../docs/getting_started/step_by_step/exporting.rst:366
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
 msgstr "이 버튼만 클릭하면 APK가 만들어지고 그 사본이 기기에 설치됩니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:252
+#: ../../docs/getting_started/step_by_step/exporting.rst:369
 msgid "iOS"
 msgstr "iOS"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:254
+#: ../../docs/getting_started/step_by_step/exporting.rst:371
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
@@ -384,7 +384,7 @@ msgstr ""
 "iOS에 게임이 돌아가게 하고 싶다면, 당신은 macOS와 Xcode가 실행되는 컴퓨터를 "
 "갖고 있어야 합니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:257
+#: ../../docs/getting_started/step_by_step/exporting.rst:374
 msgid ""
 "Before exporting, there are some settings that you *must* complete for the "
 "project to export successfully. First, the \"App Store Team Id\", which you "
@@ -395,16 +395,16 @@ msgstr ""
 "가지 사항이 있습니다. 먼저, \"App Store Team Id\" 입니다, 이것은 당신이 애플 "
 "개발자 계정에 로그인 한 후 \"멤버십\" 섹션에서 볼 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:261
+#: ../../docs/getting_started/step_by_step/exporting.rst:378
 msgid "You must also provide icons and splash screen images as shown below:"
 msgstr ""
 "그리고 반드시 아이콘과 스플래시 스크린 이미지를 다음과 같이 제공해야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:265
+#: ../../docs/getting_started/step_by_step/exporting.rst:382
 msgid "Click \"Export Project\" and select a destination folder."
 msgstr "\"프로젝트 내보내기\"를 누르고 대상 폴더를 선택하세요."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:267
+#: ../../docs/getting_started/step_by_step/exporting.rst:384
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
@@ -412,7 +412,7 @@ msgstr ""
 "프로젝트가 완전히 내보내졌다면, 당신이 지정한 폴더에 파일들이 만들어 진것을 "
 "볼 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:272
+#: ../../docs/getting_started/step_by_step/exporting.rst:389
 msgid ""
 "You can now open the project in Xcode and build the project for iOS. Xcode "
 "build procedure is beyond the scope of this tutorial. See https://help.apple."
@@ -422,11 +422,11 @@ msgstr ""
 "다. Xcode 개발 순서는 이 튜토리얼에 해당하지 않습니다. 자세한 것은 https://"
 "help.apple.com/xcode/mac/current/#/devc8c2a6be1 를 참고하세요."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:278
+#: ../../docs/getting_started/step_by_step/exporting.rst:395
 msgid "HTML5 (web)"
 msgstr "HTML5 (웹)"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:280
+#: ../../docs/getting_started/step_by_step/exporting.rst:397
 msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
@@ -434,13 +434,13 @@ msgstr ""
 "HTML5 프리셋으로 \"프로젝트 내보내기\"를 클릭하세요. 기본 설정에서 바꿀 필요"
 "가 없습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:283
+#: ../../docs/getting_started/step_by_step/exporting.rst:400
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"
 msgstr "내보내기가 끝나면, 다음의 파일이 들어있는 폴더를 찾으실 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:288
+#: ../../docs/getting_started/step_by_step/exporting.rst:405
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
@@ -452,7 +452,7 @@ msgstr ""
 "지 않았다면, 인터넷에 검색하여 특정 OS에 대한 웹 서버 설치를 찾아볼 수 있습니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:293
+#: ../../docs/getting_started/step_by_step/exporting.rst:410
 msgid ""
 "Point your browser at the URL where you've placed the html file. You may "
 "have to wait a few moments while the game loads before you see the start "
@@ -461,7 +461,7 @@ msgstr ""
 "URL에 html 파일을 올릴 브라우저를 향하게 하세요. 게임 시작 화면을 보기 전에 "
 "잠시 기다려야 할지도 모릅니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:298
+#: ../../docs/getting_started/step_by_step/exporting.rst:415
 msgid ""
 "The console window beneath the game tells you if anything goes wrong. You "
 "can disable it by setting \"Export With Debug\" off when you export the "
@@ -470,7 +470,7 @@ msgstr ""
 "게임 아래 콘솔 창은 게임이 잘못됬는가를 말해줍니다. 프로젝트를 내보낼 때 "
 "\"Export With Debug\"를 꺼서 이것을 없앨 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:301
+#: ../../docs/getting_started/step_by_step/exporting.rst:418
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "
 "technology and you may find some things that don't work. Make sure you have "

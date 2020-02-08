@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -470,7 +470,6 @@ msgid "warning system example"
 msgstr "경고 시스템 예제"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
-#, fuzzy
 msgid ""
 "To ignore specific warnings in one file, insert a special comment of the "
 "form ``# warning-ignore:warning-id``, or click on the ignore link to the "
@@ -478,10 +477,10 @@ msgid ""
 "corresponding line and the code won’t trigger the corresponding warning "
 "anymore:"
 msgstr ""
-"하나의 파일에서 특정 경고를 무시하려면, 특수 주석을 끼워 넣어야 합니다 "
-"``#warning-ignore:warning-id``, 혹은 경고의 설명 오른쪽에 무시 링크를 클릭합"
-"니다. Godot는 위에 주석을 추가해야 해당하는 줄과 코드가 더 이상 같은 경고를 "
-"내지 않도록 합니다:"
+"한 파일에서 특정한 경고를 무시하려면, ``# warning-ignore:경고-id``\\ 와 같은 "
+"형태의 특수 주석을 삽입하세요. 아니면 경고의 설명 오른쪽의 무시하기(Ignore)"
+"를 클릭하세요. Godot는 해당하는 줄 위에 주석을 추가해서 더 이상 해당 경고를 "
+"주지 않게 됩니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
 msgid "warning system ignore example"
@@ -493,6 +492,9 @@ msgid ""
 "type in this file with ``# warning-ignore-all:warning-id``. To ignore all "
 "warnings of all types in a file add the comment ``# warnings-disable`` to it."
 msgstr ""
+"그리고 파일에서 단순히 한 경고가 아닌 특정 유형의 모든 경고를 선택할 수 있습"
+"니다. 주석은 ``# warning-ignore-all:경고-id``\\ 입니다. 파일에서 모든 유형의 "
+"모든 경고를 무시하려면 ``# warnings-disable`` 주석을 추가하면 됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:344
 msgid ""

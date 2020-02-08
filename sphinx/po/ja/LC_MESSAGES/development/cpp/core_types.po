@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -269,6 +269,10 @@ msgid ""
 "symbols and code. List, Set and Map can be iterated using pointers, like "
 "this:"
 msgstr ""
+"C++のテンプレートは多くの場合インライン化され、デバッグシンボルとコードの両方"
+"でバイナリサイズがかなり大きくなるため、これらはシンプルで、可能な限り最小限"
+"にすることを目指しています。リスト、セット、およびマップは、次のようにポイン"
+"ターを使用して反復できます:"
 
 #: ../../docs/development/cpp/core_types.rst:158
 msgid "The Vector<> class also has a few nice features:"
@@ -349,6 +353,10 @@ msgid ""
 "StringNames are useful for using strings as identifier, as comparing them is "
 "basically comparing a pointer."
 msgstr ""
+"StringNamesはStringに似ていますが、一意です。文字列からStringNameを作成する"
+"と、すべての等しい文字列に対して一意の内部ポインターが作成されます。文字列を"
+"比較することは基本的にポインタを比較するため、StringNamesは識別子として文字列"
+"を使用するのに便利です。"
 
 #: ../../docs/development/cpp/core_types.rst:194
 msgid ""
@@ -361,10 +369,12 @@ msgid ""
 "`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
 "string_name.h>`__"
 msgstr ""
+"\\ `core/string_name.h <https://github.com/godotengine/godot/blob/master/"
+"core/string_name.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:203
 msgid "Math types"
-msgstr ""
+msgstr "算術型"
 
 #: ../../docs/development/cpp/core_types.rst:205
 msgid ""

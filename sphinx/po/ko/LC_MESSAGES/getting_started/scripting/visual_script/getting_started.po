@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,17 +28,17 @@ msgid ""
 "workflow. This led us to write our own version of how we believe this "
 "feature would work best with the engine."
 msgstr ""
-"Godot의 모든 기능과 마찬가지로, 우리는 현재 워크플로에 적합하지 않을 수 있는 "
-"타사 솔루션을 복사하거나 통합하는 것에 대한 좋은 경험을 우선순위로 둡니다. 이"
-"것으로 우리는 이 기능이 엔진에서 가장 잘 작동할 것이라고 생각하는 우리의 설명"
-"을 적을 수 있었습니다."
+"Godot의 모든 기능처럼, Visual Scripting도 좋은 경험을 우선 순위로 두고 개발했"
+"습니다. 현재 작업 흐름에 잘 맞지 않는 제 3자 솔루션과 결합하거나 복사하는 것 "
+"이상으로 말이죠. 이렇게 해서 엔진에 가장 적합한 기능이라고 생각되는 독자적인 "
+"버전을 작성하게 됐습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:10
 msgid ""
 "In Godot, a Visual Script fits smoothly together with regular scripts in the "
 "Editor tab"
 msgstr ""
-"Godot에서, Visual Script가 편집기 탭의 일반 스크립트와 매끄럽게 호환합니다"
+"Godot에서 Visual Script는 일반 스크립트와 함께 편집기 탭에 잘 들어 맞습니다"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:15
 msgid ""
@@ -47,14 +47,13 @@ msgid ""
 "rest of Godot panels and docks act like a palette from where you can drag "
 "and drop all sorts of information to the script canvas:"
 msgstr ""
-"사실, Visual Scripting이 Godot에 잘 통합되기 때문에 버전 3.0에 추가되었다고 "
-"보기 어렵습니다. 왜냐하면 Visual Script를 편집할 때, Godot 패널과 독의 나머"
-"지 부분이 모든 종류의 정보를 스크립트 캔버스로 끌어다 놓을 수 있는 팔레트처"
-"럼 작동하기 때문입니다:"
+"실제로 Visual Scripting이 Godot와 아주 잘 통합해서 버전 3.0만에 추가되었다고 "
+"믿기 어려울 것입니다. 스크립트 편집 중에 Godot 패널과 독은 팔래트처럼 스크랩"
+"트 캔버스로 모든 종류의 정보를 드래그 앤 드롭할 수 있기 때문입니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
 msgid "Creating a script"
-msgstr "스크립트 생성하기"
+msgstr "스크립트 만들기(Creating a script)"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
 msgid ""
@@ -62,28 +61,29 @@ msgid ""
 "any node in the scene and push the \"New Script\" button at the top right "
 "corner of the Scene Tree dock:"
 msgstr ""
-"스크립트 생성은 다른 스크립팅 언어와 동일하게 작동합니다: 씬의 아무 노드나 선"
-"택하고 씬 트리 독의 오른쪽 상단 모서리에 있는 \"새 스크립트\" 버튼을 누릅니"
-"다:"
+"스크립트 만들기는 다른 스크립팅 언어와 같은 방식입니다: 씬에서 아무 노드나 선"
+"택하고, 씬 트리 독의 오른쪽 위에 있는 \"새 스크립트(New Script)\" 버튼을 누르"
+"세요:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:31
 msgid ""
 "Once it opens, the script type \"Visual Script\" must be selected from the "
 "drop down list. The script extension must be \".vs\" (for Visual Script!)."
 msgstr ""
-"열리면 드롭 다운 목록에서 스크립트 타입 \"Visual Script\"를 선택해야 합니다. "
-"스크립트 확장은 \".vs\"(Visual Script를 위해!) 이어야 합니다."
+"만들기 창이 열리면 스크립트 유형의 드롭 다운 메뉴에서 \"Visual Script\"로 선"
+"택해야 합니다. 스크립트 확장자 이름은 (Visual Script를 의미하는) \".vs\"가 됩"
+"니다."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:37
 msgid ""
 "Finally, the Script Editor will open, allowing you to start editing the "
 "visual script:"
 msgstr ""
-"마침내, Script 편집기가 열리고, Visual script 편집을 시작할 수 있습니다:"
+"그러면 이제 Script 편집기가 열리고 Visual Script를 편집할 수 있게 됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:43
 msgid "Adding a function"
-msgstr "함수 추가하기"
+msgstr "함수 추가하기(Adding a function)"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:45
 msgid ""
@@ -92,10 +92,10 @@ msgid ""
 "to communicate with the engine as other scripting engines. In Godot, the "
 "scripting interface is universal and all implementations conform to it."
 msgstr ""
-"다른 시각적 스크립팅 실행과 달리 Godot의 Visual Scripting은 함수를 기반으로 "
-"합니다. 왜냐하면 다른 스크립팅 엔진처럼 엔진과 통신하는 동일한 인터페이스를 "
-"사용하기 때문에 일어납니다. Godot에서는 스크립팅 인터페이스가 보편적이며 모"
-"든 실행이 이 인터페이스를 준수합니다."
+"다른 Visual Scripting 구현 방식과 달리, Godot의 Visual Scripting은 함수와 깊"
+"게 연관되어 있습니다. 이는 다른 스크립팅 엔진처럼 엔진과 소통하도록 같은 인터"
+"페이스를 사용하기 때문입니다. Godot에서 스크립팅 인터페이스는 범용적이고 이 "
+"인터페이스 내에서 전부 구현합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:49
 msgid "A function is an individual canvas with nodes connected."
@@ -106,8 +106,8 @@ msgid ""
 "A single script can contain many functions, each of which will have a canvas "
 "of its own, allowing for more organization."
 msgstr ""
-"단일 스크립트에는 많은 함수를 포함할 수 있으며, 각각 고유의 캔버스를 갖고 있"
-"고, 더 많은 구성을 할 수 있습니다."
+"하나의 스크립트에는 많은 함수를 가질 수 있고, 각 함수는 고유의 캔버스를 갖고 "
+"있기 때문에 더 조직적으로 만들 수 있습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:53
 msgid "There are three main ways to add functions in a script:"
@@ -115,7 +115,7 @@ msgstr "스크립트에 함수를 추가하는 세 가지 주요 방법이 있�
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:56
 msgid "Overriding a virtual function"
-msgstr "가상 함수 재정의하기(Override)"
+msgstr "가상 함수 다시 정의하기(Override)"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:58
 msgid ""
@@ -124,9 +124,10 @@ msgid ""
 "something happens and can be looked up in the reference. Virtual functions "
 "are listed when pressing the \"Override\" icon in the member panel:"
 msgstr ""
-"Godot에 있는 대부분의 타입의 노드와 다른 타입의 객체는 가상 함수를 포함합니"
-"다. 이들은 무언가가 발생했을 때 (코드를 실행하여) 호출될 함수로 참조에서 볼 "
-"수 있습니다. 멤버 패널에서 \"재정의\" 아이콘을 누르면 가상 함수가 나열됩니다:"
+"Godot의 대부분의 노드 유형과 객체의 유형은 가상 함수를 갖고 있습니다. 이벤트"
+"가 일어나면 함수는 호출되며 (코드를 실행하며), 그 이벤트는 참조에서 볼 수 있"
+"습니다. 가상 함수는 멤버(Members) 패널의 \"다시 정의하기(Override)\" 아이콘"
+"을 클릭하면 나열됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:65
 msgid ""
@@ -134,24 +135,24 @@ msgid ""
 "loaded and added to the running scene. For this, the _ready() virtual method "
 "will be overridden:"
 msgstr ""
-"다음 예시에서는, 노드를 불러와서 실행 씬에 추가될 때 함수가 실행될 것입니다. "
-"이를 위해 _ready () 가상 메서드가 재정의 될 것입니다:"
+"다음 예시는 노드를 불러오고 실행하는 씬에 추가될 때 실행하는 함수입니다. "
+"_ready() 가상 메서드가 다시 정의됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:71
 msgid "Finally, a canvas appears for this function, showing the override:"
-msgstr "마침내, 이 함수를 위해 재정의를 보여주는 캔버스가 나타났습니다:"
+msgstr "그러면 이제 이 함수의 캔버스가 나타나고, 재정의를 표시합니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:76
 msgid ""
 "As some functions expect you to return a value, they will also add a return "
 "node where such value is supposed to be provided:"
 msgstr ""
-"일부 함수는 값을 반환할 것을 예상하며, 그들에게는 반환 노드를 추가하여 해당 "
-"값을 제공해야 합니다:"
+"일부 함수는 반환 값을 추측하기 때문에, 해당 값을 제공하도록 return 노드를 추"
+"가해야 합니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:83
 msgid "Connecting a signal to a function"
-msgstr "함수에 시그널 연결하기"
+msgstr "함수에 시그널(Signal) 연결하기"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:85
 msgid ""
@@ -159,9 +160,9 @@ msgid ""
 "all sorts of things. A typical example would be a button that emits a "
 "\"pressed\" signal when actually pressed."
 msgstr ""
-"트리의 노드는 무언가가 발생하면 시그널을 방출(emit)합니다. Godot는 모든 종류"
-"의 시그널을 사용합니다. 전형적인 예로 버튼이 실제로 눌렀을 때 \"pressed\"(눌"
-"렸음) 시그널을 내보내는 것이 있습니다."
+"노드는 트리에서 무언가 발생하면 시그널을 방출합니다. Godot는 시그널로 모든 작"
+"업을 합니다. 전형적인 예제로 \"pressed\" 시그널을 방출하는 버튼으로, 버튼을 "
+"누를 때 방출합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:88
 msgid ""
@@ -169,8 +170,9 @@ msgid ""
 "inspecting the signals. Once they are displayed, connect the \"pressed\" "
 "signal:"
 msgstr ""
-"이를 위해, 노드를 선택하고 Node 탭을 열어줍니다. 이렇게 하면 시그널을 볼 수 "
-"있습니다. 일단 보여지면, \"pressed\" 시그널을 연결하십시오:"
+"그렇게 하려면, 시그널을 방출할 노드를 선택한 채로 노드(Node) 탭을 여세요. 거"
+"기에는 시그널을 확인할 수 있습니다. 시그널을 확인한 뒤, \"pressed\" 시그널을 "
+"연결하세요:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:94
 msgid ""
@@ -178,15 +180,15 @@ msgid ""
 "node where the signal will be connected to, and the function that will "
 "receive the signal:"
 msgstr ""
-"연결 대화 상자가 열립니다. 이 대화 상자에서 시그널을 연결할 노드를 선택하고 "
-"시그널을 받을 함수를 선택해야 합니다:"
+"그러면 연결 대화 상자가 열립니다. 대화 상자에서 시그널을 연결할 노드를 선택하"
+"고 시그널을 받는 함수를 선택해야 합니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:100
 msgid ""
 "If this is done right, a new function will be created in our script and a "
 "signal will automatically be connected to it:"
 msgstr ""
-"잘 작동된다면, 스크립트에 새 함수가 만들어지며 시그널이 자동으로 연결됩니다:"
+"잘 설정했다면, 새 함수가 스크립트에 만들어지고 자동으로 시그널이 연결됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:107
 msgid "Creating a function manually"
@@ -200,24 +202,25 @@ msgid ""
 "breaking a larger function up into several manageable chunks and reusing "
 "your visual code."
 msgstr ""
-"마지막 방법으로는 함수를 수동으로 생성하는 것입니다. 일반적으로 정말로 필요"
-"한 경우가 아니라면 수동 생성은 쓰이지 않습니다. 맞춤 함수는 다른 (또는 같은) "
-"스크립트가 수동으로 호출할 때 작동합니다. 주요 사용 사례로는 함수를 더 작게 "
-"분리하는 것이나, 시각적 코드를 재 사용하는 것입니다."
+"함수를 만드는 마지막 방법은 수동으로 만드는 것입니다. 일반적으로 정말 필요한 "
+"경우가 아니라면 수동으로 만들지 않을 것입니다. 다른 (혹은 같은) 스크립트에서 "
+"함수를 수동으로 호출할 때 맞춤(Custom) 함수는 작동합니다. 주된 사용 예로는 커"
+"다란 함수를 여러 개의 덩어리로 만드는 것입니다. 관리하기 좋으면서도 다른 "
+"Visual 코드에 다시 쓸 수 있도록 만드는 것이죠."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:113
 msgid ""
 "To create a function manually, push the big \"Plus\" button, and a new "
 "function will be added with a default name:"
 msgstr ""
-"함수를 수동으로 생성하려면, 큰 \"더하기\" 버튼을 누르세요, 그러면 기본 이름으"
-"로 새로운 함수가 추가됩니다:"
+"함수를 수동으로 만들려면, 큰 \"더하기\" 버튼을 누르세요. 그러면 새 함수가 기"
+"본 이름으로 추가됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:119
 msgid ""
 "This will add a new function, which can be renamed by simply double clicking "
 "its name:"
-msgstr "이름을 더블 클릭하여 이름을 바꿀 수 있는 새 함수가 추가됩니다:"
+msgstr "함수는 이름에서 더블 클릭하면 이름을 새로 지을 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:125
 msgid ""
@@ -225,8 +228,8 @@ msgid ""
 "when you call this function), simply click the Function node and check the "
 "inspector:"
 msgstr ""
-"이 함수가 가질 수 있는 \"인수(arguments)\"를 편집하려면 (이 함수를 호출할 때 "
-"전달하는 값), 함수 노드를 클릭하고 인스펙터(Inspecter)를 확인하세요:"
+"이 함수가 갖는 (함수를 호출할 때 값을 전달하는) \"인수(Argument)\"를 편집하려"
+"면, 간단히 Function(함수) 노드를 클릭하고 인스펙터(Inspector)를 확인하세요:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:131
 msgid "More on that will be explained later in this document."

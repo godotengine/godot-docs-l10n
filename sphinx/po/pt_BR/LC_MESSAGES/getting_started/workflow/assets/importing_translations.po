@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,6 +84,9 @@ msgid ""
 "translations written in the gettext ``.po`` format. See :ref:"
 "`doc_localization_using_gettext` for details."
 msgstr ""
+"Se você precisar de um formato de arquivo mais poderoso, o Godot também "
+"suporta carregar traduções escritas no formato gettext ``.po``. Veja :ref:"
+"`doc_localization_using_gettext` para detalhes."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 msgid "Translation format"
@@ -107,8 +110,9 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#, fuzzy
 msgid "keys"
-msgstr ""
+msgstr "Chaves"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid "<lang1>"
@@ -220,15 +224,15 @@ msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
 msgid "QUOTE"
-msgstr ""
+msgstr "Citação"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
 msgid "\"Hello\" said the man."
-msgstr ""
+msgstr "\"Olá\", disse o homem."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
 msgid "\"Hola\" dijo el hombre."
-msgstr ""
+msgstr "\"Hola\" dijo el hombre."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
 msgid "「こんにちは」男は言いました"
@@ -246,19 +250,28 @@ msgid ""
 "Alternatively, you can select another delimiter than comma in the import "
 "options."
 msgstr ""
+"O mesmo exemplo é mostrado abaixo como um arquivo de texto simples separado "
+"por vírgula, que deve ser o resultado da edição acima em uma planilha. Ao "
+"editar a versão de texto simples, certifique-se de fechar com aspas duplas "
+"qualquer mensagem que contenha vírgula, quebras de linha ou aspas duplas, "
+"para que as vírgulas não sejam analisadas como delimitadores, quebras de "
+"linha não criam novas entradas e aspas duplas não são tratadas como "
+"caracteres de fechamento. Certifique-se de evitar quaisquer aspas duplas que "
+"uma mensagem pode conter, precedendo-as com outra aspas dupla. "
+"Alternativamente, você pode selecionar outro delimitador do que a vírgula "
+"nas opções de importação."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:97
-#, fuzzy
 msgid "CSV importer"
-msgstr "Por que importar?"
+msgstr "Importador de CSV"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:99
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
-"Godot vai tratar arquivos CSV como traduções por padrão. Ele vai importá-los "
-"e gerar um ou mais arquivos de recurso de tradução compressas próximas a ele."
+"Godot tratará os arquivos CSV como traduções por padrão. Ele irá importá-los "
+"e gerar um ou mais arquivos de recursos de tradução comprimidos ao lado dele."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:102
 msgid ""
@@ -266,9 +279,10 @@ msgid ""
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
-"Importing will also add the translation to the list of translations to load "
-"when the game runs, specified in project.godot (or the project settings). "
-"Godot allows loading and removing translations at runtime as well."
+"A importação também adicionará a tradução à lista de traduções para carregar "
+"quando o jogo for iniciado, especificado em project.godot (ou nas "
+"configurações do projeto). Godot permite carregar e remover traduções em "
+"tempo de execução também."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
 msgid ""
@@ -276,7 +290,12 @@ msgid ""
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
+"Selecione o arquivo ``.csv`` e acesse o dock \"Importar\" para definir as "
+"opções de importação. Você pode alternar a compressão das traduções "
+"importadas e selecionar o delimitador para usar ao analisar o arquivo CSV."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:113
 msgid "Be sure to click \"Reimport\" after any change to these options."
 msgstr ""
+"Certifique-se de clicar em \"Reimportar\" após qualquer alteração nessas "
+"opções."

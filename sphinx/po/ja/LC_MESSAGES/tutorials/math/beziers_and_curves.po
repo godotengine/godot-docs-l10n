@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:4
 msgid "Beziers, curves and paths"
-msgstr ""
+msgstr "ベジェ、曲線、パス"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:6
 msgid ""
@@ -27,12 +27,16 @@ msgid ""
 "We use them to represent a curve with as little information as possible and "
 "with a high level of flexibility."
 msgstr ""
+"ベジェ曲線は、自然な幾何学的形状の数学的な近似です。これらを使用して、可能な"
+"限り少ない情報と高いレベルの柔軟性で曲線を表します。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:10
 msgid ""
 "Unlike more abstract mathematical concepts, Bezier curves were created for "
 "industrial design. They are a popular tool in the graphics software industry."
 msgstr ""
+"より抽象的な数学的概念とは異なり、ベジェ曲線は工業デザイン用に作成されまし"
+"た。これらは、グラフィックソフトウェア業界で人気のあるツールです。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:13
 msgid ""
@@ -41,14 +45,17 @@ msgid ""
 "better understand how Bezier curves work, let's start from its simplest "
 "form: Quadratic Bezier."
 msgstr ""
+"前の記事で見た :ref:`interpolation <doc_interpolation>` に依存し、複数のス"
+"テップを組み合わせて滑らかな曲線を作成します。ベジェ曲線がどのように機能する"
+"かをよりよく理解するために、最も単純な形式である二次ベジェから始めましょう。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:19
 msgid "Quadratic Bezier"
-msgstr ""
+msgstr "二次ベジェ"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:21
 msgid "Take three points, the minimum required for Quadratic Bezier to work:"
-msgstr ""
+msgstr "二次ベジェが機能するために最低限必要な3つのポイントを用意します:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:25
 msgid ""
@@ -57,70 +64,82 @@ msgid ""
 "values ranging from 0 to 1. This gives us two points that move along the "
 "segments as we change the value of ``t`` from 0 to 1."
 msgstr ""
+"それらの間に曲線を描くために、最初に3つのポイントによって形成される2つのセグ"
+"メントのそれぞれの2つの頂点を0〜1の範囲の値を使用して徐々に補間します。これに"
+"より、\\ ``t`` の値を0から1に変更すると、セグメントに沿って移動する2つのポイ"
+"ントが得られます。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:37
 msgid ""
 "We then interpolate ``q0`` and ``q1`` to obtain a single point ``r`` that "
 "moves along a curve."
 msgstr ""
+"次に、\\``q0`` と ``q1`` を補間して、曲線に沿って移動する単一のポイント "
+"``r`` を取得します。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:46
 msgid "This type of is called a *Quadratic Bezier* curve."
-msgstr ""
+msgstr "このタイプは、\\ *二次ベジェ曲線*\\ と呼ばれます。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:50
 #: ../../docs/tutorials/math/beziers_and_curves.rst:114
 msgid "*(Image credit: Wikipedia)*"
-msgstr ""
+msgstr "*(画像クレジット: Wikipedia)*"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:53
 msgid "Cubic Bezier"
-msgstr ""
+msgstr "三次(立方)ベジェ"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:55
 msgid ""
 "Building upon the previous example, we can get more control by interpolating "
 "between four points."
 msgstr ""
+"前の例に基づいて、4つのポイント間を補間することで、より詳細な制御を得ることが"
+"できます。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:60
 msgid ""
 "We first use a function with four parameters to take four points as an "
 "input, ``p0``, ``p1``, ``p2`` and ``p3``:"
 msgstr ""
+"まず、4つのパラメーターを持つ関数を使用して、入力として ``p0``\\ 、\\ ``p1``"
+"\\ 、\\ ``p2``\\ 、および ``p3``の4つのポイントを取得します:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:68
 msgid ""
 "We apply a linear interpolation to each couple of points to reduce them to "
 "three:"
-msgstr ""
+msgstr "ポイントの各カップルに線形補間を適用して、それらを3つに減らします:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:78
 msgid "We then take our three points and reduce them to two:"
-msgstr ""
+msgstr "次に、3つのポイントを取り、それらを2つに減らします:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:86
 msgid "And to one:"
-msgstr ""
+msgstr "そして1つに:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:94
 msgid "Here is the full function:"
-msgstr ""
+msgstr "完全な関数は次のとおりです:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:110
 msgid ""
 "The result will be a smooth curve interpolating between all four points:"
-msgstr ""
+msgstr "結果は、4つのポイントすべてを補間する滑らかな曲線になります:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:116
 msgid ""
 "Cubic Bezier interpolation works the same in 3D, just use ``Vector3`` "
 "instead of ``Vector2``."
 msgstr ""
+"三次ベジェ補間は3Dでも同じように機能し、\\ ``Vector2`` ではなく ``Vector3`` "
+"を使用します。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:120
 msgid "Adding control points"
-msgstr ""
+msgstr "コントロールポイントの追加"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:122
 msgid ""
@@ -128,23 +147,26 @@ msgid ""
 "control the shape of our curve freely. Instead of having ``p0``, ``p1``, "
 "``p2`` and ``p3``, we will store them as:"
 msgstr ""
+"三次ベジェに基づいて、2つのポイントの動作方法を変更して、曲線の形状を自由に制"
+"御できます。\\ ``p0``\\ 、\\ ``p1``\\ 、\\ ``p2``\\ 、および ``p3``の代わり"
+"に、次のように保存します:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:126
 msgid "``point0 = p0``: Is the first point, the source"
-msgstr ""
+msgstr "``point0 = p0``: 最初のポイント、ソース"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:127
 msgid "``control0 = p1 - p0``: Is a vector relative to the first control point"
-msgstr ""
+msgstr "``control0 = p1 - p0``: 最初の制御点の相対的なベクトル"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:128
 msgid ""
 "``control1 = p3 - p2``: Is a vector relative to the second control point"
-msgstr ""
+msgstr "``control1 = p3 - p2``: 2番目の制御点の相対的なベクトル"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:129
 msgid "``point1 = p3``: Is the second point, the destination"
-msgstr ""
+msgstr "``point1 = p3``: 2番目のポイント、目的地"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:131
 msgid ""
@@ -152,22 +174,29 @@ msgid ""
 "vectors to the respective points. If you've used graphics or animation "
 "software before, this might look familiar:"
 msgstr ""
+"このように、2つのポイントと、それぞれのポイントに相対的なベクトルである2つの"
+"コントロールポイントがあります。グラフィックまたはアニメーションソフトウェア"
+"を以前に使用したことがある場合、これはおなじみのように見えるかもしれません:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:137
 msgid ""
 "This is how graphics software presents Bezier curves to the users, and how "
 "they work and look in Godot."
 msgstr ""
+"グラフィックス ソフトウェアがユーザーにベジエ曲線を提示する方法と、それらがど"
+"のように動作し、Godot でどのように見えるかです。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:141
 msgid "Curve2D, Curve3D, Path and Path2D"
-msgstr ""
+msgstr "Curve2D、Curve3D、PathおよびPath2D"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:143
 msgid ""
 "There are two objects that contain curves: :ref:`Curve3D <class_Curve3D>` "
 "and :ref:`Curve2D <class_Curve2D>` (for 3D and 2D respectively)."
 msgstr ""
+"曲線を含む2つのオブジェクトがあります: :ref:`Curve3D <class_Curve3D>` およ"
+"び :ref:`Curve2D <class_Curve2D>`(それぞれ3Dおよび2D用)。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:145
 msgid ""
@@ -175,16 +204,21 @@ msgid ""
 "possible to set them to nodes: :ref:`Path <class_Path>` and :ref:`Path2D "
 "<class_Path2D>` (also for 3D and 2D respectively):"
 msgstr ""
+"それらは複数のポイントを含むことができ、より長いパスを可能にします。それらを"
+"ノードに設定することも可能です: :ref:`Path <class_Path>` および :ref:`Path2D "
+"<class_Path2D>`(それぞれ3Dおよび2Dの場合も同様):"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:149
 msgid ""
 "Using them, however, may not be completely obvious, so following is a "
 "description of the most common use cases for Bezier curves."
 msgstr ""
+"ただし、それらを使用することは完全に明白ではない可能性があるため、以下ではベ"
+"ジェ曲線の最も一般的な使用例について説明します。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:152
 msgid "Evaluating"
-msgstr ""
+msgstr "評価する"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:154
 msgid ""
@@ -195,10 +229,16 @@ msgid ""
 "distances between points ``p0``, ``p1``, ``p2`` and ``p3`` and there is not "
 "a mathematically simple way to traverse the curve at constant speed."
 msgstr ""
+"それらを評価するだけでもオプションかもしれませんが、ほとんどの場合、あまり有"
+"用ではありません。ベジェ曲線の大きな欠点は、それらを ``t = 0`` から ``t = "
+"1`` まで一定の速度で移動すると、実際の補間結果が一定の速度で\\ *移動*\\ しな"
+"いことです。速度は、ポイント ``p0``\\ 、\\ ``p1``\\ 、\\ ``p2``\\ 、および "
+"``p3`` 間の距離間の補間でもあり、一定速度で曲線上を移動する数学的に簡単な方法"
+"はありません。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:156
 msgid "Let's do a simple example with the following pseudocode:"
-msgstr ""
+msgstr "次の擬似コードを使用して簡単な例を実行してみましょう:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:170
 msgid ""
@@ -206,10 +246,13 @@ msgid ""
 "though ``t`` is increased at constant speed. This makes beziers difficult to "
 "use for anything practical out of the box."
 msgstr ""
+"ご覧のとおり、\\``t`` は一定の速度で増加しますが、円の速度(ピクセル/秒)は変化"
+"します。これにより、実用的なものにベジェを「箱から出したままで」使用すること"
+"が難しくなります。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:173
 msgid "Drawing"
-msgstr ""
+msgstr "描画"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:175
 msgid ""
@@ -218,12 +261,17 @@ msgid ""
 "converted to some sort of segments. This is normally difficult, however, "
 "without creating a very high amount of them."
 msgstr ""
+"ベジェ(または曲線に基づくオブジェクト)の描画は非常に一般的な使用例ですが、簡"
+"単ではありません。ほとんどの場合、ベジェ曲線は何らかの種類のセグメントに変換"
+"する必要があります。ですが、これは通常、非常に多くの量は作成できす困難です。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:177
 msgid ""
 "The reason is that some sections of a curve (specifically, corners) may "
 "require considerable amounts of points, while other sections may not:"
 msgstr ""
+"その理由は、曲線の一部のセクション(具体的にはコーナー)にはかなりの量のポイン"
+"トが必要な場合がありますが、他のセクションには必要ない場合があるためです:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:181
 msgid ""
@@ -231,6 +279,9 @@ msgid ""
 "relative vectors), the Bezier curve would just be a straight line (so "
 "drawing a high amount of points would be wasteful)."
 msgstr ""
+"さらに、両方のコントロールポイントが ``0, 0`` (それらが相対ベクトルであること"
+"を思い出してください)の場合、ベジェ曲線は単なる直線になります(したがって、大"
+"量のポイントを描画すると無駄になります)。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:183
 msgid ""
@@ -238,6 +289,9 @@ msgid ""
 "with a recursive or divide and conquer function that splits the curve until "
 "the curvature amount becomes less than a certain threshold."
 msgstr ""
+"ベジェ曲線を描く前に、\\ *テセレーション*\\ が必要です。これは、多くの場合、"
+"湾曲量が特定のしきい値より小さくなるまで曲線を分割する再帰的関数または分割統"
+"治関数で行われます。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:185
 msgid ""
@@ -246,16 +300,22 @@ msgid ""
 "``stages`` of recursion and angle ``tolerance`` arguments). This way, "
 "drawing something based on a curve is easier."
 msgstr ""
+"*Curve * クラスは、これを :ref:`Curve2D.tessellate() "
+"<class_Curve2D_method_tessellate>` 関数(再帰と角度 ``tolerance`` 引数のオプ"
+"ションの ``stage`` を受け取る)を介して提供します。この方法では、曲線に基づい"
+"て何かを描くのが簡単です。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:189
 msgid "Traversal"
-msgstr ""
+msgstr "トラバーサル"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:191
 msgid ""
 "The last common use case for the curves is to traverse them. Because of what "
 "was mentioned before regarding constant speed, this is also difficult."
 msgstr ""
+"曲線の最後の一般的な使用例は、曲線をトラバースすることです。一定の速度に関し"
+"て以前に言及されたことのため、これも困難です。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:193
 msgid ""
@@ -267,13 +327,19 @@ msgid ""
 "get_baked_length()<class_Curve2D_method_get_baked_length>`. The first call "
 "to either of them will bake the curve internally."
 msgstr ""
+"これを簡単にするには、曲線を等距離点に\\ *焼き付ける*\\ 必要があります。この"
+"方法では、通常の補間で近似できます(キュービックオプションでさらに改善できま"
+"す)。これを行うには、\\ :ref:`Curve.interpolate_baked() "
+"<class_Curve_method_interpolate_baked>` メソッドと :ref:`Curve2D."
+"get_baked_length() <class_Curve2D_method_get_baked_length>` を組み合わせて使"
+"用します。どちらかを最初に呼び出すと、曲線が内部でベイク処理されます。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:196
 msgid ""
 "Traversal at constant speed, then, can be done with the following pseudo-"
 "code:"
-msgstr ""
+msgstr "一定の速度でのトラバースは、次の擬似コードで実行できます:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:207
 msgid "And the output will, then, move at constant speed:"
-msgstr ""
+msgstr "そして、出力は一定の速度で動きます:"

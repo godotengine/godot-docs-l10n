@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,7 +62,7 @@ msgid ""
 "documentation."
 msgstr ""
 "C#은 하이 레벨 프로그래밍 언어로 Microsoft가 개발했습니다. Godot에서는 Mono "
-"5.x .NET framework로 구현되었으며, C# 7.0을 완전 지원합니다. Mono는 Microsoft"
+"6.x .NET framework로 구현되었으며, C# 8.0을 완전 지원합니다. Mono는 Microsoft"
 "의 .NET Framework의 오픈 소스로 C#을 위한 ECMA 표준과 Common Language Runtime"
 "에 기반으로 구현되었습니다. 적합성을 확인하기 위한 좋은 출발점으로 Mono 문서"
 "에 있는 `적합성<http://www.mono-project.com/docs/about-mono/compatibility/"
@@ -183,27 +183,26 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:88
 #, fuzzy
 msgid "Visual Studio 2019"
-msgstr "Visual Studio Code"
+msgstr "Visual Studio 2019"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:89
 msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:90
-#, fuzzy
 msgid "MonoDevelop"
-msgstr "KDevelop"
+msgstr "MonoDevelop"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:91
-#, fuzzy
 msgid "Visual Studio for Mac"
-msgstr "Visual Studio Code"
+msgstr "Visual Studio for Mac"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:92
 msgid "JetBrains Rider"
 msgstr "JetBrains Rider"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
+#, fuzzy
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
@@ -211,13 +210,15 @@ msgid ""
 msgstr ""
 "만약 Visual Studio Code를 사용하고 있다면, `C# 확장 프로그램<https://"
 "marketplace.visualstudio.com/items?itemName=ms-vscode.csharp>`_\\ 을 설치하"
-"여 문법 하이라이트 효과와 IntelliSense같은 기능을 사용하는 것을 잊지마세요."
+"여 문법 하이라이트 효과나 IntelliSense같은 기능을 사용 할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
 msgid ""
 "If you are using Visual Studio 2019, you must follow the instructions found "
 "in the \"Configure VS2019 for Debugging\" section below."
 msgstr ""
+"Visual Studio 2019를 사용하는 경우 아래 \"Configure VS2019 for Debugging\" 지"
+"침을 따라야합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:103
 msgid "Creating a C# script"
@@ -431,6 +432,12 @@ msgid ""
 "is expecting the original ``snake_case`` version ``add_child``. However, you "
 "can use any custom properties or methods without this limitation."
 msgstr ""
+"Godot 의 ``snake_case\" API 명명 규칙에 의존하는 ``Get ()\"/\"Set()\" "
+"\"Call()\"/\"CallDeferred()\"와\" 시그널 연결 메서드 ``Connect()\"와 같은 방"
+"법이 있습니다. 그러므로 예를 들어 ``CallDeferred\"(\"AddChild\")를 사용할 때 "
+"``AddChild\"는 API가 원래의 ``snake_case\" 버전의 ``add_child\"를 기대하기 때"
+"문에 작동하지 않을 것입니다. 그러나 당신은 이러한 제한 없이 모든 맞춤 속성이"
+"나 메서드를 사용할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:233
 msgid "Performance of C# in Godot"
@@ -480,7 +487,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:269
 msgid "Profiling your C# code"
-msgstr ""
+msgstr "C# 코드 프로파일링"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:271
 msgid ""
@@ -488,6 +495,9 @@ msgid ""
 "profiler/>`_ is available via `this PR <https://github.com/godotengine/godot/"
 "pull/26513>`_."
 msgstr ""
+"`Mono 로그 프로파일러 <https://www.mono-project.com/docs/debug+profile/"
+"profile/profiler/>`_ 를 지원합니다. `this PR <https://github.com/godotengine/"
+"godot/pull/26513>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:272
 msgid ""
@@ -495,10 +505,13 @@ msgid ""
 "profiler/>`_ can be used as described `here <https://github.com/godotengine/"
 "godot/pull/34382>`_."
 msgstr ""
+"다른 Mono 프로파일러로는 `JetBrains dotTrace <https://www.jetbrains.com/"
+"profiler/>`_ 을 사용 할 수 있습니다. 해당 설명 - `here <https://github.com/"
+"godotengine/godot/pull/34382>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:275
 msgid "Configuring VS 2019 for debugging"
-msgstr ""
+msgstr "디버깅을 위한 VS 2019 구성"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:279
 msgid ""
@@ -507,12 +520,17 @@ msgid ""
 "in the meantime, the steps below can let you configure VS 2019 for use with "
 "Godot C# projects."
 msgstr ""
+"Godot은 몇몇 인기 있는 C# IDE와 관련된 워크플로에 대한 기본 지원을 가지고 있"
+"습니다. Visual Studio에 대한 내장 지원은 향후 버전에서 포함되지만, 그 동안 아"
+"래 단계를 통해 Godot C# 프로젝트와 함께 사용할 VS 2019를 구성할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:284
 msgid ""
 "Install VS 2019 with ``.NET desktop development`` and ``Desktop development "
 "with C++`` workloads selected."
 msgstr ""
+"``.NET desktop development`` 및``Desktop development with C++``워크로드로 VS "
+"2019를 설치하십시오."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:285
 msgid ""
@@ -520,12 +538,17 @@ msgid ""
 "``Mobile development with .NET`` workload. Xamarin changes the DLLs used by "
 "MonoDebugger, which breaks debugging."
 msgstr ""
+"**Xamarin 이 설치되지 않았는지 확인하십시오.** ``.NET을 사용한 모바일 개발`` "
+"워크로드를 선택하지 마십시오. Xamarin은 MonoDebugger에서 사용하는 DLL을 변경"
+"하여 디버깅을 중단합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:286
 msgid ""
 "Install the `VSMonoDebugger extension <https://marketplace.visualstudio.com/"
 "items?itemName=GordianDotNet.VSMonoDebugger0d62>`_."
 msgstr ""
+"`VSMonoDebugger 확장 프로그램 <https://marketplace.visualstudio.com/items?"
+"itemName=GordianDotNet.VSMonoDebugger0d62>`_를 설치하십시오."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:287
 msgid "In VS 2019 --> Extensions --> Mono --> Settings:"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:4
 msgid "Making HTTP requests"
-msgstr ""
+msgstr "HTTPリクエストを行う"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:6
 msgid ""
@@ -28,12 +28,18 @@ msgid ""
 "<class_HTTPClient>`, for which a tutorial is available :ref:`here "
 "<doc_http_client_class>`."
 msgstr ""
+":ref:`HTTPRequest <class_HTTPRequest>` ノードは、GodotでHTTPリクエストを行う"
+"最も簡単な方法です。これは、より低レベルの :ref:`HTTPClient "
+"<class_HTTPClient>` に支えられており、チュートリアルについては :ref:`これ "
+"<doc_http_client_class>` を使用できます。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:9
 msgid ""
 "For the sake of this example, we will create a simple UI with a button, that "
 "when pressed will start the HTTP request to the specified URL."
 msgstr ""
+"この例のために、ボタンが付いたシンプルなUIを作成します。ボタンを押すと、指定"
+"されたURLへのHTTPリクエストが開始されます。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:12
 msgid "Preparing scene"
@@ -46,6 +52,9 @@ msgid ""
 "node. You will need to connect the following signals to the CanvasLayer "
 "script:"
 msgstr ""
+"新しい空のシーンを作成し、CanvasLayerをルートノードとして追加し、スクリプトを"
+"追加します。次に、2つの子ノード、ButtonおよびHTTPRequestノードを追加します。"
+"次のシグナルをCanvasLayerスクリプトに接続する必要があります:"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:16
 msgid "Button.pressed: When the button is pressed, we will start the request."
@@ -78,12 +87,17 @@ msgid ""
 "With this, you should see ``(hello:world)`` printed on the console; hello "
 "being a key, and world being a value, both of them strings."
 msgstr ""
+"これにより、コンソールに ``(hello:world)`` が表示されます。helloがキーであ"
+"り、worldが値であり、どちらも文字列です。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:42
 msgid ""
 "For more information on parsing JSON, see the class references for :ref:"
 "`JSON <class_JSON>` and :ref:`JSONParseResult <class_JSONParseResult>`."
 msgstr ""
+"JSONの解析の詳細については、\\: ref:`JSON <class_JSON>` および :ref:"
+"`JSONParseResult <class_JSONParseResult>` のクラスリファレンスを参照してくだ"
+"さい。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:44
 msgid ""
@@ -91,6 +105,10 @@ msgid ""
 "``RESULT_SUCCESS`` and whether a JSON parsing error occurred, see the JSON "
 "class reference and :ref:`HTTPRequest <class_HTTPRequest>` for more."
 msgstr ""
+"``result`` が ``RESULT_SUCCESS`` に等しいかどうか、およびJSON解析エラーが発生"
+"したかどうかを確認したい場合があることに注意してください。詳細については、"
+"JSONクラスリファレンスと :ref:`HTTPRequest <class_HTTPRequest>` を参照してく"
+"ださい。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:46
 msgid ""
@@ -99,12 +117,19 @@ msgid ""
 "\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
 "header) you could use the following:"
 msgstr ""
+"もちろん、カスタムHTTPヘッダーを設定することもできます。これらは文字列配列と"
+"して与えられ、各文字列には ``\"header:value\"`` 形式のヘッダーが含まれます。"
+"たとえば、カスタムユーザーエージェント(HTTP ``user-agent`` ヘッダー)を設定す"
+"るには、次を使用できます:"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:53
 msgid ""
 "Please note that, for SSL/TLS encryption and thus HTTPS URLs to work, you "
 "may need to take some steps as described :ref:`here <doc_ssl_certificates>`."
 msgstr ""
+"SSL/TLS暗号化とHTTPS URLが機能するためには、\\ :ref:`こちら "
+"<doc_ssl_certificates>` で説明されている手順を実行する必要がある場合があるこ"
+"とに注意してください。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:55
 msgid ""
@@ -115,10 +140,15 @@ msgid ""
 "access credentials inside your game. Avoid providing information useful to "
 "an attacker whenever possible."
 msgstr ""
+"また、承認を使用してAPIを呼び出す場合、リリースされたアプリケーションを分析お"
+"よび逆コンパイルし、トークン、ユーザー名、パスワードなどの埋め込み承認情報に"
+"アクセスする可能性があることに注意してください。つまり、通常、ゲーム内にデー"
+"タベースアクセスの資格情報などを埋め込むことはお勧めできません。可能な限り、"
+"攻撃者にとって有用な情報を提供しないでください。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:59
 msgid "Sending data to server"
-msgstr ""
+msgstr "サーバーへのデータの送信"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:61
 msgid ""
@@ -126,6 +156,9 @@ msgid ""
 "what if you need to send data to the server? Here is a common way of doing "
 "it:"
 msgstr ""
+"これまで、サーバーからのデータのリクエストに限定してきました。しかし、サー"
+"バーにデータを送信する必要がある場合はどうでしょうか？一般的な方法は次のとお"
+"りです:"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:72
 msgid ""
@@ -134,3 +167,7 @@ msgid ""
 "per request. A common strategy is to create and delete HTTPRequest nodes at "
 "runtime as necessary."
 msgstr ""
+"リクエストが完了するのを待ってから、別のリクエストを送信する必要があることに"
+"注意してください。一度に複数の要求を行うには、要求ごとに1つのノードが必要で"
+"す。一般的な戦略は、必要に応じて実行時にHTTPRequestノードを作成および削除する"
+"ことです。"

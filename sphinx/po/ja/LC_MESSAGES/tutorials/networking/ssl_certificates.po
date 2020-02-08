@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,32 +33,43 @@ msgid ""
 "around it. The :ref:`HTTPClient <class_HTTPClient>` class also supports "
 "HTTPS by using this same wrapper."
 msgstr ""
+"「中間者」攻撃を回避するために、通信にSSL接続を使用することがしばしば望まれま"
+"す。 Godotには、接続ラッパー :ref:`StreamPeerSSL <class_StreamPeerSSL>` があ"
+"ります。これは、通常の接続を取得し、その周りにセキュリティを追加できま"
+"す。\\ :ref:`HTTPClient <class_HTTPClient>` クラスは、この同じラッパーを使用"
+"してHTTPSもサポートしています。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:16
 msgid ""
 "For SSL to work, certificates need to be provided. A .crt file must be "
 "specified in the project settings:"
 msgstr ""
+"SSLを機能させるには、証明書を提供する必要があります。プロジェクト設定で.crt"
+"ファイルを指定する必要があります:"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:21
 msgid ""
 "This file should contain any number of public certificates in https://en."
 "wikipedia.org/wiki/Privacy-enhanced_Electronic_Mail format."
 msgstr ""
+"このファイルには、任意の数の https://en.wikipedia.org/wiki/Privacy-"
+"enhanced_Electronic_Mail 形式の公開証明書を含める必要があります。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:24
 msgid ""
 "Of course, remember to add .crt as filter so the exporter recognizes this "
 "when exporting your project."
 msgstr ""
+"もちろん、プロジェクトのエクスポート時にエクスポーターがこれを認識するよう"
+"に、.crtをフィルターとして追加することを忘れないでください。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:29
 msgid "There are two ways to obtain certificates:"
-msgstr ""
+msgstr "証明書を取得するには2つの方法があります:"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:32
 msgid "Approach 1: self signed cert"
-msgstr ""
+msgstr "アプローチ1: 自己署名証明書"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:34
 msgid ""
@@ -66,6 +77,8 @@ msgid ""
 "and put the public pair in the .crt file (again, in PEM format). The private "
 "key should go to your server."
 msgstr ""
+"最初のアプローチは最も単純です: 秘密鍵と公開鍵のペアを生成し、公開ペアを.crt"
+"ファイルに(再び、PEM形式で)配置します。秘密鍵はサーバーに送られます。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:38
 msgid ""
@@ -74,10 +87,14 @@ msgid ""
 "not require domain validation** nor requires you to spend a considerable "
 "amount of money in purchasing certificates from a CA."
 msgstr ""
+"OpenSSLには、これに関する `ドキュメント <https://raw.githubusercontent.com/"
+"openssl/openssl/master/doc/HOWTO/keys.txt>`__ があります。このアプローチ"
+"は、\\ **ドメインの検証を必要としません**\\ また、CAから証明書を購入するのに"
+"かなりのお金を費やす必要もありません。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:45
 msgid "Approach 2: CA cert"
-msgstr ""
+msgstr "アプローチ2: CA証明書"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:47
 msgid ""
@@ -85,6 +102,9 @@ msgid ""
 "Verisign, Geotrust, etc. This is a more cumbersome process, but it's more "
 "\"official\" and ensures your identity is clearly represented."
 msgstr ""
+"2番目のアプローチは、Verisign、Geotrustなどの認証局(CA)を使用することです。こ"
+"れはより面倒なプロセスですが、より「公式」であり、身元が明確に表現されるよう"
+"にします。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:52
 msgid ""
@@ -92,6 +112,9 @@ msgid ""
 "connect to someone else's servers (i.e., connecting to Google or some other "
 "REST API provider via HTTPS), this method is not as useful."
 msgstr ""
+"大企業や大企業で作業している場合、または他の人のサーバーに接続する必要がある"
+"場合(つまり、HTTPSを介してGoogleや他のREST APIプロバイダーに接続する場合)を除"
+"き、この方法はあまり役に立ちません。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:56
 msgid ""
@@ -99,21 +122,27 @@ msgid ""
 "ensure the domain you are connecting to is the one intended, otherwise any "
 "website can issue any certificate in the same CA and it will work."
 msgstr ""
+"また、CAが発行した証明書を使用する場合は、\\ **ドメイン検証を有効にする必要が"
+"あります**\\ 、接続しているドメインが意図したものであることを確認します。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:61
 msgid ""
 "If you are using Linux, you can use the supplied certs file, generally "
 "located in:"
 msgstr ""
+"Linuxを使用している場合、提供されているcertsファイルを使用できます。これは通"
+"常、次の場所にあります:"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:68
 msgid ""
 "This file allows HTTPS connections to virtually any website (i.e., Google, "
 "Microsoft, etc.)."
 msgstr ""
+"このファイルにより、事実上すべてのWebサイト(Google、Microsoftなど)へのHTTPS接"
+"続が可能になります。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:71
 msgid ""
 "Or pick any of the more specific certificates there if you are connecting to "
 "a specific one."
-msgstr ""
+msgstr "または、特定の証明書に接続する場合は、より具体的な証明書を選択します。"

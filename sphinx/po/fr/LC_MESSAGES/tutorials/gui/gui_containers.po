@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,8 @@ msgid ""
 ":ref:`Anchors <doc_size_and_anchors>` are an efficient way to handle "
 "different aspect ratios for basic multiple resolution handling in GUIs,"
 msgstr ""
-":ref:`Anchors <doc_size_and_anchors>` sont un moyen efficace de gérer les "
-"différents rapports d'aspect pour la gestion de base des résolutions "
+":ref:`Les Ancres <doc_size_and_anchors>` sont un moyen efficace de gérer les "
+"différents rapports de taille pour une gestion basique des résolutions "
 "multiples dans les interfaces graphiques,"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:9
@@ -137,10 +137,10 @@ msgid ""
 "container. No matter if a control *expands* or not (see below), it will only "
 "*fill* the designated area when this is toggled on (it is by default)."
 msgstr ""
-"**Fill** : Assure le control *remplit* la zone désignée à l'intérieur du "
-"conteneur. Peu importe si un control *s'étend* ou non (voir ci-dessous), il "
-"ne *remplit* la zone désignée que lorsque ceci est activée (c'est le cas par "
-"défaut)."
+"**Fill** : Veille à ce que le control *remplisse* la zone désignée à "
+"l'intérieur du conteneur. Peu importe si un control *s'étend* ou non (voir "
+"ci-dessous), il ne *remplit* la zone désignée que lorsque ce drapeau est "
+"activée (c'est le cas par défaut)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:49
 msgid ""
@@ -150,9 +150,9 @@ msgid ""
 "take from each other is determined by the *Ratio* (see below)."
 msgstr ""
 "**Expand** : Tente d'utiliser le plus d'espace possible dans le conteneur "
-"parent (dans chaque axe). Les controls qui ne s'étendent pas seront "
-"repoussées par ceux qui le font. Entre ceux qui s'étendent, l'espace qu'ils "
-"prennent par rapport aux autres est déterminé par le *Ratio* (voir ci-"
+"parent (dans chaque axe). Les *Controls* qui ne s'étendent pas seront "
+"repoussées par ceux qui le font. Pour ceux qui s'étendent, l'espace qu'ils "
+"prendront par rapport aux autres est déterminé par le *Ratio* (voir ci-"
 "dessous)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:52

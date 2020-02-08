@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,7 +110,7 @@ msgstr "Carregamento automático de nós e scripts atendem a essa necessidade."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
-msgstr "Carregamento Automático"
+msgstr "O AutoLoad"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:41
 msgid ""
@@ -133,7 +133,6 @@ msgstr ""
 "``Projeto -> Configurações do Projeto`` e mude para a aba \"AutoLoad\"."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
-#, fuzzy
 msgid ""
 "Here you can add any number of scenes or scripts. Each entry in the list "
 "requires a name, which is assigned as the node's ``name`` property. The "
@@ -141,7 +140,9 @@ msgid ""
 "manipulated using the up/down arrow keys."
 msgstr ""
 "Aqui você pode adicionar qualquer número de cenas ou scripts. Cada entrada "
-"na lista requer um nome, designada como a propriedade ``nome`` do nó."
+"na lista requer um nome, designada como a propriedade ``nome`` do nó. A "
+"ordem em que as entradas são adicionadas à árvore da cena global pode ser "
+"manipulada usando as setas para cima e para baixo."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid ""
@@ -152,12 +153,11 @@ msgstr ""
 "\"PlayerVariables\" com:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
-#, fuzzy
 msgid ""
 "If the \"Enable\" column is checked (default ``true``) then the singleton "
 "can simply be accessed directly:"
 msgstr ""
-"Se a coluna \"Enable\" estiver marcada (default true), então o singleton "
+"Se a coluna \"Enable\" estiver marcada (default ``true``), então o singleton "
 "pode simplesmente ser acessado diretamente:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
@@ -175,7 +175,6 @@ msgid "Custom scene switcher"
 msgstr "Comutador de cena personalizado"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoload. For "
 "basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -183,20 +182,19 @@ msgid ""
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
-"Este breve tutorial explicará como fazer um switcher de cena usando o "
-"autoload. Para troca de cena simples, o método: ref: `SceneTree."
-"change_scene() <class_SceneTree_method_change_scene>` é suficiente (descrito "
-"em: ref: `doc_scene_tree`), então este método é para um comportamento mais "
-"complexo ao alternar entre cenas."
+"Este tutorial explicará como fazer um trocador de cena usando o autoload. "
+"Para troca de cena simples, o método :ref:`SceneTree.change_scene() "
+"<class_SceneTree_method_change_scene>` é suficiente (descrito em :ref:"
+"`doc_scene_tree`). Mas se você precisar de comportamento mais complexo ao "
+"mudar de cenas, esse método fornece mais funcionalidade."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
-#, fuzzy
 msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
-"Primeiro faça o download do modelo aqui:: download: `autoload.zip <files / "
-"autoload.zip>` e abra-o."
+"Primeiro faça o download do modelo aqui: :download:`autoload.zip <files/"
+"autoload.zip>` e abra-o com Godot."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""
@@ -223,20 +221,19 @@ msgstr ""
 "certeza que ele herda de ``Nó``:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
-#, fuzzy
 msgid ""
 "The next step is to add this script to the autoLoad list. Open ``Project > "
 "Project Settings`` from the menu, switch to the \"AutoLoad\" tab and select "
 "the script by clicking the browse button or typing its path: ``res://Global."
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
-"O script deve abrir no editor de script. O próximo pásso é adicioná-lo à "
-"lista AutoLoad. Clique em Projeto > Configurações de Projeto no menu, mude "
-"para a guia AutoLoad e adicione uma nova entrada com o nome \"global\" que "
-"aponte para este arquivo:"
+"O próximo passo é adicionar este script à lista de AutoLoad. Clique em "
+"``Projeto > Configurações de Projeto`` no menu, mude para a guia "
+"\"Carregamento Automático\" e selecione o script clicando no botão de "
+"procurar ou digitando seu caminho: ``res://Global.gd``. Aperte \"Adicionar\" "
+"para adicioná-lo à lista de autoload:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
-#, fuzzy
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
@@ -245,20 +242,19 @@ msgstr ""
 "script sempre será carregado."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
-#, fuzzy
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "
 "``global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
-"Voltando ao nosso script, a cena atual precisa ser recuperada na função "
-"`_ready()`. Tanto a cena atual quanto `global.gd` são filhos do nó raiz, mas "
-"os nós carregados automaticamente são sempre os primeiros. Isto significa "
-"que o último filho da raiz é sempre a cena carregada."
+"Voltando ao nosso script, a cena atual precisa ser usada na função "
+"`_ready()`. Tanto a cena atual (aquela com o botão) quanto `global.gd` são "
+"filhos do nó raiz, mas os nós carregados automaticamente são sempre os "
+"primeiros. Isto significa que o último filho da raiz é sempre a cena "
+"carregada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:158
-#, fuzzy
 msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
@@ -279,24 +275,21 @@ msgstr ""
 "being used (i.e. its code is still running)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
-#, fuzzy
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
 msgstr ""
-"Finalmente, tudo que resta é completar as funções vazias em scene_a.gd e "
-"scene_b.gd:"
+"Finalmente, tudo que resta é completar as funções vazias nas duas cenas:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:252
 msgid "and"
 msgstr "e"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
-#, fuzzy
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button."
 msgstr ""
-"Agora se você roda o projeto, você pode trocar de cena pressionando o botão!"
+"Rode o projeto e veja se você consegue trocar de cena apertando o botão."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
 msgid ""

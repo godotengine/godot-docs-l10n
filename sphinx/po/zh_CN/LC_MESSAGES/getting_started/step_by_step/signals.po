@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,16 +121,14 @@ msgstr ""
 "以在其中定义如何连接信号："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:55
-#, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is "
 "blue, this is a visual indication that it's the node that is emitting the "
 "signal. Select the root node."
 msgstr ""
-"在左侧，您将看到场景中的节点，并可以选择要“监听”信号的节点。请注意，"
-"``Timer`` 节点为红色——这 *不是* 错误，而是直观的指示，它是发出信号的节点。选"
-"择根节点。"
+"在左侧，你将看到场景中的节点，并可以选择要“监听”信号的节点。请注意，Timer 节"
+"点为蓝色——意思是它是发出信号的节点。选择根节点。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:60
 msgid ""
@@ -139,16 +137,15 @@ msgid ""
 msgstr "目标节点 *必须* 附加一个脚本，否则您将收到一条错误消息。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"窗口底部是一个标有“节点中方法”的字段。这是您要使用的目标节点脚本中的函数名"
-"称。默认情况下，Godot将使用命名约定 ``_on_<node_name>_<signal_name>`` 创建此"
-"函数，但是您可以根据需要更改它。"
+"窗口底部是一个标有“Receiver Method”的字段。这是您要使用的目标节点脚本中的函数"
+"名称。默认情况下，Godot将使用命名约定 ``_on_<node_name>_<signal_name>`` 创建"
+"此函数，但如果你想要修改它也可以。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:68
 msgid ""

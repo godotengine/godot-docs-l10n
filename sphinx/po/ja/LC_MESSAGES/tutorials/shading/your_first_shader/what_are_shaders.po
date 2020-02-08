@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,12 +31,17 @@ msgid ""
 "can be used to create interesting effects that run incredibly fast. You have "
 "also likely heard that they are terrifying. Both are true."
 msgstr ""
+"そう、シェーダーを試してみることにしました。信じられないほど高速で実行される"
+"興味深いエフェクトを作成するために使用できると聞いたことがあるでしょう。ま"
+"た、恐ろしいと聞いたことがあるかもしれません。両方とも真実です。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:13
 msgid ""
 "Shaders can be used to create a wide range of effects (in fact everything "
 "drawn in a modern rendering engine is done with shaders)."
 msgstr ""
+"シェーダーを使用して、さまざまな効果を作成できます(実際、最新のレンダリングエ"
+"ンジンで描画される処理はすべてシェーダーで行われます)。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:16
 msgid ""
@@ -47,10 +52,15 @@ msgid ""
 "still unintuitive and restricting, especially for users who are used to "
 "GDScript."
 msgstr ""
+"シェーダーの作成は、それらに不慣れな人々にとっても非常に困難です。 Godotは、"
+"多くの便利な組み込みか機能を公開し、いくつかの低レベルの初期化作業を処理する"
+"ことで、シェーダーの作成を少し簡単にすることを試みます。ただし、GLSL(Godotが"
+"使用するOpenGLシェーディング言語)は、特にGDScriptに慣れているユーザー向けで"
+"す。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:22
 msgid "But what are they?"
-msgstr ""
+msgstr "しかし、それは何ですか？"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:24
 msgid ""
@@ -61,6 +71,11 @@ msgid ""
 "rendering because they are optimized for running thousands of instructions "
 "in parallel."
 msgstr ""
+"シェーダーは、グラフィックスプロセッシングユニット(GPU)で実行される特別な種類"
+"のプログラムです。ほとんどのコンピューターには、CPUに統合されたGPUまたはディ"
+"スクリート(つまり、典型的なグラフィックカードなどの別個のハードウェアコンポー"
+"ネント)のいずれかのGPUがあります。 GPUは、数千の命令を並行して実行するために"
+"最適化されているため、レンダリングに特に役立ちます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:29
 msgid ""
@@ -72,24 +87,37 @@ msgid ""
 "or corner of a Sprite) goes and the fragment shader decides what color "
 "individual pixels receive."
 msgstr ""
+"シェーダーの出力は通常、ビューポートに描画されたオブジェクトの色付きピクセル"
+"です。ただし、一部のシェーダーでは特殊な出力が可能です(これは特にVulkanなどの"
+"APIに当てはまります)。シェーダーは、シェーダーパイプライン内で動作します。標"
+"準プロセスは、頂点→フラグメントシェーダーパイプラインです。頂点シェーダーは、"
+"各頂点(3Dモデルのポイント、またはスプライトのコーナー)がどこに行くかを決定す"
+"るために使用され、フラグメントシェーダーは個々のピクセルが受け取る色を決定し"
+"ます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:35
 msgid ""
 "Suppose you want to update all the pixels in a texture to a given color, on "
 "the CPU you would write:"
 msgstr ""
+"テクスチャのすべてのピクセルを特定の色に更新する場合、CPUで次のように記述しま"
+"す:"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:43
 msgid ""
 "In a shader you are given access only to the inside of the loop so what you "
 "write looks like this:"
 msgstr ""
+"シェーダーでは、ループ内へのアクセスのみが許可されるため、作成する内容は次の"
+"ようになります:"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:52
 msgid ""
 "You have no control over how this function is called. So you have to design "
 "your shaders differently from how you would design programs on the CPU."
 msgstr ""
+"この関数の呼び出し方法を制御することはできません。したがって、CPUでプログラム"
+"を設計する方法とは異なる方法でシェーダーを設計する必要があります。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:55
 msgid ""
@@ -100,62 +128,72 @@ msgid ""
 "parallel, as they do not depend on each other. This lack of flexibility is "
 "designed to work with the GPU which allows shaders to be incredibly fast."
 msgstr ""
+"シェーダーパイプラインの結果は、シェーダーの前回の実行の結果にアクセスでき"
+"ず、描画中のピクセルから他のピクセルにアクセスできず、描画中の現在のピクセル"
+"の外側に書き込むことができないことです。これにより、GPUは異なるピクセルの"
+"シェーダーを互いに依存しないため、並列に実行できます。この柔軟性の欠如はGPUで"
+"動作するように設計されているからで、これによりシェーダーを非常に高速にするこ"
+"とができます。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:62
 msgid "What can they do"
-msgstr ""
+msgstr "それらでできること"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:64
 msgid "position vertices very fast"
-msgstr ""
+msgstr "頂点を非常に高速に配置する"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:65
 msgid "compute color very fast"
-msgstr ""
+msgstr "色を非常に高速に計算する"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:66
 msgid "compute lighting very fast"
-msgstr ""
+msgstr "ライティングを非常に高速に計算する"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:67
 msgid "lots and lots of math"
-msgstr ""
+msgstr "たくさんの演算"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:70
 msgid "What can't they do"
-msgstr ""
+msgstr "それらでできないこと"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:72
 msgid "draw outside mesh"
-msgstr ""
+msgstr "外側のメッシュを描画する"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:73
 msgid "access other pixels from current pixel (or vertices)"
-msgstr ""
+msgstr "現在のピクセル(または頂点)から他のピクセルにアクセスする"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:74
 msgid "store previous iterations"
-msgstr ""
+msgstr "以前の繰り返しを保存する"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:75
 msgid "update on the fly (they can, but they need to be compiled)"
-msgstr ""
+msgstr "オンザフライで更新する(可能ですが、コンパイルする必要があります)"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:78
 msgid "Structure of a shader"
-msgstr ""
+msgstr "シェーダーの構造"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:80
 msgid ""
 "In Godot, shaders are made up of 3 main functions: the ``vertex()`` "
 "function, the ``fragment()`` function and the ``light()`` function."
 msgstr ""
+"Godotでは、シェーダーは3つの主な関数で構成されています: ``vertex()`` 関"
+"数、\\ ``fragment()`` 関数、および ``light()`` 関数です。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:83
 msgid ""
 "The ``vertex()`` function runs over all the vertices in the mesh and sets "
 "their positions as well as some other per-vertex variables."
 msgstr ""
+"``vertex()`` 関数は、メッシュ内のすべての頂点に対して実行され、それらの位置と"
+"その他の頂点ごとの変数を設定します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:86
 msgid ""
@@ -164,22 +202,29 @@ msgid ""
 "variables from the ``vertex()`` function are interpolated between the "
 "vertices to provide the values for the ``fragment()`` function."
 msgstr ""
+"``fragment()`` 関数は、メッシュで覆われているすべてのピクセルに対して実行され"
+"ます。\\ ``vertex()`` 関数の変数を使用して実行します。\\ ``vertex()`` 関数の"
+"変数は頂点間で補間され、\\ ``fragment()`` 関数の値を提供します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:90
 msgid ""
 "The ``light()`` function runs for every pixel and for every light. It takes "
 "variables from the ``fragment()`` function and from previous runs of itself."
 msgstr ""
+"``light()`` 関数は、すべてのピクセルとすべてのライトに対して実行されます。\\ "
+"``fragment()`` 関数とそれ自体の以前の実行から変数を取得します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:93
 msgid ""
 "For more information about how shaders operate specifically in Godot see "
 "the :ref:`Shaders <doc_shaders>` doc."
 msgstr ""
+"Godotでのシェーダーの具体的な動作方法の詳細については、\\ :ref:`Shaders "
+"<doc_shaders>` ドキュメントを参照してください。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:96
 msgid "Technical overview"
-msgstr ""
+msgstr "技術概要"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:98
 msgid ""
@@ -191,6 +236,12 @@ msgid ""
 "quickly, but only when many or all cores are doing the same calculation at "
 "once, but with different data."
 msgstr ""
+"GPUは、いくつかの理由でグラフィックをCPUよりもはるかに高速にレンダリングでき"
+"ますが、最も顕著なのは、計算を大規模に並行して実行できるためです。 CPUには通"
+"常4または8コアがあり、GPUには通常数千のコアがあります。 つまり、GPUは一度に数"
+"百のタスクを実行できます。GPU の設計者は、多くの計算を非常に迅速に実行できる"
+"方法でこれを利用してきましたが、多くのコアまたはすべてのコアが同じ計算を一度"
+"に実行しているが、データは異なる場合に限ります。"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:104
 msgid ""
@@ -207,3 +258,14 @@ msgid ""
 "rendering time will decrease. On a GPU, you have to speed up the entire "
 "wavefront to speed up rendering."
 msgstr ""
+"そこでシェーダーが登場します。GPUはシェーダーを多数回同時に呼び出してから、"
+"データの異なるかけら(頂点、またはピクセル)を操作します。 これらのデータの束"
+"は、しばしばウエーブフロントと呼ばれます。 シェーダーは、ウエーブフロントのす"
+"べてのスレッドで同じように実行されます。 たとえば、特定のGPUがウエーブフロン"
+"トあたり100スレッドを処理できる場合、ウエーブフロントはピクセルの10x10ブロッ"
+"クで一緒に実行されます。 そして、それらが完了するまで、そのウエーブフロントの"
+"すべてのピクセルに対して実行され続けます。 したがって、1ピクセルが他のピクセ"
+"ルよりも遅い場合(過度の分岐のため)、ブロック全体が遅くなり、レンダリング時間"
+"が大幅に遅くなります。 これはCPUでの操作とは異なり、その1ピクセルが高速化でき"
+"る場合、レンダリング時間全体が短縮されます。 GPUでは、レンダリングを高速化す"
+"るために、ウエーブフロント全体を高速化する必要があります。"

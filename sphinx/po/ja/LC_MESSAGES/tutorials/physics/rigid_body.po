@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:4
 msgid "RigidBody"
-msgstr ""
+msgstr "リジットボディ(RigidBody/剛体)"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:7
 msgid "What is a rigid body?"
-msgstr ""
+msgstr "リジッド ボディとは何ですか？"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:9
 msgid ""
@@ -33,10 +33,14 @@ msgid ""
 "objects assigned. Note that setting the position of these shapes will affect "
 "the body's center of mass."
 msgstr ""
+"リジッド ボディは、物理オブジェクトの動作をシミュレートするために物理エンジン"
+"によって直接制御されるものです。ボディの形状を定義するには、1つ以上の :ref:"
+"`Shape <class_Shape>` オブジェクトが割り当てられている必要があります。これら"
+"の形状の位置を設定すると、ボディの重心に影響することに注意してください。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:13
 msgid "How to control a rigid body"
-msgstr ""
+msgstr "リジッド ボディを制御する方法"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:15
 msgid ""
@@ -45,12 +49,18 @@ msgid ""
 "via code. See :ref:`RigidBody <class_RigidBody>` for the full list of "
 "properties and their effects."
 msgstr ""
+"リジッドボディの動作は、摩擦、質量、反発などのプロパティを設定することで変更"
+"できます。これらのプロパティは、インスペクタまたはコードを介して設定できま"
+"す。プロパティとその効果の完全なリストについては、 :ref:`RigidBody "
+"<class_RigidBody>` を参照してください。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:17
 msgid ""
 "There are several ways to control a rigid body's movement, depending on your "
 "desired application."
 msgstr ""
+"目的のアプリケーションに応じて、リジットボディの動きを制御する方法がいくつか"
+"あります。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:19
 msgid ""
@@ -64,6 +74,15 @@ msgid ""
 "to use ``look_at()`` every frame, which breaks the physics simulation. "
 "Below, we'll demonstrate how to implement this correctly."
 msgstr ""
+"リジッド ボディを1回だけ配置する必要がある場合、たとえば最初の位置を設定する"
+"場合は、\\ ``set_global_transform()`` または ``look_at()`` などの :ref:"
+"`Spatial <class_Spatial>` ノードで提供されるメソッドを使用できます。ただし、"
+"これらのメソッドをフレームごとに呼び出してはいけません。もし呼び出すと、物理"
+"エンジンは体の状態を正しくシミュレートできなくなります。たとえば、別のオブ"
+"ジェクトを向くように回転させるリジッド ボディを考えてみましょう。この種の動作"
+"を実装する際のよくある間違いは、物理シミュレーションを破壊する ``look_at()`` "
+"をすべてのフレームで使用してしまうことです。以下に、これを正しく実装する方法"
+"を示します。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:22
 msgid ""
@@ -73,10 +92,15 @@ msgid ""
 "In this method, you can add *forces*, apply *impulses*, or set the "
 "*velocity* in order to achieve any movement you desire."
 msgstr ""
+"``set_global_transform()`` または ``look_at()`` メソッドを使用できないという"
+"事実は、リジットボディを完全に制御できないという意味ではありません。代わり"
+"に、\\ ``_integrate_forces()`` コールバックを使用して制御できます。この方法で"
+"は、 *forces* を追加したり、\\ *impulses* を適用したり、\\ *velocity* を設定"
+"して、希望する動きを実現したりできます。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:25
 msgid "The \"look at\" method"
-msgstr ""
+msgstr "\"look at\"メソッド"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:27
 msgid ""
@@ -84,6 +108,9 @@ msgid ""
 "used each frame to follow a target. Here is a custom ``look_at()`` method "
 "that will work reliably with rigid bodies:"
 msgstr ""
+"上で説明したように、Spatialノードの ``look_at()`` メソッドを使用して、各フ"
+"レームをターゲットに追従させることはできません。以下は、リジットボディで確実"
+"に動作するカスタム ``look_at()`` メソッドです:"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:69
 msgid ""
@@ -92,6 +119,9 @@ msgid ""
 "desired angle and then adds the velocity needed to rotate by that amount in "
 "one frame's time."
 msgstr ""
+"このメソッドは、リジットボディの ``set_angular_velocity()`` メソッドを使用し"
+"て体を回転させます。最初に現在の角度と目的の角度の差を計算し、次に1フレームの"
+"時間内にその量だけ回転するのに必要な速度を追加します。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:71
 msgid ""
@@ -99,3 +129,6 @@ msgid ""
 "then, the body's rotation is locked. In that case, you would have to rotate "
 "the attached mesh node instead using the standard Spatial methods."
 msgstr ""
+"このスクリプトは、ボディの回転がロックされているため、\\ *character mode* の"
+"リジッドボディでは動作しません。その場合、標準のSpatialメソッドを使用する代わ"
+"りに、アタッチされたメッシュノードを回転する必要があります。"

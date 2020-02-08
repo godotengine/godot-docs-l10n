@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,13 +164,12 @@ msgstr ""
 "elles sont venues."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:49
-#, fuzzy
 msgid ""
 "The user can disable the built-in modelview transform (projection will still "
 "happen later) and do it manually with the following code:"
 msgstr ""
-"L'utilisateur peut désactiver la transformation intégrée de la modelview (la "
-"projection se produira tout de même plus tard) et le faire manuellement avec "
+"L'utilisateur peut désactiver la transformation modelview intégrée (la "
+"projection se produira tout de même plus tard) et la faire manuellement avec "
 "le code suivant :"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:62
@@ -182,13 +181,12 @@ msgstr ""
 "dans l'espace local et les transforme en données de l'espace visuel."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:65
-#, fuzzy
 msgid ""
 "In order to get the world space coordinates of a vertex, you have to pass in "
 "a custom uniform like so:"
 msgstr ""
 "Afin d'obtenir les coordonnées d'un vertex dans l'espace monde, il faut le "
-"passer dans une constante Uniform personnalisée de la manière suivante:"
+"passer dans une constante Uniform personnalisée de la manière suivante :"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
 msgid "Then, in your vertex shader:"
@@ -250,9 +248,8 @@ msgid "in mat4 **EXTRA_MATRIX**"
 msgstr "in mat4 **EXTRA_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:99
-#, fuzzy
 msgid "Extra transform."
-msgstr "Transformations supplémentaires."
+msgstr "Transformation supplémentaire."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:101
 msgid "in mat4 **PROJECTION_MATRIX**"
@@ -432,6 +429,8 @@ msgid ""
 "Color from vertex function and output fragment color. If unused, will be set "
 "to **TEXTURE** color."
 msgstr ""
+"Couleur issue de la fonction de sommet et couleur du fragment en sortie. Si "
+"elle n'est pas utilisée, elle sera réglée sur la couleur de la ** TEXTURE**."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
 msgid "in sampler2D **TEXTURE**"
@@ -529,6 +528,8 @@ msgid ""
 "Input Normal. Although this value is passed in, **normal calculation still "
 "happens outside of this function**."
 msgstr ""
+"Normale d'entrée. Bien que cette valeur soit transmise, **le calcul de la "
+"normale se produit toujours en dehors de cette fonction**."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:204
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
@@ -558,6 +559,7 @@ msgstr "Texture actuelle utilisée pour le CanvasItem."
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
 msgid "**SCREEN_TEXTURE** Coordinate (for using with screen texture)."
 msgstr ""
+"**SCREEN_TEXTURE** Coordonnées (à utiliser avec la texture de l'écran)."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
 msgid "UV for Point Sprite."
@@ -572,6 +574,9 @@ msgid ""
 "Vector from light to fragment in local coordinates. It can be modified to "
 "alter illumination direction when normal maps are used."
 msgstr ""
+"Vecteur de la lumière au fragment en coordonnées locales. Il peut être "
+"modifié pour modifier la direction d'éclairage lorsque des normal maps sont "
+"utilisées."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:224
 msgid "inout vec2 **SHADOW_VEC**"
@@ -582,6 +587,8 @@ msgid ""
 "Vector from light to fragment in local coordinates. It can be modified to "
 "alter shadow computation."
 msgstr ""
+"Vecteur de la lumière au fragment en coordonnées locales. Il peut être "
+"modifié pour modifier le calcul de l'ombre."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid "inout float **LIGHT_HEIGHT**"
@@ -625,3 +632,5 @@ msgid ""
 "Value from the Light texture and output color. Can be modified. If not used, "
 "the light function is ignored."
 msgstr ""
+"Valeur de la texture de lumière et de la couleur en sortie. Peut être "
+"modifiée. Si elle n'est pas utilisée, la fonction d'éclairage est ignorée."

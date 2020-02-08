@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
 msgid "Shaders"
-msgstr ""
+msgstr "シェーダー"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:7
 msgid "Introduction"
@@ -35,6 +35,12 @@ msgid ""
 "they output a final color to the screen and then move on. Accordingly, there "
 "is no way of accessing the color output from the last run of the shader."
 msgstr ""
+"シェーダーは、GPU上で実行される独自のプログラムです。メッシュデータ(頂点の位"
+"置、色、法線など)を取得して画面に描画する方法を指定するために使用されます。"
+"シェーダーは、GPUでの実行用に最適化されているため、通常のプログラムと同じよう"
+"に情報を処理しません。この結果、シェーダーは実行後にデータを保持しません。最"
+"終的な色を画面に出力し、次に進みます。したがって、シェーダーの最後の実行から"
+"のカラー出力にアクセスする方法はありません。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:16
 msgid ""
@@ -47,6 +53,13 @@ msgid ""
 "use it to affect the rendering pipeline. For more advanced shaders, you can "
 "turn this functionality off using a render_mode."
 msgstr ""
+"Godotは、GLSLと非常によく似たシェーダー言語を使用しますが、機能が追加され、柔"
+"軟性がわずかに低下します。これを行う理由は、Godotが組み込み関数を統合して、複"
+"雑なシェーダーの作成を大幅に簡単にするためです。 Godotは、ユーザーが作成した"
+"シェーダーコードを独自のコードでラップします。このようにして、Godotはユーザー"
+"が心配する必要のない低レベルのものを多数処理し、シェーダーコードを解析し、そ"
+"れを使用してレンダリングパイプラインに影響を与えることができます。より高度な"
+"シェーダーの場合、render_modeを使用してこの機能をオフにできます。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:23
 msgid ""
@@ -54,10 +67,13 @@ msgid ""
 "Godot. For a detailed reference of the shading language in Godot see the :"
 "ref:`Godot shading language doc<doc_shading_language>`."
 msgstr ""
+"このドキュメントは、Godot固有のシェーダーに関する情報を提供します。 Godotの"
+"シェーディング言語の詳細なリファレンスについては、\\ :ref:`Godot shading "
+"language doc<doc_shading_language>` を参照してください。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:27
 msgid "Shader types"
-msgstr ""
+msgstr "シェーダーの種類"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:29
 msgid ""
@@ -66,12 +82,16 @@ msgid ""
 "types support different render modes, built-in variables, and processing "
 "functions."
 msgstr ""
+"すべての用途(2D、3D、パーティクル)に汎用的な設定を提供する代わりに、Godot"
+"シェーダーは目的を指定する必要があります。さまざまなタイプがさまざまなレンダ"
+"リングモード、組み込み変数、および処理関数をサポートしています。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:33
 msgid ""
 "All shaders need to specify their type in the first line, in the following "
 "format:"
 msgstr ""
+"すべてのシェーダーは、最初の行で次の形式でタイプを指定する必要があります:"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:39
 msgid "Valid types are:"
@@ -79,25 +99,27 @@ msgstr "有効なタイプは以下のとおりです:"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:41
 msgid ":ref:`spatial <doc_spatial_shader>`: For 3D rendering."
-msgstr ""
+msgstr ":ref:`spatial <doc_spatial_shader>`: 3Dレンダリング用。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:42
 msgid ":ref:`canvas_item <doc_canvas_item_shader>`: For 2D rendering."
-msgstr ""
+msgstr ":ref:`canvas_item <doc_canvas_item_shader>`: 2Dレンダリング用。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:43
 msgid ":ref:`particles <doc_particle_shader>`: For particle systems."
-msgstr ""
+msgstr ":ref:`particles <doc_particle_shader>`: パーティクルシステム用。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:45
 msgid ""
 "For detailed information on each shading type, see the corresponding "
 "reference document."
 msgstr ""
+"各シェーディングタイプの詳細については、対応するリファレンスドキュメントを参"
+"照してください。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:48
 msgid "Render modes"
-msgstr ""
+msgstr "レンダリングモード"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:50
 msgid ""
@@ -107,20 +129,28 @@ msgid ""
 "to use the render mode ``unshaded`` to skip the built-in light processor "
 "function."
 msgstr ""
+"さまざまなシェーダータイプがさまざまなレンダリングモードをサポートします。こ"
+"れらは、オプションであり、指定する場合は、\\ *shader_type*\\ の後に指定する必"
+"要があります。レンダリングモードは、組み込み機能の処理方法を変更するために使"
+"用されます。たとえば、レンダリングモード ``unshaded`` を使用して、組み込みの"
+"ライトプロセッサ機能をスキップするのが一般的です。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:55
 msgid "Render modes are specified underneath the shader type:"
-msgstr ""
+msgstr "レンダリングモードは、シェーダータイプの下に指定されます:"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:62
 msgid ""
 "Each shader type has a different list of render modes available. See the "
 "document for each shader type for a complete list of render modes."
 msgstr ""
+"各シェーダータイプには、使用可能なレンダリングモードの異なるリストがありま"
+"す。レンダリングモードの完全なリストについては、各シェーダータイプのドキュメ"
+"ントを参照してください。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:66
 msgid "Processor functions"
-msgstr ""
+msgstr "プロセッサー関数"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:68
 msgid ""
@@ -129,10 +159,14 @@ msgid ""
 "to override ``vertex``, ``fragment``, and ``light``. For \"particles\", only "
 "``vertex`` can be overridden."
 msgstr ""
+"シェーダーのタイプに応じて、異なるプロセッサー関数がオプションでオーバーライ"
+"ドされる場合があります。\"spatial\" および \"canvas_item\" の場合、\\ "
+"``vertex``\\ 、\\ ``fragment`` および ``light`` をオーバーライドできま"
+"す。\"particles\" の場合、オーバーライドできるのは``vertex`` のみです。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:73
 msgid "Vertex processor"
-msgstr ""
+msgstr "頂点プロセッサー"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:75
 msgid ""
@@ -140,6 +174,9 @@ msgid ""
 "\"spatial\" and \"canvas_item\" shaders. For \"particles\" shaders, it is "
 "called once for every particle."
 msgstr ""
+"``vertex`` 処理関数は、\"spatial\" および \"canvas_item\" シェーダーのすべて"
+"の頂点に対して1回呼び出されます。\"particles\" シェーダーの場合、すべてのパー"
+"ティクルに対して1回呼び出されます。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:78
 msgid ""
@@ -148,6 +185,9 @@ msgid ""
 "variables that will be sent to the fragment function by using varyings(see "
 "other doc)."
 msgstr ""
+"``vertex`` 関数は、フラグメント関数に渡される頂点ごとの情報を変更するために使"
+"用されます。また、変数を使用してフラグメント関数に送信される変数を確立するた"
+"めにも使用できます(他のドキュメントを参照)。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:82
 msgid ""
@@ -156,10 +196,14 @@ msgid ""
 "transform the data yourself; see the :ref:`Spatial shader doc "
 "<doc_spatial_shader>` for an example of this."
 msgstr ""
+"デフォルトでは、Godotは頂点情報を取得し、それに応じて変換して描画します。これ"
+"が望ましくない場合は、レンダリングモードを使用して自分でデータを変換できま"
+"す。この例については、\\ :ref:`Spatial shader doc <doc_spatial_shader>` を参"
+"照してください。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:87
 msgid "Fragment processor"
-msgstr ""
+msgstr "フラグメントプロセッサー"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:89
 msgid ""
@@ -168,6 +212,10 @@ msgid ""
 "primitive draws. It is only available in \"spatial\" and \"canvas_item\" "
 "shaders."
 msgstr ""
+"``fragment`` 処理関数は、ピクセルごとにGodotマテリアルパラメーターを設定する"
+"ために使用されます。このコードは、オブジェクトまたはプリミティブが描画するす"
+"べての可視ピクセルで実行されます。\"spatial\" および \"canvas_item\" シェー"
+"ダーでのみ使用できます。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:93
 msgid ""
@@ -183,10 +231,20 @@ msgid ""
 "is used; if not, it cuts all the corresponding code out. Therefore, you will "
 "not waste calculations on effects that you do not use."
 msgstr ""
+"フラグメント関数の標準的な使用法は、ライティングの計算に使用されるマテリアル"
+"プロパティを設定することです。たとえば、\\ ``ROUGHNESS``\\ 、\\ ``RIM``\\ ま"
+"たは ``TRANSMISSION`` の値を設定して、ライトがそのフラグメントにどのように応"
+"答するかをライト機能に伝えます。これにより、ユーザーが多くのコードを記述する"
+"ことなく、複雑なシェーディングパイプラインを制御できます。この組み込み機能が"
+"必要ない場合は、それを無視して独自のライト処理関数を記述すれば、Godotはそれを"
+"最適化します。たとえば、\\ ``RIM`` に値を書き込まない場合、Godotはリム照明を"
+"計算しません。コンパイル中、Godotは ``RIM`` が使用されているかどうかを確認し"
+"ます。そうでない場合は、対応するすべてのコードを切り取ります。したがって、使"
+"用しない効果の計算を無駄にすることはありません。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:103
 msgid "Light processor"
-msgstr ""
+msgstr "ライトプロセッサー"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:105
 msgid ""
@@ -196,6 +254,11 @@ msgid ""
 "typically operates on the material properties setup inside the ``fragment`` "
 "function."
 msgstr ""
+"``light`` プロセッサーもピクセルごとに実行されますが、オブジェクトに影響を与"
+"えるすべてのライトに対しても実行されます(ライトがオブジェクトに影響を与えない"
+"場合は実行されません)。これは ``fragment`` プロセッサー内で呼び出される関数と"
+"して存在し、通常は ``fragment`` 関数内で設定されたマテリアルプロパティで動作"
+"します。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:110
 msgid ""
@@ -204,3 +267,7 @@ msgid ""
 "`CanvasItem shaders <doc_canvas_item_shader>` and :ref:`Spatial shaders "
 "<doc_spatial_shader>`, respectively."
 msgstr ""
+"``light`` プロセッサは、2Dでは3Dとは異なる動作をします。それぞれの仕組みの説"
+"明については、\\ :ref:`CanvasItem shaders <doc_canvas_item_shader>` と :ref:"
+"`Spatial shaders <doc_spatial_shader>` のそれぞれのドキュメントを参照してくだ"
+"さい 。"

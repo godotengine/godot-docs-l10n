@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,15 +149,15 @@ msgstr "Ce qu'ils peuvent faire"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:64
 msgid "position vertices very fast"
-msgstr ""
+msgstr "positionner les sommets très rapidement"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:65
 msgid "compute color very fast"
-msgstr ""
+msgstr "calculer les couleurs très rapidement"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:66
 msgid "compute lighting very fast"
-msgstr ""
+msgstr "calculer l'éclairage très rapidement"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:67
 msgid "lots and lots of math"
@@ -169,7 +169,7 @@ msgstr "Ce qu'ils ne peuvent pas faire"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:72
 msgid "draw outside mesh"
-msgstr ""
+msgstr "dessiner en dehors des maillages"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:73
 msgid "access other pixels from current pixel (or vertices)"
@@ -182,6 +182,7 @@ msgstr "stocker les itérations précédentes"
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:75
 msgid "update on the fly (they can, but they need to be compiled)"
 msgstr ""
+"mise à jour à la volée (ils peuvent l'être, mais doivent être compilés)"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:78
 msgid "Structure of a shader"
@@ -246,6 +247,15 @@ msgid ""
 "quickly, but only when many or all cores are doing the same calculation at "
 "once, but with different data."
 msgstr ""
+"Les GPUs sont capables de rendre des éléments graphiques beaucoup plus "
+"rapidement que les CPUs pour diverses raisons, mais surtout parce qu'ils "
+"sont capables d'exécuter massivement des calculs en parallèle. Un CPU "
+"possède généralement 4 ou 8 cœurs, tandis qu'un GPU en possède généralement "
+"des milliers. Cela signifie qu'un GPU peut effectuer des centaines de tâches "
+"à la fois. Les concepteurs de GPU ont exploité cette possibilité de manière "
+"à pouvoir effectuer de nombreux calculs très rapidement, mais uniquement "
+"lorsque plusieurs ou tous les cœurs effectuent le même calcul en même temps, "
+"avec des données différentes."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:104
 msgid ""
@@ -262,3 +272,17 @@ msgid ""
 "rendering time will decrease. On a GPU, you have to speed up the entire "
 "wavefront to speed up rendering."
 msgstr ""
+"C'est là que les shaders entrent en jeu. Le GPU va appeler le shader "
+"plusieurs fois simultanément, puis traiter différents bits de données "
+"(sommets ou pixels). Ces paquets de données sont souvent appelés wavefronts. "
+"Un shader fonctionnera de la même manière pour chaque fil d'exécution du "
+"wavefront. Par exemple, si un GPU donné peut gérer 100 fils d'exécution par "
+"wavefront, un wavefront fonctionnera sur un bloc de 10x10 pixels à la fois. "
+"Et il continuera à fonctionner pour tous les pixels de ce wavefront jusqu'à "
+"ce qu'ils soient achevés. Par conséquent, si vous avez un pixel plus lent "
+"que les autres (en raison d'une ramification excessive), l'ensemble du bloc "
+"sera ralenti, ce qui se traduira par des temps de rendu massivement plus "
+"lents. Cela diffère des opérations basées sur le CPU. Sur un CPU, si vous "
+"pouvez accélérer ne serait-ce qu'un seul pixel, le temps de rendu entier "
+"diminuera. Sur un GPU, vous devez accélérer l'ensemble de la surface d'onde "
+"pour accélérer le rendu."

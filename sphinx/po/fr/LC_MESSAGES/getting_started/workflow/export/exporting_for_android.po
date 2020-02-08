@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,7 +141,7 @@ msgstr "Une fois cela configuré, tout est prêt à être exporté vers Android 
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
 msgid "Providing launcher icons"
-msgstr ""
+msgstr "Fournir des icônes de lanceur"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
@@ -150,19 +150,24 @@ msgid ""
 "``xxxhdpi`` density screens) and will automatically generate lower-"
 "resolution variants."
 msgstr ""
+"Les icônes de lanceur sont utilisées par les applications de lancement "
+"Android pour représenter votre application aux utilisateurs. Godot ne "
+"nécessite que des icônes à haute résolution (pour les écrans à densité "
+"``xxxhdpi``) et génère automatiquement des variantes à plus faible "
+"résolution."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:68
-#, fuzzy
 msgid "There are two types of icons required by Godot:"
-msgstr ""
-"Il y a 2 possibilités pour créer votre interface utilisateur dans Godot. "
-"Vous pouvez :"
+msgstr "Il existe deux types d'icônes requises par Godot :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:70
 msgid ""
 "**Main Icon:**: The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
+"**Main Icon :** : L'icône \"classique\". Elle sera utilisée sur toutes les "
+"versions d'Android jusqu'à Android 8 (Oreo), exclusivement. Doit être au "
+"moins 192×192 px."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:71
 msgid ""
@@ -173,6 +178,12 @@ msgid ""
 "launcher application will control the icon's animation and masking. Must be "
 "at least 432×432 px."
 msgstr ""
+"**Adaptive Icons :** A partir d'Android 8 (inclus), des `Icônes adaptatives "
+"<https://developer.android.com/guide/practices/ui_guidelines/"
+"icon_design_adaptive>`_ ont été introduites. Les applications devront "
+"inclure des icônes d'arrière-plan et d'avant-plan distinctes pour avoir un "
+"aspect naturel. L'application de lancement de l'utilisateur contrôlera "
+"l'animation et le masquage de l'icône. Doit être au moins 432×432 px."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
 msgid ""
@@ -181,6 +192,10 @@ msgid ""
 "designing-adaptive-icons-515af294c783>`_ that helps to understand those "
 "rules and some of the capabilities of adaptive icons."
 msgstr ""
+"Il est important de respecter certaines règles lors de la conception "
+"d'icônes adaptatives. `Google Design a fourni un bel article <https://medium."
+"com/google-design/designing-adaptive-icons-515af294c783>`_ qui aide à "
+"comprendre ces règles et certaines des capacités des icônes adaptatives."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:75
 msgid ""
@@ -188,29 +203,43 @@ msgid ""
 "elements inside the safe zone: a centered circle with a radius of 66dp (264 "
 "pixels on ``xxxhdpi``) to avoid being clipped by the launcher."
 msgstr ""
+"La règle de conception d'icône adaptative la plus importante est d'avoir les "
+"éléments critiques de votre icône à l'intérieur de la zone de sécurité : un "
+"cercle centré avec un rayon de 66dp (264 pixels sur ``xxxhdpi``) pour éviter "
+"d'être coupé par le lanceur."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:77
 msgid ""
 "If you don't provide some of the requested icons, Godot will replace them "
 "using a fallback chain, trying the next in line when the current one fails:"
 msgstr ""
+"Si vous ne fournissez pas certaines des icônes demandées, Godot les "
+"remplacera en utilisant une chaîne de secours, en essayant la suivante "
+"lorsque l'actuelle échoue :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
 msgid ""
 "**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
 msgstr ""
+"**Main Icon :** Icône principale fournie -> Icône du projet -> Icône "
+"principale par défaut de Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
 msgid ""
 "**Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon "
 "-> Project icon -> Default Godot foreground icon."
 msgstr ""
+"**Adaptive Icon Foreground :** Icône de premier plan fournie -> Icône "
+"principale fournie -> Icône de projet -> Icône de premier plan par défaut de "
+"Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
 msgid ""
 "**Adaptive Icon Background:** Provided background icon -> Default Godot "
 "background icon."
 msgstr ""
+"**Adaptive Icon Background :** Icône d'arrière-plan fournie -> Icône "
+"d'arrière-plan par défaut de Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:83
 msgid ""
@@ -218,6 +247,10 @@ msgid ""
 "with the specified resolutions. Only this way your application will look "
 "great on all the Android devices and versions."
 msgstr ""
+"Il est hautement recommandé de fournir toutes les icônes demandées, et au "
+"moins les résolutions spécifiées. Ce n'est que de cette façon que votre "
+"application sera parfaite sur tous les appareils et toutes les versions "
+"d'Android."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
 msgid "Exporting for Google Play Store"

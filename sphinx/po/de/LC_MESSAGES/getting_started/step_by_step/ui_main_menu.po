@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgstr "Ein Hauptmenü."
 msgid "A game UI with a health bar, energy bar, bomb and money counters."
 msgstr ""
 "Die Benutzeroberfläche eines Spiels, mit Lebensbalken, Energiebalken, "
-"Bomben- und Geldzähler. "
+"Bomben- und Geldzähler."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
 msgid ""
@@ -159,13 +159,12 @@ msgstr ""
 "als wiederverwendbare Szenen speichern."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
-#, fuzzy
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
-"Vorlagen Szenen für wiederverwendbare Komponente gestalten und spezifische "
-"Komponente erstellen die von diesen Vorlagen abstammen"
+"Erstelle Vorlagenszenen für wiederverwendbare Komponenten und erstelle "
+"spezifische Komponenten, die von deinen Basisszenen erben."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -181,13 +180,12 @@ msgstr ""
 "sie ganz einfach wiederverwendbar machen, wie unten gezeigt."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
-#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
-"Die Dateien findest du in Godot. Die Graphik sieht sauberer als beim groben "
-"Entwurf aus, aber sie ist immernoch lediglich ein Platzhalter"
+"Die Dateien findest du in Godot. Die Grafik sieht sauberer als beim groben "
+"Entwurf aus, aber sie ist lediglich immernoch ein Platzhalter."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -212,7 +210,6 @@ msgstr ""
 "Hier sind meine drei Faustregeln, wie man die richtigen Behälter findet:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
-#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
@@ -220,23 +217,21 @@ msgid ""
 msgstr ""
 "Unterteile die Benutzeroberfläche in verschachtelte Kästen, vom Größten, der "
 "alles umfasst, bis zum Kleinsten, der ein einzelnes Element beinhaltet, wie "
-"eine Leiste mit ihrer Beschriftung, ein Panel oder eine Schaltfläche"
+"eine Leiste mit ihrer Beschriftung, ein Panel oder eine Schaltfläche."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
-#, fuzzy
 msgid "If there's some padding around an area, use a ``MarginContainer``."
 msgstr ""
-"Wenn Abstand um eine Fläche eingehalten werden soll, verwende einen "
-"``MarginContainer``"
+"Wenn ein gewisser Abstand um eine Fläche eingehalten werden soll, verwende "
+"einen ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
-#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
 "Wenn die Elemente in Zeilen oder Spalten angeordnet sind, verwende einen "
-"``HBoxContainer`` oder ``VBoxContainer``"
+"``HBoxContainer`` oder ``VBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
@@ -264,10 +259,10 @@ msgstr ""
 "``CenterContainer``s mittig aus."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
-#, fuzzy
 msgid "Interface building blocks, broken down using the three rules of thumb."
 msgstr ""
-"Bausteine der Benutzeroberfläche, aufgebrochen mithilfe der drei Faustregeln"
+"Bausteine der Benutzeroberfläche, zusammengefasst mithilfe der drei "
+"Faustregeln."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -284,13 +279,12 @@ msgid "Prepare the Main Menu scene"
 msgstr "Vorbereitung der Hauptmenü-Szene"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
-#, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
 "Erstellen wir das Hauptmenü. Wir bauen es in einer einzigen Szene. Um eine "
-"leere Szene zu erstellen, klicke auf das Menü Szene -> Neue Szene."
+"leere Szene zu erstellen, klicke auf das Menü **Szene -> Neue Szene**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
 msgid ""
@@ -334,13 +328,12 @@ msgid "Margin Bottom: *80*"
 msgstr "Margin Bottom: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
-#, fuzzy
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
 "Wir wollen, dass der Container das ganze Fenster einnimmt. Öffne das Menü "
-"``Layout`` im Ansichtsfenster und wähle die letzte Option aus, ``Full Rect``."
+"**Layout** im Ansichtsfenster und wähle die letzte Option aus, **Full Rect**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
 msgid "Add the UI sprites"
@@ -355,27 +348,22 @@ msgstr ""
 "``TextureRect``-Nodes. Wir brauchen:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
-#, fuzzy
 msgid "the title or logo,"
-msgstr "Den Titel oder das Logo"
+msgstr "Den Titel oder das Logo,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
-#, fuzzy
 msgid "the three text options as individual nodes,"
-msgstr "Die drei Textoptionen als einzelne Nodes"
+msgstr "die drei Textoptionen als einzelne Nodes,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
-#, fuzzy
 msgid "the version note,"
-msgstr "Die Versionsangabe"
+msgstr "die Versionsangabe"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-#, fuzzy
 msgid "and the main menu’s illustration."
-msgstr "Und die Illustration des Hauptmenüs"
+msgstr "und die Darstellung des Hauptmenüs."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press ``Meta+A`` on your keyboard. Start to "
 "type ``TextureRect`` to find the corresponding node and press enter. With "
@@ -384,11 +372,10 @@ msgid ""
 msgstr ""
 "Drücke auf die Schaltfläche ``Add Node`` oder drücke ``Meta+A`` auf der "
 "Tastatur. Gib ``TextureRect`` ein, um den entsprechenden Node zu finden und "
-"drücke Eingabe. Wähle den neuen Node aus und drücke fünf Mal ``Meta+D``, um "
-"fünf zusätzliche Instanzen zu erzeugen."
+"drücke Enter. Wähle den neuen Node aus und drücke fünf Mal ``Meta+D``, um "
+"fünf zusätzliche Instanzen davon zu erzeugen."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
 "property and click **[empty] > Load**. A file browser opens and lets you "
@@ -400,9 +387,8 @@ msgstr ""
 "Texture-Slot geladen wird."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
-#, fuzzy
 msgid "The file browser lets you find and load textures."
-msgstr "Die Dateiauswahl lässt dich Texturen finden und laden"
+msgstr "Die Dateiauswahl lässt dich Texturen finden und laden."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
 msgid ""
@@ -419,9 +405,8 @@ msgstr ""
 "etwas unordenlich aus."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
-#, fuzzy
 msgid "The six nodes with textures loaded."
-msgstr "Die sechs Nodes, mit geladenen Texturen"
+msgstr "Die sechs Nodes, mit geladenen Texturen."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
 msgid ""
@@ -471,16 +456,14 @@ msgstr ""
 "einen ``CenterContainer`` für die Illustration zur Rechten."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
-#, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr ""
 "Du solltest vier verschachtelte Container haben und den TextureRect-Node "
-"nebendran"
+"nebendran."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
@@ -501,17 +484,14 @@ msgid "We're left with two problems to solve:"
 msgstr "Wir müssen noch zwei Probleme lösen:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid "The characters on the right aren't centered."
-msgstr "Die Charaktere rechts sind nicht mittig"
+msgstr "Die Charaktere rechts sind nicht mittig ausgerichtet."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-#, fuzzy
 msgid "There's no space between the logo and the other UI elements."
-msgstr "Zwischen dem Logo und den anderen Oberflächenelementen ist kein Platz"
+msgstr "Zwischen dem Logo und den anderen Oberflächenelementen ist kein Platz."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "
@@ -531,16 +511,14 @@ msgstr ""
 "Das Element wird automatisch zentriert."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
-#, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer."
 msgstr ""
-"Der Charakter-Node richtet sich mittig in der rechten Bildschirmhälft aus "
-"sobald du ihn in dem CenterContainer platzierst"
+"Der Charakter-Node richtet sich mittig in der rechten Bildschirmhälft aus, "
+"sobald du ihn in dem CenterContainer platzierst."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
@@ -553,21 +531,19 @@ msgstr ""
 "letzten Container mit seinen size flags verwenden. Wähle den "
 "``VBoxContainer`` und drücke ``Meta+A``, um einen neuen Node darin "
 "einzufügen. Füge einen zweiten ``VBoxContainer`` hinzu und nenne ihn "
-"\"MenuOptions\". Wähle alle drei Menüpunkte,  ``Continue``, ``NewGame`` und "
-"``Options``, und ziehe sie in den neuen ``VBoxContainer``. Das Layout der UI "
-"sollte sich, wenn überhaupt, kaum ändern."
+"\"MenuOptions\". Selektiere die drei Menüpunkte ``Continue``, ``NewGame`` "
+"und ``Options``, und ziehe sie in den neuen ``VBoxContainer``. Das Layout "
+"der UI sollte sich, wenn überhaupt, kaum ändern."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
 msgstr ""
 "Platziere den neuen Container zwischen die anderen beiden Nodes, um das "
-"Layout der UI zu erhalten"
+"Layout der UI zu beizubehalten."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:248
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -579,30 +555,27 @@ msgid ""
 msgstr ""
 "Nachdem wir die Menüpunkte zusammengefasst haben, können wir ihren Container "
 "anweisen, so viel senkrechten Raum wie möglich einzunehmen. Wähle den Node "
-"``MenuOptions``.  Gehe im Inspektor herunter zu der Kategorie ``Size "
-"Flags``. Klicke auf das Feld rechts neben der Eigenschaft ``Vertical`` und "
-"kreuze ``Expand`` sowie ``Fill`` an. Der Container dehnt sich aus und nimmt "
-"den ganzen verfügbaren senkrechten Raum ein. Aber er berücksichtigt seine "
+"``MenuOptions``. Gehe im Inspektor herunter zu der Kategorie ``Size Flags``. "
+"Klicke auf das Feld rechts neben der Eigenschaft ``Vertical`` und kreuze "
+"``Expand`` sowie ``Fill`` an. Der Container dehnt sich aus und nimmt den "
+"ganzen verfügbaren senkrechten Raum ein. Dabei berücksichtigt er seine "
 "Nachbarn, die Elemente ``Logo`` und ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:256
-#, fuzzy
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the **Alignment** property to **Center**."
 msgstr ""
 "Um die Nodes im ``VBoxContainer`` zu zentrieren, gehe ganz nach oben im "
-"Inspektor und stelle die Eigenschaft ``Alignment`` auf ``Center``."
+"Inspektor und stelle die Eigenschaft **Alignment** auf **Center**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
-#, fuzzy
 msgid "The menu options should center vertically in the UI's left column."
 msgstr ""
-"Die Menüpunkte sollten in sich in der linken Spalte der Oberfläche sekrecht "
-"mittig ausrichten"
+"Die Menüpunkte sollten sich in der linken Spalte der Oberfläche senkrecht "
+"und mittig ausrichten."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:263
-#, fuzzy
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the **Custom Constants** category below **Size Flags**, and click the "
@@ -611,21 +584,21 @@ msgid ""
 "between menu options."
 msgstr ""
 "Zum Abschluss fügen wir Abstandshalter zwischen den Menüpunkten hinzu. "
-"Klappe die Kategorie ``Custom Constants``  unter ``Size Flags`` auf klick "
-"auf das Feld neben dem Parameter ``Separation``. Setze es auf 30. Sobald du "
-"Eingabe drückst, wird die Eigenschaft ``Separation`` wirksam und Godot fügt "
-"30 Pixel zwischen den Menüpunkten ein."
+"Klappe die Kategorie **Custom Constants** unter **Size Flags** auf klick auf "
+"das Feld neben dem Parameter **Separation**. Setze es auf 30. Sobald du "
+"Enter drückst, wird die Eigenschaft **Separation** wirksam und Godot fügt 30 "
+"Pixel zwischen den Menüpunkten ein."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
-#, fuzzy
 msgid "The final interface."
-msgstr "Die fertige Oberfläche"
+msgstr "Die fertige Oberfläche."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr ""
-"Ohne eine einzige Zeile Code haben wir ein ordentliches und dynamisches Menü."
+"Ohne eine einzige Zeile Code zu schreiben, haben wir ein ordentliches und "
+"dynamisches Menü."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:276
 msgid ""
@@ -635,9 +608,9 @@ msgid ""
 "bars and item counters."
 msgstr ""
 "Glückwunsch, dass du es so weit geschafft hast! Du kannst das fertige Menü "
-"herunterladen und mit deinem vergleichen:  :download:`ui_main_menu_design."
-"zip <files/ui_main_menu_design.zip>`. In der nächsten Anleitung wirst du ein "
-"eine Spieleoberfläche mit Leisten und Gegenstandszählern erstellen."
+"herunterladen und mit deinem vergleichen: :download:`ui_main_menu_design.zip "
+"<files/ui_main_menu_design.zip>`. In der nächsten Anleitung wirst du eine "
+"Spieleoberfläche mit Leisten und Gegenstandszählern erstellen."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
 msgid ""
@@ -679,7 +652,6 @@ msgstr ""
 "diesem Zweck vergrößert und verkleinert Godot das gesamte Fenster."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:301
-#, fuzzy
 msgid ""
 "You can change the scale mode in the project settings: click **Project > "
 "Project Settings** in the top menu. In the window's left column, look for "
@@ -689,8 +661,9 @@ msgid ""
 "information, see :ref:`doc_multiple_resolutions`."
 msgstr ""
 "Du kannst den Skalierungsmodus in den Projekteinstellungen ändern: klicke "
-"auf Projekt -> Projekteinstellungen.  Suche in der linken Fensterspalte nach "
-"der Kategorie Display. Klicke auf das Untermenü Window. Auf der rechten "
-"Fensterseite findest du einen Punkt namens Stretch. Die drei Einstellungen "
-"Mode, Aspect und Shrink steuern die Bildschirmgröße. Siehe :ref:"
-"`doc_multiple_resolutions` für weitere Informationen."
+"auf Projekt -> Projekteinstellungen. Suche in der linken Fensterspalte nach "
+"der Kategorie **Display**. Klicke auf das Untermenü **Window**. Auf der "
+"rechten Fensterseite findest du einen Punkt namens **Stretch**. Die drei "
+"Einstellungen **Mode**,** Aspect** und **Shrink** steuern die "
+"Bildschirmgröße. Siehe :ref:`doc_multiple_resolutions` für weitere "
+"Informationen."

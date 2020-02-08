@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,18 +26,16 @@ msgid "Introduction"
 msgstr "Introdução"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "A file system manages how assets are stored and how they are accessed. A "
 "well-designed file system also allows multiple developers to edit the same "
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
-"Os sistemas de arquivos são outro tópico importante no desenvolvimento do "
-"motor. O sistema de arquivos gerencia como os ativos são armazenados e como "
-"são acessados. Um sistema de arquivos bem projetado também permite que "
-"vários desenvolvedores editem os mesmos arquivos e ativos de origem enquanto "
-"colaboram em conjunto."
+"O sistema de arquivos gerencia como os assets são armazenados e como são "
+"acessados. Um sistema de arquivos bem projetado também permite que vários "
+"desenvolvedores editem os mesmos arquivos fonte e assets enquanto colaboram. "
+"A Godot guarda todos os assets como arquivos em seu sistema de arquivos."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
@@ -62,37 +60,34 @@ msgstr ""
 "é empacotado junto com as texturas de fonte."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
-#, fuzzy
 msgid ""
 "The Godot file system avoids using metadata files. Existing asset managers "
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
-"Em geral, o sistema de arquivos Godot evita usar arquivos de metadados. A "
-"razão para isso é simples: os gerenciadores de ativos existentes e sistemas "
-"de controle de versão são simplesmente muito melhores do que qualquer coisa "
-"que possamos implementar, então Godot tenta o melhor para jogar junto com "
-"SVN, Git, Mercurial, Performance, etc."
+"O sistema de arquivos da Godot evita usar arquivos de metadados. "
+"Gerenciadores de assets e sistemas de controle de versão existentes são "
+"muito melhores do que qualquer coisa que poderíamos implementar, então a "
+"Godot tenta de tudo para funcionar bem com SVN, Git, Mercurial, Perforce, "
+"etc."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:28
-#, fuzzy
 msgid "Example of file system contents:"
-msgstr "Exemplo de um conteúdo do sistema de arquivos:"
+msgstr "Exemplo de conteúdo do sistema de arquivos:"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:39
 msgid "project.godot"
 msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
-#, fuzzy
 msgid ""
 "The project.godot file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
-"O arquivo project.godot é o arquivo de descrição do projeto e é sempre "
+"O arquivo project.godot é o arquivo de descrição do projeto, e é sempre "
 "encontrado na raiz do projeto. Na verdade, sua localização define onde está "
-"a raiz. Este é o primeiro arquivo que Godot procura ao abrir um projeto."
+"a raiz. Este é o primeiro arquivo que a Godot procura ao abrir um projeto."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
 msgid ""
@@ -135,14 +130,12 @@ msgstr ""
 "problema, o caminho especial ``res://`` foi criado."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
-#, fuzzy
 msgid ""
 "The path ``res://`` will always point at the project root (where project."
 "godot is located, so ``res://project.godot`` is always valid)."
 msgstr ""
 "O caminho ``res://`` sempre apontará para a raiz do projeto (onde project."
-"godot está localizado, então, na prática, ``res://project.godot`` é sempre "
-"válido)."
+"godot está localizado, então ``res://project.godot`` é sempre válido)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
 msgid ""
@@ -162,22 +155,20 @@ msgid "User path"
 msgstr "Caminho do usuário"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
-#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
 "special path ``user://`` that is always writable."
 msgstr ""
-"Normalmente, gravar em disco é necessário  para várias tarefas como salvar o "
-"estado do jogo ou baixar pacotes de conteúdo adicional. Para isso, o motor "
-"garante um caminho especial ``user://`` que é sempre gravável."
+"Gravar em disco ainda é necessário para tarefas como salvar o estado do jogo "
+"ou baixar pacotes de conteúdo adicional. Para isso, o motor garante um "
+"caminho especial ``user://`` que é sempre gravável."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:81
 msgid "Host file system"
 msgstr "Sistema de arquivos da máquina"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
-#, fuzzy
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
@@ -185,10 +176,10 @@ msgid ""
 "writing development tools in Godot."
 msgstr ""
 "Alternativamente, os caminhos do sistema de arquivos da máquina também podem "
-"ser usados, mas isso não é recomendado para um produto lançado, já que esses "
-"caminhos não têm garantia de funcionar em todas as plataformas. No entanto, "
-"o uso de caminhos do sistema de arquivos da máquina hospedeira pode ser útil "
-"ao escrever ferramentas de desenvolvimento no Godot!"
+"ser usados, mas isso não é recomendado para um produto a ser lançado, já que "
+"esses caminhos não têm garantia de funcionar em todas as plataformas. No "
+"entanto, o uso de caminhos do sistema de arquivos da máquina pode ser útil "
+"ao escrever ferramentas de desenvolvimento na Godot."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:89
 msgid "Drawbacks"
@@ -222,7 +213,6 @@ msgstr ""
 "mais difícil?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:101
-#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -231,21 +221,21 @@ msgid ""
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
-"A segunda é que, no Windows e no MacOS, os nomes dos arquivos e dos caminhos "
-"não diferenciam maiúsculas de minúsculas. Se um desenvolvedor que trabalha "
-"em uma máquina com sistema de arquivos insensível a maiúsculas e minúsculas "
-"salvar um ativo como \"meuarquivo.PNG\", mas o referencia como \"meuarquivo."
-"png\", ele funcionará bem em sua plataforma, mas não em outras plataformas, "
-"como Linux, Android, etc. Isso também pode se aplicar aos binários "
-"exportados, que usam um pacote compactado para armazenar todos os arquivos."
+"A segunda é que, no Windows e no macOS, os nomes dos arquivos e dos caminhos "
+"não diferenciam letras maiúsculas de minúsculas. Se um desenvolvedor que "
+"trabalha em uma máquina com sistema de arquivos insensível a maiúsculas e "
+"minúsculas salvar um ativo como \"meuarquivo.PNG\", mas o referencia como "
+"\"meuarquivo.png\", ele funcionará bem em sua plataforma, mas não em outras "
+"plataformas, como Linux, Android, etc. Isso também pode se aplicar aos "
+"binários exportados, que usam um pacote compactado para armazenar todos os "
+"arquivos."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:107
-#, fuzzy
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot. One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
 "É recomendado que sua equipe defina claramente uma convenção de nomenclatura "
-"para arquivos ao trabalhar com Godot! Uma convenção simples é apenas "
-"permitir nomes de arquivos e caminhos em minúsculas."
+"ao arquivos ao trabalhar com Godot. Uma convenção simples é apenas permitir "
+"nomes de arquivos e caminhos em minúsculas."

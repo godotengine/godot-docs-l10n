@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/io/saving_games.rst:9
-#, fuzzy
 msgid ""
 "Save games can be complicated. For example, it may be desirable to store "
 "information from multiple objects across multiple levels. Advanced save game "
@@ -34,22 +33,22 @@ msgid ""
 "objects. This will allow the save function to scale as the game grows more "
 "complex."
 msgstr ""
-"保存游戏可能很复杂。可以想想这会存储，比角色等级或在某等级上赚取的星星数量，"
-"更多的信息。更高级的保存游戏可能需要存储关于具有任意数量的对象的附加信息。当"
-"游戏变得更加复杂时，这将需要保存函数来辅助。"
+"保存游戏可能很复杂。比如, 我们可能会想要储存跨多个关卡的多个物品的信息。更高"
+"级的保存游戏可能需要存储关于具有任意数量的对象的附加信息。当游戏变得更加复杂"
+"时，这将让保存函数可以随着游戏一同变得更加复杂。"
 
 #: ../../docs/tutorials/io/saving_games.rst:17
 msgid ""
 "If you're looking to save user configuration, you can use the :ref:"
 "`class_ConfigFile` class for this purpose."
 msgstr ""
+"如果你想保存玩家的设置, 你可以用:ref:`class_ConfigFile` 来实现这个目的。"
 
 #: ../../docs/tutorials/io/saving_games.rst:21
 msgid "Identify persistent objects"
 msgstr "识别持久化对象"
 
 #: ../../docs/tutorials/io/saving_games.rst:23
-#, fuzzy
 msgid ""
 "Firstly, we should identify what objects we want to keep between game "
 "sessions and what information we want to keep from those objects. For this "
@@ -57,22 +56,20 @@ msgid ""
 "other methods are certainly possible."
 msgstr ""
 "首先，我们应该确定在游戏会话中要保存什么对象，以及我们要从这些对象中保存什么"
-"信息。本教程中，我们将使用组来标记和处理要保存的对象，当然也有其他可行的方"
+"信息。本教程中，我们将使用组来标记和处理要保存的对象，但当然也有其他可行的方"
 "法。"
 
 #: ../../docs/tutorials/io/saving_games.rst:28
-#, fuzzy
 msgid ""
 "We will start by adding objects we wish to save to the \"Persist\" group. As "
 "in the :ref:`doc_scripting_continued` tutorial, we can do this through "
 "either the GUI or script. Let's add the relevant nodes using the GUI:"
 msgstr ""
-"首先我们将添加对象，它将保存到“Persist”组。 在 :ref:"
+"首先我们将想要保存的对象添加到“Persist”组。 在 :ref:"
 "`doc_scripting_continued` 教程中，我们学会了通过GUI或脚本完成此操作。 那就让"
 "我们使用GUI来添加相关节点吧:"
 
 #: ../../docs/tutorials/io/saving_games.rst:34
-#, fuzzy
 msgid ""
 "Once this is done, when we need to save the game, we can get all objects to "
 "save them and then tell them all to save with this script:"
@@ -85,7 +82,6 @@ msgid "Serializing"
 msgstr "序列化"
 
 #: ../../docs/tutorials/io/saving_games.rst:56
-#, fuzzy
 msgid ""
 "The next step is to serialize the data. This makes it much easier to read "
 "from and store to disk. In this case, we're assuming each member of group "
@@ -97,27 +93,25 @@ msgid ""
 "will look like this:"
 msgstr ""
 "下一步是序列化数据。 这使得从硬盘读取数据和存储数据到硬盘变得更加容易。 在这"
-"种情况下，我们假设Persist组的每个成员都是一个实例节点，因此有一个路径。 因为"
-"GDScript有相关的辅助函数，如 :ref:`to_json() "
+"种情况下，我们假设Persist组的每个成员都是一个实例化的节点，因此它们都有一个路"
+"径。 GDScript 有相关的辅助函数，如 :ref:`to_json() "
 "<class_@GDScript_method_to_json>` 和 :ref:`parse_json() "
-"<class_@GDScript_parse_json>`，所以我们使用字典来表示数据。 我们的节点需要包"
-"含一个返回此类型数据的保存函数。 保存函数如下所示:"
+"<class_@GDScript_parse_json>`，所以我们使用Dictionary来表示数据。 我们的节点"
+"需要包含一个返回Dictionary的保存函数。 保存函数看上去大概会像这样:"
 
 #: ../../docs/tutorials/io/saving_games.rst:119
-#, fuzzy
 msgid ""
 "This gives us a dictionary with the style ``{ \"variable_name\":"
 "value_of_variable }``, which will be useful when loading."
 msgstr ""
 "我们得到一个样式为 ``{ \"variable_name\":that_variables_value }`` 的字典，它"
-"在加载游戏数据时很有用。"
+"在加载游戏数据时会被用到。"
 
 #: ../../docs/tutorials/io/saving_games.rst:124
 msgid "Saving and reading data"
 msgstr "保存和读取数据"
 
 #: ../../docs/tutorials/io/saving_games.rst:126
-#, fuzzy
 msgid ""
 "As covered in the :ref:`doc_filesystem` tutorial, we'll need to open a file "
 "so we can write to it or read from it. Now that we have a way to call our "
@@ -126,14 +120,13 @@ msgid ""
 "and store them in a file. Doing it this way ensures that each line is its "
 "own object, so we have an easy way to pull the data out of the file as well."
 msgstr ""
-"正如在 :ref:`doc_filesystem` 教程中所述，我们需要打开一个文件并向其中写入数"
-"据，然后可以从中读取数据。 既然我们有办法调用我们的组并获取它们的相关数据，那"
-"么就让我们使用 to_json() 将数据转换成一个容易存储的字符串并将它存储在文件中"
-"吧。 这样做可以确保每一行都是自包含的对象，因此我们也可以轻松地将数据从文件中"
-"提取出来。"
+"正如在 :ref:`doc_filesystem` 教程中所述，我们需要打开一个文件来向其中写入或读"
+"取数据。 既然我们有办法调用我们的组并获取它们的相关数据，那么就让我们使用 :"
+"ref:`to_json() <class_@GDScript_method_to_json>` 将数据转换成一个容易存储的字"
+"符串并将它存储在文件中吧。 这样做可以确保每一行都是一个完整的对象的信息，这样"
+"的话将数据从文件中提取出来也会更加容易。"
 
 #: ../../docs/tutorials/io/saving_games.rst:202
-#, fuzzy
 msgid ""
 "Game saved! Loading is fairly simple as well. For that, we'll read each "
 "line, use parse_json() to read it back to a dict, and then iterate over the "
@@ -146,7 +139,6 @@ msgstr ""
 "使用文件名和父值来实现。 这就是我们的加载函数:"
 
 #: ../../docs/tutorials/io/saving_games.rst:292
-#, fuzzy
 msgid ""
 "Now we can save and load an arbitrary number of objects laid out almost "
 "anywhere across the scene tree! Each object can store different data "
@@ -160,18 +152,17 @@ msgid "Some notes"
 msgstr "一些注释"
 
 #: ../../docs/tutorials/io/saving_games.rst:299
-#, fuzzy
 msgid ""
 "We have glossed over setting up the game state for loading. It's ultimately "
 "up to the project creator where much of this logic goes. This is often "
 "complicated and will need to be heavily customized based on the needs of the "
 "individual project."
 msgstr ""
-"我们可能已经忽略了一个步骤，但将游戏状态设置到适合以加载数据可能很复杂。 需要"
-"根据单个项目的需求对此步骤进行大量定制。"
+"我们可能忽略了\"将游戏状态设置到适合以加载数据\"这一步。最终, 这一步怎么做的"
+"决定权在项目创建者手里。这通常很复杂, 需要根据单个项目的需求对此步骤进行大量"
+"定制。"
 
 #: ../../docs/tutorials/io/saving_games.rst:304
-#, fuzzy
 msgid ""
 "Additionally, our implementation assumes no Persist objects are children of "
 "other Persist objects. Otherwise, invalid paths would be created. To "
@@ -181,7 +172,8 @@ msgid ""
 "also need a way to link children to parents as the :ref:`NodePath "
 "<class_nodepath>` will likely be invalid."
 msgstr ""
-"此实现假定没有Persist对象是其他Persist对象的子对象。 这样做会产生无效路径。 "
-"如果这是项目的需求之一，则需要考虑这一点。 分阶段保存对象(父对象优先)，以便在"
-"加载子对象时可用它们将确保它们可用于add_child() 调用。 由于NodePath可能无效，"
-"因此还需要某种方式将子项链接到父项。"
+"另外, 此实现假定没有Persist对象是其他Persist对象的子对象。 否则会产生无效路"
+"径。 如果这是项目的需求之一，可以考虑分阶段保存对象(父对象优先)，以便在加载子"
+"对象时可用它们将确保它们可用于:ref:`add_child() "
+"<class_node_method_add_child>` 调用。 由于:ref:`NodePath <class_nodepath>`可"
+"能无效，因此可能还需要某种方式将子项链接到父项。"

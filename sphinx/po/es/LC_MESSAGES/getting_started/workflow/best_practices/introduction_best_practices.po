@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,8 @@ msgid ""
 "This series is a collection of best practices to help you work efficiently "
 "with Godot."
 msgstr ""
+"Esta serie es una colección de buenas prácticas para ayudarte a trabajar de "
+"forma eficiente con Godot."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:9
 msgid ""
@@ -34,12 +36,18 @@ msgid ""
 "pros and cons, and they can be hard to weigh until you've worked with the "
 "engine for long enough."
 msgstr ""
+"Godot permite una gran flexibilidad en la forma de estructurar la base de "
+"código de un proyecto y dividirlo en escenas. Cada enfoque tiene sus pros y "
+"contras, y pueden ser difíciles de sopesar hasta que no has trabajado con el "
+"motor el tiempo suficiente."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:13
 msgid ""
 "There are always many ways to structure your code and solve specific "
 "programming problems. It would be impossible to cover them all here."
 msgstr ""
+"Siempre hay varias formas de estructurar tu código y resolver problemas "
+"específicos de programación. Sería imposible cubrirlos a todos aquí."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:16
 msgid ""
@@ -48,6 +56,10 @@ msgid ""
 "pros and cons of each option, and highlight the best course of action for "
 "the problem at hand."
 msgstr ""
+"Por esa razón cada artículo parte de un problema del mundo real. "
+"Desglosaremos cada problema en preguntas fundamentales, sugeriremos "
+"soluciones, analizaremos los pros y contras de cada opción, y destacaremos "
+"la mejor forma de proceder para el problema en cuestión."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:20
 msgid ""
@@ -56,6 +68,10 @@ msgid ""
 "Oriented programming language. It will help you make sense of the rest of "
 "the series."
 msgstr ""
+"Deberías empezar leyendo :ref:`doc_what_are_godot_classes`. Explica cómo se "
+"relacionan los nodos y escenas de Godot con las clases y objetos de otros "
+"lenguajes de programación orientados a objetos. Te ayudará a darle sentido "
+"al resto de la serie."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:26
 msgid ""
@@ -64,3 +80,8 @@ msgid ""
 "Single_responsibility_principle>`_ principle and `encapsulation <https://en."
 "wikipedia.org/wiki/Encapsulation_(computer_programming)>`_."
 msgstr ""
+"Las buenas prácticas en Godot se basan en principios de diseño orientado a "
+"objetos. Utilizamos herramientas como el principio de `responsabilidad única "
+"<https://es.wikipedia.org/wiki/Principio_de_responsabilidad_%C3%BAnica>`_ y "
+"la `encapsulación <https://es.wikipedia.org/wiki/Encapsulamiento_(inform"
+"%C3%A1tica)>`_."

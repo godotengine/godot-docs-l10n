@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:18
-#, fuzzy
 msgid ""
 "This tutorial will show you how to create a simple import plugin to load a "
 "custom text file as a material resource. This text file will contain three "
@@ -56,10 +55,10 @@ msgid ""
 "(zero red, zero green, and full blue):"
 msgstr ""
 "このチュートリアルでは、単純なインポートプラグインを作成して、カスタムテキス"
-"トファイルをマテリアルリソースとしてロードする方法を示します。 このテキスト"
+"トファイルをマテリアルリソースとしてロードする方法を示します。このテキスト"
 "ファイルには、色の3つのチャネルを表すコンマで区切られた3つの数値が含まれ、結"
 "果の色はインポートされたマテリアルのアルベド(メインカラー)として使用されま"
-"す。"
+"す。この例では、純粋な青の色(赤がゼロ、緑がゼロ、青がフル)が含まれます:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:30
 msgid "Configuration"
@@ -94,7 +93,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:73
-#, fuzzy
 msgid ""
 "Note that the import plugin is a reference type, so it doesn't need to be "
 "explicitly released from memory with the ``free()`` function. It will be "
@@ -137,15 +135,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:111
-#, fuzzy
 msgid ""
 "You should choose this name as a continuation to \"Import as\", e.g. *"
 "\"Import as Silly Material\"*. You can name it whatever you want but we "
 "recommend a descriptive name for your plugin."
 msgstr ""
 "この名前は、「名前を付けてインポート」の続きとして選択する必要があります。 例"
-"えば、 \\ *「愚かな素材としてインポート」*\\ 。 はい、これは少しばかげていま"
-"すが、プラグインにわかりやすい名前を付けることができます。"
+"えば、 \\ *「愚かな素材としてインポート」*\\ 。 好きな名前を付けることができ"
+"ますが、プラグインにはわかりやすい名前を付けることをお勧めします。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:120
 msgid ""
@@ -169,7 +166,6 @@ msgstr ""
 "ポート時に注意が必要です。ファイルが整形式であることを期待しないでください。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:136
-#, fuzzy
 msgid ""
 "The imported files are saved in the ``.import`` folder at the project's "
 "root. Their extension should match the type of resource you are importing, "
@@ -178,10 +174,10 @@ msgid ""
 "used in the import."
 msgstr ""
 "インポートされたファイルは、プロジェクトのルートにある ``.import`` フォルダに"
-"保存されます。インポートするリソースの種類と一致する必要がありますが、Godotは"
-"使用する内容を知ることができないため(同じリソースに対して複数の有効な拡張機能"
-"が存在する可能性があるため)、インポートで使用される内容を通知する必要がありま"
-"す。"
+"保存されます。それらの拡張子は、インポートするリソースの種類と一致する必要が"
+"ありますが、Godotは何を使用するのかを知ることができないため(同じリソースに対"
+"して複数の有効な拡張機能が存在する可能性があるため)、インポートで使用される内"
+"容を宣言する必要があります。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:142
 msgid ""
@@ -527,13 +523,12 @@ msgstr ""
 "それを認識できるようにする必要があります。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:366
-#, fuzzy
 msgid ""
 "For example, let's say we save a different material for a mobile platform. "
 "We would need to do something like the following:"
 msgstr ""
 "たとえば、モバイルプラットフォーム用に別のマテリアルを保存したとします。次の"
-"ような操作を行う必要があります:"
+"ような処理を行う必要があります:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:374
 msgid ""
@@ -543,7 +538,7 @@ msgid ""
 "inadvertently deleted."
 msgstr ""
 "``r_gen_files`` 引数は、インポートプロセス中に生成され、保持する必要がある追"
-"加のファイル用です。 エディターはこれを見て依存関係を理解し、余分なファイルが"
+"加のファイル用です。 エディタはこれを見て依存関係を理解し、余分なファイルが"
 "誤って削除されないようにします。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:379

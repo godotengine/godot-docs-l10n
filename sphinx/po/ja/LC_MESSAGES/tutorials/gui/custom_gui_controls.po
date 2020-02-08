@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:4
 msgid "Custom GUI controls"
-msgstr ""
+msgstr "カスタムGUIコントロール"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:7
 msgid "So many controls..."
-msgstr ""
+msgstr "非常に多くのコントロール..."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:9
 msgid ""
@@ -34,10 +34,15 @@ msgid ""
 "diagonal scrollbars, at least it will be good to know how to create these "
 "controls easily from script."
 msgstr ""
+"まだ十分ではありません。希望どおりに動作する独自のカスタムコントロールを作成"
+"することは、ほとんどすべてのGUIプログラマーの執念です。 Godotはそれらの多くを"
+"提供しますが、期待どおりに動作しない場合があります。斜めスクロールバーをサ"
+"ポートするためのプルリクエストで開発者に連絡する前に、少なくともスクリプトか"
+"らこれらのコントロールを簡単に作成する方法を知っておくとよいでしょう。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:17
 msgid "Drawing"
-msgstr ""
+msgstr "描画"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:19
 msgid ""
@@ -45,10 +50,13 @@ msgid ""
 "tutorial. The same applies. Some functions are worth mentioning due to their "
 "usefulness when drawing, so they will be detailed next:"
 msgstr ""
+"描画については、\\ :ref:`doc_custom_drawing_in_2d` チュートリアルを確認するこ"
+"とをお勧めします。同じことが当てはまります。一部の関数は、描画時の有用性から"
+"特に言及する価値があるため、次で詳しく説明します。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:24
 msgid "Checking control size"
-msgstr ""
+msgstr "コントロールサイズの確認"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:26
 msgid ""
@@ -57,10 +65,15 @@ msgid ""
 "<class_Control_property_rect_size>` property is provided. Checking it during "
 "``_draw()`` is vital to ensure everything is kept in-bounds."
 msgstr ""
+"2Dノードとは異なり、コントロールでは適切なレイアウトで整理することに役立つた"
+"め、「サイズ」が重要です。このために、\\ :ref:`Control.rect_size "
+"<class_Control_property_rect_size>` プロパティが提供されています。\\ "
+"``_draw()`` 中にそれをチェックすることは、すべてが境界内に保たれていることを"
+"確認するために不可欠です。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:33
 msgid "Checking focus"
-msgstr ""
+msgstr "フォーカスの確認"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:35
 msgid ""
@@ -73,10 +86,19 @@ msgid ""
 "focused control. To check for this status, the :ref:`Control.has_focus() "
 "<class_Control_method_has_focus>` method exists. Example"
 msgstr ""
+"一部のコントロール(ボタンやテキストエディタなど)は、キーボードまたはジョイ"
+"パッド入力に入力フォーカスを提供する場合があります。この例として、テキストの"
+"入力やボタンの押下があります。これは\\ :ref:`Control.focus_mode "
+"<class_Control_property_focus_mode>` プロパティで制御されます。描画時、および"
+"コントロールが入力フォーカスをサポートしている場合は、常に何らかのインジケー"
+"ター (強調表示、ボックスなど) を表示して、現在フォーカスされているコントロー"
+"ルであることが示すことが望まれます。このステータスを確認するために、\\ :ref:"
+"`Control.has_focus() <class_Control_method_has_focus>` メソッドが存在します。"
+"例"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:69
 msgid "Sizing"
-msgstr ""
+msgstr "サイズ変更"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:71
 msgid ""
@@ -87,16 +109,24 @@ msgid ""
 "`VBoxContainer <class_VBoxContainer>`, the minimum size will make sure your "
 "custom control is not squished by the other controls in the container."
 msgstr ""
+"前述したように、サイズはコントロールにとって重要です。これにより、グリッド、"
+"コンテナ、またはアンカーに設定したときに、適切にレイアウトできます。ほとんど"
+"の場合、コントロールは、適切にレイアウトするために *最小サイズ* を提供しま"
+"す。たとえば、コントロールが\\ :ref:`VBoxContainer <class_VBoxContainer>` を"
+"使用して互いの上に垂直に配置されている場合、最小サイズは、コンテナ内の他のコ"
+"ントロールによってカスタムコントロールが押しつぶされないようにします。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:79
 msgid ""
 "To provide this callback, just override :ref:`Control.get_minimum_size() "
 "<class_Control_method_get_minimum_size>`, for example:"
 msgstr ""
+"このコールバックを提供するには、次のように :ref:`Control.get_minimum_size() "
+"class_Control_method_get_minimum_size>` をオーバーライドするだけです:"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:96
 msgid "Or alternatively, set it via function:"
-msgstr ""
+msgstr "または、関数を使用して設定します:"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:112
 msgid "Input"
@@ -107,6 +137,8 @@ msgid ""
 "Controls provide a few helpers to make managing input events much easier "
 "than regular nodes."
 msgstr ""
+"コントロールには、入力イベントの管理を通常のノードよりもはるかに簡単に行うた"
+"めのヘルパーがいくつか用意されています。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:118
 msgid "Input events"
@@ -117,22 +149,30 @@ msgid ""
 "There are a few tutorials about input before this one, but it's worth "
 "mentioning that controls have a special input method that only works when:"
 msgstr ""
+"このチュートリアルの前に入力に関するチュートリアルがいくつかありますが、コン"
+"トロールには次の場合にのみ機能する特別な入力メソッドがあることに注意してくだ"
+"さい:"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:124
 msgid "The mouse pointer is over the control."
-msgstr ""
+msgstr "マウスポインターがコントロールの上にある。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:125
 msgid ""
 "The button was pressed over this control (control always captures input "
 "until button is released)"
 msgstr ""
+"このコントロールの上でボタンが押された(ボタンが放されるまで、コントロールは常"
+"に入力をキャプチャします)"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:127
 msgid ""
 "Control provides keyboard/joypad focus via :ref:`Control.focus_mode "
 "<class_Control_property_focus_mode>`."
 msgstr ""
+"コントロールは\\ :ref:`Control.focus_mode "
+"<class_Control_property_focus_mode>` を介してキーボード/ジョイパッドフォーカ"
+"スを提供します。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:130
 msgid ""
@@ -140,12 +180,16 @@ msgid ""
 "<class_Control_method__gui_input>`. Simply override it in your control. No "
 "processing needs to be set."
 msgstr ""
+"この関数は\\ :ref:`Control._gui_input() <class_Control_method__gui_input>` で"
+"す。コントロールで単にオーバーライドします。処理を設定する必要はありません。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:153
 msgid ""
 "For more information about events themselves, check the :ref:"
 "`doc_inputevent` tutorial."
 msgstr ""
+"イベント自体の詳細については、\\ :ref:`doc_inputevent` チュートリアルを確認し"
+"てください。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:157
 msgid "Notifications"
@@ -156,3 +200,5 @@ msgid ""
 "Controls also have many useful notifications for which no dedicated callback "
 "exists, but which can be checked with the _notification callback:"
 msgstr ""
+"コントロールには専用のコールバックは存在しませんが、_notificationコールバック"
+"で確認できる多くの便利な通知があります:"

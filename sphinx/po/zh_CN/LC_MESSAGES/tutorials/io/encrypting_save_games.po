@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,14 +19,13 @@ msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:4
 msgid "Encrypting save games"
-msgstr "加密保存游戏"
+msgstr "加密保存的游戏数据"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:7
 msgid "Why?"
 msgstr "为什么？"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:9
-#, fuzzy
 msgid ""
 "Because the world today is not the world of yesterday. A capitalist "
 "oligarchy runs the world and forces us to consume in order to keep the gears "
@@ -40,15 +39,14 @@ msgid ""
 "spending money on them to extend their experience, and their preferred way "
 "of doing so is through in-app purchases and virtual currency."
 msgstr ""
-"因为今天的世界不是昨天的世界。一个资本主义寡头统治世界，强迫我们消费，以便使"
-"这个腐朽社会的齿轮保持在轨道上。因此，当今视频游戏消费最大的市场是手机游戏市"
-"场。这是一个穷人被迫消费数字内容的市场，以便忘记他们日常生活、通勤的痛苦，或"
-"仅仅享受他们没有被用来为统治阶级生产商品或服务的短暂自由时刻。这些人需要继续"
-"关注他们的电子游戏(因为不这样做将给他们带来巨大的生存焦虑)，所以他们甚至花钱"
-"在游戏上来扩展他们的体验，而他们这样做的首选方式是通过应用内购买和虚拟货币。"
+"因为今日的世界不是昨日的世界。一个资本主义寡头统治着世界，强迫我们消费，以便"
+"使这个腐朽社会的齿轮保持运作。因此，当今游戏消费最大的市场是手机游戏市场。这"
+"是一个穷人被迫消费数字内容，以便忘记他们日常生活、通勤的痛苦，或仅仅享受他们"
+"没有被用来为统治阶级生产商品或服务的短暂自由时刻。这些人需要继续集中于他们的"
+"电子游戏(因为不这样做将给他们带来巨大的存在主义焦虑)，所以他们甚至花钱在游戏"
+"上来扩展他们的体验，而他们这样做的首选方式是通过应用内购买和虚拟货币。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:22
-#, fuzzy
 msgid ""
 "But what if someone were to find a way to edit the saved games and assign "
 "the items and currency without effort? That would be terrible, because it "
@@ -57,23 +55,22 @@ msgid ""
 "them to think, and the tremendous agony of realizing their own irrelevance "
 "would again take over their life."
 msgstr ""
-"但是，想象一下，如果有人想办法编辑保存的游戏，不用任何努力地就可以分配物品和"
-"货币？这将是可怕的，因为它将使得游戏角色更快地消费游戏内容，导致更快地消费完"
-"游戏内容。如果发生这种情况，他们将没有别东西可以逃避生活，并且生活的窘迫将再"
-"次占据他们的生活。"
+"但是，想象一下，如果有人想办法编辑保存的游戏数据，不用任何努力地就可以得到物"
+"品和货币？这将是可怕的，因为它将使得玩家更快地消费游戏内容，导致更快地玩完游"
+"戏。如果这种事情发生了，他们将没有别东西可以用来逃避思考，而意识到他们自己渺"
+"小无用的巨大痛苦将会再次占据他们的生活。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:29
-#, fuzzy
 msgid ""
 "No, we definitely do not want that to happen, so let's see how to encrypt "
 "savegames and protect the world order."
 msgstr ""
-"不，我们绝对不希望这种情况发生，所以让我们看看如何加密保存游戏从而维护现实世"
-"界的秩序。"
+"不，我们绝对不希望这种情况发生，所以让我们看看如何加密保存游戏数据从而保护世"
+"界秩序和平稳定。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:33
 msgid "How?"
-msgstr "怎么用？"
+msgstr "怎么做？"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:35
 msgid ""
@@ -85,17 +82,15 @@ msgstr ""
 "变量)。它还支持加密。要创建加密文件，必须提供一个密码，如下所示:"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:55
-#, fuzzy
 msgid ""
 "This will make the file unreadable to users, but will still not prevent them "
 "from sharing savefiles. To solve this, use the device unique id or some "
 "unique user identifier, for example:"
 msgstr ""
 "对用户而言，这将使文件不可读，但仍然不会阻止他们分享保存的文件。为了解决这个"
-"问题，可以使用设备唯一的id或某个唯一用户标识符，例如:"
+"问题，可以使用设备唯一id或某个唯一用户标识符，例如:"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:74
-#, fuzzy
 msgid "Note that ``OS.get_unique_id()`` does not work on UWP or HTML5."
 msgstr "请注意， ``OS.get_unique_id()`` 只适用于iOS和Android系统。"
 

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:4
 msgid "Screen-reading shaders"
-msgstr ""
+msgstr "スクリーン読み取りシェーダー"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:7
 msgid "Introduction"
@@ -34,6 +34,11 @@ msgid ""
 "problems. As a result, not even the most modern hardware supports this "
 "properly."
 msgstr ""
+"非常に多くの場合、書き込み先と同じ画面から読み取るシェーダーを作成することが"
+"望まれます。 OpenGLやDirectXなどの3D APIは、内部ハードウェアの制限により、こ"
+"れを非常に困難にします。 GPUは非常に並列であるため、読み取りと書き込みはあら"
+"ゆる種類のキャッシュと一貫性の問題を引き起こします。その結果、最新のハード"
+"ウェアでさえこれを適切にサポートしていません。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:16
 msgid ""
@@ -41,10 +46,13 @@ msgid ""
 "a back-buffer and then read from it while drawing. Godot provides a few "
 "tools that make this process easy!"
 msgstr ""
+"回避策は、画面または画面の一部をバックバッファにコピーし、描画中にそこから読"
+"み取ることです。 Godotには、このプロセスを簡単にするツールがいくつか用意され"
+"ています！"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:21
 msgid "SCREEN_TEXTURE built-in texture"
-msgstr ""
+msgstr "SCREEN_TEXTURE ビルトインテクスチャ"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:23
 msgid ""
@@ -54,10 +62,15 @@ msgid ""
 "special built-in varying: SCREEN_UV can be used to obtain the UV for the "
 "current fragment. As a result, this simple 2D fragment shader:"
 msgstr ""
+"Godot :ref`doc_shading_language` には、\"SCREEN_TEXTURE\" (および3Dの場合は深"
+"さの \"DEPTH_TEXTURE\")という特別なテクスチャがあります。引数として画面のUVを"
+"取り、色付きのvec3 RGBを返します。特別なビルトイン変数: SCREEN_UVを使用して、"
+"現在のフラグメントのUVを取得できます。その結果、この単純な2Dフラグメント"
+"シェーダーは次のようになります:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:34
 msgid "results in an invisible object, because it just shows what lies behind."
-msgstr ""
+msgstr "背後にあるものを表示するだけなので、不可視のオブジェクトになります。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:36
 msgid ""
@@ -65,16 +78,20 @@ msgid ""
 "chunk of the screen, it also does an efficient separatable gaussian blur to "
 "its mipmaps."
 msgstr ""
+"textureLodを使用する必要がある理由は、Godotが画面のチャンクをコピーバックする"
+"ときに、ミップマップに対して効率的な分離可能なガウスぼかしも行うためです。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:39
 msgid ""
 "This allows for not only reading from the screen, but reading from it with "
 "different amounts of blur at no cost."
 msgstr ""
+"これにより、画面から読み取るだけでなく、異なる量のブラーを使用して読み取るこ"
+"とができます。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:43
 msgid "SCREEN_TEXTURE example"
-msgstr ""
+msgstr "SCREEN_TEXTUREの例"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:45
 msgid ""
@@ -82,10 +99,13 @@ msgid ""
 "*Screen Space Shaders*, that you can download to see and learn. One example "
 "is a simple shader to adjust brightness, contrast and saturation:"
 msgstr ""
+"SCREEN_TEXTUREは、多くのことに使用できます。\\ *Screen Space Shaders* の特別"
+"なデモがあり、ダウンロードして確認および学習できます。 1つの例は、明るさ、コ"
+"ントラスト、彩度を調整するシンプルなシェーダーです:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:69
 msgid "Behind the scenes"
-msgstr ""
+msgstr "舞台裏"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:71
 msgid ""
@@ -94,12 +114,18 @@ msgid ""
 "buffer. Subsequent nodes that use it in shaders will not have the screen "
 "copied for them, because this ends up being inefficient."
 msgstr ""
+"これは魔法のように見えますが、そうではありません。 SCREEN_TEXTUREビルトイン"
+"は、描画しようとしているノードで最初に見つかったときに、バックバッファへのフ"
+"ルスクリーンコピーを実行します。シェーダーでそれを使用する後続のノードでは、"
+"画面がコピーされません。これは、非効率的であるためです。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:77
 msgid ""
 "As a result, if shaders that use SCREEN_TEXTURE overlap, the second one will "
 "not use the result of the first one, resulting in unexpected visuals:"
 msgstr ""
+"その結果、SCREEN_TEXTUREを使用するシェーダーがオーバーラップする場合、2番目の"
+"シェーダーは最初のシェーダーの結果を使用せず、予期しないビジュアルになります:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:83
 msgid ""
@@ -107,12 +133,16 @@ msgid ""
 "for SCREEN_TEXTURE as the first one below, so the first one \"disappears\", "
 "or is not visible."
 msgstr ""
+"上の画像では、2番目の球体(右上)がSCREEN_TEXTUREに同じソースを使用しているた"
+"め、最初の球体は「消える」か、表示されません。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:87
 msgid ""
 "In 3D, this is unavoidable because copying happens when opaque rendering "
 "completes."
 msgstr ""
+"3Dでは、不透明なレンダリングが完了するとコピーが行われるため、これは避けられ"
+"ません。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:90
 msgid ""
@@ -121,20 +151,25 @@ msgid ""
 "spheres. BackBufferCopy can work by either specifying a screen region or the "
 "whole screen:"
 msgstr ""
+"2Dでは、これは :ref:`BackBufferCopy <class_BackBufferCopy>` ノードを介して修"
+"正できます。これは両方の球の間でインスタンス化できます。 BackBufferCopyは、画"
+"面領域または画面全体を指定することで機能します:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:96
 msgid "With correct back-buffer copying, the two spheres blend correctly:"
-msgstr ""
+msgstr "バックバッファを正しくコピーすると、2つの球体が正しくブレンドされます:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:101
 msgid "Back-buffer logic"
-msgstr ""
+msgstr "バックバッファロジック"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:103
 msgid ""
 "So, to make it clearer, here's how the backbuffer copying logic works in "
 "Godot:"
 msgstr ""
+"したがって、わかりやすくするために、Godotでのバックバッファーコピーロジックの"
+"動作を次に示します:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:106
 msgid ""
@@ -142,6 +177,9 @@ msgid ""
 "buffer before drawing that node. This only happens the first time; "
 "subsequent nodes do not trigger this."
 msgstr ""
+"ノードがSCREEN_TEXTUREを使用する場合、そのノードを描画する前に画面全体がバッ"
+"クバッファーにコピーされます。これは最初にのみ発生します。後続のノードはこれ"
+"をトリガーしません。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:109
 msgid ""
@@ -151,6 +189,11 @@ msgid ""
 "screen only happens if SCREEN_TEXTURE is used in a node for the first time "
 "and no BackBufferCopy node (not disabled) was found before in tree-order."
 msgstr ""
+"上記の状況の前にBackBufferCopyノードが処理された場合(SCREEN_TEXTUREが使用され"
+"なかった場合でも)、上記の状況で説明した動作は発生しません。言い換えると、"
+"SCREEN_TEXTUREがノードで初めて使用され、BackBufferCopyノード(無効ではない)が"
+"ツリー順で以前に見つからなかった場合にのみ、画面全体の自動コピーが発生しま"
+"す。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:115
 msgid ""
@@ -161,10 +204,15 @@ msgid ""
 "to copy back a region of the screen and then use SCREEN_TEXTURE on a "
 "different region. Avoid this behavior!"
 msgstr ""
+"BackBufferCopyは、画面全体または領域のいずれかをコピーできます。(画面全体では"
+"なく)領域のみに設定され、シェーダーがコピーされた領域にないピクセルを使用する"
+"場合、その読み取りの結果は未定義です(ほとんどの場合、前のフレームからのゴ"
+"ミ)。つまり、BackBufferCopyを使用して画面の領域をコピーバックし、別の領域で"
+"SCREEN_TEXTUREを使用することができてしまいます。この動作は避けてください！"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:124
 msgid "DEPTH_TEXTURE"
-msgstr ""
+msgstr "\\ DEPTH_TEXTURE"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:126
 msgid ""
@@ -172,8 +220,11 @@ msgid ""
 "this, the DEPTH_TEXTURE built-in is used. This texture is not linear; it "
 "must be converted via the inverse projection matrix."
 msgstr ""
+"3Dシェーダーの場合、画面深度バッファーにアクセスすることもできます。このため"
+"に、DEPTH_TEXTUREビルトインが使用されます。このテクスチャは線形ではありませ"
+"ん。逆射影行列を介して変換する必要があります。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:130
 msgid ""
 "The following code retrieves the 3D position below the pixel being drawn:"
-msgstr ""
+msgstr "次のコードは、描画中のピクセルの下の3D位置を取得します:"

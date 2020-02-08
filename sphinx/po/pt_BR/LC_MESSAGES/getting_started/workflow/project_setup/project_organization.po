@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,6 +115,10 @@ msgid ""
 "an empty file called ``.gdignore`` in the folder (the leading ``.`` is "
 "required). This can be useful to speed up the initial project importing."
 msgstr ""
+"Para evitar que Godot importe arquivos contidos em uma pasta específica, "
+"crie um arquivo vazio chamado ``.gdignore`` na pasta (o início ``.`` é "
+"necessário). Isso pode ser útil para acelerar a importação inicial do "
+"projeto."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:66
 msgid ""
@@ -122,15 +126,22 @@ msgid ""
 "editor such as Notepad++ or use the following command in a command prompt: "
 "``type nul > .gdignore``"
 msgstr ""
+"Para criar um arquivo cujo nome começa com um ponto no Windows, você pode "
+"usar um editor de texto como Notepad++ ou usar o seguinte comando em um "
+"prompt de comando: ``type nul > .gdignore``"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:70
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
 "using the ``load()`` and ``preload()`` methods."
 msgstr ""
+"Uma vez que a pasta é ignorada, os recursos dessa pasta não podem mais ser "
+"carregados usando os métodos ``load()`` e ``preload()``."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:73
 msgid ""
 "Ignoring a folder will also automatically hide it from the FileSystem dock, "
 "which can be useful to reduce clutter."
 msgstr ""
+"Ignorar uma pasta também irá escondê-la automaticamente do dock FileSystem, "
+"que pode ser útil para reduzir a desordem."
