@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Spanish
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Agustin Ostorero <panconmayonesa56@gmail.com>, 2018.
@@ -16,11 +16,12 @@
 # Ángel Sillero Navajas <xenmai95@gmail.com>, 2019.
 # Angelvel Jesus Marrufo Pava <angelvelmarrufo14@hotmail.com>, 2019.
 # Antonio Garcia Cabriada <aoaee22@gmail.com>, 2019.
-# AnyMan <romopua@gmail.com>, 2018-2019.
+# AnyMan <romopua@gmail.com>, 2018-2020.
 # AracnidKnight <jjifernandezcubillos@gmail.com>, 2019.
 # arisvaldez <samus45@hotmail.es>, 2019.
-# Avocado <avocadosan42@gmail.com>, 2018-2019.
+# Avocado <avocadosan42@gmail.com>, 2018-2020.
 # Cameron Toms <cameron.toms@gmail.com>, 2018.
+# Carlos Herrero <qarlosherrero@gmail.com>, 2020.
 # Carlos Roberto Rojas C <carlosroberto.rojas@gmail.com>, 2018.
 # César León <ceesarleon2002@gmail.com>, 2018.
 # Cristian Martinez <organocm@gmail.com>, 2018.
@@ -63,7 +64,8 @@
 # Juan Jesús Ligero <jjhaggar@gmail.com>, 2018.
 # Juanjo <jjramos@gmail.com>, 2018.
 # Juan S. Estrada <juan.s.estrada@outlook.com>, 2019.
-# Julio Alvar Tamaño <alvarjt@gmail.com>, 2018.
+# Julián Luini <jluini@gmail.com>, 2020.
+# Julio Alvar Tamaño <alvarjt@gmail.com>, 2018, 2020.
 # Julio Rolandi <julio.rolandi@gmail.com>, 2018.
 # Kevin S Mojica <keffspace@gmail.com>, 2018.
 # Kevin Soto Vallejo <siguemek@gmail.com>, 2018.
@@ -86,6 +88,7 @@
 # Roberto Sosa Cano <roberto.cano@gmail.com>, 2018.
 # Rodolfo Lam <r_lam@hotmail.com>, 2018.
 # Sebastián Diéguez (SebaSOFT) <sebasoft@gmail.com>, 2018.
+# Sergio Candela Ramirez <sergiocanram@gmail.com>, 2020.
 # SI Silicon <sisilicon28@gmail.com>, 2018.
 # Vi <invalid.float@gmail.com>, 2018.
 # Victor Tisnado <vtisnado@gmail.com>, 2019.
@@ -97,8 +100,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-27 08:44+0100\n"
-"PO-Revision-Date: 2020-01-19 13:12+0000\n"
-"Last-Translator: Andrés Godoy <andresgg.games@gmail.com>\n"
+"PO-Revision-Date: 2020-02-07 10:33+0000\n"
+"Last-Translator: Julián Luini <jluini@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -106,7 +109,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.10.2\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -586,7 +589,7 @@ msgstr "¡Diviértase leyendo y haciendo juegos con Godot Engine!"
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "Preguntas frecuentes"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -1643,14 +1646,12 @@ msgid "VR"
 msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr ":ref:`doc_vr_starter_tutorial`"
+msgstr ":ref:`doc_vr_starter_tutorial_part_one`"
 
 #: ../../docs/about/docs_changelog.rst:66
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr ":ref:`doc_vr_starter_tutorial`"
+msgstr ":ref:`doc_vr_starter_tutorial_part_two`"
 
 #: ../../docs/about/docs_changelog.rst:69
 #: ../../docs/about/docs_changelog.rst:183
@@ -2009,25 +2010,23 @@ msgid "Project manager"
 msgstr "Administrador de proyectos"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
-"Cuando ejecutas Godot, la primera ventana que aparece es el Administrador de "
-"Proyectos. Este te permite crear, borrar, importar o ejecutar proyectos de "
-"juegos."
+"Cuando inicies a Godot, la primera ventana que verás es la del Administrador "
+"de Proyectos. Como no tienes proyectos, aparecerá una ventana emergente que "
+"te preguntará si quieres abrir la biblioteca de assets, sólo tienes que "
+"hacer clic en cancelar, ya lo veremos más tarde."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
-#, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"Cuando ejecutas Godot, la primera ventana que aparece es el Administrador de "
-"Proyectos. Este te permite crear, borrar, importar o ejecutar proyectos de "
-"juegos."
+"Ahora deberías ver el administrador de proyectos. Te permite crear, "
+"eliminar, importar o jugar proyectos de juegos."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
@@ -2038,7 +2037,6 @@ msgstr ""
 "cambiar el idioma del editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -2046,25 +2044,26 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"En la pestaña **Plantillas** podrás descargar plantillas de código abierto y "
-"demos que te ayudarán a comenzar rápidamente. Solo selecciona la plantilla o "
-"demo que gustes, haz clic en descargar, una vez haya finalizado de "
-"descargar, haz clic en instalar y elige dónde quieres que este el proyecto."
+"Desde la pestaña **Plantillas** puedes descargar plantillas de proyectos de "
+"código abierto y demostraciones de la Biblioteca de Assets para ayudarte a "
+"empezar más rápido. Simplemente selecciona la plantilla o demostración que "
+"desees, haz clic en descargar y una vez que finalice la descarga haz clic en "
+"instalar y elige dónde quieres que vaya el proyecto. Puedes obtener más "
+"información en :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
 msgstr "Crear o importar un proyecto"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
-"Para crear un nuevo proyecto, haz clic en el botón ``Nuevo proyecto`` a la "
-"derecha. Dale un nombre y elige una carpeta vacía en tu ordenador para "
-"guardarlo."
+"Para crear un nuevo proyecto, haz clic en el botón ``Nuevo Proyecto`` de la "
+"derecha. Aquí le darás un nombre, elegirás una carpeta vacía en tu equipo "
+"para guardarlo y elegirás un renderizador."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
@@ -2076,19 +2075,18 @@ msgstr ""
 "del proyecto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
-#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"Cuando veas la marca verde a la derecha, significa que el engine detecta una "
-"carpeta vacía y puedes hacer clic en ``Crear y editar``. Godot creará el "
-"proyecto por ti y lo abrirá en el editor."
+"Cuando veas la marca verde a la derecha significa que el motor detecta una "
+"carpeta vacía. También puedes hacer clic en el botón ``Crear Carpeta`` junto "
+"al nombre del proyecto y se creará una carpeta vacía con dicho nombre "
+"automáticamente."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
-#, fuzzy
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -2096,31 +2094,28 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
-"En este paso también puedes seleccionar el método de representación (OpenGL "
-"ES 3.0 u OpenGL ES 2.0). Las ventajas y desventajas de cada una se enumeran "
-"para ayudarte a elegir y puedes consultar: ref: "
-"`doc_gles2_gles3_differences` para obtener más detalles. Ten en cuenta que "
-"puedes cambiar el método desde la configuración del proyecto si cambias de "
-"opinión más adelante. Para este tutorial, cualquier método está bien."
+"Finalmente, hay que elegir el motor de render que se quiere usar (OpenGL ES "
+"3.0 u OpenGL ES 2.0). Las ventajas y desventajas de cada uno se enumeran "
+"para ayudarte a elegir y puedes consultar: `doc_gles2_gles3_differences` "
+"para obtener más detalles. Ten en cuenta que puedes cambiar el método desde "
+"la configuración del proyecto si cambias de opinión más adelante. Para este "
+"tutorial, cualquier método está bien."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"Cuando veas la marca verde a la derecha, significa que el engine detecta una "
-"carpeta vacía y puedes hacer clic en ``Crear y editar``. Godot creará el "
-"proyecto por ti y lo abrirá en el editor."
+"Cuando hayas terminado haz clic en ``Crear y editar ``. Godot creará el "
+"proyecto y lo abrirá en el editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"La próxima vez que abras Godot, verás tu nuevo proyecto en la lista. Haz "
-"doble clic sobre él para abrirlo en el editor."
+"La próxima vez que abras el administrador de proyectos, verás tu nuevo "
+"proyecto en la lista. Haz doble clic sobre él para abrirlo en el editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -2141,11 +2136,12 @@ msgid "Your first look at Godot’s editor"
 msgstr "Una primera mirada al editor de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with empty docks on the right side."
-msgstr "Ahora se verá esta interfaz, con los paneles vacíos a la derecha."
+msgstr ""
+"¡Bienvenide a Godot! Una vez abierto el proyecto deberías ver la interfaz "
+"del editor con paneles vacíos a la derecha."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -2157,13 +2153,12 @@ msgstr ""
 "prueba**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
-#, fuzzy
 msgid ""
 "On the bottom left side, you have the **FileSystem dock**, where you’ll "
 "manage your project files and assets."
 msgstr ""
-"En el lado izquierdo está el **Panel de Sistema de Archivos**, donde se "
-"administrarán los archivos y recursos del proyecto."
+"Abajo a la izquierda está el panel **Sistema de archivos**, donde se "
+"administrarán los archivos y assets del proyecto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
@@ -2225,7 +2220,6 @@ msgstr ""
 "diseñar niveles para juegos 3D. Presione F2 para acceder a este modo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
@@ -2478,6 +2472,8 @@ msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
+"Abre el proyecto que creaste en :ref:`doc_intro_to_the_editor_interface`, o "
+"crea uno nuevo. El editor de Godot se abrirá."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
@@ -4519,6 +4515,8 @@ msgid ""
 "Godot will display a warning icon next to the node in the scene tree. You "
 "can ignore it for now. We will address it later."
 msgstr ""
+"Godos mostrará un ícono de advertencia junto al nodo en el árbol de la "
+"escena. Puedes ignorarlo por ahora, lo resolveremos más adelante."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:73
 msgid ""
@@ -5702,13 +5700,12 @@ msgstr ""
 "Esto requiere unas pocas adiciones a la escena ``Main``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1090
-#, fuzzy
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function of the Main node."
 msgstr ""
-"En el panel Node conecta la señal ``start_game`` de HUD a la función "
-"``new_game()``."
+"En el panel Nodo conecta la señal ``start_game`` del HUD a la función "
+"``new_game()`` del nodo Main."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1093
 msgid ""
@@ -5991,7 +5988,6 @@ msgstr ""
 "entrada de movimiento y clic."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -6000,29 +5996,33 @@ msgid ""
 "input. In the \"Project Settings\" under *Input Devices* and *Pointing*, set "
 "*Emulate Touch From Mouse* to \"On\"."
 msgstr ""
-"Por defecto, Godot emula el puntero del mouse para entradas touch. Esto "
-"quiere decir que cualquier cosa que fue codificada para suceder ante un "
-"evento de mouse, el touch se disparará también. Si deseas desactivar eso por "
-"alguna razón, o emular touch desde entradas de mouse, puedes hacerlo en "
-"\"Ajustes del Proyecto\", dentro de la sección *Input Devices* y *Pointing*"
+"Por defecto Godot emula entrada de mouse a partir de entrada touch. Esto "
+"significa que si algo está programado para suceder ante un evento del mouse, "
+"también se disparará ante eventos touch. También se puede emular entrada "
+"touch a partir de entrada de mouse, cosa que necesitaremos para seguir "
+"jugando nuestro juego desde la computadora una vez que hayamos cambiado a "
+"entrada touch. Esto se configura en \"Ajustes del proyecto\" dentro de "
+"*Input Devices* y *Pointing*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:39
-#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to *Display*, then click on *Window*. "
 "In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
-"Antes de cambiar el método de entrada, en los ajustes del proyecto ve a "
-"*Display*, luego haz clic en *Window*. En las opciones *Stretch*, establece "
-"*Mode* en \"2d\" y *Aspect* en \"keep\". Esto asegura que el juego se escale "
-"consistentemente en pantallas de diferentes tamaños."
+"También queremos asegurarnos de que el juego se escala de modo consistente "
+"en pantallas de diferentes tamaños, por lo que en la configuración del "
+"proyecto vaya a *Display*, luego haz clic en *Window*. En las opciones "
+"*Stretch*, establece *Mode* en \"2d\" y *Aspect* en \"keep\". Esto asegura "
+"que el juego se escale consistentemente en pantallas de diferentes tamaños."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
 msgid ""
 "Since we are already in the *Window* settings, we should also set under "
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
+"Ya que estamos en la configuración de ventanas, también deberíamos "
+"establecer la *Orientación* a *Retrato* debajo de *Portátil*"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
@@ -6044,12 +6044,10 @@ msgstr ""
 "que hemos cambiado:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:129
-#, fuzzy
 msgid "Setting a main scene"
-msgstr "Configurando la escena"
+msgstr "Configurando la escena principal"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
-#, fuzzy
 msgid ""
 "The main scene is the one that your game will start in. In *Project -> "
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
@@ -6100,13 +6098,12 @@ msgid "Export presets"
 msgstr "Exportar Preajustes"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
 msgstr ""
 "A continuación, puedes configurar los ajustes de exportación haciendo clic "
-"en *Proyecto -> Exportar*:"
+"en *Proyecto -> Exportar*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:158
 msgid ""
@@ -6269,7 +6266,9 @@ msgid ""
 "to *Screen* and set *Orientation* to \"Portrait\"."
 msgstr ""
 "Ahora ya estás listo para exportar. Haz clic en *Proyecto -> Exportar* y "
-"añade un preajuste para Android (ver arriba)."
+"añade un preajuste para Android (ver arriba). Selecciona el preajuste de "
+"Android, y a continuacion, bajo *Opciones*, haz clic en *Screen* y cambia la "
+"*Orientación* a *Retrato*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""
@@ -8074,9 +8073,8 @@ msgid "The characters on the right aren't centered."
 msgstr "Los elementos de la derecha no están centrados"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-#, fuzzy
 msgid "There's no space between the logo and the other UI elements."
-msgstr "No hay espacio entre el logo y los otros elementos de la UI"
+msgstr "No hay espacio entre el logo y los otros elementos de la UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
 #, fuzzy
@@ -21767,9 +21765,10 @@ msgid ""
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
 "They can then use a separate folder to store built levels that use them."
 msgstr ""
-"Como ejemplo ejemplo, uno normalmente ubica los recursos básicos como "
-"imágenes, modelos de escenas 3D, materiales, etcétera, todos en una carpeta. "
-"Y una carpeta separada es utilizada para construir los niveles que los usan."
+"Como ejemplo, normalmente puedes ubicar en una sola carpeta los recursos "
+"básicos, como imágenes, mallas de modelos 3D, materiales, música, etc. y "
+"utilizar una carpeta separada para almacenar los niveles construidos que los "
+"usan."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
 msgid "Importing"
@@ -21795,9 +21794,8 @@ msgstr ""
 "carpeta del proyecto, transparentemente."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
-#, fuzzy
 msgid "Ignoring specific folders"
-msgstr "Deshabilitar objetos específicos"
+msgstr "Ignorando carpetas específicas"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:60
 msgid ""
@@ -21805,6 +21803,10 @@ msgid ""
 "an empty file called ``.gdignore`` in the folder (the leading ``.`` is "
 "required). This can be useful to speed up the initial project importing."
 msgstr ""
+"Para evitar que Godot importe archivos contenidos en una carpeta específica, "
+"cree un archivo vacío llamado ``.gdignore`` en la carpeta (se requiere el "
+"`` .`` inicial). Esto puede ser útil para acelerar la importación inicial "
+"del proyecto."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:66
 msgid ""
@@ -21812,18 +21814,25 @@ msgid ""
 "editor such as Notepad++ or use the following command in a command prompt: "
 "``type nul > .gdignore``"
 msgstr ""
+"Para crear un archivo cuyo nombre empiece con un punto en Windows, puedes "
+"usar un editor de texto como Notepad++ o usar el siguiente comando en el "
+"símbolo del sistema: ``type nul > .gdignore``"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:70
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
 "using the ``load()`` and ``preload()`` methods."
 msgstr ""
+"Una vez que la carpeta se ignora, los recursos en esa carpeta ya no se "
+"pueden cargar utilizando los métodos ``load()`` y ``preload()``."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:73
 msgid ""
 "Ignoring a folder will also automatically hide it from the FileSystem dock, "
 "which can be useful to reduce clutter."
 msgstr ""
+"Ignorar una carpeta también la ocultará automáticamente del Panel de Sistema "
+"de Archivos, lo que puede ser útil para reducir el desorden."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
 msgid "Blender ESCN exporter"
@@ -22610,8 +22619,8 @@ msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
 msgstr ""
-"A continuación, después de ajustar los parámetros, pulsa \"Reimportar \". "
-"Los parámetros utilizados serán sólo para este recurso y serán utilizados en "
+"A continuación, después de ajustar los parámetros, pulsa \"Reimportar\". Los "
+"parámetros utilizados serán sólo para este recurso y serán utilizados en "
 "futuras reimportaciones."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:34
@@ -22621,7 +22630,7 @@ msgid ""
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
 "También es posible modificar los parámetros de importación de varios "
-"recursos al mismo tiempo. Simplemente seleccionalos a todos en el panel de "
+"recursos al mismo tiempo. Simplemente selecciónalos a todos en el panel de "
 "recursos y los parámetros indicados se aplicarán a todos al reimportar."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
@@ -22684,7 +22693,7 @@ msgid ""
 msgstr ""
 "Algunos recursos de origen pueden importarse como diferentes tipos de "
 "recursos. Para ello, selecciona el tipo de recurso deseado y pulsa "
-"\"Reimportar \":"
+"\"Reimportar\":"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:74
 msgid "Changing default import parameters"
@@ -23220,7 +23229,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
-msgstr ""
+msgstr "Cada una tiene distintas ventajas."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:14
 #, fuzzy
@@ -23241,6 +23250,9 @@ msgid ""
 "Ogg Vorbis files use a stronger compression that results in much smaller "
 "file size, but require significantly more processing power to play back."
 msgstr ""
+"Los archivos Ogg Vorbis usan una mayor compresión lo que resulta en un "
+"tamaño de archivo mucho más pequeño, pero requieren mucha más potencia de "
+"procesamiento para reproducirse."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:20
 msgid "Here is a comparative chart."
@@ -23251,57 +23263,60 @@ msgid "Format"
 msgstr "Formato"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
-#, fuzzy
 msgid "1 second of audio"
-msgstr "1 Segundo de Audio"
+msgstr "1 segundo de audio"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
 #, fuzzy
 msgid "WAV 24-bit, 96 kHz, stereo"
-msgstr "WAV 24 bits, 96 kHz, Stereo"
+msgstr "WAV 24-bit, 96 kHz, stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
+#, fuzzy
 msgid "576 KB"
-msgstr ""
+msgstr "576 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
 #, fuzzy
 msgid "WAV 16-bit, 44 kHz, mono"
-msgstr "WAV 16 bits, 44 kHz, Mono"
+msgstr "WAV 16-bit, 44 kHz, mono"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
+#, fuzzy
 msgid "88 KB"
-msgstr ""
+msgstr "88 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
 #, fuzzy
 msgid "WAV 16-bit, IMA-ADPCM, mono"
-msgstr "WAV 16 bits, IMA-ADPCM, Mono"
+msgstr "WAV 16-bit, IMA-ADPCM, mono"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
+#, fuzzy
 msgid "22 KB"
-msgstr ""
+msgstr "22 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
 #, fuzzy
 msgid "Ogg Vorbis 128 Kb/s, stereo"
-msgstr "OGG Vorbis 96kbps, Stereo"
+msgstr "Ogg Vorbis 128 Kb/s, stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
+#, fuzzy
 msgid "16 KB"
-msgstr ""
+msgstr "16 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 #, fuzzy
 msgid "Ogg Vorbis 96 Kb/s, stereo"
-msgstr "OGG Vorbis 96kbps, Stereo"
+msgstr "Ogg Vorbis 96 Kb/s, stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
+#, fuzzy
 msgid "12 KB"
-msgstr ""
+msgstr "12 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:36
-#, fuzzy
 msgid ""
 "Consider using WAV for short and repetitive sound effects, and Ogg Vorbis "
 "for music, speech, and long sound effects."
@@ -23315,17 +23330,16 @@ msgid "Best practices"
 msgstr "Buenas prácticas"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:42
-#, fuzzy
 msgid ""
 "Godot has an :ref:`extensive bus system <doc_audio_buses>` with built-in "
 "effects. This saves SFX artists the need to add reverb to the sound effects, "
 "reducing their size greatly and ensuring correct trimming. Say no to SFX "
 "with baked reverb!"
 msgstr ""
-"Godot 3+ tiene un increíble sistema de bus con efectos incorporados. Esto "
-"ahorra a los artistas de SFX la necesidad de agregar reverberación a los "
-"efectos de sonido, reduciendo su tamaño en gran medida y asegurando un "
-"correcto recorte. ¡Diga no a SFX con reverberación preparada!"
+"Godot tiene un :ref:`extenso sistema de buses <doc_audio_buses>` con efectos "
+"incorporados. Esto ahorra a los artistas de SFX la necesidad de agregar "
+"reverberación a los efectos de sonido, reduciendo su tamaño en gran medida y "
+"asegurando un correcto recorte. ¡Di no a SFX con reverberación incorporada!"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:49
 msgid "As you can see above, sound effects become huge with reverb added."
@@ -23351,36 +23365,33 @@ msgstr ""
 "que se reproducen."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
-#, fuzzy
 msgid "Importing as WAV with the **Trimming** option enabled solves this."
 msgstr ""
-"La importación como WAV con la opción de Trimming activada resuelve este "
-"problema."
+"La importación como WAV con la opción de **Trimming** habilitada resuelve "
+"esto."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
 msgid "Looping"
 msgstr "Looping"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:65
-#, fuzzy
 msgid ""
 "Godot supports looping in the samples (tools such as Sound Forge or Audition "
 "can add loop points to WAV files). This is useful for sound effects, such as "
 "engines, machine guns etc. Ping-pong looping is also supported."
 msgstr ""
 "Godot soporta looping en las muestras de audio (herramientas como Sound "
-"Forge o Audition pueden añadir puntos de loop a los archivos wav). Esto es "
+"Forge o Audition pueden añadir puntos de loop a los archivos WAV). Esto es "
 "útil para efectos de sonido como motores, ametralladoras, etc. También "
-"soporta el Ping-pong looping."
+"soporta ping-pong looping."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:70
-#, fuzzy
 msgid ""
 "As an alternative, the Import dock has a **Loop** option that enables "
 "looping for the entire sample when importing."
 msgstr ""
-"Como alternativa, la pantalla de importación tiene una opción de \"repetir\" "
-"que permite la repetición de la totalidad de la muestra al importar."
+"Como alternativa, el panel de importación tiene una opción de \"Loop\" que "
+"permite la repetición de la totalidad de la muestra al importar."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
 msgid "Importing translations"
@@ -27543,6 +27554,8 @@ msgid ""
 "This series is a collection of best practices to help you work efficiently "
 "with Godot."
 msgstr ""
+"Esta serie es una colección de buenas prácticas para ayudarte a trabajar de "
+"forma eficiente con Godot."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:9
 msgid ""
@@ -27551,12 +27564,18 @@ msgid ""
 "pros and cons, and they can be hard to weigh until you've worked with the "
 "engine for long enough."
 msgstr ""
+"Godot permite una gran flexibilidad en la forma de estructurar la base de "
+"código de un proyecto y dividirlo en escenas. Cada enfoque tiene sus pros y "
+"contras, y pueden ser difíciles de sopesar hasta que no has trabajado con el "
+"motor el tiempo suficiente."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:13
 msgid ""
 "There are always many ways to structure your code and solve specific "
 "programming problems. It would be impossible to cover them all here."
 msgstr ""
+"Siempre hay varias formas de estructurar tu código y resolver problemas "
+"específicos de programación. Sería imposible cubrirlos a todos aquí."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:16
 msgid ""
@@ -27565,6 +27584,10 @@ msgid ""
 "pros and cons of each option, and highlight the best course of action for "
 "the problem at hand."
 msgstr ""
+"Por esa razón cada artículo parte de un problema del mundo real. "
+"Desglosaremos cada problema en preguntas fundamentales, sugeriremos "
+"soluciones, analizaremos los pros y contras de cada opción, y destacaremos "
+"la mejor forma de proceder para el problema en cuestión."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:20
 msgid ""
@@ -27573,6 +27596,10 @@ msgid ""
 "Oriented programming language. It will help you make sense of the rest of "
 "the series."
 msgstr ""
+"Deberías empezar leyendo :ref:`doc_what_are_godot_classes`. Explica cómo se "
+"relacionan los nodos y escenas de Godot con las clases y objetos de otros "
+"lenguajes de programación orientados a objetos. Te ayudará a darle sentido "
+"al resto de la serie."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:26
 msgid ""
@@ -27581,11 +27608,15 @@ msgid ""
 "Single_responsibility_principle>`_ principle and `encapsulation <https://en."
 "wikipedia.org/wiki/Encapsulation_(computer_programming)>`_."
 msgstr ""
+"Las buenas prácticas en Godot se basan en principios de diseño orientado a "
+"objetos. Utilizamos herramientas como el principio de `responsabilidad única "
+"<https://es.wikipedia.org/wiki/Principio_de_responsabilidad_%C3%BAnica>`_ y "
+"la `encapsulación <https://es.wikipedia.org/wiki/Encapsulamiento_(inform"
+"%C3%A1tica)>`_."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
-#, fuzzy
 msgid "Godot scenes and scripts are classes"
-msgstr "Registrar scripts como clases"
+msgstr "Las escenas y scripts de Godot son clases"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
@@ -27595,6 +27626,12 @@ msgid ""
 "while scripts can contain `imperative code <https://en.wikipedia.org/wiki/"
 "Imperative_programming>`_."
 msgstr ""
+"En Godot, tanto las escenas como los scripts pueden ser el equivalente a las "
+"clases en un lenguaje de programación orientado a objetos. La principal "
+"diferencia es que las escenas son `código declarativo <https://en.wikipedia."
+"org/wiki/Declarative_programming>`_, mientras que los scripts pueden "
+"contener `código imperativo <https://en.wikipedia.org/wiki/"
+"Imperative_programming>`_."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:12
 msgid ""
@@ -27602,6 +27639,9 @@ msgid ""
 "Oriented design principles to the scenes, nodes, or script that make up your "
 "game."
 msgstr ""
+"Como resultado, muchas buenas prácticas en Godot se reducen a aplicar "
+"principios de diseño orientado a objetos a las escenas, nodos o scripts que "
+"forman tu juego."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:15
 msgid ""
@@ -27609,37 +27649,37 @@ msgid ""
 "help you get a sense of how Godot works under the hood, and to help you "
 "better understand where some of this series' best practices come from."
 msgstr ""
+"Esta guía explica cómo funcionan los scripts y las escenas en el núcleo del "
+"motor, para ayudarte a tener una idea de cómo funciona Godot por dentro, y "
+"ayudarte a que entiendas mejor de dónde vienen algunas buenas prácticas de "
+"esta serie."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:20
-#, fuzzy
 msgid "Making sense of classes in Godot"
-msgstr "Importando recursos en Godot 3.0+"
+msgstr "Dando sentido a las clases en Godot"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:22
-#, fuzzy
 msgid ""
 "Godot Engine provides built-in classes like :ref:`Node <class_Node>`. User-"
 "created types are not technically classes. Instead, they are resources that "
 "tell the engine a sequence of initializations to perform on one of the "
 "engine's built-in classes."
 msgstr ""
-"Godot Engine provee clases listas para usar (como :ref:`Node <class_Node>`), "
-"pero los tipos creados por el usuario no son realmente clases. Por el "
-"contrario, son recursos que le dicen al motor una secuencia de indicaciones "
-"para realizar en una clase del motor."
+"El motor de Godot proporciona clases incorporadas como :ref:`Nodo "
+"<class_Node>`. Los tipos creados por el usuario no son técnicamente clases. "
+"En cambio, son recursos que dan al motor una serie de inicializaciones a "
+"realizar en una de las clases incorporadas del motor."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
-#, fuzzy
 msgid ""
 "Godot's internal classes have methods that register a class's data with a :"
 "ref:`ClassDB <class_ClassDB>`. This database provides runtime access to "
 "class information. ``ClassDB`` contains information about classes like:"
 msgstr ""
 "Las clases internas de Godot tienen métodos que registran los datos de una "
-"clase mediante :ref:`ClassDB <class_ClassDB>`. Esta base de datos provee "
-"acceso a la información de la clase en tiempo de ejecución (algo también "
-"llamado \"reflección\"). Las cosas guardadas en ClassDB incluyen, entre "
-"otras cosas..."
+"clase mediante una :ref:`ClassDB <class_ClassDB>`. Esta base de datos "
+"proporciona acceso en tiempo de ejecución a información de la clase. ClassDB "
+"contiene información sobre las clases como:"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
 msgid "properties"
@@ -27658,19 +27698,16 @@ msgid "signals"
 msgstr "señales"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
-#, fuzzy
 msgid ""
 "This ``ClassDB`` is what Objects check against when performing an operation "
 "like accessing a property or calling a method. ``ClassDB`` checks the "
 "database's records and the records of the Object's base types to see if the "
 "Object supports the operation."
 msgstr ""
-"Además, ClassDB es lo que los Objetos usan para hacer chequeos cuando "
-"realizar alguna operación. ¿Acceder una propiedad? ¿Invocar un método? "
-"¿Emitir una señal? Va a chequear los registros de la base de datos (y los "
-"registros de los tipos base del Objeto) para ver si el Objeto soporta la "
-"operación. Cada Objeto de C++ define una función estática `_bind_methods()` "
-"que describe que contenido de C++ registra en la base de datos y como."
+"Esta ``ClassDB`` es lo que los objetos verifican cuando realizan una "
+"operación como acceder a una propiedad o llamar un método. ``ClassDB`` "
+"comprueba los registros de la base de datos y los registros de los tipos "
+"base del objeto para ver si el objeto soporta la operación."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
 msgid ""
@@ -27680,9 +27717,13 @@ msgid ""
 "signals available from the ``ClassDB`` by attaching a :ref:`Script "
 "<class_Script>` to your node."
 msgstr ""
+"En el lado del motor, cada clase define una función ``_bind_methods()`` "
+"estática que describe qué contenido de C++ registra en la base de datos y "
+"cómo. Cuando usas el motor, puedes ampliar los métodos, propiedades y "
+"señales disponibles de la ``ClassDB`` vinculando un :ref:`Script "
+"<class_Script>` al nodo."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:46
-#, fuzzy
 msgid ""
 "Objects check their attached script before the database. This is why scripts "
 "can override built-in methods. If a script defines a "
@@ -27690,12 +27731,11 @@ msgid ""
 "properties the Object fetches from the ClassDB. The same is true for other "
 "declarative code."
 msgstr ""
-"*Esto* es un :ref:`Script <class_Script>`. Los Object revisan su script "
-"anexado antes que la base de datos del motor, de este modo, los scripts "
-"pueden sobreescribir métodos. Si un sscript define un método "
-"`_get_property_list()`, esos datos serán agregados a la lista de propiedades "
-"que el Object obtiene de la ClassDB. Lo mismo aplica para otros códigos "
-"declarativos."
+"Los objetos comprueban sus scripts vinculados antes que la base de datos. "
+"Esta es la razón por la cual los scripts pueden redefinir métodos "
+"incorporados. Si un script define un método ``_get_property_list()``, Godot "
+"adjunta esta información a la lista de propiedades que el objeto extrae de "
+"la ``ClassDB``. Lo mismo sucede con otro código declarativo."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:51
 msgid ""
@@ -27705,28 +27745,34 @@ msgid ""
 "Object to defer to the script's content where the engine logic deems "
 "appropriate."
 msgstr ""
+"Incluso los scripts que no heredan de un tipo incorporado, como por ejemplo "
+"scripts que no empiezan con la palabra clave ``extends``, implícitamente "
+"heredan de la clase base :ref:`Reference <class_Reference>` del motor. Esto "
+"permite al objeto diferir al contenido del script donde la lógica del motor "
+"considere apropiado."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid ""
 "As a result, you can instance scripts without the ``extends`` keyword from "
 "code, but you cannot attach them to a :ref:`Node <class_Node>`"
 msgstr ""
+"Como resultado, puedes instanciar scripts sin la palabra clave ``extends`` "
+"mediante código, pero no puedes vincularlos a un :ref:`Node <class_Node>`"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:63
 msgid "Scripting performances and PackedScene"
-msgstr ""
+msgstr "Rendimiento del scripting y PackedScene"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:65
-#, fuzzy
 msgid ""
 "As the size of Objects increases, the scripts' necessary size to create them "
 "grows much, much larger. Creating node hierarchies demonstrates this. Each "
 "individual Node's logic could be several hundred lines of code in length."
 msgstr ""
-"Esto también presenta un problema. Cuando el tamaño de los Object aumenta, "
-"el tamaño de los scripts necesarios para crearlos crece mucho. Esto se puede "
-"demostrar creando jerarquías de nodos. La lógica individual de cada Node "
-"puede ser de cientos de líneas de código en longitud."
+"A medida que crece el tamaño de los objetos, el tamaño necesario de los "
+"scripts para crearlos crece mucho, mucho más. Crear jerarquías de nodos "
+"demuestra esto. La lógica de cada nodo individual podría ser de varios "
+"cientos de líneas de código."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:69
 msgid ""
@@ -27735,6 +27781,10 @@ msgid ""
 "sets its future parent as its owner so it gets saved to disk along with it, "
 "and finally adds it as a child of the ``Main`` node:"
 msgstr ""
+"Veamos un sencillo ejemplo de crear un solo ``Node`` como hijo. El código a "
+"continuación crea un nuevo ``Node``, cambia su nombre, asigna un script al "
+"mismo, establece su futuro padre como su propietario para que se guarde en "
+"disco junto a él, y finalmente lo añade como un hijo del nodo ``Main``:"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:109
 msgid ""
@@ -27742,6 +27792,9 @@ msgid ""
 "makes a separate call to the scripting API which leads to many \"look-ups\" "
 "on the back-end to find the logic to execute."
 msgstr ""
+"Código de script como éste es mucho más lento que código C++ del lado del "
+"motor. Cada cambio hace una llamada separada a la API de scripting que "
+"conlleva muchas búsquedas en el back-end para encontrar la lógica a ejecutar."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:113
 msgid ""
@@ -27750,65 +27803,70 @@ msgid ""
 "that use serialized data to create objects. The engine can process scenes in "
 "batches on the back-end and provide much better performance than scripts."
 msgstr ""
+"Las escenas ayudan a evitar este problema de rendimiento. :ref:`PackedScene "
+"<class_PackedScene>`, el tipo base del que heredan las escenas, son recursos "
+"que usan datos serializados para crear objetos. El motor puede procesar "
+"escenas por lotes en el back-end y proporcionar mucho mejor rendimiento que "
+"los scripts."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
-#, fuzzy
 msgid "Scenes and scripts are objects"
-msgstr "Objetos transparentes"
+msgstr "Escenas y scripts son objetos"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
-#, fuzzy
 msgid ""
 "Why is any of this important to scene organization? Because scenes *are* "
 "objects. One often pairs a scene with a scripted root node that makes use of "
 "the sub-nodes. This means that the scene is often an extension of the "
 "script's declarative code."
 msgstr ""
-"Ahora, por qué esto puede ser importante para la organización de una escena? "
-"Porque uno debe comprender que las escenas *son* objetos. Uno usualmente "
-"relaciona una escena con un nodo raíz con script que hace uso de sub nodos. "
-"Esto significa que la escena normalmente es es una extensión del código "
-"declarativo del script."
+"¿Por qué esto es importante para la organización de las escenas? Porque las "
+"escenas *son* objetos. A menudo se empareja una escena con un nodo raíz con "
+"script que hace uso de los sub-nodos. Esto significa que la escena es a "
+"menudo una extensión del código declarativo del script."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
 msgid "The content of a scene helps to define:"
-msgstr ""
+msgstr "El contenido de una escena ayuda a definir:"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
-#, fuzzy
 msgid "What nodes are available to the script"
-msgstr "¿qué objetos son accesibles para el script?"
+msgstr "Qué nodos están disponibles al script"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
-#, fuzzy
 msgid "How they are organized"
-msgstr "¿cómo están organizados?"
+msgstr "Cómo están organizados"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
-#, fuzzy
 msgid "How are they initialized"
-msgstr "¿cómo son inicializados?"
+msgstr "Cómo se inicializan"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:131
 msgid "What signal connections they have with each other"
-msgstr ""
+msgstr "Qué conexiones de señales tienen entre ellos"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:133
 msgid ""
 "Many Object-Oriented principles which apply to written code *also* apply to "
 "scenes."
 msgstr ""
+"Varios principios orientados a objetos que se aplican a código escrito "
+"*también* se aplican a las escenas."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:136
 msgid ""
 "The scene is *always an extension of the script attached to its root node*. "
 "You can see all the nodes it contains as part of a single class."
 msgstr ""
+"La escena es *siempre una extensión del script vinculado a su nodo raíz*. "
+"Puedes ver todos los nodos que contiene como parte de una sola clase."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:139
 msgid ""
 "Most of the tips and techniques explained in this series will build on this."
 msgstr ""
+"La mayoría de los consejos y técnicas explicados en esta serie se basarán en "
+"esto."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
 msgid "Scene organization"
@@ -27894,8 +27952,8 @@ msgid ""
 "That is, one should create scenes that keep everything they need within "
 "themselves."
 msgstr ""
-"** Si es posible, las escenas deberían diseñarse para que no tengan "
-"dependencias. ** O lo que es lo mismo, que mantengan todo lo que necesitan "
+"**Si es posible, las escenas deberían diseñarse para que no tengan "
+"dependencias.** O lo que es lo mismo, que mantengan todo lo que necesitan "
 "dentro de sí mismas."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:43
@@ -27961,9 +28019,8 @@ msgid ""
 "another context without any extra changes to its API."
 msgstr ""
 "Estas opciones ocultan la fuente de accesos del nodo hijo. Esto a su vez "
-"mantiene al nodo hijo ** acoplado libremente ** a su entorno. Esto "
-"permitiría reutilizarlo en otro contexto sin ningún cambio adicional en su "
-"API."
+"mantiene al nodo hijo **acoplado libremente** a su entorno. Esto permitiría "
+"reutilizarlo en otro contexto sin ningún cambio adicional en su API."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:157
 msgid ""
@@ -27974,8 +28031,8 @@ msgid ""
 msgstr ""
 "Aunque los ejemplos anteriores ilustran las relaciones padre-hijo, los "
 "mismos principios aplican a todas las relaciones entre objetos. Los nodos "
-"hermanos sólo deben percatarse de su jerarquía, mientras que sus ancestros "
-"mediarán sus comuniaciones y referencias."
+"hermanos sólo deben percatarse de sus jerarquías, mientras que un ancestro "
+"mediará sus comunicaciones y referencias."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:204
 msgid ""
@@ -28022,15 +28079,15 @@ msgid ""
 "duplication via documentation is necessary."
 msgstr ""
 "para evitar crear y mantener tal documentación, uno convierte el nodo "
-"dependiente (arriba de \"child\") en una herramienta script que implementa: "
+"dependiente (arriba de \"child\") en una herramienta script que implementa :"
 "ref:`_get_configuration_warning() "
-"<class_Node_method__get_configuration_warning>. Regresando una cadena no "
-"vacía de ello que hará a la ventana Escena generar un ícono de advertencia "
+"<class_Node_method__get_configuration_warning>`. Regresando una cadena no "
+"vacía de ello que hará al panel de Escena generar un ícono de advertencia "
 "con la cadena como una información por el nodo. Éste es el mismo icono que "
-"aparece para nodos tal como el nodo: :ref:`Area2D <class_Area2D>` cuando no "
+"aparece para nodos tal como el nodo :ref:`Area2D <class_Area2D>` cuando no "
 "tiene nodos descendientes :ref:`CollisionShape2D <class_CollisionShape2D>` "
-"definidos. El editor entonces autodocumenta la escena através del código del "
-"script. No es necesaria la duplicación de contenido a través de la "
+"definidos. El editor entonces auto-documenta la escena a través del código "
+"del script. No es necesaria la duplicación de contenido a través de la "
 "documentación."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:230
@@ -28754,9 +28811,8 @@ msgstr ""
 "el script se vuelve un espacio de nombres:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:4
-#, fuzzy
 msgid "Autoloads versus regular nodes"
-msgstr "Autoloads y nodos internos"
+msgstr "Autoloads frente a nodos corrientes"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:6
 msgid ""
@@ -28766,33 +28822,37 @@ msgid ""
 "freed when you change the scene from code with :ref:`SceneTree.change_scene "
 "<class_SceneTree_method_change_scene>`."
 msgstr ""
+"Godot ofrece una característica para cargar nodos automáticamente en la raíz "
+"de tu proyecto, permitiéndote acceder a ellos globalmente, que puede cumplir "
+"el rol de un Singleton: :ref:`doc_singletons_autoload`. Estos nodos auto-"
+"cargados no se liberan cuando cambias la escena desde código con :ref:"
+"`SceneTree.change_scene <class_SceneTree_method_change_scene>`."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:11
 msgid ""
 "In this guide, you will learn when to use the Autoload feature, and "
 "techniques you can use to avoid it."
 msgstr ""
+"En esta guía aprenderás cuándo usar la función Autoload, y técnicas que "
+"puedes usar para evitarlo."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:15
-#, fuzzy
 msgid "The cutting audio issue"
-msgstr "El valor inicial"
+msgstr "El problema del audio con cortes"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:17
-#, fuzzy
 msgid ""
 "Other engines can encourage the use of creating manager classes, singletons "
 "that organize a lot of functionality into a globally accessible object. "
 "Godot offers many ways to avoid global state thanks to the node tree and "
 "signals."
 msgstr ""
-"Otros motores suelen incentivar el uso de crear clases \"manager\" para "
-"organizar las funcionalidades en una entidad accesible globalmente. Godot "
-"soporta modos que permiten reducir el tamaño y cantidad de dichos objetos. "
-"En su lugar divide el contenido en nodos individuales cuanto sea posible."
+"Otros motores pueden fomentar la creación clases gestoras, singletons que "
+"organizan mucha funcionalidad en un objeto accesible globalmente. Godot "
+"ofrece varias maneras de evitar un estado global gracias al árbol de nodos y "
+"las señales."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:21
-#, fuzzy
 msgid ""
 "For example, let's say we are building a platformer and want to collect "
 "coins that play a sound effect. There's a node for that: the :ref:"
@@ -28800,16 +28860,13 @@ msgid ""
 "``AudioStreamPlayer`` while it is already playing a sound, the new sound "
 "interrupts the first."
 msgstr ""
-"Por ejemplo, ¿qué puede hacer un desarrollador está creando un juego de "
-"plataformas y quiere que al recolectar monedas se reproduzca un efecto de "
-"sonido? Existe un nodo para hacer eso, :ref:`AudioStreamPlayer "
-"<class_AudioStreamPlayer>`. Pero notará durante las pryebas que si reproduce "
-"un \"AudioStreamPlayer\" mientras está ejecutando un sonido, el nuevo sonido "
-"interrumpirá el que se está reproduciendo, terminándolo antes de que se "
-"pueda reproducir."
+"Por ejemplo, digamos que estamos construyendo un juego de plataformas y "
+"queremos recoger monedas que reproducen un efecto de sonido. Hay uno nodo "
+"para ello: el :ref:`AudioStreamPlayer <class_AudioStreamPlayer>`. Pero si "
+"llamamos al ``AudioStreamPlayer`` mientras ya está reproduciendo un sonido, "
+"el nuevo sonido interrumpe al primero."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:26
-#, fuzzy
 msgid ""
 "A solution is to code a global, auto-loaded sound manager class. It "
 "generates a pool of ``AudioStreamPlayer`` nodes that cycle through as each "
@@ -28818,34 +28875,32 @@ msgid ""
 "play(\"coin_pickup.ogg\")``. This solves the problem in the short term but "
 "causes more problems:"
 msgstr ""
-"Los usuarios tienden a creer que la mejor solución es crear un sistema más "
-"práctico haciendo un nodo SoundManager (administrador de sonidos) en modo "
-"autoload. Este genera un pool de AudioStreamPlayers que administra cada "
-"requerimiento de un nuevo efecto de sonido. Entonces hacen de este "
-"SoundManager un autoload para que pueda accederse desde cualquier parte con "
-"como `SFX.play(\"coin_pickup.ogg\")`. Poco saben que han agregado mucha "
-"complejidad a su código."
+"Un solución es codificar una clase gestora global, auto-cargada. Ésta genera "
+"un \"pool\" de nodos ``AudioStreamPlayer`` que recorre a medida que llega "
+"cada nueva petición de efectos de sonido. Digamos que llamamos esa clase "
+"``Sound``, puedes usarla desde cualquier sitio en tu proyecto llamando a "
+"``Sound.play(\"coin_pickup.ogg\")``. Esto soluciona el problema a corto "
+"plazo, pero causa más problemas:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:32
-#, fuzzy
 msgid ""
 "**Global state**: one object is now responsible for all objects' data. If "
 "the ``Sound`` class has errors or doesn't have an AudioStreamPlayer "
 "available, all the nodes calling it can break."
 msgstr ""
-"**estado global**: Un objeto es ahora responsable de todos los datos del "
-"objeto. Si SFX tiene errores o no tiene un AudioStreamPlayer disponible, "
-"todo se romperá."
+"**Estado global**: Un objeto es ahora responsable de todos los datos de los "
+"objetos. Si la clase ``Sound`` tiene errores o no tiene un "
+"``AudioStreamPlayer`` disponible, todos los nodos que la llaman pueden "
+"fallar."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:36
-#, fuzzy
 msgid ""
 "**Global access**: now that any object can call ``Sound.play(sound_path)`` "
 "from anywhere, there's no longer an easy way to find the source of a bug."
 msgstr ""
-"**acceso global**: Ahora que cualquier objeto puede llamar a `SFX."
-"play(sound_path)` desde cualquier parte, no habrá un modo sencillo de "
-"rastrear un error relacionado al SFX."
+"**Acceso global**: Ahora cualquier objeto puede llamar a ``Sound."
+"play(sound_path)`` desde cualquier sitio, ya no hay una forma fácil de "
+"encontrar la fuente de un error."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:39
 msgid ""
@@ -28853,6 +28908,10 @@ msgid ""
 "stored from the start, you can either have too few and face bugs, or too "
 "many and use more memory than you need."
 msgstr ""
+"**Asignación de recursos global**: Con un \"pool\" de nodos "
+"``AudioStreamPlayer`` almacenado desde el principio, puedes tener muy pocos "
+"y enfrentarte a errores, o tener demasiados y usar más memoria de la "
+"necesaria."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:45
 msgid ""
@@ -28860,22 +28919,26 @@ msgid ""
 "data to the ``Sound`` autoload in our example. As a result, the domain to "
 "explore to fix the bug spans the entire project."
 msgstr ""
+"Acerca del acceso global, el problema es que cualquier código en cualquier "
+"sitio podría pasar datos incorrectos al autoload ``Sound`` en nuestro "
+"ejemplo. Como resultado, el dominio a explorar para arreglar el error abarca "
+"todo el proyecto."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:49
 msgid ""
 "When you keep code inside a scene, only one or two scripts may be involved "
 "in audio."
 msgstr ""
+"Cuando mantienes el código dentro de una escena, solo uno o dos scripts "
+"pueden estar involucrados en audio."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:52
-#, fuzzy
 msgid ""
 "Contrast this with each scene keeping as many ``AudioStreamPlayer`` nodes as "
 "it needs within itself and all these problems go away:"
 msgstr ""
-"Contrasta esto con cada escena manteniendo tantos nodos de AudioStreamPlayer "
-"como sean necesarios dentro de sí mismo y todos estos problemas "
-"desaparecerán."
+"Compara esto con cada escena manteniendo tantos nodos ``AudioStreamPlayer`` "
+"como necesita dentro de sí y todos estos problemas desaparecen:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:55
 msgid ""
@@ -28890,20 +28953,24 @@ msgid ""
 "Each scene accesses only its own nodes. Now, if there is a bug, it's easy to "
 "find which node is at fault."
 msgstr ""
+"Cada escena accede solo a sus propios nodos. Ahora, si hay un error, es "
+"fácil encontrar qué nodo es el culpable."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:61
 msgid "Each scene allocates exactly the amount of resources it needs."
-msgstr ""
+msgstr "Cada escena asigna exactamente la cantidad de recursos que necesita."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:64
 msgid "Managing shared functionality or data"
-msgstr ""
+msgstr "Gestionando funcionalidad o datos compartidos"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:66
 msgid ""
 "Another reason to use an Autoload can be that you want to reuse the same "
 "method or data across many scenes."
 msgstr ""
+"Otra razón para usar un Autoload puede ser que quieras reutilizar el mismo "
+"método o dato en varias escenas."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:69
 msgid ""
@@ -28911,30 +28978,36 @@ msgid ""
 "provides that feature for an individual scene using the :ref:`class_name "
 "<doc_scripting_continued_class_name>` keyword in GDScript."
 msgstr ""
+"En el caso de funciones, puedes crear un nuevo tipo de ``Node`` que "
+"proporcione esa característica para una escena individual usando la palabra "
+"clave :ref:`class_name <doc_scripting_continued_class_name>` en GDScript."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:73
 msgid "When it comes to data, you can either:"
-msgstr ""
+msgstr "Cuando se trata de datos, puedes:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:75
 msgid ""
 "Create a new type of :ref:`Resource <class_Resource>` to share the data."
 msgstr ""
+"Crear un nuevo tipo de :ref:`Resource <class_Resource>` para compartir los "
+"datos."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:77
 msgid ""
 "Store the data in an object to which each node has access, for example using "
 "the ``owner`` property to access the scene's root node."
 msgstr ""
+"Almacenar los datos en un objeto al que cada nodo tiene acceso. Por ejemplo, "
+"usado la propiedad ``owner`` para acceder al nodo raíz de la escena."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:81
-#, fuzzy
 msgid "When you should use an Autoload"
-msgstr "Entonces, ¿cuándo *debería* utilizarse un autoload?"
+msgstr "Cuándo deberías usar un Autoload"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:83
 msgid "Auto-loaded nodes can simplify your code in some cases:"
-msgstr ""
+msgstr "Los nodos auto-cargados pueden simplificar tu código en algunos casos:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:85
 msgid ""
@@ -28942,26 +29015,30 @@ msgid ""
 "database, then an autoload can be a good tool. There is no scripting API in "
 "Godot to create and manage static data otherwise."
 msgstr ""
+"**Datos estáticos**: Si necesitas datos que son exclusivos de una clase, "
+"como una base de datos, entonces un autoload puede ser una buena "
+"herramienta. En Godot no hay ninguna API de scripting para crear o gestionar "
+"datos estáticos de otra manera."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:89
 msgid ""
 "**Static functions**: creating a library of functions that only return "
 "values."
 msgstr ""
+"**Funciones estáticas**: Creando una biblioteca de funciones que solo "
+"devuelven valores."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:91
-#, fuzzy
 msgid ""
 "**Systems with a wide scope**: If the singleton is managing its own "
 "information and not invading the data of other objects, then it's a great "
 "way to create systems that handle broad-scoped tasks. For example, a quest "
 "or a dialogue system."
 msgstr ""
-"Si el singleton mantiene su propia información y no invade los datos de "
-"otros objetos, entonces es un buen modo de crear una clase \"system\" que "
-"maneje tareas de ámbito amplio. Por ejemplo, un sistema de rastreo de "
-"blancos, de misiones o diálogo, pueden ser casos de uso de implementación de "
-"singletons."
+"**Sistemas con un amplio alcance**: Si el singleton está gestionando su "
+"propia información sin invadir los datos de otros objetos, entonces es una "
+"manera estupenda de crear sistemas que manejen tareas de amplio alcance. Por "
+"ejemplo, un sistema de misiones o diálogos."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:96
 msgid ""
@@ -28971,6 +29048,11 @@ msgid ""
 "``class_name`` keyword instead to get auto-completion for a type in your "
 "entire project."
 msgstr ""
+"Hasta Godot 3.1, otro uso era sólo por conveniencia: En GDScript se genera "
+"una variable global para el nombre de los autoloads, permitiéndote llamarlos "
+"desde cualquier archivo de script en tu proyecto. Pero en su lugar, ahora "
+"puedes usar la palabra clave ``class_name`` para conseguir autocompletado "
+"para un tipo en todo el proyecto."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:103
 msgid ""
@@ -28980,12 +29062,19 @@ msgid ""
 "game's node structure or which scene you run, e.g. by pressing the ``F6`` "
 "key."
 msgstr ""
+"Autoload no es exactamente un Singleton. Nada te impide instanciar copias de "
+"un nodo auto-cargado. Sólo es una herramienta que hace que un nodo se cargue "
+"automáticamente como un hijo de la raíz de tu árbol de escena, "
+"independientemente de la estructura de nodos de tu juego o de qué escenas "
+"ejecutes, p.ej. pulsando la tecla ``F6``."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:108
 msgid ""
 "As a result, you can get the auto-loaded node, for example an autoload "
 "called ``Sound``, by calling ``get_node(\"/root/Sound\")``."
 msgstr ""
+"Como resultado, puedes acceder al nodo auto-cargado, por ejemplo un autoload "
+"llamado ``Sound``, llamando a ``get_node(\"/root/Sound\")``."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:4
 msgid "When and how to avoid using nodes for everything"
@@ -29174,7 +29263,7 @@ msgid ""
 msgstr ""
 "El mismo principio aplica para objetos :ref:`Reference <class_Reference>`. "
 "Mientras que los usuarios acceden normalmente a :ref:`Node <class_Node>` y :"
-"ref:`Resource <class_Resource>`de este modo, hay modos alternativos "
+"ref:`Resource <class_Resource>` de este modo, hay modos alternativos "
 "disponibles."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:36
@@ -31023,6 +31112,7 @@ msgid "Using tilemaps"
 msgstr "Usando tilemaps"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
+#, fuzzy
 msgid ""
 "A tilemap is a grid of tiles used to create a game's layout. There are "
 "several benefits to using :ref:`TileMap <class_TileMap>` nodes to design "
@@ -31033,20 +31123,38 @@ msgid ""
 "Finally, you can add collision, occlusion, and navigation shapes to tiles, "
 "adding additional functionality to the TileMap."
 msgstr ""
+"Un tilemap es una cuadrícula de mosaicos que se utiliza para crear el mapa "
+"de un juego. Hay varios beneficios al usar los nodos :ref:`TileMap "
+"<class_TileMap>` para diseñar tus niveles. Primero, hacen posible dibujar el "
+"mapa \"pintando\" los tiles en una cuadrícula, lo que es mucho más rápido "
+"que colocar nodos :ref:`Sprite <class_Sprite>` individuales uno por uno. "
+"Segundo, permiten niveles mucho más grandes porque están optimizados para "
+"dibujar un gran número de tiles. Finalmente, puedes añadir formas de "
+"colisión, oclusión y navegación a los tiles, añadiendo funcionalidad "
+"adicional al TileMap."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:23
+#, fuzzy
 msgid ""
 "This demo we'll use the following tiles taken from Kenney's \"Abstract "
 "Platformer\" art pack. You can find the complete set `here <https://kenney."
 "nl/assets/abstract-platformer>`_ but for this demo we'll stick to this small "
 "set."
 msgstr ""
+"En esta demostración usaremos los siguientes tiles tomados del paquete de "
+"arte \"Abstract Platformer\" de Kenney. Pueden encontrar el conjunto "
+"completo `aquí <https://kenney.nl/assets/abstract-platformer>`_ pero para "
+"esta demo nos ceñiremos a este pequeño conjunto."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
+#, fuzzy
 msgid "Create a new project and place the above image in the project folder."
 msgstr ""
+"Cree un nuevo proyecto y coloque la imagen anterior en la carpeta de "
+"proyectos."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:31
+#, fuzzy
 msgid ""
 "When using a tileset, it's important that adjacent tiles match up. Godot's "
 "default is to import 2D images using an interpolated \"filter\" mode, which "
@@ -31054,6 +31162,12 @@ msgid ""
 "the Import tab. Turn off ``Filter`` and click \"Reimport\". See :ref:"
 "`doc_import_images` for details."
 msgstr ""
+"Cuando se usa un tileset, es importante que los tiles adyacentes coincidan. "
+"Godot por defecto importa imágenes 2D usando un modo de \"filter\" "
+"interpolado, lo que resultará en unos bordes feos entre los tiles. "
+"Selecciona la imagen y haz clic en la pestaña Importar. Desactiva el "
+"``Filter`` y haz clic en \"Reimport\". Ver :ref:`doc_import_images` para más "
+"detalles."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
 #, fuzzy
@@ -31066,23 +31180,30 @@ msgid ""
 "TileMap uses a square grid of tiles. You can also use a perspective-based "
 "\"Isometric\" mode or define your own custom tile shape."
 msgstr ""
+"Añade un nuevo nodo :ref:`TileMap <class_TileMap>` a la escena. Por defecto, "
+"un TileMap utiliza una cuadrícula cuadrada de azulejos. También puede "
+"utilizar un modo \"Isométrico\" basado en la perspectiva o definir su propia "
+"forma de tiles personalizada."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid ""
 "Under the \"Cell\" section in the Inspector are many properties you can "
 "adjust to customize your tilemap's behavior:"
 msgstr ""
+"En la sección \"Cell\" del Inspector hay muchas propiedades que puedes "
+"ajustar para personalizar el comportamiento de tu mapa de tiles:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:52
-#, fuzzy
 msgid "``Cell Size``"
-msgstr "``Center``"
+msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:51
 msgid ""
 "This defines the size of the grid. This should match the pixel size of your "
 "tiles. The default value is ``(64, 64)``."
 msgstr ""
+"Esto define el tamaño de la grilla. Esto debería coincidir con el tamaño de "
+"los píxeles de tus tiles. El valor por defecto es ``(64, 64)``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:56
 msgid "``YSort``"
@@ -31093,6 +31214,8 @@ msgid ""
 "This causes tiles to be drawn in order of their ``Y`` position, so that "
 "\"lower\" tiles are drawn on top of \"higher\" ones."
 msgstr ""
+"Esto hace que los tiles se dibujen en orden de su posición ``Y``, de modo "
+"que los tiles \"inferiores\" se dibujan encima de otros \"\"superiores\"\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid "``Half Offset`` and ``Tile Origin``"
@@ -31103,16 +31226,22 @@ msgid ""
 "These properties affect the position of the tile relative to the grid "
 "position."
 msgstr ""
+"Estas propiedades afectan a la posición de los tiles en relación con la "
+"posición de la grilla."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:63
 msgid "``Quadrant``"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
+#, fuzzy
 msgid ""
 "Defines the chunk size used for batched drawing. This can negatively affect "
 "performance. Don't change it unless you know what you're doing."
 msgstr ""
+"Define el tamaño del trozo utilizado para el dibujo en lote. Esto puede "
+"afectar negativamente el rendimiento. No lo cambies a menos que sepas lo que "
+"estás haciendo."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 #, fuzzy
@@ -31122,15 +31251,16 @@ msgstr "Transformar"
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
 msgstr ""
+"Se usa para alterar la forma del tile. Usa esto si tienes tiles no cuadrados."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:68
 msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
+"Todas estas opciones pueden dejarse por defecto para esta demostración."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
-#, fuzzy
 msgid "Creating a TileSet"
-msgstr "Exportando un Tileset"
+msgstr "Creando un Tileset"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
@@ -31140,12 +31270,19 @@ msgid ""
 "other properties. When the game runs, the TileMap combines the individual "
 "tiles into a single object."
 msgstr ""
+"Una vez que hayas configurado tu tilemap, es hora de añadir un :ref:`TileSet "
+"<class_TileSet>`. Un TileSet es un :ref:`Resource <class_Resource>` que "
+"contiene los datos de tus tiles sus texturas, formas de colisión, y otras "
+"propiedades. Cuando el juego se ejecuta, el TileMap combina los tiles "
+"individuales en un solo objeto."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:79
 msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
 "TileSet\"."
 msgstr ""
+"Para añadir un nuevo TileSet, haga clic en la propiedad \"Tile Set\" y "
+"seleccione \"New TileSet\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
 #, fuzzy
@@ -67791,7 +67928,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 msgid "High level multiplayer"
-msgstr "Multiplayer Alto Nivel"
+msgstr "Multijugador de alto nivel"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
 msgid "High level vs low level API"

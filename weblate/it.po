@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Italian
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alessandro Tomarchio <Alessandro.tomarchio01@gmail.com>, 2019.
@@ -16,6 +16,7 @@
 # Davide Ingrati <davideingrati7@gmail.com>, 2019.
 # Davide Wayan Mores <moresdavidewayan@gmail.com>, 2018.
 # Giacomo Bella <foliestere@gmail.com>, 2018-2019.
+# gioele-santi <gioele.santi@gmail.com>, 2020.
 # Giuseppe Guerra <me@nyodev.xyz>, 2019.
 # Giuseppe Tomasello <g.tomas98@gmail.com>, 2019.
 # Graziano Schrödinger Lenzi <burstina@hotmail.com>, 2019.
@@ -28,6 +29,7 @@
 # Marco Galli <mrcgll98@gmail.com>, 2019.
 # Marco Melorio <m.melorio@icloud.com>, 2019.
 # Marco <rodomar705@gmail.com>, 2019.
+# Mariano Marini <mariano.marini@mail.com>, 2020.
 # Mario Rossi <mr_do@hotmail.it>, 2018-2019.
 # MassiminoilTrace <omino.gis@gmail.com>, 2019.
 # Matteo <matteo.guglielmetti@hotmail.it>, 2018-2019.
@@ -56,8 +58,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-27 08:44+0100\n"
-"PO-Revision-Date: 2020-01-14 15:17+0000\n"
-"Last-Translator: Jacopo Farina <jacopo1.farina@gmail.com>\n"
+"PO-Revision-Date: 2020-02-03 21:09+0000\n"
+"Last-Translator: gioele-santi <gioele.santi@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -467,18 +469,17 @@ msgstr ""
 "eccetera. La sezione contiene anche le :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
 "games. It starts with the :ref:`Step by step <toc-learn-step_by_step>` "
 "tutorial which should be the entry point for all new users."
 msgstr ""
-"La sezione :ref:`sec-learn` è la principale ragione per l'esistenza di "
-"questa documentazione visto che contiene tutte le informazioni necessarie su "
-"come utilizzare il motore per creare videogiochi. Inizia con il tutorial :"
-"ref:`Passo Passo <toc-learn-step_by_step>` che dovrebbe essere il punto di "
-"inizio per tutti i nuovi utenti."
+"La sezione :ref:`sec-learn` è la ragion d'essere di questa documentazione "
+"visto che contiene tutte le informazioni necessarie su come utilizzare il "
+"motore per creare videogiochi. Inizia con il tutorial :ref:`Passo Passo <toc-"
+"learn-step_by_step>` che dovrebbe essere il punto di inizio per tutti i "
+"nuovi utenti."
 
 #: ../../docs/about/introduction.rst:91
 msgid ""
@@ -545,8 +546,9 @@ msgid "Have fun reading and making games with Godot Engine!"
 msgstr "Divertiti durante la lettura e nel creare giochi con Godot Engine!"
 
 #: ../../docs/about/faq.rst:1
+#, fuzzy
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -2449,6 +2451,8 @@ msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
+"Aprire il progetto creato in :ref:`doc_intro_to_the_editor_interface`, o "
+"crearne uno nuovo. Questo aprirà l'editor di Godot:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
@@ -2487,6 +2491,10 @@ msgid ""
 "its root node, likewise not every GUI or 2D scene needs a Control node or "
 "Node2D as their root node."
 msgstr ""
+"Notare che questi preset sono qui solo per convenienza e non sono "
+"obbligatori per i differenti tipi di scena. Non tutte le scene 3D "
+"necessitano di un nodo Spatial come nodo base, come anche non tutte le GUI o "
+"scene 2D necessitano di un nodo Control o Node2D come loro nodo base."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 #, fuzzy

@@ -1,15 +1,17 @@
 # Godot Engine Documentation in Korean
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alegruz <alegruz@khu.ac.kr>, 2018.
 # Brian M. Son <sonmg00@gmail.com>, 2018.
 # bulldak <jun98518@naver.com>, 2018.
 # cbj0523 <ccbj0523@gmail.com>, 2019.
-# Ch <ccwpc@hanmail.net>, 2018.
+# Ch <ccwpc@hanmail.net>, 2018, 2020.
+# deviancekr <day@live.co.kr>, 2020.
 # Eunwoo Lee <eunwoo123@gmail.com>, 2018.
 # geun-tak Jeong <beroberos@gmail.com>, 2018.
 # Hyun Cho (C.H) <uncaose@gmail.com>, 2018.
+# icecream28 <asdff2828@naver.com>, 2020.
 # Jesse Y. Cho <jesse.cho@protonmail.ch>, 2018.
 # Jiyoon Kim <kimjiy@dickinson.edu>, 2019.
 # Junho Jang <mibe.jjh@gmail.com>, 2019.
@@ -26,6 +28,7 @@
 # Taehun Yun <yooontehoon@naver.com>, 2018.
 # Yeonho Jang <siabard@gmail.com>, 2018.
 # Yongsung Kang <yongsung.kang@gmail.com>, 2019.
+# 이용현 <dldydgus1995@naver.com>, 2020.
 # 한상철 <hanburn@naver.com>, 2018.
 # 이용재 <lyj7339@gmail.com>, 2018.
 # 박한얼 <volzhs@gmail.com>, 2018.
@@ -36,8 +39,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-27 08:44+0100\n"
-"PO-Revision-Date: 2020-01-27 07:14+0000\n"
-"Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
+"PO-Revision-Date: 2020-02-04 21:53+0000\n"
+"Last-Translator: icecream28 <asdff2828@naver.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
 "Language: ko\n"
@@ -56,7 +59,7 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"Godot의 문서는 다양한 언어와 버전으로 이용할 수 있습니다. 사이드바의 아래에 "
+"Godot의 문서는 다양한 언어와 버전으로 이용할 수 있습니다. 사이드바의 아래쪽 "
 "\"Read the Docs\" 패널에서 그 목록을 확인해보세요."
 
 #: ../../docs/index.rst:10
@@ -65,8 +68,8 @@ msgid ""
 "the documentation of the current **stable** branch? `Have a look here "
 "<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
-"이 문서는 개발 (master) 분기입니다. 현재 **안정** 분기 문서를 찾으시나요? `여"
-"기로 가세요 <http://docs.godotengine.org/en/stable>`_."
+"이 문서는 개발 (master) 브랜치 입니다. 현재 **stable** 브랜치 문서를 찾으시나"
+"요? `여기로 가세요 <http://docs.godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:16
 msgid ""
@@ -86,8 +89,8 @@ msgid ""
 "Weblate."
 msgstr ""
 "번역의 완성도에 따라 아직 영어로 된 페이지나 단락을 찾을 수도 있습니다. "
-"Weblate에서 새 번역을 제공하거나 기존의 번역을 검토하는 것으로 커뮤니티를 도"
-"울 수 있습니다."
+"Weblate에서 새 번역을 제공하거나 기존의 번역을 검토하여 커뮤니티를 도울 수 있"
+"습니다."
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -95,8 +98,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
-"당분간 현지화된 번역은 \"최신\" (개발) 분기에서만 이용할 수 있습니다, 하지만 "
-"그럼에도 안정된 Godot 출시 버전을 사용하는 것을 배우기에 적합합니다."
+"당분간 현지화된 번역은 \"최신\" (개발) 분기에서만 이용할 수 있습니다. 하지만 "
+"개발 브랜치의 내용으로도 안정 버전 Godot을 배우기에는 무리가 없을 것입니다."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -1411,7 +1414,7 @@ msgstr ":ref:`doc_2d_sprite_animation`"
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2
 msgid "Audio"
-msgstr "오디오(Audio)"
+msgstr "오디오"
 
 #: ../../docs/about/docs_changelog.rst:29
 msgid ":ref:`doc_sync_with_audio`"
@@ -2281,7 +2284,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/external_editor.rst:32
 #: ../../docs/development/compiling/compiling_with_mono.rst:191
 msgid "Editor"
-msgstr "편집기(Editor)"
+msgstr "편집기"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
 msgid ""
@@ -3865,7 +3868,7 @@ msgstr "오직 GDScript만 각 이름이 있는 스크립트에 전역 변수를
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:694
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
-msgstr "시그널(Signal)"
+msgstr "시그널"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:9
 msgid ""
@@ -4622,8 +4625,8 @@ msgid ""
 "programmers. Consider this code versus the shortened boolean assignment "
 "above:"
 msgstr ""
-"위 코드 내의 불 할당은 프로그래머를 위한 일반적인 속기입니다. 위의 단축된 불 "
-"할당을 이 코드와 비교해서 생각해보세요:"
+"위 코드 내의 불리언 할당은 프로그래머를 위한 일반적인 짧은 표현입니다. 위의 "
+"단축된 불리언 할당을 이 코드와 비교해서 생각해보세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:405
 msgid ""
@@ -12772,7 +12775,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:142
 msgid "Path"
-msgstr "Path(경로)"
+msgstr "경로"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:144
 msgid ""
@@ -14365,7 +14368,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:71
 #: ../../docs/development/cpp/object_class.rst:94
 msgid "Constants"
-msgstr "상수(Constant)"
+msgstr "상수"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:623
 msgid ""
@@ -15966,8 +15969,8 @@ msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
 msgstr ""
-"비트 플래그를 사용하려면 비트 연산에 대한 이해가 필요합니다. 의심스럽다면, "
-"불 변수를 대신 내보내어야 합니다."
+"비트 플래그를 사용하려면 비트 연산에 대한 이해가 필요합니다. 의심스럽다면, 불"
+"리언 변수를 대신 내보내어야 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:148
 msgid "Exporting arrays"
@@ -16084,7 +16087,7 @@ msgstr "들여쓰기(Indentation)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 msgid "Each indent level should be one greater than the block containing it."
-msgstr "각 들여쓰기 수준은 그것을 포함하는 블록보다 한 단계 더 커야합니다."
+msgstr "들여쓰기 너비는 블록 바깥보다 한 칸 더 커야 됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
@@ -16119,18 +16122,19 @@ msgid ""
 "Use 2 indent levels to distinguish continuation lines from regular code "
 "blocks."
 msgstr ""
-"계속되는 줄은 정규 코드 블록과 구분하기 위해 2단계의 들여쓰기 수준을 사용합니"
-"다."
+"정규 코드 블록과 이어지는 줄을 구분하기 위해 2 칸 들여쓰기를 사용하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:143
 msgid ""
 "Exceptions to this rule are arrays, dictionaries, and enums. Use a single "
 "indentation level to distinguish continuation lines:"
 msgstr ""
+"이 규칙의 예외는 배열, 딕셔너리, 열거형입니다. 연속 선을 구분하려면 한 칸 들"
+"여쓰기를 사용하세요:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
 msgid "Trailing comma"
-msgstr ""
+msgstr "쉼표 매달기(Trailing comma)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
 msgid ""
@@ -16138,16 +16142,20 @@ msgid ""
 "This results in easier refactoring and better diffs in version control as "
 "the last line doesn't need to be modified when adding new elements."
 msgstr ""
+"배열, 딕셔너리, 열거형의 마지막 줄에 쉼표 매달기를 사용하세요. 이렇게 하면 "
+"새 요소를 추가해도 마지막 줄을 수정하지 않아도 되기 때문에, 리팩토링하기 쉽"
+"고 버전 제어에서 비교가 더 좋습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:221
 msgid ""
 "Trailing commas are unnecessary in single-line lists, so don't add them in "
 "this case."
 msgstr ""
+"쉼표 매달기는 한 줄 목록에는 불필요합니다. 따라서 이 경우는 사용하지 마세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:236
 msgid "Blank lines"
-msgstr "공백 줄"
+msgstr "공백 줄(Blank lines)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
 msgid "Surround functions and class definitions with two blank lines:"
@@ -16417,10 +16425,14 @@ msgid ""
 "a global type in your project using this feature. For more information, see :"
 "ref:`doc_gdscript`."
 msgstr ""
+"`class_name`\\ 이 있다면 바로 아래에 배치하세요. tool 기능을 사용하면 "
+"GDScript를 프로젝트의 전역 유형으로 바꿀 수 있습니다. 자세한 설명은 :ref:"
+"`doc_gdscript`\\ 를 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:546
 msgid "Then, add the `extends` keyword if the class extends a built-in type."
 msgstr ""
+"다음으로, 클래스가 내장 유형을 확장하고 있다면 `extends` 키워드를 추가하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:548
 msgid ""
@@ -16428,29 +16440,37 @@ msgid ""
 "You can use that to explain the role of your class to your teammates, how it "
 "works, and how other developers should use it, for example."
 msgstr ""
+"이 밑에는 클래스에 관한 별개의 문서(Docstring)를 주석으로 넣어야 합니다. 클래"
+"스의 역할을 설명할 때 사용할 수 있습니다. 다른 동료나 사용설명서 등으로 쓸 "
+"수 있죠."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:560
-#, fuzzy
 msgid "Signals and properties"
-msgstr "노드 속성"
+msgstr "시그널(Signal)과 속성(Property)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:562
 msgid ""
 "Write signal declarations, followed by properties, that is to say, member "
 "variables, after the docstring."
 msgstr ""
+"Docstring이 끝나면 시그널 선언을 작성한 뒤에 속성, 즉, 멤버 변수를 작성합니"
+"다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:565
 msgid ""
 "Enums should come after signals, as you can use them as export hints for "
 "other properties."
 msgstr ""
+"열거형(Enum)은 시그널 뒤에 나와야 합니다. 다른 속성의 내보내기 힌트로 사용할 "
+"수 있기 때문이죠."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:568
 msgid ""
 "Then, write constants, exported variables, public, private, and onready "
 "variables, in that order."
 msgstr ""
+"그런 다음, 상수(Constant), 내보낸 변수, 공개(Public), 개인(Private), onready "
+"변수를 순서대로 작성하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:591
 msgid ""
@@ -16459,15 +16479,17 @@ msgid ""
 "say, to get child nodes in the scene that your class relies on. This is what "
 "the example above shows."
 msgstr ""
+"GDScript 컴파일러는 onready 변수를 ``_ready`` 콜백 바로 이전에 실행합니다. 따"
+"라서 노드 종속성을 처리할 때 사용할 수 있습니다. 말 그대로 씬에서 클래스에 의"
+"존하는 자식 노드를 가져올 수 있다는 것이죠. 위 예제에서 이 작업을 보여줍니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:598
-#, fuzzy
 msgid "Methods and static functions"
-msgstr "정적 함수(Static functions)"
+msgstr "메서드(Method)와 정적(Static) 함수"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:600
 msgid "After the class's properties come the methods."
-msgstr ""
+msgstr "클래스 속성 뒤에는 메서드가 옵니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:602
 msgid ""
@@ -16475,12 +16497,16 @@ msgid ""
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
 "Godot calls when it adds a node to the scene tree."
 msgstr ""
+"엔진이 메모리에 객체를 만들 때 호출하는 ``_init()`` 콜백 메서드로 시작하세"
+"요. 그 뒤로 Godot가 씬 트리에 노드를 추가할 때 호출하는 ``_ready()`` 콜백이 "
+"옵니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
 msgstr ""
+"이 함수가 객체를 어떻게 초기화할 지 보여주기 때문에 가장 먼저 와야 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:609
 msgid ""
@@ -16488,45 +16514,53 @@ msgid ""
 "``_physics_process``, should come next. These control the object's main loop "
 "and interactions with the game engine."
 msgstr ""
+"``_unhandled_input()``\\ 과 ``_physics_process``\\ 와 같은 다른 내장 가상 콜"
+"백은 다음에 나와야 합니다. 이 메서드는 객체의 메인 루프와 게임 엔진과의 상호"
+"작용을 제어합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
 msgstr ""
+"이 다음은 순서에 따라 클래스 인터페이스의 나머지인, 공개 메서드와 개인 메서드"
+"가 옵니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:650
-#, fuzzy
 msgid "Static typing"
-msgstr "정적 함수"
+msgstr "정적 타이핑(Static Typing)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:652
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
+"Godot 3.1부터, GDScript는 :ref:`선택 정적 타이핑<doc_gdscript_static_typing>`"
+"\\ 을 지원합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:655
-#, fuzzy
 msgid "Type hints"
-msgstr "타입(Types)"
+msgstr "유형 힌트(Type Hint)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:657
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
+"변수의 이름 바로 뒤에, 띄어쓰기 없이 쌍점을 배치하세요. 그러면 GDScript 컴파"
+"일러는 변수의 유형을 추론합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:676
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
+"컴파일러가 유형 힌트를 추론할 때는 쌍점과 등호를 함께 작성합니다: ``:=``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:682
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
-msgstr ""
+msgstr "함수를 정의할 때, 반환 유형 화살표의 양쪽에는 띄어쓰기를 추가하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:4
 msgid "Static typing in GDScript"
@@ -16982,7 +17016,6 @@ msgid "warning system example"
 msgstr "경고 시스템 예제"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
-#, fuzzy
 msgid ""
 "To ignore specific warnings in one file, insert a special comment of the "
 "form ``# warning-ignore:warning-id``, or click on the ignore link to the "
@@ -16990,10 +17023,10 @@ msgid ""
 "corresponding line and the code won’t trigger the corresponding warning "
 "anymore:"
 msgstr ""
-"하나의 파일에서 특정 경고를 무시하려면, 특수 주석을 끼워 넣어야 합니다 "
-"``#warning-ignore:warning-id``, 혹은 경고의 설명 오른쪽에 무시 링크를 클릭합"
-"니다. Godot는 위에 주석을 추가해야 해당하는 줄과 코드가 더 이상 같은 경고를 "
-"내지 않도록 합니다:"
+"한 파일에서 특정한 경고를 무시하려면, ``# warning-ignore:경고-id``\\ 와 같은 "
+"형태의 특수 주석을 삽입하세요. 아니면 경고의 설명 오른쪽의 무시하기(Ignore)"
+"를 클릭하세요. Godot는 해당하는 줄 위에 주석을 추가해서 더 이상 해당 경고를 "
+"주지 않게 됩니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
 msgid "warning system ignore example"
@@ -17005,6 +17038,9 @@ msgid ""
 "type in this file with ``# warning-ignore-all:warning-id``. To ignore all "
 "warnings of all types in a file add the comment ``# warnings-disable`` to it."
 msgstr ""
+"그리고 파일에서 단순히 한 경고가 아닌 특정 유형의 모든 경고를 선택할 수 있습"
+"니다. 주석은 ``# warning-ignore-all:경고-id``\\ 입니다. 파일에서 모든 유형의 "
+"모든 경고를 무시하려면 ``# warnings-disable`` 주석을 추가하면 됩니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:344
 msgid ""
@@ -17137,10 +17173,10 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
-"``%s`` 는 가장 간단하고 작업에 자주 쓰이는 플레이스 홀더입니다: 암묵적 문자"
-"열 변환이나 ``str()`` 이 문자열을 전환하는 방식과 같은 방식으로 값을 전환시킵"
-"니다. 문자열은 바꾸지 않고, 불 방식은 ``\"True\"`` 나 ``\"False\"`` 로, 정수"
-"나 실수는 십진수로, 그 외 다른 형식도 사람이 읽을 수 있는 정보로 바꿉니다."
+"``%s`` 는 가장 간단하고 작업에 자주 쓰이는 플레이스홀더입니다: 암묵적 문자열 "
+"변환이나 ``str()`` 이 문자열을 전환하는 방식과 같은 방식으로 값을 전환시킵니"
+"다. 문자열은 바꾸지 않고, 불리언 방식은 ``\"True\"`` 나 ``\"False\"`` 로, 정"
+"수나 실수는 십진수로, 그 외 다른 형식도 사람이 읽을 수 있는 정보로 바꿉니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
@@ -17695,17 +17731,17 @@ msgid ""
 "workflow. This led us to write our own version of how we believe this "
 "feature would work best with the engine."
 msgstr ""
-"Godot의 모든 기능과 마찬가지로, 우리는 현재 워크플로에 적합하지 않을 수 있는 "
-"타사 솔루션을 복사하거나 통합하는 것에 대한 좋은 경험을 우선순위로 둡니다. 이"
-"것으로 우리는 이 기능이 엔진에서 가장 잘 작동할 것이라고 생각하는 우리의 설명"
-"을 적을 수 있었습니다."
+"Godot의 모든 기능처럼, Visual Scripting도 좋은 경험을 우선 순위로 두고 개발했"
+"습니다. 현재 작업 흐름에 잘 맞지 않는 제 3자 솔루션과 결합하거나 복사하는 것 "
+"이상으로 말이죠. 이렇게 해서 엔진에 가장 적합한 기능이라고 생각되는 독자적인 "
+"버전을 작성하게 됐습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:10
 msgid ""
 "In Godot, a Visual Script fits smoothly together with regular scripts in the "
 "Editor tab"
 msgstr ""
-"Godot에서, Visual Script가 편집기 탭의 일반 스크립트와 매끄럽게 호환합니다"
+"Godot에서 Visual Script는 일반 스크립트와 함께 편집기 탭에 잘 들어 맞습니다"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:15
 msgid ""
@@ -17714,14 +17750,13 @@ msgid ""
 "rest of Godot panels and docks act like a palette from where you can drag "
 "and drop all sorts of information to the script canvas:"
 msgstr ""
-"사실, Visual Scripting이 Godot에 잘 통합되기 때문에 버전 3.0에 추가되었다고 "
-"보기 어렵습니다. 왜냐하면 Visual Script를 편집할 때, Godot 패널과 독의 나머"
-"지 부분이 모든 종류의 정보를 스크립트 캔버스로 끌어다 놓을 수 있는 팔레트처"
-"럼 작동하기 때문입니다:"
+"실제로 Visual Scripting이 Godot와 아주 잘 통합해서 버전 3.0만에 추가되었다고 "
+"믿기 어려울 것입니다. 스크립트 편집 중에 Godot 패널과 독은 팔래트처럼 스크랩"
+"트 캔버스로 모든 종류의 정보를 드래그 앤 드롭할 수 있기 때문입니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
 msgid "Creating a script"
-msgstr "스크립트 생성하기"
+msgstr "스크립트 만들기(Creating a script)"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
 msgid ""
@@ -17729,28 +17764,29 @@ msgid ""
 "any node in the scene and push the \"New Script\" button at the top right "
 "corner of the Scene Tree dock:"
 msgstr ""
-"스크립트 생성은 다른 스크립팅 언어와 동일하게 작동합니다: 씬의 아무 노드나 선"
-"택하고 씬 트리 독의 오른쪽 상단 모서리에 있는 \"새 스크립트\" 버튼을 누릅니"
-"다:"
+"스크립트 만들기는 다른 스크립팅 언어와 같은 방식입니다: 씬에서 아무 노드나 선"
+"택하고, 씬 트리 독의 오른쪽 위에 있는 \"새 스크립트(New Script)\" 버튼을 누르"
+"세요:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:31
 msgid ""
 "Once it opens, the script type \"Visual Script\" must be selected from the "
 "drop down list. The script extension must be \".vs\" (for Visual Script!)."
 msgstr ""
-"열리면 드롭 다운 목록에서 스크립트 타입 \"Visual Script\"를 선택해야 합니다. "
-"스크립트 확장은 \".vs\"(Visual Script를 위해!) 이어야 합니다."
+"만들기 창이 열리면 스크립트 유형의 드롭 다운 메뉴에서 \"Visual Script\"로 선"
+"택해야 합니다. 스크립트 확장자 이름은 (Visual Script를 의미하는) \".vs\"가 됩"
+"니다."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:37
 msgid ""
 "Finally, the Script Editor will open, allowing you to start editing the "
 "visual script:"
 msgstr ""
-"마침내, Script 편집기가 열리고, Visual script 편집을 시작할 수 있습니다:"
+"그러면 이제 Script 편집기가 열리고 Visual Script를 편집할 수 있게 됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:43
 msgid "Adding a function"
-msgstr "함수 추가하기"
+msgstr "함수 추가하기(Adding a function)"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:45
 msgid ""
@@ -17759,10 +17795,10 @@ msgid ""
 "to communicate with the engine as other scripting engines. In Godot, the "
 "scripting interface is universal and all implementations conform to it."
 msgstr ""
-"다른 시각적 스크립팅 실행과 달리 Godot의 Visual Scripting은 함수를 기반으로 "
-"합니다. 왜냐하면 다른 스크립팅 엔진처럼 엔진과 통신하는 동일한 인터페이스를 "
-"사용하기 때문에 일어납니다. Godot에서는 스크립팅 인터페이스가 보편적이며 모"
-"든 실행이 이 인터페이스를 준수합니다."
+"다른 Visual Scripting 구현 방식과 달리, Godot의 Visual Scripting은 함수와 깊"
+"게 연관되어 있습니다. 이는 다른 스크립팅 엔진처럼 엔진과 소통하도록 같은 인터"
+"페이스를 사용하기 때문입니다. Godot에서 스크립팅 인터페이스는 범용적이고 이 "
+"인터페이스 내에서 전부 구현합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:49
 msgid "A function is an individual canvas with nodes connected."
@@ -17773,8 +17809,8 @@ msgid ""
 "A single script can contain many functions, each of which will have a canvas "
 "of its own, allowing for more organization."
 msgstr ""
-"단일 스크립트에는 많은 함수를 포함할 수 있으며, 각각 고유의 캔버스를 갖고 있"
-"고, 더 많은 구성을 할 수 있습니다."
+"하나의 스크립트에는 많은 함수를 가질 수 있고, 각 함수는 고유의 캔버스를 갖고 "
+"있기 때문에 더 조직적으로 만들 수 있습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:53
 msgid "There are three main ways to add functions in a script:"
@@ -17782,7 +17818,7 @@ msgstr "스크립트에 함수를 추가하는 세 가지 주요 방법이 있�
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:56
 msgid "Overriding a virtual function"
-msgstr "가상 함수 재정의하기(Override)"
+msgstr "가상 함수 다시 정의하기(Override)"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:58
 msgid ""
@@ -17791,9 +17827,10 @@ msgid ""
 "something happens and can be looked up in the reference. Virtual functions "
 "are listed when pressing the \"Override\" icon in the member panel:"
 msgstr ""
-"Godot에 있는 대부분의 타입의 노드와 다른 타입의 객체는 가상 함수를 포함합니"
-"다. 이들은 무언가가 발생했을 때 (코드를 실행하여) 호출될 함수로 참조에서 볼 "
-"수 있습니다. 멤버 패널에서 \"재정의\" 아이콘을 누르면 가상 함수가 나열됩니다:"
+"Godot의 대부분의 노드 유형과 객체의 유형은 가상 함수를 갖고 있습니다. 이벤트"
+"가 일어나면 함수는 호출되며 (코드를 실행하며), 그 이벤트는 참조에서 볼 수 있"
+"습니다. 가상 함수는 멤버(Members) 패널의 \"다시 정의하기(Override)\" 아이콘"
+"을 클릭하면 나열됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:65
 msgid ""
@@ -17801,24 +17838,24 @@ msgid ""
 "loaded and added to the running scene. For this, the _ready() virtual method "
 "will be overridden:"
 msgstr ""
-"다음 예시에서는, 노드를 불러와서 실행 씬에 추가될 때 함수가 실행될 것입니다. "
-"이를 위해 _ready () 가상 메서드가 재정의 될 것입니다:"
+"다음 예시는 노드를 불러오고 실행하는 씬에 추가될 때 실행하는 함수입니다. "
+"_ready() 가상 메서드가 다시 정의됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:71
 msgid "Finally, a canvas appears for this function, showing the override:"
-msgstr "마침내, 이 함수를 위해 재정의를 보여주는 캔버스가 나타났습니다:"
+msgstr "그러면 이제 이 함수의 캔버스가 나타나고, 재정의를 표시합니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:76
 msgid ""
 "As some functions expect you to return a value, they will also add a return "
 "node where such value is supposed to be provided:"
 msgstr ""
-"일부 함수는 값을 반환할 것을 예상하며, 그들에게는 반환 노드를 추가하여 해당 "
-"값을 제공해야 합니다:"
+"일부 함수는 반환 값을 추측하기 때문에, 해당 값을 제공하도록 return 노드를 추"
+"가해야 합니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:83
 msgid "Connecting a signal to a function"
-msgstr "함수에 시그널 연결하기"
+msgstr "함수에 시그널(Signal) 연결하기"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:85
 msgid ""
@@ -17826,9 +17863,9 @@ msgid ""
 "all sorts of things. A typical example would be a button that emits a "
 "\"pressed\" signal when actually pressed."
 msgstr ""
-"트리의 노드는 무언가가 발생하면 시그널을 방출(emit)합니다. Godot는 모든 종류"
-"의 시그널을 사용합니다. 전형적인 예로 버튼이 실제로 눌렀을 때 \"pressed\"(눌"
-"렸음) 시그널을 내보내는 것이 있습니다."
+"노드는 트리에서 무언가 발생하면 시그널을 방출합니다. Godot는 시그널로 모든 작"
+"업을 합니다. 전형적인 예제로 \"pressed\" 시그널을 방출하는 버튼으로, 버튼을 "
+"누를 때 방출합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:88
 msgid ""
@@ -17836,8 +17873,9 @@ msgid ""
 "inspecting the signals. Once they are displayed, connect the \"pressed\" "
 "signal:"
 msgstr ""
-"이를 위해, 노드를 선택하고 Node 탭을 열어줍니다. 이렇게 하면 시그널을 볼 수 "
-"있습니다. 일단 보여지면, \"pressed\" 시그널을 연결하십시오:"
+"그렇게 하려면, 시그널을 방출할 노드를 선택한 채로 노드(Node) 탭을 여세요. 거"
+"기에는 시그널을 확인할 수 있습니다. 시그널을 확인한 뒤, \"pressed\" 시그널을 "
+"연결하세요:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:94
 msgid ""
@@ -17845,15 +17883,15 @@ msgid ""
 "node where the signal will be connected to, and the function that will "
 "receive the signal:"
 msgstr ""
-"연결 대화 상자가 열립니다. 이 대화 상자에서 시그널을 연결할 노드를 선택하고 "
-"시그널을 받을 함수를 선택해야 합니다:"
+"그러면 연결 대화 상자가 열립니다. 대화 상자에서 시그널을 연결할 노드를 선택하"
+"고 시그널을 받는 함수를 선택해야 합니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:100
 msgid ""
 "If this is done right, a new function will be created in our script and a "
 "signal will automatically be connected to it:"
 msgstr ""
-"잘 작동된다면, 스크립트에 새 함수가 만들어지며 시그널이 자동으로 연결됩니다:"
+"잘 설정했다면, 새 함수가 스크립트에 만들어지고 자동으로 시그널이 연결됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:107
 msgid "Creating a function manually"
@@ -17867,24 +17905,25 @@ msgid ""
 "breaking a larger function up into several manageable chunks and reusing "
 "your visual code."
 msgstr ""
-"마지막 방법으로는 함수를 수동으로 생성하는 것입니다. 일반적으로 정말로 필요"
-"한 경우가 아니라면 수동 생성은 쓰이지 않습니다. 맞춤 함수는 다른 (또는 같은) "
-"스크립트가 수동으로 호출할 때 작동합니다. 주요 사용 사례로는 함수를 더 작게 "
-"분리하는 것이나, 시각적 코드를 재 사용하는 것입니다."
+"함수를 만드는 마지막 방법은 수동으로 만드는 것입니다. 일반적으로 정말 필요한 "
+"경우가 아니라면 수동으로 만들지 않을 것입니다. 다른 (혹은 같은) 스크립트에서 "
+"함수를 수동으로 호출할 때 맞춤(Custom) 함수는 작동합니다. 주된 사용 예로는 커"
+"다란 함수를 여러 개의 덩어리로 만드는 것입니다. 관리하기 좋으면서도 다른 "
+"Visual 코드에 다시 쓸 수 있도록 만드는 것이죠."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:113
 msgid ""
 "To create a function manually, push the big \"Plus\" button, and a new "
 "function will be added with a default name:"
 msgstr ""
-"함수를 수동으로 생성하려면, 큰 \"더하기\" 버튼을 누르세요, 그러면 기본 이름으"
-"로 새로운 함수가 추가됩니다:"
+"함수를 수동으로 만들려면, 큰 \"더하기\" 버튼을 누르세요. 그러면 새 함수가 기"
+"본 이름으로 추가됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:119
 msgid ""
 "This will add a new function, which can be renamed by simply double clicking "
 "its name:"
-msgstr "이름을 더블 클릭하여 이름을 바꿀 수 있는 새 함수가 추가됩니다:"
+msgstr "함수는 이름에서 더블 클릭하면 이름을 새로 지을 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:125
 msgid ""
@@ -17892,8 +17931,8 @@ msgid ""
 "when you call this function), simply click the Function node and check the "
 "inspector:"
 msgstr ""
-"이 함수가 가질 수 있는 \"인수(arguments)\"를 편집하려면 (이 함수를 호출할 때 "
-"전달하는 값), 함수 노드를 클릭하고 인스펙터(Inspecter)를 확인하세요:"
+"이 함수가 갖는 (함수를 호출할 때 값을 전달하는) \"인수(Argument)\"를 편집하려"
+"면, 간단히 Function(함수) 노드를 클릭하고 인스펙터(Inspector)를 확인하세요:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:131
 msgid "More on that will be explained later in this document."
@@ -17901,7 +17940,7 @@ msgstr "자세한 내용은 이 문서의 뒷부분에서 설명합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:4
 msgid "Nodes and terminology"
-msgstr "노드와 전문 용어"
+msgstr "노드와 전문 용어(Nodes and terminology)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:6
 msgid ""
@@ -17914,16 +17953,16 @@ msgid ""
 "referring to *Node* here, it will be implied that a *Visual Script Node* is "
 "referred to unless indicated otherwise."
 msgstr ""
-"계속 하기 전에, *Node* 용어 사용에 유의해야 합니다. *Visual Script Nodes* (또"
-"는 일반적으로 *Nodes*)를 볼 때 이 텍스트는 당신이 그래프의 일부인 선으로 연결"
-"한 작은 상자를 보여줄 것입니다. *Scene Nodes*\\ 를 볼 때, 씬이 보이도록 구성"
-"하는 요소로, 트리의 일부분임을 상징합니다. 그들의 이름은 비슷하지만 그들의 함"
-"수는 다릅니다. 여기에서 *Node*\\ 를 본다면, 달리 명시되지 않는 한 *Visual "
-"Script Node*\\ 가 보여지는 것을 상징할 것입니다."
+"계속하기 전, *노드(Node)* 용어 사용을 유의해야 합니다. *Visual Script "
+"Nodes(비주얼 스크립트 노드)* (혹은 일반적으로 *Nodes*)를 언급할 때 이 단어는 "
+"선으로 연결되어 있는 작은 상자를 의미합니다. 그래프의 일부분이죠. 만일 *씬 노"
+"드(Scene Node)*\\ 를 언급하면 그것은 씬(Scene)을 구성하는 요소를 함축하고 있"
+"습니다. 이는 트리의 일부분이죠. 이 둘의 이름은 비슷하지만 기능은 천차만별입니"
+"다. 여기서 언급하는 *노드(Node)*\\ 는 *Visual Script Node*\\ 만을 의미합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:15
 msgid "Node properties"
-msgstr "노드 속성"
+msgstr "노드 속성(Node Property)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:17
 msgid ""
@@ -17931,9 +17970,9 @@ msgid ""
 "properties. In Godot, though, we try to avoid bloating the nodes with "
 "editable controls for the sake of readability."
 msgstr ""
-"대부분의 Visual scripting 구현과 마찬가지로, 각 노드에는 편집 가능한 속성이 "
-"있습니다. 하지만 godot에서는, 가독성을 높이기 위해 편집 가능한 제어 수단을 사"
-"용하여 노드가 팽창하는 것을 방지하려고 합니다."
+"대부분의 Visual scripting 구현과 마찬가지로, 각 노드는 편집할 수 있는 속성을 "
+"갖습니다. 하지만 Godot는 가독성을 위해, 편집할 수 있는 기능으로 인해 노드가 "
+"부풀려지는 일을 피하려고 했습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:20
 msgid ""
@@ -17997,8 +18036,8 @@ msgid ""
 "considered an output, while, a port on the left side is an input. Connecting "
 "them allows information to flow to the next node."
 msgstr ""
-"*데이터 포트(Data Ports)* 포트는 타입 값을 포함합니다. 타입은 부울, 정수, 문"
-"자열, Vector3, 배열, 모든 객체 또는 씬 노드 등과 같은 일반 Godot 타입이 될 "
+"*데이터 포트(Data Ports)* 포트는 타입 값을 포함합니다. 타입은 불리언, 정수, "
+"문자열, Vector3, 배열, 모든 객체 또는 씬 노드 등과 같은 일반 Godot 타입이 될 "
 "수 있습니다. 노드의 오른쪽에 있는 *데이터 포트*는 출력으로 간주되며, 한편 왼"
 "쪽의 포트는 입력입니다. 이들을 연결하면 정보를 다음 노드로 전달할 수 있습니"
 "다."
@@ -18858,7 +18897,7 @@ msgid ""
 "documentation."
 msgstr ""
 "C#은 하이 레벨 프로그래밍 언어로 Microsoft가 개발했습니다. Godot에서는 Mono "
-"5.x .NET framework로 구현되었으며, C# 7.0을 완전 지원합니다. Mono는 Microsoft"
+"6.x .NET framework로 구현되었으며, C# 8.0을 완전 지원합니다. Mono는 Microsoft"
 "의 .NET Framework의 오픈 소스로 C#을 위한 ECMA 표준과 Common Language Runtime"
 "에 기반으로 구현되었습니다. 적합성을 확인하기 위한 좋은 출발점으로 Mono 문서"
 "에 있는 `적합성<http://www.mono-project.com/docs/about-mono/compatibility/"
@@ -18975,19 +19014,18 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:88
 #, fuzzy
 msgid "Visual Studio 2019"
-msgstr "Visual Studio Code"
+msgstr "Visual Studio 2019"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:90
-#, fuzzy
 msgid "MonoDevelop"
-msgstr "KDevelop"
+msgstr "MonoDevelop"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:91
-#, fuzzy
 msgid "Visual Studio for Mac"
-msgstr "Visual Studio Code"
+msgstr "Visual Studio for Mac"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:94
+#, fuzzy
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
@@ -18995,13 +19033,15 @@ msgid ""
 msgstr ""
 "만약 Visual Studio Code를 사용하고 있다면, `C# 확장 프로그램<https://"
 "marketplace.visualstudio.com/items?itemName=ms-vscode.csharp>`_\\ 을 설치하"
-"여 문법 하이라이트 효과와 IntelliSense같은 기능을 사용하는 것을 잊지마세요."
+"여 문법 하이라이트 효과나 IntelliSense같은 기능을 사용 할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
 msgid ""
 "If you are using Visual Studio 2019, you must follow the instructions found "
 "in the \"Configure VS2019 for Debugging\" section below."
 msgstr ""
+"Visual Studio 2019를 사용하는 경우 아래 \"Configure VS2019 for Debugging\" 지"
+"침을 따라야합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:103
 msgid "Creating a C# script"
@@ -19217,6 +19257,12 @@ msgid ""
 "is expecting the original ``snake_case`` version ``add_child``. However, you "
 "can use any custom properties or methods without this limitation."
 msgstr ""
+"Godot 의 ``snake_case\" API 명명 규칙에 의존하는 ``Get ()\"/\"Set()\" "
+"\"Call()\"/\"CallDeferred()\"와\" 시그널 연결 메서드 ``Connect()\"와 같은 방"
+"법이 있습니다. 그러므로 예를 들어 ``CallDeferred\"(\"AddChild\")를 사용할 때 "
+"``AddChild\"는 API가 원래의 ``snake_case\" 버전의 ``add_child\"를 기대하기 때"
+"문에 작동하지 않을 것입니다. 그러나 당신은 이러한 제한 없이 모든 맞춤 속성이"
+"나 메서드를 사용할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:233
 msgid "Performance of C# in Godot"
@@ -19266,7 +19312,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:269
 msgid "Profiling your C# code"
-msgstr ""
+msgstr "C# 코드 프로파일링"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:271
 msgid ""
@@ -19274,6 +19320,9 @@ msgid ""
 "profiler/>`_ is available via `this PR <https://github.com/godotengine/godot/"
 "pull/26513>`_."
 msgstr ""
+"`Mono 로그 프로파일러 <https://www.mono-project.com/docs/debug+profile/"
+"profile/profiler/>`_ 를 지원합니다. `this PR <https://github.com/godotengine/"
+"godot/pull/26513>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:272
 msgid ""
@@ -19281,10 +19330,13 @@ msgid ""
 "profiler/>`_ can be used as described `here <https://github.com/godotengine/"
 "godot/pull/34382>`_."
 msgstr ""
+"다른 Mono 프로파일러로는 `JetBrains dotTrace <https://www.jetbrains.com/"
+"profiler/>`_ 을 사용 할 수 있습니다. 해당 설명 - `here <https://github.com/"
+"godotengine/godot/pull/34382>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:275
 msgid "Configuring VS 2019 for debugging"
-msgstr ""
+msgstr "디버깅을 위한 VS 2019 구성"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:279
 msgid ""
@@ -19293,12 +19345,17 @@ msgid ""
 "in the meantime, the steps below can let you configure VS 2019 for use with "
 "Godot C# projects."
 msgstr ""
+"Godot은 몇몇 인기 있는 C# IDE와 관련된 워크플로에 대한 기본 지원을 가지고 있"
+"습니다. Visual Studio에 대한 내장 지원은 향후 버전에서 포함되지만, 그 동안 아"
+"래 단계를 통해 Godot C# 프로젝트와 함께 사용할 VS 2019를 구성할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:284
 msgid ""
 "Install VS 2019 with ``.NET desktop development`` and ``Desktop development "
 "with C++`` workloads selected."
 msgstr ""
+"``.NET desktop development`` 및``Desktop development with C++``워크로드로 VS "
+"2019를 설치하십시오."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:285
 msgid ""
@@ -19306,12 +19363,17 @@ msgid ""
 "``Mobile development with .NET`` workload. Xamarin changes the DLLs used by "
 "MonoDebugger, which breaks debugging."
 msgstr ""
+"**Xamarin 이 설치되지 않았는지 확인하십시오.** ``.NET을 사용한 모바일 개발`` "
+"워크로드를 선택하지 마십시오. Xamarin은 MonoDebugger에서 사용하는 DLL을 변경"
+"하여 디버깅을 중단합니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:286
 msgid ""
 "Install the `VSMonoDebugger extension <https://marketplace.visualstudio.com/"
 "items?itemName=GordianDotNet.VSMonoDebugger0d62>`_."
 msgstr ""
+"`VSMonoDebugger 확장 프로그램 <https://marketplace.visualstudio.com/items?"
+"itemName=GordianDotNet.VSMonoDebugger0d62>`_를 설치하십시오."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:287
 msgid "In VS 2019 --> Extensions --> Mono --> Settings:"
@@ -20046,6 +20108,7 @@ msgstr "다른 스크립팅 언어와 소통하기"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
 msgstr ""
+"이것은 : ref :`doc_cross_language_scripting`에 광범위하게 설명되어 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:308
 msgid ""
@@ -20200,10 +20263,12 @@ msgstr ""
 "염두하세요, *CRLF*\\ 이나 *CR*\\ 이 아닙니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:37
+#, fuzzy
 msgid ""
 "Use one line feed character at the end of each file, except for `csproj` "
 "files."
 msgstr ""
+"`csproj` 파일을 제외하고 각 파일의 끝에 한 줄 바꿈 문자를 사용하십시오."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:38
 #, fuzzy
@@ -20224,9 +20289,10 @@ msgstr ""
 "함)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:40
+#, fuzzy
 msgid ""
 "Consider breaking a line into several if it's longer than 100 characters."
-msgstr ""
+msgstr "100자를 초과하는 경우 한 줄을 여러 줄로 나누는것을 고려하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:44
 msgid "Line breaks and blank lines"
@@ -20274,8 +20340,9 @@ msgid "Between method, properties, and inner type declarations."
 msgstr "메서드, 속성, 그리고 내부 타입 선언 사이."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
+#, fuzzy
 msgid "At the end of each file."
-msgstr ""
+msgstr "각 파일의 끝에."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
 msgid ""
@@ -20337,8 +20404,9 @@ msgid "Between accessors in a single line accessor block."
 msgstr "한 줄 접근자 블록에서 접근자들 사이."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:150
+#, fuzzy
 msgid "After a comma which is not at the end of a line."
-msgstr ""
+msgstr "줄의 맨 끝에 있지 않는 쉼표 뒤에."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
 #, fuzzy
@@ -24910,7 +24978,7 @@ msgstr "일단 구성되면, Android에 내보낼 준비가 끝납니다!"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
 msgid "Providing launcher icons"
-msgstr ""
+msgstr "실행 아이콘 제공"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
@@ -24919,6 +24987,9 @@ msgid ""
 "``xxxhdpi`` density screens) and will automatically generate lower-"
 "resolution variants."
 msgstr ""
+"런처 아이콘은 Android 앱에서 사용자에게 애플리케이션을 나타내는 데 사용됩니"
+"다. Godot은 고해상도 아이콘 (``xxxhdpi``) 만 필요하며 저해상도는 자동으로 생"
+"성합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:68
 #, fuzzy
@@ -24930,6 +25001,8 @@ msgid ""
 "**Main Icon:**: The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
+"** Main Icon : ** : \"classic\" icon. 이는 모든 Android 버전에서 최대 "
+"Android 8 (Oreo)까지만 사용됩니다. 192 × 192 픽셀 이상이어야합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:71
 msgid ""
@@ -24940,6 +25013,11 @@ msgid ""
 "launcher application will control the icon's animation and masking. Must be "
 "at least 432×432 px."
 msgstr ""
+"** Adaptive Icons : ** Android 8 (포함)부터 `Adaptive Icons <https://"
+"developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive>`_ "
+"가 도입되었습니다. 앱은 배경 및 전경 아이콘을 포함해야합니다. 사용자의 런처 "
+"응용 프로그램은 아이콘의 애니메이션 및 마스킹을 제어합니다. 432 × 432 픽셀 이"
+"상이어야합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
 msgid ""
@@ -29190,7 +29268,7 @@ msgstr "유형"
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:342
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:703
 msgid "Transform"
-msgstr "변형하기"
+msgstr "변형"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
@@ -52273,6 +52351,7 @@ msgid "Internationalizing games"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:9
+#, fuzzy
 msgid ""
 "Sería excelente que el mundo hablara solo un idioma (It would be great if "
 "the world spoke only one language). Unfortunately for us developers, that is "
@@ -52281,6 +52360,12 @@ msgid ""
 "offers many tools to make this process more straightforward, so this "
 "tutorial is more like a collection of tips and tricks."
 msgstr ""
+"Sería excelente que el mundo hablara solo un idioma(만약 세계가 오직 하나의 "
+"언어로 말할수 있었다면 굉장했을 것이다). 불행하게도, 우리 개발자들은 저러한 "
+"상황이 아닙니다. 인디게임 혹은 틈새게임은 보통 현지화를 필요로 하지 않습니"
+"다. 하지만 훨씬 더큰 시장을 목표로 삼은 게임들은 현지화가 자주 필요합니다. "
+"Godot은 이러한것을 더욱 간단하게 진행하도록 만드는 많은 기능들을 제공합니다. "
+"따라서 이번 튜토리얼은 팁과 재주의 콜랙숀과 같은 것입니다."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:17
 msgid ""
@@ -52297,10 +52382,13 @@ msgid ""
 "We will be using the official demo as an example; you can `download it from "
 "the Asset Library <https://godotengine.org/asset-library/asset/134>`_."
 msgstr ""
+"예제로써 공식 데모를 이용할 것 입니다.; `애셋라이브러리에서 다운 받을수 있습"
+"니다. <https://godotengine.org/asset-library/asset/134>`_."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:29
+#, fuzzy
 msgid "Configuring the imported translation"
-msgstr ""
+msgstr "번역을 가져와서 구성하기"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:31
 msgid ""
@@ -52308,14 +52396,18 @@ msgid ""
 "still have to be added to the project. This is done in **Project → Project "
 "Settings → Localization**:"
 msgstr ""
+"번역들은 바뀌었을때 업데이트 되고 다시 임포트 될수 있습니다. 하지만 여전히 프"
+"로젝트에 추가해야합니다. 이것은 다음 경로에서 완수됩니다 **Project → Project "
+"Settings → Localization**:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:37
 msgid "The above dialog is used to add or remove translations project-wide."
 msgstr ""
+"위의 대화 상자는 프로젝트 전체적으로 번역을 추가 혹은 제거에 사용합니다."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:40
 msgid "Localizing resources"
-msgstr ""
+msgstr "리소스 현지화"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:42
 msgid ""
@@ -52323,6 +52415,8 @@ msgid ""
 "(resources) depending on the current language. The **Remaps** tab can be "
 "used for this:"
 msgstr ""
+"또한 이는 Godot을 현재 언어에 의존하는 애셋의 버전을 오가며 사용할 수 있도록 "
+"구성하는게 가능합니다. **Remaps** 탭이 이를 위해 사용됩니다:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:48
 msgid ""
@@ -52332,7 +52426,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:52
 msgid "Converting keys to text"
-msgstr ""
+msgstr "key들을 text로 컨버팅하기"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:54
 msgid ""
@@ -52342,6 +52436,10 @@ msgid ""
 "\"MAIN_SCREEN_GREETING1\" and that key exists in the current translation, "
 "then the text will automatically be translated."
 msgstr ""
+":ref:`Button <class_Button>` 그리고 :ref:`Label <class_Label>`과 같은 컨트롤"
+"들은 만약 그 안의 text가 번역key와 동일하다면 자동적으로 번역이 적용됩니다. "
+"예로 들어, 만약 label의 text가 \"MAIN_SCREEN_GREETING1\" 이고 저 key가 현재 "
+"번역에 존재한다면, text는 자동적으로 번역이 될것입니다."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:59
 msgid ""
@@ -52349,6 +52447,8 @@ msgid ""
 "used. This will just look up the text in the translations and convert it if "
 "found:"
 msgstr ""
+"코드에서는 :ref:`Object.tr() <class_Object_method_tr>` 함수가 사용됩니다. 이"
+"것은 번역안에 있는 text를 찾고 발견되면 그것을 변환합니다:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:69
 msgid "Making controls resizable"
@@ -64309,11 +64409,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 msgid "High level multiplayer"
-msgstr ""
+msgstr "하이 레벨 멀티플레이어(High level multiplayer)"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
 msgid "High level vs low level API"
-msgstr ""
+msgstr "하이 레벨 vs 로우 레벨 API(High level vs low level API)"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
 msgid ""
@@ -64322,6 +64422,10 @@ msgid ""
 "add networking to your first nodes, skip to `Initializing the network`_ "
 "below. But make sure to read the rest later on!"
 msgstr ""
+"여기부터는 몇 가지 기본 사항과 함께, Godot에서 하이 레벨 네트워킹과 로우 레"
+"벨 네트워킹의 차이를 설명합니다. 바로 실전으로 가서 첫 노드에 네트워킹을 추가"
+"하고 싶다면, 아래의 `네트워크 초기화하기(Initializing the network)`_\\ 로 건"
+"너 뛰세요. 하지만 나중에라도 이 부분을 읽어주세요!"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
 msgid ""
@@ -64334,10 +64438,17 @@ msgid ""
 "consider Godot's high-level networking API, which sacrifices some of the "
 "fine-grained control of low-level networking for greater ease of use."
 msgstr ""
+"Godot는 항상 UDP, TCP, 그 외 SSL이나 HTTP와 같은 일부 하이 레벨 프로토콜을 통"
+"해, 일반적인 로우 레벨 네트워킹을 지원했습니다. 이 프로토콜은 유연하고 거의 "
+"모든 것에 사용될 수 있습니다. 하지만 게임 상태를 일일이 동기화하기 위해 이 프"
+"로토콜을 사용하는 일은 많은 작업이 필요합니다. 때로는 그 작업이 필요하고, 가"
+"치가 있습니다. 예를 들면 백엔드에서 맞춤 서버 구현을 작업할 때가 있죠. 하지"
+"만, 대부분의 경우, Godot의 하이 레벨 네트워킹 API를 생각하게 만들었습니다. 쉽"
+"게 쓸 수 있지만, 로우 레벨 네트워킹의 세밀한 제어를 희생하죠."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
 msgid "This is due to the inherent limitations of the low-level protocols:"
-msgstr ""
+msgstr "이는 로우 레벨 프로토콜의 고유의 한계 때문입니다:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:16
 msgid ""
@@ -64350,6 +64461,14 @@ msgid ""
 "for games. Some of this can be configured and disabled (e.g. by disabling "
 "\"Nagle's algorithm\" for the TCP connection)."
 msgstr ""
+"TCP는 패킷(Packet)이 항상 안전하게 도착하도록 보장합니다. 하지만 오류 연결 때"
+"문에 지연 시간은 점진적으로 길어집니다. 이 또한 복잡한 프로토콜입니다. 왜냐하"
+"면 무엇이 \"연결(Connection)\"인지를 이해해야 하고, 멀티플레이어 게임과 같은 "
+"애플리케이션과는 맞지 않은 목적을 이루기 위해 최적화를 해야 합니다. 패킷은 "
+"더 큰 배치(Batch)로 전송되도록 버퍼링됩니다. 그렇게 되면 전달하는 패킷 당 오"
+"버헤드(Overhead)는 줄어들고 지연 시간이 길어집니다. 이는 HTTP에는 유용하겠지"
+"만, 일반적인 게임에는 아니죠. 일부 프로토콜은 이를 설정하거나 끌 수 있습니"
+"다. (예: TCP 연결의 \"네이글 알고리즘(Nagle Algorithm)\"을 끔)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:18
 msgid ""
@@ -64360,6 +64479,12 @@ msgid ""
 "hundred bytes), so transmitting larger packets means splitting them, "
 "reorganizing them and retrying if a part fails."
 msgstr ""
+"UDP는 더 간단한 프로토콜로, 패킷을 보내기만 합니다 (즉, \"연결"
+"(Connection)\"의 개념이 없습니다). 오류 연결이 없어서 꽤 빠릅니다 (짧은 지연 "
+"시간). 하지만 패킷을 보내는 과정에서 잃을 수 있고, 잘못된 상대방이 받을 수 있"
+"습니다. 게다가, UDP의 MTU (최대 패킷 크기)는 (겨우 몇 백 바이트로) 보통 낮습"
+"니다. 따라서 더 큰 패킷을 전송하려면 패킷을 분리하고, 다시 구조화하고, 만일 "
+"일부분이 잘못되면 다시 시도해야 합니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:23
 msgid ""
@@ -64371,6 +64496,13 @@ msgid ""
 "this, most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
+"보통은, TCP를 신뢰할 수 있고 질서 있고 느리다고 생각할 수 있습니다. 반대로 "
+"UDP는 신뢰할 수 없고, 무질서하며, 빠르다고 생각하겠죠. 그 이유는 둘 간의 큰 "
+"성능 차이입니다. 종종 게임에 필요한 TCP 부분을 새로 만드는 것이 합리적이기도 "
+"합니다 (선택적인 안정성과 패킷 순서). 그러면서 원하지 않은 부분은 피할 수 있"
+"으니까요 (혼잡(Congestion)/트래픽(traffic) 제어 기능, 네이글 알고리즘 등). "
+"이 때문에 대부분의 게임 엔진은 이러한 네트워킹 구현을 제공합니다. Godot 역시 "
+"예외가 아니죠."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
 msgid ""
@@ -64379,6 +64511,10 @@ msgid ""
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
 msgstr ""
+"요약해서 말하자면, 최대한의 제어와 순수한 네트워크 프로토콜에서 모든 것을 구"
+"현하려면, 로우 레벨 네트워킹 API를 사용할 수 있습니다. 혹은 일반적으로 최적"
+"화 된 방식에서 씬 뒤로 대부분의 무거운 리프팅을 수행하는 :ref:`SceneTree(씬 "
+"트리) <class_SceneTree>`\\ 에서 하이 레벨 API를 사용할 수 있습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:28
 msgid ""
@@ -64389,12 +64525,20 @@ msgid ""
 "currently only offers WebSocket support and lacks some of the higher level "
 "features as well as raw access to low-level protocols like TCP and UDP."
 msgstr ""
+"Godot의 지원하는 플랫폼 대부분은 앞서 언급한 하이 레벨과 로우 레벨 네트워킹 "
+"기능을 거의 전부 제공합니다. 그러나 네트워킹은 항상 하드웨어와 운영체제에 따"
+"라 크게 달라지므로, 일부 기능은 특정 플랫폼에서 달라지거나 이용할 수 없을지"
+"도 모릅니다. 가장 주목할 것으로, HTML5 플랫폼은 현재로써 오직 WebSocket 지원"
+"을 제공하고 하이 레벨 기능은 부족하고, TCP 및 UDP와 같은 로우 레벨 프로토콜"
+"로 원시 접근만 지원합니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:34
 msgid ""
 "More about TCP/IP, UDP, and networking: https://gafferongames.com/post/"
 "udp_vs_tcp/"
 msgstr ""
+"TCP/IP, UDP, 네트워킹에 더 알아보세요: https://gafferongames.com/post/"
+"udp_vs_tcp/"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:37
 msgid ""
@@ -64404,6 +64548,10 @@ msgid ""
 "gafferongames.com/post/"
 "what_every_programmer_needs_to_know_about_game_networking/>`__."
 msgstr ""
+"Gaffer On Games에는 게임의 네트워크에 관한 많은 유용한 기사가 있습니다 (`여기"
+"로 <https://gafferongames.com/tags/networking>`__). 기사 중에는 포괄적인 `게"
+"임에서 네트워킹 모델 소개 <https://gafferongames.com/post/"
+"what_every_programmer_needs_to_know_about_game_networking/>`__\\ 도 있습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:41
 msgid ""
@@ -64411,6 +64559,8 @@ msgid ""
 "Godot's built-in networking, see here for an example: https://github.com/"
 "PerduGames/gdnet3"
 msgstr ""
+"Godot의 내장 네트워킹 대신 로우 레벨 네트워킹 라이브러리를 쓰고 싶다면, 여기"
+"서 예제를 확인하세요: https://github.com/PerduGames/gdnet3"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:45
 msgid ""
@@ -64420,6 +64570,10 @@ msgid ""
 "application runs on and use your servers to send spam, attack others or "
 "steal your users data if they play your game."
 msgstr ""
+"게임에 네트워킹을 추가하는 일은 책임도 따릅니다. 이 작업은 애플리케이션이 잘"
+"못되어 사기나 착취에 취약해질 수 있습니다. 게다가 공격자가 실행 중인 애플리케"
+"이션의 시스템을 손상시키고, 서버를 통해 스팸을 보내거나, 다른 이를 공격하고, "
+"게임을 하고 있던 사용자 정보를 훔칠 수도 있습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:50
 msgid ""
@@ -64427,10 +64581,13 @@ msgid ""
 "with Godot. You can of course experiment, but when you release a networked "
 "application, always take care of any possible security concerns."
 msgstr ""
+"이 일은 네트워킹에 관련되어 있고 Godot와는 관련이 없는 경우입니다. 물론 시험"
+"을 해볼 수는 있지만, 네트워크가 연결된 애플리케이션을 출시하면, 가능한 보안 "
+"문제를 항상 관리하세요."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:55
 msgid "Mid level abstraction"
-msgstr ""
+msgstr "중급 추상화(Mid level abstraction)"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:57
 msgid ""
@@ -64438,6 +64595,8 @@ msgid ""
 "network, it can be helpful to understand how the base network API for "
 "synchronization works."
 msgstr ""
+"어떻게 네트워크를 통해 게임을 동기화할 지 알아보기 전에, 기본 네트워크 API가 "
+"어떻게 동기화에 작동하는지 이해하는 것이 좋습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:59
 msgid ""
@@ -64445,6 +64604,9 @@ msgid ""
 "<class_NetworkedMultiplayerPeer>`. This object is not meant to be created "
 "directly, but is designed so that several implementations can provide it:"
 msgstr ""
+"Godot는 중급(mid level) 객체로 :ref:`NetworkedMultiplayerPeer "
+"<class_NetworkedMultiplayerPeer>`\\ 를 사용합니다. 이 객체는 바로 네트워크를 "
+"만드는 것은 아니지만, 설계를 함으로써 여러 구현 기능을 제공합니다:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:64
 msgid ""
@@ -64453,6 +64615,10 @@ msgid ""
 "On top of that, it adds methods to set a peer, transfer mode, etc. It also "
 "includes signals that will let you know when peers connect or disconnect."
 msgstr ""
+"이 객체는 :ref:`PacketPeer <class_PacketPeer>`\\ 에서 확장됩니다. 따라서 직렬"
+"화(Serialize), 데이터 보내기 및 받기에 유용한 메서드를 갖습니다. 또한 피어"
+"(Peer), 전송 모드(Transfer Mode) 등을 설정하는 메소드를 추가합니다. 그리고 시"
+"그널을 갖고 있어 언제 피어가 연결되고 끊기는지 알 수 있습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:66
 msgid ""
@@ -77028,7 +77194,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:30
 msgid "Deploy with Remote Debug"
-msgstr "원격 디버그와 함께 배포하기"
+msgstr "원격 디버그와 함께 배포"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:32
 msgid ""
@@ -77038,7 +77204,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
 msgid "Small Deploy with Network FS"
-msgstr "네트워크 파일 시스템과 함께 작게 배포하기"
+msgstr "네트워크 파일 시스템을 사용하여 작게 배포"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid ""
@@ -77079,7 +77245,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:57
 msgid "Sync Scene Changes"
-msgstr "씬 변경 사항 동기화하기"
+msgstr "씬 변경 사항 동기화"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:59
 msgid ""
@@ -77090,7 +77256,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:64
 msgid "Sync Script Changes"
-msgstr "스크립트 변경 사항 동기화하기"
+msgstr "스크립트 변경 사항 동기화"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:66
 msgid ""
@@ -78928,7 +79094,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:70
 msgid "Run"
-msgstr "실행하기"
+msgstr "실행"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:72
 msgid ""

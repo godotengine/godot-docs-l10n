@@ -1,5 +1,5 @@
 # Godot Engine Documentation in German
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alexander <adcrashday@googlemail.com>, 2018.
@@ -17,9 +17,10 @@
 # Constantin <commandr@gmx.net>, 2019.
 # DafabHoid <github@dafabhoid.de>, 2018.
 # DagobertDev <mannesdavid@protonmail.com>, 2019.
+# DarioPi <ddtyphos@gmail.com>, 2020.
 # datenbauer <d-vaupel@web.de>, 2019.
 # David <david.breier@outlook.de>, 2018.
-# Draco Drache <jan.holger.te@gmail.com>, 2019.
+# Draco Drache <jan.holger.te@gmail.com>, 2019-2020.
 # Eduard Albrecht <eddysoulo91@googlemail.com>, 2019.
 # Ettore Atalan <atalanttore@googlemail.com>, 2019.
 # Fabian Böhle <mail@fabianboehle.de>, 2019.
@@ -39,6 +40,7 @@
 # Katharina Wendel <akd002000nemerb@web.de>, 2019.
 # kdankert <k.dankert@wtnet.de>, 2018.
 # kira rose <mskirarose@gmail.com>, 2019.
+# Lee Westrich <lee.westrich@googlemail.com>, 2020.
 # Leif Bernsdorf <leif.bernsdorf@gmail.com>, 2018-2019.
 # Lennard <lefl65@gmail.com>, 2018.
 # Linus Fessler <linusfessler@gmail.com>, 2018.
@@ -78,7 +80,9 @@
 # Robin Bauknecht <robin.bauknecht@gmail.com>, 2018-2019.
 # Sam Walz <samuel.walz@gmail.com>, 2019.
 # Schweini07 <schweinthaler@gmx.at>, 2019.
+# Sebastian Franz <sebastian11@online.de>, 2020.
 # Simon Wenner <simon@wenner.ch>, 2018.
+# SK <sinos0807@gmail.com>, 2020.
 # Skayo <jonasg.cool@gmail.com>, 2018.
 # So Wieso <sowieso@dukun.de>, 2018-2019.
 # ssantos <ssantos@web.de>, 2018-2019.
@@ -97,8 +101,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-27 08:44+0100\n"
-"PO-Revision-Date: 2020-01-27 07:14+0000\n"
-"Last-Translator: Gordon Karnauka <G.Karnauka@googlemail.com>\n"
+"PO-Revision-Date: 2020-02-07 10:33+0000\n"
+"Last-Translator: Draco Drache <jan.holger.te@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -1654,14 +1658,13 @@ msgid "VR"
 msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr ":ref:`VR Anfängeranleitung <doc_vr_starter_tutorial>`"
+msgstr ""
+":ref:`VR Anfängeranleitung - Teil 1 <doc_vr_starter_tutorial_part one>`"
 
 #: ../../docs/about/docs_changelog.rst:66
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr ":ref:`VR Anfängeranleitung <doc_vr_starter_tutorial>`"
+msgstr ":ref:`VR Anfängeranleitung - Teil 2<doc_vr_starter_tutorial_part_two>`"
 
 #: ../../docs/about/docs_changelog.rst:69
 #: ../../docs/about/docs_changelog.rst:183
@@ -2062,7 +2065,6 @@ msgstr ""
 "Editors zu ändern."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -2073,7 +2075,8 @@ msgstr ""
 "Aus dem **Vorlagen**-Tab kannst Du öffentliche Projektvorlagen und Demos "
 "herunterladen, die Dir einen schnelleren Einstieg ermöglichen. Wähle dazu "
 "die zu herunterladene Projektvorlage oder Demo aus, drücke auf "
-"Herunterladen, und, sobald es fertig ist, wähle den Instalationsort aus."
+"Herunterladen, und, sobald es fertig ist, wähle den Installationsort aus. "
+"Erfahre mehr in :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
@@ -5769,13 +5772,12 @@ msgstr ""
 "verbinden. Dies erfordert einige Ergänzungen in der ``Main``-Szene:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1090
-#, fuzzy
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function of the Main node."
 msgstr ""
 "Verbinden Sie auf der Registerkarte Node das Signal ``start_game`` des HUD "
-"mit der Funktion ``new_game()``."
+"mit der Funktion ``new_game()``des Main Nodes."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1093
 msgid ""
@@ -6062,7 +6064,6 @@ msgstr ""
 "and-Move-Eingabestil."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -6071,27 +6072,33 @@ msgid ""
 "input. In the \"Project Settings\" under *Input Devices* and *Pointing*, set "
 "*Emulate Touch From Mouse* to \"On\"."
 msgstr ""
-"Standardmäßig emuliert Godot Mauseingaben von Berührungseingaben, was "
-"bedeuted das alles was programmiert ist auf Mauseingaben zu reagieren auch "
-"von Berührungseingaben ausgelöst wird"
+"Standardmäßig emuliert Godot Mauseingaben von Berührungseingaben. Das "
+"bedeutet, dass alles, was darauf programmiert ist durch einen Maus-Event "
+"ausgelöst zu werden, auch bei Berührungen passiert. Godot kann auch "
+"Berührungseingaben von Mauseingaben emulieren. Das werden wir auch brauchen, "
+"nachdem wir auf Berührungseingaben gewechselt sind, um unser Spiel weiter an "
+"unserem Computer zu spielen. Setze dazu in den \"Projekt-Einstellung\" unter "
+"*Input Devices* und *Pointing* *Emulate Touch From Mouse* auf \"An\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:39
-#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to *Display*, then click on *Window*. "
 "In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
-"Bevor wir die Input-Methode ändern, gehen wir in den Projekteinstellungen zu "
-"*Display* und *Window*. Setze bei *Stretch* den *Mode* auf \"2d\" und "
-"*Aspect* auf \"keep\". Das sorgt dafür, dass das Spiel sich auf "
-"unterschiedlich großen Monitoren richtig vergrößert bzw. verkleinert."
+"Zudem wollen wir sichergehen, dass das Spiel auf unterschiedlich großen "
+"Bildschirmen gleich dargestellt bzw. skaliert wird. Dazu gehen wir in die "
+"Projekteinstellungen unter *Display* und klicken auf *Window*. In den "
+"*Stretch*-Optionen angekommen, änderst du *Mode* zu \"2D\" und *Aspect* zu "
+"\"keep\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
 msgid ""
 "Since we are already in the *Window* settings, we should also set under "
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
+"Da wir schon in den *Window* Einstellungen sind, sollten wir auch unter "
+"*Handheld* die *Orientation* auf *portrait* stellen."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
@@ -6113,9 +6120,8 @@ msgstr ""
 "aufzeigen, was wir geändert haben:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:129
-#, fuzzy
 msgid "Setting a main scene"
-msgstr "Die Szene einrichten"
+msgstr "Die Hauptszene festlegen"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
 msgid ""
@@ -6123,6 +6129,9 @@ msgid ""
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
 "by clicking the folder icon and selecting it."
 msgstr ""
+"Die Hauptszene ist diejenige, in der Ihr Spiel startet. Setzen Sie in * "
+"Projekt -> Projekteinstellungen -> Anwendung -> Ausführen * * Hauptszene * "
+"auf \"Main.tscn\", indem Sie auf das Ordnersymbol klicken und es auswählen."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
@@ -6166,13 +6175,12 @@ msgid "Export presets"
 msgstr "Exportvoreinstellungen"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
 msgstr ""
-"Anschließend kannst Du die Exporteinstellungen konfigurieren, indem Du auf "
-"*Projekt -> Exportieren* klickst:"
+"Anschließend kannst du die Exporteinstellungen konfigurieren, indem Du auf "
+"*Projekt -> Exportieren* klickst."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:158
 msgid ""
@@ -6335,14 +6343,15 @@ msgstr ""
 "festlegen."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:230
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
 "to *Screen* and set *Orientation* to \"Portrait\"."
 msgstr ""
 "Jetzt ist alles für den Export fertig. Klicke auf *Projekt -> Exportieren* "
-"und füge eine Voreinstellung für Android hinzu (siehe oben)."
+"und füge eine Voreinstellung für Android hinzu (siehe oben).  Wähle die "
+"Voreinstellungen für Android aus und gehe in den *Options* unter *Screen* "
+"und setze *Orientation* auf \"Portrait\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""
@@ -7707,7 +7716,7 @@ msgstr "Ein Hauptmenü."
 msgid "A game UI with a health bar, energy bar, bomb and money counters."
 msgstr ""
 "Die Benutzeroberfläche eines Spiels, mit Lebensbalken, Energiebalken, "
-"Bomben- und Geldzähler. "
+"Bomben- und Geldzähler."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
 msgid ""
@@ -7828,13 +7837,12 @@ msgstr ""
 "als wiederverwendbare Szenen speichern."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
-#, fuzzy
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
-"Vorlagen Szenen für wiederverwendbare Komponente gestalten und spezifische "
-"Komponente erstellen die von diesen Vorlagen abstammen"
+"Erstelle Vorlagenszenen für wiederverwendbare Komponenten und erstelle "
+"spezifische Komponenten, die von deinen Basisszenen erben."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -7850,13 +7858,12 @@ msgstr ""
 "sie ganz einfach wiederverwendbar machen, wie unten gezeigt."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
-#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
-"Die Dateien findest du in Godot. Die Graphik sieht sauberer als beim groben "
-"Entwurf aus, aber sie ist immernoch lediglich ein Platzhalter"
+"Die Dateien findest du in Godot. Die Grafik sieht sauberer als beim groben "
+"Entwurf aus, aber sie ist lediglich immernoch ein Platzhalter."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -7881,7 +7888,6 @@ msgstr ""
 "Hier sind meine drei Faustregeln, wie man die richtigen Behälter findet:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
-#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
@@ -7889,23 +7895,21 @@ msgid ""
 msgstr ""
 "Unterteile die Benutzeroberfläche in verschachtelte Kästen, vom Größten, der "
 "alles umfasst, bis zum Kleinsten, der ein einzelnes Element beinhaltet, wie "
-"eine Leiste mit ihrer Beschriftung, ein Panel oder eine Schaltfläche"
+"eine Leiste mit ihrer Beschriftung, ein Panel oder eine Schaltfläche."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
-#, fuzzy
 msgid "If there's some padding around an area, use a ``MarginContainer``."
 msgstr ""
-"Wenn Abstand um eine Fläche eingehalten werden soll, verwende einen "
-"``MarginContainer``"
+"Wenn ein gewisser Abstand um eine Fläche eingehalten werden soll, verwende "
+"einen ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
-#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
 "Wenn die Elemente in Zeilen oder Spalten angeordnet sind, verwende einen "
-"``HBoxContainer`` oder ``VBoxContainer``"
+"``HBoxContainer`` oder ``VBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
@@ -7933,10 +7937,10 @@ msgstr ""
 "``CenterContainer``s mittig aus."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
-#, fuzzy
 msgid "Interface building blocks, broken down using the three rules of thumb."
 msgstr ""
-"Bausteine der Benutzeroberfläche, aufgebrochen mithilfe der drei Faustregeln"
+"Bausteine der Benutzeroberfläche, zusammengefasst mithilfe der drei "
+"Faustregeln."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -7953,13 +7957,12 @@ msgid "Prepare the Main Menu scene"
 msgstr "Vorbereitung der Hauptmenü-Szene"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
-#, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
 "Erstellen wir das Hauptmenü. Wir bauen es in einer einzigen Szene. Um eine "
-"leere Szene zu erstellen, klicke auf das Menü Szene -> Neue Szene."
+"leere Szene zu erstellen, klicke auf das Menü **Szene -> Neue Szene**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
 msgid ""
@@ -8003,13 +8006,12 @@ msgid "Margin Bottom: *80*"
 msgstr "Margin Bottom: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
-#, fuzzy
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
 "Wir wollen, dass der Container das ganze Fenster einnimmt. Öffne das Menü "
-"``Layout`` im Ansichtsfenster und wähle die letzte Option aus, ``Full Rect``."
+"**Layout** im Ansichtsfenster und wähle die letzte Option aus, **Full Rect**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
 msgid "Add the UI sprites"
@@ -8024,27 +8026,22 @@ msgstr ""
 "``TextureRect``-Nodes. Wir brauchen:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
-#, fuzzy
 msgid "the title or logo,"
-msgstr "Den Titel oder das Logo"
+msgstr "Den Titel oder das Logo,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
-#, fuzzy
 msgid "the three text options as individual nodes,"
-msgstr "Die drei Textoptionen als einzelne Nodes"
+msgstr "die drei Textoptionen als einzelne Nodes,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
-#, fuzzy
 msgid "the version note,"
-msgstr "Die Versionsangabe"
+msgstr "die Versionsangabe"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-#, fuzzy
 msgid "and the main menu’s illustration."
-msgstr "Und die Illustration des Hauptmenüs"
+msgstr "und die Darstellung des Hauptmenüs."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press ``Meta+A`` on your keyboard. Start to "
 "type ``TextureRect`` to find the corresponding node and press enter. With "
@@ -8053,11 +8050,10 @@ msgid ""
 msgstr ""
 "Drücke auf die Schaltfläche ``Add Node`` oder drücke ``Meta+A`` auf der "
 "Tastatur. Gib ``TextureRect`` ein, um den entsprechenden Node zu finden und "
-"drücke Eingabe. Wähle den neuen Node aus und drücke fünf Mal ``Meta+D``, um "
-"fünf zusätzliche Instanzen zu erzeugen."
+"drücke Enter. Wähle den neuen Node aus und drücke fünf Mal ``Meta+D``, um "
+"fünf zusätzliche Instanzen davon zu erzeugen."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
 "property and click **[empty] > Load**. A file browser opens and lets you "
@@ -8069,9 +8065,8 @@ msgstr ""
 "Texture-Slot geladen wird."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
-#, fuzzy
 msgid "The file browser lets you find and load textures."
-msgstr "Die Dateiauswahl lässt dich Texturen finden und laden"
+msgstr "Die Dateiauswahl lässt dich Texturen finden und laden."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
 msgid ""
@@ -8088,9 +8083,8 @@ msgstr ""
 "etwas unordenlich aus."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
-#, fuzzy
 msgid "The six nodes with textures loaded."
-msgstr "Die sechs Nodes, mit geladenen Texturen"
+msgstr "Die sechs Nodes, mit geladenen Texturen."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
 msgid ""
@@ -8140,16 +8134,14 @@ msgstr ""
 "einen ``CenterContainer`` für die Illustration zur Rechten."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
-#, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr ""
 "Du solltest vier verschachtelte Container haben und den TextureRect-Node "
-"nebendran"
+"nebendran."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
@@ -8170,17 +8162,14 @@ msgid "We're left with two problems to solve:"
 msgstr "Wir müssen noch zwei Probleme lösen:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid "The characters on the right aren't centered."
-msgstr "Die Charaktere rechts sind nicht mittig"
+msgstr "Die Charaktere rechts sind nicht mittig ausgerichtet."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-#, fuzzy
 msgid "There's no space between the logo and the other UI elements."
-msgstr "Zwischen dem Logo und den anderen Oberflächenelementen ist kein Platz"
+msgstr "Zwischen dem Logo und den anderen Oberflächenelementen ist kein Platz."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "
@@ -8200,16 +8189,14 @@ msgstr ""
 "Das Element wird automatisch zentriert."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
-#, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer."
 msgstr ""
-"Der Charakter-Node richtet sich mittig in der rechten Bildschirmhälft aus "
-"sobald du ihn in dem CenterContainer platzierst"
+"Der Charakter-Node richtet sich mittig in der rechten Bildschirmhälft aus, "
+"sobald du ihn in dem CenterContainer platzierst."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
@@ -8222,21 +8209,19 @@ msgstr ""
 "letzten Container mit seinen size flags verwenden. Wähle den "
 "``VBoxContainer`` und drücke ``Meta+A``, um einen neuen Node darin "
 "einzufügen. Füge einen zweiten ``VBoxContainer`` hinzu und nenne ihn "
-"\"MenuOptions\". Wähle alle drei Menüpunkte,  ``Continue``, ``NewGame`` und "
-"``Options``, und ziehe sie in den neuen ``VBoxContainer``. Das Layout der UI "
-"sollte sich, wenn überhaupt, kaum ändern."
+"\"MenuOptions\". Selektiere die drei Menüpunkte ``Continue``, ``NewGame`` "
+"und ``Options``, und ziehe sie in den neuen ``VBoxContainer``. Das Layout "
+"der UI sollte sich, wenn überhaupt, kaum ändern."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
 msgstr ""
 "Platziere den neuen Container zwischen die anderen beiden Nodes, um das "
-"Layout der UI zu erhalten"
+"Layout der UI zu beizubehalten."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:248
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -8248,30 +8233,27 @@ msgid ""
 msgstr ""
 "Nachdem wir die Menüpunkte zusammengefasst haben, können wir ihren Container "
 "anweisen, so viel senkrechten Raum wie möglich einzunehmen. Wähle den Node "
-"``MenuOptions``.  Gehe im Inspektor herunter zu der Kategorie ``Size "
-"Flags``. Klicke auf das Feld rechts neben der Eigenschaft ``Vertical`` und "
-"kreuze ``Expand`` sowie ``Fill`` an. Der Container dehnt sich aus und nimmt "
-"den ganzen verfügbaren senkrechten Raum ein. Aber er berücksichtigt seine "
+"``MenuOptions``. Gehe im Inspektor herunter zu der Kategorie ``Size Flags``. "
+"Klicke auf das Feld rechts neben der Eigenschaft ``Vertical`` und kreuze "
+"``Expand`` sowie ``Fill`` an. Der Container dehnt sich aus und nimmt den "
+"ganzen verfügbaren senkrechten Raum ein. Dabei berücksichtigt er seine "
 "Nachbarn, die Elemente ``Logo`` und ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:256
-#, fuzzy
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the **Alignment** property to **Center**."
 msgstr ""
 "Um die Nodes im ``VBoxContainer`` zu zentrieren, gehe ganz nach oben im "
-"Inspektor und stelle die Eigenschaft ``Alignment`` auf ``Center``."
+"Inspektor und stelle die Eigenschaft **Alignment** auf **Center**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
-#, fuzzy
 msgid "The menu options should center vertically in the UI's left column."
 msgstr ""
-"Die Menüpunkte sollten in sich in der linken Spalte der Oberfläche sekrecht "
-"mittig ausrichten"
+"Die Menüpunkte sollten sich in der linken Spalte der Oberfläche senkrecht "
+"und mittig ausrichten."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:263
-#, fuzzy
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the **Custom Constants** category below **Size Flags**, and click the "
@@ -8280,21 +8262,21 @@ msgid ""
 "between menu options."
 msgstr ""
 "Zum Abschluss fügen wir Abstandshalter zwischen den Menüpunkten hinzu. "
-"Klappe die Kategorie ``Custom Constants``  unter ``Size Flags`` auf klick "
-"auf das Feld neben dem Parameter ``Separation``. Setze es auf 30. Sobald du "
-"Eingabe drückst, wird die Eigenschaft ``Separation`` wirksam und Godot fügt "
-"30 Pixel zwischen den Menüpunkten ein."
+"Klappe die Kategorie **Custom Constants** unter **Size Flags** auf klick auf "
+"das Feld neben dem Parameter **Separation**. Setze es auf 30. Sobald du "
+"Enter drückst, wird die Eigenschaft **Separation** wirksam und Godot fügt 30 "
+"Pixel zwischen den Menüpunkten ein."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
-#, fuzzy
 msgid "The final interface."
-msgstr "Die fertige Oberfläche"
+msgstr "Die fertige Oberfläche."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr ""
-"Ohne eine einzige Zeile Code haben wir ein ordentliches und dynamisches Menü."
+"Ohne eine einzige Zeile Code zu schreiben, haben wir ein ordentliches und "
+"dynamisches Menü."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:276
 msgid ""
@@ -8304,9 +8286,9 @@ msgid ""
 "bars and item counters."
 msgstr ""
 "Glückwunsch, dass du es so weit geschafft hast! Du kannst das fertige Menü "
-"herunterladen und mit deinem vergleichen:  :download:`ui_main_menu_design."
-"zip <files/ui_main_menu_design.zip>`. In der nächsten Anleitung wirst du ein "
-"eine Spieleoberfläche mit Leisten und Gegenstandszählern erstellen."
+"herunterladen und mit deinem vergleichen: :download:`ui_main_menu_design.zip "
+"<files/ui_main_menu_design.zip>`. In der nächsten Anleitung wirst du eine "
+"Spieleoberfläche mit Leisten und Gegenstandszählern erstellen."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
 msgid ""
@@ -8348,7 +8330,6 @@ msgstr ""
 "diesem Zweck vergrößert und verkleinert Godot das gesamte Fenster."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:301
-#, fuzzy
 msgid ""
 "You can change the scale mode in the project settings: click **Project > "
 "Project Settings** in the top menu. In the window's left column, look for "
@@ -8358,15 +8339,16 @@ msgid ""
 "information, see :ref:`doc_multiple_resolutions`."
 msgstr ""
 "Du kannst den Skalierungsmodus in den Projekteinstellungen ändern: klicke "
-"auf Projekt -> Projekteinstellungen.  Suche in der linken Fensterspalte nach "
-"der Kategorie Display. Klicke auf das Untermenü Window. Auf der rechten "
-"Fensterseite findest du einen Punkt namens Stretch. Die drei Einstellungen "
-"Mode, Aspect und Shrink steuern die Bildschirmgröße. Siehe :ref:"
-"`doc_multiple_resolutions` für weitere Informationen."
+"auf Projekt -> Projekteinstellungen. Suche in der linken Fensterspalte nach "
+"der Kategorie **Display**. Klicke auf das Untermenü **Window**. Auf der "
+"rechten Fensterseite findest du einen Punkt namens **Stretch**. Die drei "
+"Einstellungen **Mode**,** Aspect** und **Shrink** steuern die "
+"Bildschirmgröße. Siehe :ref:`doc_multiple_resolutions` für weitere "
+"Informationen."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
 msgid "Design the GUI"
-msgstr "Entwurf der Oberfläche"
+msgstr "Gestaltung der Oberfläche"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
 msgid ""
@@ -8375,9 +8357,9 @@ msgid ""
 "energy bar, and bomb and emerald counters. By the end of this tutorial, "
 "you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
-"Jetzt da du die Grundlagen drauf hast, sehen wir uns an, wie wir die "
-"Graphische Benutzeroberfläche (engl. Graphical User Interface, kurz GUI) aus "
-"wiederverwendbaren Bausteinen erzeugen können: einem Lebensleiste, einer "
+"Jetzt, da du die Grundlagen drauf hast, sehen wir uns an, wie wir die "
+"grafische Benutzeroberfläche (engl. Graphical User Interface, kurz GUI) aus "
+"wiederverwendbaren Bausteinen erzeugen können: einer Lebensleiste, einer "
 "Energieleiste, einer Bombe und einem Smaragdzähler. Am Ende dieser Anleitung "
 "wirst du eine fertige GUI haben, die mit GDScript oder Visualscript "
 "gesteuert werden kann:"
@@ -8956,7 +8938,6 @@ msgstr ""
 "stimmt so noch nicht"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -8964,11 +8945,12 @@ msgid ""
 "resize its left edge a little bit to add some padding between the left edge "
 "of the ``Background`` and the text."
 msgstr ""
-"Lass uns nun die Eigenschaften der ``Number``'s Ausrichtung ändern um sie "
-"mittig links im ``Background`` anzuordnen. Wähle die ``Number`` Node, setze "
-"ihre ``Align`` Eigenschaft auf links und die ``VAlign`` Eigenschaft auf "
-"zentriert. Ändere dann die Größe der linken Kante ein bisschen, um etwas "
-"Abstand zwischen den linken Rand des ``Background``s und dem Text einzufügen."
+"Lassen Sie uns nun die Eigenschaften der ``Number``s Ausrichtung ändern um "
+"sie mittig links im ``Background`` anzuordnen. Wähle Sie die ``Number`` "
+"Node, setzen Sie ihre ``Align`` Eigenschaft auf links und die ``VAlign`` "
+"Eigenschaft auf zentriert. Änderen Sie dann die Größe der linken Kante ein "
+"bisschen, um etwas Abstand zwischen den linken Rand des ``Background``s und "
+"dem Text einzufügen."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
 msgid "The Number node aligned to the left and centre"
@@ -9996,16 +9978,28 @@ msgid ""
 "to set everything up and prepare the game session. Learn more about _ready: :"
 "doc:`scripting_continued`"
 msgstr ""
+"Wenn du eine Szene im Spiel öffnest, kreiert Godot Nodes einer nach der "
+"anderen, in der Reihenfolge des Szenen Reiters, von oben nach unten. `GUI` "
+"und `Player` sind nicht teil des selben Node-Zweiges. Um sicher zu stellen, "
+"dass beide existieren, wenn wir auf sie zugreifen, benutzen wir die `_ready` "
+"Funktion. Godot führt `_ready` genau dann aus, wenn es alle Nodes geladen "
+"hat, bevor das Spiel startet. Es ist die perfekte Funktion um alles "
+"einzustellen und die Spiel Sitzung vorzubereiten. Mehr zu _ready: :doc:"
+"`scripting_continued`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
 msgid "Update health with a signal when the player takes a hit"
 msgstr ""
+"Aktualisiere die Lebensanzeige mithilfe eines Signals, wenn der Spieler "
+"getroffen wird"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:190
 msgid ""
 "Our GUI is ready to receive the ``health`` value updates from the "
 "``Player``. To achieve this we're going to use **signals**."
 msgstr ""
+"Unserer GUI ist nun bereit um den neuen ``health``-Wert des ``Spielers`` zu "
+"empfangen. Um dies zu erreichen werden wir Gebrauch von **Signals** machen."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:195
 msgid ""
@@ -10014,6 +10008,11 @@ msgid ""
 "can also create your own using the `signal` keyword. On the `Player` node, "
 "you'll find two signals we created for you: `died` and `health_changed`."
 msgstr ""
+"Es gibt viele nützliche eingebaute Signale wie `enter_tree` und `exit_tree`, "
+"die alle Knoten aussenden, wenn sie jeweils erzeugt und zerstört werden. Du "
+"kannst auch deine eigenen mit dem Schlüsselwort `signal` erstellen. Auf dem "
+"Node `Player` findest du zwei Signale, die wir erstellt haben: `died` und "
+"`health_changed`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:197
 msgid ""
@@ -10026,6 +10025,15 @@ msgid ""
 "a second and you'll likely break the game because of the order in which the "
 "code runs."
 msgstr ""
+"Warum holen wir nicht direkt den ``Player`` Knoten in der ``_process`` "
+"Funktion und betrachten den Health-Wert? Wenn wir auf diese Weise auf Nodes "
+"zugreifen, entsteht eine enge Kopplung zwischen ihnen. Wenn du es sparsam "
+"machst, kann es funktionieren. Wenn das Spiel größer wird, hast du "
+"möglicherweise viel mehr Verbindungen. Wenn du auf diese Weise Nodes "
+"erhältst, wird es schnell komplex. Nicht nur das: Du musst in der Funktion "
+"``_process``` ständig auf die Zustandsänderung achten. Diese Überprüfung "
+"findet 60 Mal pro Sekunde statt und kann das Spiel verlangsamen, wenn es in "
+"einem großen Spiel mit zu vielen Verbindungen passiert."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:206
 msgid ""
@@ -10036,6 +10044,11 @@ msgid ""
 "information. And you will update the state of your connected node *right "
 "after* the change happened."
 msgstr ""
+"Auf einem bestimmten Frame kannst du dir die Eigenschaft eines anderen Nodes "
+"ansehen, *vor dessen Aktualisierung*: Du erhältst einen Wert aus dem letzten "
+"Frame. Dies führt zu obskuren Bugs, die schwer zu beheben sind. Mit Signalen "
+"kann man das verhindern: Ein Signal wird garantiert direkt nach der Änderung "
+"mit dem neuen Wert aufgerufen und verhindert damit diese Fehler."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
 msgid ""
@@ -10048,6 +10061,15 @@ msgid ""
 "gameprogrammingpatterns.com/observer.html>`_. The `full book <http://"
 "gameprogrammingpatterns.com/contents.html>`_ is available online for free."
 msgstr ""
+"Das Observer-Pattern, von dem die Signals abgeleitet sind, fügt den "
+"einzelnen Nodes trotzdem eine kleine Menge an Kopplung hinzu. Aber es "
+"erzeugt im Allgemeinen nicht so viel Kopplung und ist sicherer als der "
+"direkte Zugriff auf Funktionen anderer Klassen bzw. Nodes. Es kann in "
+"Ordnung sein, dass Elternknoten Werte von den Kindknoten erhalten, aber bei "
+"der Kommunikation von Knoten in unterschiedlichen Verzweigungen sollten "
+"Signals bevorzugt werden. Im Buch \"Game Programming Patterns\", das online "
+"kostenlos verfügbar ist, ist das Observer Pattern noch detaillierter "
+"beschrieben: <http://gameprogrammingpatterns.com/observer.html>"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
 msgid ""
@@ -10056,24 +10078,32 @@ msgid ""
 "and click on the Node tab. This is the place to connect nodes to listen to "
 "the one you selected."
 msgstr ""
+"In diesem Sinne verbinden wir das ``GUI`` mit dem ``Player``. Klicke auf den "
+"Knoten ``Player`` im Szene-Fenster, um ihn auszuwählen. Gehen Sie zum "
+"Inspektor und klicken Sie auf das Fenster \"Node\". Dies ist der Ort, an dem "
+"man Knoten verbinden kann, um den von dir ausgewählten Knoten anzuhören."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:224
 msgid "The first section lists custom signals defined in ``Player.gd``:"
 msgstr ""
+"Der erste Abschnitt zeigt die eigenen Signale, welche in ``Player.gd`` "
+"definiert sind."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:226
 msgid ""
 "``died`` is emitted when the character died. We will use it in a moment to "
 "hide the UI."
 msgstr ""
+"``died`` wird aufgerufen sobald der Spieler stirbt, Wir benutzen es gleich "
+"um die UI zu verbergen."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:228
 msgid "``health_changed`` is emitted when the character got hit."
-msgstr ""
+msgstr "``health_changed`` wird aufgerufen, sobald der Spieler Schaden nimmt."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:232
 msgid "We're connecting to the health\\_changed signal"
-msgstr ""
+msgstr "Wir verbinden das health_changed Signal."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
 msgid ""
@@ -10085,26 +10115,38 @@ msgid ""
 "too many arguments using this window as they're less convenient than doing "
 "it from the code."
 msgstr ""
+"Wähle ``health_changed`` aus und klicke auf \"Connect\" unten rechts im "
+"Fenster um das \"Signal Verbinden\"-Fenster zu öffnen. Links kannst du den "
+"Node auswählen, der auf das Signal reagieren soll. Wähle hier die ``GUI``-"
+"Node aus. Rechts kannst du zusätzliche Werte auswählen, die mit dem Signal "
+"gesendet werden sollen. Wir haben uns allerdings bereits in ``Player.gd`` "
+"darum gekümmert. Ich empfehle dir, vorallem bei mehreren Argumenten, die "
+"Argumente lieber im Code als in diesem Fenster zu definieren, da es im Code "
+"einfacher ist."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:244
 msgid "The Connect Signal window with the GUI node selected"
-msgstr ""
+msgstr "Das \"Connect Signal\"-Fenster mit der ausgewählten GUI Node"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:248
 msgid ""
 "You can optionally connect nodes from the code. However doing it from the "
 "editor has two advantages:"
 msgstr ""
+"Man kann optional auch Signale im Code verbinden. Dies jedoch im Editor zu "
+"tun hat zwei Vorteile:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
 msgid "Godot can write new callback functions for you in the connected script"
 msgstr ""
+"Godot kann automatisch Funktionen in dem Script erstellen, mit dem es "
+"verbunden ist"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:251
 msgid ""
 "An emitter icon appears next to the node that emits the signal in the Scene "
 "dock"
-msgstr ""
+msgstr "Ein \"Emitter\"-Icon erscheint neben der Node im Szenen-Fenster."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
 msgid ""
@@ -10117,6 +10159,15 @@ msgid ""
 "creates the method inside the ``GUI`` node. The script editor opens with the "
 "cursor inside a new ``_on_Player_health_changed`` function."
 msgstr ""
+"Am unteren Rand des Fensters finden Sie den Pfad zu dem von Ihnen "
+"ausgewählten Knoten. Wir sind an der zweiten Zeile \"Methode im Knoten\" "
+"interessiert. Dies ist die Methode auf dem ``GUI``` Knoten, die aufgerufen "
+"wird, wenn das Signal ausgegeben wird. Dieses Verfahren empfängt die mit dem "
+"Signal gesendeten Werte und ermöglicht deren Verarbeitung. Rechts gibt es "
+"einen Button \"Make Function\", der standardmäßig eingeschaltet ist. Klicke "
+"auf den Button Verbinden am unteren Rand des Fensters. Godot erstellt die "
+"Methode innerhalb des ``GUI`` Knoten. Der Skripteditor öffnet sich mit dem "
+"Cursor innerhalb einer neuen ``_on_Player_health_changed`` Funktion."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:265
 msgid ""
@@ -10125,6 +10176,10 @@ msgid ""
 "method already, the \"Make Function\" option will keep it. You may replace "
 "the name with anything you'd like."
 msgstr ""
+"Wenn eine Node im Editor verbunden wird, generiert Godot eine Methode nach "
+"dem folgenden Musster:\n"
+"``_on_EmitterName_signal_name``. Falls die Methode bereits existiert, bleibt "
+"die \"Erstelle Funktion\". Der Name kann nach belieben verändert werden."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
 msgid "Godot writes the callback method for you and takes you to it"
@@ -82782,6 +82837,8 @@ msgid ""
 "`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
 "vJC011lYw/videos>`_"
 msgstr ""
+"`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
+"vJC011lYw/videos>`_"
 
 #: ../../docs/community/tutorials.rst:52
 msgid ""

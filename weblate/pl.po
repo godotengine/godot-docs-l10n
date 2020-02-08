@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Polish
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # ᅚc <silenltypl@gmail.com>, 2018.
@@ -7,12 +7,14 @@
 # Adam Jankowski <adamjankowski1000@gmail.com>, 2019.
 # Andrzej <impar.andrzej@gmail.com>, 2018.
 # Antek Karaś <antos.karas@gmail.com>, 2019.
+# Artur Maciąg <arturmaciag@gmail.com>, 2020.
 # Bartosz Stasiak <bs97086@amu.edu.pl>, 2019.
 # beetbeet <hellobeetbeet@gmail.com>, 2019.
 # Daniel Kulas <danielkulas27@gmail.com>, 2019.
 # Dariusz Król <rexioweb@gmail.com>, 2018-2019.
 # Dariusz Siek <dariuszynski@gmail.com>, 2018.
 # Dominik Szaradowski <d.szaradowski@gmail.com>, 2020.
+# Garreciq <adamzygiel@gmail.com>, 2020.
 # Igor <igor.gielzak@gmail.com>, 2018.
 # Jacek Witkowski <jacek_witkowski@wp.pl>, 2018.
 # Jakub Korsak <jakub.korsak@protonmail.com>, 2020.
@@ -34,6 +36,7 @@
 # Saran <saran@op.pl>, 2018.
 # Sebastian Pasich <sebastian.pasich@gmail.com>, 2018-2019.
 # silicius <silicius42@gmail.com>, 2018.
+# Spamowy Mail <spamowy15@gmail.com>, 2020.
 # Szymon Nowakowski <smnbdg13@gmail.com>, 2019.
 # Tomek <kobewi4e@gmail.com>, 2018-2020.
 # Zamulacz <mcichocki@protonmail.com>, 2019.
@@ -43,8 +46,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-27 08:44+0100\n"
-"PO-Revision-Date: 2020-01-23 15:05+0000\n"
-"Last-Translator: Dominik Szaradowski <d.szaradowski@gmail.com>\n"
+"PO-Revision-Date: 2020-02-06 09:47+0000\n"
+"Last-Translator: Garreciq <adamzygiel@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -64,8 +67,8 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"Dokumentacja Godota jest dostępna w wielu językach i wersjach. Rozwiń panel "
-"\"Czytaj dokumentację\" u dołu paska bocznego aby wyświetlić listę."
+"Dokumentacja programu Godot jest dostępna w wielu językach oraz wersjach. "
+"Rozwiń panel \"Czytaj Dokumenty\" na dole menu aby dotrzeć do listy."
 
 #: ../../docs/index.rst:10
 msgid ""
@@ -104,9 +107,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
-"Obecnie tłumaczenia dla języków innych niż angielski są dostępne jedynie dla "
-"\"najnowszych\" (rozwojowych) gałęzi, powinny jednak wystarczyć do nauki "
-"obsługi stabilnych wersji Godot'a."
+"Obecnie, tłumaczenia z lokalizacją językową są dostępne jedynie dla "
+"\"najnowszych\" (niestabilnych) gałęzi, jednak powinny być wystarczające, by "
+"nauczyć się obsługi stabilnych wersji Godot'a."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -116,11 +119,10 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
-"Witaj w oficjalnej dokumentacji Godota - współtworzonego przez społeczność, "
-"darmowego i otwartoźródłowego silnika do tworzenia gier 2D i 3D! "
-"Początkującym zalecamy zapoznanie się z :ref:`wprowadzeniem "
-"<doc_about_intro>`, gdzie znajduje się zarys tego, czego mogą się z niej "
-"dowiedzieć."
+"Witamy w oficjalnej dokumentacji silnika Godot, darmowego i napędzanego "
+"przez społeczność Open Source silnika gier 2D i 3D! Początkującym zalecamy "
+"zapoznanie się ze :ref:`stroną wprowadzającą <doc_about_intro>`, aby "
+"mieć ogólne pojęcie o czym ta dokumentacja traktuje."
 
 #: ../../docs/index.rst:34
 msgid ""
@@ -349,7 +351,7 @@ msgstr ""
 "3D z poziomu ujednoliconego interfejsu. Dzięki kompleksowemu zestawowi "
 "narzędzi, użytkownicy mogą skupić się na tworzeniu gier, bez konieczności "
 "odkrywania na nowo Ameryki. Ponadto, za pomocą jednego kliknięcia możesz "
-"wyeksportować projekt na wiele platform, w tym na najpopularnejsze systemy "
+"wyeksportować projekt na wiele platform, w tym na najpopularniejsze systemy "
 "na komputery stacjonarne (Linux, macOS, Windows) i mobilne (Android i iOS), "
 "jak również platformę webową (HTML5)."
 
@@ -1281,15 +1283,14 @@ msgid "Why does Godot not use STL (Standard Template Library)"
 msgstr "Dlaczego Godot nie używa STL (standard Template Library)"
 
 #: ../../docs/about/faq.rst:291
-#, fuzzy
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
-"Jak wiele innych bibliotek (Qt na przykład), Godot nie używa STL. Uważamy, "
-"że STL jest świetną bibllioteką do zastosowań ogólnych, ale mieliśmy "
-"specjalne wymagania dla Godot'a."
+"Jak wiele innych bibliotek (np. Qt), Godot nie używa STL. Uważamy, że STL "
+"jest świetną biblioteką do zastosowań ogólnych, ale mieliśmy specjalne "
+"wymagania dla Godot'a."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
@@ -1306,6 +1307,11 @@ msgid ""
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"Większość naszych kontenerów spełnia specjalne potrzeby, na przykład Vector, "
+"który korzysta z funkcji kopiowania podczas zapisu i my używamy go do "
+"przekazywania danych, lub system RID, który wymaga czasu dostępu O (1) do "
+"wydajności. Podobnie, nasze implementacje hash map zostały zaprojektowane w "
+"celu płynnej integracji z wewnętrznymi typami silników."
 
 #: ../../docs/about/faq.rst:297
 msgid ""
@@ -1370,11 +1376,10 @@ msgstr ""
 "mniejsze rozmiary plików binarnych, przy niewielkim spadku wydajności."
 
 #: ../../docs/about/faq.rst:320
-#, fuzzy
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
-"Dlaczego Godot nie zmusza użytkowników do implementowania DoD (Data oriented "
-"Design)?"
+"Dlaczego Godot nie zmusza użytkowników do implementacji DoD (projektowania "
+"zorientowanego na dane)?"
 
 #: ../../docs/about/faq.rst:322
 msgid ""
@@ -1526,9 +1531,8 @@ msgid "Internationalization"
 msgstr "Umiędzynarodowienie"
 
 #: ../../docs/about/docs_changelog.rst:45
-#, fuzzy
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr "Lokalizacja"
+msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:48
 #: ../../docs/about/docs_changelog.rst:168
@@ -1541,9 +1545,8 @@ msgid "Your First Shader Series:"
 msgstr "Seria \"Twój pierwszy shader\":"
 
 #: ../../docs/about/docs_changelog.rst:52
-#, fuzzy
 msgid ":ref:`doc_what_are_shaders`"
-msgstr " :ref:`Shadery przestrzenne <doc_spatial_shader>`"
+msgstr ":ref:`doc_what_are_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:53
 #, fuzzy
@@ -2090,6 +2093,12 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
+"Na samym końcu musisz wybrać, z którego renderera będziesz korzystać (OpenGL "
+"ES 3.0 czy OpenGL ES 2.0). By pomóc ci w wyborze zalety i wady każdego z "
+"nich są opisanie, możesz przejść do :ref:`doc_gles2_gles3_differences` po "
+"więcej szczegółów. Pamiętaj, że możesz zmienić backend w ustawieniach "
+"projektu, jeśli zmienisz zdanie w trakcie tworzenia projektu. Dla tego "
+"tutorialu każdy backend jest w porządku."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 #, fuzzy
@@ -2457,6 +2466,8 @@ msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
+"Otwórz projekt, który utworzyłeś w :ref:`doc_intro_to_the_editor_interface`, "
+"lub stwórz nowy. To uruchomi edytor Godot:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
@@ -2476,6 +2487,11 @@ msgid ""
 "chosen node as a child of the currently selected node (or, in an empty "
 "scene, as the \"root\" node)."
 msgstr ""
+"By tego dokonać, musimy dodać węzeł Label. Wciśnij przycisk \"Dodaj węzeł - "
+"dziecko\" w lewym górnym rogu interfejsu sceny (ikona \"+\"). Ten przycisk "
+"to główny sposób na dodawanie nowych węzłów do sceny i zawsze będzie on "
+"dodawał wybrane węzły jako dzieci obecnie zaznaczonych węzłów (albo, w "
+"przypadku pustej sceny, jako \"korzeń\" węzła)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
 msgid ""
@@ -2486,6 +2502,12 @@ msgid ""
 "pressing the \"Add Child Node\" button). You can also press the star-shaped "
 "icon to toggle the display of your favorited nodes."
 msgstr ""
+"W pustej scenie (bez węzła - korzenia [root node]) interfejs ma kilka opcji, "
+"dzięki którym możesz dodać węzeł - korzeń do sceny. \"Scena 2D\" dodaje "
+"węzeł Node2D, \"Scena 3D\" dodaje węzeł Spatial, \"Interfejs Użytkownika\" "
+"dodaje węzeł Control, a \"Węzeł niestandardowy\" pozwala ci na wybranie "
+"każdego węzła (podobnie jak wciśnięcie przycisku \"Dodaj węzeł - dziecko\"). "
+"Możesz także kliknąć ikonkę gwiazdki, by zobaczyć swoje ulubione węzły."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
 msgid ""
@@ -2494,6 +2516,10 @@ msgid ""
 "its root node, likewise not every GUI or 2D scene needs a Control node or "
 "Node2D as their root node."
 msgstr ""
+"Pamiętaj, że te ustawienia powstały w celach wygody, nie są jednak "
+"obowiązkowe dla różnych typów scen. Nie każda scena 3D potrzebuje węzła "
+"Spatial jako swojego głównego, tak samo jak nie każdy interfejs użytkownika "
+"lub scena 2D potrzebują węzłów Control i Node2D."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
@@ -2501,27 +2527,30 @@ msgid ""
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
+"Teraz, by dodać węzeł Label do tej sceny musisz kliknąć przycisk Węzła "
+"Niestandardowego lub \"Dodaj Węzeł\". W scenach, które nie są puste, możesz "
+"użyć przycisku \"Dodaj Węzeł\", by utworzyć wszystkie węzły - dzieci."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
-"Spowoduje to otwarcie okna dialogowego Utwórz węzeł, pokazującego długą "
-"listę węzłów, które można utworzyć:"
+"Spowoduje to otwarcie okna \"Utwórz węzeł\", pokazującego długą listę "
+"węzłów, które można utworzyć:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:121
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
-"Z tego poziomu, wybierz węzeł \"Etykieta\". Najszybciej będzie użyć "
+"Następnie wybierz węzeł \"Label\". Najszybciej będzie skorzystać "
 "wyszukiwarki:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
-"I na koniec, stwórz Label! Wiele dzieje się po naciśnięciu przycisku Utwórz:"
+"I na koniec, stwórz Label! Wiele się dzieje po naciśnięciu przycisku Utwórz:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:130
 msgid ""
@@ -2530,7 +2559,7 @@ msgid ""
 "viewport."
 msgstr ""
 "Najpierw widok zmieni się na tryb 2D (ponieważ Label jest typem węzła 2D), a "
-"Label pojawi się, wybrany, w lewym górnym rogu widoku."
+"Label pojawi się w lewym górnym rogu widoku."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
 msgid ""
@@ -6578,6 +6607,10 @@ msgid ""
 "drive the core updates. New features from the core developers often focus on "
 "what will benefit the most users first."
 msgstr ""
+"**Godot jest tworzony przez społeczność, dla społeczności i dla wszystkich "
+"twórców gier.** To potrzeby użytkowników i otwarte dyskusje są inspiracją "
+"dla twórców silnika. Nowe funkcje wprowadzane przez głównych deweloperów "
+"zazwyczaj koncentrują się na tym, co wspomoże prace większości użytkowników."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
 #, fuzzy
@@ -6672,7 +6705,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
-msgstr ""
+msgstr "Edytor Godot został stworzony przy pomocy frameworka UI silnika"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:16
 msgid "This guide will get you started with UI design. You will learn:"
@@ -6717,6 +6750,10 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"By zaprojektować własny interfejs, będziesz musiał użyć Control node'ow. To "
+"te node'y w kolorze zielonym w twoim edytorze. Są ich tam tuziny - niektóre "
+"służą do tworzeniu pasków życia, inne do bardziej skomplikowanych aplikacji. "
+"Sam edytor Godot jest zbudowany przy pomocy Control node'ów."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -6725,6 +6762,10 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"Controle node'y mają wyjątkowe właściwości, dzięki którym mogą dobrze "
+"współpracować. Inne node'y wizualne, jak Node2D i Sprite, nie posiadają "
+"takich możliwości. Więc by uczynić swoje życie łatwiejszym, korzystaj z "
+"Control node'ów, kiedy tylko możesz przy tworzeniu własnych interfejsów."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
@@ -6799,6 +6840,8 @@ msgstr ""
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
 msgstr ""
+"TextureProgress: do pasków życia, pasków ładowania, poziomych, pionowych lub "
+"kołowych"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:63
 msgid "NinePatchRect: for scalable panels"
@@ -83638,6 +83681,7 @@ msgstr "Posiadać wraz z innymi aktualną wersję forka"
 #: ../../docs/community/contributing/updating_the_class_reference.rst:40
 msgid "Create a pull request so your improvements end in the official docs"
 msgstr ""
+"Zrób pull request, by twoje zmiany znalazły się w oficjalnej dokumentacji"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:42
 msgid ""
@@ -83645,6 +83689,10 @@ msgid ""
 "`GitHub's interactive guide <https://try.github.io/levels/1/challenges/1>`_. "
 "You'll learn some essential vocabulary and get a sense for the tool."
 msgstr ""
+"Jeśli dopiero zaczynasz przygodę z Gitem, systemem kontroli wersji, z "
+"którego korzysta Godot, to sprawdź interaktywny poradnik GitHuba `<https://"
+"try.github.io/levels/1/challenges/1>`_. Poznasz w ten sposób słownictwo i "
+"zrozumiesz na czym polega to narzędzie."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:45
 msgid "Fork Godot"
@@ -83715,6 +83763,8 @@ msgid ""
 "If you made changes you don't want to keep in your local branch, use the "
 "following commands instead:"
 msgstr ""
+"Jeśli wprowadziłeś zmiany, których nie chcesz zatrzymać w swoim lokalnym "
+"branchu, skorzystaj z poniższych komend:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:105
 msgid ""
@@ -83722,12 +83772,17 @@ msgid ""
 "``upstream master`` branch. It will discard all local changes. Make sure to "
 "only run this *before* you make important changes."
 msgstr ""
+"**Uwaga:** Powyższa komenda spowoduje zresetowanie twojego brancha do stanu "
+"``upstream master`` brancha. Usunie to wszystkie lokalne zmiany. Upewnij "
+"się, że używasz jej wyłącznie przed przeprowadzeniem ważnych modyfikacji."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:107
 msgid ""
 "Another option is to delete the branch you're working on, synchronize the "
 "master branch with the Godot repository, and create a brand new branch:"
 msgstr ""
+"Inną opcją jest skasowanie brancha, nad którym pracujesz, zsynchronizowanie "
+"master brancha z repozytorium Godot i stworzenie kompletnie nowego brancha:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:116
 msgid ""
@@ -83768,6 +83823,9 @@ msgid ""
 "forcefully need to go through these steps (unless you know that the class "
 "you plan to edit *has* been modified recently)."
 msgstr ""
+"**Uwaga!** Jeśli to zostało zrobione przez innego członka społeczności, nie "
+"musisz wykonywać tych kroków (chyba, że wiesz, że klasa, którą chciałeś "
+"edytować została zmieniona niedawno)."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:139
 msgid "Push and request a pull of your changes"
@@ -84124,6 +84182,9 @@ msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
+"Nie ma problemu. Zostaw to i listę metod, które pominąłeś, kiedy tworzyłeś "
+"pull request dla wprowadzanych zmian. Inny twórca dokumentacji się tym "
+"zajmie."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:280
 msgid ""
@@ -84131,6 +84192,10 @@ msgid ""
 "code on GitHub. Also, if you have doubts, feel free to ask on the `Q&A "
 "website <https://godotengine.org/qa/>`__ and on IRC (freenode, #godotengine)."
 msgstr ""
+"Możesz także spojrzeć na to, jak implementowane są metody w kodzie źródłowym "
+"Godot umieszczonym na GitHubie. Dodatkowo, jeśli masz jakieś wątpliwości, to "
+"zapraszamy do zadawania pytań na `Q&A website <https://godotengine.org/qa/"
+">`_ oraz na IRC (freenode, #godotengine)."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:284
 msgid "Localization"
@@ -84141,6 +84206,8 @@ msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 msgstr ""
+"Dokumentacja może być tłumaczona na każdy język na `Hosted Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:289
 #, fuzzy
@@ -84160,6 +84227,10 @@ msgid ""
 "of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "
 "think that a new language is complete enough to get its own instance."
 msgstr ""
+"Wersje językowe, które są już w dużej części skończone, mają swoje zakładki "
+"w ReadTheDocs. Możesz założyć issue w repozytorium ``godot-docs-l10n`` jeśli "
+"uważasz, że nowy język jest wystarczająco gotowy, by mieć stworzoną własną "
+"zakładkę."
 
 #: ../../docs/community/channels.rst:4
 #, fuzzy
@@ -84171,21 +84242,24 @@ msgid ""
 "So, where is the Godot community and where can you ask questions and get "
 "help?"
 msgstr ""
+"Gdzie szukać członków społeczności Godot i gdzie można zadawać pytania oraz "
+"prosić o pomoc?"
 
 #: ../../docs/community/channels.rst:8
 msgid ""
 "Note that some of these channels are run and moderated by members of the "
 "Godot community or third parties."
 msgstr ""
+"Pamiętaj, że niektóre z kanałów są prowadzone i moderowane przez członków "
+"społeczności Godot i inne osoby."
 
 #: ../../docs/community/channels.rst:10
-#, fuzzy
 msgid ""
 "A brief overview over these and other channels is also available on the "
 "`Godot website <https://godotengine.org/community>`_."
 msgstr ""
-"Zobacz stronę do kontaktu `Kontakt - Godot <https://godotengine.org/"
-"contact>`_."
+"Krótkie omówienie dotyczące tych i innych kanałów komunikacyjnych dostępne "
+"jest także na stronie Godot '<https://godotengine.org/community>`_."
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
@@ -84239,13 +84313,12 @@ msgstr ""
 "channels=#godotengine-gdnative>`_"
 
 #: ../../docs/community/channels.rst:25
-#, fuzzy
 msgid ""
 "`Website and public relations: #godotengine-atelier <http://webchat.freenode."
 "net/?channels=#godotengine-atelier>`_"
 msgstr ""
-"`GDNative: #godotengine-gdnative <http://webchat.freenode.net/?"
-"channels=#godotengine-gdnative>`_"
+"'Strony internetowe i public relations: #godotengine-atelier <http://webchat."
+"freenode.net/?channels=#godotengine-atelier>`_"
 
 #: ../../docs/community/channels.rst:26
 msgid "`IRC logs <https://godot.eska.me/irc-logs/>`_"
@@ -84267,37 +84340,42 @@ msgstr ""
 "`Matrix (kompatybilny z IRC) <https://matrix.to/#/#godotengine:matrix.org>`_"
 
 #: ../../docs/community/channels.rst:35
-#, fuzzy
 msgid "Language-based communities"
-msgstr "Ogromna społeczność"
+msgstr "Społeczności nieanglojęzyczne"
 
 #: ../../docs/community/channels.rst:37
 msgid ""
 "Brazilian Portuguese: `Godot Brasil (Discord) <https://discord.gg/gWmQKBv>`_"
 msgstr ""
+"Portugalska (w odmianie brazylijskiej): `Godot Brasil (Discord) <https://"
+"discord.gg/gWmQKBv>`_"
 
 #: ../../docs/community/channels.rst:38
 msgid ""
 "French: `Godot Francophone Officiel (Discord) <https://discord.gg/3jvf3XN>`_"
 msgstr ""
+"Francuska: `Godot Francophone Officiel (Discord) <https://discord."
+"gg/3jvf3XN>`_"
 
 #: ../../docs/community/channels.rst:39
 msgid "French: `SoloCode Godot (Discord) <https://discord.gg/gZ3QJ5T>`_"
-msgstr ""
+msgstr "Francuska: `SoloCode Godot (Discord) <https://discord.gg/gZ3QJ5T>`_"
 
 #: ../../docs/community/channels.rst:40
 msgid ""
 "German: `Deutsche Godot Community (Discord) <https://discord.gg/Tr7Ma6E>`_"
 msgstr ""
+"Niemiecka: `Deutsche Godot Community (Discord) <https://discord.gg/Tr7Ma6E>`_"
 
 #: ../../docs/community/channels.rst:41
 msgid ""
 "Swedish: `Swedish Godot Community (Discord) <https://discord.gg/6ZsgWmH>`_"
 msgstr ""
+"Szwedzka: `Swedish Godot Community (Discord) <https://discord.gg/6ZsgWmH>`_"
 
 #: ../../docs/community/channels.rst:44
 msgid "Social networks"
-msgstr "Sieci społecznościowe"
+msgstr "Media społecznościowe"
 
 #: ../../docs/community/channels.rst:46
 msgid "`GitHub <https://github.com/godotengine/>`_"
@@ -84305,7 +84383,7 @@ msgstr "`GitHub <https://github.com/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:47
 msgid "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
-msgstr "`Facebook grupa <https://www.facebook.com/groups/godotengine/>`_"
+msgstr "`Grupa na Facebooku <https://www.facebook.com/groups/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:48
 msgid "`Twitter (also, #godotengine) <https://twitter.com/godotengine>`_"
@@ -84333,9 +84411,8 @@ msgid "`Forum (godotforums.org) <https://godotforums.org/>`_"
 msgstr "`Forum (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
 
 #: ../../docs/community/tutorials.rst:4
-#, fuzzy
 msgid "Tutorials and resources"
-msgstr "Węzły i zasoby"
+msgstr "Tutoriale i materiały do nauki"
 
 #: ../../docs/community/tutorials.rst:6
 msgid ""
@@ -84346,6 +84423,12 @@ msgid ""
 "<https://www.reddit.com/r/godot/comments/an0iq5/"
 "godot_tutorials_list_of_video_and_written/>`_."
 msgstr ""
+"Oto lista tutoriali i materiałów do nauki autorstwa społeczności "
+"rozwijającej Godot. Pamiętaj, że istnieje oficjalna biblioteka `Godot Asset "
+"Library <https://godotengine.org/asset-library/asset>`, pełna materiałów "
+"zarówno tych oficjalnych, jak i tych opracowanych przez pasjonatów. Pokaźny "
+"zbiór samouczków znajdziecie także na platformie Reddit <https://www.reddit."
+"com/r/godot/comments/an0iq5/godot_tutorials_list_of_video_and_written/>`."
 
 #: ../../docs/community/tutorials.rst:8
 msgid ""
@@ -84353,10 +84436,12 @@ msgid ""
 "<https://github.com/godotengine/godot-docs/blob/master/community/resources."
 "rst>`_ as always."
 msgstr ""
+"Uważasz, ze czegoś brakuje? Nie bój się wykonać 'Pull Request <https://"
+"github.com/godotengine/godot-docs/blob/master/community/resources.rst>`."
 
 #: ../../docs/community/tutorials.rst:11
 msgid "Where to start"
-msgstr ""
+msgstr "Gdzie zacząć naukę"
 
 #: ../../docs/community/tutorials.rst:13
 msgid ""
@@ -84367,18 +84452,29 @@ msgid ""
 "playlists>`_ are well-regarded in the community and often recommended as a "
 "gentle introduction to beginners."
 msgstr ""
+"Wideotutoriale dotyczące Godot autorstwa `GDQuest <https://www.youtube.com/"
+"channel/UCxboW7x0jZqFdvMdCFKTMsQ/playlists>`_, `Game from Scratch <https://"
+"www.youtube.com/watch?"
+"v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_ i `KidsCanCode "
+"<https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/playlists>`_ są "
+"wysoko cenione przez społeczność i często polecane początkującym."
 
 #: ../../docs/community/tutorials.rst:15
 msgid ""
 "If you're interested in Visual Scripting, `Emilio's tutorials <https://www."
 "youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ may be worth a look."
 msgstr ""
+"Jeśli jesteś zainteresowany programowanie wizualnym \"Visual Scripting\" to "
+"tutoriale `Emilio <https://www.youtube.com/channel/UC9DR22-"
+"qohBDtZ74R3FxOZg>`_mogą być godne uwagi."
 
 #: ../../docs/community/tutorials.rst:17
 msgid ""
 "Some of the others mentioned below provide more advanced tutorials, e.g. on "
 "3D or shaders."
 msgstr ""
+"Niektórzy z poniższych autorów tworzą tutoriale dotyczące bardziej "
+"zaawansowanych tematów, np. 3D lub shaderów."
 
 #: ../../docs/community/tutorials.rst:20
 msgid "Video tutorials"
@@ -84506,6 +84602,8 @@ msgid ""
 "`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
 "vJC011lYw/videos>`_"
 msgstr ""
+"`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
+"vJC011lYw/videos>`_"
 
 #: ../../docs/community/tutorials.rst:52
 msgid ""

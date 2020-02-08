@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Finnish
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # DarkerBit <mail.darkerbit@gmail.com>, 2018.
@@ -9,6 +9,7 @@
 # Joonas Muuttoranta <joonas.muuttoranta@live.fi>, 2018.
 # spiderfly <spiderfly@protonmail.com>, 2018.
 # Tapani Niemi <tapani.niemi@kapsi.fi>, 2018-2020.
+# TheAdvis <juhamk91@gmail.com>, 2020.
 # TheFinnishArmy <thefinnisharmy@gmail.com>, 2019.
 # Touko Jaakkola <grulps@gmail.com>, 2019.
 # Tuomas Lähteenmäki <lahtis@gmail.com>, 2019-2020.
@@ -19,8 +20,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-27 08:44+0100\n"
-"PO-Revision-Date: 2020-01-11 03:06+0000\n"
-"Last-Translator: Tuomas Lähteenmäki <lahtis@gmail.com>\n"
+"PO-Revision-Date: 2020-02-02 08:54+0000\n"
+"Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
 "Language: fi\n"
@@ -28,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10.1\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -140,7 +141,7 @@ msgstr ""
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -281,6 +282,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+":ref:`Kurssit ja resurssit <doc_community_tutorials>` sivusto listaa "
+"yhteisön tekemiä kurssi videoita. Jos suosit videota tai tekstiä, niin käy "
+"edes katsomassa niitä."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -288,6 +292,9 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Jos sinulla on ongelmia jonkin kurssin tai projektin kanssa, voit etsiä "
+"helposti apua monilta :ref:`Yhteisö kanavilta <doc_community_channels>`, "
+"varsinkin Godot:n Discord yhteisöstä, Q&A:sta, ja IRC:stä."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -490,7 +497,7 @@ msgstr "Pidä hauskaa lukien ja pelejä tehden Godot Enginellä!"
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "UKK"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -1256,12 +1263,18 @@ msgid ""
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"Kuten monet muut kirjastot (esimerkiksi Qt), Godot ei käytä STL-kirjastoa. "
+"Uskomme, että STL on hyvä yleiskäyttöinen kirjasto, mutta meillä oli "
+"erikoisvaatimuksia Godotille."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"STL-templatet aiheuttavat hyvin suuria symboleja, jotka johtavat valtaviin "
+"debug-binääreihin. Me käytämme sen sijaan vain muutamia templateja erittäin "
+"lyhyillä nimillä."
 
 #: ../../docs/about/faq.rst:296
 msgid ""
@@ -1270,6 +1283,11 @@ msgid ""
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"Suurin osa konteistamme soveltuu erikoistarpeisiin, kuten Vector, joka "
+"kopioi datan ennen kirjoitusta (copy on write) ja kun siirrämme dataa "
+"paikasta toiseen, tai RID systeemi, joka varaa O(1) käyttöajan suoritusta "
+"varten. Kuin myös meidän hash map-toteutus on suunniteltu toimimaan "
+"saumattomasti pelimoottorin sisäisten tyypitysten kanssa."
 
 #: ../../docs/about/faq.rst:297
 msgid ""
@@ -1437,7 +1455,7 @@ msgstr ":ref:`doc_interpolation`"
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
 msgid "Inputs"
-msgstr ""
+msgstr "Syötteet"
 
 #: ../../docs/about/docs_changelog.rst:40
 msgid ":ref:`doc_input_examples`"
@@ -1455,7 +1473,7 @@ msgstr ":ref:`doc_localization_using_gettext`"
 #: ../../docs/about/docs_changelog.rst:168
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr ""
+msgstr "Grafiikan koodaus"
 
 #: ../../docs/about/docs_changelog.rst:50
 msgid "Your First Shader Series:"

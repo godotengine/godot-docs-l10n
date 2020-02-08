@@ -1,17 +1,18 @@
 # Godot Engine Documentation in Slovak
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Michal <alladinsiffon@gmail.com>, 2019.
 # MineGame 159 <minegame459@gmail.com>, 2018-2019.
+# Richard Urban <redasuio1@gmail.com>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-27 08:44+0100\n"
-"PO-Revision-Date: 2019-06-15 04:55+0000\n"
-"Last-Translator: Michal <alladinsiffon@gmail.com>\n"
+"PO-Revision-Date: 2020-02-02 08:54+0000\n"
+"Last-Translator: Richard Urban <redasuio1@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/sk/>\n"
 "Language: sk\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.7-dev\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -70,6 +71,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"zatiaľ, sú preklady iba k dispozícii pre \"najnovšiu\"(vývojársku) branch, "
+"ale malo by sa dať naučiť ako používať Godot releases."
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -108,10 +111,16 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"Odošli alebo navrhni problém na: `GitHub repository <https://github.com/"
+"godotengine/godot-docs/issues>`_, help us `translate the documentation "
+"<https://hosted.weblate.org/engage/godot-engine/>`_ into your language, or "
+"talk to us on either the ``#documentation`` channel on `Discord <https://"
+"discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
+"net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -126,7 +135,7 @@ msgstr "Hlavné"
 
 #: ../../docs/index.rst:66
 msgid "Getting started"
-msgstr ""
+msgstr "Začíname"
 
 #: ../../docs/index.rst:77
 msgid "Tutorials"
@@ -239,10 +248,13 @@ msgid ""
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
+"Táto stránka poskytuje všeobecnú prezentáciu enginu a obsahu tejto "
+"dokumentácie, aby ste vedeli kde začať ak ste začiatočník, alebo kde sa "
+"pozrieť ak potrebujete informácie o špecifickej časti."
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Ale predtým než začnete"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -250,6 +262,10 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+":ref: `Tutorials and resources <doc_community_tutorials>` táto stránka "
+"obsahuje list videií a tutoriálou ktoré poskytuje komunita. Ak radšej "
+"pozeráte video tutoriály alebo sa vám nechce čítať text, toto môže byť dobrá "
+"voľba."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -257,6 +273,9 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Ak máte trable z jedným z tutoriálov alebo s vašim projektom, môžete nájsť "
+"rôznu pomoc tu: `Community channels <doc_community_channels>` obzvlášť môže "
+"pomôcť aj Godot Discord komunita, Q&A, a IRC.\n"
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -310,10 +329,12 @@ msgid ""
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
+"pre dôkladnejšie preskúmanie Godotu, by ste mali čítať dokumentáciu daľej, "
+"Tu: `Step by step <toc-learn-step_by_step>`"
 
 #: ../../docs/about/introduction.rst:57
 msgid "About the documentation"
-msgstr ""
+msgstr "O dokumentácii"
 
 #: ../../docs/about/introduction.rst:59
 msgid ""
@@ -324,6 +345,12 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
+"táto dokumentácia je stále prepisovaná, opravovaná, editovaná a prerábaná "
+"členmi Godotskej komunity. Je to editované cez \"Text Files\" v: "
+"`reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_ markup "
+"language and then compiled into a static website/offline document using the "
+"open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
+"readthedocs.org/>`_ tools."
 
 #: ../../docs/about/introduction.rst:66
 msgid ""
@@ -333,6 +360,11 @@ msgid ""
 "on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`_."
 msgstr ""
+"Môžete prispieť Dokumentácii otváraním problémových tiketov alebo posielaním "
+"\"patches\" cez (\"pull\") na Godot git hub `source repository <https://"
+"github.com/godotengine/godot-docs>`_, or translating it into your language "
+"on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
+"docs/>`_."
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -341,6 +373,9 @@ msgid ""
 "attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
 "\"."
 msgstr ""
+"Celý obsah je pod permisiou (Creative Commons Attribution 3.0)  (`CC-BY 3.0 "
+"<https://creativecommons.org/licenses/by/3.0/>`_) licencia z atribútmi je "
+"pre \"Juana Linietskeho, Ariela Manzura a Gototskú komunitu.."
 
 #: ../../docs/about/introduction.rst:77
 msgid "Organization of the documentation"
@@ -352,6 +387,8 @@ msgid ""
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
+"Táto dokumentácia je zorganizovaná v 5 sekciách z pôsobivo nevyváženým "
+"kontentom - ALE spôsob, akým je rozdelený, by mal byť relatívne intuitívny:"
 
 #: ../../docs/about/introduction.rst:83
 msgid ""
@@ -359,6 +396,9 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
+":ref:  `sec-general` obsahuje úvod a pravdaže informácie o engine, jeho "
+"histórii, jeho licencovaní, autoroch a tak ďalej.... ale pravdaže obsahuje "
+"aj :ref: `doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
 msgid ""
@@ -367,12 +407,18 @@ msgid ""
 "games. It starts with the :ref:`Step by step <toc-learn-step_by_step>` "
 "tutorial which should be the entry point for all new users."
 msgstr ""
+":ref: `sec-learn` sekcia je *raison d'être* tejto dokumentácie, obsahuje aj "
+"všetky potrebné informácie ako je napr. Použitie enginu pre vytváranie hier. "
+"Sa začína tu: `Step by step <toc-learn-step_by_step>` Tutoriál by mal byť "
+"hlavným bodom pre všetkých nových užívateľov."
 
 #: ../../docs/about/introduction.rst:91
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
+":ref: `sec-tutorials` je sekcia ktorú môžete čítať kedy bedete potrebovať, v "
+"každom prípade. Obsahuje (feature-specific tutorials) a dokumentáciu"
 
 #: ../../docs/about/introduction.rst:93
 msgid ""
@@ -380,6 +426,9 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
+":ref: `sec-devel` sekcia je pre pokročilých užívateľov a prispievateľov pre "
+"rozvoj enginu, s informáciami pre engine, vývoj cez C++ je pre moduly alebo "
+"editor pluginy."
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -389,6 +438,11 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
+":ref: `sec-community` sekcia dáva informácie prispievajúce vývoju enginu a "
+"životu jeho komunity, e.g. Ako nahlásiť BUG, pomôcť z dokumentáciou, atd. "
+"Treba ísť na rôzne (community chanels) ako je napríklad IRC a Dicord ktoré "
+"obsahujú list odporúčaných (third-party) tutoriálov ktoré v tejto "
+"dokumentácii niesu."
 
 #: ../../docs/about/introduction.rst:101
 msgid ""
@@ -398,6 +452,11 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
+"A konečne :ref: `sec-class-ref` je dokumentácia GODOT API, ktorá je tiež "
+"dostupná v Godot script editore. Je automaticky generovaný z fileou(File) v "
+"main source repository, takže generované files dokumentácie niesu určené na "
+"modifikáciu. Môžete sa o tom presvedčiť tu :ref:"
+"`doc_updating_the_class_reference`"
 
 #: ../../docs/about/introduction.rst:107
 msgid ""
@@ -405,24 +464,26 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
+"Okrem tejto dokumentácie sa môžete pozrieť aj na rôzne informácie  `Godot "
+"demo projects <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/about/introduction.rst:110
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr ""
+msgstr "Zabavte sa čítaním a vytváraním hier z Godot Enginom!"
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "Otázky a Odpovede (F&Q)"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "Často kladené otázky"
 
 #: ../../docs/about/faq.rst:10
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
-msgstr ""
+msgstr "Čo z Godotom môžem urobiť? Koľko to stojí? Čo sú tie licence terms?"
 
 #: ../../docs/about/faq.rst:12
 msgid ""
@@ -431,22 +492,30 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
+"Godot je `Bezplatný Open-Source Software\n"
+"<https://en.wikipedia.org/wiki/Free_and_open-source_software>`_ dostupný pod "
+"`OSI-approved <https://opensource.org/licenses/MIT>`_ MIT license. To "
+"znamená je Zadarmo ako v \"free speech\" a pravdaže ako \"free bear.\""
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
-msgstr ""
+msgstr "V skratke:"
 
 #: ../../docs/about/faq.rst:16
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
+"Môžete si zadarmo stiahnuť a používať Godot bez žiadneho účelu profitu alebo "
+"také dačo."
 
 #: ../../docs/about/faq.rst:17
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
+"Môžete ľubovoľne modifikovať, distribuovať, redistribuovať a remixovať Godot "
+"tak ako chcete z nejakého dôvodu nekomerčne aj konečne."
 
 #: ../../docs/about/faq.rst:19
 msgid ""
@@ -455,6 +524,10 @@ msgid ""
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
+"Celý tento obsah tejto dokumentácie je publikovaný pod permissive Creative "
+"Commons Atrribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/"
+"by/3.0/>`_) licencioa a Atribútmi patria \"Juanovy Linietskemu, Arielovy "
+"Manzurovy a Godot engine komunite.\""
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -462,6 +535,9 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
+"Logá a Ikony sú pod tou istou Creative Commons license. Poznámka: niektoré "
+"third-party (libraries) zahrnuté Godotovím source code asi môžu mať odlišné "
+"licencie."
 
 #: ../../docs/about/faq.rst:27
 msgid ""
@@ -471,71 +547,82 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"Pre všetky detaily, sa pozri na: \n"
+"`COPYRIGHT.txt <https://github.com/godotengine/godot/blob/master/COPYRIGHT."
+"txt>`_\n"
+"Pravdaže aj na: `LICENSE.txt <https://github.com/godotengine/godot/blob/"
+"master/LICENSE.txt>`_ a na: `LOGO_LICENSE.txt <https://github.com/"
+"godotengine/godot/blob/master/LOGO_LICENSE.md>`_\n"
+"Položky(Files) v Godot uložisku(repository)."
 
 #: ../../docs/about/faq.rst:31
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
+"Pravdaže pozri aj ` Licencovanú stránku na Godot webstránke <https://"
+"godotengine.org/license>`_."
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "Aké platformy sú podporované Godotom?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**Pre editor**"
 
 #: ../../docs/about/faq.rst:38
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:39
 #: ../../docs/tutorials/misc/jitter_stutter.rst:53
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 #: ../../docs/tutorials/misc/jitter_stutter.rst:78
 msgid "macOS"
-msgstr ""
+msgstr "MacOS"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11 (Linux \\*BSD)"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**Pre exportovanie vašich hier:**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "Windows(a UWP)"
 
 #: ../../docs/about/faq.rst:47
 #: ../../docs/getting_started/step_by_step/exporting.rst:199
 #: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
-msgstr ""
+msgstr "Web"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
-msgstr ""
+msgstr "Oba 32- a 64-bit systémy sú podporované ale 64-bit je odporúčaný."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"Niektorý užívateľia tiež hovoria že používanie Godota vyšlo aj na ARM-based "
+"systémoch z Linuxom ako Raspberry Pi.(neviem čo znamená Raspberry Pi. Sorko)."
 
 #: ../../docs/about/faq.rst:57
 msgid ""
@@ -543,16 +630,21 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
+"Okrem toho sa pri budovaní niektorých konzol vykonáva neoficiálna práca "
+"tretích strán(third-party). Nič z toho však nie je zahrnuté v predvolených "
+"skriptoch zostavenia ani v šablónach exportu."
 
 #: ../../docs/about/faq.rst:61
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"Pre viac informácií sa pozrite na sekciu tu :ref:`exporting <toc-learn-"
+"workflow-export>` a :ref:`compiling Godot yourself <toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:65
 msgid "Which programming languages are supported in Godot?"
-msgstr ""
+msgstr "Aké programovacie jazyki podporuje Godot?"
 
 #: ../../docs/about/faq.rst:67
 msgid ""
@@ -560,6 +652,9 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"Oficiálne podporované jazyki pre Godot sú GDScript, Visual Scripting, C# a C+"
+"+. Pozrite si subkategórie pre každý jazyk tu :ref:`scripting <toc-learn-"
+"scripting>` sekcii."
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -570,6 +665,11 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"Ak práve začínate z Godotom alebo z herným vývojárstvom, GDScript je "
+"najlepšia voľba. Zatiaľ čo ostatné jazyki sa snažia byť menej výkonnejší ako "
+"horšie jazyki pre prototypovanie, vyvíjanie minimálne životaschopné výrobky "
+"(MVPs), zo zameraním na **Time-To-Market**(TTM), GDScript ponúka rýchlu a "
+"kamarátsku cestu pre vytváranie vašich hier."
 
 #: ../../docs/about/faq.rst:78
 msgid ""
@@ -581,6 +681,12 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"Poznámka: C# je stále relatívne nový, takže stále môže mať nejaké chybi. "
+"Naša kamarátska Ťažko Pracujúca vývojarska komunita je stále pripravená na "
+"riešenie nových problémov, ale keďže je Godot ešte stále open source "
+"projekt, odporúčame vymyslieť spôsob na riešenie problémov alebo vyhľadať "
+"problém cez diskusie tu: `open issues <https://github.com/godotengine/godot/"
+"issues>`_ je to dobrá cesta na riešenie problémov."
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -590,10 +696,15 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"Ako pre ostatné jazyki, podpora je umožnená cez third parti použitím "
+"GDNative / NativeScript / PluginScript. (Pozrite si otázky o pluginoch tu "
+"nižšie.) Ešte sa na tom pracuje, napríklad, na neoficiálnych (bindings) pre "
+"Godot `Python <https://github.com/touilleMan/godot-python>`_ and `Nim "
+"<https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:91
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "Čo je GDScript a prečo by som ho mal používať?"
 
 #: ../../docs/about/faq.rst:93
 msgid ""
@@ -605,6 +716,13 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"GDScript je Godotom vymyslený skriptovacý jazyk. Bol vyrobený pre "
+"maximalizovanie Godotovho potenciálu v čo najmenej riadkoch kódu, čo "
+"umožňuje začínajúcim aj skúseným vývojárom, aby čo najrýchlejšie využili "
+"silné stránky Godota. Python je veľmi podobný GDScriptu takže ak máte nejaké "
+"skúsenosti z Pythonom tak by nemal byť problém naučiť sa GDScript. Napríklad "
+"históriu, kompletný prehľad o sile GDScriptu, nájdete tu :ref:`GDScript "
+"scripting guide <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:100
 msgid ""
@@ -613,6 +731,9 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"Je tu viacero dôvodov pre používanie GDScriptu--zvlášť keď robíte prototypy, "
+"vo fázach alfa / beta vášho projektu, alebo nevytvárate ďalší titul AAA - "
+"ale najdôležitejším dôvodom je celkové ** zníženie zložitosti. **"
 
 #: ../../docs/about/faq.rst:104
 msgid ""
@@ -626,6 +747,14 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"Pôvodný zámer vytvoriť pevne integrovaný skriptovací jazyk pre Godota bol "
+"dvojaký: po prvé, znižuje množstvo času potrebného na vstávanie a beh s "
+"Godotom, čo vývojárom poskytuje rýchly spôsob, ako sa zamerať na engine so "
+"zameraním o produktivite; po druhé, znižuje celkovú záťaž údržby, zmierňuje "
+"rozmernosť problémov a umožňuje vývojárom enginu zamerať sa na potlačenie "
+"chýb a vylepšenie funkcií súvisiacich s jadrom enginu - namiesto toho, aby "
+"sa veľa času snažili získať malú časť množina prírastkových funkcií "
+"pracujúcich vo veľkom množstve jazykov."
 
 #: ../../docs/about/faq.rst:112
 msgid ""
@@ -639,6 +768,16 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
+"Odvtedy čo je Godot Open source projekt, od začiatku bolo nevyhnutné "
+"uprednostňovať integrovanejší a plynulejší zážitok pred získavaním ďalších "
+"používateľov podporou známych programovacích jazykov -- obzvlášť ked musí "
+"podporovať tieto podobné jazyki čoho výsledok je zlá skúsenosť. Chápeme ak "
+"radšej budete používať iný jazyk v Godote (pozrite si list podporovaných "
+"možností vyššie). Ak ste si ešte nevyskúšaly GDScript skúste ho **aspoň na 3 "
+"dni**. Tak ako Godot, akonáhle uvidíte ako rapidne váš vývoj stúpne, mi si "
+"myslíme že GDScript vyrastie na vás. (A áno bolo to tam napísané to "
+"\"GDScript vyrastie na vás\" ja som si to nevimyslel #by Mr. Prekladátor "
+"Redasuio#)."
 
 #: ../../docs/about/faq.rst:121
 msgid ""
@@ -646,27 +785,34 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"Viac informácií o GDScripte alebo dynamicko písaného jazyka môžu byť nájdené "
+"tu :ref:`doc_gdscript_more_efficiently`."
 
 #: ../../docs/about/faq.rst:125
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "Aká bola naša motivácia vytvorenia GDScriptu?"
 
 #: ../../docs/about/faq.rst:127
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr ""
+msgstr "Hlavným dôvodom pre vytvorenie vlastného jazyku pre Godot je:"
 
 #: ../../docs/about/faq.rst:129
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
+"Nízka podpora v veľa skriptoch VMs, a Godotský používatelia (Lua, Python, "
+"Squirrel, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:131
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"Poor class-extending support in most script VMs, and adapting to the way "
+"Godot works is highly inefficient (Lua, Python, JS) PS: prelož si to sám mne "
+"sa nechce :P #váš obľúbený prekladateľ Redasuio LuL."
 
 #: ../../docs/about/faq.rst:133
 msgid ""

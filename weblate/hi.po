@@ -1,8 +1,9 @@
 # Godot Engine Documentation in Hindi
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Lakshmi-Jayakumar <lakshmi.jayakumar.tkm@gmail.com>, 2019.
+# Suryansh5545 <suryanshpathak5545@gmail.com>, 2020.
 # Vikram1323 <vikram1323@gmail.com>, 2018.
 #
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-27 08:44+0100\n"
-"PO-Revision-Date: 2019-10-18 18:03+0000\n"
-"Last-Translator: Lakshmi-Jayakumar <lakshmi.jayakumar.tkm@gmail.com>\n"
+"PO-Revision-Date: 2020-02-02 08:54+0000\n"
+"Last-Translator: Suryansh5545 <suryanshpathak5545@gmail.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/hi/>\n"
 "Language: hi\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1-dev\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -30,16 +31,17 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"गोडोट का प्रलेखन विभिन्न भाषाओं और संस्करणों में उपलब्ध है। सूची देखने के लिए साइडबार के नीचे "
+"\"डॉक्स पढ़ें\" पैनल का विस्तार करें।"
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the development (master) branch. Looking for "
 "the documentation of the current **stable** branch? `Have a look here "
 "<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
-"यह अस्थिर (मास्टर) शाखा के लिए प्रलेखन है। वर्तमान ** स्थिर ** शाखा के दस्तावेज़ीकरण की "
-"तलाश में? 'यहां एक नज़र डालें <http://docs.godotengine.org/en/stable>`_."
+"यह विकास (मास्टर) शाखा के लिए प्रलेखन है। वर्तमान **स्थिर ** शाखा के प्रलेखन की तलाश "
+"में? ' यहां एक नज़र है <https://docs.godotengine.org/en/stable>'_।"
 
 #: ../../docs/index.rst:16
 msgid ""
@@ -47,6 +49,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
+"इस दस्तावेज़ का अनुवाद `मूल अंग्रेज़ी एक <https://docs.godotengine.org/en/latest >` _ "
+"समुदाय के सदस्यों द्वारा` वेबलेट <https://hosted.weblate.org/projects/godot.engine/ "
+"पर किया गया है। गोडोट-डॉक्स> `_।"
 
 #: ../../docs/index.rst:20
 msgid ""
@@ -55,6 +60,9 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
+"अनुवाद प्रयास के पूरा होने के स्तर के आधार पर, आपको पैराग्राफ या पूरे पृष्ठ मिल सकते हैं जो "
+"अभी भी अंग्रेजी में हैं। आप नए अनुवाद प्रदान करके या वेबलेट पर मौजूदा लोगों की समीक्षा करके "
+"समुदाय की मदद कर सकते हैं।"
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -62,6 +70,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"कुछ समय के लिए, स्थानीयकृत अनुवाद केवल \"नवीनतम\" (विकास) शाखा के लिए उपलब्ध हैं, लेकिन "
+"फिर भी स्थिर गोडॉट रिलीज का उपयोग करने के तरीके सीखने के लिए उपयुक्त होना चाहिए।"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -100,7 +110,6 @@ msgstr ""
 "रहे हैं वह नहीं मिल पा रहे हैं, तो हमें  बता कर दस्तावेज को बेहतर बनाने में मदद करें!"
 
 #: ../../docs/index.rst:45
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -109,16 +118,16 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"' GitHub भंडार < https://github.com/godotengine/godot-docs/issues > ' _ पर एक "
-"मुद्दा (issue) या पुल अनुरोध (pull request) सबमिट करें। प्रलेखन के अनुवाद मे हमारी मदद "
-"करें  < https://hosted.weblate.org/engage/godot-engine/> हमारे साथ चर्चा ' ' "
-"#documentation ' ' चैनल ' Discord< https://discord.gg/zH7NUgz > ' _, या ' ' "
-"#godotengine-doc ' ' चैनल पर ' irc.freenode.net < http://webchat.freenode."
-"net/?channels = #godotengine-doc > ' _!"
+"' गिटहब भंडार पर एक मुद्दा सबमिट करें या अनुरोध खींचें <https://github.com/"
+"godotengine/godot-डॉक्स/issues>'_, हमें ' प्रलेखन का अनुवाद करने में मदद करें <https://"
+"hosted.weblate.org/engage/godot-engine/>__ अपनी भाषा में, या ' कलह पर ' "
+"#documentation ' चैनल पर हमसे बात करें < https://कलह.gg/zH7NUgz>'_,null,null, "
+"#godotengine या ' irc.freenode.net <webchat.freenode.net/"
+"channel=#godotengine-doc>___ पर चैनल"
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -227,18 +236,16 @@ msgid "Introduction"
 msgstr "परिचय"
 
 #: ../../docs/about/introduction.rst:11
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of Godot Engine, the free and open "
 "source community-driven 2D and 3D game engine! Behind this mouthful, you "
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"गोडोट इंजन (Godot Engine), मुक्त और मुक्त स्रोत समुदाय (free and open source) "
-"संचालित 2 डी और 3 डी गेम इंजन के आधिकारिक प्रलेखन में आपका स्वागत है! इस कौर के पीछे, आप "
-"एक शक्तिशाली अभी तक उपयोगकर्ता के अनुकूल उपकरण है कि आप खेल के किसी भी प्रकार के विकास "
-"के लिए उपयोग कर सकते हैं, किसी भी मंच के लिए और कोई उपयोग प्रतिबंध के साथ जो भी मिल "
-"जाएगा ।"
+"गोडॉट इंजन के आधिकारिक दस्तावेज में आपका स्वागत है, मुफ्त और खुले स्रोत समुदाय संचालित 2डी "
+"और 3 डी गेम इंजन! इस कौर के पीछे, आपको एक शक्तिशाली अभी तक उपयोगकर्ता के अनुकूल उपकरण "
+"मिलेगा जिसका उपयोग आप किसी भी तरह के खेल को विकसित करने के लिए, किसी भी मंच के लिए "
+"और किसी भी उपयोग प्रतिबंध के साथ कर सकते हैं।"
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -246,10 +253,13 @@ msgid ""
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
+"यह पृष्ठ इंजन और इस दस्तावेज़ीकरण की सामग्री की एक व्यापक प्रस्तुति देता है, ताकि आप "
+"जानसकें कि यदि आप एक शुरुआत कर रहे हैं या यदि आपको किसी विशिष्ट सुविधा पर जानकारी की "
+"आवश्यकता है तो कहां देखना है।"
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "इससे पहले कि आप शुरू करें"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -257,6 +267,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+":रेफरी: 'ट्यूटोरियल और संसाधन <doc_community_tutorials>' पेज समुदाय द्वारा योगदान "
+"वीडियो ट्यूटोरियल सूचीबद्ध करता है। यदि आप पाठ करने के लिए वीडियो पसंद करते हैं, तो वे "
+"एक नज़र के लायक हो सकते हैं।"
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -264,6 +277,9 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"यदि आपको ट्यूटोरियल या अपनी परियोजना में से किसी एक के साथ परेशानी है, तो आप विभिन्न:"
+"रेफरी: 'सामुदायिक चैनल<doc_community_channels>', विशेष रूप से गोडॉट कलह समुदाय, Q&A "
+"और आईआरसी पर मदद पा सकते हैं।"
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -275,6 +291,9 @@ msgid ""
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
+"एक गेम इंजन एक जटिल उपकरण है, और इसलिए कुछ शब्दों में गोडॉट पेश करना मुश्किल है। यहां एक "
+"त्वरित सारांश दिया गया है, जिसे आप गोडॉट इंजन के बारे में त्वरित लेखन की आवश्यकता होने पर "
+"पुन: उपयोग करने के लिए स्वतंत्र हैं।"
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -285,6 +304,11 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
+"गोडॉट इंजन एक एकीकृत इंटरफ़ेस से 2डी और 3डी गेम बनाने के लिए एक फीचर-पैक, क्रॉस-प्लेटफॉर्म "
+"गेम इंजन है। यह आम उपकरणों का एक व्यापक सेट प्रदान करता है, इसलिए उपयोगकर्ता पहिया को "
+"दोहराने के बिना गेम बनाने पर ध्यान केंद्रित कर सकते हैं। गेम को एक क्लिक में कई प्लेटफार्मों पर "
+"निर्यात किया जा सकता है, जिसमें प्रमुख डेस्कटॉप प्लेटफॉर्म (लिनक्स, मैकओएस, विंडोज) के साथ-"
+"साथ मोबाइल (एंड्रॉइड, आईओएस) और वेब-आधारित (HTML5) प्लेटफॉर्म शामिल हैं।"
 
 #: ../../docs/about/introduction.rst:45
 msgid ""
@@ -295,6 +319,12 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
+"Godot स्वतंत्र एमआईटी लाइसेंस के तहत पूरी तरह से स्वतंत्र और खुला स्रोत है। कोई तार संलग्न, "
+"कोई रॉयल्टी, कुछ भी नहीं । उपयोगकर्ताओं के खेल उनके हैं, इंजन कोड की अंतिम पंक्ति के लिए "
+"नीचे । गोडॉट का विकास पूरी तरह से स्वतंत्र और समुदाय संचालित है, जो उपयोगकर्ताओं को "
+"उनकी अपेक्षाओं से मेल खाने के लिए अपने इंजन को आकार देने में मदद करने के लिए सशक्त बनाता है। "
+"यह 'सॉफ्टवेयर फ्रीडम कंजर्वेशन <https://sfconservancy.org> '_ नॉट-फॉर-प्रॉफिट द्वारा "
+"समर्थित है।"
 
 #: ../../docs/about/introduction.rst:52
 msgid ""
@@ -302,6 +332,8 @@ msgid ""
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
+"इंजन के अधिक गहराई से देखने के लिए, आपको इस दस्तावेज को और पढ़ने के लिए प्रोत्साहित किया "
+"जाता है, विशेष रूप से:रेफरी: 'स्टेप बाय स्टेप <toc-learn-step_by_step>' ट्यूटोरियल।"
 
 #: ../../docs/about/introduction.rst:57
 msgid "About the documentation"
@@ -316,6 +348,11 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
+"इस प्रलेखन को गोडॉट इंजन समुदाय के सदस्यों द्वारा लगातार लिखा, सही, संपादित और नया "
+"किया जाता है। इसे 'पुनर्गठितटेक्स्ट <http://www.sphinx-doc.org/en/stable/rest.html> "
+"'__ मार्कअप भाषा में टेक्स्ट फाइलों के माध्यम से संपादित किया जाता है और फिर ओपन सोर्स ' "
+"स्फिंक्स <http://www.sphinx-doc.org>'_ और 'ReadTheDocs<https://readthedocs.org/"
+">___ टूल्स का इस्तेमाल करते हुए एक स्थिर वेबसाइट/ऑफलाइन दस्तावेज में संकलित किया जाता है।"
 
 #: ../../docs/about/introduction.rst:66
 msgid ""
@@ -325,6 +362,10 @@ msgid ""
 "on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`_."
 msgstr ""
+"आप अपने गिटहब ' स्रोत भंडार पर पुल अनुरोधों के माध्यम से गोडॉट के दस्तावेज में योगदान कर "
+"सकते हैं या अपने गिटहब पर पुल अनुरोधों के माध्यम से पैच भेज सकते हैं <https://github.com/"
+"godotengine/godot-डॉक्स> '_, या इसे अपनी भाषा में अनुवाद ' होस्ट ेड वेबलेट <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs/>___ पर ।"
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -333,9 +374,11 @@ msgid ""
 "attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
 "\"."
 msgstr ""
+"सभी सामग्री स्वतंत्र क्रिएटिव कॉमन्स एट्रिब्यूशन 3.0 ('CC-BY 3.0 <https://"
+"creativecommons.org/licenses/by/3.0/>_) लाइसेंस के तहत हैं, जिसमें \"जुआन लिनीत्स्की, "
+"एरियल मंज़ूर और गोडॉट इंजन समुदाय\" के लिए एट्रिब्यूशन है।"
 
 #: ../../docs/about/introduction.rst:77
-#, fuzzy
 msgid "Organization of the documentation"
 msgstr "प्रलेखन के संगठन"
 
@@ -345,6 +388,8 @@ msgid ""
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
+"यह प्रलेखन सामग्री के प्रभावशाली असंतुलित वितरण के साथ पांच वर्गों में आयोजित किया जाता है "
+"- लेकिन जिस तरह से इसे विभाजित किया जाता है वह अपेक्षाकृत सहज होना चाहिए:"
 
 #: ../../docs/about/introduction.rst:83
 msgid ""
@@ -352,6 +397,8 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
+": रेफरी: 'सेकंड-जनरल' अनुभाग में इस परिचय के साथ-साथ इंजन, इसके इतिहास, इसके लाइसेंसिंग, "
+"लेखकों आदि के बारे में जानकारी शामिल है। इसमें :रेफरी:'doc_faq'।"
 
 #: ../../docs/about/introduction.rst:86
 msgid ""
@@ -360,12 +407,18 @@ msgid ""
 "games. It starts with the :ref:`Step by step <toc-learn-step_by_step>` "
 "tutorial which should be the entry point for all new users."
 msgstr ""
+":रेफरी: 'सेकंड-सीखो' अनुभाग इस दस्तावेज़ीकरण का * अस्तित्व डी'एट्रे * है, क्योंकि इसमें गेम "
+"बनाने के लिए इंजन का उपयोग करने के बारे में सभी आवश्यक जानकारी शामिल है। यह:रेफरी: 'स्टेप "
+"बाय स्टेप <toc-learn-step_by_step>' ट्यूटोरियल के साथ शुरू होता है जो सभी नए "
+"उपयोगकर्ताओं के लिए प्रवेश बिंदु होना चाहिए।"
 
 #: ../../docs/about/introduction.rst:91
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
+": रेफरी: 'सेकंड-ट्यूटोरियल' अनुभाग को किसी भी क्रम में आवश्यकतानुसार पढ़ा जा सकता है। इसमें "
+"फीचर-स्पेसिफिक ट्यूटोरियल और डॉक्यूमेंटेशन शामिल हैं।"
 
 #: ../../docs/about/introduction.rst:93
 msgid ""
@@ -373,6 +426,9 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
+":रेफरी: 'सेक-डेवेल' अनुभाग का उद्देश्य उन्नत उपयोगकर्ताओं और इंजन विकास में योगदानकर्ताओं के "
+"लिए है, जिसमें इंजन के संकलन, सी + + मॉड्यूल या संपादक प्लगइन्स विकसित करने के बारे में "
+"जानकारी है।"
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -382,6 +438,10 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
+": रेफरी: 'सेक-कम्युनिटी' अनुभाग इंजन विकास और उसके समुदाय के जीवन में योगदान करने से "
+"संबंधित जानकारी देता है, उदाहरण के लिए बग की रिपोर्ट कैसे करें, दस्तावेज के साथ मदद करें, "
+"आदि। यह आईआरसी और कलह जैसे विभिन्न सामुदायिक चैनलों को भी इंगित करता है और इसमें इस "
+"दस्तावेज के बाहर अनुशंसित तृतीय-पक्ष ट्यूटोरियल की एक सूची शामिल है।"
 
 #: ../../docs/about/introduction.rst:101
 msgid ""
@@ -391,6 +451,10 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
+"अंत में, : रेफरी: 'सेक-क्लास-रेफरी' गोडॉट एपीआई का दस्तावेजीकरण है, जो सीधे इंजन के "
+"स्क्रिप्ट संपादक के भीतर भी उपलब्ध है। यह मुख्य स्रोत भंडार में एक फ़ाइल से स्वचालित रूप से "
+"उत्पन्न होता है, इसलिए दस्तावेज की उत्पन्न फाइलों को संशोधित करने का मतलब नहीं है। देखें: "
+"रेफरी: ' विवरण के लिए doc_updating_the_class_reference ' ।"
 
 #: ../../docs/about/introduction.rst:107
 msgid ""
@@ -398,6 +462,8 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
+"इस प्रलेखन के अलावा आप विभिन्न 'गोडॉट डेमो परियोजनाओं पर भी एक नज़र डालना चाह सकते "
+"हैं<https://github.com/godotengine/godot-demo-projects>'_।"
 
 #: ../../docs/about/introduction.rst:110
 msgid "Have fun reading and making games with Godot Engine!"
@@ -405,7 +471,7 @@ msgstr "गोडोट इंजन के साथ पढ़ने और ग
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "अक्सर पूछे जाने वाले प्रश्न"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -424,22 +490,30 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
+"गोडॉट ' ओएसआई-अनुमोदित <https://opensource.org/licenses>'_ एमआईटी लाइसेंस के तहत "
+"उपलब्ध ' फ्री एंड ओपन-सोर्स सॉफ्टवेयर <https://en.wikipedia.org/wiki/Free_and_open-"
+"source_software>_ है । इसका मतलब यह है कि यह \"मुक्त भाषण\" के रूप में के रूप में अच्छी "
+"तरह से \"मुक्त बियर में के रूप में स्वतंत्र है.\""
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
-msgstr ""
+msgstr "संक्षेप में:"
 
 #: ../../docs/about/faq.rst:16
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
+"आप किसी भी उद्देश्य, व्यक्तिगत, गैर-लाभकारी, वाणिज्यिक या अन्यथा Godot को डाउनलोड "
+"करने और उपयोग करने के लिए स्वतंत्र हैं।"
 
 #: ../../docs/about/faq.rst:17
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
+"आप गैर-व्यावसायिक और व्यावसायिक दोनों रूप से, किसी भी कारण से, अपने दिल की सामग्री को "
+"गोडॉट को संशोधित करने, वितरित करने, पुनर्वितरित करने और रीमिक्स करने के लिए स्वतंत्र हैं।"
 
 #: ../../docs/about/faq.rst:19
 msgid ""
@@ -448,6 +522,10 @@ msgid ""
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
+"इस साथ प्रलेखन की सभी सामग्री स्वतंत्र क्रिएटिव कॉमन्स एट्रिब्यूशन 3.0 ('CC-BY 3.0 "
+"<https://creativecommons.org/licenses/by/by/3.0/>'_) लाइसेंस के तहत प्रकाशित की "
+"जाती हैं, जिसमें \"जुआन लिनीतेस्की, एरियल मैनुर और गोडॉट इंजन समुदाय\" के लिए श्रेय दिया "
+"जाता है ।"
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -455,6 +533,8 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
+"लोगो और आइकन आम तौर पर एक ही क्रिएटिव कॉमन्स लाइसेंस के तहत कर रहे हैं । ध्यान दें कि "
+"गोडॉट के स्रोत कोड के साथ शामिल कुछ तृतीय-पक्ष पुस्तकालयों में अलग-अलग लाइसेंस हो सकते हैं।"
 
 #: ../../docs/about/faq.rst:27
 msgid ""
@@ -464,71 +544,81 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"पूर्ण विवरण के लिए, ' COPYRIGHT.txt <https://github.com/godotengine/godot/blob/"
+"master/copyright.txt> ' _ के साथ-साथ ' license.txt <https://github.com/go पर "
+"देखें डॉटइंजन/godot/blob/master/license.txt>'__ और ' LOGO_LICENSE.txt <https://"
+"github.com/godotengine/godot/blob/master/LOGO_LICENSE.md> '_ गोडॉट भंडार में "
+"फाइलें ।"
 
 #: ../../docs/about/faq.rst:31
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
+"इसके अलावा, ' Godot वेबसाइट पर लाइसेंस पेज देखें <https://godotengine.org/license>'_।"
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "गोडॉट द्वारा किन प्लेटफार्मों का समर्थन किया जाता है?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr ""
+msgstr "संपादक के लिए ***"
 
 #: ../../docs/about/faq.rst:38
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:39
 #: ../../docs/tutorials/misc/jitter_stutter.rst:53
 msgid "Windows"
-msgstr ""
+msgstr "विंडोज़"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 #: ../../docs/tutorials/misc/jitter_stutter.rst:78
 msgid "macOS"
-msgstr ""
+msgstr "मैक ओ एस"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11 (लिनक्स, \\ * बीएसडी)"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**अपने खेल ों के निर्यात के लिए:**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "विंडोज (और UWP)"
 
 #: ../../docs/about/faq.rst:47
 #: ../../docs/getting_started/step_by_step/exporting.rst:199
 #: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "Android"
-msgstr ""
+msgstr "एंड्रॉयड"
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
 msgid "iOS"
-msgstr ""
+msgstr "आईओएस"
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
-msgstr ""
+msgstr "वेब"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
+"दोनों ३२-और ६४-बिट binaries समर्थित है जहां यह समझ में आता है, ६४ के साथ डिफ़ॉल्ट जा "
+"रहा है ।"
 
 #: ../../docs/about/faq.rst:54
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"कुछ उपयोगकर्ता रैस्पबेरी पीआई जैसे लिनक्स के साथ एआरएम-आधारित प्रणालियों पर सफलतापूर्वक "
+"गोडॉट के निर्माण और उपयोग की रिपोर्ट भी करते हैं।"
 
 #: ../../docs/about/faq.rst:57
 msgid ""
@@ -536,16 +626,21 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
+"इसके अतिरिक्त, कुछ शांति के लिए निर्माण पर कुछ अनधिकृत तृतीय-पक्ष कार्य किया जा रहा है। "
+"हालांकि, इसमें से कोई भी इस समय डिफ़ॉल्ट बिल्ड स्क्रिप्ट या एक्सपोर्ट टेम्पलेट्स में शामिल नहीं "
+"है।"
 
 #: ../../docs/about/faq.rst:61
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"इस पर अधिक के लिए, पर वर्गों को देखें: रेफरी: ' निर्यात <toc-learn-workflow-export> "
+"' और: रेफरी: ' Godot संकलन अपने आप को <toc-devel-compiling> ' ।"
 
 #: ../../docs/about/faq.rst:65
 msgid "Which programming languages are supported in Godot?"
-msgstr ""
+msgstr "गोडॉट में कौन सी प्रोग्रामिंग भाषाओं का समर्थन किया जाता है?"
 
 #: ../../docs/about/faq.rst:67
 msgid ""
@@ -553,6 +648,9 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"गोडॉट के लिए आधिकारिक तौर पर समर्थित भाषाएं GDScript, विजुअल स्क्रिप्टिंग, सी #, और "
+"C ++ हैं। प्रत्येक भाषा के लिए उपश्रेणियां देखें: रेफरी: 'स्क्रिप्टिंग <toc-learn-scripting>' "
+"अनुभाग।"
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -563,6 +661,12 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"यदि आप सामान्य रूप से गोडॉट या गेम विकास के साथ शुरू कर रहे हैं, तो GDScript सीखने और "
+"उपयोग करने के लिए अनुशंसित भाषा है क्योंकि यह गोडॉट का मूल निवासी है। जबकि पटकथा "
+"भाषाएं लंबे समय में निचले स्तर की भाषाओं की तुलना में कम प्रदर्शन करते हैं, प्रोटोटाइप के लिए, "
+"न्यूनतम व्यवहार्य उत्पादों (एमवीपी) का विकास, और समय-से-बाजार (टीटीएम) पर ध्यान "
+"केंद्रित करते हुए, GDScript एक तेज, दोस्ताना और सक्षम तरीका प्रदान करेगा अपने खेल का "
+"विकास।"
 
 #: ../../docs/about/faq.rst:78
 msgid ""
@@ -574,6 +678,12 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"ध्यान दें कि सी # समर्थन अभी भी अपेक्षाकृत नया है, और इस तरह, आप रास्ते में कुछ मुद्दों का "
+"सामना कर सकते हैं । हमारे दोस्ताना और कड़ी मेहनत से काम कर रहे विकास समुदाय हमेशा नई "
+"समस्याओं से निपटने के लिए तैयार है के रूप में वे उठता है, लेकिन चूंकि यह एक खुला स्रोत "
+"परियोजना है, हम अनुशंसा करते है कि आप पहले कुछ कारण परिश्रम अपने आप को करते हैं । ' खुले "
+"मुद्दों पर चर्चा के माध्यम से खोज <https://github.com/godotengine/godot/issues> ' _ "
+"अपनी समस्या निवारण शुरू करने का एक शानदार तरीका है ।"
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -583,10 +693,15 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"नई भाषाओं के लिए, GDNative/NativeScript/PluginScript सुविधाओं का उपयोग कर तीसरे "
+"पक्ष के माध्यम से समर्थन संभव है । (नीचे प्लगइन्स के बारे में सवाल देखें।) वर्तमान में काम चल "
+"रहा है, उदाहरण के लिए, Godot के लिए अनधिकृत बाइंडिंग पर ' अजगर <https://github.com/"
+"touilleMan/godot-python>'_ और ' निम <https://github.com/pragmagic/godot-"
+"nim>___ ।"
 
 #: ../../docs/about/faq.rst:91
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "GDScript क्या है और मुझे इसका उपयोग क्यों करना चाहिए?"
 
 #: ../../docs/about/faq.rst:93
 msgid ""
@@ -598,6 +713,12 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"GDScript गोडॉट की एकीकृत पटकथा भाषा है। यह कोड की कम से कम राशि में गोडॉट की "
+"क्षमता को अधिकतम करने के लिए जमीन से बनाया गया था, जो नौसिखिए और विशेषज्ञ डेवलपर्स "
+"दोनों को एक जैसे गोडॉट की ताकत को यथाशीघ्र भुनाने के लिए खर्च कर रहा था। यदि आपने कभी "
+"भी पायथन जैसी भाषा में कुछ भी लिखा है तो आप घर पर सही महसूस करेंगे। उदाहरणों, इतिहास "
+"और पावर GDScript का पूर्ण अवलोकन आपको प्रदान करता है, :रेफरी: 'GDScript स्क्रिप्टिंग "
+"गाइड <doc_gdscript>' देखें।"
 
 #: ../../docs/about/faq.rst:100
 msgid ""
@@ -606,6 +727,9 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"GDScript का उपयोग करने के कई कारण हैं- खासकर जब आप अपनी परियोजना के अल्फा/बीटा "
+"चरणों में प्रोटोटाइप कर रहे हैं, या अगले एएए शीर्षक का निर्माण नहीं कर रहे हैं -- लेकिन सबसे "
+"मुख्य कारण जटिलता की समग्र * * कमी है।"
 
 #: ../../docs/about/faq.rst:104
 msgid ""
@@ -619,6 +743,13 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"Godot के लिए एक कसकर एकीकृत, कस्टम पटकथा भाषा बनाने का मूल इरादा दो गुना था: पहला, "
+"यह Godot के साथ उठने और चलने के लिए आवश्यक समय की मात्रा को कम कर देता है, डेवलपर्स पर "
+"ध्यान केंद्रित करने के साथ इंजन को खुद को उजागर करने का एक तेजी से तरीका दे रही है "
+"उत्पादकता; दूसरा, यह रखरखाव के समग्र बोझ को कम करता है, मुद्दों की आयामीता को क्षीण "
+"करता है, और इंजन के डेवलपर्स को कीड़े स्क्वैशिंग पर ध्यान केंद्रित करने और इंजन कोर से संबंधित "
+"सुविधाओं में सुधार करने की अनुमति देता है--बजाय बहुत समय बिताने के लिए एक पाने की कोशिश "
+"कर रहा भाषाओं के एक बड़े सेट में काम कर रहे वृद्धिशील सुविधाओं का छोटा सेट।"
 
 #: ../../docs/about/faq.rst:112
 msgid ""
@@ -632,6 +763,14 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
+"चूंकि गोडोट एक ओपन-सोर्स प्रोजेक्ट है, इसलिए अधिक परिचित प्रोग्रामिंग भाषाओं का समर्थन "
+"करके अतिरिक्त उपयोगकर्ताओं को आकर्षित करने के लिए एक अधिक एकीकृत और निर्बाध अनुभव को "
+"प्राथमिकता देना शुरू से ही अनिवार्य था - विशेषकर जब उन अधिक परिचित भाषाओं का समर्थन "
+"करने से एक बदतर अनुभव होगा। हम समझते हैं कि क्या आप गोडोट में एक और भाषा का उपयोग करेंगे "
+"(ऊपर समर्थित विकल्पों की सूची देखें)। कहा जा रहा है, अगर आपने GDScript को एक कोशिश "
+"नहीं दिया है, तो इसे ** तीन दिन ** के लिए आज़माएं। गोडोट की तरह, एक बार जब आप देखते "
+"हैं कि यह कितना शक्तिशाली है और तेजी से आपका विकास हो जाता है, तो हमें लगता है कि "
+"GDScript आप पर बढ़ेगा।"
 
 #: ../../docs/about/faq.rst:121
 msgid ""
@@ -639,27 +778,33 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"GDScript या गतिशील रूप से टाइप की गई भाषाओं के साथ सहज होने के बारे में अधिक जानकारी:"
+"रेफरी: 'doc_gdscript_more_efficiently' ट्यूटोरियल में पाई जा सकती है।"
 
 #: ../../docs/about/faq.rst:125
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "GDScript बनाने के पीछे क्या मंशा थी?"
 
 #: ../../docs/about/faq.rst:127
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr ""
+msgstr "गोडॉट के लिए एक कस्टम स्क्रिप्टिंग भाषा बनाने के मुख्य कारण थे:"
 
 #: ../../docs/about/faq.rst:129
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
+"अधिकांश स्क्रिप्ट वीएम में खराब थ्रेड समर्थन, और गोडॉट धागे (लुआ, पायथन, गिलहरी, जेएस, "
+"एएस, आदि) का उपयोग करता है।"
 
 #: ../../docs/about/faq.rst:131
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"अधिकांश स्क्रिप्ट वीएम में खराब वर्ग-विस्तार समर्थन, और गोडॉट के काम करने के तरीके के अनुकूल "
+"होना अत्यधिक अक्षम है (लुआ, पायथन, जेएस)।"
 
 #: ../../docs/about/faq.rst:133
 msgid ""
@@ -668,48 +813,63 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
+"कई मौजूदा भाषाओं में सी + + के लिए बाध्यकारी के लिए भयानक इंटरफेस होते हैं, जिसके "
+"परिणामस्वरूप बड़ी मात्रा में कोड, बग, बाधाएं और सामान्य अक्षमता (लुआ, पायथन, गिलहरी, "
+"जेएस आदि) होती है। हम एक महान इंजन पर ध्यान केंद्रित करना चाहते थे, न कि बड़ी मात्रा में "
+"एकीकरण।"
 
 #: ../../docs/about/faq.rst:136
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"कोई देशी वेक्टर प्रकार (वेक्टर 3, मैट्रिक्स 4, आदि), जिसके परिणामस्वरूप कस्टम प्रकार (लुआ, "
+"पायथन, गिलहरी, जेएस, एएस, आदि) का उपयोग करते समय अत्यधिक कम प्रदर्शन होता है।"
 
 #: ../../docs/about/faq.rst:139
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
+"कचरा कलेक्टर स्टालों या अनावश्यक रूप से बड़े स्मृति उपयोग (Lua, अजगर, जेएस, AS, आदि) में "
+"परिणाम है ।"
 
 #: ../../docs/about/faq.rst:141
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
+"कोड पूरा करने, लाइव संपादन, आदि (उन सभी) प्रदान करने के लिए कोड संपादक के साथ एकीकृत "
+"करने में कठिनाई। यह जीडीस्क्रिप्ट द्वारा अच्छी तरह से समर्थित है।"
 
 #: ../../docs/about/faq.rst:145
 msgid "GDScript was designed to curtail the issues above and more."
-msgstr ""
+msgstr "GDScript ऊपर और अधिक मुद्दों में कटौती करने के लिए डिज़ाइन किया गया था।"
 
 #: ../../docs/about/faq.rst:148
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "गोडॉट किस प्रकार के 3डी मॉडल प्रारूपों का समर्थन करता है?"
 
 #: ../../docs/about/faq.rst:150
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
+"गोडॉट ' ओपनकोलाडा <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
+"OpenCOLLADA-Tools> '_ निर्यातक (माया, 3DSMax) के माध्यम से कोलाडा का समर्थन करता "
+"है ।"
 
 #: ../../docs/about/faq.rst:152
 msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"यदि आप ब्लेंडर का उपयोग कर रहे हैं, तो हमारे अपने ' बेहतर कोलाडा निर्यातक पर एक नज़र "
+"डालें < https://godotengine.org/download>'_।"
 
 #: ../../docs/about/faq.rst:154
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "गोडॉट 3.0 के अनुसार, जीएलटीएफ समर्थित है।"
 
 #: ../../docs/about/faq.rst:156
 msgid ""
@@ -719,11 +879,15 @@ msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question below.)"
 msgstr ""
+"FBX SDK के पास ' प्रतिबंधात्मक लाइसेंस < https://www.blender.org/bf/"
+"Autodesk_FBX_License.rtf>'_, जो ' ओपन लाइसेंस <https://opensource.org/licenses/"
+"MIT> ' _ गोडॉट द्वारा प्रदान की गई है । यह कहा जा रहा है, FBX समर्थन अभी भी एक "
+"प्लगइन के रूप में तीसरे पक्ष द्वारा प्रदान किया जा सकता है । (नीचे प्लगइन्स प्रश्न देखें।)"
 
 #: ../../docs/about/faq.rst:162
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
-msgstr ""
+msgstr "क्या गोडॉट में [बंद एसडीके जैसे FMOD, गेमवर्क्स आदि] का समर्थन किया जाएगा?"
 
 #: ../../docs/about/faq.rst:164
 msgid ""
@@ -732,6 +896,10 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"गोडॉट का उद्देश्य एक मुफ्त और ओपन-सोर्स एमआईटी-लाइसेंस युक्त इंजन बनाना है जो मॉड्यूलर और "
+"एक्सटेंडेबल है। कोर इंजन विकास समुदाय के लिए किसी भी तीसरे पक्ष, बंद स्रोत/मालिकाना "
+"एसडीके का समर्थन करने की कोई योजना नहीं है, क्योंकि इनके साथ एकीकृत गोडॉट के लोकाचार के "
+"खिलाफ जाना होगा ।"
 
 #: ../../docs/about/faq.rst:169
 msgid ""
@@ -739,12 +907,17 @@ msgid ""
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
+"उस ने कहा, क्योंकि गोडॉट ओपन-सोर्स और मॉड्यूलर है, कुछ भी आपको या किसी और को मॉड्यूल के "
+"रूप में उन पुस्तकालयों को जोड़ने और उनके साथ अपने खेल को शिपिंग करने में रुचि रखता है - या तो "
+"खुले या बंद स्रोत के रूप में।"
 
 #: ../../docs/about/faq.rst:173
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
+"यह देखने के लिए कि आपकी पसंद के एसडीके के लिए समर्थन अभी भी कैसे प्रदान किया जा सकता है, "
+"नीचे प्लगइन्स प्रश्न को देखें।"
 
 #: ../../docs/about/faq.rst:176
 msgid ""
@@ -753,12 +926,16 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"यदि आप किसी तृतीय-पक्ष एसडीके के बारे में जानते हैं जिसे गोडॉट द्वारा समर्थित नहीं किया "
+"जाता है, लेकिन यह मुफ्त और ओपन-सोर्स एकीकरण प्रदान करता है, तो एकीकरण का काम स्वयं शुरू "
+"करने पर विचार करें। गोडॉट का स्वामित्व एक व्यक्ति के पास नहीं है; यह समुदाय के अंतर्गत आता "
+"है, और यह आप जैसे महत्वाकांक्षी समुदाय योगदानकर्ताओं के साथ बढ़ता है ।"
 
 #: ../../docs/about/faq.rst:182
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
-msgstr ""
+msgstr "कई संकल्पों और पहलू अनुपातों को संभालने के लिए परिसंपत्तियां कैसे बनाई जानी चाहिए?"
 
 #: ../../docs/about/faq.rst:184
 msgid ""
@@ -770,6 +947,12 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"यह सवाल अक्सर चबूतरे और यह शायद एप्पल द्वारा बनाई गई गलतफहमी के लिए धंयवाद है जब वे "
+"मूल रूप से अपने उपकरणों के संकल्प दोगुनी हो गई । यह लोगों को लगता है कि विभिंन संकल्पों में "
+"एक ही संपत्ति होने एक अच्छा विचार था, तो कई उस रास्ते की ओर जारी रखा । कि मूल रूप से "
+"एक बिंदु पर काम किया और केवल एप्पल उपकरणों के लिए, लेकिन फिर कई एंड्रॉयड और विभिन्न "
+"संकल्पों और पहलू अनुपात के साथ एप्पल उपकरणों बनाया गया था, आकार और DPIs की एक बहुत "
+"विस्तृत श्रृंखला के साथ ।"
 
 #: ../../docs/about/faq.rst:192
 msgid ""
@@ -778,6 +961,9 @@ msgid ""
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
+"इसे प्राप्त करने का सबसे आम और उचित तरीका यह है कि खेल के लिए एक ही आधार रिज़ॉल्यूशन का "
+"उपयोग करें और केवल विभिन्न स्क्रीन पहलू अनुपात को संभालें। यह ज्यादातर 2D के लिए आवश्यक है, "
+"क्योंकि 3 डी में यह सिर्फ कैमरा XFov या YFov की बात है।"
 
 #: ../../docs/about/faq.rst:196
 msgid ""
@@ -788,6 +974,11 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"अपने खेल के लिए एक ही आधार संकल्प चुनें। यहां तक कि अगर ऐसे उपकरण हैं जो 2K और डिवाइस तक "
+"जाते हैं जो 400p तक जाते हैं, तो आपके डिवाइस में नियमित हार्डवेयर स्केलिंग कम या किसी "
+"प्रदर्शन लागत पर इसका ख्याल रखेगी। सबसे आम विकल्प या तो 1080p (1920x1080) या 720p "
+"(1280x720) के पास हैं । संकल्प जितना अधिक होगा, आपकी संपत्ति जितनी बड़ी होगी, उतनी "
+"ही अधिक मेमोरी होगी और लोडिंग के लिए उतना ही अधिक समय लगेगा, इसका ध्यान रखें।"
 
 #: ../../docs/about/faq.rst:204
 msgid ""
@@ -795,6 +986,9 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
+"गोडॉट में खिंचाव विकल्पों का उपयोग करें; 2डी खींच जबकि पहलू अनुपात रखने के सबसे अच्छा काम "
+"करता है । इस लक्ष्य को प्राप्त करने के तरीके पर :रेफरी: 'doc_multiple_resolutions "
+"ट्यूटोरियल की जांच करें।"
 
 #: ../../docs/about/faq.rst:208
 msgid ""
@@ -803,6 +997,10 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
+"एक न्यूनतम संकल्प निर्धारित करें और फिर तय करें कि क्या आप चाहते हैं कि आपका खेल विभिन्न "
+"पहलू अनुपातों के लिए खड़ी या क्षैतिज रूप से फैला हो, या यदि एक पहलू अनुपात है और आप चाहते "
+"हैं कि इसके बजाय काले सलाखों को दिखाई दें। यह भी में समझाया गया है: रेफरी: "
+"'doc_multiple_resolutions'।"
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -810,10 +1008,13 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"यूजर इंटरफेस के लिए, यह निर्धारित करने के लिए :रेफरी:'एंकरिंग <doc_size_and_anchors>' "
+"का उपयोग करें कि नियंत्रण कहां रहना चाहिए और आगे बढ़ना चाहिए। यदि यूआई अधिक जटिल हैं, "
+"तो कंटेनरों के बारे में सीखने पर विचार करें।"
 
 #: ../../docs/about/faq.rst:217
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr ""
+msgstr "और यह बात है! आपके खेल को कई संकल्पों में काम करना चाहिए।"
 
 #: ../../docs/about/faq.rst:219
 msgid ""
@@ -822,10 +1023,14 @@ msgid ""
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
+"यदि आपके खेल को छोटे स्क्रीन (चौड़ाई में 300 पिक्सल से कम) वाले प्राचीन उपकरणों पर भी काम "
+"करने की इच्छा है, तो आप छवियों को सिकोड़ने के लिए निर्यात विकल्प का उपयोग कर सकते हैं, "
+"और सेट कर सकते हैं जो ऐप स्टोर या Google Play में कुछ स्क्रीन आकारों के लिए उपयोग किया "
+"जा सकता है।"
 
 #: ../../docs/about/faq.rst:225
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "मैं गोडॉट का विस्तार कैसे कर सकता हूं?"
 
 #: ../../docs/about/faq.rst:227
 msgid ""
@@ -833,20 +1038,25 @@ msgid ""
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
+"गोडॉट का विस्तार करने के लिए, गोडॉट एडिटर प्लगइन्स बनाने या अतिरिक्त भाषाओं के लिए "
+"समर्थन जोड़ने जैसे, एक नज़र डालें: रेफरी: 'एडिटरप्लगइन्स <doc_making_plugins>' और टूल "
+"स्क्रिप्ट।"
 
 #: ../../docs/about/faq.rst:231
 msgid "Also, see the official blog posts on these topics:"
-msgstr ""
+msgstr "इसके अलावा, इन विषयों पर आधिकारिक ब्लॉग पोस्ट देखें:"
 
 #: ../../docs/about/faq.rst:233
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
+"' जीडीनेटिव आर्किटेक्चर पर एक नजर <https://godotengine.org/article/look-gdnative-"
+"architecture> '_"
 
 #: ../../docs/about/faq.rst:234
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr ""
+msgstr "' GDNative यहां है! <https://godotengine.org/article/dlscript-यहां> '_"
 
 #: ../../docs/about/faq.rst:236
 msgid ""
@@ -855,16 +1065,22 @@ msgid ""
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
+"आप गोडॉट के लिए जीडीस्क्रिप्ट कार्यान्वयन, गोडॉट मॉड्यूल के साथ-साथ 'अनधिकृत पायथन "
+"समर्थन <https://github.com/touilleMan/godot-python>'_ पर भी एक नज़र डाल सकते हैं। "
+"यह देखने के लिए एक अच्छा प्रारंभिक बिंदु होगा कि एक और तीसरे पक्ष की लाइब्रेरी गोडॉट के "
+"साथ कैसे एकीकृत होती है।"
 
 #: ../../docs/about/faq.rst:242
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "मैं योगदान करना चाहूंगा! मैं कैसे शुरू कर सकते हैं?"
 
 #: ../../docs/about/faq.rst:244
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"ग़जब का! एक ओपन-सोर्स प्रोजेक्ट के रूप में, गोडॉट आपजैसे डेवलपर्स के नवाचार और महत्वाकांक्षा "
+"से दूर पनपता है।"
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -874,10 +1090,15 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"पहली जगह शुरू करने के लिए ' मुद्दों में है <https://github.com/godotengine/godot/"
+"issues>'_। एक मुद्दा है कि आप के साथ प्रतिध्वनित का पता लगाएं, तो ' कैसे योगदान करने के "
+"लिए <https://github.com/godotengine/godot/blob/master/contributING.md "
+"#contributing-पुल-अनुरोध> ' _ गाइड जानने के लिए कैसे कांटा, संशोधित, और अपने परिवर्तन "
+"के साथ एक पुल अनुरोध (पीआर) प्रस्तुत करने के लिए आगे बढ़ें ।"
 
 #: ../../docs/about/faq.rst:252
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "मैं Godot के लिए एक महान विचार है। मैं इसे कैसे साझा कर सकता हूं?"
 
 #: ../../docs/about/faq.rst:254
 msgid ""
@@ -891,39 +1112,51 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"यह Godot के लिए विचारों को लाना चाहते हैं, लोगों की तरह है कि बड़े पैमाने पर मुख्य "
+"परिवर्तन में परिणाम आकर्षक हो सकता है, क्या एक और खेल इंजन करता है, या वैकल्पिक वर्कफ्लो "
+"है कि आप संपादक में बनाया चाहते है की नकल के कुछ प्रकार । ये महान हैं और हम ऐसे प्रेरित "
+"लोगों को योगदान करना चाहते हैं, लेकिन गोडॉट का ध्यान है और हमेशा मुख्य कार्यक्षमता होगी "
+"जैसा कि ' रोडमैप < https://github.com/godotengine/godot-रोडमैप/blob/master/md."
+"md>'_, ' कीड़े स्क्वैशिंग और मुद्दों को संबोधित <https://github.com/godotengine/godot/"
+"issues>'_, और Godot समुदाय के सदस्यों के बीच बातचीत ।"
 
 #: ../../docs/about/faq.rst:263
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
+"गोडॉट समुदाय के अधिकांश डेवलपर्स इस तरह की चीजों के बारे में जानने के लिए अधिक रुचि रखते हैं:"
 
 #: ../../docs/about/faq.rst:266
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"सॉफ्टवेयर का उपयोग करके आपका अनुभव और आपके पास समस्याएं हैं (हम इसे बेहतर बनाने के तरीके "
+"पर विचारों की तुलना में इस बारे में बहुत अधिक परवाह करते हैं)।"
 
 #: ../../docs/about/faq.rst:268
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
+"उन सुविधाओं को जो आप लागू करना चाहते हैं क्योंकि आपको अपनी परियोजना के लिए उनकी "
+"आवश्यकता है।"
 
 #: ../../docs/about/faq.rst:270
 msgid ""
 "The concepts that were difficult to understand while learning the software."
-msgstr ""
+msgstr "सॉफ्टवेयर सीखते समय जिन अवधारणाओं को समझना मुश्किल था।"
 
 #: ../../docs/about/faq.rst:271
 msgid "The parts of your workflow you would like to see optimized."
-msgstr ""
+msgstr "आपके कार्यप्रवाह के भाग ों को आप अनुकूलित देखना चाहते हैं।"
 
 #: ../../docs/about/faq.rst:272
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
-msgstr ""
+msgstr "भागों जहां आप स्पष्ट ट्यूटोरियल याद किया या जहां प्रलेखन स्पष्ट नहीं था।"
 
 #: ../../docs/about/faq.rst:274
 msgid ""
@@ -931,6 +1164,9 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
+"कृपया Godot के लिए अपने विचारों की तरह महसूस नहीं कर रहे है अनिष्ट कर रहे हैं । इसके "
+"बजाय, उन्हें पहले एक समस्या के रूप में फिर से तैयार करने की कोशिश करें, इसलिए डेवलपर्स और "
+"समुदाय के पास आपके विचारों को जमीन पर रखने के लिए एक कार्यात्मक नींव है।"
 
 #: ../../docs/about/faq.rst:278
 msgid ""
@@ -940,16 +1176,23 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"समुदाय के साथ अपने विचारों और समस्याओं को साझा करने के लिए दृष्टिकोण करने का एक अच्छा "
+"तरीका उपयोगकर्ता कहानियों के एक सेट के रूप में है। समझाएं कि आप क्या करने की कोशिश कर रहे "
+"हैं, आप क्या व्यवहार होने की उम्मीद करते हैं, और फिर वास्तव में क्या व्यवहार हुआ। समस्याओं और "
+"विचारों को इस तरह से तैयार करने से पूरे समुदाय को पूरे डेवलपर अनुभवों में सुधार पर ध्यान "
+"केंद्रित करने में मदद मिलेगी।"
 
 #: ../../docs/about/faq.rst:284
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
+"स्क्रीनशॉट, ठोस संख्या, परीक्षण के मामले, या उदाहरण परियोजनाओं (यदि लागू हो) लाने के "
+"लिए बोनस अंक।"
 
 #: ../../docs/about/faq.rst:289
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "गोडॉट एसटीएल (स्टैंडर्ड टेम्पलेट लाइब्रेरी) का उपयोग क्यों नहीं करता है"
 
 #: ../../docs/about/faq.rst:291
 msgid ""
@@ -957,12 +1200,17 @@ msgid ""
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"कई अन्य पुस्तकालयों (एक उदाहरण के रूप में क्यूटी) की तरह, गोडॉट एसटीएल का उपयोग नहीं "
+"करता है। हमारा मानना है कि एसटीएल एक महान सामान्य उद्देश्य पुस्तकालय है, लेकिन हमारे "
+"पास गोडॉट के लिए विशेष आवश्यकताएं थीं।"
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"एसटीएल टेम्पलेट्स बहुत बड़े प्रतीक बनाते हैं, जिसके परिणामस्वरूप विशाल डिबग बाइनरी होते हैं। "
+"हम इसके बजाय बहुत कम नामों के साथ कुछ टेम्पलेट्स का उपयोग करते हैं।"
 
 #: ../../docs/about/faq.rst:296
 msgid ""
@@ -971,28 +1219,38 @@ msgid ""
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"हमारे अधिकांश कंटेनर वेक्टर जैसी विशेष आवश्यकताओं को पूरा करते हैं, जो लिखने पर कॉपी का "
+"उपयोग करता है और हम डेटा को पास करने के लिए उपयोग करते हैं, या आरडी सिस्टम, जिसके लिए "
+"प्रदर्शन के लिए ओ (1) एक्सेस समय की आवश्यकता होती है। इसी तरह, हमारे हैश मानचित्र "
+"कार्यान्वयन आंतरिक इंजन प्रकारों के साथ मूल रूप से एकीकृत करने के लिए डिज़ाइन किए गए हैं।"
 
 #: ../../docs/about/faq.rst:297
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"हमारे कंटेनरों में मेमोरी ट्रैकिंग बिल्ट-इन है, जो मेमोरी के बेहतर उपयोग को ट्रैक करने में मदद "
+"करता है।"
 
 #: ../../docs/about/faq.rst:298
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"बड़े सरणी के लिए, हम पूल्ड मेमोरी का उपयोग करते हैं, जिसे या तो प्रीआवंटित बफर या वर्चुअल "
+"मेमोरी के लिए मैप किया जा सकता है।"
 
 #: ../../docs/about/faq.rst:299
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"हम अपने कस्टम स्ट्रिंग प्रकार का उपयोग करते हैं, क्योंकि एसटीएल द्वारा प्रदान किया गया एक "
+"बहुत बुनियादी है और उचित अंतर्राष्ट्रीयकरण समर्थन का अभाव है।"
 
 #: ../../docs/about/faq.rst:302
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "गोडॉट अपवादों का उपयोग क्यों नहीं करता है?"
 
 #: ../../docs/about/faq.rst:304
 msgid ""
@@ -1001,16 +1259,19 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"हमारा मानना है कि खेल दुर्घटना नहीं होना चाहिए, कोई बात नहीं क्या । यदि कोई "
+"अप्रत्याशित स्थिति होती है, तो गोडॉट एक त्रुटि प्रिंट करेगा (जिसे स्क्रिप्ट तक भी ढूंढा जा "
+"सकता है), लेकिन फिर यह यथासंभव शान से ठीक होने की कोशिश करेगा और चलता रहेगा।"
 
 #: ../../docs/about/faq.rst:309
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
-msgstr ""
+msgstr "इसके अतिरिक्त, अपवाद में काफी वृद्धि द्विआधारी आकार के लिए निष्पादन योग्य."
 
 #: ../../docs/about/faq.rst:313
 msgid "Why does Godot not enforce RTTI?"
-msgstr ""
+msgstr "गोडॉट आरटीटीआई को लागू क्यों नहीं करता?"
 
 #: ../../docs/about/faq.rst:315
 msgid ""
@@ -1018,10 +1279,15 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
+"गोडॉट अपना टाइप-कास्टिंग सिस्टम प्रदान करता है, जो वैकल्पिक रूप से आंतरिक रूप से "
+"आरटीटीआई का उपयोग कर सकता है। गोडॉट में आरटीटीआई को अक्षम करने का मतलब है कि थोड़े "
+"प्रदर्शन लागत पर काफी छोटे बाइनरी आकार प्राप्त किए जा सकते हैं।"
 
 #: ../../docs/about/faq.rst:320
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
+"गोडॉट उपयोगकर्ताओं को डीओडी (डेटा उन्मुख डिजाइन) को लागू करने के लिए क्यों मजबूर नहीं "
+"करता है?"
 
 #: ../../docs/about/faq.rst:322
 msgid ""
@@ -1029,6 +1295,9 @@ msgid ""
 "use cache coherency as best as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"जबकि गोडॉट आंतरिक रूप से बहुत सारे भारी प्रदर्शन कार्यों के लिए कैश कॉरेनेंसेंसी का उपयोग "
+"करने का प्रयास करता है, हमारा मानना है कि अधिकांश उपयोगकर्ताओं को वास्तव में DoD प्रथाओं "
+"का उपयोग करने के लिए मजबूर होने की आवश्यकता नहीं है।"
 
 #: ../../docs/about/faq.rst:326
 msgid ""
@@ -1038,12 +1307,19 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"डीओडी ज्यादातर एक कैश सहधारण अनुकूलन है जो दर्जनों हजारों वस्तुओं (जो कम संशोधन के साथ हर "
+"फ्रेम को संसाधित किया जाता है) से निपटने के दौरान केवल आपको महत्वपूर्ण प्रदर्शन सुधार "
+"प्राप्त कर सकता है। जैसे, यदि आप प्रति फ्रेम कुछ सौ स्प्राइट्स या दुश्मन आगे बढ़ रहे हैं, तो "
+"डीओडी आपकी मदद नहीं करेगा, और आपको अनुकूलन के लिए एक अलग दृष्टिकोण पर विचार करना "
+"चाहिए।"
 
 #: ../../docs/about/faq.rst:333
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"अधिकांश खेलों को इसकी आवश्यकता नहीं होती है और गोडॉट अधिकांश मामलों के लिए काम करने के "
+"लिए काम करने के लिए काम सहायक प्रदान करता है जब आप करते हैं।"
 
 #: ../../docs/about/faq.rst:336
 msgid ""
@@ -1051,28 +1327,31 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"यदि एक खेल है कि वास्तव में वस्तुओं की इतनी बड़ी राशि की प्रक्रिया की जरूरत है की जरूरत है, "
+"हमारी सिफारिश के लिए उच्च प्रदर्शन भागों और GDScript (या सी #) खेल के बाकी के लिए सी "
+"+ + और GDNative का उपयोग करने के लिए है ।"
 
 #: ../../docs/about/faq.rst:341
 msgid "How can I support Godot development or contribute?"
-msgstr ""
+msgstr "मैं गोडॉट विकास का समर्थन कैसे कर सकता हूं या योगदान कैसे कर सकता हूं?"
 
 #: ../../docs/about/faq.rst:343
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ""
+msgstr "देखें:रेफरी: 'doc_ways_to_contribute'।"
 
 #: ../../docs/about/faq.rst:346
 msgid "Who is working on Godot? How can I contact you?"
-msgstr ""
+msgstr "गोडॉट पर कौन काम कर रहा है? मैं आपसे कैसे संपर्क कर सकता हूं?"
 
 #: ../../docs/about/faq.rst:348
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
-msgstr ""
+msgstr "' Godot वेबसाइट <https://godotengine.org/contact>'_पर इसी पेज देखें ।"
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr ""
+msgstr "प्रलेखन परिवर्तन"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -1081,6 +1360,9 @@ msgid ""
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"प्रलेखन में लगातार सुधार किया जा रहा है । संस्करण 3.1 की रिहाई में कई नए ट्यूटोरियल, "
+"पुराने ट्यूटोरियल के लिए कई सुधार और अपडेट, और वर्ग संदर्भ के कई अपडेट शामिल हैं। नीचे "
+"संस्करण 3.0 के बाद से जोड़े गए नए ट्यूटोरियल की एक सूची दी गई है।"
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -1088,313 +1370,299 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"इस दस्तावेज़ में केवल नए ट्यूटोरियल शामिल हैं, इसलिए सभी परिवर्तन परिलक्षित नहीं होते हैं, "
+"कई ट्यूटोरियल काफी हद तक अपडेट किए गए हैं लेकिन इस दस्तावेज़ में परिलक्षित नहीं होते हैं।"
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.1"
-msgstr ""
+msgstr "संस्करण 3.1 के बाद से नए ट्यूटोरियल"
 
 #: ../../docs/about/docs_changelog.rst:17
 #: ../../docs/about/docs_changelog.rst:116
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "परियोजना कार्यप्रवाह"
 
 #: ../../docs/about/docs_changelog.rst:19
 msgid ":ref:`doc_android_custom_build`"
-msgstr ""
+msgstr ":रेफरी: 'doc_android_custom_build'"
 
 #: ../../docs/about/docs_changelog.rst:22
 #: ../../docs/about/docs_changelog.rst:132 ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:24
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_2d_sprite_animation'"
 
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2
 msgid "Audio"
-msgstr ""
+msgstr "ऑडियो"
 
 #: ../../docs/about/docs_changelog.rst:29
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_sync_with_audio'"
 
 #: ../../docs/about/docs_changelog.rst:32 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr ""
+msgstr "गणित"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_beziers_and_curves'"
 
 #: ../../docs/about/docs_changelog.rst:35
-#, fuzzy
 msgid ":ref:`doc_interpolation`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_interpolation'"
 
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
 msgid "Inputs"
-msgstr ""
+msgstr "जानकारी"
 
 #: ../../docs/about/docs_changelog.rst:40
-#, fuzzy
 msgid ":ref:`doc_input_examples`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_input_examples'"
 
 #: ../../docs/about/docs_changelog.rst:43 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
-msgstr ""
+msgstr "अंतर्राष्ट्रीयकरण"
 
 #: ../../docs/about/docs_changelog.rst:45
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr ""
+msgstr ":रेफरी: 'doc_localization_using_gettext'"
 
 #: ../../docs/about/docs_changelog.rst:48
 #: ../../docs/about/docs_changelog.rst:168
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr ""
+msgstr "छायाप्रभाव"
 
 #: ../../docs/about/docs_changelog.rst:50
 msgid "Your First Shader Series:"
-msgstr ""
+msgstr "आपकी पहली शाडर श्रृंखला:"
 
 #: ../../docs/about/docs_changelog.rst:52
 msgid ":ref:`doc_what_are_shaders`"
-msgstr ""
+msgstr ":रेफरी: 'doc_what_are_shaders'"
 
 #: ../../docs/about/docs_changelog.rst:53
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr ""
+msgstr ":रेफरी: 'doc_your_first_canvasitem_shader'"
 
 #: ../../docs/about/docs_changelog.rst:54
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr ""
+msgstr ":रेफरी: 'doc_your_first_spatial_shader'"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr ""
+msgstr ":रेफरी: 'doc_your_second_spatial_shader'"
 
 #: ../../docs/about/docs_changelog.rst:58
 #: ../../docs/tutorials/networking/index.rst:2
 msgid "Networking"
-msgstr ""
+msgstr "नेटवर्किंग"
 
 #: ../../docs/about/docs_changelog.rst:60
 msgid ":ref:`doc_webrtc`"
-msgstr ""
+msgstr ":रेफरी: 'doc_webrtc'"
 
 #: ../../docs/about/docs_changelog.rst:63 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr ""
+msgstr "Vr"
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_vr_starter_tutorial_part_one'"
 
 #: ../../docs/about/docs_changelog.rst:66
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_vr_starter_tutorial_part_two'"
 
 #: ../../docs/about/docs_changelog.rst:69
 #: ../../docs/about/docs_changelog.rst:183
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr ""
+msgstr "प्लगइन्स"
 
 #: ../../docs/about/docs_changelog.rst:71
-#, fuzzy
 msgid ":ref:`doc_android_plugin`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_android_plugin'"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_inspector_plugins'"
 
 #: ../../docs/about/docs_changelog.rst:73
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_visual_shader_plugins'"
 
 #: ../../docs/about/docs_changelog.rst:76
 #: ../../docs/about/docs_changelog.rst:194
 #: ../../docs/tutorials/threads/index.rst:2
 msgid "Multi-threading"
-msgstr ""
+msgstr "मल्टी थ्रेडिंग"
 
 #: ../../docs/about/docs_changelog.rst:78
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_using_multiple_threads'"
 
 #: ../../docs/about/docs_changelog.rst:81
 #: ../../docs/about/docs_changelog.rst:199
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
 msgstr "सामग्री बनाना"
 
 #: ../../docs/about/docs_changelog.rst:88
 msgid "Procedural geometry series:"
-msgstr ""
+msgstr "प्रक्रियात्मक ज्यामिति श्रृंखला:"
 
 #: ../../docs/about/docs_changelog.rst:84
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ""
+msgstr ":रेफरी: 'प्रक्रियात्मक ज्यामिति <toc-procedural_geometry>'"
 
 #: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_arraymesh'"
 
 #: ../../docs/about/docs_changelog.rst:86
-#, fuzzy
 msgid ":ref:`doc_surfacetool`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_surfacetool'"
 
 #: ../../docs/about/docs_changelog.rst:87
-#, fuzzy
 msgid ":ref:`doc_meshdatatool`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_meshdatatool'"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`doc_immediategeometry`"
-msgstr "सामग्री बनाना"
+msgstr ":रेफरी: 'doc_immediategeometry'"
 
 #: ../../docs/about/docs_changelog.rst:91
 #: ../../docs/tutorials/optimization/index.rst:2
 msgid "Optimization"
-msgstr ""
+msgstr "अनुकूलन"
 
 #: ../../docs/about/docs_changelog.rst:93
 msgid ":ref:`doc_using_multimesh`"
-msgstr ""
+msgstr ":रेफरी: 'doc_using_multimesh'"
 
 #: ../../docs/about/docs_changelog.rst:94
 msgid ":ref:`doc_using_servers`"
-msgstr ""
+msgstr ":रेफरी: 'doc_using_servers'"
 
 #: ../../docs/about/docs_changelog.rst:97
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "कानूनी"
 
 #: ../../docs/about/docs_changelog.rst:99
 msgid ":ref:`doc_complying_with_licenses`"
-msgstr ""
+msgstr ":रेफरी: 'doc_complying_with_licenses'"
 
 #: ../../docs/about/docs_changelog.rst:102
 msgid "New tutorials since version 3.0"
-msgstr ""
+msgstr "संस्करण 3.0 के बाद से नए ट्यूटोरियल"
 
 #: ../../docs/about/docs_changelog.rst:105
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:18
 msgid "Step by step"
-msgstr ""
+msgstr "कदम दर कदम"
 
 #: ../../docs/about/docs_changelog.rst:107
 msgid ":ref:`doc_signals`"
-msgstr ""
+msgstr ":रेफरी: 'doc_signals'"
 
 #: ../../docs/about/docs_changelog.rst:108
 msgid ":ref:`doc_exporting`"
-msgstr ""
+msgstr ":रेफरी: 'doc_exporting'"
 
 #: ../../docs/about/docs_changelog.rst:111
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr ""
+msgstr "स्क्रिप्टिंग"
 
 #: ../../docs/about/docs_changelog.rst:113
 msgid ":ref:`doc_gdscript_static_typing`"
-msgstr ""
+msgstr ":रेफरी: 'doc_gdscript_static_typing'"
 
 #: ../../docs/about/docs_changelog.rst:118
 msgid "Best Practices:"
-msgstr ""
+msgstr "सर्वोत्तम प्रथाएं:"
 
 #: ../../docs/about/docs_changelog.rst:120
 msgid ":ref:`doc_introduction_best_practices`"
-msgstr ""
+msgstr ":रेफरी: 'doc_introduction_best_practices'"
 
 #: ../../docs/about/docs_changelog.rst:121
 msgid ":ref:`doc_what_are_godot_classes`"
-msgstr ""
+msgstr ":रेफरी: 'doc_what_are_godot_classes'"
 
 #: ../../docs/about/docs_changelog.rst:122
 msgid ":ref:`doc_scene_organization`"
-msgstr ""
+msgstr ":रेफरी: 'doc_scene_organization'"
 
 #: ../../docs/about/docs_changelog.rst:123
 msgid ":ref:`doc_scenes_versus_scripts`"
-msgstr ""
+msgstr ":रेफरी: 'doc_scenes_versus_scripts'"
 
 #: ../../docs/about/docs_changelog.rst:124
 msgid ":ref:`doc_autoloads_versus_internal_nodes`"
-msgstr ""
+msgstr ":रेफरी: 'doc_autoloads_versus_internal_nodes'"
 
 #: ../../docs/about/docs_changelog.rst:125
 msgid ":ref:`doc_node_alternatives`"
-msgstr ""
+msgstr ":रेफरी: 'doc_node_alternatives'"
 
 #: ../../docs/about/docs_changelog.rst:126
 msgid ":ref:`doc_godot_interfaces`"
-msgstr ""
+msgstr ":रेफरी: 'doc_godot_interfaces'"
 
 #: ../../docs/about/docs_changelog.rst:127
 msgid ":ref:`doc_godot_notifications`"
-msgstr ""
+msgstr ":रेफरी: 'doc_godot_notifications'"
 
 #: ../../docs/about/docs_changelog.rst:128
 msgid ":ref:`doc_data_preferences`"
-msgstr ""
+msgstr ":रेफरी: 'doc_data_preferences'"
 
 #: ../../docs/about/docs_changelog.rst:129
 msgid ":ref:`doc_logic_preferences`"
-msgstr ""
+msgstr ":रेफरी: 'doc_logic_preferences'"
 
 #: ../../docs/about/docs_changelog.rst:134
 msgid ":ref:`doc_2d_lights_and_shadows`"
-msgstr ""
+msgstr ":रेफरी: 'doc_2d_lights_and_shadows'"
 
 #: ../../docs/about/docs_changelog.rst:135
 msgid ":ref:`doc_2d_meshes`"
-msgstr ""
+msgstr ":रेफरी: 'doc_2d_meshes'"
 
 #: ../../docs/about/docs_changelog.rst:138 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
-msgstr ""
+msgstr "3 डी"
 
 #: ../../docs/about/docs_changelog.rst:140
 msgid ":ref:`doc_csg_tools`"
-msgstr ""
+msgstr ":रेफरी: 'doc_csg_tools'"
 
 #: ../../docs/about/docs_changelog.rst:141
 msgid ":ref:`doc_animating_thousands_of_fish`"
-msgstr ""
+msgstr ":रेफरी: 'doc_animating_thousands_of_fish'"
 
 #: ../../docs/about/docs_changelog.rst:142
 msgid ":ref:`doc_controlling_thousands_of_fish`"
-msgstr ""
+msgstr ":रेफरी: 'doc_controlling_thousands_of_fish'"
 
 #: ../../docs/about/docs_changelog.rst:145
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "भौतिकी"
 
 #: ../../docs/about/docs_changelog.rst:147
 msgid ":ref:`doc_ragdoll_system`"
@@ -9502,7 +9770,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:452
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:467
 msgid "Description"
-msgstr ""
+msgstr "विवरण"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "``-h``, ``--help``, ``/?``"
@@ -11360,7 +11628,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:374
 msgid "Functions"
-msgstr ""
+msgstr "कार्यों"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:676
 msgid ""
@@ -14521,7 +14789,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "कार्य"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -18486,7 +18754,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:253
 msgid "FPS"
-msgstr ""
+msgstr "एफपीएस"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:255
 msgid ""
@@ -43479,9 +43747,8 @@ msgid "Once you are all set, you will get much better results:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "AnimationTree"
-msgstr "सामग्री बनाना"
+msgstr "एनिमेशनट्री"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -49922,7 +50189,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:133
 msgid "Capture"
-msgstr ""
+msgstr "पकड़ना"
 
 #: ../../docs/tutorials/viewports/viewports.rst:135
 msgid ""

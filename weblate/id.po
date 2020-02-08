@@ -1,7 +1,8 @@
 # Godot Engine Documentation in Indonesian
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Ade Fikri Malihuddin <ade.fm97@gmail.com>, 2020.
 # Alficiro <alfiboy2003@gmail.com>, 2019.
 # Bagus Aji Santoso <lobothijau@gmail.com>, 2018.
 # Damar Inderajati <damarind@gmail.com>, 2018.
@@ -13,7 +14,7 @@
 # MonsterGila <fikrirazor@outlook.co.id>, 2019.
 # Reza Hidayat Bayu Prabowo <rh.bayu.prabowo@gmail.com>, 2018.
 # Sandityas Noormina <bleedingfaceless@gmail.com>, 2019.
-# Sofyan Sugianto <sofyanartem@gmail.com>, 2019.
+# Sofyan Sugianto <sofyanartem@gmail.com>, 2019-2020.
 # triarts <agung.triarta.h@gmail.com>, 2019.
 #
 msgid ""
@@ -21,8 +22,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-27 08:44+0100\n"
-"PO-Revision-Date: 2019-10-27 07:48+0000\n"
-"Last-Translator: Dimzt <dimas12345yuio@gmail.com>\n"
+"PO-Revision-Date: 2020-02-08 20:51+0000\n"
+"Last-Translator: Ade Fikri Malihuddin <ade.fm97@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -30,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1-dev\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -287,6 +288,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+":ref:`Tutorials dan resources <doc_community_tutorials>` daftar halaman "
+"video tutorial yang dikontribusikan oleh komunitas. Jika anda lebih memilih "
+"video dibandingkan dengan teks, silahkan untuk dilihat."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -294,6 +298,10 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Jika anda memiliki masalah dengan salah satu tutorial atau projek anda, anda "
+"dapat menemukan bantuan diberbagai :ref:`Komunitas chanels "
+"<doc_community_channels>`, tak terkecuali komunitas Godot Discord, Q&A, dan "
+"IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -500,7 +508,7 @@ msgstr "Selamat bersenang-senang membaca dan membuat game dengan Godot Engine!"
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -1132,6 +1140,10 @@ msgid ""
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
+"Anda bisa juga melihat implementasi GDScript, Godot modules, juga "
+"`unofficial Python support <https://github.com/touilleMan/godot-"
+"python>`_untuk Godot. Ini bisa menjadi awal yang baik untuk melihat "
+"bagaimana pustaka pihak-ketiga terpasang dengan godot."
 
 #: ../../docs/about/faq.rst:242
 msgid "I would like to contribute! How can I get started?"
@@ -1153,6 +1165,12 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"Tempat pertama untuk memulai adalah `issues <https://github.com/godotengine/"
+"godot/issues>`_. Temukan issue(masalah) yang sama(mirip) dengan anda, "
+"kemudian lanjutkan ke `How to Contribute <https://github.com/godotengine/"
+"godot/blob/master/CONTRIBUTING.md#contributing-pull-requests>`_panduan untuk "
+"mempelajari bagaimana cara \"fork\", modifikasi, dan submit(kirim) sebuah "
+"Pull Request(PR) dengan hasil modifikasi anda."
 
 #: ../../docs/about/faq.rst:252
 msgid "I have a great idea for Godot. How can I share it?"
@@ -1171,6 +1189,15 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"Memang menggiurkan untuk membawa ide ke Godot, seperti yang menghasilkan "
+"perombakan core(dasar/inti) besar, meniru apa yang Game Engine lain lakukan, "
+"atau alternative alur kerja yang anda buat ke editor. Itu semua memang bagus "
+"dan kami berterimakasih karena memiliki orang yang termotivasi untuk "
+"berkontribusi, tapi fokus Godot adalah dan akan selalu menjadi dasar "
+"funsionalitas sebagaimana tertulis didalam `Roadmap <https://github.com/"
+"godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, `Memburu bugs dan "
+"menunjukan issues <https://github.com/godotengine/godot/issues>`_, dan "
+"percakapan antara anggota komunitas godot."
 
 #: ../../docs/about/faq.rst:263
 #, fuzzy
@@ -1186,27 +1213,36 @@ msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"Pengalaman anda menggunakan perangkat lunak(software) dan masalah yang anda "
+"punya (kami peduli sebanyak ini lebih dari ide bagaimana cara meng "
+"improve(memperbaiki)-nya)."
 
 #: ../../docs/about/faq.rst:268
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
+"Fitur yang anda ingin lihat terpasang karena anda membutuhkannya untuk "
+"projek anda."
 
 #: ../../docs/about/faq.rst:270
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr ""
+"Konsep yang sulit untuk dimengerti ketika mempelajari perangkat "
+"lunak(software)."
 
 #: ../../docs/about/faq.rst:271
 msgid "The parts of your workflow you would like to see optimized."
-msgstr ""
+msgstr "Bagian dari alur kerja anda yang ingin di optimisasi."
 
 #: ../../docs/about/faq.rst:272
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr ""
+"Bagian tutorial yang tidak dimengerti ditutorial atau dimana dokumentasi "
+"tidak jelas/sulit dimengerti."
 
 #: ../../docs/about/faq.rst:274
 msgid ""
@@ -1214,6 +1250,9 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
+"Mohon untuk tidak merasa ide anda untuk Godot tidak tersambut dengan baik. "
+"Pertama, coba untuk mengolah-ulangnya sebagai masalah, sehingga developer "
+"dan komunitas memiliki fondasi untuk membagun ide anda."
 
 #: ../../docs/about/faq.rst:278
 msgid ""
@@ -1223,16 +1262,24 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"Jalan baik untuk membagikan ide anda dan masalah dengan komunitas adalah "
+"diset sebagai cerita pengguna. Jelaskan apa yang anda coba lakukan, hasil/"
+"tingkah laku apa yang anda harapkan, dan hasil/tingkah laku apa yang anda "
+"dapatkan. Membungkus masalah dan ide dengan cara ini akan membantu "
+"keseluruhan komunitas untuk tetap fokus mengembangkan pengalaman devs secara "
+"keseluruhan."
 
 #: ../../docs/about/faq.rst:284
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
+"Poin bonus untuk menunjukan screenshots, nomor jelas, tes yang dilakukan, "
+"atau contoh projects(jika bisa diterapkan)."
 
 #: ../../docs/about/faq.rst:289
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "Kenapa Godot tidak menggunakan STL(Standard Template Library)"
 
 #: ../../docs/about/faq.rst:291
 msgid ""
@@ -1240,12 +1287,18 @@ msgid ""
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"Seperti pustaka lainnya(Qt sebagai contoh), Godot tidak memakai STL. Kami "
+"percaya STL merupakan pustaka serba guna yang bagus, tapi kami telah "
+"memiliki kebutuhan spesial/khusus untuk Godot."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"STL template membuat simbol yang sangat besar, dimana menghasilkan binari "
+"debug yang besar. Kami menggunakan beberapa template yang menggunakan nama "
+"yang sangat pendek."
 
 #: ../../docs/about/faq.rst:296
 msgid ""
@@ -1254,28 +1307,39 @@ msgid ""
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
+"Kebanyakan containers kami merujuk ke kebutuhan spesial, seperti Vector, "
+"dimana menggunakan copy ketika menulis dan kami menggunakannya untuk "
+"mengoper data, atau RID system, dimana membutuhkan 0(1) waktu akses untuk "
+"performa. Sama juga, penerapan hash map kami dirancang untuk terpasak lancar "
+"dengan tipe internal mesin."
 
 #: ../../docs/about/faq.rst:297
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"Container kami memiliki pelacak memori terpasang, dimana bisa membantu "
+"melacak penggunaan memori."
 
 #: ../../docs/about/faq.rst:298
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"Untuk Array besar, kami menggunakan kolam memori, dimana bisa di map ke "
+"entah yang sudah dialokasikan ke buffer atau memori virtual."
 
 #: ../../docs/about/faq.rst:299
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"Kami menggunakan tipe kustom String, sebagaimana yang disediakan oleh STL "
+"terlalu basic dan kurang dukungan internasionalisasi."
 
 #: ../../docs/about/faq.rst:302
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "Kenapa Godot tidak menggunakan Exceptions(try/catch)?"
 
 #: ../../docs/about/faq.rst:304
 msgid ""
@@ -1284,16 +1348,22 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"Kami percaya game seharusnya tidak crash, apapun yang terjadi. Jika situasi "
+"tak tertuga terjadi, Godot akan menampilkan error (dimana bisa di lacak "
+"bahkan ke script), tapi nanti akan pulih selancar mungkin dan tetap "
+"berlanjut."
 
 #: ../../docs/about/faq.rst:309
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
+"Tambahan, exception menambah ukuran binary untuk file yang nanti akan di "
+"eksekusi(exe, apk, dmg, dll)."
 
 #: ../../docs/about/faq.rst:313
 msgid "Why does Godot not enforce RTTI?"
-msgstr ""
+msgstr "Kenapa Godot tidak menjunjung RT TI?"
 
 #: ../../docs/about/faq.rst:315
 msgid ""
@@ -1301,10 +1371,15 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
+"Godot menyediakan sistem type-casting tersendiri, dimana bisa secara "
+"opsional menggunakn RTTI internally. Menonaktifkan RTTI di Godot berarti "
+"ukuran binari lebih kecil bisa dicapai, dengan sedikit pinalti performa."
 
 #: ../../docs/about/faq.rst:320
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
+"Kenapa Godot tidak mengarahkan pengguna untuk menerapkan DoD(Data orented "
+"Design)?"
 
 #: ../../docs/about/faq.rst:322
 msgid ""
@@ -1312,6 +1387,9 @@ msgid ""
 "use cache coherency as best as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"Ketika Godot internally banyak melakukan tugas berat yang mencoba untuk "
+"menggunakan cache coherency sebaik mungkin, kami percaya pengguna tidak "
+"terlalu membutuhkan untuk dipaksa menggunakan praktik DoD."
 
 #: ../../docs/about/faq.rst:326
 msgid ""
@@ -1321,12 +1399,20 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"DoD kebanyakan merupakan sebuah optimisasi cache coherency yang hanya "
+"mendapat peningkatan performa ketika berurusan dengan banyaknya ribuan "
+"object (dimana proses tiap frame dengan sedikit modifikasi). Sama seperti, "
+"ketika anda menggerakan beberapa ratus Sprites atau musuh tiap frame, DoD "
+"tidak akan membantumu, dan anda harus memilih langkah yang berbeda untuk "
+"optimisasi."
 
 #: ../../docs/about/faq.rst:333
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"Kebanyakan game tidak memerlukan ini dan Godot menyediakan bantuan mudah "
+"untuk melakukan pekerjaan/tugas untuk tiap keperluan ketika anda membutuhkan."
 
 #: ../../docs/about/faq.rst:336
 msgid ""
@@ -1334,6 +1420,9 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"Jika sebuah game sangat membutuhkan proses seperti jumlah object yang banyak "
+"diperlukan, saran kami ialah menggunakan C++ dan GDNative untuk bagian "
+"performa tinggi dan GDScript (or C#) untuk keseluruhan game."
 
 #: ../../docs/about/faq.rst:341
 msgid "How can I support Godot development or contribute?"
@@ -1354,6 +1443,8 @@ msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
+"Lihat halaman keterlanjutan di `Godot website <https://godotengine.org/"
+"contact>`_."
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
@@ -1366,6 +1457,10 @@ msgid ""
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"Dokumentasi terus-menerus ditingkatkan. Rilis versi 3.1 termasuk banyak "
+"tutorial, banyak perbaikan dan pembaruan untuk tutorial lama, dan banyak "
+"update ke class reference(referensi klass). Dibawah adalah daftar tuturial "
+"baru yang ditambahkan sejak versi 3.0."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -1373,30 +1468,31 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"Dokumen hanya berisi tutorial baru jadi tidak semua update terterapkan, "
+"banyak tutorial telah diupdate tapi tidak tercantum dalam dokumen ini."
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.1"
-msgstr ""
+msgstr "Tutorial baru sejak versi 3.1"
 
 #: ../../docs/about/docs_changelog.rst:17
 #: ../../docs/about/docs_changelog.rst:116
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "Alur kerja projek"
 
 #: ../../docs/about/docs_changelog.rst:19
 msgid ":ref:`doc_android_custom_build`"
-msgstr ""
+msgstr ":ref:`doc_android_custom_build`"
 
 #: ../../docs/about/docs_changelog.rst:22
 #: ../../docs/about/docs_changelog.rst:132 ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
-msgstr ""
+msgstr "2D(2 Dimensi)"
 
 #: ../../docs/about/docs_changelog.rst:24
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr "Android"
+msgstr ":ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2
@@ -1406,16 +1502,16 @@ msgstr "Suara"
 #: ../../docs/about/docs_changelog.rst:29
 #, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr "Android"
+msgstr ":ref:`doc_sync_with_audio`"
 
 #: ../../docs/about/docs_changelog.rst:32 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr ""
+msgstr "Matematika"
 
 #: ../../docs/about/docs_changelog.rst:34
 #, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr "Membuat Kontent"
+msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:35
 #, fuzzy
@@ -1425,7 +1521,7 @@ msgstr "Android"
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
 msgid "Inputs"
-msgstr ""
+msgstr "Inputs(keyboard,mouse,joy stick, dll)"
 
 #: ../../docs/about/docs_changelog.rst:40
 #, fuzzy
@@ -1433,51 +1529,59 @@ msgid ":ref:`doc_input_examples`"
 msgstr "Android"
 
 #: ../../docs/about/docs_changelog.rst:43 ../../docs/tutorials/i18n/index.rst:2
+#, fuzzy
 msgid "Internationalization"
-msgstr ""
+msgstr "Internationalization"
 
 #: ../../docs/about/docs_changelog.rst:45
+#, fuzzy
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr ""
+msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:48
 #: ../../docs/about/docs_changelog.rst:168
 #: ../../docs/tutorials/shading/index.rst:2
+#, fuzzy
 msgid "Shading"
-msgstr ""
+msgstr "Shading"
 
 #: ../../docs/about/docs_changelog.rst:50
 msgid "Your First Shader Series:"
-msgstr ""
+msgstr "Seri Shader Pertama Anda:"
 
 #: ../../docs/about/docs_changelog.rst:52
+#, fuzzy
 msgid ":ref:`doc_what_are_shaders`"
-msgstr ""
+msgstr ":ref:`doc_what_are_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:53
+#, fuzzy
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:54
+#, fuzzy
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_first_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:55
+#, fuzzy
 msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_second_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:58
 #: ../../docs/tutorials/networking/index.rst:2
 msgid "Networking"
-msgstr ""
+msgstr "Jaringan"
 
 #: ../../docs/about/docs_changelog.rst:60
+#, fuzzy
 msgid ":ref:`doc_webrtc`"
-msgstr ""
+msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:63 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr ""
+msgstr "VR(Virtual Reality)"
 
 #: ../../docs/about/docs_changelog.rst:65
 #, fuzzy
@@ -1514,7 +1618,7 @@ msgstr "Android"
 #: ../../docs/about/docs_changelog.rst:194
 #: ../../docs/tutorials/threads/index.rst:2
 msgid "Multi-threading"
-msgstr ""
+msgstr "Multi-threading(menjalankan kode di thread/core berbeda)"
 
 #: ../../docs/about/docs_changelog.rst:78
 #, fuzzy
@@ -1530,124 +1634,141 @@ msgstr "Membuat Kontent"
 
 #: ../../docs/about/docs_changelog.rst:88
 msgid "Procedural geometry series:"
-msgstr ""
+msgstr "Seri Procedural Geometri(membuat geometri dengan kode):"
 
 #: ../../docs/about/docs_changelog.rst:84
+#, fuzzy
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ""
+msgstr ":ref:`Procedural geometry <toc-procedural_geometry>`"
 
 #: ../../docs/about/docs_changelog.rst:85
 #, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr "Android"
+msgstr ":ref:`doc_arraymesh`"
 
 #: ../../docs/about/docs_changelog.rst:86
 #, fuzzy
 msgid ":ref:`doc_surfacetool`"
-msgstr "Android"
+msgstr ":ref:`doc_surfacetool`"
 
 #: ../../docs/about/docs_changelog.rst:87
 #, fuzzy
 msgid ":ref:`doc_meshdatatool`"
-msgstr "Android"
+msgstr ":ref:`doc_meshdatatool`"
 
 #: ../../docs/about/docs_changelog.rst:88
 #, fuzzy
 msgid ":ref:`doc_immediategeometry`"
-msgstr "Android"
+msgstr ":ref:`doc_immediategeometry`"
 
 #: ../../docs/about/docs_changelog.rst:91
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "Animasi"
+msgstr "Optimisasi"
 
 #: ../../docs/about/docs_changelog.rst:93
+#, fuzzy
 msgid ":ref:`doc_using_multimesh`"
-msgstr ""
+msgstr ":ref:`doc_using_multimesh`"
 
 #: ../../docs/about/docs_changelog.rst:94
+#, fuzzy
 msgid ":ref:`doc_using_servers`"
-msgstr ""
+msgstr ":ref:`doc_using_servers`"
 
 #: ../../docs/about/docs_changelog.rst:97
 #: ../../docs/tutorials/legal/index.rst:2
+#, fuzzy
 msgid "Legal"
-msgstr ""
+msgstr "Legal"
 
 #: ../../docs/about/docs_changelog.rst:99
+#, fuzzy
 msgid ":ref:`doc_complying_with_licenses`"
-msgstr ""
+msgstr ":ref:`doc_complying_with_licenses`"
 
 #: ../../docs/about/docs_changelog.rst:102
 msgid "New tutorials since version 3.0"
-msgstr ""
+msgstr "Tutorial baru sejak versi 3.0"
 
 #: ../../docs/about/docs_changelog.rst:105
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:18
 msgid "Step by step"
-msgstr ""
+msgstr "Langkah demi langkah"
 
 #: ../../docs/about/docs_changelog.rst:107
+#, fuzzy
 msgid ":ref:`doc_signals`"
-msgstr ""
+msgstr ":ref:`doc_signals`"
 
 #: ../../docs/about/docs_changelog.rst:108
+#, fuzzy
 msgid ":ref:`doc_exporting`"
-msgstr ""
+msgstr ":ref:`doc_exporting`"
 
 #: ../../docs/about/docs_changelog.rst:111
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
+#, fuzzy
 msgid "Scripting"
-msgstr ""
+msgstr "Scripting"
 
 #: ../../docs/about/docs_changelog.rst:113
+#, fuzzy
 msgid ":ref:`doc_gdscript_static_typing`"
-msgstr ""
+msgstr ":ref:`doc_gdscript_static_typing`"
 
 #: ../../docs/about/docs_changelog.rst:118
 msgid "Best Practices:"
-msgstr ""
+msgstr "Praktik terbaik:"
 
 #: ../../docs/about/docs_changelog.rst:120
+#, fuzzy
 msgid ":ref:`doc_introduction_best_practices`"
-msgstr ""
+msgstr ":ref:`doc_introduction_best_practices`"
 
 #: ../../docs/about/docs_changelog.rst:121
+#, fuzzy
 msgid ":ref:`doc_what_are_godot_classes`"
-msgstr ""
+msgstr ":ref:`doc_what_are_godot_classes`"
 
 #: ../../docs/about/docs_changelog.rst:122
+#, fuzzy
 msgid ":ref:`doc_scene_organization`"
-msgstr ""
+msgstr ":ref:`doc_scene_organization`"
 
 #: ../../docs/about/docs_changelog.rst:123
+#, fuzzy
 msgid ":ref:`doc_scenes_versus_scripts`"
-msgstr ""
+msgstr ":ref:`doc_scenes_versus_scripts`"
 
 #: ../../docs/about/docs_changelog.rst:124
+#, fuzzy
 msgid ":ref:`doc_autoloads_versus_internal_nodes`"
-msgstr ""
+msgstr ":ref:`doc_autoloads_versus_internal_nodes`"
 
 #: ../../docs/about/docs_changelog.rst:125
+#, fuzzy
 msgid ":ref:`doc_node_alternatives`"
-msgstr ""
+msgstr ":ref:`doc_node_alternatives`"
 
 #: ../../docs/about/docs_changelog.rst:126
+#, fuzzy
 msgid ":ref:`doc_godot_interfaces`"
-msgstr ""
+msgstr ":ref:`doc_godot_interfaces`"
 
 #: ../../docs/about/docs_changelog.rst:127
+#, fuzzy
 msgid ":ref:`doc_godot_notifications`"
-msgstr ""
+msgstr ":ref:`doc_godot_notifications`"
 
 #: ../../docs/about/docs_changelog.rst:128
+#, fuzzy
 msgid ":ref:`doc_data_preferences`"
-msgstr ""
+msgstr ":ref:`doc_data_preferences`"
 
 #: ../../docs/about/docs_changelog.rst:129
 msgid ":ref:`doc_logic_preferences`"
@@ -1832,15 +1953,16 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:218
 #: ../../docs/development/cpp/index.rst:2
 msgid "Engine development"
-msgstr ""
+msgstr "Pengembangan engine(mesin)"
 
 #: ../../docs/about/docs_changelog.rst:220
+#, fuzzy
 msgid ":ref:`doc_binding_to_external_libraries`"
-msgstr ""
+msgstr ":ref:`doc_binding_to_external_libraries`"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr ""
+msgstr "Pengenalan ke Godot editor"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1848,10 +1970,13 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"Tutorial ini akan menjelaskan keseluruhan antar muka Godot. Kami "
+"memperlihatkan **Project Manager, docs, workspaces** dan semua yang anda "
+"perlukan untuk memulai dengan engine."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
-msgstr ""
+msgstr "Project manager"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid ""
@@ -1859,18 +1984,26 @@ msgid ""
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
+"Ketika menjalankan Godot, Jendela pertama yang anda lihat adalah Project "
+"Manager. Karena anda tidak memiliki project disana, maka akan ada popup "
+"menanyakan jika anda mau membuka pustaka Asset, klik saja cancel, kami akan "
+"menjelaskannya nanti."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
+"Sekarang anda seharusnya melihat project manager. Disini anda bisa membuat, "
+"menghapus, impor atau memainkan game project."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
+"Dipojok atas-kanan anda akan menemukan sebuah dropdown menu untuk mengganti "
+"bahasa editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid ""
@@ -1880,10 +2013,15 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
+"Dari **Templates** tab anda bisa unduh project template sumber terbuka dan "
+"demo dari Pustaka Asset untuk membantu anda memulai lebih cepat. Hanya pilih "
+"template atau demo yang anda inginkan, klik download, ketika selesai "
+"mengunduh klik install dan pilih dimana anda ingin menyimpannya. Anda bisa "
+"mempelajari lebih lanjut di :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
-msgstr ""
+msgstr "Membuat atau impor sebuah projek"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
 msgid ""
@@ -1891,12 +2029,17 @@ msgid ""
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
+"Untuk membuat sebuah projek baru, klik tombol ``New Project``disebelah "
+"kanan. Disini anda memberikan nama, pilih folder kosong dikomputer untuk "
+"menyimpan, dan pilih sebuah renderer."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
+"Klik tombol Browse untuk mebuka Godot file browser dan pilih lokasi atau "
+"ketik lokasi lengkap di Project Path field."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
 msgid ""
@@ -8174,7 +8317,7 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:257
 #: ../../docs/community/tutorials.rst:50
 msgid "Resources"
-msgstr "Sumber Daya"
+msgstr "Resource"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
@@ -9789,7 +9932,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:452
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:467
 msgid "Description"
-msgstr ""
+msgstr "Deskripsi"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "``-h``, ``--help``, ``/?``"
@@ -11648,7 +11791,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:374
 msgid "Functions"
-msgstr ""
+msgstr "Fungsi"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:676
 msgid ""
@@ -14907,7 +15050,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr ""
+msgstr "Lokasi Resource"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -17956,7 +18099,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "Format"
-msgstr ""
+msgstr "Format"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "1 second of audio"
@@ -20644,7 +20787,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
 msgid "GDNative"
-msgstr ""
+msgstr "GDNative"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 msgid "Clipboard synchronisation between engine and operating system"
@@ -23873,7 +24016,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:452
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:467
 msgid "Type"
-msgstr ""
+msgstr "Tipe"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:342
@@ -43768,7 +43911,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
 msgid "AnimationTree"
-msgstr "AnimationTree"
+msgstr "AnimationTree(Daftar animasi)"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -44943,7 +45086,7 @@ msgstr ""
 #: ../../docs/tutorials/io/background_loading.rst:24
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 msgid "Usage"
-msgstr ""
+msgstr "Pemakaian"
 
 #: ../../docs/tutorials/io/background_loading.rst:26
 msgid "Usage is generally as follows"
@@ -68310,7 +68453,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 msgid "Value"
-msgstr ""
+msgstr "Nilai"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "0"
@@ -69889,7 +70032,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
-msgstr "\"Debug\""
+msgstr "Awakutu"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -69936,7 +70079,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:30
 msgid "Deploy with Remote Debug"
-msgstr "Deploy dengan Remote Debug"
+msgstr "Deploy dengan Awakutu Jarak Jauh"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:32
 msgid ""
@@ -70138,7 +70281,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:144
 msgid "Errors"
-msgstr ""
+msgstr "Galat"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:146
 msgid ""
@@ -70147,7 +70290,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
 msgid "Profiler"
-msgstr ""
+msgstr "Profiler(debugger/pemantauan)"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:151
 msgid ""
@@ -70196,7 +70339,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:179
 msgid "Network Profiler"
-msgstr ""
+msgstr "Network Profiler(Debug jaringan)"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:181
 msgid ""
@@ -70208,7 +70351,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:187
 msgid "Monitors"
-msgstr ""
+msgstr "Pemantau"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:189
 msgid ""
@@ -70231,7 +70374,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:201
 msgid "Misc"
-msgstr ""
+msgstr "Lain-lain"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:203
 msgid ""
@@ -74245,7 +74388,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:256
 msgid "Resources:"
-msgstr "Sumber daya:"
+msgstr "Resource:"
 
 #: ../../docs/development/cpp/object_class.rst:258
 msgid ""

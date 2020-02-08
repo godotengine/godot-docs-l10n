@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Dutch
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alex H <sandertjeh13@hotmail.com>, 2019.
@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-01-27 08:44+0100\n"
-"PO-Revision-Date: 2020-01-23 15:06+0000\n"
+"PO-Revision-Date: 2020-01-28 07:52+0000\n"
 "Last-Translator: Julian <jdhoogvorst@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/nl/>\n"
@@ -662,7 +662,7 @@ msgid ""
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
 "Sommige gebruikers hebben ook vermeld Godot succesvol te kunnen draaien op "
-"ARM-gebaseerde systemen met Linux, zoals de Raspberry Pi"
+"ARM-gebaseerde systemen met Linux, zoals de Raspberry Pi."
 
 #: ../../docs/about/faq.rst:57
 msgid ""
@@ -3511,7 +3511,7 @@ msgid ""
 "mostly in GUI nodes, although other nodes have them too, and you can even "
 "define custom signals in your own scripts."
 msgstr ""
-"Signalen worden \"uitgezonden\"  als een bepaalde soort actie plaatsvindt en "
+"Signalen worden \"uitgezonden\" als een bepaalde soort actie plaatsvindt en "
 "kunnen aan elke methode van elk scriptinstantie verbonden worden. Signalen "
 "worden meestal in gebruikersomgevingsknopen gebruikt, maar andere knopen "
 "kunnen ze ook bezitten, en je kan zelfs je eigen signalen in je scripts "
@@ -4819,6 +4819,11 @@ msgid ""
 "are case-sensitive and ``$NodeName`` or ``get_node(\"NodeName\")`` must "
 "match the name you see in the scene tree."
 msgstr ""
+"Als u een foutmelding krijgt in het \"Debugger\" paneel die verwijst naar "
+"een \"nulinstantie/null instance\", betekent dit waarschijnlijk dat u de "
+"naam van het knooppunt verkeerd hebt gespeld. Knoop-namen zijn "
+"hoofdlettergevoelig en `` $ NodeName`` of `` get_node (\"NodeName\") `` moet "
+"overeenkomen met de naam die u in de scèneboom ziet."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:350
 msgid "Choosing animations"
@@ -4857,10 +4862,13 @@ msgid ""
 "the directions. When you're sure the movement is working correctly, add this "
 "line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
+"Speel de scène opnieuw en controleer de richtingen van de animaties. Wanneer "
+"je zeker weet dat de bewegingen correct werken, voeg je deze lijn toe aan "
+"``_ready()``, zodat de speler niet zichtbaar is wanneer het spel start:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:420
 msgid "Preparing for collisions"
-msgstr ""
+msgstr "Voorbereiding voor botsingen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:422
 msgid ""
@@ -4868,6 +4876,9 @@ msgid ""
 "any enemies yet! That's OK, because we're going to use Godot's *signal* "
 "functionality to make it work."
 msgstr ""
+"We willen dat de ``Player`` detecteert als deze geraakt wordt door een "
+"vijand, maar we hebben nog geen vijanden gemaakt! Dat is oké, want we "
+"gebruiken de *signal* functie in Godot om dit te laten werken."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:426
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
