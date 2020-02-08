@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: 2020-02-04 21:53+0000\n"
 "Last-Translator: icecream28 <asdff2828@naver.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
@@ -616,13 +616,13 @@ msgid "Windows (and UWP)"
 msgstr "Windows (그리고 UWP)"
 
 #: ../../docs/about/faq.rst:47
-#: ../../docs/getting_started/step_by_step/exporting.rst:199
+#: ../../docs/getting_started/step_by_step/exporting.rst:316
 #: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "Android"
 msgstr "Android"
 
 #: ../../docs/about/faq.rst:48
-#: ../../docs/getting_started/step_by_step/exporting.rst:252
+#: ../../docs/getting_started/step_by_step/exporting.rst:369
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
 msgid "iOS"
 msgstr "iOS"
@@ -873,44 +873,36 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "Godot는 무슨 유형의 3D 모델을 지원하나요?"
 
 #: ../../docs/about/faq.rst:150
+#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
-"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
+"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
+"using Blender, take a look at our own `Better Collada Exporter <https://"
+"godotengine.org/download>`_."
 msgstr ""
-"Godot는 `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
-"OpenCOLLADA-Tools>`_ 내보내기를 통해 Collada를 지원합니다 (Maya, 3DSMax)."
+"그렇지만 고도의 Collada 지원이 정말 좋기 때문에 Maya나 3DS Max를 사용한다면 "
+"가장 호환성이 좋은 `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/"
+"wiki/OpenCOLLADA-Tools>`_ 내보내기 도구를 사용해주세요. Blender를 사용한다면 "
+"우리가 만든 `Better Collada Exporter <https://godotengine.org/download>`_ 를 "
+"살펴보세요."
 
-#: ../../docs/about/faq.rst:152
-msgid ""
-"If you are using Blender, take a look at our own `Better Collada Exporter "
-"<https://godotengine.org/download>`_."
-msgstr ""
-"Blender를 사용한다면, 우리의 `Better Collada Exporter <https://godotengine."
-"org/download>`_\\ 를 참고하세요."
-
-#: ../../docs/about/faq.rst:154
+#: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
 msgstr "Godot 3.0부터 glTF를 지원합니다."
 
-#: ../../docs/about/faq.rst:156
+#: ../../docs/about/faq.rst:155
 msgid ""
-"FBX SDK has a `restrictive license <https://www.blender.org/bf/"
-"Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
-"<https://opensource.org/licenses/MIT>`_ provided by Godot. That being said, "
-"FBX support could still be provided by third parties as a plugin. (See "
-"Plugins question below.)"
+"FBX is supported via the Open Asset Import library. However, FBX is "
+"proprietary so we recommend using other formats listed above, if suitable "
+"for your workflow."
 msgstr ""
-"FBX SDK는 `제한적인 라이센스 <http://www.blender.org/bf/Autodesk_FBX_License."
-"rtf>`_\\ 를 갖고 있기 때문에, Godot의 `오픈 라이선스 <http://opensource.org/"
-"licenses/MIT>`_\\ 와 맞지 않습니다. 즉, FBX 지원은 아직 제 3자의 플러그인으로"
-"만 사용할 수 있습니다. (아래의 플러그인 질문을 참고하세요.)"
 
-#: ../../docs/about/faq.rst:162
+#: ../../docs/about/faq.rst:159
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr "Godot에서 [FMOD, GameWorks 등 클로즈 SDK]가 지원될까요?"
 
-#: ../../docs/about/faq.rst:164
+#: ../../docs/about/faq.rst:161
 msgid ""
 "The aim of Godot is to create a free and open-source MIT-licensed engine "
 "that is modular and extendable. There are no plans for the core engine "
@@ -922,7 +914,7 @@ msgstr ""
 "록 하는 계획은 없습니다. 이것들을 통합하는 것은 Godot의 정신에 반대되는 것입"
 "니다."
 
-#: ../../docs/about/faq.rst:169
+#: ../../docs/about/faq.rst:166
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
@@ -932,7 +924,7 @@ msgstr ""
 "듈로 추가해서 여러분의 게임에 사용해 출시해도 무방합니다--오픈 소스든지 클로"
 "즈 소스든지 말이죠."
 
-#: ../../docs/about/faq.rst:173
+#: ../../docs/about/faq.rst:170
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
@@ -940,7 +932,7 @@ msgstr ""
 "선택한 SDK에 대한 지원이 어떻게 제공되는지 알아보려면 아래 플러그인 질문을 참"
 "고하세요."
 
-#: ../../docs/about/faq.rst:176
+#: ../../docs/about/faq.rst:173
 msgid ""
 "If you know of a third-party SDK that is not supported by Godot but that "
 "offers free and open-source integration, consider starting the integration "
@@ -951,14 +943,14 @@ msgstr ""
 "직접 통합 작업을 시작해보세요. Godot는 한 사람의 것이 아닙니다; 커뮤니티에 속"
 "해 있고 당신과 같은 야심 찬 커뮤니티 기여자들과 함께 자랍니다."
 
-#: ../../docs/about/faq.rst:182
+#: ../../docs/about/faq.rst:179
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
 "다양한 해상도와 화면 비율에 맞도록 하려면 어떻게 애셋을 만들어야 할까요?"
 
-#: ../../docs/about/faq.rst:184
+#: ../../docs/about/faq.rst:181
 msgid ""
 "This question pops up often and it's probably thanks to the misunderstanding "
 "created by Apple when they originally doubled the resolution of their "
@@ -975,7 +967,7 @@ msgstr ""
 "율을 가진 여러 Android와 Apple 기기가 만들어졌습니다. 그들은 매우 넓은 화면"
 "과 DPI를 갖고 있었죠."
 
-#: ../../docs/about/faq.rst:192
+#: ../../docs/about/faq.rst:189
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
@@ -986,7 +978,7 @@ msgstr ""
 "세로 비율 만을 다르게 하는 것입니다. 2D라면 이 작업이 필요하겠지만, 3D에서는 "
 "카메라 X시야나 Y시야의 단순한 문제입니다."
 
-#: ../../docs/about/faq.rst:196
+#: ../../docs/about/faq.rst:193
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -1001,7 +993,7 @@ msgstr ""
 "(1280x720) 근처입니다. 해상도가 높으면 애셋은 더 커지고 더 많은 메모리를 먹"
 "고 더 긴 로딩이 걸릴 것이니 명심하세요."
 
-#: ../../docs/about/faq.rst:204
+#: ../../docs/about/faq.rst:201
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
@@ -1011,7 +1003,7 @@ msgstr ""
 "니다. 사용하는 방법은 :ref:`doc_multiple_resolutions` 튜토리얼에서 확인해보세"
 "요."
 
-#: ../../docs/about/faq.rst:208
+#: ../../docs/about/faq.rst:205
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -1022,7 +1014,7 @@ msgstr ""
 "으로 펼칠 수 있습니다. 아니면 화면 비율을 유지하는 대신 검은 여백이 나타나게 "
 "할 수 있습니다. 이 또한 :ref:`doc_multiple_resolutions`\\ 에서 설명합니다."
 
-#: ../../docs/about/faq.rst:213
+#: ../../docs/about/faq.rst:210
 msgid ""
 "For user interfaces, use the :ref:`anchoring <doc_size_and_anchors>` to "
 "determine where controls should stay and move. If UIs are more complex, "
@@ -1032,11 +1024,11 @@ msgstr ""
 "서 Control이 이동하거나 정지해야 할 위치를 결정하세요. UI가 더 복잡하다면 "
 "Container 사용을 고려해보세요."
 
-#: ../../docs/about/faq.rst:217
+#: ../../docs/about/faq.rst:214
 msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "다 됐습니다! 게임이 이제 다양한 해상도에서 작동합니다."
 
-#: ../../docs/about/faq.rst:219
+#: ../../docs/about/faq.rst:216
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
@@ -1047,11 +1039,11 @@ msgstr ""
 "원한다면, 내보내기 설정으로 이미지를 압축해서 App Store나 구글 플레이에 적합"
 "한 화면으로 만들 수 있습니다."
 
-#: ../../docs/about/faq.rst:225
+#: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
 msgstr "어떻게 Godot를 확장할 수 있나요?"
 
-#: ../../docs/about/faq.rst:227
+#: ../../docs/about/faq.rst:224
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
@@ -1060,11 +1052,11 @@ msgstr ""
 "Godot 편집기 플러그인 제작이나 추가적인 언어 지원을 하고 싶다면 :ref:`편집기 "
 "플러그인 <doc_making_plugins>`\\ 과 tool 스크립트를 참고하세요."
 
-#: ../../docs/about/faq.rst:231
+#: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
 msgstr "또한 이 주제에 관한 공식 블로그 게시물도 참고하세요:"
 
-#: ../../docs/about/faq.rst:233
+#: ../../docs/about/faq.rst:230
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
@@ -1072,11 +1064,11 @@ msgstr ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 
-#: ../../docs/about/faq.rst:234
+#: ../../docs/about/faq.rst:231
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 msgstr "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 
-#: ../../docs/about/faq.rst:236
+#: ../../docs/about/faq.rst:233
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
@@ -1087,11 +1079,11 @@ msgstr ""
 "com/touilleMan/godot-python>`_\\ 을 살펴볼 수도 있습니다. 이것이 Godot가 어떻"
 "게 제 3자 라이브러리와 통합하는 지를 보여주는 좋은 출발점이 될 것입니다."
 
-#: ../../docs/about/faq.rst:242
+#: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
 msgstr "저도 기여하고 싶어요! 어떻게 시작해야 하나요?"
 
-#: ../../docs/about/faq.rst:244
+#: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
@@ -1099,7 +1091,7 @@ msgstr ""
 "멋집니다! 오픈 소스 프로젝트인 만큼 Godot는 당신같이 혁신적이고 야심 찬 개발"
 "자들에 의해 번창합니다."
 
-#: ../../docs/about/faq.rst:247
+#: ../../docs/about/faq.rst:244
 msgid ""
 "The first place to get started is in the `issues <https://github.com/"
 "godotengine/godot/issues>`_. Find an issue that resonates with you, then "
@@ -1113,11 +1105,11 @@ msgstr ""
 "md#contributing-pull-requests>`_ 가이드를 따라가세요. 변경 사항과 함께 Pull "
 "Request (PR)를 포크 요청, 수정 및 제출하는 법을 배울 수 있습니다."
 
-#: ../../docs/about/faq.rst:252
+#: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Godot에 대한 좋은 아이디어가 있습니다. 어떻게 이것을 공유할 수 있나요?"
 
-#: ../../docs/about/faq.rst:254
+#: ../../docs/about/faq.rst:251
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -1138,14 +1130,14 @@ msgstr ""
 "요약한 대로 핵심 기능과 `버그를 없애고 이슈를 다루는 것 <https://github.com/"
 "godotengine/godot/issues>`_, 그리고 Godot 커뮤니티 회원과의 대화입니다."
 
-#: ../../docs/about/faq.rst:263
+#: ../../docs/about/faq.rst:260
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
 "Godot 커뮤니티의 개발자 대부분은 이런 것을 배우는 데 더 흥미를 가질 것입니다:"
 
-#: ../../docs/about/faq.rst:266
+#: ../../docs/about/faq.rst:263
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
@@ -1153,28 +1145,28 @@ msgstr ""
 "소프트웨어를 사용한 경험과 문제 (우리는 아이디어보다 이것을 개선하는 일을 더 "
 "중요하게 여깁니다)."
 
-#: ../../docs/about/faq.rst:268
+#: ../../docs/about/faq.rst:265
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr "프로젝트에 필요해서 구현하고자 하는 기능."
 
-#: ../../docs/about/faq.rst:270
+#: ../../docs/about/faq.rst:267
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr "소프트웨어를 배우면서 이해하기 어려운 개념."
 
-#: ../../docs/about/faq.rst:271
+#: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
 msgstr "최적화하고 싶은 워크플로 부분."
 
-#: ../../docs/about/faq.rst:272
+#: ../../docs/about/faq.rst:269
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr "깔끔한 튜토리얼이 없거나 깔끔하지 않은 문서 부분."
 
-#: ../../docs/about/faq.rst:274
+#: ../../docs/about/faq.rst:271
 msgid ""
 "Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
 "reformulate them as a problem first, so developers and the community have a "
@@ -1184,7 +1176,7 @@ msgstr ""
 "개발자와 커뮤니티가 생각을 바탕으로 기술적 토대를 마련하기 위해, 먼저 문제점 "
 "순으로 재구성해주세요."
 
-#: ../../docs/about/faq.rst:278
+#: ../../docs/about/faq.rst:275
 msgid ""
 "A good way to approach sharing your ideas and problems with the community is "
 "as a set of user stories. Explain what you are trying to do, what behavior "
@@ -1197,7 +1189,7 @@ msgstr ""
 "는 지를 설명하세요. 이 방법으로 문제와 생각을 정리하면 전체 커뮤니티가 개발"
 "자 경험을 개선하는데 집중할 수 있습니다."
 
-#: ../../docs/about/faq.rst:284
+#: ../../docs/about/faq.rst:281
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
@@ -1205,11 +1197,11 @@ msgstr ""
 "스크린샷이나, 구체적인 값, 실험 사례, (가능하다면) 예제 프로젝트를 가져오면 "
 "추가 점수가 될 것입니다."
 
-#: ../../docs/about/faq.rst:289
+#: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
 msgstr "Godot가 STL (표준 템플릿 라이브러리)을 사용하지 않는 이유"
 
-#: ../../docs/about/faq.rst:291
+#: ../../docs/about/faq.rst:288
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
@@ -1219,7 +1211,7 @@ msgstr ""
 "STL이 훌륭한 범용 라이브러리라고 생각하지만, Godot에게는 특별한 요구 사항이 "
 "있었습니다."
 
-#: ../../docs/about/faq.rst:295
+#: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
@@ -1227,7 +1219,7 @@ msgstr ""
 "STL 템플릿은 매우 큰 심볼들을 만들고, 그것은 거대한 디버그 바이너리를 초래합"
 "니다. 우리는 대신 매우 짧은 이름의 템플릿을 거의 사용하지 않습니다."
 
-#: ../../docs/about/faq.rst:296
+#: ../../docs/about/faq.rst:293
 msgid ""
 "Most of our containers cater to special needs, like Vector, which uses copy "
 "on write and we use to pass data around, or the RID system, which requires "
@@ -1239,7 +1231,7 @@ msgstr ""
 "니다, RID 시스템의 경우, 성능을 위해 O(1) 접근 시간이 필요합니다. 마찬가지로 "
 "해시 맵 구현은 내부 엔진 유형과 부드럽게 통합하도록 설계되었습니다."
 
-#: ../../docs/about/faq.rst:297
+#: ../../docs/about/faq.rst:294
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
@@ -1247,7 +1239,7 @@ msgstr ""
 "컨테이너는 메모리 추적 기능이 내장되어 있어서, 메모리 사용량을 추적하는데 더 "
 "도움이 됩니다."
 
-#: ../../docs/about/faq.rst:298
+#: ../../docs/about/faq.rst:295
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
@@ -1255,7 +1247,7 @@ msgstr ""
 "큰 배열의 경우, 풀(Pool)로 된 메모리를 사용합니다, 사전에 지정된 버퍼 메모리 "
 "혹은 가상 메모리에 매핑될 수 있습니다."
 
-#: ../../docs/about/faq.rst:299
+#: ../../docs/about/faq.rst:296
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
@@ -1263,11 +1255,11 @@ msgstr ""
 "STL에서 제공하는 문자열 유형은 너무 단순하고 현지화 지원 기능이 부족해서 맞"
 "춤 문자열 유형을 사용합니다."
 
-#: ../../docs/about/faq.rst:302
+#: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
 msgstr "왜 Godot는 예외(Exception)를 사용하지 않나요?"
 
-#: ../../docs/about/faq.rst:304
+#: ../../docs/about/faq.rst:301
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
@@ -1278,17 +1270,17 @@ msgstr ""
 "태가 벌어지면, Godot는 오류를 작성합니다 (스크립트에서도 추적할 수 있습니"
 "다), 그런 다음 가능한 한 정상적으로 복구한 후 계속 진행합니다."
 
-#: ../../docs/about/faq.rst:309
+#: ../../docs/about/faq.rst:306
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr "또한 예외는 실행 파일에서 이진 크기를 상당히 늘립니다."
 
-#: ../../docs/about/faq.rst:313
+#: ../../docs/about/faq.rst:310
 msgid "Why does Godot not enforce RTTI?"
 msgstr "왜 Godot는 런타임 유형 정보(RTTI)를 시행하지 않나요?"
 
-#: ../../docs/about/faq.rst:315
+#: ../../docs/about/faq.rst:312
 msgid ""
 "Godot provides its own type-casting system, which can optionally use RTTI "
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
@@ -1298,11 +1290,11 @@ msgstr ""
 "사용할 수 있습니다. Godot에서 런타임 유형 정보를 끄게 되면 약간의 성능 가격으"
 "로 상당히 작은 이진 크기를 얻을 수 있습니다."
 
-#: ../../docs/about/faq.rst:320
+#: ../../docs/about/faq.rst:317
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr "왜 Godot는 사용자에게 DoD(데이터 지향 디자인) 구현을 강요하지 않나요?"
 
-#: ../../docs/about/faq.rst:322
+#: ../../docs/about/faq.rst:319
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as best as possible, we believe most users don't really "
@@ -1312,7 +1304,7 @@ msgstr ""
 "용하려 하지만, 우리는 대부분의 사용자가 DoD 관행을 따라야 할 필요가 없다고 생"
 "각합니다."
 
-#: ../../docs/about/faq.rst:326
+#: ../../docs/about/faq.rst:323
 msgid ""
 "DoD is mostly a cache coherency optimization that can only gain you "
 "significant performance improvements when dealing with dozens of thousands "
@@ -1326,7 +1318,7 @@ msgstr ""
 "한다 하면, DoD는 도움이 되지 않습니다, 당신은 최적화에 있어서 다른 접근법을 "
 "생각해 봐야 하는 것이죠."
 
-#: ../../docs/about/faq.rst:333
+#: ../../docs/about/faq.rst:330
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
@@ -1334,7 +1326,7 @@ msgstr ""
 "대부분의 게임에는 필요하지 않을 테지만, Godot는 이런 작업의 대부분의 경우에 "
 "도움을 줄 편리한 도우미를 제공합니다."
 
-#: ../../docs/about/faq.rst:336
+#: ../../docs/about/faq.rst:333
 msgid ""
 "If a game that really needs to process such large amount of objects is "
 "needed, our recommendation is to use C++ and GDNative for the high "
@@ -1344,19 +1336,19 @@ msgstr ""
 "요한 부분은 C++과 GDNative 사용하고, 그 외 나머지 부분은 GDScript (혹은 C#)"
 "을 사용하는 것입니다."
 
-#: ../../docs/about/faq.rst:341
+#: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
 msgstr "어떻게 Godot 개발을 돕거나 후원할 수 있나요?"
 
-#: ../../docs/about/faq.rst:343
+#: ../../docs/about/faq.rst:340
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr ":ref:`doc_ways_to_contribute`\\ 를 참고하세요."
 
-#: ../../docs/about/faq.rst:346
+#: ../../docs/about/faq.rst:343
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Godot는 누가 만드나요? 제가 연락할 수 있을까요?"
 
-#: ../../docs/about/faq.rst:348
+#: ../../docs/about/faq.rst:345
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
@@ -2087,10 +2079,11 @@ msgid "Modify the interface"
 msgstr "인터페이스 수정하기"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
+#, fuzzy
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
-"Atom or Visual Studio for instance."
+"Atom or Visual Studio Code for instance."
 msgstr ""
 "Godot의 인터페이스는 하나의 창으로 이루어 집니다. 여러 화면으로 나눌 수는 없"
 "지만, 대신 Atom이나 Visual Studio와 같은 외부 코드 편집기를 사용할 수 있습니"
@@ -3444,9 +3437,10 @@ msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "다음으로 버튼이 눌릴 때 호출하는 함수를 작성합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
+#, fuzzy
 msgid ""
-"Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
-"ref:`Object.connect() <class_Object_method_connect>`."
+"Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
+"by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
 "마지막으로 버튼의 \"pressed\" 시그널을 ``_ready()``\\ 에 연결하도록 :ref:"
 "`Object.connect() <class_Object_method_connect>`\\ 를 사용합니다."
@@ -3863,7 +3857,7 @@ msgstr "오직 GDScript만 각 이름이 있는 스크립트에 전역 변수를
 
 #: ../../docs/getting_started/step_by_step/signals.rst:4
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1287
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:462
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:464
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:694
 #: ../../docs/development/cpp/object_class.rst:211
@@ -4995,19 +4989,19 @@ msgstr ""
 "택한다면, 당신은 편집기 위쪽에 새로운 버튼들이 보일 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:676
+#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
-"sure \"Snap to Grid\" is checked. This option can be found under the "
-"\"Snapping options\" button to the left of the \"Lock\" button, appearing as "
-"a series of three vertical dots."
+"sure \"Use Grid Snap\" is selected. This option can be found to the left of "
+"the \"Lock\" button, appearing as a magnet next to some intersecting lines."
 msgstr ""
 "가운데 것을 선택하고 (\"포인트 추가\") 클릭으로 모서리에 포인트를 추가하고 경"
 "로를 그립니다. 포인트가 그리드에 스냅되게 하려면, \"그리드에 스냅\"이 체크되"
 "어있어야 합니다. 이 설정은 \"잠금\" 버튼 왼쪽과 \"스냅 설정\" 버튼 옆의 세 개"
 "의 점에서 찾을 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:684
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:683
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
@@ -5015,7 +5009,7 @@ msgstr ""
 "*시계 방향* 으로 그리세요, 그렇지 않으면 적들은 *안쪽* 이 아닌 *바깥쪽* 으로 "
 "향할 것입니다!"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:687
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:686
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
@@ -5023,7 +5017,7 @@ msgstr ""
 "이미지에서 ``4`` 포인트를 찍고 난 후, \"커브 닫기\" 버튼을 누르면 커브가 완성"
 "됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:690
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:689
 msgid ""
 "Now that the path is defined, add a :ref:`PathFollow2D <class_PathFollow2D>` "
 "node as a child of ``MobPath`` and name it ``MobSpawnLocation``. This node "
@@ -5035,11 +5029,11 @@ msgstr ""
 "이 노드는 자동으로 회전하고 이동하면서 경로를 따라갈 것입니다, 그래서 우리는 "
 "이걸로 경로를 따라 임의의 위치와 방향을 선택하기 위해 사용할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:696
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:695
 msgid "Main script"
 msgstr "메인 스크립트"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:698
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:697
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
@@ -5047,7 +5041,7 @@ msgstr ""
 "``Main`` 에 스크립트를 추가합니다. 스크립트의 위에 ``export (PackedScene)`` "
 "를 사용해서 우리가 인스턴스하길 원하는 적 씬을 고를 수 있도록 만듭니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:738
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:737
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property under the Script Variables of the ``Main`` node."
@@ -5055,7 +5049,7 @@ msgstr ""
 "\"파일 시스템\" 패널에서 ``Mob.tscn`` 을 드래그하고 ``Main`` 노드의 스크립트 "
 "속성 아래 ``Mob`` 속성에 드랍하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:741
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:740
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
@@ -5069,7 +5063,7 @@ msgstr ""
 "고 치세요. 다음의 코드를 추가하고 ``new_game`` 함수를 추가하여 새로운 게임을 "
 "위한 모든 것들을 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:778
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:777
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``) to the main script. "
@@ -5080,7 +5074,7 @@ msgstr ""
 "``timeout()`` 시그널을 연결하세요. ``StartTimer`` 는 나머지 두 타이머를 시작"
 "하게 만들 것입니다. ``ScoreTimer`` 는 점수가 1씩 증가하게 합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:805
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:804
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -5092,12 +5086,12 @@ msgstr ""
 "``PathFollow2D`` 노드는 자동으로 경로를 따라 돌고, 그래서 이걸로 적들의 위치"
 "와 방향을 선택하기 위해서 사용할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:811
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:810
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr "새로운 인스턴스는 ``add_child()`` 를 사용해야 추가할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:860
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:859
 msgid ""
 "In functions requiring angles, GDScript uses *radians*, not degrees. If "
 "you're more comfortable working with degrees, you'll need to use the "
@@ -5107,11 +5101,11 @@ msgstr ""
 "로 좀 더 편한 작업을 하고싶다면, ``deg2rad()`` 와 ``rad2deg()`` 함수로 이 둘"
 "을 전환할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:866
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:865
 msgid "HUD"
 msgstr "HUD"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:868
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:867
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -5124,7 +5118,7 @@ msgstr ""
 "<class_CanvasLayer>` 노드를 추가하고 ``HUD`` 라고 이름지으세요. \"HUD\"는 "
 "\"heads-up display\"의 약자로, 정보가 게임 화면 앞에 덮어씌우는 방식입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:874
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:873
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
@@ -5134,23 +5128,23 @@ msgstr ""
 "들을 그릴수 있게 해주고, 이로써 보여지는 정보가 플레이어나 적과 같은 게임 요"
 "소들에 의해 가려지지 않게 만듭니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:878
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:877
 msgid "The HUD displays the following information:"
 msgstr "HUD는 다음의 정보들을 보여줍니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:880
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:879
 msgid "Score, changed by ``ScoreTimer``."
 msgstr "점수, ``ScoreTimer`` 가 바꿈."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:881
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:880
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr "메시지, \"Game Over\"나 \"Get Ready!\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:882
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:881
 msgid "A \"Start\" button to begin the game."
 msgstr "게임을 시작하기 위한 \"Start\" 버튼."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:884
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:883
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
@@ -5160,27 +5154,27 @@ msgstr ""
 "기 위해, 우리는 두 가지 형식의 :ref:`Control <class_Control>` 노드를 쓸겁니"
 "다: :ref:`Label <class_Label>` 과 :ref:`Button <class_Button>` 입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:888
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:887
 msgid "Create the following as children of the ``HUD`` node:"
 msgstr "다음에 맞춰 ``HUD`` 노드의 자식으로 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:890
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:889
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr "``ScoreLabel`` 로 이름지은 :ref:`Label <class_Label>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:891
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:890
 msgid ":ref:`Label <class_Label>` named ``MessageLabel``."
 msgstr "``MessageLabel`` 로 이름지은 :ref:`Label <class_Label>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:892
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:891
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
 msgstr "``StartButton`` 으로 이름지은 :ref:`Button <class_Button>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:893
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:892
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr "``MessageTimer`` 로 이름지은 :ref:`Timer <class_Timer>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:895
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:894
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the *Text* field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -5193,11 +5187,11 @@ msgstr ""
 "assets에는 \"Xolonium-Regular.ttf\"라는 폰트 파일이 있습니다. 이 폰트를 사용"
 "하려면, 각 ``Control`` 노드마다 다음과 같이 하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:901
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:900
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr "\"Custom Fonts\" 에서, \"새 DynamicFont\"를 선택하세요"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:905
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:904
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -5207,7 +5201,7 @@ msgstr ""
 "\"를 눌러서 \"Xolonium-Regular.ttf\" 파일을 선택하세요. 또한 폰트의 ``Size`` "
 "도 설정해야 합니다. ``64`` 정도가 좋습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:911
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:910
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -5223,7 +5217,7 @@ msgstr ""
 "져 있는 지를 나타냅니다. 더 자세한 설명은 :ref:"
 "`doc_design_interfaces_with_the_control_nodes` 를 참고하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:918
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:917
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
@@ -5231,7 +5225,7 @@ msgstr ""
 "아래에 보이는 대로 노드를 정렬하세요. \"레이아웃(Layout)\" 버튼을 클릭해서 "
 "Control 노드의 레이아웃을 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:923
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:922
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
@@ -5239,74 +5233,74 @@ msgstr ""
 "당신은 노드들을 드래그해서 수동으로 놓을 수도 있습니다, 혹은 더 정확한 방법으"
 "로는, 다음의 설정을 사용하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:927
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:926
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:929
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:928
 msgid "*Text* : ``0``"
 msgstr "*Text* : ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:930
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid "*Layout* : \"Top Wide\""
 msgstr "*레이아웃* : \"Top Wide\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:931
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:930
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:937
 msgid "*Align* : \"Center\""
 msgstr "*Align* : \"Center\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:934
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "MessageLabel"
 msgstr "MessageLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:936
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
 msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "*Text* : ``Dodge the Creeps!``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:937
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:936
 msgid "*Layout* : \"HCenter Wide\""
 msgstr "*레이아웃* : \"HCenter Wide\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:939
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid "*Autowrap* : \"On\""
 msgstr "*Autowrap* : \"On\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:942
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:941
 msgid "StartButton"
 msgstr "StartButton"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:944
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:943
 msgid "*Text* : ``Start``"
 msgstr "*Text* : ``Start``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:944
 msgid "*Layout* : \"Center Bottom\""
 msgstr "*레이아웃* : \"Center Bottom\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:946
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid "*Margin* :"
 msgstr "*Margin* :"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:948
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:947
 msgid "Top: ``-200``"
 msgstr "Top: ``-200``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:949
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:948
 msgid "Bottom: ``-100``"
 msgstr "Bottom: ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:951
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:950
 msgid "Now add this script to ``HUD``:"
 msgstr "이제 ``HUD`` 에 이 스크립트를 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:970
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:969
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr "``start_game`` 시그널은 ``Main`` 노드에게 버튼이 눌려졌음을 알립니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:992
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:991
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\". On the ``MessageTimer``, set the ``Wait Time`` to ``2`` "
@@ -5316,7 +5310,7 @@ msgstr ""
 "\" 처럼 말이죠. ``MessageTimer`` 에서, ``WaitTime`` 을 ``2`` 로 설정하고 "
 "``OneShot`` 속성을 \"On\"으로 하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1027
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
@@ -5326,7 +5320,7 @@ msgstr ""
 "보여주고, 타이틀 화면으로 돌아와서, 잠깐 일시정지한 후 \"Start\" 버튼을 보여"
 "줍니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1031
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1030
 msgid ""
 "When you need to pause for a brief time, an alternative to using a Timer "
 "node is to use the SceneTree's ``create_timer()`` function. This can be very "
@@ -5338,11 +5332,11 @@ msgstr ""
 "간 지연에 매우 유용한데, \"Start\" 버튼을 보여주기 전에 약간의 시간을 기다려"
 "줍니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1049
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1048
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr "이 함수는 점수가 변경될 때마다 ``Main`` 에 의해서 호출됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1051
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1050
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton``."
@@ -5350,11 +5344,11 @@ msgstr ""
 "``MessageTimer`` 의 ``timeout()`` 시그널과 ``StartButton`` 의 ``pressed()`` "
 "를 연결하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1078
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1077
 msgid "Connecting HUD to Main"
 msgstr "메인에 HUD를 연결하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1080
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1079
 msgid ""
 "Now that we're done creating the ``HUD`` scene, save it and go back to "
 "``Main``. Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` "
@@ -5366,7 +5360,7 @@ msgstr ""
 "래에 위치시킵니다. 모든 트리는 이렇게 되어야 하므로, 놓친 것이 없는지 확인해"
 "보세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1087
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1086
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
@@ -5374,7 +5368,7 @@ msgstr ""
 "이제 ``HUD`` 기능을 ``Main`` 스크립트에 연결할겁니다. 여기에는 ``Main`` 씬에 "
 "추가적인 것이 요구됩니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1090
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1089
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function of the Main node."
@@ -5382,7 +5376,7 @@ msgstr ""
 "노드(Node) 탭에서, HUD의 ``start_game`` 시그널을 Main 노드의 ``new_game()`` "
 "함수에 연결하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1093
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1092
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -5390,11 +5384,11 @@ msgstr ""
 "``new_game()`` 에서, 점수 화면을 업데이트하고 \"Get Ready\" 메시지를 보이게 "
 "합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1108
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1107
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "``game_over()`` 에서는, 일치하는 ``HUD`` 함수를 호출해야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1119
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1118
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
@@ -5402,7 +5396,7 @@ msgstr ""
 "마지막으로, ``_on_ScoreTimer_timeout()`` 를 추가해서 점수가 바뀌는 것과 일치"
 "한 화면을 유지하도록 합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1130
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
@@ -5410,11 +5404,11 @@ msgstr ""
 "이제 실행할 준비가 끝났습니다! \"프로젝트 실행\" 버튼을 누르세요. 아마 메인 "
 "씬을 선택하라고 물어볼 겁니다, ``Main.tscn`` 을 골라줍시다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1134
 msgid "Removing old creeps"
 msgstr "오래된 적들 제거하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1137
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1136
 msgid ""
 "If you play until \"Game Over\" and then start a new game the creeps from "
 "the previous game are still on screen. It would be better if they all "
@@ -5424,7 +5418,7 @@ msgstr ""
 "직 화면에 남아 있습니다.새 게임이 시작되면 적이 모두 사라지는 것이 좋을 것입"
 "니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1141
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1140
 msgid ""
 "We'll use the ``start_game`` signal that's already being emitted by the "
 "``HUD`` node to remove the remaining creeps. We can't use the editor to "
@@ -5437,7 +5431,7 @@ msgstr ""
 "임을 실행하기 전 까진 ``Mob`` 노드가 ``Main`` 씬 트리에 없기 때운입니다. 대"
 "신 코드를 사용합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1146
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
 msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
@@ -5445,7 +5439,7 @@ msgstr ""
 "시작하려면 ``Mob.gd``\\ 에 새 함수를 추가합니다. ``queue_free()``\\ 는 현재 "
 "프레임이 끝나는 순간 현재 노드를 제거합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1161
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
@@ -5453,7 +5447,7 @@ msgstr ""
 "그런 다음 ``Main.gd``\\ 에서 ``_on_MobTimer_timeout()``\\ 의 끝에 새로운 줄"
 "을 추가합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1174
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid ""
 "This line tells the new Mob node (referenced by the ``mob`` variable) to "
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
@@ -5463,11 +5457,11 @@ msgstr ""
 "``_on_start_game()`` 함수가 실행하여 방출하는 ``start_game`` 시그널에 반응합"
 "니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1179
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1178
 msgid "Finishing up"
 msgstr "마무리 작업"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1180
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -5477,12 +5471,12 @@ msgstr ""
 "을 향상시킬 \"주스\"를 추가하는 것입니다. 독창적인 아이디어로 자유롭게 게임 "
 "플레이를 확장시켜보세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1186
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:59
 msgid "Background"
 msgstr "배경(Background)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1187
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -5497,7 +5491,7 @@ msgstr ""
 "``ColorRect`` 는 오직 하나의 속성만 가지고 있습니다: ``Color`` 입니다. 원하"
 "는 색깔을 고르고 ``ColorRect`` 의 크기를 조절해 화면을 덮도록 만듭시다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1195
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1194
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``Sprite`` node."
@@ -5505,11 +5499,11 @@ msgstr ""
 "또한 배경 이미지를 추가할 수도 있는데, 이미지가 있다면, ``Sprite`` 노드를 사"
 "용하면 됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1199
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1198
 msgid "Sound effects"
 msgstr "음향 효과(Sound effects)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1201
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1200
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -5521,7 +5515,7 @@ msgstr ""
 "Loop.ogg\"는 배경 음악으로, \"gameover.wav\"는 플레이어가 죽었을 때 쓰면 됩니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -5533,7 +5527,7 @@ msgstr ""
 "이름 지으세요. 각각에서, ``Stream`` 속성을 클릭하시고 \"Load\"를 선택해서 이"
 "름에 맞는 오디오 파일을 선택하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1211
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1210
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -5541,16 +5535,16 @@ msgstr ""
 "음악을 실행시키려면, ``new_game()`` 함수에 ``$Music.play()`` 를 추가하고 "
 "``game_over()`` 함수에 ``$Music.stop()`` 을 추가하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1214
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1213
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr ""
 "마지막으로, ``game_over()`` 함수에 ``$DeathSound.play()`` 를 추가하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1217
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1216
 msgid "Keyboard Shortcut"
 msgstr "키보드 단축키"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1219
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1218
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. One way to "
@@ -5560,7 +5554,7 @@ msgstr ""
 "하는 게 편리할 것입니다. 이렇게 하는 방법들 중 하나로 ``Button`` 노드의 "
 "\"Shortcut\" 속성을 사용하는 것이 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1223
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1222
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -5576,7 +5570,7 @@ msgstr ""
 "서 이름을 \"ui_select\"로 입력하세요. 이것은 스페이스바로 지정된 기본 입력 이"
 "벤트입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1231
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1230
 msgid ""
 "Now when the start button appears, you can either click it or press the "
 "spacebar to start the game."
@@ -5584,7 +5578,7 @@ msgstr ""
 "이제 시작 버튼이 나타날 때, 버튼을 클릭하거나 스페이스바를 눌러서 게임을 시작"
 "할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1235
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1234
 msgid "Project files"
 msgstr "프로젝트 파일"
 
@@ -5592,11 +5586,11 @@ msgstr "프로젝트 파일"
 msgid "You can find a completed version of this project at these locations:"
 msgstr "당신은 여기서 이 프로젝트의 완성 버전을 확인하실 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1238
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1237
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1239
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1238
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"
 
@@ -5705,11 +5699,11 @@ msgstr ""
 "여기 플레이어를 위한 전체 스크립트가 있습니다, 변경한 점에는 코멘트가 있습니"
 "다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:129
+#: ../../docs/getting_started/step_by_step/exporting.rst:246
 msgid "Setting a main scene"
 msgstr "메인 씬 설정하기"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:131
+#: ../../docs/getting_started/step_by_step/exporting.rst:248
 msgid ""
 "The main scene is the one that your game will start in. In *Project -> "
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
@@ -5719,14 +5713,14 @@ msgstr ""
 "(Project Settings) -> Application -> Run*\\ 에서, *Main Scene*\\ 에 있는 폴"
 "더 아이콘을 클릭하고 \"Main.tscn\"을 설정합니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:136
+#: ../../docs/getting_started/step_by_step/exporting.rst:253
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:194
 #: ../../docs/development/compiling/compiling_with_mono.rst:167
 msgid "Export templates"
 msgstr "템플릿 내보내기"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:138
+#: ../../docs/getting_started/step_by_step/exporting.rst:255
 msgid ""
 "In order to export, you need to download the *export templates* from the "
 "http://godotengine.org/download. These templates are optimized versions of "
@@ -5738,7 +5732,7 @@ msgstr ""
 "된 버전으로 각 플렛폼에 따로 컴파일된 편집기가 필요 없습니다. 당신은 또한 "
 "Godot에서 *편집기 -> 내보내기 템플릿 관리* 를 통해 다운로드 할 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:145
+#: ../../docs/getting_started/step_by_step/exporting.rst:262
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
@@ -5746,7 +5740,7 @@ msgstr ""
 "나타나는 창에서, \"다운로드\" 를 눌러서 당신의 Godot 버전과 맞는 템플릿을 다"
 "운로드 할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:150
+#: ../../docs/getting_started/step_by_step/exporting.rst:267
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
@@ -5754,11 +5748,11 @@ msgstr ""
 "Godot를 업그레이드 하셨다면, 새로운 버전에 맞는 템플릿을 다운로드 해야 하고 "
 "그렇지 않으면 프로젝트가 제대로 내보내기가 작동하지 않습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:154
+#: ../../docs/getting_started/step_by_step/exporting.rst:271
 msgid "Export presets"
 msgstr "프리셋 내보내기"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:156
+#: ../../docs/getting_started/step_by_step/exporting.rst:273
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
@@ -5766,7 +5760,7 @@ msgstr ""
 "다음은 *프로젝트(Project) -> 내보내기(Export)*\\ 에서 내보내기 설정을 구성할 "
 "수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:158
+#: ../../docs/getting_started/step_by_step/exporting.rst:275
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
@@ -5774,7 +5768,7 @@ msgstr ""
 "\"추가...\"를 눌러서 새 내보내기 프리셋을 만들고 플랫폼을 선택하세요. 다양한 "
 "설정과 함께 당신은 많은 프리셋를 만들 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:163
+#: ../../docs/getting_started/step_by_step/exporting.rst:280
 msgid ""
 "At the bottom of the window are two buttons. \"Export PCK/ZIP\" only creates "
 "a packed version of your project's data. This doesn't include an executable "
@@ -5784,7 +5778,7 @@ msgstr ""
 "를 압축된 버전으로 만듭니다. 이것은 실행 파일이 아니므로 프로젝트가 스스로 실"
 "행되지 못합니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:167
+#: ../../docs/getting_started/step_by_step/exporting.rst:284
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
@@ -5792,7 +5786,7 @@ msgstr ""
 "두 번째 버튼, \" 프로젝트 내보내기\", 게임의 완전 실행가능한 버전을 만듭니"
 "다, 마치 Android의 `.apk` 나 Windows의 `.exe` 처럼 말이죠."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:170
+#: ../../docs/getting_started/step_by_step/exporting.rst:287
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
@@ -5800,11 +5794,11 @@ msgstr ""
 "\"리소스\"와 \"기능\" 탭에서 당신은 게임이 각 플랫폼으로 어떻게 만들어질지를 "
 "설정할 수 있습니다. 지금은 이 설정을 그냥 놔 두어도 됩니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:174
+#: ../../docs/getting_started/step_by_step/exporting.rst:291
 msgid "Exporting by platform"
 msgstr "플랫폼 별 내보내기"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:176
+#: ../../docs/getting_started/step_by_step/exporting.rst:293
 msgid ""
 "In this section, we'll walk through the process for each platform, including "
 "any additional software or requirements you'll need."
@@ -5812,11 +5806,11 @@ msgstr ""
 "이 섹션에서, 추가 소프트웨어나 요구 사항과 함께 각 플랫폼의 프로세스를 단계적"
 "으로 배울겁니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:180
+#: ../../docs/getting_started/step_by_step/exporting.rst:297
 msgid "PC (Linux/macOS/Windows)"
 msgstr "PC (Linux/macOS/Windows)"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:182
+#: ../../docs/getting_started/step_by_step/exporting.rst:299
 msgid ""
 "Exporting PC platforms works the same across the three supported operating "
 "systems. Open the export window and click \"Add..\" to create the preset(s) "
@@ -5828,11 +5822,11 @@ msgstr ""
 "로젝트 내보내기\"를 클릭하고 이름과 목적 폴더를 지정합니다. 당신의 프로젝트 "
 "폴더 *바깥* 에 위치를 지정하세요."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:187
+#: ../../docs/getting_started/step_by_step/exporting.rst:304
 msgid "Click \"Save\" and the engine will build the export files."
 msgstr "\"저장\"을 누르면 엔진이 내보내기 파일을 만들겁니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:189
+#: ../../docs/getting_started/step_by_step/exporting.rst:306
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
@@ -5843,7 +5837,7 @@ msgstr ""
 "이고, 반면에 Linux나 Windows는 `.zip` 으로 생성합니다. 어떤 경우든지, 압축된 "
 "파일은 macOS의 `.app` 을 갖고 있으므로 더블 클릭해서 실행할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:194
+#: ../../docs/getting_started/step_by_step/exporting.rst:311
 msgid ""
 "On Windows, if you want your exported executable to have a different icon "
 "than the default one, you need to change it manually. See: :ref:"
@@ -5853,7 +5847,7 @@ msgstr ""
 "면, 수동으로 교체해야합니다. 여기를 참고하세요: :ref:"
 "`doc_changing_application_icon_for_windows`."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:201
+#: ../../docs/getting_started/step_by_step/exporting.rst:318
 msgid ""
 "Mobile devices come with a wide variety of capabilities. In most cases, "
 "Godot's default settings will work, but mobile development is sometimes more "
@@ -5864,23 +5858,23 @@ msgstr ""
 "먹히지만, 모바일 개발은 때로는 과학보단 더 예술에 가깝습니다, 그리고 모든 것"
 "이 작동시키기 위해 도움을 청하고 몇 가지 실험을 하게 될지도 모릅니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:207
+#: ../../docs/getting_started/step_by_step/exporting.rst:324
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
 msgstr "Android에 내보내기 전에, 다음의 소프트웨어를 다운받으셔야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:210
+#: ../../docs/getting_started/step_by_step/exporting.rst:327
 msgid "Android SDK: https://developer.android.com/studio/"
 msgstr "Android SDK: https://developer.android.com/studio/"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:211
+#: ../../docs/getting_started/step_by_step/exporting.rst:328
 msgid ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 msgstr ""
 "자바 JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:213
+#: ../../docs/getting_started/step_by_step/exporting.rst:330
 msgid ""
 "When you run Android Studio for the first time, click on *Configure -> SDK "
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
@@ -5890,14 +5884,14 @@ msgstr ""
 "\"Android SDK Platform Tools\" 을 실행하세요. 이것은 Godot가 장치와 통신하도"
 "록 만드는 `adb` 명령줄 도구를 실행시킵니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:217
+#: ../../docs/getting_started/step_by_step/exporting.rst:334
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
 msgstr ""
 "다음으로, 시스템의 명령줄에 다음의 명령을 실행시켜 debug keystore를 만드세요:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:224
+#: ../../docs/getting_started/step_by_step/exporting.rst:341
 msgid ""
 "Click on *Editor -> Editor Settings* in Godot and select the *Export/"
 "Android* section. Here, you need to set the paths to the Android SDK "
@@ -5908,7 +5902,7 @@ msgstr ""
 "다. 여기에서, 당신은 Android SDK 응용 프로그램의 위치와 당신이 방금 만든 키 "
 "저장소의 위치를 설정해줘야 합니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:230
+#: ../../docs/getting_started/step_by_step/exporting.rst:347
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
@@ -5919,7 +5913,7 @@ msgstr ""
 "택하고 *옵션* 아래의 *Screen*\\ 으로 가서 *Orientation*\\ 을 \"Portrait\"로 "
 "설정하세요."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:234
+#: ../../docs/getting_started/step_by_step/exporting.rst:351
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
@@ -5928,7 +5922,7 @@ msgstr ""
 "있는 APK 파일을 만들어 냅니다. 이 작업을 명령줄에서 하려면 다음 코드를 입력하"
 "세요:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:241
+#: ../../docs/getting_started/step_by_step/exporting.rst:358
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
@@ -5936,7 +5930,7 @@ msgstr ""
 "기기가 *개발자 모드*\\ 이어야 합니다. 자세한 내용은 기기의 설명서를 참고하세"
 "요."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:244
+#: ../../docs/getting_started/step_by_step/exporting.rst:361
 msgid ""
 "If your system supports it, connecting a compatible Android device will "
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
@@ -5945,13 +5939,13 @@ msgstr ""
 "시스템이 지원한다면, 호환하는 Android 기기와 연결할 때 Godot의 실행 및 테스"
 "트 버튼 영역에 \"원 클릭 배포\" 버튼이 나타납니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:249
+#: ../../docs/getting_started/step_by_step/exporting.rst:366
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
 msgstr "이 버튼만 클릭하면 APK가 만들어지고 그 사본이 기기에 설치됩니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:254
+#: ../../docs/getting_started/step_by_step/exporting.rst:371
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
@@ -5959,7 +5953,7 @@ msgstr ""
 "iOS에 게임이 돌아가게 하고 싶다면, 당신은 macOS와 Xcode가 실행되는 컴퓨터를 "
 "갖고 있어야 합니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:257
+#: ../../docs/getting_started/step_by_step/exporting.rst:374
 msgid ""
 "Before exporting, there are some settings that you *must* complete for the "
 "project to export successfully. First, the \"App Store Team Id\", which you "
@@ -5970,16 +5964,16 @@ msgstr ""
 "가지 사항이 있습니다. 먼저, \"App Store Team Id\" 입니다, 이것은 당신이 애플 "
 "개발자 계정에 로그인 한 후 \"멤버십\" 섹션에서 볼 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:261
+#: ../../docs/getting_started/step_by_step/exporting.rst:378
 msgid "You must also provide icons and splash screen images as shown below:"
 msgstr ""
 "그리고 반드시 아이콘과 스플래시 스크린 이미지를 다음과 같이 제공해야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:265
+#: ../../docs/getting_started/step_by_step/exporting.rst:382
 msgid "Click \"Export Project\" and select a destination folder."
 msgstr "\"프로젝트 내보내기\"를 누르고 대상 폴더를 선택하세요."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:267
+#: ../../docs/getting_started/step_by_step/exporting.rst:384
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
@@ -5987,7 +5981,7 @@ msgstr ""
 "프로젝트가 완전히 내보내졌다면, 당신이 지정한 폴더에 파일들이 만들어 진것을 "
 "볼 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:272
+#: ../../docs/getting_started/step_by_step/exporting.rst:389
 msgid ""
 "You can now open the project in Xcode and build the project for iOS. Xcode "
 "build procedure is beyond the scope of this tutorial. See https://help.apple."
@@ -5997,11 +5991,11 @@ msgstr ""
 "다. Xcode 개발 순서는 이 튜토리얼에 해당하지 않습니다. 자세한 것은 https://"
 "help.apple.com/xcode/mac/current/#/devc8c2a6be1 를 참고하세요."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:278
+#: ../../docs/getting_started/step_by_step/exporting.rst:395
 msgid "HTML5 (web)"
 msgstr "HTML5 (웹)"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:280
+#: ../../docs/getting_started/step_by_step/exporting.rst:397
 msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
@@ -6009,13 +6003,13 @@ msgstr ""
 "HTML5 프리셋으로 \"프로젝트 내보내기\"를 클릭하세요. 기본 설정에서 바꿀 필요"
 "가 없습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:283
+#: ../../docs/getting_started/step_by_step/exporting.rst:400
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"
 msgstr "내보내기가 끝나면, 다음의 파일이 들어있는 폴더를 찾으실 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:288
+#: ../../docs/getting_started/step_by_step/exporting.rst:405
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
@@ -6027,7 +6021,7 @@ msgstr ""
 "지 않았다면, 인터넷에 검색하여 특정 OS에 대한 웹 서버 설치를 찾아볼 수 있습니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:293
+#: ../../docs/getting_started/step_by_step/exporting.rst:410
 msgid ""
 "Point your browser at the URL where you've placed the html file. You may "
 "have to wait a few moments while the game loads before you see the start "
@@ -6036,7 +6030,7 @@ msgstr ""
 "URL에 html 파일을 올릴 브라우저를 향하게 하세요. 게임 시작 화면을 보기 전에 "
 "잠시 기다려야 할지도 모릅니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:298
+#: ../../docs/getting_started/step_by_step/exporting.rst:415
 msgid ""
 "The console window beneath the game tells you if anything goes wrong. You "
 "can disable it by setting \"Export With Debug\" off when you export the "
@@ -6045,7 +6039,7 @@ msgstr ""
 "게임 아래 콘솔 창은 게임이 잘못됬는가를 말해줍니다. 프로젝트를 내보낼 때 "
 "\"Export With Debug\"를 꺼서 이것을 없앨 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:301
+#: ../../docs/getting_started/step_by_step/exporting.rst:418
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "
 "technology and you may find some things that don't work. Make sure you have "
@@ -12267,7 +12261,7 @@ msgstr "명령"
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:90
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:120
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:160
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:21
@@ -16045,16 +16039,16 @@ msgstr ""
 msgid "Here is a complete class example based on these guidelines:"
 msgstr "이 가이드라인을 기반으로 한 전체 클래스 예제입니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:92
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:94
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
 msgid "Formatting"
 msgstr "서식(Formatting)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:95
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:97
 msgid "Encoding and special characters"
 msgstr "인코딩과 특수 문자"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:97
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:99
 msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
@@ -16062,12 +16056,12 @@ msgstr ""
 "줄 바꿈을 위해 라인 피드 (**LF**) 문자를 사용합니다. CRLF나 CR은 사용하지 않"
 "습니다 *(편집기 기본 설정)*"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:98
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:100
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
 "각 파일의 끝에 하나의 라인 피드 문자를 사용합니다. *(편집기 기본 설정)*"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:99
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:101
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
@@ -16076,55 +16070,55 @@ msgstr ""
 "%EC%88%9C%EC%84%9C_%ED%91%9C%EC%8B%9D>`_ 없이 **UTF-8** 인코딩을 사용합니다. "
 "*(편집기 기본 설정)*"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:100
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
 "들여쓰기로 스페이스바 대신 **Tab(탭)** 키를 사용합니다. *(편집기 기본 설정)*"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:103
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 msgid "Indentation"
 msgstr "들여쓰기(Indentation)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 msgid "Each indent level should be one greater than the block containing it."
 msgstr "들여쓰기 너비는 블록 바깥보다 한 칸 더 커야 됩니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:146
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:199
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:223
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:270
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:300
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:325
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:345
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:371
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:660
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:109
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:129
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:148
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:201
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:225
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:272
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:302
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:662
 msgid "**Good**:"
 msgstr "**좋음**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:135
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:169
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:210
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:229
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:280
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:307
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:332
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:352
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:381
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:116
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:171
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:212
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:231
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:309
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 msgid "**Bad**:"
 msgstr "**나쁨**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:124
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:126
 msgid ""
 "Use 2 indent levels to distinguish continuation lines from regular code "
 "blocks."
 msgstr ""
 "정규 코드 블록과 이어지는 줄을 구분하기 위해 2 칸 들여쓰기를 사용하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:143
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:145
 msgid ""
 "Exceptions to this rule are arrays, dictionaries, and enums. Use a single "
 "indentation level to distinguish continuation lines:"
@@ -16132,11 +16126,11 @@ msgstr ""
 "이 규칙의 예외는 배열, 딕셔너리, 열거형입니다. 연속 선을 구분하려면 한 칸 들"
 "여쓰기를 사용하세요:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
 msgid "Trailing comma"
 msgstr "쉼표 매달기(Trailing comma)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:197
 msgid ""
 "Use a trailing comma on the last line in arrays, dictionaries, and enums. "
 "This results in easier refactoring and better diffs in version control as "
@@ -16146,34 +16140,34 @@ msgstr ""
 "새 요소를 추가해도 마지막 줄을 수정하지 않아도 되기 때문에, 리팩토링하기 쉽"
 "고 버전 제어에서 비교가 더 좋습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:221
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:223
 msgid ""
 "Trailing commas are unnecessary in single-line lists, so don't add them in "
 "this case."
 msgstr ""
 "쉼표 매달기는 한 줄 목록에는 불필요합니다. 따라서 이 경우는 사용하지 마세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:236
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
 msgid "Blank lines"
 msgstr "공백 줄(Blank lines)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:240
 msgid "Surround functions and class definitions with two blank lines:"
 msgstr "함수와 클래스 정의를 두 개의 공백 줄로 묶습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:253
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:255
 msgid "Use one blank line inside functions to separate logical sections."
 msgstr "논리 섹션을 분리하기 위해 함수 안에 하나의 공백 줄을 사용합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:256
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
 msgid "Line length"
 msgstr "줄 길이"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:260
 msgid "Keep individual lines of code under 100 characters."
 msgstr "코드 한 줄은 100 문자 이내로 유지합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:260
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:262
 msgid ""
 "If you can, try to keep lines under 80 characters. This helps to read the "
 "code on small displays and with two scripts opened side-by-side in an "
@@ -16183,11 +16177,11 @@ msgstr ""
 "기 쉽고, 외부 텍스트 편집기에서 양쪽에 두 스크립트가 열려있는 화면에서도 읽"
 "기 쉽습니다. 예를 들어 서로 다른 코드 개정판을 볼 때가 있죠."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:265
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:267
 msgid "One statement per line"
 msgstr "한 줄에 하나의 명령문"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:267
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:269
 msgid ""
 "Never combine multiple statements on a single line. No, C programmers, not "
 "even with a single line conditional statement."
@@ -16195,15 +16189,15 @@ msgstr ""
 "한 줄에 여러 명령문을 묶지 마세요. C 프로그래머라면 한 줄에 조건문을 함께 사"
 "용하지 마세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:288
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:290
 msgid "The only exception to that rule is the ternary operator:"
 msgstr "유일한 예외라면 삼항(Ternary) 연산자일 것입니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:295
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
 msgid "Avoid unnecessary parentheses"
 msgstr "불필요한 괄호 피하기"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:299
 msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations, they only reduce readability."
@@ -16211,25 +16205,25 @@ msgstr ""
 "표현식과 조건문에 괄호를 사용하지 마십시오. 연산 명령에 필요한 경우가 아니라"
 "면, 가독성만 떨어뜨릴 것입니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:315
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
 msgid "Boolean operators"
 msgstr "불리언(Boolean) 연산자"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
 msgid ""
 "Prefer the plain English versions of boolean operators, as they are the most "
 "accessible:"
 msgstr "불리언 연산자의 영어 버전이 가장 접근하기 쉽습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:321
 msgid "Use ``and`` instead of ``&&``."
 msgstr "``&&`` 대신 ``and``\\ 를 사용하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:320
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
 msgid "Use ``or`` instead of ``||``."
 msgstr "``||`` 대신 ``or``\\ 를 사용하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:324
 msgid ""
 "You may also use parentheses around boolean operators to clear any "
 "ambiguity. This can make long expressions easier to read."
@@ -16237,11 +16231,11 @@ msgstr ""
 "모호한 표현을 막고자 불리언 연산자 주변에 괄호를 사용합니다. 이렇게 하면 긴 "
 "표현식도 읽기 쉬워집니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:340
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:342
 msgid "Comment spacing"
 msgstr "주석(Comment) 간격"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:342
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:344
 msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
@@ -16249,7 +16243,7 @@ msgstr ""
 "표준 주석은 한 칸 띄고 시작해야 합니다. 하지만 코드에 놓은 주석은 띄지 않습니"
 "다. 이렇게 하면 코드를 비활성화한 것과 텍스트 주석을 구분하기 좋습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:361
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:363
 msgid ""
 "In the script editor, to toggle the selected code commented, press "
 "<kbd>Ctrl</kbd> <kbd>K</kbd>. This feature adds a single # sign at the start "
@@ -16258,11 +16252,11 @@ msgstr ""
 "스크립트 편집기에서 선택한 코드를 주석으로 바꾸려면 <kbd>Ctrl</kbd> <kbd>K</"
 "kbd>\\ 를 누르세요. 누르면 선택한 줄의 처음 부분에 # 기호가 생깁니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:366
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 msgid "Whitespace"
 msgstr "공백"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
 msgid ""
 "Always use one space around operators and after commas. Also, avoid extra "
 "spaces in dictionary references and function calls."
@@ -16270,15 +16264,15 @@ msgstr ""
 "연산자와 쉼표 뒤에는 한 칸을 띄어주세요. 그리고 딕셔너리 참조와 함수 호출에"
 "는 띄어쓰기를 피하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:391
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:393
 msgid "Don't use spaces to align expressions vertically:"
 msgstr "표현식이 수직으로 나열하는 띄어쓰기를 하지 마세요:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:400
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
 msgid "Quotes"
 msgstr "따옴표"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:404
 msgid ""
 "Use double quotes unless single quotes make it possible to escape fewer "
 "characters in a given string. See the examples below:"
@@ -16286,12 +16280,12 @@ msgstr ""
 "작은 따옴표로 주어진 문자열을 더 작은 문자 수로 이스케이프하게 만드는 것이 아"
 "니라면 큰 따옴표를 사용하세요. 아래의 예제를 참고하세요:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:197
 msgid "Naming conventions"
 msgstr "명명 규칙"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:426
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, leading to "
@@ -16300,29 +16294,29 @@ msgstr ""
 "이러한 명명 규칙은 Godot 엔진 스타일을 따릅니다. 이 규칙을 깨면 코드는 내장 "
 "명명 규칙으로 망가지며, 일관되지 않은 코드가 됩니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:429
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
 msgid "Classes and nodes"
 msgstr "클래스와 노드"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 msgid "Use PascalCase for class and node names:"
 msgstr "클래스와 노드 이름에는 파스칼 표기법(PascalCase)을 사용하세요:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:437
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:439
 msgid "Also use PascalCase when loading a class into a constant or a variable:"
 msgstr ""
 "그리고 상수 또는 변수로 클래스를 불러올 때도 파스칼 표기법(PascalCase)을 사용"
 "하세요:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:444
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:446
 msgid "Functions and variables"
 msgstr "함수와 변수"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:446
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:448
 msgid "Use snake\\_case to name functions and variables:"
 msgstr "함수와 변수 이름에는 스네이크 표기법(snake\\_case)를 사용하세요:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:453
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:455
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods functions the user must "
 "override, private functions, and private variables:"
@@ -16330,15 +16324,15 @@ msgstr ""
 "개인 함수, 개인 변수, 사용자가 다시 정의하는 가상 메서드 함수 앞에는 밑줄 "
 "(\\_) 하나가 있어야 합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:464
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:466
 msgid "Use the past tense to name signals:"
 msgstr "시그널의 이름에는 과거형을 사용합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:472
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:474
 msgid "Constants and enums"
 msgstr "상수(Constant)와 열거형(enum)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:474
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:476
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
@@ -16346,7 +16340,7 @@ msgstr ""
 "CONSTANT\\_CASE로 상수를 작성합니다. 다시 말해, 모든 단어는 대문자로 하고 띄"
 "어쓰기 대신 밑줄 (\\_)을 사용합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:481
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:483
 msgid ""
 "Use PascalCase for enum *names* and CONSTANT\\_CASE for their members, as "
 "they are constants:"
@@ -16354,11 +16348,11 @@ msgstr ""
 "열거형 *이름*\\ 에는 파스칼 표기법(PascalCase)을 사용하고, 열거형의 멤버에는 "
 "상수와 마찬가지로 CONSTANT\\_CASE를 사용합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:495
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:497
 msgid "Code order"
 msgstr "코드 순서"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:497
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:499
 msgid ""
 "This first section focuses on code order. For formatting, see :ref:"
 "`formatting`. For naming conventions, see :ref:`naming_conventions`."
@@ -16367,11 +16361,11 @@ msgstr ""
 "참고해주세요. 명명 규칙에 관해서는 :ref:`naming_conventions`\\ 을 참고해주세"
 "요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:500
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:502
 msgid "We suggest to organize GDScript code this way:"
 msgstr "제안하는 GDScript 코드 구조는 다음과 같습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:523
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:525
 msgid ""
 "We optimized the order to make it easy to read the code from top to bottom, "
 "to help developers reading the code for the first time understand how it "
@@ -16381,25 +16375,25 @@ msgstr ""
 "코드가 어떻게 작동하는 지 알도록, 그리고 변수 선언의 순서와 관련된 오류가 발"
 "생하지 않도록 말이죠."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:527
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:529
 msgid "This code order follows four rules of thumb:"
 msgstr "이 코드 순서는 네 가지 규칙을 따릅니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:529
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:531
 msgid "Properties and signals come first, followed by methods."
 msgstr "속성과 시그널이 첫 번째로 옵니다. 그 뒤는 메서드가 나옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:530
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:532
 msgid "Public comes before private."
 msgstr "공개(Public) 코드가 개인(Private) 코드보다 먼저 옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:531
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:533
 msgid "Virtual callbacks come before the class's interface."
 msgstr ""
 "가상 콜백(Virtual Callback)이 클래스의 인터페이스(Class's Interface)보다 먼"
 "저 옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:532
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:534
 msgid ""
 "The object's construction and initialization functions, ``_init`` and "
 "``_ready``, come before functions that modify the object at runtime."
@@ -16407,11 +16401,11 @@ msgstr ""
 "객체의 구조와 초기화 함수인 ``_init``\\ 과 ``_ready``\\ 는 런타임에서 객체를 "
 "수정하도록 함수 이전에 옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:537
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:539
 msgid "Class declaration"
 msgstr "클래스 선언(Declaration)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:539
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:541
 msgid ""
 "If the code is meant to run in the editor, place the ``tool`` keyword on the "
 "first line of the script."
@@ -16419,7 +16413,7 @@ msgstr ""
 "코드가 편집기에서 작동하게 하려면, 스크립트의 첫 번째 줄에 ``tool`` 키워드를 "
 "배치하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:542
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:544
 msgid ""
 "Follow with the `class_name` if necessary. You can turn a GDScript file into "
 "a global type in your project using this feature. For more information, see :"
@@ -16429,12 +16423,12 @@ msgstr ""
 "GDScript를 프로젝트의 전역 유형으로 바꿀 수 있습니다. 자세한 설명은 :ref:"
 "`doc_gdscript`\\ 를 참고하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:546
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:548
 msgid "Then, add the `extends` keyword if the class extends a built-in type."
 msgstr ""
 "다음으로, 클래스가 내장 유형을 확장하고 있다면 `extends` 키워드를 추가하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:548
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:550
 msgid ""
 "Following that, you should have the class's optional docstring as comments. "
 "You can use that to explain the role of your class to your teammates, how it "
@@ -16444,11 +16438,11 @@ msgstr ""
 "스의 역할을 설명할 때 사용할 수 있습니다. 다른 동료나 사용설명서 등으로 쓸 "
 "수 있죠."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:560
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:562
 msgid "Signals and properties"
 msgstr "시그널(Signal)과 속성(Property)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:562
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:564
 msgid ""
 "Write signal declarations, followed by properties, that is to say, member "
 "variables, after the docstring."
@@ -16456,7 +16450,7 @@ msgstr ""
 "Docstring이 끝나면 시그널 선언을 작성한 뒤에 속성, 즉, 멤버 변수를 작성합니"
 "다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:565
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:567
 msgid ""
 "Enums should come after signals, as you can use them as export hints for "
 "other properties."
@@ -16464,7 +16458,7 @@ msgstr ""
 "열거형(Enum)은 시그널 뒤에 나와야 합니다. 다른 속성의 내보내기 힌트로 사용할 "
 "수 있기 때문이죠."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:568
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:570
 msgid ""
 "Then, write constants, exported variables, public, private, and onready "
 "variables, in that order."
@@ -16472,7 +16466,7 @@ msgstr ""
 "그런 다음, 상수(Constant), 내보낸 변수, 공개(Public), 개인(Private), onready "
 "변수를 순서대로 작성하세요."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:591
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:593
 msgid ""
 "The GDScript compiler evaluates onready variables right before the "
 "``_ready`` callback. You can use that to cache node dependencies, that is to "
@@ -16483,15 +16477,15 @@ msgstr ""
 "라서 노드 종속성을 처리할 때 사용할 수 있습니다. 말 그대로 씬에서 클래스에 의"
 "존하는 자식 노드를 가져올 수 있다는 것이죠. 위 예제에서 이 작업을 보여줍니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:598
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:600
 msgid "Methods and static functions"
 msgstr "메서드(Method)와 정적(Static) 함수"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:600
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:602
 msgid "After the class's properties come the methods."
 msgstr "클래스 속성 뒤에는 메서드가 옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:602
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:604
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
@@ -16501,14 +16495,14 @@ msgstr ""
 "요. 그 뒤로 Godot가 씬 트리에 노드를 추가할 때 호출하는 ``_ready()`` 콜백이 "
 "옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:608
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
 msgstr ""
 "이 함수가 객체를 어떻게 초기화할 지 보여주기 때문에 가장 먼저 와야 합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:609
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:611
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
@@ -16518,7 +16512,7 @@ msgstr ""
 "백은 다음에 나와야 합니다. 이 메서드는 객체의 메인 루프와 게임 엔진과의 상호"
 "작용을 제어합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
@@ -16526,11 +16520,11 @@ msgstr ""
 "이 다음은 순서에 따라 클래스 인터페이스의 나머지인, 공개 메서드와 개인 메서드"
 "가 옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:650
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:652
 msgid "Static typing"
 msgstr "정적 타이핑(Static Typing)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:652
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:654
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
@@ -16538,11 +16532,11 @@ msgstr ""
 "Godot 3.1부터, GDScript는 :ref:`선택 정적 타이핑<doc_gdscript_static_typing>`"
 "\\ 을 지원합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:655
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:657
 msgid "Type hints"
 msgstr "유형 힌트(Type Hint)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:657
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:659
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
@@ -16550,14 +16544,14 @@ msgstr ""
 "변수의 이름 바로 뒤에, 띄어쓰기 없이 쌍점을 배치하세요. 그러면 GDScript 컴파"
 "일러는 변수의 유형을 추론합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:676
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:678
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
 "컴파일러가 유형 힌트를 추론할 때는 쌍점과 등호를 함께 작성합니다: ``:=``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:682
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:684
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr "함수를 정의할 때, 반환 유형 화살표의 양쪽에는 띄어쓰기를 추가하세요."
@@ -21033,17 +21027,18 @@ msgstr ""
 "``PrincipledBSDF``, ``Diffuse``, ``Glossy``, ``Glass``, ``add shader`` 그리"
 "고 ``mix shader``\\ 를 제외한 셰이더 노드들"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:49
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:50
+#, fuzzy
 msgid ""
-"If possible try to use PrincipledBSDF node with GGX distribution as the "
-"output shader node, it is the only one guarantee to be exactly correctly. "
+"If possible, try to use PrincipledBSDF node with GGX distribution as the "
+"output shader node, it is the only one guaranteed to be exactly correct. "
 "Others are just based on approximation."
 msgstr ""
 "PrincipledBSDF 노드가 정확하게 된다는 것을 보장하기 위해, 가능하다면 GGX 분포"
 "를 셰이더 노드 출력으로 하도록 하세요. 다른 것은 단지 근사치를 기반으로 합니"
 "다."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:52
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:53
 msgid ""
 "Sometimes materials may not be valid for exporting (e.g. has some "
 "unsupported node) or it is using Blender Internal Engine, only the diffuse "
@@ -21054,11 +21049,11 @@ msgstr ""
 "가져서) 혹은 블렌더 내장 엔진을 사용하는 등의 이유로, 오직 확산 색상과 몇 가"
 "지 플래그 (예: 셰이드 없음)가 내보내지고 Spatial 머티리얼의 형태가 됩니다."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:58
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:59
 msgid "Generate external materials"
 msgstr "외부 머티리얼 생성하기"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:60
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:61
 msgid ""
 "The default configuration of material exporting would keep all the materials "
 "internal to the ``escn`` file. There is an option which could enable "
@@ -21068,7 +21063,7 @@ msgstr ""
 "지하는 것입니다. 설정을 통해 Godot에서 ``escn`` 파일을 열 때 외부 ``."
 "material`` 파일을 생성하도록 할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:66
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:67
 msgid ""
 "``.material`` file can be assigned to any material slot to be a external "
 "resource."
@@ -21771,10 +21766,78 @@ msgstr ""
 "니다). 텍스처도 자동으로 다시 가져옵니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
+#, fuzzy
+msgid "Supported image formats"
+msgstr "지원되는 애니메이션"
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:36
+#, fuzzy
+msgid "Godot can import the following image formats:"
+msgstr "Godot는 다음 3D *씬 파일 형식*\\ 을 지원합니다:"
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:38
+msgid "BMP (``.bmp``)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:39
+msgid ""
+"DirectDraw Surface (``.dds``) - If mipmaps are present in the texture, they "
+"will be loaded directly. This can be used to achieve effects using custom "
+"mipmaps."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:42
+msgid ""
+"OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:44
+msgid ""
+"Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
+"skies)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:46
+msgid ""
+"JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
+"limitations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:48
+msgid ""
+"PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
+"(no HDR images)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:50
+msgid "Truevision Targa (``.tga``)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:51
+msgid ""
+"SVG (``.svg``, ``.svgz``) - SVGs are rasterized using `NanoSVG <https://"
+"github.com/memononen/nanosvg>`__ when importing them. Support is limited; "
+"complex vectors may not render correctly. For complex vectors, rendering "
+"them to PNGs using Inkscape is often a better solution. This can be "
+"automated thanks to its `command-line interface <https://wiki.inkscape.org/"
+"wiki/index.php/Using_the_Command_Line#Export_files>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+msgid "WebP (``.webp``)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
+msgid ""
+"If you've compiled the Godot editor from source with specific modules "
+"disabled, some formats may not be available."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "Compression"
 msgstr "압축"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:36
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
 msgid ""
 "Images are one of the largest assets in a game. To handle them efficiently, "
 "they need to be compressed. Godot offers several compression methods, "
@@ -21784,155 +21847,160 @@ msgstr ""
 "축이 필요합니다. Godot는 여러 압축 방식을 제공하며, 사용 사례에 따라 다릅니"
 "다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:40
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:70
 msgid "Compress Mode"
 msgstr "압축 모드"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:42
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:72
+#, fuzzy
 msgid ""
-"VRAM Compression: This is the most common compression mode for 3D assets. "
-"File on disk is reduced and video memory usage is also reduced considerably. "
-"For 3D, it may present unwanted artifacts, though."
+"**VRAM Compression:** This is the most common compression mode for 3D "
+"assets. Size on disk is reduced and video memory usage is also decreased "
+"considerably (usually by a factor between 4 and 6). This mode should be "
+"avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
 "VRAM 압축: 이것은 3D 애셋을 위한 가장 일반적인 압축 모드입니다. 디스크의 파일"
 "은 줄어들고 비디오 메모리 사용량도 상당히 줄어듭니다. 3D의 경우, 원치 않은 결"
 "과물이 나올 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:44
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:76
+#, fuzzy
 msgid ""
-"Lossless Compression: This is the most common compression for 2D assets. It "
-"shows assets without any kind of artifacting, and disk compression is "
-"decent. It will use considerably more amount of video memory than VRAM, "
-"though."
+"**Lossless Compression:** This is the most common compression mode for 2D "
+"assets. It shows assets without any kind of artifacting, and disk "
+"compression is decent. It will use considerably more amount of video memory "
+"than VRAM Compression, though. This is also the recommended setting for "
+"pixel art."
 msgstr ""
 "무손실 압축: 이것은 2D 애셋을 위한 가장 일반적인 압축입니다. 어떤 인위적 처리"
 "없이 애셋을 보여주고, 디스크 압축은 괜찮습니다. VRAM보다 상당히 많은 양의 비"
 "디오 메모리를 사용할 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:46
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:80
 msgid ""
-"Lossy Compression: For games with lots of large 2D assets, lossy compression "
-"can be a great choice. It has some artifacting, but less than VRAM and the "
-"file size is almost a tenth of Lossless."
+"**Lossy Compression:** This is a good choice for large 2D assets. It has "
+"some artifacts, but less than VRAM and the file size is several times lower "
+"compared to Lossless or Uncompressed. Video memory usage isn't decreased by "
+"this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
-"손실 압축: 많은 양의 2D 애셋을 가진 게임에게, 손실 압축은 좋은 선택일 수 있습"
-"니다. 인위적 처리를 갖지만, VRAM보다 더 약하면서 파일 크기는 거의 무손실의 10"
-"분의 1이 됩니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:84
+#, fuzzy
 msgid ""
-"Uncompressed: Only useful for formats that can't be compressed (like, raw "
-"float)."
+"**Uncompressed:** Only useful for formats that can't be compressed (such as "
+"raw float images)."
 msgstr "압축하지 않음: (raw float와 같이) 압축할 수 없는 형식에만 유용합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:50
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:87
+#, fuzzy
 msgid ""
 "In this table, each of the four options are described together with their "
-"advantages and disadvantages ( |good| = Best, |bad| =Worst ):"
+"advantages and disadvantages (|good| = best, |bad| = worst):"
 msgstr ""
 "이 표에서, 4개의 설정 각각은 이점과 손실을 설명합니다 ( |good| = 좋음, |bad| "
 "= 나쁨):"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid "Uncompressed"
 msgstr "압축하지 않음"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid "Compress Lossless (PNG)"
 msgstr "무손실 압축 (PNG)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid "Compress Lossy (WebP)"
 msgstr "손실 압축 (WebP)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid "Compress VRAM"
 msgstr "VRAM 압축"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
 msgid "Stored as raw pixels"
 msgstr "순수 화소로 저장됨"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
 msgid "Stored as PNG"
 msgstr "PNG로 저장됨"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
 msgid "Stored as WebP"
 msgstr "WebP로 저장됨"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
-msgid "Stored as S3TC/BC,PVRTC/ETC, depending on platform"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+#, fuzzy
+msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
 msgstr "플랫폼에 따라, S3TC/BC,PVRTC/ETC로 저장됨"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "Size on Disk"
 msgstr "디스크에 저장됨"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
 msgid "|bad| Large"
 msgstr "|bad| 거대함"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "|regular| Small"
 msgstr "|regular| 작음"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "|good| Very Small"
 msgstr "|good| 매우 작음"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
 msgid "Memory Usage"
 msgstr "메모리 사용량"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
 msgid "|good| Small"
 msgstr "|good| 작음"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:62
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
 msgid "Performance"
 msgstr "성능"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:62
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "|regular| Normal"
 msgstr "|regular| 보통"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:62
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "|good| Fast"
 msgstr "|good| 빠름"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid "Quality Loss"
 msgstr "품질 손실"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid "|good| None"
 msgstr "|good| 없음"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid "|regular| Slight"
 msgstr "|regular| 약간 있음"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
 msgid "|bad| Moderate"
 msgstr "|bad| 보통"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "Load Time"
 msgstr "불러오기 시간"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "|bad| Slow"
 msgstr "|bad| 느림"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:76
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:113
 msgid "HDR Mode"
 msgstr "HDR 모드"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:78
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:115
 msgid ""
 "Godot supports high dynamic range textures (as .HDR or .EXR). These are "
 "mostly useful as high dynamic range equirectangular panorama skies (the "
@@ -21945,7 +22013,7 @@ msgstr ""
 "도 합니다 (검색해보면 쉽게 찾을 수 있습니다). 최신 PC는 BC6H VRAM 형식을 지원"
 "하지만, 지원하지 않는 형식도 많이 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:81
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:118
 msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
 "textures, enable the \"Force RGBE\" option."
@@ -21953,11 +22021,11 @@ msgstr ""
 "Godot가 텍스처의 종류와의 완전한 호환성을 보장하고 싶다면, \"Force RGBE\" 설"
 "정을 활성화하세요."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:84
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:121
 msgid "Normal Map"
 msgstr "노말맵"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:86
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:123
 msgid ""
 "When using a texture as normal map, only the red and green channels are "
 "required. Given regular texture compression algorithms produce artifacts "
@@ -21974,19 +22042,19 @@ msgstr ""
 "\"로 설정하는데, 텍스처가 노말맵으로 사용된다면 자동으로 \"Enabled\"로 바뀌"
 "며 다시 가져온다는 것을 뜻합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:128
 msgid ""
 "Note that RGTC compression affects the resulting normal map image. You will "
 "have to adjust custom shaders that use the normal map to take this into "
 "account."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:131
 #: ../../docs/tutorials/3d/spatial_material.rst:30
 msgid "Flags"
 msgstr "플래그"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:96
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:133
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
@@ -21994,11 +22062,11 @@ msgstr ""
 "사용 사례에 따라, 이미지를 텍스처로 가져올 때 쓸 수 있는 많은 설정이 있습니"
 "다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:136
 msgid "Repeat"
 msgstr "Repeat(반복)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:138
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
@@ -22007,16 +22075,16 @@ msgstr ""
 "이 설정은 3D에 가장 일반적으로 사용하며, 그렇기에 기본적으로 2D에서는 꺼져있"
 "습니다. 0,0 - 1,1 범위를 넘는 UV 좌표를 \"loop\"로 설정합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:140
 msgid "Repeating can optionally be set to mirrored mode."
 msgstr "반복은 선택에 따라 거울 모드로 설정할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:106
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:143
 #: ../../docs/tutorials/audio/audio_buses.rst:180
 msgid "Filter"
 msgstr "Filter(필터)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:108
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:145
 msgid ""
 "When pixels become larger than the screen pixels, this option enables linear "
 "interpolation for them. The result is a smoother (less blocky) texture. This "
@@ -22027,11 +22095,11 @@ msgstr ""
 "는 더 부드러운 (덜 각진) 텍스처가 됩니다. 이 설정은 보통은 2D와 3D에 사용될 "
 "수 있지만, 픽셀 퍼펙트 게임을 만들 때는 보통 비활성화합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:111
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:148
 msgid "Mipmaps"
 msgstr "Mipmaps(밉맵)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:113
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid ""
 "When pixels become smaller than the screen, mipmaps kick in. This helps "
 "reduce the grainy effect when shrinking the textures. Keep in mind that, in "
@@ -22042,15 +22110,15 @@ msgstr ""
 "과를 줄여줍니다. 명심하세요, 오래된 하드웨어 (GLES2, 주로 모바일)에서, 밉맵"
 "을 사용하려면 몇 가지 요구 사항이 있습니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:116
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:153
 msgid "Texture width and height must be powers of 2"
 msgstr "텍스처 가로와 세로는 반드시 2의 제곱이어야 합니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:117
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:154
 msgid "Repeat must be enabled"
 msgstr "Repeat가 활성화되어 있어야 합니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:119
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:156
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
@@ -22058,7 +22126,7 @@ msgstr ""
 "스마트폰 게임과 애플리케이션을 만들 때, 완전한 호환성과 밉맵이 필요하다면 위"
 "의 내용을 명심하세요."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:121
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
@@ -22066,11 +22134,11 @@ msgstr ""
 "3D 작업에서, 밉맵은 켜져 있어야 성능이 향상됩니다 (더 작은 버전의 텍스처는 멀"
 "리 있는 객체에 사용됩니다)."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:124
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:161
 msgid "Anisotropic"
 msgstr "Anisotropic(비등방성)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:126
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:163
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
@@ -22078,11 +22146,11 @@ msgstr ""
 "텍스처가 (바닥과 같이) 화면과 거의 평행할 때, 이 설정은 흐려지는 것을 줄여서 "
 "더 세세하게 표현하도록 만듭니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:129
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:166
 msgid "SRGB"
 msgstr "SRGB"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:131
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:168
 msgid ""
 "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or "
 "detail channels need to have this option turned on in order for colors to "
@@ -22094,20 +22162,20 @@ msgstr ""
 "합니다. \"Detect\" 모드로 설정할 때, 텍스처는 반사율 채널을 사용할 때 SRGB로 "
 "표시될 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:135
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:172
 msgid "Process"
 msgstr "Process(가공)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:137
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:174
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr "이미지를 텍스처로 가져올 때, 일부 특수 가공을 적용할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:140
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:177
 msgid "Fix Alpha Border"
 msgstr "Fix Alpha Border(알파 테두리 수정)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:142
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:179
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
 "transparency to non transparency. It helps mitigate the outline effect when "
@@ -22117,17 +22185,17 @@ msgstr ""
 "니다. 포토샵 등에서 이미지를 가져올 때 테두리 효과를 완화하는데 도움을 줍니"
 "다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:147
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:184
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
 msgstr "특정한 값이 필요하지 않다면, 기본 값으로 두는 것이 좋습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:187
 msgid "Premultiplied Alpha"
 msgstr "Premultiplied Alpha(미리 곱하기 알파)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:152
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:189
 msgid ""
 "An alternative to fix darkened borders is to use premultiplied alpha. By "
 "enabling this option, the texture will be converted to this format. Keep in "
@@ -22138,11 +22206,11 @@ msgstr ""
 "설정을 키면, 텍스처는 이 형식으로 변환될 것입니다. 이 텍스처가 필요한 캔버스 "
 "항목에 PREMULT ALPHA 블렌드 모드를 사용하는 머티리얼을 만들어야 합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:156
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:193
 msgid "HDR as sRGB"
 msgstr "HDR as sRGB(sRGB로서의 HDR)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:158
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:195
 msgid ""
 "A few HDR files are broken and contain sRGB color data. It is advised not to "
 "use them, but, in the worst-case scenario, toggling this option on will make "
@@ -22151,11 +22219,11 @@ msgstr ""
 "몇 몇 HDR 파일은 손상되고 sRGB 색상 데이터를 갖고 있습니다. 사용하지 않는 것"
 "이 좋지만, 최악의 경우에서, 이 설정을 켜면 좋게 보이게 만듭니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:161
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:198
 msgid "Invert Color"
 msgstr "Invert Color(색상 반전)"
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:163
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:200
 msgid ""
 "Reverses the image's color. This is useful, for example, to convert a height "
 "map generated by external programs to depth map to use with :ref:"
@@ -71844,7 +71912,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:131
 msgid ""
 "To generate and compile the bindings, use this command (replacing "
-"``<platform>`` with ``windows``, ``x11`` or ``osx`` depending on your OS):"
+"``<platform>`` with ``windows``, ``linux`` or ``osx`` depending on your OS):"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:140
@@ -77567,18 +77635,19 @@ msgstr "적 씬은 다음 노드들을 사용할 것입니다:"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:24
 msgid ""
-"Copyright (c) 2007-2019 Juan Linietsky, Ariel Manzur. Copyright (c) "
-"2014-2019 Godot Engine contributors."
+"Copyright (c) 2007-2020 Juan Linietsky, Ariel Manzur. Copyright (c) "
+"2014-2020 Godot Engine contributors."
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:27
+#: ../../docs/tutorials/legal/complying_with_licenses.rst:88
 msgid ""
 "Permission is hereby granted, free of charge, to any person obtaining a copy "
 "of this software and associated documentation files (the \"Software\"), to "
-"deal      in the Software without restriction, including without limitation "
-"the rights to use, copy, modify, merge, publish, distribute, sublicense, and/"
-"or sell copies of the Software, and to permit persons to whom the Software "
-"is furnished to do so, subject to the following conditions:"
+"deal in the Software without restriction, including without limitation the "
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or "
+"sell copies of the Software, and to permit persons to whom the Software is "
+"furnished to do so, subject to the following conditions:"
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:29
@@ -77714,16 +77783,6 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:86
 msgid "Copyright (c) 2002-2016 Lee Salzman"
-msgstr ""
-
-#: ../../docs/tutorials/legal/complying_with_licenses.rst:88
-msgid ""
-"Permission is hereby granted, free of charge, to any person obtaining a copy "
-"of this software and associated documentation files (the \"Software\"), to "
-"deal in the Software without restriction, including without limitation the "
-"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or "
-"sell copies of the Software, and to permit persons to whom the Software is "
-"furnished to do so, subject to the following conditions:"
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:95
@@ -80036,25 +80095,33 @@ msgid ""
 "lot of them:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:62
+#: ../../docs/development/compiling/optimizing_for_size.rst:61
+msgid ""
+"If this proves not to work for your use case, you should review the list of "
+"modules and see which ones you actually still need for your game (e.g. you "
+"might want to keep networking-related modules, regex support, or theora/webm "
+"to play videos)."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:67
 msgid "Optimizing for size instead of speed"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:64
+#: ../../docs/development/compiling/optimizing_for_size.rst:69
 msgid ""
 "Godot 3.1 onwards allows to compile using size optimizations. To enable "
 "this, just set the ``optimize`` flag to ``size``:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:71
+#: ../../docs/development/compiling/optimizing_for_size.rst:76
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:74
+#: ../../docs/development/compiling/optimizing_for_size.rst:79
 msgid "Compiling with link-time optimization"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:76
+#: ../../docs/development/compiling/optimizing_for_size.rst:81
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
 "terms of performance and file size. It works by eliminating duplicate "
@@ -80062,32 +80129,32 @@ msgid ""
 "and MSVC compilers:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:85
+#: ../../docs/development/compiling/optimizing_for_size.rst:90
 msgid ""
 "Linking becomes much slower with this option, so it should be used only for "
 "release builds."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:89
+#: ../../docs/development/compiling/optimizing_for_size.rst:94
 msgid "Stripping binaries"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:91
+#: ../../docs/development/compiling/optimizing_for_size.rst:96
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:98
+#: ../../docs/development/compiling/optimizing_for_size.rst:103
 msgid "Using UPX to compress binaries"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:100
+#: ../../docs/development/compiling/optimizing_for_size.rst:105
 msgid ""
 "If you are targeting desktop platforms, the `UPX <https://upx.github.io/>`_ "
 "compressor can be used. This can reduce binary size considerably."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:104
+#: ../../docs/development/compiling/optimizing_for_size.rst:109
 msgid ""
 "However, keep in mind that some antivirus programs may detect UPX-packed "
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "
@@ -86400,6 +86467,43 @@ msgid ""
 msgstr ""
 
 #~ msgid ""
+#~ "Godot supports Collada via the `OpenCollada <https://github.com/"
+#~ "KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, "
+#~ "3DSMax)."
+#~ msgstr ""
+#~ "Godot는 `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
+#~ "OpenCOLLADA-Tools>`_ 내보내기를 통해 Collada를 지원합니다 (Maya, 3DSMax)."
+
+#~ msgid ""
+#~ "If you are using Blender, take a look at our own `Better Collada Exporter "
+#~ "<https://godotengine.org/download>`_."
+#~ msgstr ""
+#~ "Blender를 사용한다면, 우리의 `Better Collada Exporter <https://"
+#~ "godotengine.org/download>`_\\ 를 참고하세요."
+
+#~ msgid ""
+#~ "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
+#~ "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
+#~ "<https://opensource.org/licenses/MIT>`_ provided by Godot. That being "
+#~ "said, FBX support could still be provided by third parties as a plugin. "
+#~ "(See Plugins question below.)"
+#~ msgstr ""
+#~ "FBX SDK는 `제한적인 라이센스 <http://www.blender.org/bf/"
+#~ "Autodesk_FBX_License.rtf>`_\\ 를 갖고 있기 때문에, Godot의 `오픈 라이선스 "
+#~ "<http://opensource.org/licenses/MIT>`_\\ 와 맞지 않습니다. 즉, FBX 지원은 "
+#~ "아직 제 3자의 플러그인으로만 사용할 수 있습니다. (아래의 플러그인 질문을 "
+#~ "참고하세요.)"
+
+#~ msgid ""
+#~ "Lossy Compression: For games with lots of large 2D assets, lossy "
+#~ "compression can be a great choice. It has some artifacting, but less than "
+#~ "VRAM and the file size is almost a tenth of Lossless."
+#~ msgstr ""
+#~ "손실 압축: 많은 양의 2D 애셋을 가진 게임에게, 손실 압축은 좋은 선택일 수 "
+#~ "있습니다. 인위적 처리를 갖지만, VRAM보다 더 약하면서 파일 크기는 거의 무손"
+#~ "실의 10분의 1이 됩니다."
+
+#~ msgid ""
 #~ "Welcome to Godot! With your project open, you should see the editor’s "
 #~ "interface with the 3D viewport active. You can change the current "
 #~ "workspace at the top of the interface. Click on 2D to switch to the 2D "
@@ -88075,9 +88179,6 @@ msgstr ""
 #~ "\"씬 실행\" (``F6``) 을 누르고 플레이어가 화면 내에서 모든 방향으로 움직"
 #~ "일 수 있는지 확인하세요."
 
-#~ msgid "Supported Animation"
-#~ msgstr "지원되는 애니메이션"
-
 #~ msgid "Placing of AnimationPlayer"
 #~ msgstr "AnimationPlayer 배치"
 
@@ -88197,19 +88298,6 @@ msgstr ""
 
 #~ msgid "Why is FBX not supported for import?"
 #~ msgstr "왜 FBX 가져오기를 지원하지 않나요?"
-
-#~ msgid ""
-#~ "That said, Godot's Collada support is good, please use the `OpenCollada "
-#~ "<https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ "
-#~ "exporter for maximum compatibility if you are using Maya or 3DS Max. If "
-#~ "you are using Blender, take a look at our own `Better Collada Exporter "
-#~ "<https://godotengine.org/download>`_."
-#~ msgstr ""
-#~ "그렇지만 고도의 Collada 지원이 정말 좋기 때문에 Maya나 3DS Max를 사용한다"
-#~ "면 가장 호환성이 좋은 `OpenCollada <https://github.com/KhronosGroup/"
-#~ "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ 내보내기 도구를 사용해주세요. "
-#~ "Blender를 사용한다면 우리가 만든 `Better Collada Exporter <https://"
-#~ "godotengine.org/download>`_ 를 살펴보세요."
 
 #~ msgid "Also, glTF support was added in Godot 3.0."
 #~ msgstr "또한, Godot 3.0에서는 glTF 지원이 추가됐습니다."
