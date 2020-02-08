@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-27 08:44+0100\n"
+"POT-Creation-Date: 2020-02-08 22:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,276 +53,324 @@ msgid "This option makes Godot be aware of when a texture (which is imported for
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
-msgid "Compression"
+msgid "Supported image formats"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:36
-msgid "Images are one of the largest assets in a game. To handle them efficiently, they need to be compressed. Godot offers several compression methods, depending on the use case."
+msgid "Godot can import the following image formats:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:40
-msgid "Compress Mode"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:38
+msgid "BMP (``.bmp``)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:39
+msgid "DirectDraw Surface (``.dds``) - If mipmaps are present in the texture, they will be loaded directly. This can be used to achieve effects using custom mipmaps."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
-msgid "VRAM Compression: This is the most common compression mode for 3D assets. File on disk is reduced and video memory usage is also reduced considerably. For 3D, it may present unwanted artifacts, though."
+msgid "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
-msgid "Lossless Compression: This is the most common compression for 2D assets. It shows assets without any kind of artifacting, and disk compression is decent. It will use considerably more amount of video memory than VRAM, though."
+msgid "Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama skies)."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
-msgid "Lossy Compression: For games with lots of large 2D assets, lossy compression can be a great choice. It has some artifacting, but less than VRAM and the file size is almost a tenth of Lossless."
+msgid "JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's limitations."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
-msgid "Uncompressed: Only useful for formats that can't be compressed (like, raw float)."
+msgid "PNG (``.png``) - Precision is limited to 8 bits per channel upon importing (no HDR images)."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
-msgid "In this table, each of the four options are described together with their advantages and disadvantages ( |good| = Best, |bad| =Worst ):"
+msgid "Truevision Targa (``.tga``)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
-msgid "Uncompressed"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
-msgid "Compress Lossless (PNG)"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
-msgid "Compress Lossy (WebP)"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:54
-msgid "Compress VRAM"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:51
+msgid "SVG (``.svg``, ``.svgz``) - SVGs are rasterized using `NanoSVG <https://github.com/memononen/nanosvg>`__ when importing them. Support is limited; complex vectors may not render correctly. For complex vectors, rendering them to PNGs using Inkscape is often a better solution. This can be automated thanks to its `command-line interface <https://wiki.inkscape.org/wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
-msgid "Description"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
-msgid "Stored as raw pixels"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
-msgid "Stored as PNG"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
-msgid "Stored as WebP"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
-msgid "Stored as S3TC/BC,PVRTC/ETC, depending on platform"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
-msgid "Size on Disk"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
-msgid "|bad| Large"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
-msgid "|regular| Small"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:58
-msgid "|good| Very Small"
+msgid "WebP (``.webp``)"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
-msgid "Memory Usage"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
-msgid "|good| Small"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:62
-msgid "Performance"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:62
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:62
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:62
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
-msgid "|regular| Normal"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:62
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
-msgid "|good| Fast"
+msgid "If you've compiled the Godot editor from source with specific modules disabled, some formats may not be available."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
-msgid "Quality Loss"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
-msgid "|good| None"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
-msgid "|regular| Slight"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
-msgid "|bad| Moderate"
+msgid "Compression"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:66
-msgid "Load Time"
+msgid "Images are one of the largest assets in a game. To handle them efficiently, they need to be compressed. Godot offers several compression methods, depending on the use case."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
-msgid "|bad| Slow"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:70
+msgid "Compress Mode"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:72
+msgid "**VRAM Compression:** This is the most common compression mode for 3D assets. Size on disk is reduced and video memory usage is also decreased considerably (usually by a factor between 4 and 6). This mode should be avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:76
-msgid "HDR Mode"
+msgid "**Lossless Compression:** This is the most common compression mode for 2D assets. It shows assets without any kind of artifacting, and disk compression is decent. It will use considerably more amount of video memory than VRAM Compression, though. This is also the recommended setting for pixel art."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:78
-msgid "Godot supports high dynamic range textures (as .HDR or .EXR). These are mostly useful as high dynamic range equirectangular panorama skies (the internet has plenty if you search for them), which replace Cubemaps in Godot 2.x. Modern PCs support the BC6H VRAM format, but there are still plenty that do not."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:81
-msgid "If you want Godot to ensure full compatibility in terms of the kind of textures, enable the \"Force RGBE\" option."
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:80
+msgid "**Lossy Compression:** This is a good choice for large 2D assets. It has some artifacts, but less than VRAM and the file size is several times lower compared to Lossless or Uncompressed. Video memory usage isn't decreased by this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
-msgid "Normal Map"
+msgid "**Uncompressed:** Only useful for formats that can't be compressed (such as raw float images)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:86
-msgid "When using a texture as normal map, only the red and green channels are required. Given regular texture compression algorithms produce artifacts that don't look that nice in normal maps, the RGTC compression format is the best fit for this data. Forcing this option to \"Enabled\" will make Godot import the image as RGTC compressed. By default, it's set to \"Detect\", which means that if the texture is ever used as a normal map, it will be changed to \"Enabled\" and reimported automatically."
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:87
+msgid "In this table, each of the four options are described together with their advantages and disadvantages (|good| = best, |bad| = worst):"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:91
-msgid "Note that RGTC compression affects the resulting normal map image. You will have to adjust custom shaders that use the normal map to take this into account."
+msgid "Uncompressed"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
-msgid "Flags"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+msgid "Compress Lossless (PNG)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:96
-msgid "There are plenty of settings that can be toggled when importing an image as a texture, depending on the use case."
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+msgid "Compress Lossy (WebP)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+msgid "Compress VRAM"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+msgid "Description"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+msgid "Stored as raw pixels"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+msgid "Stored as PNG"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+msgid "Stored as WebP"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
+msgid "Size on Disk"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
+msgid "|bad| Large"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
+msgid "|regular| Small"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
+msgid "|good| Very Small"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
+msgid "Memory Usage"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
+msgid "|good| Small"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:99
-msgid "Repeat"
+msgid "Performance"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
+msgid "|regular| Normal"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
+msgid "|good| Fast"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:101
-msgid "This setting is most commonly used in 3D, and is therefore generally disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to \"loop\"."
+msgid "Quality Loss"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+msgid "|good| None"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+msgid "|regular| Slight"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+msgid "|bad| Moderate"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:103
-msgid "Repeating can optionally be set to mirrored mode."
+msgid "Load Time"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:106
-msgid "Filter"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:108
-msgid "When pixels become larger than the screen pixels, this option enables linear interpolation for them. The result is a smoother (less blocky) texture. This setting can be commonly used in 2D and 3D, but it's usually disabled when making pixel perfect games."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:111
-msgid "Mipmaps"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
+msgid "|bad| Slow"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:113
-msgid "When pixels become smaller than the screen, mipmaps kick in. This helps reduce the grainy effect when shrinking the textures. Keep in mind that, in older hardware (GLES2, mainly mobile), there are some requirements to use mipmaps:"
+msgid "HDR Mode"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:116
-msgid "Texture width and height must be powers of 2"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:115
+msgid "Godot supports high dynamic range textures (as .HDR or .EXR). These are mostly useful as high dynamic range equirectangular panorama skies (the internet has plenty if you search for them), which replace Cubemaps in Godot 2.x. Modern PCs support the BC6H VRAM format, but there are still plenty that do not."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:117
-msgid "Repeat must be enabled"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:119
-msgid "Keep in mind the above when making phone games and applications, want to aim for full compatibility, and need mipmaps."
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:118
+msgid "If you want Godot to ensure full compatibility in terms of the kind of textures, enable the \"Force RGBE\" option."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:121
-msgid "When doing 3D, mipmap should be turned on, as this also improves performance (smaller versions of the texture are used for objects further away)."
+msgid "Normal Map"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:124
-msgid "Anisotropic"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:123
+msgid "When using a texture as normal map, only the red and green channels are required. Given regular texture compression algorithms produce artifacts that don't look that nice in normal maps, the RGTC compression format is the best fit for this data. Forcing this option to \"Enabled\" will make Godot import the image as RGTC compressed. By default, it's set to \"Detect\", which means that if the texture is ever used as a normal map, it will be changed to \"Enabled\" and reimported automatically."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:126
-msgid "When textures are near parallel to the view (like floors), this option makes them have more detail by reducing blurriness."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:129
-msgid "SRGB"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:128
+msgid "Note that RGTC compression affects the resulting normal map image. You will have to adjust custom shaders that use the normal map to take this into account."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:131
-msgid "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or detail channels need to have this option turned on in order for colors to look correct. When set to \"Detect\" mode, the texture will be marked as SRGB when used in albedo channels."
+msgid "Flags"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:135
-msgid "Process"
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:133
+msgid "There are plenty of settings that can be toggled when importing an image as a texture, depending on the use case."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:137
-msgid "Some special processes can be applied to images when imported as textures."
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:136
+msgid "Repeat"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:138
+msgid "This setting is most commonly used in 3D, and is therefore generally disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to \"loop\"."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:140
-msgid "Fix Alpha Border"
+msgid "Repeating can optionally be set to mirrored mode."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:142
-msgid "This puts pixels of the same surrounding color in transition from transparency to non transparency. It helps mitigate the outline effect when exporting images from Photoshop and the like."
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:143
+msgid "Filter"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:147
-msgid "It's a good idea to leave it on by default, unless specific values are needed."
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:145
+msgid "When pixels become larger than the screen pixels, this option enables linear interpolation for them. The result is a smoother (less blocky) texture. This setting can be commonly used in 2D and 3D, but it's usually disabled when making pixel perfect games."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:148
+msgid "Mipmaps"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
-msgid "Premultiplied Alpha"
+msgid "When pixels become smaller than the screen, mipmaps kick in. This helps reduce the grainy effect when shrinking the textures. Keep in mind that, in older hardware (GLES2, mainly mobile), there are some requirements to use mipmaps:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:152
-msgid "An alternative to fix darkened borders is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. Keep in mind that a material will need to be created that uses the PREMULT ALPHA blend mode on canvas items that need it."
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:153
+msgid "Texture width and height must be powers of 2"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:154
+msgid "Repeat must be enabled"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:156
-msgid "HDR as sRGB"
+msgid "Keep in mind the above when making phone games and applications, want to aim for full compatibility, and need mipmaps."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:158
-msgid "A few HDR files are broken and contain sRGB color data. It is advised not to use them, but, in the worst-case scenario, toggling this option on will make them look right."
+msgid "When doing 3D, mipmap should be turned on, as this also improves performance (smaller versions of the texture are used for objects further away)."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:161
-msgid "Invert Color"
+msgid "Anisotropic"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:163
+msgid "When textures are near parallel to the view (like floors), this option makes them have more detail by reducing blurriness."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:166
+msgid "SRGB"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:168
+msgid "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or detail channels need to have this option turned on in order for colors to look correct. When set to \"Detect\" mode, the texture will be marked as SRGB when used in albedo channels."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:172
+msgid "Process"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:174
+msgid "Some special processes can be applied to images when imported as textures."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:177
+msgid "Fix Alpha Border"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:179
+msgid "This puts pixels of the same surrounding color in transition from transparency to non transparency. It helps mitigate the outline effect when exporting images from Photoshop and the like."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:184
+msgid "It's a good idea to leave it on by default, unless specific values are needed."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:187
+msgid "Premultiplied Alpha"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:189
+msgid "An alternative to fix darkened borders is to use premultiplied alpha. By enabling this option, the texture will be converted to this format. Keep in mind that a material will need to be created that uses the PREMULT ALPHA blend mode on canvas items that need it."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:193
+msgid "HDR as sRGB"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:195
+msgid "A few HDR files are broken and contain sRGB color data. It is advised not to use them, but, in the worst-case scenario, toggling this option on will make them look right."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:198
+msgid "Invert Color"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:200
 msgid "Reverses the image's color. This is useful, for example, to convert a height map generated by external programs to depth map to use with :ref:`doc_spatial_material`."
 msgstr ""
 
