@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -410,28 +410,27 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
 msgid ""
-"Initializes the engine if not yet initialized and starts the game with the "
-"main pack loaded from the passed URL."
+"Initializes the engine if not yet initialized, loads the executable, and "
+"starts the game with the main pack loaded from the passed URL."
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:193
+#, fuzzy
 msgid ""
-"If the engine isn't loaded yet, the base path of the passed URL will be used "
-"to load the engine."
+"If the engine isn't loaded yet, the base path of the passed executable name "
+"will be used to load the engine."
 msgstr ""
 "Si el motor no está cargado todavía, la ruta base de la URL indicada será "
 "utilizada para cargar el motor."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:196
 msgid ""
-"This function ignores overrides of filenames and their extensions to start "
-"only the main pack passed as argument."
+"Executable's name (URL) to start. Also used as base path to load the engine "
+"if not loaded already. Should not contain the file's extension."
 msgstr ""
 
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:199
-msgid ""
-"Path to the main pack to start. Also used as base path to load the engine if "
-"not loaded already."
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:200
+msgid "Path (URL) to the main pack to start."
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:203

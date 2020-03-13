@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
+#, fuzzy
 msgid "Design interfaces with the Control nodes"
-msgstr ""
+msgstr "Проектні інтерфейси з вузлами Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
+#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screens come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -29,47 +31,76 @@ msgid ""
 "platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface."
 msgstr ""
+"Комп'ютерні дисплеї, мобільні телефони та телевізійні екрани бувають різних "
+"форм та розмірів. Щоб випустити гру, вам потрібно буде підтримувати різні "
+"співвідношення екрана та роздільну здатність. Побудувати чуйні інтерфейси, "
+"які адаптуються до всіх платформ, буває складно. На щастя, Godot "
+"поставляється із надійними інструментами для розробки та керування чуйним "
+"інтерфейсом користувача."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
+#, fuzzy
 msgid "Godot's editor is made with the engine's UI framework"
 msgstr ""
+"Інтерфейс Godot розроблений за допомогою своєї ж технології створення "
+"інтерфейсів"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:16
+#, fuzzy
 msgid "This guide will get you started with UI design. You will learn:"
 msgstr ""
+"Це керівництво допоможе розпочати роботу з проектним інтерфейсом "
+"користувача. Ти вивчите:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
 msgid "The five most useful control nodes to build your games' interface"
 msgstr ""
+"П'ять найкорисніших вузлів управління для створення інтерфейсу ваших ігор"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
+#, fuzzy
 msgid "How to work with the anchor of UI elements"
-msgstr ""
+msgstr "Як працювати з якорем елементів інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:20
+#, fuzzy
 msgid ""
 "How to efficiently place and arrange your user interface using containers"
 msgstr ""
+"Як ефективно розмістити та упорядкувати свій інтерфейс користувача за "
+"допомогою контейнерів"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
+#, fuzzy
 msgid ""
 "The five most common containers (you can learn more about containers in the :"
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
 msgstr ""
+"П'ять найпоширеніших контейнерів (ви можете дізнатися більше про контейнери "
+"на сторінці документації :ref:`GUI Containers <doc_gui_containers>`)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
+#, fuzzy
 msgid ""
 "To learn how to control the interface and connect it to other scripts, read :"
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
 msgstr ""
+"Щоб дізнатися, як керувати інтерфейсом та підключати його до інших скриптів, "
+"читайте :ref:`Build your first game UI in Godot "
+"<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
+#, fuzzy
 msgid ""
 "To design your UI, you'll use the Control nodes. These are the nodes with "
 "green icons in the editor. There are dozens of them, for creating anything "
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"Щоб створити інтерфейс користувача, ви будете використовувати вузли Control "
+"(вузли управління). Це вузли із зеленими значками у редакторі. Їх десятки, "
+"для створення чого завгодно - від полосок здоров'я до складних програм. Сам "
+"редактор Godot побудований за допомогою вузлів Control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -78,154 +109,213 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
+"Control вузли мають унікальні властивості, що дозволяють їм добре працювати "
+"один з одним. Інші візуальні вузли, такі як Node2D і Sprite, не мають цих "
+"можливостей. Таким чином, щоб не ускладнювати собі життя, під час створення "
+"ваших інтерфейсів, використовуйте вузли Control, всюди де це тільки можливо."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
-msgstr ""
+msgstr "Усі вузли управління мають однакові основні властивості:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:38
 msgid "Anchor"
 msgstr "Прив'язка"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
+#, fuzzy
 msgid "Bounding rectangle"
-msgstr ""
+msgstr "Обмежувальна рамка"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
+#, fuzzy
 msgid "Focus and focus neighbor"
-msgstr ""
+msgstr "Фокус і фокус сусідів"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
+#, fuzzy
 msgid "Size flags"
-msgstr ""
+msgstr "Розміри прапорців"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Margin"
 msgstr "Поле"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
+#, fuzzy
 msgid "The optional UI theme"
-msgstr ""
+msgstr "Довільна тема інтерфейсу користувача"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:45
+#, fuzzy
 msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
 msgstr ""
+"Як тільки ви засвоїте основи вузла Control, вам знадобиться менше часу, для "
+"вивчення решти вузлів, які виходять за рамки них."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:50
 msgid "The 5 most common UI elements"
-msgstr ""
+msgstr "5 найпоширеніших елементів інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:52
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
+"Godot поставляється з десятками вузлів Control. Багато з них тут для того, "
+"щоб допомогти вам створити плагіни та програми редактора."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:55
+#, fuzzy
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
 msgstr ""
+"Для більшості ігор вам знадобиться лише п'ять типів інтерфейсу користувача. "
+"Ось ці п'ять вузлів Control:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:58
+#, fuzzy
 msgid "Label: for displaying text"
-msgstr ""
+msgstr "Label (Мітка): для відображення тексту"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
+#, fuzzy
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
 msgstr ""
+"TextureRect (Квадрат текстури): використовується в основному для фонів, або "
+"всього, що має статичне зображення"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:61
+#, fuzzy
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
 msgstr ""
+"TextureProgress: для шкал життя, завантаження, горизонтальних, вертикальних, "
+"або радіальних"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:63
+#, fuzzy
 msgid "NinePatchRect: for scalable panels"
-msgstr ""
+msgstr "NinePatchRect: для масштабованих панелей"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
+#, fuzzy
 msgid "TextureButton: to create buttons"
-msgstr ""
+msgstr "TextureButton: для створення кнопок"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:68
 msgid "The 5 most common Control nodes for UI design"
-msgstr ""
+msgstr "5 найпоширеніших вузлів управління для дизайну інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
+#, fuzzy
 msgid "TextureRect"
-msgstr ""
+msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:73
+#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
+"**TextureRect** відображає текстуру, або зображення, всередині інтерфейсу "
+"користувача. Він схожий на вузол Sprite (Спрайт), але пропонує кілька "
+"режимів масштабування. Режим масштабування можна змінити у властивості "
+"Stretch Mode (Режим розтягування):"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
+#, fuzzy
 msgid ""
 "``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
+"``Scale On Expand (compat)`` масштабує текстуру, щоб відповідати "
+"обмежувальному прямокутнику вузла, лише якщо властивість ``expand`` є "
+"``true``; в іншому випадку він поводиться як в режимі ``Keep``. Режим за "
+"замовчуванням для зворотної сумісності."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
+"``Scale`` масштабує текстуру, щоб відповідати обмежувальному прямокутнику "
+"вузла."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr ""
+msgstr "``Tile`` повторює текстуру, але не масштабує."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
+"``Keep`` і ``Keep Centered`` змушує текстуру залишатися у своєму початковому "
+"розмірі в лівому верхньому кутку, або по центру кадра."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
+#, fuzzy
 msgid ""
 "``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
+"``Keep Aspect`` і ``Keep Aspect Centered`` масштабує текстуру, але змушує її "
+"залишати початкове співвідношення сторін у верхньому лівому куті, або в "
+"центрі кадру."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
+#, fuzzy
 msgid ""
 "``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node's limits."
 msgstr ""
+"``Keep Aspect Covered`` працює так само як ``Keep Aspect Centered``але "
+"коротша сторона поєднується з обмежувальним прямокутником, а інша "
+"відсікається межами вузла."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
+"Як і у вузлах Sprite, ви можете модулювати колір TextureRect. Клацніть на "
+"властивість ``Modulate`` та скористайтесь інструментом вибору кольору."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureRect modulated with a red color"
-msgstr ""
+msgstr "TextureRect модульований червоним кольором"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:98
 msgid "TextureButton"
-msgstr ""
+msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
+#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 5 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
 "Pressed, and Hover textures. Focused is useful if your interface listens to "
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
-"the clickable area using a 2-bit, pure black and white image."
+"the clickable area using a 1-bit, pure black and white image."
 msgstr ""
+"**TextureButton** схожий на TextureRect, за винятком того, що він має для "
+"текстур 5 гнізд : по одному для кожного стану кнопки. Більшу частину часу ви "
+"будете використовувати гнізда Normal (нормальний), Pressed (натиснутий), і "
+"Hover (наведений курсор). Focused корисно, якщо ваш інтерфейс прослуховує "
+"введення клавіатури. Шостий слот зображення, Click Mask (маска клацання), "
+"дозволяє визначити область для натискання, використовуючи 2-бітне, чисте "
+"чорно-біле зображення."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
+#, fuzzy
 msgid ""
 "In the Base Button section, you'll find a few checkboxes that change how the "
 "button behaves. When ``Toggle Mode`` is on, the button will toggle between "
@@ -235,31 +325,50 @@ msgid ""
 "``modulate`` property, to change its color, and ``Resize`` and ``Stretch`` "
 "modes to change its scale behavior."
 msgstr ""
+"У розділі Base Button (Основи кнопки) ви знайдете кілька прапорців, які "
+"змінюють поведінку кнопки. Коли ``Toggle Mode`` увімкнено, кнопка буде "
+"переключатися між активним та нормальним станами при натисканні. "
+"``Disabled`` робить його відключеним за замовчуванням, і в цьому випадку він "
+"буде використовувати текстуру ``Disabled``. TextureButton ділиться кількома "
+"властивостями з кадром текстури: вона має властивість ``modulate`` для зміни "
+"кольору, а також режими ``Resize`` і ``Stretch`` для зміни поведінки "
+"масштабування."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
+#, fuzzy
 msgid "TextureButton and its 5 texture slots"
-msgstr ""
+msgstr "TextureButton і його 5 гнізд текстури"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
 msgid "TextureProgress"
-msgstr ""
+msgstr "TextureProgress"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:122
+#, fuzzy
 msgid ""
 "**TextureProgress** layers up to 3 sprites to create a progress bar. The "
 "Under and Over textures sandwich the Progress one, which displays the bar's "
 "value."
 msgstr ""
+"**TextureProgress** накладається шарами до 3 спрайтів для створення панелі "
+"прогресу. Текстури Under і Over утворюють бутерброд всередині якого текстура "
+"Progress, як відображає значення смужки."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:126
+#, fuzzy
 msgid ""
 "The ``Mode`` property controls the direction in which the bar grows: "
 "horizontally, vertically, or radially. If you set it to radial, the "
 "``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
 "the gauge."
 msgstr ""
+"``Mode`` керує напрямком , в якому росте шкала: по горизонталі, по "
+"вертикалі, або в радіальному напрямку. Якщо встановити його на радіальне, "
+"властивості ``Initial Angle`` та ``Fill Degrees`` дозволяють обмежити "
+"діапазон заповнення."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
+#, fuzzy
 msgid ""
 "To animate the bar, you'll want to look at the Range section. Set the "
 "``Min`` and ``Max`` properties to define the range of the gauge. For "
@@ -269,16 +378,25 @@ msgid ""
 "the default of ``0`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
+"Щоб анімувати шкалу, вам потрібно заглянути в розділ Range (Діапазон). "
+"Встановіть ``Min`` і ``Max`` властивості, щоб визначити діапазон шкали. "
+"Наприклад, щоб представити життя персонажа, вам варто встановити ``Min`` в "
+"``0``, і ``Max`` на максимальне життя персонажа. Змініть властивість "
+"``Value`` для оновлення шкали. Якщо залишити ``Min`` і ``Max``значення за "
+"замовчуванням ``0`` і ``100``, та встановіть властивість ``Value`` на "
+"``40``, то 40% від текстури ``Progress`` буде відображатися, а 60% буде "
+"залишатися прихованою."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"
-msgstr ""
+msgstr "TextureProgress шкала, заповнена на дві третіх"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:144
 msgid "Label"
 msgstr "Мітка"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:146
+#, fuzzy
 msgid ""
 "**Label** prints text to the screen. You'll find all its properties in the "
 "Label section, in the Inspector. Write the text in the ``Text`` property, "
@@ -286,47 +404,63 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign, respectively."
 msgstr ""
+"**Label** друкує текст на екрані. Ви знайдете всі його властивості в розділі "
+"Label (Мітка), в Інспекторі. Введіть текст у властивість ``Text`` та "
+"встановіть прапорець Autowrap, якщо ви хочете, щоб вона відповідала розміру "
+"текстового поля. Якщо Autowrap вимкнено, ви не зможете масштабувати вузол. "
+"Ви можете вирівняти текст по горизонталі та по вертикалі у властивостях "
+"Align та Valign."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "Picture of a Label"
-msgstr ""
+msgstr "Зображення Label (мітки)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
+#, fuzzy
 msgid "NinePatchRect"
-msgstr ""
+msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:160
+#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
+"**NinePatchRect** ділить плитку текстури на 3 рядки та 3 стовпці. Центр і "
+"боки плитки масштабуються, а кути ні. Це корисно для створення панелей, "
+"діалогових вікон та масштабованих фонів для вашого інтерфейсу."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
+#, fuzzy
 msgid "NinePatchRect scaled with the min\\_size property"
-msgstr ""
+msgstr "NinePatchRect масштабується за допомогою властивості min\\_size"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:170
 msgid "There are two workflows to build responsive UIs"
-msgstr ""
+msgstr "Існує два способи створення інтерфейсів"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:172
 msgid ""
 "There are two workflows to build scalable and flexible interfaces in Godot:"
-msgstr ""
+msgstr "В Godot є два способи створення масштабованих і гнучких інтерфейсів:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
 msgid ""
 "You have many container nodes at your disposal that scale and place UI "
 "elements for you. They take control over their children."
 msgstr ""
+"У вашому розпорядженні є багато вузлів контейнерів, які масштабують і "
+"розміщують елементи інтерфейсу. Вони контролюють свої нащадки."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
 msgid ""
 "On the other side, you have the layout menu. It helps you to anchor, place "
 "and resize a UI element within its parent."
 msgstr ""
+"З іншого боку, у вас є меню компонування. Воно допомагає вам прив'язувати, "
+"розміщувати та змінювати розмір елемента інтерфейсу в середині його предка."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
 msgid ""
@@ -338,16 +472,25 @@ msgid ""
 "cleaner hierarchies, but it's harder to arrange items in a row, column, "
 "grid, etc."
 msgstr ""
+"Ці два способи не завжди сумісні. Оскільки контейнер контролює своїх "
+"нащадків, ви не можете використовувати на них меню компонування. Кожен "
+"контейнер має специфічний ефект, тому вам може знадобитися вкласти декілька "
+"з них, щоб отримати робочий інтерфейс. В меню компонування ви працюєте знизу "
+"вгору, над дітьми. Оскільки ви не вставляєте зайвих контейнерів у сцену, "
+"меню компонування дозволяє створити більш чисті ієрархії, але в ньому "
+"складніше розташовувати елементи в рядку, стовпці, сітці тощо."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:179
 msgid ""
 "As you create UIs for your games and tools, you'll develop a sense for what "
 "fits best in each situation."
 msgstr ""
+"Створюючи інтерфейси для своїх ігор та інструментів, ви з часом зрозумієте "
+"для якої ситуації який спосіб підходить краще."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:183
 msgid "Place UI elements precisely with anchors"
-msgstr ""
+msgstr "Розміщення елементів інтерфейсу з допомогою прив'язок"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:185
 msgid ""
@@ -356,16 +499,21 @@ msgid ""
 "Top, Right and Bottom edges of the node. Change any of the 4 anchors to "
 "change the reference point of the margins."
 msgstr ""
+"Контрольні вузли мають позицію та розмір, але вони також мають прив'язки та "
+"поля. Прив'язки визначають початок, або опорну точку, для лівого, верхнього, "
+"правого та нижнього країв вузла. Змініть будь-яку з 4 прив'язок, щоб змінити "
+"опорну точку поля."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
 msgid "The anchor property"
-msgstr ""
+msgstr "Властивість прив'язки"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:195
 msgid "How to change the anchor"
-msgstr ""
+msgstr "Як змінити прив'язку"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
+#, fuzzy
 msgid ""
 "Like any properties, you can edit the 4 anchor points in the Inspector, but "
 "this is not the most convenient way. When you select a control node, the "
@@ -374,16 +522,23 @@ msgid ""
 "inspector's 4 properties. The layout menu will only show up when you select "
 "a control node."
 msgstr ""
+"Як і будь-які властивості, ви можете редагувати 4 точки прив'язки в "
+"Інспекторі, але це самий зручніший спосіб. Коли ви вибираєте вузол контролю, "
+"над вікном перегляду, на панелі інструментів, з’являється меню макета "
+"(компонування). Воно дає вам список піктограм для встановлення всіх 4 якорів "
+"одним клацанням, замість того, щоб використовувати 4 властивості інспектора. "
+"Меню макета буде видно лише тоді, коли ви вибрали вузол контролю."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "The layout menu in the viewport"
-msgstr ""
+msgstr "Меню макета у вікні перегляду"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:209
 msgid "Anchors are relative to the parent container"
-msgstr ""
+msgstr "Прив'язки відносно батьківського контейнера"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:211
+#, fuzzy
 msgid ""
 "Each anchor is a value between 0 and 1. For the left and top anchors, a "
 "value of 0 means that without any margin, the node's edges will align with "
@@ -393,18 +548,30 @@ msgid ""
 "position in pixels, while anchors are relative to the parent container's "
 "size."
 msgstr ""
+"Кожна прив'язка - це значення від 0 до 1. Для лівої та верхньої прив'язки "
+"значення 0 означає, що краї вузла будуть вирівнюватись по лівому та "
+"верхньому краю його предка без будь-якого поля. Для правого та нижнього "
+"країв значення 1 означає, що вони будуть вирівнюватись з правим і нижнім "
+"краєм предка. З іншого боку, поля представляють відстань до положення "
+"прив'язки в пікселях, тоді як прив'язки відносно розміру батьківського "
+"контейнера."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:221
+#, fuzzy
 msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
 msgstr ""
+"Поля відносно положення прив'язок, положення яких відносне контейнеру. На "
+"практиці ви часто дозволяєте контейнеру оновлювати поля для вас"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:226
+#, fuzzy
 msgid "Margins change with the anchor"
-msgstr ""
+msgstr "Поля змінюються разом з прив'язкою"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:228
+#, fuzzy
 msgid ""
 "Margins update automatically when you move or resize a control node. They "
 "represent the distance from the control node's edges to its anchor, which is "
@@ -413,12 +580,23 @@ msgid ""
 "there's no parent, the margins will be relative to the node's own bounding "
 "Rectangle, set in the Rect section, in the inspector."
 msgstr ""
+"Поля оновлюються автоматично під час переміщення чи зміни розміру "
+"контрольного вузла. Вони представляють собою відстань від країв контрольного "
+"вузла до його прив'язки, що відповідає предку вузла контроля, або "
+"контейнеру. Ось чому ваші контрольні вузли завжди повинні знаходитися "
+"всередині контейнера, як ми побачимо за мить. Якщо немає предків, поля "
+"будуть відповідні власному обмежувальному прямокутнику, встановленому в "
+"розділі Rect, у інспекторі."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:238
+#, fuzzy
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
 msgstr ""
+"Поля на контейнері CenterContainer встановлена на прив'язці \"Повний "
+"прямокутник\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:240
+#, fuzzy
 msgid ""
 "Try to change the anchors or nest your Control nodes inside Containers: the "
 "margins will update. You'll rarely need to edit the margins manually. Always "
@@ -427,12 +605,23 @@ msgid ""
 "border of the screen? Use the MarginContainer. Want to build a vertical "
 "menu? Use the VBoxContainer. More on these below."
 msgstr ""
+"Спробуйте змінити прив'язки, або вкладати свої контрольні вузли всередину "
+"контейнерів: поля будуть оновлені. Вам рідко потрібно буде редагувати поля "
+"вручну. Завжди намагайтеся спочатку знайти підходящий контейнер; Godot "
+"поставляється з вузлами для вирішення всіх загальних для вас випадків. "
+"Потрібно додати простір між полоскою здоров'я та рамкою екрана? "
+"Використовуйте MarginContainer. Хочете скласти вертикальне меню? "
+"Використовуйте VBoxContainer. Детальніше про них нижче."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:249
+#, fuzzy
 msgid "Use size tags to change how UI elements fill the available space"
 msgstr ""
+"Використовуйте теги розмірів, щоб впливати на заповнення елементами "
+"інтерфейсу доступного простору"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:251
+#, fuzzy
 msgid ""
 "Every control node has Size Flags. They tell containers how the UI elements "
 "should scale. If you add the \"Fill\" flag to the Horizontal or Vertical "
@@ -442,76 +631,116 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
+"Кожен вузол контролю має Size Flags. Вони розповідають контейнерам, як слід "
+"змінювати елементи інтерфейсу. Якщо ви додасте прапор \"Fill\" до "
+"властивості Horizontal, або Vertical, обмежувальне поле вузла займе весь "
+"простір, який зможе, але воно поважатиме його братів та сестер і збереже їх "
+"розмір. Якщо в HBoxContainer є 3 вузли TextureRect, з прапорами \"Fill\" на "
+"обох осях, вони займають третину наявного простору, але не більше. Контейнер "
+"візьме на себе вузол і змінить його розмір автоматично."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:261
+#, fuzzy
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
-msgstr ""
+msgstr "3 елементи інтерфейсу в HBoxContainer вирівняні горизонтально"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:263
+#, fuzzy
 msgid ""
 "The \"Expand\" flag lets the UI element take all the space it can, and push "
 "against its siblings. Its bounding rectangle will grow against the edges of "
 "its parent, or until it's blocked by another UI node."
 msgstr ""
+"Прапорець \"Expand\" дозволяє елементу інтерфейсу зайняти весь простір, який "
+"він може, і потиснути своїх побратимів. Його обмежувальний прямокутник "
+"розшириться до країв його предка, або поки його розширення не заблокує інший "
+"вузол інтерфейсу."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
+#, fuzzy
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
 msgstr ""
+"Той самий приклад, що і вище, але центральний вузол має прапорець \"Expand\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:272
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
+"Вам знадобиться певна практика, щоб зрозуміти теги розмірів, оскільки їх "
+"ефект може змінитися досить сильно, залежно від налаштування інтерфейсу."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:276
+#, fuzzy
 msgid "Arrange control nodes automatically with containers"
-msgstr ""
+msgstr "Автоматична організація вузлів контролю з контейнерами"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:278
+#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor, so you can see the effect instantly."
 msgstr ""
+"Контейнери автоматично упорядковують усі контрольні вузли-нащадки, включаючи "
+"інші контейнери в рядках, стовпцях тощо. Використовуйте їх, щоб додати "
+"відступи навколо вашого інтерфейсу, чи центральних вузлів у їх обмежувальних "
+"прямокутниках. Усі вбудовані контейнери оновлюються в редакторі, так що ви "
+"можете бачити ефект миттєво."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:284
+#, fuzzy
 msgid ""
 "Containers have a few special properties to control how they arrange UI "
 "elements. To change them, navigate down to the Custom Constants section in "
 "the Inspector."
 msgstr ""
+"У контейнерів є кілька спеціальних властивостей для управління тим, як вони "
+"розташовують елементи інтерфейсу. Щоб змінити їх, перейдіть до розділу "
+"Custom Constants (Власні константи) в інспекторі."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:289
+#, fuzzy
 msgid "The 5 most useful containers"
-msgstr ""
+msgstr "5 найкорисніших контейнерів"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
+#, fuzzy
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
+"Якщо ви створюєте інструменти, вам можуть знадобитися всі контейнери. Але "
+"для більшості ігор буде достатньо декількох:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
+#, fuzzy
 msgid "MarginContainer, to add margins around part of the UI"
 msgstr ""
+"MarginContainer, щоб додати поля навколо частини інтерфейсу користувача"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
+#, fuzzy
 msgid "CenterContainer, to center its children in its bounding box"
-msgstr ""
+msgstr "CenterContainer, центрує своїх нащадків у своїй обмежувальній коробці"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:296
+#, fuzzy
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
 msgstr ""
+"VboxContainer і HboxContainer розташовують елементи інтерфейсу в рядках або "
+"стовпцях"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:298
+#, fuzzy
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
-msgstr ""
+msgstr "GridContainer організовує вузли Control у вигляді сітки"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:300
+#, fuzzy
 msgid ""
 "CenterContainer centers all its children inside of its bounding rectangle. "
 "It's one you typically use for title screens, if you want the options to "
@@ -519,13 +748,23 @@ msgid ""
 "want a single container nested inside it. If you use textures and buttons "
 "instead, they'll stack up."
 msgstr ""
+"CenterContainer зосереджує всіх своїх нащадків всередині свого "
+"обмежувального прямокутника. Його ви зазвичай використовуєте для титульних "
+"екранів, якщо ви хочете, щоб варіанти (опції) залишалися в центрі вікна "
+"перегляду. Оскільки він центрує все, вам часто потрібно буде мати один "
+"контейнер, вкладений всередині нього. Якщо ви замість цього використовуєте "
+"текстури та кнопки, вони будуть складатись."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
+#, fuzzy
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
 msgstr ""
+"CenterContainer в дії. Шкала здоров'я знаходиться в центрі його "
+"батьківського контейнера."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:311
+#, fuzzy
 msgid ""
 "The MarginContainer adds a margin on any side of the child nodes. Add a "
 "MarginContainer that encompasses the entire viewport to add a separation "
@@ -534,12 +773,22 @@ msgid ""
 "click the corresponding value box and type any number. It will activate "
 "automatically."
 msgstr ""
+"MarginContainer додає поле з будь-якої сторони вузлів-нащадків. Додайте "
+"MarginContainer, який охоплює все вікно перегляду, щоб додати розділення між "
+"краєм вікна та інтерфейсом користувача. Ви можете встановити поле у верхній, "
+"лівій, правій, або нижній частині контейнера. Не потрібно встановлювати "
+"прапорець: натисніть відповідне поле та введіть будь-яке число. Він "
+"активується автоматично."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:320
+#, fuzzy
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
 msgstr ""
+"MarginContainer додає 40-піксельний відступ навколо ігрового інтерфейсу "
+"користувача"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:322
+#, fuzzy
 msgid ""
 "There are two BoxContainers: VBoxContainer and HBoxContainer. You cannot add "
 "the BoxContainer node itself, as it is a helper class, but you can use "
@@ -548,12 +797,20 @@ msgid ""
 "rows and columns of different sizes, as you can nest them to your heart's "
 "content."
 msgstr ""
+"Є два BoxContainers: VBoxContainer і HBoxContainer. Ви не можете додати сам "
+"вузол BoxContainer, оскільки це допоміжний клас, але ви можете "
+"використовувати вертикальні та горизонтальні контейнери. Вони розташовують "
+"вузли, або рядками, або стовпцями. Використовуйте їх для вирівнювання "
+"предметів у магазині, або для складання складних сіток із рядками та "
+"стовпцями різного розміру, оскільки ви можете вкладати їх як забажаєте."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:331
+#, fuzzy
 msgid "The HBoxContainer horizontally aligns UI elements"
-msgstr ""
+msgstr "HBoxContainer горизонтально вирівнює елементи інтерфейсу користувача"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:333
+#, fuzzy
 msgid ""
 "VBoxContainer automatically arranges its children into a column. It puts "
 "them one after the other. If you use the separation parameter, it will leave "
@@ -562,8 +819,15 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainer автоматично впорядковує своїх нащадків у колонку. Він ставить "
+"їх один за одним. Якщо використовувати параметр розділення, він залишить "
+"проміжок між його нащадками. HBoxContainer розташовує елементи інтерфейсу "
+"підряд. Він схожий на VBoxContainer, з додатковим методом ``add_spacer``, "
+"який дозволяє додавати вузол управління відступом перед його першим "
+"нащадком, або після останнього нащадка, зі скрипту."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:340
+#, fuzzy
 msgid ""
 "The GridContainer lets you arrange UI elements in a grid-like pattern. You "
 "can only control the number of columns it has, and it will set the number of "
@@ -574,10 +838,19 @@ msgid ""
 "set the vertical and horizontal separation between the rows and columns "
 "respectively."
 msgstr ""
+"GridContainer дозволяє розташовувати елементи інтерфейсу користувача за "
+"сіткою. Ви можете лише керувати кількістю стовпців, які він має, і він "
+"встановлюватиме кількість рядків самостійно, виходячи з кількості нащадків. "
+"Якщо у вас дев'ять дітей і три стовпчики, у вас буде 9 ÷ 3 = 3 ряди. Додайте "
+"ще трьох нащадків, і у вас буде чотири ряди. Іншими словами, це створить "
+"нові рядки, коли ви додасте більше текстур і кнопок. Як і коробчасті "
+"контейнери, він має дві властивості, які встановлюють вертикальне та "
+"горизонтальне розділення між рядками та стовпцями відповідно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:351
+#, fuzzy
 msgid "A GridContainer with 2 columns. It sizes each column automatically."
-msgstr ""
+msgstr "GridContainer з 2 стовпцями. Він розміщує кожен стовпець автоматично."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:353
 msgid ""
@@ -585,3 +858,6 @@ msgid ""
 "design more advanced interfaces, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
+"Система користувацького інтерфейсу Godot є складною і пропонує багато "
+"іншого. Щоб дізнатися, як проектувати більш досконалі інтерфейси, перейдіть "
+"до :ref:`GUI section <toc-learn-features-gui>` у документах."

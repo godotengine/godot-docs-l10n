@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -280,12 +280,13 @@ msgstr ""
 "crear una escena vacía, haz clic en **Escena > Nueva escena**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
+#, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
 "``MarginContainer``. ``MarginContainer`` is a good starting point for most "
-"interfaces, as you often need padding around the UI. Press ``Meta+S`` to "
-"save the scene to the disk. Name it *MainMenu*."
+"interfaces, as you often need padding around the UI. Press :kbd:`Meta + S` "
+"to save the scene to the disk. Name it *MainMenu*."
 msgstr ""
 "Tenemos que añadir un nodo raíz antes de poder guardar la escena. La raíz de "
 "tu interfaz debe ser el container o elemento más cercano. En este caso es un "
@@ -363,11 +364,12 @@ msgid "and the main menu’s illustration."
 msgstr "Y la ilustración del menú principal."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
+#, fuzzy
 msgid ""
-"Click the **Add Node** button or press ``Meta+A`` on your keyboard. Start to "
-"type ``TextureRect`` to find the corresponding node and press enter. With "
-"the new node selected, press ``Meta+D`` five times to create five extra "
-"``TextureRect`` instances."
+"Click the **Add Node** button or press :kbd:`Meta + A` on your keyboard. "
+"Start to type ``TextureRect`` to find the corresponding node and press "
+"enter. With the new node selected, press :kbd:`Meta + D` five times to "
+"create five extra ``TextureRect`` instances."
 msgstr ""
 "Haz clic en el botón **Añadir Nodo** o presiona ``Ctrl+A`` en tu teclado. "
 "Empieza a escribir ``TextureRect`` para encontrar el nodo correspondiente y "
@@ -488,7 +490,7 @@ msgstr "Nos quedan dos problemas por resolver:"
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
 #, fuzzy
 msgid "The characters on the right aren't centered."
-msgstr "Los elementos de la derecha no están centrados"
+msgstr "Los caracteres de la derecha no están centrados."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
 msgid "There's no space between the logo and the other UI elements."
@@ -528,11 +530,11 @@ msgstr ""
 #, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
-"container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
-"+A`` to add a new node inside it. Add a second ``VBoxContainer`` and name it "
-"*MenuOptions*. Select all three menu options, ``Continue``, ``NewGame`` and "
-"``Options``, and drag and drop them inside the new ``VBoxContainer``. The "
-"UI's layout should barely change, if at all."
+"container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
+"`Meta + A` to add a new node inside it. Add a second ``VBoxContainer`` and "
+"name it *MenuOptions*. Select all three menu options, ``Continue``, "
+"``NewGame`` and ``Options``, and drag and drop them inside the new "
+"``VBoxContainer``. The UI's layout should barely change, if at all."
 msgstr ""
 "Para espaciar las opciones del menú y el logotipo a la izquierda, usaremos "
 "un último container y sus size flags. Selecciona el ``VBoxContainer`` y "
@@ -543,13 +545,12 @@ msgstr ""
 "cambiar, si es que lo hace."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
 msgstr ""
-"Coloca el nuevo container entre los otros dos nodos para mantener la "
-"disposición de la UI"
+"Coloca el nuevo contenedor entre los otros dos nodos para mantener la "
+"disposición de la UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:248
 #, fuzzy
@@ -638,9 +639,10 @@ msgstr ""
 "controlar la posición y el tamaño de los elementos UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:289
+#, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
-"different screen ratios, select the root node, press the Q key to activate "
+"different screen ratios, select the root node, press :kbd:`Q` to activate "
 "the Select Mode, select the container and click and drag on one of the "
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""

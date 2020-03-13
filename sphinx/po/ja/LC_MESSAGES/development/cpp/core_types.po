@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,7 +91,7 @@ msgstr ""
 #: ../../docs/development/cpp/core_types.rst:220
 #: ../../docs/development/cpp/core_types.rst:233
 msgid "References:"
-msgstr "参照："
+msgstr "リファレンス:"
 
 #: ../../docs/development/cpp/core_types.rst:37
 msgid ""
@@ -112,6 +112,11 @@ msgid ""
 "more resources the OS will swap out the inactive ones. Other architectures "
 "(like mobile or consoles) are in general more limited."
 msgstr ""
+"PCは素晴らしいアーキテクチャです。多くの場合、コンピューターにはギガバイトの"
+"RAM、テラバイトのストレージ、ギガヘルツのCPUがあり、アプリケーションがさらに"
+"リソースを必要とすると、OSは非アクティブなリソースをスワップアウトします。そ"
+"の他のアーキテクチャ(モバイルやコンソールなど)は、一般的にもっと制限されてい"
+"ます。"
 
 #: ../../docs/development/cpp/core_types.rst:47
 msgid ""
@@ -120,6 +125,10 @@ msgid ""
 "return it. This often works best and is flexible, but over time and with "
 "abuse, this can lead to segmentation."
 msgstr ""
+"最も一般的なメモリモデルはヒープです。ヒープは、アプリケーションがメモリの領"
+"域を要求し、基盤となるOSがそれをどこかに適合させて返すことを試みます。これ"
+"は、多くの場合、最適に機能し、柔軟性がありますが、時間が経つと乱用されると、"
+"セグメンテーションにつながる可能性があります。"
 
 #: ../../docs/development/cpp/core_types.rst:52
 msgid ""
@@ -144,6 +153,11 @@ msgid ""
 "other words, leave 10-20% of your memory free and perform all small "
 "allocations and you are fine."
 msgstr ""
+"ただし、多くの調査とテストでは、十分なメモリがある場合、最大ヒープサイズと未"
+"使用のメモリの割合に比例して最大割り当てサイズが所定のしきい値を下回っていれ"
+"ば、時間が経過してもセグメンテーションは一定のままで、問題にならないことが示"
+"されています。つまり、メモリの10〜20％を空けて、小さな割り当てですべて実行す"
+"れば大丈夫です。"
 
 #: ../../docs/development/cpp/core_types.rst:65
 msgid ""
@@ -155,13 +169,13 @@ msgid ""
 "rearranged and compacted on demand. Depending on the need of the game, the "
 "programmer can configure the dynamic memory pool size."
 msgstr ""
-"Godot は、動的に割り当てることができるすべてのオブジェクトが小さいことを保証"
-"します(最大で数kb未満)。ただし、割り当てが大きすぎる場合 (イメージやメッシュ"
-"ジオメトリ、大きな配列など)はどうなりますか。この場合、Godot には動的メモリ"
-"プールを使用するオプションがあります。このメモリにアクセスするにはロックする"
-"必要があり、割り当てがメモリ不足になった場合、プールはオンデマンドで再配置お"
-"よび圧縮されます。ゲームの必要性に応じて、プログラマは動的メモリ プール のサ"
-"イズを構成できます。"
+"Godotは、動的に割り当てることができるすべてのオブジェクトが小さいことを要求し"
+"ます(せいぜい数KB未満)。しかし、割り当てが大きすぎるとどうなりますか(画像や"
+"メッシュジオメトリ、大きな配列など)？この場合、Godotには動的メモリプールを使"
+"用するオプションがあります。このメモリにアクセスするにはロックする必要があ"
+"り、割り当てがメモリ不足になると、プールは必要に応じて再配置および圧縮されま"
+"す。ゲームのニーズに応じて、プログラマは動的メモリプールサイズを構成できま"
+"す。"
 
 #: ../../docs/development/cpp/core_types.rst:74
 msgid "Allocating memory"
@@ -186,6 +200,7 @@ msgid ""
 "These are equivalent to the usual malloc, realloc, free of the standard C "
 "library."
 msgstr ""
+"これらは、標準Cライブラリに含まれる通常のmalloc、realloc、freeと同等です。"
 
 #: ../../docs/development/cpp/core_types.rst:91
 msgid "For C++-style allocation, special macros are provided:"
@@ -209,12 +224,17 @@ msgid ""
 "standard vector class, and is very similar to vector in the C++ standard "
 "library. To create a PoolVector buffer, use this:"
 msgstr ""
+"動的メモリの場合、PoolVector<> テンプレートが提供されます。PoolVectorは標準の"
+"vectorクラスであり、C++標準ライブラリのvectorに非常に似ています。 PoolVector"
+"バッファーを作成するには、これを使用します:"
 
 #: ../../docs/development/cpp/core_types.rst:114
 msgid ""
 "PoolVector can be accessed using the [] operator and a few helpers exist for "
 "this:"
 msgstr ""
+"PoolVectorは、[]演算子を使用してアクセスできます。このためのヘルパーがいくつ"
+"かあります:"
 
 #: ../../docs/development/cpp/core_types.rst:126
 msgid ""
@@ -223,6 +243,10 @@ msgid ""
 "dynamic memory operations, as read() and write() are too slow for a large "
 "amount of accesses."
 msgstr ""
+"これらの操作により、PoolVectorからの高速な読み取り/書き込みが可能になり、範囲"
+"外になるまでロックを保持します。ただし、大量のアクセスに対してはread()と"
+"write()が遅すぎるため、PoolVectorは小さな動的メモリの操作に使用する必要があり"
+"ます。"
 
 #: ../../docs/development/cpp/core_types.rst:134
 msgid ""
@@ -237,6 +261,8 @@ msgid ""
 "`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
 "pool_vector.cpp>`__"
 msgstr ""
+"`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
+"pool_vector.cpp>`__"
 
 #: ../../docs/development/cpp/core_types.rst:138
 msgid "Containers"
@@ -248,19 +274,19 @@ msgstr "Godot には、一般的なコンテナのセットも用意されてい
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
-msgstr "ベクター(Vector)"
+msgstr "Vector"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
-msgstr "\\ List"
+msgstr "List"
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
-msgstr "設定"
+msgstr "Set"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
-msgstr "\\ Map"
+msgstr "Map"
 
 #: ../../docs/development/cpp/core_types.rst:147
 msgid ""
@@ -271,8 +297,8 @@ msgid ""
 msgstr ""
 "C++のテンプレートは多くの場合インライン化され、デバッグシンボルとコードの両方"
 "でバイナリサイズがかなり大きくなるため、これらはシンプルで、可能な限り最小限"
-"にすることを目指しています。リスト、セット、およびマップは、次のようにポイン"
-"ターを使用して反復できます:"
+"にすることを目指しています。List、Set、およびMapは、次のようにポインターを使"
+"用して反復できます:"
 
 #: ../../docs/development/cpp/core_types.rst:158
 msgid "The Vector<> class also has a few nice features:"
@@ -353,9 +379,9 @@ msgid ""
 "StringNames are useful for using strings as identifier, as comparing them is "
 "basically comparing a pointer."
 msgstr ""
-"StringNamesはStringに似ていますが、一意です。文字列からStringNameを作成する"
+"StringNameはStringに似ていますが、一意です。文字列からStringNameを作成する"
 "と、すべての等しい文字列に対して一意の内部ポインターが作成されます。文字列を"
-"比較することは基本的にポインタを比較するため、StringNamesは識別子として文字列"
+"比較することは基本的にポインタを比較するため、StringNameは識別子として文字列"
 "を使用するのに便利です。"
 
 #: ../../docs/development/cpp/core_types.rst:194
@@ -369,8 +395,8 @@ msgid ""
 "`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
 "string_name.h>`__"
 msgstr ""
-"\\ `core/string_name.h <https://github.com/godotengine/godot/blob/master/"
-"core/string_name.h>`__"
+"`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
+"string_name.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:203
 msgid "Math types"
@@ -379,12 +405,13 @@ msgstr "算術型"
 #: ../../docs/development/cpp/core_types.rst:205
 msgid ""
 "There are several linear math types available in the core/math directory."
-msgstr ""
+msgstr "core/mathディレクトリには、いくつかの線形数学タイプがあります。"
 
 #: ../../docs/development/cpp/core_types.rst:211
 msgid ""
 "`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 msgstr ""
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 
 #: ../../docs/development/cpp/core_types.rst:214
 msgid "NodePath"
@@ -403,10 +430,12 @@ msgid ""
 "`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
 "node_path.h>`__"
 msgstr ""
+"`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
+"node_path.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:225
 msgid "RID"
-msgstr ""
+msgstr "RID"
 
 #: ../../docs/development/cpp/core_types.rst:227
 msgid ""

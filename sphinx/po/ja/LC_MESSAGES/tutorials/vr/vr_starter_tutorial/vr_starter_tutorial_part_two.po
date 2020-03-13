@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:4
 msgid "VR starter tutorial part 2"
-msgstr "VRスターターチュートリアルのパート2"
+msgstr "VRスターターチュートリアルパート2"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:7
 msgid "Introduction"
@@ -31,6 +31,8 @@ msgid ""
 "of special :ref:`RigidBody <class_RigidBody>`-based nodes that can be used "
 "in VR."
 msgstr ""
+"VRスターターチュートリアルシリーズのこのパートでは、VRで使用できる特別な :"
+"ref:`RigidBody <class_RigidBody>` ベースのノードをいくつか追加します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:13
 msgid ""
@@ -38,16 +40,21 @@ msgid ""
 "just finished getting the VR controllers working and defined a custom class "
 "called ``VR_Interactable_Rigidbody``."
 msgstr ""
+"これは、チュートリアルパート１の最後におこなったところから続きます。そこで"
+"は、VRコントローラーを動作させ、\\ ``VR_Interactable_Rigidbody`` というカスタ"
+"ムクラスを定義しました。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:16
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`_."
 msgstr ""
+"完成したプロジェクトは、\\ ``OpenVR GitHub リポジトリ <https://github.com/"
+"GodotVR/godot_openvr_fps>`_ で見つけることができます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:20
 msgid "Adding destroyable targets"
-msgstr ""
+msgstr "破壊可能なターゲットを追加する"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:22
 msgid ""
@@ -55,6 +62,9 @@ msgid ""
 "nodes, we need something for them to do. Let's make a simple sphere target "
 "that will break into a bunch of pieces when destroyed."
 msgstr ""
+"特別な :ref:`RigidBody <class_RigidBody>` ベースのノードを作成する前に、それ"
+"らを実行するために色々と必要です。破壊されたときに多数のピースに分割される単"
+"純な球体ターゲットを作成しましょう。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:25
 msgid ""
@@ -64,6 +74,11 @@ msgid ""
 "`MeshInstance <class_MeshInstance>` node displaying a sphere mesh, and an :"
 "ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` node."
 msgstr ""
+"``Scenes`` フォルダにある ``Sphere_Target.tscn`` を開きます。 シーンはかなり"
+"シンプルで、球形の :ref:`CollisionShape <class_CollisionShape>` を備えた :"
+"ref:`StaticBody <class_StaticBody>`\\ 、球メッシュを表示する :ref:"
+"`MeshInstance <class_MeshInstance>` ノード、および :ref:`AudioStreamPlayer3D "
+"<class_AudioStreamPlayer3D>` ノードのみです。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:28
 msgid ""
@@ -73,74 +88,88 @@ msgid ""
 "`RigidBody <class_RigidBody>` node. Outside of that, there isn't really a "
 "lot to talk about, so let's move straight into writing the code."
 msgstr ""
+"特別な :ref:`RigidBody <class_RigidBody>` ノードは球体のダメージを処理しま"
+"す。そのため、\\ :ref:`Area <class_Area>` または :ref:`RigidBody "
+"<class_RigidBody>` ノードのようなものの代わりに :ref:`StaticBody "
+"<class_StaticBody>` ノードを使用しています。 それ以外のことについては、あまり"
+"話すことはありませんので、コードの記述にまっすぐ進みましょう。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:31
 msgid ""
 "Select the ``Sphere_Target_Root`` node and make a new script called "
 "``Sphere_Target.gd``. Add the following code:"
 msgstr ""
+"``Sphere_Target_Root`` ノードを選択し、\\ ``Sphere_Target.gd`` という新しいス"
+"クリプトを作成します。次のコードを追加します:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:79
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:263
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:658
 msgid "Let's go over how this script works."
-msgstr ""
+msgstr "このスクリプトの仕組みを見ていきましょう。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:82
 msgid "Explaining the Sphere Target code"
-msgstr ""
+msgstr "Sphere Targetコードの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:84
 msgid "First, let's go through all of the class variables in the script:"
-msgstr ""
+msgstr "最初に、スクリプト内のすべてのクラス変数を見てみましょう:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:86
 msgid ""
 "``destroyed``: A variable to track whether the sphere target has been "
 "destroyed."
-msgstr ""
+msgstr "``destroyed``: 球体ターゲットが破壊されたかどうかを追跡する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:87
 msgid ""
 "``destroyed_timer``: A variable to track how long the sphere target has been "
 "destroyed."
-msgstr ""
+msgstr "``destroyed_timer``: 球体ターゲットが破壊された時間を追跡する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:88
 msgid ""
 "``DESTROY_WAIT_TIME``: A constant to define the length of time the target "
 "can be destroyed for before it frees/deletes itself."
 msgstr ""
+"``DESTROY_WAIT_TIME``: ターゲットがそれ自体を解放/削除する前に破棄できる時間"
+"の長さを定義する定数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:89
 msgid ""
 "``health``: A variable to store the amount of health the sphere target has."
-msgstr ""
+msgstr "``health``: 球体ターゲットが持つ体力(HP)の量を保存する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:90
 msgid ""
 "``RIGID_BODY_TARGET``: A constant to hold the scene of the destroyed sphere "
 "target."
 msgstr ""
+"``RIGID_BODY_TARGET``: 破壊された球体ターゲットのシーンを保持する定数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:92
 msgid ""
 "Feel free to check out the ``RIGID_BODY_TARGET`` scene. It is just a bunch "
 "of :ref:`RigidBody <class_RigidBody>` nodes and a broken sphere model."
 msgstr ""
+"``RIGID_BODY_TARGET`` シーンをチェックしてください。それは :ref:`RigidBody "
+"<class_RigidBody>` ノードの束と壊れた球体モデルです。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:94
 msgid ""
 "We'll be instancing this scene so when the target is destroyed, it looks "
 "like it broke into a bunch of pieces."
 msgstr ""
+"このシーンをインスタンス化するので、ターゲットが破壊されると、多数のピースに"
+"壊れたように見えます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:98
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:286
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:684
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:858
 msgid "``_ready`` function step-by-step explanation"
-msgstr ""
+msgstr "``_ready`` 関数のステップごとの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:100
 msgid ""
@@ -150,13 +179,17 @@ msgid ""
 "for destroying this node when enough time has passed, which we only want to "
 "do when the target has been destroyed."
 msgstr ""
+"``_ready`` 関数は、\\ ``set_physics_process`` を呼び出して ``false`` を渡すこ"
+"とで ``_physics_process`` の呼び出しを停止します。これを行う理由は、\\ ``_ "
+"physics_process`` のすべてのコードが、十分な時間が経過したときにこのノードを"
+"破棄するためであり、ターゲットが破棄された場合にのみ行うためです。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:106
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:292
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:694
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:868
 msgid "``_physics_process`` function step-by-step explanation"
-msgstr ""
+msgstr "``_physics_process`` 関数のステップごとの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:108
 msgid ""
@@ -166,10 +199,14 @@ msgid ""
 "equal to ``DESTROY_WAIT_TIME``, then the sphere target frees/deletes itself "
 "by calling the ``queue_free`` function."
 msgstr ""
+"最初に、この関数は ``delta`` を ``destroyed_timer`` 変数に加算します。次"
+"に、\\ ``destroyed_timer`` が ``DESTROY_WAIT_TIME`` 以上であるかどうかを確認"
+"します。\\ ``destroyed_timer`` が ``DESTROY_WAIT_TIME`` 以上の場合、球体ター"
+"ゲットは ``queue_free`` 関数を呼び出すことで自身を解放/削除します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:113
 msgid "``damage`` function step-by-step explanation"
-msgstr ""
+msgstr "``damage`` 関数の詳細な説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:115
 msgid ""
@@ -179,6 +216,10 @@ msgid ""
 "``damage`` variable will hold the amount of damage the special :ref:"
 "`RigidBody <class_RigidBody>` node did to the sphere target."
 msgstr ""
+"``damage`` 関数は、特別な :ref:`RigidBody <class_RigidBody>` ノードによって呼"
+"び出され、ターゲットに加えられたダメージの量を ``damage`` と呼ばれる関数の引"
+"数変数として渡します。\\ ``damage`` 変数は、特別な :ref:`RigidBody "
+"<class_RigidBody>` ノードが球体ターゲットに与えたダメージの量を保持します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:118
 msgid ""
@@ -189,6 +230,12 @@ msgid ""
 "things damage the target at exactly the same time, the target cannot be "
 "destroyed twice."
 msgstr ""
+"最初に、この関数は ``destroyed`` 変数が ``true`` に等しいかどうかをチェックす"
+"ることにより、ターゲットが既に破棄されていないことを確認します。\\ "
+"``destroyed`` が ``true`` に等しい場合、関数は ``return`` を呼び出すため、他"
+"のコードは呼び出されません。これは単なる安全チェックであるため、2つのものが"
+"まったく同時にターゲットにダメージを与えた場合でも、ターゲットを2回破壊するこ"
+"とはできません。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:122
 msgid ""
@@ -196,6 +243,9 @@ msgid ""
 "target's health, ``health``. If then checks to see if ``health`` is equal to "
 "zero or less, meaning that the target has just been destroyed."
 msgstr ""
+"次に、この関数は、ダメージの量 ``damage`` をターゲットの体力 ``health`` から"
+"減らします。次に、\\ ``health`` がゼロ以下であるかどうか、つまりターゲットが"
+"破壊されたことを確認します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:125
 msgid ""
@@ -206,6 +256,12 @@ msgid ""
 "``false``. We do this so the target can no longer effect the physics world "
 "and so the non-broken target mesh is not visible."
 msgstr ""
+"ターゲットが破壊されたばかりの場合は、\\ ``disabled`` プロパティを ``true`` "
+"に設定して :ref:`CollisionShape <class_CollisionShape>` を無効にします。次"
+"に、\\ ``visible`` プロパティを ``false`` に設定して、\\ ``Sphere_Target`` :"
+"ref:`MeshInstance <class_MeshInstance>` を非表示にします。これにより、ター"
+"ゲットが物理世界に影響を与えなくなり、破損していないターゲットメッシュは表示"
+"されなくなります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:128
 msgid ""
@@ -215,6 +271,11 @@ msgid ""
 "the non-broken target. This makes it where the broken target starts at the "
 "same position as the non-broken target with the same rotation and scale."
 msgstr ""
+"この後、関数は ``RIGID_BODY_TARGET`` シーンをインスタンス化し、それをターゲッ"
+"トの子として追加します。次に、\\ ``clone`` と呼ばれる新しくインスタンス化され"
+"たシーンの ``global_transform`` を、破損していないターゲットの "
+"``global_transform`` に設定します。これにより、破損したターゲットは、破損して"
+"いないターゲットと同じ位置から、同じ回転とスケールで開始します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:131
 msgid ""
@@ -224,6 +285,11 @@ msgid ""
 "``_physics_process`` so that after ``DESTROY_WAIT_TIME`` seconds have "
 "passed, the sphere target will free/destroy itself."
 msgstr ""
+"次に、関数は ``destroyed`` 変数を ``true`` に設定するため、ターゲットはそれが"
+"破棄されたことを認識し、\\ ``set_physics_process`` 関数を呼び出して ``true`` "
+"を渡します。これは ``_physics_process`` のコードの実行を開始し、\\ "
+"``DESTROY_WAIT_TIME`` 秒が経過した後、球体ターゲットはそれ自身を解放/破棄しま"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:134
 msgid ""
@@ -231,6 +297,8 @@ msgid ""
 "<class_AudioStreamPlayer3D>` node and calls the ``play`` function so it "
 "plays its sound."
 msgstr ""
+"次に、関数は :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` ノードを"
+"取得し、\\ ``play`` 関数を呼び出してサウンドを再生します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:136
 msgid ""
@@ -238,10 +306,13 @@ msgid ""
 "``Game.gd``, the code uses the scene tree and works its way from the root of "
 "the scene tree to the root of the ``Game.tscn`` scene."
 msgstr ""
+"最後に、\\ ``remove_sphere`` 関数は ``Game.gd`` で呼び出されます。\\ ``Game."
+"gd`` を取得するために、コードはシーンツリーを使用し、シーンツリーのルートか"
+"ら ``Game.tscn`` シーンのルートに移動します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:141
 msgid "Adding the ``remove_sphere`` function to ``Game.gd``"
-msgstr ""
+msgstr "``remove_sphere`` 関数を ``Game.gd`` に追加する"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:143
 msgid ""
@@ -249,6 +320,9 @@ msgid ""
 "``remove_sphere``, that we have not defined yet. Open up ``Game.gd`` and add "
 "the following additional class variables:"
 msgstr ""
+"まだ定義していない ``remove_sphere`` と呼ばれる ``Game.gd`` の関数を呼び出し"
+"ていることに気づいたかもしれません。\\ ``Game.gd`` を開き、次の追加のクラス変"
+"数を追加します:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:152
 msgid ""
@@ -256,22 +330,28 @@ msgid ""
 "provided ``Game`` scene, there are ``10`` spheres, so that is the initial "
 "value."
 msgstr ""
+"``spheres_left``: 世界に残っている球体ターゲットの量。提供された ``Game`` "
+"シーンには、\\ ``10`` の球体があるため、これが初期値です。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:153
 msgid ""
 "``sphere_ui``: A reference to the sphere UI. We will use this later in the "
 "tutorial to display the amount of spheres left in the world."
 msgstr ""
+"``sphere_ui``: 球体UIへの参照。チュートリアルの後半でこれを使用して、世界に"
+"残っている球の量を表示します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:155
 msgid ""
 "With these variables defined, we can now add the ``remove_sphere`` function. "
 "Add the following code to ``Game.gd``:"
 msgstr ""
+"これらの変数を定義したら、\\ ``remove_sphere`` 関数を追加できます。次のコード"
+"を ``Game.gd`` に追加します:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:167
 msgid "Let's go through what this function does real quick:"
-msgstr ""
+msgstr "この関数が実際に何をするのかを見てみましょう:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:169
 msgid ""
@@ -280,10 +360,14 @@ msgid ""
 "equal to ``null`` it calls the ``update_ui`` function on ``sphere_ui``, "
 "passing in the number of spheres as an argument to the function."
 msgstr ""
+"まず、\\ ``spheres_left`` 変数から1つ削除します。次に、\\ ``sphere_ui`` 変数"
+"が ``null`` と等しくないかどうかを確認し、\\ ``null`` と等しくない場合は、\\ "
+"``sphere_ui`` の ``update_ui`` 関数を、球体の数を引数として渡して呼び出しま"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:172
 msgid "We will add the code for ``sphere_ui`` later in this tutorial!"
-msgstr ""
+msgstr "このチュートリアルの後半で ``sphere_ui`` のコードを追加します！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:174
 msgid ""
@@ -291,10 +375,13 @@ msgid ""
 "destroy it. Let's fix that by adding some special :ref:`RigidBody "
 "<class_RigidBody>`-based nodes that can damage the targets."
 msgstr ""
+"これで ``Sphere_Target`` を使用する準備ができましたが、それを破壊する方法はあ"
+"りません。ターゲットを損傷させる事が可能な特別な :ref:`RigidBody "
+"<class_RigidBody>` ベースのノードを追加して、これを修正しましょう。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:179
 msgid "Adding a pistol"
-msgstr ""
+msgstr "ピストルを追加する"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:181
 msgid ""
@@ -302,12 +389,16 @@ msgid ""
 "<class_RigidBody>` node. Open up ``Pistol.tscn``, which you can find in the "
 "``Scenes`` folder."
 msgstr ""
+"最初の対話可能な :ref:`RigidBody <class_RigidBody>` ノードとしてピストルを追"
+"加しましょう。\\ ``Scenes`` フォルダにある ``Pistol.tscn`` を開きます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:183
 msgid ""
 "Let's quickly go over a few things of note in ``Pistol.tscn`` real quick "
 "before we add the code."
 msgstr ""
+"コードを追加する前に ``Pistol.tscn`` のいくつかの注意事項を簡単に確認しましょ"
+"う。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:185
 msgid ""
@@ -318,6 +409,11 @@ msgid ""
 "``VR_Interactable_Rigidbody`` class we created in the last part of this "
 "tutorial series."
 msgstr ""
+"``Pistol.tscn`` のすべてのノードは、ルートノードが回転することを期待していま"
+"す。これは、ピストルがピックアップされるときにVRコントローラーに対して正しい"
+"回転になるようにするためです。ルートノードは :ref:`RigidBody "
+"<class_RigidBody>` ノードです。このチュートリアルシリーズの最後のパートで作成"
+"する ``VR_Interactable_Rigidbody`` クラスを使用するため、これが必要です。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:188
 msgid ""
@@ -331,6 +427,15 @@ msgid ""
 "<class_AudioStreamPlayer3D>` node at the end of the pistol that we will use "
 "to play the sound of the pistol firing."
 msgstr ""
+"``Pistol_Flash`` という名前の :ref:`MeshInstance <class_MeshInstance>` ノード"
+"があります。これは、ピストルの銃身の端にある銃口フラッシュをシミュレートする"
+"ために使用する単純なメッシュです。\\ ``LaserSight`` という :ref:"
+"`MeshInstance <class_MeshInstance>` ノードは、ピストルを狙うためのガイドとし"
+"て使用され、ピストルが「弾丸」が何かに当たったかどうかを検出するために使用す"
+"る ``Raycast``と呼ばれる :ref:`Raycast <class_Raycast>` ノードの方向に従いま"
+"す。最後に、ピストルの発射音を再生するために使用する :ref:"
+"`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` ノードがピストルの最後にあ"
+"ります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:193
 msgid ""
@@ -339,6 +444,10 @@ msgid ""
 "Select the :ref:`RigidBody <class_RigidBody>` node called ``Pistol`` and "
 "make a new script called ``Pistol.gd``. Add the following code:"
 msgstr ""
+"必要に応じて、シーンの他の部分を見てください。シーンのほとんどはかなり簡単"
+"で、上記の大きな変更があります。\\ ``Pistol`` という :ref:`RigidBody "
+"<class_RigidBody>` ノードを選択し、\\ ``Pistol.gd`` という新しいスクリプトを"
+"作成します。次のコードを追加します:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:267
 msgid "Explaining the pistol code"
@@ -353,12 +462,18 @@ msgid ""
 "``VR_Interactable_Rigidbody`` can be called when this object is held by a VR "
 "controller."
 msgstr ""
+"まず、\\ ``extends RigidBody`` の代わりに、\\ ``extends "
+"VR_Interactable_Rigidbody`` を使用することに注意してください。これにより、ピ"
+"ストルスクリプトが ``VR_Interactable_Rigidbody`` クラスを拡張し、VRコントロー"
+"ラーがこのオブジェクトとやり取りできることと、このオブジェクトがVRコントロー"
+"ラーによって保持されているときに ``VR_Interactable_Rigidbody`` で定義された関"
+"数を呼び出すことができるようになります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:273
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:667
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:849
 msgid "Next, let's look at the class variables:"
-msgstr ""
+msgstr "次に、クラス変数を見てみましょう:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:275
 msgid ""
@@ -366,30 +481,38 @@ msgid ""
 "<class_MeshInstance>` node that is used to simulate muzzle flash on the "
 "pistol."
 msgstr ""
+"``flash_mesh``: ピストルの銃口フラッシュをシミュレートするために使用される :"
+"ref:`MeshInstance <class_MeshInstance>` ノードを保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:276
 msgid ""
 "``FLASH_TIME``: A constant to define how long the muzzle flash will be "
 "visible. This will also define how fast the pistol can fire."
 msgstr ""
+"``FLASH_TIME``: 銃口フラッシュが見える時間を定義する定数。これは、ピストルが"
+"発射できる速さも定義します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:277
 msgid ""
 "``flash_timer``: A variable to hold the amount of time the muzzle flash has "
 "been visible for."
-msgstr ""
+msgstr "``flash_timer``: 銃口のフラッシュが見える時間を保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:278
 msgid ""
 "``laser_sight_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node that acts as the pistol's 'laser sight'."
 msgstr ""
+"``laser_sight_mesh``: ピストルの「レーザーサイト」として機能する :ref:"
+"`MeshInstance <class_MeshInstance>` ノードを保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:279
 msgid ""
 "``pistol_fire_sound``: A variable to hold the :ref:`AudioStreamPlayer3D "
 "<class_AudioStreamPlayer3D>` node used for the pistol's firing sound."
 msgstr ""
+"``pistol_fire_sound``: ピストルの発射音に使用される :ref:"
+"`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` ノードを保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:280
 msgid ""
@@ -397,12 +520,16 @@ msgid ""
 "is used for calculating the bullet's position and normal when the pistol is "
 "fired."
 msgstr ""
+"``raycast``: ピストルが発射されたときの弾丸の位置と法線の計算に使用される :"
+"ref:`Raycast <class_Raycast>` ノードを保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:281
 msgid ""
 "``BULLET_DAMAGE``: A constant to define the amount of damage a single bullet "
 "from the pistol does."
 msgstr ""
+"``BULLET_DAMAGE``: ピストルからの1つの弾丸が与えるダメージの量を定義する定"
+"数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:282
 msgid ""
@@ -410,6 +537,8 @@ msgid ""
 "applied to :ref:`RigidBody <class_RigidBody>` nodes when the pistol's bullet "
 "collides."
 msgstr ""
+"``COLLISION_FORCE``: ピストルの弾丸が衝突したときに :ref:`RigidBody "
+"<class_RigidBody>` ノードに適用される力の量を定義する定数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:288
 msgid ""
@@ -417,6 +546,9 @@ msgid ""
 "the ``flash_mesh`` and ``laser_sight_mesh`` nodes, both have their "
 "``visible`` property set to ``false`` so they are not visible initially."
 msgstr ""
+"この関数はノードを取得し、適切な変数に割り当てます。\\ ``flash_mesh`` および "
+"``laser_sight_mesh`` ノードでは、両方とも ``visible`` プロパティが ``false`` "
+"に設定されているため、最初は表示されません。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:294
 msgid ""
@@ -428,12 +560,19 @@ msgid ""
 "finished and so we need to make ``flash_mesh`` invisible by setting it's "
 "``visible`` property to ``false``."
 msgstr ""
+"``_physics_process`` 関数は、最初に ``flash_timer`` が0より大きいかどうかを"
+"チェックすることで、ピストルの銃口フラッシュが見えるかどうかを確認します。\\ "
+"``flash_timer`` が0より大きい場合、その時間から ``delta`` を減らします。次"
+"に、\\ ``delta`` 分を減らしたので、\\ ``flash_timer`` 変数がゼロ以下かどうか"
+"を確認します。そうである場合、ピストル銃口フラッシュタイマーはちょうど終了し"
+"たので、\\ ``visible`` プロパティを ``false`` に設定して、\\ ``flash_mesh`` "
+"を非表示にする必要があります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:299
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:473
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:760
 msgid "``interact`` function step-by-step explanation"
-msgstr ""
+msgstr "``interact`` 関数のステップごとの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:301
 msgid ""
@@ -443,6 +582,10 @@ msgid ""
 "length of time the muzzle flash is visible, which is a simple solution for "
 "limiting how fast the player can fire."
 msgstr ""
+"interact関数は、最初に ``flash_timer`` がゼロ以下であるかどうかを確認すること"
+"で、ピストルの銃口フラッシュが見えないかどうかを確認します。これを行うこと"
+"で、ピストルの発射速度を銃口フラッシュが見える時間の長さに制限できます。これ"
+"は、プレイヤーが連続的に発射できる速さを制限するための簡単な解決策です。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:304
 msgid ""
@@ -451,6 +594,10 @@ msgid ""
 "that we set ``flash_mesh.visible`` to ``true`` so the muzzle flash at the "
 "end of the pistol is visible while ``flash_timer`` is more than zero."
 msgstr ""
+"``flash_timer`` がゼロ以下の場合、\\ ``flash_timer`` を ``FLASH_TIME`` に設定"
+"して、ピストルが再び発砲できるようになるまでに遅延が生じるようにします。その"
+"後、\\ ``flash_mesh.visible`` を ``true`` に設定して、\\ ``flash_timer`` がゼ"
+"ロよりも大きいときにピストルの端の銃口フラッシュが見えるようにします。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:307
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:481
@@ -460,6 +607,10 @@ msgid ""
 "info from the physics world. We then check if the ``raycast`` hit something "
 "by checking if the ``is_colliding`` function is equal to ``true``."
 msgstr ""
+"次に、物理世界から最新の衝突情報を取得できるように、\\ ``raycast`` の :ref:"
+"`Raycast <class_Raycast>` ノードで ``force_raycast_update`` 関数を呼び出しま"
+"す。次に、\\ ``is_colliding`` 関数が ``true`` に等しいかどうかを確認すること"
+"で、\\ ``raycast`` が何かにヒットするかどうかを確認します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:312
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:501
@@ -469,6 +620,9 @@ msgid ""
 "We assign the hit :ref:`PhysicsBody <class_PhysicsBody>` to a variable "
 "called ``body``."
 msgstr ""
+"``Raycast`` が何かに当たった場合、\\ ``get_collider`` 関数を介して衝突した :"
+"ref:`PhysicsBody <class_PhysicsBody>` を取得します。ヒットした :ref:"
+"`PhysicsBody <class_PhysicsBody>` を ``body`` という変数に割り当てます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:315
 msgid ""
@@ -480,6 +634,12 @@ msgid ""
 "mode`` is enabled in the Godot editor. We store this direction in a variable "
 "called ``direction_vector``."
 msgstr ""
+"次に、\\ ``raycast`` ノードの ``global_transform`` の :ref:`Basis "
+"<class_Basis>` から正の ``Z`` 方向軸を取得することにより、\\ :ref:`Raycast "
+"<class_Raycast>` の方向を取得します。 これにより、レイキャストがZ軸を指す方向"
+"がわかります。これは、Godotエディタで ``ローカル空間モード`` が有効になってい"
+"る場合、\\ :ref:`Spatial <class_Spatial>` ギズモの青い矢印が示す方向と同じで"
+"す。この方向を ``direction_vector`` と呼ばれる変数に保存します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:319
 msgid ""
@@ -491,6 +651,13 @@ msgid ""
 "the distance the :ref:`Raycast <class_Raycast>` traveled before it collided, "
 "which we store in a variable called ``raycast_distance``."
 msgstr ""
+"次に、\\ ``distance_to`` 関数を使用して、\\ ``raycast`` ノードのグローバル位"
+"置 ``global_transform.origin`` から :ref:`Raycast <class_Raycast>` の衝突点ま"
+"での距離、\\ ``raycast.get_collision_point`` を取得することにより、\\ :ref:"
+"`Raycast <class_Raycast>` の原点から :ref:`Raycast <class_Raycast>` の衝突点"
+"までの距離を取得します。これにより、\\ :ref:`Raycast <class_Raycast>` が衝突"
+"する前に移動した距離がわかり、\\ ``raycast_distance`` という変数に格納されま"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:323
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:512
@@ -501,6 +668,11 @@ msgid ""
 "method called ``damage``, then we call the ``damage`` function and pass "
 "``BULLET_DAMAGE`` so it takes damage from the bullet colliding into it."
 msgstr ""
+"次に、コードは :ref:`PhysicsBody <class_PhysicsBody>` である ``body`` が "
+"``has_method`` 関数を使用して ``damage`` という関数/メソッドを持っているかど"
+"うかをチェックします。\\ :ref:`PhysicsBody <class_PhysicsBody>` に "
+"``damage`` という関数/メソッドがある場合、\\ ``damage`` 関数を呼び出し、\\ "
+"``BULLET_DAMAGE`` を渡して、衝突する弾丸からのダメージを受けます 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:326
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:515
@@ -511,6 +683,10 @@ msgid ""
 "<class_RigidBody>`-based node, then we want to push it when the bullet "
 "collides."
 msgstr ""
+":ref:`PhysicsBody <class_PhysicsBody>` に ``damage`` 関数があるかどうかに関係"
+"なく、\\ ``body`` が :ref:`RigidBody <class_RigidBody>` ベースのノードである"
+"かどうかを確認します。\\ ``body`` が :ref:`RigidBody <class_RigidBody>` ベー"
+"スのノードである場合、弾丸が衝突したときに押し出します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:329
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:518
@@ -522,6 +698,11 @@ msgid ""
 "move force than those over longer distances, giving a *slightly* more "
 "realistic collision response."
 msgstr ""
+"適用される力の量を計算するには、単に ``COLLISION_FORCE`` を取得し、それを "
+"``raycast_distance`` で割ってから、全体に ``body.mass`` を掛けます。この計算"
+"を ``collision_force`` と呼ばれる変数に保存します。これは、より短い距離での衝"
+"突に、より長い距離での衝突よりも多くの移動力を適用し、\\ *心もち*\\ 現実的な"
+"衝突応答を提供します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:332
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:521
@@ -531,6 +712,9 @@ msgid ""
 "force is applied from the center, and the collision force is the "
 "``collision_force`` variable we calculated."
 msgstr ""
+"次に、\\ ``apply_impulse`` 関数を使用して :ref:`RigidBody <class_RigidBody>` "
+"を押し出します。位置はゼロVector3であるため、中心から力が適用され、衝突力は計"
+"算した ``collision_force`` 変数になります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:336
 msgid ""
@@ -538,6 +722,8 @@ msgid ""
 "play the pistol shot sound by calling the ``play`` function on the "
 "``pistol_fire_sound`` variable."
 msgstr ""
+"``raycast`` 変数が何かに当たったかどうかに関係なく、\\ ``pistol_fire_sound`` "
+"変数で ``play`` 関数を呼び出して ``pistol_fire_sound`` を再生します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:338
 msgid ""
@@ -546,10 +732,15 @@ msgid ""
 "it is not equal to ``null``, we then set the ``rumble`` property of the VR "
 "controller to ``0.25``, so there is a slight rumble when the pistol fires."
 msgstr ""
+"最後に、\\ ``controller`` 変数が ``null`` と等しくないかどうかを確認すること"
+"で、ピストルがVRコントローラーに保持されているかどうかを確認します。\\ "
+"``null`` と等しくない場合は、VRコントローラーの ``rumble`` プロパティを "
+"``0.25`` に設定します。そのため、ピストルが発射されるときにわずかな振動が発生"
+"します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:343
 msgid "``picked_up`` function step-by-step explanation"
-msgstr ""
+msgstr "``picked_up`` 関数のステップごとの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:345
 msgid ""
@@ -557,10 +748,13 @@ msgid ""
 "<class_MeshInstance>` visible by setting the ``visible`` property to "
 "``true``."
 msgstr ""
+"この関数は、単に ``visible`` プロパティを ``true`` に設定することで "
+"``laser_sight_mesh`` :ref:`MeshInstance <class_MeshInstance>` を可視にしま"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:348
 msgid "``dropped`` function step-by-step explanation"
-msgstr ""
+msgstr "``dropped`` 関数のステップごとの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:350
 msgid ""
@@ -568,10 +762,13 @@ msgid ""
 "<class_MeshInstance>` invisible by setting the ``visible`` property to "
 "``false``."
 msgstr ""
+"この関数は、単に ``visible`` プロパティを ``false`` に設定することで "
+"``laser_sight_mesh`` :ref:`MeshInstance <class_MeshInstance>` を非表示にしま"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:354
 msgid "Pistol finished"
-msgstr ""
+msgstr "ピストル完成"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:359
 msgid ""
@@ -581,14 +778,18 @@ msgid ""
 "the VR controller! If you fire at the targets long enough, they will break "
 "into pieces."
 msgstr ""
+"プロジェクトで動作するピストルを使うために必要なことはこれだけです！ 先に進"
+"み、プロジェクトを実行しましょう。階段を上ってピストルをつかむと、VRコント"
+"ローラーのトリガーボタンを使用して、シーンの球体ターゲットにそれらを発射でき"
+"ます！ ターゲットを十分に長く打ち続けた場合、それらはバラバラになります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:365
 msgid "Adding a shotgun"
-msgstr ""
+msgstr "ショットガンを追加する"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:367
 msgid "Next let's add a shotgun to the VR project."
-msgstr ""
+msgstr "次に、VRプロジェクトにショットガンを追加しましょう。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:369
 msgid ""
@@ -596,6 +797,8 @@ msgid ""
 "straightforward, as almost everything with the shotgun is the same as the "
 "pistol."
 msgstr ""
+"ショットガンのほとんどすべてがピストルと同じであるため、特別なショットガン :"
+"ref:`RigidBody <class_RigidBody>` を追加するのはかなり簡単です。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:371
 msgid ""
@@ -608,11 +811,18 @@ msgid ""
 "ref:`Raycast <class_Raycast>` nodes that will rotate randomly in a cone "
 "shape when the shotgun fires."
 msgstr ""
+"``Scenes`` フォルダにある ``Shotgun.tscn`` を開き、シーンを確認します。ほとん"
+"どすべてが ``Pistol.tscn`` と同じです。唯一の違いは、名前の変更以外に、単一"
+"の :ref:`Raycast <class_Raycast>` の代わりに、5つの :ref:`Raycast "
+"<class_Raycast>` ノードがあることです。これは、ショットガンが通常コーン形状で"
+"発砲するため、ショットガンが発砲するとコーン形状でランダムに回転する複数の :"
+"ref:`Raycast <class_Raycast>` ノードを使用して、その効果をエミュレートするた"
+"めです。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:376
 msgid ""
 "Outside of that, everything is more or less the same as ``Pistol.tscn``."
-msgstr ""
+msgstr "それ以外は、すべてが ``Pistol.tscn`` とほぼ同じです。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:378
 msgid ""
@@ -620,6 +830,9 @@ msgid ""
 "<class_RigidBody>` node called ``Shotgun`` and make a new script called "
 "``Shotgun.gd``. Add the following code:"
 msgstr ""
+"ショットガンのコードを書きましょう。\\ ``Shotgun`` という :ref:`RigidBody "
+"<class_RigidBody>` ノードを選択し、\\ ``Shotgun.gd`` という新しいスクリプトを"
+"作成します。次のコードを追加します:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:456
 msgid ""
@@ -627,6 +840,9 @@ msgid ""
 "with just a few *minor* changes that are primarily just different names. Due "
 "to how similar these scripts are, let's just focus on the changes."
 msgstr ""
+"このコードの大部分はピストルのコードとまったく同じであり、主に名前が異なるだ"
+"けの\\ *わずかな*\\ 変更があります。 これらのスクリプトは類似しているため、変"
+"更点のみに注目しましょう。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:460
 msgid "Explaining the shotgun code"
@@ -638,16 +854,21 @@ msgid ""
 "the VR controllers know that this object can be interacted with and what "
 "functions are available."
 msgstr ""
+"ピストルと同様に、ショットガンは ``VR_Interactable_Rigidbody`` を拡張するた"
+"め、VRコントローラーは、このオブジェクトとやり取りできること、および使用可能"
+"な機能を認識します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:465
 msgid "There is only one new class variable:"
-msgstr ""
+msgstr "新しいクラス変数は1つだけです:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:467
 msgid ""
 "``raycasts``: A variable to hold the node that has all of the :ref:`Raycast "
 "<class_Raycast>` nodes as its children."
 msgstr ""
+"``raycasts``: すべての :ref:`Raycast <class_Raycast>` ノードを子として持つ"
+"ノードを保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:469
 msgid ""
@@ -657,6 +878,10 @@ msgid ""
 "are the same as ``Pistol.gd`` and function the same way, some just are "
 "renamed to be non-pistol specific."
 msgstr ""
+"新しいクラス変数は ``Pistol.gd`` の ``raycast`` 変数を置き換えます。ショット"
+"ガンでは、1つではなく複数の :ref:`Raycast <class_Raycast>` ノードを処理する必"
+"要があるためです。他のすべてのクラス変数は ``Pistol.gd`` と同じであり、同じよ"
+"うに機能します。一部は、ピストル固有ではないように名前が変更されます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:475
 msgid ""
@@ -666,6 +891,10 @@ msgid ""
 "length of time the muzzle flash is visible, which is a simple solution for "
 "limiting how fast the player can fire."
 msgstr ""
+"interact(相互作用)関数は、最初に ``flash_timer`` がゼロ以下であるかどうかを確"
+"認することにより、ショットガンの銃口フラッシュが見えないかどうかを確認しま"
+"す。これにより、ショットガンの発射速度を銃口フラッシュが見える時間で制限でき"
+"ます。これは、プレイヤーが連続発射できる速さを制限する簡単な解決策です。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:478
 msgid ""
@@ -674,6 +903,11 @@ msgid ""
 "that we set ``flash_mesh.visible`` to ``true`` so the muzzle flash at the "
 "end of the shotgun is visible while ``flash_timer`` is more than zero."
 msgstr ""
+"``flash_timer`` がゼロ以下の場合、\\ ``flash_timer`` を ``FLASH_TIME`` に設定"
+"し、ショットガンが再び発砲できるようになるまでに遅延が生じるようにします。そ"
+"の後、\\ ``flash_mesh.visible`` を ``true`` に設定します。これにより、\\ "
+"``flash_timer`` がゼロよりも大きい間、ショットガンの端の銃口フラッシュが見え"
+"るようになります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:484
 msgid ""
@@ -682,6 +916,9 @@ msgid ""
 "`Raycast <class_Raycast>` nodes that are children of the ``raycasts`` "
 "variable."
 msgstr ""
+"次に、forループを使用して ``raycasts`` 変数の各子ノードを調べます。これによっ"
+"て、コードは ``raycasts`` 変数の子である :ref:`Raycast <class_Raycast>` ノー"
+"ドのそれぞれを処理します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:489
 msgid ""
@@ -689,6 +926,9 @@ msgid ""
 "<class_Raycast>` node. If the node is not a :ref:`Raycast <class_Raycast>` "
 "node, we simply use ``continue`` to skip it."
 msgstr ""
+"各ノードについて、\\ ``raycast`` が :ref:`Raycast <class_Raycast>` ノードでは"
+"ないかどうかを確認します。ノードが :ref:`Raycast <class_Raycast>` ノードでな"
+"い場合は、単に ``continue`` を使用してスキップします。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:491
 msgid ""
@@ -697,6 +937,10 @@ msgid ""
 "Vector3 where the X and Z axis are a random number from ``-10`` to ``10``. "
 "This random number is selected using the ``rand_range`` function."
 msgstr ""
+"次に、\\ ``raycast`` の ``rotation_degrees`` 変数をVector3に設定して、\\ "
+"``10`` 度の小さな円錐の周りに ``raycast`` ノードをランダムに回転させます。Xお"
+"よびZ軸は ``-10`` 〜 ``10`` の乱数です。この乱数は ``rand_range`` 関数を使用"
+"して選択します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:494
 msgid ""
@@ -705,6 +949,10 @@ msgid ""
 "info from the physics world. We then check if the ``raycast`` hit something "
 "by checking if the ``is_colliding`` function is equal to ``true``."
 msgstr ""
+"次に、物理世界から最新の衝突情報を取得するために、\\ ``raycast`` の :ref:"
+"`Raycast <class_Raycast>` ノードで ``force_raycast_update`` 関数を呼び出しま"
+"す。次に、\\ ``is_colliding`` 関数が ``true`` に等しいかどうかを確認すること"
+"で、\\ ``raycast`` が何かにヒットするかどうかを確認します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:497
 msgid ""
@@ -712,6 +960,8 @@ msgid ""
 "each :ref:`Raycast <class_Raycast>` node that is a child of the ``raycasts`` "
 "variable."
 msgstr ""
+"残りのコードはまったく同じですが、このプロセスは ``raycasts`` 変数の子である"
+"各 :ref:`Raycast <class_Raycast>` ノードに対して繰り返されます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:504
 msgid ""
@@ -723,6 +973,12 @@ msgid ""
 "enabled in the Godot editor. We store this direction in a variable called "
 "``direction_vector``."
 msgstr ""
+"次に、\\ ``raycast`` ノードの ``global_transform`` 上の :ref:`Basis "
+"<class_Basis>` から正の ``Z`` 方向軸を取得することで、raycastの方向を取得しま"
+"す。これにより、raycastがZ軸を指す方向がわかります。これは、Godotエディタで "
+"``ローカル空間モード`` が有効になっている場合に、\\ :ref:`Spatial "
+"<class_Spatial>` ギズモの青い矢印が示す方向と同じです 。この方向を "
+"``direction_vector`` と呼ばれる変数に保存します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:508
 msgid ""
@@ -733,6 +989,12 @@ msgid ""
 "will give us the distance the :ref:`Raycast <class_Raycast>` traveled before "
 "it collided, which we store in a variable called ``raycast_distance``."
 msgstr ""
+"次に、\\ ``distance_to`` 関数を使用して、\\ ``raycast`` ノードのグローバル位"
+"置である ``global_transform.origin`` からレイキャストの衝突点 ``raycast."
+"get_collision_point`` までの距離を取得することにより、レイキャストの原点から"
+"レイキャスト衝突点までの距離を取得します。 これにより、衝突する前に :ref:"
+"`Raycast <class_Raycast>` が移動した距離が得られ、\\ `` raycast_distance`` と"
+"いう変数に格納されます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:526
 msgid ""
@@ -740,6 +1002,9 @@ msgid ""
 "variable have been iterated over, we then play the shotgun shot sound by "
 "calling the ``play`` function on the ``shotgun_fire_sound`` variable."
 msgstr ""
+"``raycast`` 変数内のすべての :ref: Raycast <class_Raycast>` が繰り返される"
+"と、\\ ``shotgun_fire_sound`` 変数の ``play`` 関数を呼び出して、ショットガン"
+"の発砲音を再生します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:528
 msgid ""
@@ -748,26 +1013,35 @@ msgid ""
 "it is not equal to ``null``, we then set the ``rumble`` property of the VR "
 "controller to ``0.25``, so there is a slight rumble when the shotgun fires."
 msgstr ""
+"最後に、\\ ``controller`` 変数が ``null`` と等しくないかどうかを確認すること"
+"により、ショットガンがVRコントローラーに保持されているかどうかを確認しま"
+"す。\\ ``null`` と等しくない場合、VRコントローラーの ``rumble`` プロパティを "
+"``0.25`` に設定します。そのため、ショットガンの発砲時にわずかな振動が発生しま"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:532
 msgid "Shotgun finished"
-msgstr ""
+msgstr "ショットガン完成"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:534
 msgid ""
 "Everything else is exactly the same as the pistol, with at most just some "
 "simple name changes."
 msgstr ""
+"せいぜいいくつかの単純な名前の変更があるだけで、他のすべてはピストルとまった"
+"く同じです。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:536
 msgid ""
 "Now the shotgun is finished! You can find the shotgun in the sample scene by "
 "looking around the back of one of the walls (not in the building though!)."
 msgstr ""
+"これでショットガンが完成しました！サンプルシーンでショットガンを見つけるに"
+"は、壁の1つ(建物ではなく！)の後ろを見てください。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:541
 msgid "Adding a bomb"
-msgstr ""
+msgstr "爆弾を追加する"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:543
 msgid ""
@@ -775,10 +1049,12 @@ msgid ""
 "Instead of adding something that shoots, let's add something we can throw - "
 "a bomb!"
 msgstr ""
+"さて、別の特別な :ref:`RigidBody <class_RigidBody>` を追加しましょう。撃つも"
+"のを追加する代わりに、投げることができるもの - 爆弾を追加しましょう！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:545
 msgid "Open up ``Bomb.tscn``, which is in the ``Scenes`` folder."
-msgstr ""
+msgstr "``Scenes`` フォルダにある ``Bomb.tscn`` を開きます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:547
 msgid ""
@@ -789,6 +1065,12 @@ msgid ""
 "ref:`MeshInstance <class_MeshInstance>` called ``Bomb`` that is used to "
 "display the mesh for the bomb."
 msgstr ""
+"ルートノードは ``VR_Interactable_Rigidbody`` を使用するように拡張する :ref:"
+"`RigidBody <class_RigidBody>` ノードです。これには、これまでに作成した他の特"
+"別な :ref:`RigidBody <class_RigidBody>` ノードと同様の :ref:`CollisionShape "
+"<class_CollisionShape>` があります。同様に、爆弾のメッシュを表示するために使"
+"用される ``Bomb`` と呼ばれる :ref:`MeshInstance <class_MeshInstance>` があり"
+"ます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:551
 msgid ""
@@ -798,6 +1080,11 @@ msgid ""
 "bomb explodes. Essentially, this :ref:`Area <class_Area>` node will be the "
 "blast radius for the bomb."
 msgstr ""
+"次に、単に ``Area`` と呼ばれる :ref:`Area <class_Area>` ノードがあり、その"
+"ノードには大きな :ref:`CollisionShape <class_CollisionShape>` が子としてあり"
+"ます。この :ref:`Area <class_Area>` ノードを使用して、爆弾が爆発したときにそ"
+"の中にあるものに影響を与えます。基本的に、この :ref:`Area <class_Area>` ノー"
+"ドは爆弾の爆発半径になります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:554
 msgid ""
@@ -809,6 +1096,12 @@ msgid ""
 "particles work in this tutorial due to it being outside of the scope of this "
 "tutorial."
 msgstr ""
+"いくつかの :ref:`Particles <class_Particles>` ノードもあります。\\ :ref:"
+"`Particles <class_Particles>` ノードの1つは爆弾のヒューズから出る煙用で、もう"
+"1つは爆発用です。必要に応じて、パーティクルの動作を定義する :ref:"
+"`ParticlesMaterial <class_ParticlesMaterial>` リソースを確認できます。この"
+"チュートリアルの範囲外であるため、このチュートリアルではパーティクルがどのよ"
+"うに機能するかについてはカバーしません。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:558
 msgid ""
@@ -820,6 +1113,12 @@ msgid ""
 "this so we can time the removal of the bomb with the end of the explosion :"
 "ref:`Particles <class_Particles>`."
 msgstr ""
+":ref:`Particles <class_Particles>` ノードには、注意する必要があるものが1つあ"
+"ります。\\ ``Explosion_Particles`` ノードを選択すると、\\ ``lifetime`` プロパ"
+"ティが ``0.75`` に設定され、\\ ``one shot`` チェックボックスが有効になってい"
+"ることがわかります。つまり、パーティクルは1回だけ再生され、パーティクルは "
+"``0.75`` 秒間続きます。これを知っておくことで、爆発 :ref:`Particles "
+"<class_Particles>` の終了時に爆弾の除去のタイミングを計ることができます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:562
 msgid ""
@@ -827,6 +1126,9 @@ msgid ""
 "<class_RigidBody>` node and make a new script called ``Bomb.gd``. Add the "
 "following code:"
 msgstr ""
+"爆弾のコードを書きましょう。\\ ``Bomb`` :ref:`RigidBody <class_RigidBody>` "
+"ノードを選択し、\\ ``Bomb.gd`` という新しいスクリプトを作成します。次のコード"
+"を追加します:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:662
 msgid "Explaining the bomb code"
@@ -840,36 +1142,50 @@ msgid ""
 "``VR_Interactable_Rigidbody`` can be called when this object is held by a VR "
 "controller."
 msgstr ""
+"他の特別な :ref:`RigidBody <class_RigidBody>` ノードと同様に、爆弾は "
+"``VR_Interactable_Rigidbody`` を拡張するため、VRコントローラーはこのオブジェ"
+"クトが対話可能であり、\\ ``VR_Interactable_Rigidbody`` で定義された関数がこの"
+"オブジェクトをVRコントローラーで保持しているときに呼び出すことができることを"
+"認識します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:669
 msgid ""
 "``bomb_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node that is used for the non-exploded bomb."
 msgstr ""
+"``bomb_mesh``: 爆発しない爆弾に使用される :ref:`MeshInstance "
+"<class_MeshInstance>` ノードを保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:670
 msgid ""
 "``FUSE_TIME``: A constant to define how long the fuse will 'burn' before the "
 "bomb explodes"
 msgstr ""
+"``FUSE_TIME``: 爆弾が爆発する前にヒューズが「燃える」時間を定義する定数"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:671
 msgid ""
 "``fuse_timer``: A variable to hold the length of time that has passed since "
 "the bomb's fuse has started to burn."
 msgstr ""
+"``fuse_timer``: 爆弾のヒューズが燃え始めてから経過した時間の長さを保持する変"
+"数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:672
 msgid ""
 "``explosion_area``: A variable to hold the :ref:`Area <class_Area>` node "
 "used to detect objects within the bomb's explosion."
 msgstr ""
+"``explosion_area``: 爆弾の爆発内のオブジェクトを検出するために使用される :"
+"ref:`Area <class_Area>` ノードを保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:673
 msgid ""
 "``EXPLOSION_DAMAGE``: A constant to define how much damage is applied with "
 "the bomb explodes."
 msgstr ""
+"``EXPLOSION_DAMAGE``: 爆弾の爆発でどの程度のダメージが適用されるかを定義する"
+"定数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:674
 msgid ""
@@ -877,34 +1193,44 @@ msgid ""
 "scene after it explodes. This value should be the same as the ``lifetime`` "
 "property of the explosion :ref:`Particles <class_Particles>` node."
 msgstr ""
+"``EXPLOSION_TIME``: 爆弾が爆発した後、シーン内で爆弾が持続する時間を定義する"
+"定数。この値は、爆発 :ref:`Particles <class_Particles>` ノードの "
+"``lifetime`` プロパティと同じでなければなりません。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:675
 msgid ""
 "``explosion_timer`` A variable to hold the length of time that has passed "
 "since the bomb exploded."
 msgstr ""
+"``explosion_timer``: 爆弾が爆発してから経過した時間の長さを保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:676
 msgid "``exploded``: A variable to hold whether the bomb has exploded or not."
-msgstr ""
+msgstr "``exploded``: 爆弾が爆発したかどうかを保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:677
 msgid ""
 "``COLLISION_FORCE``: A constant that defines the amount of force that is "
 "applied to :ref:`RigidBody <class_RigidBody>` nodes when the bomb explodes."
 msgstr ""
+"``COLLISION_FORCE``: 爆弾が爆発したときに :ref:`RigidBody <class_RigidBody>` "
+"ノードに適用される力の量を定義する定数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:678
 msgid ""
 "``fuse_particles``: A variable to hold a reference to the :ref:`Particles "
 "<class_Particles>` node used for the bomb's fuse."
 msgstr ""
+"``fuse_particles``: 爆弾のヒューズに使用される :ref:`Particles "
+"<class_Particles>` ノードへの参照を保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:679
 msgid ""
 "``explosion_particles``: A variable to hold a reference to the :ref:"
 "`Particles <class_Particles>` node used for the bomb's explosion."
 msgstr ""
+"``explosion_particles``: 爆弾の爆発に使用される :ref:`Particles "
+"<class_Particles>` ノードへの参照を保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:680
 msgid ""
@@ -912,12 +1238,16 @@ msgid ""
 "`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` node used for the "
 "explosion sound."
 msgstr ""
+"``explosion_sound``: 爆発音に使用される :ref:`AudioStreamPlayer3D "
+"<class_AudioStreamPlayer3D>` ノードへの参照を保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:686
 msgid ""
 "The ``_ready`` function first gets all of the nodes from the bomb scene and "
 "assigns them to their respective class variables for later use."
 msgstr ""
+"``_ready`` 関数は最初に爆弾シーンからすべてのノードを取得し、後で使用するため"
+"にそれぞれのクラス変数に割り当てます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:688
 msgid ""
@@ -928,12 +1258,20 @@ msgid ""
 "not disable ``_physics_process``, the bomb's fuse would start before the "
 "user has a chance to get to the bomb."
 msgstr ""
+"それから ``set_physics_process`` を呼び出して ``false`` を渡すので "
+"``_physics_process`` は実行されません。これを行う理由は、\\ "
+"``_physics_process`` のコードがヒューズの燃焼と爆弾の爆発を開始するためです。"
+"これは、ユーザーが爆弾と対話するときにのみ行いたい事です。\\ "
+"``_physics_process`` を無効にしないと、ユーザーが爆弾に到達する前に爆弾の"
+"ヒューズが起動します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:696
 msgid ""
 "The ``_physics_process`` function first checks to see if ``fuse_timer`` is "
 "less than ``FUSE_TIME``. If it is, then the bomb's fuse is still burning."
 msgstr ""
+"``_physics_process`` 関数はまず ``fuse_timer`` が ``FUSE_TIME`` よりも小さい"
+"かどうかを確認します。もしそうなら、爆弾のヒューズはまだ燃えています。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:698
 msgid ""
@@ -943,6 +1281,11 @@ msgid ""
 "``fuse_timer`` is more than or equal to ``FUSE_TIME``, then the fuse has "
 "just finished and we need to explode the bomb."
 msgstr ""
+"爆弾のヒューズがまだ燃えている場合は、時間 ``delta`` を ``fuse_timer`` 変数に"
+"追加します。次に、\\ ``delta`` を追加したので、\\ ``fuse_timer`` が "
+"``FUSE_TIME`` 以上であるかどうかを確認します。\\ ``fuse_timer`` が "
+"``FUSE_TIME`` 以上の場合、ヒューズはちょうど燃え終わったので、爆弾を爆発させ"
+"る必要があります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:701
 msgid ""
@@ -955,6 +1298,14 @@ msgid ""
 "it look like the bomb exploded, we hide the bomb :ref:`MeshInstance "
 "<class_MeshInstance>` node by setting ``bomb_mesh.visible`` to ``false``."
 msgstr ""
+"爆弾を爆発させるには、まず ``fuse_particles`` で ``emitting`` を ``false`` に"
+"設定して、ヒューズのパーティクルの放出を停止します。それから、爆発 :ref:"
+"`Particles <class_Particles>` ノード ``explosion_particles`` の ``one_shot`` "
+"を ``true`` に設定することで、単一ショットですべてのパーティクルを放出するよ"
+"うに指示します。その後、\\ ``explosion_particles`` で ``emission`` を "
+"``true`` に設定し、爆弾が爆発したようすを見せます。爆弾が爆発したように見せる"
+"ために、\\ ``bomb_mesh.visible`` を ``false`` に設定して、爆弾 :ref:"
+"`MeshInstance <class_MeshInstance>` ノードは非表示にします。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:705
 msgid ""
@@ -963,6 +1314,10 @@ msgid ""
 "``0``. We also change the :ref:`RigidBody <class_RigidBody>` mode to "
 "``MODE_STATIC`` so the bomb :ref:`RigidBody <class_RigidBody>` does not move."
 msgstr ""
+"爆弾が物理世界の他のオブジェクトと衝突しないように、爆弾の "
+"``collision_layer`` および ``collision_mask`` プロパティを ``0`` に設定しま"
+"す。また、\\ :ref:`RigidBody <class_RigidBody>` モードを ``MODE_STATIC`` に変"
+"更して、爆弾 :ref:`RigidBody <class_RigidBody>` が移動しないようにします。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:708
 msgid ""
@@ -973,6 +1328,11 @@ msgid ""
 "nodes within the :ref:`Area <class_Area>` node, which is exactly what we are "
 "looking for."
 msgstr ""
+"次に、\\ ``explosion_area`` ノード内のすべての :ref:`PhysicsBody "
+"<class_PhysicsBody>` ノードを取得する必要があります。これを行うには、forルー"
+"プで ``get_overlapping_bodies`` を使用します。\\ ``get_overlapping_bodies`` "
+"関数は :ref:`Area <class_Area>` ノード内の :ref:`PhysicsBody "
+"<class_PhysicsBody>` ノードの配列を返します。これはまさに探しているものです。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:713
 msgid ""
@@ -982,6 +1342,11 @@ msgid ""
 "``explosion_area`` could potentially detect the ``Bomb`` :ref:`RigidBody "
 "<class_RigidBody>` as a PhysicsBody within the explosion area."
 msgstr ""
+"``body`` と呼ばれる変数に格納する各 :ref:`PhysicsBody <class_PhysicsBody>` "
+"ノードについて、それが ``self`` と等しいかどうかを確認します。これは、\\ "
+"``explosion_area`` が ``Bomb`` :ref:`RigidBody <class_RigidBody>` 自体を爆発"
+"領域内のPhysicsBodyとして検出する可能性があるため、爆弾が誤って爆発しないよう"
+"にするためです。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:716
 msgid ""
@@ -992,6 +1357,11 @@ msgid ""
 "call it and pass ``EXPLOSION_DAMAGE`` to it so it takes damage from the "
 "explosion."
 msgstr ""
+":ref:`PhysicsBody <class_PhysicsBody>` ノード ``body`` が爆弾でない場合、ま"
+"ず :ref:`PhysicsBody <class_PhysicsBody>` ノードに ``damage`` という関数があ"
+"るかどうかを確認します。\\ :ref:`PhysicsBody <class_PhysicsBody>` ノードに "
+"``damage`` という関数がある場合、それを呼び出して ``EXPLOSION_DAMAGE`` を渡"
+"し、爆発によるダメージを受けます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:719
 msgid ""
@@ -999,6 +1369,9 @@ msgid ""
 "a :ref:`RigidBody <class_RigidBody>`. If ``body`` is a :ref:`RigidBody "
 "<class_RigidBody>`, we want to move it when the bomb explodes."
 msgstr ""
+"次に、\\ :ref:`PhysicsBody <class_PhysicsBody>` ノードが :ref:`RigidBody "
+"<class_RigidBody>` であるかどうかを確認します。\\ ``body`` が :ref:"
+"`RigidBody <class_RigidBody>` の場合、爆弾が爆発したときに移動します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:722
 msgid ""
@@ -1011,6 +1384,13 @@ msgid ""
 "<class_RigidBody>` node. We store this :ref:`Vector3 <class_Vector3>` in a "
 "variable called ``direction_vector``."
 msgstr ""
+"爆弾が爆発したときに :ref:`RigidBody <class_RigidBody>` ノードを移動するに"
+"は、まず爆弾から :ref:`RigidBody <class_RigidBody>` ノードへの方向を計算する"
+"必要があります。これを行うには、爆弾のグローバル位置 ``global_transform."
+"origin`` を :ref:`RigidBody <class_RigidBody>` のグローバル位置から減算しま"
+"す。これにより、爆弾から :ref:`RigidBody <class_RigidBody>` ノードを指す :"
+"ref:`Vector3 <class_Vector3>` が得られます。これを :ref:`Vector3 "
+"<class_Vector3>` を ``direction_vector`` という変数に保存します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:726
 msgid ""
@@ -1018,6 +1398,9 @@ msgid ""
 "from the bomb by using the ``length`` function on ``direction_vector``. We "
 "store the distance in a variable called ``bomb_distance``."
 msgstr ""
+"次に、\\ ``direction_vector`` の ``length`` 関数を使用して、\\ :ref:"
+"`RigidBody <class_RigidBody>` が爆弾からの距離を計算します。距離を "
+"``bomb_distance`` と呼ばれる変数に保存します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:729
 msgid ""
@@ -1027,6 +1410,11 @@ msgid ""
 "``collision_force``. This will make it so if the :ref:`RigidBody "
 "<class_RigidBody>` node is closer to the bomb, it will be pushed farther."
 msgstr ""
+"次に、\\ ``COLLISION_FORCE`` を ``bomb_distance`` で割って "
+"``collision_force`` を掛けることで、爆弾が爆発したときに爆弾が :ref:"
+"`RigidBody <class_RigidBody>` ノードに適用される力の量を計算します。これによ"
+"り、\\ :ref:`RigidBody <class_RigidBody>` ノードが爆弾により近い場合、より遠"
+"くに押し出されます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:732
 msgid ""
@@ -1036,6 +1424,10 @@ msgid ""
 "normalized`` as the force. This will send the :ref:`RigidBody "
 "<class_RigidBody>` node flying when the bomb explodes."
 msgstr ""
+"最後に、\\ ``apply_impulse`` 関数を使用して :ref:`RigidBody "
+"<class_RigidBody>` ノードを押し出します。\\ ``Vector3`` の位置をゼロにし、\\ "
+"``collision_force`` に ``direction_vector.normalized`` を力として掛けます。こ"
+"れにより、爆弾が爆発したときに ``RigidBody`` ノードが飛んで行きます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:737
 msgid ""
@@ -1044,12 +1436,18 @@ msgid ""
 "``exploded`` variable to ``true`` so the code knows the bomb exploded and "
 "call ``play`` on ``explosion_sound`` so the sound of an explosion is played."
 msgstr ""
+"``explosion_area`` 内のすべての :ref:`PhysicsBody <class_PhysicsBody>` ノード"
+"をループした後、\\ ``exploded`` 変数を ``true`` に設定し、コードが爆弾を認識"
+"して呼び出す``explosion_sound`` で ``play`` を実行すると、爆発の音が再生され"
+"ます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:742
 msgid ""
 "Alright, the next section of code starts by first checking if ``exploded`` "
 "is equal to ``true``."
 msgstr ""
+"さて、コードの次のセクションは、まず ``exploded`` が ``true`` に等しいかどう"
+"かをチェックすることから始まります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:744
 msgid ""
@@ -1058,12 +1456,17 @@ msgid ""
 "add time, ``delta``, to ``explosion_timer`` so we can track how long it has "
 "been since the bomb has exploded."
 msgstr ""
+"``exploded`` が ``true`` に等しい場合、爆弾は爆発パーティクルが終了するのを"
+"待ってから、それ自体を解放/破棄します。爆弾が爆発してからの時間を追跡できるよ"
+"うに、\\ ``explosion_timer`` に時間 ``delta`` を加算します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:747
 msgid ""
 "If ``explosion_timer`` is greater than or equal to ``EXPLOSION_TIME`` after "
 "we added ``delta``, then the explosion timer just finished."
 msgstr ""
+"``delta`` を追加した後に ``explosion_timer`` が ``EXPLOSION_TIME`` 以上である"
+"場合は、ちょうど爆発タイマーが終了しています。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:749
 msgid ""
@@ -1073,6 +1476,11 @@ msgid ""
 "the ``monitoring`` property was true. To make sure this doesn't happen, we "
 "simply set ``monitoring`` to false on ``explosion_area``."
 msgstr ""
+"爆発タイマーがちょうど終了した場合、\\ ``explosion_area.monitoring`` を "
+"``false`` に設定します。これを行う理由は、\\ ``monitoring`` プロパティがtrue"
+"のときに :ref:`Area <class_Area>` ノードを解放または削除したときにエラーを出"
+"力するバグがあったためです。これが起こらないようにするには、\\ "
+"``explosion_area`` で ``monitoring`` をfalseに設定するだけです。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:752
 msgid ""
@@ -1086,12 +1494,23 @@ msgid ""
 "we set ``controller.grab_raycast.visible`` to ``true`` so the 'laser sight' "
 "for the grab raycast is visible."
 msgstr ""
+"次に、\\ ``controller`` 変数が ``null`` と等しくないかどうかを確認することに"
+"より、爆弾がVRコントローラーによって保持されているかどうかを確認します。爆弾"
+"がVRコントローラーによって保持されている場合、VRコントローラーの "
+"``held_object`` プロパティ ``controller`` を ``null`` に設定します。VRコント"
+"ローラーはもはや何も保持していないため、\\ ``controller.hand_mesh.visible`` "
+"を ``true`` に設定することで、VRコントローラーのハンドメッシュを表示します。"
+"次に、VRコントローラーのグラブモードが ``RAYCAST`` であるかどうかを確認"
+"し、\\ ``controller.grab_raycast.visible`` を ``true`` に設定して、grab "
+"raycastの ``レーザーサイト`` を可視化します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:757
 msgid ""
 "Finally, regardless if the bomb is being held by a VR controller or not, we "
 "call ``queue_free`` so the bomb scene is freed/removed from the scene."
 msgstr ""
+"最後に、爆弾がVRコントローラーに保持されているかどうかに関係なく、\\ "
+"``queue_free`` を呼び出して、爆弾のシーンをシーンから解放/削除します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:762
 msgid ""
@@ -1099,21 +1518,28 @@ msgid ""
 "``true`` so the code in ``_physics_process`` starts executing. This will "
 "start the bomb's fuse and eventually lead to the bomb exploding."
 msgstr ""
+"最初に ``interact`` 関数が ``set_physics_process`` を呼び出して ``true`` を渡"
+"すので、\\ ``_physics_process`` のコードが実行を開始します。これは爆弾の"
+"ヒューズを開始し、最終的に爆弾の爆発につながります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:765
 msgid ""
 "Finally, we start the fuse particles by setting ``fuse_particles.visible`` "
 "to ``true``."
 msgstr ""
+"最後に、\\ ``fuse_particles.visible`` を ``true`` に設定して、ヒューズパー"
+"ティクルを開始します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:769
 msgid "Bomb finished"
-msgstr ""
+msgstr "爆弾完成"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:771
 msgid ""
 "Now the bomb is ready to go! You can find the bombs in the orange building."
 msgstr ""
+"これで爆弾の準備ができました！オレンジ色の建物で爆弾を見つけることができま"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:773
 msgid ""
@@ -1124,10 +1550,15 @@ msgid ""
 "the VR controllers, so it does not always work correctly and can lead "
 "inaccurately calculated velocities."
 msgstr ""
+"VRコントローラーの速度の計算方法により、より自然な投げのような動きの代わり"
+"に、突きのような動きを使用して爆弾を投げるのが最も簡単です。 VRコントローラー"
+"の速度を計算するために使用しているコードでは、投げのような動きの滑らかな曲線"
+"を追跡するのが難しいため、常に正しく動作するとは限らず、不正確に計算された速"
+"度につながる可能性があります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:780
 msgid "Adding a sword"
-msgstr ""
+msgstr "剣を追加する"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:782
 msgid ""
@@ -1135,10 +1566,13 @@ msgid ""
 "that can destroy targets. Let's add a sword so we can slice through the "
 "targets!"
 msgstr ""
+"最後に、ターゲットを破壊できる :ref:`RigidBody <class_RigidBody>` ベースの特"
+"別なノードを1つ追加しましょう。ターゲットをスライスできるように、剣を追加しま"
+"しょう！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:784
 msgid "Open up ``Sword.tscn``, which you can find in the ``Scenes`` folder."
-msgstr ""
+msgstr "``Scenes`` フォルダにある ``Sword.tscn`` を開きます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:786
 msgid ""
@@ -1149,6 +1583,12 @@ msgid ""
 "is an :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` node that holds "
 "a sound for the sword colliding with something."
 msgstr ""
+"ここではあまり多くのことはありません。ルート ``Sword`` のすべての子ノード :"
+"ref:`RigidBody <class_RigidBody>` ノードは、VRコントローラーがそれらを選択し"
+"たときに正しく配置されるように回転し、\\ :ref:`MeshInstance "
+"<class_MeshInstance>` があります剣を表示するためのノード、および何かと衝突す"
+"る剣の音を保持する :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` "
+"ノードがあります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:790
 msgid ""
@@ -1160,6 +1600,13 @@ msgid ""
 "`PhysicsBody <class_PhysicsBody>` nodes in the scene, but it will still be "
 "effected by :ref:`PhysicsBody <class_PhysicsBody>` nodes."
 msgstr ""
+"ただし、少し異なる点が1つあります。\\ ``Damage_Body`` と呼ばれる :ref:"
+"`KinematicBody <class_KinematicBody>` ノードがあります。見てみると、コリジョ"
+"ンレイヤー上ではなく、単一のコリジョンマスク上にあることがわかります。これ"
+"は、\\ :ref:`KinematicBody <class_KinematicBody>` がシーン内の他の :ref:"
+"`PhysicsBody <class_PhysicsBody>` ノードに影響を与えることはありません"
+"が、\\ :ref:`PhysicsBody <class_PhysicsBody>` ノードの影響は引き続き受けま"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:794
 msgid ""
@@ -1167,6 +1614,8 @@ msgid ""
 "<class_KinematicBody>` node to detect the collision point and normal when "
 "the sword collides with something in the scene."
 msgstr ""
+"``Damage_Body`` :ref:`KinematicBody <class_KinematicBody>` ノードを使用して、"
+"剣がシーン内の何かと衝突したときの衝突点と法線を検出します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:796
 msgid ""
@@ -1176,6 +1625,10 @@ msgid ""
 "<class_KinematicBody>` this way means we can detect exactly where ths sword "
 "collided with other :ref:`PhysicsBody <class_PhysicsBody>` nodes."
 msgstr ""
+"これはおそらくパフォーマンスの観点から衝突情報を取得する最良の方法ではありま"
+"せんが、後処理に使用できる多くの情報を提供します！この方法で :ref:"
+"`KinematicBody <class_KinematicBody>` を使用すると、剣が他の :ref:"
+"`PhysicsBody <class_PhysicsBody>` ノードと衝突した場所を正確に検出できます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:799
 msgid ""
@@ -1183,10 +1636,13 @@ msgid ""
 "``Sword`` :ref:`RigidBody <class_RigidBody>` node and make a new script "
 "called ``Sword.gd``. Add the following code:"
 msgstr ""
+"それは本当に剣のシーンについてふさわしい唯一の注意事項です。\\ ``Sword`` :"
+"ref:`RigidBody <class_RigidBody>` ノードを選択し、\\ ``Sword.gd`` という新し"
+"いスクリプトを作成します。次のコードを追加します:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:840
 msgid "Let's go over how this script works!"
-msgstr ""
+msgstr "このスクリプトの仕組みを見ていきましょう！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:844
 msgid "Explaining the sword code"
@@ -1200,6 +1656,11 @@ msgid ""
 "``VR_Interactable_Rigidbody`` can be called when this object is held by a VR "
 "controller."
 msgstr ""
+"他の特別な :ref:`RigidBody <class_RigidBody>` ノードと同様に、剣は "
+"``VR_Interactable_Rigidbody`` を拡張するため、VRコントローラーはこのオブジェ"
+"クトが対話可能であり、\\ ``VR_Interactable_Rigidbody`` で定義された関数がこの"
+"オブジェクトがVRコントローラーに保持されているときに呼び出せることを認識しま"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:851
 msgid ""
@@ -1207,6 +1668,8 @@ msgid ""
 "This damage is applied  to every object in the sword on every "
 "``_physics_process`` call"
 msgstr ""
+"``SWORD_DAMAGE``: 剣が与えるダメージの量を定義する定数。このダメージは、すべ"
+"ての ``_physics_process`` 呼び出しで剣のすべてのオブジェクトに適用されます"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:852
 msgid ""
@@ -1214,6 +1677,9 @@ msgid ""
 "ref:`RigidBody <class_RigidBody>` nodes when the sword collides with a :ref:"
 "`PhysicsBody <class_PhysicsBody>`."
 msgstr ""
+"``COLLISION_FORCE``: 剣が :ref:`PhysicsBody <class_PhysicsBody>` と衝突したと"
+"きに :ref:`RigidBody <class_RigidBody>` ノードに適用される力の量を定義する定"
+"数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:853
 msgid ""
@@ -1221,6 +1687,9 @@ msgid ""
 "<class_KinematicBody>` node used to detect whether the sword is stabbing a :"
 "ref:`PhysicsBody <class_PhysicsBody>` node or not."
 msgstr ""
+"``damage_body``: 剣が :ref:`PhysicsBody <class_PhysicsBody>` ノードを突き刺し"
+"ているかどうかを検出するために使用される :ref:`KinematicBody "
+"<class_KinematicBody>` ノードを保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:854
 msgid ""
@@ -1228,6 +1697,8 @@ msgid ""
 "<class_AudioStreamPlayer3D>` node used to play a sound when the sword "
 "collides with something."
 msgstr ""
+"``sword_noise``: 剣が何かと衝突したときにサウンドを再生するために使用される :"
+"ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` ノードを保持する変数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:860
 msgid ""
@@ -1238,6 +1709,12 @@ msgid ""
 "``add_collision_exception_with`` on ``damage_body`` and pass ``self`` so the "
 "sword will not be detected."
 msgstr ""
+"``_ready`` 関数で行っているのは、\\ ``Damage_Body`` :ref:`KinematicBody "
+"<class_KinematicBody>` ノードを取得し、それを ``damage_body`` に割り当てるこ"
+"とです。剣が剣のルート :ref:`RigidBody <class_RigidBody>` ノードとの衝突を検"
+"出しないようにするため、\\ ``damage_body`` で "
+"``add_collision_exception_with`` を呼び出して ``self`` を渡します。これで剣は"
+"検出されません。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:864
 msgid ""
@@ -1245,6 +1722,8 @@ msgid ""
 "node for the sword collision sound and apply it to the ``sword_noise`` "
 "variable."
 msgstr ""
+"最後に、剣衝突音の :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` "
+"ノードを取得し、それを ``sword_noise`` 変数に適用します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:870
 msgid ""
@@ -1257,6 +1736,13 @@ msgid ""
 "ref:`KinematicBody <class_KinematicBody>` generates collision info without "
 "actually causing any collisions within the collision world."
 msgstr ""
+"まず、剣が何かと衝突しているかどうかを判断する必要があります。これを行うに"
+"は、\\ ``damage_body`` ノードの ``move_and_collide`` 関数を使用します。\\ "
+"``move_and_collide`` の通常の使用方法とは異なり、速度を渡すのではなく、空の :"
+"ref:`Vector3 <class_Vector3>` を渡します。\\ ``damage_body`` ノードを移動させ"
+"たくないので、\\ ``test_only`` 引数(4番目の引数)を ``true`` に設定して、\\ :"
+"ref:`KinematicBody <class_KinematicBody>` が実際に衝突ワールド内で衝突を引き"
+"起こすことなく衝突情報を生成するようにします。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:875
 msgid ""
@@ -1265,6 +1751,10 @@ msgid ""
 "for detecting collisions on the sword. We assign the return value of "
 "``move_and_collide`` to a variable called ``collision_results``."
 msgstr ""
+"``move_and_collide`` 関数は、剣の衝突を検出するために必要なすべての情報を含"
+"む :ref:`KinematicCollision <class_KinematicCollision>` クラスを返します。\\ "
+"``move_and_collide`` の戻り値を ``collision_results`` という変数に割り当てま"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:878
 msgid ""
@@ -1272,6 +1762,9 @@ msgid ""
 "``collision_results`` is not equal to ``null``, then we know that the sword "
 "has collided with something."
 msgstr ""
+"次に、\\ ``collision_results`` が ``null`` と等しくないかどうかを確認しま"
+"す。\\ ``collision_results`` が ``null`` と等しくない場合、剣が何かと衝突して"
+"いることがわかります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:880
 msgid ""
@@ -1281,6 +1774,11 @@ msgid ""
 "function called ``damage_body``, we call it and pass the amount of damage "
 "the sword does, ``SWORD_DAMAGE``, to it."
 msgstr ""
+"次に、剣が衝突した :ref:`PhysicsBody <class_PhysicsBody>` が ``has_method`` "
+"関数を使用して ``damage`` という関数/メソッドを持っているかどうかを確認しま"
+"す。\\ :ref:`PhysicsBody <class_PhysicsBody>` に ``damage_body`` という関数が"
+"ある場合、それを呼び出して、剣が与えるダメージ量 ``SWORD_DAMAGE`` を渡しま"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:883
 msgid ""
@@ -1290,6 +1788,11 @@ msgid ""
 "see if the sword is being held by a VR controller or not by checking to see "
 "if ``controller`` is equal to ``null``."
 msgstr ""
+"次に、剣が衝突した :ref:`PhysicsBody <class_PhysicsBody>` が :ref:`RigidBody "
+"<class_RigidBody>` であるかどうかを確認します。剣が衝突したものが :ref:"
+"`RigidBody <class_RigidBody>` ノードである場合、\\ ``controller`` が "
+"``null`` に等しいかどうかを確認することで、剣がVRコントローラーに保持されてい"
+"るかどうかを確認します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:886
 msgid ""
@@ -1303,6 +1806,14 @@ msgid ""
 "``collision_normal`` multiplied by the ``linear_velocity`` of the sword's :"
 "ref:`RigidBody <class_RigidBody>` node multiplied by ``COLLISION_FORCE``."
 msgstr ""
+"剣がVRコントローラーによって保持されていない場合、\\ ``controller`` は "
+"``null`` に等しいため、剣が ``apply_impulse`` 関数を使用して衝突した :ref:"
+"`RigidBody <class_RigidBody>` ノードを移動します。\\ ``apply_impulse`` 関数"
+"の ``position`` には、\\ ``collision_results`` の :ref:`KinematicCollision "
+"<class_KinematicCollision>` クラス内に格納されている ``collision_position`` "
+"変数を使用します。\\ ``apply_impulse`` 関数の速度については、\\ "
+"``collision_normal`` に剣の :ref:`RigidBody <class_RigidBody>` ノードの "
+"``linear_velocity`` と ``COLLISION_FORCE`` を掛けた値を使用します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:891
 msgid ""
@@ -1316,6 +1827,14 @@ msgid ""
 "``collision_normal`` multiplied by the VR controller's velocity multiplied "
 "by ``COLLISION_FORCE``."
 msgstr ""
+"剣がVRコントローラーによって保持されている場合、つまり\\ ``controller`` が "
+"``null`` と等しくない場合、剣が　 ``apply_impulse`` 関数を使用して衝突した :"
+"ref:`RigidBody <class_RigidBody>` ノードを移動します`。\\ ``apply_impulse`` "
+"関数の ``position`` には、\\ ``collision_results`` の :ref:"
+"`KinematicCollision <class_KinematicCollision>` クラス内に格納されている "
+"``collision_position`` 変数を使用します。\\ ``apply_impulse`` 関数の "
+"``velocity`` には、\\ ``collision_normal`` にVRコントローラーの速度を掛け、さ"
+"らに\\ ``COLLISION_FORCE`` を掛けます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:895
 msgid ""
@@ -1323,24 +1842,29 @@ msgid ""
 "a :ref:`RigidBody <class_RigidBody>` or not, we play the sound of the sword "
 "colliding with something by calling ``play`` on ``sword_noise``."
 msgstr ""
+"最後に、\\ :ref:`PhysicsBody <class_PhysicsBody>` が :ref:`RigidBody "
+"<class_RigidBody>` であるかどうかに関係なく、\\ ``sword_noise`` で ``play`` "
+"を呼び出すことで、何かと衝突する剣の音を再生します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:900
 msgid "Sword finished"
-msgstr ""
+msgstr "完成した剣"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:904
 msgid ""
 "With that done, you can now slice through the targets! You can find the "
 "sword in the corner in between the shotgun and the pistol."
 msgstr ""
+"これで、ターゲットをスライスできます！ショットガンとピストルの間の隅にある剣"
+"を見つけることができます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:909
 msgid "Updating the target UI"
-msgstr ""
+msgstr "ターゲットUIの更新"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:911
 msgid "Let's update the UI as the sphere targets are destroyed."
-msgstr ""
+msgstr "球体ターゲットが破壊されるとUIを更新しましょう。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:913
 msgid ""
@@ -1349,6 +1873,10 @@ msgid ""
 "keep this tutorial from becoming too long, we will not be covering the scene "
 "setup in this tutorial."
 msgstr ""
+"``Scenes``フォルダにある ``Main_VR_GUI.tscn`` を開きます。必要に応じてシーン"
+"のセットアップ方法を自由に確認してください。ただし、このチュートリアルが長く"
+"なりすぎないように、このチュートリアルではシーンのセットアップについては説明"
+"しません。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:916
 msgid ""
@@ -1356,10 +1884,13 @@ msgid ""
 "``Base_Control`` node. Add a new script called ``Base_Control.gd``, and add "
 "the following:"
 msgstr ""
+"``GUI`` :ref:`Viewport <class_Viewport>` ノードを展開し、 ``Base_Control`` "
+"ノードを選択します。\\ ``Base_Control.gd`` という新しいスクリプトを追加し、次"
+"を追加します:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:937
 msgid "Let's go over how this script works real quick."
-msgstr ""
+msgstr "このスクリプトが実際にどのようにすばやく機能するかを見ていきましょう。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:939
 msgid ""
@@ -1368,6 +1899,10 @@ msgid ""
 "variable. Next, we get ``Game.gd`` by using ``get_tree().root`` and assign "
 "``sphere_ui`` to this script."
 msgstr ""
+"まず、\\ ``_ ready`` で、残りの球の数を示す :ref:`Label <class_Label>` を取得"
+"し、それを ``sphere_count_label`` クラス変数に割り当てます。次に、 \\ "
+"``get_tree().root`` を使用して ``Game.gd`` を取得し、\\ ``sphere_ui`` をこの"
+"スクリプトに割り当てます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:942
 msgid ""
@@ -1376,16 +1911,22 @@ msgid ""
 "spheres are still left in the world. If there are no more spheres remaining, "
 "we change the text and congratulate the player."
 msgstr ""
+"``update_ui`` では、球体 :ref:`Label <class_Label>` のテキストを変更します。"
+"少なくとも1つの球体が残っている場合は、テキストを変更して、まだ世界に残ってい"
+"る球体の数を表示します。球が残っていない場合は、テキストを変更してプレイヤー"
+"を祝福します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:948
 msgid "Adding the final special RigidBody"
-msgstr ""
+msgstr "最後の特別なRigidBodyの追加"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:950
 msgid ""
 "Finally, before we finish this tutorial, let's add a way to reset the game "
 "while in VR."
 msgstr ""
+"最後に、このチュートリアルを完了する前に、VRでゲームをリセットする方法を追加"
+"しましょう。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:952
 msgid ""
@@ -1393,10 +1934,13 @@ msgid ""
 "``Reset_Box`` :ref:`RigidBody <class_RigidBody>` node and make a new script "
 "called ``Reset_Box.gd``. Add the following code:"
 msgstr ""
+"``Scenes`` にある ``Reset_Box.tscn`` を開きます。\\ ``Reset_Box`` :ref:"
+"`RigidBody <class_RigidBody>` ノードを選択し ``Reset_Box.gd`` という新しいス"
+"クリプトを作成します。次のコードを追加します:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:990
 msgid "Let's quickly go over how this script works."
-msgstr ""
+msgstr "このスクリプトがどのように機能するかを簡単に見てみましょう。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:994
 msgid "Explaining the reset box code"
@@ -1407,6 +1951,8 @@ msgid ""
 "Like with the other special :ref:`RigidBody <class_RigidBody>`-based objects "
 "we've created, the reset box extends ``VR_Interactable_Rigidbody``."
 msgstr ""
+"作成した他の特別な :ref:`RigidBody <class_RigidBody>` ベースのオブジェクトと"
+"同様に、リセットボックスは ``VR_Interactable_Rigidbody`` を拡張します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:998
 msgid ""
@@ -1418,6 +1964,12 @@ msgid ""
 "defines how far the reset box has to be away from it's initial position "
 "before the reset timer starts."
 msgstr ""
+"``start_transform`` クラス変数は、ゲームの開始時にリセットボックスのグローバ"
+"ル変換を格納します。\\ ``reset_timer`` クラス変数は、リセットボックスの位置が"
+"移動してから経過した時間の長さを保持します。\\ ``RESET_TIME`` 定数は、リセッ"
+"トボックスがリセットされるまで待機する時間の長さを定義し、\\ "
+"``RESET_MIN_DISTANCE`` 定数は、リセットタイマーが開始する前にリセットボックス"
+"が初期位置からどれだけ離れている必要があるかを定義します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1002
 msgid ""
@@ -1426,6 +1978,10 @@ msgid ""
 "we can reset the position, rotation, and scale of the reset box object to "
 "this initial transform when enough time has passed."
 msgstr ""
+"``_ready`` 関数では、シーンの開始時にリセット位置の ``global_transform`` を保"
+"存するだけです。これは、十分な時間が経過したときに、リセットボックスオブジェ"
+"クトの位置、回転、スケールをこの初期transformにリセットできるようにするためで"
+"す。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1005
 msgid ""
@@ -1437,6 +1993,12 @@ msgid ""
 "so the reset box is back in its initial position. We then set "
 "``reset_timer`` to ``0``."
 msgstr ""
+"``_physics_process`` 関数では、コードはリセットボックスの現在位置に対するリ"
+"セットボックスの初期位置が ``RESET_MIN_DISTANCE`` よりも遠いかどうかを確認し"
+"ます。さらに遠い場合は、\\ ``reset_timer`` に時間 ``delta`` を加算し始めま"
+"す。\\ ``reset_timer`` が ``RESET_TIME`` 以上になると、\\ "
+"``global_transform`` を ``start_transform`` にリセットし、リセットボックスが"
+"初期位置に戻るようにします。次に、\\ ``reset_timer`` を ``0`` に設定します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1009
 msgid ""
@@ -1444,6 +2006,9 @@ msgid ""
 "``get_tree().change_scene``. This will reload the game scene, resetting "
 "everything."
 msgstr ""
+"``interact`` 関数は、単に ``get_tree().change_scene`` を使用して ``Game."
+"tscn`` シーンをリロードします。これにより、ゲームシーンがリロードされ、すべて"
+"がリセットされます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1011
 msgid ""
@@ -1452,30 +2017,37 @@ msgid ""
 "position/rotation. Then ``reset_timer`` is set to ``0`` so the timer is "
 "reset."
 msgstr ""
+"最後に、\\ ``dropped`` 関数は ``global_transform`` を ``start_transform`` の"
+"初期変換にリセットするので、リセットボックスは初期位置/回転を保持します。次"
+"に、\\ ``reset_timer`` が ``0`` に設定され、タイマーがリセットされます。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1016
 msgid "Reset box finished"
-msgstr ""
+msgstr "リセット ボックスが完了しました"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1018
 msgid ""
 "With that done, when you grab and interact with the reset box, the entire "
 "scene will reset/restart and you can destroy all the targets again!"
 msgstr ""
+"これが完了したら、リセットボックスをつかんで操作すると、シーン全体がリセット/"
+"再起動され、すべてのターゲットを再び破壊できます！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1020
 msgid ""
 "Resetting the scene abruptly without any sort of transition can lead to "
 "discomfort in VR."
 msgstr ""
+"なんらかの移行をせずにシーンを突然リセットすると、VRに不快感が生じる可能性が"
+"あります。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1025
 msgid "Final notes"
-msgstr ""
+msgstr "最終ノート"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1029
 msgid "Whew! That was a lot of work."
-msgstr ""
+msgstr "ふう！これは大変な仕事でした。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1031
 msgid ""
@@ -1486,6 +2058,11 @@ msgid ""
 "can be expanded on to make puzzle games, action games, story-based games, "
 "and more!"
 msgstr ""
+"これで、複数の異なるタイプの特別な :ref:`RigidBody <class_RigidBody>` ベース"
+"のノードが使用および拡張できる、完全に機能するVRプロジェクトができました。こ"
+"れがGodotでフル機能のVRゲームを作成するための入門書として役立つことを願ってい"
+"ます！このチュートリアルで詳しく説明するコードと概念を拡張して、パズルゲー"
+"ム、アクションゲーム、ストーリーベースのゲームなどを作成できます！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1035
 msgid ""
@@ -1493,3 +2070,6 @@ msgid ""
 "`OpenVR GitHub repository <https://github.com/GodotVR/godot_openvr_fps>`_, "
 "under the releases tab!"
 msgstr ""
+"このチュートリアルシリーズの完成したプロジェクトは、リリースタブの下の "
+"`OpenVR GitHubリポジトリ <https://github.com/GodotVR/godot_openvr_fps>`_から"
+"ダウンロードできます！"

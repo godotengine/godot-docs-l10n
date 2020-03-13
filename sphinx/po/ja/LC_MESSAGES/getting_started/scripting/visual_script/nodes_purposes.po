@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -254,9 +254,10 @@ msgstr ""
 "ます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
+#, fuzzy
 msgid ""
-"If instead reading this value is desired, drag the node again but hold the "
-"*Control* key (or Command on Mac). This will create a getter:"
+"If instead reading this value is desired, drag the node again but hold :kbd:"
+"`Ctrl` (or :kbd:`Cmd` on macOS). This will create a getter:"
 msgstr ""
 "もしも、このノードの値を読み取る必要が有る場合は、 *Control* キー(またはMacの"
 "Command)を押したままノードをもう一度ドラッグします。これによりゲッター"
@@ -302,8 +303,8 @@ msgid ""
 msgstr ""
 "上記からわかるように、変数の型と初期値、およびいくつかのプロパティヒントを変"
 "更できます。 「エクスポート」オプションを選択すると、ノードを選択するときにこ"
-"の変数がインスペクターに表示されます。これにより、前の手順で説明した方法で他"
-"のスクリプトでも使用できるようになります。"
+"の変数がインスペクタに表示されます。これにより、前の手順で説明した方法で他の"
+"スクリプトでも使用できるようになります。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
 msgid ""
@@ -313,7 +314,8 @@ msgstr ""
 "スクリプトで変数を使用するには、キャンバスにドラッグしてゲッターを作成します:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
-msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
+#, fuzzy
+msgid "Likewise, hold :kbd:`Ctrl` (or :kbd:`Cmd` on macOS) to drop a setter:"
 msgstr ""
 "同様に、*Control* (Mac 上の*Command*) キーを押したまま、セッター(setter)をド"
 "ロップします:"
@@ -345,8 +347,8 @@ msgid ""
 "built-in node signals. This allows you to connect it from another script "
 "from another *Scene Node*:"
 msgstr ""
-"作成したシグナルは、組み込み済ノードのシグナルとともにインスペクターに表示さ"
-"れます。これにより、別の *Scene Node* の別のスクリプトから接続できます。"
+"作成したシグナルは、組み込み済ノードのシグナルとともにインスペクタに表示され"
+"ます。これにより、別の *Scene Node* の別のスクリプトから接続できます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:181
 msgid "Finally, to emit the signal, simply drag it to the canvas:"
@@ -376,7 +378,10 @@ msgstr ""
 "プの一覧が存在します:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:198
-msgid "Ctrl-F (Command-F on Mac) allows you to search the list."
+#, fuzzy
+msgid ""
+"Pressing :kbd:`Ctrl + F` (or :kbd:`Cmd + F` on macOS) allows you to search "
+"the list."
 msgstr "Ctrl + F (MacではCommand + F) を使用すると、リストを検索できます。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:200

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,12 +26,13 @@ msgid "Introduction"
 msgstr "はじめに"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
+#, fuzzy
 msgid ""
-"In this tutorial, you'll learn two different ways to create 2D animated "
-"characters. Typically, when you create or download an animated character, it "
-"will come in one of two ways: as individual images or as a single sprite "
-"sheet containing all the animation's frames. Depending on which type of "
-"assets you have, you can choose one of the following solutions."
+"In this tutorial, you'll learn how to create 2D animated characters with the "
+"AnimatedSprite class and the AnimationPlayer. Typically, when you create or "
+"download an animated character, it will come in one of two ways: as "
+"individual images or as a single sprite sheet containing all the animation's "
+"frames.  Both can be animated in Godot with the AnimatedSprite class."
 msgstr ""
 "このチュートリアルでは、2Dアニメーションキャラクターを作成する2つの異なる方法"
 "を学習します。通常、アニメーションキャラクターを作成またはダウンロードする場"
@@ -39,19 +40,25 @@ msgstr ""
 "メーションフレームを含む単一のスプライトシートとして。アセットのタイプに応じ"
 "て、次のソリューションのいずれかを選択できます。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:15
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:14
+#, fuzzy
 msgid ""
 "First, we'll use :ref:`AnimatedSprite <class_AnimatedSprite>` to animate a "
-"collection of individual images. Then, to use a sprite sheet, we'll use :ref:"
-"`AnimationPlayer <class_AnimationPlayer>` along with the *Animation* "
+"collection of individual images. Then we will animate a sprite sheet using "
+"this class.  Finally, we will learn another way to animate a sprite sheet "
+"with :ref:`AnimationPlayer <class_AnimationPlayer>` and the *Animation* "
 "property of :ref:`Sprite <class_Sprite>`."
 msgstr ""
-"最初に、AnimatedSpriteを使用して、個々の画像のコレクションをアニメーション化"
-"します。次に、スプライトシートを使用するには、AnimationPlayerとSpriteの"
-"Animationプロパティを使用します。"
+"最初に、\\ :ref:`AnimatedSprite <class_AnimatedSprite>` を使用して、個々の画"
+"像のコレクションをアニメーション化します。次に、スプライトシートを使用するに"
+"は、\\ :ref:`AnimationPlayer <class_AnimationPlayer>` と :ref:`Sprite "
+"<class_Sprite>` の *Animation* プロパティを使用します。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:20
-msgid "Art for the following examples by https://opengameart.org/users/ansimuz"
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:19
+#, fuzzy
+msgid ""
+"Art for the following examples by https://opengameart.org/users/ansimuz and "
+"by https://opengameart.org/users/tgfcoder"
 msgstr ""
 "次のサンプルのアートは https://opengameart.org/users/ansimuz から入手しました"
 
@@ -66,7 +73,7 @@ msgid ""
 "animation:"
 msgstr ""
 "このシナリオでは、キャラクターのアニメーションフレームを1つづつ含む複数の画像"
-"を使います。この例では、次のアニメーションを使用します。"
+"を使います。この例では、次のアニメーションを使用します:"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:31
 msgid ""
@@ -81,11 +88,11 @@ msgid ""
 "Unzip the images and place them in your project folder. Set up your scene "
 "tree with the following nodes:"
 msgstr ""
-"画像を解凍し、プロジェクトフォルダーに配置します。次のノードを使用してシーン"
-"ツリーを設定します。"
+"画像を解凍し、プロジェクトフォルダに配置します。次のノードを使用してシーンツ"
+"リーを設定します:"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:39
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:109
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:143
 msgid ""
 "The root node could also be :ref:`Area2D <class_Area2D>` or :ref:"
 "`RigidBody2D <class_RigidBody2D>`. The animation will still be made in the "
@@ -113,7 +120,7 @@ msgid ""
 "the bottom of the editor window:"
 msgstr ""
 "新しいSpriteFramesリソースをクリックすると、エディタウィンドウの下部に新しい"
-"パネルが表示されます。"
+"パネルが表示されます:"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:56
 msgid ""
@@ -122,8 +129,8 @@ msgid ""
 "of the animation from \"default\" to \"run\"."
 msgstr ""
 "左側のFileSystemドックから、8つの個別の画像をSpriteFramesパネルの中央部分にド"
-"ラッグします。左側で、アニメーションの名前を「デフォルト」から「run」に変更し"
-"ます。"
+"ラッグします。左側で、アニメーションの名前を \"default\" から \"run\" に変更"
+"します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:62
 msgid ""
@@ -131,18 +138,18 @@ msgid ""
 "now see the animation playing in the viewport. However, it is a bit slow. To "
 "fix this, change the *Speed (FPS)* setting in the SpriteFrames panel to 10."
 msgstr ""
-"インスペクターに戻り、\\ *Playing* プロパティのチェックボックスをオンにしま"
-"す。これで、アニメーションがビューポートで再生されます。しかし、それは少し遅"
-"いです。この問題を解決するには、SpriteFramesパネルの *Speed(FPS)* 設定を10に"
-"変更します。"
+"インスペクタに戻り、\\ *Playing* プロパティのチェックボックスをオンにします。"
+"これで、アニメーションがビューポートで再生されます。しかし、それは少し遅いで"
+"す。この問題を解決するには、SpriteFramesパネルの *Speed(FPS)* 設定を10に変更"
+"します。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:66
 msgid ""
 "You can add additional animations by clicking the \"New Animation\" button "
 "and adding additional images."
 msgstr ""
-"[新しいアニメーション]ボタンをクリックして画像を追加すると、アニメーションを"
-"追加できます。"
+"[新規アニメーション]ボタンをクリックして画像を追加すると、アニメーションを追"
+"加できます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:70
 msgid "Controlling the animation"
@@ -155,34 +162,105 @@ msgid ""
 "animation while the right arrow key is held, and stop it when the key is "
 "released."
 msgstr ""
-"アニメーションが完了すると、play()メソッドとstop()メソッドを使用して、コード"
-"でアニメーションを制御できます。右矢印キーを押したままアニメーションを再生"
-"し、キーを放したときにアニメーションを停止する簡単な例を次に示します。"
+"アニメーションが完了すると、\\ ``play()`` メソッドと ``stop()`` メソッドを使"
+"用して、コードでアニメーションを制御できます。右矢印キーを押したままアニメー"
+"ションを再生し、キーを放したときにアニメーションを停止する簡単な例を次に示し"
+"ます。"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:90
-msgid "Sprite sheet with AnimationPlayer"
-msgstr "アニメーションプレイヤーのスプライトシート"
+#, fuzzy
+msgid "Sprite sheet with AnimatedSprite"
+msgstr "AnimationPlayerのスプライトシート"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:92
 msgid ""
-"In the event you have a sprite sheet containing all of your animation "
-"frames, you can't easily use ``AnimatedSprite``. Instead, you can use a "
+"You can also easily animate from a sprite sheet with the class "
+"``AnimatedSprite``.  We will use this public domain sprite sheet:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:96
+#, fuzzy
+msgid ""
+"Right-click the image and choose \"Save Image As\" to download it, and then "
+"copy the image into your project folder."
+msgstr ""
+"画像を右クリックして[名前を付けて保存]を選択してダウンロードし、イメージをプ"
+"ロジェクトフォルダにコピーします。"
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:98
+#, fuzzy
+msgid ""
+"Set up your scene tree the same way you did previously when using individual "
+"images.  Select the ``AnimatedSprite`` and in its *SpriteFrames* property, "
+"select \"New SpriteFrames\"."
+msgstr ""
+"次に、\\ ``AnimatedSprite`` を選択し、その *SpriteFrames* プロパティで「新規 "
+"SpriteFrames」を選択します。"
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:101
+#, fuzzy
+msgid ""
+"Click on the new SpriteFrames resource.  This time, when the bottom panel "
+"appears, select \"Add frames from a Sprite Sheet\"."
+msgstr ""
+"新しいSpriteFramesリソースをクリックすると、エディタウィンドウの下部に新しい"
+"パネルが表示されます:"
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:105
+msgid "You will be prompted to open a file.  Select your sprite sheet."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:107
+msgid ""
+"A new window will open, showing your sprite sheet.  The first thing you will "
+"need to do is to change the number of vertical and horizontal images in your "
+"sprite sheet.  In this sprite sheet, we have four images horizontally and "
+"two images vertically."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:111
+msgid ""
+"Next, select the frames from the sprite sheet that you want to include in "
+"your animation.  We will select the top four, then click \"Add 4 frames\" to "
+"create the animation."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:115
+msgid ""
+"You will now see your animation under the list of animations in the bottom "
+"panel.  Double click on default to change the name of the animation to jump."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:119
+msgid ""
+"Finally, check Playing on the  AnimatedSprite in the inspector to see your "
+"frog jump!"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:125
+msgid "Sprite sheet with AnimationPlayer"
+msgstr "AnimationPlayerのスプライトシート"
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:127
+#, fuzzy
+msgid ""
+"Another way that you can animate when using a sprite sheet is to use a "
 "standard :ref:`Sprite <class_Sprite>` node to display the texture, and then "
-"animate the change from texture to texture with :ref:`AnimationPlayer "
+"animating the change from texture to texture with :ref:`AnimationPlayer "
 "<class_AnimationPlayer>`."
 msgstr ""
-"すべてのアニメーションフレームを含むスプライトシートがある場"
-"合、\\``AnimatedSprite`` を簡単に使用することはできません。代わりに、標準の :"
-"ref:`Sprite <class_Sprite>` ノードを使用してテクスチャを表示し、\\ :ref:"
+"すべてのアニメーションフレームを含むスプライトシートがある場合、\\ "
+"``AnimatedSprite`` を簡単に使用することはできません。代わりに、標準の :ref:"
+"`Sprite <class_Sprite>` ノードを使用してテクスチャを表示し、\\ :ref:"
 "`AnimationPlayer <class_AnimationPlayer>` を使用してテクスチャからテクスチャ"
 "への変更をアニメーション化できます。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:97
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:131
 msgid "Consider this sprite sheet, which contains 6 frames of animation:"
 msgstr ""
 "6フレームのアニメーションを含むこのスプライトシートを考えてみましょう。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:101
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:135
 msgid ""
 "Right-click the image and choose \"Save Image As\" to download, then copy "
 "the image into your project folder."
@@ -190,7 +268,7 @@ msgstr ""
 "画像を右クリックして[名前を付けて保存]を選択してダウンロードし、イメージをプ"
 "ロジェクトフォルダにコピーします。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:104
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:138
 msgid ""
 "Our goal is to display these images one after another in a loop. Start by "
 "setting up your scene tree:"
@@ -198,7 +276,7 @@ msgstr ""
 "私たちの目標は、これらの画像をループで次々に表示することです。シーンツリーを"
 "設定することから始めます。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:116
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:150
 msgid ""
 "Drag the spritesheet into the Sprite's *Texture* property, and you'll see "
 "the whole sheet displayed on the screen. To slice it up into individual "
@@ -212,7 +290,7 @@ msgstr ""
 "*Hframes* および *Vframes* は、スプライトシート内の水平フレームと垂直フレーム"
 "の数です。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:124
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:158
 msgid ""
 "Now try changing the value of the *Frame* property. You'll see that it "
 "ranges from ``0`` to ``5`` and the image displayed by the Sprite changes "
@@ -222,7 +300,7 @@ msgstr ""
 "``5`` であり、それに応じてスプライトによって表示される画像が変化することがわ"
 "かります。これが、アニメーション化のプロパティです。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:128
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:162
 msgid ""
 "Select the ``AnimationPlayer`` and click the \"Animation\" button followed "
 "by \"New\". Name the new animation \"walk\". Set the animation length to "
@@ -233,14 +311,14 @@ msgstr ""
 "ニメーションの長さを ``0.6`` に設定し、[ループ] ボタンをクリックして、アニ"
 "メーションが繰り返されるようにします。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:134
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:168
 msgid ""
 "Now select the ``Sprite`` node and click the key icon to add a new track."
 msgstr ""
 "次に、\\ ``Sprite`` ノードを選択し、鍵のアイコンをクリックして新しいトラック"
 "を追加します。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:138
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:172
 msgid ""
 "Continue adding frames at each point in the timeline (``0.1`` seconds by "
 "default), until you have all the frames from 0 to 5. You'll see the frames "
@@ -250,17 +328,17 @@ msgstr ""
 "てのフレームが追加されるまで、鍵アイコンをクリックしてフレームの追加を続けま"
 "す。アニメーショントラックに実際にフレームが表示されます:"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:144
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:178
 msgid "Press \"Play\" on the animation to see how it looks."
 msgstr ""
 "アニメーションの [再生] をクリックすると、アニメーションがどのように表示され"
 "るかを確認できます。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:149
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:183
 msgid "Controlling an AnimationPlayer animation"
 msgstr "AnimationPlayerアニメーションの制御"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:185
 msgid ""
 "Like with AnimatedSprite, you can control the animation via code using the "
 "``play()`` and ``stop()`` methods. Again, here is an example to play the "
@@ -272,7 +350,7 @@ msgstr ""
 "ままアニメーションを再生し、キーを放したときにアニメーションを停止する例を次"
 "に示します。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:168
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:202
 msgid ""
 "If updating both an animation and a separate property at once (for example, "
 "a platformer may update the sprite's ``h_flip``/``v_flip`` properties when a "
@@ -295,17 +373,19 @@ msgstr ""
 "した後に ``advance(0)`` を呼び出すことでアニメーションをすぐに更新することが"
 "できます。"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:179
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:213
 msgid "Summary"
 msgstr "概要"
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:181
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:215
+#, fuzzy
 msgid ""
-"These examples illustrate the two most common situations you'll encounter in "
-"2D animation. Each has its benefits. Working with ``AnimationPlayer`` is a "
-"bit more complex, but provides additional functionality, since you can also "
-"animate other properties like position or scale. Experiment and see which "
-"works best for your needs."
+"These examples illustrate the two classes you can use in Godot for 2D "
+"animation. ``AnimationPlayer`` is a bit more complex than "
+"``AnimatedSprite``, but it provides additional functionality, since you can "
+"also animate other properties like position or scale. The class "
+"``AnimationPlayer`` can also be used with an ``AnimatedSprite``.  Experiment "
+"to see what works best for your needs."
 msgstr ""
 "これらの例は、2Dアニメーションで発生する最も一般的な2つの状況を示しています。"
 "それぞれに利点があります。\\ ``AnimationPlayer`` の操作はもう少し複雑ですが、"

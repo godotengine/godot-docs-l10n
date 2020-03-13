@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,18 +18,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:4
+#, fuzzy
 msgid "Splash screen"
-msgstr "Вікно вітання"
+msgstr "Вікно привітання"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
 msgstr "Навчання"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
+#, fuzzy
 msgid ""
 "This is a simple tutorial to establish the basic idea of how the GUI "
 "subsystem works. The goal is to create a simple, static splash screen."
 msgstr ""
+"Цей простий урок познайомить вас із роботою підсистеми GUI. Мета - створити "
+"простий, статичний екран привітання."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:15
 msgid ""
@@ -37,6 +41,9 @@ msgid ""
 "can be placed directly in your project folder and Godot will import them "
 "automatically."
 msgstr ""
+"Нижче знаходиться файл з ресурсами, які будуть використані. Витягнуті файли "
+"можна розмістити безпосередньо у теці проекту, і Godot імпортує їх "
+"автоматично."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
 msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
@@ -44,38 +51,50 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:21
 msgid "Setting up"
-msgstr ""
+msgstr "Налаштування"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:23
 msgid ""
 "Set the display resolution to 800x450 in Project Settings, and set up a new "
 "scene like this:"
 msgstr ""
+"Встановіть роздільну здатність екрана в 800x450 у Параметрах проекту, "
+"створіть нову сцену та налаштуйте її за наведеним зразком:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:27
+#, fuzzy
 msgid ""
 "The nodes \"background\" and \"logo\" are of :ref:`TextureRect "
 "<class_TextureRect>` type. To display an image, drag the corresponding asset "
 "to the texture property."
 msgstr ""
+"Вузли \"background\" та \"logo\" мають тип :ref:`TextureRect "
+"<class_TextureRect>`. Щоб показати зображення, перетягніть відповідний "
+"ресурс до властивості текстури (Texture)."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:32
+#, fuzzy
 msgid ""
 "The node \"start\" is a :ref:`TextureButton <class_TextureButton>`. It takes "
 "several images for different states, but only the normal and pressed will be "
 "supplied in this example:"
 msgstr ""
+"Вузол \"start\" - це :ref:`TextureButton <class_TextureButton>`. Потрібно "
+"кілька зображень для різних станів, але в цьому прикладі подаються лише "
+"нормальний та натиснутий:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:38
 msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
-msgstr ""
+msgstr "Нарешті, вузол \"copyright\" - це :ref:`Label <class_Label>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:40
 msgid "Your final scene should look something like this."
-msgstr ""
+msgstr "Ваша заключна сцена повинна виглядати приблизно так."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:44
 msgid ""
 "Go ahead and run the project.  If you're satisfied with the results, "
 "continue to the next tutorial."
 msgstr ""
+"Тепер запускайте проект. Якщо ви задоволені результатом, переходьте до "
+"наступного уроку."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,86 +18,110 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
+#, fuzzy
 msgid "Design the GUI"
-msgstr ""
+msgstr "Дизайн графічного інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
+#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
 "energy bar, and bomb and emerald counters. By the end of this tutorial, "
 "you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
+"Тепер, коли ви засвоїли основи, ми дізнаємось, як створити ігровий графічний "
+"інтерфейс користувача (GUI) з багаторазовими компонентами: шкалами здоров'я "
+"та енергії, лічильниками бомб та смарагдів. В кінці цього уроку ви матимете "
+"графічний інтерфейс гри, готовий до керування за допомогою GDscript, або "
+"VisualScript:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
 msgid "The final result"
-msgstr ""
+msgstr "Кінцевий результат"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:15
 msgid "You'll also learn to:"
-msgstr ""
+msgstr "Ви також навчитеся:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:17
 msgid "Create flexible UI components"
-msgstr ""
+msgstr "Створювати гнучкі компоненти інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:18
+#, fuzzy
 msgid "Use scene inheritance"
-msgstr ""
+msgstr "Використовувати наслідування сцен"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:19
+#, fuzzy
 msgid "Build a complex UI"
-msgstr ""
+msgstr "Будувати складні інтерфейси"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:21
+#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_gui_design.zip <files/"
 "ui_gui_design.zip>` and extract the archive. Import the `start/` project in "
 "Godot to follow this tutorial. The `end/` folder contains the final result."
 msgstr ""
+"Завантажте файли проекту: :download:`ui_gui_design.zip <files/ui_gui_design."
+"zip>` і витягніть архів. Імпортуйте проект `start/` у Godot, щоб виконати "
+"цей урок. Папка `end/` містить кінцевий результат."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
+#, fuzzy
 msgid ""
 "You can watch this tutorial as a `video on Youtube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
 msgstr ""
+"Ви можете переглянути цей урок як `відео на Youtube <https://www.youtube.com/"
+"watch?v=y1E_y9AIqow>`_."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
+#, fuzzy
 msgid "Breaking down the UI"
-msgstr ""
+msgstr "Розбивання інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:30
+#, fuzzy
 msgid ""
 "Let's break down the final UI and plan the containers we'll use. As in the :"
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
 "up to three columns:"
 msgstr ""
+"Давайте розберемо остаточний інтерфейс і сплануємо, які контейнери ми будемо "
+"використовувати. Як і в: :doc:`ui_main_menu`, він починається з "
+"``MarginContainer``. Далі ми можемо бачити три стовпці:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
 msgid "The life and energy counters on the left"
-msgstr ""
+msgstr "Зліва лічильники здоров'я та енергії"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:35
 msgid "The life and energy bars"
-msgstr ""
+msgstr "Шкали здоров'я та енергії"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
 msgid "The bomb and emerald counters on the right"
-msgstr ""
+msgstr "Лічильники бомб та смарагдів справа"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
 "But the bar's label and the gauge are two parts of the same UI element. If "
 "we think of them this way, we're left with two columns:"
 msgstr ""
+"Але лічильники і шкали зліва є частинами одного і того ж елемента "
+"інтерфейсу. В результаті у нас залишається два стовпці:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:41
 msgid "The life and energy bars on the left"
-msgstr ""
+msgstr "Шкали здоров'я та енергії зліва"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
+#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -106,10 +130,16 @@ msgid ""
 "``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
+"Це полегшує вкладення контейнерів: ми створюємо деякі поля біля меж екрана "
+"за допомогою ``MarginContainer``, а потім використовуємо ``HBoxContainer`` "
+"для керування нашими двома стовпцями. Дві шкали укладаються одна на одну "
+"всередині контейнера ``VBoxContainer``. І ще один ``HBoxContainer`` нам "
+"потрібен в правій колонці, щоб розмістити поруч лічильники бомб та "
+"смарагдів ."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
-msgstr ""
+msgstr "У нас виходить чистий макет інтерфейсу лише з 4 контейнерами"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:55
 msgid ""
@@ -117,12 +147,18 @@ msgid ""
 "gives us the main GUI scene's structure. With this plan in place, we can "
 "jump into Godot and create our GUI."
 msgstr ""
+"Нам будуть потрібні додаткові контейнери всередині окремих компонентів "
+"інтерфейсу, але наразі ми маємо основну структуру графічного інтерфейсу. "
+"Маючи такий план, ми можемо перейти в Godot і створити наш графічний "
+"інтерфейс."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:60
+#, fuzzy
 msgid "Create the base GUI"
-msgstr ""
+msgstr "Створення базового графічного інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:62
+#, fuzzy
 msgid ""
 "There are two possible approaches to the GUI: we can design elements in "
 "separate scenes and put them together, or prototype everything in a single "
@@ -131,18 +167,28 @@ msgid ""
 "it looks good, you can save entire sections of the node tree as reusable sub-"
 "scenes. We'll do that in a moment."
 msgstr ""
+"Існує два можливі підходи до створення графічного інтерфейсу: ми можемо "
+"спроектувати елементи в окремих сценах і, потім, скласти їх разом, або зразу "
+"створити усе в одній сцені, а розбити на окремі пізніше. Я рекомендую "
+"працювати з однією сценою, оскільки ви можете поекспериментувати і швидше "
+"визначитися з розміщенням та пропорціями інтерфейсу. Отримавши вигляд "
+"інтерфейсу який вас влаштовує, ви можете зберегти цілі секції дерева вузлів, "
+"як окремі сцени для багаторазового використання. Ми зробимо це пізніше."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:69
 msgid "For now, let's start with a few containers."
-msgstr ""
+msgstr "Поки почнемо з кількох контейнерів."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
+"Створіть нову сцену та додайте ``MarginContainer``. Виберіть вузол і назвіть "
+"його ``GUI``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
+#, fuzzy
 msgid ""
 "We want our interface to anchor to the top of the screen. Select the ``GUI`` "
 "node and click the Layout button at the top of the viewport. Select the "
@@ -150,12 +196,21 @@ msgid ""
 "parent, the viewport by default. It will resize automatically on the "
 "vertical axis to make space for its child UI components."
 msgstr ""
+"Ми хочемо, щоб наш інтерфейс прив'язався до верхньої частини екрана. "
+"Виберіть вузол ``GUI`` і натисніть кнопку Макет у верхній частині вікна "
+"перегляду. Виберіть варіант ``Згори за шириною``. Вузол ``GUI`` прикріпиться "
+"до верхнього краю його предка, за замовчуванням до верхньої частини вікна. "
+"Він змінить розмір автоматично по вертикальній осі, щоб звільнити місце для "
+"своїх нащадків."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
 msgstr ""
+"Збережіть сцену як ``GUI.tscn ``. Ми розмістимо в ній увесь графічний "
+"інтерфейс."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
+#, fuzzy
 msgid ""
 "With the ``MarginContainer`` selected, head to the inspector and scroll down "
 "to the custom constants section. Unfold it and click the field next to each "
@@ -163,8 +218,14 @@ msgid ""
 "``HBoxContainer`` node. This one will contain our two bars on the left and "
 "separate them from the two counters on the right."
 msgstr ""
+"З вибраним ``MarginContainer`` перейдіть до інспектора та прокрутіть униз до "
+"розділу *Custom Constants*. Розгорніть його та встановіть кожну із "
+"властивостей ``Margin`` на ``20`` пікселів. Далі додайте вузол "
+"``HBoxContainer``. Він буде містити дві шкали зліва та, окремо, два "
+"лічильника справа."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
+#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
 "``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
@@ -172,10 +233,15 @@ msgid ""
 "``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
 "containers, we have the base for our GUI scene."
 msgstr ""
+"Ми хочемо укласти шкали вертикально всередину ``HBoxContainer``. Додайте "
+"``HBoxContainer`` в нащадки``VBoxContainer`` і назвіть його ``Bars`` "
+"(Шкали). Виберіть ``HBoxContainer`` ще раз, і додайте в нащадки ще один "
+"``HBoxContainer``. Назвіть його ``Counters``. З цими чотирма контейнерами ми "
+"маємо базу для нашої сцени GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
-msgstr ""
+msgstr "У вас повинно бути 4 контейнери, які виглядають так"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
 msgid ""
@@ -184,20 +250,32 @@ msgid ""
 "tutorial like this, it may seem weird. But once you're working on real "
 "games, you'll see it's an efficient workflow."
 msgstr ""
+"Ми можемо працювати таким чином, тому що ми спочатку розбили наш дизайн "
+"інтерфейсу і потратили кілька хвилин, щоб подумати над тим, які контейнери "
+"будемо використовувати. Такий підхід може видатися дивним. Але як тільки ви "
+"почнете працювати над реальними іграми, ви переконаєтеся, що це ефективний "
+"робочий процес."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:105
+#, fuzzy
 msgid "Create the bars' base"
-msgstr ""
+msgstr "Створення бази для шкал"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:107
+#, fuzzy
 msgid ""
 "Each bar is split into two sub-elements that align horizontally: the label "
 "with the health count on the left, and the gauge on the right. Once again, "
 "the ``HBoxContainer`` is the perfect tool for the job. Select the ``Bars`` "
 "node and add a new ``HBoxContainer`` inside of it. Name it ``Bar``."
 msgstr ""
+"Кожен шкала розділена на два піделементи, які вирівнюються по горизонталі: "
+"мітка з кількістю здоров’я зліва та сама шкала справа. Знову "
+"``HBoxContainer`` ідеальний інструмент для роботи. Виберіть вузол ``Bars`` і "
+"додайте йому ``HBoxContainer`` всередину. Назвіть його ``Bar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:113
+#, fuzzy
 msgid ""
 "The label itself requires at least three nodes: a ``NinePatchRect`` for the "
 "background, on top of which we'll add a texture on the left, either ``HP`` "
@@ -209,27 +287,40 @@ msgid ""
 "between the life count and the gauge. Select the ``Bar`` and add a "
 "``MarginContainer``. Name it ``Count``. Inside of it, add three nodes:"
 msgstr ""
+"Для самої мітки потрібно щонайменше три вузли: ``NinePatchRect`` для фону, "
+"поверх якого ми додамо текстуру зліва, ``HP``, або ``EP``, і ``Label`` "
+"праворуч для значення. Ми можемо вкласти вузли``Control`` як захочемо. Ми "
+"могли б використовувати ``NinePatchRect`` в якості предка для двох інших "
+"елементів. Але краще використовувати контейнери замість цього, оскільки їх "
+"роль полягає в організації компонентів інтерфейсу. Врешті пізніше нам все-"
+"таки нам знадобиться ``MarginContainer``, щоб додати простір між кількістю "
+"життя та показником. Виберіть ``Bar`` і додайте ``MarginContainer``. Назвіть "
+"його ``Count``. Всередину нього додайте три вузли:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:124
 msgid "A ``NinePatchRect`` named ``Background``"
-msgstr ""
+msgstr "``NinePatchRect`` з іменем ``Background``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:125
 msgid "A ``TextureRect`` named ``Title``"
-msgstr ""
+msgstr "``TextureRect`` з іменем ``Title``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
 msgid "And a ``Label`` named ``Number``"
-msgstr ""
+msgstr "І ``Label`` з іменем ``Number``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:128
+#, fuzzy
 msgid "To add the nodes as siblings, always select the ``Count`` node first."
 msgstr ""
+"Щоб додані вузли були побратимами, перед додаванням завжди вибирайте вузол "
+"``Count``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:132
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
 msgstr ""
+"Ваше дерево сцени повинно виглядати так. Ми готові додати деякі текстури"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
 msgid ""
@@ -237,12 +328,18 @@ msgid ""
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
 "down to the res://assets/GUI folder."
 msgstr ""
+"Наша сцена все ще порожня. Настав час закинути деякі текстури. Щоб "
+"завантажити текстури, перейдіть до панелі Файлова система зліва від області "
+"перегляду. Перейдіть до теки res://assets/GUI folder."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:141
 msgid "You should see a list of textures that we'll use to skin our interface."
 msgstr ""
+"Ви повинні побачити список текстур, які ми будемо використовувати для "
+"розробки нашого інтерфейсу."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:144
+#, fuzzy
 msgid ""
 "Select the ``Background`` in the Scene dock. In the Inspector, you should "
 "see a ``Texture`` property. In the FileSystem tab, click and drag "
@@ -252,8 +349,17 @@ msgid ""
 "Inspector, scroll down to the Rect section. Set ``Min Size`` to (100, 40). "
 "You should see the ``Background`` resize along with its parent containers."
 msgstr ""
+"Виберіть ``Background`` в Сцені. В Інспекторі ви повинні побачити "
+"властивість ``Texture``. З панелі Файлова система перетягніть ``label_HP_bg."
+"png`` в ``Texture``. Картинка залишиться стиснута. Предок MarginContainer "
+"стискає розміри до 0, поки ми не задамо елементам всередині контейнера "
+"мінімальний розмір, який треба утримувати. Виберіть вузол ``Background``. У "
+"Інспекторі прокрутіть униз до розділу *Rect*. Встановіть ``Min Size`` на "
+"(100, 40). Ви повинні побачити, як міняється розмір ``Background`` разом з "
+"його батьківськими контейнерами."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:153
+#, fuzzy
 msgid ""
 "Next, select the ``Title`` and drag and drop ``label_HP.png`` into its "
 "``Texture`` slot. Select the ``Number`` node, click the field next to the "
@@ -261,21 +367,35 @@ msgid ""
 "viewport. They should stack up in the top-left corner of their parent "
 "``MarginContainer``."
 msgstr ""
+"Далі виберіть ``Title`` і перетягніть ``label_HP.png`` в його властивість "
+"``Texture``. Виберіть вузол ``Number``, натисніть поле поруч із властивістю "
+"``Text`` та введіть ``10``. Таким чином, ми можемо побачити обидва вузли у "
+"вікні перегляду. Вони повинні складатись у верхньому лівому куті свого "
+"предка ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:161
 msgid "If you select both nodes, you should see something like this"
-msgstr ""
+msgstr "Якщо вибрати обидва вузли, ви повинні побачити щось подібне"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:163
+#, fuzzy
 msgid ""
 "As they have a container as their direct parent, we cannot move them freely: "
 "the ``Count`` node will always reset their anchors, their size and position. "
 "Try to move and resize the nodes in the viewport. Then, select any of the "
-"three textures and press Ctrl Up or Ctrl Down to reorder them in the Scene "
-"dock. They'll snap back to their previous size and position."
+"three textures and press :kbd:`Ctrl + Up` or :kbd:`Ctrl + Down` to reorder "
+"them in the Scene dock. They'll snap back to their previous size and "
+"position."
 msgstr ""
+"Оскільки у них є контейнер в якості прямого предка, ми не можемо вільно їх "
+"переміщувати: вузол ``Count``буде скидати їх прив'язки, розмір і положення. "
+"Спробуйте перемістити та змінити розміри вузлів у вікні перегляду. Потім "
+"виберіть будь-яку з трьох текстур і натисніть ``Ctrl + Up``, або ``Ctrl"
+"+Down``, щоб спробувати впорядкувати їх в Сцені. Вони повернуться до "
+"попереднього розміру та положення."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:170
+#, fuzzy
 msgid ""
 "Parent containers control the size, the scale, the margins, and the anchors "
 "of their direct children. To modify the nodes, you must nest them inside a "
@@ -283,14 +403,23 @@ msgid ""
 "parent for the ``Title`` and ``Number``. Select both the ``Title`` and "
 "``Number``, and drag and drop them onto ``Background``."
 msgstr ""
+"Предки-контейнери контролюють розмір, масштаб, поля та прив'язки їхніх "
+"прямих нащадків. Щоб змінити вузли, потрібно вкласти їх у звичайний елемент "
+"управління Control, або інший елемент інтерфейсу. Ми будемо використовувати "
+"``Background`` в якості предка для ``Title`` та ``Number``. Виберіть "
+"``Title`` і ``Number``, і перетягніть їх на ``Background``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:179
+#, fuzzy
 msgid ""
 "By using the Background node as the two textures' parent, we take control "
 "away from the Count MarginContainer"
 msgstr ""
+"Використовуючи вузол Background в якості предка, ми відбираємо контроль від "
+"Count, який є контейнером MarginContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
+#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -303,26 +432,46 @@ msgid ""
 "Resize the node horizontally, so it takes the right half of the "
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
+"Виберіть ``Title`` і в інспекторі та змініть його властивість ``Stretch "
+"Mode`` на ``Keep Centered``. Далі знайдіть розділ ``Rect`` в Інспекторі та "
+"змініть властивість ``Size`` на (50, 40), щоб позначка займала лише ліву "
+"половину фону. Далі виберіть вузол ``Number``. У вікні перегляду виберіть "
+"меню ``Макет`` та клацніть ``Увесь прямокутник``. Вузол відповідно "
+"розтягнеться на увесь ``Background``. Поверніться до Інспектора і змініть "
+"його властивість ``Align`` на ``Right``, а властивість ``Valign`` на "
+"``Center``. Текст повинен прилягати до центру правого краю ``Background``. "
+"Змініть розмір вузла по горизонталі, щоб він зайняв праву половину "
+"``Background``, а з правого краю залишився невеликий відступ."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:195
+#, fuzzy
 msgid ""
 "Here's how the nodes' bounding boxes should look in the viewport. Keep it "
 "rough, you don't need to place them too precisely for now."
 msgstr ""
+"Ось як повинні виглядати межі вузлів у вікні перегляду. Наразі не потрібно "
+"розміщувати їх занадто точно."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:199
+#, fuzzy
 msgid "Replace the Label's font"
-msgstr ""
+msgstr "Зміна шрифта в Label"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:201
+#, fuzzy
 msgid ""
 "The label's font is too small. We need to replace it. Select the ``Number`` "
 "node and in the Inspector, scroll down to the ``Control`` class, and find "
 "the ``Custom Font`` category. Click the field next to the ``Font`` property "
 "and click on ``New Dynamic Font``. Click on the field again and select Edit."
 msgstr ""
+"Шрифт мітки занадто малий. Нам потрібно його змінити. Виберіть вузол "
+"``Number`` в Інспекторі, прокрутіть до ``Control`` та знайдіть розділ "
+"``Custom Font``. Клацніть поле поруч із властивістю ``Font`` та натисніть на "
+"``New Dynamic Font``. Клацніть на полі ще раз та виберіть Редагувати."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:207
+#, fuzzy
 msgid ""
 "You will enter the ``Dynamic Font`` resource. Unfold the ``Font`` category "
 "and click the field next to ``Font Data``. Click the ``Load`` button. In the "
@@ -331,8 +480,16 @@ msgid ""
 "viewport. Unfold the settings category to change the font size. Set the "
 "``Size`` property to a higher value, like ``24`` or ``28``."
 msgstr ""
+"Ви попадете в ресурс ``Dynamic Font``. Розгорніть розділ ``Font`` та "
+"натисніть поле поруч із ``Font Data``. Натисніть кнопку ``Завантажити``. У "
+"браузері файлів перейдіть до папки Assets/Font та двічі клацніть на "
+"``Comfortaa-Bold.ttf``, щоб відкрити його. Ви повинні побачити оновлення "
+"шрифту у вікні перегляду. Розгорніть розділ налаштувань ``Settings``, щоб "
+"змінити розмір шрифту. Встановіть властивість ``Size`` на більш високе "
+"значення, наприклад ``24``, або ``28``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
+#, fuzzy
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -343,28 +500,45 @@ msgid ""
 "``Custom Font`` category again and tweak the ``Bottom`` property until the "
 "text aligns with the ``Title`` node. I used a value of ``2`` pixels."
 msgstr ""
+"Тепер нам потрібно вирівняти нижній край числа з нижнім краєм текстури HP "
+"зліва. Для цього, все ще в ресурсі ``DynamicFont``, ви можете налаштувати "
+"властивість ``Bottom`` в розділі ``Extra Spacing``. Тут можна відрегулювати "
+"відступ від тексту до нижнього краю. Клацніть вузол ``Number`` на вкладці "
+"Сцена, щоб повернутися до властивостей вузла та змінити ``Valign`` на "
+"``Bottom``. Щоб відкоригувати нижню лінію тексту, ще раз натисніть на поле "
+"шрифту в розділі ``Custom Font`` і підлаштуйте властивість ``Bottom``, так "
+"щоб текст вирівнявся з вузлом ``Title``. Я використав значення ``2``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:227
+#, fuzzy
 msgid "With a Bottom value of 2 pixels, the Number aligns with the Title"
-msgstr ""
+msgstr "При значенні Bottom 2 пікселя Number вирівнюється з Title"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:229
 msgid ""
 "With this, we finished the hardest part of the GUI. Congratulations! Let's "
 "move on to the simpler nodes."
 msgstr ""
+"Цим ми закінчили найважчу частину GUI. Вітаю! Перейдемо до більш простих "
+"вузлів."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:233
+#, fuzzy
 msgid "Add the progress bar"
-msgstr ""
+msgstr "Додавання шкали прогресса"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:235
+#, fuzzy
 msgid ""
 "We need one last element to complete our life bar: the gauge itself. Godot "
 "ships with a ``TextureProgress`` node that has everything we need."
 msgstr ""
+"Нам потрібен останній елемент, щоб завершити нашу шкалу здоров'я: сам "
+"показник. Godot поставляється з вузлом ``TextureProgress``, у якому є все, "
+"що нам потрібно."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:238
+#, fuzzy
 msgid ""
 "Select the Bar node and add a ``TextureProgress`` inside of it. Name it "
 "``Gauge``. In the inspector unfold the ``Textures`` section. Head to the "
@@ -373,36 +547,57 @@ msgid ""
 "onto the ``Progress`` slot. Under the ``Range`` class in the inspector, "
 "change the ``Value`` property to ``50`` to see the gauge fill up."
 msgstr ""
+"Виберіть вузол Bar і додайте до нього ``TextureProgress``. Назвіть його "
+"``Gauge``. У інспекторі розгорніть розділ ``Textures``. Перейдіть до "
+"Файлової системи і перетягніть текстуру ``lifebar_bg.png`` на ``Under``. "
+"Зробіть те ж саме з зображенням ``lifebar_fill.png`` і перетягніть його на "
+"``Progress``. Під класом ``Range`` у інспекторі змініть властивість "
+"``Value`` на ``50`` щоб побачити, як показник заповнюється."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:246
+#, fuzzy
 msgid "With only five ``Control`` nodes, our first bar is ready to use."
 msgstr ""
+"Маючи лише п'ять вузлів ``Control``, наша перша шкала готова до використання."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:250
+#, fuzzy
 msgid ""
 "That's it, our life bar is ready. This last part was quick, wasn't it? "
 "That's thanks to our robust container setup."
 msgstr ""
+"Наша шкала здоров'я готова. Ця остання частина була швидкою, чи не так? Це "
+"завдяки нашій надійній установці контейнерів."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
+#, fuzzy
 msgid "Design the bomb and emerald counters"
-msgstr ""
+msgstr "Розробка лічильників бомб та смарагдів"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
+#, fuzzy
 msgid ""
 "The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
+"Лічильники бомб та смарагдів схожі на вузол шкали ``Count``. Тож ми "
+"продублюємо його і використаємо як шаблон."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
+#, fuzzy
 msgid ""
-"Under the ``Bar`` node, select ``Count`` and press Ctrl D to duplicate it. "
-"Drag and drop the new node under the ``Counters`` ``HBoxContainer`` at the "
-"bottom of the scene tree. You should see it resize automatically. Don't "
-"worry about this for now, we'll fix the size soon."
+"Under the ``Bar`` node, select ``Count`` and press :kbd:`Ctrl + D` to "
+"duplicate it. Drag and drop the new node under the ``Counters`` "
+"``HBoxContainer`` at the bottom of the scene tree. You should see it resize "
+"automatically. Don't worry about this for now, we'll fix the size soon."
 msgstr ""
+"У вузлі ``Bar`` виберіть ``Count`` і натисніть ``Ctrl+D``, щоб його "
+"дублювати. Перетягніть новий вузол у ``Counters``, на дно дерева сцени. Ви "
+"можете побачити, як його розмір автоматично зміниться. Не хвилюйтеся з цього "
+"приводу зараз, ми скоро виправимо розмір."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
+#, fuzzy
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -411,12 +606,18 @@ msgid ""
 "display the icon. In the scene tree, select the ``Title`` node, and rename "
 "it to ``Icon``."
 msgstr ""
+"Перейменуйте вузол ``Count2`` у ``Counter``. На відміну від шкал, ми хочемо, "
+"щоб число було зліва, а значок - справа. Налаштування однакове: нам потрібні "
+"вузли фону (``NinePatchRect``), заголовка та числа. Вузол ``Title`` є "
+"``TextureRect``, так що це те , що нам потрібно , щоб відобразити значок. У "
+"дереві сцен виберіть вузол ``Title`` та перейменуйте його на ``Icon``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:273
 msgid "Here's how your node tree should look so far"
-msgstr ""
+msgstr "Ось як має виглядати ваше дерево вузлів на даний момент"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:275
+#, fuzzy
 msgid ""
 "With the ``Icon`` node selected, in the inspector, scroll to the top to see "
 "the ``Texture`` slot. Head to the FileSystem dock on the left and select the "
@@ -425,10 +626,17 @@ msgid ""
 "in the toolbar at the top of the viewport and select ``Full Rect``. Both "
 "nodes will update to fit the size of the ``Background``."
 msgstr ""
+"Вибравши вузол ``Icon`` у інспекторі, прокрутіть доверху, щоб побачити "
+"``Texture``. З панелі файлова система виберіть ``bombs_icon.png``. "
+"Перетягніть його в гніздо ``Texture``. На вкладці Сцена виберіть вузли "
+"``Icon`` і ``Number``. Клацніть меню Макет на панелі інструментів у верхній "
+"частині вікна перегляду та виберіть ``Увесь прямокутник``. Обидва вузли "
+"оновляться відносно розміру ``Background``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:285
+#, fuzzy
 msgid "The nodes anchor to the entire Background, but their position is off"
-msgstr ""
+msgstr "Вузли прив'язуються до всього Background, але їх положення вимкнено"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
 msgid ""
@@ -438,12 +646,18 @@ msgid ""
 "resize its left edge a little bit to add some padding between the left edge "
 "of the ``Background`` and the text."
 msgstr ""
+"Давайте змінимо в ``Number`` властивості вирівнювання, щоб перемістити його "
+"вліво та в центр ``Background``. Виберіть вузол ``Number``, змініть його "
+"властивість ``Align`` на ``Left`` та властивість ``Valign`` на ``Center``. "
+"Потім трохи змініть розмір лівого краю, щоб додати трохи простору між лівим "
+"краєм ``Background`` та текстом."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
 msgid "The Number node aligned to the left and centre"
-msgstr ""
+msgstr "Вузол Number вирівняний ліворуч та по центру"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:297
+#, fuzzy
 msgid ""
 "To overlap the Icon and the background, we need a few tweaks. First, our "
 "background is a bit too tall. It's because it's inside a margin container "
@@ -453,22 +667,39 @@ msgid ""
 "container cannot be smaller than the minimal size of its children. The "
 "container's margins also weigh in."
 msgstr ""
+"Щоб перекрити піктограму та фон, нам потрібно кілька налаштувань. По-перше, "
+"наш фон трохи надто високий. Це тому, що він знаходиться у контейнері поля "
+"(MarginСontainer), який контролюється самим верхнім вузлом GUI. Виберіть "
+"вузол GUI у верхній частині дерева сцени та зменшіть його по вертикалі, щоб "
+"він був максимально тонким. Ви побачите, що показник не дозволяє вам зробити "
+"його занадто маленьким. Контейнер не може бути меншим, ніж мінімальний "
+"розмір його нащадків. Поля контейнера також беруться до уваги."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:305
+#, fuzzy
 msgid ""
 "Select the Icon, click the Layout menu, and select ``Full Rect`` to re-"
 "center it. We need it to anchor to the ``Background``'s right edge. Open the "
 "Layout menu again and select ``Center Right``. Move the icon up so it is "
 "centered vertically with the ``Background``."
 msgstr ""
+"Виберіть ``Icon``, натисніть меню Макет та виберіть ``Full Rect``, щоб "
+"центрувати його повторно. Нам потрібно, щоб він прикріпився до правого краю "
+"``Background``. Відкрийте меню Макет ще раз та виберіть ``За центром "
+"праворуч``. Перемістіть піктограму вгору, щоб вона була розташована по "
+"центрі вертикальні з ``Background``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:313
+#, fuzzy
 msgid ""
 "The bomb icon anchors to the Background's right edge. Resize the Counter "
 "container to see the Icon node stick to its right side"
 msgstr ""
+"Піктограма бомби прив'язується до правого краю фону. Змініть розмір "
+"контейнера Counter, щоб побачити, як вузол Icon притримується правої сторони"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:316
+#, fuzzy
 msgid ""
 "Because we duplicated the ``Counter`` from the bar's ``Count``, the "
 "``Number`` node's font is off. Select the ``Number`` node again, head to the "
@@ -476,8 +707,14 @@ msgid ""
 "the ``Extra Spacing`` section, change the ``Bottom`` value to ``0`` to reset "
 "the font's baseline. Our counter now works as expected."
 msgstr ""
+"Оскільки ми дублювали ``Counter`` з ``Count`` шрифт вузла ``Number`` "
+"зламався. Виберіть вузол ``Number`` ще раз, перейдіть до властивості "
+"``Font`` і клацніть по ресурсу ``DynamicFont``. У розділі ``Extra Spacing`` "
+"змініть значення ``Bottom`` на ``0``, щоб скинути базову лінію шрифту. Зараз "
+"наш лічильник працює як очікувалося."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
+#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
 "so, we need to set the ``Bars`` container take all the available horizontal "
@@ -486,26 +723,42 @@ msgid ""
 "``Bars`` node should resize and push the counter to the right side of the "
 "screen."
 msgstr ""
+"Давайте прив'яжемо ``Counters`` до правого краю вікна перегляду. Для цього "
+"нам потрібно налаштувати контейнер ``Bars`` так, щоб він зайняв весь наявний "
+"горизонтальний простір, який зможе. Виберіть вузол ``Bars`` і прокрутіть "
+"вниз до розділу ``Size Flags``. У підрозділі ``Horizontal`` позначте "
+"``Expand``. Вузол ``Bars`` повинен змінити розмір і потиснути лічильник до "
+"правої сторони екрану."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:331
+#, fuzzy
 msgid ""
 "An expanding container eats all the space it can from its parent, pushing "
 "everything else along the way"
 msgstr ""
+"Расширившийся контейнер, з'їдає у свого предка увесь простір, який зможе, "
+"посуваючи все інше в сторону"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:335
 msgid "Turn the bar and counter into reusable UI components"
-msgstr ""
+msgstr "Перетворення шкали та лічильника на багаторазові елементи інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:337
+#, fuzzy
 msgid ""
 "We have one bar and one counter widget. But we need two of each. We may need "
 "to change the bars' design or their functionality later on. It'd be great if "
 "we could have a single scene to store a UI element's template, and child "
 "scenes to work on variations. Godot lets us do this with Inherited Scenes."
 msgstr ""
+"У нас одна шкала і один лічильник. Але нам їх треба по дві штуки кожного. "
+"Пізніше нам може знадобитися змінити дизайн шкал, або їх функціональність. "
+"Було б чудово, якби ми могли мати одну сцену для зберігання шаблону елемента "
+"інтерфейсу та дочірні сцени для роботи над варіантами. Godot дозволяє нам це "
+"робити із спадковими сценами."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
+#, fuzzy
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
@@ -514,8 +767,15 @@ msgid ""
 "the scene as ``Bar.tscn``. You should see the node branch turn it to a "
 "single ``Bar`` node."
 msgstr ""
+"Давайте збережемо ``Counter`` і ``Bar``, як окремі сцени , які ми будемо "
+"використовувати для створення ``LifeBar``, то ``EnergyBar``, то "
+"``BombCounter``, і ``EmeraldCounter``. Виберіть ``Bar`` HBoxContainer. "
+"Клацніть правою кнопкою миші та натисніть на ``Зберегти гілку як Сцену``. "
+"Збережіть сцену під назвою ``Bar.tscn``. Ви повинні побачити, як вся гілка "
+"перетворюється в один вузол."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
+#, fuzzy
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
@@ -524,8 +784,15 @@ msgid ""
 "into the active one. Right click on any node in the Scene dock and select "
 "``Save Branch as Scene`` or ``Merge from Scene``."
 msgstr ""
+"Сцена - це дерево вузлів. Верхній вузол - **корінь** дерева , а нащадки "
+"внизу ієрархії - це **листя**. Будь-який вузол, крім кореня, разом із одним, "
+"або кількома нащадками - це **гілка**. Ми можемо інкапсулювати гілки вузлів "
+"в окремі сцени, або завантажити та об'єднати їх з інших сцен в активну. "
+"Клацніть правою кнопкою миші на будь-якому вузлі на панелі Сцена та виберіть "
+"``Зберегти гілку як Сцену``або ``Merge from Scene``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
+#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -535,16 +802,25 @@ msgid ""
 "nodes, we're ready to inherit this template and create the life bar. It's "
 "the same for the ``Counter``."
 msgstr ""
+"Потім виберіть вузол ``Counter`` і зробіть те саме. Збережіть гілку як сцену "
+"під назвою ``Counter.tscn``. Праворуч від вузлів новостворених сцен у дереві "
+"сцени з’являється нова іконка сцени. Клацніть на одну з них поруч з ``Bar``, "
+"щоб відкрити відповідну сцену. Змініть розмір вузла ``Bar`` так, щоб його "
+"обмежувальне поле відповідало його вмісту. Тепер, коли ми назвали і "
+"розмістили вузли управління, ми готові успадкувати цей шаблон і створити "
+"шкалу здоров'я. Те ж саме треба зробити для ``Counter``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
 msgid "With no extra changes, our Bar is ready to use"
-msgstr ""
+msgstr "Без додаткових змін наша шкала готова до використання"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
+#, fuzzy
 msgid "Use scene inheritance to create the remaining elements"
-msgstr ""
+msgstr "Використання успадкування сцен для створення решти елементів"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
+#, fuzzy
 msgid ""
 "We need two bars that work the same way: they should feature a label on the "
 "left, with some value, and a horizontal gauge on the right. The only "
@@ -552,14 +828,24 @@ msgid ""
 "called EP and is yellow. Godot gives us a powerful tool to create a common "
 "base to reuse for all bars in the game: **inherited scenes**."
 msgstr ""
+"Нам потрібні дві шкали, які працюють однаково: вони повинні містити мітку, з "
+"деяким значенням, зліва, і горизонтальний показник справа. Єдина відмінність "
+"полягає в тому, що один має мітку HP і зелений, а другий називається EP і "
+"жовтий. Godot дає нам потужний інструмент для створення шаблонів, які можна "
+"повторно використовувати для створення всіх шкал у грі: **успадковані "
+"сцени**."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:383
+#, fuzzy
 msgid ""
 "Inherited scenes help us keep the GUI scene clean. In the end, we will only "
 "have containers and one node for each UI component."
 msgstr ""
+"Спадкові сцени допомагають нам підтримувати чистоту сцени GUI. Зрештою, у "
+"нас будуть лише контейнери та один вузол для кожного компонента інтерфейсу."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
+#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -569,38 +855,65 @@ msgid ""
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
+"У спадковій сцені ви можете змінити будь-яку властивість кожного вузла в "
+"інспекторі, окрім його імені. Якщо ви змінюєте та зберігаєте батьківську "
+"сцену, всі успадковані сцени оновлюються. Якщо ви зміните значення в "
+"успадкованій сцені, воно завжди перекриває властивість предків. Це корисно "
+"для інтерфейсів користувача, оскільки вони часто вимагають варіацій одних і "
+"тих же елементів. Загалом, в дизайні інтерфейсу, кнопки, панелі тощо "
+"поділяють загальний базовий стиль та взаємодії. Ми не хочемо копіювати його "
+"усі варіанти вручну."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
+#, fuzzy
 msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
+"Поруч із властивостями, які ви перекриєте, з'явиться значок "
+"перезавантаження. Клацніть його, щоб відновити значення до стандартної сцени "
+"предка."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:400
+#, fuzzy
 msgid ""
 "Think of scene inheritance like the node tree, or the ``extends`` keyword in "
 "GDScript. An inherited scene does everything like its parent, but you can "
 "override properties, resources and add extra nodes and scripts to extend its "
 "functionality."
 msgstr ""
+"Подумайте про успадкування сцени, як про дерево вузлів, або ключове слово "
+"``extends`` в GDScript. Спадкова сцена виконує все, як і її предок, але ви "
+"можете змінити властивості, ресурси та додати додаткові вузли та скрипти, "
+"щоб розширити її функціональність."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:406
 msgid "Inherit the Bar Scene to build the LifeBar"
-msgstr ""
+msgstr "Успадкування сцени Bar для створення LifeBar (Шкали здоров'я)"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
+#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
-"like your ``Bar``, but with all nodes except the root in grey. Press ``Meta"
-"+S`` to save the new inherited scene and name it ``LifeBar``."
+"like your ``Bar``, but with all nodes except the root in grey. Press :kbd:"
+"`Meta + S` to save the new inherited scene and name it ``LifeBar``."
 msgstr ""
+"Перейдіть до ``Сцена -> Нова успадкована сцена`` до створення нового типу "
+"``Bar``. Виберіть сцену Bar і відкрийте її. Ви повинні побачити нову вкладку "
+"[не збережену], таку ж як ваша сцена ``Bar``, але з усіма вузлами, крім "
+"кореня сірого кольору. Натисніть ``Ctrl+S``, щоб зберегти нову успадковану "
+"сцену та назвіть її ``LifeBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
+#, fuzzy
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
 msgstr ""
+"Ви не можете перейменувати сірі вузли. Це говорить вам, що у них є "
+"батьківська сцена"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:418
+#, fuzzy
 msgid ""
 "First, rename the root or top level node to ``LifeBar``. We always want the "
 "root to describe exactly what this UI component is. The name differentiates "
@@ -609,8 +922,15 @@ msgid ""
 "works with all inherited scenes. Like our ``TextureProgress`` and ``Number`` "
 "nodes."
 msgstr ""
+"Спочатку перейменуйте корінь, або вузол верхнього рівня, на ``LifeBar``. Ми "
+"завжди хочемо, щоб назва кореня описувала зміст компоненту інтерфейсу. Назва "
+"відрізнятиме цю шкалу від ``EnergyBar``, яку ми створимо далі. Інші вузли "
+"всередині сцени повинні описувати структуру компонента широкими термінами, "
+"тому що вони працюють з усіма успадкованими сценами. Наприклад наші вузли "
+"``TextureProgress`` і ``Number``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:427
+#, fuzzy
 msgid ""
 "If you've ever done web design, it's the same spirit as working with CSS: "
 "you create a base class, and add variations with modifier classes. From a "
@@ -620,34 +940,56 @@ msgid ""
 "we create an inherited scene and change the name of the top level node, "
 "we're doing the same thing."
 msgstr ""
+"Якщо ви коли-не-будь займалися веб-дизайном, то це схоже на роботу з CSS: ви "
+"створюєте базовий клас і додаєте варіанти з класами модифікаторів. У класі "
+"базових кнопок ви матимете зелену та червону кнопки, щоб користувач міг "
+"приймати та відмовляти підказки. Новий клас містить ім'я батьківського "
+"елемента та додаткове ключове слово, щоб пояснити, як саме він модифікує "
+"його. Коли ми створюємо успадковану сцену та змінюємо назву вузла верхнього "
+"рівня, ми робимо те саме."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
+#, fuzzy
 msgid "Design the EnergyBar"
-msgstr ""
+msgstr "Розробка EnergyBar (Шкали енергії)"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:438
+#, fuzzy
 msgid ""
 "We already setup the ``LifeBar``'s design with the main ``Bar`` scene. Now "
 "we need the ``EnergyBar``."
 msgstr ""
+"Ми вже створили ``LifeBar`` з основної сцени ``Bar``. Тепер нам потрібна "
+"``EnergyBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:441
+#, fuzzy
 msgid ""
 "Let's create a new inherited scene, and once again select the ``Bar.tscn`` "
 "scene and open it. Double-click on the ``Bar`` root node and rename it to "
 "``EnergyBar``. Save the new scene as ``EnergyBar.tscn``. We need to replace "
 "the HP texture with EP one, and to change the textures on the gauge."
 msgstr ""
+"Давайте створимо нову успадковану сцену та ще раз виберемо сцену ``Bar."
+"tscn`` та відкриємо її. Двічі клацніть на кореневому вузлі ``Bar`` та "
+"перейменуйте його на ``EnergyBar``. Збережіть нову сцену як ``EnergyBar."
+"tscn``. Нам потрібно замінити текстуру HP на EP та змінити текстури на "
+"показнику."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
+#, fuzzy
 msgid ""
 "Head to the FileSystem dock on the left, select the ``Title`` node in the "
 "Scene tree and drag and drop the ``label_EP.png`` file onto the texture "
 "slot. Select the ``Number`` node and change the ``Text`` property to a "
 "different value like ``14``."
 msgstr ""
+"Перейдіть до gfytks Afqkjdf cbcntvf, виберіть вузол ``Title`` у дереві сцени "
+"та перетягніть файл ``label_EP.png`` в гніздо текстури. Виберіть вузол "
+"``Number`` і змініть властивість ``Text`` на інше значення, наприклад 14."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:452
+#, fuzzy
 msgid ""
 "You'll notice the EP texture is smaller than the HP one. We should update "
 "the ``Number``'s font size to better fit it. A font is a resource. All the "
@@ -656,12 +998,19 @@ msgid ""
 "``40`` and switch back to the ``LifeBar`` or the ``Bar`` scenes. You will "
 "see the text increased in size."
 msgstr ""
+"Ви помітите, що текстура EP менша, ніж у HP. Ми повинні оновити розмір "
+"шрифту ``Number``, щоб він краще підходив. Шрифт - це ресурс. На всі вузли у "
+"всьому проекті, які використовують цей ресурс, впливатиме будь-яка "
+"властивість, яку ми змінимо. Ви можете спробувати змінити розмір на "
+"величезне значення , наприклад ``40`` і повернувшись назад на ``LifeBar``, "
+"або в сцену ``Bar``. Ви побачите, що текст збільшився в розмірі."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:461
 msgid "If we change the font resource, all the nodes that use it are affected"
-msgstr ""
+msgstr "Зміни в ресурсі шрифту вплинуть на всі вузли, які ним користуються"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:464
+#, fuzzy
 msgid ""
 "To change the font size on this node only, we must create a copy of the font "
 "resource. Select the ``Number`` node again and click on the wrench and "
@@ -669,39 +1018,62 @@ msgid ""
 "select the ``Make Sub-Resources Unique`` option. Godot will find all the "
 "resources this node uses and create unique copies for us."
 msgstr ""
+"Щоб змінити розмір шрифту лише на цьому вузлі, ми повинні створити копію "
+"ресурсу шрифту. Виберіть вузол ``Number`` і натисніть на значок гайкового "
+"ключа та викрутки у верхньому правому куті інспектора. У спадному меню "
+"виберіть параметр ``Зробити суб-ресурси унікальними``. Godot знайде всі "
+"ресурси, якими користується цей вузол, і створить для нас унікальні копії."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:472
 msgid "Use this option to create unique copies of the resources for one node"
 msgstr ""
+"Використовуйте цей параметр для створення унікальних копій ресурсів для "
+"одного вузла"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
+#, fuzzy
 msgid ""
-"When you duplicate a node from the Scene tree, with ``Meta+D``, it shares "
-"its resources with the original node. You need to use ``Make Sub-Resources "
-"Unique`` before you can tweak the resources without affecting the source "
-"node."
+"When you duplicate a node from the Scene tree, with :kbd:`Meta + D`, it "
+"shares its resources with the original node. You need to use ``Make Sub-"
+"Resources Unique`` before you can tweak the resources without affecting the "
+"source node."
 msgstr ""
+"Коли ви дублюєте вузол з дерева сцена, з допомогою ``Ctrl+D``, оригінальний "
+"вузол ділиться своїми ресурсами з дублікатом. Вам потрібно скористатися "
+"параметром ``Зробити суб-ресурси унікальними``, перш ніж ви зможете "
+"налаштувати ресурси дублікату, не впливаючи на оригінальний вузол."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:481
+#, fuzzy
 msgid ""
 "Scroll down to the ``Custom Font`` section and open ``Font``. Lower the "
 "``Size`` to a smaller value like ``20`` or ``22``. You may also need to "
 "adjust the ``Bottom`` spacing value to align the text's baseline with the EP "
 "label on the left."
 msgstr ""
+"Прокрутіть униз до розділу``Custom Font`` та відкрийте ``Font``. Зменшіть "
+"значення ``Size`` до меншого значення, наприклад ``20``, або ``22``. "
+"Можливо, вам також знадобиться відрегулювати значення інтервалу ``Bottom`` "
+"для вирівнювання базової лінії тексту з міткою EP зліва."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:488
+#, fuzzy
 msgid "The EP Count widget, with a smaller font than its HP counterpart"
-msgstr ""
+msgstr "Віджет EP Count з меншим шрифтом, ніж його аналог HP"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:490
+#, fuzzy
 msgid ""
 "Now, select the ``TextureProgress`` node. Drag the ``energy_bar_bg.png`` "
 "file onto the ``Under`` slot and do the same for ``energy_bar_fill.png`` and "
 "drop it onto the ``Progress`` texture slot."
 msgstr ""
+"Тепер виберіть вузол ``TextureProgress``. Перетягніть ``energy_bar_bg.png`` "
+"файл у гніздо ``Under`` і зробіть те саме для ``energy_bar_fill.png`` та "
+"перетягніть його на гніздо текстури ``Progress``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:494
+#, fuzzy
 msgid ""
 "You can resize the node vertically so that its bounding rectangle fits the "
 "gauge. Do the same with the ``Count`` node until its size aligns with that "
@@ -710,20 +1082,33 @@ msgid ""
 "That is also the size the ``Bar`` container will have. You may downscale "
 "this one as well."
 msgstr ""
+"Ви можете змінити розмір вузла по вертикалі, щоб його обмежувальний "
+"прямокутник відповідав показнику. Зробіть те ж саме з вузлом ``Count``, поки "
+"його розмір не вирівняється з розміром шкали. Оскільки мінімальний розмір "
+"``TextureProgress`` встановлений на основі його текстур, ви не зможете "
+"зменшити розмір вузла ``Count`` менше нього. Такий же розмір буде мати "
+"контейнер ``Bar``. Ви також можете зменшити його масштаб."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:501
+#, fuzzy
 msgid ""
 "Last but not least, the ``Background`` container has a minimum size that "
 "makes it a bit large. Select it and in the ``Rect`` section, change the "
 "``Min Size`` property down to ``80`` pixels. It should resize automatically "
 "and the ``Title`` and ``Number`` nodes should reposition as well."
 msgstr ""
+"І останнє, але не менш важливе, контейнер ``Background`` має мінімальний "
+"розмір, що робить його трохи більшим. Виберіть його та в розділі ``Rect`` "
+"змініть властивість ``Min Size`` до ``80`` пікселів. Він повинен змінити "
+"розмір автоматично разом із вузлами ``Title`` та ``Number``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:509
+#, fuzzy
 msgid "The Count looks better now it's a bit smaller"
-msgstr ""
+msgstr "Count виглядає тепер краще тому, що став трохи менший"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
+#, fuzzy
 msgid ""
 "The Count node's size affects the position of the TextureProgress. As we'll "
 "align our bars vertically in a moment, we're better off using the Counter's "
@@ -731,24 +1116,36 @@ msgid ""
 "the LifeBar's Count nodes are one hundred pixels wide, so both gauges will "
 "align perfectly."
 msgstr ""
+"Розмір вузла Count впливає на положення TextureProgress. Поки ми не "
+"вирівняли наші смуги вертикально, нам краще використовувати лівий край "
+"Counter для зміни розміру нашої мітки EP. Таким чином, і Count від "
+"EnergyBar, і Count від LifeBar шириною сто пікселів, тому обидва показники "
+"будуть ідеально вирівнюватися."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
 msgid "Prepare the bomb and emerald counters"
-msgstr ""
+msgstr "Підготовка лічильників бомб та смарагдів"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
+#, fuzzy
 msgid ""
 "Let us now take care of the counters. Go to ``Scene -> New Inherited Scene`` "
 "and select the ``Counter.tscn`` as a base. Rename the root node as "
 "``BombCounter`` too. Save the new scene as ``BombCounter.tscn``. That's all "
 "for this scene."
 msgstr ""
+"Давайте тепер подбаємо про лічильники. Перейдіть до ``Scene -> New Inherited "
+"Scene`` та виберіть ``Counter.tscn``, як основу. Перейменуйте кореневий "
+"вузол на ``BombCounter``. Збережіть нову сцену як ``BombCounter.tscn``. Це "
+"все для цієї сцени."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:529
+#, fuzzy
 msgid "The bomb counter is the same as the original Counter scene"
-msgstr ""
+msgstr "Лічильник бомб такий же, як і в оригінальній сцені Counter"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
+#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``EmeraldCounter`` and save the scene as "
@@ -761,16 +1158,28 @@ msgid ""
 "the keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
+"Перейдіть знову до ``Scene -> New Inherited Scene`` і виберіть ``Counter."
+"tscn`` ще раз. Перейменуйте кореневий вузол на ``EmeraldCounter`` і "
+"збережіть сцену як ``EmeraldCounter.tscn``. Тут нам потрібно замінити значок "
+"бомби на значок смарагду. З панелі Файлова система перетягніть "
+"``emeralds_icon.png`` на гніздо ``Texture`` вузла ``Icon``. ``Icon`` вже "
+"прив'язаний до правого краю вузла ``Background``, ми можемо змінити його "
+"положення, і він змінить масштаб та переміститься разом з контейнером "
+"``EmeraldCounter``. Зсуньте значок смарагду трохи праворуч і вниз за "
+"допомогою кнопок зі стрілками на клавіатурі. Збережіть сцену. І на цьому ми "
+"закінчили з усіма елементами інтерфейсу."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
 msgid "The emerald counter should look something like this"
-msgstr ""
+msgstr "Лічильник смарагдів повинен виглядати приблизно так"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
+#, fuzzy
 msgid "Add the UI components to the final GUI"
-msgstr ""
+msgstr "Додавання компонентів інтерфейсу до кінцевого графічного інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:549
+#, fuzzy
 msgid ""
 "Time to add all the UI elements to the main GUI scene. Open the ``GUI.tscn`` "
 "scene again, and delete the ``Bar`` and ``Counter`` nodes. In the FileSystem "
@@ -778,22 +1187,30 @@ msgid ""
 "container in the scene tree. Do the same for the ``EnergyBar``. You should "
 "see them align vertically."
 msgstr ""
+"Час додати всі елементи інтерфейсу до основної сцени GUI. Знову відкрийте "
+"сцену ``GUI.tscn`` та видаліть вузли ``Bar`` та ``Counter``. На панелі "
+"Файлова система знайдіть ``LifeBar.tscn`` і перетягніть його на контейнер "
+"``Bars`` у дереві сцен. Зробіть те ж саме з ``EnergyBar.tscn``. Вони повинні "
+"вирівнятися по вертикалі."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:557
 msgid "The LifeBar and the EnergyBar align automatically"
-msgstr ""
+msgstr "LifeBar та EnergyBar автоматично вирівнюються"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
 "scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
+"Тепер перетягніть сцени ``BombCounter.tscn`` і ``EmeraldCounter.tscn`` на "
+"вузол ``Counters``. Вони автоматично змінять розмір."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
 msgid "The nodes resize to take all the available vertical space"
-msgstr ""
+msgstr "Вузли змінюють розмір, щоб зайняти весь наявний вертикальний простір"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
+#, fuzzy
 msgid ""
 "To let the ``EmeraldCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -802,18 +1219,28 @@ msgid ""
 "property, and check ``Shrink Center`` so the container centers inside the "
 "``HBoxContainer``."
 msgstr ""
+"Щоб дозволити ``EmeraldCounter`` та ``BombCounter`` використовувати розмір, "
+"визначений нами в ``Counter.tscn``, нам потрібно змінити ``Size Flags`` у "
+"контейнері ``Counters``. Виберіть вузол ``Counters`` і розгорніть розділ "
+"``Size Flags`` в Інспекторі. Зніміть прапорець ``Fill`` для властивості "
+"``Vertical`` та встановіть ``Shrink Center``, щоб контейнер знаходиться в "
+"центрі ."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
 msgid "Now both counters have a decent size"
-msgstr ""
+msgstr "Тепер обидва лічильники мають правильний розмір"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:579
+#, fuzzy
 msgid ""
 "Change the ``Min Size`` property of the ``Counters`` container to control "
 "the height of the counters' background."
 msgstr ""
+"Змініть властивість ``Min Size`` контейнера ``Counters``, щоб контролювати "
+"висоту фону лічильників."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
+#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -824,10 +1251,18 @@ msgid ""
 "and go back to the GUI scene, it will be aligned vertically with the "
 "``LifeBar``."
 msgstr ""
+"У нас залишилася одна невелика проблема з міткою EP на EnergyBar: 2 шкали "
+"повинні розташовуватися вертикально. Клацніть піктограму сцени поруч із "
+"вузлом ``EnergyBar``, щоб відкрити його сцену. Виберіть ``Count`` вузол і "
+"прокрутіть вниз до розділу ``Custom Constants``. Там змініть ``Margin Left`` "
+"на ``20``. У розділі ``Rect`` встановіть ``Min Size`` вузла назад на 100, те "
+"саме значення, що і в LifeBar. Тепер ``Count`` має деякий відступ зліва. "
+"Якщо ви збережете сцену та повернетесь до сцени GUI, він буде вирівняний "
+"вертикально з ``LifeBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:593
 msgid "The 2 bars align perfectly"
-msgstr ""
+msgstr "2 шкали ідеально вирівнюються"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
 msgid ""
@@ -835,22 +1270,27 @@ msgid ""
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
+"Ми могли так налаштувати ``EnergyBar`` раніше. Але тепер ви знаєте, що "
+"можете будь-коли повернутися до будь-якої сцени, налаштувати її та побачити, "
+"як зміни вплинуть на увесь проект!"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
+#, fuzzy
 msgid "Place the GUI onto the game's mockup"
-msgstr ""
+msgstr "Розміщення графічного інтерфейсу на макеті гри"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
 msgid ""
 "To wrap up the tutorial we're going to insert the GUI onto the game's mockup "
 "scene."
-msgstr ""
+msgstr "На завершення уроку, ми вставимо графічний інтерфейс в макет гри."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:607
 msgid "Head to the FileSystem dock and open ``LevelMockup.tscn``."
-msgstr ""
+msgstr "Перейдіть на панель Файлова система та відкрийте ``LevelMockup.tscn``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:609
+#, fuzzy
 msgid ""
 "Drag-and-drop the ``GUI.tscn`` scene right below the ``bg`` node and above "
 "the ``Characters``. The GUI will scale to fit the entire viewport. Head to "
@@ -859,6 +1299,12 @@ msgid ""
 "possible vertically. Now you can see how the interface looks in the context "
 "of the game."
 msgstr ""
+"Перетягуйте сцену ``GUI.tscn`` прямо під вузол ``bg``, але вище "
+"``Characters``. Графічний інтерфейс буде масштабуватись, щоб відповідати "
+"всій області перегляду. Перейдіть до меню «Макет» і виберіть варіант ``За "
+"центром згори``, щоб він прив'язався до верхнього краю вікна гри. Потім "
+"змініть розмір GUI, щоб зробити його якомога меншим по вертикалі. Тепер ви "
+"можете побачити, як виглядає інтерфейс у контексті гри."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
 msgid ""
@@ -866,8 +1312,11 @@ msgid ""
 "the final project here: :download:`ui_gui_design.zip <files/ui_gui_design."
 "zip>`."
 msgstr ""
+"Вітаємо з завершенням цього довгого уроку. Ви можете знайти готовий проект "
+"тут:`ui_gui_design.zip <files/ui_gui_design.zip>`."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
+#, fuzzy
 msgid ""
 "**A final note about Responsive Design**. If you resize the GUI, you'll see "
 "the nodes move, but the textures and text won't scale. The GUI also has a "
@@ -878,3 +1327,12 @@ msgid ""
 "16:9. They are close to one another. That's why it’s enough for the GUI "
 "elements to only move horizontally when we change the window size."
 msgstr ""
+"**Заключна примітка про чутливий дизайн**. Якщо змінити розмір графічного "
+"інтерфейсу, ви побачите, що вузли рухаються, але текстури та текст не будуть "
+"масштабуватися. GUI також має мінімальний розмір, виходячи з текстур "
+"всередині нього. В іграх нам не потрібно, щоб інтерфейс був настільки "
+"гнучким, як веб-сайт. Ви майже ніколи не будете підтримувати орієнтацію "
+"екрану як ландшафтну, так і портретну. Це те й інше. У ландшафтній "
+"орієнтації найпоширеніші співвідношення коливаються від 4: 3 до 16: 9. Вони "
+"близькі один одному. Ось чому для елементів графічного інтерфейсу досить "
+"переміщатися горизонтально лише тоді, коли ми змінюємо розмір вікна."

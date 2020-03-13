@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,9 +164,10 @@ msgstr ""
 "象的子级不可选择。``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
+#, fuzzy
 msgid ""
-"Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
-"``Command+S`` on Mac."
+"Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
+"Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
 "保存场景。点击场景 -> 保存，或者在Windows/Linux平台上按下 ``Ctrl+S`` 或是Mac"
 "上按下 ``Command+S``。"
@@ -849,7 +850,6 @@ msgstr ""
 "选择 ``Path2D`` 时，您将在编辑器顶部看到一些新按钮："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:676
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -904,10 +904,11 @@ msgstr ""
 "量`` 下的 ``Mob`` 属性中。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:740
+#, fuzzy
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
-"when a game ends. Type \"game_over\" in the \"Method In Node\" box at the "
+"when a game ends. Type \"game_over\" in the \"Receiver Method\" box at the "
 "bottom of the \"Connecting Signal\" window. Add the following code, as well "
 "as a ``new_game`` function to set everything up for a new game:"
 msgstr ""
@@ -1397,9 +1398,10 @@ msgstr ""
 "*Action* 属性中，键入名称 ``ui_select``。这是与空格键关联的默认输入事件。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1230
+#, fuzzy
 msgid ""
-"Now when the start button appears, you can either click it or press the "
-"spacebar to start the game."
+"Now when the start button appears, you can either click it or press :kbd:"
+"`Space` to start the game."
 msgstr "现在，当开始按钮出现时，您可以点击它或按空格键来启动游戏。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1234

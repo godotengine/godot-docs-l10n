@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:4
 msgid "Making plugins"
-msgstr ""
+msgstr "プラグインの作成"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:7
 msgid "About plugins"
@@ -35,6 +35,13 @@ msgid ""
 "already make, except it is created using a script to add editor "
 "functionality."
 msgstr ""
+"プラグインは、便利なツールを使用してエディタを拡張する優れた方法です。エディ"
+"タをリロードしなくても、GDScriptと標準シーンで完全に作成できます。モジュール"
+"とは異なり、C++コードを作成したり、エンジンを再コンパイルしたりする必要はあり"
+"ません。これによりプラグインのパワフルさが低下しますが、プラグインでできるこ"
+"とはまだたくさんあります。プラグインは、エディタ機能を追加するスクリプトを使"
+"用して作成されることを除いて、すでに作成できるシーンに似ていることに注意して"
+"ください。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:16
 msgid ""
@@ -57,6 +64,8 @@ msgid ""
 "Before starting, create a new empty project wherever you want. This will "
 "serve as a base to develop and test the plugins."
 msgstr ""
+"開始する前に、必要な場所に新しい空のプロジェクトを作成します。これは、プラグ"
+"インを開発およびテストするためのベースとして機能します。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:27
 msgid ""
@@ -66,6 +75,11 @@ msgid ""
 "inside the project folder. Godot provides a dialog for generating those "
 "files and placing them where they need to be."
 msgstr ""
+"エディタが新しいプラグインを識別するために最初に必要なことは、設定用の "
+"``plugin.cfg``と機能を備えたツールスクリプトの2つのファイルを作成することで"
+"す。 プラグインには、プロジェクトフォルダ内に ``addons/plugin_name`` のような"
+"標準パスがあります。Godotは、これらのファイルを生成し、必要な場所に配置するた"
+"めのダイアログを提供します。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:33
 msgid ""
@@ -73,24 +87,29 @@ msgid ""
 "Settings...``. Go to the ``Plugins`` tab and then click on the ``Create`` "
 "button in the top-right."
 msgstr ""
+"メインツールバーで、[プロジェクト]ドロップダウンをクリックします。 次に、[プ"
+"ロジェクト設定...]をクリックします。[プラグイン]タブに移動し、右上の[作成]ボ"
+"タンをクリックします。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:37
 msgid "You will see the dialog appear, like so:"
-msgstr ""
+msgstr "次のようなダイアログが表示されます:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:41
 msgid ""
 "The placeholder text in each field describes how it affects the plugin's "
 "creation of the files and the config file's values."
 msgstr ""
+"各フィールドのプレースホルダーテキストは、プラグインによるファイルの作成と構"
+"成ファイルの値にどのように影響するかを説明しています。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:44
 msgid "To continue with the example, use the following values::"
-msgstr "例に続いて、以下の値を使って下さい::"
+msgstr "例を続行するには、次の値を使用します:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:55
 msgid "You should end up with a directory structure like this:"
-msgstr "最後にディレクトリの構造はこの様になっています:"
+msgstr "次のようなディレクトリ構造になるはずです:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:59
 msgid ""
@@ -102,6 +121,13 @@ msgid ""
 ">`_. The main script file will instruct Godot what your plugin does in the "
 "editor once it is active."
 msgstr ""
+"``plugin.cfg``は、プラグインに関するメタデータを持つシンプルなINIファイルで"
+"す。名前と説明は、人々の理解を助けるものです。 あなたの名前はあなたがあなたの"
+"仕事に対して適切に認められるのに役立ちます。 バージョン番号は、他の人が古い"
+"バージョンであるかどうかを知るのに役立ちます。 バージョン番号を見つける方法が"
+"わからない場合は、\\ `Semantic Versioning <https://semver.org/>`_ を確認して"
+"ください。 メインスクリプトファイルは、プラグインがアクティブになると、プラグ"
+"インがエディタで行うことをGodotに指示します。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:68
 msgid "The script file"
@@ -114,6 +140,10 @@ msgid ""
 "change: it must be a ``tool`` script, or else it will not load properly in "
 "the editor, and it must inherit from :ref:`class_EditorPlugin`."
 msgstr ""
+"プラグインの作成時に、ダイアログが自動的にEditorPluginスクリプトを開きます。"
+"スクリプトには、変更できない2つの要件があります: まず ``tool`` スクリプトであ"
+"る必要があります。そうでない場合、エディタに適切にロードされされません。次"
+"に :ref:`class_EditorPlugin` を継承する必要があります。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:76
 msgid ""
@@ -121,6 +151,9 @@ msgid ""
 "uses must *also* be a tool.  Any GDScript without ``tool`` imported into the "
 "editor will act like an empty file!"
 msgstr ""
+"EditorPluginスクリプトに加えて、プラグインが使用する他のGDScriptは、\\ "
+"*tool* である必要があります。 エディタにインポートされた ``tool`` のない"
+"GDScriptは、空のファイルのようにふるまいます！"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:80
 msgid ""
@@ -131,10 +164,16 @@ msgid ""
 "the dialog generates these callbacks for you. Your script should look "
 "something like this:"
 msgstr ""
+"リソースの初期化とクリーンアップに対処することが重要です。 仮想関数 :ref:"
+"`_enter_tree() <class_Node_method__enter_tree>` を使用してプラグインを初期化"
+"し、\\ :ref:`_exit_tree() <class_Node_method__exit_tree>` を使用してクリーン"
+"アップすることをお勧めします。ありがたいことに、ダイアログはこれらのコール"
+"バックを生成します。 スクリプトは次のようになります:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:123
 msgid "This is a good template to use when creating new plugins."
 msgstr ""
+"これは、新しいプラグインを作成するときに使用するのに適したテンプレートです。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:126
 msgid "A custom node"
@@ -148,6 +187,11 @@ msgid ""
 "projects. A good solution to this is to make a plugin that adds a node with "
 "a custom behavior."
 msgstr ""
+"再利用可能なカスタムシーンやコントロールなど、多くのノードで特定の動作が必要"
+"な場合があります。 インスタンス化は多くの場合に役立ちますが、多くのプロジェク"
+"トでインスタンス化を使用している場合は特に、面倒な場合があります。 これに対す"
+"る適切な解決策は、カスタムの動作を持つノードを追加するプラグインを作成するこ"
+"とです。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:136
 msgid ""
@@ -156,6 +200,11 @@ msgid ""
 "Class system <doc_scripting_continued_class_name>`. If you are writing "
 "GDScript or NativeScript, we recommend using them instead."
 msgstr ""
+"EditorPluginを介して追加されたノードは \"CustomType\" ノードです。 どのスクリ"
+"プト言語でも動作しますが、\\ :ref:`スクリプトクラスシステム "
+"<doc_scripting_continued_class_name>` よりも機能が少なくなります。\\ GDScript"
+"またはNativeScriptを作成している場合は、そちらを代わりに使用することをお勧め"
+"します。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:141
 msgid ""
@@ -167,6 +216,12 @@ msgid ""
 "have to use the ``tool`` keyword, it can be added so the script runs in the "
 "editor."
 msgstr ""
+"新しいノードタイプを作成するには、\\ :ref:`class_EditorPlugin` クラスの関数 :"
+"ref:`add_custom_type() <class_EditorPlugin_method_add_custom_type>` を使用で"
+"きます。この関数は、新しいタイプのエディタ(ノードまたはリソース)を追加できま"
+"す。ただし、タイプを作成する前に、タイプのロジックとして機能するスクリプトが"
+"必要です。このスクリプトは ``tool`` キーワードを使用する必要はありませんが、"
+"スクリプトをエディタで実行させるためにそれを追加できます。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:148
 msgid ""
@@ -174,6 +229,9 @@ msgid ""
 "clicked. For that, we'll need a simple script that extends from :ref:"
 "`class_Button`. It could also extend :ref:`class_BaseButton` if you prefer:"
 msgstr ""
+"このチュートリアルでは、クリックされたときにメッセージを印刷する簡単なボタン"
+"を作成します。そのためには、\\ :ref:`class_Button` から拡張する簡単なスクリプ"
+"トが必要です。必要に応じて :ref:`class_BaseButton` を拡張することもできます:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:184
 msgid ""
@@ -184,6 +242,12 @@ msgid ""
 "Godot logo (`preload(\"res://icon.png\")`). You can also use SVG icons if "
 "desired."
 msgstr ""
+"基本的なボタンはこれで終わりです。これをプラグインフォルダ内に ``my_button."
+"gd`` として保存できます。シーンツリーに表示するには、16×16アイコンも必要で"
+"す。持っていない場合は、デフォルトのものをエンジンから取得して、\\ `addons/"
+"my_custom_node` フォルダに `icon.png` として保存するか、デフォルトのGodotロゴ"
+"(`preload(\"res://icon.png\")`)を使用します。 必要に応じて、SVGアイコンを使用"
+"することもできます。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:192
 msgid ""
@@ -191,6 +255,9 @@ msgid ""
 "Node** dialog. For that, change the ``custom_node.gd`` script to the "
 "following:"
 msgstr ""
+"次に、\\ **Nodeを新規作成 ** ダイアログに表示されるように、カスタムタイプとし"
+"て追加する必要があります。そのためには、\\ ``custom_node.gd`` スクリプトを次"
+"のように変更します:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:238
 msgid ""
@@ -198,10 +265,13 @@ msgid ""
 "the **Project Settings**, so activate it as explained in `Checking the "
 "results`_."
 msgstr ""
+"これが完了すると、プラグインは **プロジェクト設定** のプラグインリストですで"
+"に使用可能になっているはずなので、\\ `Checking the results`_ で説明されている"
+"ようにアクティブにします。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:241
 msgid "Then try it out by adding your new node:"
-msgstr ""
+msgstr "次に、新しいノードを追加して試してください:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:245
 msgid ""
@@ -209,6 +279,9 @@ msgid ""
 "created attached to it. Set a text to the button, save and run the scene. "
 "When you click the button, you can see some text in the console:"
 msgstr ""
+"ノードを追加すると、作成したスクリプトが既に接続されていることがわかります。 "
+"ボタンにテキストを設定し、シーンを保存して実行します。 ボタンをクリックする"
+"と、コンソールにテキストが表示されます:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:252
 msgid "A custom dock"
@@ -221,6 +294,10 @@ msgid ""
 "are just scenes based on Control, so they are created in a way similar to "
 "usual GUI scenes."
 msgstr ""
+"場合によっては、エディタを拡張し、常に使用可能なツールを追加する必要がありま"
+"す。簡単な方法は、新しいドックにプラグインを追加することです。ドックはコント"
+"ロールに基づいた単なるシーンであるため、通常のGUIシーンと同様の方法で作成され"
+"ます。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:258
 msgid ""
@@ -228,6 +305,9 @@ msgid ""
 "``plugin.cfg`` file in the ``addons/my_custom_dock`` folder, then add the "
 "following content to it:"
 msgstr ""
+"カスタムドックの作成は、カスタムノードのように行われます。\\ ``addons/"
+"my_custom_dock`` フォルダに新しい ``plugin.cfg`` ファイルを作成し、次のコンテ"
+"ンツを追加します:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:283
 msgid ""
@@ -235,6 +315,9 @@ msgid ""
 "the :ref:`template we've seen before <doc_making_plugins_template_code>` to "
 "get a good start."
 msgstr ""
+"に、同じフォルダにスクリプト ``custom_dock.gd`` を作成します。良いスタートを"
+"切るために、\\ :ref:`前に見たテンプレート <doc_making_plugins_template_code> "
+"` を入力してください。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:287
 msgid ""
@@ -242,6 +325,9 @@ msgid ""
 "of the dock. This is nothing more than a standard Godot scene: just create a "
 "new scene in the editor then edit it."
 msgstr ""
+"新しいカスタムドックを追加しようとしているので、ドックのコンテンツを作成する"
+"必要があります。これは、標準のGodotシーンに他なりません。エディタで新しいシー"
+"ンを作成し、編集するだけです。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:291
 msgid ""
@@ -251,6 +337,11 @@ msgid ""
 "appears on the dock tab, so be sure to give it a short and descriptive name. "
 "Also, don't forget to add some text to your button."
 msgstr ""
+"エディタドックの場合、ルートノードは **必ず** :ref:`Control <class_Control>` "
+"またはその子クラスでなければなりません。このチュートリアルでは、1つのボタンを"
+"作成できます。ルートノードの名前は、ドックタブに表示される名前でもあるため、"
+"必ず短くわかりやすい名前を付けてください。また、ボタンにテキストを追加するこ"
+"とを忘れないでください。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:299
 msgid ""
@@ -260,6 +351,10 @@ msgid ""
 "<class_EditorPlugin_method_add_control_to_dock>` from the :ref:`EditorPlugin "
 "<class_EditorPlugin>` class."
 msgstr ""
+"このシーンを ``my_dock.tscn`` として保存します。次に、作成したシーンを取得"
+"し、エディタでドックとして追加する必要があります。このために、\\ :ref:"
+"`EditorPlugin <class_EditorPlugin>` クラスの関数 :ref:`add_control_to_dock() "
+"<class_EditorPlugin_method_add_control_to_dock>` を使用できます。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:304
 msgid ""
@@ -267,12 +362,17 @@ msgid ""
 "the scene you just created). Don't forget to **remove the dock** when the "
 "plugin is deactivated. The script could look like this:"
 msgstr ""
+"ドックの位置を選択し、追加するコントロール(作成したばかりのシーン)を定義する"
+"必要があります。プラグインが非アクティブになったら、\\ **ドックを削除する** "
+"ことを忘れないでください。 スクリプトは次のようになります:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:362
 msgid ""
 "Note that, while the dock will initially appear at its specified position, "
 "the user can freely change its position and save the resulting layout."
 msgstr ""
+"ドックは指定された位置に最初に表示されますが、ユーザーは自由に位置を変更し、"
+"結果のレイアウトを保存できることに注意してください。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:366
 msgid "Checking the results"
@@ -285,6 +385,10 @@ msgid ""
 "one on the list. If it is not showing, click on the **Update** button in the "
 "top-right corner."
 msgstr ""
+"ここで、作業の結果を確認します。\\ **プロジェクト設定** を開き、\\ **プラグイ"
+"ン** タブをクリックします。プラグインはリストにある唯一のものでなければなりま"
+"せん。 表示されていない場合は、右上隅の[**アップデート**]ボタンをクリックしま"
+"す。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:375
 msgid ""
@@ -292,6 +396,9 @@ msgid ""
 "status to select **Active**. The dock should become visible before you even "
 "close the settings window. You should now have a custom dock:"
 msgstr ""
+"**ステータス** 列でプラグインが非アクティブであることを確認できます。ステータ"
+"スをクリックして[**Active**]を選択します。設定ウィンドウを閉じる前に、ドック"
+"が表示されるはずです。これで、カスタムドックができました:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:382
 msgid "Going beyond"
@@ -304,6 +411,10 @@ msgid ""
 "GDScript; it is a powerful way to create specialized editors without having "
 "to delve into C++ modules."
 msgstr ""
+"基本的なプラグインの作成方法を学習したので、エディタをいくつかの方法で拡張で"
+"きます。GDScriptを使用して、多くの機能をエディタに追加できます。これは、C++モ"
+"ジュールを詳しく掘り下げることなく、専用のエディタを作成するための強力な方法"
+"です。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:389
 msgid ""
@@ -311,3 +422,6 @@ msgid ""
 "Library <https://godotengine.org/asset-library/>`_ so that people can "
 "benefit from your work."
 msgstr ""
+"自分でプラグインを作成して自分自身を助け、\\ `Asset Library <https://"
+"godotengine.org/asset-library/>`_ で共有して、人々があなたの仕事から利益を得"
+"られるようにすることができます。"

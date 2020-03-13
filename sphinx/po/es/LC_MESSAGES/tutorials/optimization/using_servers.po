@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -217,7 +217,7 @@ msgid ""
 "using the low-level :ref:`CanvasItem <class_CanvasItem>` API."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/using_servers.rst:108
+#: ../../docs/tutorials/optimization/using_servers.rst:111
 msgid ""
 "The Canvas Item API in the server allows you to add draw primitives to it. "
 "Once added, they can't be modified. The Item needs to be cleared and the "
@@ -225,25 +225,25 @@ msgid ""
 "can be done as many times as desired)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/using_servers.rst:112
+#: ../../docs/tutorials/optimization/using_servers.rst:115
 msgid "Primitives are cleared this way:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/using_servers.rst:121
+#: ../../docs/tutorials/optimization/using_servers.rst:124
 msgid "Instantiating a Mesh into 3D space"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/using_servers.rst:123
+#: ../../docs/tutorials/optimization/using_servers.rst:126
 msgid ""
 "The 3D APIs are different than the 2D ones, so the instantiation API must be "
 "used."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/using_servers.rst:146
+#: ../../docs/tutorials/optimization/using_servers.rst:152
 msgid "Creating a 2D RigidBody and moving a sprite with it"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/using_servers.rst:148
+#: ../../docs/tutorials/optimization/using_servers.rst:154
 msgid ""
 "This creates a :ref:`RigidBody2D <class_RigidBody2D>` using the :ref:"
 "`Physics2DServer <class_Physics2DServer>` API, and moves a :ref:`CanvasItem "
@@ -253,18 +253,18 @@ msgstr ""
 "`Physics2DServer <class_Physics2DServer>`, y mueve un :ref:`CanvasItem "
 "<class_CanvasItem>` cuando se mueve el cuerpo."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:176
+#: ../../docs/tutorials/optimization/using_servers.rst:186
 msgid ""
 "The 3D version should be very similar, as 2D and 3D physics servers are "
 "identical (using :ref:`RigidBody <class_RigidBody>` and :ref:`PhysicsServer "
 "<class_PhysicsServer>` respectively)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/using_servers.rst:180
+#: ../../docs/tutorials/optimization/using_servers.rst:190
 msgid "Getting data from the servers"
 msgstr "Obteniendo datos de servidores"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:182
+#: ../../docs/tutorials/optimization/using_servers.rst:192
 msgid ""
 "Try to **never** request any information from ``VisualServer``, "
 "``PhysicsServer`` or ``Physics2DServer`` by calling functions unless you "
@@ -275,7 +275,7 @@ msgid ""
 "(and it won't be obvious why)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/using_servers.rst:188
+#: ../../docs/tutorials/optimization/using_servers.rst:198
 msgid ""
 "Because of this, most APIs in such servers are designed so it's not even "
 "possible to request information back, until it's actual data that can be "

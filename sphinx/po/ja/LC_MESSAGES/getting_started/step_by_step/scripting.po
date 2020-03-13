@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,9 +53,9 @@ msgid ""
 msgstr ""
 "ただし、Godotの「主要な」言語はGDScriptとVisualScriptです。それらを選択する主"
 "な理由は、Godotとの統合レベルが高いからです。これにより、開発作業がよりスムー"
-"ズになります。どちらも洗練されたエディタと統合されています。一方、C＃とC ++は"
-"別のIDEで編集する必要があります。もしもあなたが静的に型付けされた言語の大ファ"
-"ンであれば、C＃とC ++を使用してください。"
+"ズになります。どちらも洗練されたエディタと統合されています。一方、C#とC++は別"
+"のIDEで編集する必要があります。もしもあなたが静的に型付けされた言語の大ファン"
+"であれば、C#とC++を使用してください。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
@@ -67,8 +67,9 @@ msgid ""
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-"上記のように、GDScriptはGodotで使用されるメインの言語です。 Godotとの高度な統"
-"合により、他の言語と比較していくつかの利点があります。"
+"上記のように、\\ :ref:`GDScript <doc_gdscript>` はGodotで使用されるメインの言"
+"語です。 Godotとの高度な統合により、他の言語と比較していくつかの利点がありま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -121,8 +122,8 @@ msgid ""
 "engine."
 msgstr ""
 "その動的な性質により、より高いパフォーマンスが必要な場合には、エンジンを再コ"
-"ンパイルすることなく、C++のコード・セクション(経由GDNative)を簡単に最適化する"
-"ことができます。"
+"ンパイルすることなく、コードの一部をC++ (GDNative経由) で簡単に最適化すること"
+"ができます。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:36
 msgid ""
@@ -134,7 +135,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 msgid "VisualScript"
-msgstr "ビジュアルスクリプト"
+msgstr "VisualScript(ビジュアルスクリプト)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:42
 msgid ""
@@ -194,11 +195,11 @@ msgid ""
 "programming language, such as F#, Boo or ClojureCLR. In practice however, C# "
 "is the only officially supported .NET option."
 msgstr ""
-"Godotは\\ `Mono <https://mono-project.com>`_ \\ .NETランタイムを使用するた"
-"め、理論的には、サードパーティの.NETライブラリまたはフレームワークをGodotのス"
-"クリプトに使用できます。また、F#、Boo、ClojureCLRなどの共通言語インフラストラ"
-"クチャに準拠したプログラミング言語も使用できます。 ただし、実際には、C＃が公"
-"式にサポートされている唯一の.NETオプションです。"
+"Godotは\\ `Mono <https://mono-project.com>`_ .NETランタイムを使用するため、理"
+"論的には、サードパーティの.NETライブラリまたはフレームワークをGodotのスクリプ"
+"トに使用できます。また、F#、Boo、ClojureCLRなどの共通言語インフラストラクチャ"
+"に準拠したプログラミング言語も使用できます。 ただし、実際には、C#が公式にサ"
+"ポートされている唯一の.NETオプションです。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:71
 msgid "GDNative / C++"
@@ -209,8 +210,9 @@ msgid ""
 "Finally, one of our brightest additions for the 3.0 release: GDNative allows "
 "scripting in C++ without needing to recompile (or even restart) Godot."
 msgstr ""
-"最後に、3.0リリースの最も輝かしい追加の1つ:GDNativeを使用すると、Godotを再コ"
-"ンパイル(または再起動)しなくてもC++でスクリプトを作成できます。"
+"最後に、3.0リリースにおいて特に輝かしい追加物の1つ: GDNativeを使用すると、"
+"Godotを再コンパイル(または再起動すら)しなくてもC++でスクリプトを作成できま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
 msgid ""
@@ -231,8 +233,7 @@ msgid ""
 msgstr ""
 "この言語はパフォーマンスに最適な選択肢であり、ゲーム全体で使用する必要はあり"
 "ません。他の部分はGDScriptまたはVisual Scriptで作成できるためです。 とはい"
-"え、このAPIは、主にGodotの実際のC ++ APIに似ているため、明確で使いやすいで"
-"す。"
+"え、このAPIは、主にGodotの実際のC++ APIに似ているため、明確で使いやすいです。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
 msgid ""
@@ -283,12 +284,13 @@ msgid "Scene setup"
 msgstr "シーンの設定"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
+#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
-"pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
+"pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
-"シーンタブから「子ノードの追加」ダイアログにアクセスし(または``Ctrl+A`` を押"
-"して )、次のノードを持つ階層を作成します:"
+"シーンタブから「子ノードの追加」ダイアログにアクセスし (または ``Ctrl+A`` を"
+"押して)、次のノードを持つ階層を作成します:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
 msgid "Panel"
@@ -524,13 +526,12 @@ msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "次に、ボタンを押したときに呼び出される関数を書きます:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"最後に、\\ :ref:`Object.connect() <class_Object_method_connect>`\\ を使用し"
-"て、ボタンの「pressed」シグナルを\\ ``_ready()``\\ に接続します。"
+"最後に、\\ :ref:`Object.connect() <class_Object_method_connect>` を使用して、"
+"ボタンの\"pressed\"シグナルを ``_on_Button_pressed()`` に接続します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"

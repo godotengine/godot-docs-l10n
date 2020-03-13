@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,13 +84,14 @@ msgid "Translation format"
 msgstr "翻译格式"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
+#, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
-"has a special importer that can read CSV files. All spreadsheet editors (be "
-"it Libreoffice, Microsoft Office, Google Docs, etc.) can export to this "
-"format, so the only requirement is that the files have a special "
-"arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
-"as follows:"
+"has a special importer that can read CSV files. Most spreadsheet editors can "
+"export to this format, so the only requirement is that the files have a "
+"special arrangement. The CSV files **must** be saved with UTF-8 encoding "
+"without a `byte order mark <https://en.wikipedia.org/wiki/"
+"Byte_order_mark>`__."
 msgstr ""
 "为了完成这幅图景并提供高效的翻译支持，Godot有一个特殊的导入器，可以读取CSV文"
 "件。所有电子表格编辑器（可以是Libreoffice、Microsoft Office、Google Docs等）"
@@ -98,41 +99,60 @@ msgstr ""
 "以UTF-8编码保存，并按照以下格式设置："
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+msgid ""
+"By default, Microsoft Excel will always save CSV files with ANSI encoding "
+"rather than UTF-8. There is no built-in way to do this, but there are "
+"workarounds as described `here <https://stackoverflow.com/questions/4221176/"
+"excel-to-csv-with-utf8-encoding>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
+msgid ""
+"We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
+"Sheets instead."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
+#, fuzzy
+msgid "CSV files must be formatted as follows:"
+msgstr "文本内容如下："
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "keys"
 msgstr "键"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<lang1>"
 msgstr "<lang1>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<lang2>"
 msgstr "<lang2>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<langN>"
 msgstr "<langN>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
 msgid "KEY1"
 msgstr "KEY1"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:64
 msgid "string"
 msgstr "字符串"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
 msgid "KEY2"
 msgstr "KEY2"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:64
 msgid "KEYN"
 msgstr "KEYN"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid ""
 "The \"lang\" tags must represent a language, which must be one of the :ref:"
 "`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags must "
@@ -148,83 +168,83 @@ msgstr ""
 "换。特别注意，``KEY1`` 和 ``Key1`` 将是不同的键。左上方的单元格将被忽略，可以"
 "保留为空或包含任何内容。这是一个例子："
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "en"
 msgstr "en"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "es"
 msgstr "es"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "ja"
 msgstr "ja"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "GREET"
 msgstr "GREET"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "Hello, friend!"
 msgstr "Hello, friend!"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "Hola, amigo!"
 msgstr "Hola, amigo!"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "こんにちは"
 msgstr "こんにちは"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "ASK"
 msgstr "ASK"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "How are you?"
 msgstr "How are you?"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "Cómo está?"
 msgstr "Cómo está?"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "元気ですか"
 msgstr "元気ですか"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "BYE"
 msgstr "BYE"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Goodbye"
 msgstr "Goodbye"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Adiós"
 msgstr "Adiós"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "さようなら"
 msgstr "さようなら"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "QUOTE"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hello\" said the man."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hola\" dijo el hombre."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "「こんにちは」男は言いました"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:88
 #, fuzzy
 msgid ""
 "The same example is shown below as a comma-separated plain text file, which "
@@ -237,15 +257,18 @@ msgid ""
 "Alternatively, you can select another delimiter than comma in the import "
 "options."
 msgstr ""
-"相同的示例在下面显示为逗号分隔的纯文本文件，这应该是在电子表格中编辑以上示例"
-"的结果。在编辑纯文本版本时，请确保将任何包含逗号的信息，用双引号括起来，以便"
-"不会将逗号解析为定界符。或者，您可以在导入选项中选择另一种定界符。"
+"下面是一个纯文本文件的相同示例，它以逗号分隔各项，这应该是在电子表格中编辑上"
+"面示例的结果。在编辑纯文本时，请确保将有逗号、换行符或双引号的内容，用双引号"
+"括起来。以便内容不会把逗号解析为定界符，换行符不会创建新条目，内容里的双引号"
+"不会被解析为字符串的边界。确保在内容前面包含另一个双引号用来转义，目的是告知"
+"解析器内容中可能包含双引号。 或者，您可以在导入选项中选择除逗号以外的其他定界"
+"符。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:97
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
 msgid "CSV importer"
 msgstr "CSV 导入器"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:109
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
@@ -253,7 +276,7 @@ msgstr ""
 "Godot 将 CSV 文件默认作为译文处理。它将导入它们，并在其旁边位置生成一个或多个"
 "压缩过的翻译资源文件。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:102
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:112
 msgid ""
 "Importing will also add the translation to the list of translations to load "
 "when the game runs, specified in project.godot (or the project settings). "
@@ -262,15 +285,17 @@ msgstr ""
 "导入还会将翻译添加到，要在游戏运行时加载的翻译列表中，在 ``project.godot`` "
 "（或项目设置）中指定。Godot还允许在运行时加载和删除翻译。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:117
+#, fuzzy
 msgid ""
-"Select the ``.csv`` file and access the \"Import\" dock to define import "
+"Select the ``.csv`` file and access the **Import** dock to define import "
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
 "选择 ``.csv`` 文件并访问导入停靠面板，以定义导入选项。您可以切换导入翻译的压"
 "缩，并选择在解析CSV文件时使用的定界符。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:113
-msgid "Be sure to click \"Reimport\" after any change to these options."
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:123
+#, fuzzy
+msgid "Be sure to click **Reimport** after any change to these options."
 msgstr "对这些选项进行任何更改后，请务必点击 ``重新导入``。"

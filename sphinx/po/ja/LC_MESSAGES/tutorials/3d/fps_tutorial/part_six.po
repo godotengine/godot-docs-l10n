@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:4
 msgid "Part 6"
-msgstr ""
+msgstr "パート6"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:7
 msgid "Part overview"
-msgstr ""
+msgstr "パートの概要"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:9
 msgid ""
@@ -31,12 +31,17 @@ msgid ""
 "system for the player, and change/move the sound system so we can use it "
 "from any script."
 msgstr ""
+"このパートでは、メインメニューと一時停止メニューを追加し、プレーヤーの再出現"
+"システムを追加し、サウンドシステムを変更/移動して、どのスクリプトからでも使用"
+"できるようにします。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:12
 msgid ""
 "This is the last part of the FPS tutorial; by the end of this, you will have "
 "a solid base to build amazing FPS games with Godot!"
 msgstr ""
+"これはFPSチュートリアルの最後の部分です。これが完了すると、Godotですばらしい"
+"FPSゲームを構築するための強固な基盤が得られます！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:16
 msgid ""
@@ -44,26 +49,33 @@ msgid ""
 "moving on to this part of the tutorial. The finished project from :ref:"
 "`doc_fps_tutorial_part_five` will be the starting project for part 6"
 msgstr ""
+"チュートリアルのこの部分に進む前に、\\ :ref:`doc_fps_tutorial_part_five` を終"
+"了していると想定しています。\\ :ref:`doc_fps_tutorial_part_five` の完成したプ"
+"ロジェクトは、パート6の開始プロジェクトになります"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:19
 msgid "Let's get started!"
-msgstr ""
+msgstr "では、始めましょう！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:22
 msgid "Adding the main menu"
-msgstr ""
+msgstr "メインメニューの追加"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:24
 msgid ""
 "Firstly, open up ``Main_Menu.tscn`` and take a look at how the scene is set "
 "up."
 msgstr ""
+"まず、\\ ``Main_Menu.tscn`` を開き、シーンがどのように設定されているかを見て"
+"みましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:26
 msgid ""
 "The main menu is broken up into three different panels, each representing a "
 "different 'screen' of our main menu."
 msgstr ""
+"メインメニューは3つの異なるパネルに分かれており、それぞれがメインメニューの異"
+"なる「画面」を表しています。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:29
 msgid ""
@@ -71,6 +83,9 @@ msgid ""
 "bit more interesting than a solid color. It's a camera looking around the "
 "skybox, nothing fancy."
 msgstr ""
+"``Background_Animation`` ノードは、メニューの背景が単色よりも少し興味深くなる"
+"ようになっています。 それはスカイボックスの周りを見るカメラであり、空想的なも"
+"のではありません。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:32
 msgid ""
@@ -78,12 +93,17 @@ msgid ""
 "keep only ``Start_Menu`` visible when you're done, as that's the screen we "
 "want to show first when we enter the main menu."
 msgstr ""
+"すべてのノードを自由に展開して、どのように設定されているかを確認してくださ"
+"い。メインメニューに入ったときに最初に表示したい画面なので、終了したら "
+"``Start_Menu`` のみを表示することを忘れないでください。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:35
 msgid ""
 "Select ``Main_Menu`` (the root node) and create a new script called "
 "``Main_Menu.gd``. Add the following:"
 msgstr ""
+"``Main_Menu``(ルートノード)を選択し、\\ ``Main_Menu.gd`` という新しいスクリプ"
+"トを作成します。次のように追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:122
 msgid ""
@@ -91,80 +111,103 @@ msgid ""
 "of this tutorial series. **We're only going to look at the UI related code "
 "briefly.**"
 msgstr ""
+"ここのコードの大部分はUIの作成に関連していますが、これはこのチュートリアルシ"
+"リーズの目的外です。\\ **UI関連のコードについては簡単に説明します。**"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:125
 msgid ""
 "See :ref:`doc_ui_main_menu` and the tutorials following for better ways to "
 "make GUIs and UIs!"
 msgstr ""
+"GUIとUIを作成するより良い方法については、\\ :ref:`doc_ui_main_menu` とその"
+"チュートリアルを参照してください！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:127
 msgid "Let's look at the class variables first."
-msgstr ""
+msgstr "まずクラス変数を見てみましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:129
 msgid ""
 "``start_menu``: A variable to hold the ``Start_Menu`` :ref:`Panel "
 "<class_Panel>`."
 msgstr ""
+"``start_menu``: ``Start_Menu`` を保持する :ref:`Panel <class_Panel>` 変数 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:130
 msgid ""
 "``level_select_menu``: A variable to hold the ``Level_Select_Menu`` :ref:"
 "`Panel <class_Panel>`."
 msgstr ""
+"``level_select_menu``: ``Level_Select_Menu`` を保持する :ref:`Panel "
+"<class_Panel>` 変数。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:131
 msgid ""
 "``options_menu``: A variable to hold the ``Options_Menu`` :ref:`Panel "
 "<class_Panel>`."
 msgstr ""
+"``options_menu``: ``Options_Menu`` を保持する :ref:`Panel <class_Panel>` 変"
+"数。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:132
 msgid ""
 "``testing_area_scene``: The path to the ``Testing_Area.tscn`` file, so we "
 "can change to it from this scene."
 msgstr ""
+"``testing_area_scene``: ``Testing_Area.tscn`` ファイルへのパスなので、この"
+"シーンから変更できます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:133
 msgid ""
 "``space_level_scene``: The path to the ``Space_Level.tscn`` file, so we can "
 "change to it from this scene."
 msgstr ""
+"``space_level_scene``: ``Space_Level.tscn`` ファイルへのパスなので、このシー"
+"ンから変更できます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:134
 msgid ""
 "``ruins_level_scene``: The path to the ``Ruins_Level.tscn`` file, so we can "
 "change to it from this scene."
 msgstr ""
+"``ruins_level_scene``: ``Ruins_Level.tscn`` ファイルへのパスなので、このシー"
+"ンから変更できます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:136
 msgid ""
 "You'll have to set the paths to the correct files in the editor before "
 "testing this script! Otherwise it will not work!"
 msgstr ""
+"このスクリプトをテストする前に、エディタで正しいファイルへのパスを設定する必"
+"要があります！ それ以外の場合は動作しません！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:140
 msgid "Now let's go over ``_ready``"
-msgstr ""
+msgstr "さあ、\\ ``_ready`` を見てみましょう"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:142
 msgid ""
 "Firstly, we get all the :ref:`Panel <class_Panel>` nodes and assign them to "
 "the proper variables."
 msgstr ""
+"まず、すべての :ref:`Panel <class_Panel>` ノードを取得し、適切な変数に割り当"
+"てます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:144
 msgid ""
 "Next, we connect all the buttons ``pressed`` signals to their respective "
 "``[panel_name_here]_button_pressed`` functions."
 msgstr ""
+"次に、すべてのボタンの ``pressed`` シグナルをそれぞれの ``[ここはにはパネル名"
+"が入る]_button_pressed`` 関数に接続します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:146
 msgid ""
 "We then set the mouse mode to ``MOUSE_MODE_VISIBLE`` to ensure whenever the "
 "player returns to this scene, the mouse will be visible."
 msgstr ""
+"次に、マウスモードを ``MOUSE_MODE_VISIBLE`` に設定して、プレイヤーがこのシー"
+"ンに戻るたびにマウスが表示されるようにします。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:148
 msgid ""
@@ -172,29 +215,39 @@ msgid ""
 "ref:`HSlider <class_HSlider>` nodes so their values line up with the mouse "
 "and joypad sensitivity in the singleton."
 msgstr ""
+"次に、\\ ``Globals`` と呼ばれるシングルトンを取得します。次に、\\ :ref:"
+"`HSlider <class_HSlider>` ノードの値を設定し、その値がシングルトンのマウスと"
+"ジョイパッドの感度と一致するようにします。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:151
 msgid ""
 "We have not made the ``Globals`` singleton yet, so don't worry! We're going "
 "to make it soon!"
 msgstr ""
+"まだ ``Globals`` シングルトンを作成していませんが、心配しないでください！ 私"
+"たちはすぐにそれを作るつもりです！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:155
 msgid ""
 "In ``start_menu_button_pressed``, we check to see which button is pressed."
 msgstr ""
+"``start_menu_button_pressed`` では、どのボタンが押されているかを確認します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:157
 msgid ""
 "Based on the button pressed, we either change the currently visible panel, "
 "quit the application, or open the Godot website."
 msgstr ""
+"押されたボタンに基づいて、現在表示されているパネルを変更するか、アプリケー"
+"ションを終了するか、Godot Webサイトを開きます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:161
 msgid ""
 "In ``level_select_menu_button_pressed``, we check to see which button is "
 "pressed."
 msgstr ""
+"``level_select_menu_button_pressed`` で、どのボタンが押されているかを確認しま"
+"す。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:163
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:175
@@ -202,6 +255,8 @@ msgid ""
 "If the ``back`` button has been pressed, we change the currently visible "
 "panels to return to the main menu."
 msgstr ""
+"``back`` ボタンが押された場合、現在表示されているパネルを変更してメインメ"
+"ニューに戻ります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:165
 msgid ""
@@ -211,15 +266,21 @@ msgid ""
 "singleton to change nodes using its ``load_new_scene`` function, passing in "
 "the file path of the scene the player has selected."
 msgstr ""
+"シーン変更ボタンのいずれかが押された場合、最初に "
+"``set_mouse_and_joypad_sensitivity`` を呼び出すので、シングルトン(``Globals."
+"gd``)は :ref:`HSlider <class_HSlider>` ノードからの値を持ちます。 次に、シン"
+"グルトンに ``load_new_scene`` 関数を使用してノードを変更し、プレイヤーが選択"
+"したシーンのファイルパスを渡します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:169
 msgid "Don't worry about the singleton, we'll get there soon!"
-msgstr ""
+msgstr "シングルトンについては心配しないでください、すぐにそこへ到着します！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:173
 msgid ""
 "In ``options_menu_button_pressed``, we check to see which button is pressed."
 msgstr ""
+"``options_menu_button_pressed`` で、どのボタンが押されているかを確認します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:177
 msgid ""
@@ -227,21 +288,26 @@ msgid ""
 "<class_OS>`'s full screen mode by setting it to the flipped version of its "
 "current value."
 msgstr ""
+"``fullscreen`` ボタンが押された場合、\\ :ref:`OS <class_OS>` のフルスクリーン"
+"モードを、現在のモードと逆のモードに設定することで切り替えます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:179
 msgid ""
 "If the ``vsync`` button is pressed, we set the :ref:`OS <class_OS>`'s Vsync "
 "based on the state of the Vsync check button."
 msgstr ""
+"``vsync`` ボタンが押されると、Vsyncチェックボタンの状態に基づいて :ref:`OS "
+"<class_OS>` のVsyncを設定します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:183
 msgid "Finally, lets take a look at ``set_mouse_and_joypad_sensitivity``."
-msgstr ""
+msgstr "最後に、\\ ``set_mouse_and_joypad_sensitivity`` を見てみましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:185
 msgid ""
 "Firstly, we get the ``Globals`` singleton and assign it to a local variable."
 msgstr ""
+"まず、\\ ``Globals`` シングルトンを取得し、ローカル変数に割り当てます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:187
 msgid ""
@@ -249,16 +315,21 @@ msgid ""
 "to the values in their respective :ref:`HSlider <class_HSlider>` node "
 "counterparts."
 msgstr ""
+"次に、\\ ``mouse_sensitivity`` および ``joypad_sensitivity`` 変数を、それぞれ"
+"の :ref:`HSlider <class_HSlider>` ノードの対応する値に設定します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:190
 msgid "Making the ``Globals`` singleton"
-msgstr ""
+msgstr "``Globals`` シングルトンを作る"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:192
 msgid ""
 "Now, for all this to work, we need to create the ``Globals`` singleton. Make "
 "a new script in the ``Script`` tab and call it ``Globals.gd``."
 msgstr ""
+"さて、これがすべて機能するためには、\\ ``Globals`` シングルトンを作成する必要"
+"があります。\\ ``Script``タブで新しいスクリプトを作成し、\\ ``Globals.gd`` と"
+"呼びます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:194
 msgid ""
@@ -267,10 +338,14 @@ msgid ""
 "unchanged except for the ``Path`` where you need to insert the script's name "
 "``Globals.gd``."
 msgstr ""
+"``Globals`` シングルトンを作成するには、エディタの ``Script`` タブに移動"
+"し、\\ ``新規スクリプト`` をクリックすると ``スクリプト作成`` ボックスが表示"
+"されます。 スクリプト名 ``Globals.gd`` を挿入する必要がある ``パス`` 以外は変"
+"更しないでください。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:196
 msgid "Add the following to ``Globals.gd``."
-msgstr ""
+msgstr "``Globals.gd`` に以下を追加します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:211
 msgid ""
@@ -279,18 +354,25 @@ msgid ""
 "is doing is holding two class variables, and abstract defining how we change "
 "scenes."
 msgstr ""
+"ご覧のとおり、非常に小さくシンプルです。 この部分が進むにつれて、\\ "
+"``Globals.gd`` にさらに複雑なロジックを追加し続けますが、現時点では、2つのク"
+"ラス変数を保持し、シーンの変更方法を抽象的に定義するだけです。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:214
 msgid ""
 "``mouse_sensitivity``: The current sensitivity for our mouse, so we can load "
 "it in ``Player.gd``."
 msgstr ""
+"``mouse_sensitivity``: マウスの現在の感度です。これを ``Player.gd`` で読み込"
+"むことができます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:215
 msgid ""
 "``joypad_sensitivity``: The current sensitivity for our joypad, so we can "
 "load it in ``Player.gd``."
 msgstr ""
+"``joypad_sensitivity``: ジョイパッドの現在の感度です。これを ``Player.gd`` で"
+"読み込むことができます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:217
 msgid ""
@@ -299,6 +381,10 @@ msgid ""
 "are stored in ``Globals.gd``, any changes we make in one scene (like in "
 "``Options_Menu``) will affect the sensitivity for the player."
 msgstr ""
+"今のところ、\\ ``Globals.gd`` を使用するのは、シーン間で変数をやりとりする手"
+"段としてだけです。マウスとジョイパッドの感度は ``Globals.gd`` に保存されてい"
+"るため、1つのシーン(``Options_Menu`` など)で行った変更は、プレイヤーの感度に"
+"影響します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:220
 msgid ""
@@ -306,16 +392,23 @@ msgid ""
 "<class_SceneTree>`'s ``change_scene`` function, passing in the scene path "
 "given in ``load_new_scene``."
 msgstr ""
+"``load_new_scene`` で行っているのは、\\ :ref:`SceneTree <class_SceneTree>` "
+"の ``change_scene`` 関数を呼び出して、\\ ``load_new_scene`` で指定されたシー"
+"ンパスを渡すことです。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:222
 msgid ""
 "That's all the code needed for ``Globals.gd`` right now! Before we can test "
 "the main menu, we first need to set ``Globals.gd`` as an autoload script."
 msgstr ""
+"``Globals.gd`` に今必要なコードはこれだけです！ メインメニューをテストする前"
+"に、まず ``Globals.gd`` を自動読み込みスクリプトとして設定する必要がありま"
+"す。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:224
 msgid "Open up the ``Project Settings`` and click the ``AutoLoad`` tab."
 msgstr ""
+"``プロジェクト設定`` を開き、\\ ``自動読み込み`` タブをクリックします。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:228
 msgid ""
@@ -324,24 +417,34 @@ msgid ""
 "``Globals``. If you have everything like in the picture above, then press "
 "``Add``!"
 msgstr ""
+"次に、\\ ``パス`` フィールドの横にあるボタン(フォルダのアイコン)をクリックし"
+"て、\\ ``Globals.gd`` へのパスを選択します。\\ ``ノード名`` フィールドの名前"
+"が ``Globals`` であることを確認します。 上の図のようになっていれば、\\ ``追加"
+"`` を押してください！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:231
 msgid ""
 "This will make ``Globals.gd`` a singleton/autoload script, which will allow "
 "us to access it from any script, in any scene."
 msgstr ""
+"これにより、\\ ``Globals.gd`` がシングルトン/自動読み込みスクリプトになり、ど"
+"のシーンのどのスクリプトからでもアクセスできるようになります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:233
 msgid ""
 "For more information on singleton/autoload scripts, see :ref:"
 "`doc_singletons_autoload`."
 msgstr ""
+"シングルトン/自動読み込みスクリプトの詳細については、\\ :ref:"
+"`doc_singletons_autoload` を参照してください。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:235
 msgid ""
 "Now that ``Globals.gd`` is a singleton/autoload script, you can test the "
 "main menu!"
 msgstr ""
+"``Globals.gd`` はシングルトン/自動読み込みスクリプトなので、メインメニューを"
+"テストできます！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:237
 msgid ""
@@ -352,6 +455,11 @@ msgid ""
 "subcategory and you can change the main scene by changing the value in "
 "``Main Scene``."
 msgstr ""
+"メインシーンを ``Testing_Area.tscn`` から ``Main_Menu.tscn`` に変更すると、"
+"ゲームをエクスポートするときにプレイヤーがメインメニューで開始するようになり"
+"ます。 これは、\\ ``プロジェクト設定`` の ``一般`` タブで行うことができま"
+"す。\\ ``Application`` カテゴリの ``Run`` サブカテゴリをクリックし、\\ "
+"``Main Scene`` の値を変更してメインシーンを変更できます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:241
 msgid ""
@@ -359,16 +467,21 @@ msgid ""
 "editor before testing the main menu! Otherwise you will not be able to "
 "change scenes from the level select menu/screen."
 msgstr ""
+"メインメニューをテストする前に、エディタの ``Main_Menu`` で正しいファイルへの"
+"パスを設定する必要があります！ そうしないと、レベル選択メニュー/画面からシー"
+"ンを変更できません。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:245
 msgid "Adding the debug menu"
-msgstr ""
+msgstr "デバッグメニューの追加"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:247
 msgid ""
 "Now, let's add a simple debugging scene so we can track things like FPS "
 "(Frames Per Second) in-game. Open up ``Debug_Display.tscn``."
 msgstr ""
+"では、ゲーム内でFPS(Frames Per Second)などを追跡できるように、簡単なデバッグ"
+"シーンを追加しましょう。\\ ``Debug_Display.tscn`` を開きます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:249
 msgid ""
@@ -378,6 +491,10 @@ msgid ""
 "the game is running, and a label for showing with which Godot version the "
 "game is running."
 msgstr ""
+"画面の右上隅に配置された :ref:`Panel <class_Panel>` であることがわかりま"
+"す。\\ :ref:`Labels <class_Label>` が3つあります。1つはゲームが実行されている"
+"FPSを表示するためのもの、もう1つはゲームが実行されているOSを示すためのもの、"
+"そしてゲームが実行されているGodotバージョンを示すためのラベルです。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:252
 msgid ""
@@ -385,10 +502,13 @@ msgid ""
 "``Debug_Display`` and create a new script called ``Debug_Display.gd``. Add "
 "the following:"
 msgstr ""
+"これらの :ref:`Lebels <class_Label>` を埋めるために必要なコードを追加しましょ"
+"う。\\ ``Debug_Display`` を選択し、\\ ``Debug_Display.gd`` という新しいスクリ"
+"プトを作成します。 次のように追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:265
 msgid "Let's go over what this script does."
-msgstr ""
+msgstr "このスクリプトの動作について説明します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:269
 msgid ""
@@ -398,6 +518,11 @@ msgid ""
 "when you are running Windows, it will return ``Windows``, while when you are "
 "running Linux, it will return ``X11``."
 msgstr ""
+"``_ready`` では、\\ ``get_name`` 関数を使用して、\\ :ref:`OS <class_OS>` に"
+"よって提供される名前に ``OS_Label`` のテキストを設定します。これは、Godotがコ"
+"ンパイルされたOS(またはオペレーティングシステム)の名前を返します。たとえば、"
+"Windowsを実行している場合は ``Windows`` を返し、Linuxを実行している場合は "
+"``X11`` を返します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:273
 msgid ""
@@ -409,6 +534,13 @@ msgid ""
 "``Engine_Label``. See :ref:`Engine <class_Engine>` for more information on "
 "the values ``get_version_info`` returns."
 msgstr ""
+"次に、\\ ``Engine_Label`` のテキストを ``Engine.get_version_info`` によって提"
+"供されるバージョン情報に設定します。\\ ``Engine.get_version_info`` は、現在実"
+"行中のGodotのバージョンに関する有用な情報が満載されたdictionaryを返します。少"
+"なくともこのラベルについては、文字列バージョンのみが重要なので、文字列を取得"
+"し、それを\\ ``Engine_Label`` の ``text`` として割り当てます。\\ "
+"``get_version_info`` が返す値の詳細については :ref:`Engine <class_Engine>` を"
+"参照してください。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:277
 msgid ""
@@ -417,42 +549,53 @@ msgid ""
 "integer, we have to cast it to a string using ``str`` before we can add it "
 "to the :ref:`Label <class_Label>`."
 msgstr ""
+"``_process`` では、\\ ``FPS_Label`` のテキストを ``Engine."
+"get_frames_per_second`` に設定しますが、\\ ``get_frames_per_second`` は整数を"
+"返すため、\\ ``:ref:`Label <class_Label>` に追加する前に ``str`` を使用して文"
+"字列にキャストする必要があります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:282
 msgid ""
 "Now let's jump back to ``Main_Menu.gd`` and change the following in "
 "``options_menu_button_pressed``:"
 msgstr ""
+"次に、\\ ``Main_Menu.gd`` に戻って、\\ ``options_menu_button_pressed`` で次の"
+"項目を変更してみましょう:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:289
 msgid "to this instead:"
-msgstr ""
+msgstr "代わりにこれを実行します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:296
 msgid ""
 "This will call a new function called ``set_debug_display`` in our singleton, "
 "so let's add that next!"
 msgstr ""
+"これにより、シングルトン内で ``set_debug_display`` という新しい関数が呼び出さ"
+"れるので、次に追加しましょう！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:300
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:391
 msgid "Open up ``Globals.gd`` and add the following class variables:"
-msgstr ""
+msgstr "``Globals.gd`` を開き、次のクラス変数を追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:314
 msgid ""
 "``canvas_layer``: A canvas layer so the GUI/UI created in ``Globals.gd`` is "
 "always drawn on top."
 msgstr ""
+"``canvas_layer``: ``Globals.gd`` で作成されたGUI / UIが常に一番上に描画される"
+"キャンバスレイヤー。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:315
 msgid "``DEBUG_DISPLAY``: The debug display scene we worked on earlier."
-msgstr ""
+msgstr "``DEBUG_DISPLAY``: 先ほど取り組んだデバッグ表示シーン。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:316
 msgid ""
 "``debug_display``: A variable to hold the debug display when/if there is one."
 msgstr ""
+"``debug_display``: デバッグ表示がある場合にデバッグ表示を保持する変数。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:318
 msgid ""
@@ -460,6 +603,9 @@ msgid ""
 "``_ready`` so ``Globals.gd`` will have a canvas layer to use (which we will "
 "store in ``canvas_layer``). Change ``_ready`` to the following:"
 msgstr ""
+"クラス変数が定義されたので、\\ ``_ready`` に数行を追加して、使用するキャンバ"
+"スレイヤーを ``Globals.gd`` が保持するようにする必要があります。\\ "
+"``_ready`` を次のように変更します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:327
 msgid ""
@@ -470,6 +616,12 @@ msgid ""
 "makes a :ref:`Node <class_Node>`, we can treat ``Globals.gd`` like any other "
 "node with regard to adding/removing children nodes."
 msgstr ""
+"``_ready`` で、新しいキャンバスレイヤーを作成し、それを ``canvas_layer`` に割"
+"り当てて、子として追加します。\\ ``Globals.gd`` は自動読み込み/シングルトンで"
+"あるため、Godotはゲームの起動時に :ref:`Node <class_Node>` を作成し、それに "
+"``Globals.gd`` がアタッチされます。Godotは :ref:`Node <class_Node>` を作成す"
+"るため、子ノードの追加/削除に関しては、他のノードと同様に ``Globals.gd`` を扱"
+"うことができます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:331
 msgid ""
@@ -477,6 +629,9 @@ msgid ""
 "our GUI and UI nodes we instance/spawn in ``Globals.gd`` are always drawn on "
 "top of everything else."
 msgstr ""
+":ref:`CanvasLayer <class_CanvasLayer>` を追加する理由は、\\ ``Globals.gd`` で"
+"インスタンス化/生成するすべてのGUIおよびUIノードが常に他のすべての上に描画さ"
+"れるためです。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:334
 msgid ""
@@ -486,20 +641,27 @@ msgid ""
 "memory problems if you are instancing/spawning lots of nodes and you are not "
 "freeing them."
 msgstr ""
+"シングルトン/自動読み込みにノードを追加するときは、子ノードへの参照を失わない"
+"ように注意する必要があります。これは、アクティブなシーンを変更してもノードが"
+"解放/破棄されないためです。つまり、多くのノードをインスタンス化/生成してい"
+"て、それを解放していない場合、メモリの問題が発生する可能性があります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:340
 msgid "Now we need to add ``set_debug_display`` to ``Globals.gd``:"
 msgstr ""
+"次に、\\ ``set_debug_display`` を ``Globals.gd`` に追加する必要があります:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:354
 msgid "Let's go over what's happening."
-msgstr ""
+msgstr "何が起こっているのか見ていきましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:356
 msgid ""
 "First we check to see if ``Globals.gd`` is trying to turn on the debug "
 "display, or turn it off."
 msgstr ""
+"まず、\\ ``Globals.gd`` がデバッグ表示をオンにしようとしているか、オフにしよ"
+"うとしているかを確認します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:358
 msgid ""
@@ -509,6 +671,12 @@ msgid ""
 "active. If ``Globals.gd`` has a debug display active, we free it using "
 "``queue_free`` and then assign ``debug_display`` to ``null``."
 msgstr ""
+"``Globals.gd`` がディスプレイをオフにしている場合、\\ ``debug_display`` が "
+"``null`` と等しくないかどうかを確認します。\\ ``debug_display`` が ``null`` "
+"と等しくない場合、\\ ``Globals.gd`` には現在アクティブなデバッグ表示が必要で"
+"す。\\ `` Globals.gd`` がデバッグ表示をアクティブにしている場合、\\ "
+"``queue_free`` を使用してそれを解放し、\\ ``null`` を ``debug_display`` に割"
+"り当てます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:361
 msgid ""
@@ -518,6 +686,11 @@ msgid ""
 "``null``, we instance a new ``DEBUG_DISPLAY_SCENE``, and add it as a child "
 "of ``canvas_layer``."
 msgstr ""
+"``Globals.gd`` がディスプレイをオンにしている場合、\\ ``Globals.gd`` のデバッ"
+"グディスプレイがまだアクティブになっていないことを確認します。これを行うに"
+"は、\\ ``debug_display`` が ``null`` と等しくなるようにします。\\ "
+"``debug_display`` が ``null`` の場合、新しい ``DEBUG_DISPLAY_SCENE`` をインス"
+"タンス化し、それを ``canvas_layer`` の子として追加します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:367
 msgid ""
@@ -525,6 +698,9 @@ msgid ""
 "the :ref:`CheckButton <class_CheckButton>` in the ``Options_Menu`` panel. Go "
 "give it a try!"
 msgstr ""
+"これで、\\ ``Options_Menu`` パネルの :ref:`CheckButton <class_CheckButton>` "
+"を切り替えることで、デバッグ表示のオンとオフを切り替えることができます。試し"
+"てみてください！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:369
 msgid ""
@@ -535,20 +711,27 @@ msgid ""
 "children of the singleton/autoload will stay for as long as the game is "
 "running, without any additional work on our part!"
 msgstr ""
+"シーンを ``Main_Menu.tscn`` から別のシーン(``Testing_Area.tscn`` など)に変更"
+"しても、デバッグ表示がどのように維持されるかに注意してください。これは、シン"
+"グルトン/自動読み込みにノードをインスタンス化/生成し、それらをシングルトン/自"
+"動読み込みに子として追加することの美しさです。シングルトン/自動読み込みの子と"
+"して追加されたノードは、ゲームが実行されている限り、追加作業なしで残ります！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:374
 msgid "Adding a pause menu"
-msgstr ""
+msgstr "一時停止メニューの追加"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:376
 msgid ""
 "Let's add a pause menu so we can return to the main menu when we press the "
 "``ui_cancel`` action."
 msgstr ""
+"一時停止メニューを追加して、\\ ``ui_cancel`` アクションを押したときにメインメ"
+"ニューに戻ることができるようにします。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:378
 msgid "Open up ``Pause_Popup.tscn``."
-msgstr ""
+msgstr "``Pause_Popup.tscn`` を開きます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:380
 msgid ""
@@ -557,6 +740,10 @@ msgid ""
 "from :ref:`Popup <class_Popup>`, which means :ref:`WindowDialog "
 "<class_WindowDialog>` can act like a popup."
 msgstr ""
+"``Pause_Popup`` のルートノードが :ref:`WindowDialog <class_WindowDialog>` で"
+"あることに注意してください。\\ :ref:`WindowDialog <class_WindowDialog>` は :"
+"ref:`Popup <class_Popup>` から継承します。つまり、\\ :ref:`WindowDialog "
+"<class_WindowDialog>` はポップアップのように機能します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:383
 msgid ""
@@ -566,6 +753,11 @@ msgid ""
 "makes it so it will continue to process even when the game is paused, which "
 "we need in order to interact with the UI elements."
 msgstr ""
+"``Pause_Popup`` を選択し、インスペクタの ``Pause`` メニューに到達するまで下に"
+"スクロールします。一時停止モードが、デフォルトで通常設定されているように、\\ "
+"``inherit`` ではなく ``process`` に設定されていることに注意してください。これ"
+"により、ゲームが一時停止されている場合でも処理を続行します。これは、UI要素と"
+"対話するために必要です。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:387
 msgid ""
@@ -575,28 +767,34 @@ msgid ""
 "couple of signals in ``Globals.gd``, we'll write all the code for the popup "
 "there."
 msgstr ""
+"``Pause_Popup.tscn`` の設定方法を確認したので、それを機能させるコードを書きま"
+"しょう。通常、シーンのルートノード、この場合は ``Pause_Popup`` にスクリプトを"
+"アタッチしますが、\\ ``Globals.gd`` でいくつかのシグナルを受信する必要がある"
+"ため、ポップアップのすべてのコードをそこに記述します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:399
 msgid "``MAIN_MENU_PATH``: The path to the main menu scene."
-msgstr ""
+msgstr "``MAIN_MENU_PATH``: メインメニューシーンへのパス。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:400
 msgid "``POPUP_SCENE``: The pop up scene we looked at earlier."
-msgstr ""
+msgstr "``POPUP_SCENE``: 先ほど見たポップアップシーン。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:401
 msgid "``popup``: A variable to hold the pop up scene."
-msgstr ""
+msgstr "``popup``: ポップアップシーンを保持する変数。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:403
 msgid ""
 "Now we need to add ``_process`` to ``Globals.gd`` so it can respond when the "
 "``ui_cancel`` action is pressed. Add the following to ``_process``:"
 msgstr ""
+"ここで ``_process`` を ``Globals.gd`` に追加して、\\ ``ui_cancel`` アクション"
+"が押されたときに応答できるようにします。\\ ``_process`` に以下を追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:424
 msgid "Let's go over what's happening here."
-msgstr ""
+msgstr "ここで何が起こっているのか見ていきましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:428
 msgid ""
@@ -604,18 +802,25 @@ msgid ""
 "check to make sure ``Globals.gd`` does not already have a ``popup`` open by "
 "checking to see if ``popup`` is equal to ``null``."
 msgstr ""
+"まず、\\ ``ui_cancel`` アクションが押されているかどうかを確認します。次"
+"に、\\ ``popup`` が ``null`` に等しいかどうかを確認することにより、\\ "
+"``Globals.gd`` が ``popup`` を開いていないことを確認します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:431
 msgid ""
 "If ``Globals.gd`` do not have a pop-up open, we instance ``POPUP_SCENE`` and "
 "assign it to ``popup``."
 msgstr ""
+"``Globals.gd`` がポップアップが開いていない場合、\\ ``POPUP_SCENE`` をインス"
+"タンス化し、それを ``popup`` に割り当てます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:433
 msgid ""
 "We then get the quit button and assign its ``pressed`` signal to "
 "``popup_quit``, which we will be adding shortly."
 msgstr ""
+"次に、終了ボタンを取得し、その ``pressed`` シグナルを ``popup_quit`` に割り当"
+"てます。この関数は少し先で追加します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:435
 msgid ""
@@ -623,6 +828,9 @@ msgid ""
 "<class_WindowDialog>` and the ``pressed`` signal from the resume button to "
 "``popup_closed``, which we will be adding shortly."
 msgstr ""
+"次に、\\ :ref:`WindowDialog <class_WindowDialog>` からの ``popup_hide`` シグ"
+"ナルと、再開ボタンからの ``pressed`` シグナルの両方を ``popup_closed`` に割り"
+"当てます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:438
 msgid ""
@@ -630,6 +838,9 @@ msgid ""
 "We then tell ``popup`` to pop up at the center of the screen using "
 "``popup_centered``."
 msgstr ""
+"次に、\\ ``canvas_layer`` の子として ``popup`` を追加して、上に描画されるよう"
+"にします。次に、\\ ``popup_centered`` を使用して、画面の中央にポップアップす"
+"るように ``popup`` に指示します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:440
 msgid ""
@@ -638,36 +849,47 @@ msgid ""
 "able to interact with the pop up in any scene where the mouse mode is "
 "``MOUSE_MODE_CAPTURED``."
 msgstr ""
+"次に、マウスモードが ``MOUSE_MODE_VISIBLE`` になっていることを確認して、プレ"
+"イヤーがポップアップを操作できるようにします。これを行わなかった場合、プレイ"
+"ヤーは、マウスモードが ``MOUSE_MODE_CAPTURED`` のシーンでポップアップを操作で"
+"きなくなります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:443
 msgid "Finally, we pause the entire :ref:`SceneTree <class_SceneTree>`."
-msgstr ""
+msgstr "最後に、\\ :ref:`SceneTree <class_SceneTree>` 全体を一時停止します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:445
 msgid "For more information on pausing in Godot, see :ref:`doc_pausing_games`"
 msgstr ""
+"Godotでの一時停止の詳細については、\\ :ref:`doc_pausing_games` を参照してくだ"
+"さい"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:449
 msgid ""
 "Now, we need to add the functions to which we've connected the signals. "
 "Let's add ``popup_closed`` first."
 msgstr ""
+"次に、シグナルを接続した関数を追加する必要があります。最初に "
+"``popup_closed`` を追加しましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:451
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:466
 msgid "Add the following to ``Globals.gd``:"
-msgstr ""
+msgstr "以下を ``Globals.gd``に追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:462
 msgid ""
 "``popup_closed`` will resume the game and destroy the pop-up if there is one."
 msgstr ""
+"``popup_closed`` はゲームを再開し、ポップアップがあればそれを破棄します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:464
 msgid ""
 "``popup_quit`` is similar, but we're also making sure the mouse is visible "
 "and changing scenes to the title screen."
 msgstr ""
+"``popup_quit`` も似ていますが、マウスを見えるようにし、シーンをタイトル画面に"
+"変更することも確認しています。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:481
 msgid ""
@@ -675,26 +897,33 @@ msgid ""
 "``MOUSE_MODE_VISIBLE`` to ensure the mouse is visible in the main menu, "
 "destroy the pop-up if there is one, and change scenes to the main menu."
 msgstr ""
+"``popup_quit`` はゲームを再開し、マウスモードを ``MOUSE_MODE_VISIBLE`` に設定"
+"して、マウスがメインメニューに表示されるようにし、ポップアップがあればポップ"
+"アップを破棄し、シーンをメインメニューに変更します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:486
 msgid ""
 "Before we're ready to test the pop-up, we should change one thing in "
 "``Player.gd``."
 msgstr ""
+"ポップアップをテストする準備が整う前に、\\ ``Player.gd`` の1つを変更する必要"
+"があります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:488
 msgid ""
 "Open up ``Player.gd`` and in ``process_input``, change the code for "
 "capturing/freeing the cursor to the following:"
 msgstr ""
+"``Player.gd`` を開き、\\ ``process_input`` で、カーソルをキャプチャ/解放する"
+"ためのコードを次のように変更します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:490
 msgid "Instead of:"
-msgstr ""
+msgstr "これの代わりに:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:501
 msgid "You will leave only:"
-msgstr ""
+msgstr "これだけを残します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:509
 msgid ""
@@ -702,6 +931,9 @@ msgid ""
 "mouse mode is ``MOUSE_MODE_VISIBLE``. If it is, we set it back to "
 "``MOUSE_MODE_CAPTURED``."
 msgstr ""
+"ここで、マウスをキャプチャ/解放する代わりに、現在のマウスモードが "
+"``MOUSE_MODE_VISIBLE`` であるかどうかを確認します。そうである場合、\\ "
+"``MOUSE_MODE_CAPTURED`` に戻します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:512
 msgid ""
@@ -709,22 +941,29 @@ msgid ""
 "pause, we no longer have to worry about freeing and capturing the cursor in "
 "``Player.gd``."
 msgstr ""
+"ポップアップは一時停止するたびにマウスモードを ``MOUSE_MODE_VISIBLE`` にする"
+"ため、\\ ``Player.gd`` でカーソルを解放してキャプチャすることを心配する必要が"
+"なくなりました。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:516
 msgid ""
 "Now the pause menu pop-up is finished. You can now pause at any point in the "
 "game and return to the main menu!"
 msgstr ""
+"これで一時停止メニューのポップアップが終了しました。ゲームの任意の時点で一時"
+"停止して、メインメニューに戻ることができます！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:519
 msgid "Starting the respawn system"
-msgstr ""
+msgstr "再出現システムの開始"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:521
 msgid ""
 "Since the player can lose all their health, it would be ideal if the player "
 "died and respawned too, so let's add that next!"
 msgstr ""
+"プレイヤーは体力をすべて失う可能性があるため、プレイヤーが死亡して復活する事"
+"が理想的です。次はそれを追加しましょう！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:523
 msgid ""
@@ -733,33 +972,40 @@ msgid ""
 "dies, we're going to make ``Death_Screen`` visible, and show them how long "
 "they have to wait before the player is able to respawn."
 msgstr ""
+"まず、\\ ``Player.tscn`` を開き、\\ ``HUD`` を展開します。\\ "
+"``Death_Screen`` という :ref:`ColorRect <class_ColorRect>` があることに注意し"
+"てください。プレイヤーが死んだとき、\\ ``Death_Screen`` を表示し、プレイヤー"
+"が再出現できるようになるまで待機する時間を表示します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:526
 msgid "Open up ``Player.gd`` and add the following class variables:"
-msgstr "`` Player.gd`` を開き、以下のクラス変数を追加してください:"
+msgstr "``Player.gd`` を開き、以下のクラス変数を追加してください:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:536
 msgid "``RESPAWN_TIME``: The amount of time (in seconds) it takes to respawn."
-msgstr ""
+msgstr "``RESPAWN_TIME``: 再出現にかかる時間(秒単位)。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:537
 msgid "``dead_time``: A variable to track how long the player has been dead."
 msgstr ""
+"``dead_time``: プレイヤーがどれくらいの時間死んでいるかを追跡する変数。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:538
 msgid ""
 "``is_dead``: A variable to track whether or not the player is currently dead."
-msgstr ""
+msgstr "``is_dead``: プレイヤーが現在死んでいるかどうかを追跡する変数。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:539
 msgid "``globals``: A variable to hold the ``Globals.gd`` singleton."
-msgstr ""
+msgstr "``globals``: ``Globals.gd`` シングルトンを保持する変数。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:543
 msgid ""
 "We now need to add a couple lines to ``_ready``, so we can use ``Globals."
 "gd`` in ``Player.gd``. Add the following to ``_ready``:"
 msgstr ""
+"``_ready`` に数行を追加する必要があります。それにより、\\ ``Player.gd`` で "
+"``Globals.gd`` が使用できます。以下を ``_ready`` に追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:551
 msgid ""
@@ -768,22 +1014,31 @@ msgid ""
 "in the player's global :ref:`Transform <class_Transform>` to the position "
 "returned by ``globals.get_respawn_position``."
 msgstr ""
+"これで、\\ ``Globals.gd`` シングルトンを取得し、それを ``globals`` に割り当て"
+"ています。また、プレイヤーのグローバル :ref:`Transform <class_Transform>` の"
+"原点を ``globals.get_respawn_position`` によって返される位置に設定することに"
+"より、プレイヤーのグローバル位置を設定します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:554
 msgid "Don't worry, we will be adding ``get_respawn_position`` further below!"
 msgstr ""
+"心配しないでください、さらに下で ``get_respawn_position`` を追加します！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:558
 msgid ""
 "Next, we need to make a few changes to ``_physics_process``. Change "
 "``_physics_process`` to the following:"
 msgstr ""
+"次に、 ``_physics_process`` にいくつかの変更を加える必要があります。\\ "
+"``_physics_process`` を次のように変更します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:576
 msgid ""
 "Now the player will not be processing input or movement input when the "
 "player is dead. We are also now calling ``process_respawn``."
 msgstr ""
+"プレイヤーが死亡した場合、プレイヤーは入力または移動入力を処理しません。ま"
+"た、死亡中は ``process_respawn`` を呼び出しています。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:578
 msgid ""
@@ -792,24 +1047,30 @@ msgid ""
 "the expression we obtain the opposite expression ``if is_dead == true:``. It "
 "is just a shorter way of writing the same code functionality."
 msgstr ""
+"``if !is_dead:`` 式は比較であり、\\ ``if is_dead == false:`` 式 と同じように"
+"機能します。そして、式から ``! `` 記号を削除すると、反対の式 ``if is_dead == "
+"true:`` が得られます。これは、同じコード機能を記述する短い方法です。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:580
 msgid "We have not made ``process_respawn`` yet, so let's change that."
-msgstr ""
+msgstr "まだ ``process_respawn`` を作成していないので、その変更をしましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:584
 msgid "Let's add ``process_respawn``. Add the following to ``Player.gd``:"
 msgstr ""
+"``process_respawn`` を追加しましょう。以下を ``Player.gd`` に追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:643
 msgid "Let's go through what this function is doing."
-msgstr ""
+msgstr "この関数の動作を見てみましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:647
 msgid ""
 "Firstly, we check whether the player has just died by checking if ``health`` "
 "is less than or equal to ``0`` and ``is_dead`` is ``false``."
 msgstr ""
+"最初に、\\ ``health`` が ``0`` 以下であり、\\ ``is_dead`` が ``false`` である"
+"かどうかを確認することにより、プレイヤーが死亡したかどうかを確認します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:649
 msgid ""
@@ -817,6 +1078,9 @@ msgid ""
 "We do this to make sure the player is not blocking anything with their dead "
 "body."
 msgstr ""
+"プレイヤーが死亡したばかりの場合、プレイヤーのコリジョンシェイプを無効にしま"
+"す。これは、プレイヤーが死体で何かをブロックしていないことを確認するために行"
+"います。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:651
 msgid ""
@@ -824,6 +1088,9 @@ msgid ""
 "``changing_weapon_name`` to ``UNARMED``. This is so, if the player is using "
 "a weapon, it is put away when they dies."
 msgstr ""
+"次に、\\ ``changing_weapon`` を ``true`` に設定し、\\ "
+"``changing_weapon_name`` を ``UNARMED`` に設定します。そのため、プレイヤーが"
+"武器を使用している場合は、プレイヤーが死んだときに片付けられます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:654
 msgid ""
@@ -832,6 +1099,10 @@ msgid ""
 "We then make the rest of the UI, the ``Panel`` and ``Crosshair`` nodes, "
 "invisible."
 msgstr ""
+"次に、\\ ``Death_Screen`` :ref:`ColorRect <class_ColorRect>` を表示して、プレ"
+"イヤーが死亡したときにすべての上にグレーのオーバーレイが表示されるようにしま"
+"す。次に、残りのUIである ``Panel`` および ``Crosshair`` ノードを非表示にしま"
+"す。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:657
 msgid ""
@@ -839,6 +1110,9 @@ msgid ""
 "how long the player has been dead. We also set ``is_dead`` to ``true`` so we "
 "know the player has died."
 msgstr ""
+"次に、\\ ``dead_time`` を ``RESPAWN_TIME`` に設定して、プレイヤーが死んでいる"
+"時間のカウントダウンを開始できるようにします。また、\\ ``is_dead`` を "
+"``true`` に設定して、プレイヤーが死亡したことを確認します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:659
 msgid ""
@@ -847,6 +1121,11 @@ msgid ""
 "holding a object, we throw it using the same code as the throwing code we "
 "added in :ref:`doc_fps_tutorial_part_five`."
 msgstr ""
+"プレイヤーが死亡したときにオブジェクトを保持している場合、それを投げる必要が"
+"あります。まず、プレイヤーがオブジェクトを持っているかどうかを確認します。プ"
+"レイヤーがオブジェクトを保持している場合は、\\ :ref:"
+"`doc_fps_tutorial_part_five` で追加したスローコードと同じコードを使用してオブ"
+"ジェクトをスローします。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:662
 msgid ""
@@ -856,12 +1135,18 @@ msgid ""
 "multiple lines so it looks better and is more readable by the players of "
 "your games."
 msgstr ""
+"表現 ``You have died\\n`` の ``\\n`` の組み合わせは、以下の新しい行に続くテキ"
+"ストを表示するために使用されるコマンドです。これは、表示されたテキストを複数"
+"の行にうまくグループ化する場合に常に役立ちます。これにより、見栄えが良くな"
+"り、ゲームのプレーヤーが読みやすくなります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:666
 msgid ""
 "Then we check whether the player is dead. If so, we then remove ``delta`` "
 "from ``dead_time``."
 msgstr ""
+"次に、プレイヤーが死んでいるかどうかを確認します。その場合、\\ ``dead_time`` "
+"から ``delta`` を減らします。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:668
 msgid ""
@@ -870,42 +1155,58 @@ msgid ""
 "from the left. This gives the player a nice looking string showing how much "
 "time the player has left to wait before the player can respawn."
 msgstr ""
+"次に、\\ ``dead_time_pretty`` という新しい変数を作成します。この変数では、\\ "
+"``dead_time`` を文字列に変換し、左から最初の3文字のみを使用します。これによ"
+"り、プレイヤーが再出現できるようになるまでにプレイヤーが待機する時間を示す、"
+"見栄えの良い文字列が得られます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:671
 msgid ""
 "We then change the :ref:`Label <class_Label>` in ``Death_Screen`` to show "
 "how much time the player has left."
 msgstr ""
+"次に、\\ ``Death_Screen`` の :ref:`Label <class_Label>` を変更して、プレイ"
+"ヤーが残した時間を表示します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:673
 msgid ""
 "Next we check to see if the player has waited long enough and can respawn. "
 "We do this by checking to see if ``dead_time`` is ``0`` or less."
 msgstr ""
+"次に、プレイヤーが十分に待機して再出現できるかどうかを確認します。これを行う"
+"には、\\ ``dead_time`` が ``0`` 以下かどうかを確認します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:675
 msgid ""
 "If the player has waited long enough to respawn, we set the player's "
 "position to a new respawn position provided by ``get_respawn_position``."
 msgstr ""
+"プレイヤーが再出現するのに十分な時間待機している場合、プレイヤーの位置を "
+"``get_respawn_position`` によって提供される新しい再出現位置に設定します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:677
 msgid ""
 "We then enable both of the player's collision shapes so the player can "
 "collide again with the environment."
 msgstr ""
+"次に、両方のプレイヤーのコリジョンシェイプを有効にして、プレイヤーが環境と再"
+"び衝突できるようにします。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:679
 msgid ""
 "Next, we make the ``Death_Screen`` invisible and make the rest of the UI, "
 "the ``Panel`` and ``Crosshair`` nodes, visible again."
 msgstr ""
+"次に、\\ ``Death_Screen`` を非表示にし、残りのUI、\\ ``Panel`` および "
+"``Crosshair`` ノードを再び表示します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:681
 msgid ""
 "We then go through each weapon and call its ``reset_weapon`` function, which "
 "we will add soon."
 msgstr ""
+"次に、各武器を調べて、その ``reset_weapon`` 関数を呼び出します。この関数はす"
+"ぐに追加します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:683
 msgid ""
@@ -913,92 +1214,113 @@ msgid ""
 "values, and change ``current_grenade`` to ``Grenade``. This effectively "
 "resets these variables to their default values."
 msgstr ""
+"次に、\\ ``health`` を ``100`` にリセットし、\\ ``grenade_amounts`` をデフォ"
+"ルト値にリセットし、\\ ``current_grenade`` を ``Grenade`` に変更します。これ"
+"により、これらの変数がデフォルト値に効果的にリセットされます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:686
 msgid "Finally, we set ``is_dead`` to ``false``."
-msgstr ""
+msgstr "最後に、\\ ``is_dead`` を ``false`` に設定します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:690
 msgid ""
 "Before we leave ``Player.gd``, we need to add one quick thing to ``_input``. "
 "Add the following at the beginning of ``_input``:"
 msgstr ""
+"``Player.gd`` を離れる前に、簡単なことを ``_input`` に追加する必要がありま"
+"す。\\ ``_input`` の先頭に次を追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:697
 msgid "Now, when the player is dead, they cannot look around with the mouse."
 msgstr ""
+"これで、プレイヤーが死んでいるとき、プレイヤーはマウスで周りを見回すことはで"
+"きません。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:700
 msgid "Finishing the respawn system"
-msgstr ""
+msgstr "再出現システムの終了"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:702
 msgid ""
 "Firstly, let's open ``Weapon_Pistol.gd`` and add the ``reset_weapon`` "
 "function. Add the following:"
 msgstr ""
+"まず、\\ ``Weapon_Pistol.gd`` を開いて、\\ ``reset_weapon`` 関数を追加しま"
+"しょう。以下を追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:710
 msgid ""
 "Now, when we call ``reset_weapon``, the ammo in the pistol and the ammo in "
 "the spares will be reset to their default values."
 msgstr ""
+"``reset_weapon`` を呼び出すと、ピストルの弾薬とスペアの弾薬がデフォルト値にリ"
+"セットされます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:712
 msgid "Now let's add ``reset_weapon`` in ``Weapon_Rifle.gd``:"
-msgstr ""
+msgstr "``Weapon_Rifle.gd`` に ``reset_weapon`` を追加しましょう:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:720
 msgid "And add the following to ``Weapon_Knife.gd``:"
-msgstr ""
+msgstr "そして、以下を ``Weapon_Knife.gd`` に追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:728
 msgid "Now all the weapons will reset when the player dies."
-msgstr ""
+msgstr "これで、プレイヤーが死亡するとすべての武器がリセットされます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:732
 msgid ""
 "Now we need to add a few things to ``Globals.gd``. Firstly, add the "
 "following class variable:"
 msgstr ""
+"ここで、\\ ``Globals.gd`` にいくつかの項目を追加する必要があります。まず、次"
+"のクラス変数を追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:738
 msgid ""
 "``respawn_points``: A variable to hold all the respawn points in a level"
-msgstr ""
+msgstr "``respawn_points``: レベル内のすべてのリスポーンポイントを保持する変数"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:740
 msgid ""
 "Because we're getting a random spawn point each time, we need to randomize "
 "the number generator. Add the following to ``_ready``:"
 msgstr ""
+"毎回ランダムな出現ポイントを取得しているため、数値ジェネレーターをランダム化"
+"する必要があります。以下を ``_ready`` に追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:746
 msgid ""
 "``randomize`` will get us a new random seed so we get a (relatively) random "
 "string of numbers when we use any of the random functions."
 msgstr ""
+"``randomize`` は新しいランダムシードを取得するので、任意のランダム関数を使用"
+"すると(比較的)ランダムな数字の文字列を取得します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:748
 msgid "Now let's add ``get_respawn_position`` to ``Globals.gd``:"
-msgstr ""
+msgstr "``get_respawn_position`` を ``Globals.gd`` に追加しましょう:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:759
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:941
 msgid "Let's go over what this function does."
-msgstr ""
+msgstr "この関数の動作について説明します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:763
 msgid ""
 "Firstly, we check if ``Globals.gd`` has any ``respawn_points`` by checking "
 "whether ``respawn_points`` is ``null`` or not."
 msgstr ""
+"まず、 ``respawn_points`` が ``null`` であるかどうかを確認することで、\\ "
+"``Globals.gd`` に ``respawn_points`` があるかどうかを確認します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:765
 msgid ""
 "If ``respawn_points`` is ``null``, we return a position of empty :ref:"
 "`Vector 3 <class_Vector3>` with the position ``(0, 0, 0)``."
 msgstr ""
+"``respawn_points`` が ``null`` の場合、空の :ref:`Vector 3 <class_Vector3>` "
+"の位置を ``(0, 0, 0)`` の位置で返します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:767
 msgid ""
@@ -1007,18 +1329,26 @@ msgid ""
 "since most programming languages, including ``GDScript``, start counting "
 "from ``0`` when you are accessing elements in a list."
 msgstr ""
+"``respawn_points`` が ``null`` でない場合、\\ ``0`` と要素数の "
+"``respawn_points`` から ``1`` を引いた値との間の乱数を取得します。"
+"``GDScript`` を含むほとんどのプログラミング言語が 、リスト内の要素にアクセス"
+"するときに ``0`` からカウントを開始します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:770
 msgid ""
 "We then return the position of the :ref:`Spatial <class_Spatial>` node at "
 "``respawn_point`` position in ``respawn_points``."
 msgstr ""
+"次に、\\ ``respawn_points`` の ``respawn_point`` 位置にある :ref:`Spatial "
+"<class_Spatial>` ノードの位置を返します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:774
 msgid ""
 "Before we are done with ``Globals.gd``, we need to add the following to "
 "``load_new_scene``:"
 msgstr ""
+"``Globals.gd`` を完了する前に、\\ ``load_new_scene`` に以下を追加する必要があ"
+"ります:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:780
 msgid ""
@@ -1026,6 +1356,9 @@ msgid ""
 "with no respawn points, we do not respawn the player at the respawn points "
 "that were in the level prior."
 msgstr ""
+"プレイヤーが再出現ポイントのないレベルに到達した場合、またはそのレベルに達し"
+"た場合、以前のレベルにあった再出現ポイントでプレイヤーが再出現しないよう"
+"に、\\ ``respawn_points`` を ``null`` に設定します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:785
 msgid ""
@@ -1034,6 +1367,10 @@ msgid ""
 "``Respawn_Point_Setter.gd`` and attach it to ``Spawn_Points``. Add the "
 "following to ``Respawn_Point_Setter.gd``:"
 msgstr ""
+"ここで必要なのは、再出現ポイントを設定する方法だけです。\\ ``Ruins_Level."
+"tscn`` を開き、\\ ``Spawn_Points`` を選択します。\\ ``Respawn_Point_Setter."
+"gd`` という新しいスクリプトを追加し、それを ``Spawn_Points`` に添付します。以"
+"下を ``Respawn_Point_Setter.gd`` に追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:796
 msgid ""
@@ -1042,6 +1379,10 @@ msgid ""
 "``Respawn_Point_Setter.gd``, ``Spawn_Points`` in the case of ``Ruins_Level."
 "tscn``, will be added to ``respawn_points`` in ``Globals.gd``."
 msgstr ""
+"これで、Respawn_Point_Setter.gdを持つノードの_ready関数が呼び出されると、\\ "
+"``Ruins_Level.tscn`` の場合、\\ ``Respawn_Point_Setter.gd``\\ 、\\ "
+"``Spawn_Points`` を持つノードのすべての子ノードが ``Globals.gd`` の "
+"``respawn_points`` に追加されます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:800
 msgid ""
@@ -1049,11 +1390,14 @@ msgid ""
 "ref:`SceneTree <class_SceneTree>` so the respawn points are set before the "
 "player needs them in the player's ``_ready`` function."
 msgstr ""
+"``Respawn_Point_Setter.gd`` を持つノードは、プレイヤーの ``_ready`` 関数で必"
+"要になる前に、再出現ポイントが設定されるように、\\ :ref:`SceneTree "
+"<class_SceneTree>` 内でプレイヤーより上に位置する必要があります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:805
 msgid ""
 "Now, when the player dies, they will respawn after waiting ``4`` seconds!"
-msgstr ""
+msgstr "プレイヤーが死ぬと、\\ ``4`` 秒待ってから復活します！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:807
 msgid ""
@@ -1061,21 +1405,26 @@ msgid ""
 "``Ruins_Level.tscn``! Adding spawn points to ``Space_Level.tscn`` is left as "
 "an exercise for the reader."
 msgstr ""
+"``Ruins_Level.tscn`` 以外のレベルの出現ポイントはまだ設定されていません！出現"
+"ポイントを ``Space_Level.tscn`` に追加することは、読者の演習として残しておき"
+"ます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:811
 msgid "Writing a sound system we can use anywhere"
-msgstr ""
+msgstr "どこでも使えるサウンドシステムを書く"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:813
 msgid ""
 "Finally, let's make a sound system so we can play sounds from anywhere, "
 "without having to use the player."
 msgstr ""
+"最後に、プレイヤーを使用せずにどこからでもサウンドを再生できるように、サウン"
+"ドシステムを作成しましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:815
 msgid ""
 "Firstly, open up ``SimpleAudioPlayer.gd`` and change it to the following:"
-msgstr ""
+msgstr "まず、\\ ``SimpleAudioPlayer.gd`` を開き、次のように変更します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:859
 msgid ""
@@ -1085,6 +1434,11 @@ msgid ""
 "clip when we create a sound, but instead we are forcing an audio stream to "
 "be passed in to ``play_sound``."
 msgstr ""
+"古いバージョンからいくつかの変更点があります。何よりもまず、もはや "
+"``SimpleAudioPlayer.gd`` にサウンドファイルを保存しなくなっています。これは、"
+"サウンドを作成するときに各オーディオクリップを読み込むのではなく、代わりに"
+"オーディオストリームを ``play_sound`` に強制的に渡すため、パフォーマンスに"
+"とってははるかに優れています。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:863
 msgid ""
@@ -1094,6 +1448,12 @@ msgid ""
 "This allows us to have audio like looping background music without having to "
 "spawn a new audio player with the music when the old one is finished."
 msgstr ""
+"もう1つの変更点は、\\ ``should_loop`` という新しいクラス変数があることです。"
+"終了するたびにオーディオプレーヤーを破棄する代わりに、オーディオプレーヤーが"
+"ループするように設定されているかどうかを確認します。これにより、バックグラウ"
+"ンドミュージックのループのようなオーディオを作成できます。古いオーディオプ"
+"レーヤーが終了したときに、新しいオーディオプレーヤーで音楽を生成する必要はあ"
+"りません。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:865
 msgid ""
@@ -1103,16 +1463,23 @@ msgid ""
 "so when the audio player is destroyed, we can also remove it from a list in "
 "``Globals.gd``."
 msgstr ""
+"最後に、\\ ``Player.gd`` でインスタンス化/産出される代わりに、オーディオプ"
+"レーヤーは ``Globals.gd`` で産出されるため、どのシーンからでもサウンドを作成"
+"できます。オーディオプレーヤーは ``Globals.gd`` シングルトンを保存するように"
+"なったため、オーディオプレーヤーが破棄されたときに、\\ ``Globals.gd`` のリス"
+"トから削除することもできます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:868
 msgid "Let's go over the changes."
-msgstr ""
+msgstr "変更点を調べてみましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:872
 msgid ""
 "For the class variables, we removed all the ``audio_[insert name here]`` "
 "variables since we will instead have these passed in from ``Globals.gd``."
 msgstr ""
+"クラス変数については、代わりに ``Globals.gd`` から渡されるため、すべての "
+"``audio_[ここに名前を挿入]`` 変数を削除しました。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:874
 msgid ""
@@ -1121,12 +1488,18 @@ msgid ""
 "the sound has finished, and ``globals`` will hold the ``Globals.gd`` "
 "singleton."
 msgstr ""
+"また、2つの新しいクラス変数 ``should_loop`` と ``globals`` を追加しまし"
+"た。\\ ``should_loop`` を使用して、オーディオプレーヤーがサウンドの終了時に"
+"ループする必要があるかどうかを判断し、\\ ``globals`` は ``Globals.gd`` シング"
+"ルトンを保持します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:877
 msgid ""
 "The only change in ``_ready`` is now audio player is getting the ``Globals."
 "gd`` singleton and assigning it to ``globals``."
 msgstr ""
+"``_ready``の唯一の変更は、オーディオプレーヤーが ``Globals.gd`` シングルトン"
+"を取得し、それを ``globals`` に割り当てることです。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:879
 msgid ""
@@ -1137,6 +1510,13 @@ msgid ""
 "an error message, remove the audio player from a list in the ``Globals.gd`` "
 "singleton called ``created_audio``, and then free the audio player."
 msgstr ""
+"``play_sound`` は ``sound_name`` ではなく、\\ ``audio_stream`` という名前の"
+"オーディオストリームが渡されることを期待しています。サウンド名を確認してオー"
+"ディオプレーヤーのストリームを設定する代わりに、オーディオストリームが渡され"
+"たことを確認します。オーディオストリームが渡されなかった場合、エラーメッセー"
+"ジを出力し、\\ ``Globals.gd`` シングルトンの ``created_audio`` という名前のリ"
+"ストからオーディオプレーヤーを削除してから、オーディオプレーヤーを解放しま"
+"す。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:883
 msgid ""
@@ -1147,6 +1527,12 @@ msgid ""
 "player from a list in the ``Globals.gd`` singleton called ``created_audio``, "
 "and then free the audio player."
 msgstr ""
+"最後に、 ``sound_finished`` で、オーディオプレーヤーが ``should_loop`` を使用"
+"するかどうかを最初に確認します。オーディオプレーヤーがループすることになって"
+"いる場合、\\ ``0.0`` の位置で最初から再びサウンドを再生します。オーディオプ"
+"レーヤーがループすることになっていない場合、\\ ``created_audio`` と呼ばれる "
+"``Globals.gd`` シングルトンのリストからオーディオプレーヤーを削除し、オーディ"
+"オプレーヤーを解放します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:889
 msgid ""
@@ -1154,26 +1540,32 @@ msgid ""
 "to turn our attention to ``Globals.gd``. First, add the following class "
 "variables:"
 msgstr ""
+"``SimpleAudioPlayer.gd`` への変更が完了したので、次に ``Globals.gd`` に注意を"
+"向ける必要があります。まず、次のクラス変数を追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:905
 msgid "Let's go over these global variables."
-msgstr ""
+msgstr "これらのグローバル変数について説明します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:907
 msgid ""
 "``audio_clips``: A dictionary holding all the audio clips ``Globals.gd`` can "
 "play."
 msgstr ""
+"``audio_clips``: ``Globals.gd`` が再生できるすべてのオーディオクリップを保持"
+"するdictionary。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:908
 msgid "``SIMPLE_AUDIO_PLAYER_SCENE``: The simple audio player scene."
-msgstr ""
+msgstr "``SIMPLE_AUDIO_PLAYER_SCENE``: シンプルなオーディオプレーヤーシーン。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:909
 msgid ""
 "``created_audio``: A list to hold all the simple audio players ``Globals."
 "gd`` has created."
 msgstr ""
+"``created_audio``: ``Globals.gd`` が作成したすべてのシンプルオーディオプレー"
+"ヤーを保持するリスト。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:911
 msgid ""
@@ -1181,6 +1573,9 @@ msgid ""
 "No audio files are provided in this tutorial, so you will have to provide "
 "your own."
 msgstr ""
+"オーディオを追加したい場合は、それを ``audio_clips`` に追加する必要がありま"
+"す。このチュートリアルでは音声ファイルは提供されないため、独自の音声ファイル"
+"を提供する必要があります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:914
 msgid ""
@@ -1188,29 +1583,37 @@ msgid ""
 "gun sound pack included in the Sonniss' GDC Game Audio bundle for 2017. The "
 "tracks I've used (with some minor editing) are as follows:"
 msgstr ""
+"推奨するサイトの1つは **GameSounds.xyz** です。Sonniss' GDC Game Audio "
+"bundle for 2017 に含まれている Gamemaster audio gun sound pack を使用していま"
+"す。使用したトラック(若干の編集を含む)は次のとおりです:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:918
 msgid "gun_revolver_pistol_shot_04,"
-msgstr ""
+msgstr "gun_revolver_pistol_shot_04、"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:919
 msgid "gun_semi_auto_rifle_cock_02,"
-msgstr ""
+msgstr "gun_semi_auto_rifle_cock_02、"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:920
 msgid "gun_submachine_auto_shot_00_automatic_preview_01"
-msgstr ""
+msgstr "gun_submachine_auto_shot_00_automatic_preview_01"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:924
 msgid ""
 "Now we need to add a new function called ``play_sound`` to ``Globals.gd``:"
 msgstr ""
+"ここで、\\ ``play_sound`` という新しい関数を ``Globals.gd`` に追加する必要が"
+"あります:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:943
 msgid ""
 "Firstly, we check whether ``Globals.gd`` has an audio clip with the name "
 "``sound_name`` in ``audio_clips``. If it does not, we print an error message."
 msgstr ""
+"まず、 ``Globals.gd`` に ``audio_clips`` に ``sound_name`` という名前のオー"
+"ディオクリップがあるかどうかを確認します。そうでない場合は、エラーメッセージ"
+"を出力します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:945
 msgid ""
@@ -1218,30 +1621,41 @@ msgid ""
 "instance/spawn a new ``SIMPLE_AUDIO_PLAYER_SCENE`` and assign it to "
 "``new_audio``."
 msgstr ""
+"``Globals.gd`` に ``sound_name`` という名前のオーディオクリップがある場合、新"
+"しい ``SIMPLE_AUDIO_PLAYER_SCENE`` をインスタンス化/生成し、それを "
+"``new_audio`` に割り当てます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:947
 msgid ""
 "We then set ``should_loop``, and add ``new_audio`` as a child of ``Globals."
 "gd``."
 msgstr ""
+"次に、\\ ``should_loop`` を設定し、\\ ``Globals.gd`` の子として "
+"``new_audio`` を追加します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:949
 msgid ""
 "Remember, we have to be careful adding nodes to a singleton, since these "
 "nodes will not be destroyed when changing scenes."
 msgstr ""
+"シーンを変更してもこれらのノードは破棄されないため、シングルトンにノードを追"
+"加する場合は注意が必要です。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:951
 msgid ""
 "We add the ``new_audio`` into the ``created_audio`` list to hold all created "
 "audios."
 msgstr ""
+"作成されたすべてのオーディオを保持するために、\\ ``new_audio`` を "
+"``created_audio`` リストに追加します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:953
 msgid ""
 "We then call ``play_sound``, passing in the audio clip associated with "
 "``sound_name`` and the sound position."
 msgstr ""
+"次に、\\ ``play_sound`` を呼び出し、\\ ``sound_name`` に関連付けられたオー"
+"ディオクリップとサウンドの位置を渡します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:957
 msgid ""
@@ -1249,10 +1663,13 @@ msgid ""
 "``load_new_scene`` so when the player changes scenes, all the audio is "
 "destroyed."
 msgstr ""
+"``Globals.gd`` を離れる前に、プレイヤーがシーンを変更したときにすべてのオー"
+"ディオが破棄されるように、数行のコードを ``load_new_scene`` に追加する必要が"
+"あります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:959
 msgid "Add the following to ``load_new_scene``:"
-msgstr ""
+msgstr "以下を ``load_new_scene`` に追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:968
 msgid ""
@@ -1262,6 +1679,11 @@ msgid ""
 "``created_audio`` so it no longer holds any references to any (now freed/"
 "destroyed) simple audio players."
 msgstr ""
+"さて、\\ ``Globals.gd`` はシーンを変更する前に、\\ ``created_sounds`` 内の各"
+"シンプルオーディオプレーヤーを通して、それらを解放/破棄します。\\ ``Globals."
+"gd`` が ``created_audio`` のすべてのサウンドを処理したら、\\ "
+"``created_audio`` をクリアして、(既に解放/破棄されている)シンプルオーディオプ"
+"レーヤーへの参照を保持しないようにします。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:973
 msgid ""
@@ -1270,16 +1692,22 @@ msgid ""
 "since we will no longer be directly instancing/spawning sounds in ``Player."
 "gd``."
 msgstr ""
+"この新しいシステムを使用するために、\\ ``Player.gd`` の ``create_sound`` を変"
+"更しましょう。まず、\\ ``Player.gd`` のサウンドを直接インスタンス化/生成する"
+"ことはないため、\\ ``Player.gd``のクラス変数から ``simple_audio_player`` を削"
+"除します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:976
 msgid "Now, change ``create_sound`` to the following:"
-msgstr ""
+msgstr "次に、\\ ``create_sound`` を次のように変更します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:983
 msgid ""
 "Now, whenever ``create_sound`` is called, we simply call ``play_sound`` in "
 "``Globals.gd``, passing in all the arguments received."
 msgstr ""
+"さて、\\ ``create_sound`` が呼び出されるたびに、\\ ``Globals.gd`` の "
+"``play_sound`` を呼び出して、受け取ったすべての引数を渡します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:987
 msgid ""
@@ -1288,6 +1716,10 @@ msgid ""
 "name of the sound we want to play, whether we want it to loop or not, and "
 "the position from which to play the sound."
 msgstr ""
+"これで、FPSのすべてのサウンドをどこからでも再生できます。必要なのは、\\ "
+"``Globals.gd`` シングルトンを取得し、\\ ``play_sound`` を呼び出し、再生するサ"
+"ウンドの名前、ループするかどうか、およびサウンドを再生する位置を渡すことだけ"
+"です。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:990
 msgid ""
@@ -1298,29 +1730,36 @@ msgid ""
 "in the grenades ``_process`` function, right after the grenade damages all "
 "the bodies within its blast radius."
 msgstr ""
+"たとえば、手榴弾が爆発したときに爆発音を鳴らしたい場合は、\\ ``Globals.gd`` "
+"の ``audio_clips`` に新しいサウンドを追加する必要があり、\\ ``Globals.gd`` シ"
+"ングルトンを取得し、そして、手榴弾が爆発半径内のすべての体にダメージを与えた"
+"直後に、手榴弾の ``_process`` 関数に ``globals.play_sound(\"explosion\", "
+"false, global_transform.origin)`` のようなものを追加する必要があります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:996
 msgid "Final notes"
-msgstr ""
+msgstr "最終ノート"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1000
 msgid "Now you have a fully working single player FPS!"
-msgstr ""
+msgstr "これで、完全に機能するシングルプレーヤーFPSが完成しました！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1002
 msgid ""
 "At this point, you have a good base to build more complicated FPS games."
-msgstr ""
+msgstr "この時点で、より複雑なFPSゲームを構築するための良い基盤ができました。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1004
 msgid "If you ever get lost, be sure to read over the code again!"
-msgstr ""
+msgstr "迷子になったら、必ずコードをもう一度読んでください！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1006
 msgid ""
 "You can download the finished project for the entire tutorial here: :"
 "download:`Godot_FPS_Part_6.zip <files/Godot_FPS_Finished.zip>`"
 msgstr ""
+"チュートリアル全体の完成したプロジェクトは、ここからダウンロードできます: :"
+"download:`Godot_FPS_Part_6.zip <files/Godot_FPS_Finished.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1008
 msgid ""
@@ -1328,30 +1767,41 @@ msgid ""
 "different order. This is because the finished project source files are what "
 "the tutorial is based on."
 msgstr ""
+"完成したプロジェクトソースファイルには同じコードが含まれており、異なる順序で"
+"記述されています。これは、完成したプロジェクトソースファイルがチュートリアル"
+"の基になっているためです。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1011
 msgid ""
 "The finished project code was written in the order that features were "
 "created, not necessarily in a order that is ideal for learning."
 msgstr ""
+"完成したプロジェクトコードは、機能が作成された順序で作成されましたが、必ずし"
+"も学習に最適な順序ではありません。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1014
 msgid ""
 "Other than that, the source is exactly the same, just with helpful comments "
 "explaining what each part does."
 msgstr ""
+"それ以外は、ソースはまったく同じですが、各部分の機能を説明する役立つコメント"
+"が付いています。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1017
 msgid ""
 "The finished project source is hosted on Github as well: https://github.com/"
 "TwistedTwigleg/Godot_FPS_Tutorial"
 msgstr ""
+"完成したプロジェクトソースはGithubでもホストされています: https://github.com/"
+"TwistedTwigleg/Godot_FPS_Tutorial"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1019
 msgid ""
 "**Please note that the code in Github may or may not be in sync with the "
 "tutorial in the documentation**."
 msgstr ""
+"**Githubのコードは、ドキュメントのチュートリアルと同期している場合と同期して"
+"いない場合があることに注意してください**\\ 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1021
 msgid ""
@@ -1359,12 +1809,19 @@ msgid ""
 "date. If you are unsure of which to use, use the project(s) provided in the "
 "documentation, as they are maintained by the Godot community."
 msgstr ""
+"ドキュメント内のコードは、より適切に管理されているか、より最新である可能性が"
+"あります。どちらを使用するかわからない場合は、ドキュメントで提供されているプ"
+"ロジェクトを使用してください。プロジェクトはGodotコミュニティによって管理され"
+"ています。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1024
 msgid ""
 "You can download all the ``.blend`` files used in this tutorial here: :"
 "download:`Godot_FPS_BlenderFiles.zip <files/Godot_FPS_BlenderFiles.zip>`"
 msgstr ""
+"このチュートリアルで使用されているすべての ``.blend`` ファイルはこちらからダ"
+"ウンロードできます: :download:`Godot_FPS_BlenderFiles.zip <files/"
+"Godot_FPS_BlenderFiles.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1026
 msgid ""
@@ -1373,6 +1830,10 @@ msgid ""
 "community.** All original assets provided for this tutorial are released "
 "under the ``MIT`` license."
 msgstr ""
+"開始済みアセットで提供されるすべてのアセットは、(特に明記されていない限り) "
+"**Godotコミュニティによる変更/追加により、もともとTwistedTwiglegによって作成"
+"されました。** このチュートリアルで提供されるすべての元となるアセットは、\\ "
+"``MIT`` ライセンスの下でリリースされます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1029
 msgid ""
@@ -1380,6 +1841,8 @@ msgid ""
 "to the Godot community, with the other assets belonging to those listed "
 "below:"
 msgstr ""
+"これらのアセットは自由に使用できます。すべての元のアセットはGodotコミュニティ"
+"に属し、他のアセットは以下にリストされているものに属します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1031
 msgid ""
@@ -1387,27 +1850,38 @@ msgid ""
 "org. https://opengameart.org/content/space-skyboxes-0 . The skybox is "
 "licensed under the ``CC0`` license."
 msgstr ""
+"スカイボックスは **StumpyStrust ** によって作成され、OpenGameArt.org https://"
+"opengameart.org/content/space-skyboxes-0 で見つけることができます。スカイボッ"
+"クスは ``CC0`` ライセンスの下でライセンスされています。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1034
 msgid ""
 "The font used is **Titillium-Regular**, and is licensed under the ``SIL Open "
 "Font License, Version 1.1``."
 msgstr ""
+"使用されるフォントは **Titillium-Regular** であり、\\ ``SIL Open Font "
+"License, Version 1.1`` の下でライセンスされています。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1036
 msgid ""
 "The skybox was converted to a 360 equirectangular image using this tool: "
 "https://www.360toolkit.co/convert-cubemap-to-spherical-equirectangular.html"
 msgstr ""
+"このツールを使用して、スカイボックスを360の正距円筒イメージに変換しました: "
+"https://www.360toolkit.co/convert-cubemap-to-spherical-equirectangular.html"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1038
 msgid ""
 "While no sounds are provided, you can find many game ready sounds at https://"
 "gamesounds.xyz/"
 msgstr ""
+"サウンドは提供されませんが、 https://gamesounds.xyz/ で多くのゲーム向きの音を"
+"見つけることができます"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1040
 msgid ""
 "**OpenGameArt.org, 360toolkit.co, the creator(s) of Titillium-Regular, "
 "StumpyStrust, and GameSounds.xyz are in no way involved in this tutorial.**"
 msgstr ""
+"**OpenGameArt.org、360toolkit.co、Titillium-Regular、StumpyStrust、および"
+"GameSounds.xyzの作成者は、このチュートリアルには一切関与していません。**"

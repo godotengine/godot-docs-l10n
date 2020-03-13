@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -180,9 +180,10 @@ msgstr ""
 "impossible.\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
+#, fuzzy
 msgid ""
-"Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
-"``Command+S`` on Mac."
+"Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
+"Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
 "Sauvegardez la scène. Cliquez sur Scène -> Enregistrer la scène, ou appuyez "
 "sur ``Ctrl+S`` sur Windows/Linux ou ``Command+S`` sur Mac."
@@ -950,7 +951,6 @@ msgstr ""
 "haut de l'éditeur :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:676
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -960,9 +960,8 @@ msgstr ""
 "Sélectionnez celui du milieu (\"Ajouter un point\") et tracez le chemin en "
 "cliquant pour ajouter les points aux coins montrés. Pour que les points "
 "s'accrochent à la grille, assurez-vous que \"Accrocher à la grille\" est "
-"coché. Cette option se trouve sous le bouton \"Options du magnétisme\" à "
-"gauche du bouton \"Verrouiller\", apparaissant comme une série de trois "
-"points verticaux."
+"coché. Cette option se trouve à gauche du bouton \"Verrouiller\", "
+"apparaissant comme un aimant à côté de lignes qui se croisent."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:683
 msgid ""
@@ -1016,10 +1015,11 @@ msgstr ""
 "``Main``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:740
+#, fuzzy
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
-"when a game ends. Type \"game_over\" in the \"Method In Node\" box at the "
+"when a game ends. Type \"game_over\" in the \"Receiver Method\" box at the "
 "bottom of the \"Connecting Signal\" window. Add the following code, as well "
 "as a ``new_game`` function to set everything up for a new game:"
 msgstr ""
@@ -1560,9 +1560,10 @@ msgstr ""
 "associé à la barre d'espace par défaut ."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1230
+#, fuzzy
 msgid ""
-"Now when the start button appears, you can either click it or press the "
-"spacebar to start the game."
+"Now when the start button appears, you can either click it or press :kbd:"
+"`Space` to start the game."
 msgstr ""
 "Maintenant, lorsque le bouton de démarrage apparaît, vous pouvez cliquer "
 "dessus ou appuyer sur la barre d'espace pour démarrer le jeu."

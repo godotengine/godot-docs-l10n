@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,22 +147,15 @@ msgstr ""
 "すことによっても推測できます。"
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:35
+#, fuzzy
 msgid ""
 "Add these two and it's possible to guess almost exactly when sound or music "
-"will begin playing in the speakers:"
+"will begin playing in the speakers during *_process()*:"
 msgstr ""
 "これら2つを追加すると、スピーカーでサウンドまたは音楽の再生が開始されるタイミ"
 "ングをほぼ正確に推測できます:"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:43
-msgid ""
-"This way, obtaining the actual playback position during *_process()* is "
-"possible:"
-msgstr ""
-"このようにして、\\ *_ process()* の処理中に実際の再生位置を取得することが可能"
-"です:"
-
-#: ../../docs/tutorials/audio/sync_with_audio.rst:66
+#: ../../docs/tutorials/audio/sync_with_audio.rst:58
 msgid ""
 "In the long run, though, as the sound hardware clock is never exactly in "
 "sync with the system clock, the timing information will slowly drift away."
@@ -170,7 +163,7 @@ msgstr ""
 "ただし、長い目で見れば、サウンドハードウェアクロックがシステムクロックと正確"
 "に同期することはないため、タイミング情報はゆっくりとずれていきます。"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:68
+#: ../../docs/tutorials/audio/sync_with_audio.rst:60
 msgid ""
 "For a rhythm game where a song begins and ends after a few minutes, this "
 "approach is fine (and it's the recommended approach). For a game where "
@@ -181,11 +174,11 @@ msgstr ""
 "奨されるアプローチです)。再生がはるかに長い時間続くゲームの場合、ゲームは最終"
 "的に同期しなくなり、別のアプローチが必要になります。"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:71
+#: ../../docs/tutorials/audio/sync_with_audio.rst:63
 msgid "Using the sound hardware clock to sync"
 msgstr "サウンド ハードウェア クロックを使用した同期"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:73
+#: ../../docs/tutorials/audio/sync_with_audio.rst:65
 msgid ""
 "Using :ref:`AudioStreamPlayer."
 "get_playback_position()<class_AudioStreamPlayer_method_get_playback_position>` "
@@ -202,7 +195,7 @@ msgstr ""
 "め、多くの呼び出しで同じ値を返すことができます。これに加えて、前述の理由によ"
 "り、値はスピーカーとも同期しません。"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:75
+#: ../../docs/tutorials/audio/sync_with_audio.rst:67
 msgid ""
 "To compensate for the \"chunked\" output, there is a function that can "
 "help: :ref:`AudioServer."
@@ -212,7 +205,7 @@ msgstr ""
 "`AudioServer.get_time_since_last_mix() "
 "<class_AudioServer_method_get_time_since_last_mix>`\\ 。"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:78
+#: ../../docs/tutorials/audio/sync_with_audio.rst:70
 msgid ""
 "Adding the return value from this function to *get_playback_position()* "
 "increases precision:"
@@ -220,7 +213,7 @@ msgstr ""
 "この関数からの戻り値を *get_playback_position()* に加算すると、精度が向上しま"
 "す:"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:85
+#: ../../docs/tutorials/audio/sync_with_audio.rst:77
 msgid ""
 "To increase precision, subtract the latency information (how much it takes "
 "for the audio to be heard after it was mixed):"
@@ -228,7 +221,7 @@ msgstr ""
 "さらに精度を上げるには、レイテンシー情報(ミキシング後にオーディオが聞こえるま"
 "でにかかる時間)を引きます:"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:92
+#: ../../docs/tutorials/audio/sync_with_audio.rst:84
 msgid ""
 "The result may be a bit jittery due how multiple threads work. Just check "
 "that the value is not less than in the previous frame (discard it if so). "
@@ -241,6 +234,6 @@ msgstr ""
 "レッドの動作が原因で少し不安定になる可能性があります。値が前のフレームの値よ"
 "り小さくないことを確認してください(もしそうなら破棄してください)。"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:94
+#: ../../docs/tutorials/audio/sync_with_audio.rst:86
 msgid "Here is the same code as before using this approach:"
 msgstr "このアプローチを使用する前と同じコードを次に示します:"

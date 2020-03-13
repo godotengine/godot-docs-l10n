@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/about/faq.rst:1
-#, fuzzy
 msgid "FAQ"
 msgstr "FAQ"
 
@@ -410,18 +409,16 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "Che tipi di formati per i modelli 3D supporta Godot?"
 
 #: ../../docs/about/faq.rst:150
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Detto questo, il supporto di Godot per Collada è molto buono, si prega di "
-"usare l'exporter per `OpenCollada <https://github.com/KhronosGroup/"
-"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ per avere il massimo della "
-"compatibilità se si utilizza Maya o 3DS Max. Per Blender c'è il nostro "
-"`Better Collada Exporter <https://godotengine.org/download>`_."
+"Godot supporta Collada tramite l'`OpenCollada <https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_exporter (Maya, 3DSMax). "
+"Se stai usando Blender, dai un'occhiata al nostro `Better Collada Exporter "
+"<https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
@@ -433,6 +430,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX è supportato tramite l'Open Asset Import library. Tuttavia, FBX è "
+"proprietario, dacché raccomandiamo l'uso di altri formati elencati sopra, se "
+"adatti al vostro flusso di lavoro."
 
 #: ../../docs/about/faq.rst:159
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -297,9 +297,10 @@ msgid "Scene setup"
 msgstr "Настройка сцены"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
+#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
-"pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
+"pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
 "Используйте диалог \"Добавить дочерний узел\", доступ к которому "
 "осуществляется из вкладки \"Сцена\" (или нажатием ``Ctrl+A``), чтобы создать "
@@ -544,13 +545,13 @@ msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "Затем напишите функцию, которая будет вызываться при нажатии кнопки:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"И наконец, подключите сигнал \"pressed\" от кнопок к функции ``_ready()``, "
-"используя :ref:`Object.connect() <class_Object_method_connect>`."
+"И наконец, подключите сигнал кнопки: \"pressed\" к сигналу: "
+"``_on_Button_pressed()``, используя :ref:`Object.connect() "
+"<class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"

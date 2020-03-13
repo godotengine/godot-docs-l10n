@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:4
 msgid "Lights and shadows"
-msgstr ""
+msgstr "ライトと影"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:7
 msgid "Introduction"
@@ -30,88 +30,109 @@ msgid ""
 "Light sources emit light that mixes with the materials and produces a "
 "visible result. Light can come from several types of sources in a scene:"
 msgstr ""
+"ライトは、マテリアルと混合して目に見える結果を生成する光を発します。光は、"
+"シーン内のいくつかのタイプのライトから発生します:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:12
 msgid ""
 "From the Material itself in the form of the emission color (though it does "
 "not affect nearby objects unless baked)."
 msgstr ""
+"emission colorの形のマテリアル自体から(ただし、焼き込みをしない限り近くのオブ"
+"ジェクトには影響しません)。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:14
 msgid "Light Nodes: Directional, Omni and Spot."
-msgstr ""
+msgstr "Lightノード: Directional(指向性)、Omni(オムニ)、Spot(スポット)。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:15
 msgid "Ambient Light in the :ref:`Environment <class_Environment>`."
-msgstr ""
+msgstr ":ref:`Environment <class_Environment>` のAmbient Light(環境光)。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:17
 msgid "Baked Light (read :ref:`doc_baked_lightmaps`)."
-msgstr ""
+msgstr "Baked(焼き込み)ライト(read:ref:`doc_baked_lightmaps`)。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:19
 msgid ""
 "The emission color is a material property. You can read more about it in "
 "the :ref:`doc_spatial_material` tutorial."
 msgstr ""
+"emission colorはマテリアルプロパティです。詳細については、\\ :ref:"
+"`doc_spatial_material` チュートリアルをご覧ください。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:23
 msgid "Light nodes"
-msgstr ""
+msgstr "Lightノード"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:25
 msgid ""
 "There are three types of light nodes: `Directional light`_, `Omni light`_ "
 "and `Spot light`_. Let's take a look at the common parameters for lights:"
 msgstr ""
+"Lightノードには、\\ `Directional light`_\\ 、\\ `Omni light`_ \\ 、\\ `Spot "
+"light`_ の3つのタイプがあります。ライトの一般的なパラメーターを見てみましょ"
+"う:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:31
 msgid "Each one has a specific function:"
-msgstr ""
+msgstr "それぞれに特定の機能があります:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:33
 msgid "**Color**: Base color for emitted light."
-msgstr ""
+msgstr "**Color**: 放射する光の基本色。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:34
 msgid ""
 "**Energy**: Energy multiplier. This is useful for saturating lights or "
 "working with :ref:`doc_high_dynamic_range`."
 msgstr ""
+"**Energy**: エネルギー乗数。これは、ライトを飽和させる場合や、\\ :ref:"
+"`doc_high_dynamic_range` で作業する場合に便利です。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:35
 msgid ""
 "**Indirect Energy**: Secondary multiplier used with indirect light (light "
 "bounces). This works in baked light or GIProbe."
 msgstr ""
+"**Indirect Energy**: 間接光で使用されるセカンダリ乗数(光の跳ね返り)。これは、"
+"焼き込みライトまたはGIProbeで機能します。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:36
 msgid ""
 "**Negative**: Light becomes subtractive instead of additive. It's sometimes "
 "useful to manually compensate some dark corners."
 msgstr ""
+"**Negative**: 光は加算ではなく減算になります。暗い隅を手動で補正すると便利な"
+"場合があります。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:37
 msgid ""
 "**Specular**: Affects the intensity of the specular blob in objects affected "
 "by this light. At zero, this light becomes a pure diffuse light."
 msgstr ""
+"**Specular**: このライトの影響を受けるオブジェクトのスペキュラーblobの強度に"
+"影響します。ゼロにすると、この光は純粋な拡散(diffuse)光になります。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:38
 msgid ""
 "**Bake Mode**: Sets the bake mode for the light. For more information see :"
 "ref:`doc_baked_lightmaps`"
 msgstr ""
+"**Bake Mode**: ライトの焼き込み(ベイク)モードを設定します。詳細については、次"
+"を参照してください。\\ :ref:`doc_baked_lightmaps`"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:39
 msgid ""
 "**Cull Mask**: Objects that are in the selected layers below will be "
 "affected by this light."
 msgstr ""
+"**Cull Mask**: 下の選択されたレイヤーにあるオブジェクトは、このライトの影響を"
+"受けます。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:42
 msgid "Shadow mapping"
-msgstr ""
+msgstr "シャドウマッピング"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:44
 msgid ""
@@ -120,22 +141,32 @@ msgid ""
 "There is a list of generic shadow parameters, each also has a specific "
 "function:"
 msgstr ""
+"ライトはオプションで影を落とすことができます。これにより、よりリアルになりま"
+"す(光は遮蔽された領域に届かない)が、パフォーマンスコストが大きくなる可能性が"
+"あります。一般的なshadowのパラメーターのリストがあり、それぞれに特定の機能が"
+"あります:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:48
 msgid "**Enabled**: Check to enable shadow mapping in this light."
 msgstr ""
+"**Enabled**: チェックすると、このライトでシャドウマッピングが有効になります。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:49
 msgid ""
 "**Color**: Areas occluded are multiplied by this color. It is black by "
 "default, but it can be changed to tint shadows."
 msgstr ""
+"**Color**: 隠された領域にこの色が掛けられます。デフォルトでは黒ですが、色つき"
+"の影に変更できます。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:50
 msgid ""
 "**Bias**: When this parameter is too small, self shadowing occurs. When too "
 "large, shadows separate from the casters. Tweak to what works best for you."
 msgstr ""
+"**Bias**: このパラメーターが小さすぎると、セルフシャドウ(自分自身に影を落と"
+"す)が発生します。大きすぎると、影が投影元から分離します。あなたに最適なものに"
+"微調整してください。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:51
 msgid ""
@@ -143,22 +174,30 @@ msgid ""
 "generated by the bias. Contact shadows are only available when using the "
 "GLES3 backend."
 msgstr ""
+"**Contact**: 短いスクリーンスペースレイキャストを実行して、バイアスによって生"
+"成されるギャップを減らします。 Contactは、GLES3バックエンドを使用している場合"
+"にのみ使用できます。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:52
 msgid ""
 "**Reverse Cull Faces**: Some scenes work better when shadow mapping is "
 "rendered with face-culling inverted."
 msgstr ""
+"**Reverse Cull Faces**: 一部のシーンは、face-cullingを逆にしてシャドウマッピ"
+"ングをレンダリングするとより効果的に動作します。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:54
 msgid ""
 "Below is an image of what tweaking bias looks like. Default values work for "
 "most cases, but in general it depends on the size and complexity of geometry."
 msgstr ""
+"以下は、biasを調整した時の外観のイメージです。ほとんどの場合、デフォルト値で"
+"機能しますが、一般的にはジオメトリのサイズと複雑さで変わってきます。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:59
 msgid "Finally, if gaps can't be solved, the **Contact** option can help:"
 msgstr ""
+"最後に、ギャップを解決できない場合は、\\ **Contact** オプションが役立ちます:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:63
 msgid ""
@@ -166,10 +205,13 @@ msgid ""
 "resolution, although that may lead to decreased performance on low-end "
 "hardware."
 msgstr ""
+"シャドウマップの解像度を上げると、あらゆる種類のバイアスの問題をいつでも修正"
+"できますが、ローエンドハードウェアのパフォーマンスが低下する可能性がありま"
+"す。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:67
 msgid "Directional light"
-msgstr ""
+msgstr "指向性(Directional)ライト"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:69
 msgid ""
@@ -178,6 +220,10 @@ msgid ""
 "be used whenever possible (although it's not the cheapest shadow-map to "
 "compute, but more on that later)."
 msgstr ""
+"これは最も一般的なタイプのライトであり、非常に遠くの光源(太陽など)を表しま"
+"す。また、計算するのに最も安価なライトであり、可能な限りこれを使用する必要が"
+"あります(ただし、計算が最も安価なシャドウマップではありませんが、後で詳しく説"
+"明します)。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:73
 msgid ""
@@ -186,6 +232,9 @@ msgid ""
 "which indicates the direction of the light rays. However, the position of "
 "the node does not affect the lighting at all and can be anywhere."
 msgstr ""
+"指向性ライトは、シーン全体をカバーする無数の平行光線をモデル化します。"
+"directional lightノードは、光線の方向を示す大きな矢印で表されます。ただし、"
+"ノードの位置は照明にまったく影響せず、どこにでも配置できます。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:80
 msgid ""
@@ -193,10 +242,13 @@ msgid ""
 "others stay dark. Most light types have specific parameters, but directional "
 "lights are pretty simple in nature, so they don't."
 msgstr ""
+"前面が光線に当たっているすべての面が照らされ、他の面は暗くなります。ほとんど"
+"のライトタイプには特定のパラメーターがありますが、指向性ライトは本質的に非常"
+"に単純であるため、そのようなものはありません。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:84
 msgid "Directional shadow mapping"
-msgstr ""
+msgstr "指向性ライトのシャドウマッピング"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:86
 msgid ""
@@ -205,6 +257,9 @@ msgid ""
 "distance). There is, however, a problem with this approach because objects "
 "closer to the camera receive blocky shadows."
 msgstr ""
+"シャドウ マップを計算するには、シーン全体をカバーする直交する視点(または最大"
+"距離まで)からシーンがレンダリングされます(奥行のみ)。しかしこれでは、カメラに"
+"近いオブジェクトはブロック状の影を受けるため、この方法には問題があります。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:92
 msgid ""
@@ -213,14 +268,18 @@ msgid ""
 "shadow map. This allows small areas close to the viewer to have the same "
 "shadow resolution as a huge, far-away area."
 msgstr ""
+"これを修正するには、\"Parallel Split Shadow Maps\"(またはPSSM)という名前の手"
+"法を使用します。これにより、フラスタム(視錐台)が2つまたは4つの領域に分割され"
+"ます。各エリアには独自のシャドウマップがあります。これにより、視点に近い小さ"
+"な領域は、遠くの大きな領域と同じ影の解像度を持つことができます。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:97
 msgid "With this, shadows become more detailed:"
-msgstr ""
+msgstr "これにより、影がより詳細になります:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:101
 msgid "To control PSSM, a number of parameters are exposed:"
-msgstr ""
+msgstr "PSSMを制御するために、いくつかのパラメーターが公開されています:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:105
 msgid ""
@@ -230,12 +289,19 @@ msgid ""
 "values generally work well, but tweaking the first split a bit is common to "
 "give more detail to close objects (like a character in a third person game)."
 msgstr ""
+"各Split(分割)距離はカメラのFarを基準にして制御されるため(または、値が0より大"
+"きい場合はshadowの **Max Distance**)、\\ *0.0* は目の位置で、\\ *1.0* は影の"
+"処理が行われなくなる場所です。Splitはその中間にあります。通常、デフォルト値は"
+"適切に機能しますが、最初のSplitを少し調整することで、近くのオブジェクト(第三"
+"者のゲームのキャラクターなど)に精緻さを与えることが一般的です。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:111
 msgid ""
 "Always make sure to set a shadow *Max Distance* according to what the scene "
 "needs. A lower maximum distance will result in better-looking shadows."
 msgstr ""
+"必ず、シーンに必要な内容に応じてShadowの *Max Distance* を設定してください。"
+"最大距離を短くすると、影の見栄えが良くなります。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:114
 msgid ""
@@ -243,6 +309,9 @@ msgid ""
 "this, the **\"Blend Splits\"** option can be turned on, which sacrifices "
 "detail in exchange for smoother transitions:"
 msgstr ""
+"場合によっては、スプリットと次のスプリットとの間の移行が悪く見える場合があり"
+"ます。これを修正するには、\\ **\"Blend Splits\"** オプションをオンにします。"
+"これにより、スムーズな移行と引き換えに精細度が犠牲になります:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:120
 msgid ""
@@ -250,6 +319,9 @@ msgid ""
 "shadowing when objects are perpendicular to the light. The only downside is "
 "that it makes the shadow a bit thinner."
 msgstr ""
+"**\"Normal Bias\"** パラメーターを使用して、オブジェクトがライトに垂直な場合"
+"のセルフシャドウイングの特殊なケースを修正できます。唯一の欠点は、影が少し薄"
+"くなることです。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:126
 msgid ""
@@ -257,10 +329,13 @@ msgid ""
 "that are far away. If self shadowing occurs only on the splits far away, "
 "this value can fix them."
 msgstr ""
+"**\"Bias Split Scale\"** パラメーターは、遠く離れたスプリットの追加バイアスを"
+"制御できます。セルフシャドウイングが遠く離れたスプリットでのみ発生する場合、"
+"この値はそれらを修正できます。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:129
 msgid "Finally, the **\"Depth Range\"** has two settings:"
-msgstr ""
+msgstr "最後に、\\ **\"Depth Range\"** には2つの設定があります:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:131
 msgid ""
@@ -269,6 +344,9 @@ msgid ""
 "This is the default and generally desired, but it reduces the effective "
 "shadow resolution."
 msgstr ""
+"**Stable**: カメラが動いている間、影を安定に保ちます。また、影のエッジに近い"
+"ときにアウトラインに表示されるブロックはそのまま残ります。これはデフォルトで"
+"あり、一般的に望ましいものですが、有効な影の解像度が低下します。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:132
 msgid ""
@@ -277,32 +355,40 @@ msgid ""
 "at the same time the shadow looks more detailed (so this effect may be "
 "subtle enough to be forgiven)."
 msgstr ""
+"**Optimized**: 常に利用可能な最大解像度を達成しようとします。これにより、影の"
+"端に「動くのこぎり」効果が生じる場合がありますが、同時に影はより詳細に見えま"
+"す(なので、この効果は許されるほど微妙な場合があります)。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:134
 msgid "Just experiment which setting works better for your scene."
-msgstr ""
+msgstr "シーンに適した設定を試してみてください。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:136
 msgid ""
 "Shadowmap size for directional lights can be changed in Project Settings -> "
 "Rendering -> Quality:"
 msgstr ""
+"指向性ライトのシャドウマップサイズは、[プロジェクト設定] → [Rendering ] → "
+"[Quality]で変更できます:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:140
 msgid ""
 "Increasing it can solve bias problems, but decrease performance. Shadow "
 "mapping is an art of tweaking."
 msgstr ""
+"値を大きくすると、バイアスの問題は解決できますが、パフォーマンスは低下しま"
+"す。シャドウマッピングは微調整の技術です。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:143
 msgid "Omni light"
-msgstr ""
+msgstr "オムニ(Omni/全方位)ライト"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:145
 msgid ""
 "Omni light is a point source that emits light spherically in all directions "
 "up to a given radius."
 msgstr ""
+"オムニライトは、特定の半径までのすべての方向に球形に光を放射する点光源です。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:150
 msgid ""
@@ -310,27 +396,36 @@ msgid ""
 "lights don't have a radius. This is a problem because it means computing "
 "several omni lights would become demanding."
 msgstr ""
+"実際には、光の減衰は逆関数です。つまり、オムニライトには半径があるわけではあ"
+"りません。これは、複数のオムニライトの計算が要求されるようになることを意味す"
+"るため、問題です。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:153
 msgid ""
 "To solve this, a *Range* is introduced together with an attenuation function."
 msgstr ""
+"これを解決するために、Attenuation(減衰)関数とともに *Range* が導入されていま"
+"す。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:157
 msgid ""
 "These two parameters allow tweaking how this works visually in order to find "
 "aesthetically pleasing results."
 msgstr ""
+"これらの2つのパラメーターを使用すると、視覚的に美しい結果を得るために、これが"
+"視覚的にどのように機能するかを微調整できます。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:163
 msgid "Omni shadow mapping"
-msgstr ""
+msgstr "オムニライトのシャドウマッピング"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:165
 msgid ""
 "Omni light shadow mapping is relatively straightforward. The main issue that "
 "needs to be considered is the algorithm used to render it."
 msgstr ""
+"オムニライトのシャドウマッピングは比較的簡単です。考慮する必要がある主な問題"
+"は、レンダリングに使用されるアルゴリズムです。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:168
 msgid ""
@@ -338,6 +433,9 @@ msgid ""
 "\"**. The former renders quickly, but can cause deformations, while the "
 "later is more correct, but costlier."
 msgstr ""
+"オムニシャドウは、\\ **\"Dual Paraboloid\" または \"Cube Mapped\"** としてレ"
+"ンダリングできます。前者はすばやくレンダリングされますが、変形を引き起こす可"
+"能性があり、後者はより正確ですが、コストがかかります。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:174
 msgid ""
@@ -346,10 +444,14 @@ msgid ""
 "(more on that at the end), it may not make a difference in performance for "
 "most scenes."
 msgstr ""
+"レンダリングされるオブジェクトの大部分が不規則な場合、通常はDual Paraboloidで"
+"十分です。いずれにせよ、これらのシャドウはシャドウアトラスにキャッシュされる"
+"ため(詳細については最後に説明します)、ほとんどのシーンでパフォーマンスに違い"
+"が生じることはありません。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:179
 msgid "Spot light"
-msgstr ""
+msgstr "スポット(Spot)ライト"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:181
 msgid ""
@@ -358,26 +460,34 @@ msgid ""
 "reflectors, spots, etc. This type of light is also attenuated towards the "
 "opposite direction it points to."
 msgstr ""
+"スポットライトはオムニライトと似ていますが、コーン(または「カットオフ」)にの"
+"み光を放出する点が異なります。懐中電灯、車のライト、反射板、スポットなどをシ"
+"ミュレートするのに役立ちます。このタイプのライトは、ライトが指し示す反対方向"
+"に向かって(角度が大きくなるほど)減衰します。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:188
 msgid ""
 "Spot lights share the same **Range** and **Attenuation** as **OmniLight**, "
 "and add two extra parameters:"
 msgstr ""
+"スポットライトは **OmniLight** と同じ **Range** および **Attenuation** を共有"
+"し、2つのパラメーターを追加します。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:190
 msgid "**Angle**: The aperture angle of the light"
-msgstr ""
+msgstr "**Angle**: ライトの開口角"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:191
 msgid ""
 "**Angle Attenuation**: The cone attenuation, which helps soften the cone "
 "borders."
 msgstr ""
+"**Angle Attenuation**: コーンの減衰。コーンの境界を柔らかくするのに役立ちま"
+"す。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:194
 msgid "Spot shadow mapping"
-msgstr ""
+msgstr "スポットライトのシャドウマッピング"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:196
 msgid ""
@@ -385,10 +495,13 @@ msgid ""
 "more than 89 degrees of aperture, shadows stop functioning for spots, and "
 "you should consider using an Omni light instead."
 msgstr ""
+"スポットはシャドウマッピングのパラメーターを必要としません。 89度以上の絞りで"
+"は、スポットの影が機能しなくなるため、代わりにオムニライトを使用することを検"
+"討してください。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:200
 msgid "Shadow atlas"
-msgstr ""
+msgstr "Shadow atlas(シャドウアトラス)"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:202
 msgid ""
@@ -396,18 +509,25 @@ msgid ""
 "Spot lights are assigned to slots of a shadow atlas. This atlas can be "
 "configured in Project Settings -> Rendering -> Quality -> Shadow Atlas."
 msgstr ""
+"独自のシャドウテクスチャを持つ指向性ライトとは異なり、オムニライトとスポット"
+"ライトはシャドウアトラスのスロットに割り当てられます。このアトラスは、[プロ"
+"ジェクト設定] → [Rendering ] → [Quality ] → [Shadow Atlas]で設定できます。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:207
 msgid ""
 "The resolution applies to the whole Shadow Atlas. This atlas is divided into "
 "four quadrants:"
 msgstr ""
+"解像度は、シャドウアトラス全体に適用されます。このアトラスは、4つの象限に分か"
+"れています:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:211
 msgid ""
 "Each quadrant can be subdivided to allocate any number of shadow maps; the "
 "following is the default subdivision:"
 msgstr ""
+"各象限を細分化して、シャドウマップをいくつでも割り当てることができます。以下"
+"はデフォルトのサブディビジョンです:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:215
 msgid ""
@@ -416,34 +536,45 @@ msgid ""
 "Subdivisions (smaller maps) represent shadows for lights that are further "
 "away from view and proportionally smaller."
 msgstr ""
+"割り当てロジックは簡単です。最大のシャドウマップサイズ(サブディビジョンが使用"
+"されていない場合)は、画面サイズ(またはそれ以上)のライトを表します。サブディビ"
+"ジョン(より小さなマップ)は、視界から遠く、比例的に小さいライトの影を表しま"
+"す。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:220
 msgid "Every frame, the following procedure is performed for all lights:"
-msgstr ""
+msgstr "すべてのフレームで、すべてのライトに対して次の手順が実行されます:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:222
 msgid ""
 "Check if the light is on a slot of the right size. If not, re-render it and "
 "move it to a larger/smaller slot."
 msgstr ""
+"ライトが適切なサイズのスロットにあるかどうかを確認します。そうでない場合は、"
+"再レンダリングして、より大きな/より小さなスロットに移動します。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:223
 msgid ""
 "Check if any object affecting the shadow map has changed. If it did, re-"
 "render the light."
 msgstr ""
+"シャドウマップに影響するオブジェクトが変更されていないか確認してください。も"
+"しそうなら、ライトを再レンダリングします。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:224
 msgid ""
 "If neither of the above has happened, nothing is done, and the shadow is "
 "left untouched."
 msgstr ""
+"上記のいずれも発生していない場合、何も実行されず、影はそのまま残されます。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:226
 msgid ""
 "If the slots in a quadrant are full, lights are pushed back to smaller "
 "slots, depending on size and distance."
 msgstr ""
+"象限のスロットがいっぱいになると、サイズと距離に応じて、ライトは小さなスロッ"
+"トに押し込められます。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:228
 msgid ""
@@ -451,10 +582,13 @@ msgid ""
 "separate one in some cases (for example, a top-down game where all lights "
 "are around the same size and quadrants may all have the same subdivision)."
 msgstr ""
+"この割り当て戦略は、ほとんどのゲームで機能しますが、場合によっては別のものを"
+"使用することもできます(たとえば、すべてのライトが同じサイズで、象限がすべて同"
+"じサブディビジョンを持つトップダウンゲーム)。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:232
 msgid "Shadow filter quality"
-msgstr ""
+msgstr "シャドウフィルターの品質"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:234
 msgid ""
@@ -462,7 +596,10 @@ msgid ""
 "Settings -> Rendering -> Quality -> Shadows. Godot supports no filter, PCF5 "
 "and PCF13."
 msgstr ""
+"影のフィルター品質を調整できます。これは、[プロジェクト設定] → [Rendering ] "
+"→ [Quality ] → [Shadows]にあります。 Godotはフィルターなし(Disabled)とPCF5お"
+"よびPCF13をサポートします。"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:240
 msgid "It affects the blockyness of the shadow outline:"
-msgstr ""
+msgstr "影の輪郭のブロック性に影響します:"

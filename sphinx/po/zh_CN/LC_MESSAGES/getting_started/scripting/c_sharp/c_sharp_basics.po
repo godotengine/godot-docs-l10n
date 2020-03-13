@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,6 @@ msgstr ""
 "分 <doc_scripting>`。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:21
-#, fuzzy
 msgid ""
 "C# is a high-level programming language developed by Microsoft. In Godot, it "
 "is implemented with the Mono 6.x .NET framework, including full support for "
@@ -59,8 +58,8 @@ msgid ""
 "www.mono-project.com/docs/about-mono/compatibility/>`_ page in the Mono "
 "documentation."
 msgstr ""
-"C#是由Microsoft开发的一种高级编程语言。在Godot中，它是使用Mono 5.x .NET框架实"
-"现的，其中包括对C# 7.0的完全支持。Mono是Microsoft .NET Framework的开源实现，"
+"C#是由Microsoft开发的一种高级编程语言。在Godot中，它是使用Mono 6.x .NET框架实"
+"现的，其中包括对C# 8.0的完全支持。Mono是Microsoft .NET Framework的开源实现，"
 "基于C#的ECMAC标准和公共语言运行时。检查其功能的一个很好的起点是Mono文档中的 `"
 "兼容性 <http://www.mono-project.com/docs/about-mono/compatibility/>`_ 页面。"
 
@@ -155,7 +154,6 @@ msgid "Configuring an external editor"
 msgstr "配置外部编辑器"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:79
-#, fuzzy
 msgid ""
 "C# support in Godot's script editor is minimal. Consider using an external "
 "IDE or editor, such as  `Visual Studio Code <https://code.visualstudio.com/"
@@ -169,7 +167,7 @@ msgstr ""
 "`Visual Studio Code <https://code.visualstudio.com/>`_ 或 ``MonoDevelop``。它"
 "们为C＃提供自动代码补全、调试、和其他有用的功能。要在Godot中选择外部编辑器，"
 "请单击 **编辑器 → 编辑器设置** 并向下滚动到 **Mono**。在 **Mono** 下，单击 **"
-"编辑器**，然后选择您指定的外部编辑器。"
+"编辑器**，然后选择您指定的外部编辑器。Godot 当前支持以下的外部编辑器："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:88
 msgid "Visual Studio 2019"
@@ -202,10 +200,12 @@ msgstr ""
 "法高亮和智能感知（IntelliSense）的特性。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
+#, fuzzy
 msgid ""
 "If you are using Visual Studio 2019, you must follow the instructions found "
 "in the \"Configure VS2019 for Debugging\" section below."
 msgstr ""
+"如果你使用 Visual Studio 2019，你必须遵循 \"VS2019 调试配置 \" 章节中的说明。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:103
 msgid "Creating a C# script"
@@ -445,100 +445,135 @@ msgstr ""
 "一样。许多IDE都可以直接添加软件包。也可以通过在项目根目录下的 ``.csproj`` 文"
 "件中添加软件包引用来手动添加它们："
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:260
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:262
 msgid ""
-"Whenever packages are added or modified, run ``nuget restore`` in the root "
-"of the project directory. To ensure that NuGet packages will be available "
-"for msbuild to use, run:"
+"By default, tools like NuGet put ``Version`` as an attribute of the "
+"```PackageReference``` Node. **You must manually create a Version node as "
+"shown above.**  This is because the version of MSBuild used requires this. "
+"(This will be fixed in Godot 4.0.)"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:264
+#, fuzzy
+msgid ""
+"Whenever packages are added or modified, run ``nuget restore`` (*not* "
+"``dotnet restore``) in the root of the project directory. To ensure that "
+"NuGet packages will be available for msbuild to use, run:"
 msgstr ""
 "每当添加或修改软件包时，请在项目目录的根目录中运行 ``nuget restore``。为确保 "
 "``NuGet`` 软件包可供 ``msbuild`` 使用，请运行："
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:269
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:273
 #, fuzzy
 msgid "Profiling your C# code"
-msgstr "画您的世界"
+msgstr "分析 C# 代码"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:271
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:275
+#, fuzzy
 msgid ""
 "`Mono log profiler <https://www.mono-project.com/docs/debug+profile/profile/"
-"profiler/>`_ is available via `this PR <https://github.com/godotengine/godot/"
-"pull/26513>`_."
+"profiler/>`_ is available for Linux and macOS. Due to a Mono change, it does "
+"not work on Windows currently."
 msgstr ""
+"`Mono log profiler（Monon日志分析器） <https://www.mono-project.com/docs/"
+"debug+profile/profile/profiler/>`_ 的使用 说明在`this PR <https://github.com/"
+"godotengine/godot/pull/26513>`_。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:272
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:276
+#, fuzzy
 msgid ""
 "External Mono profiler like `JetBrains dotTrace <https://www.jetbrains.com/"
 "profiler/>`_ can be used as described `here <https://github.com/godotengine/"
 "godot/pull/34382>`_."
 msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:275
-msgid "Configuring VS 2019 for debugging"
-msgstr ""
+"外部的Mono分析器比如`JetBrains dotTrace <https://www.jetbrains.com/profiler/"
+">`_使用方法在 `这里<https://github.com/godotengine/godot/pull/34382>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:279
+#, fuzzy
+msgid "Configuring VS 2019 for debugging"
+msgstr "VS2019 调试配置"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:283
 msgid ""
 "Godot has built-in support for workflows involving several popular C# IDEs. "
 "Built-in support for Visual Studio will be including in future versions, but "
 "in the meantime, the steps below can let you configure VS 2019 for use with "
 "Godot C# projects."
 msgstr ""
+"Godot 有内置的工作流程支持包括几种流行的C# IDE（C#集成开发环境）。内置的对于 "
+"Visual Studio 的支持包括其未来版本，但与此同时，以下步骤允许您配置 VS 2019 以"
+"用于 Godot C# 项目。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:284
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:288
 msgid ""
 "Install VS 2019 with ``.NET desktop development`` and ``Desktop development "
 "with C++`` workloads selected."
 msgstr ""
+"安装 VS2019 时选中工作负载项``.NET 桌面开发`` 和``使用 C++ 的桌面开发``（已安"
+"装VS2019的可以在 Visual Studio Installer中选择修改，确保安装即可）。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:285
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:289
+#, fuzzy
 msgid ""
 "**Ensure that you do not have Xamarin installed.** Do not choose the "
 "``Mobile development with .NET`` workload. Xamarin changes the DLLs used by "
 "MonoDebugger, which breaks debugging."
 msgstr ""
+"**确保没有安装 Xamarin。** 不要选中 ``使用 .NET的移动开发``工作负载项。"
+"Xamarin为了使用MonoDebugger （Mono调试器）更改了 DLLs（动态链接库） ，而这样"
+"做是会破坏调试的。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:286
-#, fuzzy
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:290
 msgid ""
 "Install the `VSMonoDebugger extension <https://marketplace.visualstudio.com/"
 "items?itemName=GordianDotNet.VSMonoDebugger0d62>`_."
 msgstr ""
-"Visual Studio Code： `Clang-Format <https://marketplace.visualstudio.com/"
-"items?itemName=xaver.clang-format>`__"
+"安装 `VSMonoDebugger extension（VSMonoDebugger 扩展） <https://marketplace."
+"visualstudio.com/items?itemName=GordianDotNet.VSMonoDebugger0d62>`_。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:287
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:291
 msgid "In VS 2019 --> Extensions --> Mono --> Settings:"
-msgstr ""
+msgstr "在 VS 2019 --> Extensions --> Mono --> Settings："
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:289
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:293
 msgid "Select ``Debug/Deploy to local Windows``."
 msgstr "选择 ``Debug/Deploy to local Windows``。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:290
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:294
 msgid "Leave ``Local Deploy Path`` blank."
-msgstr ""
+msgstr "清空``Local Deploy Path``项。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:291
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:295
+#, fuzzy
 msgid ""
 "Set the ``Mono Debug Port`` to the port in Godot --> Project --> Project "
 "Settings --> Mono --> Debugger Agent."
 msgstr ""
+"设置``Mono Debug Port`` 和 Godot --> 项目 --> 项目设置 --> Mono --> Debugger "
+"Agent 中的Port相同的数值。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:292
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:296
+#, fuzzy
 msgid ""
 "Also select ``Wait for Debugger`` in the Godot Mono options. `This Godot "
 "Addon <https://godotengine.org/asset-library/asset/435>`_ may be helpful."
 msgstr ""
+"同时在Mono选项表中，启用``Wait for Debugger`` 。 `Mono Debugger Enabler "
+"<https://godotengine.org/asset-library/asset/435>`_ 这个Godot 小工具 可能有帮"
+"助。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:294
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:298
+#, fuzzy
 msgid ""
 "Run the game in Godot. It should hang at the Godot splash screen while it "
 "waits for your debugger to attach."
-msgstr ""
+msgstr "在Godot中运行游戏。在等待连接到调试器时，它应该挂起在启动屏幕。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:295
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:299
 msgid ""
 "In VS 2019, open your project and choose Extensions --> Mono --> Attach to "
 "Mono Debugger."
 msgstr ""
+"在 VS 2019， 打开你的项目选择 Extensions --> Mono --> Attach to Mono "
+"Debugger."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
+#, fuzzy
 msgid "Instancing"
-msgstr ""
+msgstr "Instancing (вставка екземпляра)"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:7
 msgid "Introduction"
@@ -33,12 +34,19 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
+"Створення одної сцени та додавання до неї вузлів може працювати для "
+"маленьких проектів, але по мірі збільшення проекта в розмірах і складності, "
+"кількість вузлів може швидко стати некерованою. Щоб вирішити це, Godot "
+"дозволяє розділити проект на будь-яку кількість сцен. Це дає вам потужний "
+"інструмент, який допоможе організувати різні компоненти вашої гри."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
+"В :ref:`doc_scenes_and_nodes` ви дізналися, що сцена - це сукупність вузлів, "
+"організованих у структурі дерева, з одним вузлом в якості кореня дерева."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -46,32 +54,45 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"Ви можете створити скільки завгодно сцен і зберегти їх на диску. Сцени, "
+"збережені таким чином, називаються \"упакованими сценами\" і мають "
+"розширення ``.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
+"Після того, як сцена збережена, її можна встановити в іншу сцену так, ніби "
+"це який-не-будь вузол."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
 msgstr ""
+"На малюнку вище Сцена B була встановлена в Сцену А в якості вузла-нащадка."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
+#, fuzzy
 msgid "Instancing by example"
-msgstr ""
+msgstr "Зразок створення екземпляра"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
+#, fuzzy
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
+"Щоб краще зрозуміти, як створювати екземпляр (instancing), давайте "
+"завантажимо зразок проекту: :download:`instancing.zip <files/instancing."
+"zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
+"Розпакуйте цей проект куди завгодно. Потім відкрийте Godot і додайте цей "
+"проект до керівника проектів за допомогою кнопки 'Імпортувати':"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -79,6 +100,9 @@ msgid ""
 "can find inside it. After doing this, the new project will appear on the "
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
+"Перейдіть до витягнутої папки та відкрийте файл \"project.godot\", який ви "
+"можете знайти в ній. Після цього новий проект з’явиться у списку проектів. "
+"Відредагуйте проект, натиснувши кнопку «Редагувати»."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -87,10 +111,15 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
+"Цей проект містить дві сцени: \"Ball.tscn\" і \"Main.tscn\". Сцена м'яча "
+"(\"Ball.tscn\") використовує :ref:`RigidBody2D <class_RigidBody2D>` (тверде "
+"тіло 2D) для забезпечення фізичної поведінки, тоді як головна сцена («Main."
+"tscn») має набір перешкод для зіткнення з м'ячем (використовується :ref:"
+"`StaticBody2D <class_StaticBody2D>` (статичне тіло 2D))."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr ""
+msgstr "Відкрийте сцену ``Main`` та виберіть кореневий вузол:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
@@ -98,6 +127,10 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
+"Ми хочемо додати екземпляр сцени ``Ball`` в якості нащадка до сцени "
+"``Main``. Натисніть іконку \"ланцюжка\" (при наведенні на неї курсора спливе "
+"підказка \"Створити екземпляр файла сцени як вузол.\") і виберіть файл "
+"``Ball.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -105,10 +138,14 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
+"М'яч буде розміщений у верхньому лівому куті області екрана (це (0, 0)в "
+"координатах екрана). Клацніть по ньому та помістіть десь біля верхнього "
+"центру сцени:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
 msgstr ""
+"Натисніть «Відтворити» і спостерігайте, як м'яч падає в нижню частину екрана:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 #, fuzzy
@@ -116,10 +153,11 @@ msgid "Multiple instances"
 msgstr "Додавання декількох екземплярів"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
+#, fuzzy
 msgid ""
 "You can add as many instances as you like to a scene, either by using the "
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
-"\"Duplicate\" (Ctrl-D):"
+"\"Duplicate\" (:kbd:`Ctrl + D`):"
 msgstr ""
 "Ви можете додавати будь-яку кількість екземплярів на сцену за допомогою "
 "повторного натискання кнопки \"Екземпляр\" або натисканням екземпляра кульки "
@@ -134,25 +172,35 @@ msgid "Editing instances"
 msgstr "Редагування екземплярів"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
+#, fuzzy
 msgid ""
-"Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
-"down arrow and selecting \"New PhysicsMaterial\"."
+"Open the ``Ball`` scene and add a ``PhysicsMaterial`` by opening the "
+"\"Physics Material Override\" dropdown in the Inspector dock and selecting "
+"\"New PhysicsMaterial\"."
 msgstr ""
+"Відкрийте сцену ``Ball`` та додайте ``PhysicsMaterial`` (фізичний матеріал), "
+"натиснувши стрілку вниз та вибравши \"New PhysicsMaterial\" (\"Новий "
+"фізичний матеріал\")."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:98
+#: ../../docs/getting_started/step_by_step/instancing.rst:99
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr ""
+"Потім розгорніть матеріал, натиснувши на нього, і встановіть властивість "
+"``Bounce`` (відскок) на ``1``."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:103
+#: ../../docs/getting_started/step_by_step/instancing.rst:104
 msgid ""
 "Press \"Play\" and notice that all of the instanced balls are now much more "
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
+"Натисніть «Відтворити». Зверніть увагу, що всі м'ячі тепер стрибають "
+"сильніше. Оскільки всі м'ячі створені на основі збереженої сцени, то зміни в "
+"цій сцені впливатимуть на всі екземпляри м'ячів."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:107
+#: ../../docs/getting_started/step_by_step/instancing.rst:108
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
@@ -160,8 +208,14 @@ msgid ""
 "to make it unique. Click on the down arrow and select \"Make Unique\". Set "
 "its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
+"Ви також можете налаштувати окремі екземпляри. Встановіть значення Bounce "
+"(відскок) назад на ``0``, а потім, у сцені ``Main``, виберіть один із "
+"створених м'ячів. Такі ресурси, як ``PhysicsMaterial`` (фізичний матеріал) "
+"за замовчуванням поширюються на всі екземпляри, тому нам потрібно зробити "
+"його унікальним. Клацніть стрілку вниз і виберіть \"Зробити унікальним\". "
+"Встановіть його ``Bounce`` (відскок) в ``1`` і натисніть кнопку «Відтворити»."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:115
+#: ../../docs/getting_started/step_by_step/instancing.rst:116
 msgid ""
 "Notice that a grey \"revert\" button appears next to the adjusted property. "
 "When this button is present, it means you modified a property in the "
@@ -170,14 +224,25 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
+"Зауважте, що поруч із налаштованою властивістю з’являється сіра кнопка "
+"«повернутися». Якщо ця кнопка присутня, це означає, що ви змінили "
+"властивість у вставленій сцені. Тепер навіть якщо ви зміните цю властивість "
+"в початковій збереженій сцені, спеціальне значення залишиться незмінним. "
+"Натискання кнопки повернення поверне властивість до значення збереженої "
+"сцени."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:123
+#: ../../docs/getting_started/step_by_step/instancing.rst:124
 msgid "Conclusion"
 msgstr "Висновки"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:125
+#: ../../docs/getting_started/step_by_step/instancing.rst:126
+#, fuzzy
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_instancing_continued`."
 msgstr ""
+"Instancing (створення екземплярів) може бути корисним, коли ви хочете "
+"створити багато копій одного і того ж об'єкта. Також екземпляри можна "
+"створити в коді за допомогою GDScript, дивіться :ref:"
+"`doc_instancing_continued`."

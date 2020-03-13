@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,10 @@ msgid ""
 "Godot just so they can open your project. Instead, you can *export* your "
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
+"Тепер, коли у вас є робоча гра, ви, мабуть, хочете поділитися своїм успіхом "
+"з іншими. Однак не практично просити своїх друзів завантажити Godot лише для "
+"того, щоб вони могли відкрити ваш проект. Натомість ви можете експортувати "
+"свій проект, перетворюючи його у \"пакет\", який може запускати будь-хто."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 msgid ""
@@ -40,18 +44,24 @@ msgid ""
 "a variety of platforms. First, however, we need to make some changes to the "
 "way the game works."
 msgstr ""
+"Спосіб експорту вашої гри залежить від платформи, на яку ви орієнтовані. У "
+"цьому уроці ви дізнаєтесь, як експортувати гру «Dodge the Creeps» для різних "
+"платформ. Однак спершу нам потрібно внести деякі зміни в спосіб роботи гри."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
 msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
+"Якщо ви ще не зробили \"Dodge the Creeps\", будь ласка, прочитайте :ref:"
+"`doc_your_first_game`, перш ніж продовжувати цей урок."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 msgid "Preparing the project"
 msgstr "Приготування проекту"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
+#, fuzzy
 msgid ""
 "In \"Dodge the Creeps\" we used keyboard controls to move the player's "
 "character. This is fine if your game is being played on a PC platform, but "
@@ -59,8 +69,14 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
+"У “Dodge the Creeps” ми використовували клавіатуру для переміщення персонажа "
+"гравця. Це добре, якщо ваша гра грається на платформі ПК, але на телефоні, "
+"чи планшеті, вам потрібна підтримка сенсорного екрану. Оскільки подію "
+"клацання мишки можна трактувати так само, як сенсорну подію, ми перетворимо "
+"гру в стиль \"клац і рух\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
+#, fuzzy
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -69,26 +85,46 @@ msgid ""
 "input. In the \"Project Settings\" under *Input Devices* and *Pointing*, set "
 "*Emulate Touch From Mouse* to \"On\"."
 msgstr ""
+"За замовчуванням Godot емулює введення миші з сенсорного введення. Це "
+"означає, що все що закодовано на події миші, буде працювати і на події "
+"сенсорного введення. Godot також може імітувати сенсорне введення з "
+"натискання миші, що дає нам можливість продовжувати грати в нашу гру на "
+"комп'ютері переключившись на сенсорний ввід. У розділі \"Параметри проекту\" "
+"в розділі *Input Devices*(*Пристрої введення*) встановіть *Emulate Touch "
+"From Mouse* (*Емуляція дотику від миші*) на \"Увімкнено\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:39
+#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to *Display*, then click on *Window*. "
 "In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
+"Нам також необхідно впевнитись, що гра масштабується коректно на різних "
+"розмірах екранів, тому в параметрах проекту перейдіть до меню *Display* "
+"(*Екран*), натисніть *Window* (*Вікно*). У параметрах *Stretch* "
+"(*Розтягування*) встановіть для *Mode* (*Режим*) - \"2d\", а для *Aspect* "
+"(*Вигляд*) - \"keep\" (\"утримувати\")."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
+#, fuzzy
 msgid ""
 "Since we are already in the *Window* settings, we should also set under "
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
+"Оскільки ми вже в *Window*, то також встановимо під *Handheld* в "
+"*Orientation* (*Орієнтація*) на \"portrait\" (\"портретна»\")."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
+#, fuzzy
 msgid ""
 "Next, we need to modify the ``Player.gd`` script to change the input method. "
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
+"Далі нам потрібно модифікувати скрипт ``Player.gd``, щоб змінити метод "
+"введення. Ми видалимо керування клавішами та змусимо гравця рухатись до "
+"\"цілі\", встановленої дотиком (або клацанням мишки)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:52
 msgid ""
@@ -99,38 +135,56 @@ msgstr "Ось повний скрипт для гравця із комента
 #: ../../docs/getting_started/step_by_step/exporting.rst:246
 #, fuzzy
 msgid "Setting a main scene"
-msgstr "Як розпочати гру"
+msgstr "Налаштування головної сцени"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:248
+#, fuzzy
 msgid ""
 "The main scene is the one that your game will start in. In *Project -> "
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
 "by clicking the folder icon and selecting it."
 msgstr ""
+"Головна сцена - це та, з якої буде розпочинатися ваша гра. У *Проект -> "
+"Параметри проекту -> Application (Застосування) -> Run*, встановіть для "
+"*Main Scene* (*Головна сцена*) значення \"Main.tscn\", натиснувши піктограму "
+"теки та вибравши його."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:253
+#, fuzzy
 msgid "Export templates"
-msgstr ""
+msgstr "Експорт шаблонів"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:255
+#, fuzzy
 msgid ""
 "In order to export, you need to download the *export templates* from the "
 "http://godotengine.org/download. These templates are optimized versions of "
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
+"Для експорту вам потрібно завантажити *шаблони експорту* з http://"
+"godotengine.org/download. Ці шаблони є оптимізованими версіями редактора без "
+"самого редактора оптимізованого для кожної платформи. Ви також можете "
+"завантажити їх у Godot, натиснувши *Редактор -> Керування шаблонами "
+"експорту*:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:262
+#, fuzzy
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
+"У вікні, що з’явиться, ви можете натиснути «Завантажити», щоб отримати "
+"версію шаблону, що відповідає вашій версії Godot."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:267
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
+"Якщо ви оновите Godot, вам потрібно буде завантажити шаблони, які "
+"відповідають новій версії, інакше експортовані проекти можуть працювати "
+"неправильно."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:271
 #, fuzzy
@@ -138,99 +192,143 @@ msgid "Export presets"
 msgstr "Взірці експортування"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
+#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
 msgstr ""
+"Далі ви можете налаштувати параметри експорту, натиснувши на *Проект -> "
+"Експортувати*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:275
+#, fuzzy
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
+"Створіть новий експорт передустановки, натиснувши «Додати…» та обравши "
+"платформу. За допомогою різних налаштувань можна зробити стільки завгодно "
+"передустановок з різними налаштуваннями."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:280
+#, fuzzy
 msgid ""
 "At the bottom of the window are two buttons. \"Export PCK/ZIP\" only creates "
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
+"У нижній частині вікна є дві кнопки. \"Експорт PCK / ZIP\" створює лише "
+"упаковану версію даних вашого проекту. Без виконуваного файлу, тому проект "
+"не бути запускатися самостійно."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:284
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
+"Друга кнопка - \"Експорт проекту\" створює повну виконавчу версію вашої гри, "
+"наприклад як ``.apk`` для Android або ``.exe`` для Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:287
+#, fuzzy
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
+"На вкладках \"Resources\" (\"Ресурси\") та \"Features\" (\"Особливості\") ви "
+"можете налаштувати, як гра експортується для кожної платформи. Наразі ці "
+"налаштування ми можемо залишити в спокої."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:291
 #, fuzzy
 msgid "Exporting by platform"
-msgstr "Експортування за платформами"
+msgstr "Експортування на платформами"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:293
+#, fuzzy
 msgid ""
 "In this section, we'll walk through the process for each platform, including "
 "any additional software or requirements you'll need."
 msgstr ""
+"У цьому розділі ми розглянемо процес для кожної платформи, включаючи будь-"
+"яке додаткове програмне забезпечення, або вимоги, які вам знадобляться."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:297
 msgid "PC (Linux/macOS/Windows)"
-msgstr ""
+msgstr "ПК (Linux/macOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:299
+#, fuzzy
 msgid ""
 "Exporting PC platforms works the same across the three supported operating "
 "systems. Open the export window and click \"Add..\" to create the preset(s) "
 "you want to make. Then click \"Export Project\" and choose a name and "
 "destination folder. Choose a location *outside* of your project folder."
 msgstr ""
+"Експорт платформ ПК працює однаково в трьох підтримуваних операційних "
+"системах. Відкрийте вікно експорту та натисніть «Додати ..», щоб створити "
+"передустановку, яку ви хочете використати. Потім натисніть «Експорт проекту» "
+"та оберіть ім'я та теку. Виберіть розташування *за межами* папки вашого "
+"проекту."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:304
+#, fuzzy
 msgid "Click \"Save\" and the engine will build the export files."
-msgstr ""
+msgstr "Натисніть «Зберегти», і редактор створить файли експорту."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:306
+#, fuzzy
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
 "either case, the compressed file contains a macOS `.app` that you can double-"
 "click and run."
 msgstr ""
+"Якщо ви експортуєте для MacOS, якщо ви експортуєте на комп'ютер MacOS, ви "
+"отримаєте файл ``.dmg``, для Linux, або Windows, буде ``.zip``. У будь-якому "
+"випадку стиснутий файл містить macOS ``.app``, який можна двічі клацнути та "
+"запустити."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:311
+#, fuzzy
 msgid ""
 "On Windows, if you want your exported executable to have a different icon "
 "than the default one, you need to change it manually. See: :ref:"
 "`doc_changing_application_icon_for_windows`."
 msgstr ""
+"Якщо ви хочете, щоб експортований виконуваний файл мав інакший значок, а не "
+"стандартний, його потрібно змінити вручну. Дивіться: :ref:"
+"`doc_changing_application_icon_for_windows`."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:316
 msgid "Android"
 msgstr "Android"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:318
+#, fuzzy
 msgid ""
 "Mobile devices come with a wide variety of capabilities. In most cases, "
 "Godot's default settings will work, but mobile development is sometimes more "
 "art than science, and you may need to do some experimenting and searching "
 "for help in order to get everything working."
 msgstr ""
+"Мобільні пристрої оснащені найрізноманітнішими можливостями. У більшості "
+"випадків налаштування Godot за замовчуванням спрацюють, але мобільний "
+"розвиток іноді є більше мистецтвом, ніж наукою, і вам може знадобитися "
+"зробити кілька експериментів та пошукати допомоги, щоб все запрацювало."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:324
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
 msgstr ""
+"Перш ніж експортувати проект для Android, потрібно завантажити таке "
+"програмне забезпечення:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:327
+#, fuzzy
 msgid "Android SDK: https://developer.android.com/studio/"
-msgstr ""
+msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:328
 msgid ""
@@ -239,136 +337,203 @@ msgstr ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:330
+#, fuzzy
 msgid ""
 "When you run Android Studio for the first time, click on *Configure -> SDK "
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
 "command-line tool that Godot uses to communicate with your device."
 msgstr ""
+"Коли ви вперше запускаєте Android Studio, натисніть *Налаштувати -> SDK "
+"Manager* та встановіть \"Android SDK Platform Tools\" (\"Інструменти "
+"платформи Android SDK\"). Тут встановлюється інструмент командного рядка "
+"``adb``, який Godot використовує для спілкування з вашим пристроєм."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:334
+#, fuzzy
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
 msgstr ""
+"Далі створіть сховку ключів налагодження, запустивши таку команду в "
+"командному рядку вашої системи:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:341
+#, fuzzy
 msgid ""
 "Click on *Editor -> Editor Settings* in Godot and select the *Export/"
 "Android* section. Here, you need to set the paths to the Android SDK "
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
+"Клацніть на *Редактор -> Параметри редактора* в Godot і виберіть розділ "
+"*Export/Android*. Тут вам потрібно встановити шляхи до додатків Android SDK "
+"у вашій системі та місце розташування створеного вами схову ключів."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:347
+#, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
 "to *Screen* and set *Orientation* to \"Portrait\"."
 msgstr ""
+"Тепер ви готові експортувати. Клацніть на *Проект -> Експортувати* та "
+"додайте передустановку для Android (дивіться вище). Виберіть Android Presets "
+"і в розділі *Options* (*Опції*) перейдіть до *Screen* (*Екран*) та "
+"встановіть *Orientation* (*Орієнтація*) на \"Portrait\" (\"портретна\")."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:351
+#, fuzzy
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
+"Натисніть кнопку \"Експорт проекту\" і Godot створить APK, який ви можете "
+"завантажити на свій пристрій. Для цього в командному рядку використовуйте "
+"наступне:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:358
+#, fuzzy
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
 msgstr ""
+"Можливо, ваш пристрій повинен перебувати в *режимі розробника*. Для "
+"отримання детальної інформації зверніться до документації пристрою."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:361
+#, fuzzy
 msgid ""
 "If your system supports it, connecting a compatible Android device will "
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
 "area:"
 msgstr ""
+"Якщо ваша система підтримує це, підключення сумісного пристрою Android "
+"спричинить появу кнопки «Розгортання одним натисканням кнопки» в області "
+"кнопок відтворення Godot:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:366
+#, fuzzy
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
 msgstr ""
+"Натискання цієї кнопки створює APK і копіює його на ваш пристрій за один "
+"крок."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:369
 msgid "iOS"
 msgstr "iOS"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:371
+#, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
 msgstr ""
+"Для того щоб створити гру для iOS, у вас повинен бути встановлений комп'ютер "
+"під управлінням macOS з Xcode."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:374
+#, fuzzy
 msgid ""
 "Before exporting, there are some settings that you *must* complete for the "
 "project to export successfully. First, the \"App Store Team Id\", which you "
 "can find by logging in to your Apple developer account and looking in the "
 "\"Membership\" section."
 msgstr ""
+"Перед експортом є кілька параметрів, які ви *повинні* змінити для успішного "
+"експорту проекту. По-перше, \"App Store Team Id\", який ви можете знайти, "
+"увійшовши до свого облікового запису розробника Apple і переглянувши розділ "
+"\"Membership\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:378
 msgid "You must also provide icons and splash screen images as shown below:"
 msgstr ""
+"Ви також повинні надати піктограми та зображення екрану, як показано нижче:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:382
+#, fuzzy
 msgid "Click \"Export Project\" and select a destination folder."
-msgstr ""
+msgstr "Клацніть «Експорт проекту» та оберіть теку призначення."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:384
+#, fuzzy
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
 msgstr ""
+"Після того, як ви успішно експортували проект, ви знайдете такі папки та "
+"файли, які були створені у вибраному вами місці:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:389
+#, fuzzy
 msgid ""
 "You can now open the project in Xcode and build the project for iOS. Xcode "
 "build procedure is beyond the scope of this tutorial. See https://help.apple."
 "com/xcode/mac/current/#/devc8c2a6be1 for more information."
 msgstr ""
+"Тепер ви можете відкрити проект у Xcode та створити проект для iOS. "
+"Процедура збирання Xcode виходить за межі цього підручника. Дивіться https://"
+"help.apple.com/xcode/mac/current/#/devc8c2a6be1 для отримання додаткової "
+"інформації."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:395
 msgid "HTML5 (web)"
-msgstr ""
+msgstr "HTML5 (web)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:397
+#, fuzzy
 msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
 msgstr ""
+"Натисніть «Експорт проекту» на передустановці HTML5. Нам не потрібно "
+"змінювати жодні налаштування за замовчуванням."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:400
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"
 msgstr ""
+"Коли експорт завершиться, у вас з’явиться папка, що містить такі файли:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:405
+#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
 "you don't have one set up on your computer, you can search online to find "
 "suggestions for your specific OS."
 msgstr ""
+"Перегляд ``.html`` - файлу у вашому браузері дозволяє вам грати. Однак ви не "
+"можете відкрити файл безпосередньо, його потрібно обслуговувати веб-"
+"сервером. Якщо у вас немає налаштувань на комп'ютері, ви можете пошукати в "
+"Інтернеті, щоб знайти пропозиції для вашої конкретної ОС."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:410
+#, fuzzy
 msgid ""
 "Point your browser at the URL where you've placed the html file. You may "
 "have to wait a few moments while the game loads before you see the start "
 "screen."
 msgstr ""
+"Наберіть в браузері URL-адресу, де ви розмістили файл html. Можливо, вам "
+"доведеться почекати кілька хвилин, поки гра завантажиться, перш ніж побачити "
+"екран запуску."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:415
+#, fuzzy
 msgid ""
 "The console window beneath the game tells you if anything goes wrong. You "
 "can disable it by setting \"Export With Debug\" off when you export the "
 "project."
 msgstr ""
+"Вікно консолі під грою підкаже в чому проблема, якщо щось піде не так. Ви "
+"можете відключити його, в параметрі \"Export With Debug\" під час експорту "
+"проекту."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:418
+#: ../../docs/getting_started/step_by_step/exporting.rst:420
+#, fuzzy
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "
 "technology and you may find some things that don't work. Make sure you have "
@@ -376,3 +541,8 @@ msgid ""
 "find at the `Godot Github repository <https://github.com/godotengine/godot/"
 "issues>`_."
 msgstr ""
+"Хоча WASM підтримується у всіх основних браузерах, це все ще нова "
+"технологія, і ви можете знайти деякі речі, які не працюють. Переконайтеся, "
+"що ви оновили веб-переглядач до останньої версії та повідомте про будь-які "
+"помилки, які ви знайдете у `Godot Github repository <https://github.com/"
+"godotengine/godot/issues>`_."

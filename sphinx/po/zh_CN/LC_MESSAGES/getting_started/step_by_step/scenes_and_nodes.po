@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -261,33 +261,34 @@ msgstr ""
 "角，处于选中状态。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
+#, fuzzy
 msgid ""
-"The node appears in the scene tree editor (box in the top right corner), and "
-"the label properties appear in the Inspector (box in the bottom right "
-"corner)."
+"The node appears in the scene tree editor in the Scene dock, and the label "
+"properties appear in the Inspector dock."
 msgstr ""
 "这个节点出现在了场景树编辑器(上图右上角的框里)，而且标签的属性出现在了属性面"
 "板中(上图右下角的框里)。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:137
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr "下一步就是去改变标签的 ``文本`` 属性了，我们来把它改成“Hello,World!”："
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:142
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
+#, fuzzy
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
-"top bar (or hit F6):"
+"top bar (or hit :kbd:`F6`):"
 msgstr ""
 "好了，一切都已准备就绪，可以来运行场景了！在顶栏按下 :menuselection:`运行场景"
 "(PLAY SCENE)` 按钮(或敲击 :kbd:`F6` )："
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:147
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
 msgstr "然后……哎呀。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:151
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
@@ -295,7 +296,7 @@ msgstr ""
 "场景需要被保存才能被运行，所以在 :menuselection:`场景(Scene) --> 保存菜单"
 "(Save)` 中将场景保存成文件如Hello.tscn："
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:156
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:155
 msgid ""
 "And here's when something funny happens. The file dialog is a special file "
 "dialog, and only allows you to save inside the project. The project root is "
@@ -311,18 +312,18 @@ msgstr ""
 "``res://`` 就是资源的路径，无论哪种平台和安装位置，它都是定位游戏内部的资源文"
 "件位置的方式。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:164
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
 "在保存场景并再一次按下运行场景之后，“Hello World”演示示例应该最终被执行了："
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:169
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Success!"
 msgstr "成功！"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:173
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:172
 msgid ""
 "If this doesn't immediately work and you have a hiDPI display on at least "
 "one of your monitors, go to **Project → Project Settings → Display → "
@@ -332,11 +333,11 @@ msgstr ""
 "项目(Project) --> 项目设置(Project Settings) --> 显示(Display) --> 窗口"
 "(Window)` 然后在 **Dpi** 下启用 **允许Hidpi**。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
 msgid "Configuring the project"
 msgstr "配置项目"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
@@ -347,7 +348,7 @@ msgstr ""
 "而，可能有多个场景，因此其中一个必须被设定为主场景。这个场景是将会在项目运行"
 "时被载入的场景。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""
 "These settings are all stored in a project.godot file, which is a plaintext "
 "file in win.ini format (for easy editing). There are dozens of settings that "
@@ -360,13 +361,13 @@ msgstr ""
 "式。为了简化此过程，Godot提供了项目设置对话框，作为编辑 ``project.godot`` 文"
 "件的前端。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:194
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:193
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
 "要访问这个对话框，选择 :menuselection:`项目(Project) --> 项目设置(Project "
 "Settings)``。现在就试试吧。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
@@ -375,7 +376,7 @@ msgstr ""
 "(Application) --> 运行(Run) --> 主场景(Main Scene)` 属性然后点击以选择 "
 "``Hello.tscn``。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:201
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
@@ -383,7 +384,7 @@ msgstr ""
 "现在，通过此更改，当您按常规播放按钮(或 :kbd:`F5`)时，无论正在编辑哪个场景，"
 "该场景都将运行。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""
 "The project settings dialog provides a lot of options that can be saved to a "
 "project.godot file and shows their default values. If you change a value, a "
@@ -394,7 +395,7 @@ msgstr ""
 "它们的默认值。当您改变了一个值，一个对勾被标记在属性名的左侧。这意味着这个属"
 "性将被保存到 ``project.godot`` 文件中并被记住。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:208
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
@@ -403,11 +404,11 @@ msgstr ""
 "另外，还可以使用 :ref:`ProjectSettings <class_ProjectSettings>` 单例在运行时"
 "来添加自定义配置选项，并读取它们。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:213
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:212
 msgid "To be continued..."
 msgstr "未完待续..."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:215
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:214
 msgid ""
 "This tutorial talked about \"scenes and nodes\", but so far there has been "
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "

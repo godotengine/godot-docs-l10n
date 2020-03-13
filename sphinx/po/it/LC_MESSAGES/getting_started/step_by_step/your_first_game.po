@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,6 +151,8 @@ msgid ""
 "Godot will display a warning icon next to the node in the scene tree. You "
 "can ignore it for now. We will address it later."
 msgstr ""
+"Godot mostrerà un'icona di avvertimento accanto al nodo nell'albero della "
+"scena. Per ora lo puoi ignorare. Ce ne occuperemo successivamente."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:73
 msgid ""
@@ -177,9 +179,10 @@ msgstr ""
 "comando dice \"Accerta che i figli dell'oggetto non siano selezionabili.\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
+#, fuzzy
 msgid ""
-"Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
-"``Command+S`` on Mac."
+"Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
+"Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
 "Salva la scena. Clicca su Scena -> Salva Scena, oppure premi ``Ctrl+S`` su "
 "Windows/Linux o ``Command+S`` su Mac."
@@ -481,7 +484,6 @@ msgstr ""
 "$AnimatedSprite.play()`` è uguale a ``get_node(\"AnimatedSprite\").play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:314
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position. "
 "We can also use ``clamp()`` to prevent it from leaving the screen. "
@@ -489,8 +491,9 @@ msgid ""
 "to the bottom of the ``_process`` function:"
 msgstr ""
 "Ora che abbiamo una direzione di movimento, possiamo aggiornare la posizione "
-"del player ed usare ``clamp()`` per impedirgli di uscire dallo schermo "
-"aggiungendo il codice seguente sul fondo della funzione ``_process()``:"
+"del player. Possiamo inoltre usare ``clamp()`` per impedirgli di uscire "
+"dallo schermo. Aggiungendo il seguente codice sul fondo della funzione "
+"``_process()``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:335
 msgid ""
@@ -499,6 +502,10 @@ msgid ""
 "this value ensures that your movement will remain consistent even if the "
 "frame rate changes."
 msgstr ""
+"Il parametro `delta` della funzione `_process()` si riferisce alla "
+"*lunghezza del frame* - il tempo di esecuzione del frame precedente. Usare "
+"questo valore garantisce che il movimento sia proporzionale al frame "
+"precedente, in caso di variazione del frame rate."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:340
 msgid ""
@@ -1004,10 +1011,11 @@ msgstr ""
 "proprietà ''Mob'' sotto le variabili di script del nodo ''Main''."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:740
+#, fuzzy
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
-"when a game ends. Type \"game_over\" in the \"Method In Node\" box at the "
+"when a game ends. Type \"game_over\" in the \"Receiver Method\" box at the "
 "bottom of the \"Connecting Signal\" window. Add the following code, as well "
 "as a ``new_game`` function to set everything up for a new game:"
 msgstr ""
@@ -1232,7 +1240,7 @@ msgstr "*Layout* : \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid "*Autowrap* : \"On\""
-msgstr ""
+msgstr "*Autowrap* : \"On\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:941
 msgid "StartButton"
@@ -1551,9 +1559,10 @@ msgstr ""
 "l'InputEvent predefinito  predefinito associato alla barra spaziatrice."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1230
+#, fuzzy
 msgid ""
-"Now when the start button appears, you can either click it or press the "
-"spacebar to start the game."
+"Now when the start button appears, you can either click it or press :kbd:"
+"`Space` to start the game."
 msgstr ""
 "Da questo momento, quando viene visualizzato il pulsante di avvio, è "
 "possibile cliccarlo o premere la barra spaziatrice per avviare il gioco."

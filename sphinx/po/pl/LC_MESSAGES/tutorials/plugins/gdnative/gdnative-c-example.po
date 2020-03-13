@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,15 +160,15 @@ msgid ""
 "file structure that looks along those lines:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:127
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:126
 msgid ""
 "Open up Godot and create a new project called \"simple\" alongside your "
 "``godot_headers`` Git clone. This will create the ``simple`` folder and "
-"``project.godot`` file. Then manually create ``bin`` and ``src`` subfolders "
-"in this folder."
+"``project.godot`` file. Then manually create a ``src`` folder alongside the "
+"``simple`` folder, and a ``bin`` subfolder in the ``simple`` folder."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:132
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:131
 msgid ""
 "We're going to start by having a look at what our ``simple.c`` file "
 "contains. Now, for our example here we're making a single C source file "
@@ -177,14 +177,14 @@ msgid ""
 "however falls outside of the scope of this tutorial."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:138
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:137
 msgid ""
 "We'll be looking at the source code bit by bit so all the parts below should "
 "all be put together into one big file. Each section will be explained as we "
 "add it."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:150
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:149
 msgid ""
 "The above code includes the GDNative API struct header and a standard header "
 "that we will use further down for string operations. It then defines two "
@@ -194,7 +194,7 @@ msgid ""
 "with a struct containing pointers to all these functions."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:157
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:156
 msgid ""
 "To keep this implementation modular and easily extendable, the core "
 "functions are available directly through the \"core\" API struct, but "
@@ -202,13 +202,13 @@ msgid ""
 "through extensions."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:161
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:160
 msgid ""
 "In our example, we access one of these extension to gain access to the "
 "functions specifically needed for NativeScript."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:164
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:163
 msgid ""
 "A NativeScript behaves like any other script in Godot. Because the "
 "NativeScript API is rather low level, it requires the library to specify "
@@ -218,14 +218,14 @@ msgid ""
 "executed."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:177
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:176
 msgid ""
 "These are forward declarations for the functions we'll be implementing for "
 "our object. A constructor and destructor is needed. Additionally, the object "
 "will have a single method called ``get_data``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:181
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:180
 msgid ""
 "Next up is the first of the entry points Godot will call when our dynamic "
 "library is loaded. These methods are all prefixed with ``godot_`` (you can "
@@ -235,13 +235,13 @@ msgid ""
 "among which the pointers to our API structures."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:188
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:187
 msgid ""
 "For any additional API structures we need to loop through our extensions "
 "array and check the type of extension."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:207
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:206
 msgid ""
 "Next up is ``gdnative_terminate`` which is called before the library is "
 "unloaded. Godot will unload the library when no object uses it anymore. "
@@ -249,7 +249,7 @@ msgid ""
 "simply going to clear our API pointers."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:219
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:218
 msgid ""
 "Finally we have ``nativescript_init`` which is the most important function "
 "we'll need today. This function will be called by Godot as part of loading a "
@@ -257,7 +257,7 @@ msgid ""
 "available."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:244
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:243
 msgid ""
 "We first tell the engine which classes are implemented by calling "
 "``nativescript_register_class``. The first parameter here is the handle "
@@ -267,7 +267,7 @@ msgid ""
 "are descriptions for our constructor and destructor."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:251
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:250
 msgid ""
 "We then tell Godot about our methods (well our one method in this case), by "
 "calling ``nativescript_register_method`` for each method of our class. In "
@@ -280,7 +280,7 @@ msgid ""
 "is a description of which function to call when the method gets called."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:261
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:260
 msgid ""
 "The description struct ``instance_method`` contains the function pointer to "
 "the function itself as first field. The other two fields in these structs "
@@ -294,14 +294,14 @@ msgid ""
 "(so usually at library-unload time)."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:271
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:270
 msgid ""
 "Now, it's time to start working on the functions of our object. First, we "
 "define a structure that we use to store the member data of an instance of "
 "our GDNative class."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:281
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:280
 msgid ""
 "And then, we define our constructor. All we do in our constructor is "
 "allocate memory for our structure and fill it with some data. Note that we "
@@ -310,20 +310,20 @@ msgid ""
 "identifier in case multiple objects are instantiated."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:287
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:286
 msgid ""
 "This pointer will be passed to any of our functions related to our object as "
 "a parameter called ``p_user_data``, and can both be used to identify our "
 "instance and to access its member data."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:300
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:299
 msgid ""
 "Our destructor is called when Godot is done with our object and we free our "
 "instances' member data."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:309
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:308
 msgid ""
 "And finally, we implement our ``get_data`` function. Data is always sent and "
 "returned as variants so in order to return our data, which is a string, we "
@@ -331,7 +331,7 @@ msgid ""
 "that string object into the variant we are returning."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:330
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:329
 msgid ""
 "Strings are heap-allocated in Godot, so they have a destructor which frees "
 "the memory. Destructors are named ``godot_TYPENAME_destroy``. When a Variant "
@@ -342,7 +342,7 @@ msgid ""
 "automatically destroyed by Godot."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:339
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:338
 msgid ""
 "In more complex operations it can be confusing the keep track of which value "
 "needs to be deallocated and which does not. As a general rule: call "
@@ -351,26 +351,26 @@ msgid ""
 "so the same is necessary in C."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:345
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:344
 msgid "The variant we return is destroyed automatically by Godot."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:347
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:346
 msgid "And that is the whole source code of our module."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:350
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:349
 msgid "Compiling"
 msgstr "Kompilowanie"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:352
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:351
 msgid ""
 "We now need to compile our source code. As mentioned our example project on "
 "GitHub contains a SCons configuration that does all the hard work for you, "
 "but for our tutorial here we are going to call the compilers directly."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:356
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:355
 msgid ""
 "Assuming you are sticking to the folder structure suggested above, it is "
 "best to open a terminal session in the ``src`` folder and execute the "
@@ -378,19 +378,19 @@ msgid ""
 "proceed."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:360
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:359
 msgid "On Linux:"
 msgstr "Na Linuksie:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:367
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:366
 msgid "On macOS:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:374
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:373
 msgid "On Windows:"
 msgstr "Na Windowsie:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:383
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:382
 msgid ""
 "On the Windows build you also end up with a ``libsimple.lib`` library. This "
 "is a library that you can compile into a project to provide access to the "
@@ -398,19 +398,11 @@ msgid ""
 "game for release this file will be ignored."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:390
-msgid ""
-"If you add a blank ``.gdignore`` file to the ``src`` folder, Godot will not "
-"try to import the compiler-generated files. This is necessary on Windows "
-"were compiled objects have the ``.obj`` extension, which is also a 3D model "
-"format supported by the engine."
-msgstr ""
-
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:396
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:388
 msgid "Creating the GDNativeLibrary (``.gdnlib``) file"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:398
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:390
 msgid ""
 "With our module compiled, we now need to create a corresponding :ref:"
 "`GDNativeLibrary <class_GDNativeLibrary>` resource with ``.gdnlib`` "
@@ -419,38 +411,38 @@ msgid ""
 "per platform."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:404
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:396
 msgid ""
 "We can use Godot to generate this file, so open the \"simple\" project in "
 "the editor."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:407
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:399
 msgid "Start by clicking the create resource button in the Inspector:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:411
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:403
 msgid "And select ``GDNativeLibrary``:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:415
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:407
 msgid ""
 "You should see a contextual editor appear in the bottom panel. Use the "
 "\"Expand Bottom Panel\" button in the bottom right to expand it to full "
 "height:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:421
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:413
 #, fuzzy
 msgid "General properties"
 msgstr "Właściwości węzła"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:423
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:415
 msgid ""
 "In the Inspector, you have various properties to control loading the library."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:425
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:417
 msgid ""
 "If *Load Once* is enabled, our library is loaded only once and each "
 "individual script that uses our library will use the same data. Any variable "
@@ -459,14 +451,14 @@ msgid ""
 "memory each time a script accesses the library."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:431
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:423
 msgid ""
 "If *Singleton* is enabled, our library is automatically loaded and a "
 "function called ``godot_gdnative_singleton`` is called. We'll leave that for "
 "another tutorial."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:435
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:427
 msgid ""
 "The *Symbol Prefix* is a prefix for our core functions, such as ``godot_`` "
 "in ``godot_nativescript_init`` seen earlier. If you use multiple GDNative "
@@ -476,25 +468,25 @@ msgid ""
 "platform does not like dynamic libraries."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:442
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:434
 msgid ""
 "*Reloadable* defines whether the library should be reloaded when the editor "
 "loses and gains focus, typically to pick up new or modified symbols from any "
 "change made to the library externally."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:447
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:439
 #, fuzzy
 msgid "Platform libraries"
 msgstr "Nazwa platformy."
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:449
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:441
 msgid ""
 "The GDNativeLibrary editor plugin lets you configure two things for each "
 "platform and architecture that you aim to support."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:452
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:444
 msgid ""
 "The *Dynamic Library* column (``entry`` section in the saved file) tells us "
 "for each platform and feature combination which dynamic library has to be "
@@ -502,7 +494,7 @@ msgid ""
 "exporting to a specific platform."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:457
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:449
 msgid ""
 "The *Dependencies* column (also ``dependencies`` section) tells Godot what "
 "other files need to be exported for each platform in order for our library "
@@ -510,35 +502,35 @@ msgid ""
 "functionality from a 3rd party library, this is where you list that DLL."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:462
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:454
 msgid ""
 "For our example, we only built libraries for Linux, macOS and/or Windows, so "
 "you can link them in the relevant fields by clicking the folder button. If "
 "you built all three libraries, you should have something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:469
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:461
 #, fuzzy
 msgid "Saving the resource"
 msgstr "Uzyskiwanie zasobu"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:471
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:463
 msgid ""
 "We can then save our GDNativeLibrary resource as ``bin/libsimple.gdnlib`` "
 "with the Save button in the Inspector:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:476
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:468
 msgid ""
 "The file is saved in a text-based format and should have contents similar to "
 "this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:503
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:495
 msgid "Creating the NativeScript (``.gdns``) file"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:505
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:497
 msgid ""
 "With our ``.gdnlib`` file we've told Godot how to load our library, now we "
 "need to tell it about our \"Simple\" object class. We do this by creating a :"
@@ -546,13 +538,13 @@ msgid ""
 "extension."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:509
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:501
 msgid ""
 "Like done for the GDNativeLibrary resource, click the button to create a new "
 "resource in the Inspector and select ``NativeScript``:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:514
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:506
 msgid ""
 "The inspector will show a few properties that we need to fill. As *Class "
 "Name* we enter \"Simple\" which is the object class name that we declared in "
@@ -561,34 +553,34 @@ msgid ""
 "*Load*:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:521
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:513
 msgid "Finally click on the save icon and save this as ``bin/simple.gdns``:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:525
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:517
 msgid ""
 "Now it's time to build our scene. Add a Control node to your scene as your "
 "root and call it ``main``. Then add a Button and a Label as child nodes. "
 "Place them somewhere nice on screen and give your button a name."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:531
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:523
 msgid "Select the control node and attach a script to it:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:535
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:527
 msgid "Next link up the ``pressed`` signal on the button to your script:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:539
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:531
 msgid "Don't forget to save your scene, call it ``main.tscn``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:541
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:533
 msgid "Now we can implement our ``main.gd`` code:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:553
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:545
 msgid ""
 "After all that, our project should work. The first time you run it Godot "
 "will ask you what your main scene is and you select your ``main.tscn`` file "

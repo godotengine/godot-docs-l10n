@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,10 +119,12 @@ msgid "HDR"
 msgstr "高动态范围"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
+#, fuzzy
 msgid ""
-"GLES is not capable of using High Dynamic Range (HDR) rendering features. If "
-"HDR is set for your project, or for a given viewport, Godot will still user "
-"Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` range."
+"GLES2 is not capable of using High Dynamic Range (HDR) rendering features. "
+"If HDR is set for your project, or for a given viewport, Godot will still "
+"user Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` "
+"range."
 msgstr ""
 "GLES不能使用高动态范围(HDR)渲染功能。如果您为项目或指定视区设置了HDR, Godot仍"
 "然会使用低动态范围(LDR)，这将视区值范围限制在“0-1”之间。"
@@ -139,7 +141,7 @@ msgstr "在GLES2中，在:参考:`空间材质<类_空间材质>`中缺少以下
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:58
 msgid "Refraction"
-msgstr "折射"
+msgstr "Refraction(折射)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
 #, fuzzy
@@ -148,11 +150,11 @@ msgstr "次表面散射"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:60
 msgid "Anisotropy"
-msgstr "各向异性"
+msgstr "Anisotropy(各向异性)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
 msgid "Clearcoat"
-msgstr "清漆"
+msgstr "Clearcoat(清漆)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
 msgid "Depth mapping"

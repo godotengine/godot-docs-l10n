@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,14 +160,18 @@ msgid "Your first look at Godot’s editor"
 msgstr "Ваш первый взгляд на редактор Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
+#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
-"interface with empty docks on the right side."
+"interface with menus along the top of the interface and docks along the far "
+"extremes of the interface on either side of the viewport."
 msgstr ""
-"Добро пожаловать в Godot! Когда ваш проект открыт, вы должны увидеть "
-"интерфейс редактора с пустыми панелями справа."
+"Добро пожаловать в Godot! Открыв свой проект, вы увидите интерфейс редактора "
+"с активным окном 3D просмотра. Вы можете изменить текущее рабочее "
+"пространство в верхней части интерфейса. Нажмите на 2D, чтобы перейти в "
+"рабочее пространство 2D."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
@@ -175,18 +179,19 @@ msgstr ""
 "В верхней части слева направо вы можете увидеть **главное меню**, **рабочие "
 "области** и **кнопки воспроизведения**."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
+#, fuzzy
 msgid ""
-"On the bottom left side, you have the **FileSystem dock**, where you’ll "
-"manage your project files and assets."
+"The **FileSystem dock** is where you’ll manage your project files and assets."
 msgstr ""
 "Снизу, с левой стороны у вас есть панель **Файловая система**, где вы будете "
 "управлять файлами и ассетами вашего проекта."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
+#, fuzzy
 msgid ""
-"On the right side, you’ll find the **Scene dock**, which lists the active "
-"scene’s content and the **Inspector** in the bottom right corner."
+"The **Scene dock** lists the active scene’s content and the **Inspector** "
+"allows for the management of the properties of a scene's content."
 msgstr ""
 "Справа вы найдете **панель сцен**, в которой перечислено содержимое активной "
 "сцены, и **инспектор** в правом нижнем углу."
@@ -224,25 +229,27 @@ msgstr ""
 "и AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
+#, fuzzy
 msgid ""
 "You’ll use the **2D workspace** for all types of games. In addition to 2D "
-"games, the 2D workspace is where you'll build your interfaces. Press F1 to "
-"access it."
+"games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
+"`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
 "Вы будете использовать **2D рабочее пространство** для всех типов игр. В "
 "дополнение к 2D-играм, там вы будете создавать свои интерфейсы. Нажмите F1 "
 "для доступа к нему."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:123
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
+#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
-"for 3D games. Press F2 to access it."
+"for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
 "В **3D рабочем пространстве** вы можете работать с сетками (mesh), "
 "освещением и проектированием уровней для 3D-игр. Нажмите F2 для доступа к "
 "нему."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
@@ -250,24 +257,25 @@ msgstr ""
 "Обратите внимание на кнопку *Перспективный* под панелью инструментов. Она "
 "открывает список опций, связанных с 3D-окном просмотра."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:134
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
 "Прочитайте :ref:`doc_introduction_to_3d` для более подробной информации о "
 "**3D workspace**."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:135
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
+#, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
-"auto-completion, and built-in code reference. Press F3 to access it, and F4 "
-"to search the reference."
+"auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
+"+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
 msgstr ""
 "Рабочая область **Script** - это полноценный редактор кода с отладчиком, "
 "богатым автодополнением и встроенной документацией. Нажмите F3 для доступа к "
 "нему, а F4 - для поиска по документации."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:141
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
@@ -275,12 +283,11 @@ msgstr ""
 "Наконец, **AssetLib** - это библиотека бесплатных аддонов, скриптов и "
 "ассетов для использования в ваших проектах."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:146
 msgid "Modify the interface"
 msgstr "Изменение интерфейса"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
@@ -288,13 +295,13 @@ msgid ""
 msgstr ""
 "Весь интерфейс Godot располагается в одном окне. Вы не можете разделить его "
 "на несколько экранов, но можете задействовать внешний редактор кода, "
-"например Atom или Visual Studio."
+"например Atom или Visual Studio Code."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:152
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
 msgid "Move and resize docks"
 msgstr "Перемещение и изменение размеров доков"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:154
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:155
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
@@ -302,14 +309,14 @@ msgstr ""
 "Нажмите на край любого дока или панели и потяните в сторону для изменения "
 "размера по горизонтали или вертикали."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:159
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:160
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
 "Нажмите значок с тремя точками на верхней части любого дока, чтобы изменить "
 "его местоположение."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:165
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."

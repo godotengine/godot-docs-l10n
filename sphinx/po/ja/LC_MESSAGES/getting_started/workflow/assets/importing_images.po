@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,18 +80,16 @@ msgstr ""
 "チャも自動的に再読み込みされます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
-#, fuzzy
 msgid "Supported image formats"
-msgstr "アニメーション"
+msgstr "サポートされている画像形式"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:36
-#, fuzzy
 msgid "Godot can import the following image formats:"
-msgstr "Godotは、次の3D\\ *シーンファイルフォーマット*\\ をサポートしています:"
+msgstr "Godotは、次の画像形式をインポートできます:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
 msgid "BMP (``.bmp``)"
-msgstr ""
+msgstr "\\ BMP (``.bmp``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:39
 msgid ""
@@ -99,33 +97,44 @@ msgid ""
 "will be loaded directly. This can be used to achieve effects using custom "
 "mipmaps."
 msgstr ""
+"DirectDraw Surface (``.dds``) - ミップマップがテクスチャに存在する場合、それ"
+"らは直接ロードされます。これは、カスタムミップマップを使用してその効果を実現"
+"するために使用できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
 msgid ""
 "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
 msgstr ""
+"OpenEXR (``.exr``) - HDRをサポートします(パノラマスカイ用に強くお勧めしま"
+"す)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
 msgid ""
 "Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
 "skies)."
 msgstr ""
+"Radiance HDR (``.hdr``) - HDRをサポートします(パノラマスカイ用に強くお勧めし"
+"ます)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
 msgid ""
 "JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
 "limitations."
 msgstr ""
+"JPEG (``.jpg``、 ``.jpeg``) - フォーマットの制限に従って透明度はサポートして"
+"いません。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid ""
 "PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
 "(no HDR images)."
 msgstr ""
+"PNG (``.png``) - インポート時のチャンネルごとの精度は8ビットに制限されます"
+"(HDR画像なし)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Truevision Targa (``.tga``)"
-msgstr ""
+msgstr "\\ Truevision Targa (``.tga``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:51
 msgid ""
@@ -136,16 +145,25 @@ msgid ""
 "automated thanks to its `command-line interface <https://wiki.inkscape.org/"
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
+"SVG (``.svg``, ``.svgz``) - SVGは、インポート時に `NanoSVG <https://github."
+"com/memononen/nanosvg>`__ を使用してラスタライズされます。サポート内容は限ら"
+"れています: 複雑なベクトルは正しくレンダリングされない場合があります。複雑な"
+"ベクトルの場合、Inkscapeを使用してPNGにレンダリングする方が多くの場合、より優"
+"れたソリューションです。この作業は、Inkscapeの \\ `コマンドラインインターフェ"
+"イス https://wiki.inkscape.org/wiki/index.php/"
+"Using_the_Command_Line#Export_files>`__ を使って自動化できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 msgid "WebP (``.webp``)"
-msgstr ""
+msgstr "\\ WebP (``.webp``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid ""
 "If you've compiled the Godot editor from source with specific modules "
 "disabled, some formats may not be available."
 msgstr ""
+"特定のモジュールを無効にしてソースからGodotエディタをコンパイルした場合、一部"
+"の形式が利用できない場合があります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "Compression"
@@ -166,19 +184,18 @@ msgid "Compress Mode"
 msgstr "圧縮モード(Compress Mode)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:72
-#, fuzzy
 msgid ""
 "**VRAM Compression:** This is the most common compression mode for 3D "
 "assets. Size on disk is reduced and video memory usage is also decreased "
 "considerably (usually by a factor between 4 and 6). This mode should be "
 "avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
-"VRAM圧縮(Video RAM):これは3Dアセットの最も一般的な圧縮モードです。ディスク上"
-"のファイルが削減され、ビデオメモリの使用量も大幅に削減されます。ただし、3Dの"
-"場合は、不要なアーティファクトが表示される場合があります。"
+"**VRAM Compression:** これは3Dアセットの最も一般的な圧縮モードです。ディスク"
+"上のサイズが削減され、ビデオメモリの使用量も大幅に削減されます(通常は1/4〜"
+"1/6)。このモードは、顕著なアーティファクトを示すため、2Dでは使用しないでくだ"
+"さい。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:76
-#, fuzzy
 msgid ""
 "**Lossless Compression:** This is the most common compression mode for 2D "
 "assets. It shows assets without any kind of artifacting, and disk "
@@ -186,9 +203,9 @@ msgid ""
 "than VRAM Compression, though. This is also the recommended setting for "
 "pixel art."
 msgstr ""
-"ロスレス圧縮(Lossless):これは2Dアセットで最も一般的な圧縮です。これは、人為的"
-"な影響を受けずにアセットを表示するものであり、ディスク圧縮は適切です。ただ"
-"し、VRAM圧縮よりもかなり多くのビデオメモリを使用します。"
+"**Lossless(ロスレス) Compression:** これは2Dアセットで最も一般的な圧縮です。"
+"これは、人為的な影響を受けずにアセットを表示するものであり、ディスク圧縮は適"
+"切です。ただし、VRAM圧縮よりもかなり多くのビデオメモリを使用します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
 msgid ""
@@ -197,18 +214,21 @@ msgid ""
 "compared to Lossless or Uncompressed. Video memory usage isn't decreased by "
 "this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
+"**Lossy(非可逆圧縮) Compression:** これは、大きな2Dアセットに適しています。い"
+"くつかのアーティファクトがありますが、VRAMより小さく、ファイルサイズは"
+"LosslessまたはUncompressedに比べて数分の１の小ささです。このモードでは、ビデ"
+"オメモリの使用量は減少しません。 Lossless CompressionまたはUncompressedと同じ"
+"です。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
-#, fuzzy
 msgid ""
 "**Uncompressed:** Only useful for formats that can't be compressed (such as "
 "raw float images)."
 msgstr ""
-"圧縮なし(Uncompressed):圧縮できないフォーマット (raw floatなど) にのみ役立ち"
-"ます。"
+"**Uncompressed(圧縮なし):** 圧縮できないフォーマット(raw floatなど)にのみ役立"
+"ちます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:87
-#, fuzzy
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages (|good| = best, |bad| = worst):"
@@ -249,9 +269,8 @@ msgid "Stored as WebP"
 msgstr "WebP形式で保存"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:93
-#, fuzzy
 msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
-msgstr "プラットフォームに応じてS3TC/BC、PVRTC/ETCとして保存"
+msgstr "プラットフォームに応じてS3TC/BCまたはPVRTC/ETCとして保存"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "Size on Disk"

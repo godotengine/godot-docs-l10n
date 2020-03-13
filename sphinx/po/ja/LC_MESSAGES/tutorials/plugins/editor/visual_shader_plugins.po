@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,8 @@ msgid ""
 "Visual Shader plugins are used to create custom :ref:`class_VisualShader` "
 "nodes in GDScript."
 msgstr ""
+"ビジュアルシェーダープラグインは、GDScriptでカスタム :ref:"
+"`class_VisualShader` ノードを作成するために使用されます。"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:9
 msgid ""
@@ -34,6 +36,10 @@ msgid ""
 "script file and it will be ready to use, provided the custom node is "
 "registered with ``class_name``."
 msgstr ""
+"作成プロセスは、通常のエディタプラグインとは異なります。登録するために "
+"``plugin.cfg`` ファイルを作成する必要はありません。代わりに、カスタムノード"
+"が ``class_name`` に登録されていれば、スクリプトファイルを作成して保存すれば"
+"すぐに使用できます。"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:14
 msgid ""
@@ -42,28 +48,39 @@ msgid ""
 "brace/Godot-3.0-Noise-Shaders/blob/master/assets/gpu_noise_shaders/"
 "classic_perlin3d.tres>`_."
 msgstr ""
+"この短いチュートリアルでは、Perlin-3Dノイズノードの作成方法について説明します"
+"(オリジナルのコードは `GPU noise shaders plugin <https://github.com/curly-"
+"brace/Godot-3.0-Noise-Shaders/blob/master/assets/gpu_noise_shaders/"
+"classic_perlin3d.tres>`_です)。"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:18
 msgid ""
 "Create a Sprite and assign a :ref:`class_ShaderMaterial` to its material "
 "slot:"
 msgstr ""
+"スプライトを作成し、マテリアルスロットに :ref:`class_ShaderMaterial` を割り当"
+"てます:"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:22
 msgid "Assign :ref:`class_VisualShader` to the shader slot of the material:"
 msgstr ""
+":ref:`class_VisualShader` をマテリアルのシェーダースロットに割り当てます:"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:26
 msgid ""
 "Don't forget to change its mode to \"CanvasItem\" (if you are using a "
 "Sprite):"
 msgstr ""
+"モードを \"CanvasItem\" に変更することを忘れないでください(スプライトを使用し"
+"ている場合):"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:30
 msgid ""
 "Create a script which derives from :ref:`class_VisualShaderNodeCustom`. This "
 "is all you need to initialize your plugin."
 msgstr ""
+":ref:`class_VisualShaderNodeCustom` から派生するスクリプトを作成します。プラ"
+"グインを初期化するために必要なのはこれだけです。"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:182
 msgid ""
@@ -71,13 +88,16 @@ msgid ""
 "the member's dialog (if you can't see your new node, try restarting the "
 "editor):"
 msgstr ""
+"保存して、ビジュアルシェーダーを開きます。メンバーのダイアログ内に新しいノー"
+"ドタイプが表示されます(新しいノードが表示されない場合は、エディタを再起動して"
+"ください):"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:186
 msgid "Place it on a graph and connect the required ports:"
-msgstr ""
+msgstr "グラフに配置し、必要なポートを接続します:"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:190
 msgid ""
 "That is everything you need to do, as you can see it is easy to create your "
 "own custom VisualShader nodes!"
-msgstr ""
+msgstr "ご覧のとおり、独自のカスタムVisualShaderノードを簡単に作成できます！"

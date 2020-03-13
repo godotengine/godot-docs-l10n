@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,34 +18,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
+#, fuzzy
 msgid "Instancing (continued)"
-msgstr ""
+msgstr "Instancing (продовження)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
-msgstr ""
+msgstr "Коротке повторення"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
+#, fuzzy
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
 msgstr ""
+"Instancing (створення екземплярів) має багато зручних застосувань. Завдяки "
+"йому ви маєте:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
-msgstr ""
+msgstr "Можливість розподілити сцени та полегшити керування ними."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
 msgstr ""
+"Інструмент для управління та редагування декількох екземплярів вузлів "
+"одночасно."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:13
 msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
+"Спосіб організації та вбудовування складних ігрових потоків, або, навіть, "
+"інтерфейсів користувача (у Godot елементи інтерфейсу також є вузлами)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:17
 msgid "Design language"
-msgstr ""
+msgstr "Стиль проектування"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
 msgid ""
@@ -53,6 +61,9 @@ msgid ""
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
+"Але найбільша сила використання екземплярів сцен, полягає в тому, що це "
+"чудовий стиль проектування. Це відрізняє Godot від усіх інших редакторів. "
+"Godot був розроблений з нуля саме навколо цієї концепції."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -62,17 +73,27 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
+"При створенні ігор з Godot, рекомендується відмовитись від найбільш "
+"поширених моделей проектування, таких як діаграми MVC, або Entity-"
+"Relationship, а замість цього продумати свої сцени більш природним чином. "
+"Почніть з уявлення видимих елементів у вашій грі, тих, які може назвати не "
+"просто програміст, а будь-хто."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:30
+#, fuzzy
 msgid "For example, here's how a simple shooter game could be imagined:"
-msgstr ""
+msgstr "Наприклад, ось як можна уявити просту гру стрілялки:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:34
+#, fuzzy
 msgid ""
 "You can come up with a diagram like this for almost any kind of game. Write "
 "down the parts of the game that you can visualize, and then add arrows to "
 "represent ownership of one component by another."
 msgstr ""
+"Ви можете створити таку схему майже для будь-якої гри. Запишіть частини гри, "
+"які ви можете візуалізувати, а потім протягніть стрілки, щоб зрозуміти які "
+"компоненти, яким будуть належати."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:38
 msgid ""
@@ -81,8 +102,13 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"Після того як ви намалюєте таку діаграму, рекомендований процес створення "
+"гри - це створення сцени для кожного елемента, перерахованого на діаграмі. "
+"Ви будете використовувати створення екземплярів (чи в коді, чи безпосередньо "
+"в редакторі) для побудови ієрархії відносин."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
+#, fuzzy
 msgid ""
 "A lot of time spent in programming games (or software in general) is on "
 "designing an architecture and fitting game components to that architecture. "
@@ -92,12 +118,21 @@ msgid ""
 "design based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
+"Багато часу в програмуванні ігор (або програмному забезпеченні взагалі) "
+"витрачається на проектування архітектури та підлагодження ігрових "
+"компонентів до цієї архітектури. Проектування на основі сцен замінює такий "
+"підхід і робить розробку набагато швидшою і простішою, дозволяючи "
+"сконцентруватися на логіці гри. Оскільки більшість ігрових компонентів "
+"відображаються безпосередньо на сцені, використання дизайну, заснованого на "
+"вставці екземплярів сцени, означає, що інший архітектурний код не потрібен."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:48
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
+"Давайте розглянемо ще один, дещо складніший, приклад гри відкритого типу з "
+"великою кількістю ресурсів та вкладених елементів:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:53
 msgid ""
@@ -106,6 +141,10 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"Погляньте на елемент кімнати. Скажімо, ми там почали. Ми могли б зробити "
+"кілька різних сцен кімнати з різним розташуванням меблів (також сцен) в них. "
+"Пізніше ми могли б зробити сцену будинку, з'єднавши кімнати, щоб скласти "
+"його інтер'єр."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:58
 msgid ""
@@ -113,6 +152,9 @@ msgid ""
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"Потім ми могли б зробити сцену цитаделі, яка зроблена з багатьох екземплярів "
+"будинків. Далі ми могли б почати працювати над місцевою картою світу, "
+"додавши на неї цитадель."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:62
 msgid ""
@@ -120,8 +162,12 @@ msgid ""
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"Пізніше ми могли б створити сцени, які представляють охоронців (та інших "
+"NPC) і додати їх до цитаделі. Як результат, вони будуть опосередковано "
+"додані до загального ігрового світу."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:66
+#, fuzzy
 msgid ""
 "With Godot, it's easy to iterate on your game like this, as all you need to "
 "do is create and instance more scenes. Furthermore, the editor UI is "
@@ -130,10 +176,16 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"З Godot легко відтворити гру, схожу на цю, адже все, що вам потрібно "
+"зробити, це створити та встановити більше екземплярів сцен. Крім того, "
+"інтерфейс редактора призначений для зручності користування, як програмістів, "
+"так і не програмістів. Типовий склад команди розробки може залучати 2D, або "
+"3D художників, дизайнерів рівнів, дизайнерів ігор та аніматорів, які "
+"працюють з інтерфейсом редактора."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"
-msgstr ""
+msgstr "Інформаційне перевантаження!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:75
 msgid ""
@@ -141,6 +193,9 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"Тут було дуже багато нової інформації, яка звалилася на вас вся відразу. "
+"Однак важливою частиною цього уроку було створення усвідомлення того, як "
+"сцени та вставка їх екземплярів використовуються в реальних проектах."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:79
 msgid ""
@@ -148,3 +203,6 @@ msgid ""
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and go on to the next tutorial!"
 msgstr ""
+"Все, що тут обговорювалося, стане для вас другою суттю, як тільки ви почнете "
+"робити ігри та втілювати в життя ці поняття. Поки що не переймайтеся цим, і "
+"переходите до наступного уроку!"

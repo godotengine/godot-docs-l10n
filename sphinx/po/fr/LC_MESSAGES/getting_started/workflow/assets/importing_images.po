@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,19 +82,16 @@ msgstr ""
 "automatiquement."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
-#, fuzzy
 msgid "Supported image formats"
-msgstr "Animation du sprite"
+msgstr "Formats d'image pris en charge"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:36
-#, fuzzy
 msgid "Godot can import the following image formats:"
-msgstr ""
-"Godot prend en charge les *formats de fichiers de scènes* 3D suivants :"
+msgstr "Godot peut importer les formats d'image suivants :"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
 msgid "BMP (``.bmp``)"
-msgstr ""
+msgstr "BMP (``.bmp``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:39
 msgid ""
@@ -102,33 +99,44 @@ msgid ""
 "will be loaded directly. This can be used to achieve effects using custom "
 "mipmaps."
 msgstr ""
+"DirectDraw Surface (``.dds``) - Si des mipmaps sont présents dans la "
+"texture, ils seront chargés directement. Cela peut être utilisé pour obtenir "
+"des effets à l'aide de mipmaps personnalisés."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
 msgid ""
 "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
 msgstr ""
+"OpenEXR (``.exr``) - Supporte le HDR (fortement recommandé pour les ciels "
+"panoramiques)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
 msgid ""
 "Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
 "skies)."
 msgstr ""
+"Radiance HDR (``.hdr``) - Supporte le HDR (fortement recommandé pour les "
+"ciels panoramiques)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
 msgid ""
 "JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
 "limitations."
 msgstr ""
+"JPEG (``.jpg``, ``.jpeg``) - Ne supporte pas la transparence en raison des "
+"limitations du format."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid ""
 "PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
 "(no HDR images)."
 msgstr ""
+"PNG (``.png``) - La précision est limitée à 8 bits par canal lors de "
+"l'importation (pas d'images HDR)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Truevision Targa (``.tga``)"
-msgstr ""
+msgstr "Truevision Targa (``.tga``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:51
 msgid ""
@@ -139,16 +147,25 @@ msgid ""
 "automated thanks to its `command-line interface <https://wiki.inkscape.org/"
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
+"SVG (``.svg``, ``.svgz``) - Les SVG sont rastérisés en utilisant `NanoSVG "
+"<https://github.com/memononen/nanosvg>`__ lors de leur importation. Le "
+"soutien est limité ; les vecteurs complexes peuvent ne pas être rendus "
+"correctement. Pour les vecteurs complexes, les rendre en PNGs en utilisant "
+"Inkscape est souvent une meilleure solution. Ceci peut être automatisée "
+"grâce à son interface en ligne de commande <https://wiki.inkscape.org/wiki/"
+"index.php/Using_the_Command_Line#Export_files>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 msgid "WebP (``.webp``)"
-msgstr ""
+msgstr "WebP (``.webp``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid ""
 "If you've compiled the Godot editor from source with specific modules "
 "disabled, some formats may not be available."
 msgstr ""
+"Si vous avez compilé l'éditeur Godot à partir de la source avec des modules "
+"spécifiques désactivés, certains formats peuvent ne pas être disponibles."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 msgid "Compression"
@@ -169,20 +186,19 @@ msgid "Compress Mode"
 msgstr "Mode de compression"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:72
-#, fuzzy
 msgid ""
 "**VRAM Compression:** This is the most common compression mode for 3D "
 "assets. Size on disk is reduced and video memory usage is also decreased "
 "considerably (usually by a factor between 4 and 6). This mode should be "
 "avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
-"Compression VRAM : C'est le mode de compression le plus courant pour les "
-"ressources 3D. Le fichier sur le disque est réduit et l'utilisation de la "
-"mémoire vidéo est considérablement réduite également. Pour la 3D, il peut "
-"toutefois présenter des artefacts indésirables."
+"**VRAM Compression :** C'est le mode de compression le plus courant pour les "
+"assets 3D. Le fichier sur le disque est réduit et l'utilisation de la "
+"mémoire vidéo est considérablement réduite également (généralement d'un "
+"facteur compris entre 4 et 6). Ce mode doit être évité pour le 2D car il "
+"présente des artefacts visibles."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:76
-#, fuzzy
 msgid ""
 "**Lossless Compression:** This is the most common compression mode for 2D "
 "assets. It shows assets without any kind of artifacting, and disk "
@@ -190,10 +206,11 @@ msgid ""
 "than VRAM Compression, though. This is also the recommended setting for "
 "pixel art."
 msgstr ""
-"Compression sans perte : il s'agit de la compression la plus courante pour "
-"les ressources 2D. Elle montre les ressources sans aucun type d'artefact, et "
-"la compression du disque est raisonnable. Cependant, elle utilisera beaucoup "
-"plus de mémoire vidéo que la VRAM."
+"**Lossless Compression :** C'est le mode de compression le plus courant pour "
+"les assets 2D. Il montre les assets sans aucune sorte d'artefact, et la "
+"compression sur le disque est décente. Cela utilisera cependant une quantité "
+"de mémoire vidéo considérablement plus importante que la compression VRAM. "
+"C'est également le réglage recommandé pour l'art au pixel."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
 msgid ""
@@ -202,18 +219,21 @@ msgid ""
 "compared to Lossless or Uncompressed. Video memory usage isn't decreased by "
 "this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
+"**Lossy Compression :** C'est un bon choix pour les grosses assets 2D. Il "
+"comporte quelques artefacts, mais moins que la VRAM et la taille du fichier "
+"est plusieurs fois inférieure à celle d'un fichier Lossless ou Uncompressed. "
+"L'utilisation de la mémoire vidéo n'est pas diminuée par ce mode ; c'est la "
+"même chose qu'avec la compression Lossless ou Uncompressed."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
-#, fuzzy
 msgid ""
 "**Uncompressed:** Only useful for formats that can't be compressed (such as "
 "raw float images)."
 msgstr ""
-"Non-compressé : utile seulement pour les formats qui ne peuvent être "
-"compressés (comme les flottants brute)."
+"**Uncompressed :** Uniquement utile pour les formats qui ne peuvent pas être "
+"compressés (comme les images flottantes brutes)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:87
-#, fuzzy
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages (|good| = best, |bad| = worst):"
@@ -254,9 +274,8 @@ msgid "Stored as WebP"
 msgstr "Stocké en WebP"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:93
-#, fuzzy
 msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
-msgstr "Stocké en S3TC/BC,PVRTC/ETC selon la plate-forme"
+msgstr "Stocké en S3TC/BC ou PVRTC/ETC selon la plate-forme"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "Size on Disk"

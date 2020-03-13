@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:4
 msgid "Complying with Licenses"
-msgstr ""
+msgstr "ライセンスの遵守"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:7
 msgid "What are licenses?"
-msgstr ""
+msgstr "ライセンスとは何ですか？"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:9
 msgid ""
@@ -32,6 +32,9 @@ msgid ""
 "contributor that submits code to the project does it under this same license "
 "and keeps ownership of the contribution."
 msgstr ""
+"Godotは、\\ `MIT License <https://opensource.org/licenses/MIT>`_ の下で作成お"
+"よび配布されます。プロジェクトにコードを提供するすべての寄稿者がこの同じライ"
+"センスの下でそれを行い、寄稿の所有権を保持するため、単独の所有者もいません。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:11
 msgid ""
@@ -40,6 +43,10 @@ msgid ""
 "it). Your game or project can have a different license, but it still needs "
 "to comply with the original one."
 msgstr ""
+"ライセンスは、あなた(またはあなたの会社)がソフトウェア(およびそれを使用した"
+"ゲームを含む派生プロジェクト)を使用および配布するための法的要件です。ゲームま"
+"たはプロジェクトは異なるライセンスを持つことができますが、元のライセンスに準"
+"拠する必要があります。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:15
 msgid "Requirements"
@@ -50,20 +57,25 @@ msgid ""
 "In the case of the MIT license, the only requirement is to include the "
 "license text somewhere in your game or derivative project."
 msgstr ""
+"MITライセンスの場合、唯一の要件は、ゲームまたは派生プロジェクトのどこかにライ"
+"センステキストを含めることです。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:19
 msgid "This text reads as follows:"
-msgstr ""
+msgstr "このテキストは次のとおりです:"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:22
 msgid "This game uses Godot Engine, available under the following license:"
 msgstr ""
+"このゲームは、次のライセンスの下で利用可能なGodotエンジンを使用しています:"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:24
 msgid ""
 "Copyright (c) 2007-2020 Juan Linietsky, Ariel Manzur. Copyright (c) "
 "2014-2020 Godot Engine contributors."
 msgstr ""
+"Copyright (c) 2007-2020 Juan Linietsky, Ariel Manzur. Copyright (c) "
+"2014-2020 Godot Engine contributors."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:27
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:88
@@ -75,6 +87,12 @@ msgid ""
 "sell copies of the Software, and to permit persons to whom the Software is "
 "furnished to do so, subject to the following conditions:"
 msgstr ""
+"Permission is hereby granted, free of charge, to any person obtaining a copy "
+"of this software and associated documentation files (the \"Software\"), to "
+"deal in the Software without restriction, including without limitation the "
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or "
+"sell copies of the Software, and to permit persons to whom the Software is "
+"furnished to do so, subject to the following conditions:"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:29
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:90
@@ -82,6 +100,8 @@ msgid ""
 "The above copyright notice and this permission notice shall be included in "
 "all copies or substantial portions of the Software."
 msgstr ""
+"上記の著作権表示およびこの許可通知は、ソフトウェアのすべてのコピーまたは大部"
+"分に含まれるものとします。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:31
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:92
@@ -94,6 +114,12 @@ msgid ""
 "FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS "
 "IN THE SOFTWARE."
 msgstr ""
+"本ソフトウェアは、市場性、特定の目的への適合性、および権利の非侵害の保証を含"
+"みますが、明示または黙示を問わず、これらに限定されていないいかなる保証もなし"
+"に「現状のまま」提供されます。いかなる場合においても、作者または著作権者は、"
+"契約、不法行為、またはその他の行為、本ソフトウェアまたは本ソフトウェアの使用"
+"または他の取引に起因もしくは関連するいかなる請求、損害またはその他の責任につ"
+"いても責任を負わないものとします。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:34
 msgid ""
@@ -101,10 +127,12 @@ msgid ""
 "your Godot projects under any license and to create commercial games with "
 "the engine."
 msgstr ""
+"あなたのゲームは同じライセンスの下にある必要はありません。任意のライセンスの"
+"下でGodotプロジェクトを自由にリリースし、エンジンで商用ゲームを作成できます。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:37
 msgid "Inclusion"
-msgstr ""
+msgstr "含め方"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:39
 msgid ""
@@ -112,10 +140,13 @@ msgid ""
 "as long as it can be displayed under some condition. These are the most "
 "common approaches (only need to implement one of them, not all)."
 msgstr ""
+"ライセンスには含める方法が指定されていないため、ある条件下で表示できるもので"
+"あれば何でも有効です。これらは最も一般的なアプローチです(すべてではなく、その"
+"うちの1つのみを実装する必要があります)。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:42
 msgid "Credits screen"
-msgstr ""
+msgstr "クレジット画面"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:44
 msgid ""
@@ -123,19 +154,24 @@ msgid ""
 "the bottom after showing the rest of the credits. Most large studios use "
 "this approach with open source licenses."
 msgstr ""
+"クレジット画面のどこかに上記のライセンステキストを含めます。残りのクレジット"
+"を表示した後、下部に表示される場合があります。ほとんどの大規模スタジオは、こ"
+"のアプローチをオープンソースライセンスで使用しています。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:47
 msgid "Licenses screen"
-msgstr "ライセンススクリーン"
+msgstr "ライセンス画面"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:49
 msgid ""
 "Some games have a special menu (often in the settings) to display licenses."
 msgstr ""
+"一部のゲームには、ライセンスを表示するための特別なメニュー(多くの場合設定)が"
+"あります。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:52
 msgid "Output log"
-msgstr ""
+msgstr "出力ログ"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:54
 msgid ""
@@ -143,29 +179,37 @@ msgid ""
 "<class_@GDScript_method_print>` function may be enough on platforms where a "
 "global output log is readable (as an example, mobile devices)."
 msgstr ""
+"グローバル出力ログが読み取り可能なプラットフォーム (例えば、モバイル デバイ"
+"ス) では、\\ :ref:`print() <class_@GDScript_method_print>` 関数を使用してライ"
+"センステキストを印刷するだけで十分な場合があります。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:57
 msgid "Accompanying file"
-msgstr ""
+msgstr "添付ファイル"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:59
 msgid ""
 "If the game is distributed on desktop operating systems, a file containing "
 "the license can be added to the software that is installed to the user PC."
 msgstr ""
+"ゲームがデスクトップオペレーティングシステムで配布されている場合、ライセンス"
+"を含むファイルをユーザーのPCにインストールされているソフトウェアに追加できま"
+"す。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:62
 msgid "Printed manual"
-msgstr ""
+msgstr "印刷マニュアル"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:64
 msgid ""
 "If the game includes printed manuals, license text can be included there."
 msgstr ""
+"ゲームに印刷マニュアルが含まれている場合、ライセンステキストをそこに含めるこ"
+"とができます。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:67
 msgid "Third Party licenses"
-msgstr ""
+msgstr "サードパーティのライセンス"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:69
 msgid ""
@@ -174,10 +218,14 @@ msgid ""
 "license inclusion, but some do. Make sure to do it if you are using them. "
 "Here is a list of which ones require it:"
 msgstr ""
+"Godot自体には、\\ `サードパーティ <https://github.com/godotengine/godot/blob/"
+"master/COPYRIGHT.txt>`_ によって作成されたソフトウェアが含まれています。ほと"
+"んどの場合、ライセンスを含める必要はありませんが、一部は必要です。それらを使"
+"用している場合は、必ず実行してください。必要なもののリストは次のとおりです:"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:72
 msgid "FreeType"
-msgstr "FreeType(ライブラリ)"
+msgstr "FreeType"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:74
 msgid ""
@@ -185,30 +233,38 @@ msgid ""
 "license requires attribution, so the following text must be included "
 "together with the Godot license:"
 msgstr ""
+"Godotは `FreeType <https://www.freetype.org/>`_ を使用してフォントをレンダリ"
+"ングします。そのライセンスには帰属が必要であるため、次のテキストをGodotライセ"
+"ンスと一緒に含める必要があります:"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:77
 msgid ""
 "Portions of this software are copyright © <year> The FreeType Project (www."
 "freetype.org).  All rights reserved."
 msgstr ""
+"Portions of this software are copyright © <year> The FreeType Project (www."
+"freetype.org). All rights reserved."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:81
 msgid "ENet"
-msgstr ""
+msgstr "ENet"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:83
 msgid ""
 "If the project being created is a multiplayer game using the `ENet <http://"
 "enet.bespin.org/>`_ driver, ENet has similar licensing terms as Godot"
 msgstr ""
+"作成されるプロジェクトが `ENet <http://enet.bespin.org/>`_ ドライバーを使用す"
+"るマルチプレイヤーゲームである場合、ENetにはGodotと同様のライセンス条項があり"
+"ます"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:86
 msgid "Copyright (c) 2002-2016 Lee Salzman"
-msgstr ""
+msgstr "Copyright (c) 2002-2016 Lee Salzman"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:95
 msgid "MBedTLS"
-msgstr ""
+msgstr "MBedTLS"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:97
 msgid ""
@@ -216,10 +272,13 @@ msgid ""
 "through HTTP requests), the `MBedTLS <https://tls.mbed.org>`_ Apache license "
 "needs to be complied by including the following text:"
 msgstr ""
+"プロジェクトがGodot 3.1以降で行われ、SSLを利用する場合(通常はHTTPリクエストを"
+"使用)、次のテキストを含めることにより、\\ `MBedTLS <https://tls.mbed.org>`_ "
+"Apacheライセンスを遵守する必要があります。"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:100
 msgid "MBedTLS is Copyright (C) 2013-2019 ARM"
-msgstr ""
+msgstr "MBedTLS is Copyright (C) 2013-2019 ARM"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:102
 msgid ""
@@ -227,10 +286,13 @@ msgid ""
 "not use this file except in compliance with the License. You may obtain a "
 "copy of the License at"
 msgstr ""
+"Licensed under the Apache License, Version 2.0 (the \"License\"); you may "
+"not use this file except in compliance with the License. You may obtain a "
+"copy of the License at"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:104
 msgid "http://www.apache.org/licenses/LICENSE-2.0"
-msgstr ""
+msgstr "http://www.apache.org/licenses/LICENSE-2.0"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:106
 msgid ""
@@ -240,9 +302,16 @@ msgid ""
 "License for the specific language governing permissions and limitations "
 "under the License."
 msgstr ""
+"Unless required by applicable law or agreed to in writing, software "
+"distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT "
+"WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the "
+"License for the specific language governing permissions and limitations "
+"under the License."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:108
 msgid ""
 "Keep in mind that Godot 2.x and 3.0 use `OpenSSL <https://www.openssl.org>`_ "
 "instead."
 msgstr ""
+"Godot 2.xおよび3.0は、代わりに `OpenSSL <https://www.openssl.org>`_を使用して"
+"いることに注意してください。"

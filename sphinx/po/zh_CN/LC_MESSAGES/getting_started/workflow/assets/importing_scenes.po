@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,17 +39,17 @@ msgstr ""
 "整地被导入。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
-#, fuzzy
 msgid "Godot supports the following 3D *scene file formats*:"
-msgstr "Godot支持以下3D *场景文件格式*："
+msgstr "Godot支持以下 3D *场景文件格式*："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
+#, fuzzy
 msgid "glTF 2.0. Godot has full support for text and binary formats."
-msgstr ""
+msgstr "glTF 2.0：Godot完全支持文本（text ）和二进制（binary）格式。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
 msgid "DAE (COLLADA), an older format that is fully supported."
-msgstr ""
+msgstr "DAE (COLLADA)：一个比较老的格式，当然完全支持。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
 msgid ""
@@ -63,11 +63,14 @@ msgid "ESCN, a Godot specific format that Blender can export with a plugin."
 msgstr "ESCN，Blender可以通过插件导出的，一种Godot特定格式。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:20
+#, fuzzy
 msgid ""
 "FBX, supported via the Open Asset Import library. However, FBX is "
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX：通过 Open Asset Import library 提供支持。然而，FBX 是proprietary ，所以"
+"如果无特殊要求的话，推荐使用上面列出的格式。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:23
 msgid ""
@@ -159,20 +162,20 @@ msgid "Exporting DAE files from Blender"
 msgstr "从Blender导出的DAE文件"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
-#, fuzzy
 msgid ""
 "Blender has built-in COLLADA support, but it does not work properly for the "
 "needs of game engines and should not be used as is."
-msgstr "Blender也有内置的COLLADA支持，但它也是损坏的，不应该使用。"
+msgstr ""
+"Blender也有内置的 COLLADA 支持，但不能满足游戏引擎的需求，不能完全正常工作，"
+"不应该使用。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
-#, fuzzy
 msgid ""
 "Godot provides a `Blender plugin <https://github.com/godotengine/collada-"
 "exporter>`_ that will correctly export COLLADA scenes for use in Godot."
 msgstr ""
-"Godot 提供了一个 `Python插件 <https://github.com/godotengine/collada-"
-"exporter>`__，可以更好地导出场景。"
+"Godot 提供了一个 `Blender 插件 <https://github.com/godotengine/collada-"
+"exporter>`_，可以正确的地导出 COLLADA 场景以用于Godot。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:67
 msgid "Exporting ESCN files from Blender"
@@ -584,15 +587,13 @@ msgid "Filter Script"
 msgstr "过滤器脚本"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:262
-#, fuzzy
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
 "which tracks from which animations should be kept."
-msgstr ""
-"可以使用特殊语法指定过滤器脚本，以决定应保留哪些动画的哪些轨道。（@TODO 这需"
-"要文档）"
+msgstr "可以使用特殊语法指定过滤器脚本，以决定应保留哪些动画的哪些轨道。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:265
+#, fuzzy
 msgid ""
 "The filter script is executed against each imported animation. The syntax "
 "consists of two types of statements, the first for choosing which animations "
@@ -601,14 +602,21 @@ msgid ""
 "expression match, using ``?`` and ``*`` wildcards (using ``String.matchn()`` "
 "under the hood)."
 msgstr ""
+"过滤器脚本会针对每个导入的动画执行。语法由两种类型的语句组成，一种用于选择要"
+"过滤的动画，另一种用于过滤匹配的动画中的各个轨道。所有名称模式均使用不区分大"
+"小写的表达式匹配，可以使用通配符``?`` 和 ``*``（using ``String.matchn()`` "
+"under the hood）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:271
+#, fuzzy
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
 "filters to all imported animations which have a name ending in ``\"_Loop"
 "\"``::"
 msgstr ""
+"脚本必须以动画筛选器语句开头 (如以 ``@`` 开头的行表示)。 例如，如果我们想要将"
+"筛选器应用于所有以``\"_Loop\"`` 结尾的导入动画："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:277
 msgid ""

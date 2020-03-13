@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,10 +105,13 @@ msgstr ""
 "gioco venga ridimensionato in modo coerente su schermi di dimensioni diverse."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
+#, fuzzy
 msgid ""
 "Since we are already in the *Window* settings, we should also set under "
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
+"Poiché ci troviamo già nelle impostazioni *Finestra*, dovremmo anche "
+"impostare in * Handheld* l'*Orientamento* su \"verticale\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
@@ -127,7 +130,7 @@ msgid ""
 "changed:"
 msgstr ""
 "Ecco lo script completo per il giocatore, con i commenti che indicano i "
-"cambiamenti effettuati"
+"cambiamenti effettuati:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:246
 #, fuzzy
@@ -140,6 +143,9 @@ msgid ""
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
 "by clicking the folder icon and selecting it."
 msgstr ""
+"La scena radice è la scena da cui il gioco si avvia. In *Progetto -> "
+"Impostazioni Progetto -> Applicazione -> Esegui*, imposta *Main Scene* a "
+"\"Main.tscn\" cliccando l'icona della cartella e selezionandola."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:253
 msgid "Export templates"
@@ -494,7 +500,7 @@ msgstr ""
 "possibile disabilitarla impostando \"Esporta con debug\" su off quando si "
 "esporta il progetto."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:418
+#: ../../docs/getting_started/step_by_step/exporting.rst:420
 #, fuzzy
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "

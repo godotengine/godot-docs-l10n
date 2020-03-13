@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -230,9 +230,10 @@ msgid ""
 msgstr "结果是可以通过写入 *数据端口* 从脚本中更改此值。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
+#, fuzzy
 msgid ""
-"If instead reading this value is desired, drag the node again but hold the "
-"*Control* key (or Command on Mac). This will create a getter:"
+"If instead reading this value is desired, drag the node again but hold :kbd:"
+"`Ctrl` (or :kbd:`Cmd` on macOS). This will create a getter:"
 msgstr ""
 "如果需要读取该值，请再次拖动该节点，但按住 *Control* 键（或在Mac上为 "
 "*Command*）。这将创建一个 ``getter``："
@@ -284,7 +285,8 @@ msgid ""
 msgstr "要在脚本中使用该变量，只需将其拖到画布上即可创建一个 ``getter``："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
-msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
+#, fuzzy
+msgid "Likewise, hold :kbd:`Ctrl` (or :kbd:`Cmd` on macOS) to drop a setter:"
 msgstr "同样，按住 *Control* （Mac上的 *Command* ）删除一个 ``setter``："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
@@ -339,7 +341,10 @@ msgstr ""
 "员面板下方，存在所有可用节点类型的列表："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:198
-msgid "Ctrl-F (Command-F on Mac) allows you to search the list."
+#, fuzzy
+msgid ""
+"Pressing :kbd:`Ctrl + F` (or :kbd:`Cmd + F` on macOS) allows you to search "
+"the list."
 msgstr "Ctrl-F（Mac上的Command-F）允许您搜索列表。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:200

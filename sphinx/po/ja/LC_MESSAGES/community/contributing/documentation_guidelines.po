@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,11 @@ msgid ""
 "page <https://docs.godotengine.org>`_ on what steps to follow and how to "
 "contact the docs team."
 msgstr ""
+"このページでは、ドキュメントを作成または確認するか、既存のドキュメントを翻訳"
+"してGodot Engineに貢献する場合に従うべき規則について説明します。また、\\ "
+"`godot-docs GitHubリポジトリ <https://github.com/godotengine/godot-docs>`_の"
+"READMEと、従うべき手順とドキュメントチームに連絡する方法については `ドキュメ"
+"ントフロントページ <https://docs.godotengine.org>`_をご覧ください。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:14
 msgid "How to contribute"
@@ -87,7 +92,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:40
 msgid "The 'Edit on GitHub' link"
-msgstr ""
+msgstr "「GitHubで編集」リンク"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:42
 msgid ""
@@ -96,10 +101,13 @@ msgid ""
 "created a GitHub account, you can propose changes to a page you're reading "
 "as follows:"
 msgstr ""
+"``docs.godotengine.org`` のドキュメントを読んでいる場合、ページの右上に "
+"**Edit on GitHub** ハイパーリンクが表示されます。 GitHubアカウントを作成した"
+"ら、次のように読んでいるページに変更を提案できます:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:46
 msgid "Click the **Edit on GitHub** button."
-msgstr ""
+msgstr "**Edit on GitHub** ボタンをクリックします。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:48
 msgid ""
@@ -107,16 +115,21 @@ msgid ""
 "corner near the **Raw**, **Blame** and **History** buttons. It has the "
 "tooltip \"Edit the file in a fork of this project\"."
 msgstr ""
+"表示されたGitHubページで、右上の[**Raw**]、[**Blame**]、[**History**]ボタンの"
+"近くにある鉛筆アイコンをクリックします。このボタンのツールチップは \"Edit "
+"the file in a fork of this project\" です。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:52
 msgid "Complete all the edits you want to make for that page."
-msgstr ""
+msgstr "そのページに対して行うすべての編集を完了します。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:54
 msgid ""
 "Summarise the changes you made in the form at the bottom of the page and "
 "click the button labelled **Propose file change** when done."
 msgstr ""
+"ページの下部にあるフォームで行った変更を要約し、完了したら **Propose file "
+"change** というラベルのボタンをクリックします。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:57
 msgid ""
@@ -124,6 +137,9 @@ msgid ""
 "see a message like ``Open. yourGitHubUsername wants to merge 1 commit into "
 "godotengine:master from yourGitHubUsername:patch-6``."
 msgstr ""
+"次の画面で、\\ ``Open. yourGitHubUsername wants to merge 1 commit into "
+"godotengine:master from yourGitHubUsername:patch-6`` などのメッセージが表示さ"
+"れるまで、\\ **Create pull request** ボタンをクリックします。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:61
 msgid ""
@@ -131,6 +147,9 @@ msgid ""
 "they're judged to improve them. You might also be asked to make "
 "modifications to your changes before they're included."
 msgstr ""
+"レビューアはあなたの変更を評価し、それらを改善すると判断された場合にドキュメ"
+"ントに組み込みます。また、変更を含める前に変更を行うように求められる場合があ"
+"ります。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:66
 msgid "What makes good documentation?"
@@ -142,6 +161,10 @@ msgid ""
 "sentences and various levels of sections and subsections. It should be clear "
 "and objective. Also have a look at the :ref:`doc_docs_writing_guidelines`."
 msgstr ""
+"ドキュメンテーションは、整形式の文とさまざまなレベルのセクションとサブセク"
+"ションを使用して、わかりやすい英語で適切に作成する必要があります。それは明確"
+"で客観的でなければなりません。\\ :ref:`doc_docs_writing_guidelines` もご覧く"
+"ださい。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:72
 msgid ""
@@ -174,6 +197,8 @@ msgid ""
 "You are free to write the kind of documentation you wish, as long as you "
 "respect the following rules (and the ones on the repo)."
 msgstr ""
+"次のルール(およびレポのルール)を尊重する限り、希望する種類のドキュメントを自"
+"由に作成できます。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:87
 msgid "Titles"
@@ -205,7 +230,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:106
 msgid "Insert your title here"
-msgstr ""
+msgstr "Insert your title here (注:これは英文専用の留意項目です)"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:108
 msgid "And this is a bad example:"
@@ -213,7 +238,7 @@ msgstr "これは悪い例です:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:110
 msgid "Insert Your Title Here"
-msgstr ""
+msgstr "Insert Your Title Here (注:これは英文専用の留意項目です)"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:112
 msgid ""
@@ -232,6 +257,8 @@ msgid ""
 "You can help to translate the official Godot documentation on our `Hosted "
 "Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
 msgstr ""
+"`Hosted Weblate <https://hosted.weblate.org/engage/godot-engine/>`_でGodotの"
+"公式ドキュメントを翻訳することができます。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:125
 msgid ""
@@ -239,6 +266,8 @@ msgid ""
 "godotengine/godot-docs-l10n>`_. where you can see when the data was last "
 "synced."
 msgstr ""
+"公式の `Godot I18Nリポジトリ<https://github.com/godotengine/godot-docs-"
+"l10n>`_もあります。データが最後に同期された日時を確認できます。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:128
 msgid "License"

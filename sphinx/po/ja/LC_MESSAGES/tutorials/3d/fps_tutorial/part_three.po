@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:4
 msgid "Part 3"
-msgstr ""
+msgstr "パート3"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:7
 msgid "Part overview"
-msgstr ""
+msgstr "パートの概要"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:9
 msgid ""
@@ -31,6 +31,8 @@ msgid ""
 "We will also be giving the player the ability to reload, and we will be "
 "adding sounds when the weapons fire."
 msgstr ""
+"このパートでは、弾薬数を与えることでプレイヤーの武器を制限します。また、プレ"
+"イヤーにリロード機能を提供し、武器が発砲したときにサウンドを追加します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:15
 msgid ""
@@ -38,19 +40,23 @@ msgid ""
 "moving on to this part of the tutorial. The finished project from :ref:"
 "`doc_fps_tutorial_part_two` will be the starting project for part 3"
 msgstr ""
+"チュートリアルのこの部分に進む前に、\\ :ref:`doc_fps_tutorial_part_two` を終"
+"了していると想定しています。\\ :ref:`doc_fps_tutorial_part_two` の完成したプ"
+"ロジェクトは、パート3の開始プロジェクトになります"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:18
 msgid "Let's get started!"
-msgstr ""
+msgstr "では、始めましょう！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:22
 msgid "Changing levels"
-msgstr ""
+msgstr "レベル(舞台)の変更"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:24
 msgid ""
 "Now that we have a fully working FPS, let's move to a more FPS-like level."
 msgstr ""
+"FPSが完全に機能するようになったので、FPSのようなレベルに移行しましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:26
 msgid ""
@@ -58,516 +64,655 @@ msgid ""
 "tscn``) and/or ``Ruins_Level.tscn`` (``assets/Ruin_Level_Objects/Ruins_Level."
 "tscn``)."
 msgstr ""
+"``Space_Level.tscn``(``assets/Space_Level_Objects/Space_Level.tscn``) および/"
+"または ``Ruins_Level.tscn``( ``assets/Ruin_Level_Objects/Ruins_Level.tscn``)"
+"を開きます。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:28
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:29
+#, fuzzy
 msgid ""
 "``Space_Level.tscn`` and ``Ruins_Level.tscn`` are complete custom FPS levels "
-"created for the purpose of this tutorial. Press ``F6`` to play the open "
-"scene, or press the ``play current scene button``, and give each a try."
+"created for the purpose of this tutorial. Press ``Play Current Scene`` "
+"button, or :kbd:`F6` on keyboard, and give each a try."
 msgstr ""
+"``Space_Level.tscn`` および ``Ruins_Level.tscn`` は、このチュートリアルのため"
+"に作成された完全なカスタムFPSレベルです。 \\ ``F6`` を押して開いているシーン"
+"を再生するか、\\ ``シーンを実行ボタン`` を押して、それぞれを試してください。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:31
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:33
 msgid ""
 "``Space_Level.tscn`` is more graphically demanding of the GPU than "
 "``Ruins_Level.tscn``. If your computer is struggling to render ``Space_Level."
 "tscn``, try using ``Ruins_Level.tscn`` instead."
 msgstr ""
+"``Space_Level.tscn`` は ``Ruins_Level.tscn`` よりもグラフィカルにGPUを要求し"
+"ます。コンピューターが ``Space_Level.tscn`` のレンダリングに苦労している場合"
+"は、代わりに ``Ruins_Level.tscn`` を使用してみてください。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:34
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:36
 msgid ""
 "You might have noticed there are several :ref:`RigidBody <class_RigidBody>` "
 "nodes placed throughout the level. We can place ``RigidBody_hit_test.gd`` on "
 "them and then they will react to being hit with bullets, so let's do that!"
 msgstr ""
+"レベル全体にいくつかの :ref:`RigidBody <class_RigidBody>` ノードが配置されて"
+"いることに気づいたかもしれません。それらに ``RigidBody_hit_test.gd`` を配置す"
+"ると、弾丸が当たったことに反応するので、そうしてみましょう！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:37
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:39
 msgid ""
 "Follow the instructions below for either (or both) of the scenes you want to "
 "use"
 msgstr ""
+"使用するシーンのいずれか(または両方)について、以下の指示に従ってください"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:73
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:75
 msgid ""
 "Now you can fire at all the rigid bodies in either level and they will react "
 "to bullets hitting them!"
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:76
-msgid "Adding ammo"
-msgstr ""
+"これで、いずれかのレベルのすべての剛体に発射でき、弾丸がそれらに衝突したとき"
+"に反応します！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:78
-msgid ""
-"Now that the player has working guns, let's give them a limited amount of "
-"ammo."
-msgstr ""
+msgid "Adding ammo"
+msgstr "弾薬数を追加する"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:80
 msgid ""
-"Firstly, we need to define a few variables in each of our weapon scripts."
-msgstr ""
+"Now that the player has working guns, let's give them a limited amount of "
+"ammo."
+msgstr "プレイヤーに有効な銃があるので、弾薬の量を制限してみましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:82
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:191
-msgid "Open up ``Weapon_Pistol.gd`` and add the following class variables:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:90
-msgid "``ammo_in_weapon``: The amount of ammo currently in the pistol"
-msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:91
 msgid ""
-"``spare_ammo``: The amount of ammo we have left in reserve for the pistol"
-msgstr ""
+"Firstly, we need to define a few variables in each of our weapon scripts."
+msgstr "まず、各武器スクリプトでいくつかの変数を定義する必要があります。"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:84
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:193
+msgid "Open up ``Weapon_Pistol.gd`` and add the following class variables:"
+msgstr "``Weapon_Pistol.gd`` を開き、次のクラス変数を追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:92
-msgid "``AMMO_IN_MAG``: The amount of ammo in a fully reloaded weapon/magazine"
-msgstr ""
+msgid "``ammo_in_weapon``: The amount of ammo currently in the pistol"
+msgstr "``ammo_in_weapon``: 現在ピストルにある弾薬の量"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:93
+msgid ""
+"``spare_ammo``: The amount of ammo we have left in reserve for the pistol"
+msgstr "``spare_ammo``: ピストル用に残しておいた弾薬の量"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:94
-msgid "Now all we need to do is add a single line of code to ``fire_weapon``."
-msgstr ""
+msgid "``AMMO_IN_MAG``: The amount of ammo in a fully reloaded weapon/magazine"
+msgstr "``AMMO_IN_MAG``: 完全にリロードされた武器/マガジンの弾薬の量"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:96
+msgid "Now all we need to do is add a single line of code to ``fire_weapon``."
+msgstr "あとは、1行のコードを ``fire_weapon`` に追加するだけです。"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:98
 msgid ""
 "Add the following right under ``Clone.BULLET_DAMAGE = DAMAGE``: "
 "``ammo_in_weapon -= 1``"
 msgstr ""
+"``Clone.BULLET_DAMAGE = DAMAGE`` の下に次を追加します ``ammo_in_weapon-= 1``"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:98
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:100
 msgid ""
 "This will remove one from ``ammo_in_weapon`` every time the player fires. "
 "Notice we're not checking to see if the player has enough ammo or not in "
 "``fire_weapon``. Instead, we're going to check to see if the player has "
 "enough ammo in ``Player.gd``."
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:103
-msgid "Now we need to add ammo for both the rifle and the knife."
-msgstr ""
+"これにより、プレイヤーが発砲するたびに ``ammo_in_weapon`` から1つ削除されま"
+"す。プレイヤーが ``fire_weapon`` に十分な弾薬があるかどうかを確認していないこ"
+"とに注意してください。代わりに、プレイヤーの ``Player.gd`` で十分な弾薬がある"
+"かどうかを確認します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:105
+msgid "Now we need to add ammo for both the rifle and the knife."
+msgstr "次に、ライフルとナイフの両方に弾薬数を追加する必要があります。"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:107
 msgid ""
 "You may be wondering why we are adding ammo for the knife given it does not "
 "consume any ammunition. The reason we want to add ammo to the knife is so we "
 "have a consistent interface for all our weapons."
 msgstr ""
+"ナイフは弾薬を消費しないのに、なぜナイフに弾薬数を追加するのか疑問に思われる"
+"かもしれません。ナイフに弾薬を追加したい理由は、すべての武器に一貫したイン"
+"ターフェースを持たせるためです。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:108
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:110
 msgid ""
 "If we did not add ammo variables for the knife, we would have to add checks "
 "for the knife. By adding the ammo variables to the knife, we don't need to "
 "worry about whether or not all our weapons have the same variables."
 msgstr ""
+"ナイフの弾薬変数を追加しなかった場合、ナイフのチェックを追加する必要がありま"
+"す。弾薬変数をナイフに追加することにより、すべての武器が同じ変数を持っている"
+"かどうかを心配する必要がなくなります。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:111
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:113
 msgid "Add the following class variables to ``Weapon_Rifle.gd``:"
-msgstr ""
+msgstr "次のクラス変数を ``Weapon_Rifle.gd`` に追加します:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:119
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:121
 msgid ""
 "And then add the following to ``fire_weapon``: ``ammo_in_weapon -= 1``. Make "
 "sure that ``ammo_in_weapon -= 1`` is outside of the ``if ray."
 "is_colliding()`` check so the player loses ammo regardless of whether the "
 "player hit something or not."
 msgstr ""
+"そして、次を ``fire_weapon``に追加します: ``ammo_in_weapon -= 1``。プレイヤー"
+"が何かを打ったかどうかに関係なくプレイヤーが弾薬を失うように、\\ "
+"``ammo_in_weapon -= 1`` が ``if ray.is_colliding()`` チェックの外にあることを"
+"確認してください。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:122
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:124
 msgid ""
 "Now all that's left is the knife. Add the following to ``Weapon_Knife.gd``:"
 msgstr ""
+"今残っているのはナイフだけです。 以下を ``Weapon_Knife.gd`` に追加します:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:130
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:132
 msgid "Because the knife does not consume ammo, that is all we need to add."
-msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:134
-msgid "Now we need to change one thing in ``Player.gd``, that is to say,"
-msgstr ""
+msgstr "ナイフは弾薬を消費しないため、追加する必要があるのはこれだけです。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:136
+msgid "Now we need to change one thing in ``Player.gd``, that is to say,"
+msgstr "ここで、\\ ``Player.gd`` の一点を変更する必要があります。つまり、"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:138
 msgid ""
 "how we're firing the weapons in ``process_input``. Change the code for "
 "firing weapons to the following:"
 msgstr ""
+"``process_input`` で武器を発射する方法です。 武器を発射するためのコードを次の"
+"ように変更します:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:151
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:153
 msgid ""
 "Now the weapons have a limited amount of ammo, and will stop firing when the "
 "player runs out."
 msgstr ""
+"これで武器の弾薬量が制限され、プレイヤーが使い果たすと発砲が停止します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:155
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:157
 msgid ""
 "Ideally, we'd like to let the player be able to see how much ammo is left. "
 "Let's make a new function called ``process_UI``."
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:157
-msgid "First, add ``process_UI(delta)`` to ``_physics_process``."
-msgstr ""
+"プレイヤーが弾薬の残量を確認できると理想的です。\\ ``process_UI`` という新し"
+"い関数を作成しましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:159
-msgid "Now add the following to ``Player.gd``:"
+msgid "First, add ``process_UI(delta)`` to ``_physics_process``."
 msgstr ""
+"最初に、\\ ``process_UI(delta)`` を ``_physics_process`` に追加します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:171
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:233
-msgid "Let's go over what's happening:"
-msgstr ""
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:161
+msgid "Now add the following to ``Player.gd``:"
+msgstr "以下を ``Player.gd`` に追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:173
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:235
+msgid "Let's go over what's happening:"
+msgstr "何が起こっているのか見てみましょう:"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:175
 msgid ""
 "Firstly, we check to see if the current weapon is either ``UNARMED`` or "
 "``KNIFE``. If it is, we change the ``UI_status_label``'s text to only show "
 "the player's health since ``UNARMED`` and ``KNIFE`` do not consume ammo."
 msgstr ""
+"まず、現在の武器が ``UNARMED`` または ``KNIFE`` であるかどうかを確認します。 "
+"そうであれば、\\ ``UNARMED`` と ``KNIFE`` は弾薬を消費しないため、\\ "
+"``UI_status_label`` のテキストを変更してプレイヤーの健康状態のみを表示しま"
+"す。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:176
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:178
 msgid ""
 "If the player is using a weapon that consumes ammo, we first get the weapon "
 "node."
 msgstr ""
+"プレイヤーが弾薬を消費する武器を使用している場合、最初に武器ノードを取得しま"
+"す。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:178
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:180
 msgid ""
 "Then we change ``UI_status_label``'s text to show the player's health, along "
 "with how much ammo the player has in the weapon and how much spare ammo the "
 "player has for that weapon."
 msgstr ""
+"次に、プレイヤーの健康状態と、プレイヤーが武器に持っている弾薬の量と、プレイ"
+"ヤーがその武器のために持っている予備弾薬の量を表示するために "
+"``UI_status_label`` のテキストを変更します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:182
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:184
 msgid "Now we can see how much ammo the player has through the HUD."
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:185
-msgid "Adding reloading to the weapons"
-msgstr ""
+"これで、プレイヤーがHUDを通じてどれだけの弾薬を持っているかを確認できます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:187
+msgid "Adding reloading to the weapons"
+msgstr "武器へのリロードの追加"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:189
 msgid ""
 "Now that the player can run out of ammo, we need a way to let the player "
 "fill them back up. Let's add reloading next!"
 msgstr ""
+"プレイヤーが弾薬を使い果たすことができるようになったので、プレイヤーにそれら"
+"を補充させる方法が必要です。 次にリロードを追加しましょう！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:189
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:191
 msgid ""
 "For reloading, we need to add a few more variables and a function to every "
 "weapon."
 msgstr ""
+"リロードのために、すべての武器にいくつかの変数と関数を追加する必要がありま"
+"す。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:200
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:202
 msgid ""
 "``CAN_RELOAD``: A boolean to track whether this weapon has the ability to "
 "reload"
-msgstr ""
+msgstr "``CAN_RELOAD``: この武器にリロード機能があるかどうかを追跡するブール値"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:201
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:203
 msgid ""
 "``CAN_REFILL``: A boolean to track whether we can refill this weapon's spare "
 "ammo. We will not be using ``CAN_REFILL`` in this part, but we will in the "
 "next part!"
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:202
-msgid ""
-"``RELOADING_ANIM_NAME``: The name of the reloading animation for this weapon."
-msgstr ""
+"``CAN_REFILL``: この武器の予備弾薬を補充できるかどうかを追跡するブール値。 こ"
+"のパートでは ``CAN_REFILL`` を使用しませんが、次のパートでは使用します！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:204
+msgid ""
+"``RELOADING_ANIM_NAME``: The name of the reloading animation for this weapon."
+msgstr "``RELOADING_ANIM_NAME``: この武器のリロードアニメーションの名前。"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:206
 msgid ""
 "Now we need to add a function for handling reloading. Add the following "
 "function to ``Weapon_Pistol.gd``:"
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:235
-msgid ""
-"First we define a variable to see whether or not this weapon can reload."
-msgstr ""
+"次に、リロードを処理するための関数を追加する必要があります。 次の関数を "
+"``Weapon_Pistol.gd`` に追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:237
+msgid ""
+"First we define a variable to see whether or not this weapon can reload."
+msgstr "最初に変数を定義して、この武器がリロードできるかどうかを確認します。"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:239
 msgid ""
 "Then we check to see if the player is in this weapon's idle animation state "
 "because we only want to be able to reload when the player is not firing, "
 "equipping, or unequipping."
 msgstr ""
+"次に、プレイヤーがこの武器のアイドルアニメーション状態にあるかどうかを確認し"
+"ます。これは、プレイヤーが発砲、装備、または装備解除していないときにのみリ"
+"ロードできるようにするためです。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:240
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:242
 msgid ""
 "Next we check to see if the player has spare ammo, and if the ammo already "
 "in the weapon is equal to a fully reloaded weapon. This way we can ensure "
 "the player cannot reload when the player has no ammo or when the weapon is "
 "already full of ammo."
 msgstr ""
+"次に、プレイヤーに予備の弾薬があるかどうか、そしてすでに武器にある弾薬が完全"
+"にリロードされた武器に等しいかどうかを確認します。 このようにして、プレイヤー"
+"に弾薬がない場合、または武器がすでに弾薬でいっぱいになっている場合に、プレイ"
+"ヤーがリロードできないようにすることができます。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:243
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:245
 msgid ""
 "If we can still reload, then we calculate the amount of ammo needed to "
 "reload the weapon."
 msgstr ""
+"もしもリロードできる場合は、武器のリロードに必要な弾薬の量を計算します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:245
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:247
 msgid ""
 "If the player has enough ammo to fill the weapon, we remove the ammo needed "
 "from ``spare_ammo`` and then set ``ammo_in_weapon`` to a full weapon/"
 "magazine."
 msgstr ""
+"プレイヤーが武器を満たすのに十分な弾薬を持っている場合、必要な弾薬を "
+"``spare_ammo`` から削除し、\\ ``ammo_in_weapon`` を完全な武器/弾倉に設定しま"
+"す。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:247
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:249
 msgid ""
 "If the player does not have enough ammo, we add all the ammo left in "
 "``spare_ammo``, and then set ``spare_ammo`` to ``0``."
 msgstr ""
+"プレイヤーに十分な弾薬がない場合は、\\ ``spare_ammo`` に残っているすべての弾"
+"薬を追加し、\\ ``spare_ammo`` を ``0`` に設定します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:249
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:251
 msgid ""
 "Next we play the reloading animation for this weapon, and then return "
 "``true``."
 msgstr ""
+"次に、この武器のリロードアニメーションを再生し、\\ ``true`` を返します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:251
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:253
 msgid "If the player could not reload, we return ``false``."
-msgstr ""
+msgstr "プレイヤーがリロードできなかった場合は、\\ ``false`` を返します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:255
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:257
 msgid ""
 "Now we need to add reloading to the rifle. Open up ``Weapon_Rifle.gd`` and "
 "add the following class variables:"
 msgstr ""
+"次に、ライフルにリロードを追加する必要があります。\\ ``Weapon_Rifle.gd`` を開"
+"き、次のクラス変数を追加します:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:264
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:266
 msgid ""
 "These variables are exactly the same as the pistol, just with "
 "``RELOADING_ANIM_NAME`` changed to the rifle's reloading animation."
 msgstr ""
+"これらの変数はピストルとまったく同じですが、 ``RELOADING_ANIM_NAME`` がライフ"
+"ルのリロードアニメーションに変更されているだけです。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:266
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:268
 msgid "Now we need to add ``reload_weapon`` to ``Weapon_Rifle.gd``:"
 msgstr ""
+"次に、\\ ``reload_weapon`` を ``Weapon_Rifle.gd`` に追加する必要があります:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:295
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:297
 msgid "This code is exactly the same as the one for the pistol."
-msgstr ""
+msgstr "このコードは、ピストルのコードとまったく同じです。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:299
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:301
 msgid ""
 "The last bit we need to do for the weapons is add 'reloading' to the knife. "
 "Add the following class variables to ``Weapon_Knife.gd``:"
 msgstr ""
+"武器のために必要な最後の部分は、ナイフに「リロード」を追加することです。 次の"
+"クラス変数を ``Weapon_Knife.gd`` に追加します:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:308
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:310
 msgid ""
 "Since we both cannot reload or refill a knife, we set both constants to "
 "``false``. We also define ``RELOADING_ANIM_NAME`` as an empty string, since "
 "the knife has no reloading animation."
 msgstr ""
+"私たちはナイフをリロードも補充もできないため、両方の定数を ``false`` に設定し"
+"ます。 また、ナイフにはリロードアニメーションがないため、\\ "
+"``RELOADING_ANIM_NAME`` を空の文字列として定義します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:311
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:313
 msgid "Now we need to add ``reloading_weapon``:"
-msgstr ""
+msgstr "次に ``reloading_weapon`` を追加する必要があります:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:318
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:320
 msgid "Since we cannot reload a knife, we always return ``false``."
-msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:321
-msgid "Adding reloading to the player"
-msgstr ""
+msgstr "ナイフをリロードすることはできないので、常に ``false`` を返します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:323
+msgid "Adding reloading to the player"
+msgstr "プレイヤーにリロードを追加する"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:325
 msgid ""
 "Now we need to add a few things to ``Player.gd``. First we need to define a "
 "new class variable:"
 msgstr ""
+"ここで、\\ ``Player.gd`` にいくつかの項目を追加する必要があります。 まず、新"
+"しいクラス変数を定義する必要があります:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:329
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:331
 msgid ""
 "``reloading_weapon``: A variable to track whether or not the player is "
 "currently trying to reload."
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:332
-msgid "Next we need to add another function call to ``_physics_process``."
-msgstr ""
+"``reloading_weapon``: プレイヤーが現在リロードを試みているかどうかを追跡する"
+"変数。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:334
+msgid "Next we need to add another function call to ``_physics_process``."
+msgstr ""
+"次に、別の関数呼び出しを ``_physics_process`` に追加する必要があります。"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:336
 msgid ""
 "Add ``process_reloading(delta)`` to ``_physics_process``. Now "
 "``_physics_process`` should look something like this:"
 msgstr ""
+"``process_reloading(delta)`` を ``_physics_process`` に追加します。\\ "
+"``_physics_process`` は次のようになります:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:345
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:347
 msgid ""
 "Now we need to add ``process_reloading``. Add the following function to "
 "``Player.gd``:"
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:356
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:407
-msgid "Let's go over what's happening here."
-msgstr ""
+"ここで ``process_reloading`` を追加する必要があります。次の関数を ``Player."
+"gd`` に追加します:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:358
-msgid "Firstly, we check to make sure the player is trying to reload."
-msgstr ""
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:409
+msgid "Let's go over what's happening here."
+msgstr "ここで何が起こっているのか見ていきましょう。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:360
+msgid "Firstly, we check to make sure the player is trying to reload."
+msgstr "まず、プレイヤーがリロードを試みていることを確認します。"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:362
 msgid ""
 "If the player is trying to reload, we then get the current weapon. If the "
 "current weapon does not equal ``null``, we call its ``reload_weapon`` "
 "function."
 msgstr ""
+"プレイヤーがリロードしようとしている場合、現在の武器を取得します。現在の武器"
+"が ``null`` ではない場合、その ``reload_weapon`` 関数を呼び出します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:362
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:364
 msgid ""
 "If the current weapon is equal to ``null``, then the current weapon is "
 "``UNARMED``."
-msgstr ""
+msgstr "現在の武器が ``null`` の場合、現在の武器は ``UNARMED`` です。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:364
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:366
 msgid ""
 "Finally, we set ``reloading_weapon`` to ``false`` because, regardless of "
 "whether the player successfully reloaded, we've tried reloading and no "
 "longer need to keep trying."
 msgstr ""
+"最後に、プレイヤーが正常にリロードされたかどうかに関係なく、リロードを試み、"
+"もう試みる必要がないため、\\ ``reloading_weapon`` を ``false`` に設定します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:369
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:371
 msgid ""
 "Before we can let the player reload, we need to change a few things in "
 "``process_input``."
 msgstr ""
+"プレイヤーがリロードできるようにする前に、\\ ``process_input`` のいくつかの項"
+"目を変更する必要があります。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:371
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:373
 msgid ""
 "The first thing we need to change is in the code for changing weapons. We "
 "need to add an additional check (``if reloading_weapon == false:``) to see "
 "if the player is reloading:"
 msgstr ""
+"最初に変更する必要があるのは、武器を変更するためのコードです。プレイヤーがリ"
+"ロードしているかどうかを確認するために、追加のチェック(``if reloading_weapon "
+"== false:``) を追加する必要があります:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:382
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:384
 msgid ""
 "This makes it so the player cannot change weapons if the player is reloading."
 msgstr ""
+"これにより、プレイヤーのリロード中に、プレイヤーは武器を変更できなくなりま"
+"す。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:384
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:386
 msgid ""
 "Now we need to add the code to trigger a reload when the player pushes the "
 "``reload`` action. Add the following code to ``process_input``:"
 msgstr ""
+"ここで、プレイヤーが ``reload`` アクションをプッシュしたときにリロードをトリ"
+"ガーするコードを追加する必要があります。次のコードを ``process_input`` に追加"
+"します:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:409
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:411
 msgid ""
 "First we make sure the player is not reloading already, nor is the player "
 "trying to change weapons."
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:411
-msgid "Then we check to see if the ``reload`` action has been pressed."
-msgstr ""
+"まず、プレイヤーが既にリロードしていないこと、またプレイヤーが武器を変更しよ"
+"うとしていないことを確認します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:413
+msgid "Then we check to see if the ``reload`` action has been pressed."
+msgstr "次に、\\ ``reload`` アクションが押されたかどうかを確認します。"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:415
 msgid ""
 "If the player has pressed ``reload``, we then get the current weapon and "
 "check to make sure it is not ``null``. Then we check to see whether the "
 "weapon can reload or not using its ``CAN_RELOAD`` constant."
 msgstr ""
+"プレイヤーが ``reload`` を押した場合、現在の武器を取得し、それが ``null`` で"
+"ないことを確認します。次に、\\ ``CAN_RELOAD`` 定数を使用して、武器がリロード"
+"できるかどうかを確認します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:416
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:418
 msgid ""
 "If the weapon can reload, we then get the current animation state, and make "
 "a variable for tracking whether the player is already reloading or not."
 msgstr ""
+"武器がリロードできる場合、現在のアニメーション状態を取得し、プレイヤーがすで"
+"にリロードしているかどうかを追跡するための変数を作成します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:418
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:420
 msgid ""
 "We then go through every weapon to make sure the player is not already "
 "playing that weapon's reloading animation."
 msgstr ""
+"次に、すべての武器を調べて、プレイヤーがその武器のリロードアニメーションをま"
+"だプレイしていないことを確認します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:420
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:422
 msgid ""
 "If the player is not reloading any weapon, we set ``reloading_weapon`` to "
 "``true``."
 msgstr ""
+"プレイヤーが武器をリロードしていない場合、\\ ``reloading_weapon`` を "
+"``true`` に設定します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:424
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:426
 msgid ""
 "One thing I like to add is where the weapon will reload itself if you try to "
 "fire it and it's out of ammo."
 msgstr ""
+"私が追加したいことの1つは、発射しようとしたときに弾薬がなくなった場合に武器が"
+"リロードされる場所です。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:426
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:428
 msgid ""
 "We also need to add an additional if check (``is_reloading_weapon == false:"
 "``) so the player cannot fire the current weapon while reloading."
 msgstr ""
+"また、プレイヤーがリロード中に現在の武器を発砲できないように、ifチェック"
+"(``is_reloading_weapon == false:``)を追加する必要があります。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:429
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:431
 msgid ""
 "Let's change our firing code in ``process_input`` so it reloads when trying "
 "to fire an empty weapon:"
 msgstr ""
+"空の武器を発射しようとするとリロードされるように、\\ ``process_input`` の発射"
+"コードを変更しましょう:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:447
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:449
 msgid ""
 "Now we check to make sure the player is not reloading before we fire the "
 "weapon, and when we have ``0`` or less ammo in the current weapon, we set "
 "``reloading_weapon`` to ``true`` if the player tries to fire."
 msgstr ""
+"次に、武器を発射する前にプレイヤーがリロードしていないことを確認し、現在の武"
+"器に ``0`` 以下の弾薬がある場合、プレイヤーが ``reloading_weapon`` を "
+"``true`` に設定します発射しようとします。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:450
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:452
 msgid ""
 "This will make it so the player will try to reload when attempting to fire "
 "an empty weapon."
 msgstr ""
+"これにより、プレイヤーは空の武器を発射しようとするときにリロードを試みます。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:454
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:456
 msgid ""
 "With that done, the player can now reload! Give it a try! Now you can fire "
 "all the spare ammo for each weapon."
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:457
-msgid "Adding sounds"
-msgstr ""
+"これが完了すると、プレイヤーはリロードできます！試してみましょう！これで、各"
+"武器の予備弾薬をすべて発射できます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:459
+msgid "Adding sounds"
+msgstr "音を追加する"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:461
 msgid ""
 "Finally, let's add some sounds that accompany the player firing, reloading "
 "and changing weapons."
-msgstr ""
+msgstr "最後に、武器の発射、リロード、交換に伴うサウンドを追加しましょう。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:461
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:463
 msgid ""
 "There are no game sounds provided in this tutorial (for legal reasons). "
 "https://gamesounds.xyz/ is a collection of **\"royalty free or public domain "
 "music and sounds suitable for games\"**. I used Gamemaster's Gun Sound Pack, "
 "which can be found in the Sonniss.com GDC 2017 Game Audio Bundle."
 msgstr ""
+"(法的な理由のため)このチュートリアルではゲームサウンドは提供されていません。 "
+"https://gamesounds.xyz/ は、\\ **「ロイヤルティフリーまたはパブリックドメイン"
+"の音楽とゲームに適したサウンド」**\\ のコレクションです。Sonniss.com GDC "
+"2017 Game Audio Bundle にある Gamemaster's Gun Sound Pack を使用しました。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:465
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:467
 msgid ""
 "Open up ``Simple_Audio_Player.tscn``. It is simply a :ref:`Spatial "
 "<class_Spatial>` with an :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` "
 "as its child."
 msgstr ""
+"``Simple_Audio_Player.tscn`` を開きます。それは、単に :ref:"
+"`AudioStreamPlayer <class_AudioStreamPlayer>` を子とする :ref:`Spatial "
+"<class_Spatial>` です。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:467
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:469
 msgid ""
 "The reason this is called a 'simple' audio player is because we are not "
 "taking performance into account and because the code is designed to provide "
 "sound in the simplest way possible."
 msgstr ""
+"これが「シンプルな」オーディオプレーヤーと呼ばれる理由は、パフォーマンスを考"
+"慮していないため、またコードが可能な限り簡単な方法でサウンドを提供するように"
+"設計されているためです。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:470
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:472
 msgid ""
 "If you want to use 3D audio, so it sounds like it's coming from a location "
 "in 3D space, right click the :ref:`AudioStreamPlayer "
 "<class_AudioStreamPlayer>` and select \"Change type\"."
 msgstr ""
+"3Dオーディオを使用して、3D空間の場所から来ているように聞こえる場合は、\\ :"
+"ref:`AudioStreamPlayer <class_AudioStreamPlayer>` を右クリックし、[型を変更]"
+"を選択します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:473
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:475
 msgid ""
 "This will open the node browser. Navigate to :ref:`AudioStreamPlayer3D "
 "<class_AudioStreamPlayer3D>` and select \"change\". In the source for this "
@@ -576,26 +721,38 @@ msgid ""
 "`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` if you desire, and the "
 "code provided below will work regardless of which one you chose."
 msgstr ""
+"これにより、ノードブラウザが開きます。\\ :ref:`AudioStreamPlayer3D "
+"<class_AudioStreamPlayer3D>` に移動し、[変更]を選択します。このチュートリアル"
+"のソースでは、\\ :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` を使用し"
+"ますが、必要に応じて :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` "
+"を使用することもできます。選択したノードに関係なく、以下のコードが機能しま"
+"す。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:478
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:480
 msgid ""
 "Create a new script and call it ``Simple_Audio_Player.gd``. Attach it to "
 "the :ref:`Spatial <class_Spatial>` in ``Simple_Audio_Player.tscn`` and "
 "insert the following code:"
 msgstr ""
+"新しいスクリプトを作成し、\\ ``Simple_Audio_Player.gd`` と呼びます。\\ "
+"``Simple_Audio_Player.tscn`` の :ref:`Spatial <class_Spatial>` にアタッチし、"
+"次のコードを挿入します:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:530
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:532
 msgid ""
 "By setting ``position`` to ``null`` by default in ``play_sound``, we are "
 "making it an optional argument, meaning ``position`` doesn't necessarily "
 "have to be passed in to call ``play_sound``."
 msgstr ""
+"``play_sound`` で ``position`` のデフォルト値を ``null`` に設定することで、オ"
+"プションの引数にしています。つまり、\\ ``play_sound`` を呼び出すときに、必ず"
+"しも ``position`` を渡す必要はありません。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:533
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:535
 msgid "Let's go over what's happening here:"
-msgstr ""
+msgstr "ここで何が起こっているのかを見てみましょう:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:537
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:539
 msgid ""
 "In ``_ready``, we get the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` "
 "and connect its ``finished`` signal to the ``destroy_self`` function. It "
@@ -604,53 +761,79 @@ msgid ""
 "have the finished signal. To make sure it is not playing any sounds, we call "
 "``stop`` on the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>`."
 msgstr ""
+"``_ready`` で :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` を取得し、そ"
+"の ``finished`` シグナルを ``destroy_self`` 関数に接続します。\\ :ref:"
+"`AudioStreamPlayer <class_AudioStreamPlayer>` または :ref:"
+"`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` ノードのどちらであるかは問"
+"題ではありません。両方とも終了シグナルを持っているからです。サウンドが再生さ"
+"れていないことを確認するには、\\ :ref:`AudioStreamPlayer "
+"<class_AudioStreamPlayer>` で ``stop`` を呼び出します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:541
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:543
 msgid ""
 "Make sure your sound files are **not** set to loop! If it is set to loop, "
 "the sounds will continue to play infinitely and the script will not work!"
 msgstr ""
+"サウンドファイルがループするように設定されて\\**いない**\\ ことを確認してくだ"
+"さい！ループするように設定されている場合、サウンドは無限に再生され続け、スク"
+"リプトは機能しません！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:544
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:546
 msgid ""
 "The ``play_sound`` function is what we will be calling from ``Player.gd``. "
 "We check if the sound is one of the three possible sounds, and if it is one "
 "of the three sounds we set the audio stream in :ref:`AudioStreamPlayer "
 "<class_AudioStreamPlayer>` to the correct sound."
 msgstr ""
+"``play_sound`` 関数は ``Player.gd`` から呼び出すものです。サウンドが3つの可能"
+"なサウンドの1つであるかどうかをチェックし、3つのサウンドの1つである場合、\\ :"
+"ref:`AudioStreamPlayer <class_AudioStreamPlayer>` のオーディオストリームを正"
+"しいサウンドに設定します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:548
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:550
 msgid ""
 "If it is an unknown sound, we print an error message to the console and free "
 "the audio player."
 msgstr ""
+"不明な音の場合、コンソールにエラーメッセージを出力し、オーディオプレーヤーを"
+"解放します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:550
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:552
 msgid ""
 "If you are using an :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>`, "
 "remove the ``#`` to set the position of the audio player node so it plays at "
 "the correct position."
 msgstr ""
+":ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` を使用している場合"
+"は、\\ ``＃`` を削除してオーディオプレーヤーノードの位置を設定し、正しい位置"
+"で再生されるようにします。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:553
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:555
 msgid ""
 "Finally, we tell the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` to "
 "play."
 msgstr ""
+"最後に、\\ :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` に再生するよう"
+"に指示します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:555
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:557
 msgid ""
 "When the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` is finished "
 "playing the sound, it will call ``destroy_self`` because we connected the "
 "``finished`` signal in ``_ready``. We stop the :ref:`AudioStreamPlayer "
 "<class_AudioStreamPlayer>` and free the audio player to save on resources."
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:559
-msgid "This system is extremely simple and has some major flaws:"
-msgstr ""
+":ref:`AudioStreamPlayer <class_AudioStreamPlayer>` がサウンドの再生を終了する"
+"と、\\ ``_ready`` の ``finished`` シグナルを接続してあるので、\\ "
+"``destroy_self`` を呼び出します。\\ :ref:`AudioStreamPlayer "
+"<class_AudioStreamPlayer>` を停止し、オーディオプレーヤーを解放してリソースを"
+"節約します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:561
+msgid "This system is extremely simple and has some major flaws:"
+msgstr "このシステムは非常に単純で、いくつかの大きな欠陥があります:"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:563
 msgid ""
 "One flaw is we have to pass in a string value to play a sound. While it is "
 "relatively simple to remember the names of the three sounds, it can be "
@@ -658,8 +841,13 @@ msgid ""
 "sounds in some sort of container with exposed variables so we do not have to "
 "remember the name(s) of each sound effect we want to play."
 msgstr ""
+"欠点の1つは、サウンドを再生するために文字列値を渡す必要があることです。 3つの"
+"サウンドの名前を覚えるのは比較的簡単ですが、より多くのサウンドがある場合はま"
+"すます複雑になる可能性があります。理想的には、これらのサウンドを変数が公開さ"
+"れた何らかのコンテナに配置して、再生する各サウンドエフェクトの名前を覚えてお"
+"く必要がないようにします。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:566
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:568
 msgid ""
 "Another flaw is we cannot play looping sounds effects, nor background music, "
 "easily with this system. Because we cannot play looping sounds, certain "
@@ -667,46 +855,65 @@ msgid ""
 "to keep track of whether or not there is a sound effect and whether or not "
 "we need to continue playing it."
 msgstr ""
+"もう1つの欠点は、このシステムではループサウンドエフェクトやバックグラウンド"
+"ミュージックを簡単に再生できないことです。ループサウンドを再生できないため、"
+"足音のような特定のエフェクトは、サウンドエフェクトがあるかどうか、および再生"
+"を継続する必要があるかどうかを追跡する必要があるため、達成するのが難しくなり"
+"ます。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:571
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:573
 msgid ""
 "One of the biggest flaws with this system is we can only play sounds from "
 "``Player.gd``. Ideally we'd like to be able to play sounds from any script "
 "at any time."
 msgstr ""
+"このシステムの最大の欠点の1つは、\\ ``Player.gd`` からのサウンドしか再生でき"
+"ないことです。理想的には、いつでも任意のスクリプトからサウンドを再生できるよ"
+"うにしたいと考えています。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:576
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:578
 msgid ""
 "With that done, let's open up ``Player.gd`` again. First we need to load the "
 "``Simple_Audio_Player.tscn``. Place the following code in the class "
 "variables section of the script:"
 msgstr ""
+"それが終わったら、再び ``Player.gd`` を開きましょう。まず、\\ "
+"``Simple_Audio_Player.tscn`` をロードする必要があります。スクリプトのクラス変"
+"数セクションに次のコードを配置します:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:583
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:585
 msgid ""
 "Now we need to instance the simple audio player when we need it, and then "
 "call its ``play_sound`` function and pass the name of the sound we want to "
 "play. To make the process simpler, let's create a ``create_sound`` function "
 "in ``Player.gd``:"
 msgstr ""
+"次に、必要なときに単純なオーディオプレーヤーをインスタンス化してから、その "
+"``play_sound`` 関数を呼び出して、再生するサウンドの名前を渡す必要があります。"
+"プロセスを簡単にするために、\\ ``Player.gd`` に ``create_sound`` 関数を作成し"
+"ましょう:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:595
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:597
 msgid "Let's walk through what this function does:"
-msgstr ""
+msgstr "この関数が何をするかを見てみましょう:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:599
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:601
 msgid ""
 "The first line instances the ``Simple_Audio_Player.tscn`` scene and assigns "
 "it to a variable named ``audio_clone``."
 msgstr ""
+"最初の行は ``Simple_Audio_Player.tscn`` シーンをインスタンス化し、それを "
+"``audio_clone`` という名前の変数に割り当てます。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:602
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:604
 msgid ""
 "The second line gets the scene root, and this has a large (though safe) "
 "assumption."
 msgstr ""
+"2行目はシーンのルートを取得しますが、これには大きな(ただし安全な)仮定がありま"
+"す。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:604
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:606
 msgid ""
 "We first get this node's :ref:`SceneTree <class_SceneTree>`, and then access "
 "the root node, which in this case is the :ref:`Viewport <class_Viewport>` "
@@ -716,8 +923,15 @@ msgid ""
 "huge assumption that the first child of the root node is the root scene that "
 "the player is under, which may not always be the case**."
 msgstr ""
+"最初にこのノードの :ref:`SceneTree <class_SceneTree>` を取得し、次にルート"
+"ノードにアクセスします。この場合、このノードは :ref:`Viewport "
+"<class_Viewport>` であり、このゲーム全体が実行されています。次に :ref:"
+"`Viewport <class_Viewport>` の最初の子を取得します。この場合、これはたまたま "
+"``Test_Area.tscn`` または他の提供されたレベルのルートノードです。\\ **ルート"
+"ノードの最初の子はプレイヤーがいるルートシーンであるという大きな仮定を立てて"
+"いますが、これは必ずしもそうとは限りません**\\ 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:610
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:612
 msgid ""
 "If this doesn't make sense to you, don't worry too much about it. The second "
 "line of code only does not work reliably if you have multiple scenes loaded "
@@ -725,106 +939,137 @@ msgid ""
 "projects and will not be happening in this tutorial series. This is only "
 "potentially a issue depending on how you handle scene loading."
 msgstr ""
+"これがあなたにとって意味をなさない場合、それについてあまり心配しないでくださ"
+"い。、一度に複数のシーンがルートノードの子としてロードされている場合にのみ、"
+"コードの2行目は確実に動作しません。これは、ほとんどのプロジェクトではまず発生"
+"せず、このチュートリアルシリーズでも発生しません。しかしこれは、シーンの読み"
+"込みの処理方法によっては潜在的な問題になります。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:614
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:616
 msgid ""
 "The third line adds our newly created ``Simple_Audio_Player`` scene to be a "
 "child of the scene root. This works exactly the same as when we are spawning "
 "bullets."
 msgstr ""
+"3行目は、新しく作成された ``Simple_Audio_Player`` シーンをシーンルートの子と"
+"して追加します。これは、弾丸を産出するときとまったく同じように機能します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:617
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:619
 msgid ""
 "Finally, we call the ``play_sound`` function and pass in the arguments "
 "passed in to ``create_sound``. This will call ``Simple_Audio_Player.gd``'s "
 "``play_sound`` function with the passed in arguments."
 msgstr ""
+"最後に、\\ ``play_sound`` 関数を呼び出し、\\ ``create_sound`` に渡された引数"
+"を渡します。これは、渡された引数で ``Simple_Audio_Player.gd`` の "
+"``play_sound`` 関数を呼び出します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:622
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:624
 msgid ""
 "Now all that is left is playing the sounds when we want to. Let's add sound "
 "to the pistol first!"
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:624
-msgid "Open up ``Weapon_Pistol.gd``."
-msgstr ""
+"あとは、必要なときにサウンドを再生するだけです。最初にピストルに音を追加しま"
+"しょう！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:626
+msgid "Open up ``Weapon_Pistol.gd``."
+msgstr "``Weapon_Pistol.gd`` を開きます."
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:628
 msgid ""
 "Now, we want to make a noise when the player fires the pistol, so add the "
 "following to the end of the ``fire_weapon`` function:"
 msgstr ""
+"ここで、プレイヤーがピストルを発射したときに音を立てたいので、\\ "
+"``fire_weapon`` 関数の最後に以下を追加します:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:632
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:634
 msgid ""
 "Now when the player fires the pistol, we'll play the ``Pistol_shot`` sound."
 msgstr ""
+"プレイヤーがピストルを発射したら、\\ ``Pistol_shot`` サウンドを再生します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:634
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:656
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:636
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:658
 msgid ""
 "To make a sound when the player reloads, we need to add the following right "
 "under ``player_node.animation_manager.set_animation(RELOADING_ANIM_NAME)`` "
 "in the ``reload_weapon`` function:"
 msgstr ""
+"プレイヤーがリロードしたときに音を出すには、\\ ``reload_weapon`` 関数の "
+"``player_node.animation_manager.set_animation(RELOADING_ANIM_NAME)`` の下に以"
+"下を追加する必要があります:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:641
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:663
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:643
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:665
 msgid "Now when the player reloads, we'll play the ``Gun_cock`` sound."
-msgstr ""
+msgstr "プレイヤーがリロードすると、\\ ``Gun_cock`` サウンドが再生されます。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:645
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:647
 msgid "Now let's add sounds to the rifle. Open up ``Weapon_Rifle.gd``."
-msgstr ""
+msgstr "さて、ライフルに音を加えましょう。\\ ``Weapon_Rifle.gd`` を開きます。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:648
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:650
 msgid ""
 "To play sounds when the rifle is fired, add the following to the end of the "
 "``fire_weapon`` function:"
 msgstr ""
+"ライフルが発射されたときに音を鳴らすには、\\ ``fire_weapon`` 関数の最後に以下"
+"を追加します:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:654
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:656
 msgid ""
 "Now when the player fires the rifle, we'll play the ``Rifle_shot`` sound."
 msgstr ""
+"プレイヤーがライフルを発射したら、\\ ``Rifle_shot`` サウンドを再生します。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:666
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:668
 msgid "Final notes"
-msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:670
-msgid ""
-"Now you have weapons with limited ammo that play sounds when you fire them!"
-msgstr ""
+msgstr "最終ノート"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:672
+msgid ""
+"Now you have weapons with limited ammo that play sounds when you fire them!"
+msgstr "今、あなたは発射すると音が鳴る弾薬が制限された武器を手にしています！"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:674
 msgid ""
 "At this point, we have all the basics of an FPS game working. There are "
 "still a few things that would be nice to add, and we're going to add them in "
 "the next three parts!"
 msgstr ""
+"この時点で、FPSゲームが動作するための基本はすべて揃っています。追加するとよい"
+"と思われるものがまだいくつかあるので、次の3つのパートで追加します！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:675
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:677
 msgid ""
 "For example, right now we have no way to add ammo to our spares, so we'll "
 "eventually run out. Also, we don't have anything to shoot at outside of the :"
 "ref:`RigidBody <class_RigidBody>` nodes."
 msgstr ""
+"たとえば、現時点ではスペアに弾薬を追加する方法がないため、最終的には使い果た"
+"します。また、\\ :ref:`RigidBody <class_RigidBody>` ノードの外側には撃てるも"
+"のはありません。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:678
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:680
 msgid ""
 "In :ref:`doc_fps_tutorial_part_four` we'll add some targets to shoot at, "
 "along with some health and ammo pick ups! We're also going to add joypad "
 "support, so we can play with wired Xbox 360 controllers!"
 msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:681
-msgid "If you ever get lost, be sure to read over the code again!"
-msgstr ""
+":ref:`doc_fps_tutorial_part_four` では、回復アイテムと弾薬のピックアップに加"
+"えて、射撃するターゲットを追加します！ジョイパッドのサポートも追加するため、"
+"有線のXbox 360コントローラーで遊ぶことができます！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:683
+msgid "If you ever get lost, be sure to read over the code again!"
+msgstr "迷子になったら、必ずコードをもう一度読んでください！"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:685
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_3.zip <files/Godot_FPS_Part_3.zip>`"
 msgstr ""
+"このパートの完成したプロジェクトは、ここからダウンロードできます: :download:"
+"`Godot_FPS_Part_3.zip <files/Godot_FPS_Part_3.zip>`"

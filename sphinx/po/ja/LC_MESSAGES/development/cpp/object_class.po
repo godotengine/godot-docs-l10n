@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr "これにより、オブジェクトは、例えば、多くの機能を
 #: ../../docs/development/cpp/object_class.rst:288
 #: ../../docs/development/cpp/object_class.rst:307
 msgid "References:"
-msgstr "参照："
+msgstr "リファレンス:"
 
 #: ../../docs/development/cpp/object_class.rst:33
 msgid ""
@@ -249,7 +249,7 @@ msgid ""
 "get functions exist. Example:"
 msgstr ""
 "``_bind_methods()`` から、set/get 関数が存在する限り、プロパティを作成してバ"
-"インドできます。例："
+"インドできます。例:"
 
 #: ../../docs/development/cpp/object_class.rst:170
 msgid "This creates the property using the setter and the getter."
@@ -302,6 +302,10 @@ msgid ""
 "platforms where a small binary size is ideal, such as HTML5 or consoles "
 "(with low memory footprint)."
 msgstr ""
+"キャストが失敗した場合は、NULL が返されます。このシステムは RTTI を使用します"
+"が、RTTI が無効になっている場合dでも、少し遅くなりますが、正常に動作します。"
+"これは、HTML5 やコンソール (メモリ使用量が少ない) など、バイナリ サイズが小さ"
+"いプラットフォームで便利です。"
 
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"

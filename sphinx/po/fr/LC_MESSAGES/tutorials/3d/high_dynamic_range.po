@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,9 +72,10 @@ msgstr ""
 "d'intensité générées par image de rendu(per frame of rendering)."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:27
+#, fuzzy
 msgid ""
 "This means that some transformation of the scene light intensity, also known "
-"as scene-referred light ratios, need to be transformed and mapped to fit "
+"as *scene-referred* light ratios, need to be transformed and mapped to fit "
 "within the particular output range of the chosen display. This can be most "
 "easily understood if we consider virtually photographing our game engine "
 "scene through a virtual camera. Here, our virtual camera would apply a "
@@ -124,18 +125,18 @@ msgstr ""
 "(OETF) à la sortie (EOTF)."
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:50
+#, fuzzy
 msgid ""
-"Not all displays use the same OETF and EOTF as a computer display however, "
-"for example, television broadcast displays use the BT.1886 EOTF. It should "
-"be noted that Godot is limited in its pixel management chain, and only "
-"supports sRGB displays currently."
+"Not all displays use the same OETF and EOTF as a computer display. For "
+"example, television broadcast displays use the BT.1886 EOTF. However, Godot "
+"currently only supports sRGB displays."
 msgstr ""
 "Cependant, tous les affichage n'utilisent pas les même OETF et EOTF qu'un "
 "affichage d'ordinateur, par exemples, un affichage d'émission télé utilise "
 "le BT.1886 EOTF. Notez bien que Godot est limité dans sa chaîne de gestion "
 "des pixel, et ne tolère que l'affichage sRGB pour le moment."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:55
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:54
 msgid ""
 "The sRGB standard is based around the nonlinear relationship between the "
 "current to light output of common desktop computing CRT displays."
@@ -143,14 +144,15 @@ msgstr ""
 "La norme sRGB est basée sur la relation non linéaire entre le courant et la "
 "luminosité des écrans CRT des ordinateurs de bureau courants."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:60
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:59
+#, fuzzy
 msgid ""
-"The mathematics of a scene referred model require that we multiply the scene "
+"The mathematics of a scene-referred model require that we multiply the scene "
 "by different values to adjust the intensities and exposure to different "
-"light ranges. The transfer function of the display cannot appropriately "
+"light ranges. The transfer function of the display can't appropriately "
 "render the wider dynamic range of the game engine's scene output using the "
-"simple transfer function of the display however, and therefore a more "
-"complex approach to encoding is required."
+"simple transfer function of the display. A more complex approach to encoding "
+"is required."
 msgstr ""
 "Les mathématiques d'un modèle de scène de référence exigent que nous "
 "multiplions la scène par différentes valeurs pour ajuster les intensités et "
@@ -160,13 +162,14 @@ msgstr ""
 "transfert de l'affichage, et donc une approche plus complexe de l'encodage "
 "est nécessaire."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:68
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:67
 msgid "Scene linear & asset pipelines"
 msgstr "Scène linéaire et pipelines d'assets"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:70
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:69
+#, fuzzy
 msgid ""
-"Working in scene linear sRGB is not as simple as just pressing a switch. "
+"Working in scene-linear sRGB is not as simple as just pressing a switch. "
 "First, imported image assets must be converted to linear light ratios on "
 "import. Even when linearized, those assets may not be perfectly well suited "
 "for use as textures, depending on how they were generated."
@@ -178,23 +181,24 @@ msgstr ""
 "adaptés à une utilisation en tant que textures, selon la façon dont elles "
 "ont été générées."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:75
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:74
 msgid "There are two ways to do this:"
 msgstr "Il y a deux façon de faire cela :"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:78
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:77
 msgid "sRGB transfer function to display linear ratios on image import"
 msgstr ""
 "Fonction de transfert sRGB pour afficher les rapports linéaires lors de "
 "l'importation d'images"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:80
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:79
+#, fuzzy
 msgid ""
-"This is the easiest, but not the most ideal, method of using sRGB assets. "
-"One issue with this is loss of quality. Using 8 bit per channel to represent "
-"linear light ratios is not a sufficient but depth to quantise the values "
-"correctly. These textures might later be compressed too, which can "
-"exacerbate the problem."
+"This is the easiest method of using sRGB assets, but it's not the most "
+"ideal. One issue with this is loss of quality. Using 8 bits per channel to "
+"represent linear light ratios is not sufficient to quantize the values "
+"correctly. These textures may also be compressed later, which can exacerbate "
+"the problem."
 msgstr ""
 "C'est la méthode la plus facile, mais pas la plus idéale, d'utiliser les "
 "assets sRGB. L'un des problèmes est la perte de qualité. L'utilisation de 8 "
@@ -203,27 +207,28 @@ msgstr ""
 "valeurs. Ces textures peuvent aussi être compressées plus tard, ce qui peut "
 "exacerber le problème."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:86
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:85
 msgid "Hardware sRGB transfer function to display linear conversion"
 msgstr ""
 "Fonction de transfert matériel sRGB pour afficher la conversion linéaire"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:88
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:87
+#, fuzzy
 msgid ""
 "The GPU will do the conversion after reading the texel using floating point. "
-"This works fine on PC and consoles, but most mobile devices do no support "
-"it, or do not support it on compressed texture format (iOS for example)."
+"This works fine on PC and consoles, but most mobile devices don't support "
+"it, or they don't support it on compressed texture formats (iOS for example)."
 msgstr ""
 "Le GPU effectuera la conversion après avoir lu le texel en nombre flottant. "
 "Cela fonctionne bien sur PC et consoles, mais la plupart des appareils "
 "mobiles ne le supportent pas, ou ne le supportent pas au format texture "
 "compressé (iOS par exemple)."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:94
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:92
 msgid "Scene linear to display referred nonlinear"
 msgstr "Scène linéaire pour affichage référé non linéaire"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:96
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:94
 msgid ""
 "After all the rendering is done, the scene linear render requires "
 "transforming to a suitable output such as an sRGB display. To do this, "
@@ -235,28 +240,30 @@ msgstr ""
 "faire, activez la conversion sRVB dans le :ref:`Environnement "
 "<class_Environment>` (plus d'informations à ce sujet ci-dessous)."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:100
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:98
+#, fuzzy
 msgid ""
-"Keep in mind that sRGB -> Display Linear and Display Linear -> sRGB "
-"conversions must always be **both** enabled. Failing to enable one of them "
-"will result in horrible visuals suitable only for avant-garde experimental "
-"indie games."
+"Keep in mind that the **sRGB -> Display Linear** and **Display Linear -> "
+"sRGB** conversions must always be **both** enabled. Failing to enable one of "
+"them will result in horrible visuals suitable only for avant-garde "
+"experimental indie games."
 msgstr ""
 "Gardez à l'esprit que les conversions sRGB -> Display Linear et Display "
 "Linear -> sRGB doivent toujours être **toutes les deux** activées. Si l'une "
 "d'entre elles n'est pas activées, il en résultera d'horribles visuels qui ne "
 "conviendront qu'aux jeux indépendants expérimentaux d'avant-garde."
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:106
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:104
 msgid "Parameters of HDR"
 msgstr "Paramètres de HDR"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:108
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:106
+#, fuzzy
 msgid ""
-"HDR setting can be found in the :ref:`Environment <class_Environment>` "
-"resource. These are found most of the time inside a :ref:`WorldEnvironment "
-"<class_WorldEnvironment>` node or set in a camera. For more information see :"
-"ref:`doc_environment_and_post_processing`."
+"HDR settings can be found in the :ref:`Environment <class_Environment>` "
+"resource. Most of the time, these are found inside a :ref:`WorldEnvironment "
+"<class_WorldEnvironment>` node or set in a Camera node. For more "
+"information, see :ref:`doc_environment_and_post_processing`."
 msgstr ""
 "Le réglage HDR se trouve dans la ressource :ref:`Environnement "
 "<class_Environment>`. On les trouve la plupart du temps dans un nœud :ref:"

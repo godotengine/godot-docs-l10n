@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -517,7 +517,7 @@ msgstr "1.0 / SCREEN_PIXEL_SIZE"
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:164
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:224
 msgid "Can also pass in manually."
-msgstr ""
+msgstr "Peut également le passer manuellement."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:166
 msgid "iTime"
@@ -526,16 +526,16 @@ msgstr "iTime"
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:166
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
 msgid "TIME"
-msgstr ""
+msgstr "TIME"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:166
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
 msgid "Time since shader started."
-msgstr ""
+msgstr "Temps depuis le commencement du shader."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:168
 msgid "iTimeDelta"
-msgstr ""
+msgstr "iTimeDelta"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:168
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:170
@@ -544,7 +544,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:176
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:228
 msgid "Provide with Uniform"
-msgstr ""
+msgstr "Fournir avec une Uniform"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:168
 msgid "Time to render previous frame."
@@ -552,7 +552,7 @@ msgstr "Temps de rendu de la trame précédente."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:170
 msgid "iFrame"
-msgstr ""
+msgstr "iFrame"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:170
 msgid "Frame number."
@@ -564,11 +564,11 @@ msgstr "iChannelTime[4]"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:172
 msgid "Time since that particular texture started."
-msgstr ""
+msgstr "Temps écoulé depuis que cette texture particulière a commencé."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:174
 msgid "iMouse"
-msgstr ""
+msgstr "iMouse"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:174
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:228
@@ -617,6 +617,8 @@ msgid ""
 "``fragCoord`` behaves the same as ``gl_FragCoord`` in :ref:`GLSL "
 "<glsl_coordinates>` and ``FRAGCOORD`` in Godot."
 msgstr ""
+"``fragCoord`` se comporte de la même manière que ``gl_FragCoord`` dans :ref:"
+"`GLSL <glsl_coordinates>` et ``FRAGCOORD`` dans Godot."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:190
 msgid "The Book of Shaders"
@@ -630,6 +632,11 @@ msgid ""
 "set list of uniforms passed in and with no ability to add additional "
 "uniforms."
 msgstr ""
+"Semblable à Shadertoy, `The Book of Shaders <https://thebookofshaders.com>`_ "
+"donne accès à un shader de fragment dans le navigateur Web, avec lequel "
+"l'utilisateur peut interagir. L'utilisateur est limité à l'écriture de code "
+"de shader de fragment avec une liste définie d'uniforms transmis et sans "
+"possibilité d'ajouter des uniforms supplémentaires."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:196
 msgid ""
@@ -637,6 +644,9 @@ msgid ""
 "Book of Shaders provides a `page <https://thebookofshaders.com/04>`_ on "
 "running shaders in various frameworks."
 msgstr ""
+"Pour plus d'aide sur le portage des shaders dans divers cadres en général, "
+"The Book of Shaders fournit une `page <https://thebookofshaders.com/04>`_ "
+"sur l'exécution des shaders dans divers frameworks."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:202
 msgid ""
@@ -644,6 +654,9 @@ msgid ""
 "version of GLSL. However, it still has the regular types, including "
 "`Constants`_ and macros."
 msgstr ""
+"Le Book of Shaders utilise la spécification webgl, donc une version "
+"légèrement différente de GLSL. Cependant, il a toujours les types réguliers, "
+"y compris les `Constants`_ et les macros."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:208
 msgid ""
@@ -651,12 +664,17 @@ msgid ""
 "in GLSL. Everything written in a Book of Shaders ``main`` function should be "
 "copied into Godot's ``fragment`` function."
 msgstr ""
+"Le point d'entrée d'un shader de fragment de Book of Shaders est ``main``, "
+"comme dans GLSL. Tout ce qui est écrit dans la fonction ``main`` de Book of "
+"Shaders doit être copié dans la fonction ``fragment`` de Godot."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:214
 msgid ""
 "The Book of Shaders sticks closer to plain GLSL than Shadertoy does. It also "
 "implements fewer uniforms than Shadertoy."
 msgstr ""
+"Le Book of Shaders se rapproche davantage du simple GLSL que Shadertoy. Il "
+"implémente également moins d'uniforms que Shadertoy."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:224
 msgid "u_resolution"

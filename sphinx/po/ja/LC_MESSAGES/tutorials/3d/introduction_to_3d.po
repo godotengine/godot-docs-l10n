@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:48
 msgid "DCC-created models"
-msgstr ""
+msgstr "DCCで作成されたモデル"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:53
 msgid ""
@@ -107,6 +107,10 @@ msgid ""
 "entire scenes (just as they look in the DCC), including animation, skeletal "
 "rigs, blend shapes, etc."
 msgstr ""
+"Godotに3Dモデルをインポートするには、2つのパイプラインがあります。最初の最も"
+"一般的な方法は、\\ :ref:`doc_importing_3d_scenes` によるもので、アニメーショ"
+"ン、スケルタルリグ、ブレンドシェイプなどを含むシーン全体を(DCCで見たとおりに)"
+"インポートできます。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:58
 msgid ""
@@ -114,10 +118,13 @@ msgid ""
 "which can be then put inside a :ref:`MeshInstance <class_MeshInstance>` node "
 "for display."
 msgstr ""
+"2番目のパイプラインは、単純な.OBJファイルをメッシュリソースとしてインポート"
+"し、表示用に :ref:`MeshInstance <class_MeshInstance>` ノード内に配置できま"
+"す。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid "Generated geometry"
-msgstr ""
+msgstr "生成されたジオメトリ"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:65
 msgid ""
@@ -129,6 +136,12 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
+":ref:`ArrayMesh <class_ArrayMesh>` リソースを直接使用して、カスタムジオメトリ"
+"を作成することができます。単純に配列を作成し、\\ :ref:`ArrayMesh."
+"add_surface_from_arrays() <class_ArrayMesh_method_add_surface_from_arrays>` "
+"関数を使用します。\\ :ref:`SurfaceTool <class_SurfaceTool>` というヘルパーク"
+"ラスも利用できます。これは、インデックス作成、法線、接線などの生成のためのよ"
+"り単純なAPIとヘルパーを提供します。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:72
 msgid ""
@@ -136,10 +149,13 @@ msgid ""
 "that will not be updated often), as creating vertex arrays and submitting "
 "them to the 3D API has a significant performance cost."
 msgstr ""
+"いずれの場合でも、頂点配列を作成して3D APIに送信するとパフォーマンスが大幅に"
+"低下するため、このメソッドは静的なジオメトリ(頻繁に更新されないモデル)を生成"
+"するためのものです。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
-msgstr ""
+msgstr "即時ジオメトリ"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:79
 msgid ""
@@ -148,10 +164,14 @@ msgid ""
 "<class_ImmediateGeometry>`, which provides an OpenGL 1.x style immediate-"
 "mode API to create points, lines, triangles, etc."
 msgstr ""
+"代わりに、頻繁に更新される単純なジオメトリを生成する必要がある場合、Godotは、"
+"ポイントを作成するためのOpenGL 1.xスタイルの即時モードAPIを提供する特別なノー"
+"ド :ref:`ImmediateGeometry <class_ImmediateGeometry>` を提供して点、線、三角"
+"形などを作成します。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
-msgstr ""
+msgstr "3Dでの2D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:88
 msgid ""
@@ -162,6 +182,11 @@ msgid ""
 "that take advantage of mixing with 3D backgrounds, more realistic parallax, "
 "lighting/shadow effects, etc."
 msgstr ""
+"Godotは強力な2Dエンジンを搭載していますが、多くのタイプのゲームは3D環境で2Dを"
+"使用しています。回転しない固定カメラ(直交または遠近法)を使用することで、\\ :"
+"ref:`Sprite3D <class_Sprite3D>` や :ref:`AnimatedSprite3D "
+"<class_AnimatedSprite3D>` などのノードを使用して、3D 背景、よりリアルな視差、"
+"照明/影の効果などのミキシングを利用した2Dゲームを作成できます。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:96
 msgid ""
@@ -169,10 +194,12 @@ msgid ""
 "performance in comparison to plain 2D, as well as the lack of reference of "
 "working in pixels."
 msgstr ""
+"欠点は、もちろん、プレーンな2Dと比較して複雑さが増し、パフォーマンスが低下す"
+"ることと、ピクセル単位で作業ができないことです。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 msgid "Environment"
-msgstr ""
+msgstr "環境"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:103
 msgid ""
@@ -182,16 +209,23 @@ msgid ""
 "several types of built-in post-processing effects. Environments can also be "
 "overridden in the Camera."
 msgstr ""
+"シーンの編集に加えて、環境を編集することもよくあります。 Godotは :ref:"
+"`WorldEnvironment <class_WorldEnvironment>` ノードを提供します。これにより、"
+"背景色、モード(スカイボックスを置くなど)を変更し、いくつかのタイプの組み込み"
+"のポストプロセッシングエフェクトを適用できます。環境はカメラでも上書きできま"
+"す。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:110
 msgid "3D viewport"
-msgstr ""
+msgstr "3Dビューポート"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:112
 msgid ""
 "Editing 3D scenes is done in the 3D tab. This tab can be selected manually, "
 "but it will be automatically enabled when a Spatial node is selected."
 msgstr ""
+"3Dシーンの編集は、3Dタブで行います。このタブは手動で選択できますが、Spatial"
+"ノードを選択すると自動的に有効になります。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:118
 msgid ""
@@ -200,10 +234,14 @@ msgid ""
 "included to customize mouse buttons and behavior to be similar to other "
 "tools in the Editor Settings:"
 msgstr ""
+"デフォルトの3Dシーン ナビゲーション コントロールは Blender(フリーソフトウェア"
+"のパイプラインに何らかの一貫性を持たせることを目指しています)に似ていますが、"
+"マウス ボタンと動作を [エディタ設定] の他のツールと同様にカスタマイズするため"
+"のオプションが含まれています。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid "Coordinate system"
-msgstr ""
+msgstr "座標系"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:128
 msgid ""
@@ -212,6 +250,9 @@ msgid ""
 "attempting to use a different scale is usually a bad idea (unless you know "
 "what you are doing)."
 msgstr ""
+"Godotは全てに `メートル法 <https://ja.wikipedia.org/wiki/メートル法>`_ を使用"
+"します。3D物理および、その他の分野はメートル法で調整されているため、(自分がす"
+"ることを理解していないなら)違うスケールを使用するのは通常は良くない考えです。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:133
 msgid ""
@@ -222,6 +263,11 @@ msgid ""
 "as rendering or physics, so make sure your artists always work in the right "
 "scale!"
 msgstr ""
+"3Dアセットについて作業するときは、常に正しいスケールで作業することが最善です"
+"(DCCツールをメートル法に設定します)。 Godotはインポート後のスケーリングは可能"
+"で、ほとんどの場合これは機能しますが、まれにレンダリングや物理などのデリケー"
+"トな領域で浮動小数点精度の問題(グリッチやアーティファクトなど)が発生する可能"
+"性があるため、アーティストは常に適切なスケールで作業するようにしてください！"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:140
 msgid ""
@@ -230,22 +276,25 @@ msgid ""
 "axis is used as a \"pointing towards\" direction. This convention roughly "
 "means that:"
 msgstr ""
+"Y軸は「上方向」に使用され、位置合わせが必要なほとんどのオブジェクト（ライト、"
+"カメラ、CapsuleCollider、Vehicleなど）では、Z軸は「向いている方向」として使用"
+"されます。この規則は、おおよそ次のことを意味します:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:145
 msgid "**X** is sides"
-msgstr ""
+msgstr "X軸は左右"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:146
 msgid "**Y** is up/down"
-msgstr ""
+msgstr "Y軸は上下"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:147
 msgid "**Z** is front/back"
-msgstr ""
+msgstr "Z軸は前後"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:150
 msgid "Space and manipulation gizmos"
-msgstr ""
+msgstr "空間と操作のギズモ"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:152
 msgid ""
@@ -254,49 +303,62 @@ msgid ""
 "respectively. This convention applies to the grid and other gizmos too (and "
 "also to the shader language, ordering of components for Vector3,Color,etc.)."
 msgstr ""
+"3Dビューでのオブジェクトの移動は、マニピュレーターギズモを介して行われます。"
+"各軸は色で表されます。赤、緑、青はそれぞれX、Y、Zを表します。この規則は、グ"
+"リッドおよびその他のギズモにも適用されます(また、シェーダー言語、Vector3、"
+"Colorなどのコンポーネントの順序にも適用されます)。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:160
 msgid "Some useful keybindings:"
-msgstr ""
+msgstr "いくつかの便利なキーバインド:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
+#, fuzzy
 msgid ""
-"To snap placement or rotation, press the \"Ctrl\" key while moving, scaling "
-"or rotating."
+"To snap placement or rotation, press :kbd:`Ctrl` while moving, scaling or "
+"rotating."
 msgstr ""
+"配置または回転をスナップするには、移動、スケーリング、または回転中に\"Ctrl"
+"\"キーを押します。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:164
-msgid "To center the view on the selected object, press the \"f\" key."
+#, fuzzy
+msgid "To center the view on the selected object, press :kbd:`F`."
 msgstr ""
+"ビューを選択したオブジェクトの中央に配置するには、\"f\"キーを押します。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid "View menu"
-msgstr ""
+msgstr "ビューメニュー"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:169
 msgid ""
 "The view options are controlled by the \"View\" menu in the viewport's "
 "toolbar."
 msgstr ""
+"表示オプションは、ビューポートのツールバーの[ビュー]メニューで制御されます。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:173
 msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
-msgstr ""
+msgstr "このメニューを使用して、エディタの3Dビューでギズモを非表示にできます:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:177
 msgid ""
 "To hide a specific type of gizmos, you can toggle them off in the \"View\" "
 "menu."
 msgstr ""
+"特定の種類のギズモを非表示にするには、[ビュー]メニューでオフに切り替えます。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:182
 msgid "Default environment"
-msgstr ""
+msgstr "デフォルトの環境"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:184
 msgid ""
 "When created from the Project Manager, the 3D environment has a default sky."
 msgstr ""
+"プロジェクトマネージャーから作成した場合、3D環境にはデフォルトの空がありま"
+"す。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:188
 msgid ""
@@ -304,10 +366,13 @@ msgid ""
 "work with a default environment in order to provide indirect and reflected "
 "light to your objects."
 msgstr ""
+"物理に基づいたレンダリングがどのように機能するかを考えると、オブジェクトに間"
+"接光と反射光を提供するために、常にデフォルト環境で作業することをお勧めしま"
+"す。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 msgid "Cameras"
-msgstr ""
+msgstr "カメラ"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:195
 msgid ""
@@ -315,6 +380,9 @@ msgid ""
 "displayed unless a :ref:`Camera <class_Camera>` is also added to the scene. "
 "Cameras can work in either orthogonal or perspective projections:"
 msgstr ""
+"3Dスペースにいくつのオブジェクトを配置しても、シーンに :ref:`Camera "
+"<class_Camera>` が追加されない限り、何も表示されません。カメラは、正投影また"
+"は透視投影のいずれかで動作できます:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:202
 msgid ""
@@ -324,12 +392,16 @@ msgid ""
 "picture-in-picture) are desired, they need their own children cameras to "
 "display."
 msgstr ""
+"カメラは、親または祖父母のビューポートに関連付けられています(表示のみ)。シー"
+"ンツリーのルートはビューポートであるため、カメラはデフォルトでその上に表示さ"
+"れますが、サブビューポート(レンダーターゲットまたはピクチャーインピクチャーと"
+"して)が必要な場合は、その表示用に子カメラが必要です。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:210
 msgid ""
 "When dealing with multiple cameras, the following rules are enforced for "
 "each viewport:"
-msgstr ""
+msgstr "複数のカメラを扱う場合、各ビューポートに次のルールが適用されます:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:213
 msgid ""
@@ -337,6 +409,9 @@ msgid ""
 "will become the active camera. Further cameras entering the scene will be "
 "ignored (unless they are set as *current*)."
 msgstr ""
+"シーン ツリーにカメラが存在しない場合、最初に入力したカメラがアクティブなカメ"
+"ラになります。その後でシーンに入ってくるカメラは無視されます(*current* に設定"
+"されていないかぎり)。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:216
 msgid ""
@@ -344,12 +419,17 @@ msgid ""
 "of any other camera in the scene. If the property is set, it will become "
 "active, replacing the previous camera."
 msgstr ""
+"カメラに\"*current*\"プロパティが設定されている場合、シーン内の他のカメラに関"
+"係なくそれが使用されます。このプロパティが設定されている場合は、それまでのカ"
+"メラを置き換えて、アクティブになります。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:219
 msgid ""
 "If an active camera leaves the scene tree, the first camera in tree-order "
 "will take its place."
 msgstr ""
+"アクティブなカメラがシーンツリーを離れると、ツリー順の最初のカメラが代わりに"
+"なります。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:223
 msgid "Lights"
@@ -360,3 +440,5 @@ msgid ""
 "There is no limitation on the number of lights, nor of types of lights, in "
 "Godot. As many as desired can be added (as long as performance allows)."
 msgstr ""
+"Godotのライトの数やライトのタイプに制限はありません。必要な数を追加できます"
+"(パフォーマンスが許す限り)。"

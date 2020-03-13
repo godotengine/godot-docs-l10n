@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:4
 msgid "Using gridmaps"
-msgstr ""
+msgstr "グリッドマップ(GridMap)の使用"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:7
 msgid "Introduction"
@@ -33,12 +33,19 @@ msgid ""
 "that can be placed on a grid, as if you were building a level with an "
 "unlimited amount of Lego blocks."
 msgstr ""
+":ref:`Gridmaps <class_GridMap>` は、3Dゲームレベルを作成するためのツール"
+"で、\\ :ref:`TileMap <doc_using_tilemaps>` が2Dで行う動作と似ています。 3D"
+"メッシュの事前定義されたコレクション(:ref:`class_MeshLibrary`)から開始しま"
+"す。これは、無制限の量のLegoブロックでレベルを構築しているかのように、グリッ"
+"ドに配置できます。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:15
 msgid ""
 "Collisions and navigation can also be added to the meshes, just like you "
 "would do with the tiles of a tilemap."
 msgstr ""
+"タイルマップのタイルで行うのと同じように、コリジョンとナビゲーションをメッ"
+"シュに追加できます。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:19
 msgid "Example project"
@@ -138,16 +145,20 @@ msgid ""
 "To export the library, click on Scene -> Convert To.. -> MeshLibrary.., and "
 "save it as a resource."
 msgstr ""
+"ライブラリをエクスポートするには、シーン → 変換... → メッシュライブラリ...を"
+"クリックして、リソースとして保存します。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:73
 msgid ""
 "You can find an already exported MeshLibrary in the project named "
 "\"MeshLibrary.tres\"."
 msgstr ""
+"\"MeshLibrary.tres\" という名前のプロジェクトで、既にエクスポートされた"
+"MeshLibraryを見つけることができます。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:76
 msgid "Using GridMap"
-msgstr ""
+msgstr "GridMap(グリッドマップ)の使用"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:78
 msgid ""
@@ -155,6 +166,9 @@ msgid ""
 "the resource file from the FileSystem dock and dropping it in the \"Theme\" "
 "property in the Inspector."
 msgstr ""
+"新しいシーンを作成し、GridMapノードを追加します。 ファイルシステムドックから"
+"リソースファイルをドラッグし、インスペクタの[Theme]プロパティにドロップして、"
+"メッシュライブラリを追加します。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:84
 msgid ""
@@ -162,39 +176,57 @@ msgid ""
 "leave it at the default value for the demo. Set the \"Center Y\" property to "
 "\"Off\"."
 msgstr ""
+"\"Cell/Size\"プロパティは、メッシュのサイズに設定する必要があります。 デモの"
+"デフォルト値のままにしておくことができます。\"Center Y\"プロパティを\"Off\"に"
+"設定します。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:87
+#, fuzzy
 msgid ""
 "Now you can start designing the level by choosing a tile from the palette "
-"and placing it with Left-Click in the editor window. To remove a tile, use "
-"Shift+Right-click."
+"and placing it with Left-Click in the editor window. To remove a tile, hold :"
+"kbd:`Shift` and use Right-click."
 msgstr ""
+"これで、パレットからタイルを選択し、エディタウィンドウで左クリックして配置す"
+"ることで、レベルの設計を開始できます。 タイルを削除するには、Shift +右クリッ"
+"クを使用します。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:91
+#, fuzzy
 msgid ""
 "Click on the \"GridMap\" menu to see options and shortcuts. For example, "
-"pressing \"S\" rotates a tile around the y-axis."
+"pressing :kbd:`S` rotates a tile around the y-axis."
 msgstr ""
+"[グリッドマップ]メニューをクリックして、オプションとショートカットを表示しま"
+"す。 たとえば、[S]を押すと、y軸を中心にタイルが回転します。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:96
+#, fuzzy
 msgid ""
-"Holding <Shift> and dragging with the left mouse button will draw a "
+"Holding :kbd:`Shift` and dragging with the left mouse button will draw a "
 "selection box. You can duplicate or clear the selected area using the "
 "respective menu options."
 msgstr ""
+"<Shift>を押しながらマウスの左ボタンでドラッグすると、選択ボックスが描画されま"
+"す。 それぞれのメニューオプションを使用して、選択した領域を複製または消去でき"
+"ます。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:102
 msgid ""
 "In the menu, you can also change the axis you're drawing on, as well as "
 "shift the drawing plane higher or lower on its axis."
 msgstr ""
+"メニューでは、描画する軸を変更したり、描画面をその軸で上下に移動することもで"
+"きます。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:108
 msgid "Using GridMap in code"
-msgstr ""
+msgstr "コードでのGridMapの使用"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:110
 msgid ""
 "See :ref:`class_GridMap` for details on the node's methods and member "
 "variables."
 msgstr ""
+"ノードのメソッドとメンバー変数の詳細については、\\ :ref:`class_GridMap` を参"
+"照してください。"

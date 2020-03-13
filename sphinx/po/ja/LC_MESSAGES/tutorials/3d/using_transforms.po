@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:4
 msgid "Using 3D transforms"
-msgstr ""
+msgstr "3D変換を使用する"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:7
 msgid "Introduction"
@@ -32,23 +32,30 @@ msgid ""
 "thinking is along the lines of *\"Oh, it's just like rotating in 2D, except "
 "now rotations happen in X, Y and Z\"*."
 msgstr ""
+"以前に3Dゲームを作成したことがない場合、3次元の回転操作は最初は混乱する可能性"
+"があります。 2Dから来る自然な考え方は、*「ああ、2Dで回転するのと同じですね。"
+"ただし、X、Y、Zで回転が発生するようになったのですね」*というものです。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:12
 msgid ""
 "At first this seems easy and for simple games, this way of thinking may even "
 "be enough. Unfortunately, it's often incorrect."
 msgstr ""
+"最初はこれは簡単に思え、単純なゲームなら、この考え方で十分かもしれません。残"
+"念ながら、それはしばしば間違っています。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:14
 msgid ""
 "Angles in three dimensions are most commonly referred to as \"Euler Angles\"."
-msgstr ""
+msgstr "3次元の角度は、最も一般的には「オイラー角」と呼ばれます。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:18
 msgid ""
 "Euler angles were introduced by mathematician Leonhard Euler in the early "
 "1700s."
 msgstr ""
+"オイラー角は、1700年代初頭に数学者レオンハルトオイラーによって導入されまし"
+"た。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:22
 msgid ""
@@ -58,20 +65,26 @@ msgid ""
 "explain why, as well as outlining best practices for dealing with transforms "
 "when programming 3D games."
 msgstr ""
+"この3D回転の表現方法は当時画期的でしたが、ゲーム開発で使用するといくつかの欠"
+"点があります(これは面白い帽子をかぶった男から期待されることです)。このドキュ"
+"メントの目的は、3Dゲームのプログラミング時に変換を処理するためのベストプラク"
+"ティスを概説するだけでなく、その理由を説明することです。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:28
 msgid "Problems of Euler angles"
-msgstr ""
+msgstr "オイラー角の問題点"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:30
 msgid ""
 "While it may seem intuitive that each axis has a rotation, the truth is that "
 "it's just not practical."
 msgstr ""
+"各軸に回転があることは直感的に思えるかもしれませんが、実際には実際的ではあり"
+"ません。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:33
 msgid "Axis order"
-msgstr ""
+msgstr "軸の順序"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:35
 msgid ""
@@ -81,6 +94,10 @@ msgid ""
 "only way an orientation can be produced from angles is to rotate the object "
 "angle by angle, in an *arbitrary order*."
 msgstr ""
+"これの主な理由は、角度から方向を構築する\\ *唯一無二*\\ の方法がないことで"
+"す。すべての角度をまとめて実際の3D回転を生成する標準的な数学関数はありませ"
+"ん。角度から方向を生成できる唯一の方法は、\\ *任意の順序*\\ で、各角度ごとに"
+"オブジェクトを回転させることです。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:39
 msgid ""
@@ -91,6 +108,11 @@ msgid ""
 "are several ways to construct an orientation from 3 different angles, "
 "depending on *the order of the rotations*."
 msgstr ""
+"これは、最初に *X* で、次に *Y* で、次に *Z* で回転することで実行できます。ま"
+"たは、最初に *Y* で回転し、次に *Z* で、最後に *X* で回転することもできます。"
+"何でも機能しますが、順序によっては、オブジェクトの最終的な向きは\\ *必ずしも"
+"同じではありません*\\ 。実際、これは、\\ *回転の順序*\\ に応じて、3つの異なる"
+"角度から方向を構築するいくつかの方法があることを意味します。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:43
 msgid ""
@@ -98,11 +120,15 @@ msgid ""
 "(from Wikipedia). As you can see, the orientation of each axis depends on "
 "the rotation of the previous one:"
 msgstr ""
+"以下は、ジンバルでの回転軸(X、Y、Z順)の視覚化です(Wikipediaから)。ご覧のとお"
+"り、各軸の方向は前の軸の回転に依存します:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:47
 msgid ""
 "You may be wondering how this affects you. Let's look at a practical example:"
 msgstr ""
+"これがあなたにどのように影響するか疑問に思うかもしれません。実際の例を見てみ"
+"ましょう:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:49
 msgid ""
@@ -110,6 +136,9 @@ msgid ""
 "Moving the mouse left and right controls your view angle parallel to the "
 "ground, while moving it up and down moves the player's view up and down."
 msgstr ""
+"一人称コントローラー(FPSゲームなど)で作業していると想像してください。マウスを"
+"左右に動かすと、ビューアングルが地面と平行になり、上下に動かすと、プレイヤー"
+"のビューが上下します。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:51
 msgid ""
@@ -117,12 +146,17 @@ msgid ""
 "in the *Y* axis (\"up\" in this case, since Godot uses a \"Y-Up\" "
 "orientation), followed by rotation in the *X* axis."
 msgstr ""
+"この場合、目的の効果を得るには、最初に *Y* 軸(この場合はGodotがY軸が上の方向"
+"づけを使用するため「上」)に回転を適用する必要があり、次に *X* 軸で回転しま"
+"す。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:55
 msgid ""
 "If we were to apply rotation in the *X* axis first, and then in *Y*, the "
 "effect would be undesired:"
 msgstr ""
+"最初に *X* 軸に回転を適用し、次に *Y* 軸に回転を適用した場合、その効果は望ま"
+"しくありません:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:59
 msgid ""
@@ -130,10 +164,13 @@ msgid ""
 "axis rotations to be applied may differ. Therefore, applying rotations in X, "
 "Y, and Z is not enough: you also need a *rotation order*."
 msgstr ""
+"希望するゲームまたはエフェクトのタイプに応じて、軸の回転を適用する順序が異な"
+"る場合があります。したがって、X、Y、Zで回転を適用するだけでは不十分です。\\ *"
+"回転順序*\\ も必要です。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:62
 msgid "Interpolation"
-msgstr ""
+msgstr "Interpolation(補間)"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:64
 msgid ""
@@ -142,18 +179,23 @@ msgid ""
 "rotations). One logical way to approach this is to interpolate the angles "
 "from one position to the next. One would expect it to look like this:"
 msgstr ""
+"オイラー角の使用に関する別の問題は補間です。 2つの異なるカメラまたは敵の位置"
+"(回転を含む)を切り替えたいと想像してください。これにアプローチする1つの論理的"
+"な方法は、ある位置から次の位置まで角度を補間することです。次のようになります:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:68
 msgid "But this does not always have the expected effect when using angles:"
 msgstr ""
+"しかし、これは、角度を使用するときに常に期待される効果が得られるわけではあり"
+"ません:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:72
 msgid "The camera actually rotated the opposite direction!"
-msgstr ""
+msgstr "カメラは実際に反対方向に回転しました！"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:74
 msgid "There are a few reasons this may happen:"
-msgstr ""
+msgstr "これにはいくつかの理由があります:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:76
 msgid ""
@@ -162,6 +204,10 @@ msgid ""
 "degrees is not the same as going from ``270`` to ``360``, even though the "
 "angles are equivalent)."
 msgstr ""
+"回転は方向に対して線形にマッピングされないため、それらを補間しても常に最短パ"
+"スになるわけではありません(つまり、角度としては ``0`` 度と ``360`` 度は同等で"
+"すが、\\ ``270`` 度から ``0`` 度に進むことは ``270`` 度から ``360`` 度に進む"
+"ことと同じではありません)。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:77
 msgid ""
@@ -169,10 +215,14 @@ msgid ""
 "freedom is lost). See `Wikipedia's page on Gimbal Lock <https://en.wikipedia."
 "org/wiki/Gimbal_lock>`_ for a detailed explanation of this problem."
 msgstr ""
+"ジンバルロックが発生しています(最初と最後に回転した軸が整列するため、自由度が"
+"失われます)。この問題の詳細な説明については、\\ `ウィキペディアのジンバルロッ"
+"クに関するページ <https://en.wikipedia.org/wiki/Gimbal_lock> `_ を参照してく"
+"ださい。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:80
 msgid "Say no to Euler angles"
-msgstr ""
+msgstr "オイラー角にノーと言おう"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:82
 msgid ""
@@ -182,14 +232,19 @@ msgid ""
 "rotations (generally just one axis, or even two in limited cases). As much "
 "as you may be tempted, don't use it."
 msgstr ""
+"このすべての結論は、ゲーム用にGodotの :ref:`class_Spatial` ノードの "
+"``rotation`` プロパティを **使用しない** ことです。それは主にエディタで使用さ"
+"れ、2Dエンジンとの一貫性、および単純な回転(通常は1軸のみ、または限られた場合"
+"は2軸)のために使用されます。誘惑されるかもしれませんが、使用しないでくださ"
+"い。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:84
 msgid "Instead, there is a better way to solve your rotation problems."
-msgstr ""
+msgstr "代わりに、回転の問題を解決するより良い方法があります。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:87
 msgid "Introducing transforms"
-msgstr ""
+msgstr "transform(変換)の概要"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:89
 msgid ""
@@ -197,12 +252,17 @@ msgid ""
 "`class_Spatial` node contains a ``transform`` property which is relative to "
 "the parent's transform, if the parent is a Spatial-derived type."
 msgstr ""
+"Godotは、向きに :ref:`class_Transform` データ型を使用します。各 :ref:"
+"`class_Spatial` ノードには、親がSpatial派生型の場合、親のtransformに関連する "
+"``transform`` プロパティが含まれます。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:91
 msgid ""
 "It is also possible to access the world coordinate transform via the "
 "``global_transform`` property."
 msgstr ""
+"``global_transform`` プロパティを介してワールド座標のtransformにアクセスする"
+"こともできます。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:93
 msgid ""
@@ -215,20 +275,30 @@ msgid ""
 "also be inferred from the length of the axes. A *basis* can also be "
 "interpreted as a 3x3 matrix and used as ``transform.basis[x][y]``."
 msgstr ""
+"transformには :ref:`class_Basis` (transform.basisサブプロパティ)があり、これ"
+"は3つの :ref:` class_Vector3` ベクトルで構成されています。これらは "
+"``transform.basis`` プロパティを介してアクセスされ、\\ ``transform.basis.x``"
+"\\ 、\\ ``transform.basis.y``\\ 、および ``transform.basis.z`` から直接アクセ"
+"スできます。各ベクトルは、軸が回転した方向を指しているため、ノードの総回転を"
+"効果的に表します。スケール(均一である限り)は、軸の長さから推測することもでき"
+"ます。\\ *basis* は3x3マトリックスとして解釈され、\\ ``transform.basis[x]"
+"[y]`` として使用することもできます。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:95
 msgid "A default basis (unmodified) is akin to:"
-msgstr ""
+msgstr "デフォルトのbasis(変更されていない)は次のようなものです:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:123
 msgid "This is also an analog of a 3x3 identity matrix."
-msgstr ""
+msgstr "これは3x3単位行列の類似物でもあります。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:125
 msgid ""
 "Following the OpenGL convention, ``X`` is the *Right* axis, ``Y`` is the "
 "*Up* axis and ``Z`` is the *Forward* axis."
 msgstr ""
+"OpenGLの規則に従って、\\ ``X`` は ``右`` 軸、\\ ``Y`` は ``上`` 軸、\\ ``Z`` "
+"は ``前方`` 軸です。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:127
 msgid ""
@@ -237,12 +307,18 @@ msgid ""
 "transform is. Combining the *basis* with the *origin*, a *transform* "
 "efficiently represents a unique translation, rotation, and scale in space."
 msgstr ""
+"*basis* と一緒に、transformには *origin* もあります。これは、このtransformが"
+"実際の原点 ``(0, 0, 0)`` からどれだけ離れているかを指定する *Vector3* で"
+"す。\\ *basis* と *origin* を組み合わせることで、*transform* は空間内での一意"
+"の変換、回転、スケールを効率的に表します。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:132
 msgid ""
 "One way to visualize a transform is to look at an object's 3D gizmo while in "
 "\"local space\" mode."
 msgstr ""
+"transformを視覚化する1つの方法は、「ローカル空間」モードでオブジェクトの3Dギ"
+"ズモを見ることです。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:136
 msgid ""
@@ -250,46 +326,53 @@ msgid ""
 "blue respectively) of the basis, while the gizmo's center is at the object's "
 "origin."
 msgstr ""
+"ギズモの矢印は、basisの ``X``\\ 、\\ ``Y``\\ 、および ``Z``\\ 軸(それぞれ赤、"
+"緑、および青)を示し、ギズモの中心はオブジェクトのorigin(原点)にあります。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:140
 msgid ""
 "For more information on the mathematics of vectors and transforms, please "
 "read the :ref:`doc_vector_math` tutorials."
 msgstr ""
+"ベクトルと変換の数学の詳細については、\\ :ref:`doc_vector_math` チュートリア"
+"ルをお読みください。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:143
 msgid "Manipulating transforms"
-msgstr ""
+msgstr "transformの操作"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:145
 msgid ""
 "Of course, transforms are not as straightforward to manipulate as angles and "
 "have problems of their own."
-msgstr ""
+msgstr "もちろん、transformは角度ほど簡単に操作できず、独自の問題があります。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:147
 msgid ""
 "It is possible to rotate a transform, either by multiplying its basis by "
 "another (this is called accumulation), or by using the rotation methods."
 msgstr ""
+"basisを別のbasisに乗算する(これを積算と呼びます)か、回転メソッドを使用して、"
+"transformを回転することができます。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:164
 msgid "A method in Spatial simplifies this:"
-msgstr ""
+msgstr "Spatialのメソッドはこれを簡素化します:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:181
 msgid "This rotates the node relative to the parent node."
-msgstr ""
+msgstr "これにより、ノードが親ノードに対して相対的に回転します。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:183
 msgid ""
 "To rotate relative to object space (the node's own transform), use the "
 "following:"
 msgstr ""
+"オブジェクト空間(ノード独自のtransform)を基準に回転するには、次を使用します:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:197
 msgid "Precision errors"
-msgstr ""
+msgstr "精度誤差"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:199
 msgid ""
@@ -298,12 +381,17 @@ msgid ""
 "be exactly ``1.0``, and they may not be exactly ``90`` degrees from each "
 "other."
 msgstr ""
+"変換で連続操作を行うと、浮動小数点エラーにより精度が失われます。これは、各軸"
+"のスケールがもはや ``1.0`` ではなく、互いに正確に ``90`` 度ではないことを意味"
+"します。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:201
 msgid ""
 "If a transform is rotated every frame, it will eventually start deforming "
 "over time. This is unavoidable."
 msgstr ""
+"変換がフレームごとに回転すると、最終的には時間の経過とともに変形が始まりま"
+"す。これは避けられません。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:203
 msgid ""
@@ -311,12 +399,16 @@ msgid ""
 "*orthonormalize* the transform after some time (maybe once per frame if you "
 "modify it every frame):"
 msgstr ""
+"これを処理する方法は2つあります。 1つ目は、一定時間後に変換を *正規化* するこ"
+"とです(フレームごとに変更する場合は、フレームごとに1回):"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:214
 msgid ""
 "This will make all axes have ``1.0`` length again and be ``90`` degrees from "
 "each other. However, any scale applied to the transform will be lost."
 msgstr ""
+"これにより、すべての軸の長さは再び ``1.0`` になり、互いに ``90`` 度になりま"
+"す。ただし、transformに適用されたスケールは失われます。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:216
 msgid ""
@@ -324,10 +416,13 @@ msgid ""
 "scale their children nodes instead (such as MeshInstance). If you absolutely "
 "must scale the node, then re-apply it at the end:"
 msgstr ""
+"操作するノードをスケーリングしないことをお勧めします。代わりに、子ノードをス"
+"ケーリングします(MeshInstanceなど)。ノードを絶対にスケーリングする必要がある"
+"場合は、最後に再適用します:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:230
 msgid "Obtaining information"
-msgstr ""
+msgstr "情報の取得"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:232
 msgid ""
@@ -335,34 +430,41 @@ msgid ""
 "transform?\"**. The answer again is: you don't. You must do your best to "
 "stop thinking in angles."
 msgstr ""
+"あなたはこの時点で考えているかもしれません: **「わかりました、しかし、どうす"
+"ればtransformから角度を取得できますか？」**\\ 。もう一度答えます: あなたはそ"
+"うしません。角度で考えるのをやめるために最善を尽くさなければなりません。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:234
 msgid ""
 "Imagine you need to shoot a bullet in the direction your player is facing. "
 "Just use the forward axis (commonly ``Z`` or ``-Z``)."
 msgstr ""
+"プレイヤーが向いている方向に弾丸を撃つ必要があると想像してください。前方軸(通"
+"常は ``Z`` または ``-Z``)を使用します。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:247
 msgid ""
 "Is the enemy looking at the player? Use the dot product for this (see the :"
 "ref:`doc_vector_math` tutorial for an explanation of the dot product):"
 msgstr ""
+"敵はプレイヤーを見ていますか？これにはドット積を使用します(ドット積の説明につ"
+"いては、 :ref:`doc_vector_math` チュートリアルを参照してください):"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:266
 msgid "Strafe left:"
-msgstr ""
+msgstr "左に機銃掃射:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:283
 msgid "Jump:"
-msgstr ""
+msgstr "ジャンプ:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:302
 msgid "All common behaviors and logic can be done with just vectors."
-msgstr ""
+msgstr "すべての一般的な動作とロジックは、ベクトルだけで実行できます。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:305
 msgid "Setting information"
-msgstr ""
+msgstr "設定情報"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:307
 msgid ""
@@ -371,6 +473,9 @@ msgid ""
 "definitely done using angles, because you *do want* the transforms to happen "
 "in a specific order."
 msgstr ""
+"もちろん、情報をtransformに設定したい場合があります。一人称コントローラーまた"
+"は周回カメラを想像してください。transformは特定の順序で *実行する必要* がある"
+"ため、これらは間違いなく角度を使用して行われます。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:309
 msgid ""
@@ -378,20 +483,25 @@ msgid ""
 "set them every frame. Don't try to retrieve and re-use them because the "
 "transform is not meant to be used this way."
 msgstr ""
+"そのような場合は、角度と回転をtransform の *外側* に保ち、フレームごとに設定"
+"します。transformはこの方法で使用するためのものではないため、それらを取得して"
+"再使用しようとしないでください。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:311
 msgid "Example of looking around, FPS style:"
-msgstr ""
+msgstr "FPSスタイルのゲームで見回す例:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:353
 msgid ""
 "As you can see, in such cases it's even simpler to keep the rotation "
 "outside, then use the transform as the *final* orientation."
 msgstr ""
+"ご覧のように、このような場合、回転を外側に保ち、transformを *最終* 方向として"
+"使用する方が簡単です。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:356
 msgid "Interpolating with quaternions"
-msgstr ""
+msgstr "クォータニオンで補間する"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:358
 msgid ""
@@ -402,10 +512,16 @@ msgid ""
 "interpolation. As in, if you have two rotations, a quaternion will smoothly "
 "allow interpolation between them using the closest axis."
 msgstr ""
+"2つのtransform間の補間は、クォータニオン(四元数)を使用して効率的に実行できま"
+"す。クォータニオンがどのように機能するかについての詳細は、インターネット周辺"
+"の他の場所で見つけることができます。実際の使用のためには、その主な用途のほと"
+"んどが最短距離のパス補間を行うことだと理解するだけで十分です。同様に、2つの回"
+"転がある場合、クォータニオンにより、最も近い軸を使用したスムーズな補間が可能"
+"になります。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:360
 msgid "Converting a rotation to quaternion is straightforward."
-msgstr ""
+msgstr "回転をクォータニオンに変換するのは簡単です。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:383
 msgid ""
@@ -415,16 +531,22 @@ msgid ""
 "many times, keep in mind they need to be eventually normalized or they also "
 "may suffer from numerical precision errors."
 msgstr ""
+":ref:`class_Quat` 型のリファレンスには、データ型に関する詳細な情報があります"
+"(transform積算、transformポイントなども可能ですが、使用頻度は低くなります)。"
+"クォータニオンに何度も補間または演算を適用する場合は、最終的に正規化する必要"
+"があることに注意してください。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:385
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
 msgstr ""
+"クォータニオンは、カメラ/パス/などを行うときに役立ちます。結果は常に正確かつ"
+"スムーズになります。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:388
 msgid "Transforms are your friend"
-msgstr ""
+msgstr "Transform(変換)はあなたの友人です"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:390
 msgid ""
@@ -432,6 +554,8 @@ msgid ""
 "time. However, once you get used to them, you will appreciate their "
 "simplicity and power."
 msgstr ""
+"ほとんどの初心者にとって、トランスフォームの操作に慣れるには時間がかかる場合"
+"があります。ただし、それらに慣れると、そのシンプルさとパワーに感謝します。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid ""
@@ -439,3 +563,6 @@ msgid ""
 "communities <https://godotengine.org/community>`_ and, once you become "
 "confident enough, please help others!"
 msgstr ""
+"Godotの `オンラインコミュニティ <https://godotengine.org/community> `_ でこの"
+"トピックに関するヘルプを依頼することを躊躇しないでください。十分に自信が持て"
+"たら、次は他の人を助けてください！"

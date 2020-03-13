@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,10 @@ msgid ""
 "from. Yet in most cases it is recommended to create icons for new classes to "
 "improve the user experience."
 msgstr ""
+"新しいクラスが作成され、スクリプトに公開されると、エディタのインターフェイス"
+"は、継承元の基本クラスを表すデフォルトのアイコンでそれを表示します。しかし、"
+"ほとんどの場合、ユーザーエクスペリエンスを向上させるために、新しいクラスのア"
+"イコンを作成することをお勧めします。"
 
 #: ../../docs/development/editor/creating_icons.rst:12
 msgid "Creating icons"
@@ -39,12 +43,17 @@ msgid ""
 "installed. For instance, you can use the open-source `Inkscape <https://"
 "inkscape.org/>`_ editor."
 msgstr ""
+"新しいアイコンを作成するには、まずベクターグラフィックエディタをインストール"
+"する必要があります。たとえば、オープンソースの `Inkscape <https://inkscape."
+"org/>`_ エディタを使用できます。"
 
 #: ../../docs/development/editor/creating_icons.rst:17
 msgid ""
 "Clone the ``godot-design`` repository containing all the original editor "
 "icons:"
 msgstr ""
+"すべての元のエディタアイコンを含む ``godot-design`` リポジトリのクローンを作"
+"成します:"
 
 #: ../../docs/development/editor/creating_icons.rst:23
 msgid ""
@@ -52,6 +61,9 @@ msgid ""
 "can use ``engine/icons/inkscape_template.svg`` with default icon properties "
 "already set up."
 msgstr ""
+"アイコンは、ベクターグラフィックエディタで ``svg`` 形式で作成する必要がありま"
+"す。デフォルトのアイコンプロパティがすでに設定されている ``engine/icons/"
+"inkscape_template.svg`` を使用できます。"
 
 #: ../../docs/development/editor/creating_icons.rst:27
 msgid ""
@@ -59,10 +71,13 @@ msgid ""
 "icons/svg/`` folder. But in order for the engine to automatically pick up "
 "the icons, each icon's filename:"
 msgstr ""
+"アイコンのデザインに満足したら、\\ ``engine/icons/svg/`` フォルダにアイコンを"
+"保存します。しかし、エンジンが自動的にアイコンを取得するために、各アイコンの"
+"ファイル名は:"
 
 #: ../../docs/development/editor/creating_icons.rst:31
 msgid "Must be prefixed with ``icon_``."
-msgstr ""
+msgstr "接頭辞 ``icon_`` を付ける必要があります。"
 
 #: ../../docs/development/editor/creating_icons.rst:33
 msgid ""
@@ -71,6 +86,9 @@ msgid ""
 "have all letters, numbers, and special characters separated as distinct "
 "words. Some examples:"
 msgstr ""
+"``PascalCase``の名前は ``snake_case`` に変換する必要があるため、大文字と小文"
+"字が変わるたびに単語は ``_``で区切られ、大文字の頭字語にもすべての文字、数"
+"字、特殊文字が別個の単語として区切られている必要があります。いくつかの例:"
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid "Name"
@@ -82,35 +100,35 @@ msgstr "ファイル名"
 
 #: ../../docs/development/editor/creating_icons.rst:41
 msgid "``Polygon2D``"
-msgstr ""
+msgstr "``Polygon2D``"
 
 #: ../../docs/development/editor/creating_icons.rst:41
 msgid "``icon_polygon_2_d.svg``"
-msgstr ""
+msgstr "``icon_polygon_2_d.svg``"
 
 #: ../../docs/development/editor/creating_icons.rst:43
 msgid "``CSGPolygon``"
-msgstr ""
+msgstr "``CSGPolygon``"
 
 #: ../../docs/development/editor/creating_icons.rst:43
 msgid "``icon_c_s_g_polygon.svg``"
-msgstr ""
+msgstr "``icon_c_s_g_polygon.svg``"
 
 #: ../../docs/development/editor/creating_icons.rst:45
 msgid "``CPUParticles2D``"
-msgstr "\\ ``CPUParticles2D``"
+msgstr "``CPUParticles2D``"
 
 #: ../../docs/development/editor/creating_icons.rst:45
 msgid "``icon_c_p_u_particles_2_d.svg``"
-msgstr ""
+msgstr "``icon_c_p_u_particles_2_d.svg``"
 
 #: ../../docs/development/editor/creating_icons.rst:47
 msgid "``C#``"
-msgstr ""
+msgstr "``C#``"
 
 #: ../../docs/development/editor/creating_icons.rst:47
 msgid "``icon_c_#.svg``"
-msgstr ""
+msgstr "``icon_c_#.svg``"
 
 #: ../../docs/development/editor/creating_icons.rst:51
 msgid "Icon optimization"
@@ -122,26 +140,32 @@ msgid ""
 "in size, so they can be efficiently parsed. Editor icons must be first "
 "optimized before being added to the engine, to do so:"
 msgstr ""
+"エディタは実行時に ``svg`` をレンダリングするので、効率的に解析できるようにサ"
+"イズを小さくする必要があります。エディタアイコンは、エンジンに追加する前にま"
+"ず最適化をする必要があります:"
 
 #: ../../docs/development/editor/creating_icons.rst:57
 msgid "Add them to the ``engine/icons/svg`` folder."
-msgstr ""
+msgstr "それらを ``engine/icons/svg`` フォルダに追加します。"
 
 #: ../../docs/development/editor/creating_icons.rst:59
 msgid ""
 "Run the ``optimize.py`` script. You must have the ``scour`` package "
 "installed:"
 msgstr ""
+"``optimize.py`` スクリプトを実行します。\\ ``scour`` パッケージをインストール"
+"する必要があります:"
 
 #: ../../docs/development/editor/creating_icons.rst:66
 msgid ""
 "The optimized icons will be generated in the ``engine/icons/optimized`` "
 "folder."
 msgstr ""
+"最適化されたアイコンは ``engine/icons/optimized`` フォルダに生成されます。"
 
 #: ../../docs/development/editor/creating_icons.rst:69
 msgid "Integrating and sharing the icons"
-msgstr ""
+msgstr "アイコンの統合と共有"
 
 #: ../../docs/development/editor/creating_icons.rst:71
 msgid ""
@@ -152,6 +176,11 @@ msgid ""
 "``godot-design`` repository so that the icon can be improved upon by other "
 "contributors."
 msgstr ""
+"エンジン自体に貢献している場合は、プルリクエストを行って、メインリポジトリの "
+"``godot/editor/icons`` に最適化されたアイコンを追加する必要があります。エンジ"
+"ンを再コンパイルして、クラスの新しいアイコンが選択されるようにします。マージ"
+"したら、アイコンの元のバージョンを ``godot-design`` リポジトリに追加して、他"
+"の貢献者がアイコンを改善できるようにすることを忘れないでください。"
 
 #: ../../docs/development/editor/creating_icons.rst:77
 msgid ""
@@ -160,12 +189,18 @@ msgid ""
 "don't need to make a separate pull request for your icons to be available "
 "within the editor as they can be self-contained."
 msgstr ""
+"モジュール内にカスタムアイコンを作成することもできます。独自のモジュールを作"
+"成していて、それをGodotと統合する予定がない場合は、アイコンが自己完結型である"
+"ため、エディタ内でアイコンを使用可能にするために別のプルリクエストを行う必要"
+"はありません。"
 
 #: ../../docs/development/editor/creating_icons.rst:82
 msgid ""
 "For specific instructions on how to create module icons, refer to :ref:"
 "`Creating custom module icons<doc_custom_module_icons>`."
 msgstr ""
+"モジュールアイコンの作成方法に関する具体的な手順については、\\ :ref:`カスタム"
+"モジュールアイコンの作成 <doc_custom_module_icons>` を参照してください。"
 
 #: ../../docs/development/editor/creating_icons.rst:86
 msgid "Troubleshooting"
@@ -173,22 +208,24 @@ msgstr "トラブルシューティング"
 
 #: ../../docs/development/editor/creating_icons.rst:88
 msgid "If icons don't appear in the editor make sure that:"
-msgstr ""
+msgstr "エディタにアイコンが表示されない場合は、次のことを確認してください:"
 
 #: ../../docs/development/editor/creating_icons.rst:90
 msgid ""
 "Each icon's filename matches the naming requirement as described previously."
-msgstr ""
+msgstr "各アイコンのファイル名は、前述の命名要件に一致しているか。"
 
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid ""
 "``modules/svg`` is enabled (should be enabled by default). Without it, icons "
 "won't appear in the editor at all."
 msgstr ""
+"``modules/svg`` は有効になっているか(デフォルトでは有効になっているはずで"
+"す)。それなしでは、アイコンはエディタにまったく表示されません。"
 
 #: ../../docs/development/editor/creating_icons.rst:96
 msgid "References:"
-msgstr "参照："
+msgstr "リファレンス:"
 
 #: ../../docs/development/editor/creating_icons.rst:98
 msgid ""

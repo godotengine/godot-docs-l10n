@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:4
 msgid "Baked lightmaps"
-msgstr ""
+msgstr "ベイクドライトマップ(焼き込み済ライトマップ)"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:7
 msgid "Introduction"
@@ -32,6 +32,10 @@ msgid ""
 "lightmaps work fine on low-end PCs and mobile devices, as they consume "
 "almost no resources at run-time."
 msgstr ""
+"焼き込み済のライトマップは、間接(または焼き込み済)ライティングをシーンに追加"
+"するための代替ワークフローです。 :ref:`doc_gi_probes` のアプローチとは異な"
+"り、焼き付けられたライトマップは実行時にほとんどリソースを消費しないため、"
+"ローエンドのPCやモバイルデバイスで正常に機能します。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:14
 msgid ""
@@ -40,6 +44,10 @@ msgid ""
 "reflections, so using :ref:`doc_reflection_probes` together with it on "
 "interiors (or using a Sky on exteriors) is a requirement to get good quality."
 msgstr ""
+"``GIProbe`` とは異なり、ベイクドライトマップは完全に静的です。焼き込んだ後"
+"は、まったく変更できません。また、シーンに反射を提供しません。そのため、イン"
+"テリアで :ref:`doc_reflection_probes` を使用する(またはエクステリアでSkyを使"
+"用する)ことが、高品質を得るための要件です。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:19
 msgid ""
@@ -47,6 +55,9 @@ msgid ""
 "bleeding, and indirect light can look better if using Raytrace mode on high "
 "quality setting (but baking can take a while)."
 msgstr ""
+"焼き込むと、\\ ``GIProbe`` よりもライトブリーディング(光線漏れ)に関する問題が"
+"少なく、高品質の設定でレイトレースモードを使用すると間接光の見栄えが良くなり"
+"ます(ただし、焼き込み処理には時間がかかる場合があります)。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:23
 msgid ""
@@ -55,10 +66,14 @@ msgid ""
 "up. For mobile or low-end compatibility, though, Baked Lightmaps are your "
 "only choice."
 msgstr ""
+"最終的に、どの間接照明アプローチがより良いかは、ユースケースに依存します。一"
+"般に、GIProbeは見栄えが良く、セットアップがはるかに簡単です。ただし、モバイル"
+"またはローエンドの互換性を確保するには、ベイクドライトマップが唯一の選択肢で"
+"す。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:29
 msgid "Visual comparison"
-msgstr ""
+msgstr "視覚的比較"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:31
 msgid ""
@@ -68,6 +83,11 @@ msgid ""
 "be that good. GIProbe looks less accurate (as it's an approximation), but "
 "smoother overall."
 msgstr ""
+"ベイクドライトマップとGIProbeの見た目の比較を次に示します。ライトマップはより"
+"正確ですが、照明がラップされていないテクスチャ上にあるという事実に苦しむこと"
+"に注意してください。そのため、トランジションと解像度はそれほど良くないかもし"
+"れません。 GIProbeは(近似なので)あまり正確ではありませんが、全体的に滑らかに"
+"見えます。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:40
 msgid "Setting up"
@@ -80,16 +100,22 @@ msgid ""
 "secondary texture coordinates that ensures any face in the object has its "
 "own place in the UV map. Faces must not share pixels in the texture."
 msgstr ""
+"まず、ライトマッパーが何かを行う前に、ベイク処理するオブジェクトにUV2レイヤー"
+"とテクスチャサイズが必要です。 UV2レイヤーは、オブジェクト内のすべての面がUV"
+"マップ内で独自の場所を持つことを保証する2次テクスチャ座標のセットです。面はテ"
+"クスチャ内のピクセルを共有してはいけません。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:47
 msgid ""
 "There are a few ways to ensure your object has a unique UV2 layer and "
 "texture size:"
 msgstr ""
+"オブジェクトに一意のUV2レイヤーとテクスチャサイズを持たせるには、いくつかの方"
+"法があります:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:50
 msgid "Unwrap from your 3D DCC"
-msgstr ""
+msgstr "3D DCCから展開(アンラップ)"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:52
 msgid ""
@@ -99,16 +125,23 @@ msgid ""
 "lot, the texture generation process can be quite costly within Godot, so "
 "having it unwrapped before import can be faster."
 msgstr ""
+"1つの選択肢は、お気に入りの3Dアプリから実行することです。通常、このアプローチ"
+"は推奨されませんが、その手段が存在することを知ってもらうために最初に説明しま"
+"す。主な利点は、多くの再インポートが必要な複雑なオブジェクトでは、テクスチャ"
+"生成プロセスがGodot内で非常にコストがかかる可能性があるため、インポート前に展"
+"開(アンラップ)すると処理が速くなるということです。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:58
 msgid "Simply do an unwrap on the second UV2 layer."
-msgstr ""
+msgstr "2番目のUV2レイヤーで展開するだけです。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:62
 msgid ""
 "And import normally. Remember you will need to set the texture size on the "
 "mesh after import."
 msgstr ""
+"そして、普通にインポートします。インポート後にメッシュのテクスチャサイズを設"
+"定する必要があることに注意してください。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:67
 msgid ""
@@ -117,26 +150,34 @@ msgid ""
 "work quickly. You will mostly need to use seams or other techniques to "
 "create better unwrapping."
 msgstr ""
+"インポート時に外部メッシュを使用する場合、サイズは保持されます。 3D DCCのほと"
+"んどのアンラッパーは、迅速に動作することを目的としているため、品質重視ではあ"
+"りません。より良い展開図を作成するには、ほとんどの場合、シームや他の技術を使"
+"用する必要があります。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:73
 msgid "Unwrap from within Godot"
-msgstr ""
+msgstr "Godot内から展開する"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:75
 msgid ""
 "Godot has an option to unwrap meshes and visualize the UV channels. It can "
 "be found in the Mesh menu:"
 msgstr ""
+"Godotには、メッシュを展開してUVチャネルを視覚化するオプションがあります。 "
+"Meshメニューにあります:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:80
 msgid ""
 "This will generate a second set of UV2 coordinates which can be used for "
 "baking, and it will also set the texture size automatically."
 msgstr ""
+"これにより、焼き込みに使用できる2番目のUV2座標セットが生成され、テクスチャサ"
+"イズも自動的に設定されます。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:84
 msgid "Unwrap on scene import"
-msgstr ""
+msgstr "シーンのインポート時に展開"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:86
 msgid ""
@@ -145,6 +186,10 @@ msgid ""
 "imported scene in the filesystem dock, then go to the Import tab. There, the "
 "following option can be modified:"
 msgstr ""
+"これはおそらく全体的に最善のアプローチです。唯一の欠点は、大きなモデルでは、"
+"インポート時に展開に時間がかかることがあるということです。ファイルシステム"
+"ドックでインポートされたシーンを選択し、[インポート]タブに移動します。そこ"
+"で、次のオプションを変更できます:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:93
 msgid ""
@@ -153,12 +198,18 @@ msgid ""
 "size of the lightmap texture (and, in consequence, the UV padding in the "
 "map)."
 msgstr ""
+"**Light Baking** モードは **\"Gen Lightmaps\"** に設定する必要があります。"
+"ワールド単位のテクセルサイズ(Texel Size)も指定する必要があります。これによ"
+"り、ライトマップテクスチャの最終サイズ(および、結果として、マップのUVパディン"
+"グ)が決定されます。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:97
 msgid ""
 "The effect of setting this option is that all meshes within the scene will "
 "have their UV2 maps properly generated."
 msgstr ""
+"このオプションを設定すると、シーン内のすべてのメッシュのUV2マップが適切に生成"
+"されます。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:100
 msgid ""
@@ -168,10 +219,15 @@ msgid ""
 "or twice), this will result in inefficient lightmaps. Just don't reuse a "
 "source mesh at different scales if you are planning to use lightmapping."
 msgstr ""
+"注意点: シーン内でメッシュを再利用する場合、最初に見つかったインスタンスに対"
+"してUVが生成されることに注意してください。メッシュがさまざまな縮尺で再利用さ"
+"れる場合(および縮尺が大きく異なる場合、半分以下または二倍以上)、これは非効率"
+"的なライトマップになります。ライトマッピングの使用を計画している場合は、異な"
+"るスケールでソースメッシュを再利用しないでください。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:107
 msgid "Checking UV2"
-msgstr ""
+msgstr "UV2を確認する"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:109
 msgid ""
@@ -179,10 +235,12 @@ msgid ""
 "visualized. Make sure, if something is failing, to check that the meshes "
 "have these UV2 coordinates:"
 msgstr ""
+"前に説明したメッシュメニューで、UV2テクスチャ座標を視覚化できます。何かが失敗"
+"している場合は、メッシュに次の UV2座標があることを確認してください:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:115
 msgid "Setting up the scene"
-msgstr ""
+msgstr "シーンの設定"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:117
 msgid ""
@@ -190,6 +248,9 @@ msgid ""
 "scene. This will enable light baking on all nodes (and sub-nodes) in that "
 "scene, even on instanced scenes."
 msgstr ""
+"何かを行う前に、\\ **BakedLightmap** ノードをシーンに追加する必要があります。"
+"これにより、インスタンス化されたシーンであっても、そのシーンのすべてのノード"
+"(およびサブノード)でライトのベイク処理が有効になります。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:123
 msgid ""
@@ -197,10 +258,13 @@ msgid ""
 "baker, and each will be assigned a lightmap of its own (just make sure to "
 "respect the rule about scaling mentioned before):"
 msgstr ""
+"これはベイカーによってサポートされているため、サブシーンは複数回インスタンス"
+"化することができ、それぞれに独自のライトマップが割り当てられます(前述のスケー"
+"リングに関するルールを必ず守ってください):"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:128
 msgid "Configure bounds"
-msgstr ""
+msgstr "範囲設定"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:130
 msgid ""
@@ -208,26 +272,33 @@ msgid ""
 "to transfer light to dynamic objects inside it (more on that later). Just "
 "cover the scene with the volume as you do with ``GIProbe``:"
 msgstr ""
+"ライトマップは、それを使用して内部の動的オブジェクトに光を伝達するため、影響"
+"を受けるエリアと同程度のボリューム(容積)が必要です。(詳細は後述)。\\ "
+"``GIProbe`` で行うように、ボリュームでシーンをカバーするだけです:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:137
 msgid "Setting up meshes"
-msgstr ""
+msgstr "メッシュの設定"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:139
 msgid ""
 "For a **MeshInstance** node to take part in the baking process, it needs to "
 "have the \"Use in Baked Light\" property enabled."
 msgstr ""
+"**MeshInstance** ノードがベイク処理に参加するには、\"Use in Baked Light\"プロ"
+"パティを有効にする必要があります。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:144
 msgid ""
 "When auto-generating lightmaps on scene import, this is enabled "
 "automatically."
 msgstr ""
+"シーンのインポート時にライトマップを自動生成する場合、これは自動的に有効にな"
+"ります。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:147
 msgid "Setting up lights"
-msgstr ""
+msgstr "ライトの設定"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:149
 msgid ""
@@ -235,37 +306,48 @@ msgid ""
 "shadowmapping and lighting are still dynamic and affect moving objects, but "
 "light bounces from that light will be baked."
 msgstr ""
+"デフォルトでは、ライトは間接光でベイク処理されます。これは、シャドウマッピン"
+"グと照明は依然として動的であり、移動するオブジェクトに影響を与えますが、その"
+"ライトからの光の跳ね返りはベイク処理されることを意味します。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:153
 msgid ""
 "Lights can be disabled (no bake) or be fully baked (direct and indirect). "
 "This can be controlled from the **Bake Mode** menu in lights:"
 msgstr ""
+"ライトは無効(ベイクなし)または完全にベイク処理(直接および間接)できます。これ"
+"は、ライトの **Bake Mode** メニューから制御できます:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:158
 msgid "The modes are:"
-msgstr ""
+msgstr "モードは次のとおりです:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:160
 msgid ""
 "**Disabled:** Light is ignored in baking. Keep in mind hiding a light will "
 "have no effect for baking, so this must be used instead."
 msgstr ""
+"**Disabled(無効):** ベイク処理ではライトは無視されます。ライトを非表示にして"
+"もベイク処理は無効化されないので、代わりにこれを使用する必要があります。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:161
 msgid ""
 "**Indirect:** This is the default mode. Only indirect lighting will be baked."
 msgstr ""
+"**Indirect(間接): **これはデフォルトのモードです。間接照明のみがベイク処理さ"
+"れます。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:162
 msgid ""
 "**All:** Both indirect and direct lighting will be baked. If you don't want "
 "the light to appear twice (dynamically and statically), simply hide it."
 msgstr ""
+"**All(すべて):** 間接照明と直接照明の両方がベイク処理されます。ライトを2回(動"
+"的および静的に)表示したくない場合は、単に非表示にしてください。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:165
 msgid "Baking quality"
-msgstr ""
+msgstr "焼き込みの品質"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:167
 msgid ""
@@ -274,6 +356,9 @@ msgid ""
 "parameter. More subdivision results in more detail, but also takes more time "
 "to bake."
 msgstr ""
+"``BakedLightmap`` は、単純化するために、ボクセル化されたシーンを使用して照明"
+"を計算します。ボクセルのサイズは、\\ **Bake Subdiv* *パラメーターで調整できま"
+"す。細分化を行うとより詳細になりますが、焼き込みに時間がかかります。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:171
 msgid ""
@@ -282,18 +367,26 @@ msgid ""
 "subdivision), which is used for capturing light in dynamic objects (more on "
 "that later). Its default value is also good enough for most cases."
 msgstr ""
+"一般に、デフォルトで十分です。また、\\ **Capture Subdivision** (常にメインサ"
+"ブディビジョン以下である必要があります)もあります。これは、動的オブジェクトの"
+"光をキャプチャするために使用されます(詳細は後述)。ほとんどの場合、このデフォ"
+"ルト値で十分です。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:178
 msgid ""
 "Besides the capture size, quality can be modified by setting the **Bake "
 "Mode**. Two modes of capturing indirect are provided:"
 msgstr ""
+"キャプチャサイズに加えて、\\ **Bake Mode** を設定することで品質を変更できま"
+"す。間接的なキャプチャの2つのモードが提供されます:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:183
 msgid ""
 "**Voxel Cone**: Trace: Is the default one; it's less precise, but faster. "
 "Looks similar to (but slightly better than) ``GIProbe``."
 msgstr ""
+"**ConeTrace(ボクセルコーントレース)**: デフォルトです。精度は劣りますが、高速"
+"です。\\ ``GIProbe`` に似ています(ただし、わずかに優れています)。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:184
 msgid ""
@@ -301,30 +394,37 @@ msgid ""
 "longer to bake. If used in low or medium quality, some scenes may produce "
 "grain."
 msgstr ""
+"**RayTrace(レイ トレーシング)**: この方法はより正確ですが、ベイク処理にかなり"
+"時間がかかります。低品質または中品質で使用すると、一部のシーンで粒子が生成さ"
+"れる場合があります。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:187
 msgid "Baking"
-msgstr ""
+msgstr "ベイク(焼き込み)処理"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:189
 msgid ""
 "To begin the bake process, just push the big **Bake Lightmaps** button on "
 "top when selecting the ``BakedLightmap`` node:"
 msgstr ""
+"ベイク処理を開始するには、\\ **BakedLightmap`` ノードの選択中に一番上の大き"
+"な **ライトマップを焼き込む** ボタンを押すだけです:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:194
 msgid ""
 "This can take from seconds to minutes (or hours) depending on scene size, "
 "bake method and quality selected."
 msgstr ""
+"これには、選択したシーンのサイズ、焼き込み方法、品質に応じて、数秒から数分(ま"
+"たは数時間)かかります。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:198
 msgid "Configuring bake"
-msgstr ""
+msgstr "焼き込みの設定"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:200
 msgid "Several more options are present for baking:"
-msgstr ""
+msgstr "ベイク処理にはさらにいくつかのオプションがあります:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:202
 msgid ""
@@ -333,6 +433,9 @@ msgid ""
 "cases. Increase it in case you want better lighting on small details or your "
 "scene is large."
 msgstr ""
+"**Bake Subdiv**: Godotライトマッパーは、周りの光の情報を転送するためにグリッ"
+"ドを使用しています。デフォルト値のままで問題はなく、ほとんどの場合に適してい"
+"ます。細部の照明をより良くしたい場合や、シーンが大きい場合には増やします。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:203
 msgid ""
@@ -340,40 +443,53 @@ msgid ""
 "(lighting dynamic objects). Default value is generally OK, it's usually "
 "smaller than Bake Subdiv and can't be larger than it."
 msgstr ""
+"**Capture Subdiv**: これは、リアルタイムのキャプチャ情報(動的オブジェクトの照"
+"明)に使用されるグリッドです。ほとんどの場合、デフォルト値で問題ありません。通"
+"常、この値はBake Subdivより小さく、それより大きくすることはできません。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:204
 msgid ""
 "**Bake Quality**: Three bake quality modes are provided, Low, Medium and "
 "High. Higher quality takes more time."
 msgstr ""
+"**Bake Quality**: Low、Medium、Highの3つの焼き込み品質モードが用意されていま"
+"す。品質が高いほど時間がかかります。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:205
 msgid ""
 "**Bake Mode**: The baker can use two different techniques: *Voxel Cone "
 "Tracing* (fast, but approximate), or *RayTracing* (slow, but accurate)."
 msgstr ""
+"**Bake Mode**: ベイカーは2つの異なる手法を使用できます: *Voxel Cone Tracing* "
+"(高速ですが近似的)、または *RayTracing* (低速ですが正確)。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:206
 msgid ""
 "**Propagation**: Used for the *Voxel Cone Trace* mode. Works just like in "
 "``GIProbe``."
 msgstr ""
+"**Propagation**: *Voxel Cone Trace* モードで使用されます。\\ ``GIProbe`` と同"
+"じように機能します。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:207
 msgid ""
 "**HDR**: If disabled, lightmaps are smaller, but can't capture any light "
 "over white (1.0)."
 msgstr ""
+"**HDR**: 無効にすると、ライトマップは小さくなりますが、白(1.0)を超える光を"
+"キャプチャできません。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:208
 msgid ""
 "**Image Path**: Where lightmaps will be saved. By default, on the same "
 "directory as the scene (\".\"), but can be tweaked."
 msgstr ""
+"**Image Path**: ライトマップが保存される場所。デフォルトでは、シーン (\".\") "
+"と同じディレクトリにありますが、微調整できます。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:209
 msgid "**Extents**: Size of the area affected (can be edited visually)"
-msgstr ""
+msgstr "**Extents**: 影響を受ける領域のサイズ(視覚的に編集できます)"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:210
 msgid ""
@@ -382,10 +498,14 @@ msgid ""
 "which can be a bit heavy. If you are using .tscn formats (instead of .scn), "
 "you can save it to disk."
 msgstr ""
+"**Light Data**: ベイク処理後のライトベイク処理されたデータが含まれます。テク"
+"スチャはディスクに保存されますが、これには動的オブジェクトのキャプチャデータ"
+"も含まれますが、これは少し重い場合があります。.scn の代わりに .tscn 形式を使"
+"用している場合は、ディスクに保存できます。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:213
 msgid "Dynamic objects"
-msgstr ""
+msgstr "動的オブジェクト"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:215
 msgid ""
@@ -394,6 +514,10 @@ msgid ""
 "generate *capture* data. This is used to, then, transfer the light to "
 "dynamic objects that move around the scene."
 msgstr ""
+"他のエンジンまたはライトマッパーの実装では、「ライトプローブ」と呼ばれる小さ"
+"なオブジェクトをレベル全体に手動で配置して、\\ *キャプチャ* データを生成する"
+"必要があります。これは、光をシーン内を移動する動的オブジェクトに転送するため"
+"に使用されます。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:220
 msgid ""
@@ -402,3 +526,7 @@ msgid ""
 "objects around, and they will be lit accordingly. Of course, you have to "
 "make sure you set up your scene bounds accordingly or it won't work."
 msgstr ""
+"ただし、このライトマッピングの実装では別の方法が使用されます。プロセスは自動"
+"であるため、何もする必要はありません。オブジェクトを動かすだけで、それに応じ"
+"て点灯します。もちろん、それに応じてシーンの境界を設定する必要があります。そ"
+"うしないと機能しません。"

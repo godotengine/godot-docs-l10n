@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -387,7 +387,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:303
 msgid ""
-"For finer control when scrubbing the timeline, press ``control`` and scroll "
+"For finer control when scrubbing the timeline, press :kbd:`Ctrl` and scroll "
 "forward with the mouse wheel to zoom in. Scrolling backwards will zoom out."
 msgstr ""
 
@@ -400,8 +400,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:308
 msgid ""
 "Once you get to a point you like, right click on the row for \"Animation "
-"Player\" and press insert key. In the empty name field, enter "
-"``animation_callback`` and press ``enter``."
+"Player\" and press ``Insert Key``. In the empty name field, enter "
+"``animation_callback`` and press :kbd:`Enter`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:314
@@ -433,7 +433,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:327
 msgid ""
 "Type \"animation_callback\" into the name field of the pop up which opened "
-"and press ``enter``."
+"and press :kbd:`Enter`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:329
@@ -456,7 +456,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:337
 msgid ""
 "From there right click on the timeline and click \"Insert Key\". Put "
-"\"animation_callback\" into the name field and press ``enter``."
+"\"animation_callback\" into the name field and press :kbd:`Enter`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:339
@@ -493,7 +493,7 @@ msgstr ""
 msgid ""
 "There are several advantages to this method. The first being we do not have "
 "to store the bullets in our player. We can simply create the bullet and then "
-"move on, and the bullet itself with handle checking for collisions, sending "
+"move on, and the bullet itself will handle checking for collisions, sending "
 "the proper signal(s) to the object it collides with, and destroying itself."
 msgstr ""
 
@@ -1712,8 +1712,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1219
 msgid ""
-"If you select the top cube, and then hold down ``shift`` and select the last "
-"cube, Godot will select all the cubes in-between!"
+"If you select the top cube, and then hold down :kbd:`Shift` and select the "
+"last cube, Godot will select all the cubes in-between!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1222

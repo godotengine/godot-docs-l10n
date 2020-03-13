@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -296,9 +296,10 @@ msgid "Scene setup"
 msgstr "Impostazione della scena"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
+#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
-"pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
+"pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
 "Usa \"Aggiungi un nodo figlio\" dalla tab Scene (o premendo ``Ctrl+A``) per "
 "creare una gerarchia con i seguenti nodi:"
@@ -485,6 +486,9 @@ msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
+"La parte alta della finestra di dialogo mostra la lista dei nodi della scena "
+"con il nodo che emette il segnal evidenziato in blu. Seleziona il nodo "
+"\"Panel\" quì."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
@@ -492,6 +496,10 @@ msgid ""
 "created. By default, the method name will contain the emitting node's name "
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
+"In fondo alla finestra viene visualizzato il nome del metodo che verrà "
+"creato. Se non specificato, il nome del metodo conterrà il nome del nodo che "
+"emette il segnale (\"Button\" in questo caso), quindi il metodo diventa "
+"``_on_[NomeNodo]_[nome_segnale]``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
@@ -540,13 +548,12 @@ msgstr ""
 "Poi, scrivi una funzione che sarà chiamata quando il bottone sarà premuto:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"Finalmente, connetti il segnale \"pressed\" del bottone a ``_ready()``, "
-"usando :ref:`Object.connect() <class_Object_method_connect>`."
+"Infine, connetti il segnale \"pressed\" del bottone a ``_ready()``, usando :"
+"ref:`Object.connect() <class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"

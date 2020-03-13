@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:4
 msgid "Using the AssetLib"
-msgstr ""
+msgstr "AssetLibの使用"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:7
 msgid "On the website"
-msgstr ""
+msgstr "ウェブサイトで"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:10
 msgid "Overview"
@@ -35,6 +35,9 @@ msgid ""
 "`Godot's official website <https://godotengine.org/asset-library/asset>`_, "
 "and this is what it looks like when you first visit it:"
 msgstr ""
+"前述のように、\\ `Godotの公式Webサイト <https://godotengine.org/asset-"
+"library/asset>`_ でAssetLibのWebフロントエンドにアクセスできます。これは、最"
+"初にアクセスしたときの表示です:"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:16
 msgid "|image0|"
@@ -45,10 +48,12 @@ msgid ""
 "At the top, you see the **header**, which takes you to various other parts "
 "of the AssetLib - at the moment, it's empty, as we are not logged in."
 msgstr ""
+"上部に、\\ **ヘッダー** が表示されます。これにより、AssetLibの他のさまざまな"
+"部分に移動できます。現時点では、ログインしていないため空です。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:22
 msgid "Searching"
-msgstr ""
+msgstr "検索"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:24
 msgid ""
@@ -58,6 +63,11 @@ msgid ""
 "scripts and demos), **engine version** they are intended for, **sorting "
 "order** (by update date, by name, etc.) and **support level**."
 msgstr ""
+"中央には **検索バー+設定** セクションと、その下の **アセット** セクションがあ"
+"ります。これにより、多数の条件に基づいて特定の種類のアセットをフィルタリング"
+"できます。 これらには、アセットの **カテゴリー** (2Dツール、スクリプト、デモ"
+"など)、対象となる **Godotのバージョン** \\ 、\\ **並べ替え順** (更新日、名前"
+"など)、および **サポートレベル** が含まれます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:30
 msgid ""
@@ -66,6 +76,9 @@ msgid ""
 "Currently there are three support levels, and each asset can belong to only "
 "one."
 msgstr ""
+"他のほとんどのフィルター設定は一目瞭然ですが、アセットライブラリの「サポート"
+"レベル」が何を意味するかを検討する価値があります。 現在、3つのサポートレベル"
+"があり、各アセットはどれか1つだけに属することができます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:34
 msgid ""
@@ -73,12 +86,17 @@ msgid ""
 "developers. Currently, these include the official engine demos, which "
 "showcase how various areas of the engine work."
 msgstr ""
+"**公式(Official)** アセットは、公式のGodot Engine開発者によって作成および管理"
+"されます。 現在、これらにはエンジンのさまざまな領域がどのように機能するかを示"
+"す公式のエンジンデモが含まれています。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:38
 msgid ""
 "**Community** assets are submitted and maintained by the members of the "
 "Godot community."
 msgstr ""
+"**コミュニティ(Community)** アセットは、Godotコミュニティのメンバーによって送"
+"信および管理されます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:41
 msgid ""
@@ -86,6 +104,9 @@ msgid ""
 "issues. They are not recommended for use in serious projects, but you are "
 "encouraged to download, test them, and submit issues to the original authors."
 msgstr ""
+"**テスト(Testing)** アセットは進行中の作品であり、バグやユーザビリティの問題"
+"が含まれる場合があります。真面目なプロジェクトでの使用は推奨されていません"
+"が、ダウンロードしてテストし、元の作者に問題を送信することをお勧めします。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:45
 msgid ""
@@ -93,6 +114,9 @@ msgid ""
 "clicking the Search button, receive the list of all assets in the Library "
 "that match them."
 msgstr ""
+"任意の検索フィルターと検索条件を組み合わせて一致させることができ、Searchボタ"
+"ンをクリックすると、それらに一致するライブラリー内のすべてのアセットのリスト"
+"が表示されます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:48
 msgid "|image1|"
@@ -103,16 +127,20 @@ msgid ""
 "Note that the search results are not updated in real-time, so you will have "
 "to re-submit the search query each time you change the query settings."
 msgstr ""
+"検索結果はリアルタイムで更新されないため、クエリ設定を変更するたびに検索クエ"
+"リを再送信する必要があります。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:54
 msgid "Breakdown of an asset"
-msgstr ""
+msgstr "アセットの内訳"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:56
 msgid ""
 "Now let's take a look at what an asset's page looks like and what it "
 "contains."
 msgstr ""
+"次に、アセットのページがどのように表示され、何が含まれているかを見てみましょ"
+"う。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:58
 msgid "|image2|"
@@ -120,57 +148,60 @@ msgstr "\\ |image2|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:60
 msgid "Asset's thumbnail/icon."
-msgstr ""
+msgstr "アセットのサムネイル/アイコン。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:61
 msgid "Asset's name."
-msgstr ""
+msgstr "アセットの名前。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:62
 msgid "Current version number of the asset."
-msgstr ""
+msgstr "アセットの現在のバージョン番号。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:63
 msgid ""
 "Asset's average rating, displayed in stars. (This is currently "
 "unimplemented.)"
 msgstr ""
+"アセットの平均評価。星印で表示されます。(これは現在は実装されていません。)"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:64
 msgid "Asset's category, Godot version, and support status."
-msgstr ""
+msgstr "アセットのカテゴリ、Godotバージョン、およびサポートステータス。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:65
 msgid "Asset's original author/submitter."
-msgstr ""
+msgstr "アセットのオリジナルの作成者/送信者。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:66
 msgid "The license the asset is distributed under."
-msgstr ""
+msgstr "アセットが配布されるライセンス。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:67
 msgid "The date of the asset's latest edit/update."
-msgstr ""
+msgstr "アセットの最新の編集/更新の日付。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:68
 msgid "A textual description of the asset."
-msgstr ""
+msgstr "アセットの説明文。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:69
 msgid "Links related to the asset (download link, file list, issue tracker)."
 msgstr ""
+"アセットに関連するリンク(ダウンロードリンク、ファイルリスト、課題のトラッ"
+"カー)。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:70
 msgid "A SHA-256 hash of the asset, for download validation purposes."
-msgstr ""
+msgstr "ダウンロードの検証を目的とした、アセットのSHA-256ハッシュ。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:71
 msgid "Images and videos showcasing the asset."
-msgstr ""
+msgstr "アセットを紹介する画像とビデオ。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:74
 msgid "Registering and logging in"
-msgstr ""
+msgstr "登録とログイン"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:76
 msgid ""
@@ -180,10 +211,15 @@ msgid ""
 "existing assets. You do *not* need to be logged in to browse and download "
 "the assets."
 msgstr ""
+"AssetLibにアセットをアップロードするには、ログインする必要があります。ログイ"
+"ンするには、登録済みのユーザーアカウントが必要です。将来的には、これにより、"
+"既存のアセットに対するコメントや評価など、他の機能にアクセスできるようになる"
+"可能性もあります。アセットを参照およびダウンロードするためにログインする必要"
+"はありません。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:81
 msgid "The login/registration page can be accessed from the AssetLib header."
-msgstr ""
+msgstr "ログイン/登録ページには、AssetLibヘッダーからアクセスできます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:83
 msgid "|image3|"
@@ -194,6 +230,8 @@ msgid ""
 "From here, you can register your account, which requires a valid email "
 "address, a username, and a (preferably strong) password."
 msgstr ""
+"ここから、アカウントを登録できます。アカウントを登録するには、有効なメールア"
+"ドレス、ユーザー名、および(できれば強力な)パスワードが必要です。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:88
 msgid "|image4|"
@@ -201,7 +239,7 @@ msgstr "\\ |image4|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:90
 msgid "Then, you can use your username and password to log in."
-msgstr ""
+msgstr "その後、ユーザー名とパスワードを使用してログインできます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:92
 msgid "|image5|"
@@ -212,24 +250,28 @@ msgid ""
 "This will change the look of the AssetLib header. Now you get access to a "
 "handful of new functions:"
 msgstr ""
+"これにより、AssetLibヘッダーの外観が変更されます。これで、いくつかの新しい機"
+"能にアクセスできます:"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:97
 msgid ""
 "The feed, which shows a list of status updates on your submitted assets (and "
 "possibly more in the future)."
 msgstr ""
+"フィード。送信されたアセットのステータス更新のリストを表示します(将来的にはさ"
+"らに増える可能性があります)。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:98
 msgid "A list of your uploaded assets."
-msgstr ""
+msgstr "アップロードしたアセットのリスト。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:99
 msgid "The ability to submit new assets."
-msgstr ""
+msgstr "新しいアセットを送信する機能。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:101
 msgid "|image6|"
-msgstr ""
+msgstr "|image6|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:103
 msgid ""
@@ -237,10 +279,13 @@ msgid ""
 "submission guidelines are, in the next part of this tutorial, :ref:"
 "`doc_uploading_to_assetlib`."
 msgstr ""
+"ライブラリにアセットを送信する方法、およびアセット送信のガイドラインは、この"
+"チュートリアルの次のパートの :ref:`doc_uploading_to_assetlib` で学習できま"
+"す。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:107
 msgid "In the editor"
-msgstr ""
+msgstr "エディタで"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:109
 msgid ""
@@ -248,6 +293,9 @@ msgid ""
 "two places - in the Project Manager's Templates tab, and inside of a "
 "project, from the workspaces list."
 msgstr ""
+"Godotから直接AssetLibにアクセスすることもできます。プロジェクトマネージャーの"
+"[テンプレート]タブと、プロジェクト内のワークスペースリストからの2つの場所から"
+"利用できます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:113
 msgid "|image7|"
@@ -263,6 +311,9 @@ msgid ""
 "Once it's finished, you will see a window similar to what the AssetLib "
 "website looks like, with some differences:"
 msgstr ""
+"それをクリックすると、GodotはAssetLibからアセットに関する情報を取得します。 "
+"完了すると、AssetLib Webサイトに似たウィンドウが表示されますが、いくつかの違"
+"いがあります:"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:121
 msgid "|image8|"
@@ -273,6 +324,8 @@ msgid ""
 "Similarly to the web version of the AssetLib, here you can search for assets "
 "by category, name, and sort them by factors such as name or edit date."
 msgstr ""
+"AssetLibのWebバージョンと同様に、ここではカテゴリ、名前でアセットを検索し、名"
+"前や編集日などの要因でアセットを並べ替えることができます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:126
 msgid ""
@@ -284,6 +337,13 @@ msgid ""
 "results are updated in real-time (you do not have to press Search after "
 "every change to your search query for the changes to take place)."
 msgstr ""
+"とりわけ、実行中のGodotの現在のバージョンのアセットのみを取得できます。 プロ"
+"ジェクト、デモ、およびテンプレートは、AssetLibのプロジェクトマネージャー"
+"ビューからダウンロードできます。 アドオン(ツール、スクリプト、マテリアルなど)"
+"は、プロジェクト内のAssetLibからダウンロードして、現在のプロジェクトに追加で"
+"きます。 さらに、Webフロントエンドを使用する場合とは異なり、検索結果はリアル"
+"タイムで更新されます(変更を行うために検索クエリを変更するたびに[検索]を押す必"
+"要はありません)。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:134
 msgid ""
@@ -293,10 +353,15 @@ msgid ""
 "is supported, as well as the version that may be running on your local "
 "machine's web server (the localhost option)."
 msgstr ""
+"将来、(サイトドロップダウンメニューを使用して)アセットを取得する別のAssetLib"
+"プロバイダーを選択できるようになりますが、現在のところ、AssetLibの公式の "
+"`Godot Webサイト <https://godotengine.org>`_ バージョンと、ローカルマシンの"
+"Webサーバー(localhostオプション)で実行可能なバージョンのみがサポートされてい"
+"ます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:140
 msgid "When you click on an asset, you will see more information about it."
-msgstr ""
+msgstr "アセットをクリックすると、そのアセットに関する詳細情報が表示されます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:142
 msgid "|image9|"
@@ -308,6 +373,9 @@ msgid ""
 "asset, and will track download progress of it at the bottom of the editor "
 "window. If the download fails, you can retry it using the Retry button."
 msgstr ""
+"[ダウンロード]ボタンをクリックすると、Godotはアセットのアーカイブを取得し、エ"
+"ディタウィンドウの下部でダウンロードの進行状況を追跡します。ダウンロードが失"
+"敗した場合は、[再試行]ボタンを使用して再試行できます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:148
 msgid "|image10|"
@@ -318,6 +386,8 @@ msgid ""
 "When it finishes, you can proceed to install it using the Install button. "
 "This will bring up the Package Installer window."
 msgstr ""
+"終了したら、[インストール]ボタンを使用してインストールを続行できます。これに"
+"より、パッケージインストーラーウィンドウが表示されます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:153
 msgid "|image11|"
@@ -331,6 +401,11 @@ msgid ""
 "files will be shown in red, and hovering over them will show you a message "
 "stating why it cannot be installed."
 msgstr ""
+"ここでは、インストールされるすべてのファイルのリストを見ることができます。イ"
+"ンストールしたくないファイルはすべてオフにすることができます。また、Godotはイ"
+"ンストールできないファイルの問題についても通知します。これらのファイルは赤で"
+"表示され、それらにカーソルを合わせると、インストールできない理由を示すメッ"
+"セージが表示されます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:161
 msgid "|image12|"
@@ -343,6 +418,10 @@ msgid ""
 "images or 3D models. Once this is done, you should see a message stating "
 "that the Package installation is complete."
 msgstr ""
+"選択等が完了したら、[インストール]ボタンを押すと、アーカイブ内のすべてのファ"
+"イルが解凍され、そこに含まれる画像や3Dモデルなどのアセットがインポートされま"
+"す。これが完了すると、パッケージのインストールが完了したことを示すメッセージ"
+"が表示されます。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:168
 msgid "|image13|"
@@ -356,3 +435,7 @@ msgid ""
 "procedure as with the assets downloaded directly via Godot that we just "
 "covered."
 msgstr ""
+"また、[インポート]ボタンを使用して、他の場所で取得したアセットアーカイブ"
+"(AssetLib Webフロントエンドから直接ダウンロードするなど)をインポートすること"
+"もできます。これにより、先ほど説明したGodotから直接ダウンロードしたアセットと"
+"同じパッケージインストール手順が実行されます。"

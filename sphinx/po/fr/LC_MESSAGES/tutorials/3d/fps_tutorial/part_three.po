@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,18 +71,19 @@ msgstr ""
 "tscn``) et/ou ``Ruins_Level.tscn`` (``assets/Ruin_Level_Objects/Ruins_Level."
 "tscn``)."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:28
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:29
+#, fuzzy
 msgid ""
 "``Space_Level.tscn`` and ``Ruins_Level.tscn`` are complete custom FPS levels "
-"created for the purpose of this tutorial. Press ``F6`` to play the open "
-"scene, or press the ``play current scene button``, and give each a try."
+"created for the purpose of this tutorial. Press ``Play Current Scene`` "
+"button, or :kbd:`F6` on keyboard, and give each a try."
 msgstr ""
 "``Space_Level.tscn`` et ``Ruins_Level.tscn`` sont des niveaux FPS "
 "complètement customisés créés pour les besoins de ce tutoriel. Appuyez sur "
 "``F6`` pour jouer la scène d'entrée, ou appuyez sur le bouton ``play current "
 "scene button``, et essayez chaque méthode."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:31
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:33
 msgid ""
 "``Space_Level.tscn`` is more graphically demanding of the GPU than "
 "``Ruins_Level.tscn``. If your computer is struggling to render ``Space_Level."
@@ -92,7 +93,7 @@ msgstr ""
 "``Ruins_Level.tscn``. Si votre PC n'arrive pas à donner un rendu stable, "
 "essayez ``Ruins_Level.tscn``à la place."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:34
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:36
 msgid ""
 "You might have noticed there are several :ref:`RigidBody <class_RigidBody>` "
 "nodes placed throughout the level. We can place ``RigidBody_hit_test.gd`` on "
@@ -103,7 +104,7 @@ msgstr ""
 "``RigidBody_hit_test.gd`` au sein du niveau afin qu'ils puissent réagissent "
 "au fait d'être touché par des balles, c'est parti !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:37
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:39
 msgid ""
 "Follow the instructions below for either (or both) of the scenes you want to "
 "use"
@@ -111,7 +112,7 @@ msgstr ""
 "Suivez l'instruction en dessous pour une (ou les deux) des scènes que vous "
 "voulez utiliser"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:73
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:75
 msgid ""
 "Now you can fire at all the rigid bodies in either level and they will react "
 "to bullets hitting them!"
@@ -119,11 +120,11 @@ msgstr ""
 "Maintenant vous pouvez tirer sur tout les \"rigid bodies\" dans n'importe "
 "quel niveau et ils réagiront aux balles les touchant !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:76
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:78
 msgid "Adding ammo"
 msgstr "Ajout des munitions"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:78
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:80
 msgid ""
 "Now that the player has working guns, let's give them a limited amount of "
 "ammo."
@@ -131,44 +132,44 @@ msgstr ""
 "Maintenant que notre joueur possède des armes à feu, donnons leurs un nombre "
 "de munitions limité."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:80
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:82
 msgid ""
 "Firstly, we need to define a few variables in each of our weapon scripts."
 msgstr ""
 "Tout d'abord, nous devons définir quelques variables dans chacun de nos "
 "scripts d'armes à feu."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:82
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:191
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:84
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:193
 msgid "Open up ``Weapon_Pistol.gd`` and add the following class variables:"
 msgstr ""
 "Ouvrez ``Weapon_Pistol.gd`` et ajoutez les variables de classe suivantes :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:90
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:92
 msgid "``ammo_in_weapon``: The amount of ammo currently in the pistol"
 msgstr ""
 "``ammo_in_weapon``: Le nombre de munitions actuellement dans le pistolet"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:91
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:93
 msgid ""
 "``spare_ammo``: The amount of ammo we have left in reserve for the pistol"
 msgstr ""
 "``spare_ammo``: Le nombre de munitions que nous avons en réserve (disponible "
 "pour le rechargement de l'arme) pour le pistolet"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:92
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:94
 msgid "``AMMO_IN_MAG``: The amount of ammo in a fully reloaded weapon/magazine"
 msgstr ""
 "``AMMO_IN_MAG``: Le nombre de munitions dans une arme ou un chargeur, quand "
 "il/elle est entièrement chargé de munitions"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:94
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:96
 msgid "Now all we need to do is add a single line of code to ``fire_weapon``."
 msgstr ""
 "Tout ce qu'il reste à faire est d'ajouter une ligne de code à "
 "``fire_weapon``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:96
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:98
 msgid ""
 "Add the following right under ``Clone.BULLET_DAMAGE = DAMAGE``: "
 "``ammo_in_weapon -= 1``"
@@ -176,7 +177,7 @@ msgstr ""
 "Ajoutez ce qui suit juste en dessous : ``Clone.BULLET_DAMAGE = DAMAGE``: "
 "``ammo_in_weapon -= 1``"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:98
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:100
 msgid ""
 "This will remove one from ``ammo_in_weapon`` every time the player fires. "
 "Notice we're not checking to see if the player has enough ammo or not in "
@@ -188,13 +189,13 @@ msgstr ""
 "munitions ou non dans ``fire_weapon``. Nous allons plutôt vérifier si le "
 "joueur a assez de munitions dans ``Player.gd``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:103
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:105
 msgid "Now we need to add ammo for both the rifle and the knife."
 msgstr ""
 "Maintenant nous allons devoir ajouter des munitions pour le fusil et le "
 "couteau."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:105
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:107
 msgid ""
 "You may be wondering why we are adding ammo for the knife given it does not "
 "consume any ammunition. The reason we want to add ammo to the knife is so we "
@@ -204,7 +205,7 @@ msgstr ""
 "couteau étant donné qu'il ne consomme pas de munitions. Nous voulons en "
 "ajouter pour avoir une interface consistante pour toutes nos armes."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:108
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:110
 msgid ""
 "If we did not add ammo variables for the knife, we would have to add checks "
 "for the knife. By adding the ammo variables to the knife, we don't need to "
@@ -215,11 +216,11 @@ msgstr ""
 "le couteau, nous n'aurons pas à nous préoccuper de si oui ou non toute nos "
 "armes ont les mêmes variables."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:111
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:113
 msgid "Add the following class variables to ``Weapon_Rifle.gd``:"
 msgstr "Ajoutez la variable de classe suivante à \"Weapon_Rifle.gd\" :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:119
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:121
 msgid ""
 "And then add the following to ``fire_weapon``: ``ammo_in_weapon -= 1``. Make "
 "sure that ``ammo_in_weapon -= 1`` is outside of the ``if ray."
@@ -231,26 +232,26 @@ msgstr ""
 "ray.is_colliding()`` pour que le joueur perdent des munitions qu'importe si "
 "il touche quelque chose ou non."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:122
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:124
 msgid ""
 "Now all that's left is the knife. Add the following to ``Weapon_Knife.gd``:"
 msgstr ""
 "Maintenant il ne nous reste que le couteau. Ajoutez l'élément suivant à "
 "``Weapon_Knife.gd`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:130
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:132
 msgid "Because the knife does not consume ammo, that is all we need to add."
 msgstr ""
 "Comme le couteau ne consomme pas de munitions c'est tout ce que nous avons "
 "besoin d'ajouter."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:134
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:136
 msgid "Now we need to change one thing in ``Player.gd``, that is to say,"
 msgstr ""
 "Maintenant nous avons besoin de changer une chose dans ``Player.gd``, c'est-"
 "à-dire,"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:136
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:138
 msgid ""
 "how we're firing the weapons in ``process_input``. Change the code for "
 "firing weapons to the following:"
@@ -258,7 +259,7 @@ msgstr ""
 "comment nous faisons feu avec les armes dans ``process_input`` . Changez le "
 "code pour faire feu avec des armes par le suivant :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:151
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:153
 msgid ""
 "Now the weapons have a limited amount of ammo, and will stop firing when the "
 "player runs out."
@@ -266,7 +267,7 @@ msgstr ""
 "Maintenant, les armes ont une quantité limitée de munitions et celles-ci "
 "arrêterons de faire feu lorsque le joueur n'en aura plus."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:155
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:157
 msgid ""
 "Ideally, we'd like to let the player be able to see how much ammo is left. "
 "Let's make a new function called ``process_UI``."
@@ -274,20 +275,20 @@ msgstr ""
 "Idéalement, nous aimerions que le joueur puisse savoir combien de munitions "
 "il lui reste. Faisons une nouvelle fonction appelé ``process_UI``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:157
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:159
 msgid "First, add ``process_UI(delta)`` to ``_physics_process``."
 msgstr "Premièrement, ajoutez ``process_UI(delta)`` à ``_physics_process``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:159
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:161
 msgid "Now add the following to ``Player.gd``:"
 msgstr "Maintenant ajoutez ce qui suit à ``Player.gd`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:171
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:233
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:173
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:235
 msgid "Let's go over what's happening:"
 msgstr "Regardons ce qui ce passe  :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:173
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:175
 msgid ""
 "Firstly, we check to see if the current weapon is either ``UNARMED`` or "
 "``KNIFE``. If it is, we change the ``UI_status_label``'s text to only show "
@@ -298,7 +299,7 @@ msgstr ""
 "pour afficher uniquement la vie du joueur étant donné que ``UNARMED`` et "
 "``KNIFE`` ne consomment pas de munitions."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:176
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:178
 msgid ""
 "If the player is using a weapon that consumes ammo, we first get the weapon "
 "node."
@@ -306,7 +307,7 @@ msgstr ""
 "Si le joueur utilise une arme qui consomme des munitions, nous allons "
 "d'abord récupérer le nœud de l'arme."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:178
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:180
 msgid ""
 "Then we change ``UI_status_label``'s text to show the player's health, along "
 "with how much ammo the player has in the weapon and how much spare ammo the "
@@ -316,17 +317,17 @@ msgstr ""
 "joueur, tout en affichant combien de munitions il reste au joueur dans son "
 "arme et combien de munitions il possède dans son inventaire pour cette arme."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:182
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:184
 msgid "Now we can see how much ammo the player has through the HUD."
 msgstr ""
 "Maintenant nous pouvons voir combien de munitions le joueur possède au "
 "travers du HUD."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:185
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:187
 msgid "Adding reloading to the weapons"
 msgstr "Ajout du rechargement des armes"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:187
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:189
 msgid ""
 "Now that the player can run out of ammo, we need a way to let the player "
 "fill them back up. Let's add reloading next!"
@@ -334,7 +335,7 @@ msgstr ""
 "Maintenant que le joueur peut arriver à court de munitions, nous devons lui "
 "donner un moyen de recharger. Ajoutons le rechargement maintenant !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:189
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:191
 msgid ""
 "For reloading, we need to add a few more variables and a function to every "
 "weapon."
@@ -342,7 +343,7 @@ msgstr ""
 "Pour recharger, nous avons besoin d'ajouter quelque variables en plus et une "
 "fonction pour chaque arme."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:200
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:202
 msgid ""
 "``CAN_RELOAD``: A boolean to track whether this weapon has the ability to "
 "reload"
@@ -350,7 +351,7 @@ msgstr ""
 "\"CAN_RELOAD\" : Un booléen pour savoir si oui ou non l'arme à la capacité "
 "de recharger"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:201
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:203
 msgid ""
 "``CAN_REFILL``: A boolean to track whether we can refill this weapon's spare "
 "ammo. We will not be using ``CAN_REFILL`` in this part, but we will in the "
@@ -361,14 +362,14 @@ msgstr ""
 "\"CAN_REFILL\" dans cette partie, mais nous le ferons dans la prochaine "
 "partie !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:202
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:204
 msgid ""
 "``RELOADING_ANIM_NAME``: The name of the reloading animation for this weapon."
 msgstr ""
 "\"RELOADING_ANIM_NAME\" : Le nom de l'animation de chargement pour cette "
 "arme."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:204
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:206
 msgid ""
 "Now we need to add a function for handling reloading. Add the following "
 "function to ``Weapon_Pistol.gd``:"
@@ -376,14 +377,14 @@ msgstr ""
 "Maintenant nous devons ajouter une fonction pour gérer le rechargement de "
 "l'arme. Ajoutez la fonction suivante à \"Weapon_Pistol.gd\" :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:235
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:237
 msgid ""
 "First we define a variable to see whether or not this weapon can reload."
 msgstr ""
 "Premièrement nous définissons une variable pour voir si on peut recharger "
 "notre arme ou non."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:237
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:239
 msgid ""
 "Then we check to see if the player is in this weapon's idle animation state "
 "because we only want to be able to reload when the player is not firing, "
@@ -393,7 +394,7 @@ msgstr ""
 "ne veut pouvoir recharger que si le joueur ne tire pas, ne l'équipe pas et "
 "ne la déséquipe pas."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:240
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:242
 msgid ""
 "Next we check to see if the player has spare ammo, and if the ammo already "
 "in the weapon is equal to a fully reloaded weapon. This way we can ensure "
@@ -405,7 +406,7 @@ msgstr ""
 "maximum. De cette façon nous nous assurons que le joueur ne peut pas "
 "recharger si il n'a plus de munitions ou si il est déjà au maximum."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:243
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:245
 msgid ""
 "If we can still reload, then we calculate the amount of ammo needed to "
 "reload the weapon."
@@ -413,7 +414,7 @@ msgstr ""
 "Si nous pouvons encore recharger, alors nous calculons la quantité de "
 "munitions nécessaire pour recharger l'arme."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:245
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:247
 msgid ""
 "If the player has enough ammo to fill the weapon, we remove the ammo needed "
 "from ``spare_ammo`` and then set ``ammo_in_weapon`` to a full weapon/"
@@ -423,7 +424,7 @@ msgstr ""
 "munitions nécessaires de ``spare_ammo`` et ensuite nous réglons "
 "``ammo_in_weapon`` sur un chargeur d'arme complet."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:247
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:249
 msgid ""
 "If the player does not have enough ammo, we add all the ammo left in "
 "``spare_ammo``, and then set ``spare_ammo`` to ``0``."
@@ -431,7 +432,7 @@ msgstr ""
 "Si le joueur n'a pas assez de munitions, nous ajoutons toutes les munitions "
 "restantes dans ``spare_ammo``, puis réglons ``spare_ammo`` sur ``0``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:249
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:251
 msgid ""
 "Next we play the reloading animation for this weapon, and then return "
 "``true``."
@@ -439,11 +440,11 @@ msgstr ""
 "Ensuite nous jouons l'animation de rechargement pour cette arme et nous "
 "retournons ``true``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:251
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:253
 msgid "If the player could not reload, we return ``false``."
 msgstr "Si le joueur ne peut pas recharger, nous retournons ``false``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:255
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:257
 msgid ""
 "Now we need to add reloading to the rifle. Open up ``Weapon_Rifle.gd`` and "
 "add the following class variables:"
@@ -451,7 +452,7 @@ msgstr ""
 "Maintenant nous avons besoin d'ajouter le rechargement du fusil. Ouvrez "
 "``Weapon_Rifle.gd`` et ajouter les variables de classe suivantes :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:264
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:266
 msgid ""
 "These variables are exactly the same as the pistol, just with "
 "``RELOADING_ANIM_NAME`` changed to the rifle's reloading animation."
@@ -459,17 +460,17 @@ msgstr ""
 "Ces variables sont exactement les mêmes que celles du pistolet, seul "
 "``RELOADING_ANIM_NAME`` change pour l'animation de rechargement du fusil."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:266
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:268
 msgid "Now we need to add ``reload_weapon`` to ``Weapon_Rifle.gd``:"
 msgstr ""
 "Maintenant nous avons besoin d'ajouter ``reload_weapon`` à ``Weapon_Riffle."
 "gd`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:295
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:297
 msgid "This code is exactly the same as the one for the pistol."
 msgstr "Ce code est exactement le même que celui pour le pistolet."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:299
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:301
 msgid ""
 "The last bit we need to do for the weapons is add 'reloading' to the knife. "
 "Add the following class variables to ``Weapon_Knife.gd``:"
@@ -478,7 +479,7 @@ msgstr ""
 "'rechargement' du couteau. Ajoutez les variables de classe suivantes à "
 "``Weapon_Knife.gd`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:308
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:310
 msgid ""
 "Since we both cannot reload or refill a knife, we set both constants to "
 "``false``. We also define ``RELOADING_ANIM_NAME`` as an empty string, since "
@@ -488,21 +489,21 @@ msgstr ""
 "``false`` les deux constantes. On définit aussi ``RELOADING_ANIM_NAME`` "
 "comme une chaîne vide, vu que le couteau n'a pas d'animation de rechargement."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:311
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:313
 msgid "Now we need to add ``reloading_weapon``:"
 msgstr "Maintenant nous devons ajouter ``reloading_weapon`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:318
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:320
 msgid "Since we cannot reload a knife, we always return ``false``."
 msgstr ""
 "Comme nous ne pouvons pas recharger un couteau, nous retournons toujours "
 "``false``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:321
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:323
 msgid "Adding reloading to the player"
 msgstr "Ajout du rechargement au joueur"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:323
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:325
 msgid ""
 "Now we need to add a few things to ``Player.gd``. First we need to define a "
 "new class variable:"
@@ -510,7 +511,7 @@ msgstr ""
 "Maintenant nous devons ajouter quelques choses à ``Player.gd``. D'abord nous "
 "devons définir une nouvelle variable de classe :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:329
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:331
 msgid ""
 "``reloading_weapon``: A variable to track whether or not the player is "
 "currently trying to reload."
@@ -518,13 +519,13 @@ msgstr ""
 "``reloading_weapon`` : Une variable pour traquer si le joueur essaie de "
 "recharger ou non."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:332
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:334
 msgid "Next we need to add another function call to ``_physics_process``."
 msgstr ""
 "Ensuite nous devons ajouter un nouvel appel de fonction à "
 "``_physics_process``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:334
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:336
 msgid ""
 "Add ``process_reloading(delta)`` to ``_physics_process``. Now "
 "``_physics_process`` should look something like this:"
@@ -532,7 +533,7 @@ msgstr ""
 "Ajoutez ``process_reloading(delta)`` à ``_physics_process``. Maintenant "
 "``_physics_process`` devrait ressembler à ça :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:345
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:347
 msgid ""
 "Now we need to add ``process_reloading``. Add the following function to "
 "``Player.gd``:"
@@ -540,16 +541,16 @@ msgstr ""
 "Maintenant nous devons ajouter ``process_reloading``.  Ajoutez la fonction "
 "suivante à ``Player.gd`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:356
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:407
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:358
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:409
 msgid "Let's go over what's happening here."
 msgstr "Voyons ce qui s'y passe."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:358
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:360
 msgid "Firstly, we check to make sure the player is trying to reload."
 msgstr "D'abord, on s'assure que le joueur essaie de recharger."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:360
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:362
 msgid ""
 "If the player is trying to reload, we then get the current weapon. If the "
 "current weapon does not equal ``null``, we call its ``reload_weapon`` "
@@ -559,7 +560,7 @@ msgstr ""
 "l'arme actuelle n'est pas à égale à ``null``, on appelle sa fonction "
 "``reload_weapon``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:362
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:364
 msgid ""
 "If the current weapon is equal to ``null``, then the current weapon is "
 "``UNARMED``."
@@ -567,7 +568,7 @@ msgstr ""
 "Si l'arme actuelle est égale à ``null``, alors l'arme actuelle est "
 "``UNARMED``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:364
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:366
 msgid ""
 "Finally, we set ``reloading_weapon`` to ``false`` because, regardless of "
 "whether the player successfully reloaded, we've tried reloading and no "
@@ -577,7 +578,7 @@ msgstr ""
 "compte du fait que le joueur aie correctement rechargé, nous avons essayé de "
 "recharger et nous n'avons plus besoin de continuer d'essayer."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:369
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:371
 msgid ""
 "Before we can let the player reload, we need to change a few things in "
 "``process_input``."
@@ -585,7 +586,7 @@ msgstr ""
 "Avant que l'on puisse laisser le joueur recharger, nous devons changer "
 "quelques choses dans ``process_input``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:371
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:373
 msgid ""
 "The first thing we need to change is in the code for changing weapons. We "
 "need to add an additional check (``if reloading_weapon == false:``) to see "
@@ -595,12 +596,12 @@ msgstr ""
 "d'armes. Nous avons besoin d'ajouter un autre test (``if reloading_weapon == "
 "false:``) pour voir si le joueur est en train de recharger :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:382
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:384
 msgid ""
 "This makes it so the player cannot change weapons if the player is reloading."
 msgstr "Cela permet d'empêcher le joueur de changer d'arme lorsqu'il recharge."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:384
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:386
 msgid ""
 "Now we need to add the code to trigger a reload when the player pushes the "
 "``reload`` action. Add the following code to ``process_input``:"
@@ -609,7 +610,7 @@ msgstr ""
 "lorsque le joueur appuie sur le bouton d'action ``reload``. Ajoutez le code "
 "suivant à ``process_input`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:409
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:411
 msgid ""
 "First we make sure the player is not reloading already, nor is the player "
 "trying to change weapons."
@@ -617,11 +618,11 @@ msgstr ""
 "D'abord on s'assure que le joueur n'est pas déjà en train de recharger, ou "
 "que le joueur essaie de changer d'arme."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:411
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:413
 msgid "Then we check to see if the ``reload`` action has been pressed."
 msgstr "Ensuite on vérifie si l'action ``reload`` à été pressée."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:413
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:415
 msgid ""
 "If the player has pressed ``reload``, we then get the current weapon and "
 "check to make sure it is not ``null``. Then we check to see whether the "
@@ -631,7 +632,7 @@ msgstr ""
 "et on vérifie qu'elle n'est pas ``null``. Ensuite on utilise la constante "
 "``CAN_RELOAD`` de l'arme  pour savoir si celle-ci peut recharger ou non."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:416
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:418
 msgid ""
 "If the weapon can reload, we then get the current animation state, and make "
 "a variable for tracking whether the player is already reloading or not."
@@ -640,7 +641,7 @@ msgstr ""
 "et faisons une variable pour traquer si le joueur est déjà en train de "
 "recharger ou pas."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:418
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:420
 msgid ""
 "We then go through every weapon to make sure the player is not already "
 "playing that weapon's reloading animation."
@@ -648,7 +649,7 @@ msgstr ""
 "On fait ensuite le tour de chaque arme pour s'assurer que le joueur n'est "
 "pas déjà en train de jouer l'animation de recharge de l'arme."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:420
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:422
 msgid ""
 "If the player is not reloading any weapon, we set ``reloading_weapon`` to "
 "``true``."
@@ -656,7 +657,7 @@ msgstr ""
 "Si le joueur n'est pas en train de recharger une arme, nous assignons "
 "``reloading_weapon`` à ``true``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:424
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:426
 msgid ""
 "One thing I like to add is where the weapon will reload itself if you try to "
 "fire it and it's out of ammo."
@@ -664,7 +665,7 @@ msgstr ""
 "Une chose que j'aime ajouter est le rechargement automatique de l'arme "
 "lorsque l'on essaye de tirer alors qu'elle est déchargée."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:426
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:428
 msgid ""
 "We also need to add an additional if check (``is_reloading_weapon == false:"
 "``) so the player cannot fire the current weapon while reloading."
@@ -673,7 +674,7 @@ msgstr ""
 "``) pour que le joueur ne puisse pas tirer avec son arme actuelle lorsqu'il "
 "recharge."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:429
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:431
 msgid ""
 "Let's change our firing code in ``process_input`` so it reloads when trying "
 "to fire an empty weapon:"
@@ -681,7 +682,7 @@ msgstr ""
 "Transformons notre code de tir en ``process_input`` afin que l'arme se "
 "recharge quand on essaye de tirer sans munitions dans le chargeur :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:447
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:449
 msgid ""
 "Now we check to make sure the player is not reloading before we fire the "
 "weapon, and when we have ``0`` or less ammo in the current weapon, we set "
@@ -692,7 +693,7 @@ msgstr ""
 "dans l'arme actuelle, nous assignons ``true`` à la variable "
 "``reloading_weapon`` si le joueur essaye de tirer."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:450
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:452
 msgid ""
 "This will make it so the player will try to reload when attempting to fire "
 "an empty weapon."
@@ -700,7 +701,7 @@ msgstr ""
 "De cette manière, le joueur va recharger lorsqu'il tentera de tirer avec une "
 "arme vide."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:454
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:456
 msgid ""
 "With that done, the player can now reload! Give it a try! Now you can fire "
 "all the spare ammo for each weapon."
@@ -708,11 +709,11 @@ msgstr ""
 "Ceci fait, le joueur peut maintenant recharger ! Essayez ! Maintenant, vous "
 "pouvez tirer toutes les munitions de rechange de l'arme."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:457
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:459
 msgid "Adding sounds"
 msgstr "Ajouter des sons"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:459
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:461
 msgid ""
 "Finally, let's add some sounds that accompany the player firing, reloading "
 "and changing weapons."
@@ -720,7 +721,7 @@ msgstr ""
 "Enfin, ajoutons quelques sons qui vont accompagner le rechargement, le tir "
 "et le changement d'arme."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:461
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:463
 msgid ""
 "There are no game sounds provided in this tutorial (for legal reasons). "
 "https://gamesounds.xyz/ is a collection of **\"royalty free or public domain "
@@ -733,7 +734,7 @@ msgstr ""
 "le Gamemaster's Gun Sound Pack qui peut être trouvé dans le Sonniss.com GDC "
 "2017 Game Audio Bundle."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:465
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:467
 msgid ""
 "Open up ``Simple_Audio_Player.tscn``. It is simply a :ref:`Spatial "
 "<class_Spatial>` with an :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` "
@@ -743,7 +744,7 @@ msgstr ""
 "<class_Spatial>` avec un :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` "
 "comme enfant."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:467
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:469
 msgid ""
 "The reason this is called a 'simple' audio player is because we are not "
 "taking performance into account and because the code is designed to provide "
@@ -753,7 +754,7 @@ msgstr ""
 "fait que nous ne prenons pas en compte les performances et parce que le code "
 "est conçu pour fournir du son de la manière la plus simple possible."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:470
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:472
 msgid ""
 "If you want to use 3D audio, so it sounds like it's coming from a location "
 "in 3D space, right click the :ref:`AudioStreamPlayer "
@@ -763,7 +764,7 @@ msgstr ""
 "vient d'un espace 3D, cliquez droit sur le :ref:`AudioStreamPlayer "
 "<class_AudioStreamPlayer>` et sélectionnez \"Change type\"."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:473
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:475
 msgid ""
 "This will open the node browser. Navigate to :ref:`AudioStreamPlayer3D "
 "<class_AudioStreamPlayer3D>` and select \"change\". In the source for this "
@@ -779,7 +780,7 @@ msgstr ""
 "`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` si vous le souhaitez. Le "
 "code fourni ci-dessous fonctionnera indépendamment duquel vous choisirez."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:478
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:480
 msgid ""
 "Create a new script and call it ``Simple_Audio_Player.gd``. Attach it to "
 "the :ref:`Spatial <class_Spatial>` in ``Simple_Audio_Player.tscn`` and "
@@ -789,7 +790,7 @@ msgstr ""
 "le à :ref:`Spatial <class_Spatial>` dans ``Simple_Audio_Player.tscn`` et "
 "insérez le code suivant :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:530
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:532
 msgid ""
 "By setting ``position`` to ``null`` by default in ``play_sound``, we are "
 "making it an optional argument, meaning ``position`` doesn't necessarily "
@@ -799,11 +800,11 @@ msgstr ""
 "faisons un argument facultatif, signifiant que ``position`` n'a pas "
 "nécessairement besoin d'être passé en paramètre pour appeler ``play_sound``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:533
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:535
 msgid "Let's go over what's happening here:"
 msgstr "Voyons ce qui se passe ici :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:537
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:539
 msgid ""
 "In ``_ready``, we get the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` "
 "and connect its ``finished`` signal to the ``destroy_self`` function. It "
@@ -820,7 +821,7 @@ msgstr ""
 "signal ``finished``. Pour s'assurer qu'il ne joue pas de sons, nous appelons "
 "``stop`` sur le :ref:`AudioStreamPlayer <class_AudioStreamPlayer>`."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:541
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:543
 msgid ""
 "Make sure your sound files are **not** set to loop! If it is set to loop, "
 "the sounds will continue to play infinitely and the script will not work!"
@@ -829,7 +830,7 @@ msgstr ""
 "c'est le cas, les sons continueront de jouer à l'infini et ne script ne "
 "marchera pas !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:544
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:546
 msgid ""
 "The ``play_sound`` function is what we will be calling from ``Player.gd``. "
 "We check if the sound is one of the three possible sounds, and if it is one "
@@ -841,7 +842,7 @@ msgstr ""
 "c'est l'un des trois sons, nous réglons le flux audio dans :ref:"
 "`AudioStreamPlayer <class_AudioStreamPlayer>` au son correct."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:548
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:550
 msgid ""
 "If it is an unknown sound, we print an error message to the console and free "
 "the audio player."
@@ -849,7 +850,7 @@ msgstr ""
 "Si c'est un son inconnu, nous affichons un message d'erreur dans la console "
 "et on libère le lecteur audio."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:550
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:552
 msgid ""
 "If you are using an :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>`, "
 "remove the ``#`` to set the position of the audio player node so it plays at "
@@ -859,7 +860,7 @@ msgstr ""
 "supprimez le ``#`` pour définir la position du nœud du lecteur audio afin "
 "qu'il joue à la bonne position."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:553
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:555
 msgid ""
 "Finally, we tell the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` to "
 "play."
@@ -867,7 +868,7 @@ msgstr ""
 "Enfin, nous disons au :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` de "
 "jouer."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:555
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:557
 msgid ""
 "When the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` is finished "
 "playing the sound, it will call ``destroy_self`` because we connected the "
@@ -880,12 +881,12 @@ msgstr ""
 "`AudioStreamPlayer <class_AudioStreamPlayer>` et libérons le lecteur audio "
 "pour économiser des ressources."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:559
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:561
 msgid "This system is extremely simple and has some major flaws:"
 msgstr ""
 "Ce système est extrêmement simple et présente quelques défauts majeurs :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:561
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:563
 msgid ""
 "One flaw is we have to pass in a string value to play a sound. While it is "
 "relatively simple to remember the names of the three sounds, it can be "
@@ -900,7 +901,7 @@ msgstr ""
 "conteneur avec des variables exposés afin de ne pas avoir à retenir le(s) "
 "nom(s) de chaque son que nous voulons jouer."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:566
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:568
 msgid ""
 "Another flaw is we cannot play looping sounds effects, nor background music, "
 "easily with this system. Because we cannot play looping sounds, certain "
@@ -915,7 +916,7 @@ msgstr ""
 "de si oui ou non il y a un effet sonore et si oui ou non nous avons besoin "
 "de continuer à le jouer."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:571
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:573
 msgid ""
 "One of the biggest flaws with this system is we can only play sounds from "
 "``Player.gd``. Ideally we'd like to be able to play sounds from any script "
@@ -925,7 +926,7 @@ msgstr ""
 "des sons provenant du ``Player.gd``. Idéalement, nous aimerions pouvoir "
 "jouer des sons provenant de n'importe quel script à tout moment."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:576
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:578
 msgid ""
 "With that done, let's open up ``Player.gd`` again. First we need to load the "
 "``Simple_Audio_Player.tscn``. Place the following code in the class "
@@ -935,7 +936,7 @@ msgstr ""
 "``Simple_Audio_Player.tscn``. Placez le code suivant dans la section des "
 "variables de classe du script :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:583
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:585
 msgid ""
 "Now we need to instance the simple audio player when we need it, and then "
 "call its ``play_sound`` function and pass the name of the sound we want to "
@@ -947,11 +948,11 @@ msgstr ""
 "nom du son que nous voulons jouer. Pour simplifier le processus, créons une "
 "fonction ``create_sound`` dans ``Player.gd`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:595
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:597
 msgid "Let's walk through what this function does:"
 msgstr "Passons en revue ce que cette fonction fait :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:599
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:601
 msgid ""
 "The first line instances the ``Simple_Audio_Player.tscn`` scene and assigns "
 "it to a variable named ``audio_clone``."
@@ -959,7 +960,7 @@ msgstr ""
 "La première ligne instancie la scène ``Simple_Audio_Player.tscn``et "
 "l'assigne à une variable appelée ``audio_clone``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:602
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:604
 msgid ""
 "The second line gets the scene root, and this has a large (though safe) "
 "assumption."
@@ -967,7 +968,7 @@ msgstr ""
 "La seconde ligne récupère la racine de la scène et fait une grosse (bien que "
 "sûre) supposition."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:604
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:606
 msgid ""
 "We first get this node's :ref:`SceneTree <class_SceneTree>`, and then access "
 "the root node, which in this case is the :ref:`Viewport <class_Viewport>` "
@@ -986,7 +987,7 @@ msgstr ""
 "premier enfant du nœud source est la scène source sur laquelle se situe le "
 "joueur, ce qui n'est pas tout le temps le cas**."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:610
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:612
 msgid ""
 "If this doesn't make sense to you, don't worry too much about it. The second "
 "line of code only does not work reliably if you have multiple scenes loaded "
@@ -1001,7 +1002,7 @@ msgstr ""
 "série de tutoriels. C'est un potentiel problème suivant la façon dont vous "
 "gérez le chargement de scène."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:614
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:616
 msgid ""
 "The third line adds our newly created ``Simple_Audio_Player`` scene to be a "
 "child of the scene root. This works exactly the same as when we are spawning "
@@ -1011,7 +1012,7 @@ msgstr ""
 "``Simple_Audio_Player`` comme enfant de la scène source. Cela fonctionne "
 "exactement de la même façon que l'apparition des balles."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:617
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:619
 msgid ""
 "Finally, we call the ``play_sound`` function and pass in the arguments "
 "passed in to ``create_sound``. This will call ``Simple_Audio_Player.gd``'s "
@@ -1022,7 +1023,7 @@ msgstr ""
 "``play_sound`` de ``Simple_Audio_Player.gd``avec les arguments passés en "
 "paramètre."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:622
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:624
 msgid ""
 "Now all that is left is playing the sounds when we want to. Let's add sound "
 "to the pistol first!"
@@ -1030,11 +1031,11 @@ msgstr ""
 "Maintenant, tout ce qu'il reste à faire c'est de jouer les sons quand nous "
 "le voulons. Ajoutons d'abord du son pour le pistolet d'abord !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:624
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:626
 msgid "Open up ``Weapon_Pistol.gd``."
 msgstr "Ouvrez ``Weapon_Pistol.gd``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:626
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:628
 msgid ""
 "Now, we want to make a noise when the player fires the pistol, so add the "
 "following to the end of the ``fire_weapon`` function:"
@@ -1042,15 +1043,15 @@ msgstr ""
 "Le but maintenant est de faire du bruit quand le joueur tire au pistolet. "
 "Ajoutez donc ce qui suit à la fin de la fonction ``fire_weapon`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:632
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:634
 msgid ""
 "Now when the player fires the pistol, we'll play the ``Pistol_shot`` sound."
 msgstr ""
 "Désormais, quand le joueur va tirer au pistolet, nous jouerons le son "
 "``Pistol_shot``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:634
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:656
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:636
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:658
 msgid ""
 "To make a sound when the player reloads, we need to add the following right "
 "under ``player_node.animation_manager.set_animation(RELOADING_ANIM_NAME)`` "
@@ -1060,17 +1061,17 @@ msgstr ""
 "suit juste en dessous de ``player_node.animation_manager."
 "set_animation(RELOADING_ANIM_NAME)``dans la fonction ``reload_weapon`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:641
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:663
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:643
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:665
 msgid "Now when the player reloads, we'll play the ``Gun_cock`` sound."
 msgstr ""
 "Désormais, quand le joueur rechargera, nous jouerons le son ``Gun_cock``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:645
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:647
 msgid "Now let's add sounds to the rifle. Open up ``Weapon_Rifle.gd``."
 msgstr "Ajoutons maintenant du son pour le fusil. Ouvrez ``Weapon_Rifle.gd``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:648
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:650
 msgid ""
 "To play sounds when the rifle is fired, add the following to the end of the "
 "``fire_weapon`` function:"
@@ -1078,25 +1079,25 @@ msgstr ""
 "Afin de jouer un son quand le fusil tire, ajoutez ce qui suit à la fin de la "
 "fonction ``fire_weapon`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:654
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:656
 msgid ""
 "Now when the player fires the rifle, we'll play the ``Rifle_shot`` sound."
 msgstr ""
 "Désormais, quand le joueur tire au fusil, nous jouerons le son "
 "``Rifle_shot``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:666
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:668
 msgid "Final notes"
 msgstr "Notes finales"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:670
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:672
 msgid ""
 "Now you have weapons with limited ammo that play sounds when you fire them!"
 msgstr ""
 "Maintenant, vous avez des armes avec des munitions limités qui jouent des "
 "sons quand vous tirez avec !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:672
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:674
 msgid ""
 "At this point, we have all the basics of an FPS game working. There are "
 "still a few things that would be nice to add, and we're going to add them in "
@@ -1106,7 +1107,7 @@ msgstr ""
 "Nous pourrions cependant ajouter quelques améliorations, et c'est ce que "
 "nous allons faire dans les trois prochaines parties !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:675
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:677
 msgid ""
 "For example, right now we have no way to add ammo to our spares, so we'll "
 "eventually run out. Also, we don't have anything to shoot at outside of the :"
@@ -1116,7 +1117,7 @@ msgstr ""
 "à notre stock, nous allons donc finir par en manquer. aussi, nous rien sur "
 "quoi tirer à part les nœuds :ref:`RigidBody <class_RigidBody>`."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:678
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:680
 msgid ""
 "In :ref:`doc_fps_tutorial_part_four` we'll add some targets to shoot at, "
 "along with some health and ammo pick ups! We're also going to add joypad "
@@ -1127,11 +1128,11 @@ msgstr ""
 "vie et des munitions ! Nous allons également ajouter le support des manettes "
 "afin que nous puissions jouer avec des manettes Xbox 360 filaires !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:681
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:683
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr "Si jamais vous vous perdez, n'oubliez pas de relire le code !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:683
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:685
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_3.zip <files/Godot_FPS_Part_3.zip>`"

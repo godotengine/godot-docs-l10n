@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,41 +39,147 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:17
-msgid "Submitting"
+msgid "Submission guidelines"
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:19
+msgid ""
+"Before submitting your asset, please ensure it follows all of the "
+"requirements, and also consider following the recommendations."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:23
+msgid "Requirements"
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:25
+msgid ""
+"Generally speaking, most assets people submit to the asset library are "
+"accepted. However, in order for your asset to be accepted, there are a few "
+"requirements your asset needs to meet to be approved."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:29
+msgid ""
+"The asset must work. If the asset doesn't run or otherwise doesn't work in "
+"the specified Godot version, then it will be rejected."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:32
+msgid ""
+"No submodules, or any submodules must be non-essential. GitHub does not "
+"include submodules in the downloaded ZIP file, so if the asset needs the "
+"contents of the submodule, your asset won't work."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:36
+msgid ""
+"The license needs to be correct. The license listed on the asset library "
+"must match the license in the repository."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:39
+msgid ""
+"Do not set the download commit to \"master\". The asset library validates "
+"all assets with a SHA256 hash, so the version hosted on GitHub needs to be "
+"*exactly* the same. Instead of \"master\", either specify a commit hash, or "
+"tag versions and specify a version number."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:44
+msgid ""
+"Use proper English for the name and description of your asset. This includes "
+"using correct capitalization, and using full sentences in the description."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:48
+msgid ""
+"The icon link must be a direct link. For icons hosted on GitHub, the link "
+"must start with \"raw.githubusercontent.com\", not \"github.com\"."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:52
+#, fuzzy
+msgid "Recommendations"
+msgstr "Kommentare"
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:54
+msgid ""
+"These things are not required for your asset to be approved, but if you "
+"follow these recommendations, you can help make the asset library a better "
+"place for all users."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:58
+msgid ""
+"Fix or suppress all script warnings. The warning system is there to help "
+"identify issues with your code, but people using your asset don't need to "
+"see them."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:62
+msgid ""
+"Make your code conform to the official style guides. Having a consistent "
+"style helps other people read your code, and it also helps if other people "
+"wish to contribute to your asset. See: the :ref:`doc_gdscript_styleguide` or "
+"the :ref:`doc_c_sharp_styleguide`."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:67
+msgid ""
+"If your asset is a library for working with other files, consider including "
+"example files in the asset."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:70
+msgid ""
+"The icon should be a square, its aspect ratio should be 1:1. It should also "
+"ideally have a minimum resolution of 64x64 pixels."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:73
+msgid ""
+"While the asset library allows more than just GitHub, consider hosting your "
+"asset's source code on GitHub. Other services may not work reliably, and a "
+"lack of familiarity can be a barrier to contributors."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:78
+msgid "Submitting"
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:80
 msgid ""
 "Once you are logged in, you will be able to head over to the \"Submit Assets"
 "\" page of the AssetLib, which will look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:22
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:83
 msgid "|image0|"
 msgstr "|image0|"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:24
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:85
 msgid ""
 "While it may look like a lot (and there is more as you scroll down), each "
 "field is described in terms of what you should put in. We will nonetheless "
 "go over what is required in the submission form here as well."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:29
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:90
 msgid "**Asset Name**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:29
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:90
 msgid ""
 "The name of your asset. Should be a unique, descriptive title of what your "
 "asset is."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:35
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:96
 msgid "**Category**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:32
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:93
 msgid ""
 "The category that your asset belongs to, and will be shown in search "
 "results. The category is split into **Addons** and **Projects**. In-editor, "
@@ -82,11 +188,11 @@ msgid ""
 "type will only be visible from inside a project."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:41
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:102
 msgid "**Godot version**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:38
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:99
 msgid ""
 "The version of the engine that the asset works with. Currently, it's not "
 "possible to have a single asset entry contain downloads for multiple engine "
@@ -96,11 +202,11 @@ msgid ""
 "3.x."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:48
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:109
 msgid "**Version**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:44
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:105
 msgid ""
 "The version number of the asset. While you are free to choose and use any "
 "versioning scheme that you like, you may want to look into something such as "
@@ -109,11 +215,11 @@ msgid ""
 "incremented every time the asset download URL is changed or updated."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:53
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:114
 msgid "**Repository host**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:51
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:112
 msgid ""
 "Assets uploaded to the AssetLib are not hosted on it directly. Instead, they "
 "point to repositories hosted on third-party Git providers, such as GitHub, "
@@ -121,22 +227,22 @@ msgid ""
 "uses, so the site can compute the final download link."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:56
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:117
 msgid "**Repository URL**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:56
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:117
 msgid ""
 "The URL to your asset's files/webpage. This will vary based on your choice "
 "of provider, but it should look similar to `https://github.com/<user>/"
 "<project>`."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:61
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:122
 msgid "**Issues URL**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:59
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:120
 msgid ""
 "The URL to your asset's issue tracker. Again, this will differ from "
 "repository host to repository host, but will likely look similar to `https://"
@@ -144,33 +250,33 @@ msgid ""
 "use your provider's issue tracker, and it's part of the same repository."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:65
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:126
 msgid "**Download Commit/Tag**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:64
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:125
 msgid ""
 "The commit or tag of the asset. For example, "
 "`b1d3172f89b86e52465a74f63a74ac84c491d3e1` or `v1.0`. The site computes the "
 "actual download URL from this."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:69
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:130
 msgid "**Icon URL**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:68
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:129
 msgid ""
 "The URL to your asset's icon (which will be used as a thumbnail in the "
 "AssetLib search results and on the asset's page). Should be an image in "
 "either the PNG or JPG format."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:74
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:135
 msgid "**License**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:72
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:133
 msgid ""
 "The license under which you are distributing the asset. The list includes a "
 "variety of free and open-source software licenses, such as GPL (v2 and v3), "
@@ -178,11 +284,11 @@ msgid ""
 "opensource.org>`_ for a detailed description of each of the listed licenses."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:80
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:141
 msgid "**Description**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:77
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:138
 msgid ""
 "Finally, you can use the Description field for a textual overview of your "
 "asset, its features and behavior, a changelog, et cetera. In the future, "
@@ -190,41 +296,41 @@ msgid ""
 "is plain text."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:82
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:143
 msgid ""
 "You may also include up to three video and/or image previews, which will be "
 "shown at the bottom of the asset page. Use the \"Enable\" checkbox on each "
 "of the preview submission boxes to enable them."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:86
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:147
 msgid "**Type**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:87
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:148
 msgid "Either an image, or a video."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:88
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:149
 msgid "**Image/YouTube URL**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:89
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:150
 msgid "Either a link to the image, or to a video, hosted on YouTube."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:93
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:154
 msgid "**Thumbnail URL**:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:91
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:152
 msgid ""
 "A URL to an image that will be used as a thumbnail for the preview. This "
 "option will be removed eventually, and thumbnails will be automatically "
 "computed instead."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:95
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:156
 msgid ""
 "Once you are done, hit Submit. Your asset will be entered into the pending "
 "queue, which you can visit on the AssetLib `here <https://godotengine.org/"
@@ -236,12 +342,4 @@ msgid ""
 "accelerating the approval process by messaging the moderators/assetlib "
 "reviewers on IRC (the #godotengine-atelier channel on Freenode), or the "
 "official Discord server."
-msgstr ""
-
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:106
-msgid "Submission guidelines"
-msgstr ""
-
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:108
-msgid "[TODO]"
 msgstr ""

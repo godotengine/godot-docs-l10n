@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,8 +42,8 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:18
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:39
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:213
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:247
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:303
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:356
 msgid "References"
 msgstr ""
 
@@ -52,10 +52,13 @@ msgid ":ref:`ResourceLoader<class_resourceloader>`"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:358
+#, fuzzy
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
-"master/core/io/resource_loader.cpp#L258>`__"
+"master/core/io/resource_loader.cpp>`_"
 msgstr ""
+"Dê um Fork `Repositório do  Godot<https://github.com/godotengine/godot>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:24
 msgid "What for?"
@@ -90,10 +93,12 @@ msgid "ImageFormatLoader should be used to load images."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:41
+#, fuzzy
 msgid ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
-"core/io/image_loader.h>`__"
+"core/io/image_loader.h>`_"
 msgstr ""
+"Dê um Fork `Repositório do  Godot<https://github.com/godotengine/godot>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:45
 msgid "Creating a ResourceFormatLoader"
@@ -118,71 +123,90 @@ msgid ""
 "handle data serialization."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:110
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:109
+#, fuzzy
+msgid "Creating a ResourceFormatSaver"
+msgstr "Criando um projeto"
+
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:111
+msgid ""
+"If you'd like to be able to edit and save a resource, you can implement a "
+"``ResourceFormatSaver``:"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:158
 #, fuzzy
 msgid "Creating custom data types"
 msgstr "Criando nós"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:112
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:160
 msgid ""
 "Godot may not have a proper substitute within its :ref:`doc_core_types` or "
 "managed resources. Godot needs a new registered data type to understand "
 "additional binary formats such as machine learning models."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:116
-msgid "Here is an example of how to create a custom datatype"
-msgstr ""
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:164
+#, fuzzy
+msgid "Here is an example of creating a custom datatype:"
+msgstr "Segue abaixo um exemplo de arquivo de uma classe."
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:174
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:262
 msgid "Considerations"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:176
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:264
 msgid ""
 "Some libraries may not define certain common routines such as IO handling. "
 "Therefore, Godot call translations are required."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:179
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:267
 msgid ""
 "For example, here is the code for translating ``FileAccess`` calls into "
 "``std::istream``."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:215
-msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`__"
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:305
+msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:216
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:306
 msgid ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
-"kw=streambuf>`__"
+"kw=streambuf>`_"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:217
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:307
+#, fuzzy
 msgid ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
-"os/file_access.h>`__"
+"os/file_access.h>`_"
 msgstr ""
+"Dê um Fork `Repositório do  Godot<https://github.com/godotengine/godot>`_"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:220
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:310
 #, fuzzy
 msgid "Registering the new file format"
 msgstr "Uso na GDScript"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:222
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:312
 msgid ""
 "Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. "
 "The handler selects the proper loader automatically when ``load`` is called."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:249
-msgid ""
-"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
-"master/core/io/resource_loader.cpp#L280>`__"
-msgstr ""
-
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:252
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:361
 msgid "Loading it on GDScript"
 msgstr ""
+
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:363
+msgid ""
+"Save a file called ``demo.json`` with the following contents and place it in "
+"the project's root folder:"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:379
+#, fuzzy
+msgid "Then attach the following script to any node::"
+msgstr "Existem as seguintes ressalvas:"

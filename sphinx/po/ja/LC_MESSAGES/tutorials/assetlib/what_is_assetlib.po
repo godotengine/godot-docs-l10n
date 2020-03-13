@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
-msgstr ""
+msgstr "アセットライブラリについて"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:6
 msgid ""
@@ -29,6 +29,11 @@ msgid ""
 "download directly from within the engine, but it can also be accessed at "
 "Godot's `official website <https://godotengine.org/asset-library/asset>`_."
 msgstr ""
+"AssetLibとも呼ばれるGodotアセットライブラリは、ユーザーが送信したGodotアドオ"
+"ン、スクリプト、ツール、その他のリソースのリポジトリであり、まとめてアセット"
+"と呼ばれます。すべてのGodotユーザーはエンジン内から直接ダウンロードできます"
+"が、Godotの `official website <https://godotengine.org/asset-library/"
+"asset>`_ からもアクセスできます。"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:11
 msgid ""
@@ -39,6 +44,11 @@ msgid ""
 "distributed under non-free, proprietary licenses, limiting what you can do "
 "with them."
 msgstr ""
+"表面的には、アセットライブラリは、UnityのAsset StoreやUnreal Engineの"
+"Marketplaceなど、他のエンジンで利用可能なアセットストアに似た外観と機能を持"
+"ち、無料で利用可能なアセットと有料の商用アセットの両方を送信できます。さら"
+"に、多くの場合、そのようなアセットは非フリーの専有ライセンスの下で配布され、"
+"それらでできることを制限します。"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:17
 msgid ""
@@ -47,6 +57,10 @@ msgid ""
 "and the Boost Software License). This makes the AssetLib more similar to the "
 "software repositories of a Linux distribution."
 msgstr ""
+"Godotのアセットライブラリは異なります。すべてのアセットは無料で配布され、多数"
+"のオープンソースライセンス(MITライセンス、GPL、Boost Softwareライセンスなど)"
+"の下で配布されます。これにより、AssetLibはLinuxディストリビューションのソフト"
+"ウェアリポジトリにより類似したものになります。"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:21
 msgid ""
@@ -54,6 +68,8 @@ msgid ""
 "Godot, and on the website), how you can submit your own assets, and what the "
 "guidelines for submission are."
 msgstr ""
+"この一連のページでは、AssetLibの使用方法(Godot内とWebサイトの両方)、独自のア"
+"セットの送信方法、および送信のガイドラインについて説明します。"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:24
 msgid ""
@@ -63,18 +79,49 @@ msgid ""
 "asset-library>`_, where you can submit pull requests and issues, so please "
 "do not hesitate to visit it!"
 msgstr ""
+"AssetLibは比較的新しいものであることに注意してください - さまざまな問題、バ"
+"グ、使いやすさの問題がある可能性があります。すべてのGodotプロジェクトと同様"
+"に、コードリポジトリはGitHubで利用できます。ここではプルリクエストと発生した"
+"問題を送信できますので、お気軽にアクセスしてください！"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
+#, fuzzy
+msgid "Types of assets"
+msgstr "型キャスト(TypeCast)"
+
+#: ../../docs/tutorials/assetlib/what_is_assetlib.rst:31
+msgid ""
+"Be aware that there are, broadly, two different types of assets you can post."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/what_is_assetlib.rst:33
+msgid ""
+"Assets labeled as \"Templates\", \"Projects\", or \"Demos\" appear under the "
+"\"Templates\" tab in the Godot project manager. These assets are standalone "
+"Godot projects that can run by themselves."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/what_is_assetlib.rst:37
+msgid ""
+"Other assets show up inside of the Godot editor under the \"AssetLib\" main "
+"screen tab, next to \"2D\", \"3D\", and \"Script\". These assets are meant "
+"to be downloaded and placed into an existing Godot project."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/what_is_assetlib.rst:42
 msgid "Frequently asked questions"
 msgstr "よくある質問"
 
-#: ../../docs/tutorials/assetlib/what_is_assetlib.rst:32
+#: ../../docs/tutorials/assetlib/what_is_assetlib.rst:45
 msgid "Can paid assets be uploaded to the asset library?"
-msgstr ""
+msgstr "有料アセットをアセットライブラリにアップロードできますか？"
 
-#: ../../docs/tutorials/assetlib/what_is_assetlib.rst:34
+#: ../../docs/tutorials/assetlib/what_is_assetlib.rst:47
 msgid ""
 "Not to the official one, though in the future, there might be other asset "
 "libraries which allow it. That said, you are allowed to monetize and sell "
 "Godot assets outside the Asset Library."
 msgstr ""
+"公式のものではありませんが、将来的にはそれを可能にする他のアセットライブラリ"
+"が出来るかもしれません。ただし、アセットライブラリの外部でGodotアセットを収益"
+"化および販売することができます。"

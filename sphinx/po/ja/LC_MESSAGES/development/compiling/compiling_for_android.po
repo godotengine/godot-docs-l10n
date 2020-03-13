@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,9 @@ msgid ""
 "enough. Compiling the Android APK manually is mostly useful for custom "
 "builds or custom packages for the deployer."
 msgstr ""
+"たいていの場合、デプロイヤーとエクスポートテンプレートはビルトインのもので十"
+"分です。Android APKを手動でコンパイルするのは、デプロイヤーのためにカスタムビ"
+"ルドやカスタムパッケージを用意する場合がほとんどです。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:15
 msgid ""
@@ -38,6 +41,8 @@ msgid ""
 "`doc_exporting_for_android` tutorial before attempting to build a custom "
 "export template."
 msgstr ""
+"また、カスタムのエクスポート テンプレートを作成するときでも、チュートリアル"
+"\\ :ref:`doc_exporting_for_android`\\ のステップを追う必要があります。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:20
 msgid "Requirements"
@@ -50,27 +55,32 @@ msgstr "Windows、Linux、またはmacOSでコンパイルするには、次の�
 #: ../../docs/development/compiling/compiling_for_android.rst:24
 msgid "`Python 2.7+ or Python 3.5+ <https://www.python.org/downloads/>`_"
 msgstr ""
+"`Python 2.7以上 あるいは Python 3.5以上 <https://www.python.org/downloads/>`_"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:25
 msgid "`SCons <https://scons.org/pages/download.html>`_ build system"
-msgstr ""
+msgstr "`SCons <https://scons.org/pages/download.html>`_ ビルドシステム"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:26
 msgid ""
 "`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
 "(command-line tools are sufficient)"
 msgstr ""
+"`Android SDK <https://developer.android.com/studio/#command-tools>`_ (コマン"
+"ドライン ツールで十分です)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:28
 msgid ""
 "Required SDK components will be automatically installed by Gradle (except "
 "the NDK)"
 msgstr ""
+"必要なSDKのコンポーネントは、Gradleにより自動的にインストールされます (NDKを"
+"除く)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:30
 msgid ""
 "`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 or later"
-msgstr ""
+msgstr "`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17以降"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:31
 msgid "Gradle (will be downloaded and installed automatically if missing)"
@@ -79,23 +89,27 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:32
 msgid "JDK 8 (either OpenJDK or Oracle JDK)"
-msgstr ""
+msgstr "JDK 8 (OpenJDK あるいは Oracle JDK のどちらか)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:34
 msgid "JDK 9 or later are not currently supported"
-msgstr ""
+msgstr "JDK 9以降は、現在はまだサポートされていません"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:35
 msgid ""
 "You can download a build from `ojdkbuild <https://github.com/ojdkbuild/"
 "ojdkbuild>`_"
 msgstr ""
+"ビルドされたものが `ojdkbuild <https://github.com/ojdkbuild/ojdkbuild>`_ にて"
+"ダウンロードできます"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:37
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
+"Godotにおける基本的なSconsの使い方については、\\ :ref:"
+"`doc_introduction_to_the_buildsystem`\\ を参照してください。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:41
 msgid "Setting up the buildsystem"
@@ -111,6 +125,13 @@ msgid ""
 "This can be done by running the following command from the root of the SDK "
 "directory, then answering all the prompts with ``y``:"
 msgstr ""
+"環境変数 ``ANDROID_HOME`` として、Android SDKの場所を指定してください。もし"
+"Androidコマンドライン ツールをダウンロードしたなら、ZIPアーカイブを解凍した中"
+"身のあるフォルダを指定します。そのあと、\\ ``gradlew`` は必要なSDKコンポーネ"
+"ントをこのフォルダにインストールします。ただし、Gradleでダウンロードする前"
+"に、SDKコンポーネントのライセンスに同意する必要があります。これは下記のコマン"
+"ドをSDKディレクトリのルートで実行し、出てきたプロンプトのすべてに ``y`` で答"
+"えれば完了します。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:57
 msgid ""
@@ -120,13 +141,22 @@ msgid ""
 "Gradle plugins rely on the NDK and use this variable to determine its "
 "location."
 msgstr ""
+"環境変数 ``ANDROID_NDK_ROOT`` をAndroid NDKの場所に設定します。ひょっとした"
+"ら、特にカスタムのAndroidモジュールを使用しているときは、変数\\ "
+"``ANDROID_NDK_HOME`` も同じパスに設定する必要があるかもしれません。この変数で"
+"NDKの場所を確認するGradleプラグインもいくつかあるためです。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:63
+#, fuzzy
 msgid ""
-"To set those environment variables on Windows, press **Windows + R**, type "
-"\"control system\", then click on **Advanced system settings** in the left "
-"pane, then click on **Environment variables** on the window that appears."
+"To set those environment variables on Windows, press :kbd:`Windows + R`, "
+"type \"control system\", then click on **Advanced system settings** in the "
+"left pane, then click on **Environment variables** on the window that "
+"appears."
 msgstr ""
+"Windowsでこれらの環境変数を設定するには、\\ **Windows + R** を押し"
+"て、\"control system\" と打ち、左のペインから **システムの詳細設定** をクリッ"
+"クし、さらに現れたウィンドウの **環境変数** をクリックします。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:68
 msgid ""
@@ -135,6 +165,10 @@ msgid ""
 "android-ndk`` where ``/path/to/android-sdk`` and ``/path/to/android-ndk`` "
 "point to the root of the SDK and NDK directories."
 msgstr ""
+"LinuxやmacOSで環境変数を設定するには、\\ ``export ANDROID_HOME=/path/to/"
+"android-sdk`` および ``export ANDROID_NDK_ROOT=/path/to/android-ndk`` を使用"
+"し、 ``/path/to/android-sdk`` と ``/path/to/android-ndk`` はそれぞれSDKとNDK"
+"のルート ディレクトリを指定します。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:75
 msgid "Building the export templates"
@@ -148,33 +182,44 @@ msgid ""
 "starting from August 2019, the commands below will build an APK containing "
 "both ARMv7 and ARMv8 libraries."
 msgstr ""
+"Godotには、Android用の2つのエクスポートテンプレートが必要です。最適化された "
+"\"release\" テンプレート(``android_release.apk``)とデバッグテンプレート "
+"(``android_debug.apk``)です。 Googleは2019年8月からすべてのAPKにARMv8(64ビッ"
+"ト)ライブラリを含めることを要求するため、以下のコマンドはARMv7およびARMv8ライ"
+"ブラリの両方を含むAPKを構築します。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:83
 msgid ""
 "Compiling the standard export templates is done by calling SCons with the "
 "following arguments:"
 msgstr ""
+"標準エクスポートテンプレートのコンパイルは、SConsを次の引数で呼び出して実行さ"
+"れます:"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:86
 msgid ""
 "Release template (used when exporting with **Debugging Enabled** unchecked)"
 msgstr ""
+"リリーステンプレート(**Debugging Enabled** をオフにしてエクスポートするときに"
+"使用)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:99
 msgid "The resulting APK will be located at ``bin/android_release.apk``."
-msgstr ""
+msgstr "得られたAPKは ``bin/android_release.apk`` にあります。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:101
 msgid "Debug template (used when exporting with **Debugging Enabled** checked)"
 msgstr ""
+"デバッグテンプレート(**Debugging Enabled** をオンにしてエクスポートするときに"
+"使用)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:114
 msgid "The resulting APK will be located at ``bin/android_debug.apk``."
-msgstr ""
+msgstr "得られたAPKは ``bin/android_debug.apk`` にあります。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:117
 msgid "Adding support for x86 devices"
-msgstr "\\ x86デバイスのサポートの追加"
+msgstr "x86デバイスのサポートの追加"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:119
 msgid ""
@@ -182,6 +227,9 @@ msgid ""
 "third time with the ``android_arch=x86`` argument before building the APK "
 "with Gradle. For example, for the release template:"
 msgstr ""
+"x86デバイスのサポートも含める場合は、GradleでAPKをビルドする前に、\\ "
+"``android_arch=x86`` 引数を指定してSConsコマンドを3回実行します。たとえば、リ"
+"リーステンプレートの場合:"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:135
 msgid ""
@@ -190,6 +238,10 @@ msgid ""
 "when exporting; in other words, unused platforms will be removed from the "
 "APK."
 msgstr ""
+"これにより、すべてのプラットフォームで機能するファットバイナリが作成されま"
+"す。エクスポートされたプロジェクトの最終的なAPKサイズは、エクスポート時にサ"
+"ポートすることを選択したプラットフォームによって異なります。つまり、未使用の"
+"プラットフォームはAPKから削除されます。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:141
 msgid "Cleaning the generated export templates"
@@ -199,6 +251,7 @@ msgstr "エクスポートテンプレートのクリーニング"
 msgid ""
 "You can use the following commands to remove the generated export templates:"
 msgstr ""
+"次のコマンドを使用して、生成されたエクスポートテンプレートを削除できます:"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:155
 msgid "Using the export templates"
@@ -211,12 +264,18 @@ msgid ""
 "editor, make sure to install the matching export templates, or build your "
 "own from the same version."
 msgstr ""
+"Godotには、エディタと同じバージョン/コミットに対してコンパイルされたAPKのリ"
+"リースとデバッグが必要です。エディタに公式のバイナリを使用している場合は、必"
+"ず一致するエクスポートテンプレートをインストールするか、同じバージョンから独"
+"自のテンプレートをビルドしてください。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:162
 msgid ""
 "When exporting your game, Godot opens the APK, changes a few things inside "
 "and adds your files."
 msgstr ""
+"ゲームをエクスポートするとき、GodotはAPKを開き、内部のいくつかを変更してファ"
+"イルを追加します。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:166
 msgid "Installing the templates"
@@ -228,18 +287,22 @@ msgid ""
 "apk``) must be copied to Godot's templates folder with their respective "
 "names. The templates folder can be located in:"
 msgstr ""
+"新しくコンパイルされたテンプレート(``android_debug.apk`` および "
+"``android_release.apk``) は、それぞれの名前でGodotのテンプレートフォルダにコ"
+"ピーする必要があります。テンプレートフォルダは次の場所にあります:"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:172
 msgid "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
-msgstr ""
+msgstr "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:173
 msgid "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
-msgstr ""
+msgstr "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:174
 msgid "macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
 msgstr ""
+"macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:176
 msgid ""
@@ -248,14 +311,18 @@ msgid ""
 "or ``3.1.dev``). You also need to write this same version string to a "
 "``version.txt`` file located next to your export templates."
 msgstr ""
+"``<version> `` の形式は ``major.minor[.patch].status`` で、Godotソースリポジ"
+"トリの ``version.py`` の値を使用します(例: ``3.0.5.stable`` または ``3.1."
+"dev``)。また、エクスポートテンプレートの隣にある ``version.txt`` ファイルにこ"
+"の同じバージョン文字列を書き込む必要があります。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:183
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your APKs as custom export templates here:"
 msgstr ""
-"ただし、カスタムモジュールまたはカスタムC ++コードを記述している場合は、代わ"
-"りにここでカスタムエクスポートテンプレートとしてAPKを構成することをお勧めしま"
+"ただし、カスタムモジュールまたはカスタムC++コードを記述している場合は、代わり"
+"にここでカスタムエクスポートテンプレートとしてAPKを構成することをお勧めしま"
 "す:"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:189
@@ -264,9 +331,9 @@ msgid ""
 "in the ``bin\\`` directory of your Godot source folder, so that the next "
 "time you build you will automatically have the custom templates referenced."
 msgstr ""
-"コピーする必要もなく、Godotソースフォルダの ``'bin`` ディレクトリで結果のファ"
-"イルを参照するだけで、次回ビルド時にカスタム テンプレートが自動的に参照されま"
-"す。"
+"コピーする必要もなく、Godotソースフォルダの ``bin\\`` ディレクトリで結果の"
+"ファイルを参照するだけで、次回ビルド時にカスタム テンプレートが自動的に参照さ"
+"れます。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:195
 msgid "Troubleshooting"
@@ -280,6 +347,8 @@ msgstr "アプリケーションがインストールされていません"
 msgid ""
 "Android might complain the application is not correctly installed. If so:"
 msgstr ""
+"Androidは、アプリケーションが正しくインストールされていないことを訴えます。そ"
+"の場合:"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:203
 msgid "Check that the debug keystore is properly generated."
@@ -287,19 +356,23 @@ msgstr "デバッグ キーストアが正しく生成されていることを�
 
 #: ../../docs/development/compiling/compiling_for_android.rst:204
 msgid "Check that the jarsigner executable is from JDK 8."
-msgstr ""
+msgstr "jarsigner実行可能ファイルがJDK 8からのものであることを確認します。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:206
 msgid ""
 "If it still fails, open a command line and run `logcat <https://developer."
 "android.com/studio/command-line/logcat>`_:"
 msgstr ""
+"それでも失敗する場合は、コマンドラインを開き、\\ `logcat <https://developer."
+"android.com/studio/command-line/logcat>`_を実行します。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:212
 msgid ""
 "Then check the output while the application is installed; the error message "
 "should be presented there. Seek assistance if you can't figure it out."
 msgstr ""
+"次に、アプリケーションのインストール中に出力を確認します。エラーメッセージが"
+"表示されます。理解できない場合は支援を求めてください。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:217
 msgid "Application exits immediately"
@@ -310,6 +383,8 @@ msgid ""
 "If the application runs but exits immediately, this might be due to one of "
 "the following reasons:"
 msgstr ""
+"アプリケーションは実行されてもすぐに終了する場合は、次のいずれかの理由が考え"
+"られます:"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:222
 msgid ""
@@ -325,6 +400,8 @@ msgid ""
 "``libgodot_android.so`` is not in ``libs/<android_arch>/`` where "
 "``<android_arch>`` is the device's architecture."
 msgstr ""
+"``libgodot_android.so`` は ``libs/<android_arch>/`` にありません。ここで "
+"``<android_arch>`` はデバイスのアーキテクチャです。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:226
 msgid ""
@@ -332,7 +409,10 @@ msgid ""
 "templates were built for that device's architecture, and that the export "
 "settings included support for that architecture."
 msgstr ""
+"デバイスのアーキテクチャが、エクスポートされたものと一致しません。テンプレー"
+"トがそのデバイスのアーキテクチャ用に構築されていること、およびエクスポート設"
+"定にそのアーキテクチャのサポートが含まれていることを確認してください。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:230
 msgid "In any case, ``adb logcat`` should also show the cause of the error."
-msgstr "いずれの場合も、 ``adb logcat`` にはエラーの原因も表示されます。"
+msgstr "いずれの場合も、\\ ``adb logcat`` にはエラーの原因も表示されます。"

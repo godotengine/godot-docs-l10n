@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,7 +187,7 @@ msgid ""
 "<class_CanvasItem_method_get_canvas_item>` method will return the canvas "
 "item RID in the server."
 msgstr ""
-"CanvasItemの場合、\\:ref:`CanvasItem.get_canvas_item() "
+"CanvasItemの場合、\\ :ref:`CanvasItem.get_canvas_item() "
 "<class_CanvasItem_method_get_canvas_item>` メソッドは、サーバー内のキャンバス"
 "アイテムRIDを返します。"
 
@@ -233,7 +233,7 @@ msgid ""
 "*Physics2DServer Space*. This allows creating 2D objects directly with the "
 "server API and using them."
 msgstr ""
-"2Dの場合、\\:ref:`World2D <class_World2D>` リソース(:ref:`Viewport "
+"2Dの場合、\\ :ref:`World2D <class_World2D>` リソース(:ref:`Viewport "
 "<class_Viewport>` および :ref:`CanvasItem <class_CanvasItem>` ノードで取得可"
 "能)には、\\ *VisualServer Canvas* と *Physics2DServer Space* を取得する関数が"
 "含まれます 。これにより、サーバーAPIで2Dオブジェクトを直接作成して使用できま"
@@ -283,7 +283,7 @@ msgstr ""
 "これは、コードからスプライトを作成し、低レベルの :ref:`CanvasItem "
 "<class_CanvasItem>` APIを使用して移動する方法の簡単な例です。"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:108
+#: ../../docs/tutorials/optimization/using_servers.rst:111
 msgid ""
 "The Canvas Item API in the server allows you to add draw primitives to it. "
 "Once added, they can't be modified. The Item needs to be cleared and the "
@@ -295,26 +295,26 @@ msgstr ""
 "ります(これは、幾何学変換を設定する場合には当てはまりません。これは、必要な回"
 "数だけ実行できます)。"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:112
+#: ../../docs/tutorials/optimization/using_servers.rst:115
 msgid "Primitives are cleared this way:"
 msgstr "プリミティブは次の方法でクリアされます:"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:121
+#: ../../docs/tutorials/optimization/using_servers.rst:124
 msgid "Instantiating a Mesh into 3D space"
 msgstr "メッシュを3D空間にインスタンス化する"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:123
+#: ../../docs/tutorials/optimization/using_servers.rst:126
 msgid ""
 "The 3D APIs are different than the 2D ones, so the instantiation API must be "
 "used."
 msgstr ""
 "3D APIは2D APIとは異なるため、インスタンス化APIを使用する必要があります。"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:146
+#: ../../docs/tutorials/optimization/using_servers.rst:152
 msgid "Creating a 2D RigidBody and moving a sprite with it"
 msgstr "2D RigidBodyの作成とスプライトの移動"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:148
+#: ../../docs/tutorials/optimization/using_servers.rst:154
 msgid ""
 "This creates a :ref:`RigidBody2D <class_RigidBody2D>` using the :ref:"
 "`Physics2DServer <class_Physics2DServer>` API, and moves a :ref:`CanvasItem "
@@ -324,7 +324,7 @@ msgstr ""
 "`RigidBody2D <class_RigidBody2D>` を作成し、ボディが移動すると :ref:"
 "`CanvasItem <class_CanvasItem>` を移動します。"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:176
+#: ../../docs/tutorials/optimization/using_servers.rst:186
 msgid ""
 "The 3D version should be very similar, as 2D and 3D physics servers are "
 "identical (using :ref:`RigidBody <class_RigidBody>` and :ref:`PhysicsServer "
@@ -334,11 +334,11 @@ msgstr ""
 "<class_RigidBody>` および :ref:`PhysicsServer <class_PhysicsServer>` を使"
 "用)、3Dバージョンも非常に似ているはずです。"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:180
+#: ../../docs/tutorials/optimization/using_servers.rst:190
 msgid "Getting data from the servers"
 msgstr "サーバーからデータを取得する"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:182
+#: ../../docs/tutorials/optimization/using_servers.rst:192
 msgid ""
 "Try to **never** request any information from ``VisualServer``, "
 "``PhysicsServer`` or ``Physics2DServer`` by calling functions unless you "
@@ -355,7 +355,7 @@ msgstr ""
 "で、それらの関数が停止し、保留中の処理を強制します。これをフレームごとに呼び"
 "出すと、パフォーマンスが大幅に低下します(理由は明らかではありません)。"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:188
+#: ../../docs/tutorials/optimization/using_servers.rst:198
 msgid ""
 "Because of this, most APIs in such servers are designed so it's not even "
 "possible to request information back, until it's actual data that can be "

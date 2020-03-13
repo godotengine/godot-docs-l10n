@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -296,9 +296,10 @@ msgid "Scene setup"
 msgstr "Configuración de la escena"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
+#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
-"pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
+"pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
 "Utiliza el cuadro de diálogo \"Añadir nodo hijo\" al que se accede desde la "
 "pestaña Escena (o pulsando ``Ctrl+A``) para crear una jerarquía con los "
@@ -549,13 +550,13 @@ msgstr ""
 "A continuación, escribe una función que se llamará cuando se pulse el botón:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"Finalmente, conecta la señal \"pressed\" del botón a ``_ready()`` "
-"utilizando :ref:`Object.connect() <class_Object_method_connect>`."
+"Finalmente, conecta la señal \"pressed\" del botón a "
+"``_on_Button_pressed()`` utilizando :ref:`Object.connect() "
+"<class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"

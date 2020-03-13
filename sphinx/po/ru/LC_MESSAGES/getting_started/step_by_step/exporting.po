@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,6 @@ msgstr ""
 "move (клик и перемещение)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -88,21 +87,21 @@ msgid ""
 msgstr ""
 "По умолчанию Godot эмулирует ввод мыши из ввода тача. Это означает что все "
 "что закодировано на событие мыши, также будет вызываться на событие тача. "
-"Если вы хотите отключить такое поведение по какой-то причине, или "
-"эмулировать тач из ввода мыши, вы можете это сделать в \"Project Settings\" "
-"в *Input Devices* и *Pointing*"
+"Также Godot может эмулировать  ввод тача из щелчков мыши, что позволит нам "
+"продолжать играть в нашу игру на нашем компьютере после перехода на "
+"сенсорный ввод. В \"Project Settings\" под *Input Devices* и *Pointing*, "
+"установите *Emulate Touch From Mouse* на \"On\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:39
-#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to *Display*, then click on *Window*. "
 "In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
-"Прежде чем мы изменим метод ввода, в настройках проекта перейдите в "
-"*Display*, затем кликните на *Window*. В разделе *Stretch*, измените *Mode* "
-"на \"2d\" и *Aspect* на \"keep\". Теперь игра будет масштабироваться на "
-"экранах разных размеров."
+"Нам также надо убедиться, что игра будет корректно масштабироваться при "
+"разных размерах экрана, поэтому в настройках проекта перейдите в Экран, "
+"затем кликните на Окно. В разделе Растяжение, измените Режим на \"2d\" и "
+"Соотношение сторон на \"сохранить\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
 msgid ""
@@ -493,7 +492,7 @@ msgstr ""
 "можете отключить её, задав параметр \"Export With Debug\" (экспорт с "
 "отладкой), когда экспортируете проект."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:418
+#: ../../docs/getting_started/step_by_step/exporting.rst:420
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "
 "technology and you may find some things that don't work. Make sure you have "

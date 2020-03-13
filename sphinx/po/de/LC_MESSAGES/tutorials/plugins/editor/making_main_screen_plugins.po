@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,7 +80,7 @@ msgid ""
 "cfg`` file. In our example, ``main_screen_plugin.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:68
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:76
 msgid ""
 "The important part in this script is the ``has_main_screen()`` function, "
 "which is overloaded so it returns ``true``. This function is automatically "
@@ -89,28 +89,28 @@ msgid ""
 "we'll come back to it later."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:75
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:83
 msgid "Scenes"
 msgstr "Szenen"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:77
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:85
 msgid ""
 "The ``main_screen_plugin.gd`` file will be responsible for each of our "
 "plugin's UI element instantiation, and it will also manage the communication "
 "between them."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:80
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:88
 msgid ""
 "As a matter of fact, we wish to design each UI element in their own scene. "
 "Different scenes are not aware of each other unless they are both children "
-"of a parent scene, yet they will then require ``get_node(\"../brother\")`` "
+"of a parent scene, yet they will then require ``get_node(\"../sibling\")`` "
 "accessors. Such practice is more likely to produce errors at runtime, "
 "especially if these scenes do not share the same parent node. This is why, "
 "they should only be allowed to access their children."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:87
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:95
 msgid ""
 "So, in order to communicate information to another scene, the best design is "
 "to define signals. If a user action in a UI scene #1 has to trigger "
@@ -120,13 +120,13 @@ msgid ""
 "one script will also connect each of them to the required signals."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:94
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:102
 msgid ""
 "If the ``main_screen_plugin.gd`` instantiates the UI scenes, won't they be "
-"brothers nodes then?"
+"sibling nodes then?"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:97
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:105
 msgid ""
 "Not necessarily: this script may add all UI scenes as children of the same "
 "node of the editor's scene tree - but maybe it won't. And the "
@@ -135,11 +135,11 @@ msgid ""
 "hold references to instantiated scenes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:104
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:112
 msgid "Main screen scene"
 msgstr "Hauptbildschirms-Szene"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:106
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:114
 msgid ""
 "Create a new scene with a ``Panel`` root node. Select this root node, and in "
 "the viewport, click the ``Layout`` menu and select ``Full Rect``. You also "
@@ -148,13 +148,13 @@ msgid ""
 "script on the root node. Name it ``main_panel.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:112
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:120
 msgid ""
 "We then add 2 children to this Panel node: first a ``Button`` node. Place it "
 "anywhere on the Panel. Then add a ``Label`` node."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:115
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:123
 msgid ""
 "Now we need to define a behaviour when this button is pressed. This is "
 "covered by the :ref:`Handling a signal <doc_scripting_handling_a_signal>` "
@@ -169,7 +169,7 @@ msgid ""
 "pressed."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:127
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:135
 msgid ""
 "As the button gets pressed, we want the side-panel's ``Label`` node to show "
 "a specific text. As explained above, we cannot directly access the target "
@@ -178,23 +178,23 @@ msgid ""
 "``main_panel.gd`` script:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:143
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:151
 msgid ""
 "In the same way, this main scene's Label node has to show a value when it "
 "receives a specific signal. Let's create a new "
 "``_on_side_button_pressed(text_to_show)`` function for this purpose:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:152
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:160
 msgid ""
 "We are done for the main screen panel. Save the scene as ``main_panel.tscn``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:155
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:163
 msgid "Tabbed panel scene"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:157
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:165
 msgid ""
 "The tabbed panel scene is almost identical to the main panel scene. You can "
 "either duplicate the ``main_panel.tscn`` file and name the new file "
@@ -205,25 +205,25 @@ msgid ""
 "different names. Here is the script's full content:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:179
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:188
 msgid "Connecting the two scenes in the plugin script"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:181
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:190
 msgid ""
 "We now need to update the ``main_screen_plugin.gd`` script so the plugin "
 "instances our 2 GUI scenes and places them at the right places in the "
 "editor. Here is the full ``main.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:230
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:249
 msgid ""
 "A couple of specific lines were added. First, we defined the constants that "
 "contain our 2 GUI packed scenes (``MainPanel`` and ``SidePanel``). We will "
 "use these resources to instance both scenes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:234
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:253
 msgid ""
 "The ``_enter_tree()`` function is called before ``_ready()``. This is where "
 "we actually instance the 2 GUI scenes, and add them as children of specific "
@@ -232,7 +232,7 @@ msgid ""
 "specified it will be placed in the left-side dock, upper-left tab."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:240
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:259
 msgid ""
 "``EditorPlugin`` class does not provide any function to add an element in "
 "the main viewport. We thus have to use the ``get_editor_interface()."
@@ -242,7 +242,7 @@ msgid ""
 "plugin."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:247
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:266
 msgid ""
 "The ``_exit_tree()`` is pretty straightforward. It is automatically called "
 "when the plugin is deactivated. It is then important to ``queue_free()`` the "
@@ -252,7 +252,7 @@ msgid ""
 "usage without any way to free it, which is not good."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:254
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:273
 msgid ""
 "Finally the ``make_visible()`` function is overridden to hide or show the "
 "main panel as needed. This function is automatically called by the editor "
@@ -260,15 +260,22 @@ msgid ""
 "Script."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:259
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:278
 msgid "Try the plugin"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:261
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:280
 msgid ""
 "Activate the plugin in the Project Settings. You'll observe a new button "
 "next to 2D, 3D, Script above the main viewport. You'll also notice a new tab "
 "in the left dock. Try to click the buttons in both side and main panels: "
 "events are emitted and caught by the corresponding target scene to change "
 "the Label caption inside it."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:285
+msgid ""
+"If you would like to see a more complete example of what main screen plugins "
+"are capable of, check out the 2.5D demo projects here: https://github.com/"
+"godotengine/godot-demo-projects/tree/master/misc/2.5d"
 msgstr ""

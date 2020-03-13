@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "ビルドシステムの説明"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:9
 msgid "SCons"
-msgstr ""
+msgstr "SCons"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:11
 msgid ""
@@ -34,17 +34,21 @@ msgid ""
 "There are many reasons why we have chosen SCons over other alternatives, for "
 "example:"
 msgstr ""
-"Godotはビルドするために`SCons <https://www.scons.org/>`__を使用します。私たち"
-"はそれが好きなので他のものに変えるつもりはありません。他のビルドシステムが"
-"Godotをビルドすることができるかさえ、確信がありません。ビルドシステムをCMake"
-"やVisual Studioに変更するようリクエストをよく受けますが、そうする気はありませ"
-"ん。他のシステムではなくSConsを選ぶのには多くの理由があります。例えば。"
+"Godotはビルドするために `SCons <https://www.scons.org/>`__ を使用しています。"
+"私たちはSconsが大好きなので、他のものに変えるつもりはありません。他のビルドシ"
+"ステムがGodotのビルドに適しているかどうかさえ、確信がありません。ビルドシステ"
+"ムをCMakeやVisual Studioに変更してほしいというリクエストをよく受けますが、起"
+"こり得ないことです。他のシステムではなくSConsを選ぶのには、多くの理由がありま"
+"す。例えば:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:18
 msgid ""
 "Godot can be compiled for a dozen different platforms: all PC platforms, all "
 "mobile platforms, many consoles, and WebAssembly."
 msgstr ""
+"Godotは十種類以上のプラットフォームを対象にコンパイルできます: すべてのPCプ"
+"ラットフォーム、すべてのモバイルプラットフォーム、多くのコンソール機、および"
+"WebAssembly。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:20
 msgid ""
@@ -53,8 +57,8 @@ msgid ""
 "reconfiguring and rebuilding the project each time. SCons can do this with "
 "no sweat, without breaking the builds."
 msgstr ""
-"開発者は、多くの場合、複数のプラットフォーム \\ **を同時にコンパイルする必要"
-"があります**\\ 、または同じプラットフォームの異なるターゲットをコンパイルする"
+"開発者は、多くの場合、複数のプラットフォームを\\ **同時に**\\ コンパイルする"
+"必要があります、または同じプラットフォームの異なるターゲットをコンパイルする"
 "必要があります。毎回プロジェクトを再構成して再構築する余裕はありません。SCons"
 "は、ビルドを壊すことなく、労なくこれを行うことができます。"
 
@@ -88,14 +92,17 @@ msgid ""
 "has a specific detection process, and all these must be handled as specific "
 "cases with special code written for each."
 msgstr ""
+"Godotのビルド処理はクロスコンパイル ツールを多用しています。それぞれのプラッ"
+"トフォームには専用の検査処理があり、またそれらすべてを個別の問題として、専用"
+"のコードでもって対処しなければなりません。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:36
 msgid ""
 "So, please try to keep an open mind and get at least a little familiar with "
 "it if you are planning to build Godot yourself."
 msgstr ""
-"ですので、あなたがGodotを自分で構築することを計画している場合は、オープンマイ"
-"ンドを維持し、少なくともそれに少し精通してみてください。"
+"ですので、もしGodotを自分でビルドすることを計画している場合は、オープンマイン"
+"ドを持って、SConsに多少は触れてみてください。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:40
 msgid "Setup"
@@ -146,16 +153,24 @@ msgid ""
 "SCons will detect the target platform automatically based on the host "
 "platform. It will then start building for the target platform right away."
 msgstr ""
+"SCons は\\ ``scons``\\ を呼ぶだけで起動します。もしプラットフォームが指定され"
+"なければ、SConsはホスト プラットフォームを自動的に検出してターゲット プラット"
+"フォームとします。それからすぐにターゲット プラットフォームへのビルドを開始し"
+"ます。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:63
 msgid "To list the available target platforms, use ``scons platform=list``::"
 msgstr ""
+"利用可能なターゲット プラットフォームのリストを得るには、\\ ``scons "
+"platform=list``\\ を使います:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:77
 msgid ""
 "To build for a platform (for example, x11), run with the ``platform=`` (or "
 "``p=`` to make it short) argument:"
 msgstr ""
+"特定のプラットフォーム (たとえばX11) にビルドするには、引数として\\ "
+"``platform=`` (あるいはその短縮形\\ ``p=``\\ ) を付けて実行します:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:84
 msgid ""
@@ -164,6 +179,10 @@ msgid ""
 "cores will be used for the build. Or leave it using one core, so you can use "
 "your computer for something else :)"
 msgstr ""
+"これでビルド プロセスが開始しますが、多少の時間がかかります。Sconsでのビルド"
+"を高速化したいなら、\\ ``-j <コア数>``\\ パラメータを使えば、ビルドに使用する"
+"コア数を指定できます。もしくは、使うコアを一つだけのままにすれば、その間コン"
+"ピューターを別のことに使うことができるでしょう :)"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:89
 msgid "Example for using 4 cores:"
@@ -178,10 +197,12 @@ msgid ""
 "The resulting binaries will be placed in the ``bin/`` subdirectory, "
 "generally with this naming convention::"
 msgstr ""
+"結果のバイナリは副ディレクトリの\\ ``bin/``\\ に、通常は以下の命名規則に沿っ"
+"て保存されます:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:103
 msgid "For the previous build attempt, the result would look like this::"
-msgstr "前ビルドを試みると、結果は次のようになります::"
+msgstr "前記のビルドを試みると、結果は次のようになります:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:108
 msgid ""
@@ -203,6 +224,12 @@ msgid ""
 "are needed (which can be either downloaded from `godotengine.org <https://"
 "godotengine.org/>`__, or you can build them yourself)."
 msgstr ""
+"このバイナリには、プロジェクト マネージャ、エディタ、そしてゲームの実行に必要"
+"なものすべてが含まれているので、好きな場所にコピーしてください。しかしこのバ"
+"イナリには、他のプラットフォームへエクスポートするためのデータは含まれませ"
+"ん。それには、エクスポート テンプレートが必要になります (\\ `godotengine.org "
+"<https://godotengine.org/>`__ からダウンロードするか、または自身でビルドして"
+"ください)。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:122
 msgid ""
@@ -241,8 +268,8 @@ msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
 msgstr ""
-"**debug**\\ : C++デバッグシンボル、ランタイムチェック(チェックを実行してエ"
-"ラーを報告する)を使用してビルドし、最適化なしでビルドします。"
+"**debug**: C++デバッグシンボル、ランタイムチェック (チェックを実行してエラー"
+"を通知する) を使用して、最適化は最小限でビルドします。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
 msgid ""
@@ -250,6 +277,9 @@ msgid ""
 "keep the runtime checks (performs checks and reports errors). Official "
 "editor binaries use this configuration."
 msgstr ""
+"**release_debug**: C++デバッグ シンボルは無効になり、最適化してビルドされます"
+"が、ランタイム チェック (チェックを実行してエラーを通知する) は行われます。公"
+"式エディタ バイナリはこの設定を使用しています。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:151
 msgid ""
@@ -257,6 +287,9 @@ msgid ""
 "runtime checks. This target can't be used together with ``tools=yes``, as "
 "the editor requires some debug functionality and run-time checks to run."
 msgstr ""
+"**release**: シンボルは無効になり、最適化された上、ランタイム チェックは最小"
+"限でビルドされます。エディタにはいくつかのデバッグ機能とランタイム チェックを"
+"必要なので、このターゲットは\\ ``tool=yes``\\ と同時に使うことはできません。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:160
 msgid ""
@@ -264,6 +297,9 @@ msgid ""
 "debug with tools enabled). When optimization is enabled (release), it "
 "appends the ``.opt`` suffix."
 msgstr ""
+"このフラグは、ファイル名に\\ ``.debug``\\ (debug版)、あるいは\\ ``.tools``\\ "
+"(tool有効のdebug版) を追加します。最適化が有効なとき (release) は、\\ ``."
+"opt``\\ を追加します。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:165
 msgid "Bits"
@@ -280,15 +316,15 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:171
 msgid "**32**: Build binaries for 32-bit platforms."
-msgstr ""
+msgstr "**32**: 32ビット プラットフォーム用のバイナリをビルド。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:172
 msgid "**64**: Build binaries for 64-bit platforms."
-msgstr ""
+msgstr "**64**: 64ビット プラットフォーム用のバイナルをビルド。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
 msgid "**default**: Build for the architecture that matches the host platform."
-msgstr ""
+msgstr "**default**: ホスト プラットフォームのアーキテクチャに合わせてビルド。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:179
 msgid ""
@@ -296,6 +332,9 @@ msgid ""
 "relevant. If ``bits=default`` is used, the suffix will match the detected "
 "architecture."
 msgstr ""
+"このフラグは、出力されたバイナリの名前に\\ ``.32``\\ あるいは\\ ``.64``\\ を"
+"対象によって加えます。もし\\ ``bits=default``\\ の場合には、検出されたアーキ"
+"テクチャに適したほうを追加します。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:184
 msgid "Other build options"
@@ -332,14 +371,17 @@ msgid ""
 msgstr ""
 "公式エクスポートテンプレートは、Godot Engineサイトからダウンロードできます: "
 "`godotengine.org <https://godotengine.org/>`_\\ 。ただし、新しいモジュールが"
-"必要な場合、カスタム モジュールを使用している場合、または単に自分のシャドウを"
-"信頼しない場合は、自分でビルドすることもできます。"
+"必要な場合、カスタム モジュールを使用している場合、または単に自身の影すらも信"
+"用しない主義であるなら、自分でビルドすることもできます。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most files are optimized binaries or packages for each platform:"
 msgstr ""
+"公式のエクスポート テンプレートのパッケージをダウンロードして解凍すれば、その"
+"ほとんどのファイルは、最適化されたバイナリかパッケージであることに気づくで"
+"しょう:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:224
 msgid ""
@@ -347,6 +389,9 @@ msgid ""
 "in this same tutorial section. Each platform explains how to create its own "
 "template."
 msgstr ""
+"これらを自分で作るには、このチュートリアル セクションにある、それぞれのプラッ"
+"トフォーム用の解説をお読みください。それぞれのプラットフォームにて、エクス"
+"ポート テンプレートの作成法が書かれています。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
 msgid ""
@@ -359,6 +404,15 @@ msgid ""
 "lines of the `version.py file in the Godot Git repository <https://github."
 "com/godotengine/godot/blob/master/version.py>`__."
 msgstr ""
+"\\ ``version.txt`` ファイルには、対応する Godot のバージョン識別子を含める必"
+"要があります。このファイルは、バージョン専用のディレクトリにエクスポート テン"
+"プレートをインストールして、名前の衝突を避けるためにあります。一例として、も"
+"し Godot 3.1.1 用のエクスポート テンプレートをビルドするなら、\\ ``version."
+"txt``\\ の最初の行に\\ ``3.1.1.stable``\\ と書きます (それ以外は不要)。この"
+"バージョン識別子を構成するのは、\\ ``メジャー``\\ 、\\ ``マイナー``\\ 、\\ ``"
+"パッチ(ある場合)``\\ 、そして\\ `Godot の Git レポジトリにある version.py "
+"<https://github.com/godotengine/godot/blob/master/version.py>`_\\ ファイルの"
+"\\ ``status``\\ ラインです。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:236
 msgid ""
@@ -368,3 +422,7 @@ msgid ""
 "place, but Linux has the advantage of being the easier platform to set this "
 "up."
 msgstr ""
+"もし複数のプラットフォームに向けて開発するなら、間違いなく macOS が一番実用的"
+"なクロスコンパイルのためのホスト プラットフォームでしょう。ほぼ全てのターゲッ"
+"ト (UWPを除く) にクロスコンパイルできます。Linux と Windows がその次に来ます"
+"が、しかし、Linux にはセットアップが容易であるという利点があります。"

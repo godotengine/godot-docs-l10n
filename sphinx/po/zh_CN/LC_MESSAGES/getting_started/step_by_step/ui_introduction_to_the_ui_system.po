@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,6 @@ msgid ""
 msgstr "如何使用容器有效地放置和排列用户界面"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
-#, fuzzy
 msgid ""
 "The five most common containers (you can learn more about containers in the :"
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
@@ -250,12 +249,13 @@ msgid "TextureButton"
 msgstr "``TextureButton``"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
+#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 5 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
 "Pressed, and Hover textures. Focused is useful if your interface listens to "
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
-"the clickable area using a 2-bit, pure black and white image."
+"the clickable area using a 1-bit, pure black and white image."
 msgstr ""
 "**纹理按钮（TextureButton）** 类似于 ``纹理矩形（TextureRect）``，只不过它有5"
 "个纹理槽：每个纹理槽对应一个按钮的状态。大多数时候，您会使用 ``普通槽"

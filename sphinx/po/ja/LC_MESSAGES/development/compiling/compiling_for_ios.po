@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:4
 msgid "Compiling for iOS"
-msgstr "\\ iOS用のコンパイル"
+msgstr "iOS用のコンパイル"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:9
 msgid "Requirements"
@@ -30,19 +30,21 @@ msgid ""
 "SCons (you can get it from macports, you should be able to run ``scons`` in "
 "a terminal when installed)"
 msgstr ""
-"SCons(macportsから取得できます。インストールすると、ターミナルで `` scons`` "
-"を実行できるはずです)"
+"SCons(macportsから取得できます。インストールすると、ターミナルで ``scons`` を"
+"実行できるはずです)"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:13
 msgid ""
 "Xcode 10.0 (or later) with the iOS (10.0) SDK and the command line tools."
-msgstr ""
+msgstr "iOS(10.0)SDKおよびコマンドラインツールを使用したXcode 10.0(以降)。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:15
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
+"Godotにおける基本的なSconsの使い方については、\\ :ref:"
+"`doc_introduction_to_the_buildsystem`\\ を参照してください。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 msgid "Compiling"
@@ -81,6 +83,10 @@ msgid ""
 "to create a bundle in which there are both 32-bit and 64-bit binaries, so "
 "every device will be able to run the game."
 msgstr ""
+"最近のデバイスでは、Apple Storeにアップロードするときに、Appleはアプリケー"
+"ションバイナリの64ビットバージョンを必要とします。これらを提供する最良の方法"
+"は、32ビットと64ビットの両方のバイナリが含まれるバンドルを作成して、すべての"
+"デバイスがゲームを実行できるようにすることです。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:47
 msgid ""
@@ -89,6 +95,10 @@ msgid ""
 "\"universal\" binary. All those steps can be performed with following "
 "commands:"
 msgstr ""
+"3つのステップで実行できます: 最初に32ビットバージョンをコンパイルし、次に64"
+"ビットバージョンをコンパイルし、次に ``lipo`` を使用してそれらを1つの「ユニ"
+"バーサル」バイナリにバンドルします。これらの手順はすべて、次のコマンドで実行"
+"できます:"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:58
 msgid ""
@@ -96,6 +106,8 @@ msgid ""
 "linker errors with dependencies), you'll need to build and lipo the "
 "``x86_64`` architecture as well."
 msgstr ""
+"シミュレータービルドも提供したい場合(依存関係を伴うリンカーエラーの可能性を減"
+"らします)、\\ ``x86_64`` アーキテクチャーもビルドしてリポする必要があります。"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:70
 msgid "Run"

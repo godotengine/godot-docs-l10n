@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "GDScript style guide"
 msgstr "GDScript 风格指南"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:6
-#, fuzzy
 msgid ""
 "This style guide lists conventions to write elegant GDScript. The goal is to "
 "encourage writing clean, readable code and promote consistency across "
@@ -33,7 +32,6 @@ msgstr ""
 "进项目、讨论和教程之间的一致性。希望这也会促进开发自动格式化工具。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:11
-#, fuzzy
 msgid ""
 "Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming style guide."
@@ -63,7 +61,6 @@ msgid ""
 msgstr "Godot的内置脚本编辑器默认使用了很多这些约定。让它帮助您。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:25
-#, fuzzy
 msgid "Here is a complete class example based on these guidelines:"
 msgstr "下面是一个简单的示例，说明它是如何工作的："
 
@@ -72,34 +69,30 @@ msgid "Formatting"
 msgstr "格式"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:97
-#, fuzzy
 msgid "Encoding and special characters"
-msgstr "处理通知"
+msgstr "编码和特殊字符"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:99
-#, fuzzy
 msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
-msgstr "使用换行符（**LF**）来换行，而不是 ``CRLF`` 或 ``CR``。"
+msgstr "使用换行符（**LF**）来换行，而不是 ``CRLF`` 或 ``CR``。（编辑默认）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:100
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr "在每个文件的末尾使用一个换行符。*(编辑器默认设置)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:101
-#, fuzzy
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
 "使用不带 `字节顺序标记（BOM） <https://en.wikipedia.org/wiki/"
-"Byte_order_mark>`_ 的 **UTF-8** 编码。"
+"Byte_order_mark>`_ 的 **UTF-8** 编码。（编辑默认）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
-#, fuzzy
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
-msgstr "使用 **4空格** 代替制表符进行缩进（称为“软制表符”）。"
+msgstr "使用 **Tabs** 代替制表符进行缩进（称为“软制表符”）。（编辑默认）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 msgid "Indentation"
@@ -181,9 +174,8 @@ msgid "Use one blank line inside functions to separate logical sections."
 msgstr "函数内部使用一个空行来分隔逻辑部分。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
-#, fuzzy
 msgid "Line length"
-msgstr "length"
+msgstr "Line length（可能是字符长度）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:260
 msgid "Keep individual lines of code under 100 characters."
@@ -203,13 +195,12 @@ msgid "One statement per line"
 msgstr "一条语句一行"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:269
-#, fuzzy
 msgid ""
 "Never combine multiple statements on a single line. No, C programmers, not "
 "even with a single line conditional statement."
 msgstr ""
-"不要在一行上合并多个语句 。不，C程序员，不能使用单行条件语句（三元运算符除"
-"外）！"
+"不要在一行上合并多个语句 。不要像C语言那样，不能使用单行条件语句（三元运算符"
+"除外）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:290
 msgid "The only exception to that rule is the ternary operator:"
@@ -237,14 +228,12 @@ msgid ""
 msgstr "首选布尔运算符的纯英文版本，因为它们是最容易访问的："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:321
-#, fuzzy
 msgid "Use ``and`` instead of ``&&``."
-msgstr "``and`` ``&&``"
+msgstr "使用``and``代替 ``&&``。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
-#, fuzzy
 msgid "Use ``or`` instead of ``||``."
-msgstr "``or`` ``||``"
+msgstr "使用``or``代替 ``||``。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:324
 msgid ""
@@ -254,12 +243,10 @@ msgstr ""
 "也可以在布尔运算符周围使用括号来清除任何歧义。这可以使长表达式更容易阅读。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:342
-#, fuzzy
 msgid "Comment spacing"
-msgstr "注释"
+msgstr "注释间距"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:344
-#, fuzzy
 msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
@@ -268,10 +255,11 @@ msgstr ""
 "可以用来区分文本注释和停用的代码。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:363
+#, fuzzy
 msgid ""
-"In the script editor, to toggle the selected code commented, press "
-"<kbd>Ctrl</kbd> <kbd>K</kbd>. This feature adds a single # sign at the start "
-"of the selected lines."
+"In the script editor, to toggle the selected code commented, press :kbd:"
+"`Ctrl + K`. This feature adds a single # sign at the start of the selected "
+"lines."
 msgstr ""
 "在脚本编辑器中，要切换已注释的选定代码，请按<kbd>Ctrl</kbd><kbd>K</kbd>。此功"
 "能在选定行的开头添加一个#符号。"
@@ -281,13 +269,12 @@ msgid "Whitespace"
 msgstr "空格"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
-#, fuzzy
 msgid ""
 "Always use one space around operators and after commas. Also, avoid extra "
 "spaces in dictionary references and function calls."
 msgstr ""
-"请始终在运算符前后和逗号后使用一个空格。避免在字典引用和函数调用中使用多余的"
-"空格，也不要创建 ``列（columns）``。"
+"请始终在运算符前后和逗号后使用一个空格。也避免在字典引用和函数调用中使用多余"
+"的空格。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:393
 msgid "Don't use spaces to align expressions vertically:"
@@ -309,14 +296,13 @@ msgid "Naming conventions"
 msgstr "命名约定"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:426
-#, fuzzy
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, leading to "
 "inconsistent code."
 msgstr ""
-"这些命名约定遵循 Godot 引擎风格。打破这些将使您的代码与内置的命名约定冲突, 这"
-"是丑陋的。"
+"这些命名约定遵循 Godot 引擎风格。打破这些都会使你的代码与内置的命名约定冲突，"
+"导致风格不一致的代码。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
 msgid "Classes and nodes"
@@ -324,10 +310,9 @@ msgstr "类与节点"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 msgid "Use PascalCase for class and node names:"
-msgstr "对类和节点名称使用PascalCase："
+msgstr "对类和节点名称使用帕斯卡命名法（PascalCase）："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:439
-#, fuzzy
 msgid "Also use PascalCase when loading a class into a constant or a variable:"
 msgstr "将类加载到常量或变量时同样适用："
 
@@ -336,40 +321,33 @@ msgid "Functions and variables"
 msgstr "函数与变量"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:448
-#, fuzzy
 msgid "Use snake\\_case to name functions and variables:"
-msgstr "函数与变量"
+msgstr "使用蛇形命名法（snake\\_case）来命名函数与变量："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:455
-#, fuzzy
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods functions the user must "
 "override, private functions, and private variables:"
 msgstr ""
 "在虚方法（用户必须重写的函数）、私有函数、和私有变量前加一个下划线（\\_）："
-"``func _ready()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:464
 msgid "Signals"
 msgstr "信号"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:466
-#, fuzzy
 msgid "Use the past tense to name signals:"
-msgstr "使用过去时态："
+msgstr "用过去时态来命名信号："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:474
 msgid "Constants and enums"
 msgstr "常数和枚举"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:476
-#, fuzzy
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
-msgstr ""
-"使用 CONSTANT\\_CASE，全部大写，用下划线（\\_）分隔单词 ``const MAX_SPEED = "
-"200``"
+msgstr "使用 CONSTANT\\_CASE，全部大写，用下划线（\\_）分隔单词 ："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:483
 msgid ""
@@ -379,9 +357,8 @@ msgstr ""
 "对枚举*名称*使用PascalCase，对其成员使用CONSTANT\\_CASE ，因为它们是常量："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:497
-#, fuzzy
 msgid "Code order"
-msgstr "树顺序"
+msgstr "代码顺序"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:499
 msgid ""
@@ -468,7 +445,7 @@ msgstr "信号和属性"
 msgid ""
 "Write signal declarations, followed by properties, that is to say, member "
 "variables, after the docstring."
-msgstr "编写信号声明，后跟属性，即成员变量，在文档字符串之后。"
+msgstr "编写信号声明，后跟属性（即成员变量），在文档字符串之后。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:567
 msgid ""

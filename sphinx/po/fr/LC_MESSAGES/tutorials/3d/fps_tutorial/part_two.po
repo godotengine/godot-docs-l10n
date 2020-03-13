@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -543,8 +543,9 @@ msgstr ""
 "balle est tirée. Le museau est aussi parfois appelé le canon de l'arme à feu."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:303
+#, fuzzy
 msgid ""
-"For finer control when scrubbing the timeline, press ``control`` and scroll "
+"For finer control when scrubbing the timeline, press :kbd:`Ctrl` and scroll "
 "forward with the mouse wheel to zoom in. Scrolling backwards will zoom out."
 msgstr ""
 "Pour un contrôle plus précis lors du défilement de la ligne de temps, "
@@ -562,10 +563,11 @@ msgstr ""
 "inférieure/supérieure."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:308
+#, fuzzy
 msgid ""
 "Once you get to a point you like, right click on the row for \"Animation "
-"Player\" and press insert key. In the empty name field, enter "
-"``animation_callback`` and press ``enter``."
+"Player\" and press ``Insert Key``. In the empty name field, enter "
+"``animation_callback`` and press :kbd:`Enter`."
 msgstr ""
 "Une fois que vous arrivez à un point que vous aimez, cliquez avec le bouton "
 "droit de la souris sur la ligne pour \"Animation Player\" et appuyez sur la "
@@ -613,9 +615,10 @@ msgstr ""
 "la piste."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:327
+#, fuzzy
 msgid ""
 "Type \"animation_callback\" into the name field of the pop up which opened "
-"and press ``enter``."
+"and press :kbd:`Enter`."
 msgstr ""
 "Tapez \"animation_callback\" dans le champ du nom de la fenêtre pop up qui "
 "s'est ouverte et appuyez sur ``enter``."
@@ -649,9 +652,10 @@ msgstr ""
 "animations."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:337
+#, fuzzy
 msgid ""
 "From there right click on the timeline and click \"Insert Key\". Put "
-"\"animation_callback\" into the name field and press ``enter``."
+"\"animation_callback\" into the name field and press :kbd:`Enter`."
 msgstr ""
 "De là, cliquez avec le bouton droit de la souris sur la ligne de temps et "
 "cliquez sur \"Insert Key\". Mettez \"animation_callback\" dans le champ de "
@@ -698,10 +702,11 @@ msgstr ""
 "puis il se déplacera vers l'avant."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:356
+#, fuzzy
 msgid ""
 "There are several advantages to this method. The first being we do not have "
 "to store the bullets in our player. We can simply create the bullet and then "
-"move on, and the bullet itself with handle checking for collisions, sending "
+"move on, and the bullet itself will handle checking for collisions, sending "
 "the proper signal(s) to the object it collides with, and destroying itself."
 msgstr ""
 "Cette méthode présente plusieurs avantages. Le premier étant que nous "
@@ -2433,9 +2438,10 @@ msgstr ""
 "nœud  ``Cubes`` node."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1219
+#, fuzzy
 msgid ""
-"If you select the top cube, and then hold down ``shift`` and select the last "
-"cube, Godot will select all the cubes in-between!"
+"If you select the top cube, and then hold down :kbd:`Shift` and select the "
+"last cube, Godot will select all the cubes in-between!"
 msgstr ""
 "Si vous sélectionnez le cube supérieur, puis maintenez la touche ``shift`` "
 "et sélectionnez le dernier cube, Godot sélectionnera tous les cubes entre "

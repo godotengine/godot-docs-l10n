@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"オブザーバーパターンの詳細については、以下をご覧ください: http://"
+"オブザーバーパターンの詳細については、以下をご覧ください (英語): http://"
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
@@ -52,10 +52,10 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
-"シグナルは、ゲームオブジェクトを\\ *分離*\\ する方法であり、コードの整理と管"
-"理が容易になります。ゲームオブジェクトに他のオブジェクトが常に存在することを"
-"強制するのではなく、代わりに、関心のあるすべてのオブジェクトが申請および応答"
-"できるシグナルを発信できます。"
+"シグナルは、ゲーム オブジェクトを\\ *分離*\\ する方法であり、コードの整理と管"
+"理が容易になります。常に複数のゲーム オブジェクト同士を強制的に会わせるのでは"
+"なく、代わりにオブジェクトはシグナルを発信でき、関係するすべてのオブジェクト"
+"は予約および応答ができます。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
@@ -74,8 +74,8 @@ msgid ""
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
-"シグナルがどのように機能するかを見るために、\\ :ref: `Timer <class_Timer>`\\ "
-"ノードを使用してみましょう。 Node2Dと2つの子:Timerと\\ :ref: `Sprite "
+"シグナルがどのように機能するかを見るために、\\ :ref:`Timer <class_Timer>`\\ "
+"ノードを使用してみましょう。 Node2Dと2つの子:Timerと\\ :ref:`Sprite "
 "<class_Sprite>`\\ で新しいシーンを作成します。 Sceneドックで、Node2Dの名前を"
 "TimerExampleに変更します。"
 
@@ -88,8 +88,8 @@ msgid ""
 msgstr ""
 "スプライトのテクスチャには、Godotアイコン、またはその他の好きな画像を使用でき"
 "ます。そのためには、スプライトのテクスチャ属性ドロップダウンメニューで ``読込"
-"み`` を選択します。ルートノードにスクリプトを添付しますが、まだコードを追加し"
-"ないでください。"
+"み`` を選択します。ルートノードにスクリプトをアタッチしますが、まだコードを追"
+"加しないでください。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
@@ -142,29 +142,37 @@ msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
-"ターゲットノードにはスクリプトが添付されている\\ *必要*\\ があります。そうし"
-"ないと、エラーメッセージが表示されます。"
+"ターゲットノードにはスクリプトがアタッチされている\\ *必要*\\ があります。そ"
+"うしないと、エラーメッセージが表示されます。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
+msgid ""
+"On the right side, you can bind an arbitrary number of arguments of "
+"(possibly) different types. This can be useful when you have more than one "
+"signal connected to the same method, as each signal propagation will result "
+"in different values for those extra call arguments."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"ウィンドウの下部には、「Method In Node」というラベルのフィールドがあります。 "
+"ウィンドウの下部には、「メソッドの選択」というラベルのフィールドがあります。 "
 "これは、使用したいターゲットノードのスクリプト内の関数の名前です。 デフォルト"
 "では、Godotは\\ ``_on_<ノード名>_<シグナル名>``\\ という命名規則を使用してこ"
 "の関数を作成しますが、必要に応じて変更できます。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:68
+#: ../../docs/getting_started/step_by_step/signals.rst:72
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
 "「接続」をクリックすると、スクリプトで関数が作成されたことがわかります:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:88
+#: ../../docs/getting_started/step_by_step/signals.rst:92
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
@@ -172,7 +180,7 @@ msgstr ""
 "これで、仮置きのコードを、シグナルの受信時に実行したいコードに置き換えること"
 "ができます。 スプライトを点滅させましょう:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:112
+#: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
@@ -180,11 +188,11 @@ msgstr ""
 "シーンを実行すると、スプライトが1秒ごとに点滅します。 これを変更するには、タ"
 "イマーの\\ *Wait Time*\\ プロパティを変更します。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:116
+#: ../../docs/getting_started/step_by_step/signals.rst:120
 msgid "Connecting signals in code"
 msgstr "コード内でシグナルをを接続する"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:118
+#: ../../docs/getting_started/step_by_step/signals.rst:122
 msgid ""
 "You can also make the signal connection in code rather than with the editor. "
 "This is usually necessary when you're instancing nodes via code and so you "
@@ -194,7 +202,7 @@ msgstr ""
 "を介してノードをインスタンス化するときに必要であり、エディタを使用して接続す"
 "ることはできません。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:122
+#: ../../docs/getting_started/step_by_step/signals.rst:126
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
@@ -202,7 +210,7 @@ msgstr ""
 "まず、タイマーの[ノード]タブで接続を選択し、[切断]をクリックして、シグナルを"
 "切断します。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:127
+#: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
 "To make the connection in code, we can use the ``connect`` function. We'll "
 "put it in ``_ready()`` so that the connection will be made on run. The "
@@ -215,32 +223,58 @@ msgstr ""
 "``<source_node>.connect(<signal_name>, <target_node>, "
 "<target_function_name>)`` です。タイマー接続のコードは次のとおりです:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:160
+#: ../../docs/getting_started/step_by_step/signals.rst:164
 msgid "Custom signals"
 msgstr "カスタムシグナル"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:162
+#: ../../docs/getting_started/step_by_step/signals.rst:166
 msgid "You can also declare your own custom signals in Godot:"
-msgstr "Godotで独自のカスタムシグナルを宣言することもできます:"
+msgstr "Godotでは独自のカスタムシグナルを宣言することもできます:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:180
+#: ../../docs/getting_started/step_by_step/signals.rst:184
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
-"一度宣言すると、カスタムシグナルがインスペクターに表示され、ノードの組み込み"
-"シグナルと同じ方法で接続できます。"
+"一度宣言すると、カスタムシグナルがインスペクタに表示され、ノードの組み込みシ"
+"グナルと同じ方法で接続できます。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:183
+#: ../../docs/getting_started/step_by_step/signals.rst:187
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
 msgstr ""
-"コードを介してシグナルを発信するには、 ``emit_signal`` 関数を使用します:"
+"コードを介してシグナルを発信するには、\\ ``emit_signal`` 関数を使用します:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:209
+#: ../../docs/getting_started/step_by_step/signals.rst:212
+msgid ""
+"A signal can also optionally declare one or more arguments. Specify the "
+"argument names between parentheses:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/signals.rst:232
+#, fuzzy
+msgid ""
+"The signal arguments show up in the editor's node dock, and Godot can use "
+"them to generate callback functions for you. However, you can still emit any "
+"number of arguments when you emit signals. So it's up to you to emit the "
+"correct values."
+msgstr ""
+"これらの引数はエディタのノードドックに表示され、Godot はこれらを使いコール"
+"バック関数を生成します。しかし、シグナルを送信する際に、異なる個数の引数を送"
+"信することもできます。その上限は正しい値の個数までです。"
+
+#: ../../docs/getting_started/step_by_step/signals.rst:237
+#, fuzzy
+msgid ""
+"To pass values, add them as the second argument to the ``emit_signal`` "
+"function:"
+msgstr ""
+"コードを介してシグナルを発信するには、\\ ``emit_signal`` 関数を使用します:"
+
+#: ../../docs/getting_started/step_by_step/signals.rst:263
 msgid "Conclusion"
 msgstr "結論"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:211
+#: ../../docs/getting_started/step_by_step/signals.rst:265
 msgid ""
 "Many of Godot's built-in node types provide signals you can use to detect "
 "events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
@@ -249,10 +283,11 @@ msgid ""
 msgstr ""
 "Godotの組み込みノードタイプの多くは、イベントの検出に使用できる信号を提供しま"
 "す。 たとえば、コインの見た目をした\\ :ref:`Area2D <class_Area2D>`\\ は、プレ"
-"イヤーの物理ボディが衝突形状に入るたびに ``body_entered`` シグナルを発し、プ"
-"レイヤーがそれを収集したタイミングを知ることができます。"
+"イヤーの物理ボディが衝突形状(コリジョンシェイプ)に入るたびに "
+"``body_entered`` シグナルを発し、プレイヤーがそれを収集したタイミングを知るこ"
+"とができます。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:216
+#: ../../docs/getting_started/step_by_step/signals.rst:270
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."

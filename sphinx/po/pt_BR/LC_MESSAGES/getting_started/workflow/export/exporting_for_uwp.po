@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
+#, fuzzy
 msgid "Exporting for Universal Windows Platform"
-msgstr ""
+msgstr "Exportando para a Plataforma Universal do Windows"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:6
 msgid ""
@@ -27,125 +28,180 @@ msgid ""
 "installed as a Windows App or submitted to the Windows Store. Exporting UWP "
 "packages also works from any platform, not only from Windows."
 msgstr ""
+"Não há nenhum requisito extra para exportar um pacote ``.appx`` que pode ser "
+"instalado como um aplicativo do Windows ou enviado para a Loja do Windows. A "
+"exportação de pacotes UWP também funciona a partir de qualquer plataforma, "
+"não apenas do Windows."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
+#, fuzzy
 msgid ""
 "However, if you want to install and run the app, you need to sign it with a "
 "trusted signature. Currently, Godot does not support signing of packages, so "
 "you need to use external tools to do so."
 msgstr ""
+"No entanto, se você quiser instalar e executar o aplicativo, você precisa "
+"assiná-lo com uma assinatura confiável. Atualmente, o Godot não suporta a "
+"assinatura de pacotes, então você precisa usar ferramentas externas para "
+"fazer isso."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
+#, fuzzy
 msgid ""
 "Also, make sure the Publisher Name you set when exporting the package "
 "matches the name used on the certificate."
 msgstr ""
+"Além disso, certifique-se de que o Nome do Editor que você definiu ao "
+"exportar o pacote corresponde ao nome usado no certificado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:18
+#, fuzzy
 msgid "Limitations on Xbox One"
-msgstr ""
+msgstr "Limitações no Xbox One"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:20
+#, fuzzy
 msgid ""
 "As described in the `UWP documentation <https://docs.microsoft.com/en-us/"
 "windows/uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
+"Como descrito na `documentação do UWP <https://docs.microsoft.com/en-us/"
+"windows/uwp/xbox-apps/system-resource-allocation>`__:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "Submitted as an \"App\""
-msgstr ""
+msgstr "Enviado como um \"App\""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:23
+#, fuzzy
 msgid "available memory is 1GB"
-msgstr ""
+msgstr "memória disponível é de 1GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:24
+#, fuzzy
 msgid "share of 2-4 CPU cores"
-msgstr ""
+msgstr "compartilhamento de 2-4 núcleos de CPU"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
+#, fuzzy
 msgid "shared access of GPU power (45%)"
-msgstr ""
+msgstr "acesso compartilhado de energia da GPU (45%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
+#, fuzzy
 msgid ""
 "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www."
 "xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
+"Enviado como um \"Jogo\" (através do \"Xbox Live Creators Program\" <https://"
+"www.xbox.com/en-US/developers/creators-program>`__)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:28
+#, fuzzy
 msgid "available memory is 5GB"
-msgstr ""
+msgstr "memória disponível é de 5GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:29
+#, fuzzy
 msgid "4 exclusive CPU cores and 2 shared CPU cores"
-msgstr ""
+msgstr "4 núcleos de CPU exclusivos e 2 núcleos de CPU compartilhados"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
+#, fuzzy
 msgid "exclusive access to GPU power (100%)"
-msgstr ""
+msgstr "acesso exclusivo à energia da GPU (100%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
+#, fuzzy
 msgid ""
 "Exceeding these memory limitations will cause allocation failures and the "
 "application will crash."
 msgstr ""
+"Excedendo estas limitações de memória irá causar falhas de alocação e a "
+"aplicação irá falhar."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:35
+#, fuzzy
 msgid "Creating a signing certificate"
-msgstr ""
+msgstr "Criando um certificado de assinatura"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:37
+#, fuzzy
 msgid ""
 "This requires the ``MakeCert.exe`` and ``Pvk2Pfx.exe`` tools, which come "
 "with the Windows SDK. If you use Visual Studio, you can open one of its "
 "Developer Prompts, since it comes with these tools and they can be located "
 "in the path."
 msgstr ""
+"Isso requer as ferramentas ``MakeCert.exe`` e ``Pvk2Pfx.exe``, que vêm com o "
+"Windows SDK. Se você usa Visual Studio, você pode abrir um de seus Developer "
+"Prompts, pois ele vem com essas ferramentas e elas podem ser localizadas no "
+"caminho."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:41
+#, fuzzy
 msgid ""
 "You can get more detailed instructions from `Microsoft's documentation "
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
 "aspx>`__."
 msgstr ""
+"Você pode obter instruções mais detalhadas na `documentação da Microsoft "
+"<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
+"aspx>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:44
+#, fuzzy
 msgid "First, run ``MakeCert`` to create a private key::"
-msgstr ""
+msgstr "Primeiro, execute ``MakeCert``` para criar uma chave privada::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:48
+#, fuzzy
 msgid ""
 "Where ``publisherName`` matches the Publisher Name of your package and "
 "``expirationDate`` is in the ``mm/dd/yyyy`` format."
 msgstr ""
+"Onde `` publisherName`` corresponde ao Nome do Publicador do seu pacote e `` "
+"expirationDate`` está no formato `` mm / dd / aaaa``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:51
+#, fuzzy
 msgid ""
 "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx."
 "exe``::"
 msgstr ""
+"Em seguida, crie um arquivo de Troca de Informações Pessoais (.pfx) usando "
+"''Pvk2Pfx.exe'::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:55
+#, fuzzy
 msgid ""
 "If you don't specify a password with ``/po`` argument, the PFX will have the "
 "same password as the private key."
 msgstr ""
+"Se você não especificar uma senha com o argumento ``/po``, o PFX terá a "
+"mesma senha da chave privada."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:58
+#, fuzzy
 msgid ""
 "You will also need to trust this certificate in order to be able to install "
 "your app. Open the Command Prompt as Administrator and run the following "
 "command::"
 msgstr ""
+"Você também precisará confiar neste certificado para poder instalar seu "
+"aplicativo. Abra o Prompt de Comando como Administrador e execute o seguinte "
+"comando::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
+#, fuzzy
 msgid "Signing the package"
-msgstr ""
+msgstr "Assinando o pacote"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
+#, fuzzy
 msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
 msgstr ""
+"Finalmente, utilize o ``SignTool.exe`` do Windows SDK ou Visual Studio::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
 msgid "Installing the package"

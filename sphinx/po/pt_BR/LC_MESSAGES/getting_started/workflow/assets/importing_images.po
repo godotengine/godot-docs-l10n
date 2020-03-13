@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,44 +93,63 @@ msgid "Godot can import the following image formats:"
 msgstr "Godot suporta os seguintes *formatos de arquivo de cena* 3D:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
+#, fuzzy
 msgid "BMP (``.bmp``)"
-msgstr ""
+msgstr "BMP (``.bmp``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:39
+#, fuzzy
 msgid ""
 "DirectDraw Surface (``.dds``) - If mipmaps are present in the texture, they "
 "will be loaded directly. This can be used to achieve effects using custom "
 "mipmaps."
 msgstr ""
+"Superfície do DirectDraw (`` .dds``) - Se houver mipmaps na textura, eles "
+"serão carregados diretamente. Isso pode ser usado para obter efeitos usando "
+"mipmaps personalizados."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
+#, fuzzy
 msgid ""
 "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
 msgstr ""
+"OpenEXR (``.exr``) - Suporta HDR (altamente recomendado para céus "
+"panorâmicos)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
+#, fuzzy
 msgid ""
 "Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
 "skies)."
 msgstr ""
+"Radiance HDR (``.hdr``) - Suporta HDR (altamente recomendado para céus "
+"panorâmicos)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
+#, fuzzy
 msgid ""
 "JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
 "limitations."
 msgstr ""
+"JPEG (``.jpg``, ``.jpeg```) - Não suporta transparência de acordo com as "
+"limitações do formato."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
+#, fuzzy
 msgid ""
 "PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
 "(no HDR images)."
 msgstr ""
+"PNG (``.png```) - A precisão é limitada a 8 bits por canal na importação "
+"(sem imagens HDR)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
+#, fuzzy
 msgid "Truevision Targa (``.tga``)"
-msgstr ""
+msgstr "Truevision Targa (``.tga``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:51
+#, fuzzy
 msgid ""
 "SVG (``.svg``, ``.svgz``) - SVGs are rasterized using `NanoSVG <https://"
 "github.com/memononen/nanosvg>`__ when importing them. Support is limited; "
@@ -139,16 +158,27 @@ msgid ""
 "automated thanks to its `command-line interface <https://wiki.inkscape.org/"
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
+"SVG (``.svg``, ``.svgz``) - SVGs são rasterizados utilizando ``NanoSVG "
+"<https://github.com/memononen/nanosvg>`__ ao importá-los. O suporte é "
+"limitado; os vetores complexos podem não renderizar corretamente. Para "
+"vetores complexos, renderizá-los a PNGs usando o Inkscape é muitas vezes uma "
+"solução melhor. Isto pode ser automatizado graças à sua \"interface de linha "
+"de comando\" <https://wiki.inkscape.org/wiki/index.php/"
+"Using_the_Command_Line#Export_files>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+#, fuzzy
 msgid "WebP (``.webp``)"
-msgstr ""
+msgstr "WebP (``.webp```)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
+#, fuzzy
 msgid ""
 "If you've compiled the Godot editor from source with specific modules "
 "disabled, some formats may not be available."
 msgstr ""
+"Se você compilou o editor Godot a partir da fonte com módulos específicos "
+"desabilitados, alguns formatos podem não estar disponíveis."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 #, fuzzy
@@ -196,12 +226,18 @@ msgstr ""
 "vídeo do que a VRAM."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
+#, fuzzy
 msgid ""
 "**Lossy Compression:** This is a good choice for large 2D assets. It has "
 "some artifacts, but less than VRAM and the file size is several times lower "
 "compared to Lossless or Uncompressed. Video memory usage isn't decreased by "
 "this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
+"** Compressão com perdas: ** Esta é uma boa opção para grandes recursos 2D. "
+"Ele possui alguns artefatos, mas menos que a VRAM e o tamanho do arquivo é "
+"várias vezes menor em comparação com Sem Perdas ou Descomprimido. O uso da "
+"memória de vídeo não diminui nesse modo; é o mesmo que com a compactação sem "
+"perdas ou sem compactação."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 #, fuzzy

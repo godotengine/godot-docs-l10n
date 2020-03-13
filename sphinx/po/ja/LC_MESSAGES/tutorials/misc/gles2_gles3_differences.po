@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,10 +126,12 @@ msgid "HDR"
 msgstr "\\ HDR"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
+#, fuzzy
 msgid ""
-"GLES is not capable of using High Dynamic Range (HDR) rendering features. If "
-"HDR is set for your project, or for a given viewport, Godot will still user "
-"Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` range."
+"GLES2 is not capable of using High Dynamic Range (HDR) rendering features. "
+"If HDR is set for your project, or for a given viewport, Godot will still "
+"user Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` "
+"range."
 msgstr ""
 "GLESは、ハイダイナミックレンジ(HDR)レンダリング機能を使用できません。プロジェ"
 "クトまたは特定のビューポートにHDRが設定されている場合、Godotは引き続きビュー"
@@ -149,7 +151,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:58
 msgid "Refraction"
-msgstr ""
+msgstr "Refraction(屈折)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
 msgid "Subsurface scattering"
@@ -157,11 +159,11 @@ msgstr "サブサーフェススキャタリング"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:60
 msgid "Anisotropy"
-msgstr ""
+msgstr "Anisotropy(異方性)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
 msgid "Clearcoat"
-msgstr ""
+msgstr "Clearcoat(クリアコート)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
 msgid "Depth mapping"
@@ -224,7 +226,7 @@ msgstr "環境光"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:84
 msgid "Fog"
-msgstr ""
+msgstr "Fog(霧)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:85
 msgid "Depth of field"

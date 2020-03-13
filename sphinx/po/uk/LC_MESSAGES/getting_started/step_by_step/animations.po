@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr "Вступ"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:9
 msgid "Godot's animation system is extremely powerful and flexible."
-msgstr ""
+msgstr "Анімаційна система Godot надзвичайно потужна та гнучка."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:11
 msgid ""
@@ -36,35 +36,47 @@ msgid ""
 "splash image. Here's a copy just in case: :download:`robisplash.zip <files/"
 "robisplash.zip>`."
 msgstr ""
+"Для початку скористаємося сценою з попереднього уроку (:ref:"
+"`doc_splash_screen`). Задача полягає в тому, щоб до зображення привітання "
+"додати анімацію \"зникнення\". Ось копія, про всяк випадок::download:"
+"`robisplash.zip <files/robisplash.zip>`."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:16
+#, fuzzy
 msgid "Add an animation player"
-msgstr ""
+msgstr "Додавання анімації"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:18
+#, fuzzy
 msgid ""
 "First of all, add an :ref:`AnimationPlayer <class_AnimationPlayer>` node to "
 "the scene as a child of \"background\" (the root node):"
 msgstr ""
+"Перш за все, додайте до сцени вузол :ref:`AnimationPlayer "
+"<class_AnimationPlayer>` нащадком \"background\" (кореневого вузла):"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:23
 msgid ""
 "When a node of this type is selected, the animation editor panel will appear:"
-msgstr ""
+msgstr "При виборі вузлів такого типу з'являється панель редактора анімації:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:28
 msgid "The animation editor panel stays visible until manually hidden."
 msgstr ""
+"Панель редактора анімації залишається видимою, поки її не заховати вручну."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:31
 msgid "Creating the animation"
-msgstr ""
+msgstr "Створення анімації"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:33
 msgid ""
 "It's time to create a new animation! Press the Animation button then select "
 "new from the menu. Name the animation \"intro\" when the dialog appears."
 msgstr ""
+"Настав час створити нову анімацію! Натисніть кнопку Анімація, а потім "
+"виберіть у меню Новий. Назвіть анімацію \"intro\" (\"вступ\"), коли "
+"з'явиться діалогове вікно."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:40
 msgid ""
@@ -72,14 +84,19 @@ msgid ""
 "\" mode. In this mode, a key icon appears next to every property of the "
 "property editor. In Godot, any property of an object can be animated:"
 msgstr ""
+"Тепер, коли у нас є анімація, редактор властивостей переходить у режим "
+"«редагування анімації». У цьому режимі, поруч із кожною властивістю "
+"редактора властивостей, з’являється значок ключа. У Godot будь-яка "
+"властивість об'єкта може бути анімована:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:48
 msgid "Editing the animation"
-msgstr ""
+msgstr "Редагування анімації"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:50
+#, fuzzy
 msgid "The logo will appear from the top of the screen."
-msgstr ""
+msgstr "Логотип буде з'являтися у верхній частині екрана."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:52
 msgid ""
@@ -87,38 +104,52 @@ msgid ""
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
 "next to the property to add a keyframe:"
 msgstr ""
+"Відкривши панель редактора анімації, виберіть вузол \"logo\" і встановіть "
+"властивість \"Rect / Position\" на ``(118, -400)``, натисніть ключ поруч із "
+"властивістю, щоб додати ключовий кадр:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:58
+#, fuzzy
 msgid "When the dialog appears, confirm that you are creating a new track."
 msgstr ""
+"Коли з'явиться діалогове вікно, підтвердіть, що ви створюєте нову доріжку."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:60
+#, fuzzy
 msgid "The keyframe will be added in the animation player editor:"
-msgstr ""
+msgstr "Ключовий кадр буде додано в редактор плеєра анімації:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:64
 msgid "Move the editor cursor forward in time by clicking here:"
-msgstr ""
+msgstr "Перемістіть курсор редактора вперед, натиснувши тут:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:68
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes with different values, the animation happens."
 msgstr ""
+"Змініть положення логотипу на ``(118, 0)`` і знову додайте ключовий кадр. З "
+"двома ключовими кадрами з різними значеннями відбувається анімація."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:73
+#, fuzzy
 msgid ""
-"Pressing \"Play selected animation from start. (Shift-D)\" on the animation "
-"panel will make the logo descend."
+"Pressing \"Play selected animation from start\" button on the animation "
+"panel (or :kbd:`Shift + D` on keyboard) will make the logo descend."
 msgstr ""
+"Натискання \"Відтворити вибрану анімацію від початку. (Shift-D)\" на "
+"анімаційній панелі змусить логотип опуститися."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:78
 msgid ""
 "Click the \"Autoplay on Load\" button to set the animation to start "
 "automatically when the scene starts."
 msgstr ""
+"Натисніть кнопку \"Автовідтворення при завантаженні\", щоб анімація "
+"відтворювалася автоматично при старті сцени."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:83
+#, fuzzy
 msgid ""
 "And finally, when running the scene, the animation should look like this:"
-msgstr ""
+msgstr "Врешті при запуску сцени має відтворюватися приблизно така анімація:"

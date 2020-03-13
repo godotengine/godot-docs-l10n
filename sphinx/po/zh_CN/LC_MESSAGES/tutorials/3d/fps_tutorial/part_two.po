@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -494,8 +494,9 @@ msgstr ""
 "也被称为枪管。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:303
+#, fuzzy
 msgid ""
-"For finer control when scrubbing the timeline, press ``control`` and scroll "
+"For finer control when scrubbing the timeline, press :kbd:`Ctrl` and scroll "
 "forward with the mouse wheel to zoom in. Scrolling backwards will zoom out."
 msgstr ""
 "要在删除时间线时进行更精细的控制，请按“控制”并使用鼠标滚轮向前滚动以放大。向"
@@ -513,8 +514,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Once you get to a point you like, right click on the row for \"Animation "
-"Player\" and press insert key. In the empty name field, enter "
-"``animation_callback`` and press ``enter``."
+"Player\" and press ``Insert Key``. In the empty name field, enter "
+"``animation_callback`` and press :kbd:`Enter`."
 msgstr ""
 "点击后，右侧会打开一个新窗口。 现在单击 ``AnimationPlayer`` 轨道上的绿点。 这"
 "将显示与时间线中该点相关的信息。 在空名称字段中，输入 ``animation_callback`` "
@@ -554,9 +555,10 @@ msgstr ""
 "以在轨道上的该位置添加功能回调点。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:327
+#, fuzzy
 msgid ""
 "Type \"animation_callback\" into the name field of the pop up which opened "
-"and press ``enter``."
+"and press :kbd:`Enter`."
 msgstr "在弹出窗口的名称字段中输入“动画_回调”，然后按“回车”键。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:329
@@ -583,9 +585,10 @@ msgstr ""
 "用枪械射击逻辑，因此动画的命名风格与其他动画一致。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:337
+#, fuzzy
 msgid ""
 "From there right click on the timeline and click \"Insert Key\". Put "
-"\"animation_callback\" into the name field and press ``enter``."
+"\"animation_callback\" into the name field and press :kbd:`Enter`."
 msgstr ""
 "从那里右键单击时间轴并单击“插入关键帧”。将“动画_回调”放入名称字段并按“回车”。"
 
@@ -627,10 +630,11 @@ msgstr ""
 "在这种方法中，我们在枪的方向上创建/生成一个子弹对象，然后向前行进。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:356
+#, fuzzy
 msgid ""
 "There are several advantages to this method. The first being we do not have "
 "to store the bullets in our player. We can simply create the bullet and then "
-"move on, and the bullet itself with handle checking for collisions, sending "
+"move on, and the bullet itself will handle checking for collisions, sending "
 "the proper signal(s) to the object it collides with, and destroying itself."
 msgstr ""
 "这种方法有几个优点。 首先，我们不必将子弹存储在我们的游戏角色中。 我们可以简"
@@ -2209,8 +2213,8 @@ msgstr "打开 ``Testing_Area.tscn`` 并选择所有以'`Cubes``节点为父级�
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1219
 #, fuzzy
 msgid ""
-"If you select the top cube, and then hold down ``shift`` and select the last "
-"cube, Godot will select all the cubes in-between!"
+"If you select the top cube, and then hold down :kbd:`Shift` and select the "
+"last cube, Godot will select all the cubes in-between!"
 msgstr ""
 "如果选择顶部立方体，然后按住“shift”并选择最后一个立方体，Godot将选择其间的所"
 "有立方体！"

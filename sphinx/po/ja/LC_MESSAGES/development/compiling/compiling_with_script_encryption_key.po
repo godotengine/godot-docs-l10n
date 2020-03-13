@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:4
 msgid "Compiling with script encryption key"
-msgstr ""
+msgstr "スクリプト暗号化キーを使用してコンパイルする"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:8
 msgid ""
@@ -30,12 +30,20 @@ msgid ""
 "compiled, optimized and without symbols, it would take some effort to find "
 "it."
 msgstr ""
+"エクスポートダイアログには、ゲームをリリースするときに、256ビットAESキーでス"
+"クリプトを暗号化するオプションがあります。これにより、スクリプトがプレーンテ"
+"キストで保存されず、一部のスクリプトキディが簡単にリッピングできないようにな"
+"ります。もちろん、キーはバイナリに保存する必要がありますが、コンパイルされ、"
+"最適化されており、シンボルがなければ、それを見つけるのに多少の努力が必要で"
+"す。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:14
 msgid ""
 "For this to work, you need to build the export templates from source, with "
 "that same key."
 msgstr ""
+"これが機能するためには、同じキーを使用してソースからエクスポートテンプレート"
+"を構築する必要があります。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:18
 msgid "Step by step"
@@ -46,44 +54,54 @@ msgid ""
 "Generate a 256bit AES key in HEX. You can use the aes-256-cbc variant from "
 "`this service <https://asecuritysite.com/encryption/keygen>`_."
 msgstr ""
+"HEXで256ビットAESキーを生成します。\\ `this service <https://asecuritysite."
+"com/encryption/keygen>`_ のaes-256-cbcバリアントを使用できます。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:23
 msgid "Alternatively, you can generate it yourself by using OpenSSL:"
-msgstr ""
+msgstr "または、OpenSSLを使用して自分で生成することもできます:"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:29
 msgid "This should output the following to ``godot.gdkey`` file:"
-msgstr ""
+msgstr "これは ``godot.gdkey`` ファイルに以下を出力するはずです:"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:37
 msgid ""
 "You can generate the key without redirecting the output to a file, but that "
 "way you can minimize the risk of exposing the key."
 msgstr ""
+"出力をファイルにリダイレクトせずにキーを生成できますが、その方法でキーを公開"
+"するリスクを最小限に抑えることができます。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:40
 msgid ""
 "Set this key as environment variable in the console that you will use to "
 "compile Godot, like this:"
 msgstr ""
+"次のように、このキーをGodotのコンパイルに使用するコンソールの環境変数として設"
+"定します:"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:52
 msgid ""
 "Compile Godot export templates and set them as custom export templates in "
 "the export preset options."
 msgstr ""
+"Godotエクスポートテンプレートをコンパイルし、エクスポートプリセットオプション"
+"でカスタムエクスポートテンプレートとして設定します。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:55
 msgid "Set the encryption key in the ``Script`` tab of the export preset:"
-msgstr ""
+msgstr "エクスポートプリセットの ``スクリプト`` タブで暗号化キーを設定します:"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:59
 msgid "Export the project. The game should run with encrypted scripts now."
 msgstr ""
+"プロジェクトをエクスポートします。ゲームは暗号化されたスクリプトで実行される"
+"はずです。"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:62
 msgid "Possible Errors"
-msgstr ""
+msgstr "考えられるエラー"
 
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:64
 msgid ""
@@ -91,3 +109,6 @@ msgid ""
 "your Godot build. Godot is encrypting the scripts during export, but can't "
 "read them at runtime."
 msgstr ""
+"以下のようなエラーが表示された場合、キーがGodotビルドに適切に含まれていなかっ"
+"たことを意味します。Godotはエクスポート中にスクリプトを暗号化しますが、実行時"
+"にそれらを読み取ることはできません。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,9 +177,10 @@ msgstr ""
 "\"Гарантирует, что дети объекта не могут быть выбраны.\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
+#, fuzzy
 msgid ""
-"Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
-"``Command+S`` on Mac."
+"Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
+"Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
 "Сохраните сцену. Выберите меню \"Сцена\" -> \"Сохранить\" или нажмите \"Ctrl"
 "+S\" на Windows/Linux или ``Command+S`` на Mac."
@@ -934,7 +935,6 @@ msgstr ""
 "``Path2D``, вы увидите несколько новых кнопок в верхней части редактора:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:676
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -943,9 +943,9 @@ msgid ""
 msgstr ""
 "Выберите среднюю (\"Добавить Точку\") и нарисуйте путь, щелкнув, чтобы "
 "добавить точки на указанные углы. Чтобы точки привязывались к сетке "
-"убедитесь, что пункт \"Привязывать к сетке\" включен. Эта опция может быть "
-"найдена под кнопкой \"Опции привязывания\", левее кнопки \"Закрепить\", в "
-"виде ряда из трёх вертикальных точек."
+"убедитесь, что пункт \"Привязывать к сетке\" включен.Эту опцию можно найти "
+"слева от кнопки \"Закрепить\", и она выглядит как магнит с несколькими "
+"пересекающимися линиями."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:683
 msgid ""
@@ -998,10 +998,11 @@ msgstr ""
 "переменными скрипта на узле ``Main``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:740
+#, fuzzy
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
-"when a game ends. Type \"game_over\" in the \"Method In Node\" box at the "
+"when a game ends. Type \"game_over\" in the \"Receiver Method\" box at the "
 "bottom of the \"Connecting Signal\" window. Add the following code, as well "
 "as a ``new_game`` function to set everything up for a new game:"
 msgstr ""
@@ -1528,9 +1529,10 @@ msgstr ""
 "\"ui_select\". Это событие ввода по умолчанию, связанное с пробелом."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1230
+#, fuzzy
 msgid ""
-"Now when the start button appears, you can either click it or press the "
-"spacebar to start the game."
+"Now when the start button appears, you can either click it or press :kbd:"
+"`Space` to start the game."
 msgstr ""
 "Теперь, когда появится кнопка запуска, вы можете нажать на неё или на "
 "пробел, чтобы начать игру."

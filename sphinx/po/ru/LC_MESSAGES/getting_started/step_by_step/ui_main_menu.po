@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,16 +38,15 @@ msgid "A game UI with a health bar, energy bar, bomb and money counters."
 msgstr "Игровой UI со шкалой здоровья и энергии, счетчиками бомб и денег."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`."
 msgstr ""
-"Вы научитесь разрабатывать UI эффективно, а так же использовать \"Узлы "
-"управления Godot\". Эта страница фокусируется на визуальной части: все что "
-"вы можете сделать с помощью редактора. Для того, чтобы научиться писать код "
-"для шкалы здоровья, читайте :doc:`ui_code_a_life_bar`"
+"Вы научитесь разрабатывать UI эффективно, а так же использовать узлы типа "
+"\"Control\". Эта страница фокусируется на визуальной части: все что вы "
+"можете сделать с помощью редактора. Для того, чтобы научиться писать код для "
+"шкалы здоровья, читайте :doc:`ui_code_a_life_bar`."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create."
@@ -113,13 +112,12 @@ msgstr ""
 "игроками. В противном случае:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
-#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
 "Слишком сильный упор на графику на этой стадии может исказить восприятие "
-"тестерами вашего интерфейса и вы лишитесь ценных отзывов"
+"игроками игрового процесса и вы лишитесь ценных отзывов"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
@@ -280,12 +278,13 @@ msgstr ""
 "сцену, нажмите на меню **Сцена -> Новая Сцена**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
+#, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
 "``MarginContainer``. ``MarginContainer`` is a good starting point for most "
-"interfaces, as you often need padding around the UI. Press ``Meta+S`` to "
-"save the scene to the disk. Name it *MainMenu*."
+"interfaces, as you often need padding around the UI. Press :kbd:`Meta + S` "
+"to save the scene to the disk. Name it *MainMenu*."
 msgstr ""
 "Мы должны добавить корневой узел, прежде чем мы сможем сохранить сцену. "
 "Корневой элемент UI должен быть самым внешним контейнером или элементом. В "
@@ -357,11 +356,12 @@ msgid "and the main menu’s illustration."
 msgstr "И иллюстрация главного меню."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
+#, fuzzy
 msgid ""
-"Click the **Add Node** button or press ``Meta+A`` on your keyboard. Start to "
-"type ``TextureRect`` to find the corresponding node and press enter. With "
-"the new node selected, press ``Meta+D`` five times to create five extra "
-"``TextureRect`` instances."
+"Click the **Add Node** button or press :kbd:`Meta + A` on your keyboard. "
+"Start to type ``TextureRect`` to find the corresponding node and press "
+"enter. With the new node selected, press :kbd:`Meta + D` five times to "
+"create five extra ``TextureRect`` instances."
 msgstr ""
 "Нажмите кнопку ``Добавить узел``, или нажмите ``Ctrl+A`` на клавиатуре. "
 "Начните вводить ``TextureRect``, чтобы найти соответствующий узел, и нажмите "
@@ -510,13 +510,14 @@ msgstr ""
 "поместите её внутрь CenterContainer."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
+#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
-"container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
-"+A`` to add a new node inside it. Add a second ``VBoxContainer`` and name it "
-"*MenuOptions*. Select all three menu options, ``Continue``, ``NewGame`` and "
-"``Options``, and drag and drop them inside the new ``VBoxContainer``. The "
-"UI's layout should barely change, if at all."
+"container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
+"`Meta + A` to add a new node inside it. Add a second ``VBoxContainer`` and "
+"name it *MenuOptions*. Select all three menu options, ``Continue``, "
+"``NewGame`` and ``Options``, and drag and drop them inside the new "
+"``VBoxContainer``. The UI's layout should barely change, if at all."
 msgstr ""
 "Чтобы добавить пространство между меню и логотипом слева, мы будем "
 "использовать один последний контейнер и его флаги размера(size flags). "
@@ -561,12 +562,12 @@ msgstr ""
 "инспектора и измените свойство ``Alignment`` на ``Center``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
-#, fuzzy
 msgid "The menu options should center vertically in the UI's left column."
-msgstr "MenuOption должен центрироваться по вертикали в левом столбце"
+msgstr ""
+"Пункты меню должны быть выровнены по центру по вертикали в левом столбце "
+"пользовательского интерфейса."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:263
-#, fuzzy
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the **Custom Constants** category below **Size Flags**, and click the "
@@ -574,11 +575,11 @@ msgid ""
 "enter, the **Separation** property becomes active and Godot adds 30 pixels "
 "between menu options."
 msgstr ""
-"Чтобы отодвинуть их друг от друга, давайте добавим некоторое разделение "
-"между параметрами меню. Разверните категорию ``Custom Constants``которая "
-"ниже ``Size Flags`` и щелкните на поле рядом с параметром ``Separation``. "
-"Установите его на 30. После нажатия клавиши Enter, свойство ``Separation`` "
-"становится активным и Godot добавляет 30 пикселей между MenuOptions."
+"Наконец, давайте добавим некоторое разделение между параметрами меню. "
+"Разверните категорию **Custom Constants** которая ниже **Size Flags** и "
+"щелкните на поле рядом с параметром **Separation**. Установите его на 30. "
+"После нажатия клавиши Enter, свойство **Separation** становится активным и "
+"Godot добавляет 30 пикселей между MenuOptions."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
 msgid "The final interface."
@@ -613,9 +614,10 @@ msgstr ""
 "контейнеры для управления позицией и размера элемента UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:289
+#, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
-"different screen ratios, select the root node, press the Q key to activate "
+"different screen ratios, select the root node, press :kbd:`Q` to activate "
 "the Select Mode, select the container and click and drag on one of the "
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
@@ -639,7 +641,6 @@ msgstr ""
 "все окно вверх и вниз."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:301
-#, fuzzy
 msgid ""
 "You can change the scale mode in the project settings: click **Project > "
 "Project Settings** in the top menu. In the window's left column, look for "
@@ -649,7 +650,8 @@ msgid ""
 "information, see :ref:`doc_multiple_resolutions`."
 msgstr ""
 "Вы можете изменить режим масштабирования в настройках проекта: выберите меню "
-"Проект-> Параметры проекта. В левом столбце найдите категорию Display. "
-"Нажмите на подкатегорию Window. В правой части окна вы найдете раздел "
-"Stretch. Три параметра, Mode, Aspect и Shrink управляют размером экрана. Для "
-"получения дополнительной информации см.: :ref:`doc_multiple_resolutions`."
+"**Проект > Настройки проекта**. В левом столбце найдите категорию **Экран**. "
+"Нажмите на под категорию **Окна**. В правой части окна вы найдете раздел "
+"**Растяжение**. Три параметра, **Режим**,** Aspect** и **Shrink** управляют "
+"размером экрана. Для получения дополнительной информации см.: :ref:"
+"`doc_multiple_resolutions`."

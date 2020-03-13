@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -390,28 +390,29 @@ msgid "Promise that resolves once the engine started."
 msgstr "引擎启动后解析的承诺。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
+#, fuzzy
 msgid ""
-"Initializes the engine if not yet initialized and starts the game with the "
-"main pack loaded from the passed URL."
+"Initializes the engine if not yet initialized, loads the executable, and "
+"starts the game with the main pack loaded from the passed URL."
 msgstr "初始化引擎(如果还没有初始化)，并使用从传递的URL加载的主包启动游戏。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:193
+#, fuzzy
 msgid ""
-"If the engine isn't loaded yet, the base path of the passed URL will be used "
-"to load the engine."
+"If the engine isn't loaded yet, the base path of the passed executable name "
+"will be used to load the engine."
 msgstr "如果尚未加载引擎，则将使用传递的URL的基本路径来加载引擎。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:196
+#, fuzzy
 msgid ""
-"This function ignores overrides of filenames and their extensions to start "
-"only the main pack passed as argument."
-msgstr "这个函数忽略文件名及其扩展名的覆盖，只启动作为参数传递的主包。"
-
-#: ../../docs/tutorials/platform/customizing_html5_shell.rst:199
-msgid ""
-"Path to the main pack to start. Also used as base path to load the engine if "
-"not loaded already."
+"Executable's name (URL) to start. Also used as base path to load the engine "
+"if not loaded already. Should not contain the file's extension."
 msgstr "从主包路径启动游戏。如果还没有加载引擎，也可用作加载引擎的基本路径。"
+
+#: ../../docs/tutorials/platform/customizing_html5_shell.rst:200
+msgid "Path (URL) to the main pack to start."
+msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:203
 msgid "Promise that resolves once the game started."

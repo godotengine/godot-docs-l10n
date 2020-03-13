@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,9 +54,9 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
-"Godotでのゲーム作りもとても似た感覚です。このエンジンを使うときはキッチンにい"
-"るような感覚になります。このキッチンでは、\\ *ノード*\\ は料理に使う、冷蔵庫"
-"にいっぱいの新鮮な材料です。"
+"Godotでのゲーム作りも、とても似た感覚です。このエンジンを使うときはキッチンに"
+"いるような気分になります。このキッチンでは *ノード* が、冷蔵庫にいっぱいの新"
+"鮮な料理材料です。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
@@ -282,15 +282,15 @@ msgstr ""
 "状態でLabelがビューポート左上の角にあらわれます。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
+#, fuzzy
 msgid ""
-"The node appears in the scene tree editor (box in the top right corner), and "
-"the label properties appear in the Inspector (box in the bottom right "
-"corner)."
+"The node appears in the scene tree editor in the Scene dock, and the label "
+"properties appear in the Inspector dock."
 msgstr ""
 "Labelノードはシーンツリーエディタ(右上のボックス)にあり、Labelのプロパティは"
 "インスペクタ(右下のボックス)に表示されます。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:137
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
@@ -298,19 +298,20 @@ msgstr ""
 "次の一歩はLabelの「Text(テキスト)」プロパティを変更することです。「Hello "
 "world」に変えてみましょう:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:142
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
+#, fuzzy
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
-"top bar (or hit F6):"
+"top bar (or hit :kbd:`F6`):"
 msgstr ""
 "OK、これでシーンを動かす準備が整いました！上のバーにあるシーン再生ボタン(ある"
 "いはF6キー)を押してください:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:147
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
 msgstr "すると……あらら。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:151
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
@@ -318,7 +319,7 @@ msgstr ""
 "シーンを動かすにはまず保存する必要があるので、「シーン → シーンを保存」にて "
 "Hello.tscn のような名前を付けてから保存してください:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:156
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:155
 msgid ""
 "And here's when something funny happens. The file dialog is a special file "
 "dialog, and only allows you to save inside the project. The project root is "
@@ -329,13 +330,13 @@ msgid ""
 "are from inside the game."
 msgstr ""
 "ここで変わったことが起こります。これはプロジェクト内にのみ保存が許される、特"
-"殊なファイルダイアログです。プロジェクトのルートは「res://」で、『リソースの"
-"パス』を意味します。これはプロジェクト内にのみに保存できることを意味します。"
-"Godotでファイル操作するときは「res://」がリソースのパスであることを覚えておき"
-"ましょう。プラットフォームやインストール場所にかかわらず、ゲーム内にあるリ"
-"ソースファイルを見つけるための手段です。"
+"殊なファイルダイアログです。プロジェクトのルートは ``res://`` で、『リソース"
+"のパス』を意味します。これはプロジェクト内にのみに保存できることを意味しま"
+"す。Godotでファイル操作するときは ``res://`` がリソースのパスであることを覚え"
+"ておきましょう。プラットフォームやインストール場所にかかわらず、ゲーム内にあ"
+"るリソースファイルを見つけるための手段です。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:164
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
@@ -343,26 +344,26 @@ msgstr ""
 "シーンを保存してから、シーン再生をまた押すと、ついに「Hello World」のデモが動"
 "くはずです:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:169
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Success!"
 msgstr "成功！"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:173
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:172
 msgid ""
 "If this doesn't immediately work and you have a hiDPI display on at least "
 "one of your monitors, go to **Project → Project Settings → Display → "
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
-"これがすぐに機能せず、(マルチモニターまたはシングルモニターでの使用環境を問わ"
-"ず)少なくとも1つのモニターに高DPIディスプレイがある場合は、\\ **プロジェクト→"
-"プロジェクト設定→Display→Window**\\ に進み、\\ ** Dpi **\\ で\\ **Allow "
-"Hidpi **\\ をオンにします。"
+"もし、これがすぐに機能せず、(マルチモニターまたはシングルモニターでの使用環境"
+"を問わず)少なくとも1つのモニターに高DPIディスプレイがある場合は、\\ **プロ"
+"ジェクト → プロジェクト設定 → Display → Window**\\ に進み、\\ **Dpi**\\ で\\ "
+"**Allow Hidpi**\\ をオンにします。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
 msgid "Configuring the project"
 msgstr "プロジェクトの設定"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
@@ -374,7 +375,7 @@ msgstr ""
 "め、メインとなるシーンを決めなければなりません。プロジェクトを実行するときは"
 "常にそのシーンから読み込まれます。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""
 "These settings are all stored in a project.godot file, which is a plaintext "
 "file in win.ini format (for easy editing). There are dozens of settings that "
@@ -388,13 +389,13 @@ msgstr ""
 "godotファイル編集用フロントエンドともいえる、プロジェクト設定ダイアログが"
 "Godotにはあります。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:194
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:193
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
 "ダイアログは『プロジェクト -> プロジェクト設定』からアクセスできます。開いて"
 "みてください。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
@@ -402,7 +403,7 @@ msgstr ""
 "ウィンドウが開いたら、メインメニューを設定しましょう。\\ `Application/Run/"
 "Main Scene`\\ のプロパティを押してHello.tscnを選んでください。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:201
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
@@ -410,7 +411,7 @@ msgstr ""
 "この変更により、通常の再生ボタン (またはF5) を押すと、どのシーンがアクティブ"
 "に編集されているかにかかわらず、このシーンが実行されます。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""
 "The project settings dialog provides a lot of options that can be saved to a "
 "project.godot file and shows their default values. If you change a value, a "
@@ -422,7 +423,7 @@ msgstr ""
 "マークされます。つまり、プロパティはproject.godotファイルに保存され、記憶され"
 "ます。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:208
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
@@ -431,11 +432,11 @@ msgstr ""
 "ちなみに\\ :ref:`プロジェクト設定 <class_ProjectSettings>`\\ シングルトンを"
 "使って、実行時に、カスタム設定オプションの追加と確認も可能です。"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:213
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:212
 msgid "To be continued..."
 msgstr "続く..."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:215
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:214
 msgid ""
 "This tutorial talked about \"scenes and nodes\", but so far there has been "
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "

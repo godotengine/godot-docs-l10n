@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,10 +49,20 @@ msgid ""
 "consider Godot's high-level networking API, which sacrifices some of the "
 "fine-grained control of low-level networking for greater ease of use."
 msgstr ""
+"Godot a toujours soutenu les réseaux standard de bas niveau via UDP, TCP et "
+"certains protocoles de niveau supérieur tels que SSL et HTTP. Ces protocoles "
+"sont flexibles et peuvent être utilisés pour presque tout. Cependant, leur "
+"utilisation pour synchroniser manuellement l'état du jeu peut représenter "
+"une grande quantité de travail. Parfois, ce travail ne peut pas être évité "
+"ou en vaut la peine, par exemple lorsqu'on travaille avec une implémentation "
+"de serveur personnalisé sur le backend. Mais dans la plupart des cas, il est "
+"intéressant de considérer l'API de réseau de haut niveau de Godot, qui "
+"sacrifie une partie du contrôle fin du réseau de bas niveau pour une plus "
+"grande facilité d'utilisation."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
 msgid "This is due to the inherent limitations of the low-level protocols:"
-msgstr ""
+msgstr "Cela est dû aux limites inhérentes aux protocoles de bas niveau :"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:16
 msgid ""
@@ -65,6 +75,17 @@ msgid ""
 "for games. Some of this can be configured and disabled (e.g. by disabling "
 "\"Nagle's algorithm\" for the TCP connection)."
 msgstr ""
+"Le TCP garantit que les paquets arriveront toujours de manière fiable et en "
+"ordre, mais la latence est généralement plus élevée en raison de la "
+"correction des erreurs. C'est aussi un protocole assez complexe parce qu'il "
+"comprend ce qu'est une \"connexion\" et optimise pour des objectifs qui "
+"souvent ne conviennent pas à des applications comme les jeux multijoueurs. "
+"Les paquets sont mis en mémoire tampon pour être envoyés par lots plus "
+"importants, ce qui permet de réduire les coûts par paquet en échange "
+"d'augmenter la latence. Cela peut être utile pour des choses comme le HTTP, "
+"mais généralement pas pour les jeux. Certains de ces éléments peuvent être "
+"configurés et désactivés (par exemple en désactivant \"l'algorithme de Nagle"
+"\" pour la connexion TCP)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:18
 msgid ""
@@ -75,6 +96,14 @@ msgid ""
 "hundred bytes), so transmitting larger packets means splitting them, "
 "reorganizing them and retrying if a part fails."
 msgstr ""
+"L'UDP est un protocole plus simple, qui n'envoie que des paquets (et n'a "
+"aucune notion de \"connexion\"). Aucune correction d'erreur permet d'obtenir "
+"un résultat rapide (faible latence), mais les paquets peuvent être perdus en "
+"cours de route ou reçus dans le mauvais ordre. De plus, la MTU (taille "
+"maximale des paquets) pour l'UDP est généralement faible (quelques centaines "
+"d'octets seulement), de sorte que la transmission de paquets plus volumineux "
+"implique de les diviser, de les réorganiser et de réessayer si une partie "
+"échoue."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:23
 msgid ""
@@ -86,6 +115,14 @@ msgid ""
 "this, most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
+"En général, le TCP peut être considéré comme fiable, ordonné et lent ; l'UDP "
+"comme peu fiable, non ordonné et rapide. En raison de la grande différence "
+"de performances, il est souvent judicieux de reconstruire les parties de TCP "
+"souhaitées pour les jeux (fiabilité en option et ordre des paquets), tout en "
+"évitant les parties non souhaitées (fonctions de contrôle de la congestion/"
+"du trafic, algorithme de Nagle, etc.) De ce fait, la plupart des moteurs de "
+"jeu sont livrés avec une telle implémentation, et Godot ne fait pas "
+"exception."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
 msgid ""
@@ -94,6 +131,11 @@ msgid ""
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
 msgstr ""
+"En résumé, vous pouvez utiliser l'API réseau de bas niveau pour un contrôle "
+"maximal et implémenter le tout au-dessus des protocoles réseau nus ou "
+"utiliser l'API de haut niveau basée sur :ref:`SceneTree "
+"<class_SceneTree>`qui fait la plupart du gros du travail derrière la scène "
+"d'une manière généralement optimisée."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:28
 msgid ""
@@ -104,21 +146,40 @@ msgid ""
 "currently only offers WebSocket support and lacks some of the higher level "
 "features as well as raw access to low-level protocols like TCP and UDP."
 msgstr ""
+"La plupart des plateformes prises en charge par Godot offrent toutes ou la "
+"plupart des fonctionnalités de réseau de haut et de bas niveau mentionnées. "
+"Cependant, comme la mise en réseau dépend toujours largement du matériel et "
+"du système d'exploitation, certaines fonctionnalités peuvent changer ou ne "
+"pas être disponibles sur certaines plateformes cibles. Plus "
+"particulièrement, la plate-forme HTML5 n'offre actuellement que la prise en "
+"charge de WebSocket et ne dispose pas de certaines des fonctionnalités de "
+"haut niveau, ni d'un accès brut aux protocoles de bas niveau comme TCP et "
+"UDP."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:34
+#, fuzzy
 msgid ""
-"More about TCP/IP, UDP, and networking: https://gafferongames.com/post/"
-"udp_vs_tcp/"
+"More about TCP/IP, UDP, and networking: https://web.archive.org/"
+"web/20190406162102/https://gafferongames.com/post/udp_vs_tcp/"
 msgstr ""
+"Pour en savoir plus sur le TCP/IP, l'UDP et leréseau : https://gafferongames."
+"com/post/udp_vs_tcp/"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:37
+#, fuzzy
 msgid ""
 "Gaffer On Games has a lot of useful articles about networking in Games "
-"(`here <https://gafferongames.com/tags/networking>`__), including the "
-"comprehensive `introduction to networking models in games <https://"
-"gafferongames.com/post/"
+"(`here <https://web.archive.org/web/20190405204744/https://gafferongames.com/"
+"tags/networking/>`__), including the comprehensive `introduction to "
+"networking models in games <http://web.archive.org/web/20190407004521/"
+"https://gafferongames.com/post/"
 "what_every_programmer_needs_to_know_about_game_networking/>`__."
 msgstr ""
+"Gaffer On Games propose de nombreux articles utiles sur le réseautage dans "
+"les jeux (`ici <https://gafferongames.com/tags/networking>`__), notamment le "
+"très complet `introduction aux modèles de réseautage dans les jeux <https://"
+"gafferongames.com/post/"
+"what_every_programmer_needs_to_know_about_game_networking/>`__."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:41
 msgid ""
@@ -126,6 +187,9 @@ msgid ""
 "Godot's built-in networking, see here for an example: https://github.com/"
 "PerduGames/gdnet3"
 msgstr ""
+"Si vous souhaitez utiliser une bibliothèque réseau de bas niveau de votre "
+"choix au lieu du réseau intégré de Godot, voir ici un exemple : https://"
+"github.com/PerduGames/gdnet3"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:45
 msgid ""
@@ -135,6 +199,13 @@ msgid ""
 "application runs on and use your servers to send spam, attack others or "
 "steal your users data if they play your game."
 msgstr ""
+"Ajouter l'utilisation du réseau dans votre jeu implique une certaine "
+"responsabilité. Elle peut rendre votre applicationvulnérable si elle est mal "
+"faite et peut conduire à de la triche) ou à des exploitation de faille. Cela "
+"peut même permettre à un attaquant de compromettre les machines sur "
+"lesquelles votre application tourne et d'utiliser vos serveurs pour envoyer "
+"du spam, d'attaquer d'autres personnes ou de voler les données de vos "
+"utilisateurs s'ils jouent à votre jeu."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:50
 msgid ""
@@ -142,10 +213,14 @@ msgid ""
 "with Godot. You can of course experiment, but when you release a networked "
 "application, always take care of any possible security concerns."
 msgstr ""
+"C'est toujours le cas lorsqu'il s'agit de mise en réseau et que cela n'a "
+"rien à voir avec Godot. Vous pouvez bien sûr faire des expériences, mais "
+"lorsque vous lancez une application en réseau, prenez toujours en compte les "
+"éventuels problèmes de sécurité."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:55
 msgid "Mid level abstraction"
-msgstr ""
+msgstr "Abstraction de niveau moyen"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:57
 msgid ""
@@ -153,114 +228,161 @@ msgid ""
 "network, it can be helpful to understand how the base network API for "
 "synchronization works."
 msgstr ""
+"Avant d'expliquer comment nous aimerions synchroniser un jeu sur le réseau, "
+"il peut être utile de comprendre comment fonctionne l'API de synchronisation "
+"du réseau de base."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:59
+#, fuzzy
 msgid ""
 "Godot uses a mid-level object :ref:`NetworkedMultiplayerPeer "
 "<class_NetworkedMultiplayerPeer>`. This object is not meant to be created "
-"directly, but is designed so that several implementations can provide it:"
+"directly, but is designed so that several implementations can provide it."
 msgstr ""
+"Godot utilise un objet de niveau intermédiaire :ref:"
+"`NetworkedMultiplayerPeer <class_NetworkedMultiplayerPeer>`. Cet objet n'est "
+"pas destiné à être créé directement, mais est conçu de manière à ce que "
+"plusieurs implémentations puissent le fournir :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:64
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:62
 msgid ""
 "This object extends from :ref:`PacketPeer <class_PacketPeer>`, so it "
 "inherits all the useful methods for serializing, sending and receiving data. "
 "On top of that, it adds methods to set a peer, transfer mode, etc. It also "
 "includes signals that will let you know when peers connect or disconnect."
 msgstr ""
+"Cet objet s'étend de :ref:`PacketPeer <class_PacketPeer>`, il hérite donc de "
+"toutes les méthodes utiles pour sérialiser, envoyer et recevoir des données. "
+"En plus de cela, il ajoute des méthodes pour définir un pair, un mode de "
+"transfert, etc. Il comprend également des signaux qui vous permettront de "
+"savoir quand vos pairs se connectent ou se déconnectent."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:66
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:64
+#, fuzzy
 msgid ""
 "This class interface can abstract most types of network layers, topologies "
 "and libraries. By default, Godot provides an implementation based on ENet (:"
-"ref:`NetworkedMultiplayerEnet <class_NetworkedMultiplayerENet>`), but this "
-"could be used to implement mobile APIs (for adhoc WiFi, Bluetooth) or custom "
-"device/console-specific networking APIs."
+"ref:`NetworkedMultiplayerEnet <class_NetworkedMultiplayerENet>`), one based "
+"on WebRTC (:ref:`WebRTCMultiplayer <class_WebRTCMultiplayer>`), and one "
+"based on WebSocket (:ref:`WebSocketMultiplayerPeer "
+"<class_WebSocketMultiplayerPeer>`), but this could be used to implement "
+"mobile APIs (for adhoc WiFi, Bluetooth) or custom device/console-specific "
+"networking APIs."
 msgstr ""
+"Cette interface de classe peut abstraire la plupart des types de couches de "
+"réseau, de topologies et de bibliothèques. Par défaut, Godot fournit une "
+"implémentation basée sur ENet (:ref:`NetworkedMultiplayerEnet "
+"<class_NetworkedMultiplayerENet>`), mais celle-ci pourrait être utilisée "
+"pour implémenter des API mobiles (pour le WiFi adhoc, Bluetooth) ou des API "
+"réseau spécifiques à un appareil ou une console."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:69
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:70
 msgid ""
 "For most common cases, using this object directly is discouraged, as Godot "
 "provides even higher level networking facilities. Yet it is made available "
 "in case a game has specific needs for a lower level API."
 msgstr ""
+"Dans la plupart des cas, il est déconseillé d'utiliser directement cet "
+"objet, car Godot fournit des possibilités de mise en réseau de niveau encore "
+"plus élevé. Il est cependant mis à disposition au cas où un jeu aurait des "
+"besoins spécifiques pour une API de niveau inférieur."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:73
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:74
 msgid "Initializing the network"
-msgstr ""
+msgstr "Initialisation du réseau"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:75
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:76
 msgid ""
 "The object that controls networking in Godot is the same one that controls "
 "everything tree-related: :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
+"L'objet qui contrôle le réseau dans Godot est le même qui contrôle tout ce "
+"qui concerne l'arbre de scène : :ref:`SceneTree <class_SceneTree>`."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:77
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:78
 msgid ""
 "To initialize high level networking, the SceneTree must be provided a "
 "NetworkedMultiplayerPeer object."
 msgstr ""
+"Pour initialiser le réseau de haut niveau, il faut fournir au SceneTree un "
+"objet NetworkedMultiplayerPeer."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:79
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:80
 msgid ""
 "To create that object, it first has to be initialized as a server or client."
 msgstr ""
+"Pour créer cet objet, il doit d'abord être initialisé en tant que serveur ou "
+"client."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:81
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:82
 msgid ""
 "Initializing as a server, listening on the given port, with a given maximum "
 "number of peers:"
 msgstr ""
+"Initialisation en tant que serveur, écoute sur le port donné, avec un nombre "
+"maximum donné de pairs :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:89
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:90
 msgid "Initializing as a client, connecting to a given IP and port:"
 msgstr ""
+"S'initialiser en tant que client, se connecter à une IP et un port donnés :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:97
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:98
 msgid "Get the previously set network peer:"
-msgstr ""
+msgstr "Obtenez le pair de réseau précédemment défini :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:103
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:104
 msgid "Checking whether the tree is initialized as a server or client:"
-msgstr ""
+msgstr "Vérifier si l'arbre est initialisé en tant que serveur ou client :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:109
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:110
 msgid "Terminating the networking feature:"
-msgstr ""
+msgstr "Mettre fin à la fonction réseau :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:115
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:116
 msgid ""
 "(Although it may make sense to send a message first to let the other peers "
 "know you're going away instead of letting the connection close or timeout, "
 "depending on your game.)"
 msgstr ""
+"(Bien qu'il puisse être judicieux d'envoyer d'abord un message pour faire "
+"savoir aux autres pairs que vous partez, au lieu de laisser la connexion se "
+"fermer ou s'interrompre, selon votre jeu.)"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:118
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:119
 msgid "Managing connections"
-msgstr ""
+msgstr "Gestion des connexions"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:120
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:121
+#, fuzzy
 msgid ""
 "Some games accept connections at any time, others during the lobby phase. "
 "Godot can be requested to no longer accept connections at any point (see "
-"`set_refuse_new_network_connections(bool)` and related methods on :ref:"
+"``set_refuse_new_network_connections(bool)`` and related methods on :ref:"
 "`SceneTree <class_SceneTree>`). To manage who connects, Godot provides the "
 "following signals in SceneTree:"
 msgstr ""
+"Certains jeux acceptent les connexions à tout moment, d'autres pendant la "
+"phase de lobby. On peut demander à Godot de ne plus accepter de connexions à "
+"tout moment (voir `set_refuse_new_network_connections(bool)` et les méthodes "
+"associées dans :ref:`SceneTree <class_SceneTree>`). Pour gérer qui se "
+"connecte, Godot fournit les signaux suivants dans SceneTree :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:123
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:124
 msgid "Server and Clients:"
-msgstr ""
-
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:125
-msgid "`network_peer_connected(int id)`"
-msgstr ""
+msgstr "Serveur et clients :"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:126
-msgid "`network_peer_disconnected(int id)`"
-msgstr ""
+#, fuzzy
+msgid "``network_peer_connected(int id)``"
+msgstr "`network_peer_connected(int id)`"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:128
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:127
+#, fuzzy
+msgid "``network_peer_disconnected(int id)``"
+msgstr "`network_peer_disconnected(int id)`"
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:129
 msgid ""
 "The above signals are called on every peer connected to the server "
 "(including on the server) when a new peer connects or disconnects. Clients "
@@ -272,24 +394,37 @@ msgid ""
 "stored, as they identify connected peers and thus players. You can also use "
 "IDs to send messages only to certain peers."
 msgstr ""
+"Les signaux ci-dessus sont appelés pour chaque pair connecté au serveur (y "
+"compris sur le serveur), quand un nouveau pair se connecte ou se déconnecte. "
+"Les clients se connectent avec un identifiant unique (ID) supérieur à 1, et "
+"l’identifiant 1 est toujours le serveur. Tous les ID inférieurs à 1 doivent "
+"être traités comme invalides. On peut récupérer l’ID pour le système local "
+"avec :ref:`SceneTree.get_network_unique_id() "
+"<class_SceneTree_method_get_network_unique_id>`. Ces ID sont surtout utiles "
+"pour la gestion des salons et devraient généralement être stockés car ils "
+"identifient les pairs connectés et donc les joueurs. On peut aussi utiliser "
+"les identifiants pour n’envoyer des messages qu’à certains pairs."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:134
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:135
 msgid "Clients:"
-msgstr ""
-
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:136
-msgid "`connected_to_server`"
-msgstr ""
+msgstr "Clients :"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:137
-msgid "`connection_failed`"
-msgstr ""
+#, fuzzy
+msgid "``connected_to_server``"
+msgstr "`connected_to_server`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:138
-msgid "`server_disconnected`"
-msgstr ""
+#, fuzzy
+msgid "``connection_failed``"
+msgstr "`connection_failed`"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:140
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:139
+#, fuzzy
+msgid "``server_disconnected``"
+msgstr "`server_disconnected`"
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:141
 msgid ""
 "Again, all these functions are mainly useful for lobby management or for "
 "adding/removing players on the fly. For these tasks, the server clearly has "
@@ -297,79 +432,105 @@ msgid ""
 "newly connected player information about other already connected players (e."
 "g. their names, stats, etc)."
 msgstr ""
+"Encore une fois, toutes ces fonctions sont surtout utiles pour la gestion "
+"des salons, ou pour ajouter ou retirer des joueurs à la volée. Dans ces cas-"
+"là, le serveur doit clairement marcher comme un serveur, et il faut faire "
+"des manipulations à la main, comme envoyer aux joueurs qui se connectent des "
+"informations sur les joueurs déjà connectés (par exemple leurs noms, "
+"statistiques, etc.)."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:144
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:145
 msgid ""
 "Lobbies can be implemented any way you want, but the most common way is to "
 "use a node with the same name across scenes in all peers. Generally, an "
 "autoloaded node/singleton is a great fit for this, to always have access to, "
 "e.g. \"/root/lobby\"."
 msgstr ""
+"Les salons peuvent être implémentés comme on le veut, mais la manière la "
+"plus courante est d’utiliser un nœud avec le même nom dans les scènes chez "
+"tous les pairs. En général, un nœud ou singleton auto-chargés convient très "
+"bien pour ça, pour avoir toujours accès, par exemple, à \"/root/salon\"."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:148
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:149
 msgid "RPC"
-msgstr ""
+msgstr "RPC"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:150
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:151
 msgid ""
 "To communicate between peers, the easiest way is to use RPCs (remote "
 "procedure calls). This is implemented as a set of functions in :ref:`Node "
 "<class_Node>`:"
 msgstr ""
-
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:153
-msgid "`rpc(\"function_name\", <optional_args>)`"
-msgstr ""
+"Pour communiquer entre pairs, le plus simple est d’utiliser des RPC "
+"(**remote procedure calls**, appels de procédures distantes). Ils sont "
+"implémentés sous la forme d’un ensemble de fonctions dans :ref:`Node "
+"<class_Node>` :"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:154
-msgid "`rpc_id(<peer_id>,\"function_name\", <optional_args>)`"
-msgstr ""
+#, fuzzy
+msgid "``rpc(\"function_name\", <optional_args>)``"
+msgstr "`rpc(\"function_name\", <optional_args>)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:155
-msgid "`rpc_unreliable(\"function_name\", <optional_args>)`"
-msgstr ""
+#, fuzzy
+msgid "``rpc_id(<peer_id>,\"function_name\", <optional_args>)``"
+msgstr "`rpc_id(<peer_id>,\"function_name\", <optional_args>)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:156
-msgid "`rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)`"
-msgstr ""
+#, fuzzy
+msgid "``rpc_unreliable(\"function_name\", <optional_args>)``"
+msgstr "`rpc_unreliable(\"function_name\", <optional_args>)`"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:158
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:157
+#, fuzzy
+msgid "``rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)``"
+msgstr "`rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)`"
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:159
 msgid "Synchronizing member variables is also possible:"
-msgstr ""
-
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:160
-msgid "`rset(\"variable\", value)`"
-msgstr ""
+msgstr "Il est aussi possible de synchroniser des variables membres :"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:161
-msgid "`rset_id(<peer_id>, \"variable\", value)`"
-msgstr ""
+#, fuzzy
+msgid "``rset(\"variable\", value)``"
+msgstr "`rset(\"variable\", value)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:162
-msgid "`rset_unreliable(\"variable\", value)`"
-msgstr ""
+#, fuzzy
+msgid "``rset_id(<peer_id>, \"variable\", value)``"
+msgstr "`rset_id(<peer_id>, \"variable\", value)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:163
-msgid "`rset_unreliable_id(<peer_id>, \"variable\", value)`"
-msgstr ""
+#, fuzzy
+msgid "``rset_unreliable(\"variable\", value)``"
+msgstr "`rset_unreliable(\"variable\", value)`"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:165
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:164
+#, fuzzy
+msgid "``rset_unreliable_id(<peer_id>, \"variable\", value)``"
+msgstr "`rset_unreliable_id(<peer_id>, \"variable\", value)`"
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:166
 msgid "Functions can be called in two fashions:"
-msgstr ""
+msgstr "Il y a deux manières d’appeler les fonctions :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:167
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:168
 msgid ""
 "Reliable: the function call will arrive no matter what, but may take longer "
 "because it will be re-transmitted in case of failure."
 msgstr ""
+"Fiable : l’appel de fonction arrivera quoi qu’il arrive, mais prendra plus "
+"longtemps car il devra être transmis à nouveau en cas d’échec."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:168
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:169
 msgid ""
 "Unreliable: if the function call does not arrive, it will not be re-"
 "transmitted; but if it arrives, it will do it quickly."
 msgstr ""
+"Non-fiable : si l’appel de fonction n’arrive pas, il ne sera pas "
+"retransmis ; mais s’il arrive, ce sera rapidement."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:170
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:171
 msgid ""
 "In most cases, reliable is desired. Unreliable is mostly useful when "
 "synchronizing object positions (sync must happen constantly, and if a packet "
@@ -377,30 +538,45 @@ msgid ""
 "would likely be outdated because the object moved further in the meantime, "
 "even if it was resent reliably)."
 msgstr ""
+"Dans la plupart des cas, il vaut mieux choisir fiable. Non-fiable est "
+"surtout utile pour synchroniser des positions d’objets : la synchronisation "
+"doit se faire constamment, et si un paquet est perdu, ce n’est pas très "
+"grave car un autre arrivera tôt ou tard. Le premier ne serait sans doute "
+"plus à jour même s’il était renvoyé de manière fiable, car l’objet aurait "
+"bougé pendant ce temps."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:173
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:174
+#, fuzzy
 msgid ""
-"There is also the `get_rpc_sender_id` function in `SceneTree`, which can be "
-"used to check which peer (or peer ID) sent an RPC."
+"There is also the ``get_rpc_sender_id`` function in ``SceneTree``, which can "
+"be used to check which peer (or peer ID) sent an RPC."
 msgstr ""
+"Il y a aussi la fonction `get_rpc_sender_id` dans `SceneTree` qui peut être "
+"utilisée pour vérifier quel pair, ou quel identifiant de pair, a envoyé un "
+"RPC."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:176
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:177
 msgid "Back to lobby"
 msgstr "Retour au lobby"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:178
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:179
 msgid ""
 "Let's get back to the lobby. Imagine that each player that connects to the "
 "server will tell everyone about it."
 msgstr ""
+"Revenons au salon. Imaginons que chaque joueur qui se connecte au serveur "
+"prévienne tout le monde."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:224
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:225
+#, fuzzy
 msgid ""
 "You might have already noticed something different, which is the usage of "
-"the `remote` keyword on the `register_player` function:"
+"the ``remote`` keyword on the ``register_player`` function:"
 msgstr ""
+"Vous aurez peut-être remarqué autre chose : l’usage du mot-clé `remote` sur "
+"la fonction `register_player` :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:230
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:231
 msgid ""
 "This keyword has two main uses. The first is to let Godot know that this "
 "function can be called from RPC. If no keywords are added, Godot will block "
@@ -408,49 +584,73 @@ msgid ""
 "easier (so a client can't call a function to delete a file on another "
 "client's system)."
 msgstr ""
+"Ce mot-clé a deux utilisations principales. La première est de faire savoir "
+"à Godot que la fonction peut être appelée depuis RPC. Si aucun mot-clé n’est "
+"ajouté, Godot bloque par sécurité toutes les tentatives d’appeler des "
+"fonctions. Cela facilite beaucoup la sécurité (pour qu’un client ne puisse "
+"pas appeler une fonction qui supprime un fichier sur le système d’un autre "
+"client)."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:234
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:235
 msgid ""
 "The second use is to specify how the function will be called via RPC. There "
 "are four different keywords:"
 msgstr ""
-
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:236
-msgid "`remote`"
-msgstr "`remote`"
+"La seconde utilisation est de spécifier comment la fonction sera appelée par "
+"RPC. Il y a quatre mots-clés différents :"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:237
-msgid "`remotesync`"
-msgstr "`remotesync`"
+#, fuzzy
+msgid "``remote``"
+msgstr "`remote`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:238
-msgid "`master`"
-msgstr "`master`"
+#, fuzzy
+msgid "``remotesync``"
+msgstr "`remotesync`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:239
-msgid "`puppet`"
+#, fuzzy
+msgid "``master``"
+msgstr "`master`"
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:240
+#, fuzzy
+msgid "``puppet``"
 msgstr "`puppet`"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:241
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:242
+#, fuzzy
 msgid ""
-"The `remote` keyword means that the `rpc()` call will go via network and "
+"The ``remote`` keyword means that the ``rpc()`` call will go via network and "
 "execute remotely."
 msgstr ""
+"Le mot-clé `remote` signifie que l’appel `rpc()` traversera le réseau et "
+"sera exécuté à distance."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:243
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:244
+#, fuzzy
 msgid ""
-"The `remotesync` keyword means that the `rpc()` call will go via network and "
-"execute remotely, but will also execute locally (do a normal function call)."
+"The ``remotesync`` keyword means that the ``rpc()`` call will go via network "
+"and execute remotely, but will also execute locally (do a normal function "
+"call)."
 msgstr ""
+"Le mot-clé `remotesync` signifie que l’appel `rpc()` traversera le réseau et "
+"sera exécuté à distance, mais qu’il sera aussi exécuté localement (et fera "
+"donc un appel de fonction normal)."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:245
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:246
+#, fuzzy
 msgid ""
 "The others will be explained further down. Note that you could also use the "
-"`get_rpc_sender_id` function on `SceneTree` to check which peer actually "
-"made the RPC call to `register_player`."
+"``get_rpc_sender_id`` function on ``SceneTree`` to check which peer actually "
+"made the RPC call to ``register_player``."
 msgstr ""
+"Les autres seront expliqués plus loin. Notez qu’on peut aussi utiliser la "
+"fonction `get_rpc_sender_id` sur `SceneTree` pour s’assurer de quel pair a "
+"fait l’appel RPC à `register_player`."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:248
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:249
 msgid ""
 "With this, lobby management should be more or less explained. Once you have "
 "your game going, you will most likely want to add some extra security to "
@@ -458,181 +658,261 @@ msgid ""
 "from time to time, or before game start). For the sake of simplicity and "
 "because each game will share different information, this is not shown here."
 msgstr ""
+"Avec tout ça, la gestion de salons est plus ou moins expliquée. Une fois que "
+"le jeu tournera, il faudra sûrement ajouter de la sécurité en plus pour "
+"s’assurer que les clients ne fassent rien de bizarre (simplement valider les "
+"infos qu’ils envoient de temps en temps, ou avant que la partie ne "
+"commence). Pour faire simple et parce que chaque jeu partagera des "
+"informations différentes, nous ne le montrerons pas ici."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:253
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:254
 msgid "Starting the game"
 msgstr "Démarrage du jeu"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:255
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:256
 msgid ""
 "Once enough players have gathered in the lobby, the server should probably "
 "start the game. This is nothing special in itself, but we'll explain a few "
 "nice tricks that can be done at this point to make your life much easier."
 msgstr ""
+"Une fois que les joueurs sont rassemblés dans le salon, le serveur va "
+"probablement lancer la partie. Ça n’a rien de spécial en soi, mais nous "
+"allons expliquer quelques petites astuces qu’on peut faire à ce stade pour "
+"se simplifier la vie."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:259
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:260
 msgid "Player scenes"
 msgstr "Scènes joueur"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:261
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:262
 msgid ""
 "In most games, each player will likely have its own scene. Remember that "
 "this is a multiplayer game, so in every peer you need to instance **one "
 "scene for each player connected to it**. For a 4 player game, each peer "
 "needs to instance 4 player nodes."
 msgstr ""
+"Dans la plupart des jeux, chaque joueur a sans doute sa propre scène. Il "
+"faut se rappeler que c’est un jeu multi-joueurs, donc chez chaque pair il "
+"faut instancier **une scène pour chaque joueur connecté**. Pour un jeu à "
+"quatre joueurs, chaque pair doit instancier quatre nœuds de joueurs."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:264
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:265
 msgid ""
 "So, how to name such nodes? In Godot, nodes need to have a unique name. It "
 "must also be relatively easy for a player to tell which node represents each "
 "player ID."
 msgstr ""
+"Alors comment appeler ces nœuds ? Dans Godot, les nœuds doivent avoir un nom "
+"unique. Il faut aussi que les joueurs puissent savoir assez facilement quel "
+"nœud représente chaque identifiant de joueur."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:267
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:268
 msgid ""
 "The solution is to simply name the *root nodes of the instanced player "
 "scenes as their network ID*. This way, they will be the same in every peer "
 "and RPC will work great! Here is an example:"
 msgstr ""
+"La solution est simplement de donner *l’identifiant réseau comme nom au nœud "
+"racine des scènes de joueur instanciées*. Ainsi, les noms seront les mêmes "
+"chez chaque pair et le RPC marchera au poil ! Voici un exemple :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:296
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:297
 msgid ""
 "Depending on when you execute pre_configure_game(), you may need to change "
 "any calls to ``add_child()`` to be deferred via ``call_deferred()``, as the "
 "SceneTree is locked while the scene is being created (e.g. when ``_ready()`` "
 "is being called)."
 msgstr ""
+"Selon le moment où on exécute pre_configure_game(), il peut falloir différer "
+"les appels à ``add_child()`` en utilisant ``call_deferred()``, parce que "
+"l’arbre des scènes est verrouillé pendant que la scène est crée (p. ex. "
+"quand ``_ready()`` est appelée)."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:300
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
 msgid "Synchronizing game start"
-msgstr ""
+msgstr "Synchroniser le démarrage de la partie"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:302
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:303
 msgid ""
 "Setting up players might take different amounts of time for every peer due "
 "to lag, different hardware, or other reasons. To make sure the game will "
 "actually start when everyone is ready, pausing the game until all players "
 "are ready can be useful:"
 msgstr ""
+"Chaque pair peut prendre un temps différent pour configurer les joueurs, à "
+"cause de latences, de matériel différent, ou d’autres raisons. Pour "
+"s’assurer que la partie commence quand tout le monde est prêt, il peut être "
+"utile de mettre le jeu en pause jusqu’à ce que tous les joueurs soient "
+"prêts :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:311
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:312
 msgid ""
 "When the server gets the OK from all the peers, it can tell them to start, "
 "as for example:"
 msgstr ""
+"Quand le serveur reçoit le signal de tous les pairs, il peut leur dire de "
+"commencer, par exemple :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:332
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:333
 msgid "Synchronizing the game"
-msgstr ""
+msgstr "Synchronisation du jeu"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:334
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:335
 msgid ""
 "In most games, the goal of multiplayer networking is that the game runs "
 "synchronized on all the peers playing it. Besides supplying an RPC and "
 "remote member variable set implementation, Godot adds the concept of network "
 "masters."
 msgstr ""
+"Dans la plupart des jeux, le but du réseau multi-joueurs et que le jeu soit "
+"synchronisé entre tous les pairs qui jouent. En plus de fournir un RPC et "
+"l’implémentation d’un groupe de variables membres distantes, Godot ajoute le "
+"concept de maîtres réseau."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:338
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
 msgid "Network master"
-msgstr ""
+msgstr "Maître réseau"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:340
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:341
 msgid ""
 "The network master of a node is the peer that has the ultimate authority "
 "over it."
 msgstr ""
+"Le maître réseau d’un nœud est le pair qui a l’autorité suprême sur lui."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:342
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
 msgid ""
 "When not explicitly set, the network master is inherited from the parent "
 "node, which if not changed, is always going to be the server (ID 1). Thus "
 "the server has authority over all nodes by default."
 msgstr ""
+"Quand il n’est pas défini explicitement, le maître réseau est hérité du nœud "
+"parent, qui sera toujours le serveur (ID 1) s’il n’a pas changé. Le serveur "
+"a donc par défaut autorité sur tous les nœuds."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:344
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
 msgid ""
 "The network master can be set with the function :ref:`Node."
 "set_network_master(id, recursive) <class_Node_method_set_network_master>` "
 "(recursive is ``true`` by default and means the network master is "
 "recursively set on all child nodes of the node as well)."
 msgstr ""
+"Le maître réseau peut être défini avec la fonction :ref:`Node."
+"set_network_master(id, recursive) <class_Node_method_set_network_master>` "
+"(recursive est ``true`` par défaut et signifie que le maître réseau est "
+"aussi défini récursivement sur tous les nœuds enfants du nœud)."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:348
 msgid ""
 "Checking that a specific node instance on a peer is the network master for "
 "this node for all connected peers is done by calling :ref:`Node."
 "is_network_master() <class_Node_method_is_network_master>`. This will return "
 "``true`` when executed on the server and ``false`` on all client peers."
 msgstr ""
+"Pour vérifier qu’une instance donnée d’un nœud chez un pair est le maître "
+"réseau de ce nœud chez tous les pairs connectés, on appelle :ref:`Node."
+"is_network_master() <class_Node_method_is_network_master>`. Ça retourne "
+"``true`` quand on l’exécute sur le serveur et ``false`` sur tous les clients "
+"pairs."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:350
 msgid ""
 "If you have paid attention to the previous example, it's possible you "
 "noticed that each peer was set to have network master authority for their "
 "own player (Node) instead of the server:"
 msgstr ""
+"Si vous tendiez l’oreille à l’exemple précédent, vous avez peut-être "
+"remarqué que chaque pair était configuré pour avoir l’autorité de maître "
+"réseau pour son propre joueur (Nœud) au lieu du serveur :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:369
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:370
 msgid ""
 "Each time this piece of code is executed on each peer, the peer makes itself "
 "master on the node it controls, and all other nodes remain as puppets with "
 "the server being their network master."
 msgstr ""
+"À chaque fois que ce bout de code est exécuté sur chaque pair, ce pair se "
+"rend maître sur le nœud qu’il contrôle, et tous les autres nœuds restent des "
+"pantins, le serveur étant leur maître réseau."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:371
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:372
 msgid ""
 "To clarify, here is an example of how this looks in the `bomber demo "
 "<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
 "multiplayer_bomber>`_:"
 msgstr ""
+"Pour clarifier par l’exemple, voici à quoi ça ressemble dans la `démo "
+"bomber. <https://github.com/godotengine/godot-demo-projects/tree/master/"
+"networking/multiplayer_bomber>`_ :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:378
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:379
 msgid "Master and puppet keywords"
 msgstr "Mots-clés Master et puppet"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:382
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:383
+#, fuzzy
 msgid ""
-"The real advantage of this model is when used with the `master`/`puppet` "
+"The real advantage of this model is when used with the ``master``/``puppet`` "
 "keywords in GDScript (or their equivalent in C# and Visual Script). "
-"Similarly to the `remote` keyword, functions can also be tagged with them:"
+"Similarly to the ``remote`` keyword, functions can also be tagged with them:"
 msgstr ""
+"Le véritable intérêt de ce modèle est quand on l’utilise avec les mots-clés "
+"`master`(maître) ou `puppet` (pantin) en GDScript, ou leur équivalent en C# "
+"et Visual Script. Tout comme le mot-clé `remote` (distant), les fonctions "
+"peuvent aussi être taggées avec ces mots-clés :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:385
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
 msgid "Example bomb code:"
-msgstr ""
+msgstr "Exemple de code pour une bombe :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:393
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:394
 msgid "Example player code:"
-msgstr ""
+msgstr "Exemple de code pour un joueur :"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:407
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:408
+#, fuzzy
 msgid ""
 "In the above example, a bomb explodes somewhere (likely managed by whoever "
 "is master). The bomb knows the bodies in the area, so it checks them and "
-"checks that they contain an `exploded` function."
+"checks that they contain an ``exploded`` function."
 msgstr ""
+"Dans l’exemple ci-dessus, une bombe explose quelque part (sans doute gérée "
+"par le maître à ce moment-là). La bombe connaît les corps dans la zone, donc "
+"elle les teste et vérifie qu’ils contiennent une fonction `exploded`."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:410
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:411
+#, fuzzy
 msgid ""
-"If they do, the bomb calls `exploded` on it. However, the `exploded` method "
-"in the player has a `master` keyword. This means that only the player who is "
-"master for that instance will actually get the function."
+"If they do, the bomb calls ``exploded`` on it. However, the ``exploded`` "
+"method in the player has a ``master`` keyword. This means that only the "
+"player who is master for that instance will actually get the function."
 msgstr ""
+"Si oui, la bombe appelle `exploded` sur eux. Mais la méthode `exploded` du "
+"joueur a le mot-clé `master`. Cela signifie que seul le joueur qui est "
+"maître pour cette instance recevra vraiment la fonction."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:413
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:414
+#, fuzzy
 msgid ""
-"This instance, then, calls the `stun` method in the same instances of that "
+"This instance, then, calls the ``stun`` method in the same instances of that "
 "same player (but in different peers), and only those which are set as "
 "puppet, making the player look stunned in all the peers (as well as the "
 "current, master one)."
 msgstr ""
+"Cette instance appelle à son tour la méthode `stun` (assommer) chez les "
+"mêmes instances de ce même joueur (mais chez des pairs différents), et seuls "
+"ceux qui sont définis comme pantins. Le joueur est donc assommé chez tous "
+"les pairs (ainsi que l’actuel, le maître)."
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:416
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
+#, fuzzy
 msgid ""
-"Note that you could also send the stun() message only to a specific player "
-"by using rpc_id(<id>, \"exploded\", bomb_owner). This may not make much "
-"sense for an area-of-effect case like the bomb, but in other cases, like "
-"single target damage."
+"Note that you could also send the ``stun()`` message only to a specific "
+"player by using ``rpc_id(<id>, \"exploded\", bomb_owner)``. This may not "
+"make much sense for an area-of-effect case like the bomb, but in other "
+"cases, like single target damage."
 msgstr ""
+"Veuillez noter qu’on peut aussi envoyer le message stun() uniquement à un "
+"joueur donné en utilisant rpc_id(<id>, \"exploded\", bomb_owner). Ça n’a pas "
+"forcément de sens pour le cas d’une zone d’effet comme cette bombe, mais "
+"plutôt dans d’autres cas, comme des dégâts à une seule cible."

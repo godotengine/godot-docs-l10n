@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -299,15 +299,15 @@ msgstr ""
 "des Ansichtsfensters."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
+#, fuzzy
 msgid ""
-"The node appears in the scene tree editor (box in the top right corner), and "
-"the label properties appear in the Inspector (box in the bottom right "
-"corner)."
+"The node appears in the scene tree editor in the Scene dock, and the label "
+"properties appear in the Inspector dock."
 msgstr ""
 "Der Node erscheint als neuer Eintrag im Szenenbaum (oben rechts) und die "
 "Label-Eigenschaften werden im Inspektor aufgeführt (unten rechts)."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:137
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
@@ -315,20 +315,21 @@ msgstr ""
 "Mit dem nächsten Schritt wird die \"Text\"-Eigenschaft des Labels geändert. "
 "Ändern wir es zu \"Hello World\":"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:142
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
+#, fuzzy
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
-"top bar (or hit F6):"
+"top bar (or hit :kbd:`F6`):"
 msgstr ""
 "OK, alles bereit zum Ausführen der Szene! Betätige die \"Szene starten\"-"
 "Schaltfläche oben rechts (die kleine Filmklappe mit dem Play-Symbol) oder "
 "drücke F6:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:147
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
 msgstr "Uuuund... Ups."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:151
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
@@ -337,7 +338,7 @@ msgstr ""
 "Speichere also die Szene bspw. als \n"
 "\"Hello.tscn\" in \"Szene\" -> \"Szene speichern\" ab:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:156
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:155
 msgid ""
 "And here's when something funny happens. The file dialog is a special file "
 "dialog, and only allows you to save inside the project. The project root is "
@@ -356,7 +357,7 @@ msgstr ""
 "steht und unabhängig von Plattform oder Installationsort stets dafür genutzt "
 "wird, um auf Dateien innerhalb des Spiels heraus zuzugreifen."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:164
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
@@ -364,11 +365,11 @@ msgstr ""
 "Nach dem Abspeichern der Szene und nochmaligen Drücken von \"Szene starten\" "
 "sollte die \"Hello World\"-Demo nun endlich ausgeführt werden:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:169
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Success!"
 msgstr "Geschafft!"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:173
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:172
 msgid ""
 "If this doesn't immediately work and you have a hiDPI display on at least "
 "one of your monitors, go to **Project → Project Settings → Display → "
@@ -378,11 +379,11 @@ msgstr ""
 "kann dies unter **Projekt → Projekteinstellungen → Display → Window** "
 "aktiviert werden, indem unter **Dpi**, **Allow Hidpi** eingeschaltet wird."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
 msgid "Configuring the project"
 msgstr "Konfigurieren des Projekts"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
@@ -395,7 +396,7 @@ msgstr ""
 "Hauptszene bestimmt werden. Das ist die Szene, die gestartet wird, wenn das "
 "Projekt ausgeführt wird."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""
 "These settings are all stored in a project.godot file, which is a plaintext "
 "file in win.ini format (for easy editing). There are dozens of settings that "
@@ -409,13 +410,13 @@ msgstr ""
 "auszuführen ist. Um das Bearbeiten dieser Einstellungen zu vereinfachen, "
 "stellt Godot den \"Projekteinstellungen\"-Dialog zur Verfügung."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:194
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:193
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
 "Um diesen Dialog aufzurufen, wähle im Menü \"Projekt\" -> "
 "\"Projekteinstellungen\" aus. Versuch es jetzt einmal."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
@@ -425,7 +426,7 @@ msgstr ""
 "rechts auf das kleine Dateisymbol, um die 'Hello.tscn' als Hauptszene zu "
 "selektieren."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:201
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
@@ -434,7 +435,7 @@ msgstr ""
 "(oder F5) diese Szene ausgeführt, ganz gleich, welche Szene Du gerade "
 "bearbeitest."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""
 "The project settings dialog provides a lot of options that can be saved to a "
 "project.godot file and shows their default values. If you change a value, a "
@@ -448,7 +449,7 @@ msgstr ""
 "bedeutet, dass die Eigenschaft in der Datei project.godot gespeichert wird. "
 "Ein Klick auf diesen Pfeil setzt den Wert wieder auf Standard."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:208
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
@@ -458,11 +459,11 @@ msgstr ""
 "und diese während der Laufzeit über den :ref:`ProjectSettings "
 "<class_ProjectSettings>`-Singelton abzufragen."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:213
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:212
 msgid "To be continued..."
 msgstr "Fortsetzung folgt..."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:215
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:214
 msgid ""
 "This tutorial talked about \"scenes and nodes\", but so far there has been "
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "

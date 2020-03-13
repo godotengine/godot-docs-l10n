@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,11 +37,11 @@ msgstr "GCCまたはClang"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:15
 msgid "Python 3 or 2.7+"
-msgstr ""
+msgstr "Python 3 あるいは 2.7 以上"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:16
 msgid "SCons build system (3.0 or later for Python 3)"
-msgstr ""
+msgstr "SCons ビルドシステム (Python3には3.0以降)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:17
 msgid "pkg-config (used to detect the dependencies below)"
@@ -65,17 +65,19 @@ msgstr "PulseAudio開発ライブラリ"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:22
 msgid "*Optional* - libudev (build with ``udev=yes``)"
-msgstr ""
+msgstr "*任意* - libudev (``udev=yes`` でのビルドに)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:23
 msgid "*Optional* - yasm (for WebM SIMD optimizations)"
-msgstr ""
+msgstr "*任意* - yasm (WebM SIMD最適化のため)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:25
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
+"Godotにおける基本的なSconsの使い方については、\\ :ref:"
+"`doc_introduction_to_the_buildsystem`\\ を参照してください。"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:29
 msgid "Distro-specific one-liners"
@@ -87,39 +89,39 @@ msgstr "\\ **Alpine Linux**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:36
 msgid "**Arch Linux**"
-msgstr ""
+msgstr "**Arch Linux**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:41
 msgid "**Debian** / **Ubuntu**"
-msgstr ""
+msgstr "**Debian** / **Ubuntu**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:46
 msgid "**Fedora**"
-msgstr ""
+msgstr "**Fedora**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:52
 msgid "**FreeBSD**"
-msgstr ""
+msgstr "**FreeBSD**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:58
 msgid "**Gentoo**"
-msgstr ""
+msgstr "**Gentoo**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:63
 msgid "**Mageia**"
-msgstr ""
+msgstr "**Mageia**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:69
 msgid "**OpenBSD**"
-msgstr ""
+msgstr "**OpenBSD**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:73
 msgid "**openSUSE**"
-msgstr ""
+msgstr "**openSUSE**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:78
 msgid "**Solus**"
-msgstr ""
+msgstr "**Solus**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:85
 msgid "Compiling"
@@ -139,6 +141,10 @@ msgid ""
 "two more. Feel free to add the ``-j`` option to any SCons command you see "
 "below."
 msgstr ""
+"``-j`` (*jobs ジョブ*) フラグに関する経験則は、GodotのコンパイルにはCPUのコア"
+"数だけスレッドを割り当てるべきということです。そこからさらに一つか二つ追加し"
+"てもいいでしょう。下記にあるSConsコマンドのいずれにも自由に -j オプションを付"
+"けてください。"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:97
 msgid ""
@@ -169,12 +175,27 @@ msgid ""
 "executable smaller and faster by adding the SCons option "
 "``target=release_debug``."
 msgstr ""
+"制作に使うGodotをコンパイルするなら、SConsのオプション "
+"``target=release_debug`` を追加すれば、より小さくて高速な実行ファイルにするこ"
+"とができます。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:118
+#: ../../docs/development/compiling/compiling_for_x11.rst:117
+#, fuzzy
+msgid ""
+"If you are compiling Godot with GCC, you can make the binary even smaller "
+"and faster by adding the SCons option ``use_lto=yes``. As link-time "
+"optimization is a memory-intensive process, this will require about 3 GB of "
+"available RAM while compiling."
+msgstr ""
+"GodotをMinGWでコンパイルするなら、SConsのオプション ``use_lto=yes`` を追加す"
+"れば、さらに小さくて高速なバイナリにすることができます。リンク時最適化には大"
+"量のメモリを消費するので、およそ 3GB の使用可能なRAMを必要とします。"
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:123
 msgid "Building export templates"
 msgstr "エクスポートテンプレートの構築"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:120
+#: ../../docs/development/compiling/compiling_for_x11.rst:125
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -182,8 +203,13 @@ msgid ""
 "such as Ubuntu 16.04. You can use a virtual machine or a container to set up "
 "a suitable build environment."
 msgstr ""
+"Linuxのバイナリは通常、ビルドしたディストリビューションより古いディストリ"
+"ビューションでは動きません。もし大抵のディストリビューションで動作するバイナ"
+"リを配布したいなら、Ubuntu 16.04のような古いディストリビューションでビルドす"
+"るべきでしょう。バーチャルマシンやコンテナを使えば、適切なビルド環境をセット"
+"アップできます。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:128
+#: ../../docs/development/compiling/compiling_for_x11.rst:133
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
@@ -191,28 +217,30 @@ msgstr ""
 "X11(Linux、\\*BSD)エクスポートテンプレートをビルドするには、次のパラメーター"
 "を使用してビルド システムを実行します:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:131
+#: ../../docs/development/compiling/compiling_for_x11.rst:136
 msgid "(32 bits)"
 msgstr "(32ビット)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:138
+#: ../../docs/development/compiling/compiling_for_x11.rst:143
 msgid "(64 bits)"
 msgstr "(64ビット)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:145
+#: ../../docs/development/compiling/compiling_for_x11.rst:150
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
 msgstr ""
+"注意点として、現在のホスト プラットフォームの反対のビット(64/32)へのクロスコ"
+"ンパイルは、簡単にいくとは限らず、chroot環境が必要になるかもしれません。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:148
+#: ../../docs/development/compiling/compiling_for_x11.rst:153
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
 "標準のエクスポート テンプレートを作成するには、結果のファイルを次の場所にコ"
 "ピーする必要があります:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:154
+#: ../../docs/development/compiling/compiling_for_x11.rst:159
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
@@ -220,7 +248,7 @@ msgstr ""
 "そして、このように命名されます (Godotでは\\*BSD の場合も「Linux X11」と見なさ"
 "れます):"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:163
+#: ../../docs/development/compiling/compiling_for_x11.rst:168
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
@@ -229,9 +257,48 @@ msgstr ""
 "ただし、カスタムモジュールまたはカスタムC++ コードを作成する場合は、ここでカ"
 "スタムエクスポート テンプレートとしてバイナリを構成する必要があります:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:169
+#: ../../docs/development/compiling/compiling_for_x11.rst:174
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Godot source folder, so the next time you "
 "build, you automatically have the custom templates referenced."
+msgstr ""
+"この場合はコピーする必要はなく、Godotのソースフォルダ内にある ``bin\\`` ディ"
+"レクトリに出力されたファイルを指定するだけです。こうすれば、次にビルドした時"
+"も、自動的にカスタム テンプレートを参照するようになります。"
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:179
+msgid "Using Clang and LLD for faster development"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:181
+msgid ""
+"You can also use Clang and LLD to build Godot. This has two upsides compared "
+"to the default GCC + GNU ld setup:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:184
+msgid ""
+"LLD links Godot significantly faster compared to GNU ld or gold. This leads "
+"to faster iteration times."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:186
+msgid "Clang tends to give more useful error messages compared to GCC."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:188
+#, fuzzy
+msgid ""
+"To do so, install Clang and the ``lld`` package from your distribution's "
+"package manager then use the following SCons command::"
+msgstr ""
+"**Linux:** ほとんどのディストリビューションでは、ディストリビューションのパッ"
+"ケージマネージャーから ``gettext`` パッケージをインストールします。"
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:193
+msgid ""
+"It's still recommended to use GCC for production builds as they can be "
+"compiled using link-time optimization, making the resulting binaries smaller "
+"and faster."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,11 +163,10 @@ msgid "Export presets"
 msgstr "导出预设"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
-msgstr "接下来，您可以通过点击 *项目 -> 导出* 来配置导出设置："
+msgstr "接下来，您可以通过点击 *项目 -> 导出* 来配置导出设置。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:275
 msgid ""
@@ -310,7 +309,6 @@ msgstr ""
 "您需要设置系统上Android SDK应用程序的路径以及刚刚创建的密钥库的位置。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:347
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
@@ -409,7 +407,6 @@ msgid ""
 msgstr "导出完成后，您将拥有一个包含以下文件的文件夹："
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:405
-#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
@@ -438,8 +435,7 @@ msgstr ""
 "游戏下方的控制台窗口会告诉您是否出了问题。您可以通过在导出项目时将 ``使用调试"
 "导出`` 关闭来禁用它。"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:418
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/exporting.rst:420
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "
 "technology and you may find some things that don't work. Make sure you have "
@@ -447,6 +443,6 @@ msgid ""
 "find at the `Godot Github repository <https://github.com/godotengine/godot/"
 "issues>`_."
 msgstr ""
-"浏览器对WASM的支持不是很广泛。虽然Firefox和Chrome都支持它，但是您仍然可能会发"
-"现一些不起作用的东西。确保已将浏览器更新为最新版本，并报告在 `Godot Github 存"
-"储库 <https://github.com/godotengine/godot/issues>`_ 中发现的所有错误。"
+"虽然 WASM 在所有主要浏览器中都得到支持，但它仍然是一种新兴技术，您可能会发现"
+"一些不起作用的东西。请确保您已将浏览器更新到最新版本，并在 \"Godot Github 存"
+"储库 [https：//github.com/godotengine/godot/问题]\"中报告您发现的任何错误。"

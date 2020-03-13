@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -357,12 +357,14 @@ msgid "If you select both nodes, you should see something like this"
 msgstr "Если вы выберите оба узла, вы должны увидеть что-то такое"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:163
+#, fuzzy
 msgid ""
 "As they have a container as their direct parent, we cannot move them freely: "
 "the ``Count`` node will always reset their anchors, their size and position. "
 "Try to move and resize the nodes in the viewport. Then, select any of the "
-"three textures and press Ctrl Up or Ctrl Down to reorder them in the Scene "
-"dock. They'll snap back to their previous size and position."
+"three textures and press :kbd:`Ctrl + Up` or :kbd:`Ctrl + Down` to reorder "
+"them in the Scene dock. They'll snap back to their previous size and "
+"position."
 msgstr ""
 "Поскольку у них есть контейнер в качестве прямого родителя, мы не можем "
 "свободно перемещать их: узел ``Count`` всегда будет сбрасывать свои якоря, "
@@ -394,7 +396,6 @@ msgstr ""
 "контроль Count который является MarginContainer'ом"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
-#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -408,14 +409,14 @@ msgid ""
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
 "Выберите ``Title`` и в инспекторе, измените его ``Stretch Mode`` на ``Keep "
-"Centered``. Далее найдите категорию ``Rect`` в инспекторе и измените "
-"свойство ``Size`` на (50, 40), так что это займет только левую половину "
-"заднего фона.  Затем выберите узел ``Number``. В окне просмотра щелкните на "
+"Centered``. Далее найдите ``Rect`` в инспекторе и измените его свойство "
+"``Size`` на (50, 40), так что это займет только левую половину заднего "
+"фона.  Затем выберите узел ``Number``. В окне просмотра щелкните на "
 "``Layout`` и выберите ``Full Rect``. Размер узла будет изменен в "
 "соответствии с ``Background``. Отправляйтесь к инспектору и измените его "
 "свойство ``Align`` на ``Right`` и ``VAlign`` на ``Center``. Текст должен "
 "быть привязан к центру правого края ``Background``'a. Измените размер узла "
-"по горизонтали так, чтобы он занимал правую половину ``Background``'a и было "
+"по горизонтали так, чтобы он занимал правую половину ``Background`` и было "
 "немного отступа с правого края."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:195
@@ -461,7 +462,6 @@ msgstr ""
 "или``28``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
-#, fuzzy
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -548,11 +548,12 @@ msgstr ""
 "будем дублировать его и использовать его в качестве шаблона."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
+#, fuzzy
 msgid ""
-"Under the ``Bar`` node, select ``Count`` and press Ctrl D to duplicate it. "
-"Drag and drop the new node under the ``Counters`` ``HBoxContainer`` at the "
-"bottom of the scene tree. You should see it resize automatically. Don't "
-"worry about this for now, we'll fix the size soon."
+"Under the ``Bar`` node, select ``Count`` and press :kbd:`Ctrl + D` to "
+"duplicate it. Drag and drop the new node under the ``Counters`` "
+"``HBoxContainer`` at the bottom of the scene tree. You should see it resize "
+"automatically. Don't worry about this for now, we'll fix the size soon."
 msgstr ""
 "В узле ``Bar`` выберите ``Count`` и нажмите ``Ctrl+D``, чтобы дублировать "
 "его. Перетащите новый узел под ``Counters`` в нижнюю часть дерева сцены. Вы "
@@ -599,7 +600,6 @@ msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr "Узлы привязаны ко всему Background'у, но их положение свободное"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -839,11 +839,12 @@ msgid "Inherit the Bar Scene to build the LifeBar"
 msgstr "Наследование Bar для создания шкалы здоровья"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
+#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
-"like your ``Bar``, but with all nodes except the root in grey. Press ``Meta"
-"+S`` to save the new inherited scene and name it ``LifeBar``."
+"like your ``Bar``, but with all nodes except the root in grey. Press :kbd:"
+"`Meta + S` to save the new inherited scene and name it ``LifeBar``."
 msgstr ""
 "Перейдите к ``Сцена -> Новая Унаследованная сцена`, чтобы создать новый тип "
 "``Bar``. Выберите сцену Bar и откройте ее. Вы должны увидеть новую "
@@ -969,11 +970,12 @@ msgstr ""
 "узла"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
+#, fuzzy
 msgid ""
-"When you duplicate a node from the Scene tree, with ``Meta+D``, it shares "
-"its resources with the original node. You need to use ``Make Sub-Resources "
-"Unique`` before you can tweak the resources without affecting the source "
-"node."
+"When you duplicate a node from the Scene tree, with :kbd:`Meta + D`, it "
+"shares its resources with the original node. You need to use ``Make Sub-"
+"Resources Unique`` before you can tweak the resources without affecting the "
+"source node."
 msgstr ""
 "При дублировании узла из дерева сцены с помощью ``Ctrl+D``, он делит свои "
 "ресурсы с исходным узлом. Вы должны использовать ``Сделать вложенные ресурсы "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr "häufig gestellte Fragen"
+msgstr "FAQ"
 
 #: ../../docs/about/faq.rst:7
 msgid "Frequently asked questions"
@@ -414,18 +414,16 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "Welche Arten von 3D-Modellformaten unterstützt Godot?"
 
 #: ../../docs/about/faq.rst:150
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Das heißt, die Unterstützung von Godot für Collada ist wirklich gut, bitte "
-"verwenden Sie den `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/"
-"wiki/OpenCOLLADA-Tools>`_ Exporter für maximale Kompatibilität, falls Sie "
-"Maya oder 3DS Max nutzen. Verwenden Sie Blender, dann schaue Sie unseren "
-"eigenen `Better Collada Exporter <https://godotengine.org/download>`_ an."
+"Godot Unterstützt Collada mit dem `OpenCollada <https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ Exporter. Wenn du Blender "
+"verwendest, schau dir unseren eigenen `Better Collada Exporter <https://"
+"godotengine.org/download>`_ an."
 
 #: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
@@ -437,6 +435,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX wird mit Open Asset Import library unterstützt. Allerdigs ist es "
+"propritär, so dass wir empfehlen ein anderes Format aus der obigen Liste zu "
+"verwenden, wenn es für deinen Workflow geeignet ist."
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -809,8 +810,8 @@ msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
-"Unsere Container wurden \"memory tracking\" mit eingebaut, was dabei hilft, "
-"den Speichergebrauch besser verfolgen zu können."
+"Unsere Container nutzen \"memory tracking\", was beim Analysieren des "
+"Speicherverbrauchs hilft."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
@@ -832,7 +833,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
-msgstr "Weshalb braucht Godot keine \"exceptions\"?"
+msgstr "Weshalb verwendet Godot keine \"exceptions\"?"
 
 #: ../../docs/about/faq.rst:301
 msgid ""
@@ -851,8 +852,8 @@ msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
-"Zusätzlich erhöhen sogenannte \"exceptions\" die Größe des schlussendlichen "
-"ausführbaren Programm erheblich."
+"Zusätzlich vergrößern \"exceptions\" die Größe des ausführbaren Programm "
+"erheblich."
 
 #: ../../docs/about/faq.rst:310
 msgid "Why does Godot not enforce RTTI?"
@@ -872,7 +873,7 @@ msgstr ""
 #: ../../docs/about/faq.rst:317
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
-"Weshalb zwingt Godot seine Benutzer nicht zum anwenden von DoD (Data "
+"Warum zwingt Godot seine Benutzer nicht zur Implementierung von DoD (Data "
 "oriented Design)?"
 
 #: ../../docs/about/faq.rst:319

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,36 +20,38 @@ msgstr ""
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:4
 #, fuzzy
 msgid "Cross-language scripting"
-msgstr "创建一个脚本"
+msgstr "跨语言脚本"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:6
+#, fuzzy
 msgid ""
 "Godot allows you to mix and match scripting languages to suit your needs. "
 "This means a single project can define nodes in both C# and GDScript. This "
 "page will go through the possible interactions between two nodes writen in "
 "different languages."
 msgstr ""
+"Godot 允许混合和匹配脚本语言以适应需求。这意味着一个项目可以同时使用 C# 和 "
+"GDScript 定义节点的脚本。本页会介绍在使用不用语言的两个节点之间可能的交互。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:11
+#, fuzzy
 msgid ""
 "The following two scripts will be used as references throughout this page."
-msgstr ""
+msgstr "以下两个脚本用在整个页面中作为参考。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:66
-#, fuzzy
 msgid "Instantiating nodes"
-msgstr "实例化场景"
+msgstr "实例化节点"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:68
 msgid ""
 "If you're not using nodes from the scene tree, you'll probably want to "
 "instantiate nodes directly from the code."
-msgstr ""
+msgstr "如果不使用场景树中的节点，则可能需要直接从代码实例化节点。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:72
-#, fuzzy
 msgid "Instantiating C# nodes from GDScript"
-msgstr "将其加载到GDScript"
+msgstr "在 GDScript 中实例化 C# 节点"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:74
 msgid ""
@@ -68,32 +70,43 @@ msgid ""
 "not exist in the file, you'll see the following error: ``Invalid call. "
 "Nonexistent function `new` in base``."
 msgstr ""
+"创建 .cs 脚本时，应始终记住 Godot 将使用的类是和这个 .cs 文件名称相同的类。如"
+"果文件中不存在该类，您将看到以下错误：``Invalid call. Nonexistent function "
+"`new` in base``。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:91
 msgid "For example, MyCoolNode.cs should contain a class named MyCoolNode."
-msgstr ""
+msgstr "比如，MyCoolNode.cs 应该包含一个名为 MyCoolNode 的类。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:93
 msgid ""
 "You also need to check your .cs file is referenced in the project's .csproj "
 "file. Otherwise, the same error will occur."
 msgstr ""
+"您还需要检查在项目的 .csproj 文件中引用了该 .cs 文件的内容。否则，将发生相同"
+"的错误。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:97
 msgid "Instantiating GDScript nodes from C#"
 msgstr "在C#中实例化GDScript节点"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:99
+#, fuzzy
 msgid ""
 "From the C# side, everything work the same way. Once loaded, the GDScript "
 "can be instantiated with :ref:`GDScript.New() <class_GDScript_method_new>`."
 msgstr ""
+"在 C# 端，所有的工作方式相同。加载后，GDScript 可以被示例化，使用 :ref:"
+"`GDScript.New() <class_GDScript_method_new>`。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:107
+#, fuzzy
 msgid ""
 "Here we are using an :ref:`class_Object` but you can use type convertion "
 "like explained in :ref:`doc_c_sharp_features_type_conversion_and_casting`."
 msgstr ""
+"在这里我们使用一个 :ref:`class_Object` ，但是也可以使用类型转换，如 :ref:"
+"`doc_c_sharp_features_type_conversion_and_casting`章节所述。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:111
 msgid "Accessing fields"
@@ -101,26 +114,30 @@ msgstr "访问字段"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:114
 msgid "Accessing C# fields from GDScript"
-msgstr "在GDScript中访问C#字段"
+msgstr "从 GDScript 中访问 C# 字段"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:116
 msgid ""
 "Accessing C# fields from GDScript is straightforward, you shouldn't have "
 "anything to worry about."
-msgstr ""
+msgstr "从GDScript访问 C# 字段很简单，没什么可担心的。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:128
+#, fuzzy
 msgid ""
 "Note that it doesn't matter if the field is defined as a property or an "
 "attribute, but trying to set a value on a property that does not define a "
 "setter will result in a crash."
 msgstr ""
+"需要注意的是，字段定义为属性（property）或特性（attribute）并不重要，但尝试在"
+"未定义 setter 的属性（property）上设置值将导致崩溃。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:133
 msgid "Accessing GDScript fields from C#"
-msgstr ""
+msgstr "从 C# 中访问 GDSscript"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:135
+#, fuzzy
 msgid ""
 "As C# is statically typed, accessing GDScript from C# is a bit more "
 "convoluted, you will have to use :ref:`Object.Get() "
@@ -128,13 +145,19 @@ msgid ""
 "<class_Object_method_set>`. The first argument is the name of the field you "
 "want to access."
 msgstr ""
+"由于 C# 是静态类型，因此从 C# 访问 GDScript 会有点复杂，因此您必须使用 :ref:"
+"`Object.Get() <class_Object_method_get>`和 :ref:`Object.Set() "
+"<class_Object_method_set>` 。第一个参数是要访问的字段的名称。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:148
+#, fuzzy
 msgid ""
 "Keep in mind that when setting a field value you should only use types the "
 "GDScript side knows about. Essentially, you want to work with built-in types "
 "as described in :ref:`doc_gdscript` or classes extending :ref:`class_Object`."
 msgstr ""
+"牢记在给字段赋值时只能使用 GDScript 知道的类型。实质上指的是 GDScript 的内置"
+"类型 :ref:`doc_gdscript` 或者 :ref:`class_Object` 的扩展类。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:153
 msgid "Calling methods"
@@ -145,17 +168,20 @@ msgid "Calling C# methods from GDScript"
 msgstr "在GDScript中调用C#方法"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:158
+#, fuzzy
 msgid ""
 "Again, calling C# methods from GDScript should be straightforward. The "
 "marshalling process will do its best to cast your the arguments to match "
 "function signatures. If that's impossible you'll see the following error: "
 "``Invalid call. Nonexistent function `FunctionName```."
 msgstr ""
+"从 GDScript 调用 C# 方法同样是很简单的。编组过程将尽力强制转换你的参数类型去"
+"匹配方法的结构。如果失败则会看到以下错误 ``Invalid call. Nonexistent "
+"function `FunctionName```。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:174
-#, fuzzy
 msgid "Calling GDScript methods from C#"
-msgstr "从脚本调用JavaScript"
+msgstr "从 C# 中 调用 GDScript 方法"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:176
 msgid ""
@@ -163,6 +189,9 @@ msgid ""
 "<class_Object_method_call>`. The first arguments is the name of the method "
 "you want to call. The following arguments will be passed to said method."
 msgstr ""
+"从 C# 中调用 GDScript 方法需要使用 :ref:`Object.Call() "
+"<class_Object_method_call>` 。第一个参数是想要调用方法的名称。接下来的其他参"
+"数会传递给被调用的方法。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:198
 msgid ""
@@ -170,3 +199,5 @@ msgid ""
 "you'll need to cast it as ``object``. Otherwise each element of your array "
 "will be treated as a single argument and the function signature won't match."
 msgstr ""
+"如您所见，如果被调用方法的第一个参数数组类型，你需要强制转换成 ``object`` 。"
+"否则数组的每个元素将被当做单个参数传入，与函数的结构不匹配。"

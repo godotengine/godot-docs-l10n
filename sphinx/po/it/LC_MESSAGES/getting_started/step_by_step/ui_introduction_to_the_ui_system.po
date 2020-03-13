@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,12 +66,17 @@ msgid ""
 "The five most common containers (you can learn more about containers in the :"
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
 msgstr ""
+"I cinque contenitori più comuni (puoi scoprire di più sui contenitori nella "
+"pagina della documentazione :ref:`GUI Containers <doc_gui_containers>`)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
 "To learn how to control the interface and connect it to other scripts, read :"
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
 msgstr ""
+"Per imparare a controllare l'interfaccia e connetterla agli altri script, "
+"leggi :ref:`Costruisci la tua prima Interfaccia Utente in Godot "
+"<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
 msgid ""
@@ -80,6 +85,10 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
+"Per progettare la tua Interfaccia Utente, userai i nodi Control. Questi nodi "
+"hanno icone verdi nell'editor. Ce ne sono a dozzine, per creare qualsiasi "
+"cosa, dalle barre della vita ad applicazioni complesse. Lo stesso editor di "
+"Godot é costruito usando nodi Control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -95,7 +104,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
-msgstr "Tutti i nodi di controllo condividono le stesse proprietá principali:"
+msgstr "Tutti i nodi di controllo condividono le stesse proprietà principali:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:38
 msgid "Anchor"
@@ -103,19 +112,19 @@ msgstr "Ancora"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Bounding rectangle"
-msgstr ""
+msgstr "Rettangolo di delimitazione"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Focus and focus neighbor"
-msgstr ""
+msgstr "Focus e focus adiacente"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 msgid "Size flags"
-msgstr ""
+msgstr "Flag di dimensione"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Margin"
-msgstr ""
+msgstr "Margine"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "The optional UI theme"
@@ -151,41 +160,50 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:58
 msgid "Label: for displaying text"
-msgstr ""
+msgstr "Etichetta: per mostrare del testo"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
 msgstr ""
+"TextureRect: usato per lo piú per gli sfondi, o qualsiasi cosa che dovrebbe "
+"essere un immagine statica"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:61
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
 msgstr ""
+"TextureProgress: per barre della vita, barre di caricamento, orizzontali, "
+"verticali o radiali"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:63
 msgid "NinePatchRect: for scalable panels"
-msgstr ""
+msgstr "NinePatchRect: per pannelli scalabili"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "TextureButton: to create buttons"
-msgstr ""
+msgstr "TextureButton: per creare pulsanti"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:68
 msgid "The 5 most common Control nodes for UI design"
-msgstr ""
+msgstr "I 5 nodi Control piú comuni per disegnare una Interfaccia Utente"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
 msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:73
+#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
+"**TextureRect** mostra una texture o un immagine dentro un interfaccia "
+"utente. Assomiglia ad un nodo Sprite, ma offre molteplici modelli  "
+"ridimensionabili. Imposta la proprietà \"Stretch Mode\" per modificare il "
+"suo comportamento"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
 msgid ""
@@ -200,13 +218,16 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr ""
+msgstr "``Tile`` ripete la texture, ma non la scala."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
+"``Keep`` e ``Keep Centered`` forza la texture a mantenere la sua dimensione "
+"originale, rispettivamente nell'angolo in alto a sinistra e nel centro del "
+"frame."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
 msgid ""
@@ -214,6 +235,9 @@ msgid ""
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
+"``Keep Aspect`` e ``Keep Aspect Centered`` scala la texture ma la forza a "
+"mantenere il rapporto di aspetto originale, rispettivamente nell'angolo in "
+"alto a sinistra e nel centro del frame."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
 msgid ""
@@ -234,7 +258,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:98
 msgid "TextureButton"
-msgstr ""
+msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
 msgid ""
@@ -242,7 +266,7 @@ msgid ""
 "for each of the button's states. Most of the time, you'll use the Normal, "
 "Pressed, and Hover textures. Focused is useful if your interface listens to "
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
-"the clickable area using a 2-bit, pure black and white image."
+"the clickable area using a 1-bit, pure black and white image."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
@@ -258,11 +282,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureButton and its 5 texture slots"
-msgstr ""
+msgstr "TextureButton e i suoi 5 slot di consistenza"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
 msgid "TextureProgress"
-msgstr ""
+msgstr "TextureProgress"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:122
 msgid ""

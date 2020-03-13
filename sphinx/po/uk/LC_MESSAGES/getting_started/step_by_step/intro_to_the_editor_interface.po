@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,23 +27,33 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"Цей урок познайомить вас з інтерфейсом Godot. Ми розглянемо ** Керівник "
+"проектів, панелі, робочі простори ** та все, що потрібно знати, для початку "
+"роботи з редактором."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
 msgstr "Керівник проекту"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
+#, fuzzy
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
+"Коли ви запустите Godot, перше вікно, яке ви побачите, - це Керівник "
+"проектів. Оскільки у вас немає проектів, з’явиться вікно із запитом, чи "
+"хочете ви відкрити бібліотеку активів (шаблонів), просто натисніть "
+"Скасувати, ми розглянемо її пізніше."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
+"Тепер ви повинні побачити Керівник проектів. Він дозволяє створювати, "
+"видаляти, імпортувати або відтворювати ігрові проекти."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
@@ -54,6 +64,7 @@ msgstr ""
 "ви можете змінити мову інтерфейсу редактора."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
+#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -61,6 +72,12 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
+"На вкладці ** Шаблони ** ви можете завантажити шаблони проектів та їх "
+"демонстрації з відкритим кодом з бібліотеки активів, що допоможе вам швидше "
+"розпочати роботу. Просто виберіть потрібний шаблон, або демонстрацію, "
+"натисніть кнопку \"Завантажити\", після закінчення завантаження натисніть "
+"\"Встановити\" і виберіть, куди ви хочете встановити проект. Ви можете "
+"дізнатися більше про це у: ref: `doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
@@ -78,20 +95,28 @@ msgstr ""
 "даних проекту."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
+#, fuzzy
 msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
+"Натисніть кнопку Вибрати, щоб відкрити файловий браузер Godot, і виберіть "
+"теку, або вкажіть шлях до теки в полі Шлях проекту."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
+#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
+"Якщо ви бачите зелену галочку справа, значить редактор виявив порожню теку. "
+"Ви також можете натиснути кнопку `` Створити теку`` поруч із назвою проекту "
+"і тоді, для проекту, буде створена порожня тека з іменем проекту."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
+#, fuzzy
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -99,18 +124,28 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
+"Нарешті, вам потрібно вибрати, який обробник використовувати (OpenGL ES 3.0 "
+"чи OpenGL ES 2.0). Переваги та недоліки кожного з них перераховані, щоб "
+"полегшити ваш вибір, і ви можете посилатися на: ref: "
+"`doc_gles2_gles3_differences` для отримання більш детальної інформації. "
+"Зауважте, що ви можете змінити свій вибір в налаштуваннях проекту, якщо "
+"згодом передумаєте. Для цього уроку чудово підійде будь-який вибір."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
+"Після завершення натисніть кнопку \"Створити та змінити\". Godot створить "
+"для вас проект і відкриє його в редакторі."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
+"Наступного разу, коли ви відкриєте керівник проектів, ви побачите свій новий "
+"проект у списку. Двічі клацніть по ньому, щоб відкрити в редакторі."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -118,37 +153,48 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
+"Ви можете імпортувати наявні проекти аналогічним чином, використовуючи "
+"кнопку Імпортувати. Знайдіть теку, яка містить проект або файл ``project."
+"godot``, щоб імпортувати та редагувати його."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:75
 msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr ""
+msgstr "Якщо шлях до теки вірний, ви побачите зелену галочку."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 msgid "Your first look at Godot’s editor"
 msgstr "Ваш перший погляд на редактор Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
+#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
-"interface with empty docks on the right side."
+"interface with menus along the top of the interface and docks along the far "
+"extremes of the interface on either side of the viewport."
 msgstr ""
+"Ласкаво просимо в Godot! Відкривши свій проект ви повинні побачити інтерфейс "
+"редактора з порожніми панелями праворуч."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
+"Угорі, зліва направо, ви бачите **основні меню**, **робочі області** та "
+"**кнопки відтворення**."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
+#, fuzzy
 msgid ""
-"On the bottom left side, you have the **FileSystem dock**, where you’ll "
-"manage your project files and assets."
+"The **FileSystem dock** is where you’ll manage your project files and assets."
 msgstr ""
+"Внизу зліва у вас є панель **Файлова система**, де ви будете керувати "
+"файлами та ресурсами вашого проекту."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
-"On the right side, you’ll find the **Scene dock**, which lists the active "
-"scene’s content and the **Inspector** in the bottom right corner."
+"The **Scene dock** lists the active scene’s content and the **Inspector** "
+"allows for the management of the properties of a scene's content."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
@@ -157,88 +203,119 @@ msgid ""
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
+"У центрі вгорі ви маєте **панель інструментів**, де ви знайдете інструменти "
+"для переміщення, масштабування, або блокування об'єктів сцени. Вони "
+"змінюється під час переходу до різних робочих просторів."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
+#, fuzzy
 msgid ""
 "The **Bottom Panel** is the host for the debug console, the animation "
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
+"**Нижня панель** містить консоль налагодження, редактор анімації, мікшер "
+"звуку… Вони широкі і можуть зайняти дорогоцінний простір. Тому за "
+"замовчуванням вони складені ."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
 msgid "The workspaces"
-msgstr ""
+msgstr "Робочі простори"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
+"Зверху ви можете побачити чотири кнопки робочого простору: 2D, 3D, Script і "
+"AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
+#, fuzzy
 msgid ""
 "You’ll use the **2D workspace** for all types of games. In addition to 2D "
-"games, the 2D workspace is where you'll build your interfaces. Press F1 to "
-"access it."
+"games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
+"`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
+"Ви будете використовувати **2D робочий простір** для всіх типів ігор. Окрім "
+"ігор 2D, в цьому просторі ви будете створювати ваші інтерфейси. Натисніть "
+"F1, щоб отримати доступ до нього."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:123
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
+#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
-"for 3D games. Press F2 to access it."
+"for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
+"В **3D робочому просторі** ви можете працювати з сітками (мешами), світлом "
+"та дизайном рівнів для 3D ігор. Натисніть F2, щоб перейти до нього."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
 msgstr ""
+"Зверніть увагу на кнопку Перспектива на панелі інструментів, вона відкриває "
+"список параметрів, пов'язаних із тривимірним вікном перегляду."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:134
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
+"Прочитайте :ref:`doc_introduction_to_3d` для більш детальної інформації про "
+"**3D робочий простір**."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:135
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
-"auto-completion, and built-in code reference. Press F3 to access it, and F4 "
-"to search the reference."
+"auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
+"+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:141
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
+"Нарешті, ** AssetLib ** - це бібліотека безкоштовних додатків, скриптів та "
+"ресурсів, для використання у ваших проектах."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:146
 msgid "Modify the interface"
-msgstr ""
+msgstr "Зміна інтерфейсу"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio Code for instance."
 msgstr ""
+"Інтерфейс Godot розміщений в одному вікні. Ви не можете розділити його на "
+"кілька екранів, хоча ви можете працювати із зовнішнім редактором коду, "
+"наприклад, Atom або Visual Studio."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:152
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
 msgid "Move and resize docks"
-msgstr ""
+msgstr "Переміщення і зміна розмірів панелей"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:154
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:155
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr ""
+"Для зміни розмірів будь-якої панелі, чи вкладки, натисніть на її край і "
+"потягніть по горизонталі, чи вертикалі."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:159
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:160
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
+"Натисніть іконку трьох крапок в верхній частині любої панелі, щоб змінити її "
+"розташування."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:165
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
+"Перейдіть до меню ``Редактор`` і ``Параметри редактора`` щоб зручно "
+"налаштувати вигляд редактора."

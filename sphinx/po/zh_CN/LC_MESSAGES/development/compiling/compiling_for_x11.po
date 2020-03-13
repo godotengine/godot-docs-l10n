@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -172,11 +172,23 @@ msgstr ""
 "如果您正在编译Godot用于生产用途，那么您可以通过添加SCons选项 "
 "``target=release_debug`` 来使最终的可执行文件更小更快。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:118
+#: ../../docs/development/compiling/compiling_for_x11.rst:117
+#, fuzzy
+msgid ""
+"If you are compiling Godot with GCC, you can make the binary even smaller "
+"and faster by adding the SCons option ``use_lto=yes``. As link-time "
+"optimization is a memory-intensive process, this will require about 3 GB of "
+"available RAM while compiling."
+msgstr ""
+"如果要使用MinGW编译Godot，则可以通过添加SCons选项 ``use_lto=yes`` 使二进制文"
+"件变得更小、更快。由于链接时间优化是一个占用大量内存的过程，因此编译时将需要"
+"大约3 GB的可用RAM。"
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:123
 msgid "Building export templates"
 msgstr "构建导出模板"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:120
+#: ../../docs/development/compiling/compiling_for_x11.rst:125
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -188,21 +200,21 @@ msgstr ""
 "多数发行版的二进制文件，则应在较旧的发行版（例如Ubuntu 16.04）上构建它们。您"
 "可以使用虚拟机或容器来设置合适的构建环境。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:128
+#: ../../docs/development/compiling/compiling_for_x11.rst:133
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
 msgstr "要构建X11（Linux， \\*BSD）导出模板，请使用以下参数运行构建系统："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:131
+#: ../../docs/development/compiling/compiling_for_x11.rst:136
 msgid "(32 bits)"
 msgstr "（ 32 位 ）"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:138
+#: ../../docs/development/compiling/compiling_for_x11.rst:143
 msgid "(64 bits)"
 msgstr "（ 64 位 ）"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:145
+#: ../../docs/development/compiling/compiling_for_x11.rst:150
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
@@ -210,18 +222,18 @@ msgstr ""
 "请注意，与您的主机平台相反的位（64/32）交叉编译并不总是直接的，并且可能需要"
 "chroot环境。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:148
+#: ../../docs/development/compiling/compiling_for_x11.rst:153
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr "要创建标准导出模板，必须将生成的文件复制到："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:154
+#: ../../docs/development/compiling/compiling_for_x11.rst:159
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
 msgstr "并以此命名（即使对于\\*BSD，它也被Godot视为“ Linux X11”）："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:163
+#: ../../docs/development/compiling/compiling_for_x11.rst:168
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
@@ -230,7 +242,7 @@ msgstr ""
 "此外，如果要编写自定义模块或自定义C ++代码，则可能需要在此处将二进制文件配置"
 "为自定义导出模板："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:169
+#: ../../docs/development/compiling/compiling_for_x11.rst:174
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Godot source folder, so the next time you "
@@ -238,3 +250,36 @@ msgid ""
 msgstr ""
 "您甚至不需要复制它们，只需引用在Godot源文件夹的 ``bin/`` 目录中生成的文件，因"
 "此下次构建时，将自动引用自定义模板。"
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:179
+msgid "Using Clang and LLD for faster development"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:181
+msgid ""
+"You can also use Clang and LLD to build Godot. This has two upsides compared "
+"to the default GCC + GNU ld setup:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:184
+msgid ""
+"LLD links Godot significantly faster compared to GNU ld or gold. This leads "
+"to faster iteration times."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:186
+msgid "Clang tends to give more useful error messages compared to GCC."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:188
+msgid ""
+"To do so, install Clang and the ``lld`` package from your distribution's "
+"package manager then use the following SCons command::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:193
+msgid ""
+"It's still recommended to use GCC for production builds as they can be "
+"compiled using link-time optimization, making the resulting binaries smaller "
+"and faster."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,20 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:4
 msgid "Environment and post-processing"
-msgstr ""
+msgstr "環境とポストプロセッシング"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:6
 msgid ""
 "Godot 3 provides a redesigned Environment resource, as well as a brand new "
 "post-processing system with many available effects right out of the box."
 msgstr ""
+"Godot 3.x は、再設計された環境(Environment/エンバイロメント)リソースと、すぐ"
+"に使用できる多くのエフェクトを備えた真新しいポストプロセッシングシステムを提"
+"供します。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:10
 msgid "Environment"
-msgstr ""
+msgstr "環境"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:12
 msgid ""
@@ -38,32 +41,40 @@ msgid ""
 "effects, and adjustments. By itself it does nothing, but it becomes enabled "
 "once used in one of the following locations in order of priority:"
 msgstr ""
+"Environment(環境)リソースには、レンダリング環境の制御に必要なすべての情報が格"
+"納されます。これには、空、環境光、トーンマッピング、エフェクト、調整が含まれ"
+"ます。それ自体は何もしませんが、次の場所のいずれかで使用されると、優先度順に"
+"有効になります:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:18
 msgid "Camera node"
-msgstr ""
+msgstr "Cameraノード"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:20
 msgid ""
 "An Environment can be set to a camera. It will have priority over any other "
 "setting."
-msgstr ""
+msgstr "環境はカメラに設定できます。他の設定よりも優先されます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:24
 msgid ""
 "This is mostly useful when wanting to override an existing environment, but "
 "in general it's a better idea to use the option below."
 msgstr ""
+"これは、既存の環境をオーバーライドする場合に最も役立ちますが、一般的には以下"
+"のオプションを使用することをお勧めします。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:28
 msgid "WorldEnvironment node"
-msgstr ""
+msgstr "WorldEnvironmentノード"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:30
 msgid ""
 "The WorldEnvironment node can be added to any scene, but only one can exist "
 "per active scene tree. Adding more than one will result in a warning."
 msgstr ""
+"WorldEnvironmentノードはどのシーンにも追加できますが、アクティブなシーンツ"
+"リーごとに1つしか存在できません。複数追加すると警告が表示されます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:35
 msgid ""
@@ -71,10 +82,12 @@ msgid ""
 "(explained below). This means it can be overridden on a per-scene basis, "
 "which makes it quite useful."
 msgstr ""
+"追加された環境は、デフォルトの環境(以下で説明)よりも高い優先度を持ちます。つ"
+"まり、シーンごとにオーバーライドできるため、非常に便利です。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:40
 msgid "Default environment"
-msgstr ""
+msgstr "デフォルトの環境"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:42
 msgid ""
@@ -82,6 +95,9 @@ msgid ""
 "Environment was set to a Camera or WorldEnvironment. Just head to Project "
 "Settings -> Rendering -> Environment:"
 msgstr ""
+"デフォルトの環境を設定できます。これは、環境がCameraノードまたは"
+"WorldEnvironmentノードに設定されていない場合のフォールバックとして機能しま"
+"す。 [プロジェクト設定] → [Rendering ] → [Environment]に進みます:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:48
 msgid ""
@@ -89,20 +105,24 @@ msgid ""
 "environment (``default_env.tres``). If one needs to be created, save it to "
 "disk before referencing it here."
 msgstr ""
+"プロジェクトマネージャーから作成された新しいプロジェクトには、デフォルトの環"
+"境(``default_env.tres``)が付属しています。作成する必要がある場合は、ここで参"
+"照する前にディスクに保存してください。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:53
 msgid "Environment options"
-msgstr ""
+msgstr "Environment(環境)のオプション"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:55
 msgid ""
 "Following is a detailed description of all environment options and how they "
 "are intended to be used."
 msgstr ""
+"以下は、すべてのEnvironmentのオプションとそれらの使用方法の詳細な説明です。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:59
 msgid "Background"
-msgstr "\\ Background"
+msgstr "Background(背景)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:61
 msgid ""
@@ -111,20 +131,27 @@ msgid ""
 "background not only serves the purpose of displaying an image or color, it "
 "can also change how objects are affected by ambient and reflected light."
 msgstr ""
+"Backgroundセクションには、背景(オブジェクトが描画されなかった画面の一部)を塗"
+"りつぶす方法に関する設定が含まれています。Godot 3.0では、背景は画像や色を表示"
+"するだけでなく、環境光や反射光によるオブジェクトへの影響を変えることもできま"
+"す。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:68
 msgid "There are many ways to set the background:"
-msgstr ""
+msgstr "背景を設定するには多くの方法があります:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:70
 msgid ""
 "**Clear Color** uses the default clear color defined by the project. The "
 "background will be a constant color."
 msgstr ""
+"**Clear Color** は、プロジェクトで定義されているデフォルトのクリアカラーを使"
+"用します。背景は一定の色になります。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:71
 msgid "**Custom Color** is like Clear Color, but with a custom color value."
 msgstr ""
+"**Custom Color** はクリアカラーに似ていますが、カスタムカラー値を持ちます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:72
 msgid ""
@@ -132,6 +159,9 @@ msgid ""
 "procedural sky (a simple sky featuring a gradient and an optional sun). "
 "Objects will reflect it and absorb ambient light from it."
 msgstr ""
+"**Sky** では、パノラマの空(360度の球体テクスチャ）または手続き型の空(グラデー"
+"ションとオプションの太陽を備えたシンプルな空)を定義できます。オブジェクトはそ"
+"れを反射し、そこから環境光を吸収します。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:73
 msgid ""
@@ -139,10 +169,12 @@ msgid ""
 "value for drawing the background. The sky will only be used for reflection "
 "and ambient light."
 msgstr ""
+"**Color+Sky** では(上記のように)空を定義できますが、背景の描画には一定の色値"
+"を使用します。空は反射光と環境光にのみ使用されます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:76
 msgid "Ambient Light"
-msgstr ""
+msgstr "Ambient Light(環境光)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:78
 msgid ""
@@ -150,6 +182,9 @@ msgid ""
 "geometry with the same intensity. It is global and independent of lights "
 "that might be added to the scene."
 msgstr ""
+"Ambient(ここで定義)は、同じ強度ですべてのジオメトリに影響するライトの一種で"
+"す。これはグローバルであり、シーンに追加される可能性のあるライトとは無関係で"
+"す。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:82
 msgid ""
@@ -158,6 +193,9 @@ msgid ""
 "the *Sky* (as described before, but a sky needs to be set as background for "
 "this to be enabled)."
 msgstr ""
+"環境光には2つのタイプがあります: *Ambient Color* (マテリアルのアルベドに乗算"
+"する一定の色です)、および *Sky* から取得したもの(前述のように、これを有効にす"
+"るには、空を背景として設定する必要があります)。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:89
 msgid ""
@@ -165,16 +203,21 @@ msgid ""
 "color and sky using the **Sky Contribution** setting (this value is 1.0 by "
 "default for convenience, so only the sky affects objects)."
 msgstr ""
+"*Sky* を背景として設定すると、\\ **Sky Contribution** 設定を使用して環境色と"
+"空をブレンドできます(便宜上、この値はデフォルトでは1.0であるため、空のみがオ"
+"ブジェクトに影響します)。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:93
 msgid "Here is a comparison of how different ambient light affects a scene:"
-msgstr ""
+msgstr "異なる環境光がシーンに与える影響の比較は次のとおりです:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:97
 msgid ""
 "Finally there is an **Energy** setting, which is a multiplier, useful when "
 "working with HDR."
 msgstr ""
+"最後に、\\ **Energy** 設定があります。これは乗数であり、HDRで作業するときに便"
+"利です。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:99
 msgid ""
@@ -185,16 +228,23 @@ msgid ""
 "indirect light propagates. Below is a comparison, in terms of quality, "
 "between using a flat ambient color and a GIProbe:"
 msgstr ""
+"一般に、環境光は、最高の照明品質を提供しないため、単純なシーン、大きなエクス"
+"テリア、またはパフォーマンス上の理由(環境光はレンダリングコストが安い)に対し"
+"てのみ使用する必要があります。 ReflectionProbeまたはGIProbeから環境光を生成す"
+"ると、間接光がどのように伝播するかをより忠実にシミュレートできます。以下は、"
+"均一な環境色とGIProbeを使用した場合の品質の比較です:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:108
 msgid ""
 "Using one of the methods described above, objects get constant ambient "
 "lighting replaced by ambient light from the probes."
 msgstr ""
+"上記の方法のいずれかを使用すると、オブジェクトは一定した環境光をプローブから"
+"の環境光に置き換えます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:112
 msgid "Fog"
-msgstr ""
+msgstr "Fog(霧)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:114
 msgid ""
@@ -202,27 +252,34 @@ msgid ""
 "The physical effect is actually pretty complex, but Godot provides a good "
 "approximation. There are two kinds of fog in Godot:"
 msgstr ""
+"霧は、実生活と同様に、遠くのオブジェクトを均一な色にフェードアウトさせます。"
+"物理的な効果は実際にはかなり複雑ですが、Godotは適切な近似を提供します。 Godot"
+"には2種類の霧があります:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:118
 msgid ""
 "**Depth Fog:** This one is applied based on the distance from the camera."
-msgstr ""
+msgstr "**Depth Fog:** これはカメラからの距離に基づいて適用されます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:119
 msgid ""
 "**Height Fog:** This one is applied to any objects below (or above) a "
 "certain height, regardless of the distance from the camera."
 msgstr ""
+"**Height Fog:** これは、カメラからの距離に関係なく、特定の高さの下(または上)"
+"のオブジェクトに適用されます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:123
 msgid ""
 "Both of these fog types can have their curve tweaked, making their "
 "transition more or less sharp."
 msgstr ""
+"これらの霧のタイプは両方とも、カーブを微調整して、トランジションを多少シャー"
+"プにすることができます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:125
 msgid "Two properties can be tweaked to make the fog effect more interesting:"
-msgstr ""
+msgstr "霧の効果をさらに面白くするために、2つのプロパティを調整できます:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:127
 msgid ""
@@ -230,16 +287,21 @@ msgid ""
 "the fog. When looking towards a directional light (usually a sun), the color "
 "of the fog will be changed, simulating the sunlight passing through the fog."
 msgstr ""
+"1つ目は **Sun Amount** で、霧のSun Colorプロパティを使用します。指向性ライト"
+"(通常は太陽)を見ると、フォグの色が変わり、フォグを通過する日光をシミュレート"
+"します。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:131
 msgid ""
 "The second is **Transmit Enabled** which simulates more realistic light "
 "transmittance. In practice, it makes light stand out more across the fog."
 msgstr ""
+"2つ目は **Transmit Enabled** で、より現実的な光透過率をシミュレートします。実"
+"際には、霧の中で光をより際立たせます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:137
 msgid "Tonemap"
-msgstr ""
+msgstr "Tonemap(トーンマップ)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:139
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:153
@@ -250,7 +312,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:300
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:353
 msgid "*This feature is only available when using the GLES3 backend.*"
-msgstr ""
+msgstr "*この機能は、GLES3バックエンドを使用している場合にのみ使用できます。*"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:141
 msgid ""
@@ -259,27 +321,37 @@ msgid ""
 "mapping can make light and dark areas more homogeneous, even though the "
 "result is not that strong. Tone mapping options are:"
 msgstr ""
+"映画およびゲーム業界で使用される標準曲線の短いリストから、シーンに適用される"
+"トーンマッピング曲線を選択します。トーンマッピングは、結果がそれほど強くない"
+"場合でも、明るい領域と暗い領域をより均一にすることができます。トーンマッピン"
+"グオプションは次のとおりです:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:146
 msgid ""
 "**Mode:** Tone mapping mode, which can be Linear, Reindhart, Filmic, or Aces."
 msgstr ""
+"**Mode:** トーンマッピングモード、Linear、Reindhart、Filmic、またはAcesのいず"
+"れかです。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:147
 msgid ""
 "**Exposure:** Tone mapping exposure which simulates amount of light received "
 "over time."
 msgstr ""
+"**Exposure:** トーンマッピング露出は時間の経過に従って受信する光の量(露光量)"
+"をシミュレートします。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:148
 msgid ""
 "**White:** Tone mapping white, which simulates where in the scale white is "
 "located (by default 1.0)."
 msgstr ""
+"**White:** トーンマッピングの白。スケールの白の位置をシミュレートします(デ"
+"フォルトでは1.0)。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:151
 msgid "Auto Exposure (HDR)"
-msgstr ""
+msgstr "自動露出(HDR)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:155
 msgid ""
@@ -290,6 +362,11 @@ msgid ""
 "simulates the camera (or eye) in an effort to adapt between light and dark "
 "locations and their different amounts of light."
 msgstr ""
+"ほとんどの場合、照明とテクスチャリングはアーティストによって厳しく制御されま"
+"すが、Godotは自動露出メカニズムを備えたシンプルなハイダイナミックレンジの実装"
+"をサポートしています。これは一般に、暗い場所や屋外で屋内エリアを組み合わせる"
+"ときにリアリズムのために使用されます。自動露出は、明るい場所と暗い場所、およ"
+"び異なる光量の間を適応させるために、カメラ(または目)をシミュレートします。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:164
 msgid ""
@@ -300,6 +377,11 @@ msgid ""
 "directional light. Normally, values between 3.0 and 6.0 are enough to "
 "simulate indoor-outdoor conditions."
 msgstr ""
+"自動露出を使用する最も簡単な方法は、屋外の照明(または他の強い照明)のエネル"
+"ギーが1.0を超えるようにすることです。これは、(ライト自体の) **Energy** 乗数を"
+"微調整することによって行われます。通常、一貫性を持たせるために、\\ **Sky** も"
+"指向性ライトと一致させるためにエネルギー乗数を使用する必要があります。一般的"
+"に、屋内と屋外の状態をシミュレートするには、3.0〜6.0の値で十分です。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:170
 msgid ""
@@ -307,49 +389,61 @@ msgid ""
 "pixels that go over the tonemap **White** will bleed to the glow buffer, "
 "creating the typical bloom effect in photography."
 msgstr ""
+"自動露出と *Glow* ポストプロセッシング(詳細は下記)を組み合わせることにより、"
+"トーンマップの **White** を超えたピクセルがグローバッファー流れ込み、典型的な"
+"写真のブルームエフェクトを作成できます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:176
 msgid ""
 "The user-controllable values in the Auto Exposure section come with sensible "
 "defaults, but you can still tweak them:"
 msgstr ""
+"Auto Exposureセクションのユーザーが制御可能な値には、適切なデフォルトがありま"
+"すが、微調整ができます:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:181
 msgid ""
 "**Scale:** Value to scale the lighting. Brighter values produce brighter "
 "images, smaller ones produce darker ones."
 msgstr ""
+"**Scale:** 照明をスケールする値。明るい値は明るい画像を生成し、小さい値は暗い"
+"画像を生成します。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:182
 msgid ""
 "**Min Luma:** Minimum luminance that auto exposure will aim to adjust for. "
 "Luminance is the average of the light in all the pixels of the screen."
 msgstr ""
+"**Min Luma:** 自動露出の調整対象となる最小輝度。輝度は、画面のすべてのピクセ"
+"ルの光の平均です。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:183
 msgid ""
 "**Max Luma:** Maximum luminance that auto exposure will aim to adjust for."
-msgstr ""
+msgstr "**Max Luma:** 自動露出の調整対象となる最大輝度。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:184
 msgid ""
 "**Speed:** Speed at which luminance corrects itself. The higher the value, "
 "the faster correction happens."
 msgstr ""
+"**Speed:** 輝度が補正される速度。値が大きいほど、より速い補正が行われます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:187
 msgid "Mid- and post-processing effects"
-msgstr ""
+msgstr "中間およびポストプロセッシングエフェクト"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:189
 msgid ""
 "A large amount of widely-used mid- and post-processing effects are supported "
 "in the Environment."
 msgstr ""
+"環境(Environment)では、広く使用されている大量の中間プロセッシングおよびポスト"
+"プロセッシングエフェクトがサポートされています。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:193
 msgid "Screen-Space Reflections (SSR)"
-msgstr ""
+msgstr "スクリーンスペース反射(Ss Reflections/SSR)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:197
 msgid ""
@@ -359,6 +453,10 @@ msgid ""
 "objects are in contact with each other (object over floor, over a table, "
 "floating on water, etc)."
 msgstr ""
+"Godotは3つの反射データソース(Sky、ReflectionProbe、GIProbe)をサポートしていま"
+"すが、すべての状況に対して十分な詳細を提供するわけではありません。スクリーン"
+"スペースの反射が最も意味のあるシナリオは、オブジェクトが互いに接触している場"
+"合です(床の上、テーブルの上、水に浮いているオブジェクトなど)。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:204
 msgid ""
@@ -367,51 +465,67 @@ msgid ""
 "be used to make characters, cars, etc. reflect on surrounding surfaces when "
 "moving around."
 msgstr ""
+"もう1つの利点は(最低限しか有効にしない場合でも)、リアルタイムで機能することで"
+"す(他の種類の反射は事前に計算されます)。これを使用して、キャラクター、車など"
+"が動き回るときに周囲の表面に反映させることができます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:208
 msgid ""
 "A few user-controlled parameters are available to better tweak the technique:"
 msgstr ""
+"いくつかのユーザー制御パラメーターを使用して、この手法を微調整できます:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:210
 msgid ""
 "**Max Steps** determines the length of the reflection. The bigger this "
 "number, the more costly it is to compute."
 msgstr ""
+"**Max Steps** は、反射の長さを決定します。この数値が大きいほど、計算にコスト"
+"がかかります。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:211
 msgid ""
 "**Fade In** allows adjusting the fade-in curve, which is useful to make the "
 "contact area softer."
 msgstr ""
+"**Fade In** では、接触領域を柔らかくために役立つフェードイン曲線を調整できま"
+"す。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:212
 msgid ""
 "**Fade Out** allows adjusting the fade-out curve, so the step limit fades "
 "out softly."
 msgstr ""
+"**Fade Out** で、フェードアウト曲線を調整できるため、ステップの限界は柔らかく"
+"フェードアウトします。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:213
 msgid ""
 "**Depth Tolerance** can be used for screen-space-ray hit tolerance to gaps. "
 "The bigger the value, the more gaps will be ignored."
 msgstr ""
+"**Depth Tolerance** は、ギャップに対するスクリーンスペースレイヒット許容値の"
+"調整に使用できます。値が大きいほど、無視されるギャップが多くなります。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:214
 msgid ""
 "**Roughness** will apply a screen-space blur to approximate roughness in "
 "objects with this material characteristic."
 msgstr ""
+"**Roughness** は、スクリーンスペースのぼかしを適用して、このマテリアル特性を"
+"持つオブジェクトの粗さを近似します。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:216
 msgid ""
 "Keep in mind that screen-space-reflections only work for reflecting opaque "
 "geometry. Transparent objects can't be reflected."
 msgstr ""
+"スクリーンスペース反射は不透明なジオメトリを反射する場合にのみ機能することに"
+"注意してください。透明なオブジェクトは反射できません。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:219
 msgid "Screen-Space Ambient Occlusion (SSAO)"
-msgstr "スクリーンスペース・アンビエント・オクルージョン (SSAO)"
+msgstr "スクリーンスペース・アンビエントオクルージョン(Ssao/SSAO)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:223
 msgid ""
@@ -422,12 +536,11 @@ msgid ""
 "methods proposed previously act more on a larger scale (large regions) than "
 "at the smaller geometry level."
 msgstr ""
-"**Ambient** の節でも触れましたが、光源ノードから(その範囲外にあるか、遮られて"
-"いるといった理由で) 光が届かないエリアは、環境光が照らします。Godotは"
-"GIProbe、ReflectionProbe、Skyや、あるいは環境色を指定することで、これをシミュ"
-"レートすることができます。しかしこれらの方法はすべて、小さなジオメトリ・レベ"
-"ルではなく、より大きなスケール (大きな領域)にて効果が表れるという欠点がありま"
-"す。"
+"**Ambient** セクションで述べたように、Lightノードからの光が(その範囲外にある"
+"か、遮られているといった理由で)到達しない領域は環境光で照らされます。 Godot"
+"は、GIProbe、ReflectionProbe、Sky、または一定の環境色を使用してこれをシミュ"
+"レートできます。しかしこれらの方法はすべて、小さなジオメトリ・レベルではな"
+"く、より大きなスケール (大きな領域)にて効果が表れるという欠点があります。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:230
 msgid ""
@@ -435,6 +548,9 @@ msgid ""
 "Reflection probes have more local detail, but not enough to simulate "
 "situations where light is not able to fill inside hollow or concave features."
 msgstr ""
+"一定の環境色とSkyはどの場所でも同じですが、それに比べてGIおよびReflectionプ"
+"ローブはより局所的な詳細度を持つとはいえ、光が中空または凹面の形状を照らすこ"
+"とができない状況をシミュレートするには不十分です。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:234
 msgid ""
@@ -442,6 +558,9 @@ msgid ""
 "the image below, its purpose is to make sure concave areas are darker, "
 "simulating a narrower path for the light to enter:"
 msgstr ""
+"これは、スクリーンスペースアンビエントオクルージョンでシミュレートできます。"
+"下の画像でわかるように、その目的は、光が入る狭い経路をシミュレートして、凹面"
+"領域がより暗くなるようにすることです:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:240
 msgid ""
@@ -449,6 +568,9 @@ msgid ""
 "able to appreciate it. This is because SSAO only acts on *ambient* light, "
 "not direct light."
 msgstr ""
+"よくある間違いとして、このエフェクトを有効にし、ライトをオンにしても、結果が"
+"確認できないというものです。これは、SSAOが直接光ではなく、\\ *環境*\\ 光のみ"
+"に作用するためです。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:243
 msgid ""
@@ -457,40 +579,52 @@ msgid ""
 "light too, use the **Light Affect** parameter (even though this is not "
 "correct, some artists like how it looks)."
 msgstr ""
+"これが、上の画像で、直接光の下(左側)では効果が目立たない理由です。 SSAOを直接"
+"光でも機能させる場合は、\\ **Light Affect** パラメーターを使用します(これは正"
+"しくありませんが、一部のアーティストはこの見た目が好きです)。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:247
 msgid ""
 "SSAO looks best when combined with a real source of indirect light, like "
 "GIProbe:"
 msgstr ""
+"SSAOは、GIProbeのような間接光の実際の光源と組み合わせたときに見栄えがします:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:251
 msgid "Tweaking SSAO is possible with several parameters:"
-msgstr ""
+msgstr "SSAOの調整は、いくつかのパラメーターで可能です:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:255
 msgid ""
 "**Radius/Intensity:** To control the radius or intensity of the occlusion, "
 "these two parameters are available. Radius is in world (Metric) units."
 msgstr ""
+"**Radius/Intensity:** オクルージョンの半径または強度を制御するために、これら2"
+"つのパラメーターを使用できます。半径はワールド(メートル)単位です。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:256
 msgid ""
 "**Radius2/Intensity2:** A Secondary radius/intensity can be used. Combining "
 "a large and a small radius AO generally works well."
 msgstr ""
+"**Radius2/Intensity2:** 第二の半径/強度を使用できます。一般に、半径の大きいAO"
+"と小さいAOを組み合わせるとうまくいきます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:257
 msgid ""
 "**Bias:** This can be tweaked to solve self occlusion, though the default "
 "generally works well enough."
 msgstr ""
+"**Bias:** これはセルフオクルージョンを解決するために微調整できますが、通常は"
+"デフォルトで十分に機能します。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:258
 msgid ""
 "**Light Affect:** SSAO only affects ambient light, but increasing this "
 "slider can make it also affect direct light. Some artists prefer this effect."
 msgstr ""
+"**Light Affect:** SSAOは周囲光のみに影響しますが、このスライダーを大きくする"
+"と、直接光にも影響します。この効果を好むアーティストもいます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:259
 msgid ""
@@ -499,12 +633,18 @@ msgid ""
 "greater than 0 multiply the AO texture by the SSAO effect to varying "
 "degrees. This does not affect materials without an AO texture."
 msgstr ""
+"**Ao Channel Affect:** ゼロの値を使用すると、マテリアルのAOテクスチャのみがア"
+"ンビエントオクルージョンに使用されます。 SSAOは適用されません。 0より大きい値"
+"は、AOテクスチャにSSAOエフェクトをさまざまな度合いで掛けます。これは、AOテク"
+"スチャのないマテリアルには影響しません。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:260
 msgid ""
 "**Quality:** Depending on quality, SSAO will take more samples over a sphere "
 "for every pixel. High quality only works well on modern GPUs."
 msgstr ""
+"**Quality:** 品質に応じて、SSAOは、すべてのピクセルについて球体上のサンプルを"
+"より多く取得します。High qualityは、最新のGPUでのみ有効です。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:261
 msgid ""
@@ -514,16 +654,22 @@ msgid ""
 "better (with a bit of dithering-like effect), but does not preserve local "
 "detail as well."
 msgstr ""
+"**Blur:** 使用されるブラーカーネルのタイプ。 1x1カーネルは、局所の詳細度をよ"
+"り良く保つ単純なぼかしですが、それほど効果的ではありません。一方、3x3は画像を"
+"より柔らかくしますが(ディザリングのような効果が少しあります)、局所の詳細度を"
+"保ちません。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:262
 msgid ""
 "**Edge Sharpness**: This can be used to preserve the sharpness of edges "
 "(avoids areas without AO on creases)."
 msgstr ""
+"**Edge Sharpness**: エッジのシャープネスを維持するために使用することができま"
+"す(折り目にAOのない領域を避けます)。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:265
 msgid "Depth of Field / Far Blur"
-msgstr ""
+msgstr "被写界深度(DOF)/遠方ぼかし(Far Blur)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:269
 msgid ""
@@ -531,6 +677,9 @@ msgid ""
 "behind a given range. It has an initial **Distance** with a **Transition** "
 "region (in world units):"
 msgstr ""
+"このエフェクトは、ハイエンドカメラの焦点距離をシミュレートします。特定の範囲"
+"の背後にあるオブジェクトをぼかします。\\ **Transition**(遷移)領域(ワールド単"
+"位)を持つ 開始 **Distance**(距離) を持っています:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:275
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:289
@@ -538,10 +687,12 @@ msgid ""
 "The **Amount** parameter controls the amount of blur. For larger blurs, "
 "tweaking the **Quality** may be needed in order to avoid artifacts."
 msgstr ""
+"**Amount** パラメーターは、ぼかしの量を制御します。大きなぼかしの場合、アー"
+"ティファクトを回避するために **Quality** の調整が必要になる場合があります。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:279
 msgid "Depth of Field / Near Blur"
-msgstr ""
+msgstr "被写界深度(DOF)/近方ぼかし(Near Blur)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:283
 msgid ""
@@ -549,16 +700,22 @@ msgid ""
 "close to the camera (acts in the opposite direction as far blur). It has an "
 "initial **Distance** with a **Transition** region (in world units):"
 msgstr ""
+"このエフェクトは、ハイエンドカメラの焦点距離をシミュレートします。カメラに近"
+"いオブジェクトをぼかします(遠方ぼかしとは反対方向に作用します)。\\ "
+"**Transition**(遷移)領域(ワールド単位)を持つ 開始 **Distance**(距離) を持って"
+"います:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:292
 msgid ""
 "It is common to use both blurs together to focus the viewer's attention on a "
 "given object:"
 msgstr ""
+"両方のぼかしを一緒に使用して、特定のオブジェクトに視聴者の注意を集中させる使"
+"い方が一般的です:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:298
 msgid "Glow"
-msgstr ""
+msgstr "Glow(にじみ/発光)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:302
 msgid ""
@@ -566,12 +723,17 @@ msgid ""
 "the media (be it analog or digital), it generally bleeds outwards to darker "
 "regions of the image. This is simulated in Godot with the **Glow** effect."
 msgstr ""
+"写真やフィルムでは、光量がメディアでサポートされている最大値(アナログまたはデ"
+"ジタル)を超えると、一般に画像の暗い領域に向かって外側ににじみます。これ"
+"は、\\ **Glow** エフェクトを使用してGodotでシミュレートされます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:308
 msgid ""
 "By default, even if the effect is enabled, it will be weak or invisible. One "
 "of two conditions need to happen for it to actually show:"
 msgstr ""
+"デフォルトでは、エフェクトが有効になっていても、効果が弱いか見えません。実際"
+"に表示するには、次の2つの条件のいずれかが必要です:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:311
 msgid ""
@@ -582,26 +744,35 @@ msgid ""
 "that allows scaling (making brighter or darker) the light surpassing the "
 "threshold."
 msgstr ""
+"ピクセル内の光が **HDR Threshold** を超えている(0はすべてのライトを超え、1.0"
+"はトーンマッパー **White** の値を超えています)。通常、この値は1.0であると予想"
+"されますが、より多くの光を放出できるように下げることができます。また、\\ "
+"**HDR Scale** という追加のパラメーターがあり、しきい値を超える光のスケーリン"
+"グ(明るくまたは暗くする)を可能にします。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:315
 msgid ""
 "The Bloom effect has a value set greater than 0. As it increases, it sends "
 "the whole screen to the glow processor at higher amounts."
 msgstr ""
+"Bloomエフェクトの値が0より大きい値に設定されている。値が大きくなると、画面全"
+"体がグロープロセッサーに大量に送信されます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:319
 msgid "Both will cause the light to start bleeding out of the brighter areas."
-msgstr ""
+msgstr "両方とも、明るい部分から光がにじみ出始めます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:321
 msgid "Once glow is visible, it can be controlled with a few extra parameters:"
-msgstr ""
+msgstr "Glowが表示されたら、いくつかの追加パラメーターで制御できます:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
 msgid ""
 "**Intensity** is an overall scale for the effect, it can be made stronger or "
 "weaker (0.0 removes it)."
 msgstr ""
+"**Intensity** はエフェクトの全体的な尺度であり、より強くまたはより弱くするこ"
+"とができます(0.0に設定すると削除します)。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:324
 msgid ""
@@ -610,10 +781,13 @@ msgid ""
 "this is not needed, as the size can be more efficiently adjusted with the "
 "**Levels**."
 msgstr ""
+"**Strength** ガウスフィルターカーネルが処理される強度です。値を大きくすると、"
+"フィルターが飽和して外側に拡張します。一般に、\\ **Levels** でサイズをより効"
+"率的に調整できるため、これを変更する必要はありません。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:326
 msgid "The **Blend Mode** of the effect can also be changed:"
-msgstr ""
+msgstr "エフェクトの **Blend Mode** も変更できます:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:328
 msgid ""
@@ -621,24 +795,33 @@ msgid ""
 "image with no blending involved. In general, it's too strong to be used, but "
 "can look good with low intensity Bloom (produces a dream-like effect)."
 msgstr ""
+"**Additive** は、ブレンドを行わずに画像にグロー効果を加算するだけなので、最も"
+"強力です。一般的に使用するには効果が強すぎますが、低強度のブルームでは見栄え"
+"がよくなります(夢のような効果が得られます)。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:329
 msgid ""
 "**Screen** is the default one. It ensures glow never brights more than "
 "itself and works great as an all around."
 msgstr ""
+"**Screen** がデフォルトです。それはGlowがそれ自体よりも明るくならないことを保"
+"証し、すべての周囲で素晴らしい働きをします。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:330
 msgid ""
 "**Softlight** is the weakest one, producing only a subtle color disturbance "
 "around the objects. This mode works best on dark scenes."
 msgstr ""
+"**Softlight** は最も弱いもので、オブジェクトの周囲にわずかな色の乱れしか生じ"
+"ません。このモードは暗いシーンに最適です。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:331
 msgid ""
 "**Replace** can be used to blur the whole screen or debug the effect. It "
 "just shows the glow effect without the image below."
 msgstr ""
+"**Replace** は、画面全体をぼかす、または効果をデバッグするために使用できま"
+"す。下地の画像なしでグローエフェクトを表示します。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:333
 msgid ""
@@ -646,12 +829,17 @@ msgid ""
 "levels are strong glows that appear around objects, while large levels are "
 "hazy glows covering the whole screen:"
 msgstr ""
+"グローエフェクトのサイズと形状を変更するために、Godotは **Levels** を提供しま"
+"す。小さなレベルはオブジェクトの周りに現れる強い輝きであり、大きいレベルは画"
+"面全体を覆うかすんだ輝きです。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:339
 msgid ""
 "The real strength of this system, though, is to combine levels to create "
 "more interesting glow patterns:"
 msgstr ""
+"ただし、このシステムの本当の長所は、複数のレベルを組み合わせてより興味深いグ"
+"ローパターンを作成することです:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:344
 msgid ""
@@ -659,30 +847,40 @@ msgid ""
 "images, it is possible that some blockiness may be visible. Enabling "
 "**Bicubic Upscaling** gets rids of it, at a minimal performance cost."
 msgstr ""
+"最後に、小さなぼかした画像を引き伸ばすことによって最上位のレイヤーが作成され"
+"るため、何らかのブロックが見える可能性があります。\\ **Bicubic Upscaling** を"
+"有効にすると、最小限のパフォーマンスコストでそれが削除されます。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:351
 msgid "Adjustments"
-msgstr ""
+msgstr "Adjustments(調整)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:355
 msgid ""
 "At the end of processing, Godot offers the possibility to do some standard "
 "image adjustments."
 msgstr ""
+"処理の最後に、Godotはいくつかの標準的な画像調整を行う可能性を提供します。"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:360
 msgid ""
 "The first one is being able to change the typical Brightness, Contrast, and "
 "Saturation:"
 msgstr ""
+"1つ目は、一般的なBrightness(明るさ)、Contrast(コントラスト)、Saturation(彩度)"
+"を変更できることです:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:365
 msgid ""
 "The second is by supplying a color correction gradient. A regular black to "
 "white gradient like the following one will produce no effect:"
 msgstr ""
+"2つ目は、色補正のグラデーションを指定することです。次のような通常の黒から白へ"
+"のグラデーションでは効果がありません:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:370
 msgid ""
 "But creating custom ones will allow to map each channel to a different color:"
 msgstr ""
+"しかし、カスタムのものを作成すると、各チャンネルを異なる色にマップすることが"
+"できます:"

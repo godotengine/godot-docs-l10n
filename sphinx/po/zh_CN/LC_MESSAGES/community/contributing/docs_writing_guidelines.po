@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,7 +107,8 @@ msgstr ""
 "助您实现这一目标。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:36
-msgid "7 rules for a clear english"
+#, fuzzy
+msgid "7 rules for clear English"
 msgstr "英语清晰的7条规则"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:41
@@ -538,11 +539,12 @@ msgstr ""
 "示为 ``this``。在Godot存储库中编辑XML文件时，用 ``[code]this[/code]`` 替换现"
 "在的参数，如 ``'this'`` 或 ```this``` 。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:445
-msgid "Common vocabulary to use in godot's docs"
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:448
+#, fuzzy
+msgid "Common vocabulary to use in Godot's documentation"
 msgstr "在Godot文档中使用的常用词汇"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:447
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:450
 msgid ""
 "The developers chose some specific words to refer to areas of the interface. "
 "They're used in the sources, in the documentation, and you should always use "
@@ -551,11 +553,11 @@ msgstr ""
 "开发人员选择了一些特定的单词来引用界面的区域。它们在文档以及源代码中使用，您"
 "应该始终使用它们而不是同义词，因此用户知道您在谈论什么。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:455
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:458
 msgid "Overview of the interface and common vocabulary"
 msgstr "界面和常用词汇概述"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:457
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:460
 msgid ""
 "In the top left corner of the editor lie the ``main menus``. In the center, "
 "the buttons change the ``workspace``. And together the buttons in the top "
@@ -568,7 +570,7 @@ msgstr ""
 "3D空间中心区域的是 ``视图(viewport)``。在它的顶部，您会在 ``工具栏"
 "(toolbar)`` 中找到一个 ``工具(tools)`` 列表。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:463
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:466
 msgid ""
 "The tabs or dockable panels on either side of the viewport are ``docks``. "
 "You have the ``FileSystem dock``, the ``Scene dock`` that contains your "
@@ -583,7 +585,7 @@ msgstr ""
 "选项卡式停靠面板 ``选项卡(tabs)``：``场景选项卡(Scene tab)``、``节点选项卡"
 "(Node tab)``……"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:469
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:472
 msgid ""
 "The Animation, Debugger, etc. at the bottom of the viewport are ``panels``. "
 "Together they make up the ``bottom panels``."
@@ -591,7 +593,7 @@ msgstr ""
 "视图底部的动画、调试器等是 ``面板(panels)``。它们一起构成了 ``底部面板"
 "(bottom panels)``。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:472
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:475
 msgid ""
 "Foldable areas of the Inspector are ``sections``. The node's parent class "
 "names, which you can't fold, are ``Classes`` e.g. the ``KinematicBody2D "
@@ -603,35 +605,82 @@ msgstr ""
 "(properties)``。例如，``位置(position)`` 或 ``调整颜色(modulate color)`` 都"
 "是 ``属性(properties)``。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:479
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:482
+#, fuzzy
+msgid "Keyboard shortcut guidelines"
+msgstr "键盘快捷键"
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:484
+msgid ""
+"Keyboard and mouse shortcuts should make use of the ``:kbd:`` tag, which "
+"allows shortcuts to stand out from the rest of the text and inline code. Use "
+"the compact form for modifier keys (:kbd:`Ctrl`/:kbd:`Cmd`) instead of their "
+"spelled out form (:kbd:`Control`/:kbd:`Command`). For combinations, use the "
+"``+`` symbol with a space on either side of the symbol."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:490
+msgid ""
+"Make sure to mention shortcuts that differ on macOS compared to other "
+"platforms. On macOS, ``Cmd`` often replaces ``Ctrl`` in keyboard shortcuts."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:493
+msgid ""
+"Try to integrate the shortcut into sentences the best you can. Here are some "
+"examples with the ``:kbd:`` tag left as-is for better visibility:"
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:496
+msgid ""
+"Press ``:kbd:`Ctrl + Alt + T``` to toggle the panel (``:kbd:`Cmd + Alt + "
+"T``` on macOS)."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:497
+msgid ""
+"Press ``:kbd:`Space``` and hold the left mouse button to pan in the 2D "
+"editor."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:498
+msgid "Press ``:kbd:`Shift + Up Arrow``` to move the node upwards by 8 pixels."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:501
 msgid "Image contribution guidelines"
 msgstr "图像贡献指南"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:481
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:503
 msgid ""
 "A significant part of the documentation is images, and there are several "
 "important guidelines to follow."
 msgstr "文档中很重要的一部分是图像，并且要遵循几个重要的准则。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:484
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:506
 msgid ""
 "First, you should always be using the default editor theme and text when "
 "taking screenshots."
 msgstr "首先，在截屏时应始终使用默认编辑器主题和文本。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:486
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:509
+#, fuzzy
 msgid ""
-"For 3D screenshots use 4xMSAA, enable anisotropic filtering on the projects "
-"textures, and set the anisotropic filter quality to 16x in Project Settings"
+"To improve the apperance of 3D screenshots, use 4× MSAA, enable anisotropic "
+"filtering on the project's textures, and set the anisotropic filter quality "
+"to 16× in Project Settings."
 msgstr ""
 "对于3D屏幕截图，使用4xMSAA，对项目纹理启用各向异性过滤，并在项目设置中将各向"
 "异性过滤器质量设置为16x"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:489
-msgid "Screenshot size should not exceed 1920x1080."
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:513
+#, fuzzy
+msgid ""
+"Screenshot sizes should not exceed 1920×1080 to ensure fast loading on "
+"slower connections."
 msgstr "屏幕截图大小不应超过1920x1080。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:491
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:516
 msgid ""
 "When you need to highlight an area of the editor to show something, like a "
 "button or option, use a 2 pixel thick outline without a bevel."
@@ -639,13 +688,14 @@ msgstr ""
 "当您需要突出显示编辑器的某个区域以显示某些内容，如按钮或选项时，请使用不带斜"
 "角的2像素粗轮廓。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:494
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:519
+#, fuzzy
 msgid ""
 "Before you add or replace any images in the documentation, they should be "
-"run through a png compressor to save size. The built in lossless compressor "
-"in programs like Krita or Photoshop should be done. However you should also "
-"use a lossy one, such as `pngquant <https://pngquant.org/>`_ where almost no "
-"image quality is lost during compression."
+"run through a PNG compressor to save size. The built in lossless compressor "
+"in programs like Krita or Photoshop should be enough. For heavier images, "
+"also look into using a lossy compressor, such as `pngquant <https://pngquant."
+"org/>`_ where almost no image quality is lost during compression."
 msgstr ""
 "在添加或替换文档中的任何图像之前，应通过png压缩器运行它们以节省大小。应该使用"
 "在Krita或Photoshop等程序中内置的无损压缩器。但是您也可以使用有损的压缩器，例"

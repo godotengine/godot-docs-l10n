@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,7 @@ msgstr "ポインタ演算子と参照演算子は、型名ではなく変数識
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:26
 msgid "See further down regarding header includes"
-msgstr ""
+msgstr "ヘッダーのインクルードに関する詳細を参照してください"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:28
 msgid ""
@@ -113,11 +113,11 @@ msgid ""
 "you can use ``/* clang-format off */`` and ``/* clang-format on */`` to tell "
 "clang-format to ignore a chunk of code."
 msgstr ""
-"通常、サードパーティのコードは `` thirdparty / `` フォルダーに含まれているた"
-"め、フォーマットスクリプトから簡単に除外できます。 サードパーティのコードスニ"
-"ペットをGodotファイル内に直接含める必要があるまれなケースでは、 ``/* clang-"
-"format off */`` および ``/* clang-format on */`` を使用してclang-formatにコー"
-"ドのチャンクを無視させることができます。"
+"通常、サードパーティのコードは ``thirdparty/`` フォルダに含まれているため、"
+"フォーマットスクリプトから簡単に除外できます。 サードパーティのコードスニペッ"
+"トをGodotファイル内に直接含める必要があるまれなケースでは、 ``/*clang-format "
+"off*/`` および ``/*clang-format on*/`` を使用してclang-formatにコードのチャン"
+"クを無視させることができます。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:52
 msgid "Using clang-format locally"
@@ -130,6 +130,10 @@ msgid ""
 "versions might be suitable, but previous versions had bugs that will cause "
 "formatting changes to the current code base."
 msgstr ""
+"まず、clang-formatをインストールする必要があります。現時点では、Godotのフォー"
+"マットと互換性を保つために **clang-format 8.x** を使用する必要があります。後"
+"のバージョンが適している場合がありますが、以前のバージョンにはバグがあり、現"
+"在のコードベースのフォーマットが変更される可能性があります。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:60
 msgid "Installation"
@@ -147,6 +151,12 @@ msgid ""
 "releases.llvm.org/download.html>`__, or if you are on a Debian derivative, "
 "use the `upstream repos <http://apt.llvm.org/>`__."
 msgstr ""
+"Linux: 通常、ディストリビューションによってパッケージ化されたclangツール"
+"チェーンですぐに使用できます。ディストリビューションのバージョンが必要なバー"
+"ジョンではない場合、コンパイル済みのバージョンを `LLVMウェブサイト<http://"
+"releases.llvm.org/download.html>`__からダウンロードできます。または、Debian派"
+"生物を使用している場合は、\\ `upstream repos <http://apt.llvm.org/>`__を使用"
+"します。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:69
 msgid ""
@@ -155,6 +165,10 @@ msgid ""
 "path to the binary's folder to your system's ``PATH`` environment variable "
 "to be able to call ``clang-format`` out of the box."
 msgstr ""
+"macOSおよびWindows: プリコンパイルされたバイナリは、 `LLVM Webサイト<http://"
+"releases.llvm.org/download.html>`__からダウンロードできます。バイナリのフォル"
+"ダへのパスをシステムの ``PATH`` 環境変数に追加して、\\ ``clang-format`` をす"
+"ぐに呼び出せるようにする必要があります。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:74
 msgid ""
@@ -279,25 +293,32 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:124
 msgid "Header includes"
-msgstr ""
+msgstr "ヘッダーのインクルード"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:126
 msgid ""
 "When adding new C++ or Objective-C files or including new headers in "
 "existing ones, the following rules should be followed:"
 msgstr ""
+"新しいC++またはObjective-Cファイルを追加するとき、または既存のファイルに新し"
+"いヘッダーを含めるときは、次の規則に従う必要があります:"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:129
 msgid ""
 "The first lines in the file should be Godot's copyright header and MIT "
 "license, copy-pasted from another file. Make sure to adjust the filename."
 msgstr ""
+"ファイルの最初の行は、別のファイルからコピーアンドペーストされたGodotの著作権"
+"ヘッダーとMITライセンスでなければなりません。必ずファイル名を調整してくださ"
+"い。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:131
 msgid ""
 "In a ``.h`` header, include guards should be used with the form "
 "``FILENAME_H``."
 msgstr ""
+"``.h`` ヘッダーでは、インクルードガードを ``FILENAME_H`` の形式で使用する必要"
+"があります。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:134
 msgid ""
@@ -305,6 +326,9 @@ msgid ""
 "one where the class is declared (e.g. ``#include \"filename.h\"``), followed "
 "by an empty line for separation."
 msgstr ""
+"``.cpp`` ファイル(たとえば ``filename.cpp``)では、最初のインクルードはクラス"
+"が宣言されているもの(たとえば ``#include \"filename.h\"``)で、その後に分離の"
+"ための空白行が続く必要があります。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:137
 msgid ""
@@ -314,6 +338,11 @@ msgid ""
 "The block of Godot header includes should then be followed by an empty line "
 "for separation."
 msgstr ""
+"次に、Godot独自のコードベースからヘッダーを取得します。このヘッダーは、アル"
+"ファベット順(``clang-format`` で強制)に含まれ、ルートフォルダからの相対パスを"
+"持ちます。これらのインクルードは引用符で行う必要があります。\\ ``#include "
+"\"core/object.h\"``\\ 。 Godotヘッダーのインクルードブロックの後には、分離の"
+"ために空白行が続く必要があります。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:142
 msgid ""
@@ -322,6 +351,10 @@ msgid ""
 "g. ``#include <png.h>``. The block of thirdparty headers should also be "
 "followed by an empty line for separation."
 msgstr ""
+"最後に、サードパーティのヘッダー(``サードパーティ`` またはシステムのインク"
+"ルードパスのいずれか)が次に来るので、< と > をシンボルに含める必要がありま"
+"す。例: ``#include <png.h>``\\ 。サードパーティヘッダーのブロックの後には、分"
+"離のために空白行が続く必要があります。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:146
 msgid ""
@@ -329,6 +362,9 @@ msgid ""
 "them, i.e. in the `.h` header if used in the declarative code or in the `."
 "cpp` if used only in the imperative code."
 msgstr ""
+"Godotおよびサードパーティのヘッダーは、それらを必要とするファイルに含める必要"
+"があります。つまり、宣言型コードで使用する場合は `.h` ヘッダーに、命令型コー"
+"ドでのみ使用する場合は ` .cpp` に含める必要があります。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:150
 msgid "Example:"
@@ -336,7 +372,7 @@ msgstr "例:"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:238
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:240
 msgid ""
@@ -345,10 +381,15 @@ msgid ""
 "that this style guide only applies to code written and maintained by Godot, "
 "not thirdparty code such as the ``java/src/com/google`` subfolder."
 msgstr ""
+"GodotのJavaコード(ほとんどが ``platform/android`` にあります)も ``clang-"
+"format`` を介して適用されるため、上記の手順を参照して設定してください。このス"
+"タイルガイドはGodotによって記述および管理されるコードにのみ適用され、\\ "
+"``java/src/com/google`` サブフォルダなどのサードパーティコードには適用されな"
+"いことに注意してください。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:246
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:248
 msgid ""
@@ -365,3 +406,7 @@ msgid ""
 "If you are so inclined, you can check and format your Python changes using "
 "`autopep8 <https://pypi.org/project/autopep8/>`__."
 msgstr ""
+"それらについては、\\ `PEP-8スタイルガイド<https://www.python.org/dev/peps/"
+"pep-0008/>`__に従いますが、これはC++コードほど強力ではありません。そうしたい"
+"場合は、\\ `autopep8 <https://pypi.org/project/autopep8/>`__を使用してPython"
+"の変更を確認およびフォーマットできます。"

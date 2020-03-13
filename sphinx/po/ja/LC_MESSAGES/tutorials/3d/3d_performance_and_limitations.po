@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:4
 msgid "3D performance and limitations"
-msgstr ""
+msgstr "3Dのパフォーマンスと制限"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:7
 msgid "Introduction"
@@ -31,6 +31,10 @@ msgid ""
 "there are always trade-offs, which consist of trading speed for usability "
 "and flexibility. Some practical examples of this are:"
 msgstr ""
+"Godotは、バランスの取れたパフォーマンスの哲学に従っています。パフォーマンスの"
+"世界では、トレードオフが常にあります。トレードオフは、使いやすさと柔軟性のた"
+"めにスピードを交換することから成ります。これのいくつかの実用的な例は次のとお"
+"りです:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:13
 msgid ""
@@ -40,6 +44,11 @@ msgid ""
 "efficient, but, at the same time, fewer objects are rendered, so efficiency "
 "overall improves."
 msgstr ""
+"オブジェクトを大量に効率的にレンダリングするのは簡単ですが、大きなシーンをレ"
+"ンダリングする必要がある場合、非効率になる可能性があります。これを解決するに"
+"は、レンダリングに可視性の計算を追加する必要があり、レンダリングの効率が低下"
+"しますが、同時にレンダリングされるオブジェクトが少なくなるため、全体的に効率"
+"が向上します。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:18
 msgid ""
@@ -47,6 +56,10 @@ msgid ""
 "be rendered is also slow. To solve this, objects are sorted by material to "
 "reduce the costs, but at the same time sorting has a cost."
 msgstr ""
+"レンダリングする必要があるすべてのオブジェクトに対して、すべてのマテリアルの"
+"プロパティを設定するのも遅くなります。これを解決するために、オブジェクトはコ"
+"ストを削減するためにマテリアル別にソートされますが、並べ替えにはコストがかか"
+"ります。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:22
 msgid ""
@@ -56,6 +69,10 @@ msgid ""
 "removal, as well as ray-casting, will not be able to handle as many active "
 "objects."
 msgstr ""
+"3D物理でも同様の状況が発生します。大量の物理オブジェクト(SAPなど)を処理するた"
+"めの最適なアルゴリズムは、オブジェクトの挿入/削除とレイキャスティングが遅くな"
+"ります。レイキャスティングと同様に、より高速な挿入と削除を可能にするアルゴリ"
+"ズムは、多くのアクティブオブジェクトを処理できません。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:28
 msgid ""
@@ -64,6 +81,10 @@ msgid ""
 "that might be fast in some situations and slow in others.. or algorithms "
 "that are fast but make usability more difficult."
 msgstr ""
+"そして、これにはもっと多くの例があります！ゲームエンジンは本質的に汎用である"
+"ように努めているため、バランスの取れたアルゴリズムは、ある状況では高速で他の"
+"状況では遅いアルゴリズムや、高速であるが使いやすさを難しくするアルゴリズムよ"
+"りも常に好まれます。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:33
 msgid ""
@@ -72,26 +93,33 @@ msgid ""
 "ones that are there for now) prioritize balance and flexibility over "
 "performance."
 msgstr ""
+"Godotは例外ではなく、異なるアルゴリズムに交換可能なバックエンドを持つように設"
+"計されていますが、デフォルトのアルゴリズム(または、現在存在する唯一のもの)"
+"は、パフォーマンスよりもバランスと柔軟性を優先します。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:38
 msgid ""
 "With this clear, the aim of this tutorial is to explain how to get the "
 "maximum performance out of Godot."
 msgstr ""
+"このチュートリアルの明確な目的は、Godotを最大限に活用する方法を説明することで"
+"す。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:42
 msgid "Rendering"
-msgstr ""
+msgstr "レンダリング"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:44
 msgid ""
 "3D rendering is one of the most difficult areas to get performance from, so "
 "this section will have a list of tips."
 msgstr ""
+"3Dレンダリングはパフォーマンスを得るのが最も難しい分野の1つであるため、このセ"
+"クションではヒントのリストを示します。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:48
 msgid "Reuse shaders and materials"
-msgstr ""
+msgstr "シェーダーとマテリアルを再利用する"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:50
 msgid ""
@@ -101,6 +129,11 @@ msgid ""
 "similar shaders but, if custom shaders are used, make sure to reuse them as "
 "much as possible. Godot's priorities will be like this:"
 msgstr ""
+"Godotレンダラーは、その辺にあるものとは少し異なります。 GPU状態の変化を可能な"
+"限り最小限に抑えるように設計されています。\\ :ref:`class_SpatialMaterial` "
+"は、同様のシェーダーを必要とするマテリアルの再利用に優れていますが、カスタム"
+"シェーダーを使用する場合は、可能な限り再利用するようにしてください。Godotの優"
+"先順位は次のようになります:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:57
 msgid ""
@@ -109,6 +142,9 @@ msgid ""
 "the hundreds or thousands) try reusing the materials or in the worst case "
 "use atlases."
 msgstr ""
+"**マテリアルの再利用**: シーン内の異なるマテリアルが少ないほど、レンダリング"
+"は高速になります。シーンに大量のオブジェクト(数百または数千)がある場合は、マ"
+"テリアルを再利用するか、最悪の場合はアトラスを使用してください。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:61
 msgid ""
@@ -116,6 +152,9 @@ msgid ""
 "shaders (or SpatialMaterials with different parameters but the same "
 "configuration)."
 msgstr ""
+"**シェーダーの再利用**: マテリアルを再利用できない場合は、少なくともシェー"
+"ダー(またはパラメーターが異なるが同じ構成のSpatialMaterials)を再利用してくだ"
+"さい。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:65
 msgid ""
@@ -123,10 +162,14 @@ msgid ""
 "each, rendering will be slow. If the same scene has 20.000 objects, but only "
 "uses 100 materials, rendering will be blazingly fast."
 msgstr ""
+"たとえば、シーンにそれぞれ2万個の異なるマテリアルを持つ2万個のオブジェクトが"
+"ある場合、レンダリングが遅くなります。それに対し、同じシーンに2万個のオブジェ"
+"クトがあり、100個のマテリアルのみを使用している場合、レンダリングは非常に高速"
+"になります。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:71
 msgid "Pixel cost vs vertex cost"
-msgstr ""
+msgstr "ピクセルコストと頂点コスト"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:73
 msgid ""
@@ -134,20 +177,24 @@ msgid ""
 "faster it will be rendered. This is *really* relative and depends on many "
 "factors."
 msgstr ""
+"モデル内のポリゴンの数が少ないほど、レンダリングが速くなるというのが一般的な"
+"考え方です。これは *本当に* 相対的であり、多くの要因に依存します。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:77
 msgid ""
 "On a modern PC and console, vertex cost is low. GPUs originally only "
 "rendered triangles, so all the vertices:"
 msgstr ""
+"最新のPCおよびコンソールでは、頂点コストは低くなっています。 GPUはもともと三"
+"角形のみをレンダリングしたため、すべての頂点は:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:80
 msgid "Had to be transformed by the CPU (including clipping)."
-msgstr ""
+msgstr "CPUによって変換される必要がありました(クリッピングを含む)。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:82
 msgid "Had to be sent to the GPU memory from the main RAM."
-msgstr ""
+msgstr "メインRAMからGPUメモリに送信する必要がありました。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:84
 msgid ""
@@ -158,6 +205,12 @@ msgid ""
 "performance. Truth is, a model rendered by a 3D engine is much more optimal "
 "than how 3D DCCs display them."
 msgstr ""
+"現在、これらはすべてGPU内で処理されるため、パフォーマンスは非常に高くなってい"
+"ます。 3D DCC(Blender、Maxなど)は、編集するためにジオメトリをCPUメモリに保持"
+"し、実際のパフォーマンスを低下させる必要があるため、3Dアーティストは通常、ポ"
+"リカウントパフォーマンスについて誤った感覚を抱いています。真実は、3Dエンジン"
+"によってレンダリングされたモデルは、3D DCCがそれらを表示する方法よりもはるか"
+"に最適です。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:91
 msgid ""
@@ -166,6 +219,10 @@ msgid ""
 "grid. Mobile GPUs are limited to a tiny battery, so they need to be a lot "
 "more power efficient."
 msgstr ""
+"モバイルデバイスでは、話は異なります。 PCおよびコンソールのGPUは、必要なだけ"
+"電力グリッドから電力を引き出すことができる強引なモンスターです。モバイルGPUは"
+"小さなバッテリーに制限されているため、電力効率を大幅に向上させる必要がありま"
+"す。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:96
 msgid ""
@@ -178,6 +235,13 @@ msgid ""
 "this and just throw more pixel processors to the hardware to increase "
 "performance (but this also increases power consumption)."
 msgstr ""
+"より効率的にするために、モバイルGPUは *多重描画* を回避しようとします。つまり"
+"それは、スクリーン上の同じピクセルが(ライティング計算などで)複数回レンダリン"
+"グされることです。複数の建物がある町を想像してください。GPUは、描画するまで何"
+"が見えて何が隠れているかを知りません。家が描かれ、その前に別の家が描かれる場"
+"合があります(同じピクセルで2回レンダリングが行われました！)。通常、PCのGPUは"
+"これをあまり気にせず、より多くのピクセルプロセッサをハードウェアに投入してパ"
+"フォーマンスを向上させます(ただし、これにより消費電力も増加します)。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:106
 msgid ""
@@ -189,6 +253,13 @@ msgid ""
 "toll on vertex performance. As a result, fewer vertices and triangles can be "
 "processed for drawing."
 msgstr ""
+"モバイルでは、より多くの電力を引き出すことはオプションではないため、画面をグ"
+"リッドに分割する「タイルベースレンダリング」と呼ばれる手法が使用されます(ほぼ"
+"すべてのモバイルハードウェアがそのバリアントを使用します)。各セルは、そこに描"
+"かれた三角形のリストを保持し、\\ *多重描画* を最小化するために深さで並べ替え"
+"ます。この手法は、パフォーマンスを向上させ、消費電力を削減しますが、頂点のパ"
+"フォーマンスに大きな負荷がかかります。その結果、描画のために処理できる頂点と"
+"三角形が少なくなります。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:114
 msgid ""
@@ -199,6 +270,12 @@ msgid ""
 "all the other cells must wait for it to complete in order to display the "
 "frame)."
 msgstr ""
+"一般的に、これはそれほど悪いことではありませんが、回避する必要があるモバイル"
+"のコーナーケース(めったに発生しない厄介な状況)があります。これは、画面の小さ"
+"な部分に多くのジオメトリを持つ小さなオブジェクトを配置することです。これによ"
+"り、モバイルGPUは単一の画面セルに大きな負担をかけ、パフォーマンスが大幅に低下"
+"します(他のすべてのセルは、フレームを表示するためにそのセルが完了するまで待機"
+"する必要があるため)。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:121
 msgid ""
@@ -207,24 +284,30 @@ msgid ""
 "example, a character, NPC, vehicle, etc. is far away (so it looks tiny), use "
 "a smaller level of detail (LOD) model instead."
 msgstr ""
+"処理時間を短くするために、モバイルで頂点数をあまり気にせず、画面の小さな部分"
+"に頂点が集中しないようにします。たとえば、キャラクター、NPC、車両などが遠く離"
+"れている場合(小さく見える)は、代わりにより小さい詳細レベル(LOD)モデルを使用し"
+"ます。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:126
 msgid ""
 "An extra situation where vertex cost must be considered is objects that have "
 "extra processing per vertex, such as:"
 msgstr ""
+"頂点コストを考慮する必要がある追加の状況は、次のような頂点ごとに追加の処理が"
+"あるオブジェクトです:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:129
 msgid "Skinning (skeletal animation)"
-msgstr ""
+msgstr "スキニング(骨格アニメーション)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:130
 msgid "Morphs (shape keys)"
-msgstr ""
+msgstr "モーフ(シェイプキー)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:131
 msgid "Vertex Lit Objects (common on mobile)"
-msgstr ""
+msgstr "頂点ライトオブジェクト(モバイルで共通)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:134
 msgid "Texture compression"
@@ -265,11 +348,11 @@ msgid ""
 "textures with transparency (only opaque), so keep this in mind."
 msgstr ""
 "注意すべき点として、Androidデバイスでは透過のあるテクスチャの圧縮はサポートさ"
-"れていません (非透過のみ) ので、気をつけてください。"
+"れていません(非透過のみ)ので、気をつけてください。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:152
 msgid "Transparent objects"
-msgstr ""
+msgstr "透明なオブジェクト"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:154
 msgid ""
@@ -280,10 +363,16 @@ msgid ""
 "a minimum! If an object has a small section with transparency, try to make "
 "that section a separate material."
 msgstr ""
+"前述したように、Godotはパフォーマンスを向上させるために、マテリアルとシェー"
+"ダーでオブジェクトを並べ替えます。ただし、これは透明なオブジェクトでは実行で"
+"きません。透明なオブジェクトは後ろから前にレンダリングして、作業の背後にある"
+"ものとブレンドします。その為、透明なオブジェクトを最小限に抑えるようにしてく"
+"ださい！オブジェクトに透明度のある小さなセクションがある場合は、そのセクショ"
+"ンを別のマテリアルにしてください。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:162
 msgid "Level of detail (LOD)"
-msgstr ""
+msgstr "レベルオブディテール(LOD)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:164
 msgid ""
@@ -293,10 +382,15 @@ msgid ""
 "a visibility range that can be defined. Having several GeometryInstance "
 "objects in different ranges works as LOD."
 msgstr ""
+"前述したように、頂点の少ないオブジェクトを使用すると、パフォーマンスが向上す"
+"る場合があります。 Godotにはレベルオブディテールを変更するシンプルなシステム"
+"があり、\\ :ref:`GeometryInstance <class_GeometryInstance>` ベースのオブジェ"
+"クトには定義可能な可視範囲があります。複数のGeometryInstanceオブジェクトが異"
+"なる可視範囲にあると、LODとして機能します。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:172
 msgid "Use instancing (MultiMesh)"
-msgstr ""
+msgstr "インスタンス化を使用する(MultiMesh)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:174
 msgid ""
@@ -305,10 +399,14 @@ msgid ""
 "drawing of dozens of thousands of objects at very little performance cost, "
 "making it ideal for flocks, grass, particles, etc."
 msgstr ""
+"複数の同一のオブジェクトを同じ場所または近くに描画する必要がある場合は、代わ"
+"りに :ref:`MultiMesh <class_MultiMesh>` を使用してみてください。 MultiMesh"
+"は、非常に少ないパフォーマンスコストで数十万のオブジェクトを描画できるため、"
+"群れ、草、パーティクルなどに最適です。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:181
 msgid "Bake lighting"
-msgstr ""
+msgstr "ライトの焼き込み(ベイク)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:183
 msgid ""
@@ -317,9 +415,16 @@ msgid ""
 "ref:`doc_baked_lightmaps`). Baking can also improve the scene quality by "
 "adding indirect light bounces."
 msgstr ""
+"通常、少数のライトはパフォーマンスの問題にはなりません。影に関してはもう少し"
+"影響が大きいです。一般的に、複数のライトがシーンに影響を与える必要がある場"
+"合、ベイク処理(焼き込み)をするのが理想的です(:ref:`doc_baked_lightmaps`)。焼"
+"き込みは、間接的なライトバウンスを追加することでシーンの品質を向上させること"
+"もできます。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:188
 msgid ""
 "If working on mobile, baking to texture is recommended, since this method is "
 "even faster."
 msgstr ""
+"モバイルで作業する場合は、この方法でさらに高速になるため、テクスチャにベイク"
+"することをお勧めします。"

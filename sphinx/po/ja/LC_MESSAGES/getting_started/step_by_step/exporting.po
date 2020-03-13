@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgid ""
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
 "自分でまだ「這うものをよけろ」を作成していない場合は、このチュートリアルを続"
-"ける前に :ref: `doc_your_first_game` をお読みください。"
+"ける前に :ref:`doc_your_first_game` をお読みください。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 msgid "Preparing the project"
@@ -247,8 +247,8 @@ msgstr ""
 "PCプラットフォームへのエクスポートは３つのサポートされたオペレーションシステ"
 "ムで同じ様に動きます。プリセットを作るためにエクスポートウィンドウを開き"
 "「Add..」をクリックします。その後 「エクスポートプロジェクト」 をクリックし、"
-"名前と保存フォルダーを選びます。あなたのプロジェクトの *外側* の場所を選んで"
-"下さい。"
+"名前と保存フォルダを選びます。あなたのプロジェクトの *外側* の場所を選んで下"
+"さい。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:304
 msgid "Click \"Save\" and the engine will build the export files."
@@ -358,7 +358,7 @@ msgid ""
 msgstr ""
 "「プロジェクトのエクスポート」ボタンをクリックすると、Godotはデバイスに送信で"
 "きるAPKをビルドします。コマンドラインでするには、下記のように実行してくださ"
-"い："
+"い:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:358
 msgid ""
@@ -411,7 +411,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/exporting.rst:378
 msgid "You must also provide icons and splash screen images as shown below:"
 msgstr ""
-"アイコンとスプラッシュスクリーンも下の画像のように指定する必要があります："
+"アイコンとスプラッシュスクリーンも下の画像のように指定する必要があります:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:382
 msgid "Click \"Export Project\" and select a destination folder."
@@ -486,7 +486,7 @@ msgstr ""
 "プロジェクトのエクスポート時に「デバッグ付きエクスポート」のチェックを外す"
 "と、無効にできます。"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:418
+#: ../../docs/getting_started/step_by_step/exporting.rst:420
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "
 "technology and you may find some things that don't work. Make sure you have "

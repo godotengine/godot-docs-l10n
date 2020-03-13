@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,10 +137,11 @@ msgid "Multiple instances"
 msgstr "多个实例"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
+#, fuzzy
 msgid ""
 "You can add as many instances as you like to a scene, either by using the "
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
-"\"Duplicate\" (Ctrl-D):"
+"\"Duplicate\" (:kbd:`Ctrl + D`):"
 msgstr ""
 "可以添加任意多的实例到一个场景中，通过再次使用 :menuselection:`实例化"
 "(Instance)` 按钮，或者点击球的实例然后选择 :menuselection:`复制(Duplicate)` "
@@ -155,20 +156,22 @@ msgid "Editing instances"
 msgstr "编辑实例"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
+#, fuzzy
 msgid ""
-"Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
-"down arrow and selecting \"New PhysicsMaterial\"."
+"Open the ``Ball`` scene and add a ``PhysicsMaterial`` by opening the "
+"\"Physics Material Override\" dropdown in the Inspector dock and selecting "
+"\"New PhysicsMaterial\"."
 msgstr ""
 "打开 ``Ball`` 场景，点击向下箭头并选择 :menuselection:`新建物理材质(New "
 "PhysicsMaterial)`，添加一个 ``物理材质``。"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:98
+#: ../../docs/getting_started/step_by_step/instancing.rst:99
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr "然后，通过点击它来展开材质，并将 ``反弹`` 属性设置为 ``1``。"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:103
+#: ../../docs/getting_started/step_by_step/instancing.rst:104
 msgid ""
 "Press \"Play\" and notice that all of the instanced balls are now much more "
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
@@ -177,7 +180,7 @@ msgstr ""
 "按下 :menuselection:`播放(Play)`，请注意现在所有被实例化的球会变得更有弹性。"
 "因为被实例化的球基于保存过的场景，更改该场景会影响所有实例。"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:107
+#: ../../docs/getting_started/step_by_step/instancing.rst:108
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
@@ -190,7 +193,7 @@ msgstr ""
 "唯一的。点击向下箭头并选择 :menuselection:`独立化(Make Unique)`。 将其 ``反弹"
 "`` 设置为 ``1`` 并按“播放”。"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:115
+#: ../../docs/getting_started/step_by_step/instancing.rst:116
 msgid ""
 "Notice that a grey \"revert\" button appears next to the adjusted property. "
 "When this button is present, it means you modified a property in the "
@@ -203,11 +206,11 @@ msgstr ""
 "钮出现，意味着修改了这个实例化场景属性，覆盖了它原有的值。即便再次修改原场景"
 "的属性，它的值也会保持不变。按下还原按钮将会把属性值还原为原场景设定值。"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:123
+#: ../../docs/getting_started/step_by_step/instancing.rst:124
 msgid "Conclusion"
 msgstr "总结"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:125
+#: ../../docs/getting_started/step_by_step/instancing.rst:126
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "

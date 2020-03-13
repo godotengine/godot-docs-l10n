@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:4
 msgid "Light transport in game engines"
-msgstr ""
+msgstr "ゲームエンジンでのライトトランスポート"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:7
 msgid "Introduction"
@@ -32,12 +32,18 @@ msgid ""
 "ready for integration!\" then goes into the game, lighting is setup and the "
 "game runs."
 msgstr ""
+"通常、アーティストはすべての3Dモデリングを行い、次にすべてのテクスチャリング"
+"を行い、3D DCCの見栄えの良いモデルを見て「良い出来だ、組込みの準備ができ"
+"た！」と言います。その後、ゲームに組み込まれ、照明が設定され、ゲームが実行さ"
+"れます。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:14
 msgid ""
 "So at what point does all this \"HDR\" business come into play? To "
 "understand the answer, we need to look at how displays behave."
 msgstr ""
+"それでは、この”HDR”の事業はどの時点で実現するのでしょうか？答えを理解するため"
+"に、ディスプレイがどのように動作するかを見る必要があります。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:17
 msgid ""
@@ -45,6 +51,9 @@ msgid ""
 "intensity. Modern game engines perform complex math on linear light values "
 "in their respective scenes. So what's the problem?"
 msgstr ""
+"ディスプレイは、最大強度から最小強度までの直線的な比率の光を出力します。現代"
+"のゲームエンジンは、それぞれのシーンで直線的な光量に対して複雑な計算を実行し"
+"ます。では、何が問題なのでしょうか？"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:21
 msgid ""
@@ -54,21 +63,34 @@ msgid ""
 "bearing in the game engine; there is only a potentially infinitely wide "
 "range of intensity values generated per frame of rendering."
 msgstr ""
+"ディスプレイの種類に応じて、ディスプレイの輝度範囲は制限されています。ただ"
+"し、ゲームエンジンは無制限の範囲の強度値にレンダリングします。 「最大輝度」は"
+"sRGBディスプレイにとって何かを意味しますが、ゲームエンジンには影響しません。"
+"レンダリングのフレームごとに生成される潜在的に無限に広い範囲の強度値のみがあ"
+"ります。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:27
+#, fuzzy
 msgid ""
 "This means that some transformation of the scene light intensity, also known "
-"as scene-referred light ratios, need to be transformed and mapped to fit "
+"as *scene-referred* light ratios, need to be transformed and mapped to fit "
 "within the particular output range of the chosen display. This can be most "
 "easily understood if we consider virtually photographing our game engine "
 "scene through a virtual camera. Here, our virtual camera would apply a "
 "particular camera rendering transform to the scene data, and the output "
 "would be ready for display on a particular display type."
 msgstr ""
+"これは、選択されたディスプレイの特定の出力範囲内に収まるように、シーンの基準"
+"光量比としても知られるシーン光強度の変換を意味し、選択したディスプレイの特定"
+"の出力範囲内に収まるように変換およびマッピングする必要があります。これは、仮"
+"想カメラを通してゲームエンジンのシーンを仮想的に撮影することを検討する場合に"
+"最も簡単に理解できます。ここで、仮想カメラは特定のカメラレンダリングトランス"
+"フォームをシーンデータに適用し、出力は特定のディスプレイタイプで表示できる状"
+"態になります。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:36
 msgid "Computer displays"
-msgstr ""
+msgstr "コンピューターのディスプレイ"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:38
 msgid ""
@@ -78,6 +100,9 @@ msgid ""
 "the ratios out of the uniquely colored lights at each reddish, greenish, and "
 "blueish emission site."
 msgstr ""
+"ほとんどすべてのディスプレイでは、送信されるコード値に非線形エンコードが必要"
+"です。次に、そのユニークな転送特性を使用して、コード値を出力の直線的な光量比"
+"に「デコード」し、赤、緑、青の各発光部からその値を投影します。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:44
 msgid ""
@@ -87,99 +112,142 @@ msgid ""
 "including the color of the lights in the LED pixels as well as the transfer "
 "characteristics of the input (OETF) and output (EOTF)."
 msgstr ""
+"大多数のコンピューターディスプレイの場合、ディスプレイの仕様はIEC "
+"61966-2-1(1996 sRGB仕様とも呼ばれます)に基づいて概説されています。 この仕様で"
+"は、LEDピクセルのライトの色、入力(OETF)および出力(EOTF)の伝達特性など、sRGB"
+"ディスプレイの動作の概要を説明します。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:50
+#, fuzzy
 msgid ""
-"Not all displays use the same OETF and EOTF as a computer display however, "
-"for example, television broadcast displays use the BT.1886 EOTF. It should "
-"be noted that Godot is limited in its pixel management chain, and only "
-"supports sRGB displays currently."
+"Not all displays use the same OETF and EOTF as a computer display. For "
+"example, television broadcast displays use the BT.1886 EOTF. However, Godot "
+"currently only supports sRGB displays."
 msgstr ""
+"すべてのディスプレイがコンピューターディスプレイと同じOETFおよびEOTFを使用す"
+"るわけではありませんが、たとえば、テレビ放送ディスプレイはBT.1886 EOTFを使用"
+"します。 Godotはピクセル管理チェーンに制限があり、現在sRGBディスプレイのみを"
+"サポートしていることに注意してください。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:55
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:54
 msgid ""
 "The sRGB standard is based around the nonlinear relationship between the "
 "current to light output of common desktop computing CRT displays."
 msgstr ""
+"sRGB規格は、一般的なデスクトップコンピューター用CRTディスプレイの電流出力と光"
+"出力の間の非線形関係に基づいています。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:60
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:59
+#, fuzzy
 msgid ""
-"The mathematics of a scene referred model require that we multiply the scene "
+"The mathematics of a scene-referred model require that we multiply the scene "
 "by different values to adjust the intensities and exposure to different "
-"light ranges. The transfer function of the display cannot appropriately "
+"light ranges. The transfer function of the display can't appropriately "
 "render the wider dynamic range of the game engine's scene output using the "
-"simple transfer function of the display however, and therefore a more "
-"complex approach to encoding is required."
+"simple transfer function of the display. A more complex approach to encoding "
+"is required."
 msgstr ""
+"シーン参照モデルの数学では、シーンに異なる値を乗算して、強度と異なる照明範囲"
+"への露出を調整する必要があります。 ただし、ディスプレイの伝達関数は、ディスプ"
+"レイの単純な伝達関数を使用して、ゲームエンジンのシーンが出力するより広いダイ"
+"ナミックレンジの映像を適切にレンダリングできないため、エンコードに関してより"
+"複雑なアプローチが必要です。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:68
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:67
 msgid "Scene linear & asset pipelines"
-msgstr ""
+msgstr "シーンリニアおよびアセットパイプライン"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:70
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:69
+#, fuzzy
 msgid ""
-"Working in scene linear sRGB is not as simple as just pressing a switch. "
+"Working in scene-linear sRGB is not as simple as just pressing a switch. "
 "First, imported image assets must be converted to linear light ratios on "
 "import. Even when linearized, those assets may not be perfectly well suited "
 "for use as textures, depending on how they were generated."
 msgstr ""
+"シーンリニアsRGBでの作業は、スイッチを押すだけでは簡単ではありません。 まず、"
+"インポートされた画像アセットは、インポート時に直線的な光量比に変換する必要が"
+"あります。 直線化された場合でも、それらのアセットは、生成方法によっては、テク"
+"スチャとしての使用に完全に適さない場合があります。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:75
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:74
 msgid "There are two ways to do this:"
-msgstr "これをするには2つの方法があります:"
+msgstr "これを行うには、次の 2 つの方法があります:"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:78
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:77
 msgid "sRGB transfer function to display linear ratios on image import"
-msgstr ""
+msgstr "画像インポート時に線形比を表示するsRGB伝達関数"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:80
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:79
+#, fuzzy
 msgid ""
-"This is the easiest, but not the most ideal, method of using sRGB assets. "
-"One issue with this is loss of quality. Using 8 bit per channel to represent "
-"linear light ratios is not a sufficient but depth to quantise the values "
-"correctly. These textures might later be compressed too, which can "
-"exacerbate the problem."
+"This is the easiest method of using sRGB assets, but it's not the most "
+"ideal. One issue with this is loss of quality. Using 8 bits per channel to "
+"represent linear light ratios is not sufficient to quantize the values "
+"correctly. These textures may also be compressed later, which can exacerbate "
+"the problem."
 msgstr ""
+"これはsRGBアセットを使用する最も簡単な方法ですが、理想的ではありません。 これ"
+"に関する1つの問題は、各チャンネルあたり8ビットを使用して直線的な光量比を表す"
+"場合、値を正しく定量化するには不十分な深度です。 これらのテクスチャは後で圧縮"
+"される可能性があり、問題を悪化させる可能性があります。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:86
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:85
 msgid "Hardware sRGB transfer function to display linear conversion"
-msgstr ""
+msgstr "直線化変換を表示するハードウェアsRGB伝達関数"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:88
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:87
+#, fuzzy
 msgid ""
 "The GPU will do the conversion after reading the texel using floating point. "
-"This works fine on PC and consoles, but most mobile devices do no support "
-"it, or do not support it on compressed texture format (iOS for example)."
+"This works fine on PC and consoles, but most mobile devices don't support "
+"it, or they don't support it on compressed texture formats (iOS for example)."
 msgstr ""
+"GPUは、浮動小数点を使用してテクセルを読み取った後、変換を行います。 これはPC"
+"およびコンソールで正常に機能しますが、ほとんどのモバイルデバイスではサポート"
+"されていないか、圧縮テクスチャ形式(iOSなど)ではサポートされていません。"
+
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:92
+msgid "Scene linear to display referred nonlinear"
+msgstr "シーンリニアからディスプレイ標準ノンリニアへ"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:94
-msgid "Scene linear to display referred nonlinear"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:96
 msgid ""
 "After all the rendering is done, the scene linear render requires "
 "transforming to a suitable output such as an sRGB display. To do this, "
 "enable sRGB conversion in the current :ref:`Environment <class_Environment>` "
 "(more on that below)."
 msgstr ""
+"すべてのレンダリングが完了した後、シーンのリニアレンダリングは、sRGBディスプ"
+"レイなどの適切な出力に変換する必要があります。 これを行うには、現在の :ref:"
+"`Environment <class_Environment>` でsRGB変換を有効にします(詳細は以下を参"
+"照)。"
 
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:100
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:98
+#, fuzzy
 msgid ""
-"Keep in mind that sRGB -> Display Linear and Display Linear -> sRGB "
-"conversions must always be **both** enabled. Failing to enable one of them "
-"will result in horrible visuals suitable only for avant-garde experimental "
-"indie games."
+"Keep in mind that the **sRGB -> Display Linear** and **Display Linear -> "
+"sRGB** conversions must always be **both** enabled. Failing to enable one of "
+"them will result in horrible visuals suitable only for avant-garde "
+"experimental indie games."
 msgstr ""
+"sRGB -> Display Linear および Display Linear -> sRGB 変換は、常に **両方** 有"
+"効にする必要があることに注意してください。 それらのいずれかを有効にしないと、"
+"前衛的で実験的なインディーズゲームにのみ適した恐ろしいビジュアルになります。"
+
+#: ../../docs/tutorials/3d/high_dynamic_range.rst:104
+msgid "Parameters of HDR"
+msgstr "HDRのパラメーター"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:106
-msgid "Parameters of HDR"
-msgstr ""
-
-#: ../../docs/tutorials/3d/high_dynamic_range.rst:108
+#, fuzzy
 msgid ""
-"HDR setting can be found in the :ref:`Environment <class_Environment>` "
-"resource. These are found most of the time inside a :ref:`WorldEnvironment "
-"<class_WorldEnvironment>` node or set in a camera. For more information see :"
-"ref:`doc_environment_and_post_processing`."
+"HDR settings can be found in the :ref:`Environment <class_Environment>` "
+"resource. Most of the time, these are found inside a :ref:`WorldEnvironment "
+"<class_WorldEnvironment>` node or set in a Camera node. For more "
+"information, see :ref:`doc_environment_and_post_processing`."
 msgstr ""
+"HDRの設定は :ref:`Environment <class_Environment>` リソースにあります。 これ"
+"らはほとんどの場合、\\ :ref:`WorldEnvironment <class_WorldEnvironment>` ノー"
+"ド内にあるか、カメラに設定されています。 詳細については、\\ :ref:"
+"`doc_environment_and_post_processing` を参照してください。"

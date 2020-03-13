@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,12 +26,17 @@ msgid "Introduction"
 msgstr "Вступ"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
+#, fuzzy
 msgid ""
 "Imagine for a second that you are not a game developer anymore. Instead, "
 "you're a chef! Change your hipster outfit for a toque and a double breasted "
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"Уявіть на секунду, що ви більше не розробник ігор. Натомість ви шеф-кухар! "
+"Змініть ваш наряд хіпстера на кухарський ковпак і двобортну куртку. Тепер, "
+"замість того, щоб створювати ігри, ви створюєте нові смачні рецепти для "
+"своїх гостей."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -40,19 +45,29 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
+"Отже, як шеф-кухар створює рецепт? Рецепти поділяються на два розділи: "
+"перший - це список інгредієнтів, а другий - інструкція щодо їх приготування. "
+"Таким чином, будь-хто може виконуючи інструкції рецепта приготувати страву "
+"та посмакувати ваше чудове творіння."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
+#, fuzzy
 msgid ""
 "Making games in Godot feels pretty much the same way. Using the engine feels "
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
+"Створення ігор Godot в дуже схоже. Використання редактора дозволяє відчути "
+"себе кухарем на кухні. В цій кухні *вузли* схожі на холодильник повний "
+"свіжих інгредієнтів, з яких можна готувати."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
+"Існує багато типів вузлів. Одні показують зображення, інші відтворюють звук, "
+"ще інші вузли показують 3D-моделі тощо. Їх є десятки."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 msgid "Nodes"
@@ -65,32 +80,38 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
+"Але почнемо з основ. Вузли - це основні будівельні блоки для створення гри. "
+"Як було сказано вище, вузол може виконувати різноманітні спеціалізовані "
+"функції. Однак будь-який вузол завжди має такі атрибути:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr ""
+msgstr "Він має ім'я."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr ""
+msgstr "Він має редаговані властивості."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
+#, fuzzy
 msgid "It can receive a callback to process every frame."
-msgstr ""
+msgstr "Він може викликатися в кожному кадрі."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr ""
+msgstr "Він може бути розширений (мати більше функцій)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to another node as a child."
-msgstr ""
+msgstr "Він може бути доданий до іншого вузла в якості нащадка."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
+"Останнє важливо. Вузли можуть мати інші вузли в якості нащадків. "
+"Упорядковані таким чином вузли утворюють **дерево**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -98,6 +119,9 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
+"У Godot, можливість впорядкувати вузли таким чином створює потужний "
+"інструмент для організації проектів. Оскільки різні вузли мають різні "
+"функції, їх поєднання дозволяє створити більш складні функції."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -105,6 +129,9 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
+"Не хвилюйтесь, якщо ще не зрозуміли цього. Ми продовжимо вивчати це протягом "
+"кількох наступних розділів. Найважливіший факт, про який слід пам'ятати, - "
+"це те, що вузли існують і їх можна упорядкувати таким чином."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
@@ -115,30 +142,36 @@ msgid ""
 "Now that the concept of nodes has been defined, the next logical step is to "
 "explain what a Scene is."
 msgstr ""
+"Тепер, коли концепція вузлів визначена, наступним логічним кроком є "
+"пояснення, що таке Сцена."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
 msgid ""
 "A scene is composed of a group of nodes organized hierarchically (in tree "
 "fashion). Furthermore, a scene:"
 msgstr ""
+"Сцена складається з групи вузлів, організованих ієрархічно (в формі дерева). "
+"Крім того, сцена:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has one root node."
-msgstr ""
+msgstr "завжди має тільки один кореневий вузол."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr ""
+msgstr "може бути збережена на диск і завантажена назад."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr ""
+msgstr "може бути *вставлена* (більше про це пізніше)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
+"Запуск гри означає запуск сцени. Проект може містити кілька сцен, але для "
+"старту гри одна з них повинна бути обрана як головна сцена."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -146,6 +179,10 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
+"В основному редактор Godot - це **редактор сцен**. У ньому є безліч "
+"інструментів для редагування 2D та 3D сцен, а також інтерфейсів користувача, "
+"але редактор заснований на концепції редагування сцени та вузлів, які її "
+"складають."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 msgid "Editor"
@@ -156,6 +193,9 @@ msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
+"Відкрийте проект, який ви зробили в :ref:"
+"`doc_intro_to_the_editor_interface`, або створіть новий. Це відкриє редактор "
+"Godot:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
@@ -163,6 +203,10 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
+"Як вже згадувалося раніше, створення ігор в Godot схоже на приготування "
+"страв на кухні, тому давайте відкриємо холодильник і додамо до проекту "
+"кілька свіжих вузлів. Почнемо з повідомлення \"Hello World\", яке ми "
+"помістимо на екран."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:89
 msgid ""
@@ -172,6 +216,11 @@ msgid ""
 "chosen node as a child of the currently selected node (or, in an empty "
 "scene, as the \"root\" node)."
 msgstr ""
+"Для цього нам потрібно додати вузол Label (Мітка). Натисніть кнопку \"Додати "
+"вузол нащадок\" у верхньому лівому куті панелі Сцена (піктограма являє собою "
+"символ плюс). Ця кнопка є основним способом додавання нових вузлів до сцени, "
+"і завжди додаватиме вибраний вузол нащадком до поточного вибраного вузла "
+"(або, як \"кореневий\", в порожній сцені)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
 msgid ""
@@ -182,6 +231,13 @@ msgid ""
 "pressing the \"Add Child Node\" button). You can also press the star-shaped "
 "icon to toggle the display of your favorited nodes."
 msgstr ""
+"У порожній сцені (без кореневого вузла) панель сцена має кілька варіантів "
+"для швидкого додавання кореневого вузла до сцени. \"Плоска сцена\" додає "
+"вузол Node2D (Вузол 2D), \"Просторова сцена\" додає просторовий вузол, "
+"\"Інтерфейс користувача\" додає вузол керування та \"Інший вузол\", який "
+"дозволяє вибрати будь-який вузол (його вибір еквівалентний натисканню "
+"\"Додати вузол нащадок\" \"). Ви також можете натиснути піктограму у формі "
+"зірки, щоб увімкнути показ вибраних вузлів."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
 msgid ""
@@ -190,6 +246,10 @@ msgid ""
 "its root node, likewise not every GUI or 2D scene needs a Control node or "
 "Node2D as their root node."
 msgstr ""
+"Зауважте, що ці варіанти є тут для зручності і не є обов'язковими для різних "
+"типів сцен. Не кожній 3D-сцені потрібен просторовий вузол в якості "
+"кореневого, також не кожен графічний інтерфейс, або 2D сцена, потребує вузла "
+"управління, або Node2D, в якості кореневого вузла."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
@@ -197,22 +257,31 @@ msgid ""
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
+"Щоб додати вузол Label до цієї сцени, можна натиснути кнопку Інший вузол або "
+"кнопку Додати вузол вгорі. У сценах, які не порожні, ви використовуєте "
+"кнопку додавання вузла, щоб створити кожен вузол нащадок."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
+"Це відкриє діалогове вікно Створити вузол, де буде довгий список вузлів, які "
+"можна створити:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:121
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
+"Звідти виберіть вузол \"Label\" (Мітка). Найшвидший спосіб знайти його "
+"використати пошуковий рядок:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
+"І нарешті створіть Мітку! Натисніть кнопку Створити. При цьому багато чого "
+"трапиться:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:130
 msgid ""
@@ -220,37 +289,49 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
+"Перш за все, сцена змінюється на 2D-редактор (оскільки Label - це тип 2D "
+"вузла), а Мітка з'являється, вибрана, у верхньому лівому куті вікна "
+"перегляду."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
+#, fuzzy
 msgid ""
-"The node appears in the scene tree editor (box in the top right corner), and "
-"the label properties appear in the Inspector (box in the bottom right "
-"corner)."
+"The node appears in the scene tree editor in the Scene dock, and the label "
+"properties appear in the Inspector dock."
 msgstr ""
+"Вузол з’являється в редакторі дерева сцен (поле у верхньому правому куті), а "
+"властивості мітки з’являються в Інспекторі (поле в правому нижньому куті)."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:137
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr ""
+"Наступним кроком буде зміна властивості мітки \"Text\". Давайте змінимо її "
+"на \"Hello World\":"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:142
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
+#, fuzzy
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
-"top bar (or hit F6):"
+"top bar (or hit :kbd:`F6`):"
 msgstr ""
+"Гаразд, все готово для запуску сцени! Натисніть кнопку PLAY SCENE на верхній "
+"панелі (або натисніть F6):"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:147
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
 msgstr "Іііі... Упс."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:151
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
+"Сцени потрібно зберігати перед запуском, тому збережіть сцену, наприклад "
+"Hello.tscn, у Сцені -> Зберегти:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:156
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:155
 msgid ""
 "And here's when something funny happens. The file dialog is a special file "
 "dialog, and only allows you to save inside the project. The project root is "
@@ -260,37 +341,53 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
+"А тут трапляється щось смішне. Діалогове вікно файлів - це спеціальне "
+"діалогове вікно файлу, яке дозволяє зберігати лише всередині проекту. Корінь "
+"проекту - ``res://`` це означає \"шлях до ресурсу\". Це означає, що файли "
+"можна зберігати лише всередині проекту. Надалі, виконуючи операції з файлами "
+"в Godot, пам'ятайте, що \"res://\" - це шлях до ресурсів, і незалежно від "
+"платформи, чи місця установки, це спосіб знайти, де файли ресурсів "
+"знаходяться всередині гри."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:164
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
+"Після збереження сцени та повторного її відтворення демонстрація \"Hello "
+"World\" повинна нарешті виконатися:"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:169
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Success!"
 msgstr "Успіх!"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:173
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:172
 msgid ""
 "If this doesn't immediately work and you have a hiDPI display on at least "
 "one of your monitors, go to **Project → Project Settings → Display → "
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
+"Якщо це не спрацює, і у вас є дисплей hiDPI принаймні на одному з моніторів, "
+"перейдіть в **Проект → Налаштування проекту → Дисплей → Вікно**, а потім "
+"увімкніть **Дозволити Hidpi** під **Dpi**."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
 msgid "Configuring the project"
-msgstr ""
+msgstr "Налаштування проекта"
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
+"Гаразд, настав час налаштувати проект. Зараз єдиний спосіб запустити щось - "
+"це виконати поточну сцену. Однак у проектів може бути кілька сцен, тому одна "
+"з них повинна бути встановлена як головна сцена. Це сцена, яка буде "
+"завантажуватися при кожному запуску проекта."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""
 "These settings are all stored in a project.godot file, which is a plaintext "
 "file in win.ini format (for easy editing). There are dozens of settings that "
@@ -298,45 +395,68 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
+"Усі ці параметри зберігаються у файлі project.godot, який є простим "
+"текстовим файлом у форматі win.ini (для зручного редагування). У цьому файлі "
+"ви можете змінити десятки налаштувань, щоб змінити спосіб виконання проекту. "
+"Щоб спростити цей процес, Godot надає діалогове вікно налаштувань проекту, "
+"яке виступає як своєрідний інтерфейс для редагування файлу project.godot."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:194
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:193
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
+"Для доступу до цього діалогового вікна виберіть Проект -> Параметри проекту. "
+"Спробуйте зараз."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
+"Як тільки відкриється вікно, давайте виберемо головну сцену. Знайдіть "
+"властивість `Application/Run/Main Scene` (`Додаток/Запуск/Головна сцена`) та "
+"натисніть на неї, щоб вибрати 'Hello.tscn'."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:201
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
+"Тепер, із цією зміною, коли ви будете натискати звичайну кнопку Відтворення "
+"(або F5), буде запускатися саме ця сцена, незалежно від того, яка сцена "
+"редагується на даний момент."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""
 "The project settings dialog provides a lot of options that can be saved to a "
 "project.godot file and shows their default values. If you change a value, a "
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
+"Діалогове вікно налаштувань проекту надає безліч параметрів, які можна "
+"зберегти у файл project.godot та показує їх значення за замовчуванням. Якщо "
+"ви змінюєте значення, ліворуч від його імені виникає галочка. Це означає, що "
+"властивість буде збережено у файлі project.godot."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:208
+#, fuzzy
 msgid ""
 "As a side note, it is also possible to add custom configuration options and "
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
+"Окрім цього, також можна додати спеціальні параметри конфігурації та "
+"прочитати їх під час виконання, використовуючи синглтон :ref:"
+"`ProjectSettings <class_ProjectSettings>`."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:213
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:212
 msgid "To be continued..."
 msgstr "Далі буде..."
 
-#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:215
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:214
 msgid ""
 "This tutorial talked about \"scenes and nodes\", but so far there has been "
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
+"Цей урок розповідав про \"сцени та вузли\", але поки що була лише *одна* "
+"сцена та *один* вузол! Не хвилюйтеся, наступний урок розширить цю тему ..."

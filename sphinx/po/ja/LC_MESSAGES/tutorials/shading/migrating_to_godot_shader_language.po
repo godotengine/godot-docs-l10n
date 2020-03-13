@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,8 +80,9 @@ msgid ""
 "programs cannot share variables except when varyings are used."
 msgstr ""
 "Godotでは、1つのファイルでフラグメントシェーダーと頂点シェーダーを定義するこ"
-"とにより、統一された変数と関数を共有できます。 GLSLでは、変数が使用されている"
-"場合を除き、頂点プログラムとフラグメントプログラムは変数を共有できません。"
+"とにより、統一された変数と関数を共有できます。 GLSLでは、varyingが使用されて"
+"いる場合を除き、頂点プログラムとフラグメントプログラムは変数を共有できませ"
+"ん。"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:34
 msgid "Vertex attributes"
@@ -141,7 +142,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:57
 msgid "Varyings"
-msgstr "Varyings(可変)"
+msgstr "Varying(可変)"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:59
 msgid ""
@@ -152,9 +153,9 @@ msgid ""
 "shader."
 msgstr ""
 "Varyingは、頂点シェーダーからフラグメントシェーダーに渡すことができる変数の一"
-"種です。最新のGLSL(3.0以上)では、変数は ``in`` および ``out`` キーワードで定"
-"義されます。頂点シェーダーから出る変数は、頂点シェーダーでは ``out``\\ 、フラ"
-"グメントシェーダーでは ``in`` で定義されます。"
+"種です。最新のGLSL(3.0以上)では、varyingは ``in`` および ``out`` キーワードで"
+"定義されます。頂点シェーダーから出る変数は、頂点シェーダーでは ``out``\\ 、フ"
+"ラグメントシェーダーでは ``in`` で定義されます。"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:64
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:206
@@ -388,7 +389,7 @@ msgstr ""
 "GLSLでは、シェーダーの上部で、\\ ``precision`` キーワードを使用して特定のタイ"
 "プ(floatまたはint)の精度を定義できます。 Godotでは、変数を定義するときに型の"
 "前に精度修飾子 ``lowp``\\ 、\\ ``mediump``\\ 、および ``highp``\\ を配置する"
-"ことにより、必要に応じて個々の変数の精度を設定できます。詳細については、\\:"
+"ことにより、必要に応じて個々の変数の精度を設定できます。詳細については、\\ :"
 "ref:`Shading Language <doc_shading_language>` リファレンスを参照してくださ"
 "い。"
 

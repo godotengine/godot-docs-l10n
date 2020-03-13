@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,31 +32,45 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"Сигнали в Godot це версія шаблона *спостерігач*. Вони дозволяють вузлу "
+"надсилати повідомлення, яке можуть прослуховувати ( та відповідати на нього) "
+"інші вузли. Наприклад, замість того, щоб постійно перевіряти кнопку, щоб "
+"побачити, чи її натискають, кнопка може видавати сигнал при її натисканні."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"Детальніше про шаблон спостерігач можна прочитати тут: http://"
+"gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
+#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
+"Сигнали - це спосіб *роз'єднати* ваші ігрові об'єкти, що призводить до краще "
+"організованого та більш керованого коду. Замість того, щоб змушувати ігрові "
+"об'єкти постійно перебирати всі присутні інші об'єкти, вони можуть просто "
+"випромінювати сигнали, на які реагуватимуть тільки ті об'єкти в яких "
+"прописана реакція на ці сигнали."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
+"Нижче ви можете побачити приклади того, як можна використовувати сигнали у "
+"власних проектах."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
 #, fuzzy
 msgid "Timer example"
-msgstr "Декілька прикладів:"
+msgstr "Приклад таймера"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -64,6 +78,10 @@ msgid ""
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
+"Щоб побачити, як працюють сигнали, спробуємо використати вузол :ref:`Timer "
+"<class_Timer>` (Таймер). Створіть нову сцену з вузлом Node2D та двома "
+"нащадками: Timer та :ref:`Sprite <class_Sprite>`. На панелі Сцена "
+"перейменуйте Node2D на TimerExample (Зразок Таймера)."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -72,10 +90,14 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Для текстури Спрайта можна використовувати значок Godot, або будь-яке інше "
+"зображення, яке вам подобається. Зробіть це, вибравши ``Завантажити`` у "
+"спадному меню атрибута Спрайта Texture. Приєднайте скрипт до кореневого "
+"вузла, але не додавайте до нього коду."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
-msgstr ""
+msgstr "Ваше дерево сцени має виглядати так:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:38
 msgid ""
@@ -83,6 +105,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"У властивостях вузла Таймер встановіть прапорець \"Увімкнено\" біля пункту "
+"*Autostart* (Автозапуск). Це призведе до автоматичного запуску таймера під "
+"час запуску сцени. Ви можете залишити *Wait Time* (час очікування) 1 секунду."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:42
 msgid ""
@@ -91,6 +116,10 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
+"Поруч із вкладкою \"Інспектор\" знаходиться вкладка з написом \"Вузол\". "
+"Перейдіть на цю вкладку, і ви побачите всі сигнали, які може видавати "
+"вибраний вузол. У випадку з вузлом Timer, ми маємо справу з \"timeout()\". "
+"Цей сигнал випромінюється щоразу, коли таймер досягає ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
 msgid ""
@@ -98,6 +127,9 @@ msgid ""
 "the signals panel. You'll see the following window, where you can define how "
 "you want to connect the signal:"
 msgstr ""
+"Клацніть на сигнал \"timeout ()\" і натисніть \"Приєднати ...\" внизу панелі "
+"сигналів. Ви побачите наступне вікно, де можна визначити, як ви хочете "
+"підключити сигнал:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:55
 msgid ""
@@ -106,57 +138,85 @@ msgid ""
 "blue, this is a visual indication that it's the node that is emitting the "
 "signal. Select the root node."
 msgstr ""
+"Ліворуч ви побачите вузли у вашій сцені і з них ви можете вибрати вузол для "
+"\"прослуховування\" сигналу. Зауважте, що вузол Timer синій, це візуальна "
+"ознака того, що саме цей вузол випромінює сигнал. Виберіть кореневий вузол."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:60
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
+"До вибраного вузла *повинен* бути доданий скрипт, інакше ви отримаєте "
+"повідомлення про помилку."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
+msgid ""
+"On the right side, you can bind an arbitrary number of arguments of "
+"(possibly) different types. This can be useful when you have more than one "
+"signal connected to the same method, as each signal propagation will result "
+"in different values for those extra call arguments."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"У нижній частині вікна розташоване поле з написом \"Метод-отримувач\". Це "
+"ім'я функції в скрипті цільового вузла, яку ви хочете використовувати. За "
+"замовчуванням Godot створить цю функцію за допомогою конвенції про "
+"іменування ``_on_<node_name>_<signal_name>`` "
+"(``_on_<ім'я_вузла>_<ім'я_сигнала>``) але ви можете змінити її, якщо бажаєте."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:68
+#: ../../docs/getting_started/step_by_step/signals.rst:72
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
+"Натисніть «З’єднати», і ви побачите, що функція була створена в скрипті:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:88
+#: ../../docs/getting_started/step_by_step/signals.rst:92
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"Тепер ми можемо замінити початковий код на будь-який код, який ми хочемо "
+"запустити, коли сигнал буде отриманий. Давайте змусимо Спрайт блимати:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:112
+#: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"Запустіть сцену, і ви побачите що Спрайт блимає. Ви можете змінити "
+"властивість таймера *Wait Time* (час очікування), щоб змінити час блимання."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:116
+#: ../../docs/getting_started/step_by_step/signals.rst:120
 msgid "Connecting signals in code"
-msgstr ""
+msgstr "Підключення сигналів у коді"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:118
+#: ../../docs/getting_started/step_by_step/signals.rst:122
 msgid ""
 "You can also make the signal connection in code rather than with the editor. "
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
+"Ви також можете при'єднати сигнал в коді, а не з редактора. Зазвичай це "
+"потрібно, коли ви створюєте екземпляри вузлів за допомогою коду, і тому ви "
+"не можете використовувати редактор для встановлення з'єднання."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:122
+#: ../../docs/getting_started/step_by_step/signals.rst:126
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"По-перше, відключіть сигнал, вибравши підключений сигнал таймера на вкладці "
+"\"Вузол\" та натиснувши Роз'єднати."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:127
+#: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
 "To make the connection in code, we can use the ``connect`` function. We'll "
 "put it in ``_ready()`` so that the connection will be made on run. The "
@@ -164,40 +224,79 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
+"Щоб встановити з'єднання в коді, ми можемо використовувати функцію "
+"``connect``. Ми поставимо її ``_ready()`` так, що з'єднання буде здійснено "
+"при запуску. Синтаксис функції ``<сигнальний_вузол>.connect(<ім'я_сигналу>, "
+"<цільовий_вузол>, <ім'я_цільової_функції>)``. Ось код для підключення нашого "
+"таймера:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:160
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/signals.rst:164
 msgid "Custom signals"
-msgstr "Сигнали C#"
+msgstr "Власні сигнали"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:162
+#: ../../docs/getting_started/step_by_step/signals.rst:166
 msgid "You can also declare your own custom signals in Godot:"
-msgstr ""
+msgstr "Ви також можете оголосити власні сигнали в Godot:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:180
+#: ../../docs/getting_started/step_by_step/signals.rst:184
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
+"Після оголошення ваші сигнали з'являться в Інспекторі і можуть бути "
+"підключені так само, як і вбудовані сигнали вузла."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:183
+#: ../../docs/getting_started/step_by_step/signals.rst:187
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
 msgstr ""
+"Щоб випромінювати сигнал за допомогою коду, використовуйте функцію "
+"``emit_signal``:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:209
+#: ../../docs/getting_started/step_by_step/signals.rst:212
+msgid ""
+"A signal can also optionally declare one or more arguments. Specify the "
+"argument names between parentheses:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/signals.rst:232
+msgid ""
+"The signal arguments show up in the editor's node dock, and Godot can use "
+"them to generate callback functions for you. However, you can still emit any "
+"number of arguments when you emit signals. So it's up to you to emit the "
+"correct values."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/signals.rst:237
+#, fuzzy
+msgid ""
+"To pass values, add them as the second argument to the ``emit_signal`` "
+"function:"
+msgstr ""
+"Щоб випромінювати сигнал за допомогою коду, використовуйте функцію "
+"``emit_signal``:"
+
+#: ../../docs/getting_started/step_by_step/signals.rst:263
 msgid "Conclusion"
 msgstr "Висновки"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:211
+#: ../../docs/getting_started/step_by_step/signals.rst:265
 msgid ""
 "Many of Godot's built-in node types provide signals you can use to detect "
 "events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
+"Багато вбудованих типів вузлів Godot надають сигнали, які можна "
+"використовувати для виявлення подій. Наприклад, :ref:`Area2D "
+"<class_Area2D>`, у вигляді монети, випромінює сигнал ``body_entered`` "
+"кожного разу, коли стикається з фізичним тілом гравця, що дозволяє вам "
+"знати, що гравець її зібрав."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:216
+#: ../../docs/getting_started/step_by_step/signals.rst:270
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
+"У наступному розділі, :ref:`doc_your_first_game`, ви побудуєте повну гру, з "
+"використанням кількох різних сигналів для підключення різних ігрових "
+"компонентів."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:4
 msgid "Binding to external libraries"
-msgstr ""
+msgstr "外部ライブラリへのバインド"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
@@ -32,26 +32,34 @@ msgid ""
 "Let's look at an example using Festival, a speech synthesis (text-to-speech) "
 "library written in C++."
 msgstr ""
+":ref:`doc_custom_modules_in_c++` のSummatorの例は、小さなカスタムモジュールに"
+"最適ですが、より大きな外部ライブラリを使用する場合はどうでしょうか？ C++で作"
+"成された音声合成(テキスト読み上げ)ライブラリであるFestivalを使用した例を見て"
+"みましょう。"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:14
 msgid ""
 "To bind to an external library, set up a module directory similar to the "
 "Summator example:"
 msgstr ""
+"外部ライブラリにバインドするには、Summatorの例のようなモジュールディレクトリ"
+"をセットアップします:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:20
 msgid "Next, you will create a header file with a simple TTS class:"
-msgstr ""
+msgstr "次に、単純なTTSクラスを使用してヘッダーファイルを作成します:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:45
 msgid "And then you'll add the cpp file."
-msgstr ""
+msgstr "そして、cppファイルを追加します。"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:70
 msgid ""
 "Just as before, the new class needs to be registered somehow, so two more "
 "files need to be created:"
 msgstr ""
+"前と同じように、新しいクラスを何らかの方法で登録する必要があるため、さらに2つ"
+"のファイルを作成する必要があります:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:78
 msgid "With the following contents:"
@@ -62,6 +70,8 @@ msgid ""
 "Next, you need to create a ``SCsub`` file so the build system compiles this "
 "module:"
 msgstr ""
+"次に、ビルドシステムがこのモジュールをコンパイルするように ``SCsub`` ファイル"
+"を作成する必要があります:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:117
 msgid ""
@@ -70,6 +80,10 @@ msgid ""
 "instructions on how to do this for your operation system.  We've included "
 "the installation commands for Linux below, for reference."
 msgstr ""
+".aライブラリファイルを取得するには、マシンに外部ライブラリをインストールする"
+"必要があります。ご使用のオペレーティングシステムでこれを行う具体的な手順につ"
+"いては、ライブラリの公式ドキュメントを参照してください。参考のために、Linuxの"
+"インストールコマンドを以下に示します。"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:128
 msgid ""
@@ -79,6 +93,11 @@ msgid ""
 "Festival Library itself is MIT License compatible. Please be sure to check "
 "the licenses and terms of use."
 msgstr ""
+"**重要:** Festivalが使用する音声(およびその他の潜在的な外部/サードパーティリ"
+"ソース)にはすべて、さまざまなライセンスと使用条件があります。Festivalライブラ"
+"リ自体がMITライセンス互換である場合でも、それらの一部(ほとんどではないにして"
+"も)がGodotに問題がある可能性があります。ライセンスと使用条件を必ず確認してく"
+"ださい。"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:133
 msgid ""
@@ -88,6 +107,10 @@ msgid ""
 "installed from the modules/tts/ directory via git using the following "
 "commands:"
 msgstr ""
+"外部ライブラリもモジュール内にインストールして、ソースファイルにコンパイラか"
+"らアクセスできるようにすると同時に、モジュールコードを自己完結させたままにす"
+"る必要があります。 festivalおよびspeech_toolsライブラリは、次のコマンドを使用"
+"して、gitを介してmodules/ tts/ディレクトリからインストールできます:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:143
 msgid ""
@@ -95,6 +118,9 @@ msgid ""
 "repository, you can link to them instead by adding them as submodules (from "
 "within the modules/tts/ directory), as seen below:"
 msgstr ""
+"外部リポジトリのソースファイルをリポジトリにコミットしたくない場合は、以下に"
+"示すように(modules/tts/ディレクトリ内から)サブモジュールとして追加することに"
+"より、外部リポジトリソースファイルにリンクできます:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:152
 msgid ""
@@ -104,6 +130,10 @@ msgid ""
 "merged in, you can always try to implement the external library as a "
 "GDNative C++ plugin."
 msgstr ""
+"**重要:** GitサブモジュールはGodotリポジトリでは使用されないことに注意してく"
+"ださい。メインのGodotリポジトリにマージするモジュールを開発している場合、サブ"
+"モジュールを使用しないでください。モジュールがマージされない場合は、外部ライ"
+"ブラリをGDNative C++プラグインとしていつでも実装できます。"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:157
 msgid ""
@@ -126,7 +156,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:183
 msgid "The final module should look like this:"
-msgstr ""
+msgstr "最終的なモジュールは次のようになります:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:201
 msgid "Using the module"
@@ -134,8 +164,8 @@ msgstr "モジュールの使用"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:203
 msgid "You can now use your newly created module from any script:"
-msgstr ""
+msgstr "これで、任意のスクリプトから新しく作成したモジュールを使用できます:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:212
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
-msgstr ""
+msgstr "テキストが読み上げられた場合、出力は ``is_spoken: True`` になります。"

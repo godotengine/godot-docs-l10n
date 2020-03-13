@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,13 +90,14 @@ msgid "Translation format"
 msgstr "翻訳形式"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
+#, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
-"has a special importer that can read CSV files. All spreadsheet editors (be "
-"it Libreoffice, Microsoft Office, Google Docs, etc.) can export to this "
-"format, so the only requirement is that the files have a special "
-"arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
-"as follows:"
+"has a special importer that can read CSV files. Most spreadsheet editors can "
+"export to this format, so the only requirement is that the files have a "
+"special arrangement. The CSV files **must** be saved with UTF-8 encoding "
+"without a `byte order mark <https://en.wikipedia.org/wiki/"
+"Byte_order_mark>`__."
 msgstr ""
 "画像を完成させ、翻訳を効率的にサポートするために、GodotにはCSVファイルを読み"
 "取ることができる特別なインポーターがあります。すべてのスプレッドシートエディ"
@@ -106,41 +107,60 @@ msgstr ""
 "する必要があります:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+msgid ""
+"By default, Microsoft Excel will always save CSV files with ANSI encoding "
+"rather than UTF-8. There is no built-in way to do this, but there are "
+"workarounds as described `here <https://stackoverflow.com/questions/4221176/"
+"excel-to-csv-with-utf8-encoding>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
+msgid ""
+"We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
+"Sheets instead."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
+#, fuzzy
+msgid "CSV files must be formatted as follows:"
+msgstr "このテキストは次のとおりです:"
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "keys"
 msgstr "\\ keys"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<lang1>"
 msgstr "\\ <lang1>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<lang2>"
 msgstr "\\ <lang2>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<langN>"
 msgstr "\\ <langN>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
 msgid "KEY1"
 msgstr "\\ KEY1"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:64
 msgid "string"
 msgstr "\\ string"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
 msgid "KEY2"
 msgstr "\\ KEY2"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:64
 msgid "KEYN"
 msgstr "\\ KEYN"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid ""
 "The \"lang\" tags must represent a language, which must be one of the :ref:"
 "`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags must "
@@ -158,83 +178,83 @@ msgstr ""
 "のセルは無視され、 空白もしくは別のコンテンツを持っています。次に例を示しま"
 "す:"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "en"
 msgstr "\\ en"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "es"
 msgstr "\\ es"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "ja"
 msgstr "\\ ja"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "GREET"
 msgstr "挨拶"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "Hello, friend!"
 msgstr "\\ Hello, friend!"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "Hola, amigo!"
 msgstr "\\ Hola, amigo!"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "こんにちは"
 msgstr "\\ こんにちは"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "ASK"
 msgstr "尋ねる"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "How are you?"
 msgstr "\\ How are you?"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "Cómo está?"
 msgstr "\\ Cómo está?"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "元気ですか"
 msgstr "\\ 元気ですか"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "BYE"
 msgstr "さようなら"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Goodbye"
 msgstr "\\ Goodbye"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Adiós"
 msgstr "\\ Adiós"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "さようなら"
 msgstr "\\ さようなら"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "QUOTE"
 msgstr "\\ QUOTE"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hello\" said the man."
 msgstr "\\ \"Hello\" said the man."
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hola\" dijo el hombre."
 msgstr "\\ \"Hola\" dijo el hombre."
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "「こんにちは」男は言いました"
 msgstr "\\ 「こんにちは」男は言いました"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:88
 msgid ""
 "The same example is shown below as a comma-separated plain text file, which "
 "should be the result of editing the above in a spreadsheet. When editing the "
@@ -255,11 +275,11 @@ msgstr ""
 "引用符を付けてエスケープしてください。または、インポートオプションでコンマ以"
 "外の区切り文字を選択することもできます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:97
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
 msgid "CSV importer"
 msgstr "CSVインポーター"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:109
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
@@ -267,7 +287,7 @@ msgstr ""
 "GodotはデフォルトでCSVファイルを翻訳として扱います。インポートし、その横に 1"
 "つ以上の圧縮翻訳リソースファイルを生成します。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:102
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:112
 msgid ""
 "Importing will also add the translation to the list of translations to load "
 "when the game runs, specified in project.godot (or the project settings). "
@@ -277,9 +297,10 @@ msgstr ""
 "に読み込む翻訳の一覧にも翻訳が追加されます。Godotでは、実行時に翻訳を読み込"
 "み、削除することもできます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:117
+#, fuzzy
 msgid ""
-"Select the ``.csv`` file and access the \"Import\" dock to define import "
+"Select the ``.csv`` file and access the **Import** dock to define import "
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
@@ -287,8 +308,9 @@ msgstr ""
 "ションを定義します。インポートした翻訳の圧縮を切り替えたり、CSVファイルの解析"
 "時に使用する区切り文字を選択したりできます。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:113
-msgid "Be sure to click \"Reimport\" after any change to these options."
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:123
+#, fuzzy
+msgid "Be sure to click **Reimport** after any change to these options."
 msgstr ""
 "これらのオプションを変更した後は、必ず「再インポート」をクリックしてくださ"
 "い。"

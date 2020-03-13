@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:4
 msgid "Spatial gizmo plugins"
-msgstr ""
+msgstr "Spatialギズモプラグイン"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:7
 msgid "Introduction"
@@ -30,6 +30,8 @@ msgid ""
 "Spatial gizmo plugins are used by the editor and custom plugins to define "
 "the gizmos attached to any kind of Spatial node."
 msgstr ""
+"Spatialギズモプラグインは、あらゆる種類のSpatialノードにアタッチされたギズモ"
+"を定義するためにエディタおよびカスタムプラグインによって使用されます。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:12
 msgid ""
@@ -38,16 +40,22 @@ msgid ""
 "less clutter in your plugin structure, while the second one will let you "
 "store some per-gizmo data."
 msgstr ""
+"このチュートリアルでは、独自のカスタムギズモを定義するための2つの主なアプロー"
+"チを示します。最初のオプションはシンプルなギズモに適しており、プラグイン構造"
+"の混乱を減らします。2番目のオプションでは、ギズモごとのデータを保存できます。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:16
 msgid ""
 "This tutorial assumes you already know how to make generic plugins. If in "
 "doubt, refer to the :ref:`doc_making_plugins` page."
 msgstr ""
+"このチュートリアルは、一般的なプラグインの作成方法を既に知っていることを前提"
+"としています。疑わしい場合は、\\ :ref:`doc_making_plugins` ページを参照してく"
+"ださい。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:20
 msgid "The EditorSpatialGizmoPlugin"
-msgstr ""
+msgstr "EditorSpatialGizmoPlugin"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:22
 msgid ""
@@ -56,10 +64,14 @@ msgid ""
 "us to set a name for the new gizmo type and define other behaviors such as "
 "whether the gizmo can be hidden or not."
 msgstr ""
+"選択するアプローチに関係なく、新しい :ref:`EditorSpatialGizmoPlugin "
+"<class_EditorSpatialGizmoPlugin>` を作成する必要があります。これにより、新し"
+"いギズモタイプの名前を設定し、ギズモを非表示にするかどうかなど、他の動作を定"
+"義できます。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:27
 msgid "This would be a basic setup:"
-msgstr ""
+msgstr "これは基本的なセットアップです:"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:57
 msgid ""
@@ -68,10 +80,14 @@ msgid ""
 "gizmo data or you are porting a Godot 3.0 gizmo to 3.1+, you should go with "
 "the second approach."
 msgstr ""
+"シンプルなギズモの場合、\\ :ref:`EditorSpatialGizmoPlugin "
+"<class_EditorSpatialGizmoPlugin>` を継承するだけで十分です。ギズモごとのデー"
+"タを保存する場合、またはGodot 3.0ギズモを3.1+に移植する場合は、2番目のアプ"
+"ローチを使用する必要があります。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:63
 msgid "Simple approach"
-msgstr ""
+msgstr "シンプルなアプローチ"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
 msgid ""
@@ -79,6 +95,10 @@ msgid ""
 "`has_gizmo()<class_EditorSpatialGizmoPlugin_method_has_gizmo>` method so "
 "that it returns ``true`` when the spatial parameter is of our target type."
 msgstr ""
+"最初のステップは、カスタムギズモプラグインで、\\ :ref:`has_gizmo() "
+"<class_EditorSpatialGizmoPlugin_method_has_gizmo>` メソッドをオーバーライドし"
+"て、spatialパラメーターがターゲットタイプの場合に ``true`` を返すようにするこ"
+"とです。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:76
 msgid ""
@@ -86,6 +106,8 @@ msgid ""
 "`redraw()<class_EditorSpatialGizmoPlugin_method_redraw>` or all the handle "
 "related ones."
 msgstr ""
+"次に、\\ :ref:`redraw() <class_EditorSpatialGizmoPlugin_method_redraw>` のよ"
+"うなメソッドまたはすべてのハンドル関連のメソッドをオーバーライドできます。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:107
 msgid ""
@@ -95,10 +117,15 @@ msgid ""
 "method retrieves one of the material's variants depending on the state of "
 "the gizmo (selected and/or editable)."
 msgstr ""
+"`_init` メソッドでマテリアルを作成し、\\ :ref:`get_material() "
+"<class_EditorSpatialGizmoPlugin_method_get_material> ` を使用して `redraw` メ"
+"ソッドで取得したことに注意してください。このメソッドは、ギズモの状態(選択また"
+"は編集可能、またはその両方)に応じて、マテリアルのバリアントの1つを取得しま"
+"す。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:112
 msgid "So the final plugin would look somewhat like this:"
-msgstr ""
+msgstr "したがって、最終的なプラグインは次のようになります:"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:148
 msgid ""
@@ -107,10 +134,14 @@ msgid ""
 "`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>` to get properly "
 "working handles."
 msgstr ""
+"redrawメソッドにいくつかのハンドルを追加しただけですが、ハンドルが適切に機能"
+"するようにするには、残りのハンドル関連のコールバックを :ref:"
+"`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>` に実装する必要が"
+"あります。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:153
 msgid "Alternative approach"
-msgstr ""
+msgstr "代替アプローチ"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:155
 msgid ""
@@ -119,6 +150,10 @@ msgid ""
 "have some state stored in each gizmo or because we are porting an old gizmo "
 "plugin and we don't want to go through the rewriting process."
 msgstr ""
+"場合によっては、\\ :ref:`EditorSpatialGizmo <class_EditorSpatialGizmo>`の独自"
+"の実装を提供したいこともあります。これには、各ギズモに状態を保存したい場合"
+"や、古いギズモプラグインを移植しているため、書き換えプロセスを行わない場合な"
+"どがあります。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:159
 msgid ""
@@ -127,12 +162,19 @@ msgid ""
 "returns our custom gizmo implementation for the Spatial nodes we want to "
 "target."
 msgstr ""
+"これらの場合、行う必要があるのは、新しいギズモプラグインで :ref:"
+"`create_gizmo() <class_EditorSpatialGizmoPlugin_method_create_gizmo>` をオー"
+"バーライドするだけです。したがって、ターゲットにするSpatialノードのカスタムギ"
+"ズモ実装を返します。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:181
 msgid ""
 "This way all the gizmo logic and drawing methods can be implemented in a new "
 "clas extending :ref:`EditorSpatialGizmo<class_EditorSpatialGizmo>`, like so:"
 msgstr ""
+"このように、すべてのギズモロジックと描画メソッドは、次のように :ref:"
+"`EditorSpatialGizmo <class_EditorSpatialGizmo>` を拡張する新しいクラスに実装"
+"できます:"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:217
 msgid ""
@@ -141,3 +183,6 @@ msgid ""
 "`EditorSpatialGizmo<class_EditorSpatialGizmo>` to get properly working "
 "handles."
 msgstr ""
+"redrawメソッドにいくつかのハンドルを追加しただけですが、ハンドルが正しく機能"
+"するようにするには、残りのハンドル関連のコールバックを :ref:"
+"`EditorSpatialGizmo <class_EditorSpatialGizmo>` に実装する必要があります。"

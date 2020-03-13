@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,13 +87,14 @@ msgid "Translation format"
 msgstr "번역 형식"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
+#, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
-"has a special importer that can read CSV files. All spreadsheet editors (be "
-"it Libreoffice, Microsoft Office, Google Docs, etc.) can export to this "
-"format, so the only requirement is that the files have a special "
-"arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
-"as follows:"
+"has a special importer that can read CSV files. Most spreadsheet editors can "
+"export to this format, so the only requirement is that the files have a "
+"special arrangement. The CSV files **must** be saved with UTF-8 encoding "
+"without a `byte order mark <https://en.wikipedia.org/wiki/"
+"Byte_order_mark>`__."
 msgstr ""
 "작품을 완성하고 번역에 효율적인 지원을 하기 위해, Godot는 CSV 파일을 읽을 수 "
 "있는 특수 가져오기를 갖고 있습니다. 모든 스프레드시트 편집기는 (Libreoffice, "
@@ -102,41 +103,59 @@ msgstr ""
 "코딩으로 저장되어야 하며 다음과 같은 형식이어야 합니다:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+msgid ""
+"By default, Microsoft Excel will always save CSV files with ANSI encoding "
+"rather than UTF-8. There is no built-in way to do this, but there are "
+"workarounds as described `here <https://stackoverflow.com/questions/4221176/"
+"excel-to-csv-with-utf8-encoding>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
+msgid ""
+"We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
+"Sheets instead."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
+msgid "CSV files must be formatted as follows:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "keys"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<lang1>"
 msgstr "<lang1>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<lang2>"
 msgstr "<lang2>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<langN>"
 msgstr "<langN>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
 msgid "KEY1"
 msgstr "KEY1"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:64
 msgid "string"
 msgstr "문자열"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
 msgid "KEY2"
 msgstr "KEY2"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:64
 msgid "KEYN"
 msgstr "KEYN"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 #, fuzzy
 msgid ""
 "The \"lang\" tags must represent a language, which must be one of the :ref:"
@@ -152,85 +171,85 @@ msgstr ""
 "으로 문자열을 표현해야 합니다 (보통은 대문자로, 다른 문자열과 구분됩니다). 예"
 "제입니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "en"
 msgstr "en"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "es"
 msgstr "es"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "ja"
 msgstr "ja"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "GREET"
 msgstr "GREET(인사)"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "Hello, friend!"
 msgstr "Hello, friend!"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 #, fuzzy
 msgid "Hola, amigo!"
 msgstr "Hola, Amigo!"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "こんにちは"
 msgstr "こんにちは"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "ASK"
 msgstr "ASK(질문)"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "How are you?"
 msgstr "How are you?"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "Cómo está?"
 msgstr "Cómo está?"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "元気ですか"
 msgstr "元気ですか"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "BYE"
 msgstr "BYE(헤어짐)"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 #, fuzzy
 msgid "Goodbye"
 msgstr "Good Bye"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Adiós"
 msgstr "Adiós"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "さようなら"
 msgstr "さようなら"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "QUOTE"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hello\" said the man."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hola\" dijo el hombre."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "「こんにちは」男は言いました"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:88
 msgid ""
 "The same example is shown below as a comma-separated plain text file, which "
 "should be the result of editing the above in a spreadsheet. When editing the "
@@ -243,11 +262,11 @@ msgid ""
 "options."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:97
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
 msgid "CSV importer"
 msgstr "CSV 가져오기"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:109
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
@@ -255,7 +274,7 @@ msgstr ""
 "Godot은 CSV 파일을 기본적으로 번역을 취급합니다. 파일을 가져오고 옆에 하나 이"
 "상의 압축된 번역 리소스 파일을 생성합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:102
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:112
 msgid ""
 "Importing will also add the translation to the list of translations to load "
 "when the game runs, specified in project.godot (or the project settings). "
@@ -265,13 +284,13 @@ msgstr ""
 "project.godot (혹은 프로젝트 설정)에서 지정됩니다. Godot는 런타임에 번역을 불"
 "러오거나 삭제할 수 있도록 합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:117
 msgid ""
-"Select the ``.csv`` file and access the \"Import\" dock to define import "
+"Select the ``.csv`` file and access the **Import** dock to define import "
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:113
-msgid "Be sure to click \"Reimport\" after any change to these options."
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:123
+msgid "Be sure to click **Reimport** after any change to these options."
 msgstr ""

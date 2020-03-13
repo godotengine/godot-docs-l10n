@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,19 +98,19 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
 msgid ""
 "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
-msgstr ""
+msgstr "OpenEXR (``.exr``) - 支持HDR (强烈推荐使用在全景天空上)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
 msgid ""
 "Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
 "skies)."
-msgstr ""
+msgstr "光辉HDR(``.hdr``) - 支持HDR (强烈推荐使用在全景天空上)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
 msgid ""
 "JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
 "limitations."
-msgstr ""
+msgstr "JPEG (``.jpg``, ``.jpeg``) - 不支持每个格式的限制透明度。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid ""
@@ -167,8 +167,9 @@ msgid ""
 "considerably (usually by a factor between 4 and 6). This mode should be "
 "avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
-"VRAM压缩：这是3D素材最常见的压缩模式。磁盘上的文件减小了，显存使用量也大大减"
-"少了。但对 3D 来说，它可能会因此出现不期望的失真。"
+"**VRAM压缩：** 这是3D素材最常见的压缩方式。磁盘文件的大小减小了，显存使用量也"
+"大大减少了（通常是4到6倍）。但对 2D 来说应该避免使用用此模式，因为它会出现明"
+"显的失真。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:76
 #, fuzzy
@@ -179,16 +180,20 @@ msgid ""
 "than VRAM Compression, though. This is also the recommended setting for "
 "pixel art."
 msgstr ""
-"无损压缩：这是2D素材最常见的压缩。这说明素材没有任何形式的失真，并且磁盘压缩"
-"率也不错。但是，它将使用比VRAM多得多的显存。"
+"**无损压缩：** 这是 2D 素材最常见的压缩方式。显示素材不会失真，并且磁盘压缩率"
+"也不错。但是，它将使用比VRAM多得多的显存。同样推荐使用于像素像素艺术。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
+#, fuzzy
 msgid ""
 "**Lossy Compression:** This is a good choice for large 2D assets. It has "
 "some artifacts, but less than VRAM and the file size is several times lower "
 "compared to Lossless or Uncompressed. Video memory usage isn't decreased by "
 "this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
+"**有损压缩：** 对于比较大的 2D 素材是一个好的选择。只是会有一些失真，但比 "
+"VRAM 压缩少，文件大小比无损或未压缩低好几倍。 此模式不会降低视频内存使用量，"
+"它与无损压缩或未压缩相同。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 #, fuzzy
@@ -198,7 +203,6 @@ msgid ""
 msgstr "未压缩：仅适用于无法压缩的格式（例如 ``raw float``）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:87
-#, fuzzy
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages (|good| = best, |bad| = worst):"
@@ -241,7 +245,7 @@ msgstr "存储为 WebP"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:93
 #, fuzzy
 msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
-msgstr "存储为 S3TC/BC、PVRTC/ETC，具体取决于平台"
+msgstr "存储为 S3TC/BC 或 PVRTC/ETC（由平台决定）"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:95
 msgid "Size on Disk"

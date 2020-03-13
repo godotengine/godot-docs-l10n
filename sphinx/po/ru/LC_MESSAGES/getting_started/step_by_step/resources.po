@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,16 +140,15 @@ msgstr ""
 "этот путь пуст, он станет встроенным ресурсом."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
-#, fuzzy
 msgid ""
 "The switch between built-in and external resources happens when you save the "
 "scene. In the example above, if you erase the path ``\"res://robi.png\"`` "
 "and save, Godot will save the image inside the ``.tscn`` scene file."
 msgstr ""
 "Переключение между встроенными и внешними ресурсами происходит при "
-"сохранении сцены. В приведенном выше примере, если вы удалите путь \\`"
-"\"res://robi.png\"\\` и сохраните, Godot сохранит изображение в файле сцены "
-"в формате .tscn."
+"сохранении сцены. В приведенном выше примере, если вы удалите путь ``\"res://"
+"robi.png\"`` и сохраните, Godot сохранит изображение в файле сцены в "
+"формате .tscn."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
 msgid ""
@@ -206,18 +205,16 @@ msgstr ""
 "`PackedScene.instance() <class_PackedScene_method_instance>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
-#, fuzzy
 msgid ""
 "This method creates the nodes in the scene's hierarchy, configures them, and "
 "returns the root node of the scene. You can then add it as a child of any "
 "other node."
 msgstr ""
 "Этот метод создает узлы в иерархии сцены, настраивает их и возвращает "
-"корневой узел сцены. Затем вы можете добавить его как дочернее устройство "
-"любого другого узла."
+"корневой узел сцены.Вы можете добавить его в качестве ребенка любого другого "
+"узла."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
-#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` function is fast, you can create new "
@@ -228,8 +225,8 @@ msgstr ""
 "Такой подход имеет ряд преимуществ. Поскольку функция :ref:`PackedScene."
 "instance() <class_PackedScene_method_instance>` работает довольно быстро, вы "
 "можете создавать новых врагов, пули, эффекты и т.д. без необходимости каждый "
-"раз загружать их с диска. Помните, что, как всегда, все изображения, сетки и "
-"т.д. делятся между экземплярами сцены."
+"раз загружать их с диска. Помните, что, как всегда, все изображения, "
+"полисетки, и т.д. являются общими для всех экземпляров сцены."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
 msgid "Freeing resources"
@@ -368,7 +365,6 @@ msgstr ""
 "ресурса."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
-#, fuzzy
 msgid ""
 "Resources and Dictionaries are both passed by reference, but only Resources "
 "are reference-counted. This means that if a Dictionary is passed between "
@@ -376,24 +372,23 @@ msgid ""
 "the Dictionary will be invalidated. Conversely, Resources will not be freed "
 "from memory until *all* the objects are deleted."
 msgstr ""
-"Ресурсы и Словари также отличаются тем, что они передаются по ссылке, но "
-"учитываются только Ресурсы. Это означает, что если Словарь передается между "
-"объектами, а первый объект удаляется, то переменная второго объекта будет "
-"признана недействительной. Это не так для Ресурсов, которые не освободят "
-"свою память, пока не исчезнут *все* экземпляры."
+"Ресурсы и Словари передаются по ссылке, но учитываются только Ресурсы. Это "
+"означает, что если Словарь передается между объектами и первый объект "
+"удаляется, то все ссылки других объектов на Словарь будут признаны "
+"недействительными. И наоборот, Ресурсы не будут освобождены из памяти до тех "
+"пор, пока не будут удалены все объекты."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr "Godot облегчает создание пользовательских ресурсов в Инспекторе."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:217
-#, fuzzy
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
 msgstr ""
-"Создайте простой объект Ресурс в Инспекторе. Это может быть даже тип, "
-"производный от Ресурса, пока ваш скрипт расширяет этот тип."
+"Создайте простой объект ресурса в Инспекторе. Это может быть даже тип, "
+"производный от ресурса, если сценарий расширяет этот тип."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:218
 msgid "Set the ``script`` property in the Inspector to be your script."
@@ -457,12 +452,11 @@ msgstr ""
 "вторичным пользовательским сценарием ресурса."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:345
-#, fuzzy
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr ""
-"Вместо того, чтобы просто подчеркивать значения Словаря, можно также, в "
+"Вместо того, чтобы просто подставлять значения словаря, можно также, в "
 "качестве альтернативы..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:347
@@ -483,14 +477,13 @@ msgstr ""
 "добавит его в Инспектор, когда вы откроете такие типы ресурсов."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
-#, fuzzy
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
-"То же самое можно сказать и о таблицах CurveTables, за исключением "
-"отображения в Массив плавающих значений или ресурса объекта :ref:`Curve "
-"<class_Curve>`/:ref:`Curve2D <class_Curve2D>."
+"CurveTables - это то же самое, за исключением сопоставления с массивом "
+"значений с плавающей запятой или ресурсным объектом :ref:`Curve "
+"<class_Curve>`/:ref:`Curve2D <class_Curve2D>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:357
 msgid ""

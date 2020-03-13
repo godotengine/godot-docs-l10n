@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,22 +18,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
+#, fuzzy
 msgid "Godot’s design philosophy"
-msgstr ""
+msgstr "Філософія дизайну Godot"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:6
+#, fuzzy
 msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
-msgstr ""
+msgstr "Тепер, коли ви трохи набили руку, давайте поговоримо про дизайн Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
+#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
 "they offer a range of features, but the design of each engine is unique. "
 "This leads to different workflows and different ways to form your games’ "
 "structures. This all stems from their respective design philosophies."
 msgstr ""
+"**Кожен ігровий редактор різний і відповідає різним потребам.** Вони не "
+"тільки пропонують цілий ряд функцій, але й дизайн кожного редактора "
+"унікальний. Це призводить до різних робочих процесів та різних способів "
+"формування структур ваших ігор. Все це випливає з їхніх конкретних "
+"особливостей."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:13
+#, fuzzy
 msgid ""
 "This page is here to help you understand how Godot works, starting with some "
 "of its core pillars. It is not a list of available features, nor is it an "
@@ -41,25 +50,40 @@ msgid ""
 "you need to try it out for yourself and understand its design and "
 "limitations."
 msgstr ""
+"Ця сторінка тут для того, щоб допомогти вам зрозуміти, як працює Godot, "
+"починаючи з деяких його основ. Це не список доступних функцій, і не "
+"порівняння редактора. Щоб знати, чи добре підходить певний редактор до "
+"вашого проекту, вам слід спробувати його самому та зрозуміти його "
+"особливості та обмеження."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:19
+#, fuzzy
 msgid ""
 "Please watch `Discover Godot 3, the Free game engine <https://youtu."
 "be/4v3qge-3CqQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
+"Подивіться, `Discover Godot 3, the Free game engine <https://youtu."
+"be/4v3qge-3CqQ>`_ , якщо ви шукаєте огляд функцій редактора."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:23
+#, fuzzy
 msgid "Object-oriented design and composition"
-msgstr ""
+msgstr "Объектно-орієнтований дизайн та композиція"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:25
+#, fuzzy
 msgid ""
 "Godot embraces object-oriented design at its core with its flexible scene "
 "system and Node hierarchy. It tries to stay away from strict programming "
 "patterns to offer an intuitive way to structure your game."
 msgstr ""
+"Godot в своїй основі охоплює об'єктно-орієнтований дизайн завдяки його "
+"гнучкій сценічній системі та ієрархії Вузлів. Він намагається триматися "
+"подалі від суворих моделей програмування, щоб запропонувати інтуїтивно "
+"зрозумілий спосіб структурувати свою гру."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:29
+#, fuzzy
 msgid ""
 "For one, Godot lets you **compose or aggregate** scenes. It's like nested "
 "prefabs: you can create a BlinkingLight scene and a BrokenLantern scene that "
@@ -67,20 +91,32 @@ msgid ""
 "Change the BlinkingLight's color, save, and all the BrokenLanterns in the "
 "city will update instantly."
 msgstr ""
+"Для одного, Godot дозволяє **створювати або об'єднувати** сцени. Це як "
+"вкладені збірки: ви можете створити сцену BlinkingLight (мерехтливе світло) "
+"та сцену BrokenLantern (зламаний ліхтар), яка використовує BlinkingLight. "
+"Потім створіть місто, наповнене BrokenLanterns. Змініть колір BlinkingLight, "
+"збережіть, і всі BrokenLanterns в місті оновляться миттєво."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:36
+#, fuzzy
 msgid "On top of that, you can **inherit** from any scene."
-msgstr ""
+msgstr "Крім того, ви можете **успадкувати** з будь-якої сцени."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
+#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
 "of a level… anything you’d like. It works like a class in pure code, except "
 "you’re free to design it by using the editor, using only the code, or mixing "
 "and matching the two."
 msgstr ""
+"Сцена Godot може бути зброєю, персонажем, предметом, дверима, рівнем, "
+"частиною рівня ... все, що завгодно. Вона працює як клас у чистому коді, за "
+"винятком того, що ви вільні спроектувати її лише за допомогою редактора, "
+"лише використовуючи код, або змішуючи та поєднуючи обидва."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
+#, fuzzy
 msgid ""
 "It’s different from prefabs you find in several 3D engines, as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
@@ -88,88 +124,133 @@ msgid ""
 "update as well. It helps you build your projects so that their structure "
 "matches the game’s design."
 msgstr ""
+"Це відрізняється від збірних даних (префабів), які ви знайдете в деяких "
+"тривимірних редакторах, тому що ви можете успадкувати та розширити ці сцени. "
+"Ви можете створити сцену Маг, яка буде успадкована та розширена з вашої "
+"сцени Персонаж. Змініть Персонаж у редакторі, і Маг також оновиться. Це "
+"допомагає будувати свої проекти так, щоб їх структура відповідала дизайну "
+"гри."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:49
 msgid "|image0|"
 msgstr "|image0|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:51
+#, fuzzy
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
 "from their parents up to the Node class. Although the engine does feature "
 "components like collision shapes, they’re the exception, not the norm."
 msgstr ""
+"Також зауважте, що Godot пропонує безліч різних типів об'єктів, які "
+"називаються вузлами, кожен з певним призначенням. Вузли є частиною дерева і "
+"завжди успадковуються від батьків аж до класу Node (Вузол). Хоча редактор "
+"має такі компоненти, як форми зіткнення, вони є винятком, а не нормою."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
 msgid "|image1|"
 msgstr "|image1|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:59
+#, fuzzy
 msgid ""
 "Sprite is a Node2D, a CanvasItem and a Node. It has all the properties and "
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
+"Спрайт - це Node2D, CanvasItem і Node. Він має всі властивості та "
+"особливості трьох його батьківських класів, як то перетворення, або "
+"можливість малювати власні форми та візуалізувати їх за допомогою власного "
+"шейдера."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:64
+#, fuzzy
 msgid "All-inclusive package"
-msgstr ""
+msgstr "Пакет все включено"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:66
+#, fuzzy
 msgid ""
 "Godot tries to provide its own tools to answer most common needs. It has a "
 "dedicated scripting workspace, an animation editor, a tilemap editor, a "
 "shader editor, a debugger, a profiler, the ability to hot-reload locally and "
 "on remote devices, etc."
 msgstr ""
+"Godot намагається надати власні інструменти, щоб задовольнити найпоширеніші "
+"потреби. У ньому є редактор скриптів, редактор анімації, редактор плиткових "
+"карт, редактор шейдерів, налагоджувач, профілер, можливість перезавантаження "
+"локально та на віддалених пристроях тощо."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
 msgid "|image2|"
 msgstr "|image2|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:73
+#, fuzzy
 msgid ""
 "The goal is to offer a full package to create games and a continuous user "
 "experience. You can still work with external programs as long as there is an "
 "import plugin for it. Or you can create one, like the `Tiled Map Importer "
 "<https://github.com/vnen/godot-tiled-importer>`__."
 msgstr ""
+"Мета - запропонувати повний пакет для створення ігор та безперервного "
+"користування. Ви все ще можете працювати з зовнішніми програмами, якщо для "
+"них є плагін імпорту. Або ви можете створити його, як-от `Tiled Map Importer "
+"<https://github.com/vnen/godot-tiled-importer>`__."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:78
+#, fuzzy
 msgid ""
 "That is also partly why Godot offers its own programming languages GDscript "
 "and VisualScript, along with C#. They’re designed for the needs of game "
 "developers and game designers, and they’re tightly integrated in the engine "
 "and the editor."
 msgstr ""
+"Це також частково тому, що Godot пропонує власні мови програмування GDscript "
+"та VisualScript разом із C#. Вони розроблені для потреб розробників ігор та "
+"дизайнерів ігор, і вони тісно інтегровані в двигун та редактор."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
+#, fuzzy
 msgid ""
 "GDscript lets you write simple code using Python-like syntax, yet it detects "
 "types and offers a static language's quality of auto-completion. It is also "
 "optimized for gameplay code with built-in types like Vectors and Colors."
 msgstr ""
+"GDscript дозволяє писати простий код за допомогою синтаксису подібного до "
+"Python, але він виявляє типи та пропонує якісне автоматичне завершення "
+"статичної мови. Він також оптимізований для ігрового коду із вбудованими "
+"типами, такими як вектори і кольори."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:87
+#, fuzzy
 msgid ""
 "Note that with GDNative, you can write high-performance code using compiled "
 "languages like C, C++, Rust, or Python (using the Cython compiler) without "
 "recompiling the engine."
 msgstr ""
+"Зауважте, що за допомогою GDNative ви можете писати високоефективний код, "
+"використовуючи компільовані мови, такі як C, C++, Rust, або Python "
+"(використовуючи компілятор Cython), без перекомпіляції движка."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
 msgid "|image3|"
 msgstr "|image3|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:93
+#, fuzzy
 msgid ""
 "*VisualScript is a node-based programming language that integrates well in "
 "the editor. You can drag and drop nodes or resources into the graph to "
 "create new code blocks.*"
 msgstr ""
+"*VisualScript - мова програмування на основі вузлів, яка добре інтегрується "
+"в редактор. Ви можете перетягувати вузли, або ресурси, в графік для "
+"створення нових блоків коду.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:97
+#, fuzzy
 msgid ""
 "Note that the 3D workspace doesn’t feature as many tools as the 2D "
 "workspace. You’ll need external programs or add-ons to edit terrains, "
@@ -177,63 +258,95 @@ msgid ""
 "extend the editor’s functionality using game code. See `The Godot editor is "
 "a Godot game`_ below."
 msgstr ""
+"Зауважте, що в робочій області 3D немає такої кількості інструментів, як у "
+"2D робочій області. Вам знадобляться зовнішні програми, або додатки, для "
+"редагування місцевості, анімації складних персонажів тощо. Godot пропонує "
+"повний API для розширення функціональності редактора за допомогою ігрового "
+"коду. Дивіться `The Godot editor is a Godot game`_ нижче."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
 msgid "|image4|"
 msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
+#, fuzzy
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually.*"
 msgstr ""
+"*Плагін редактора State Machine (Машина станів) у Godot 2 від kubecz3k. Він "
+"дозволяє візуально керувати станами та переходами.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
 msgid "Open source"
 msgstr "Відкритий код"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
+#, fuzzy
 msgid ""
 "Godot offers a fully open source codebase under the **MIT license**. This "
 "means all the technologies that ship with it have to be Free (as in freedom) "
 "as well. For the most part, they’re developed from the ground up by "
 "contributors."
 msgstr ""
+"Godot пропонує повністю відкриту кодову базу даних під **ліцензією MIT**. Це "
+"означає, що всі технології, що постачаються разом із нею, повинні бути "
+"безкоштовними (як і у вільними). Здебільшого вони розробляються з нуля "
+"вкладниками."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
+#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won’t ship with the engine. This may include Google AdMob, or FMOD. Any "
 "of these can come as third-party plugins instead."
 msgstr ""
+"Будь-хто може підключити власні інструменти для потреб своїх проектів - вони "
+"просто не постачаються з движком. Це може бути Google AdMob, або FMOD. Будь-"
+"який із них може натомість може стати стороннім плагіном."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
+#, fuzzy
 msgid ""
 "On the other hand, an open codebase means you can **learn from and extend "
 "the engine** to your heart’s content. You can also debug games easily, as "
 "Godot will print errors with a stack trace, even if they come from the "
 "engine itself."
 msgstr ""
+"З іншого боку, відкрита база коду означає, що ви можете **вивчити і "
+"розширити движок** як захочете. Ви також можете легко налагоджувати ігри, "
+"оскільки Godot друкує помилки із stack trace, навіть якщо вони надходять із "
+"самого движка."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:126
+#, fuzzy
 msgid ""
 "This **does not affect the work you do with Godot** in any way: there’s no "
 "strings attached to the engine or anything you make with it."
 msgstr ""
+"Це **ніяк не впливає на роботу, яку ви робите з Godot** : ніякі додані рядки "
+"до движка, і нічого, що ви робите з ним."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:130
+#, fuzzy
 msgid "Community-driven"
-msgstr ""
+msgstr "Ініціативна спільнота"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:132
+#, fuzzy
 msgid ""
 "**Godot is made by its community, for the community, and for all game "
 "creators out there.** It’s the needs of the users and open discussions that "
 "drive the core updates. New features from the core developers often focus on "
 "what will benefit the most users first."
 msgstr ""
+"**Godot створений його спільнотою, для спільноти та для всіх творців ігор.** "
+"Саме основні потреби користувачів та відкриті дискусії визначають основні "
+"оновлення. Нові функції основних розробників часто зосереджуються на тому, "
+"що в першу чергу принесе користь користувачам."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
+#, fuzzy
 msgid ""
 "That said, although a handful of core developers work on it full-time, the "
 "project has over 600 contributors at the time of writing. Benevolent "
@@ -241,52 +354,81 @@ msgid ""
 "improvements in all corners of the engine at the same time in every major "
 "release."
 msgstr ""
+"Хоча повний робочий день над ним працюють лише декілька основних "
+"розробників, проект нараховує понад 600 учасників. Доброзичливі програмісти "
+"працюють над можливостями, які можуть знадобитися їм самим, тож ви побачите "
+"вдосконалення в усіх куточках движка одночасно у кожному великому випуску."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:144
+#, fuzzy
 msgid "The Godot editor is a Godot game"
-msgstr ""
+msgstr "Редактор Godot - це гра Godot"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:146
+#, fuzzy
 msgid ""
 "The Godot editor runs on the game engine. It uses the engine’s own UI "
 "system, it can hot-reload code and scenes when you test your projects, or "
 "run game code in the editor. This means you can **use the same code** and "
 "scenes for your games, or **build plugins and extend the editor.**"
 msgstr ""
+"Редактор Godot працює на ігровому движку. Він використовує власну систему "
+"інтерфейсу движка, може перезавантажувати код і сцени під час тестування "
+"проектів, або запускати ігровий код у редакторі. Це означає, що ви можете "
+"використовувати **той самий код** і сцени для своїх ігор, або **створювати "
+"плагіни та розширювати редактор.**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
+#, fuzzy
 msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
+"Це призводить до надійної та гнучкої системи користувацького інтерфейсу, "
+"оскільки вона приводить в дію сам редактор. За допомогою ключового слова "
+"``tool`` ви можете запустити будь-який ігровий код у редакторі."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
 msgid "|image5|"
 msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
+#, fuzzy
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot’s UI "
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""
+"*RPG in Box - це редактор вокселів RPG , створений з Godot 2. Він "
+"використовує інструменти інтерфейсу Godot для своєї програми програмування "
+"на основі вузлів та для решти інтерфейсу.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
+#, fuzzy
 msgid ""
 "Put the ``tool`` keyword at the top of any GDScript file and it will run in "
 "the editor. This lets you import and export plugins, create plugins like "
 "custom level editors, or create scripts with the same nodes and API you use "
 "in your projects."
 msgstr ""
+"Помістіть ключове слово ``tool`` на початку будь-якого файлу GDScript, і він "
+"запуститься в редакторі. Це дозволяє імпортувати та експортувати плагіни, "
+"створювати плагіни, такі як редактори власного рівня, або створювати скрипти "
+"з тими ж вузлами та API, які ви використовуєте у своїх проектах."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:166
 msgid "Separate 2D and 3D engines"
-msgstr ""
+msgstr "Окремі 2D та 3D движки"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:168
+#, fuzzy
 msgid ""
 "Godot offers dedicated 2D and 3D rendering engines. As a result, **the base "
 "unit for 2D scenes is pixels.** Even though the engines are separate, you "
 "can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interfaces over "
 "your 3D world."
 msgstr ""
+"Godot пропонує спеціалізовані движки 2D та 3D візуалізації. В результаті "
+"**базовою одиницею для 2D сцен є пікселі**. Незважаючи на те, що двигуни є "
+"окремими, ви можете візуалізувати 2D в 3D, 3D в 2D і накладати 2D спрайти та "
+"інтерфейси поверх вашого 3D-світу."

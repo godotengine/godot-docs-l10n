@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:4
+#, fuzzy
+msgid "Installing plugins"
+msgstr "Tworzenie wtyczek"
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:6
+msgid ""
+"Godot features an editor plugin system with numerous plugins developed by "
+"the community. Plugins can extend the editor's functionality with new nodes, "
+"additional docks, convenience features, and more."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:11
+#, fuzzy
+msgid "Finding plugins"
+msgstr "Tworzenie wtyczek"
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:13
+msgid ""
+"The preferred way to find Godot plugins is to use the `Asset Library "
+"<https://godotengine.org/asset-library/>`_. While it can be browsed online, "
+"it's more convenient to use it directly from the editor. To do so, click the "
+"**AssetLib** tab at the top of the editor:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:20
+msgid "You can also find assets on code hosting websites such as GitHub."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:24
+msgid ""
+"Some repositories describe themselves as \"plugins\" but may not actually be "
+"*editor* plugins. This is especially the case for scripts that are intended "
+"to be used in a running project. You don't need to enable such plugins to "
+"use them. Download them and extract the files in your project folder."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:29
+msgid ""
+"One way to distinguish editor plugins from non-editor plugins is to look for "
+"a ``plugin.cfg`` file in the repository that hosts the plugin. If the "
+"repository contains a ``plugin.cfg`` file in a folder placed in the ``addons/"
+"`` folder, then it is an editor plugin."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:35
+#, fuzzy
+msgid "Installing a plugin"
+msgstr "Kompilowanie naszej wtyczki"
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:37
+msgid ""
+"To install a plugin, download it as a ZIP archive. On the Asset Library, "
+"this can be done using the **Download** button, either from the editor or "
+"using the Web interface."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:41
+msgid ""
+"On GitHub, if a plugin has *tags* (versions) declared, go to the "
+"**Releases** tab to download a stable release. This ensures you download a "
+"version that was declared to be stable by its author."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:45
+msgid ""
+"On GitHub, if the plugin doesn't have any *tags* declared, use the "
+"**Download ZIP** button to download a ZIP of the latest revision:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:50
+msgid ""
+"Extract the ZIP archive and move the ``addons/`` folder it contains into "
+"your project folder. If your project already contains an ``addons/`` folder, "
+"move the plugin's ``addons/`` folder into your project folder to merge the "
+"new folder contents with the existing one. Your file manager may ask you "
+"whether to write into the folder; answer **Yes**. No files will be "
+"overwritten in the process."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:57
+#, fuzzy
+msgid "Enabling a plugin"
+msgstr "Tworzenie wtyczki"
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:59
+msgid ""
+"To enable the freshly installed plugin, open **Project > Project Settings** "
+"at the top of the editor then go the **Plugins** tab. If the plugin was "
+"packaged correctly, you should see it in the list of plugins. Click on the "
+"gray **Inactive** text and choose **Active** to enable the plugin. The word "
+"**Active** will display in green to confirm the plugin was enabled."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/installing_plugins.rst:68
+msgid ""
+"You can use the plugin immediately after enabling it; there's no need to "
+"restart the editor. Likewise, disabling a plugin can be done without having "
+"to restart the editor."
+msgstr ""

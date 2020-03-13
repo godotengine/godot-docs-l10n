@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,9 +115,9 @@ msgid ""
 "Uses no garbage collector, so it trades a small bit of automation (most "
 "objects are reference counted anyway), by determinism."
 msgstr ""
-"Verwendet kein automatisches Speichermanagement (Garbage Collector), tauscht "
-"also ein kleines Stück Automatisierung (die meisten Objekte werden ohnehin "
-"per Referenzzählung erfasst) gegen Kontrolle."
+"Verwendet vorher automatisiertes Speichermanagement(Garbage Collector),"
+"sodass es sich ein wenig autonom verhält (die meisten Objekte werden ohnehin "
+"per Referenzzählung erfasst)."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:34
 msgid ""
@@ -297,9 +297,10 @@ msgid "Scene setup"
 msgstr "Eine Szene einrichten"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
+#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
-"pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
+"pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
 "Verwende den Dialog \"Node hier anhängen\", auf den über die Registerkarte "
 "\"Szene\" (oder durch Drücken von ``Strg + A``) zugreifen werden kann, um "
@@ -315,7 +316,7 @@ msgstr "Label"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr "Knopf"
+msgstr "\"Button\""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"
@@ -489,9 +490,9 @@ msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
-"Im oberen Teil des Dialogs wird eine Liste der Knoten Ihrer Szene angezeigt, "
-"wobei der Name des emittierenden Knotens blau hervorgehoben ist. Wählen Sie "
-"hier den Knoten \"Panel\" aus."
+"Oben im Dialogfeld wird eine Liste der Knoten Ihrer Szene angezeigt, wobei "
+"der Name des sendenden Knotens blau hervorgehoben ist. Wählen Sie hier den "
+"Knoten \"Panel\"."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
@@ -552,14 +553,13 @@ msgstr ""
 "Schaltfläche von \"Button\" geklickt wird:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"Abschließend verbinde das \"pressed\" -Signal der Schaltfläche mit ``_ready "
-"() ``, indem Du :ref:`Object.connect () <class_Object_method_connect>` "
-"verwendest."
+"Abschließend verbindest du die \"pressed\" -Signal Schaltfläche mit "
+"``_on_Button_pressed () ``, wärend du :ref:`Object.connect () "
+"<class_Object_method_connect>` verwendest."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,14 +74,14 @@ msgstr ""
 msgid "Examples:"
 msgstr "例:"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:45
+#: ../../docs/tutorials/inputs/input_examples.rst:62
 msgid ""
 "This gives you the flexibility to mix-and-match the type of input processing "
 "you do."
 msgstr ""
 "これにより、実行する入力処理のタイプを自由に組み合わせることができます。"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:48
+#: ../../docs/tutorials/inputs/input_examples.rst:65
 msgid ""
 "For the remainder of this tutorial, we'll focus on capturing individual "
 "events in ``_input()``."
@@ -89,11 +89,11 @@ msgstr ""
 "このチュートリアルの残りの部分では、\\ ``_ input()`` で個々のイベントをキャプ"
 "チャすることに焦点を当てます。"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:52
+#: ../../docs/tutorials/inputs/input_examples.rst:69
 msgid "Input events"
 msgstr "入力イベント"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:54
+#: ../../docs/tutorials/inputs/input_examples.rst:71
 msgid ""
 "Input events are objects that inherit from :ref:`InputEvent "
 "<class_InputEvent>`. Depending on the event type, the object will contain "
@@ -103,9 +103,9 @@ msgstr ""
 "入力イベントは、\\ :ref:`InputEvent <class_InputEvent>` を継承するオブジェク"
 "トです。イベントタイプに応じて、オブジェクトにはそのイベントに関連する特定の"
 "プロパティが含まれます。イベントが実際にどのように見えるかを確認するには、"
-"ノードを追加し、次のスクリプトを添付します:"
+"ノードを追加し、次のスクリプトをアタッチします:"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:67
+#: ../../docs/tutorials/inputs/input_examples.rst:91
 msgid ""
 "As you press keys, move the mouse, and perform other inputs, you'll see each "
 "event scroll by in the output window. Here's an example of the output:"
@@ -113,7 +113,7 @@ msgstr ""
 "キーを押したり、マウスを動かしたり、他の入力を実行したりすると、出力ウィンド"
 "ウで各イベントがスクロールして表示されます。出力の例を次に示します:"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:81
+#: ../../docs/tutorials/inputs/input_examples.rst:105
 msgid ""
 "As you can see, the results are very different for the different types of "
 "input. Key events are even printed as their key symbols. For example, let's "
@@ -124,22 +124,24 @@ msgstr ""
 "ンボルとしても印刷されます。たとえば、\\ :ref:`InputEventMouseButton "
 "<class_InputEventMouseButton>` を考えてみましょう。次のクラスから継承します:"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:85
+#: ../../docs/tutorials/inputs/input_examples.rst:109
 msgid ""
 ":ref:`InputEvent <class_InputEvent>` - the base class for all input events"
 msgstr ""
 ":ref:`InputEvent <class_InputEvent>` － すべての入力イベントの基本クラス"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:86
+#: ../../docs/tutorials/inputs/input_examples.rst:110
+#, fuzzy
 msgid ""
 ":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` - adds the "
-"ability to check if modifiers are pressed, such as ``Shift`` or ``Alt``."
+"ability to check if modifiers are pressed, such as :kbd:`Shift` or :kbd:"
+"`Alt`."
 msgstr ""
 ":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` － ``Shift`` "
 "や ``Alt`` などのモディファイヤが押されているかどうかをチェックする機能を追加"
 "します。"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:87
+#: ../../docs/tutorials/inputs/input_examples.rst:111
 msgid ""
 ":ref:`InputEventMouse <class_InputEventMouse>` - adds mouse event "
 "properties, such as ``position``"
@@ -147,7 +149,7 @@ msgstr ""
 ":ref:`InputEventMouse <class_InputEventMouse>` － ``position`` などのマウスイ"
 "ベントプロパティを追加します"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:88
+#: ../../docs/tutorials/inputs/input_examples.rst:112
 msgid ""
 ":ref:`InputEventMouseButton <class_InputEventMouseButton>` - contains the "
 "index of the button that was pressed, whether it was a double-click, etc."
@@ -155,7 +157,7 @@ msgstr ""
 ":ref:`InputEventMouseButton <class_InputEventMouseButton>` － 押されたボタン"
 "のインデックス、ダブルクリックかどうかなどが含まれます。"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:90
+#: ../../docs/tutorials/inputs/input_examples.rst:114
 msgid ""
 "It's a good idea to keep the class reference open while you're working with "
 "events so you can check the event type's available properties and methods."
@@ -163,7 +165,7 @@ msgstr ""
 "イベントの操作中は、イベントの種類で使用可能なプロパティとメソッドを確認でき"
 "るように、クラス参照を開いたままにすることをお勧めします。"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:94
+#: ../../docs/tutorials/inputs/input_examples.rst:118
 msgid ""
 "You can encounter errors if you try to access a property on an input type "
 "that doesn't contain it - calling ``position`` on ``InputEventKey`` for "
@@ -173,11 +175,11 @@ msgstr ""
 "ロパティにアクセスしようとすると、エラーが発生する可能性があります。これを回"
 "避するには、まずイベントタイプをテストしてください:"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:107
+#: ../../docs/tutorials/inputs/input_examples.rst:140
 msgid "InputMap"
 msgstr "入力マップ"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:109
+#: ../../docs/tutorials/inputs/input_examples.rst:142
 msgid ""
 "The :ref:`InputMap <class_InputMap>` is the most flexible way to handle a "
 "variety of inputs. You use this by creating named input *actions*, to which "
@@ -193,11 +195,11 @@ msgstr ""
 "含まれています。それらを表示し、独自に追加するには、[プロジェクト] -> [プロ"
 "ジェクト設定]を開き、インプットマップタブを選択します。"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:119
+#: ../../docs/tutorials/inputs/input_examples.rst:152
 msgid "Capturing actions"
 msgstr "アクションのキャプチャ"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:121
+#: ../../docs/tutorials/inputs/input_examples.rst:154
 msgid ""
 "Once you've defined your actions, you can process them in your scripts using "
 "``is_action_pressed()`` and ``is_action_released()`` by passing the name of "
@@ -207,23 +209,24 @@ msgstr ""
 "``is_action_pressed()`` と ``is_action_released()`` を使用してスクリプトでア"
 "クションを処理できます:"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:133
+#: ../../docs/tutorials/inputs/input_examples.rst:176
 msgid "Keyboard events"
 msgstr "キーボードイベント"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:135
+#: ../../docs/tutorials/inputs/input_examples.rst:178
+#, fuzzy
 msgid ""
 "Keyboard events are captured in :ref:`InputEventKey <class_InputEventKey>`. "
 "While it's recommended to use input actions instead, there may be cases "
 "where you want to specifically look at key events. For this example, let's "
-"check for the \"T\" key:"
+"check for the :kbd:`T`:"
 msgstr ""
 "キーボードイベントは :ref:`InputEventKey <class_InputEventKey>` でキャプチャ"
 "されます。代わりに入力アクションを使用することをお勧めしますが、重要なイベン"
 "トを具体的に調べたい場合もあります。この例では、\"T\" キーを確認します:"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:148
-#: ../../docs/tutorials/inputs/input_examples.rst:171
+#: ../../docs/tutorials/inputs/input_examples.rst:204
+#: ../../docs/tutorials/inputs/input_examples.rst:242
 msgid ""
 "See :ref:`@GlobalScope_KeyList <enum_@GlobalScope_KeyList>` for a list of "
 "scancode constants."
@@ -231,17 +234,18 @@ msgstr ""
 "スキャンコード定数のリストについては、\\ :ref:`@GlobalScope_KeyList <enum_ @ "
 "GlobalScope_KeyList>` を参照してください。"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:152
+#: ../../docs/tutorials/inputs/input_examples.rst:208
 msgid "Keyboard modifiers"
 msgstr "キーボード・モディファイヤ"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:154
+#: ../../docs/tutorials/inputs/input_examples.rst:210
+#, fuzzy
 msgid ""
 "Modifier properties are inherited from :ref:`InputEventWithModifiers "
 "<class_InputEventWithModifiers>`. This  allows you to check for modifier "
 "combinations using boolean properties. Let's imagine you want one thing to "
-"happen when the \"T\" key is pressed, but something different when it's "
-"\"Shift+T\":"
+"happen when the :kbd:`T` is pressed, but something different when it's :kbd:"
+"`Shift + T`:"
 msgstr ""
 "モディファイヤのプロパティは、\\ :ref:`InputEventWithModifiers "
 "<class_InputEventWithModifiers>` から継承されます。これにより、ブールプロパ"
@@ -249,11 +253,11 @@ msgstr ""
 "ときにあることを行いたいが、\"Shift+T\" のときは別のことをしたいと想像してみ"
 "ましょう:"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:175
+#: ../../docs/tutorials/inputs/input_examples.rst:246
 msgid "Mouse events"
 msgstr "マウスイベント"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:177
+#: ../../docs/tutorials/inputs/input_examples.rst:248
 msgid ""
 "Mouse events stem from the :ref:`InputEventMouse <class_InputEventMouse>` "
 "class, and are separated into two types: :ref:`InputEventMouseButton "
@@ -261,17 +265,17 @@ msgid ""
 "<class_InputEventMouseMotion>`. Note that this means that all mouse events "
 "will contain a ``position`` property."
 msgstr ""
-"マウスイベントは:ref:`InputEventMouse <class_InputEventMouse>` クラスから派生"
-"し、2つのタイプに分けられます: :ref:`InputEventMouseButton "
+"マウスイベントは :ref:`InputEventMouse <class_InputEventMouse>` クラスから派"
+"生し、2つのタイプに分けられます: :ref:`InputEventMouseButton "
 "<class_InputEventMouseButton>` および :ref:`InputEventMouseMotion "
 "<class_InputEventMouseMotion>` です。これは、すべてのマウスイベントに "
 "``position`` プロパティが含まれることを意味することに注意してください。"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:183
+#: ../../docs/tutorials/inputs/input_examples.rst:254
 msgid "Mouse buttons"
 msgstr "マウスボタン"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:185
+#: ../../docs/tutorials/inputs/input_examples.rst:256
 msgid ""
 "Capturing mouse buttons is very similar to handling key events. :ref:"
 "`@GlobalScope_ButtonList <enum_@GlobalScope_ButtonList>` contains a list of "
@@ -288,11 +292,11 @@ msgstr ""
 "タンにわかれていて、\\ ``BUTTON_WHEEL_UP`` と ``BUTTON_WHEEL_DOWN`` の両方が"
 "別々のイベントであることに注意してください。"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:202
+#: ../../docs/tutorials/inputs/input_examples.rst:291
 msgid "Mouse motion"
 msgstr "マウスモーション"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:204
+#: ../../docs/tutorials/inputs/input_examples.rst:293
 msgid ""
 ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>` events occur "
 "whenever the mouse moves. You can find the move's distance with the "
@@ -302,7 +306,7 @@ msgstr ""
 "が移動するたびに発生します。\\ ``relative`` プロパティで移動の距離を確認でき"
 "ます。"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:208
+#: ../../docs/tutorials/inputs/input_examples.rst:297
 msgid ""
 "Here's an example using mouse events to drag-and-drop a :ref:`Sprite "
 "<class_Sprite>` node:"
@@ -310,11 +314,11 @@ msgstr ""
 "マウスイベントを使用して :ref:`Sprite <class_Sprite>` ノードをドラッグアンド"
 "ドロップする例を次に示します:"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:234
+#: ../../docs/tutorials/inputs/input_examples.rst:355
 msgid "Touch events"
 msgstr "タッチイベント"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:236
+#: ../../docs/tutorials/inputs/input_examples.rst:357
 msgid ""
 "If you are using a touchscreen device, you can generate touch events. :ref:"
 "`InputEventScreenTouch <class_InputEventScreenTouch>` is equivalent to a "
@@ -326,7 +330,7 @@ msgstr ""
 "リックイベントに相当し、\\ :ref:`InputEventScreenDrag "
 "<class_InputEventScreenDrag>` はマウスの動きとほぼ同じように機能します。"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:241
+#: ../../docs/tutorials/inputs/input_examples.rst:362
 msgid ""
 "To test your touch events on a non-touchscreen device, open Project Settings "
 "and go to the \"Input Devices/Pointing\" section. Enable \"Emulate Touch "

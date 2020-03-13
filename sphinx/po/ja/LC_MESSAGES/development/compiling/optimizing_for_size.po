@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:4
 msgid "Optimizing a build for size"
-msgstr ""
+msgstr "ビルドのサイズを最適化する"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:9
 msgid "Rationale"
-msgstr ""
+msgstr "理由"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:11
 msgid ""
@@ -32,6 +32,10 @@ msgid ""
 "specific compiler flags to aid on decreasing build size. Common situations "
 "include creating builds for mobile and Web platforms."
 msgstr ""
+"時として、速度よりもサイズを重視して最適化したいこともあります。それには、エ"
+"ンジンの不必要な機能をコンパイルしないようにしたり、サイズ縮小に役立つ特定の"
+"コンパイラ フラグを用いることです。主に、モバイルやWebプラットフォーム向けの"
+"ビルドをする場合が想定されます。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:16
 msgid ""
@@ -39,16 +43,21 @@ msgid ""
 "smaller binary. Before continuing, it is recommended to read the previous "
 "tutorials on compiling Godot for each platform."
 msgstr ""
+"このチュートリアルでは、より小さなバイナリを作るための複数の方法を紹介してい"
+"きます。先にすすむ前にまず、Godotをそれぞれのプラットフォームにコンパイルする"
+"ことについてのチュートリアルを読むことをおすすめします。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:21
 msgid "Disabling 3D"
-msgstr ""
+msgstr "3Dの無効化"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:23
 msgid ""
 "For 2D games, having the whole 3D engine available usually makes no sense. "
 "Because of this, there is a build flag to disable it:"
 msgstr ""
+"2Dゲームに3Dエンジン全体を持たせることは、通常あまり意味はありません。そのた"
+"め、これを無効化するビルド フラグがあります:"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:29
 msgid ""
@@ -56,26 +65,34 @@ msgid ""
 "designed to operate without 3D support. Without it, the binary size can be "
 "reduced by about 15%."
 msgstr ""
+"エディタは3Dサポート無しで動くようには設計されていないため、このフラグを使う"
+"には、まず tools を無効にする必要があります。3Dの無効化により、バイナリのサイ"
+"ズはおよそ15%減ります。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:34
 msgid "Disabling advanced GUI nodes"
-msgstr ""
+msgstr "高度なGUIノードの無効化"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:36
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
 "TextEditor or GraphEdit. They can be disabled using a build flag:"
 msgstr ""
+"ほとんどの小規模ゲームは、Tree、ItemList、TextEditorやGraphEditなどの複雑な"
+"GUIコントロールは必要としません。これらは、このビルド フラグにより無効化でき"
+"ます:"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:44
 msgid "Disabling unwanted modules"
-msgstr ""
+msgstr "不要なモジュールの無効化"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:46
 msgid ""
 "A lot of Godot's functions are offered as modules. You can see a list of "
 "modules with the following command:"
 msgstr ""
+"Godotの機能の多くはモジュールとして提供されています。モジュールのリストを見る"
+"には、次のコマンドを使います:"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:53
 msgid ""
@@ -83,6 +100,8 @@ msgid ""
 "build options. If you are working on a simple 2D game, you could disable a "
 "lot of them:"
 msgstr ""
+"無効にできるモジュールのリストが、ビルドオプションと共に表示されます。シンプ"
+"ルな2Dゲームであれば、このうちの多くを無効にできます:"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:61
 msgid ""
@@ -91,24 +110,32 @@ msgid ""
 "might want to keep networking-related modules, regex support, or theora/webm "
 "to play videos)."
 msgstr ""
+"これがあなたの事例に合わなかった場合、もういちどモジュールのリストを見直し"
+"て、どれがまだゲームに必要なのか確認してください (たとえば、ネットワーク関連"
+"のモジュールや、正規表現サポート、あるいはビデオ再生のためにtheora/webmを残し"
+"ておきたいかもしれません)。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:67
 msgid "Optimizing for size instead of speed"
-msgstr ""
+msgstr "スピードの代わりにサイズを最適化する"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:69
 msgid ""
 "Godot 3.1 onwards allows to compile using size optimizations. To enable "
 "this, just set the ``optimize`` flag to ``size``:"
 msgstr ""
+"Godot 3.1以降では、サイズ最適化にてコンパイルすることができます。これを有効に"
+"するには、\\ ``size`` にて ``optimize`` フラグを指定するだけです。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:76
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr ""
+"WebAssemblyのようないくつかのプラットフォームでは、標準でこのモードが有効に"
+"なっています。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:79
 msgid "Compiling with link-time optimization"
-msgstr ""
+msgstr "リンク時最適化を使用したコンパイル"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:81
 msgid ""
@@ -117,31 +144,41 @@ msgid ""
 "template functions and unused code. It can currently be used with the GCC "
 "and MSVC compilers:"
 msgstr ""
+"リンク時最適化を有効にすると、パフォーマンスとファイルサイズの両方の点で、よ"
+"り効率的なバイナリが生成されます。重複するテンプレート関数と未使用のコードを"
+"排除することで機能します。現在、GCCおよびMSVCコンパイラで使用できます。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:90
 msgid ""
 "Linking becomes much slower with this option, so it should be used only for "
 "release builds."
 msgstr ""
+"このオプションではリンクが非常に遅くなるため、リリースビルドにのみ使用する必"
+"要があります。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:94
 msgid "Stripping binaries"
-msgstr ""
+msgstr "バイナリの除去"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:96
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr ""
+"ソースからビルドする場合は、バイナリからデバッグシンボルを削除することを忘れ"
+"ないでください:"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:103
 msgid "Using UPX to compress binaries"
-msgstr ""
+msgstr "UPXを使用してバイナリを圧縮する"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:105
 msgid ""
 "If you are targeting desktop platforms, the `UPX <https://upx.github.io/>`_ "
 "compressor can be used. This can reduce binary size considerably."
 msgstr ""
+"デスクトッププラットフォームをターゲットにしている場合、\\ `UPX <https://upx."
+"github.io/>`_ コンプレッサーを使用できます。これにより、バイナリサイズを大幅"
+"に削減できます。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:109
 msgid ""
@@ -149,3 +186,7 @@ msgid ""
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "
 "sure to sign your binaries or use a platform that will distribute them."
 msgstr ""
+"ただし、一部のウイルス対策プログラムでは、UPXで圧縮されたバイナリがウイルスと"
+"して検出される場合があることに注意してください。したがって、商用ゲームをリ"
+"リースする場合は、必ずバイナリに署名するか、それらを配布するプラットフォーム"
+"を使用してください。"

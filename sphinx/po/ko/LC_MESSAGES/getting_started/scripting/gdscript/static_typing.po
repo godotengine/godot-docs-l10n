@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgstr ""
 "드로 작업하는 사람들은 항상 ``Item``\\ 을 ``Inventory.add``\\ 으로 전달해야 "
 "합니다. 타입으로는, 다음을 시행할 수 있습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:48
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:49
 msgid ""
 "Another significant advantage of typed GDScript is the new **warning "
 "system**. From version 3.1, Godot gives you warnings about your code as you "
@@ -94,7 +94,7 @@ msgstr ""
 "에 문제가 될 수 있는 코드 부분을 식별하지만 당신이 코드를 그대로 둘지 말지는 "
 "당신이 결정할 수 있도록 합니다. 잠시후에 더 설명합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:54
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:55
 msgid ""
 "Static types also give you better code completion options. Below, you can "
 "see the difference between a dynamic and a static typed completion options "
@@ -104,7 +104,7 @@ msgstr ""
 "``PlayerController`` 라는 클래스에 대한 동적 및 정적 타입 완료 옵션의 차이점"
 "을 볼 수 있습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:58
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:59
 msgid ""
 "You’ve probably stored a node in a variable before, and typed a dot to be "
 "left with no autocomplete suggestions:"
@@ -112,7 +112,7 @@ msgstr ""
 "당신은 아마 전에 변수에 노드를 저장하고, 변수이름 뒤에 점을 입력했으나 자동완"
 "성 제안이 표시되지 않았던 경험이 있었을 수 있습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:64
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:65
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you’re passing to the function. If you write the type explicitly however, "
@@ -122,7 +122,7 @@ msgstr ""
 "습니다. 그러나 유형을 명시적으로 작성해주면, 노드에서 모든 공용 메서드 및 변"
 "수를 가져옵니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:71
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:72
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
 "Time compilation and other compiler improvements are already on the roadmap!"
@@ -131,7 +131,7 @@ msgstr ""
 "석(Just-In-Time) 컴파일과 다른 컴파일러 성능 향상이 이미 로드맵에 대기 중입니"
 "다!"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:75
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:76
 msgid ""
 "Overall, typed programming gives you a more structured experience. It helps "
 "prevent errors and improves the self-documenting aspect of your scripts. "
@@ -148,11 +148,11 @@ msgstr ""
 "합니다. 코드가 더 명확하고 구조화될수록 이해하는 것은 더 빨라지며 더 빨리 진"
 "도를 나갈 수 있습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:84
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:85
 msgid "How to use static typing"
 msgstr "정적 타입 사용법"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:86
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:87
 msgid ""
 "To define the type of a variable or a constant, write a colon after the "
 "variable’s name, followed by its type. E.g. ``var health: int``. This forces "
@@ -162,28 +162,28 @@ msgstr ""
 "명시하세요. 예를 들면 \"var health:int\". 이것은 변수의 타입이 항상 동일하도"
 "록 강제합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:95
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:96
 msgid ""
 "Godot will try to infer types if you write a colon, but you omit the type:"
 msgstr ""
 "Godot은 당신이 콜론을 입력했지만 타입을 생략한 경우 타입을 예측하기 위해서 노"
 "력합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:104
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:105
 msgid "Currently you can use three types of… types:"
 msgstr "현재 세 개의 타입을 사용할 수 있습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:106
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:107
 msgid ":ref:`Built-in <doc_gdscript_builtin_types>`"
 msgstr ":ref:`내장 타입 <doc_gdscript_builtin_types>`"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:107
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:108
 msgid ""
 "Core classes and nodes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)"
 msgstr ""
 "핵심 클래스와 노드 (``Object``, ``Node``, ``Area2D``, ``Camera2D``, 등등)"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:109
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:110
 msgid ""
 "Your own, custom classes. Look at the new :ref:`class_name "
 "<doc_scripting_continued_class_name>` feature to register types in the "
@@ -192,7 +192,7 @@ msgstr ""
 "당신이 만들고 수정한 클래스들. 편집기에서 타입을 등록하려면 새로운 :ref:`클래"
 "스이름 <doc_scripting_continued_class_name>` 특징을 보세요."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:114
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:115
 msgid ""
 "You don't need to write type hints for constants, as Godot sets it "
 "automatically from the assigned value. But you can still do so to make the "
@@ -202,11 +202,11 @@ msgstr ""
 "입 힌트를 쓸 필요가 없습니다. 하지만 여전히 코드의 의도를 명확히 하려면 그렇"
 "게 하는게 좋습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:117
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:118
 msgid "Custom variable types"
 msgstr "맞춤 변수 타입"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:119
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:120
 msgid ""
 "You can use any class, including your custom classes, as types. There are "
 "two ways to use them in scripts. The first method is to preload the script "
@@ -216,7 +216,7 @@ msgstr ""
 "립트에서 쓸 수 있는 방법이 두 가지가 있는데, 첫번째 방법은 타입으로 사용할 스"
 "크립트를 미리 로딩하여 상수로 저장하는 것입니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:128
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:129
 msgid ""
 "The second method is to use the ``class_name`` keyword when you create. For "
 "the example above, your Rifle.gd would look like this:"
@@ -224,7 +224,7 @@ msgstr ""
 "두 번째 방법은 생성할 때 ``class_name`` 키워드를 사용하는 것입니다. 위의 예제"
 "에서 Rifle.gd는 다음과 같습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:136
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:137
 msgid ""
 "If you use ``class_name``, Godot registers the Rifle type globally in the "
 "editor, and you can use it anywhere, without having to preload it into a "
@@ -233,11 +233,11 @@ msgstr ""
 "``class_name``\\ 을 사용한다면, Godot는 Rifle 타입을 편집기에서 전역으로 등록"
 "합니다, 그리고 상수에 미리 불러올 필요 없이 어디에나 그것을 쓸 수 있습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:145
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:146
 msgid "Variable casting"
 msgstr "변수 캐스팅(casting)"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:147
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:148
 msgid ""
 "Type casting is a key concept in typed languages. Casting is the conversion "
 "of a value from one type to another."
@@ -245,7 +245,7 @@ msgstr ""
 "타이프 캐스팅(Type casting)은 타입 언어에서의 주요된 개념입니다. 어떤 값의 타"
 "입을 다른 타입으로 바꾸는 것입니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:150
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:151
 msgid ""
 "Imagine an Enemy in your game, that ``extends Area2D``. You want it to "
 "collide with the Player, a ``KinematicBody2D`` with a script called "
@@ -260,7 +260,7 @@ msgstr ""
 "다. 타입형 코드로, 감지한 바디는 일반 ``PhysicsBody2D``\\ 이 될 것이며, "
 "``_on_body_entered`` 콜백의 ``PlayerController``\\ 가 아닐 것입니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:157
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:158
 msgid ""
 "You can check if this ``PhysicsBody2D`` is your Player with the ``as`` "
 "casting keyword, and using the colon ``:`` again to force the variable to "
@@ -271,7 +271,7 @@ msgstr ""
 "수 있습니다, 그리고 콜론 ``:``\\ 을 다시 사용해 변수가 이 타입을 사용하도록 "
 "강제합니다. 이렇게 하면 변수는 ``PlayerController`` 타입에 고정하게 합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:170
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:172
 msgid ""
 "As we’re dealing with a custom type, if the ``body`` doesn’t extend "
 "``PlayerController``, the ``player``\\ variable will be set to ``null``. We "
@@ -283,7 +283,7 @@ msgstr ""
 "레이어인지 아닌지 확인할 수 있습니다. 또한 캐스트 덕분에 플레이어 변수에 완전"
 "한 자동 완성을 얻을 수 있습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:177
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:179
 msgid ""
 "If you try to cast with a built-in type and it fails, Godot will throw an "
 "error."
@@ -291,11 +291,11 @@ msgstr ""
 "내장 타입으로 캐스트를 하려 하다가 실패한다면, Godot는 오류를 내보낼 것입니"
 "다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:180
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
 msgid "Safe lines"
 msgstr "안전 라인"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:184
 msgid ""
 "You can also use casting to ensure safe lines. Safe lines are a new tool in "
 "Godot 3.1 to tell you when ambiguous lines of code are type-safe. As you can "
@@ -308,7 +308,7 @@ msgstr ""
 "입과 동적 타입을 섞어서 대입시킬 수 있기 때문에 Godot은 런타임에 오류가 발생"
 "할 지에 대한 여부를 판명할 충분한 정보가 없습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:188
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:190
 msgid ""
 "This happens when you get a child node. Let’s take a timer for example: with "
 "dynamic code, you can get the node with ``$Timer``. GDScript supports `duck-"
@@ -324,7 +324,7 @@ msgstr ""
 "입니다, 확장된 두 클래스이죠. 동적 GDScript로, 또한 호출하는데 필요한 메서드"
 "를 가진다면, 노드 타입에 대해 걱정하지 않아도 됩니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:196
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:198
 msgid ""
 "You can use casting to tell Godot the type you expect when you get a node: "
 "``($Timer as Timer)``, ``($Player as KinematicBody2D)``, etc. Godot will "
@@ -336,20 +336,20 @@ msgstr ""
 "입이 작동하는지 확인하고, 작동한다면 스크립트 편집기 왼쪽의 줄 숫자가 초록색"
 "으로 바뀔 것입니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:204
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:206
 msgid "Safe vs Unsafe Line"
 msgstr "안전 vs 불안전 라인"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:208
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:210
 msgid ""
 "You can turn off safe lines or change their color in the editor settings."
 msgstr "편집기 설정에서 안전 라인을 끌 수 있고 혹은 색상을 바꿀 수 있습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:211
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:213
 msgid "Define the return type of a function with the arrow ->"
 msgstr "-> 화살표로 함수의 반환 타입 정의하기"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:213
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:215
 msgid ""
 "To define the return type of a function, write a dash and a right angle "
 "bracket ``->`` after its declaration, followed by the return type:"
@@ -357,7 +357,7 @@ msgstr ""
 "함수의 반환 타입을 정의하기 위해, 하이픈과 오른쪽 직각 괄호를 적습니다 ``-"
 ">`` 선언 후, 반환 타입이 뒤따릅니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:221
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:223
 msgid ""
 "The type ``void`` means the function does not return anything. You can use "
 "any type, as with variables:"
@@ -365,15 +365,15 @@ msgstr ""
 "``void`` 타입은 함수가 아무것도 반환하지 않는 것을 의미합니다. 변수와 마찬가"
 "지로 어떤 타입도 사용할 수 있습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:230
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:232
 msgid "You can also use your own nodes as return types:"
 msgstr "또한 자신의 노드를 반환 타입으로 사용할 수 있습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:245
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:248
 msgid "Typed or dynamic: stick to one style"
 msgstr "타입형 혹은 동적: 하나의 스타일을 고수하기"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:247
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:250
 msgid ""
 "Typed GDScript and dynamic GDScript can coexist in the same project. But I "
 "recommended to stick to either style for consistency in your codebase, and "
@@ -385,7 +385,7 @@ msgstr ""
 "니다. 같은 가이드라인을 따른다면 모두가 함께 일하기 더 쉽고, 다른 사람의 코드"
 "를 읽고 이해하는데 더 빠를 것입니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:253
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:256
 msgid ""
 "Typed code takes a little more writing, but you get the benefits we "
 "discussed above. Here’s an example of the same, empty script, in a dynamic "
@@ -394,11 +394,11 @@ msgstr ""
 "타입형 코드는 조금 더 쓸 것이 많지만, 위에서 말한대로 이득을 얻습니다. 여기 "
 "같은, 빈 스크립트 예제가 있습니다, 동적 스타일에서는 이렇습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:265
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:272
 msgid "And with static typing:"
 msgstr "그리고 정적 타입형에서는 이렇습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:275
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:286
 msgid ""
 "As you can see, you can also use types with the engine’s virtual methods. "
 "Signal callbacks, like any methods, can also use types. Here’s a "
@@ -408,11 +408,11 @@ msgstr ""
 "은 시그널 콜백도 타입형을 사용할 수 있습니다. 이것이 동적 스타일에서 "
 "``body_entered`` 시그널입니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:284
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:295
 msgid "And the same callback, with type hints:"
 msgstr "그리고 타입형 힌트를 쓴 같은 콜백입니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:291
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:302
 msgid ""
 "You’re free to replace, e.g. the ``CollisionObject2D``, with your own type, "
 "to cast parameters automatically:"
@@ -420,7 +420,7 @@ msgstr ""
 "자유롭게 바꿀 수 있습니다, 예를 들어 자체 타입을 지닌 ``CollisionObject2D``"
 "\\ 는 자동으로 매개변수를 캐스트합니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:301
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
 msgid ""
 "The ``bullet`` variable could hold any ``CollisionObject2D`` here, but we "
 "make sure it is our ``Bullet``, a node we created for our project. If it’s "
@@ -432,11 +432,11 @@ msgstr ""
 "``Area2D``\\ 나 ``Bullet``\\ 을 확장하지 않는 다른 노드라면, ``bullet`` 변수"
 "는 ``null``\\ 이 될 것입니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:307
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
 msgid "Warning system"
 msgstr "경고 시스템(Warning system)"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:309
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:321
 msgid ""
 "The warning system complements typed GDScript. It’s here to help you avoid "
 "mistakes that are hard to spot during development, and that may lead to "
@@ -445,7 +445,7 @@ msgstr ""
 "경고 시스템은 타입형 GDScript를 보완해줍니다. 개발 중에 발생하기 쉽고 런타임 "
 "오류를 일으키는 실수를 피하도록 도와줍니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:325
 msgid ""
 "You can configure warnings in the Project Settings under a new section "
 "called ``GDScript``:"
@@ -453,11 +453,11 @@ msgstr ""
 "프로젝트 설정에서 ``GDScript``\\ 라고 하는 섹션에서 경고를 구성할 수 있습니"
 "다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:331
 msgid "warning system project settings"
 msgstr "경고 시스템 프로젝트 설정"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:321
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:333
 msgid ""
 "You can find a list of warnings for the active GDScript file in the script "
 "editor’s status bar. The example below has 3 warnings:"
@@ -465,11 +465,11 @@ msgstr ""
 "스크립트 편집기의 상태 바에서 활성화된 GDScript 파일을 위한 경고 목록을 찾을 "
 "수 있습니다. 밑의 예제는 3개의 경고를 갖습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:339
 msgid "warning system example"
 msgstr "경고 시스템 예제"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:341
 msgid ""
 "To ignore specific warnings in one file, insert a special comment of the "
 "form ``# warning-ignore:warning-id``, or click on the ignore link to the "
@@ -482,11 +482,11 @@ msgstr ""
 "를 클릭하세요. Godot는 해당하는 줄 위에 주석을 추가해서 더 이상 해당 경고를 "
 "주지 않게 됩니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:350
 msgid "warning system ignore example"
 msgstr "경고 시스템 무시 예제"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:340
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:352
 msgid ""
 "You can also choose to ignore not just one but all warnings of a certain "
 "type in this file with ``# warning-ignore-all:warning-id``. To ignore all "
@@ -496,7 +496,7 @@ msgstr ""
 "니다. 주석은 ``# warning-ignore-all:경고-id``\\ 입니다. 파일에서 모든 유형의 "
 "모든 경고를 무시하려면 ``# warnings-disable`` 주석을 추가하면 됩니다."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:344
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:356
 msgid ""
 "Warnings won’t prevent the game from running, but you can turn them into "
 "errors if you’d like. This way your game won’t compile unless you fix all "
@@ -509,15 +509,15 @@ msgstr ""
 "설정의 ``GDScript`` 섹션으로 가서 이 설정을 킵니다. 이전 예제와 같은 파일로 "
 "경고가 오류로 바뀐 것입니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:353
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:365
 msgid "warnings as errors"
 msgstr "오류와 같은 경고"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:356
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:368
 msgid "Cases where you can’t specify types"
 msgstr "타입을 지정할 수 없는 경우"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:358
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:370
 msgid ""
 "To wrap up this introduction, let’s cover a few cases where you can’t use "
 "type hints. All the examples below **will trigger errors**."
@@ -525,17 +525,17 @@ msgstr ""
 "이 소개를 마무리하며, 타입형 힌트를 사용할 수 없는 몇 몇 경우를 알아봅시다. "
 "밑의 모든 예제는 **오류를 유발합니다**."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:361
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:373
 msgid "You can’t use Enums as types:"
 msgstr "열거형(Enum)을 타입으로 사용할 수 없습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:368
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:380
 msgid ""
 "You can’t specify the type of individual members in an array. This will give "
 "you an error:"
 msgstr "배열에서 각 멤버의 타입을 지정할 수 없습니다. 오류를 줄 것입니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:375
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:387
 msgid ""
 "You can’t force the assignment of types in a ``for`` loop, as each element "
 "the ``for`` keyword loops over already has a different type. So you "
@@ -545,15 +545,15 @@ msgstr ""
 "각 요소는 이미 다른 타입을 갖고 있기 때문입니다. 따라서 작성할 수 **없습니다"
 "**:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:385
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:397
 msgid "Two scripts can’t depend on each other in a cyclic fashion:"
 msgstr "두 개의 스크립트가 주기적으로 서로에게 의지할 수 없습니다:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:404
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:420
 msgid "Summary"
 msgstr "요약"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:406
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:422
 msgid ""
 "Typed GDScript is a powerful tool. Available as of version 3.1 of Godot, it "
 "helps you write more structured code, avoid common errors, and create "

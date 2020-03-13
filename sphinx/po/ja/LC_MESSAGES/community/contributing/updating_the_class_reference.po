@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -500,11 +500,11 @@ msgstr "クラスをリンクする"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Move the [Sprite]."
-msgstr "[Sprite] を動かす。"
+msgstr "[Sprite] へ移動。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Move the :ref:`class_sprite`."
-msgstr ":ref:`class_sprite` を動かす。"
+msgstr ":ref:`class_sprite` へ移動。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 msgid "[method methodname]"
@@ -516,12 +516,12 @@ msgstr "このクラスのメソッドへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 msgid "Call [method hide]."
-msgstr ""
+msgstr "[メソッド hide]を呼び出します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "See :ref:`hide <class_spatial_method_hide>`."
-msgstr ""
+msgstr ":ref:`hide <class_spatial_method_hide>` を参照してください。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "[method Class.methodname]"
@@ -533,7 +533,7 @@ msgstr "別のクラスのメソッドへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Call [method Spatial.hide]."
-msgstr ""
+msgstr "[メソッド Spatial.hide] を呼び出します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "[member membername]"
@@ -545,12 +545,12 @@ msgstr "このクラスのメンバーへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Get [member scale]."
-msgstr ""
+msgstr "[メンバー scale] を取得します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "Get :ref:`scale <class_node2d_property_scale>`."
-msgstr ""
+msgstr ":ref:`scale <class_node2d_property_scale>` を取得します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "[member Class.membername]"
@@ -562,7 +562,7 @@ msgstr "別のクラスのメンバーへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "Get [member Node2D.scale]."
-msgstr ""
+msgstr "[メンバーNode2D.scale] を取得します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "[signal signalname]"
@@ -574,12 +574,12 @@ msgstr "このクラスのシグナルへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Emit [signal renamed]."
-msgstr ""
+msgstr "[シグナル renamed] を発信します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Emit :ref:`renamed <class_node_signal_renamed>`."
-msgstr ""
+msgstr ":ref:`renamed <class_node_signal_renamed>` を発信します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "[signal Class.signalname]"
@@ -591,7 +591,7 @@ msgstr "別のクラスのシグナルへのリンク"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Emit [signal Node.renamed]."
-msgstr ""
+msgstr "[シグナル Node.renamed] を発信します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "[b] [/b]"
@@ -603,11 +603,11 @@ msgstr "太字"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Some [b]bold[/b] text."
-msgstr ""
+msgstr "部分的な [b]bold[/b] テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Some **bold** text."
-msgstr ""
+msgstr "部分的な **bold** テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "[i] [/i]"
@@ -619,11 +619,11 @@ msgstr "斜体"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Some [i]italic[/i] text."
-msgstr ""
+msgstr "部分的な [i]italic[/i] テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Some *italic* text."
-msgstr ""
+msgstr "部分的な *italic* テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:251
 msgid "[code] [/code]"
@@ -635,11 +635,11 @@ msgstr "モノスペース"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:251
 msgid "Some [code]monospace[/code] text."
-msgstr ""
+msgstr "部分的な [code]monospace[/code] テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:251
 msgid "Some ``monospace`` text."
-msgstr ""
+msgstr "部分的な ``monospace`` テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:253
 msgid "[codeblock] [/codeblock]"
@@ -651,7 +651,7 @@ msgstr "マルチラインプリフォーマットブロック"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:253
 msgid "*See below.*"
-msgstr ""
+msgstr "*下記参照。*"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid ""
