@@ -30,6 +30,7 @@
 # Bumerang <it.bumerang@gmail.com>, 2019.
 # Chaosus89 <chaosus89@gmail.com>, 2018-2019.
 # Constantin Moskvitin <cmoskvitin@gmail.com>, 2018.
+# d2cyb <dmitrydpb@gmail.com>, 2020.
 # Danil Alexeev <danil@alexeev.xyz>, 2018-2020.
 # Danil Semenov <semenoff.da2018@yandex.ru>, 2018-2019.
 # Dark King <damir@t1c.ru>, 2019.
@@ -41,10 +42,12 @@
 # Forest Swamp <sample1989@mail.ru>, 2018-2019.
 # George Linkovsky <krougz@live.ru>, 2018.
 # GetLocalPlayer <GetLocalPlayer@gmail.com>, 2018-2019.
+# GG <slenkor2016@gmail.com>, 2020.
 # gl <glorphindale+dev@gmail.com>, 2018.
 # ijet <my-ijet@mail.ru>, 2018.
 # Ivan Toropelov <chuchundra06@gmail.com>, 2018.
 # JackLite <jackkdlite@gmail.com>, 2018.
+# John <orozobakov96@gmail.com>, 2020.
 # jpVm5jYYRE1VIKL <fuxfwgc4a2i1gr@gmail.com>, 2019.
 # Kenta Akiyama <kentaakiyamagd@gmail.com>, 2018.
 # keryxified <keryxified@yandex.ru>, 2019.
@@ -65,7 +68,7 @@
 # Novikov Vladimir <valdemar.const@gmail.com>, 2018.
 # Omicron <omicron666.dev@gmail.com>, 2018.
 # Petr Kustov <zcaliptium@gmail.com>, 2018-2019.
-# Phoenix Emmerson <FeNikS.FenApp@gmail.com>, 2019.
+# Phoenix Emmerson <FeNikS.FenApp@gmail.com>, 2019-2020.
 # PJ <Montigor0@gmail.com>, 2019.
 # Ratmir Karabut <rkarabut@gmail.com>, 2019.
 # Ravager <al.porkhunov@gmail.com>, 2019.
@@ -89,6 +92,7 @@
 # Teashrock <kajitsu22@gmail.com>, 2019.
 # teriva <spirin.cos@yandex.ru>, 2018.
 # Vadim Ivshin <vadim.ivshin@gmail.com>, 2019.
+# Vinsent Insaider_red <vinsent.in7aider@gmail.com>, 2020.
 # Vitaly <arkology11@gmail.com>, 2019.
 # Vladimir Mishakov <twilightsoul.io@gmail.com>, 2019.
 # Vladislav <onion.ring@mail.ru>, 2019-2020.
@@ -105,6 +109,7 @@
 # Аслан Снупов <aslan170505@gmail.com>, 2018.
 # Виктор <victor8632@bk.ru>, 2019.
 # Влад Афонин (Midnightcoder) <afonin.com123@gmail.com>, 2018.
+# Владислав Строгонов <gannnku@gmail.com>, 2020.
 # Дарисон ДиДжей Младший <xd02-02@mail.ru>, 2019.
 # Дмитрий <Aress.87@mail.ru>, 2019.
 # Дмитрий Ефимов <daefimov@gmail.com>, 2018-2020.
@@ -128,8 +133,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-02-08 22:29+0100\n"
-"PO-Revision-Date: 2020-02-03 21:08+0000\n"
-"Last-Translator: kotelifelif <kel42@mail.ru>\n"
+"PO-Revision-Date: 2020-03-13 16:32+0000\n"
+"Last-Translator: Vinsent Insaider_red <vinsent.in7aider@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -138,7 +143,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -1009,19 +1014,16 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "Какой формат 3D моделей поддерживает Godot?"
 
 #: ../../docs/about/faq.rst:150
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Тем не менее, поддержка Collada от Godot действительно хороша. Пожалуйста, "
-"используйте экспортер `OpenCollada <https://github.com/KhronosGroup/"
-"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ для максимальной совместимости, если "
-"вы используете Maya или 3DS Max. Если вы используете Blender, ознакомьтесь с "
-"нашим собственным `Better Collada Exporter <https://godotengine.org/"
-"download>`_."
+"Godot поддерживает Collada через  `OpenCollada <https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter для Maya или "
+"3DSMax. Если вы используете Blender, ознакомьтесь с нашим собственным "
+"`Better Collada Exporter <https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
@@ -1033,6 +1035,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX поддерживается через Open Asset Import library. Однако FBX является "
+"проприетарным, поэтому мы рекомендуем использовать другие форматы, "
+"перечисленные выше, если они подходят для вашего рабочего процесса."
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -2266,7 +2271,6 @@ msgid "Modify the interface"
 msgstr "Изменение интерфейса"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
-#, fuzzy
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
@@ -2274,7 +2278,7 @@ msgid ""
 msgstr ""
 "Весь интерфейс Godot располагается в одном окне. Вы не можете разделить его "
 "на несколько экранов, но можете задействовать внешний редактор кода, "
-"например Atom или Visual Studio."
+"например Atom или Visual Studio Code."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:152
 msgid "Move and resize docks"
@@ -3689,13 +3693,13 @@ msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "Затем напишите функцию, которая будет вызываться при нажатии кнопки:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"И наконец, подключите сигнал \"pressed\" от кнопок к функции ``_ready()``, "
-"используя :ref:`Object.connect() <class_Object_method_connect>`."
+"И наконец, подключите сигнал кнопки: \"pressed\" к сигналу: "
+"``_on_Button_pressed()``, используя :ref:`Object.connect() "
+"<class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"
@@ -5291,7 +5295,6 @@ msgstr ""
 "``Path2D``, вы увидите несколько новых кнопок в верхней части редактора:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:676
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -5300,9 +5303,9 @@ msgid ""
 msgstr ""
 "Выберите среднюю (\"Добавить Точку\") и нарисуйте путь, щелкнув, чтобы "
 "добавить точки на указанные углы. Чтобы точки привязывались к сетке "
-"убедитесь, что пункт \"Привязывать к сетке\" включен. Эта опция может быть "
-"найдена под кнопкой \"Опции привязывания\", левее кнопки \"Закрепить\", в "
-"виде ряда из трёх вертикальных точек."
+"убедитесь, что пункт \"Привязывать к сетке\" включен.Эту опцию можно найти "
+"слева от кнопки \"Закрепить\", и она выглядит как магнит с несколькими "
+"пересекающимися линиями."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:683
 msgid ""
@@ -5966,7 +5969,6 @@ msgstr ""
 "move (клик и перемещение)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -5977,21 +5979,21 @@ msgid ""
 msgstr ""
 "По умолчанию Godot эмулирует ввод мыши из ввода тача. Это означает что все "
 "что закодировано на событие мыши, также будет вызываться на событие тача. "
-"Если вы хотите отключить такое поведение по какой-то причине, или "
-"эмулировать тач из ввода мыши, вы можете это сделать в \"Project Settings\" "
-"в *Input Devices* и *Pointing*"
+"Также Godot может эмулировать  ввод тача из щелчков мыши, что позволит нам "
+"продолжать играть в нашу игру на нашем компьютере после перехода на "
+"сенсорный ввод. В \"Project Settings\" под *Input Devices* и *Pointing*, "
+"установите *Emulate Touch From Mouse* на \"On\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:39
-#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to *Display*, then click on *Window*. "
 "In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
-"Прежде чем мы изменим метод ввода, в настройках проекта перейдите в "
-"*Display*, затем кликните на *Window*. В разделе *Stretch*, измените *Mode* "
-"на \"2d\" и *Aspect* на \"keep\". Теперь игра будет масштабироваться на "
-"экранах разных размеров."
+"Нам также надо убедиться, что игра будет корректно масштабироваться при "
+"разных размерах экрана, поэтому в настройках проекта перейдите в Экран, "
+"затем кликните на Окно. В разделе Растяжение, измените Режим на \"2d\" и "
+"Соотношение сторон на \"сохранить\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
 msgid ""
@@ -7578,16 +7580,15 @@ msgid "A game UI with a health bar, energy bar, bomb and money counters."
 msgstr "Игровой UI со шкалой здоровья и энергии, счетчиками бомб и денег."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`."
 msgstr ""
-"Вы научитесь разрабатывать UI эффективно, а так же использовать \"Узлы "
-"управления Godot\". Эта страница фокусируется на визуальной части: все что "
-"вы можете сделать с помощью редактора. Для того, чтобы научиться писать код "
-"для шкалы здоровья, читайте :doc:`ui_code_a_life_bar`"
+"Вы научитесь разрабатывать UI эффективно, а так же использовать узлы типа "
+"\"Control\". Эта страница фокусируется на визуальной части: все что вы "
+"можете сделать с помощью редактора. Для того, чтобы научиться писать код для "
+"шкалы здоровья, читайте :doc:`ui_code_a_life_bar`."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create."
@@ -7653,13 +7654,12 @@ msgstr ""
 "игроками. В противном случае:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
-#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
 "Слишком сильный упор на графику на этой стадии может исказить восприятие "
-"тестерами вашего интерфейса и вы лишитесь ценных отзывов"
+"игроками игрового процесса и вы лишитесь ценных отзывов"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
@@ -8101,12 +8101,12 @@ msgstr ""
 "инспектора и измените свойство ``Alignment`` на ``Center``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
-#, fuzzy
 msgid "The menu options should center vertically in the UI's left column."
-msgstr "MenuOption должен центрироваться по вертикали в левом столбце"
+msgstr ""
+"Пункты меню должны быть выровнены по центру по вертикали в левом столбце "
+"пользовательского интерфейса."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:263
-#, fuzzy
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the **Custom Constants** category below **Size Flags**, and click the "
@@ -8114,11 +8114,11 @@ msgid ""
 "enter, the **Separation** property becomes active and Godot adds 30 pixels "
 "between menu options."
 msgstr ""
-"Чтобы отодвинуть их друг от друга, давайте добавим некоторое разделение "
-"между параметрами меню. Разверните категорию ``Custom Constants``которая "
-"ниже ``Size Flags`` и щелкните на поле рядом с параметром ``Separation``. "
-"Установите его на 30. После нажатия клавиши Enter, свойство ``Separation`` "
-"становится активным и Godot добавляет 30 пикселей между MenuOptions."
+"Наконец, давайте добавим некоторое разделение между параметрами меню. "
+"Разверните категорию **Custom Constants** которая ниже **Size Flags** и "
+"щелкните на поле рядом с параметром **Separation**. Установите его на 30. "
+"После нажатия клавиши Enter, свойство **Separation** становится активным и "
+"Godot добавляет 30 пикселей между MenuOptions."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
 msgid "The final interface."
@@ -8179,7 +8179,6 @@ msgstr ""
 "все окно вверх и вниз."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:301
-#, fuzzy
 msgid ""
 "You can change the scale mode in the project settings: click **Project > "
 "Project Settings** in the top menu. In the window's left column, look for "
@@ -8189,10 +8188,11 @@ msgid ""
 "information, see :ref:`doc_multiple_resolutions`."
 msgstr ""
 "Вы можете изменить режим масштабирования в настройках проекта: выберите меню "
-"Проект-> Параметры проекта. В левом столбце найдите категорию Display. "
-"Нажмите на подкатегорию Window. В правой части окна вы найдете раздел "
-"Stretch. Три параметра, Mode, Aspect и Shrink управляют размером экрана. Для "
-"получения дополнительной информации см.: :ref:`doc_multiple_resolutions`."
+"**Проект > Настройки проекта**. В левом столбце найдите категорию **Экран**. "
+"Нажмите на под категорию **Окна**. В правой части окна вы найдете раздел "
+"**Растяжение**. Три параметра, **Режим**,** Aspect** и **Shrink** управляют "
+"размером экрана. Для получения дополнительной информации см.: :ref:"
+"`doc_multiple_resolutions`."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
 msgid "Design the GUI"
@@ -8571,7 +8571,6 @@ msgstr ""
 "контроль Count который является MarginContainer'ом"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
-#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -8585,14 +8584,14 @@ msgid ""
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
 "Выберите ``Title`` и в инспекторе, измените его ``Stretch Mode`` на ``Keep "
-"Centered``. Далее найдите категорию ``Rect`` в инспекторе и измените "
-"свойство ``Size`` на (50, 40), так что это займет только левую половину "
-"заднего фона.  Затем выберите узел ``Number``. В окне просмотра щелкните на "
+"Centered``. Далее найдите ``Rect`` в инспекторе и измените его свойство "
+"``Size`` на (50, 40), так что это займет только левую половину заднего "
+"фона.  Затем выберите узел ``Number``. В окне просмотра щелкните на "
 "``Layout`` и выберите ``Full Rect``. Размер узла будет изменен в "
 "соответствии с ``Background``. Отправляйтесь к инспектору и измените его "
 "свойство ``Align`` на ``Right`` и ``VAlign`` на ``Center``. Текст должен "
 "быть привязан к центру правого края ``Background``'a. Измените размер узла "
-"по горизонтали так, чтобы он занимал правую половину ``Background``'a и было "
+"по горизонтали так, чтобы он занимал правую половину ``Background`` и было "
 "немного отступа с правого края."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:195
@@ -8638,7 +8637,6 @@ msgstr ""
 "или``28``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
-#, fuzzy
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -8776,7 +8774,6 @@ msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr "Узлы привязаны ко всему Background'у, но их положение свободное"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -10681,18 +10678,16 @@ msgid "The keyframe will be added in the animation player editor:"
 msgstr "Ключевой кадр будет добавлен в редактор плеера анимации:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:64
-#, fuzzy
 msgid "Move the editor cursor forward in time by clicking here:"
-msgstr "Переместите курсор редактора в конец, щелкнув здесь:"
+msgstr "Переместите курсор вперед по временной шкале, щелкнув здесь:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:68
-#, fuzzy
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes with different values, the animation happens."
 msgstr ""
 "Измените положение логотипа на ``(118, 0)`` и добавьте ключевой кадр еще "
-"раз. С двумя ключевыми кадрами происходит анимация."
+"раз. С двумя ключевыми кадрами с разными значениями произойдет анимация."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:73
 msgid ""
@@ -10842,16 +10837,15 @@ msgstr ""
 "этот путь пуст, он станет встроенным ресурсом."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
-#, fuzzy
 msgid ""
 "The switch between built-in and external resources happens when you save the "
 "scene. In the example above, if you erase the path ``\"res://robi.png\"`` "
 "and save, Godot will save the image inside the ``.tscn`` scene file."
 msgstr ""
 "Переключение между встроенными и внешними ресурсами происходит при "
-"сохранении сцены. В приведенном выше примере, если вы удалите путь \\`"
-"\"res://robi.png\"\\` и сохраните, Godot сохранит изображение в файле сцены "
-"в формате .tscn."
+"сохранении сцены. В приведенном выше примере, если вы удалите путь ``\"res://"
+"robi.png\"`` и сохраните, Godot сохранит изображение в файле сцены в "
+"формате .tscn."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
 msgid ""
@@ -10908,18 +10902,16 @@ msgstr ""
 "`PackedScene.instance() <class_PackedScene_method_instance>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
-#, fuzzy
 msgid ""
 "This method creates the nodes in the scene's hierarchy, configures them, and "
 "returns the root node of the scene. You can then add it as a child of any "
 "other node."
 msgstr ""
 "Этот метод создает узлы в иерархии сцены, настраивает их и возвращает "
-"корневой узел сцены. Затем вы можете добавить его как дочернее устройство "
-"любого другого узла."
+"корневой узел сцены.Вы можете добавить его в качестве ребенка любого другого "
+"узла."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
-#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` function is fast, you can create new "
@@ -10930,8 +10922,8 @@ msgstr ""
 "Такой подход имеет ряд преимуществ. Поскольку функция :ref:`PackedScene."
 "instance() <class_PackedScene_method_instance>` работает довольно быстро, вы "
 "можете создавать новых врагов, пули, эффекты и т.д. без необходимости каждый "
-"раз загружать их с диска. Помните, что, как всегда, все изображения, сетки и "
-"т.д. делятся между экземплярами сцены."
+"раз загружать их с диска. Помните, что, как всегда, все изображения, "
+"полисетки, и т.д. являются общими для всех экземпляров сцены."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
 msgid "Freeing resources"
@@ -11070,7 +11062,6 @@ msgstr ""
 "ресурса."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
-#, fuzzy
 msgid ""
 "Resources and Dictionaries are both passed by reference, but only Resources "
 "are reference-counted. This means that if a Dictionary is passed between "
@@ -11078,24 +11069,23 @@ msgid ""
 "the Dictionary will be invalidated. Conversely, Resources will not be freed "
 "from memory until *all* the objects are deleted."
 msgstr ""
-"Ресурсы и Словари также отличаются тем, что они передаются по ссылке, но "
-"учитываются только Ресурсы. Это означает, что если Словарь передается между "
-"объектами, а первый объект удаляется, то переменная второго объекта будет "
-"признана недействительной. Это не так для Ресурсов, которые не освободят "
-"свою память, пока не исчезнут *все* экземпляры."
+"Ресурсы и Словари передаются по ссылке, но учитываются только Ресурсы. Это "
+"означает, что если Словарь передается между объектами и первый объект "
+"удаляется, то все ссылки других объектов на Словарь будут признаны "
+"недействительными. И наоборот, Ресурсы не будут освобождены из памяти до тех "
+"пор, пока не будут удалены все объекты."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr "Godot облегчает создание пользовательских ресурсов в Инспекторе."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:217
-#, fuzzy
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
 msgstr ""
-"Создайте простой объект Ресурс в Инспекторе. Это может быть даже тип, "
-"производный от Ресурса, пока ваш скрипт расширяет этот тип."
+"Создайте простой объект ресурса в Инспекторе. Это может быть даже тип, "
+"производный от ресурса, если сценарий расширяет этот тип."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:218
 msgid "Set the ``script`` property in the Inspector to be your script."
@@ -11159,12 +11149,11 @@ msgstr ""
 "вторичным пользовательским сценарием ресурса."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:345
-#, fuzzy
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr ""
-"Вместо того, чтобы просто подчеркивать значения Словаря, можно также, в "
+"Вместо того, чтобы просто подставлять значения словаря, можно также, в "
 "качестве альтернативы..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:347
@@ -11185,14 +11174,13 @@ msgstr ""
 "добавит его в Инспектор, когда вы откроете такие типы ресурсов."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
-#, fuzzy
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
-"То же самое можно сказать и о таблицах CurveTables, за исключением "
-"отображения в Массив плавающих значений или ресурса объекта :ref:`Curve "
-"<class_Curve>`/:ref:`Curve2D <class_Curve2D>."
+"CurveTables - это то же самое, за исключением сопоставления с массивом "
+"значений с плавающей запятой или ресурсным объектом :ref:`Curve "
+"<class_Curve>`/:ref:`Curve2D <class_Curve2D>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:357
 msgid ""
@@ -11333,13 +11321,12 @@ msgstr ""
 "специальный путь ``res://``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
-#, fuzzy
 msgid ""
 "The path ``res://`` will always point at the project root (where project."
 "godot is located, so ``res://project.godot`` is always valid)."
 msgstr ""
 "Путь ``res://`` всегда будет указывать на корень проекта (где расположен "
-"project.godot, поэтому путь  ``res://project.godot`` всегда верен)."
+"project.godot, поэтому путь ``res://project.godot`` всегда будет верным)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
 msgid ""
@@ -17386,6 +17373,9 @@ msgid ""
 "a global type in your project using this feature. For more information, see :"
 "ref:`doc_gdscript`."
 msgstr ""
+"При необходимости используйте `class_name`. С помощью этого свойства вы "
+"можете превратить файл GDScript в глобальный тип вашего проекта. Для "
+"получения дополнительной информации см.:ref:`doc_gdscript`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:548
 msgid "Then, add the `extends` keyword if the class extends a built-in type."
@@ -17460,12 +17450,17 @@ msgid ""
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
 "Godot calls when it adds a node to the scene tree."
 msgstr ""
+"Начните с метода обратного вызова ``_init()``, который будет вызван движком "
+"при создании объекта в памяти. Затем следует обратный вызов `` _ready () ``, "
+"который Godot вызывает при добавлении узла в дерево сцены."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:608
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
 msgstr ""
+"Эти функции должны следовать первыми, так как они показывают, как "
+"инициализируется объект."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:611
 msgid ""
@@ -20189,10 +20184,13 @@ msgstr ""
 "vscode.csharp>`_ для включения подсветки синтаксиса и IntelliSense."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
+#, fuzzy
 msgid ""
 "If you are using Visual Studio 2019, you must follow the instructions found "
 "in the \"Configure VS2019 for Debugging\" section below."
 msgstr ""
+"Если вы используете Visual Studio 2019, вам необходимо следовать "
+"инструкциям, приведенным в разделе «Настройка VS2019 для отладки» ниже."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:103
 msgid "Creating a C# script"
@@ -21469,6 +21467,8 @@ msgid ""
 "Use one line feed character at the end of each file, except for `csproj` "
 "files."
 msgstr ""
+"Используйте один символ перевода строки в конце каждого файла, за "
+"исключением `csproj` файлов."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:38
 msgid ""

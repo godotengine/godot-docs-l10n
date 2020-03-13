@@ -8,6 +8,7 @@
 # Erwin <erwinschmidt@gmail.com>, 2018.
 # Filip Van Raemdonck <arrawn@gmail.com>, 2019.
 # frank <frankvprive@gmail.com>, 2018.
+# Freek De Sagher <freek.desagher@student.uantwerpen.be>, 2020.
 # Gaetan Deglorie <sharkithepointed@gmail.com>, 2018-2019.
 # jaron maene <jaron.maene@gmail.com>, 2018.
 # jef dered <themen098s@vivaldi.net>, 2019.
@@ -27,8 +28,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-02-08 22:29+0100\n"
-"PO-Revision-Date: 2020-01-28 07:52+0000\n"
-"Last-Translator: Julian <jdhoogvorst@gmail.com>\n"
+"PO-Revision-Date: 2020-03-13 16:33+0000\n"
+"Last-Translator: Stijn Hinlopen <f.a.hinlopen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/nl/>\n"
 "Language: nl\n"
@@ -36,7 +37,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -909,7 +910,6 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "Wat voor soort 3D-model formaten ondersteunt Godot?"
 
 #: ../../docs/about/faq.rst:150
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
@@ -917,7 +917,9 @@ msgid ""
 "godotengine.org/download>`_."
 msgstr ""
 "Godot ondersteunt Collada via de `OpenCollada <https://github.com/"
-"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_exporteur (Maya, 3DSMax)."
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_exporteur (Maya, 3DSMax). "
+"Indien je Blender gebruikt, kijk eens naar onze eigen 'Better Collada "
+"Exporter <https://godotengine.org/download>'`_."
 
 #: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
@@ -929,6 +931,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX wordt ondersteund via de Open Asset Import bibliotheek. FBX is echter "
+"privé-eigendom. Daarom raden we aan de formaten te gebruiken die hierboven "
+"opgelijst zijn als dit mogelijk is voor uw manier van werken."
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -1554,14 +1559,12 @@ msgid "VR"
 msgstr "Virtuele realiteit"
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr ":ref:`VR inleiding <doc_vr_starter_tutorial>`"
+msgstr ":ref:`Inleiding VR <doc_vr_starter_tutorial_part_one>`"
 
 #: ../../docs/about/docs_changelog.rst:66
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr ":ref:`VR inleiding <doc_vr_starter_tutorial>`"
+msgstr ":ref:`Inleiding VR - Deel 2 <doc_vr_starter_tutorial>`"
 
 #: ../../docs/about/docs_changelog.rst:69
 #: ../../docs/about/docs_changelog.rst:183
@@ -1934,25 +1937,23 @@ msgid "Project manager"
 msgstr "Project manager"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
 "Wanneer je Godot start, is de Project Manager het eerste venster dat je te "
-"zien krijgt. Het laat je toe om spelprojecten te maken, verwijderen, "
-"importeren of spelen."
+"zien krijgt. Aangezien je nog geen projecten hebt, zal er een popup "
+"verschijnen die vraagt of je de Asset Library wilt openen. Klik op "
+"annuleren, we bekijken dit later."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
-#, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"Wanneer je Godot start, is de Project Manager het eerste venster dat je te "
-"zien krijgt. Het laat je toe om spelprojecten te maken, verwijderen, "
-"importeren of spelen."
+"Nu zou je de Project Manager moeten zien. Hier kan je game projecten "
+"aanmaken, verwijderen, importeren of spelen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
@@ -1963,7 +1964,6 @@ msgstr ""
 "editor te wijzigen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -1972,16 +1972,16 @@ msgid ""
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
 "Vanaf het tabblad **Sjablonen** kun je open source projectsjablonen en "
-"demo's downloaden om sneller van start te gaan. Selecteer gewoon de sjabloon "
-"of demo die je wenst, klik op download, klik op installeren zodra het klaar "
-"is met downloaden en kies waar het project moet bewaard worden."
+"demo's downloaden van de Asset Library om sneller van start te gaan. "
+"Selecteer gewoon de sjabloon of demo die je wenst, klik op download, klik op "
+"installeren zodra het klaar is met downloaden en kies waar het project moet "
+"bewaard worden. Je kan hier meer over lezen in :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
 msgstr "Een project aanmaken of importeren"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
@@ -1989,7 +1989,7 @@ msgid ""
 msgstr ""
 "Klik rechts op de knop ``Nieuw project`` om een nieuw project aan te maken. "
 "Geef het project een naam en kies een lege map op de computer om het op te "
-"slaan."
+"slaan en selecteer een renderer."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
@@ -2000,7 +2000,6 @@ msgstr ""
 "locatie te kiezen of typ het pad van de map in het veld Projectpad."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
-#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
@@ -2008,8 +2007,9 @@ msgid ""
 "project."
 msgstr ""
 "Als je het groene vinkje aan de rechterkant ziet, betekent dit dat de engine "
-"een lege map detecteert en kan je klikken op ``Maken``. Godot zal het "
-"project voor je aanmaken en openen in de editor."
+"een lege map detecteert. Je kan ook klikken op de 'Maak map' knop naast de "
+"naam van je project. Een lege map zal aangemaakt worden met de naam voor het "
+"project."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
 #, fuzzy
@@ -2028,23 +2028,20 @@ msgstr ""
 "deze zelfstudie is elk van beide backend's geschikt."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"Als je het groene vinkje aan de rechterkant ziet, betekent dit dat de engine "
-"een lege map detecteert en kan je klikken op ``Maken``. Godot zal het "
-"project voor je aanmaken en openen in de editor."
+"Klik op 'Maak en bewerk' van zodra je klaar bent. Godot zal een project voor "
+"jou aanmaken en zal het openen in de editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"De volgende keer dat je Godot opent, zie je het nieuwe project in de lijst. "
-"Dubbelklik erop om het te openen in de editor."
+"De volgende keer dat je de project manager opent, zie je het nieuwe project "
+"in de lijst. Dubbelklik erop om het te openen in de editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -2065,12 +2062,12 @@ msgid "Your first look at Godot’s editor"
 msgstr "Je eerste blik op Godots editor"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with empty docks on the right side."
 msgstr ""
-"Nu zou je deze interface moeten zien, met lege docks aan de rechterkant."
+"Welkom bij Godot! Als je project geopend is, zou je de editor "
+"gebruikersomgeving moeten zien met lege tabbladen aan de rechterkant."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -2081,13 +2078,12 @@ msgstr ""
 "**workspaces**, en de **playtest buttons** zien."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
-#, fuzzy
 msgid ""
 "On the bottom left side, you have the **FileSystem dock**, where you’ll "
 "manage your project files and assets."
 msgstr ""
-"Links vind je de **FileSystem dock**, waar je je projectbestanden en assets "
-"beheert."
+"Onderaan aan de linkerkant vind je de **Bestandssysteemtabblad**, waar je je "
+"projectbestanden en assets kunt beheren."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
@@ -2147,13 +2143,12 @@ msgstr ""
 "spellen. Druk op F3 om er naartoe te wisselen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
 msgstr ""
-"Merk ook de [Perspectief] knop op onder de werkbalk, deze laat je toe om een "
-"optielijst voor het 3D venster te tonen."
+"Merk ook de ``Perspectief`` knop op onder de werkbalk, deze opent een lijst "
+"met opties met betrekking tot het 3D aanzicht."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""
@@ -2186,14 +2181,13 @@ msgid "Modify the interface"
 msgstr "De omgeving personaliseren"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
-#, fuzzy
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio Code for instance."
 msgstr ""
 "De Godot gebruiksomgeving is beperkt tot één venster. Je kan het niet "
-"opsplitsen in meerdere venster, maar je kan bijvoorbeeld wel een externe "
+"opsplitsen in meerdere vensters, maar je kan bijvoorbeeld wel een externe "
 "programmacode editor configureren zoals Atom of Visual Studio."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:152
@@ -2465,16 +2459,15 @@ msgstr ""
 "knooppunt of Node2D nodig als hoofdknooppunt."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
-#, fuzzy
 msgid ""
 "Now, to add a label node to this scene you can click on the Custom Node "
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
-"Om nu een label knooppunt aan deze scène toe te voegen, kan je klikken op de "
-"knop \"Custom Node\" ofwel op de knop \"Kinderknooppunt toevoegen\" bovenaan "
-"het scène-dock. In scènes die niet leeg zijn, gebruik je de kinderknooppunt-"
-"knop om bijkomende knopen aan te maken."
+"Om nu een ``Label`` knoop aan deze scène toe te voegen, klik je op de knop "
+"``Andere knoop`` of bovenaan op de knop om een knoop toe te voegen. In "
+"scènes die niet leeg zijn, gebruik je de laatste knop om bijkomende knopen "
+"aan te maken."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
 msgid ""
@@ -72945,7 +72938,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:70
 msgid "Run"
-msgstr "Opstarten"
+msgstr "Uitvoeren"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:72
 msgid ""

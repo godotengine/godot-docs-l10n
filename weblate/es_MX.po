@@ -8,6 +8,7 @@
 # Andy A. Jesús Ramos <c-acola@hotmail.com>, 2019.
 # Api Api dev <apidev1@hotmail.com>, 2018-2020.
 # Carlos Miranda <carlosandrmiranda@gmail.com>, 2019.
+# Enzo Acosta <3okokokrata@gmail.com>, 2020.
 # Gato Wormius <gatowormius@gmail.com>, 2018.
 # Gerardo Gonzalez <gerardogc2378@gmail.com>, 2019.
 # Isaac Díaz <isaacovic00@gmail.com>, 2020.
@@ -32,8 +33,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-02-08 22:29+0100\n"
-"PO-Revision-Date: 2020-02-02 08:55+0000\n"
-"Last-Translator: Api Api dev <apidev1@hotmail.com>\n"
+"PO-Revision-Date: 2020-03-01 05:53+0000\n"
+"Last-Translator: Enzo Acosta <3okokokrata@gmail.com>\n"
 "Language-Team: Spanish (Mexico) <https://hosted.weblate.org/projects/godot-"
 "engine/godot-docs/es_MX/>\n"
 "Language: es_MX\n"
@@ -41,20 +42,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #: ../../docs/index.rst:2
+#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Documentacion de Godot - rama *principal*"
+msgstr "Documentación de Godot - Rama *master*"
 
 #: ../../docs/index.rst:6
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"La documentación de Godot esta disponible en diferentes lenguajes y "
-"distintas versiones. Expande la opción \"Leer Documentos\" en el panel al "
-"final de la barra lateral para ver la lista."
+"La documentación de Godot está disponible en varios idiomas y versiones. "
+"Expande el panel inferior de la barra lateral \"Read the Docs\" para ver la "
+"lista."
 
 #: ../../docs/index.rst:10
 msgid ""
@@ -107,10 +109,10 @@ msgid ""
 "offer."
 msgstr ""
 "Bienvenido a la documentación oficial de Godot Engine, el motor de "
-"videojuegos 2d y 3d gratuito y de código abierto dirigido por la comunidad! "
-"Si es la primera vez en entrar en la documentación, te recomendamos leer la :"
-"ref:`página de Introducción <doc_about_intro>` para tener una idea de lo que "
-"esta documentación le tiene a tu disposición."
+"videojuegos 2D y 3D gratuito y de código abierto dirigido por la comunidad! "
+"Si es la primera vez que visitas la documentación, te recomendamos leer la :"
+"ref:`página de introducción <doc_about_intro>` para tener una idea de lo que "
+"ésta tiene para ofrecer."
 
 #: ../../docs/index.rst:34
 msgid ""
@@ -119,9 +121,9 @@ msgid ""
 "function in the top left corner."
 msgstr ""
 "La tabla de contenidos en la parte superior y el menú lateral debería "
-"permitirle tener un acceso sencillo a la documentación para visualizar su "
-"tema de interés. También puede usar la función de búsqueda en la esquina "
-"superior izquierda."
+"permitirte tener un acceso sencillo a la documentación del tema de tu "
+"interés. También puedes usar la función de búsqueda en la esquina superior "
+"izquierda."
 
 #: ../../docs/index.rst:38
 msgid ""
@@ -273,10 +275,10 @@ msgid ""
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
 "Bienvenido a la documentación oficial de Godot Engine, ¡El motor de "
-"vídeojuegos 2D y 3D gratuito y de código abierto dirigido por la comunidad! "
-"Detrás de estas palabras, encontrará una herramienta poderosa pero fácil de "
-"usar que puede usar para desarrollar cualquier tipo de juego, para cualquier "
-"plataforma y sin restricción de uso alguna."
+"videojuegos 2D y 3D gratuito y de código abierto dirigido por la comunidad! "
+"Detrás de este apartado, encontraras una poderosa y amigable herramienta que "
+"puedes usar para desarrollar todo tipo de juego, para cualquier plataforma y "
+"sin ninguna restricción de uso."
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -978,8 +980,8 @@ msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
-"Para ver cómo aún se puede proporcionar el soporte para su SDK de elección, "
-"consulte la pregunta sobre complementos a continuación."
+"Para ver cómo se puede seguir brindando soporte para su SDK de elección, "
+"consulte la pregunta de complementos abajo."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -1067,7 +1069,7 @@ msgid ""
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
 "Determine una resolución mínima y luego decida si desea que su juego se "
-"extienda vertical u horizontalmente para diferentes relaciones de aspecto, o "
+"estire vertical u horizontalmente para diferentes relaciones de aspecto, o "
 "si hay una relación de aspecto y desea que aparezcan barras negras en su "
 "lugar. Esto también se explica en :ref:`doc_multiple_resolutions`."
 
@@ -5116,9 +5118,8 @@ msgstr ""
 "propiedad \"Rotation Degrees\" a \"90\" del \"Node2d\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:559
-#, fuzzy
 msgid "Enemy script"
-msgstr "Script del Enemigo"
+msgstr "Código del enemigo"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:561
 msgid "Add a script to the ``Mob`` and add the following member variables:"
@@ -5141,43 +5142,39 @@ msgstr ""
 "para elegir una al azar."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:593
-#, fuzzy
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we randomly choose "
 "one of the three animation types:"
 msgstr ""
-"Ahora veamos el resto del script. En la función \"_ready\" elegimos "
-"aleatoria mente uno de los tres tipos de animación:"
+"Ahora veamos el resto del script. En la función ``_ready()`` elegimos al "
+"azar uno de los tres tipos de animación:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:612
-#, fuzzy
 msgid ""
 "You must use ``randomize()`` if you want your sequence of \"random\" numbers "
 "to be different every time you run the scene. We're going to use "
 "``randomize()`` in our ``Main`` scene, so we won't need it here. ``randi() % "
 "n`` is the standard way to get a random integer between ``0`` and ``n-1``."
 msgstr ""
-"Debes usar \"randomize()\" si quieres que la secuencia de números "
-"\"aleatorios\" sea diferente cada ves que ejecutas la escena. Usaremos "
-"\"randomize()\" en la escena \"Main\", así que no lo necesitaremos aquí. "
-"\"randi() % n\" es la forma estándar de obtener un numero aleatorio entre "
-"\"0\" y \"n - 1\"."
+"Debes usar ``randomize()`` si quieres que la secuencia de números "
+"\"aleatorios\" sea diferente cada vez que ejecutas la escena. Usaremos "
+"``randomize()`` en la escena ``Main``, así que no lo necesitaremos aquí. "
+"``randi() % n`` es la forma estándar de obtener un número aleatorio entre "
+"``0`` y ``n-1``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:618
-#, fuzzy
 msgid ""
 "The last piece is to make the mobs delete themselves when they leave the "
 "screen. Connect the ``screen_exited()`` signal of the ``Visibility`` node "
 "and add this code:"
 msgstr ""
 "La ultima parte es hacer que los enemigos se eliminen ellos mismos cuando "
-"salgan de la escena. Conecta la señal \"screen_exited()\" del nodo "
-"\"Visibility\" y agrega este codigo:"
+"salgan de la escena. Conecta la señal ``screen_exited()`` del nodo "
+"``Visibility`` y agrega este código:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:635
-#, fuzzy
 msgid "This completes the `Mob` scene."
-msgstr "Esto completa la escena \"Mob\"."
+msgstr "Esto completa la escena `Mob`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:638
 msgid "Main scene"

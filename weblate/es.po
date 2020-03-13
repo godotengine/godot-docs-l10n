@@ -11,6 +11,7 @@
 # Alejandro Gil <Alejandrogil497@gmail.com>, 2019.
 # Alejo <patto.revuelto@gmail.com>, 2018.
 # Alvaro García <alvarofernandogarcia@gmail.com>, 2019.
+# Anderson Guzman Abreu <chicobello1111@gmail.com>, 2020.
 # Andrés Godoy <andresgg.games@gmail.com>, 2020.
 # Andrus Diaz German <andrusdiazaleman@gmail.com>, 2018.
 # Ángel Sillero Navajas <xenmai95@gmail.com>, 2019.
@@ -48,6 +49,7 @@
 # Hernan Prado <pradoh97@gmail.com>, 2018.
 # Hisonic <nosoyhackercodigo@gmail.com>, 2018.
 # Jaja No <jordydumbledore@gmail.com>, 2019.
+# Javier Leonardo Cerón Puentes <javierleonardoceron@gmail.com>, 2020.
 # Javier López Úbeda <jlopezcur@gmail.com>, 2018.x
 # Javier Meza <javenmeza@gmail.com>, 2019.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2018-2020.
@@ -70,6 +72,7 @@
 # Kevin S Mojica <keffspace@gmail.com>, 2018.
 # Kevin Soto Vallejo <siguemek@gmail.com>, 2018.
 # korge Rodriguez <jorge.3dcomv@gmail.com>, 2018.
+# LocoUnPocoNadaMas <dkno_c1@hotmail.com>, 2020.
 # LuisHerasme <luis.alberto.herasme.cuevas@gmail.com>, 2019.
 # Marcos Yeguez <marcos2687@gmail.com>, 2019.
 # Max R.R. Collada <mrdguezc@gmail.com>, 2018.
@@ -92,7 +95,7 @@
 # SI Silicon <sisilicon28@gmail.com>, 2018.
 # Vi <invalid.float@gmail.com>, 2018.
 # Victor Tisnado <vtisnado@gmail.com>, 2019.
-# yaelatletl <yael.atletl@gmail.com>, 2018.
+# yaelatletl <yael.atletl@gmail.com>, 2018, 2020.
 # Yovani Damián <blackblex@gmail.com>, 2018.
 #
 msgid ""
@@ -100,8 +103,9 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-02-08 22:29+0100\n"
-"PO-Revision-Date: 2020-02-07 10:33+0000\n"
-"Last-Translator: Julián Luini <jluini@gmail.com>\n"
+"PO-Revision-Date: 2020-03-13 16:33+0000\n"
+"Last-Translator: Javier Leonardo Cerón Puentes <javierleonardoceron@gmail."
+"com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -109,7 +113,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -989,18 +993,16 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "¿Qué tipo de formatos para modelos 3D soporta Godot?"
 
 #: ../../docs/about/faq.rst:150
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Dicho esto, el soporte de Collada en Godot es bueno, por favor usa el "
-"exportador `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
-"OpenCOLLADA-Tools>`_ para una máxima compatibilidad si estás usando Maya o "
-"3DS Max. Si estás usando Blender, echa un vistazo a nuestro `Exportador "
-"mejorado de Collada <https://godotengine.org/download>`_."
+"Godot soporta Collada a través de `OpenCollada <https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ (Maya, 3DS Max). Si estás "
+"usando Blender, echa un vistazo a nuestro `Exportador mejorado de Collada "
+"<https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
@@ -1012,6 +1014,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX es compatible a través de la biblioteca Open Asset Import. Sin embargo, "
+"FBX es propietario, por lo que recomendamos utilizar otros formatos "
+"enumerados anteriormente, si son idóneos para su flujo de trabajo."
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -2247,13 +2252,12 @@ msgid "Modify the interface"
 msgstr "Modificando la interfaz"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
-#, fuzzy
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio Code for instance."
 msgstr ""
-"La interfaz de Godot se encuentra en una ventana única. No se puede separar "
+"La interfaz de Godot se encuentra en una ventana única. No puedes separarla "
 "en múltiples pantallas pero se puede trabajar con editor de código externo "
 "como por ejemplo Atom o Visual Studio."
 
@@ -3682,13 +3686,13 @@ msgstr ""
 "A continuación, escribe una función que se llamará cuando se pulse el botón:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"Finalmente, conecta la señal \"pressed\" del botón a ``_ready()`` "
-"utilizando :ref:`Object.connect() <class_Object_method_connect>`."
+"Finalmente, conecta la señal \"pressed\" del botón a "
+"``_on_Button_pressed()`` utilizando :ref:`Object.connect() "
+"<class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"
@@ -6252,7 +6256,6 @@ msgstr ""
 "claves que acabas de crear."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:347
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
@@ -6260,8 +6263,8 @@ msgid ""
 msgstr ""
 "Ahora ya estás listo para exportar. Haz clic en *Proyecto -> Exportar* y "
 "añade un preajuste para Android (ver arriba). Selecciona el preajuste de "
-"Android, y a continuacion, bajo *Opciones*, haz clic en *Screen* y cambia la "
-"*Orientación* a *Retrato*."
+"Android, y a continuacion, bajo *Opciones*, haz clic en *Pantalla* y cambia "
+"la *Orientación* a *Retrato*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:351
 msgid ""
@@ -8063,7 +8066,7 @@ msgstr "Nos quedan dos problemas por resolver:"
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
 #, fuzzy
 msgid "The characters on the right aren't centered."
-msgstr "Los elementos de la derecha no están centrados"
+msgstr "Los caracteres de la derecha no están centrados."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
 msgid "There's no space between the logo and the other UI elements."
@@ -8118,13 +8121,12 @@ msgstr ""
 "cambiar, si es que lo hace."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
 msgstr ""
-"Coloca el nuevo container entre los otros dos nodos para mantener la "
-"disposición de la UI"
+"Coloca el nuevo contenedor entre los otros dos nodos para mantener la "
+"disposición de la UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:248
 #, fuzzy
@@ -22248,7 +22250,7 @@ msgstr "No hay diferencia entre buffer shadow y ray shadow en la exportación."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr "Mesh"
+msgstr "Malla"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -90057,7 +90059,7 @@ msgstr "Enlazar a una clase"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Move the [Sprite]."
-msgstr ""
+msgstr "Mover el [Sprite]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Move the :ref:`class_sprite`."
@@ -90072,8 +90074,9 @@ msgid "Link to a method in this class"
 msgstr "Enlazar a un método de esta clase"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
+#, fuzzy
 msgid "Call [method hide]."
-msgstr ""
+msgstr "Llamar [metodo ocultar]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
@@ -90082,27 +90085,30 @@ msgstr "Ver :ref:`hide <class_spatial_method_hide>`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "[method Class.methodname]"
-msgstr ""
+msgstr "[método Clase.nombremetodo]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Link to another class's method"
-msgstr ""
+msgstr "Enlace al método de otra clase"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#, fuzzy
 msgid "Call [method Spatial.hide]."
-msgstr ""
+msgstr "Llamar [método Spacial.ocultar]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#, fuzzy
 msgid "[member membername]"
-msgstr ""
+msgstr "[miembro nombremiembro]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Link to a member in this class"
 msgstr "Enlazar a un miembro de esta clase"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#, fuzzy
 msgid "Get [member scale]."
-msgstr ""
+msgstr "Obtener [miembro escala]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
@@ -90110,8 +90116,9 @@ msgid "Get :ref:`scale <class_node2d_property_scale>`."
 msgstr "Get :ref:`scale <class_node2d_property_scale>`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#, fuzzy
 msgid "[member Class.membername]"
-msgstr ""
+msgstr "[miembro Clase.nombremiembro]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "Link to another class's member"
@@ -90160,7 +90167,7 @@ msgstr "Negrita"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Some [b]bold[/b] text."
-msgstr ""
+msgstr "Un texto en [b]negrita[/b]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Some **bold** text."
@@ -90176,7 +90183,7 @@ msgstr "Cursiva"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Some [i]italic[/i] text."
-msgstr ""
+msgstr "Un texto en [i]cursiva[/i]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Some *italic* text."
@@ -90192,7 +90199,7 @@ msgstr "Monospace"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:251
 msgid "Some [code]monospace[/code] text."
-msgstr ""
+msgstr "Un texto [code]monoespaciado[/code]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:251
 msgid "Some ``monospace`` text."
@@ -90256,6 +90263,8 @@ msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 msgstr ""
+"La documentación se puede traducir en cualquier idioma en `Hosted Weblate "
+"<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:289
 msgid ""
@@ -90263,6 +90272,9 @@ msgid ""
 "`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`__ "
 "repository."
 msgstr ""
+"Los encargados de la documentación sincronizan las cadenas traducidas "
+"manualmente en el repositorio `godot-docs-l10n <https://github.com/"
+"godotengine/godot-docs-l10n>`__."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:293
 msgid ""
@@ -90382,33 +90394,36 @@ msgstr ""
 "`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
 
 #: ../../docs/community/channels.rst:35
-#, fuzzy
 msgid "Language-based communities"
-msgstr "Gran comunidad"
+msgstr "Comunidades basadas en lenguajes"
 
 #: ../../docs/community/channels.rst:37
 msgid ""
 "Brazilian Portuguese: `Godot Brasil (Discord) <https://discord.gg/gWmQKBv>`_"
 msgstr ""
+"Portugués brasileño: `Godot Brasil (Discord) <https://discord.gg/gWmQKBv>`_"
 
 #: ../../docs/community/channels.rst:38
 msgid ""
 "French: `Godot Francophone Officiel (Discord) <https://discord.gg/3jvf3XN>`_"
 msgstr ""
+"Francés: `Godot Francophone Officiel (Discord) <https://discord.gg/3jvf3XN>`_"
 
 #: ../../docs/community/channels.rst:39
 msgid "French: `SoloCode Godot (Discord) <https://discord.gg/gZ3QJ5T>`_"
-msgstr ""
+msgstr "Francés: `SoloCode Godot (Discord) <https://discord.gg/gZ3QJ5T>`_"
 
 #: ../../docs/community/channels.rst:40
 msgid ""
 "German: `Deutsche Godot Community (Discord) <https://discord.gg/Tr7Ma6E>`_"
 msgstr ""
+"Alemán: `Deutsche Godot Community (Discord) <https://discord.gg/Tr7Ma6E>`_"
 
 #: ../../docs/community/channels.rst:41
 msgid ""
 "Swedish: `Swedish Godot Community (Discord) <https://discord.gg/6ZsgWmH>`_"
 msgstr ""
+"Sueco: `Comunidad Sueca de Godot (Discord) <https://discord.gg/6ZsgWmH>`_"
 
 #: ../../docs/community/channels.rst:44
 msgid "Social networks"
@@ -90459,6 +90474,12 @@ msgid ""
 "<https://www.reddit.com/r/godot/comments/an0iq5/"
 "godot_tutorials_list_of_video_and_written/>`_."
 msgstr ""
+"Esta es una lista de tutoriales y recursos de terceros creados por la "
+"comunidad de Godot. Para recursos, recuerde que existe la `Godot Asset "
+"Library <https://godotengine.org/asset-library/asset>` _ ¡llena de recursos "
+"oficiales y comunitarios también! Además eche un vistazo a esta `gran lista "
+"en Reddit <https://www.reddit.com/r/godot/comments/an0iq5/"
+"godot_tutorials_list_of_video_and_written/>`_."
 
 #: ../../docs/community/tutorials.rst:8
 msgid ""
@@ -90466,10 +90487,13 @@ msgid ""
 "<https://github.com/godotengine/godot-docs/blob/master/community/resources."
 "rst>`_ as always."
 msgstr ""
+"¿Crees que falta algo aquí? No dude en enviar una `Pull Request <https://"
+"github.com/godotengine/godot-docs/blob/master/community/resources.rst>`_ "
+"como siempre."
 
 #: ../../docs/community/tutorials.rst:11
 msgid "Where to start"
-msgstr ""
+msgstr "Donde empezar"
 
 #: ../../docs/community/tutorials.rst:13
 msgid ""
@@ -90480,18 +90504,29 @@ msgid ""
 "playlists>`_ are well-regarded in the community and often recommended as a "
 "gentle introduction to beginners."
 msgstr ""
+"Los tutoriales en video de Godot de `GDQuest <https://www.youtube.com/"
+"channel/UCxboW7x0jZqFdvMdCFKTMsQ/playlists>`_, `Game from Scratch <https://"
+"www.youtube.com/watch?"
+"v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_ y` KidsCanCode "
+"<https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/playlists>`_ son "
+"bien considerados en la comunidad y a menudo se recomiendan como una "
+"introducción suave para los principiantes."
 
 #: ../../docs/community/tutorials.rst:15
 msgid ""
 "If you're interested in Visual Scripting, `Emilio's tutorials <https://www."
 "youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ may be worth a look."
 msgstr ""
+"Si está interesado en Visual Scripting, los `tutoriales de Emilio <https://"
+"www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ pueden valer la pena."
 
 #: ../../docs/community/tutorials.rst:17
 msgid ""
 "Some of the others mentioned below provide more advanced tutorials, e.g. on "
 "3D or shaders."
 msgstr ""
+"Algunos de los otros mencionados a continuación proporcionan tutoriales más "
+"avanzados, pj.: en 3D o sombreadores."
 
 #: ../../docs/community/tutorials.rst:20
 msgid "Video tutorials"
@@ -90499,7 +90534,7 @@ msgstr "Vídeo tutoriales"
 
 #: ../../docs/community/tutorials.rst:22
 msgid "`Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_"
-msgstr ""
+msgstr "`Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_"
 
 #: ../../docs/community/tutorials.rst:23
 msgid ""
@@ -90537,9 +90572,9 @@ msgstr ""
 msgid ""
 "`Jeremy Bullock <https://www.youtube.com/channel/UCwJw2-V5S1TkBjLQ3_Ws54g>`_"
 msgstr ""
+"`Jeremy Bullock <https://www.youtube.com/channel/UCwJw2-V5S1TkBjLQ3_Ws54g>`_"
 
 #: ../../docs/community/tutorials.rst:28
-#, fuzzy
 msgid ""
 "`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
 "playlists>`__"
@@ -90552,27 +90587,34 @@ msgid ""
 "`Mister Taft Creates <https://www.youtube.com/playlist?"
 "list=PL4vbr3u7UKWqwQlvwvgNcgDL1p_3hcNn2>`_"
 msgstr ""
+"`Mister Taft Creates <https://www.youtube.com/playlist?"
+"list=PL4vbr3u7UKWqwQlvwvgNcgDL1p_3hcNn2>`_"
 
 #: ../../docs/community/tutorials.rst:30
 msgid ""
 "`Miziziziz <https://www.youtube.com/playlist?"
 "list=PLmugv6_kd0qN6AyjG245_Pdak4MXKUx88>`_"
 msgstr ""
+"`Miziziziz <https://www.youtube.com/playlist?"
+"list=PLmugv6_kd0qN6AyjG245_Pdak4MXKUx88>`_"
 
 #: ../../docs/community/tutorials.rst:31
 msgid ""
 "`P1X / Krzysztof Jankowski <https://www.youtube.com/playlist?"
 "list=PLvDk7UKhld4xGPovdB4IFtAHYMYjx_-3K>`_"
 msgstr ""
+"`P1X / Krzysztof Jankowski <https://www.youtube.com/playlist?"
+"list=PLvDk7UKhld4xGPovdB4IFtAHYMYjx_-3K>`_"
 
 #: ../../docs/community/tutorials.rst:32
 msgid ""
 "`Pigdev <https://www.youtube.com/playlist?"
 "list=PLPMN4vCRFdordS3E-3zi0Hdh7pAsbWQ6a>`_"
 msgstr ""
+"`Pigdev <https://www.youtube.com/playlist?"
+"list=PLPMN4vCRFdordS3E-3zi0Hdh7pAsbWQ6a>`_"
 
 #: ../../docs/community/tutorials.rst:33
-#, fuzzy
 msgid "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`__"
 msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
 
@@ -90581,12 +90623,16 @@ msgid ""
 "`Code with Tom <https://www.youtube.com/playlist?"
 "list=PLiUQR4U_J9ec0k91iHPme_qtfS1nrWF3W>`_"
 msgstr ""
+"`Code with Tom <https://www.youtube.com/playlist?"
+"list=PLiUQR4U_J9ec0k91iHPme_qtfS1nrWF3W>`_"
 
 #: ../../docs/community/tutorials.rst:35
 msgid ""
 "`BornCG <https://www.youtube.com/playlist?"
 "list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_"
 msgstr ""
+"`BornCG <https://www.youtube.com/playlist?"
+"list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_"
 
 #: ../../docs/community/tutorials.rst:38
 msgid "Text tutorials"
@@ -90594,28 +90640,31 @@ msgstr "Tutoriales en texto"
 
 #: ../../docs/community/tutorials.rst:40
 msgid "`Godot Recipes by KidsCanCode <http://godotrecipes.com/>`__"
-msgstr ""
+msgstr "`Recetas de Godot por KidsCanCode <http://godotrecipes.com/>`__"
 
 #: ../../docs/community/tutorials.rst:41
-#, fuzzy
 msgid "`Steincodes <https://steincodes.tumblr.com>`__"
-msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
+msgstr "`Steincodes <https://steincodes.tumblr.com>`__"
 
 #: ../../docs/community/tutorials.rst:44
 msgid "Devlogs"
-msgstr ""
+msgstr "Devlogs"
 
 #: ../../docs/community/tutorials.rst:46
 msgid ""
 "`Andrea Catania (Physics & AI) <https://www.youtube.com/channel/"
 "UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 msgstr ""
+"`Andrea Catania (Física e IA) <https://www.youtube.com/channel/"
+"UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 
 #: ../../docs/community/tutorials.rst:47
 msgid ""
 "`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
 "vJC011lYw/videos>`_"
 msgstr ""
+"`Bastiaan Olij (RA & RV) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
+"vJC011lYw/videos>`_"
 
 #: ../../docs/community/tutorials.rst:52
 msgid ""

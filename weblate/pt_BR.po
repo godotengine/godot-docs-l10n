@@ -29,7 +29,7 @@
 # Diego Schmidt <diegophh@gmail.com>, 2018.
 # Dimenicius <vinicius.costa.92@gmail.com>, 2018-2019.
 # Dnickson Lima <dnickson1509@gmail.com>, 2019.
-# Douglas Fiedler <dognew@gmail.com>, 2018.
+# Douglas Fiedler <dognew@gmail.com>, 2018, 2020.
 # douglas neumeister <douglas.neumeister@gmail.com>, 2019.
 # Eduardo Abreu <eduo.abreu@gmail.com>, 2018-2019.
 # Eduardo Fernandes <ceduardodfernandes@gmail.com>, 2019.
@@ -144,8 +144,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-02-08 22:29+0100\n"
-"PO-Revision-Date: 2020-02-07 10:33+0000\n"
-"Last-Translator: Leonardo Dimano <leodimano@live.com>\n"
+"PO-Revision-Date: 2020-02-25 09:42+0000\n"
+"Last-Translator: Fupi Brazil <fupicat@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -153,7 +153,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -1023,7 +1023,6 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "Quais tipos de formatos de modelos 3D são suportados por Godot?"
 
 #: ../../docs/about/faq.rst:150
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
@@ -1041,13 +1040,12 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "A partir de Godot 3.0, glTF é suportado."
 
 #: ../../docs/about/faq.rst:155
-#, fuzzy
 msgid ""
 "FBX is supported via the Open Asset Import library. However, FBX is "
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
-"FBX, suportado através da biblioteca Open Asset Import. No entanto, fbx é "
+"FBX é suportado através da biblioteca Open Asset Import. No entanto, fbx é "
 "proprietário, por isso recomendamos o uso de outros formatos listados acima, "
 "se adequado para o seu fluxo de trabalho."
 
@@ -2302,7 +2300,6 @@ msgid "Modify the interface"
 msgstr "Modificar a interface"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
-#, fuzzy
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
@@ -3718,12 +3715,11 @@ msgstr ""
 "pressionado:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"Finalmente, conecte o sinal \"pressionado\" do botão à função ``_ready()`` "
+"Finalmente, conecte o sinal \"pressed\" do botão à função ``_ready()`` "
 "usando :ref:`Object.connect() <class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
@@ -5333,7 +5329,6 @@ msgstr ""
 "novos na parte superior do editor:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:676
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -5343,8 +5338,8 @@ msgstr ""
 "Selecione o do meio (\"Adicionar Ponto\") e desenhe o caminho clicando para "
 "adicionar os pontos nos cantos mostrados. Para que os pontos fiquem "
 "alinhados à grade, verifique se a opção \"Encaixar na grade\" está marcada. "
-"Essa opção pode ser encontrada pelo botão \"Opções da Encaixe\" à esquerda "
-"do botão \"Trava\", indicada por uma série de 3 pontos verticais."
+"Essa opção pode ser encontrada à esquerda do botão \"Travar\", parecido como "
+"um imã e ao lado de uma série de 3 pontos verticais."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:683
 msgid ""
@@ -18801,9 +18796,8 @@ msgid "More on that will be explained later in this document."
 msgstr "Mais sobre isso será explicado mais adiante neste documento."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:4
-#, fuzzy
 msgid "Nodes and terminology"
-msgstr "Nodes e Terminologia"
+msgstr "Nós e Terminologia"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:6
 msgid ""
@@ -18826,9 +18820,8 @@ msgstr ""
 "Script Node* é referido a menos que seja indicado o contrário."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:15
-#, fuzzy
 msgid "Node properties"
-msgstr "Propriedades do Node"
+msgstr "Propriedades do Nó"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:17
 msgid ""
@@ -18851,7 +18844,6 @@ msgstr ""
 "suas propriedades no *Inspector*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:25
-#, fuzzy
 msgid "Ports and connections"
 msgstr "Portas e Conexões"
 
@@ -18878,7 +18870,6 @@ msgstr ""
 "*Portas*: De *Sequencia* e *Dado*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:40
-#, fuzzy
 msgid ""
 "*Sequence Ports* indicate the order in which operations are executed. "
 "Typically when a *Node* is done processing, it will go to the next node from "
@@ -18888,13 +18879,13 @@ msgid ""
 "following the white lines. Not every *Node* has *Sequence Ports*. In fact, "
 "most do not."
 msgstr ""
-"*Sequence Ports* indica a ordem na qual as operações são executadas. "
-"Normalmente, quando um *Node* é processado, ele irá para o próximo nó a "
-"partir de uma das portas à direita. Se nada estiver conectado, a função pode "
-"terminar ou outra saída *Sequence Port* pode ser tentada (isso depende do "
-"nó). Graças a isso, você pode seguir o fluxo lógico dentro de uma função "
-"seguindo as linhas brancas. Nem todo *Node* possui *Sequence Port*. Na "
-"verdade, a maioria não."
+"*Sequence Ports* indicam a ordem que as operações serão executadas. "
+"Normalmente, quando um *Node* é processado, ele irá para o próximo nó de uma "
+"das portas à direita. Se nada estiver conectado, a função pode terminar, ou "
+"outra saída *Sequence Port* pode ser tentada (isso depende do nó). Graças a "
+"isso, você pode seguir o fluxo lógico dentro de uma função seguindo as "
+"linhas brancas. Nem todo *Node* possui *Sequence Ports*. Na verdade, a "
+"maioria não."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:46
 msgid ""
@@ -18944,16 +18935,14 @@ msgstr ""
 "Sequencia* é feita ao arrastar longe a *Saída*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:71
-#, fuzzy
 msgid ""
 "This may seem strange at first, but it happens because *Data Ports* are 1:N "
 "(A single output port can connect to many inputs), while *Sequence Ports* "
 "are N:1 (Many sequence outputs can be connected to a single input)."
 msgstr ""
-"Isso pode parecer esquisito no começo, mas é assim porque *Portas de Dado* "
-"são 1:N (Uma única saída pode conectar-se a várias entradas), porquanto "
-"*Portas de Sequencia* são N:1 (Muitas saídas podem conectar-se a uma única "
-"entrada)."
+"Isso pode parecer esquisito no começo, mas é assim porque *Data Ports* são 1:"
+"N (Uma única saída pode conectar-se a várias entradas), porquanto *Sequence "
+"Ports* são N:1 (Muitas saídas podem conectar-se a uma única entrada)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:75
 msgid ""
@@ -18970,9 +18959,8 @@ msgid "While, for data, a contextual set/get/call menu will open:"
 msgstr "Para dados, um menu de set/get/call abrir-se-á:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:87
-#, fuzzy
 msgid "Adding nodes"
-msgstr "Adicionando Nodes"
+msgstr "Adicionando Nós"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:89
 msgid ""
@@ -18985,7 +18973,6 @@ msgstr ""
 "adicionados e lidados os nodes."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:94
-#, fuzzy
 msgid "Accessing scene nodes"
 msgstr "Acessando os Nós de Cena"
 
@@ -19025,7 +19012,6 @@ msgstr ""
 "advertência será mostrada."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:113
-#, fuzzy
 msgid "Accessing scene node properties"
 msgstr "Acessando as Propriedades do Nó de Cena"
 
@@ -19086,7 +19072,6 @@ msgstr ""
 "propiedades:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:147
-#, fuzzy
 msgid ""
 "As it can be seen above, the type and initial value of the variable can be "
 "changed, as well as some property hints. Ticking the \"Export\" option makes "
@@ -19095,10 +19080,9 @@ msgid ""
 "step."
 msgstr ""
 "Como pode ser visto acima, o tipo e o valor inicial da variável podem ser "
-"alterados, assim como alguns sinais de propriedade (@TODO, documentar isso). "
-"Marcar a opção \"Export\" torna a variável visível no inspetor ao selecionar "
-"o no. Isso também a torna disponível a outros scripts pelo método descrito "
-"anteriormente."
+"alterados, assim como alguns sinais de propriedade. Marcando a opção \"Export"
+"\" torna a variável visível no Inspetor quando selecionar o nó. Isso também "
+"a torna disponível a outros scripts pelo método descrito no passo anterior."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
 msgid ""
@@ -19125,7 +19109,6 @@ msgstr ""
 "anterior, exceto para *Signals*:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:171
-#, fuzzy
 msgid ""
 "A signal can also be edited via the right-click menu to customize its "
 "arguments:"
@@ -19134,14 +19117,13 @@ msgstr ""
 "para personalizar seus argumentos:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
-#, fuzzy
 msgid ""
 "The signal you have created will appear in the Inspector, along with the "
 "built-in node signals. This allows you to connect it from another script "
 "from another *Scene Node*:"
 msgstr ""
-"O sinal que você criou aparecerá no Inspector junto com os sinais de nó "
-"embutidos. Isso permite conectá-lo a partir de outro script de outro * Nó da "
+"O sinal que você criou aparecerá no Inspetor, junto com os sinais de nó "
+"embutido. Isso permite conectá-lo a partir de outro script de outro * Nó da "
 "Cena *:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:181
@@ -19157,7 +19139,6 @@ msgstr ""
 "ele deve vir de uma porta sequenciada."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:190
-#, fuzzy
 msgid "Adding more nodes"
 msgstr "Adicionando mais nós"
 
@@ -19209,17 +19190,16 @@ msgstr ""
 "são inteiros ou flutuantes."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:219
-#, fuzzy
 msgid ""
 "The first one is \"Constant\", which allows you to select any value of any "
 "type as constant, from an integer (42) to a String (\"Hello!\"). In general, "
 "this node is not used that often because of default input values in *Data "
 "Ports*, but it's good to know it exists."
 msgstr ""
-"O primeiro é \"Constant\", que permite selecionar qualquer valor de qualquer "
-"tipo como constante, de um inteiro (42) a um String (\"Hello!\"). Em geral, "
-"esse nó não é usado frequentemente devido a valores de entrada padrão em * "
-"Data Ports *, mas é bom saber que existe."
+"O primeiro é uma\"Constant\", que permite selecionar qualquer valor de "
+"qualquer tipo como constante, de um inteiro (42) para uma String (\"Hello!"
+"\"). Em geral, esse nó não é usado frequentemente devido a valores de "
+"entrada padrão em * Data Ports *, mas é bom saber que existe."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:221
 msgid ""
@@ -19232,7 +19212,6 @@ msgstr ""
 "para se referir a nomes de teclas, joystick ou botões do mouse, etc."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:224
-#, fuzzy
 msgid ""
 "The third one is MathConstant, which provides typical mathematical "
 "constants, such as PI, E, etc."
@@ -19279,18 +19258,16 @@ msgid "Engine Singleton"
 msgstr "Singleton do Motor"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
-#, fuzzy
 msgid ""
 "Engine singletons are global interfaces (meaning they can be accessed "
 "without a reference; unlike Scene Nodes, they are always available). They "
 "have several purposes, but in general, they are useful for low-level access "
 "or OS-related access."
 msgstr ""
-"Os singletons do mecanismo são interfaces globais (o que significa que eles "
-"podem ser acessados sem uma referência, ao contrário dos Scene Nodes, eles "
-"estão sempre disponíveis). Eles têm várias finalidades, mas em geral são "
-"úteis para acesso de baixo nível ou acesso relacionado ao sistema "
-"operacional."
+"Singletons da engine são interfaces globais (o que significa que eles podem "
+"ser acessados sem uma referência; ao contrário dos nós de cena, eles estão "
+"sempre disponíveis). Eles têm várias finalidades, mas em geral são úteis "
+"para acesso de baixo nível ou acesso relacionado ao sistema operacional."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:257
 msgid ""
@@ -19353,7 +19330,6 @@ msgstr ""
 "da Árvore de cena para a tela para isso."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
-#, fuzzy
 msgid ""
 "This node is similar to the Singleton node because it references the "
 "SceneTree, which contains the active scene. SceneTree, however, only works "
@@ -19362,19 +19338,17 @@ msgid ""
 msgstr ""
 "Esse nó é semelhante ao nó Singleton porque ele faz referência à SceneTree, "
 "que contém a cena ativa. O SceneTree, no entanto, só funciona quando o nó "
-"está sentado na cena e ativo, caso contrário, o acesso retornará como um "
-"erro."
+"estiver posto na cena e ativo, caso contrário, o acesso retornará um erro."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
-#, fuzzy
 msgid ""
 "SceneTree allows for many low-level things, like setting stretch options, "
 "calling groups, make timers, or even load another scene. It's a good class "
 "to get familiar with."
 msgstr ""
 "O SceneTree permite muitas coisas de baixo nível, como definir opções de "
-"alongamento, chamar grupos, criar temporizadores ou até mesmo carregar outra "
-"cena. É uma boa aula para se familiarizar."
+"stretch, chamar grupos, criar temporizadores ou até mesmo carregar outra "
+"cena. É uma boa classe com a qual se familiarizar."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
@@ -19435,17 +19409,16 @@ msgid "Condition"
 msgstr "Condição"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
-#, fuzzy
 msgid ""
 "This is a simple node that checks a bool port. If ``true``, it will go via "
 "the \"true\" sequence port. If ``false``, the second. After going for either "
 "of them, it goes via the \"done\" port. Leaving sequence ports disconnected "
 "is fine if not all of them are used."
 msgstr ""
-"Este é um nó simples que verifica uma porta booleana. Se for verdade, ele "
-"será enviado pela porta da sequência \"true\". Se falso, o segundo. Depois "
-"de ir para qualquer um deles, ele passa pela porta \"done\". Deixar as "
-"portas da seqüência desconectadas é bom se nem todas forem usadas."
+"Este é um nó simples que verifica uma porta booleana. Se for ``verdadeira``, "
+"ele será enviado pela porta de sequência \"true\". Se for ``falsa``, o "
+"segundo. Depois de ir para qualquer um deles, ele passa pela porta \"done\". "
+"Você pode deixar portas de sequência desconectadas se nem todas forem usadas."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
@@ -19554,17 +19527,15 @@ msgid "Built-In"
 msgstr "Embutido"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
-#, fuzzy
 msgid ""
 "There is a list of built-in helpers. The list is almost identical to the one "
 "from :ref:`GDScript<class_@GDScript>`. Most of them are mathematical "
 "functions, but others can be useful helpers. Make sure to take a look at the "
 "list at some point."
 msgstr ""
-"Existe uma lista de ajudantes internos. A lista é quase idêntica à do "
-"GDScript (@TODO, link to gdscript methods?). A maioria deles são funções "
-"matemáticas, mas outros podem ser úteis. Certifique-se de dar uma olhada na "
-"lista em algum momento."
+"Existe uma lista de ajudantes internos. A lista é quase idêntica à do :ref:"
+"`GDScript<class_@GDScript>`. A maioria deles são funções matemáticas, mas "
+"outros podem ser ajudantes úteis. Dê uma olhada na lista em algum momento."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:404
 msgid "By Type"
@@ -19694,7 +19665,6 @@ msgstr ""
 "exista apenas no caso."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
-#, fuzzy
 msgid ""
 "These are mostly generic operators, such as addition, multiplication, "
 "comparison, etc. By default, these mostly accept any datatype (and will "
@@ -19703,11 +19673,11 @@ msgid ""
 "to catch errors faster and make the graph easier to read."
 msgstr ""
 "Estes são principalmente operadores genéricos, como adição, multiplicação, "
-"comparação, etc. Por padrão, estes aceitam principalmente qualquer tipo de "
-"dados (e haverá erro em tempo de execução se os tipos alimentados não "
-"corresponderem ao operador). É sempre recomendável definir o tipo certo para "
-"os operadores capturarem erros mais rapidamente e facilitar a leitura do "
-"gráfico."
+"comparação, etc. Por padrão, estes costumam aceitar qualquer tipo de dados "
+"(e haverá erro em tempo de execução se os tipos alimentados não "
+"corresponderem ao tipos esperados pelo operador). É sempre recomendável "
+"definir o tipo certo para os operadores capturarem erros mais rapidamente e "
+"facilitar a leitura do gráfico."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:481
 msgid "Expression Node"
@@ -19778,7 +19748,6 @@ msgid "C#"
 msgstr "C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:6
-#, fuzzy
 msgid ""
 "C# support is a new feature available since Godot 3.0. As such, you may "
 "still run into some issues, or find spots where the documentation could be "
@@ -19787,11 +19756,11 @@ msgid ""
 "issues on the `documentation GitHub page <https://github.com/godotengine/"
 "godot-docs/issues>`_."
 msgstr ""
-"O suporte ao C# é um novo recurso no Godot 3.0. Dessa forma, você ainda pode "
-"se deparar com alguns problemas ou encontrar pontos em que a documentação "
-"poderia ser melhorada. Por favor relate problemas com C# no Godot na `página "
-"do engine no Github <https://github.com/godotengine/godot/issues>`_. E "
-"qualquer problema de documentação na `documentação na página do Github "
+"Suporte a C# é um novo recurso na Godot 3.0. Por isso, você ainda pode se "
+"deparar com alguns problemas ou encontrar lugares onde a documentação "
+"poderia ser melhorada. Por favor relate problemas com C# na Godot na `página "
+"da engine no Github <https://github.com/godotengine/godot/issues>`_, e "
+"qualquer problema de documentação na `página da documentação no Github "
 "<https://github.com/godotengine/godot-docs/issues>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:14
@@ -23026,44 +22995,63 @@ msgid "Godot can import the following image formats:"
 msgstr "Godot suporta os seguintes *formatos de arquivo de cena* 3D:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
+#, fuzzy
 msgid "BMP (``.bmp``)"
-msgstr ""
+msgstr "BMP (``.bmp``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:39
+#, fuzzy
 msgid ""
 "DirectDraw Surface (``.dds``) - If mipmaps are present in the texture, they "
 "will be loaded directly. This can be used to achieve effects using custom "
 "mipmaps."
 msgstr ""
+"Superfície do DirectDraw (`` .dds``) - Se houver mipmaps na textura, eles "
+"serão carregados diretamente. Isso pode ser usado para obter efeitos usando "
+"mipmaps personalizados."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
+#, fuzzy
 msgid ""
 "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
 msgstr ""
+"OpenEXR (``.exr``) - Suporta HDR (altamente recomendado para céus "
+"panorâmicos)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
+#, fuzzy
 msgid ""
 "Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
 "skies)."
 msgstr ""
+"Radiance HDR (``.hdr``) - Suporta HDR (altamente recomendado para céus "
+"panorâmicos)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:46
+#, fuzzy
 msgid ""
 "JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
 "limitations."
 msgstr ""
+"JPEG (``.jpg``, ``.jpeg```) - Não suporta transparência de acordo com as "
+"limitações do formato."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
+#, fuzzy
 msgid ""
 "PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
 "(no HDR images)."
 msgstr ""
+"PNG (``.png```) - A precisão é limitada a 8 bits por canal na importação "
+"(sem imagens HDR)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
+#, fuzzy
 msgid "Truevision Targa (``.tga``)"
-msgstr ""
+msgstr "Truevision Targa (``.tga``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:51
+#, fuzzy
 msgid ""
 "SVG (``.svg``, ``.svgz``) - SVGs are rasterized using `NanoSVG <https://"
 "github.com/memononen/nanosvg>`__ when importing them. Support is limited; "
@@ -23072,16 +23060,27 @@ msgid ""
 "automated thanks to its `command-line interface <https://wiki.inkscape.org/"
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
+"SVG (``.svg``, ``.svgz``) - SVGs são rasterizados utilizando ``NanoSVG "
+"<https://github.com/memononen/nanosvg>`__ ao importá-los. O suporte é "
+"limitado; os vetores complexos podem não renderizar corretamente. Para "
+"vetores complexos, renderizá-los a PNGs usando o Inkscape é muitas vezes uma "
+"solução melhor. Isto pode ser automatizado graças à sua \"interface de linha "
+"de comando\" <https://wiki.inkscape.org/wiki/index.php/"
+"Using_the_Command_Line#Export_files>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+#, fuzzy
 msgid "WebP (``.webp``)"
-msgstr ""
+msgstr "WebP (``.webp```)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
+#, fuzzy
 msgid ""
 "If you've compiled the Godot editor from source with specific modules "
 "disabled, some formats may not be available."
 msgstr ""
+"Se você compilou o editor Godot a partir da fonte com módulos específicos "
+"desabilitados, alguns formatos podem não estar disponíveis."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:64
 #, fuzzy
@@ -23129,12 +23128,18 @@ msgstr ""
 "vídeo do que a VRAM."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
+#, fuzzy
 msgid ""
 "**Lossy Compression:** This is a good choice for large 2D assets. It has "
 "some artifacts, but less than VRAM and the file size is several times lower "
 "compared to Lossless or Uncompressed. Video memory usage isn't decreased by "
 "this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
+"** Compressão com perdas: ** Esta é uma boa opção para grandes recursos 2D. "
+"Ele possui alguns artefatos, mas menos que a VRAM e o tamanho do arquivo é "
+"várias vezes menor em comparação com Sem Perdas ou Descomprimido. O uso da "
+"memória de vídeo não diminui nesse modo; é o mesmo que com a compactação sem "
+"perdas ou sem compactação."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
 #, fuzzy
@@ -23915,8 +23920,9 @@ msgid "\"Hola\" dijo el hombre."
 msgstr "\"Hola\" dijo el hombre."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:75
+#, fuzzy
 msgid "「こんにちは」男は言いました"
-msgstr ""
+msgstr "「こんにちは」男は言いました"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid ""
@@ -26061,84 +26067,119 @@ msgstr ""
 "específicos do projeto."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:38
+#, fuzzy
 msgid ""
 "This tutorial uses **exported_xcode_project_name**, but you will use your "
 "project's name. When you see **exported_xcode_project_name** in the "
 "following steps, replace it with the name you used instead."
 msgstr ""
+"Este tutorial usa **exported_xcode_project_name**, mas você vai usar o nome "
+"do seu projeto. Quando você ver **exported_xcode_project_name*** nos passos "
+"seguintes, substitua-o pelo nome que você usou."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:42
+#, fuzzy
 msgid ""
 "Avoid using spaces when you choose your **exported_xcode_project_name** as "
 "this can lead to corruption in your XCode project file."
 msgstr ""
+"Evite usar espaços ao escolher seu ** exported_xcode_project_name **, pois "
+"isso pode causar corrupção no seu arquivo de projeto do XCode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:45
+#, fuzzy
 msgid "When the export completes, the output folder should look like this:"
 msgstr ""
+"Quando a exportação for concluída, a pasta de saída deverá ficar assim:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:49
+#, fuzzy
 msgid ""
 "Opening **exported_xcode_project_name.xcodeproj** lets you build and deploy "
 "like any other iOS app."
 msgstr ""
+"Abrindo **exported_xcode_project_name.xcodeproj*** permite que você compile "
+"e implemente como qualquer outra aplicação iOS."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:53
+#, fuzzy
 msgid "Active development considerations"
-msgstr ""
+msgstr "Considerações de desenvolvimento ativas"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:55
+#, fuzzy
 msgid ""
 "The above method creates an exported project that you can build for release, "
 "but you have to re-export every time you make a change in Godot."
 msgstr ""
+"O método acima cria um projeto exportado que você possa compilar para "
+"lançamento, mas você terá que reexportar toda vez que fizer uma mudança na "
+"Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:58
+#, fuzzy
 msgid ""
 "While developing, you can speed this process up by linking your Godot "
 "project files directly into your app."
 msgstr ""
+"Durante o desenvolvimento, você pode acelerar este processo vinculando seus "
+"arquivos de projeto da Godot diretamente no seu aplicativo."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:61
+#, fuzzy
 msgid "In the following example:"
-msgstr ""
+msgstr "No exemplo a seguir:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:63
+#, fuzzy
 msgid ""
 "**exported_xcode_project_name** is the name of the exported iOS application "
 "(as above)."
 msgstr ""
+"**exported_xcode_project_name*** é o nome da aplicação iOS exportada (como "
+"acima)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:64
 msgid "**godot_project_to_export** is the name of the Godot project."
-msgstr ""
+msgstr "**godot_project_to_export*** é o nome do projeto da Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:67
+#, fuzzy
 msgid "Steps to link a Godot project folder to Xcode"
-msgstr ""
+msgstr "Etapas para vincular uma pasta de projeto da Godot ao Xcode"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:69
+#, fuzzy
 msgid "Start from an exported iOS project (follow the steps above)."
-msgstr ""
+msgstr "Comece a partir de um projeto iOS exportado (siga os passos acima)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:70
+#, fuzzy
 msgid "In Finder, drag the Godot project folder into the Xcode file browser."
 msgstr ""
+"No Buscador, arraste a pasta do projeto da Godot para o navegador de "
+"arquivos Xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:74
+#, fuzzy
 msgid ""
 "3. In the dialog, make sure **Create folder references** is selected. This "
 "means you will be able to continue to edit your Godot project in its current "
 "location."
 msgstr ""
+"3. Na caixa de diálogo, certifique-se de **Criar referências de pasta** está "
+"selecionado. Isto significa que você poderá continuar editando seu projeto "
+"na Godot em sua localização atual."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:79
+#, fuzzy
 msgid "See the **godot_project_to_export** folder in the Xcode file browser."
 msgstr ""
+"Consulte a pasta **godot_project_to_export** no navegador de arquivos Xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:80
 msgid "Delete **exported_xcode_project_name.pck** from the Xcode project."
-msgstr ""
+msgstr "Exclua **exported_xcode_project_name.pck** do projeto Xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:84
 msgid ""
@@ -26146,27 +26187,39 @@ msgid ""
 "named **godot_path** (this is the real key name) with a value "
 "**godot_project_to_export** (this is the name of your project)"
 msgstr ""
+"6. Abra **exported_xcode_project_name-Info.plist** e adicione uma "
+"propriedade string chamada **godot_path** (este é o verdadeiro nome da "
+"chave) com um valor **godot_project_to_export** (este é o nome do seu "
+"projeto)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:90
+#, fuzzy
 msgid ""
 "That's it! You can now edit your project in the Godot editor and build it in "
 "Xcode when you want to run it on a device."
 msgstr ""
+"É isso aí! Agora você pode editar seu projeto no editor da Godot e construí-"
+"lo no Xcode quando quiser executá-lo em um dispositivo."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:94
 #: ../../docs/tutorials/platform/services_for_ios.rst:4
+#, fuzzy
 msgid "Services for iOS"
-msgstr ""
+msgstr "Serviços para iOS"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:96
+#, fuzzy
 msgid ""
 "Special iOS services can be used in Godot. Check out the :ref:"
 "`doc_services_for_ios` page."
 msgstr ""
+"Serviços especiais para iOS podem ser usados na Godot. Veja a página :ref:"
+"`doc_services_for_ios`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
+#, fuzzy
 msgid "Exporting for Universal Windows Platform"
-msgstr ""
+msgstr "Exportando para a Plataforma Universal do Windows"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:6
 msgid ""
@@ -26174,125 +26227,180 @@ msgid ""
 "installed as a Windows App or submitted to the Windows Store. Exporting UWP "
 "packages also works from any platform, not only from Windows."
 msgstr ""
+"Não há nenhum requisito extra para exportar um pacote ``.appx`` que pode ser "
+"instalado como um aplicativo do Windows ou enviado para a Loja do Windows. A "
+"exportação de pacotes UWP também funciona a partir de qualquer plataforma, "
+"não apenas do Windows."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
+#, fuzzy
 msgid ""
 "However, if you want to install and run the app, you need to sign it with a "
 "trusted signature. Currently, Godot does not support signing of packages, so "
 "you need to use external tools to do so."
 msgstr ""
+"No entanto, se você quiser instalar e executar o aplicativo, você precisa "
+"assiná-lo com uma assinatura confiável. Atualmente, o Godot não suporta a "
+"assinatura de pacotes, então você precisa usar ferramentas externas para "
+"fazer isso."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
+#, fuzzy
 msgid ""
 "Also, make sure the Publisher Name you set when exporting the package "
 "matches the name used on the certificate."
 msgstr ""
+"Além disso, certifique-se de que o Nome do Editor que você definiu ao "
+"exportar o pacote corresponde ao nome usado no certificado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:18
+#, fuzzy
 msgid "Limitations on Xbox One"
-msgstr ""
+msgstr "Limitações no Xbox One"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:20
+#, fuzzy
 msgid ""
 "As described in the `UWP documentation <https://docs.microsoft.com/en-us/"
 "windows/uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
+"Como descrito na `documentação do UWP <https://docs.microsoft.com/en-us/"
+"windows/uwp/xbox-apps/system-resource-allocation>`__:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "Submitted as an \"App\""
-msgstr ""
+msgstr "Enviado como um \"App\""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:23
+#, fuzzy
 msgid "available memory is 1GB"
-msgstr ""
+msgstr "memória disponível é de 1GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:24
+#, fuzzy
 msgid "share of 2-4 CPU cores"
-msgstr ""
+msgstr "compartilhamento de 2-4 núcleos de CPU"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
+#, fuzzy
 msgid "shared access of GPU power (45%)"
-msgstr ""
+msgstr "acesso compartilhado de energia da GPU (45%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
+#, fuzzy
 msgid ""
 "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www."
 "xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
+"Enviado como um \"Jogo\" (através do \"Xbox Live Creators Program\" <https://"
+"www.xbox.com/en-US/developers/creators-program>`__)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:28
+#, fuzzy
 msgid "available memory is 5GB"
-msgstr ""
+msgstr "memória disponível é de 5GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:29
+#, fuzzy
 msgid "4 exclusive CPU cores and 2 shared CPU cores"
-msgstr ""
+msgstr "4 núcleos de CPU exclusivos e 2 núcleos de CPU compartilhados"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
+#, fuzzy
 msgid "exclusive access to GPU power (100%)"
-msgstr ""
+msgstr "acesso exclusivo à energia da GPU (100%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
+#, fuzzy
 msgid ""
 "Exceeding these memory limitations will cause allocation failures and the "
 "application will crash."
 msgstr ""
+"Excedendo estas limitações de memória irá causar falhas de alocação e a "
+"aplicação irá falhar."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:35
+#, fuzzy
 msgid "Creating a signing certificate"
-msgstr ""
+msgstr "Criando um certificado de assinatura"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:37
+#, fuzzy
 msgid ""
 "This requires the ``MakeCert.exe`` and ``Pvk2Pfx.exe`` tools, which come "
 "with the Windows SDK. If you use Visual Studio, you can open one of its "
 "Developer Prompts, since it comes with these tools and they can be located "
 "in the path."
 msgstr ""
+"Isso requer as ferramentas ``MakeCert.exe`` e ``Pvk2Pfx.exe``, que vêm com o "
+"Windows SDK. Se você usa Visual Studio, você pode abrir um de seus Developer "
+"Prompts, pois ele vem com essas ferramentas e elas podem ser localizadas no "
+"caminho."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:41
+#, fuzzy
 msgid ""
 "You can get more detailed instructions from `Microsoft's documentation "
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
 "aspx>`__."
 msgstr ""
+"Você pode obter instruções mais detalhadas na `documentação da Microsoft "
+"<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
+"aspx>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:44
+#, fuzzy
 msgid "First, run ``MakeCert`` to create a private key::"
-msgstr ""
+msgstr "Primeiro, execute ``MakeCert``` para criar uma chave privada::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:48
+#, fuzzy
 msgid ""
 "Where ``publisherName`` matches the Publisher Name of your package and "
 "``expirationDate`` is in the ``mm/dd/yyyy`` format."
 msgstr ""
+"Onde `` publisherName`` corresponde ao Nome do Publicador do seu pacote e `` "
+"expirationDate`` está no formato `` mm / dd / aaaa``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:51
+#, fuzzy
 msgid ""
 "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx."
 "exe``::"
 msgstr ""
+"Em seguida, crie um arquivo de Troca de Informações Pessoais (.pfx) usando "
+"''Pvk2Pfx.exe'::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:55
+#, fuzzy
 msgid ""
 "If you don't specify a password with ``/po`` argument, the PFX will have the "
 "same password as the private key."
 msgstr ""
+"Se você não especificar uma senha com o argumento ``/po``, o PFX terá a "
+"mesma senha da chave privada."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:58
+#, fuzzy
 msgid ""
 "You will also need to trust this certificate in order to be able to install "
 "your app. Open the Command Prompt as Administrator and run the following "
 "command::"
 msgstr ""
+"Você também precisará confiar neste certificado para poder instalar seu "
+"aplicativo. Abra o Prompt de Comando como Administrador e execute o seguinte "
+"comando::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
+#, fuzzy
 msgid "Signing the package"
-msgstr ""
+msgstr "Assinando o pacote"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
+#, fuzzy
 msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
 msgstr ""
+"Finalmente, utilize o ``SignTool.exe`` do Windows SDK ou Visual Studio::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
 msgid "Installing the package"
@@ -26326,14 +26434,19 @@ msgid "Exporting for Android"
 msgstr "Exportando para Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
+#, fuzzy
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for it. "
 "The following steps detail what is needed to setup the SDK and the engine."
 msgstr ""
+"Exportar para Android tem menos requisitos do que compilar a Godot para ele. "
+"Os passos seguintes detalham o que é necessário para configurar o SDK e a "
+"engine."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
+#, fuzzy
 msgid "Download the Android SDK"
-msgstr ""
+msgstr "Baixe o Android SDK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
 #, fuzzy
@@ -26343,92 +26456,129 @@ msgid ""
 msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
+#, fuzzy
 msgid "Install OpenJDK or Oracle JDK"
-msgstr ""
+msgstr "Instale OpenJDK ou Oracle JDK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
+#, fuzzy
 msgid ""
 "Download and install  `OpenJDK <https://github.com/ojdkbuild/ojdkbuild>`__ "
 "or `Oracle JDK <http://www.oracle.com/technetwork/java/javase/downloads/"
 "index.html>`__. Versions below JDK 8 may not work; some users have reported "
 "issues with the jarsigner (used to sign the APKs) in JDK 7."
 msgstr ""
+"Baixe e instale `OpenJDK <https://github.com/ojdkbuild/ojdkbuild>`__ ou "
+"`Oracle JDK <http://www.oracle.com/technetwork/java/javase/downloads/index."
+"html>`__. As versões abaixo de JDK 8 podem não funcionar; alguns usuários "
+"relataram problemas com o jarsigner (usado para assinar os APKs) em JDK 7."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
+#, fuzzy
 msgid "Create a debug.keystore"
-msgstr ""
+msgstr "Crie um debug.keystore"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:23
+#, fuzzy
 msgid ""
 "Android needs a debug keystore file to install to devices and distribute non-"
 "release APKs. If you have used the SDK before and have built projects, ant "
 "or eclipse probably generated one for you (on Linux and macOS, you can find "
 "it in the ``~/.android`` directory)."
 msgstr ""
+"O Android precisa de um arquivo de depuração de chaves para instalar em "
+"dispositivos e distribuir APKs não liberados. Se você já usou o SDK antes e "
+"construiu projetos, ant ou eclipse provavelmente gerou um para você (no "
+"Linux e macOS, você pode encontrá-lo no diretório ``~/.android```)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
+#, fuzzy
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose:"
 msgstr ""
+"Se você não conseguir encontrá-lo ou precisar gerar um, o comando da "
+"ferramenta-chave do JDK pode ser usado para este objetivo:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
+#, fuzzy
 msgid "Make sure you have adb"
-msgstr ""
+msgstr "Verifique se você possui adb"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:38
+#, fuzzy
 msgid ""
 "Android Debug Bridge (adb) is the command line tool used to communicate with "
 "Android devices. It's installed with the SDK, but you may need to install "
 "one (any) of the Android API levels for it to be installed in the SDK "
 "directory."
 msgstr ""
+"Android Debug Bridge (adb) é a ferramenta de linha de comando utilizada para "
+"comunicar com dispositivos Android. Ele é instalado com o SDK, mas você pode "
+"precisar instalar um (qualquer) dos níveis da API do Android para que ele "
+"seja instalado no diretório do SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:43
+#, fuzzy
 msgid "Setting it up in Godot"
-msgstr ""
+msgstr "Configurando na Godot"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
+#, fuzzy
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
 "for the user account in the computer (it's independent from the project)."
 msgstr ""
+"Entrar na tela Configurações do Editor. Esta tela contém as configurações do "
+"editor para a conta do usuário no computador (é independente do projeto)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:51
 msgid "Scroll down to the section where the Android settings are located:"
 msgstr ""
+"Role para baixo até a seção onde as configurações do Android estão "
+"localizadas:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:55
+#, fuzzy
 msgid "In that screen, the path to 3 files needs to be set:"
-msgstr ""
+msgstr "Nessa tela, o caminho para 3 arquivos precisa ser definido:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
+#, fuzzy
 msgid "The *adb* executable (adb.exe on Windows)"
-msgstr ""
+msgstr "O executável *adb* (adb.exe no Windows)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
 msgid "The *jarsigner* executable (from JDK 6 or 8)"
-msgstr ""
+msgstr "O executável *jarsigner* (do JDK 6 ou 8)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:59
+#, fuzzy
 msgid "The debug *keystore*"
-msgstr ""
+msgstr "O depurador *keystore*"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
+#, fuzzy
 msgid "Once that is configured, everything is ready to export to Android!"
-msgstr ""
+msgstr "Uma vez configurado, tudo está pronto para exportar para o Android!"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
+#, fuzzy
 msgid "Providing launcher icons"
-msgstr ""
+msgstr "Fornecer de ícones da aplicação"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
+#, fuzzy
 msgid ""
 "Launcher icons are used by Android launcher apps to represent your "
 "application to users. Godot only requires high-resolution icons (for "
 "``xxxhdpi`` density screens) and will automatically generate lower-"
 "resolution variants."
 msgstr ""
+"Os ícones de aplicação são usadas por aplicações de launcher do Android para "
+"representar a sua aplicação aos usuários. A Godot só requer ícones de alta "
+"resolução (para telas de densidade ``xxxhdpi``), e irá gerar automaticamente "
+"variantes para resoluções menores."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:68
 #, fuzzy

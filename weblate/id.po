@@ -12,6 +12,7 @@
 # herri siagian <herry.it.2007@gmail.com>, 2019.
 # Khairul Hidayat <khairulcyber4rt@gmail.com>, 2018.
 # MonsterGila <fikrirazor@outlook.co.id>, 2019.
+# Nenza Nurfirmansyah <nnurfirmansyah@gmail.com>, 2020.
 # Reza Hidayat Bayu Prabowo <rh.bayu.prabowo@gmail.com>, 2018.
 # Sandityas Noormina <bleedingfaceless@gmail.com>, 2019.
 # Sofyan Sugianto <sofyanartem@gmail.com>, 2019-2020.
@@ -22,8 +23,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-02-08 22:29+0100\n"
-"PO-Revision-Date: 2020-02-08 20:51+0000\n"
-"Last-Translator: Ade Fikri Malihuddin <ade.fm97@gmail.com>\n"
+"PO-Revision-Date: 2020-03-13 16:33+0000\n"
+"Last-Translator: Nenza Nurfirmansyah <nnurfirmansyah@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -31,7 +32,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -430,16 +431,15 @@ msgstr ""
 "mesin, lisensi, author, dan lainnnya. Dan juga berisi :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
 "games. It starts with the :ref:`Step by step <toc-learn-step_by_step>` "
 "tutorial which should be the entry point for all new users."
 msgstr ""
-"Bagian :ref:`sec-learn`merupakan bagian utama *raison d'être* dari "
+"Bagian :ref:`bag-belajar`merupakan bagian utama *raison d'être* dari "
 "dokumentasi ini, karena terdapat semua informasi yang diperlukan dalam "
-"menggunakan engine untuk membuat game. Dimulai dengan tutorial :ref:`Langkah "
+"menggunakan engine untuk membuat gim. Dimulai dengan tutorial :ref:`Langkah "
 "demi langkah <toc-learn-step_by_step>` yang mana merupakan titik masuk untuk "
 "semua pengguna baru."
 
@@ -905,15 +905,16 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "Apa jenis format model 3D yang didukung Godot?"
 
 #: ../../docs/about/faq.rst:150
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Godot mendukung Collada melalui `OpenCollada<<https://github.com/"
-"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_exporter(Maya, 3DSMax)."
+"Godot mendukung Collada melalui eksporter `OpenCollada<<https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ (Maya, 3DSMax). Jika Anda "
+"menggunakan Blender, cobalah eksporter khusus kami `Better Collada Exporter "
+"<https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
@@ -925,6 +926,10 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX didukung melalui pustaka (library) Open Asset Import. Hanya saja, FBX "
+"merupakan software property (milik perusahaan komersil) jadi kami sarankan "
+"menggunakan format lain yang telah di buat daftarkan, jila cocok untuk alur "
+"kerja anda."
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -934,7 +939,6 @@ msgstr ""
 "didalam Godot?"
 
 #: ../../docs/about/faq.rst:161
-#, fuzzy
 msgid ""
 "The aim of Godot is to create a free and open-source MIT-licensed engine "
 "that is modular and extendable. There are no plans for the core engine "
@@ -943,20 +947,20 @@ msgid ""
 msgstr ""
 "Tujuan dari Godot adalah untuk menciptakan engine berlisensi MIT yang bebas "
 "dan terbuka , modular dan dapat dikembangkan. Tidak ada rencana untuk "
-"komunitas pengembang engine inti untuk mendukung pihak ketiga manapun, kode "
-"tertutup/hak milik SDK, berintegrasi dengan ini akan melawan etos dari Godot."
+"komunitas pengembangan engine utama untuk mendukung pihak ketiga manapun, "
+"SDK yang sifatnya closed-source/proprietary, karena mengintegrasikan hal ini "
+"bertentangan dengan prinsip Godot."
 
 #: ../../docs/about/faq.rst:166
-#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
-"Dikatakan, karena Godot bersifat kode terbuka dan modular, tidak ada yang "
-"mencegah mu atau siapapun yang tertarik menambahkan librari tersebut sebagai "
-"module dan mengirim game mu dengan mereka -- baik kode tertutup ataupun kode "
-"terbuka."
+"Seperti pernyataan diatas, karena Godot bersifat kode terbuka dan modular, "
+"tidak ada yang mencegah Anda atau siapapun yang tertarik untuk menambahkan "
+"pustaka tersebut sebagai modul dan menyertakannya ke dalam gim Anda -- baik "
+"pustaka tersebut merupakan kode sumber terbuka maupun tertutup."
 
 #: ../../docs/about/faq.rst:170
 msgid ""
@@ -987,7 +991,6 @@ msgstr ""
 "rasio?"
 
 #: ../../docs/about/faq.rst:181
-#, fuzzy
 msgid ""
 "This question pops up often and it's probably thanks to the misunderstanding "
 "created by Apple when they originally doubled the resolution of their "
@@ -999,28 +1002,26 @@ msgid ""
 msgstr ""
 "Pertanyaan ini sering muncul dan mungkin harus berterimakasih untuk "
 "kesalahpahaman yang dibuat oleh Apple ketika mereka awalnya menggandakan "
-"resolusi dari perangkat mereka. hal itu membuat orang berfikir bahwa "
-"memiliki assets yang sama pada resolusi yang berbeda adalah dide yang baik, "
-"jadi banyak yang mengikuti jalan tersebut. Awalnya hal tersebut bekerja ke "
+"resolusi dari perangkat mereka. Hal itu membuat orang berfikir bahwa "
+"memiliki aset yang sama pada resolusi yang berbeda adalah ide yang baik, "
+"jadi banyak yang mengikuti jalan tersebut. Awalnya hal tersebut bekerja pada "
 "suatu titik tertentu dan hanya perangkat Apple, tetapi kemudian perangkat "
 "Android dan Apple dengan resolusi dan aspek rasio yang berbeda diciptakan,  "
-"dengan jangkauan ukuran dan DPIs yang sangat luas."
+"dengan jangkauan ukuran dan DPI yang sangat luas."
 
 #: ../../docs/about/faq.rst:189
-#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
-"cara yang paling umum dan layak untuk mencapai ini  adalah untuk sebagai "
-"gantinya, gunakan resolusi basis tunggal untuk game dan tangani hanya "
-"resolusi dan aspek rasio yang berbeda. Hal ini sangat diperlukan untuk 2D, "
-"seperti dalam 3D seperti masalah dari kamera XFov atau YFov"
+"Cara yang paling umum dan tepat untuk mencapai ini  adalah, sebagai "
+"gantinya, gunakan satu resolusi dasar untuk gim dan hanya tangani resolusi "
+"dan aspek rasio yang berbeda. Hal ini sangat diperlukan untuk 2D, karena "
+"dalam 3D itu hanya masalah dari XFov atau YFov Kamera."
 
 #: ../../docs/about/faq.rst:193
-#, fuzzy
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -1029,13 +1030,13 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
-"Pilihlah resolusi basis tunggal untuk game kamu. Meskipun jika ada perangkat "
-"yang mimiliki resolusi diatas 2K dan dibawah 400p, scaling perangkat keras "
-"biasa pada perangkatmu  akan melakukkannya atau tidak ada performance yang "
-"menurun. Umunya pilihannya diantar 1080p (1920x1080) atau 720p (1280x720). "
-"Perlu diingat bahwa resolusi yang lebih tinggi, membuat asset mu lebih "
-"besar, dengan demikian banyak memory yang diperlukan dan waktu loadingnya "
-"juga lebih lama."
+"Pilihlah satu resolusi dasar untuk gim Anda. Meskipun jika ada perangkat "
+"yang mimiliki resolusi diatas 2K dan dibawah 400p, penyekalaan perangkat "
+"keras biasa pada perangkat Anda akan menangani hal ini atau tidak membebani "
+"performa. Pilihan yang paling umum adalah mendekati 1080p (1920x1080) atau "
+"720p (1280x720). Perlu diingat bahwa semakin tinggi resolusi, semakin besar "
+"aset Anda, semakin banyak memori yang diperlukan dan waktu pemuatannya juga "
+"akan lebih lama."
 
 #: ../../docs/about/faq.rst:201
 msgid ""
@@ -1070,37 +1071,34 @@ msgstr ""
 "kompleks, lebih baik untuk belajar tentang Kontainer dahulu."
 
 #: ../../docs/about/faq.rst:214
-#, fuzzy
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr "Dan itu dia! Game Anda harus dapat bekerja dalam berbagai resolusi."
+msgstr "Dan itu dia! Gim Anda harus dapat bekerja dalam berbagai resolusi."
 
 #: ../../docs/about/faq.rst:216
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
-"Jika ada keinginan untuk membuat game Anda juga berfungsi pada perangkat "
-"lama dengan layar kecil (lebarnya kurang dari 300 piksel), Anda dapat "
-"menggunakan opsi ekspor untuk mengecilkan gambar, dan mengatur bahwa build "
-"akan digunakan untuk ukuran layar tertentu di App. Store atau Google Play."
+"Jika ada keinginan untuk membuat gim Anda juga berfungsi pada perangkat lama "
+"dengan layar kecil (lebarnya kurang dari 300 piksel), Anda dapat menggunakan "
+"opsi ekspor untuk mengecilkan gambar, dan mengatur bahwa build akan "
+"digunakan untuk ukuran layar tertentu di App Store atau Google Play."
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
 msgstr "Bagaimana saya dapat memperluas 'extend' Godot?"
 
 #: ../../docs/about/faq.rst:224
-#, fuzzy
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Untuk memperluas Godot, seperti membuat plugin-plugin Godot Editor atau "
-"menambahkan dukungan untuk bahasa tambahan, lihat: ref: `EditorPlugins "
-"<doc_making_plugins>` dan tool scripts."
+"Untuk mengembangkan Godot, seperti membuat plugin Godot Editor atau "
+"menambahkan dukungan untuk bahasa tambahan, lihat: ref: `Plugin Editor "
+"<doc_making_plugins>` dan skrip tool."
 
 #: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
@@ -1115,10 +1113,9 @@ msgstr ""
 "gdnative-architecture>`_"
 
 #: ../../docs/about/faq.rst:231
-#, fuzzy
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 msgstr ""
-"`GDNative ada di sini! <https://godotengine.org/article/dlscript-here> `_"
+"`GDNative ada di sini! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
 msgid ""
@@ -1187,12 +1184,11 @@ msgstr ""
 "percakapan antara anggota komunitas godot."
 
 #: ../../docs/about/faq.rst:260
-#, fuzzy
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
-"Banyak pengembangan dalam komunitas Godot akan lebih tertarik untuk "
+"Sebagian besar pengembang di komunitas Godot akan lebih tertarik untuk "
 "mempelajari hal-hal seperti:"
 
 #: ../../docs/about/faq.rst:263
@@ -1416,12 +1412,10 @@ msgid "How can I support Godot development or contribute?"
 msgstr "Bagaimana saya dapat mendukung pengembangan Godot atau berkontribusi?"
 
 #: ../../docs/about/faq.rst:340
-#, fuzzy
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr "Lihat :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:343
-#, fuzzy
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Siapa yang mengerjakan Godot? Bagaimana saya bisa menghubungi Anda?"
 
@@ -1487,7 +1481,6 @@ msgid "Audio"
 msgstr "Suara"
 
 #: ../../docs/about/docs_changelog.rst:29
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
 msgstr ":ref:`doc_sync_with_audio`"
 
@@ -1496,14 +1489,12 @@ msgid "Math"
 msgstr "Matematika"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
 msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:35
-#, fuzzy
 msgid ":ref:`doc_interpolation`"
-msgstr "Android"
+msgstr ":ref:`doc_interpolation`"
 
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -1511,24 +1502,20 @@ msgid "Inputs"
 msgstr "Inputs(keyboard,mouse,joy stick, dll)"
 
 #: ../../docs/about/docs_changelog.rst:40
-#, fuzzy
 msgid ":ref:`doc_input_examples`"
-msgstr "Android"
+msgstr ":ref:`doc_input_examples`"
 
 #: ../../docs/about/docs_changelog.rst:43 ../../docs/tutorials/i18n/index.rst:2
-#, fuzzy
 msgid "Internationalization"
-msgstr "Internationalization"
+msgstr "Internasionalisasi"
 
 #: ../../docs/about/docs_changelog.rst:45
-#, fuzzy
 msgid ":ref:`doc_localization_using_gettext`"
 msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:48
 #: ../../docs/about/docs_changelog.rst:168
 #: ../../docs/tutorials/shading/index.rst:2
-#, fuzzy
 msgid "Shading"
 msgstr "Shading"
 
@@ -1537,22 +1524,18 @@ msgid "Your First Shader Series:"
 msgstr "Seri Shader Pertama Anda:"
 
 #: ../../docs/about/docs_changelog.rst:52
-#, fuzzy
 msgid ":ref:`doc_what_are_shaders`"
 msgstr ":ref:`doc_what_are_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:53
-#, fuzzy
 msgid ":ref:`doc_your_first_canvasitem_shader`"
 msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:54
-#, fuzzy
 msgid ":ref:`doc_your_first_spatial_shader`"
 msgstr ":ref:`doc_your_first_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:55
-#, fuzzy
 msgid ":ref:`doc_your_second_spatial_shader`"
 msgstr ":ref:`doc_your_second_spatial_shader`"
 
@@ -1562,7 +1545,6 @@ msgid "Networking"
 msgstr "Jaringan"
 
 #: ../../docs/about/docs_changelog.rst:60
-#, fuzzy
 msgid ":ref:`doc_webrtc`"
 msgstr ":ref:`doc_webrtc`"
 
@@ -1571,14 +1553,12 @@ msgid "VR"
 msgstr "VR(Virtual Reality)"
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr "Android"
+msgstr ":ref:`doc_vr_starter_tutorial_part_one`"
 
 #: ../../docs/about/docs_changelog.rst:66
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr "Android"
+msgstr ":ref:`doc_vr_starter_tutorial_part_two`"
 
 #: ../../docs/about/docs_changelog.rst:69
 #: ../../docs/about/docs_changelog.rst:183
@@ -1587,19 +1567,16 @@ msgid "Plugins"
 msgstr "Pengaya"
 
 #: ../../docs/about/docs_changelog.rst:71
-#, fuzzy
 msgid ":ref:`doc_android_plugin`"
-msgstr "Android"
+msgstr ":ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr "Android"
+msgstr ":ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:73
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr "Android"
+msgstr ":ref:`doc_visual_shader_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:76
 #: ../../docs/about/docs_changelog.rst:194
@@ -1608,43 +1585,36 @@ msgid "Multi-threading"
 msgstr "Multi-threading(menjalankan kode di thread/core berbeda)"
 
 #: ../../docs/about/docs_changelog.rst:78
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr "Membuat Kontent"
+msgstr ":ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:81
 #: ../../docs/about/docs_changelog.rst:199
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
-msgstr "Membuat Kontent"
+msgstr "Membuat Konten"
 
 #: ../../docs/about/docs_changelog.rst:88
 msgid "Procedural geometry series:"
 msgstr "Seri Procedural Geometri(membuat geometri dengan kode):"
 
 #: ../../docs/about/docs_changelog.rst:84
-#, fuzzy
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ":ref:`Procedural geometry <toc-procedural_geometry>`"
+msgstr ":ref:`Geometri prosedural <toc-procedural_geometry>`"
 
 #: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
 msgstr ":ref:`doc_arraymesh`"
 
 #: ../../docs/about/docs_changelog.rst:86
-#, fuzzy
 msgid ":ref:`doc_surfacetool`"
 msgstr ":ref:`doc_surfacetool`"
 
 #: ../../docs/about/docs_changelog.rst:87
-#, fuzzy
 msgid ":ref:`doc_meshdatatool`"
 msgstr ":ref:`doc_meshdatatool`"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`doc_immediategeometry`"
 msgstr ":ref:`doc_immediategeometry`"
 
@@ -1654,23 +1624,19 @@ msgid "Optimization"
 msgstr "Optimisasi"
 
 #: ../../docs/about/docs_changelog.rst:93
-#, fuzzy
 msgid ":ref:`doc_using_multimesh`"
 msgstr ":ref:`doc_using_multimesh`"
 
 #: ../../docs/about/docs_changelog.rst:94
-#, fuzzy
 msgid ":ref:`doc_using_servers`"
 msgstr ":ref:`doc_using_servers`"
 
 #: ../../docs/about/docs_changelog.rst:97
 #: ../../docs/tutorials/legal/index.rst:2
-#, fuzzy
 msgid "Legal"
 msgstr "Legal"
 
 #: ../../docs/about/docs_changelog.rst:99
-#, fuzzy
 msgid ":ref:`doc_complying_with_licenses`"
 msgstr ":ref:`doc_complying_with_licenses`"
 
@@ -1686,12 +1652,10 @@ msgid "Step by step"
 msgstr "Langkah demi langkah"
 
 #: ../../docs/about/docs_changelog.rst:107
-#, fuzzy
 msgid ":ref:`doc_signals`"
 msgstr ":ref:`doc_signals`"
 
 #: ../../docs/about/docs_changelog.rst:108
-#, fuzzy
 msgid ":ref:`doc_exporting`"
 msgstr ":ref:`doc_exporting`"
 
@@ -1699,12 +1663,10 @@ msgstr ":ref:`doc_exporting`"
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
-#, fuzzy
 msgid "Scripting"
 msgstr "Scripting"
 
 #: ../../docs/about/docs_changelog.rst:113
-#, fuzzy
 msgid ":ref:`doc_gdscript_static_typing`"
 msgstr ":ref:`doc_gdscript_static_typing`"
 
@@ -1713,90 +1675,81 @@ msgid "Best Practices:"
 msgstr "Praktik terbaik:"
 
 #: ../../docs/about/docs_changelog.rst:120
-#, fuzzy
 msgid ":ref:`doc_introduction_best_practices`"
 msgstr ":ref:`doc_introduction_best_practices`"
 
 #: ../../docs/about/docs_changelog.rst:121
-#, fuzzy
 msgid ":ref:`doc_what_are_godot_classes`"
 msgstr ":ref:`doc_what_are_godot_classes`"
 
 #: ../../docs/about/docs_changelog.rst:122
-#, fuzzy
 msgid ":ref:`doc_scene_organization`"
 msgstr ":ref:`doc_scene_organization`"
 
 #: ../../docs/about/docs_changelog.rst:123
-#, fuzzy
 msgid ":ref:`doc_scenes_versus_scripts`"
 msgstr ":ref:`doc_scenes_versus_scripts`"
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`doc_autoloads_versus_internal_nodes`"
 msgstr ":ref:`doc_autoloads_versus_internal_nodes`"
 
 #: ../../docs/about/docs_changelog.rst:125
-#, fuzzy
 msgid ":ref:`doc_node_alternatives`"
 msgstr ":ref:`doc_node_alternatives`"
 
 #: ../../docs/about/docs_changelog.rst:126
-#, fuzzy
 msgid ":ref:`doc_godot_interfaces`"
 msgstr ":ref:`doc_godot_interfaces`"
 
 #: ../../docs/about/docs_changelog.rst:127
-#, fuzzy
 msgid ":ref:`doc_godot_notifications`"
 msgstr ":ref:`doc_godot_notifications`"
 
 #: ../../docs/about/docs_changelog.rst:128
-#, fuzzy
 msgid ":ref:`doc_data_preferences`"
 msgstr ":ref:`doc_data_preferences`"
 
 #: ../../docs/about/docs_changelog.rst:129
 msgid ":ref:`doc_logic_preferences`"
-msgstr ""
+msgstr ":ref:`doc_logic_preferences`"
 
 #: ../../docs/about/docs_changelog.rst:134
 msgid ":ref:`doc_2d_lights_and_shadows`"
-msgstr ""
+msgstr ":ref:`doc_2d_lights_and_shadows`"
 
 #: ../../docs/about/docs_changelog.rst:135
 msgid ":ref:`doc_2d_meshes`"
-msgstr ""
+msgstr ":ref:`doc_2d_meshes`"
 
 #: ../../docs/about/docs_changelog.rst:138 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
-msgstr ""
+msgstr "3D (Tiga Dimensi)"
 
 #: ../../docs/about/docs_changelog.rst:140
 msgid ":ref:`doc_csg_tools`"
-msgstr ""
+msgstr ":ref:`doc_csg_tools`"
 
 #: ../../docs/about/docs_changelog.rst:141
 msgid ":ref:`doc_animating_thousands_of_fish`"
-msgstr ""
+msgstr ":ref:`doc_animating_thousands_of_fish`"
 
 #: ../../docs/about/docs_changelog.rst:142
 msgid ":ref:`doc_controlling_thousands_of_fish`"
-msgstr ""
+msgstr ":ref:`doc_controlling_thousands_of_fish`"
 
 #: ../../docs/about/docs_changelog.rst:145
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "Physics (Fisika)"
 
 #: ../../docs/about/docs_changelog.rst:147
 msgid ":ref:`doc_ragdoll_system`"
-msgstr ""
+msgstr ":ref:`doc_ragdoll_system`"
 
 #: ../../docs/about/docs_changelog.rst:148
 msgid ":ref:`doc_soft_body`"
-msgstr ""
+msgstr ":ref:`doc_soft_body`"
 
 #: ../../docs/about/docs_changelog.rst:151
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:2
@@ -1807,116 +1760,117 @@ msgstr "Animasi"
 
 #: ../../docs/about/docs_changelog.rst:153
 msgid ":ref:`doc_2d_skeletons`"
-msgstr ""
+msgstr ":ref:`doc_2d_skeletons` (Tulang 2D)"
 
 #: ../../docs/about/docs_changelog.rst:154
 msgid ":ref:`doc_animation_tree`"
-msgstr ""
+msgstr ":ref:`doc_animation_tree`"
 
 #: ../../docs/about/docs_changelog.rst:157 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
-msgstr ""
+msgstr "GUI (Antar Muka)"
 
 #: ../../docs/about/docs_changelog.rst:159
 msgid ":ref:`doc_gui_containers`"
-msgstr ""
+msgstr ":ref:`doc_gui_containers`"
 
 #: ../../docs/about/docs_changelog.rst:162
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr ""
+msgstr "Viewports"
 
 #: ../../docs/about/docs_changelog.rst:164
 msgid ":ref:`doc_viewport_as_texture`"
-msgstr ""
+msgstr ":ref:`doc_viewport_as_texture`"
 
 #: ../../docs/about/docs_changelog.rst:165
 msgid ":ref:`doc_custom_postprocessing`"
-msgstr ""
+msgstr ":ref:`doc_custom_postprocessing`"
 
 #: ../../docs/about/docs_changelog.rst:170
 msgid ":ref:`doc_intro_to_shaders_water_workshop`"
-msgstr ""
+msgstr ":ref:`doc_intro_to_shaders_water_workshop`"
 
 #: ../../docs/about/docs_changelog.rst:171
 msgid ":ref:`doc_migrating_to_godot_shader_language`"
 msgstr ""
+":ref:`doc_migrating_to_godot_shader_language` (Migrasi ke bahasa Shader "
+"Godot )"
 
 #: ../../docs/about/docs_changelog.rst:172
 msgid ":ref:`doc_advanced_postprocessing`"
-msgstr ""
+msgstr ":ref:`doc_advanced_postprocessing`"
 
 #: ../../docs/about/docs_changelog.rst:174
 msgid "Shading Reference:"
-msgstr ""
+msgstr "Referensi Shading"
 
 #: ../../docs/about/docs_changelog.rst:176
 msgid ":ref:`doc_shaders`"
-msgstr ""
+msgstr ":ref:`doc_shaders` (Documentasi shaders)"
 
 #: ../../docs/about/docs_changelog.rst:177
 msgid ":ref:`doc_shading_language`"
-msgstr ""
+msgstr ":ref:`doc_shading_language`"
 
 #: ../../docs/about/docs_changelog.rst:178
 msgid ":ref:`doc_spatial_shader`"
-msgstr ""
+msgstr ":ref:`doc_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:179
 msgid ":ref:`doc_canvas_item_shader`"
-msgstr ""
+msgstr ":ref:`doc_canvas_item_shader`"
 
 #: ../../docs/about/docs_changelog.rst:180
 msgid ":ref:`doc_particle_shader`"
-msgstr ""
+msgstr ":ref:`doc_particle_shader`"
 
 #: ../../docs/about/docs_changelog.rst:185
-#, fuzzy
 msgid ":ref:`doc_making_main_screen_plugins`"
-msgstr "Membuat Kontent"
+msgstr ":ref:`doc_making_main_screen_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:186
 msgid ":ref:`doc_spatial_gizmo_plugins`"
-msgstr ""
+msgstr ":ref:`doc_spatial_gizmo_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:189
 #: ../../docs/tutorials/platform/index.rst:2
 msgid "Platform-specific"
-msgstr ""
+msgstr "Platform-specific (Perangkat spesifik)"
 
 #: ../../docs/about/docs_changelog.rst:191
 msgid ":ref:`doc_customizing_html5_shell`"
-msgstr ""
+msgstr ":ref:`doc_customizing_html5_shell`"
 
 #: ../../docs/about/docs_changelog.rst:196
 msgid ":ref:`doc_thread_safe_apis`"
-msgstr ""
+msgstr ":ref:`doc_thread_safe_apis`"
 
 #: ../../docs/about/docs_changelog.rst:201
 msgid ":ref:`doc_making_trees`"
-msgstr ""
+msgstr ":ref:`doc_making_trees`"
 
 #: ../../docs/about/docs_changelog.rst:204
 #: ../../docs/tutorials/misc/index.rst:2
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Lainnya"
 
 #: ../../docs/about/docs_changelog.rst:206
 msgid ":ref:`doc_jitter_stutter`"
-msgstr ""
+msgstr ":ref:`doc_jitter_stutter`"
 
 #: ../../docs/about/docs_changelog.rst:207
 msgid ":ref:`doc_running_code_in_the_editor`"
-msgstr ""
+msgstr ":ref:`doc_running_code_in_the_editor`"
 
 #: ../../docs/about/docs_changelog.rst:208
 msgid ":ref:`doc_change_scenes_manually`"
-msgstr ""
+msgstr ":ref:`doc_change_scenes_manually`"
 
 #: ../../docs/about/docs_changelog.rst:209
 msgid ":ref:`doc_gles2_gles3_differences`"
-msgstr ""
+msgstr ":ref:`doc_gles2_gles3_differences` (Perbedaan GLES2 dan GLES3)"
 
 #: ../../docs/about/docs_changelog.rst:212
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:350
@@ -1927,15 +1881,17 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 #: ../../docs/development/compiling/compiling_for_uwp.rst:33
 msgid "Compiling"
-msgstr ""
+msgstr "Kompilasi"
 
 #: ../../docs/about/docs_changelog.rst:214
 msgid ":ref:`doc_optimizing_for_size`"
-msgstr ""
+msgstr ":ref:`doc_optimizing_for_size` (optimisasi untuk ukuran binary)"
 
 #: ../../docs/about/docs_changelog.rst:215
 msgid ":ref:`doc_compiling_with_script_encryption_key`"
 msgstr ""
+":ref:`doc_compiling_with_script_encryption_key`(Kompilasi dengan  kunci "
+"enkripsi Skrip)"
 
 #: ../../docs/about/docs_changelog.rst:218
 #: ../../docs/development/cpp/index.rst:2
@@ -1943,7 +1899,6 @@ msgid "Engine development"
 msgstr "Pengembangan engine(mesin)"
 
 #: ../../docs/about/docs_changelog.rst:220
-#, fuzzy
 msgid ":ref:`doc_binding_to_external_libraries`"
 msgstr ":ref:`doc_binding_to_external_libraries`"
 
@@ -2035,6 +1990,10 @@ msgid ""
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
+"Ketika anda melihat ikon/warna hijau kecil disebelah kanan, berarti "
+"mesin(godot engine) mendeteksi berkas kosong. Anda juga bisa klik tombol "
+"``Create Folder`` (buat berkas) disebelah nama projek dan sebuah berkas "
+"kosong akan di buat dengan nama projek anda."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
 msgid ""
@@ -2044,18 +2003,28 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
+"Terakhir, anda perlu untuk memilih renderer yang akan digunakan (OpenGL ES "
+"3.0 atau OpenGL ES 2.0). Kelebihan dan kekurangan tiap renderer yang "
+"tertulis dibawah membantu anda untuk memilih, anda bisa merujuk ke  :ref:"
+"`doc_gles2_gles3_differences` untuk detil lebih lanjut. Sebagai catatan, "
+"anda bisa mengganti tipe renderer dari project settings jika anda nanti "
+"berubah pikiran. Untuk tutorial ini renderer manapun sama saja."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
+"Ketika anda selesai mengklik ``Create & Edit`` (buat dan edit). Godot akan "
+"membuat project untuk anda dan membukanya di editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
+"Dilain waktu anda membuka project manager, anda akan melihat projek baru "
+"anda terdaftar. Klik 2X pada nama projek untuk membukanya di editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -2063,38 +2032,49 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
+"Anda bisa mengekspor projek yang sudah ada dengan cara yang sama, "
+"menggunakan tombol Import. Temukan berkas yang berisi projek atau ``project."
+"godot`` file untuk diimpor dan edit."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:75
 msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr ""
+msgstr "Ketika lokasi folder benar, anda akan melihat ceklis hijau."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 msgid "Your first look at Godot’s editor"
-msgstr ""
+msgstr "Penglihatan pertama anda melihat ke Godot editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with empty docks on the right side."
 msgstr ""
+"Selamat datang ke Godot! Dengan project anda terbuka, anda seharusnya "
+"melihat antar muka editor dengan Dock kosong disisi kiri."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
+"Diatas, dari kiri ke kanan, anda melihat **main menus**, the **workspaces**, "
+"and the **playtest buttons**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
 msgid ""
 "On the bottom left side, you have the **FileSystem dock**, where you’ll "
 "manage your project files and assets."
 msgstr ""
+"Disisi bawah kiri, anda punya **FileSystem dock**, dimana anda mengatur "
+"berkas projek dan asset anda."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
+"Disisi kanan, anda menemukan **Scene dock**, dimana daftar konten scene yang "
+"aktif dan **Inspector** dipojok bawah kanan."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid ""
@@ -2102,6 +2082,9 @@ msgid ""
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
+"Ditengah, anda punya **Toolbar** diatas, dimana anda akan temukan tools/alat "
+"untuk pindah, scale/merubah ukuran atau mengunci object scene anda. Itu "
+"berganti ketika anda mengganti ke ruang kerja yang berbeda."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
 msgid ""
@@ -2109,15 +2092,19 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
+"**Bottom Panel** merupakan berkumpulnya debug console, pengedit animasi, "
+"audio mixer ... ruang yg mereka butuhkan cukup besar. Itulah mengapa mereka "
+"di tilap secara default."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
 msgid "The workspaces"
-msgstr ""
+msgstr "Ruang kerja"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
+"Anda bisa melihat 4 tombol area kerja diatas: 2D, 3D, Script dan AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
 msgid ""
@@ -2125,23 +2112,32 @@ msgid ""
 "games, the 2D workspace is where you'll build your interfaces. Press F1 to "
 "access it."
 msgstr ""
+"Anda akan menggunakan **2D workspace** untuk semua tipe games. Dengan "
+"tambahan untuk game 2D, area kerja 2D ialah dimana anda akan "
+"membuild(bangun) antar muka. Tekan F1 untuk mengaksesnya."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:123
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
+"Di **3D workspace**, anda bisa bergelut dengan meshes, cahaya, dan level "
+"design untuk 3D game. Tekan F2 untuk mengaksesnya."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
 msgstr ""
+"Perhatikan tombol perspektif dibah toolbar, itu membuka daftar pilihan "
+"berhubungan dengan 3D viewport."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
+"Baca :ref:`doc_introduction_to_3d` untuk lebih detil tentang **3D "
+"workspace**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:135
 msgid ""
@@ -2149,16 +2145,21 @@ msgid ""
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
 "to search the reference."
 msgstr ""
+"**Script** area kerja merupakan kode editor lengkap dengan debugger, kaya "
+"code auto-completion, dan referensi kode bawaan. Tekan F3 untuk "
+"mengaksesnya, dan F4 untuk mencari referensi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:141
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
+"Terakhir **AssetLib** ialah Pustaka bebas tambahan(add-ons), script dan "
+"asset untuk digunakan projek anda."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid "Modify the interface"
-msgstr ""
+msgstr "Mengubah antar muka"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
 msgid ""
@@ -2166,31 +2167,38 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio Code for instance."
 msgstr ""
+"Antar muka Godot berada dalam 1 window. Anda tidak bisa membelah nya ke "
+"layar lain(multi-monitor) meskipun anda bisa bekerja dengan kode editor "
+"external seperti Atom atau VScode dll."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:152
 msgid "Move and resize docks"
-msgstr ""
+msgstr "Pindah dan Ubah ukuran dock"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:154
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr ""
+"Klik dan tarik pada ujung sisi manapun atau panel untuk mengubah ukuran "
+"entah itu horizontal atau vertikal."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:159
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
-msgstr ""
+msgstr "Klik ikon 3 titik di atas dock manapun untuk mengubah lokasi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
+"Pergi ke ``Editor`` menu dan ``Editro Settings`` untuk mengatur tampilan dan "
+"merasakan editor."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr ""
+msgstr "Scene dan Node"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
 msgid ""
@@ -2199,6 +2207,9 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"Bayangkan sebentar bahwa anda bukan lagi game developper. Melainkan Seorang "
+"Chef! Ganti penampilan hipster  untuk toque(???) dan jas. Sekarang malahan "
+"membuat game, anda membuat resep baru dan lezat untuk tamu anda."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -2207,6 +2218,9 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
+"Jadi, Bagaimana seorang chef membuat resep? Resep dibagi menjadi 2: Pertama "
+"ialah bahan dan kedua adalah perintah untuk menyiapkannya. Dengan begini, "
+"siapa saja bisa mengikuti resep dan merasakan ciptaan luar biasa anda."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -2214,19 +2228,24 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
+"Membuat game di Godot hampir sama saja. Menggunakan engine serasa seperti di "
+"dapur. Disini, *nodes* seperti kulkas penuh dengan bahan yang cocok untuk "
+"dimasak."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
+"Ada berbagai macam tipe node. Beberapa memunculkan gambar, lainnya memutar "
+"suara, lainnya menampilkan Model 3D dll. Ada banyak sekali."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:101
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:46
 #: ../../docs/development/file_formats/tscn.rst:26
 msgid "Nodes"
-msgstr ""
+msgstr "Node"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -2235,32 +2254,38 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
+"Tapi kita mulai dengan yang dasar. Node merupakan bagian penting untuk "
+"membangun sebuah game. Seperti yang dirujuk diatas, sebuah node bisa "
+"melakukan berbagai macam fungsionalitas secara spesifik. Hanya saja, tiap "
+"node selalu memiliki beberapa atribut:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr ""
+msgstr "Memiliki nama."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr ""
+msgstr "Properti yang bisa diedit."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
-msgstr ""
+msgstr "Bisa menerima sebuah callback ke proses tiap frame."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr ""
+msgstr "bisa di extend(untuk punya funsi lebih banyak)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to another node as a child."
-msgstr ""
+msgstr "Bisa ditambahkan ke node lain sebagai child(Anak)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
+"Yang terakhir penting. Node bisa memiliki node lain sebagai children. Ketika "
+"disusun seperti init, node menjadi sebuah **tree**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -2268,6 +2293,10 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
+"Di Godot, kemampuan menyusun node dengan cara ini membuat alat kuat untuk "
+"mengorganizir projek. Sejak tiap node mempunyai fungsi berbeda, "
+"menggabungkan mereka memperbolehkan untuk pembuatan fungsi yang lebih "
+"kompleks."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -2275,41 +2304,51 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
+"Jangan hawatir jika masih belum jelas. Kami akan lanjutkan untuk menjelajahi "
+"di beberapa seksi selanjutnya. Fakta lebih penting untuk diingat untuk "
+"sekarang adalah node ada dan bisa diatur seperti ini."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:75
 msgid "Scenes"
-msgstr ""
+msgstr "Scene"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
 "Now that the concept of nodes has been defined, the next logical step is to "
 "explain what a Scene is."
 msgstr ""
+"Sekarang konsep node telah diterapkan, langkah selanjutnya ialah menjelaskan "
+"apa itu Scene."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
 msgid ""
 "A scene is composed of a group of nodes organized hierarchically (in tree "
 "fashion). Furthermore, a scene:"
 msgstr ""
+"Sebuah scene adalah kumpulan grup node diatur sedemikian rupa(seperti tree). "
+"Lebihnya, sebuah scene:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has one root node."
-msgstr ""
+msgstr "Selalu punya 1 root node."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr ""
+msgstr "bisa disimpan di harddisk dan muat kembali."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr ""
+msgstr "Bisa di *instanced* (more on that later)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
+"Menjalankan sebuah game berarti menjalankan sebuah scene. Sebuah project "
+"bisa berisis beberapa scene, tapi untuk memulai game, salah satunya harus "
+"pilih terlebih dahulu sebagai Scene utama(main scene)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -2317,6 +2356,9 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
+"Mudahnya, Godot editor ialah sebuah **scene editor**. Memiliki banyak alat "
+"untuk editing 2D dan 3D scene juga sebagai antar muka, tapi editor "
+"berdasarkan konsep editing sebuah scene dan node yang memupuknya."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 #: ../../docs/getting_started/editor/external_editor.rst:32
@@ -2329,6 +2371,8 @@ msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
+"Buka projek yang anda buat di :ref:`doc_intro_to_the_editor_interface`, atau "
+"buat baru. Ini akan membuka editor Godot:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
@@ -2336,6 +2380,9 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
+"Seperti ditunjukan sebelumnya, membuat game di Godot seperti didalam dapur, "
+"jadi mari buka kulkas dan tambah beberapa node baru ke projek. Kami mulai "
+"dengan pesan \"Hello World\" yang akan muncul di layar/window."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:89
 msgid ""
@@ -2345,6 +2392,10 @@ msgid ""
 "chosen node as a child of the currently selected node (or, in an empty "
 "scene, as the \"root\" node)."
 msgstr ""
+"Untuk melakukannya perlu menambah Label node. Tekan tombol \"Add Child Node"
+"\" diatas kiri scene dock(ikon plus +). Tombol ini cara utama untuk membuat "
+"node baru ke scene, dan akan selalu menambah node yang dipilih sebagai child "
+"dari node yang telah dipilih(atau discene kosong, sebagai \"root\" node)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
 msgid ""
@@ -2355,6 +2406,13 @@ msgid ""
 "pressing the \"Add Child Node\" button). You can also press the star-shaped "
 "icon to toggle the display of your favorited nodes."
 msgstr ""
+"Didalam scene yang kosong (tanpa root node), dock scene muncul beberapa opsi "
+"untuk menambah secara cepat sebuah root node ke scene. \"2D Scene\" menambah "
+"sebuah Node2D node, \"3D Scene\" menambah sebuah Spatial node, \"User "
+"Interface\" menambah sebuah Control node, dan \"Custom Node\" dimana "
+"membiarkan anda memilih node apapun (jadi sama saja menekan tombol \"Add "
+"Child Node\"). Anda juga bisa menekan tombol ikon bintang untuk memicu "
+"tampilan node favorite anda."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
 msgid ""
@@ -2363,6 +2421,10 @@ msgid ""
 "its root node, likewise not every GUI or 2D scene needs a Control node or "
 "Node2D as their root node."
 msgstr ""
+"Perhatikan bahwa preset ini ada di sini untuk kenyamanan dan tidak wajib "
+"untuk berbagai jenis skena. Tidak setiap skena 3D membutuhkan node Spatial "
+"sebagai node dasarnya, demikian juga tidak setiap skena 2D atau GUI "
+"membutuhkan node Control atau Node2D sebagai node dasarnya."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
@@ -2370,22 +2432,31 @@ msgid ""
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
+"Sekarang, untuk menambahkan node label ke dalam skena ini, Anda dapat "
+"mengklik tombol Node Lainnya atau tombol Tambah Node di bagian atas. Di "
+"skena yang tidak kosong, gunakan tombol Tambah Node untuk membuat node anak."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
+"Ini akan membuka dialog Buat Node, menampilkan daftar panjang dari node yang "
+"dapat dibuat:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:121
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
+"Dari sini, pertama pilih node \"Label\". Mencari dengan kata kunci \"label\" "
+"mungkin merupakan cara tercepat:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
+"Dan akhirnya, Label telah dibuat! Banyak yang terjadi ketika tombol Create/"
+"Buat diklik:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:130
 msgid ""
@@ -2393,6 +2464,9 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
+"Pertama-tama, skena akan berubah menjadi editor 2D (karena Label adalah tipe "
+"Node 2D), dan Label muncul, sedang terpilih, di pojok kiri atas dari "
+"viewport."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
 msgid ""
@@ -2400,28 +2474,36 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
+"Node muncul di editor pohon skena (kotak di pojok kanan atas), dan properti "
+"label muncul di Inspektor (kotak di pojok kanan bawah)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:137
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr ""
+"Langkah selanjutnya adalah mengubah Properti \"Teks\" dari label. Mari kita "
+"ubah menjadi \"Hello World\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:142
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
+"Ok, semuanya siap untuk menjalankan skena! Tekan Tombol MAINKAN SKENA di "
+"bilah atas (atau tekan F6):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:147
 msgid "Aaaand... Oops."
-msgstr ""
+msgstr "Daaaan... Ups."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:151
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
+"Skena harus disimpan sebelum dijalankan, jadi simpan skena dengan nama "
+"seperti Hello.tscn melalui menu Skena -> Simpan:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:156
 msgid ""
@@ -2433,12 +2515,21 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
+"Dan inilah saat sesuatu yang lucu terjadi. Dialog berkas adalah dialog "
+"berkas khusus, dan hanya memungkinkan Anda untuk menyimpan di dalam proyek. "
+"Root proyek adalah ``res://`` yang berarti \"lokasi aset/resource\". Ini "
+"berarti bahwa file hanya dapat disimpan di dalam proyek. Untuk kedepannya, "
+"ketika melakukan operasi berkas di Godot, ingat bahwa `` res: // `` adalah "
+"lokasi aset/resource, dan tidak peduli platform atau lokasi pemasangan, itu "
+"adalah cara untuk menemukan dimana asal berkas aset/resource dari dalam gim."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:164
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
+"Setelah menyimpan skena dan menekan tombol MAINKAN SKENA lagi, demo \"Hello "
+"World\" seharusnya bisa dijalankan (tampil):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:169
 msgid "Success!"
@@ -2450,10 +2541,13 @@ msgid ""
 "one of your monitors, go to **Project → Project Settings → Display → "
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
+"Jika ini tidak segera bekerja dan Anda memiliki tampilan hiDPI pada "
+"setidaknya satu dari monitormu, pergi ke **Proyek → Pengaturan Proyek → "
+"Tampilan → Jendela** lalu aktifkan **Izinkan Hidpi** di bawah **Dpi**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
 msgid "Configuring the project"
-msgstr ""
+msgstr "Mengonfigurasi Proyek"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
 msgid ""
@@ -2462,6 +2556,11 @@ msgid ""
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
+"Ok, saatnya untuk mengonfigurasi proyek. Saat ini, satu-satunya cara untuk "
+"menjalankan sesuatu yaitu dengan mengeksekusi skena saat ini. Proyek, "
+"bagaimanapun mungkin bisa memiliki banyak skena, jadi salah satunya harus "
+"diatur sebagai skena utama. Skena ini nantinya akan dimuat setiap kali "
+"proyek dijalankan."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
@@ -2471,22 +2570,36 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
+"Pengaturan ini semuanya tersimpan dalam berkas project.godot, yang merupakan "
+"berkas teks biasa dalam format win.ini (untuk memudahkan penyuntingan). Ada "
+"lusinan pengaturan yang dapat Anda ubah dalam berkas ini untuk mengubah "
+"bagaimana proyek dijalankan. Untuk menyederhanakan proses ini, Godot "
+"menyediakan dialog pengaturan proyek, yang bertindak sebagai semacam "
+"frontend untuk menyunting berkas project.godot."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:194
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
+"Untuk mengakses dialog ini, pilih Proyek -> Pengaturan Proyek. Cobalah "
+"sekarang."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
+"Setelah jendela terbuka, mari kita pilih skena utama. Cari properti "
+"`Aplikasi/Jalankan/Skena Utama` dan klik pada properti ini untuk memilih "
+"'Hello.tscn'."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:201
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
+"Sekarang, dengan perubahan ini, ketika Anda menekan tombol Mainkan biasa "
+"(atau F5), skena ini akan berjalan, tidak peduli skena mana yang saat ini "
+"aktif sedang disunting."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:204
 msgid ""
@@ -2495,6 +2608,10 @@ msgid ""
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
+"Dialog pengaturan proyek menyediakan banyak opsi yang dapat disimpan ke "
+"dalam berkas project.godot dan menunjukkan nilai bakunya. Jika Anda mengubah "
+"nilai ini, centangnya ditandai di sebelah kiri namanya. Ini berarti bahwa "
+"properti tersebut akan disimpan ke berkas project.godot dan diingat."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:209
 msgid ""
@@ -2502,10 +2619,13 @@ msgid ""
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
+"Sebagai catatan, juga memungkinkan untuk menambahkan konfigurasi khusus dan "
+"membacanya pada saat menjalankannya menggunakan singleton :ref:"
+"`ProjectSettings <class_ProjectSettings>`."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:213
 msgid "To be continued..."
-msgstr ""
+msgstr "Bersambung..."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:215
 msgid ""
@@ -2513,10 +2633,13 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
+"Tutorial ini berbicara tentang \"skena dan node\", tetapi sejauh ini hanya "
+"ada *satu* skena dan *satu* node! Jangan khawatir, tutorial selanjutnya akan "
+"diperluas..."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr ""
+msgstr "Menginstansi"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:9
 msgid ""
@@ -2526,12 +2649,21 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
+"Membuat skena tunggal dan menambahkan node ke dalamnya mungkin cocok untuk "
+"proyek kecil, tetapi ketika ukuran proyek semakin besar dan kompleks, "
+"banyaknya node dengan cepat dapat menjadi tak terkendali. Untuk "
+"mengatasinya, Godot memungkinkan satu proyek dipecah menjadi beberapa skena. "
+"Dengan cara ini memberikan Anda dengan perkakas ampuh yang membantu Anda "
+"mengatur komponen yang berbeda dari gim Anda."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
+"Pada :ref:`doc_scenes_and_nodes`, Anda belajar bahwa skena merupakan "
+"kumpulan node yang disusun dalam struktur pohon, dengan node tunggal sebagai "
+"akar pohon(root node)-nya."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -2539,32 +2671,43 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"Anda dapat membuat sebanyak mungkin skena yang Anda inginkan dan "
+"menyimpannya ke dalam diska. Skena yang tersimpan dalam hal ini disebut "
+"\"Packed Scenes\" dan memiliki ekstensi berkas ``.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
+"Begitu skena sudah disimpan, skena ini dapat diinstansi ke dalam skena lain "
+"jika skena tersebut sudah ada node lain."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
 msgstr ""
+"Pada gambar di atas, Skena B telah ditambahkan ke Skena A sebagai sebuah "
+"instance."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
-msgstr ""
+msgstr "Menginstansi disertai contoh"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
+"Untuk belajar bagaimana alur menginstansi bekerja, mari kita mulai dengan "
+"mengunduh sampel proyek: :download:`instancing.zip <files/instancing.zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
+"Ekstrak zip proyek ini dimanapun Anda suka. Lalu buka Godot dan tambahkan "
+"proyek ini ke dalam manajer proyek menggunakan tombol \"Impor\":"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -2572,6 +2715,9 @@ msgid ""
 "can find inside it. After doing this, the new project will appear on the "
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
+"Telusuri folder hasil ektrak zip tadi dan buka berkas \"project.godot\" yang "
+"ada di dalamnya. Setelah melakukan ini, proyek baru akan muncul di daftar "
+"proyek. Sunting proyeknya dengan menekan tombol 'Sunting'."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -2580,10 +2726,15 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
+"Proyek ini berisi 2 skena: \"Ball.tscn\" dan \"Main.tscn\". Skena \"Ball\" "
+"menggunakan `RigidBody2D <class_RigidBody2D>` untuk memberikan perilaku "
+"fisika sedangkan skena \"Main\" memiliki sekumpulan rintangan untuk bola "
+"sehingga bisa bertabrakan dengannya (menggunakan :ref:`StaticBody2D "
+"<class_StaticBody2D>`)."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr ""
+msgstr "Buka skena ``Main``, dan kemudian pilih node akarnya:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
@@ -2591,6 +2742,10 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
+"Kita ingin menambahkan instance dari skena ``Ball`` sebagai anak dari "
+"``Main``. Klik tombol dengan bentuk seperti rantai (teks hover-nya "
+"mengatakan \"Instance berkas skena sebagai Node.\") dan pilh berkas ``Ball."
+"tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -2598,14 +2753,17 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
+"Bola akan ditempatkan di pojok kiri atas dari area layar (ini merupakan "
+"``(0,0)`` dalam kordinat layar). Klik dan seret bola di suatu tempat di "
+"dekat atas-tengah dari skena:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr ""
+msgstr "Tekan \"JALANKAN\" dan lihatlah bola jatuh ke bawah layar:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple instances"
-msgstr ""
+msgstr "Beberapa instance"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
 msgid ""
@@ -2613,26 +2771,33 @@ msgid ""
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (Ctrl-D):"
 msgstr ""
+"Anda dapat menambahkan sebanyak mungkin instance yang Anda inginkan ke dalam "
+"skena, bisa menggunakan tombol \"Instance\" lagi, atau dengan mengklik "
+"instance bola dan menekan \"Duplikasi\" (Ctrl-D):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr ""
+msgstr "Jalankan skena sekali lagi dan semua bolanya akan jatuh."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"
-msgstr ""
+msgstr "Menyunting instance"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
 msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by clicking on the "
 "down arrow and selecting \"New PhysicsMaterial\"."
 msgstr ""
+"Buka skena ``Ball`` dan tambahkan ``PhysicsMaterial`` dengan mengklik panah "
+"bawah dan memilih \"PhysicsMaterial Baru\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr ""
+"Kemudian, kembangkan (expand) material dengan mengkliknya, dan atur nilai "
+"properti ``Pantulan (Bounce)`` ke ``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:103
 msgid ""
@@ -2640,6 +2805,9 @@ msgid ""
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
+"Tenkan \"Play\" dan dapat diperhatikan seluruh instansi bola lebih memantul "
+"sekarang. Karena bola-bola tersebut berdasarkan Scene yang tersimpan, "
+"mengubah pada Scene tersebut akan berefek ke seluruh instansi."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:107
 msgid ""
@@ -2665,7 +2833,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:214
 msgid "Conclusion"
-msgstr ""
+msgstr "Kesimpulan"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:125
 msgid ""
@@ -2680,7 +2848,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
-msgstr ""
+msgstr "Ikhtisar"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
@@ -2702,7 +2870,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:17
 msgid "Design language"
-msgstr ""
+msgstr "Bahasa Desain"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
 msgid ""

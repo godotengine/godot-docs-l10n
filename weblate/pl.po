@@ -19,15 +19,18 @@
 # Jacek Witkowski <jacek_witkowski@wp.pl>, 2018.
 # Jakub Korsak <jakub.korsak@protonmail.com>, 2020.
 # KolegaLiterat <jawor34@gmail.com>, 2018.
+# Kolunio <kolunio15wie@gmail.com>, 2020.
 # Letero <jkurzynski93@gmail.com>, 2020.
 # luluu9 <maxmax89_89@o2.pl>, 2018.
 # Maciej <WriteToFeniks@gmail.com>, 2019.
+# Matshiro <mrmatshiro@gmail.com>, 2020.
 # Michael <michael0march@gmail.com>, 2019.
 # Myver <igormakarowicz@gmail.com>, 2019.
 # Patryk Majos <psychobutterpl@gmail.com>, 2019.
 # Paweł Litwinowicz <spam@litwinowicz.eu>, 2018.
 # Piotr Bojczewski <piotr200310@outlook.com>, 2018.
 # piotrekpajak <araneo@protonmail.com>, 2018.
+# Przemyslaw Osmanski <przemek-o@soft-system.pl>, 2020.
 # Przemysław Pierzga <przemyslawpierzga@gmail.com>, 2019.
 # Pytek1 <bpieniak1@gmail.com>, 2018.
 # Rafał Mikrut <synaptykq@gmail.com>, 2018.
@@ -46,8 +49,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-02-08 22:29+0100\n"
-"PO-Revision-Date: 2020-02-06 09:47+0000\n"
-"Last-Translator: Garreciq <adamzygiel@gmail.com>\n"
+"PO-Revision-Date: 2020-03-13 16:33+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -56,7 +59,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.0-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -923,18 +926,16 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "Jakie typy plików 3D obsługuje Godot?"
 
 #: ../../docs/about/faq.rst:150
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Prawdę powiedziawszy, wsparcie Godot Collada jest dobre, proszę użyć "
-"`OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-"
-"Tools>`_ dla maksymalnej kompatybilności, jeśli używasz Maya lub 3DS Max. "
-"Jeśli używasz Blendera, zajrzyj do naszego własnego `lepszego eksportera "
-"Collada` <https://godotengine.org/download>`_."
+"Godot wpiera Collada poprzez `OpenCollada  <https://github.com/KhronosGroup/"
+"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). Jeśli używasz "
+"Blendera, sprawdź nasz `Lepszy Eksporter Collada` <https://godotengine.org/"
+"download>`_."
 
 #: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
@@ -946,6 +947,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX jest wpierane przez bibliotekę Open Asset Import. FBX jest jednak "
+"opatentowany, więc jeśli jest to odpowiednie dla Twojego sposobu pracy "
+"zalecamy użycie innych, wypisanych poniżej, formatów."
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -963,9 +967,9 @@ msgid ""
 msgstr ""
 "Celem Godot jest stworzenie darmowego i otwarto-źródłowego silnika opartego "
 "na licencji MIT, który jest modularny i rozszerzalny. Nie ma planów, aby "
-"społeczność rozwijająca rdzeń Godot'a wspierała jakiekolwiek SDK, które jest "
-"third-party, posiada zamknięte źródło czy jest własnościowe. Integrowanie "
-"tego z rdzeniem Godot'a byłoby przeciwne etyce Godot'a."
+"społeczność rozwijająca rdzeń Godot'a wspierała jakiekolwiek SDK firm "
+"trzecich które posiada zamknięte źródła czy jest własnościowe. Integrowanie "
+"tego z rdzeniem Godot'a byłoby sprzeczne z jego etyką."
 
 #: ../../docs/about/faq.rst:166
 msgid ""
@@ -983,8 +987,8 @@ msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
-"Żeby zobaczyć jak support Twojego wyboru SDK nadal są dostarczane , wejdź w "
-"zakładkę \"wtyczki,, poniżej."
+"Aby sprawdzić, czy nadal dostarczane jest wsparcie dla wybranego przez "
+"Ciebie SDK, sprawdź pytanie o Wtyczki znajdujące się poniżej."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -994,9 +998,9 @@ msgid ""
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
 "Jeśli znasz zewnętrzne SDK, które nie jest jeszcze wspierane przez Godota, a "
-"oferuje możliwość integracji zgodnie z licencją open--source, rozważ "
+"oferuje możliwość integracji zgodnie z licencją open-source, rozważ "
 "rozpoczęcie pracy nad integracją na własną rękę. Godot nie należy do jednej "
-"osoby; należy do społeczności, a ona rozwija się dzięki ambitnym członkom, "
+"osoby. Należy do społeczności, a ona rozwija się dzięki ambitnym członkom, "
 "takim jak Ty."
 
 #: ../../docs/about/faq.rst:179
@@ -1018,10 +1022,10 @@ msgstr ""
 "Pytanie to pojawia się często i prawdopodobnie wynika z niezrozumienia, "
 "jakie stworzyło Apple, który pierwotnie podwoiło rozdzielczość swoich "
 "urządzeń. Skłoniło to ludzi do myślenia, że posiadanie tych samych zasobów w "
-"różnych rozdzielczościach to dobry pomysł i tak wiele osób podążyło tą "
-"drogą. Początkowo działało to do pewnego stopnia i tylko na urządzenia "
-"Apple, ale następnie powstało kilka urządzeń z systemem Android i Apple o "
-"różnych rozdzielczościach i współczynnikach proporcji, z bardzo szeroką gamą "
+"różnych rozdzielczościach to dobry pomysł i wiele osób podążyło tą drogą. "
+"Początkowo w pewnym stopniu to działało na urządzeniach firmy Apple. Jednak "
+"później powstały podobne urządzenia z systemem Android oraz Apple o różnych "
+"rozdzielczościach i współczynnikach proporcji, z bardzo szeroką gamą "
 "rozmiarów i interfejsów DPI."
 
 #: ../../docs/about/faq.rst:189
@@ -1498,14 +1502,12 @@ msgid "Math"
 msgstr "Matematyka"
 
 #: ../../docs/about/docs_changelog.rst:34
-#, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr ":ref:`Shadery <doc_shaders>`"
+msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:35
-#, fuzzy
 msgid ":ref:`doc_interpolation`"
-msgstr ":ref:`Eksportowanie <class_exportowanie>`"
+msgstr ":ref:`doc_interpolation`"
 
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -1513,9 +1515,8 @@ msgid "Inputs"
 msgstr "Wejścia"
 
 #: ../../docs/about/docs_changelog.rst:40
-#, fuzzy
 msgid ":ref:`doc_input_examples`"
-msgstr ":ref:`Sygnały <class_sygnały>`"
+msgstr ":ref:`doc_input_examples`"
 
 #: ../../docs/about/docs_changelog.rst:43 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
@@ -1540,19 +1541,16 @@ msgid ":ref:`doc_what_are_shaders`"
 msgstr ":ref:`doc_what_are_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:53
-#, fuzzy
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr " :ref:`Shadery cząstek<doc_particle_shader>`"
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:54
-#, fuzzy
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr " :ref:`Shadery przestrzenne <doc_spatial_shader>`"
+msgstr ":ref:`doc_your_first_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:55
-#, fuzzy
 msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr " :ref:`Shadery przestrzenne <doc_spatial_shader>`"
+msgstr ":ref:`doc_your_second_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:58
 #: ../../docs/tutorials/networking/index.rst:2
@@ -1560,23 +1558,20 @@ msgid "Networking"
 msgstr "Sieć"
 
 #: ../../docs/about/docs_changelog.rst:60
-#, fuzzy
 msgid ":ref:`doc_webrtc`"
-msgstr ":ref:`Eksportowanie <class_exportowanie>`"
+msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:63 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
 msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr ":ref:`Poradnik początków z VR <doc_vr_starter_tutorial>`"
+msgstr ":ref:`doc_vr_starter_tutorial_part_one`"
 
 #: ../../docs/about/docs_changelog.rst:66
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr ":ref:`Poradnik początków z VR <doc_vr_starter_tutorial>`"
+msgstr ":ref:`doc_vr_starter_tutorial_part_two`"
 
 #: ../../docs/about/docs_changelog.rst:69
 #: ../../docs/about/docs_changelog.rst:183
@@ -1585,20 +1580,16 @@ msgid "Plugins"
 msgstr "Wtyczki"
 
 #: ../../docs/about/docs_changelog.rst:71
-#, fuzzy
 msgid ":ref:`doc_android_plugin`"
-msgstr ""
-":ref:`Tworzenie wtyczek ekranu głównego <doc_making_main_screen_plugins>`"
+msgstr ":ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr "Tworzenie wtyczek"
+msgstr ":ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:73
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr "Tworzenie wtyczek"
+msgstr ":ref:`doc_visual_shader_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:76
 #: ../../docs/about/docs_changelog.rst:194
@@ -1607,9 +1598,8 @@ msgid "Multi-threading"
 msgstr "Wielowątkowość"
 
 #: ../../docs/about/docs_changelog.rst:78
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr " :ref:`Tworzenie drzew <doc_making_trees>`"
+msgstr ":ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:81
 #: ../../docs/about/docs_changelog.rst:199
@@ -1622,29 +1612,24 @@ msgid "Procedural geometry series:"
 msgstr "Geometria proceduralna:"
 
 #: ../../docs/about/docs_changelog.rst:84
-#, fuzzy
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr " :ref:`Shadery cząstek<doc_particle_shader>`"
+msgstr ":ref:`Geometria generowana procedularnie <toc-procedural_geometry>`"
 
 #: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr ":ref:`Kształty 2D <doc_2d_meshes>`"
+msgstr ":ref:`doc_arraymesh`"
 
 #: ../../docs/about/docs_changelog.rst:86
-#, fuzzy
 msgid ":ref:`doc_surfacetool`"
-msgstr ":ref:`CSG <doc_csg_tools>`"
+msgstr ":ref:`doc_surfacetool`"
 
 #: ../../docs/about/docs_changelog.rst:87
-#, fuzzy
 msgid ":ref:`doc_meshdatatool`"
-msgstr ":ref:`CSG <doc_csg_tools>`"
+msgstr ":ref:`doc_meshdatatool`"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`doc_immediategeometry`"
-msgstr " :ref:`Shadery cząstek<doc_particle_shader>`"
+msgstr ":ref:`doc_immediategeometry`"
 
 #: ../../docs/about/docs_changelog.rst:91
 #: ../../docs/tutorials/optimization/index.rst:2
@@ -1652,14 +1637,12 @@ msgid "Optimization"
 msgstr "Optymalizacja"
 
 #: ../../docs/about/docs_changelog.rst:93
-#, fuzzy
 msgid ":ref:`doc_using_multimesh`"
-msgstr " :ref:`Tworzenie drzew <doc_making_trees>`"
+msgstr ":ref:`doc_using_multimesh`"
 
 #: ../../docs/about/docs_changelog.rst:94
-#, fuzzy
 msgid ":ref:`doc_using_servers`"
-msgstr " :ref:`Tworzenie drzew <doc_making_trees>`"
+msgstr ":ref:`doc_using_servers`"
 
 #: ../../docs/about/docs_changelog.rst:97
 #: ../../docs/tutorials/legal/index.rst:2
@@ -1667,11 +1650,8 @@ msgid "Legal"
 msgstr "Informacje prawne"
 
 #: ../../docs/about/docs_changelog.rst:99
-#, fuzzy
 msgid ":ref:`doc_complying_with_licenses`"
-msgstr ""
-":ref:`Kompilowanie z użyciem klucza szyfrowania "
-"skryptu<doc_compiling_with_script_encryption_key>`"
+msgstr ":ref:`doc_complying_with_licenses`"
 
 #: ../../docs/about/docs_changelog.rst:102
 msgid "New tutorials since version 3.0"
@@ -1685,14 +1665,12 @@ msgid "Step by step"
 msgstr "Krok po kroku"
 
 #: ../../docs/about/docs_changelog.rst:107
-#, fuzzy
 msgid ":ref:`doc_signals`"
-msgstr ":ref:`Sygnały <class_sygnały>`"
+msgstr ":ref:`doc_signals`"
 
 #: ../../docs/about/docs_changelog.rst:108
-#, fuzzy
 msgid ":ref:`doc_exporting`"
-msgstr ":ref:`Eksportowanie <class_exportowanie>`"
+msgstr ":ref:`doc_exporting`"
 
 #: ../../docs/about/docs_changelog.rst:111
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
@@ -3797,13 +3775,12 @@ msgstr ""
 "gier. Jej wykonanie następuje po obliczeniu fizyki w grach jednowątkowych."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
-#, fuzzy
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Prostym sposobem sprawdzenia tego, jak działa funkcja ``_process()`` jest "
-"utworzenie sceny z pojedynczym węzłem Label, z następującym skryptem:"
+"Prostym sposobem na sprawdzenie działania funkcji ``_process()`` w praktyce, "
+"jest utworzenie sceny z pojedynczym węzłem Label, z następującym skryptem:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -4153,7 +4130,6 @@ msgstr ""
 "kiedy uruchomisz scenę. Możesz zostawić *Czas oczekiwania* na 1 sekundę."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:42
-#, fuzzy
 msgid ""
 "Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
 "and you'll see all of the signals that the selected node can emit. In the "
@@ -4162,7 +4138,7 @@ msgid ""
 msgstr ""
 "Obok zakładki \"Inspektor\" znajduje się zakładka z etykietą \"Węzeł\". "
 "Kliknij na tę zakładkę, żeby zobaczyć wszystkie sygnały, jakie ten węzeł "
-"może wyemitować. w przypadku węzła  typu Timer, zależy nam na sygnale "
+"może wyemitować. w przypadku węzła typu Timer, zależy nam na sygnale "
 "\"timeout\". Ten sygnał jest emitowany za każdym razem, kiedy czas Timera "
 "osiąga ``0``."
 
@@ -84636,20 +84612,20 @@ msgid ""
 "`BornCG <https://www.youtube.com/playlist?"
 "list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_"
 msgstr ""
+"`BornCG <https://www.youtube.com/playlist?"
+"list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_"
 
 #: ../../docs/community/tutorials.rst:38
-#, fuzzy
 msgid "Text tutorials"
-msgstr "Samouczki"
+msgstr "Samouczki tekstowe"
 
 #: ../../docs/community/tutorials.rst:40
 msgid "`Godot Recipes by KidsCanCode <http://godotrecipes.com/>`__"
 msgstr ""
 
 #: ../../docs/community/tutorials.rst:41
-#, fuzzy
 msgid "`Steincodes <https://steincodes.tumblr.com>`__"
-msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
+msgstr "`Steincodes <https://steincodes.tumblr.com>`__"
 
 #: ../../docs/community/tutorials.rst:44
 msgid "Devlogs"
@@ -84660,6 +84636,8 @@ msgid ""
 "`Andrea Catania (Physics & AI) <https://www.youtube.com/channel/"
 "UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 msgstr ""
+"`Andrea Catania (Fizyka i SI) <https://www.youtube.com/channel/"
+"UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 
 #: ../../docs/community/tutorials.rst:47
 msgid ""

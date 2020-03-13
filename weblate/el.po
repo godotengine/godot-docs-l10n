@@ -6,7 +6,7 @@
 # Ahilleas Balaktsis <ahibala@gmail.com>, 2019.
 # Andy <bookoftrust@gmail.com>, 2018.
 # Eternal Death <eternaldeath0001@gmail.com>, 2019.
-# George Tsiamasiotis <gtsiam@windowslive.com>, 2018-2019.
+# George Tsiamasiotis <gtsiam@windowslive.com>, 2018-2020.
 # Konstantinos Poulopoulos <aatyrael@gmail.com>, 2018.
 # Michael Maridakis <michael.marid@gmail.com>, 2018.
 # Overloaded <manoschool@yahoo.gr>, 2019-2020.
@@ -17,9 +17,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-02-08 22:29+0100\n"
-"PO-Revision-Date: 2020-01-04 14:21+0000\n"
-"Last-Translator: Overloaded @ Orama Interactive http://orama-interactive."
-"com/ <manoschool@yahoo.gr>\n"
+"PO-Revision-Date: 2020-02-09 19:05+0000\n"
+"Last-Translator: George Tsiamasiotis <gtsiam@windowslive.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/el/>\n"
 "Language: el\n"
@@ -27,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10\n"
+"X-Generator: Weblate 3.11-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -93,11 +92,11 @@ msgid ""
 "offer."
 msgstr ""
 "Καλώς ορίσατε στο επίσημο εγχειρίδιο χρήσης της μηχανής Godot, της δωρεάν, "
-"ανοικτού κώδικα και κοινοτικά καθοδηγούμενης 2D και 3D παιχνιδομηχανής ! Εάν "
-"είσαι καινούριος χρήστης αυτού του εγχειριδίου τότε σου προτείνουμε να "
+"ανοικτού κώδικα και κοινοτικά καθοδηγούμενης 2D και 3D μηχανής παιχνιδιών! "
+"Εάν είσαι καινούριος χρήστης αυτού του εγχειριδίου τότε σου προτείνουμε να "
 "κάνεις μια σύντομη επισκόπηση των περιεχομένων του παρόντος εγγράφου, "
 "ανατρέχοντας στην εισαγωγική σελίδα :ref:`introduction page "
-"<doc_about_intro>` ."
+"<doc_about_intro>`."
 
 #: ../../docs/index.rst:34
 msgid ""
@@ -143,7 +142,7 @@ msgstr ""
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -287,6 +286,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"Η σελίδα :ref:`Tutorials and resources <doc_community_tutorials>` απαριθμεί "
+"τα εκπαιδευτικά βίντεο που συνέβαλε η κοινότητα. Αν προτιμάτε το βίντεο αντί "
+"για κείμενο, αυτά αξίζουν μια ματιά."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -294,6 +296,10 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Σε περίπτωση που αντιμετωπίσεις πρόβλημα με τους οδηγούς ή το πρότζεκτ σου, "
+"μπορείς να βρεις βοήθεια στα διάφορα :ref:`Κοινοτικά κανάλια "
+"<doc_community_channels>`, ιδιαίτερα στην κοινότητα του Discord της Godot, "
+"Q&A και IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -424,17 +430,16 @@ msgstr ""
 "Περιέχει επίσης το :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
 "games. It starts with the :ref:`Step by step <toc-learn-step_by_step>` "
 "tutorial which should be the entry point for all new users."
 msgstr ""
-"Το τμήμα :ref:`sec-learn` είναι ο κύριος λόγος ύπαρξης αυτής της "
-"τεκμηρίωσης, καθώς περιέχει όλες τις απαραίτητες πληροφορίες για τη χρήση "
-"της μηχανής για παραγωγή παιχνιδιών. Αρχίζει με το μάθημα :ref:`Βήμα προς "
-"βήμα <toc-learn-step_by_step>`, το οποίο θα πρέπει να είναι το σημείο "
+"Η ενότητα :ref:`sec-learn` είναι ο κύριος λόγος ύπαρξης αυτής της "
+"τεκμηρίωσης, καθώς περιέχει όλες τις απαραίτητες πληροφορίες σχετικά με τη "
+"χρήση της μηχανής για παραγωγή παιχνιδιών. Αρχίζει με τον οδηγό :ref:`Βήμα "
+"προς βήμα <toc-learn-step_by_step>`, ο οποίος θα πρέπει να είναι το σημείο "
 "εισαγωγής για όλους τους νέους χρήστες."
 
 #: ../../docs/about/introduction.rst:91
@@ -501,7 +506,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -521,8 +526,10 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Η Godot είναι ελεύθερο λογισμικό ανοικτού κώδικα διαθέσιμο υπό την "
-"`εγκεκριμένη από τον OSI <https://opensource.org/licenses/MIT>`_ άδεια MIT."
+"Η Godot είναι `Eλεύθερο και Ανοικτού-Κώδικα Λογισμικό <https://en.wikipedia."
+"org/wiki/Free_and_open-source_software>`_ διαθέσιμο υπό την `εγκεκριμένη από "
+"τον OSI <https://opensource.org/licenses/MIT>`_ άδεια MIT. Αυτό σημαίνει "
+"τόσο «ελεύθερο σαν τον λόγο», όσο και «δωρεάν σαν την μπύρα»."
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
@@ -551,9 +558,10 @@ msgid ""
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Η τεκμηρίωση αυτή υπόκεινται της ελεύθερης άδειας Creative Commons "
-"Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/"
-">`_), με  απόδοση \"Juan Linietsky, Ariel Manzur και η κοινότητα της Godot\"."
+"Όλα τα περιεχόμενα αυτής της συνοδευτικής τεκμηρίωσης υπόκεινται της "
+"ελεύθερης άδειας Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
+"creativecommons.org/licenses/by/3.0/>`_), με απόδοση «Juan Linietsky, Ariel "
+"Manzur και η κοινότητα της Godot»."
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -584,7 +592,7 @@ msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"Επίσης δες `την σελίδα άδειας στην ιστοσελίδα της Godot  <https://"
+"Δείτε επίσης την `σελίδα άδειας στην ιστοσελίδα της Godot <https://"
 "godotengine.org/license>`_."
 
 #: ../../docs/about/faq.rst:34
@@ -683,7 +691,6 @@ msgstr ""
 "ref:`Προγραμματσμός <toc-learn-scripting>`."
 
 #: ../../docs/about/faq.rst:71
-#, fuzzy
 msgid ""
 "If you are just starting out with either Godot or game development in "
 "general, GDScript is the recommended language to learn and use since it is "
@@ -692,14 +699,14 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
-"Εάν μόλις τώρα ξεκινάτε είτε με τη μηχανή Godot ή με την ανάπτυξη παιχνιδιών "
-"γενικά, η GDScript είναι η προτεινόμενη γλώσσα για να μάθετε και να "
-"χρησιμοποιήσετε από τη στιγμή που είναι απευθείας συγγενής με την μηχανή "
-"Godot. Ενώ οι γλώσσες scripting, έχουν την τάση να είναι λιγότερο αποδοτικές "
-"σε σχέση με τις χαμηλού επιπέδου γλώσσες μακροπρόθεσμα, για το πρωτότυπο, "
-"την ανάπτυξη Minimum Viable Products(MVPs), επικεντρώνοντας στο Time-To-"
-"Market (TTM), η GDScript θα παρέχει έναν γρήγορο, φιλικό, και ικανό τρόπο "
-"για να αναπτύξετε τα παιχνίδια σας."
+"Εάν μόλις τώρα ξεκινάτε με τη μηχανή Godot ή με την ανάπτυξη παιχνιδιών "
+"γενικά, η GDScript είναι η προτεινόμενη γλώσσα για εκμάθηση και χρήση, καθώς "
+"είναι εγγενής στην Godot. Ενώ οι γλώσσες scripting τείνουν να είναι, "
+"μακροπρόθεσμα, λιγότερο αποδοτικές από τις χαμηλότερου επιπέδου γλώσσες, για "
+"την ανάπτυξη πρωτοτύπων, Ελαχίστων Δυνατών Προϊόντων (Minimum Viable Product "
+"ή MVP) με επίκεντρο τον Χρόνο-Για-Αγορά (Time-To-Market ή TTM), η GDScript "
+"θα παρέχει έναν γρήγορο, φιλικό, και ικανό τρόπο για να αναπτύξετε τα "
+"παιχνίδια σας."
 
 #: ../../docs/about/faq.rst:78
 msgid ""
@@ -793,7 +800,6 @@ msgstr ""
 "χαρακτηριστικών σε ένα σύνολο απο γλώσσες."
 
 #: ../../docs/about/faq.rst:112
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -805,15 +811,15 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"Η σύντομη απάντηση είναι ότι θεωρούμε ότι η επιπρόσθετη πολυπλοκότητα και "
-"από την μεριά σας (όταν στην αρχή μαθαίνετε την Godot και την GDScript) "
-"καθώς και από την πλευρά μας (συντήρηση) αξίζει την πιο ενσωματωμένη και "
-"ανώδυνη εμπειρία έναντι της έλξης περισσοτέρων χρηστών που κατέχουν ήδη "
-"γνωστές γλώσσες προγραμματισμού, γεγονός που θα οδηγούσε σε χειρότερη "
-"εμπειρία. Καταλαβαίνουμε ότι μπορεί να προτιμάτε να χρησιμοποιήσετε μια άλλη "
-"γλώσσα στην Godot (δείτε την παραπάνω λίστα για διαφορετικές επιλογές), αλλά "
-"σας ενθαρρύνουμε έντονα να τη δοκιμάσετε και να δειτε μόνοι σας τα "
-"πλεονεκτήματα."
+"Αφού η Godot είναι έργο ανοικτού κώδικα, ήταν εξαρχής απαραίτητη η έμφαση σε "
+"μία πιο ενσωματωμένη και ανώδυνη εμπειρία έναντι της προσέλκυσης πρόσθετων "
+"χρηστών μέσω της υποστήριξης πιο οικείων γλωσσών προγραμματισμού -- ειδικά "
+"όταν η υποστήριξη αυτόν των πιο οικείων γλωσσών θα οδηγούσε σε χειρότερη "
+"εμπειρία. Κατανοούμε αν θα προτιμούσατε μία διαφορετική γλώσσα στην Godot "
+"(δείτε την παραπάνω λίστα υποστηριζόμενων επιλογών). Παρόλα αυτά, εάν δεν "
+"έχετε δοκιμάσει την GDScript, δοκιμάστε την για **τρεις μέρες**. Όπως και η "
+"Godot, μόλις δείτε πόσο ισχυρή είναι, και πόσο γρήγορη γίνεται η ανάπτυξη, "
+"πιστεύουμε πως θα βρείτε μια θέση για την GDScript."
 
 #: ../../docs/about/faq.rst:121
 msgid ""
@@ -837,35 +843,33 @@ msgstr ""
 "για τη Godot ήταν:"
 
 #: ../../docs/about/faq.rst:129
-#, fuzzy
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
-"Δεν υπάρχει καλή υποστήριξη για νήματα στα περισσότερα VM, και η Godot "
-"χρησιμοποιεί νήματα (Lua, Python, Squirrel, JS, AS, κλπ.)."
+"Ελλιπής υποστήριξη για νήματα στα περισσότερα VM δεσμών ενεργειών, και η "
+"Godot χρησιμοποιεί νήματα (Lua, Python, Squirrel, JS, AS, κλπ.)."
 
 #: ../../docs/about/faq.rst:131
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
-"Δεν υπάρχει καλή υποστήριξη επέκτασης κλασεων στα περισσότερα VM, και η "
-"προσαρμογή στον τρόπο που δουλεύει η Godot δεν είναι αποδοτική (Lua, Python, "
-"JS)"
+"Ελλιπής υποστήριξη επέκτασης κλάσεων στα περισσότερα VM, και η προσαρμογή "
+"στον τρόπο λειτουργίας της Godot δεν είναι καθόλου αποδοτική (Lua, Python, "
+"JS)."
 
 #: ../../docs/about/faq.rst:133
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
-"Η κακή διεπαφή σύνδεσης με την C++ έχει ως αποτέλεσμα την παραγωγή μεγάλου "
-"όγκου κώδικα, σφαλμάτων, σημείων συμφόρησης και γενικής μη αποδοτικότητας "
-"(Lua, Python, Squirrel, JS, κλπ)"
+"Πολλές υπαρκτές γλώσσες έχουν φρικτές διεπαφές σύνδεσης με την C++, "
+"οδηγώντας σε εκτενή κώδικα, σφάλματα, κωλύματα, και γενική έλλειψη "
+"αποδοτικότητας (Lua, Python, Squirrel, JS, κλπ.) Θέλαμε να επικεντρωθούμε σε "
+"μία εξαιρετική μηχανή, όχι στην εκτενή ενσωμάτωση."
 
 #: ../../docs/about/faq.rst:136
 msgid ""
@@ -885,38 +889,35 @@ msgstr ""
 "(Lua, Python, JS, AS, κλπ)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
-"Δυσκολία ενσωμάτωσης με τον επεξεργαστή κώδικα για την αυτόματη συμπλήρωση, "
-"ζωντανή επεξεργασία, κλπ. Αυτό υποστηρίζεται πάρα πολύ καλά από την GDScript."
+"Δυσκολία ενσωμάτωσης με τον επεξεργαστή κώδικα για παροχή αυτόματης "
+"συμπλήρωσης, ζωντανής επεξεργασίας, κλπ. (όλα μαζί). Αυτά υποστηρίζεται "
+"καλώς από την GDScript."
 
 #: ../../docs/about/faq.rst:145
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above and more."
 msgstr ""
-"Η GDScript σχεδιάστηκε για να περιορίσει τα άνωθεν προβλήματα και παραπάνω."
+"Η GDScript σχεδιάστηκε για να περιορίσει τα παραπάνω προβλήματα και ακόμα "
+"περισσότερα."
 
 #: ../../docs/about/faq.rst:148
 msgid "What type of 3D model formats does Godot support?"
 msgstr "Ποιά 3D μοντέλα υποστηρίζει η Godot;"
 
 #: ../../docs/about/faq.rst:150
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Λέγοντας αυτά, η υποστήριξη του προτύπου Collada για Godot είναι πολύ καλή. "
-"Παρακαλώ χρησιμοποιήστε τον εξαγωγέα `OpenCollada <https://github.com/"
-"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ για μέγιστη συμβατότητα "
-"εάν χρησιμοποιείτε Maya ή 3DS Max. Αν χρησιμοποιείτε το Blender, ρίξτε μια "
-"ματιά στο δικό μας `Better Collada Exporter <https://godotengine.org/"
-"download>`_."
+"Η Godot υποστηρίζει Collada μέσω του εξαγωγέα `OpenCollada <https://github."
+"com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ (Maya, 3DSMax). Εάν "
+"χρησιμοποιείτε το Blender, κοιτάξτε τον δικό μας `Καλύτερο Εξαγωγέα Collada "
+"<https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
@@ -928,13 +929,15 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"Το FBX υποστηρίζεται μέσω της βιβλιοθήκης Open Asset Import. Παρόλα αυτά, το "
+"FBX είναι ιδιόκτητο, συνεπώς συνιστούμε την χρήση των άλλων μορφών, εάν "
+"ταιριάζουν στην ροή εργασίας σας."
 
 #: ../../docs/about/faq.rst:159
-#, fuzzy
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
-"Θα υποστηριχθεί [Κάποιο κλειστό SDK όπως PhysX, GameWorks, κλπ] στην Godot;"
+"Θα υποστηριχθεί το [κλειστό SDK όπως το FMOD, GameWorks, κλπ] στην Godot;"
 
 #: ../../docs/about/faq.rst:161
 msgid ""
@@ -950,25 +953,23 @@ msgstr ""
 "θα ήταν ενάντια με τον κώδικα ηθικής της Godot."
 
 #: ../../docs/about/faq.rst:166
-#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
-"Λέγοντας αυτά, επειδή είναι ανοιχτού κώδικα και με μοναδιαίες, τίποτα δεν "
-"εμποδίζει εσάς ή οποιονδήποτε άλλο να προσθέσει αυτές τις βιβλιοθήκες ως "
-"μονάδα και να δημοσιεύσει ένα παιχνίδι, ανοικτού ή κλειστού κώδικα, "
-"χρησιμοποιώντας τις. Όλα επιτρέπονται."
+"Ωστόσο επειδή η Godot είναι ανοιχτού κώδικα και μοναδιαία, τίποτα δεν "
+"εμποδίζει εσάς, ή οποιονδήποτε άλλο που ενδιαφέρεται, να προσθέσει αυτές τις "
+"βιβλιοθήκες ως μονάδα και να δημοσιεύσει ένα παιχνίδι - ανοικτού - ή και "
+"κλειστού κώδικα με αυτές."
 
 #: ../../docs/about/faq.rst:170
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
-"Για να δείτε πώς θα μπορούσε να υποστηριχθεί το SDK της επιλογής σας, δείτε "
-"την παραπάνω ερώτηση για τις επεκτάσεις."
+"Για να δείτε πώς η υποστήριξη για το SDK της επιλογής σας θα μπορούσε ακόμα "
+"να παρασχεθεί, εξετάστε το παρακάτω ερώτημα για τα Πρόσθετα."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -987,8 +988,8 @@ msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
-"Πώς θα μπορούσαν να δημιουργηθούν πόροι (assets) που να χειρίζονται "
-"πολλαπλές αναλύσεις και αναλογίες οθόνης;"
+"Πώς πρέπει να δημιουργηθούν οι πόροι ώστε να χειρίζονται πολλαπλές αναλύσεις "
+"και λόγους προβολής;"
 
 #: ../../docs/about/faq.rst:181
 msgid ""
@@ -1002,25 +1003,24 @@ msgid ""
 msgstr ""
 "Αυτή η ερώτηση εμφανίζεται συχνά και οφείλεται πιθανότατα στην παρεξήγηση "
 "που δημιούργησε η Apple όταν αρχικά διπλασίασε την ανάλυση των συσκευών της. "
-"Έκανε τους ανθρώπους να πιστεύουν ότι η κατοχή ιδίων στοιχείων σε "
-"διαφορετικές αναλύσεις οθόνης ήταν μια καλή ιδέα, έτσι πολλοί συνέχισαν αυτή "
-"την κατεύθυνση. Αυτό αρχικά λειτούργησε ως ένα σημείο και μόνο για τις "
-"συσκευές της Apple, αλλά στη συνέχεια δημιουργήθηκαν αρκετές συσκευές "
-"Android και Apple με διαφορετικές αναλύσεις και αναλογίες διαστάσεων, με ένα "
-"πολύ ευρύ φάσμα μεγεθών και DPIs."
+"Έκανε τους ανθρώπους να πιστεύουν πως η κατοχή των ιδίων στοιχείων σε "
+"διαφορετικές αναλύσεις ήταν καλή ιδέα, έτσι πολλοί συνέχισαν σε αυτή την "
+"κατεύθυνση. Αυτό αρχικά λειτούργησε ως ένα σημείο και μόνο για τις συσκευές "
+"της Apple, αλλά μετά δημιουργήθηκαν πολλές συσκευές Android και Apple με "
+"διαφορετικές αναλύσεις και λόγους προβολής, με ένα εξαιρετικά ευρύ φάσμα "
+"μεγεθών και DPI."
 
 #: ../../docs/about/faq.rst:189
-#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
-"Ο πιο συνηθισμένος και κατάλληλος τρόπος για να επιτευχθεί αυτό είναι να "
-"χρησιμοποιήσετε μια απλή βάση ανάλυσης για το παιχνίδι και να χειριστείτε "
-"μόνο διαφορετικές όψεις οθονών. Αυτό είναι απαραίτητο κυρίως για 2D, καθώς "
-"στο 3D είναι απλά θέμα Camera XFov ή YFov."
+"Ο πιο συχνός και σωστός τρόπος να επιτευχθεί αυτό, είναι να χρησιμοποιήσετε "
+"μια μόνο βασική ανάλυση για το παιχνίδι και να χειριστείτε μόνο "
+"διαφορετικούς λόγους προβολής. Αυτό είναι απαραίτητο κυρίως για 2D, καθώς "
+"στο 3D είναι απλά θέμα του XFov ή YFov της κάμερας."
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -1608,9 +1608,8 @@ msgstr "Σωματίδια"
 
 #: ../../docs/about/docs_changelog.rst:91
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "Κίνηση"
+msgstr "Βελτιστοποίηση"
 
 #: ../../docs/about/docs_changelog.rst:93
 msgid ":ref:`doc_using_multimesh`"
@@ -1623,7 +1622,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:97
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "Νομικά"
 
 #: ../../docs/about/docs_changelog.rst:99
 msgid ":ref:`doc_complying_with_licenses`"
@@ -1631,7 +1630,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:102
 msgid "New tutorials since version 3.0"
-msgstr "Καινούργιο διδακτικό υλικό από την έκδοση 3,0"
+msgstr "Καινούργιο διδακτικό υλικό από την έκδοση 3.0"
 
 #: ../../docs/about/docs_changelog.rst:105
 #: ../../docs/getting_started/step_by_step/index.rst:2
