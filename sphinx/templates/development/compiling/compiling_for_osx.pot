@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,82 +25,82 @@ msgid "Requirements"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:11
-msgid "For compiling under Linux or other Unix variants, the following is required:"
+msgid "For compiling under macOS, the following is required:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:13
+msgid "Python 3.5+ (recommended) or Python 2.7+."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:14
-msgid "Python 2.7+ or Python 3.5+"
+msgid "`SCons <https://www.scons.org>`_ build system."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:15
-msgid "SCons build system"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_osx.rst:16
-msgid "Xcode (or the more lightweight Command Line Tools for Xcode)"
+msgid "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more lightweight Command Line Tools for Xcode)."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:17
-msgid "*Optional* - yasm (for WebM SIMD optimizations)"
+msgid "*Optional* - `yasm <https://yasm.tortall.net/>`_ (for WebM SIMD optimizations)."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:19
+msgid "If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install SCons and yasm using the following command::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:24
+msgid "Installing Homebrew will also fetch the Command Line Tools for Xcode automatically if you don't have them already."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:27
 msgid "For a general overview of SCons usage for Godot, see :ref:`doc_introduction_to_the_buildsystem`."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:23
+#: ../../docs/development/compiling/compiling_for_osx.rst:31
 msgid "Compiling"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:25
-msgid "Start a terminal, go to the root dir of the engine source code and type:"
+#: ../../docs/development/compiling/compiling_for_osx.rst:33
+msgid "Start a terminal, go to the root directory of the engine source code and type::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:31
-msgid "If all goes well, the resulting binary executable will be placed in the \"bin\" subdirectory. This executable file contains the whole engine and runs without any dependencies. Executing it will bring up the project manager."
+#: ../../docs/development/compiling/compiling_for_osx.rst:37
+msgid "If all goes well, the resulting binary executable will be placed in the ``bin/`` subdirectory. This executable file contains the whole engine and runs without any dependencies. Executing it will bring up the project manager."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:36
-msgid "To create an .app like in the official builds, you need to use the template located in ``misc/dist/osx_tools.app``. Typically, for a \".64\" optimised binary built with `scons p=osx target=release_debug`:"
+#: ../../docs/development/compiling/compiling_for_osx.rst:42
+msgid "To create an .app like in the official builds, you need to use the template located in ``misc/dist/osx_tools.app``. Typically, for an optimized editor binary built with ``scons p=osx target=release_debug``::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:48
-msgid "Compiling for 32 and 64-bit"
+#: ../../docs/development/compiling/compiling_for_osx.rst:52
+msgid "Cross-compiling for macOS from Linux"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:50
-msgid "All macOS versions after 10.6 are 64-bit exclusive, so the executable will be a \".64\" file by default for most users. If you would like to compile a \".fat\" executable which contains both 32 and 64-bit code, you can do so by specifying the bits in the scons command like so:"
+#: ../../docs/development/compiling/compiling_for_osx.rst:54
+msgid "It is possible to compile for macOS in a Linux environment (and maybe also in Windows using the Windows Subsystem for Linux). For that, you'll need to install `OSXCross <https://github.com/tpoechtrager/osxcross>`__ to be able to use macOS as a target. First, follow the instructions to install it:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:60
-msgid "Cross-compiling"
+#: ../../docs/development/compiling/compiling_for_osx.rst:59
+msgid "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ somewhere on your machine (or download a ZIP file and extract it somewhere), e.g.::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:62
-msgid "It is possible to compile for macOS in a Linux environment (and maybe also in Windows with Cygwin). For that you will need `OSXCross <https://github.com/tpoechtrager/osxcross>`__ to be able to use macOS as target. First, follow the instructions to install it:"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_osx.rst:67
-msgid "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>` somewhere on your machine (or download a zip file and extract it somewhere), e.g.:"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_osx.rst:75
+#: ../../docs/development/compiling/compiling_for_osx.rst:65
 msgid "Follow the instructions to package the SDK: https://github.com/tpoechtrager/osxcross#packaging-the-sdk"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:77
+#: ../../docs/development/compiling/compiling_for_osx.rst:67
 msgid "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/osxcross#installation"
 msgstr ""
 
+#: ../../docs/development/compiling/compiling_for_osx.rst:70
+msgid "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the OSXCross installation (the same place where you cloned the repository/extracted the zip), e.g.::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:76
+msgid "Now you can compile with SCons like you normally would::"
+msgstr ""
+
 #: ../../docs/development/compiling/compiling_for_osx.rst:80
-msgid "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the OSXCross installation (the same place where you cloned the repository/extracted the zip), e.g.:"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_osx.rst:88
-msgid "Now you can compile with SCons like you normally would:"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_osx.rst:94
-msgid "If you have an OSXCross SDK version different from the one expected by the SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` argument:"
+msgid "If you have an OSXCross SDK version different from the one expected by the SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` argument::"
 msgstr ""
 

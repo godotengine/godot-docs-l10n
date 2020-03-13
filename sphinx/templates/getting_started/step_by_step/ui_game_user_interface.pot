@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,7 +187,7 @@ msgid "If you select both nodes, you should see something like this"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:163
-msgid "As they have a container as their direct parent, we cannot move them freely: the ``Count`` node will always reset their anchors, their size and position. Try to move and resize the nodes in the viewport. Then, select any of the three textures and press Ctrl Up or Ctrl Down to reorder them in the Scene dock. They'll snap back to their previous size and position."
+msgid "As they have a container as their direct parent, we cannot move them freely: the ``Count`` node will always reset their anchors, their size and position. Try to move and resize the nodes in the viewport. Then, select any of the three textures and press :kbd:`Ctrl + Up` or :kbd:`Ctrl + Down` to reorder them in the Scene dock. They'll snap back to their previous size and position."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:170
@@ -259,7 +259,7 @@ msgid "The bomb and emerald counters are like the bar's ``Count`` node. So we'll
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
-msgid "Under the ``Bar`` node, select ``Count`` and press Ctrl D to duplicate it. Drag and drop the new node under the ``Counters`` ``HBoxContainer`` at the bottom of the scene tree. You should see it resize automatically. Don't worry about this for now, we'll fix the size soon."
+msgid "Under the ``Bar`` node, select ``Count`` and press :kbd:`Ctrl + D` to duplicate it. Drag and drop the new node under the ``Counters`` ``HBoxContainer`` at the bottom of the scene tree. You should see it resize automatically. Don't worry about this for now, we'll fix the size soon."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
@@ -363,7 +363,7 @@ msgid "Inherit the Bar Scene to build the LifeBar"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
-msgid "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. Select the Bar scene and open it. You should see a new [unsaved] tab, that's like your ``Bar``, but with all nodes except the root in grey. Press ``Meta+S`` to save the new inherited scene and name it ``LifeBar``."
+msgid "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. Select the Bar scene and open it. You should see a new [unsaved] tab, that's like your ``Bar``, but with all nodes except the root in grey. Press :kbd:`Meta + S` to save the new inherited scene and name it ``LifeBar``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
@@ -411,7 +411,7 @@ msgid "Use this option to create unique copies of the resources for one node"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
-msgid "When you duplicate a node from the Scene tree, with ``Meta+D``, it shares its resources with the original node. You need to use ``Make Sub-Resources Unique`` before you can tweak the resources without affecting the source node."
+msgid "When you duplicate a node from the Scene tree, with :kbd:`Meta + D`, it shares its resources with the original node. You need to use ``Make Sub-Resources Unique`` before you can tweak the resources without affecting the source node."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:481

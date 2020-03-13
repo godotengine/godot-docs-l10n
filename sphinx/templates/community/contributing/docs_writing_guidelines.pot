@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 22:29+0100\n"
+"POT-Creation-Date: 2020-03-13 17:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,7 @@ msgid "A technical writer's job is to pack as much information as possible into 
 msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:36
-msgid "7 rules for a clear english"
+msgid "7 rules for clear English"
 msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:41
@@ -397,59 +397,87 @@ msgstr ""
 msgid "In the class reference, always surround arguments with ``[code][/code]``. In the documentation and in Godot, it will display like ``this``. When you edit XML files in the Godot repository, replace existing arguments written like 'this' or \\`this\\` with ``[code]this[/code]``."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:445
-msgid "Common vocabulary to use in godot's docs"
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:448
+msgid "Common vocabulary to use in Godot's documentation"
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:447
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:450
 msgid "The developers chose some specific words to refer to areas of the interface. They're used in the sources, in the documentation, and you should always use them instead of synonyms, so the users know what you're talking about."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:455
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:458
 msgid "Overview of the interface and common vocabulary"
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:457
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:460
 msgid "In the top left corner of the editor lie the ``main menus``. In the center, the buttons change the ``workspace``. And together the buttons in the top right are the ``playtest buttons``. The area in the center, that displays the 2D or the 3D space, is the ``viewport``. At its top, you find a list of ``tools`` inside the ``toolbar``."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:463
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:466
 msgid "The tabs or dockable panels on either side of the viewport are ``docks``. You have the ``FileSystem dock``, the ``Scene dock`` that contains your scene tree, the ``Import dock``, the ``Node dock``, and the ``Inspector`` or ``Inspector dock``. With the default layout you may call the tabbed docks ``tabs``: the ``Scene tab``, the ``Node tab``..."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:469
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:472
 msgid "The Animation, Debugger, etc. at the bottom of the viewport are ``panels``. Together they make up the ``bottom panels``."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:472
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:475
 msgid "Foldable areas of the Inspector are ``sections``. The node's parent class names, which you can't fold, are ``Classes`` e.g. the ``KinematicBody2D class``. And individual lines with key-value pairs are ``properties``. E.g. ``position`` or ``modulate color`` are both ``properties``."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:479
-msgid "Image contribution guidelines"
-msgstr ""
-
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:481
-msgid "A significant part of the documentation is images, and there are several important guidelines to follow."
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:482
+msgid "Keyboard shortcut guidelines"
 msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:484
+msgid "Keyboard and mouse shortcuts should make use of the ``:kbd:`` tag, which allows shortcuts to stand out from the rest of the text and inline code. Use the compact form for modifier keys (:kbd:`Ctrl`/:kbd:`Cmd`) instead of their spelled out form (:kbd:`Control`/:kbd:`Command`). For combinations, use the ``+`` symbol with a space on either side of the symbol."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:490
+msgid "Make sure to mention shortcuts that differ on macOS compared to other platforms. On macOS, ``Cmd`` often replaces ``Ctrl`` in keyboard shortcuts."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:493
+msgid "Try to integrate the shortcut into sentences the best you can. Here are some examples with the ``:kbd:`` tag left as-is for better visibility:"
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:496
+msgid "Press ``:kbd:`Ctrl + Alt + T``` to toggle the panel (``:kbd:`Cmd + Alt + T``` on macOS)."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:497
+msgid "Press ``:kbd:`Space``` and hold the left mouse button to pan in the 2D editor."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:498
+msgid "Press ``:kbd:`Shift + Up Arrow``` to move the node upwards by 8 pixels."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:501
+msgid "Image contribution guidelines"
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:503
+msgid "A significant part of the documentation is images, and there are several important guidelines to follow."
+msgstr ""
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:506
 msgid "First, you should always be using the default editor theme and text when taking screenshots."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:486
-msgid "For 3D screenshots use 4xMSAA, enable anisotropic filtering on the projects textures, and set the anisotropic filter quality to 16x in Project Settings"
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:509
+msgid "To improve the apperance of 3D screenshots, use 4× MSAA, enable anisotropic filtering on the project's textures, and set the anisotropic filter quality to 16× in Project Settings."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:489
-msgid "Screenshot size should not exceed 1920x1080."
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:513
+msgid "Screenshot sizes should not exceed 1920×1080 to ensure fast loading on slower connections."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:491
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:516
 msgid "When you need to highlight an area of the editor to show something, like a button or option, use a 2 pixel thick outline without a bevel."
 msgstr ""
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:494
-msgid "Before you add or replace any images in the documentation, they should be run through a png compressor to save size. The built in lossless compressor in programs like Krita or Photoshop should be done. However you should also use a lossy one, such as `pngquant <https://pngquant.org/>`_ where almost no image quality is lost during compression."
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:519
+msgid "Before you add or replace any images in the documentation, they should be run through a PNG compressor to save size. The built in lossless compressor in programs like Krita or Photoshop should be enough. For heavier images, also look into using a lossy compressor, such as `pngquant <https://pngquant.org/>`_ where almost no image quality is lost during compression."
 msgstr ""
 
