@@ -9,7 +9,7 @@ commit=$1
 
 rm -f authors.txt langs.txt
 
-for file in weblate/*.po; do
+for file in weblate/docs/*.po; do
   authors=$(git log $commit..HEAD --date=format:"%Y" --format="%aN <%aE>, %ad." $file | grep -v 'anonymous' | sort -u)
   if [ ! -z "$authors" ]; then
     new_authors=""
