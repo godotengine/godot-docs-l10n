@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -237,46 +237,62 @@ msgid "Rather than:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
-msgid "Implicitly typed local variables"
+msgid "Member variables"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
+msgid "Don't declare member variables if they are only used locally in a method, as it makes the code more difficult to follow. Instead, declare them as local variables in the method's body."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
+msgid "Local variables"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:277
+msgid "Declare local variables as close as possible to their first use. This makes it easier to follow the code, without having to scroll too much to find where the variable was declared."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:282
+msgid "Implicitly typed local variables"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:284
 msgid "Consider using implicitly typing (``var``) for declaration of a local variable, but do so **only when the type is evident** from the right side of the assignment:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:314
 msgid "Other considerations"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:316
 msgid "Use explicit access modifiers."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:317
 msgid "Use properties instead of non-private fields."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:318
 msgid "Use modifiers in this order: ``public``/``protected``/``private``/``internal``/``virtual``/``override``/``abstract``/``new``/``static``/``readonly``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:306
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:320
 msgid "Avoid using fully-qualified names or ``this.`` prefix for members when it's not necessary."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:307
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:321
 msgid "Remove unused ``using`` statements and unnecessary parentheses."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:308
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:322
 msgid "Consider omitting the default initial value for a type."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:309
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:323
 msgid "Consider using null-conditional operators or type initializers to make the code more compact."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:310
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:324
 msgid "Use safe cast when there is a possibility of the value being a different type, and use direct cast otherwise."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,7 +121,7 @@ msgid "Worlds"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:109
-msgid "For 3D, a :ref:`Viewport <class_Viewport>` will contain a :ref:`World <class_World>`. This is basically the universe that links physics and rendering together. Spatial-base nodes will register using the :ref:`World <class_World>` of the closest :ref:`Viewport <class_Viewport>`. By default, newly created :ref:`Viewports <class_Viewport>` do not contain a :ref:`World <class_World>` but use the same as their parent :ref:`Viewport <class_Viewport>` (the root :ref:`Viewport <class_Viewport>` always contains a :ref:`World <class_World>`, which is the one objects are rendered to by default). A :ref:`World <class_World>` can be set in a :ref:`Viewport <class_Viewport>` using the \"world\" property, and that will separate all children nodes of that :ref:`Viewport <class_Viewport>` from interacting with the parent :ref:`Viewport's <class_Viewport>` :ref:`World <class_World>`. This is especially useful in scenarios where, for example, you might want to show a separate character in 3D imposed over the game (like in StarCraft)."
+msgid "For 3D, a :ref:`Viewport <class_Viewport>` will contain a :ref:`World <class_World>`. This is basically the universe that links physics and rendering together. Spatial-based nodes will register using the :ref:`World <class_World>` of the closest :ref:`Viewport <class_Viewport>`. By default, newly created :ref:`Viewports <class_Viewport>` do not contain a :ref:`World <class_World>` but use the same as their parent :ref:`Viewport <class_Viewport>` (the root :ref:`Viewport <class_Viewport>` always contains a :ref:`World <class_World>`, which is the one objects are rendered to by default). A :ref:`World <class_World>` can be set in a :ref:`Viewport <class_Viewport>` using the \"world\" property, and that will separate all children nodes of that :ref:`Viewport <class_Viewport>` from interacting with the parent :ref:`Viewport's <class_Viewport>` :ref:`World <class_World>`. This is especially useful in scenarios where, for example, you might want to show a separate character in 3D imposed over the game (like in StarCraft)."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:121
@@ -225,7 +225,7 @@ msgid "and then selecting the :ref:`Viewport <class_Viewport>` you want to use."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:239
-msgid "Every frame, the :ref:`Viewport <class_Viewport>`'s texture is cleared away with the default clear color (or a transparent color if :ref:`Transparent BG<class_Viewport_property_transparent_bg>` is set to ``true``). This can be changed by setting :ref:`Clear Mode<class_Viewport_property_render_target_clear_mode>` to Never or Next Frame. As the name implies, Never means the texture will never be cleared, while next frame will clear the texture on the next frame and then set itself to Never."
+msgid "Every frame, the :ref:`Viewport <class_Viewport>`'s texture is cleared away with the default clear color (or a transparent color if :ref:`Transparent Bg<class_Viewport_property_transparent_bg>` is set to ``true``). This can be changed by setting :ref:`Clear Mode<class_Viewport_property_render_target_clear_mode>` to Never or Next Frame. As the name implies, Never means the texture will never be cleared, while next frame will clear the texture on the next frame and then set itself to Never."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:244

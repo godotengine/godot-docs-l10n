@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid "All the code for the animation will be in the vertex shader with uniforms
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:48
-msgid "All the motions will be made using cosine waves applied to ``VERTEX`` in model space. We want the vertices to be in model space so that the motion is always relative to the orientation of the fish. For example, side-to-side will always be move the fish back and forth in its left to right direction, instead of on the ``x`` axis in the world orientation."
+msgid "All the motions will be made using cosine waves applied to ``VERTEX`` in model space. We want the vertices to be in model space so that the motion is always relative to the orientation of the fish. For example, side-to-side will always move the fish back and forth in its left to right direction, instead of on the ``x`` axis in the world orientation."
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:53
@@ -125,7 +125,7 @@ msgid "The last motion is the twist, which is a panning roll along the spine. Si
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:126
-msgid "We apply the rotation in the ``xy`` axes so that the fish appears to roll around its spine. For this to work, the fishes spine needs to be centered on the ``z`` axis."
+msgid "We apply the rotation in the ``xy`` axes so that the fish appears to roll around its spine. For this to work, the fish's spine needs to be centered on the ``z`` axis."
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:133
@@ -153,7 +153,7 @@ msgid "For the wave, we multiply the motion by ``mask`` which will limit it to t
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:163
-msgid "In order to apply the mask to the twist, we use ``mix``. ``mix`` allows us to mix the vertex position between a fully rotated vertex and one that is not rotated. We need to use ``mix`` instead of multiplying ``mask`` by the rotated ``VERTEX`` because we are not adding the motion to the ``VERTEX`` we are replacing the ``VERTEX`` with the rotated version. If we multiplied that by ``mask`` we would shrink the fish."
+msgid "In order to apply the mask to the twist, we use ``mix``. ``mix`` allows us to mix the vertex position between a fully rotated vertex and one that is not rotated. We need to use ``mix`` instead of multiplying ``mask`` by the rotated ``VERTEX`` because we are not adding the motion to the ``VERTEX`` we are replacing the ``VERTEX`` with the rotated version. If we multiplied that by ``mask``, we would shrink the fish."
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:174
@@ -193,7 +193,7 @@ msgid "``transform_format`` specifies whether the transforms used are 3D or 2D. 
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:203
-msgid "For both ``color_format`` and ``custom_data_format`` you can choose between ``None``, ``Byte``, and ``Float``. ``None`` means you won't be passing in that data (either a per-instance ``COLOR`` variable, or ``INSTANCE_CUSTOM``) to the shader. ``Byte`` means each number making up the color you pass in will be stored with 8 bits while ``Float`` means each number will be stored in a floating point number (32 bits). ``Float`` is slower but more precise, ``Byte`` will take less memory and be faster, but you may see some visual artifacts."
+msgid "For both ``color_format`` and ``custom_data_format`` you can choose between ``None``, ``Byte``, and ``Float``. ``None`` means you won't be passing in that data (either a per-instance ``COLOR`` variable, or ``INSTANCE_CUSTOM``) to the shader. ``Byte`` means each number making up the color you pass in will be stored with 8 bits while ``Float`` means each number will be stored in a floating-point number (32 bits). ``Float`` is slower but more precise, ``Byte`` will take less memory and be faster, but you may see some visual artifacts."
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:210
@@ -249,7 +249,7 @@ msgid "You can even experiment with changing the per-instance color the same way
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:269
-msgid "One problem that you will run into at this point is that the fish are animated, but they are not moving. You can move them by updating the per-instance transform for each fish every frame. Although doing so will be faster then moving thousands of MeshInstances per frame, it is still likely to be slow."
+msgid "One problem that you will run into at this point is that the fish are animated, but they are not moving. You can move them by updating the per-instance transform for each fish every frame. Although doing so will be faster than moving thousands of MeshInstances per frame, it'll still likely be slow."
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:274

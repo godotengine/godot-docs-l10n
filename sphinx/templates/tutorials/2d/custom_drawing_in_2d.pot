@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,7 @@ msgid "An arc is defined by its support circle parameters, that is, the center p
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:161
-msgid "Basically, drawing a shape on the screen requires it to be decomposed into a certain number of points linked from one to the next. As you can imagine, the more points your shape is made of, the smoother it will appear, but the heavier it will also be in terms of processing cost. In general, if your shape is huge (or in 3D, close to the camera), it will require more points to be drawn without it being angular-looking. On the contrary, if your shape is small (or in 3D, far from the camera), you may decrease its number of points to save processing costs; this is known as *Level of Detail (LoD)*. In our example, we will simply use a fixed number of points, no matter the radius."
+msgid "Basically, drawing a shape on the screen requires it to be decomposed into a certain number of points linked from one to the next. As you can imagine, the more points your shape is made of, the smoother it will appear, but the heavier it will also be in terms of processing cost. In general, if your shape is huge (or in 3D, close to the camera), it will require more points to be drawn without it being angular-looking. On the contrary, if your shape is small (or in 3D, far from the camera), you may decrease its number of points to save processing costs; this is known as *Level of Detail (LOD)*. In our example, we will simply use a fixed number of points, no matter the radius."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
