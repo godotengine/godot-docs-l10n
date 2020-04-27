@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,10 +81,10 @@ msgid ""
 "mostly macro-based language only meant for building."
 msgstr ""
 "Godotビルドプロセスは簡単ではありません。いくつかのファイルはコード(バイン"
-"ダー)によって生成され、他のファイルは解析(シェーダ)であり、他のファイルはカス"
-"タマイズ(プラグイン)を提供する必要があります。これには、構築のみを意図したマ"
-"クロベースの言語を使用するのではなく、実際のプログラミング言語(Pythonなど)で"
-"記述する方が簡単な複雑なロジックが必要です。"
+"ダー)によって生成され、他のファイルは解析(シェーダー)であり、他のファイルはカ"
+"スタマイズ(プラグイン)を提供する必要があります。これには、構築のみを意図した"
+"マクロベースの言語を使用するのではなく、実際のプログラミング言語(Pythonなど)"
+"で記述する方が簡単な複雑なロジックが必要です。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:32
 msgid ""
@@ -213,10 +213,11 @@ msgstr ""
 "込まれており、64ビット用であることを意味します。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:111
-msgid "A Windows binary with the same configuration will look like this::"
+#, fuzzy
+msgid "A Windows binary with the same configuration will look like this:"
 msgstr "同じ設定のWindowsバイナリは次のようになります::"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:116
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:118
 msgid ""
 "Copy that binary to any location you like, as it contains the project "
 "manager, editor and all means to execute the game. However, it lacks the "
@@ -231,7 +232,7 @@ msgstr ""
 "<https://godotengine.org/>`__ からダウンロードするか、または自身でビルドして"
 "ください)。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:122
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:124
 msgid ""
 "Aside from that, there are a few standard options that can be set in all "
 "build targets, and which will be explained below."
@@ -239,11 +240,11 @@ msgstr ""
 "それとは別に、すべてのビルドターゲットで設定できるいくつかの標準オプションが"
 "あり、以下で説明します。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:128
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
 msgid "Tools"
 msgstr "ツール"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:132
 msgid ""
 "Tools are enabled by default in all PC targets (Linux, Windows, macOS), "
 "disabled for everything else. Disabling tools produces a binary that can run "
@@ -253,17 +254,17 @@ msgstr ""
 "ています。ツールを無効にすると、プロジェクトを実行できるバイナリが生成されま"
 "すが、編集者やプロジェクト マネージャは含まれません。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:142
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target"
 msgstr "ターゲット"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr ""
 "ターゲットは最適化フラグとデバッグフラグを制御します。各モードの意味は次のと"
 "おりです:"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
 msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
@@ -271,7 +272,7 @@ msgstr ""
 "**debug**: C++デバッグシンボル、ランタイムチェック (チェックを実行してエラー"
 "を通知する) を使用して、最適化は最小限でビルドします。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:150
 msgid ""
 "**release_debug**: Build without C++ debugging symbols and optimization, but "
 "keep the runtime checks (performs checks and reports errors). Official "
@@ -281,7 +282,7 @@ msgstr ""
 "が、ランタイム チェック (チェックを実行してエラーを通知する) は行われます。公"
 "式エディタ バイナリはこの設定を使用しています。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:151
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:153
 msgid ""
 "**release**: Build without symbols, with optimization and with little to no "
 "runtime checks. This target can't be used together with ``tools=yes``, as "
@@ -291,7 +292,7 @@ msgstr ""
 "限でビルドされます。エディタにはいくつかのデバッグ機能とランタイム チェックを"
 "必要なので、このターゲットは\\ ``tool=yes``\\ と同時に使うことはできません。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:160
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:162
 msgid ""
 "This flag appends the ``.debug`` suffix (for debug), or ``.tools`` (for "
 "debug with tools enabled). When optimization is enabled (release), it "
@@ -301,11 +302,11 @@ msgstr ""
 "(tool有効のdebug版) を追加します。最適化が有効なとき (release) は、\\ ``."
 "opt``\\ を追加します。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:165
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
 msgid "Bits"
 msgstr "ビット"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
@@ -314,19 +315,19 @@ msgstr ""
 "主にデスクトッププラットフォームに焦点が当てられており、それ以外の場所では無"
 "視されています。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:171
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
 msgid "**32**: Build binaries for 32-bit platforms."
 msgstr "**32**: 32ビット プラットフォーム用のバイナリをビルド。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:172
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
 msgid "**64**: Build binaries for 64-bit platforms."
 msgstr "**64**: 64ビット プラットフォーム用のバイナルをビルド。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
 msgid "**default**: Build for the architecture that matches the host platform."
 msgstr "**default**: ホスト プラットフォームのアーキテクチャに合わせてビルド。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:179
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:181
 msgid ""
 "This flag appends ``.32`` or ``.64`` suffixes to resulting binaries when "
 "relevant. If ``bits=default`` is used, the suffix will match the detected "
@@ -336,11 +337,11 @@ msgstr ""
 "対象によって加えます。もし\\ ``bits=default``\\ の場合には、検出されたアーキ"
 "テクチャに適したほうを追加します。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:184
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:186
 msgid "Other build options"
 msgstr "その他のビルドオプション"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:186
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Godot should be built (compiler, debug options, etc.) as well as the "
@@ -350,7 +351,7 @@ msgstr ""
 "化する機能を構成するために使用できるビルドオプションは他にもいくつかありま"
 "す。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:192
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
@@ -358,11 +359,11 @@ msgstr ""
 "コンパイルするバージョンの各オプションの詳細については、 ``scons --help`` の"
 "出力を確認してください。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:194
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:196
 msgid "Export templates"
 msgstr "テンプレートのエクスポート"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:196
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -374,7 +375,7 @@ msgstr ""
 "必要な場合、カスタム モジュールを使用している場合、または単に自身の影すらも信"
 "用しない主義であるなら、自分でビルドすることもできます。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:203
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most files are optimized binaries or packages for each platform:"
@@ -383,7 +384,7 @@ msgstr ""
 "ほとんどのファイルは、最適化されたバイナリかパッケージであることに気づくで"
 "しょう:"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:224
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:226
 msgid ""
 "To create those yourself, follow the instructions detailed for each platform "
 "in this same tutorial section. Each platform explains how to create its own "
@@ -393,7 +394,7 @@ msgstr ""
 "トフォーム用の解説をお読みください。それぞれのプラットフォームにて、エクス"
 "ポート テンプレートの作成法が書かれています。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:230
 msgid ""
 "The ``version.txt`` file should contain the corresponding Godot version "
 "identifier. This file is used to install export templates in a version-"
@@ -414,7 +415,7 @@ msgstr ""
 "<https://github.com/godotengine/godot/blob/master/version.py>`_\\ ファイルの"
 "\\ ``status``\\ ラインです。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:236
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:238
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross-compilation, since you can cross-compile "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -415,8 +415,9 @@ msgstr ""
 "スクリプトエディタに貼り付けることができます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:380
+#, fuzzy
 msgid ""
-"If you do this, all of the code copied will be using spaces instead of tabs."
+"If you do this, all the code copied will be using spaces instead of tabs."
 msgstr ""
 "この操作を行うと、コピーされたコードはすべてタブの代わりにスペースを使用しま"
 "す。"
@@ -826,15 +827,14 @@ msgstr ""
 "す。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:569
-#, fuzzy
 msgid ""
 "You can change between local and world space modes by pressing :kbd:`T` or "
 "the little cube button when you have a :ref:`Spatial <class_Spatial>` based "
 "node selected."
 msgstr ""
-":ref:`Spatial <class_Spatial>` ベースのノードが選択されているときにTまたは小"
-"さなキューブボタンを押すと、ローカル空間モードとワールド空間モードを切り替え"
-"ることができます。"
+":ref:`Spatial <class_Spatial>` ベースのノードが選択されているときに :kbd:`T` "
+"または小さなキューブボタンを押すと、ローカル空間モードとワールド空間モードを"
+"切り替えることができます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:574
 msgid ""
@@ -1062,8 +1062,9 @@ msgstr ""
 "す。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:645
+#, fuzzy
 msgid ""
-"All of the code in ``process_movement`` is exactly the same as the movement "
+"All the code in ``process_movement`` is exactly the same as the movement "
 "code from the Kinematic Character demo!"
 msgstr ""
 "``process_movement`` のコードはすべて、キネマティックキャラクターデモの移動用"
@@ -1149,7 +1150,7 @@ msgid ""
 "down."
 msgstr ""
 "最後に、プレイヤーが上下逆さまに回転できないように、\\ ``rotation_helper`` "
-"の ``X`` 回転を ``-70`` から ``70`` 度の間にクランプします。"
+"の ``X`` 回転を ``-70`` から ``70`` 度の間に制限します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:676
 msgid ""
@@ -1170,17 +1171,16 @@ msgstr ""
 "のシーンを使用するので、必ずシーンタブの1つで開いたままにしてください。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:683
-#, fuzzy
 msgid ""
 "Go ahead and test your code either by pressing :kbd:`F6` with ``Testing_Area."
 "tscn`` as the open tab, by pressing the play button in the top right corner, "
 "or by pressing :kbd:`F5`. You should now be able to walk around, jump in the "
 "air, and look around using the mouse."
 msgstr ""
-"先に進み、\\ ``Testing_Area.tscn`` を開いているタブで ``F6`` を押すか、右上隅"
-"の再生ボタンを押す、もしくは ``F5`` を押してコードをテストします。これで、マ"
-"ウスを使用して、歩き回ったり、空中をジャンプしたり、見回したりできるようにな"
-"ります。"
+"先に進み、\\ ``Testing_Area.tscn`` を開いているタブで :kbd:`F6` を押すか、右"
+"上隅の再生ボタンを押す、もしくは :kbd:`F5` を押してコードをテストします。これ"
+"で、マウスを使用して、歩き回ったり、空中をジャンプしたり、見回したりできるよ"
+"うになります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:689
 msgid "Giving the player a flash light and the option to sprint"
@@ -1311,13 +1311,12 @@ msgstr ""
 "``SPRINT_ACCEL`` を使用して、プレイヤーをより高速に加速させます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:832
-#, fuzzy
 msgid ""
 "You should now be able to sprint if you press :kbd:`Shift`, and can toggle "
 "the flash light on and off by pressing :kbd:`F`!"
 msgstr ""
-"``shift`` ボタンを押すとスプリントできるようになり、\\ ``F`` ボタンを押すと懐"
-"中電灯のオンとオフを切り替えることができます！"
+":kbd:`Shift` を押すとスプリントできるようになり、\\ :kbd:`F` を押すと懐中電灯"
+"のオンとオフを切り替えることができます！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:834
 msgid ""

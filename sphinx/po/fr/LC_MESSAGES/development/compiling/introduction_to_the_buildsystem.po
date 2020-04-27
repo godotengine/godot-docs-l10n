@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,14 @@ msgid ""
 "There are many reasons why we have chosen SCons over other alternatives, for "
 "example:"
 msgstr ""
+"Godot utilise `SCons <https://www.scons.org/>`__ pour la "
+"construction(build). Nous l'aimons, nous ne le changerions pour rien "
+"d'autre. Nous ne sommes même pas sûrs que d'autres systèmes de construction "
+"soient à la hauteur de la tâche pour construire Godot. Nous recevons "
+"constamment des demandes pour déplacer le système de compilation vers CMake, "
+"ou Visual Studio, mais cela n'arrivera pas. Il y a de nombreuses raisons "
+"pour lesquelles nous avons choisi SCons plutôt que d'autres alternatives, "
+"par exemple :"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:18
 msgid ""
@@ -51,6 +59,11 @@ msgid ""
 "reconfiguring and rebuilding the project each time. SCons can do this with "
 "no sweat, without breaking the builds."
 msgstr ""
+"Les développeurs ont souvent besoin de compiler pour plusieurs des "
+"plateformes **en même temps**, ou même différentes cibles de la même "
+"plateforme. Ils ne peuvent pas se permettre de reconfigurer et de "
+"reconstruire le projet à chaque fois. SCons peut le faire sans problème, "
+"sans casser les constructions(builds)."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:24
 msgid ""
@@ -58,6 +71,10 @@ msgid ""
 "additions, removals etc. You have more chances to die struck by lightning "
 "than needing to clean and rebuild in SCons."
 msgstr ""
+"SCons ne brisera *jamais* une construction(build), quel que soit le nombre "
+"de modifications, de configurations, d'ajouts, de suppressions, etc. Vous "
+"avez plus de chances de mourir frappé par la foudre que de devoir "
+"nettoyer(clean) et reconstruire(rebuild) avec SCons."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:27
 msgid ""
@@ -67,6 +84,13 @@ msgid ""
 "write in an actual programming language (like Python) rather than using a "
 "mostly macro-based language only meant for building."
 msgstr ""
+"Le processus de construction(build) de Godot n'est pas simple. Plusieurs "
+"fichiers sont générés par du code (binders), d'autres sont analysés "
+"(shaders), et d'autres encore doivent offrir de la personnalisation "
+"(plugins). Cela nécessite une logique complexe qui est plus facile à écrire "
+"dans un langage de programmation réel (comme Python) plutôt que d'utiliser "
+"un langage principalement basé sur des macros et uniquement destiné à la "
+"construction(building)."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:32
 msgid ""
@@ -98,6 +122,11 @@ msgid ""
 "`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`, :ref:"
 "`doc_compiling_for_windows` and :ref:`doc_compiling_for_x11`."
 msgstr ""
+"Veuillez vous référer à la documentation pour :ref:"
+"`doc_compiling_for_android`, :ref:`doc_compiling_for_ios`, :ref:"
+"`doc_compiling_for_osx`, :ref:`doc_compiling_for_uwp`, :ref:"
+"`doc_compiling_for_web`, :ref:`doc_compiling_for_windows` et :ref:"
+"`doc_compiling_for_x11`."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:47
 msgid ""
@@ -105,6 +134,10 @@ msgid ""
 "Tools Command Prompt for VS 2017`` or similar, depending on your install, "
 "instead of the standard Windows command prompt to enter the commands below."
 msgstr ""
+"Notez que pour **Windows/Visual Studio**, vous devez utiliser ``x86_x64 "
+"Cross Tools Command Prompt for VS 2017`` ou similaire, en fonction de votre "
+"installation, au lieu de l'invite de commande standard de Windows pour "
+"entrer les commandes ci-dessous."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:52
 msgid "Platform selection"
@@ -117,6 +150,11 @@ msgid ""
 "available platforms. The build requirements for each platform are described "
 "in the rest of this tutorial section."
 msgstr ""
+"Le système de construction(build) de Godot commencera par détecter les "
+"plateformes pour lesquelles il peut construire(build). Si elle n'est pas "
+"détectée, la plate-forme n'apparaîtra tout simplement pas dans la liste des "
+"plates-formes disponibles. Les exigences de construction(build) pour chaque "
+"plateforme sont décrites dans la suite de ce tutoriel."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:59
 msgid ""
@@ -124,6 +162,10 @@ msgid ""
 "SCons will detect the target platform automatically based on the host "
 "platform. It will then start building for the target platform right away."
 msgstr ""
+"SCons est invoqué en appelant simplement ``scons``. Si aucune plate-forme "
+"n'est spécifiée, SCons détectera automatiquement la plate-forme cible en "
+"fonction de la plate-forme hôte. Il commencera alors immédiatement à "
+"construire pour la plate-forme cible."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:63
 msgid "To list the available target platforms, use ``scons platform=list``::"
@@ -136,6 +178,8 @@ msgid ""
 "To build for a platform (for example, x11), run with the ``platform=`` (or "
 "``p=`` to make it short) argument:"
 msgstr ""
+"Pour construire pour une plate-forme (par exemple, x11), utilisez l'argument "
+"``platform=`` (ou ``p=`` pour faire court) :"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:84
 msgid ""
@@ -144,6 +188,11 @@ msgid ""
 "cores will be used for the build. Or leave it using one core, so you can use "
 "your computer for something else :)"
 msgstr ""
+"Cela permettra de lancer le processus de construction(build), qui prendra un "
+"certain temps. Si vous voulez que les SCons se construisent plus rapidement, "
+"utilisez le paramètre ``-j <cores>`` pour spécifier combien de cœurs seront "
+"utilisés pour la construction(build). Ou laissez un seul noyau, afin de "
+"pouvoir utiliser votre ordinateur pour autre chose :)"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:89
 msgid "Example for using 4 cores:"
@@ -158,6 +207,8 @@ msgid ""
 "The resulting binaries will be placed in the ``bin/`` subdirectory, "
 "generally with this naming convention::"
 msgstr ""
+"Les binaires résultants seront placés dans le sous-répertoire ``bin/``, "
+"généralement avec cette convention de nommage :"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:103
 msgid "For the previous build attempt, the result would look like this::"
@@ -169,12 +220,15 @@ msgid ""
 "This means that the binary is for X11, is not optimized, has tools (the "
 "whole editor) compiled in, and is meant for 64 bits."
 msgstr ""
+"Cela signifie que le binaire est pour X11, n'est pas optimisé, a des outils "
+"(l'éditeur entier) compilés dedans, et est prévu pour 64 bits."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:111
-msgid "A Windows binary with the same configuration will look like this::"
+#, fuzzy
+msgid "A Windows binary with the same configuration will look like this:"
 msgstr "Un binaire Windows avec la même configuration ressemblera à ceci :"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:116
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:118
 msgid ""
 "Copy that binary to any location you like, as it contains the project "
 "manager, editor and all means to execute the game. However, it lacks the "
@@ -182,8 +236,14 @@ msgid ""
 "are needed (which can be either downloaded from `godotengine.org <https://"
 "godotengine.org/>`__, or you can build them yourself)."
 msgstr ""
+"Copiez ce binaire à l'endroit de votre choix, car il contient le "
+"gestionnaire de projet, l'éditeur et tous les moyens pour exécuter le jeu. "
+"Cependant, il manque les données pour exporter vers les différentes "
+"plateformes. Pour cela, les modèles d'exportation sont nécessaires (qui "
+"peuvent être téléchargés sur `godotengine.org <https://godotengine.org/>`__, "
+"ou vous pouvez les construire(build) vous-même)."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:122
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:124
 msgid ""
 "Aside from that, there are a few standard options that can be set in all "
 "build targets, and which will be explained below."
@@ -192,11 +252,11 @@ msgstr ""
 "définies dans toutes les cibles de build, et qui seront expliquées ci-"
 "dessous."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:128
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
 msgid "Tools"
 msgstr "Outils"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:132
 msgid ""
 "Tools are enabled by default in all PC targets (Linux, Windows, macOS), "
 "disabled for everything else. Disabling tools produces a binary that can run "
@@ -207,115 +267,155 @@ msgstr ""
 "produit un binaire qui peut exécuter des projets, mais qui n'inclut pas "
 "l'éditeur ou le gestionnaire de projet."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:142
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target"
 msgstr "Cible"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr ""
 "La cible contrôle l'optimisation et débogue les drapeaux. Chaque mode "
 "signifie :"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
 msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
 msgstr ""
+"**debug** : Construit(build) avec les symboles de débogage C++, les "
+"contrôles d'exécution (effectue des contrôles et signale les erreurs) et une "
+"optimisation nulle ou faible."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:150
 msgid ""
 "**release_debug**: Build without C++ debugging symbols and optimization, but "
 "keep the runtime checks (performs checks and reports errors). Official "
 "editor binaries use this configuration."
 msgstr ""
+"**release_debug** : Construire(build) sans symboles de débogage C++ ni "
+"optimisation, mais conserve les contrôles d'exécution (effectue les "
+"contrôles et signale les erreurs). Les binaires officiels de l'éditeur "
+"utilisent cette configuration."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:151
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:153
 msgid ""
 "**release**: Build without symbols, with optimization and with little to no "
 "runtime checks. This target can't be used together with ``tools=yes``, as "
 "the editor requires some debug functionality and run-time checks to run."
 msgstr ""
+"**release** : Construire(build) sans symboles, avec optimisation et avec peu "
+"ou pas de contrôles d'exécution. Cette cible ne peut pas être utilisée avec "
+"``tools=yes``, car l'éditeur nécessite certaine fonctionnalité de débogage "
+"et des vérifications d'exécution pour fonctionner."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:160
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:162
 msgid ""
 "This flag appends the ``.debug`` suffix (for debug), or ``.tools`` (for "
 "debug with tools enabled). When optimization is enabled (release), it "
 "appends the ``.opt`` suffix."
 msgstr ""
-
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:165
-msgid "Bits"
-msgstr ""
+"Ce drapeau ajoute le suffixe ``.debug`` (pour débogage), ou ``.tools`` (pour "
+"débogage avec les outils activés). Lorsque l'optimisation est activée "
+"(release), il ajoute le suffixe ``.opt``."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
+msgid "Bits"
+msgstr "Bits"
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
 msgstr ""
-
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:171
-msgid "**32**: Build binaries for 32-bit platforms."
-msgstr ""
-
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:172
-msgid "**64**: Build binaries for 64-bit platforms."
-msgstr ""
+"Bits est destiné à contrôler la version du CPU ou de l'OS destinée à "
+"exécuter les binaires. Il est principalement axé sur les plates-formes de "
+"bureau et ignoré partout ailleurs."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
+msgid "**32**: Build binaries for 32-bit platforms."
+msgstr ""
+"**32** : Construire(build) des binaires pour les plates-formes 32 bits."
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
+msgid "**64**: Build binaries for 64-bit platforms."
+msgstr ""
+"**64** : Construire(build) des binaires pour les plates-formes 64 bits."
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
 msgid "**default**: Build for the architecture that matches the host platform."
 msgstr ""
+"**par défaut** : Construire(build) pour l'architecture qui correspond à la "
+"plate-forme hôte."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:179
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:181
 msgid ""
 "This flag appends ``.32`` or ``.64`` suffixes to resulting binaries when "
 "relevant. If ``bits=default`` is used, the suffix will match the detected "
 "architecture."
 msgstr ""
-
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:184
-msgid "Other build options"
-msgstr ""
+"Ce signal concatène les suffixes ``.32`` ou ``.64`` au binaires obtenus si "
+"nécessaire. Si ``bits=default`` est utilisé, le suffixe correspondra à "
+"l'architecture détectée."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:186
+msgid "Other build options"
+msgstr "Autres options de compilation"
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Godot should be built (compiler, debug options, etc.) as well as the "
 "features to include/disable."
 msgstr ""
+"Il y a plusieurs autres options de compilation que vous pouvez utiliser pour "
+"configurer la façon dont Godot devrait être compilé (compilateur, options de "
+"débogage, etc.) ainsi que les fonctionnalités à activer/désactiver."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:192
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
 msgstr ""
+"Vérifiez le résultat de ``scons --help`` pour obtenir des détails à propos "
+"de chaque option de la version que vous souhaitez compiler."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:194
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:196
 msgid "Export templates"
 msgstr "Exporter des modèles"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:196
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
 "build them yourself (in case you want newer ones, you are using custom "
 "modules, or simply don't trust your own shadow)."
 msgstr ""
+"Les modèles d'exportation officiels sont téléchargés à partir du site Godot "
+"Engine : `godotengine.org <https://godotengine.org/>`__. Cependant, vous "
+"voudrez peut-être les construire vous-même (au cas où vous en voudriez de "
+"plus récents, que vous utilisez des modules personnalisés, ou tout "
+"simplement que vous ne faites pas confiance à votre propre ombre)."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:203
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most files are optimized binaries or packages for each platform:"
 msgstr ""
+"Si vous téléchargez le paquet officiel de modèles d'exportation et que vous "
+"le décompressez, vous remarquerez que la plupart des fichiers sont des "
+"binaires ou des paquets optimisés pour chaque plate-forme :"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:224
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:226
 msgid ""
 "To create those yourself, follow the instructions detailed for each platform "
 "in this same tutorial section. Each platform explains how to create its own "
 "template."
 msgstr ""
+"Pour les créer vous-même, suivez les instructions détaillées pour chaque "
+"plate-forme dans cette même section de tutoriel. Chaque plateforme explique "
+"comment créer son propre modèle."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:230
 msgid ""
 "The ``version.txt`` file should contain the corresponding Godot version "
 "identifier. This file is used to install export templates in a version-"
@@ -326,8 +426,17 @@ msgid ""
 "lines of the `version.py file in the Godot Git repository <https://github."
 "com/godotengine/godot/blob/master/version.py>`__."
 msgstr ""
+"Le fichier ``version.txt`` doit contenir l'identifiant de version Godot "
+"correspondant. Ce fichier est utilisé pour installer les modèles "
+"d'exportation dans un répertoire spécifique à la version afin d'éviter les "
+"conflits. Par exemple, si vous créez des modèles d'exportation pour Godot "
+"3.1.1, le fichier ``version.txt`` doit contenir ``3.1.1.stable`` sur la "
+"première ligne (et rien d'autre). Cet identifiant de version est basé sur "
+"les lignes ``major``, ``minor``, ``patch`` (si présent) et ``status`` du "
+"fichier `version.py` dans le dépôt Git Godot <https://github.com/godotengine/"
+"godot/blob/master/version.py>`__."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:236
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:238
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross-compilation, since you can cross-compile "
@@ -335,3 +444,8 @@ msgid ""
 "place, but Linux has the advantage of being the easier platform to set this "
 "up."
 msgstr ""
+"Si vous développez pour plusieurs plateformes, macOS est certainement la "
+"plateforme hôte la plus pratique pour la compilation croisée, puisque vous "
+"pouvez effectuer une compilation croisée pour presque toutes les cibles "
+"(sauf pour UWP). Linux et Windows viennent en deuxième position, mais Linux "
+"a l'avantage d'être la plate-forme la plus facile à mettre en place."

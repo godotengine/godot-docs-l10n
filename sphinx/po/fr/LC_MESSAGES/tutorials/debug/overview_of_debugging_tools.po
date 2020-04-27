@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
-msgstr ""
+msgstr "Aperçu des outils de débogage"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:6
 msgid ""
 "This guide will give you an overview of the available debugging tools in the "
 "engine."
 msgstr ""
+"Ce guide vous donnera un aperçu des outils de débogage disponibles dans le "
+"moteur."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:9
 msgid ""
@@ -34,12 +36,20 @@ msgid ""
 "performances. It also offers options to visualize collision boxes and "
 "navigation polygons in the running game."
 msgstr ""
+"Godot est doté d'un puissant débogueur et de profileurs qui permettent de "
+"repérer les bogues, d'inspecter votre jeu à l'exécution, de surveiller les "
+"paramètres essentiels et de mesurer les performances. Il offre également des "
+"options permettant de visualiser les boîtes de collision et les polygones de "
+"navigation dans le jeu en cours d'exécution."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:14
 msgid ""
 "Finally, you have options to debug the game running on a remote device and "
 "to reload changes to your scenes or your code while the game is running."
 msgstr ""
+"Enfin, vous avez la possibilité de déboguer le jeu en cours d'exécution sur "
+"un appareil distant et de recharger les modifications apportées à vos scènes "
+"ou à votre code pendant le déroulement du jeu."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:18
 msgid "Debug menu options"
@@ -50,6 +60,9 @@ msgid ""
 "There are a few common debug options you can toggle on or off when running "
 "your game in the editor, which can help you in debugging your game."
 msgstr ""
+"Il existe quelques options de débogage courantes que vous pouvez activer ou "
+"désactiver lorsque vous exécutez votre jeu dans l'éditeur, ce qui peut vous "
+"aider à déboguer votre jeu."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:23
 msgid "You can find these options in the **Debug** editor menu."
@@ -57,7 +70,7 @@ msgstr "Vous pouvez trouver ces options dans le menu de l'éditeur **Debug**."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
 msgid "Here are the descriptions of the options:"
-msgstr ""
+msgstr "Voici les descriptions des options :"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:30
 msgid "Deploy with Remote Debug"
@@ -68,6 +81,8 @@ msgid ""
 "When exporting and deploying, the resulting executable will attempt to "
 "connect to the IP of your computer for debugging."
 msgstr ""
+"Lors de l'exportation et du déploiement, l'exécutable résultant tentera de "
+"se connecter à l'IP de votre ordinateur pour le débogage."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
 msgid "Small Deploy with Network FS"
@@ -78,6 +93,8 @@ msgid ""
 "This option speeds up testing for games with a large footprint on remote "
 "devices."
 msgstr ""
+"Cette option accélère les tests pour les jeux avec une grande empreinte sur "
+"les appareils distants."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid ""
@@ -85,12 +102,17 @@ msgid ""
 "game, deploying the game builds a minimal executable. The editor then "
 "provides files from the project over the network."
 msgstr ""
+"Lorsque **Small Deploy with Network FS** est activé, au lieu d'exporter le "
+"jeu complet, le déploiement du jeu crée un exécutable minimal. L'éditeur "
+"fournit ensuite les fichiers du projet sur le réseau."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:44
 msgid ""
 "Also, on Android, the game is deployed using the USB cable to speed up "
 "deployment."
 msgstr ""
+"De plus, sur Android, le jeu est déployé à l'aide du câble USB pour "
+"accélérer le déploiement."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:47
 msgid "Visible Collision Shapes"
@@ -101,6 +123,8 @@ msgid ""
 "This option makes collision shapes and raycast nodes visible in the running "
 "game."
 msgstr ""
+"Cette option rend visibles les formes de collision et les nœuds de raycast "
+"dans le jeu en cours d’exécution."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:52
 msgid "Visible Navigation"
@@ -109,6 +133,8 @@ msgstr "Navigation visible"
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:54
 msgid "Navigation meshes and polygons will be visible on the running game."
 msgstr ""
+"Les maillages de navigation et les polygones seront visibles sur le jeu en "
+"cours d’exécution."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:57
 msgid "Sync Scene Changes"
@@ -120,6 +146,10 @@ msgid ""
 "appears instantly. When used remotely on a device, this is more efficient "
 "with the network filesystem."
 msgstr ""
+"Avec cette option, toute modification apportée à une scène dans l'éditeur au "
+"moment de l'exécution apparaît instantanément. Lorsqu'il est utilisé à "
+"distance sur un appareil, cela est plus efficace avec le système de fichiers "
+"réseau."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:64
 msgid "Sync Script Changes"
@@ -130,10 +160,13 @@ msgid ""
 "Any script that is saved will be reloaded on the running game. When used "
 "remotely on a device, this is more efficient with the network filesystem."
 msgstr ""
+"Tout script sauvegardé sera rechargé sur le jeu en cours d’exécution. "
+"Lorsqu'il est utilisé à distance sur un appareil, ce système est plus "
+"efficace avec le système de fichiers du réseau."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:70
 msgid "Script editor debug tools and options"
-msgstr ""
+msgstr "Outils et options de débogage de l'éditeur de script"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:72
 msgid ""
@@ -141,6 +174,9 @@ msgid ""
 "and two options. The breakpoint tools can also be found in the **Debugger** "
 "tab of the debugger."
 msgstr ""
+"L'éditeur de script possède son propre ensemble d'outils de débogage à "
+"utiliser avec les points d'arrêt(breakpoints) et deux options. Les outils de "
+"points d'arrêt se trouvent également dans l'onglet **Debugger** du débogueur."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
 msgid ""
@@ -149,6 +185,11 @@ msgid ""
 "Over** goes to the next line of code, and **Step Into** goes into a function "
 "if possible. Otherwise, it does the same thing as **Step Over**."
 msgstr ""
+"Le bouton **Break** provoque une rupture dans le script comme le ferait un "
+"point d'arrêt. Le bouton **Continue** permet de continuer le jeu après une "
+"pause à un point d'arrêt. **Step Over** passe à la ligne de code suivante, "
+"et **Step Into** passe dans une fonction si possible. Sinon, il fait la même "
+"chose que **Step Over**."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:83
 msgid ""
@@ -156,6 +197,9 @@ msgid ""
 "been closed. And the **Debug with External Editor** option lets you debug "
 "your game with an external editor."
 msgstr ""
+"L'option **Keep Debugger Open** permet de garder le débogueur ouvert après "
+"la fermeture d'une scène. Et l'option **Debug with External Editor** vous "
+"permet de déboguer votre jeu avec un éditeur externe."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:88
 msgid "Debug project settings"
@@ -166,6 +210,8 @@ msgid ""
 "In the project settings, there is a **Debug** category with three "
 "subcategories which control different things."
 msgstr ""
+"Dans les paramètres du projet, il y a une catégorie **Debug** avec trois "
+"sous-catégories qui contrôlent différentes choses."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:94
 msgid "Settings"
@@ -176,6 +222,9 @@ msgid ""
 "These are some general settings such as printing the current FPS to the "
 "**Output** panel, the maximum amount of functions when profiling and others."
 msgstr ""
+"Il s'agit de quelques paramètres généraux tels que l'impression du FPS "
+"actuel sur le panneau **Output**, le nombre maximum de fonctions lors du "
+"profilage et autres."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:101
 msgid "GDScript"
@@ -186,6 +235,9 @@ msgid ""
 "These settings allow you to toggle specific GDScript warnings, such as for "
 "unused variables. You can also turn off warnings completely."
 msgstr ""
+"Ces paramètres vous permettent d'activer/désactiver des avertissements "
+"GDScript spécifiques, par exemple pour les variables non utilisées. Vous "
+"pouvez également désactiver complètement les avertissements."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:107
 msgid "Shapes"
@@ -196,21 +248,28 @@ msgid ""
 "Shapes are where you can adjust the color of shapes that only appear for "
 "debugging purposes, such as collision and navigation shapes."
 msgstr ""
+"Les formes permettent d'ajuster la couleur des formes qui n'apparaissent "
+"qu'à des fins de débogage, telles que les formes de collision et de "
+"navigation."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
 msgid "Debugging tools"
-msgstr ""
+msgstr "Outils de débogage"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:115
 msgid ""
 "You can find the debugger in the bottom panel. Click on **Debugger** to open "
 "it."
 msgstr ""
+"Vous trouverez le débogueur dans le panneau inférieur. Cliquez sur "
+"**Debugger** pour l'ouvrir."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:119
 msgid ""
 "The debugger is split into several tabs, each focusing on a specific task."
 msgstr ""
+"Le débogueur est divisé en plusieurs onglets, chacun se concentrant sur une "
+"tâche spécifique."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:122
 msgid "Debugger"
@@ -221,6 +280,8 @@ msgid ""
 "The debugger tab opens automatically when the GDScript compiler reaches a "
 "breakpoint in your code."
 msgstr ""
+"L'onglet débogueur s'ouvre automatiquement lorsque le compilateur GDScript "
+"atteint un point d'arrêt dans votre code."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:127
 msgid ""
@@ -228,40 +289,51 @@ msgid ""
 "information about the state of the object, and buttons to control the "
 "program's execution."
 msgstr ""
+"Cela vous donne une `trace d'appels <https://fr.wikipedia.org/wiki/Trace_d"
+"%27appels>`__, des informations sur l'état de l'objet, et des boutons "
+"servant à contrôler l'exécution du programme."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:131
 msgid "You can use the buttons in the top-right to:"
-msgstr ""
+msgstr "Vous pouvez utiliser les boutons en haut à droite pour :"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
 msgid ""
 "Skip all breakpoints. That way, you can save breakpoints for future "
 "debugging sessions."
 msgstr ""
+"Ignorer tous les points d'arrêt. Cela permet de garder les points d'arrêt "
+"pour un futur débogage."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:135
 msgid "Copy the current error message."
-msgstr ""
+msgstr "Copier le message d'erreur en cours."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:136
 msgid ""
 "**Step Into** the code. This button takes you to the next line of code, and "
 "if it's a function, it steps line-by-line through the function."
 msgstr ""
+"**Step Into**. Ce bouton vous amène à la prochaine ligne de code, et si "
+"c'est une fonction, elle est exécutée ligne par ligne."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:138
 msgid ""
 "**Step Over** the code. This button goes to the next line of code, but it "
 "doesn't step line-by-line through functions."
 msgstr ""
+"**Step Over**. Ce bouton vous amène à la prochaine ligne de code, mais sans "
+"entrer dans les fonctions."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:140
 msgid "**Break**. This button pauses the game's execution."
-msgstr ""
+msgstr "**Break**. Ce bouton met en pause l'exécution du jeu."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:141
 msgid "**Continue**. This button resumes the game after a breakpoint or pause."
 msgstr ""
+"**Continue**. Ce bouton relance le jeu après un point d'arrêt(breakpoint) ou "
+"à l'endroit où le jeu a été mis en pause."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:144
 msgid "Errors"
@@ -271,6 +343,8 @@ msgstr "Erreurs"
 msgid ""
 "This is where errors and warning messages are printed while running the game."
 msgstr ""
+"C'est là que les erreurs et les messages d'avertissement sont imprimés lors "
+"de l'exécution du jeu."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
 msgid "Profiler"
@@ -281,12 +355,16 @@ msgid ""
 "The debugger comes with three profilers for your processor, network "
 "operations, and video memory."
 msgstr ""
+"Le débogueur est fourni avec trois profileurs : un pour le processeur, un "
+"pour les échanges via le réseau, et un pour la mémoire vidéo."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:154
 msgid ""
 "The profiler is used to show why individual frames take as long as they do "
 "to process and render."
 msgstr ""
+"Le profileur est utilisé pour pourquoi chaque image prend tant de temps pour "
+"être traitée et rendue."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:157
 msgid ""
@@ -298,6 +376,14 @@ msgid ""
 "records won't go away unless you click clear, or close the game, reopen it "
 "and start the profiler again."
 msgstr ""
+"Contrairement aux autres outils de débogage, le profileur ne démarre pas "
+"automatiquement. Il peut être démarré à tout moment pendant le jeu en "
+"appuyant sur le bouton de démarrage. Vous pouvez même démarrer le profileur "
+"avant l'ouverture du jeu pour profiler les performances de démarrage. Il "
+"peut également être démarré et arrêté pendant le jeu sans perdre les "
+"informations relatives à la dernière exécution du jeu. Les informations "
+"qu'il enregistre ne disparaissent que si vous cliquez sur effacer, ou si "
+"vous fermez le jeu, le rouvrez et redémarrez le profileur."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:165
 msgid ""
@@ -306,6 +392,11 @@ msgid ""
 "are everything that contributes to frame time, and they should each have a "
 "value for time and calls for the current frame you are looking at."
 msgstr ""
+"Après avoir démarré et arrêté le profileur, vous devriez voir à gauche les "
+"éléments suivis et à droite un graphique. Les éléments listés à gauche sont "
+"tout ce qui contribue à la durée du d'une image(FPS), et chacun d'eux "
+"devrait avoir une valeur de temps et d'appels pour l'image que vous regardez "
+"actuellement."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:170
 msgid ""
@@ -313,6 +404,10 @@ msgid ""
 "looking at. You can change this by using the up or down arrows, typing in "
 "the frame number, or clicking on the graph."
 msgstr ""
+"Le numéro de l'image en haut à droite vous indique quelle image vous "
+"regardez actuellement. Vous pouvez le modifier en utilisant les flèches vers "
+"le haut ou vers le bas, en saisissant le numéro de l'image ou en cliquant "
+"sur le graphique."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:174
 msgid ""
@@ -320,6 +415,9 @@ msgid ""
 "you can check and uncheck the box next to an item to add or remove it from "
 "the graph."
 msgstr ""
+"Si vous voulez ajouter quelque chose à votre graphique, ou si vous pensez "
+"qu'il a l'air trop encombré, vous pouvez cocher et décocher la case à côté "
+"d'un élément à ajouter ou à retirer du graphique."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:179
 msgid "Network Profiler"
@@ -332,6 +430,11 @@ msgid ""
 "incoming and outgoing network interactions. It also features a bandwidth "
 "meter that displays the total bandwidth usage at any given moment."
 msgstr ""
+"Le Network Profiler contient une liste de tous les nœuds qui communiquent "
+"via l'API multijoueur et, pour chacun d'entre eux, des compteurs sur la "
+"quantité d'interactions réseau entrantes et sortantes. Il comporte également "
+"un compteur de bande passante qui affiche l'utilisation totale de la bande "
+"passante à un moment donné."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:187
 msgid "Monitors"
@@ -345,6 +448,12 @@ msgid ""
 "open while the game is running, you can open it later and see how the values "
 "changed."
 msgstr ""
+"Les moniteurs sont des graphiques de plusieurs aspects du jeu pendant son "
+"déroulement, tels que les FPS, l'utilisation de la mémoire, le nombre de "
+"nœuds dans une scène et plus encore. Tous les moniteurs suivent les "
+"statistiques automatiquement, de sorte que même si un moniteur n'est pas "
+"ouvert pendant le jeu, vous pouvez l'ouvrir plus tard et voir comment les "
+"valeurs ont changé."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:195
 msgid "Video Memory"
@@ -355,6 +464,8 @@ msgid ""
 "The **Video Mem** tab lists the video memory usage of the running game and "
 "the resources using it."
 msgstr ""
+"L'onglet **Video Mem** indique l'utilisation de la mémoire vidéo du jeu en "
+"cours et les ressources qui l'utilisent."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:201
 msgid "Misc"
@@ -365,19 +476,25 @@ msgid ""
 "The **Misc** tab contains tools to identify the control nodes you are "
 "clicking at runtime:"
 msgstr ""
+"L'onglet **Misc** contient des outils permettant d'identifier les nœuds de "
+"contrôle sur lesquels vous cliquez pendant de l'exécution :"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:206
 msgid ""
 "**Clicked Control** tells you where the clicked node is in the scene tree."
 msgstr ""
+"**Clicked Control** vous indique où se trouve le nœud cliqué dans l'arbre "
+"des scènes."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:207
 msgid "**Clicked Control Type** tells you the type of the node you clicked is."
 msgstr ""
+"**Clicked Control Type** vous indique le type du nœud sur lequel vous avez "
+"cliqué."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:210
 msgid "Remote in scene dock"
-msgstr ""
+msgstr "Remote dans le dock de scène"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:212
 msgid ""
@@ -385,9 +502,16 @@ msgid ""
 "**Scene** dock, **Remote** and **Local**. While using **Remote** you can "
 "inspect or change the nodes' parameters in the running project."
 msgstr ""
+"Lorsque vous lancez un jeu dans l'éditeur, deux options apparaissent en haut "
+"du dock **Scene**, **Remote** et **Local**. En utilisant **Remote**, vous "
+"pouvez inspecter ou modifier les paramètres des nœuds dans le projet en "
+"cours d'exécution."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:218
 msgid ""
 "Some editor settings related to debugging can be found inside the **Editor "
 "Settings**, under the **Network > Debug** and **Debugger** sections."
 msgstr ""
+"Certains paramètres de l'éditeur relatifs au débogage se trouvent dans les "
+"**Paramètres de l'éditeur**, sous les sections **Network > Debug** et "
+"**Debugger**."

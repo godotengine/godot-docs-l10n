@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -184,23 +184,23 @@ msgid ""
 "either side:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:201
+#: ../../docs/tutorials/math/vectors_advanced.rst:199
 msgid ""
 "The rest is the same as the previous example, either point_a or point_b will "
 "work since they are in the same plane:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:219
+#: ../../docs/tutorials/math/vectors_advanced.rst:217
 msgid ""
 "Doing the same in 3D is a little more complex and will be explained further "
 "down."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:223
+#: ../../docs/tutorials/math/vectors_advanced.rst:221
 msgid "Some examples of planes"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:225
+#: ../../docs/tutorials/math/vectors_advanced.rst:223
 msgid ""
 "Here is a simple example of what planes are useful for. Imagine you have a "
 "`convex <https://www.mathsisfun.com/definitions/convex.html>`__ polygon. For "
@@ -208,26 +208,26 @@ msgid ""
 "faces bend inwards."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:230
+#: ../../docs/tutorials/math/vectors_advanced.rst:228
 msgid ""
 "For every segment of the polygon, we compute the plane that passes by that "
 "segment. Once we have the list of planes, we can do neat things, for example "
 "checking if a point is inside the polygon."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:234
+#: ../../docs/tutorials/math/vectors_advanced.rst:232
 msgid ""
 "We go through all planes, if we can find a plane where the distance to the "
 "point is positive, then the point is outside the polygon. If we can't, then "
 "the point is inside."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:240
-#: ../../docs/tutorials/math/vectors_advanced.rst:279
+#: ../../docs/tutorials/math/vectors_advanced.rst:238
+#: ../../docs/tutorials/math/vectors_advanced.rst:277
 msgid "Code should be something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:265
+#: ../../docs/tutorials/math/vectors_advanced.rst:263
 msgid ""
 "Pretty cool, huh? But this gets much better! With a little more effort, "
 "similar logic will let us know when two convex polygons are overlapping too. "
@@ -235,7 +235,7 @@ msgid ""
 "use this to detect collision."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:270
+#: ../../docs/tutorials/math/vectors_advanced.rst:268
 msgid ""
 "With a point, just checking if a plane returns a positive distance is enough "
 "to tell if the point is outside. With another polygon, we must find a plane "
@@ -244,7 +244,7 @@ msgid ""
 "and then with the planes of B against the points of A:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:370
+#: ../../docs/tutorials/math/vectors_advanced.rst:368
 msgid ""
 "As you can see, planes are quite useful, and this is the tip of the iceberg. "
 "You might be wondering what happens with non convex polygons. This is "
@@ -252,11 +252,11 @@ msgid ""
 "polygons, or using a technique such as BSP (which is not used much nowadays)."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:377
+#: ../../docs/tutorials/math/vectors_advanced.rst:375
 msgid "Collision detection in 3D"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:379
+#: ../../docs/tutorials/math/vectors_advanced.rst:377
 msgid ""
 "This is another bonus bit, a reward for being patient and keeping up with "
 "this long tutorial. Here is another piece of wisdom. This might not be "
@@ -265,21 +265,21 @@ msgid ""
 "detection libraries :)"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:385
+#: ../../docs/tutorials/math/vectors_advanced.rst:383
 msgid ""
 "Remember that converting a convex shape in 2D to an array of 2D planes was "
 "useful for collision detection? You could detect if a point was inside any "
 "convex shape, or if two 2D convex shapes were overlapping."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:389
+#: ../../docs/tutorials/math/vectors_advanced.rst:387
 msgid ""
 "Well, this works in 3D too, if two 3D polyhedral shapes are colliding, you "
 "won't be able to find a separating plane. If a separating plane is found, "
 "then the shapes are definitely not colliding."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:393
+#: ../../docs/tutorials/math/vectors_advanced.rst:391
 msgid ""
 "To refresh a bit a separating plane means that all vertices of polygon A are "
 "in one side of the plane, and all vertices of polygon B are in the other "
@@ -287,20 +287,45 @@ msgid ""
 "polygon B."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:398
+#: ../../docs/tutorials/math/vectors_advanced.rst:396
 msgid ""
 "In 3D though, there is a problem to this approach, because it is possible "
 "that, in some cases a separating plane can't be found. This is an example of "
 "such situation:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:404
+#: ../../docs/tutorials/math/vectors_advanced.rst:402
 msgid ""
 "To avoid it, some extra planes need to be tested as separators, these planes "
 "are the cross product between the edges of polygon A and the edges of "
 "polygon B"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:410
+#: ../../docs/tutorials/math/vectors_advanced.rst:408
 msgid "So the final algorithm is something like:"
 msgstr "Końcowy algorytm będzie wyglądał tak:"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:589
+#, fuzzy
+msgid "More information"
+msgstr "Więcej informacji"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:591
+#, fuzzy
+msgid ""
+"For more information on using vector math in Godot, see the following "
+"article:"
+msgstr ""
+"Więcej informacji na temat używania matematyki wektorowej w Godocie można "
+"znaleźć w poniższych artykułach:"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:593
+msgid ":ref:`doc_matrices_and_transforms`"
+msgstr ":ref:`doc_matrices_and_transforms`"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:595
+msgid ""
+"If you would like additional explanation, you should check out 3Blue1Brown's "
+"excellent video series \"Essence of Linear Algebra\": https://www.youtube."
+"com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"
+msgstr ""

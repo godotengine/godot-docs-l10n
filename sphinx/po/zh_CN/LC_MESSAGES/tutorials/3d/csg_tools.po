@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,79 +42,94 @@ msgstr ""
 "CSG在Godot中的目的是将其用于水平原型设计。 该技术允许用户通过组合基元来创建最"
 "常见形状的简单版本。 可以使用反转基元创建室内环境。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:17
+#: ../../docs/tutorials/3d/csg_tools.rst:14
+msgid ""
+"The CSG nodes in Godot are mainly intended for prototyping. There is no "
+"built-in support for UV mapping or editing 3D polygons (though extruded 2D "
+"polygons can be used with the CSGPolygon node)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:18
+msgid ""
+"If you're looking for an easy to use level design tool for a project, you "
+"may want to use `Qodot <https://github.com/Shfty/qodot-plugin>`__ instead. "
+"It lets you design levels using `TrenchBroom <https://kristianduske.com/"
+"trenchbroom/>`__ and import them in Godot."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:27
 msgid "Introduction to CSG nodes"
 msgstr "CSG节点简介"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:19
+#: ../../docs/tutorials/3d/csg_tools.rst:29
 #, fuzzy
 msgid ""
 "Like other features of Godot, CSG is supported in the form of nodes. These "
 "are the CSG nodes:"
 msgstr "与Godot的其他功能一样，CSG以节点的形式支持，这些是CSG节点:"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:22
+#: ../../docs/tutorials/3d/csg_tools.rst:32
 msgid ":ref:`CSGBox <class_CSGBox>`"
 msgstr ":ref:`CSGBox <class_CSGBox>`"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:23
+#: ../../docs/tutorials/3d/csg_tools.rst:33
 #, fuzzy
 msgid ":ref:`CSGCylinder <class_CSGCylinder>` (also supports cone)"
 msgstr ":ref:`CSGCylinder <class_CSGCylinder>` (也支持锥形)"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:24
+#: ../../docs/tutorials/3d/csg_tools.rst:34
 msgid ":ref:`CSGSphere <class_CSGSphere>`"
 msgstr ":ref:`CSGSphere <class_CSGSphere>`"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:25
+#: ../../docs/tutorials/3d/csg_tools.rst:35
 msgid ":ref:`CSGTorus <class_CSGTorus>`"
 msgstr ":ref:`CSGTorus <class_CSGTorus>`"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:26
+#: ../../docs/tutorials/3d/csg_tools.rst:36
 msgid ":ref:`CSGPolygon <class_CSGPolygon>`"
 msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:27
+#: ../../docs/tutorials/3d/csg_tools.rst:37
 msgid ":ref:`CSGMesh <class_CSGMesh>`"
 msgstr ":ref:`CSGMesh <class_CSGMesh>`"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:28
+#: ../../docs/tutorials/3d/csg_tools.rst:38
 msgid ":ref:`CSGCombiner <class_CSGcombiner>`"
 msgstr ":ref:`CSGCombiner <class_CSGcombiner>'"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:35
+#: ../../docs/tutorials/3d/csg_tools.rst:45
 msgid "CSG tools features"
 msgstr "CSG工具功能"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:37
+#: ../../docs/tutorials/3d/csg_tools.rst:47
 msgid "Every CSG node supports 3 kinds of boolean operations:"
 msgstr "每个CSG节点都支持3种布尔运算:"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:39
+#: ../../docs/tutorials/3d/csg_tools.rst:49
 #, fuzzy
 msgid ""
 "**Union:** Geometry of both primitives is merged, intersecting geometry is "
 "removed."
 msgstr "联合:合并两个基元的几何，删除交叉几何。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:41
+#: ../../docs/tutorials/3d/csg_tools.rst:51
 #, fuzzy
 msgid ""
 "**Intersection:** Only intersecting geometry remains, the rest is removed."
 msgstr "交点:仅保留相交的几何图形，其余部分将被删除。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:42
+#: ../../docs/tutorials/3d/csg_tools.rst:52
 #, fuzzy
 msgid ""
 "**Subtraction:** The second shape is subtracted from the first, leaving a "
 "dent with its shape."
 msgstr "减法:从第一个形状中减去第二个形状，留下形状的凹痕。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:50
+#: ../../docs/tutorials/3d/csg_tools.rst:60
 msgid "CSGPolygon"
 msgstr "CSGPolygon"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:52
+#: ../../docs/tutorials/3d/csg_tools.rst:62
 msgid ""
 "The :ref:`CSGPolygon <class_CSGPolygon>` node extrude along a Polygon drawn "
 "in 2D (in X,Y coordinates) in the following ways:"
@@ -122,24 +137,24 @@ msgstr ""
 ":ref:`CSGPolygon <class_CSGPolygon>` 节点沿着以2D(X，Y坐标)绘制的多边形以下列"
 "方式拉伸:"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:55
+#: ../../docs/tutorials/3d/csg_tools.rst:65
 #, fuzzy
 msgid "**Depth:** Extruded back a given amount."
 msgstr "深度:挤出一定量。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:56
+#: ../../docs/tutorials/3d/csg_tools.rst:66
 #, fuzzy
 msgid "**Spin:** Extruded while spinning around its origin."
 msgstr "旋转:在旋转它的原点时挤压。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:57
+#: ../../docs/tutorials/3d/csg_tools.rst:67
 #, fuzzy
 msgid ""
 "**Path:** Extruded along a Path node. This operation is commonly called "
 "lofting."
 msgstr "路径:沿路径节点挤出。 此操作通常称为放样。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:64
+#: ../../docs/tutorials/3d/csg_tools.rst:74
 #, fuzzy
 msgid ""
 "The **Path** mode must be provided with a :ref:`Path <class_Path>` node to "
@@ -149,11 +164,11 @@ msgstr ""
 "``Path`` 模式需要一个 ``Path`` :ref:`Path <class_Path>` 节点来运行。 在 "
 "``Path`` 中，绘制路径，``CSGPolygon`` 中的多边形将沿路径挤出。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:70
+#: ../../docs/tutorials/3d/csg_tools.rst:80
 msgid "Custom meshes"
 msgstr "自定义网格"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:72
+#: ../../docs/tutorials/3d/csg_tools.rst:82
 #, fuzzy
 msgid ""
 "Any mesh can be used for :ref:`CSGMesh <class_CSGMesh>`; the mesh can be "
@@ -163,31 +178,31 @@ msgstr ""
 "任何网格都可以用于 :ref:`CSGMesh <class_CSGMesh>`，网格可以在其他软件中建模并"
 "导入Godot。 支持多种材质。 几何有一些限制:"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:76
+#: ../../docs/tutorials/3d/csg_tools.rst:86
 #, fuzzy
 msgid "it must be closed,"
 msgstr "它必须关闭"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:77
+#: ../../docs/tutorials/3d/csg_tools.rst:87
 #, fuzzy
 msgid "it must not self-intersect,"
 msgstr "它不能自相交"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:78
+#: ../../docs/tutorials/3d/csg_tools.rst:88
 #, fuzzy
 msgid "it must not contain internal faces,"
 msgstr "它不得包含内部面"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:79
+#: ../../docs/tutorials/3d/csg_tools.rst:89
 #, fuzzy
 msgid "every edge must connect to only two other faces."
 msgstr "每条边都必须连接到另外两个面"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:84
+#: ../../docs/tutorials/3d/csg_tools.rst:94
 msgid "CSGCombiner"
 msgstr "CSGCombiner"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:86
+#: ../../docs/tutorials/3d/csg_tools.rst:96
 msgid ""
 "The :ref:`CSGCombiner <class_CSGCombiner>` node is an empty shape used for "
 "organization. It will only combine children nodes."
@@ -195,12 +210,12 @@ msgstr ""
 ":ref:`CSGCombiner <class_CSGCombiner>` 节点是用于组织的空形状。 它只会组合子"
 "节点。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:90
+#: ../../docs/tutorials/3d/csg_tools.rst:100
 #, fuzzy
 msgid "Processing order"
 msgstr "处理顺序"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:92
+#: ../../docs/tutorials/3d/csg_tools.rst:102
 #, fuzzy
 msgid ""
 "Every CSG node will first process its children nodes and their operations: "
@@ -210,7 +225,7 @@ msgstr ""
 "每个CSG节点将首先按树顺序处理其子节点及其操作:并集，交集或减法，并将它们一个"
 "接一个地应用于自身。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:96
+#: ../../docs/tutorials/3d/csg_tools.rst:106
 #, fuzzy
 msgid ""
 "In the interest of performance, make sure CSG geometry remains relatively "
@@ -225,50 +240,50 @@ msgstr ""
 "树。 在单个树中强制过多的对象最终会开始影响性能。 仅在实际需要的地方使用二进"
 "制操作。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:104
+#: ../../docs/tutorials/3d/csg_tools.rst:114
 msgid "Prototyping a level"
 msgstr "原型设计"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:106
+#: ../../docs/tutorials/3d/csg_tools.rst:116
 msgid "We will prototype a room to practice the use of CSG tools."
 msgstr "我们将对房间进行原型设计以练习使用CSG工具。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:108
+#: ../../docs/tutorials/3d/csg_tools.rst:118
 #, fuzzy
 msgid ""
 "Working in **Orthogonal** projection gives a better view when combining the "
 "CSG shapes."
 msgstr "在组合CSG形状时，在“Orthogonal”视图中工作可以提供更好的视图。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:111
+#: ../../docs/tutorials/3d/csg_tools.rst:121
 msgid "Our level will contain these objects:"
 msgstr "我们的关卡将包含以下对象："
 
-#: ../../docs/tutorials/3d/csg_tools.rst:113
+#: ../../docs/tutorials/3d/csg_tools.rst:123
 msgid "a room,"
 msgstr "一个房间，"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:114
+#: ../../docs/tutorials/3d/csg_tools.rst:124
 msgid "a bed,"
 msgstr "一张床，"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:115
+#: ../../docs/tutorials/3d/csg_tools.rst:125
 msgid "a lamp,"
 msgstr "一盏灯，"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:116
+#: ../../docs/tutorials/3d/csg_tools.rst:126
 msgid "a desk,"
 msgstr "一张桌子，"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:117
+#: ../../docs/tutorials/3d/csg_tools.rst:127
 msgid "a bookshelf."
 msgstr "一个书架。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:119
+#: ../../docs/tutorials/3d/csg_tools.rst:129
 msgid "Create a scene with a Spatial node as root node."
 msgstr "使用Spatial节点作为根节点创建场景。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:121
+#: ../../docs/tutorials/3d/csg_tools.rst:131
 #, fuzzy
 msgid ""
 "The default lighting of the environment doesn't provide clear shading at "
@@ -278,42 +293,42 @@ msgstr ""
 "环境的默认光照不能在某个角度提供清晰的阴影，以“过度绘制”模式显示或添加方向光"
 "以帮助您清楚地看到。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:128
+#: ../../docs/tutorials/3d/csg_tools.rst:138
 #, fuzzy
 msgid ""
 "Create a CSGBox and name it ``room``, enable **Invert Faces** and change the "
 "dimensions of your room."
 msgstr "然后，创建一个CSGBox并将其命名为room，选择反转面并更改房间的大小。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:135
+#: ../../docs/tutorials/3d/csg_tools.rst:145
 msgid "Next, create a CSGCombiner and name it ``desk``."
 msgstr "接下来，创建一个CSGCombiner并将其命名为 ``desk`` 。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:137
+#: ../../docs/tutorials/3d/csg_tools.rst:147
 #, fuzzy
 msgid "A desk has one surface and 4 legs:"
 msgstr "桌子有一个表面和四条腿。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:139
+#: ../../docs/tutorials/3d/csg_tools.rst:149
 #, fuzzy
 msgid ""
 "Create 1 CSGBox children node in **Union** mode for the surface and adjust "
 "the dimensions."
 msgstr "在表面的`union``模式下创建1``CSGBox``子节点并调整大小。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:141
+#: ../../docs/tutorials/3d/csg_tools.rst:151
 #, fuzzy
 msgid ""
 "Create 4 CSGBox children nodes in **Union** mode for the legs and adjust the "
 "dimensions."
 msgstr "在“联合”模式下为腿创建4个 ``CSGBox`` 子节点并调整大小。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:144
+#: ../../docs/tutorials/3d/csg_tools.rst:154
 #, fuzzy
 msgid "Adjust their placement to resemble a desk."
 msgstr "调整位置以形成桌子。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:148
+#: ../../docs/tutorials/3d/csg_tools.rst:158
 #, fuzzy
 msgid ""
 "CSG nodes inside a CSGCombiner will only process their operation within the "
@@ -322,12 +337,12 @@ msgstr ""
 "“CSGCombiner”中的CSG节点只会在组合器中处理它们的操作，因此，“CSGCombiners”用"
 "于组织CSG节点。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:152
+#: ../../docs/tutorials/3d/csg_tools.rst:162
 #, fuzzy
 msgid "Create a CSGCombiner and name it ``bed``."
 msgstr "创建一个 ``CSGCombiner`` 并将其命名为 ``bed`` 。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:154
+#: ../../docs/tutorials/3d/csg_tools.rst:164
 #, fuzzy
 msgid ""
 "Our bed consists of 3 parts: the bed, the mattress and a pillow. Create a "
@@ -337,7 +352,7 @@ msgstr ""
 "创建一个 ``CSGBox`` 并调整其床的大小。 创建另一个 ``CSGBox`` 并调整床垫的大"
 "小。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:160
+#: ../../docs/tutorials/3d/csg_tools.rst:170
 #, fuzzy
 msgid ""
 "We will create another CSGCombiner named ``pillow`` as the child of  "
@@ -346,7 +361,7 @@ msgstr ""
 "我们将创建另一个 ``CSGCombiner`` 并将其命名为 ``pillow`` 作为 ``bed`` 的子节"
 "点。 场景树应如下所示:"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:165
+#: ../../docs/tutorials/3d/csg_tools.rst:175
 #, fuzzy
 msgid ""
 "We will combine 3 CSGSphere nodes in **Union** mode to form a pillow. Scale "
@@ -355,21 +370,21 @@ msgstr ""
 "我们将在 ``union`` 模式中组合3 ``CSGshpere`` 来形成一个枕头。 缩放球体的y轴并"
 "启用“光滑面”。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:170
+#: ../../docs/tutorials/3d/csg_tools.rst:180
 #, fuzzy
 msgid ""
 "Select the ``pillow`` node and switch the mode to **Subtraction**; the "
 "combined spheres will cut a hole into the mattress."
 msgstr "选择`枕头'节点并将模式切换为“减法”，合并的球体将在床垫上切一个洞。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:175
+#: ../../docs/tutorials/3d/csg_tools.rst:185
 #, fuzzy
 msgid ""
 "Try to re-parent the ``pillow`` node to the root ``Spatial`` node; the hole "
 "will disappear."
 msgstr "尝试将 ``pillow`` 节点重新设置为根 ``Spatial`` 节点，该孔将消失。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:178
+#: ../../docs/tutorials/3d/csg_tools.rst:188
 #, fuzzy
 msgid ""
 "This is to illustrate the effect of CSG processing order. Since the root "
@@ -379,19 +394,19 @@ msgstr ""
 "这是为了说明CSG流程订单的效果。 由于根节点不是CSG节点，因此 ``CSGCombiner`` "
 "节点是操作的结束，这表示使用 ``CSGCombiner`` 来组织CSG场景。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:183
+#: ../../docs/tutorials/3d/csg_tools.rst:193
 #, fuzzy
 msgid ""
 "Undo the re-parent after observing the effect. The bed you've built should "
 "look like this:"
 msgstr "观察效果后撤消重新父母。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:188
+#: ../../docs/tutorials/3d/csg_tools.rst:198
 #, fuzzy
 msgid "Create a CSGCombiner and name it ``lamp``."
 msgstr "创建一个 ``CSGCombiner`` 并将其命名为 ``lamp`` 。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:190
+#: ../../docs/tutorials/3d/csg_tools.rst:200
 #, fuzzy
 msgid ""
 "A lamp consists of 3 parts: the stand, the pole and the lampshade. Create a "
@@ -401,7 +416,7 @@ msgstr ""
 "创建一个 ``CSGCylinder`` 启用选项 ``cone`` 并使其成为支架。 创建另一个 "
 "``CSGCylinder`` 并调整大小以将其用作极点。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:196
+#: ../../docs/tutorials/3d/csg_tools.rst:206
 #, fuzzy
 msgid ""
 "We will use a CSGPolygon for the lampshade. Use the **Spin** mode for the "
@@ -412,17 +427,17 @@ msgstr ""
 "我们将使用 ``CSGPolygon`` 作为灯罩。 使用 ``Spin`` 模式作为 ``CSGPolygon`` 并"
 "在前视图中绘制一个梯形，这个形状将在原点周围挤出并形成灯罩。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:207
+#: ../../docs/tutorials/3d/csg_tools.rst:217
 #, fuzzy
 msgid "Adjust the placement of the 3 parts to make it look like a lamp."
 msgstr "调整3个部分的位置，使其成为“灯”。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:211
+#: ../../docs/tutorials/3d/csg_tools.rst:221
 #, fuzzy
 msgid "Create a CSGCombiner and name it ``bookshelf``."
 msgstr "创建一个 ``CSGCombiner`` 并将其命名为 ``bookshelf`` 。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:213
+#: ../../docs/tutorials/3d/csg_tools.rst:223
 #, fuzzy
 msgid ""
 "We will use 3 CSGBox nodes for the bookshelf. Create a CSGBox and adjust its "
@@ -431,14 +446,14 @@ msgstr ""
 "我们将使用3 ``CSGBox`` 作为书架。 创建一个 ``CSGBox`` 并调整其大小，这将是书"
 "架的大小。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:218
+#: ../../docs/tutorials/3d/csg_tools.rst:228
 #, fuzzy
 msgid ""
 "Duplicate the CSGBox and shorten the dimensions of each axis and change the "
 "mode to **Subtraction**."
 msgstr "复制 ``CSGBox`` 并缩短每个轴的大小并将模式更改为 ``Subtraction`` 。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:225
+#: ../../docs/tutorials/3d/csg_tools.rst:235
 #, fuzzy
 msgid ""
 "You've almost built a shelf. Create one more CSGBox for dividing the shelf "
@@ -446,13 +461,13 @@ msgid ""
 msgstr ""
 "您几乎建立了一个架子。 再创建一个 ``CSGBox`` ，用于将货架划分为两个级别。"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:230
+#: ../../docs/tutorials/3d/csg_tools.rst:240
 msgid ""
 "Position your furniture in your room as you like and your scene should look "
 "this:"
 msgstr "根据您的喜好将您的家具放在房间里，您的场景应该是这样的:"
 
-#: ../../docs/tutorials/3d/csg_tools.rst:235
+#: ../../docs/tutorials/3d/csg_tools.rst:245
 #, fuzzy
 msgid ""
 "You've successfully prototyped a room level with the CSG tools in Godot. CSG "
@@ -461,3 +476,66 @@ msgid ""
 msgstr ""
 "您使用Godot中的csg工具成功构建了一个房间级别的原型。 CSG工具可用于设计各种级"
 "别，如迷宫或城市，在设计游戏时探索它的局限性。"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:250
+#, fuzzy
+msgid "Using prototype textures"
+msgstr "使用视区作为纹理"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:252
+msgid ""
+"Godot's :ref:`doc_spatial_material` supports *triplanar mapping*, which can "
+"be used to automatically apply a texture to arbitrary objects without "
+"distortion. This is handy when using CSG as Godot doesn't support editing UV "
+"maps on CSG nodes yet. Triplanar mapping is relatively slow, which usually "
+"restricts its usage to organic surfaces like terrain. Still, when "
+"prototyping, it can be used to quickly apply textures to CSG-based levels."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:259
+msgid ""
+"If you need some textures for prototyping, Kenney made a `set of CC0-"
+"licensed prototype textures <https://kenney.nl/assets/prototype-textures>`__."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:262
+#, fuzzy
+msgid "There are two ways to apply a material to a CSG node:"
+msgstr "获取证书有两种方法:"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:264
+msgid ""
+"Applying it to a CSGCombiner node as a material override (**Geometry > "
+"Material Override** in the Inspector). This will affect its children "
+"automatically, but will make it impossible to change the material in "
+"individual children."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:268
+msgid ""
+"Applying a material to individual nodes (**Material** in the Inspector). "
+"This way, each CSG node can have its own appearance. Subtractive CSG nodes "
+"will apply their material to the nodes they're \"digging\" into."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:272
+msgid ""
+"To apply triplanar mapping to a CSG node, select it, go to the Inspector, "
+"click the **[empty]** text next to **Material Override** (or **Material** "
+"for individual CSG nodes). Choose **New SpatialMaterial**. Click the newly "
+"created material's icon to edit it. Unfold the **Albedo** section and load a "
+"texture into the **Texture** property. Now, unfold the **Uv1** section and "
+"check **Triplanar**. You can change the texture offset and scale on each "
+"axis by playing with the **Scale** and **Offset** properties just above. "
+"Higher values in the **Scale** property will cause the texture to repeat "
+"more often."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:281
+msgid ""
+"You can copy a SpatialMaterial to reuse it across CSG nodes. To do so, click "
+"the dropdown arrow next to a material property in the Inspector and choose "
+"**Copy**. To paste it, select the node you'd like to apply the material "
+"onto, click the dropdown arrow next to its material property then choose "
+"**Paste**."
+msgstr ""

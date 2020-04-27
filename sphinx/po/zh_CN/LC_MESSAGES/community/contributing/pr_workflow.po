@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,10 +50,11 @@ msgstr ""
 "目标分支(通常是 *master* 分支)的一部分。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:22
+#, fuzzy
 msgid ""
 "We will go together through an example to show the typical workflow and "
 "associated Git commands. But first, let's have a quick look at the "
-"organisation of Godot's Git repository."
+"organization of Godot's Git repository."
 msgstr ""
 "我们将一起通过一个示例展示典型的工作流程和相关的Git命令。但首先，让我们快速了"
 "解Godot的Git存储库的组织结构。"
@@ -680,8 +681,9 @@ msgstr ""
 "误："
 
 #: ../../docs/community/contributing/pr_workflow.rst:445
+#, fuzzy
 msgid ""
-"This is a sane behaviour, Git will not let you push changes that would "
+"This is a sane behavior, Git will not let you push changes that would "
 "override remote content. But that's actually what we want to do here, so we "
 "will have to *force* it:"
 msgstr ""

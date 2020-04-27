@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -513,14 +513,13 @@ msgstr ""
 "に銃口から漏れる光のフラッシュです。銃口は、銃身とも呼ばれます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:303
-#, fuzzy
 msgid ""
 "For finer control when scrubbing the timeline, press :kbd:`Ctrl` and scroll "
 "forward with the mouse wheel to zoom in. Scrolling backwards will zoom out."
 msgstr ""
-"タイムラインをスクラブするとき、より細かく制御するには、\\ ``control`` を押"
-"し、マウスホイールで前方にスクロールしてズームインします。後方にスクロールす"
-"るとズームアウトします。"
+"タイムラインをスクラブするとき、より細かく制御するには、\\ :kbd:`Ctrl` を押し"
+"ながら、マウスホイールで前方にスクロールしてズームインします。後方にスクロー"
+"ルするとズームアウトします。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:306
 msgid ""
@@ -531,15 +530,14 @@ msgstr ""
 "ブのスナップ方法を変更することもできます。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:308
-#, fuzzy
 msgid ""
 "Once you get to a point you like, right click on the row for \"Animation "
 "Player\" and press ``Insert Key``. In the empty name field, enter "
 "``animation_callback`` and press :kbd:`Enter`."
 msgstr ""
-"好きな場所に着いたら、\\ ``Animation Player`` の行を右クリックして、キーを挿"
-"入を押します。空の名前フィールドに\\ ``animation_callback`` と入力し、\\ "
-"``enter`` を押します。"
+"好きなポイントに到達したら、\\ ``Animation Player`` の行を右クリックし、[キー"
+"を挿入]を押します。空の名前フィールドに\\ ``animation_callback`` と入力"
+"し、\\ :kbd:`Enter` を押します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:314
 msgid ""
@@ -578,13 +576,12 @@ msgstr ""
 "その位置にメソッド呼出しトラックポイントを追加します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:327
-#, fuzzy
 msgid ""
 "Type \"animation_callback\" into the name field of the pop up which opened "
 "and press :kbd:`Enter`."
 msgstr ""
-"開いたポップアップの名前フィールドに”animation_callback”と入力し、\\ "
-"``enter`` を押します。"
+"開いたポップアップの名前フィールドに”animation_callback”と入力し、\\ :kbd:"
+"`Enter` を押します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:329
 msgid ""
@@ -613,13 +610,13 @@ msgstr ""
 "名前が付けられています。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:337
-#, fuzzy
 msgid ""
 "From there right click on the timeline and click \"Insert Key\". Put "
 "\"animation_callback\" into the name field and press :kbd:`Enter`."
 msgstr ""
 "そこからタイムラインを右クリックし、[キーを挿入]をクリックしま"
-"す。\"animation_callback\"を名前フィールドに入力し、\\ ``enter`` を押します。"
+"す。\"animation_callback\"を名前フィールドに入力し、\\ :kbd:`Enter` を押しま"
+"す。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:339
 msgid "Be sure to save your work!"
@@ -659,7 +656,6 @@ msgstr ""
 "ている方向に弾丸オブジェクトを作成/産出し、次に前進します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:356
-#, fuzzy
 msgid ""
 "There are several advantages to this method. The first being we do not have "
 "to store the bullets in our player. We can simply create the bullet and then "
@@ -667,9 +663,8 @@ msgid ""
 "the proper signal(s) to the object it collides with, and destroying itself."
 msgstr ""
 "この方法にはいくつかの利点があります。 1つ目は、弾丸をプレイヤーに保存する必"
-"要がないことです。弾丸を作成して先に進み、衝突を確認し、衝突するオブジェクト"
-"に適切なシグナルを送信し、それ自体を破棄するハンドルを持つ弾丸自体を作成する"
-"ことができます。"
+"要がないことです。弾丸を作成して先に進みむと、弾丸自体が衝突のチェック、衝突"
+"するオブジェクトへの適切なシグナルの送信、およびそれ自体の破壊を処理します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:359
 msgid ""
@@ -1421,8 +1416,9 @@ msgstr ""
 "るセクションで説明します"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:697
+#, fuzzy
 msgid ""
-"Next we set the global transform of the clone to the ``Pistol_Aim_Point``'s "
+"Next we set the global transform of the clone to the ``Pistol_Point``'s "
 "global transform. The reason we do this is so the bullet is spawned at the "
 "end of the pistol."
 msgstr ""
@@ -1431,8 +1427,9 @@ msgstr ""
 "です。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:699
+#, fuzzy
 msgid ""
-"You can see that ``Pistol_Aim_Point`` is positioned right at the end of the "
+"You can see that ``Pistol_Point`` is positioned right at the end of the "
 "pistol by clicking the :ref:`AnimationPlayer <class_AnimationPlayer>` and "
 "scrolling through ``Pistol_fire``. You'll find the position is more or less "
 "at the end of the pistol when it fires."
@@ -2191,9 +2188,10 @@ msgstr ""
 "速度を変更できます！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1167
+#, fuzzy
 msgid ""
-"Before we are ready to test our new weapons, we still have a little bit of "
-"work to do."
+"Before we are ready to test our new weapons, we still have a bit of work to "
+"do."
 msgstr "新しい武器をテストする準備が整う前に、まだ少し仕事があります。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1170
@@ -2298,13 +2296,12 @@ msgstr ""
 "選択します。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1219
-#, fuzzy
 msgid ""
 "If you select the top cube, and then hold down :kbd:`Shift` and select the "
 "last cube, Godot will select all the cubes in-between!"
 msgstr ""
-"一番上のキューブを選択し、\\ ``shift`` を押しながら最後のキューブを選択する"
-"と、Godotはその間のすべてのキューブを選択します！"
+"一番上のキューブを選択し、\\ :kbd:`Shift` を押しながら最後のキューブを選択す"
+"ると、Godotはその間のすべてのキューブを選択します！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1222
 msgid ""

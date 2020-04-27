@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,10 +33,11 @@ msgstr ""
 msgid ""
 "This reference will try to list them in order for their better understanding."
 msgstr ""
+"Cette référence tentera de les répertorier afin de mieux les comprendre."
 
 #: ../../docs/development/cpp/core_types.rst:13
 msgid "Definitions"
-msgstr ""
+msgstr "Définitions"
 
 #: ../../docs/development/cpp/core_types.rst:15
 msgid ""
@@ -80,6 +81,10 @@ msgid ""
 "However, by default, this has not been forced and CharType maps directly to "
 "wchar_t."
 msgstr ""
+"Pour les caractères Unicode, on utilise CharType au lieu de wchar_t, car de "
+"nombreuses architectures ont un wchar_t de 4 octets, alors que 2 octets "
+"pourraient être souhaitables. Cependant, par défaut, cela n'a pas été forcé "
+"et CharType correspond directement à wchar_t."
 
 #: ../../docs/development/cpp/core_types.rst:35
 #: ../../docs/development/cpp/core_types.rst:132
@@ -125,6 +130,11 @@ msgid ""
 "return it. This often works best and is flexible, but over time and with "
 "abuse, this can lead to segmentation."
 msgstr ""
+"Le modèle de mémoire le plus courant est le tas (heap), où une application "
+"demandera une région de la mémoire, et le système d'exploitation sous-jacent "
+"tentera de trouver un espace adapté et de le renvoyer. Cela est plus "
+"flexible et fonctionne souvent mieux, mais au fil des utilisations abusives, "
+"cela peut aboutir à une segmentation."
 
 #: ../../docs/development/cpp/core_types.rst:52
 msgid ""
@@ -150,6 +160,12 @@ msgid ""
 "other words, leave 10-20% of your memory free and perform all small "
 "allocations and you are fine."
 msgstr ""
+"Toutefois, de nombreuses études et tests montrent qu'avec une mémoire "
+"suffisante, si la taille maximale de l'allocation est inférieure à un seuil "
+"donné par rapport à la taille maximale du tas et à la proportion de mémoire "
+"destinée à être inutilisée, la segmentation ne posera pas de problème dans "
+"le temps car elle restera constante. En d'autres termes, laissez 10 à 20 % "
+"de votre mémoire libre et effectuez de petites allocations et tout ira bien."
 
 #: ../../docs/development/cpp/core_types.rst:65
 msgid ""
@@ -304,6 +320,8 @@ msgid ""
 "It does copy on write, so making copies of it is cheap as long as they are "
 "not modified."
 msgstr ""
+"Il copie en écriture, donc en faire des copies est peu coûteux marché tant "
+"qu'elles ne sont pas modifiées."
 
 #: ../../docs/development/cpp/core_types.rst:162
 msgid ""
@@ -400,12 +418,14 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:203
 msgid "Math types"
-msgstr ""
+msgstr "Types mathématiques"
 
 #: ../../docs/development/cpp/core_types.rst:205
 msgid ""
 "There are several linear math types available in the core/math directory."
 msgstr ""
+"Il existe plusieurs types de mathématiques linéaires disponibles dans le "
+"répertoire core/math."
 
 #: ../../docs/development/cpp/core_types.rst:211
 msgid ""
@@ -435,7 +455,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:225
 msgid "RID"
-msgstr ""
+msgstr "RID"
 
 #: ../../docs/development/cpp/core_types.rst:227
 msgid ""
@@ -443,6 +463,11 @@ msgid ""
 "RIDs are opaque, meaning that the data they reference can't be accessed "
 "directly. RIDs are unique, even for different types of referenced data."
 msgstr ""
+"Les RIDs sont des identifiants de ressources. Les serveurs les utilisent "
+"pour référencer les données qu'ils stockent. Les RID sont opaques, ce qui "
+"signifie que les données qu'ils référencent ne sont pas directement "
+"accessibles. Les RIDs sont uniques, même pour des types de données "
+"référencées différents."
 
 #: ../../docs/development/cpp/core_types.rst:235
 msgid ""

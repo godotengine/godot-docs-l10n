@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,14 +26,14 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:9
-#, fuzzy
 msgid ""
 "Before reading this tutorial, we recommend that you thoroughly read and "
 "understand the :ref:`doc_vector_math` tutorial, as this tutorial requires a "
 "knowledge of vectors."
 msgstr ""
-"Avant de lire ce tutoriel, il est conseillé de lire le précédent sur :ref:"
-"`doc_vector_math` car celui-ci est une suite directe."
+"Avant de lire ce tutoriel, nous vous recommandons de lire attentivement et "
+"de comprendre le tutoriel :ref:`doc_vector_math`, car ce tutoriel nécessite "
+"une connaissance des vecteurs."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:13
 msgid ""
@@ -42,12 +42,21 @@ msgid ""
 "are most of the time applied as translation, rotation, and scale, so we will "
 "focus on how to represent those with matrices."
 msgstr ""
+"Ce tutoriel traite des *transformations* et de la façon dont nous les "
+"représentons dans Godot à l'aide de matrices. Il ne s'agit pas d'un guide "
+"complet et approfondi sur les matrices. Les transformations sont la plupart "
+"du temps appliquées sous forme de translation, de rotation et de mise à "
+"l'échelle. Nous nous concentrerons donc sur la façon de représenter celles-"
+"ci à l'aide de matrices."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:18
 msgid ""
 "Most of this guide focuses on 2D, using :ref:`class_Transform2D` and :ref:"
 "`class_Vector2`, but the way things work in 3D is very similar."
 msgstr ""
+"La majeure partie de ce guide se concentre sur la 2D, en utilisant :ref:"
+"`class_Transform2D` et :ref:`class_Vector2`, mais la façon dont les choses "
+"fonctionnent en 3D est très similaire."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:21
 msgid ""
@@ -55,6 +64,10 @@ msgid ""
 "Godot, the Y axis points *down* in 2D. This is the opposite of how most "
 "schools teach linear algebra, with the Y axis pointing up."
 msgstr ""
+"Comme mentionné dans le précédent tutoriel, il est important de se rappeler "
+"que dans Godot, l'axe Y pointe *vers le bas* en 2D. C'est le contraire de la "
+"façon dont la plupart des écoles enseignent l'algèbre linéaire, avec l'axe Y "
+"pointant vers le haut."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:26
 msgid ""
@@ -62,10 +75,14 @@ msgid ""
 "axis is blue. This tutorial is color-coded to match these conventions, but "
 "we will also represent the origin vector with a blue color."
 msgstr ""
+"La convention est que l'axe X est rouge, l'axe Y est vert et l'axe Z est "
+"bleu. Ce tutoriel est codé par couleur pour correspondre à ces conventions, "
+"mais nous allons également représenter le vecteur d'origine avec une couleur "
+"bleue."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:32
 msgid "Matrix components and the Identity matrix"
-msgstr ""
+msgstr "Composantes de la matrice et matrice d'identité"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:34
 msgid ""
@@ -73,12 +90,18 @@ msgid ""
 "and no scale. Let's start by looking at the identity matrix and how its "
 "components relate to how it visually appears."
 msgstr ""
+"La matrice d'identité représente une transformation sans translation, sans "
+"rotation et sans mise à échelle. Commençons par regarder la matrice "
+"d'identité et comment ses composants sont liés à la façon dont elle apparaît "
+"visuellement."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:40
 msgid ""
 "Matrices have rows and columns, and a transformation matrix has specific "
 "conventions on what each does."
 msgstr ""
+"Les matrices ont des lignes et des colonnes, et une matrice de "
+"transformation a des conventions spécifiques sur ce que chacune fait."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:43
 msgid ""
@@ -87,6 +110,11 @@ msgid ""
 "by the second column. A change to the columns will change these vectors. We "
 "will see how they can be manipulated in the next few examples."
 msgstr ""
+"Dans l'image ci-dessus, nous pouvons voir que le vecteur X rouge est "
+"représenté par la première colonne de la matrice, et le vecteur Y vert est "
+"également représenté par la deuxième colonne. Une modification des colonnes "
+"modifiera ces vecteurs. Nous verrons comment ils peuvent être manipulés dans "
+"les quelques exemples suivants."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:49
 msgid ""
@@ -94,6 +122,10 @@ msgid ""
 "with columns. However, you can think of the rows of the matrix as showing "
 "which vectors contribute to moving in a given direction."
 msgstr ""
+"Vous ne devez pas vous soucier de manipuler directement les lignes, car nous "
+"travaillons généralement avec les colonnes. Cependant, vous pouvez "
+"considérer les lignes de la matrice comme montrant quels vecteurs "
+"contribuent au déplacement dans une direction donnée."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:53
 msgid ""
@@ -102,11 +134,15 @@ msgid ""
 "x.x` is top-left, `t.y.x` is top-right,and `t.y.y` is bottom-right, where "
 "`t` is the Transform2D."
 msgstr ""
+"Lorsque nous faisons référence à une valeur telle que `t.x.y`, c'est la "
+"composante Y du vecteur de la colonne X. En d'autres termes, la partie "
+"inférieure gauche de la matrice. De même, `t.x.x` est en haut à gauche, `t.y."
+"x` est en haut à droite, et `t.y.y` est en bas à droite, où `t` est la "
+"Transform2D."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:59
-#, fuzzy
 msgid "Scaling the transformation matrix"
-msgstr "Créer l'animation"
+msgstr "Mise à l'échelle de la matrice de transformation"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:61
 msgid ""
@@ -114,6 +150,9 @@ msgid ""
 "by placing the Godot logo underneath our vectors so that we can visually see "
 "the effects on an object:"
 msgstr ""
+"L'application d'une mise à l'échelle est l'une des opérations les plus "
+"faciles à comprendre. Commençons par placer le logo Godot sous nos vecteurs "
+"afin de pouvoir voir visuellement les effets sur un objet :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:67
 msgid ""
@@ -121,10 +160,14 @@ msgid ""
 "the scale we want. Let's scale it up by 2. 1 times 2 becomes 2, and 0 times "
 "2 becomes 0, so we end up with this:"
 msgstr ""
+"Maintenant, pour mettre la matrice à l'échelle, il suffit de multiplier "
+"chaque élément par l'échelle que nous voulons. Augmentons l'échelle de 2. 1 "
+"fois 2 devient 2, et 0 fois 2 devient 0, donc nous obtenons ceci :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:73
 msgid "To do this in code, we can simply multiply each of the vectors:"
 msgstr ""
+"Pour faire cela en code, on peut simplement multiplier chacun des vecteurs :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:92
 msgid ""
@@ -132,28 +175,37 @@ msgid ""
 "component by 0.5. That's pretty much all there is to scaling a "
 "transformation matrix."
 msgstr ""
+"Si nous voulions le ramener à son échelle initiale, nous pourrions "
+"multiplier chaque composante par 0,5. C'est à peu près tout ce qu'il y a à "
+"savoir pour mettre à l'échelle une matrice de transformation."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:96
 msgid ""
 "To calculate the object's scale from an existing transformation matrix, you "
 "can use `length()` on each of the column vectors."
 msgstr ""
+"Pour calculer l'échelle de l'objet à partir d'une matrice de transformation "
+"existante, vous pouvez utiliser `length()` sur chacun des vecteurs de "
+"colonne."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:99
 msgid ""
 "In actual projects, you can use the `scaled()` method to perform scaling."
 msgstr ""
+"Dans les projets réels, vous pouvez utiliser la méthode `scaled()` pour "
+"effectuer une mise à l'échelle."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:103
-#, fuzzy
 msgid "Rotating the transformation matrix"
-msgstr "Préparation des animations"
+msgstr "Rotation de la matrice de transformation"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:105
 msgid ""
 "We'll start the same way as earlier, with the Godot logo underneath the "
 "identity matrix:"
 msgstr ""
+"Nous allons commencer de la même manière que précédemment, avec le logo "
+"Godot sous la matrice d'identité :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:110
 msgid ""
@@ -162,6 +214,11 @@ msgid ""
 "rotate these in our head, we would logically see that the new X axis should "
 "point down and the new Y axis should point left."
 msgstr ""
+"A titre d'exemple, disons que nous voulons faire pivoter notre logo Godot de "
+"90 degrés dans le sens des aiguilles d'une montre. À l'heure actuelle, l'axe "
+"X pointe vers la droite et l'axe Y pointe vers le bas. Si nous les faisons "
+"pivoter dans notre tête, nous verrons logiquement que le nouvel axe X "
+"devrait pointer vers le bas et le nouvel axe Y vers la gauche."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:116
 msgid ""
@@ -169,6 +226,9 @@ msgid ""
 "spin it around the center. Wherever you finish spinning, the orientation of "
 "the vectors determines what the matrix is."
 msgstr ""
+"Vous pouvez imaginer que vous saisissez à la fois le logo Godot et ses "
+"vecteurs, puis les tourner autour du centre. Où que vous finissiez la "
+"rotation, l'orientation des vecteurs détermine ce qu'est la matrice."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:120
 msgid ""
@@ -177,21 +237,36 @@ msgid ""
 "`Vector2.DOWN` and `Vector2.LEFT`. When we do this, we get the desired "
 "result of rotating the object:"
 msgstr ""
+"Nous devons représenter \"en bas\" et \"à gauche\" en coordonnées normales, "
+"ce qui signifie que nous allons mettre X à (0, 1) et Y à (-1, 0). Ce sont "
+"également les valeurs de `Vector2.DOWN` et `Vector2.LEFT`. Lorsque nous "
+"faisons cela, nous obtenons le résultat souhaité de la rotation de l'objet :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:127
+#, fuzzy
 msgid ""
-"If you have trouble understanding the above, try this excercise: Cut a "
-"square of paper, draw X and Y vectors on top of it, place it on graph paper, "
-"then rotate it and note the endpoints."
+"If you have trouble understanding the above, try this exercise: Cut a square "
+"of paper, draw X and Y vectors on top of it, place it on graph paper, then "
+"rotate it and note the endpoints."
 msgstr ""
+"Si vous avez du mal à comprendre ce qui précède, essayez cet exercice : "
+"Coupez un carré de papier, tracez des vecteurs X et Y par-dessus, placez-le "
+"sur du papier millimétré, puis faites-le tourner et notez les points "
+"d'extrémité."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:131
+#, fuzzy
 msgid ""
 "To perform rotation in code, we need to be able to calculate the values "
-"programatically. This image shows the formulas needed to calculate the "
+"programmatically. This image shows the formulas needed to calculate the "
 "transformation matrix from a rotation angle. Don't worry if this part seems "
 "complicated, I promise it's the hardest thing you need to know."
 msgstr ""
+"Pour effectuer une rotation en code, nous devons pouvoir calculer les "
+"valeurs via le programme. Cette image montre les formules nécessaires pour "
+"calculer la matrice de transformation à partir d'un angle de rotation. Ne "
+"vous inquiétez pas si cette partie vous semble compliquée, je vous promets "
+"que c'est la chose la plus difficile à savoir."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:139
 msgid ""
@@ -199,6 +274,10 @@ msgid ""
 "`TAU` or `PI*2` radians, and a quarter turn of 90 degrees is `TAU/4` or "
 "`PI/2` radians. Working with `TAU` usually results in more readable code."
 msgstr ""
+"Godot représente toutes les rotations avec des radians, pas des degrés. Un "
+"tour complet est en radians `TAU` ou `PI*2`, et un quart de tour de 90 "
+"degrés est en radians `TAU/4` ou `PI/2`. Travailler avec `TAU` permet "
+"généralement d'obtenir un code plus lisible."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:144
 msgid ""
@@ -207,6 +286,12 @@ msgid ""
 "as a Y-is-up CCW system, since these differences \"cancel out\". You can "
 "think of rotations in both systems being \"from X to Y\"."
 msgstr ""
+"Fait amusant : en plus du fait que Y soit *en bas* dans Godot, la rotation "
+"est représentée dans le sens des aiguilles d'une montre. Cela signifie que "
+"toutes les fonctions mathématiques et de trigonométrie se comportent de la "
+"même manière qu'un système CCW Y-is-up (Y est en haut), puisque ces "
+"différences \"s'annulent\". Vous pouvez penser que les rotations dans les "
+"deux systèmes sont \"de X à Y\"."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:150
 msgid ""
@@ -214,25 +299,34 @@ msgid ""
 "simply plug in a value of 0.5 to the formula above and evaluate to find what "
 "the actual values should be:"
 msgstr ""
+"Afin d'effectuer une rotation de 0,5 radians (environ 28,65 degrés), nous "
+"ajoutons simplement une valeur de 0,5 à la formule ci-dessus et évaluons "
+"pour trouver quelles devraient être les valeurs réelles :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:156
 msgid "Here's how that would be done in code (place the script on a Node2D):"
 msgstr ""
+"Voici comment cela serait fait en code (placer le script sur un Node2D) :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:178
 msgid ""
 "To calculate the object's rotation from an existing transformation matrix, "
 "you can use `atan2(t.x.y, t.x.x)`, where t is the Transform2D."
 msgstr ""
+"Pour calculer la rotation de l'objet à partir d'une matrice de "
+"transformation existante, vous pouvez utiliser `atan2(t.x.y, t.x.x)`, où t "
+"est le Transform2D."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:181
 msgid ""
 "In actual projects, you can use the `rotated()` method to perform rotations."
 msgstr ""
+"Dans les projets réels, vous pouvez utiliser la méthode `rotated()` pour "
+"effectuer des rotations."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:185
 msgid "Basis of the transformation matrix"
-msgstr ""
+msgstr "Base de la matrice de transformation"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:187
 msgid ""
@@ -242,6 +336,11 @@ msgid ""
 "transformation matrix. The terms \"basis\" and \"basis vectors\" are "
 "important to know."
 msgstr ""
+"Jusqu'à présent, nous n'avons travaillé qu'avec les vecteurs `x` et `y`, qui "
+"sont chargés de représenter la rotation, la mise à l'échelle et/ou le "
+"cisaillement (avancé, couvert à la fin). Les vecteurs X et Y sont appelés "
+"ensemble la *base* de la matrice de transformation. Il est important de "
+"connaître les termes \"base\" et \"vecteurs de base\"."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:193
 msgid ""
@@ -252,6 +351,13 @@ msgid ""
 "examples. You can think of origin as another column, but it's often better "
 "to think of it as completely separate."
 msgstr ""
+"Vous avez peut-être remarqué que :ref:`class_Transform2D` a en fait trois "
+"valeurs :ref:`class_Vector2` : `x`, `y`, et `origine`. La valeur `origin` ne "
+"fait pas partie de la base, mais elle fait partie de la transformation, et "
+"nous en avons besoin pour représenter la position. A partir de maintenant, "
+"nous allons suivre le vecteur d'origine dans tous les exemples. Vous pouvez "
+"considérer l'origine comme une autre colonne, mais il est souvent préférable "
+"de la considérer comme complètement séparée."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:201
 msgid ""
@@ -261,11 +367,15 @@ msgid ""
 "`class_Transform` (which is composed of one :ref:`class_Basis` and one "
 "extra :ref:`class_Vector3` for the origin)."
 msgstr ""
+"Notez qu'en 3D, Godot a une structure :ref:`class_Basis` séparée pour "
+"contenir les trois valeurs :ref:`class_Vector3` de la base, car le code peut "
+"devenir complexe et il est logique de la séparer de :ref:`class_Transform` "
+"(qui est composé d'une :ref:`class_Basis` et d'une :ref:`class_Vector3` "
+"supplémentaire pour l'origine)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:208
-#, fuzzy
 msgid "Translating the transformation matrix"
-msgstr "Traduire le nom du projet"
+msgstr "Translation de la matrice de transformation"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:210
 msgid ""
@@ -273,6 +383,10 @@ msgid ""
 "matrix. Translating is basically a technical term for \"moving\" the object, "
 "but it explicitly does not involve any rotation."
 msgstr ""
+"La modification du vecteur `origin` est appelée une *translation* de la "
+"matrice de transformation. La translation est essentiellement un terme "
+"technique pour \"déplacer\" l'objet, mais elle n'implique explicitement "
+"aucune rotation."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:214
 msgid ""
@@ -281,12 +395,18 @@ msgid ""
 "with the identity transform, but this time we'll also keep track of the "
 "origin vector:"
 msgstr ""
+"Cela devrait être assez logique, en supposant que vous ayez lu et compris le "
+"tutoriel sur les vecteurs, mais prenons un exemple. Encore une fois, nous "
+"commencerons par la transformation de l'identité, mais cette fois-ci, nous "
+"suivrons également le vecteur d'origine :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:221
 msgid ""
 "If we want the object to move to a position of (1, 2), we simply need to set "
 "its `origin` vector to (1, 2):"
 msgstr ""
+"Si nous voulons que l'objet se déplace vers une position de (1, 2), nous "
+"devons simplement mettre son vecteur `origin` à (1, 2) :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:226
 msgid ""
@@ -296,23 +416,33 @@ msgid ""
 "rotated 90 degrees clockwise will move to the right when `translated()` with "
 "`Vector2.UP`."
 msgstr ""
+"Il existe également une méthode `translated()`, qui effectue une opération "
+"différente pour ajouter ou modifier directement `origine`. La méthode "
+"`translated()` translaera l'objet *par rapport à sa propre rotation*. Par "
+"exemple, un objet tourné de 90 degrés dans le sens des aiguilles d'une "
+"montre se déplacera vers la droite lorsqu'il sera `translated()` avec "
+"`Vector2.UP`."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:232
 msgid ""
 "Godot's 2D uses coordinates based on pixels, so in actual projects you will "
 "want to translate by hundreds of units."
 msgstr ""
+"La 2D de Godot utilise des coordonnées basées sur les pixels, donc dans les "
+"projets réels, vous voudrez translater par des centaines d'unités."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:236
-#, fuzzy
 msgid "Putting it all together"
-msgstr "Pointer vers une cible"
+msgstr "Mettre tout cela ensemble"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:238
 msgid ""
 "We're going to apply everything we mentioned so far onto one transform. To "
 "follow along, get a simple project with a Sprite set to the Godot logo."
 msgstr ""
+"Nous allons appliquer tout ce que nous avons mentionné jusqu'à présent à une "
+"transformation. Pour suivre, ouvrez-vous un projet simple avec un Sprite "
+"utilisant le logo Godot."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:241
 msgid ""
@@ -320,10 +450,14 @@ msgid ""
 "I've posted a screenshot, and the code to reproduce it, but I encourage you "
 "to try and reproduce the screenshot without looking at the code!"
 msgstr ""
+"Mettons la translation à (350, 150), une rotation de -0,5 rad, et une "
+"échelle de 3. J'ai posté une capture d'écran, et le code pour la reproduire, "
+"mais je vous encourage à essayer de reproduire la capture d'écran sans "
+"regarder le code !"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:280
 msgid "Shearing the transformation matrix (advanced)"
-msgstr ""
+msgstr "Cisaillement de la matrice de transformation (avancé)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:282
 msgid ""
@@ -332,6 +466,10 @@ msgid ""
 "used aspect of transformation matrices for the purpose of building an "
 "understanding of them."
 msgstr ""
+"Si vous cherchez seulement à savoir comment *utiliser* les matrices de "
+"transformation, n'hésitez pas à sauter cette section du tutoriel. Cette "
+"section explore un aspect peu utilisé des matrices de transformation dans le "
+"but d'en faciliter la compréhension."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:287
 msgid ""
@@ -341,6 +479,12 @@ msgid ""
 "value and a Vector2 for scale only has 3 numbers. The high-level concept for "
 "the missing degree of freedom is called *shearing*."
 msgstr ""
+"Vous avez peut-être remarqué qu'une transformation a plus de degrés de "
+"liberté que la combinaison des actions ci-dessus. La base d'une matrice de "
+"transformation 2D a quatre nombres totaux en deux valeurs :ref:"
+"`class_Vector2`, alors qu'une valeur de rotation et un Vector2 pour "
+"l'échelle n'ont que 3 nombres. Le concept de haut niveau pour le degré de "
+"liberté manquant est appelé *cisaillement*."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:293
 msgid ""
@@ -348,12 +492,18 @@ msgid ""
 "However, shearing can be useful in some situations, and understanding "
 "shearing helps you understand how transforms work."
 msgstr ""
+"Normalement, les vecteurs de base seront toujours perpendiculaires entre "
+"eux. Cependant, le cisaillement peut être utile dans certaines situations, "
+"et comprendre le cisaillement vous aide à comprendre comment fonctionnent "
+"les transformations."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:297
 msgid ""
 "To show you visually how it will look, let's overlay a grid onto the Godot "
 "logo:"
 msgstr ""
+"Pour vous montrer visuellement ce à quoi il ressemblera, superposons une "
+"grille au logo Godot :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:302
 msgid ""
@@ -364,16 +514,25 @@ msgid ""
 "parallel will remain parallel no matter what changes we make to the basis "
 "vectors."
 msgstr ""
+"Chaque point de cette grille est obtenu en additionnant les vecteurs de "
+"base. Le coin inférieur droit est X + Y, tandis que le coin supérieur droit "
+"est X - Y. Si nous changeons les vecteurs de base, toute la grille se "
+"déplace avec, car la grille est composée des vecteurs de base. Toutes les "
+"lignes de la grille qui sont actuellement parallèles le resteront, quelles "
+"que soient les modifications que nous apportons aux vecteurs de base."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:309
 msgid "As an example, let's set Y to (1, 1):"
-msgstr ""
+msgstr "À titre d'exemple, mettons Y à (1, 1) :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:328
 msgid ""
 "You can't set the raw values of a Transform2D in the editor, so you *must* "
 "use code if you want to shear the object."
 msgstr ""
+"Vous ne pouvez pas définir les valeurs brutes d'un Transform2D dans "
+"l'éditeur, donc vous *devez* utiliser du code si vous voulez cisailler "
+"l'objet."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:331
 msgid ""
@@ -381,6 +540,9 @@ msgid ""
 "sheared. The bottom-center of the grid, which is (0, 1) relative to itself, "
 "is now located at a world position of (1, 1)."
 msgstr ""
+"Les vecteurs n'étant plus perpendiculaires, l'objet a été cisaillé. Le "
+"centre inférieur de la grille, qui est (0, 1) par rapport à lui-même, est "
+"maintenant situé à une position mondiale de (1, 1)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:335
 msgid ""
@@ -389,6 +551,10 @@ msgid ""
 "position, the formula is U * X + V * Y, where U and V are numbers and X and "
 "Y are the basis vectors."
 msgstr ""
+"Les coordonnées intra-objet sont appelées coordonnées UV dans les textures, "
+"alors empruntons cette terminologie pour ici. Pour trouver la position "
+"mondiale à partir d'une position relative, la formule est U * X + V * Y, où "
+"U et V sont des nombres et X et Y sont les vecteurs de base."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:340
 msgid ""
@@ -397,6 +563,11 @@ msgid ""
 "Y*1, which is (1, 0) + (1, 1), or (1 + 1, 0 + 1), or (2, 1). This matches up "
 "with our observation of where the bottom-right corner of the image is."
 msgstr ""
+"Le coin inférieur droit de la grille, qui est toujours à la position UV de "
+"(1, 1), est à la position mondiale de (2, 1), qui est calculée à partir de "
+"X*1 + Y*1, qui est (1, 0) + (1, 1), ou (1 + 1, 0 + 1), ou (2, 1). Cela "
+"correspond à notre observation de l'endroit où se trouve le coin inférieur "
+"droit de l'image."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:346
 msgid ""
@@ -406,6 +577,11 @@ msgid ""
 "(0, -1). This matches up with our observation of where the top-right corner "
 "of the image is."
 msgstr ""
+"De même, le coin supérieur droit de la grille, qui est toujours à la "
+"position UV de (1, -1), est à la position mondiale de (0, -1), qui est "
+"calculée à partir de X*1 + Y*-1, qui est (1, 0) - (1, 1), ou (1 - 1, 0 - 1), "
+"ou (0, -1). Cela correspond à notre observation de l'endroit où se trouve le "
+"coin supérieur droit de l'image."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:352
 msgid ""
@@ -413,6 +589,10 @@ msgid ""
 "the object, and the relationship between the basis vectors and how the "
 "object's \"UV\" or \"intra-coordinates\" have their world position changed."
 msgstr ""
+"Nous espérons que vous comprenez maintenant parfaitement comment une matrice "
+"de transformation affecte l'objet, et la relation entre les vecteurs de base "
+"et comment les \"UV\" ou \"intra-coordonnées\" de l'objet ont changé leur "
+"position dans le monde."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:356
 msgid ""
@@ -420,6 +600,9 @@ msgid ""
 "refer to \"world position\", that would be relative to the node's parent "
 "instead, if the node had a parent."
 msgstr ""
+"Dans Godot, toutes les transformations mathématiques sont effectuées par "
+"rapport au nœud parent. Lorsque nous parlons de \"position mondiale\", ce "
+"serait plutôt par rapport au parent du nœud, si le nœud avait un parent."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:360
 msgid ""
@@ -427,11 +610,13 @@ msgid ""
 "excellent video about linear transformations: https://www.youtube.com/watch?"
 "v=kYB8IZa5AuE"
 msgstr ""
+"Si vous souhaitez des explications supplémentaires, vous pouvez consulter "
+"l'excellente vidéo de 3Blue1Brown sur les transformations linéaires : "
+"https://www.youtube.com/watch?v=kYB8IZa5AuE"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:365
-#, fuzzy
 msgid "Practical applications of transforms"
-msgstr "Applications pratiques"
+msgstr "Applications pratiques des transformations"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:367
 msgid ""
@@ -439,6 +624,9 @@ msgid ""
 "transforms by having multiple :ref:`class_Node2D` or :ref:`class_Spatial` "
 "nodes parented to each other."
 msgstr ""
+"Dans les projets réels, vous travaillerez généralement avec des "
+"transformations à l'intérieur de transformations en ayant plusieurs nœuds :"
+"ref:`class_Node2D` ou :ref:`class_Spatial` parentés les uns aux autres."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:371
 msgid ""
@@ -446,10 +634,14 @@ msgid ""
 "need. We will go over how you could use :ref:`class_Transform2D` or :ref:"
 "`class_Transform` to manually calculate transforms of nodes."
 msgstr ""
+"Cependant, il est parfois très utile de calculer manuellement les valeurs "
+"dont nous avons besoin. Nous allons voir comment vous pouvez utiliser :ref:"
+"`class_Transform2D` ou :ref:`class_Transform` pour calculer manuellement les "
+"transformations des nœuds."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:376
 msgid "Converting positions between transforms"
-msgstr ""
+msgstr "Convertir les positions entre les transformations"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:378
 msgid ""
@@ -458,18 +650,28 @@ msgid ""
 "would like to find the world (parent-relative) position, or if you have a "
 "world position and want to know where it is relative to the player."
 msgstr ""
+"Il y a de nombreux cas où vous voudriez convertir une position dans et hors "
+"d'une transformation. Par exemple, si vous avez une position relative au "
+"joueur et que vous souhaitez trouver la position mondiale (par rapport au "
+"parent), ou si vous avez une position mondiale et que vous souhaitez savoir "
+"où elle se trouve par rapport au joueur."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:383
 msgid ""
 "We can find what a vector relative to the player would be defined in world "
 "space as using the \"xform\" method:"
 msgstr ""
+"On peut trouver ce qu'un vecteur relatif au joueur serait défini dans "
+"l'espace mondial en utilisant la méthode \"xform\" :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:397
 msgid ""
 "And we can use the \"xform_inv\" method to find a what world space position "
 "would be if it was instead defined relative to the player:"
 msgstr ""
+"Et nous pouvons utiliser la méthode \"xform_inv\" pour trouver quelle serait "
+"la position spatiale mondiale si elle était plutôt définie par rapport au "
+"joueur :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:411
 msgid ""
@@ -477,10 +679,13 @@ msgid ""
 "use the \"basis_xform\" or \"basis_xform_inv\" methods instead, which skip "
 "dealing with translation."
 msgstr ""
+"Si vous savez à l'avance que la transformation est positionnée à (0, 0), "
+"vous pouvez utiliser les méthodes \"basis_xform\" ou \"basis_xform_inv\" à "
+"la place, qui permettent d'éviter de traiter la translation."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:416
 msgid "Moving an object relative to itself"
-msgstr ""
+msgstr "Déplacement d'un objet par rapport à lui-même"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:418
 msgid ""
@@ -488,6 +693,10 @@ msgid ""
 "itself. For example, in first-person shooter games, you would want the "
 "character to move forward (-Z axis) when you press :kbd:`W`."
 msgstr ""
+"Une opération courante, en particulier dans les jeux en 3D, consiste à "
+"déplacer un objet par rapport à lui-même. Par exemple, dans les jeux de tir "
+"à la première personne, vous voudriez que le personnage se déplace vers "
+"l'avant (axe -Z) lorsque vous appuyez sur :kbd:`W`."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:422
 msgid ""
@@ -495,24 +704,30 @@ msgid ""
 "origin vector is the position relative to the parent, we can simply add "
 "multiples of the basis vectors to move an object relative to itself."
 msgstr ""
+"Puisque les vecteurs de base sont l'orientation par rapport au parent, et "
+"que le vecteur d'origine est la position par rapport au parent, nous pouvons "
+"simplement ajouter des multiples des vecteurs de base pour déplacer un objet "
+"par rapport à lui-même."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:426
 msgid "This code moves an object 100 units to its own right:"
-msgstr ""
+msgstr "Ce code permet de déplacer un objet de 100 unités à sa propre droite :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:439
 msgid "For moving in 3D, you would need to replace \"x\" with \"basis.x\"."
-msgstr ""
+msgstr "Pour se déplacer en 3D, il faudrait remplacer \"x\" par \"basis.x\"."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:441
 msgid ""
 "In actual projects, you can use `translate_object_local` in 3D or "
 "`move_local_x` and `move_local_y` in 2D to do this."
 msgstr ""
+"Dans les projets réels, vous pouvez utiliser `translate_object_local` en 3D "
+"ou `move_local_x` et `move_local_y` en 2D pour le faire."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:445
 msgid "Applying transforms onto transforms"
-msgstr ""
+msgstr "Application de transformations sur des transformations"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:447
 msgid ""
@@ -520,6 +735,9 @@ msgid ""
 "several of them together. A parent node's transform affects all of its "
 "children. Let's dissect an example."
 msgstr ""
+"L'une des choses les plus importantes à savoir sur les transformations est "
+"la façon dont vous pouvez en utiliser plusieurs ensemble. La transformation "
+"d'un nœud parent affecte tous ses enfants. Disséquons un exemple."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:451
 msgid ""
@@ -529,6 +747,11 @@ msgid ""
 "the arrows and also in the matrices), and that almost half of the numbers "
 "are zero."
 msgstr ""
+"Dans cette image, le nœud enfant a un \"2\" après les noms des composants "
+"pour les distinguer du nœud parent. Cela peut sembler un peu écrasant avec "
+"autant de chiffres, mais souvenez-vous que chaque chiffre est affiché deux "
+"fois (à côté des flèches et également dans les matrices), et que près de la "
+"moitié des chiffres sont des zéros."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:459
 msgid ""
@@ -536,6 +759,9 @@ msgid ""
 "given a scale of (2, 1), the child has been given a scale of (0.5, 0.5), and "
 "both nodes have been given positions."
 msgstr ""
+"Les seules transformations en cours ici sont que le nœud parent a reçu une "
+"échelle de (2, 1), l'enfant a reçu une échelle de (0,5, 0,5) et les deux "
+"nœuds ont reçu des positions."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:463
 msgid ""
@@ -547,26 +773,39 @@ msgid ""
 "but this actually moves it (2, 1) in world space, due to the parent node's "
 "basis vectors."
 msgstr ""
+"Toutes les transformations des enfants sont affectées par les "
+"transformations des parents. L'enfant a une échelle de (0,5, 0,5), on "
+"s'attendrait donc à ce que ce soit un carré de rapport 1:1, et c'est le cas, "
+"mais seulement par rapport au parent. Le vecteur X de l'enfant finit par "
+"être (1, 0) dans l'espace mondial, car il est mis à l'échelle par les "
+"vecteurs de base du parent. De même, le vecteur `origin` du noeud enfant est "
+"fixé à (1, 1), mais il est en fait déplacé (2, 1) dans l'espace mondial, en "
+"raison des vecteurs de base du noeud parent."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:472
 msgid ""
 "To calculate a child transform's world space transform manually, this is the "
 "code we would use:"
 msgstr ""
+"Pour calculer manuellement la transformation de l'espace mondial d'un "
+"enfant, c'est le code que nous utiliserions :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:510
 msgid ""
 "In actual projects, we can find the world transform of the child by applying "
 "one transform onto another using the `*` operator:"
 msgstr ""
+"Dans les projets actuels, nous pouvons trouver la transformation mondiale de "
+"l'enfant en appliquant une transformation sur une autre en utilisant "
+"l'opérateur `*` :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:532
 msgid "When multiplying matrices, order matters! Don't mix them up."
-msgstr ""
+msgstr "Quand on multiplie des matrices, l'ordre compte ! Ne les mélangez pas."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:534
 msgid "Lastly, applying the identity transform will always do nothing."
-msgstr ""
+msgstr "Enfin, appliquer la transformation d'identité ne fera rien."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:536
 msgid ""
@@ -574,11 +813,13 @@ msgid ""
 "excellent video about matrix composition: https://www.youtube.com/watch?"
 "v=XkY2DOUCWMU"
 msgstr ""
+"Si vous souhaitez des explications supplémentaires, vous pouvez consulter "
+"l'excellente vidéo de 3Blue1Brown sur la composition des matrices : https://"
+"www.youtube.com/watch?v=XkY2DOUCWMU"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:541
-#, fuzzy
 msgid "Inverting a transformation matrix"
-msgstr "Importation de traductions"
+msgstr "Inverser une matrice de transformation"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:543
 msgid ""
@@ -586,34 +827,47 @@ msgid ""
 "previous transform. This can be useful in some situations, but it's easier "
 "to just provide a few examples."
 msgstr ""
+"La fonction \"affine_inverse\" renvoie une transformation qui \"annule\" la "
+"transformation précédente. Cette fonction peut être utile dans certaines "
+"situations, mais il est plus facile de se contenter de quelques exemples."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:547
 msgid ""
 "Multiplying an inverse transform by the normal transform undoes all "
 "transformations:"
 msgstr ""
+"La multiplication d'une transformation inverse par la transformation normale "
+"annule toutes les transformations :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:563
 msgid ""
 "Transforming a position by a transform and its inverse results in the same "
 "position (same for \"xform_inv\"):"
 msgstr ""
+"La transformation d'une position par une transformation et son inverse "
+"aboutit à la même position (idem pour \"xform_inv\") :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:582
-#, fuzzy
 msgid "How does it all work in 3D?"
-msgstr "Comment ça marche ?"
+msgstr "Comment tout cela fonctionne-t-il en 3D ?"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:584
+#, fuzzy
 msgid ""
 "One of the great things about transformation matrices is that they work very "
-"similarly between 2D and 3D transformations. All of the code and formulas "
-"used above for 2D work the same in 3D, with 3 exceptions: the addition of a "
-"third axis, that each axis is of type :ref:`class_Vector3`, and also that "
-"Godot stores the :ref:`class_Basis` separately from the :ref:"
-"`class_Transform`, since the math can get complex and it makes sense to "
-"separate it."
+"similarly between 2D and 3D transformations. All the code and formulas used "
+"above for 2D work the same in 3D, with 3 exceptions: the addition of a third "
+"axis, that each axis is of type :ref:`class_Vector3`, and also that Godot "
+"stores the :ref:`class_Basis` separately from the :ref:`class_Transform`, "
+"since the math can get complex and it makes sense to separate it."
 msgstr ""
+"L'un des grands avantages des matrices de transformation est qu'elles "
+"fonctionnent de manière très similaire entre les transformations 2D et 3D. "
+"Tout le code et les formules utilisés ci-dessus pour la 2D fonctionnent de "
+"la même façon en 3D, à trois exceptions près : l'ajout d'un troisième axe, "
+"que chaque axe est du type :ref:`class_Vector3`, et aussi que Godot stocke "
+"la :ref:`class_Basis` séparément de la :ref:`class_Transform`, puisque les "
+"mathématiques peuvent devenir complexe et qu'il est logique de la séparer."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:592
 msgid ""
@@ -623,6 +877,12 @@ msgid ""
 "translate, we manipulate the origin; and to shear, we change the basis "
 "vectors to be non-perpendicular."
 msgstr ""
+"Tous les concepts relatifs au fonctionnement de la translation, de la "
+"rotation, de l'échelle et du cisaillement en 3D sont les mêmes qu'en 2D. "
+"Pour l'échelle, nous prenons chaque composante et la multiplions ; pour la "
+"rotation, nous modifions l'endroit où chaque vecteur de base pointe ; pour "
+"la translation, nous manipulons l'origine ; et pour le cisaillement, nous "
+"modifions les vecteurs de base pour qu'ils soient non-perpendiculaires."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:600
 msgid ""
@@ -633,6 +893,13 @@ msgid ""
 "and the origin in both 2D and 3D: https://github.com/godotengine/godot-demo-"
 "projects/tree/master/misc/matrix_transform"
 msgstr ""
+"Si vous le souhaitez, il est bon de jouer avec les transformations pour "
+"comprendre leur fonctionnement. Godot vous permet d'éditer des matrices de "
+"transformation 3D directement depuis l'inspecteur. Vous pouvez télécharger "
+"ce projet qui comporte des lignes et des cubes colorés pour vous aider à "
+"visualiser les vecteurs :ref:`class_Basis` et l'origine en 2D et 3D : "
+"https://github.com/godotengine/godot-demo-projects/tree/master/misc/"
+"matrix_transform"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:607
 msgid ""
@@ -640,12 +907,19 @@ msgid ""
 "transposed, with the columns horizontal and the rows vertical. This may be "
 "changed to be less confusing in a future release of Godot."
 msgstr ""
+"La section \"Matrix\" de Spatial dans l'inspecteur de Godot 3.2 affiche la "
+"matrice telle qu'elle a été transposée, avec les colonnes horizontales et "
+"les lignes verticales. Cela pourrait être modifié pour être moins déroutant "
+"dans une prochaine version de Godot."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:612
 msgid ""
 "You cannot edit Node2D's transform matrix directly in Godot 3.2's inspector. "
 "This may be changed in a future release of Godot."
 msgstr ""
+"Vous ne pouvez pas modifier la matrice de transformation de Node2D "
+"directement dans l'inspecteur de Godot 3.2. Cela pourrait être modifié dans "
+"une future version de Godot."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:615
 msgid ""
@@ -653,26 +927,37 @@ msgid ""
 "excellent video about 3D linear transformations: https://www.youtube.com/"
 "watch?v=rHLEWRxRGiM"
 msgstr ""
+"Si vous souhaitez des explications supplémentaires, vous pouvez consulter "
+"l'excellente vidéo de 3Blue1Brown sur les transformations linéaires en 3D : "
+"https://www.youtube.com/watch?v=rHLEWRxRGiM"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:620
-#, fuzzy
 msgid "Representing rotation in 3D (advanced)"
-msgstr "Représentation des rotations en 3D"
+msgstr "Représentation de la rotation en 3D (avancé)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:622
 msgid ""
 "The biggest difference between 2D and 3D transformation matrices is how you "
 "represent rotation by itself without the basis vectors."
 msgstr ""
+"La plus grande différence entre les matrices de transformation 2D et 3D est "
+"la façon dont vous représentez la rotation par elle-même sans les vecteurs "
+"de base."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:625
+#, fuzzy
 msgid ""
 "With 2D, we have an easy way (atan2) to switch between a transformation "
 "matrix and an angle. In 3D, we can't simply represent rotation as one "
 "number. There is something called Euler angles, which can represent "
-"rotations as a set of 3 numbers, however they are limited and not very "
+"rotations as a set of 3 numbers, however, they are limited and not very "
 "useful, except for trivial cases."
 msgstr ""
+"Avec la 2D, nous avons un moyen facile (atan2) de passer d'une matrice de "
+"transformation à un angle. En 3D, nous ne pouvons pas simplement représenter "
+"la rotation comme un seul chiffre. Il existe quelque chose appelé angles "
+"d'Euler, qui peut représenter les rotations comme un ensemble de 3 nombres, "
+"mais ils sont limités et peu utiles, sauf dans des cas triviaux."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:631
 msgid ""
@@ -682,23 +967,29 @@ msgid ""
 "you is to completely ignore how they work under-the-hood, because they are "
 "very complicated and unintuitive."
 msgstr ""
+"En 3D, nous n'utilisons généralement pas d'angles, nous utilisons soit une "
+"base de transformation (utilisée à peu près partout dans Godot), soit des "
+"quaternions. Godot peut représenter les quaternions en utilisant la "
+"structure :ref:`class_Quat`. Je vous suggère d'ignorer complètement comment "
+"ils fonctionnent sous le capot, car ils sont très compliqués et peu "
+"intuitifs."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:637
 msgid ""
 "However, if you really must know how it works, here are some great "
 "resources, which you can follow in order:"
 msgstr ""
+"Cependant, si vous voulez vraiment savoir comment cela fonctionne, voici "
+"quelques ressources intéressantes, que vous pouvez suivre dans l'ordre :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:640
-#, fuzzy
 msgid "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
-msgstr "L'eau en 3D <https://www.youtube.com/watch?v=vm9Sdvhq6ho>`__"
+msgstr "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:642
-#, fuzzy
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
-msgstr "L'eau en 3D <https://www.youtube.com/watch?v=vm9Sdvhq6ho>`__"
+msgstr "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"
-msgstr ""
+msgstr "https://eater.net/quaternions"

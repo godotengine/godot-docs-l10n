@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,46 +32,60 @@ msgstr ""
 "Linux またはその他の Unix バリアントでコンパイルするには、次のことが必要です:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:14
-msgid "GCC or Clang"
+#, fuzzy
+msgid "GCC 7+ or Clang 6+."
 msgstr "GCCまたはClang"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:15
-msgid "Python 3 or 2.7+"
+#, fuzzy
+msgid "Python 3.5+."
 msgstr "Python 3 あるいは 2.7 以上"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:16
-msgid "SCons build system (3.0 or later for Python 3)"
-msgstr "SCons ビルドシステム (Python3には3.0以降)"
-
-#: ../../docs/development/compiling/compiling_for_x11.rst:17
-msgid "pkg-config (used to detect the dependencies below)"
-msgstr "pkg-config (以下の依存関係を検出するために使用)"
-
-#: ../../docs/development/compiling/compiling_for_x11.rst:18
-msgid "X11, Xcursor, Xinerama, Xi and XRandR development libraries"
-msgstr "X11、Xcursor、Xinerama、XiおよびXRandR開発ライブラリ"
-
-#: ../../docs/development/compiling/compiling_for_x11.rst:19
-msgid "MesaGL development libraries"
-msgstr "MesaGL開発ライブラリ"
-
-#: ../../docs/development/compiling/compiling_for_x11.rst:20
-msgid "ALSA development libraries"
-msgstr "ALSA開発ライブラリ"
+msgid ""
+"SCons 3.0+ build system. If your distribution uses Python 2 by default, or "
+"you are using a version of SCons prior to 3.1.2, you will need to change the "
+"version of Python that SCons uses by changing the shebang (the first line) "
+"of the SCons script file to ``#! /usr/bin/python3``. Use the command ``which "
+"scons`` to find the location of the SCons script file."
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:21
-msgid "PulseAudio development libraries"
-msgstr "PulseAudio開発ライブラリ"
+#, fuzzy
+msgid "pkg-config (used to detect the dependencies below)."
+msgstr "pkg-config (以下の依存関係を検出するために使用)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:22
-msgid "*Optional* - libudev (build with ``udev=yes``)"
-msgstr "*任意* - libudev (``udev=yes`` でのビルドに)"
+#, fuzzy
+msgid "X11, Xcursor, Xinerama, Xi and XRandR development libraries."
+msgstr "X11、Xcursor、Xinerama、XiおよびXRandR開発ライブラリ"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:23
-msgid "*Optional* - yasm (for WebM SIMD optimizations)"
-msgstr "*任意* - yasm (WebM SIMD最適化のため)"
+#, fuzzy
+msgid "MesaGL development libraries."
+msgstr "MesaGL開発ライブラリ"
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:24
+#, fuzzy
+msgid "ALSA development libraries."
+msgstr "ALSA開発ライブラリ"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:25
+#, fuzzy
+msgid "PulseAudio development libraries."
+msgstr "PulseAudio開発ライブラリ"
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:26
+#, fuzzy
+msgid "*Optional* - libudev (build with ``udev=yes``)."
+msgstr "*任意* - libudev (``udev=yes`` でのビルドに)"
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:27
+#, fuzzy
+msgid "*Optional* - yasm (for WebM SIMD optimizations)."
+msgstr "*任意* - yasm (WebM SIMD最適化のため)"
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:29
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
@@ -79,62 +93,62 @@ msgstr ""
 "Godotにおける基本的なSconsの使い方については、\\ :ref:"
 "`doc_introduction_to_the_buildsystem`\\ を参照してください。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:29
+#: ../../docs/development/compiling/compiling_for_x11.rst:33
 msgid "Distro-specific one-liners"
 msgstr "ディストリビューション固有のワンライナー"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:31
+#: ../../docs/development/compiling/compiling_for_x11.rst:35
 msgid "**Alpine Linux**"
 msgstr "\\ **Alpine Linux**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:36
+#: ../../docs/development/compiling/compiling_for_x11.rst:40
 msgid "**Arch Linux**"
 msgstr "**Arch Linux**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:41
+#: ../../docs/development/compiling/compiling_for_x11.rst:45
 msgid "**Debian** / **Ubuntu**"
 msgstr "**Debian** / **Ubuntu**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:46
+#: ../../docs/development/compiling/compiling_for_x11.rst:50
 msgid "**Fedora**"
 msgstr "**Fedora**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:52
+#: ../../docs/development/compiling/compiling_for_x11.rst:56
 msgid "**FreeBSD**"
 msgstr "**FreeBSD**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:58
+#: ../../docs/development/compiling/compiling_for_x11.rst:62
 msgid "**Gentoo**"
 msgstr "**Gentoo**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:63
+#: ../../docs/development/compiling/compiling_for_x11.rst:67
 msgid "**Mageia**"
 msgstr "**Mageia**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:69
+#: ../../docs/development/compiling/compiling_for_x11.rst:73
 msgid "**OpenBSD**"
 msgstr "**OpenBSD**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:73
+#: ../../docs/development/compiling/compiling_for_x11.rst:77
 msgid "**openSUSE**"
 msgstr "**openSUSE**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:78
+#: ../../docs/development/compiling/compiling_for_x11.rst:82
 msgid "**Solus**"
 msgstr "**Solus**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:85
+#: ../../docs/development/compiling/compiling_for_x11.rst:89
 msgid "Compiling"
 msgstr "コンパイル"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:87
+#: ../../docs/development/compiling/compiling_for_x11.rst:91
 msgid ""
 "Start a terminal, go to the root dir of the engine source code and type:"
 msgstr ""
 "ターミナルを起動し、エンジンソースコードのルートディレクトリに移動し、次のよ"
 "うに入力します:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:93
+#: ../../docs/development/compiling/compiling_for_x11.rst:97
 msgid ""
 "A good rule of thumb for the ``-j`` (*jobs*) flag, is to have at least as "
 "many threads compiling Godot as you have cores in your CPU, if not one or "
@@ -146,7 +160,7 @@ msgstr ""
 "てもいいでしょう。下記にあるSConsコマンドのいずれにも自由に -j オプションを付"
 "けてください。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:97
+#: ../../docs/development/compiling/compiling_for_x11.rst:101
 msgid ""
 "If all goes well, the resulting binary executable will be placed in the \"bin"
 "\" subdirectory. This executable file contains the whole engine and runs "
@@ -157,19 +171,19 @@ msgstr ""
 "り、依存関係なしで実行されます。実行すると、プロジェクトマネージャが呼び出さ"
 "れます。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:104
+#: ../../docs/development/compiling/compiling_for_x11.rst:108
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr ""
 "GCCではなくClangを使用してコンパイルする場合は、次のコマンドを使用します:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:110
+#: ../../docs/development/compiling/compiling_for_x11.rst:114
 msgid ""
 "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would "
 "not build."
 msgstr ""
 "Clangを使うことはOpenBSDの要件のようで、そうしないとフォントが作れません。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:113
+#: ../../docs/development/compiling/compiling_for_x11.rst:117
 msgid ""
 "If you are compiling Godot for production use, then you can make the final "
 "executable smaller and faster by adding the SCons option "
@@ -179,23 +193,30 @@ msgstr ""
 "``target=release_debug`` を追加すれば、より小さくて高速な実行ファイルにするこ"
 "とができます。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:117
-#, fuzzy
+#: ../../docs/development/compiling/compiling_for_x11.rst:121
 msgid ""
 "If you are compiling Godot with GCC, you can make the binary even smaller "
 "and faster by adding the SCons option ``use_lto=yes``. As link-time "
 "optimization is a memory-intensive process, this will require about 3 GB of "
 "available RAM while compiling."
 msgstr ""
-"GodotをMinGWでコンパイルするなら、SConsのオプション ``use_lto=yes`` を追加す"
-"れば、さらに小さくて高速なバイナリにすることができます。リンク時最適化には大"
-"量のメモリを消費するので、およそ 3GB の使用可能なRAMを必要とします。"
+"GCCでGodotをコンパイルしている場合、SConsオプション ``use_lto=yes`` を追加す"
+"ることにより、バイナリをさらに小さく高速化できます。リンク時最適化はメモリを"
+"集中的に使用するプロセスであるため、コンパイルには約3GBの使用可能なRAMが必要"
+"です。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:123
+#: ../../docs/development/compiling/compiling_for_x11.rst:126
+msgid ""
+"If you want to use separate editor settings for your own Godot builds and "
+"official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
+"by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:132
 msgid "Building export templates"
 msgstr "エクスポートテンプレートの構築"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:125
+#: ../../docs/development/compiling/compiling_for_x11.rst:134
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -209,7 +230,7 @@ msgstr ""
 "るべきでしょう。バーチャルマシンやコンテナを使えば、適切なビルド環境をセット"
 "アップできます。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:133
+#: ../../docs/development/compiling/compiling_for_x11.rst:142
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
@@ -217,15 +238,15 @@ msgstr ""
 "X11(Linux、\\*BSD)エクスポートテンプレートをビルドするには、次のパラメーター"
 "を使用してビルド システムを実行します:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:136
+#: ../../docs/development/compiling/compiling_for_x11.rst:145
 msgid "(32 bits)"
 msgstr "(32ビット)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:143
+#: ../../docs/development/compiling/compiling_for_x11.rst:152
 msgid "(64 bits)"
 msgstr "(64ビット)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:150
+#: ../../docs/development/compiling/compiling_for_x11.rst:159
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
@@ -233,14 +254,14 @@ msgstr ""
 "注意点として、現在のホスト プラットフォームの反対のビット(64/32)へのクロスコ"
 "ンパイルは、簡単にいくとは限らず、chroot環境が必要になるかもしれません。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:153
+#: ../../docs/development/compiling/compiling_for_x11.rst:162
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
 "標準のエクスポート テンプレートを作成するには、結果のファイルを次の場所にコ"
 "ピーする必要があります:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:159
+#: ../../docs/development/compiling/compiling_for_x11.rst:168
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
@@ -248,7 +269,7 @@ msgstr ""
 "そして、このように命名されます (Godotでは\\*BSD の場合も「Linux X11」と見なさ"
 "れます):"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:168
+#: ../../docs/development/compiling/compiling_for_x11.rst:177
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
@@ -257,7 +278,7 @@ msgstr ""
 "ただし、カスタムモジュールまたはカスタムC++ コードを作成する場合は、ここでカ"
 "スタムエクスポート テンプレートとしてバイナリを構成する必要があります:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:174
+#: ../../docs/development/compiling/compiling_for_x11.rst:183
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Godot source folder, so the next time you "
@@ -267,38 +288,44 @@ msgstr ""
 "レクトリに出力されたファイルを指定するだけです。こうすれば、次にビルドした時"
 "も、自動的にカスタム テンプレートを参照するようになります。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:179
+#: ../../docs/development/compiling/compiling_for_x11.rst:188
 msgid "Using Clang and LLD for faster development"
-msgstr ""
+msgstr "ClangとLLDを使用して開発を高速化する"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:181
+#: ../../docs/development/compiling/compiling_for_x11.rst:190
 msgid ""
 "You can also use Clang and LLD to build Godot. This has two upsides compared "
 "to the default GCC + GNU ld setup:"
 msgstr ""
+"ClangとLLDを使用してGodotを構築することもできます。これには、デフォルトのGCC "
+"+ GNU ldセットアップと比較して2つの利点があります:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:184
+#: ../../docs/development/compiling/compiling_for_x11.rst:193
 msgid ""
 "LLD links Godot significantly faster compared to GNU ld or gold. This leads "
 "to faster iteration times."
 msgstr ""
+"LLDは、GNU ldまたはgoldと比較してGodotを大幅に高速にリンクします。これによ"
+"り、反復時間が短縮されます。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:186
+#: ../../docs/development/compiling/compiling_for_x11.rst:195
 msgid "Clang tends to give more useful error messages compared to GCC."
-msgstr ""
+msgstr "Clangは、GCCよりも有用なエラーメッセージを提供する傾向があります。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:188
-#, fuzzy
+#: ../../docs/development/compiling/compiling_for_x11.rst:197
 msgid ""
 "To do so, install Clang and the ``lld`` package from your distribution's "
 "package manager then use the following SCons command::"
 msgstr ""
-"**Linux:** ほとんどのディストリビューションでは、ディストリビューションのパッ"
-"ケージマネージャーから ``gettext`` パッケージをインストールします。"
+"これを行うには、ディストリビューションのパッケージマネージャーからClangと "
+"``lld`` パッケージをインストールし、次のSConsコマンドを使用します:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:193
+#: ../../docs/development/compiling/compiling_for_x11.rst:202
 msgid ""
 "It's still recommended to use GCC for production builds as they can be "
 "compiled using link-time optimization, making the resulting binaries smaller "
 "and faster."
 msgstr ""
+"リンク時最適化を使用してコンパイルし、結果のバイナリをより小さく、より高速に"
+"することができるため、プロダクションビルドにはGCCを使用することをお勧めしま"
+"す。"

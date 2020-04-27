@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,11 +111,12 @@ msgstr ""
 "部缓冲区、或文件引用。"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:43
+#, fuzzy
 msgid ""
 "Some AudioStreams need to be stateless such as objects loaded from "
 "ResourceLoader. ResourceLoader loads once and references the same object "
 "regardless how many times ``load`` is called on a specific resource. "
-"Therefore, playback state must be self contained in AudioStreamPlayback."
+"Therefore, playback state must be self-contained in AudioStreamPlayback."
 msgstr ""
 "某些AudioStream需要是无状态的，例如从ResourceLoader加载的对象。ResourceLoader"
 "加载一次并引用同一对象，而不管在该特定资源上调用了多少次 ``load``。因此，播放"
@@ -145,8 +146,9 @@ msgid "Resampling"
 msgstr "重采样"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:234
+#, fuzzy
 msgid ""
-"Godot’s AudioServer currently uses 44100 Hz sample rate. When other sample "
+"Godot's AudioServer currently uses 44100 Hz sample rate. When other sample "
 "rates are needed such as 48000, either provide one or use "
 "AudioStreamPlaybackResampled. Godot provides cubic interpolation for audio "
 "resampling."

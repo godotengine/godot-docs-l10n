@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,20 +50,30 @@ msgstr ""
 "`` 协议时不，会加载导出的项目。要解决此问题，请使用本地服务器。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
+#, fuzzy
 msgid ""
-"Python offers an easy method to start a local server. Use ``python -m "
-"SimpleHTTPServer`` with Python 2 or ``python -m http.server`` with Python 3 "
-"to serve the current working directory at ``http://localhost:8000``."
+"Python offers an easy method to start a local server. Use ``python -m http."
+"server`` with Python 3 to serve the current working directory at ``http://"
+"localhost:8000``."
 msgstr ""
 "Python提供了一种启动本地服务器的简便方法。使用Python2中的 ``python -m "
 "SimpleHTTPServer`` 或Python 3的 ``python -m http.server``，将在 ``http://"
 "localhost:8000`` 上提供当前的工作目录。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:25
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:23
+msgid ""
+"`There are significant bugs when running HTML5 projects on iOS <https://"
+"github.com/godotengine/godot/issues/26554>`__ (regardless of the browser). "
+"We recommend using :ref:`iOS' native export functionality "
+"<doc_exporting_for_ios>` instead, as it will also result in better "
+"performance."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:29
 msgid "WebGL 2"
 msgstr "WebGL 2"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:31
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option is selected."
@@ -71,13 +81,14 @@ msgstr ""
 "在 *OpenGL ES 3* 渲染器从 Godot 删除以支持 *Vulkan* 之前，当选择 *GLES3* 选项"
 "时，HTML5导出将使用 *WebGL 2* 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:34
+#, fuzzy
 msgid ""
-"Usage of WebGL 2 is not recommended due to its expected removal from Godot "
+"Using WebGL 2 is not recommended due to its expected removal from Godot "
 "without replacement."
 msgstr "不建议使用 WebGL 2 ，因为它预期会在不更换的情况下从 Godot 中删除。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:33
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:37
 msgid ""
 "WebGL 2 is not supported in all browsers. **Firefox** and **Chromium** "
 "(Chrome, Opera) are the most popular supported browsers, **Safari** and "
@@ -88,16 +99,16 @@ msgstr ""
 "支持WebGL 2的最受欢迎的浏览器，而 **Safari** 和 **Edge** 不起作用。在 "
 "**iOS** 系统上，所有浏览器都基于WebKit（即Safari），因此它们也无法正常工作。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:42
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
 msgstr "Godot 的 WebGL 2 渲染器存在 3D 问题，并且不再维护。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:45
 msgid "Limitations"
 msgstr "限制"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:47
 msgid ""
 "For security and privacy reasons, many features that work effortlessly on "
 "native platforms are more complicated on the web platform. Following is a "
@@ -107,11 +118,11 @@ msgstr ""
 "出于安全和隐私的原因，许多在本机平台上轻松工作的功能在Web平台上更加复杂。以下"
 "列出了将Godot游戏移植到Web时应注意的限制。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:52
 msgid "Using cookies for data persistence"
 msgstr "使用cookie进行数据持久化"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:50
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:54
 msgid ""
 "Users must **allow cookies** (specifically IndexedDB) if persistence of the "
 "``user://`` file system is desired. When playing a game presented in an "
@@ -122,7 +133,7 @@ msgstr ""
 "IndexedDB）。当玩 ``iframe`` 中呈现的游戏时，还必须启用 **第三方** cookie。隐"
 "身/隐私浏览模式也会防止持久性。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:59
 msgid ""
 "The method ``OS.is_userfs_persistent()`` can be used to check if the "
 "``user://`` file system is persistent, but can give false positives in some "
@@ -131,11 +142,11 @@ msgstr ""
 "方法 ``OS.is_userfs_persistent()`` 可用于检查 ``user://`` 文件系统是否持久，"
 "但在某些情况下会误报。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:64
 msgid "Full screen and mouse capture"
 msgstr "全屏和鼠标捕获"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:66
 msgid ""
 "Browsers do not allow arbitrarily **entering full screen**. The same goes "
 "for **capturing the cursor**. Instead, these actions have to occur as a "
@@ -149,7 +160,7 @@ msgstr ""
 "``_input`` 或 ``_unhandled_input``，回调中进入全屏。查询 :ref:`class_Input` "
 "单例是不够的，相关的输入事件当前必须是活动的。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:69
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:73
 msgid ""
 "For the same reason, the full screen project setting doesn't work unless the "
 "engine is started from within a valid input event handler. This requires :"
@@ -158,18 +169,18 @@ msgstr ""
 "出于同样的原因，除非从有效的输入事件处理程序中启动引擎，否则全屏项目设置将不"
 "起作用。这需要 :ref:`定制HTML页面 <doc_customizing_html5_shell>`。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:78
 msgid "Audio autoplay"
 msgstr "音频自动播放"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:76
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:80
 msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
 msgstr ""
 "Chrome 限制网站播放音频的方式。可能需要玩家单击或轻按或按住一个键来启用音频。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
 msgid ""
 "Google offers additional information about their `Web Audio autoplay "
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
@@ -178,36 +189,36 @@ msgstr ""
 "Google提供了有关其 `网络音频自动播放政策 <https://sites.google.com/a/"
 "chromium.org/dev/audio-video/autoplay>`__ 的其他信息。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
 msgstr ":ref:`class_HTTPClient` 和 :ref:`class_HTTPRequest`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:89
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
 msgstr "HTTP类在HTML5平台上有一些限制："
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
 msgstr "无法访问或更改 ``StreamPeer``"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
 msgid "Threaded/Blocking mode is not available"
 msgstr "``Threaded/Blocking`` 模式不可用"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:89
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:93
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr "每帧不能进行多次，因此循环中的轮询将冻结"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:94
 msgid "No chunked responses"
 msgstr "没有分块响应"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid "Host verification cannot be disabled"
 msgstr "无法禁用主机验证"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
 msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`__"
@@ -215,11 +226,11 @@ msgstr ""
 "遵循 `同源政策 <https://developer.mozilla.org/en-US/docs/Web/Security/Same-"
 "origin_policy>`__"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:99
 msgid "Exported ``.html`` file must not be reused"
 msgstr "导出的 ``.html`` 文件不得重复使用"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 #, fuzzy
 msgid ""
 "Each project must generate their own HTML file. On export, several text "
@@ -233,11 +244,11 @@ msgstr ""
 "后的导出中丢失。要自定义生成的文件，请参阅 :ref:"
 "`doc_customizing_html5_shell`。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:105
 msgid "Boot splash is not displayed"
 msgstr "启动画面不显示"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:103
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:107
 msgid ""
 "The default HTML page does not display the boot splash while loading. "
 "However, the image is exported as a PNG file, so :ref:`custom HTML pages "
@@ -246,41 +257,43 @@ msgstr ""
 "默认的HTML页面在加载时不显示启动界面。然而，图像导出为一个PNG文件，因此 :ref:"
 "`自定义HTML页面 <doc_customizing_html5_shell>` 可以显示它。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:108
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
 msgid "Unimplemented functionality"
 msgstr "未实现的功能"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:110
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
 msgstr "HTML5平台上目前无法使用以下功能："
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
 msgid "Threads"
 msgstr "线程"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
 msgid "GDNative"
 msgstr "GDNative"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:118
 msgid "C#"
 msgstr "C#"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
-msgid "Clipboard synchronisation between engine and operating system"
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
+#, fuzzy
+msgid "Clipboard synchronization between engine and operating system"
 msgstr "引擎和操作系统之间的剪贴板同步"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
 msgstr ""
 "除了 :ref:`class_HTTPClient` 和 :ref:`class_WebSocketClient` 之外的网络"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:118
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
+#, fuzzy
 msgid ""
-"Check the `list of open HTML5 issues on Github <https://github.com/"
+"Check the `list of open HTML5 issues on GitHub <https://github.com/"
 "godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`__ to see "
 "if the functionality you're interested in has an issue yet. If not, open one "
 "to communicate your interest."
@@ -289,11 +302,11 @@ msgstr ""
 "q=is:open+is:issue+label:platform:html5>`__ 看看您关注的功能是否有问题。如果"
 "没有，请打开一个来表达您的关注。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:124
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 msgid "Serving the files"
 msgstr "提供文件"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:130
 msgid ""
 "Exporting for the web generates several files to be served from a web "
 "server, including a default HTML page for presentation. A custom HTML file "
@@ -302,7 +315,7 @@ msgstr ""
 "导出为Web生成多个要从Web服务器提供的文件，包括用于演示的默认HTML页面。可以使"
 "用自定义HTML文件，请参阅 :ref:`doc_customizing_html5_shell` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:130
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
 msgid ""
 "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache "
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
@@ -311,7 +324,7 @@ msgstr ""
 "生成的 ``.html`` 文件可以在Apache服务器中用作 ``DirectoryIndex``，并且可以在"
 "任何时候重命名为例如 ``index.html``，默认情况下永远不会依赖它的名称。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:138
 msgid ""
 "The HTML page draws the game at maximum size within the browser window. This "
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
@@ -320,7 +333,7 @@ msgstr ""
 "HTML页面在浏览器窗口内以最大尺寸绘制游戏。这样，就可以将其插入游戏大小的 "
 "``<iframe>`` 中，这在大多数网络游戏托管站点中很常见。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:138
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:142
 msgid ""
 "The other exported files are served as they are, next to the ``.html`` file, "
 "names unchanged. The ``.wasm`` file is a binary WebAssembly module "
@@ -336,7 +349,7 @@ msgstr ""
 "画面图像。默认HTML页面中未使用它，但 :ref:`自定义HTML页面 "
 "<doc_customizing_html5_shell>` 中包含了它。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:146
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:150
 msgid ""
 "The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
@@ -345,7 +358,7 @@ msgstr ""
 "``.pck`` 文件是二进制文件，通常与MIME类型 :mimetype:`application/octet-"
 "stream` 一起分发。``.wasm`` 文件以 :mimetype:`application/wasm` 分发。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:150
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:154
 msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
@@ -353,7 +366,7 @@ msgstr ""
 "分发WebAssembly模块（``.wasm``）时，使用一个 :mimetype:`application/wasm` 以"
 "外的MIME类型，可能会阻止某些启动优化。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:154
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:158
 msgid ""
 "Delivering the files with server-side compression is recommended especially "
 "for the ``.pck`` and ``.wasm`` files, which are usually large in size. The "
@@ -363,11 +376,11 @@ msgstr ""
 "建议使用服务器端压缩来分发文件，尤其是对通常很大的 ``.pck`` 和 ``.wasm`` 文"
 "件。WebAssembly模块压缩特别好，通过gzip压缩缩小到原始大小的四分之一。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:160
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid "Export options"
 msgstr "导出选项"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:162
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:166
 msgid ""
 "If a runnable web export template is available, a button appears between the "
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
@@ -376,7 +389,7 @@ msgstr ""
 "如果可以使用可运行的Web导出模板，则编辑器中的 *停止场景* 和 *播放编辑的场景* "
 "按钮之间会出现一个按钮，可以在默认浏览器中快速打开游戏进行测试。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:166
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
@@ -384,7 +397,7 @@ msgstr ""
 "如果给出了 **自定义HTML Shell** 文件的路径，则将使用它来代替默认的HTML页面。"
 "请参阅 :ref:`doc_customizing_html5_shell`。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:169
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
 msgid ""
 "**Head Include** is appended into the ``<head>`` element of the generated "
 "HTML page. This allows to, for example, load webfonts and third-party "
@@ -393,11 +406,11 @@ msgstr ""
 "**Head Include** 被附加到生成的HTML页面的 ``<head>`` 元素中。这允许，例如，加"
 "载 ``webfonts`` 和第三方JavaScript API、包括CSS、或运行JavaScript代码。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:176
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
 msgid "Calling JavaScript from script"
 msgstr "从脚本调用JavaScript"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:178
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:182
 msgid ""
 "In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
@@ -409,7 +422,7 @@ msgstr ""
 "作方式与同名的JavaScript函数类似。它将字符串作为参数，并将其作为JavaScript代"
 "码执行。这允许以与集成到Godot中的脚本语言不可能的方式与浏览器交互。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:189
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
@@ -417,19 +430,19 @@ msgstr ""
 "最后一个JavaScript语句的值转换为GDScript值，并在某些情况下由 ``eval()`` 返"
 "回："
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:192
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr "JavaScript ``number`` 作为GDScript的 :ref:`class_float` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:197
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr "JavaScript ``boolean`` 作为GDScript的 :ref:`class_bool` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:198
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr "JavaScript ``string`` 作为GDScript的 :ref:`class_String` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:195
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:199
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
@@ -437,11 +450,11 @@ msgstr ""
 "JavaScript ``RellBuffer``、 ``TypedArray`` 和 ``DataView`` 作为GDScript的 :"
 "ref:`class_PoolByteArray` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:204
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:208
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr "任何其他JavaScript值都返回为 ``null`` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:206
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:210
 msgid ""
 "HTML5 export templates may be built without support for the singleton. With "
 "such templates, and on platforms other than HTML5, calling ``JavaScript."
@@ -452,7 +465,7 @@ msgstr ""
 "上，调用 ``JavaScript.eval`` 也会返回 ``null`` 。可以使用 ``JavaScript`` 的 :"
 "ref:`功能标签 <doc_feature_tags>` 来检查单例的可用性："
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:219
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:223
 msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
@@ -460,7 +473,7 @@ msgstr ""
 "GDScript中的多行字符串由3双引号 ``\"\"\"`` 包围，如同上文中的 ``my_func3()`` "
 "那样，有助于保证JavaScript代码的可读性。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:222
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:226
 msgid ""
 "The ``eval`` method also accepts a second, optional Boolean argument, which "
 "specifies whether to execute the code in the global execution context, "

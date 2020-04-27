@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:4
-#, fuzzy
 msgid "Nodes and terminology"
 msgstr "Вузли і термінологія"
 
@@ -33,9 +32,15 @@ msgid ""
 "referring to *Node* here, it will be implied that a *Visual Script Node* is "
 "referred to unless indicated otherwise."
 msgstr ""
+"Перш ніж продовжувати, слід зауважити, що термін *Вузол* потрібно "
+"використовувати обережно. Коли йдеться про *візуальні вузли скриптів* (або "
+"взагалі *Вузли*), у цьому тексті будуть матися на увазі маленькі поля, які "
+"ви з'єднуєте з лініями, і які є частиною графіка. А під *Вузлами сцени*, "
+"маються на увазі елементи, що складають Сцену і є частиною її дерева. Їх "
+"назви схожі, але функції різні. Тут під словом *Вузол* маються на увазі "
+"*Вузли візуального скрипта*, звісно якщо не вказано інше."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:15
-#, fuzzy
 msgid "Node properties"
 msgstr "Властивості вузла"
 
@@ -45,6 +50,9 @@ msgid ""
 "properties. In Godot, though, we try to avoid bloating the nodes with "
 "editable controls for the sake of readability."
 msgstr ""
+"Як і в більшості реалізацій візуальних скриптів, кожен вузол має "
+"властивості, які можна редагувати. Однак у Godot ми намагаємось уникнути "
+"роздування вузлів елементами редагування заради читабельності."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:20
 msgid ""
@@ -52,17 +60,21 @@ msgid ""
 "via the *Inspector*. To edit them, select any node and edit its properties "
 "in the *Inspector*."
 msgstr ""
+"Вузли відображають необхідну інформацію у вигляді тексту, але редагування "
+"здійснюється через *Інспектор*. Щоб відредагувати їх, виберіть будь-який "
+"вузол і відредагуйте його властивості в *Інспекторі*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:25
-#, fuzzy
 msgid "Ports and connections"
-msgstr "З'єднання"
+msgstr "Порти та з'єднання"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:27
 msgid ""
 "Programming in Godot Visual Scripting is done via *Nodes* and *Port "
 "Connections* inside each function."
 msgstr ""
+"Програмування в Godot Visual Scripting здійснюється через *вузли* та *порти "
+"підключення* всередині кожної функції."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:31
 msgid "Ports"
@@ -74,6 +86,9 @@ msgid ""
 "appear to the left and right of nodes and which can be used to make "
 "*Connections*: There are two types of *Ports*: *Sequence* and *Data*."
 msgstr ""
+"Вузли у Godot Visual Scripting мають *порти*. Це кінцеві точки, які "
+"з'являються зліва та справа від вузлів і які можна використовувати для "
+"*підключення*: Є два типи *портів*: *Послідовність* і *Дані*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:40
 msgid ""
@@ -85,6 +100,13 @@ msgid ""
 "following the white lines. Not every *Node* has *Sequence Ports*. In fact, "
 "most do not."
 msgstr ""
+"*Порти послідовності* вказують на порядок виконання операцій. Зазвичай, коли "
+"*Вузол* запускається наступний вузол, під'єднаний через один із портів "
+"справа. Якщо нічого не під'єднано, функція може закінчитися, або спробувати "
+"інший вихідний *порт послідовності* (це залежить від вузла). Завдяки цьому "
+"ви можете простежити логічний потік у функції, дотримуючись білих ліній. Не "
+"кожен *вузол* має *порти послідовності*. Насправді більшість вузлів немає "
+"цих портів."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:46
 msgid ""
@@ -94,6 +116,11 @@ msgid ""
 "considered an output, while, a port on the left side is an input. Connecting "
 "them allows information to flow to the next node."
 msgstr ""
+"*Порти даних* містять типізовані значення. Типи можуть бути будь-якими "
+"регулярними типами Godot, такими як булеві (логічні), цілі числа, текст "
+"(строка), Vector3, масив, будь-який вузол об'єкта, або сцени, тощо. *Порт "
+"даних* у правій частині вузла вважається вихідним, тоді як, порт зліва - "
+"вхідний. Підключення їх дозволяє передавати інформацію до наступного вузла."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:51
 msgid ""
@@ -101,6 +128,8 @@ msgid ""
 "Pay special attention to colors and icons, as each type has a different "
 "representation:"
 msgstr ""
+"Не всі типи *портів даних* сумісні і можуть бути з'єднані. Зверніть особливу "
+"увагу на кольори та піктограми, оскільки кожен тип має різне представлення:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:58
 msgid "Connections"
@@ -111,6 +140,8 @@ msgid ""
 "Connecting is a relatively simple process. Drag an *Output Port* towards an "
 "*Input Port*."
 msgstr ""
+"Підключення є відносно простим процесом. Перетягніть *вихідний порт* до "
+"*вхідного порту*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:65
 msgid ""
@@ -118,6 +149,9 @@ msgid ""
 "happens by dragging the *Input* away, while for *Sequence Ports*, this "
 "happens by dragging the *Output* away."
 msgstr ""
+"Відключення вимагає трохи більше практики. Відключення в *портах даних* "
+"відбувається при перетягуванні *вхідного порту*, а для відключення *портів "
+"послідовності* треба перетягнути *вихідний порт*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:71
 msgid ""
@@ -125,6 +159,10 @@ msgid ""
 "(A single output port can connect to many inputs), while *Sequence Ports* "
 "are N:1 (Many sequence outputs can be connected to a single input)."
 msgstr ""
+"Така система може здатися дивною, але їй є пояснення. *Порти даних* "
+"підключаються по схемі 1:N (один вихідний порт може з'єднуватися з багатьма "
+"входами), а *порти послідовності* - N:1 (Багато послідовних виходів можна "
+"підключити до одного входу)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:75
 msgid ""
@@ -132,15 +170,17 @@ msgid ""
 "also context sensitive, it will supply a list of most common operations. For "
 "sequences, it will be conditional nodes:"
 msgstr ""
+"Підключення до порожнього простору (перетягніть вихідний порт ан пустий "
+"простір) також є контекстно-чутливим, воно містить список найбільш поширених "
+"операцій. Для послідовностей це будуть умовні вузли:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:81
 msgid "While, for data, a contextual set/get/call menu will open:"
-msgstr ""
+msgstr "Для даних відкриється контекстне меню задавання/отримання/виклику:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:87
-#, fuzzy
 msgid "Adding nodes"
-msgstr "Додавання освітлення"
+msgstr "Додавання вузлів"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:89
 msgid ""
@@ -148,10 +188,13 @@ msgid ""
 "each type of node does, let's take a short look at how nodes are most "
 "commonly added and dealt with."
 msgstr ""
+"Нарешті! Ми дісталися до найцікавішої частини! Але, перш ніж пояснити більш "
+"детально, що робить кожен тип вузла, давайте коротко розглянемо, як вузли "
+"найчастіше додаються та з чого складаються."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:94
 msgid "Accessing scene nodes"
-msgstr ""
+msgstr "Доступ до вузлів сцени"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:96
 msgid ""
@@ -160,6 +203,10 @@ msgid ""
 "dropping into the canvas will ask you to *call a method* (sometimes referred "
 "to as *member function*) on this node."
 msgstr ""
+"Одне з найпоширеніших завдань - це доступ до Вузлів Дерева Сцена (не "
+"плутайте їх з вузлами Visual Script). Перетягнувши Вузол Дерева Сцени на "
+"полотно ви попросите попросите *викликати метод* на цьому вузлі (іноді його "
+"називають *членська функція*)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:102
 msgid ""
@@ -169,16 +216,25 @@ msgid ""
 "position in local coordinates to the control. Another common use case is "
 "queueing a node for deletion, which is done with the *queue_free* method."
 msgstr ""
+"Хоча доступ до властивостей бажаний у більшості випадків (докладніше про це "
+"нижче), іноді *виклик методів* може бути корисним. Методи виконують "
+"конкретні дії над об'єктами. У наведеному вище випадку вказівник миші може "
+"бути перекручений до положення в локальних координатах до елемента "
+"управління. Ще один поширений випадок використання - це черга вузла для "
+"видалення, що робиться методом *queue_free*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:109
 msgid ""
 "Care must be taken that this only works if the scene being edited contains "
 "your *Visual Script* in one of the nodes! Otherwise, a warning will be shown."
 msgstr ""
+"Майте на увазі що це працює лише в тому випадку, коли редагована сцена, "
+"містить ваш *Visual Script* в одному з вузлів! В іншому випадку буде "
+"показано попередження."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:113
 msgid "Accessing scene node properties"
-msgstr ""
+msgstr "Доступ до властивостей вузла сцени"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:115
 msgid ""
@@ -187,22 +243,30 @@ msgid ""
 "Name* of the property you want to edit (hint, *not* the value!) and drag it "
 "to the canvas:"
 msgstr ""
+"Це найпоширеніший спосіб редагування *Вузлів Сцени* у візуальних скриптах. "
+"Виберіть *Вузол Сцени* з *Дерева сцени*, перейдіть до Інспектора, знайдіть "
+"*Ім'я* властивості, яку ви хочете редагувати (підказка, а *не* значення!) І "
+"перетягніть його на полотно:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:120
 msgid ""
 "The result is that this value can be changed from your script by writing to "
 "a *Data Port*."
 msgstr ""
+"В результаті це значення можна змінити з вашого скрипту, записавши в *Порт "
+"Даних*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
 msgid ""
 "If instead reading this value is desired, drag the node again but hold :kbd:"
 "`Ctrl` (or :kbd:`Cmd` on macOS). This will create a getter:"
 msgstr ""
+"Якщо замість цього потрібне зчитування цього значення, перетягніть вузол ще "
+"раз, але утримуйте :kbd:`Ctrl`(або :kbd:`Cmd` на macOS). Це створить геттер:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:127
 msgid "In this case, the value can be read from a *Data Port*."
-msgstr ""
+msgstr "У цьому випадку значення можна прочитати з *Порту Даних*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:131
 msgid "Variables"
@@ -214,16 +278,22 @@ msgid ""
 "This value can be read from any of the functions of the script or from other "
 "scripts via the method described in the previous step."
 msgstr ""
+"Змінні - це контейнери пам'яті, локальні для скрипту, які можуть містити "
+"значення. Це значення можна прочитати з будь-якої функції скрипту, або з "
+"інших скриптів, за допомогою методу, описаного на попередньому кроці."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:135
 msgid ""
 "To add a Variable, push the \"+\" button on the *Variables* section of the "
 "Members panel. Double-click the new variable to rename it:"
 msgstr ""
+"Щоб додати змінну, натисніть кнопку \"+\" у розділі *Змінні* на панелі "
+"\"Члени\". Двічі клацніть нову змінну, щоб перейменувати її:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:140
 msgid "Right-clicking the variable allows you to configure its properties:"
 msgstr ""
+"Клацніть правою кнопкою миші по змінній, щоб налаштувати її властивості:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:147
 msgid ""
@@ -233,16 +303,24 @@ msgid ""
 "makes it available to other scripts via the method described in the previous "
 "step."
 msgstr ""
+"Як видно вище, тип і початкове значення змінної можуть бути змінені, а також "
+"деякі підказки (hints) властивості. Опція \"Export\" (\"Експорт\") робить "
+"змінну видимою в Інспекторі під час вибору вузла. Це також робить її "
+"доступною для інших скриптів через метод, описаний у попередньому кроці."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
 msgid ""
 "To use the variable in the script, simply drag it to the canvas to create a "
 "getter:"
 msgstr ""
+"Щоб використовувати змінну в скрипті, просто перетягніть її на полотно, щоб "
+"створити сеттер:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
 msgid "Likewise, hold :kbd:`Ctrl` (or :kbd:`Cmd` on macOS) to drop a setter:"
 msgstr ""
+"Так само утримуйте :kbd:`Ctrl` (або :kbd:`Cmd` на macOS), щоб отримати "
+"геттер:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 msgid "Signals"
@@ -254,12 +332,17 @@ msgid ""
 "this, do the same steps you did for variables in the previous step, except "
 "for *Signals*:"
 msgstr ""
+"Також можна створити власні сигнали в скрипті та використовувати їх. Для "
+"цього виконайте ті самі кроки, які ви робили для змінних на попередньому "
+"кроці, але використовуйте *Сигнали*:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:171
 msgid ""
 "A signal can also be edited via the right-click menu to customize its "
 "arguments:"
 msgstr ""
+"Сигнал також можна редагувати через меню правою кнопкою миші, щоб "
+"налаштувати його аргументи:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
 msgid ""
@@ -267,21 +350,24 @@ msgid ""
 "built-in node signals. This allows you to connect it from another script "
 "from another *Scene Node*:"
 msgstr ""
+"Створений вами сигнал з’явиться в Інспекторі разом із вбудованими сигналами "
+"вузла. Це дозволяє підключити його до іншого скрипту в іншому *Вузлі сцени*:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:181
 msgid "Finally, to emit the signal, simply drag it to the canvas:"
-msgstr ""
+msgstr "Нарешті, щоб випромінювати сигнал, перетягніть його на полотно:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:186
 msgid ""
 "Remember that emitting a signal is a sequenced operation, so it must come "
 "from a Sequence port."
 msgstr ""
+"Пам'ятайте, що випромінювання сигналу є послідовною операцією, тому він "
+"повинен надходити з порту послідовності."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:190
-#, fuzzy
 msgid "Adding more nodes"
-msgstr "Додавання освітлення"
+msgstr "Додавання додаткових вузлів"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:192
 msgid ""
@@ -289,12 +375,17 @@ msgid ""
 "nodes available for your canvas! Below the member panel, exists the list of "
 "all available node types:"
 msgstr ""
+"Тепер, коли основи охоплені, давайте обговоримо велику кількість допоміжних "
+"вузлів, доступних для вашого полотна! ((?)Під панеллю членів знаходиться "
+"список усіх доступних типів вузлів(?)):"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:198
 msgid ""
 "Pressing :kbd:`Ctrl + F` (or :kbd:`Cmd + F` on macOS) allows you to search "
 "the list."
 msgstr ""
+"Натискання :kbd:`Ctrl + F` (або :kbd:`Cmd + F` на macOS) дозволяє відкрити "
+"список для пошуку."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:200
 msgid ""
@@ -303,6 +394,10 @@ msgid ""
 "automatically), these are added without any \"contextual\" information, so "
 "this has to be done manually."
 msgstr ""
+"Будь-якого з них можна перетягнути на сцену. На відміну від вузлів "
+"(наприклад, перетягування властивості з Інспектора встановлює контекст для "
+"редагування вузла автоматично), вони додаються без будь-якої "
+"\"контекстуальної\" інформації, тому це потрібно робити вручну."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:206
 msgid ""
@@ -310,6 +405,8 @@ msgid ""
 "they are documented there. That mentioned, a brief overview of node types "
 "follows:"
 msgstr ""
+"Пам'ятайте, що ви можете перевірити посилання класу на те, що робить кожен "
+"вузол, оскільки вони там задокументовані. Далі короткий огляд типів вузлів:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:211
 msgid "Constants"
@@ -321,14 +418,22 @@ msgid ""
 "time, can be useful as reference values. Most of the time they are integer "
 "or float."
 msgstr ""
+"Постійні вузли (константи) - це вузли, які надають значення, які, хоча і не "
+"змінюються з часом, проте можуть бути корисними як опорні значення. Більшу "
+"частину часу це цілі, або з десятковою комою, числа."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:219
+#, fuzzy
 msgid ""
 "The first one is \"Constant\", which allows you to select any value of any "
 "type as constant, from an integer (42) to a String (\"Hello!\"). In general, "
 "this node is not used that often because of default input values in *Data "
 "Ports*, but it's good to know it exists."
 msgstr ""
+"Перший з них - \"Constant\", який дозволяє вибрати будь-яке значення будь-"
+"якого типу як постійне, від цілого числа (42) до текстового (\"Привіт!\"). "
+"Взагалі, цей вузол використовується не часто, через дефолтне введення "
+"значень в *портах даних*, але добре знати, що він існує."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:221
 msgid ""
@@ -336,12 +441,17 @@ msgid ""
 "constants for global types in Godot. In there you can find some useful "
 "constants to refer to key names, joystick or mouse buttons, etc."
 msgstr ""
+"Другий - \"GlobalConstant\", містить довгий список констант для глобальних "
+"типів у Godot. Там ви можете знайти кілька корисних констант для позначення "
+"імен клавіш, джойстика, або кнопок миші, тощо."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:224
 msgid ""
 "The third one is MathConstant, which provides typical mathematical "
 "constants, such as PI, E, etc."
 msgstr ""
+"Третій - \"MathConstant\", забезпечує типові математичні константи, такі як "
+"PI, E, тощо."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
@@ -353,12 +463,16 @@ msgid ""
 "Godot is accessed via these nodes, so they are some of the most important "
 "ones to use and pretty diverse."
 msgstr ""
+"Вузли даних мають справу з усіляким доступом до інформації. Будь-яка "
+"інформація в Godot доступна через ці вузли, тому вони є одними з "
+"найважливіших для використання та досить різноманітними."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:236
 msgid ""
 "There are many types of nodes of interest here, so a short attempt to "
 "describe them will follow:"
 msgstr ""
+"Тут існує безліч типів цікавих вузлів, далі йде спроба їх короткого опису:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
@@ -371,6 +485,9 @@ msgid ""
 "below, the control is moved to the right when the \"move_right\" action is "
 "pressed."
 msgstr ""
+"Вузли дій є життєво важливими при роботі з введенням з пристрою. Детальніше "
+"про дії ви можете прочитати в (@TODO ACTION TUTE LINK). Нижче приклад "
+"керування переміщенням праворуч коли дія \"move_right\" натиснута."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:249
 msgid "Engine Singleton"
@@ -383,12 +500,18 @@ msgid ""
 "have several purposes, but in general, they are useful for low-level access "
 "or OS-related access."
 msgstr ""
+"Engine singleton - це глобальний інтерфейс (це означає, що до нього можна "
+"отримати доступ без посилання; на відміну від вузлів сцени, такі інтерфейси "
+"завжди доступні). Ці інтерфейси мають кілька цілей, але загалом вони корисні "
+"для доступу низького рівня, або доступу до ОС."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:257
 msgid ""
 "Remember that dragging a connection to empty space will help you call "
 "functions or set/get properties on these:"
 msgstr ""
+"Пам'ятайте, що перетягування з'єднання на порожній простір допоможе вам "
+"викликати функції, або встановити/отримати ці властивості:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:263
 msgid "Local Variables"
@@ -400,6 +523,9 @@ msgid ""
 "they all have the same name and type when using them and they will reference "
 "the same piece of memory."
 msgstr ""
+"Це вузли, які можна використовувати як тимчасове сховище для ваших графіків. "
+"Переконайтесь, що всі вони мають однакове ім'я та тип під час їх "
+"використання, і вони будуть посилатися на той самий фрагмент пам'яті."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:270
 msgid ""
@@ -409,7 +535,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
-msgstr ""
+msgstr "Вузол сцени"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:276
 msgid ""
@@ -417,6 +543,9 @@ msgid ""
 "node by dragging the actual node from the scene tree to the canvas (this "
 "will create it and configure it)."
 msgstr ""
+"Це лише посилання на вузол у дереві, але простіше використовувати цей вузол, "
+"перетягуючи фактичний вузол із дерева сцени на полотно (це створить його та "
+"налаштує)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
@@ -429,6 +558,10 @@ msgid ""
 "nodes (or event the node itself that has the script) from the Scene Tree to "
 "the canvas for this."
 msgstr ""
+"У деяких рідкісних випадках може знадобитися передача цього Вузла Сцени в "
+"якості аргумента. Він може використовуватися для виклику функцій та "
+"встановлення/отримання властивостей, або перетягування вузлів (або подій "
+"самого вузла, у якого є скрипт) із Дерева сцени до полотна."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
@@ -441,6 +574,10 @@ msgid ""
 "when the node is sitting in the scene and active, otherwise accessing it "
 "will return an error."
 msgstr ""
+"Цей вузол схожий на вузол Singleton, оскільки він посилається на SceneTree "
+"(Дерево Сцени), яке містить активну сцену. Однак SceneTree працює лише тоді, "
+"коли вузол сидить у сцені та активний, інакше при зверненні до нього "
+"повернеться помилка."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
 msgid ""
@@ -448,6 +585,9 @@ msgid ""
 "calling groups, make timers, or even load another scene. It's a good class "
 "to get familiar with."
 msgstr ""
+"SceneTree дозволяє виконувати багато речей низького рівня, наприклад "
+"встановлювати параметри розтягування, викликати групи, створювати таймери, "
+"або, навіть, завантажувати іншу сцену. Цей клас варто знати."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
@@ -459,6 +599,10 @@ msgid ""
 "resource loaded and ready to use. Rather than instancing the node, it's "
 "simpler to drag the desired resource from the filesystem dock to the canvas."
 msgstr ""
+"Preload (Попереднє завантаження) виконує ту ж функцію, що і preload() у "
+"GDScript. Він підтримує цей ресурс завантаженим і готовим до використання. "
+"Замість того, щоб вставляти екземпляр вузла, простіше перетягнути потрібний "
+"ресурс з панелі Файлова система на полотно."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
@@ -469,6 +613,9 @@ msgid ""
 "This node is a simple helper to get a string with a path to a resource you "
 "can pick. It's useful in functions that load things from disk."
 msgstr ""
+"Resource Path (Шлях до ресурсу) є простим помічником для отримання рядка зі "
+"шляхом до ресурсу, який ви можете вибрати. Це корисно у функціях, які "
+"завантажують речі з диска."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
 msgid "Comment"
@@ -480,6 +627,9 @@ msgid ""
 "will not try to get focus or be brought to top when selecting it. It can "
 "also be used to write text on it."
 msgstr ""
+"Вузол Comment (Коментар) працює як вузол, який можна змінити для розміщення "
+"інших вузлів. Він не намагатиметься отримати фокус, або переміститися вище, "
+"при виборі. Його також можна використовувати для написання тексту в ньому."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:322
 msgid "Flow Control"
@@ -490,6 +640,8 @@ msgid ""
 "Flow control nodes allow the execution to take different branches, usually "
 "depending on a given condition."
 msgstr ""
+"Вузли управління потоком дозволяють виконанню приймати різні розгалуження, "
+"залежно від заданої умови."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
 msgid "Condition"
@@ -502,6 +654,11 @@ msgid ""
 "of them, it goes via the \"done\" port. Leaving sequence ports disconnected "
 "is fine if not all of them are used."
 msgstr ""
+"Condition (Умова) це простий вузол, який перевіряє логічний (булевий) порт. "
+"Якщо ``true`` він передасть послідовність через \"true\" (\"істинний\") "
+"порт. Якщо ``false``, через другий. Після переходу по будь-якому з них він "
+"переходить через порт \"done\" (\"зроблено\"). Добре залишати порти "
+"послідовності відключеними, якщо вони не всі використовуються."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
@@ -512,6 +669,9 @@ msgid ""
 "Some data types in Godot (ie, arrays, dictionaries) are iterable. This means "
 "that a bit of code can run for each element that it has."
 msgstr ""
+"Деякі типи даних у Godot (тобто масиви, словники) є ітерованими. Це означає, "
+"що частина коду може повторно виконуватися для кожного елемента всередині "
+"такого типу."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:344
 msgid ""
@@ -519,10 +679,14 @@ msgid ""
 "via the \"each\" sequence port, making the element available in the \"elem\" "
 "data port."
 msgstr ""
+"Вузол Iterator (Ітератор) перебирає всі елементи, і кожен елемент передає "
+"через порт послідовностей \"each\" (\"кожен\"), роблячи його доступним у "
+"порту даних \"elem\" (\"елемент\")."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:347
 msgid "When done, it goes via the \"exit\" sequence port."
 msgstr ""
+"По завершенні він проходить через порт послідовності \"exit\" (\"вихід\")."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:351
 msgid "Return"
@@ -533,6 +697,8 @@ msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
 "add the Return node for you. A return node forces the function to end."
 msgstr ""
+"Деякі функції можуть повертати значення. Зазвичай Godot використовує для "
+"цього вузол Return (Повернення). Цей вузол змушує функцію завершуватися."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
 msgid "Sequence"
@@ -543,6 +709,8 @@ msgid ""
 "This node is useful mostly for organizing your graph. It calls its sequence "
 "ports in order."
 msgstr ""
+"Вузол Sequence (Послідовність) здебільшого корисний для організації вашого "
+"графіка. Він викликає порти послідовності по порядку."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:364
 msgid "TypeCast"
@@ -554,12 +722,18 @@ msgid ""
 "other objects to the type you desire. Afterwards, you can even drag the "
 "object output to get full completion."
 msgstr ""
+"Це корисний і часто використовуваний вузол. Ви можете використовувати його "
+"для переведення аргументів, або інших об'єктів, до потрібного вам типу. "
+"Після цього ви навіть можете перетягнути вихід об'єкта для повного "
+"завершення."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:372
 msgid ""
 "It is also possible to cast to a script, which will allow complete script "
 "properties and functions:"
 msgstr ""
+"Також можливий переведення в скрипт, що дозволить отримати всі властивості "
+"та функції скрипту:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:378
 msgid "Switch"
@@ -570,16 +744,20 @@ msgid ""
 "The Switch node is similar to the Condition node, but it matches many values "
 "at the same time."
 msgstr ""
+"Вузол Switch (Перемикач) схожий на вузол Condition (Умова), але він "
+"перевіряє багато значень одночасно."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr "Поки"
+msgstr "While"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:386
 msgid ""
 "This is a more primitive form of iteration. \"repeat\" sequence output will "
 "be called as long as the condition in the \"cond\" data port is met."
 msgstr ""
+"Це більш примітивна форма ітерації. Порт послідовності \"repeat\" буде "
+"викликатися до тих пір, поки не буде виконана умова в порту даних \"cond\"."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 msgid "Functions"
@@ -590,10 +768,13 @@ msgid ""
 "Functions are simple helpers, most of the time deterministic. They take some "
 "arguments as input and return an output. They are almost never sequenced."
 msgstr ""
+"Функції - це прості помічники, більшість часу детерміновані. Вони беруть "
+"деякі аргументи як вхідні дані і повертають результат. Вони майже ніколи не "
+"впорядковуються (в послідовності)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:398
 msgid "Built-In"
-msgstr ""
+msgstr "Built-In (Вбудовані)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
 msgid ""
@@ -602,6 +783,10 @@ msgid ""
 "functions, but others can be useful helpers. Make sure to take a look at the "
 "list at some point."
 msgstr ""
+"Є список вбудованих помічників. Список майже ідентичний списку з :ref:"
+"`GDScript<class_@GDScript>`. Більшість з них є математичними функціями, але "
+"деякі можуть бути корисними помічниками. Обов'язково подивіться список при "
+"нагоді."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:404
 msgid "By Type"
@@ -613,6 +798,10 @@ msgid ""
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
 "most cases just search the list of nodes, it should be faster."
 msgstr ""
+"Це методи, доступні для основних типів. Наприклад, якщо ви хочете крапковий "
+"продукт, ви можете шукати \"dot\" (\"крапка\") замість категорії Vector3. У "
+"більшості випадків використовуйте пошуковий рядок в списку вузлів, це буде "
+"скоріше."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:411
 msgid "Call"
@@ -623,10 +812,13 @@ msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
 msgstr ""
+"Call (Виклик) це основний вузол виклику. Він рідко використовується "
+"безпосередньо, але його можна перетягнути на порожній простір на вже "
+"налаштований вузол."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr ""
+msgstr "Конструктори"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -634,6 +826,9 @@ msgid ""
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
 "be used."
 msgstr ""
+"Конструктори (Constructor) це всі функції, необхідні для створення основних "
+"типів даних Godot. Наприклад, якщо вам потрібно створити Vector3 з 3 дійсних "
+"чисел, потрібно використовувати конструктор."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:425
 msgid "Destructor"
@@ -644,30 +839,37 @@ msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
 msgstr ""
+"Це протилежність Конструктора, дозволяє розділити будь-який базовий тип "
+"(наприклад, Vector3) на його піделементи."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:433
 msgid "Emit Signal"
-msgstr ""
+msgstr "Emit Signal (Випромінювання сигналу)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid ""
 "Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
+"Випромінює сигнали з будь-якого об'єкта. Але просте перетягування сигналу на "
+"полотно зручніше."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:439
 msgid "Get/Set"
-msgstr ""
+msgstr "Get/Set (Отримувати/Задавати)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
 msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
+"Спільний вузол Getter/Setter. Знову ж таки, зручніше перетягування "
+"властивостей з Інспектора, оскільки тоді вони здаються належним чином "
+"налаштованими."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
-msgstr "Wait"
+msgstr "Wait (Очікування)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid ""
@@ -676,16 +878,22 @@ msgid ""
 "you to wait for a frame to pass, a fixed frame or a given amount of time "
 "until execution is resumed."
 msgstr ""
+"Вузли Wait призупиняють виконання функції, поки щось не відбудеться (зупинка "
+"може тривати не один кадр). Вузли за замовчуванням дозволяють зачекати, "
+"завершення кадру, фіксованого кадру або заданий проміжок часу, до "
+"відновлення виконання."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 msgid "Yield"
-msgstr "Yield"
+msgstr "Yield (Вихід)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
 "This node completely suspends the execution of the script, and it will make "
 "the function return a value that can be used to resume execution."
 msgstr ""
+"Цей вузол повністю призупиняє виконання скрипту, а його функція буде "
+"повертати значення, яке можна використовувати для відновлення виконання."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:458
 msgid "Yield Signal"
@@ -693,17 +901,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Same as Yield, but will wait until a given signal is emitted."
-msgstr ""
+msgstr "Те саме, що і Yield, але буде чекати, поки подається заданий сигнал."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
-msgstr ""
+msgstr "Index (Індекс)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
 msgstr ""
+"Загальний оператор індексації, не часто використовується, але добре, що він "
+"існує (на всякий випадок)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:470
 msgid "Operators"
@@ -717,10 +927,15 @@ msgid ""
 "the operator). It is always recommended to set the right type for operators "
 "to catch errors faster and make the graph easier to read."
 msgstr ""
+"Це здебільшого загальні оператори, такі як додавання, множення, порівняння "
+"тощо. За замовчуванням вони в основному приймають будь-який тип даних (і "
+"видадуть помилку під час виконання, якщо типи, що подаються, не відповідають "
+"тим, які очікує оператор). Завжди рекомендується встановити правильний тип "
+"для операторів, щоб швидше вловлювати помилки та полегшити читання графіка."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:481
 msgid "Expression Node"
-msgstr ""
+msgstr "Expression Node (Вузол виразу)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid ""
@@ -728,20 +943,26 @@ msgid ""
 "used, it allows you to enormously simplify visual scripts that are math or "
 "logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
+"Серед операторів вузол *Expression* є найпотужнішим. Якщо його правильно "
+"використовувати, він дозволяє надзвичайно спростити візуальні скрипти, які "
+"важкі для математики, чи логіки. Введіть в нього будь-який вираз, і він буде "
+"виконуватися в режимі реального часу."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:486
 msgid "Expression nodes can:"
-msgstr ""
+msgstr "Вузли виразів можуть:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
 msgstr ""
+"Виконувати математичні та логічні вирази на основі введень користувача "
+"(наприклад: \"a* 5+b\", де a і b - введення користувача):"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:493
 msgid "Access local variables or properties:"
-msgstr ""
+msgstr "Мати доступ до локальних змінних, чи властивостей:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:498
 msgid ""
@@ -749,13 +970,18 @@ msgid ""
 "such as sin(),cos(),print(), as well as constructors, such as Vector3(x,y,z),"
 "Rect2(..), etc.:"
 msgstr ""
+"Використовувати більшість наявних вбудованих функцій, доступних для "
+"GDScript, таких як sin(), cos(), print(), а також конструктори, такі як "
+"Vector3(x, y, z), Rect2(..), тощо:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503
 msgid "Call API functions:"
-msgstr ""
+msgstr "Викликати функції API:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:508
 msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"
 msgstr ""
+"Використовувати режим послідовностей, який має більше сенсу у випадку "
+"дотримання порядку обробки:"

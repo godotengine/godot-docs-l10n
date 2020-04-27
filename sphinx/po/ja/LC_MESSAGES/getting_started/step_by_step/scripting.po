@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,10 +225,11 @@ msgstr ""
 "全に機能します。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
+#, fuzzy
 msgid ""
 "This language is the best choice for performance and does not need to be "
 "used throughout an entire game, as other parts can be written in GDScript or "
-"Visual Script. However the API is clear and easy to use as it resembles, "
+"Visual Script. However, the API is clear and easy to use as it resembles, "
 "mostly, Godot's actual C++ API."
 msgstr ""
 "この言語はパフォーマンスに最適な選択肢であり、ゲーム全体で使用する必要はあり"
@@ -284,13 +285,12 @@ msgid "Scene setup"
 msgstr "シーンの設定"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
-#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
-"シーンタブから「子ノードの追加」ダイアログにアクセスし (または ``Ctrl+A`` を"
-"押して)、次のノードを持つ階層を作成します:"
+"シーンタブから「子ノードの追加」ダイアログにアクセスし (または :kbd:`Ctrl + "
+"A` を押して)、次のノードを持つ階層を作成します:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
 msgid "Panel"
@@ -302,7 +302,7 @@ msgstr "\\ Label"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr "\\ Button"
+msgstr "Button"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"

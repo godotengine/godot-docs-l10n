@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -557,12 +557,13 @@ msgid "Converting a rotation to quaternion is straightforward."
 msgstr "Convertir une rotation en quaternion est très simple."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:383
+#, fuzzy
 msgid ""
 "The :ref:`class_Quat` type reference has more information on the datatype "
 "(it can also do transform accumulation, transform points, etc., though this "
 "is used less often). If you interpolate or apply operations to quaternions "
-"many times, keep in mind they need to be eventually normalized or they also "
-"may suffer from numerical precision errors."
+"many times, keep in mind they need to be eventually normalized. Otherwise, "
+"they will also suffer from numerical precision errors."
 msgstr ""
 "La référence de type: ref: `class_Quat` contient plus d'informations sur le "
 "type de données (elle peut également faire de l'accumulation de transformée, "
@@ -572,7 +573,7 @@ msgstr ""
 "normalisés, sinon ils risquent également de présenter des erreurs de "
 "précision numérique."
 
-#: ../../docs/tutorials/3d/using_transforms.rst:385
+#: ../../docs/tutorials/3d/using_transforms.rst:389
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
@@ -580,11 +581,11 @@ msgstr ""
 "Les quaternions sont utiles pour les interpolations caméra/chemin/etc. car "
 "le résultat sera toujours correct et lisse."
 
-#: ../../docs/tutorials/3d/using_transforms.rst:388
+#: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid "Transforms are your friend"
 msgstr "Les transformations sont vos amies"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:390
+#: ../../docs/tutorials/3d/using_transforms.rst:394
 msgid ""
 "For most beginners, getting used to working with transforms can take some "
 "time. However, once you get used to them, you will appreciate their "
@@ -594,7 +595,7 @@ msgstr ""
 "transformations peut prendre un certain temps. Cependant, une fois que vous "
 "vous y serez habitué, vous apprécierez leur simplicité et leur puissance."
 
-#: ../../docs/tutorials/3d/using_transforms.rst:392
+#: ../../docs/tutorials/3d/using_transforms.rst:396
 msgid ""
 "Don't hesitate to ask for help on this topic in any of Godot's `online "
 "communities <https://godotengine.org/community>`_ and, once you become "

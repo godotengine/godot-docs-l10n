@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -305,9 +305,10 @@ msgid "Vertex Color"
 msgstr "Vertex Color(頂点色)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:144
+#, fuzzy
 msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
-"come from your 3D modelling application. By default they are ignored."
+"come from your 3D modelling application. By default, they are ignored."
 msgstr ""
 "この設定では、3D モデリング アプリケーションから取得した頂点色に対して既定で"
 "実行される処理を選択できます。デフォルトでは、それらは無視されます。"
@@ -934,11 +935,69 @@ msgstr ""
 "るDetailテクスチャを生成することができます。これをセカンダリUV または"
 "Triplanarモードと組み合わせることで、多くの興味深いテクスチャを実現できます。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:466
+#: ../../docs/tutorials/3d/spatial_material.rst:465
+msgid "There are several settings that control how detail is used."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:467
+msgid ""
+"Mask: The detail mask is a black and white image used to control where the "
+"blending takes place on a texture. White is for the detail textures, Black "
+"is for the regular material textures, different shades of gray are for "
+"partial blending of the material textures and detail textures."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:472
+msgid ""
+"Blend Mode: These four modes control how the textures are blended together."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:474
+msgid ""
+"Mix: Combines pixel values of both textures. At black, only show the "
+"material texture, at white, only show the detail texture. Values of gray "
+"create a smooth blend between the two."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:478
+msgid ""
+"Add: Adds pixel values of one Texture with the other. Unlike mix mode both "
+"textures are completely mixed at white parts of a mask and not at gray "
+"parts. The original texture is mostly unchanged at black"
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:482
+msgid ""
+"Sub: Subtracts pixel values of one texture with the other. The second "
+"texture is completely subtracted at white parts of a mask with only a little "
+"subtraction in black parts, gray parts being different levels of subtraction "
+"based on the exact texture."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:487
+msgid ""
+"Mul: Multiplies the RGB channel numbers for each pixel from the top texture "
+"with the values for the corresponding pixel from the bottom texture."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:490
+msgid ""
+"Albedo: This is where you put an albedo texture you want to blend. If "
+"nothing is in this slot it will be interpreted as white by default."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:493
+msgid ""
+"Normal: This is where you put a normal texture you want to blend. If nothing "
+"is in this slot it will be interpreted as a flat normal map. This can still "
+"be used even if the material does not have normal map enabled."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:498
 msgid "UV1 and UV2"
 msgstr "UV1 and UV2(UV1およびUV2)"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:468
+#: ../../docs/tutorials/3d/spatial_material.rst:500
 msgid ""
 "Godot supports two UV channels per material. Secondary UV is often useful "
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
@@ -949,11 +1008,11 @@ msgstr ""
 "スケーリングとオフセットが可能で、繰り返しテクスチャを使用する場合に便利で"
 "す。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:473
+#: ../../docs/tutorials/3d/spatial_material.rst:505
 msgid "Triplanar Mapping"
 msgstr "Triplanar Mapping(三面マッピング)"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:475
+#: ../../docs/tutorials/3d/spatial_material.rst:507
 msgid ""
 "Triplanar mapping is supported for both UV1 and UV2. This is an alternative "
 "way to obtain texture coordinates, sometimes called \"Autotexture\". "
@@ -965,7 +1024,7 @@ msgstr ""
 "チャは、X、Y、Zでサンプリングされ、法線によってブレンドされます。 Triplanar"
 "マッピングは、ワールド空間またはオブジェクト空間で実行できます。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:480
+#: ../../docs/tutorials/3d/spatial_material.rst:512
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
@@ -974,11 +1033,11 @@ msgstr ""
 "る方法を確認できるため、レンガのテクスチャはそれらの間でスムーズに連続してい"
 "ます。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:486
+#: ../../docs/tutorials/3d/spatial_material.rst:518
 msgid "Proximity and distance fade"
 msgstr "Proximity and distance fade(近接および距離でのフェード)"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:488
+#: ../../docs/tutorials/3d/spatial_material.rst:520
 msgid ""
 "Godot allows materials to fade by proximity to each other as well as "
 "depending on the distance from the viewer. Proximity fade is useful for "
@@ -991,7 +1050,7 @@ msgstr ""
 "にブレンドされた水の塊などの効果に役立ちます。Distanceフェードは、特定の距離"
 "より後にのみ存在するライトシャフトまたはインジケーターに役立ちます。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:494
+#: ../../docs/tutorials/3d/spatial_material.rst:526
 msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for an "
 "entire scene is usually not a good idea."
@@ -999,11 +1058,11 @@ msgstr ""
 "これらを有効にするとアルファブレンディングが有効になるので、通常、シーン全体"
 "で乱用することはお勧めできません。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:500
+#: ../../docs/tutorials/3d/spatial_material.rst:532
 msgid "Render priority"
 msgstr "Render priority(レンダリングの優先度)"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:502
+#: ../../docs/tutorials/3d/spatial_material.rst:534
 msgid ""
 "The rendering order of objects can be changed, although this is mostly "
 "useful for transparent objects (or opaque objects that perform depth draw "

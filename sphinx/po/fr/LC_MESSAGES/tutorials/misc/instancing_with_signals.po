@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:4
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:1
+#, fuzzy
+msgid "Signal"
+msgstr "Signaux"
+
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:7
 msgid "Instancing with signals"
 msgstr "Instanciation avec des signaux"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:6
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:9
 msgid ""
 "Signals provide a way to decouple game objects, allowing you to avoid "
 "forcing a fixed arrangement of nodes. One sign that a signal might be called "
@@ -31,16 +36,27 @@ msgid ""
 "instancing objects at runtime and may want to place them in an arbitrary "
 "location in the running scene tree."
 msgstr ""
-
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:13
-msgid "Below we'll consider an example of such a situation: firing bullets."
-msgstr ""
+"Les signaux fournissent un moyen de découpler les objets du jeu, ce qui vous "
+"permet d'éviter de forcer un arrangement fixe de nœuds. Un signe qu'un "
+"signal peut être appelé est lorsque vous vous trouvez en train d'utiliser "
+"``get_parent()``. Se référer directement au parent d'un noeud signifie que "
+"vous ne pouvez pas facilement déplacer ce noeud à un autre endroit de "
+"l'arbre de scènes. Cela peut être particulièrement problématique lorsque "
+"vous instanciez des objets au moment de l'exécution et que vous souhaitez "
+"les placer à un endroit arbitraire dans l'arbre de scènes en cours "
+"d'exécution."
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:16
+msgid "Below we'll consider an example of such a situation: firing bullets."
+msgstr ""
+"Nous allons examiner ci-dessous un exemple d'une telle situation : tirer des "
+"balles."
+
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:19
 msgid "Shooting example"
 msgstr "Exemple de tir :"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:18
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:21
 msgid ""
 "Consider a player character that can rotate and shoot towards the mouse. "
 "Every time the mouse button is clicked, we create an instance of the bullet "
@@ -51,13 +67,15 @@ msgstr ""
 "de la balle à l'emplacement du joueur. Voir :ref:`doc_instancing` pour plus "
 "de détails."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:22
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:25
 msgid ""
 "We'll use an ``Area2D`` for the bullet, which moves in a straight line at a "
 "given velocity:"
 msgstr ""
+"Nous allons utiliser une ``Area2D`` pour la balle, qui se déplace en ligne "
+"droite a une vitesse donnée :"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:47
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:50
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
@@ -65,7 +83,7 @@ msgstr ""
 "Cependant, si les balles sont ajoutées en tant qu'enfants du joueur, elles "
 "resteront \"attachées\" au joueur lors de sa rotation :"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:52
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:55
 msgid ""
 "Instead, we need the bullets to be independent of the player's movement - "
 "once fired, they should continue traveling in a straight line and the player "
@@ -81,12 +99,12 @@ msgstr ""
 "d'ajouter la balle en tant qu'enfant de la scène de jeu \"principale\", qui "
 "peut être le parent du joueur ou même plus haut dans l'arbre."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:58
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:61
 msgid "You could do this by adding the bullet to the main scene directly:"
 msgstr ""
 "Vous pouvez le faire en ajoutant directement la balle à la scène principale :"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:71
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:74
 msgid ""
 "However, this will lead to a different problem. Now if you try to test your "
 "\"Player\" scene independently, it will crash on shooting, because there is "
@@ -103,7 +121,7 @@ msgstr ""
 "votre scène principale, le parent du joueur risque de ne plus être le nœud "
 "approprié pour recevoir les balles."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:78
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:81
 msgid ""
 "The solution to this is to use a signal to \"emit\" the bullets from the "
 "player. The player then has no need to \"know\" what happens to the bullets "
@@ -115,12 +133,12 @@ msgstr ""
 "balles après cela. Quel que soit le nœud connecté au signal, il peut "
 "\"recevoir\" les balles et prendre les mesures appropriées pour les générer."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:83
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:86
 msgid "Here is the code for the player using signals to emit the bullet:"
 msgstr ""
 "Voici le code pour le joueur utilisant des signaux pour émettre la balle :"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:128
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:131
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
@@ -128,7 +146,7 @@ msgstr ""
 "Dans la scène principale, nous connectons ensuite le signal du joueur (celui-"
 "ci apparaîtra dans l'onglet \"Nœud\")."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:152
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:155
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"

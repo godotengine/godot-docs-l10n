@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,44 +28,57 @@ msgstr "Pré-requis"
 #: ../../docs/development/compiling/compiling_for_osx.rst:11
 msgid "For compiling under macOS, the following is required:"
 msgstr ""
+"Pour la compilation sous macOS, les éléments suivants sont nécessaires :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:13
-msgid "Python 3.5+ (recommended) or Python 2.7+."
-msgstr ""
+#, fuzzy
+msgid "`Python 3.5+ <https://www.python.org>`_."
+msgstr "`Python 2.7+ ou Python 3.5+ <https://www.python.org/>`__"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:14
-msgid "`SCons <https://www.scons.org>`_ build system."
-msgstr ""
+#, fuzzy
+msgid "`SCons 3.0+ <https://www.scons.org>`_ build system."
+msgstr "`SCons <https://www.scons.org>`_ système de construction(build)."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:15
 msgid ""
 "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more "
 "lightweight Command Line Tools for Xcode)."
 msgstr ""
+"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (ou les outils en "
+"ligne de commande plus légers pour Xcode)."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:17
 msgid ""
 "*Optional* - `yasm <https://yasm.tortall.net/>`_ (for WebM SIMD "
 "optimizations)."
 msgstr ""
+"*Facultatif* - `yasm <https://yasm.tortall.net/>`_ (pour les optimisations "
+"de WebM SIMD)."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:19
 msgid ""
 "If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install "
 "SCons and yasm using the following command::"
 msgstr ""
+"Si vous avez installé `Homebrew <https://brew.sh/>`_, vous pouvez facilement "
+"installer SCons et yasm en utilisant la commande suivante :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:24
 msgid ""
 "Installing Homebrew will also fetch the Command Line Tools for Xcode "
 "automatically if you don't have them already."
 msgstr ""
+"L'installation de Homebrew permet également de récupérer automatiquement les "
+"outils de ligne de commande pour Xcode si vous ne les avez pas déjà."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:27
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
+"Pour un aperçu général de l'utilisation de SCons pour Godot, voir :ref:"
+"`doc_introduction_to_the_buildsystem`."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:31
 msgid "Compiling"
@@ -76,6 +89,8 @@ msgid ""
 "Start a terminal, go to the root directory of the engine source code and "
 "type::"
 msgstr ""
+"Démarrez un terminal, allez dans le dossier racine du code source du moteur "
+"et tapez :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:37
 msgid ""
@@ -84,60 +99,93 @@ msgid ""
 "runs without any dependencies. Executing it will bring up the project "
 "manager."
 msgstr ""
+"Si tout se passe bien, l'exécutable binaire résultant sera placé dans le "
+"sous-dossier ``bin/``. Ce fichier exécutable contient l'ensemble du moteur "
+"et fonctionne sans aucune dépendance. En l'exécutant, le gestionnaire de "
+"projet apparaîtra."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:42
 msgid ""
-"To create an .app like in the official builds, you need to use the template "
-"located in ``misc/dist/osx_tools.app``. Typically, for an optimized editor "
-"binary built with ``scons p=osx target=release_debug``::"
+"If you want to use separate editor settings for your own Godot builds and "
+"official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
+"by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:52
+#: ../../docs/development/compiling/compiling_for_osx.rst:47
 #, fuzzy
-msgid "Cross-compiling for macOS from Linux"
-msgstr "Compiler pour macOS"
+msgid ""
+"To create an ``.app`` bundle like in the official builds, you need to use "
+"the template located in ``misc/dist/osx_tools.app``. Typically, for an "
+"optimized editor binary built with ``scons p=osx target=release_debug``::"
+msgstr ""
+"Pour créer un .app comme dans les builds officielles, vous devez utiliser le "
+"modèle situé dans ``misc/dist/osx_tools.app``. Typiquement, pour un éditeur "
+"binaire optimisé construit avec ``scons p=osx target=release_debug`` :"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:54
+#: ../../docs/development/compiling/compiling_for_osx.rst:57
+msgid "Cross-compiling for macOS from Linux"
+msgstr "Compilation croisée pour macOS à partir de Linux"
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:59
 msgid ""
 "It is possible to compile for macOS in a Linux environment (and maybe also "
 "in Windows using the Windows Subsystem for Linux). For that, you'll need to "
 "install `OSXCross <https://github.com/tpoechtrager/osxcross>`__ to be able "
 "to use macOS as a target. First, follow the instructions to install it:"
 msgstr ""
+"Il est possible de compiler pour macOS dans un environnement Linux (et peut-"
+"être aussi dans Windows en utilisant le sous-système Windows pour Linux). "
+"Pour cela, vous devrez installer `OSXCross <https://github.com/tpoechtrager/"
+"osxcross>`__ pour pouvoir utiliser macOS comme cible. Tout d'abord, suivez "
+"les instructions pour l'installer :"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:59
+#: ../../docs/development/compiling/compiling_for_osx.rst:64
 msgid ""
 "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ "
 "somewhere on your machine (or download a ZIP file and extract it somewhere), "
 "e.g.::"
 msgstr ""
+"Clonez le `dépôt OSXCross <https://github.com/tpoechtrager/osxcross>`__ "
+"quelque part sur votre machine (ou téléchargez un fichier ZIP et extrayez-le "
+"quelque part), par exemple :"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:65
+#: ../../docs/development/compiling/compiling_for_osx.rst:70
 msgid ""
 "Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
 "osxcross#packaging-the-sdk"
 msgstr ""
+"Suivez les instructions pour empaqueter le SDK : https://github.com/"
+"tpoechtrager/osxcross#packaging-the-sdk"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:67
+#: ../../docs/development/compiling/compiling_for_osx.rst:72
 msgid ""
 "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
 "osxcross#installation"
 msgstr ""
+"Suivez les instructions pour installer OSXCross : https://github.com/"
+"tpoechtrager/osxcross#installation"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:70
+#: ../../docs/development/compiling/compiling_for_osx.rst:75
 msgid ""
 "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the "
 "OSXCross installation (the same place where you cloned the repository/"
 "extracted the zip), e.g.::"
 msgstr ""
+"Ensuite, vous devrez définir ``OSXCROSS_ROOT`` comme le chemin vers "
+"l'installation d'OSXCross (le même endroit où vous avez cloné le dépôt/"
+"extrait le zip), par exemple :"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:76
+#: ../../docs/development/compiling/compiling_for_osx.rst:81
 msgid "Now you can compile with SCons like you normally would::"
 msgstr ""
+"Vous pouvez maintenant compiler avec SCons comme vous le feriez normalement :"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:80
+#: ../../docs/development/compiling/compiling_for_osx.rst:85
 msgid ""
 "If you have an OSXCross SDK version different from the one expected by the "
 "SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` "
 "argument::"
 msgstr ""
+"Si vous avez une version du SDK OSXCross différente de celle attendue par le "
+"système de construction(build) SCons, vous pouvez en spécifier une "
+"personnalisée avec l'argument ``osxcross_sdk`` :"

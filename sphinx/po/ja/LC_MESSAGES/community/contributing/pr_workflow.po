@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,10 +53,11 @@ msgstr ""
 "\\ ブランチ) の一部になります。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:22
+#, fuzzy
 msgid ""
 "We will go together through an example to show the typical workflow and "
 "associated Git commands. But first, let's have a quick look at the "
-"organisation of Godot's Git repository."
+"organization of Godot's Git repository."
 msgstr ""
 "一般的なワークフローと関連するGit コマンドを示す例をまとめます。しかし、ま"
 "ず、GodotのGitリポジトリの組織を簡単に見てみましょう。"
@@ -746,8 +747,9 @@ msgstr ""
 "取得します。リモートブランチにプッシュしようとすると、エラーが発生します:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:445
+#, fuzzy
 msgid ""
-"This is a sane behaviour, Git will not let you push changes that would "
+"This is a sane behavior, Git will not let you push changes that would "
 "override remote content. But that's actually what we want to do here, so we "
 "will have to *force* it:"
 msgstr ""

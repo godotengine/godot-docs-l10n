@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,7 +210,6 @@ msgstr ""
 "イル構造を作成します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:126
-#, fuzzy
 msgid ""
 "Open up Godot and create a new project called \"simple\" alongside your "
 "``godot_headers`` Git clone. This will create the ``simple`` folder and "
@@ -219,8 +218,8 @@ msgid ""
 msgstr ""
 "Godotを開き、 ``godot_headers`` のGitクローンを含めた\"simple\" という新しい"
 "プロジェクトを作成します。これにより、 ``simple`` フォルダと ``project."
-"godot`` ファイルが作成されます。次に、このフォルダに ``bin`` および ``src`` "
-"サブフォルダを手動で作成します。"
+"godot`` ファイルが作成されます。次に、\\ ``simple`` フォルダと ``src`` フォル"
+"ダを手動で作成し、\\ ``simple`` フォルダに ``bin`` サブフォルダを作成します。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:131
 msgid ""
@@ -342,8 +341,9 @@ msgstr ""
 "は、単にAPIポインタをクリアします。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:218
+#, fuzzy
 msgid ""
-"Finally we have ``nativescript_init`` which is the most important function "
+"Finally, we have ``nativescript_init`` which is the most important function "
 "we'll need today. This function will be called by Godot as part of loading a "
 "GDNative library and communicates back to the engine what objects we make "
 "available."
@@ -557,7 +557,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:388
 msgid "Creating the GDNativeLibrary (``.gdnlib``) file"
-msgstr "GDNativeLibrary( ``.gdnlib``)ファイルの作成"
+msgstr "GDNativeLibrary(``.gdnlib``)ファイルの作成"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:390
 msgid ""
@@ -764,7 +764,8 @@ msgstr ""
 "し、\\ ``.gdnlib`` ファイルを選択する必要があります:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:513
-msgid "Finally click on the save icon and save this as ``bin/simple.gdns``:"
+#, fuzzy
+msgid "Finally, click on the save icon and save this as ``bin/simple.gdns``:"
 msgstr ""
 "最後に保存アイコンをクリックし、これを ``bin/simple.gdns`` として保存します:"
 

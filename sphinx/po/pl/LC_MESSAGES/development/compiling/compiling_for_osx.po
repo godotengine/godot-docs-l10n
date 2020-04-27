@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,12 +33,12 @@ msgstr "By kompilować pod Windowsem, następujące kroki są wymagane:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:13
 #, fuzzy
-msgid "Python 3.5+ (recommended) or Python 2.7+."
-msgstr "Python 2.7+ lub Python 3.5+"
+msgid "`Python 3.5+ <https://www.python.org>`_."
+msgstr "`Python 2.7+ lub Python 3.5+ <https://www.python.org/>`__"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:14
 #, fuzzy
-msgid "`SCons <https://www.scons.org>`_ build system."
+msgid "`SCons 3.0+ <https://www.scons.org>`_ build system."
 msgstr "System budowania `SCons <https://www.scons.org>`__."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:15
@@ -96,17 +96,24 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:42
 msgid ""
-"To create an .app like in the official builds, you need to use the template "
-"located in ``misc/dist/osx_tools.app``. Typically, for an optimized editor "
-"binary built with ``scons p=osx target=release_debug``::"
+"If you want to use separate editor settings for your own Godot builds and "
+"official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
+"by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:52
+#: ../../docs/development/compiling/compiling_for_osx.rst:47
+msgid ""
+"To create an ``.app`` bundle like in the official builds, you need to use "
+"the template located in ``misc/dist/osx_tools.app``. Typically, for an "
+"optimized editor binary built with ``scons p=osx target=release_debug``::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:57
 #, fuzzy
 msgid "Cross-compiling for macOS from Linux"
 msgstr "Kompilacja dla OSX"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:54
+#: ../../docs/development/compiling/compiling_for_osx.rst:59
 msgid ""
 "It is possible to compile for macOS in a Linux environment (and maybe also "
 "in Windows using the Windows Subsystem for Linux). For that, you'll need to "
@@ -114,37 +121,37 @@ msgid ""
 "to use macOS as a target. First, follow the instructions to install it:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:59
+#: ../../docs/development/compiling/compiling_for_osx.rst:64
 msgid ""
 "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ "
 "somewhere on your machine (or download a ZIP file and extract it somewhere), "
 "e.g.::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:65
+#: ../../docs/development/compiling/compiling_for_osx.rst:70
 msgid ""
 "Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
 "osxcross#packaging-the-sdk"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:67
+#: ../../docs/development/compiling/compiling_for_osx.rst:72
 msgid ""
 "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
 "osxcross#installation"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:70
+#: ../../docs/development/compiling/compiling_for_osx.rst:75
 msgid ""
 "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the "
 "OSXCross installation (the same place where you cloned the repository/"
 "extracted the zip), e.g.::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:76
+#: ../../docs/development/compiling/compiling_for_osx.rst:81
 msgid "Now you can compile with SCons like you normally would::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:80
+#: ../../docs/development/compiling/compiling_for_osx.rst:85
 msgid ""
 "If you have an OSXCross SDK version different from the one expected by the "
 "SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` "

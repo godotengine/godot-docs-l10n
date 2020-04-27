@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:4
-msgid "Signals"
+#: ../../docs/getting_started/step_by_step/signals.rst:1
+#, fuzzy
+msgid "Signal"
 msgstr "Signale"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
+msgid "Signals"
+msgstr "Signale"
+
+#: ../../docs/getting_started/step_by_step/signals.rst:10
 msgid "Introduction"
 msgstr "Einführung"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:9
+#: ../../docs/getting_started/step_by_step/signals.rst:12
 msgid ""
 "Signals are Godot's version of the *observer* pattern. They allow a node to "
 "send out a message that other nodes can listen for and respond to. For "
@@ -37,15 +42,16 @@ msgstr ""
 "und auf diese zu antworten. Anstatt beispielsweise ständig zu überprüfen, ob "
 "eine Taste gedrückt wird, kann die Taste bei Betätigung ein Signal senden."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:14
+#: ../../docs/getting_started/step_by_step/signals.rst:17
+#, fuzzy
 msgid ""
-"You can read more about the observer pattern here: http://"
+"You can read more about the observer pattern here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
 "Weitere Informationen zum Beobachtermuster findest Du hier: http://"
 "gameprogrammingpatterns.com/observer.html"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:16
+#: ../../docs/getting_started/step_by_step/signals.rst:19
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
@@ -58,7 +64,7 @@ msgstr ""
 "sie stattdessen Signale aussenden, sodass jedes andere verknüpfte Objekt "
 "darauf antworten kann."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:21
+#: ../../docs/getting_started/step_by_step/signals.rst:24
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
@@ -66,11 +72,11 @@ msgstr ""
 "Nachfolgend findest Du einige Beispiele, wie Du Signale in Deinen eigenen "
 "Projekten verwenden kannst."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:24
+#: ../../docs/getting_started/step_by_step/signals.rst:27
 msgid "Timer example"
 msgstr "Timer Beispiel"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:26
+#: ../../docs/getting_started/step_by_step/signals.rst:29
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
@@ -81,7 +87,7 @@ msgstr ""
 "Unterelementen: einem \"Timer\" und einem :ref:`Sprite <class_Sprite>`. "
 "Benenne Node2D im Szenendock zu TimerExample um."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:30
+#: ../../docs/getting_started/step_by_step/signals.rst:33
 msgid ""
 "For the Sprite's texture, you can use the Godot icon, or any other image you "
 "like. Do so by selecting ``Load`` in the Sprite's Texture attribute drop-"
@@ -93,11 +99,11 @@ msgstr ""
 "des Sprites den Punkt ``Load`` im Drop-Down Menü auswählst. Füge der "
 "Wurzelnode ein leeres Skript hinzu."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:34
+#: ../../docs/getting_started/step_by_step/signals.rst:37
 msgid "Your scene tree should look like this:"
 msgstr "Der Szenenbaum sollte so aussehen:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:38
+#: ../../docs/getting_started/step_by_step/signals.rst:41
 msgid ""
 "In the Timer node's properties, check the \"On\" box next to *Autostart*. "
 "This will cause the timer to start automatically when you run the scene. You "
@@ -107,7 +113,7 @@ msgstr ""
 "neben *Autostart*. Dadurch wird der Timer automatisch gestartet, wenn Du die "
 "Szene startest. Du kannst die *Wartezeit* auf 1 Sekunde belassen."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:42
+#: ../../docs/getting_started/step_by_step/signals.rst:45
 msgid ""
 "Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
 "and you'll see all of the signals that the selected node can emit. In the "
@@ -120,7 +126,7 @@ msgstr ""
 "handelt es sich um den \"Timeout\". Dieses Signal wird immer dann "
 "ausgegeben, wenn der Timer \"0\" erreicht."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:49
+#: ../../docs/getting_started/step_by_step/signals.rst:52
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
 "the signals panel. You'll see the following window, where you can define how "
@@ -130,7 +136,7 @@ msgstr ""
 "auf \"Verbinden...\". Im folgenden Fenster kann definiert werden, wie das "
 "Signal verbunden werden soll:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:55
+#: ../../docs/getting_started/step_by_step/signals.rst:58
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is "
@@ -142,7 +148,7 @@ msgstr ""
 "blau ist. Dies ist ein visueller Hinweis darauf, dass der Node das Signal "
 "aussendet. Wähle den Wurzel-Node aus."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:60
+#: ../../docs/getting_started/step_by_step/signals.rst:63
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
@@ -150,7 +156,7 @@ msgstr ""
 "Der Ziel-Node *muss* mit einem Skript verbunden sein oder es wird eine "
 "Fehlermeldung angezeigt."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:63
+#: ../../docs/getting_started/step_by_step/signals.rst:66
 msgid ""
 "On the right side, you can bind an arbitrary number of arguments of "
 "(possibly) different types. This can be useful when you have more than one "
@@ -158,7 +164,7 @@ msgid ""
 "in different values for those extra call arguments."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/signals.rst:67
+#: ../../docs/getting_started/step_by_step/signals.rst:70
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
@@ -171,7 +177,7 @@ msgstr ""
 "mit der Namenskonvention ``_on_<node_name>_<signal_name>``, aber Du kannst "
 "sie ändern, wenn Du möchtest."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:72
+#: ../../docs/getting_started/step_by_step/signals.rst:75
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
@@ -179,7 +185,7 @@ msgstr ""
 "Klicke auf \"Verbinden\" und Du siehst, dass die Funktion im Skript erstellt "
 "wurde:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:92
+#: ../../docs/getting_started/step_by_step/signals.rst:96
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
@@ -188,7 +194,7 @@ msgstr ""
 "ausführen möchten, wenn das Signal empfangen wird. Lassen wir das Sprite "
 "blinken:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:116
+#: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
@@ -197,11 +203,11 @@ msgstr ""
 "ausgeschaltet wird. Du kannst die *Wait Time* -Eigenschaft des Timers "
 "verändern, um die Blinkfrequenz zu ändern."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:120
+#: ../../docs/getting_started/step_by_step/signals.rst:125
 msgid "Connecting signals in code"
 msgstr "Signale im Code verbinden"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:122
+#: ../../docs/getting_started/step_by_step/signals.rst:127
 msgid ""
 "You can also make the signal connection in code rather than with the editor. "
 "This is usually necessary when you're instancing nodes via code and so you "
@@ -212,7 +218,7 @@ msgstr ""
 "instanziierst. Daher kannst Du den Editor nicht zum Herstellen der "
 "Verbindung verwenden."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:126
+#: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
@@ -220,7 +226,7 @@ msgstr ""
 "Trenne zunächst das Signal, indem Du die Verbindung in der Registerkarte "
 "\"Node\" des Timers auswählst und dort auf Trennen klickst."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:131
+#: ../../docs/getting_started/step_by_step/signals.rst:136
 msgid ""
 "To make the connection in code, we can use the ``connect`` function. We'll "
 "put it in ``_ready()`` so that the connection will be made on run. The "
@@ -234,15 +240,15 @@ msgstr ""
 "connect(<signal_name>, <target_node>, <target_function_name>)``. Hier ist "
 "der Code für unsere Timer-Verbindung:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:164
+#: ../../docs/getting_started/step_by_step/signals.rst:171
 msgid "Custom signals"
 msgstr "Benutzerdefinierte Signale"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:166
+#: ../../docs/getting_started/step_by_step/signals.rst:173
 msgid "You can also declare your own custom signals in Godot:"
 msgstr "Du kannst auch Deine eigenen Signale in Godot deklarieren:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:184
+#: ../../docs/getting_started/step_by_step/signals.rst:192
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
@@ -251,18 +257,18 @@ msgstr ""
 "Inspektor und können wie die eingebauten Signale eines Nodes verbunden "
 "werden."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:187
+#: ../../docs/getting_started/step_by_step/signals.rst:195
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
 msgstr ""
 "Um ein Signal per Code auszusenden, verwende die Funktion ``emit_signal``:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:212
+#: ../../docs/getting_started/step_by_step/signals.rst:222
 msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/signals.rst:232
+#: ../../docs/getting_started/step_by_step/signals.rst:243
 msgid ""
 "The signal arguments show up in the editor's node dock, and Godot can use "
 "them to generate callback functions for you. However, you can still emit any "
@@ -270,7 +276,7 @@ msgid ""
 "correct values."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/signals.rst:237
+#: ../../docs/getting_started/step_by_step/signals.rst:248
 #, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
@@ -278,11 +284,11 @@ msgid ""
 msgstr ""
 "Um ein Signal per Code auszusenden, verwende die Funktion ``emit_signal``:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:263
+#: ../../docs/getting_started/step_by_step/signals.rst:276
 msgid "Conclusion"
 msgstr "Fazit"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:265
+#: ../../docs/getting_started/step_by_step/signals.rst:278
 msgid ""
 "Many of Godot's built-in node types provide signals you can use to detect "
 "events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
@@ -295,7 +301,7 @@ msgstr ""
 "die Spielerfigur die Kollisions-Form der Münze berührt. Damit weißt Du, das "
 "der Spieler die Münze erreicht hat und einsammeln kann."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:270
+#: ../../docs/getting_started/step_by_step/signals.rst:283
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."

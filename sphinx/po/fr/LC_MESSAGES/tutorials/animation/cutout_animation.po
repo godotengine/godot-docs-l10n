@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,16 +200,15 @@ msgstr ""
 "correctement :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:82
-#, fuzzy
 msgid ""
 "This looks good. Let's see if our hierarchy works as a skeleton by rotating "
 "the torso. We can do this be pressing :kbd:`E` to enter rotate mode, and "
 "dragging with the left mouse button. To exit rotate mode hit :kbd:`ESC`."
 msgstr ""
 "Ça a l'air bon. Voyons si notre hiérarchie fonctionne comme un squelette en "
-"faisant tourner le torse. Nous pouvons faire cela en appuyant sur ``E`` pour "
-"entrer en mode de rotation, et en faisant glisser avec le bouton gauche de "
-"la souris. Pour quitter le mode de rotation, appuyez sur ``ESC``."
+"faisant tourner le torse. Nous pouvons faire cela en appuyant sur :kbd:`E` "
+"pour entrer en mode de rotation, et en faisant glisser avec le bouton gauche "
+"de la souris. Pour quitter le mode de rotation, appuyez sur :kbd:`ESC`."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:88
 msgid "The rotation pivot is wrong and needs to be adjusted."
@@ -234,14 +233,13 @@ msgstr ""
 "Le pivot peut être ajusté en modifiant la propriété *offset* du Sprite :"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:103
-#, fuzzy
 msgid ""
 "The pivot can also be adjusted *visually*. While hovering over the desired "
 "pivot point,  press :kbd:`V` to move the pivot there for the selected "
 "Sprite. There is also a tool in the tool bar that has a similar function."
 msgstr ""
 "Le pivot peut également être ajusté *visuellement*. En survolant le point de "
-"pivot souhaité, appuyez sur la touche \"v\" pour y déplacer le pivot du "
+"pivot souhaité, appuyez sur la touche :kbd:`V` pour y déplacer le pivot du "
 "Sprite sélectionné. Il y a également un outil dans la barre d'outils qui a "
 "une fonction similaire."
 
@@ -303,9 +301,10 @@ msgstr ""
 "nœud distant qu'il cible."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:137
+#, fuzzy
 msgid ""
-"This allows us to correct the visibility order of our elements independent "
-"from the locations of those parts in the cutout hierarchy."
+"This allows us to correct the visibility order of our elements, "
+"independently of the locations of those parts in the cutout hierarchy."
 msgstr ""
 "Cela nous permet de corriger l'ordre de visibilité de nos éléments "
 "indépendamment depuis la place de ces parties dans la hiérarchie du cutout."

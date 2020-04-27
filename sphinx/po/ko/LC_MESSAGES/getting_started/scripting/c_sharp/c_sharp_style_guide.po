@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -371,10 +371,34 @@ msgid "Rather than:"
 msgstr "이것보다는 말이죠,"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
+#, fuzzy
+msgid "Member variables"
+msgstr "멤버 접근"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
+msgid ""
+"Don't declare member variables if they are only used locally in a method, as "
+"it makes the code more difficult to follow. Instead, declare them as local "
+"variables in the method's body."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
+#, fuzzy
+msgid "Local variables"
+msgstr "지역 변수(Local Variables)"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:277
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:282
 msgid "Implicitly typed local variables"
 msgstr "암시적 형식 지역 변수"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:284
 #, fuzzy
 msgid ""
 "Consider using implicitly typing (``var``) for declaration of a local "
@@ -384,19 +408,19 @@ msgstr ""
 "지역 변수의 선언을 위해 암시적 형식 (*'var'*)를 사용하는 것을 생각해보세요, "
 "하지만 할당의 오른쪽에서 **타입이 분명할 때만** 해야합니다:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:314
 msgid "Other considerations"
 msgstr "기타 고려 사항"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:316
 msgid "Use explicit access modifiers."
 msgstr "명시적 접근 모디파이어를 사용하세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:317
 msgid "Use properties instead of non-private fields."
 msgstr "비공개 영역 대신 속성을 사용하세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:318
 #, fuzzy
 msgid ""
 "Use modifiers in this order: ``public``/``protected``/``private``/"
@@ -406,7 +430,7 @@ msgstr ""
 "이 순서로 모디파이어를 사용하세요: *'public/protected/private/internal "
 "virtual/override/abstract/new static readonly'*."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:306
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:320
 #, fuzzy
 msgid ""
 "Avoid using fully-qualified names or ``this.`` prefix for members when it's "
@@ -415,17 +439,17 @@ msgstr ""
 "꼭 필요하지 않다면 완전한 이름이나 멤버에게 *'this.'* 접두사를 사용하지 마세"
 "요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:307
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:321
 #, fuzzy
 msgid "Remove unused ``using`` statements and unnecessary parentheses."
 msgstr "사용하지 않는 *'using'* 명령문과 불필요한 괄호는 지우세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:308
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:322
 #, fuzzy
 msgid "Consider omitting the default initial value for a type."
 msgstr "한 타입에 대한 기본 초기 값을 생략하는 것을 고려하세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:309
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:323
 msgid ""
 "Consider using null-conditional operators or type initializers to make the "
 "code more compact."
@@ -433,7 +457,7 @@ msgstr ""
 "코드를 더 간결하게 만들기 위해 null 조건의 연산자나 타입 이니셜라이저를 사용"
 "하는 것을 고려해보세요."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:310
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:324
 msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
 msgid "The five most useful control nodes to build your games' interface"
 msgstr ""
-"Les cinq nœuds de contrôle les plus utiles pour construire l'interface de "
+"Les cinq nœuds \"Control\" les plus utiles pour construire l'interface de "
 "vos jeux"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
@@ -89,10 +89,11 @@ msgid ""
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
-"Pour concevoir votre interface utilisateur, vous utiliserez les nœuds de "
-"contrôle. Ce sont les nœuds avec des icônes vertes dans l'éditeur. Il y en a "
-"des douzaines, pour créer des barres de vie ou des applications complexes. "
-"L'éditeur de Godot lui-même est construit à l'aide de nœuds de contrôle."
+"Pour concevoir votre interface utilisateur, vous utiliserez les nœuds "
+"\"Control\". Ce sont les nœuds avec des icônes vertes dans l'éditeur. Il y "
+"en a des douzaines, pour créer des barres de vie ou des applications "
+"complexes. L'éditeur de Godot lui-même est construit à l'aide de nœuds "
+"Control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
 msgid ""
@@ -101,11 +102,11 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
-"Les nœuds de contrôle ont des propriétés uniques qui leur permettent de bien "
+"Les nœuds Control ont des propriétés uniques qui leur permettent de bien "
 "fonctionner les uns avec les autres. D'autres nœuds visuels, comme Node2D et "
 "Sprite n'ont pas ces capacités. Donc, pour vous faciliter la vie, utilisez "
-"les nœuds de contrôle autant que possible lors de la création de vos "
-"interfaces utilisateur."
+"les nœuds Control autant que possible lors de la création de vos interfaces "
+"utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
 msgid "All control nodes share the same main properties:"
@@ -113,19 +114,19 @@ msgstr "Tous les nœuds Control partagent les mêmes propriétés principales :"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:38
 msgid "Anchor"
-msgstr "Ancrage"
+msgstr "Anchor (Ancrage)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Bounding rectangle"
-msgstr "Rectangle de délimitation"
+msgstr "Bounding rectangle (Rectangle de délimitation)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Focus and focus neighbor"
-msgstr "Focus et focus voisin"
+msgstr "Focus and focus neighbor (Focus et focus voisin)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 msgid "Size flags"
-msgstr "Drapeaux de taille"
+msgstr "Size flags (Marqueurs de dimension)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Margin"
@@ -281,7 +282,6 @@ msgid "TextureButton"
 msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
-#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 5 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -290,11 +290,11 @@ msgid ""
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
 "**TextureButton** est comme TextureRect, sauf qu'il a cinq emplacements de "
-"texture: un pour chacun des états du bouton. La plupart du temps, vous "
+"texture : un pour chacun des états du bouton. La plupart du temps, vous "
 "utiliserez les textures Normal, Pressed et Hover. La texture Focused est "
 "utile si votre interface réagit à la saisie clavier. Le sixième emplacement "
 "d'image, Click Mask, vous permet de définir la zone cliquable à l'aide d'une "
-"image en noir et blanc de 2 bits."
+"image en noir et blanc de 1-bit."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""

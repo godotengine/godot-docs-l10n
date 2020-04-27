@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,15 +201,16 @@ msgstr ""
 "ことに注意してください。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:174
-#, fuzzy
 msgid "Preprocessor defines"
-msgstr "プロセッサー関数"
+msgstr "プリプロセッサ定義"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:176
 msgid ""
 "Godot has a set of defines that allow you to change your C# code depending "
 "on the environment you are compiling to."
 msgstr ""
+"Godotには、コンパイルする環境に応じてC#コードを変更できる一連の定義がありま"
+"す。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:179
 msgid ""
@@ -217,6 +218,9 @@ msgid ""
 "regenerate your `csproj` file to use this feature (compare "
 "``<DefineConstants>`` with a new 3.2+ project)."
 msgstr ""
+"Godot 3.2より前にプロジェクトを作成した場合、この機能を使用するには、\\ "
+"`csproj` ファイルを変更または再生成する必要があります (``<DefineConstants>`` "
+"を新しい3.2+プロジェクトと比較してください)。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:184
 msgid "Examples"
@@ -224,28 +228,31 @@ msgstr "例"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:186
 msgid "For example, you can change code based on the platform:"
-msgstr ""
+msgstr "たとえば、プラットフォームに基づいてコードを変更できます:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:203
 msgid ""
 "Or you can detect which engine your code is in, useful for making cross-"
 "engine libraries:"
 msgstr ""
+"または、コードがどのエンジンにあるかを検出できます。これは、クロスエンジンラ"
+"イブラリを作成するのに役立ちます:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:219
-#, fuzzy
 msgid "Full list of defines"
-msgstr "以下のヒントの完全なリスト:"
+msgstr "定義の完全なリスト"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:221
 msgid "``GODOT`` is always defined for Godot projects."
-msgstr ""
+msgstr "Godotプロジェクトでは、\\ ``GODOT`` が常に定義されています。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:223
 msgid ""
 "One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the "
 "architecture is 64-bit or 32-bit."
 msgstr ""
+"アーキテクチャが64ビットか32ビットかによって、\\ ``GODOT_64`` または "
+"``GODOT_32`` のいずれかが定義されます。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
 msgid ""
@@ -255,33 +262,47 @@ msgid ""
 "the :ref:``OS <class_OS>`` singleton, but not every possible OS the method "
 "returns is an OS that Godot with Mono runs on."
 msgstr ""
+"OSに応じて、\\ ``GODOT_X11``\\ 、\\ ``GODOT_WINDOWS``\\ 、\\ ``GODOT_OSX``"
+"\\ 、\\ ``GODOT_ANDROID``\\ 、\\ ``GODOT_HTML5``\\ 、または ``GODOT_SERVER`` "
+"のいずれか1つ。これらの名前は将来変更される可能性があります。これらは :ref:"
+"``OS <class_OS>`` シングルトンの ``get_name()`` メソッドから作成されますが、"
+"メソッドが返すすべての利用可能なOSが、Monoを搭載したGodotが実行できるOSという"
+"わけではありません。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:230
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
 "export features:"
-msgstr ""
+msgstr "**エクスポート** する場合、エクスポート機能に応じて以下も定義できます:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
 msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
 "platform type."
 msgstr ""
+"プラットフォームの種類に応じて、\\ ``GODOT_PC``\\ 、\\ ``GODOT_MOBILE``\\ 、"
+"または ``GODOT_WEB`` のいずれか。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
 "depending on the architecture."
 msgstr ""
+"アーキテクチャにのみ依存するAndroid上の ``GODOT_ARM64_V8A`` または "
+"``GODOT_ARMEABI_V7A`` のいずれか。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
 msgid ""
 "One of ``GODOT_S3TC``, ``GODOT_ETC``, or ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
+"テクスチャ圧縮タイプに応じて、\\ ``GODOT_S3TC``\\ 、\\ ``GODOT_ETC``\\ 、また"
+"は ``GODOT_ETC2`` のいずれか。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
 msgid ""
 "Any custom features added in the export menu will be capitalized and "
 "prefixed: ``foo`` -> ``GODOT_FOO``."
 msgstr ""
+"エクスポートメニューに追加されたカスタム機能はすべて大文字になり、接頭辞が付"
+"けられます: ``foo`` → ``GODOT_FOO``\\ 。"

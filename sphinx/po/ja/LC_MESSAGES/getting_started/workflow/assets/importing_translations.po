@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,6 @@ msgid "Translation format"
 msgstr "翻訳形式"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
-#, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
 "has a special importer that can read CSV files. Most spreadsheet editors can "
@@ -99,12 +98,12 @@ msgid ""
 "without a `byte order mark <https://en.wikipedia.org/wiki/"
 "Byte_order_mark>`__."
 msgstr ""
-"画像を完成させ、翻訳を効率的にサポートするために、GodotにはCSVファイルを読み"
-"取ることができる特別なインポーターがあります。すべてのスプレッドシートエディ"
-"タ(Libreoffice、Microsoft Office、Googleドキュメントなど)は、この形式にエクス"
-"ポートすることができるので、唯一の要件は、ファイルが特別な配置を持っているこ"
-"とです。CSV ファイルは UTF-8エンコーディングに保存し、次のようにフォーマット"
-"する必要があります:"
+"画像を完成させ、翻訳を効率的にサポートできるようにするため、GodotにはCSVファ"
+"イルを読み取ることができる特別なインポーターがあります。ほとんどのスプレッド"
+"シートエディタはこの形式でエクスポートできるため、唯一の要件はファイルが特別"
+"な配置を持っていることです。CSVファイルは **バイト順マーク https://en."
+"wikipedia.org/wiki/Byte_order_mark>`__ なしでUTF-8エンコーディングで保存する"
+"必要があります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid ""
@@ -113,17 +112,22 @@ msgid ""
 "workarounds as described `here <https://stackoverflow.com/questions/4221176/"
 "excel-to-csv-with-utf8-encoding>`__."
 msgstr ""
+"デフォルトでは、Microsoft Excelは常にUTF-8ではなくANSIエンコーディングでCSV"
+"ファイルを保存します。これを行うための組み込みの方法はありませんが、\\ `ここ "
+"<https://stackoverflow.com/questions/4221176/excel-to-csv-with-utf8-"
+"encoding>`__ で説明されている回避策があります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
 msgid ""
 "We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
 "Sheets instead."
 msgstr ""
+"代わりに `LibreOffice <https://www.libreoffice.org/>`__ またはGoogleスプレッ"
+"ドシートを使用することをお勧めします。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
-#, fuzzy
 msgid "CSV files must be formatted as follows:"
-msgstr "このテキストは次のとおりです:"
+msgstr "CSVファイルは次の形式にする必要があります:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
@@ -298,19 +302,17 @@ msgstr ""
 "み、削除することもできます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:117
-#, fuzzy
 msgid ""
 "Select the ``.csv`` file and access the **Import** dock to define import "
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
-"``.csv`` ファイルを選択し、「インポート」ドックにアクセスしてインポートオプ"
-"ションを定義します。インポートした翻訳の圧縮を切り替えたり、CSVファイルの解析"
-"時に使用する区切り文字を選択したりできます。"
+"``.csv`` ファイルを選択し、\\ **インポート** ドックにアクセスしてインポートオ"
+"プションを定義します。インポートした翻訳の圧縮を切り替えて、CSVファイルの解析"
+"時に使用する区切り文字を選択できます。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:123
-#, fuzzy
 msgid "Be sure to click **Reimport** after any change to these options."
 msgstr ""
-"これらのオプションを変更した後は、必ず「再インポート」をクリックしてくださ"
+"これらのオプションを変更した後は、必ず **再インポート** をクリックしてくださ"
 "い。"

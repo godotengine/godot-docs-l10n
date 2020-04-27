@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,6 @@ msgstr ""
 "ります。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:27
-#, fuzzy
 msgid ""
 "This means that some transformation of the scene light intensity, also known "
 "as *scene-referred* light ratios, need to be transformed and mapped to fit "
@@ -80,13 +79,12 @@ msgid ""
 "particular camera rendering transform to the scene data, and the output "
 "would be ready for display on a particular display type."
 msgstr ""
-"これは、選択されたディスプレイの特定の出力範囲内に収まるように、シーンの基準"
-"光量比としても知られるシーン光強度の変換を意味し、選択したディスプレイの特定"
-"の出力範囲内に収まるように変換およびマッピングする必要があります。これは、仮"
-"想カメラを通してゲームエンジンのシーンを仮想的に撮影することを検討する場合に"
-"最も簡単に理解できます。ここで、仮想カメラは特定のカメラレンダリングトランス"
-"フォームをシーンデータに適用し、出力は特定のディスプレイタイプで表示できる状"
-"態になります。"
+"これは、\\ *scene-referred* 光量比とも呼ばれるシーンの光強度の変換を、選択し"
+"たディスプレイの特定の出力範囲内に収まるように変換およびマッピングする必要が"
+"あることを意味します。これは、仮想カメラを通してゲームエンジンのシーンを仮想"
+"的に撮影することを検討する場合に最も簡単に理解できます。ここで、仮想カメラは"
+"特定のカメラレンダリングトランスフォームをシーンデータに適用し、出力は特定の"
+"ディスプレイタイプで表示できる状態になります。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:36
 msgid "Computer displays"
@@ -118,16 +116,14 @@ msgstr ""
 "ディスプレイの動作の概要を説明します。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:50
-#, fuzzy
 msgid ""
 "Not all displays use the same OETF and EOTF as a computer display. For "
 "example, television broadcast displays use the BT.1886 EOTF. However, Godot "
 "currently only supports sRGB displays."
 msgstr ""
 "すべてのディスプレイがコンピューターディスプレイと同じOETFおよびEOTFを使用す"
-"るわけではありませんが、たとえば、テレビ放送ディスプレイはBT.1886 EOTFを使用"
-"します。 Godotはピクセル管理チェーンに制限があり、現在sRGBディスプレイのみを"
-"サポートしていることに注意してください。"
+"るわけではありません。たとえば、テレビ放送のディスプレイではBT.1886 EOTFが使"
+"用されます。ただし、現在GodotはsRGBディスプレイのみをサポートしています。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:54
 msgid ""
@@ -138,7 +134,6 @@ msgstr ""
 "出力の間の非線形関係に基づいています。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:59
-#, fuzzy
 msgid ""
 "The mathematics of a scene-referred model require that we multiply the scene "
 "by different values to adjust the intensities and exposure to different "
@@ -147,11 +142,11 @@ msgid ""
 "simple transfer function of the display. A more complex approach to encoding "
 "is required."
 msgstr ""
-"シーン参照モデルの数学では、シーンに異なる値を乗算して、強度と異なる照明範囲"
-"への露出を調整する必要があります。 ただし、ディスプレイの伝達関数は、ディスプ"
-"レイの単純な伝達関数を使用して、ゲームエンジンのシーンが出力するより広いダイ"
-"ナミックレンジの映像を適切にレンダリングできないため、エンコードに関してより"
-"複雑なアプローチが必要です。"
+"scene-referredモデルの数学では、シーンに異なる値を乗算して、強度と異なる照明"
+"範囲への露出を調整する必要があります。ディスプレイの伝達関数は、ディスプレイ"
+"の単純な伝達関数を使用して、ゲームエンジンのシーン出力のより広いダイナミック"
+"レンジを適切にレンダリングできません。より複雑なエンコードのアプローチが必要"
+"です。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:67
 msgid "Scene linear & asset pipelines"
@@ -162,13 +157,13 @@ msgstr "シーンリニアおよびアセットパイプライン"
 msgid ""
 "Working in scene-linear sRGB is not as simple as just pressing a switch. "
 "First, imported image assets must be converted to linear light ratios on "
-"import. Even when linearized, those assets may not be perfectly well suited "
+"import. Even when linearized, those assets may not be perfectly well-suited "
 "for use as textures, depending on how they were generated."
 msgstr ""
 "シーンリニアsRGBでの作業は、スイッチを押すだけでは簡単ではありません。 まず、"
 "インポートされた画像アセットは、インポート時に直線的な光量比に変換する必要が"
-"あります。 直線化された場合でも、それらのアセットは、生成方法によっては、テク"
-"スチャとしての使用に完全に適さない場合があります。"
+"あります。 直線化された場合でも、生成方法によっては、これらのアセットはテクス"
+"チャとしての使用に完全に適さない場合があります。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:74
 msgid "There are two ways to do this:"
@@ -179,7 +174,6 @@ msgid "sRGB transfer function to display linear ratios on image import"
 msgstr "画像インポート時に線形比を表示するsRGB伝達関数"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:79
-#, fuzzy
 msgid ""
 "This is the easiest method of using sRGB assets, but it's not the most "
 "ideal. One issue with this is loss of quality. Using 8 bits per channel to "
@@ -187,10 +181,10 @@ msgid ""
 "correctly. These textures may also be compressed later, which can exacerbate "
 "the problem."
 msgstr ""
-"これはsRGBアセットを使用する最も簡単な方法ですが、理想的ではありません。 これ"
-"に関する1つの問題は、各チャンネルあたり8ビットを使用して直線的な光量比を表す"
-"場合、値を正しく定量化するには不十分な深度です。 これらのテクスチャは後で圧縮"
-"される可能性があり、問題を悪化させる可能性があります。"
+"これはsRGBアセットを使用する最も簡単な方法ですが、最も理想的な方法ではありま"
+"せん。これに関する1つの問題は、品質の低下です。チャネルごとに8ビットを使用し"
+"て直線的な光量比を表すだけでは、値を正しく量子化するには不十分です。これらの"
+"テクスチャは後で圧縮されることもあり、問題を悪化させる可能性があります。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:85
 msgid "Hardware sRGB transfer function to display linear conversion"
@@ -199,13 +193,13 @@ msgstr "直線化変換を表示するハードウェアsRGB伝達関数"
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:87
 #, fuzzy
 msgid ""
-"The GPU will do the conversion after reading the texel using floating point. "
+"The GPU will do the conversion after reading the texel using floating-point. "
 "This works fine on PC and consoles, but most mobile devices don't support "
 "it, or they don't support it on compressed texture formats (iOS for example)."
 msgstr ""
-"GPUは、浮動小数点を使用してテクセルを読み取った後、変換を行います。 これはPC"
-"およびコンソールで正常に機能しますが、ほとんどのモバイルデバイスではサポート"
-"されていないか、圧縮テクスチャ形式(iOSなど)ではサポートされていません。"
+"GPUは、浮動小数点を使用してテクセルを読み取った後に変換を行います。これはPCと"
+"コンソールでは正常に機能しますが、ほとんどのモバイルデバイスはサポートしてい"
+"ないか、圧縮テクスチャ形式(iOSなど)ではサポートしていません。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:92
 msgid "Scene linear to display referred nonlinear"
@@ -224,23 +218,22 @@ msgstr ""
 "照)。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:98
-#, fuzzy
 msgid ""
 "Keep in mind that the **sRGB -> Display Linear** and **Display Linear -> "
 "sRGB** conversions must always be **both** enabled. Failing to enable one of "
 "them will result in horrible visuals suitable only for avant-garde "
 "experimental indie games."
 msgstr ""
-"sRGB -> Display Linear および Display Linear -> sRGB 変換は、常に **両方** 有"
-"効にする必要があることに注意してください。 それらのいずれかを有効にしないと、"
-"前衛的で実験的なインディーズゲームにのみ適した恐ろしいビジュアルになります。"
+"**sRGB -> Display Linear** および **Display Linear -> sRGB** 変換は常に **両"
+"方** を有効にする必要があることに注意してください。それらのいずれかを有効にし"
+"ないと、前衛的な実験的インディーズゲームにのみ適した恐ろしいビジュアルになり"
+"ます。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:104
 msgid "Parameters of HDR"
 msgstr "HDRのパラメーター"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:106
-#, fuzzy
 msgid ""
 "HDR settings can be found in the :ref:`Environment <class_Environment>` "
 "resource. Most of the time, these are found inside a :ref:`WorldEnvironment "
@@ -249,5 +242,5 @@ msgid ""
 msgstr ""
 "HDRの設定は :ref:`Environment <class_Environment>` リソースにあります。 これ"
 "らはほとんどの場合、\\ :ref:`WorldEnvironment <class_WorldEnvironment>` ノー"
-"ド内にあるか、カメラに設定されています。 詳細については、\\ :ref:"
+"ド内にあるか、Cameraノードに設定されています。 詳細については、\\ :ref:"
 "`doc_environment_and_post_processing` を参照してください。"

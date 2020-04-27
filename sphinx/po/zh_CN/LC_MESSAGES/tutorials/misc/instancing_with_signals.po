@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:4
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:1
+#, fuzzy
+msgid "Signal"
+msgstr "信号"
+
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:7
 #, fuzzy
 msgid "Instancing with signals"
 msgstr "与光交互"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:6
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:9
 msgid ""
 "Signals provide a way to decouple game objects, allowing you to avoid "
 "forcing a fixed arrangement of nodes. One sign that a signal might be called "
@@ -33,15 +38,15 @@ msgid ""
 "location in the running scene tree."
 msgstr ""
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:13
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:16
 msgid "Below we'll consider an example of such a situation: firing bullets."
 msgstr ""
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:16
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:19
 msgid "Shooting example"
 msgstr "射击示例"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:18
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:21
 #, fuzzy
 msgid ""
 "Consider a player character that can rotate and shoot towards the mouse. "
@@ -52,13 +57,13 @@ msgstr ""
 "每次单击鼠标按钮，我们都会在游戏角色的位置创建子弹的实例。详情请参阅 :ref:"
 "`doc_instancing` 。"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:22
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:25
 msgid ""
 "We'll use an ``Area2D`` for the bullet, which moves in a straight line at a "
 "given velocity:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:47
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:50
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
@@ -66,7 +71,7 @@ msgstr ""
 "然而，如果子弹作为游戏角色的子节点添加，那么当它旋转时，子弹将仍然保持“附"
 "着”在游戏角色身上:"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:52
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:55
 msgid ""
 "Instead, we need the bullets to be independent of the player's movement - "
 "once fired, they should continue traveling in a straight line and the player "
@@ -80,12 +85,12 @@ msgstr ""
 "子弹作为“主”游戏场景的子节点添加上去更有意义，后者可能是游戏角色的父节点，甚"
 "至可能是更高层级的树。"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:58
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:61
 #, fuzzy
 msgid "You could do this by adding the bullet to the main scene directly:"
 msgstr "您可以通过直接添加子弹来做到这一点:"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:71
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:74
 #, fuzzy
 msgid ""
 "However, this will lead to a different problem. Now if you try to test your "
@@ -100,7 +105,7 @@ msgstr ""
 "困难，也意味着如果您决定改变主场景的节点结构，游戏角色的父节点可能不再是接收"
 "子弹的合适节点。"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:78
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:81
 msgid ""
 "The solution to this is to use a signal to \"emit\" the bullets from the "
 "player. The player then has no need to \"know\" what happens to the bullets "
@@ -111,17 +116,17 @@ msgstr ""
 "道”子弹在那之后发生了什么——任何连接到信号的节点都可以“接收”子弹并采取适当的行"
 "动来产生它们。"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:83
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:86
 msgid "Here is the code for the player using signals to emit the bullet:"
 msgstr "下面是游戏角色使用信号发射子弹的代码:"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:128
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:131
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
 msgstr "在主场景中，我们连接游戏角色的信号(它将出现在“Node”选项卡中)。"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:152
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:155
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"

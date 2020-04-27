@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -270,24 +270,18 @@ msgid "Normalization"
 msgstr "正規化"
 
 #: ../../docs/tutorials/math/vector_math.rst:189
+#, fuzzy
 msgid ""
 "**Normalizing** a vector means reducing its length to ``1`` while preserving "
 "its direction. This is done by dividing each of its components by its "
-"magnitude:"
+"magnitude. Because this is such a common operation, ``Vector2`` and "
+"``Vector3`` provide a method for normalizing:"
 msgstr ""
 "ベクトルの\\ **正規化**\\ とは、方向を維持しながら長さを ``1`` に減らすことを"
 "意味します。これは、各コンポーネントをその大きさで除算することにより行われま"
 "す。"
 
-#: ../../docs/tutorials/math/vector_math.rst:208
-msgid ""
-"Because this is such a common operation, ``Vector2`` and ``Vector3`` provide "
-"a method for normalizing:"
-msgstr ""
-"これはよくある操作なので、\\ ``Vector2``\\ と\\ ``Vector3``\\ には正規化のた"
-"めのメソッドがあります:"
-
-#: ../../docs/tutorials/math/vector_math.rst:221
+#: ../../docs/tutorials/math/vector_math.rst:204
 msgid ""
 "Because normalization involves dividing by the vector's length, you cannot "
 "normalize a vector of length ``0``. Attempting to do so will result in an "
@@ -296,11 +290,11 @@ msgstr ""
 "正規化はベクトルの長さで割り算するので、長さ ``0`` のベクトルは正規化できませ"
 "ん。エラーになります。"
 
-#: ../../docs/tutorials/math/vector_math.rst:226
+#: ../../docs/tutorials/math/vector_math.rst:209
 msgid "Reflection"
 msgstr "反射"
 
-#: ../../docs/tutorials/math/vector_math.rst:228
+#: ../../docs/tutorials/math/vector_math.rst:211
 msgid ""
 "A common use of unit vectors is to indicate **normals**. Normal vectors are "
 "unit vectors aligned perpendicularly to a surface, defining its direction. "
@@ -311,7 +305,7 @@ msgstr ""
 "面の表面に垂直に配置され、その方向を定義する単位ベクトルです。これらは一般"
 "に、照明、衝突、およびサーフェスに関連する他の操作に使用されます。"
 
-#: ../../docs/tutorials/math/vector_math.rst:233
+#: ../../docs/tutorials/math/vector_math.rst:216
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
@@ -319,7 +313,7 @@ msgstr ""
 "例として、動いているボールを想像してみましょう。壁や他の物体に当たったら跳ね"
 "返ってほしいですね:"
 
-#: ../../docs/tutorials/math/vector_math.rst:238
+#: ../../docs/tutorials/math/vector_math.rst:221
 msgid ""
 "The surface normal has a value of ``(0, -1)`` because this is a horizontal "
 "surface. When the ball collides, we take its remaining motion (the amount "
@@ -335,11 +329,11 @@ msgstr ""
 "`KinematicBody2D <class_KinematicBody2D>`\\ を使用した上記の図のGDScriptの例"
 "です:"
 
-#: ../../docs/tutorials/math/vector_math.rst:268
+#: ../../docs/tutorials/math/vector_math.rst:251
 msgid "Dot product"
 msgstr "内積 (ドット積)"
 
-#: ../../docs/tutorials/math/vector_math.rst:270
+#: ../../docs/tutorials/math/vector_math.rst:253
 msgid ""
 "The **dot product** is one of the most important concepts in vector math, "
 "but is often misunderstood. Dot product is an operation on two vectors that "
@@ -350,25 +344,25 @@ msgstr ""
 "くあります。内積は、2つのベクトルを演算して\\ **スカラー**\\ を返します。大き"
 "さと方向の両方を含むベクトルとは異なり、スカラーは大きさのみを持ちます。"
 
-#: ../../docs/tutorials/math/vector_math.rst:275
+#: ../../docs/tutorials/math/vector_math.rst:258
 msgid "The formula for dot product takes two common forms:"
 msgstr "内積の式には、2つの一般的な形式があります:"
 
-#: ../../docs/tutorials/math/vector_math.rst:277
+#: ../../docs/tutorials/math/vector_math.rst:260
 msgid ""
 "A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 msgstr ""
 "A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 
-#: ../../docs/tutorials/math/vector_math.rst:281
+#: ../../docs/tutorials/math/vector_math.rst:264
 msgid "and"
 msgstr "そして"
 
-#: ../../docs/tutorials/math/vector_math.rst:283
+#: ../../docs/tutorials/math/vector_math.rst:266
 msgid "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
 msgstr "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
 
-#: ../../docs/tutorials/math/vector_math.rst:287
+#: ../../docs/tutorials/math/vector_math.rst:270
 msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
@@ -376,7 +370,7 @@ msgstr ""
 "ただし、ほとんどの場合、組み込みのメソッドを使用するのが最も簡単です。 2つの"
 "ベクトルの順序は重要ではないことに注意してください:"
 
-#: ../../docs/tutorials/math/vector_math.rst:301
+#: ../../docs/tutorials/math/vector_math.rst:284
 msgid ""
 "The dot product is most useful when used with unit vectors, making the first "
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
@@ -386,18 +380,18 @@ msgstr ""
 "を求めます。これは、内積を利用して、2つのベクトル間の角度について情報を得るこ"
 "とができることを意味します:"
 
-#: ../../docs/tutorials/math/vector_math.rst:307
+#: ../../docs/tutorials/math/vector_math.rst:290
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
 msgstr ""
 "単位ベクトルを利用すると結果は ``-1`` (180°)から ``1`` (0°)になります。"
 
-#: ../../docs/tutorials/math/vector_math.rst:311
+#: ../../docs/tutorials/math/vector_math.rst:294
 msgid "Facing"
 msgstr "正面"
 
-#: ../../docs/tutorials/math/vector_math.rst:313
+#: ../../docs/tutorials/math/vector_math.rst:296
 msgid ""
 "We can use this fact to detect whether an object is facing toward another "
 "object. In the diagram below, the player ``P`` is trying to avoid the "
@@ -409,13 +403,15 @@ msgstr ""
 "ます。ゾンビの視界が **180度** であると仮定すると、ゾンビはプレイヤーを見るこ"
 "とができるでしょうか？"
 
-#: ../../docs/tutorials/math/vector_math.rst:319
+#: ../../docs/tutorials/math/vector_math.rst:302
+#, fuzzy
 msgid ""
 "The green arrows ``fA`` and ``fB`` are **unit vectors** representing the "
 "zombies' facing directions and the blue semicircle represents its field of "
 "view. For zombie ``A``, we find the direction vector ``AP`` pointing to the "
-"player using ``P - A`` and normalize it. If the angle between this vector "
-"and the facing vector is less than 90°, then the zombie can see the player."
+"player using ``P - A`` and normalize it, however, Godot has a helper method "
+"to do this called ``direction_to``. If the angle between this vector and the "
+"facing vector is less than 90°, then the zombie can see the player."
 msgstr ""
 "緑の矢印 ``fA`` と ``fB`` はゾンビの向きを表す **単位ベクトル** であり、青い"
 "半円はその視野を表します。ゾンビ ``A`` の場合、\\ ``P - A`` を使用してプレイ"
@@ -423,15 +419,15 @@ msgstr ""
 "向きを表すベクトルの角度が90°未満の場合、ゾンビはプレイヤーを見ることができま"
 "す。"
 
-#: ../../docs/tutorials/math/vector_math.rst:326
+#: ../../docs/tutorials/math/vector_math.rst:310
 msgid "In code it would look like this:"
 msgstr "コードでは次のように表せます:"
 
-#: ../../docs/tutorials/math/vector_math.rst:344
+#: ../../docs/tutorials/math/vector_math.rst:328
 msgid "Cross product"
 msgstr "外積 (クロス積)"
 
-#: ../../docs/tutorials/math/vector_math.rst:346
+#: ../../docs/tutorials/math/vector_math.rst:330
 msgid ""
 "Like the dot product, the **cross product** is an operation on two vectors. "
 "However, the result of the cross product is a vector with a direction that "
@@ -443,7 +439,7 @@ msgstr ""
 "両方に垂直な方向を持つベクトルです。その大きさは、相対的な角度に依存します。 "
 "2つのベクトルが平行である場合、それらの外積の結果はヌルベクトルになります。"
 
-#: ../../docs/tutorials/math/vector_math.rst:351
+#: ../../docs/tutorials/math/vector_math.rst:335
 msgid ""
 "\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
 "\\right \\|\\ |\\sin(a,b)|"
@@ -451,15 +447,15 @@ msgstr ""
 "\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
 "\\right \\|\\ |\\sin(a,b)|"
 
-#: ../../docs/tutorials/math/vector_math.rst:357
+#: ../../docs/tutorials/math/vector_math.rst:341
 msgid "The cross product is calculated like this:"
 msgstr "外積は以下のように求めます:"
 
-#: ../../docs/tutorials/math/vector_math.rst:376
+#: ../../docs/tutorials/math/vector_math.rst:360
 msgid "With Godot, you can use the built-in method:"
 msgstr "Godotでは組み込みのメソッドが使えます:"
 
-#: ../../docs/tutorials/math/vector_math.rst:387
+#: ../../docs/tutorials/math/vector_math.rst:371
 msgid ""
 "In the cross product, order matters. ``a.cross(b)`` does not give the same "
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
@@ -468,11 +464,11 @@ msgstr ""
 "外積では、順序が重要です。\\ ``a.cross(b)``\\ は\\ ``b.cross(a)``\\ と同じ結"
 "果にはなりません。結果のベクトルは\\ **反対方向**\\ を指します。"
 
-#: ../../docs/tutorials/math/vector_math.rst:392
+#: ../../docs/tutorials/math/vector_math.rst:376
 msgid "Calculating normals"
 msgstr "法線の計算"
 
-#: ../../docs/tutorials/math/vector_math.rst:394
+#: ../../docs/tutorials/math/vector_math.rst:378
 msgid ""
 "One common use of cross products is to find the surface normal of a plane or "
 "surface in 3D space. If we have the triangle ``ABC`` we can use vector "
@@ -484,15 +480,15 @@ msgstr ""
 "よび ``AC`` を見つけることができます。外積を使用して、\\ ``AB x AC`` は両方に"
 "垂直なベクトルを生成します: これが表面の法線となります。"
 
-#: ../../docs/tutorials/math/vector_math.rst:399
+#: ../../docs/tutorials/math/vector_math.rst:383
 msgid "Here is a function to calculate a triangle's normal:"
 msgstr "三角形の法線を計算する関数は以下のとおりです:"
 
-#: ../../docs/tutorials/math/vector_math.rst:423
+#: ../../docs/tutorials/math/vector_math.rst:407
 msgid "Pointing to a target"
 msgstr "ターゲットへの方向"
 
-#: ../../docs/tutorials/math/vector_math.rst:425
+#: ../../docs/tutorials/math/vector_math.rst:409
 msgid ""
 "In the dot product section above, we saw how it could be used to find the "
 "angle between two vectors. However, in 3D, this is not enough information. "
@@ -506,21 +502,21 @@ msgstr ""
 "ゲットの方向の外積を計算することでわかります。結果の垂直ベクトルが回転の軸で"
 "す。"
 
-#: ../../docs/tutorials/math/vector_math.rst:433
+#: ../../docs/tutorials/math/vector_math.rst:417
 msgid "More information"
 msgstr "より多くの情報"
 
-#: ../../docs/tutorials/math/vector_math.rst:435
+#: ../../docs/tutorials/math/vector_math.rst:419
 msgid ""
 "For more information on using vector math in Godot, see the following "
 "articles:"
 msgstr ""
 "Godotでのベクトル演算の使用の詳細については、次の記事を参照してください:"
 
-#: ../../docs/tutorials/math/vector_math.rst:437
+#: ../../docs/tutorials/math/vector_math.rst:421
 msgid ":ref:`doc_vectors_advanced`"
 msgstr ":ref:`doc_vectors_advanced`"
 
-#: ../../docs/tutorials/math/vector_math.rst:438
+#: ../../docs/tutorials/math/vector_math.rst:422
 msgid ":ref:`doc_matrices_and_transforms`"
 msgstr ":ref:`doc_matrices_and_transforms`"

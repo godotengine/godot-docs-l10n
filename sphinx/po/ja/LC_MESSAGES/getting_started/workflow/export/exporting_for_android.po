@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,19 +34,20 @@ msgid "Download the Android SDK"
 msgstr "Android SDKをダウンロード"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
-#, fuzzy
 msgid ""
 "Download and install the Android SDK from `developer.android.com <https://"
 "developer.android.com/studio/>`__."
 msgstr ""
-"https://developer.android.com/studio/ からAndroid SDKをダウンロードしてインス"
-"トールします"
+"`developer.android.com <https://developer.android.com/studio/>`__ から"
+"Android SDKをダウンロードしてインストールします。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
 msgid ""
 "If you install Android Studio, you need to run it once to complete the SDK "
 "setup."
 msgstr ""
+"Android Studioをインストールする場合、SDKのセットアップを完了するために1回実"
+"行する必要があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
 msgid "Install OpenJDK or Oracle JDK"
@@ -70,6 +71,9 @@ msgid ""
 "If you install OpenJDK, choose ``1.8``. Don't choose the ``openjdk-jre`` "
 "files as that only contains the JRE, not the JDK which is required here."
 msgstr ""
+"OpenJDKをインストールする場合は、\\ ``1.8`` を選択します。\\ ``openjdk-jre`` "
+"ファイルはJREのみを含み、ここで必要なJDKを含まないので、openjdk-jreファイルは"
+"選択しないでください。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:25
 msgid "Create a debug.keystore"
@@ -89,13 +93,12 @@ msgstr ""
 "とができます)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:32
-#, fuzzy
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose::"
 msgstr ""
-"見つからない場合、または生成する必要がある場合は、JDKのkeytoolコマンドを使用"
-"します:"
+"見つからない場合や生成する必要がある場合は、JDKのkeytoolコマンドをこの目的に"
+"使用できます:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:37
 msgid ""
@@ -105,32 +108,37 @@ msgid ""
 "information on ``keytool`` usage, see `this Q&A article <https://godotengine."
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
+"これにより、現在のディレクトリに ``debug.keystore`` ファイルが作成されます。"
+"後の手順で場所が必要になるため、\\ ``%USERPROFILE%\\.android\\`` などの記憶に"
+"残る場所に移動する必要があります。\\ ``keytool`` の使用方法の詳細について"
+"は、\\ `このQ&A記事 <https://godotengine.org/qa/21349/jdk-android-file-"
+"missing>`__ を参照してください。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
 msgid "Make sure you have adb"
 msgstr "アンドロイドデバッグブリッジ(adb)を持っていることを確認します"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
-#, fuzzy
 msgid ""
 "Android Debug Bridge (``adb``) is the command line tool used to communicate "
 "with Android devices. It's installed with the SDK, but you may need to "
 "install one (any) of the Android API levels for it to be installed in the "
 "SDK directory."
 msgstr ""
-"アンドロイドデバッグブリッジ(adb)は、Androidデバイスと通信するために使用され"
-"るコマンドラインツールです。SDKと共にインストールされますが、SDKディレクトリ"
-"にインストールするには、Android APIレベルの1つ(任意)をインストールする必要が"
-"あります。"
+"Androidデバッグブリッジ(``adb``) は、Androidデバイスとの通信に使用されるコマ"
+"ンドラインツールです。 SDKと共にインストールされますが、SDKディレクトリにイン"
+"ストールするためにAndroid APIレベルのいずれか1つ(任意)をインストールする必要"
+"があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:47
 msgid "Setting it up in Godot"
 msgstr "Godotで設定する"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:49
+#, fuzzy
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
-"for the user account in the computer (it's independent from the project)."
+"for the user account in the computer (it's independent of the project)."
 msgstr ""
 "[エディタ設定]画面に入力します。この画面には、コンピュータのユーザー アカウン"
 "トのエディタ設定が含まれます (プロジェクトから独立しています)。"
@@ -148,20 +156,30 @@ msgid ""
 "The ``adb`` executable (``adb.exe`` on Windows) - It can usually be found at "
 "``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
 msgstr ""
+"``adb`` 実行可能ファイル(Windowsでは ``adb.exe``) - 通常は ``%LOCALAPPDATA%"
+"\\Android\\Sdk\\platform-tools\\adb.exe`` にあります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
+#, fuzzy
 msgid ""
 "The ``jarsigner`` executable (from JDK 6 or 8) - On Windows, OpenJDK "
 "installs to a dir like ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
-"openjdk-1.8.0.232-2\\bin``. The exact path may vary depending on the OpenJDK "
-"update you've installed."
+"openjdk-1.8.0.232-2\\bin``. On Linux, it typically installs to a dir like ``/"
+"usr/bin/jarsigner``. The exact path may vary depending on the OpenJDK update "
+"you've installed and your machine's operating system."
 msgstr ""
+"``jarsigner`` 実行可能ファイル(JDK 6または8から) - Windowsでは、OpenJDKは ``"
+"%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-openjdk-1.8.0.232-2\\bin`` のようなディ"
+"レクトリにインストールされます。正確なパスは、インストールしたOpenJDKアップ"
+"デートによって異なる場合があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:67
 msgid ""
 "The debug ``.keystore`` file - It can be found in the folder where you put "
 "the ``debug.keystore`` file you created above."
 msgstr ""
+"デバック ``.keystore``ファイル - 上記で作成した ``debug.keystore`` ファイルを"
+"置いたフォルダにあります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:70
 msgid "Once that is configured, everything is ready to export to Android!"
@@ -187,8 +205,9 @@ msgid "There are two types of icons required by Godot:"
 msgstr "Godotに必要なアイコンには2つのタイプがあります:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
+#, fuzzy
 msgid ""
-"**Main Icon:**: The \"classic\" icon. This will be used on all Android "
+"**Main Icon:** The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
 "**Main Icon**: 『クラシック版』のアイコン。これはAndroid 8 (Oreo) 未満の全"
@@ -265,10 +284,11 @@ msgstr ""
 "アイコン。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
+#, fuzzy
 msgid ""
-"It's highly recommended to provide all of the requested icons, and at least "
-"with the specified resolutions. Only this way your application will look "
-"great on all the Android devices and versions."
+"It's highly recommended to provide all requested icons, and at least with "
+"the specified resolutions. Only this way your application will look great on "
+"all Android devices and versions."
 msgstr ""
 "要求されたアイコンを、解像度の基準を満たした上で、すべて用意することを強く推"
 "奨します。それがAndroidの全デバイスおよび全バージョンで、あなたのアプリケー"

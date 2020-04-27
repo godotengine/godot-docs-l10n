@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,7 +99,8 @@ msgid "more modular project structure"
 msgstr "une structure de projet plus modulaire"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:34
-msgid "users don’t have to replace the entire game"
+#, fuzzy
+msgid "users don't have to replace the entire game"
 msgstr "les utilisateurs n'ont pas à remplacer tout le jeu"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:36
@@ -274,6 +275,10 @@ msgid ""
 "directory first. Then, before loading the resource pack, you need to load "
 "its DLL as follows: ``Assembly.LoadFile(\"mod.dll\")``"
 msgstr ""
+"Pour un projet C#, vous devez compiler la DLL et la placer dans le "
+"répertoire de projet d'abord. Ensuite, avant de charger le paquet de "
+"ressource, vous devez charger sa DLL comme suit : ``Assembly.LoadFile(\"mod."
+"dll\")``"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:129
 msgid "Summary"

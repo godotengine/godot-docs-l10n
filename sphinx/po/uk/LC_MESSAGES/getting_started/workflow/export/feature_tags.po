@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
-#, fuzzy
 msgid "Feature tags"
-msgstr "Можливості"
+msgstr "Теги функцій"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:7
 msgid "Introduction"
@@ -31,40 +30,44 @@ msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
 "is represented as a string, which can refer to many of the following:"
 msgstr ""
+"У Godot є спеціальна система для позначення доступних функцій. Кожна "
+"*функція* представлена у вигляді рядка, який може посилатися на багато чого "
+"з наступного:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:12
 msgid "Platform name."
-msgstr ""
+msgstr "Назва платформи."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:13
 msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
-msgstr ""
+msgstr "Архітектура платформи (64-розрядна, або 32-бітна, x86, або ARM)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
 msgid "Platform type (desktop, mobile, Web)."
-msgstr ""
+msgstr "Тип платформи (настільний, мобільний, веб)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
 msgid "Supported texture compression algorithms on the platform."
-msgstr ""
+msgstr "Підтримувані алгоритми стиснення текстур на платформі."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
-msgstr ""
+msgstr "Збірку ``debug``, або ``release`` (``debug`` включає редактор)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
 "Whether the project is running from the editor or a \"standalone\" binary."
-msgstr ""
+msgstr "Проект, що працює із редактора, чи \"окремого\" бінарника."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:18
 msgid "Many more things."
-msgstr ""
+msgstr "Ще багато речей."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:20
 msgid "Features can be queried at run-time from the singleton API by calling:"
 msgstr ""
+"Про особливості можна дізнатися під час виконання з API Singleton, викликом:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:28
 msgid "Default features"

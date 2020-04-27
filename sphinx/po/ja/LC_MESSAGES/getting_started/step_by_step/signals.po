@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:4
-msgid "Signals"
+#: ../../docs/getting_started/step_by_step/signals.rst:1
+#, fuzzy
+msgid "Signal"
 msgstr "シグナル"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
+msgid "Signals"
+msgstr "シグナル"
+
+#: ../../docs/getting_started/step_by_step/signals.rst:10
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:9
+#: ../../docs/getting_started/step_by_step/signals.rst:12
 msgid ""
 "Signals are Godot's version of the *observer* pattern. They allow a node to "
 "send out a message that other nodes can listen for and respond to. For "
@@ -37,15 +42,16 @@ msgstr ""
 "されているかどうかを継続的に確認するのではなく、ボタンが押されたときに信号を"
 "発することができます。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:14
+#: ../../docs/getting_started/step_by_step/signals.rst:17
+#, fuzzy
 msgid ""
-"You can read more about the observer pattern here: http://"
+"You can read more about the observer pattern here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
 "オブザーバーパターンの詳細については、以下をご覧ください (英語): http://"
 "gameprogrammingpatterns.com/observer.html"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:16
+#: ../../docs/getting_started/step_by_step/signals.rst:19
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
@@ -57,18 +63,18 @@ msgstr ""
 "なく、代わりにオブジェクトはシグナルを発信でき、関係するすべてのオブジェクト"
 "は予約および応答ができます。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:21
+#: ../../docs/getting_started/step_by_step/signals.rst:24
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
 "以下に、独自のプロジェクトでシグナルを使用する方法の例をいくつか示します。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:24
+#: ../../docs/getting_started/step_by_step/signals.rst:27
 msgid "Timer example"
 msgstr "タイマーの例"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:26
+#: ../../docs/getting_started/step_by_step/signals.rst:29
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
@@ -79,7 +85,7 @@ msgstr ""
 "<class_Sprite>`\\ で新しいシーンを作成します。 Sceneドックで、Node2Dの名前を"
 "TimerExampleに変更します。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:30
+#: ../../docs/getting_started/step_by_step/signals.rst:33
 msgid ""
 "For the Sprite's texture, you can use the Godot icon, or any other image you "
 "like. Do so by selecting ``Load`` in the Sprite's Texture attribute drop-"
@@ -91,11 +97,11 @@ msgstr ""
 "み`` を選択します。ルートノードにスクリプトをアタッチしますが、まだコードを追"
 "加しないでください。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:34
+#: ../../docs/getting_started/step_by_step/signals.rst:37
 msgid "Your scene tree should look like this:"
 msgstr "シーンツリーは次のようになります:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:38
+#: ../../docs/getting_started/step_by_step/signals.rst:41
 msgid ""
 "In the Timer node's properties, check the \"On\" box next to *Autostart*. "
 "This will cause the timer to start automatically when you run the scene. You "
@@ -105,7 +111,7 @@ msgstr ""
 "リックします。これにより、シーンの実行時にタイマーが自動的に開始されます。\\ "
 "*Wait Time*\\ は1秒のままにしておきましょう。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:42
+#: ../../docs/getting_started/step_by_step/signals.rst:45
 msgid ""
 "Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
 "and you'll see all of the signals that the selected node can emit. In the "
@@ -117,7 +123,7 @@ msgstr ""
 "す。 Timerノードの場合、関係するのは「timeout」です。 このシグナルは、タイ"
 "マーが ``0`` に到達するたびに出力されます。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:49
+#: ../../docs/getting_started/step_by_step/signals.rst:52
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
 "the signals panel. You'll see the following window, where you can define how "
@@ -126,7 +132,7 @@ msgstr ""
 "シグナルパネルの下にある「timeout()」シグナルをクリックし、「接続...」をク"
 "リックします。 次のウィンドウが表示され、信号の接続方法を定義できます:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:55
+#: ../../docs/getting_started/step_by_step/signals.rst:58
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is "
@@ -137,7 +143,7 @@ msgstr ""
 "択できます。タイマーノードは青色で、ノードが信号を発していること意味します。"
 "ルートノードを選択してください。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:60
+#: ../../docs/getting_started/step_by_step/signals.rst:63
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
@@ -145,15 +151,18 @@ msgstr ""
 "ターゲットノードにはスクリプトがアタッチされている\\ *必要*\\ があります。そ"
 "うしないと、エラーメッセージが表示されます。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:63
+#: ../../docs/getting_started/step_by_step/signals.rst:66
 msgid ""
 "On the right side, you can bind an arbitrary number of arguments of "
 "(possibly) different types. This can be useful when you have more than one "
 "signal connected to the same method, as each signal propagation will result "
 "in different values for those extra call arguments."
 msgstr ""
+"右側では、任意の数の、(可能な限り)異なる型の引数をバインドできます。これは、"
+"同じメソッドに複数のシグナルを接続するときに便利です。それぞれのシグナルが伝"
+"播したとき、これら追加の引数によって別々の値に分けられるからです。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:67
+#: ../../docs/getting_started/step_by_step/signals.rst:70
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
@@ -165,14 +174,14 @@ msgstr ""
 "では、Godotは\\ ``_on_<ノード名>_<シグナル名>``\\ という命名規則を使用してこ"
 "の関数を作成しますが、必要に応じて変更できます。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:72
+#: ../../docs/getting_started/step_by_step/signals.rst:75
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
 "「接続」をクリックすると、スクリプトで関数が作成されたことがわかります:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:92
+#: ../../docs/getting_started/step_by_step/signals.rst:96
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
@@ -180,7 +189,7 @@ msgstr ""
 "これで、仮置きのコードを、シグナルの受信時に実行したいコードに置き換えること"
 "ができます。 スプライトを点滅させましょう:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:116
+#: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
@@ -188,11 +197,11 @@ msgstr ""
 "シーンを実行すると、スプライトが1秒ごとに点滅します。 これを変更するには、タ"
 "イマーの\\ *Wait Time*\\ プロパティを変更します。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:120
+#: ../../docs/getting_started/step_by_step/signals.rst:125
 msgid "Connecting signals in code"
 msgstr "コード内でシグナルをを接続する"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:122
+#: ../../docs/getting_started/step_by_step/signals.rst:127
 msgid ""
 "You can also make the signal connection in code rather than with the editor. "
 "This is usually necessary when you're instancing nodes via code and so you "
@@ -202,7 +211,7 @@ msgstr ""
 "を介してノードをインスタンス化するときに必要であり、エディタを使用して接続す"
 "ることはできません。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:126
+#: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
@@ -210,7 +219,7 @@ msgstr ""
 "まず、タイマーの[ノード]タブで接続を選択し、[切断]をクリックして、シグナルを"
 "切断します。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:131
+#: ../../docs/getting_started/step_by_step/signals.rst:136
 msgid ""
 "To make the connection in code, we can use the ``connect`` function. We'll "
 "put it in ``_ready()`` so that the connection will be made on run. The "
@@ -223,15 +232,15 @@ msgstr ""
 "``<source_node>.connect(<signal_name>, <target_node>, "
 "<target_function_name>)`` です。タイマー接続のコードは次のとおりです:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:164
+#: ../../docs/getting_started/step_by_step/signals.rst:171
 msgid "Custom signals"
 msgstr "カスタムシグナル"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:166
+#: ../../docs/getting_started/step_by_step/signals.rst:173
 msgid "You can also declare your own custom signals in Godot:"
 msgstr "Godotでは独自のカスタムシグナルを宣言することもできます:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:184
+#: ../../docs/getting_started/step_by_step/signals.rst:192
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
@@ -239,42 +248,42 @@ msgstr ""
 "一度宣言すると、カスタムシグナルがインスペクタに表示され、ノードの組み込みシ"
 "グナルと同じ方法で接続できます。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:187
+#: ../../docs/getting_started/step_by_step/signals.rst:195
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
 msgstr ""
 "コードを介してシグナルを発信するには、\\ ``emit_signal`` 関数を使用します:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:212
+#: ../../docs/getting_started/step_by_step/signals.rst:222
 msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
+"シグナルは任意により複数の引数を付けて宣言できます。カッコの中に引数の名前を"
+"指定します:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:232
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/signals.rst:243
 msgid ""
 "The signal arguments show up in the editor's node dock, and Godot can use "
 "them to generate callback functions for you. However, you can still emit any "
 "number of arguments when you emit signals. So it's up to you to emit the "
 "correct values."
 msgstr ""
-"これらの引数はエディタのノードドックに表示され、Godot はこれらを使いコール"
-"バック関数を生成します。しかし、シグナルを送信する際に、異なる個数の引数を送"
-"信することもできます。その上限は正しい値の個数までです。"
+"シグナル引数はエディタのノードドックに表示され、Godotはそれらを使用してコール"
+"バック関数を生成できます。しかしながら、シグナルを送信するときに、任意の数の"
+"引数を発行できます。正しい値を出力するのはあなた次第です。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:237
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/signals.rst:248
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
 msgstr ""
-"コードを介してシグナルを発信するには、\\ ``emit_signal`` 関数を使用します:"
+"値を渡すには、それらを\\ ``emit_signal`` 関数の2番目の引数として追加します:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:263
+#: ../../docs/getting_started/step_by_step/signals.rst:276
 msgid "Conclusion"
 msgstr "結論"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:265
+#: ../../docs/getting_started/step_by_step/signals.rst:278
 msgid ""
 "Many of Godot's built-in node types provide signals you can use to detect "
 "events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
@@ -287,7 +296,7 @@ msgstr ""
 "``body_entered`` シグナルを発し、プレイヤーがそれを収集したタイミングを知るこ"
 "とができます。"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:270
+#: ../../docs/getting_started/step_by_step/signals.rst:283
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."

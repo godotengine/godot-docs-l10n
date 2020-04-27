@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,15 +131,14 @@ msgstr ""
 ":ref:`InputEvent <class_InputEvent>` － すべての入力イベントの基本クラス"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:110
-#, fuzzy
 msgid ""
 ":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` - adds the "
 "ability to check if modifiers are pressed, such as :kbd:`Shift` or :kbd:"
 "`Alt`."
 msgstr ""
-":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` － ``Shift`` "
-"や ``Alt`` などのモディファイヤが押されているかどうかをチェックする機能を追加"
-"します。"
+":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` - :kbd:"
+"`Shift` や :kbd:`Alt` などのモディファイヤが押されているかどうかをチェックす"
+"る機能を追加します。"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:111
 msgid ""
@@ -214,7 +213,6 @@ msgid "Keyboard events"
 msgstr "キーボードイベント"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:178
-#, fuzzy
 msgid ""
 "Keyboard events are captured in :ref:`InputEventKey <class_InputEventKey>`. "
 "While it's recommended to use input actions instead, there may be cases "
@@ -223,7 +221,7 @@ msgid ""
 msgstr ""
 "キーボードイベントは :ref:`InputEventKey <class_InputEventKey>` でキャプチャ"
 "されます。代わりに入力アクションを使用することをお勧めしますが、重要なイベン"
-"トを具体的に調べたい場合もあります。この例では、\"T\" キーを確認します:"
+"トを具体的に調べたい場合もあります。この例では、\\ :kbd:`T` を確認します:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:204
 #: ../../docs/tutorials/inputs/input_examples.rst:242
@@ -239,7 +237,6 @@ msgid "Keyboard modifiers"
 msgstr "キーボード・モディファイヤ"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:210
-#, fuzzy
 msgid ""
 "Modifier properties are inherited from :ref:`InputEventWithModifiers "
 "<class_InputEventWithModifiers>`. This  allows you to check for modifier "
@@ -249,9 +246,9 @@ msgid ""
 msgstr ""
 "モディファイヤのプロパティは、\\ :ref:`InputEventWithModifiers "
 "<class_InputEventWithModifiers>` から継承されます。これにより、ブールプロパ"
-"ティを使用してモディファイヤの組み合わせを確認できます。\"T\" キーが押された"
-"ときにあることを行いたいが、\"Shift+T\" のときは別のことをしたいと想像してみ"
-"ましょう:"
+"ティを使用してモディファイヤの組み合わせを確認できます。\\  :kbd:`T` が押され"
+"たときに起こることが1つあり、\\ :kbd:`Shift + T` のときは何か違うことが起こる"
+"と想像してみましょう。"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:246
 msgid "Mouse events"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,6 +53,8 @@ msgid ""
 "Before submitting your asset, please ensure it follows all of the "
 "requirements, and also consider following the recommendations."
 msgstr ""
+"Avant de soumettre votre asset, assurez vous qu’il respecte toutes les "
+"exigences et pensez à suivre les recommendations."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:23
 msgid "Requirements"
@@ -64,12 +66,17 @@ msgid ""
 "accepted. However, in order for your asset to be accepted, there are a few "
 "requirements your asset needs to meet to be approved."
 msgstr ""
+"En général, la plupart des assets soumis à la librairie d’assets sont "
+"acceptés. Cependant, pour que votre asset soit accepté, il y a quelques "
+"exigences que votre asset doit respecter."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:29
 msgid ""
 "The asset must work. If the asset doesn't run or otherwise doesn't work in "
 "the specified Godot version, then it will be rejected."
 msgstr ""
+"L’asset doit fonctionner. Si l’asset ne se lance pas ou qu’il ne marche pas "
+"dans la version spécifiée de Godot, alors il sera rejeté."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:32
 msgid ""
@@ -77,12 +84,17 @@ msgid ""
 "include submodules in the downloaded ZIP file, so if the asset needs the "
 "contents of the submodule, your asset won't work."
 msgstr ""
+"Aucun sous-module, ou tout sous-modules doit être non essentiel. GitHub "
+"n’inclut pas de sous-modules dans le fichier ZIP téléchargé, donc si l’asset "
+"a besoin du contenu du sous-module, votre asset ne fonctionnera pas."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:36
 msgid ""
 "The license needs to be correct. The license listed on the asset library "
 "must match the license in the repository."
 msgstr ""
+"La licence doit être correcte. La licence affichée dans la librairie "
+"d’assets doit coïncider avec celle du dépôt."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:39
 msgid ""
@@ -91,23 +103,33 @@ msgid ""
 "*exactly* the same. Instead of \"master\", either specify a commit hash, or "
 "tag versions and specify a version number."
 msgstr ""
+"Ne réglez pas le commit à télécharger sur \"master\". La bibliothèque de "
+"ressources valide toutes les ressources avec un hach SHA256, donc la version "
+"hébergée sur GitHub doit être *exactement* la même. Au lieu de \"master\", "
+"spécifiez soit un hach de commit, soit une étiquette de versions et indiquez "
+"un numéro de version."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:44
 msgid ""
 "Use proper English for the name and description of your asset. This includes "
 "using correct capitalization, and using full sentences in the description."
 msgstr ""
+"Utilisez un Anglais propre pour le nom et la description de votre asset. "
+"Cela inclut l’utilisation d’une capitalisation correcte et de phrases "
+"complètes pour la description."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:48
 msgid ""
 "The icon link must be a direct link. For icons hosted on GitHub, the link "
 "must start with \"raw.githubusercontent.com\", not \"github.com\"."
 msgstr ""
+"Le lien de l'icône doit être un lien direct. Pour les icônes hébergées sur "
+"GitHub, le lien doit commencer par \"raw.githubusercontent.com\", et non par "
+"\"github.com\"."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:52
-#, fuzzy
 msgid "Recommendations"
-msgstr "Autres considérations"
+msgstr "Recommandations"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:54
 msgid ""
@@ -115,6 +137,9 @@ msgid ""
 "follow these recommendations, you can help make the asset library a better "
 "place for all users."
 msgstr ""
+"Ces choses ne sont pas requises pour que votre asset soit approuvé, mais si "
+"vous suivez ces recommandations, vous pouvez contribuer à faire de la "
+"librairie d’assets un meilleur endroit pour tout utilisateur."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:58
 msgid ""
@@ -122,6 +147,10 @@ msgid ""
 "identify issues with your code, but people using your asset don't need to "
 "see them."
 msgstr ""
+"Corrigez ou supprimez tous les avertissements de script. Le système "
+"d'avertissement est là pour vous aider à identifier les problèmes liés à "
+"votre code, mais les personnes qui utilisent votre asset n'ont pas besoin de "
+"les voir."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:62
 msgid ""
@@ -130,18 +159,27 @@ msgid ""
 "wish to contribute to your asset. See: the :ref:`doc_gdscript_styleguide` or "
 "the :ref:`doc_c_sharp_styleguide`."
 msgstr ""
+"Faites en sorte que votre code soit conforme aux guides de style officiels. "
+"Un style cohérent aide les autres personnes à lire votre code, et il est "
+"également utile si d'autres personnes souhaitent contribuer à votre asset. "
+"Voir : le :ref:`doc_gdscript_styleguide` ou le :ref:`doc_c_sharp_styleguide`."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:67
 msgid ""
 "If your asset is a library for working with other files, consider including "
 "example files in the asset."
 msgstr ""
+"Si votre asset est une librairie qui fonctionne avec d’autres fichiers, "
+"pensez à inclure des fichiers examples dans votre asset."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:70
 msgid ""
 "The icon should be a square, its aspect ratio should be 1:1. It should also "
 "ideally have a minimum resolution of 64x64 pixels."
 msgstr ""
+"L'icône doit être un carré, son rapport d'aspect doit être de 1:1. "
+"Idéalement, elle devrait également avoir une résolution minimale de 64x64 "
+"pixels."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:73
 msgid ""
@@ -149,6 +187,10 @@ msgid ""
 "asset's source code on GitHub. Other services may not work reliably, and a "
 "lack of familiarity can be a barrier to contributors."
 msgstr ""
+"Bien que la bibliothèque d'assets permette plus que GitHub, pensez à "
+"héberger le code source de votre asset sur GitHub. D'autres services peuvent "
+"ne pas fonctionner de manière fiable, et un manque de familiarité peut "
+"constituer un obstacle pour les contributeurs."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:78
 msgid "Submitting"

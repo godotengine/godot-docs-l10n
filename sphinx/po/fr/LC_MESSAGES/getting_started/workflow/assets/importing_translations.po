@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,6 @@ msgid "Translation format"
 msgstr "Format de traduction"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
-#, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
 "has a special importer that can read CSV files. Most spreadsheet editors can "
@@ -109,8 +108,9 @@ msgstr ""
 "Godot dispose d’un importateur spécial capable de lire les fichiers CSV. "
 "Tous les éditeurs de tableurs (que ce soit Libreoffice, Microsoft Office, "
 "Google Docs, etc.) peuvent exporter vers ce format. La seule exigence est "
-"que les fichiers aient un arrangement spécial. Les fichiers CSV doivent être "
-"enregistrés au format UTF-8 et être formatés comme suit :"
+"que les fichiers aient un arrangement spécial. Les fichiers CSV **doivent** "
+"être enregistrés au format UTF-8 sans une `marque d'ordre de byte <https://"
+"en.wikipedia.org/wiki/Byte_order_mark>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid ""
@@ -119,16 +119,22 @@ msgid ""
 "workarounds as described `here <https://stackoverflow.com/questions/4221176/"
 "excel-to-csv-with-utf8-encoding>`__."
 msgstr ""
+"Par défaut, Microsoft Excel sauvegarde toujours les fichiers CSV avec un "
+"encodage ANSI, plutôt que UTF-8. Il n'y a pas manière intégrée de faire ça, "
+"mais des alternatives existent, comme décrit ici `here <https://"
+"stackoverflow.com/questions/4221176/excel-to-csv-with-utf8-encoding>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
 msgid ""
 "We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
 "Sheets instead."
 msgstr ""
+"Nous recommandons d'utiliser `LibreOffice <https://www.libreoffice.org/>`__ "
+"ou Google Sheets à la place."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
 msgid "CSV files must be formatted as follows:"
-msgstr ""
+msgstr "Les fichiers CSV doivent être formatés comme suit :"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
@@ -306,19 +312,17 @@ msgstr ""
 "traduction pendant l’éxécution également."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:117
-#, fuzzy
 msgid ""
 "Select the ``.csv`` file and access the **Import** dock to define import "
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
-"Sélectionnez le fichier ``.csv`` puis allez dans le dock \"Import\" pour "
+"Sélectionnez le fichier ``.csv`` puis allez dans le dock **Import** pour "
 "choisir les options d'import. Vous pouvez activer la compression des "
 "traductions importées et choisir le délimiteur que le logiciel utilisera en "
 "analysant le fichier CSV."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:123
-#, fuzzy
 msgid "Be sure to click **Reimport** after any change to these options."
 msgstr ""
-"N'oubliez pas de cliquer sur \"Réimporter\" pour appliquer les changements."
+"N'oubliez pas de cliquer sur **Réimporter** pour appliquer les changements."

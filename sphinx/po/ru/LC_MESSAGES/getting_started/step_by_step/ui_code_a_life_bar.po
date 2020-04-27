@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,8 +213,9 @@ msgstr ""
 "значение или метод из любого другого узла"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
+#, fuzzy
 msgid ""
-"The project uses a simple organisation that works for game jams and tiny "
+"The project uses a simple organization that works for game jams and tiny "
 "games."
 msgstr ""
 "Проект использует простую организацию, которая подходит для средних и малых "
@@ -426,14 +427,15 @@ msgstr ""
 "*сразу после* изменений."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
+#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
 "accessing nodes directly to communicate between two separate classes. It can "
 "be okay for a parent node to get values from its children. But you'll want "
 "to favor signals if you're working with two separate branches. Read Game "
-"Programming Patterns for more information on the `Observer pattern <http://"
-"gameprogrammingpatterns.com/observer.html>`_. The `full book <http://"
+"Programming Patterns for more information on the `Observer pattern <https://"
+"gameprogrammingpatterns.com/observer.html>`_. The `full book <https://"
 "gameprogrammingpatterns.com/contents.html>`_ is available online for free."
 msgstr ""
 "Шаблон Observer, эти сигналы являются его наследниками, по-прежнему "
@@ -653,7 +655,6 @@ msgstr ""
 "назначить его в ``new_value`` напрямую"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
-#, fuzzy
 msgid ""
 "Also call ``update_health`` at the end of the ``_ready`` function to "
 "initialize the ``Number`` node's ``text`` with the right value at the start "
@@ -661,8 +662,9 @@ msgid ""
 "every attack!"
 msgstr ""
 "Также вызов ``update_health`` в конце функции ``_ready`` инициализировать "
-"``text`` узла ``Number``с правильным значением в начале игры. Нажмите "
-"клавишу F5, чтобы протестировать игру: жизни обновляются при каждой атаке!"
+"``text`` узла ``Number`` с правильным значением в начале игры. Нажмите "
+"клавишу :kbd:`F5`, чтобы протестировать игру: жизни обновляются при каждой "
+"атаке!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -197,7 +197,6 @@ msgid "Example of Normal animation tracks"
 msgstr "Exemple de piste d'animation de type Normal"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:100
-#, fuzzy
 msgid ""
 "If you animate the wrong property, you can edit a track's path anytime. "
 "Double click on it and type the new path. Play the animation using the "
@@ -207,7 +206,7 @@ msgstr ""
 "Si vous animez la mauvaise propriété, vous pouvez éditer le chemin d'une "
 "piste à tout moment. Double-cliquez dessus et tapez le nouveau chemin. Lire "
 "l'animation à l'aide du bouton \"Lire du début\" |Lire du début| (Raccourci "
-"par défaut : Shift+D) pour voir les changements instantanément."
+"par défaut :kbd:`Shift + D`) pour voir les changements instantanément."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:106
 msgid "Tutorial: Creating a simple animation"
@@ -218,9 +217,10 @@ msgid "Scene setup"
 msgstr "Configuration de la scène"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:111
+#, fuzzy
 msgid ""
-"For this tutorial, we'll going to create an AnimationPlayer node and a "
-"sprite node as its child."
+"For this tutorial, we'll create an AnimationPlayer node and a sprite node as "
+"its child."
 msgstr ""
 "Pour ce tutoriel, nous allons créer un nœud d'AnimationPlayer et un "
 "nœudsprite de sprite et son enfant."
@@ -230,10 +230,11 @@ msgid "Our scene setup"
 msgstr "Notre configuration de scène"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:119
+#, fuzzy
 msgid ""
-"The sprite holds an image texture and we animate that sprite to move between "
-"two points on the screen. For this tutorial use the default Godot Icon as "
-"the sprites' texture. As a starting point, move the sprite to a left "
+"The sprite holds an image texture. We animate that sprite to move between "
+"two points on the screen. For this tutorial, use the default Godot icon as "
+"the sprite's texture. As a starting point, move the sprite to a left "
 "position on the screen."
 msgstr ""
 "Le sprite contient une texture d'image et nous animons ce sprite pour le "
@@ -299,15 +300,16 @@ msgstr ""
 "l'emplacement de notre sprite pour ce tutoriel et cliquez sur le bouton clé."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:157
+#, fuzzy
 msgid ""
 "As we don't have a track already set up for the transform/location property, "
-"Godot asks, whether it should set it up for us. Click on \"Create\"."
+"Godot asks whether it should set it up for us. Click **Create**."
 msgstr ""
 "Comme nous n'avons pas de piste déjà configurée pour la propriété transform/"
 "location, Godot demande, si il doit la configurée pour nous. Cliquez sur "
 "\"Créer\"."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:161
+#: ../../docs/tutorials/animation/introduction_2d.rst:160
 msgid ""
 "This creates a new track and our first keyframe at the beginning of the "
 "timeline:"
@@ -315,15 +317,15 @@ msgstr ""
 "Cela crée une nouvelle piste et notre première clé d'animation au début de "
 "la timeline :"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:167
+#: ../../docs/tutorials/animation/introduction_2d.rst:166
 msgid "The sprite track"
 msgstr "La piste de sprite"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:170
+#: ../../docs/tutorials/animation/introduction_2d.rst:169
 msgid "The second keyframe"
 msgstr "La deuxième clé d'animation"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:172
+#: ../../docs/tutorials/animation/introduction_2d.rst:171
 msgid ""
 "Now we need to set the destination where our sprite should be headed and how "
 "much time it takes to get there."
@@ -331,7 +333,7 @@ msgstr ""
 "Maintenant, nous devons définir la destination vers laquelle notre sprite "
 "doit se diriger et combien de temps il lui faut pour y arriver."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:175
+#: ../../docs/tutorials/animation/introduction_2d.rst:174
 msgid ""
 "Let's say, we want it to take 2 seconds to go to the other point. By default "
 "the animation is set to last only 1 second, so change this in the timeline "
@@ -342,46 +344,47 @@ msgstr ""
 "changer cela dans les commandes de la ligne de temps : dans le deuxième sous "
 "panel du panel d'animation."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:182
+#: ../../docs/tutorials/animation/introduction_2d.rst:181
 msgid "Animation length"
 msgstr "Durée de l'animation"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:184
+#: ../../docs/tutorials/animation/introduction_2d.rst:183
+#, fuzzy
 msgid ""
-"Click on the timeline header near the 2 second mark and move the sprite to "
+"Click on the timeline header near the 2-second mark and move the sprite to "
 "the target destination on the right side."
 msgstr ""
 "Cliquez sur l'en-tête de la timeline près du repère de 2 secondes et "
 "déplacez le sprite vers la destination cible sur le côté droit."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:187
+#: ../../docs/tutorials/animation/introduction_2d.rst:186
 msgid ""
 "Again, click the key button in the toolbar. This creates our second keyframe."
 msgstr ""
 "De nouveau, cliquez sur le bouton clé dans la barre d'outils. Ceci crée "
 "notre deuxième clé d'animation."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:191
+#: ../../docs/tutorials/animation/introduction_2d.rst:190
 msgid "Run the animation"
 msgstr "Lancer l'animation"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:193
+#: ../../docs/tutorials/animation/introduction_2d.rst:192
 msgid "Click on the \"Play from beginning\" (|Play from beginning|) button."
 msgstr "Cliquez sur le \"Play from beginning\" Jouer depuis le début) Bouton."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:195
+#: ../../docs/tutorials/animation/introduction_2d.rst:194
 msgid "Yay! Our animation runs:"
 msgstr "Yeah ! Notre animation fonctionne :"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:200
+#: ../../docs/tutorials/animation/introduction_2d.rst:199
 msgid "The animation"
 msgstr "L'animation"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:203
+#: ../../docs/tutorials/animation/introduction_2d.rst:202
 msgid "Back and forth"
 msgstr "Allers et retours"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:205
+#: ../../docs/tutorials/animation/introduction_2d.rst:204
 msgid ""
 "Godot has an additional feature here. Like said before, Godot always "
 "calculates the frames between two keyframes. In a loop, the first keyframe "
@@ -392,26 +395,27 @@ msgstr ""
 "première clé d'animation est aussi la dernière si aucune clé d'animation "
 "n'est précisé à la fin."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:213
+#: ../../docs/tutorials/animation/introduction_2d.rst:212
 msgid "Animation loop"
 msgstr "Boucle d'animation"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:215
+#: ../../docs/tutorials/animation/introduction_2d.rst:214
+#, fuzzy
 msgid ""
 "If you set the animation length to 4 seconds now, the animation moves back "
-"and forth. You can change this behaviour if you change the track's loop "
-"mode. This is covered in the next chapter."
+"and forth. You can change this behavior if you change the track's loop mode. "
+"This is covered in the next chapter."
 msgstr ""
 "Si vous réglez la durée de l'animation à 4 secondes maintenant, l'animation "
 "se déplace d'avant en arrière. Vous pouvez modifier ce comportement si vous "
 "changez le mode boucle de la piste. Ceci est abordé dans le chapitre suivant."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:220
-#: ../../docs/tutorials/animation/introduction_2d.rst:228
+#: ../../docs/tutorials/animation/introduction_2d.rst:219
+#: ../../docs/tutorials/animation/introduction_2d.rst:227
 msgid "Track settings"
 msgstr "Paramètres de la piste"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:222
+#: ../../docs/tutorials/animation/introduction_2d.rst:221
 msgid ""
 "Each track has a settings panel at the end, where you can set the update "
 "mode, the track interpolation, and the loop mode."
@@ -419,7 +423,7 @@ msgstr ""
 "Chaque piste a un panneau de configuration à la fin, où vous pouvez définir "
 "le mode de mise à jour, l'interpolation de la piste et le mode boucle."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:230
+#: ../../docs/tutorials/animation/introduction_2d.rst:229
 msgid ""
 "The update mode of a track tells Godot when to update the property values. "
 "This can be:"
@@ -427,22 +431,22 @@ msgstr ""
 "Le mode de mise à jour d'une piste indique à Godot quand mettre à jour les "
 "valeurs des propriétés. Cela peut l'être :"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:233
+#: ../../docs/tutorials/animation/introduction_2d.rst:232
 msgid "Continuous: Update the property on each frame"
 msgstr "Continu : Mise à jour de la propriété sur chaque image"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:234
+#: ../../docs/tutorials/animation/introduction_2d.rst:233
 msgid "Discrete: Only update the property on keyframes"
 msgstr ""
 "Discret : Mise à jour de la propriété uniquement sur les clés d'animation"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:235
+#: ../../docs/tutorials/animation/introduction_2d.rst:234
 msgid "Trigger: Only update the property on keyframes or triggers"
 msgstr ""
 "Trigger : Met à jour la propriété seulement sur les clés d'animation ou les "
 "déclencheurs"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:236
+#: ../../docs/tutorials/animation/introduction_2d.rst:235
 msgid ""
 "Capture: The current value of a property is remembered, and it will blend "
 "with the first animation key found"
@@ -451,11 +455,11 @@ msgstr ""
 "continuellement entre cette valeur et la valeur de la première clé "
 "d'animation trouvée"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:241
+#: ../../docs/tutorials/animation/introduction_2d.rst:240
 msgid "Track mode"
 msgstr "Mode piste"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:243
+#: ../../docs/tutorials/animation/introduction_2d.rst:242
 msgid ""
 "In normal animations, you usually use \"Continuous\". The other types are "
 "used to script complex animations."
@@ -463,7 +467,7 @@ msgstr ""
 "Dans les animations normales, vous utilisez généralement \"Continuous\". Les "
 "autres types sont utilisés pour scripter des animations complexes."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:246
+#: ../../docs/tutorials/animation/introduction_2d.rst:245
 msgid ""
 "The interpolation tells Godot how to calculate the frame values between the "
 "keyframes. These interpolation modes are supported:"
@@ -471,12 +475,12 @@ msgstr ""
 "L'interpolation indique à Godot comment calculer les valeurs d'image entre "
 "les clés d'animation. Ces modes d'interpolation sont pris en charge :"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:249
+#: ../../docs/tutorials/animation/introduction_2d.rst:248
 msgid "Nearest: Set the nearest keyframe value"
 msgstr ""
 "Le plus proche : définit la plus valeur de la clé d'animation la plus proche"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:250
+#: ../../docs/tutorials/animation/introduction_2d.rst:249
 msgid ""
 "Linear: Set the value based on a linear function calculation between the two "
 "keyframes"
@@ -484,7 +488,7 @@ msgstr ""
 "Linéaire : Change la valeur en se basant sur un calcul linéaire entre deux "
 "clés d'animation"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:252
+#: ../../docs/tutorials/animation/introduction_2d.rst:251
 msgid ""
 "Cubic: Set the value based on a cubic function calculation between the two "
 "keyframes"
@@ -492,11 +496,11 @@ msgstr ""
 "Cubique : change la valeur en se basant sur un calcul par fonction cubique "
 "entre deux clés d'animation"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:258
+#: ../../docs/tutorials/animation/introduction_2d.rst:257
 msgid "Track interpolation"
 msgstr "Interpolation de piste"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:260
+#: ../../docs/tutorials/animation/introduction_2d.rst:259
 msgid ""
 "Cubic interpolation leads to a more natural movement, where the animation is "
 "slower at a keyframe and faster between keyframes. This is usually used for "
@@ -507,7 +511,7 @@ msgstr ""
 "Ceci est habituellement utilisé pour l'animation de personnage. "
 "L'interpolation linéaire crée un mouvement plus robotique."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:265
+#: ../../docs/tutorials/animation/introduction_2d.rst:264
 msgid ""
 "Godot supports two loop modes, which affect the animation if it's set to "
 "loop:"
@@ -515,11 +519,11 @@ msgstr ""
 "Godot prend en charge deux modes de boucle, qui affectent l'animation si "
 "elle est réglée pour boucler :"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:271
+#: ../../docs/tutorials/animation/introduction_2d.rst:270
 msgid "Loop modes"
 msgstr "Modes de boucle"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:273
+#: ../../docs/tutorials/animation/introduction_2d.rst:272
 msgid ""
 "Clamp loop interpolation: When this is selected, the animation stops after "
 "the last keyframe for this track. When the first keyframe is reached again, "
@@ -530,7 +534,7 @@ msgstr ""
 "Lorsque la première clé d'animation est atteinte à nouveau, l'animation se "
 "réinitialise à ses valeurs."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:276
+#: ../../docs/tutorials/animation/introduction_2d.rst:275
 msgid ""
 "Wrap loop interpolation: When this is selected, Godot calculates the "
 "animation after the last keyframe to reach the values of the first keyframe "
@@ -540,12 +544,12 @@ msgstr ""
 "calcule l'animation après la dernière clé d'animation pour atteindre à "
 "nouveau les valeurs de la première clé d'animation."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:281
-#: ../../docs/tutorials/animation/introduction_2d.rst:294
+#: ../../docs/tutorials/animation/introduction_2d.rst:280
+#: ../../docs/tutorials/animation/introduction_2d.rst:293
 msgid "Keyframes for other properties"
 msgstr "Clés d'animation pour d'autres propriétés"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:283
+#: ../../docs/tutorials/animation/introduction_2d.rst:282
 msgid ""
 "Godot doesn't restrict you to only edit transform properties. Every property "
 "can be used as a track where you can set keyframes."
@@ -554,23 +558,23 @@ msgstr ""
 "transformations. Toutes les propriétés peuvent être utilisées comme piste où "
 "vous pouvez insérer des clés d'animation."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:286
+#: ../../docs/tutorials/animation/introduction_2d.rst:285
+#, fuzzy
 msgid ""
 "If you select your sprite while the animation panel is visible, you get a "
-"small keyframe button for all of the sprite's properties. Click on this "
-"button and Godot automatically adds a track and keyframe to the current "
-"animation."
+"small keyframe button for all the sprite's properties. Click on this button "
+"and Godot automatically adds a track and keyframe to the current animation."
 msgstr ""
 "Si vous sélectionnez votre sprite pendant que le panel d'animation est "
 "visible, vous obtenez un petit bouton \"clé d'animation\" pour chacune des "
 "propriétés du sprite. cliquez sur le bouton et Godot ajoute automatiquement "
 "une piste et clé d'animation à votre animation actuelle."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:297
+#: ../../docs/tutorials/animation/introduction_2d.rst:296
 msgid "Edit keyframes"
 msgstr "Modifier les clés d'animation"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:299
+#: ../../docs/tutorials/animation/introduction_2d.rst:298
 msgid ""
 "For advanced use and to edit keyframes in detail, You can click on them to "
 "bring up the keyframe editor in the inspector. You can use this to directly "
@@ -580,11 +584,11 @@ msgstr ""
 "pouvez cliqué sur elles pour faire apparaître l'éditeur de clé d'animation "
 "dans l'inspecteur."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:306
+#: ../../docs/tutorials/animation/introduction_2d.rst:305
 msgid "Keyframe editor editing a key"
 msgstr "Éditeur clé d'animation éditant une clé d'animation"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:308
+#: ../../docs/tutorials/animation/introduction_2d.rst:307
 msgid ""
 "Additionally, you can also edit the easing value for this keyframe by "
 "clicking and dragging the easing setting. This tells Godot, how to change "
@@ -595,7 +599,7 @@ msgstr ""
 "d'assouplissement. Ceci indique à Godot, comment changer les valeurs des "
 "propriétés quand il atteint cette clé d'animation."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:312
+#: ../../docs/tutorials/animation/introduction_2d.rst:311
 msgid ""
 "You usually tweak your animations this way, when the movement doesn't \"look "
 "right\"."
@@ -603,11 +607,11 @@ msgstr ""
 "Vous ajustez généralement vos animations de cette façon, lorsque le "
 "mouvement ne \"semble pas correct\"."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:316
+#: ../../docs/tutorials/animation/introduction_2d.rst:315
 msgid "Advanced: Call Method tracks"
 msgstr "Avancé : Pistes de la méthode d'appel"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:318
+#: ../../docs/tutorials/animation/introduction_2d.rst:317
 msgid ""
 "Godot's animation engine doesn't stop here. If you're already comfortable "
 "with Godot's scripting language :ref:`doc_gdscript` and :doc:`/classes/"
@@ -619,7 +623,7 @@ msgstr ""
 "classes/index` vous savez que chaque type de nœud est une classe et possède "
 "plusieurs méthodes que vous pouvez appeler."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:324
+#: ../../docs/tutorials/animation/introduction_2d.rst:323
 msgid ""
 "For example, the :ref:`class_AudioStreamPlayer` node type has a method to "
 "play an audio stream."
@@ -627,7 +631,7 @@ msgstr ""
 "Par exemple le nœud type :ref:`class_AudioStreamPlayer` possède une méthode "
 "pour jouer un flux audio."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:327
+#: ../../docs/tutorials/animation/introduction_2d.rst:326
 msgid ""
 "Wouldn't it be great to use a method at a specific keyframe in an animation? "
 "This is where \"Call Method Tracks\" come in handy. These tracks reference a "
@@ -642,7 +646,7 @@ msgstr ""
 "clé d'animation contient le nom et les arguments de la méthode qu'on "
 "souhaite appeler au moment ou Godot atteint la clé d'animation."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:333
+#: ../../docs/tutorials/animation/introduction_2d.rst:332
 msgid ""
 "To demonstrate, we're going to use a call method track to play audio at a "
 "specific keyframe. Normally to play audio you should use an audio track, but "
@@ -653,7 +657,7 @@ msgstr ""
 "son on devrait utiliser une piste audio, mais pour le bien de la "
 "démonstration de l'appel de méthodes on va le faire de cette manière."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:337
+#: ../../docs/tutorials/animation/introduction_2d.rst:336
 msgid ""
 "Add a :ref:`class_AudioStreamPlayer` to the Scene Tree and setup a stream "
 "using an audio file you put in your project."
@@ -662,24 +666,24 @@ msgstr ""
 "un flux audio, utilisant un fichier audio que vous rajouter dans votre "
 "projet."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:340
+#: ../../docs/tutorials/animation/introduction_2d.rst:339
 msgid ""
 "Click on \"Add track\" (|Add track|) on the animation panel's track controls."
 msgstr ""
 "Cliquez sur \"Ajouter une piste\" (|Add track|) dans les commandes de piste "
 "du panneau d'animation."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:343
+#: ../../docs/tutorials/animation/introduction_2d.rst:342
 msgid "Select \"Add Call Method Track\" from the list of possible track types."
 msgstr ""
 "Sélectionner \"Add Call Method Track\" (ou \"ajouter une piste d'appel de "
 "méthode\") depuis la liste des différents types de piste."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:348
+#: ../../docs/tutorials/animation/introduction_2d.rst:347
 msgid "Add Call Method Track"
 msgstr "Ajouter Une Piste d'Appel de Méthode"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:350
+#: ../../docs/tutorials/animation/introduction_2d.rst:349
 msgid ""
 "Select the :ref:`class_AudioStreamPlayer` node in the selection window. "
 "Godot adds the track with the reference to the node."
@@ -687,11 +691,11 @@ msgstr ""
 "Sélectionner le nœud :ref:`class_AudioStreamPlayer`dans la fenêtre de "
 "sélection. Godot ajoute la piste avec la référence au nœud."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:356
+#: ../../docs/tutorials/animation/introduction_2d.rst:355
 msgid "Select AudioStreamPlayer"
 msgstr "Sélectionner L'AudioStreamPlayer"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:358
+#: ../../docs/tutorials/animation/introduction_2d.rst:357
 msgid ""
 "Right click the timeline where Godot should play the sample and click the "
 "\"Insert Key\" option. This will bring up a list of methods that can be "
@@ -702,7 +706,7 @@ msgstr ""
 "être appelées pour l'AudioStreamPlayer devrait apparaître. Sélectionner la "
 "première."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:365
+#: ../../docs/tutorials/animation/introduction_2d.rst:364
 msgid ""
 "When Godot reaches the keyframe, Godot calls the :ref:"
 "`class_AudioStreamPlayer` node's \"play\" function and the stream plays."
@@ -710,7 +714,7 @@ msgstr ""
 "Quand Godot atteint la clé d'animation, Godot appelle la fonction \"play\" "
 "du nœud AudioStreamPlayer et le flux audio est joué."
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:369
+#: ../../docs/tutorials/animation/introduction_2d.rst:368
 msgid ""
 "You can change its position by dragging it on the timeline, you can also "
 "click on the keyframe and use the keyframe settings in the inspector."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,14 +46,15 @@ msgstr ""
 "celle de cette planète."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:17
+#, fuzzy
 msgid ""
 "This tutorial assumes you are familiar with how to set up a basic scene "
 "including: a :ref:`Camera <class_Camera>`, a :ref:`light source "
 "<class_OmniLight>`, a :ref:`Mesh Instance <class_MeshInstance>` with a :ref:"
-"`Primitive Mesh <class_PrimitiveMesh>`, and applying a :ref:`Spatial "
-"Material <class_SpatialMaterial>` to the mesh. The focus will be on using "
-"the :ref:`Viewport <class_Viewport>` to dynamically create textures that can "
-"be applied to the mesh."
+"`Primitive Mesh <class_PrimitiveMesh>`, and applying a :ref:`SpatialMaterial "
+"<class_SpatialMaterial>` to the mesh. The focus will be on using the :ref:"
+"`Viewport <class_Viewport>` to dynamically create textures that can be "
+"applied to the mesh."
 msgstr ""
 "Ce tutoriel suppose que vous êtes familier avec la façon de mettre en place "
 "une scène de base comprenant : a :ref:`Camera <class_Camera>`, a :ref:"
@@ -65,7 +66,8 @@ msgstr ""
 "appliquées au maillage."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:23
-msgid "During the course of this tutorial, we'll cover the following topics:"
+#, fuzzy
+msgid "In this tutorial, we'll cover the following topics:"
 msgstr "Durant ce tutoriel, nous couvrirons les sujets suivant :"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:25
@@ -197,9 +199,10 @@ msgstr ""
 "SpatialMaterial`` :"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:80
+#, fuzzy
 msgid ""
 "Now we go into the :ref:`Mesh Instance <class_MeshInstance>` and add a :ref:"
-"`Spatial Material <class_SpatialMaterial>` to it. No need for a special :ref:"
+"`SpatialMaterial <class_SpatialMaterial>` to it. No need for a special :ref:"
 "`Shader Material <class_ShaderMaterial>` (although that would be a good idea "
 "for more advanced effects, like the atmosphere in the example above)."
 msgstr ""
@@ -218,8 +221,9 @@ msgstr ""
 "``Edit`` :"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:86
+#, fuzzy
 msgid ""
-"Open the newly created :ref:`Spatial Material <class_SpatialMaterial>` and "
+"Open the newly created :ref:`SpatialMaterial <class_SpatialMaterial>` and "
 "scroll down to the \"Albedo\" section and click beside the \"Texture\" "
 "property to add an Albedo Texture. Here we will apply the texture we made. "
 "Choose \"New ViewportTexture\""
@@ -285,12 +289,14 @@ msgstr ""
 "texture et voyons ce qui se passe."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:120
+#, fuzzy
 msgid ""
 "Not too bad. If you look around, you can see that the seam has now "
 "disappeared, but in its place, we have pinching at the poles. This pinching "
-"is due to the way Godot maps textures to spheres in its :ref:`Spatial "
-"Material <class_SpatialMaterial>`. It uses a projection technique called "
-"equirectangular projection, which translates a spherical map onto a 2D plane."
+"is due to the way Godot maps textures to spheres in its :ref:"
+"`SpatialMaterial <class_SpatialMaterial>`. It uses a projection technique "
+"called equirectangular projection, which translates a spherical map onto a "
+"2D plane."
 msgstr ""
 "Pas trop mal. Si vous regardez autour de vous, vous pouvez voir que la "
 "jointure a maintenant disparu, mais à sa place, nous avons des pincements "
@@ -534,6 +540,7 @@ msgstr ""
 "notre sortie ``COLOR`` comme valeur de ``Roughness``."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:282
+#, fuzzy
 msgid ""
 "You'll notice that very little changes except that the planet is no longer "
 "reflecting the sky. This is happening because, by default, when something is "
@@ -543,8 +550,9 @@ msgid ""
 "Texture <class_ViewportTexture>` is ``1``, resulting in the planet texture "
 "being drawn with slightly fainter colors and a ``Roughness`` value of ``1`` "
 "everywhere. To correct this, we go into the :ref:`Viewport <class_Viewport>` "
-"and set \"Transparent Bg\" to on. Since we are now rendering one transparent "
-"object on top of another, we want to enable ``blend_premul_alpha``:"
+"and enable the \"Transparent Bg\" property. Since we are now rendering one "
+"transparent object on top of another, we want to enable "
+"``blend_premul_alpha``:"
 msgstr ""
 "Vous remarquerez que très peu de changements, sauf que la planète ne reflète "
 "plus le ciel. Cela se produit parce que, par défaut, quand quelque chose est "

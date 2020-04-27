@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:4
 msgid "Command line tutorial"
-msgstr ""
+msgstr "Використання командного рядка"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
 msgid ""
@@ -28,16 +28,19 @@ msgid ""
 "command line. Given the engine relies on almost no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
+"Деякі розробники люблять широко використовувати командний рядок. Godot "
+"розроблений так, щоб бути дружелюбним до них, тому ось кроки для роботи "
+"виключно з командного рядка. З огляду на те, що движок майже не має "
+"зовнішніх бібліотек, час ініціалізації досить швидкий, що робить його "
+"придатним для цього робочого процесу."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
-#, fuzzy
 msgid "Command line reference"
-msgstr "Зразок"
+msgstr "Команди командного рядка"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
-#, fuzzy
 msgid "**General options**"
-msgstr "Властивості вузла"
+msgstr "**Загальні команди**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:20
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:34
@@ -56,54 +59,55 @@ msgid "Description"
 msgstr "Опис"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
-#, fuzzy
 msgid "``-h``, ``--help``, ``/?``"
-msgstr "``*`` ``/`` ``%``"
+msgstr "``-h``, ``--help``, ``/?``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "Display the list of command line options."
-msgstr ""
+msgstr "Виводить список команд командного рядка."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "``--version``"
-msgstr ""
+msgstr "``--version``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "Display the version string."
-msgstr ""
+msgstr "Виводить рядок версії."
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:26
+msgid "``-v``, ``--verbose``"
+msgstr "``-v``, ``--verbose``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:26
 #, fuzzy
-msgid "``-v``, ``--verbose``"
-msgstr "``+`` ``-``"
-
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:26
 msgid "Use verbose stdout mode."
-msgstr ""
+msgstr "Використовує детальний режим stdout."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "``--quiet``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
+#, fuzzy
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr ""
+"Тихий режим, приховує повідомлення stdout. Помилки все ще відображаються."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:31
-#, fuzzy
 msgid "**Run options**"
-msgstr "**Опис**"
+msgstr "**Команди запуску**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
-#, fuzzy
 msgid "``-e``, ``--editor``"
-msgstr "``+`` ``-``"
+msgstr "``-e``, ``--editor``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid ""
 "Start the editor instead of running the scene (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Запускає редактор замість запуску сцени (:ref:`інструменти "
+"<doc_introduction_to_the_buildsystem_tools>` повинні бути включені)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid "``-p``, ``--project-manager``"
@@ -114,15 +118,17 @@ msgid ""
 "Start the project manager, even if a project is auto-detected (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Запускає керівник проектів, навіть якщо проект виявлено автоматично (:ref:"
+"`інструменти <doc_introduction_to_the_buildsystem_tools>` повинні бути "
+"включені)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
-#, fuzzy
 msgid "``-q``, ``--quit``"
-msgstr "``+`` ``-``"
+msgstr "``-q``, ``--quit``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 msgid "Quit after the first iteration."
-msgstr ""
+msgstr "Вийти після першої ітерації."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid "``-l <locale>``, ``--language <locale>``"
@@ -133,24 +139,25 @@ msgid ""
 "Use a specific locale (<locale> being a two-letter code). See :ref:"
 "`doc_locales` for more details."
 msgstr ""
+"Використати спеціальну локаль (<locale> - це двобуквенний код). Дивіться :"
+"ref:`doc_locales` для більш докладної інформації."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
-#, fuzzy
 msgid "``--path <directory>``"
-msgstr "Напрямок"
+msgstr "``--path <directory>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "Path to a project (<directory> must contain a 'project.godot' file)."
-msgstr ""
+msgstr "Шлях до проекту (<directory> повинен містити файл 'project.godot')."
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:46
+msgid "``-u``, ``--upwards``"
+msgstr "``-u``, ``--upwards``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:46
 #, fuzzy
-msgid "``-u``, ``--upwards``"
-msgstr "``+`` ``-``"
-
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:46
 msgid "Scan folders upwards for 'project.godot' file."
-msgstr ""
+msgstr "Сканування вищих папок на наявність файлу 'project.godot'."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "``--main-pack <file>``"
@@ -158,7 +165,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "Path to a pack (.pck) file to load."
-msgstr ""
+msgstr "Шлях до файлу пакета (.pck) для завантаження."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:50
 msgid "``--render-thread <mode>``"
@@ -170,6 +177,9 @@ msgid ""
 "<class_ProjectSettings_property_rendering/threads/thread_model>` for more "
 "details."
 msgstr ""
+"Режим рендерінгу ('unsafe' (\"небезпечний\"), 'safe' (\"безпечний\"), "
+"'separate' (\"окремий\")). Докладнішу інформацію дивіться :ref:`Thread Model "
+"<class_ProjectSettings_property_rendering/threads/thread_model>`."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid "``--remote-fs <address>``"
@@ -177,7 +187,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
-msgstr ""
+msgstr "Віддалена файлова система (``<host/IP>[:<port>]`` адреса)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:54
 msgid "``--audio-driver <driver>``"
@@ -187,6 +197,8 @@ msgstr ""
 msgid ""
 "Audio driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
+"Аудіо драйвер. Спершу використовуйте ``--help`` для відображення списку "
+"доступних драйверів."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:56
 msgid "``--video-driver <driver>``"
@@ -196,11 +208,12 @@ msgstr ""
 msgid ""
 "Video driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
+"Відео драйвер. Спершу використовуйте ``--help`` для відображення списку "
+"доступних драйверів."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:59
-#, fuzzy
 msgid "**Display options**"
-msgstr "**Опис**"
+msgstr "**Команди відображення**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:64
 msgid "``-f``, ``--fullscreen``"
@@ -208,7 +221,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:64
 msgid "Request fullscreen mode."
-msgstr ""
+msgstr "Запросити повноекранний режим."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "``-m``, ``--maximized``"
@@ -216,17 +229,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "Request a maximized window."
-msgstr ""
+msgstr "Запросити максимальне вікно."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:68
-#, fuzzy
 msgid "``-w``, ``--windowed``"
-msgstr "``+`` ``-``"
+msgstr "``-w``, ``--windowed``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:68
-#, fuzzy
 msgid "Request windowed mode."
-msgstr "Обробка"
+msgstr "Запросити віконний режим."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "``-t``, ``--always-on-top``"
@@ -234,7 +245,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "Request an always-on-top window."
-msgstr ""
+msgstr "Запросити вікно поверх інших вікон."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "``--resolution <W>x<H>``"
@@ -242,7 +253,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "Request window resolution."
-msgstr ""
+msgstr "Запросити розширення вікна."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "``--position <X>,<Y>``"
@@ -250,15 +261,16 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "Request window position."
-msgstr ""
+msgstr "Запросити позицію вікна."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
 msgid "``--low-dpi``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
+#, fuzzy
 msgid "Force low-DPI mode (macOS and Windows only)."
-msgstr ""
+msgstr "Примусовий режим низького розширення (лише для macOS та Windows)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid "``--no-window``"
@@ -268,11 +280,11 @@ msgstr ""
 msgid ""
 "Disable window creation (Windows only). Useful together with ``--script``."
 msgstr ""
+"Вимкнути створення вікон (лише для Windows). Корисно разом із ``--script``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:81
-#, fuzzy
 msgid "**Debug options**"
-msgstr "**Опис**"
+msgstr "**Команди налагодження**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid ""
@@ -280,15 +292,17 @@ msgid ""
 "(they require ``debug`` or ``release_debug`` build targets, see :ref:"
 "`doc_introduction_to_the_buildsystem_target` for more details)."
 msgstr ""
+"Команди налагодження доступні лише в редакторі та шаблонах експорту "
+"налагодження (вони вимагають ``debug``, або ``release_debug``, дивіться :ref:"
+"`doc_introduction_to_the_buildsystem_target` для більш детальної інформації)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
-#, fuzzy
 msgid "``-d``, ``--debug``"
-msgstr "``+`` ``-``"
+msgstr "``-d``, ``--debug``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
 msgid "Debug (local stdout debugger)."
-msgstr ""
+msgstr "Налагодження (локальний налагоджувач stdout)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid "``-b``, ``--breakpoints``"
@@ -299,6 +313,8 @@ msgid ""
 "Breakpoint list as source::line comma-separated pairs, no spaces (use %%20 "
 "instead)."
 msgstr ""
+"Список точок розриву в вигляді пар джерело::рядок, розділених комами, без "
+"пробілів (використовуйте замість пробілів %% 20)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "``--profiling``"
@@ -306,7 +322,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Enable profiling in the script debugger."
-msgstr ""
+msgstr "Увімкнути профілювання у наладчику скриптів."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "``--remote-debug <address>``"
@@ -314,7 +330,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "Remote debug (``<host/IP>:<port>`` address)."
-msgstr ""
+msgstr "Віддалене налагодження (``<host/IP>:<port>`` адреса)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "``--debug-collisions``"
@@ -322,23 +338,25 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "Show collision shapes when running the scene."
-msgstr ""
+msgstr "Показати форми зіткнення під час запуску сцени."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 msgid "``--debug-navigation``"
-msgstr ""
+msgstr "``--debug-navigation``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 msgid "Show navigation polygons when running the scene."
-msgstr ""
+msgstr "Показати навігаційні полігони під час запуску сцени."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:104
 msgid "``--frame-delay <ms>``"
-msgstr ""
+msgstr "``--frame-delay <ms>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:104
 msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
 msgstr ""
+"Імітувати високе завантаження процесора (затримувати кожен кадр на <ms> "
+"мілісекунд)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:106
 msgid "``--time-scale <scale>``"
@@ -347,16 +365,19 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:106
 msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
 msgstr ""
+"Прискорити шкалу часу (більші значення швидші, 1,0 - нормальна швидкість)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:108
 msgid "``--disable-render-loop``"
-msgstr ""
+msgstr "``--disable-render-loop``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:108
 msgid ""
 "Disable render loop so rendering only occurs when called explicitly from "
 "script."
 msgstr ""
+"Вимкнути цикл візуалізації (рендеру), візуалізація відбувається лише коли "
+"викликається із скрипту."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "``--disable-crash-handler``"
@@ -364,7 +385,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "Disable crash handler when supported by the platform code."
-msgstr ""
+msgstr "Вимкнути обробник збоїв, якщо це підтримується кодом платформи."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:112
 msgid "``--fixed-fps <fps>``"
@@ -375,6 +396,8 @@ msgid ""
 "Force a fixed number of frames per second. This setting disables real-time "
 "synchronization."
 msgstr ""
+"Форсувати фіксовану кількість кадрів в секунду. Цей параметр вимикає "
+"синхронізацію в режимі реального часу."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "``--print-fps``"
@@ -382,21 +405,19 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "Print the frames per second to the stdout."
-msgstr ""
+msgstr "Вивести кадри за секунду на екран."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:117
-#, fuzzy
 msgid "**Standalone tools**"
-msgstr "**підкреслення**"
+msgstr "**Автономні інструменти**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
 msgid "``-s <script>``, ``--script <script>``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
-#, fuzzy
 msgid "Run a script."
-msgstr "Як створити проект"
+msgstr "Запуск скрипту."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "``--check-only``"
@@ -404,7 +425,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "Only parse for errors and quit (use with ``--script``)."
-msgstr ""
+msgstr "Розібрати лише помилки та закрите (використовуйте ``--script``)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:126
 msgid "``--export <target>``"
@@ -416,6 +437,9 @@ msgid ""
 "path ends with .pck or .zip (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Експортує проект використовуючи задану ціль експорту. Експортує лише "
+"основний пакет, якщо шлях закінчується .pck, або .zip (:ref:`інструменти "
+"<doc_introduction_to_the_buildsystem_tools>` повинні бути включені)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid "``--export-debug <target>``"
@@ -426,6 +450,8 @@ msgid ""
 "Like ``--export``, but use debug template (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Як ``--export``, але використовує шаблон налагодження ( :ref: `інструменти "
+"<doc_introduction_to_the_buildsystem_tools>` повинні бути включені)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid "``--doctool <path>``"
@@ -447,6 +473,9 @@ msgid ""
 "Disallow dumping the base types (used with ``--doctool``, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Забороняє скидання базових типів (використовується з ``--doctool``,  :ref:"
+"`інструменти<doc_introduction_to_the_buildsystem_tools>` повинні бути "
+"включені)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
 msgid "``--build-solutions``"
@@ -457,16 +486,21 @@ msgid ""
 "Build the scripting solutions (e.g. for C# projects, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Будує скрипт рішень (наприклад, для проектів C#, ref:`інструменти "
+"<doc_introduction_to_the_buildsystem_tools>` повинні бути включені)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:136
 msgid "``--gdnative-generate-json-api``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:136
+#, fuzzy
 msgid ""
 "Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Створює дамп JSON Godot API для прив'язок GDNative ( :ref:`інструменти "
+"<doc_introduction_to_the_buildsystem_tools>` повинні бути включені)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
 msgid "``--test <test>``"
@@ -477,6 +511,10 @@ msgid ""
 "Run a unit test. Use ``--help`` first to display the list of tests. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Виконує тест одиниці. Спершу використовуйте ``--help`` для відображення "
+"списку тестів. ( :ref:"
+"`інструменти<doc_introduction_to_the_buildsystem_tools>` повинні бути "
+"включені)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:142
 msgid "Path"
@@ -489,10 +527,14 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
+"Рекомендується, щоб ваш бінарний код Godot був у вашій змінній PATH, щоб "
+"його можна було легко виконати з будь-якого місця, набравши текст ``godot``. "
+"Ви можете зробити так в Linux, помістивши в бінарний файл Godot ``/usr/local/"
+"bin`` і переконавшись, що він викликається з допомогою ``godot``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:150
 msgid "Setting the project path"
-msgstr ""
+msgstr "Налаштування шляху проекта"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:152
 msgid ""
@@ -500,22 +542,29 @@ msgid ""
 "working directory is, you may need to set the path to your project for any "
 "of the following commands to work correctly."
 msgstr ""
+"Залежно від того, де розміщений ваш бінарний файл Godot та який ваш поточний "
+"робочий каталог, вам може знадобитися встановити шлях до вашого проекту, щоб "
+"будь-яка з наступних команд працювала правильно."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:156
 msgid ""
 "This can be done by giving the path to the ``project.godot`` file of your "
 "project as either the first argument, like this:"
 msgstr ""
+"Це можна зробити, вказавши шлях до файлу ``project.godot`` вашого проекту як "
+"першого аргументу, наприклад:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:163
 msgid "Or by using the ``--path`` argument:"
-msgstr ""
+msgstr "Або використовуючи ``--path`` аргумент:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:169
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr ""
+"Наприклад, повна команда експорту вашої гри (описано нижче) може виглядати "
+"так:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:176
 msgid "Creating a project"
@@ -526,14 +575,16 @@ msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
 msgstr ""
+"Створення проекту з командного рядка можна здійснити, перемістивши оболонку "
+"до потрібного місця та створивши файл project.godot."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:190
 msgid "The project can now be opened with Godot."
-msgstr ""
+msgstr "Тепер проект можна відкрити в Godot."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:194
 msgid "Running the editor"
-msgstr ""
+msgstr "Запуск редактора"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:196
 msgid ""
@@ -541,16 +592,21 @@ msgid ""
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
+"Запуск редактора виконується шляхом введення команди Godot з позначкою ``-"
+"e``. Це потрібно робити з каталогу проекту, або підкаталогу, інакше команда "
+"ігнорується і з'являється менеджер проектів."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:204
 msgid ""
 "If a scene has been created and saved, it can be edited later by running the "
 "same code with that scene as argument."
 msgstr ""
+"Якщо сцена була створена та збережена, її можна буде відредагувати пізніше, "
+"запустивши той самий код із цією сценою в якості аргумента."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:212
 msgid "Erasing a scene"
-msgstr ""
+msgstr "Видаляння сцени"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:214
 msgid ""
@@ -558,26 +614,31 @@ msgid ""
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
 "scene or else an error will be thrown upon opening."
 msgstr ""
+"Godot дружить з вашою файловою системою і не створюватиме зайві файли "
+"метаданих. Використовуйте ``rm`` для видалення файлу сцени. Переконайтеся, "
+"що ніщо не посилається на цю сцену, інакше виникне помилка."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:223
 msgid "Running the game"
-msgstr ""
+msgstr "Запуск гри"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:225
 msgid ""
 "To run the game, simply execute Godot within the project directory or "
 "subdirectory."
 msgstr ""
+"Щоб запустити гру, просто введіть Godot в каталозі, або підкаталозі, проекту."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:232
 msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
 msgstr ""
+"Коли певну сцену потрібно протестувати, передайте її в командний рядок."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:240
 msgid "Debugging"
-msgstr "Діагностика"
+msgstr "Налагодження"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:242
 msgid ""
@@ -585,17 +646,25 @@ msgid ""
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for running either the game or a simple scene."
 msgstr ""
+"Виловлювання помилок у командному рядку можуть бути складним завданням, "
+"оскільки вони просто проходять мимо. Для цього надається відладчик "
+"командного, викликається додаванням ``-d``. Він працює для запуску, або гри, "
+"або простої сцени."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:257
 msgid "Exporting"
 msgstr "Експортування"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:259
+#, fuzzy
 msgid ""
 "Exporting the project from the command line is also supported. This is "
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
+"Також підтримується експорт проекту з командного рядка. Це особливо корисно "
+"для безперервних інтеграційних налаштувань. Версія Godot, яка без заголовка "
+"(побудова сервера, без відео) ідеально підходить для цього."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:268
 msgid ""
@@ -604,16 +673,22 @@ msgid ""
 "platforms from the command line, try exporting to a non-recognized platform "
 "and the full listing of platforms your configuration supports will be shown."
 msgstr ""
+"Імена платформ, розпізнані комутатором, як ``--export``, такі самі, як "
+"відображені в майстрі експорту редактора. Щоб отримати список підтримуваних "
+"платформ з командного рядка, спробуйте експорт на невпізнану платформу, і "
+"буде показано повний перелік платформ, які підтримують вашу конфігурацію."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:274
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
+"Для експорту налагодженої версії гри використовуйте перемикач ``--export-"
+"debug`` замість ``--export``. Їх параметри та використання однакові."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:278
 msgid "Running a script"
-msgstr ""
+msgstr "Запуск скрипта"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:280
 msgid ""
@@ -621,21 +696,28 @@ msgid ""
 "feature is especially useful in large projects, for batch conversion of "
 "assets or custom import/export."
 msgstr ""
+"Можна запустити простий .gd скрипт з командного рядка. Ця особливість "
+"особливо корисна у великих проектах для пакетної конверсії ассетів, або "
+"спеціального імпорту/експорту."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:284
 msgid "The script must inherit from SceneTree or MainLoop."
 msgstr ""
+"Скрипт повинен успадковуватись від SceneTree (Дерева сцен), або MainLoop "
+"(Головного циклу)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:286
 msgid "Here is a simple example of how it works:"
-msgstr ""
+msgstr "Ось простий приклад того, як це працює:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:297
 msgid "And how to run it:"
-msgstr ""
+msgstr "І як це запустити:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
 msgid ""
 "If no project.godot exists at the path, current path is assumed to be the "
 "current working directory (unless ``-path`` is specified)."
 msgstr ""
+"Якщо по шляху немає жодного project.godot, поточний шлях вважається поточним "
+"робочим каталогом (якщо не вказано ``-path``)."

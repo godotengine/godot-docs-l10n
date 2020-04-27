@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,22 +19,23 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:4
 msgid "Importing audio samples"
-msgstr ""
+msgstr "Імпорт аудіо нарізків"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
-#, fuzzy
 msgid "Why import?"
-msgstr "imported"
+msgstr "Навіщо імпортувати?"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
 msgid ""
 "Raw audio data in general is large and undesired. Godot provides two main "
 "options to import your audio data: WAV and Ogg Vorbis."
 msgstr ""
+"Сирі аудіодані загалом великі і небажані. Godot пропонує два основні "
+"варіанти імпорту аудіоданих: WAV та Ogg Vorbis."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
-msgstr ""
+msgstr "Кожен має різні переваги."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:14
 msgid ""
@@ -42,28 +43,32 @@ msgid ""
 "play back (hundreds of simultaneous voices in this format are fine), but "
 "take up significant space."
 msgstr ""
+"Файли WAV використовують необроблені дані, або легке стиснення, пред'являють "
+"кілька вимог до процесора для відтворення (сотні одночасних голосів у цьому "
+"форматі чудові), але займають значне місце."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:15
 msgid ""
 "Ogg Vorbis files use a stronger compression that results in much smaller "
 "file size, but require significantly more processing power to play back."
 msgstr ""
+"Файли Ogg Vorbis використовують більш сильне стиснення, що призводить до "
+"набагато меншого розміру файлу, але для відтворення потрібна значно більша "
+"потужність обробки."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:20
 msgid "Here is a comparative chart."
-msgstr ""
+msgstr "Ось порівняльна діаграма."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "Format"
 msgstr "Формат"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
-#, fuzzy
 msgid "1 second of audio"
-msgstr "1 секунда звукових даних"
+msgstr "1 секунда аудіо"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
-#, fuzzy
 msgid "WAV 24-bit, 96 kHz, stereo"
 msgstr "24-бітовий WAV, 96 кГц, стерео"
 
@@ -72,7 +77,6 @@ msgid "576 KB"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
-#, fuzzy
 msgid "WAV 16-bit, 44 kHz, mono"
 msgstr "16-бітовий WAV, 44 кГц, моно"
 
@@ -81,7 +85,6 @@ msgid "88 KB"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
-#, fuzzy
 msgid "WAV 16-bit, IMA-ADPCM, mono"
 msgstr "16-бітовий WAV, IMA-ADPCM, моно"
 
@@ -90,18 +93,16 @@ msgid "22 KB"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
-#, fuzzy
 msgid "Ogg Vorbis 128 Kb/s, stereo"
-msgstr "96 кбіт/с OGG Vorbis, стерео"
+msgstr "Ogg Vorbis 128 Kb/s, стерео"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
 msgid "16 KB"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
-#, fuzzy
 msgid "Ogg Vorbis 96 Kb/s, stereo"
-msgstr "96 кбіт/с OGG Vorbis, стерео"
+msgstr "Ogg Vorbis 96 Kb/s, стерео"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 msgid "12 KB"
@@ -112,11 +113,12 @@ msgid ""
 "Consider using WAV for short and repetitive sound effects, and Ogg Vorbis "
 "for music, speech, and long sound effects."
 msgstr ""
+"Старайтеся використовувати WAV для коротких та повторюваних звукових "
+"ефектів, а Ogg Vorbis - для музики, мови та довгих звукових ефектів."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:40
-#, fuzzy
 msgid "Best practices"
-msgstr "Оптимальні варіанти"
+msgstr "Кращі практики"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:42
 msgid ""
@@ -129,6 +131,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:49
 msgid "As you can see above, sound effects become huge with reverb added."
 msgstr ""
+"Як ви бачите вище, звукові ефекти стають величезними з додаванням "
+"реверберації."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
 msgid "Trimming"
@@ -141,10 +145,16 @@ msgid ""
 "saving to a waveform, increase their size unnecessarily and add latency to "
 "the moment they are played back."
 msgstr ""
+"Часто трапляється, що форма хвилі експортується з довгими тишами на початку "
+"та в кінці. Вони вставляються за допомогою DAW під час збереження у формі "
+"хвилі, збільшують розмір без необхідності та додають затримку до моменту "
+"відтворення."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
 msgid "Importing as WAV with the **Trimming** option enabled solves this."
 msgstr ""
+"Імпорт в якості WAV з увімкненою опцією **Trimming** (Обрізання) вирішує цю "
+"проблему."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
 msgid "Looping"
@@ -156,9 +166,15 @@ msgid ""
 "can add loop points to WAV files). This is useful for sound effects, such as "
 "engines, machine guns etc. Ping-pong looping is also supported."
 msgstr ""
+"Godot підтримує циклічність у семплах (нарізках) (такі інструменти, як Sound "
+"Forge або Audition, можуть додавати точки циклу до файлів WAV). Це корисно "
+"для таких звукових ефектів, як двигуни, кулемети тощо. Також підтримується "
+"цикл пінг-понгу."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:70
 msgid ""
 "As an alternative, the Import dock has a **Loop** option that enables "
 "looping for the entire sample when importing."
 msgstr ""
+"Як альтернатива, панель Імпорт має опцію **Loop** (Цикл), яка дозволяє "
+"циклічно використовувати весь семпл (нарізок) при імпорті."

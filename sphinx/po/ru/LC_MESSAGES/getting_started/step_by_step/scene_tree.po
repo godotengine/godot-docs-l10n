@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,6 @@ msgid "Introduction"
 msgstr "Введение"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
-#, fuzzy
 msgid ""
 "In previous tutorials, everything revolved around the concept of nodes. "
 "Scenes are collections of nodes. They become active once they enter the "
@@ -54,21 +53,19 @@ msgstr ""
 "языки, система сцен и т.д."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:21
-#, fuzzy
 msgid ""
 "When initialization is complete, :ref:`OS <class_OS>` needs to be supplied "
 "a :ref:`MainLoop <class_MainLoop>` to run. Up to this point, all this is "
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
-"После завершения инициализации, для :ref:`OS <class_OS>` должен быть "
+"После завершения инициализации, :ref:`OS <class_OS>` должен быть "
 "предоставлен :ref:`MainLoop <class_MainLoop>` для запуска. До этого момента "
 "все это работало внутри (вы можете проверить файл main/main.cpp в исходном "
 "коде, если вам когда-нибудь будет интересно посмотреть, как это работает "
 "внутри)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:27
-#, fuzzy
 msgid ""
 "The user program, or game, starts in the MainLoop. This class has a few "
 "methods, for initialization, idle (frame-synchronized callback), fixed "
@@ -99,7 +96,6 @@ msgstr ""
 "и сервера являются API низкого уровня."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
-#, fuzzy
 msgid ""
 "The scene system provides its own main loop to OS, :ref:`SceneTree "
 "<class_SceneTree>`. This is automatically instanced and set when running a "
@@ -119,13 +115,12 @@ msgstr ""
 "применений:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:49
-#, fuzzy
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
 "added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)."
 msgstr ""
-"Он содержит корневой :ref:`Viewport <class_Viewport>`, к которому сцена "
+"Он содержит корень :ref:`Viewport <class_Viewport>`, к которому сцена "
 "добавляется как дочерняя, когда она впервые открывается то становится частью "
 "*древа сцен* (подробнее об этом ниже)"
 
@@ -146,7 +141,6 @@ msgstr ""
 "или выход."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "When a node is part of the Scene Tree, the :ref:`SceneTree "
 "<class_SceneTree>` singleton can be obtained by calling :ref:`Node."
@@ -169,7 +163,6 @@ msgstr ""
 "сцены. Из узла его можно получить двумя разными способами:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:80
-#, fuzzy
 msgid ""
 "This node contains the main viewport. Anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
@@ -179,7 +172,7 @@ msgstr ""
 "Этот узел содержит основное окно просмотра, все, что является дочерним для :"
 "ref:`Viewport <class_Viewport>`, рисуется внутри него по умолчанию, поэтому "
 "наверху всех узлов древа сцен должен быть узел такого типа, иначе ничего не "
-"будет видно!"
+"будет видно."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:85
 msgid ""
@@ -212,7 +205,6 @@ msgstr ""
 "вызовы _enter_tree() и _ready(), (а также _exit_tree())."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:100
-#, fuzzy
 msgid ""
 "When nodes enter the *Scene Tree*, they become active. They get access to "
 "everything they need to process, get input, display 2D and 3D visuals, "
@@ -222,7 +214,7 @@ msgstr ""
 "Когда узлы входят в *Древо Сцен*, они становятся активными. Они получают "
 "доступ ко всему, что им нужно для обработки, ввода, отображения 2D и 3D, "
 "уведомлений, воспроизведения звука, групп и т.д. Когда они удаляются из "
-"*древа сцен*, они теряют доступ."
+"*древа сцен*, они теряют этот доступ."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:106
 msgid "Tree order"

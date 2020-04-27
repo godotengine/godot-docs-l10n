@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:4
 msgid "Exporting packs, patches, and mods"
-msgstr ""
+msgstr "Експорт пакетів, патчів та модів"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:7
 #, fuzzy
@@ -31,68 +31,75 @@ msgid ""
 "Oftentimes one would like to add functionality to one's game after it has "
 "been deployed."
 msgstr ""
+"Часто хотілося б додати функціональності до своєї гри після її розгортання."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:12
 msgid "Examples of this include..."
-msgstr ""
+msgstr "Наприклад..."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:14
 msgid ""
 "Downloadable Content: the ability to add features and content to one's game."
 msgstr ""
+"Зміст, який можна завантажити: можливість додавати функції та вміст у гру."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:15
 msgid "Patches: the ability to fix a bug that is present in a shipped product."
 msgstr ""
+"Патчі: можливість виправити помилку, яка присутня у створеному продукті."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:16
 msgid "Mods: grant other people the ability to create content for one's game."
-msgstr ""
+msgstr "Моди: надайте іншим людям можливість створювати контент для своєї гри."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:18
 msgid ""
 "These tools help developers to extend their development beyond the initial "
 "release."
 msgstr ""
+"Ці інструменти допомагають розробникам розширити свою розробку після "
+"початкового випуску."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:22
 msgid "Overview of PCK files"
-msgstr ""
+msgstr "Огляд файлів PCK"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:24
 msgid ""
 "Godot enables this via a feature called **resource packs** (PCK files, with "
 "extension ``.pck``)."
 msgstr ""
+"Godot дозволяє це через функцію, що називається **пакетами ресурсів** (файли "
+"PCK, з розширенням ``.pck``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:27
-#, fuzzy
 msgid "**Advantages:**"
-msgstr "Категорії"
+msgstr "**Переваги:**"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:29
 msgid "incremental updates/patches"
-msgstr ""
+msgstr "покрокові оновлення / виправлення"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:30
 msgid "offer DLCs"
-msgstr ""
+msgstr "пропонує DLC"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:31
 msgid "offer mod support"
-msgstr ""
+msgstr "пропонує підтримку модів"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:32
 msgid "no source code disclosure needed for mods"
-msgstr ""
+msgstr "не потрібне розкриття вихідного коду для модів"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:33
 msgid "more modular project structure"
-msgstr ""
+msgstr "більш модульна структура проекту"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:34
-msgid "users don’t have to replace the entire game"
-msgstr ""
+#, fuzzy
+msgid "users don't have to replace the entire game"
+msgstr "користувачі не повинні замінювати всю гру"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:36
 msgid ""
@@ -100,56 +107,57 @@ msgid ""
 "to players. Then, when one wants to add functionality or content later on, "
 "they just deliver the updates via PCK files to the users."
 msgstr ""
+"Перша частина їх використання включає експорт та доставку проекту до "
+"гравців. Потім, коли хтось хоче додати функціональність, або вміст, пізніше, "
+"вони просто доставлять оновлення через файли PCK користувачам."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:40
 msgid "PCK files usually contain, but are not limited to:"
-msgstr ""
+msgstr "Файли PCK зазвичай містять, але не обмежуються:"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:42
-#, fuzzy
 msgid "scripts"
-msgstr "Опис"
+msgstr "скрипти"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:43
-#, fuzzy
 msgid "scenes"
-msgstr "Сцени"
+msgstr "сцени"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:44
 msgid "shaders"
-msgstr ""
+msgstr "шейдери"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:45
 msgid "models"
-msgstr ""
+msgstr "моделі"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:46
-#, fuzzy
 msgid "textures"
-msgstr "Текстура"
+msgstr "текстури"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:47
-#, fuzzy
 msgid "sound effects"
-msgstr "Звукові ефекти"
+msgstr "звукові ефекти"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:48
 msgid "music"
-msgstr ""
+msgstr "музику"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:49
 msgid "any other asset suitable for import into the game"
-msgstr ""
+msgstr "будь-який інший актив, придатний для імпорту в гру"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:51
 msgid ""
 "The PCK files can even be an entirely different Godot project, which the "
 "original game loads in at runtime."
 msgstr ""
+"Файли PCK можуть бути навіть зовсім іншим проектом Godot, який завантажує "
+"оригінальна гра під час виконання."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:55
 msgid "Generating PCK files"
-msgstr ""
+msgstr "Генерування файлів PCK"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:57
 msgid ""
@@ -157,6 +165,9 @@ msgid ""
 "and go to Project/Export and click on “Export PCK/Zip”. Also make sure to "
 "have an export template selected while doing so."
 msgstr ""
+"Для того, щоб упакувати всі ресурси проекту у файл PCK, відкрийте проект та "
+"перейдіть до Проект/Експорт і натисніть на \"Export PCK / Zip\". Також "
+"переконайтесь, що під час цього вибрано шаблон експорту."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:63
 msgid ""
@@ -165,6 +176,10 @@ msgid ""
 "or ZIP file extension, then the export process will build that type of file "
 "for the chosen platform."
 msgstr ""
+"Іншим методом буде :ref:`експорт із командного рядка "
+"<doc_command_line_tutorial_exporting>`. Якщо вихідний файл закінчується "
+"розширенням файлу PCK, або ZIP, то процес експорту створить тип файлу для "
+"обраної платформи."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:69
 msgid ""
@@ -173,6 +188,10 @@ msgid ""
 "certain structure for the PCK's resources and/or a certain interface for its "
 "scripts, then either..."
 msgstr ""
+"Якщо хтось хоче включити підтримку модів для своєї гри, то він може "
+"потребувати від своїх користувачів створення аналогічних експортованих "
+"файлів. Якщо припустити, що оригінальна гра очікує певної структури ресурсів "
+"PCK та/або певного інтерфейсу для її скриптів, то будь-який…"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:74
 msgid ""
@@ -182,6 +201,12 @@ msgid ""
 "mod content for the game (so that it will work). Users would then use "
 "Godot's built in exporting tools to create a PCK file, as detailed above."
 msgstr ""
+"Розробник повинен оприлюднити документацію цих очікуваних структур/"
+"інтерфейсів, розраховувати, що модери встановлять Godot Engine, а потім "
+"також очікувати, що ці модери будуть відповідати визначеній документацією "
+"API при створенні модів для гри (щоб він працював). Потім користувачі будуть "
+"використовувати компілятор Godot для експорту інструментів для створення "
+"файлу PCK, як детально описано вище."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:80
 msgid ""
@@ -194,10 +219,19 @@ msgid ""
 "a tool-build though (for security) and for the modding tools to *do* use a "
 "tool-enabled engine build."
 msgstr ""
+"Розробник використовує Godot для створення інструменту графічного інтерфейсу "
+"для додавання їх точного вмісту API до проекту. Цей інструмент Godot "
+"повинен, або працювати на вбудованому механізмі з підтримкою інструментів, "
+"або мати доступ до нього (розповсюджуватися разом, або, можливо, у файлах "
+"оригінальної гри). Потім інструмент може використовувати виконуваний файл "
+"Godot для експорту файлу PCK з командного рядка за допомогою :ref:`OS."
+"execute ()<class_OS_method_execute>`. It makes the most sense for the game "
+"to not use a tool-build though (for security) and for the modding tools to "
+"*do* use a tool-enabled engine build."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:90
 msgid "Opening PCK files at runtime"
-msgstr ""
+msgstr "Відкриття файлів PCK під час виконання"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:92
 msgid ""
@@ -207,6 +241,11 @@ msgid ""
 "file in the directory of the games executable. The PCK file contains a "
 "“mod_scene.tscn” test scene in its root."
 msgstr ""
+"Щоб імпортувати файл PCK, використовується один-вкладиш (one-liner). "
+"Пам'ятайте, що помилки, чи винятку, якщо імпорт не вдається, немає. "
+"Натомість, можливо, доведеться створити якийсь код перевірки. Наступний "
+"приклад очікує на файл “mod.pck” в каталозі виконуваних ігор. Файл PCK "
+"містить у своєму корені тестову сцену “mod_scene.tscn”."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:117
 msgid ""
@@ -217,6 +256,12 @@ msgid ""
 "for one's own game. A PCK file of this kind can fix the content of a "
 "previously loaded PCK."
 msgstr ""
+"Якщо ви імпортуєте файл із тим самим шляхом/ім'ям файлу, який ви вже маєте у "
+"своєму проекті, імпортований файл замінить його. Це те, на що слід вважати "
+"при створенні DLC, або модів (вирішується легко за допомогою інструменту, що "
+"виділяє моди до певної під-папки модів). Однак це також спосіб створення "
+"патчів для власної гри. Файл такого типу PCK може виправити вміст "
+"завантаженої раніше PCK."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:124
 msgid ""
@@ -224,10 +269,13 @@ msgid ""
 "directory first. Then, before loading the resource pack, you need to load "
 "its DLL as follows: ``Assembly.LoadFile(\"mod.dll\")``"
 msgstr ""
+"Для проекту C# вам потрібно створити DLL і розмістити його спочатку в "
+"каталозі проектів. Потім перед завантаженням пакета ресурсів потрібно "
+"завантажити його DLL наступним чином: ``Assembly.LoadFile(\"mod.dll\")``"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:129
 msgid "Summary"
-msgstr "Резюме"
+msgstr "Підсумок"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:131
 msgid ""
@@ -237,3 +285,8 @@ msgid ""
 "that purpose. Godot should make that process smooth regardless of which "
 "route a developer pursues."
 msgstr ""
+"Цей підручник повинен проілюструвати, наскільки легко додавати моди, патчі "
+"та DLC до гри. Найголовніше - визначити, як розповсюджувати майбутній "
+"контент для своєї гри, і розробити робочий процес, налаштований для цієї "
+"мети. Godot повинен зробити цей процес гладким незалежно від того, який шлях "
+"обере розробник."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
-msgstr ""
+msgstr "Використання зовнішнього текстового редактора"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
 msgid ""
@@ -28,6 +28,10 @@ msgid ""
 "relevant editor settings via: ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
+"Godot можна використовувати із зовнішнім текстовим редактором, таким як "
+"Sublime Text, або Visual Studio Code. Щоб включити зовнішній текстовий "
+"редактор, перейдіть до відповідних налаштувань редактора за допомогою: "
+"``Editor -> Editor Settings -> Text Editor -> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:12
 msgid ""
@@ -36,46 +40,45 @@ msgid ""
 "open and other relevant arguments. Godot will replace the following "
 "placeholders in the flags string:"
 msgstr ""
+"Є два поля: виконуваного шляху та командного рядка. Вони дозволяють "
+"інтегрувати редактор в Godot, передаючи йому файловий шлях до відкритих та "
+"інших відповідних аргументів. Godot замінить наступні заповнювачі в полях:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
-msgstr ""
+msgstr "Поле Exec Flags"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Is replaced with"
 msgstr "Замінюється на"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
-#, fuzzy
 msgid "``{project}``"
-msgstr "{project}"
+msgstr "``{project}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "The absolute path to the project directory"
 msgstr "Абсолютний шлях до каталогу проекту"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
-#, fuzzy
 msgid "``{file}``"
-msgstr "{file}"
+msgstr "``{file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "The absolute path to the file"
 msgstr "Абсолютний шлях до файла"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
-#, fuzzy
 msgid "``{col}``"
-msgstr "{col}"
+msgstr "``{col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The column number of the error"
 msgstr "Номер позиції помилки у рядку"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
-#, fuzzy
 msgid "``{line}``"
-msgstr "{line}"
+msgstr "``{line}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The line number of the error"
@@ -83,7 +86,7 @@ msgstr "Номер рядка помилки"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
 msgid "Some example Exec Flags for various editors include:"
-msgstr ""
+msgstr "Деякі приклади Exec Flags для різних редакторів включають:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Editor"
@@ -91,37 +94,33 @@ msgstr "Редактор"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Exec Flags"
-msgstr ""
+msgstr "Exec Flags (Виконувані прапорці)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "Geany/Kate"
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
-#, fuzzy
 msgid "``{file} --line {line} --column {col}``"
-msgstr "{file} --line {line} --column {col}"
+msgstr "``{file} --line {line} --column {col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "Atom/Sublime Text"
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
-#, fuzzy
 msgid "``{file}:{line}``"
-msgstr "{file}:{line}"
+msgstr "``{file}:{line}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "JetBrains Rider"
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-#, fuzzy
 msgid "``--line {line} {file}``"
-msgstr "--line {line} {file}"
+msgstr "``--line {line} {file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
-#, fuzzy
 msgid "Visual Studio Code"
 msgstr "Visual Studio або VS Code"
 
@@ -139,4 +138,4 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:45
 msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
-msgstr ""
+msgstr "Для коду Visual Studio вам потрібно буде вказати на файл ``code.cmd``."

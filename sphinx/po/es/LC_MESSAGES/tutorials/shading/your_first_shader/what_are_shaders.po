@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,24 +72,37 @@ msgid ""
 "or corner of a Sprite) goes and the fragment shader decides what color "
 "individual pixels receive."
 msgstr ""
+"Por lo general, la salida del shader son los pixels colorados del objeto "
+"dibujado en la vista. Sin embargo, algunos shaders permiten salidas "
+"especializadas (especialmente con los APIs como Vulkan). Los shaders "
+"funcionan dentro el canal de shader. El proceso estandar es el canal de "
+"shader «vértice -> frgament». El shader vértive se usa para calcular dónde "
+"se ubica cada vértice (un punto en un modelo 3D, or la esquína de un Sprite) "
+"y el shader fragment calcula el color de los pixels individuales."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:35
 msgid ""
 "Suppose you want to update all the pixels in a texture to a given color, on "
 "the CPU you would write:"
 msgstr ""
+"Suponemos que quisieras cambiar todos los pixels de una textura a un color "
+"determinado. En el CPU escribirías:"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:43
 msgid ""
 "In a shader you are given access only to the inside of the loop so what you "
 "write looks like this:"
 msgstr ""
+"En un shader sólo tienes acceso al interior del bucle, por lo tanto lo que "
+"escribes es así:"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:52
 msgid ""
 "You have no control over how this function is called. So you have to design "
 "your shaders differently from how you would design programs on the CPU."
 msgstr ""
+"No tienes control sobre como se llama esta función. Por lo tanto hay que "
+"crear el shader de manera distinta a la que creas programas en el CPU."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:55
 msgid ""
@@ -100,38 +113,45 @@ msgid ""
 "parallel, as they do not depend on each other. This lack of flexibility is "
 "designed to work with the GPU which allows shaders to be incredibly fast."
 msgstr ""
+"Una consequencia del pipeline de shaders es que se puede acceder los "
+"resultados de ejecuciones anteriores del shader; no se puede acceder otros "
+"píxeles desde el que se está dibujando; y no se puede escribir fuera de este "
+"píxel. Esto permite que el GPU ejecute al shader para distintos píxeles en "
+"paralelo; pues no se depende uno al otro. Esta falta de flexibilidad es "
+"diseñado para funcionar con el GPU y permite que los shaders sean "
+"rapidíssimos."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:62
 msgid "What can they do"
-msgstr ""
+msgstr "Lo que pueden hacer"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:64
 msgid "position vertices very fast"
-msgstr ""
+msgstr "colocar vértices muy rapidamente"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:65
 msgid "compute color very fast"
-msgstr ""
+msgstr "calcular colores muy rapidamente"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:66
 msgid "compute lighting very fast"
-msgstr ""
+msgstr "calcular la iluminación muy rapidamente"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:67
 msgid "lots and lots of math"
-msgstr ""
+msgstr "muchíssima matemática"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:70
 msgid "What can't they do"
-msgstr ""
+msgstr "Lo que no pueden hacer"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:72
 msgid "draw outside mesh"
-msgstr ""
+msgstr "dibujar fuera de una malla"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:73
 msgid "access other pixels from current pixel (or vertices)"
-msgstr ""
+msgstr "acceder a otros píxeles desde el píxel actual (o vértices)"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:74
 msgid "store previous iterations"
@@ -140,6 +160,8 @@ msgstr "guarda iteraciones previas"
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:75
 msgid "update on the fly (they can, but they need to be compiled)"
 msgstr ""
+"actualizar sobre la marcha (bueno, sí que pueden pero hay que compilarlos "
+"antes)"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:78
 msgid "Structure of a shader"
@@ -150,12 +172,16 @@ msgid ""
 "In Godot, shaders are made up of 3 main functions: the ``vertex()`` "
 "function, the ``fragment()`` function and the ``light()`` function."
 msgstr ""
+"En Godot, los shader se componen de tres funciones: la función ``vertex()``, "
+"la funcíon ``fragment()`` y la función ``light()``."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:83
 msgid ""
 "The ``vertex()`` function runs over all the vertices in the mesh and sets "
 "their positions as well as some other per-vertex variables."
 msgstr ""
+"La función ``vertex()`` ejecuta todos los vértices en la malla y define la "
+"posición y otras variables de los vértices."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:86
 msgid ""
@@ -164,12 +190,18 @@ msgid ""
 "variables from the ``vertex()`` function are interpolated between the "
 "vertices to provide the values for the ``fragment()`` function."
 msgstr ""
+"La función ``fragment()`` ejecuta por cada píxel que está cubierta por la "
+"malla. Usa los variables de la función ``vertex()`` para ejecutar. Los "
+"variables de la función ``vertex()`` se interpolan entre los vértices para "
+"aportar los valores para la función ``fragment()``."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:90
 msgid ""
 "The ``light()`` function runs for every pixel and for every light. It takes "
 "variables from the ``fragment()`` function and from previous runs of itself."
 msgstr ""
+"La función ``light()`` ejecuta por cada píxel y cada luz. Toma variables de "
+"la función ``fragement()`` y de ejecuciones anteriores de ella misma."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:93
 msgid ""
@@ -193,6 +225,13 @@ msgid ""
 "quickly, but only when many or all cores are doing the same calculation at "
 "once, but with different data."
 msgstr ""
+"La GPU es capáz de generar gráficos mucho más rapido que la CPU por varios "
+"razones, la más notable es que pueden ejecutar cálculos masivamente en "
+"paralelo. Por lo general, una CPU tiene 4 o 8 núcleos pero un GPU tiene "
+"miles. Eso significa que la GPU puede hacer cientos de tareas a la vez. Los "
+"diseñedores han aprovechado de esto de manera que permite hacer muchos "
+"cálculos con rapidez, pero solo cuando la mayoría o todos de los núcleos "
+"están haciendo el mismo cálculo, pero con datos distintos."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:104
 msgid ""
@@ -200,12 +239,16 @@ msgid ""
 "simultaneously, and then operate on different bits of data (vertices, or "
 "pixels). These bunches of data are often called wavefronts. A shader will "
 "run the same for every thread in the wavefront. For example, if a given GPU "
-"can handle 100 threads per wavefront, a wavefront will run on a 10x10 block "
-"of pixels together. And it will continue to run for all pixels in that "
-"wavefront until they are complete. Accordingly, if you have one pixel slower "
-"than the rest (due to excessive branching), the entire block will be slowed "
-"down, resulting in massively slower render times. This is different than CPU "
-"based operations, on a CPU if you can speed up even one pixel the entire "
-"rendering time will decrease. On a GPU, you have to speed up the entire "
-"wavefront to speed up rendering."
+"can handle 100 threads per wavefront, a wavefront will run on a 10×10 block "
+"of pixels together. It will continue to run for all pixels in that wavefront "
+"until they are complete. Accordingly, if you have one pixel slower than the "
+"rest (due to excessive branching), the entire block will be slowed down, "
+"resulting in massively slower render times."
+msgstr ""
+
+#: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:112
+msgid ""
+"This is different from CPU-based operations. On a CPU, if you can speed up "
+"even one pixel, the entire rendering time will decrease. On a GPU, you have "
+"to speed up the entire wavefront to speed up rendering."
 msgstr ""

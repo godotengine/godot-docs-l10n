@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -238,6 +238,9 @@ msgid ""
 "where `N` is the number of CPU threads you have on your system. The example "
 "below uses 4 threads."
 msgstr ""
+"Pour accélérer la compilation, ajoutez `-jN` à la fin de la ligne de "
+"commande SCons où `N` est le nombre de threads CPU que vous avez sur votre "
+"système. L'exemple ci-dessous utilise 4 threads."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:142
 msgid ""
@@ -707,7 +710,6 @@ msgstr ""
 "ne supprimez pas les lignes qui n’apparaissent pas ici :"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:571
-#, fuzzy
 msgid ""
 "Once you compile the module with these changes in place you will see that a "
 "property has been added to our interface. You can now change this property "

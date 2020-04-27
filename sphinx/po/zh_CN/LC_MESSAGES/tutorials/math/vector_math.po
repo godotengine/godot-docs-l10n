@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -255,22 +255,17 @@ msgid "Normalization"
 msgstr "归一化"
 
 #: ../../docs/tutorials/math/vector_math.rst:189
+#, fuzzy
 msgid ""
 "**Normalizing** a vector means reducing its length to ``1`` while preserving "
 "its direction. This is done by dividing each of its components by its "
-"magnitude:"
+"magnitude. Because this is such a common operation, ``Vector2`` and "
+"``Vector3`` provide a method for normalizing:"
 msgstr ""
 "**归一化** 向量意味着在保持其方向的同时将其长度减少到 ``1`` 。这是通过将每个"
 "分量除以其大小来完成的:"
 
-#: ../../docs/tutorials/math/vector_math.rst:208
-msgid ""
-"Because this is such a common operation, ``Vector2`` and ``Vector3`` provide "
-"a method for normalizing:"
-msgstr ""
-"由于这是一种非常常见的操作， ``Vector2`` 和 ``Vector3`` 提供了归一化的方法:"
-
-#: ../../docs/tutorials/math/vector_math.rst:221
+#: ../../docs/tutorials/math/vector_math.rst:204
 msgid ""
 "Because normalization involves dividing by the vector's length, you cannot "
 "normalize a vector of length ``0``. Attempting to do so will result in an "
@@ -279,11 +274,11 @@ msgstr ""
 "因为归一化需要除以向量的长度，所以不能对长度为``0``的向量进行归一化。试图这样"
 "做会导致错误。"
 
-#: ../../docs/tutorials/math/vector_math.rst:226
+#: ../../docs/tutorials/math/vector_math.rst:209
 msgid "Reflection"
 msgstr "反射"
 
-#: ../../docs/tutorials/math/vector_math.rst:228
+#: ../../docs/tutorials/math/vector_math.rst:211
 msgid ""
 "A common use of unit vectors is to indicate **normals**. Normal vectors are "
 "unit vectors aligned perpendicularly to a surface, defining its direction. "
@@ -293,13 +288,13 @@ msgstr ""
 "单位向量的一种常见用法是表示 **法线** 。法向量是垂直于曲面的单位向量，定义了"
 "曲面的方向。它们通常用于照明、碰撞和涉及表面的其他操作。"
 
-#: ../../docs/tutorials/math/vector_math.rst:233
+#: ../../docs/tutorials/math/vector_math.rst:216
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
 msgstr "例如，假设我们有一个移动的球，我们想从墙上或其他物体上弹回来:"
 
-#: ../../docs/tutorials/math/vector_math.rst:238
+#: ../../docs/tutorials/math/vector_math.rst:221
 msgid ""
 "The surface normal has a value of ``(0, -1)`` because this is a horizontal "
 "surface. When the ball collides, we take its remaining motion (the amount "
@@ -313,11 +308,11 @@ msgstr ""
 "<class_Vector2>` 类有一个 ``bounce()`` 方法来处理这个问题。上图有一个使用 :"
 "ref:`KinematicBody2D <class_KinematicBody2D>` 的GDScript示例:"
 
-#: ../../docs/tutorials/math/vector_math.rst:268
+#: ../../docs/tutorials/math/vector_math.rst:251
 msgid "Dot product"
 msgstr "点乘"
 
-#: ../../docs/tutorials/math/vector_math.rst:270
+#: ../../docs/tutorials/math/vector_math.rst:253
 msgid ""
 "The **dot product** is one of the most important concepts in vector math, "
 "but is often misunderstood. Dot product is an operation on two vectors that "
@@ -327,32 +322,32 @@ msgstr ""
 "**点乘** 是向量数学中最重要的概念之一，但经常被误解。点乘是对两个向量的操作，"
 "它返回一个 **标量**。与同时包含大小和方向的向量不同，标量值只有大小。"
 
-#: ../../docs/tutorials/math/vector_math.rst:275
+#: ../../docs/tutorials/math/vector_math.rst:258
 msgid "The formula for dot product takes two common forms:"
 msgstr "点乘公式有两种常见形式:"
 
-#: ../../docs/tutorials/math/vector_math.rst:277
+#: ../../docs/tutorials/math/vector_math.rst:260
 msgid ""
 "A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 msgstr ""
 "A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 
-#: ../../docs/tutorials/math/vector_math.rst:281
+#: ../../docs/tutorials/math/vector_math.rst:264
 msgid "and"
 msgstr "以及"
 
-#: ../../docs/tutorials/math/vector_math.rst:283
+#: ../../docs/tutorials/math/vector_math.rst:266
 msgid "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
 msgstr "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
 
-#: ../../docs/tutorials/math/vector_math.rst:287
+#: ../../docs/tutorials/math/vector_math.rst:270
 msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
 msgstr ""
 "然而，在大多数情况下，使用内置方法是最容易的。注意，两个向量的顺序并不重要:"
 
-#: ../../docs/tutorials/math/vector_math.rst:301
+#: ../../docs/tutorials/math/vector_math.rst:284
 msgid ""
 "The dot product is most useful when used with unit vectors, making the first "
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
@@ -361,17 +356,17 @@ msgstr ""
 "当与单位向量一起使用时，点积是最有用的，使得第一个公式减少到仅有 ``cosθ``。这"
 "意味着我们可以使用点积来告诉我们关于两个向量之间的角度的一些信息:"
 
-#: ../../docs/tutorials/math/vector_math.rst:307
+#: ../../docs/tutorials/math/vector_math.rst:290
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
 msgstr "当使用单位向量,结果总是会在 ``-1`` (180°) 和 ``1`` (0°) 之间。"
 
-#: ../../docs/tutorials/math/vector_math.rst:311
+#: ../../docs/tutorials/math/vector_math.rst:294
 msgid "Facing"
 msgstr "面向问题"
 
-#: ../../docs/tutorials/math/vector_math.rst:313
+#: ../../docs/tutorials/math/vector_math.rst:296
 msgid ""
 "We can use this fact to detect whether an object is facing toward another "
 "object. In the diagram below, the player ``P`` is trying to avoid the "
@@ -382,28 +377,30 @@ msgstr ""
 "``P`` 试图避开丧尸 ``A`` 和 ``B`` 。假设一个丧尸的视野是 **180°** , 他们能看"
 "到游戏角色吗?"
 
-#: ../../docs/tutorials/math/vector_math.rst:319
+#: ../../docs/tutorials/math/vector_math.rst:302
+#, fuzzy
 msgid ""
 "The green arrows ``fA`` and ``fB`` are **unit vectors** representing the "
 "zombies' facing directions and the blue semicircle represents its field of "
 "view. For zombie ``A``, we find the direction vector ``AP`` pointing to the "
-"player using ``P - A`` and normalize it. If the angle between this vector "
-"and the facing vector is less than 90°, then the zombie can see the player."
+"player using ``P - A`` and normalize it, however, Godot has a helper method "
+"to do this called ``direction_to``. If the angle between this vector and the "
+"facing vector is less than 90°, then the zombie can see the player."
 msgstr ""
 "绿色箭头 ``fA`` 和 ``fB`` 是 **单位向量** 表示丧尸的朝向，蓝色半圆表示其视"
 "野。对于丧尸 ``A`` ，我们使用 ``P - A`` 找到指向游戏角色的方向向量 ``AP`` 并"
 "将其归一化。如果这个向量和面向向量之间的夹角小于90°,那么丧尸可以看到游戏角"
 "色。"
 
-#: ../../docs/tutorials/math/vector_math.rst:326
+#: ../../docs/tutorials/math/vector_math.rst:310
 msgid "In code it would look like this:"
 msgstr "在代码中是这样的:"
 
-#: ../../docs/tutorials/math/vector_math.rst:344
+#: ../../docs/tutorials/math/vector_math.rst:328
 msgid "Cross product"
 msgstr "叉乘"
 
-#: ../../docs/tutorials/math/vector_math.rst:346
+#: ../../docs/tutorials/math/vector_math.rst:330
 #, fuzzy
 msgid ""
 "Like the dot product, the **cross product** is an operation on two vectors. "
@@ -416,7 +413,7 @@ msgstr ""
 "两个向量的向量。它的大小取决于它们的相对角度。如果两个向量是平行的，它们叉乘"
 "的结果就是零向量。"
 
-#: ../../docs/tutorials/math/vector_math.rst:351
+#: ../../docs/tutorials/math/vector_math.rst:335
 msgid ""
 "\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
 "\\right \\|\\ |\\sin(a,b)|"
@@ -424,15 +421,15 @@ msgstr ""
 "\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
 "\\right \\|\\ |\\sin(a,b)|"
 
-#: ../../docs/tutorials/math/vector_math.rst:357
+#: ../../docs/tutorials/math/vector_math.rst:341
 msgid "The cross product is calculated like this:"
 msgstr "叉乘是这样计算的:"
 
-#: ../../docs/tutorials/math/vector_math.rst:376
+#: ../../docs/tutorials/math/vector_math.rst:360
 msgid "With Godot, you can use the built-in method:"
 msgstr "使用Godot，您可以使用内置的方法:"
 
-#: ../../docs/tutorials/math/vector_math.rst:387
+#: ../../docs/tutorials/math/vector_math.rst:371
 msgid ""
 "In the cross product, order matters. ``a.cross(b)`` does not give the same "
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
@@ -441,11 +438,11 @@ msgstr ""
 "在叉乘中，顺序很重要。``a.cross(b)`` 和 ``b.cross(a)`` 的结果不一样。得到的向"
 "量指向相反的方向。"
 
-#: ../../docs/tutorials/math/vector_math.rst:392
+#: ../../docs/tutorials/math/vector_math.rst:376
 msgid "Calculating normals"
 msgstr "法线计算"
 
-#: ../../docs/tutorials/math/vector_math.rst:394
+#: ../../docs/tutorials/math/vector_math.rst:378
 msgid ""
 "One common use of cross products is to find the surface normal of a plane or "
 "surface in 3D space. If we have the triangle ``ABC`` we can use vector "
@@ -456,15 +453,15 @@ msgstr ""
 "``ABC`` 我们可以用向量减法找到两条边 ``AB`` 和 ``AC``。通过叉乘， ``AB x "
 "AC`` 得到一个垂直于这两个向量的向量:表面法向量。"
 
-#: ../../docs/tutorials/math/vector_math.rst:399
+#: ../../docs/tutorials/math/vector_math.rst:383
 msgid "Here is a function to calculate a triangle's normal:"
 msgstr "下面是一个计算三角形法线的函数:"
 
-#: ../../docs/tutorials/math/vector_math.rst:423
+#: ../../docs/tutorials/math/vector_math.rst:407
 msgid "Pointing to a target"
 msgstr "指向目标"
 
-#: ../../docs/tutorials/math/vector_math.rst:425
+#: ../../docs/tutorials/math/vector_math.rst:409
 #, fuzzy
 msgid ""
 "In the dot product section above, we saw how it could be used to find the "
@@ -477,20 +474,20 @@ msgstr ""
 "是不够的。我们还需要知道绕哪个轴旋转。这可以通过计算当前方向与目标方向的叉乘"
 "得到。得到的垂直向量是旋转轴。"
 
-#: ../../docs/tutorials/math/vector_math.rst:433
+#: ../../docs/tutorials/math/vector_math.rst:417
 msgid "More information"
 msgstr "更多信息"
 
-#: ../../docs/tutorials/math/vector_math.rst:435
+#: ../../docs/tutorials/math/vector_math.rst:419
 msgid ""
 "For more information on using vector math in Godot, see the following "
 "articles:"
 msgstr "有关在Godot中使用向量数学的更多信息，请参阅以下文章:"
 
-#: ../../docs/tutorials/math/vector_math.rst:437
+#: ../../docs/tutorials/math/vector_math.rst:421
 msgid ":ref:`doc_vectors_advanced`"
 msgstr ":ref:`doc_vectors_advanced`"
 
-#: ../../docs/tutorials/math/vector_math.rst:438
+#: ../../docs/tutorials/math/vector_math.rst:422
 msgid ":ref:`doc_matrices_and_transforms`"
 msgstr ":ref:`doc_matrices_and_transforms`"

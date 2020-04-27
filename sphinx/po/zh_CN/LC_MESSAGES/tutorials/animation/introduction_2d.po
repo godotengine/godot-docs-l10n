@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -194,9 +194,10 @@ msgid "Scene setup"
 msgstr "场景设置"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:111
+#, fuzzy
 msgid ""
-"For this tutorial, we'll going to create an AnimationPlayer node and a "
-"sprite node as its child."
+"For this tutorial, we'll create an AnimationPlayer node and a sprite node as "
+"its child."
 msgstr ""
 "在本教程中，我们将创建一个AnimationPlayer节点和作为其子节点的Sprite节点。"
 
@@ -207,9 +208,9 @@ msgstr "我们的场景设置"
 #: ../../docs/tutorials/animation/introduction_2d.rst:119
 #, fuzzy
 msgid ""
-"The sprite holds an image texture and we animate that sprite to move between "
-"two points on the screen. For this tutorial use the default Godot Icon as "
-"the sprites' texture. As a starting point, move the sprite to a left "
+"The sprite holds an image texture. We animate that sprite to move between "
+"two points on the screen. For this tutorial, use the default Godot icon as "
+"the sprite's texture. As a starting point, move the sprite to a left "
 "position on the screen."
 msgstr ""
 "精灵拥有一个图像纹理，我们让它在屏幕上的两点之间移动。首先，将精灵移动到屏幕"
@@ -264,34 +265,35 @@ msgid ""
 msgstr "取消选择旋转，因为我们只对本教程的精灵位置感兴趣，并单击键按钮。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:157
+#, fuzzy
 msgid ""
 "As we don't have a track already set up for the transform/location property, "
-"Godot asks, whether it should set it up for us. Click on \"Create\"."
+"Godot asks whether it should set it up for us. Click **Create**."
 msgstr ""
 "由于我们还没有为转换/位置属性设置轨道，Godot询问是否应该为我们设置它。点击``"
 "创建``。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:161
+#: ../../docs/tutorials/animation/introduction_2d.rst:160
 msgid ""
 "This creates a new track and our first keyframe at the beginning of the "
 "timeline:"
 msgstr "这会在时间轴的开头创建一个新轨道和第一个关键帧:"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:167
+#: ../../docs/tutorials/animation/introduction_2d.rst:166
 msgid "The sprite track"
 msgstr "精灵跟踪"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:170
+#: ../../docs/tutorials/animation/introduction_2d.rst:169
 msgid "The second keyframe"
 msgstr "第二个关键帧"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:172
+#: ../../docs/tutorials/animation/introduction_2d.rst:171
 msgid ""
 "Now we need to set the destination where our sprite should be headed and how "
 "much time it takes to get there."
 msgstr "现在我们需要设置我们的精灵应该到达的目的地以及到达那里需要多长时间。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:175
+#: ../../docs/tutorials/animation/introduction_2d.rst:174
 msgid ""
 "Let's say, we want it to take 2 seconds to go to the other point. By default "
 "the animation is set to last only 1 second, so change this in the timeline "
@@ -300,42 +302,43 @@ msgstr ""
 "让我们说，我们希望它需要2秒才能到达另一个点。 默认情况下，动画设置为仅持续1"
 "秒，因此在动画面板下方面板的时间轴控件中将其更改为2。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:182
+#: ../../docs/tutorials/animation/introduction_2d.rst:181
 msgid "Animation length"
 msgstr "动画长度"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:184
+#: ../../docs/tutorials/animation/introduction_2d.rst:183
+#, fuzzy
 msgid ""
-"Click on the timeline header near the 2 second mark and move the sprite to "
+"Click on the timeline header near the 2-second mark and move the sprite to "
 "the target destination on the right side."
 msgstr "单击2秒标记附近的时间轴标题，并将精灵移动到右侧的目标目标。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:187
+#: ../../docs/tutorials/animation/introduction_2d.rst:186
 msgid ""
 "Again, click the key button in the toolbar. This creates our second keyframe."
 msgstr "再次单击工具栏中的键按钮。 这创建了我们的第二个关键帧。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:191
+#: ../../docs/tutorials/animation/introduction_2d.rst:190
 msgid "Run the animation"
 msgstr "运行动画"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:193
+#: ../../docs/tutorials/animation/introduction_2d.rst:192
 msgid "Click on the \"Play from beginning\" (|Play from beginning|) button."
 msgstr "单击“从头开始播放``(|从开头播放|)按钮。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:195
+#: ../../docs/tutorials/animation/introduction_2d.rst:194
 msgid "Yay! Our animation runs:"
 msgstr "好极了！ 我们的动画运行:"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:200
+#: ../../docs/tutorials/animation/introduction_2d.rst:199
 msgid "The animation"
 msgstr "动画"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:203
+#: ../../docs/tutorials/animation/introduction_2d.rst:202
 msgid "Back and forth"
 msgstr "来来回回"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:205
+#: ../../docs/tutorials/animation/introduction_2d.rst:204
 #, fuzzy
 msgid ""
 "Godot has an additional feature here. Like said before, Godot always "
@@ -346,25 +349,26 @@ msgstr ""
 "功能。 如前所述，Godot总是计算两个关键帧之间的帧。 在循环中，如果最后没有指定"
 "关键帧，则第一个关键帧也是最后一个关键帧。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:213
+#: ../../docs/tutorials/animation/introduction_2d.rst:212
 msgid "Animation loop"
 msgstr "动画循环"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:215
+#: ../../docs/tutorials/animation/introduction_2d.rst:214
+#, fuzzy
 msgid ""
 "If you set the animation length to 4 seconds now, the animation moves back "
-"and forth. You can change this behaviour if you change the track's loop "
-"mode. This is covered in the next chapter."
+"and forth. You can change this behavior if you change the track's loop mode. "
+"This is covered in the next chapter."
 msgstr ""
 "如果现在将动画长度设置为4秒，则动画来回移动。 如果更改轨道的循环模式，则可以"
 "更改此行为。 这将在下一章中介绍。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:220
-#: ../../docs/tutorials/animation/introduction_2d.rst:228
+#: ../../docs/tutorials/animation/introduction_2d.rst:219
+#: ../../docs/tutorials/animation/introduction_2d.rst:227
 msgid "Track settings"
 msgstr "跟踪设置"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:222
+#: ../../docs/tutorials/animation/introduction_2d.rst:221
 #, fuzzy
 msgid ""
 "Each track has a settings panel at the end, where you can set the update "
@@ -372,69 +376,69 @@ msgid ""
 msgstr ""
 "每个轨道末尾都有一个设置面板，您可以在其中设置更新速率，轨道插值和循环模式。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:230
+#: ../../docs/tutorials/animation/introduction_2d.rst:229
 #, fuzzy
 msgid ""
 "The update mode of a track tells Godot when to update the property values. "
 "This can be:"
 msgstr "轨道的更新速率告诉Godot何时更新属性值。 这可以是:"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:233
+#: ../../docs/tutorials/animation/introduction_2d.rst:232
 msgid "Continuous: Update the property on each frame"
 msgstr "连续:更新每个帧的属性"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:234
+#: ../../docs/tutorials/animation/introduction_2d.rst:233
 msgid "Discrete: Only update the property on keyframes"
 msgstr "离散:仅更新关键帧上的属性"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:235
+#: ../../docs/tutorials/animation/introduction_2d.rst:234
 msgid "Trigger: Only update the property on keyframes or triggers"
 msgstr "触发器:仅更新关键帧或触发器上的属性"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:236
+#: ../../docs/tutorials/animation/introduction_2d.rst:235
 msgid ""
 "Capture: The current value of a property is remembered, and it will blend "
 "with the first animation key found"
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:241
+#: ../../docs/tutorials/animation/introduction_2d.rst:240
 #, fuzzy
 msgid "Track mode"
 msgstr "跟踪率"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:243
+#: ../../docs/tutorials/animation/introduction_2d.rst:242
 msgid ""
 "In normal animations, you usually use \"Continuous\". The other types are "
 "used to script complex animations."
 msgstr "在普通动画中，您通常使用“连续”。 其他类型用于编写复杂动画的脚本。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:246
+#: ../../docs/tutorials/animation/introduction_2d.rst:245
 msgid ""
 "The interpolation tells Godot how to calculate the frame values between the "
 "keyframes. These interpolation modes are supported:"
 msgstr "插值告诉Godot如何计算关键帧之间的帧值。 支持这些插值模式:"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:249
+#: ../../docs/tutorials/animation/introduction_2d.rst:248
 msgid "Nearest: Set the nearest keyframe value"
 msgstr "最近:设置最近的关键帧值"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:250
+#: ../../docs/tutorials/animation/introduction_2d.rst:249
 msgid ""
 "Linear: Set the value based on a linear function calculation between the two "
 "keyframes"
 msgstr "线性:根据两个关键帧之间的线性函数计算设置值"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:252
+#: ../../docs/tutorials/animation/introduction_2d.rst:251
 msgid ""
 "Cubic: Set the value based on a cubic function calculation between the two "
 "keyframes"
 msgstr "Cubic:根据两个关键帧之间的三次函数计算设置值"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:258
+#: ../../docs/tutorials/animation/introduction_2d.rst:257
 msgid "Track interpolation"
 msgstr "轨道插补"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:260
+#: ../../docs/tutorials/animation/introduction_2d.rst:259
 msgid ""
 "Cubic interpolation leads to a more natural movement, where the animation is "
 "slower at a keyframe and faster between keyframes. This is usually used for "
@@ -443,17 +447,17 @@ msgstr ""
 "立方插值导致更自然的运动，其中动画在关键帧处较慢而在关键帧之间更快。 这通常用"
 "于角色动画。 线性插值创造了更多的机器人运动。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:265
+#: ../../docs/tutorials/animation/introduction_2d.rst:264
 msgid ""
 "Godot supports two loop modes, which affect the animation if it's set to "
 "loop:"
 msgstr "Godot支持两种循环模式，如果将其设置为循环，则会影响动画:"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:271
+#: ../../docs/tutorials/animation/introduction_2d.rst:270
 msgid "Loop modes"
 msgstr "循环模式"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:273
+#: ../../docs/tutorials/animation/introduction_2d.rst:272
 msgid ""
 "Clamp loop interpolation: When this is selected, the animation stops after "
 "the last keyframe for this track. When the first keyframe is reached again, "
@@ -462,7 +466,7 @@ msgstr ""
 "钳位循环插值:选择此选项后，动画将在此轨道的最后一个关键帧之后停止。 再次到达"
 "第一个关键帧时，动画将重置为其值。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:276
+#: ../../docs/tutorials/animation/introduction_2d.rst:275
 msgid ""
 "Wrap loop interpolation: When this is selected, Godot calculates the "
 "animation after the last keyframe to reach the values of the first keyframe "
@@ -471,32 +475,32 @@ msgstr ""
 "包循环插值:当选择此项时，Godot会在最后一个关键帧之后计算动画，以再次达到第一"
 "个关键帧的值。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:281
-#: ../../docs/tutorials/animation/introduction_2d.rst:294
+#: ../../docs/tutorials/animation/introduction_2d.rst:280
+#: ../../docs/tutorials/animation/introduction_2d.rst:293
 msgid "Keyframes for other properties"
 msgstr "其他属性的关键帧"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:283
+#: ../../docs/tutorials/animation/introduction_2d.rst:282
 msgid ""
 "Godot doesn't restrict you to only edit transform properties. Every property "
 "can be used as a track where you can set keyframes."
 msgstr "Godot不限制您只编辑变换属性。 每个属性都可以用作可以设置关键帧的轨道。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:286
+#: ../../docs/tutorials/animation/introduction_2d.rst:285
+#, fuzzy
 msgid ""
 "If you select your sprite while the animation panel is visible, you get a "
-"small keyframe button for all of the sprite's properties. Click on this "
-"button and Godot automatically adds a track and keyframe to the current "
-"animation."
+"small keyframe button for all the sprite's properties. Click on this button "
+"and Godot automatically adds a track and keyframe to the current animation."
 msgstr ""
 "如果在动画面板可见时选择了精灵，则会获得所有精灵属性的小关键帧按钮。 单击此按"
 "钮，Godot会自动为当前动画添加轨道和关键帧。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:297
+#: ../../docs/tutorials/animation/introduction_2d.rst:296
 msgid "Edit keyframes"
 msgstr "编辑关键帧"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:299
+#: ../../docs/tutorials/animation/introduction_2d.rst:298
 #, fuzzy
 msgid ""
 "For advanced use and to edit keyframes in detail, You can click on them to "
@@ -505,28 +509,28 @@ msgid ""
 msgstr ""
 "要获得高级用法并详细编辑关键帧，请启用关键帧编辑器(| Keyframe editor |)。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:306
+#: ../../docs/tutorials/animation/introduction_2d.rst:305
 msgid "Keyframe editor editing a key"
 msgstr "关键帧编辑器编辑一个键"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:308
+#: ../../docs/tutorials/animation/introduction_2d.rst:307
 msgid ""
 "Additionally, you can also edit the easing value for this keyframe by "
 "clicking and dragging the easing setting. This tells Godot, how to change "
 "the property values when it reaches this keyframe."
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:312
+#: ../../docs/tutorials/animation/introduction_2d.rst:311
 msgid ""
 "You usually tweak your animations this way, when the movement doesn't \"look "
 "right\"."
 msgstr "当这个动作“看起来不正确”时，您通常会以这种方式调整您的动画。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:316
+#: ../../docs/tutorials/animation/introduction_2d.rst:315
 msgid "Advanced: Call Method tracks"
 msgstr "高级：调用方法轨道"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:318
+#: ../../docs/tutorials/animation/introduction_2d.rst:317
 #, fuzzy
 msgid ""
 "Godot's animation engine doesn't stop here. If you're already comfortable "
@@ -538,14 +542,14 @@ msgstr ""
 "和:doc:`/ classes / index`您知道每个节点类型都是一个类，并且有一堆可调用的函"
 "数。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:324
+#: ../../docs/tutorials/animation/introduction_2d.rst:323
 #, fuzzy
 msgid ""
 "For example, the :ref:`class_AudioStreamPlayer` node type has a method to "
 "play an audio stream."
 msgstr "例如， :ref:`class_AudioStreamPlayer`节点类型具有播放音频流的功能。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:327
+#: ../../docs/tutorials/animation/introduction_2d.rst:326
 #, fuzzy
 msgid ""
 "Wouldn't it be great to use a method at a specific keyframe in an animation? "
@@ -558,14 +562,14 @@ msgstr ""
 "方。 这些轨道再次引用一个节点，这次没有引用属性。 相反，一个关键帧包含一个函"
 "数的名称和参数，当Godot到达这个关键帧时应该调用它。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:333
+#: ../../docs/tutorials/animation/introduction_2d.rst:332
 msgid ""
 "To demonstrate, we're going to use a call method track to play audio at a "
 "specific keyframe. Normally to play audio you should use an audio track, but "
 "for the sake of demonstrating methods we're going to do it this way."
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:337
+#: ../../docs/tutorials/animation/introduction_2d.rst:336
 msgid ""
 "Add a :ref:`class_AudioStreamPlayer` to the Scene Tree and setup a stream "
 "using an audio file you put in your project."
@@ -573,22 +577,22 @@ msgstr ""
 "在场景树中添加 :ref:`class_AudioStreamPlayer`，并使用放在项目中的音频文件设置"
 "流。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:340
+#: ../../docs/tutorials/animation/introduction_2d.rst:339
 msgid ""
 "Click on \"Add track\" (|Add track|) on the animation panel's track controls."
 msgstr "单击动画面板轨道控件上的“添加轨道”(|添加轨道|)。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:343
+#: ../../docs/tutorials/animation/introduction_2d.rst:342
 #, fuzzy
 msgid "Select \"Add Call Method Track\" from the list of possible track types."
 msgstr "从可能的轨道类型列表中选择“添加调用函数轨道”。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:348
+#: ../../docs/tutorials/animation/introduction_2d.rst:347
 #, fuzzy
 msgid "Add Call Method Track"
 msgstr "添加调用函数轨道"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:350
+#: ../../docs/tutorials/animation/introduction_2d.rst:349
 msgid ""
 "Select the :ref:`class_AudioStreamPlayer` node in the selection window. "
 "Godot adds the track with the reference to the node."
@@ -596,18 +600,18 @@ msgstr ""
 "在选择窗口中选择 :ref:`class_AudioStreamPlayer`节点。 Godot添加了轨道节点的引"
 "用。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:356
+#: ../../docs/tutorials/animation/introduction_2d.rst:355
 msgid "Select AudioStreamPlayer"
 msgstr "选择AudioStreamPlayer"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:358
+#: ../../docs/tutorials/animation/introduction_2d.rst:357
 msgid ""
 "Right click the timeline where Godot should play the sample and click the "
 "\"Insert Key\" option. This will bring up a list of methods that can be "
 "called for the AudioStreamPlayer node. Select the first one."
 msgstr ""
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:365
+#: ../../docs/tutorials/animation/introduction_2d.rst:364
 #, fuzzy
 msgid ""
 "When Godot reaches the keyframe, Godot calls the :ref:"
@@ -616,7 +620,7 @@ msgstr ""
 "当Godot到达关键帧时，Godot调用 :ref:`class_AnimationPlayer`节点的“play”函数并"
 "播放流。"
 
-#: ../../docs/tutorials/animation/introduction_2d.rst:369
+#: ../../docs/tutorials/animation/introduction_2d.rst:368
 msgid ""
 "You can change its position by dragging it on the timeline, you can also "
 "click on the keyframe and use the keyframe settings in the inspector."

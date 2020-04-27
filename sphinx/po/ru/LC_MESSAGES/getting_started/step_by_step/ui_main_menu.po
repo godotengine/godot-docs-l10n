@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,8 +67,9 @@ msgstr ""
 "``start/assets/main_menu``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
+#, fuzzy
 msgid ""
-"Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
+"Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot's "
 "UI system works."
 msgstr ""
 "Сначала прочитайте :doc:`ui_introduction_to_the_ui_system`, чтобы узнать, "
@@ -117,7 +118,7 @@ msgid ""
 "miss out on valuable feedback."
 msgstr ""
 "Слишком сильный упор на графику на этой стадии может исказить восприятие "
-"игроками игрового процесса и вы лишитесь ценных отзывов"
+"игроками вашего интерфейса и вы лишитесь ценных отзывов."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
@@ -162,9 +163,10 @@ msgstr ""
 "компоненты, используя как основу эти шаблоны."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
+#, fuzzy
 msgid ""
 "We will use the first approach, because the first version of your UI may not "
-"work as well as you’d like. You’re likely to throw parts away and redesign "
+"work as well as you'd like. You're likely to throw parts away and redesign "
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
@@ -278,7 +280,6 @@ msgstr ""
 "сцену, нажмите на меню **Сцена -> Новая Сцена**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
-#, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
@@ -291,7 +292,7 @@ msgstr ""
 "данном случае это ``MarginContainer``. ``MarginContainer`` является хорошей "
 "отправной точкой для большинства интерфейсов, так как часто требуется "
 "заполнение вокруг UI. Нажмите ``Meta+S``, чтобы сохранить сцену на диск. "
-"Назовите его *ГлавноеМеню*."
+"Назовите его *MainMenu*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
 msgid ""
@@ -352,21 +353,21 @@ msgid "the version note,"
 msgstr "Информация о версии,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-msgid "and the main menu’s illustration."
+#, fuzzy
+msgid "and the main menu's illustration."
 msgstr "И иллюстрация главного меню."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press :kbd:`Meta + A` on your keyboard. "
 "Start to type ``TextureRect`` to find the corresponding node and press "
 "enter. With the new node selected, press :kbd:`Meta + D` five times to "
 "create five extra ``TextureRect`` instances."
 msgstr ""
-"Нажмите кнопку ``Добавить узел``, или нажмите ``Ctrl+A`` на клавиатуре. "
-"Начните вводить ``TextureRect``, чтобы найти соответствующий узел, и нажмите "
-"Enter. Выбрав новый узел, нажмите ``Ctrl+D`` пять раз, чтобы создать пять "
-"дополнительных экземпляров ``TextureRect``."
+"Нажмите кнопку **Добавить узел**, или нажмите `Ctrl+A` на клавиатуре. "
+"Начните вводить `TextureRect`, чтобы найти соответствующий узел, и нажмите "
+"Enter. Выбрав новый узел, нажмите `Ctrl+D` пять раз, чтобы создать пять "
+"дополнительных экземпляров `TextureRect`."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
 msgid ""
@@ -375,13 +376,12 @@ msgid ""
 "pick a sprite to load into the texture slot."
 msgstr ""
 "Щелкните на каждый из узлов, чтобы выбрать его. В инспекторе найдите "
-"свойство **Texture**. Нажмите справа от свойства Texture и выберите "
-"``Load``. Откроется проводник, который позволяет выбрать спрайт для загрузки "
-"в слот текстуры."
+"свойство **Texture** и нажмите [пусто],  далее \"Загрузить\". Откроется "
+"проводник, который позволяет выбрать спрайт для загрузки в слот текстуры."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
 msgid "The file browser lets you find and load textures."
-msgstr "Файловый проводник позволит найти и загрузить текстуры."
+msgstr "Файловый проводник позволяет найти и загрузить текстуры."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
 msgid ""
@@ -392,7 +392,7 @@ msgid ""
 "messy."
 msgstr ""
 "Повторите операцию для всех узлов ``TextureRect``. У вас должен быть "
-"логотип, иллюстрация, три варианта меню и информация о версии, каждая как "
+"логотип, иллюстрация, три опции для меню и информация о версии, каждая как "
 "отдельный узел. Затем дважды щелкните на каждом из узлов на вкладке Сцена, "
 "чтобы переименовать их. Пока что элементы не были помещены в контейнеры, "
 "поэтому это будет выглядеть странно."
@@ -411,9 +411,10 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:184
 msgid "Add containers to place UI elements automatically"
-msgstr "Добавление контейнеров для автоматического размещения элементов UI"
+msgstr "Добавьте контейнеры для автоматического размещения элементов UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
+#, fuzzy
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -423,7 +424,7 @@ msgid ""
 "allow the user to resize the left and right areas using an interactive bar. "
 "On the other hand, ``HBoxContainer`` just splits itself into as many columns "
 "as it has children. Although you can deactivate the split container's resize "
-"behaviour, I recommend to favour box containers."
+"behavior, I recommend to favor box containers."
 msgstr ""
 "Наше главное меню имеет некоторые отступы по краям экрана. Они делятся на "
 "две части: слева, у вас логотип и меню. Справа - персонажи. Мы можем "
@@ -510,7 +511,6 @@ msgstr ""
 "поместите её внутрь CenterContainer."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
@@ -519,13 +519,13 @@ msgid ""
 "``NewGame`` and ``Options``, and drag and drop them inside the new "
 "``VBoxContainer``. The UI's layout should barely change, if at all."
 msgstr ""
-"Чтобы добавить пространство между меню и логотипом слева, мы будем "
-"использовать один последний контейнер и его флаги размера(size flags). "
-"Выберите ``VBoxContainer`` и нажмите ``Ctrl+A``, чтобы добавить в него новый "
-"узел. Добавьте второй ``VBoxContainer`` и назовите его *MenuOptions*. "
-"Выберите все три варианта меню, ``Continue``, ``NewGame`` и``Options``, и "
-"перетащите их в новый ``VBoxContainer``. Макет UI должен едва, если вообще "
-"изменится."
+"Для разметки пунктов меню и логотипа слева мы будем использовать один "
+"последний контейнер и флаги его размеров. Выберите `` VBoxContainer`` и "
+"нажмите :kbd:`Meta + A`, чтобы добавить новый узел внутри него. Добавьте "
+"второй `` VBoxContainer`` и назовите его * MenuOptions *. Выберите все три "
+"пункта меню, `` Continue``, `` NewGame`` и `` Options``, и перетащите их в "
+"новый `` VBoxContainer``. Структура пользовательского интерфейса возможно "
+"едва измениться, если вообще изменится."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
 msgid ""
@@ -614,18 +614,17 @@ msgstr ""
 "контейнеры для управления позицией и размера элемента UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:289
-#, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press :kbd:`Q` to activate "
 "the Select Mode, select the container and click and drag on one of the "
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
-"Порядок, в котором вы разберёте вопросы. Чтобы убедиться, что UI хорошо "
-"адаптируется к разным соотношениям экрана, выберите корневой узел, нажмите "
-"клавишу Q, чтобы активировать \"Режим Выделения\". Выберите контейнер, "
-"нажмите и перетащите один из углов контейнера, чтобы изменить его размер. "
-"Компоненты UI должны \"течь\" внутри него."
+"Порядок, в котором вы располагаете узлы, имеет значение. Чтобы убедиться, "
+"что UI хорошо адаптируется к разным соотношениям экрана, выберите корневой "
+"узел, нажмите клавишу :kbd:`Q`, чтобы активировать \"Режим Выделения\". "
+"Выберите контейнер, нажмите и перетащите один из углов контейнера, чтобы "
+"изменить его размер. Компоненты UI должны \"течь\" внутри него."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:295
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:4
-#, fuzzy
 msgid "State design pattern"
-msgstr "バインディングパターン"
+msgstr "ステート(状態)設計パターン"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:7
 msgid "Introduction"
@@ -33,28 +32,36 @@ msgid ""
 "creating a state machine within the player's control script, it would make "
 "development simpler if the states were separated out into different classes."
 msgstr ""
+"処理が必要な状態が多数ある場合、ゲームのスクリプトを作成するのは困難ですが、"
+"一度に1つのノードに接続できるスクリプトは1つだけです。プレイヤーの制御スクリ"
+"プト内にステートマシンを作成する代わりに、ステートが異なるクラスに分けられて"
+"いれば、開発が簡単になります。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:14
 msgid ""
 "There are many ways to implement a state machine with Godot, and some other "
 "methods are below:"
 msgstr ""
+"Godotでステートマシンを実装する方法は多数ありますが、他にもいくつかの方法があ"
+"ります:"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:16
 msgid ""
 "The player can have a child node for each state, which are called when "
 "utilized."
 msgstr ""
+"プレイヤーは、ステートごとに子ノードを持つことができます。子ノードは、使用さ"
+"れるときに呼び出されます。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:17
 msgid "Enums can be used in conjunction with a match statement."
-msgstr ""
+msgstr "列挙型は、matchステートメントと組み合わせて使用できます。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:18
 msgid ""
 "The state scripts themselves could be swapped out from a node dynamically at "
 "run-time."
-msgstr ""
+msgstr "ステートスクリプト自体は、実行時にノードから動的に交換できます。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:20
 msgid ""
@@ -62,20 +69,21 @@ msgid ""
 "state script attached. Each state script will be an implementation of a "
 "different state."
 msgstr ""
+"このチュートリアルでは、ステートスクリプトが添付されているノードの追加と削除"
+"のみに焦点を当てます。各ステートスクリプトは、異なるステートの実装になりま"
+"す。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:24
-#, fuzzy
 msgid ""
 "There is a great resource explaining the concept of the state design pattern "
 "here: https://gameprogrammingpatterns.com/state.html"
 msgstr ""
-"オブザーバーパターンの詳細については、以下をご覧ください (英語): http://"
-"gameprogrammingpatterns.com/observer.html"
+"ここにステート設計パターンの概念を説明する素晴らしいリソースがあります: "
+"https://gameprogrammingpatterns.com/state.html"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:28
-#, fuzzy
 msgid "Script setup"
-msgstr "GDScript型"
+msgstr "スクリプトのセットアップ"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:30
 msgid ""
@@ -84,10 +92,14 @@ msgid ""
 "player. For now, a player will be limited to two actions: **move left**, "
 "**move right**. This means there will be two states: **idle** and **run**."
 msgstr ""
+"継承の機能は、この設計原則を始めるのに役立ちます。プレイヤーの基本機能を記述"
+"するクラスを作成する必要があります。今のところ、プレイヤーは2つのアクションに"
+"制限されます: **左に移動**\\ 、\\ **右に移動**\\ 。これは、\\ **idle** と "
+"**run** の2つのステートがあることを意味します。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:35
 msgid "Below is the generic state, from which all other states will inherit."
-msgstr ""
+msgstr "以下は、他のすべてのステートが継承する一般的なステートです。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:66
 msgid ""
@@ -102,12 +114,23 @@ msgid ""
 "remember that *coupling* and *cohesion* are important concepts when it comes "
 "to code management."
 msgstr ""
+"上記のスクリプトに関するいくつかの注意事項。まず、この実装は "
+"``setup(change_state, animated_sprite, persistent_state)`` メソッドを使用して"
+"参照を割り当てます。これらの参照は、この状態の親でインスタンス化されます。こ"
+"れは、*凝集* として知られるプログラミングの考えに役立ちます。プレイヤーの状態"
+"は、これらの変数を作成する責任を負いませんが、これらを使用できるようにしたい"
+"と考えています。ただし、これにより、ステートはステートの親に *結合* されま"
+"す。これは、ステートがこれらの変数を含む親を持っているかどうかに大きく依存し"
+"ていることを意味します。したがって、コード管理に関しては、\\ *結合* と *凝集"
+"* が重要な概念であることを忘れないでください。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:75
 msgid ""
 "See the following page for more details on cohesion and coupling: https://"
 "courses.cs.washington.edu/courses/cse403/96sp/coupling-cohesion.html"
 msgstr ""
+"凝集と結合の詳細については、次のページを参照してください: https://courses.cs."
+"washington.edu/courses/cse403/96sp/couple-cohesion.html"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:78
 msgid ""
@@ -115,6 +138,9 @@ msgid ""
 "implementation. The state script just uses ``pass`` to show that it will not "
 "execute any instructions when the methods are called. This is important."
 msgstr ""
+"2つ目は、スクリプトには移動のためのメソッドがいくつかありますが、実装はありま"
+"せん。ステートスクリプトは単に ``pass`` を使用して、メソッドが呼び出されたと"
+"きに命令を実行しないことを示します。これは重要です。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:81
 msgid ""
@@ -124,6 +150,11 @@ msgid ""
 "the states can modify the movement of the player is to use the ``velocity`` "
 "variable defined in their base class."
 msgstr ""
+"3番目に ``_physics_process(delta)`` メソッドは実際にここに実装されています。"
+"これにより、ステートにデフォルトの ``_phyics_process(delta)`` 実装を持たせる"
+"ことができ、そこでは ``velocity`` を使用してプレイヤーを移動します。ステート"
+"がプレイヤーの動きを変更する方法は、基本クラスで定義された ``velocity`` 変数"
+"を使用することです。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:85
 msgid ""
@@ -131,12 +162,16 @@ msgid ""
 "``State``. This makes refactoring the code easier, since the file path from "
 "using the ``load()`` and ``preload()`` functions in godot will not be needed."
 msgstr ""
+"最後に、このスクリプトは実際には ``State`` という名前のクラスとして指定されて"
+"います。これにより、godotで ``load()`` および ``preload()`` 関数で使用する"
+"ファイルパスが不要になるため、コードのリファクタリングが容易になります。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:88
 msgid ""
 "So, now that there is a base state, the two states discussed earlier can be "
 "implemented."
 msgstr ""
+"そのため、基準ステートがあるので、前に説明した2つの状態を実装できます。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:154
 msgid ""
@@ -149,17 +184,28 @@ msgid ""
 "as ``_ready()``, ``_process(delta)``, etc. Custom functions use the normal "
 "inheritance rules of overriding the base implementation."
 msgstr ""
+"``Run`` および ``Idle`` のステートは ``Node2D`` を拡張する ``State`` から拡張"
+"されるため、関数 ``_physics_process(delta)`` は **ボトムアップ** から呼び出さ"
+"れます。つまり、\\ ``Run`` および ``Idle`` は ``_physics_process(delta)`` の"
+"実装を呼び出し、\\ ``State`` はその実装を呼び出し、次にNode2Dと、独自の実装な"
+"どを呼び出します。これは奇妙に思えるかもしれませんが、\\ ``ready()``\\ 、\\ "
+"``_process(delta)`` などの事前定義関数にのみ関係します。独自の関数は、基本実"
+"装をオーバーライドする通常の継承ルールを使用します。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:161
 msgid ""
 "There is a round-about method for obtaining a state instance. A state "
 "factory can be used."
 msgstr ""
+"ステートインスタンスを取得するためのラウンドアバウトメソッドがあります。ス"
+"テートファクトリを使用できます。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:184
 msgid ""
 "This will look for states in a dictionary and return the state if found."
 msgstr ""
+"これにより、dictionary内のステートが検索され、見つかった場合はそのステートが"
+"返されます。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:186
 msgid ""
@@ -168,6 +214,10 @@ msgid ""
 "Since these references will not change it makes sense to call this new "
 "script ``persistent_state.gd``."
 msgstr ""
+"すべてのステートが独自のスクリプトで定義されたので、渡された参照がどのように"
+"インスタンス化されるかを理解する時が来ました。これらの参照は変更されないた"
+"め、この新しいスクリプト ``persistent_state.gd`` を呼び出すことは理にかなって"
+"います。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:229
 msgid ""
@@ -175,6 +225,9 @@ msgid ""
 "was to make the tutorial simple, but it is not usually best practice to do "
 "this."
 msgstr ""
+"``persistent_state.gd`` スクリプトには、入力を検出するためのコードが含まれて"
+"います。これはチュートリアルを簡単にするためでしたが、通常これを行うのはベス"
+"トプラクティスではありません。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:233
 msgid "Project setup"
@@ -189,6 +242,12 @@ msgid ""
 "idle and run animations. Also, the top-level node is assumed to be a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`."
 msgstr ""
+"このチュートリアルでは、接続先のノードに、\\ :ref:`AnimatedSprite "
+"<class_AnimatedSprite>` である子ノードが含まれると仮定しました。また、この :"
+"ref:`AnimatedSprite <class_AnimatedSprite>` には、少なくとも2つのアニメーショ"
+"ン(待機アニメーションと走るアニメーション)があるという仮定があります。また、"
+"最上位ノードは :ref:`KinematicBody2D <class_KinematicBody2D>` であると想定さ"
+"れます。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:242
 msgid ""
@@ -199,6 +258,12 @@ msgid ""
 "tutorial for sprite animation already. See :ref:`2D Sprite Animation "
 "<doc_2d_sprite_animation>`."
 msgstr ""
+"このチュートリアルで使用されるラマのzipファイルは、\\ :download:`ここ <files/"
+"llama.zip>` です。ソースは `piskel_llama <https://www.piskelapp.com/p/"
+"agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgICfx5ygCQw/edit>`_ からでしたが、その"
+"ページには元の作成者情報が見つかりませんでした...。スプライトアニメーションの"
+"ための良いチュートリアルも既にあるので参照してください。\\ :ref:`2Dスプライト"
+"アニメーション <doc_2d_sprite_animation>`\\ 。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:247
 msgid ""
@@ -206,6 +271,9 @@ msgid ""
 "should be attached to the top node of the player, which is a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`."
 msgstr ""
+"したがって、アタッチする必要がある唯一のスクリプトは ``persistent_state.gd`` "
+"で、これはプレイヤーの最上位ノードにアタッチする必要があります。これは :ref:"
+"`KinematicBody2D <class_KinematicBody2D>` です。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:254
 msgid ""
@@ -215,3 +283,7 @@ msgid ""
 "focus on itself and how it changes to another state. Each state is "
 "functionally separated and instantiated dynamically."
 msgstr ""
+"プレイヤーは、ステート設計パターンを使用して、2つの異なるステートを実装しまし"
+"た。このパターンの良い点は、別のステートを追加する場合は、自分自身と他のス"
+"テートにどのように変化するかにのみに焦点を当てる別のクラスを作成すれば済むと"
+"いうことです。各ステートは機能的に分離され、動的にインスタンス化されます。"

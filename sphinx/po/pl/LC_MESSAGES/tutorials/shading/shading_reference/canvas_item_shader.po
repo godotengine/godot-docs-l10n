@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,9 +46,10 @@ msgid "Render mode"
 msgstr "Tryby renderowania"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:17
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:95
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:144
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:52
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:156
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:205
 msgid "Description"
 msgstr "Opis"
 
@@ -127,8 +128,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
 #, fuzzy
-msgid "Vertex built-ins"
-msgstr "Wbudowane typy wektorowe"
+msgid "Built-ins"
+msgstr "Typy wbudowane"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:41
 msgid ""
@@ -138,176 +139,190 @@ msgid ""
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:46
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:47
+#, fuzzy
+msgid "Global built-ins"
+msgstr "Wbudowane typy wektorowe"
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:49
+msgid "Global built-ins are available everywhere, including custom functions."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:52
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:156
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:205
+msgid "Built-in"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:54
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
+msgid "in float **TIME**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:54
+msgid "Global time, in seconds."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:58
+#, fuzzy
+msgid "Vertex built-ins"
+msgstr "Wbudowane typy wektorowe"
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:60
 msgid ""
 "Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
 "relative to the camera). If not written to, these values will not be "
 "modified and be passed through as they came."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:49
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:63
 msgid ""
 "The user can disable the built-in modelview transform (projection will still "
 "happen later) and do it manually with the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:62
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:76
 msgid ""
 "``WORLD_MATRIX`` is actually a modelview matrix. It takes input in local "
 "space and transforms it into view space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:65
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:79
 msgid ""
 "In order to get the world space coordinates of a vertex, you have to pass in "
 "a custom uniform like so:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:86
 msgid "Then, in your vertex shader:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:83
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:97
 msgid ""
 "``world_position`` can then be used in either the vertex or fragment "
 "functions."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:85
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:99
 msgid ""
 "Other built-ins, such as UV and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:87
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:101
 msgid ""
 "For instancing, the INSTANCE_CUSTOM variable contains the instance custom "
 "data. When using particles, this information is usually:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:90
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:104
 msgid "**x**: Rotation angle in radians."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:91
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:105
 msgid "**y**: Phase during lifetime (0 to 1)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:92
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:106
 msgid "**z**: Animation frame."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:95
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:144
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
-msgid "Built-in"
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:97
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
 msgid "in mat4 **WORLD_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:97
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
 msgid "Image space to view space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:99
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:113
 msgid "in mat4 **EXTRA_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:99
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:113
 msgid "Extra transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:101
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
 msgid "in mat4 **PROJECTION_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:101
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
 msgid "View space to clip space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:103
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
-msgid "in float **TIME**"
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:103
-msgid "Global time, in seconds."
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:105
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
 msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:105
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
 msgid "Instance custom data."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:188
 msgid "in bool **AT_LIGHT_PASS**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:188
 msgid "``true`` if this is a light pass."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:121
 msgid "inout vec2 **VERTEX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:121
 msgid "Vertex, in image space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:166
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:123
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:166
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:123
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
 msgid ""
 "Normalized pixel size of default 2D texture. For a Sprite with a texture of "
 "size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:127
 msgid "inout vec2 **UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:127
 msgid "UV."
 msgstr "UV."
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:159
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:129
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:171
 msgid "inout vec4 **COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:129
 msgid "Color from vertex primitive."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:131
 msgid "inout float **POINT_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:119
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:131
 msgid "Point size for point drawing."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:123
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:135
 #, fuzzy
 msgid "Fragment built-ins"
 msgstr "Wbudowane typy wektorowe"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:125
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:137
 msgid ""
 "Certain Nodes (for example, :ref:`Sprites <class_Sprite>`) display a texture "
 "by default. However, when a custom fragment function is attached to these "
@@ -316,9 +331,9 @@ msgid ""
 "color for such nodes, use:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:134
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:146
 msgid ""
-"This differs from the behaviour of the built-in normal map. If a normal map "
+"This differs from the behavior of the built-in normal map. If a normal map "
 "is attached, Godot uses it by default and assigns its value to the built-in "
 "``NORMAL`` variable. If you are using a normal map meant for use in 3D, it "
 "will appear inverted. In order to use it in your shader, you must assign it "
@@ -326,122 +341,117 @@ msgid ""
 "and overwriting ``NORMAL``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:146
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:158
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:207
 msgid "in vec4 **FRAGCOORD**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:146
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:158
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:207
 msgid ""
 "Coordinate of pixel center. In screen space. ``xy`` specifies position in "
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:150
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
 msgid "inout vec3 **NORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:150
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
 msgid "Normal read from **NORMAL_TEXTURE**. Writable."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:152
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
 msgid "out vec3 **NORMALMAP**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:152
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
 msgid ""
 "Configures normal maps meant for 3D for use in 2D. If used, overwrites "
 "**NORMAL**."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:167
 msgid "inout float **NORMALMAP_DEPTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:167
 msgid "Normalmap depth for scaling."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:204
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:169
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:214
 msgid "in vec2 **UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:157
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:169
 msgid "UV from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:159
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:171
 msgid ""
 "Color from vertex function and output fragment color. If unused, will be set "
 "to **TEXTURE** color."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
 #, fuzzy
 msgid "in sampler2D **TEXTURE**"
 msgstr "**isampler2D**"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:162
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
 msgid "Default 2D texture."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
 msgid "in sampler2D **NORMAL_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
 msgid "Default 2D normal texture."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:170
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
 msgid "in vec2 **SCREEN_UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:170
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
 msgid "Screen UV for use with **SCREEN_TEXTURE**."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
 msgid "Size of individual pixels. Equal to inverse of resolution."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid "in vec2 **POINT_COORD**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:186
 msgid "Coordinate for drawing points."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
-msgid "Global time in seconds."
-msgstr ""
-
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:180
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:190
 msgid "in sampler2D **SCREEN_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:180
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:190
 msgid "Screen texture, mipmaps contain gaussian blurred versions."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:194
 #, fuzzy
 msgid "Light built-ins"
 msgstr "Wbudowane światło"
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:186
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:196
 msgid ""
 "Light processor functions work differently in 2D than they do in 3D. In "
 "CanvasItem shaders, the shader is called once for the object being drawn, "
@@ -452,109 +462,113 @@ msgid ""
 "visible where it is covered by light."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:192
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:202
 msgid ""
 "When the shader is on a light pass, the ``AT_LIGHT_PASS`` variable will be "
 "``true``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:201
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
 msgid "in vec3 **NORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:201
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
 msgid ""
 "Input Normal. Although this value is passed in, **normal calculation still "
 "happens outside of this function**."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:204
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:214
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:206
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:216
 msgid "in vec4 **COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:206
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:216
 msgid ""
 "Input Color. This is the output of the fragment function with final "
 "modulation applied."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:209
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
 msgid "sampler2D **TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:209
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:219
 msgid "Current texture in use for CanvasItem."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
 msgid "**SCREEN_TEXTURE** Coordinate (for using with screen texture)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:217
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid "UV for Point Sprite."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
+msgid "Global time in seconds."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
 msgid "inout vec2 **LIGHT_VEC**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:221
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
 msgid ""
 "Vector from light to fragment in local coordinates. It can be modified to "
 "alter illumination direction when normal maps are used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:224
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:234
 msgid "inout vec2 **SHADOW_VEC**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:224
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:234
 msgid ""
 "Vector from light to fragment in local coordinates. It can be modified to "
 "alter shadow computation."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:237
 msgid "inout float **LIGHT_HEIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:237
 msgid "Height of Light. Only effective when normals are used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:239
 msgid "inout vec4 **LIGHT_COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:239
 msgid "Color of Light."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:241
 msgid "in vec2 **LIGHT_UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:231
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:241
 msgid "UV for Light texture."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:243
 msgid "out vec4 **SHADOW_COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:243
 msgid "Shadow Color of Light."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:235
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:245
 msgid "inout vec4 **LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:235
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:245
 msgid ""
 "Value from the Light texture and output color. Can be modified. If not used, "
 "the light function is ignored."

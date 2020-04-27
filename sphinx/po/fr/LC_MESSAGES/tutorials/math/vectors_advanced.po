@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,7 +253,7 @@ msgstr ""
 "faut d'abord obtenir le vecteur de direction, puis le faire pivoter de 90° "
 "de chaque côté :"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:201
+#: ../../docs/tutorials/math/vectors_advanced.rst:199
 msgid ""
 "The rest is the same as the previous example, either point_a or point_b will "
 "work since they are in the same plane:"
@@ -261,7 +261,7 @@ msgstr ""
 "Le reste est la même chose que dans l'exemple précédent, le point_a ou le "
 "point_b fonctionnera puisqu'ils sont dans le même plan :"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:219
+#: ../../docs/tutorials/math/vectors_advanced.rst:217
 msgid ""
 "Doing the same in 3D is a little more complex and will be explained further "
 "down."
@@ -269,11 +269,11 @@ msgstr ""
 "Faire la même chose en 3D est un peu plus complexe et sera expliqué plus "
 "loin."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:223
+#: ../../docs/tutorials/math/vectors_advanced.rst:221
 msgid "Some examples of planes"
 msgstr "quelques exemples de plan"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:225
+#: ../../docs/tutorials/math/vectors_advanced.rst:223
 msgid ""
 "Here is a simple example of what planes are useful for. Imagine you have a "
 "`convex <https://www.mathsisfun.com/definitions/convex.html>`__ polygon. For "
@@ -285,7 +285,7 @@ msgstr ""
 "html>`__. Par exemple, un rectangle, un trapèze, un triangle ou n'importe "
 "quel polygone où aucune face ne se plie vers l'intérieur."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:230
+#: ../../docs/tutorials/math/vectors_advanced.rst:228
 msgid ""
 "For every segment of the polygon, we compute the plane that passes by that "
 "segment. Once we have the list of planes, we can do neat things, for example "
@@ -296,7 +296,7 @@ msgstr ""
 "choses intéressantes, par exemple vérifier si un point est à l'intérieur du "
 "polygone."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:234
+#: ../../docs/tutorials/math/vectors_advanced.rst:232
 msgid ""
 "We go through all planes, if we can find a plane where the distance to the "
 "point is positive, then the point is outside the polygon. If we can't, then "
@@ -306,12 +306,12 @@ msgstr ""
 "distance au point est positive, alors le point est à l'extérieur du "
 "polygone. Si on ne peut pas, alors le point est à l'intérieur."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:240
-#: ../../docs/tutorials/math/vectors_advanced.rst:279
+#: ../../docs/tutorials/math/vectors_advanced.rst:238
+#: ../../docs/tutorials/math/vectors_advanced.rst:277
 msgid "Code should be something like this:"
 msgstr "Le code devrait ressembler à ceci :"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:265
+#: ../../docs/tutorials/math/vectors_advanced.rst:263
 msgid ""
 "Pretty cool, huh? But this gets much better! With a little more effort, "
 "similar logic will let us know when two convex polygons are overlapping too. "
@@ -324,7 +324,7 @@ msgstr ""
 "(ou SAT) et la plupart des moteurs physiques l'utilisent pour détecter les "
 "collisions."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:270
+#: ../../docs/tutorials/math/vectors_advanced.rst:268
 msgid ""
 "With a point, just checking if a plane returns a positive distance is enough "
 "to tell if the point is outside. With another polygon, we must find a plane "
@@ -339,7 +339,7 @@ msgstr ""
 "de A contre les points de B, puis avec les plans de B contre les points de "
 "A :"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:370
+#: ../../docs/tutorials/math/vectors_advanced.rst:368
 msgid ""
 "As you can see, planes are quite useful, and this is the tip of the iceberg. "
 "You might be wondering what happens with non convex polygons. This is "
@@ -352,11 +352,11 @@ msgstr ""
 "diviser le polygone concave en polygones convexes plus petits ou d'utiliser "
 "une technique telle que le BSP (qui n'est pas très utilisé de nos jours)."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:377
+#: ../../docs/tutorials/math/vectors_advanced.rst:375
 msgid "Collision detection in 3D"
 msgstr "Détection des collisions en 3D"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:379
+#: ../../docs/tutorials/math/vectors_advanced.rst:377
 msgid ""
 "This is another bonus bit, a reward for being patient and keeping up with "
 "this long tutorial. Here is another piece of wisdom. This might not be "
@@ -370,7 +370,7 @@ msgstr ""
 "la détection de collision) mais il est utilisé par presque tous les moteurs "
 "physiques et bibliothèques de détection de collision :)"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:385
+#: ../../docs/tutorials/math/vectors_advanced.rst:383
 msgid ""
 "Remember that converting a convex shape in 2D to an array of 2D planes was "
 "useful for collision detection? You could detect if a point was inside any "
@@ -381,7 +381,7 @@ msgstr ""
 "détecter si un point se trouvait à l'intérieur d'une forme convexe, ou si "
 "deux formes convexes 2D se chevauchaient."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:389
+#: ../../docs/tutorials/math/vectors_advanced.rst:387
 msgid ""
 "Well, this works in 3D too, if two 3D polyhedral shapes are colliding, you "
 "won't be able to find a separating plane. If a separating plane is found, "
@@ -392,7 +392,7 @@ msgstr ""
 "de séparation est trouvé, les formes n'entrent définitivement pas en "
 "collision."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:393
+#: ../../docs/tutorials/math/vectors_advanced.rst:391
 msgid ""
 "To refresh a bit a separating plane means that all vertices of polygon A are "
 "in one side of the plane, and all vertices of polygon B are in the other "
@@ -404,7 +404,7 @@ msgstr ""
 "de l'autre côté. Ce plan est toujours l'un des plans de face du polygone A "
 "ou du polygone B."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:398
+#: ../../docs/tutorials/math/vectors_advanced.rst:396
 msgid ""
 "In 3D though, there is a problem to this approach, because it is possible "
 "that, in some cases a separating plane can't be found. This is an example of "
@@ -414,7 +414,7 @@ msgstr ""
 "que, dans certains cas, un plan de séparation ne puisse être trouvé. Ceci "
 "est un exemple d'une telle situation :"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:404
+#: ../../docs/tutorials/math/vectors_advanced.rst:402
 msgid ""
 "To avoid it, some extra planes need to be tested as separators, these planes "
 "are the cross product between the edges of polygon A and the edges of "
@@ -424,6 +424,34 @@ msgstr ""
 "séparateurs, ces plans sont le produit vectoriel entre les bords du polygone "
 "A et les bords du polygone B"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:410
+#: ../../docs/tutorials/math/vectors_advanced.rst:408
 msgid "So the final algorithm is something like:"
 msgstr "L'algorithme final est quelque chose comme cela :"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:589
+msgid "More information"
+msgstr "Plus d'information"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:591
+#, fuzzy
+msgid ""
+"For more information on using vector math in Godot, see the following "
+"article:"
+msgstr ""
+"Pour plus d'informations sur l'utilisation des mathématiques vectorielles "
+"dans Godot, voir les articles suivants :"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:593
+msgid ":ref:`doc_matrices_and_transforms`"
+msgstr ":ref:`doc_matrices_and_transforms`"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:595
+#, fuzzy
+msgid ""
+"If you would like additional explanation, you should check out 3Blue1Brown's "
+"excellent video series \"Essence of Linear Algebra\": https://www.youtube."
+"com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"
+msgstr ""
+"Si vous souhaitez des explications supplémentaires, vous pouvez consulter "
+"l'excellente vidéo de 3Blue1Brown sur les transformations linéaires : "
+"https://www.youtube.com/watch?v=kYB8IZa5AuE"

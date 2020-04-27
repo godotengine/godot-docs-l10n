@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
-msgid "Introduction to Godot’s editor"
+#, fuzzy
+msgid "Introduction to Godot's editor"
 msgstr "Godot 편집기 소개"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
+#, fuzzy
 msgid ""
-"This tutorial will run you through Godot’s interface. We’re going to look at "
+"This tutorial will run you through Godot's interface. We're going to look at "
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
@@ -36,8 +38,9 @@ msgid "Project manager"
 msgstr "프로젝트 매니저(Project Manager)"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
+#, fuzzy
 msgid ""
-"When you launch Godot, the first window you’ll see is the Project Manager. "
+"When you launch Godot, the first window you'll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
@@ -54,8 +57,9 @@ msgstr ""
 "제하고, 가져오고, 실행할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
+#, fuzzy
 msgid ""
-"In the top-right corner you’ll find a drop-down menu to change the editor’s "
+"In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
 msgstr "오른쪽 위에는 편집기의 언어를 바꿀 수 있는 드롭 다운 메뉴가 있습니다."
 
@@ -88,9 +92,10 @@ msgstr ""
 "다음 렌더러를 선택하세요."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
+#, fuzzy
 msgid ""
-"Click the Browse button to open Godot’s file browser and pick a location or "
-"type the folder’s path in the Project Path field."
+"Click the Browse button to open Godot's file browser and pick a location or "
+"type the folder's path in the Project Path field."
 msgstr ""
 "찾아보기(Browse) 버튼을 눌러서 Godot 파일 브라우저를 열어서 위치를 지정하거"
 "나, 프로젝트 경로 영역에 폴더의 경로를 입력하세요."
@@ -129,8 +134,9 @@ msgstr ""
 "Godot는 프로젝트를 만들고 편집기에 프로젝트를 열어 줍니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
+#, fuzzy
 msgid ""
-"The next time you open the project manager, you’ll see your new project in "
+"The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
 "다음에 프로젝트 매니저를 열게 되면, 새 프로젝트가 목록에 있는 것을 볼 수 있습"
@@ -151,13 +157,14 @@ msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr "폴더 경로가 올바르다면 초록색 체크 표시가 나타납니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
-msgid "Your first look at Godot’s editor"
+#, fuzzy
+msgid "Your first look at Godot's editor"
 msgstr "Godot 편집기와의 첫 만남"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 #, fuzzy
 msgid ""
-"Welcome to Godot! With your project open, you should see the editor’s "
+"Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
@@ -176,34 +183,36 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 #, fuzzy
 msgid ""
-"The **FileSystem dock** is where you’ll manage your project files and assets."
+"The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
 "왼쪽 아래에는 **파일 시스템 독(FileSystem dock)**\\ 이 있습니다. 여기서 프로"
-"젝트 파일과 애셋을 관리합니다."
+"젝트의 파일과 애셋을 관리합니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 #, fuzzy
 msgid ""
-"The **Scene dock** lists the active scene’s content and the **Inspector** "
+"The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
 "오른쪽에는 현재 씬의 내용을 나열해 놓은 **씬 독(Scene dock)**\\ 과, 그 아래"
 "에 있는 **인스펙터(Inspector)**\\ 를 확인할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
+#, fuzzy
 msgid ""
-"In the center, you have the **Toolbar** at the top, where you’ll find tools "
-"to move, scale or lock your scene’s objects. It changes as you jump to "
+"In the center, you have the **Toolbar** at the top, where you'll find tools "
+"to move, scale or lock your scene's objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
 "가운데 바로 위에는 이동, 크기 조절, 씬 객체 잠금을 할 수 있는 **툴바"
 "(Toolbar)**\\ 가 있습니다. 툴바는 작업 공간마다 달라집니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
+#, fuzzy
 msgid ""
 "The **Bottom Panel** is the host for the debug console, the animation "
-"editor, the audio mixer… They are wide and can take precious space. That’s "
-"why they’re folded by default."
+"editor, the audio mixer… They are wide and can take precious space. That's "
+"why they're folded by default."
 msgstr ""
 "**하단 패널(Bottom Panel)**\\ 은 디버그 콘솔이나 애니메이션 편집, 오디오 믹"
 "서 등이 있고... 그렇다 보니 많은 공간을 차지합니다. 때문에 기본적으로 닫혀 있"
@@ -222,7 +231,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
 #, fuzzy
 msgid ""
-"You’ll use the **2D workspace** for all types of games. In addition to 2D "
+"You'll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
@@ -231,13 +240,12 @@ msgstr ""
 "어갑니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
 "**3D 작업 공간(3D workspace)**\\ 에서는 3D 게임 용 메시와 조명, 레벨 설계를 "
-"할 수 있습니다. F2 키를 눌러 들어갑니다."
+"할 수 있습니다. 키보드의 F2(macOS에서는 Alt + 2) 키를 눌러 들어갑니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
@@ -266,20 +274,40 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
-"Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
-"use in your projects."
+"To search for information about a class, method, property, constant, or "
+"signal in the engine while you are writing a script, press the \"Search Help"
+"\" button at the top right of the Script workspace."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
+msgid ""
+"A new window will pop up. Search for the item that you want to find "
+"information about."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
+msgid ""
+"Click on the item you are looking for and press open. The documentation for "
+"the item will be displayed in the script workspace."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
+#, fuzzy
+msgid ""
+"Finally, the **AssetLib** is a library of free and open source add-ons, "
+"scripts and assets to use in your projects."
 msgstr ""
 "마지막으로 **AssetLib**\\ 은 프로젝트에 쓸 무료 애드온, 스크립트, 애셋이 있"
 "는 라이브러리입니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:146
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:162
 msgid "Modify the interface"
 msgstr "인터페이스 수정하기"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
 #, fuzzy
 msgid ""
-"Godot’s interface lives in a single window. You cannot split it across "
+"Godot's interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio Code for instance."
 msgstr ""
@@ -287,23 +315,23 @@ msgstr ""
 "지만, 대신 Atom이나 Visual Studio와 같은 외부 코드 편집기를 사용할 수 있습니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:169
 msgid "Move and resize docks"
 msgstr "독의 이동과 크기 조절"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:155
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:171
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr "독이나 패널의 크기를 조절하려면 모서리를 클릭한 뒤 드래그하세요."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:160
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:176
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
 "독의 위에 있는 점 세 개로 된 아이콘을 누르면 독의 위치를 바꿀 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:165
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:181
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."

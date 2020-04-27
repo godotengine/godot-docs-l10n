@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,12 +26,13 @@ msgid "What this tutorial covers"
 msgstr "このチュートリアルの対象"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:9
+#, fuzzy
 msgid ""
 "As seen in the :ref:`doc_making_plugins` page, making a basic plugin that "
-"extends the editor is fairly easy. This plugin mechanism also allows you to "
-"create new UIs in the central part of the editor, similarly to the basic 2D, "
-"3D, Script and AssetLib views. Such editor plugins are referred as \"Main "
-"screen plugins\"."
+"extends the editor is fairly easy. Main screen plugins allow you to create "
+"new UIs in the central part of the editor, which appear next to the \"2D\", "
+"\"3D\", \"Script\", and \"AssetLib\" buttons. Such editor plugins are "
+"referred as \"Main screen plugins\"."
 msgstr ""
 ":ref:`doc_making_plugins` ページに見られるように、エディタを拡張する基本的な"
 "プラグインを作成するのはかなり簡単です。このプラグインメカニズムにより、基本"
@@ -40,66 +41,34 @@ msgstr ""
 "イン」と呼ばれます。"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:15
+#, fuzzy
 msgid ""
 "This tutorial leads you through the creation of a basic main screen plugin. "
-"With this plugin example, we want to demonstrate:"
+"For the sake of simplicity, our main screen plugin will contain a single "
+"button that prints text to the console."
 msgstr ""
 "このチュートリアルでは、基本的なメイン画面プラグインの作成について説明しま"
 "す。このプラグインの例を使用して、次のことを示します:"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:18
-msgid "Creating a main screen plugin"
-msgstr "メイン画面プラグインを作成"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:19
-msgid ""
-"Linking the main screen to another plugin GUI element (such as a Tab panel, "
-"similar to the Inspector tab)"
-msgstr ""
-"メイン画面を別のプラグインGUI要素([インスペクタ]タブに似たタブパネルなど)にリ"
-"ンクする"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:22
-msgid ""
-"For the sake of simplicity, the two GUI elements of our main screen plugin "
-"will both consist in a Label and a Button. Pressing one element's button "
-"will display some text on the other's label node."
-msgstr ""
-"簡単にするために、メイン画面プラグインの2つのGUI要素は両方ともラベルとボタン"
-"で構成されます。一方の要素のボタンを押すと、他方のラベルノードにテキストが表"
-"示されます。"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:27
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:20
 msgid "Initializing the plugin"
 msgstr "プラグインの初期化"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:29
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:22
 msgid ""
-"The plugin itself is a Godot project. It is best to set its contents in an "
-"``addons/my_plugin_name/`` structure. The only files that lie in the root "
-"folder are the project.godot file, and the project icon."
+"First create a new plugin from the Plugins menu. For this tutorial, we'll "
+"put it in a folder called ``main_screen``, but you can use any name you'd "
+"like."
 msgstr ""
-"プラグイン自体はGodotプロジェクトです。内容を ``addons/my_plugin_name/`` 構造"
-"に設定するのが最善です。ルートフォルダにあるファイルは、project.godotファイル"
-"とプロジェクトアイコンのみです。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:33
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:25
 msgid ""
-"In the ``addons/my_plugin_name/`` folder, we create the ``plugin.cfg`` file "
-"as described in the :ref:`doc_making_plugins` page."
+"The plugin script will come with ``_enter_tree()`` and ``_exit_tree()`` "
+"methods, but for a main screen plugin we need to add a few extra methods. "
+"Add five extra methods such that the script looks like this:"
 msgstr ""
-"``addons/my_plugin_name/`` フォルダで、\\ :ref:`doc_making_plugins` ページで"
-"説明されている ``plugin.cfg`` ファイルを作成します。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:45
-msgid ""
-"We also initialize the file targeted by the ``script=`` property of the ``."
-"cfg`` file. In our example, ``main_screen_plugin.gd``."
-msgstr ""
-"また、\\ ``.cfg`` ファイルの ``script =`` プロパティが対象とするファイルを初"
-"期化します。この例では、\\ ``main_screen_plugin.gd`` です。"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:76
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:58
 msgid ""
 "The important part in this script is the ``has_main_screen()`` function, "
 "which is overloaded so it returns ``true``. This function is automatically "
@@ -113,85 +82,18 @@ msgstr ""
 "ンタービューを追加することを通知します。とりあえず、このスクリプトはそのまま"
 "にしておき、後でまた説明します。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:83
-msgid "Scenes"
-msgstr "シーン"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:85
-msgid ""
-"The ``main_screen_plugin.gd`` file will be responsible for each of our "
-"plugin's UI element instantiation, and it will also manage the communication "
-"between them."
-msgstr ""
-"``main_screen_plugin.gd`` ファイルは、プラグインの各UI要素のインスタンス化を"
-"担当し、それらの間の通信も管理します。"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:88
-#, fuzzy
-msgid ""
-"As a matter of fact, we wish to design each UI element in their own scene. "
-"Different scenes are not aware of each other unless they are both children "
-"of a parent scene, yet they will then require ``get_node(\"../sibling\")`` "
-"accessors. Such practice is more likely to produce errors at runtime, "
-"especially if these scenes do not share the same parent node. This is why, "
-"they should only be allowed to access their children."
-msgstr ""
-"実際のところ、我々は独自のシーンで各UI要素を設計したいと考えています。 異なる"
-"シーンは、両方が親シーンの子でない限りお互いを認識しませんが、それでも "
-"``get_node(\"../brother\")`` アクセサーが必要です。 このような方法では、特に"
-"これらのシーンが同じ親ノードを共有していない場合、実行時にエラーが発生する可"
-"能性が高くなります。 これが、子供へのアクセスのみを許可する理由です。"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:95
-msgid ""
-"So, in order to communicate information to another scene, the best design is "
-"to define signals. If a user action in a UI scene #1 has to trigger "
-"something in another UI scene #2, then this user action has to emit a signal "
-"from scene #1, and scene #2 will be connected to that signal. Since all of "
-"our UI scenes will be instanced by ``main_screen_plugin.gd`` script, this "
-"one script will also connect each of them to the required signals."
-msgstr ""
-"そのため、別のシーンに情報を伝えるための最良の設計は、シグナルを定義すること"
-"です。UIシーン#1のユーザーアクションが別のUIシーン#2で何かをトリガーする必要"
-"がある場合、このユーザーアクションはシーン#1からシグナルを発信する必要があ"
-"り、シーン#2はそのシグナルに接続されます。すべてのUIシーンは "
-"``main_screen_plugin.gd`` スクリプトによってインスタンス化されるため、この1つ"
-"のスクリプトはそれぞれのシーンを必要なシグナルに接続します。"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:102
-#, fuzzy
-msgid ""
-"If the ``main_screen_plugin.gd`` instantiates the UI scenes, won't they be "
-"sibling nodes then?"
-msgstr ""
-"``main_screen_plugin.gd`` がUIシーンをインスタンス化する場合、それらは兄弟"
-"ノードになりませんか？"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:105
-msgid ""
-"Not necessarily: this script may add all UI scenes as children of the same "
-"node of the editor's scene tree - but maybe it won't. And the "
-"``main_screen_plugin.gd`` script will *not* be the parent node of any "
-"instantiated scene because it is a script, not a node! This script will only "
-"hold references to instantiated scenes."
-msgstr ""
-"必ずしもそうではありません: このスクリプトは、エディタのシーンツリーの同じ"
-"ノードの子としてすべてのUIシーンを追加する場合がありますが、そうでない場合が"
-"あります。そして、\\ ``main_screen_plugin.gd`` スクリプトは、ノードではなくス"
-"クリプトであるため、インスタンス化されたシーンの親ノードではありません！この"
-"スクリプトは、インスタンス化されたシーンへの参照のみを保持します。"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:112
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:65
 msgid "Main screen scene"
 msgstr "メイン画面のシーン"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:114
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:67
+#, fuzzy
 msgid ""
-"Create a new scene with a ``Panel`` root node. Select this root node, and in "
-"the viewport, click the ``Layout`` menu and select ``Full Rect``. You also "
-"need to enable the ``Expand`` vertical size flag in the inspector. The panel "
-"now uses all the space available in the viewport. Now, let's add a new "
-"script on the root node. Name it ``main_panel.gd``."
+"Create a new scene with a root node derived from ``Control`` (for this "
+"example plugin, we'll make the root node a ``CenterContainer``). Select this "
+"root node, and in the viewport, click the ``Layout`` menu and select ``Full "
+"Rect``. You also need to enable the ``Expand`` vertical size flag in the "
+"inspector. The panel now uses all the space available in the main viewport."
 msgstr ""
 "``Panel`` ルートノードで新しいシーンを作成します。このルートノードを選択し、"
 "ビューポートで ``レイアウト`` メニューをクリックし、\\ ``Rect全面`` を選択し"
@@ -200,137 +102,59 @@ msgstr ""
 "ペースを使用します。それでは、ルートノードに新しいスクリプトを追加しましょ"
 "う。 \\ ``main_panel.gd`` という名前を付けます。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:120
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:74
 msgid ""
-"We then add 2 children to this Panel node: first a ``Button`` node. Place it "
-"anywhere on the Panel. Then add a ``Label`` node."
+"Next, let's add a button to our example main screen plugin. Add a ``Button`` "
+"node, and set the text to \"Print Hello\" or similar. Add a script to the "
+"button like this:"
 msgstr ""
-"次に、このPanelノードに2つの子を追加します: 最初は ``Button`` ノードです。パ"
-"ネル上の任意の場所に配置します。次に、\\ ``Label`` ノードを追加します。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:123
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:87
 msgid ""
-"Now we need to define a behaviour when this button is pressed. This is "
-"covered by the :ref:`Handling a signal <doc_scripting_handling_a_signal>` "
-"page, so this part will not be described in details in this tutorial. Select "
-"the Button node and click the ``Node`` side dock. Select the ``pressed()`` "
-"signal and click the ``Connect`` button (you can also double-click the "
-"``pressed()`` signal instead). In the window that opened, select the Panel "
-"node (we will centralize all behaviors in its attached script). Keep the "
-"default function name, make sure that the ``Make function`` toggle is ON and "
-"hit ``Connect``. This creates an ``_on_Button_pressed()`` function in the "
-"``main_panel.gd`` script, that will be called every time the button is "
-"pressed."
+"Then connect the \"pressed\" signal to itself. If you need help with "
+"signals, see the :ref:`doc_signals` article."
 msgstr ""
-"次に、このボタンが押されたときの動作を定義する必要があります。これは :ref:`シ"
-"グナルの処理 <doc_scripting_handling_a_signal>` ページでカバーされているた"
-"め、このチュートリアルではこの部分について詳しく説明しません。Buttonノードを"
-"選択し、\\ ``ノード`` サイドドックをクリックします。\\ `` pressed()`` シグナ"
-"ルを選択して ``接続...`` ボタンをクリックします(代わりに ``pressed()`` シグナ"
-"ルをダブルクリックすることもできます)。開いたウィンドウで、Panelノードを選択"
-"します(アタッチされたスクリプトですべての動作を一元化します)。デフォルトの関"
-"数名を保持し、\\ ``関数の作成`` トグルがオンになっていることを確認し、\\ ``接"
-"続`` を押します。これは ``main_panel.gd`` スクリプトに "
-"``_on_Button_pressed()`` 関数を作成し、ボタンが押されるたびに呼び出されます。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:135
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:90
+#, fuzzy
 msgid ""
-"As the button gets pressed, we want the side-panel's ``Label`` node to show "
-"a specific text. As explained above, we cannot directly access the target "
-"scene, so we'll emit a signal instead. The ``main_screen_plugin.gd`` script "
-"will then connect this signal to the target scene. Let's continue in the "
-"``main_panel.gd`` script:"
-msgstr ""
-"ボタンが押されると、サイドパネルの ``Label`` ノードに特定のテキストが表示され"
-"るようにします。上記で説明したように、ターゲットシーンに直接アクセスすること"
-"はできないため、代わりにシグナルを送信します。\\ ``main_screen_plugin.gd`` ス"
-"クリプトは、このシグナルをターゲットシーンに接続します。\\ ``main_panel.gd`` "
-"スクリプトを続けましょう:"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:151
-msgid ""
-"In the same way, this main scene's Label node has to show a value when it "
-"receives a specific signal. Let's create a new "
-"``_on_side_button_pressed(text_to_show)`` function for this purpose:"
-msgstr ""
-"同様に、このメインシーンのLabelノードは、特定のシグナルを受信したときに値を表"
-"示する必要があります。この目的のために新しい "
-"``_on_side_button_pressed(text_to_show)`` 関数を作成しましょう:"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:160
-msgid ""
-"We are done for the main screen panel. Save the scene as ``main_panel.tscn``."
+"We are done with the main screen panel. Save the scene as ``main_panel."
+"tscn``."
 msgstr ""
 "メイン画面パネルの完成です。シーンを ``main_panel.tscn`` として保存します。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:163
-msgid "Tabbed panel scene"
-msgstr "タブ付きパネルシーン"
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:93
+#, fuzzy
+msgid "Update the plugin script"
+msgstr "iap.gdスクリプトを探す"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:165
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:95
+#, fuzzy
 msgid ""
-"The tabbed panel scene is almost identical to the main panel scene. You can "
-"either duplicate the ``main_panel.tscn`` file and name the new file "
-"``side_panel.tscn``, or re-create it from a new scene by following the "
-"previous section again. However, you will have to create a new script and "
-"attach it to the Panel root node. Save it as ``side_panel.gd``. Its content "
-"is slightly different, as the signal emitted and the target function have "
-"different names. Here is the script's full content:"
-msgstr ""
-"タブ付きパネルシーンは、メインパネルシーンとほぼ同じです。\\ ``main_panel."
-"tscn`` ファイルを複製して新しいファイルに ``side_panel.tscn`` という名前を付"
-"けるか、前のセクションを再度たどって新しいシーンから再作成できます。ただし、"
-"新しいスクリプトを作成して、Panelルートノードにアタッチする必要がありま"
-"す。\\ ``side_panel.gd`` として保存します。発信されるシグナルとターゲット関数"
-"の名前が異なるため、その内容は少し異なります。スクリプトの完全なコンテンツは"
-"次のとおりです:"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:188
-msgid "Connecting the two scenes in the plugin script"
-msgstr "プラグインスクリプトで2つのシーンを接続する"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:190
-msgid ""
-"We now need to update the ``main_screen_plugin.gd`` script so the plugin "
-"instances our 2 GUI scenes and places them at the right places in the "
-"editor. Here is the full ``main.gd``:"
+"We need to update the ``main_screen_plugin.gd`` script so the plugin "
+"instances our main panel scene and places it where it needs to be. Here is "
+"the full plugin script:"
 msgstr ""
 "プラグインが2つのGUIシーンをインスタンス化し、エディタの適切な場所に配置する"
 "ように、\\ ``main_screen_plugin.gd`` スクリプトを更新する必要があります。完全"
 "な ``main.gd`` は次のとおりです:"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:249
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:140
 msgid ""
-"A couple of specific lines were added. First, we defined the constants that "
-"contain our 2 GUI packed scenes (``MainPanel`` and ``SidePanel``). We will "
-"use these resources to instance both scenes."
+"A couple of specific lines were added. ``MainPanel`` is a constant that "
+"holds a reference to the scene, and we instance it into "
+"`main_panel_instance`."
 msgstr ""
-"いくつかの特定の行が追加されました。最初に、2つのGUIパックシーン"
-"(``MainPanel`` および ``SidePanel``)を含む定数を定義しました。これらのリソー"
-"スを使用して、両方のシーンをインスタンス化します。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:253
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:143
+#, fuzzy
 msgid ""
 "The ``_enter_tree()`` function is called before ``_ready()``. This is where "
-"we actually instance the 2 GUI scenes, and add them as children of specific "
-"parts of the editor. The side panel case is similar to the example shown in :"
-"ref:`doc_making_plugins` page: we add the scene in an editor dock. We "
-"specified it will be placed in the left-side dock, upper-left tab."
-msgstr ""
-"``_enter_tree()`` 関数は ``_ready()`` の前に呼び出されます。ここで実際に2つの"
-"GUIシーンをインスタンス化し、それらをエディタの特定の部分の子として追加しま"
-"す。サイドパネルの場合は、\\ :ref:`doc_making_plugins` ページに示されている例"
-"に似ています: シーンをエディタドックに追加します。左側のドック、左上のタブに"
-"配置されるように指定しました。"
-
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:259
-msgid ""
-"``EditorPlugin`` class does not provide any function to add an element in "
-"the main viewport. We thus have to use the ``get_editor_interface()."
-"get_editor_viewport()`` to obtain this viewport and add our main panel "
-"instance as a child to it. We call the ``make_visible(false)`` function to "
-"hide the main panel so it is not directly shown when first activating the "
-"plugin."
+"we instance the main panel scene, and add them as children of specific parts "
+"of the editor. We use ``get_editor_interface().get_editor_viewport()`` to "
+"obtain the viewport and add our main panel instance as a child to it. We "
+"call the ``make_visible(false)`` function to hide the main panel so it "
+"doesn't compete for space when first activating the plugin."
 msgstr ""
 "``EditorPlugin`` クラスは、メインビューポートに要素を追加する機能を提供しませ"
 "ん。したがって、このビューポートを取得し、メインパネルインスタンスを子として"
@@ -338,45 +162,49 @@ msgstr ""
 "必要があります。メインパネルを隠すために ``make_visible(false)`` 関数を呼び出"
 "して、プラグインを最初にアクティブ化したときに直接表示されないようにします。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:266
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:150
 msgid ""
-"The ``_exit_tree()`` is pretty straightforward. It is automatically called "
-"when the plugin is deactivated. It is then important to ``queue_free()`` the "
-"elements previously instanced to preserve memory. If you don't, the elements "
-"will effectively be invisible in the editor, but they will remain present in "
-"the memory. Multiple de-activations/re-activations will then increase memory "
-"usage without any way to free it, which is not good."
+"The ``_exit_tree()`` function is called when the plugin is deactivated. If "
+"the main screen still exists, we call ``queue_free()`` to free the instance "
+"and remove it from memory."
 msgstr ""
-"``_exit_tree()`` はとても簡単です。プラグインが非アクティブ化されると自動的に"
-"呼び出されます。メモリを温存するために、以前にインスタンス化された要素を "
-"``queue_free()`` することが重要です。そうしないと、エレメントはエディタで事実"
-"上見えなくなりますが、メモリ内には残っています。メモリを解放しない場合、複数"
-"の非アクティブ化/再アクティブ化によりメモリ使用量が増加していきますが、これは"
-"良くありません。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:273
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:154
+#, fuzzy
 msgid ""
-"Finally the ``make_visible()`` function is overridden to hide or show the "
-"main panel as needed. This function is automatically called by the editor "
-"when the user clicks on another main viewport button such as 2D, 3D or "
-"Script."
+"The ``make_visible()`` function is overridden to hide or show the main panel "
+"as needed. This function is automatically called by the editor when the user "
+"clicks on the main viewport buttons at the top of the editor."
 msgstr ""
 "最後に、必要に応じて ``make_visible()`` 関数がオーバーライドされ、メインパネ"
 "ルが非表示または表示されます。この関数は、ユーザーが2D、3D、スクリプトなどの"
 "別のメインビューポートボタンをクリックすると、エディタによって自動的に呼び出"
 "されます。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:278
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:158
+msgid ""
+"The ``get_plugin_name()`` and ``get_plugin_icon()`` functions control the "
+"displayed name and icon for the plugin's main viewport button."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:161
+msgid ""
+"Another function you can add is the ``handles()`` function, which allows you "
+"to handle a node type, automatically focusing the main screen when the type "
+"is selected. This is similar to how clicking on a 3D node will automatically "
+"switch to the 3D viewport."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:167
 msgid "Try the plugin"
 msgstr "プラグインを試す"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:280
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:169
+#, fuzzy
 msgid ""
 "Activate the plugin in the Project Settings. You'll observe a new button "
-"next to 2D, 3D, Script above the main viewport. You'll also notice a new tab "
-"in the left dock. Try to click the buttons in both side and main panels: "
-"events are emitted and caught by the corresponding target scene to change "
-"the Label caption inside it."
+"next to 2D, 3D, Script above the main viewport. Clicking it will take you to "
+"your new main screen plugin, and the button in the middle will print text."
 msgstr ""
 "プロジェクト設定でプラグインを有効にします。メインビューポートの上にある2D、"
 "3D、スクリプトの横に新しいボタンがあります。また、左のドックに新しいタブがあ"
@@ -384,9 +212,23 @@ msgstr ""
 "イベントが発生し、対応するターゲットシーンでキャッチされて、その中のラベル"
 "キャプションが変更されます。"
 
-#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:285
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:173
+#, fuzzy
+msgid ""
+"If you would like to try a finished version of this plugin, check out the "
+"plugin demos here: https://github.com/godotengine/godot-demo-projects/tree/"
+"master/plugins"
+msgstr ""
+"メイン画面プラグインの機能のより完全な例を見たい場合は、ここで2.5Dデモプロ"
+"ジェクトをチェックしてください: https://github.com/godotengine/godot-demo-"
+"projects/tree/master/misc/2.5d"
+
+#: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:177
 msgid ""
 "If you would like to see a more complete example of what main screen plugins "
 "are capable of, check out the 2.5D demo projects here: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/2.5d"
 msgstr ""
+"メイン画面プラグインの機能のより完全な例を見たい場合は、ここで2.5Dデモプロ"
+"ジェクトをチェックしてください: https://github.com/godotengine/godot-demo-"
+"projects/tree/master/misc/2.5d"

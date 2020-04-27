@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "Getting the source"
 msgstr "获取源代码"
 
-#: ../../docs/development/compiling/getting_source.rst:7
+#: ../../docs/development/compiling/getting_source.rst:9
 msgid "Downloading the Godot source code"
 msgstr "下载 Godot 源代码"
 
-#: ../../docs/development/compiling/getting_source.rst:9
+#: ../../docs/development/compiling/getting_source.rst:11
 msgid ""
 "Before :ref:`getting into the SCons build system "
 "<doc_introduction_to_the_buildsystem>` and compiling Godot, you need to "
@@ -34,7 +34,7 @@ msgstr ""
 "在 :ref:`进入SCons构建系统 <doc_introduction_to_the_buildsystem>` 并编译 "
 "Godot 之前，您需要将 Godot 的源代码下载到本地。"
 
-#: ../../docs/development/compiling/getting_source.rst:12
+#: ../../docs/development/compiling/getting_source.rst:14
 msgid ""
 "The source code is available on `GitHub <https://github.com/godotengine/"
 "godot>`__ and while you can manually download it via the website, in general "
@@ -43,7 +43,14 @@ msgstr ""
 "源代码位于 `GitHub <https://github.com/godotengine/godot>`__ 上，虽然您可以通"
 "过网站手动下载它，但是通常您希望通过 ``git`` 版本控制系统来下载。"
 
-#: ../../docs/development/compiling/getting_source.rst:16
+#: ../../docs/development/compiling/getting_source.rst:18
+msgid ""
+"If you are compiling in order to make contributions or pull requests, you "
+"should follow the instructions from the :ref:`Pull Request workflow "
+"<doc_pr_workflow>`."
+msgstr ""
+
+#: ../../docs/development/compiling/getting_source.rst:21
 msgid ""
 "If you don't know much about ``git`` yet, there are a great number of "
 "`tutorials <https://git-scm.com/book>`__ available on various websites."
@@ -51,13 +58,13 @@ msgstr ""
 "如果您还不太了解 ``git``， 在各种网站上都有大量的 `Git教程 <https://git-scm."
 "com/book>`__ 。"
 
-#: ../../docs/development/compiling/getting_source.rst:19
+#: ../../docs/development/compiling/getting_source.rst:24
 msgid ""
 "In general, you need to install ``git`` and/or one of the various GUI "
 "clients."
 msgstr "通常，您需要安装 ``git`` 和/或其他带有 ``git`` 的图形界面客户端。"
 
-#: ../../docs/development/compiling/getting_source.rst:21
+#: ../../docs/development/compiling/getting_source.rst:26
 msgid ""
 "Afterwards, to get the latest development version of the Godot source code "
 "(the unstable ``master`` branch), you can use ``git clone``."
@@ -65,13 +72,13 @@ msgstr ""
 "之后，要获得最新版本的Godot源代码(不稳定的 ``master`` 分支)，可以使用 ``git "
 "clone``。"
 
-#: ../../docs/development/compiling/getting_source.rst:24
+#: ../../docs/development/compiling/getting_source.rst:29
 msgid ""
 "If you are using the ``git`` command line client, this is done by entering "
 "the following in a terminal:"
 msgstr "如果您使用 ``git`` 命令行，可以通过在终端输入下列命令来完成："
 
-#: ../../docs/development/compiling/getting_source.rst:31
+#: ../../docs/development/compiling/getting_source.rst:36
 msgid ""
 "For any stable release, visit the `release page <https://github.com/"
 "godotengine/godot/releases>`__ and click on the link for the release you "
@@ -82,12 +89,12 @@ msgstr ""
 "godotengine/godot/releases>`__ 然后单击所需发行版的链接。然后，您可以从页面上"
 "的下载链接下载并解压源代码。"
 
-#: ../../docs/development/compiling/getting_source.rst:35
+#: ../../docs/development/compiling/getting_source.rst:40
 msgid ""
 "There are also generally branches besides ``master`` for each major version."
 msgstr "此外，您可以通过 ``git`` 在各个主要版本的分支间进行切换。"
 
-#: ../../docs/development/compiling/getting_source.rst:37
+#: ../../docs/development/compiling/getting_source.rst:42
 msgid ""
 "After downloading the Godot source code, you can :ref:`continue to compiling "
 "Godot <doc_introduction_to_the_buildsystem>`."

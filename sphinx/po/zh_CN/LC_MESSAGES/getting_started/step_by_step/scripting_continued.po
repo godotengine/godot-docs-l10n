@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,9 +64,10 @@ msgstr ""
 "（FPS）。该速率会随着时间和设备的不同而变化。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+#, fuzzy
 msgid ""
-"To help manage this variability the ``delta`` parameter contains the time "
-"elapsed in seconds, as a floating point, since the previous call to "
+"To help manage this variability, the ``delta`` parameter contains the time "
+"elapsed in seconds as a floating-point number since the previous call to "
 "``_process()``."
 msgstr ""
 "为了帮助管理这种可变性，``delta`` 参数包含自上次调用 ``_process()`` 以来经过"
@@ -79,9 +80,10 @@ msgid ""
 msgstr "此参数可用于确保事物始终花费相同的时间，从而与游戏的FPS无关。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
+#, fuzzy
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
-"speed both constant and independent from the frame rate."
+"speed both constant and independent of the frame rate."
 msgstr "例如，运动经常与时间增量相乘，以使运动速度既恒定又独立于帧速率。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49

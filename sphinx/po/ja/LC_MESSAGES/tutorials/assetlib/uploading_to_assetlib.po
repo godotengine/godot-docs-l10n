@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,6 +52,8 @@ msgid ""
 "Before submitting your asset, please ensure it follows all of the "
 "requirements, and also consider following the recommendations."
 msgstr ""
+"アセットを送信する前に、すべての要件を満たしていることを確認し、推奨事項に従"
+"うことも検討してください。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:23
 msgid "Requirements"
@@ -63,12 +65,17 @@ msgid ""
 "accepted. However, in order for your asset to be accepted, there are a few "
 "requirements your asset needs to meet to be approved."
 msgstr ""
+"一般的に、アセットライブラリに送信するほとんどのアセットは受け入れられます。"
+"ただし、アセットが承認されるためには、アセットが承認されるために満たす必要が"
+"ある要件がいくつかあります。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:29
 msgid ""
 "The asset must work. If the asset doesn't run or otherwise doesn't work in "
 "the specified Godot version, then it will be rejected."
 msgstr ""
+"アセットは機能する必要があります。指定したGodotバージョンでアセットが実行され"
+"ない、または機能しない場合、拒否されます。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:32
 msgid ""
@@ -76,12 +83,17 @@ msgid ""
 "include submodules in the downloaded ZIP file, so if the asset needs the "
 "contents of the submodule, your asset won't work."
 msgstr ""
+"サブモジュールがないか、サブモジュールは必須ではありません。 GitHubでは、ダウ"
+"ンロードしたZIPファイルにサブモジュールが含まれていないため、アセットにサブモ"
+"ジュールのコンテンツが必要な場合、アセットは機能しません。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:36
 msgid ""
 "The license needs to be correct. The license listed on the asset library "
 "must match the license in the repository."
 msgstr ""
+"ライセンスが正しい必要があります。アセットライブラリにリストされているライセ"
+"ンスは、リポジトリ内のライセンスと一致する必要があります。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:39
 msgid ""
@@ -90,23 +102,31 @@ msgid ""
 "*exactly* the same. Instead of \"master\", either specify a commit hash, or "
 "tag versions and specify a version number."
 msgstr ""
+"ダウンロードコミットを\"master\"に設定しないでください。アセットライブラリは"
+"すべてのアセットをSHA256ハッシュで検証するため、GitHubでホストされるバージョ"
+"ンは *完全に* 同じである必要があります。\"master\"の代わりに、コミットハッ"
+"シュを指定するか、バージョンにタグを付けてバージョン番号を指定します。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:44
 msgid ""
 "Use proper English for the name and description of your asset. This includes "
 "using correct capitalization, and using full sentences in the description."
 msgstr ""
+"アセットの名前と説明に適切な英語を使用してください。これには、正しい大文字の"
+"使用、および説明内の完全な文の使用が含まれます。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:48
 msgid ""
 "The icon link must be a direct link. For icons hosted on GitHub, the link "
 "must start with \"raw.githubusercontent.com\", not \"github.com\"."
 msgstr ""
+"アイコンリンクは直接リンクである必要があります。 GitHubでホストされるアイコン"
+"の場合、リンクは \"github.com\" ではなく \"raw.githubusercontent.com\" で始ま"
+"る必要があります。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:52
-#, fuzzy
 msgid "Recommendations"
-msgstr "その他の考慮事項"
+msgstr "推奨事項"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:54
 msgid ""
@@ -114,6 +134,8 @@ msgid ""
 "follow these recommendations, you can help make the asset library a better "
 "place for all users."
 msgstr ""
+"これらはアセットの承認に必須ではありませんが、これらの推奨事項に従えば、すべ"
+"てのユーザーにとってアセットライブラリをより良い場所にすることができます。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:58
 msgid ""
@@ -121,6 +143,9 @@ msgid ""
 "identify issues with your code, but people using your asset don't need to "
 "see them."
 msgstr ""
+"すべてのスクリプト警告を修正または抑制します。警告システムはコードの問題を特"
+"定するのに役立ちますが、アセットを使用している人はそれらを見る必要はありませ"
+"ん。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:62
 msgid ""
@@ -129,18 +154,26 @@ msgid ""
 "wish to contribute to your asset. See: the :ref:`doc_gdscript_styleguide` or "
 "the :ref:`doc_c_sharp_styleguide`."
 msgstr ""
+"コードを公式のスタイルガイドに準拠させます。一貫したスタイルを持つことは、他"
+"の人があなたのコードを読むのを助け、他の人があなたの資産に貢献したい場合にも"
+"役立ちます。\\ :ref:`doc_gdscript_styleguide` または :ref:"
+"`doc_c_sharp_styleguide` を参照してください。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:67
 msgid ""
 "If your asset is a library for working with other files, consider including "
 "example files in the asset."
 msgstr ""
+"アセットが他のファイルを操作するためのライブラリである場合、サンプルファイル"
+"をアセットに含めることを検討してください。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:70
 msgid ""
 "The icon should be a square, its aspect ratio should be 1:1. It should also "
 "ideally have a minimum resolution of 64x64 pixels."
 msgstr ""
+"アイコンは正方形で、アスペクト比は 1:1 でなければなりません。また、理想的な最"
+"小解像度は64x64ピクセルである必要があります。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:73
 msgid ""
@@ -148,6 +181,9 @@ msgid ""
 "asset's source code on GitHub. Other services may not work reliably, and a "
 "lack of familiarity can be a barrier to contributors."
 msgstr ""
+"アセットライブラリではGitHub以外にも使用できますが、GitHubでアセットのソース"
+"コードをホストすることを検討してください。他のサービスは確実に機能しない場合"
+"があり、親しみやすさの欠如は貢献者にとって障壁になる可能性があります。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:78
 msgid "Submitting"

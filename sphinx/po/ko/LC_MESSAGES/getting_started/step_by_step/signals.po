@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:4
-msgid "Signals"
+#: ../../docs/getting_started/step_by_step/signals.rst:1
+#, fuzzy
+msgid "Signal"
 msgstr "시그널"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
+msgid "Signals"
+msgstr "시그널"
+
+#: ../../docs/getting_started/step_by_step/signals.rst:10
 msgid "Introduction"
 msgstr "소개"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:9
+#: ../../docs/getting_started/step_by_step/signals.rst:12
 msgid ""
 "Signals are Godot's version of the *observer* pattern. They allow a node to "
 "send out a message that other nodes can listen for and respond to. For "
@@ -37,15 +42,16 @@ msgstr ""
 "버튼의 눌림 여부를 파악하기 위해 주기적으로 버튼을 확인하는 대신, 버튼이 눌렸"
 "을 때 시그널을 방출(Emit)할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:14
+#: ../../docs/getting_started/step_by_step/signals.rst:17
+#, fuzzy
 msgid ""
-"You can read more about the observer pattern here: http://"
+"You can read more about the observer pattern here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
 "옵저버 패턴에 대해 더 알아보려면 다음 주소를 참고하세요: http://"
 "gameprogrammingpatterns.com/observer.html"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:16
+#: ../../docs/getting_started/step_by_step/signals.rst:19
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
@@ -57,18 +63,18 @@ msgstr ""
 "신, 시그널을 방출해 시그널에 관심있는 객체 모두가 시그널을 받고 응답할 수 있"
 "습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:21
+#: ../../docs/getting_started/step_by_step/signals.rst:24
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
 "아래에서 프로젝트에 시그널을 활용할 수 있는 방법의 예시들을 살펴보겠습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:24
+#: ../../docs/getting_started/step_by_step/signals.rst:27
 msgid "Timer example"
 msgstr "Timer 예제"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:26
+#: ../../docs/getting_started/step_by_step/signals.rst:29
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
@@ -79,7 +85,7 @@ msgstr ""
 "다른 하나는 :ref:`Sprite <class_Sprite>`\\ 입니다. 씬 독에서 Node2D의 이름을 "
 "TimerExample로 바꿉니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:30
+#: ../../docs/getting_started/step_by_step/signals.rst:33
 msgid ""
 "For the Sprite's texture, you can use the Godot icon, or any other image you "
 "like. Do so by selecting ``Load`` in the Sprite's Texture attribute drop-"
@@ -91,11 +97,11 @@ msgstr ""
 "면 됩니다. 스크립트를 루트 노드에 붙입니다. 하지만 아직 코드는 추가하지 마세"
 "요."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:34
+#: ../../docs/getting_started/step_by_step/signals.rst:37
 msgid "Your scene tree should look like this:"
 msgstr "씬 트리는 다음과 같아야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:38
+#: ../../docs/getting_started/step_by_step/signals.rst:41
 msgid ""
 "In the Timer node's properties, check the \"On\" box next to *Autostart*. "
 "This will cause the timer to start automatically when you run the scene. You "
@@ -104,7 +110,7 @@ msgstr ""
 "Timer 노드의 속성 중, *Autostart* 옆에 상자를 \"On\" 으로 하세요. 그러면 씬"
 "을 실행할 때 자동으로 타이머가 실행합니다. *Wait Time*\\ 은 1초로 두세요."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:42
+#: ../../docs/getting_started/step_by_step/signals.rst:45
 msgid ""
 "Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
 "and you'll see all of the signals that the selected node can emit. In the "
@@ -116,7 +122,7 @@ msgstr ""
 "드의 경우, 주목해야 할 시그널은 \"timeout\"입니다. 이 시그널은 Timer가 ``0``"
 "\\ 이 될 때마다 방출합니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:49
+#: ../../docs/getting_started/step_by_step/signals.rst:52
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
 "the signals panel. You'll see the following window, where you can define how "
@@ -126,7 +132,7 @@ msgstr ""
 "다. 다음과 같은 창이 나타나고 여기서 시그널을 어떻게 연결할 지 정의할 수 있습"
 "니다:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:55
+#: ../../docs/getting_started/step_by_step/signals.rst:58
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is "
@@ -137,7 +143,7 @@ msgstr ""
 "Timer 노드는 푸른색으로 되어 있어 시그널을 방출하는 노드임을 시각적으로 나타"
 "냅니다. 루트 노드를 선택합니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:60
+#: ../../docs/getting_started/step_by_step/signals.rst:63
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
@@ -145,7 +151,7 @@ msgstr ""
 "대상 노드는 *반드시* 스크립트가 붙게 되고 그렇지 않으면 오류 메시지를 받습니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:63
+#: ../../docs/getting_started/step_by_step/signals.rst:66
 msgid ""
 "On the right side, you can bind an arbitrary number of arguments of "
 "(possibly) different types. This can be useful when you have more than one "
@@ -153,7 +159,7 @@ msgid ""
 "in different values for those extra call arguments."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/signals.rst:67
+#: ../../docs/getting_started/step_by_step/signals.rst:70
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
@@ -165,7 +171,7 @@ msgstr ""
 "규칙에 따라 ``_on_<노드_이름>_<시그널_이름>``\\ 으로 함수 이름을 만듭니다. 하"
 "지만 원한다면 바꿀 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:72
+#: ../../docs/getting_started/step_by_step/signals.rst:75
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
@@ -173,7 +179,7 @@ msgstr ""
 "\"연결하기(Connect)\"를 클릭하면 스크립트 안에 함수가 만들어진 것을 볼 수 있"
 "습니다:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:92
+#: ../../docs/getting_started/step_by_step/signals.rst:96
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
@@ -181,7 +187,7 @@ msgstr ""
 "이제 자리 표시자 코드 대신 시그널을 받게 되면 실행되길 원하는 코드로 바꾸면 "
 "됩니다. Sprite가 깜박이도록 만들어 봅시다:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:116
+#: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
@@ -189,11 +195,11 @@ msgstr ""
 "씬을 실행하면 Sprite가 매 초마다 깜박이는 것을 볼 수 있습니다. Timer의 *Wait "
 "Time* 속성을 변경하여 주기를 변경할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:120
+#: ../../docs/getting_started/step_by_step/signals.rst:125
 msgid "Connecting signals in code"
 msgstr "노드에서 시그널 연결하기"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:122
+#: ../../docs/getting_started/step_by_step/signals.rst:127
 msgid ""
 "You can also make the signal connection in code rather than with the editor. "
 "This is usually necessary when you're instancing nodes via code and so you "
@@ -203,7 +209,7 @@ msgstr ""
 "해 노드를 인스턴스할 때 필수적입니다. 편집기에서 이런 시그널 연결을 만들 수 "
 "없기 때문이죠."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:126
+#: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
@@ -211,7 +217,7 @@ msgstr ""
 "먼저 Timer의 \"노드(Node)\" 탭에서 연결 풀기(Disconnect)를 클릭해서 시그널의 "
 "연결을 풉니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:131
+#: ../../docs/getting_started/step_by_step/signals.rst:136
 msgid ""
 "To make the connection in code, we can use the ``connect`` function. We'll "
 "put it in ``_ready()`` so that the connection will be made on run. The "
@@ -224,15 +230,15 @@ msgstr ""
 "connect(<시그널_이름>, <대상_이름>, <대상_함수_이름>)``\\ 입니다. 이것이 "
 "Timer 연결을 위한 코드입니다:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:164
+#: ../../docs/getting_started/step_by_step/signals.rst:171
 msgid "Custom signals"
 msgstr "맞춤 시그널"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:166
+#: ../../docs/getting_started/step_by_step/signals.rst:173
 msgid "You can also declare your own custom signals in Godot:"
 msgstr "Godot에서 맞춤 시그널을 선언할 수도 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:184
+#: ../../docs/getting_started/step_by_step/signals.rst:192
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
@@ -240,18 +246,18 @@ msgstr ""
 "맞춤 시그널을 선언하면 그 시그널은 인스펙터(Inspector)에 나타나며 노드의 내"
 "장 시그널과 같은 방식으로 연결할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:187
+#: ../../docs/getting_started/step_by_step/signals.rst:195
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
 msgstr ""
 "코드를 통해 시그널을 방출(Emit)하려면 ``emit_signal`` 함수를 사용하세요:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:212
+#: ../../docs/getting_started/step_by_step/signals.rst:222
 msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/signals.rst:232
+#: ../../docs/getting_started/step_by_step/signals.rst:243
 #, fuzzy
 msgid ""
 "The signal arguments show up in the editor's node dock, and Godot can use "
@@ -263,7 +269,7 @@ msgstr ""
 "를 생성할 수 있습니다. 하지만 시그널을 방출할 때 여전히 많은 수의 인수를 방출"
 "할 수 있습니다. 다시 말해 올바른 값을 방출하는 일은 당신에게 달린 것입니다."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:237
+#: ../../docs/getting_started/step_by_step/signals.rst:248
 #, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
@@ -271,11 +277,11 @@ msgid ""
 msgstr ""
 "코드를 통해 시그널을 방출(Emit)하려면 ``emit_signal`` 함수를 사용하세요:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:263
+#: ../../docs/getting_started/step_by_step/signals.rst:276
 msgid "Conclusion"
 msgstr "결론"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:265
+#: ../../docs/getting_started/step_by_step/signals.rst:278
 msgid ""
 "Many of Godot's built-in node types provide signals you can use to detect "
 "events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
@@ -287,7 +293,7 @@ msgstr ""
 "출합니다. 동전으로 치면 플레이어의 물리적 몸이 동전의 충돌 모양에 닿아 시그널"
 "을 방출하는 것입니다. 이를 통해 플레이어가 언제 동전을 먹었는지 알 수 있죠."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:270
+#: ../../docs/getting_started/step_by_step/signals.rst:283
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."

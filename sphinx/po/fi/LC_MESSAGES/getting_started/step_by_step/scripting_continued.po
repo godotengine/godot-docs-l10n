@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,9 +69,10 @@ msgstr ""
 "käsittelemään. Tämä nopeus voi vaihdella eri hetkillä ja laitteilla."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+#, fuzzy
 msgid ""
-"To help manage this variability the ``delta`` parameter contains the time "
-"elapsed in seconds, as a floating point, since the previous call to "
+"To help manage this variability, the ``delta`` parameter contains the time "
+"elapsed in seconds as a floating-point number since the previous call to "
 "``_process()``."
 msgstr ""
 "Tämän vaihtelevuuden hallitsemiseksi ``delta`` parametri sisältää "
@@ -87,9 +88,10 @@ msgstr ""
 "saman verran aikaa, riippumatta pelin FPS-nopeudesta."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
+#, fuzzy
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
-"speed both constant and independent from the frame rate."
+"speed both constant and independent of the frame rate."
 msgstr ""
 "Esimerkiksi liike kerrotaan usein delta-ajalla, jotta liikenopeus pysyy "
 "vakiona ja riippumattomana ruudunpäivityksen nopeudesta."

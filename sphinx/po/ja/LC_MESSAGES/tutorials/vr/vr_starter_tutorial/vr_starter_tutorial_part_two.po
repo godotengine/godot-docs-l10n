@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,8 @@ msgid "Explaining the Sphere Target code"
 msgstr "Sphere Targetコードの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:84
-msgid "First, let's go through all of the class variables in the script:"
+#, fuzzy
+msgid "First, let's go through all the class variables in the script:"
 msgstr "最初に、スクリプト内のすべてのクラス変数を見てみましょう:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:86
@@ -172,12 +173,13 @@ msgid "``_ready`` function step-by-step explanation"
 msgstr "``_ready`` 関数のステップごとの説明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:100
+#, fuzzy
 msgid ""
 "All the ``_ready`` function does is that it stops the ``_physics_process`` "
 "from being called by calling ``set_physics_process`` and passing ``false``. "
-"The reason we do this is because all of the code in ``_physics_process`` is "
-"for destroying this node when enough time has passed, which we only want to "
-"do when the target has been destroyed."
+"The reason we do this is because all the code in ``_physics_process`` is for "
+"destroying this node when enough time has passed, which we only want to do "
+"when the target has been destroyed."
 msgstr ""
 "``_ready`` 関数は、\\ ``set_physics_process`` を呼び出して ``false`` を渡すこ"
 "とで ``_physics_process`` の呼び出しを停止します。これを行う理由は、\\ ``_ "
@@ -1618,11 +1620,12 @@ msgstr ""
 "剣がシーン内の何かと衝突したときの衝突点と法線を検出します。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:796
+#, fuzzy
 msgid ""
 "While this is perhaps not the best way of getting the collision information "
 "from a performance point of view, it does give us a lot of information we "
 "can use for post-processing! Using a :ref:`KinematicBody "
-"<class_KinematicBody>` this way means we can detect exactly where ths sword "
+"<class_KinematicBody>` this way means we can detect exactly where the sword "
 "collided with other :ref:`PhysicsBody <class_PhysicsBody>` nodes."
 msgstr ""
 "これはおそらくパフォーマンスの観点から衝突情報を取得する最良の方法ではありま"

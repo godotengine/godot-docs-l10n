@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,9 +109,8 @@ msgstr ""
 "のに役立ちます。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:36
-#, fuzzy
 msgid "7 rules for clear English"
-msgstr "明確な英語のための7つのルール"
+msgstr "明確な英語のためのルール７つ"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:41
 msgid ""
@@ -169,13 +168,12 @@ msgid ""
 "The progressive forms describe continuous actions. E.g. \"is calling\", \"is "
 "moving\"."
 msgstr ""
-"プログレッシブフォームは、連続的なアクションを記述します。例えば「呼び出し"
-"中」、「移動中」などです。"
+"進行形は、連続的なアクションを記述します。例えば「呼び出し中」、「移動中」な"
+"どです。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:101
 msgid "**Don't** use the progressive form for instant changes."
-msgstr ""
-"インスタント変更にはプログレッシブフォームを\\ **使用しないでください**\\ 。"
+msgstr "すぐにされる変更には進行形を\\ **使用しないでください**\\ 。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:108
 msgid "**Do** use simple present, preterit or future."
@@ -186,8 +184,8 @@ msgid ""
 "You may use the progressive tense to describe actions that are continuous in "
 "time. Anything like animation or coroutines."
 msgstr ""
-"プログレッシブ時制を使用して、時間的に連続するアクションを記述することができ"
-"ます。 アニメーションやコルーチンのようなもの。"
+"進行時制を使用して、時間的に連続するアクションを記述することができます。 アニ"
+"メーションやコルーチンなど。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:120
 msgid ""
@@ -551,8 +549,9 @@ msgstr ""
 "性があり、すべてのメンバー変数に対して機能しません。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:428
+#, fuzzy
 msgid ""
-"Also surround boolean values, variable names and methods with ``[code][/"
+"Also, surround boolean values, variable names and methods with ``[code][/"
 "code]``."
 msgstr ""
 "また、ブール値、変数名、およびメソッドを ``[code][/code]`` で囲みます。"
@@ -578,7 +577,6 @@ msgstr ""
 "置き換えます。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:448
-#, fuzzy
 msgid "Common vocabulary to use in Godot's documentation"
 msgstr "Godotのドキュメントで使用する一般的な語彙"
 
@@ -644,9 +642,8 @@ msgstr ""
 "``position`` や ``modulate color`` はどちらも ``properties`` です。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:482
-#, fuzzy
 msgid "Keyboard shortcut guidelines"
-msgstr "キーボードショートカット"
+msgstr "キーボードショートカットのガイドライン"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:484
 msgid ""
@@ -656,34 +653,48 @@ msgid ""
 "spelled out form (:kbd:`Control`/:kbd:`Command`). For combinations, use the "
 "``+`` symbol with a space on either side of the symbol."
 msgstr ""
+"キーボードとマウスのショートカットは ``:kbd:`` タグを使用する必要があります。"
+"これにより、ショートカットを残りのテキストやインラインコードから際立たせるこ"
+"とができます。修飾キー(:kbd:`Ctrl`/:kbd:`Cmd`)のスペルチェックされた形式(:"
+"kbd:`Control`/:kbd:`Command`)ではなく、コンパクトキーを使用します。組み合わせ"
+"の場合は、シンボルの両側にスペースがある ``+`` シンボルを使用します。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:490
 msgid ""
 "Make sure to mention shortcuts that differ on macOS compared to other "
 "platforms. On macOS, ``Cmd`` often replaces ``Ctrl`` in keyboard shortcuts."
 msgstr ""
+"他のプラットフォームと比較してmacOSでは異なるショートカットを必ず記載してくだ"
+"さい。macOSでは、キーボードショートカットの ``Ctrl`` が ``Cmd`` に置き換えら"
+"れることがよくあります。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:493
 msgid ""
 "Try to integrate the shortcut into sentences the best you can. Here are some "
 "examples with the ``:kbd:`` tag left as-is for better visibility:"
 msgstr ""
+"ショートカットを可能な限り文章に組み込むようにしてください。わかりやすくする"
+"ために ``:kbd:`` タグをそのまま残した例をいくつか示します:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:496
 msgid ""
 "Press ``:kbd:`Ctrl + Alt + T``` to toggle the panel (``:kbd:`Cmd + Alt + "
 "T``` on macOS)."
 msgstr ""
+"``:kbd:`Ctrl + Alt + T``` を押してパネルを切り替えます(macOSでは ``:kbd:`Cmd "
+"+ Alt + T```)。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:497
 msgid ""
 "Press ``:kbd:`Space``` and hold the left mouse button to pan in the 2D "
 "editor."
 msgstr ""
+"``:kbd:`Space``` を押し、マウスの左ボタンを押したままにして2Dエディタでパンし"
+"ます。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:498
 msgid "Press ``:kbd:`Shift + Up Arrow``` to move the node upwards by 8 pixels."
-msgstr ""
+msgstr "``:kbd:`Shift + 上矢印``` を押して、ノードを8ピクセル上に移動します。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:501
 msgid "Image contribution guidelines"
@@ -708,19 +719,21 @@ msgstr ""
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:509
 #, fuzzy
 msgid ""
-"To improve the apperance of 3D screenshots, use 4× MSAA, enable anisotropic "
+"To improve the appearance of 3D screenshots, use 4× MSAA, enable anisotropic "
 "filtering on the project's textures, and set the anisotropic filter quality "
 "to 16× in Project Settings."
 msgstr ""
-"3Dスクリーンショットでは4xMSAAを使用し、プロジェクトテクスチャで対方対方フィ"
-"ルタを有効にし、プロジェクト設定で対方フィルタの品質を16倍に設定します"
+"3Dスクリーンショットの外観を改善するには、4×MSAAを使用し、プロジェクトのテク"
+"スチャで異方性フィルタリングを有効にし、プロジェクト設定で異方性フィルタの品"
+"質を16×に設定します。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:513
-#, fuzzy
 msgid ""
 "Screenshot sizes should not exceed 1920×1080 to ensure fast loading on "
 "slower connections."
-msgstr "スクリーンショットのサイズは1920x1080を超えてはなりません。"
+msgstr ""
+"低速な接続でも高速にロードできるように、スクリーンショットのサイズは1920×1080"
+"を超えないようにしてください。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:516
 msgid ""
@@ -731,7 +744,6 @@ msgstr ""
 "がある場合は、ベベルのない2ピクセルの太さのアウトラインを使用します。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:519
-#, fuzzy
 msgid ""
 "Before you add or replace any images in the documentation, they should be "
 "run through a PNG compressor to save size. The built in lossless compressor "
@@ -739,8 +751,8 @@ msgid ""
 "also look into using a lossy compressor, such as `pngquant <https://pngquant."
 "org/>`_ where almost no image quality is lost during compression."
 msgstr ""
-"ドキュメント内の画像を追加または置換する前に、サイズを節約するためにpngコンプ"
-"レッサーを使用して実行する必要があります。Kritaやフォトショップのようなプログ"
-"ラムでロスレスコンプレッサーを内蔵する必要があります。ただし、圧縮中に画像の"
-"品質がほとんど失われない場合は、\\ `pngquant <https://pngquant.org/>`_\\ な"
-"ど、損失のあるものも使用する必要があります。"
+"ドキュメントで画像を追加または置換する前に、サイズを節約するためにPNGコンプ"
+"レッサーを介して画像を実行する必要があります。 KritaやPhotoshopなどのプログラ"
+"ムに組み込まれたロスレスコンプレッサーで十分です。より重い画像については、圧"
+"縮中に画像品質がほとんど失われない `pngquant <https://pngquant.org/>`_ などの"
+"損失の多いコンプレッサーの使用も検討してください。"

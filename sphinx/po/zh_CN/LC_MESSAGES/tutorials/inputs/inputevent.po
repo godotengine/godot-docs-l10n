@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,9 +59,10 @@ msgstr ""
 "运行时更改键映射!"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:40
+#, fuzzy
 msgid ""
-"You can setup your InputMap under **Project > Project Settings > Input Map** "
-"and then use those actions like this:"
+"You can set up your InputMap under **Project > Project Settings > Input "
+"Map** and then use those actions like this:"
 msgstr ""
 "您可以在 **Project > Project Settings > Input Map** 下设置InputMap，然后像这"
 "样使用这些操作:"
@@ -203,10 +204,11 @@ msgstr ""
 "点的父辈节点才会接收事件。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:115
+#, fuzzy
 msgid ""
 "In accordance with Godot's node-based design, this enables specialized child "
 "nodes to handle and consume particular events, while their ancestors, and "
-"ultimately the scene root, can provide more generalized behaviour if needed."
+"ultimately the scene root, can provide more generalized behavior if needed."
 msgstr ""
 "根据Godot基于节点的设计，这使得专门的子节点能够处理和消费特定事件，而他们的祖"
 "先，以及最终的场景根，可以在需要时提供更广泛的行为。"
@@ -225,8 +227,9 @@ msgstr ""
 "西，只包含一些基本信息，如事件ID(每个事件增加)，设备索引等。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:127
+#, fuzzy
 msgid ""
-"There are several specialised types of InputEvent, described in the table "
+"There are several specialized types of InputEvent, described in the table "
 "below:"
 msgstr "有几种特殊类型的InputEvent，如下表所示:"
 
@@ -263,7 +266,8 @@ msgid "KEY"
 msgstr "KEY"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
-msgid "Contains a scancode and unicode value, as well as modifiers."
+#, fuzzy
+msgid "Contains a scancode and Unicode value, as well as modifiers."
 msgstr "包含扫描码和unicode值，以及修饰符。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:137

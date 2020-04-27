@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,14 +247,16 @@ msgstr ""
 "されますが、ここでは素敵な水のような効果を達成するために使用します。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:131
+#, fuzzy
 msgid ""
-"In order to add fresnal reflectance we will compute a fresnel term in our "
-"fragment shader. We are not going to use a real fresnel term, instead we "
-"will approximate it using the dot product of the ``NORMAL`` and ``VIEW`` "
-"vectors. The ``NORMAL`` vector points away from a surface of the, while the "
-"``VIEW`` vector is the direction between your eye and that point on the "
-"surface. The dot product between them is a handy way to tell when you are "
-"looking at the surface head-on your at a glancing angle."
+"In order to add fresnal reflectance, we will compute a fresnel term in our "
+"fragment shader. Here, we aren't going to use a real fresnel term for "
+"performance reasons. Instead, we'll approximate it using the dot product of "
+"the ``NORMAL`` and ``VIEW`` vectors. The ``NORMAL`` vector points away from "
+"the mesh's surface, while the ``VIEW`` vector is the direction between your "
+"eye and that point on the surface. The dot product between them is a handy "
+"way to tell when you are looking at the surface head-on or at a glancing "
+"angle."
 msgstr ""
 "フレネル反射率を追加するために、フラグメントシェーダーでフレネル項を計算しま"
 "す。実際のフレネル項を使用するつもりはありませんが、代わりに ``NORMAL`` と "
@@ -263,10 +265,11 @@ msgstr ""
 "の点の間の方向です。それらの間のドット積は、サーフェスを正面から見ているとき"
 "に、傾きの角度を見分けるのに便利な方法です。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:142
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:143
+#, fuzzy
 msgid ""
 "And mix it into both ``ROUGHNESS`` and ``ALBEDO``. This is the benefit of "
-"ShaderMaterials over SpatialMaterials. With SpatialMaterials we could set "
+"ShaderMaterials over SpatialMaterials. With SpatialMaterials, we could set "
 "these properties with a texture, or to a flat number. But with shaders we "
 "can set them based on any mathematical function that we can dream up."
 msgstr ""
@@ -275,7 +278,7 @@ msgstr ""
 "これらのプロパティをテクスチャまたはフラットな数値に設定できます。しかし、"
 "シェーダーを使用すれば、思いつく任意の数学関数に基づいて設定できます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:159
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:160
 msgid ""
 "And now, with only 5 lines of code, you can have complex looking water. Now "
 "that we have lighting, this water is looking too bright. Let's darken it. "
@@ -287,26 +290,27 @@ msgstr ""
 "``vec3`` の値を減らすことで簡単に行えます。それらを ``vec3(0.01, 0.03, "
 "0.05)``に設定しましょう。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:167
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:168
 msgid "Animating with ``TIME``"
 msgstr "``TIME`` でアニメートする"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:169
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:170
+#, fuzzy
 msgid ""
-"Going back to the vertex function, we can animated the waves using the built-"
+"Going back to the vertex function, we can animate the waves using the built-"
 "in variable ``TIME``."
 msgstr ""
 "頂点関数に戻ると、組み込み変数 ``TIME`` を使用して波をアニメーション化できま"
 "す。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:171
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:172
 msgid ""
 "``TIME`` is a built-in variable that is accessible from the vertex and "
 "fragment functions."
 msgstr ""
 "``TIME`` は、頂点関数とフラグメント関数からアクセス可能なビルトイン変数です。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:174
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:175
 msgid ""
 "In the last tutorial we calculated height by reading from a heightmap. For "
 "this tutorial, we will do the same. Put the heightmap code in a function "
@@ -316,17 +320,18 @@ msgstr ""
 "のチュートリアルでは、同じことを行います。ハイトマップコードを ``height()`` "
 "という関数に入れます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:183
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:184
+#, fuzzy
 msgid ""
-"In order to use ``TIME`` in the ``height()`` function we need to pass it in."
+"In order to use ``TIME`` in the ``height()`` function, we need to pass it in."
 msgstr ""
 "``height()`` 関数で ``TIME`` を使用するには、それを渡す必要があります。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:190
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:191
 msgid "And make sure to correctly pass it in inside the vertex function."
 msgstr "そして、頂点関数内でそれを正しく渡すようにしてください。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:200
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:201
 msgid ""
 "Instead of using a normalmap to calculate normals. We are going to compute "
 "them manually in the ``vertex()`` function. To do so use the following line "
@@ -335,7 +340,7 @@ msgstr ""
 "法線を計算するために法線マップを使用する代わりに。 ``vertex()`` 関数でそれら"
 "を手動で計算します。そのためには、次のコード行を使用します。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:207
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:208
 msgid ""
 "We need to compute ``NORMAL`` manually because in the next section we will "
 "be using math to create complex-looking waves."
@@ -343,7 +348,7 @@ msgstr ""
 "次のセクションでは数学を使用して複雑に見える波を作成するため、手動で "
 "``NORMAL`` を計算する必要があります。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:210
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:211
 msgid ""
 "Now, we are going to make the ``height()`` function a little more "
 "complicated by offsetting ``position`` by the cosine of ``TIME``."
@@ -351,7 +356,7 @@ msgstr ""
 "ここで、 ``TIME`` のコサインで ``position`` をオフセットすることにより、\\ "
 "``height()`` 関数をもう少し複雑にします。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:220
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:221
 msgid ""
 "This results in waves that move slowly, but not in a very natural way. The "
 "next section will dig deeper into using shaders to create more complex "
@@ -362,11 +367,11 @@ msgstr ""
 "ションでは、さらにいくつかの数学関数を追加して、シェーダーを使用してより複雑"
 "な効果(この場合は現実的な波)を作成する方法について詳しく説明します。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:225
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:226
 msgid "Advanced effects: waves"
 msgstr "高度な効果: 波"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:227
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:228
 msgid ""
 "What makes shaders so powerful is that you can achieve complex effects by "
 "using math. To illustrate this, we are going to take our waves to the next "
@@ -377,7 +382,7 @@ msgstr ""
 "これを説明するために、 ``height()`` 関数を修正し、\\ ``wave()`` と呼ばれる新"
 "しい関数を導入することで、波を次のレベルに引き上げます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:231
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:232
 msgid ""
 "``wave()`` has one parameter, ``position``, which is the same as it is in "
 "``height()``."
@@ -385,7 +390,7 @@ msgstr ""
 "``wave()`` にはパラメーター ``position`` があり、これは ``height()`` と同じで"
 "す。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:233
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:234
 msgid ""
 "We are going to call ``wave()`` multiple times in ``height()`` in order to "
 "fake the way waves look."
@@ -393,19 +398,20 @@ msgstr ""
 "波の見かけを模倣するために、\\ ``height()`` で ``wave()`` を複数回呼び出しま"
 "す。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:243
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:244
 msgid "At first this looks complicated. So let's go through it line-by-line."
 msgstr "最初はこれは複雑に見えます。それでは、行ごとに見ていきましょう。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:249
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:250
+#, fuzzy
 msgid ""
-"Offset the position by the ``noise`` texture. This will make the waves curve "
-"so they are not straight lines completely aligned with the grid."
+"Offset the position by the ``noise`` texture. This will make the waves "
+"curve, so they won't be straight lines completely aligned with the grid."
 msgstr ""
 "``ノイズ`` テクスチャによって位置をオフセットします。これにより、波は曲線にな"
 "り、グリッドと完全に整列した直線ではなくなります。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:256
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:257
 msgid ""
 "Define a wave-like function using ``sin()`` and ``position``. Normally "
 "``sin()`` waves are very round. We use ``abs()`` to absolute to give them a "
@@ -417,7 +423,7 @@ msgstr ""
 "起を与え、0-1の範囲に制限します。そして、\\ ``1.0`` からそれを差し引いて、"
 "ピークを一番上に置きます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:264
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:265
 msgid ""
 "Multiply the x-directional wave by the y-directional wave and raise it to a "
 "power to sharpen the peaks. Then subtract that from ``1.0`` so that the "
@@ -427,16 +433,16 @@ msgstr ""
 "``1.0`` からそれを差し引くと、尾根がピークになり、それを累乗して尾根をシャー"
 "プにします。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:268
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:269
 msgid ""
 "We can now replace the contents of our ``height()`` function with ``wave()``."
 msgstr "``height()`` 関数の内容を ``wave()`` に置き換えることができます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:276
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:277
 msgid "Using this you get:"
 msgstr "これを使用すると以下が得られます:"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:280
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:281
 msgid ""
 "The shape of the sin wave is too obvious. So let's spread the waves out a "
 "bit. We do this by scaling ``position``."
@@ -444,11 +450,11 @@ msgstr ""
 "正弦波の形状があまりにも明白です。それでは、波を少し広げてみましょう。これを"
 "行うには、\\ ``position`` をスケーリングします。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:288
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:289
 msgid "Now it looks much better."
 msgstr "今ではずっと良く見えます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:292
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:293
 msgid ""
 "We can do even better if we layer multiple waves on top of each other at "
 "varying frequencies and amplitudes. What this means is that we are going to "
@@ -461,13 +467,13 @@ msgstr ""
 "です(周波数)。そして、波の出力を乗算して、それらをより短くまたはより高く(振"
 "幅)します。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:297
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:298
 msgid ""
 "Here is an example for how you could layer the four waves to achieve nicer "
 "looking waves."
 msgstr "見栄えの良い波を実現するために4つの波を重ねる方法の例を次に示します。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:309
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:310
 msgid ""
 "Note that we add time to two and subtract it from the other two. This makes "
 "the waves move in different directions creating a complex effect. Also note "
@@ -479,15 +485,16 @@ msgstr ""
 "される数)がすべて ``1.0`` になることにも注意してください。これにより、波は0〜"
 "1の範囲に維持されます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:313
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:314
+#, fuzzy
 msgid ""
 "With this code you should end up with more complex looking waves and all you "
-"had to do was add a little bit of math!"
+"had to do was add a bit of math!"
 msgstr ""
 "このコードを使用すると、より複雑な外観の波になります。必要なのは、少しの数学"
 "を追加することだけです！"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:318
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:319
 msgid ""
 "For more information about Spatial shaders read the :ref:`Shading Language "
 "<doc_shading_language>` doc and the :ref:`Spatial Shaders "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -237,10 +237,11 @@ msgstr ""
 "d'API en C."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
+#, fuzzy
 msgid ""
 "This language is the best choice for performance and does not need to be "
 "used throughout an entire game, as other parts can be written in GDScript or "
-"Visual Script. However the API is clear and easy to use as it resembles, "
+"Visual Script. However, the API is clear and easy to use as it resembles, "
 "mostly, Godot's actual C++ API."
 msgstr ""
 "Ce langage est le meilleur choix pour la performance et n'a pas besoin "
@@ -299,14 +300,13 @@ msgid "Scene setup"
 msgstr "Configuration de la scène"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
-#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
 "Utilisez la boîte de dialogue \"Ajouter un nœud enfant\" accessible depuis "
-"l'onglet Scène (ou en appuyant sur ``Ctrl+A``) pour créer une hiérarchie "
-"avec les nœuds suivants :"
+"l'onglet Scène (ou en appuyant sur :kbd:`Ctrl + A`) pour créer une "
+"hiérarchie avec les nœuds suivants :"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
 msgid "Panel"
@@ -372,15 +372,16 @@ msgid ""
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
-"Le nœud auquel nous attachons le script est un panneau, donc le champ "
-"\"hérite\" sera automatiquement rempli avec \"Panneau\". C'est ce que nous "
+"Le nœud auquel nous attachons le script est un \"panel\", donc le champ "
+"\"hérite\" sera automatiquement rempli avec \"Panel\". C'est ce que nous "
 "voulons, car le but du script est d'étendre la fonctionnalité de notre nœud "
-"panneau."
+"Panel."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:146
 msgid "Finally, enter a path name for the script and select Create:"
 msgstr ""
-"Enfin, saisissez un nom de chemin pour le script et sélectionnez Créer :"
+"Enfin, entrez un nom de chemin pour le script et sélectionnez Create "
+"(Créer) :"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:150
 msgid ""

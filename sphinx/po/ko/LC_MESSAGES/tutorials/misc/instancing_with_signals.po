@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:4
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:1
+#, fuzzy
+msgid "Signal"
+msgstr "시그널"
+
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:7
 #, fuzzy
 msgid "Instancing with signals"
 msgstr "씬 인스턴스하기"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:6
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:9
 msgid ""
 "Signals provide a way to decouple game objects, allowing you to avoid "
 "forcing a fixed arrangement of nodes. One sign that a signal might be called "
@@ -33,15 +38,15 @@ msgid ""
 "location in the running scene tree."
 msgstr ""
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:13
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:16
 msgid "Below we'll consider an example of such a situation: firing bullets."
 msgstr ""
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:16
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:19
 msgid "Shooting example"
 msgstr "발사 예제"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:18
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:21
 #, fuzzy
 msgid ""
 "Consider a player character that can rotate and shoot towards the mouse. "
@@ -52,13 +57,13 @@ msgstr ""
 "를 생각해봅시다. 마우스 버튼을 클릭할 때 마다, 플레이어의 위치에 총알의 인스"
 "턴스를 만듭니다. 자세한 설명은 :ref:`doc_instancing`\\ 를 참고하세요."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:22
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:25
 msgid ""
 "We'll use an ``Area2D`` for the bullet, which moves in a straight line at a "
 "given velocity:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:47
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:50
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
@@ -66,7 +71,7 @@ msgstr ""
 "하지만, 총알이 플레이어의 자식으로 추가된다면, 플레이어가 회전하는 것에 따라 "
 "\"붙어있는 채로\" 남아있을 것입니다:"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:52
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:55
 msgid ""
 "Instead, we need the bullets to be independent of the player's movement - "
 "once fired, they should continue traveling in a straight line and the player "
@@ -81,12 +86,12 @@ msgstr ""
 "는 것이 더 합리적입니다, 이렇게 하면 총알이 플레이어의 부모나 더 위로 올라갈 "
 "수도 있습니다."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:58
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:61
 #, fuzzy
 msgid "You could do this by adding the bullet to the main scene directly:"
 msgstr "총알에 직접 이 코드를 추가하는 것으로 가능합니다:"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:71
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:74
 #, fuzzy
 msgid ""
 "However, this will lead to a different problem. Now if you try to test your "
@@ -102,7 +107,7 @@ msgstr ""
 "라, 메인 씬의 노드 구조를 바꾸기로 한다면 플레이어의 부모는 더 이상 총알을 받"
 "기에 적절한 노드가 아니게 됩니다."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:78
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:81
 msgid ""
 "The solution to this is to use a signal to \"emit\" the bullets from the "
 "player. The player then has no need to \"know\" what happens to the bullets "
@@ -114,11 +119,11 @@ msgstr ""
 "연결된 어떤 노드라도 총알을 \"받을\" 수 있고 총알을 스폰하기 위한 적절한 행동"
 "을 취해줄 수 있습니다."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:83
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:86
 msgid "Here is the code for the player using signals to emit the bullet:"
 msgstr "이것이 시그널을 사용해 플레이어가 총알을 방출하는 코드입니다:"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:128
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:131
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
@@ -126,7 +131,7 @@ msgstr ""
 "메인 씬에서, 이제 플레이어의 시그널을 연결합니다 (\"노드\" 탭에 나타날 것입니"
 "다)."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:152
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:155
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"

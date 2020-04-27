@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,7 +125,7 @@ msgstr "들여쓰기 너비는 블록 바깥보다 한 칸 더 커야 됩니다.
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:662
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:675
 msgid "**Good**:"
 msgstr "**좋음**:"
 
@@ -139,7 +139,7 @@ msgstr "**좋음**:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:683
 msgid "**Bad**:"
 msgstr "**나쁨**:"
 
@@ -513,15 +513,39 @@ msgstr ""
 "라서 노드 종속성을 처리할 때 사용할 수 있습니다. 말 그대로 씬에서 클래스에 의"
 "존하는 자식 노드를 가져올 수 있다는 것이죠. 위 예제에서 이 작업을 보여줍니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:600
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:599
+#, fuzzy
+msgid "Member variables"
+msgstr "멤버 접근"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:601
+msgid ""
+"Don't declare member variables if they are only used locally in a method, as "
+"it makes the code more difficult to follow. Instead, declare them as local "
+"variables in the method's body."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
+#, fuzzy
+msgid "Local variables"
+msgstr "지역 변수(Local Variables)"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:608
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
 msgid "Methods and static functions"
 msgstr "메서드(Method)와 정적(Static) 함수"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:602
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid "After the class's properties come the methods."
 msgstr "클래스 속성 뒤에는 메서드가 옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:604
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:617
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
@@ -531,14 +555,14 @@ msgstr ""
 "요. 그 뒤로 Godot가 씬 트리에 노드를 추가할 때 호출하는 ``_ready()`` 콜백이 "
 "옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:608
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
 msgstr ""
 "이 함수가 객체를 어떻게 초기화할 지 보여주기 때문에 가장 먼저 와야 합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:611
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:624
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
@@ -548,7 +572,7 @@ msgstr ""
 "백은 다음에 나와야 합니다. 이 메서드는 객체의 메인 루프와 게임 엔진과의 상호"
 "작용을 제어합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
@@ -556,11 +580,11 @@ msgstr ""
 "이 다음은 순서에 따라 클래스 인터페이스의 나머지인, 공개 메서드와 개인 메서드"
 "가 옵니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:652
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:665
 msgid "Static typing"
 msgstr "정적 타이핑(Static Typing)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:654
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:667
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
@@ -568,11 +592,11 @@ msgstr ""
 "Godot 3.1부터, GDScript는 :ref:`선택 정적 타이핑<doc_gdscript_static_typing>`"
 "\\ 을 지원합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:657
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 msgid "Type hints"
 msgstr "유형 힌트(Type Hint)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:659
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:672
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
@@ -580,14 +604,14 @@ msgstr ""
 "변수의 이름 바로 뒤에, 띄어쓰기 없이 쌍점을 배치하세요. 그러면 GDScript 컴파"
 "일러는 변수의 유형을 추론합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:678
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:691
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
 "컴파일러가 유형 힌트를 추론할 때는 쌍점과 등호를 함께 작성합니다: ``:=``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:684
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:697
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr "함수를 정의할 때, 반환 유형 화살표의 양쪽에는 띄어쓰기를 추가하세요."

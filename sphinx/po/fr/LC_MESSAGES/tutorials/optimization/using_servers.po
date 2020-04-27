@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:4
 msgid "Optimization using Servers"
-msgstr ""
+msgstr "Optimisation à l'aide de serveurs"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:6
 msgid ""
@@ -28,26 +28,33 @@ msgid ""
 "`Scene System<doc_scene_tree>`. Using nodes and resources simplifies project "
 "organization and asset management in complex games."
 msgstr ""
+"Les moteurs comme Godot offrent une facilité d'utilisation accrue grâce à "
+"leurs constructions et leurs caractéristiques de haut niveau. La plupart "
+"d'entre elles sont accessibles et utilisées via le :ref:`Système de "
+"scène<doc_scene_tree>`. L'utilisation de nœuds et de ressources simplifie "
+"l'organisation des projets et la gestion des ressources dans les jeux "
+"complexes."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:10
 msgid "There are, of course, always drawbacks:"
-msgstr ""
+msgstr "Bien sûr, il y a toujours des inconvénients :"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:12
 msgid "There is an extra layer of complexity"
-msgstr ""
+msgstr "Il y a un niveau de complexité supplémentaire"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:13
 msgid "Performance is lower than using simple APIs directly"
 msgstr ""
+"Les performances sont inférieures à l'utilisation directe d'API simples"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:14
 msgid "It is not possible to use multiple threads to control them"
-msgstr ""
+msgstr "Il n'est pas possible d'utiliser plusieursthreads pour les contrôler"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:15
 msgid "More memory is needed."
-msgstr ""
+msgstr "Il faut plus de mémoire."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:17
 msgid ""
@@ -57,6 +64,12 @@ msgid ""
 "instances for something that needs to be processed every frame can be a "
 "bottleneck."
 msgstr ""
+"Dans de nombreux cas, ce n'est pas vraiment un problème (Godot est très "
+"optimisé, et la plupart des opérations sont traitées avec des signaux, donc "
+"aucun sondage(polling) n'est nécessaire). Néanmoins, cela peut parfois "
+"l'être. Par exemple, le traitement de dizaines de milliers d'instances pour "
+"quelque chose qui doit être traité à chaque trame peut constituer un goulot "
+"d'étranglement."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:21
 msgid ""
@@ -64,10 +77,13 @@ msgid ""
 "and wish they could go back to a more handcrafted, low level implementation "
 "of game code."
 msgstr ""
+"Ce type de situation fait regretter aux programmeurs d'utiliser un moteur de "
+"jeu et leur fait souhaiter de revenir à une implémentation plus artisanale "
+"et de bas niveau du code du jeu."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:24
 msgid "Still, Godot is designed to work around this problem."
-msgstr ""
+msgstr "Pourtant, Godot est conçu pour contourner ce problème."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:27
 msgid "Servers"
@@ -79,6 +95,9 @@ msgid ""
 "whole scene system is *optional*. While it is not currently possible to "
 "compile it out, it can be completely bypassed."
 msgstr ""
+"Une des décisions les plus intéressantes pour Godot est le fait que le "
+"système de scènes est entièrement *optionnel*. Bien qu'il ne soit pas "
+"possible de compiler sans actuellement, il peut être complètement contourné."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:32
 msgid ""
@@ -86,39 +105,53 @@ msgid ""
 "to control rendering, physics, sound, etc. The scene system is built on top "
 "of them and uses them directly. The most common servers are:"
 msgstr ""
+"Au cœur, Godot utilise le concept de Serveur. Ce sont des API de très bas "
+"niveau pour contrôler le rendu, la physique, le son, etc. Le système de "
+"scène est construit sur eux et les utilise directement. Les serveurs les "
+"plus courants sont :"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:36
 msgid ""
 ":ref:`VisualServer <class_VisualServer>`: handles everything related to "
 "graphics."
 msgstr ""
+":ref:`VisualServer <class_VisualServer>` : gère tout ce qui concerne les "
+"graphismes."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:37
 msgid ""
 ":ref:`PhysicsServer <class_PhysicsServer>`: handles everything related to 3D "
 "physics."
 msgstr ""
+":ref:`PhysicsServer <class_PhysicsServer>` : gère tout ce qui concerne la "
+"physique 3D."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:38
 msgid ""
 ":ref:`Physics2DServer <class_Physics2DServer>`: handles everything related "
 "to 2D physics."
 msgstr ""
+":ref:`Physics2DServer <class_Physics2DServer>` : gère tout ce qui concerne "
+"la physique 2D."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:39
 msgid ""
 ":ref:`AudioServer <class_AudioServer>`: handles everything related to audio."
 msgstr ""
+":ref:`AudioServer <class_AudioServer>` : gère tout ce qui concerne l'audio."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:41
 msgid ""
 "Just explore their APIs and you will realize that the all functions provided "
 "are low-level implementations of everything Godot allows you to do."
 msgstr ""
+"Il suffit d'explorer leurs API et vous vous rendrez compte que toutes les "
+"fonctions fournies sont des implémentations de bas niveau de tout ce que "
+"Godot vous permet de faire."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:45
 msgid "RIDs"
-msgstr ""
+msgstr "RIDs"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:47
 msgid ""
@@ -127,6 +160,11 @@ msgid ""
 "implementation. They are allocated and freed manually. Almost every function "
 "in the servers requires RIDs to access the actual resource."
 msgstr ""
+"La clé de l'utilisation des serveurs consiste à comprendre les objets "
+"Resource ID (:ref:`RID <class_RID>`). Ce sont des poignées opaques pour "
+"l'implémentation du serveur. Ils sont alloués et libérés manuellement. "
+"Presque toutes les fonctions des serveurs nécessitent des RID pour accéder à "
+"la ressource réelle."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:51
 msgid ""
@@ -138,10 +176,18 @@ msgid ""
 "RIDs. Just make sure to keep references to the resources outside the server, "
 "because if the resource is erased, the internal RID is erased too."
 msgstr ""
+"La plupart des nœuds et ressources Godot contiennent ces RID à partir des "
+"serveurs en interne, et ils peuvent être obtenus avec différentes fonctions. "
+"En fait, tout ce qui hérite : ref : `Resource <class_Resource>` peut être "
+"directement converti en RID (toutes les ressources ne contiennent pas de "
+"RID, cependant, dans de tels cas, le RID sera vide). En fait, les ressources "
+"peuvent être transmises aux API de serveur en tant que RID. Assurez-vous "
+"simplement de conserver des références aux ressources en dehors du serveur, "
+"car si la ressource est effacée, le RID interne est également effacé."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:58
 msgid "For nodes, there are many functions available:"
-msgstr ""
+msgstr "Pour les nœuds, de nombreuses fonctions sont disponibles :"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:60
 msgid ""
@@ -159,6 +205,9 @@ msgid ""
 "<class_CanvasLayer_method_get_canvas>` method will return the canvas RID in "
 "the server."
 msgstr ""
+"Pour CanvasLayer, la méthode :ref:`CanvasLayer.get_canvas() "
+"<class_CanvasLayer_method_get_canvas>` renverra le RID du canvas dans le "
+"serveur."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:64
 msgid ""
@@ -166,6 +215,9 @@ msgid ""
 "<class_Viewport_method_get_viewport_rid>` method will return the viewport "
 "RID in the server."
 msgstr ""
+"Pour Viewport, la méthode :ref:`Viewport.get_viewport_rid() "
+"<class_Viewport_method_get_viewport_rid>` renverra le RID du viewport dans "
+"le serveur."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:66
 msgid ""
@@ -175,6 +227,11 @@ msgid ""
 "*PhysicsServer Space*. This allows creating 3D objects directly with the "
 "server API and using them."
 msgstr ""
+"Pour la 3D, la ressource :ref:`World <class_World>` (que l'on peut obtenir "
+"dans les nœuds :ref:`Viewport <class_Viewport>` et :ref:`Spatial "
+"<class_Spatial>`) contient des fonctions permettant d'obtenir le "
+"*VisualServer Scenario*, et le *PhysicsServer Space*. Cela permet de créer "
+"des objets 3D directement avec l'API du serveur et de les utiliser."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:70
 msgid ""
@@ -184,6 +241,11 @@ msgid ""
 "*Physics2DServer Space*. This allows creating 2D objects directly with the "
 "server API and using them."
 msgstr ""
+"Pour la 2D, la ressource :ref:`World2D <class_World2D>` (disponible dans les "
+"nœuds :ref:`Viewport <class_Viewport>` et :ref:`CanvasItem "
+"<class_CanvasItem>`) contient des fonctions pour obtenir le *VisualServer "
+"Canvas*, et le *Physics2DServer Space*. Cela permet de créer des objets 2D "
+"directement avec l'API du serveur et de les utiliser."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:74
 msgid ""
@@ -193,12 +255,19 @@ msgid ""
 "`VisualInstance.get_base() <class_VisualInstance_method_get_base>` "
 "respectively."
 msgstr ""
+"La classe :ref:`VisualInstance<class_VisualInstance>`, permet d'obtenir le "
+"scénario *instance* et *instance base* via les classes :ref:`VisualInstance."
+"get_instance() <class_VisualInstance_method_get_instance>` et :ref:"
+"`VisualInstance.get_base() <class_VisualInstance_method_get_base>` "
+"respectivement."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:78
 msgid ""
 "Just explore the nodes and resources you are familiar with and find the "
 "functions to obtain the server *RIDs*."
 msgstr ""
+"Il suffit d'explorer les nœuds et les ressources qui vous sont familiers et "
+"de trouver les fonctions pour obtenir les *RIDs* serveur."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:80
 msgid ""
@@ -206,6 +275,10 @@ msgid ""
 "associated. Instead, server functions should always be used for creating and "
 "controlling new ones and interacting with the existing ones."
 msgstr ""
+"Il n'est pas conseillé de contrôler les RID d'objets auxquels un nœud est "
+"déjà associé. Au lieu de cela, les fonctions du serveur devraient toujours "
+"être utilisées pour en créer et en contrôler de nouveaux et pour interagir "
+"avec ceux qui existent déjà."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:84
 msgid "Creating a sprite"
@@ -216,6 +289,9 @@ msgid ""
 "This is a simple example of how to create a sprite from code and move it "
 "using the low-level :ref:`CanvasItem <class_CanvasItem>` API."
 msgstr ""
+"Voici un exemple simple de la façon de créer un sprite à partir de code et "
+"de le déplacer en utilisant l'API de bas niveau :ref:`CanvasItem "
+"<class_CanvasItem>`."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:111
 msgid ""
@@ -224,24 +300,32 @@ msgid ""
 "primitives re-added (this is not the case for setting the transform, which "
 "can be done as many times as desired)."
 msgstr ""
+"L'API Canvas Item du serveur vous permet d'y ajouter des primitives de "
+"dessin. Une fois ajoutés, elles ne peuvent pas être modifiées. L'élément "
+"doit être effacé et les primitives ré-ajoutées (ce n'est pas le cas pour "
+"définir la transformation, qui peut être effectuée autant de fois que "
+"souhaité)."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:115
 msgid "Primitives are cleared this way:"
-msgstr ""
+msgstr "Les primitifs sont éliminés de cette façon :"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:124
 msgid "Instantiating a Mesh into 3D space"
-msgstr ""
+msgstr "Instanciation d'un Mesh dans l'espace 3D"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:126
+#, fuzzy
 msgid ""
-"The 3D APIs are different than the 2D ones, so the instantiation API must be "
+"The 3D APIs are different from the 2D ones, so the instantiation API must be "
 "used."
 msgstr ""
+"Les API 3D sont différentes des API 2D, il faut donc utiliser l'API "
+"d'instanciation."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:152
 msgid "Creating a 2D RigidBody and moving a sprite with it"
-msgstr ""
+msgstr "Créer un RigidBody en 2D et déplacer un sprite avec lui"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:154
 msgid ""
@@ -249,6 +333,9 @@ msgid ""
 "`Physics2DServer <class_Physics2DServer>` API, and moves a :ref:`CanvasItem "
 "<class_CanvasItem>` when the body moves."
 msgstr ""
+"Cela crée un :ref:`RigidBody2D <class_RigidBody2D>` en utilisant l'API :ref:"
+"`Physics2DServer <class_Physics2DServer>`, et déplace un :ref:`CanvasItem "
+"<class_CanvasItem>` lorsque le corps bouge."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:186
 msgid ""

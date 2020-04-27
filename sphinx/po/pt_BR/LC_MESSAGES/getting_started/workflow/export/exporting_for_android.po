@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,10 +44,13 @@ msgid ""
 msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
+#, fuzzy
 msgid ""
 "If you install Android Studio, you need to run it once to complete the SDK "
 "setup."
 msgstr ""
+"Se você instalar o Android Studio, você precisa executá-lo uma vez para "
+"completar a configuração do SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
 #, fuzzy
@@ -68,10 +71,14 @@ msgstr ""
 "relataram problemas com o jarsigner (usado para assinar os APKs) em JDK 7."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:22
+#, fuzzy
 msgid ""
 "If you install OpenJDK, choose ``1.8``. Don't choose the ``openjdk-jre`` "
 "files as that only contains the JRE, not the JDK which is required here."
 msgstr ""
+"Se você instalar o OpenJDK, escolha ``1.8```. Não escolha os arquivos "
+"``openjdk-jre``, pois eles contêm apenas o JRE, não o JDK, que é necessário "
+"aqui."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:25
 #, fuzzy
@@ -108,6 +115,12 @@ msgid ""
 "information on ``keytool`` usage, see `this Q&A article <https://godotengine."
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
+"Isto irá criar um arquivo ``debug.keystore`` no seu diretório atual. Você "
+"deve movê-lo para um local memorável como o ``%USERPROFILE%\\.android\\``, "
+"porque você precisará da sua localização em um passo posterior. Para mais "
+"informações sobre a utilização do ``keytool``, veja `este artigo de "
+"perguntas e respostas <https://godotengine.org/qa/21349/jdk-android-file-"
+"missing>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
 #, fuzzy
@@ -136,7 +149,7 @@ msgstr "Configurando na Godot"
 #, fuzzy
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
-"for the user account in the computer (it's independent from the project)."
+"for the user account in the computer (it's independent of the project)."
 msgstr ""
 "Entrar na tela Configurações do Editor. Esta tela contém as configurações do "
 "editor para a conta do usuário no computador (é independente do projeto)."
@@ -153,24 +166,36 @@ msgid "In that screen, the path to 3 files needs to be set:"
 msgstr "Nessa tela, o caminho para 3 arquivos precisa ser definido:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
+#, fuzzy
 msgid ""
 "The ``adb`` executable (``adb.exe`` on Windows) - It can usually be found at "
 "``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
 msgstr ""
+"O executável ``adb`` (``adb.exe`` no Windows) - Normalmente pode ser "
+"encontrado em ``%LOCALAPPDATA%`Android`Sdk``platform-tools`adb.exe``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
+#, fuzzy
 msgid ""
 "The ``jarsigner`` executable (from JDK 6 or 8) - On Windows, OpenJDK "
 "installs to a dir like ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
-"openjdk-1.8.0.232-2\\bin``. The exact path may vary depending on the OpenJDK "
-"update you've installed."
+"openjdk-1.8.0.232-2\\bin``. On Linux, it typically installs to a dir like ``/"
+"usr/bin/jarsigner``. The exact path may vary depending on the OpenJDK update "
+"you've installed and your machine's operating system."
 msgstr ""
+"O executável ``jarsigner`` (do JDK 6 ou 8) - No Windows, o OpenJDK instala "
+"para um diretório como ``%PROGRAMFILES%ojdkbuild\\java-1.8.0-"
+"openjdk-1.8.0.232-2\\bin``. O caminho exato pode variar dependendo da "
+"atualização do OpenJDK que você tenha instalado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:67
+#, fuzzy
 msgid ""
 "The debug ``.keystore`` file - It can be found in the folder where you put "
 "the ``debug.keystore`` file you created above."
 msgstr ""
+"O arquivo debug ``.keystore``` - Pode ser encontrado na pasta onde você "
+"coloca o arquivo ``debug.keystore``` que você criou acima."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:70
 #, fuzzy
@@ -203,10 +228,14 @@ msgstr ""
 "pode:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
+#, fuzzy
 msgid ""
-"**Main Icon:**: The \"classic\" icon. This will be used on all Android "
+"**Main Icon:** The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
+"**Ícone principal:**: O ícone \"clássico\". Será utilizado em todas as "
+"versões do Android até ao Android 8 (Oreo), exclusivo. Deve ter pelo menos "
+"192×192 px."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
 msgid ""
@@ -258,9 +287,9 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
 msgid ""
-"It's highly recommended to provide all of the requested icons, and at least "
-"with the specified resolutions. Only this way your application will look "
-"great on all the Android devices and versions."
+"It's highly recommended to provide all requested icons, and at least with "
+"the specified resolutions. Only this way your application will look great on "
+"all Android devices and versions."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95

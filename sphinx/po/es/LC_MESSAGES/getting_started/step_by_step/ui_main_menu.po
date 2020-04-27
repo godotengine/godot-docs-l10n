@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,8 +69,9 @@ msgstr ""
 "assets/main_menu``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
+#, fuzzy
 msgid ""
-"Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
+"Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot's "
 "UI system works."
 msgstr ""
 "Lea :doc:`ui_introduction_to_the_ui_system` primero para aprender cómo "
@@ -164,9 +165,10 @@ msgstr ""
 "específicos que heredan de sus escenas base."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
+#, fuzzy
 msgid ""
 "We will use the first approach, because the first version of your UI may not "
-"work as well as you’d like. You’re likely to throw parts away and redesign "
+"work as well as you'd like. You're likely to throw parts away and redesign "
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
@@ -280,7 +282,6 @@ msgstr ""
 "crear una escena vacía, haz clic en **Escena > Nueva escena**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
-#, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
@@ -292,8 +293,8 @@ msgstr ""
 "tu interfaz debe ser el container o elemento más cercano. En este caso es un "
 "``MarginContainer``. ``MarginContainer`` es un buen punto de partida para la "
 "mayoría de las interfaces, ya que a menudo necesita relleno alrededor de la "
-"interfaz de usuario. Presiona ``Meta+S`` para guardar la escena en el disco. "
-"Nómbrala *MainMenu*."
+"interfaz de usuario. Presiona :kbd:``Meta+S`` para guardar la escena en el "
+"disco. Nómbrala *MainMenu*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
 msgid ""
@@ -360,7 +361,8 @@ msgid "the version note,"
 msgstr "Las notas de la versión,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-msgid "and the main menu’s illustration."
+#, fuzzy
+msgid "and the main menu's illustration."
 msgstr "Y la ilustración del menú principal."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
@@ -423,6 +425,7 @@ msgid "Add containers to place UI elements automatically"
 msgstr "Añade contenedores para colocar elementos de UI automáticamente"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
+#, fuzzy
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -432,7 +435,7 @@ msgid ""
 "allow the user to resize the left and right areas using an interactive bar. "
 "On the other hand, ``HBoxContainer`` just splits itself into as many columns "
 "as it has children. Although you can deactivate the split container's resize "
-"behaviour, I recommend to favour box containers."
+"behavior, I recommend to favor box containers."
 msgstr ""
 "Nuestro menú principal tiene algún margen alrededor de los bordes de la "
 "pantalla. Está dividido en dos partes: a la izquierda, tiene el logotipo y "
@@ -467,7 +470,6 @@ msgstr ""
 "lado de éstos."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
@@ -475,9 +477,9 @@ msgid ""
 "should position automatically."
 msgstr ""
 "En el árbol de nodos, selecciona todos los nodos ``TextureRect`` que deben "
-"ir en el lado izquierdo: el logo, las opciones del menú y la nota de la "
-"versión. Arrástralos y suéltalos en el ``VBoxContainer``. Los nodos deben "
-"posicionarse automáticamente."
+"ir en el lado izquierdo: el logo, las opciones del menú (continuar, nuevo "
+"juego, opciones), y la nota de la versión. Arrástralos y suéltalos en el "
+"``VBoxContainer``. Los nodos deben posicionarse automáticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "Containers automatically place and resize textures"
@@ -488,7 +490,6 @@ msgid "We're left with two problems to solve:"
 msgstr "Nos quedan dos problemas por resolver:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid "The characters on the right aren't centered."
 msgstr "Los caracteres de la derecha no están centrados."
 
@@ -497,7 +498,6 @@ msgid "There's no space between the logo and the other UI elements."
 msgstr "No hay espacio entre el logo y los otros elementos de la UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "
@@ -527,7 +527,6 @@ msgstr ""
 "pronto como lo coloques dentro del CenterContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
@@ -538,7 +537,7 @@ msgid ""
 msgstr ""
 "Para espaciar las opciones del menú y el logotipo a la izquierda, usaremos "
 "un último container y sus size flags. Selecciona el ``VBoxContainer`` y "
-"pulsa ``Meta+A`` para añadir un nuevo nodo dentro de él. Añade un segundo "
+"pulsa ``ctrl + A`` para añadir un nuevo nodo dentro de él. Añade un segundo "
 "``VBoxContainer`` y llámalo \"MenuOptions\". Selecciona las tres opciones "
 "del menú, ``Continue``, ``NewGame`` y ``Options``, y arrástralas y suéltalas "
 "dentro del nuevo ``VBoxContainer``. El diseño de la UI apenas debería "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,16 +32,24 @@ msgid ""
 "Let's look at an example using Festival, a speech synthesis (text-to-speech) "
 "library written in C++."
 msgstr ""
+"L'exemple Summator dans :ref:`doc_custom_modules_in_c++` est géniale pour "
+"les modules personnalisés de petite taille, mais si vous souhaitez utiliser "
+"une bibliothèque externe plus grande ? Regardons un exemple en utilisant "
+"Festival, une bibliothèque de synthétisation de parole (text-to-speech) "
+"écrite en C++."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:14
 msgid ""
 "To bind to an external library, set up a module directory similar to the "
 "Summator example:"
 msgstr ""
+"Pour lier une bibliothèque externe, configurez un module similaire à "
+"l'exemple Summator :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:20
 msgid "Next, you will create a header file with a simple TTS class:"
 msgstr ""
+"Ensuite, vous allez créer un fichier d'en-tête avec une simple classe TTS :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:45
 msgid "And then you'll add the cpp file."
@@ -74,6 +82,11 @@ msgid ""
 "instructions on how to do this for your operation system.  We've included "
 "the installation commands for Linux below, for reference."
 msgstr ""
+"Vous devrez installer la bibliothèque externe sur votre ordinateur pour "
+"obtenir les fichiers bibliothèques .a. Regardez la documentation officielle "
+"de la bibliothèque pour des instructions spécifiques sur la façon de "
+"procéder pour votre système d'exploitation. Nous avons inclus les commandes "
+"d'installation pour Linux ci-dessous, pour référence."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:128
 msgid ""
@@ -83,6 +96,12 @@ msgid ""
 "Festival Library itself is MIT License compatible. Please be sure to check "
 "the licenses and terms of use."
 msgstr ""
+"**Important :** Les voix utilisées par Festival (et d'autre ressource "
+"externe/ressource tierce) ont toutes des licences et des conditions "
+"d'utilisation variées ; certaines (si ce n'est la plupart) d'entre elles "
+"peuvent être problématiques avec Godot, même si la bibliothèque Festival "
+"elle-même est sous Licence compatible MIT. Veuillez lire les licences et les "
+"conditions d'utilisation."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:133
 msgid ""
@@ -92,6 +111,11 @@ msgid ""
 "installed from the modules/tts/ directory via git using the following "
 "commands:"
 msgstr ""
+"La bibliothèque externe devra également être installée à l'intérieur de "
+"votre module pour rendre les fichiers source accessibles au compilateur, en "
+"gardant également le code du module autonome. Les bibliothèques festival et "
+"speech_tools peuvent être installés depuis le répertoire modules/tts/ via "
+"git en utilisant les commandes suivantes :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:143
 msgid ""
@@ -99,6 +123,10 @@ msgid ""
 "repository, you can link to them instead by adding them as submodules (from "
 "within the modules/tts/ directory), as seen below:"
 msgstr ""
+"Si vous ne voulez pas les fichiers source des répertoires externes committés "
+"dans votre répertoire, vous pouvez, à la place, les lier en les ajoutant "
+"comme sous-modules (depuis les répertoires modules/tts/), comme montré ci-"
+"dessous :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:152
 msgid ""
@@ -108,12 +136,19 @@ msgid ""
 "merged in, you can always try to implement the external library as a "
 "GDNative C++ plugin."
 msgstr ""
+"**Important :** Veuillez noter que les sous-modules Git ne sont pas utilisés "
+"dans le dépôt Godot.  Si vous développez un module à merge dans le dépôt "
+"principal de Godot, vous ne devez pas utiliser de sous-modules. Si votre "
+"module n'est pas merged, vous pouvez toujours essayer d'implémenter la "
+"bibliothèque externe comme un plugin GDNative C++."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:157
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
 msgstr ""
+"Pour ajouter des répertoires d'include à consulter par le compilateur, vous "
+"pouvez l'ajouter aux chemins de l'environnement :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:168
 msgid ""
@@ -121,6 +156,10 @@ msgid ""
 "to clone `env` first, so it won't add those flags to whole Godot build "
 "(which can cause errors). Example `SCsub` with custom flags:"
 msgstr ""
+"Si vous voulez ajouter des drapeaux de compilation personnalisés lors de la "
+"construction de votre module, vous devez d'abord cloner `env`, afin qu'il "
+"n'ajoute pas ces drapeaux à la construction de Godot (ce qui peut causer des "
+"erreurs). Exemple `SCsub` avec des drapeaux personnalisés :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:183
 msgid "The final module should look like this:"
@@ -128,12 +167,14 @@ msgstr "Le module final devrait ressembler à cela :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:201
 msgid "Using the module"
-msgstr ""
+msgstr "Utilisation du module"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:203
 msgid "You can now use your newly created module from any script:"
 msgstr ""
+"Vous pouvez maintenant utiliser votre module nouvellement créé à partir de "
+"n'importe quel script :"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:212
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
-msgstr ""
+msgstr "Et la sortie sera ``is_spoken: True`` si le texte est prononcé."

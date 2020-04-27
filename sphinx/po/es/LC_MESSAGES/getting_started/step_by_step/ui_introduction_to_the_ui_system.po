@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -274,7 +274,6 @@ msgid "TextureButton"
 msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
-#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 5 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -287,7 +286,7 @@ msgstr ""
 "tiempo, usted usará las texturas Normal, Pressed y Hover. Focused es útil si "
 "tu interfaz escucha la entrada del teclado. La sexta ranura de imagen, la "
 "Máscara de Clic, te permite definir el área en la que se puede hacer clic "
-"utilizando una imagen en blanco y negro puro de 2 bits."
+"utilizando una imagen totalmente en blanco y negro de 1 bit."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""

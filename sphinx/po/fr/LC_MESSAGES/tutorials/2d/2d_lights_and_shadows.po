@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,9 +40,10 @@ msgstr ""
 "scène comme la démo étape par étape."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:16
+#, fuzzy
 msgid ""
 "All the resources for this tutorial can be found in the `official demo "
-"repository <https://github.com/godotengine/godot-demo-projects>`_ on github. "
+"repository <https://github.com/godotengine/godot-demo-projects>`_ on GitHub. "
 "I suggest you download it before starting. Alternatively, it can be "
 "downloaded from the Project Manager. Launch Godot and in the top bar select "
 "\"Templates\" and search for \"2D Lights and Shadows Demo\"."
@@ -70,16 +71,15 @@ msgstr ""
 "télécharger séparément de la démo."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:28
-#, fuzzy
 msgid ""
 "The first is the background image (`background.png <https://raw."
 "githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
 "lights_and_shadows/background.png>`_) used in the demo. You do not "
 "necessarily need a background, but we use one for the demo."
 msgstr ""
-"La première est l'image d'arrière-plan (`bg.png <https://raw."
+"La première est l'image d'arrière-plan (`background.png <https://raw."
 "githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
-"lights_and_shadows/bg.png>`_) utilisée dans la démo. Vous n'avez pas "
+"lights_and_shadows/background.png>`_) utilisée dans la démo. Vous n'avez pas "
 "nécessairement besoin d'un arrière-plan, mais nous en utilisons un pour la "
 "démo."
 
@@ -314,7 +314,6 @@ msgstr ""
 "celle trouvée dans la démo."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:113
-#, fuzzy
 msgid ""
 "First add a :ref:`Sprite <class_Sprite>` and set its texture to the "
 "`background image <https://raw.githubusercontent.com/godotengine/godot-demo-"
@@ -323,10 +322,10 @@ msgid ""
 "to be a floor texture."
 msgstr ""
 "Ajoutez d’abord un :ref:`Sprite <class_Sprite>` et définissez sa texture "
-"avec l’image de fond <https://raw.githubusercontent.com/godotengine/godot-"
-"demo-projects/master/2d/lights_and_shadows/bg.png>`_. Pour votre jeu, cela "
-"peut être n'importe quel fond que vous choisissez. Pour ce style d'ombre, il "
-"s'agira certainement d'une texture de sol."
+"avec `l’image d'arrière plan <https://raw.githubusercontent.com/godotengine/"
+"godot-demo-projects/master/2d/lights_and_shadows/bg.png>`_. Pour votre jeu, "
+"cela peut être n'importe quel arrière plan que vous choisissez. Pour ce "
+"style d'ombre, il s'agira certainement d'une texture de sol."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:118
 msgid ""

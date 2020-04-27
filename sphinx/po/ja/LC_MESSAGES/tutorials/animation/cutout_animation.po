@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -192,15 +192,15 @@ msgstr ""
 "胴体のテクスチャをロードし、後で適切に調整します:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:82
-#, fuzzy
 msgid ""
 "This looks good. Let's see if our hierarchy works as a skeleton by rotating "
 "the torso. We can do this be pressing :kbd:`E` to enter rotate mode, and "
 "dragging with the left mouse button. To exit rotate mode hit :kbd:`ESC`."
 msgstr ""
 "これはよさそうです。胴体を回転させて、階層がスケルトンとして機能するかどうか"
-"を見てみましょう。これを行うには、\\ ``E`` を押して回転モードに入り、マウスの"
-"左ボタンでドラッグします。回転モードを終了するには、\\ ``ESC`` を押します。"
+"を見てみましょう。これを行うには、\\ :kbd`E` を押して回転モードに入り、マウス"
+"の左ボタンでドラッグします。回転モードを終了するには、\\ :kbd:`ESC` を押しま"
+"す。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:88
 msgid "The rotation pivot is wrong and needs to be adjusted."
@@ -224,15 +224,14 @@ msgstr ""
 "ピボットは、スプライトの *offset* プロパティを変更することで調整できます:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:103
-#, fuzzy
 msgid ""
 "The pivot can also be adjusted *visually*. While hovering over the desired "
 "pivot point,  press :kbd:`V` to move the pivot there for the selected "
 "Sprite. There is also a tool in the tool bar that has a similar function."
 msgstr ""
 "ピボットは *視覚的に* 調整することもできます。目的のピボットポイントにカーソ"
-"ルを合わせながら、\"v\" キーを押して、選択したスプライトのピボットをそこに移"
-"動します。ツールバーには、同様の機能を持つツールもあります。"
+"ルを合わせながら、\\ :kbd:`V` を押して、選択したスプライトのピボットをそこに"
+"移動します。ツールバーには、同様の機能を持つツールもあります。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:110
 msgid ""
@@ -286,9 +285,10 @@ msgstr ""
 "変換の状態を含む)をターゲットのリモートノードに適用します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:137
+#, fuzzy
 msgid ""
-"This allows us to correct the visibility order of our elements independent "
-"from the locations of those parts in the cutout hierarchy."
+"This allows us to correct the visibility order of our elements, "
+"independently of the locations of those parts in the cutout hierarchy."
 msgstr ""
 "これにより、要素の表示順序を、カットアウト階層内の部品の位置に関係なく独立し"
 "て修正することができます。"

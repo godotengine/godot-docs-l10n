@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,8 @@ msgid "Render mode"
 msgstr "渲染模式"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:30
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
 msgid "Description"
 msgstr "描述"
 
@@ -107,8 +108,8 @@ msgstr "out vec3 **VELOCITY**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
 #, fuzzy
-msgid "Vertex built-ins"
-msgstr "顶点内置"
+msgid "Built-ins"
+msgstr "内建的"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:42
 #, fuzzy
@@ -121,7 +122,34 @@ msgstr ""
 "标记为“in”的值是只读的。 标记为“out”的值用于可选写入。 取样器不是书写对象，也"
 "没有标记。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:47
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:48
+#, fuzzy
+msgid "Global built-ins"
+msgstr "片段内置"
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:50
+msgid "Global built-ins are available everywhere, including custom functions."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
+msgid "Built-in"
+msgstr "内建的"
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
+msgid "in float **TIME**"
+msgstr "in float **TIME**"
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
+msgid "Global time, in seconds."
+msgstr "全球时间，以秒为单位。"
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
+#, fuzzy
+msgid "Vertex built-ins"
+msgstr "顶点内置"
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:61
 msgid ""
 "In order to use the ``COLOR`` variable in a SpatialMaterial, set "
 "``use_vertex_as_albedo`` to ``true``. In a ShaderMaterial, access it with "
@@ -130,129 +158,117 @@ msgstr ""
 "为了在空间材质中使用“颜色”变量，将“使用_顶点_作为_反照率”设置为“真”值。在空间"
 "材质中，使用“颜色”变量访问它。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
-msgid "Built-in"
-msgstr "内建的"
-
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 #, fuzzy
 msgid "inout vec4 **COLOR**"
 msgstr "out vec4 **COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 #, fuzzy
 msgid ""
 "Particle color, can be written to and accessed in mesh's vertex function."
 msgstr "粒子颜色，可写入。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 #, fuzzy
 msgid "inout vec3 **VELOCITY**"
 msgstr "out vec3 **VELOCITY**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 msgid "Particle velocity, can be modified."
 msgstr "粒子速度，可以修改。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:57
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 msgid "out float **MASS**"
 msgstr "out float **MASS**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:57
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 #, fuzzy
 msgid "Particle mass, use for attractors (not implemented in 3.1)."
 msgstr "粒子质量，用于吸引子(默认1)。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 #, fuzzy
 msgid "inout bool **ACTIVE**"
 msgstr "out bool **ACTIVE**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 #, fuzzy
 msgid "``true`` when Particle is active, can be set to ``false``."
 msgstr "粒子是活动的，可以设置为false。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:61
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
 msgid "in bool **RESTART**"
 msgstr "in bool **RESTART**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:61
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
 #, fuzzy
 msgid "``true`` when particle must restart (lifetime cycled)."
 msgstr "当粒子必须重新启动(生命周期循环)时设置为true。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:63
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
 #, fuzzy
 msgid "inout vec4 **CUSTOM**"
 msgstr "out vec4 **CUSTOM**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:63
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
 msgstr "自定义粒子数据。可从网格着色器作为**实例化_自定义**访问。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
 #, fuzzy
 msgid "inout mat4 **TRANSFORM**"
 msgstr "out mat4 **TRANSFORM**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
 msgid "Particle transform."
 msgstr "粒子变换。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
-msgid "in float **TIME**"
-msgstr "in float **TIME**"
-
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
-msgid "Global time in seconds."
-msgstr "全球时间以秒为单位。"
-
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:81
 msgid "in float **LIFETIME**"
 msgstr "in float **LIFETIME**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:81
 msgid "Particle lifetime."
 msgstr "粒子寿命。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:83
 msgid "in float **DELTA**"
 msgstr "in float **DELTA**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:83
 msgid "Delta process time."
 msgstr "达美处理时间。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:85
 msgid "in uint **NUMBER**"
 msgstr "in uint **NUMBER**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:85
 msgid "Unique number since emission start."
 msgstr "排放开始后的唯一编号。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:87
 msgid "in int **INDEX**"
 msgstr "in int **INDEX**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:87
 msgid "Particle index (from total particles)."
 msgstr "颗粒指数(来自总颗粒)。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:89
 msgid "in mat4 **EMISSION_TRANSFORM**"
 msgstr "in mat4 **EMISSION_TRANSFORM**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:89
 msgid "Emitter transform (used for non-local systems)."
 msgstr "发射器变换(用于非本地系统)。"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:91
 msgid "in uint **RANDOM_SEED**"
 msgstr "in uint **RANDOM_SEED**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:91
 msgid "Random seed used as base for random."
 msgstr "随机种子被用作随机的基础。"

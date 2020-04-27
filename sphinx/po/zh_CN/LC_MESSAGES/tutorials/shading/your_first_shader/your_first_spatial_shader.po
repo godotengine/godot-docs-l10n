@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -287,10 +287,11 @@ msgstr ""
 "要在着色器中访问纹理，请在着色器顶部附近，“vertex()”函数外部添加以下代码。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:158
+#, fuzzy
 msgid ""
 "This will allow you to send a noise texture to the shader. Now look in the "
 "inspecter under your material. You should see a section called \"Shader "
-"Params\". If you open it up you will see a section called \"noise\"."
+"Params\". If you open it up, you'll see a section called \"noise\"."
 msgstr ""
 "这将允许您发送噪声纹理到着色器。现在看看材质下方的属性面板。您会看到名为“着色"
 "器参数”的区域。如果展开该区域，就会看到叫做“噪音”的部分。"
@@ -340,8 +341,9 @@ msgid "Using this code you can see the texture creates random looking hills."
 msgstr "使用此代码，您可以看到纹理创建了随机外观的山峰。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:188
+#, fuzzy
 msgid ""
-"Right now it is too spiky, we want to soften the hills a bit. To do that we "
+"Right now it is too spiky, we want to soften the hills a bit. To do that, we "
 "will use a uniform. You already used a uniform above to pass in the noise "
 "texture, now let's learn how they work."
 msgstr ""
@@ -383,10 +385,11 @@ msgstr ""
 "服。 从gdscript传递的值优先于用于在着色器中初始化它的值。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:216
+#, fuzzy
 msgid ""
-"Changing uniforms from Spatial nodes is different than in CanvasItem nodes. "
-"Here, we set the material inside the PlaneMesh resource. In other mesh "
-"resources you may need to first access the material by calling "
+"Changing uniforms in Spatial-based nodes is different from CanvasItem-based "
+"nodes. Here, we set the material inside the PlaneMesh resource. In other "
+"mesh resources you may need to first access the material by calling "
 "``surface_get_material()``. While in the MeshInstance you would access the "
 "material using ``get_surface_material()`` or ``material_override``."
 msgstr ""

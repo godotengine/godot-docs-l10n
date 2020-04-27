@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
-#, fuzzy
 msgid "GDScript exports"
-msgstr "Типи даних"
+msgstr "Експорт в GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
-#, fuzzy
 msgid "Introduction to exports"
-msgstr "Введення в 3D"
+msgstr "Вступ до експорту"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
 msgid ""
@@ -34,6 +32,11 @@ msgid ""
 "they're attached to. They will also be available for editing in the property "
 "editor. Exporting is done by using the ``export`` keyword::"
 msgstr ""
+"У Godot члени класу можуть експортуватися. Це означає, що їх значення "
+"зберігається разом із ресурсом (наприклад, :ref:`сценою "
+"<class_PackedScene>`), до якого вони приєднані. Вони також будуть доступні "
+"для редагування в редакторі властивостей. Експорт здійснюється за допомогою "
+"ключового слова ``export``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
 msgid ""
@@ -41,6 +44,9 @@ msgid ""
 "export hint in the form of an argument to the ``export`` keyword (see the "
 "*Examples* section below)."
 msgstr ""
+"Експортована змінна повинна бути ініціалізована до постійного виразу, або "
+"мати підказку щодо експорту, у вигляді аргументу до ключового слова "
+"``export`` (дивіться розділ *Приклади* нижче)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
 msgid ""
@@ -49,12 +55,18 @@ msgid ""
 "designers can modify values that later influence how the program runs. For "
 "this, a special export syntax is provided."
 msgstr ""
+"Однією з основних переваг експорту змінних є те, що їх можна побачити та "
+"редагувати у редакторі. Таким чином, художники та розробники ігор можуть "
+"змінювати значення, які згодом впливають на роботу програми. Для цього "
+"передбачений спеціальний синтаксис експорту."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:29
 msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
 "syntax varies depending on the language."
 msgstr ""
+"Експорт властивостей також можна виконати іншими мовами, такими як C#. "
+"Синтаксис змінюється залежно від мови."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:33
 msgid "Examples"
@@ -66,6 +78,9 @@ msgid ""
 "editor, the exported properties are still editable. This can be used in "
 "conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
+"Слід зазначити, що навіть якщо скрипт не запущений в редакторі, експортовані "
+"властивості можна редагувати. Це може бути використано спільно зі :ref:"
+"`скриптом в режимі \"інструмент\" <doc_gdscript_tool_mode>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
 msgid "Exporting bit flags"
@@ -99,7 +114,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:148
 msgid "Exporting arrays"
-msgstr ""
+msgstr "Експорт масивів"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
 msgid ""
@@ -108,4 +123,22 @@ msgid ""
 "between all instances. This means that editing them in one instance will "
 "cause them to change in all other instances. Exported arrays can have "
 "initializers, but they must be constant expressions."
+msgstr ""
+"Експорт масивів працює, але з важливим застереженням: хоча регулярні масиви "
+"створюються локальними для кожного екземпляра класу, експортовані масиви "
+"*спільні* для усіх екземплярів. Це означає, що їх редагування в одному "
+"екземплярі призведе до зміни у всіх інших екземплярах. Експортовані масиви "
+"можуть мати ініціалізатори, але вони повинні бути постійними виразами."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:186
+msgid "Setting exported variables from a tool script"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:188
+msgid ""
+"When changing an exported variable's value from a script in :ref:"
+"`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
+"automatically. To update it, call :ref:`property_list_changed_notify() "
+"<class_Object_method_property_list_changed_notify>` after setting the "
+"exported variable's value."
 msgstr ""

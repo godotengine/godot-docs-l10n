@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,6 @@ msgstr ""
 "备上显示完全处理的立体输出。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:39
-#, fuzzy
 msgid ""
 "Finally, you should only initialize an interface once; switching scenes and "
 "reinitializing interfaces will just introduce a lot of overhead. If you want "
@@ -121,9 +120,10 @@ msgid ""
 "scenarios though, you wouldn't disable the headset once you're in VR, this "
 "can be disconcerting to the gamer."
 msgstr ""
-"最后您应该只初始化一次界面，切换场景和重新初始化界面只会引入很多开销。 如果要"
-"暂时关闭耳机，只需禁用视区或在视区上将arvr设置为false。 在大多数情况下，虽然"
-"您在VR中不会禁用耳机，但这可能会让游戏游戏角色感到不安。"
+"最后，您应该只初始化一次界面； 切换场景和重新初始化界面都会带来很多性能消"
+"耗。 如果您想暂时关闭耳机，只需禁用视口或在视口上将 :ref:"
+"`arvr<class_Viewport_property_arvr>` 设置为 ``false``。 不过，在大多数情况"
+"下，一旦玩家进入VR，您最好不要禁用耳机，因为这会让玩家感到很不舒服。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:42
 msgid "New AR/VR nodes"
@@ -149,12 +149,12 @@ msgid ""
 msgstr ":ref:`ARVRCamera <class_ARVRCamera>` - 位置跟踪的摄像机的特殊子类"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:48
-#, fuzzy
 msgid ""
 ":ref:`ARVRController <class_ARVRController>` - a new spatial class, which "
 "tracks the location of a controller"
 msgstr ""
-":ref:`ARVRController <class_ARVRController>` - 一个轨道控制器位置的新空间类"
+":ref:`ARVRController <class_ARVRController>` - 一个新的空间类，它跟踪控制器的"
+"位置"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:49
 msgid ""
@@ -295,7 +295,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Performance is another thing that needs to be carefully considered. "
-"Especially VR taxes your game a lot more than most people realise. For "
+"Especially VR taxes your game a lot more than most people realize. For "
 "mobile VR, you have to be extra careful here, but even for desktop games, "
 "there are three factors that make life extra difficult:"
 msgstr ""

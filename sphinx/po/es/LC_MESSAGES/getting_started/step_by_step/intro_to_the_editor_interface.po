@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
-msgid "Introduction to Godot’s editor"
+#, fuzzy
+msgid "Introduction to Godot's editor"
 msgstr "Introducción al editor de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
+#, fuzzy
 msgid ""
-"This tutorial will run you through Godot’s interface. We’re going to look at "
+"This tutorial will run you through Godot's interface. We're going to look at "
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
@@ -36,8 +38,9 @@ msgid "Project manager"
 msgstr "Administrador de proyectos"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
+#, fuzzy
 msgid ""
-"When you launch Godot, the first window you’ll see is the Project Manager. "
+"When you launch Godot, the first window you'll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
@@ -55,8 +58,9 @@ msgstr ""
 "eliminar, importar o jugar proyectos de juegos."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
+#, fuzzy
 msgid ""
-"In the top-right corner you’ll find a drop-down menu to change the editor’s "
+"In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
 msgstr ""
 "En la esquina superior derecha encontrarás un menú desplegable que permite "
@@ -92,9 +96,10 @@ msgstr ""
 "para guardarlo y elegirás un renderizador."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
+#, fuzzy
 msgid ""
-"Click the Browse button to open Godot’s file browser and pick a location or "
-"type the folder’s path in the Project Path field."
+"Click the Browse button to open Godot's file browser and pick a location or "
+"type the folder's path in the Project Path field."
 msgstr ""
 "Haz clic en el botón Examinar para abrir el explorador de archivos de Godot "
 "y selecciona una ubicación o escribe la ruta de la carpeta en el campo Ruta "
@@ -136,8 +141,9 @@ msgstr ""
 "proyecto y lo abrirá en el editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
+#, fuzzy
 msgid ""
-"The next time you open the project manager, you’ll see your new project in "
+"The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
 "La próxima vez que abras el administrador de proyectos, verás tu nuevo "
@@ -158,20 +164,21 @@ msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr "Cuando la ruta a la carpeta es correcta, se verá la marca verde."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
-msgid "Your first look at Godot’s editor"
+#, fuzzy
+msgid "Your first look at Godot's editor"
 msgstr "Una primera mirada al editor de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 #, fuzzy
 msgid ""
-"Welcome to Godot! With your project open, you should see the editor’s "
+"Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
 "¡Bienvenido a Godot! Con un proyecto abierto, deberías ver la interfaz del "
-"editor con la vista 3D activa. Puedes cambiar el espacio de trabajo actual "
-"en la parte superior de la interfaz. Haz clic en 2D para cambiar al espacio "
-"de trabajo 2D."
+"editor con menús a lo largo de la parte superior de la interfaz y los "
+"paneles a lo largo de los extremos más lejanos de la interfaz a ambos lados "
+"de la ventana gráfica."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
@@ -185,25 +192,26 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 #, fuzzy
 msgid ""
-"The **FileSystem dock** is where you’ll manage your project files and assets."
+"The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
-"Abajo a la izquierda está el panel **Sistema de archivos**, donde se "
-"administrarán los archivos y assets del proyecto."
+"El ** Panel de sistema de archivos** es donde gestionas los archivos y los "
+"activos del proyecto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 #, fuzzy
 msgid ""
-"The **Scene dock** lists the active scene’s content and the **Inspector** "
+"The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"En el lado derecho se encuentra el **Panel de escena** que lista el "
-"contenido de la escena activa y el **Inspector** está situado en la parte "
-"inferior derecha."
+"El **Panel de escena** lista el contenido de la escena activa y el "
+"**Inspector** permite la gestión de las propiedades del contenido de la "
+"escena."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
+#, fuzzy
 msgid ""
-"In the center, you have the **Toolbar** at the top, where you’ll find tools "
-"to move, scale or lock your scene’s objects. It changes as you jump to "
+"In the center, you have the **Toolbar** at the top, where you'll find tools "
+"to move, scale or lock your scene's objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
 "En el centro, arriba, está la **Barra de herramientas**, donde se encuentran "
@@ -211,10 +219,11 @@ msgstr ""
 "barra cambia en función de los distintos espacios de trabajo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
+#, fuzzy
 msgid ""
 "The **Bottom Panel** is the host for the debug console, the animation "
-"editor, the audio mixer… They are wide and can take precious space. That’s "
-"why they’re folded by default."
+"editor, the audio mixer… They are wide and can take precious space. That's "
+"why they're folded by default."
 msgstr ""
 "El **Panel inferior** es el contenedor de la consola de depuración, el "
 "editor de animaciones, el mezclador de audio... Estos elementos son anchos y "
@@ -235,22 +244,22 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
 #, fuzzy
 msgid ""
-"You’ll use the **2D workspace** for all types of games. In addition to 2D "
+"You'll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
 "Utilizarás el **espacio de trabajo 2D** para todo tipo de juegos. Además de "
-"los juegos en 2D, es allí donde construirás tus interfaces. Presiona F1 para "
-"acceder a este espacio."
+"los juegos en 2D, es allí donde construirás tus interfaces. Presiona F1 (ó "
+"Alt +1 en macOS) para acceder a este espacio."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
 "En el **Espacio de trabajo 3D**, se puede trabajar con mallas, luces y "
-"diseñar niveles para juegos 3D. Presione F2 para acceder a este modo."
+"diseñar niveles para juegos 3D. Presione F2 (ó Alt + 2 en macOS) para "
+"acceder a este modo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
@@ -267,31 +276,51 @@ msgstr ""
 "Lee :ref: `doc_introduction_to_3d` para mas detalles de **3D workspace**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
-#, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
 "+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
 msgstr ""
 "El área de trabajo **Script** es un completo editor de código con depurador, "
-"autocompletado y referencias de código incorporadas. Pulsa F3 para acceder y "
-"F4 para buscar la referencia."
+"autocompletado y referencias de código incorporadas. Pulsa F3 (ó Alt + 3 en "
+"macOS) para acceder y F4 para buscar la referencia."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
-"Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
-"use in your projects."
+"To search for information about a class, method, property, constant, or "
+"signal in the engine while you are writing a script, press the \"Search Help"
+"\" button at the top right of the Script workspace."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
+msgid ""
+"A new window will pop up. Search for the item that you want to find "
+"information about."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
+msgid ""
+"Click on the item you are looking for and press open. The documentation for "
+"the item will be displayed in the script workspace."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
+#, fuzzy
+msgid ""
+"Finally, the **AssetLib** is a library of free and open source add-ons, "
+"scripts and assets to use in your projects."
 msgstr ""
 "Finalmente, **AssetLib** es la librería de add-ons, scripts y recursos "
 "gratuitos para utilizar en los proyectos."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:146
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:162
 msgid "Modify the interface"
 msgstr "Modificando la interfaz"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
+#, fuzzy
 msgid ""
-"Godot’s interface lives in a single window. You cannot split it across "
+"Godot's interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio Code for instance."
 msgstr ""
@@ -299,11 +328,11 @@ msgstr ""
 "en múltiples pantallas pero se puede trabajar con editor de código externo "
 "como por ejemplo Atom o Visual Studio."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:169
 msgid "Move and resize docks"
 msgstr "Mover y cambiar el tamaño de los paneles"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:155
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:171
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
@@ -311,14 +340,14 @@ msgstr ""
 "Haz clic y arrastra el borde de cualquier panel para cambiar su tamaño "
 "horizontal o verticalmente."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:160
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:176
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
 "Haz clic en el icono con tres puntos situado en la parte superior de "
 "cualquier panel para cambiar su ubicación."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:165
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:181
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Вступ"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
-#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
@@ -100,7 +99,6 @@ msgstr ""
 "робить його ефективним для використання лінійної алгебри."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
-#, fuzzy
 msgid ""
 "Supports multiple threads as efficiently as statically typed languages - one "
 "of the limitations that made us avoid VMs such as Lua, Squirrel, etc."
@@ -109,17 +107,15 @@ msgstr ""
 "обмежень, яке змусило нас уникати таких машин, як Lua, Squirrel тощо."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:33
-#, fuzzy
 msgid ""
 "Uses no garbage collector, so it trades a small bit of automation (most "
 "objects are reference counted anyway), by determinism."
 msgstr ""
-"Не використовує прибиральник сміття, тому він торгує невеликим шматочком "
-"автоматизації (більшість об'єктів все одно рахуються по посиланнях), "
-"детермінізмом."
+"Не використовує прибиральник сміття, тому він торгує (trades) невеликим "
+"шматочком автоматизації (більшість об'єктів все одно рахуються по "
+"посиланнях), детермінізмом."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:34
-#, fuzzy
 msgid ""
 "Its dynamic nature makes it easy to optimize sections of code in C++ (via "
 "GDNative) if more performance is required, all without recompiling the "
@@ -130,7 +126,6 @@ msgstr ""
 "перекомпіляції двигуна."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:36
-#, fuzzy
 msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
@@ -143,7 +138,6 @@ msgid "VisualScript"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:42
-#, fuzzy
 msgid ""
 "Beginning with 3.0, Godot offers :ref:`Visual "
 "Scripting<doc_what_is_visual_script>`. This is a typical implementation of a "
@@ -154,18 +148,16 @@ msgstr ""
 "з'єднань\", але адаптована до роботи Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:46
-#, fuzzy
 msgid ""
 "Visual scripting is a great tool for non-programmers, or even for "
 "experienced developers who want to make parts of the code more accessible to "
 "others, like game designers or artists."
 msgstr ""
-"Візуальний скриптинг - це чудовий інструмент для непрограмістів, або навіть "
-"для досвідчених розробників, які хочуть зробити частини коду більш "
-"доступними для інших, наприклад, дизайнерів ігор, або художників."
+"Visual scripting - це чудовий інструмент для не програмістів, та і для "
+"досвідчених розробників, які хочуть зробити частини коду більш доступними "
+"для інших, наприклад, дизайнерів ігор, або художників."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:50
-#, fuzzy
 msgid ""
 "It can also be used by programmers to build state machines or custom visual "
 "node workflows - for example, a dialogue system."
@@ -189,7 +181,6 @@ msgstr ""
 "підтримка була додана завдяки щедрій пожертві Microsoft."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:62
-#, fuzzy
 msgid ""
 "It has an excellent tradeoff between performance and ease of use, although "
 "one must be aware of its garbage collector."
@@ -198,7 +189,6 @@ msgstr ""
 "хоча треба знати про його прибиральник сміття."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:65
-#, fuzzy
 msgid ""
 "Since Godot uses the `Mono <https://mono-project.com>`_ .NET runtime, in "
 "theory any third-party .NET library or framework can be used for scripting "
@@ -207,10 +197,10 @@ msgid ""
 "is the only officially supported .NET option."
 msgstr ""
 "Оскільки Godot використовує середовище `Mono <https://mono-project.com>`_ ."
-"NET, теоретично будь-яка стороння бібліотека .NET або фреймворк може "
+"NET, теоретично будь-яка стороння бібліотека .NET, або фреймворк, може "
 "використовуватися для написання скриптів у Godot, а також будь-яка мова "
-"програмування, сумісна з загальною мовною інфраструктурою, наприклад F #, "
-"Boo або ClojureCLR. На практиці, однак, C # - єдиний офіційно підтримуваний "
+"програмування, сумісна з загальною мовною інфраструктурою, наприклад F#, "
+"Boo, або ClojureCLR. На практиці, однак, C# - єдиний офіційно підтримуваний "
 "варіант .NET."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:71
@@ -227,28 +217,27 @@ msgstr ""
 "навіть перезавантаження) Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
-#, fuzzy
 msgid ""
 "Any C++ version can be used, and mixing compiler brands and versions for the "
 "generated shared libraries works perfectly, thanks to our use of an internal "
 "C API Bridge."
 msgstr ""
-"Будь-яка версія C ++ може бути використана, а змішування марок компілятора "
-"та версій для створених спільних бібліотек працює прекрасно, завдяки нашому "
-"використанню внутрішнього моста C API."
+"Може бути використана будь-яка версія C++, прекрасно працює змішування "
+"брендів та версій компілятора для створення спільних бібліотек, завдяки "
+"нашому використанню внутрішнього моста C API."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
 #, fuzzy
 msgid ""
 "This language is the best choice for performance and does not need to be "
 "used throughout an entire game, as other parts can be written in GDScript or "
-"Visual Script. However the API is clear and easy to use as it resembles, "
+"Visual Script. However, the API is clear and easy to use as it resembles, "
 "mostly, Godot's actual C++ API."
 msgstr ""
 "Ця мова є найкращим вибором для продуктивності, і її не потрібно "
 "використовувати у всій грі, оскільки інші частини можуть бути написані в "
 "GDScript, або Visual Script. Однак API зрозумілий і простий у використанні, "
-"оскільки він нагадує, в основному, фактичний API C ++ Godot."
+"оскільки він нагадує, в основному, фактичний API C++ Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
 msgid ""
@@ -259,9 +248,8 @@ msgstr ""
 "нас немає офіційної підтримки для них."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
-#, fuzzy
 msgid "Scripting a scene"
-msgstr "Написання скриптів"
+msgstr "Написання скриптів сцени"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:92
 msgid ""
@@ -285,7 +273,6 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "Написання скрипту, який може отримати доступ до інших вузлів сцени."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, please make sure to read the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
@@ -293,21 +280,20 @@ msgid ""
 "get an overview of the concepts."
 msgstr ""
 "Перш ніж продовжувати, переконайтеся, що прочитали посилання :ref:"
-"`GDScript<doc_gdscript>`. Це мова, покликана бути простою, а посилання "
-"короткими, тому для огляду понять не знадобиться більше декількох хвилин."
+"`GDScript<doc_gdscript>`. Це мова, покликана бути простою, а довідки "
+"короткими, тому для огляду термінів не знадобиться більше декількох хвилин."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"
 msgstr "Налаштування сцени"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
-#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
 "Використовуйте діалогове вікно \"Додати дочірній вузол\", доступ до якого "
-"здійснюється на панелі Сцена (або натисканням ``Ctrl+A``), щоб створити "
+"здійснюється на панелі Сцена (або натисканням :kbd:`Ctrl+A`), щоб створити "
 "ієрархію з такими вузлами:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
@@ -492,7 +478,6 @@ msgstr ""
 "\"Panel\"."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
-#, fuzzy
 msgid ""
 "The bottom of the dialogue shows the name of the method that will be "
 "created. By default, the method name will contain the emitting node's name "
@@ -501,7 +486,7 @@ msgstr ""
 "У нижній частині діалогового вікна вказана назва методу, який буде створено. "
 "За замовчуванням ім'я методу буде містити ім'я вузла, що випромінює сигнал "
 "(у цьому випадку \"Button\" (\"Кнопка\")), в результаті виходить "
-"``_on_[EmitterNode]_[signal_name]``."
+"``_on_[ВипромінюючийВузол]_[назва_сигналу]``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
@@ -525,7 +510,6 @@ msgstr ""
 "відносно вузла, якому належить скрипт."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:220
-#, fuzzy
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
@@ -584,7 +568,6 @@ msgstr ""
 "отримання було б:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:330
-#, fuzzy
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "Також пам'ятайте, що вузли посилаються на назву, а не тип."
 
@@ -599,7 +582,6 @@ msgstr ""
 "різних типів."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:338
-#, fuzzy
 msgid ""
 "The code approach also enables this with a 4th ``Array`` parameter that is "
 "empty by default. Feel free to read up on the ``Object.connect`` method for "

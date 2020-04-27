@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,23 +26,24 @@ msgid "Requirements"
 msgstr "需求"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:11
-msgid "SCons (see :ref:`doc_compiling_for_windows` for more details)."
+#, fuzzy
+msgid "SCons 3.0+ (see :ref:`doc_compiling_for_windows` for more details)."
 msgstr "SCons（有关详细信息，请参阅 :ref:`doc_compiling_for_windows`）。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:12
+#, fuzzy
 msgid ""
-"Visual Studio 2015 Update 2. It may work with earlier versions. See :ref:"
-"`doc_compiling_for_windows` about the caveats of installing it and the "
-"various prompts."
+"Visual Studio 2017 or later. See :ref:`doc_compiling_for_windows` about the "
+"caveats of installing it and the various prompts."
 msgstr ""
 "Visual Studio 2015 Update 2。它可能适用于早期版本。请参阅 :ref:"
 "`doc_compiling_for_windows`，了解安装它的注意事项和各种提示。"
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:15
+#: ../../docs/development/compiling/compiling_for_uwp.rst:14
 msgid "Windows 10 SDK (can be selected in Visual Studio installation)."
 msgstr "Windows 10 SDK（可在Visual Studio安装中选择）。"
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:16
+#: ../../docs/development/compiling/compiling_for_uwp.rst:15
 msgid ""
 "`ANGLE source <https://github.com/Microsoft/angle>`__. Use the ``ms_master`` "
 "(default) branch. Keep it in a path without spaces to avoid problems."
@@ -50,13 +51,13 @@ msgstr ""
 "`ANGLE source <https://github.com/Microsoft/angle>`__。使用 ``ms_master`` "
 "（默认）分支。将其保存在没有空格的路径中以避免出现问题。"
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:20
+#: ../../docs/development/compiling/compiling_for_uwp.rst:19
 msgid ""
 "The ANGLE repo by Microsoft has been discontinued and the ``ms_master`` "
 "branch has been cleared out."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:23
+#: ../../docs/development/compiling/compiling_for_uwp.rst:22
 msgid ""
 "As a temporary workaround however, it is still possible to download an older "
 "state of the source code via commit `c61d048 <https://github.com/microsoft/"

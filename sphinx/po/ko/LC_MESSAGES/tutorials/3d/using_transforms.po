@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -412,28 +412,28 @@ msgid ""
 "The :ref:`class_Quat` type reference has more information on the datatype "
 "(it can also do transform accumulation, transform points, etc., though this "
 "is used less often). If you interpolate or apply operations to quaternions "
-"many times, keep in mind they need to be eventually normalized or they also "
-"may suffer from numerical precision errors."
+"many times, keep in mind they need to be eventually normalized. Otherwise, "
+"they will also suffer from numerical precision errors."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:385
+#: ../../docs/tutorials/3d/using_transforms.rst:389
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:388
+#: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid "Transforms are your friend"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:390
+#: ../../docs/tutorials/3d/using_transforms.rst:394
 msgid ""
 "For most beginners, getting used to working with transforms can take some "
 "time. However, once you get used to them, you will appreciate their "
 "simplicity and power."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:392
+#: ../../docs/tutorials/3d/using_transforms.rst:396
 msgid ""
 "Don't hesitate to ask for help on this topic in any of Godot's `online "
 "communities <https://godotengine.org/community>`_ and, once you become "

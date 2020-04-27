@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
-msgid "Introduction to Godot’s editor"
+#, fuzzy
+msgid "Introduction to Godot's editor"
 msgstr "Godotエディタ・イントロダクション"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
+#, fuzzy
 msgid ""
-"This tutorial will run you through Godot’s interface. We’re going to look at "
+"This tutorial will run you through Godot's interface. We're going to look at "
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
@@ -36,8 +38,9 @@ msgid "Project manager"
 msgstr "プロジェクトマネージャー"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
+#, fuzzy
 msgid ""
-"When you launch Godot, the first window you’ll see is the Project Manager. "
+"When you launch Godot, the first window you'll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
@@ -54,8 +57,9 @@ msgstr ""
 "除、インポート、またはプレイできます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
+#, fuzzy
 msgid ""
-"In the top-right corner you’ll find a drop-down menu to change the editor’s "
+"In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
 msgstr ""
 "ウィンドウ右上の角にエディタの言語を変更するドロップダウンメニューが見えるで"
@@ -91,9 +95,10 @@ msgstr ""
 "ンダラーを選択します。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
+#, fuzzy
 msgid ""
-"Click the Browse button to open Godot’s file browser and pick a location or "
-"type the folder’s path in the Project Path field."
+"Click the Browse button to open Godot's file browser and pick a location or "
+"type the folder's path in the Project Path field."
 msgstr ""
 "BrowseボタンをクリックするとGodotのファイルブラウザが開かれ、場所を選択するか"
 "フォルダパスをプロジェクトパスに入力します。"
@@ -132,8 +137,9 @@ msgstr ""
 "が作成され、エディタで開きます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
+#, fuzzy
 msgid ""
-"The next time you open the project manager, you’ll see your new project in "
+"The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
 "次回にプロジェクトマネージャーを開くと、リストに新しいプロジェクトが表示され"
@@ -154,20 +160,19 @@ msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr "フォルダパスが正しいときには、緑色のチェックマークが表示されます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
-msgid "Your first look at Godot’s editor"
+#, fuzzy
+msgid "Your first look at Godot's editor"
 msgstr "はじめてのGodotエディタ"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 #, fuzzy
 msgid ""
-"Welcome to Godot! With your project open, you should see the editor’s "
+"Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"Godotへようこそ！プロジェクトが開かれるとエディタのインターフェイスが3Dビュー"
-"ポートが有効化された状態で表示します。このワークスペースを上方向のインター"
-"フェイスで変更することができます。2Dワークスペースに変更するために、2Dをク"
-"リックします。"
+"Godotへようこそ！　プロジェクトを開くと、エディタのインターフェイスが表示さ"
+"れ、上部にはメニューが、ビューポートを挟んだ両側にはドックがあるはずです。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
@@ -180,24 +185,25 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 #, fuzzy
 msgid ""
-"The **FileSystem dock** is where you’ll manage your project files and assets."
+"The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
-"左下には、プロジェクトファイルとアセットを管理する **ファイルシステムドック"
-"** があります。"
+"**ファイルシステムドック** は、プロジェクトファイルとアセットを管理する場所で"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 #, fuzzy
 msgid ""
-"The **Scene dock** lists the active scene’s content and the **Inspector** "
+"The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"右側にある\\ **シーン・ドック**\\ には開いているシーンの中身がリストされてい"
-"て、右下には\\ **インスペクタ**\\ があります。"
+"**シーン ドック**\\ には開いているシーンの中身がリストされていて、\\ **インス"
+"ペクタ**\\ ではそれらのプロパティを管理できます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
+#, fuzzy
 msgid ""
-"In the center, you have the **Toolbar** at the top, where you’ll find tools "
-"to move, scale or lock your scene’s objects. It changes as you jump to "
+"In the center, you have the **Toolbar** at the top, where you'll find tools "
+"to move, scale or lock your scene's objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
 "中央上部にある\\ **ツールバー**\\ には、シーン内のオブジェクトを動かしたり、"
@@ -205,10 +211,11 @@ msgstr ""
 "のに変わります。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
+#, fuzzy
 msgid ""
 "The **Bottom Panel** is the host for the debug console, the animation "
-"editor, the audio mixer… They are wide and can take precious space. That’s "
-"why they’re folded by default."
+"editor, the audio mixer… They are wide and can take precious space. That's "
+"why they're folded by default."
 msgstr ""
 "**下パネル**\\ はデバッグコンソール、アニメーションエディタ、オーディオミキ"
 "サーなどのためにあります。これらは幅広で貴重なスペースを消費するため、既定で"
@@ -228,22 +235,21 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
 #, fuzzy
 msgid ""
-"You’ll use the **2D workspace** for all types of games. In addition to 2D "
+"You'll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
-"**2Dワークスペース**\\ はすべての種類のゲームで使うことになります。2Dゲームの"
-"みならず、ユーザーインターフェースの作成も2Dワークスペースで行います。F1キー"
-"で開けます。"
+"すべてのタイプのゲームに **2Dワークスペース** を使用します。2Dゲームに加え"
+"て、2Dワークスペースはインターフェイスを構築する場所です。\\:kbd:`F1` (または"
+"macOSでは :kbd:`Alt + 1`) を押してアクセスします。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
 "**3Dワークスペース**\\ では、メッシュや光源への作業や、3Dゲームのレベルデザイ"
-"ンが行えます。F2キーで開けます。"
+"ンが行えます。\\ :kbd:`F2` (macOSでは :kbd:`Alt + 2`) を押すと開けます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
@@ -261,31 +267,52 @@ msgstr ""
 "ご覧ください。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
-#, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
 "+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
 msgstr ""
 "**Script**\\ ワークスペースは、デバッガーや豊富な自動補完、および組み込みの"
-"コードリファレンスを備えた、完全なコードエディタです。F3キーで開くことがで"
-"き、またF4キーでリファレンスを検索できます。"
+"コードリファレンスを備えた、完全なコードエディタです。\\ :kbd:`F3` ( macOSで"
+"は :kbd:`Alt + 3`)で開くことができ、また :kbd:`F4` でリファレンスを検索できま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
-"Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
-"use in your projects."
+"To search for information about a class, method, property, constant, or "
+"signal in the engine while you are writing a script, press the \"Search Help"
+"\" button at the top right of the Script workspace."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
+msgid ""
+"A new window will pop up. Search for the item that you want to find "
+"information about."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
+msgid ""
+"Click on the item you are looking for and press open. The documentation for "
+"the item will be displayed in the script workspace."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
+#, fuzzy
+msgid ""
+"Finally, the **AssetLib** is a library of free and open source add-ons, "
+"scripts and assets to use in your projects."
 msgstr ""
 "最後に\\ **AssetLib**\\ はあなたのプロジェクトで使える、フリーのアドオン、ス"
 "クリプトやアセットをそろえたライブラリです。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:146
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:162
 msgid "Modify the interface"
 msgstr "インターフェースのカスタマイズ"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
+#, fuzzy
 msgid ""
-"Godot’s interface lives in a single window. You cannot split it across "
+"Godot's interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio Code for instance."
 msgstr ""
@@ -293,11 +320,11 @@ msgstr ""
 "Studio Codeなどの外部コードエディタで作業することはできますが、複数の画面に分"
 "割することはできません。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:169
 msgid "Move and resize docks"
 msgstr "ドックの移動とサイズ変更"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:155
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:171
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
@@ -305,13 +332,13 @@ msgstr ""
 "ドックやパネルの縁をクリックしてドラッグすると、水平および垂直方向にサイズ変"
 "更できます。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:160
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:176
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
 "ドックの上部にある３つの点のアイコンをクリックすると、位置を変更できます。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:165
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:181
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,13 +59,12 @@ msgstr "\\ :ref:`ResourceLoader<class_resourceloader>`"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:358
-#, fuzzy
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp>`_"
 msgstr ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
-"master/core/io/resource_loader.cpp#L258>`_"
+"master/core/io/resource_loader.cpp>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:24
 msgid "What for?"
@@ -100,7 +99,6 @@ msgid "ImageFormatLoader should be used to load images."
 msgstr "ImageFormatLoaderを使用してイメージを読み込む必要があります。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:41
-#, fuzzy
 msgid ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`_"
@@ -140,15 +138,16 @@ msgstr ""
 "を読み取り、処理する必要があります。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:109
-#, fuzzy
 msgid "Creating a ResourceFormatSaver"
-msgstr "ResourceFormatLoaderの作成"
+msgstr "ResourceFormatSaverの作成"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:111
 msgid ""
 "If you'd like to be able to edit and save a resource, you can implement a "
 "``ResourceFormatSaver``:"
 msgstr ""
+"リソースを編集して保存できるようにしたい場合は、\\ ``ResourceFormatSaver`` を"
+"実装できます:"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:158
 msgid "Creating custom data types"
@@ -165,9 +164,8 @@ msgstr ""
 "るために、新しい登録データ型が必要です。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:164
-#, fuzzy
 msgid "Here is an example of creating a custom datatype:"
-msgstr "カスタムデータ型を作成する方法の例を次に示します"
+msgstr "カスタムデータ型を作成する例を次に示します:"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:262
 msgid "Considerations"
@@ -190,12 +188,10 @@ msgstr ""
 "を次に示します。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:305
-#, fuzzy
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
 msgstr "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:306
-#, fuzzy
 msgid ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`_"
@@ -204,7 +200,6 @@ msgstr ""
 "kw=streambuf>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:307
-#, fuzzy
 msgid ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
 "os/file_access.h>`_"
@@ -233,8 +228,9 @@ msgid ""
 "Save a file called ``demo.json`` with the following contents and place it in "
 "the project's root folder:"
 msgstr ""
+"``demo.json`` というファイルを次の内容で保存し、プロジェクトのルートフォルダ"
+"に配置します:"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:379
-#, fuzzy
 msgid "Then attach the following script to any node::"
-msgstr "ノードを作成し、次のスクリプトをアタッチします。"
+msgstr "次に、次のスクリプトを任意のノードに添付します:"

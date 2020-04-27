@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,37 +18,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:4
-#, fuzzy
 msgid "Cross-language scripting"
-msgstr "Як створити проект"
+msgstr "Багатомовні скрипти"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:6
+#, fuzzy
 msgid ""
 "Godot allows you to mix and match scripting languages to suit your needs. "
 "This means a single project can define nodes in both C# and GDScript. This "
-"page will go through the possible interactions between two nodes writen in "
+"page will go through the possible interactions between two nodes written in "
 "different languages."
 msgstr ""
+"Godot дозволяє змішувати та поєднувати мови скриптів відповідно до ваших "
+"потреб. Це означає, що один проект може визначати вузли як у C#, так і в "
+"GDScript. Ця сторінка продемонструє можливі взаємодії між двома вузлами, "
+"написаними різними мовами."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:11
 msgid ""
 "The following two scripts will be used as references throughout this page."
-msgstr ""
+msgstr "Наступні два скрипти використовуватимуться як приклад на цій сторінці."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:66
-#, fuzzy
 msgid "Instantiating nodes"
-msgstr "Програмування"
+msgstr "Вставка екземплярів (Instantiating) вузлів"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:68
 msgid ""
 "If you're not using nodes from the scene tree, you'll probably want to "
 "instantiate nodes directly from the code."
 msgstr ""
+"Якщо ви не використовуєте вузли з дерева сцени, ви, ймовірно, захочете "
+"вставляти їх екземляри (instantiate) безпосередньо з коду."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:72
 msgid "Instantiating C# nodes from GDScript"
-msgstr ""
+msgstr "Вставка екземплярів (Instantiating) вузлів C# на GDScript"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:74
 msgid ""
@@ -56,6 +61,9 @@ msgid ""
 "`doc_gdscript_classes_as_resources`) the script can be instantiated with :"
 "ref:`new() <class_CSharpScript_method_new>`."
 msgstr ""
+"Використання C# на GDScript не потребує великих зусиль. Після завантаження "
+"(дивіться :ref:`doc_gdscript_classes_as_resources`) скрипту може бути "
+"вставлений (instantiated) з :ref:`new() <class_CSharpScript_method_new>`."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:86
 msgid ""
@@ -64,47 +72,59 @@ msgid ""
 "not exist in the file, you'll see the following error: ``Invalid call. "
 "Nonexistent function `new` in base``."
 msgstr ""
+"Створюючи .cs-скрипти, ви завжди повинні мати на увазі, що клас, який "
+"використовуватиме Godot, називається так же, як сам файл .cs. Якщо клас не "
+"існує в файлі, ви побачите наступне повідомлення про помилку: ``Invalid "
+"call. Nonexistent function `new` in base``."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:91
 msgid "For example, MyCoolNode.cs should contain a class named MyCoolNode."
-msgstr ""
+msgstr "Наприклад, MyCoolNode.cs повинен містити клас під назвою MyCoolNode."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:93
 msgid ""
 "You also need to check your .cs file is referenced in the project's .csproj "
 "file. Otherwise, the same error will occur."
 msgstr ""
+"Вам також потрібно перевірити, чи ваш файл .cs посилається на файл проекту ."
+"csproj. Інакше відбудеться та сама помилка."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:97
-#, fuzzy
 msgid "Instantiating GDScript nodes from C#"
-msgstr "Інтерполяція"
+msgstr "Вставка екземплярів (Instantiating) вузлів GDScript на C#"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:99
 msgid ""
 "From the C# side, everything work the same way. Once loaded, the GDScript "
 "can be instantiated with :ref:`GDScript.New() <class_GDScript_method_new>`."
 msgstr ""
+"З боку C# все працює так само. Після завантаження, GDScript може бути "
+"вставлений (instantiated) з :ref:`GDScript.New "
+"()<class_GDScript_method_new>`."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:107
+#, fuzzy
 msgid ""
-"Here we are using an :ref:`class_Object` but you can use type convertion "
+"Here we are using an :ref:`class_Object` but you can use type conversion "
 "like explained in :ref:`doc_c_sharp_features_type_conversion_and_casting`."
 msgstr ""
+"Тут ми використовуємо :ref:`class_Object`, але ви можете використовувати "
+"перетворення типів, як пояснено в :ref:"
+"`doc_c_sharp_features_type_conversion_and_casting`."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:111
 msgid "Accessing fields"
-msgstr ""
+msgstr "Доступ до полів"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:114
 msgid "Accessing C# fields from GDScript"
-msgstr ""
+msgstr "Доступ до полів C# з GDScript"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:116
 msgid ""
 "Accessing C# fields from GDScript is straightforward, you shouldn't have "
 "anything to worry about."
-msgstr ""
+msgstr "Доступ до полів C# з GDScript нескладний, вам нема про що хвилюватися."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:128
 msgid ""
@@ -112,10 +132,13 @@ msgid ""
 "attribute, but trying to set a value on a property that does not define a "
 "setter will result in a crash."
 msgstr ""
+"Зауважте, що не має значення, чи визначається поле як властивість, чи "
+"атрибут, але спроба встановити значення для властивості, яку не визначає "
+"сеттер, призведе до збою."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:133
 msgid "Accessing GDScript fields from C#"
-msgstr ""
+msgstr "Доступ до полів GDScript з C#"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:135
 msgid ""
@@ -125,6 +148,10 @@ msgid ""
 "<class_Object_method_set>`. The first argument is the name of the field you "
 "want to access."
 msgstr ""
+"Оскільки C# статично типізований, доступ до GDScript з C# трохи складніший, "
+"вам доведеться використовувати :ref:`Object.Get() <class_Object_method_get>` "
+"та :ref:`Object.Set() <class_Object_method_set>`. Перший аргумент - це ім'я "
+"поля, до якого ви хочете отримати доступ."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:148
 msgid ""
@@ -132,15 +159,18 @@ msgid ""
 "GDScript side knows about. Essentially, you want to work with built-in types "
 "as described in :ref:`doc_gdscript` or classes extending :ref:`class_Object`."
 msgstr ""
+"Майте на увазі, що при встановленні значення поля слід використовувати лише "
+"типи, про які знає сторона GDScript. По суті, ви хочете працювати з "
+"вбудованими типами, як описано :ref:`doc_gdscript`, або класах, що "
+"розширюють :ref:`class_Object`."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:153
-#, fuzzy
 msgid "Calling methods"
-msgstr "'method'"
+msgstr "Методи виклику"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:156
 msgid "Calling C# methods from GDScript"
-msgstr ""
+msgstr "Виклик методів C# з GDScript"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:158
 msgid ""
@@ -152,7 +182,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:174
 msgid "Calling GDScript methods from C#"
-msgstr ""
+msgstr "Виклик методів GDScript з C#"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:176
 msgid ""
@@ -160,6 +190,10 @@ msgid ""
 "<class_Object_method_call>`. The first arguments is the name of the method "
 "you want to call. The following arguments will be passed to said method."
 msgstr ""
+"Для виклику методів GDScript з C# вам потрібно буде використовувати :ref:"
+"`Object.Call() <class_Object_method_call>`. Перший аргумент - це назва "
+"методу, який ви хочете викликати. Наступні аргументи будуть передані "
+"вказаному методу."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:198
 msgid ""
@@ -167,3 +201,6 @@ msgid ""
 "you'll need to cast it as ``object``. Otherwise each element of your array "
 "will be treated as a single argument and the function signature won't match."
 msgstr ""
+"Як бачите, якщо перший аргумент викликаного методу є масивом, вам потрібно "
+"буде надати його як ``object``. Інакше кожен елемент вашого масиву буде "
+"розглядатися як єдиний аргумент, і signature функції не збігатиметься."

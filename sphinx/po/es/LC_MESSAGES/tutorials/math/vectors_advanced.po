@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -249,7 +249,7 @@ msgstr ""
 "primero se debe obtener el vector de dirección, y luego se debe girar 90° a "
 "cada lado:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:201
+#: ../../docs/tutorials/math/vectors_advanced.rst:199
 msgid ""
 "The rest is the same as the previous example, either point_a or point_b will "
 "work since they are in the same plane:"
@@ -257,18 +257,18 @@ msgstr ""
 "El resto es igual que en el ejemplo anterior, ya sea el point_a o el point_b "
 "funcionarán ya que están en el mismo plano:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:219
+#: ../../docs/tutorials/math/vectors_advanced.rst:217
 msgid ""
 "Doing the same in 3D is a little more complex and will be explained further "
 "down."
 msgstr ""
 "Hacer lo mismo en 3D es un poco más complejo y se explicará más adelante."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:223
+#: ../../docs/tutorials/math/vectors_advanced.rst:221
 msgid "Some examples of planes"
 msgstr "Algunos ejemplos de planos"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:225
+#: ../../docs/tutorials/math/vectors_advanced.rst:223
 msgid ""
 "Here is a simple example of what planes are useful for. Imagine you have a "
 "`convex <https://www.mathsisfun.com/definitions/convex.html>`__ polygon. For "
@@ -280,7 +280,7 @@ msgstr ""
 "html>`__. Por ejemplo, un rectángulo, un trapezoide, un triángulo o "
 "cualquier polígono en el que no haya caras que se doblen hacia adentro."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:230
+#: ../../docs/tutorials/math/vectors_advanced.rst:228
 msgid ""
 "For every segment of the polygon, we compute the plane that passes by that "
 "segment. Once we have the list of planes, we can do neat things, for example "
@@ -290,7 +290,7 @@ msgstr ""
 "segmento. Una vez que tenemos la lista de planos, podemos hacer las cosas de "
 "forma ordenada, por ejemplo comprobar si un punto está dentro del polígono."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:234
+#: ../../docs/tutorials/math/vectors_advanced.rst:232
 msgid ""
 "We go through all planes, if we can find a plane where the distance to the "
 "point is positive, then the point is outside the polygon. If we can't, then "
@@ -300,12 +300,12 @@ msgstr ""
 "distancia al punto es positiva, entonces el punto está fuera del polígono. "
 "Si no podemos, entonces el punto está dentro."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:240
-#: ../../docs/tutorials/math/vectors_advanced.rst:279
+#: ../../docs/tutorials/math/vectors_advanced.rst:238
+#: ../../docs/tutorials/math/vectors_advanced.rst:277
 msgid "Code should be something like this:"
 msgstr "El código debería ser algo así:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:265
+#: ../../docs/tutorials/math/vectors_advanced.rst:263
 msgid ""
 "Pretty cool, huh? But this gets much better! With a little more effort, "
 "similar logic will let us know when two convex polygons are overlapping too. "
@@ -317,7 +317,7 @@ msgstr ""
 "superponen también. Esto se llama Teorema del Eje Separador (o SAT) y la "
 "mayoría de los motores de física lo utilizan para detectar colisiones."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:270
+#: ../../docs/tutorials/math/vectors_advanced.rst:268
 msgid ""
 "With a point, just checking if a plane returns a positive distance is enough "
 "to tell if the point is outside. With another polygon, we must find a plane "
@@ -331,7 +331,7 @@ msgstr ""
 "distancia positiva al mismo. Esta comprobación se realiza con los planos de "
 "A contra los puntos de B, y luego con los planos de B contra los puntos de A:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:370
+#: ../../docs/tutorials/math/vectors_advanced.rst:368
 msgid ""
 "As you can see, planes are quite useful, and this is the tip of the iceberg. "
 "You might be wondering what happens with non convex polygons. This is "
@@ -343,11 +343,11 @@ msgstr ""
 "usualmente manejado dividiendo el polígono cóncavo en polígonos convexos más "
 "pequeños, o usando una técnica como BSP (la cual no se usa mucho hoy en día)."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:377
+#: ../../docs/tutorials/math/vectors_advanced.rst:375
 msgid "Collision detection in 3D"
 msgstr "Detección de colisiones en 3D"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:379
+#: ../../docs/tutorials/math/vectors_advanced.rst:377
 msgid ""
 "This is another bonus bit, a reward for being patient and keeping up with "
 "this long tutorial. Here is another piece of wisdom. This might not be "
@@ -361,7 +361,7 @@ msgstr ""
 "de colisiones bastante bien) pero es usado por casi todos los motores de "
 "física y librerías de detección de colisiones :)"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:385
+#: ../../docs/tutorials/math/vectors_advanced.rst:383
 msgid ""
 "Remember that converting a convex shape in 2D to an array of 2D planes was "
 "useful for collision detection? You could detect if a point was inside any "
@@ -372,7 +372,7 @@ msgstr ""
 "estaba dentro de cualquier forma convexa, o si dos formas convexas 2D se "
 "solapaban."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:389
+#: ../../docs/tutorials/math/vectors_advanced.rst:387
 msgid ""
 "Well, this works in 3D too, if two 3D polyhedral shapes are colliding, you "
 "won't be able to find a separating plane. If a separating plane is found, "
@@ -382,7 +382,7 @@ msgstr ""
 "podrás encontrar un plano de separación. Si se encuentra un plano de "
 "separación, entonces las formas definitivamente no están colisionando."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:393
+#: ../../docs/tutorials/math/vectors_advanced.rst:391
 msgid ""
 "To refresh a bit a separating plane means that all vertices of polygon A are "
 "in one side of the plane, and all vertices of polygon B are in the other "
@@ -394,7 +394,7 @@ msgstr ""
 "polígono B están en el otro lado. Este plano es siempre uno de los planos "
 "frontales del polígono A o del polígono B."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:398
+#: ../../docs/tutorials/math/vectors_advanced.rst:396
 msgid ""
 "In 3D though, there is a problem to this approach, because it is possible "
 "that, in some cases a separating plane can't be found. This is an example of "
@@ -404,7 +404,7 @@ msgstr ""
 "en algunos casos, no se pueda encontrar un plano de separación. Este es un "
 "ejemplo de tal situación:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:404
+#: ../../docs/tutorials/math/vectors_advanced.rst:402
 msgid ""
 "To avoid it, some extra planes need to be tested as separators, these planes "
 "are the cross product between the edges of polygon A and the edges of "
@@ -414,6 +414,30 @@ msgstr ""
 "separadores, estos planos son el producto vectorial entre los bordes del "
 "polígono A y los bordes del polígono B"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:410
+#: ../../docs/tutorials/math/vectors_advanced.rst:408
 msgid "So the final algorithm is something like:"
 msgstr "Así que el algoritmo final es algo así como:"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:589
+msgid "More information"
+msgstr "Más información"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:591
+#, fuzzy
+msgid ""
+"For more information on using vector math in Godot, see the following "
+"article:"
+msgstr ""
+"Para más información sobre el uso de la matemática vectorial en Godot, "
+"consulta los siguientes artículos:"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:593
+msgid ":ref:`doc_matrices_and_transforms`"
+msgstr ":ref:`doc_matrices_and_transforms`"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:595
+msgid ""
+"If you would like additional explanation, you should check out 3Blue1Brown's "
+"excellent video series \"Essence of Linear Algebra\": https://www.youtube."
+"com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"
+msgstr ""

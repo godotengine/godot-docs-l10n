@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,110 +28,85 @@ msgid ""
 "from. Yet in most cases it is recommended to create icons for new classes to "
 "improve the user experience."
 msgstr ""
+"Lorsqu'une nouvelle classe est créée et exposée au scripting, l'interface de "
+"l'éditeur l'affiche avec une icône par défaut représentant la classe de base "
+"dont elle hérite. Cependant, dans la plupart des cas, il est recommandé de "
+"créer des icônes pour les nouvelles classes afin d'améliorer l'expérience de "
+"l'utilisateur."
 
 #: ../../docs/development/editor/creating_icons.rst:12
 msgid "Creating icons"
 msgstr "Création d'icônes"
 
 #: ../../docs/development/editor/creating_icons.rst:14
+#, fuzzy
 msgid ""
-"In order to create new icons, you first need a vector graphics editor "
-"installed. For instance, you can use the open-source `Inkscape <https://"
-"inkscape.org/>`_ editor."
+"To create new icons, you first need a vector graphics editor installed. For "
+"instance, you can use the open source `Inkscape <https://inkscape.org/>`_ "
+"editor."
 msgstr ""
+"Pour créer de nouvelles icônes, vous devez d'abord installer un éditeur de "
+"graphiques vectoriels. Par exemple, vous pouvez utiliser l'éditeur open-"
+"source `Inkscape <https://inkscape.org/>`_."
 
 #: ../../docs/development/editor/creating_icons.rst:17
-msgid ""
-"Clone the ``godot-design`` repository containing all the original editor "
-"icons:"
+#, fuzzy
+msgid "Clone the ``godot`` repository containing all the editor icons:"
 msgstr ""
+"Clonez le dépôt ``godot-design`` contenant toutes les icônes originelles de "
+"l'éditeur :"
 
 #: ../../docs/development/editor/creating_icons.rst:23
+#, fuzzy
 msgid ""
-"The icons must be created in a vector graphics editor in ``svg`` format. You "
-"can use ``engine/icons/inkscape_template.svg`` with default icon properties "
-"already set up."
+"The icons must be created in a vector graphics editor in SVG format. There "
+"are two main requirements to follow:"
+msgstr ""
+"Les icônes doivent être créées dans un éditeur de graphiques vectoriels au "
+"format ``svg``. Vous pouvez utiliser ``engine/icons/inkscape_template.svg`` "
+"avec des propriétés d'icônes par défaut déjà configurées."
+
+#: ../../docs/development/editor/creating_icons.rst:26
+msgid ""
+"Icons must be 16×16. In Inkscape, you can configure the document size in "
+"**File > Document Properties**."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:27
+#: ../../docs/development/editor/creating_icons.rst:28
 msgid ""
-"Once you're satisfied with the icon's design, save the icon in ``engine/"
-"icons/svg/`` folder. But in order for the engine to automatically pick up "
-"the icons, each icon's filename:"
+"Lines should be snapped to pixels whenever possible to remain crisp at lower "
+"DPI. You can create a 16×16 grid in Inkscape to make this easier."
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:31
-msgid "Must be prefixed with ``icon_``."
-msgstr ""
-
-#: ../../docs/development/editor/creating_icons.rst:33
 msgid ""
-"``PascalCase`` name should be converted to ``snake_case``, so words are "
-"separated by ``_`` whenever case changes, and uppercase acronyms must also "
-"have all letters, numbers, and special characters separated as distinct "
-"words. Some examples:"
+"Once you're satisfied with the icon's design, save the icon in the cloned "
+"repository's ``editor/icons`` folder. The icon name should match the "
+"intended name in a case-sensitive manner. For example, to create an icon for "
+"CPUParticles2D, name the file ``CPUParticles2D.svg``."
 msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:39
-msgid "Name"
-msgstr "Nom"
-
-#: ../../docs/development/editor/creating_icons.rst:39
-msgid "Filename"
-msgstr "Nom de fichier"
-
-#: ../../docs/development/editor/creating_icons.rst:41
-msgid "``Polygon2D``"
-msgstr "`` Polygon2D``"
-
-#: ../../docs/development/editor/creating_icons.rst:41
-msgid "``icon_polygon_2_d.svg``"
-msgstr ""
-
-#: ../../docs/development/editor/creating_icons.rst:43
-msgid "``CSGPolygon``"
-msgstr "``CSGPolygon``"
-
-#: ../../docs/development/editor/creating_icons.rst:43
-msgid "``icon_c_s_g_polygon.svg``"
-msgstr ""
-
-#: ../../docs/development/editor/creating_icons.rst:45
-msgid "``CPUParticles2D``"
-msgstr "``CPUParticles2D``"
-
-#: ../../docs/development/editor/creating_icons.rst:45
-msgid "``icon_c_p_u_particles_2_d.svg``"
-msgstr ""
-
-#: ../../docs/development/editor/creating_icons.rst:47
-msgid "``C#``"
-msgstr ""
-
-#: ../../docs/development/editor/creating_icons.rst:47
-msgid "``icon_c_#.svg``"
-msgstr ""
-
-#: ../../docs/development/editor/creating_icons.rst:51
+#: ../../docs/development/editor/creating_icons.rst:37
 msgid "Icon optimization"
 msgstr "Optimisation des icônes"
 
-#: ../../docs/development/editor/creating_icons.rst:53
+#: ../../docs/development/editor/creating_icons.rst:39
+#, fuzzy
 msgid ""
-"Because the editor renders the ``svg``'s at runtime, they need to be small "
-"in size, so they can be efficiently parsed. Editor icons must be first "
-"optimized before being added to the engine, to do so:"
+"Because the editor renders SVGs once at load time, they need to be small in "
+"size so they can be efficiently parsed. Editor icons must be first optimized "
+"before being added to the engine, to do so:"
 msgstr ""
 "Comme l'éditeur rend les ``svg`` au moment de l'exécution, ils doivent être "
 "de petite taille pour pouvoir être analysés efficacement. Les icônes de "
 "l'éditeur doivent donc être optimisées avant d'être ajoutées au moteur. Pour "
 "ce faire :"
 
-#: ../../docs/development/editor/creating_icons.rst:57
+#: ../../docs/development/editor/creating_icons.rst:43
 msgid "Add them to the ``engine/icons/svg`` folder."
 msgstr "Ajoutez-les dans le dossier ``engine/icons/svg``."
 
-#: ../../docs/development/editor/creating_icons.rst:59
+#: ../../docs/development/editor/creating_icons.rst:45
 msgid ""
 "Run the ``optimize.py`` script. You must have the ``scour`` package "
 "installed:"
@@ -139,7 +114,7 @@ msgstr ""
 "Exécutez le script ``optimize.py``. Vous devez avoir installé le paquet "
 "``scour`` :"
 
-#: ../../docs/development/editor/creating_icons.rst:66
+#: ../../docs/development/editor/creating_icons.rst:52
 msgid ""
 "The optimized icons will be generated in the ``engine/icons/optimized`` "
 "folder."
@@ -147,18 +122,16 @@ msgstr ""
 "Les icônes optimisées seront générées dans le dossier ``engine/icons/"
 "optimized``."
 
-#: ../../docs/development/editor/creating_icons.rst:69
+#: ../../docs/development/editor/creating_icons.rst:55
 msgid "Integrating and sharing the icons"
 msgstr "Intégration et partage des icônes"
 
-#: ../../docs/development/editor/creating_icons.rst:71
+#: ../../docs/development/editor/creating_icons.rst:57
+#, fuzzy
 msgid ""
 "If you're contributing to the engine itself, you should make a pull request "
-"to add optimized icons to ``godot/editor/icons`` in the main repository. "
-"Recompile the engine to make sure it does pick up new icons for classes. "
-"Once merged, don't forget to add the original version of the icons to the "
-"``godot-design`` repository so that the icon can be improved upon by other "
-"contributors."
+"to add optimized icons to ``editor/icons`` in the main repository. Recompile "
+"the engine to make it pick up new icons for classes."
 msgstr ""
 "Si vous contribuez au moteur lui-même, vous devez faire une pull request "
 "pour ajouter les icônes optimisées au répertoire ``godot/editor/icons`` dans "
@@ -167,7 +140,7 @@ msgstr ""
 "d'ajouter la version originale des icônes au dépôt ``godot-design`` afin que "
 "ceux-ci puissent être améliorés par d'autres contributeurs."
 
-#: ../../docs/development/editor/creating_icons.rst:77
+#: ../../docs/development/editor/creating_icons.rst:61
 msgid ""
 "It's also possible to create custom icons within a module. If you're "
 "creating your own module and don't plan to integrate it with Godot, you "
@@ -180,7 +153,7 @@ msgstr ""
 "que vos icônes soient disponibles dans l'éditeur car elles peuvent être "
 "indépendantes."
 
-#: ../../docs/development/editor/creating_icons.rst:82
+#: ../../docs/development/editor/creating_icons.rst:66
 msgid ""
 "For specific instructions on how to create module icons, refer to :ref:"
 "`Creating custom module icons<doc_custom_module_icons>`."
@@ -189,34 +162,35 @@ msgstr ""
 "module, vous pouvez vous référer à :ref:`Création d'icônes de module "
 "personnalisées<doc_custom_module_icons>`."
 
-#: ../../docs/development/editor/creating_icons.rst:86
+#: ../../docs/development/editor/creating_icons.rst:70
 msgid "Troubleshooting"
 msgstr "Dépannage"
 
-#: ../../docs/development/editor/creating_icons.rst:88
+#: ../../docs/development/editor/creating_icons.rst:72
 msgid "If icons don't appear in the editor make sure that:"
 msgstr "Si les icônes n'apparaissent pas dans l'éditeur, assurez-vous que :"
 
-#: ../../docs/development/editor/creating_icons.rst:90
+#: ../../docs/development/editor/creating_icons.rst:74
 msgid ""
 "Each icon's filename matches the naming requirement as described previously."
 msgstr ""
 "Le nom de fichier de chaque icône correspond aux exigences de nommage telles "
 "que décrites précédemment."
 
-#: ../../docs/development/editor/creating_icons.rst:92
+#: ../../docs/development/editor/creating_icons.rst:76
+#, fuzzy
 msgid ""
-"``modules/svg`` is enabled (should be enabled by default). Without it, icons "
-"won't appear in the editor at all."
+"``modules/svg`` is enabled (it should be enabled by default). Without it, "
+"icons won't appear in the editor at all."
 msgstr ""
 "``modules/svg`` est activé (il devrait être activé par défaut). Sans cela, "
 "les icônes n'apparaîtront pas dans l'éditeur."
 
-#: ../../docs/development/editor/creating_icons.rst:96
-msgid "References:"
-msgstr "Références :"
+#: ../../docs/development/editor/creating_icons.rst:80
+msgid "References"
+msgstr "References"
 
-#: ../../docs/development/editor/creating_icons.rst:98
+#: ../../docs/development/editor/creating_icons.rst:82
 msgid ""
 "`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
 "icons>`__"

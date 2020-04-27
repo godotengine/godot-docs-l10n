@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
-#, fuzzy
 msgid "Instancing"
-msgstr "Instancing (вставка екземпляра)"
+msgstr "Instancing (вставка екземпляра, Інстансування)"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:7
 msgid "Introduction"
@@ -63,8 +62,8 @@ msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
-"Після того, як сцена збережена, її можна встановити в іншу сцену так, ніби "
-"це який-не-будь вузол."
+"Після того, як сцена збережена, її можна встановити (інстансувати) в іншу "
+"сцену так, ніби це який-не-будь вузол."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
@@ -72,12 +71,10 @@ msgstr ""
 "На малюнку вище Сцена B була встановлена в Сцену А в якості вузла-нащадка."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
-#, fuzzy
 msgid "Instancing by example"
-msgstr "Зразок створення екземпляра"
+msgstr "Зразок інстансування"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
-#, fuzzy
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
@@ -148,7 +145,6 @@ msgstr ""
 "Натисніть «Відтворити» і спостерігайте, як м'яч падає в нижню частину екрана:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
-#, fuzzy
 msgid "Multiple instances"
 msgstr "Додавання декількох екземплярів"
 
@@ -156,12 +152,12 @@ msgstr "Додавання декількох екземплярів"
 #, fuzzy
 msgid ""
 "You can add as many instances as you like to a scene, either by using the "
-"\"Instance\" button again, or by clicking on the ball instance and pressing "
-"\"Duplicate\" (:kbd:`Ctrl + D`):"
+"\"Instance\" button again, or by clicking on the ball instance and pressing :"
+"kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to duplicate it:"
 msgstr ""
 "Ви можете додавати будь-яку кількість екземплярів на сцену за допомогою "
-"повторного натискання кнопки \"Екземпляр\" або натисканням екземпляра кульки "
-"із наступним натисканням кнопки \"Дублювати\" (Ctrl-D):"
+"повторного натискання кнопки \"Екземпляр\", або натисканням екземпляра "
+"кульки із наступним натисканням кнопки \"Дублювати\" (:kbd:`Ctrl-D`):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
@@ -172,7 +168,6 @@ msgid "Editing instances"
 msgstr "Редагування екземплярів"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
-#, fuzzy
 msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by opening the "
 "\"Physics Material Override\" dropdown in the Inspector dock and selecting "
@@ -236,7 +231,6 @@ msgid "Conclusion"
 msgstr "Висновки"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:126
-#, fuzzy
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "

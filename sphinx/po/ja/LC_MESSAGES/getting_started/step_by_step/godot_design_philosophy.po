@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
-msgid "Godot’s design philosophy"
+#, fuzzy
+msgid "Godot's design philosophy"
 msgstr "Godotの設計哲学"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:6
@@ -26,10 +27,11 @@ msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
 msgstr "手が濡れたところで、Godotのデザインについて説明しましょう。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
+#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
 "they offer a range of features, but the design of each engine is unique. "
-"This leads to different workflows and different ways to form your games’ "
+"This leads to different workflows and different ways to form your games' "
 "structures. This all stems from their respective design philosophies."
 msgstr ""
 "**すべてのゲームエンジンは、それぞれ別のニーズに合わせて作られています。**\\ "
@@ -56,7 +58,7 @@ msgid ""
 "be/4v3qge-3CqQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
 "エンジンの機能の概要をお探しの場合は、Youtubeにある\\ `Discover Godot 3, the "
-"Free game engine <https://youtu.be/4v3qge-3CqQ>`_\\ をご覧ください。"
+"Free game engine <https://youtu.be/4v3qge-3CqQ>`_\\ (英語)をご覧ください。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:23
 msgid "Object-oriented design and composition"
@@ -80,21 +82,23 @@ msgid ""
 "Change the BlinkingLight's color, save, and all the BrokenLanterns in the "
 "city will update instantly."
 msgstr ""
-"一つには、Godotはあなたがシーンを\\ **構成または集約すること**\\ を可能にしま"
-"す。入れ子になったプレハブのようなものです。BlinkingLightシーンと、"
-"BlinkingLightを使用するBrokenLanternシーンを作成できます。次に、"
-"BrokenLanternsでいっぱいの街を作成します。 BlinkingLightの色を変更して保存す"
-"ると、市内のすべてのBrokenLantersが即座に更新されます。"
+"一例として、Godotはあなたがシーンを\\ **構成または集約すること**\\ を可能にし"
+"ます。これは入れ子になったプレハブのようなものです。BlinkingLight(ちらつく"
+"光) シーンと、そのBlinkingLightを使用するBrokenLantern(壊れたランタン) シーン"
+"を作成できます。その次に、BrokenLanternでいっぱいの街を作成します。それから"
+"BlinkingLightの色を変更して保存すると、街にあるすべてのBrokenLanternが即座に"
+"更新されます。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:36
 msgid "On top of that, you can **inherit** from any scene."
 msgstr "それに加えて、あらゆるシーンから\\ **継承すること**\\ ができます。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
+#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
-"of a level… anything you’d like. It works like a class in pure code, except "
-"you’re free to design it by using the editor, using only the code, or mixing "
+"of a level… anything you'd like. It works like a class in pure code, except "
+"you're free to design it by using the editor, using only the code, or mixing "
 "and matching the two."
 msgstr ""
 "Godotのシーンは、武器になったり、キャラクター、アイテム、ドア、レベル、レベル"
@@ -103,12 +107,13 @@ msgstr ""
 "ることも、あるいは両方組み合わせて作成することもできます。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
+#, fuzzy
 msgid ""
-"It’s different from prefabs you find in several 3D engines, as you can then "
+"It's different from prefabs you find in several 3D engines, as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
 "your Character. Modify the Character in the editor and the Magician will "
 "update as well. It helps you build your projects so that their structure "
-"matches the game’s design."
+"matches the game's design."
 msgstr ""
 "これは、いくつかの3Dエンジンにあるようなプレハブとは異なるものです。シーンは"
 "他のシーンから継承し、派生させることができます。キャラクターから派生させて魔"
@@ -121,11 +126,12 @@ msgid "|image0|"
 msgstr "\\ |image0|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:51
+#, fuzzy
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
 "from their parents up to the Node class. Although the engine does feature "
-"components like collision shapes, they’re the exception, not the norm."
+"components like collision shapes, they're the exception, not the norm."
 msgstr ""
 "また、Godotにはノードと呼ばれるさまざまなタイプのオブジェクトがあり、それぞれ"
 "に特定の目的があります。ノードはツリーの一部であり、常に親からNodeクラスまで"
@@ -157,10 +163,10 @@ msgid ""
 "shader editor, a debugger, a profiler, the ability to hot-reload locally and "
 "on remote devices, etc."
 msgstr ""
-"Godotは最も一般的なニーズに答えるためにそれ自身のツールを提供しようとします。"
-"専用のスクリプトワークスペース、アニメーションエディタ、タイルマップエディ"
-"タ、シェーダエディタ、デバッガ、プロファイラ、ローカルおよびリモートデバイス"
-"上でのホットリロードなどが可能です。"
+"Godotは最も一般的なニーズに答えるために、備えているツールを提供しようとしま"
+"す。専用のスクリプトワークスペース、アニメーションエディタ、タイルマップエ"
+"ディタ、シェーダエディタ、デバッガ、プロファイラ、ローカルおよびリモートデバ"
+"イス上でのホットリロードなどが可能です。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
 msgid "|image2|"
@@ -173,21 +179,23 @@ msgid ""
 "import plugin for it. Or you can create one, like the `Tiled Map Importer "
 "<https://github.com/vnen/godot-tiled-importer>`__."
 msgstr ""
-"目標は、ゲームを作成するための完全なパッケージと継続的なユーザーエクスペリエ"
-"ンスを提供することです。外部プログラム用のインポートプラグインがある場合は、"
-"外部プログラムで作業できます。または、`Tiled Map Importer <https://github."
-"com/vnen/godot-tiled-importer>`_\\ のように作成することもできます。"
+"目標は、ゲームを作成するための完全なパッケージと、途切れないユーザー エクスペ"
+"リエンスを提供することです。外部プログラムからのインポート用プラグインがある"
+"場合は、外部プログラムでの作業もできます。あるいは、\\ `Tiled Map Importer "
+"<https://github.com/vnen/godot-tiled-importer>`_\\ のようなプラグインを作成す"
+"るのもいいでしょう。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:78
+#, fuzzy
 msgid ""
 "That is also partly why Godot offers its own programming languages GDscript "
-"and VisualScript, along with C#. They’re designed for the needs of game "
-"developers and game designers, and they’re tightly integrated in the engine "
+"and VisualScript, along with C#. They're designed for the needs of game "
+"developers and game designers, and they're tightly integrated in the engine "
 "and the editor."
 msgstr ""
-"それが、Godotが独自のプログラミング言語GDscriptとVisualScriptをC＃と一緒に提"
-"供している理由でもあります。これらはゲーム開発者やゲームデザイナーのニーズに"
-"合わせて設計されており、エンジンとエディタに緊密に統合されています。"
+"それが、Godotが独自のプログラミング言語であるGDscriptとVisualScriptを、C#と一"
+"緒に提供している理由でもあります。これらはゲーム開発者やゲームデザイナーの"
+"ニーズに合わせて設計されており、エンジンとエディタに緊密に統合されています。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
 msgid ""
@@ -224,18 +232,19 @@ msgstr ""
 "ロックを作成できます。*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:97
+#, fuzzy
 msgid ""
-"Note that the 3D workspace doesn’t feature as many tools as the 2D "
-"workspace. You’ll need external programs or add-ons to edit terrains, "
+"Note that the 3D workspace doesn't feature as many tools as the 2D "
+"workspace. You'll need external programs or add-ons to edit terrains, "
 "animate complex characters, and so on. Godot provides a complete API to "
-"extend the editor’s functionality using game code. See `The Godot editor is "
+"extend the editor's functionality using game code. See `The Godot editor is "
 "a Godot game`_ below."
 msgstr ""
 "3Dワークスペースには、2Dワークスペースほど多くのツールはありません。地形を編"
 "集したり、複雑なキャラクターをアニメートしたりするには、外部プログラムやアド"
 "オンが必要です。Godotは、ゲームコードを使用してエディタの機能を拡張するための"
-"完全なAPIを提供しています。下の `The Godot editor is a Godot game` を参照して"
-"ください。"
+"完全なAPIを提供しています。下の `The Godot editor is a Godot game`_ を参照し"
+"てください。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
 msgid "|image4|"
@@ -254,10 +263,11 @@ msgid "Open source"
 msgstr "オープンソース"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
+#, fuzzy
 msgid ""
 "Godot offers a fully open source codebase under the **MIT license**. This "
 "means all the technologies that ship with it have to be Free (as in freedom) "
-"as well. For the most part, they’re developed from the ground up by "
+"as well. For the most part, they're developed from the ground up by "
 "contributors."
 msgstr ""
 "Godotのコードベースは\\ **MITライセンス**\\ のもとで完全にオープンソースと"
@@ -266,9 +276,10 @@ msgstr ""
 "よって開発されたものです。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
+#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
-"just won’t ship with the engine. This may include Google AdMob, or FMOD. Any "
+"just won't ship with the engine. This may include Google AdMob, or FMOD. Any "
 "of these can come as third-party plugins instead."
 msgstr ""
 "もしプロジェクトに必要とあれば、プロプライエタリ(非オープン)なプラグインを追"
@@ -277,9 +288,10 @@ msgstr ""
 "ラグインとして追加できます。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
+#, fuzzy
 msgid ""
 "On the other hand, an open codebase means you can **learn from and extend "
-"the engine** to your heart’s content. You can also debug games easily, as "
+"the engine** to your heart's content. You can also debug games easily, as "
 "Godot will print errors with a stack trace, even if they come from the "
 "engine itself."
 msgstr ""
@@ -289,8 +301,9 @@ msgstr ""
 "グがより容易になります。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:126
+#, fuzzy
 msgid ""
-"This **does not affect the work you do with Godot** in any way: there’s no "
+"This **does not affect the work you do with Godot** in any way: there's no "
 "strings attached to the engine or anything you make with it."
 msgstr ""
 "これは\\ **Godotで作られた作品にはなんら影響をおよぼしません。**\\ Godotエン"
@@ -301,9 +314,10 @@ msgid "Community-driven"
 msgstr "コミュニティ主導"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:132
+#, fuzzy
 msgid ""
 "**Godot is made by its community, for the community, and for all game "
-"creators out there.** It’s the needs of the users and open discussions that "
+"creators out there.** It's the needs of the users and open discussions that "
 "drive the core updates. New features from the core developers often focus on "
 "what will benefit the most users first."
 msgstr ""
@@ -313,10 +327,11 @@ msgstr ""
 "最も多くのユーザーにメリットをもたらすものに重点が置かれます。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
+#, fuzzy
 msgid ""
 "That said, although a handful of core developers work on it full-time, the "
 "project has over 600 contributors at the time of writing. Benevolent "
-"programmers work on features they may need themselves, so you’ll see "
+"programmers work on features they may need themselves, so you'll see "
 "improvements in all corners of the engine at the same time in every major "
 "release."
 msgstr ""
@@ -330,8 +345,9 @@ msgid "The Godot editor is a Godot game"
 msgstr "Godotエディタ自身がGodotのゲーム"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:146
+#, fuzzy
 msgid ""
-"The Godot editor runs on the game engine. It uses the engine’s own UI "
+"The Godot editor runs on the game engine. It uses the engine's own UI "
 "system, it can hot-reload code and scenes when you test your projects, or "
 "run game code in the editor. This means you can **use the same code** and "
 "scenes for your games, or **build plugins and extend the editor.**"
@@ -347,7 +363,7 @@ msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
-"エディタ自身も使用するために、信頼性のある柔軟なUIシステムを実現しました。"
+"エディタ自身も使用するために、信頼性のある柔軟なUIシステムを実現しました。\\ "
 "``tool`` キーワードを使えば、あらゆるゲーム用コードをエディタ内で実行できま"
 "す。"
 
@@ -356,8 +372,9 @@ msgid "|image5|"
 msgstr "\\ |image5|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
+#, fuzzy
 msgid ""
-"*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot’s UI "
+"*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot's UI "
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""

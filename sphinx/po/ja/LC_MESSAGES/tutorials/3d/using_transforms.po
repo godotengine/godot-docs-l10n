@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -310,7 +310,7 @@ msgstr ""
 "*basis* と一緒に、transformには *origin* もあります。これは、このtransformが"
 "実際の原点 ``(0, 0, 0)`` からどれだけ離れているかを指定する *Vector3* で"
 "す。\\ *basis* と *origin* を組み合わせることで、*transform* は空間内での一意"
-"の変換、回転、スケールを効率的に表します。"
+"の平行移動、回転、スケールを効率的に表します。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:132
 msgid ""
@@ -524,19 +524,20 @@ msgid "Converting a rotation to quaternion is straightforward."
 msgstr "回転をクォータニオンに変換するのは簡単です。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:383
+#, fuzzy
 msgid ""
 "The :ref:`class_Quat` type reference has more information on the datatype "
 "(it can also do transform accumulation, transform points, etc., though this "
 "is used less often). If you interpolate or apply operations to quaternions "
-"many times, keep in mind they need to be eventually normalized or they also "
-"may suffer from numerical precision errors."
+"many times, keep in mind they need to be eventually normalized. Otherwise, "
+"they will also suffer from numerical precision errors."
 msgstr ""
 ":ref:`class_Quat` 型のリファレンスには、データ型に関する詳細な情報があります"
 "(transform積算、transformポイントなども可能ですが、使用頻度は低くなります)。"
 "クォータニオンに何度も補間または演算を適用する場合は、最終的に正規化する必要"
 "があることに注意してください。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:385
+#: ../../docs/tutorials/3d/using_transforms.rst:389
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
@@ -544,11 +545,11 @@ msgstr ""
 "クォータニオンは、カメラ/パス/などを行うときに役立ちます。結果は常に正確かつ"
 "スムーズになります。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:388
+#: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid "Transforms are your friend"
 msgstr "Transform(変換)はあなたの友人です"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:390
+#: ../../docs/tutorials/3d/using_transforms.rst:394
 msgid ""
 "For most beginners, getting used to working with transforms can take some "
 "time. However, once you get used to them, you will appreciate their "
@@ -557,7 +558,7 @@ msgstr ""
 "ほとんどの初心者にとって、トランスフォームの操作に慣れるには時間がかかる場合"
 "があります。ただし、それらに慣れると、そのシンプルさとパワーに感謝します。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:392
+#: ../../docs/tutorials/3d/using_transforms.rst:396
 msgid ""
 "Don't hesitate to ask for help on this topic in any of Godot's `online "
 "communities <https://godotengine.org/community>`_ and, once you become "

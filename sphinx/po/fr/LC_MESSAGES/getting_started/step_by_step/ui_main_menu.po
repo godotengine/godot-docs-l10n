@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,8 +70,9 @@ msgstr ""
 "``start/assets/main_menu``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
+#, fuzzy
 msgid ""
-"Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
+"Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot's "
 "UI system works."
 msgstr ""
 "Lisez d'abord :doc:`ui_introduction_to_the_ui_system` pour apprendre comment "
@@ -169,9 +170,10 @@ msgstr ""
 "composants spécifiques qui héritent de vos scènes de base."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
+#, fuzzy
 msgid ""
 "We will use the first approach, because the first version of your UI may not "
-"work as well as you’d like. You’re likely to throw parts away and redesign "
+"work as well as you'd like. You're likely to throw parts away and redesign "
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
@@ -288,7 +290,6 @@ msgstr ""
 "créer une scène vide, cliquez sur le menu **Scène -> Nouvelle scène**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
-#, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
@@ -301,8 +302,8 @@ msgstr ""
 "plus à l'extérieur. Dans ce cas, il s'agit d'un ``MarginContainer``. Le "
 "``MarginContainer`` est un bon point de départ pour la plupart des "
 "interfaces, car vous avez souvent besoin d'espace autour de l'interface "
-"utilisateur. Appuyez sur ``Meta+S`` pour enregistrer la scène sur le disque. "
-"Nommez-la *MainMenu*."
+"utilisateur. Appuyez sur :kbd:`Meta + S` pour enregistrer la scène sur le "
+"disque. Nommez-la *MainMenu*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
 msgid ""
@@ -365,21 +366,21 @@ msgid "the version note,"
 msgstr "d'une note de version,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-msgid "and the main menu’s illustration."
+#, fuzzy
+msgid "and the main menu's illustration."
 msgstr "et d'une illustration pour le menu principal."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press :kbd:`Meta + A` on your keyboard. "
 "Start to type ``TextureRect`` to find the corresponding node and press "
 "enter. With the new node selected, press :kbd:`Meta + D` five times to "
 "create five extra ``TextureRect`` instances."
 msgstr ""
-"Cliquez sur le bouton **Add Node** ou appuyez sur les touches ``Meta+A`` de "
-"votre clavier. Commencez par taper ``TextureRect`` pour trouver le nœud "
-"correspondant et appuyer sur entrer. Avec le nouveau nœud sélectionné, "
-"appuyez cinq fois sur les touches ``Meta+D`` pour créer cinq autres "
+"Cliquez sur le bouton **Add Node** ou appuyez sur les touches :kbd:`Meta + "
+"A` de votre clavier. Commencez par taper ``TextureRect`` pour trouver le "
+"nœud correspondant et appuyer sur entrer. Avec le nouveau nœud sélectionné, "
+"appuyez cinq fois sur les touches :kbd:`Meta + D` pour créer cinq autres "
 "instances de ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
@@ -431,6 +432,7 @@ msgstr ""
 "l'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
+#, fuzzy
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -440,7 +442,7 @@ msgid ""
 "allow the user to resize the left and right areas using an interactive bar. "
 "On the other hand, ``HBoxContainer`` just splits itself into as many columns "
 "as it has children. Although you can deactivate the split container's resize "
-"behaviour, I recommend to favour box containers."
+"behavior, I recommend to favor box containers."
 msgstr ""
 "Notre menu principal a une certaine marge autour des bords de l'écran. Il "
 "est divisé en deux parties : A gauche, vous avez le logo et les options de "
@@ -531,7 +533,6 @@ msgstr ""
 "placez à l'intérieur du CenterContainer."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
@@ -542,7 +543,7 @@ msgid ""
 msgstr ""
 "Pour espacer les options du menu et le logo à gauche, nous utiliserons un "
 "conteneur final et ses Size Flags. Sélectionnez le ``VBoxContainer`` et "
-"appuyez sur ``Meta+A`` pour ajouter un nouveau nœud dedans. Ajoutez un "
+"appuyez sur :kbd:`Meta + A` pour ajouter un nouveau nœud dedans. Ajoutez un "
 "second ``VBoxContainer`` et nommez-le *MenuOptions*. Sélectionnez les trois "
 "options de menu, ``Continue``, ``NewGame`` et ``Options``, et faites-les "
 "glisser puis déposez les à l'intérieur du nouveau ``VBoxContainer``. La "
@@ -640,7 +641,6 @@ msgstr ""
 "éléments constituants notre interface."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:289
-#, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press :kbd:`Q` to activate "
@@ -649,7 +649,7 @@ msgid ""
 msgstr ""
 "L'ordre dans lequel vous imbriquez les éléments est important. Pour vérifier "
 "que votre interface s'adapte correctement à différents ratios, sélectionner "
-"le nœud racine et appuyez sur Q pour activer le mode de sélection. "
+"le nœud racine et appuyez sur :kbd:`Q` pour activer le mode de sélection. "
 "Sélectionnez le conteneur et maintenez le clic gauche de la souris sur l'un "
 "des coins du conteneur pour le redimensionner. Les éléments devraient se "
 "déplacer correctement à l'intérieur."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:4
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:1
+#, fuzzy
+msgid "Signal"
+msgstr "Signale"
+
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:7
 msgid "Instancing with signals"
 msgstr "Szenen in­s­tan­ti­ie­ren"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:6
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:9
 msgid ""
 "Signals provide a way to decouple game objects, allowing you to avoid "
 "forcing a fixed arrangement of nodes. One sign that a signal might be called "
@@ -32,15 +37,15 @@ msgid ""
 "location in the running scene tree."
 msgstr ""
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:13
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:16
 msgid "Below we'll consider an example of such a situation: firing bullets."
 msgstr ""
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:16
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:19
 msgid "Shooting example"
 msgstr "Beispiel für Geschosse"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:18
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:21
 msgid ""
 "Consider a player character that can rotate and shoot towards the mouse. "
 "Every time the mouse button is clicked, we create an instance of the bullet "
@@ -52,13 +57,13 @@ msgstr ""
 "Geschosses an der Position des Spielers. Siehe :ref:`doc_instancing` für "
 "Details."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:22
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:25
 msgid ""
 "We'll use an ``Area2D`` for the bullet, which moves in a straight line at a "
 "given velocity:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:47
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:50
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
@@ -66,7 +71,7 @@ msgstr ""
 "Wenn die Geschosse jedoch als Unterelement des Spielers hinzugefügt werden, "
 "bleiben sie an dem Spieler \"gebunden\", während er sich dreht:"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:52
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:55
 msgid ""
 "Instead, we need the bullets to be independent of the player's movement - "
 "once fired, they should continue traveling in a straight line and the player "
@@ -83,11 +88,11 @@ msgstr ""
 "hinzuzufügen, die entweder das übergeordnete Objekt des Spielers oder sogar "
 "weiter oben im Baum sein kann."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:58
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:61
 msgid "You could do this by adding the bullet to the main scene directly:"
 msgstr "Sie können dies tun, indem man das Geschoss direkt hinzufügt:"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:71
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:74
 #, fuzzy
 msgid ""
 "However, this will lead to a different problem. Now if you try to test your "
@@ -105,7 +110,7 @@ msgstr ""
 "übergeordnete Element des Spielers möglicherweise nicht mehr der geeignete "
 "Node, um das Geschoss zu empfangen."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:78
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:81
 msgid ""
 "The solution to this is to use a signal to \"emit\" the bullets from the "
 "player. The player then has no need to \"know\" what happens to the bullets "
@@ -118,13 +123,13 @@ msgstr ""
 "Geschosse \"empfangen\" und entsprechende Aktionen durchführen, um sie zu "
 "erzeugen."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:83
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:86
 msgid "Here is the code for the player using signals to emit the bullet:"
 msgstr ""
 "Source Code für die Spielfigur, die unter Verwendung von Events Geschosse "
 "abfeuert:"
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:128
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:131
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
@@ -132,7 +137,7 @@ msgstr ""
 "In der Main-Szene verbinden wir dann das Spieler-Signal (dieses wird im "
 "\"Node\"-Tab auftauchen)."
 
-#: ../../docs/tutorials/misc/instancing_with_signals.rst:152
+#: ../../docs/tutorials/misc/instancing_with_signals.rst:155
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"

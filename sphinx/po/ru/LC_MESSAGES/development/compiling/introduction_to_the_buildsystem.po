@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,10 +216,10 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:111
 #, fuzzy
-msgid "A Windows binary with the same configuration will look like this::"
+msgid "A Windows binary with the same configuration will look like this:"
 msgstr "Бинарный файл для Windows с той же конфигурацией будет выглядеть так."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:116
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:118
 #, fuzzy
 msgid ""
 "Copy that binary to any location you like, as it contains the project "
@@ -234,7 +234,7 @@ msgstr ""
 "получить шаблоны экспорта (которые можно скачать с `godotengine.org <https://"
 "godotengine.org/>`__, или вы можете построить их самостоятельно)."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:122
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:124
 msgid ""
 "Aside from that, there are a few standard options that can be set in all "
 "build targets, and which will be explained below."
@@ -242,11 +242,11 @@ msgstr ""
 "Помимо этого, есть несколько стандартных параметров для установки во всех "
 "целях сборки, и которые будут описаны ниже."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:128
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
 msgid "Tools"
 msgstr "Инструменты"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:132
 msgid ""
 "Tools are enabled by default in all PC targets (Linux, Windows, macOS), "
 "disabled for everything else. Disabling tools produces a binary that can run "
@@ -257,15 +257,15 @@ msgstr ""
 "бинарный файл который годится для запуска проектов но не включает в себя "
 "редактор или менеджер проектов."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:142
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target"
 msgstr "Цель"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr "Цель контролирует оптимизации и флаги отладки. Каждый режим означает:"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
 msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
@@ -273,7 +273,7 @@ msgstr ""
 "**debug**: Сборка с символами отладки C++, включенными проверками во время "
 "выполнения (выполняет проверки и сообщает об ошибках) и без оптимизации."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:150
 #, fuzzy
 msgid ""
 "**release_debug**: Build without C++ debugging symbols and optimization, but "
@@ -284,7 +284,7 @@ msgstr ""
 "сохраняет проверку во время выполнения (проверки и сообщения об ошибках). "
 "Официальные бинарные файлы используют эту конфигурацию."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:151
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:153
 #, fuzzy
 msgid ""
 "**release**: Build without symbols, with optimization and with little to no "
@@ -296,7 +296,7 @@ msgstr ""
 "инструменты требуют некоторой отладочной функциональности и проверок во "
 "время выполнения."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:160
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:162
 #, fuzzy
 msgid ""
 "This flag appends the ``.debug`` suffix (for debug), or ``.tools`` (for "
@@ -307,11 +307,11 @@ msgstr ""
 "отладки с включенными инструментами). Когда оптимизация включена (релиз) "
 "добавляется суффикс \".opt\"."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:165
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
 msgid "Bits"
 msgstr "Биты"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
@@ -320,21 +320,21 @@ msgstr ""
 "исполняемых файлов. Они сделаны преимущественно для десктопных платформ и "
 "игнорируются где-то ещё."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:171
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
 #, fuzzy
 msgid "**32**: Build binaries for 32-bit platforms."
 msgstr "**32**: Строит бинарные файлы для 32-битной платформы."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:172
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
 #, fuzzy
 msgid "**64**: Build binaries for 64-bit platforms."
 msgstr "**64**: Строит бинарные файлы для 64-битной платформы."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
 msgid "**default**: Build for the architecture that matches the host platform."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:179
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:181
 #, fuzzy
 msgid ""
 "This flag appends ``.32`` or ``.64`` suffixes to resulting binaries when "
@@ -344,11 +344,11 @@ msgstr ""
 "Когда необходимо этот флаг добавляет суффиксы \".32\" или \".64\" полученным "
 "бинарным файлам."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:184
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:186
 msgid "Other build options"
 msgstr "Другие параметры сборки"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:186
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Godot should be built (compiler, debug options, etc.) as well as the "
@@ -358,7 +358,7 @@ msgstr ""
 "для настройки способа сборки Godot (компилятор, опции отладки, итд.) также "
 "как и возможности для включения/выключения."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:192
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
@@ -366,11 +366,11 @@ msgstr ""
 "Посмотрите вывод ``scons --help`` для подробностей по этим командам для "
 "версии которую вы хотите скомпилировать."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:194
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:196
 msgid "Export templates"
 msgstr "Экспорт шаблонов"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:196
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -382,7 +382,7 @@ msgstr ""
 "собрать их самостоятельно (в случае если вы хотите более свежих, или вы "
 "хотите подключить свои модули, или просто не доверяете собственной тени)."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:203
 #, fuzzy
 msgid ""
 "If you download the official export templates package and unzip it, you will "
@@ -392,7 +392,7 @@ msgstr ""
 "внимание что большинство из них это просто оптимизированные бинарные файлы "
 "или пакеты для каждой платформы:"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:224
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:226
 #, fuzzy
 msgid ""
 "To create those yourself, follow the instructions detailed for each platform "
@@ -403,7 +403,7 @@ msgstr ""
 "платформы в соответствующем разделе документации. Для каждой платформы "
 "объясняется как создавать свой шаблон."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:230
 msgid ""
 "The ``version.txt`` file should contain the corresponding Godot version "
 "identifier. This file is used to install export templates in a version-"
@@ -415,7 +415,7 @@ msgid ""
 "com/godotengine/godot/blob/master/version.py>`__."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:236
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:238
 #, fuzzy
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "

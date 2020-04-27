@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,3 +145,17 @@ msgstr ""
 "fera changer dans toutes les autres instances. Les tableaux exportés peuvent "
 "avoir des initialisateurs, mais ceux-ci doivent être des expressions "
 "constantes."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:186
+#, fuzzy
+msgid "Setting exported variables from a tool script"
+msgstr "Lancer des jeux exportés à partir du système de fichiers local"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:188
+msgid ""
+"When changing an exported variable's value from a script in :ref:"
+"`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
+"automatically. To update it, call :ref:`property_list_changed_notify() "
+"<class_Object_method_property_list_changed_notify>` after setting the "
+"exported variable's value."
+msgstr ""

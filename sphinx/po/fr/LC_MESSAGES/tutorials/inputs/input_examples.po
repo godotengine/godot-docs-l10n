@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,15 +139,14 @@ msgstr ""
 "événements d'entrée"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:110
-#, fuzzy
 msgid ""
 ":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` - adds the "
 "ability to check if modifiers are pressed, such as :kbd:`Shift` or :kbd:"
 "`Alt`."
 msgstr ""
 ":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` - ajoute la "
-"possibilité de vérifier si des modificateurs sont pressés, comme ``Shift`` "
-"ou ``Alt``."
+"possibilité de vérifier si des modificateurs sont pressés, comme :kbd:"
+"`Shift` ou :kbd:`Alt`."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:111
 msgid ""
@@ -225,7 +224,6 @@ msgid "Keyboard events"
 msgstr "Événements clavier"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:178
-#, fuzzy
 msgid ""
 "Keyboard events are captured in :ref:`InputEventKey <class_InputEventKey>`. "
 "While it's recommended to use input actions instead, there may be cases "
@@ -234,9 +232,9 @@ msgid ""
 msgstr ""
 "Les événements clavier sont capturés dans :ref:`InputEventKey "
 "<class_InputEventKey>`. Bien qu'il soit recommandé d'utiliser plutôt des "
-"actions de saisie, il peut y avoir des cas où vous voulez examiner "
-"spécifiquement des événements clavier. Pour cet exemple, vérifions la touche "
-"\"T\" :"
+"actions d'entrées, il peut y avoir des cas où vous voulez examiner "
+"spécifiquement des événements clavier. Pour cet exemple, vérifions la "
+"touche :kbd:`T` :"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:204
 #: ../../docs/tutorials/inputs/input_examples.rst:242
@@ -252,7 +250,6 @@ msgid "Keyboard modifiers"
 msgstr "Modificateurs de clavier"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:210
-#, fuzzy
 msgid ""
 "Modifier properties are inherited from :ref:`InputEventWithModifiers "
 "<class_InputEventWithModifiers>`. This  allows you to check for modifier "
@@ -264,8 +261,8 @@ msgstr ""
 "`InputEventWithModifiers <class_InputEventWithModifiers>`. Cela vous permet "
 "de vérifier les combinaisons de modificateurs à l'aide de propriétés "
 "booléennes. Imaginons que vous vouliez qu'une chose se produise lorsque la "
-"touche \"T\" est pressée, mais que quelque chose de différent se produise "
-"lorsque c'est \"Shift+T\" :"
+"touche :kbd:`T` est pressée, mais que quelque chose de différent se produise "
+"lorsque c'est :kbd:`Shift + T` :"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:246
 msgid "Mouse events"

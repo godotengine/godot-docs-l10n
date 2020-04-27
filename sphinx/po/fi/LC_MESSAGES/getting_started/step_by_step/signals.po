@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:4
-msgid "Signals"
+#: ../../docs/getting_started/step_by_step/signals.rst:1
+#, fuzzy
+msgid "Signal"
 msgstr "Signaalit"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
+msgid "Signals"
+msgstr "Signaalit"
+
+#: ../../docs/getting_started/step_by_step/signals.rst:10
 msgid "Introduction"
 msgstr "Johdanto"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:9
+#: ../../docs/getting_started/step_by_step/signals.rst:12
 msgid ""
 "Signals are Godot's version of the *observer* pattern. They allow a node to "
 "send out a message that other nodes can listen for and respond to. For "
@@ -37,15 +42,16 @@ msgstr ""
 "vastata. Esimerkiksi sen sijaan, että tarkistaisi jatkuvasti onko painiketta "
 "painettu, painike voi lähettää signaalin kun sitä on painettu."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:14
+#: ../../docs/getting_started/step_by_step/signals.rst:17
+#, fuzzy
 msgid ""
-"You can read more about the observer pattern here: http://"
+"You can read more about the observer pattern here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
 "Voit lukea lisää tarkkailijamallista täällä: http://gameprogrammingpatterns."
 "com/observer.html"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:16
+#: ../../docs/getting_started/step_by_step/signals.rst:19
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
@@ -58,7 +64,7 @@ msgstr ""
 "lähettää signaaleja, joita kaikki kiinnostuneet objektit voivat kirjautua "
 "kuuntelemaan ja vastaamaan."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:21
+#: ../../docs/getting_started/step_by_step/signals.rst:24
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
@@ -66,11 +72,11 @@ msgstr ""
 "Alla muutamia esimerkkejä siitä, miten voit käyttää signaaleja omissa "
 "projekteissasi."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:24
+#: ../../docs/getting_started/step_by_step/signals.rst:27
 msgid "Timer example"
 msgstr "Ajastin-esimerkki"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:26
+#: ../../docs/getting_started/step_by_step/signals.rst:29
 #, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
@@ -82,7 +88,7 @@ msgstr ""
 "alisolmua: Timer ja :ref:`Sprite <class_Sprite>`. Nimeä solmu Skene-"
 "telakalla TimerExample-nimiseksi."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:30
+#: ../../docs/getting_started/step_by_step/signals.rst:33
 msgid ""
 "For the Sprite's texture, you can use the Godot icon, or any other image you "
 "like. Do so by selecting ``Load`` in the Sprite's Texture attribute drop-"
@@ -90,11 +96,11 @@ msgid ""
 "yet."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/signals.rst:34
+#: ../../docs/getting_started/step_by_step/signals.rst:37
 msgid "Your scene tree should look like this:"
 msgstr "Skenepuusi pitäisi näyttää tältä:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:38
+#: ../../docs/getting_started/step_by_step/signals.rst:41
 msgid ""
 "In the Timer node's properties, check the \"On\" box next to *Autostart*. "
 "This will cause the timer to start automatically when you run the scene. You "
@@ -104,7 +110,7 @@ msgstr ""
 "valintaruutua. Tämä käynnistää ajastimen automaattisesti, kun skene ajetaan. "
 "*Wait Time*-ominaisuus voi pysyä 1 sekunnissa."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:42
+#: ../../docs/getting_started/step_by_step/signals.rst:45
 msgid ""
 "Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
 "and you'll see all of the signals that the selected node can emit. In the "
@@ -116,7 +122,7 @@ msgstr ""
 "Timer-solmun tapauksessa meitä kiinnostaa ”timeout”. Tämä signaali "
 "lähetetään, kun ajastin osoittaa ``0``."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:49
+#: ../../docs/getting_started/step_by_step/signals.rst:52
 #, fuzzy
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
@@ -126,7 +132,7 @@ msgstr ""
 "Napsauta ”timeout()”-signaalia ja paina ”Connect...”-painiketta. Tämä avaa "
 "alla olevan ikkunan, jossa voit määritellä, miten haluat yhdistää signaalin:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:55
+#: ../../docs/getting_started/step_by_step/signals.rst:58
 #, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
@@ -139,14 +145,14 @@ msgstr ""
 "*ei* ole virhe, vaan visuaalinen osoitin siitä, että signaalin lähettää "
 "kyseinen solmu. Valitse juurisolmu."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:60
+#: ../../docs/getting_started/step_by_step/signals.rst:63
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
 "Kohdesolmuun *täytyy* olla liitettynä skripti, muutoin saat virheilmoituksen."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:63
+#: ../../docs/getting_started/step_by_step/signals.rst:66
 msgid ""
 "On the right side, you can bind an arbitrary number of arguments of "
 "(possibly) different types. This can be useful when you have more than one "
@@ -154,7 +160,7 @@ msgid ""
 "in different values for those extra call arguments."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/signals.rst:67
+#: ../../docs/getting_started/step_by_step/signals.rst:70
 #, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
@@ -167,7 +173,7 @@ msgstr ""
 "oletusarvoinen nimeämiskäytäntö tätä funktiota luodessa on "
 "``_on_<solmun_nimi>_<signaalin_nimi>``, mutta voit halutessasi muuttaa nimen."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:72
+#: ../../docs/getting_started/step_by_step/signals.rst:75
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
@@ -175,7 +181,7 @@ msgstr ""
 "Napsauta \"Connect\"-painiketta ja voit nähdä, että skriptiin on luotu "
 "funktio:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:92
+#: ../../docs/getting_started/step_by_step/signals.rst:96
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
@@ -183,7 +189,7 @@ msgstr ""
 "Nyt oletuskoodi voidaan korvata millä tahansa koodilla, jonka haluamme "
 "signaalia vastaanottaessa suorittaa. Laitetaan kuvake välkkymään:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:116
+#: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
@@ -191,11 +197,11 @@ msgstr ""
 "Aja skene ja näet, että kuvake välkkyy sekunnin välein. Ajoitusta voi "
 "muuttaa Timer-solmun *Wait Time*-ominaisuudella."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:120
+#: ../../docs/getting_started/step_by_step/signals.rst:125
 msgid "Connecting signals in code"
 msgstr "Signaalien yhdistäminen koodin kautta"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:122
+#: ../../docs/getting_started/step_by_step/signals.rst:127
 msgid ""
 "You can also make the signal connection in code rather than with the editor. "
 "This is usually necessary when you're instancing nodes via code and so you "
@@ -205,7 +211,7 @@ msgstr ""
 "solmuille luodaan ilmentymiä koodin kautta, eikä yhteyksiä voida luoda "
 "editorin avulla."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:126
+#: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
@@ -213,7 +219,7 @@ msgstr ""
 "Irrota ensin signaali valitsemalla yhteys Timer-solmun \"Node\"-välilehdessä "
 "ja napsauttamalla \"Disconnect\"-painiketta."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:131
+#: ../../docs/getting_started/step_by_step/signals.rst:136
 msgid ""
 "To make the connection in code, we can use the ``connect`` function. We'll "
 "put it in ``_ready()`` so that the connection will be made on run. The "
@@ -227,15 +233,15 @@ msgstr ""
 "<kohdesolmu>, <kohdefunktion_nimi>)``. Timer-solmun yhteyden koodi näyttää "
 "tältä:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:164
+#: ../../docs/getting_started/step_by_step/signals.rst:171
 msgid "Custom signals"
 msgstr "Mukautetut signaalit"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:166
+#: ../../docs/getting_started/step_by_step/signals.rst:173
 msgid "You can also declare your own custom signals in Godot:"
 msgstr "Voit määritellä myös omia mukautettuja signaaleja Godotissa:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:184
+#: ../../docs/getting_started/step_by_step/signals.rst:192
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
@@ -244,17 +250,17 @@ msgstr ""
 "välilehteen ja niitä voidaan yhdistää solmun sisäänrakennettujen signaalien "
 "tavoin."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:187
+#: ../../docs/getting_started/step_by_step/signals.rst:195
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
 msgstr "Signaalin lähettämiseksi koodin kautta, käytä ``emit``-funktiota:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:212
+#: ../../docs/getting_started/step_by_step/signals.rst:222
 msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/signals.rst:232
+#: ../../docs/getting_started/step_by_step/signals.rst:243
 msgid ""
 "The signal arguments show up in the editor's node dock, and Godot can use "
 "them to generate callback functions for you. However, you can still emit any "
@@ -262,18 +268,18 @@ msgid ""
 "correct values."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/signals.rst:237
+#: ../../docs/getting_started/step_by_step/signals.rst:248
 #, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
 msgstr "Signaalin lähettämiseksi koodin kautta, käytä ``emit``-funktiota:"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:263
+#: ../../docs/getting_started/step_by_step/signals.rst:276
 msgid "Conclusion"
 msgstr "Lopputulos"
 
-#: ../../docs/getting_started/step_by_step/signals.rst:265
+#: ../../docs/getting_started/step_by_step/signals.rst:278
 msgid ""
 "Many of Godot's built-in node types provide signals you can use to detect "
 "events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
@@ -286,7 +292,7 @@ msgstr ""
 "siirtyy sen törmäysmuodon sisään. Tämän avulla saadaan selville milloin "
 "pelaaja on kerännyt kolikon."
 
-#: ../../docs/getting_started/step_by_step/signals.rst:270
+#: ../../docs/getting_started/step_by_step/signals.rst:283
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."

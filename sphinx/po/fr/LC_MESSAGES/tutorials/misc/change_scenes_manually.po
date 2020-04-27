@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,12 @@ msgid ""
 "the \"current\" scene. Autoloads fall into this category, but so do scenes "
 "which one instances and adds to the tree at runtime:"
 msgstr ""
+"Parfois, cela aide d'avoir plus de contrôle sur la façon dont on échange les "
+"scènes. Comme mentionné ci-dessus, les nœuds enfants d'un :ref:`Viewport "
+"<class_Viewport>` seront rendus dans l'image qu'il génère. Cela est vrai "
+"même pour les nœuds en dehors de la scène \"actuelle\". Les Autoloads "
+"entrent dans cette catégorie, mais il en va de même pour des scènes que l'on "
+"instance et ajoute à l'arbre de scène lors de l'exécution :"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:38
 msgid ""
@@ -38,6 +44,12 @@ msgid ""
 "balancing operation speed and memory consumption as well as balancing data "
 "access and integrity."
 msgstr ""
+"Pour compléter le cycle et échanger la nouvelle scène avec l'ancienne, les "
+"développeurs ont un choix à faire. Il existe de nombreuses stratégies pour "
+"retirer une scène de la vue du :ref:`Viewport <class_Viewport>`. Les "
+"compromis consistent à équilibrer la vitesse de fonctionnement et la "
+"consommation de mémoire ainsi qu'à équilibrer l'accès aux données et leur "
+"intégrité."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:44
 msgid ""
@@ -48,14 +60,21 @@ msgid ""
 "root node's name is \"Main\", one could do ``get_node(\"/root/Main\")."
 "free()`` to delete the whole scene."
 msgstr ""
+"**Nous pouvons supprimer la scène existante.** :ref:`SceneTree."
+"change_scene() <class_SceneTree_method_change_scene>` et :ref:`SceneTree."
+"change_scene_to() <class_SceneTree_method_change_scene_to>` supprimeront la "
+"scène actuelle immédiatement. Les développeurs peuvent également supprimer "
+"la scène principale. En supposant que le nom du noeud racine est \"Main\", "
+"on pourrait faire ``get_node(\"/root/Main\").free()`` pour supprimer la "
+"scène entière."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:51
 msgid "Unloads memory."
-msgstr ""
+msgstr "Décharger la mémoire."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:53
 msgid "Pro: RAM is no longer dragging the dead weight."
-msgstr ""
+msgstr "Avantage : La RAM ne traîne plus de poids mort."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:55
 msgid ""
@@ -63,12 +82,17 @@ msgid ""
 "back into memory again (takes time AND memory). Not a problem if returning "
 "soon is unnecessary."
 msgstr ""
+"Inconvénient : Le retour à cette scène est maintenant plus coûteux car il "
+"faut la recharger en mémoire (cela prend du temps ET de la mémoire). Ce "
+"n'est pas un problème si retourner rapidement n'est pas nécessaire."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:59
 msgid ""
 "Con: No longer have access to that scene's data. Not a problem if using that "
 "data soon is unnecessary."
 msgstr ""
+"Inconvénient : Ne plus avoir accès aux données de cette scène. Pas de "
+"problème si l'utilisation de ces données n'est pas rapidement nécessaire."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:62
 msgid ""
@@ -76,6 +100,9 @@ msgid ""
 "re-attaching one or more of its nodes to a different scene, or even directly "
 "to the :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
+"Note : Il peut être utile de préserver les données d'une scène qui sera "
+"bientôt supprimée en rattachant un ou plusieurs de ses nœuds à une autre "
+"scène, ou même directement au :ref:`SceneTree <class_SceneTree>`."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:66
 msgid "Processing stops."
@@ -86,12 +113,18 @@ msgid ""
 "Pro: No nodes means no process, physics process, or input handling. The CPU "
 "is available to work on the new scene's contents."
 msgstr ""
+"Avantage : Pas de nœuds signifie pas de processus, de processus physique ou "
+"de traitement des entrées. Le CPU est disponible pour travailler sur le "
+"contenu de la nouvelle scène."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:71
 msgid ""
 "Con: Those nodes' processing and input handling no longer operate. Not a "
 "problem if using the updated data is unnecessary."
 msgstr ""
+"Inconvénient : le traitement et la gestion des entrées de ces nœuds ne "
+"fonctionnent plus. Pas de problème si l'utilisation des données mises à jour "
+"n'est pas nécessaire."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:74
 msgid ""
@@ -99,24 +132,32 @@ msgid ""
 "detection of the nodes, we can hide the entire node sub-tree from the "
 "player's perspective."
 msgstr ""
+"** Nous pouvons masquer la scène existante. ** En modifiant la visibilité ou "
+"la détection de collision des nœuds, nous pouvons masquer entièrement le "
+"sous-arbre de nœuds du point de vue du joueur."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:78
 msgid "Memory still exists."
-msgstr ""
+msgstr "La mémoire existe toujours."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:80
 msgid "Pro: One can still access the data if need be."
-msgstr ""
+msgstr "Avantage : On peut toujours accéder aux données en cas de besoin."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:82
 msgid "Pro: There's no need to move any more nodes around to save data."
 msgstr ""
+"Avantage : Il n'est pas nécessaire de déplacer des nœuds pour enregistrer "
+"les données."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:84
 msgid ""
 "Con: More data is being kept in memory which will be become a problem on "
 "memory-sensitive platforms like web or mobile."
 msgstr ""
+"Inconvénient : de plus en plus de données sont conservées en mémoire, ce qui "
+"va devenir un problème sur les plateformes sensibles à la mémoire comme le "
+"web ou le mobile."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:87
 msgid "Processing continues."
@@ -127,12 +168,17 @@ msgid ""
 "Pro: Data continues to receive processing updates, so the scene will keep "
 "updated any data within it that relies on delta time or frame data."
 msgstr ""
+"Avantage : Les données continuent de recevoir des mises à jour de "
+"traitement, de sorte que la scène gardera à jour toutes les données qu'elle "
+"contient qui dépendent des données du temps delta ou d'image(frame)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:93
 msgid ""
 "Pro: Nodes are still members of groups (since groups belong to the :ref:"
 "`SceneTree <class_SceneTree>`)."
 msgstr ""
+"Avantages : Les nœuds sont toujours membres des groupes (puisque les groupes "
+"appartiennent au :ref:`SceneTree <class_SceneTree>`)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:96
 msgid ""
@@ -141,6 +187,11 @@ msgid ""
 "they go to ensure the target platform can support the load they are giving "
 "it."
 msgstr ""
+"Inconvénient : l'attention du CPU est maintenant divisée entre les deux "
+"scènes. Une charge trop importante pourrait entraîner une faible fréquence "
+"d'images par seconde. Il faut donc tester les performances au fur et à "
+"mesure pour s'assurer que la plate-forme cible peut supporter la charge "
+"qu'on lui impose."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:101
 msgid ""
@@ -148,14 +199,21 @@ msgid ""
 "existing scene's root node. Then use :ref:`Node.remove_child(Node) "
 "<class_Node_method_remove_child>` to detach the entire scene from the tree."
 msgstr ""
+"**Nous pouvons supprimer la scène existante de l'arbre ** Assignez une "
+"variable au nœud racine de la scène existante. Utilisez ensuite :ref:`Node."
+"remove_child(Node) <class_Node_method_remove_child>` pour détacher la scène "
+"entière de l'arbre."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:106
 msgid "Memory still exists (similar pros/cons as with hiding it from view)."
 msgstr ""
+"La mémoire existe toujours (avantages/inconvénients similaires au masquage)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:108
 msgid "Processing stops (similar pros/cons as with deleting it completely)."
 msgstr ""
+"Le traitement s'arrête (avantages/inconvénients similaires à la suppression "
+"complète)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:110
 msgid ""
@@ -164,6 +222,11 @@ msgid ""
 "only call the one method add/remove_child pair of methods. It is similar to "
 "disabling game objects in other engines."
 msgstr ""
+"Avantage : Cette variante de \"masquage\" est beaucoup plus facile pour "
+"afficher/masquer. Plutôt que de garder potentiellement la trace de plusieurs "
+"modifications apportées à la scène, il suffit d'appeler une méthode de la "
+"paire de méthodes add/remove_child. Cela revient à désactiver les objets de "
+"jeu dans d'autres moteurs."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:115
 msgid ""
@@ -171,6 +234,10 @@ msgid ""
 "scene will become stale if it relies on delta time, input, groups, or other "
 "data that is derived from :ref:`SceneTree <class_SceneTree>` access."
 msgstr ""
+"Inconvénient : Contrairement au masquage de la vue uniquement, les données "
+"contenues dans la scène deviendront obsolètes si elles dépendent du temps "
+"delta, des entrées, des groupes ou d'autres données dérivées de l'accès à :"
+"ref:`SceneTree <class_SceneTree>`."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:120
 msgid ""
@@ -179,6 +246,10 @@ msgid ""
 "preserving a a scene's data between scene changes (adding the scene to the "
 "root node)."
 msgstr ""
+"Il y a aussi des cas où l'on peut souhaiter avoir plusieurs scènes présentes "
+"en même temps. Peut-être que l'on ajoute son propre singleton au moment de "
+"l'exécution ou préserve les données d'une scène entre les changements de "
+"scène (en ajoutant la scène au nœud racine)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:133
 msgid ""
@@ -187,6 +258,11 @@ msgid ""
 "cases where the intent is to render different content in different parts of "
 "the screen. Minimaps and split-screen multiplayer are good examples."
 msgstr ""
+"Peut-être souhaitent-ils plutôt afficher plusieurs scènes en même temps en "
+"utilisant un :ref:`ViewportContainers <class_ViewportContainer>`. Ceci est "
+"optimal dans les cas où l'intention est de rendre un contenu différent dans "
+"différentes parties de l'écran. Les Minimaps et le multijoueur en écran "
+"partagé sont de bons exemples."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:138
 msgid ""
@@ -194,3 +270,6 @@ msgid ""
 "examine the effects of each and determine what path best fits their unique "
 "situation."
 msgstr ""
+"Chaque option aura des cas où elle est la plus appropriée, il faut donc "
+"examiner les effets de chacune d'entre elles et déterminer quelle voie "
+"correspond le mieux à une situation particulière."

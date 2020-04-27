@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -236,7 +236,7 @@ msgstr ""
 "두 지점에서 법선벡터를 계산하려면 먼저 방향 벡터를 얻은 다음 어느 쪽으로든 "
 "90° 회전해야 합니다:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:201
+#: ../../docs/tutorials/math/vectors_advanced.rst:199
 msgid ""
 "The rest is the same as the previous example, either point_a or point_b will "
 "work since they are in the same plane:"
@@ -244,7 +244,7 @@ msgstr ""
 "나머지는 이전 예와 동일합니다. point_a 또는 point_b는 동일한 평면에 있으므로 "
 "작동합니다:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:219
+#: ../../docs/tutorials/math/vectors_advanced.rst:217
 msgid ""
 "Doing the same in 3D is a little more complex and will be explained further "
 "down."
@@ -252,11 +252,11 @@ msgstr ""
 "3차원에서 동일한 작업을 수행하는 것은 약간 더 복잡하며, 아래에 자세히 설명되"
 "어 있습니다."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:223
+#: ../../docs/tutorials/math/vectors_advanced.rst:221
 msgid "Some examples of planes"
 msgstr "평면의 예"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:225
+#: ../../docs/tutorials/math/vectors_advanced.rst:223
 msgid ""
 "Here is a simple example of what planes are useful for. Imagine you have a "
 "`convex <https://www.mathsisfun.com/definitions/convex.html>`__ polygon. For "
@@ -268,7 +268,7 @@ msgstr ""
 "요. 예를 들어 직사각형, 사다리꼴, 삼각형 또는 어떤 면이 안쪽으로 굽히지 않는 "
 "모든 다각형이 있습니다."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:230
+#: ../../docs/tutorials/math/vectors_advanced.rst:228
 msgid ""
 "For every segment of the polygon, we compute the plane that passes by that "
 "segment. Once we have the list of planes, we can do neat things, for example "
@@ -278,7 +278,7 @@ msgstr ""
 "이 있으면 다각형 내부에 점이 있는지 확인하는 등 깔끔한 작업을 수행할 수 있습"
 "니다."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:234
+#: ../../docs/tutorials/math/vectors_advanced.rst:232
 msgid ""
 "We go through all planes, if we can find a plane where the distance to the "
 "point is positive, then the point is outside the polygon. If we can't, then "
@@ -287,12 +287,12 @@ msgstr ""
 "우리는 모든 평면을 통과합니다, 점까지의 거리가 양수인 평면을 찾을 수 있으면 "
 "점은 다각형 외부에 있습니다. 아니면 점은 다각형 내부에 있습니다."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:240
-#: ../../docs/tutorials/math/vectors_advanced.rst:279
+#: ../../docs/tutorials/math/vectors_advanced.rst:238
+#: ../../docs/tutorials/math/vectors_advanced.rst:277
 msgid "Code should be something like this:"
 msgstr "코드는 다음과 같아야 합니다:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:265
+#: ../../docs/tutorials/math/vectors_advanced.rst:263
 msgid ""
 "Pretty cool, huh? But this gets much better! With a little more effort, "
 "similar logic will let us know when two convex polygons are overlapping too. "
@@ -304,7 +304,7 @@ msgstr ""
 "리축 이론(SAT)이라고 하며 대부분의 물리학 엔진은 이것을 충돌을 감지하기 위해 "
 "사용한다."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:270
+#: ../../docs/tutorials/math/vectors_advanced.rst:268
 msgid ""
 "With a point, just checking if a plane returns a positive distance is enough "
 "to tell if the point is outside. With another polygon, we must find a plane "
@@ -317,7 +317,7 @@ msgstr ""
 "* *점* 으로 양의 거리를 반환하는 평면을 찾아야 합니다. 이 확인은 A의 평면을 B"
 "의 점에 대해 수행한 다음 B의 평면을 A의 점에 대해 수행합니다:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:370
+#: ../../docs/tutorials/math/vectors_advanced.rst:368
 msgid ""
 "As you can see, planes are quite useful, and this is the tip of the iceberg. "
 "You might be wondering what happens with non convex polygons. This is "
@@ -329,11 +329,11 @@ msgstr ""
 "오목한 다각형은 작은 볼록 다각형으로 분할하거나 BSP(요즘 많이 사용되지 않는 "
 "기술)와 같은 기술을 사용하여 처리됩니다."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:377
+#: ../../docs/tutorials/math/vectors_advanced.rst:375
 msgid "Collision detection in 3D"
 msgstr "3차원에서 충돌 감지"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:379
+#: ../../docs/tutorials/math/vectors_advanced.rst:377
 msgid ""
 "This is another bonus bit, a reward for being patient and keeping up with "
 "this long tutorial. Here is another piece of wisdom. This might not be "
@@ -346,7 +346,7 @@ msgstr ""
 "이미 충돌 감지를 매우 잘 수행함)는 아니지만 거의 모든 물리적 엔진과 충돌 감"
 "지 라이브러리에 사용됩니다:)"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:385
+#: ../../docs/tutorials/math/vectors_advanced.rst:383
 msgid ""
 "Remember that converting a convex shape in 2D to an array of 2D planes was "
 "useful for collision detection? You could detect if a point was inside any "
@@ -356,7 +356,7 @@ msgstr ""
 "신은 점이 볼록 모양 안에 있는지 또는 두 개의 2D 볼록 모양이 겹치는지를 탐지"
 "할 수 있습니다."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:389
+#: ../../docs/tutorials/math/vectors_advanced.rst:387
 msgid ""
 "Well, this works in 3D too, if two 3D polyhedral shapes are colliding, you "
 "won't be able to find a separating plane. If a separating plane is found, "
@@ -365,7 +365,7 @@ msgstr ""
 "네, 3차원에서도 작동합니다. 만일 두 개의 3차원 다면체 모양이 충돌하면 분리면"
 "을 찾을 수 없습니다. 분리면이 발견되면 형상은 확실히 충돌하지 않습니다."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:393
+#: ../../docs/tutorials/math/vectors_advanced.rst:391
 msgid ""
 "To refresh a bit a separating plane means that all vertices of polygon A are "
 "in one side of the plane, and all vertices of polygon B are in the other "
@@ -376,7 +376,7 @@ msgstr ""
 "든 정점이 다른 쪽에 있음을 의미합니다. 이 평면은 항상 폴리곤 A 또는 폴리곤 B"
 "의 면 평면 중 하나입니다."
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:398
+#: ../../docs/tutorials/math/vectors_advanced.rst:396
 msgid ""
 "In 3D though, there is a problem to this approach, because it is possible "
 "that, in some cases a separating plane can't be found. This is an example of "
@@ -385,7 +385,7 @@ msgstr ""
 "그러나 3차원에서는 분리면을 찾을 수 없기 때문에 이 접근법에 문제가 있습니다. "
 "다음은 이러한 상황의 예입니다:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:404
+#: ../../docs/tutorials/math/vectors_advanced.rst:402
 msgid ""
 "To avoid it, some extra planes need to be tested as separators, these planes "
 "are the cross product between the edges of polygon A and the edges of "
@@ -394,6 +394,30 @@ msgstr ""
 "이를 방지하려면 일부 추가 평면을 분리기로 테스트해야 합니다. 이러한 평면은 다"
 "각형 A의 모서리와 다각형 B의 모서리 사이의 외적입니다"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:410
+#: ../../docs/tutorials/math/vectors_advanced.rst:408
 msgid "So the final algorithm is something like:"
 msgstr "마지막 알고리즘은 다음과 같습니다:"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:589
+msgid "More information"
+msgstr "더 많은 정보"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:591
+#, fuzzy
+msgid ""
+"For more information on using vector math in Godot, see the following "
+"article:"
+msgstr ""
+"고도에서 벡터 수학을 이용하는 것에 대해 더 많은 정보를 원한다면, 다음 글들을 "
+"봐주십시오:"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:593
+msgid ":ref:`doc_matrices_and_transforms`"
+msgstr ":ref:`doc_matrices_and_transforms`"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:595
+msgid ""
+"If you would like additional explanation, you should check out 3Blue1Brown's "
+"excellent video series \"Essence of Linear Algebra\": https://www.youtube."
+"com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"
+msgstr ""

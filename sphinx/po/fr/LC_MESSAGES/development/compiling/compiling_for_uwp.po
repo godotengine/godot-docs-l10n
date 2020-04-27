@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,57 +19,74 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:4
 msgid "Compiling for Universal Windows Platform"
-msgstr ""
+msgstr "Compilation pour l'Universal Windows Platform"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:9
 msgid "Requirements"
 msgstr "Pré-requis"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:11
-msgid "SCons (see :ref:`doc_compiling_for_windows` for more details)."
-msgstr ""
+#, fuzzy
+msgid "SCons 3.0+ (see :ref:`doc_compiling_for_windows` for more details)."
+msgstr "SCons (see :ref:`doc_compiling_for_windows` pour d'autres détails)."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:12
+#, fuzzy
 msgid ""
-"Visual Studio 2015 Update 2. It may work with earlier versions. See :ref:"
-"`doc_compiling_for_windows` about the caveats of installing it and the "
-"various prompts."
+"Visual Studio 2017 or later. See :ref:`doc_compiling_for_windows` about the "
+"caveats of installing it and the various prompts."
 msgstr ""
+"Visual Studio 2015 Update 2. Il pourrait fonctionner avec des versions "
+"antérieures. Voir :ref:`doc_compiling_for_windows` à propos des conditions "
+"d'installation et des différentes instructions."
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:15
+#: ../../docs/development/compiling/compiling_for_uwp.rst:14
 msgid "Windows 10 SDK (can be selected in Visual Studio installation)."
 msgstr ""
+"Windows 10 SDK (peut être sélectionné dans l'installation de Visual Studio)."
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:16
+#: ../../docs/development/compiling/compiling_for_uwp.rst:15
 msgid ""
 "`ANGLE source <https://github.com/Microsoft/angle>`__. Use the ``ms_master`` "
 "(default) branch. Keep it in a path without spaces to avoid problems."
 msgstr ""
+"`Source ANGLE <https://github.com/Microsoft/angle>`__. Utilisez la branche "
+"``ms_master`` (par défault). Gardez-la dans un chemin(path) sans espaces "
+"pour éviter des problèmes."
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:20
+#: ../../docs/development/compiling/compiling_for_uwp.rst:19
 msgid ""
 "The ANGLE repo by Microsoft has been discontinued and the ``ms_master`` "
 "branch has been cleared out."
 msgstr ""
+"Le repo ANGLE par Microsoft a été abandonné et la branche ``ms_master`` a "
+"été effacée."
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:23
+#: ../../docs/development/compiling/compiling_for_uwp.rst:22
 msgid ""
 "As a temporary workaround however, it is still possible to download an older "
 "state of the source code via commit `c61d048 <https://github.com/microsoft/"
 "angle/tree/c61d0488abd9663e0d4d2450db7345baa2c0dfb6>`__."
 msgstr ""
+"Cependant, une solution de contournement temporaire est encore possible een "
+"téléchargeant un ancien code source via le commit `c61d048 <https://github."
+"com/microsoft/angle/tree/c61d0488abd9663e0d4d2450db7345baa2c0dfb6>`__."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:26
 msgid ""
 "This page will eventually be updated in the future to reflect the new build "
 "instructions."
 msgstr ""
+"Cette page sera encore éventuellement mise à jour dans le futur pour "
+"refléter les nouvelles instructions de construction."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:29
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
+"Pour un aperçu général de l'utilisation de SCons pour Godot, voir :ref:"
+"`doc_introduction_to_the_buildsystem`."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:33
 msgid "Compiling"
@@ -81,6 +98,9 @@ msgid ""
 "you want to build. Check :ref:`doc_compiling_for_windows` to see how these "
 "prompts work."
 msgstr ""
+"Vous devez ouvrir une invite Visual Studio adéquate pour cibler "
+"l'architecture que vous voulez construire. Vérifiez :ref:"
+"`doc_compiling_for_windows` pour voir comment ces invites fonctionnent."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:39
 msgid ""
@@ -88,6 +108,9 @@ msgid ""
 "and ARM (32-bits). For the latter, you can run ``vcvarsall.bat`` with "
 "``x86_arm`` or ``amd64_arm`` as argument to set the environment."
 msgstr ""
+"Il y a trois architectures cibles pour UWP : x86 (32-bits), x64 (64-bits) et "
+"ARM (32-bits). Pour la dernière, vous devez exécuter ``vcvarsall.bat`` avec "
+"``x86_arm`` ou ``amd64_arm`` comme argument pour définir l'environnement."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:43
 msgid ""
@@ -95,15 +118,20 @@ msgid ""
 "source code. The build process will also build ANGLE to produce the required "
 "DLLs for the selected architecture."
 msgstr ""
+"Réglez``ANGLE_SRC_PATH`` dans le répertoire où vous avez téléchargé le code "
+"source de ANGLE. Le processus de construction voudra également construire "
+"ANGLE pour produire les DLLs nécessaires pour l'architecture sélectionnée."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:47
 msgid ""
 "Once you're set, run the SCons command similarly to the other platforms::"
 msgstr ""
+"Une fois que c'est défini, exécutez la commande SCons de la même manière que "
+"pour les autres plateformes :"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:52
 msgid "Creating UWP export templates"
-msgstr ""
+msgstr "Création des modèles d'exportation UWP"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:54
 msgid ""
@@ -111,16 +139,21 @@ msgid ""
 "You need all three architectures with ``debug`` and ``release`` templates to "
 "be able to export."
 msgstr ""
+"Pour exporter à l'aide de l'éditeur, vous devez construire correctement le "
+"paquet de modèles. Vous avez besoin des trois architectures avec les modèles "
+"``debug`` et ``release`` pour pouvoir exporter."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:58
 msgid ""
 "Open the command prompt for one architecture and run SCons twice (once for "
 "each target)::"
 msgstr ""
+"Ouvrez l'invite de commande pour une architecture et exécutez SCons deux "
+"fois (une fois pour chaque cible) :"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:64
 msgid "Repeat for the other architectures."
-msgstr ""
+msgstr "Répétez pour les autres architectures."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:66
 msgid ""
@@ -128,6 +161,9 @@ msgid ""
 "like ``godot.uwp.opt.debug.32.x86.exe`` (with variations for each target/"
 "arch)."
 msgstr ""
+"A la fin, votre dossier ``bin`` contiendra les binaires ``.exe`` avec un nom "
+"similaire à ``godot.uwp.opt.debug.32.x86.exe`` (avec des variations pour "
+"chaque cible/architecture)."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:70
 msgid ""
@@ -137,12 +173,19 @@ msgid ""
 "``x64`` or ``ARM``), get the ``libEGL.dll`` and the ``libGLESv2.dll``, "
 "putting them along with the executable."
 msgstr ""
+"Copiez l'un de ceux-ci dans ``misc/dist/uwp_template`` dans le dossier "
+"source de Godot et renommez le binaire en ``godot.uwp.exe``. Depuis la "
+"source ANGLE, sous ``winrt/10/src/Release_%arch%`` (où ``%arch%`` peut être "
+"``Win32``, ``x64`` ou ``ARM``), récupérez le ``libEGL.dll`` et le "
+"``libGLESv2.dll``, en les mettant avec l'exécutable."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:76
 msgid ""
 "Add the files in the ``uwp_template`` folder to a ZIP. Rename the resulting "
 "Zip according to the target/architecture of the template::"
 msgstr ""
+"Ajoutez les fichiers du dossier ``uwp_template`` dans un ZIP. Renommez le "
+"ZIP résultant en fonction de la cible/architecture du modèle :"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:86
 msgid ""
@@ -152,10 +195,16 @@ msgid ""
 "of Godot 3. If you don't want to replace the templates, you can set the "
 "\"Custom Package\" property in the export window."
 msgstr ""
+"Déplacez ces modèles dans le dossier ``[versionstring]\\templates`` dans le "
+"chemin des paramètres de Godot, où `versionstring` est la version de Godot "
+"pour laquelle vous avez compilé les modèles d'exportation - par exemple `3.0."
+"alpha` pour la version alpha de Godot 3. Si vous ne souhaitez pas remplacer "
+"les modèles, vous pouvez définir la propriété \"Custom Package\" dans la "
+"fenêtre d'exportation."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:93
 msgid "Running UWP apps with Visual Studio"
-msgstr ""
+msgstr "Utilisation des applications UWP avec Visual Studio"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:95
 msgid ""
@@ -164,6 +213,10 @@ msgid ""
 "the easiest way if you are testing on a device such as a Windows Phone or an "
 "Xbox One."
 msgstr ""
+"Si vous souhaitez déboguer le port UWP ou simplement exécuter vos "
+"applications sans empaquetage ni signature, vous pouvez les déployer et les "
+"lancer à l'aide de Visual Studio. C'est peut-être le moyen le plus simple si "
+"vous testez sur un appareil tel qu'un téléphone Windows ou une Xbox One."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:100
 msgid ""
@@ -171,6 +224,9 @@ msgid ""
 "``install.bat`` script file. This will install the Visual Studio project "
 "templates for ANGLE apps."
 msgstr ""
+"Dans le dossier source ANGLE, ouvrez ``templates`` et double-cliquez sur le "
+"fichier script ``install.bat``. Cela installera les modèles de projet Visual "
+"Studio pour les applications ANGLE."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:104
 msgid ""
@@ -179,6 +235,11 @@ msgid ""
 "also need to build it for ARM if you plan to run on a device. You can also "
 "use MSBuild if you're comfortable with the command line."
 msgstr ""
+"Si vous n'avez pas encore construit Godot, ouvrez la solution ``winrt/10/src/"
+"angle.sln`` à partir de la source d'ANGLE et construisez-le pour la cible "
+"Release/Win32. Vous pouvez également avoir besoin de le compiler pour ARM si "
+"vous prévoyez de fonctionner sur un appareil. Vous pouvez également utiliser "
+"MSBuild si vous êtes à l'aise avec la ligne de commande."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:109
 msgid ""
@@ -186,6 +247,9 @@ msgid ""
 "Universal)\" project template, which can be found under the ``Visual C++/"
 "Windows/Universal`` category."
 msgstr ""
+"Créez un nouveau projet Windows App en utilisant le modèle de projet \"App "
+"for OpenGL ES (Windows Universal)\", qui se trouve dans la catégorie "
+"``Visual C++/Windows/Universal``."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:113
 msgid ""
@@ -195,6 +259,12 @@ msgid ""
 "and in the \"Properties\" window and change the relative path from "
 "``Debug_Win32`` to ``Release_Win32`` (or ``Release_ARM`` for devices)."
 msgstr ""
+"Il s'agit d'un projet de base avec les dépendances ANGLE déjà mises en "
+"place. Cependant, par défaut, il choisit la version de débogage des DLL qui "
+"ont généralement de mauvaises performances. Donc, dans le filtre \"Binaries"
+"\", cliquez sur chacune des DLL à cet endroit et dans la fenêtre \"Propriétés"
+"\" et changez le chemin relatif de \"Debug_Win32\" en \"Release_Win32\" (ou "
+"\"Release_ARM\" pour les appareils)."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:119
 msgid ""
@@ -202,6 +272,10 @@ msgid ""
 "the Godot executable for UWP you have. In the \"Properties\" window, set "
 "\"Content\" to ``True`` so it's included in the project."
 msgstr ""
+"Dans le même filtre \"Binaries\", sélectionnez \"Add > Existing Item\" et "
+"pointez vers l'exécutable Godot pour UWP que vous avez. Dans la fenêtre "
+"\"Properties\", mettez \"Content\" à ``True`` pour qu'il soit inclus dans le "
+"projet."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:123
 msgid ""
@@ -212,6 +286,13 @@ msgid ""
 "the ``EntryPoint`` attribute to ``GodotUWP.App``. This will ensure that the "
 "Godot executable is correctly called when the app starts."
 msgstr ""
+"Faites un clic droit sur le fichier ``Package.appxmanifest`` et sélectionnez "
+"\"Open With... > XML (Text) Editor\". Dans l'élément ``Package/Applications/"
+"Application``, remplacez l'attribut ``Executable`` ``$targetnametoken$.exe`` "
+"par ``godot.uwp.exe`` (ou tout autre nom donné à votre exécutable Godot). "
+"Changez également l'attribut ``EntryPoint`` en ``GodotUWP.App``. Cela "
+"permettra de s'assurer que l'exécutable Godot est correctement appelé au "
+"démarrage de l'application."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:130
 msgid ""
@@ -221,6 +302,11 @@ msgid ""
 "> Existing Item\" command and set their \"Content\" property to ``True`` so "
 "they're copied to the app."
 msgstr ""
+"Créez un dossier (*pas* un filtre) appelé ``game`` dans votre dossier de "
+"projet Visual Studio et vous pouvez y mettre soit un fichier ``data.pck`` "
+"soit vos fichiers de projet Godot. Après cela, assurez-vous d'inclure le "
+"tout avec la commande \"Add > Existing Item\" et mettez leur propriété "
+"\"Content\" à ``True`` pour qu'ils soient copiés dans l'application."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:136
 msgid ""
@@ -230,6 +316,12 @@ msgid ""
 "by right-clicking the project (*not* the solution) in the \"Solution Explorer"
 "\" and selecting \"Build\"."
 msgstr ""
+"Pour faciliter le flux de travail, vous pouvez ouvrir \"Solution Properties"
+"\" et, dans la section \"Configuration\", décocher l'option \"Build\" de "
+"l'application. Vous devez encore construire au moins une fois pour générer "
+"certains fichiers nécessaires, vous pouvez le faire en cliquant avec le "
+"bouton droit de la souris sur le projet (*pas* la solution) dans \"Solution "
+"Explorer\" et en sélectionnant \"Build\"."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:142
 msgid ""
@@ -237,3 +329,7 @@ msgid ""
 "the \"Start Without Debugging\" option from the \"Debug\" menu (or press :"
 "kbd:`Ctrl + F5`) to make it launch faster."
 msgstr ""
+"Il vous suffit maintenant de lancer le projet et votre application devrait "
+"s'ouvrir. Vous pouvez également utiliser l'option \"Start Without Debugging"
+"\" du menu \"Debug\" (ou appuyer sur :kbd:`Ctrl + F5`) pour accélérer le "
+"lancement."

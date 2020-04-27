@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,24 +185,25 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:131
 msgid ""
-"In order to add fresnal reflectance we will compute a fresnel term in our "
-"fragment shader. We are not going to use a real fresnel term, instead we "
-"will approximate it using the dot product of the ``NORMAL`` and ``VIEW`` "
-"vectors. The ``NORMAL`` vector points away from a surface of the, while the "
-"``VIEW`` vector is the direction between your eye and that point on the "
-"surface. The dot product between them is a handy way to tell when you are "
-"looking at the surface head-on your at a glancing angle."
+"In order to add fresnal reflectance, we will compute a fresnel term in our "
+"fragment shader. Here, we aren't going to use a real fresnel term for "
+"performance reasons. Instead, we'll approximate it using the dot product of "
+"the ``NORMAL`` and ``VIEW`` vectors. The ``NORMAL`` vector points away from "
+"the mesh's surface, while the ``VIEW`` vector is the direction between your "
+"eye and that point on the surface. The dot product between them is a handy "
+"way to tell when you are looking at the surface head-on or at a glancing "
+"angle."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:142
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:143
 msgid ""
 "And mix it into both ``ROUGHNESS`` and ``ALBEDO``. This is the benefit of "
-"ShaderMaterials over SpatialMaterials. With SpatialMaterials we could set "
+"ShaderMaterials over SpatialMaterials. With SpatialMaterials, we could set "
 "these properties with a texture, or to a flat number. But with shaders we "
 "can set them based on any mathematical function that we can dream up."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:159
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:160
 msgid ""
 "And now, with only 5 lines of code, you can have complex looking water. Now "
 "that we have lighting, this water is looking too bright. Let's darken it. "
@@ -210,58 +211,58 @@ msgid ""
 "``ALBEDO``. Let's set them to ``vec3(0.01, 0.03, 0.05)``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:167
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:168
 msgid "Animating with ``TIME``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:169
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:170
 msgid ""
-"Going back to the vertex function, we can animated the waves using the built-"
+"Going back to the vertex function, we can animate the waves using the built-"
 "in variable ``TIME``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:171
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:172
 msgid ""
 "``TIME`` is a built-in variable that is accessible from the vertex and "
 "fragment functions."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:174
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:175
 msgid ""
 "In the last tutorial we calculated height by reading from a heightmap. For "
 "this tutorial, we will do the same. Put the heightmap code in a function "
 "called ``height()``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:183
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:184
 msgid ""
-"In order to use ``TIME`` in the ``height()`` function we need to pass it in."
+"In order to use ``TIME`` in the ``height()`` function, we need to pass it in."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:190
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:191
 msgid "And make sure to correctly pass it in inside the vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:200
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:201
 msgid ""
 "Instead of using a normalmap to calculate normals. We are going to compute "
 "them manually in the ``vertex()`` function. To do so use the following line "
 "of code."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:207
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:208
 msgid ""
 "We need to compute ``NORMAL`` manually because in the next section we will "
 "be using math to create complex-looking waves."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:210
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:211
 msgid ""
 "Now, we are going to make the ``height()`` function a little more "
 "complicated by offsetting ``position`` by the cosine of ``TIME``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:220
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:221
 msgid ""
 "This results in waves that move slowly, but not in a very natural way. The "
 "next section will dig deeper into using shaders to create more complex "
@@ -269,11 +270,11 @@ msgid ""
 "functions."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:225
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:226
 msgid "Advanced effects: waves"
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:227
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:228
 msgid ""
 "What makes shaders so powerful is that you can achieve complex effects by "
 "using math. To illustrate this, we are going to take our waves to the next "
@@ -281,29 +282,29 @@ msgid ""
 "function called ``wave()``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:231
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:232
 msgid ""
 "``wave()`` has one parameter, ``position``, which is the same as it is in "
 "``height()``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:233
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:234
 msgid ""
 "We are going to call ``wave()`` multiple times in ``height()`` in order to "
 "fake the way waves look."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:243
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:244
 msgid "At first this looks complicated. So let's go through it line-by-line."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:249
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:250
 msgid ""
-"Offset the position by the ``noise`` texture. This will make the waves curve "
-"so they are not straight lines completely aligned with the grid."
+"Offset the position by the ``noise`` texture. This will make the waves "
+"curve, so they won't be straight lines completely aligned with the grid."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:256
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:257
 msgid ""
 "Define a wave-like function using ``sin()`` and ``position``. Normally "
 "``sin()`` waves are very round. We use ``abs()`` to absolute to give them a "
@@ -311,33 +312,33 @@ msgid ""
 "from ``1.0`` to put the peak on top."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:264
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:265
 msgid ""
 "Multiply the x-directional wave by the y-directional wave and raise it to a "
 "power to sharpen the peaks. Then subtract that from ``1.0`` so that the "
 "ridges become peaks and raise that to a power to sharpen the ridges."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:268
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:269
 msgid ""
 "We can now replace the contents of our ``height()`` function with ``wave()``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:276
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:277
 msgid "Using this you get:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:280
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:281
 msgid ""
 "The shape of the sin wave is too obvious. So let's spread the waves out a "
 "bit. We do this by scaling ``position``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:288
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:289
 msgid "Now it looks much better."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:292
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:293
 msgid ""
 "We can do even better if we layer multiple waves on top of each other at "
 "varying frequencies and amplitudes. What this means is that we are going to "
@@ -346,13 +347,13 @@ msgid ""
 "taller (amplitude)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:297
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:298
 msgid ""
 "Here is an example for how you could layer the four waves to achieve nicer "
 "looking waves."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:309
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:310
 msgid ""
 "Note that we add time to two and subtract it from the other two. This makes "
 "the waves move in different directions creating a complex effect. Also note "
@@ -360,13 +361,13 @@ msgid ""
 "``1.0``. This keeps the wave in the 0-1 range."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:313
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:314
 msgid ""
 "With this code you should end up with more complex looking waves and all you "
-"had to do was add a little bit of math!"
+"had to do was add a bit of math!"
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:318
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:319
 msgid ""
 "For more information about Spatial shaders read the :ref:`Shading Language "
 "<doc_shading_language>` doc and the :ref:`Spatial Shaders "

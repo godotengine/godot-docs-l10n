@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,8 +226,9 @@ msgstr ""
 "valeur ou une méthode de n'importe quel autre nœud"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
+#, fuzzy
 msgid ""
-"The project uses a simple organisation that works for game jams and tiny "
+"The project uses a simple organization that works for game jams and tiny "
 "games."
 msgstr ""
 "Le projet utilise une organisation simple fonctionnelle pour les Game Jams "
@@ -454,14 +455,15 @@ msgstr ""
 "après* que le changement se produise."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
+#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
 "accessing nodes directly to communicate between two separate classes. It can "
 "be okay for a parent node to get values from its children. But you'll want "
 "to favor signals if you're working with two separate branches. Read Game "
-"Programming Patterns for more information on the `Observer pattern <http://"
-"gameprogrammingpatterns.com/observer.html>`_. The `full book <http://"
+"Programming Patterns for more information on the `Observer pattern <https://"
+"gameprogrammingpatterns.com/observer.html>`_. The `full book <https://"
 "gameprogrammingpatterns.com/contents.html>`_ is available online for free."
 msgstr ""
 "Le patron Observateur, dont dérivent les signaux, ajoute quand même un peu "
@@ -688,17 +690,16 @@ msgstr ""
 "on ne peut pas assigner ``new_value`` directement"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
-#, fuzzy
 msgid ""
 "Also call ``update_health`` at the end of the ``_ready`` function to "
 "initialize the ``Number`` node's ``text`` with the right value at the start "
 "of the game. Press :kbd:`F5` to test the game: the life bar updates with "
 "every attack!"
 msgstr ""
-"Il faut appeler notre nouvelle fonction ``update_health`` à la  fin de la "
+"Il faut appeler notre nouvelle fonction ``update_health`` à la fin de la "
 "fonction ``_ready`` pour initialiser la propriété ``text`` dans le nœud "
-"``Number`` avec la bonne valeur au démarrage du jeu.\n"
-"Lancez le jeu avec F5 :  la barre de vie se met à jour à chaque attaque !"
+"``Number`` avec la bonne valeur au démarrage du jeu. Lancez le jeu avec :kbd:"
+"`F5` : la barre de vie se met à jour à chaque attaque !"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""

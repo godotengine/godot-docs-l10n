@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,19 +35,20 @@ msgid "Download the Android SDK"
 msgstr "Télécharger le SDK Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
-#, fuzzy
 msgid ""
 "Download and install the Android SDK from `developer.android.com <https://"
 "developer.android.com/studio/>`__."
 msgstr ""
-"Téléchargez et installez le SDK Android à partir de https://developer."
-"android.com/studio/"
+"Téléchargez et installez le SDK Android à partir de `developer.android.com "
+"<https://developer.android.com/studio/>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
 msgid ""
 "If you install Android Studio, you need to run it once to complete the SDK "
 "setup."
 msgstr ""
+"Si vous installez Android Studio, vous devez le lancer une fois afin de "
+"compléter la configuration du SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
 msgid "Install OpenJDK or Oracle JDK"
@@ -71,6 +72,8 @@ msgid ""
 "If you install OpenJDK, choose ``1.8``. Don't choose the ``openjdk-jre`` "
 "files as that only contains the JRE, not the JDK which is required here."
 msgstr ""
+"Si vous installez OpenJDK, choisissez ``1.8``. Ne choisissez pas le fichier "
+"``openjdk-jre``qui ne contient que le JRE et non le JDK, qui est requis ici."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:25
 msgid "Create a debug.keystore"
@@ -90,7 +93,6 @@ msgstr ""
 "trouver dans le répertoire ``~/.android``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:32
-#, fuzzy
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose::"
@@ -106,20 +108,25 @@ msgid ""
 "information on ``keytool`` usage, see `this Q&A article <https://godotengine."
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
+"Cela créera un fichier ``debug.keystore`` dans votre répertoire actuel. Vous "
+"devez le déplacer vers un emplacement mémorable tel que ``%USERPROFILE%\\."
+"android\\``, car vous aurez besoin de son emplacement dans une étape "
+"ultérieure. Pour plus d'informations sur l'utilisation de ``keytool``, voir "
+"`this Q&A article <https://godotengine.org/qa/21349/jdk-android-file-"
+"missing>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
 msgid "Make sure you have adb"
 msgstr "Assurez-vous d'avoir adb"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
-#, fuzzy
 msgid ""
 "Android Debug Bridge (``adb``) is the command line tool used to communicate "
 "with Android devices. It's installed with the SDK, but you may need to "
 "install one (any) of the Android API levels for it to be installed in the "
 "SDK directory."
 msgstr ""
-"Android Debug Bridge (adb) est l'outil en ligne de commande utilisé pour "
+"Android Debug Bridge (``adb``) est l'outil en ligne de commande utilisé pour "
 "communiquer avec les appareils Android. Il est installé avec le SDK, mais "
 "vous devrez peut-être installer un (n'importe lequel) des niveaux de l'API "
 "Android pour qu'il soit installé dans le répertoire SDK."
@@ -129,9 +136,10 @@ msgid "Setting it up in Godot"
 msgstr "La mise en place dans Godot"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:49
+#, fuzzy
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
-"for the user account in the computer (it's independent from the project)."
+"for the user account in the computer (it's independent of the project)."
 msgstr ""
 "Entrez dans l'écran Paramètres de l'éditeur. Cet écran contient les "
 "paramètres de l'éditeur pour le compte utilisateur dans l'ordinateur (il est "
@@ -152,20 +160,30 @@ msgid ""
 "The ``adb`` executable (``adb.exe`` on Windows) - It can usually be found at "
 "``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
 msgstr ""
+"L'exécutable ``adb`` (``adb.exe`` sous Windows) - Il peut généralement être "
+"trouvé à ``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
+#, fuzzy
 msgid ""
 "The ``jarsigner`` executable (from JDK 6 or 8) - On Windows, OpenJDK "
 "installs to a dir like ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
-"openjdk-1.8.0.232-2\\bin``. The exact path may vary depending on the OpenJDK "
-"update you've installed."
+"openjdk-1.8.0.232-2\\bin``. On Linux, it typically installs to a dir like ``/"
+"usr/bin/jarsigner``. The exact path may vary depending on the OpenJDK update "
+"you've installed and your machine's operating system."
 msgstr ""
+"L'exécutable``jarsigner`` (de JDK 6 ou 8) - Sous Windows, OpenJDK s'installe "
+"dans un répertoire comme ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
+"openjdk-1.8.0.232-2\\bin``. Le chemin exact peut varier en fonction de la "
+"mise à jour d'OpenJDK que vous avez installée."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:67
 msgid ""
 "The debug ``.keystore`` file - It can be found in the folder where you put "
 "the ``debug.keystore`` file you created above."
 msgstr ""
+"Le fichier de débogage ``.keystore`` - Il se trouve dans le dossier où vous "
+"avez mis le fichier ``debug.keystore`` que vous avez créé ci-dessus."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:70
 msgid "Once that is configured, everything is ready to export to Android!"
@@ -193,8 +211,9 @@ msgid "There are two types of icons required by Godot:"
 msgstr "Il existe deux types d'icônes requises par Godot :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
+#, fuzzy
 msgid ""
-"**Main Icon:**: The \"classic\" icon. This will be used on all Android "
+"**Main Icon:** The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
 "**Main Icon :** : L'icône \"classique\". Elle sera utilisée sur toutes les "
@@ -274,10 +293,11 @@ msgstr ""
 "d'arrière-plan par défaut de Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
+#, fuzzy
 msgid ""
-"It's highly recommended to provide all of the requested icons, and at least "
-"with the specified resolutions. Only this way your application will look "
-"great on all the Android devices and versions."
+"It's highly recommended to provide all requested icons, and at least with "
+"the specified resolutions. Only this way your application will look great on "
+"all Android devices and versions."
 msgstr ""
 "Il est hautement recommandé de fournir toutes les icônes demandées, et au "
 "moins les résolutions spécifiées. Ce n'est que de cette façon que votre "

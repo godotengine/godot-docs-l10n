@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,10 +22,11 @@ msgid "Documentation guidelines"
 msgstr "Richtlinien Dokumentation"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:6
+#, fuzzy
 msgid ""
 "This page describes the rules to follow if you want to contribute to Godot "
 "Engine by writing or reviewing documentation, or by translating existing "
-"documentation. Also have a look at README of the `godot-docs GitHub "
+"documentation. Also, have a look at README of the `godot-docs GitHub "
 "repository <https://github.com/godotengine/godot-docs>`_ and the `docs front "
 "page <https://docs.godotengine.org>`_ on what steps to follow and how to "
 "contact the docs team."
@@ -99,62 +100,63 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:42
 msgid ""
-"If you're reading documentation on ``docs.godotengine.org``, you'll see an "
-"**Edit on GitHub** hyperlink at the top right of the page. Once you've "
-"created a GitHub account, you can propose changes to a page you're reading "
-"as follows:"
+"If you're reading documentation on `docs.godotengine.org <https://docs."
+"godotengine.org>`_, you'll see an **Edit on GitHub** hyperlink at the top "
+"right of the page. Once you've created a GitHub account, you can propose "
+"changes to a page you're reading as follows:"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:46
+#: ../../docs/community/contributing/documentation_guidelines.rst:47
 msgid "Click the **Edit on GitHub** button."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:48
+#: ../../docs/community/contributing/documentation_guidelines.rst:49
 msgid ""
 "On the GitHub page you're taken to, click the pencil icon in the top-right "
 "corner near the **Raw**, **Blame** and **History** buttons. It has the "
 "tooltip \"Edit the file in a fork of this project\"."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:52
+#: ../../docs/community/contributing/documentation_guidelines.rst:53
 msgid "Complete all the edits you want to make for that page."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:54
+#: ../../docs/community/contributing/documentation_guidelines.rst:55
 msgid ""
-"Summarise the changes you made in the form at the bottom of the page and "
+"Summarize the changes you made in the form at the bottom of the page and "
 "click the button labelled **Propose file change** when done."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:57
+#: ../../docs/community/contributing/documentation_guidelines.rst:58
 msgid ""
 "On the following screens, click the **Create pull request** button until you "
-"see a message like ``Open. yourGitHubUsername wants to merge 1 commit into "
-"godotengine:master from yourGitHubUsername:patch-6``."
+"see a message like *Username wants to merge 1 commit into godotengine:master "
+"from Username:patch-6*."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:61
+#: ../../docs/community/contributing/documentation_guidelines.rst:62
 msgid ""
 "A reviewer will evaluate your changes and incorporate them into the docs if "
-"they're judged to improve them. You might also be asked to make "
-"modifications to your changes before they're included."
+"they're acceptable. You might also be asked to make modifications to your "
+"changes before they're included."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:66
+#: ../../docs/community/contributing/documentation_guidelines.rst:67
 msgid "What makes good documentation?"
 msgstr "Was macht eine gute Dokumentation aus?"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:68
+#: ../../docs/community/contributing/documentation_guidelines.rst:69
+#, fuzzy
 msgid ""
 "Documentation should be well written in plain English, using well-formed "
 "sentences and various levels of sections and subsections. It should be clear "
-"and objective. Also have a look at the :ref:`doc_docs_writing_guidelines`."
+"and objective. Also, have a look at the :ref:`doc_docs_writing_guidelines`."
 msgstr ""
 "Eine gute Dokumentation sollte klar, verständlich und objektiv sein, mit "
 "wohlgeformten Sätzen und, je nach Komplexität, sinnvollen Abschnitten und "
 "Unterkategorien. Siehe dazu auch die :ref:`doc_docs_writing_guidelines`."
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:72
+#: ../../docs/community/contributing/documentation_guidelines.rst:73
 msgid ""
 "We differentiate tutorial pages from other documentation pages by these "
 "definitions:"
@@ -162,7 +164,7 @@ msgstr ""
 "Wir unterscheiden Anleitungen von anderen Dokumentationsinhalten über "
 "folgende Definitionen:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:75
+#: ../../docs/community/contributing/documentation_guidelines.rst:76
 msgid ""
 "Tutorial: a page aiming at explaining how to use one or more concepts in the "
 "editor or scripts in order to achieve a specific goal with a learning "
@@ -174,7 +176,7 @@ msgstr ""
 "veranschaulichen, um ein bestimmtes Lernziel zu erreichen (z.B. \"Ein "
 "einfaches 2D-Pong-Spiel erstellen\", \"Kräfte auf ein Objekt wirken\")."
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:79
+#: ../../docs/community/contributing/documentation_guidelines.rst:80
 msgid ""
 "Documentation: a page describing precisely one and only one concept at a "
 "time, if possible exhaustively (e.g. the list of methods of the Sprite "
@@ -185,7 +187,7 @@ msgstr ""
 "bis ins kleinste Detail (z.B. die Auflistung der Methoden der Sprite-Klasse, "
 "oder eine Übersicht der Eingabeverwaltung in Godot)."
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:83
+#: ../../docs/community/contributing/documentation_guidelines.rst:84
 msgid ""
 "You are free to write the kind of documentation you wish, as long as you "
 "respect the following rules (and the ones on the repo)."
@@ -193,19 +195,20 @@ msgstr ""
 "Es sei Dir freigestellt, welche Art von Dokumentation Du schreiben möchtest "
 "solange Du die folgenden Regeln respektierst (und die aus dem Repo)."
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:87
+#: ../../docs/community/contributing/documentation_guidelines.rst:88
 msgid "Titles"
 msgstr "Überschriften"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:89
+#: ../../docs/community/contributing/documentation_guidelines.rst:90
 msgid "Always begin pages with their title and a Sphinx reference name:"
 msgstr ""
 "Fange jede Seite stets mit der Überschrift an und einer internen Bezeichnung "
 "für den Sphinx-Verweis:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:98
+#: ../../docs/community/contributing/documentation_guidelines.rst:99
+#, fuzzy
 msgid ""
-"The reference allows to link to this page using the ``:ref:`` format, e.g. "
+"The reference allows linking to this page using the ``:ref:`` format, e.g. "
 "``:ref:`doc_insert_your_title_here``` would link to the above example page "
 "(note the lack of leading underscore in the reference)."
 msgstr ""
@@ -213,7 +216,7 @@ msgstr ""
 "würde etwa ``:ref:`doc_insert_your_title_here``` auf die obige Beispielseite "
 "verlinken (man beachte den fehlenden Unterstrich im Verweis)."
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:102
+#: ../../docs/community/contributing/documentation_guidelines.rst:103
 msgid ""
 "Also, avoid American CamelCase titles: title's first word should begin with "
 "a capitalized letter, and every following word should not. Thus, this is a "
@@ -223,19 +226,19 @@ msgstr ""
 "Das erste Wort sollte stets mit einem Großbuchstaben beginnen, während der "
 "Rest normal geschrieben wird. Hier ein gutes Beispiel:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:106
+#: ../../docs/community/contributing/documentation_guidelines.rst:107
 msgid "Insert your title here"
 msgstr "Hier Überschrift einfügen"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:108
+#: ../../docs/community/contributing/documentation_guidelines.rst:109
 msgid "And this is a bad example:"
 msgstr "Und das ist ein schlechtes Beispiel:"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:110
+#: ../../docs/community/contributing/documentation_guidelines.rst:111
 msgid "Insert Your Title Here"
 msgstr "Hier Überschrift Einfügen"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:112
+#: ../../docs/community/contributing/documentation_guidelines.rst:113
 msgid ""
 "Only project, people and node class names should have capitalized first "
 "letter."
@@ -243,11 +246,11 @@ msgstr ""
 "Nur Node-Klassen-, Projekt-, Personennamen und sonstige grammatikalisch "
 "bedingte Fälle sollten großgeschrieben werden."
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:116
+#: ../../docs/community/contributing/documentation_guidelines.rst:117
 msgid "Translating existing pages"
 msgstr "Übersetzen vorhandener Seiten"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:118
+#: ../../docs/community/contributing/documentation_guidelines.rst:119
 msgid ""
 "You can help to translate the official Godot documentation on our `Hosted "
 "Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
@@ -255,21 +258,22 @@ msgstr ""
 "Du kannst bei der Übersetzung der Godot-Dokumentation über unsere `Hosted "
 "Weblate <https://hosted.weblate.org/engage/godot-engine/>`_-Seite mithelfen."
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:125
+#: ../../docs/community/contributing/documentation_guidelines.rst:128
+#, fuzzy
 msgid ""
-"There also is the official `Godot I18N repository <https://github.com/"
-"godotengine/godot-docs-l10n>`_. where you can see when the data was last "
-"synced."
+"There also is the official `Godot i18n repository <https://github.com/"
+"godotengine/godot-docs-l10n>`_ where you can see when the data was last "
+"synchronized."
 msgstr ""
 "Dann gibt es noch das offizielle `Godot I18N-Repository <https://github.com/"
 "godotengine/godot-docs-l10n>`_. wo Du einsehen kannst, wann die letzte "
 "Synchronisation stattgefunden hat."
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:128
+#: ../../docs/community/contributing/documentation_guidelines.rst:133
 msgid "License"
 msgstr "Lizenz"
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:130
+#: ../../docs/community/contributing/documentation_guidelines.rst:135
 msgid ""
 "This documentation and every page it contains is published under the terms "
 "of the `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://"
@@ -281,7 +285,7 @@ msgstr ""
 "attribution-(cc)>`_ unter dem Namen „Juan Linietsky, Ariel Manzur and the "
 "Godot Engine community“ veröffentlicht."
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:133
+#: ../../docs/community/contributing/documentation_guidelines.rst:138
 msgid ""
 "By contributing to the documentation on the GitHub repository, you agree "
 "that your changes are distributed under this license."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,8 @@ msgid ""
 "In the next two tutorials, you will build two responsive UI (user interface) "
 "scenes step-by-step using the engine's UI system:"
 msgstr ""
-"次の2つのチュートリアルでは、エンジンのUIシステムを使用して2つのレスポンシブ"
-"UI(ユーザーインターフェイス)シーンを段階的に構築します:"
+"次のチュートリアル2つでは、エンジンのUIシステムを使用して、2つのレスポンシブ"
+"UI(ユーザーインターフェイス)シーンを1ステップずつ構築していきます:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
 msgid "A main menu."
@@ -67,8 +67,9 @@ msgstr ""
 "main_menu``\\ フォルダにはすべてのスプライトがあります。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
+#, fuzzy
 msgid ""
-"Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot’s "
+"Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot's "
 "UI system works."
 msgstr ""
 "GodotのUIシステムの仕組みを知るには、まず\\ :doc:"
@@ -155,9 +156,10 @@ msgstr ""
 "する特定のコンポーネントを作成する方法。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
+#, fuzzy
 msgid ""
 "We will use the first approach, because the first version of your UI may not "
-"work as well as you’d like. You’re likely to throw parts away and redesign "
+"work as well as you'd like. You're likely to throw parts away and redesign "
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
@@ -207,7 +209,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
 msgid "If there's some padding around an area, use a ``MarginContainer``."
-msgstr "領域の周囲に余白がある場合は、``MarginContainer`` を使用します。"
+msgstr "領域の周囲に余白がある場合は、\\ ``MarginContainer`` を使用します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
 msgid ""
@@ -267,7 +269,6 @@ msgstr ""
 "成するには「シーンメニュー」 の「新規シーン」をクリックします。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
-#, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
@@ -275,11 +276,11 @@ msgid ""
 "interfaces, as you often need padding around the UI. Press :kbd:`Meta + S` "
 "to save the scene to the disk. Name it *MainMenu*."
 msgstr ""
-"シーンを保存する前に、ルートノードを追加する必要があります。UIのルートは、最"
-"も外側のコンテナまたは要素である必要があります。この例では、 "
-"``MarginContainer`` です。UIの周囲にパディングが必要になることが多いため、 "
-"``MarginContainer`` はほとんどのインタフェースの開始点として適しています。"
-"シーンをディスクに保存するには、 ``Meta+S`` を押します。\\ *MainMenu*\\ とい"
+"シーンを保存する前に、ルートノードを追加する必要があります。 UIのルートは、最"
+"も外側のコンテナまたは要素である必要があります。この場合、それは "
+"``MarginContainer`` です。多くの場合、UIの周囲にパディングが必要になるた"
+"め、\\ ``MarginContainer`` はほとんどのインタフェースの出発点として適していま"
+"す。\\ :kbd:`Meta+S` を押してシーンをディスクに保存します。\\ *MainMenu* とい"
 "う名前を付けます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
@@ -294,28 +295,27 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
 msgid "Margin Right: *120*"
-msgstr "右マージン:\\ *120*"
+msgstr "右マージン: *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:137
 msgid "Margin Top: *80*"
-msgstr "上マージン:\\ *80*"
+msgstr "上マージン: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:138
 msgid "Margin Left: *120*"
-msgstr "左マージン:\\ *120*"
+msgstr "左マージン: *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:139
 msgid "Margin Bottom: *80*"
-msgstr "下マージン:\\ *80*"
+msgstr "下マージン: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
-"コンテナをウィンドウに合わせます。 ビューポートの上のツールバー中の\\ "
-"**Layout**\\ メニューを開き、最後のオプション\\ **Full Rect**\\ を選択しま"
-"す。"
+"コンテナをウィンドウに合わせます。 ビューポートの上のツールバー中の\\ **レイ"
+"アウト**\\ メニューを開き、最後のオプション\\ **Rect全面**\\ を選択します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
 msgid "Add the UI sprites"
@@ -335,28 +335,28 @@ msgstr "タイトルまたはロゴ、"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
 msgid "the three text options as individual nodes,"
-msgstr "個別のノードとしての3つのテキストオプション、"
+msgstr "3つのテキスト選択項目を個別のノードで、"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
 msgid "the version note,"
-msgstr "バージョンノート、"
+msgstr "バージョン表示、"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-msgid "and the main menu’s illustration."
+#, fuzzy
+msgid "and the main menu's illustration."
 msgstr "メインメニューのイラスト。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press :kbd:`Meta + A` on your keyboard. "
 "Start to type ``TextureRect`` to find the corresponding node and press "
 "enter. With the new node selected, press :kbd:`Meta + D` five times to "
 "create five extra ``TextureRect`` instances."
 msgstr ""
-"**Add Node** ボタンをクリックするか、キーボードの ``Meta+A`` キーを押しま"
-"す。 ``TextureRect`` と入力して対応するノードを検索し、Enterキーを押します。"
-"新しいノードを選択した状態で ``Meta+D`` を5回押して、追加の ``TextureRect`` "
-"インスタンスを5つ作成します。"
+"**Add Node** ボタンをクリックするか、キーボードの :kbd:`Meta + A` を押しま"
+"す。\\ ``TextureRect`` と入力して対応するノードを検索し、Enterキーを押しま"
+"す。新しいノードを選択した状態で、\\ :kbd:`Meta + D` を5回押して、追加の "
+"``TextureRect`` インスタンスを5つ作成します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
 msgid ""
@@ -364,9 +364,9 @@ msgid ""
 "property and click **[empty] > Load**. A file browser opens and lets you "
 "pick a sprite to load into the texture slot."
 msgstr ""
-"各ノードをクリックして選択します。インスペクタで **Texture**プロパティを見つ"
-"け、 **[空] > 読込み**をクリックします。ファイルブラウザが開き、テクスチャス"
-"ロットにロードするスプライトを選択できます。"
+"各ノードをクリックして選択します。インスペクタで **Texture** プロパティを見つ"
+"け、\\ **[空] > 読込み** をクリックします。ファイルブラウザが開き、テクスチャ"
+"スロットにロードするためのスプライトを選択できます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
 msgid "The file browser lets you find and load textures."
@@ -395,14 +395,15 @@ msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
 msgstr ""
-"ゲームでローカライズをサポートしたい場合は、 ``TextureRect`` の代わりにメ"
-"ニューオプションに ``Labels`` を使用してください。"
+"ゲームを多言語化対応させたい場合は、\\ ``TextureRect`` の代わりにメニューオプ"
+"ションに ``Labels`` を使用してください。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:184
 msgid "Add containers to place UI elements automatically"
 msgstr "UI要素を自動的に配置するコンテナを追加する"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
+#, fuzzy
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -412,16 +413,16 @@ msgid ""
 "allow the user to resize the left and right areas using an interactive bar. "
 "On the other hand, ``HBoxContainer`` just splits itself into as many columns "
 "as it has children. Although you can deactivate the split container's resize "
-"behaviour, I recommend to favour box containers."
+"behavior, I recommend to favor box containers."
 msgstr ""
 "メインメニューは画面の端にマージンがあります。2つの部分に分かれており、左側に"
-"はロゴとメニューオプションがあります。右側に文字があります。これを実現するに"
-"は、 ``HSplitContainer`` または ``HBoxContainer`` という2つのコンテナのいずれ"
-"かを使用します。コンテナを分割すると、領域が左右または上下に分割されます。ま"
-"た、インタラクティブなバーを使用して、左右の領域のサイズを変更することもでき"
-"ます。一方、 ``HBoxContainer`` は、子を持つ列と同じ数の列に分割します。分割コ"
-"ンテナのサイズ変更動作を無効にすることもできますが、ボックスコンテナを優先す"
-"ることをお勧めします。"
+"はロゴとメニュー項目があります。右側にはキャラクターたちがいます。これを実現"
+"するには、 ``HSplitContainer`` または ``HBoxContainer`` という2つのコンテナの"
+"いずれかを使用します。分割(Split)コンテナは、領域を左右または上下に分割しま"
+"す。また、インタラクティブなバーを使用して、左右の領域のサイズを変更すること"
+"もできます。一方、 ``HBoxContainer`` は、子の数と同数の列に分割します。分割コ"
+"ンテナでもサイズ変更動作を無効にできますが、Boxコンテナを優先することをお勧め"
+"します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:197
 msgid ""
@@ -430,17 +431,18 @@ msgid ""
 "the menu options on the left, and a ``CenterContainer`` for the illustration "
 "on the right."
 msgstr ""
-"``MarginContainer`` を選択し、 ``HBoxContainer`` を追加します。次に、 "
-"``HBoxContainer`` の子として2つのコンテナーが必要です。左側にメニューオプショ"
-"ン用の ``VBoxContainer`` 、右側にイラスト用の ``CenterContainer`` がありま"
-"す。"
+"``MarginContainer`` を選択してから、 ``HBoxContainer`` を追加します。次に、 "
+"``HBoxContainer`` の子として2つのコンテナが必要です。左側にはメニュー項目用と"
+"して ``VBoxContainer`` 、右側にはイラスト用として ``CenterContainer`` を使い"
+"ます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr ""
-"4つの入れ子になったコンテナと、それとは別にTextureRectノードがあるはずです。"
+"4つの入れ子になったコンテナと、それとは別に複数のTextureRectノードがあるはず"
+"です。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
 msgid ""
@@ -449,9 +451,9 @@ msgid ""
 "version note. Drag and drop them into the ``VBoxContainer``. The nodes "
 "should position automatically."
 msgstr ""
-"ノードツリーで、左側にあるすべての `` TextureRect`` ノードを選択します。注:ロ"
-"ゴ、メニューオプション、バージョンノートです。それらを `` VBoxContainer`` に"
-"ドラッグアンドドロップします。これらのノードは自動的に配置されます。"
+"ノードツリーで、左側にあるすべての ``TextureRect`` ノードを選択します (ロゴ、"
+"メニュー項目、バージョン表記)。それから、それらを ``VBoxContainer`` にドラッ"
+"グ＆ドロップします。これらのノードは自動的に配置されるはずです。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "Containers automatically place and resize textures"
@@ -459,11 +461,11 @@ msgstr "コンテナは自動的にテクスチャを配置してサイズを変
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
 msgid "We're left with two problems to solve:"
-msgstr "解決すべき2つの問題が残されています:"
+msgstr "解決すべき問題はあと2つ残されています:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
 msgid "The characters on the right aren't centered."
-msgstr "右側の文字が中央に配置されていません。"
+msgstr "右側のキャラクターたちが中央に配置されていません。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
 msgid "There's no space between the logo and the other UI elements."
@@ -480,13 +482,13 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
-"文字を右に中央揃えするには、最初に ``CenterContainer`` を選択します。次に、イ"
-"ンスペクタで **Size Flags** カテゴリまで下にスクロールし、 **Vertical** プロ"
-"パティの右側のフィールドをクリックして、 **Fill** に加えて **Expand** を"
-"チェックします。 **Horizontal** プロパティについても同じことを行います。これ"
-"により、 ``CenterContainer`` は、隣接する ``VBoxContainer`` を尊重しながら、"
-"使用可能なすべてのスペースに拡張されます。最後に、Charactersノードを "
-"``CenterContainer`` にドラッグアンドドロップします。Characters要素は自動的に"
+"キャラクターたちを右に中央揃えするには、最初に ``CenterContainer`` を選択しま"
+"す。次に、インスペクタで **Size Flags** カテゴリまで下にスクロールし、 "
+"**Vertical** プロパティの右側のフィールドをクリックして、 **Fill** に加えて "
+"**Expand** をチェックします。 **Horizontal** プロパティについても同じことを行"
+"います。これにより、 ``CenterContainer`` は、隣接する ``VBoxContainer`` を尊"
+"重しながら、使用可能なすべてのスペースに拡張されます。最後に、Charactersノー"
+"ドを ``CenterContainer`` にドラッグ＆ドロップします。Characters要素は自動的に"
 "中央に配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
@@ -498,7 +500,6 @@ msgstr ""
 "配置されます。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
@@ -507,12 +508,13 @@ msgid ""
 "``NewGame`` and ``Options``, and drag and drop them inside the new "
 "``VBoxContainer``. The UI's layout should barely change, if at all."
 msgstr ""
-"メニューオプションと左側のロゴを区切るために、最後のコンテナとそのサイズフラ"
-"グを使用します。 ``VBoxContainer`` を選択し、 ``Meta+A`` キーを押して内部に新"
-"しいノードを追加します。別の ``VBoxContainer`` を追加し、 *MenuOptions* とい"
-"う名前を付けます。 ``Continue`` 、 ``NewGame`` 、 ``Options`` の3つのメニュー"
-"オプションをすべて選択し、新しい ``VBoxContainer`` 内にドラッグ&ドロップしま"
-"す。UIのレイアウトはほとんど変わらないはずです。"
+"メニューオプションと左側のロゴの間隔を空けるために、1つの最終コンテナとそのサ"
+"イズフラグを使用します。\\ ``VBoxContainer`` を選択して :kbd:`Meta + A` を押"
+"し、その中に新しいノードを追加します。2番目の ``VBoxContainer`` を追加し"
+"て、\\ *MenuOptions* という名前を付けます。3つのメニューオプション "
+"``Continue``\\ 、\\ ``NewGame`` \\ 、\\ ``Options`` をすべて選択し、新しい "
+"``VBoxContainer`` 内にドラッグ&ドロップします。 UIのレイアウトは、もし変わる"
+"としてもわずかです。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
 msgid ""
@@ -574,7 +576,7 @@ msgstr "完成したインターフェイス。"
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
-msgstr "一行のコードも書かずに、正確で応答性の高いメインメニューができます。"
+msgstr "一行のコードも書かずに、正確で応答性の高いメインメニューができました。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:276
 msgid ""
@@ -583,10 +585,10 @@ msgid ""
 "your own. In the next tutorial, you'll create a Game User Interface with "
 "bars and item counters."
 msgstr ""
-"おめでとうございます！完成済メニュー\\ :download:`ui_main_menu_design.zip "
-"<files/ui_main_menu_design.zip>`\\ をダウンロードして、自分で作ったメニューと"
-"比較できます。次のチュートリアルでは、バーとアイテムカウンターを含むゲーム"
-"ユーザーインターフェイスを作成します。"
+"おめでとうございます！　自分で作ったメニューとの比較用に、完成済みメニュー"
+"\\ :download:`ui_main_menu_design.zip <files/ui_main_menu_design.zip>`\\ をダ"
+"ウンロードできます。次のチュートリアルでは、バーとアイテムカウンターを含む"
+"ゲームユーザーインターフェイスを作成します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
 msgid ""
@@ -595,13 +597,12 @@ msgid ""
 "ratios. In Godot, we use containers to control the position and the size of "
 "UI elements."
 msgstr ""
-"レスポンシブユーザーインターフェイスとは、すべての画面タイプで適切にスケーリ"
-"ングされるように作られたUIです。テレビ画面とコンピューターのディスプレイは、"
-"サイズと比率が異なります。 Godotでは、コンテナを使用してUI要素の位置とサイズ"
-"を制御します。"
+"レスポンシブなユーザーインターフェイスとは、すべての画面タイプで適切にスケー"
+"リングされるように作られたUIです。テレビ画面とコンピューターのディスプレイ"
+"は、サイズと比率が異なります。 Godotでは、コンテナを使用してUI要素の位置とサ"
+"イズを制御します。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:289
-#, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press :kbd:`Q` to activate "
@@ -609,9 +610,10 @@ msgid ""
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
 "ネストの順序が重要です。UIがさまざまな画面比率にうまく適応しているかどうかを"
-"確認するには、ルートノードを選択し、Qキーを押して「Select Mode」をアクティブ"
-"にし、コンテナを選択し、コンテナのコーナーの1つをクリック&ドラッグしてサイズ"
-"を変更します。UIコンポーネントはその内部を流れて移動する必要があります。"
+"確認するには、ルートノードを選択し、\\ :kbd:`Q` を押して[選択モード]をアク"
+"ティブにしてコンテナを選択し、コンテナのコーナーの1つをクリック&ドラッグして"
+"サイズを変更します。UIコンポーネントはその内部を流れて移動する必要がありま"
+"す。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:295
 msgid ""
@@ -634,9 +636,9 @@ msgid ""
 "**Mode**, **Aspect**, and **Shrink**, control the screen size. For more "
 "information, see :ref:`doc_multiple_resolutions`."
 msgstr ""
-"プロジェクト設定でスケールモードを変更するには、「プロジェクトメニュー->プロ"
-"ジェクト設定」をクリックします。ウィンドウの左側のカラムで、\\ **Display**\\ "
-"カテゴリを探します。\\ **Window**\\ サブカテゴリをクリックします。ウィンドウ"
-"の右側に、\\ **Stretch**\\ セクションがあります。\\ **Mode**\\ 、\\ "
-"**Aspect**\\ 、\\ **Shrink**\\ の3つの設定は、画面サイズを制御します。詳細に"
-"ついては、\\ :ref:`doc_multiple_resolutions`\\ を参照してください。"
+"プロジェクト設定でスケールモードを変更するには、上部メニューから\\ **プロジェ"
+"クト → プロジェクト設定** をクリックします。ウィンドウ左側のカラムにある、\\ "
+"**Display**\\ カテゴリを探します。\\ **Window**\\ サブカテゴリをクリックしま"
+"す。ウィンドウの右側に、\\ **Stretch**\\ セクションがあります。\\ **Mode**"
+"\\ 、\\ **Aspect**\\ 、\\ **Shrink**\\ の3つの設定は、画面サイズを制御しま"
+"す。詳細については、\\ :ref:`doc_multiple_resolutions`\\ を参照してください。"

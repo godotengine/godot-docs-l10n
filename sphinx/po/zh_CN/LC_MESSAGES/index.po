@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/index.rst:2
-msgid "Godot Docs – *master* branch"
+#, fuzzy
+msgid "Godot Docs – *3.2* branch"
 msgstr "Godot文档—— *主* 分支"
 
 #: ../../docs/index.rst:6
@@ -29,15 +30,18 @@ msgstr ""
 "Godot的文档有多种语言和版本。展开侧栏底部的“阅读文档”面板来查看可用列表。"
 
 #: ../../docs/index.rst:10
+#, fuzzy
 msgid ""
-"This is the documentation for the development (master) branch. Looking for "
-"the documentation of the current **stable** branch? `Have a look here "
-"<https://docs.godotengine.org/en/stable>`_."
+"This is the documentation for the stable 3.2 branch. Looking for the "
+"documentation of the current **development** branch? `Have a look here "
+"<https://docs.godotengine.org/en/latest>`_. You can also browse the "
+"documentation for the previous stable `3.1 <https://docs.godotengine.org/"
+"en/3.1>`_ branch."
 msgstr ""
 "这是开发（主）分支的文档。想要看当前 **稳定** 分支的文档？ `请查看这里 "
 "<http://docs.godotengine.org/en/stable>`_ 。"
 
-#: ../../docs/index.rst:16
+#: ../../docs/index.rst:18
 msgid ""
 "This documentation is translated from the `original English one <https://"
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
@@ -47,7 +51,7 @@ msgstr ""
 "godot-docs>`_上的`原始英文版本 <https://docs.godotengine.org/en/latest>`_翻译"
 "而来。"
 
-#: ../../docs/index.rst:20
+#: ../../docs/index.rst:22
 msgid ""
 "Depending on the translation effort's completion level, you may find "
 "paragraphs or whole pages which are still in English. You can help the "
@@ -57,7 +61,7 @@ msgstr ""
 "根据翻译工作的完成程度，您可能会发现整段甚至整页文档仍然是英文。 可以通过在"
 "Weblate上提供新翻译或校对现有翻译来帮助社区。"
 
-#: ../../docs/index.rst:25
+#: ../../docs/index.rst:27
 msgid ""
 "For the time being, localized translations are only available for the "
 "\"latest\" (development) branch, but should be suitable to learn how to use "
@@ -66,19 +70,20 @@ msgstr ""
 "目前只有针对“最新”（开发）分支的本地化翻译，但应该也适于学习如何使用Godot的稳"
 "定版本。"
 
-#: ../../docs/index.rst:29
+#: ../../docs/index.rst:31
+#, fuzzy
 msgid ""
-"Welcome to the official documentation of Godot Engine, the free and open "
-"source community-driven 2D and 3D game engine! If you are new to this "
-"documentation, we recommend that you read the :ref:`introduction page "
-"<doc_about_intro>` to get an overview of what this documentation has to "
-"offer."
+"Welcome to the official documentation of `Godot Engine <https://godotengine."
+"org>`__, the free and open source community-driven 2D and 3D game engine! If "
+"you are new to this documentation, we recommend that you read the :ref:"
+"`introduction page <doc_about_intro>` to get an overview of what this "
+"documentation has to offer."
 msgstr ""
 "欢迎来到Godot游戏引擎的官方文档，Godot引擎是一款免费、由开源社区驱动的2D和3D"
 "游戏引擎！如果您是初次阅读本文档，我们建议您读一下:ref:`introduction page "
 "<doc_about_intro>`，以对本文档提供的内容有个大概的了解。"
 
-#: ../../docs/index.rst:34
+#: ../../docs/index.rst:37
 msgid ""
 "The table of contents below and in the sidebar should let you easily access "
 "the documentation for your topic of interest. You can also use the search "
@@ -87,7 +92,7 @@ msgstr ""
 "侧栏中的目录表可让您轻松访问感兴趣的主题的文档。您也可以使用左上角的搜索功"
 "能。"
 
-#: ../../docs/index.rst:38
+#: ../../docs/index.rst:41
 msgid ""
 "Godot Engine is an open source project developed by a community of "
 "volunteers. The documentation team can always use your feedback and help to "
@@ -99,7 +104,7 @@ msgstr ""
 "教程和类参考手册。 如果您不理解某些内容，或者无法在文档中找到您要查找的内容，"
 "请通过告知我们来帮助我们更好地完善文档！"
 
-#: ../../docs/index.rst:45
+#: ../../docs/index.rst:48
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -114,31 +119,36 @@ msgstr ""
 "``#documentation`` 频道，或 `irc.freenode.net <http://webchat.freenode.net/?"
 "channels=#godotengine-doc>`_ 的 ``#godotengine-doc`` 频道中和我们交流！"
 
-#: ../../docs/index.rst:55
+#: ../../docs/index.rst:58
 msgid "weblate_widget"
 msgstr "weblate_widget"
 
-#: ../../docs/index.rst:56
+#: ../../docs/index.rst:59
 msgid ""
 "The main documentation for the site is organized into the following sections:"
 msgstr "本站点的主要文档分为以下几个部分："
 
-#: ../../docs/index.rst:58
+#: ../../docs/index.rst:61
 msgid "General"
 msgstr "常规"
 
-#: ../../docs/index.rst:66
+#: ../../docs/index.rst:69
 msgid "Getting started"
 msgstr "入门"
 
-#: ../../docs/index.rst:77
+#: ../../docs/index.rst:80
 msgid "Tutorials"
 msgstr "教程"
 
-#: ../../docs/index.rst:107
+#: ../../docs/index.rst:110
 msgid "Development"
 msgstr "开发"
 
-#: ../../docs/index.rst:118
+#: ../../docs/index.rst:121
 msgid "Community"
 msgstr "社区"
+
+#: ../../docs/index.rst:131
+#, fuzzy
+msgid "Class reference"
+msgstr "数据偏好"

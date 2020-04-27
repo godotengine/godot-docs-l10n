@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -332,10 +332,34 @@ msgid "Rather than:"
 msgstr "而不是："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
+#, fuzzy
+msgid "Member variables"
+msgstr "成员访问"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
+msgid ""
+"Don't declare member variables if they are only used locally in a method, as "
+"it makes the code more difficult to follow. Instead, declare them as local "
+"variables in the method's body."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
+#, fuzzy
+msgid "Local variables"
+msgstr "局部变量"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:277
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:282
 msgid "Implicitly typed local variables"
 msgstr "隐式类型的局部变量"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:284
 msgid ""
 "Consider using implicitly typing (``var``) for declaration of a local "
 "variable, but do so **only when the type is evident** from the right side of "
@@ -344,19 +368,19 @@ msgstr ""
 "考虑使用隐式类型化（``var``）声明局部变量，但是 **仅当类型明显时** 即可从右侧"
 "的赋值推断类型："
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:314
 msgid "Other considerations"
 msgstr "其他注意事项"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:316
 msgid "Use explicit access modifiers."
 msgstr "使用显式访问修饰符。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:317
 msgid "Use properties instead of non-private fields."
 msgstr "使用属性而代替非私有字段。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:318
 msgid ""
 "Use modifiers in this order: ``public``/``protected``/``private``/"
 "``internal``/``virtual``/``override``/``abstract``/``new``/``static``/"
@@ -365,27 +389,27 @@ msgstr ""
 "按此顺序使用修饰符： ``public``/``protected``/``private``/``internal``/"
 "``virtual``/``override``/``abstract``/``new``/``static``/``readonly``。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:306
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:320
 msgid ""
 "Avoid using fully-qualified names or ``this.`` prefix for members when it's "
 "not necessary."
 msgstr "避免在不必要时，为成员使用完全限定的名称或 ``this.`` 前缀。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:307
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:321
 msgid "Remove unused ``using`` statements and unnecessary parentheses."
 msgstr "删除未使用的 ``using`` 语句和不必要的括号。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:308
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:322
 msgid "Consider omitting the default initial value for a type."
 msgstr "考虑省略类型的默认初始值。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:309
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:323
 msgid ""
 "Consider using null-conditional operators or type initializers to make the "
 "code more compact."
 msgstr "考虑使用空条件运算符或类型初始化器来使代码更紧凑。"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:310
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:324
 msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."

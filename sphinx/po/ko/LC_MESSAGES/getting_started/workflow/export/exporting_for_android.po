@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,13 +34,12 @@ msgid "Download the Android SDK"
 msgstr "Android SDK 다운로드하기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
-#, fuzzy
 msgid ""
 "Download and install the Android SDK from `developer.android.com <https://"
 "developer.android.com/studio/>`__."
 msgstr ""
 "https://developer.android.com/studio/ 에서 Android SDK를 다운로드하고 설치하"
-"세요"
+"세요."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
 msgid ""
@@ -126,9 +125,10 @@ msgid "Setting it up in Godot"
 msgstr "Godot에서 설정하기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:49
+#, fuzzy
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
-"for the user account in the computer (it's independent from the project)."
+"for the user account in the computer (it's independent of the project)."
 msgstr ""
 "편집기 설정 화면으로 갑니다. 이 화면은 컴퓨터의 사용자 계정을 위한 편집기 설"
 "정을 갖고 있습니다 (프로젝트와는 독립된 것입니다)."
@@ -151,8 +151,9 @@ msgstr ""
 msgid ""
 "The ``jarsigner`` executable (from JDK 6 or 8) - On Windows, OpenJDK "
 "installs to a dir like ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
-"openjdk-1.8.0.232-2\\bin``. The exact path may vary depending on the OpenJDK "
-"update you've installed."
+"openjdk-1.8.0.232-2\\bin``. On Linux, it typically installs to a dir like ``/"
+"usr/bin/jarsigner``. The exact path may vary depending on the OpenJDK update "
+"you've installed and your machine's operating system."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:67
@@ -186,8 +187,9 @@ msgid "There are two types of icons required by Godot:"
 msgstr "Godot에는 UI를 디자인하는 두 가지 방법이 있습니다. 먼저 당신은:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
+#, fuzzy
 msgid ""
-"**Main Icon:**: The \"classic\" icon. This will be used on all Android "
+"**Main Icon:** The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
 "** Main Icon : ** : \"classic\" icon. 이는 모든 Android 버전에서 최대 "
@@ -248,9 +250,9 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
 msgid ""
-"It's highly recommended to provide all of the requested icons, and at least "
-"with the specified resolutions. Only this way your application will look "
-"great on all the Android devices and versions."
+"It's highly recommended to provide all requested icons, and at least with "
+"the specified resolutions. Only this way your application will look great on "
+"all Android devices and versions."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95

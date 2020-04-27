@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,17 +57,19 @@ msgid "A brief look at static typing"
 msgstr "静态类型简介"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
+#, fuzzy
 msgid ""
 "With typed GDScript, Godot can detect even more errors as you write code! It "
-"gives you and your teammates more information as you’re working, as the "
-"arguments’ types show up when you call a method."
+"gives you and your teammates more information as you're working, as the "
+"arguments' types show up when you call a method."
 msgstr ""
 "使用类型化的GDScript，在编写代码时Godot可以检测到更多错误！它会在您工作时为您"
 "和您的队友提供更多信息，因为当您调用方法时，参数的类型会显示出来。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
+#, fuzzy
 msgid ""
-"Imagine you’re programming an inventory system. You code an ``Item`` node, "
+"Imagine you're programming an inventory system. You code an ``Item`` node, "
 "then an ``Inventory``. To add items to the inventory, the people who work "
 "with your code should always pass an ``Item`` to the ``Inventory.add`` "
 "method. With types, you can enforce this:"
@@ -98,15 +100,17 @@ msgstr ""
 "``PlayerController`` 的类的动态和静态类型补全选项之间的区别。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:59
+#, fuzzy
 msgid ""
-"You’ve probably stored a node in a variable before, and typed a dot to be "
+"You've probably stored a node in a variable before, and typed a dot to be "
 "left with no autocomplete suggestions:"
 msgstr "您之前可能已经将节点存储在变量中，并输入了一个没有自动完成建议的点："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:65
+#, fuzzy
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
-"you’re passing to the function. If you write the type explicitly however, "
+"you're passing to the function. If you write the type explicitly however, "
 "you will get all public methods and variables from the node:"
 msgstr ""
 "这是因为动态代码。Godot无法知道您将什么节点或值类型传递给了函数。但是，如果您"
@@ -121,12 +125,13 @@ msgstr ""
 "线图上！"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:76
+#, fuzzy
 msgid ""
 "Overall, typed programming gives you a more structured experience. It helps "
 "prevent errors and improves the self-documenting aspect of your scripts. "
-"This is especially helpful when you’re working in a team or on a long-term "
+"This is especially helpful when you're working in a team or on a long-term "
 "project: studies have shown that developers spend most of their time reading "
-"other people’s code, or scripts they wrote in the past and forgot about. The "
+"other people's code, or scripts they wrote in the past and forgot about. The "
 "clearer and the more structured the code, the faster it is to understand, "
 "the faster you can move forward."
 msgstr ""
@@ -140,9 +145,10 @@ msgid "How to use static typing"
 msgstr "如何使用静态类型"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:87
+#, fuzzy
 msgid ""
 "To define the type of a variable or a constant, write a colon after the "
-"variable’s name, followed by its type. E.g. ``var health: int``. This forces "
+"variable's name, followed by its type. E.g. ``var health: int``. This forces "
 "the variable's type to always stay the same:"
 msgstr ""
 "要定义变量或常量的类型，请在变量名称后加上一个冒号，后跟它的类型。例如 ``var "
@@ -251,8 +257,9 @@ msgstr ""
 "``PlayerController`` 类型："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:172
+#, fuzzy
 msgid ""
-"As we’re dealing with a custom type, if the ``body`` doesn’t extend "
+"As we're dealing with a custom type, if the ``body`` doesn't extend "
 "``PlayerController``, the ``player``\\ variable will be set to ``null``. We "
 "can use this to check if the body is the player or not. We will also get "
 "full autocompletion on the player variable thanks to that cast."
@@ -272,10 +279,11 @@ msgid "Safe lines"
 msgstr "安全行"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:184
+#, fuzzy
 msgid ""
 "You can also use casting to ensure safe lines. Safe lines are a new tool in "
 "Godot 3.1 to tell you when ambiguous lines of code are type-safe. As you can "
-"mix and match typed and dynamic code, at times, Godot doesn’t have enough "
+"mix and match typed and dynamic code, at times, Godot doesn't have enough "
 "information to know if an instruction will trigger an error or not at "
 "runtime."
 msgstr ""
@@ -284,13 +292,14 @@ msgstr ""
 "没有足够的信息来知道指令在运行时是否会触发错误。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:190
+#, fuzzy
 msgid ""
-"This happens when you get a child node. Let’s take a timer for example: with "
+"This happens when you get a child node. Let's take a timer for example: with "
 "dynamic code, you can get the node with ``$Timer``. GDScript supports `duck-"
 "typing <https://stackoverflow.com/a/4205163/8125343>`__, so even if your "
 "timer is of type ``Timer``, it is also a ``Node`` and an ``Object``, two "
-"classes it extends. With dynamic GDScript, you also don’t care about the "
-"node’s type as long as it has the methods you need to call."
+"classes it extends. With dynamic GDScript, you also don't care about the "
+"node's type as long as it has the methods you need to call."
 msgstr ""
 "当您获得子节点时会发生这种情况。让我们以一个计时器为例：使用动态代码，您可以"
 "使用 ``$Timer`` 获取节点。GDScript支持 `鸭子类型 <https://stackoverflow.com/"
@@ -310,8 +319,8 @@ msgstr ""
 "果是，则行号在脚本编辑器的左侧变为绿色。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:206
-msgid "Safe vs Unsafe Line"
-msgstr "安全与不安全行"
+msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:210
 msgid ""
@@ -345,20 +354,22 @@ msgid "Typed or dynamic: stick to one style"
 msgstr "类型或动态类型：坚持一种风格"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:250
+#, fuzzy
 msgid ""
 "Typed GDScript and dynamic GDScript can coexist in the same project. But I "
 "recommended to stick to either style for consistency in your codebase, and "
-"for your peers. It’s easier for everyone to work together if you follow the "
-"same guidelines, and faster to read and understand other people’s code."
+"for your peers. It's easier for everyone to work together if you follow the "
+"same guidelines, and faster to read and understand other people's code."
 msgstr ""
 "类型化的GDScript和动态GDScript可以共存于同一项目中。但是我建议您使用任意一种"
 "风格，以确保您的代码库和同行的一致性。如果你们遵循相同的准则，那么每个人都可"
 "以更轻松地一起工作，并且可以更快地阅读和理解他人的代码。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:256
+#, fuzzy
 msgid ""
 "Typed code takes a little more writing, but you get the benefits we "
-"discussed above. Here’s an example of the same, empty script, in a dynamic "
+"discussed above. Here's an example of the same, empty script, in a dynamic "
 "style:"
 msgstr ""
 "类型化的代码需要编写更多，但是您将获得上面讨论的好处。这是一个动态风格的，相"
@@ -369,9 +380,10 @@ msgid "And with static typing:"
 msgstr "和使用静态类型："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:286
+#, fuzzy
 msgid ""
-"As you can see, you can also use types with the engine’s virtual methods. "
-"Signal callbacks, like any methods, can also use types. Here’s a "
+"As you can see, you can also use types with the engine's virtual methods. "
+"Signal callbacks, like any methods, can also use types. Here's a "
 "``body_entered`` signal in a dynamic style:"
 msgstr ""
 "如您所见，您还可以将类型与引擎的虚方法一起使用。与任何方法一样，信号回调也可"
@@ -382,17 +394,19 @@ msgid "And the same callback, with type hints:"
 msgstr "以及具有类型提示的，相同的回调："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:302
+#, fuzzy
 msgid ""
-"You’re free to replace, e.g. the ``CollisionObject2D``, with your own type, "
+"You're free to replace, e.g. the ``CollisionObject2D``, with your own type, "
 "to cast parameters automatically:"
 msgstr ""
 "您可以自由替代，例如使用您自己的类型的 ``CollisionObject2D``，自动转换参数："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
+#, fuzzy
 msgid ""
 "The ``bullet`` variable could hold any ``CollisionObject2D`` here, but we "
-"make sure it is our ``Bullet``, a node we created for our project. If it’s "
-"anything else, like an ``Area2D``, or any node that doesn’t extend "
+"make sure it is our ``Bullet``, a node we created for our project. If it's "
+"anything else, like an ``Area2D``, or any node that doesn't extend "
 "``Bullet``, the ``bullet`` variable will be ``null``."
 msgstr ""
 "``bullet`` 变量可以在这里保存任何 ``CollisionObject2D``，但我们需要确保它是我"
@@ -404,8 +418,9 @@ msgid "Warning system"
 msgstr "警告系统"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:321
+#, fuzzy
 msgid ""
-"The warning system complements typed GDScript. It’s here to help you avoid "
+"The warning system complements typed GDScript. It's here to help you avoid "
 "mistakes that are hard to spot during development, and that may lead to "
 "runtime errors."
 msgstr ""
@@ -423,9 +438,10 @@ msgid "warning system project settings"
 msgstr "警告系统项目设置"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:333
+#, fuzzy
 msgid ""
 "You can find a list of warnings for the active GDScript file in the script "
-"editor’s status bar. The example below has 3 warnings:"
+"editor's status bar. The example below has 3 warnings:"
 msgstr ""
 "您可以在脚本编辑器的状态栏中找到有关活动GDScript文件的警告列表。下面的示例有3"
 "条警告："
@@ -435,11 +451,12 @@ msgid "warning system example"
 msgstr "警告系统示例"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:341
+#, fuzzy
 msgid ""
 "To ignore specific warnings in one file, insert a special comment of the "
 "form ``# warning-ignore:warning-id``, or click on the ignore link to the "
-"right of the warning’s description. Godot will add a comment above the "
-"corresponding line and the code won’t trigger the corresponding warning "
+"right of the warning's description. Godot will add a comment above the "
+"corresponding line and the code won't trigger the corresponding warning "
 "anymore:"
 msgstr ""
 "要忽略一个文件中的特定警告，请插入 ``#warning-ignore:warning-id`` 形式的特殊"
@@ -461,11 +478,12 @@ msgstr ""
 "些类型的警告。要忽略所有类型的警告则在文件中添加 ``# warnings-disable``即可。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:356
+#, fuzzy
 msgid ""
-"Warnings won’t prevent the game from running, but you can turn them into "
-"errors if you’d like. This way your game won’t compile unless you fix all "
+"Warnings won't prevent the game from running, but you can turn them into "
+"errors if you'd like. This way your game won't compile unless you fix all "
 "warnings. Head to the ``GDScript`` section of the Project Settings to turn "
-"on this option. Here’s the same file as the previous example with warnings "
+"on this option. Here's the same file as the previous example with warnings "
 "as errors turned on:"
 msgstr ""
 "警告不会阻止游戏的运行，但是您可以根据需要将其转换为错误。这样，除非您修复所"
@@ -477,30 +495,35 @@ msgid "warnings as errors"
 msgstr "警告当作错误"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:368
-msgid "Cases where you can’t specify types"
+#, fuzzy
+msgid "Cases where you can't specify types"
 msgstr "无法指定类型的情况"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:370
+#, fuzzy
 msgid ""
-"To wrap up this introduction, let’s cover a few cases where you can’t use "
+"To wrap up this introduction, let's cover a few cases where you can't use "
 "type hints. All the examples below **will trigger errors**."
 msgstr ""
 "为了总结这个介绍，我们将介绍一些不能使用类型提示的情况。以下所有示例 **都会触"
 "发错误** 。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:373
-msgid "You can’t use Enums as types:"
+#, fuzzy
+msgid "You can't use Enums as types:"
 msgstr "您不能将枚举作为类型："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:380
+#, fuzzy
 msgid ""
-"You can’t specify the type of individual members in an array. This will give "
+"You can't specify the type of individual members in an array. This will give "
 "you an error:"
 msgstr "您无法指定数组中单个成员的类型。这会给您一个错误："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:387
+#, fuzzy
 msgid ""
-"You can’t force the assignment of types in a ``for`` loop, as each element "
+"You can't force the assignment of types in a ``for`` loop, as each element "
 "the ``for`` keyword loops over already has a different type. So you "
 "**cannot** write:"
 msgstr ""
@@ -508,7 +531,8 @@ msgstr ""
 "型。所以您 **不能** 写："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:397
-msgid "Two scripts can’t depend on each other in a cyclic fashion:"
+#, fuzzy
+msgid "Two scripts can't depend on each other in a cyclic fashion:"
 msgstr "两个脚本不能以循环的方式相互依赖："
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:420

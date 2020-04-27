@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:4
-#, fuzzy
 msgid "State design pattern"
-msgstr "Expression de liaison"
+msgstr "Modèle de conception état"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:7
 msgid "Introduction"
@@ -33,28 +32,41 @@ msgid ""
 "creating a state machine within the player's control script, it would make "
 "development simpler if the states were separated out into different classes."
 msgstr ""
+"Écrire les scripts d'un jeu peut être difficile lorsqu'il y a de nombreux "
+"états à gérer, mais un seul script peut être attaché à un nœud à la fois. Au "
+"lieu de créer une machine à états dans le script de contrôle du joueur, le "
+"développement serait plus simple si les états étaient séparés en différentes "
+"classes."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:14
 msgid ""
 "There are many ways to implement a state machine with Godot, and some other "
 "methods are below:"
 msgstr ""
+"Il existe de nombreuses façons de mettre en place une machine à état avec "
+"Godot, et quelques autres méthodes sont présentées ci-dessous :"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:16
 msgid ""
 "The player can have a child node for each state, which are called when "
 "utilized."
 msgstr ""
+"Le joueur peut avoir un nœud enfant pour chaque état, qui sont appelés "
+"lorsqu'ils sont utilisés."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:17
 msgid "Enums can be used in conjunction with a match statement."
 msgstr ""
+"Les énumérations peuvent être utilisées en conjonction avec une instruction "
+"match."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:18
 msgid ""
 "The state scripts themselves could be swapped out from a node dynamically at "
 "run-time."
 msgstr ""
+"Les scripts d'état eux-mêmes peuvent être échangés dynamiquement à partir "
+"d'un nœud au moment de l'exécution."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:20
 msgid ""
@@ -62,20 +74,21 @@ msgid ""
 "state script attached. Each state script will be an implementation of a "
 "different state."
 msgstr ""
+"Ce tutoriel se concentrera uniquement sur l'ajout et la suppression des "
+"nœuds auxquels un script d'état est attaché. Chaque script d'état sera une "
+"implémentation d'un état différent."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:24
-#, fuzzy
 msgid ""
 "There is a great resource explaining the concept of the state design pattern "
 "here: https://gameprogrammingpatterns.com/state.html"
 msgstr ""
-"Vous pouvez en savoir plus sur le modèle d'observateur ici : http://"
-"gameprogrammingpatterns.com/observer.html"
+"Il existe une excellente ressource expliquant le concept de modèle de "
+"conception état ici : https://gameprogrammingpatterns.com/state.html"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:28
-#, fuzzy
 msgid "Script setup"
-msgstr "Type GDScript"
+msgstr "Configuration du script"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:30
 msgid ""
@@ -84,10 +97,15 @@ msgid ""
 "player. For now, a player will be limited to two actions: **move left**, "
 "**move right**. This means there will be two states: **idle** and **run**."
 msgstr ""
+"La caractéristique de l'héritage est utile pour commencer à appliquer ce "
+"principe de conception. Une classe doit être créée qui décrit les "
+"caractéristiques de base du joueur. Pour l'instant, un joueur sera limité à "
+"deux actions : ***move left**, **move right**. Cela signifie qu'il y aura "
+"deux états : **idle** et **run**."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:35
 msgid "Below is the generic state, from which all other states will inherit."
-msgstr ""
+msgstr "Voici l'état générique, dont tous les autres états hériteront."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:66
 msgid ""
@@ -102,12 +120,24 @@ msgid ""
 "remember that *coupling* and *cohesion* are important concepts when it comes "
 "to code management."
 msgstr ""
+"Quelques notes sur le script ci-dessus. Premièrement, cette implémentation "
+"utilise une méthode ``setup(change_state, animated_sprite, "
+"persistent_state)`` pour assigner les références. Ces références seront "
+"instanciées dans le parent de cet état. Cela aide à quelque chose appelé en "
+"programmation *cohesion*. L'état du joueur ne veut pas avoir la "
+"responsabilité de créer ces variables, mais il veut pouvoir les utiliser. "
+"Cependant, cela rend l'état *couplé* au parent de l'état. Cela signifie que "
+"l'état dépend fortement du fait qu'il ait un parent qui contient ces "
+"variables. Donc, rappelez-vous que le *couplage* et la *cohésion* sont des "
+"concepts importants lorsqu'il s'agit de la gestion du code."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:75
 msgid ""
 "See the following page for more details on cohesion and coupling: https://"
 "courses.cs.washington.edu/courses/cse403/96sp/coupling-cohesion.html"
 msgstr ""
+"Voir la page suivante pour plus de détails sur la cohésion et le couplage : "
+"https://courses.cs.washington.edu/courses/cse403/96sp/coupling-cohesion.html"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:78
 msgid ""
@@ -115,6 +145,10 @@ msgid ""
 "implementation. The state script just uses ``pass`` to show that it will not "
 "execute any instructions when the methods are called. This is important."
 msgstr ""
+"Deuxièmement, le scénario prévoit certaines méthodes de déplacement, mais "
+"aucune implementation. Le script d'état utilise simplement ``pass`` pour "
+"montrer qu'il n'exécutera aucune instruction lorsque les méthodes sont "
+"appelées. Ceci est important."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:81
 msgid ""
@@ -124,6 +158,11 @@ msgid ""
 "the states can modify the movement of the player is to use the ``velocity`` "
 "variable defined in their base class."
 msgstr ""
+"Troisièmement, la méthode ``physics_process(delta)`` est en fait implémentée "
+"ici. Cela permet aux états d'avoir une implémentation par défaut de "
+"``phyics_process(delta)`` où la ``velocity`` est utilisée pour déplacer le "
+"joueur. La façon dont les états peuvent modifier le mouvement du joueur est "
+"d'utiliser la variable ``velocity`` définie dans leur classe de base."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:85
 msgid ""
@@ -131,12 +170,18 @@ msgid ""
 "``State``. This makes refactoring the code easier, since the file path from "
 "using the ``load()`` and ``preload()`` functions in godot will not be needed."
 msgstr ""
+"Enfin, ce script est en fait désigné comme une classe nommée ``State``. Cela "
+"rend la refactorisation du code plus facile, puisque le chemin d'accès au "
+"fichier ne sera pas nécessaire pour utiliser les fonctions ``load()`` et "
+"``preload()`` dans godot."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:88
 msgid ""
 "So, now that there is a base state, the two states discussed earlier can be "
 "implemented."
 msgstr ""
+"Ainsi, maintenant qu'il existe un état de base, les deux états dont il a été "
+"question plus haut peuvent être mis en œuvre."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:154
 msgid ""
@@ -149,17 +194,30 @@ msgid ""
 "as ``_ready()``, ``_process(delta)``, etc. Custom functions use the normal "
 "inheritance rules of overriding the base implementation."
 msgstr ""
+"Puisque les états ``Run`` et ``Idle`` s'étendent à partir de ``State`` qui "
+"étend de ``Node2D``, la fonction ``_physics_process(delta)`` est appelée à "
+"partir de **bottom-up**, ce qui signifie ``Run`` et ``Idle`` appelleront "
+"leur implémentation de ``_physics_process(delta)``, puis ``State`` appellera "
+"sot implémentation, puis `Node2D`` appellera sa propre implémentation et "
+"ainsi de suite. Cela peut sembler étrange, mais cela n'est pertinent que "
+"pour des fonctions prédéfinies telles que ``_ready()``, ``_process(delta)``, "
+"etc. Les fonctions personnalisées utilisent les règles d'héritage normales "
+"qui consistent à surcharger l'implémentation de base."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:161
 msgid ""
 "There is a round-about method for obtaining a state instance. A state "
 "factory can be used."
 msgstr ""
+"Il existe une méthode indirecte pour obtenir une instance d'état. Une usine "
+"à état peut être utilisée."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:184
 msgid ""
 "This will look for states in a dictionary and return the state if found."
 msgstr ""
+"Cela recherchera les états dans un dictionnaire et retournera l'état s'il "
+"est trouvé."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:186
 msgid ""
@@ -168,6 +226,10 @@ msgid ""
 "Since these references will not change it makes sense to call this new "
 "script ``persistent_state.gd``."
 msgstr ""
+"Maintenant que tous les états sont définis avec leurs propres scripts, il "
+"est temps de comprendre comment les références qui leur sont passées seront "
+"instanciées. Étant donné que ces références ne changeront pas, il est "
+"logique d'appeler ce nouveau script ``persistent_state.gd``."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:229
 msgid ""
@@ -175,6 +237,9 @@ msgid ""
 "was to make the tutorial simple, but it is not usually best practice to do "
 "this."
 msgstr ""
+"Le script ``persistent_state.gd`` contient du code pour détecter les "
+"entrées. C'était pour rendre le tutoriel simple, mais ce n'est généralement "
+"pas la meilleure pratique de le faire."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:233
 msgid "Project setup"
@@ -189,6 +254,12 @@ msgid ""
 "idle and run animations. Also, the top-level node is assumed to be a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`."
 msgstr ""
+"Ce tutoriel suppose que le noeud auquel il est attaché contient un noeud "
+"enfant qui est un :ref:`AnimatedSprite <class_AnimatedSprite>`. Il y a aussi "
+"l'hypothèse que ce :ref:`AnimatedSprite <class_AnimatedSprite>` a au moins "
+"deux animations, l' animations= au repos et celle de cours. De plus, le "
+"noeud de plus haut niveau est supposé être un :ref:`KinematicBody2D "
+"<class_KinematicBody2D>`."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:242
 msgid ""
@@ -199,6 +270,12 @@ msgid ""
 "tutorial for sprite animation already. See :ref:`2D Sprite Animation "
 "<doc_2d_sprite_animation>`."
 msgstr ""
+"Le fichier zip du llama utilisé dans ce tutoriel est :download:`ici <files/"
+"llama.zip>`. La source provient de `piskel_llama <https://www.piskelapp.com/"
+"p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgICfx5ygCQw/edit>`_, mais je n'ai pas "
+"pu trouver d'informations sur le créateur original sur cette page... Il y a "
+"aussi déjà un bon tutoriel sur l'animation de sprites. Voir :ref:`2D Sprite "
+"Animation <doc_2d_sprite_animation>`."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:247
 msgid ""
@@ -206,6 +283,9 @@ msgid ""
 "should be attached to the top node of the player, which is a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`."
 msgstr ""
+"Ainsi, le seul script qui doit être attaché est ``persistent_state.gd``, qui "
+"doit être attaché au noeud de plus au niveau du joueur, qui est un :ref:"
+"`KinematicBody2D <class_KinematicBody2D>`."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:254
 msgid ""
@@ -215,3 +295,9 @@ msgid ""
 "focus on itself and how it changes to another state. Each state is "
 "functionally separated and instantiated dynamically."
 msgstr ""
+"Maintenant, le joueur a utilisé le modèle de conception d'état pour "
+"implémenter ses deux états différents. La bonne partie de ce modèle est que "
+"si l'on voulait ajouter un autre état, cela impliquerait de créer une autre "
+"classe qui ne doit se concentrer que sur elle-même et sur la façon dont elle "
+"passe à un autre état. Chaque état est fonctionnellement séparé et instancié "
+"dynamiquement."

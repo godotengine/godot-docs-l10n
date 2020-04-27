@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,18 +26,17 @@ msgid "Introduction"
 msgstr "Введение"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "A file system manages how assets are stored and how they are accessed. A "
 "well-designed file system also allows multiple developers to edit the same "
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
-"Файловые системы - еще одна горячая тема в разработке движков. Файловая "
-"система управляет тем, как хранятся эти ресурсы и как к ним можно получить "
-"доступ. Хорошо продуманная файловая система также позволяет нескольким "
-"разработчикам редактировать одни и те же исходные файлы и ресурсы в процессе "
-"совместной работы."
+"Файловая система управляет тем, как хранятся ресурсы и как к ним "
+"осуществляется доступ. Хорошо продуманная файловая система также позволяет "
+"нескольким разработчикам редактировать одни и те же исходные файлы и ресурсы "
+"во время совместной работы. Godot хранит всю библиотеку ресурсов в виде "
+"файлов в своей файловой системе."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
@@ -61,19 +60,17 @@ msgstr ""
 "ресурс шрифтов часто поставляется в комплекте с текстурами шрифтов."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
-#, fuzzy
 msgid ""
 "The Godot file system avoids using metadata files. Existing asset managers "
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
-"В общем, файловая система Godot избегает использования метаданных файлов. "
-"Причина проста, существующие управляющие активами и VCS намного лучше, чем "
-"все, что мы можем реализовать, поэтому Godot старается работать вместе с "
-"SVN, Git, Mercurial, Perforce и т.д."
+"Файловая система Godot избегает использования файлов метаданных. "
+"Существующие менеджеры активов и VCS лучше всего, чем все, что мы можем "
+"реализовать, поэтому Godot старается всеми силами работать вместе с SVN, "
+"Git, Mercurial, Perfce и т.д."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:28
-#, fuzzy
 msgid "Example of file system contents:"
 msgstr "Пример содержимого файловой системы:"
 
@@ -92,7 +89,6 @@ msgstr ""
 "находится корень. Это первый файл, который Godot ищет при открытии проекта."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
-#, fuzzy
 msgid ""
 "This file contains the project configuration in plain text, using the win."
 "ini format. Even an empty project.godot can function as a basic definition "
@@ -157,7 +153,6 @@ msgid "User path"
 msgstr "Путь пользователя"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
-#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
@@ -173,7 +168,6 @@ msgid "Host file system"
 msgstr "Родительская файловая система"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
-#, fuzzy
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
@@ -181,10 +175,10 @@ msgid ""
 "writing development tools in Godot."
 msgstr ""
 "В качестве альтернативы можно также использовать пути родительской файловой "
-"системы, но это не рекомендуется для выпускаемого продукта, поскольку не "
-"гарантировано, что эти пути будут работать на всех платформах. Однако, "
-"использование путей родительской файловой системы может быть полезно при "
-"написании инструментов разработки на Godot!"
+"системы, но этого не рекомендуется делать для собранного продукта, так как "
+"эти пути не гарантируют работу на всех платформах. Однако использование "
+"путей родительской файловой системы может быть полезно при написании средств "
+"разработки в Godot."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:89
 msgid "Drawbacks"
@@ -218,7 +212,6 @@ msgstr ""
 "путем?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:101
-#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -236,7 +229,6 @@ msgstr ""
 "всех файлов."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:107
-#, fuzzy
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot. One simple fool-proof convention is to only "

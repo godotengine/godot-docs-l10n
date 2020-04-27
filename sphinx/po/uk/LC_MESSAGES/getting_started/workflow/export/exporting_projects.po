@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,12 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:4
 msgid "Exporting projects"
-msgstr ""
+msgstr "Експортування проектів"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:9
-#, fuzzy
 msgid "Why export?"
-msgstr "ОС (експорт)"
+msgstr "Чому експорт?"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:11
 msgid ""
@@ -32,6 +31,9 @@ msgid ""
 "would compile the proper binaries and build the packages for each platform "
 "manually."
 msgstr ""
+"Спочатку у Godot не було засобів для експорту проектів. Розробники "
+"компілювали відповідні бінарні файли та збирали пакети для кожної платформи "
+"вручну."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:15
 msgid ""
@@ -39,10 +41,13 @@ msgid ""
 "our company started taking more projects at the same time, it became evident "
 "that this was a bottleneck."
 msgstr ""
+"Коли його почали використовувати більше розробників (і навіть не "
+"програмістів), і наша компанія стала привабливішою для більшої кількості "
+"проектів, стало очевидним, що це вузьке місце."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:20
 msgid "On PC"
-msgstr ""
+msgstr "На ПК"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:22
 msgid ""
@@ -50,6 +55,9 @@ msgid ""
 "binary in the same directory as the ``project.godot`` file, then compress "
 "the project directory and you are done."
 msgstr ""
+"Поширити ігровий проект на ПК з Godot досить просто. Перетягніть бінарний "
+"файл Godot в ту саму директорію, що і файл ``project.godot``, а потім "
+"стисніть каталог проекту і готово."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:26
 msgid ""
@@ -61,16 +69,26 @@ msgid ""
 "binary, which is smaller in size, more optimized and does not include tools "
 "like the editor and debugger."
 msgstr ""
+"Це звучить просто, але, мабуть, є кілька причин, через які розробник може не "
+"захотіти цього робити. Перша полягає в тому, що, можливо, не бажано "
+"поширювати файли завантаження. Деякі розробники можуть не любити допитливих "
+"користувачів, які заглядають, як була зроблена гра, інші можуть вважати це "
+"неелегантним, тощо. Ще одна причина полягає в тому, що розробник може "
+"віддавати перевагу спеціально скомпільованому бінарнику, який менший за "
+"розміром, більш оптимізований і не включає такі інструменти, як редактор та "
+"налагоджувач."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:34
 msgid ""
 "Finally, Godot has a simple but efficient system for creating DLCs as extra "
 "package files."
 msgstr ""
+"Нарешті, Godot має просту, але ефективну систему для створення DLC, як "
+"додаткових пакетних файлів."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:38
 msgid "On mobile"
-msgstr ""
+msgstr "На мобільний"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:40
 msgid ""
@@ -78,6 +96,9 @@ msgid ""
 "project on those devices, a binary for each of those platforms is built, "
 "then added to a native project together with the game data."
 msgstr ""
+"Той самий сценарій для мобільних платформ трохи не підходить. Для "
+"розповсюдження проекту на цих пристроях компілюється бінарник для кожної з "
+"цих платформ, а потім додається до проекту разом із даними гри."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid ""
@@ -86,6 +107,10 @@ msgid ""
 "While learning each SDK is always encouraged, it can be frustrating to be "
 "forced to do it at an undesired time."
 msgstr ""
+"Тут є трохи замороки, оскільки це означає, що розробник повинен ознайомитися "
+"з SDK кожної платформи, перш ніж мати можливість експортувати. Хоча вивчення "
+"кожного SDK завжди заохочується, може бути неприємно коли приходиться робити "
+"це в небажаний час."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:50
 msgid ""
@@ -95,10 +120,16 @@ msgid ""
 "standardized for more than a decade, but mobile devices use different "
 "formats for texture compression, such as PVRTC (iOS) or ETC (Android)."
 msgstr ""
+"З цим підходом є й інша проблема: різні пристрої віддають перевагу деяким "
+"даним у різних форматах. Основний приклад цього - стиснення текстур. Все "
+"апаратне забезпечення ПК використовує стиснення S3TC (BC), яке було "
+"стандартизовано вже більше десятиліття, але мобільні пристрої використовують "
+"різні формати для стиснення текстури, наприклад PVRTC (iOS), або ETC "
+"(Android)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
 msgid "Export menu"
-msgstr ""
+msgstr "Меню експорту"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:60
 msgid ""
@@ -106,16 +137,21 @@ msgid ""
 "proven to work the best. At the time of this writing, not all platforms are "
 "supported yet, but the supported platforms continue to grow."
 msgstr ""
+"Після багатьох спроб у різних експортних робочих процесах поточний проявився "
+"найкращим чином. На момент написання цього документа ще не всі платформи "
+"підтримуються, але підтримуваних платформ стає все більше."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
 msgid "To open the export menu, click the **Export** button:"
-msgstr ""
+msgstr "Щоб відкрити меню експорту, натисніть кнопку **Експорт**:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
 msgid ""
 "The export menu will open. However, it will be completely empty. This is "
 "because we need to add an export preset."
 msgstr ""
+"Відкриється меню експорту. Однак воно буде абсолютно порожнім. Це тому, що "
+"нам потрібно додати попередньо встановлений експорт."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:73
 msgid ""
@@ -123,6 +159,9 @@ msgid ""
 "export menu. This will open a drop-down list of platforms to choose from for "
 "an export preset."
 msgstr ""
+"Щоб створити попередньо встановлений експорт, натисніть кнопку **Додати…** у "
+"верхній частині меню експорту. Це відкриє спадний список платформ для вибору "
+"встановлення експорту."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:79
 msgid ""
@@ -133,17 +172,24 @@ msgid ""
 "is missing and will not allow the user to export for that platform until "
 "they resolve it:"
 msgstr ""
+"Варіантів за замовчуванням часто достатньо для експорту, тому налаштування "
+"їх зазвичай не потрібне. Однак для багатьох платформ потрібні додаткові "
+"інструменти (SDK) для встановлення експорту. Крім того, Godot потребує "
+"експортних шаблонів, встановлених для створення пакетів. Меню експорту "
+"скаржиться, коли чогось немає, і не дозволить користувачу експортувати на цю "
+"платформу, поки проблему не буде вирішено:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:88
 msgid ""
 "At that time, the user is expected to come back to the documentation and "
 "follow instructions on how to properly set up that platform."
 msgstr ""
+"Користувачу варто в таких випадках звернутися до документації та "
+"дотримуватися інструкцій щодо правильної настройки цієї платформи."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
-#, fuzzy
 msgid "Export templates"
-msgstr "Експорт шаблонів"
+msgstr "Шаблони експорту"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:94
 msgid ""
@@ -152,12 +198,18 @@ msgid ""
 "a renamed ZIP archive) from the `download page of the website <https://www."
 "godotengine.org/download>`_."
 msgstr ""
+"Крім створення платформи, для експорту проектів повинні бути встановлені "
+"шаблони експорту. Їх можна отримати у вигляді файлу TPZ (який є "
+"перейменованим архівом ZIP) на `сторінці завантаження <https://www."
+"godotengine.org/download>`_."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
 msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
 msgstr ""
+"Після завантаження їх можна встановити за допомогою параметра **Встановити "
+"шаблони експорту** у редакторі:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:105
 msgid "Export mode"
@@ -168,18 +220,20 @@ msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
 msgstr ""
+"При експортуванні, Godot складає список усіх файлів, які потрібно "
+"експортувати, а потім створює пакет. Існує 3 режими експортування:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
 msgid "Export every single file in the project"
-msgstr ""
+msgstr "Експорт кожного файла у проекті"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
 msgid "Export only resources (+ custom filter), this is the default."
-msgstr ""
+msgstr "Експорт лише ресурсів (+ спеціальний фільтр), це за замовчуванням."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
 msgid "Export only selected resources (+ custom filter)"
-msgstr ""
+msgstr "Експорт лише вибраних ресурсів (+ спеціальний фільтр)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
 msgid ""
@@ -188,6 +242,10 @@ msgid ""
 "developers often have a lot of unrelated stuff around in the project "
 "directory, which makes it a bad idea."
 msgstr ""
+"**Експорт кожного окремого файлу** - Цей режим експортує кожен файл у "
+"проекті. З цим режимом жоден файл не буде забутий, але у розробників у "
+"директорії проекту часто знаходиться багато речей, які не треба "
+"експортувати, через що цей режим підходить далеко не завжди."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
 msgid ""
@@ -196,6 +254,10 @@ msgid ""
 "their games. To compensate for this, filters can be added for extra "
 "extensions (for instance, ``*.txt,*.csv``)."
 msgstr ""
+"**Експорт лише ресурсів** - експортуються лише ресурси . Для більшості "
+"проектів цього достатньо. Однак багато розробників люблять використовувати "
+"власні файли даних у своїх іграх. Для цього можуть бути додані фільтри для "
+"додаткових розширень (наприклад, ``*.txt,*.csv``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid ""
@@ -205,10 +267,15 @@ msgid ""
 "is exported. Individual resources can be selected and dependency detection "
 "is performed to ensure that everything needed is added."
 msgstr ""
+"**Експорт лише вибраних ресурсів** - експортуються лише окремі ресурси зі "
+"списку. Це, мабуть, перебільшення для більшості проектів, але в деяких "
+"випадках це виправдано (зазвичай це величезні проекти). Цей режим пропонує "
+"повний контроль над експортом. Можна вибрати окремі ресурси та виконувати "
+"виявлення залежності, щоб забезпечити додавання всього необхідного."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
 msgid "Exporting from the command line"
-msgstr ""
+msgstr "Експорт із командного рядка"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
 msgid ""
@@ -217,6 +284,10 @@ msgid ""
 "from the command line still requires an export preset to define the export "
 "parameters. A basic invocation of the command would be:"
 msgstr ""
+"У виробництві, це корисно для автоматизації компіляції, і Godot підтримує це "
+"з параметрами командного рядка ``--export`` і ``--export-debug``. Експорт із "
+"командного рядка все ще потребує попереднього встановлення експорту для "
+"визначення параметрів експорту. Основним викликом команди буде:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
 msgid ""
@@ -225,6 +296,10 @@ msgid ""
 "relative to the project path or absolute; it does not respect the directory "
 "the command was invoked from."
 msgstr ""
+"Це буде експортовано до ``some_name.exe``, якщо припустити, що є попереднє "
+"встановлення під назвою \"Windows Desktop\", і цей шаблон можна знайти. Шлях "
+"виходу відносно шляху проекту, або абсолютний; він не поважає каталог, з "
+"якого викликалася команда."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
 msgid ""
@@ -232,9 +307,14 @@ msgid ""
 "single export to be used with multiple Godot executables. This takes place "
 "if the target name ends with ``.pck`` or ``.zip``."
 msgstr ""
+"Ви також можете налаштувати його для експорту лише файлу PCK, або ZIP, що "
+"дозволяє використовувати один експорт із кількома виконуваними програмами "
+"Godot. Це має місце, якщо ім'я цілі закінчується на ``.pck``, або ``.zip``."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
 msgstr ""
+"Часто корисно поєднувати ``--export`` із ``--path`` та створювати "
+"спеціальний попередньо встановлений експорт для автоматизованого експорту:"

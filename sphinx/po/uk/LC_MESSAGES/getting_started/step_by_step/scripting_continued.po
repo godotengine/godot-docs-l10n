@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgid ""
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
-"Обробка в режимі очікування активується, коли в скрипті знайдено метод  :ref:"
+"Обробка в режимі очікування активується, коли в скрипті знайдено метод :ref:"
 "`Node._process() <class_Node_method__process>`.  Його можна вимкнути та "
 "увімкнути за допомогою функції  :ref:`Node.set_process() "
 "<class_Node_method_set_process>`."
@@ -68,9 +68,10 @@ msgstr ""
 "програма. Цей показник може змінюватись в залежності від часу та пристроїв."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+#, fuzzy
 msgid ""
-"To help manage this variability the ``delta`` parameter contains the time "
-"elapsed in seconds, as a floating point, since the previous call to "
+"To help manage this variability, the ``delta`` parameter contains the time "
+"elapsed in seconds as a floating-point number since the previous call to "
 "``_process()``."
 msgstr ""
 "Для управління цією властивістю є параметр ``delta``, який містить час у "
@@ -85,15 +86,15 @@ msgstr ""
 "однаковий час, незалежно від FPS гри."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
+#, fuzzy
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
-"speed both constant and independent from the frame rate."
+"speed both constant and independent of the frame rate."
 msgstr ""
 "Наприклад, рух часто множать на дельту часу, щоб зробити швидкість руху "
 "постійною і незалежною від частоти кадрів."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
-#, fuzzy
 msgid ""
 "Physics processing with ``_physics_process()`` is similar, but it should be "
 "used for processes that must happen before each physics step, such as "
@@ -106,7 +107,7 @@ msgstr ""
 "використовувати для процесів, які повинні відбуватися перед кожним етапом "
 "фізики, наприклад, керування персонажем. Вона завжди працює перед початком "
 "фізичного кроку і викликається через фіксований інтервал часу: 60 разів за "
-"секунду за замовчуванням. Інтервал можна змінити в Налаштуваннях проекту, у "
+"секунду за замовчуванням. Інтервал можна змінити в Параметрах проекту, у "
 "розділі Фізика -> Загальні -> Фізика Fps."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
@@ -231,7 +232,6 @@ msgid "Overridable functions"
 msgstr "Обробка"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
-#, fuzzy
 msgid ""
 "Such overridable functions, which are described as follows, can be applied "
 "to nodes:"
@@ -296,27 +296,24 @@ msgstr ""
 "режимі очікування."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
-#, fuzzy
 msgid "Instancing scenes"
-msgstr "Вставка екземпляру сцени"
+msgstr "Інстансування сцени"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:347
-#, fuzzy
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
-"Вставка екземпляру сцени з коду робиться в два етапи. Перший - це "
-"завантаження сцени з вашого жорсткого диска:"
+"Інстансування сцени з коду робиться в два етапи. Перший - це завантаження "
+"сцени з вашого жорсткого диска:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:360
-#, fuzzy
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
-"Попереднє завантаження може бути зручнішим, як це відбувається за час "
-"розбору (лише для GDScript):"
+"Попереднє завантаження може бути зручнішим, так як відбувається під час "
+"розбору (parse time) (лише для GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
 msgid ""

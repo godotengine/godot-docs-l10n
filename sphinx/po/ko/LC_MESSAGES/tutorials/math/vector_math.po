@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -278,23 +278,17 @@ msgid "Normalization"
 msgstr "표준화"
 
 #: ../../docs/tutorials/math/vector_math.rst:189
+#, fuzzy
 msgid ""
 "**Normalizing** a vector means reducing its length to ``1`` while preserving "
 "its direction. This is done by dividing each of its components by its "
-"magnitude:"
+"magnitude. Because this is such a common operation, ``Vector2`` and "
+"``Vector3`` provide a method for normalizing:"
 msgstr ""
 "벡터를 **표준화** 한다는 것의 의미는 벡터의 방향은 유지하면서 벡터의 길이를 1"
 "로 줄이는 것입니다. 이것은 각 벡터를 그것의 크기로 나누면서 이루어집니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:208
-msgid ""
-"Because this is such a common operation, ``Vector2`` and ``Vector3`` provide "
-"a method for normalizing:"
-msgstr ""
-"이것은 일반적인 계산이기 때문에, ``vector2`` 와 ``vector3`` 는 표준화하는 방"
-"법을 제공합니다:"
-
-#: ../../docs/tutorials/math/vector_math.rst:221
+#: ../../docs/tutorials/math/vector_math.rst:204
 msgid ""
 "Because normalization involves dividing by the vector's length, you cannot "
 "normalize a vector of length ``0``. Attempting to do so will result in an "
@@ -303,11 +297,11 @@ msgstr ""
 "표준화는 벡터 길이로 나누어지기 때문에 길이 \"0\"의 벡터를 표준화할 수 없습니"
 "다. 이렇게 시도한다면 오류가 발생할 것입니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:226
+#: ../../docs/tutorials/math/vector_math.rst:209
 msgid "Reflection"
 msgstr "반사"
 
-#: ../../docs/tutorials/math/vector_math.rst:228
+#: ../../docs/tutorials/math/vector_math.rst:211
 msgid ""
 "A common use of unit vectors is to indicate **normals**. Normal vectors are "
 "unit vectors aligned perpendicularly to a surface, defining its direction. "
@@ -318,7 +312,7 @@ msgstr ""
 "면에 수직으로 정렬된 단위 벡터를 말하며, 방향을 정의합니다. 이 장치는 일반적"
 "으로 조명, 충돌 및 표면과 관련된 기타 작업에 사용됩니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:233
+#: ../../docs/tutorials/math/vector_math.rst:216
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
@@ -326,7 +320,7 @@ msgstr ""
 "예를 들어, 우리가 벽이나 다른 물체에서 튀기길 원하는 움직이는 공을 가지고 있"
 "다고 상상해 보세요:"
 
-#: ../../docs/tutorials/math/vector_math.rst:238
+#: ../../docs/tutorials/math/vector_math.rst:221
 msgid ""
 "The surface normal has a value of ``(0, -1)`` because this is a horizontal "
 "surface. When the ball collides, we take its remaining motion (the amount "
@@ -343,11 +337,11 @@ msgstr ""
 " 위 다이어그램의 GDScript 예제는 :ref:\"KinemicalBody2D "
 "<class_KinemicalBody2D>를 이용하는 것입니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:268
+#: ../../docs/tutorials/math/vector_math.rst:251
 msgid "Dot product"
 msgstr "내적"
 
-#: ../../docs/tutorials/math/vector_math.rst:270
+#: ../../docs/tutorials/math/vector_math.rst:253
 msgid ""
 "The **dot product** is one of the most important concepts in vector math, "
 "but is often misunderstood. Dot product is an operation on two vectors that "
@@ -359,24 +353,24 @@ msgstr ""
 "내적은 두 벡터를 **스칼라** 로 반환해주는 연산입니다.  크기와 방향 모두를 포"
 "함하는 벡터와는 다르게 스칼라 값은 오직 크기만 갖습니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:275
+#: ../../docs/tutorials/math/vector_math.rst:258
 msgid "The formula for dot product takes two common forms:"
 msgstr "내적의 공식은 두가지 형식을 취한다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:277
+#: ../../docs/tutorials/math/vector_math.rst:260
 msgid ""
 "A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 msgstr ""
 
-#: ../../docs/tutorials/math/vector_math.rst:281
+#: ../../docs/tutorials/math/vector_math.rst:264
 msgid "and"
 msgstr "그리고"
 
-#: ../../docs/tutorials/math/vector_math.rst:283
+#: ../../docs/tutorials/math/vector_math.rst:266
 msgid "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
 msgstr "A·B = Ax Bx + Ay By"
 
-#: ../../docs/tutorials/math/vector_math.rst:287
+#: ../../docs/tutorials/math/vector_math.rst:270
 msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
@@ -384,7 +378,7 @@ msgstr ""
 "그러나, 대부분의 경우에서 기본 방법을 사용하는 것이 가장 쉽습니다. \n"
 "두 벡터의 순서는 중요하지 않습니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:301
+#: ../../docs/tutorials/math/vector_math.rst:284
 msgid ""
 "The dot product is most useful when used with unit vectors, making the first "
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
@@ -393,17 +387,17 @@ msgstr ""
 "내적은 첫 번째 공식을 cosθ로 줄이면서 단위벡터를 사용할 때 가장 유용합니다.\n"
 "즉, 단위벡터를 사용하여 두 벡터 간의 각도에 대해 설명할 수 있습니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:307
+#: ../../docs/tutorials/math/vector_math.rst:290
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
 msgstr "단위벡터를 사용할때, 결과는 항상 -1(180°)에서 1(0°) 사이일 것이다."
 
-#: ../../docs/tutorials/math/vector_math.rst:311
+#: ../../docs/tutorials/math/vector_math.rst:294
 msgid "Facing"
 msgstr "직면"
 
-#: ../../docs/tutorials/math/vector_math.rst:313
+#: ../../docs/tutorials/math/vector_math.rst:296
 msgid ""
 "We can use this fact to detect whether an object is facing toward another "
 "object. In the diagram below, the player ``P`` is trying to avoid the "
@@ -415,13 +409,15 @@ msgstr ""
 "아래 그림에서 ``P`` 선수는 좀비 ``A`` 와 ``B`` 를 피하려고 합니다.\n"
 "좀비의 시야가 **180°** 라고 가정하면 플레이어를 볼 수 있을까요?"
 
-#: ../../docs/tutorials/math/vector_math.rst:319
+#: ../../docs/tutorials/math/vector_math.rst:302
+#, fuzzy
 msgid ""
 "The green arrows ``fA`` and ``fB`` are **unit vectors** representing the "
 "zombies' facing directions and the blue semicircle represents its field of "
 "view. For zombie ``A``, we find the direction vector ``AP`` pointing to the "
-"player using ``P - A`` and normalize it. If the angle between this vector "
-"and the facing vector is less than 90°, then the zombie can see the player."
+"player using ``P - A`` and normalize it, however, Godot has a helper method "
+"to do this called ``direction_to``. If the angle between this vector and the "
+"facing vector is less than 90°, then the zombie can see the player."
 msgstr ""
 "녹색 화살표 ``fA`` 와 ``fB`` 는 좀비들이 마주보는 방향을 나타내는 **단위 벡터"
 "** 이고 파란 반원형은 그것의 시야를 나타냅니다. \n"
@@ -430,15 +426,15 @@ msgstr ""
 "이 벡터와 마주보는 벡터 사이의 각도가 90° 미만일 경우 좀비는 플레이어를 볼 "
 "수 있습니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:326
+#: ../../docs/tutorials/math/vector_math.rst:310
 msgid "In code it would look like this:"
 msgstr "코드에서는 이렇게 보일 것이다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:344
+#: ../../docs/tutorials/math/vector_math.rst:328
 msgid "Cross product"
 msgstr "외적"
 
-#: ../../docs/tutorials/math/vector_math.rst:346
+#: ../../docs/tutorials/math/vector_math.rst:330
 #, fuzzy
 msgid ""
 "Like the dot product, the **cross product** is an operation on two vectors. "
@@ -451,21 +447,21 @@ msgstr ""
 "직의 방향을 가진 벡터입니다. 그것의 크기는 그것들의 상대적인 각도에 의존합니"
 "다. 만약 두 벡터가 평행이라면, 외적의 결과는 0벡터일 것입니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:351
+#: ../../docs/tutorials/math/vector_math.rst:335
 msgid ""
 "\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
 "\\right \\|\\ |\\sin(a,b)|"
 msgstr "||a X b|| = ||a|| ||b|| |sin(a,b)|"
 
-#: ../../docs/tutorials/math/vector_math.rst:357
+#: ../../docs/tutorials/math/vector_math.rst:341
 msgid "The cross product is calculated like this:"
 msgstr "외적은 이렇게 계산된다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:376
+#: ../../docs/tutorials/math/vector_math.rst:360
 msgid "With Godot, you can use the built-in method:"
 msgstr "고도에서는, 기본 방법을 사용할 수 있습니다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:387
+#: ../../docs/tutorials/math/vector_math.rst:371
 msgid ""
 "In the cross product, order matters. ``a.cross(b)`` does not give the same "
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
@@ -474,11 +470,11 @@ msgstr ""
 "외적에서는, 순서가 중요합니다. \"a.cross(b)\"는 \"b.cross(a)\"와 같은 결가가 "
 "나오지 않습니다.  결과 벡터는 **반대쪽** 방향을 가리킵니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:392
+#: ../../docs/tutorials/math/vector_math.rst:376
 msgid "Calculating normals"
 msgstr "법선 계산하기"
 
-#: ../../docs/tutorials/math/vector_math.rst:394
+#: ../../docs/tutorials/math/vector_math.rst:378
 msgid ""
 "One common use of cross products is to find the surface normal of a plane or "
 "surface in 3D space. If we have the triangle ``ABC`` we can use vector "
@@ -490,15 +486,15 @@ msgstr ""
 "를 찾을 수 있습니다. 외적을 이용하여 \"AB x AC\"는 두 가지 모두에 수직인 벡터"
 "를 생성합니다: 표면에 수직방향."
 
-#: ../../docs/tutorials/math/vector_math.rst:399
+#: ../../docs/tutorials/math/vector_math.rst:383
 msgid "Here is a function to calculate a triangle's normal:"
 msgstr "이것은 삼각형에 수직인 평면을 계산하는 함수이다:"
 
-#: ../../docs/tutorials/math/vector_math.rst:423
+#: ../../docs/tutorials/math/vector_math.rst:407
 msgid "Pointing to a target"
 msgstr "대상 가리키기"
 
-#: ../../docs/tutorials/math/vector_math.rst:425
+#: ../../docs/tutorials/math/vector_math.rst:409
 #, fuzzy
 msgid ""
 "In the dot product section above, we saw how it could be used to find the "
@@ -514,11 +510,11 @@ msgstr ""
 "우리는 현재 마주보는 방향과 목표 방향의 외적을 계산함으로써 그것을 발견할 수 "
 "있습니다. 결과 수직 벡터는 회전의 축입니다."
 
-#: ../../docs/tutorials/math/vector_math.rst:433
+#: ../../docs/tutorials/math/vector_math.rst:417
 msgid "More information"
 msgstr "더 많은 정보"
 
-#: ../../docs/tutorials/math/vector_math.rst:435
+#: ../../docs/tutorials/math/vector_math.rst:419
 msgid ""
 "For more information on using vector math in Godot, see the following "
 "articles:"
@@ -526,10 +522,10 @@ msgstr ""
 "고도에서 벡터 수학을 이용하는 것에 대해 더 많은 정보를 원한다면, 다음 글들을 "
 "봐주십시오:"
 
-#: ../../docs/tutorials/math/vector_math.rst:437
+#: ../../docs/tutorials/math/vector_math.rst:421
 msgid ":ref:`doc_vectors_advanced`"
 msgstr ":ref:`doc_vectors_advanced`"
 
-#: ../../docs/tutorials/math/vector_math.rst:438
+#: ../../docs/tutorials/math/vector_math.rst:422
 msgid ":ref:`doc_matrices_and_transforms`"
 msgstr ":ref:`doc_matrices_and_transforms`"

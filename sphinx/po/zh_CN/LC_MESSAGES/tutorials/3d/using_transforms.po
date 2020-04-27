@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -484,28 +484,29 @@ msgid "Converting a rotation to quaternion is straightforward."
 msgstr "将旋转转换为四元数很简单。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:383
+#, fuzzy
 msgid ""
 "The :ref:`class_Quat` type reference has more information on the datatype "
 "(it can also do transform accumulation, transform points, etc., though this "
 "is used less often). If you interpolate or apply operations to quaternions "
-"many times, keep in mind they need to be eventually normalized or they also "
-"may suffer from numerical precision errors."
+"many times, keep in mind they need to be eventually normalized. Otherwise, "
+"they will also suffer from numerical precision errors."
 msgstr ""
 ":ref:`class_Quat` 类型的引用有更多关于数据类型的信息(它也可以做变换累加，变换"
 "点等等，虽然这个用法较少)。 如果多次对四元数进行插值或应用运算，请记住它们最"
 "后需要归一化，否则它们可能会产生数值精度错误。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:385
+#: ../../docs/tutorials/3d/using_transforms.rst:389
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
 msgstr "四元数在做相机/路径/等东西时很有用。 插值的结果总会是正确且平滑的。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:388
+#: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid "Transforms are your friend"
 msgstr "变换是你的朋友"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:390
+#: ../../docs/tutorials/3d/using_transforms.rst:394
 msgid ""
 "For most beginners, getting used to working with transforms can take some "
 "time. However, once you get used to them, you will appreciate their "
@@ -514,7 +515,7 @@ msgstr ""
 "对于大多数初学者来说，习惯于使用变换可能需要一些时间。 但是，一旦你习惯了它"
 "们，你会欣赏他们的简单而有力。"
 
-#: ../../docs/tutorials/3d/using_transforms.rst:392
+#: ../../docs/tutorials/3d/using_transforms.rst:396
 msgid ""
 "Don't hesitate to ask for help on this topic in any of Godot's `online "
 "communities <https://godotengine.org/community>`_ and, once you become "

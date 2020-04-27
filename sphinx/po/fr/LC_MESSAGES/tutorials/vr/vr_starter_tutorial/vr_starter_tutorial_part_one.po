@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -561,11 +561,12 @@ msgid "Creating the controllers"
 msgstr "Création des contrôleurs"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:195
+#, fuzzy
 msgid ""
 "Right now all that the VR user can do is stand around, which isn't really "
 "what we are going for unless we are working on a VR film. Lets write the "
-"code for the VR controllers. We are going to write all of the code for the "
-"VR controllers in one go, so the code is rather long. That said, once we are "
+"code for the VR controllers. We are going to write all the code for the VR "
+"controllers in one go, so the code is rather long. That said, once we are "
 "finished you will be able to teleport around the scene, artificially move "
 "using the touchpad/joystick on the VR controller, and be able to pick up, "
 "drop, and throw :ref:`RigidBody <class_RigidBody>`-based nodes."
@@ -769,8 +770,9 @@ msgstr ""
 "l'éditeur de script."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:247
+#, fuzzy
 msgid ""
-"If you do this, all of the code copied will be using spaces instead of tabs."
+"If you do this, all the code copied will be using spaces instead of tabs."
 msgstr ""
 "Si vous faites cela, tout le code copié utilisera des espaces au lieu de "
 "tabulations."
@@ -800,7 +802,8 @@ msgid "Explaining the VR controller code"
 msgstr "Explication du code du contrôleur VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:545
-msgid "First, let's go through all of the class variables in the script:"
+#, fuzzy
+msgid "First, let's go through all the class variables in the script:"
 msgstr ""
 "Tout d'abord, passons en revue toutes les variables de classe dans le "
 "script :"
@@ -980,11 +983,11 @@ msgstr ""
 "contrôleur de VR déplace le joueur à l'aide du touchpad/joystick."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:567
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:708
+#, fuzzy
 msgid ""
 "You can find a great article explaining all about how to handle touchpad/"
-"joystick dead zones here: http://www.third-helix.com/2013/04/12/doing-"
-"thumbstick-dead-zones-right.html"
+"joystick dead zones `here <https://web.archive.org/web/20191208161810/http://"
+"www.third-helix.com/2013/04/12/doing-thumbstick-dead-zones-right.html>`__."
 msgstr ""
 "Vous pouvez trouver un bon article qui explique tout sur la façon de gérer "
 "les zones mortes des touchpad/joystick ici : http://www.third-helix."
@@ -1312,10 +1315,11 @@ msgstr ""
 "contrôleur VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:656
+#, fuzzy
 msgid ""
 "Finally, the last section of code simply calls the "
 "``_physics_process_directional_movement`` function. This function contains "
-"all of the code for moving the player when the touchpad/joystick on the VR "
+"all the code for moving the player when the touchpad/joystick on the VR "
 "controller moves."
 msgstr ""
 "Enfin, la dernière section du code appelle simplement la fonction "
@@ -1491,7 +1495,7 @@ msgstr ""
 "Le code est détaillé dans l'article ci-dessous, avec de légères "
 "modifications au fur et à mesure de la conversion du code C# en GDScript."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:710
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:708
 msgid ""
 "Once the ``trackpad_vector`` and ``joystick_vector`` variables have had "
 "their deadzones account for, the code then gets the forward and right "
@@ -1517,7 +1521,7 @@ msgstr ""
 "dans une variable appelée ``forward_direction``, tandis que le vecteur de "
 "direction droite est stocké dans une variable appelée ``right_direction``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:716
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:714
 msgid ""
 "Next the code adds the ``trackpad_vector`` and ``joystick_vector`` variables "
 "together and normalizes the results using the ``normalized`` function. This "
@@ -1532,7 +1536,7 @@ msgstr ""
 "ref:`Vecteur2 <classe_Vecteur2>` pour déplacer l'utilisateur. Nous assignons "
 "la direction combinée à une variable appelée ``movement_vector``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:719
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:717
 msgid ""
 "Then we calculate the distance the user will move forward, relative to the "
 "forward direction stored in ``forward_direction``. To calculate this, we "
@@ -1549,7 +1553,7 @@ msgstr ""
 "vers l'avant ou vers l'arrière. Nous l'attribuons à une variable appelée "
 "``movement_forward``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:723
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:721
 msgid ""
 "We do a similar calculation for the distance the user will move right, "
 "relative to the right direction stored in ``right_direction``. To calculate "
@@ -1567,7 +1571,7 @@ msgstr ""
 "trackpad/joystick est poussé à droite ou à gauche. Nous l'attribuons à une "
 "variable appelée ``movement_right``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:727
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:725
 msgid ""
 "Next we remove any movement on the ``Y`` axis of ``movement_forward`` and "
 "``movement_right`` by assigning their ``Y`` values to ``0``. We do this so "
@@ -1580,7 +1584,7 @@ msgstr ""
 "simplement en déplaçant le trackpad ou le joystick. Sans cela, le joueur "
 "pourrait voler dans la direction à laquelle il fait face."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:730
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:728
 msgid ""
 "Finally, we check to see if the ``length`` function on ``movement_right`` or "
 "``movement_forward`` is greater than ``0``. If it is, then we need to move "
@@ -1603,7 +1607,7 @@ msgstr ""
 "variable ``directional_movement`` à ``true`` pour que le code sache que ce "
 "contrôleur VR déplace le joueur."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:735
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:733
 msgid ""
 "If the ``length`` function on ``movement_right`` or ``movement_forward`` is "
 "less than or equal to ``0``, then we simply set the ``directional_movement`` "
@@ -1615,7 +1619,7 @@ msgstr ""
 "``directional_movement`` à ``false`` pour que le code sache que ce "
 "contrôleur VR ne déplace pas le joueur."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:741
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:739
 msgid ""
 "What this function ultimately does is takes the input from the VR "
 "controller's trackpad and joystick and moves the player in the direction the "
@@ -1629,11 +1633,11 @@ msgstr ""
 "pousse vers l'avant et tourne sa tête vers la gauche, il se déplacera vers "
 "la gauche."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:746
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:744
 msgid "``button_pressed`` function step-by-step explanation"
 msgstr "Explication étape par étape de la fonction ``button_pressed``"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:748
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:746
 msgid ""
 "This function checks to see if the VR button that was just pressed is equal "
 "to one of the VR buttons used in this project. The ``button_index`` variable "
@@ -1645,7 +1649,7 @@ msgstr ""
 "est passée par le signal ``button_pressed`` dans :ref:`ARVRController "
 "<class_ARVRController>`, que nous avons connecté dans la fonction ``ready``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:751
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:749
 msgid ""
 "There are only three buttons we are looking for in this project: the trigger "
 "button, the grab/grip button, and the menu button."
@@ -1653,7 +1657,7 @@ msgstr ""
 "Il n'y a que trois boutons que nous recherchons dans ce projet : le bouton "
 "de déclenchement, le bouton de saisie et le bouton de menu."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:753
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:751
 msgid ""
 "You may need to remap these button index values depending on your VR headset "
 "and controller. The inputs in this tutorial are the index values of a "
@@ -1663,7 +1667,7 @@ msgstr ""
 "votre casque VR et de vos contrôleurs. Les entrées de ce tutoriel sont les "
 "valeurs d'index d'un casque Windows Mixed Reality."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:756
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:754
 msgid ""
 "First we check if the ``button_index`` is equal to ``15``, which should map "
 "to the trigger button on the VR controller. If the button pressed is the "
@@ -1674,7 +1678,7 @@ msgstr ""
 "pressé est le bouton de déclenchement, alors la fonction "
 "``on_button_pressed_trigger`` est appelée."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:759
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:757
 msgid ""
 "If the ``button_index`` is equal to ``2``, then the grab button was just "
 "pressed. If the button pressed is the grab button, the "
@@ -1684,7 +1688,7 @@ msgstr ""
 "enfoncé. Si le bouton pressé est le bouton de saisie, la fonction "
 "``on_button_pressed_grab`` est appelée."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:761
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:759
 msgid ""
 "Finally, if the ``button_index`` is equal to ``1``, then the menu button was "
 "just pressed. If the button pressed is the menu button, the "
@@ -1694,12 +1698,12 @@ msgstr ""
 "d'être enfoncé. Si le bouton pressé est le bouton de menu, la fonction "
 "``on_button_pressed_menu`` est appelée."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:765
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:763
 msgid "``_on_button_pressed_trigger`` function step-by-step explanation"
 msgstr ""
 "Explication étape par étape de la fonction ``_on_button_pressed_trigger``"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:767
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:765
 msgid ""
 "First this function checks to see if the VR controller is not holding by "
 "checking if ``held_object`` is equal to ``null``. If the VR controller is "
@@ -1717,7 +1721,7 @@ msgstr ""
 "si l'autre contrôleur VR essaie de téléporter ou non, car ``teleport_mesh`` "
 "sera visible si l'autre contrôleur VR téléporte."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:771
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:769
 msgid ""
 "If ``teleport_mesh.visible`` is equal to ``false``, then we can teleport "
 "with this VR controller. We set the ``teleport_button_down`` variable to "
@@ -1738,7 +1742,7 @@ msgstr ""
 "visible pour que le joueur dispose d'un 'laser sight' qu'il pourra utiliser "
 "pour viser la position de téléportation."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:778
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:776
 msgid ""
 "If ``held_object`` is not equal to ``null``, then the VR controller is "
 "holding something. We then check to see if the object that is being held, "
@@ -1756,16 +1760,16 @@ msgstr ""
 "utiliserons sur tous les nœuds basés sur les :ref:`RigidBody "
 "<class_RigidBody>` special / custom dans le projet."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:782
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:857
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:881
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:780
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:855
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:879
 msgid ""
 "Don't worry, we will cover ``VR_Interactable_Rigidbody`` after this section!"
 msgstr ""
 "Ne vous inquiétez pas, nous couvrirons ``VR_Interactable_Rigidbody`` après "
 "cette section !"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:784
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:782
 msgid ""
 "If the ``held_object`` extends ``VR_Interactable_Rigidbody``, then we call "
 "the ``interact`` function, so the held object can do whatever it is supposed "
@@ -1777,11 +1781,11 @@ msgstr ""
 "qu'il est censé faire lorsque le déclencheur est pressé et que l'objet est "
 "tenu par le contrôleur VR."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:789
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:787
 msgid "``_on_button_pressed_grab`` function step-by-step explanation"
 msgstr "Explication étape par étape de la fonction ``_on_button_pressed_grab``"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:791
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:789
 msgid ""
 "First this function checks to see if ``teleport_button_down`` is equal to "
 "``true``. If it is, then it calls ``return``. We do this because we do not "
@@ -1792,7 +1796,7 @@ msgstr ""
 "que nous ne voulons pas que l'utilisateur puisse prendre des objets pendant "
 "la téléportation."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:794
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:792
 msgid ""
 "Then we check to see if the VR controller is currently not holding anything "
 "by checking if ``held_object`` is equal to ``null``. If the VR controller is "
@@ -1806,7 +1810,7 @@ msgstr ""
 "contrôleur VR tient quelque chose, ``held_object`` n'est pas égal à "
 "``null``, alors la fonction ``throw_rigidbody`` est appelée."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:797
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:795
 msgid ""
 "Finally, the pick-up/drop sound is played by calling the ``play`` function "
 "on ``hand_pickup_drop_sound``."
@@ -1814,11 +1818,11 @@ msgstr ""
 "Enfin, le son de pick-up/drop est joué en appelant la fonction ``play`` sur "
 "``hand_pickup_drop_sound``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:801
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:799
 msgid "``_pickup_rigidbody`` function step-by-step explanation"
 msgstr "Explication étape par étape de la fonction ``_pickup_rigidbody``"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:803
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:801
 msgid ""
 "First the function makes a variable called ``rigid_body``, which we'll be "
 "using to store the :ref:`RigidBody <class_RigidBody>` that the VR controller "
@@ -1828,7 +1832,7 @@ msgstr ""
 "utiliserons pour stocker le :ref:`RigidBody <class_RigidBody>` que le "
 "contrôleur VR va ramasser, en supposant qu'il y ait un RigidBody à ramasser."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:808
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:806
 msgid ""
 "Then the function checks to see if the ``grab_mode`` variable is equal to "
 "``AREA``. If it is, then it gets all of the :ref:`PhysicsBody "
@@ -1844,7 +1848,7 @@ msgstr ""
 "`PhysicsBody <class_PhysicsBody>`. Nous assignons le tableau de :ref:"
 "`PhysicsBody <class_PhysicsBody>` à une nouvelle variable appelée ``bodies``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:812
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:810
 msgid ""
 "We then check to see if the length of the ``bodies`` variable is more than "
 "``0``. If it is, we go through each of the :ref:`PhysicsBody "
@@ -1855,7 +1859,7 @@ msgstr ""
 "`PhysicsBody <class_PhysicsBody>` dans ``bodies`` en utilisant une boucle "
 "for."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:814
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:812
 msgid ""
 "For each :ref:`PhysicsBody <class_PhysicsBody>` node, we check if it is, or "
 "extends, a :ref:`RigidBody <class_RigidBody>` node using ``if body is "
@@ -1886,7 +1890,7 @@ msgstr ""
 "variable ``rigid_body`` au nœud :ref:`RigidBody <class_RigidBody>` et "
 "cassons la boucle for."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:820
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:818
 msgid ""
 "What this section of code does is goes through all of the physics bodies "
 "within the ``grab_area`` and grabs the first :ref:`RigidBody "
@@ -1900,7 +1904,7 @@ msgstr ""
 "``rigid_body`` pour que nous puissions faire un post-traitement "
 "supplémentaire plus tard dans cette fonction."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:825
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:823
 msgid ""
 "If the ``grab_mode`` variable is not equal to ``AREA``, we then check to see "
 "if it is equal to ``RAYCAST`` instead. If it is equal to ``RAYCAST``, we "
@@ -1921,7 +1925,7 @@ msgstr ""
 "utilisant la fonction ``is_colliding``, qui retournera vrai si le :ref:"
 "`Raycast <class_Raycast>` a touché quelque chose."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:829
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:827
 msgid ""
 "If the ``grab_raycast`` hit something, we get the :ref:`PhysicsBody "
 "<class_PhysicsBody>` node hit using the ``get_collider`` function. The code "
@@ -1943,7 +1947,7 @@ msgstr ""
 "``NO_PICKUP``, et si ce n'est pas le cas, alors il assigne le nœud :ref:"
 "`RigidBody <class_RigidBody>` à la variable ``rigid_body``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:834
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:832
 msgid ""
 "What this section of code does is sends the ``grab_raycast`` :ref:`Raycast "
 "<class_Raycast>` node out and checks if it collided with a :ref:`RigidBody "
@@ -1959,7 +1963,7 @@ msgstr ""
 "il assigne le nœud à la variable ``rigid_body`` pour que nous puissions "
 "faire un post-traitement supplémentaire plus tard dans cette fonction."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:840
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:838
 msgid ""
 "The final section of code first checks to see if ``rigid_body`` is not equal "
 "to ``null``. If ``rigid_body`` is not equal to ``null``, then the VR "
@@ -1971,7 +1975,7 @@ msgstr ""
 "VR a trouvé un nœud basé sur :ref:`RigidBody <class_RigidBody>` qui peut "
 "être récupéré."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:843
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:841
 msgid ""
 "If there is a VR controller to pickup, we assign ``held_object`` to the :ref:"
 "`RigidBody <class_RigidBody>` node stored in ``rigid_body``. We then store "
@@ -1988,7 +1992,7 @@ msgstr ""
 "clés pour les valeurs respectives. Cela nous permet de les réappliquer plus "
 "tard, lorsque l'objet est déposé par le contrôleur VR."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:847
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:845
 msgid ""
 "We then set the :ref:`RigidBody <class_RigidBody>`'s mode to "
 "``MODE_STATIC``, it's ``collision_layer`` to zero, and it's "
@@ -2002,7 +2006,7 @@ msgstr ""
 "pas interagir avec d'autres objets dans le monde physique lorsqu'il est tenu "
 "par le contrôleur VR."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:850
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:848
 msgid ""
 "Next the ``hand_mesh`` :ref:`MeshInstance <class_MeshInstance>` is made "
 "invisible by setting the ``visible`` property to ``false``. This is so the "
@@ -2015,7 +2019,7 @@ msgstr ""
 "ne gêne pas l'objet tenu. De même, le 'laser sight' de ``grab_raycast`` est "
 "rendu invisible en réglant la propriété ``visible`` sur ``false``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:853
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:851
 msgid ""
 "Then the code checks to see if the held object extends a class called "
 "``VR_Interactable_Rigidbody``. If it does, then sets a variable called "
@@ -2035,8 +2039,8 @@ msgstr ""
 "VR, où la référence au contrôleur est stockée dans la variable "
 "``controller``, en appelant la fonction ``picked_up``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:859
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:883
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:857
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:881
 msgid ""
 "The code should make more sense after completing part 2 of this tutorial "
 "series, where we will actually be using ``VR_Interactable_Rigidbody``."
@@ -2044,7 +2048,7 @@ msgstr ""
 "Le code devrait avoir plus de sens après avoir terminé la deuxième partie de "
 "cette série de tutoriels, où nous utiliserons ``VR_Interactable_Rigidbody``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:861
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:859
 msgid ""
 "What this section of code does is that if a :ref:`RigidBody "
 "<class_RigidBody>` was found using the grab :ref:`Area <class_Area>` or :ref:"
@@ -2056,11 +2060,11 @@ msgstr ""
 "<class_Area>` ou :ref:`Raycast <class_Raycast>`, il le configure de manière "
 "à ce qu'il puisse être porté par le contrôleur VR."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:865
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:863
 msgid "``_throw_rigidbody`` function step-by-step explanation"
 msgstr "Explication étape par étape de la fonction ``_throw_rigidbody``"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:867
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:865
 msgid ""
 "First the function checks to see if the VR controller is not holding any "
 "object by checking if the ``held_object`` variable is equal to ``null``. If "
@@ -2077,7 +2081,7 @@ msgstr ""
 "de s'assurer que si quelque chose d'étrange se produit, cette fonction "
 "réagira comme prévu."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:871
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:869
 msgid ""
 "After checking if the VR controller is holding an object, we assume it is "
 "and set the stored :ref:`RigidBody <class_RigidBody>` data back to the held "
@@ -2094,7 +2098,7 @@ msgstr ""
 "``held_object``. Cela va remettre le :ref:`RigidBody <class_RigidBody>` dans "
 "l'état où il était avant d'être ramassé."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:875
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:873
 msgid ""
 "Then we call ``apply_impulse`` on the ``held_object`` so that the :ref:"
 "`RigidBody <class_RigidBody>` is thrown in the direction of the VR "
@@ -2104,7 +2108,7 @@ msgstr ""
 "sorte que le :ref:`RigidBody <class_RigidBody>` soit lancé dans la direction "
 "de la vitesse du contrôleur VR, ``controller_velocity``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:877
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:875
 msgid ""
 "We then check to see if the object held extends a class called "
 "``VR_Interactable_Rigidbody``. If it does, then we call a function called "
@@ -2125,7 +2129,7 @@ msgstr ""
 "mis la variable ``controller`` à ``null`` de sorte que le :ref:`RigidBody "
 "<class_RigidBody>` sache qu'il n'est plus tenu."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:885
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:883
 msgid ""
 "Regardless of whether ``held_object`` extends ``VR_Interactable_Rigidbody`` "
 "or not, we then set ``held_object`` to ``null`` so the VR controller knows "
@@ -2139,7 +2143,7 @@ msgstr ""
 "nous rendons le ``hand_mesh`` visible en mettant ``hand_mesh.visible`` à "
 "true."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:888
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:886
 msgid ""
 "Finally, if the ``grab_mode`` variable is set to ``RAYCAST``, we set "
 "``grab_raycast.visible`` to ``true`` so the 'laser sight' for the :ref:"
@@ -2149,11 +2153,11 @@ msgstr ""
 "définissons ``grab_raycast.visible`` sur ``true``, de sorte que le 'laser "
 "sight' :ref:`Raycast <class_Raycast>` dans ``grab_raycast`` soit visible."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:892
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:890
 msgid "``_on_button_pressed_menu`` function step-by-step explanation"
 msgstr "Explication étape par étape de la fonction ``_on_button_pressed_menu``"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:894
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:892
 msgid ""
 "First this function checks to see if the ``grab_mode`` variable is equal to "
 "``AREA``. If it is, then it sets ``grab_mode`` to ``RAYCAST``. It then "
@@ -2169,7 +2173,7 @@ msgstr ""
 "alors ``grab_raycast.visible`` est réglé sur ``true``, de sorte que la "
 "'laser sight' sur le grab raycast est visible."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:898
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:896
 msgid ""
 "If the ``grab_mode`` variable is not equal to ``AREA``, then it checks to "
 "see if it is equal to ``RAYCAST``. If it is, then it sets the ``grab_mode`` "
@@ -2181,7 +2185,7 @@ msgstr ""
 "``AREA`` et règle ``grab_raycast.visible`` à ``false``, de sorte que la "
 "'laser sight' sur le grab raycast n'est pas visible."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:901
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:899
 msgid ""
 "This section of code simply changes how the VR controller will grab :ref:"
 "`RigidBody <class_RigidBody>`-based nodes when the grab/grip button is "
@@ -2200,11 +2204,11 @@ msgstr ""
 "<class_Raycast>` dans ``grab_raycast`` sera utilisé pour détecter les nœuds :"
 "ref:`RigidBody <class_RigidBody>`."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:907
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:905
 msgid "``button_released`` function step-by-step explanation"
 msgstr "Explication étape par étape de la fonction ``button_released``"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:909
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:907
 msgid ""
 "The only section of code in this function checks to see if the index of the "
 "button that was just released, ``button_index``, is equal to ``15``, which "
@@ -2220,7 +2224,7 @@ msgstr ""
 "ref:`ARVRController <class_ARVRController>`, que nous avons connecté dans la "
 "fonction ``_ready``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:912
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:910
 msgid ""
 "If the trigger button was just released, then the "
 "``_on_button_released_trigger`` function is called."
@@ -2228,12 +2232,12 @@ msgstr ""
 "Si le bouton de déclenchement vient d'être relâché, alors la fonction "
 "``on_button_released_trigger`` est appelée."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:916
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:914
 msgid "``_on_button_released_trigger`` function step-by-step explanation"
 msgstr ""
 "Explication étape par étape de la fonction ``_on_button_released_trigger``"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:918
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:916
 msgid ""
 "The only section of code in this function first checks to see if the VR "
 "controller is trying to teleport by checking if the ``teleport_button_down`` "
@@ -2243,7 +2247,7 @@ msgstr ""
 "contrôleur VR essaie d téléporter en vérifiant si la variable "
 "``teleport_button_down`` est égale à ``true``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:920
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:918
 msgid ""
 "If the ``teleport_button_down`` variable is equal to ``true``, the code then "
 "checks if there is a teleport position set and whether the teleport mesh is "
@@ -2256,7 +2260,7 @@ msgstr ""
 "``teleport_pos`` n'est pas égal à ``null`` et si ``teleport_mesh.visible`` "
 "est égal à ``true``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:923
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:921
 msgid ""
 "If there is a teleport position set and the teleport mesh is visible, the "
 "code then calculates the offset from the camera to the :ref:`ARVROrigin "
@@ -2278,7 +2282,7 @@ msgstr ""
 "`ARVRCamera <class_ARVRCamera>`, que nous stockons dans une variable appelée "
 "``camera_offset``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:927
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:925
 msgid ""
 "The reason we need to know the offset is because some VR headsets use room "
 "tracking, where the player's camera can be offset from the :ref:`ARVROrigin "
@@ -2300,7 +2304,7 @@ msgstr ""
 "serait décalée de la distance que vous avez par rapport au nœud :ref:"
 "`ARVROrigine <classe_ARVROrigine>`."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:931
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:929
 msgid ""
 "Now that we know the offset from the VR camera to the VR origin, we need to "
 "remove the difference on the ``Y`` axis. We do this because we do not want "
@@ -2313,7 +2317,7 @@ msgstr ""
 "l'utilisateur. Si nous ne le faisions pas, lors de la téléportation, la tête "
 "du joueur serait au niveau du sol."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:934
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:932
 msgid ""
 "Then we can 'teleport' the player by setting the global position "
 "(``global_transform.origin``) of the ARVROrigin node to the position stored "
@@ -2328,7 +2332,7 @@ msgstr ""
 "sorte que les utilisateurs apparaissent exactement là où ils veulent "
 "lorsqu'ils se téléportent."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:937
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:935
 msgid ""
 "Finally, regardless of whether the VR controller teleported the user or not, "
 "we reset the teleport related variables. ``teleport_button_down`` is set to "
@@ -2343,11 +2347,11 @@ msgstr ""
 "visible`` est réglé sur ``false``, et ``teleport_pos`` est réglé sur "
 "``null``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:942
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:940
 msgid "``sleep_area_entered`` function step-by-step explanation"
 msgstr "Explication étape par étape de la fonction ``sleep_area_entered``"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:944
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:942
 msgid ""
 "The only section of code in this function checks to see if the :ref:"
 "`PhysicsBody <class_PhysicsBody>` node that entered the ``Sleep_Area`` node "
@@ -2361,7 +2365,7 @@ msgstr ""
 "variable ``can_sleep`` à ``false`` et met la variable ``sleeping`` à "
 "``false``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:947
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:945
 msgid ""
 "Without doing this, sleeping :ref:`PhysicsBody <class_PhysicsBody>` nodes "
 "would not be able to be picked up by the VR controller, even if the VR "
@@ -2375,11 +2379,11 @@ msgstr ""
 "Pour contourner ce problème, il suffit de 'réveiller' les nœuds :ref:"
 "`PhysicsBody <class_PhysicsBody>` qui sont proches du contrôleur VR."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:953
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:951
 msgid "``sleep_area_exited`` function step-by-step explanation"
 msgstr "Explication étape par étape de la fonction ``sleep_area_exited``"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:955
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:953
 msgid ""
 "The only section of code in this function checks to see if the :ref:"
 "`PhysicsBody <class_PhysicsBody>` node that entered the ``Sleep_Area`` node "
@@ -2391,7 +2395,7 @@ msgstr ""
 "a une variable appelée ``can_sleep``. Si c'est le cas, alors il met la "
 "variable ``can_sleep`` à ``true``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:958
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:956
 msgid ""
 "This allows :ref:`RigidBody <class_RigidBody>` nodes that leave the "
 "``Sleep_Area`` to sleep again, saving performance."
@@ -2399,7 +2403,7 @@ msgstr ""
 "Cela permet aux nœuds :ref:`RigidBody <class_RigidBody>` qui quittent la "
 "``Sleep_Area`` de se rendormir, ce qui permet de gagner en performance."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:962
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:960
 msgid ""
 "Okay, whew! That was a lot of code! Add the same script, ``VR_Controller."
 "gd`` to the other VR controller scene so both VR controllers have the same "
@@ -2409,7 +2413,7 @@ msgstr ""
 "``VR_Controller.gd`` à l'autre scène de contrôleur VR pour que les deux "
 "contrôleurs VR aient le même script."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:964
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:962
 msgid ""
 "Now we just need to do one thing before testing the project! Right now we "
 "are referencing a class called ``VR_Interactable_Rigidbody``, but we have "
@@ -2422,11 +2426,11 @@ msgstr ""
 "que nous n'utiliserons pas ``VR_Interactable_Rigidbody`` dans ce tutoriel, "
 "créons-le très rapidement pour que le projet puisse être exécuté."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:970
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:968
 msgid "Creating a base class for interactable VR objects"
 msgstr "Création d'une classe de base pour les objets VR interactifs"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:972
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:970
 msgid ""
 "With the ``Script`` tab still open, create a new GDScript called "
 "``VR_Interactable_Rigidbody.gd``."
@@ -2434,7 +2438,7 @@ msgstr ""
 "Avec l'onglet ``Script`` encore ouvert, créez un nouveau GDScript appelé "
 "``VR_Interactable_Rigidbody.gd``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:974
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:972
 msgid ""
 "You can create GDScripts in the ``Script`` tab by pressing ``File -> New "
 "Script...``."
@@ -2442,18 +2446,18 @@ msgstr ""
 "Vous pouvez créer des GDScripts dans l'onglet ``Script`` en appuyant sur "
 "``Fichier -> Nouveau Script...``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:976
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:974
 msgid ""
 "Once you have ``VR_Interactable_Rigidbody.gd`` open, add the following code:"
 msgstr ""
 "Une fois que vous avez ``VR_Interactable_Rigidbody.gd`` ouvert, ajoutez le "
 "code suivant :"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1004
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1002
 msgid "Let's quickly go through what this script."
 msgstr "Passons rapidement en revue ce qu'est ce script."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1008
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1006
 msgid ""
 "First we start the script with ``class_name VR_Interactable_Rigidbody``. "
 "What this does is that it tells Godot that this GDScript is a new class that "
@@ -2471,7 +2475,7 @@ msgstr ""
 "spécial. Nous pouvons comparer la classe comme toutes les classes Godot "
 "intégrées."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1012
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1010
 msgid ""
 "Next is a class variable called ``controller``. ``controller`` will be used "
 "to hold a reference to the VR controller that is currently holding the "
@@ -2488,7 +2492,7 @@ msgstr ""
 "peuvent accéder aux données spécifiques du contrôleur VR, comme "
 "``controller_velocity``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1016
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1014
 msgid ""
 "Finally, we have four functions. The ``_ready`` function is defined by Godot "
 "and all we do is simply have ``pass`` as there is nothing we need to do when "
@@ -2499,7 +2503,7 @@ msgstr ""
 "a rien à faire lorsque l'objet est ajouté à la scène dans "
 "``VR_Interactable_Rigidbody``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1019
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1017
 msgid ""
 "The ``interact`` function is a stub function that will be called when the "
 "interact button on the VR controller, the trigger in this case, is pressed "
@@ -2509,7 +2513,7 @@ msgstr ""
 "bouton ``interact`` du contrôleur VR, le déclencheur dans ce cas, est pressé "
 "alors que l'objet est maintenu."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1021
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1019
 msgid ""
 "A stub function is a function that is defined but does not have any code. "
 "Stub functions are generally designed to be overwritten or extended. In this "
@@ -2522,7 +2526,7 @@ msgstr ""
 "interface cohérente pour tous les objets interactifs :ref:`RigidBody "
 "<class_RigidBody>`."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1024
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1022
 msgid ""
 "The ``picked_up`` and ``dropped`` functions are stub functions that will be "
 "called when the object is picked up and dropped by the VR controller."
@@ -2530,7 +2534,7 @@ msgstr ""
 "Les fonctions ``picked_up`` et ``dropped`` sont des fonctions stub qui "
 "seront appelées lorsque l'objet sera ramassé et déposé par le contrôleur VR."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1028
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1026
 msgid ""
 "That is all we need to do for now! In the next part of this tutorial series, "
 "we'll start making special interactable :ref:`RigidBody <class_RigidBody>` "
@@ -2540,7 +2544,7 @@ msgstr ""
 "partie de cette série de tutoriels, nous allons commencer à faire les objets "
 "spéciaux interactifs :ref:`RigidBody <class_RigidBody>`."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1030
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1028
 msgid ""
 "Now that the base class is defined, the code in the VR controller should "
 "work. Go ahead and try the game again, and you should find you can teleport "
@@ -2552,7 +2556,7 @@ msgstr ""
 "vous pouvez vous téléporter en appuyant sur le touch pad et que vous pouvez "
 "saisir et lancer des objets en utilisant les boutons de saisie."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1033
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1031
 msgid ""
 "Now, you may want to try moving using the trackpads and/or joysticks, but "
 "**it may make you motion sick!**"
@@ -2560,7 +2564,7 @@ msgstr ""
 "Maintenant, vous pouvez essayer de vous déplacer en utilisant les trackpads "
 "et/ou les joysticks, mais **cela pourrait vous rendre malade !**"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1035
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1033
 msgid ""
 "One of the main reasons this can make you feel motion sick is because your "
 "vision tells you that you are moving, while your body is not moving. This "
@@ -2573,11 +2577,11 @@ msgstr ""
 "Ajoutons un shader vignette pour aider à réduire le mal des transports lors "
 "des déplacements VR !"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1041
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1039
 msgid "Reducing motion sickness"
 msgstr "Réduire le mal des transports"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1043
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1041
 msgid ""
 "There are plenty of ways to reduce motion sickness in VR, and there is no "
 "one perfect way to reduce motion sickness. See `this page on the Oculus "
@@ -2591,7 +2595,7 @@ msgstr ""
 "design/latest/concepts/bp-locomotion/>`_, pour plus d’informations sur la "
 "façon d’implémenter la locomotion et de réduire le mal des transports."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1047
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1045
 msgid ""
 "To help reduce motion sickness while moving, we are going to add a vignette "
 "effect that will only be visible while the player moves."
@@ -2600,7 +2604,7 @@ msgstr ""
 "allons ajouter un effet de vignette qui ne sera visible que lorsque le "
 "joueur se déplacera."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1049
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1047
 msgid ""
 "First, quickly switch back to ``Game.tscn```. Under the :ref:`ARVROrigin "
 "<class_ARVROrigin>` node there is a child node called ``Movement_Vignette``. "
@@ -2614,7 +2618,7 @@ msgstr ""
 "lorsque le joueur se déplace à l'aide des contrôleurs VR. Cela devrait "
 "contribuer à réduire le mal des transports."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1052
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1050
 msgid ""
 "Open up ``Movement_Vignette.tscn``, which you can find in the ``Scenes`` "
 "folder. The scene is just a :ref:`ColorRect <class_ColorRect>` node with a "
@@ -2630,7 +2634,7 @@ msgstr ""
 "modifiée du shader vignette que vous pouvez trouver dans le dépôt de "
 "démonstration `Godot <https://github.com/godotengine/godot-demo-projects>`_."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1056
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1054
 msgid ""
 "Let's write the code that will make the vignette shader visible when the "
 "player is moving. Select the ``Movement_Vignette`` node and create a new "
@@ -2640,17 +2644,17 @@ msgstr ""
 "en mouvement. Sélectionnez le nœud ``Movement_Vignette`` et créez un nouveau "
 "script appelé ``Movement_Vignette.gd``. Ajouter le code suivant :"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1099
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1097
 msgid ""
 "Because this script is fairly brief, let's quickly go over what it does."
 msgstr ""
 "Comme ce script est assez bref, passons rapidement en revue son contenu."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1103
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1101
 msgid "Explaining the vignette code"
 msgstr "Explication du code de vignette"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1105
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1103
 msgid ""
 "There are two class variables, ``controller_one`` and ``controller_two``. "
 "These variables will hold references to the left and right VR controllers."
@@ -2658,7 +2662,7 @@ msgstr ""
 "Il y a deux variables de classe, ``controller_one`` et ``controller_two``. "
 "Ces variables contiendront des références aux contrôleurs VR gauche et droit."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1109
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1107
 msgid ""
 "In the ``_ready`` function first waits for four frames using ``yield``. The "
 "reason we are waiting four frames is because we want to ensure the VR "
@@ -2668,7 +2672,7 @@ msgstr ""
 "``yield``. Si nous attendons quatre images, c'est parce que nous voulons "
 "nous assurer que l'interface VR est prête et accessible."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1112
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1110
 msgid ""
 "After waiting the primary VR interface is retrieved using ``ARVRServer."
 "primary_interface``, which is assigned to a variable called ``interface``. "
@@ -2682,7 +2686,7 @@ msgstr ""
 "Si ``interface`` est égal à ``null``, alors ``_process`` est désactivé en "
 "utilisant ``set_process`` avec une valeur de ``false``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1115
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1113
 msgid ""
 "If ``interface`` is not ``null``, then we set the ``rect_size`` of the "
 "vignette shader to the render size of the VR viewport so it takes up the "
@@ -2699,7 +2703,7 @@ msgstr ""
 "la ``rect_position`` du shader vignette afin qu'il soit dans la bonne "
 "position par rapport à l'écran."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1119
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1117
 msgid ""
 "The left and right VR controllers are then retrieved and assigned to "
 "``controller_one`` and ``controller_two`` respectively. Finally, the "
@@ -2711,7 +2715,7 @@ msgstr ""
 "shader vignette est rendu invisible par défaut en réglant sa propriété "
 "``visible`` sur ``false``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1124
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1122
 msgid ""
 "In ``_process`` the code first checks if either ``controller_one`` or "
 "``controller_two`` are equal to ``null``. If either node is equal to "
@@ -2721,7 +2725,7 @@ msgstr ""
 "``controller_two`` est égal à ``null``. Si l'un des nœuds est égal à "
 "``null``, alors ``return`` est appelé de sorte que rien ne se passe."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1127
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1125
 msgid ""
 "Then the code checks to see if either of the VR controllers are moving the "
 "player using the touchpad/joystick by checking if ``directional_movement`` "
@@ -2741,7 +2745,7 @@ msgstr ""
 "``false`` dans les deux contrôleurs VR, alors le shader vignette se rend "
 "invisible en mettant sa propriété ``visible`` à ``false``."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1134
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1132
 msgid ""
 "That is the whole script! Now that we have written the code, go ahead and "
 "try moving around with the trackpad and/or joystick. You should find that it "
@@ -2751,7 +2755,7 @@ msgstr ""
 "essayez de vous déplacer avec le trackpad et/ou le joystick. Vous devriez "
 "constater que cela rend moins malade qu'auparavant !"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1137
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1135
 msgid ""
 "As previously mentioned, there are plenty of ways to reduce motion sickness "
 "in VR. Check out `this page on the Oculus Developer Center <https://"
@@ -2764,11 +2768,11 @@ msgstr ""
 ">`_ pour plus d'informations sur la façon de mettre en œuvre la locomotion "
 "et de réduire le mal des transports."
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1144
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1142
 msgid "Final notes"
 msgstr "Notes finales"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1148
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1146
 msgid ""
 "Now you have fully working VR controllers that can move around the "
 "environment and interact with :ref:`RigidBody <class_RigidBody>`-based "
@@ -2782,7 +2786,7 @@ msgstr ""
 "de tutoriels, nous allons créer des objets spéciaux basés sur :ref:"
 "`RigidBody <class_RigidBody>` que le joueur pourra utiliser !"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1151
+#: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1149
 msgid ""
 "You can download the finished project for this tutorial series on the Godot "
 "OpenVR GitHub repository, under the releases tab!"

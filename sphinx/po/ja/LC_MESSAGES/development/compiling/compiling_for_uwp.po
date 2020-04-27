@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,26 +26,27 @@ msgid "Requirements"
 msgstr "必要条件"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:11
-msgid "SCons (see :ref:`doc_compiling_for_windows` for more details)."
+#, fuzzy
+msgid "SCons 3.0+ (see :ref:`doc_compiling_for_windows` for more details)."
 msgstr ""
 "SCons (詳細については、\\ :ref:`doc_compiling_for_windows`\\ を参照してくださ"
 "い)。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:12
+#, fuzzy
 msgid ""
-"Visual Studio 2015 Update 2. It may work with earlier versions. See :ref:"
-"`doc_compiling_for_windows` about the caveats of installing it and the "
-"various prompts."
+"Visual Studio 2017 or later. See :ref:`doc_compiling_for_windows` about the "
+"caveats of installing it and the various prompts."
 msgstr ""
 "Visual Studio 2015 update2。以前のバージョンで動作する場合があります。インス"
 "トールの注意点とさまざまなプロンプトについては、\\ :ref:"
 "`doc_compiling_for_windows`\\ を参照してください。"
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:15
+#: ../../docs/development/compiling/compiling_for_uwp.rst:14
 msgid "Windows 10 SDK (can be selected in Visual Studio installation)."
 msgstr "Windows 10 SDK (Visual Studio のインストールで選択できます)。"
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:16
+#: ../../docs/development/compiling/compiling_for_uwp.rst:15
 msgid ""
 "`ANGLE source <https://github.com/Microsoft/angle>`__. Use the ``ms_master`` "
 "(default) branch. Keep it in a path without spaces to avoid problems."
@@ -54,7 +55,7 @@ msgstr ""
 "ト)ブランチを使用します。問題を避けるため、スペースのないパスに保管してくださ"
 "い。"
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:20
+#: ../../docs/development/compiling/compiling_for_uwp.rst:19
 msgid ""
 "The ANGLE repo by Microsoft has been discontinued and the ``ms_master`` "
 "branch has been cleared out."
@@ -62,15 +63,15 @@ msgstr ""
 "マイクロソフトによるANGLEリポジトリは廃止され、\\ ``ms_master`` ブランチは削"
 "除されました。"
 
-#: ../../docs/development/compiling/compiling_for_uwp.rst:23
+#: ../../docs/development/compiling/compiling_for_uwp.rst:22
 msgid ""
 "As a temporary workaround however, it is still possible to download an older "
 "state of the source code via commit `c61d048 <https://github.com/microsoft/"
 "angle/tree/c61d0488abd9663e0d4d2450db7345baa2c0dfb6>`__."
 msgstr ""
 "ただし、一時的な回避策として、コミット `c61d048 <https://github.com/"
-"microsoft/angle/tree/c61d0488abd9663e0d4d2450db7345baa2c0dfb6>`__を使用して、"
-"古い状態のソースコードをダウンロードすることも可能です。"
+"microsoft/angle/tree/c61d0488abd9663e0d4d2450db7345baa2c0dfb6>`__ を使用し"
+"て、古い状態のソースコードをダウンロードすることも可能です。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:26
 msgid ""
@@ -312,11 +313,11 @@ msgstr ""
 "「ビルド」を選択します。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:142
-#, fuzzy
 msgid ""
 "Now you can just run the project and your app should open. You can also use "
 "the \"Start Without Debugging\" option from the \"Debug\" menu (or press :"
 "kbd:`Ctrl + F5`) to make it launch faster."
 msgstr ""
-"これで、プロジェクトを実行するだけで、アプリが開きます。「デバッグ」メニュー"
-"(Ctrl+F5)の「デバッグなしで開始」を使用して、起動を高速化することもできます。"
+"これで、プロジェクトを実行するだけで、アプリが開きます。 [デバッグ]メニューの"
+"[デバッグなしで開始]オプションを使用して(または :kbd:`Ctrl + F5` を押して)起"
+"動を高速化することもできます。"

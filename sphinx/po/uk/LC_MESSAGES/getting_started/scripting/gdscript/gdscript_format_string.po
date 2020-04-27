@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,16 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
-msgstr ""
+msgstr "Форматований текст GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
 msgid ""
 "GDScript offers a feature called *format strings*, which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
+"GDScript пропонує функцію під назвою *форматований текст*, яка дозволяє "
+"повторно використовувати текстові шаблони для створення короткого, але "
+"схожого тексту."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -33,6 +36,10 @@ msgid ""
 "placeholder character-sequences. These placeholders can then easily be "
 "replaced by parameters handed to the format string."
 msgstr ""
+"Форматований текст (рядок, строка) подібний до звичайного тексту (рядка, "
+"строки), за винятком того, що вони містять певні послідовності символів-"
+"заповнювачів. Ці заповнювачі потім можуть бути легко замінені параметрами, "
+"переданими до форматованого тексту."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
 msgid ""
@@ -41,14 +48,18 @@ msgid ""
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
+"Наприклад, за допомогою заповнювача ``%s``, форматований текст ``\"Hello %s, "
+"how are you?`` може бути легко змінений на ``\"Hello World, how are you?"
+"\"``. Зауважте, що заповнювач знаходиться посередині текста; модифікація "
+"його без форматованого тексту може бути громіздкою."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
-msgstr ""
+msgstr "Використання в GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
 msgid "Examine this concrete GDScript example:"
-msgstr ""
+msgstr "Ознайомтеся з цим конкретним прикладом GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:35
 msgid ""
@@ -56,6 +67,9 @@ msgid ""
 "characters, the *format specifier*, determines how the given value is "
 "converted to a string."
 msgstr ""
+"Заповнювачі завжди починаються з символу ``%``, але наступний символ, або "
+"символи, *специфікатор формату*, вони визначають, як задане значення "
+"перетворюється на текст."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:39
 msgid ""
@@ -66,6 +80,12 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
+"Видимий в наведеному вище прикладі ``%s`` є найпростішим заповнювачем і "
+"працює для більшості випадків: він перетворює значення тим же методом, що і "
+"перетворення String, або str(). Текст залишається незмінним, булеві "
+"(логічні) перетворюються на \"True\", або \"False\", цілі, чи дійсні, числа "
+"перетворюється на десяткові, інші типи зазвичай повертають свої дані у "
+"читабельний для людини текст."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
@@ -74,26 +94,34 @@ msgid ""
 "the corresponding value. The method can handle arrays or dictionaries for "
 "the key/value pairs."
 msgstr ""
+"Існує також інший спосіб форматування тексту в GDScript, а саме метод "
+"``String.format()``. Він замінює всі входження ключа в тексті відповідним "
+"значенням. Метод може обробляти масиви, або словники, для пар ключ/значення."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:50
 msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
+"Масиви можна використовувати як ключ, індекс, або змішаний стиль (див. "
+"Приклади нижче). Порядок має значення лише тоді, коли використовується "
+"індекс, або змішаний стиль масиву."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
-msgstr ""
+msgstr "Короткий приклад у GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
 msgid ""
 "There are other `format specifiers`_, but they are only applicable when "
 "using the ``%`` operator."
 msgstr ""
+"Є й інші `format specifiers`_, але вони застосовуються лише при використанні "
+"оператора ``%``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:71
 msgid "Multiple placeholders"
-msgstr ""
+msgstr "Кілька заповнювачів"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
 msgid ""
@@ -101,16 +129,22 @@ msgid ""
 "are handed in the form of an array, one value per placeholder (unless using "
 "a format specifier with ``*``, see `dynamic padding`_):"
 msgstr ""
+"Форматований текст може містити кілька заповнювачів. У такому випадку "
+"значення передаються у вигляді масиву, одне значення на заповнювач (якщо не "
+"використовується специфікатор формату з ``*``, див. `dynamic padding`_):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
 msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
+"Зверніть увагу, що значення вставляються по порядку. Пам'ятайте, що всі "
+"заповнювачі повинні бути замінені відразу, тому повинно бути відповідне "
+"число значень."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
 msgid "Format specifiers"
-msgstr ""
+msgstr "Специфікатори формату"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:92
 msgid ""
@@ -119,10 +153,14 @@ msgid ""
 "themselves like ``s``, some appear before other characters, some only work "
 "with certain values or characters."
 msgstr ""
+"Окрім ``s`` існують інші специфікатори формату, які можна використовувати в "
+"заповнювачах. Вони складаються з одного, або кількох символів. Деякі з них "
+"працюють так само, як ``s``, деякі з’являються перед іншими символами, деякі "
+"працюють лише з певними значеннями, або символами."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid "Placeholder types"
-msgstr ""
+msgstr "Типи заповнювачів"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:101
 msgid ""
@@ -130,6 +168,8 @@ msgid ""
 "format specifier. Apart from ``s``, these require certain types of "
 "parameters."
 msgstr ""
+"Один, і тільки один, з них завжди повинен відображатися як останній символ у "
+"специфікаторі формату. Крім ``s``, для них потрібні певні типи параметрів."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid "``s``"
@@ -140,6 +180,8 @@ msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
 msgstr ""
+"**Просте** перетворення в String (текст, строку) тим самим методом, що і "
+"неявне перетворення."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
@@ -150,16 +192,21 @@ msgid ""
 "A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
 "for a code point or a single-character string."
 msgstr ""
+"Єдиний **символ Unicode**. Очікує одне 8-бітове ціле число (0-255) для "
+"кодової точки, або односимвольного тексту (строки)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``d``"
 msgstr "``d``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
+#, fuzzy
 msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"**Десятковий інтеграл**. Очікує інтегральне, або дійсне, число (буде "
+"похилене)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
@@ -170,10 +217,12 @@ msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"**Вісімкове інтегральне число**. Очікує інтегральне, або дійсне, число (буде "
+"виведене)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid ""
@@ -183,7 +232,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
-msgstr ""
+msgstr "``X``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid ""
@@ -197,45 +246,54 @@ msgstr "``f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
-msgstr ""
+msgstr "**Десяткове дійсне** число. Очікує ціле, чи дійсне, число."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "Placeholder modifiers"
-msgstr ""
+msgstr "Модифікатори заповнювачів"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
 msgid ""
 "These characters appear before the above. Some of them work only under "
 "certain conditions."
 msgstr ""
+"Ці символи з'являються раніше. Деякі з них працюють лише за певних умов."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "``+``"
-msgstr ""
+msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "In number specifiers, **show + sign** if positive."
 msgstr ""
+"У специфікаторах чисел, **покажіть + знак**(show + sign), якщо число "
+"позитивне."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid "Integer"
-msgstr ""
+msgstr "Integer (ціле)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer placeholder. When used after ``.``, see ``.``."
 msgstr ""
+"Встановити **заповнювачі**. Заповнені пробілами, або нулями, якщо ціле число "
+"починається з ``0`` в цілочисельному заповнювачі. При використанні після ``."
+"``, дивіться ``.``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid "``.``"
 msgstr "``.``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
+#, fuzzy
 msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
 msgstr ""
+"Перед ``f`` встановіть **точність** (precision) на 0 знаків після коми. "
+"Можна змінити числа в подальшому. Заповнені нулями."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "``-``"
@@ -243,7 +301,7 @@ msgstr "``-``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "**Pad to the right** rather than the left."
-msgstr ""
+msgstr "**Заповнення справа** (Pad to the right), а не зліва."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid "``*``"
@@ -260,21 +318,30 @@ msgid "Padding"
 msgstr "Фаска"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
+#, fuzzy
 msgid ""
 "The ``.`` (*dot*), ``*`` (*asterisk*), ``-`` (*minus sign*) and digit (``0``-"
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
+"Символи ``.`` (*крапка*), ``*`` (*зірочка*), ``-`` (*мінус*) і цифри (``0``-"
+"``9``) використовуються для відступів. Це дозволяє надрукувати декілька "
+"значень, вирівняних вертикально, як у стовпчику, за умови використання "
+"шрифту фіксованої ширини."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
 msgstr ""
+"Щоб заповнити рядок до мінімальної довжини додайте ціле число до "
+"специфікатора:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
 msgstr ""
+"Якщо ціле число починається з ``0``, інтегральні значення заміщуються нулями "
+"замість пробілу:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
 msgid ""
@@ -283,12 +350,18 @@ msgid ""
 "used, rounding to integral value. The integer to use for padding must appear "
 "before the dot."
 msgstr ""
+"Точність для дійсних чисел можна задати, додавши ``.``(*крапку*) з цілим "
+"числом, що слідує за нею. Якщо після ``.`` немає цілого числа, "
+"використовується точність 0, округлюючи до цілого значення. Ціле число, яке "
+"буде використано для пробілів, повинно з’явитися перед крапкою."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
 msgstr ""
+"Символ ``-`` буде викликати відступи справа , а не зліва, корисний для "
+"правильного вирівнювання тексту:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"

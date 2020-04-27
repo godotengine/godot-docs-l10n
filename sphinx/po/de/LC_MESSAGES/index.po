@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/index.rst:2
-msgid "Godot Docs – *master* branch"
+#, fuzzy
+msgid "Godot Docs – *3.2* branch"
 msgstr "Godot-Dokumentation – *master* branch (Zweig)"
 
 #: ../../docs/index.rst:6
@@ -31,16 +32,19 @@ msgstr ""
 "Seitenleiste, um die Liste zu öffnen."
 
 #: ../../docs/index.rst:10
+#, fuzzy
 msgid ""
-"This is the documentation for the development (master) branch. Looking for "
-"the documentation of the current **stable** branch? `Have a look here "
-"<https://docs.godotengine.org/en/stable>`_."
+"This is the documentation for the stable 3.2 branch. Looking for the "
+"documentation of the current **development** branch? `Have a look here "
+"<https://docs.godotengine.org/en/latest>`_. You can also browse the "
+"documentation for the previous stable `3.1 <https://docs.godotengine.org/"
+"en/3.1>`_ branch."
 msgstr ""
 "Dies ist die Dokumentation für den instabilen (Master-)Branch. Wenn Sie "
 "stattdessen nach dem aktuellen **stabilen** Branch suchen, schauen Sie doch "
 "mal `hier <http://docs.godotengine.org/en/stable>`_."
 
-#: ../../docs/index.rst:16
+#: ../../docs/index.rst:18
 msgid ""
 "This documentation is translated from the `original English one <https://"
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
@@ -50,7 +54,7 @@ msgstr ""
 "docs.godotengine.org/en/latest>`_ von Gemeinschaftsmitgliedern auf `Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs>`_ übersetzt."
 
-#: ../../docs/index.rst:20
+#: ../../docs/index.rst:22
 msgid ""
 "Depending on the translation effort's completion level, you may find "
 "paragraphs or whole pages which are still in English. You can help the "
@@ -62,7 +66,7 @@ msgstr ""
 "helfen, indem Sie neue Übersetzungen erstellen oder vorhandene in Weblate "
 "überprüfen."
 
-#: ../../docs/index.rst:25
+#: ../../docs/index.rst:27
 msgid ""
 "For the time being, localized translations are only available for the "
 "\"latest\" (development) branch, but should be suitable to learn how to use "
@@ -72,13 +76,14 @@ msgstr ""
 "\" (Entwicklungs-) Zweig verfügbar, sollten aber ebenfalls geeignet sein, um "
 "zu lernen, wie man stabile Godot-Releases verwendet."
 
-#: ../../docs/index.rst:29
+#: ../../docs/index.rst:31
+#, fuzzy
 msgid ""
-"Welcome to the official documentation of Godot Engine, the free and open "
-"source community-driven 2D and 3D game engine! If you are new to this "
-"documentation, we recommend that you read the :ref:`introduction page "
-"<doc_about_intro>` to get an overview of what this documentation has to "
-"offer."
+"Welcome to the official documentation of `Godot Engine <https://godotengine."
+"org>`__, the free and open source community-driven 2D and 3D game engine! If "
+"you are new to this documentation, we recommend that you read the :ref:"
+"`introduction page <doc_about_intro>` to get an overview of what this "
+"documentation has to offer."
 msgstr ""
 "Willkommen in der offiziellen Dokumentation der Godot Engine, der freien, "
 "quelloffenen und gemeinschaftlich entwickelten 2D- und 3D-Spiele-Engine! "
@@ -86,7 +91,7 @@ msgstr ""
 "Erstes, die :ref:`Einführungsseite  <doc_about_intro>` zu lesen, um eine "
 "Übersicht der verfügbaren Inhalte zu erhalten."
 
-#: ../../docs/index.rst:34
+#: ../../docs/index.rst:37
 msgid ""
 "The table of contents below and in the sidebar should let you easily access "
 "the documentation for your topic of interest. You can also use the search "
@@ -96,7 +101,7 @@ msgstr ""
 "schnell auf die Themen zugreifen, die für Sie interessant sind. Außerdem "
 "steht eine Suchfunktion in der oberen linken Ecke zur Verfügung."
 
-#: ../../docs/index.rst:38
+#: ../../docs/index.rst:41
 msgid ""
 "Godot Engine is an open source project developed by a community of "
 "volunteers. The documentation team can always use your feedback and help to "
@@ -111,7 +116,7 @@ msgstr ""
 "finden können, dann geben Sie uns Bescheid, um die Dokumentation zu "
 "verbessern!"
 
-#: ../../docs/index.rst:45
+#: ../../docs/index.rst:48
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -128,32 +133,37 @@ msgstr ""
 "dem ``#godotengine-doc``-Kanal auf `irc.freenode.net <http://webchat."
 "freenode.net/?channels=#godotengine-doc>`_!"
 
-#: ../../docs/index.rst:55
+#: ../../docs/index.rst:58
 msgid "weblate_widget"
 msgstr "weblate_widget"
 
-#: ../../docs/index.rst:56
+#: ../../docs/index.rst:59
 msgid ""
 "The main documentation for the site is organized into the following sections:"
 msgstr ""
 "Die Hauptdokumentation von Godot ist in folgende Abschnitte gegliedert:"
 
-#: ../../docs/index.rst:58
+#: ../../docs/index.rst:61
 msgid "General"
 msgstr "Allgemein"
 
-#: ../../docs/index.rst:66
+#: ../../docs/index.rst:69
 msgid "Getting started"
 msgstr "Erste Schritte"
 
-#: ../../docs/index.rst:77
+#: ../../docs/index.rst:80
 msgid "Tutorials"
 msgstr "Anleitungen"
 
-#: ../../docs/index.rst:107
+#: ../../docs/index.rst:110
 msgid "Development"
 msgstr "Entwicklung"
 
-#: ../../docs/index.rst:118
+#: ../../docs/index.rst:121
 msgid "Community"
 msgstr "Community"
+
+#: ../../docs/index.rst:131
+#, fuzzy
+msgid "Class reference"
+msgstr "Kommandozeilenparameter."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:4
 msgid "Optimizing a build for size"
-msgstr ""
+msgstr "Optimiser une compilation pour sa taille"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:9
 msgid "Rationale"
@@ -32,6 +32,12 @@ msgid ""
 "specific compiler flags to aid on decreasing build size. Common situations "
 "include creating builds for mobile and Web platforms."
 msgstr ""
+"Parfois, il est souhaitable d'optimiser une compilation en fonction de sa "
+"taille plutôt que de sa vitesse. Cela implique de ne pas compiler les "
+"fonctions inutilisées du moteur, ainsi que d'utiliser des drapeaux de "
+"compilation spécifiques pour aider à réduire la taille de la compilation. "
+"Les situations habituelles inclue la création de compilations pour les "
+"plateformes mobiles et Web."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:16
 msgid ""
@@ -39,16 +45,22 @@ msgid ""
 "smaller binary. Before continuing, it is recommended to read the previous "
 "tutorials on compiling Godot for each platform."
 msgstr ""
+"Ce tutoriel vise à donner un aperçu des différentes méthodes pour créer un "
+"binaire plus petit. Avant de continuer, il est recommandé de lire les "
+"tutoriels précédents sur la compilation de Godot pour chaque plateforme."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:21
 msgid "Disabling 3D"
-msgstr ""
+msgstr "Désactiver la 3D"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:23
 msgid ""
 "For 2D games, having the whole 3D engine available usually makes no sense. "
 "Because of this, there is a build flag to disable it:"
 msgstr ""
+"Pour les jeux en 2D, le fait de disposer de tout le moteur 3D n'a "
+"généralement aucun sens. Pour cette raison, il existe un drapeau de "
+"compilation qui permet de le désactiver :"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:29
 msgid ""
@@ -56,16 +68,22 @@ msgid ""
 "designed to operate without 3D support. Without it, the binary size can be "
 "reduced by about 15%."
 msgstr ""
+"Les outils (Tools) doivent être désactivés pour utiliser ce drapeau, car "
+"l'éditeur n'est pas conçu pour fonctionner sans prise en charge de la 3D. "
+"Sans lui, la taille du binaire peut être réduite d'environ 15%."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:34
 msgid "Disabling advanced GUI nodes"
-msgstr ""
+msgstr "Désactiver les nœuds GUI avancés"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:36
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
 "TextEditor or GraphEdit. They can be disabled using a build flag:"
 msgstr ""
+"La plupart des petits jeux ne nécessitent pas de contrôles complexes de "
+"l'interface graphique (GUI) tels que Tree, ItemList, TextEditor ou "
+"GraphEdit. Ils peuvent être désactivés à l'aide d'un drapeau de compilation :"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:44
 msgid "Disabling unwanted modules"
@@ -76,6 +94,8 @@ msgid ""
 "A lot of Godot's functions are offered as modules. You can see a list of "
 "modules with the following command:"
 msgstr ""
+"De nombreuses fonctions de Godot sont proposées sous forme de modules. Vous "
+"pouvez voir une liste des modules avec la commande suivante :"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:53
 msgid ""
@@ -83,6 +103,9 @@ msgid ""
 "build options. If you are working on a simple 2D game, you could disable a "
 "lot of them:"
 msgstr ""
+"La liste des modules pouvant être désactivés apparaît, ainsi que toutes les "
+"options de compilation. Si vous travaillez sur un jeu 2D simple, vous pouvez "
+"en désactiver beaucoup :"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:61
 msgid ""
@@ -91,24 +114,35 @@ msgid ""
 "might want to keep networking-related modules, regex support, or theora/webm "
 "to play videos)."
 msgstr ""
+"Si cela ne fonctionne pas dans votre cas, vous devriez revoir la liste des "
+"modules et gardez ceux dont vous avez réellement encore besoin pour votre "
+"jeu (par exemple, vous pourriez vouloir conserver les modules liés au "
+"réseau, au support des expressions régulières (regex), ou à theora/webm pour "
+"lire des vidéos)."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:67
 msgid "Optimizing for size instead of speed"
-msgstr ""
+msgstr "Optimiser pour la taille plutôt que pour la vitesse"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:69
+#, fuzzy
 msgid ""
-"Godot 3.1 onwards allows to compile using size optimizations. To enable "
-"this, just set the ``optimize`` flag to ``size``:"
+"Godot 3.1 onwards allows compiling using size optimizations (instead of "
+"speed). To enable this, set the ``optimize`` flag to ``size``:"
 msgstr ""
+"Godot 3.1 (et suivant) permet de compiler en utilisant des optimisations de "
+"taille. Pour l'activer, il suffit de définir le drapeau \"optimize'' sur "
+"\"size'' :"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:76
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr ""
+"Certaines plateformes telles que WebAssembly utilisent déjà ce mode par "
+"défaut."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:79
 msgid "Compiling with link-time optimization"
-msgstr ""
+msgstr "Compilation avec optimisation du temps de liaison"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:81
 msgid ""
@@ -117,31 +151,43 @@ msgid ""
 "template functions and unused code. It can currently be used with the GCC "
 "and MSVC compilers:"
 msgstr ""
+"L'activation de l'optimisation du temps de liaison (linking) produit des "
+"fichiers binaires plus efficaces, à la fois en termes de performances et de "
+"taille de fichier. Il fonctionne en éliminant les fonctions de modèle "
+"(templates) en double et le code inutilisé. Il peut actuellement être "
+"utilisé avec les compilateurs GCC et MSVC :"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:90
 msgid ""
 "Linking becomes much slower with this option, so it should be used only for "
 "release builds."
 msgstr ""
+"Le \"liking\" devient beaucoup plus lent avec cette option, il doit être "
+"utilisé uniquement pour les versions \"release\"."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:94
 msgid "Stripping binaries"
-msgstr ""
+msgstr "Nettoyage des binaires"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:96
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr ""
+"Si vous compiler à partir des sources, n'oubliez pas de retirer les symboles "
+"de débogage des binaires :"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:103
 msgid "Using UPX to compress binaries"
-msgstr ""
+msgstr "Utiliser UPX pour compresser les binaires"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:105
 msgid ""
 "If you are targeting desktop platforms, the `UPX <https://upx.github.io/>`_ "
 "compressor can be used. This can reduce binary size considerably."
 msgstr ""
+"Si vous ciblez les plates-formes de bureau, le compresseur `UPX <https://upx."
+"github.io/>`_ peut être utilisé. Cela peut réduire considérablement la "
+"taille des binaires."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:109
 msgid ""
@@ -149,3 +195,7 @@ msgid ""
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "
 "sure to sign your binaries or use a platform that will distribute them."
 msgstr ""
+"Cependant, gardez à l'esprit que certains programmes antivirus peuvent "
+"détecter les binaires compressés UPX comme des virus. Par conséquent, si "
+"vous publiez un jeu commercial, assurez-vous de signer vos binaires ou "
+"d'utiliser une plate-forme qui les distribuera."

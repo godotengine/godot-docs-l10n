@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,13 +48,12 @@ msgstr ""
 "ファイルを指定する必要があります:"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:21
-#, fuzzy
 msgid ""
 "This file should contain any number of public certificates in `PEM format "
 "<https://en.wikipedia.org/wiki/Privacy-enhanced_Electronic_Mail>`__."
 msgstr ""
-"このファイルには、任意の数の https://en.wikipedia.org/wiki/Privacy-"
-"enhanced_Electronic_Mail 形式の公開証明書を含める必要があります。"
+"このファイルには、任意の数の ``PEM形式 <https://en.wikipedia.org/wiki/"
+"Privacy-enhanced_Electronic_Mail>`__ の公開証明書を含める必要があります。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:24
 msgid ""
@@ -73,14 +72,13 @@ msgid "Approach 1: self signed cert"
 msgstr "アプローチ1: 自己署名証明書"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:34
-#, fuzzy
 msgid ""
 "The first approach is the simplest: generate a private and public key pair "
 "and add the public key (in PEM format) to the .crt file. The private key "
 "should go to your server."
 msgstr ""
-"最初のアプローチは最も単純です: 秘密鍵と公開鍵のペアを生成し、公開ペアを.crt"
-"ファイルに(再び、PEM形式で)配置します。秘密鍵はサーバーに送られます。"
+"最初のアプローチは最も簡単です: 秘密鍵と公開鍵のペアを生成し、(PEM形式で)公開"
+"鍵を.crtファイルに追加します。秘密鍵はサーバーに送られます。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:38
 msgid ""

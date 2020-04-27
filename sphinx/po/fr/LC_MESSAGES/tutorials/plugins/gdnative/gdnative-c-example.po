@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,7 +216,6 @@ msgstr ""
 "une structure de fichier qui ressemble à cela :"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:126
-#, fuzzy
 msgid ""
 "Open up Godot and create a new project called \"simple\" alongside your "
 "``godot_headers`` Git clone. This will create the ``simple`` folder and "
@@ -225,8 +224,8 @@ msgid ""
 msgstr ""
 "Ouvrez Godot et créez un nouveau projet appelé \"simple\" à côté de votre "
 "clone Git ``godot_headers``. Cela créera le dossier ``simple`` et le fichier "
-"``project.godot``. Ensuite, créez manuellement les sous-dossiers ``bin`` et "
-"``src`` dans ce dossier."
+"``project.godot``. Ensuite, créez manuellement un dossier ``src`` à côté du "
+"dossier ``simple``, et un sous-dossier ``bin`` dans le dossier ``simple``."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:131
 msgid ""
@@ -356,8 +355,9 @@ msgstr ""
 "pointeurs d'API."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:218
+#, fuzzy
 msgid ""
-"Finally we have ``nativescript_init`` which is the most important function "
+"Finally, we have ``nativescript_init`` which is the most important function "
 "we'll need today. This function will be called by Godot as part of loading a "
 "GDNative library and communicates back to the engine what objects we make "
 "available."
@@ -799,7 +799,8 @@ msgstr ""
 "*Load* :"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:513
-msgid "Finally click on the save icon and save this as ``bin/simple.gdns``:"
+#, fuzzy
+msgid "Finally, click on the save icon and save this as ``bin/simple.gdns``:"
 msgstr ""
 "Enfin, cliquez sur l'icône de sauvegarde et enregistrez le fichier sous le "
 "nom ``bin/simple.gdns`` :"

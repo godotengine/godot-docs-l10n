@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,8 @@ msgid "Render mode"
 msgstr "Mode de rendu"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:30
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
 msgid "Description"
 msgstr "Description"
 
@@ -115,8 +116,9 @@ msgid "Ignore **VELOCITY** value."
 msgstr "Ignorer la valeur de **VELOCITY**."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
-msgid "Vertex built-ins"
-msgstr "Variables intégrées de sommet"
+#, fuzzy
+msgid "Built-ins"
+msgstr "Variable intégrée"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:42
 msgid ""
@@ -132,7 +134,33 @@ msgstr ""
 "réécrites. Les échantillonneurs ne sont pas soumis à l'écriture et ne sont "
 "pas marqués."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:47
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:48
+#, fuzzy
+msgid "Global built-ins"
+msgstr "Variables intégrées de fragment"
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:50
+msgid "Global built-ins are available everywhere, including custom functions."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
+msgid "Built-in"
+msgstr "Variable intégrée"
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
+msgid "in float **TIME**"
+msgstr "in float **TIME**"
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
+msgid "Global time, in seconds."
+msgstr "Temps global, en secondes."
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
+msgid "Vertex built-ins"
+msgstr "Variables intégrées de sommet"
+
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:61
 msgid ""
 "In order to use the ``COLOR`` variable in a SpatialMaterial, set "
 "``use_vertex_as_albedo`` to ``true``. In a ShaderMaterial, access it with "
@@ -142,126 +170,114 @@ msgstr ""
 "``use_vertex_as_albedo`` sur ``true``. Dans un ShaderMaterial, accédez-y "
 "avec la variable ``COLOR``."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:51
-msgid "Built-in"
-msgstr "Variable intégrée"
-
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid "inout vec4 **COLOR**"
 msgstr "inout vec4 **COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid ""
 "Particle color, can be written to and accessed in mesh's vertex function."
 msgstr ""
 "Couleur de particule, peut être écrit et accessible dans la fonction vertex "
 "du mesh."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 msgid "inout vec3 **VELOCITY**"
 msgstr "inout vec3 **VELOCITY**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 msgid "Particle velocity, can be modified."
 msgstr "La vélocité des particules, peut être modifiée."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:57
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 msgid "out float **MASS**"
 msgstr "out float **MASS**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:57
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 msgid "Particle mass, use for attractors (not implemented in 3.1)."
 msgstr ""
 "Masse de particules, utilisation pour les attracteurs (non implémentée en "
 "3.1)."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 msgid "inout bool **ACTIVE**"
 msgstr "inout bool **ACTIVE**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 msgid "``true`` when Particle is active, can be set to ``false``."
 msgstr "``true`` quand la particule est active, peut être réglé sur ``false``."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:61
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
 msgid "in bool **RESTART**"
 msgstr "in bool **RESTART**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:61
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
 msgid "``true`` when particle must restart (lifetime cycled)."
 msgstr "``true`` quand la particule doit redémarrer (cycle de vie)."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:63
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
 msgid "inout vec4 **CUSTOM**"
 msgstr "inout vec4 **CUSTOM**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:63
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
 msgstr ""
 "Données personnalisées des particules. Accessible depuis le shader de la "
 "maille comme **INSTANCE_CUSTOM**."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
 msgid "inout mat4 **TRANSFORM**"
 msgstr "inout mat4 **TRANSFORM**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
 msgid "Particle transform."
 msgstr "Transformation de particules."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
-msgid "in float **TIME**"
-msgstr "in float **TIME**"
-
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
-msgid "Global time in seconds."
-msgstr "Temps global en secondes."
-
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:81
 msgid "in float **LIFETIME**"
 msgstr "in float **LIFETIME**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:81
 msgid "Particle lifetime."
 msgstr "Durée de vie des particules."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:83
 msgid "in float **DELTA**"
 msgstr "in float **DELTA**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:83
 msgid "Delta process time."
 msgstr "Durée du processus Delta."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:85
 msgid "in uint **NUMBER**"
 msgstr "in uint **NUMBER**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:85
 msgid "Unique number since emission start."
 msgstr "Numéro unique depuis le début de l'émission."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:87
 msgid "in int **INDEX**"
 msgstr "in int **INDEX**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:87
 msgid "Particle index (from total particles)."
 msgstr "Indice de particule (sur le nombre total de particules)."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:89
 msgid "in mat4 **EMISSION_TRANSFORM**"
 msgstr "in mat4 **EMISSION_TRANSFORM**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:77
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:89
 msgid "Emitter transform (used for non-local systems)."
 msgstr "Transformation de l'émetteur (utilisée pour les systèmes non locaux)."
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:91
 msgid "in uint **RANDOM_SEED**"
 msgstr "in uint **RANDOM_SEED**"
 
-#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
+#: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:91
 msgid "Random seed used as base for random."
 msgstr "Graine aléatoire utilisée comme base pour le hasard."

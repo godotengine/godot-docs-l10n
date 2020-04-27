@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -543,13 +543,12 @@ msgstr ""
 "balle est tirée. Le museau est aussi parfois appelé le canon de l'arme à feu."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:303
-#, fuzzy
 msgid ""
 "For finer control when scrubbing the timeline, press :kbd:`Ctrl` and scroll "
 "forward with the mouse wheel to zoom in. Scrolling backwards will zoom out."
 msgstr ""
 "Pour un contrôle plus précis lors du défilement de la ligne de temps, "
-"appuyez sur ``control`` et faites défiler vers l'avant avec la molette de la "
+"appuyez sur :kbd:`Ctrl` et faites défiler vers l'avant avec la molette de la "
 "souris pour effectuer un zoom avant. Le défilement vers l'arrière permet "
 "d'effectuer un zoom arrière."
 
@@ -563,16 +562,15 @@ msgstr ""
 "inférieure/supérieure."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:308
-#, fuzzy
 msgid ""
 "Once you get to a point you like, right click on the row for \"Animation "
 "Player\" and press ``Insert Key``. In the empty name field, enter "
 "``animation_callback`` and press :kbd:`Enter`."
 msgstr ""
 "Une fois que vous arrivez à un point que vous aimez, cliquez avec le bouton "
-"droit de la souris sur la ligne pour \"Animation Player\" et appuyez sur la "
-"touche d'insertion. Dans le champ de nom vide, entrez ``animation_callback`` "
-"et appuyez sur ``enter``."
+"droit de la souris sur la ligne pour \"Animation Player\" et appuyez sur l' "
+"``Insert Key``. Dans le champ de nom vide, entrez ``animation_callback`` et "
+"appuyez sur :kbd:`Enter`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:314
 msgid ""
@@ -615,13 +613,12 @@ msgstr ""
 "la piste."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:327
-#, fuzzy
 msgid ""
 "Type \"animation_callback\" into the name field of the pop up which opened "
 "and press :kbd:`Enter`."
 msgstr ""
 "Tapez \"animation_callback\" dans le champ du nom de la fenêtre pop up qui "
-"s'est ouverte et appuyez sur ``enter``."
+"s'est ouverte et appuyez sur :kbd:`Enter`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:329
 msgid ""
@@ -652,14 +649,13 @@ msgstr ""
 "animations."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:337
-#, fuzzy
 msgid ""
 "From there right click on the timeline and click \"Insert Key\". Put "
 "\"animation_callback\" into the name field and press :kbd:`Enter`."
 msgstr ""
 "De là, cliquez avec le bouton droit de la souris sur la ligne de temps et "
 "cliquez sur \"Insert Key\". Mettez \"animation_callback\" dans le champ de "
-"nom et appuyez sur ``enter``."
+"nom et appuyez sur :kbd:`Enter`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:339
 msgid "Be sure to save your work!"
@@ -702,7 +698,6 @@ msgstr ""
 "puis il se déplacera vers l'avant."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:356
-#, fuzzy
 msgid ""
 "There are several advantages to this method. The first being we do not have "
 "to store the bullets in our player. We can simply create the bullet and then "
@@ -1529,8 +1524,9 @@ msgstr ""
 "de sons dans :ref:`doc_fps_tutorial_part_three_part_3`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:697
+#, fuzzy
 msgid ""
-"Next we set the global transform of the clone to the ``Pistol_Aim_Point``'s "
+"Next we set the global transform of the clone to the ``Pistol_Point``'s "
 "global transform. The reason we do this is so the bullet is spawned at the "
 "end of the pistol."
 msgstr ""
@@ -1539,8 +1535,9 @@ msgstr ""
 "faisons cela, c'est pour que la balle soit crée à l'extrémité du pistolet."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:699
+#, fuzzy
 msgid ""
-"You can see that ``Pistol_Aim_Point`` is positioned right at the end of the "
+"You can see that ``Pistol_Point`` is positioned right at the end of the "
 "pistol by clicking the :ref:`AnimationPlayer <class_AnimationPlayer>` and "
 "scrolling through ``Pistol_fire``. You'll find the position is more or less "
 "at the end of the pistol when it fires."
@@ -2327,9 +2324,10 @@ msgstr ""
 "des balles !"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1167
+#, fuzzy
 msgid ""
-"Before we are ready to test our new weapons, we still have a little bit of "
-"work to do."
+"Before we are ready to test our new weapons, we still have a bit of work to "
+"do."
 msgstr ""
 "Avant de pouvoir tester nos nouvelles armes, on a encore un peu de pain sur "
 "la planche."
@@ -2438,14 +2436,13 @@ msgstr ""
 "nœud  ``Cubes`` node."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1219
-#, fuzzy
 msgid ""
 "If you select the top cube, and then hold down :kbd:`Shift` and select the "
 "last cube, Godot will select all the cubes in-between!"
 msgstr ""
-"Si vous sélectionnez le cube supérieur, puis maintenez la touche ``shift`` "
-"et sélectionnez le dernier cube, Godot sélectionnera tous les cubes entre "
-"les deux !"
+"Si vous sélectionnez le cube supérieur, puis maintenez la touche :kbd:"
+"`Shift` et sélectionnez le dernier cube, Godot sélectionnera tous les cubes "
+"entre les deux !"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1222
 msgid ""

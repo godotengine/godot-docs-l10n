@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
-msgstr ""
+msgstr "Процес імпорту"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr ""
+msgstr "Імпорт активів (ассетів) у Godot 3.0+"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -32,6 +32,9 @@ msgid ""
 "to specify how to convert and change import flags for textures, audio files, "
 "scenes, etc."
 msgstr ""
+"Раніше імпорт активів у Godot 2.x вимагав ручної підтримки окремого каталогу "
+"з вихідними активами. Без цього, неможливо було вказати, як конвертувати та "
+"змінювати прапори (флаги) імпорту текстур, аудіофайлів, сцен тощо."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
 msgid ""
@@ -41,14 +44,19 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
+"У Godot 3.0 ми використовуємо більш сучасний підхід до імпорту: просто "
+"скиньте свої активи (файли зображень, сцени, аудіофайли, шрифти тощо) "
+"безпосередньо в теку проекту (скопіюйте їх вручну за допомогою програми "
+"провідника файлів ОС). Godot автоматично імпортує ці файли всередину і "
+"збереже імпортовані ресурси заховані у теці res://.import."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid "This allows changing all the import parameters transparently."
-msgstr ""
+msgstr "Це дозволяє прозоро змінювати всі параметри імпорту."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:23
 msgid "Changing import parameters"
-msgstr ""
+msgstr "Зміна параметрів імпорту"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:25
 msgid ""
@@ -56,12 +64,18 @@ msgid ""
 "import parameters are only present in non-native Godot resource types) is "
 "easy. Select the relevant resource in the filesystem dock:"
 msgstr ""
+"Зміна параметрів імпорту об'єкта в Godot (знову ж таки, пам'ятайте, що "
+"параметри імпорту присутні лише у нерідних типах ресурсів Godot) дуже "
+"проста. Виберіть відповідний ресурс на панелі Файлова система:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:31
+#, fuzzy
 msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
 msgstr ""
+"Потім, відрегулювавши параметри, натисніть “Reimport”. Ці параметри будуть "
+"використовуватися лише для цього активу та для майбутніх реімпортів."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:34
 msgid ""
@@ -69,6 +83,9 @@ msgid ""
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
+"Можлива зміна параметрів імпорту кількох активів одночасно. Просто виберіть "
+"їх усіх разом на панелі ресурсів, і відкриті параметри будуть застосовані до "
+"всіх при повторному імпорті."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
 msgid "Automatic reimport"
@@ -80,21 +97,28 @@ msgid ""
 "automatic reimport of it, applying the preset configured for that specific "
 "asset."
 msgstr ""
+"Коли контрольна сума MD5 вихідного ресурсу зміниться, Godot здійснить "
+"автоматичний повторний імпорт, застосувавши попередньо налаштований для "
+"цього конкретний ресурс."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
 msgid "Files generated"
-msgstr ""
+msgstr "Згенеровані файли"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
+"Імпорт додасть додатковий файл <asset> .import, що містить конфігурацію "
+"імпорту. Не забудьте скористатись цією системою контролю версій!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:53
 msgid ""
 "Additionally, extra assets will be preset in the hidden res://.import folder:"
 msgstr ""
+"Крім того, додаткові активи будуть встановлені в прихованій теці res://."
+"import:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:57
 msgid ""
@@ -104,20 +128,28 @@ msgid ""
 "reimporting time when checking out on another computer, but it takes "
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
+"Якщо будь-який із файлів, присутніх у цій теці, буде стерто (або вся папка), "
+"актив, або активи, будуть повторно імпортовані автоматично. Таким чином, "
+"закріплення цієї папки в системі управління версіями не є обов'язковим. Це "
+"може скоротити час повторного імпорту при переході на інший комп'ютер, але "
+"це забирає значно більше місця та часу на передачу. Виберіть,що, з гіршого, "
+"для вас краще!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid "Changing import resource type"
-msgstr ""
+msgstr "Зміна типу ресурсу імпорту"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:66
 msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
 msgstr ""
+"Деякі вихідні активи можна імпортувати як різні види ресурсів. Для цього "
+"виберіть потрібний тип потрібного ресурсу та натисніть «Reimport»:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:74
 msgid "Changing default import parameters"
-msgstr ""
+msgstr "Зміна параметрів імпорту за замовчуванням"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
@@ -126,19 +158,28 @@ msgid ""
 "some resource types offering presets, the default setting can be saved and "
 "cleared too:"
 msgstr ""
+"Для різних типів ігор можуть знадобитися різні параметри за замовчуванням. "
+"Їх зміна для кожного проекту може бути досягнута за допомогою меню "
+"\"Попередньо ..\" (\"Preset..\"). Окрім деяких типів ресурсів, які "
+"пропонують свої попередні параметри, ці параметри також можна зберегти та "
+"очистити:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:84
 msgid "Simplicity is key!"
-msgstr ""
+msgstr "Простота є ключем!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:86
 msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
 msgstr ""
+"Це дуже простий процес, до якого легко звикнути. Він також застосовує більш "
+"правильний спосіб поводження з ресурсами."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
 msgstr ""
+"Є багато видів активів, доступних для імпорту, тому, будь ласка, читайте "
+"далі, щоб зрозуміти, як працювати з усіма ними!"

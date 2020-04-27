@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,9 +68,10 @@ msgstr ""
 "レートは、時間とデバイスによって異なります。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+#, fuzzy
 msgid ""
-"To help manage this variability the ``delta`` parameter contains the time "
-"elapsed in seconds, as a floating point, since the previous call to "
+"To help manage this variability, the ``delta`` parameter contains the time "
+"elapsed in seconds as a floating-point number since the previous call to "
 "``_process()``."
 msgstr ""
 "この変動を管理しやすくするために、\\ ``delta``\\ パラメーターには、\\ "
@@ -86,9 +87,10 @@ msgstr ""
 "することができます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
+#, fuzzy
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
-"speed both constant and independent from the frame rate."
+"speed both constant and independent of the frame rate."
 msgstr ""
 "たとえば、移動速度を一定にし、フレームレートから独立させるために、移動量が時"
 "間デルタで乗算されることがよくあります。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,6 +83,9 @@ msgid ""
 "translations written in the gettext ``.po`` format. See :ref:"
 "`doc_localization_using_gettext` for details."
 msgstr ""
+"Jeśli potrzebujesz bardziej wydajnego formatu pliku, Godot obsługuje również "
+"ładowanie tłumaczeń napisanych w formacie gettext ``.po``. Zobacz :ref:"
+"`doc_localization_using_gettext` po szczegóły."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 msgid "Translation format"
@@ -112,12 +115,19 @@ msgid ""
 "workarounds as described `here <https://stackoverflow.com/questions/4221176/"
 "excel-to-csv-with-utf8-encoding>`__."
 msgstr ""
+"Domyślnie Microsoft Excel będzie zawsze zapisywał pliki CSV z kodowaniem "
+"ANSI, a nie UTF-8. Nie ma wbudowanego sposobu, aby to zrobić, ale są "
+"obejścia, jak opisano `tutaj <https://stackoverflow.com/questions/4221176/"
+"excel-to-csv-with-utf8-encoding>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
+#, fuzzy
 msgid ""
 "We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
 "Sheets instead."
 msgstr ""
+"Zalecamy używanie programu `LibreOffice <https://www.libreoffice.org/>`__ "
+"lub Google Sheets jako narzędzia."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
 msgid "CSV files must be formatted as follows:"

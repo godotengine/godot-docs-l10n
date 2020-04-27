@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -236,7 +236,7 @@ msgstr ""
 "ますが、法線は反対方向を指します。 2点から法線を計算するには、最初に方向ベク"
 "トルを取得してから、どちらかの側に90度回転する必要があります:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:201
+#: ../../docs/tutorials/math/vectors_advanced.rst:199
 msgid ""
 "The rest is the same as the previous example, either point_a or point_b will "
 "work since they are in the same plane:"
@@ -244,17 +244,17 @@ msgstr ""
 "残りは前の例と同じですが、point_aまたはpoint_bは同じ平面上にあるのでどちらで"
 "も動作します:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:219
+#: ../../docs/tutorials/math/vectors_advanced.rst:217
 msgid ""
 "Doing the same in 3D is a little more complex and will be explained further "
 "down."
 msgstr "3Dで同じことを行うことは、もう少し複雑でなので、後に詳しく説明します。"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:223
+#: ../../docs/tutorials/math/vectors_advanced.rst:221
 msgid "Some examples of planes"
 msgstr "平面処理に関するいくつかの例"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:225
+#: ../../docs/tutorials/math/vectors_advanced.rst:223
 msgid ""
 "Here is a simple example of what planes are useful for. Imagine you have a "
 "`convex <https://www.mathsisfun.com/definitions/convex.html>`__ polygon. For "
@@ -266,7 +266,7 @@ msgstr ""
 "す。たとえば、四角形、台形、三角形、またはフェースが内側に曲がらないポリゴン"
 "などです。"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:230
+#: ../../docs/tutorials/math/vectors_advanced.rst:228
 msgid ""
 "For every segment of the polygon, we compute the plane that passes by that "
 "segment. Once we have the list of planes, we can do neat things, for example "
@@ -276,7 +276,7 @@ msgstr ""
 "す。平面のリストを取得したら、あるポイントがポリゴン内にあるかどうかを確認す"
 "るなどの、きちんとした操作を行うことができます。"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:234
+#: ../../docs/tutorials/math/vectors_advanced.rst:232
 msgid ""
 "We go through all planes, if we can find a plane where the distance to the "
 "point is positive, then the point is outside the polygon. If we can't, then "
@@ -285,12 +285,12 @@ msgstr ""
 "ポイントまでの距離が正である平面を一つでも見つけることができれば、ポイントは"
 "ポリゴンの外側にあります。できない場合、ポイントはポリゴンの内側にあります。"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:240
-#: ../../docs/tutorials/math/vectors_advanced.rst:279
+#: ../../docs/tutorials/math/vectors_advanced.rst:238
+#: ../../docs/tutorials/math/vectors_advanced.rst:277
 msgid "Code should be something like this:"
 msgstr "コードは次のようになります:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:265
+#: ../../docs/tutorials/math/vectors_advanced.rst:263
 msgid ""
 "Pretty cool, huh? But this gets much better! With a little more effort, "
 "similar logic will let us know when two convex polygons are overlapping too. "
@@ -302,7 +302,7 @@ msgstr ""
 "は分離軸定理(またはSAT)と呼ばれ、ほとんどの物理エンジンはこれを使用して衝突を"
 "検出します。"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:270
+#: ../../docs/tutorials/math/vectors_advanced.rst:268
 msgid ""
 "With a point, just checking if a plane returns a positive distance is enough "
 "to tell if the point is outside. With another polygon, we must find a plane "
@@ -316,7 +316,7 @@ msgstr ""
 "平面に対するBのポイントを対象に実行され、次にBの平面に対するAのポイントに対象"
 "に実行されます:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:370
+#: ../../docs/tutorials/math/vectors_advanced.rst:368
 msgid ""
 "As you can see, planes are quite useful, and this is the tip of the iceberg. "
 "You might be wondering what happens with non convex polygons. This is "
@@ -328,11 +328,11 @@ msgstr ""
 "さな凸面のポリゴンに分割するか、BSP(バイナリ空間分割、最近ではあまり使用され"
 "ていない)などの手法を使用して処理されます。"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:377
+#: ../../docs/tutorials/math/vectors_advanced.rst:375
 msgid "Collision detection in 3D"
 msgstr "3Dでの衝突検出"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:379
+#: ../../docs/tutorials/math/vectors_advanced.rst:377
 msgid ""
 "This is another bonus bit, a reward for being patient and keeping up with "
 "this long tutorial. Here is another piece of wisdom. This might not be "
@@ -345,7 +345,7 @@ msgstr ""
 "例ではないかもしれませんが(Godotはすでに衝突検出をかなりうまく行います)、ほと"
 "んどすべての物理エンジンと衝突検出ライブラリで使用されています(^^)"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:385
+#: ../../docs/tutorials/math/vectors_advanced.rst:383
 msgid ""
 "Remember that converting a convex shape in 2D to an array of 2D planes was "
 "useful for collision detection? You could detect if a point was inside any "
@@ -354,7 +354,7 @@ msgstr ""
 "2Dの凸形状を2D平面の配列に変換することは、衝突検出に役立つことを覚えています"
 "か？点が凸形状の内側にあるか、2つの2D凸形状が重なっているかを検出できます。"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:389
+#: ../../docs/tutorials/math/vectors_advanced.rst:387
 msgid ""
 "Well, this works in 3D too, if two 3D polyhedral shapes are colliding, you "
 "won't be able to find a separating plane. If a separating plane is found, "
@@ -364,7 +364,7 @@ msgstr ""
 "見つけることができません。分離平面が見つかった場合は、形状は明らかに衝突して"
 "いません。"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:393
+#: ../../docs/tutorials/math/vectors_advanced.rst:391
 msgid ""
 "To refresh a bit a separating plane means that all vertices of polygon A are "
 "in one side of the plane, and all vertices of polygon B are in the other "
@@ -375,7 +375,7 @@ msgstr ""
 "にあり、ポリゴンBのすべての頂点が反対側にあることを意味します。この平面は、常"
 "にポリゴンAまたはポリゴンBのいずれかの面平面の1つです。"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:398
+#: ../../docs/tutorials/math/vectors_advanced.rst:396
 msgid ""
 "In 3D though, there is a problem to this approach, because it is possible "
 "that, in some cases a separating plane can't be found. This is an example of "
@@ -384,7 +384,7 @@ msgstr ""
 "ただし、3Dでは、このアプローチには問題があります。これは、場合によっては分離"
 "平面が見つからない可能性があるためです。これはそのような状況の例です:"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:404
+#: ../../docs/tutorials/math/vectors_advanced.rst:402
 msgid ""
 "To avoid it, some extra planes need to be tested as separators, these planes "
 "are the cross product between the edges of polygon A and the edges of "
@@ -393,6 +393,32 @@ msgstr ""
 "それを回避するには、いくつかの余分な平面をセパレータとしてテストする必要があ"
 "ります。これらの平面は、ポリゴンAのエッジとポリゴンBのエッジ間の外積です"
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:410
+#: ../../docs/tutorials/math/vectors_advanced.rst:408
 msgid "So the final algorithm is something like:"
 msgstr "したがって、最終的なアルゴリズムは次のようになります:"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:589
+msgid "More information"
+msgstr "より多くの情報"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:591
+#, fuzzy
+msgid ""
+"For more information on using vector math in Godot, see the following "
+"article:"
+msgstr ""
+"Godotでのベクトル演算の使用の詳細については、次の記事を参照してください:"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:593
+msgid ":ref:`doc_matrices_and_transforms`"
+msgstr ":ref:`doc_matrices_and_transforms`"
+
+#: ../../docs/tutorials/math/vectors_advanced.rst:595
+#, fuzzy
+msgid ""
+"If you would like additional explanation, you should check out 3Blue1Brown's "
+"excellent video series \"Essence of Linear Algebra\": https://www.youtube."
+"com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"
+msgstr ""
+"追加の説明が必要な場合は、線形変換に関する3Blue1Brownの優れたビデオをご覧くだ"
+"さい: https://www.youtube.com/watch?v=kYB8IZa5AuE"

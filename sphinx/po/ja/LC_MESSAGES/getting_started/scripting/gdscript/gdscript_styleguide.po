@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,26 +84,28 @@ msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
 msgstr ""
-"CRLFやCRではなく、改行(**LF**)文字を使用して改行します。*(エディタのデフォル"
-"ト)*"
+"CRLFやCRではなく、改行(**LF**)文字を使用して改行します。\\ *(エディタのデフォ"
+"ルト)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:100
 msgid "Use one line feed character at the end of each file. *(editor default)*"
-msgstr "各ファイルの最後に1つの改行文字を使用します。*(エディタのデフォルト)*"
+msgstr ""
+"各ファイルの最後に1つの改行文字を使用します。\\ *(エディタのデフォルト)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:101
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
-"`バイトオーダーマーク<https://en.wikipedia.org/wiki/Byte_order_mark>` なしで "
-"**UTF-8** エンコーディングを使用します。*(エディタのデフォルト)*"
+"`バイトオーダーマーク <https://ja.wikipedia.org/wiki/バイトオーダーマーク>`_"
+"\\ なしで\\ **UTF-8**\\ エンコーディングを使用します。\\ *(エディタのデフォル"
+"ト)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
-"インデントにはスペースの代わりに **タブ** を使用します。*(エディタのデフォル"
-"ト)*"
+"インデントにはスペースの代わりに\\ **タブ**\\ を使用します。\\ *(エディタのデ"
+"フォルト)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 msgid "Indentation"
@@ -124,7 +126,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:662
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:675
 msgid "**Good**:"
 msgstr "**良い例**:"
 
@@ -138,7 +140,7 @@ msgstr "**良い例**:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:683
 msgid "**Bad**:"
 msgstr "**悪い例**:"
 
@@ -279,15 +281,14 @@ msgstr ""
 "できます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:363
-#, fuzzy
 msgid ""
 "In the script editor, to toggle the selected code commented, press :kbd:"
 "`Ctrl + K`. This feature adds a single # sign at the start of the selected "
 "lines."
 msgstr ""
-"スクリプトエディタで、選択したコードのコメント化の状態を切り替えるには、\\ "
-"<kbd>Ctrl</kbd> <kbd>K</kbd> を押します。この機能は、選択した行の先頭に単一の"
-"#記号を追加します(逆に#記号があれば削除します)。"
+"スクリプトエディタで、選択したコードのコメントを切り替えるには、\\ :kbd:"
+"`Ctrl + K` を押します。この機能は、選択した行の先頭に単一の#記号を追加します"
+"(#記号があれば逆に削除します)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 msgid "Whitespace"
@@ -514,15 +515,39 @@ msgstr ""
 "す。これを使用して、ノードの依存関係をキャッシュしたり、クラスが依存している"
 "シーン内の子ノードを取得したりできます。これは上記の例が示すものです。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:600
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:599
+#, fuzzy
+msgid "Member variables"
+msgstr "メンバアクセス"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:601
+msgid ""
+"Don't declare member variables if they are only used locally in a method, as "
+"it makes the code more difficult to follow. Instead, declare them as local "
+"variables in the method's body."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
+#, fuzzy
+msgid "Local variables"
+msgstr "ローカル変数(LocalVarSet/LocalVarGet)"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:608
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
 msgid "Methods and static functions"
 msgstr "メソッドと静的関数"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:602
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid "After the class's properties come the methods."
 msgstr "クラスのプロパティの後にメソッドが続きます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:604
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:617
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
@@ -532,7 +557,7 @@ msgstr ""
 "バックメソッドで開始します。 そしてGodotがノードをシーンツリーに追加するとき"
 "に呼び出す ``_ready()`` コールバックを続けます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:608
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
@@ -540,7 +565,7 @@ msgstr ""
 "これらの関数は、オブジェクトの初期化方法を示すため、最初に来る必要がありま"
 "す。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:611
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:624
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
@@ -550,7 +575,7 @@ msgstr ""
 "想コールバックが次に来る必要があります。これらは、オブジェクトのメインループ"
 "とゲームエンジンとの相互作用を制御します。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
@@ -558,22 +583,22 @@ msgstr ""
 "クラスの残りのインターフェイスであるパブリックメソッドとプライベートメソッド"
 "は、この順序でその後に続きます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:652
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:665
 msgid "Static typing"
 msgstr "静的型付け"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:654
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:667
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
 "Godot 3.1から、GDScriptはオプショナルな静的型付けをサポートしています。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:657
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 msgid "Type hints"
 msgstr "タイプヒント"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:659
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:672
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
@@ -581,7 +606,7 @@ msgstr ""
 "変数名の後にコロンをスペースを挟まずに配置し、可能ならばGDScript コンパイラに"
 "変数の型を推測させます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:678
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:691
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
@@ -589,7 +614,7 @@ msgstr ""
 "コンパイラにタイプヒントを推測させる場合、コロンとイコールは一緒に書いて下さ"
 "い: ``:=``。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:684
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:697
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr "関数の定義をする時の戻り値の型の矢印の両側にスペースを追加します。"

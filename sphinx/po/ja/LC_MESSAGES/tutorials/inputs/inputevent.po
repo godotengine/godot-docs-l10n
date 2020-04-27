@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,9 +63,10 @@ msgstr ""
 "もできます！"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:40
+#, fuzzy
 msgid ""
-"You can setup your InputMap under **Project > Project Settings > Input Map** "
-"and then use those actions like this:"
+"You can set up your InputMap under **Project > Project Settings > Input "
+"Map** and then use those actions like this:"
 msgstr ""
 "InputMap は\\ **プロジェクト -> プロジェクト設定 -> インプットマップ** の下で"
 "設定でき、次のようなアクションを使用できます:"
@@ -222,10 +223,11 @@ msgstr ""
 "トを受け取ります。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:115
+#, fuzzy
 msgid ""
 "In accordance with Godot's node-based design, this enables specialized child "
 "nodes to handle and consume particular events, while their ancestors, and "
-"ultimately the scene root, can provide more generalized behaviour if needed."
+"ultimately the scene root, can provide more generalized behavior if needed."
 msgstr ""
 "Godotのノードベースの設計に従って、これにより、特殊な子ノードが特定のイベント"
 "を処理および消費できるようになるので、祖先、および最終的にシーンルートは、必"
@@ -246,8 +248,9 @@ msgstr ""
 "みを含みます。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:127
+#, fuzzy
 msgid ""
-"There are several specialised types of InputEvent, described in the table "
+"There are several specialized types of InputEvent, described in the table "
 "below:"
 msgstr "InputEventにはいくつかの特殊なタイプがあり、次の表で説明します:"
 
@@ -284,7 +287,8 @@ msgid "KEY"
 msgstr "\\ KEY"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
-msgid "Contains a scancode and unicode value, as well as modifiers."
+#, fuzzy
+msgid "Contains a scancode and Unicode value, as well as modifiers."
 msgstr ""
 "スキャンコードとユニコードの値、および(Ctrl、Shiftなどの)モディファイヤが含ま"
 "れています。"

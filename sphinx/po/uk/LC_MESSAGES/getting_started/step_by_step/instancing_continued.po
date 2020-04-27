@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
-#, fuzzy
 msgid "Instancing (continued)"
 msgstr "Instancing (продовження)"
 
@@ -27,11 +26,8 @@ msgid "Recap"
 msgstr "Коротке повторення"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
-#, fuzzy
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
-msgstr ""
-"Instancing (створення екземплярів) має багато зручних застосувань. Завдяки "
-"йому ви маєте:"
+msgstr "Instancing має багато корисних застосувань. Завдяки йому ви маєте:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
@@ -80,20 +76,18 @@ msgstr ""
 "просто програміст, а будь-хто."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:30
-#, fuzzy
 msgid "For example, here's how a simple shooter game could be imagined:"
 msgstr "Наприклад, ось як можна уявити просту гру стрілялки:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:34
-#, fuzzy
 msgid ""
 "You can come up with a diagram like this for almost any kind of game. Write "
 "down the parts of the game that you can visualize, and then add arrows to "
 "represent ownership of one component by another."
 msgstr ""
-"Ви можете створити таку схему майже для будь-якої гри. Запишіть частини гри, "
-"які ви можете візуалізувати, а потім протягніть стрілки, щоб зрозуміти які "
-"компоненти, яким будуть належати."
+"Ви можете створити подібну схему майже для будь-якої гри. Запишіть частини "
+"гри, які ви можете візуалізувати, а потім протягніть стрілки, щоб зрозуміти "
+"які компоненти, яким будуть належати."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:38
 msgid ""
@@ -108,7 +102,6 @@ msgstr ""
 "в редакторі) для побудови ієрархії відносин."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
-#, fuzzy
 msgid ""
 "A lot of time spent in programming games (or software in general) is on "
 "designing an architecture and fitting game components to that architecture. "
@@ -118,13 +111,13 @@ msgid ""
 "design based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
-"Багато часу в програмуванні ігор (або програмному забезпеченні взагалі) "
+"Багато часу в програмуванні ігор (та і взагалі в розробці програм) "
 "витрачається на проектування архітектури та підлагодження ігрових "
 "компонентів до цієї архітектури. Проектування на основі сцен замінює такий "
 "підхід і робить розробку набагато швидшою і простішою, дозволяючи "
 "сконцентруватися на логіці гри. Оскільки більшість ігрових компонентів "
-"відображаються безпосередньо на сцені, використання дизайну, заснованого на "
-"вставці екземплярів сцени, означає, що інший архітектурний код не потрібен."
+"відображаються безпосередньо на сцені, проектування на основі інстансування "
+"сцен, означає, що інший архітектурний код не потрібен."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:48
 msgid ""
@@ -167,7 +160,6 @@ msgstr ""
 "додані до загального ігрового світу."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:66
-#, fuzzy
 msgid ""
 "With Godot, it's easy to iterate on your game like this, as all you need to "
 "do is create and instance more scenes. Furthermore, the editor UI is "
@@ -177,11 +169,11 @@ msgid ""
 "interface."
 msgstr ""
 "З Godot легко відтворити гру, схожу на цю, адже все, що вам потрібно "
-"зробити, це створити та встановити більше екземплярів сцен. Крім того, "
-"інтерфейс редактора призначений для зручності користування, як програмістів, "
-"так і не програмістів. Типовий склад команди розробки може залучати 2D, або "
-"3D художників, дизайнерів рівнів, дизайнерів ігор та аніматорів, які "
-"працюють з інтерфейсом редактора."
+"зробити, це створити та інстансувати більше сцен. Крім того, інтерфейс "
+"редактора побудований так, щоб ним було зручно користуватися, як "
+"програмістам, так і не програмістам. Типовий склад команди розробки може "
+"залучати 2D, або 3D, художників, дизайнерів рівнів, дизайнерів ігор та "
+"аніматорів, які працюють з інтерфейсом редактора."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"

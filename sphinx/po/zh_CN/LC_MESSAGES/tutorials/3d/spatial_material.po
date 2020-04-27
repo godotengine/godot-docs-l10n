@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgid ""
 "shader code. However, it can be converted to shader code if additional "
 "functionality is needed."
 msgstr ""
-"``SpatialMaterial``是一种默认的3D材质，旨在提供艺术家在材质中寻找的大部分功"
+"``SpatialMaterial`` 是一种默认的3D材质，旨在提供艺术家在材质中寻找的大部分功"
 "能，而无需编写着色器代码。 但是，如果需要其他功能，可以将其转换为着色器代码。"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:13
@@ -278,9 +278,10 @@ msgid "Vertex Color"
 msgstr "Vertex Color(顶点颜色)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:144
+#, fuzzy
 msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
-"come from your 3D modelling application. By default they are ignored."
+"come from your 3D modelling application. By default, they are ignored."
 msgstr ""
 "此设置允许选择默认情况下对来自3D建模应用程序的顶点颜色执行的操作。 默认情况"
 "下，它们会被忽略。"
@@ -846,11 +847,69 @@ msgstr ""
 "Godot允许使用辅助反照率和法线贴图生成细节纹理，可以通过多种方式进行混合。 通"
 "过将其与二级UV或三平面模式相结合，可以实现许多有趣的纹理。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:466
+#: ../../docs/tutorials/3d/spatial_material.rst:465
+msgid "There are several settings that control how detail is used."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:467
+msgid ""
+"Mask: The detail mask is a black and white image used to control where the "
+"blending takes place on a texture. White is for the detail textures, Black "
+"is for the regular material textures, different shades of gray are for "
+"partial blending of the material textures and detail textures."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:472
+msgid ""
+"Blend Mode: These four modes control how the textures are blended together."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:474
+msgid ""
+"Mix: Combines pixel values of both textures. At black, only show the "
+"material texture, at white, only show the detail texture. Values of gray "
+"create a smooth blend between the two."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:478
+msgid ""
+"Add: Adds pixel values of one Texture with the other. Unlike mix mode both "
+"textures are completely mixed at white parts of a mask and not at gray "
+"parts. The original texture is mostly unchanged at black"
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:482
+msgid ""
+"Sub: Subtracts pixel values of one texture with the other. The second "
+"texture is completely subtracted at white parts of a mask with only a little "
+"subtraction in black parts, gray parts being different levels of subtraction "
+"based on the exact texture."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:487
+msgid ""
+"Mul: Multiplies the RGB channel numbers for each pixel from the top texture "
+"with the values for the corresponding pixel from the bottom texture."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:490
+msgid ""
+"Albedo: This is where you put an albedo texture you want to blend. If "
+"nothing is in this slot it will be interpreted as white by default."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:493
+msgid ""
+"Normal: This is where you put a normal texture you want to blend. If nothing "
+"is in this slot it will be interpreted as a flat normal map. This can still "
+"be used even if the material does not have normal map enabled."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:498
 msgid "UV1 and UV2"
 msgstr "UV1和UV2"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:468
+#: ../../docs/tutorials/3d/spatial_material.rst:500
 msgid ""
 "Godot supports two UV channels per material. Secondary UV is often useful "
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
@@ -859,11 +918,11 @@ msgstr ""
 "Godot每种材质支持两个UV通道。二级UV通常可用于环境遮挡或发射(烘焙的光照)。 UV"
 "可以缩放和偏移，这在使用重复纹理时很有用。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:473
+#: ../../docs/tutorials/3d/spatial_material.rst:505
 msgid "Triplanar Mapping"
 msgstr "Triplanar Mapping(三平面映射)"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:475
+#: ../../docs/tutorials/3d/spatial_material.rst:507
 msgid ""
 "Triplanar mapping is supported for both UV1 and UV2. This is an alternative "
 "way to obtain texture coordinates, sometimes called \"Autotexture\". "
@@ -874,7 +933,7 @@ msgstr ""
 "理”。 纹理在X，Y和Z中采样，并由法线混合。 可以在世界空间或对象空间中执行三平"
 "面映射。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:480
+#: ../../docs/tutorials/3d/spatial_material.rst:512
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
@@ -882,11 +941,11 @@ msgstr ""
 "在下图中，你可以看到所有基元如何与世界三平面共享相同的材质，因此砖纹理在它们"
 "之间平滑地继续。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:486
+#: ../../docs/tutorials/3d/spatial_material.rst:518
 msgid "Proximity and distance fade"
 msgstr "Proximity and distance fade(接近和距离渐隐)"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:488
+#: ../../docs/tutorials/3d/spatial_material.rst:520
 msgid ""
 "Godot allows materials to fade by proximity to each other as well as "
 "depending on the distance from the viewer. Proximity fade is useful for "
@@ -898,7 +957,7 @@ msgstr ""
 "粒子或大量水平滑地过渡到海岸是有用的。 距离渐隐对于仅在给定距离之后存在的光轴"
 "或指示物是有用的。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:494
+#: ../../docs/tutorials/3d/spatial_material.rst:526
 msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for an "
 "entire scene is usually not a good idea."
@@ -906,11 +965,11 @@ msgstr ""
 "请记住，启用这些功能会启用Alpha混合，因此将它们用于整个场景通常不是一个好主"
 "意。"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:500
+#: ../../docs/tutorials/3d/spatial_material.rst:532
 msgid "Render priority"
 msgstr "Render priority(渲染优先级)"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:502
+#: ../../docs/tutorials/3d/spatial_material.rst:534
 msgid ""
 "The rendering order of objects can be changed, although this is mostly "
 "useful for transparent objects (or opaque objects that perform depth draw "

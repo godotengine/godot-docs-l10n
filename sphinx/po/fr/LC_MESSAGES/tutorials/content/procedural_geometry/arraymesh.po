@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,8 @@ msgid ""
 "This tutorial will present the basics of using an :ref:`ArrayMesh "
 "<class_arraymesh>`"
 msgstr ""
+"Ce tutoriel présente les bases de l'utilisation d'un :ref:`ArrayMesh "
+"<class_arraymesh>`"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:8
 msgid ""
@@ -33,6 +35,10 @@ msgid ""
 "<class_ArrayMesh_method_add_surface_from_arrays>`, which takes up to four "
 "parameters. The first two are required, while the second two are optional."
 msgstr ""
+"Pour ce faire, nous utiliserons la fonction :ref:`add_surface_from_arrays() "
+"<class_ArrayMesh_method_add_surface_from_arrays>`, qui prend jusqu'à quatre "
+"paramètres. Les deux premiers sont obligatoires, tandis que les deux autres "
+"sont facultatifs."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:11
 msgid ""
@@ -41,6 +47,10 @@ msgid ""
 "is triangles, lines, points, etc. A complete list can be found under the :"
 "ref:`Mesh <class_mesh>` class reference page."
 msgstr ""
+"Le premier est le ``PrimitiveType``, c'est un concept OpenGL qui indique au "
+"GPU comment arranger la primitive en fonction des sommets donnés, qu'il "
+"s'agisse de triangles, de lignes, de points, etc. Une liste complète peut "
+"être trouvée sur la page de référence de la classe :ref:`Mesh <class_mesh>`."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:16
 msgid ""
@@ -49,10 +59,14 @@ msgid ""
 "stores a ``Pool**Array`` (e.g. PoolVector3Array, PoolIntArray, etc.) for "
 "each type of information."
 msgstr ""
+"Le second est le Array réel qui stocke les informations sur le maillage. Le "
+"array est un array de Godot normal qui est construit avec des crochets vides "
+"``[]``. Il stocke un ``Pool**Array`` (par exemple PoolVector3Array, "
+"PoolIntArray, etc.) pour chaque type d'information."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:20
 msgid "``ARRAY_VERTEX`` = 0 | PoolVector3Array or PoolVector2Array"
-msgstr ""
+msgstr "``ARRAY_VERTEX`` = 0 | PoolVector3Array ou PoolVector2Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:21
 msgid "``ARRAY_NORMAL`` = 1 | PoolVector3Array"
@@ -63,38 +77,45 @@ msgid ""
 "``ARRAY_TANGENT`` = 2 | PoolRealArray of groups of 4 floats. first 3 floats "
 "determine the tangent, and the last the binormal direction as -1 or 1."
 msgstr ""
+"``ARRAY_TANGENT`` = 2 | PoolRealArray de groupes de 4 flottants. Les 3 "
+"premiers flottants déterminent la tangente, et le dernier la direction "
+"binaire comme -1 ou 1."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:24
 msgid "``ARRAY_COLOR`` = 3 | PoolColorArray"
-msgstr ""
+msgstr "``ARRAY_COLOR`` = 3 | PoolColorArray"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:25
 msgid "``ARRAY_TEX_UV`` = 4 | PoolVector2Array or PoolVector3Array"
-msgstr ""
+msgstr "``ARRAY_TEX_UV`` = 4 | PoolVector2Array ou PoolVector3Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:26
 msgid "``ARRAY_TEX_UV2`` = 5 | PoolVector2Array or PoolVector3Array"
-msgstr ""
+msgstr "``ARRAY_TEX_UV2`` = 5 | PoolVector2Array ou PoolVector3Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:27
 msgid ""
 "``ARRAY_BONES`` = 6 | PoolRealArray of groups of 4 floats or PoolIntArray of "
 "groups of 4 ints"
 msgstr ""
+"``ARRAY_BONES`` = 6 | PoolRealArray de groupes de 4 flottants ou "
+"PoolIntArray de groupes de 4 ints"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:28
 msgid "``ARRAY_WEIGHTS`` = 7 | PoolRealArray of groups of 4 floats"
-msgstr ""
+msgstr "``ARRAY_WEIGHTS`` = 7 | PoolRealArray de groupes de 4 flottants"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:29
 msgid "``ARRAY_INDEX`` = 8 | PoolIntArray"
-msgstr ""
+msgstr "``ARRAY_INDEX`` = 8 | PoolIntArray"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:31
 msgid ""
 "The Array of vertices is always required. All the others are optional and "
 "will only be used if included."
 msgstr ""
+"L'Array des sommets est toujours requis. Tous les autres sont facultatifs et "
+"ne seront utilisés que s'ils sont inclus."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:33
 msgid ""
@@ -103,10 +124,15 @@ msgid ""
 "of 4 floats. So the array size will be four times the size of the vertex "
 "array size, but they will have the same number of elements"
 msgstr ""
+"Chaque array doit avoir le même nombre d'éléments que l'array des sommets, à "
+"l'exception de l'array des index. Pour les arrays comme les tangentes, un "
+"élément est un groupe de 4 flottants. La taille de l'array sera donc quatre "
+"fois plus grande que celle de l'array des sommets, mais ils auront le même "
+"nombre d'éléments"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:37
 msgid "The index array is unique."
-msgstr ""
+msgstr "L'array des index est unique."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:39
 msgid ""
@@ -114,6 +140,10 @@ msgid ""
 "this tutorial does not cover using blendshapes, it is possible to specify "
 "them when creating a surface from arrays."
 msgstr ""
+"Le troisième paramètre est un ensemble de blendshapes à utiliser pour le "
+"Mesh. Bien que ce tutoriel ne couvre pas l'utilisation des blendshapes, il "
+"est possible de les spécifier lors de la création d'une surface à partir "
+"d'arrays."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:42
 msgid ""
@@ -122,12 +152,18 @@ msgid ""
 "ref:`VisualServer <class_visualserver>` under :ref:`ArrayFormat "
 "<enum_visualserver_arrayformat>`."
 msgstr ""
+"Le dernier paramètre est les drapeaux de compression qui spécifient les "
+"arrays à stocker avec deux fois moins de bits. Les valeurs peuvent être "
+"trouvées dans la classref pour :ref:`VisualServer <class_visualserver>` "
+"sous :ref:`ArrayFormat <enum_visualserver_arrayformat>`."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:45
 msgid ""
 "For normal usage you will find it is best to leave the last two parameters "
 "empty."
 msgstr ""
+"Pour une utilisation normale, il est préférable de laisser les deux derniers "
+"paramètres vides."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:48
 msgid "ArrayMesh"
@@ -139,6 +175,10 @@ msgid ""
 "adding an ArrayMesh in the editor is not useful, but in this case it allows "
 "as to access the ArrayMesh from code without creating one."
 msgstr ""
+"Ajoutez un :ref:`ArrayMesh <class_arraymesh>` à une MeshInstance. "
+"Normalement, l'ajout d'un ArrayMesh dans l'éditeur n'est pas utile, mais "
+"dans ce cas il permet d'accéder au ArrayMesh à partir du code sans en créer "
+"un."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:54
 msgid "Next, add a script to the MeshInstance."
@@ -146,7 +186,7 @@ msgstr "Ensuite, ajoutez un script au MeshInstance."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:56
 msgid "Under ``_ready()``, create a new Array."
-msgstr ""
+msgstr "Sous ``_ready()``, créez un nouvel Array."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:63
 msgid ""
@@ -154,10 +194,15 @@ msgid ""
 "all the arrays of data that the surface needs. Godot will expect it to be of "
 "size ``Mesh.ARRAY_MAX``, so resize it accordingly."
 msgstr ""
+"Ce sera l'array dans lequel nous conserverons nos informations de surface, "
+"il contiendra tous les arrays de données dont la surface a besoin. Godot "
+"s'attendra à ce qu'il soit de la taille ``Mesh.ARRAY_MAX``, alors "
+"redimensionnez-le en conséquence."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:73
 msgid "Next create the arrays for each data type you will use."
 msgstr ""
+"Créez ensuite les arrays pour chaque type de données que vous utiliserez."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:83
 msgid ""
@@ -165,22 +210,29 @@ msgid ""
 "mesh by adding each array to ``surface_array`` and then committing to the "
 "mesh."
 msgstr ""
+"Une fois que vous avez rempli vos arrays de données avec votre géométrie, "
+"vous pouvez créer un maillage en ajoutant chaque array à ``surface_array``, "
+"puis en validant le maillage."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:96
 msgid ""
 "In this example, we used ``Mesh.PRIMITIVE_TRIANGLES``, but you can use any "
 "primitive type available from mesh."
 msgstr ""
+"Dans cet exemple, nous avons utilisé ``Mesh.PRIMITIVE_TRIANGLES``, mais vous "
+"pouvez utiliser n'importe quel type primitif disponible à partir de mesh."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:99
 msgid "Put together the full code looks like:"
-msgstr ""
+msgstr "Le code complet ressemble à ceci :"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:130
 msgid ""
 "The code that goes in the middle can be whatever you want. Below we will "
 "present some example code that could go in the middle."
 msgstr ""
+"Le code qui va au milieu peut être ce que vous voulez. Ci-dessous, nous "
+"présenterons un exemple de code qui pourrait aller au milieu."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:134
 msgid "Generating geometry"
@@ -195,10 +247,17 @@ msgid ""
 "are having trouble understanding it or want to learn more about procedural "
 "geometry in general, you can use any tutorial that you find online."
 msgstr ""
+"Voici un exemple de code pour générer une sphère. Bien que le code soit "
+"présenté en GDScript, il n'y a rien de spécifique à Godot dans l'approche de "
+"sa génération. Cette implémentation n'a rien de particulier à voir avec "
+"ArrayMeshes et n'est qu'une approche générique pour générer une sphère. Si "
+"vous avez du mal à comprendre ou si vous souhaitez en savoir plus sur la "
+"géométrie procédurale en général, vous pouvez utiliser n'importe quel "
+"tutoriel que vous trouverez en ligne."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:203
 msgid "Combined with the code above, this code will generate a sphere."
-msgstr ""
+msgstr "Combiné avec le code ci-dessus, ce code va générer une sphère."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:205
 msgid ""
@@ -206,10 +265,13 @@ msgid ""
 "understand what goes in each array and then you can follow tutorials for any "
 "language/engine and convert it into Godot."
 msgstr ""
+"Quand il s'agit de générer une géométrie avec ArrayMesh, vous devez "
+"comprendre ce qui se passe dans chaque array, puis vous pouvez suivre des "
+"tutoriels pour n'importe quel langage/moteur et le convertir dans Godot."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:209
 msgid "Saving"
-msgstr ""
+msgstr "Enregistrer"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:211
 msgid ""
@@ -217,3 +279,7 @@ msgid ""
 "`ResourceSaver <class_resourcesaver>` class. This is useful when you want to "
 "generate a mesh and then use it later without having to re-generate."
 msgstr ""
+"Enfin, Godot fournit une méthode unique pour enregistrer ArrayMeshes en "
+"utilisant la classe :ref:`ResourceSaver <class_resourcesaver>`. Ceci est "
+"utile lorsque vous souhaitez générer un maillage, puis l'utiliser plus tard "
+"sans avoir à générer de nouveau."

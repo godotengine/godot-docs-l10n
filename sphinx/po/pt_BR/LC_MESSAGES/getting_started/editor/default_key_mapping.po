@@ -1,0 +1,2881 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:4
+#, fuzzy
+msgid "Default editor shortcuts"
+msgstr "Recursos padrão"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:5
+msgid ""
+"Many of Godot Editor functions can be executed with keyboard shortcuts. This "
+"page lists functions which have associated shortcuts by default, but many "
+"others are available for customization in editor settings as well. To change "
+"keys associated with these and other actions navigate to ``Editor -> Editor "
+"Settings -> Shortcuts``."
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:10
+msgid ""
+"While some actions are universal, a lot of shortcuts are specific to "
+"individual tools. For this reason it is possible for some key combinations "
+"to be assigned to more than one function. The correct action will be "
+"performed depending on the context."
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:15
+msgid ""
+"While Windows and Linux builds of the editor share most of the default "
+"settings, some shortcuts may differ for macOS version. This is done for "
+"better integration of the editor into macOS ecosystem. Users fluent with "
+"standard shortcuts on that OS should find Godot Editor's default key mapping "
+"intuitive."
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:21
+#, fuzzy
+msgid "General Editor Actions"
+msgstr "**Opções gerais**"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:24
+#: ../../docs/getting_started/editor/default_key_mapping.rst:89
+#: ../../docs/getting_started/editor/default_key_mapping.rst:142
+#: ../../docs/getting_started/editor/default_key_mapping.rst:217
+#: ../../docs/getting_started/editor/default_key_mapping.rst:298
+#: ../../docs/getting_started/editor/default_key_mapping.rst:345
+#: ../../docs/getting_started/editor/default_key_mapping.rst:370
+#: ../../docs/getting_started/editor/default_key_mapping.rst:381
+#: ../../docs/getting_started/editor/default_key_mapping.rst:394
+#: ../../docs/getting_started/editor/default_key_mapping.rst:425
+#: ../../docs/getting_started/editor/default_key_mapping.rst:438
+#: ../../docs/getting_started/editor/default_key_mapping.rst:461
+#: ../../docs/getting_started/editor/default_key_mapping.rst:478
+#: ../../docs/getting_started/editor/default_key_mapping.rst:513
+#, fuzzy
+msgid "Action name"
+msgstr "Ação"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:24
+#: ../../docs/getting_started/editor/default_key_mapping.rst:89
+#: ../../docs/getting_started/editor/default_key_mapping.rst:142
+#: ../../docs/getting_started/editor/default_key_mapping.rst:217
+#: ../../docs/getting_started/editor/default_key_mapping.rst:298
+#: ../../docs/getting_started/editor/default_key_mapping.rst:345
+#: ../../docs/getting_started/editor/default_key_mapping.rst:370
+#: ../../docs/getting_started/editor/default_key_mapping.rst:381
+#: ../../docs/getting_started/editor/default_key_mapping.rst:394
+#: ../../docs/getting_started/editor/default_key_mapping.rst:425
+#: ../../docs/getting_started/editor/default_key_mapping.rst:438
+#: ../../docs/getting_started/editor/default_key_mapping.rst:461
+#: ../../docs/getting_started/editor/default_key_mapping.rst:478
+#: ../../docs/getting_started/editor/default_key_mapping.rst:513
+#, fuzzy
+msgid "Windows, Linux"
+msgstr "**Desktop:** Windows, mac OS, Linux"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:24
+#: ../../docs/getting_started/editor/default_key_mapping.rst:89
+#: ../../docs/getting_started/editor/default_key_mapping.rst:142
+#: ../../docs/getting_started/editor/default_key_mapping.rst:217
+#: ../../docs/getting_started/editor/default_key_mapping.rst:298
+#: ../../docs/getting_started/editor/default_key_mapping.rst:345
+#: ../../docs/getting_started/editor/default_key_mapping.rst:370
+#: ../../docs/getting_started/editor/default_key_mapping.rst:381
+#: ../../docs/getting_started/editor/default_key_mapping.rst:394
+#: ../../docs/getting_started/editor/default_key_mapping.rst:425
+#: ../../docs/getting_started/editor/default_key_mapping.rst:438
+#: ../../docs/getting_started/editor/default_key_mapping.rst:461
+#: ../../docs/getting_started/editor/default_key_mapping.rst:478
+#: ../../docs/getting_started/editor/default_key_mapping.rst:513
+msgid "macOS"
+msgstr "macOs"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:24
+#: ../../docs/getting_started/editor/default_key_mapping.rst:89
+#: ../../docs/getting_started/editor/default_key_mapping.rst:142
+#: ../../docs/getting_started/editor/default_key_mapping.rst:217
+#: ../../docs/getting_started/editor/default_key_mapping.rst:298
+#: ../../docs/getting_started/editor/default_key_mapping.rst:345
+#: ../../docs/getting_started/editor/default_key_mapping.rst:370
+#: ../../docs/getting_started/editor/default_key_mapping.rst:381
+#: ../../docs/getting_started/editor/default_key_mapping.rst:394
+#: ../../docs/getting_started/editor/default_key_mapping.rst:425
+#: ../../docs/getting_started/editor/default_key_mapping.rst:438
+#: ../../docs/getting_started/editor/default_key_mapping.rst:461
+#: ../../docs/getting_started/editor/default_key_mapping.rst:478
+#: ../../docs/getting_started/editor/default_key_mapping.rst:513
+#, fuzzy
+msgid "Editor setting"
+msgstr "Editor"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:26
+#, fuzzy
+msgid "Open 2D Editor"
+msgstr "Editor"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:26
+msgid ":kbd:`F1`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:26
+msgid ":kbd:`Alt + 1`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:26
+msgid "``editor/editor_2d``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:28
+#, fuzzy
+msgid "Open 3D Editor"
+msgstr "Editor"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:28
+msgid ":kbd:`F2`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:28
+msgid ":kbd:`Alt + 2`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:28
+msgid "``editor/editor_3d``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:30
+msgid "Open Script Editor"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:30
+#: ../../docs/getting_started/editor/default_key_mapping.rst:229
+#: ../../docs/getting_started/editor/default_key_mapping.rst:302
+msgid ":kbd:`F3`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:30
+msgid ":kbd:`Alt + 3`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:30
+msgid "``editor/editor_script``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:32
+msgid "Search Help"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:32
+msgid ":kbd:`Shift + F1`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:32
+msgid ":kbd:`Alt + Space`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:32
+msgid "``editor/editor_help``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:34
+#, fuzzy
+msgid "Distraction Free Mode"
+msgstr "Animação"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:34
+msgid ":kbd:`Ctrl + Shift + F11`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:34
+msgid ":kbd:`Cmd + Ctrl + D`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:34
+msgid "``editor/distraction_free_mode``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:36
+msgid "Next tab"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:36
+msgid ":kbd:`Ctrl + Tab`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:36
+msgid ":kbd:`Cmd + Tab`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:36
+msgid "``editor/next_tab``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:38
+msgid "Previous tab"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:38
+msgid ":kbd:`Ctrl + Shift + Tab`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:38
+msgid ":kbd:`Cmd + Shift + Tab`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:38
+msgid "``editor/prev_tab``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:40
+#, fuzzy
+msgid "Filter Files"
+msgstr "Arquivos Externos"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:40
+msgid ":kbd:`Ctrl + Alt + P`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:40
+msgid ":kbd:`Cmd + Alt + P`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:40
+msgid "``editor/filter_files``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:42
+#, fuzzy
+msgid "Open Scene"
+msgstr "Código aberto"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:42
+msgid ":kbd:`Ctrl + O`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:42
+msgid ":kbd:`Cmd + O`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:42
+msgid "``editor/open_scene``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:44
+#, fuzzy
+msgid "Close Scene"
+msgstr "Cena do jogador"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:44
+msgid ":kbd:`Ctrl + Shift + W`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:44
+msgid ":kbd:`Cmd + Shift + W`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:44
+msgid "``editor/close_scene``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:46
+msgid "Reopen Closed Scene"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:46
+#: ../../docs/getting_started/editor/default_key_mapping.rst:316
+msgid ":kbd:`Ctrl + Shift + T`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:46
+#: ../../docs/getting_started/editor/default_key_mapping.rst:316
+msgid ":kbd:`Cmd + Shift + T`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:46
+msgid "``editor/reopen_closed_scene``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:48
+#, fuzzy
+msgid "Save Scene"
+msgstr "Cena do jogador"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:48
+msgid ":kbd:`Ctrl + S`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:48
+msgid ":kbd:`Cmd + S`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:48
+msgid "``editor/save_scene``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:50
+#, fuzzy
+msgid "Save Scene As"
+msgstr "Cenas"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:50
+msgid ":kbd:`Ctrl + Shift + S`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:50
+msgid ":kbd:`Cmd + Shift + S`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:50
+msgid "``editor/save_scene_as``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:52
+msgid "Save All Scenes"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:52
+#: ../../docs/getting_started/editor/default_key_mapping.rst:320
+msgid ":kbd:`Ctrl + Shift + Alt + S`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:52
+#: ../../docs/getting_started/editor/default_key_mapping.rst:320
+msgid ":kbd:`Cmd + Shift + Alt + S`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:52
+msgid "``editor/save_all_scenes``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:54
+msgid "Quick Open"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:54
+msgid ":kbd:`Shift + Alt + O`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:54
+msgid "``editor/quick_open``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:56
+msgid "Quick Open Scene"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:56
+msgid ":kbd:`Ctrl + Shift + O`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:56
+msgid ":kbd:`Cmd + Shift + O`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:56
+msgid "``editor/quick_open_scene``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:58
+#, fuzzy
+msgid "Quick Open Script"
+msgstr "Um exemplo rápido em GDScript:"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:58
+msgid ":kbd:`Ctrl + Alt + O`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:58
+msgid ":kbd:`Cmd + Alt + O`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:58
+msgid "``editor/quick_open_script``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:60
+#: ../../docs/getting_started/editor/default_key_mapping.rst:239
+msgid "Undo"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:60
+#: ../../docs/getting_started/editor/default_key_mapping.rst:239
+msgid ":kbd:`Ctrl + Z`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:60
+#: ../../docs/getting_started/editor/default_key_mapping.rst:239
+msgid ":kbd:`Cmd + Z`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:60
+msgid "``editor/undo``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:62
+#: ../../docs/getting_started/editor/default_key_mapping.rst:241
+msgid "Redo"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:62
+msgid ":kbd:`Ctrl + Shift + Z`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:62
+msgid ":kbd:`Cmd + Shift + Z`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:62
+msgid "``editor/redo``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:64
+msgid "Quit"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:64
+msgid ":kbd:`Ctrl + Q`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:64
+msgid ":kbd:`Cmd + Q`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:64
+msgid "``editor/file_quit``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:66
+#, fuzzy
+msgid "Quit to Project List"
+msgstr "Configuração do projeto"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:66
+msgid ":kbd:`Ctrl + Shift + Q`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:66
+msgid ":kbd:`Shift + Alt + Q`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:66
+msgid "``editor/quit_to_project_list``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:68
+msgid "Take Screenshot"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:68
+msgid ":kbd:`Ctrl + F12`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:68
+msgid ":kbd:`Cmd + F12`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:68
+msgid "``editor/take_screenshot``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:70
+msgid "Toggle Fullscreen"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:70
+msgid ":kbd:`Shift + F11`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:70
+msgid ":kbd:`Cmd + Ctrl + F`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:70
+#, fuzzy
+msgid "``editor/fullscreen_mode``"
+msgstr "Solicitar o modo Tela Cheia."
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:72
+msgid "Play"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:72
+#: ../../docs/getting_started/editor/default_key_mapping.rst:402
+msgid ":kbd:`F5`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:72
+#: ../../docs/getting_started/editor/default_key_mapping.rst:275
+msgid ":kbd:`Cmd + B`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:72
+msgid "``editor/play``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:74
+#, fuzzy
+msgid "Pause Scene"
+msgstr "Cena do jogador"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:74
+msgid ":kbd:`F7`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:74
+msgid ":kbd:`Cmd + Ctrl + Y`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:74
+msgid "``editor/pause_scene``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:76
+msgid "Stop"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:76
+msgid ":kbd:`F8`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:76
+#: ../../docs/getting_started/editor/default_key_mapping.rst:287
+msgid ":kbd:`Cmd + .`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:76
+msgid "``editor/stop``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:78
+#, fuzzy
+msgid "Play Scene"
+msgstr "Cena do jogador"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:78
+msgid ":kbd:`F6`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:78
+#: ../../docs/getting_started/editor/default_key_mapping.rst:361
+msgid ":kbd:`Cmd + R`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:78
+msgid "``editor/play_scene``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:80
+#, fuzzy
+msgid "Play Custom Scene"
+msgstr "Cena do jogador"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:80
+msgid ":kbd:`Ctrl + Shift + F5`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:80
+#: ../../docs/getting_started/editor/default_key_mapping.rst:237
+#: ../../docs/getting_started/editor/default_key_mapping.rst:322
+msgid ":kbd:`Cmd + Shift + R`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:80
+msgid "``editor/play_custom_scene``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:82
+msgid "Expand Bottom Panel"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:82
+msgid ":kbd:`Shift + F12`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:82
+msgid "``editor/bottom_panel_expand``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:86
+msgid "2D / Canvas Item Editor"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:91
+#: ../../docs/getting_started/editor/default_key_mapping.rst:334
+msgid "Zoom In"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:91
+#: ../../docs/getting_started/editor/default_key_mapping.rst:334
+msgid ":kbd:`Ctrl + =`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:91
+#: ../../docs/getting_started/editor/default_key_mapping.rst:334
+msgid ":kbd:`Cmd + =`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:91
+msgid "``canvas_item_editor/zoom_plus``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:93
+#: ../../docs/getting_started/editor/default_key_mapping.rst:336
+msgid "Zoom Out"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:93
+#: ../../docs/getting_started/editor/default_key_mapping.rst:336
+msgid ":kbd:`Ctrl + -`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:93
+#: ../../docs/getting_started/editor/default_key_mapping.rst:336
+msgid ":kbd:`Cmd + -`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:93
+msgid "``canvas_item_editor/zoom_minus``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:95
+msgid "Zoom Reset"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:95
+#: ../../docs/getting_started/editor/default_key_mapping.rst:338
+msgid ":kbd:`Ctrl + 0`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:95
+#: ../../docs/getting_started/editor/default_key_mapping.rst:338
+msgid ":kbd:`Cmd + 0`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:95
+msgid "``canvas_item_editor/zoom_reset``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:97
+msgid "Pan View"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:97
+msgid ":kbd:`Space`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:97
+msgid "``canvas_item_editor/pan_view``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:99
+#: ../../docs/getting_started/editor/default_key_mapping.rst:162
+msgid "Select Mode"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:99
+#: ../../docs/getting_started/editor/default_key_mapping.rst:156
+#: ../../docs/getting_started/editor/default_key_mapping.rst:162
+msgid ":kbd:`Q`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:99
+msgid "``canvas_item_editor/select_mode``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:101
+#: ../../docs/getting_started/editor/default_key_mapping.rst:164
+#, fuzzy
+msgid "Move Mode"
+msgstr "Modo de compactação"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:101
+#: ../../docs/getting_started/editor/default_key_mapping.rst:150
+#: ../../docs/getting_started/editor/default_key_mapping.rst:164
+#: ../../docs/getting_started/editor/default_key_mapping.rst:498
+msgid ":kbd:`W`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:101
+msgid "``canvas_item_editor/move_mode``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:103
+#: ../../docs/getting_started/editor/default_key_mapping.rst:166
+#, fuzzy
+msgid "Rotate Mode"
+msgstr "Modo HDR"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:103
+#: ../../docs/getting_started/editor/default_key_mapping.rst:154
+#: ../../docs/getting_started/editor/default_key_mapping.rst:166
+msgid ":kbd:`E`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:103
+msgid "``canvas_item_editor/rotate_mode``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:105
+#: ../../docs/getting_started/editor/default_key_mapping.rst:168
+#, fuzzy
+msgid "Scale Mode"
+msgstr "Scale"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:105
+#: ../../docs/getting_started/editor/default_key_mapping.rst:152
+#: ../../docs/getting_started/editor/default_key_mapping.rst:496
+msgid ":kbd:`S`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:105
+msgid "``canvas_item_editor/scale_mode``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:107
+#, fuzzy
+msgid "Ruler Mode"
+msgstr "Modo HDR"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:107
+#: ../../docs/getting_started/editor/default_key_mapping.rst:168
+msgid ":kbd:`R`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:107
+msgid "``canvas_item_editor/ruler_mode``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:109
+msgid "Use Smart Snap"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:109
+msgid ":kbd:`Shift + S`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:109
+msgid "``canvas_item_editor/use_smart_snap``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:111
+msgid "Use Grid Snap"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:111
+msgid ":kbd:`Shift + G`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:111
+msgid "``canvas_item_editor/use_grid_snap``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:113
+msgid "Multiply grid step by 2"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:113
+msgid ":kbd:`Num *`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:113
+msgid "``canvas_item_editor/multiply_grid_step``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:115
+msgid "Divide grid step by 2"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:115
+msgid ":kbd:`Num /`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:115
+msgid "``canvas_item_editor/divide_grid_step``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:117
+msgid "Always Show Grid"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:117
+#: ../../docs/getting_started/editor/default_key_mapping.rst:486
+msgid ":kbd:`G`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:117
+msgid "``canvas_item_editor/show_grid``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:119
+msgid "Show Helpers"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:119
+msgid ":kbd:`H`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:119
+msgid "``canvas_item_editor/show_helpers``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:121
+msgid "Show Guides"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:121
+#: ../../docs/getting_started/editor/default_key_mapping.rst:172
+msgid ":kbd:`Y`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:121
+msgid "``canvas_item_editor/show_guides``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:123
+#, fuzzy
+msgid "Center Selection"
+msgstr "Funções substituíveis"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:123
+#: ../../docs/getting_started/editor/default_key_mapping.rst:194
+msgid ":kbd:`F`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:123
+msgid "``canvas_item_editor/center_selection``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:125
+#, fuzzy
+msgid "Frame Selection"
+msgstr "Funções substituíveis"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:125
+#: ../../docs/getting_started/editor/default_key_mapping.rst:144
+msgid ":kbd:`Shift + F`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:125
+msgid "``canvas_item_editor/frame_selection``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:127
+msgid "Preview Canvas Scale"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:127
+msgid ":kbd:`Ctrl + Shift + P`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:127
+msgid ":kbd:`Cmd + Shift + P`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:127
+msgid "``canvas_item_editor/preview_canvas_scale``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:129
+#, fuzzy
+msgid "Insert Key"
+msgstr "Insira um espaço,"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:129
+msgid ":kbd:`Ins`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:129
+msgid "``canvas_item_editor/anim_insert_key``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:131
+msgid "Insert Key (Existing Tracks)"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:131
+msgid ":kbd:`Ctrl + Ins`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:131
+msgid ":kbd:`Cmd + Ins`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:131
+msgid "``canvas_item_editor/anim_insert_key_existing_tracks``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:133
+#, fuzzy
+msgid "Make Custom Bones from Nodes"
+msgstr "Carregando recursos a partir do código"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:133
+#: ../../docs/getting_started/editor/default_key_mapping.rst:277
+msgid ":kbd:`Ctrl + Shift + B`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:133
+#: ../../docs/getting_started/editor/default_key_mapping.rst:277
+#: ../../docs/getting_started/editor/default_key_mapping.rst:283
+msgid ":kbd:`Cmd + Shift + B`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:133
+msgid "``canvas_item_editor/skeleton_make_bones``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:135
+msgid "Clear Pose"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:135
+msgid ":kbd:`Shift + K`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:135
+msgid "``canvas_item_editor/anim_clear_pose``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:139
+msgid "3D / Spatial Editor"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:144
+msgid "Toggle Freelook"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:144
+msgid "``spatial_editor/freelook_toggle``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:146
+msgid "Freelook Left"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:146
+#: ../../docs/getting_started/editor/default_key_mapping.rst:494
+msgid ":kbd:`A`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:146
+msgid "``spatial_editor/freelook_left``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:148
+msgid "Freelook Right"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:148
+msgid ":kbd:`D`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:148
+msgid "``spatial_editor/freelook_right``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:150
+msgid "Freelook Forward"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:150
+msgid "``spatial_editor/freelook_forward``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:152
+msgid "Freelook Backwards"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:152
+msgid "``spatial_editor/freelook_backwards``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:154
+msgid "Freelook Up"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:154
+msgid "``spatial_editor/freelook_up``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:156
+msgid "Freelook Down"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:156
+msgid "``spatial_editor/freelook_down``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:158
+msgid "Freelook Speed Modifier"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:158
+msgid ":kbd:`Shift`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:158
+msgid "``spatial_editor/freelook_speed_modifier``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:160
+msgid "Freelook Slow Modifier"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:160
+msgid ":kbd:`Alt`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:160
+msgid "``spatial_editor/freelook_slow_modifier``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:162
+msgid "``spatial_editor/tool_select``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:164
+msgid "``spatial_editor/tool_move``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:166
+msgid "``spatial_editor/tool_rotate``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:168
+msgid "``spatial_editor/tool_scale``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:170
+#, fuzzy
+msgid "Use Local Space"
+msgstr "Insira um espaço,"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:170
+#: ../../docs/getting_started/editor/default_key_mapping.rst:488
+msgid ":kbd:`T`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:170
+msgid "``spatial_editor/local_coords``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:172
+msgid "Use Snap"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:172
+msgid "``spatial_editor/snap``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:174
+msgid "Snap Object to Floor"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:174
+#: ../../docs/getting_started/editor/default_key_mapping.rst:515
+msgid ":kbd:`PgDown`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:174
+msgid "``spatial_editor/snap_to_floor``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:176
+msgid "Top View"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:176
+msgid ":kbd:`Num 7`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:176
+msgid "``spatial_editor/top_view``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:178
+msgid "Bottom View"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:178
+msgid ":kbd:`Alt + Num 7`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:178
+msgid "``spatial_editor/bottom_view``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:180
+msgid "Front View"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:180
+msgid ":kbd:`Num 1`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:180
+msgid "``spatial_editor/front_view``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:182
+msgid "Rear View"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:182
+msgid ":kbd:`Alt + Num 1`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:182
+msgid "``spatial_editor/rear_view``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:184
+msgid "Right View"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:184
+msgid ":kbd:`Num 3`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:184
+msgid "``spatial_editor/right_view``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:186
+msgid "Left View"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:186
+msgid ":kbd:`Alt + Num 3`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:186
+msgid "``spatial_editor/left_view``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:188
+msgid "Switch Perspective/Orthogonal View"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:188
+msgid ":kbd:`Num 5`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:188
+msgid "``spatial_editor/switch_perspective_orthogonal``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:190
+#, fuzzy
+msgid "Insert Animation Key"
+msgstr "Animação"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:190
+msgid ":kbd:`K`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:190
+msgid "``spatial_editor/insert_anim_key``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:192
+#, fuzzy
+msgid "Focus Origin"
+msgstr "Origin"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:192
+msgid ":kbd:`O`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:192
+msgid "``spatial_editor/focus_origin``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:194
+msgid "Focus Selection"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:194
+msgid "``spatial_editor/focus_selection``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:196
+msgid "Align Transform with View"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:196
+msgid ":kbd:`Ctrl + Alt + M`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:196
+msgid ":kbd:`Cmd + Alt + M`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:196
+msgid "``spatial_editor/align_transform_with_view``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:198
+msgid "Align Rotation with View"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:198
+#: ../../docs/getting_started/editor/default_key_mapping.rst:279
+msgid ":kbd:`Ctrl + Alt + F`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:198
+msgid ":kbd:`Cmd + Alt + F`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:198
+msgid "``spatial_editor/align_rotation_with_view``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:200
+#, fuzzy
+msgid "1 Viewport"
+msgstr "Janelas de exibição(Viewports)"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:200
+msgid ":kbd:`Ctrl + 1`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:200
+msgid ":kbd:`Cmd + 1`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:200
+msgid "``spatial_editor/1_viewport``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:202
+#, fuzzy
+msgid "2 Viewports"
+msgstr "Janelas de exibição(Viewports)"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:202
+msgid ":kbd:`Ctrl + 2`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:202
+msgid ":kbd:`Cmd + 2`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:202
+msgid "``spatial_editor/2_viewports``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:204
+#, fuzzy
+msgid "2 Viewports (Alt)"
+msgstr "Janelas de exibição(Viewports)"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:204
+msgid ":kbd:`Ctrl + Alt + 2`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:204
+msgid ":kbd:`Cmd + Alt + 2`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:204
+msgid "``spatial_editor/2_viewports_alt``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:206
+#, fuzzy
+msgid "3 Viewports"
+msgstr "Janelas de exibição(Viewports)"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:206
+msgid ":kbd:`Ctrl + 3`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:206
+msgid ":kbd:`Cmd + 3`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:206
+msgid "``spatial_editor/3_viewports``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:208
+#, fuzzy
+msgid "3 Viewports (Alt)"
+msgstr "Janelas de exibição(Viewports)"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:208
+msgid ":kbd:`Ctrl + Alt + 3`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:208
+msgid ":kbd:`Cmd + Alt + 3`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:208
+msgid "``spatial_editor/3_viewports_alt``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:210
+#, fuzzy
+msgid "4 Viewports"
+msgstr "Janelas de exibição(Viewports)"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:210
+msgid ":kbd:`Ctrl + 4`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:210
+msgid ":kbd:`Cmd + 4`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:210
+msgid "``spatial_editor/4_viewports``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:214
+#, fuzzy
+msgid "Text Editor"
+msgstr "O editor"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:219
+msgid "Cut"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:219
+#: ../../docs/getting_started/editor/default_key_mapping.rst:351
+#: ../../docs/getting_started/editor/default_key_mapping.rst:502
+msgid ":kbd:`Ctrl + X`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:219
+#: ../../docs/getting_started/editor/default_key_mapping.rst:351
+#: ../../docs/getting_started/editor/default_key_mapping.rst:502
+msgid ":kbd:`Cmd + X`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:219
+msgid "``script_text_editor/cut``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:221
+msgid "Copy"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:221
+#: ../../docs/getting_started/editor/default_key_mapping.rst:349
+#: ../../docs/getting_started/editor/default_key_mapping.rst:372
+#: ../../docs/getting_started/editor/default_key_mapping.rst:427
+#: ../../docs/getting_started/editor/default_key_mapping.rst:444
+#: ../../docs/getting_started/editor/default_key_mapping.rst:504
+msgid ":kbd:`Ctrl + C`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:221
+#: ../../docs/getting_started/editor/default_key_mapping.rst:349
+#: ../../docs/getting_started/editor/default_key_mapping.rst:372
+#: ../../docs/getting_started/editor/default_key_mapping.rst:427
+#: ../../docs/getting_started/editor/default_key_mapping.rst:444
+#: ../../docs/getting_started/editor/default_key_mapping.rst:504
+msgid ":kbd:`Cmd + C`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:221
+msgid "``script_text_editor/copy``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:223
+#, fuzzy
+msgid "Paste"
+msgstr "master"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:223
+#: ../../docs/getting_started/editor/default_key_mapping.rst:353
+msgid ":kbd:`Ctrl + V`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:223
+#: ../../docs/getting_started/editor/default_key_mapping.rst:353
+msgid ":kbd:`Cmd + V`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:223
+msgid "``script_text_editor/paste``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:225
+msgid "Select All"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:225
+#: ../../docs/getting_started/editor/default_key_mapping.rst:440
+msgid ":kbd:`Ctrl + A`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:225
+#: ../../docs/getting_started/editor/default_key_mapping.rst:440
+msgid ":kbd:`Cmd + A`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:225
+msgid "``script_text_editor/select_all``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:227
+#: ../../docs/getting_started/editor/default_key_mapping.rst:300
+msgid "Find"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:227
+#: ../../docs/getting_started/editor/default_key_mapping.rst:300
+#: ../../docs/getting_started/editor/default_key_mapping.rst:347
+#: ../../docs/getting_started/editor/default_key_mapping.rst:480
+msgid ":kbd:`Ctrl + F`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:227
+#: ../../docs/getting_started/editor/default_key_mapping.rst:300
+#: ../../docs/getting_started/editor/default_key_mapping.rst:347
+#: ../../docs/getting_started/editor/default_key_mapping.rst:480
+msgid ":kbd:`Cmd + F`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:227
+msgid "``script_text_editor/find``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:229
+#: ../../docs/getting_started/editor/default_key_mapping.rst:302
+msgid "Find Next"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:229
+#: ../../docs/getting_started/editor/default_key_mapping.rst:357
+msgid ":kbd:`Cmd + G`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:229
+msgid "``script_text_editor/find_next``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:231
+#: ../../docs/getting_started/editor/default_key_mapping.rst:304
+msgid "Find Previous"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:231
+#: ../../docs/getting_started/editor/default_key_mapping.rst:304
+msgid ":kbd:`Shift + F3`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:231
+msgid ":kbd:`Cmd + Shift + G`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:231
+msgid "``script_text_editor/find_previous``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:233
+#: ../../docs/getting_started/editor/default_key_mapping.rst:306
+#, fuzzy
+msgid "Find in Files"
+msgstr "Carregando cenas"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:233
+#: ../../docs/getting_started/editor/default_key_mapping.rst:306
+msgid ":kbd:`Ctrl + Shift + F`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:233
+#: ../../docs/getting_started/editor/default_key_mapping.rst:306
+msgid ":kbd:`Cmd + Shift + F`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:233
+msgid "``script_text_editor/find_in_files``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:235
+msgid "Replace"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:235
+#: ../../docs/getting_started/editor/default_key_mapping.rst:361
+msgid ":kbd:`Ctrl + R`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:235
+msgid ":kbd:`Alt + Cmd + F`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:235
+msgid "``script_text_editor/replace``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:237
+msgid "Replace in Files"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:237
+#: ../../docs/getting_started/editor/default_key_mapping.rst:322
+msgid ":kbd:`Ctrl + Shift + R`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:237
+msgid "``script_text_editor/replace_in_files``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:239
+msgid "``script_text_editor/undo``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:241
+msgid ":kbd:`Ctrl + Y`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:241
+msgid ":kbd:`Cmd + Y`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:241
+msgid "``script_text_editor/redo``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:243
+#: ../../docs/getting_started/editor/default_key_mapping.rst:308
+#: ../../docs/getting_started/editor/default_key_mapping.rst:452
+msgid "Move Up"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:243
+#: ../../docs/getting_started/editor/default_key_mapping.rst:400
+msgid ":kbd:`Alt + Up Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:243
+msgid "``script_text_editor/move_up``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:245
+#: ../../docs/getting_started/editor/default_key_mapping.rst:310
+#: ../../docs/getting_started/editor/default_key_mapping.rst:454
+msgid "Move Down"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:245
+msgid ":kbd:`Alt + Down Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:245
+msgid "``script_text_editor/move_down``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:247
+msgid "Delete Line"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:247
+#: ../../docs/getting_started/editor/default_key_mapping.rst:374
+msgid ":kbd:`Ctrl + Shift + K`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:247
+#: ../../docs/getting_started/editor/default_key_mapping.rst:374
+msgid ":kbd:`Cmd + Shift + K`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:247
+msgid "``script_text_editor/delete_line``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:249
+#, fuzzy
+msgid "Toggle Comment"
+msgstr "Comente"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:249
+msgid ":kbd:`Ctrl + K`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:249
+msgid ":kbd:`Cmd + K`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:249
+msgid "``script_text_editor/toggle_comment``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:251
+msgid "Fold/Unfold Line"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:251
+#: ../../docs/getting_started/editor/default_key_mapping.rst:406
+msgid ":kbd:`Alt + F`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:251
+msgid "``script_text_editor/toggle_fold_line``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:253
+msgid "Clone Down"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:253
+#: ../../docs/getting_started/editor/default_key_mapping.rst:414
+#: ../../docs/getting_started/editor/default_key_mapping.rst:429
+#: ../../docs/getting_started/editor/default_key_mapping.rst:450
+#: ../../docs/getting_started/editor/default_key_mapping.rst:463
+msgid ":kbd:`Ctrl + D`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:253
+msgid ":kbd:`Cmd + Shift + C`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:253
+msgid "``script_text_editor/clone_down``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:255
+msgid "Complete Symbol"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:255
+msgid ":kbd:`Ctrl + Space`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:255
+msgid "``script_text_editor/complete_symbol``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:257
+#, fuzzy
+msgid "Evaluate Selection"
+msgstr "Funções substituíveis"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:257
+msgid ":kbd:`Ctrl + Shift + E`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:257
+msgid ":kbd:`Cmd + Shift + E`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:257
+msgid "``script_text_editor/evaluate_selection``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:259
+msgid "Trim Trailing Whitespace"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:259
+msgid ":kbd:`Ctrl + Alt + T`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:259
+msgid ":kbd:`Cmd + Alt + T`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:259
+msgid "``script_text_editor/trim_trailing_whitespace``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:261
+#, fuzzy
+msgid "Uppercase"
+msgstr "Casos de uso"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:261
+msgid ":kbd:`Shift + F4`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:261
+msgid "``script_text_editor/convert_to_uppercase``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:263
+#, fuzzy
+msgid "Lowercase"
+msgstr "case"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:263
+msgid ":kbd:`Shift + F5`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:263
+msgid "``script_text_editor/convert_to_lowercase``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:265
+msgid "Capitalize"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:265
+msgid ":kbd:`Shift + F6`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:265
+msgid "``script_text_editor/capitalize``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:267
+#, fuzzy
+msgid "Convert Indent to Spaces"
+msgstr "Teste de conteúdo"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:267
+msgid ":kbd:`Ctrl + Shift + Y`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:267
+msgid ":kbd:`Cmd + Shift + Y`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:267
+msgid "``script_text_editor/convert_indent_to_spaces``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:269
+msgid "Convert Indent to Tabs"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:269
+msgid ":kbd:`Ctrl + Shift + I`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:269
+msgid ":kbd:`Cmd + Shift + I`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:269
+msgid "``script_text_editor/convert_indent_to_tabs``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:271
+msgid "Auto Indent"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:271
+msgid ":kbd:`Ctrl + I`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:271
+msgid ":kbd:`Cmd + I`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:271
+msgid "``script_text_editor/auto_indent``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:273
+msgid "Toggle Bookmark"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:273
+msgid ":kbd:`Ctrl + Alt + B`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:273
+msgid ":kbd:`Cmd + Alt + B`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:273
+msgid "``script_text_editor/toggle_bookmark``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:275
+msgid "Go to Next Bookmark"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:275
+msgid ":kbd:`Ctrl + B`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:275
+msgid "``script_text_editor/goto_next_bookmark``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:277
+msgid "Go to Previous Bookmark"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:277
+msgid "``script_text_editor/goto_previous_bookmark``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:279
+#, fuzzy
+msgid "Go to Function"
+msgstr "Funções"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:279
+msgid ":kbd:`Ctrl + Cmd + J`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:279
+msgid "``script_text_editor/goto_function``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:281
+msgid "Go to Line"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:281
+msgid ":kbd:`Ctrl + L`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:281
+msgid ":kbd:`Cmd + L`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:281
+msgid "``script_text_editor/goto_line``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:283
+#: ../../docs/getting_started/editor/default_key_mapping.rst:363
+#, fuzzy
+msgid "Toggle Breakpoint"
+msgstr "breakpoint"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:283
+#: ../../docs/getting_started/editor/default_key_mapping.rst:363
+msgid ":kbd:`F9`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:283
+msgid "``script_text_editor/toggle_breakpoint``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:285
+msgid "Remove All Breakpoints"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:285
+msgid ":kbd:`Ctrl + Shift + F9`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:285
+msgid ":kbd:`Cmd + Shift + F9`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:285
+msgid "``script_text_editor/remove_all_breakpoints``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:287
+msgid "Go to Next Breakpoint"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:287
+msgid ":kbd:`Ctrl + .`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:287
+msgid "``script_text_editor/goto_next_breakpoint``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:289
+#, fuzzy
+msgid "Go to Previous Breakpoint"
+msgstr "Outras considerações"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:289
+msgid ":kbd:`Ctrl + ,`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:289
+msgid ":kbd:`Cmd + ,`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:289
+msgid "``script_text_editor/goto_previous_breakpoint``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:291
+msgid "Contextual Help"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:291
+msgid ":kbd:`Alt + F1`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:291
+msgid ":kbd:`Alt + Shift + Space`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:291
+msgid "``script_text_editor/contextual_help``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:295
+#, fuzzy
+msgid "Script Editor"
+msgstr "GDScript"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:300
+msgid "``script_editor/find``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:302
+msgid "``script_editor/find_next``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:304
+msgid "``script_editor/find_previous``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:306
+msgid "``script_editor/find_in_files``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:308
+msgid ":kbd:`Shift + Alt + Up Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:308
+msgid "``script_editor/window_move_up``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:310
+msgid ":kbd:`Shift + Alt + Down Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:310
+msgid "``script_editor/window_move_down``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:312
+#, fuzzy
+msgid "Next Script"
+msgstr "Script Personalizado"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:312
+msgid ":kbd:`Ctrl + Shift + .`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:312
+msgid ":kbd:`Cmd + Shift + .`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:312
+msgid "``script_editor/next_script``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:314
+#, fuzzy
+msgid "Previous Script"
+msgstr "Script Personalizado"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:314
+msgid ":kbd:`Ctrl + Shift + ,`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:314
+msgid ":kbd:`Cmd + Shift + ,`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:314
+msgid "``script_editor/prev_script``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:316
+msgid "Reopen Closed Script"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:316
+msgid "``script_editor/reopen_closed_script``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:318
+msgid "Save"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:318
+msgid ":kbd:`Ctrl + Alt + S`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:318
+msgid ":kbd:`Cmd + Alt + S`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:318
+msgid "``script_editor/save``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:320
+msgid "Save All"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:320
+msgid "``script_editor/save_all``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:322
+msgid "Soft Reload Script"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:322
+msgid "``script_editor/reload_script_soft``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:324
+#, fuzzy
+msgid "History Previous"
+msgstr "História"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:324
+#: ../../docs/getting_started/editor/default_key_mapping.rst:396
+msgid ":kbd:`Alt + Left Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:324
+msgid "``script_editor/history_previous``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:326
+#, fuzzy
+msgid "History Next"
+msgstr "História"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:326
+#: ../../docs/getting_started/editor/default_key_mapping.rst:398
+msgid ":kbd:`Alt + Right Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:326
+msgid "``script_editor/history_next``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:328
+msgid "Close"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:328
+msgid ":kbd:`Ctrl + W`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:328
+msgid ":kbd:`Cmd + W`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:328
+msgid "``script_editor/close_file``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:330
+msgid "Run"
+msgstr "Rodar"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:330
+msgid ":kbd:`Ctrl + Shift + X`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:330
+msgid ":kbd:`Cmd + Shift + X`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:330
+msgid "``script_editor/run_file``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:332
+msgid "Toggle Scripts Panel"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:332
+msgid ":kbd:`Ctrl + \\\\`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:332
+msgid ":kbd:`Cmd + \\\\`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:332
+msgid "``script_editor/toggle_scripts_panel``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:334
+msgid "``script_editor/zoom_in``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:336
+msgid "``script_editor/zoom_out``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:338
+msgid "Reset Zoom"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:338
+msgid "``script_editor/reset_zoom``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:342
+#, fuzzy
+msgid "Visual Script Editor"
+msgstr "VisualScript"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:347
+msgid "Find Node Type"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:347
+msgid "``visual_script_editor/find_node_type``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:349
+#, fuzzy
+msgid "Copy Nodes"
+msgstr "Nós"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:349
+msgid "``visual_script_editor/copy_nodes``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:351
+#, fuzzy
+msgid "Cut Nodes"
+msgstr "Nós"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:351
+msgid "``visual_script_editor/cut_nodes``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:353
+#, fuzzy
+msgid "Paste Nodes"
+msgstr "Partículas"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:353
+msgid "``visual_script_editor/paste_nodes``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:355
+msgid "Delete Selected"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:355
+#: ../../docs/getting_started/editor/default_key_mapping.rst:412
+#: ../../docs/getting_started/editor/default_key_mapping.rst:431
+#: ../../docs/getting_started/editor/default_key_mapping.rst:446
+#: ../../docs/getting_started/editor/default_key_mapping.rst:467
+#: ../../docs/getting_started/editor/default_key_mapping.rst:506
+msgid ":kbd:`Del`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:355
+#: ../../docs/getting_started/editor/default_key_mapping.rst:412
+#: ../../docs/getting_started/editor/default_key_mapping.rst:431
+#: ../../docs/getting_started/editor/default_key_mapping.rst:446
+#: ../../docs/getting_started/editor/default_key_mapping.rst:467
+#: ../../docs/getting_started/editor/default_key_mapping.rst:506
+msgid ":kbd:`Cmd + BkSp`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:355
+msgid "``visual_script_editor/delete_selected``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:357
+#, fuzzy
+msgid "Make Function"
+msgstr "Funções estáticas"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:357
+msgid ":kbd:`Ctrl + G`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:357
+msgid "``visual_script_editor/create_function``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:359
+#, fuzzy
+msgid "Edit Member"
+msgstr "Membros"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:359
+msgid ":kbd:`Ctrl + E`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:359
+msgid ":kbd:`Cmd + E`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:359
+msgid "``visual_script_editor/edit_member``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:361
+msgid "Refresh Graph"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:361
+msgid "``visual_script_editor/refresh_nodes``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:363
+msgid "``visual_script_editor/toggle_breakpoint``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:367
+#, fuzzy
+msgid "Editor Output"
+msgstr "Manual do editor"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:372
+#: ../../docs/getting_started/editor/default_key_mapping.rst:504
+#, fuzzy
+msgid "Copy Selection"
+msgstr "Conexões"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:372
+msgid "``editor/copy_output``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:374
+msgid "Clear Output"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:374
+msgid "``editor/clear_output``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:378
+msgid "Debugger"
+msgstr "Depurador"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:383
+msgid "Step Into"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:383
+msgid ":kbd:`F11`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:383
+msgid "``debugger/step_into``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:385
+msgid "Step Over"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:385
+msgid ":kbd:`F10`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:385
+msgid "``debugger/step_over``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:387
+#, fuzzy
+msgid "Continue"
+msgstr "continue"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:387
+msgid ":kbd:`F12`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:387
+#, fuzzy
+msgid "``debugger/continue``"
+msgstr "``--debug-collisions``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:391
+msgid "File Dialog"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:396
+msgid "Go Back"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:396
+msgid "``file_dialog/go_back``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:398
+msgid "Go Forward"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:398
+msgid "``file_dialog/go_forward``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:400
+msgid "Go Up"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:400
+msgid "``file_dialog/go_up``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:402
+msgid "Refresh"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:402
+msgid "``file_dialog/refresh``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:404
+msgid "Toggle Hidden Files"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:404
+msgid ":kbd:`Ctrl + H`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:404
+msgid ":kbd:`Cmd + H`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:404
+msgid "``file_dialog/toggle_hidden_files``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:406
+msgid "Toggle Favorite"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:406
+msgid "``file_dialog/toggle_favorite``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:408
+msgid "Toggle Mode"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:408
+msgid ":kbd:`Alt + V`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:408
+msgid "``file_dialog/toggle_mode``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:410
+#, fuzzy
+msgid "Create Folder"
+msgstr "Criando nós"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:410
+msgid ":kbd:`Ctrl + N`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:410
+msgid ":kbd:`Cmd + N`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:410
+msgid "``file_dialog/create_folder``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:412
+#: ../../docs/getting_started/editor/default_key_mapping.rst:431
+#: ../../docs/getting_started/editor/default_key_mapping.rst:446
+msgid "Delete"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:412
+msgid "``file_dialog/delete``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:414
+#, fuzzy
+msgid "Focus Path"
+msgstr "Caminho do Recurso"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:414
+#: ../../docs/getting_started/editor/default_key_mapping.rst:429
+#: ../../docs/getting_started/editor/default_key_mapping.rst:450
+#: ../../docs/getting_started/editor/default_key_mapping.rst:463
+msgid ":kbd:`Cmd + D`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:414
+msgid "``file_dialog/focus_path``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:416
+msgid "Move Favorite Up"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:416
+#: ../../docs/getting_started/editor/default_key_mapping.rst:452
+msgid ":kbd:`Ctrl + Up Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:416
+#: ../../docs/getting_started/editor/default_key_mapping.rst:452
+msgid ":kbd:`Cmd + Up Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:416
+msgid "``file_dialog/move_favorite_up``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:418
+msgid "Move Favorite Down"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:418
+#: ../../docs/getting_started/editor/default_key_mapping.rst:454
+msgid ":kbd:`Ctrl + Down Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:418
+#: ../../docs/getting_started/editor/default_key_mapping.rst:454
+msgid ":kbd:`Cmd + Down Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:418
+msgid "``file_dialog/move_favorite_down``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:422
+#, fuzzy
+msgid "FileSystem Dock"
+msgstr "Sistema de arquivos"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:427
+#, fuzzy
+msgid "Copy Path"
+msgstr "Caminho"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:427
+msgid "``filesystem_dock/copy_path``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:429
+#: ../../docs/getting_started/editor/default_key_mapping.rst:450
+msgid "Duplicate"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:429
+msgid "``filesystem_dock/duplicate``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:431
+msgid "``filesystem_dock/delete``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:435
+#, fuzzy
+msgid "Scene Tree Dock"
+msgstr "Árvore de cena"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:440
+msgid "Add Child Node"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:440
+msgid "``scene_tree/add_child_node``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:442
+msgid "Batch Rename"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:442
+msgid ":kbd:`Ctrl + F2`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:442
+msgid ":kbd:`Cmd + F2`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:442
+msgid "``scene_tree/batch_rename``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:444
+msgid "Copy Node Path"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:444
+msgid "``scene_tree/copy_node_path``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:446
+msgid "``scene_tree/delete``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:448
+msgid "Force Delete"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:448
+msgid ":kbd:`Shift + Del`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:448
+msgid "``scene_tree/delete_no_confirm``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:450
+msgid "``scene_tree/duplicate``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:452
+msgid "``scene_tree/move_up``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:454
+msgid "``scene_tree/move_down``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:458
+#, fuzzy
+msgid "Animation Track Editor"
+msgstr "AnimationTree"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:463
+msgid "Duplicate Selection"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:463
+msgid "``animation_editor/duplicate_selection``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:465
+msgid "Duplicate Transposed"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:465
+msgid ":kbd:`Ctrl + Shift + D`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:465
+msgid ":kbd:`Cmd + Shift + D`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:465
+msgid "``animation_editor/duplicate_selection_transposed``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:467
+#, fuzzy
+msgid "Delete Selection"
+msgstr "Funções substituíveis"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:467
+msgid "``animation_editor/delete_selection``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:469
+msgid "Go to Next Step"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:469
+msgid ":kbd:`Ctrl + Right Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:469
+msgid ":kbd:`Cmd + Right Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:469
+msgid "``animation_editor/goto_next_step``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:471
+msgid "Go to Previous Step"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:471
+msgid ":kbd:`Ctrl + Left Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:471
+msgid ":kbd:`Cmd + Left Arrow`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:471
+msgid "``animation_editor/goto_prev_step``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:475
+#, fuzzy
+msgid "Tile Map Editor"
+msgstr "Criando nós"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:480
+msgid "Find Tile"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:480
+msgid "``tile_map_editor/find_tile``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:482
+msgid "Pick Tile"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:482
+msgid ":kbd:`I`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:482
+msgid "``tile_map_editor/pick_tile``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:484
+msgid "Paint Tile"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:484
+msgid ":kbd:`P`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:484
+msgid "``tile_map_editor/paint_tile``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:486
+msgid "Bucket Fill"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:486
+msgid "``tile_map_editor/bucket_fill``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:488
+#, fuzzy
+msgid "Transpose"
+msgstr "Transformação"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:488
+msgid "``tile_map_editor/transpose``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:490
+msgid "Flip Horizontally"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:490
+msgid ":kbd:`X`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:490
+msgid "``tile_map_editor/flip_horizontal``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:492
+msgid "Flip Vertically"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:492
+msgid ":kbd:`Z`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:492
+msgid "``tile_map_editor/flip_vertical``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:494
+msgid "Rotate Left"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:494
+msgid "``tile_map_editor/rotate_left``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:496
+#, fuzzy
+msgid "Rotate Right"
+msgstr "Rotation"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:496
+msgid "``tile_map_editor/rotate_right``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:498
+#, fuzzy
+msgid "Clear Transform"
+msgstr "Transformação"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:498
+msgid "``tile_map_editor/clear_transform``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:500
+msgid "Select"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:500
+msgid ":kbd:`M`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:500
+msgid "``tile_map_editor/select``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:502
+msgid "Cut Selection"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:502
+msgid "``tile_map_editor/cut_selection``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:504
+msgid "``tile_map_editor/copy_selection``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:506
+#, fuzzy
+msgid "Erase Selection"
+msgstr "Funções substituíveis"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:506
+msgid "``tile_map_editor/erase_selection``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:510
+#, fuzzy
+msgid "Tileset Editor"
+msgstr "O editor"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:515
+msgid "Next Coordinate"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:515
+msgid "``tileset_editor/next_shape``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:517
+msgid "Previous Coordinate"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:517
+msgid ":kbd:`PgUp`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:517
+msgid "``tileset_editor/previous_shape``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:519
+#, fuzzy
+msgid "Region Mode"
+msgstr "Animação"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:519
+msgid ":kbd:`1`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:519
+msgid "``tileset_editor/editmode_region``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:521
+#, fuzzy
+msgid "Collision Mode"
+msgstr "Objetos de Colisão"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:521
+msgid ":kbd:`2`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:521
+msgid "``tileset_editor/editmode_collision``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:523
+#, fuzzy
+msgid "Occlusion Mode"
+msgstr "Conclusão"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:523
+msgid ":kbd:`3`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:523
+msgid "``tileset_editor/editmode_occlusion``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:525
+#, fuzzy
+msgid "Navigation Mode"
+msgstr "Animação"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:525
+msgid ":kbd:`4`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:525
+msgid "``tileset_editor/editmode_navigation``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:527
+#, fuzzy
+msgid "Bitmask Mode"
+msgstr "Animação"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:527
+msgid ":kbd:`5`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:527
+msgid "``tileset_editor/editmode_bitmask``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:529
+msgid "Priority Mode"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:529
+msgid ":kbd:`6`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:529
+msgid "``tileset_editor/editmode_priority``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:531
+#, fuzzy
+msgid "Icon Mode"
+msgstr "Animação"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:531
+msgid ":kbd:`7`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:531
+msgid "``tileset_editor/editmode_icon``"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:533
+msgid "Z Index Mode"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:533
+msgid ":kbd:`8`"
+msgstr ""
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:533
+msgid "``tileset_editor/editmode_z_index``"
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:4
-#, fuzzy
 msgid "Installing plugins"
-msgstr "Création de plugins"
+msgstr "Installation de plugins"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:6
 msgid ""
@@ -28,11 +27,14 @@ msgid ""
 "the community. Plugins can extend the editor's functionality with new nodes, "
 "additional docks, convenience features, and more."
 msgstr ""
+"Godot dispose d'un système d'édition de plugins avec de nombreux plugins "
+"développés par la communauté. Les plugins peuvent étendre les "
+"fonctionnalités de l'éditeur avec de nouveaux nœuds, des docks "
+"supplémentaires, des fonctions de commodité, et plus encore."
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:11
-#, fuzzy
 msgid "Finding plugins"
-msgstr "Création de plugins"
+msgstr "Trouver des plugins"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:13
 msgid ""
@@ -41,10 +43,17 @@ msgid ""
 "it's more convenient to use it directly from the editor. To do so, click the "
 "**AssetLib** tab at the top of the editor:"
 msgstr ""
+"Le moyen préféré pour trouver les plugins Godot est d'utiliser la "
+"`Bibliothèque d'Assets <https://godotengine.org/asset-library/>`_. Bien "
+"qu'il soit possible de la parcourir en ligne, il est plus pratique de "
+"l'utiliser directement depuis l'éditeur. Pour ce faire, cliquez sur l'onglet "
+"**AssetLib** en haut de l'éditeur :"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:20
 msgid "You can also find assets on code hosting websites such as GitHub."
 msgstr ""
+"Vous pouvez également trouver des ressources sur des sites d'hébergement de "
+"codes tels que GitHub."
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:24
 msgid ""
@@ -53,6 +62,11 @@ msgid ""
 "to be used in a running project. You don't need to enable such plugins to "
 "use them. Download them and extract the files in your project folder."
 msgstr ""
+"Certains dépôts se décrivent comme des \"plugins\" mais ne sont pas "
+"forcément des plugins *éditeurs*. C'est notamment le cas des scripts qui "
+"sont destinés à être utilisés dans un projet en cours. Vous n'avez pas "
+"besoin d'activer ces plugins pour les utiliser. Téléchargez-les et extrayez "
+"les fichiers dans votre dossier de projet."
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:29
 msgid ""
@@ -61,11 +75,14 @@ msgid ""
 "repository contains a ``plugin.cfg`` file in a folder placed in the ``addons/"
 "`` folder, then it is an editor plugin."
 msgstr ""
+"Une façon de distinguer les plugins éditeurs des plugins non-éditeurs est de "
+"chercher un fichier ``plugin.cfg`` dans le dépôt qui héberge le plugin. Si "
+"le dépôt contient un fichier ``plugin.cfg`` dans un dossier placé dans le "
+"dossier ``adddons/``, alors il s'agit d'un plugin d'éditeur."
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:35
-#, fuzzy
 msgid "Installing a plugin"
-msgstr "Initialisation du plugin"
+msgstr "Installation d'un plugin"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:37
 msgid ""
@@ -73,6 +90,10 @@ msgid ""
 "this can be done using the **Download** button, either from the editor or "
 "using the Web interface."
 msgstr ""
+"Pour installer un plugin, téléchargez-le sous forme d'archive ZIP. Dans la "
+"bibliothèque d'Asset, cela peut se faire en utilisant le bouton "
+"**Télécharger**, soit à partir de l'éditeur, soit en utilisant l'interface "
+"Web."
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:41
 msgid ""
@@ -80,12 +101,17 @@ msgid ""
 "**Releases** tab to download a stable release. This ensures you download a "
 "version that was declared to be stable by its author."
 msgstr ""
+"Sur GitHub, si un plugin a un *tags* (versions) déclarés, allez dans "
+"l'onglet **Releases** pour télécharger une version stable. Cela vous permet "
+"de télécharger une version qui a été déclarée stable par son auteur."
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:45
 msgid ""
 "On GitHub, if the plugin doesn't have any *tags* declared, use the "
 "**Download ZIP** button to download a ZIP of the latest revision:"
 msgstr ""
+"Sur GitHub, si le plugin n'a pas de *tags* déclarés, utilisez le bouton "
+"**Télécharger ZIP** pour télécharger un ZIP de la dernière révision :"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:50
 msgid ""
@@ -96,11 +122,17 @@ msgid ""
 "whether to write into the folder; answer **Yes**. No files will be "
 "overwritten in the process."
 msgstr ""
+"Extrayez l'archive ZIP et déplacez le dossier ``addons/`` qu'elle contient "
+"dans votre dossier de projet. Si votre projet contient déjà un dossier "
+"``addons/``, déplacez le dossier ``addons/`` du plugin dans votre dossier de "
+"projet pour fusionner le contenu du nouveau dossier avec celui de l'ancien. "
+"Votre gestionnaire de fichiers peut vous demander si vous voulez écrire dans "
+"le dossier ; répondez **Oui**. Aucun fichier ne sera écrasé au cours du "
+"processus."
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:57
-#, fuzzy
 msgid "Enabling a plugin"
-msgstr "Créer un plugin"
+msgstr "Activation d'un plugin"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:59
 msgid ""
@@ -110,6 +142,12 @@ msgid ""
 "gray **Inactive** text and choose **Active** to enable the plugin. The word "
 "**Active** will display in green to confirm the plugin was enabled."
 msgstr ""
+"Pour activer le plugin fraîchement installé, ouvrez **Projet > Paramètres du "
+"projet** en haut de l'éditeur puis allez dans l'onglet **Plugins**. Si le "
+"plugin a été correctement empaqueté, vous devriez le voir dans la liste des "
+"plugins. Cliquez sur le texte gris **Inactif** et choisissez **Actif** pour "
+"activer le plugin. Le mot **Actif** s'affichera en vert pour confirmer que "
+"le plugin a été activé."
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:68
 msgid ""
@@ -117,3 +155,6 @@ msgid ""
 "restart the editor. Likewise, disabling a plugin can be done without having "
 "to restart the editor."
 msgstr ""
+"Vous pouvez utiliser le plugin immédiatement après l'avoir activé ; il n'est "
+"pas nécessaire de redémarrer l'éditeur. De même, la désactivation d'un "
+"plugin peut être effectuée sans avoir à redémarrer l'éditeur."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,7 +108,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:49
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
-"for the user account in the computer (it's independent from the project)."
+"for the user account in the computer (it's independent of the project)."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:55
@@ -129,8 +129,9 @@ msgstr ""
 msgid ""
 "The ``jarsigner`` executable (from JDK 6 or 8) - On Windows, OpenJDK "
 "installs to a dir like ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
-"openjdk-1.8.0.232-2\\bin``. The exact path may vary depending on the OpenJDK "
-"update you've installed."
+"openjdk-1.8.0.232-2\\bin``. On Linux, it typically installs to a dir like ``/"
+"usr/bin/jarsigner``. The exact path may vary depending on the OpenJDK update "
+"you've installed and your machine's operating system."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:67
@@ -162,7 +163,7 @@ msgstr "Siirtymiä on olemassa useita eri tyyppisiä:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
 msgid ""
-"**Main Icon:**: The \"classic\" icon. This will be used on all Android "
+"**Main Icon:** The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
 
@@ -216,9 +217,9 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
 msgid ""
-"It's highly recommended to provide all of the requested icons, and at least "
-"with the specified resolutions. Only this way your application will look "
-"great on all the Android devices and versions."
+"It's highly recommended to provide all requested icons, and at least with "
+"the specified resolutions. Only this way your application will look great on "
+"all Android devices and versions."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95

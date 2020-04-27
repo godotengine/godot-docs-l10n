@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,9 +67,10 @@ msgstr ""
 "changer la cartographie de touche à l'exécution !"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:40
+#, fuzzy
 msgid ""
-"You can setup your InputMap under **Project > Project Settings > Input Map** "
-"and then use those actions like this:"
+"You can set up your InputMap under **Project > Project Settings > Input "
+"Map** and then use those actions like this:"
 msgstr ""
 "Vous pouvez configurer votre InputMap sous **Project > Project Settings > "
 "Input Map** et utiliser ces actions comme ceci :"
@@ -230,10 +231,11 @@ msgstr ""
 "les ancêtres directs du nœud de Control ciblé reçoivent l'événement."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:115
+#, fuzzy
 msgid ""
 "In accordance with Godot's node-based design, this enables specialized child "
 "nodes to handle and consume particular events, while their ancestors, and "
-"ultimately the scene root, can provide more generalized behaviour if needed."
+"ultimately the scene root, can provide more generalized behavior if needed."
 msgstr ""
 "Conformément à la conception de Godot basée sur les nœuds, cela permet à des "
 "nœuds enfants spécialisés de gérer et de consommer des événements "
@@ -256,8 +258,9 @@ msgstr ""
 "l'index du périphérique, etc."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:127
+#, fuzzy
 msgid ""
-"There are several specialised types of InputEvent, described in the table "
+"There are several specialized types of InputEvent, described in the table "
 "below:"
 msgstr ""
 "Il existe plusieurs types spécialisés d'InputEvent, décrits dans le tableau "
@@ -296,7 +299,8 @@ msgid "KEY"
 msgstr "CLÉ"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
-msgid "Contains a scancode and unicode value, as well as modifiers."
+#, fuzzy
+msgid "Contains a scancode and Unicode value, as well as modifiers."
 msgstr ""
 "Contient un code d'analyse et une valeur unicode, ainsi que des "
 "modificateurs."

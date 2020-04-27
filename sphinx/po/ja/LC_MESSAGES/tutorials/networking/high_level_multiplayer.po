@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,25 +146,25 @@ msgstr ""
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:34
 #, fuzzy
 msgid ""
-"More about TCP/IP, UDP, and networking: https://web.archive.org/"
-"web/20190406162102/https://gafferongames.com/post/udp_vs_tcp/"
-msgstr ""
-"TCP/IP、UDP、およびネットワーキングの詳細: https://gafferongames.com/post/"
+"More about TCP/IP, UDP, and networking: https://gafferongames.com/post/"
 "udp_vs_tcp/"
+msgstr ""
+"TCP/IP、UDP、およびネットワーキングの詳細: https://web.archive.org/"
+"web/20190406162102/https://gafferongames.com/post/udp_vs_tcp/"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:37
 #, fuzzy
 msgid ""
 "Gaffer On Games has a lot of useful articles about networking in Games "
-"(`here <https://web.archive.org/web/20190405204744/https://gafferongames.com/"
-"tags/networking/>`__), including the comprehensive `introduction to "
-"networking models in games <http://web.archive.org/web/20190407004521/"
-"https://gafferongames.com/post/"
+"(`here <https://gafferongames.com/categories/game-networking/>`__), "
+"including the comprehensive `introduction to networking models in games "
+"<https://gafferongames.com/post/"
 "what_every_programmer_needs_to_know_about_game_networking/>`__."
 msgstr ""
-"Gaffer On Gamesには、ゲームのネットワーキングに関する多くの有用な記事がありま"
-"す(`ここ <https://gafferongames.com/tags/networking>`__)。\\ `包括的なゲーム"
-"のネットワーキングモデルの紹介 <https://gafferongames.com/post/"
+"Gaffer On Gamesには、ゲームのネットワーキングに関する便利な記事が多数あります"
+"(`こちら　https://web.archive.org/web/20190405204744/https://gafferongames."
+"com/tags/networking/>`__)、包括的な `ゲームのネットワークモデルの紹介 "
+"<http://web.archive.org/web/20190407004521/https://gafferongames.com/post/"
 "what_every_programmer_needs_to_know_about_game_networking/>`__。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:41
@@ -215,7 +215,6 @@ msgstr ""
 "ワークAPIがどのように機能するかを理解しておくと役立ちます。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:59
-#, fuzzy
 msgid ""
 "Godot uses a mid-level object :ref:`NetworkedMultiplayerPeer "
 "<class_NetworkedMultiplayerPeer>`. This object is not meant to be created "
@@ -223,7 +222,7 @@ msgid ""
 msgstr ""
 "Godotは、中間レベルのオブジェクト :ref:`NetworkedMultiplayerPeer "
 "<class_NetworkedMultiplayerPeer>` を使用します。このオブジェクトは直接作成す"
-"るためのものではなく、いくつかの実装が提供できるように設計されています:"
+"るためのものではなく、いくつかの実装が提供できるように設計されています。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:62
 msgid ""
@@ -246,14 +245,17 @@ msgid ""
 "on WebRTC (:ref:`WebRTCMultiplayer <class_WebRTCMultiplayer>`), and one "
 "based on WebSocket (:ref:`WebSocketMultiplayerPeer "
 "<class_WebSocketMultiplayerPeer>`), but this could be used to implement "
-"mobile APIs (for adhoc WiFi, Bluetooth) or custom device/console-specific "
+"mobile APIs (for ad hoc WiFi, Bluetooth) or custom device/console-specific "
 "networking APIs."
 msgstr ""
 "このクラスインターフェイスは、ほとんどの種類のネットワーク層、トポロジ、およ"
 "びライブラリを抽象化できます。デフォルトでは、GodotはENet(:ref:"
-"`NetworkedMultiplayerEnet <class_NetworkedMultiplayerENet>`)に基づいた実装を"
-"提供しますが、これを使用してモバイルAPI(アドホックWiFi、Bluetooth用)またはカ"
-"スタムデバイス/コンソール固有のネットワークAPIを実装できます。"
+"`NetworkedMultiplayerEnet <class_NetworkedMultiplayerENet>`)に基づいた実装、"
+"WebRTC(:ref:`WebRTCMultiplayer <class_WebRTCMultiplayer>`)に基づいた実装、お"
+"よびWebSocket(:ref:`WebSocketMultiplayerPeer < "
+"class_WebSocketMultiplayerPeer> `)に基づいた実装を提供しますが、これはモバイ"
+"ルAPI(アドホックWiFi、Bluetooth用)またはカスタムデバイス/コンソール固有のネッ"
+"トワークAPIを実装するために使用できます。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:70
 msgid ""
@@ -332,7 +334,6 @@ msgid "Managing connections"
 msgstr "接続の管理"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:121
-#, fuzzy
 msgid ""
 "Some games accept connections at any time, others during the lobby phase. "
 "Godot can be requested to no longer accept connections at any point (see "
@@ -341,24 +342,22 @@ msgid ""
 "following signals in SceneTree:"
 msgstr ""
 "いつでも接続を受け入れるゲームもあれば、ロビーの段階で接続するゲームもありま"
-"す。 Godotは、どの時点でも接続を受け入れないように要求できます"
-"(`set_refuse_new_network_connections(bool)` および :ref:`SceneTree "
+"す。 Godotは、どの時点でも接続を許可しないように要求できます"
+"(``set_refuse_new_network_connections(bool)`` および :ref:`SceneTree "
 "<class_SceneTree>` の関連メソッドを参照)。 接続するユーザーを管理するために、"
-"Godot はシーンツリーで次のシグナルを提供します:"
+"Godot はSceneTreeで次のシグナルを提供します:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:124
 msgid "Server and Clients:"
 msgstr "サーバー及びクライアント:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:126
-#, fuzzy
 msgid "``network_peer_connected(int id)``"
-msgstr "\\ `network_peer_connected(int id)`"
+msgstr "``network_peer_connected(int id)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:127
-#, fuzzy
 msgid "``network_peer_disconnected(int id)``"
-msgstr "\\ `network_peer_disconnected(int id)`"
+msgstr "``network_peer_disconnected(int id)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:129
 msgid ""
@@ -386,19 +385,16 @@ msgid "Clients:"
 msgstr "クライアント:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:137
-#, fuzzy
 msgid "``connected_to_server``"
-msgstr "\\ `connected_to_server`"
+msgstr "``connected_to_server``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:138
-#, fuzzy
 msgid "``connection_failed``"
-msgstr "\\ `connection_failed`"
+msgstr "``connection_failed``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:139
-#, fuzzy
 msgid "``server_disconnected``"
-msgstr "\\ `server_disconnected`"
+msgstr "``server_disconnected``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:141
 msgid ""
@@ -439,48 +435,40 @@ msgstr ""
 "することです。これは一連の関数として :ref:`Node <class_Node>` で実装されます:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:154
-#, fuzzy
 msgid "``rpc(\"function_name\", <optional_args>)``"
-msgstr "\\ `rpc(\"function_name\", <optional_args>)`"
+msgstr "``rpc(\"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:155
-#, fuzzy
 msgid "``rpc_id(<peer_id>,\"function_name\", <optional_args>)``"
-msgstr "\\ `rpc_id(<peer_id>,\"function_name\", <optional_args>)`"
+msgstr "``rpc_id(<peer_id>,\"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:156
-#, fuzzy
 msgid "``rpc_unreliable(\"function_name\", <optional_args>)``"
-msgstr "\\ `rpc_unreliable(\"function_name\", <optional_args>)`"
+msgstr "``rpc_unreliable(\"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:157
-#, fuzzy
 msgid "``rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)``"
-msgstr "\\ `rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)`"
+msgstr "``rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:159
 msgid "Synchronizing member variables is also possible:"
 msgstr "メンバー変数の同期も可能です:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:161
-#, fuzzy
 msgid "``rset(\"variable\", value)``"
-msgstr "\\ `rset(\"variable\", value)`"
+msgstr "``rset(\"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:162
-#, fuzzy
 msgid "``rset_id(<peer_id>, \"variable\", value)``"
-msgstr "\\ `rset_id(<peer_id>, \"variable\", value)`"
+msgstr "``rset_id(<peer_id>, \"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:163
-#, fuzzy
 msgid "``rset_unreliable(\"variable\", value)``"
-msgstr "\\ `rset_unreliable(\"variable\", value)`"
+msgstr "``rset_unreliable(\"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:164
-#, fuzzy
 msgid "``rset_unreliable_id(<peer_id>, \"variable\", value)``"
-msgstr "\\ `rset_unreliable_id(<peer_id>, \"variable\", value)`"
+msgstr "``rset_unreliable_id(<peer_id>, \"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:166
 msgid "Functions can be called in two fashions:"
@@ -517,13 +505,12 @@ msgstr ""
 "さほど問題はありません。ほぼ、これは再送と同じ結果です)。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:174
-#, fuzzy
 msgid ""
 "There is also the ``get_rpc_sender_id`` function in ``SceneTree``, which can "
 "be used to check which peer (or peer ID) sent an RPC."
 msgstr ""
-"また、\\ `SceneTree` には `get_rpc_sender_id` 関数があり、これを使用してRPCを"
-"送信したピア(またはピアID)を確認できます。"
+"``SceneTree`` には ``get_rpc_sender_id`` 関数もあり、どのピア(またはピアID)が"
+"RPCを送信したかを確認するために使用できます。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:177
 msgid "Back to lobby"
@@ -538,13 +525,12 @@ msgstr ""
 "ることを想像してみてください。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:225
-#, fuzzy
 msgid ""
 "You might have already noticed something different, which is the usage of "
 "the ``remote`` keyword on the ``register_player`` function:"
 msgstr ""
-"`register_player` 関数で `remote` キーワードを使用することで、何か別のことに"
-"すでに気付いているかもしれません:"
+"あなたはすでに別のことに気付いているかもしれません。これは、 "
+"``register_player`` 関数の ``remote`` キーワードの使用法です:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:231
 msgid ""
@@ -569,55 +555,48 @@ msgstr ""
 "キーワードがあります:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:237
-#, fuzzy
 msgid "``remote``"
-msgstr "\\ `remote`"
+msgstr "``remote``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:238
-#, fuzzy
 msgid "``remotesync``"
-msgstr "\\ `remotesync`"
+msgstr "``remotesync``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:239
-#, fuzzy
 msgid "``master``"
-msgstr "\\ `master`"
+msgstr "``master``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:240
-#, fuzzy
 msgid "``puppet``"
-msgstr "\\ `puppet`"
+msgstr "``puppet``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:242
-#, fuzzy
 msgid ""
 "The ``remote`` keyword means that the ``rpc()`` call will go via network and "
 "execute remotely."
 msgstr ""
-"`remote` キーワードは、\\ `rpc()` 呼び出しがネットワークを経由してリモートで"
+"``remote`` キーワードは ``rpc()`` 呼び出しがネットワークを経由してリモートで"
 "実行されることを意味します。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:244
-#, fuzzy
 msgid ""
 "The ``remotesync`` keyword means that the ``rpc()`` call will go via network "
 "and execute remotely, but will also execute locally (do a normal function "
 "call)."
 msgstr ""
-"`remotesync` キーワードは、\\ `rpc()` 呼び出しがネットワーク経由でリモートで"
-"実行されることを意味しますが、ローカルでも実行されます(通常の関数呼び出しを行"
-"います)。"
+"``remotesync`` キーワードは、\\ ``rpc()`` 呼び出しがネットワーク経由でリモー"
+"トで実行されることを意味しますが、ローカルでも実行されます(通常の関数呼び出し"
+"を行います)。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:246
-#, fuzzy
 msgid ""
 "The others will be explained further down. Note that you could also use the "
 "``get_rpc_sender_id`` function on ``SceneTree`` to check which peer actually "
 "made the RPC call to ``register_player``."
 msgstr ""
-"その他については、さらに下で説明します。\\ `SceneTree` で "
-"`get_rpc_sender_id` 関数を使用して、実際にどのピアが `register_player` にRPC"
-"呼び出しを行ったかを確認することもできます。"
+"その他については、さらに下で説明します。\\ ``SceneTree`` で "
+"``get_rpc_sender_id`` 関数を使用して、実際にどのピアが ``register_player`` に"
+"RPC呼び出しを行ったかを確認することもできます。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:249
 msgid ""
@@ -816,15 +795,14 @@ msgid "Master and puppet keywords"
 msgstr "マスターとパペットのキーワード"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:383
-#, fuzzy
 msgid ""
 "The real advantage of this model is when used with the ``master``/``puppet`` "
 "keywords in GDScript (or their equivalent in C# and Visual Script). "
 "Similarly to the ``remote`` keyword, functions can also be tagged with them:"
 msgstr ""
-"このモデルの本当の利点は、GDScriptの `master`/`puppet` キーワード(またはC#と"
-"Visual Scriptの同等のもの)で使用する場合です。\\ `remote` キーワードと同様"
-"に、関数にもそれらのタグを付けることができます:"
+"このモデルの本当の利点は、GDScriptの ``master``/``puppet`` キーワード(または"
+"C#とVisual Scriptの同等のキーワード)で使用する場合です。\\ ``remote`` キー"
+"ワードと同様に、関数にもそれらのタグを付けることができます:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
 msgid "Example bomb code:"
@@ -835,7 +813,6 @@ msgid "Example player code:"
 msgstr "プレイヤーのコード例:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:408
-#, fuzzy
 msgid ""
 "In the above example, a bomb explodes somewhere (likely managed by whoever "
 "is master). The bomb knows the bodies in the area, so it checks them and "
@@ -843,21 +820,19 @@ msgid ""
 msgstr ""
 "上記の例では、爆弾がどこかで爆発します(おそらく、マスターである人によって管理"
 "されます)。爆弾はそのエリアの死体を知っているので、彼らはそれらをチェックし、"
-"それらが `exploded` 関数を含んでいることをチェックします。"
+"それらが ``exploded`` 関数を含んでいることをチェックします。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:411
-#, fuzzy
 msgid ""
 "If they do, the bomb calls ``exploded`` on it. However, the ``exploded`` "
 "method in the player has a ``master`` keyword. This means that only the "
 "player who is master for that instance will actually get the function."
 msgstr ""
-"そうした場合、爆弾は `爆発(exploded)` します。ただし、プレイヤーの "
-"`exploded` メソッドには `master` キーワードがあります。これは、そのインスタン"
-"スのマスターであるプレイヤーのみが実際に関数を取得することを意味します。"
+"そうした場合、爆弾は ``爆発(exploded)`` します。ただし、プレイヤーの "
+"``exploded`` メソッドには ``master`` キーワードがあります。これは、そのインス"
+"タンスのマスターであるプレイヤーのみが実際に関数を取得することを意味します。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:414
-#, fuzzy
 msgid ""
 "This instance, then, calls the ``stun`` method in the same instances of that "
 "same player (but in different peers), and only those which are set as "
@@ -865,19 +840,17 @@ msgid ""
 "current, master one)."
 msgstr ""
 "次に、このインスタンスは、同じプレイヤーの同じインスタンス(ただし、異なるピ"
-"ア)で `stun` メソッドを呼び出し、puppetとして設定されているインスタンスのみを"
-"呼び出して、すべてのピアでプレイヤーをびっくりさせます(および現在のマスター"
-"も)。"
+"ア)で ``stun`` メソッドを呼び出し、puppetとして設定されているインスタンスのみ"
+"を呼び出して、すべてのピアでプレイヤーを驚かせます(および現在のマスターも)。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
-#, fuzzy
 msgid ""
 "Note that you could also send the ``stun()`` message only to a specific "
 "player by using ``rpc_id(<id>, \"exploded\", bomb_owner)``. This may not "
 "make much sense for an area-of-effect case like the bomb, but in other "
 "cases, like single target damage."
 msgstr ""
-"rpc_id(<id>, \"exploded\", bomb_owner) を使用して、特定のプレイヤーにのみ "
-"stun() メッセージを送信することもできます。これは、爆弾のような影響範囲の場合"
-"にはあまり意味をなさないかもしれませんが、他の場合では、単一のターゲットにダ"
-"メージを与えるなどに使えます。"
+"``rpc_id(<id>, \"exploded\", bomb_owner)`` を使用して、特定のプレイヤーにの"
+"み ``stun()`` メッセージを送信することもできます。これは、爆弾のような影響範"
+"囲の場合にはあまり意味をなさないかもしれませんが、他の場合では、単一のター"
+"ゲットにダメージを与えるなどに使えます。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-13 17:49+0100\n"
+"POT-Creation-Date: 2020-04-27 12:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -276,9 +276,10 @@ msgstr ""
 "程度地减少哈希冲突，并保持访问速度。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:130
+#, fuzzy
 msgid ""
 "As one might be able to tell, Dictionaries specialize in tasks that Arrays "
-"aren't. An overview of their operational details is as follows:"
+"do not. An overview of their operational details is as follows:"
 msgstr "也许有人会说，字典专门处理数组所没有的任务。其操作细节概述如下："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:133
@@ -486,11 +487,12 @@ msgid "Enumerations: int vs. string"
 msgstr "枚举：整数VS字符串"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
+#, fuzzy
 msgid ""
 "Most languages offer an enumeration type option. GDScript is no different, "
 "but unlike most other languages, it allows one to use either integers or "
-"strings for the enum values. The question then arises, \"which should one "
-"use?\""
+"strings for the enum values (the latter only when using the ``export`` "
+"keyword in GDScript). The question then arises, \"which should one use?\""
 msgstr ""
 "大多数语言都提供枚举类型选项。GDScript也一样，但与大多数其他语言不同的是，它"
 "允许对枚举值使用整数或字符串。问题就来了，“应该用哪个呢？”"
