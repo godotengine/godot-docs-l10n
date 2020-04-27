@@ -26,6 +26,7 @@
 # Bashka <Artur-Mamedbekov@yandex.ru>, 2018.
 # batonbl4 <batonbl4@yandex.ru>, 2018.
 # bearman92 <hawkskate92@gmail.com>, 2020.
+# branikald <knutarevdv@yandex.ru>, 2020.
 # Breadp4ck <iii103@mail.ru>, 2019.
 # Bumerang <it.bumerang@gmail.com>, 2019.
 # Chaosus89 <chaosus89@gmail.com>, 2018-2019.
@@ -45,6 +46,7 @@
 # GG <slenkor2016@gmail.com>, 2020.
 # gl <glorphindale+dev@gmail.com>, 2018.
 # ijet <my-ijet@mail.ru>, 2018.
+# Ivan Kuzmenko <kuzmenko.ivan2002@yandex.com>, 2020.
 # Ivan Toropelov <chuchundra06@gmail.com>, 2018.
 # JackLite <jackkdlite@gmail.com>, 2018.
 # John <orozobakov96@gmail.com>, 2020.
@@ -89,8 +91,10 @@
 # S.traiker.D <l1evilone@gmail.com>, 2018.
 # Sub Atom <pavelotmorozik@gmail.com>, 2019.
 # sunlazor <alxpho@gmail.com>, 2019.
+# Super Pracion <superpracion2@gmail.com>, 2020.
 # Teashrock <kajitsu22@gmail.com>, 2019.
 # teriva <spirin.cos@yandex.ru>, 2018.
+# USBashka <usbashka@gmail.com>, 2020.
 # Vadim Ivshin <vadim.ivshin@gmail.com>, 2019.
 # Vinsent Insaider_red <vinsent.in7aider@gmail.com>, 2020.
 # Vitaly <arkology11@gmail.com>, 2019.
@@ -133,7 +137,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-03-13 17:49+0100\n"
-"PO-Revision-Date: 2020-03-13 16:32+0000\n"
+"PO-Revision-Date: 2020-04-27 08:41+0000\n"
 "Last-Translator: Vinsent Insaider_red <vinsent.in7aider@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
@@ -143,7 +147,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.0.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -546,11 +550,11 @@ msgid ""
 "games. It starts with the :ref:`Step by step <toc-learn-step_by_step>` "
 "tutorial which should be the entry point for all new users."
 msgstr ""
-"Секция :ref:`sec-learn` является главной причиной для существования данной "
-"документации, поскольку она содержит всю необходимую информацию об "
-"использовании движка для создания игр. Она начинается с :ref:`пошагового "
-"обучения <toc-learn-step_by_step>`, которое должно быть входной точкой для "
-"всех новых пользователей."
+"Раздел :ref:`sec-learn` является главной причиной для существования данной "
+"документации, поскольку он содержит всю необходимую информацию об "
+"использовании движка для создания игр. Он начинается с :ref:`пошагового "
+"обучения <toc-learn-step_by_step>`, которое должно стать отправной точкой "
+"для всех новых пользователей."
 
 #: ../../docs/about/introduction.rst:91
 msgid ""
@@ -650,8 +654,8 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Вы можете свободно скачивать и использовать Godot для любых целей: личных, "
-"некоммерческих, коммерческих или иных."
+"Вы можете бесплатно скачивать и использовать Godot для любых целей, личных, "
+"некоммерческих, коммерческих или иных;"
 
 #: ../../docs/about/faq.rst:17
 msgid ""
@@ -810,12 +814,12 @@ msgid ""
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
 "Если вы только начинаете разбираться с Godot или с разработкой игр в целом, "
-"то рекомендуем обучиться языку GDScript, поскольку он является родным языком "
-"для Godot. Хотя языки сценариев, как правило, менее эффективны, чем языки "
-"более низкого уровня в долгосрочной перспективе, для прототипирования, "
-"разработки минимальных жизнеспособных продуктов (MVP) и фокусирования на "
-"Time-To-Market (TTM), GDScript предоставляет достаточно быстрый, "
-"дружественный и действенный путь для создания ваших игр."
+"то рекомендуем изучить язык GDScript, поскольку он является родным языком "
+"для Godot. Хотя скриптовые языки программирования, как правило, менее "
+"эффективны, чем языки более низкого уровня. В долгосрочной перспективе, для "
+"прототипирования и разработки минимальных жизнеспособных продуктов (MVP) и "
+"фокусирования на Time-To-Market (TTM), GDScript предоставляет достаточно "
+"быстрый, дружественный и действенный путь для создания ваших игр."
 
 #: ../../docs/about/faq.rst:78
 msgid ""
@@ -1022,10 +1026,10 @@ msgid ""
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Godot поддерживает Collada через  `OpenCollada <https://github.com/"
-"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter для Maya или "
-"3DSMax. Если вы используете Blender, ознакомьтесь с нашим собственным "
-"`Better Collada Exporter <https://godotengine.org/download>`_."
+"Godot поддерживает Collada через экспортер `OpenCollada <https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ для Maya или 3DSMax. Если "
+"вы используете Blender, ознакомьтесь с нашим собственным `Better Collada "
+"Exporter <https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
@@ -2153,16 +2157,14 @@ msgid "Your first look at Godot’s editor"
 msgstr "Ваш первый взгляд на редактор Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
 "Добро пожаловать в Godot! Открыв свой проект, вы увидите интерфейс редактора "
-"с активным окном 3D просмотра. Вы можете изменить текущее рабочее "
-"пространство в верхней части интерфейса. Нажмите на 2D, чтобы перейти в "
-"рабочее пространство 2D."
+"с меню в верхней части интерфейса и панели, расположенные по обе стороны "
+"окна обзора."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
@@ -2173,21 +2175,19 @@ msgstr ""
 "области** и **кнопки воспроизведения**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you’ll manage your project files and assets."
 msgstr ""
-"Снизу, с левой стороны у вас есть панель **Файловая система**, где вы будете "
-"управлять файлами и ассетами вашего проекта."
+"В панели **Файловая система** Вы можете управлять файлами Вашего проекта и "
+"ресурсами."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
-#, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene’s content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"Справа вы найдете **панель сцен**, в которой перечислено содержимое активной "
-"сцены, и **инспектор** в правом нижнем углу."
+"**Панель сцены** отображает содержание активной сцены, а **Инспектор** "
+"позволяет управлять свойствами элементов сцены."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid ""
@@ -2222,25 +2222,23 @@ msgstr ""
 "и AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
-#, fuzzy
 msgid ""
 "You’ll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
-"Вы будете использовать **2D рабочее пространство** для всех типов игр. В "
-"дополнение к 2D-играм, там вы будете создавать свои интерфейсы. Нажмите F1 "
-"для доступа к нему."
+"Вы будете использовать **рабочее пространство 2D** для всех типов игр. Кроме "
+"непосредственно 2D-игр, там вы будете создавать свои интерфейсы. Нажмите :"
+"kbd:`F1` (или :kbd:`Alt + 1` на macOS) для доступа к нему."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
-"В **3D рабочем пространстве** вы можете работать с сетками (mesh), "
-"освещением и проектированием уровней для 3D-игр. Нажмите F2 для доступа к "
-"нему."
+"В **рабочем пространстве 3D** вы можете работать с сетками (mesh), "
+"освещением и проектированием уровней для 3D-игр. Нажмите :kbd:`F2` (или :kbd:"
+"`Alt + 2` на macOS) для доступа к нему."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
@@ -2258,15 +2256,15 @@ msgstr ""
 "**3D workspace**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
-#, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
 "+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
 msgstr ""
 "Рабочая область **Script** - это полноценный редактор кода с отладчиком, "
-"богатым автодополнением и встроенной документацией. Нажмите F3 для доступа к "
-"нему, а F4 - для поиска по документации."
+"богатым автодополнением и встроенной документацией. Нажмите :kbd:`F3` (или :"
+"kbd:`Alt + 3` на macOS) для доступа к нему, а :kbd:`F4` - для поиска по "
+"документации."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
@@ -2594,13 +2592,12 @@ msgstr ""
 "2D Узлом) и в верхнем левом углу окна просмотра появляется Ярлык."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
-#, fuzzy
 msgid ""
 "The node appears in the scene tree editor in the Scene dock, and the label "
 "properties appear in the Inspector dock."
 msgstr ""
-"Узел \"Label\" появляется в редакторе узлов сцены (поле в правом верхнем "
-"углу), а свойства узла отображаются в \"инспекторе\" (в нижнем правом углу)."
+"Узел появляется в редакторе узлов сцены (вкладка \"Сцена\"), а свойства узла "
+"\"Label\" отобразятся в \"Инспекторе\"."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
@@ -2611,13 +2608,12 @@ msgstr ""
 "World!»:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
-#, fuzzy
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit :kbd:`F6`):"
 msgstr ""
-"Хорошо, сцена готова! Нажмите кнопку \"Воспроизвести сцену\" справа вверху, "
-"над панелью редактора узлов сцены (или нажмите F6):"
+"Отлично, сцена готова к запуску! Нажмите кнопку \"Воспроизвести\" в правой "
+"верхней панели (или нажмите :kbd:`F6`):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
@@ -2890,15 +2886,14 @@ msgid "Multiple instances"
 msgstr "Множественное создание экземпляров"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
-#, fuzzy
 msgid ""
 "You can add as many instances as you like to a scene, either by using the "
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (:kbd:`Ctrl + D`):"
 msgstr ""
 "Вы можете добавить столько экземпляров, сколько захотите на сцену, либо с "
-"помощью кнопки «Добавить сцену как узел», либо нажав на экземпляр шарика и "
-"нажав «Дублировать» (Ctrl-D):"
+"помощью кнопки «Добавить файл сцены как узел», либо нажав на экземпляр "
+"шарика и нажав «Дублировать» (:kbd:`Ctrl + D`):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
@@ -2909,7 +2904,6 @@ msgid "Editing instances"
 msgstr "Редактирование экземпляров"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
-#, fuzzy
 msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by opening the "
 "\"Physics Material Override\" dropdown in the Inspector dock and selecting "
@@ -3459,13 +3453,12 @@ msgid "Scene setup"
 msgstr "Настройка сцены"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
-#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
 "Используйте диалог \"Добавить дочерний узел\", доступ к которому "
-"осуществляется из вкладки \"Сцена\" (или нажатием ``Ctrl+A``), чтобы создать "
+"осуществляется из вкладки \"Сцена\" (или нажатием `Ctrl+A`), чтобы создать "
 "иерархию со следующими узлами:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
@@ -4277,6 +4270,11 @@ msgid ""
 "signal connected to the same method, as each signal propagation will result "
 "in different values for those extra call arguments."
 msgstr ""
+"С правой стороны вы можете связать произвольное количество аргументов "
+"(возможно) разных типов. Это может быть полезно, когда к одному и тому же "
+"методу подключено более одного сигнала, поскольку каждое распространение "
+"сигнала приведет к различным значениям для этих дополнительных аргументов "
+"вызова."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
@@ -4377,26 +4375,28 @@ msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
+"Сигнал также может опционально объявлять один или несколько аргументов. "
+"Укажите имена аргументов в круглых скобках:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:232
-#, fuzzy
 msgid ""
 "The signal arguments show up in the editor's node dock, and Godot can use "
 "them to generate callback functions for you. However, you can still emit any "
 "number of arguments when you emit signals. So it's up to you to emit the "
 "correct values."
 msgstr ""
-"Эти аргументы показываются в доке узла редактора и Godot может использовать "
+"Эти аргументы показываются в док-узлах редактора, и Godot может использовать "
 "их, чтобы производить для вас функции обратного вызова. Однако, вы всё ещё "
 "можете отправлять любое число аргументов при отправке сигналов; отправка "
 "правильных значений зависит от вас."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:237
-#, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
-msgstr "Чтобы выпустить сигнал через код, используйте функцию ``emit_signal``:"
+msgstr ""
+"Чтобы передать значения, добавьте их в качестве второго аргумента в функцию "
+"`` emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:265
 msgid ""
@@ -4588,13 +4588,12 @@ msgstr ""
 "\"Гарантирует, что дети объекта не могут быть выбраны.\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
 "Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
-"Сохраните сцену. Выберите меню \"Сцена\" -> \"Сохранить\" или нажмите \"Ctrl"
-"+S\" на Windows/Linux или ``Command+S`` на Mac."
+"Сохраните сцену. Нажмите \"Сцена\" -> \"Сохранить\" в верхней панели или "
+"нажмите сочетание клавиш\"Ctrl+S\" на Windows/Linux или ``Command+S`` на Mac."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:87
 msgid "For this project, we will be following the Godot naming conventions."
@@ -5409,7 +5408,6 @@ msgstr ""
 "переменными скрипта на узле ``Main``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:740
-#, fuzzy
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
@@ -5417,11 +5415,11 @@ msgid ""
 "bottom of the \"Connecting Signal\" window. Add the following code, as well "
 "as a ``new_game`` function to set everything up for a new game:"
 msgstr ""
-"Далее, щёлкните на Player и соедините ``hit``-сигнал. Мы хотим сделать новую "
+"Далее, щёлкните на Player и соедините сигнал``hit``. Мы хотим сделать новую "
 "функцию с названием ``game_over``, которая будет обрабатывать то, что "
-"происходит когда игра заканчивается. Введите \"game_over\" в поле \"Метод в "
-"ноде\" снизу от окна \"Соединение сигнала\". Вставьте следующий код, а также "
-"функцию ``new_game`` чтобы настроить всё для новой игры:"
+"происходит когда игра заканчивается. Введите \"game_over\" в поле \"Метод-"
+"приёмник\" снизу от окна \"Соединение сигнала\". Вставьте следующий код, а "
+"также функцию ``new_game`` чтобы настроить всё для новой игры:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:777
 msgid ""
@@ -5633,7 +5631,7 @@ msgstr "``Макет``: \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid "*Autowrap* : \"On\""
-msgstr "*Autowrap* : \"On\""
+msgstr "*Авто-перенос* : \"Включить\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:941
 msgid "StartButton"
@@ -5941,13 +5939,12 @@ msgstr ""
 "\"ui_select\". Это событие ввода по умолчанию, связанное с пробелом."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1230
-#, fuzzy
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Space` to start the game."
 msgstr ""
 "Теперь, когда появится кнопка запуска, вы можете нажать на неё или на "
-"пробел, чтобы начать игру."
+"клавишу пробел, чтобы начать игру."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1234
 msgid "Project files"
@@ -6030,12 +6027,13 @@ msgid ""
 "input. In the \"Project Settings\" under *Input Devices* and *Pointing*, set "
 "*Emulate Touch From Mouse* to \"On\"."
 msgstr ""
-"По умолчанию Godot эмулирует ввод мыши из ввода тача. Это означает что все "
-"что закодировано на событие мыши, также будет вызываться на событие тача. "
-"Также Godot может эмулировать  ввод тача из щелчков мыши, что позволит нам "
-"продолжать играть в нашу игру на нашем компьютере после перехода на "
-"сенсорный ввод. В \"Project Settings\" под *Input Devices* и *Pointing*, "
-"установите *Emulate Touch From Mouse* на \"On\"."
+"По умолчанию Godot эмулирует ввод мыши из сенсорного ввода. Это означает что "
+"все, что запрограммировано на событие мыши, также будет вызываться на "
+"событие сенсорного ввода. Godot также может эмулировать сенсорный ввод из "
+"щелчков мыши, что позволит нам продолжать играть в нашу игру на компьютере "
+"после перехода на сенсорный ввод. В \"Настройках проекта\" в разделе \"Input "
+"Devices\" (Устройства Ввода) в пункте \"Pointing\" (Указатели), включите "
+"\"Emulate Touch From Mouse\" (Эмулировать сенсорный ввод из мыши)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:39
 msgid ""
@@ -6044,9 +6042,9 @@ msgid ""
 "In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
 "Нам также надо убедиться, что игра будет корректно масштабироваться при "
-"разных размерах экрана, поэтому в настройках проекта перейдите в Экран, "
-"затем кликните на Окно. В разделе Растяжение, измените Режим на \"2d\" и "
-"Соотношение сторон на \"сохранить\"."
+"разных размерах экрана, поэтому в настройках проекта перейдите в *Display*, "
+"затем кликните на *Window*. В разделе *Stretch*, измените *Mode* на \"2d\" и "
+"*Aspect* на \"keep\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
 msgid ""
@@ -6062,9 +6060,9 @@ msgid ""
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
-"Далее, нужно модифицировать скрипт \"Player.gd\", для того, чтобы изменить "
-"метод ввода. Мы уберем управление клавишами и сделаем так, чтобы игрок "
-"двигался к цели, которая задается событием тапа по экрану (или кликом)."
+"Далее, нужно модифицировать скрипт ``Player.gd``, чтобы изменить метод "
+"ввода. Уберем клавишное управление и сделаем так, чтобы игрок двигался к "
+"цели, которая задается событием нажатия по экрану (или клика мыши)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:52
 msgid ""
@@ -7093,7 +7091,6 @@ msgid "TextureButton"
 msgstr "\"TextureButton\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
-#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 5 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -7101,12 +7098,12 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
-"**TextureButton** как TextureRect, кроме него имеется 5 слотов текстуры: "
-"одна для каждого из состояний кнопки. Большую часть времени вы будете "
-"использовать Normal, Pressed и Hover textures. Фокусировка полезна, если ваш "
-"интерфейс слушает ввод с клавиатуры. Шестой слот изображения (Click Mask) "
-"позволяет определить кликабельную область, используя 2-битное, чистое черно-"
-"белое изображение."
+"**TextureButton** как TextureRect, но имеет 5 слотов для текстур: по одному "
+"для каждого из состояний кнопки. Большую часть времени вы будете "
+"использовать Normal, Pressed и Hover текстуры. Фокусировка полезна, если ваш "
+"интерфейс принимает ввод с клавиатуры. Шестой слот изображения, \"Click Mask"
+"\", позволяет определить доступную для клика область, используя двоичное, "
+"состоящее только из черного и белого цветов, изображение."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""
@@ -7713,7 +7710,7 @@ msgid ""
 "miss out on valuable feedback."
 msgstr ""
 "Слишком сильный упор на графику на этой стадии может исказить восприятие "
-"игроками игрового процесса и вы лишитесь ценных отзывов"
+"игроками вашего интерфейса и вы лишитесь ценных отзывов."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
@@ -7874,7 +7871,6 @@ msgstr ""
 "сцену, нажмите на меню **Сцена -> Новая Сцена**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
-#, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
@@ -7887,7 +7883,7 @@ msgstr ""
 "данном случае это ``MarginContainer``. ``MarginContainer`` является хорошей "
 "отправной точкой для большинства интерфейсов, так как часто требуется "
 "заполнение вокруг UI. Нажмите ``Meta+S``, чтобы сохранить сцену на диск. "
-"Назовите его *ГлавноеМеню*."
+"Назовите его *MainMenu*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
 msgid ""
@@ -7952,17 +7948,16 @@ msgid "and the main menu’s illustration."
 msgstr "И иллюстрация главного меню."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press :kbd:`Meta + A` on your keyboard. "
 "Start to type ``TextureRect`` to find the corresponding node and press "
 "enter. With the new node selected, press :kbd:`Meta + D` five times to "
 "create five extra ``TextureRect`` instances."
 msgstr ""
-"Нажмите кнопку ``Добавить узел``, или нажмите ``Ctrl+A`` на клавиатуре. "
-"Начните вводить ``TextureRect``, чтобы найти соответствующий узел, и нажмите "
-"Enter. Выбрав новый узел, нажмите ``Ctrl+D`` пять раз, чтобы создать пять "
-"дополнительных экземпляров ``TextureRect``."
+"Нажмите кнопку **Добавить узел**, или нажмите `Ctrl+A` на клавиатуре. "
+"Начните вводить `TextureRect`, чтобы найти соответствующий узел, и нажмите "
+"Enter. Выбрав новый узел, нажмите `Ctrl+D` пять раз, чтобы создать пять "
+"дополнительных экземпляров `TextureRect`."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
 msgid ""
@@ -7971,13 +7966,12 @@ msgid ""
 "pick a sprite to load into the texture slot."
 msgstr ""
 "Щелкните на каждый из узлов, чтобы выбрать его. В инспекторе найдите "
-"свойство **Texture**. Нажмите справа от свойства Texture и выберите "
-"``Load``. Откроется проводник, который позволяет выбрать спрайт для загрузки "
-"в слот текстуры."
+"свойство **Texture** и нажмите [пусто],  далее \"Загрузить\". Откроется "
+"проводник, который позволяет выбрать спрайт для загрузки в слот текстуры."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
 msgid "The file browser lets you find and load textures."
-msgstr "Файловый проводник позволит найти и загрузить текстуры."
+msgstr "Файловый проводник позволяет найти и загрузить текстуры."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
 msgid ""
@@ -7988,7 +7982,7 @@ msgid ""
 "messy."
 msgstr ""
 "Повторите операцию для всех узлов ``TextureRect``. У вас должен быть "
-"логотип, иллюстрация, три варианта меню и информация о версии, каждая как "
+"логотип, иллюстрация, три опции для меню и информация о версии, каждая как "
 "отдельный узел. Затем дважды щелкните на каждом из узлов на вкладке Сцена, "
 "чтобы переименовать их. Пока что элементы не были помещены в контейнеры, "
 "поэтому это будет выглядеть странно."
@@ -8007,7 +8001,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:184
 msgid "Add containers to place UI elements automatically"
-msgstr "Добавление контейнеров для автоматического размещения элементов UI"
+msgstr "Добавьте контейнеры для автоматического размещения элементов UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
 msgid ""
@@ -8106,7 +8100,6 @@ msgstr ""
 "поместите её внутрь CenterContainer."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
@@ -8115,13 +8108,13 @@ msgid ""
 "``NewGame`` and ``Options``, and drag and drop them inside the new "
 "``VBoxContainer``. The UI's layout should barely change, if at all."
 msgstr ""
-"Чтобы добавить пространство между меню и логотипом слева, мы будем "
-"использовать один последний контейнер и его флаги размера(size flags). "
-"Выберите ``VBoxContainer`` и нажмите ``Ctrl+A``, чтобы добавить в него новый "
-"узел. Добавьте второй ``VBoxContainer`` и назовите его *MenuOptions*. "
-"Выберите все три варианта меню, ``Continue``, ``NewGame`` и``Options``, и "
-"перетащите их в новый ``VBoxContainer``. Макет UI должен едва, если вообще "
-"изменится."
+"Для разметки пунктов меню и логотипа слева мы будем использовать один "
+"последний контейнер и флаги его размеров. Выберите `` VBoxContainer`` и "
+"нажмите :kbd:`Meta + A`, чтобы добавить новый узел внутри него. Добавьте "
+"второй `` VBoxContainer`` и назовите его * MenuOptions *. Выберите все три "
+"пункта меню, `` Continue``, `` NewGame`` и `` Options``, и перетащите их в "
+"новый `` VBoxContainer``. Структура пользовательского интерфейса возможно "
+"едва измениться, если вообще изменится."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
 msgid ""
@@ -8210,18 +8203,17 @@ msgstr ""
 "контейнеры для управления позицией и размера элемента UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:289
-#, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press :kbd:`Q` to activate "
 "the Select Mode, select the container and click and drag on one of the "
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
-"Порядок, в котором вы разберёте вопросы. Чтобы убедиться, что UI хорошо "
-"адаптируется к разным соотношениям экрана, выберите корневой узел, нажмите "
-"клавишу Q, чтобы активировать \"Режим Выделения\". Выберите контейнер, "
-"нажмите и перетащите один из углов контейнера, чтобы изменить его размер. "
-"Компоненты UI должны \"течь\" внутри него."
+"Порядок, в котором вы располагаете узлы, имеет значение. Чтобы убедиться, "
+"что UI хорошо адаптируется к разным соотношениям экрана, выберите корневой "
+"узел, нажмите клавишу :kbd:`Q`, чтобы активировать \"Режим Выделения\". "
+"Выберите контейнер, нажмите и перетащите один из углов контейнера, чтобы "
+"изменить его размер. Компоненты UI должны \"течь\" внутри него."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:295
 msgid ""
@@ -8592,7 +8584,6 @@ msgid "If you select both nodes, you should see something like this"
 msgstr "Если вы выберите оба узла, вы должны увидеть что-то такое"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:163
-#, fuzzy
 msgid ""
 "As they have a container as their direct parent, we cannot move them freely: "
 "the ``Count`` node will always reset their anchors, their size and position. "
@@ -8604,9 +8595,9 @@ msgstr ""
 "Поскольку у них есть контейнер в качестве прямого родителя, мы не можем "
 "свободно перемещать их: узел ``Count`` всегда будет сбрасывать свои якоря, "
 "их размер и положение. Попробуйте переместить и изменить размер узлов на "
-"видовом экране. Затем выберите любой из трех текстур и нажмите Ctrl + Up или "
-"Ctrl Down, чтобы упорядочить их в сцене. Они вернуться к их предыдущему "
-"размеру и положению."
+"окне просмотра. Затем выберите любой из трех текстур и нажмите `Ctrl + Up` "
+"или `Ctrl Down`, чтобы упорядочить их в сцене. Они вернуться к их "
+"предыдущему размеру и положению."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:170
 msgid ""
@@ -8783,17 +8774,16 @@ msgstr ""
 "будем дублировать его и использовать его в качестве шаблона."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
-#, fuzzy
 msgid ""
 "Under the ``Bar`` node, select ``Count`` and press :kbd:`Ctrl + D` to "
 "duplicate it. Drag and drop the new node under the ``Counters`` "
 "``HBoxContainer`` at the bottom of the scene tree. You should see it resize "
 "automatically. Don't worry about this for now, we'll fix the size soon."
 msgstr ""
-"В узле ``Bar`` выберите ``Count`` и нажмите ``Ctrl+D``, чтобы дублировать "
-"его. Перетащите новый узел под ``Counters`` в нижнюю часть дерева сцены. Вы "
-"должны увидеть как он изменит размер автоматически. Не беспокойтесь об этом "
-"сейчас, мы исправим его в ближайшее время."
+"В узле ``Bar`` выберите ``Count`` и нажмите :kbd:`Ctrl+D`, чтобы дублировать "
+"его. Перетащите новый узел под ``Counters`` ``HBoxContainer`` в нижнюю часть "
+"дерева сцены. Вы должны увидеть как он изменит размер автоматически. Не "
+"беспокойтесь об этом сейчас, мы исправим его в ближайшее время."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
 msgid ""
@@ -9074,14 +9064,13 @@ msgid "Inherit the Bar Scene to build the LifeBar"
 msgstr "Наследование Bar для создания шкалы здоровья"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
 "like your ``Bar``, but with all nodes except the root in grey. Press :kbd:"
 "`Meta + S` to save the new inherited scene and name it ``LifeBar``."
 msgstr ""
-"Перейдите к ``Сцена -> Новая Унаследованная сцена`, чтобы создать новый тип "
+"Перейдите к ``Сцена -> Новая Унаследованная сцена``, чтобы создать новый тип "
 "``Bar``. Выберите сцену Bar и откройте ее. Вы должны увидеть новую "
 "[несохраненную] вкладку, которая, такая же как ваш ``Bar``, но со всеми "
 "узлами, кроме корневой сцены в сером цвете. Нажмите ``Ctrl+S`` для "
@@ -10133,7 +10122,6 @@ msgstr ""
 "назначить его в ``new_value`` напрямую"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
-#, fuzzy
 msgid ""
 "Also call ``update_health`` at the end of the ``_ready`` function to "
 "initialize the ``Number`` node's ``text`` with the right value at the start "
@@ -10141,8 +10129,9 @@ msgid ""
 "every attack!"
 msgstr ""
 "Также вызов ``update_health`` в конце функции ``_ready`` инициализировать "
-"``text`` узла ``Number``с правильным значением в начале игры. Нажмите "
-"клавишу F5, чтобы протестировать игру: жизни обновляются при каждой атаке!"
+"``text`` узла ``Number`` с правильным значением в начале игры. Нажмите "
+"клавишу :kbd:`F5`, чтобы протестировать игру: жизни обновляются при каждой "
+"атаке!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""
@@ -10754,13 +10743,12 @@ msgstr ""
 "раз. С двумя ключевыми кадрами с разными значениями произойдет анимация."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:73
-#, fuzzy
 msgid ""
 "Pressing \"Play selected animation from start\" button on the animation "
 "panel (or :kbd:`Shift + D` on keyboard) will make the logo descend."
 msgstr ""
-"Нажатие на кнопку \"Воспроизвести выбранную анимацию с самого начала. (Shift-"
-"D)\" на панели анимации, сделает так чтобы logo стало опускаться."
+"Нажатие на кнопку \"Воспроизвести выбранную анимацию с самого начала. (или :"
+"kbd:`Shift-D` ) на панели анимации, заставит logo опуститься."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:78
 msgid ""
@@ -10812,7 +10800,6 @@ msgstr ""
 "данные, содержащиеся в ресурсах."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
-#, fuzzy
 msgid ""
 "Anything Godot saves or loads from disk is a resource. Be it a scene (a ``."
 "tscn`` or an ``.scn`` file), an image, a script... Here are some "
@@ -10822,11 +10809,11 @@ msgid ""
 "<class_Font>`, :ref:`Translation <class_Translation>`."
 msgstr ""
 "Все, что Godot сохраняет на диск или загружает с него, является ресурсом. "
-"Будь то сцена (.tscn или .scn файл), изображение, скрипт... Вот несколько "
-"примеров  :ref:`Texture <class_Texture>`, :ref:`Script <class_Script>`, :ref:"
-"`Mesh <class_Mesh>`, :ref:`Animation <class_Animation>`, :ref:`AudioStream "
-"<class_AudioStream>`, :ref:`Font <class_Font>`, :ref:`Translation "
-"<class_Translation>`."
+"Будь то сцена (``.tscn`` или ``.scn`` файл), изображение, скрипт... Вот "
+"несколько примеров :ref:`Texture <class_Texture>`, :ref:`Script "
+"<class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
+"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
+"<class_Font>`, :ref:`Translation <class_Translation>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
 msgid ""
@@ -10865,12 +10852,11 @@ msgid "**External** to a scene, saved on the disk as individual files."
 msgstr "**Внешний** сохраненный в виде отдельных файлов."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
-#, fuzzy
 msgid ""
 "**Built-in**, saved inside the ``.tscn`` or the ``.scn`` file they're "
 "attached to."
 msgstr ""
-"**Встроенный** сохраненный в файле \\*.tscn или в файле \\*.scn, к которому "
+"**Встроенный**, сохраненный в файле \\*.tscn или в файле \\*.scn, к которому "
 "они прикреплены."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
@@ -10958,13 +10944,12 @@ msgstr ""
 "Сцена упакованая внутри ресурса."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
-#, fuzzy
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instance() <class_PackedScene_method_instance>` method."
 msgstr ""
-"Для получения экземпляра сцены необходимо использовать метод :ref:"
-"`PackedScene.instance() <class_PackedScene_method_instance>`."
+"Для получения экземпляра сцены используйте метод :ref:`PackedScene."
+"instance() <class_PackedScene_method_instance>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
 msgid ""
@@ -11011,7 +10996,6 @@ msgid "Creating your own resources"
 msgstr "Создание собственных ресурсов"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
-#, fuzzy
 msgid ""
 "Like any Object in Godot, users can also script Resources. Resource scripts "
 "inherit the ability to freely translate between object properties and "
@@ -11019,13 +11003,12 @@ msgid ""
 "reference-counting memory management from the Reference type."
 msgstr ""
 "Как и любой объект в Godot, пользователи также могут создавать скрипты "
-"Ресурсов. Скрипты ресурса наследуют возможность свободного перевода между "
+"Ресурсов. Скрипты ресурса наследуют возможность свободного перемещения между "
 "свойствами объекта и сериализованным текстом или двоичными данными (/*."
-"tres, /*.res). Они также унаследовали управление памятью отсчета ссылок от "
-"типа Reference."
+"tres, /*.res). Они также наследуют управление памятью подсчета ссылок из  "
+"ссылочного типа."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
-#, fuzzy
 msgid ""
 "This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
@@ -11170,7 +11153,6 @@ msgstr ""
 "выберите \"Сохранить\" или \"Сохранить как...\"."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
-#, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -11188,7 +11170,6 @@ msgid "Let's see some examples."
 msgstr "Давайте рассмотрим некоторые примеры."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:303
-#, fuzzy
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -11222,13 +11203,12 @@ msgstr ""
 "качестве альтернативы..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:347
-#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
 msgstr ""
-"Импортируйте таблицу значений из электронной таблицы и создайте эти пары "
-"ключ-значение, или...."
+"Импортируйте табличные значения из электронной версии таблицы и создайте эти "
+"пары ключ-значение, или...."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:349
 msgid ""
@@ -11278,18 +11258,17 @@ msgid "File system"
 msgstr "Файловая система"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "A file system manages how assets are stored and how they are accessed. A "
 "well-designed file system also allows multiple developers to edit the same "
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
-"Файловые системы - еще одна горячая тема в разработке движков. Файловая "
-"система управляет тем, как хранятся эти ресурсы и как к ним можно получить "
-"доступ. Хорошо продуманная файловая система также позволяет нескольким "
-"разработчикам редактировать одни и те же исходные файлы и ресурсы в процессе "
-"совместной работы."
+"Файловая система управляет тем, как хранятся ресурсы и как к ним "
+"осуществляется доступ. Хорошо продуманная файловая система также позволяет "
+"нескольким разработчикам редактировать одни и те же исходные файлы и ресурсы "
+"во время совместной работы. Godot хранит всю библиотеку ресурсов в виде "
+"файлов в своей файловой системе."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
@@ -11313,19 +11292,17 @@ msgstr ""
 "ресурс шрифтов часто поставляется в комплекте с текстурами шрифтов."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
-#, fuzzy
 msgid ""
 "The Godot file system avoids using metadata files. Existing asset managers "
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
-"В общем, файловая система Godot избегает использования метаданных файлов. "
-"Причина проста, существующие управляющие активами и VCS намного лучше, чем "
-"все, что мы можем реализовать, поэтому Godot старается работать вместе с "
-"SVN, Git, Mercurial, Perforce и т.д."
+"Файловая система Godot избегает использования файлов метаданных. "
+"Существующие менеджеры активов и VCS лучше всего, чем все, что мы можем "
+"реализовать, поэтому Godot старается всеми силами работать вместе с SVN, "
+"Git, Mercurial, Perfce и т.д."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:28
-#, fuzzy
 msgid "Example of file system contents:"
 msgstr "Пример содержимого файловой системы:"
 
@@ -11344,7 +11321,6 @@ msgstr ""
 "находится корень. Это первый файл, который Godot ищет при открытии проекта."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
-#, fuzzy
 msgid ""
 "This file contains the project configuration in plain text, using the win."
 "ini format. Even an empty project.godot can function as a basic definition "
@@ -11410,7 +11386,6 @@ msgid "User path"
 msgstr "Путь пользователя"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
-#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
@@ -11426,7 +11401,6 @@ msgid "Host file system"
 msgstr "Родительская файловая система"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
-#, fuzzy
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
@@ -11434,10 +11408,10 @@ msgid ""
 "writing development tools in Godot."
 msgstr ""
 "В качестве альтернативы можно также использовать пути родительской файловой "
-"системы, но это не рекомендуется для выпускаемого продукта, поскольку не "
-"гарантировано, что эти пути будут работать на всех платформах. Однако, "
-"использование путей родительской файловой системы может быть полезно при "
-"написании инструментов разработки на Godot!"
+"системы, но этого не рекомендуется делать для собранного продукта, так как "
+"эти пути не гарантируют работу на всех платформах. Однако использование "
+"путей родительской файловой системы может быть полезно при написании средств "
+"разработки в Godot."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:89
 msgid "Drawbacks"
@@ -11471,7 +11445,6 @@ msgstr ""
 "путем?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:101
-#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -11489,7 +11462,6 @@ msgstr ""
 "всех файлов."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:107
-#, fuzzy
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot. One simple fool-proof convention is to only "
@@ -11506,7 +11478,6 @@ msgid "SceneTree"
 msgstr "Дерево сцены"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
-#, fuzzy
 msgid ""
 "In previous tutorials, everything revolved around the concept of nodes. "
 "Scenes are collections of nodes. They become active once they enter the "
@@ -11533,21 +11504,19 @@ msgstr ""
 "языки, система сцен и т.д."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:21
-#, fuzzy
 msgid ""
 "When initialization is complete, :ref:`OS <class_OS>` needs to be supplied "
 "a :ref:`MainLoop <class_MainLoop>` to run. Up to this point, all this is "
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
-"После завершения инициализации, для :ref:`OS <class_OS>` должен быть "
+"После завершения инициализации, :ref:`OS <class_OS>` должен быть "
 "предоставлен :ref:`MainLoop <class_MainLoop>` для запуска. До этого момента "
 "все это работало внутри (вы можете проверить файл main/main.cpp в исходном "
 "коде, если вам когда-нибудь будет интересно посмотреть, как это работает "
 "внутри)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:27
-#, fuzzy
 msgid ""
 "The user program, or game, starts in the MainLoop. This class has a few "
 "methods, for initialization, idle (frame-synchronized callback), fixed "
@@ -11578,7 +11547,6 @@ msgstr ""
 "и сервера являются API низкого уровня."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
-#, fuzzy
 msgid ""
 "The scene system provides its own main loop to OS, :ref:`SceneTree "
 "<class_SceneTree>`. This is automatically instanced and set when running a "
@@ -11598,13 +11566,12 @@ msgstr ""
 "применений:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:49
-#, fuzzy
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
 "added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)."
 msgstr ""
-"Он содержит корневой :ref:`Viewport <class_Viewport>`, к которому сцена "
+"Он содержит корень :ref:`Viewport <class_Viewport>`, к которому сцена "
 "добавляется как дочерняя, когда она впервые открывается то становится частью "
 "*древа сцен* (подробнее об этом ниже)"
 
@@ -11625,7 +11592,6 @@ msgstr ""
 "или выход."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "When a node is part of the Scene Tree, the :ref:`SceneTree "
 "<class_SceneTree>` singleton can be obtained by calling :ref:`Node."
@@ -11648,7 +11614,6 @@ msgstr ""
 "сцены. Из узла его можно получить двумя разными способами:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:80
-#, fuzzy
 msgid ""
 "This node contains the main viewport. Anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
@@ -11658,7 +11623,7 @@ msgstr ""
 "Этот узел содержит основное окно просмотра, все, что является дочерним для :"
 "ref:`Viewport <class_Viewport>`, рисуется внутри него по умолчанию, поэтому "
 "наверху всех узлов древа сцен должен быть узел такого типа, иначе ничего не "
-"будет видно!"
+"будет видно."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:85
 msgid ""
@@ -11692,7 +11657,6 @@ msgstr ""
 "вызовы _enter_tree() и _ready(), (а также _exit_tree())."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:100
-#, fuzzy
 msgid ""
 "When nodes enter the *Scene Tree*, they become active. They get access to "
 "everything they need to process, get input, display 2D and 3D visuals, "
@@ -11702,7 +11666,7 @@ msgstr ""
 "Когда узлы входят в *Древо Сцен*, они становятся активными. Они получают "
 "доступ ко всему, что им нужно для обработки, ввода, отображения 2D и 3D, "
 "уведомлений, воспроизведения звука, групп и т.д. Когда они удаляются из "
-"*древа сцен*, они теряют доступ."
+"*древа сцен*, они теряют этот доступ."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:106
 msgid "Tree order"
@@ -13847,7 +13811,6 @@ msgid "GDScript basics"
 msgstr "Основы GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:9
-#, fuzzy
 msgid ""
 "*GDScript* is a high-level, dynamically typed programming language used to "
 "create content. It uses a syntax similar to `Python <https://en.wikipedia."
@@ -13857,18 +13820,17 @@ msgid ""
 "creation and integration."
 msgstr ""
 "*GDScript* это высокоуровневый, динамически типизированный язык "
-"программирования. Он использует синтакс похожий на `Python <https://en."
-"wikipedia.org/wiki/Python_%28programming_language%29>`_ (блоки на табуляции "
-"и множество ключевых слов идентичны). Его цель быть оптимизированным и "
-"плотно интегрированным в движок Godot, позволяя достичь высокой гибкости в "
-"создании контента и интеграции."
+"программирования. Он использует синтаксис похожий на `Python <https://en."
+"wikipedia.org/wiki/Python_%28programming_language%29>`_ (блоки выделяются "
+"табуляцией и множество ключевых слов идентичны). Его цель быть "
+"оптимизированным и плотно интегрированным в движок Godot, позволяя достичь "
+"высокой гибкости в создании контента и интеграции."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:17
 msgid "History"
 msgstr "История"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:19
-#, fuzzy
 msgid ""
 "In the early days, the engine used the `Lua <https://www.lua.org>`__ "
 "scripting language. Lua is fast, but creating bindings to an object oriented "
@@ -13878,9 +13840,9 @@ msgid ""
 msgstr ""
 "В ранние годы в движке использовался скриптовый язык `Lua <http://www.lua."
 "org>`__. Lua работает быстро, но привязка к объектно-ориентированной системе "
-"(с помощью откатов) была сложной и медленной и занимало огромное количество "
+"(с помощью откатов) была сложной, медленной и занимала огромное количество "
 "кода. После некоторых экспериментов с `Python <https://www.python.org>`__, "
-"это оказалось также трудно внедрить."
+"его так же оказалось трудно внедрить."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:25
 msgid ""
@@ -14897,7 +14859,7 @@ msgid ""
 "assigned to, and from, a String."
 msgstr ""
 "Составной путь к узлу, используемый в основном в системе сцен. Он может быть "
-"легко переведен на строку и из нее."
+"легко переведён в строку и из неё."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:457
 msgid ":ref:`RID <class_RID>`"
@@ -16042,14 +16004,12 @@ msgstr ""
 "com/observer.html>`_ в словаре Шаблонов Игрового Программирования."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1313
-#, fuzzy
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
 "signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
 msgstr ""
-"Эти сигналы могут быть связаны с методами способом, схожим с тем, который вы "
-"используете для соединения с встроенными сигналами узлов, таких как :ref:"
-"`class_Button` или :ref:`class_RigidBody`."
+"Вы можете подключать эти сигналы к методам точно так же, как вы подключаете "
+"встроенные сигналы узлов типа :ref:`class_Button` или :ref:`class_RigidBody`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1316
 #, fuzzy
@@ -16232,6 +16192,8 @@ msgstr ""
 msgid ""
 "Remember to save the new function state, when using multiple ``yield``\\s::"
 msgstr ""
+"Не забывайте сохранять новое состояние функции при использовании нескольких "
+"``yield``\\s::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1505
 msgid "Coroutines & signals"
@@ -17542,12 +17504,17 @@ msgid ""
 "``_physics_process``, should come next. These control the object's main loop "
 "and interactions with the game engine."
 msgstr ""
+"Другие встроенные виртуальные обратные вызовы, такие как "
+"``_unhandled_input()`` и ``_physics_process``, должны следовать дальше. Они "
+"контролируют основной цикл объекта и взаимодействие с игровым движком."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
 msgstr ""
+"Остальные интерфейсы, публичные и приватные методы класса следуют далее, в "
+"указанном порядке."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:652
 #, fuzzy
@@ -20554,6 +20521,10 @@ msgid ""
 "shown above.**  This is because the version of MSBuild used requires this. "
 "(This will be fixed in Godot 4.0.)"
 msgstr ""
+"По умолчанию, утилиты вроде NuGet в качестве атрибута для "
+"```PackageReference``` используют  ``Version``. **Вы должны создать узел "
+"Version вручную как показано выше.**  Это требуется используемой версией "
+"MSBuild. (Будет исправлено в Godot 4.0.)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:264
 #, fuzzy
@@ -20568,7 +20539,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:273
 msgid "Profiling your C# code"
-msgstr ""
+msgstr "Профилирование вашего C# кода"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:275
 #, fuzzy
@@ -20602,6 +20573,10 @@ msgid ""
 "in the meantime, the steps below can let you configure VS 2019 for use with "
 "Godot C# projects."
 msgstr ""
+"Godot имеет встроенную поддержку рабочих процессов с участием нескольких "
+"популярных C# IDE. Встроенная поддержка Visual Studio будет включена в "
+"будущие версии, но пока что приведенные ниже шаги могут позволить вам "
+"настроить VS 2019 для использования с проектами Godot C#."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:288
 msgid ""
@@ -22683,7 +22658,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr "Массив"
+msgstr "Меш"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 #, fuzzy
@@ -31374,7 +31349,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:458
 msgid "Let's run again! This time, the rotation displays fine!"
-msgstr ""
+msgstr "Давайте снова запустим! На этот раз вращение отображается правильно!"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:461
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:73
@@ -77164,7 +77139,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:4
 msgid "Differences between GLES2 and GLES3"
-msgstr "Отличия между GLES3 и GLES3"
+msgstr "Отличия между GLES2 и GLES3"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:6
 msgid ""
@@ -88367,7 +88342,7 @@ msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
 
 #: ../../docs/community/tutorials.rst:45
 msgid "Devlogs"
-msgstr "Дневники разработчиков"
+msgstr "Журнал разработки"
 
 #: ../../docs/community/tutorials.rst:47
 msgid ""
@@ -88376,7 +88351,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/tutorials.rst:48
-#, fuzzy
 msgid ""
 "`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
 "vJC011lYw/videos>`_"

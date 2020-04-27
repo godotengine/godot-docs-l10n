@@ -6,7 +6,7 @@
 # Alireza Firouzi <pikhosh@gmail.com>, 2019.
 # Amir Hossein Mafi <theotheramir@gmail.com>, 2018.
 # Dante Marshal <Marshal.Devilhunter@gmail.com>, 2018.
-# Focus <saeeddashticlash@gmail.com>, 2019.
+# Focus <saeeddashticlash@gmail.com>, 2019-2020.
 # hdteav <hdteav@gmail.com>, 2019.
 # ihaveapiece <ihaveapiecemail@gmail.com>, 2020.
 # Kianoosh Safapour <kianoosh.safapour@gmail.com>, 2019.
@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-03-13 17:49+0100\n"
-"PO-Revision-Date: 2020-03-13 16:33+0000\n"
-"Last-Translator: mohamad por <mohamad24xx@gmail.com>\n"
+"PO-Revision-Date: 2020-04-23 20:22+0000\n"
+"Last-Translator: Focus <saeeddashticlash@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fa/>\n"
 "Language: fa\n"
@@ -31,19 +31,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.0.2-dev\n"
 
 #: ../../docs/index.rst:2
+#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "مستندات گودو - شاخه *اصلی*"
+msgstr "مستندات گودوت - شاخه *اصلی*"
 
 #: ../../docs/index.rst:6
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"مستندات گودو در چندین زبان و نسخه مختلف در دسترس می باشد. برای مشاهده لیست، "
-"دکمه «خواندن مستندات» در قسمت پایینی ساید بار را بفشارید."
+"اسناد godot در چندین زبان و نسخه ی مختلف در دسترس میباشد. دکمه ی \"Read the "
+"Docs\" در قسمت پایینی سایدبار را کلیک کنید تا لیست نمایان شود."
 
 #: ../../docs/index.rst:10
 msgid ""
@@ -314,7 +315,6 @@ msgstr ""
 "نوشتن یادداشتی درباره‌ی موتور Godot دارید، از آن استفاده نمایید."
 
 #: ../../docs/about/introduction.rst:38
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -498,7 +498,7 @@ msgstr "از خواندن و تولید بازی با انجین گدت(Godot) �
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "سؤالات متداول"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:42
@@ -908,6 +908,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX از طریق کتابخانه واردات دارایی باز پشتیبانی می شود. با این حال ، FBX "
+"اختصاصی است بنابراین توصیه می کنیم در صورت مناسب برای گردش کاری خود از سایر "
+"قالب های ذکر شده در بالا استفاده کنید."
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -1326,11 +1329,15 @@ msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr "چرا گودو کاربران را وادار به نصب طراحی داده‌گرا نمی‌کند؟"
 
 #: ../../docs/about/faq.rst:319
+#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as best as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
+"در حالی که گودوت در داخل برای بسیاری از کارهای سنگین عملکردی سعی در استفاده "
+"از انسجام حافظه پنهانی در حد امکان دارد ، ما معتقدیم که اکثر کاربران نیازی "
+"به مجبور به استفاده از شیوه های وزارت دفاع ندارند."
 
 #: ../../docs/about/faq.rst:323
 msgid ""
@@ -1340,12 +1347,19 @@ msgid ""
 "in, if you are moving a few hundred sprites or enemies per frame, DoD won't "
 "help you, and you should consider a different approach to optimization."
 msgstr ""
+"DoD بیشتر بهینه سازی انسجام حافظه نهان است که تنها می تواند در هنگام برخورد "
+"با ده ها هزار مورد از اشیاء (که هر فریم با کمی اصلاح پردازش می شوند) پیشرفت "
+"های چشمگیر عملکرد را به دست آورید. مانند گذشته ، اگر شما در حال حرکت چند صد "
+"طلسم یا دشمن در هر فریم هستید ، DoD به شما کمک نمی کند ، و باید رویکرد دیگری "
+"را برای بهینه سازی در نظر بگیرید."
 
 #: ../../docs/about/faq.rst:330
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"اکثریت قریب به اتفاق بازیها به این نیاز ندارند و گودوت یاران مفیدی را برای "
+"انجام این کار در بیشتر موارد هنگام انجام این کار فراهم می کند."
 
 #: ../../docs/about/faq.rst:333
 msgid ""
@@ -1353,10 +1367,13 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"اگر بازی ای که واقعاً نیاز به پردازش چنین مقدار زیادی از اشیاء داشته باشد ، "
+"لازم است ، توصیه ما استفاده از C ++ و GDNative برای قطعات با کارایی بالا و "
+"GDScript (یا C #) برای بقیه بازی ها است."
 
 #: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
-msgstr ""
+msgstr "چگونه می توانم از توسعه گودوت حمایت کنم یا مشارکت کنم؟"
 
 #: ../../docs/about/faq.rst:340
 msgid "See :ref:`doc_ways_to_contribute`."
@@ -1364,17 +1381,19 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:343
 msgid "Who is working on Godot? How can I contact you?"
-msgstr ""
+msgstr "چه کسی روی Godot کار می کند؟ چگونه می توانم با شما تماس بگیرم؟"
 
 #: ../../docs/about/faq.rst:345
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
+"صفحه مربوطه را در اینجا مشاهده کنید `Godot website <https://godotengine.org/"
+"contact>`_."
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr ""
+msgstr "تغییر مستندات"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -1383,6 +1402,10 @@ msgid ""
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"مستندات به طور مداوم در حال بهبود است. انتشار نسخه 3.1 شامل بسیاری از آموزش "
+"های جدید ، بسیاری از رفع و به روزرسانی های مربوط به آموزش های قدیمی و بسیاری "
+"از به روزرسانی های مرجع کلاس است. در زیر لیستی از آموزش های جدید اضافه شده "
+"از نسخه 3.0 وجود دارد."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -1390,16 +1413,19 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"این سند فقط حاوی آموزش های جدید است ، بنابراین همه تغییرات منعکس نمی شوند ، "
+"بسیاری از آموزش ها به طور قابل توجهی به روز شده اند اما در این سند منعکس "
+"نشده اند."
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.1"
-msgstr ""
+msgstr "آموزشهای جدید از نسخه 3.1"
 
 #: ../../docs/about/docs_changelog.rst:17
 #: ../../docs/about/docs_changelog.rst:116
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "گردش کار پروژه"
 
 #: ../../docs/about/docs_changelog.rst:19
 msgid ":ref:`doc_android_custom_build`"
@@ -1418,7 +1444,7 @@ msgstr "شرط"
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2
 msgid "Audio"
-msgstr ""
+msgstr "صدا"
 
 #: ../../docs/about/docs_changelog.rst:29
 #, fuzzy
@@ -1427,7 +1453,7 @@ msgstr "تولید محتوا"
 
 #: ../../docs/about/docs_changelog.rst:32 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr ""
+msgstr "ریاضی"
 
 #: ../../docs/about/docs_changelog.rst:34
 #, fuzzy
@@ -1442,7 +1468,7 @@ msgstr "تولید محتوا"
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
 msgid "Inputs"
-msgstr ""
+msgstr "ورودی ها"
 
 #: ../../docs/about/docs_changelog.rst:40
 #, fuzzy
@@ -1451,7 +1477,7 @@ msgstr "تولید محتوا"
 
 #: ../../docs/about/docs_changelog.rst:43 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
-msgstr ""
+msgstr "بین المللی شدن"
 
 #: ../../docs/about/docs_changelog.rst:45
 msgid ":ref:`doc_localization_using_gettext`"
@@ -1461,11 +1487,11 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:168
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr ""
+msgstr "سایه"
 
 #: ../../docs/about/docs_changelog.rst:50
 msgid "Your First Shader Series:"
-msgstr ""
+msgstr "اولین سری Shader شما:"
 
 #: ../../docs/about/docs_changelog.rst:52
 msgid ":ref:`doc_what_are_shaders`"
@@ -1486,7 +1512,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:58
 #: ../../docs/tutorials/networking/index.rst:2
 msgid "Networking"
-msgstr ""
+msgstr "شبکه سازی"
 
 #: ../../docs/about/docs_changelog.rst:60
 msgid ":ref:`doc_webrtc`"
@@ -1497,20 +1523,18 @@ msgid "VR"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr "شرط"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:66
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr "شرط"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:69
 #: ../../docs/about/docs_changelog.rst:183
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr ""
+msgstr "پلاگین ها"
 
 #: ../../docs/about/docs_changelog.rst:71
 #, fuzzy
@@ -1518,65 +1542,57 @@ msgid ":ref:`doc_android_plugin`"
 msgstr "تولید محتوا"
 
 #: ../../docs/about/docs_changelog.rst:72
-#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr "تولید محتوا"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:73
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr "تولید محتوا"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:76
 #: ../../docs/about/docs_changelog.rst:194
 #: ../../docs/tutorials/threads/index.rst:2
 msgid "Multi-threading"
-msgstr ""
+msgstr "چند رشته ای"
 
 #: ../../docs/about/docs_changelog.rst:78
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr "تولید محتوا"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:81
 #: ../../docs/about/docs_changelog.rst:199
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
-msgstr "تولید محتوا"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:88
 msgid "Procedural geometry series:"
-msgstr ""
+msgstr "سری هندسه رویه:"
 
 #: ../../docs/about/docs_changelog.rst:84
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:85
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr "تولید محتوا"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:86
-#, fuzzy
 msgid ":ref:`doc_surfacetool`"
-msgstr "تولید محتوا"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:87
-#, fuzzy
 msgid ":ref:`doc_meshdatatool`"
-msgstr "تولید محتوا"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`doc_immediategeometry`"
-msgstr "تولید محتوا"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:91
 #: ../../docs/tutorials/optimization/index.rst:2
 msgid "Optimization"
-msgstr ""
+msgstr "بهینه سازی"
 
 #: ../../docs/about/docs_changelog.rst:93
 msgid ":ref:`doc_using_multimesh`"
@@ -1589,7 +1605,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:97
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "مجاز"
 
 #: ../../docs/about/docs_changelog.rst:99
 msgid ":ref:`doc_complying_with_licenses`"
@@ -1597,14 +1613,14 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:102
 msgid "New tutorials since version 3.0"
-msgstr ""
+msgstr "آموزشهای جدید از نسخه 3.0"
 
 #: ../../docs/about/docs_changelog.rst:105
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:18
 msgid "Step by step"
-msgstr ""
+msgstr "گام به گام"
 
 #: ../../docs/about/docs_changelog.rst:107
 msgid ":ref:`doc_signals`"
@@ -1627,7 +1643,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:118
 msgid "Best Practices:"
-msgstr ""
+msgstr "بهترین روش ها:"
 
 #: ../../docs/about/docs_changelog.rst:120
 msgid ":ref:`doc_introduction_best_practices`"
@@ -1658,9 +1674,8 @@ msgid ":ref:`doc_godot_interfaces`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:127
-#, fuzzy
 msgid ":ref:`doc_godot_notifications`"
-msgstr "شرط"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:128
 msgid ":ref:`doc_data_preferences`"
@@ -1680,7 +1695,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:138 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
-msgstr ""
+msgstr "سه بعدی"
 
 #: ../../docs/about/docs_changelog.rst:140
 msgid ":ref:`doc_csg_tools`"
@@ -1697,7 +1712,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:145
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "فیزیک"
 
 #: ../../docs/about/docs_changelog.rst:147
 msgid ":ref:`doc_ragdoll_system`"
@@ -1712,7 +1727,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/index.rst:2
 #: ../../docs/development/file_formats/tscn.rst:375
 msgid "Animation"
-msgstr ""
+msgstr "انیمیشن"
 
 #: ../../docs/about/docs_changelog.rst:153
 msgid ":ref:`doc_2d_skeletons`"
@@ -1734,7 +1749,7 @@ msgstr ""
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr ""
+msgstr "بازدیدها"
 
 #: ../../docs/about/docs_changelog.rst:164
 msgid ":ref:`doc_viewport_as_texture`"
@@ -1758,7 +1773,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:174
 msgid "Shading Reference:"
-msgstr ""
+msgstr "مرجع سایه زنی:"
 
 #: ../../docs/about/docs_changelog.rst:176
 msgid ":ref:`doc_shaders`"
@@ -1781,9 +1796,8 @@ msgid ":ref:`doc_particle_shader`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:185
-#, fuzzy
 msgid ":ref:`doc_making_main_screen_plugins`"
-msgstr "تولید محتوا"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:186
 msgid ":ref:`doc_spatial_gizmo_plugins`"
@@ -1792,7 +1806,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:189
 #: ../../docs/tutorials/platform/index.rst:2
 msgid "Platform-specific"
-msgstr ""
+msgstr "پلت فرم خاص"
 
 #: ../../docs/about/docs_changelog.rst:191
 msgid ":ref:`doc_customizing_html5_shell`"
@@ -1809,7 +1823,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:204
 #: ../../docs/tutorials/misc/index.rst:2
 msgid "Miscellaneous"
-msgstr ""
+msgstr "متفرقه"
 
 #: ../../docs/about/docs_changelog.rst:206
 msgid ":ref:`doc_jitter_stutter`"
@@ -1836,7 +1850,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 #: ../../docs/development/compiling/compiling_for_uwp.rst:33
 msgid "Compiling"
-msgstr ""
+msgstr "گردآوری"
 
 #: ../../docs/about/docs_changelog.rst:214
 msgid ":ref:`doc_optimizing_for_size`"
@@ -1849,7 +1863,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:218
 #: ../../docs/development/cpp/index.rst:2
 msgid "Engine development"
-msgstr ""
+msgstr "توسعه موتور"
 
 #: ../../docs/about/docs_changelog.rst:220
 msgid ":ref:`doc_binding_to_external_libraries`"
@@ -1857,7 +1871,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr ""
+msgstr "آشنایی با ویرایشگر گودوت"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1865,10 +1879,13 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"این آموزش شما را از طریق رابط گودوت اجرا می کند. ما برای شروع کار با موتور ، "
+"به مدیر پروژه ، اسکله ها ، فضای کاری ** و همه چیزهایی که باید بدانید نیاز "
+"داریم."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
-msgstr ""
+msgstr "مدیرت پروژه"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid ""
@@ -1876,18 +1893,26 @@ msgid ""
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
+"وقتی Godot را راه اندازی می کنید ، اولین پنجره ای که مشاهده خواهید کرد مدیرت "
+"پروژه است. از آنجا که هیچ پروژه ای ندارید ، پنجره ای وجود خواهد داشت که می "
+"خواهد کتابخانه دارایی را باز کنید ، فقط روی لغو کلیک کنید ، بعداً به آن می "
+"پردازیم."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
+"حالا باید مدیرت پروژه را ببینید. این امکان را به شما می دهد تا پروژه های "
+"بازی را ایجاد ، حذف ، وارد یا بازی کنید."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
+"در گوشه بالا سمت راست ، یک منوی کشویی پیدا خواهید کرد تا زبان ویرایشگر را "
+"تغییر دهید."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid ""
@@ -1897,10 +1922,15 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
+"از برگه ** قالب ها** می توانید الگوهای پروژه منبع باز و نسخه های نمایشی را "
+"از کتابخانه دارایی بارگیری کنید تا به شما در شروع سریعتر کمک کند. فقط قالب "
+"یا نسخه ی نمایشی مورد نظر خود را انتخاب کنید ، پس از اتمام بارگیری ، روی نصب "
+"کلیک کنید و گزینه نصب را انتخاب کنید. در مورد آن می توانید اطلاعات بیشتری "
+"کسب کنید: Ref: `doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
-msgstr ""
+msgstr "ایجاد یا وارد کردن یک پروژه"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
 msgid ""
@@ -1908,12 +1938,17 @@ msgid ""
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
+"برای ایجاد یک پروژه جدید ، روی دکمه `` پروژه جدید`` در سمت راست کلیک کنید. "
+"در اینجا شما به آن اسم می دهید ، یک پوشه خالی را در رایانه خود انتخاب کنید "
+"تا در آن ذخیره شود و یک ارائه دهنده را انتخاب کنید."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
+"بر روی دکمه مرور کلیک کنید تا مرورگر پرونده Godot باز شود و یک مکان را "
+"انتخاب کنید یا مسیر پوشه را در قسمت Project Path تایپ کنید."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
 msgid ""
@@ -1922,8 +1957,12 @@ msgid ""
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
+"وقتی تیک سبز را در سمت راست می بینید ، به این معنی است که موتور یک پوشه خالی "
+"را شناسایی می کند. همچنین می توانید روی دکمه `` پوشه ایجاد کنید`` در کنار "
+"نام پروژه خود کلیک کنید و یک پوشه خالی با آن نام برای پروژه ایجاد می شود."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
+#, fuzzy
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -1931,6 +1970,11 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
+"در نهایت ، شما باید انتخاب کنید که کدام رندر برای استفاده (OpenGL ES ۳/۰ یا "
+"OpenGL ES ۲/۰). مزایا و معایب هر یک ذکر شده برای کمک به شما را انتخاب کنید, "
+"و شما می توانید مراجعه کنید به: کد عکس: ' doc_gles2_gles3_differences ' برای "
+"اطلاعات بیشتر. توجه داشته باشید که اگر بعدا نظرتان را تغییر دهید ، می توانید "
+"باطن را از تنظیمات پروژه تغییر دهید. برای این آموزش یا باطن خوب است."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid ""
@@ -2204,18 +2248,26 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
+"در واقع ، ویرایشگر Godot * * * * ویرایشگر صحنه * * است. این ابزار دارای "
+"مقدار زیادی برای ویرایش 2D و صحنه های 3D و همچنین رابط های کاربری است ، اما "
+"ویرایشگر بر اساس مفهوم ویرایش یک صحنه و گره هایی است که آن را ایجاد می کنند."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 #: ../../docs/getting_started/editor/external_editor.rst:32
 #: ../../docs/development/compiling/compiling_with_mono.rst:191
+#, fuzzy
 msgid "Editor"
-msgstr ""
+msgstr "ویرایشگر"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
+#, fuzzy
 msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
+"پروژه ای را که ساخته اید باز کنید: Ref: "
+"`doc_intro_to_the_editor_interface` ، یا یک پروژه جدید ایجاد کنید. این "
+"ویرایشگر Godot را باز می کند:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
@@ -2223,6 +2275,9 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
+"همانطور که قبلاً گفته شد ساخت بازی در گودوت مانند بودن در یک آشپزخانه است ، "
+"بنابراین بیایید یخچال را باز کنیم و گره های تازه ای به پروژه اضافه کنیم. ما "
+"با یک پیام \"Hello World\" که روی صفحه نمایش خواهیم گذاشت آغاز خواهیم کرد."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:89
 msgid ""
@@ -2232,6 +2287,11 @@ msgid ""
 "chosen node as a child of the currently selected node (or, in an empty "
 "scene, as the \"root\" node)."
 msgstr ""
+"برای این کار باید یک گره Label اضافه کنیم. دکمه \"Add Child Node\" را در سمت "
+"چپ بالای حوض صحنه فشار دهید (این نماد نمادی به علاوه است). این دکمه راه اصلی "
+"برای اضافه کردن گره های جدید به صحنه است و همیشه گره انتخاب شده را به عنوان "
+"فرزند گره انتخاب شده فعلی اضافه می کند (یا در یک صحنه خالی به عنوان گره "
+"\"root\")."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
 msgid ""
@@ -2242,14 +2302,25 @@ msgid ""
 "pressing the \"Add Child Node\" button). You can also press the star-shaped "
 "icon to toggle the display of your favorited nodes."
 msgstr ""
+"در یک صحنه خالی (بدون گره ریشه) ، dock صحنه چندین گزینه را نشان می دهد تا به "
+"سرعت یک گره ریشه را به صحنه اضافه کند. \"2D Scene\" یک گره Node2D می افزاید: "
+"\"3D Scene\" یک گره فضایی اضافه می کند ، \"User Interface\" یک گره کنترل را "
+"اضافه می کند و \"Custom Node\" که به شما امکان انتخاب هر گره (پس از آن معادل "
+"با فشار دادن دکمه \"Add Child Node\") است. شما همچنین می توانید آیکون ستاره "
+"شکل را برای تغییر صفحه نمایش گره های دلخواه خود فشار دهید."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
+#, fuzzy
 msgid ""
 "Note that these presets are here for convenience and are not mandatory for "
 "the different types of scenes. Not every 3D scene needs a Spatial node as "
 "its root node, likewise not every GUI or 2D scene needs a Control node or "
 "Node2D as their root node."
 msgstr ""
+"توجه داشته باشید که این ایستگاه از پیش تنظیم در اینجا برای راحتی است و برای "
+"انواع مختلف صحنه ها اجباری نیست. هر صحنه سه بعدی به عنوان گره ریشه ای خود به "
+"یک گره فضایی احتیاج ندارد ، به همین ترتیب هر صحنه GUI یا 2D به یک گره کنترل "
+"یا Node2D به عنوان گره ریشه ای نیاز ندارد."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
@@ -2257,22 +2328,33 @@ msgid ""
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
+"حال برای اضافه کردن یک گره برچسب به این صحنه می توانید بر روی دکمه Custom "
+"Node یا دکمه Add Node در بالا کلیک کنید. در صحنه هایی که خالی نیست از دکمه "
+"افزودن node برای ایجاد هر child node استفاده می کنید."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
+#, fuzzy
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
+"این گزینه گفتگوی ایجاد گره را باز می کند ، لیست طولانی گره هایی را که می "
+"توان ایجاد کرد نشان می دهد:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:121
+#, fuzzy
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
+"از آنجا ، ابتدا گره \"Label\" را انتخاب کنید. جستجوی آن احتمالاً سریعترین راه "
+"است:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
+#, fuzzy
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
+"و در آخر اینکه ، Label را ایجاد کنید! هنگام فشردن ایجاد بسیار اتفاق می افتد:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:130
 msgid ""
@@ -2280,24 +2362,33 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
+"اول از همه ، صحنه به ویرایشگر 2D تغییر می کند (زیرا Label یک نوع 2D Node "
+"است) و Label در گوشه بالا سمت چپ منظره ، انتخاب شده ، ظاهر می شود."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
+#, fuzzy
 msgid ""
 "The node appears in the scene tree editor in the Scene dock, and the label "
 "properties appear in the Inspector dock."
 msgstr ""
+"گره در ویرایشگر صحنه صحنه در حوض صحنه ظاهر می شود و خصوصیات برچسب در حوض "
+"بازرس ظاهر می شود."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr ""
+"مرحله بعدی تغییر ویژگی \"Text\" برچسب خواهد بود. بیایید آن را به \"Hello "
+"World\" تغییر دهیم:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit :kbd:`F6`):"
 msgstr ""
+"خوب ، همه چیز آماده برای اجرای صحنه! دکمه PLAY SCENE در نوار بالا را فشار "
+"دهید (یا ضربه: kbd: ' F6 '):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
@@ -2308,6 +2399,8 @@ msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
+"صحنه ها برای اجرا باید ذخیره شوند ، بنابراین صحنه را در چیزی مانند Hello."
+"tscn در صحنه ذخیره کنید -> ذخیره:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:155
 msgid ""
@@ -2319,16 +2412,25 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
+"و اینجاست که اتفاق خنده دار رخ می دهد. گفتگوی پرونده ، گفتگوی پرونده ویژه "
+"است و فقط به شما این امکان را می دهد تا در داخل پروژه صرفه جویی کنید. ریشه "
+"پروژه `` res: // `` است که به معنی \"مسیر منابع\" است. این بدان معنی است که "
+"پرونده ها فقط در داخل پروژه می توانند ذخیره شوند. برای آینده ، هنگام انجام "
+"عملیات پرونده سازی در گودوت ، به یاد داشته باشید که `res: //` `مسیر منبع "
+"است ، و مهم نیست که بستر یا مکان نصب باشد ، این روش برای تعیین محل قرار "
+"گرفتن پرونده های منبع از داخل بازی است."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
+"پس از صرفه جویی در صحنه و دوباره فشار دادن صحنه اجرا ، نسخه ی نمایشی \"Hello "
+"World\" در نهایت باید اجرا شود:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Success!"
-msgstr ""
+msgstr "موفقیت!"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:172
 msgid ""
@@ -2338,16 +2440,22 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
+#, fuzzy
 msgid "Configuring the project"
-msgstr ""
+msgstr "پیکربندی پروژه"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
+#, fuzzy
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
+"خوب ، وقت آن است که پروژه را پیکربندی کنید. در حال حاضر ، تنها راه اجرای "
+"چیزی اجرای صحنه فعلی است. با این حال ، پروژه ها ممکن است چندین صحنه داشته "
+"باشند ، بنابراین باید یکی از آنها صحنه اصلی باشد. این صحنه ای است که هر زمان "
+"اجرای پروژه بارگیری می شود."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""
@@ -12746,9 +12854,8 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:408
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
-#, fuzzy
 msgid "While"
-msgstr "تا زمانی که"
+msgstr "تا زمانی که(While)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
@@ -15069,9 +15176,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:378
-#, fuzzy
 msgid "Switch"
-msgstr "سوییچ"
+msgstr "سوییچ(Switch)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:380
 msgid ""

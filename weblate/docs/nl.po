@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-03-13 17:49+0100\n"
-"PO-Revision-Date: 2020-03-13 16:33+0000\n"
+"PO-Revision-Date: 2020-04-23 20:22+0000\n"
 "Last-Translator: Stijn Hinlopen <f.a.hinlopen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/nl/>\n"
@@ -37,7 +37,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.0.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -2014,7 +2014,6 @@ msgstr ""
 "project."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
-#, fuzzy
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -2022,12 +2021,12 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
-"Je kunt in deze fase ook de rendering backend selecteren (OpenGL ES 3.0 of "
-"OpenGL ES 2.0). De voor- en nadelen van elk van deze opties worden opgesomd "
-"om je te helpen kiezen, en je :ref:`doc_gles2_gles3_differences` nalezen "
-"voor meer details hierover. Merk op dat je de backend van de "
-"projectinstellingen kunt wijzigen als je later van gedachten verandert. Voor "
-"deze zelfstudie is elk van beide backend's geschikt."
+"Je dient in deze fase ook de rendering backend te selecteren (OpenGL ES 3.0 "
+"of OpenGL ES 2.0). De voor- en nadelen van elk van deze opties worden "
+"opgesomd om je te helpen kiezen, en je kunt :ref:"
+"`doc_gles2_gles3_differences` nalezen voor meer details hierover. Merk op "
+"dat je de backend van de projectinstellingen kunt wijzigen als je later van "
+"gedachten verandert. Voor deze zelfstudie zijn beide backend's geschikt."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid ""
@@ -4198,6 +4197,10 @@ msgid ""
 "signal connected to the same method, as each signal propagation will result "
 "in different values for those extra call arguments."
 msgstr ""
+"Aan de rechterkant kan je een willekeurig aantal parameters met (mogelijk) "
+"verschillende types verbinden. Dit kan handig zijn als je meer dan één "
+"signaal verbonden hebt met dezelfde methode, omdat elk uitgezonden signaal "
+"verschillende waardes voor deze parameters zal opleveren."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
@@ -4299,6 +4302,8 @@ msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
+"Een signaal kan ook optioneel een of meer parameters declareren. De namen "
+"van de parameters horen tussen haakjes:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:232
 msgid ""
@@ -4307,6 +4312,10 @@ msgid ""
 "number of arguments when you emit signals. So it's up to you to emit the "
 "correct values."
 msgstr ""
+"De parameters van het signaal verschijnen in het Knooptabblad in de editor, "
+"en Godot kan ze gebruiken om callback functies te genereren. Echter, je kan "
+"nog altijd elk aantal parameters meesturen bij het uitzenden van een "
+"signaal. Het is aan jou om ervoor te zorgen dat deze de juiste waarde hebben."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:237
 #, fuzzy
@@ -4912,7 +4921,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:426
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
-msgstr ""
+msgstr "Voeg het volgende boven in het script toe, na ``extends Area2d``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:440
 msgid ""
@@ -4921,6 +4930,11 @@ msgid ""
 "detect the collision. Select the ``Player`` node and click the \"Node\" tab "
 "next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
+"Dit definieert een zelfverklaard signaal genaamd *hit*, die door de speler "
+"uitgezonden zal worden als het tegen een vijand aanloopt. We zullen een "
+"``Area2D`` gebruiken om deze botsing te detecteren. Selecteer de ``Player`` "
+"knoop en klik op het tabblad Knoop naast het tabblad Inspecteur om een lijst "
+"met signalen te zien die de speler kan uitzenden:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:447
 msgid ""
@@ -4932,6 +4946,14 @@ msgid ""
 "automatically create a function in your player's script. This function will "
 "be called whenever the signal is emitted - it *handles* the signal."
 msgstr ""
+"Merk op dat ons zelfverklaarde signaal *hit* hier ook tussen staat! Omdat "
+"onze vijanden ``RigidBody2D`` knopen zullen zijn, willen we het signaal "
+"``body_entered( Object body )``; dit zal uitgezonden worden als een lichaam "
+"de speler raakt. Klik \"Verbinden...\" en dan weer \"Verbinden\" bij het "
+"scherm voor signaalverbinding. We hoeven niets aan deze instellingen te "
+"veranderen - Godot zal automatisch een methode in het script van de speler "
+"plaatsen. Deze methode zal aangeroepen worden telkens als het bijbehorende "
+"signaal wordt uitgezonden - het signaal wordt zo \"afgehandelt\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:456
 msgid ""
@@ -4939,10 +4961,13 @@ msgid ""
 "you can also give the name of an existing function that you want to link the "
 "signal to."
 msgstr ""
+"Bij het verbinden van een signaal, kan je, in plaats van Godot een methode "
+"te laten aanmaken, ook zelf de naam van een bestaande methode geven waar je "
+"het signaal mee wilt verbinden."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:460
 msgid "Add this code to the function:"
-msgstr ""
+msgstr "Voeg deze code toe aan de methode:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:479
 msgid ""
@@ -4950,6 +4975,9 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"Elke keer dat de vijand de speler zal raken, zal het signaal uitgezonden "
+"worden. We moeten het botsingselement van de speler uitschakelen, zodat we "
+"het ``hit`` signaal slechts één keer uitzenden."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:483
 msgid ""
@@ -4957,16 +4985,23 @@ msgid ""
 "middle of the engine's collision processing. Using ``set_deferred()`` allows "
 "us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"Het uitschakelen van het botsingselement van een ``Area2D`` kan een fout "
+"veroorzaken als het gebeurt terwijl de *engine* bezig is met de botsingen te "
+"berekenen. Door ``set_deferred()`` kunnen we Godot laten wachten met het "
+"uitschakelen van het element totdat het veilig is."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:488
 msgid ""
 "The last piece for our player is to add a function we can call to reset the "
 "player when starting a new game."
 msgstr ""
+"De laatste stap voor onze speler is om een methode toe te voegen die we "
+"kunnen aanroepen om de speler terug te zetten op beginwaardes bij het "
+"starten van een nieuw spel."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:509
 msgid "Enemy scene"
-msgstr ""
+msgstr "Vijandscène"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:511
 msgid ""
@@ -4975,48 +5010,59 @@ msgid ""
 "the screen and move in a random direction in a straight line, then despawn "
 "when they go offscreen."
 msgstr ""
+"Nu is het tijd om de vijanden te maken die onze speler zal moeten ontwijken. "
+"Hun gedrag zal niet erg intelligent zijn: monsters zullen willekeurig aan de "
+"randen van het scherm opkomen, in een willeurige richting lopen en "
+"verdwijnen als ze buiten het scherm gaan."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:516
 msgid ""
 "We will build this into a ``Mob`` scene, which we can then *instance* to "
 "create any number of independent mobs in the game."
 msgstr ""
+"We zullen dit in een scène genaamd *Mob* bouwen, die we we dan kunnen "
+"\"instantiëren\" om een gewenst aantal onafhankelijke vijanden in het spel "
+"te brengen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:520
 msgid "Node setup"
-msgstr ""
+msgstr "Knoop instellen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:522
 msgid "Click Scene -> New Scene and we'll create the Mob."
-msgstr ""
+msgstr "Klik op Scène -> Nieuwe scene en dan kunnen we de *Mob* maken."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:524
 msgid "The Mob scene will use the following nodes:"
-msgstr ""
+msgstr "De Mob-scène zal de volgende knopen gebruiken:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:526
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (genaamd ``Mob``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:528
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
-msgstr ""
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:529
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
-msgstr ""
+msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:530
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
 msgstr ""
+":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
+"``Visibility``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:532
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
 msgstr ""
+"Vergeet niet om aan te vinken dat de kinderknopen niet geselecteerd kunnen "
+"worden, zoals je ook in de ``Player`` scène hebt gedaan."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:535
 msgid ""
@@ -5025,6 +5071,10 @@ msgid ""
 "``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
+"In de :ref:`RigidBody2D <class_RigidBody2D>` eigenschappen, zet``Gravity "
+"Scale`` op ``0``, dan zal de vijand niet naar beneden vallen. Vervolgens, in "
+"het ``PhysicsBody2D`` gedeelte, klik op ``Mask`` en deactiveer het eerste "
+"vakje. Nu zullen de vijanden niet met elkaar botsen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:542
 msgid ""
@@ -5034,17 +5084,26 @@ msgid ""
 "\"Speed (FPS)\" setting as shown below. We'll select one of these animations "
 "randomly so that the mobs will have some variety."
 msgstr ""
+"Zet de :ref:`AnimatedSprite <class_AnimatedSprite>` net zoals je voor de "
+"speler hebt gedaan. Deze keer hebben we drie animaties: ``fly``, ``swim``, "
+"and ``walk``. Zet de ``Playing`` eigenschap in het Inspecteurtabblad op \"Aan"
+"\" en stel de afspeelsnelheid  \"Speed (FPS)\" zoals hieronder weergegeven. "
+"We zullen één van deze animaties willekeurig selecteren zodat de vijanden "
+"wat variatie hebben."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:549
 msgid ""
 "``fly`` should be set to 3 FPS, with ``swim`` and ``walk`` set to 4 FPS."
-msgstr ""
+msgstr "``fly`` hoort op 3 FPS te staan, en ``swim`` and ``walk`` op 4 FPS."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:551
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
+"Net als de afbeeldingen bij de speler, kunnen de afbeeldingen van de "
+"vijanden verkleind worden. Zet de ``Scale`` van ``AnimatedSprite`` op "
+"``(0.75, 0.75)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:554
 msgid ""
@@ -5052,14 +5111,19 @@ msgid ""
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
 "property to ``90`` under ``Node2D``."
 msgstr ""
+"Net als in de ``Player`` scène, voeg een ``CapsuleShape2D`` toe voor het "
+"botsen. Om de vorm te laten passen bij de afbeelding, moet je de eigenschap "
+"``Rotation Degrees`` onder ``Node2D`` op ``90`` zetten."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:559
 msgid "Enemy script"
-msgstr ""
+msgstr "Vijand script"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:561
 msgid "Add a script to the ``Mob`` and add the following member variables:"
 msgstr ""
+"Voeg een script aan de ``Mob`` toe en zet de volgende variabelen in het "
+"script:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid ""
@@ -5070,12 +5134,20 @@ msgid ""
 "sure you've spelled these the same in the script and in the SpriteFrames "
 "resource."
 msgstr ""
+"Wanneer we een monster in de scène brengen, zullen we een willekeurig getal "
+"tussen ``min_speed`` en ``max_speed`` kiezen, die bepaalt hoe snel een "
+"monster zal bewegen (het zou saai zijn als ze allemaal even snel liepen). "
+"Verder hebben we een lijst ``mob_types`` met de namen van drie animaties, om "
+"een willekeurige animatie te selecteren. Zorg ervoor dat je dezelfde namen "
+"gebruikt als in de ``SpriteFrames`` bron."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:593
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we randomly choose "
 "one of the three animation types:"
 msgstr ""
+"Laten we nu eens kijken naar de rest van het script. in ``_ready()`` kiezen "
+"we èèn van de drie animaties:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:612
 msgid ""
@@ -5084,6 +5156,10 @@ msgid ""
 "``randomize()`` in our ``Main`` scene, so we won't need it here. ``randi() % "
 "n`` is the standard way to get a random integer between ``0`` and ``n-1``."
 msgstr ""
+"Om bij het spelen van de scène andere \"willekeurige\" getallen te krijgen, "
+"moet je eerst ``randomize()`` aanroepen. We zullen dat later in ``Main`` "
+"doen, dus hoeft het niet hier. ``randi() % n`` is de standaard manier om een "
+"willekeurig geheel getal tussen *0* en *n-1* te krijgen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:618
 msgid ""
@@ -5091,10 +5167,13 @@ msgid ""
 "screen. Connect the ``screen_exited()`` signal of the ``Visibility`` node "
 "and add this code:"
 msgstr ""
+"Het laatste wat nog gedaan moet worden is om de monsters zichzelf te laten "
+"verwijderen als ze buiten het scherm gaan. Verbind het ``screen_exited()`` "
+"signaal van de ``Visibility`` knoop en voeg deze code toe:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:635
 msgid "This completes the `Mob` scene."
-msgstr ""
+msgstr "Hiermee is de ``Mob`` scène afgerond."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:638
 #, fuzzy
@@ -5107,6 +5186,10 @@ msgid ""
 "`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
 "your saved ``Player.tscn``."
 msgstr ""
+"Nu is het tijd om het allemaal bij elkaar te brengen. Maak een nieuwe scène "
+"aan en voeg een :ref:`knoop<class_Node>` genaamd ``Main`` toe. Klik op de "
+"\"Instantiëer\" knop en selecteer de ``Player.tscn`` scène die je had "
+"opgeslagen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:646
 msgid "See :ref:`doc_instancing` to learn more about instancing."

@@ -17,6 +17,7 @@
 # chillhelm <wilhelm@neubert.online>, 2018.
 # Christoph Brosch <christoph.brosch@outlook.de>, 2019.
 # Constantin <commandr@gmx.net>, 2019.
+# Cornelia <cornelia.pelech@gmail.com>, 2020.
 # DafabHoid <github@dafabhoid.de>, 2018.
 # DagobertDev <mannesdavid@protonmail.com>, 2019.
 # DarioPi <ddtyphos@gmail.com>, 2020.
@@ -109,8 +110,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-03-13 17:49+0100\n"
-"PO-Revision-Date: 2020-03-13 16:32+0000\n"
-"Last-Translator: PagDev <pag.develop@gmail.com>\n"
+"PO-Revision-Date: 2020-04-17 06:45+0000\n"
+"Last-Translator: Cornelia <cornelia.pelech@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -118,7 +119,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.0.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -2164,16 +2165,14 @@ msgid "Your first look at Godot’s editor"
 msgstr "Dein erster Blick auf Godots Editor"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
 "Willkommen bei Godot! Sobald Du Dein Projekt geöffnet hast, solltest Du die "
-"Oberfläche des Editors mit aktivem 3D-Arbeitsbereich sehen. Du kannst den "
-"aktuellen Arbeitsbereich am oberen Bildschirmrand der Oberfläche wechseln. "
-"Klicke auf 2D, um in den 2D-Arbeitsbereich zu schalten."
+"Oberfläche des Editors mit den Menüs ganz oben und den Werkzeugleisten am "
+"linken und rechten Rand des Arbeitsbereichs sehen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
@@ -2185,22 +2184,17 @@ msgstr ""
 "Kontrollschaltflächen zum **Testen und Debuggen des Projekts**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you’ll manage your project files and assets."
-msgstr ""
-"Auf der unteren linken Seite befindet sich die **Dateienansicht**, wo Sie "
-"Ihre Projektdateien und Assets verwalten können."
+msgstr "Im **Dateisystem-Panel** werden Projektdateien sowie Assets verwaltet."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
-#, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene’s content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"Auf der rechten Seite befindet sich das andockbare **Szene**-Fenster, das "
-"den Inhalt der aktiven Szene auflistet sowie den (ebenfalls andockbaren) "
-"**Inspektor** in der rechten unteren Ecke."
+"Das **Szenen-Dock**listet den Inhalt der aktuellen Szene auf und der "
+"**Inspektor** erlaubt das Verwalten der Eigenschaften des Szeneninhalts."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid ""
@@ -2612,13 +2606,12 @@ msgstr ""
 "des Ansichtsfensters."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
-#, fuzzy
 msgid ""
 "The node appears in the scene tree editor in the Scene dock, and the label "
 "properties appear in the Inspector dock."
 msgstr ""
-"Der Node erscheint als neuer Eintrag im Szenenbaum (oben rechts) und die "
-"Label-Eigenschaften werden im Inspektor aufgeführt (unten rechts)."
+"Der Knoten erscheint als neuer Eintrag im Szenenbaum-Editor im Szenen Panel "
+"und die Label-Eigenschaften werden im Inspektor Panel angezeigt."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
@@ -2915,14 +2908,13 @@ msgid "Multiple instances"
 msgstr "Mehrere Instanzen"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
-#, fuzzy
 msgid ""
 "You can add as many instances as you like to a scene, either by using the "
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (:kbd:`Ctrl + D`):"
 msgstr ""
 "Du kannst der Szene so viele Instanzen hinzufügen wie du möchtest. Drücke "
-"dazu wieder den\"Instanziieren\" Schaltfläche, oder klicke auf die "
+"dazu wieder die \"Instanzieren\" Schaltfläche, oder klicke auf die "
 "Ballinstanz und drücke \"Duplizieren\" (Ctrl-D):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
@@ -3481,13 +3473,12 @@ msgid "Scene setup"
 msgstr "Eine Szene einrichten"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
-#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
 "Verwende den Dialog \"Node hier anhängen\", auf den über die Registerkarte "
-"\"Szene\" (oder durch Drücken von ``Strg + A``) zugreifen werden kann, um "
+"\"Szene\" (oder durch Drücken von ``Strg + A``) zugegriffen werden kann, um "
 "eine Hierarchie mit den folgenden Nodes zu erstellen:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
@@ -10721,12 +10712,17 @@ msgid ""
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
 "the alpha channel."
 msgstr ""
+"``Color(1.0, 1.0, 1.0)`` entspricht hier Weiß. Das vierte Argument, "
+"entsprechend ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, ist "
+"der Alphakanal."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
 msgstr ""
+"Danach müssen wir die Methode ``interpolate_property`` des ``Tween``-Knoten "
+"erneut aufrufen:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
 msgid ""

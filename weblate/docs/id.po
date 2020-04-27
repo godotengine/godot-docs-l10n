@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-03-13 17:49+0100\n"
-"PO-Revision-Date: 2020-03-13 16:33+0000\n"
-"Last-Translator: Nenza Nurfirmansyah <nnurfirmansyah@gmail.com>\n"
+"PO-Revision-Date: 2020-03-30 17:01+0000\n"
+"Last-Translator: Sofyan Sugianto <sofyanartem@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -2047,14 +2047,14 @@ msgid "Your first look at Godot’s editor"
 msgstr "Penglihatan pertama anda melihat ke Godot editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"Selamat datang ke Godot! Dengan project anda terbuka, anda seharusnya "
-"melihat antar muka editor dengan Dock kosong disisi kiri."
+"Selamat datang di Godot! Dengan proyek Anda terbuka, Anda akan melihat "
+"antarmuka editor dengan menu di bagian atas antarmuka dan dock di sepanjang "
+"ujung antarmuka yang jauh di kedua sisi viewport."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
@@ -2065,21 +2065,19 @@ msgstr ""
 "and the **playtest buttons**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you’ll manage your project files and assets."
 msgstr ""
-"Disisi bawah kiri, anda punya **FileSystem dock**, dimana anda mengatur "
-"berkas projek dan asset anda."
+"**Dock Sistem Berkas** merupakan tempat untuk mengelola berkas proyek dan "
+"aset Anda."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
-#, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene’s content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"Disisi kanan, anda menemukan **Scene dock**, dimana daftar konten scene yang "
-"aktif dan **Inspector** dipojok bawah kanan."
+"**Dock Skena** menampilkan konten skena aktif dan **Inspektor** memungkinkan "
+"pengelolaan properti konten skena."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid ""
@@ -2112,24 +2110,23 @@ msgstr ""
 "Anda bisa melihat 4 tombol area kerja diatas: 2D, 3D, Script dan AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
-#, fuzzy
 msgid ""
 "You’ll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
-"Anda akan menggunakan **2D workspace** untuk semua tipe games. Dengan "
-"tambahan untuk game 2D, area kerja 2D ialah dimana anda akan "
-"membuild(bangun) antar muka. Tekan F1 untuk mengaksesnya."
+"Anda perlu memakai **area kerja 2D** untuk semua tipe gim. Sebagai tambahan "
+"untuk gim 2D, area kerja 2D ialah dimana Anda akan membangun antarmuka. "
+"Tekan :kbd:`F1` (atau :kbd:`Alt + 1` di macOS) untuk mengaksesnya."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
-"Di **3D workspace**, anda bisa bergelut dengan meshes, cahaya, dan level "
-"design untuk 3D game. Tekan F2 untuk mengaksesnya."
+"Di **area kerja 3D**, Anda bisa bekerja menggunakan mesh, cahaya, dan "
+"mendesain level untuk gim 3D. Tekan :kbd:`F2` (atau :kbd:`Alt + 2` di macOS) "
+"untuk mengaksesnya."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
@@ -2147,15 +2144,15 @@ msgstr ""
 "workspace**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
-#, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
 "+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
 msgstr ""
-"**Script** area kerja merupakan kode editor lengkap dengan debugger, kaya "
-"code auto-completion, dan referensi kode bawaan. Tekan F3 untuk "
-"mengaksesnya, dan F4 untuk mencari referensi."
+"Area kerja **Skrip** merupakan editor kode yang dilengkapi dengan "
+"pengawakutu, kaya akan penyelesaian kode otomatis, dan referensi kode yang "
+"sudah tertanam. Tekan :kbd:`F3` (atau :kbd:`Alt + 3` di macOS) untuk "
+"mengaksesnya, dan :kbd:`F4` untuk mencari referensi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
@@ -2829,6 +2826,11 @@ msgid ""
 "to make it unique. Click on the down arrow and select \"Make Unique\". Set "
 "its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
+"Anda juga dapat menyesuaikan setiap instance. Atur nilai pantulan kembali ke "
+"`` 0`` dan kemudian dalam skena`` Main``, pilih salah satu bola yang di-"
+"instance. Sumber daya seperti `` PhysicsMaterial`` akan dibagikan antar "
+"instance secara baku, jadi kita harus membuatnya unik. Klik panah bawah dan "
+"pilih \"Jadikan Unik\". Atur ``Pantulan`` ke `` 1`` dan tekan \"Mainkan\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:116
 msgid ""
@@ -2839,6 +2841,12 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
+"Perhatikan bahwa tombol abu-abu \"pulihkan\" muncul di sebelah properti yang "
+"disesuaikan. Ketika tombol ini hadir, itu berarti Anda memodifikasi properti "
+"di skena yang di-instance untuk mengganti nilainya dalam skena yang "
+"disimpan. Bahkan jika properti itu diubah di skena aslinya, nilai ubahannya "
+"akan tetap ada. Menekan tombol pulihkan akan mengembalikan properti ke nilai "
+"dalam skena yang disimpan."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:124
 #: ../../docs/getting_started/step_by_step/signals.rst:263
@@ -2853,10 +2861,13 @@ msgid ""
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_instancing_continued`."
 msgstr ""
+"Instancing dapat berguna ketika Anda ingin membuat banyak salinan dari objek "
+"yang sama. Dimungkinkan juga untuk membuat instance dalam kode dengan "
+"menggunakan GDScript, lihat: ref: `doc_instancing_continued`."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
-msgstr ""
+msgstr "Instancing (lanjutan)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
@@ -2865,20 +2876,25 @@ msgstr "Ikhtisar"
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
 msgstr ""
+"Instancing memiliki banyak kegunaan praktis. Sekilas, dengan instancing Anda "
+"memiliki:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
 msgstr ""
+"Kemampuan untuk memecah skena dan membuatnya lebih mudah untuk dikelola."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
-msgstr ""
+msgstr "Alat untuk mengelola dan menyunting beberapa instance node sekaligus."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:13
 msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
+"Cara untuk mengatur dan menanamkan alur permainan yang kompleks atau bahkan "
+"UI (dalam Godot, Elemen UI merupakan node juga)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:17
 msgid "Design language"
@@ -2890,6 +2906,10 @@ msgid ""
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
+"Tetapi kekuatan terbesar yang hadir dengan meng-instansi skena adalah bahwa "
+"itu bekerja sebagai bahasa desain yang sangat baik. Ini membedakan Godot "
+"dari semua mesin lain di luar sana. Godot dirancang dari bawah ke atas di "
+"sekitar konsep ini."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -2899,10 +2919,17 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
+"Ketika membuat gim dengan Godot, pendekatan yang direkomendasikan adalah "
+"mengabaikan semua pola desain yang umumnya berlaku, seperti MVC atau ERD "
+"(Entity Relationship Diagram), dan sebaliknya pikirkan tentang skena Anda "
+"dengan cara yang lebih natural. Mulailah dengan membayangkan elemen yang "
+"terlihat dalam gim Anda, elemen-elemen yang dapat dinamai bukan hanya oleh "
+"seorang programmer, tetapi oleh siapapun."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:30
 msgid "For example, here's how a simple shooter game could be imagined:"
 msgstr ""
+"Sebagai contoh, berikut ini cara membayangkan gim tembak-tembakan sederhana:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:34
 msgid ""
@@ -2910,6 +2937,10 @@ msgid ""
 "down the parts of the game that you can visualize, and then add arrows to "
 "represent ownership of one component by another."
 msgstr ""
+"Anda dapat membuat diagram seperti ini untuk hampir semua jenis gim. "
+"Tuliskan bagian-bagian gim yang dapat Anda visualisasikan, lalu tambahkan "
+"panah untuk merepresentasikan kepemilikan dari setiap komponen oleh komponen "
+"lainnya."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:38
 msgid ""
@@ -2918,6 +2949,10 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"Setelah Anda memiliki diagram seperti ini, rekomendasi proses untuk membuat "
+"gim adalah membuat skena untuk tiap elemen yang terdaftar dalam diagram. "
+"Anda akan menggunakan instancing (baik dengan kode atau langsung dari "
+"editor) untuk hubungan kepemilikan."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
 msgid ""
@@ -2929,12 +2964,22 @@ msgid ""
 "design based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
+"Banyak waktu yang dialokasikan dalam memrogram gim (atau dalam perangkat "
+"lunak secara umum) adalah mendesain arsitektur dan menyesuaikan komponen gim "
+"ke dalam arsitektur itu. Mendesain berdasarkan skena menggantikan pendekatan "
+"itu dan membuat pengembangan lebih cepat dan mudah, memungkinkan Anda untuk "
+"bisa fokus dalam membangun logika gim itu sendiri. Karena sebagian besar "
+"komponen gim dipetakan secara langsung dalam satu skena, menggunakan acuan "
+"desain dalam instansiasi skena berarti semakin sedikit kode arsitektural "
+"yang diperlukan."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:48
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
+"Mari kita lihat satu lagi, contoh yang lebih kompleks, dari jenis gim *open-"
+"world* dengan segunung aset dan elemen bersarang:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:53
 msgid ""
@@ -2943,6 +2988,10 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"Lihatlah elemen ruangan. Katakanlah kita mulai dari sana. Kita bisa membuat "
+"beberapa skena ruangan yang berbeda, dengan penataan furnitur (juga skena) "
+"yang berbeda pula. Lalu, kita bisa membuat skena rumah, menghubungkan "
+"ruangan-ruangan itu menjadi sebuah interior."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:58
 msgid ""
@@ -2950,6 +2999,9 @@ msgid ""
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"Lalu, kita bisa membuat skena benteng (citadel), yang terdiri dari banyak "
+"rumah yang di-instance. Lalu, kita bisa mulai mengerjakan medan peta dunia, "
+"menambahkan benteng ke dalamnya."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:62
 msgid ""
@@ -2957,6 +3009,9 @@ msgid ""
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"Lalu, kita bisa membuat skena yang merepresentasikan penjaga (dan NPC lain) "
+"dan menambahkannya ke dalam benteng juga. Akibatnya, mereka akan langsung "
+"ditambahkan ke dunia gim secara keseluruhan."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:66
 msgid ""
@@ -2967,10 +3022,16 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"Dengan Godot, mudah untuk beralih ke gim Anda seperti ini, karena yang perlu "
+"Anda lakukan hanyalah membuat dan membuat lebih banyak skena. Selain itu, "
+"editor UI dirancang seramah mungkin dengan pengguna untuk *programmer* dan "
+"*non-programmer*. Proses pengembangan tim yang khas dapat melibatkan seniman "
+"2D atau 3D, desainer level, desainer game, dan animator, semuanya bekerja "
+"dengan antarmuka editor."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"
-msgstr ""
+msgstr "Informasi berlebihan!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:75
 msgid ""
@@ -2978,6 +3039,9 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"Ini sudah banyak informasi tingkat tinggi yang jatuh pada Anda sekaligus. "
+"Namun, bagian penting dari tutorial ini adalah untuk menciptakan kesadaran "
+"tentang bagaimana skena dan *instancing* digunakan dalam proyek nyata."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:79
 msgid ""
@@ -2985,6 +3049,9 @@ msgid ""
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and go on to the next tutorial!"
 msgstr ""
+"Semua yang dibahas di sini akan menjadi kebiasaan Anda setelah Anda mulai "
+"membuat gim dan menerapkan konsep-konsep ini. Untuk saat ini, jangan terlalu "
+"khawatir tentang hal itu, dan lanjutkan ke tutorial selanjutnya!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
 msgid ""
@@ -2992,12 +3059,18 @@ msgid ""
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
+"Sebelum Godot 3.0, salah satu pilihan untuk memrogram gim dengan "
+"menggunakan :ref:`GDScript<doc_gdscript>`. Sekarang, Godot memiliki empat "
+"(ya, empat!) bahasa resmi dan memungkinkan untuk menambahkan bahasa "
+"pemrograman tambahan secara dinamis!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
+"Ini hebat, sebagian besar karena banyaknya fleksibilitas yang diberikan, "
+"tetapi juga membuat pekerjaan kami mendukung bahasa lebih sulit."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
 msgid ""
@@ -3007,6 +3080,11 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
+"Bahasa \"utama\" di Godot, adalah GDScript dan VisualScript. Alasan utama "
+"untuk memilih mereka adalah tingkat integrasi mereka dengan Godot, karena "
+"ini membuat pengalaman lebih lancar; keduanya memiliki integrasi editor yang "
+"bagus, sementara C# dan C++ perlu diedit dalam IDE yang terpisah. Jika Anda "
+"adalah penggemar berat bahasa yang diketik secara statis, gunakan C# dan C++."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 #: ../../docs/getting_started/scripting/gdscript/index.rst:2
@@ -3022,7 +3100,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:329
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:101
 msgid "GDScript"
-msgstr ""
+msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
 msgid ""
@@ -3030,28 +3108,39 @@ msgid ""
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
+":ref:`GDScript<doc_gdscript>`adalah, seperti dijelaskan di atas, bahasa "
+"utama yang digunakan dalam Godot. Menggunakan ini memiliki kelebihan "
+"tersendiri dibandingkan dengan bahasa lain karena integrasinya yang tinggi "
+"dengan Godot:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
 "It's simple, elegant, and designed to be familiar for users of other "
 "languages such as Lua, Python, Squirrel, etc."
 msgstr ""
+"Simpel, elegan, dan dirancang untuk lebih akrab bagi pengguna bahasa lain "
+"seperti Lua, Python, Squirrel, dll."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
 msgid "Loads and compiles blazingly fast."
-msgstr ""
+msgstr "Pemuatan dan kompilasinya sangat cepat."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
 "The editor integration is a pleasure to work with, with code completion for "
 "nodes, signals, and many other items pertaining to the scene being edited."
 msgstr ""
+"Integrasi editor sangat menyenangkan untuk dikerjakan, dengan penyelesaian "
+"kode untuk node, sinyal, dan banyak item lain yang berkaitan dengan skena "
+"yang sedang disunting."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:31
 msgid ""
 "Has vector types built-in (such as Vectors, transforms, etc.), making it "
 "efficient for heavy use of linear algebra."
 msgstr ""
+"Memiliki tipe vektor bawaan (seperti Vektor, transformasi, dll.), membuatnya "
+"efisien untuk penggunaan aljabar linier yang berat."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
 msgid ""

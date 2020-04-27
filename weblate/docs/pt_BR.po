@@ -24,6 +24,7 @@
 # Claudio Eden <claudio.eden@gmail.com>, 2018.
 # Cochise César <cochisecesar@gmail.com>, 2018.
 # Danilo Castro <danilo.moreira94@gmail.com>, 2018.
+# Danilo Mendonça de Oliveira <danilo.mo@live.com>, 2020.
 # Davi <wokep.ma.wavid@gmail.com>, 2019.
 # Deyvid Lopes <deyvidyury@yahoo.com.br>, 2019.
 # Diego Schmidt <diegophh@gmail.com>, 2018.
@@ -56,6 +57,7 @@
 # Ian Pontes Louzada <ianlouzad4@gmail.com>, 2019.
 # Ivan Camargo dos Santos <camargo65@gmail.com>, 2019.
 # Jairo <jairom@protonmail.ch>, 2019.
+# Jairo Tuboi <tuboi.jairo@gmail.com>, 2020.
 # Jessé Silva <starclock@gmail.com>, 2018.
 # João Victor Lima <victordevtb@outlook.com>, 2018.
 # Joaquim Ferreira <joaquimferreira1996@bol.com.br>, 2018-2020.
@@ -71,6 +73,7 @@
 # Leonardo Dimano <leodimano@live.com>, 2020.
 # Leonardo Nyanko Desu <leonardo.sensei2@gmail.com>, 2019.
 # Leonardo Ramos <ranyor@gmail.com>, 2019.
+# Lucas Araujo <lucassants2808@gmail.com>, 2020.
 # Lucas Motizuki <motizukilucas@gmail.com>, 2019.
 # Lucas Prado <lucade238oficial@gmail.com>, 2018.
 # LucasSouza6 <lucasosouza66@gmail.com>, 2018.
@@ -87,6 +90,7 @@
 # Matheus <matheus.cumpian@hotmail.com>, 2018.
 # Matheus Moutinho Vieira <mmoutinhov@gmail.com>, 2019.
 # Matheus Paiva <matheus75679@gmail.com>, 2019.
+# Matheus Pesegoginski <pese.ek.tk@outlook.com>, 2020.
 # Matheus Victor <matheusvictor870@gmail.com>, 2018.
 # Mathias de Andrade <mathiastj30@gmail.com>, 2020.
 # Mauricio Luan Carneiro deSouza <newmailmlcs@gmail.com>, 2018.
@@ -128,11 +132,13 @@
 # Thiago R. Silvestrini <thiagorossi.s@gmail.com>, 2018.
 # Tiago Almeida <thyagoeap@gmail.com>, 2019.
 # Tiago A. Reul <tiago@reul.space>, 2018.
+# uMarl <deolindojvn@gmail.com>, 2020.
 # Vinícius Girotto <vinicius.victor.girotto@gmail.com>, 2019.
 # Vinicius Silva da Cruz <lordehenry@gmail.com>, 2019.
 # Vito Chiarella <vitochiarella@gmail.com>, 2018.
 # Walrus Bane <Walrusbane524@gmail.com>, 2018.
 # Walter Bolitto <wrcarval@live.com>, 2018.
+# Wellyngton R Weller <well.weller@hotmail.com>, 2020.
 # Wesley <wsplay357@gmail.com>, 2019.
 # William Batista Costa <costa.williambatista@gmail.com>, 2019.
 # Wow Bitch <hahaj@itmailr.com>, 2019.
@@ -144,8 +150,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-03-13 17:49+0100\n"
-"PO-Revision-Date: 2020-02-25 09:42+0000\n"
-"Last-Translator: Fupi Brazil <fupicat@gmail.com>\n"
+"PO-Revision-Date: 2020-04-27 08:41+0000\n"
+"Last-Translator: Joaquim Ferreira <joaquimferreira1996@bol.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -153,7 +159,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.0.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -2184,15 +2190,14 @@ msgid "Your first look at Godot’s editor"
 msgstr "Seu primeiro olhar no editor do Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"Bem-vindo ao Godot! Com seu projeto aberto, você vai ver a interface do "
-"editor com a vista 3D ativa. Você pode alterar o espaço de trabalho atual no "
-"topo da interface. Clique no 2D para trocar para o espaço de trabalho 2D."
+"Bem-vindo(a) ao Godot! Com seu projeto aberto, você verá a interface do "
+"editor com menus ao longo do topo da interface e painéis ao ao longo de "
+"ambas as extremidades laterais da janela de exibição."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
@@ -2203,21 +2208,19 @@ msgstr ""
 "as **workspaces** e os **botões de teste**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you’ll manage your project files and assets."
 msgstr ""
-"No lado esquerdo, a baixo, você tem o **Painel Arquivos**, onde você vai "
-"gerenciar seus arquivos do projeto e assets."
+"O **Painel Arquivos** é onde você vai gerenciar seus recursos e arquivos do "
+"projeto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
-#, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene’s content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"À direita, você encontra o **Painel de cenas**, que lista o conteúdo da cena "
-"ativa, e também o **Inspetor**, no canto inferior direito."
+"O **Painél de Cenas** lista o conteúdo da cena ativa e o **Inspetor** "
+"permite o gerenciamento das propriedades do conteúdo da Cena."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid ""
@@ -2251,24 +2254,24 @@ msgstr ""
 "AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
-#, fuzzy
 msgid ""
 "You’ll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
 "Você usará o **Espaço de trabalho 2D** para todos os tipos de jogos. Além de "
-"jogos 2D, ele é onde você constrói suas interfaces. Pressione F1 para acessá-"
-"lo."
+"ser onde os jogos 2D são desenvolvidos, este espaço de trabalho é onde você "
+"pode criar as suas interfaces de usuário (UI). Pressione F1 (ou :kbd:`Alt + "
+"1` no macOS) para acessá-lo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
-"No **Espaço de Trabalho 3D**, você pode trabalhar com malhas e luzes e "
-"projetar de níveis para jogos 3D. Pressione F2 para acessá-lo."
+"No **Espaço de Trabalho 3D**, você pode trabalhar com malhas, luzes e "
+"projetar níveis para jogos 3D. Pressione :kbd:`F2` (ou :kbd:`Alt + 2` no "
+"macOS) para acessá-lo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
@@ -2286,15 +2289,15 @@ msgstr ""
 "Trabalho 3D**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
-#, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
 "+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
 msgstr ""
 "O espaço de trabalho **Script** é um editor de código completo, com um "
-"depurador, uma rica completação automática e referência de código embutida. "
-"Pressione F3 para acessá-lo e F4 para pesquisar na referência."
+"depurador, um rico auto-completar e referência de código embutida. "
+"Pressione :kbd:`F3`(ou :kbd:`Alt + 3` no macOS) para acessá-lo e :kbd:`F4` "
+"para pesquisar na referência."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
@@ -2621,14 +2624,12 @@ msgstr ""
 "vista."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
-#, fuzzy
 msgid ""
 "The node appears in the scene tree editor in the Scene dock, and the label "
 "properties appear in the Inspector dock."
 msgstr ""
-"O nó aparece no editor de árvore da cena (caixa no canto superior direito), "
-"e as propriedades do rótulo aparecem no Inspetor (caixa no cano inferior "
-"direito)."
+"O nó aparece no editor da árvore de Cenas, e o rótulo propriedades aparece "
+"no painél Inspetor."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
@@ -2639,13 +2640,12 @@ msgstr ""
 "para \"Olá, mundo!\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
-#, fuzzy
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit :kbd:`F6`):"
 msgstr ""
-"Certo, tudo está pronto para executar a cena! Pressione o botão RODAR CENA "
-"na barra superior (ou pressione F6):"
+"Certo, tudo pronto para executar a cena! Pressione o botão RODAR CENA na "
+"barra superior (ou pressione :kbd:`F6`):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
@@ -2916,15 +2916,14 @@ msgid "Multiple instances"
 msgstr "Múltiplas Instâncias"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
-#, fuzzy
 msgid ""
 "You can add as many instances as you like to a scene, either by using the "
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (:kbd:`Ctrl + D`):"
 msgstr ""
-"Você pode adicionar quantas instâncias quiser a uma cena, seja usando o "
-"botão \"Instância\" de novo, seja clicando na instância da bola e "
-"pressionando \"Duplicar\" (Ctrl-D):"
+"Você pode adicionar quantas instâncias quiser à cena, seja usando o botão "
+"\"Instância\" novamente, ou clicando na instância da bola e pressionando "
+"\"Duplicar\" (:kbd:`Ctrl + D`):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
@@ -2935,14 +2934,13 @@ msgid "Editing instances"
 msgstr "Editando instâncias"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
-#, fuzzy
 msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by opening the "
 "\"Physics Material Override\" dropdown in the Inspector dock and selecting "
 "\"New PhysicsMaterial\"."
 msgstr ""
-"Abra a cena ``Bola`` e adicione um ``PhysicsMaterial`` clicando na seta "
-"baixo e selecionando \"Novo PhysicsMaterial\"."
+"Abra a cena ``Ball`` e adicione um ``PhysicsMaterial`` ao abrir o menu "
+"\"Physics Material Override\",   e selecionando \"New PhysicsMaterial\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:99
 msgid ""
@@ -3480,13 +3478,12 @@ msgid "Scene setup"
 msgstr "Configuração da cena"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
-#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
 "Use o diálogo \"Adicionar nó filho\" acessível a partir da aba Cena (ou "
-"pressionando ``Ctrl+A``) para criar uma hierarquia com os seguintes nós:"
+"pressionando :kbd:`Ctrl + A`) para criar uma hierarquia com os seguintes nós:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
 msgid "Panel"
@@ -4299,6 +4296,10 @@ msgid ""
 "signal connected to the same method, as each signal propagation will result "
 "in different values for those extra call arguments."
 msgstr ""
+"No lado direito, você pode vincular um número arbitrário de argumentos de "
+"(possivelmente) tipos diferentes. Isso pode ser útil quando você tiver mais "
+"de um sinal conectado ao mesmo método, pois cada propagação de sinal "
+"resultará em valores diferentes para esses argumentos de chamada extras."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
@@ -4395,26 +4396,28 @@ msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
+"Um sinal também pode opcionalmente declarar um ou mais argumentos. "
+"Especifique os nomes dos argumentos entre parênteses:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:232
-#, fuzzy
 msgid ""
 "The signal arguments show up in the editor's node dock, and Godot can use "
 "them to generate callback functions for you. However, you can still emit any "
 "number of arguments when you emit signals. So it's up to you to emit the "
 "correct values."
 msgstr ""
-"Estes argumentos aparecem na aba Nó do editor, e a Godot pode usá-los para "
-"criar funções para você. Entretanto, você ainda pode emitir qualquer número "
-"de argumento quando você emite sinais; é você quem tem que emitir os valores "
-"corretos."
+"Os argumentos de sinal são mostrados no painel nó, e a Godot pode usá-los "
+"para gerar funções callback para você. Entretanto, você ainda pode emitir "
+"qualquer número de argumentos quando você emite sinais. Então cabe a você "
+"emitir os valores corretos."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:237
-#, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
-msgstr "Para emitir um sinal por código, use a função ``emit_signal`` :"
+msgstr ""
+"Passa passar valores, adiciones-os como o segundo argumento à função "
+"``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:265
 msgid ""
@@ -4605,13 +4608,12 @@ msgstr ""
 "que os filhos do objeto não sejam selecionáveis.\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
 "Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
-"Salve a cena: clique em Cena -> Salvar ou pressione ``Ctrl+S`` no Windows/"
-"Linux ou ``Command+S`` no Mac."
+"Salve a cena. Clique em Cena -> Salvar ou pressione :kbd: `Ctrl+S` no "
+"Windows/Linux ou :kbd: `Cmd+S` no MacOS."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:87
 msgid "For this project, we will be following the Godot naming conventions."
@@ -5443,7 +5445,6 @@ msgstr ""
 "``Principal``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:740
-#, fuzzy
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
@@ -5453,9 +5454,9 @@ msgid ""
 msgstr ""
 "Em seguida, clique no Jogador e conecte o sinal ``hit``. Queremos criar uma "
 "função chamada ``game_over``, que lidará com tudo o que precisa acontecer "
-"quando o jogo acabar. Digite \"game_over\" na caixa \"Método no Nó\" na "
+"quando um jogo acaba. Digite \"game_over\" na caixa \"Método no Nó\" na "
 "parte inferior da janela \"Conectando Sinal\". Adicione o código a seguir, "
-"assim como uma função \"new_game\" (novo jogo) para definir tudo para um "
+"assim como uma função ``new_game`` (novo jogo) para definir tudo para um "
 "novo jogo:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:777
@@ -5983,13 +5984,12 @@ msgstr ""
 "espaço."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1230
-#, fuzzy
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Space` to start the game."
 msgstr ""
-"Agora, quando o botão iniciar aparecer, você pode clicar nele ou pressionar "
-"a barra de espaço para iniciar o jogo."
+"Agora, quando o botão iniciar aparecer, você pode clicar nele ou pressionar :"
+"kbd: `Barra de Espaço` para iniciar o jogo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1234
 msgid "Project files"
@@ -7178,7 +7178,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureButton and its 5 texture slots"
-msgstr "TextureButton e seus 5 slots de textura"
+msgstr "TextureButton e seus 5 espaços de textura"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
 msgid "TextureProgress"
@@ -16110,6 +16110,8 @@ msgstr ""
 msgid ""
 "Remember to save the new function state, when using multiple ``yield``\\s::"
 msgstr ""
+"Lembre-se de salvar o estado da nova função, ao utilizar múltiplos ``yield``"
+"\\s::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1505
 msgid "Coroutines & signals"
@@ -20312,6 +20314,10 @@ msgid ""
 "shown above.**  This is because the version of MSBuild used requires this. "
 "(This will be fixed in Godot 4.0.)"
 msgstr ""
+"Por padrão, ferramentas como NuGet colocam ``Version``` como atributo do Nó "
+"``PackageReference```. **Você deve criar manualmente um nó de Versão como "
+"mostrado acima.** Isto é porque a versão utilizada do MSBuild requer isto. "
+"(Isto será corrigido no Godot 4.0)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:264
 #, fuzzy
@@ -20646,43 +20652,59 @@ msgid "Preprocessor defines"
 msgstr "Processamentos"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:176
+#, fuzzy
 msgid ""
 "Godot has a set of defines that allow you to change your C# code depending "
 "on the environment you are compiling to."
 msgstr ""
+"Godot tem um conjunto de definições que lhe permitem alterar o seu código C# "
+"dependendo do ambiente para o qual você está compilando."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:179
+#, fuzzy
 msgid ""
 "If you created your project before Godot 3.2, you have to modify or "
 "regenerate your `csproj` file to use this feature (compare "
 "``<DefineConstants>`` with a new 3.2+ project)."
 msgstr ""
+"Se você criou seu projeto antes do Godot 3.2, você tem que modificar ou "
+"regenerar seu arquivo `csproj` para utilizar esta funcionalidade (compare "
+"``<DefineConstants>``` com um novo projeto 3.2+)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:186
+#, fuzzy
 msgid "For example, you can change code based on the platform:"
-msgstr ""
+msgstr "Por exemplo, você pode alterar o código com base na plataforma:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:203
+#, fuzzy
 msgid ""
 "Or you can detect which engine your code is in, useful for making cross-"
 "engine libraries:"
 msgstr ""
+"Ou você pode detectar em qual motor seu código está, útil para fazer "
+"bibliotecas de motores cruzados:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:219
+#, fuzzy
 msgid "Full list of defines"
-msgstr ""
+msgstr "Lista completa de definições"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:221
+#, fuzzy
 msgid "``GODOT`` is always defined for Godot projects."
-msgstr ""
+msgstr "`` GODOT`` é sempre definido para projetos Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:223
 msgid ""
 "One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the "
 "architecture is 64-bit or 32-bit."
 msgstr ""
+"Um dos `GODOT_64` ou `GODOT_32` é definido dependendo se a arquitetura é 64-"
+"bit ou 32-bit."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
+#, fuzzy
 msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
 "``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. These names may "
@@ -20690,36 +20712,56 @@ msgid ""
 "the :ref:``OS <class_OS>`` singleton, but not every possible OS the method "
 "returns is an OS that Godot with Mono runs on."
 msgstr ""
+"Um dos `GODOT_X11`, `GODOT_WINDOWS`, `GODOT_OSX`, `GODOT_ANDROID`, "
+"`GODOT_HTML5`, ou `GODOT_SERVER` dependendo do sistema operacional. Esses "
+"nomes podem mudar no futuro. Estes são criados a partir do método "
+"``get_name()`` do singleton :ref:``OS <class_OS>``, mas não todos os "
+"possíveis S.O que o método retorna é um sistema operacional que Godot com o "
+"Mono é executado."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:230
+#, fuzzy
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
 "export features:"
 msgstr ""
+"Quando **exportar**, também pode ser definido o seguinte, dependendo das "
+"características de exportação:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
+#, fuzzy
 msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
 "platform type."
 msgstr ""
+"Um dos ``GODOT_PC``, ``GODOT_MOBILE``, ou ``GODOT_WEB```, dependendo do tipo "
+"de plataforma."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
+#, fuzzy
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
 "depending on the architecture."
 msgstr ""
+"Um dos ``GODOT_ARM64_V8A`` ou ``GODOT_ARMEABI_V7A`` apenas no Android, "
+"dependendo da arquitetura."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
 msgid ""
 "One of ``GODOT_S3TC``, ``GODOT_ETC``, or ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
+"Um dos ``GODOT_S3TC``, ``GODOT_ETC``, ou ``GODOT_ETC2``, dependendo do tipo "
+"de compressão de textura."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
+#, fuzzy
 msgid ""
 "Any custom features added in the export menu will be capitalized and "
 "prefixed: ``foo`` -> ``GODOT_FOO``."
 msgstr ""
+"Quaisquer recursos personalizados adicionados no menu de exportação serão "
+"capitalizados e prefixados: ``foo`` -> ``GODOT_FOO```."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
 msgid "API differences to GDScript"
@@ -23961,16 +24003,24 @@ msgid ""
 "workarounds as described `here <https://stackoverflow.com/questions/4221176/"
 "excel-to-csv-with-utf8-encoding>`__."
 msgstr ""
+"Por padrão, o Microsoft Excel sempre salvará arquivos CSV com codificação "
+"ANSI em vez de UTF-8. Não há uma maneira integrada de fazer isso, mas há "
+"soluções como descritas `aqui <https://stackoverflow.com/questions/4221176/"
+"excel-to-csv-with-utf8-encoding>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
+#, fuzzy
 msgid ""
 "We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
 "Sheets instead."
 msgstr ""
+"Recomendamos utilizar o `LibreOffice <https://www.libreoffice.org/>`__ ou "
+"Google Sheets em seu lugar."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
+#, fuzzy
 msgid "CSV files must be formatted as follows:"
-msgstr ""
+msgstr "Os arquivos CSV devem ser formatados da seguinte forma:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
@@ -25757,11 +25807,15 @@ msgstr ""
 "pode corrigir o conteúdo de um PCK anteriormente carregado."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:124
+#, fuzzy
 msgid ""
 "For a C# project, you need to build the DLL and place it in the project "
 "directory first. Then, before loading the resource pack, you need to load "
 "its DLL as follows: ``Assembly.LoadFile(\"mod.dll\")``"
 msgstr ""
+"Para um projeto em C#, você precisa construir a DLL e colocá-la no diretório "
+"do projeto primeiro. Depois, antes de carregar o pacote de recursos, você "
+"precisa carregar a DLL da seguinte forma: ``Assembly.LoadFile(\"mod.dll\")``"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:131
 msgid ""
@@ -26649,10 +26703,13 @@ msgid ""
 msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
+#, fuzzy
 msgid ""
 "If you install Android Studio, you need to run it once to complete the SDK "
 "setup."
 msgstr ""
+"Se você instalar o Android Studio, você precisa executá-lo uma vez para "
+"completar a configuração do SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
 #, fuzzy
@@ -26673,10 +26730,14 @@ msgstr ""
 "relataram problemas com o jarsigner (usado para assinar os APKs) em JDK 7."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:22
+#, fuzzy
 msgid ""
 "If you install OpenJDK, choose ``1.8``. Don't choose the ``openjdk-jre`` "
 "files as that only contains the JRE, not the JDK which is required here."
 msgstr ""
+"Se você instalar o OpenJDK, escolha ``1.8```. Não escolha os arquivos "
+"``openjdk-jre``, pois eles contêm apenas o JRE, não o JDK, que é necessário "
+"aqui."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:25
 #, fuzzy
@@ -26713,6 +26774,12 @@ msgid ""
 "information on ``keytool`` usage, see `this Q&A article <https://godotengine."
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
+"Isto irá criar um arquivo ``debug.keystore`` no seu diretório atual. Você "
+"deve movê-lo para um local memorável como o ``%USERPROFILE%\\.android\\``, "
+"porque você precisará da sua localização em um passo posterior. Para mais "
+"informações sobre a utilização do ``keytool``, veja `este artigo de "
+"perguntas e respostas <https://godotengine.org/qa/21349/jdk-android-file-"
+"missing>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
 #, fuzzy
@@ -26758,10 +26825,13 @@ msgid "In that screen, the path to 3 files needs to be set:"
 msgstr "Nessa tela, o caminho para 3 arquivos precisa ser definido:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
+#, fuzzy
 msgid ""
 "The ``adb`` executable (``adb.exe`` on Windows) - It can usually be found at "
 "``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
 msgstr ""
+"O executável ``adb`` (``adb.exe`` no Windows) - Normalmente pode ser "
+"encontrado em ``%LOCALAPPDATA%`Android`Sdk``platform-tools`adb.exe``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
 msgid ""
@@ -26770,12 +26840,19 @@ msgid ""
 "openjdk-1.8.0.232-2\\bin``. The exact path may vary depending on the OpenJDK "
 "update you've installed."
 msgstr ""
+"O executável ``jarsigner`` (do JDK 6 ou 8) - No Windows, o OpenJDK instala "
+"para um diretório como ``%PROGRAMFILES%ojdkbuild\\java-1.8.0-"
+"openjdk-1.8.0.232-2\\bin``. O caminho exato pode variar dependendo da "
+"atualização do OpenJDK que você tenha instalado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:67
+#, fuzzy
 msgid ""
 "The debug ``.keystore`` file - It can be found in the folder where you put "
 "the ``debug.keystore`` file you created above."
 msgstr ""
+"O arquivo debug ``.keystore``` - Pode ser encontrado na pasta onde você "
+"coloca o arquivo ``debug.keystore``` que você criou acima."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:70
 #, fuzzy
@@ -26812,6 +26889,9 @@ msgid ""
 "**Main Icon:**: The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
+"**Ícone principal:**: O ícone \"clássico\". Será utilizado em todas as "
+"versões do Android até ao Android 8 (Oreo), exclusivo. Deve ter pelo menos "
+"192×192 px."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
 msgid ""
@@ -26952,7 +27032,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:4
 msgid "Exporting for the Web"
-msgstr ""
+msgstr "Exportando para a Web"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:6
 msgid ""
@@ -26960,13 +27040,21 @@ msgid ""
 "This requires support for `WebAssembly <https://webassembly.org/>`__ and "
 "`WebGL <https://www.khronos.org/webgl/>`__ in the user's browser."
 msgstr ""
+"Exportar HTML5 permite que jogos feitos com Godot Engine sejam publicados "
+"para navegadores. É necessário que o navegador do usuário tenha suporte para "
+"`WebAssembly <https://webassembly.org/>`__ e `WebGL <https://www.khronos.org/"
+"webgl/>`__ ."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:11
+#, fuzzy
 msgid ""
 "Use the browser-integrated developer console, usually opened with :kbd:"
 "`F12`, to view **debug information** like JavaScript, engine, and WebGL "
 "errors."
 msgstr ""
+"Use o console de desenvolvedor integrado no navegador, geralmente aberto "
+"com :kbd:`F12`, para ver **informações de debug** do JavaScript, do motor e "
+"erros de WebGL."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
 msgid ""
@@ -26974,6 +27062,9 @@ msgid ""
 "exported projects when **opened locally** per ``file://`` protocol. To get "
 "around this, use a local server."
 msgstr ""
+"Muitos navegadores, incluindo o Firefox e navegadores baseados no Chromium, "
+"não carregarão projetos quando **abertos localmente** pelo protocolo "
+"``file://``. Para contornar isso, use um servidor local."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
 msgid ""
@@ -26981,22 +27072,30 @@ msgid ""
 "SimpleHTTPServer`` with Python 2 or ``python -m http.server`` with Python 3 "
 "to serve the current working directory at ``http://localhost:8000``."
 msgstr ""
+"Python oferece uma forma fácil para iniciar um servidor local. Use ``python -"
+"m SimpleHTTPServer`` com Python 2 ou ``python -m http.server`` com Python 3 "
+"para iniciar um servidor na pasta atual que ficará disponível em ``http://"
+"localhost:8000``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:25
 msgid "WebGL 2"
-msgstr ""
+msgstr "WebGL 2"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:27
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option is selected."
 msgstr ""
+"Enquanto o renderizador *OpenGL ES 3* é substituído pelo *Vulkan*, projetos "
+"exportados para HTML5 usam *WebGL 2* quando *GLES3* está selecionado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
+#, fuzzy
 msgid ""
 "Usage of WebGL 2 is not recommended due to its expected removal from Godot "
 "without replacement."
 msgstr ""
+"Não é recomendado usar WebGL 2 visto que é esperado ser removido da Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:33
 msgid ""
@@ -27005,35 +27104,50 @@ msgid ""
 "**Edge** do not work. On **iOS**, all browsers are based on WebKit (i.e. "
 "Safari), so they will also not work."
 msgstr ""
+"WebGL 2 não é suportado por todos os navegadores. **Firefox** e **Chromium** "
+"(Chrome, Opera) são os navegadores mais populares e suportam WebGL 2. "
+"**Safari** e **Edge** não suportam. No **iOS**, todos os navegadores são "
+"baseados em WebKit (ex. Safari), então também não há suporte."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
 msgstr ""
+"O renderizador WebGL 2 da Godot possui problemas com 3D e não é mais mantido."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
 msgid "Limitations"
-msgstr ""
+msgstr "Limitações"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
+#, fuzzy
 msgid ""
 "For security and privacy reasons, many features that work effortlessly on "
 "native platforms are more complicated on the web platform. Following is a "
 "list of limitations you should be aware of when porting a Godot game to the "
 "web."
 msgstr ""
+"Por motivos de segurança e privacidade, muitas funcionalidades que funcionam "
+"sem problemas nas plataformas nativas são mais complicadas na plataforma "
+"web. A seguir há uma lista das limitações que se deve estar ciente quando "
+"for portar um game da Godot para a web."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
 msgid "Using cookies for data persistence"
-msgstr ""
+msgstr "Usar cookies para dados persistentes"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:50
+#, fuzzy
 msgid ""
 "Users must **allow cookies** (specifically IndexedDB) if persistence of the "
 "``user://`` file system is desired. When playing a game presented in an "
 "``iframe``, **third-party** cookies must also be enabled. Incognito/private "
 "browsing mode also prevents persistence."
 msgstr ""
+"Usuários precisam **permitir cookies** (especificamente IndexedDB) se a "
+"persistência do sistema de arquivos ``user://``é desejada. Quando um jogo é "
+"exibido em um ``iframe``, **cookies de terceiros** também precisam estar "
+"ativados. Navegação anônima/privada também impede persistência."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
 msgid ""
@@ -27041,12 +27155,16 @@ msgid ""
 "``user://`` file system is persistent, but can give false positives in some "
 "cases."
 msgstr ""
+"O método ``OS.is_userfs_persistent()`` pode ser utilizado para checar se o "
+"sistema de arquivos ``user://`` é persistente, mas pode dar falso positivo "
+"em alguns casos."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
 msgid "Full screen and mouse capture"
-msgstr ""
+msgstr "Tecla cheia e captura do mouse"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
+#, fuzzy
 msgid ""
 "Browsers do not allow arbitrarily **entering full screen**. The same goes "
 "for **capturing the cursor**. Instead, these actions have to occur as a "
@@ -27055,30 +27173,48 @@ msgid ""
 "``_unhandled_input``. Querying the :ref:`class_Input` singleton is not "
 "sufficient, the relevant input event must currently be active."
 msgstr ""
+"Navegadores não permitem **entrar em tela cheia** livremente. O mesmo vale "
+"para **capturar o cursor**. Para isso, essas ações devem ocorrer como uma "
+"resposta para um evento de input no JavaScript. Na Godot, isso significa "
+"entrar em tela cheia a partir de um evento de input como ``_input`` ou "
+"``_unhandled_input``. Acessar o singleton :ref:`class_Input` não é "
+"suficiente, o evento relevante precisa estar ativo no momento."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:69
+#, fuzzy
 msgid ""
 "For the same reason, the full screen project setting doesn't work unless the "
 "engine is started from within a valid input event handler. This requires :"
 "ref:`customization of the HTML page <doc_customizing_html5_shell>`."
 msgstr ""
+"Pela mesma razão, a opção Tela Cheia nas Configurações do Projeto não "
+"funcionam a não ser que o motor seja iniciado a partir de um evento de input "
+"válido. Isso requer :ref:`customização da página HTML "
+"<doc_customizing_html5_shell>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
+#, fuzzy
 msgid "Audio autoplay"
-msgstr ""
+msgstr "Reprodução automática de áudio"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:76
 msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
 msgstr ""
+"Chrome restringe como os sites reproduzem áudio. Pode ser necessário que o "
+"jogador clique, toque ou pressione uma tecla para ativar o áudio."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
+#, fuzzy
 msgid ""
 "Google offers additional information about their `Web Audio autoplay "
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
 "autoplay>`__."
 msgstr ""
+"Google oferece informações adicionais sobe suas `Políticas de autoplay (Web "
+"Audio autoplay policies) <https://sites.google.com/a/chromium.org/dev/audio-"
+"video/autoplay>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
@@ -27849,6 +27985,8 @@ msgid ""
 "This series is a collection of best practices to help you work efficiently "
 "with Godot."
 msgstr ""
+"Esta série é uma coleção de boas práticas para ajudar você a trabalhar "
+"eficientemente com Godot."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:9
 msgid ""
@@ -27857,20 +27995,31 @@ msgid ""
 "pros and cons, and they can be hard to weigh until you've worked with the "
 "engine for long enough."
 msgstr ""
+"Godot permite uma grande flexibilidade na forma como você estrutura uma base "
+"de código do projeto e a divide em cenas. Cada abordagem tem seus próprios "
+"prós e contras, e eles podem ser difíceis de balancear até que você trabalhe "
+"com o motor por tempo suficiente."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:13
 msgid ""
 "There are always many ways to structure your code and solve specific "
 "programming problems. It would be impossible to cover them all here."
 msgstr ""
+"Há sempre muitas formas para construir seu código e resolver problemas "
+"específicos de programação. Seria impossível de cobrir todos eles aqui."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:16
+#, fuzzy
 msgid ""
 "That is why each article starts from a real-world problem. We will break "
 "down each problem in fundamental questions, suggest solutions, analyze the "
 "pros and cons of each option, and highlight the best course of action for "
 "the problem at hand."
 msgstr ""
+"É por isso que cada artigo começa com um problema do mundo real. Vamos "
+"dividir cada problema em questões fundamentais, sugerindo soluções, "
+"analisando os prós e contras de cada opção e destacando o melhor curso de "
+"ação para o problema em questão."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:20
 msgid ""
@@ -27879,6 +28028,10 @@ msgid ""
 "Oriented programming language. It will help you make sense of the rest of "
 "the series."
 msgstr ""
+"Você deve começar lendo :ref:`doc_what_are_godot_classes`. Ele explica como "
+"os nós e as cenas de Godot se relacionam com classes e objetos em outra "
+"linguagem de programação Orientada a Objetos. Isso o ajudará a entender o "
+"resto da série."
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:26
 msgid ""
@@ -51487,7 +51640,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:4
 msgid "InputEvent"
-msgstr ""
+msgstr "InputEvent"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:9
 msgid ""
@@ -64479,49 +64632,48 @@ msgstr "Cor"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:162
 msgid "fragCoord"
-msgstr ""
+msgstr "fragCoord"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:162
 msgid "FRAGCOORD.xy"
-msgstr ""
+msgstr "FRAGCOORD.xy"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:164
-#, fuzzy
 msgid "iResolution"
-msgstr "Rotation"
+msgstr "iResolution"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:164
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:178
 msgid "vec3"
-msgstr ""
+msgstr "vec3"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:164
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:224
 msgid "1.0 / SCREEN_PIXEL_SIZE"
-msgstr ""
+msgstr "1.0 / SCREEN_PIXEL_SIZE"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:164
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:224
 msgid "Can also pass in manually."
-msgstr ""
+msgstr "Também pode passar manualmente."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:166
 msgid "iTime"
-msgstr ""
+msgstr "iTime"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:166
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
 msgid "TIME"
-msgstr ""
+msgstr "TEMPO"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:166
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
 msgid "Time since shader started."
-msgstr ""
+msgstr "Tempo desde que o shader iniciou."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:168
 msgid "iTimeDelta"
-msgstr ""
+msgstr "iTimeDelta"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:168
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:170
@@ -64530,48 +64682,48 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:176
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:228
 msgid "Provide with Uniform"
-msgstr ""
+msgstr "Fornecer uniforme"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:168
 msgid "Time to render previous frame."
-msgstr ""
+msgstr "Momento de renderizar quadro anterior."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:170
 msgid "iFrame"
-msgstr ""
+msgstr "iFrame"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:170
 msgid "Frame number."
-msgstr ""
+msgstr "Numero do quadro."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:172
 msgid "iChannelTime[4]"
-msgstr ""
+msgstr "iChannelTime[4]"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:172
 msgid "Time since that particular texture started."
-msgstr ""
+msgstr "Momento desde que textura especifica iniciou."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:174
 msgid "iMouse"
-msgstr ""
+msgstr "iMouse"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:174
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:228
 msgid "Mouse position in pixel coordinates."
-msgstr ""
+msgstr "Posição do mouse nas coordenadas do pixel."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:176
 msgid "iDate"
-msgstr ""
+msgstr "iDate"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:176
 msgid "Current date, expressed in seconds."
-msgstr ""
+msgstr "Data atual, expressada em segundos."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:178
 msgid "iChannelResolution[4]"
-msgstr ""
+msgstr "iChannelResolution[4]"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:178
 msgid "1.0 / TEXTURE_PIXEL_SIZE"
@@ -73136,9 +73288,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:95
-#, fuzzy
 msgid "From your script::"
-msgstr "O papel do roteiro"
+msgstr "Em seu script::"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:101
 msgid ""
@@ -77655,9 +77806,8 @@ msgstr ""
 "jogador:"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:4
-#, fuzzy
 msgid "State design pattern"
-msgstr "Padrão de ligação"
+msgstr "Padrão de projeto State"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:9
 msgid ""
@@ -77666,28 +77816,39 @@ msgid ""
 "creating a state machine within the player's control script, it would make "
 "development simpler if the states were separated out into different classes."
 msgstr ""
+"Escrever um jogo pode ser difícil quando há muitos estados que necessitam "
+"ser manipulados, mas apenas um script pode ser anexado a um nó por vez. Em "
+"vez de criar uma máquina de estados no script de controle do jogador, o "
+"desenvolvimento poderia ser simplificado se os estados forem separados em "
+"diferentes classes."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:14
 msgid ""
 "There are many ways to implement a state machine with Godot, and some other "
 "methods are below:"
 msgstr ""
+"Existem muitas formas de implementar uma máquina de estados com Godot, e "
+"alguns desses métodos estão logo abaixo:"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:16
 msgid ""
 "The player can have a child node for each state, which are called when "
 "utilized."
 msgstr ""
+"O jogador pode ter um nó filho para cada estado, cujo são chamados quando "
+"utilizados."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:17
 msgid "Enums can be used in conjunction with a match statement."
-msgstr ""
+msgstr "Os enums podem ser utilizados em conjunto com uma declaração de match."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:18
 msgid ""
 "The state scripts themselves could be swapped out from a node dynamically at "
 "run-time."
 msgstr ""
+"Os próprios scripts de estado podem ser trocados de um nó dinamicamente em "
+"tempo de execução."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:20
 msgid ""
@@ -77695,15 +77856,17 @@ msgid ""
 "state script attached. Each state script will be an implementation of a "
 "different state."
 msgstr ""
+"Este tutorial se concentrará apenas em adicionar e remover nós que tem um "
+"script de estado anexado. Cada script de estado será uma implementação de um "
+"estado diferente."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:24
-#, fuzzy
 msgid ""
 "There is a great resource explaining the concept of the state design pattern "
 "here: https://gameprogrammingpatterns.com/state.html"
 msgstr ""
-"Você pode ler mais sobre o padrão observador aqui:\n"
-"http://gameprogrammingpatterns.com/observer.html"
+"Há um ótimo recurso explicando o conceito do padrão de projeto State aqui: "
+"https://gameprogrammingpatterns.com/state.html"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:28
 #, fuzzy
@@ -77711,16 +77874,23 @@ msgid "Script setup"
 msgstr "GDScript"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:30
+#, fuzzy
 msgid ""
 "The feature of inheritance is useful for getting started with this design "
 "principle. A class should be created that describes the base features of the "
 "player. For now, a player will be limited to two actions: **move left**, "
 "**move right**. This means there will be two states: **idle** and **run**."
 msgstr ""
+"A funcionalidade de herança é útil para começar com esse princípio de "
+"design. Uma classe deve ser criada que descreva as funcionalidades básicas "
+"do jogador. Por enquanto, um jogador estará limitado a duas ações: **move "
+"left**, ** move right**. Isso significa que haverá dois estados: **idle** e "
+"** run**."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:35
 msgid "Below is the generic state, from which all other states will inherit."
 msgstr ""
+"Logo abaixo está o estado genérico, do qual todos outros estados herdarão."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:66
 msgid ""
@@ -77735,19 +77905,37 @@ msgid ""
 "remember that *coupling* and *cohesion* are important concepts when it comes "
 "to code management."
 msgstr ""
+"Algumas notas do script acima. Primeiro, esta implementação usa um método "
+"``setup(change_state, animated_sprite, persistent_state)`` para atribuir "
+"referências. Essas referências serão instanciadas no pai desse estado. Isso "
+"ajuda com algo na programação conhecido como *coesão*. O estado do jogador "
+"não deseja a responsabilidade de criar essas variáveis, mas deseja poder "
+"utilizá-las. No entanto, isso torna o estado *acoplado* ao pai do estado. "
+"Isso significa que o estado é altamente dependente de ter um pai que "
+"contenha essas variáveis. Portanto, lembre-se de que *acoplamento* e "
+"*coesão* são conceitos importantes quando se trata de gerenciamento de "
+"código."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:75
 msgid ""
 "See the following page for more details on cohesion and coupling: https://"
 "courses.cs.washington.edu/courses/cse403/96sp/coupling-cohesion.html"
 msgstr ""
+"Consulte a página a seguir para obter mais detalhes sobre coesão e "
+"acoplamento: https://courses.cs.washington.edu/courses/cse403/96sp/coupling-"
+"cohesion.html"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:78
+#, fuzzy
 msgid ""
 "Second, there are some methods in the script for moving, but no "
 "implementation. The state script just uses ``pass`` to show that it will not "
 "execute any instructions when the methods are called. This is important."
 msgstr ""
+"Segundo, existem alguns métodos no script para mover, mas nenhuma "
+"implementação. O script de estado apenas usa ``pass`` para mostrar que não "
+"executará nenhuma instrução quando os métodos forem chamados. Isto é "
+"importante."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:81
 msgid ""
@@ -77757,6 +77945,11 @@ msgid ""
 "the states can modify the movement of the player is to use the ``velocity`` "
 "variable defined in their base class."
 msgstr ""
+"Terceiro, o método ``_physics_process(delta)`` é realmente implementado "
+"aqui. Isso permite que os estados tenham uma implementação "
+"``_phyics_process(delta)`` por padrão onde ``velocity`` é usada para mover o "
+"jogador. A forma que os estados podem modificar o movimento do jogador é "
+"usar a variável ``velocity`` definida em sua classe base."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:85
 msgid ""
@@ -77764,14 +77957,20 @@ msgid ""
 "``State``. This makes refactoring the code easier, since the file path from "
 "using the ``load()`` and ``preload()`` functions in godot will not be needed."
 msgstr ""
+"Por último, esse script está sendo designado como uma classe chamada "
+"``State``. Isso facilita a refatoração do código, pois o caminho do arquivo "
+"usando o as funções ``load()`` e ``preload()`` no godot não será necessário."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:88
 msgid ""
 "So, now that there is a base state, the two states discussed earlier can be "
 "implemented."
 msgstr ""
+"Portanto, agora que existe um estado base, os dois estados discutidos "
+"anteriormente podem ser implementados."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:154
+#, fuzzy
 msgid ""
 "The since the ``Run`` and ``Idle`` states extend from ``State`` which "
 "extends ``Node2D``, the function ``_physics_process(delta)`` is called from "
@@ -77782,12 +77981,22 @@ msgid ""
 "as ``_ready()``, ``_process(delta)``, etc. Custom functions use the normal "
 "inheritance rules of overriding the base implementation."
 msgstr ""
+"Como os estados ``Run`` e ``Idle`` estendem do ``State``, que estende "
+"``Node2D``, a função ``_physics_process(delta)`` é chamada do **bottom-up** "
+"significando que ``Run`` e ``Idle`` chamarão suas implementações "
+"``_physics_process(delta)``, então ``State`` chamará sua implementação, "
+"então ``Node2D`` chamará sua própria implementação e assim por diante. Isto "
+"pode parecer estranho, mas é relevante apenas para funções predefinidas como "
+"``_ready()``, ``_process(delta)``, etc. Funções personalizadas usam as "
+"regras normais de herança para sobrescrever a implementação base."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:161
 msgid ""
 "There is a round-about method for obtaining a state instance. A state "
 "factory can be used."
 msgstr ""
+"Existe um método alternativo para obter uma instância de estado. Uma fábrica "
+"de estado pode ser usada."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:184
 msgid ""
@@ -82981,12 +83190,12 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:358
-#, fuzzy
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp>`_"
 msgstr ""
-"Dê um Fork `Repositório do  Godot<https://github.com/godotengine/godot>`_"
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:26
 msgid "Adding new support for many file formats"
@@ -83017,12 +83226,12 @@ msgid "ImageFormatLoader should be used to load images."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:41
-#, fuzzy
 msgid ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`_"
 msgstr ""
-"Dê um Fork `Repositório do  Godot<https://github.com/godotengine/godot>`_"
+"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/image_loader.h>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:45
 msgid "Creating a ResourceFormatLoader"
@@ -83107,7 +83316,8 @@ msgid ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
 "os/file_access.h>`_"
 msgstr ""
-"Dê um Fork `Repositório do  Godot<https://github.com/godotengine/godot>`_"
+"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
+"os/file_access.h>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:310
 #, fuzzy
@@ -87419,64 +87629,74 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/channels.rst:25
+#, fuzzy
 msgid ""
 "`Website and public relations: #godotengine-atelier <http://webchat.freenode."
 "net/?channels=#godotengine-atelier>`_"
 msgstr ""
+"`Sites e relações públicas: #godotengine-atelier <http://webchat.freenode."
+"net/?channels=#godotengine-atelier>`_"
 
 #: ../../docs/community/channels.rst:26
+#, fuzzy
 msgid "`IRC logs <https://godot.eska.me/irc-logs/>`_"
-msgstr ""
+msgstr "`Históricos no IRC <https://godot.eska.me/irc-logs/>`_"
 
 #: ../../docs/community/channels.rst:29
 msgid "Other chats"
-msgstr ""
+msgstr "Outros mensageiros"
 
 #: ../../docs/community/channels.rst:31
 msgid "`Discord Server <https://discordapp.com/invite/zH7NUgz>`_"
-msgstr ""
+msgstr "`Servidor no Discord <https://discordapp.com/invite/zH7NUgz>`_"
 
 #: ../../docs/community/channels.rst:32
 msgid ""
 "`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
 msgstr ""
+"`Matrix (compatível com IRC) <https://matrix.to/#/#godotengine:matrix.org>`_"
 
 #: ../../docs/community/channels.rst:35
-#, fuzzy
 msgid "Language-based communities"
-msgstr "Comunidade enorme"
+msgstr "Comunidades baseadas no idioma"
 
 #: ../../docs/community/channels.rst:37
 msgid ""
 "Brazilian Portuguese: `Godot Brasil (Discord) <https://discord.gg/gWmQKBv>`_"
 msgstr ""
+"Em português brasileiro: `Godot Brasil (Discord) <https://discord.gg/"
+"gWmQKBv>`_"
 
 #: ../../docs/community/channels.rst:38
 msgid ""
 "French: `Godot Francophone Officiel (Discord) <https://discord.gg/3jvf3XN>`_"
 msgstr ""
+"Em francês: `Godot Francophone Officiel (Discord) <https://discord."
+"gg/3jvf3XN>`_"
 
 #: ../../docs/community/channels.rst:39
 msgid "French: `SoloCode Godot (Discord) <https://discord.gg/gZ3QJ5T>`_"
-msgstr ""
+msgstr "Em francês: `SoloCode Godot (Discord) <https://discord.gg/gZ3QJ5T>`_"
 
 #: ../../docs/community/channels.rst:40
 msgid ""
 "German: `Deutsche Godot Community (Discord) <https://discord.gg/Tr7Ma6E>`_"
 msgstr ""
+"Em alemão: `Deutsche Godot Community (Discord) <https://discord.gg/Tr7Ma6E>`_"
 
 #: ../../docs/community/channels.rst:41
 msgid ""
 "Swedish: `Swedish Godot Community (Discord) <https://discord.gg/6ZsgWmH>`_"
 msgstr ""
+"Em sueco: `Swedish Godot Community (Discord) <https://discord.gg/6ZsgWmH>`_"
 
 #: ../../docs/community/channels.rst:44
 msgid "Social networks"
-msgstr ""
+msgstr "Redes sociais"
 
 #: ../../docs/community/channels.rst:46
 msgid "`GitHub <https://github.com/godotengine/>`_"
-msgstr ""
+msgstr "`GitHub <https://github.com/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:47
 msgid "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
@@ -87484,11 +87704,12 @@ msgstr "`Grupo do Facebook <https://www.facebook.com/groups/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:48
 msgid "`Twitter (also, #godotengine) <https://twitter.com/godotengine>`_"
-msgstr "`Twitter (also, #godotengine) <https://twitter.com/godotengine>`_"
+msgstr ""
+"`Twitter (também a hagtag #godotengine) <https://twitter.com/godotengine>`_"
 
 #: ../../docs/community/channels.rst:49
 msgid "`Reddit <https://www.reddit.com/r/godot>`_"
-msgstr ""
+msgstr "`Reddit <https://www.reddit.com/r/godot>`_"
 
 #: ../../docs/community/channels.rst:50
 msgid "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
@@ -87496,20 +87717,19 @@ msgstr "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
 
 #: ../../docs/community/channels.rst:51
 msgid "`Steam <https://steamcommunity.com/app/404790>`_"
-msgstr ""
+msgstr "`Steam <https://steamcommunity.com/app/404790>`_"
 
 #: ../../docs/community/channels.rst:54
 msgid "Forum"
-msgstr ""
+msgstr "Fórum"
 
 #: ../../docs/community/channels.rst:56
 msgid "`Forum (godotforums.org) <https://godotforums.org/>`_"
-msgstr ""
+msgstr "`Forum (godotforums.org) <https://godotforums.org/>`_"
 
 #: ../../docs/community/tutorials.rst:4
-#, fuzzy
 msgid "Tutorials and resources"
-msgstr "Nós e recursos"
+msgstr "Tutoriais e recursos"
 
 #: ../../docs/community/tutorials.rst:6
 msgid ""
@@ -87520,6 +87740,12 @@ msgid ""
 "<https://www.reddit.com/r/godot/comments/an0iq5/"
 "godot_tutorials_list_of_video_and_written/>`_."
 msgstr ""
+"Esta é uma lista de tutoriais de terceiros e recursos criados pela "
+"comunidade Godot. Para consultas, lembre-se de que existe o oficial `Godot "
+"Asset Library <https://godotengine.org/asset-library/asset>`_ cheia de "
+"recursos oficiais e da comunidade também! Também dê uma olhada nesta ` lista "
+"enorme no Reddit <https://www.reddit.com/r/godot/comments/an0iq5/"
+"godot_tutorials_list_of_video_and_written/>`_."
 
 #: ../../docs/community/tutorials.rst:8
 msgid ""
@@ -87527,10 +87753,13 @@ msgid ""
 "<https://github.com/godotengine/godot-docs/blob/master/community/tutorials."
 "rst>`_ as always."
 msgstr ""
+"Acha que há algo faltando aqui? Sinta-se à vontade para enviar um `Pull "
+"Request <https://github.com/godotengine/godot-docs/blob/master/community/"
+"tutorials.rst>`_ como sempre."
 
 #: ../../docs/community/tutorials.rst:11
 msgid "Where to start"
-msgstr ""
+msgstr "Por onde começar"
 
 #: ../../docs/community/tutorials.rst:13
 msgid ""
@@ -87541,18 +87770,29 @@ msgid ""
 "playlists>`_ are well-regarded in the community and often recommended as a "
 "gentle introduction to beginners."
 msgstr ""
+"Videos de tutoriais de Godot por `GDQuest <https://www.youtube.com/channel/"
+"UCxboW7x0jZqFdvMdCFKTMsQ/playlists>`_, `Game from Scratch <https://www."
+"youtube.com/watch?v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_ e "
+"`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
+"playlists>`_ são bem conceituados na comunidade e frequentemente "
+"recomendados como uma introdução suave para iniciantes."
 
 #: ../../docs/community/tutorials.rst:15
 msgid ""
 "If you're interested in Visual Scripting, `Emilio's tutorials <https://www."
 "youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ may be worth a look."
 msgstr ""
+"Se você está interessado em Visual Scripting, `tutoriais do Emilio <https://"
+"www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ valem a pena dar uma "
+"olhada."
 
 #: ../../docs/community/tutorials.rst:17
 msgid ""
 "Some of the others mentioned below provide more advanced tutorials, e.g. on "
 "3D or shaders."
 msgstr ""
+"Alguns dos outros mencionados abaixo fornecem tutoriais mais avançados, por "
+"exemplo, em 3D ou shaders."
 
 #: ../../docs/community/tutorials.rst:20
 msgid "Video tutorials"
@@ -87563,6 +87803,8 @@ msgid ""
 "`Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ (2D, "
 "GDScript and VisualScript)."
 msgstr ""
+"`Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ (2D, "
+"GDScript and VisualScript)."
 
 #: ../../docs/community/tutorials.rst:23
 #, fuzzy
@@ -87606,6 +87848,8 @@ msgid ""
 "`Jeremy Bullock <https://www.youtube.com/channel/UCwJw2-V5S1TkBjLQ3_Ws54g>`_ "
 "(2D and 3D, GDScript, VisualScript and C#)."
 msgstr ""
+"`Jeremy Bullock <https://www.youtube.com/channel/UCwJw2-V5S1TkBjLQ3_Ws54g>`_ "
+"(2D and 3D, GDScript, VisualScript and C#)."
 
 #: ../../docs/community/tutorials.rst:28
 #, fuzzy
@@ -87621,24 +87865,32 @@ msgid ""
 "`Mister Taft Creates <https://www.youtube.com/playlist?"
 "list=PL4vbr3u7UKWqwQlvwvgNcgDL1p_3hcNn2>`_ (2D, GDScript)."
 msgstr ""
+"`Mister Taft Creates <https://www.youtube.com/playlist?"
+"list=PL4vbr3u7UKWqwQlvwvgNcgDL1p_3hcNn2>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:30
 msgid ""
 "`Miziziziz <https://www.youtube.com/playlist?"
 "list=PLmugv6_kd0qN6AyjG245_Pdak4MXKUx88>`_ (2D, GDScript)."
 msgstr ""
+"`Miziziziz <https://www.youtube.com/playlist?"
+"list=PLmugv6_kd0qN6AyjG245_Pdak4MXKUx88>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:31
 msgid ""
 "`P1X / Krzysztof Jankowski <https://www.youtube.com/playlist?"
 "list=PLvDk7UKhld4xGPovdB4IFtAHYMYjx_-3K>`_ (3D)."
 msgstr ""
+"`P1X / Krzysztof Jankowski <https://www.youtube.com/playlist?"
+"list=PLvDk7UKhld4xGPovdB4IFtAHYMYjx_-3K>`_ (3D)."
 
 #: ../../docs/community/tutorials.rst:32
 msgid ""
 "`Pigdev <https://www.youtube.com/playlist?"
 "list=PLPMN4vCRFdordS3E-3zi0Hdh7pAsbWQ6a>`_ (2D, GDScript)."
 msgstr ""
+"`Pigdev <https://www.youtube.com/playlist?"
+"list=PLPMN4vCRFdordS3E-3zi0Hdh7pAsbWQ6a>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:33
 #, fuzzy
@@ -87652,18 +87904,24 @@ msgid ""
 "`TheBuffED <https://www.youtube.com/watch?"
 "v=ygGaN1EOQEA&list=PLvN5Z3tTxXEDfQkt4Frg6ALirespSwZd7>`_ (2D, GDScript)."
 msgstr ""
+"`TheBuffED <https://www.youtube.com/watch?"
+"v=ygGaN1EOQEA&list=PLvN5Z3tTxXEDfQkt4Frg6ALirespSwZd7>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:35
 msgid ""
 "`Code with Tom <https://www.youtube.com/playlist?"
 "list=PLiUQR4U_J9ec0k91iHPme_qtfS1nrWF3W>`_ (2D and 3D, GDScript)."
 msgstr ""
+"`Code with Tom <https://www.youtube.com/playlist?"
+"list=PLiUQR4U_J9ec0k91iHPme_qtfS1nrWF3W>`_ (2D and 3D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:36
 msgid ""
 "`BornCG <https://www.youtube.com/playlist?"
 "list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_ (3D, GDScript)."
 msgstr ""
+"`BornCG <https://www.youtube.com/playlist?"
+"list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_ (3D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:39
 #, fuzzy
@@ -87672,7 +87930,7 @@ msgstr "Tutoriais"
 
 #: ../../docs/community/tutorials.rst:41
 msgid "`Godot Recipes by KidsCanCode <http://godotrecipes.com/>`__"
-msgstr ""
+msgstr "`Godot Recipes por KidsCanCode <http://godotrecipes.com/>`__"
 
 #: ../../docs/community/tutorials.rst:42
 #, fuzzy

@@ -21,7 +21,7 @@
 # AracnidKnight <jjifernandezcubillos@gmail.com>, 2019.
 # arisvaldez <samus45@hotmail.es>, 2019.
 # Avocado <avocadosan42@gmail.com>, 2018-2020.
-# Cameron Toms <cameron.toms@gmail.com>, 2018.
+# Cameron Toms <cameron.toms@gmail.com>, 2018, 2020.
 # Carlos Herrero <qarlosherrero@gmail.com>, 2020.
 # Carlos Roberto Rojas C <carlosroberto.rojas@gmail.com>, 2018.
 # César León <ceesarleon2002@gmail.com>, 2018.
@@ -32,6 +32,7 @@
 # David Cases <dcases@gmail.com>, 2018.
 # Dharkael <izhe@hotmail.es>, 2018.
 # Dianiel García <jdangarr@gmail.com>, 2018.
+# Diego sanz <digosanf@gmail.com>, 2020.
 # doradoro indie games <admin@doradoro.com>, 2019.
 # edward badd <ebaddouh@gmail.com>, 2018.
 # Elena G <elena.guzbla@gmail.com>, 2018.
@@ -73,6 +74,7 @@
 # Kevin Soto Vallejo <siguemek@gmail.com>, 2018.
 # korge Rodriguez <jorge.3dcomv@gmail.com>, 2018.
 # LocoUnPocoNadaMas <dkno_c1@hotmail.com>, 2020.
+# Lucas Martín <codedeep@hotmail.com>, 2020.
 # LuisHerasme <luis.alberto.herasme.cuevas@gmail.com>, 2019.
 # Marcos Yeguez <marcos2687@gmail.com>, 2019.
 # Max R.R. Collada <mrdguezc@gmail.com>, 2018.
@@ -103,9 +105,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-03-13 17:49+0100\n"
-"PO-Revision-Date: 2020-03-13 16:33+0000\n"
-"Last-Translator: Javier Leonardo Cerón Puentes <javierleonardoceron@gmail."
-"com>\n"
+"PO-Revision-Date: 2020-04-17 06:45+0000\n"
+"Last-Translator: Diego sanz <digosanf@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -113,7 +114,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.0.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -374,9 +375,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
-"La página :ref:`Tutorials and resources <doc_community_tutorials>`  lista "
-"video tutoriales hechos por la comunidad. Si prefieres video por sobre el "
-"texto, quizás vale la pena que los veas."
+"La página :ref:`Tutoriales y recursos <doc_community_tutorials>` lista "
+"videotutoriales hechos por la comunidad. Si prefieres video antes que texto, "
+"quizás vale la pena que los veas."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -2134,16 +2135,15 @@ msgid "Your first look at Godot’s editor"
 msgstr "Una primera mirada al editor de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
 "¡Bienvenido a Godot! Con un proyecto abierto, deberías ver la interfaz del "
-"editor con la vista 3D activa. Puedes cambiar el espacio de trabajo actual "
-"en la parte superior de la interfaz. Haz clic en 2D para cambiar al espacio "
-"de trabajo 2D."
+"editor con menús a lo largo de la parte superior de la interfaz y los "
+"paneles a lo largo de los extremos más lejanos de la interfaz a ambos lados "
+"de la ventana gráfica."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
@@ -2155,22 +2155,20 @@ msgstr ""
 "prueba**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you’ll manage your project files and assets."
 msgstr ""
-"Abajo a la izquierda está el panel **Sistema de archivos**, donde se "
-"administrarán los archivos y assets del proyecto."
+"El ** Panel de sistema de archivos** es donde gestionas los archivos y los "
+"activos del proyecto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
-#, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene’s content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"En el lado derecho se encuentra el **Panel de escena** que lista el "
-"contenido de la escena activa y el **Inspector** está situado en la parte "
-"inferior derecha."
+"El **Panel de escena** lista el contenido de la escena activa y el "
+"**Inspector** permite la gestión de las propiedades del contenido de la "
+"escena."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid ""
@@ -2205,24 +2203,23 @@ msgstr ""
 "superior: 2D, 3D, Script y AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
-#, fuzzy
 msgid ""
 "You’ll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
 "Utilizarás el **espacio de trabajo 2D** para todo tipo de juegos. Además de "
-"los juegos en 2D, es allí donde construirás tus interfaces. Presiona F1 para "
-"acceder a este espacio."
+"los juegos en 2D, es allí donde construirás tus interfaces. Presiona F1 (ó "
+"Alt +1 en macOS) para acceder a este espacio."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
 "En el **Espacio de trabajo 3D**, se puede trabajar con mallas, luces y "
-"diseñar niveles para juegos 3D. Presione F2 para acceder a este modo."
+"diseñar niveles para juegos 3D. Presione F2 (ó Alt + 2 en macOS) para "
+"acceder a este modo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
@@ -2239,15 +2236,14 @@ msgstr ""
 "Lee :ref: `doc_introduction_to_3d` para mas detalles de **3D workspace**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
-#, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
 "+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
 msgstr ""
 "El área de trabajo **Script** es un completo editor de código con depurador, "
-"autocompletado y referencias de código incorporadas. Pulsa F3 para acceder y "
-"F4 para buscar la referencia."
+"autocompletado y referencias de código incorporadas. Pulsa F3 (ó Alt + 3 en "
+"macOS) para acceder y F4 para buscar la referencia."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
@@ -2479,7 +2475,7 @@ msgid ""
 "create a new one. This will open the Godot editor:"
 msgstr ""
 "Abre el proyecto que creaste en :ref:`doc_intro_to_the_editor_interface`, o "
-"crea uno nuevo. El editor de Godot se abrirá."
+"crea uno nuevo. El editor de Godot se abrirá:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
@@ -2580,14 +2576,13 @@ msgstr ""
 "izquierda de la ventana de visualización."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
-#, fuzzy
 msgid ""
 "The node appears in the scene tree editor in the Scene dock, and the label "
 "properties appear in the Inspector dock."
 msgstr ""
-"El nodo aparece en el editor del árbol de escenas (panel situado en la "
-"esquina superior derecha), y las propiedades de la Label aparecerán en el "
-"Inspector (panel situado en la esquina inferior derecha)."
+"El nodo aparece en el editor del árbol de escenas (panel Escena situado en "
+"la esquina superior izquierda), y las propiedades de la etiqueta aparecerán "
+"en el Inspector (panel situado en la esquina inferior derecha)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
@@ -2598,13 +2593,12 @@ msgstr ""
 "cambiarlo por \"¡Hola Mundo!\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
-#, fuzzy
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit :kbd:`F6`):"
 msgstr ""
 "Ok, todo está listo para ejecutar la escena. Presione el botón *reproducir "
-"escena* en el centro de la barra superior derecha (o presione F6):"
+"escena* en la barra superior derecha (o presione F6):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
@@ -2880,15 +2874,14 @@ msgid "Multiple instances"
 msgstr "Instancias múltiples"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
-#, fuzzy
 msgid ""
 "You can add as many instances as you like to a scene, either by using the "
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (:kbd:`Ctrl + D`):"
 msgstr ""
 "Puedes añadir tantas instancias como desees a una escena, ya sea usando el "
-"botón \"Instancia\" nuevamente, o haciendo clic en la instancia de la bola y "
-"presionando \"Duplicar\" (Ctrl-D):"
+"botón \"Instancia\" nuevamente, o haciendo click en el icono en forma de "
+"esfera en la instancia y presionando \"Duplicar\" (Ctrl-D):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
@@ -2899,14 +2892,14 @@ msgid "Editing instances"
 msgstr "Editar instancias"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
-#, fuzzy
 msgid ""
 "Open the ``Ball`` scene and add a ``PhysicsMaterial`` by opening the "
 "\"Physics Material Override\" dropdown in the Inspector dock and selecting "
 "\"New PhysicsMaterial\"."
 msgstr ""
-"Abre la escena ``Ball`` y agrega un ``PhysicsMaterial`` haciendo click en la "
-"flecha y seleccionado \"Nuevo PhysicsMaterial\"."
+"Abre la escena ``Ball`` y agrega un ``PhysicsMaterial`` abriendo \"Physics "
+"Material Override\", haciendo click en la flecha y seleccionado \"Nuevo "
+"PhysicsMaterial\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:99
 msgid ""
@@ -3446,7 +3439,6 @@ msgid "Scene setup"
 msgstr "Configuración de la escena"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
-#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
@@ -3494,8 +3486,8 @@ msgid ""
 "Right click on the Panel node, then select \"Attach Script\" from the "
 "context menu:"
 msgstr ""
-"Haz clic con el botón derecho del ratón en el nodo Panel y selecciona \" "
-"Añadir Script \" en el menú contextual:"
+"Haz clic con el botón derecho del ratón en el nodo Panel y selecciona "
+"\"Añadir Script\" en el menú contextual:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:136
 msgid ""
@@ -4277,6 +4269,10 @@ msgid ""
 "signal connected to the same method, as each signal propagation will result "
 "in different values for those extra call arguments."
 msgstr ""
+"En el lado derecho, puede enlazar un número arbitrario de argumentos de "
+"(posiblemente) diferentes tipos. Esto puede ser útil cuando se tiene más de "
+"una señal conectada al mismo método, ya que cada emisión de la señal dará "
+"lugar a diferentes valores para esos argumentos adicionales llamados."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
@@ -4333,8 +4329,8 @@ msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
-"Primero, desconecta la señal seleccionando la conexión en la pestaña \"Nodos"
-"\" del Timer y haciendo clic en desconectar."
+"Primero, desconecta la señal seleccionando la conexión en la pestaña \"Nodo"
+"\" del Timer y haciendo click en desconectar."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
@@ -4345,10 +4341,10 @@ msgid ""
 "connection:"
 msgstr ""
 "Para realizar la conexión en código, podemos usar la función ``connect``. La "
-"establecemos en ``_ready()`` para que la conexión se cree en ejecución. La "
-"sintaxis de la función es ``<source_node>.connect(<signal_name>, "
-"<target_node>, <target_function_name>)``. Aquí está el código para la "
-"conexión de nuestro Timer:"
+"colocaremos en ``_ready()`` para que la conexión se cree al iniciar la "
+"ejecución. La sintaxis de la función es ``<source_node>."
+"connect(<signal_name>, <target_node>, <target_function_name>)``. El código "
+"para la conexión de nuestro Timer es el siguiente:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:164
 msgid "Custom signals"
@@ -4357,29 +4353,32 @@ msgstr "Señales personalizadas"
 #: ../../docs/getting_started/step_by_step/signals.rst:166
 msgid "You can also declare your own custom signals in Godot:"
 msgstr ""
-"También puedes declarar tus propia señales (signal) personalizadas dentro de "
-"Godot:"
+"También puedes declarar tus propia señales (signals) personalizadas dentro "
+"de Godot:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:184
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
-"Una vez declaradas, las señales personalizadas aparecerán en el Inspector y "
-"podrán conectarse de la misma forma que las señales integradas del nodo."
+"Una vez declarada, tus señales (signals) personalizadas aparecerán en el "
+"Inspector y podrán ser conectadas de la misma forma que las señales "
+"incorporadas en un nodo."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:187
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Para emitir una señal por código, utiliza la función ``emit_signal``:"
+msgstr ""
+"Para emitir una señal mediante código, utiliza la función ``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:212
 msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
+"Una señal también tiene la opción de declarar uno o más argumentos. "
+"Especificando los nombres de los argumentos entre paréntesis:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:232
-#, fuzzy
 msgid ""
 "The signal arguments show up in the editor's node dock, and Godot can use "
 "them to generate callback functions for you. However, you can still emit any "
@@ -4387,16 +4386,17 @@ msgid ""
 "correct values."
 msgstr ""
 "Estos argumentos se muestran en el panel de nodos del editor, y Godot puede "
-"usarlos para generar funciones de llamadas de vuelta para usted. Sin "
-"embargo, usted puede seguir emitiendo cualquier número de argumentos cuando "
-"emite señales, está en sus manos emitir los valores correctos."
+"usarlos para generar funciones de callback para usted. Sin embargo, usted "
+"puede seguir emitiendo cualquier número de argumentos cuando emite señales, "
+"así que depende de usted emitir los valores correctos."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:237
-#, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
-msgstr "Para emitir una señal por código, utiliza la función ``emit_signal``:"
+msgstr ""
+"Para pasar valores, agrégalos como el segundo argumento de la función "
+"``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:265
 msgid ""
@@ -4407,9 +4407,10 @@ msgid ""
 msgstr ""
 "Muchos de los tipos de nodos incorporados en Godot proporcionan señales que "
 "puedes utilizar para detectar eventos. Por ejemplo, un :ref:`Area2D "
-"<class_Area2D>`, el cual representa una moneda, emite una señal del tipo  "
-"``body_entered`` cada vez que el cuerpo físico del jugador entra a su forma "
-"de colisión, permitiéndote saber cuando el jugador la ha recolectado."
+"<class_Area2D>`, representando una moneda, emite una señal del tipo "
+"``body_entered`` cada vez que el physics body del jugador entra en su "
+"espacio de colisión (collision shape), lo que permite saber cuando el "
+"jugador la ha recolectado."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:270
 msgid ""
@@ -4417,7 +4418,7 @@ msgid ""
 "game including several uses of signals to connect different game components."
 msgstr ""
 "En la siguiente sección, :ref:`doc_your_first_game`, construirás un juego "
-"completo que incluirá varios usos de señales para conectar diferentes "
+"completo que incluirá el uso de varias señales para conectar diferentes "
 "componentes del juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
@@ -4448,8 +4449,8 @@ msgid ""
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
 "Este proyecto es una introducción al motor Godot. Se asume que el lector "
-"posee alguna experiencia previa en programación. Si estás empezando desde "
-"cero a programar, debes empezar por aquí : :ref:`doc_scripting`."
+"posee alguna experiencia previa en programación. Sí estás empezando desde "
+"cero a programar, deberías empezar por aquí : :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
@@ -4590,13 +4591,12 @@ msgstr ""
 "\"Hace que los hijos de un nodo no sean seleccionables\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
 "Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
 "Guarda la escena. Haz clic en Escenas -> Guardar escena, o presiona ``Ctrl"
-"+S`` en Windows/Linux o ``Command+S`` en Mac."
+"+S`` en Windows/Linux o ``Comando + S`` en Mac."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:87
 msgid "For this project, we will be following the Godot naming conventions."
@@ -5355,7 +5355,6 @@ msgstr ""
 "editor:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:676
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -5365,8 +5364,8 @@ msgstr ""
 "Selecciona el botón del medio (\"Añadir Punto\") y dibuja el camino haciendo "
 "clic para agregar los puntos en las esquinas como se muestra. Para tener los "
 "puntos ajustados a la rejilla, asegúrate de tener marcado \"Ajustar a "
-"cuadrícula\". Esta opción se encuentra dentro de las \"Opciones de fijado\" "
-"a la izquierda del \"candado\", aparece como tres puntos verticales."
+"cuadrícula\". Esta opción se encuentra a la izquierda del botón \"Bloquear"
+"\", que aparece como un imán al lado de las líneas de intersección."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:683
 msgid ""
@@ -5419,7 +5418,6 @@ msgstr ""
 "propiedad ``Mob`` dentro de la sección Variables de Script del nodo ``Main``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:740
-#, fuzzy
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
@@ -5429,8 +5427,8 @@ msgid ""
 msgstr ""
 "Luego, haz clic en Player y conecta la señal ``hit``. Haremos una nueva "
 "función llamada ``game_over``, la que ejecutará lo que debe suceder cuando "
-"el juego termina. Escribe \"game_over\" en el campo \"Method In Node\" en la "
-"parte inferior de la ventana \"Confirmar decisión\" de las señales. Agrega "
+"el juego termina. Escribe \"game_over\" en el campo \"Método receptor\" en "
+"la parte inferior de la ventana \"Conectar una señal a un método\". Agrega "
 "el siguiente código, así como una función ``new_game`` para configurar todo "
 "para un nuevo juego:"
 
@@ -5643,7 +5641,7 @@ msgstr "*Disposición* : \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid "*Autowrap* : \"On\""
-msgstr ""
+msgstr "*Envoltura Automatica* : \"Encendida\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:941
 msgid "StartButton"
@@ -5954,12 +5952,11 @@ msgstr ""
 "de entrada predeterminado asociado a la barra espaciadora."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1230
-#, fuzzy
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Space` to start the game."
 msgstr ""
-"Ahora, cuando aparezca el botón de inicio, puedes hacer clic en él o "
+"Ahora cuando aparezca el botón de inicio, puedes hacer clic en él o "
 "presionar la barra espaciadora para iniciar el juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1234
@@ -6072,7 +6069,7 @@ msgid ""
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
 "Ya que estamos en la configuración de ventanas, también deberíamos "
-"establecer la *Orientación* a *Retrato* debajo de *Portátil*"
+"establecer la *Orientación* a *Retrato* debajo de *Portátil*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
@@ -7124,7 +7121,6 @@ msgid "TextureButton"
 msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
-#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 5 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -7137,7 +7133,7 @@ msgstr ""
 "tiempo, usted usará las texturas Normal, Pressed y Hover. Focused es útil si "
 "tu interfaz escucha la entrada del teclado. La sexta ranura de imagen, la "
 "Máscara de Clic, te permite definir el área en la que se puede hacer clic "
-"utilizando una imagen en blanco y negro puro de 2 bits."
+"utilizando una imagen totalmente en blanco y negro de 1 bit."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""
@@ -7912,7 +7908,6 @@ msgstr ""
 "crear una escena vacía, haz clic en **Escena > Nueva escena**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
-#, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
@@ -7924,8 +7919,8 @@ msgstr ""
 "tu interfaz debe ser el container o elemento más cercano. En este caso es un "
 "``MarginContainer``. ``MarginContainer`` es un buen punto de partida para la "
 "mayoría de las interfaces, ya que a menudo necesita relleno alrededor de la "
-"interfaz de usuario. Presiona ``Meta+S`` para guardar la escena en el disco. "
-"Nómbrala *MainMenu*."
+"interfaz de usuario. Presiona :kbd:``Meta+S`` para guardar la escena en el "
+"disco. Nómbrala *MainMenu*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
 msgid ""
@@ -8099,7 +8094,6 @@ msgstr ""
 "lado de éstos."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
@@ -8107,9 +8101,9 @@ msgid ""
 "should position automatically."
 msgstr ""
 "En el árbol de nodos, selecciona todos los nodos ``TextureRect`` que deben "
-"ir en el lado izquierdo: el logo, las opciones del menú y la nota de la "
-"versión. Arrástralos y suéltalos en el ``VBoxContainer``. Los nodos deben "
-"posicionarse automáticamente."
+"ir en el lado izquierdo: el logo, las opciones del menú (continuar, nuevo "
+"juego, opciones), y la nota de la versión. Arrástralos y suéltalos en el "
+"``VBoxContainer``. Los nodos deben posicionarse automáticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "Containers automatically place and resize textures"
@@ -8120,7 +8114,6 @@ msgid "We're left with two problems to solve:"
 msgstr "Nos quedan dos problemas por resolver:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
-#, fuzzy
 msgid "The characters on the right aren't centered."
 msgstr "Los caracteres de la derecha no están centrados."
 
@@ -8129,7 +8122,6 @@ msgid "There's no space between the logo and the other UI elements."
 msgstr "No hay espacio entre el logo y los otros elementos de la UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "
@@ -8159,7 +8151,6 @@ msgstr ""
 "pronto como lo coloques dentro del CenterContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
@@ -8170,7 +8161,7 @@ msgid ""
 msgstr ""
 "Para espaciar las opciones del menú y el logotipo a la izquierda, usaremos "
 "un último container y sus size flags. Selecciona el ``VBoxContainer`` y "
-"pulsa ``Meta+A`` para añadir un nuevo nodo dentro de él. Añade un segundo "
+"pulsa ``ctrl + A`` para añadir un nuevo nodo dentro de él. Añade un segundo "
 "``VBoxContainer`` y llámalo \"MenuOptions\". Selecciona las tres opciones "
 "del menú, ``Continue``, ``NewGame`` y ``Options``, y arrástralas y suéltalas "
 "dentro del nuevo ``VBoxContainer``. El diseño de la UI apenas debería "
@@ -13042,7 +13033,7 @@ msgstr "Propiedades de los nodos"
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:120
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "Command"
-msgstr ""
+msgstr "Comando"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:20
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:34
@@ -13114,7 +13105,7 @@ msgstr "Descarga las herramientas de la línea de comandos"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "``--version``"
-msgstr ""
+msgstr "``--version``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 #, fuzzy
@@ -13128,15 +13119,17 @@ msgstr "``+`` ``-``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:26
 msgid "Use verbose stdout mode."
-msgstr ""
+msgstr "Usa el modo stdout verboso."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "``--quiet``"
-msgstr ""
+msgstr "``--quiet``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr ""
+"Modo silencioso, silencia los mensajes de stdout. Los errores seguirán "
+"siendo mostrados."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:31
 #, fuzzy
@@ -13156,7 +13149,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid "``-p``, ``--project-manager``"
-msgstr ""
+msgstr "``-p``, ``--project-manager``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid ""
@@ -20631,9 +20624,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:219
-#, fuzzy
 msgid "Full list of defines"
-msgstr "A continuación está la lista completa de hints:"
+msgstr "A continuación está la lista completa de hints"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:221
 msgid "``GODOT`` is always defined for Godot projects."
@@ -23698,7 +23690,6 @@ msgid "Translation format"
 msgstr "Formato de traducción"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
-#, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
 "has a special importer that can read CSV files. Most spreadsheet editors can "
@@ -23711,9 +23702,9 @@ msgstr ""
 "traducciones, Godot tiene un importador especial que puede leer archivos "
 "CSV. Todos los editores de hojas de cálculo (ya sea Libreoffice, Microsoft "
 "Office, Google Docs, etc.) pueden exportar a este formato, por lo que el "
-"único requisito es que los archivos tengan un arreglo especial. Los archivos "
-"CSV deben guardarse en codificación UTF-8 y estar formateados de la "
-"siguiente manera:"
+"único requisito es que los archivos tengan una estructura concreta. Los "
+"archivos CSV deben guardarse en codificación UTF-8 sin una `marca de orden "
+"de bytes <https://es.wikipedia.org/wiki/Marca_de_orden_de_bytes>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid ""
@@ -32560,17 +32551,16 @@ msgstr ""
 "recursos por si se desea descargarlos por separado de la demo."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:28
-#, fuzzy
 msgid ""
 "The first is the background image (`background.png <https://raw."
 "githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
 "lights_and_shadows/background.png>`_) used in the demo. You do not "
 "necessarily need a background, but we use one for the demo."
 msgstr ""
-"Lo primero a colocar es la imagen de fondo  (`bg.png <https://raw."
+"Lo primero a colocar es la imagen de fondo (`bg.png <https://raw."
 "githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
-"lights_and_shadows/bg.png>`_)  usada en la demo. No es necesario tener un "
-"fondo pero lo usaremos para la demostración."
+"lights_and_shadows/background.png>`_) usada en la demo. No es necesario "
+"tener un fondo pero lo usaremos para la demostración."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:31
 msgid ""
@@ -60259,23 +60249,23 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:94
 msgid "fuchsia"
-msgstr ""
+msgstr "fucsia"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:95
 msgid "gray"
-msgstr ""
+msgstr "gris"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:96
 msgid "green"
-msgstr ""
+msgstr "verde"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:97
 msgid "lime"
-msgstr ""
+msgstr "lima"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:98
 msgid "maroon"
-msgstr ""
+msgstr "marón"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:99
 msgid "navy"
@@ -65175,36 +65165,45 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:62
+#, fuzzy
 msgid ""
 "``WORLD_MATRIX`` is actually a modelview matrix. It takes input in local "
 "space and transforms it into view space."
 msgstr ""
+"En realidad ``WORLD_MATRIX``es un matriz ModelView . Toma la entrada en "
+"espacio local y la convierte en espacio de vista."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:65
 msgid ""
 "In order to get the world space coordinates of a vertex, you have to pass in "
 "a custom uniform like so:"
 msgstr ""
+"Para obtener las coordenadas de un vértice en espacio de mundo, hay que "
+"pasarlo en un constante Uniform personalizado:"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
 msgid "Then, in your vertex shader:"
-msgstr ""
+msgstr "Luego, en el shader de vértice:"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:83
 msgid ""
 "``world_position`` can then be used in either the vertex or fragment "
 "functions."
 msgstr ""
+"entonces se puede usar``world_position`` o en la función de vértice or de "
+"fragment."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:85
 msgid ""
 "Other built-ins, such as UV and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr ""
+"Otros típos integrados, como UV y COLOR, también se pasan a la función "
+"fragment si no están modificados."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:97
 msgid "Image space to view space transform."
-msgstr ""
+msgstr "Transformación del espacio Image al espacio de vista."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:99
 msgid "in mat4 **EXTRA_MATRIX**"
@@ -65732,24 +65731,37 @@ msgid ""
 "or corner of a Sprite) goes and the fragment shader decides what color "
 "individual pixels receive."
 msgstr ""
+"Por lo general, la salida del shader son los pixels colorados del objeto "
+"dibujado en la vista. Sin embargo, algunos shaders permiten salidas "
+"especializadas (especialmente con los APIs como Vulkan). Los shaders "
+"funcionan dentro el canal de shader. El proceso estandar es el canal de "
+"shader «vértice -> frgament». El shader vértive se usa para calcular dónde "
+"se ubica cada vértice (un punto en un modelo 3D, or la esquína de un Sprite) "
+"y el shader fragment calcula el color de los pixels individuales."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:35
 msgid ""
 "Suppose you want to update all the pixels in a texture to a given color, on "
 "the CPU you would write:"
 msgstr ""
+"Suponemos que quisieras cambiar todos los pixels de una textura a un color "
+"determinado. En el CPU escribirías:"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:43
 msgid ""
 "In a shader you are given access only to the inside of the loop so what you "
 "write looks like this:"
 msgstr ""
+"En un shader sólo tienes acceso al interior del bucle, por lo tanto lo que "
+"escribes es así:"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:52
 msgid ""
 "You have no control over how this function is called. So you have to design "
 "your shaders differently from how you would design programs on the CPU."
 msgstr ""
+"No tienes control sobre como se llama esta función. Por lo tanto hay que "
+"crear el shader de manera distinta a la que creas programas en el CPU."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:55
 msgid ""
@@ -65760,38 +65772,45 @@ msgid ""
 "parallel, as they do not depend on each other. This lack of flexibility is "
 "designed to work with the GPU which allows shaders to be incredibly fast."
 msgstr ""
+"Una consequencia del pipeline de shaders es que se puede acceder los "
+"resultados de ejecuciones anteriores del shader; no se puede acceder otros "
+"píxeles desde el que se está dibujando; y no se puede escribir fuera de este "
+"píxel. Esto permite que el GPU ejecute al shader para distintos píxeles en "
+"paralelo; pues no se depende uno al otro. Esta falta de flexibilidad es "
+"diseñado para funcionar con el GPU y permite que los shaders sean "
+"rapidíssimos."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:62
 msgid "What can they do"
-msgstr ""
+msgstr "Lo que pueden hacer"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:64
 msgid "position vertices very fast"
-msgstr ""
+msgstr "colocar vértices muy rapidamente"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:65
 msgid "compute color very fast"
-msgstr ""
+msgstr "calcular colores muy rapidamente"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:66
 msgid "compute lighting very fast"
-msgstr ""
+msgstr "calcular la iluminación muy rapidamente"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:67
 msgid "lots and lots of math"
-msgstr ""
+msgstr "muchíssima matemática"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:70
 msgid "What can't they do"
-msgstr ""
+msgstr "Lo que no pueden hacer"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:72
 msgid "draw outside mesh"
-msgstr ""
+msgstr "dibujar fuera de una malla"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:73
 msgid "access other pixels from current pixel (or vertices)"
-msgstr ""
+msgstr "acceder a otros píxeles desde el píxel actual (o vértices)"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:74
 msgid "store previous iterations"
@@ -65800,6 +65819,8 @@ msgstr "guarda iteraciones previas"
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:75
 msgid "update on the fly (they can, but they need to be compiled)"
 msgstr ""
+"actualizar sobre la marcha (bueno, sí que pueden pero hay que compilarlos "
+"antes)"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:78
 msgid "Structure of a shader"
@@ -65810,12 +65831,16 @@ msgid ""
 "In Godot, shaders are made up of 3 main functions: the ``vertex()`` "
 "function, the ``fragment()`` function and the ``light()`` function."
 msgstr ""
+"En Godot, los shader se componen de tres funciones: la función ``vertex()``, "
+"la funcíon ``fragment()`` y la función ``light()``."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:83
 msgid ""
 "The ``vertex()`` function runs over all the vertices in the mesh and sets "
 "their positions as well as some other per-vertex variables."
 msgstr ""
+"La función ``vertex()`` ejecuta todos los vértices en la malla y define la "
+"posición y otras variables de los vértices."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:86
 msgid ""
@@ -65824,12 +65849,18 @@ msgid ""
 "variables from the ``vertex()`` function are interpolated between the "
 "vertices to provide the values for the ``fragment()`` function."
 msgstr ""
+"La función ``fragment()`` ejecuta por cada píxel que está cubierta por la "
+"malla. Usa los variables de la función ``vertex()`` para ejecutar. Los "
+"variables de la función ``vertex()`` se interpolan entre los vértices para "
+"aportar los valores para la función ``fragment()``."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:90
 msgid ""
 "The ``light()`` function runs for every pixel and for every light. It takes "
 "variables from the ``fragment()`` function and from previous runs of itself."
 msgstr ""
+"La función ``light()`` ejecuta por cada píxel y cada luz. Toma variables de "
+"la función ``fragement()`` y de ejecuciones anteriores de ella misma."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:93
 msgid ""
@@ -65853,6 +65884,13 @@ msgid ""
 "quickly, but only when many or all cores are doing the same calculation at "
 "once, but with different data."
 msgstr ""
+"La GPU es capáz de generar gráficos mucho más rapido que la CPU por varios "
+"razones, la más notable es que pueden ejecutar cálculos masivamente en "
+"paralelo. Por lo general, una CPU tiene 4 o 8 núcleos pero un GPU tiene "
+"miles. Eso significa que la GPU puede hacer cientos de tareas a la vez. Los "
+"diseñedores han aprovechado de esto de manera que permite hacer muchos "
+"cálculos con rapidez, pero solo cuando la mayoría o todos de los núcleos "
+"están haciendo el mismo cálculo, pero con datos distintos."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:104
 msgid ""
@@ -69368,6 +69406,10 @@ msgid ""
 "per request. A common strategy is to create and delete HTTPRequest nodes at "
 "runtime as necessary."
 msgstr ""
+"Ten en cuenta que tienes que esperar una solicitud de terminar antes que "
+"envíar otro. Se necesita un nodo por cada solicitud para hacer varias "
+"solicitudes a la vez. Una estrategía común es crear y borrar nodos de "
+"HTTPRequest durante el tiempo de ejecución."
 
 #: ../../docs/tutorials/networking/http_client_class.rst:4
 msgid "HTTP client class"
@@ -69536,11 +69578,11 @@ msgstr ""
 #: ../../docs/tutorials/networking/websocket.rst:4
 #: ../../docs/tutorials/networking/webrtc.rst:14
 msgid "WebSocket"
-msgstr ""
+msgstr "WebSocket"
 
 #: ../../docs/tutorials/networking/websocket.rst:7
 msgid "HTML5 and WebSocket"
-msgstr ""
+msgstr "HTML5 y WebSocket"
 
 #: ../../docs/tutorials/networking/websocket.rst:9
 msgid ""
@@ -77125,9 +77167,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:95
-#, fuzzy
 msgid "From your script::"
-msgstr "El papel del script"
+msgstr "Desde tu script::"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:101
 msgid ""
@@ -87277,9 +87318,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:379
-#, fuzzy
 msgid "Then attach the following script to any node::"
-msgstr "Crea un Node y anéxale el siguiente script."
+msgstr "Posteriormente añádele el siguiente script a cualquier nodo::"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:4
 msgid "Custom AudioStreams"
@@ -88674,9 +88714,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:21
-#, fuzzy
 msgid "Best Practices"
-msgstr "Mejores prácticas:"
+msgstr "Mejores Prácticas"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:24
 msgid "#1: The problem always comes first"
@@ -90987,13 +91026,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:15
-#, fuzzy
 msgid ""
 "This guide is available as a `video tutorial on YouTube <https://www.youtube."
 "com/watch?v=5jeHXxeX-JY>`_."
 msgstr ""
-"Puedes ver este tutorial en formato `video en Youtube <https://www.youtube."
-"com/watch?v=y1E_y9AIqow>`_."
+"Este guía esta disponible como un `video tutorial en Youtube <https://www."
+"youtube.com/watch?v=5jeHXxeX-JY>`_."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:21
 msgid ""
@@ -91431,11 +91469,11 @@ msgstr "Emit :ref:`renamed <class_node_signal_renamed>`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "[signal Class.signalname]"
-msgstr ""
+msgstr "[señal Clase.nombreseñal]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Link to another class's signal"
-msgstr ""
+msgstr "Enlazar con la señal de otra clase"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Emit [signal Node.renamed]."
@@ -91667,9 +91705,8 @@ msgid "Other chats"
 msgstr "Otros chats"
 
 #: ../../docs/community/channels.rst:31
-#, fuzzy
 msgid "`Discord Server <https://discordapp.com/invite/zH7NUgz>`_"
-msgstr "`Discord <https://discordapp.com/invite/zH7NUgz>`_"
+msgstr "`Servidor Discord <https://discordapp.com/invite/zH7NUgz>`_"
 
 #: ../../docs/community/channels.rst:32
 msgid ""
@@ -91818,132 +91855,126 @@ msgid "Video tutorials"
 msgstr "Vídeo tutoriales"
 
 #: ../../docs/community/tutorials.rst:22
-#, fuzzy
 msgid ""
 "`Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ (2D, "
 "GDScript and VisualScript)."
-msgstr "`Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_"
+msgstr ""
+"`Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ (2D, "
+"GDScript and VisualScript)."
 
 #: ../../docs/community/tutorials.rst:23
-#, fuzzy
 msgid ""
 "`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
 "playlists>`_ (2D and 3D, GDScript, VisualScript and C#)."
 msgstr ""
 "`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
-"playlists>`_"
+"playlists>`_ (2D and 3D, GDScript, VisualScript and C#)."
 
 #: ../../docs/community/tutorials.rst:24
-#, fuzzy
 msgid ""
 "`Game Endeavor <https://www.youtube.com/channel/UCLweX1UtQjRjj7rs_0XQ2Eg/"
 "videos>`_ (2D, GDScript)."
 msgstr ""
 "`Game Endeavor <https://www.youtube.com/channel/UCLweX1UtQjRjj7rs_0XQ2Eg/"
-"videos>`_"
+"videos>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:25
-#, fuzzy
 msgid ""
 "`Game from Scratch <https://www.youtube.com/watch?"
 "v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_ (2D and 3D, "
 "GDScript and C#)."
 msgstr ""
 "`Game from Scratch <https://www.youtube.com/watch?"
-"v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_"
+"v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_ (2D and 3D, "
+"GDScript and C#)."
 
 #: ../../docs/community/tutorials.rst:26
-#, fuzzy
 msgid ""
 "`HeartBeast <https://www.youtube.com/watch?v=wETY5_9kFtA&list=PL9FzW-"
 "m48fn2jlBu_0DRh7PvAt-GULEmd>`_ (2D, GDScript)."
 msgstr ""
 "`HeartBeast <https://www.youtube.com/watch?v=wETY5_9kFtA&list=PL9FzW-"
-"m48fn2jlBu_0DRh7PvAt-GULEmd>`_"
+"m48fn2jlBu_0DRh7PvAt-GULEmd>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:27
-#, fuzzy
 msgid ""
 "`Jeremy Bullock <https://www.youtube.com/channel/UCwJw2-V5S1TkBjLQ3_Ws54g>`_ "
 "(2D and 3D, GDScript, VisualScript and C#)."
 msgstr ""
-"`Jeremy Bullock <https://www.youtube.com/channel/UCwJw2-V5S1TkBjLQ3_Ws54g>`_"
+"`Jeremy Bullock <https://www.youtube.com/channel/UCwJw2-V5S1TkBjLQ3_Ws54g>`_ "
+"(2D and 3D, GDScript, VisualScript and C#)."
 
 #: ../../docs/community/tutorials.rst:28
-#, fuzzy
 msgid ""
 "`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
 "playlists>`__ (2D and 3D, GDScript and VisualScript)."
 msgstr ""
 "`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
-"playlists>`_"
+"playlists>`__ (2D and 3D, GDScript and VisualScript)."
 
 #: ../../docs/community/tutorials.rst:29
-#, fuzzy
 msgid ""
 "`Mister Taft Creates <https://www.youtube.com/playlist?"
 "list=PL4vbr3u7UKWqwQlvwvgNcgDL1p_3hcNn2>`_ (2D, GDScript)."
 msgstr ""
 "`Mister Taft Creates <https://www.youtube.com/playlist?"
-"list=PL4vbr3u7UKWqwQlvwvgNcgDL1p_3hcNn2>`_"
+"list=PL4vbr3u7UKWqwQlvwvgNcgDL1p_3hcNn2>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:30
-#, fuzzy
 msgid ""
 "`Miziziziz <https://www.youtube.com/playlist?"
 "list=PLmugv6_kd0qN6AyjG245_Pdak4MXKUx88>`_ (2D, GDScript)."
 msgstr ""
 "`Miziziziz <https://www.youtube.com/playlist?"
-"list=PLmugv6_kd0qN6AyjG245_Pdak4MXKUx88>`_"
+"list=PLmugv6_kd0qN6AyjG245_Pdak4MXKUx88>`_(2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:31
-#, fuzzy
 msgid ""
 "`P1X / Krzysztof Jankowski <https://www.youtube.com/playlist?"
 "list=PLvDk7UKhld4xGPovdB4IFtAHYMYjx_-3K>`_ (3D)."
 msgstr ""
 "`P1X / Krzysztof Jankowski <https://www.youtube.com/playlist?"
-"list=PLvDk7UKhld4xGPovdB4IFtAHYMYjx_-3K>`_"
+"list=PLvDk7UKhld4xGPovdB4IFtAHYMYjx_-3K>`_(3D)."
 
 #: ../../docs/community/tutorials.rst:32
-#, fuzzy
 msgid ""
 "`Pigdev <https://www.youtube.com/playlist?"
 "list=PLPMN4vCRFdordS3E-3zi0Hdh7pAsbWQ6a>`_ (2D, GDScript)."
 msgstr ""
 "`Pigdev <https://www.youtube.com/playlist?"
-"list=PLPMN4vCRFdordS3E-3zi0Hdh7pAsbWQ6a>`_"
+"list=PLPMN4vCRFdordS3E-3zi0Hdh7pAsbWQ6a>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:33
-#, fuzzy
 msgid ""
 "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`__ (2D, "
 "GDScript and VisualScript)."
-msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
+msgstr ""
+"`Steincodes <https://www.youtube.com/c/steincodes/playlists>`__ (2D, "
+"GDScript and VisualScript)."
 
 #: ../../docs/community/tutorials.rst:34
 msgid ""
 "`TheBuffED <https://www.youtube.com/watch?"
 "v=ygGaN1EOQEA&list=PLvN5Z3tTxXEDfQkt4Frg6ALirespSwZd7>`_ (2D, GDScript)."
 msgstr ""
+"`TheBuffED <https://www.youtube.com/watch?"
+"v=ygGaN1EOQEA&list=PLvN5Z3tTxXEDfQkt4Frg6ALirespSwZd7>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:35
-#, fuzzy
 msgid ""
 "`Code with Tom <https://www.youtube.com/playlist?"
 "list=PLiUQR4U_J9ec0k91iHPme_qtfS1nrWF3W>`_ (2D and 3D, GDScript)."
 msgstr ""
 "`Code with Tom <https://www.youtube.com/playlist?"
-"list=PLiUQR4U_J9ec0k91iHPme_qtfS1nrWF3W>`_"
+"list=PLiUQR4U_J9ec0k91iHPme_qtfS1nrWF3W>`_(2D and 3D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:36
-#, fuzzy
 msgid ""
 "`BornCG <https://www.youtube.com/playlist?"
 "list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_ (3D, GDScript)."
 msgstr ""
 "`BornCG <https://www.youtube.com/playlist?"
-"list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_"
+"list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_ (3D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:39
 msgid "Text tutorials"

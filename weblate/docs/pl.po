@@ -7,6 +7,7 @@
 # Adam Jankowski <adamjankowski1000@gmail.com>, 2019.
 # Andrzej <impar.andrzej@gmail.com>, 2018.
 # Antek Karaś <antos.karas@gmail.com>, 2019.
+# Arczi Moti <gonzo115@gmail.com>, 2020.
 # Artur Maciąg <arturmaciag@gmail.com>, 2020.
 # Bartosz Stasiak <bs97086@amu.edu.pl>, 2019.
 # beetbeet <hellobeetbeet@gmail.com>, 2019.
@@ -37,7 +38,7 @@
 # Rafał Wyszomirski <rawyszo@gmail.com>, 2019.
 # RM <synaptykq@gmail.com>, 2018-2019.
 # Saran <saran@op.pl>, 2018.
-# Sebastian Pasich <sebastian.pasich@gmail.com>, 2018-2019.
+# Sebastian Pasich <sebastian.pasich@gmail.com>, 2018-2020.
 # silicius <silicius42@gmail.com>, 2018.
 # Spamowy Mail <spamowy15@gmail.com>, 2020.
 # Szymon Nowakowski <smnbdg13@gmail.com>, 2019.
@@ -49,8 +50,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-03-13 17:49+0100\n"
-"PO-Revision-Date: 2020-03-13 16:33+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-04-23 20:22+0000\n"
+"Last-Translator: Sebastian Pasich <sebastian.pasich@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -59,7 +60,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.0.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -1682,13 +1683,12 @@ msgid "Scripting"
 msgstr "Skrypty"
 
 #: ../../docs/about/docs_changelog.rst:113
-#, fuzzy
 msgid ":ref:`doc_gdscript_static_typing`"
-msgstr ":ref:`Typowanie silne w GDscript <doc_gdscript_static_typing>`"
+msgstr ":ref:`Typowanie statyczne w GDscript <doc_gdscript_static_typing>`"
 
 #: ../../docs/about/docs_changelog.rst:118
 msgid "Best Practices:"
-msgstr "Dobre praktyki:"
+msgstr "Najlepsze praktyki:"
 
 #: ../../docs/about/docs_changelog.rst:120
 #, fuzzy
@@ -1711,14 +1711,12 @@ msgid ":ref:`doc_scenes_versus_scripts`"
 msgstr ":ref:`Sceny kontra skrypty <doc_scenes_versus_scripts>`"
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`doc_autoloads_versus_internal_nodes`"
 msgstr ""
-":ref:`Automatyczne ładowanie kontra węzły wewnętrzne "
+":ref:`Automatycznie ładowane skrypty kontra węzły wewnętrzne "
 "<doc_autoloads_versus_internal_nodes>`"
 
 #: ../../docs/about/docs_changelog.rst:125
-#, fuzzy
 msgid ":ref:`doc_node_alternatives`"
 msgstr ":ref:`Alternatywy węzłów <doc_node_alternatives>`"
 
@@ -1733,7 +1731,6 @@ msgid ":ref:`doc_godot_notifications`"
 msgstr ":ref:`Powiadomienia Godota <doc_godot_notifications>`"
 
 #: ../../docs/about/docs_changelog.rst:128
-#, fuzzy
 msgid ":ref:`doc_data_preferences`"
 msgstr ":ref:`Preferencje danych <doc_data_preferences>`"
 
@@ -1743,23 +1740,20 @@ msgid ":ref:`doc_logic_preferences`"
 msgstr ":ref:`Preferencje logiki <doc_logic_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:134
-#, fuzzy
 msgid ":ref:`doc_2d_lights_and_shadows`"
 msgstr ":ref:`Oświetlenie i cienie 2D <doc_2d_lights_and_shadows>`"
 
 #: ../../docs/about/docs_changelog.rst:135
-#, fuzzy
 msgid ":ref:`doc_2d_meshes`"
-msgstr ":ref:`Kształty 2D <doc_2d_meshes>`"
+msgstr ":ref:`Meshe 2D`"
 
 #: ../../docs/about/docs_changelog.rst:138 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
 msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:140
-#, fuzzy
 msgid ":ref:`doc_csg_tools`"
-msgstr ":ref:`CSG <doc_csg_tools>`"
+msgstr ":ref:`Narzędzia CSG <doc_csg_tools>`"
 
 #: ../../docs/about/docs_changelog.rst:141
 #, fuzzy
@@ -1796,18 +1790,16 @@ msgid "Animation"
 msgstr "Animacja"
 
 #: ../../docs/about/docs_changelog.rst:153
-#, fuzzy
 msgid ":ref:`doc_2d_skeletons`"
-msgstr ":ref:`Szkielety 2D <doc_2d_skeletons>`"
+msgstr ":ref:`Szkielety 2D `"
 
 #: ../../docs/about/docs_changelog.rst:154
-#, fuzzy
 msgid ":ref:`doc_animation_tree`"
-msgstr ":ref:`AnimationTree <doc_animation_tree>`"
+msgstr ":ref:`AnimationTree `"
 
 #: ../../docs/about/docs_changelog.rst:157 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
-msgstr "GUI"
+msgstr "GUI (Interfejs)"
 
 #: ../../docs/about/docs_changelog.rst:159
 #, fuzzy
@@ -1818,20 +1810,17 @@ msgstr ":ref:`Interfejs Godota <doc_godot_interfaces>`"
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr "Okno podglądu"
+msgstr "Viewporty"
 
 #: ../../docs/about/docs_changelog.rst:164
-#, fuzzy
 msgid ":ref:`doc_viewport_as_texture`"
-msgstr ":ref:`Używanie Viewport jako tekstury <doc_viewport_as_texture>`"
+msgstr ":ref:`Używanie Viewportu jako tekstury`"
 
 #: ../../docs/about/docs_changelog.rst:165
-#, fuzzy
 msgid ":ref:`doc_custom_postprocessing`"
-msgstr ":ref:`Dostosowany post-processing <doc_custom_postprocessing>`"
+msgstr ":ref:`Niestandardowy post-processing `"
 
 #: ../../docs/about/docs_changelog.rst:170
-#, fuzzy
 msgid ":ref:`doc_intro_to_shaders_water_workshop`"
 msgstr ""
 ":ref:`Wprowadzenie do shaderów: Woda 2D i 3D (7 poradników filmowych) "
@@ -1845,7 +1834,6 @@ msgstr ""
 "<doc_migrating_to_godot_shader_language>`"
 
 #: ../../docs/about/docs_changelog.rst:172
-#, fuzzy
 msgid ":ref:`doc_advanced_postprocessing`"
 msgstr "Zaawansowany post-processing"
 
@@ -1864,14 +1852,12 @@ msgid ":ref:`doc_shading_language`"
 msgstr ":ref:`Język cieniowania <doc_shading_language>`"
 
 #: ../../docs/about/docs_changelog.rst:178
-#, fuzzy
 msgid ":ref:`doc_spatial_shader`"
-msgstr " :ref:`Shadery przestrzenne <doc_spatial_shader>`"
+msgstr ":ref:`Shadery przestrzenne <doc_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:179
-#, fuzzy
 msgid ":ref:`doc_canvas_item_shader`"
-msgstr ":ref:`doc_vectors_advanced`"
+msgstr ":ref:`Shader Canvas Item`"
 
 #: ../../docs/about/docs_changelog.rst:180
 #, fuzzy
@@ -1885,26 +1871,22 @@ msgstr ""
 ":ref:`Tworzenie wtyczek ekranu głównego <doc_making_main_screen_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:186
-#, fuzzy
 msgid ":ref:`doc_spatial_gizmo_plugins`"
-msgstr "Tworzenie wtyczek"
+msgstr ":ref:`Przestrenne wtyczki Gizmo`"
 
 #: ../../docs/about/docs_changelog.rst:189
 #: ../../docs/tutorials/platform/index.rst:2
 msgid "Platform-specific"
-msgstr "Specyficzny dla platformy"
+msgstr "Specyficzne dla platformy"
 
 #: ../../docs/about/docs_changelog.rst:191
-#, fuzzy
 msgid ":ref:`doc_customizing_html5_shell`"
 msgstr ""
-":ref:`Dostosowanie eksportu do strony sieciowej HTML "
-"<doc_customizing_html5_shell>`"
+":ref:`Dostosowanie eksportu do strony HTML <doc_customizing_html5_shell>`"
 
 #: ../../docs/about/docs_changelog.rst:196
-#, fuzzy
 msgid ":ref:`doc_thread_safe_apis`"
-msgstr ":ref:`Wątkowo-bezpieczne API <doc_thread_safe_apis>`"
+msgstr ":ref:`Bezpieczne API Thread<doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:201
 #, fuzzy
@@ -2082,13 +2064,12 @@ msgstr ""
 "otworzy go w edytorze."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"Następnym razem, gdy otworzysz Godota, zobaczysz swój nowy projekt na "
-"liście. Dwukrotnie kliknij na niego, aby otworzyć go w edytorze."
+"Następnym razem, gdy otworzysz menedżera projektu, nowy projekt zostanie "
+"wyświetlony na liście. Kliknij dwukrotnie, aby otworzyć go w edytorze."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -2614,6 +2595,9 @@ msgid ""
 "one of your monitors, go to **Project → Project Settings → Display → "
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
+"Jeśli nie zadziałało a masz monitor o wysokim DPI, przejdź do **Projekt → "
+"Ustawienia projektu → Display → Window** następnie zaznacz **Allow Hidpi** w "
+"zakładce **Dpi**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
 msgid "Configuring the project"
@@ -21496,6 +21480,9 @@ msgid ""
 "translations written in the gettext ``.po`` format. See :ref:"
 "`doc_localization_using_gettext` for details."
 msgstr ""
+"Jeśli potrzebujesz bardziej wydajnego formatu pliku, Godot obsługuje również "
+"ładowanie tłumaczeń napisanych w formacie gettext ``.po``. Zobacz :ref:"
+"`doc_localization_using_gettext` po szczegóły."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 msgid "Translation format"
@@ -21525,12 +21512,19 @@ msgid ""
 "workarounds as described `here <https://stackoverflow.com/questions/4221176/"
 "excel-to-csv-with-utf8-encoding>`__."
 msgstr ""
+"Domyślnie Microsoft Excel będzie zawsze zapisywał pliki CSV z kodowaniem "
+"ANSI, a nie UTF-8. Nie ma wbudowanego sposobu, aby to zrobić, ale są "
+"obejścia, jak opisano `tutaj <https://stackoverflow.com/questions/4221176/"
+"excel-to-csv-with-utf8-encoding>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
+#, fuzzy
 msgid ""
 "We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
 "Sheets instead."
 msgstr ""
+"Zalecamy używanie programu `LibreOffice <https://www.libreoffice.org/>`__ "
+"lub Google Sheets jako narzędzia."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
 msgid "CSV files must be formatted as follows:"
@@ -86021,7 +86015,7 @@ msgstr "`Steincodes <https://steincodes.tumblr.com>`__"
 
 #: ../../docs/community/tutorials.rst:45
 msgid "Devlogs"
-msgstr ""
+msgstr "Devlogi"
 
 #: ../../docs/community/tutorials.rst:47
 msgid ""

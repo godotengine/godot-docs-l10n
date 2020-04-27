@@ -27,6 +27,7 @@
 # pjh37 <jjjj1352@naver.com>, 2018.
 # Sun Kim <perplexingsun@gmail.com>, 2018.
 # Taehun Yun <yooontehoon@naver.com>, 2018.
+# Tilto_ <tilto0822@develable.xyz>, 2020.
 # Yeonho Jang <siabard@gmail.com>, 2018.
 # Yongsung Kang <yongsung.kang@gmail.com>, 2019.
 # 이용현 <dldydgus1995@naver.com>, 2020.
@@ -40,8 +41,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-03-13 17:49+0100\n"
-"PO-Revision-Date: 2020-03-01 05:53+0000\n"
-"Last-Translator: Kim <kimthaehoon@nate.com>\n"
+"PO-Revision-Date: 2020-03-27 07:43+0000\n"
+"Last-Translator: Tilto_ <tilto0822@develable.xyz>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
 "Language: ko\n"
@@ -876,29 +877,31 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "Godot는 무슨 유형의 3D 모델을 지원하나요?"
 
 #: ../../docs/about/faq.rst:150
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"그렇지만 고도의 Collada 지원이 정말 좋기 때문에 Maya나 3DS Max를 사용한다면 "
-"가장 호환성이 좋은 `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/"
-"wiki/OpenCOLLADA-Tools>`_ 내보내기 도구를 사용해주세요. Blender를 사용한다면 "
-"우리가 만든 `Better Collada Exporter <https://godotengine.org/download>`_ 를 "
-"살펴보세요."
+"Godot는 Collada를 지원하기 때문에 Maya나 3DS Max를 사용한다면 가장 호환성이 "
+"좋은 `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
+"OpenCOLLADA-Tools>`_ 내보내기 도구를 살펴보세요. Blender를 사용한다면 우리가 "
+"만든 `Better Collada Exporter <https://godotengine.org/download>`_ 를 살펴보"
+"세요."
 
 #: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
 msgstr "Godot 3.0부터 glTF를 지원합니다."
 
 #: ../../docs/about/faq.rst:155
+#, fuzzy
 msgid ""
 "FBX is supported via the Open Asset Import library. However, FBX is "
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX는 공개 에셋 라이브러리를 지원합니다. 하지만, FBX는 독점적이므로 워크플로"
+"우에 적합한 경우, 위에 나열된 다른 형식을 사용하는 것이 좋습니다."
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -1986,12 +1989,11 @@ msgstr ""
 "(Workspaces)**, **실행 및 테스트 버튼(Playtest buttons)**\\ 입니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you’ll manage your project files and assets."
 msgstr ""
 "왼쪽 아래에는 **파일 시스템 독(FileSystem dock)**\\ 이 있습니다. 여기서 프로"
-"젝트 파일과 애셋을 관리합니다."
+"젝트의 파일과 애셋을 관리합니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 #, fuzzy
@@ -2043,13 +2045,12 @@ msgstr ""
 "어갑니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
 "**3D 작업 공간(3D workspace)**\\ 에서는 3D 게임 용 메시와 조명, 레벨 설계를 "
-"할 수 있습니다. F2 키를 눌러 들어갑니다."
+"할 수 있습니다. 키보드의 F2(macOS에서는 Alt + 2) 키를 눌러 들어갑니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
@@ -2406,13 +2407,12 @@ msgstr ""
 "World!\"를 입력해봅시다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
-#, fuzzy
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit :kbd:`F6`):"
 msgstr ""
-"좋아요. 씬을 실행할 준비가 됐습니다! 상단 메뉴에서 버튼 중 씬 실행(PLAY "
-"SCENE) 버튼을 누르세요 (혹은 F6 키를 누르세요):"
+"좋아요. 씬을 실행할 모든 준비가 되었습니다! 상단 메뉴에서 버튼 중 씬 실행"
+"(PLAY SCENE) 버튼을 누르세요 (혹은 F6 키를 누르세요):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
@@ -9672,8 +9672,8 @@ msgid ""
 "every attack!"
 msgstr ""
 "또한 ``update_health`` 를 ``_ready`` 함수의 마지막에 호출하여 게임의 시작에"
-"서 ``Number`` 노드의 ``text``  를 적당한 값으로 초기화합니다. F5를 누르면 게"
-"임을 테스트합니다: 체력 막대가 매 공격마다 업데이트 됩니다!"
+"서 ``Number`` 노드의 ``text`` 를 적당한 값으로 초기화합니다. F5를 누르면 게임"
+"을 테스트합니다: 체력 막대가 매 공격마다 업데이트 됩니다!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""
@@ -18888,8 +18888,8 @@ msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
 msgstr ""
-"맞춤 입력에 따라 수학 및 논리 표현식을 실행 (예:  \"a*5+b\"에서, a와 b는 맞"
-"춤 입력입니다):"
+"맞춤 입력에 따라 수학 및 논리 표현식을 실행 (예: \"a*5+b\"에서, a와 b는 맞춤 "
+"입력입니다):"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:493
 msgid "Access local variables or properties:"
@@ -18971,10 +18971,10 @@ msgid ""
 msgstr ""
 "C#은 하이 레벨 프로그래밍 언어로 Microsoft가 개발했습니다. Godot에서는 Mono "
 "6.x .NET framework로 구현되었으며, C# 8.0을 완전 지원합니다. Mono는 Microsoft"
-"의 .NET Framework의 오픈 소스로 C#을 위한 ECMA 표준과 Common Language Runtime"
-"에 기반으로 구현되었습니다. 적합성을 확인하기 위한 좋은 출발점으로 Mono 문서"
-"에 있는 `적합성<http://www.mono-project.com/docs/about-mono/compatibility/"
-">`_ 페이지 입니다."
+"의 .NET Framework의 오픈 소스로 C#과 Common Language Runtime을 위한 ECMA 표준"
+"을 기반으로 구현되었습니다. 호환성을 확인하기 위한 좋은 시작점으로 Mono 문서"
+"에 있는 `호환성<http://www.mono-project.com/docs/about-mono/compatibility/"
+">`_ 을 살펴보세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:29
 msgid ""
@@ -19104,9 +19104,10 @@ msgid ""
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
-"만약 Visual Studio Code를 사용하고 있다면, `C# 확장 프로그램<https://"
-"marketplace.visualstudio.com/items?itemName=ms-vscode.csharp>`_\\ 을 설치하"
-"여 문법 하이라이트 효과나 IntelliSense같은 기능을 사용 할 수 있습니다."
+"만약 비주얼 스튜디오 코드를 사용하고 계신다면, 문법 하이라이트와 "
+"IntelliSense 같은 기능들을 활성화하기 위해 `C# 확장 프로그램 <https://"
+"marketplace.visualstudio.com/items?itemName=ms-vscode.csharp>`_을 다운받아 설"
+"치하는걸 잊지 마시기 바랍니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:99
 msgid ""
@@ -25138,13 +25139,12 @@ msgid "Download the Android SDK"
 msgstr "Android SDK 다운로드하기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
-#, fuzzy
 msgid ""
 "Download and install the Android SDK from `developer.android.com <https://"
 "developer.android.com/studio/>`__."
 msgstr ""
 "https://developer.android.com/studio/ 에서 Android SDK를 다운로드하고 설치하"
-"세요"
+"세요."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
 msgid ""
@@ -25695,7 +25695,7 @@ msgid ""
 "<doc_customizing_html5_shell>` can display it."
 msgstr ""
 "기본 HTML 페이지는 로딩 중에 부팅 스플래시를 보여주지 않습니다. 하지만 이미지"
-"를 PNG 파일로 내보낼 수 있기 때문에,  :ref:`맞춤 HTML 페이지 "
+"를 PNG 파일로 내보낼 수 있기 때문에, :ref:`맞춤 HTML 페이지 "
 "<doc_customizing_html5_shell>` \\ 가 부팅 스플래시를 보여줄 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:108
@@ -25789,8 +25789,8 @@ msgstr ""
 "니다. ``.wasm`` 파일은 엔진을 구현하는 이진 WebAssembly 모듈입니다. ``.pck`` "
 "파일은 Godot 메인 팩으로 게임을 갖고 있습니다. ``.js`` 파일은 시작 코드가 있"
 "으며 ``.html`` 파일이 엔진에 접근하는 데 사용됩니다. ``.png`` 파일은 부팅 스"
-"플래시 이미지입니다. 기본 HTML 페이지에서는 쓰이지 않지만,  :ref:`맞춤 HTML "
-"페이지 <doc_customizing_html5_shell>`\\ 를 위해 포함됩니다."
+"플래시 이미지입니다. 기본 HTML 페이지에서는 쓰이지 않지만, :ref:`맞춤 HTML 페"
+"이지 <doc_customizing_html5_shell>`\\ 를 위해 포함됩니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:146
 msgid ""
@@ -26035,8 +26035,8 @@ msgid ""
 "Configuring the custom build is a more or less straightforward process, but "
 "it may take a while to get used to how the Android SDK works."
 msgstr ""
-"맞춤 빌드를 구성하는 것은 다소 간단한 과정이지만, Android SDK가 작동하는 방식"
-"에 익숙해지는 데는 시간이 걸릴 수 있습니다."
+"맞춤 빌드를 구성하는 것은 생각보다 간단한 과정이지만, Android SDK가 작동하는 "
+"방식에 익숙해지는 데는 시간이 걸릴 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:19
 msgid ""
@@ -26044,7 +26044,6 @@ msgid ""
 msgstr "이 과정을 따르기 위해 가능한 디테일하게 설명하겠습니다."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:22
-#, fuzzy
 msgid "Set up the custom build environment"
 msgstr "맞춤 빌드 환경 설정하기"
 
@@ -28085,7 +28084,7 @@ msgid ""
 "cases where one needs data in a custom class."
 msgstr ""
 ":ref:`참조 <class_Reference>`: 객체보다 오직 조금 더 복잡함. 참조는 자신을 참"
-"조하는 지를 추적해서 더 이상 참조하지 않으면 불러온 메모리를 삭제합니다.  이"
+"조하는 지를 추적해서 더 이상 참조하지 않으면 불러온 메모리를 삭제합니다. 이"
 "는 데이터가 필요한 맞춤 클래스에 있어 대부분의 경우에 유용합니다."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:41
@@ -29945,8 +29944,8 @@ msgid ""
 "dropdown menu select ``New ParticlesMaterial``."
 msgstr ""
 "입자 노드에 프로세스 재료(process material)을 추가하기 위해서 인스펙터"
-"(Inspecter) 패널에서 ``Process Material`` 로 갑니다.  ``Material`` 박스를 클"
-"릭한 다음 드롭다운 메뉴에서 ``New ParticlsMaterial``를 선택합니다."
+"(Inspecter) 패널에서 ``Process Material`` 로 갑니다. ``Material`` 박스를 클릭"
+"한 다음 드롭다운 메뉴에서 ``New ParticlsMaterial``를 선택합니다."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:50
 #, fuzzy
@@ -31881,13 +31880,12 @@ msgstr ""
 "SpriteFrames\"를 선택하세요."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:101
-#, fuzzy
 msgid ""
 "Click on the new SpriteFrames resource.  This time, when the bottom panel "
 "appears, select \"Add frames from a Sprite Sheet\"."
 msgstr ""
 "새 SpriteFrames 리소스를 클릭하면 편집기 창 하단에 새로운 패널이 나타날 것입"
-"니다:"
+"니다."
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:105
 msgid "You will be prompted to open a file.  Select your sprite sheet."
@@ -45443,7 +45441,7 @@ msgid ""
 "behavior."
 msgstr ""
 "편집기에서 충돌 모양을 변경하지 않도록 주의하십시오. 인스펙터(Inspecter)의 "
-"\"Scale\" 속성은  ``(1, 1)``\\ 로 유지되어야 합니다. 충돌 모양을 변경할 때는 "
+"\"Scale\" 속성은 ``(1, 1)``\\ 로 유지되어야 합니다. 충돌 모양을 변경할 때는 "
 "항상 ``Node2D`` 크기 핸들이 **아닌** 크기 핸들을 사용해야 합니다. 도형의 크기"
 "를 조절하는 것은 예기치 않은 충돌 행동이 일어날 수 있습니다."
 
@@ -65042,7 +65040,6 @@ msgstr ""
 "어떻게 동기화에 작동하는지 이해하는 것이 좋습니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:59
-#, fuzzy
 msgid ""
 "Godot uses a mid-level object :ref:`NetworkedMultiplayerPeer "
 "<class_NetworkedMultiplayerPeer>`. This object is not meant to be created "
@@ -65050,7 +65047,7 @@ msgid ""
 msgstr ""
 "Godot는 중급(mid level) 객체로 :ref:`NetworkedMultiplayerPeer "
 "<class_NetworkedMultiplayerPeer>`\\ 를 사용합니다. 이 객체는 바로 네트워크를 "
-"만드는 것은 아니지만, 설계를 함으로써 여러 구현 기능을 제공합니다:"
+"만드는 것은 아니지만, 설계를 함으로써 여러 구현 기능을 제공합니다."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:62
 msgid ""
@@ -73280,9 +73277,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:95
-#, fuzzy
 msgid "From your script::"
-msgstr "스크립트의 역할"
+msgstr "스크립트의 역할::"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:101
 msgid ""
@@ -84585,9 +84581,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:21
-#, fuzzy
 msgid "Best Practices"
-msgstr "모범 사례:"
+msgstr "모범 사례"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:24
 msgid "#1: The problem always comes first"

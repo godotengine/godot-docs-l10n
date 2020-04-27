@@ -17,6 +17,7 @@
 # HALİL ATAŞ <halillatass@gmail.com>, 2019.
 # H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2019.
 # İlker Civelek <ilkercivelek34@gmail.com>, 2018.
+# Kaan Genç <kaan@kaangenc.me>, 2020.
 # Mehmet Akif Duba <dubamehmetakif@gmail.com>, 2019.
 # Mertcan Duman <mertcan.dmn16@gmail.com>, 2019.
 # monolifed <monolifed@gmail.com>, 2018.
@@ -30,6 +31,7 @@
 # Onur Sanır <onursanir@gmail.com>, 2018.
 # rayray61 <laladodo000@gmail.com>, 2019.
 # Shivan Dragon <shivantrue@gmail.com>, 2020.
+# Sinan İnak <tzolpka@gmail.com>, 2020.
 # Tuna Soncul <tsoncul@gmail.com>, 2018.
 # Zsosu Ktosu <zktosu@gmail.com>, 2020.
 #
@@ -38,8 +40,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-03-13 17:49+0100\n"
-"PO-Revision-Date: 2020-02-18 15:09+0000\n"
-"Last-Translator: Shivan Dragon <shivantrue@gmail.com>\n"
+"PO-Revision-Date: 2020-04-23 20:22+0000\n"
+"Last-Translator: Kaan Genç <kaan@kaangenc.me>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -47,7 +49,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11\n"
+"X-Generator: Weblate 4.0.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -141,7 +143,6 @@ msgstr ""
 "bulamıyorsanız, bize bildirerek daha iyi belgelemeyi yapmamıza yardım edin!"
 
 #: ../../docs/index.rst:45
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -297,30 +298,28 @@ msgid "Before you start"
 msgstr "Başlamadan önce"
 
 #: ../../docs/about/introduction.rst:23
-#, fuzzy
 msgid ""
 "The :ref:`Tutorials and resources <doc_community_tutorials>` page lists "
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
-": ref: `Öğreticiler ve kaynaklar <doc_community_tutorials>` sayfası, "
-"topluluk tarafından sağlanan video eğitimlerini listeler. Videoyu metne "
-"tercih ederseniz, bunlar bir göz atmaya değer olabilir."
+":ref: `Öğreticiler ve kaynaklar <doc_community_tutorials>` sayfası, topluluk "
+"tarafından sağlanan video eğitimlerini listeler. Videoyu metne tercih "
+"ederseniz, bunlar bir göz atmaya değer olabilir."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "In case you have trouble with one of the tutorials or your project, you can "
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
 "Öğreticilerden biriyle veya projenizle ilgili sorun yaşamanız durumunda, "
-"çeşitli konularda yardım bulabilirsiniz: ref: `Topluluk kanalları "
+"çeşitli konularda yardım bulabilirsiniz :ref: `Topluluk kanalları "
 "<doc_community_channels>`, özellikle Godot Discord topluluğu, S&C ve IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
-msgstr "Godot Engine Hakkında"
+msgstr "Godot Motoru Hakkında"
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -438,7 +437,6 @@ msgstr ""
 "kapsar."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
@@ -508,7 +506,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:110
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr "Godot Engine'le okurken ve oyun yaparken eğlen!"
+msgstr "Godot Engine'la okuyup oyun yaparken eğleniver!"
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
@@ -871,7 +869,6 @@ msgstr ""
 "soruna değil"
 
 #: ../../docs/about/faq.rst:136
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
@@ -881,13 +878,12 @@ msgstr ""
 "yoktur."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
 "Çöp toplayıcı, hız kaybına ya da gereksiz yere büyük bellek kullanımına(Lua, "
-"Python, JS, AS, vb.) sebep olur"
+"Python, JS, AS, vb.) sebep olur."
 
 #: ../../docs/about/faq.rst:141
 #, fuzzy
@@ -923,11 +919,15 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Godot 3.0'dan itibaren, glTF desteklenmektedir."
 
 #: ../../docs/about/faq.rst:155
+#, fuzzy
 msgid ""
 "FBX is supported via the Open Asset Import library. However, FBX is "
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX Open Asset Import kütüphanesi ile desteklenmektedir. FBX müseccel ürün "
+"olduğundan dolayı, çalışma şeklinize uygun ise, yukarıda listelenen "
+"formatları kullanmanızı öneriyoruz."
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -1124,13 +1124,16 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "Katkı sağlamak isterim! Nasıl başlayabilirim?"
 
 #: ../../docs/about/faq.rst:241
+#, fuzzy
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"Müthiş! Açık kaynak bir proje olarak Godot senin gibi tutkulu ve yeniliğe "
+"açık geliştiriciler sayesinde büyüyor."
 
 #: ../../docs/about/faq.rst:244
 msgid ""

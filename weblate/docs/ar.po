@@ -8,6 +8,7 @@
 # Codes Otaku <ilyas.gamerz@gmail.com>, 2018.
 # Ibraheem Tawfik <tawfikibraheem@gmail.com>, 2019.
 # Mohamed El-Baz <albaz2000eg@gmail.com>, 2018.
+# Nabeel20 <nabeelandnizam@gmail.com>, 2020.
 # Omar Aglan <omar.aglan91@yahoo.com>, 2018-2019.
 # Omar Salam <omar-ma-salam@outlook.com>, 2019.
 # Rached Noureddine <rached.noureddine@gmail.com>, 2018.
@@ -20,8 +21,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-03-13 17:49+0100\n"
-"PO-Revision-Date: 2019-10-04 03:16+0000\n"
-"Last-Translator: Omar Aglan <omar.aglan91@yahoo.com>\n"
+"PO-Revision-Date: 2020-04-25 00:29+0000\n"
+"Last-Translator: Nabeel20 <nabeelandnizam@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ar/>\n"
 "Language: ar\n"
@@ -30,7 +31,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 4.0.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
@@ -137,7 +138,7 @@ msgstr ""
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -278,6 +279,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"صفحة :ref: `الدروس التعليمية والمصادر <doc_community_tutorials>` تعرض "
+"فيديوهات تعليمية ساهم بها المجتمع. إذا كنت تفضل مشاهدة الفيديو على النصوص، "
+"فإن هذه الصفحة قد تستحق نظرة منك."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -285,6 +289,9 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"في جال واجهتك اي مشاكل مع احد البرامج التعليمية او مشاريعك، تستطيع الحصول "
+"على المساعدة من مختلف الوسائل الاجتماعية خاصو ديسكورد غودوت و سؤال-جواب و "
+"قنوات اي ار سي"
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -408,7 +415,6 @@ msgstr ""
 "ترخيصاته، مطوريه، إلخ. و يحتوي أيضًا علي :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
@@ -479,7 +485,7 @@ msgstr "استمتع بالقراءة وصنع الألعاب مع محرك غو
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "الأسئلة الأكثر شيوعاً"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:42
@@ -635,7 +641,6 @@ msgstr ""
 "النصية للبنية الافتراضية أو قوالب التصدير في الوقت الحالي."
 
 #: ../../docs/about/faq.rst:61
-#, fuzzy
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
@@ -654,6 +659,9 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"اللغات البرمجية المعتمدة رسمياً لمحرك الألعاب غودوت Godot هي GDScript و "
+"Visual Scripting و C# و كذلك  C++. يمكنك الاطلاع على العناوين الجانبية لكل "
+"لغة برمجية في قسم :ref:`scripting <toc-learn-scripting>`"
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -664,6 +672,13 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"إن كنت قد شرعت بالعمل في غودوت أو برمجة الألعاب عموماً، فإن لغة GDScript هي "
+"المناسبة بالنسبة لك كونها سهلة التعلم وأصيلة في غودوت.وفي الوقت الذي تميل "
+"فيه لغات البرمجية النصية لأن تكون أقل أداءً من اللغات البرمجية الأخرى على "
+"المدى الطويل سواء أكان لأجل صنع نموذج مبدئي أو تطوير منتج ذو حد أدنى قابل "
+"للتطوير فيما بعد (MVPs)، أو حتى التركيز على الوقت-لبلوغ-السوق (TTM)، إن لغة "
+"البرمجة GDScript ستؤمن حلاً سريعاً وسهل الاستعمال وفي الوقت ذاته قادر على "
+"تطوير اللعبة الخاصة بك."
 
 #: ../../docs/about/faq.rst:78
 msgid ""
@@ -675,6 +690,12 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"ضع في الحسبان أن دعم لغة البرمجة C# ما زال حديث العهد، وبالتالي قد تصادف بعض "
+"المشكلات والعقبات في طريق العمل بهذه اللغة، ولكن مجتمعنا اللطيف والدؤوب على "
+"العمل مستعد لمساعدتك في حل مشاكلك حالما تظهر بالنسبة لك، ولكن بما أن المشروع "
+"مفتوح المصدر، نفضل أن تقوم ببعض الأمور بنفسك. ابحث في الكبوات والمشكلات "
+"السابقة في open issues <https://github.com/godotengine/godot/issues>`_ وهي "
+"أسرع طريقة لحل المشكلات والعقبات التي تواجهك."
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -684,6 +705,12 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"كما هو الحال من أجل اللغات الجديدة، فإن الدعم متوافر من خلال برمجيات الطرف "
+"الثالث كاستخدام  GDNative / NativeScript / PluginScript وخدماتها. (من الجيد "
+"الاطلاع على السؤال أدناه عن الإضافات). جارٍ العمل حالياً، فعلى سبيل المثال "
+"يدعم محرك الألعاب غدوت بصورة غير رسمية لغة البرمجة بايثون `Python <https://"
+"github.com/touilleMan/godot-python>` ، وكذلك لغم البرمجة نيم  `Nim <https://"
+"github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:91
 msgid "What is GDScript and why should I use it?"
@@ -699,6 +726,13 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"لغة البرمجة النصية GDScript هي لغة المحرك الأصيلة. لقد تم بناء هذه اللغة "
+"خصيصاً ومن الصغر للمحرك لاستحصال الطاقة العظمى والإمكانيات والقدرات الكامنة "
+"في هذا المحرك وبأقل أسطر برمجية، بطريقة تستوعب المطورين الجدد وكذلك أولئك "
+"المحترفين بحيث يستفيدون من نقاط القوة الخاصة ب غودوت. إن سبق لك كتابة أي شيء "
+"بلغة برمجية مثل باثيون Python من قبل فإنك ستشعر وكأنما أنت في المنزل. "
+"للاطلاع على الأمثلة، تاريخ اللغة والنظرة الشاملة عن إمكانيات وما تقدمه هذه "
+"اللغة يمكنك الاطلاع على:ref:`GDScript scripting guide <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:100
 msgid ""
@@ -707,6 +741,10 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"هنالك العديد من الأسباب تدفعك لاستخدام اللغة البرمجية GDScript خصوصاً عندما "
+"تعمل على نماذج بدئية في المراحل ألفا/بيتا من مشروعك، أو إن كنت تعمل على  "
+"عنوان AAA  التالي ولكن في آخر المطاف يبقى السبب الأهم والأسمى هو ** السهولة "
+"والبُعد عن التعقيد**."
 
 #: ../../docs/about/faq.rst:104
 msgid ""
@@ -720,6 +758,14 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"النية الخالصة في خلق لغة برمجية متضافرة بشكل كبيرة ومخصوصة لمحرك الألعاب "
+"غودوت كانت لسببين: الأول؛ هذه الطريقة تقلل الوقت اللازم للشروع وتشغيل محرك "
+"الألعاب، وبالتالي تعطي الحرية الكامنة والسريعة للمطورين لكي يكشفوا أنفسهم "
+"على المحرك بطريقة تسمح بالتركيز على الفعالية والإنتاج. الثاني؛  تقلل من "
+"العبء الإجمالي لصيانة المحرك، وكذلك من أبعاد المشكلات المحتملة وفي الوقت "
+"ذاته تتيح لمطوري المحرك التركيز على إصلاح الكبوت البرمجية وتطوير الميزات "
+"الخاصة بلبّ المحرك، بدلاً من تضييع وقت كبير في محاولة توفير ميزات تدريجياً "
+"لمجموعة كبيرة من اللغات البرمجية."
 
 #: ../../docs/about/faq.rst:112
 msgid ""
@@ -733,6 +779,13 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
+"بما أن غودوت هو مشروع مفتوح المصدر، كان من الأولوية والضرورات تأمين تجربة "
+"استخدام شاملة وسلسلة قبل التركيز على جذب مزيد من المستخدمين عن طريق دعم لغات "
+"برمجية أخرى، خصوصاً عندما كان تأمين هذا الدعم سيؤمن تجربة استخدام أسوء. إننا "
+"نستوعب إن كنت ترغب في استخدام لغة برمجية أخرى في غودوت (اطلع على اللغات "
+"المدعومة أعلاه). وخلاصة القول، إن لم تعط GDScript فرصة، جربها ل **ثلاثة "
+"أيام**. كما هو المحرك بذاته، مجرد أن ترى كم هي فعالية وسرعة هذه اللغة، نحن "
+"نعتقد بأنك ستتعلق بها."
 
 #: ../../docs/about/faq.rst:121
 msgid ""
@@ -740,6 +793,9 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"للمزيد من المعلومات لكي تصبح أكثر ارتياحاً مع اللغة النصية GDScript أو غيرها "
+"من اللغات البرمجية المطاوعة \"dynamically typed languages\" يمكنك مراجعة "
+"التعليمات ؛ :ref:`doc_gdscript_more_efficiently`."
 
 #: ../../docs/about/faq.rst:125
 msgid "What were the motivations behind creating GDScript?"
@@ -751,16 +807,21 @@ msgid ""
 msgstr "الأسباب الرئيسية التي أدت إلى إنشاء لغة برمجة مخصصة هي:"
 
 #: ../../docs/about/faq.rst:129
+#, fuzzy
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
+"دعم ضعيف للسردة Thread في معظم لغات البرمجة النصية ل VMs، وغودوت يستخدم "
+"السردات Threads (كما في لغات البرمجة Lua، Python، JS ، AS إلخ)."
 
 #: ../../docs/about/faq.rst:131
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"دعم ضعيف للتوسع الصفي class-extending في النص البرمجي لنصوص VMs، والتأقلم مع "
+"الطريقة التي يعمل بها غودوت وسيلة غير فعالة (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
@@ -769,24 +830,36 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
+"العديد من اللغات البرمجية الحالية لديها واجهة مستخم شنيعة للتعامل والتضفير "
+"مع لغة البرمجة C++، الأمر الذي ينتج عنه كمية كبيرة من الأسطر البرمجية "
+"والكبوات، والاختناقات في الأداء وكذلك نقص الفعالية العام (لغات البرمجة مثل "
+"Lua أو Python أو Squirrel إلخ) لذا أردنا التركيز على محرك عظيم وجبّار وليس "
+"مقدار هائل من الإضافات والمُداخلات."
 
 #: ../../docs/about/faq.rst:136
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"لا دعم لأنواع المُتجهات Vector (مثل vector3، matrix4، إلخ..)، الأمر الذي يسبب "
+"أداء أقل بكثير عند استخدام الأنواع الأخرى (كما في لغات البرمجة: Lua، Python، "
+"Squirrel، JS، AS إلخ)."
 
 #: ../../docs/about/faq.rst:139
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
+"جامع الموارد غير المستخدمة (جامع النفايات Garbage collector) يستهلك كميات "
+"كبيرة من الذاكرة (كما في لغات البرمجة Lua، Python، JS، AS..)."
 
 #: ../../docs/about/faq.rst:141
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
+"صعوبة التضفير مع محرر النصوص البرمجية لتأمين التتمة التلقائية، أو التحرير "
+"اللخظي، إلخ.. وهذا مدعوم بشكل جيد بواسطة لغة البرمجة GDScript."
 
 #: ../../docs/about/faq.rst:145
 msgid "GDScript was designed to curtail the issues above and more."
@@ -797,31 +870,38 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr "ماهي أنواع ملفات 3D Models المدعومة من طرف Godot ؟"
 
 #: ../../docs/about/faq.rst:150
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"اذا كنت تستعمل Blender فيمكنك تجريب `Better Collada Exporter <https://"
-"godotengine.org/download>`_."
+"المحرك يدعم \"Collada\" عن طريق مُصدِّر خاص (Maya, 3DSMax) عن طريق `OpenCollada "
+"<https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ ، وإن "
+"كنت تفضل استخدام Blender يمكنك الاطلاع على نسختنا الخاصة `Better Collada "
+"Exporter <https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:153
 msgid "As of Godot 3.0, glTF is supported."
 msgstr "بداية من Godot 3.0, سوف يتم دعم glTF"
 
 #: ../../docs/about/faq.rst:155
+#, fuzzy
 msgid ""
 "FBX is supported via the Open Asset Import library. However, FBX is "
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"دعم FBX متوافر بفضل مكتبة استيراد المُلحقات المفتوحة، ولكن إن FBX برمجية "
+"مملوكة لذا نفضل أن تستخدم البُنى formats الموصوفة أعلاه، إذا كانت مناسبة "
+"لأسلوب ومجرى العمل الخاص بك."
 
 #: ../../docs/about/faq.rst:159
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
+"هل [ضع هنا أي حزمة تطوير برمجية SDK مُغلقة المصدر مثل FMOD أو GameWorks "
+"إلخ .. ] ستكون مدعومة في غودوت؟"
 
 #: ../../docs/about/faq.rst:161
 msgid ""
@@ -830,6 +910,11 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"إن الهدف من محرك الألعاب غودون كان خلق محرك ألعاب مجاني، مفتوج المصدر وتحت "
+"الرخصة MIT بحيث يكون مطاوعاً للتعديلات وقابلاً للتوسع، ولا يوجد أي نوايا لدى "
+"مجتمع تطوير لُب المحرك على دعم أي من الحزم والمكاتب البرمجية من الطرف الثالث "
+"مغلقة المصدر أو المملوكة \"الخاصة\" كمكونات إضافية للمحرك لأنها تتعارض مع "
+"جملة المبادئ والروح الخاصة بالمحرك."
 
 #: ../../docs/about/faq.rst:166
 msgid ""
@@ -837,12 +922,17 @@ msgid ""
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
+"وهكذا نقول، بما أن غودون هو مفتوح المصدر ومطاوع للتعديلات، لا شيء بإمكانه "
+"منعك أنت أو أي شخص من إضافة هذه المكتبا البرمجية كإضافات وتصدير اللعبة "
+"الخاصة بك متضمنة إياهم، سواء أكانوا مفتوحي أو مغلقي المصدر."
 
 #: ../../docs/about/faq.rst:170
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
+"لمعرفة ما الآلية التي ما زالت بالإمكان دعم حزم أدوات البرمجة SDK الخاصة بك. "
+"اطلع على سؤال الإضافات أدناه."
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -851,12 +941,18 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"إن كنت تعرف أي حزمة تطوير برمجية من طرف ثالث غير مدعومة من قبل محرك الألعاب "
+"غودوت وكانت مفتوحة المصدر ومجانية، ضع في بالك أنك قادر على البدء بتضفيرها في "
+"المحرك بنفسك، إن المحرك ليس ملكاً لشخص واحد؛ إنه ملك للمجتمع وإنه ينمو ويكبر "
+"بالمساهمات الطموحة من الأشخاص مثلك."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
+"ما آلية صناعة الملحقات البصرية \"assets \" بحيث تتعامل مع الدقات ونسب العرض "
+"المختلفة؟"
 
 #: ../../docs/about/faq.rst:181
 msgid ""
@@ -868,6 +964,12 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"هذا السؤال كثيراً ما يُطرح، وغالباً تعود جذور المشكلة للفهم الخاطئ الذي سببته "
+"شركة أبل Apple عندما قامت بمضاعفة دقة الأجهزة الخاصة بها، وبهذه الطريقة جعلت "
+"الأشخاص يعتقدون بأن امتلاك ذات الملحقات البصرية بدقات مختلفة لهو أمرٌ جيد، "
+"لذا الكثير اتبعوا هذا النهج، وهذه الطريقة ظلت ناجعة لنقطة معينة وفقط لأجهزة "
+"أبل، ولكن ظهرت فيما بعد العديد من أجهزة الأندرويد وكذلك أجهزة أبل مختلفة "
+"الدقة ونسبة العرض والأبعاد وبمجال كبير من الأبعاد ودقات الشاشات."
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -876,6 +978,10 @@ msgid ""
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
+"إن أفضل طريقة وأكثرها فعالية هي صناعة دقة أساسية واحدة للعبة التي تعمل عليها "
+"بحيث تتعامل مع نسبة عرض الشاشات بدلاً من صناعة جيش من الملحقات البصرية، وهذا "
+"الأمر أساسي بالنسبة لألعاب البعد الثنائي 2D و الألعاب ثلاثية الأبعاد هي مجرد "
+"قضية مجال رؤية الكاميرا على المحورين X وY ."
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -886,6 +992,13 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"اختر دقة أساسية للعبتك، حتى وإن كان هنالك أجهزة تصل دقتها إلى 2K وكذلك أجهزة "
+"دقتها 400 بيكسل، عادة ما يقوم العتاد الخاص بجهازك بالاعتناء بهذه القضية "
+"بعملية مكلفة بصورة طفيفة أو حتى غير معتبرة حيث تقوم بعملية التناسب. أغلب "
+"المطورين غالباً ما يختارون دقة قريبة من 1080p أي (1080 × 1920) أو 720p أي "
+"(720 × 1280)، ولكن ضع بالحسبان أنه هناك تناسب طردي بين زيادة الدقة وحجم "
+"الملحقات البصرية والأهم من ذلك مقدار الذاكرة الذي ستأخذه وبالتالي المزيد من "
+"الوقت لكي تتمكن من التحميل."
 
 #: ../../docs/about/faq.rst:201
 msgid ""
@@ -893,6 +1006,9 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
+"اسخدم خاصية التمدد في محرك الألعاب غدوت؛ التمدد ثنائي البعد سيحافظ على نسبة "
+"الطول للعرض بشكل أفضل. اطلع على التعليمات المتعلقة بكيفية تحقيق ذلك: ref:"
+"`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -901,6 +1017,10 @@ msgid ""
 "is one aspect ratio and you want black bars to appear instead. This is also "
 "explained in :ref:`doc_multiple_resolutions`."
 msgstr ""
+"حدد الدقة الدنيا من ثم يمكنك تحديد ما إن كنت ترغب في تمدد اللعبة الخاصة بك "
+"عمودياً أو أفقياً تبعاً لمختلف نسب الطول للعرض أو إن كانت هناك نسبة طول لعرض "
+"محددة ترغب أن تظهر فيها مستطيلات سوداء بدلاً من ذلك، يمكنك التحقق من ذلك عن "
+"طريق: :ref:`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:210
 msgid ""
@@ -908,10 +1028,14 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"لأجل واجهات المستخدم يمكنك استخدام :ref:`anchoring <doc_size_and_anchors>` "
+"لتحدد موقع وإمكانية تحرك عناصر التحكم، وإن كانت واجهات المستخدم الخاصة بك "
+"أكثر تعقيداً، ضع في الحسبان التعلم عن الحاويات Containers."
 
 #: ../../docs/about/faq.rst:214
 msgid "And that's it! Your game should work in multiple resolutions."
 msgstr ""
+"حسناً، لقد انتهينا هذا كل شيء!! الآن لعبتك يمكنها أن تدعم العديد من نِسب العرض."
 
 #: ../../docs/about/faq.rst:216
 msgid ""
@@ -920,10 +1044,14 @@ msgid ""
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
+"إن رغبت في إتاحة اللعبة الخاصة بك للأجهزة القديمة ذات الشاشات الصغيرة (أقل "
+"من 300 بيكسل عرضاً)، يمكنك استخدام إعدادات التصدير لتقليص الصور، وتحديد هذه "
+"النسخة من اللعبة الخاصة بك متاحةً لأجهزة بشاشات معينة عن طريق متجر غوغل بلاي "
+"أو متجر تطبيقات أبل."
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "كيف يمكنني أن أوسع غودوت؟"
 
 #: ../../docs/about/faq.rst:224
 msgid ""
@@ -931,20 +1059,26 @@ msgid ""
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
+"لكي توسع غودوت، أي صناعة إضافات وملحقات لغدوت أو إضافة دعم للغات برمجية "
+"أخرى، اطلع على :ref:`EditorPlugins <doc_making_plugins>` وأدوات النصوص "
+"البرمجية النصية."
 
 #: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
 msgstr ""
+"كذلك، اطلع على التدوينات المختلفة حول هذه المواضيع على المدونة الرسمية:"
 
 #: ../../docs/about/faq.rst:230
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
+"`نظرة على معمارية GDNative <https://godotengine.org/article/look-gdnative-"
+"architecture>`_"
 
 #: ../../docs/about/faq.rst:231
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr ""
+msgstr "`GDNative هنا!!  <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
 msgid ""
@@ -953,16 +1087,22 @@ msgid ""
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
+"يمكنك أيضاً الإطلاع على تضفيرات لغة البرمجة النصية GDScript، إضافات محرك "
+"الألعاب غودوت، كذلك أيضاً `الدعم غير الرسمي للغة البرمجة بايثون <https://"
+"github.com/touilleMan/godot-python>`_ ، وستكون هذه نقطة بداية جيدة للاطلاع "
+"على الآلية التي تتضافر بها مكتبات الطرف الثالث مع غودوت."
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "أنا أرغب بالمساهمة!! كيف يمكنني البدء؟"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"رائع! بما أن غدوت مشروع مفتوح المصدر، إن غدوت يعطيك الصلاحية لإطلاق العنان "
+"والحماس من المطورين أمثالك."
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -972,12 +1112,18 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"أول مكان للبدء به هو \"القضايا\" `issues <https://github.com/godotengine/"
+"godot/issues>`_. ابحث عن القضية التي تعجبك، ثم ساهم وفق تعليمات \"كيفية "
+"المساهمة\" `How to Contribute <https://github.com/godotengine/godot/blob/"
+"master/CONTRIBUTING.md#contributing-pull-requests>`_ لتتعلم كيف تشعّب fork، "
+"تعدّل، أو تضيف طلب سحب Pull Request للتعديلات التي قمت بها."
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "أملك فكرة رائعة لـ غدوت. كيف يمكنني مشاركتها؟"
 
 #: ../../docs/about/faq.rst:251
+#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -989,39 +1135,54 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"دائماً من المغري طرح أفكار نيرة وقوية لغودوت، خاصة تلك التي تمس تعديلات اللُب "
+"الخاص بالمحرك، والتي قد تشابه الطرق المختلفة التي تعمل بها محركات الألعاب "
+"الأخرى، أو وسيلة أو دفق عمل مختلف تحبذ أن تراه في المحرر. هذه الأفكار "
+"والتفاصيل رائعة ونحن ممتنون للعقول المتحمسة والمتحفزة التي أبدعتها، ولكن "
+"تركيز غودوت ينصب على فعالية ووظيفة اللُب كما ورد في سيرورة العمل التي سنعمل "
+"عليها `Roadmap <https://github.com/godotengine/godot-roadmap/blob/master/"
+"ROADMAP.md>`_، بالإضافة إلى `إصلاح الكبوات والأخطاء وحل المشكلات<https://"
+"github.com/godotengine/godot/issues>`_، والتواصل بين أعضاء مجتمع غودوت."
 
 #: ../../docs/about/faq.rst:260
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
-msgstr ""
+msgstr "معظم المطورين في مجتمع غودوت سيكونون مهمين بتعلم أشياء عن:"
 
 #: ../../docs/about/faq.rst:263
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"تجاربم المتعلقة بالبرنامج والمشكلات التي واجهتها (ونهتم بمثل هذه القضايا "
+"أكثر من اهتمامنا بالأفكار المُبدعة لتطوير المحرك)."
 
 #: ../../docs/about/faq.rst:265
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
+"الميزات والخصائص التي ترغب في رؤيتها بالمحرك لأنك احتجت لها عندما عملت على "
+"المشروع الخاص بك."
 
 #: ../../docs/about/faq.rst:267
 msgid ""
 "The concepts that were difficult to understand while learning the software."
-msgstr ""
+msgstr "ما وجدته من قضايا ومبادئ صعبة أثناء تعلم البرنامج."
 
 #: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
 msgstr ""
+"الأجزاء من أسلوب ودفق العمل الحاص بك والتي ترغب في صقلها ونقلها للمستوى "
+"التالي."
 
 #: ../../docs/about/faq.rst:269
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr ""
+"أجزاء التعليمات التي شعرت بأنها مبهمة وضبابية أو جزئيات الوثائق الغير واضحة."
 
 #: ../../docs/about/faq.rst:271
 msgid ""
@@ -1029,6 +1190,9 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
+"رجاءً لا تشعر كما لو أن أفكارك من أجل المحرك غير مُرحب بها، بدلاً من ذلك حاول "
+"أن تعيد صياغتها كمشلكة بحيث يملك المطورين والمجتمع المهتم بغودوت أرضية "
+"وظيفية يمكن البناء عليها لتطوير الأفكار الخاصة بك."
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -1038,16 +1202,22 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"من الطرق الجيدة لمشاركة أفكارك ومشكلاتك مع المجتمع هي حفنة من قصص "
+"المستخدمين، اشرح ما الأمور التي ترمي إليها، ما السلوك الذي ترغب في حدوثه، "
+"وما السلوك الذي حدث فعلياً. تأطير المشكلات والأفكار بهذه الطريقة سيساعد "
+"المجتمع بأسره على البقاء مُركزاً على تطوير تجربة التطوير ككُل."
 
 #: ../../docs/about/faq.rst:281
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
+"نقاط إضافية لمن يزودنا بلقطات شاشة، أرقام ملموسة، حالات اختبار أو مشاريع "
+"تجريبية (إن أمكن)."
 
 #: ../../docs/about/faq.rst:286
 msgid "Why does Godot not use STL (Standard Template Library)"
-msgstr ""
+msgstr "لماذا لا يستخدم غودوت مكتبة القوالب المعيارية STL"
 
 #: ../../docs/about/faq.rst:288
 msgid ""
@@ -1055,12 +1225,18 @@ msgid ""
 "STL. We believe STL is a great general purpose library, but we had special "
 "requirements for Godot."
 msgstr ""
+"كما في كثير من المكتبات (Qt على سبيل المثال)، إن غودوت لا يستخدم مكتبة "
+"القوالب المعيارية، حيث أننا نعتقد أن مكتبة القوالب الميعارية مكتبة واسعة "
+"الطيف والإمكانيات، ولكننا في غودوت لدينا متطلبات معينة."
 
 #: ../../docs/about/faq.rst:292
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"مكتبة القوالب المعيارية تخلق رموز كبيرة جداً، الأمر الذي يولد في النهاية "
+"معاناة في إصلاح الأخطاء البرمجية huge debug binaries، بدلاً عن ذلك نستخدم "
+"قوالب مع أسماء قصيرة جداً."
 
 #: ../../docs/about/faq.rst:293
 msgid ""
@@ -1071,10 +1247,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:294
+#, fuzzy
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"الحاويات الخاصة بنا تملك متابعة لاستخدام الذاكرة بصورة أصيلة، الأمر الذي "
+"يساعد في تتبع لاستخدام الذاكرة بصورة أفضل."
 
 #: ../../docs/about/faq.rst:295
 msgid ""
@@ -1087,10 +1266,12 @@ msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr ""
+"نستخدم أنواع نصية خاصة بنا custom String type، لأن تلك التي تقدمها مكتبات "
+"القوالب المعياري STL أساسية جداً وتفتقر إلى دعم العولمة اللغوية."
 
 #: ../../docs/about/faq.rst:299
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "لماذا لا يقوم غودوت ببعض الاستثناءات؟"
 
 #: ../../docs/about/faq.rst:301
 msgid ""
@@ -1099,6 +1280,9 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"نؤمن أن الألعاب ينبغي ألا تتحطم، مهما يكن، فإن حدث ظرف غير متوقع، إن غودوت "
+"سيطبع خطأ (والذي قد يُتبّع حتى في النص البرمجي)، ولكن بعدها سيحاول التعافي "
+"والمضي قُدماً بسلاسة قدر الإمكان."
 
 #: ../../docs/about/faq.rst:306
 msgid ""
@@ -1120,6 +1304,8 @@ msgstr ""
 #: ../../docs/about/faq.rst:317
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
+"لماذا لا يجبر غودوت المستخدمين على استعمال نهج DoD (التصميم الموجه بالبيانات "
+"Data oriented Design)؟"
 
 #: ../../docs/about/faq.rst:319
 msgid ""
@@ -1142,6 +1328,8 @@ msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
+"أغلب الألعاب لا تتطلب هذا الأمر، وغودوت يقدم العديد من التسهيلات لإنجاز "
+"مختلف الواجبات إن ما احتجت إليها."
 
 #: ../../docs/about/faq.rst:333
 msgid ""
@@ -1149,28 +1337,33 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
+"إن كانت اللعبة الخاصة بك تحتاج إلى معالجة كميات كبيرة من الأشياء objects، "
+"نقترح أن تستخدم لغة البرمجة ++C و GDNative للأجزاء ذات الأداء العالي، بينما "
+"يمكنك استخدام GDScript (أو #C) لبقية أجزاء اللعبة."
 
 #: ../../docs/about/faq.rst:338
 msgid "How can I support Godot development or contribute?"
-msgstr ""
+msgstr "كيف يمكنني أن أدعم غدوت، أو أشارك بالمساهمة؟"
 
 #: ../../docs/about/faq.rst:340
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ""
+msgstr "اطلع على :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:343
 msgid "Who is working on Godot? How can I contact you?"
-msgstr ""
+msgstr "من يعمل على محرك الألعاب غدوت؟ كيف يمكنني التواصل معك؟"
 
 #: ../../docs/about/faq.rst:345
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
+"اطلع على صفحة المقابلة على موقع غدوت `Godot website <https://godotengine.org/"
+"contact>`_."
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
-msgstr ""
+msgstr "تأريخ تعديلات المستندات"
 
 #: ../../docs/about/docs_changelog.rst:6
 msgid ""
@@ -1179,6 +1372,10 @@ msgid ""
 "many updates to the class reference. Below is a list of new tutorials added "
 "since version 3.0."
 msgstr ""
+"المستندات تخضع لعملية تطوير مستمرة، إن إصدار النسخة 3.1 تتضمن تعليمات جديدة "
+"والعديد من إصلاحات الأخطاء والتحديثات لتعليمات سابقة، والكثير من التحديثات "
+"بالنسبة لمرجعيات الأصناف Class reference. أدناه قائمة بالتعليمات الجديدة منذ "
+"النسخة 3.0."
 
 #: ../../docs/about/docs_changelog.rst:10
 msgid ""
@@ -1186,30 +1383,32 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
+"هذا المستند يحتوي التعليمات الجديدة فحسب لذلك ليس كل التحديثات متوافرة هنا، "
+"العديد من التعليمات الجديدة لقد تم تحديثها وتطوريها ولكن ليس بالضرورة أن "
+"تظهر في هذا المستند."
 
 #: ../../docs/about/docs_changelog.rst:14
 msgid "New tutorials since version 3.1"
-msgstr ""
+msgstr "التعليمات الجديدة منذ النسخة 3.1"
 
 #: ../../docs/about/docs_changelog.rst:17
 #: ../../docs/about/docs_changelog.rst:116
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "سير عمل المشروع"
 
 #: ../../docs/about/docs_changelog.rst:19
 msgid ":ref:`doc_android_custom_build`"
-msgstr ""
+msgstr ":ref:`doc_android_custom_build`"
 
 #: ../../docs/about/docs_changelog.rst:22
 #: ../../docs/about/docs_changelog.rst:132 ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
-msgstr ""
+msgstr "ثنائي الأبعاد 2D"
 
 #: ../../docs/about/docs_changelog.rst:24
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr "صورة متحركة"
+msgstr ":ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:27
 #: ../../docs/tutorials/audio/index.rst:2
@@ -1217,13 +1416,12 @@ msgid "Audio"
 msgstr "الصوت"
 
 #: ../../docs/about/docs_changelog.rst:29
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr "صورة متحركة"
+msgstr ":ref:`مستند_المزامنة_مع_الصوت`"
 
 #: ../../docs/about/docs_changelog.rst:32 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr ""
+msgstr "الرياضيات"
 
 #: ../../docs/about/docs_changelog.rst:34
 #, fuzzy
@@ -1231,58 +1429,56 @@ msgid ":ref:`doc_beziers_and_curves`"
 msgstr "جسيمات"
 
 #: ../../docs/about/docs_changelog.rst:35
-#, fuzzy
 msgid ":ref:`doc_interpolation`"
-msgstr "صورة متحركة"
+msgstr ":ref:`مستند_الاستيفاء`"
 
 #: ../../docs/about/docs_changelog.rst:38
 #: ../../docs/tutorials/inputs/index.rst:2
 msgid "Inputs"
-msgstr ""
+msgstr "المُدخلات"
 
 #: ../../docs/about/docs_changelog.rst:40
-#, fuzzy
 msgid ":ref:`doc_input_examples`"
-msgstr "جسيمات"
+msgstr ":ref:`مستند_أمثلة_الإدخال`"
 
 #: ../../docs/about/docs_changelog.rst:43 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
-msgstr ""
+msgstr "عولمة لغوية"
 
 #: ../../docs/about/docs_changelog.rst:45
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr ""
+msgstr ":ref:`مستند_التوطين_باستخدام_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:48
 #: ../../docs/about/docs_changelog.rst:168
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr ""
+msgstr "التظليل"
 
 #: ../../docs/about/docs_changelog.rst:50
 msgid "Your First Shader Series:"
-msgstr ""
+msgstr "سلسلة الظلال الأولى بالنسبة لك:"
 
 #: ../../docs/about/docs_changelog.rst:52
 msgid ":ref:`doc_what_are_shaders`"
-msgstr ""
+msgstr ":ref:`مستند_ما_هي_الظلال`"
 
 #: ../../docs/about/docs_changelog.rst:53
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr ""
+msgstr ":ref:`مستند_أول_ظل_لعنصر_اللوحة`"
 
 #: ../../docs/about/docs_changelog.rst:54
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr ""
+msgstr ":ref:`مستند_الظل_الفراغي_الأول_لك`"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr ""
+msgstr ":ref:`مستند_الظل_الفراغي_الثاني_لك`"
 
 #: ../../docs/about/docs_changelog.rst:58
 #: ../../docs/tutorials/networking/index.rst:2
 msgid "Networking"
-msgstr ""
+msgstr "التواصل"
 
 #: ../../docs/about/docs_changelog.rst:60
 #, fuzzy
@@ -1291,17 +1487,15 @@ msgstr "جسيمات"
 
 #: ../../docs/about/docs_changelog.rst:63 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr ""
+msgstr "الواقع الافتراضي"
 
 #: ../../docs/about/docs_changelog.rst:65
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr "صورة متحركة"
+msgstr ":ref:`مستند_تعليمات_الشروع_بالوقع_الافتراضي_الجزء_الأول`"
 
 #: ../../docs/about/docs_changelog.rst:66
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr "صورة متحركة"
+msgstr ":ref:`مستند_تعليمات_الشروع_بالوقع_الافتراضي_الجزء_الثاني`"
 
 #: ../../docs/about/docs_changelog.rst:69
 #: ../../docs/about/docs_changelog.rst:183
@@ -1312,7 +1506,7 @@ msgstr "إضافات"
 #: ../../docs/about/docs_changelog.rst:71
 #, fuzzy
 msgid ":ref:`doc_android_plugin`"
-msgstr "أندرويد"
+msgstr ":ref:`مستند_إضافة_الأندرويد`"
 
 #: ../../docs/about/docs_changelog.rst:72
 #, fuzzy
@@ -1328,7 +1522,7 @@ msgstr "أندرويد"
 #: ../../docs/about/docs_changelog.rst:194
 #: ../../docs/tutorials/threads/index.rst:2
 msgid "Multi-threading"
-msgstr ""
+msgstr "تعدد العمليات (السردات المتعددة)"
 
 #: ../../docs/about/docs_changelog.rst:78
 #, fuzzy
@@ -1338,13 +1532,12 @@ msgstr "جسيمات"
 #: ../../docs/about/docs_changelog.rst:81
 #: ../../docs/about/docs_changelog.rst:199
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
 msgstr "إنشاء المحتوى"
 
 #: ../../docs/about/docs_changelog.rst:88
 msgid "Procedural geometry series:"
-msgstr ""
+msgstr "سلسلة الهندسة الرياضية الإجرائية:"
 
 #: ../../docs/about/docs_changelog.rst:84
 #, fuzzy
@@ -1373,9 +1566,8 @@ msgstr "جسيمات"
 
 #: ../../docs/about/docs_changelog.rst:91
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "صورة متحركة"
+msgstr "التحسينات"
 
 #: ../../docs/about/docs_changelog.rst:93
 msgid ":ref:`doc_using_multimesh`"
@@ -1383,12 +1575,12 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:94
 msgid ":ref:`doc_using_servers`"
-msgstr ""
+msgstr ":ref:`استخدام المُخدمات<doc_using_servers>`"
 
 #: ../../docs/about/docs_changelog.rst:97
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "قانوني"
 
 #: ../../docs/about/docs_changelog.rst:99
 msgid ":ref:`doc_complying_with_licenses`"
@@ -1396,29 +1588,29 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:102
 msgid "New tutorials since version 3.0"
-msgstr ""
+msgstr "التعليمات الجديدة منذ الإصدار 3.0"
 
 #: ../../docs/about/docs_changelog.rst:105
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:18
 msgid "Step by step"
-msgstr ""
+msgstr "خطوة بخطوة"
 
 #: ../../docs/about/docs_changelog.rst:107
 msgid ":ref:`doc_signals`"
-msgstr ""
+msgstr ":ref:`الإشارات <doc_signals>`"
 
 #: ../../docs/about/docs_changelog.rst:108
 msgid ":ref:`doc_exporting`"
-msgstr ""
+msgstr ":ref:`التصدير<doc_exporting>`"
 
 #: ../../docs/about/docs_changelog.rst:111
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr ""
+msgstr "البرمجة النصية"
 
 #: ../../docs/about/docs_changelog.rst:113
 msgid ":ref:`doc_gdscript_static_typing`"
@@ -1426,7 +1618,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:118
 msgid "Best Practices:"
-msgstr ""
+msgstr "أفضل الإجراءات:"
 
 #: ../../docs/about/docs_changelog.rst:120
 msgid ":ref:`doc_introduction_best_practices`"
@@ -1451,15 +1643,15 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:125
 msgid ":ref:`doc_node_alternatives`"
-msgstr ""
+msgstr ":ref:`بدائل العُقد <doc_node_alternatives>`"
 
 #: ../../docs/about/docs_changelog.rst:126
 msgid ":ref:`doc_godot_interfaces`"
-msgstr ""
+msgstr ":ref:`واجهة مستخدم غودوت<doc_godot_interfaces>`"
 
 #: ../../docs/about/docs_changelog.rst:127
 msgid ":ref:`doc_godot_notifications`"
-msgstr ""
+msgstr ":ref:`إشعارات غودوت <doc_godot_notifications>`"
 
 #: ../../docs/about/docs_changelog.rst:128
 msgid ":ref:`doc_data_preferences`"
@@ -1471,15 +1663,15 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:134
 msgid ":ref:`doc_2d_lights_and_shadows`"
-msgstr ""
+msgstr ":ref:`الضوء والظل ثنائي الأبعاد<doc_2d_lights_and_shadows>`"
 
 #: ../../docs/about/docs_changelog.rst:135
 msgid ":ref:`doc_2d_meshes`"
-msgstr ""
+msgstr ":ref:`السطوح ثنائية الأبعاد <doc_2d_meshes>`"
 
 #: ../../docs/about/docs_changelog.rst:138 ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
-msgstr ""
+msgstr "ثلاثي الأبعاد 3D"
 
 #: ../../docs/about/docs_changelog.rst:140
 msgid ":ref:`doc_csg_tools`"
@@ -1487,16 +1679,17 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:141
 msgid ":ref:`doc_animating_thousands_of_fish`"
-msgstr ""
+msgstr ":ref:`مستند_تحريك_آلاف_الأسماك`"
 
 #: ../../docs/about/docs_changelog.rst:142
+#, fuzzy
 msgid ":ref:`doc_controlling_thousands_of_fish`"
-msgstr ""
+msgstr ":ref:`مستند_التحكم_بآلاف_الأسماك`"
 
 #: ../../docs/about/docs_changelog.rst:145
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "الفيزياء"
 
 #: ../../docs/about/docs_changelog.rst:147
 msgid ":ref:`doc_ragdoll_system`"
@@ -1515,25 +1708,25 @@ msgstr "صورة متحركة"
 
 #: ../../docs/about/docs_changelog.rst:153
 msgid ":ref:`doc_2d_skeletons`"
-msgstr ""
+msgstr ":ref:`الهيكل الفقري ثنائي الأبعاد<doc_2d_skeletons>`"
 
 #: ../../docs/about/docs_changelog.rst:154
 msgid ":ref:`doc_animation_tree`"
-msgstr ""
+msgstr ":ref:`شجرة الرسومات المتحركة <doc_2d_skeletons>`"
 
 #: ../../docs/about/docs_changelog.rst:157 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
-msgstr ""
+msgstr "واجهة المستخدم الرسومية"
 
 #: ../../docs/about/docs_changelog.rst:159
 msgid ":ref:`doc_gui_containers`"
-msgstr ""
+msgstr ":ref:`مستند_حاويات_واجهة_المستخدم`"
 
 #: ../../docs/about/docs_changelog.rst:162
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr ""
+msgstr "ساحات الرؤية"
 
 #: ../../docs/about/docs_changelog.rst:164
 msgid ":ref:`doc_viewport_as_texture`"
@@ -1557,7 +1750,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:174
 msgid "Shading Reference:"
-msgstr ""
+msgstr "مرجعية الظلال:"
 
 #: ../../docs/about/docs_changelog.rst:176
 msgid ":ref:`doc_shaders`"
@@ -1592,7 +1785,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:189
 #: ../../docs/tutorials/platform/index.rst:2
 msgid "Platform-specific"
-msgstr ""
+msgstr "منصات محددة"
 
 #: ../../docs/about/docs_changelog.rst:191
 msgid ":ref:`doc_customizing_html5_shell`"
@@ -1636,7 +1829,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 #: ../../docs/development/compiling/compiling_for_uwp.rst:33
 msgid "Compiling"
-msgstr ""
+msgstr "التجميع"
 
 #: ../../docs/about/docs_changelog.rst:214
 msgid ":ref:`doc_optimizing_for_size`"
@@ -1649,7 +1842,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:218
 #: ../../docs/development/cpp/index.rst:2
 msgid "Engine development"
-msgstr ""
+msgstr "تطوير المحرك"
 
 #: ../../docs/about/docs_changelog.rst:220
 msgid ":ref:`doc_binding_to_external_libraries`"
@@ -1657,7 +1850,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr ""
+msgstr "مدخل إلى محرر النصوص البرمجية لغدوت"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1665,10 +1858,13 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"هذه التعليمات ستعمل من خلال واجهة مستخدم غدوت، وسنقوم بالإطلاع على **مُدير "
+"المشروع، الموانئ، وفضاءات العمل** وكل ما هو متعلق بحاجاتك الواجب معرفتها "
+"لتتمكن من بدء استخدام المحرك."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
-msgstr ""
+msgstr "مُدير المشروع"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid ""
@@ -1676,18 +1872,25 @@ msgid ""
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
+"عندما تشغل المحرك، أول نافذة ستراها هي مُدير المشارع، وبما أنك لا تملك أي "
+"منها ستلاحظ نافذة منبثقة ستسألك فيما إذا رغبت في فتح قائمة الملحقات الإضافية "
+"Asset library، اضغط على إلغاء لأننا سنتطرق إليها لاحقاً."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
+"الآن من المفروض أن ترى مُدير المشروع، وهو يمكنك من خلق أو إزالة أو استيراد أو "
+"حتى لعب (بدء) مشاريع الألعاب الخاصة بك."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
+"في الزاوي العلوية اليُمنى ستلاحظ قائمة منسدلة يمكنك من خلالها اختيار لغة "
+"المحرر الخاص بالمحرك."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid ""
@@ -1697,10 +1900,15 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
+"من تبويب **القوالب** يإمكانك تنزيل قوالب لمشاريع مفتوحة المصدر وكذلك برمجيات "
+"تجريبية من مكتبة الملحقات، وذلك لمساعدتك في الشروع بالبدء بشكل أسرع. فقط "
+"اختر القالب أو البرمجية التجريبية التي تعجبك، اضغط على تنزيل وعندما يتنهي "
+"التنزيل، اضغط على زر تنصيب واختر أين ترغب أن يتواجد المشروع على جهازك. يمكنك "
+"الحصول على المزيد من المعلومات عن طريق :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
-msgstr ""
+msgstr "أنشئ و استورد مشروعاً"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
 msgid ""
@@ -1708,12 +1916,17 @@ msgid ""
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
+"لإنشاء مشروع جديد، اضغط على زر `` مشروع جديد`` على اليمين، وهنا بإمكانك "
+"إعطاء المشروع اسماً، واختيار ملف فارغ على الجهاز الخاص بك لحفظ المشروع إليه، "
+"وكذلك اختيار محرك إخراج بصري."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
 msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
+"اضغط على زر التصفح لفتح نافذة تصفح الملفات الخاصة بغدوت واختيار موقع الملف "
+"أو أدخل المسار الخاص بالمشروع إن حقل مسار المشروع."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
 msgid ""
@@ -1722,6 +1935,9 @@ msgid ""
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
+"عندما ترى إشارة صح خضراء صغيرة على اليمين، هذا يدل أن المحرك قد اكتشف مجلداً "
+"فارغاً. يمكنك كذلك الضغط على زر ``أضف مجلد``  إلى جانب اسم المشروع الخاص بك "
+"ومن ثم فإن مجلداً فارغاً سينشأ باسم المشروع الخاص بك."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
 msgid ""
@@ -1731,18 +1947,28 @@ msgid ""
 "details. Note that you can change the backend from the project settings if "
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
+"في النهاية، يمكنك اختيار المحرك البصري الذي ترغب باختياره (OpenGL ES 3.0 أو "
+"OpenGL ES 2.0) وإن المحاسن والمساوئ المتعلقة بكل منهما مذكورة لتساعدك على "
+"الاختيار، ويمكنك الاطلاع على :ref:`doc_gles2_gles3_differences`  للمزيد من "
+"التفاصيل. ضع في الحسبان إنه بمقدورك تغيير برمجيات الكواليس Backend والخيارات "
+"الخاصة عن طريق إعدادات المشروع إن ما رغبت بتغيير رأيك في وقت لاحق. ومن أجل "
+"هذا المشروع كلا الخيارين جيدين."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
+"عندما تنتهي يمكنك الضغط على ``أنشئ وحرر``. غدوت سيقوم بإنشاء المشروع الخاص "
+"بك وسيفتحه في المحرر."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
 msgid ""
 "The next time you open the project manager, you’ll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
+"في المرة القادمة التي سيتفتح فيها مُدير المشروع، سترى المشروع الجديد الخاص بك "
+"في القائمة، اضغط مرتين عليه لفتحه في المحرر."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -1750,14 +1976,17 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
+"يمكنك استيراد مشاريع سبق وقد تم العمل عليها بذات الطريقة عن طريق استخادم زر "
+"الاستيراد. حدد المجلد الذي يتضمن المشروع أو ملف ``project.godot`` لاستيراده "
+"وتعديله."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:75
 msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr ""
+msgstr "عندما يكون مسار الملف مناسباً، سترى علامة خضراء بالموافقة."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 msgid "Your first look at Godot’s editor"
-msgstr ""
+msgstr "نظرتك الأولى على محرر غدوت"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid ""
@@ -1765,23 +1994,32 @@ msgid ""
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
+"أهلاً بك في غودوت! بمجرد فتحك المشروع، سترى واجهة المستخدم الخاصة بالمحرر مع "
+"قوائم في أعلى هذه الواجه بالإضافة إلى موانئ عديدة Docks على أطراف الواجهة في "
+"كل الطرفين على حد سواء."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
+"في الأعلى، ومن اليسار إلى اليمين يمكنك أن ترى **القائمة الرئيسة**، و "
+"**مساحات العمل** وكذلك **أزرار التشغيل**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 msgid ""
 "The **FileSystem dock** is where you’ll manage your project files and assets."
 msgstr ""
+"إن **ميناء ملفات النظام** هو المكان الذي ستدير فيه ملفات المشروع الخاص بك "
+"بالإضافة إلى كافة الملحقات الأُخرى."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 msgid ""
 "The **Scene dock** lists the active scene’s content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
+"**ميناء المشهد** يُظهر قائمة بمحتويات جميع المشاهد الفعالة، وإن ميناء "
+"**المتفحص Inspector** يسمح لك بتعديل خاصيات محتوى المشاهد."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid ""
@@ -1789,6 +2027,9 @@ msgid ""
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
+"في الوسط لدينا *شريط الأدوات*، وهنا ستجد الأدوات التي تمكنك من التحريك، "
+"التحجيم أو قفل العناصر في المشهد الخاص بك، ولاحظ أنها تتغير بتغيرك مساحة "
+"العمل الذي تعمل بها."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
 msgid ""
@@ -1796,15 +2037,21 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
+"**اللوحة السفلية** هي مكان عارض الكبوات البرمجية Debug console، وكذلك محرر "
+"تحريك الرسوميات، وأيضاً خالط الأصوات.... كل من هذه العناصر الثلاثة لديها "
+"الكثير من العناصر الثمينة والهامة التي تأخذ حيزاً كبيراً، لذلك تكون مرتبة ضمن "
+"مجلدات بصورة افتراضية."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
 msgid "The workspaces"
-msgstr ""
+msgstr "مساحات العمل"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
+"يمكنك أن تلاحظ أربع أزرار لمساحات العمل في أعلى الشاشة: ثنائية الُبعد 2D، "
+"ثلاثية البُعد 3D، لغة البرمجة النصية Script ، مكتبة الملحقات AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
 msgid ""
@@ -1812,18 +2059,26 @@ msgid ""
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
+"ستسخدم **مساحة العمل ثنائية البعد** لجميع أنواع الألعاب التي ستعمل عليها، "
+"بالإضافة إلى الألعاب ثنائية البعد فإن هذه المساحة ستبني واجهات المستخدم "
+"الخاصة بك، اضغط على :kbd:`F1` أو :kbd:`Alt + 1` على أجهزة ماك للوصول إليها."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
+"في **فُسحة العمل ثلاثية الأبعاد** يمكنك العمل على السطوح والمجسمات، والإنارة "
+"وتصميم المراحل للألعاب ثلاثية الأبعاد. اضغط على :kbd:`F2` (أو  :kbd:`Alt + "
+"2` لنظام تشغيل ماك) للحصول عليها."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
 msgstr ""
+"لاحظ زر المنظر في شريط الأدوات، حيث أن الضغط عليه يُظهر مجموعة من الخيارات "
+"المتعلقة بالمشهد ثلاثي الأبعاد."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:134
 msgid ""
@@ -1836,16 +2091,22 @@ msgid ""
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
 "+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
 msgstr ""
+"فُسحة عمل **النص البرمجي** هي عبارة عن محرر نصوص برمجي متكامل مع مُنقح أخطاء "
+"برمجية، إكمال تلقائي شامل، ومرجعيات كاملة مبنية ضمناً للجزيئات المتعلقة "
+"بالبرمجة، للوصول إلى فُسحة العمل هذه اضغط على :kbd:`F3` (أو :kbd:`Alt + 3` "
+"لنظام تشغيل ماك) اضغط على :kbd:`F4` للبحث في المرجعيات."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
+"أخيراً **مكتبة الملحقات** هي مكتبة مجانية لجميع الإضافات، النصوص البرمجية، أو "
+"المٌلحقات البصرية لإضفاتها إلى المشاريع الخاصة بك."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:146
 msgid "Modify the interface"
-msgstr ""
+msgstr "عدّل واجهة المستخدم"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid ""
@@ -1853,31 +2114,36 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio Code for instance."
 msgstr ""
+"واجهة غدوت تعيش في نافذة واحدة، بإمكانك تقسيمها إلى عدة شاشات كما يمكنك كذلك "
+"العمل مع محرر نصوص برمجي خارجي مثل Atom أو Visual Studio Code."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
 msgid "Move and resize docks"
-msgstr ""
+msgstr "حرّك وغير حجم الموانئ Docks"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:155
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr ""
+"اضغط واسحب على حافة أي ميناء أو لوحة عرضة لإعادة تشكيلها أفقياً أو شاقولياً."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:160
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
-msgstr ""
+msgstr "اضغط على أيقونة النقاط الثلاث في أعلى أي ميناء لتغيير موقعه."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:165
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
+"اذهب إلى قائمة ``المحرر`` و ``إعدادات المحرر`` لتعدل شكل وتجربة وشعور المحرر "
+"بالنسبة لك."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr ""
+msgstr "المشاهد والعُقد"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
 msgid ""
@@ -1886,6 +2152,10 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"تخيل للحظة واحدة بأنك لست مبرمج ألعاب بعد اليوم، ولكن بدلاً عن ذلك أنت رئيس "
+"المطبخ! غير ملابس المطورين هذه والبس قميصاً مضاعف الأزرار أي ذاك الخاص "
+"بالطباخين. الآن بدلاً من صناعة الألعاب سنقوم بطبخ وصفات جديدة ولذيذة لتمتع "
+"بها معدتك."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -1894,6 +2164,10 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
+"الآن ما الذي يفعله رئيس الطباخين للقيام بوصفة؟ الوصفات غالباً مقسومة إلى "
+"قسمين: الأول هو المكونات، بينما الثاني هو الشرح والآليات المفروض أن تتبعها "
+"للقيام بالوصفة، بهذه الطريق يمكن لأي شخص أن يتبع تعليمات الوصفة ويتذوق الطعم "
+"المذهل لطبختك المُذهلة."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -1901,19 +2175,24 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
+"صناعة لعبة في محرك الألعاب غدوت يعمل ذات الطريقة، استخدام المحرك شبيه "
+"باستخدام المطبخ. في المطبخ **العُقد** شبيه بالبرد المليئ بالمكونات التي ترغب "
+"في استخدامها للطبخ."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
+"هنالك العديد من أنواع العُقد؛ بعضها يظهر الصور، بينما أخرى تشغل أصوات وأخرى "
+"كذلك يمكنها عرض نماذج ثلاثية الأبعاد إلخ. هنالك العديد منها."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:101
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:46
 #: ../../docs/development/file_formats/tscn.rst:26
 msgid "Nodes"
-msgstr ""
+msgstr "العُقد"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -1922,32 +2201,39 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
+"دعنا نبدأ بالأساسيات، العُقد طوبة أساسية في بناء اللعبة، فكما ذكرنا أعلى يمكن "
+"للعُقدة أن تنجز طيف من الوظائف المتخصصة، ولكن على أية حال أيٌّ من هذه العُقد "
+"تمتلك دائماً واحدة من هذه الصفات:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr ""
+msgstr "تملك اسماً."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr ""
+msgstr "تملك خصائص قابلة للتعديل."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
-msgstr ""
+msgstr "بإمكانها تلقي رسالة للتعامل مع كل إطار."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr ""
+msgstr "من الممكن توسيعها (منحها المزيد من الوظائف)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to another node as a child."
 msgstr ""
+"يمكن إضافتها إلى عُقدة أخرى كخَلف. (العقدة الأولى تصبح سلف بينما العقدة التي "
+"انضمت إليها أصبحت خلف)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
+"آخر واحدة هامة. العُقد بإمكانها أن تملك عُقد أخرى كخَلف، وعندما ترتب بهذه "
+"الطريقة، تصبح العُقد أشبه بـــ **شجرة**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -1955,6 +2241,9 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
+"في غدوت، إن القدرة على ترتيب العُقد بهذه الطريقة تمنح آلية ترتيب فعالة جداً "
+"للمشاريع، فطالما العُقد المختلفة تملك وظائف مختلفة، فإن جمعها يعطيك القدرة "
+"على إنشاء وظائف أكثر تعقيداً."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -1962,41 +2251,50 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
+"لا تقلق إن لم تعرف من أين تؤكل الكتف حتى الآن، سنشرح ونستكشف هذه التفاصيل في "
+"أقسام قادمة، أهم ما ينبغي تذكره حتى الآن أن العُقد موجودة ويمكن أن ترتب بهذه "
+"الطريقة."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:83
 msgid "Scenes"
-msgstr ""
+msgstr "المشاهد"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
 "Now that the concept of nodes has been defined, the next logical step is to "
 "explain what a Scene is."
 msgstr ""
+"طالما أن مفهوم العُقد قم تم شرحه، الخطوة المنطقية التالية هي شرح ماهية المشهد."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
 msgid ""
 "A scene is composed of a group of nodes organized hierarchically (in tree "
 "fashion). Furthermore, a scene:"
 msgstr ""
+"المشهد عبارة عن مجموعة من العُقد المرتبة بصورة تراتبية (كشجرة)، وللاتساع في "
+"هذا الموضوع إن المشهد:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has one root node."
-msgstr ""
+msgstr "دائماً ما تملك عُقدة مركزية."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr ""
+msgstr "بإمكانك حفظها إلى قرص التخزين، وتحميلها من هناك مجدداً."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr ""
+msgstr "يمكن أن تكون **نموذجية** (المزيد عن هذا الأمر فيما بعد)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
+"تشغيل لعبة يعني تشغيل مشهد معين، والمشروع بإمكانه أن يحوي العديد من المشاهد، "
+"ولكن لكي تشرع اللعبة بالبدء واحدة من هذه المشاهدة العدة يجب أن يتم اختياره "
+"على أنه المشهد الرئيس."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -2004,6 +2302,9 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
+"بصورة أساسية، محرر غدوت هو عبارة عن **محرر للمشهد**، حيث أنه يملك العديد من "
+"الأدوات للتعديل ثنائي الأبعاد وثلاثي الأبعاد وكذلك أيضاً واجهة المستخدم ولكن "
+"المحرر مبني على فكرة تعديل المشهد والعُقد المختلفة التي تكونه."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 #: ../../docs/getting_started/editor/external_editor.rst:32
@@ -2016,6 +2317,8 @@ msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
+"افتح المشروع الذي أنشأته في :ref:`doc_intro_to_the_editor_interface` أو أنشأ "
+"واحداً جديداً، هذا سيفتح محرر غدوت:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
 msgid ""
@@ -2023,6 +2326,9 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
+"كما ذكرنا سابقاً، صنع الألعاب في غدوت شبيه بالعمل في المطبخ، لذا دعنا نفتح "
+"الثلاجة ونضيف بعضاً من العُقد الطازجة لهذا المشروع. سنبدأ برسالة \"مرحباً\" "
+"ونضعها على الشاشة."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:89
 msgid ""
@@ -2032,6 +2338,11 @@ msgid ""
 "chosen node as a child of the currently selected node (or, in an empty "
 "scene, as the \"root\" node)."
 msgstr ""
+"لتمكن من القيام بهذا الأمر ينبغي بداية إضافة عُقدة لصاقة Label node، اضغط على "
+"\"زر إضافة عُقدة\" في الجزء العلوي الأيسر من ميناء المشهد (الأيقونة تمثل رمز "
+"الإضافة + ) وهذا الزر هو الوسيلة الأساسية لإضافة عُقدة جديدة إلى المشهد، "
+"ودائماً ما سيضيف العُقدة الجديدة كخَلف للعقدة المُختارة (أو في حالة مشهد فارغ "
+"ستكون هي العقدة الرئيسة \"الجذر\")."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
 msgid ""
@@ -2042,6 +2353,12 @@ msgid ""
 "pressing the \"Add Child Node\" button). You can also press the star-shaped "
 "icon to toggle the display of your favorited nodes."
 msgstr ""
+"في مشهد فارغ (من دون عقدة رئيسة) إن ميناء المشهد سيتضمن عدداً من الخيارات "
+"لسهولة إضافة عُقد إلى المشهد الخاص بك. \"مشهد ثنائي البُعد\" يضيف عقدة-ثنائية "
+"البعد Node2D ، بينما \"مشهد ثلاثي البُعد\" يضيف عُقدة فراغية Spatial ، \"واجهة "
+"المستخدم\" يضيف عقدة تحكم Control، و\"عُقدة مخصصة\" تتيح لك حرية الاختيار لأي "
+"عقدة (لذا هي مكافئة لضغط زر \"إضافة عُقدة جديدة\"). بإمكانك كلك ضغط الزر "
+"الشبيه بالنجمة لإظهار المفضلين بالنسبة لديك."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
 msgid ""
@@ -2050,6 +2367,11 @@ msgid ""
 "its root node, likewise not every GUI or 2D scene needs a Control node or "
 "Node2D as their root node."
 msgstr ""
+"لاحظ أن هذه الخيارات مسبقة الصنع موجودة لتسهيل التجربة عموماً وهي ليست "
+"إلزامية للأنواع المختلفة من المشاهد، ليس كل مشهد ثلاثي الأبعاد يحتاج إلى "
+"عُقدة فراغية كعقدتها الرئيسة \"الجذر\"، وبذات الطريقة ليس كل مشهد واجهة "
+"مستخدم أو مشهد ثنائي البعد بحاجة إلى عُقدة تحكم أو عُقدة ثنائية البعد كعقدة "
+"رئيسة لها على الترتيب."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
@@ -2057,22 +2379,29 @@ msgid ""
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
+"الآن، لإضافة عُقدة لصاقة تعريفية Label node بإمكانك الضغط على زر عقدة مخصصة "
+"أو زر إضافة عُقدة في الأعلى. في المشاهد غير الفاغرة بإمكانك استخدام زر إضافة "
+"عقدة لإضافة كل عُقدة جديدة لتكون خَلفاً."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
+"هذا سيفتح نافذة إضافة العُقد، وستظهر هذه النافذة قائمة طويلة بكل العُقد التي "
+"يمكنك إضافتها:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:121
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
+"من هذه القائمة، اختر عُقدة \"لصاقة تعريفية Label\" بداية، غالباً ما يكون البحث "
+"عنها أسرع طريقة لإيجادها:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
-msgstr ""
+msgstr "وأخيراً، أنشئ اللصاقة التعريفية! الكثير سيحدث عندما تضغط على إنشاء:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:130
 msgid ""
@@ -2080,34 +2409,45 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
+"بداية، المشهد سيتنقل إلى المحرر ثنائي الأبعاد (لأننوع عُقدة اللصاقة التعريفية "
+"هو عقدة ثنائية البُعد)، ولصاقة تعريفية Label  ستظهر، وستكون مختارة، وفي "
+"الزاوية العلوية اليُسرى من مساحة الرؤية Viewport."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
 msgid ""
 "The node appears in the scene tree editor in the Scene dock, and the label "
 "properties appear in the Inspector dock."
 msgstr ""
+"العُقدة ستظهر في محرر شجرة المشهد في ميناء Dock المشهد، وخوصا اللصاقة "
+"التعريفية ستظهر في ميناء المتفحص Inspector dock."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr ""
+"الخطوة التالية ستكون هي تعديل خاصية \"النص Text\" التابعة للصاقة التعريفية، "
+"دعنا نعدلها إلى \"مرحباً\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit :kbd:`F6`):"
 msgstr ""
+"حسناً، كل شيء جاهز لتشغيل المشهد! اضغط على زر تشغيل المشهد في الشريط العلوي "
+"للبرنامج (أو اضغط :kbd:`F6`):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
-msgstr ""
+msgstr "و..... آه."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
+"المشاهد بحاجة لحفظها لكي نتمكن من تشغيلها، لذا احفظ المشهد بشيء مماثل كـ "
+"\"Hello.tscn\" في مشهد -> حفظ:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:155
 msgid ""
@@ -2119,12 +2459,20 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
+"وهنا يحدث شيء طريف؛ نافذة الملف هي نافذة مميزة فهي تسمح لك بالحفظ ضمن "
+"المشروع، جذر المشروع هو ``res://`` والذي يعني \"مسار الموارد\"؛ هذا الأمر "
+"الذي يعني أن تلك الملفات بالمقدور حفظها في المشروع فقط. في المستقبل عندما "
+"تقوم بعمليات على الملفات، تذكر أن ``res://`` هو مسار الموارد ولا يهم أياً "
+"كانت منصة التشغيل التي تعمل عليها أو موقع التنصيب سيبقى هو الطريقة الوحيدة "
+"لرصد مكان ملفات الموارد ضمن اللعبة الخاصة بك."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
+"بعد حفظ المشهد والضغط على زر التشغيل مرة أخرى، النسخة التجريبية \"مرحباً\" "
+"ستعمل أخيراً:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Success!"
@@ -2138,8 +2486,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
+#, fuzzy
 msgid "Configuring the project"
-msgstr ""
+msgstr "تكوين المشروع"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
 msgid ""
@@ -2148,6 +2497,10 @@ msgid ""
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
+"حسناً، لقد حان الوقت لتكوين المشروع، الآن الطريقة الوحيدة لتشغيل أي شيء هو عن "
+"طريق تشغيل المشهد. المشاريع قد تحتوي على أكثر من مشهد، لذلك يجب تحديد واحدة "
+"من هذه المشاهد ليكون المشهد الرئيس؛ وهو المشهد الذي سيتم تحميله في أي وقت "
+"عندما يتم تشغيل المشروع."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""
@@ -2157,22 +2510,30 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
+"هذه الإعدادات مخزنة في ملف project.godot، وهو ملف نصي بصيغة win.ini (لسهولة "
+"التعديل)، هنالك العديد من الخيارات التي يمكنك تعديلها بحيث أنها تغير من "
+"طريقة تشغيل اللعبة فيما بعد. لتبسيط هذه العمليةـ غودوت يمنحك نافذة لتعديل "
+"خصائص المشروع، والتي تمثل بطريقة ما طريقة مباشرة لتعديل ملف project.godot."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:193
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
-msgstr ""
+msgstr "للوصول إلى هذه النافذة، اختر مشروع -> إعدادات المشروع. جربها الآن."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
+"في اللحظة التي تفتح بها النافذة، دعنا نختر المشهد الرئيس، وحدد خاصية`التطبيق/"
+"التشغيل/المشهد الرئيس` واضغط عليها لاختيار 'Hello.tscn'."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
+"الآن، مع هذه التعديلات عندما تضغط الزر التشغيل الاعتيادي (أو F5)، سيتم تشغيل "
+"المشهد المُختار، بغض النظر عما إذا كنت تعدل غيره من المشاهد."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""
@@ -2181,6 +2542,9 @@ msgid ""
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
+"نافذة خيارات المشروع تقدم الكثير من الخيارات التي ستحفظ في ملف project.godot "
+"ويظهر كذلك القيم الافتراضية، إن قمت بتغيير أي قيمة، إشارة ستعلم هذه القيمة "
+"بجوار اسمها، هذا يعني أن الخاصيات سيتم حفظها في الملف وتذكرها."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:208
 msgid ""
@@ -2191,7 +2555,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:212
 msgid "To be continued..."
-msgstr ""
+msgstr "يُتبع....."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:214
 msgid ""
@@ -2199,10 +2563,14 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
+"التعليمات هذه المرة تكلمت عن \"العُقد والمشاهد\"، ولكن حتى الآن كان هناك مشهد "
+"*وحيد*، وعُقدة *وحيدة*! لا تقلق، في التعليمات القادمة سنبدأ بالتشعب والتوسع "
+"في هذه المواضيع..."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
+#, fuzzy
 msgid "Instancing"
-msgstr ""
+msgstr "نمذجة"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:9
 msgid ""
@@ -2212,6 +2580,11 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
+"إنشاء مشهد وحيد وإضافة المزيد من العُقد إليه قد ينجح في المشاريع الصغيرة، "
+"ولكن عندما يبدأ المشروع بالنمو سيزداد الحجم وكذلك التعقيد، وعدد العُقد الكبير "
+"في تلك الحالة قد يصل لمرحلة يصعب فيها تدبيرها، لأجل حل هذه المشكلة يسمح "
+"غودوت بتقسيم المشروع إلى العديد من المشاهد، بهذه الطريقة يقدم غودوت أداة "
+"هامة لترتيب وتدبير الأجزاء المختلفة من اللعبة الخاصة بك."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
@@ -2225,32 +2598,41 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"بمقدورك أن تنشئ العدد الذي ترغب به من المشاهد التي سيتم حفظها على القرص، "
+"المشاهد سيتم حفظها بطريقة تسمى \"المشاهد الموضبة\" ولديها اللاحقة ``.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
+"بمجرد أن تقوم بحفظ المشهد، يمكن أن يتم نمجذتها في مشهد آخر كما لو كانت أي "
+"عُقدة أخرى."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
+#, fuzzy
 msgid "In the above picture, Scene B was added to Scene A as an instance."
-msgstr ""
+msgstr "في الصورة أعلاه، المشهد ب كان قد أُضيف إلى المشهد أ كنموذج."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
-msgstr ""
+msgstr "النمذجة بالتجربة"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
+"لمعرفة آلية عمل النمذجة، دعنا نبدأ بتحميل مشروع بسيط: :download:`instancing."
+"zip <files/instancing.zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
+"فك ضغط المشروع أينما شئت، ثم افتح محرك الألعاب غودوت وضف هذا المشروع عن طريق "
+"زر \"استيراد\" في مدير المشاريع:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -2258,6 +2640,9 @@ msgid ""
 "can find inside it. After doing this, the new project will appear on the "
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
+"تصفح في المجلد الذي قمت بفك الضغط عنه، وافتح ملف \"project.godot\" بداخله، "
+"وبعد القيام بهذا فإن المشروع الجديد سيظهر في القائمة المنوطة بالمشاريع، حرر "
+"المشروع عن طريق الضغط على زر \"تعديل\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -2266,10 +2651,14 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
+"هذا المشروع يحوي مشهدين: مشهد الكرة \"Ball.tscn\" والمشهد الرئيس \"Main.tscn"
+"\"؛ والأول يستخدم :ref:`RigidBody2D <class_RigidBody2D>` لإعطاء صفات وسلوك "
+"فيزيائي بينما المشهد الرئيس لديه الكثير من العقبات لأجل الكرة لكي تتصادم بها "
+"باستخدام (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr ""
+msgstr "افتح المشهد \"الرئيس\" ``Main`` ، ثم اختر العُقدة الرئيسة:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
@@ -2277,6 +2666,9 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
+"نرغب في إضافة نموذج لمشهد \"الكرة\" ``Ball`` لتكون خلف لـلمشهد \"الرئيس\" "
+"``Main``، وللقيام بذلك اضغط على الزر بشكل \"رابط\" (النافذة العائمة تنص: "
+"\"نمذج ملف المشهد على أنه عُقدة)، ومن ثم اختر ملف ``Ball.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -2284,14 +2676,17 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
+"ستوضع الكرة في الزاوية العلوية اليسرى من مساحة الشاشة (هي النقطة ``(0, 0)`` "
+"تبعاً لإحداثيات الشاشة)، اضغط واسحب الكرة إلى مكان ما قريب من منتصف وأعلى "
+"مركز المشهد:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr ""
+msgstr "اضغط على \"تشغيل\" لمشاهدة الكرة تسقط إلى أسفل الشاشة:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple instances"
-msgstr ""
+msgstr "نمذجة متكررة"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
 msgid ""
@@ -2299,14 +2694,17 @@ msgid ""
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (:kbd:`Ctrl + D`):"
 msgstr ""
+"يمكنك أن تضيف المقدار الذي ترغب به من النماذج instances إلى المشهد الخاص بك، "
+"سواء أكان ذلك باستخدام زر \"نمذجة\" مرة أخرى، أو حتى عن طريق الضغط على نموذج "
+"الكرة والضغط على \"مضاعفة\" (:kbd:`Ctrl + D`):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr ""
+msgstr "شغل المشهد مرة أخرى وستلاحظ أن جميع الكرات ستسقط."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"
-msgstr ""
+msgstr "تحرير النماذج"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
 msgid ""
@@ -2314,12 +2712,17 @@ msgid ""
 "\"Physics Material Override\" dropdown in the Inspector dock and selecting "
 "\"New PhysicsMaterial\"."
 msgstr ""
+"افتح مشهد \"الكرة\" ``Ball`` وقم بإضافة \"مادة فيزيائية\" "
+"``PhysicsMaterial`` عن طريق فتح القائمة المنسدلة \"تجاوز المواد الفيزيائية\" "
+"في ميناء المستكشف Inspector dock واختر \"مادة-فيزيائية جديدة\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:99
 msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr ""
+"من ثمَّ، وسع تبويب المواد عن طريق الضغط عليه، وساوي قيمة الخاصية ``Bounce`` "
+"إلى ``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:104
 msgid ""
@@ -2327,6 +2730,9 @@ msgid ""
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
 "that scene will affect all instances."
 msgstr ""
+"اضغط على \"تشغيل\" ولاحظ أن جميع الكرات المنمذجة أصبحت الآن أكثر ارتداداً، "
+"وذلك يرجع لكونها كلها نموذج عن المشهد الأصلي المحفوظ، وتغيير خصائص هذا "
+"المشهد سيقوم بتغيير خصائص جميع نماذجه."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:108
 msgid ""
@@ -2336,6 +2742,12 @@ msgid ""
 "to make it unique. Click on the down arrow and select \"Make Unique\". Set "
 "its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
+"وعلى الرغم من ذلك ما زال بالمقدور أن تغيير خصائص النموذج الفردي على حدا؛ ضع "
+"قيمة خاصية الارتداد مرة أخرى إلى ``0``، ومرة أخرى في المشهد  ``الرئيس Main`` "
+"اختر واحدة من نماذج الكرات، إن الموارد مثل ``المادة-الفيزيائية "
+"PhysicsMaterial`` تكون متشاركة بين جميع النماذج بالحالة العادية، لذا علينا "
+"في حال رغبنا بتغيير القيمة أن نجعلها مميزة، اضغط على السهم النازر واختر "
+"\"ميّزه\"، ثم ضع خاصية ``الارتداد Bounce`` إلى ``1`` اضغط على \"تشغيل\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:116
 msgid ""
@@ -2346,13 +2758,18 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
+"لاحظ أن زر \"إعادة الضبط\" سيظهر بجانب القيمة المعدّلة، عندما ظاهراً فإنه يعني "
+"أنك قمت بتعديل قيمة في هذا المشهد المنمذج لتجاوز القيمة الأساسية في المشهد "
+"المحفوظ، وحتى إن عُدلت القيمة الأساسية في المشهد الأساسي، ستبقى هذه القيمة "
+"المعدلة على حالها، وبالضغط على زر \"إعادة الضبط\" فإنه سيرجع قيمة الخاصية "
+"لقيمة المشهد الأساسي المحفوظ."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:124
 #: ../../docs/getting_started/step_by_step/signals.rst:263
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:214
 msgid "Conclusion"
-msgstr ""
+msgstr "الخُلاصة"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:126
 msgid ""
@@ -2360,36 +2777,44 @@ msgid ""
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_instancing_continued`."
 msgstr ""
+"النمذجة يمكن أن تكون مفيدة جداً في صناعة العديد من النسخ للشيء الواحد، كما "
+"يمكن استثمارها في البرمجة عن طريق لغة البرمجة النصية GDScript اطلع على  :ref:"
+"`doc_instancing_continued`."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
-msgstr ""
+msgstr "النمذجة (متابعة)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
-msgstr ""
+msgstr "تذكرة"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
 msgstr ""
+"النمذجة لها طيف واسع من الاستخدامات، وبلمحة سريعة عنها يمكنك عن طريق النمذجة "
+"أن تقوم بـ:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
 msgstr ""
+"القدرة على تقسيم المشاهد إلى أقسام أصغر وبذات الوقت أسهل للإدارة والتدبير."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
-msgstr ""
+msgstr "أداة لإدارة وتحرير العديد من العُقد بالمرة الواحدة."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:13
 msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
+"آلية لتنظيم وتضمين واحتواء دفق اللعبة المعقد وحتى واجهات المستخدم (في غودوت، "
+"حتى عناصر واجهة المستخدم عبارة عن عُقد أيضاً)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:17
 msgid "Design language"
-msgstr ""
+msgstr "اللغة التصميمية"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
 msgid ""
@@ -2397,6 +2822,9 @@ msgid ""
 "as an excellent design language. This distinguishes Godot from all the other "
 "engines out there. Godot was designed from the ground up around this concept."
 msgstr ""
+"أهم نقطة قوة في نمذجة المشاهد يكمن في أنها لغة تصميمة ممتازة، وهي بذاتها "
+"تميز غودوت عن باقي محركات الألعاب الأخرى، لأنه قد صُمم وبني في الأساس حول هذا "
+"المبدأ."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
@@ -2406,10 +2834,15 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
+"عندما تصنع لعبة في غودوت، نحن نفضل أن تبتعد وتهجر أساليب تصميم أنماط تصميم "
+"الألعاب الأخرى مثل (النمط والعرض والمتحكم MVC) أو حتى مخططات العلاقات "
+"المترابطة بين العناصر، بدلاً عن كل هذا يمكنك أن تفكر بالمشاهد الخاصة بك "
+"بطريقة عفوية وطبيعية؛ ابدأ بتخيل العناصر المرئية من اللعبة الخاصة بك، أي تلك "
+"العناصر التي يمكن تسميتها ليس فقط من قبل المطورين بل من قبل أي شخص."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:30
 msgid "For example, here's how a simple shooter game could be imagined:"
-msgstr ""
+msgstr "على سبيل المثال، هنا نمثل آلية تخيل لعبة إطلاق نار:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:34
 msgid ""
@@ -2417,6 +2850,8 @@ msgid ""
 "down the parts of the game that you can visualize, and then add arrows to "
 "represent ownership of one component by another."
 msgstr ""
+"يمكنك أن تبدع مخطط مثل هذا في لأي نمط من الألعاب، اكتب الأجزاء المرئية من "
+"اللعبة، ثم ضع أسهم وعلاقات ربط يمكنها أن تمثل ملكية عنصر لعنصر آخر."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:38
 msgid ""
@@ -2425,6 +2860,9 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"حالما يصبح لديك مخطط مثل هذا، ننصح عند صناعة اللعبة أن تقوم بصناعة مشهد لكل "
+"عنصر مذكور في المخطط، وستسخدم النمذجة (سواء أكان ذلك عن طريق البرمجة أم "
+"المحرر) لتضع ملكية العناصر للعناصر الأخرى."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
 msgid ""
@@ -2436,12 +2874,20 @@ msgid ""
 "design based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
+"الكثير من الوقت المستغرق في برمجة الألعاب (أو البرمجة بشكل عام)، يصرف على "
+"الآلية والمعمارية التي تناسب عناصر اللعبة وهيكليتها، التصميم بناء على "
+"المشاهد يتسبدل ذلك النهج ويجعل من تجربة البرمجة أسلس واسرع وأسهل، بطريقة "
+"تسمح لك بالتركيز على منطق اللعبة بحد ذاتها، لأن مخطط مكونات اللعبة يستند على "
+"فكرة المشهد، فإن اعتماد لغة تصميم مبنية على نمذجة المشاهد سيعني أيضاً عناء "
+"أقل فيما يتعلق بهيكلية النص البرمجي الضرورية."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:48
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
+"دعنا نلق نظرة، ولتكن نظرة أكثر تعقيداً، على لعبة من نمط العالم المفتوح مع "
+"الكثير من المُلحقات والعناصر المتداخلة:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:53
 msgid ""
@@ -2450,6 +2896,10 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"انظر على عنصر الغرفة، ولنقل أننا بدأنا هنا فإنه بالمقدور أن ننشئ مشهدين "
+"للغرفة مع تراتبية مختلفة من الأثاث والعفش (كذلك مشاهد) بداخلها، لاحقاً يمكننا "
+"أن ننشئ مشهداً للبيت بحيث أننا نصل الغرف ببعضها لنحصل على مخطط البيت "
+"ومعماريته الداخلية."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:58
 msgid ""
@@ -2457,6 +2907,8 @@ msgid ""
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"بعدها يمكننا إنشاء مشهد القلعة، حيث أنها تتضمن العديد من البيوت التي تمت "
+"نمذجتها، ومن ثم يمكننا العمل على تضاريس خريطة العالم ونضيف إليها القلعة كذلك."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:62
 msgid ""
@@ -2464,6 +2916,9 @@ msgid ""
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"لاحقاً يمكننا أن نضيف مشاهد تمثل الحُرّاس (شخصيات لا يلعب بلها المستخدم NPCs) "
+"إلى مشهد القلعة، وبهذه الطريقة وبصورة غير مباشرة نكون قد خلقنا كامل عالم "
+"اللعبة."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:66
 msgid ""
@@ -2474,10 +2929,16 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"مع غودوت من السهل العمل على لعبتك بهذه الطريقة بتكرار ذات النهج عن طريق "
+"إنشاء ونمذجة المزيد من المشاهد. ولكي نكون مرتاحين أكثر فإن واجهة مستخدم "
+"المحرر مصممة بطريقة أليفة للمبرمجين وغير المبرمجين على حد سواء. فريق تطوير "
+"لعبة تقليدياً ما يتضمن فناني رسوم ثنائية البعد أو ثلاثية البعد، مصممي مراحل، "
+"ممصم اللعبة، ومُحرك رسوميات، وكل هؤلاء الأشخاص يمكنهم جميعاً العمل عن طريق "
+"واجهة المستخدم الخاصة بالمحرر."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"
-msgstr ""
+msgstr "فرط إشباع للمعلومات!!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:75
 msgid ""
@@ -2485,6 +2946,9 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"لقد كانت هذه كمية هائلة من المعلومات ألقيت عليك كلها دفعة واحدة. على أية حال "
+"إن الجزء المهم من هذه التعليمات هنا أن تكون على علم بالآلية التي تعمل بها "
+"المشاهد والنمذجة لتستخدمها لاحقاً في مشاريع حقيقية."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:79
 msgid ""
@@ -2492,6 +2956,9 @@ msgid ""
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and go on to the next tutorial!"
 msgstr ""
+"كل شيء شرحناه سيصبح بالنهاية كالمرتكس بالنسبة إليك في اللحظة التي تبدأ "
+"بصناعة ألعابك عن طريق وضع هذه المبادئ المختلفة إلى التطبيق الفعلي، الآن لا "
+"تقلق حيال هذه المبادئ بشكل كبير، وانتقل إلى التعليمات التالية!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
 msgid ""
@@ -2499,12 +2966,18 @@ msgid ""
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
+"قبل الإصدار 3.0 من غودوت، كان الخيار الوحيد للبرمجة النصية للعبتك هو "
+"استخدام :ref:`GDScript<doc_gdscript>`، لكن اليوم يمكنك استخدام غودوت بأربع "
+"لغات برمجية (نعم، أربع!!) دعومة بشكل رسمي بالإضافة إلى غيرها من لغات البرمجة "
+"النصية المطاوعة كذلك!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
+"هذا عظيم، لأنه يتيح مرونة أكبر وسهولة أكثر لتطوير الألعاب، ولكنه في الوقت "
+"ذاته يجعل عملنا لدعم لغات البرمجة هذه أكثر صعوبة."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
 msgid ""
@@ -2514,6 +2987,12 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
+"اللغة البرمجية \"الرئيسة\" لغدوت على كل حال هي GDScript وكذلك VisualScript "
+"(برمجة بصرية). السبب الأهم لاختيارهم كاللغة الرئيسة هو مقدار التعشق والتداخل "
+"بينهم وبين المحرك، الأمر الذي يجعل التجربة أسلس، كون اللغتين يمتلكان تضافراً "
+"مع المحرر البرمجي، بينما لغة البرمجة C# وكذلك C++ بحاجة لأن يتم تحريرها في "
+"محرر برمجي خارجي، إن كنت من كبار معجبي اللغات البرمجية الثابتة  statically "
+"typed languages فعليك بـ C# و C++ إذاً."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 #: ../../docs/getting_started/scripting/gdscript/index.rst:2
@@ -2529,7 +3008,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:329
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:101
 msgid "GDScript"
-msgstr ""
+msgstr "لغة البرمجة GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
 msgid ""
@@ -2543,22 +3022,28 @@ msgid ""
 "It's simple, elegant, and designed to be familiar for users of other "
 "languages such as Lua, Python, Squirrel, etc."
 msgstr ""
+"إنها لغة برمجية بسطية، وأنيقة, كذلك مصممة لتكون أليفة للمستخدمين من لغات "
+"برمجية أخرى مثل ‎Lua أو بايثون Python أو Squirrel إلخ.."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
 msgid "Loads and compiles blazingly fast."
-msgstr ""
+msgstr "يُحمل ويُشغل compiles بلمح البصر."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
 "The editor integration is a pleasure to work with, with code completion for "
 "nodes, signals, and many other items pertaining to the scene being edited."
 msgstr ""
+"المحرر المُدمج ممتع جداً للتعامل والعمل به، خصوصاً مع الإكمال التلقائي لأسماء "
+"العُقد، والإشارات وغيرها من العناصر المتعلقة بالمشهد الذي يتم تعديله."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:31
 msgid ""
 "Has vector types built-in (such as Vectors, transforms, etc.), making it "
 "efficient for heavy use of linear algebra."
 msgstr ""
+"يتضمن دعم ضمني لأنماط الموجهات Vectors (مثل Vectors، المحتولات transforms "
+"إلخ) الأمر الذي يجعله فعال جداً لاستخدامات الجبر الخطي."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
 msgid ""
@@ -2584,11 +3069,13 @@ msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
+"إن كنت متردداً، وتملك خبرة في التعامل مع البرمجة، وخصوصاً تلك المطاوعة "
+"الديناميكية عليك بـ GDScript!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 #: ../../docs/getting_started/scripting/visual_script/index.rst:2
 msgid "VisualScript"
-msgstr ""
+msgstr "البرمجية البصرية VisualScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:42
 msgid ""
@@ -2596,6 +3083,10 @@ msgid ""
 "Scripting<doc_what_is_visual_script>`. This is a typical implementation of a "
 "\"blocks and connections\" language, but adapted to how Godot works."
 msgstr ""
+"بدءاً من الإصدار 3.0 إن غودوت يدعم:ref:`البرمجة "
+"البصرية<doc_what_is_visual_script>`، وهي عبارة عن إضافية نموذجية عبارة عن "
+"لغة \"منصات ووصلات blocks and connections\" وهي لغة متأقلمة مع الطريقة التي "
+"يعمل بها المحرك."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:46
 msgid ""
@@ -2603,16 +3094,22 @@ msgid ""
 "experienced developers who want to make parts of the code more accessible to "
 "others, like game designers or artists."
 msgstr ""
+"البرمجية البصرية أداة رائعة لغير المبرمجين، أو حتى المطورين المحترفين الذي "
+"يريدون جعل أجزاء من النصوص البرمجية الخاصة بهم أسهل للناس، مثل مصمموا "
+"الألعاب أو الفنانون."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:50
 msgid ""
 "It can also be used by programmers to build state machines or custom visual "
 "node workflows - for example, a dialogue system."
 msgstr ""
+"كما أنها قد تستخدم من المبرمجين لبناء آلات مستقرة أو مسارات عملية مخصوصة، "
+"نظام النوافذ على سبيل المثال."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:55
+#, fuzzy
 msgid ".NET / C#"
-msgstr ""
+msgstr ".NET / C#"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:57
 msgid ""
@@ -2669,7 +3166,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
 msgid "Scripting a scene"
-msgstr ""
+msgstr "برمجة المشهد"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:92
 msgid ""
@@ -2677,18 +3174,20 @@ msgid ""
 "button and a label, where pressing the button will update the label. This "
 "will demonstrate:"
 msgstr ""
+"في ما تبقى من هذه التعليمات سنقوم ببناء واجهة مستخدم مكونة من زر ولصاقة "
+"تعريفية، حيث أن ضغط الزر سيحدث معلومات اللصاقة، الشكل أدناه سيوضح الفكرة:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:96
 msgid "Writing a script and attaching it to a node."
-msgstr ""
+msgstr "كتابة نص برمجي وقرنه بعُقدة."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:97
 msgid "Hooking up UI elements via signals."
-msgstr ""
+msgstr "ربط عناصر واجهة المستخدم عبر الإشارات."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:98
 msgid "Writing a script that can access other nodes in the scene."
-msgstr ""
+msgstr "كتابة نص برمجي يإمكانه الولوج إلى العُقد الأخرى في ذات المشهد."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
 msgid ""
@@ -2697,67 +3196,79 @@ msgid ""
 "and the reference is short, so it will not take more than a few minutes to "
 "get an overview of the concepts."
 msgstr ""
+"قبل المضي قُدماً، من فضلك تأكد من قراءتك مرجع :ref:`GDScript<doc_gdscript>`، "
+"إنها لغة برمجية مصممة لتكون سهلة ومرجعياتها قصيرة، لذا لن يأخذ منك الأمر "
+"أكثر من بضعة دقائق لتطلع على المبادئ العامة لها."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
 #: ../../docs/tutorials/animation/introduction_2d.rst:109
 msgid "Scene setup"
-msgstr ""
+msgstr "إعداد المشهد"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
+"استخدم نافذة \"إضافة عُقدة بنت\" من تبويب المشهد (أو اضغط على :kbd:`Ctrl + "
+"A`) لإنشاء مجموعة متسلسلة هرمياً من العُقد التالية:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
 msgid "Panel"
-msgstr ""
+msgstr "اللوحة"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:112
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:144
 msgid "Label"
-msgstr ""
+msgstr "اللصاقة"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr ""
+msgstr "زر"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"
-msgstr ""
+msgstr "شجرة المشهد ينبغي أن تبدو على الهيئة التالية:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
 msgid ""
 "Use the 2D editor to position and resize the Button and Label so that they "
 "look like the image below. You can set the text from the Inspector tab."
 msgstr ""
+"استخدم المحرر ثنائي الأبعاد لتوضيع وإعادة تحجيم الزر واللصاقة بحيث يبدو "
+"كلاهما كما في الصورة أدناه، يمكن أن تحرير النص عن طريق تبويب المُتصفح."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:124
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
-msgstr ""
+msgstr "أخيراً، احفظ المشهد باسم ``sayhello.tscn``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:129
 msgid "Adding a script"
-msgstr ""
+msgstr "إضافة النص البرمجي"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:131
 msgid ""
 "Right click on the Panel node, then select \"Attach Script\" from the "
 "context menu:"
 msgstr ""
+"اضغط بالزر الأيمن على عُقدة اللوحة ومن ثمَّ اختر \"إضافة نص برمجي\" من القائمة:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:136
 msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
+"ستنبثق نافذة إنشاء النص البرمجي، وهذه النافذة تتيح لك حرية اختيار اللغة "
+"البرمجية التي ترغب بها، اسم الصف class، وغيرها من الخيارات ذات الصلة."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
+"في اللغة البرمجية GDScript؛ الملف بحد ذاته يمثل الصف Class لذا الحقل المتعلق "
+"باسم الصف يجب ألا يتم تغييره."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
 msgid ""
@@ -2765,10 +3276,13 @@ msgid ""
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
+"العُقدة التي سنضيف إليها النص البرمجي هي اللوحة panel، وبالتالي حقل\"الإرث\" "
+"Inherits field سيكون \"لوحة\" سلفاً. وهذا ما نريده بالنص البرمجي الخاص بنا أي "
+"ان نوسع الوظيفة الخاصة بعُقدة اللوحة."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:146
 msgid "Finally, enter a path name for the script and select Create:"
-msgstr ""
+msgstr "أخيراً، أدخل اسم المسار من أجل الملف واضغط على إنشاء:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:150
 msgid ""
@@ -2776,6 +3290,9 @@ msgid ""
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
 "script property under Inspector:"
 msgstr ""
+"سيتم إنشاء النص البرمجي وكذلك إضافته إلى العُقدة، ويمكنك أن ترى ذلك بظهور "
+"أيقونة \"فتح النص البرمجي\" إلى جانب اسم العُقدة في تبويب المشهد، بالإضافة "
+"إلى عنوان النصوص البرمجية في المُتفحص:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
 msgid ""
@@ -2783,6 +3300,8 @@ msgid ""
 "highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
+"لتعديل النص البرمجي، اختر واحد من هذه الأزرار، أيُّ من المعلّمين في الصورة "
+"أعلاه. سيفتح محرر النص البرمجي مع القالب الافتراضي الذي يتضمن:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -2790,10 +3309,13 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
+"لا يوجد الكثير هناك، تستدعى الوظيفة البرمجية ``_ready()`` عندما تدخل العُقدة "
+"وأبناؤها المشهد الفعال. **ملاحظة** إن الوظيفة ``_ready()`` ليست بالباني "
+"constructor هنا بل إن الباني في الواقع هو ``_init()``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:166
 msgid "The role of the script"
-msgstr ""
+msgstr "دور النص البرمجي"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:168
 msgid ""
@@ -2802,10 +3324,14 @@ msgid ""
 "siblings, and so on. The local scope of the script is the node. In other "
 "words, the script inherits the functions provided by that node."
 msgstr ""
+"يضيف النص البرمجي السلوك للعُقدة، فهو يتحكم بالطريقة التي تتصرف بها العُقدة "
+"وكذلك تفاعلها مع العُقد الأخرى: الأبناء، الآباء، الأقربين وما إلى هنالك. "
+"المجال المحلّي للنص البرمجي هو العُقدة، أي بطريقة أخرى يمكننا القول بأن النص "
+"البرمجي يرث جميع الوظائف التي تقدمها العُقدة."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:179
 msgid "Handling a signal"
-msgstr ""
+msgstr "التعامل مع الإشارة"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:181
 msgid ""
@@ -2814,6 +3340,10 @@ msgid ""
 "mostly in GUI nodes, although other nodes have them too, and you can even "
 "define custom signals in your own scripts."
 msgstr ""
+"إن الإشارات \"تُبعث\" عندما يحدث شيء محدد نوعاً ما، وبالمقدور وصلها لأي وظيفة "
+"برمجية في النص البرمجي المُنمذج. إن الإشارات غالباً ما تستخدم في عُقدة واجهات "
+"المستخدم، وعلى الرغم من ذلك هناك أيضاً عُقد أخرى تستخدمها، بالإضافة إلى القدرة "
+"على صنع وتعريف إشارات خاصة بنصوصك البرمجية."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:186
 msgid ""
@@ -2822,18 +3352,26 @@ msgid ""
 "the second part. For the first part, Godot provides two ways to create "
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
+"في هذه الخطوة، سنصل ما بين إشارة \"الضغط\" ووظيفة برمجية مخصوصة؛ الخطوة "
+"الأولى هي إنشاء الاتصال بينا الخطوة الثانية هي تعريف الوظيفة البرمجية "
+"المخصوصة. من أجل الخطوة الأولى يقدم غودوت طريقتين لإنشاء هذه الاتصالات: عن "
+"طريق الواجهة البصرية للمحرر أو عن طريق النص البرمجي."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:191
 msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
 msgstr ""
+"بما أننا سنستخدم الطريقة البرمجية للوصل فيما تبقى من سلسلة التعليمات هذه، "
+"دعنا نكشتف عن الطريقة التي تعمل بها واجهة المحرر للمرات القادمة."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:194
 msgid ""
 "Select the Button node in the scene tree and then select the \"Node\" tab. "
 "Next, make sure that you have \"Signals\" selected."
 msgstr ""
+"اختر عُقدة الزر في شجرة المشهد ومن ثم اختر تبويب \"العُقد\". تالياً، تأكد أنك "
+"قمت باختيار تبويب \"الإشارات\"."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:199
 msgid ""
@@ -2841,12 +3379,17 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
+"إن اخترت \"pressed()\" أي \"ضُغط()\" تحت عنوان \"BaseButton\" ومن ثمَّ ضغط على "
+"زر \"وصل...\" في الجهة السفلى اليمنى، ستنبثق نافذة إنشاء الوصلات."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:204
 msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
+"في أعلى هذه النافذة تجد قائمة بجميع العُقد في المشهد الخاص بك، مع اسم العُقدة "
+"التي تبث الإشارة مُعلّماً باللون الأزرق. اختر عُقدة \"اللوحة Panel\" من هذه "
+"القائمة."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
@@ -2854,6 +3397,10 @@ msgid ""
 "created. By default, the method name will contain the emitting node's name "
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
+"أسفل النافذة تظهر اسم الدالة التي سيتم إنشاءها، بصورة افتراضية إن اسم هذه "
+"الدالة سيتضمن اسم العُقدة الباعثة للإشارة (في هذه الحالة \"Button\" أي \"زر"
+"\")، فتكون النتيجة ``_on_[EmitterNode]_[signal_name]`` اسم العُقدة الباعثة "
+"متبوعاً باسم الإشارة مع مراعاة ضابطة أسلوب الكتابة البرمجية."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
@@ -2861,6 +3408,8 @@ msgid ""
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
+"بهذه الطريقة نكون قد لخصنا الآلية التي يعمل بها المحرر البصري، ولكن هذه "
+"تعليمات برمجية في الواقع؛ لذا لأجل التعلم البحت دعنا نخوض في الطريقة اليدوية!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
 msgid ""
@@ -2869,12 +3418,18 @@ msgid ""
 "<class_Node_method_get_node>`. This function uses paths to fetch nodes "
 "anywhere in the scene, relative to the node that owns the script."
 msgstr ""
+"لإتمام هذه المهمة، علينا أن نتعرف على وظيفية برمجية يستخدمها تقريباً جميع "
+"مطوري غودوت ref:`Node.get_node() <class_Node_method_get_node>`، فهذه الوظيفة "
+"البرمجية تستخدم المسارات لجلب العُقد أياً كان مكانها في المشهد، بصورة نسبية "
+"تبعاً للعُقدة التي تملك النص البرمجي."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:220
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
+"لأجل تسهيل الأمور، احذف كل شيء تحت ``extends Panel`` أي \"يُصدر اللوحة\"، "
+"سنقوم بملء النص البرمجي يدوياً."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:223
 msgid ""
@@ -2882,29 +3437,35 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
+"لأن كل من الزر واللصاقة هما في الآخر \"أخوة\" تحت عُقدة اللوحة التي اقترن بها "
+"النص البرمجي، بإمكانك جلب fetch الزر بكتابة التالي تحت الوظيفة البرمجية "
+"``_ready()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:240
 msgid "Next, write a function which will be called when the button is pressed:"
-msgstr ""
+msgstr "تاليا، اكتب الوظيفة البرمجية التي سيتم استدعاؤها عندما يتم ضغط الزر:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
+"أخيراً، صل إشارة \"الضغط\" الخاصة بالزر بالوظيفة البرمجية "
+"``_on_Button_pressed()`` باستخدام :ref:`Object.connect() "
+"<class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"
-msgstr ""
+msgstr "النص البرمجي النهائي ينبغي أن يبدو هكذا:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:304
 msgid ""
 "Run the scene and press the button. You should get the following result:"
-msgstr ""
+msgstr "شغل المشهد واضغط على الزر، ينبغي أن تحصل على النتيجة التالية:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:308
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr ""
+msgstr "لماذا، حسناً تهانينا لقد قمت ببرمجة مشهدك الأول."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:312
 msgid ""
@@ -2913,17 +3474,26 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
+"سوء فهم شائع يحدث عند قراءة هذه التعليمات يتعلق بالآلية التي تعمل بها "
+"``get_node(path)``، من أجل عُقدة مختارة إن ``get_node(path)`` تبحث في الأبناء "
+"فورياً للعقدة المختارة، في النص البرمجي أعلاه، هذا يجبرنا على جعل الزر ابن "
+"اللوحة، فإن كان الزر عوضاً عن ذلك عبارة ابن اللصاقة التعريفية مثلاً كان النص "
+"البرمجي كالتالي:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:330
 msgid "Also, remember that nodes are referenced by name, not by type."
-msgstr ""
+msgstr "كذلك تذكر أن مرجعية العُقد تتم تبعاً للاسم وليس النوع."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:334
+#, fuzzy
 msgid ""
 "The right-hand panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
+"في اللوحة الجانبية على اليمين نافذة الوصل هي لوصل قيم محددة للمعالم "
+"parameters الوظيفة البرمجية الموصولة. يمكنك إضافة أو إزالة قيم من أنواع "
+"مختلفة."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:338
 msgid ""
@@ -2931,26 +3501,34 @@ msgid ""
 "empty by default. Feel free to read up on the ``Object.connect`` method for "
 "more information."
 msgstr ""
+"النهج الذي يتبعه النص البرمجي يسمح بذلك لمعلم parameter ``المصفوفة`` الرابعة "
+"أن يكون فارغاً بصورة افتراضية. خذ راحتك في تلقن مزيد من المعلومات عن دالة "
+"``Object.connect`` لمزيد من المعلومات."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr ""
+msgstr "البرمجة النصية (متابعة)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr ""
+msgstr "المعالجة"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"تقدح أو تثار العديد من الوظائف في غودوت عن طريق الوظائف البرمجية الافتراضية "
+"أو طلبات الاستدعاء callbacks ، لذا لا حاجة لكتابة نص برمجي يعمل طوال الوقت."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
+"على الرغم من ذلك، ما زال شائعاً وجود الحاجة لكتابة نص برمجي لمعالجة كل إطار "
+"في كل مرة لذا هناك نوعان من المعالجة: المعالجة الخاملة و المعالجة الحركية "
+"(الفيزيائية)."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -2959,10 +3537,14 @@ msgid ""
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
+"المعالجة الخاملة تكون فعالة عندما الدالة :ref:`Node._process() "
+"<class_Node_method__process>` موجودة في النص البرمجي، والتي يمكن أن تُطفأ أو "
+"تشغّل عن طريق الوظيفة البرمجية :ref:`Node.set_process() "
+"<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid "This method will be called every time a frame is drawn:"
-msgstr ""
+msgstr "هذه الدالة ستُدعى في كل مرة يرسم فيها الإطار على الشاشة:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
 msgid ""
@@ -2970,6 +3552,9 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
+"من المهم أن تضع في بالك أن مدى تواتر استدعاء ``_process()`` يعتمد على عدد "
+"الإطارات في الثانية FPS التي يعمل بها التطبيق الخاص بك، وهذا المعدّل يمكن أن "
+"يتباين تبعاً للوقت والأجهزة."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -2977,18 +3562,24 @@ msgid ""
 "elapsed in seconds, as a floating point, since the previous call to "
 "``_process()``."
 msgstr ""
+"للمساعدة في تدبير هذه المتحولات إن المعلم ``delta`` يمثل الوقت المنصرم "
+"بالثانية، كرقم عشري، منذ الاستدعاء الأخير ل``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
+"هذه المَعلم يمكن أن يُستخدم في ضمان أن تستغرق العناصر جميعها المقدار الذاته من "
+"الوقت دوماً، بغض النظر عن عدد الإطارات في الثانية FPS."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
+"على سبيل المثال، الحركة عادة ما تكون نتيجة ضرب الوقت بالمَعلم delta وذلك لجعل "
+"السرعة ثابتة ومستقلة عن معدل عدد الإطارات."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""
@@ -2999,6 +3590,12 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
+"المعالجة الحركية (الفيزيائية) تتم بواسطة ``_physics_process()`` بصورة "
+"مماثلة، ولكن يجب أن تتم في كل خطوة لعملية فيزيائية على سبيل المثال التحكم "
+"بالشخصية. دائماً ما سيتم تشغيل هذه الوظيفة البرمجية قبل كل عملية حركية وبنفس "
+"الوقت تحافظ على الفاصل الزمني ذاته: 60 ثانية بصورة افتراضية. يمكنك تعديل "
+"الفاصل الزمني في إعدادات المشروع تحت: الفيزياء -> إعدادات عامة -> عدد "
+"الإطارات الفيزيائية."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
@@ -3006,16 +3603,22 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
+"إن الوظيفة البرمجية ``_process()``على كل حال ليست متزامنة مع الحركية "
+"الفيزيائية، حيث أن معدل عدد الإطارات ليس ثابتاً وهو مستقل عن العتاد وإعدادات "
+"اللعبة. إن المعالجة تتم بعد أن تتم الخطوة الحركية (الفيزيائية) في الألعاب "
+"أحادية-العملية (السردة)."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
 msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
+"أسهل طريقة لرؤية الوظيفة البرمجية ``_process()`` في خضم عملها يكون عن طريق "
+"إنشاء مَشهد بعُقدة لصاقة تعريفية Label وحيدة، مع النص البرمجي التالي:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
-msgstr ""
+msgstr "والذي سيظهر العداد وهو يزداد مع كل إطار."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
@@ -3028,12 +3631,20 @@ msgid ""
 "for organizing large scenes. There are two ways to add nodes to groups. The "
 "first is from the UI, using the Groups button under the Node panel:"
 msgstr ""
+"المجموعات في غودوت تعمل ذات الطريقة التي تعمل بها الوسوم tags التي إلا وقت "
+"تعاملت معها في برمجيات أخرى. العُقدة يمكن أن تُضاف إلى أي عدد من المجموعات "
+"ترغب به، وهذه الميزة مفيدة جداً في ترتيب مشاهد كبيرة الحجم. هناك طريقتان "
+"لإضافة العُقد إلى المجموعات، أولها يتم عن طريق واجهة المستخدم، أي عن طريق زر "
+"المجموعات أسفل لوحة العُقد:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
 msgid ""
 "And the second way is from code. The following script would add the current "
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
+"الطريقة الثانية تتم عن طريق النص البرمجي؛ إن النص البرمجي التالي سيقوم "
+"بإضافة عُقدة إلى مجموعة ``enemies`` أي الأعداء بالوقت الذي تظهر فيه في شجرة "
+"المشاهد."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -3041,12 +3652,17 @@ msgid ""
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_method_call_group>`:"
 msgstr ""
+"بهذه الطريقة، إن ما اكتشف اللاعب بطريقة ما قاعدة سرية، جميع الأعداد يمكن أن "
+"تنبه بصوت الإنذار الناتج باستخدم :ref:`SceneTree.call_group() "
+"<class_SceneTree_method_call_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
+"النص البرمجي أعلاه يستدعي الوظيفة البرمجية ``player_was_discovered`` "
+"\"اللاعب_تم_اكتشافه\" لكل عنصر من مجموعة ``enemies`` \"الأعداء\"."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
 msgid ""
@@ -3054,6 +3670,8 @@ msgid ""
 "ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
+"من الممكن كذلك الحصول على قائمة كاملة بعُقد المجموعة ``enemies`` باستدعاء ref:"
+"`SceneTree.get_nodes_in_group() <class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
 msgid ""
@@ -3087,34 +3705,41 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
 msgid "Overridable functions"
-msgstr ""
+msgstr "الوظائف البرمجية القابلة للتجاوز"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
 msgid ""
 "Such overridable functions, which are described as follows, can be applied "
 "to nodes:"
 msgstr ""
+"يمكن إضافة أمثال هذه الوظائف البرمجية القابلة للتجاوز، كما ستصف تالياً، إلى "
+"العُقد:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
 msgstr ""
+"كما ذُكر سابقاً إنه من الأفضل استخدام هذه الوظائف البرمجية بدلاً من نظام "
+"الإشعارات."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
 msgid "Creating nodes"
-msgstr ""
+msgstr "إنشاء العُقد"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:278
+#, fuzzy
 msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
+"لإنشاء عُقدة باستخدام النص البرمجي، استدعي الدالة ``.new()`` بصورة مشابهة لأي "
+"من البيانات المبنية على الصفوف class-based datatype، على سبيل المثال:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
-msgstr ""
+msgstr "لإزالة عُقدة، سواء أكانت داخل أو خارج المشهد، ينبغي استخدام ``free()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
 msgid ""
@@ -3122,6 +3747,9 @@ msgid ""
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
+"عندما يتم تحرير العُقدة (إزالتها)، فإن جميع العُقد الأبناء أيضاً ستتم إزالتها، "
+"وسبب ذلك إن حذف العُقد بصورة يدوية أسهل بكثير مما يبدو عليه. حرر (أزل) العُقدة "
+"الأساسية وكل شيء في الشجرة الخاصة بهذه العُقدة سيذهب معها."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
@@ -3130,28 +3758,39 @@ msgid ""
 "will crash the game. Running Godot with the debugger will often catch this "
 "case and warn you about it."
 msgstr ""
+"هناك حالة واردة الحدوث تحدث عندما نحاول أن نحذف عُقدة \"محجوبة\" في الوقت "
+"الحالي، وتكون على هذه الشاكلة لأنها تبعث بإشارة ما أو تستدعي وظيفة برمجية "
+"أخرى؛ لذا عمليتنا هذه سوف تحطم اللعبة. تشغيل غودوت مع منقح الأخطاء البرمجية "
+"debugger عاداة ما سيلاحظ هذه الحالة ويبنهك عليها."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
+"أأمن الطرق لحذق عٌقدة يكون باستخدام :ref:`Node.queue_free() "
+"<class_Node_method_queue_free>`، لأنه يقوم بحذف العُقدة بصورة آمنة أثناء "
+"الوضع الخامل idle."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
 msgid "Instancing scenes"
-msgstr ""
+msgstr "نمذجة المشاهد"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:347
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
+"يمكن نمذجة مشهد من النص البرمجي مباشرة بخطوتين. الأولى هي القيام بتحميل "
+"المشهد من القرص الصلب:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:360
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
+"التحميل الاستباقي يمكنه أن يكون أكثر فعالية، لأنه يحدث في وقت التجزئة (للغة "
+"البرمجية GDScript فقط):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
 msgid ""
@@ -3161,6 +3800,11 @@ msgid ""
 "must be called. This will return the tree of nodes that can be added to the "
 "active scene:"
 msgstr ""
+"ولكن``المشهد`` ليس بعُقدة حتى الآن، حيث أنه موضب بهيكلة خاصة تسمى :ref:"
+"`PackedSceneمشهد_موضب <class_PackedScene>`. لذا لإنشاء العُقدة الفعالة، يجب "
+"أن يتم استدعاء الوظيفة البرمجية :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>` لأنها ستعطينا شجرة العُقدة التي من "
+"الممكن إضافتها إلى المشهد الفعال:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid ""
@@ -3169,10 +3813,14 @@ msgid ""
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
+"الفائدة الاستراتيجية من هذه النهج ثنائي الخطوة تكمن في أن المشهد الموضّب من "
+"الممكن الحفاظ عليه محملاً سلفاً وجاهزاً للاستخدام بحيث بإمكانك إنشاء نماذج "
+"بالقدر الذي يعجبك، وهذا النهج فعال ومفيد جداً لنمذجة مجموعة كبيرة من الأعداء، "
+"الطلقات وغيرها من المدخلات إلى المشهد الفعّال."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "تسجيل النصوص البرمجية على أنها صفوف classes"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
 msgid ""
@@ -3180,6 +3828,9 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
+"يملك غودوت خاصية \"النص البرمجي على مستوى صف\" لأجل تسجيل النصوص الفُرادى في "
+"المحرر، بصورة افتراضية، يمنك الولوج إلى النصوص البرمجية غير المسماة فقط، "
+"وذلك عن طريق تحميل الملف مباشرة."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
 msgid ""
@@ -3188,20 +3839,27 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
+"يمكنك تسمية النص البرمجي وتسجيله كنوع في المحرر باستخدام ``اسم_الصف "
+"class_name`` متبوعاً باسم الصف الذي ترغب به، قد ترغب أيضاً بإضافة فاصلة ومسار "
+"اختياري لصورة لكي تستخدمها كأيقونة. عندها ستجد نوع جديد من المعطيات في نافذة "
+"إنشاء العُقد أو الموارد."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
 msgid "In Godot 3.1:"
-msgstr ""
+msgstr "في غودوت ذو الإصدار 3.1:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"فقط يمكن لكل من  GDScript و NativeScript وكذلك ++C وغيرها من اللغات المدعومة "
+"بواسطة GDNative أن تسجل النصوص البرمجية."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
 msgid "Only GDScript creates global variables for each named script."
 msgstr ""
+"فقط GDScript تنشئ متحولات عالمية global لكل من النصوص البرمجية المسماة."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:4
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1292
@@ -3210,7 +3868,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:696
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
-msgstr "إشارات"
+msgstr "الإشارات"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:9
 msgid ""
@@ -3219,12 +3877,18 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"الإشارات في غودوت تماثل أسلوب **المُراقب observer**، حيث أنها تسمح للعُقدة بأن "
+"ترسل رسائل للعُقدة الأخرى لكي يستمعوا إليها ويردوا عليها كذلك. على سبيل "
+"المثال، بدلاً من التأكد المستمر فيما إذا قد تم ضغط الزر، يمكن للزر أن يبعث "
+"إشارة عندما يُضغط."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"يمكنك قراءة المزيد عن أسلوب ونمط \"المُراقب\" هنا: http://"
+"gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
 msgid ""
@@ -3233,16 +3897,23 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
+"الإشارات ما هي إلا إحدى الوسائل **فصل** مكونات اللعبة الخاصة بك، الأمر الذي "
+"يعني أنه أصبح بالمقدور الوصول إلى تراتبية أفضل وتنظيم أفضل للنص البرمجي. "
+"بدلاً من فرض عناصر وتفاصيل اللعبة لتوقع وجود باقي الأجزاء بصورة دائمة، "
+"بإمكانها أن تبعث إشارة بحيث يمكن لجميع الأهداف المهتمة بها التسجيل والرد "
+"عليها."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
+"أدناه يمكنك أن ترى مجموعة من الأمثلة عن آلية استخدام الإشارات في المشاريع "
+"الخاصة بك."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
 msgid "Timer example"
-msgstr ""
+msgstr "مثال المؤقت"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -3250,6 +3921,10 @@ msgid ""
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
+"لمعرفة كيف تعمل الإشارات، دعنا نستخدم عُقدة ref:`المؤقت<class_Timer>`، أنشئ "
+"مشهداً جديداً مستخدماً العُقدة-ثنائية-البُعد Node2D ، مع اثنين من البنات: عُقدة "
+"مؤقت وكذلك عُقدة :ref:`رسومية<class_Sprite>`. في هذا المشهد، أعد تسمية العقدة-"
+"ثنائية-البُعد إلى مثال-المؤقت TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:30
 msgid ""
@@ -3258,10 +3933,14 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"من أجل نقشة (ملمس) الرسومية Sprite's Texture، يمكنك أن تستخدم الأيقونة "
+"الخاصة بغودوت، أو أي صورة أخرى تعجبك، ويمكنك فعل هذا الأمر عن طريق اختيار "
+"``تحميل Load`` في القائمة المنسدلة لملمس الرسومية، عندها أرفق النص البرمجي "
+"للعقدة الرئيسة، ولكن لا تضيف أي من النص البرمجي إليها بعد."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:34
 msgid "Your scene tree should look like this:"
-msgstr ""
+msgstr "شجرة المشاهد الخاصة بك، ينبغي أن تكون على الشكال التالي:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:38
 msgid ""
@@ -3269,6 +3948,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"في خواص عُقدة المؤقت، فعّل خاصية *البدء التلقائي* عن طريق وضع إشارة على "
+"الصندوق المنوط بهذه الخاصية، بهذه الطريقة المؤقت سيبدأ تلقائياً عندما تشغل "
+"المشهد، يمكنك أن تترك *وقت الانتظار* كثانية واحدة."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:42
 msgid ""
@@ -3277,6 +3959,10 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
+"الآن، في تبويب \"المتفحص\" هناك تبويب أيضاً أسمه \"العُقد\"، اضغط على هذا "
+"التبويب وستجد جميع الإشارات التي يمكن أن تبعثها العُقدة المختارة، في هذه "
+"الحالة إننا نتعامل مع عُقدة المؤقت، لذا الإشارة التي تهمنا هي \"نهاية_الوقت"
+"\"، أي أن هذه الإشارة ستبعث في اللحظة التي يصل فيها المؤقت للقيمة ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:49
 msgid ""
@@ -3284,6 +3970,9 @@ msgid ""
 "the signals panel. You'll see the following window, where you can define how "
 "you want to connect the signal:"
 msgstr ""
+"اضغط على إشارة \"timeout()\" ومن ثم اضغط على \"وصل\" في أسفل لوحة الإشارات، "
+"سترى النافذة التالية، حيث يمكنك أن تحدد الطريقة التي ترغب بها وصل هذه "
+"الإشارة:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:55
 msgid ""
@@ -3292,12 +3981,18 @@ msgid ""
 "blue, this is a visual indication that it's the node that is emitting the "
 "signal. Select the root node."
 msgstr ""
+"على الجهة اليُسرى ستلاحظ العُقد في المشاهد الخاصة بالمشروع، وعليك أن تختار "
+"عُقدة لـ\"تستمتع\" لهذه الإشارة، انتبه إلى كون عُقدة المؤقت باللون الأزرق، وما "
+"هو إلا مؤشر بصري لتعرف أنها العُقدة التي تبعث الإشارة. اختر في حالتنا العُقدة "
+"الرئيسة."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:60
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
+"العُقدة الهدف *ينبغي* أن تمتلك نص برمجي ملحق بها، وإلا ستحصل على رسالة بوجود "
+"خطأ."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
 msgid ""
@@ -3306,6 +4001,10 @@ msgid ""
 "signal connected to the same method, as each signal propagation will result "
 "in different values for those extra call arguments."
 msgstr ""
+"على الجهة اليُمنى، يمكنك أن تربط عدد كيفي من المعاملات arguments للأنواع "
+"(الممكنة) المختلفة، وهذا الأمر الذ يكون مفيداً عندما تملك أكثر من إشارة تتصل "
+"بالدالة method ذاتها، وذلك لأن \"المسار\" الذي ستسري فيه كل من هذه الإشارات "
+"سيعطي في النهاية قيماً مختلفة تبعاً للمعاملات arguments الإضافية المُستدعاة."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:67
 msgid ""
@@ -3314,28 +4013,38 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"في أسفل النافذة، هناك حقل مُسمى \"الدالة المتلقية\"، وهو اسم الوظيفة function "
+"التي ترغب باستخدامها في النص البرمجي للعُقدة الهدف. بصورة افتراضيةـ غودوت "
+"سينشئ هذه الوظيفة وفقاً ضابطة التسمية التالية "
+"``_on_<اسم_العُقدة>_<اسم_الإشارة>`` باللغة الإنجليزية طبعاً، ولكن يمكن تغيير "
+"هذه التسيمة بأي شيء آخر مناسب بالنسبة لك."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:72
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
+"اضغط على \"وصل\" وسترى أن الوظيفة function ستكون قد أنشئت في النص البرمجي:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:92
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"الآن يمكنك أن تستبدل النص البرمجي الموجود سلفاً بأي نص برمجي ترغب بتشغيله "
+"عندما تصل الرسالة، دعنا نجعل الرسومية Sprite ترمش:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"شغل المشهد وسترى أن الرسومية ستبدأ بالرمش أي أنها تظهر وتختفي مع كل ثانيةـ "
+"يمكنك أن تغير خاصية المؤقت *وقت الانتظار* لتعديل هذا السلوك."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:120
 msgid "Connecting signals in code"
-msgstr ""
+msgstr "وصل الإشارات باستخدام النص البرمجي"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:122
 msgid ""
@@ -3343,12 +4052,17 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
+"يمكنك كذلك وصل الإشارات بالنص البرمجي بدلاً من المحرر، هذا يكون عادة ضرورياً "
+"عندما تنمذج العُقد كذلك باستخدام النص البرمجي بدلاً من المحرر لأنك حينها لا "
+"تتمكن من استخدام المحرر لإنشاء الوصلات."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:126
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"بداية، افصل الإشارة عن طريق اختيار وصلة المؤقت في تبويب \"العُقد\" عن طريق "
+"الضغط على زر \"فصل الوصل\"."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
@@ -3358,30 +4072,43 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
+"لإنشاء الوصل باستخدام النص البرمجي، يمكنك أن تستخدم وظيفة ``connect``، "
+"وسنضعها في ``_ready()`` بحيث يتم الوصل عندما تكون اللعبة ستبدأ بالشروع، "
+"تركيب الوظيفة البرمجية هو ``<source_node>.connect(<signal_name>, "
+"<target_node>, <target_function_name>)`` أي (<العُقدة_الرئيسة>."
+"وصل(<اسم_الإشارة>، <العُقدة_الهدف>، <اسم_الوظيفة_البرمجية_الهدف>) \"انتبه أن "
+"الترجمة هذه حرفية ولكن النص البرمجي لا يكتب إلا باللغة الإنجليزية ومن اليسار "
+"لليمين!!\". وبالتالي هذا هو النص البرمجي لوصل المؤقت الخاص بنا:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:164
 msgid "Custom signals"
-msgstr ""
+msgstr "إشارات مخصصة"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:166
 msgid "You can also declare your own custom signals in Godot:"
-msgstr ""
+msgstr "يمكنك كذلك أن تصرح توليفة خاصة بك من الإشارات في غودوت:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:184
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
+"بمجرد أن تصرح، إشارتك المولّفة ستظهر في المُتفحص ويمكنك حينها أن تصلها بذات "
+"الطريقة التي تصل بها إشارات العُقد المبنية ضمنياً."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:187
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
 msgstr ""
+"لبعث إشارة عن طريق النص البرمجي، استخدم الوظيفة البرمجية ``emit_signal`` أي "
+"\"ابعث_إشارة\":"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:212
 msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
+"يمكن لإشارة أن تصرح عن معامل واحد أو أكثر اختيارياً، ويمكنك تحديد أسماء هذه "
+"المعاملات عن طريق وضعها بين قوسين:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:232
 msgid ""
@@ -3390,12 +4117,18 @@ msgid ""
 "number of arguments when you emit signals. So it's up to you to emit the "
 "correct values."
 msgstr ""
+"معاملات الإشارة ستظهر في ميناء العُقد في المحرر، وغودوت سيتسخدمها ليولد وظائف "
+"استدعاء برمجية callback functions من أجلك، وما زال بمقدورك أن تبعث أي عدد من "
+"المعاملات عندما تبعث الإشارة، ولكن الأمر عائد إليك لتبعث بالقيم الصحيحة أو "
+"المناسبة."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:237
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
 msgstr ""
+"لتمرر أي قيمة، قم بإضافتها إلى المعامل الثاني second argument في الوظيفة "
+"البرمجية ``emit_signal`:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:265
 msgid ""
@@ -3404,23 +4137,31 @@ msgid ""
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
+"معظم عُقد غودوت تؤمن مجموعة من الإشارات لتحديد وقوع مجموعة من الأحداث، فعلى "
+"سبيل المثال :ref:`Area2D مساحة_ثنائية_البُعد <class_Area2D>` ممثلة بقطعة "
+"نقدية في اللعبة يمكنها أن بعث إشارة``ولوج_جسم body_entered`` في أي وقت الجسم "
+"الفيزيائي للاعب يدخل حيز التصادم الخاص بها، الأمر الذي يجعلك على دارية متى "
+"التقط اللاعب هذه القطعة النقدية."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:270
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
+"في القسم التالي :ref:` اللعبة الأولى لك<doc_your_first_game>`، سنقوم بإنشاء "
+"لعبة متكاملة متضمنة استخدامات مختلفة من الإشارات لوصلها بين عناصر اللعبة "
+"المختلفة."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
-msgstr ""
+msgstr "اللعبة الأولى لك"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:10
 msgid "Overview"
-msgstr ""
+msgstr "نظرة عامة"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:9
 msgid ""
@@ -3428,6 +4169,9 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
+"هذه التعليمات ستشردك في طريقك لصناعة مشروعك الأول في غودوت، ستتعلم كيف يعمل "
+"محرر غودوت، وكيف تنظيم هيكلية المشروع وفي النهاية كيف تبني اللعبة ثنائية "
+"البُعد."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -3435,18 +4179,27 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
+"هذا المشروع هو توطئة إلى محرك الألعاب غودوت، وبالتالي نحن نفترض بأنك تملك "
+"بعضاً من الخبرة البرمجية السابقة، فإن كنت جديداً على البرمجة تماماً، ينبغي أن "
+"تبدأ هنا: :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
+"تسمى هذه اللعبة \"Dodge the Creeps!\" أي راوغ الزواحف!، حيث أن الهدف من "
+"شخصيتك هو الحركة وتجنب الأعداء لأطول فترة ممكنة. هنا نظرة عن النتيجة "
+"النهائية:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
+"**لماذا لعبة ثنائية البُعد 2D؟** لأن الألعاب ثلاثية الأبعاد أعقد بكثير من تلك "
+"الثنائية، عليك البقاء في إطار العمل ثنائي البُعد فترة كافية تتمكن فيها من فهم "
+"الآليات والأساسيات في صناعة الألعاب."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
@@ -3455,7 +4208,7 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide.rst:184
 #: ../../docs/development/cpp/configuring_an_ide.rst:311
 msgid "Project setup"
-msgstr ""
+msgstr "إعدادات المشروع"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -3463,6 +4216,9 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
+"شغل غودوت وأنشئ مشروعاً جديداً، ثم قم بتحميل download:`dodge_assets.zip <files/"
+"dodge_assets.zip>` ، توجد الملحقات البصرية والصوتية التي سنحتاجها في صناعة "
+"اللعبة لذا قم بفك ضغط هذه الملفات إلى الملف الخاص بالمشروع."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
 msgid ""
@@ -3470,6 +4226,9 @@ msgid ""
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
+"في هذه التعليمات، نفترض أنك على علم جيد بالمحرر، فإن لم تكن قد قرأت :ref:"
+"`مستند_العُقد_والمشاهد` ، يمكنك فعلها الآ، من أجل فهم أعمق لإعدادات المشروع "
+"واستخدام المحرر."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
 msgid ""
@@ -3477,10 +4236,13 @@ msgid ""
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
+"هذه اللعبة ستكون بالوضعية العمودية Portrait mode، لذا سنعدل الإعدادات "
+"المتعلقة بحجم نافذة اللعبة، توجه إلى المشروع > إعدادات المشروع > العَرض > "
+"النافذة ؛ ضع \"العرض\" إلى ``480`` \"والارتفاع\" ``720``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 msgid "Organizing the project"
-msgstr ""
+msgstr "تنظيم المشروع"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
 msgid ""
@@ -3491,10 +4253,17 @@ msgid ""
 "and scripts in the project's root folder, referred to as ``res://``.  You "
 "can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
+"في هذا المشروع ستقوم بإنشاء ثلاثة مشاهد مستقلة ``اللاعب`` و  ``الوحش`` وكذلك "
+"`` عناصر معلومات المستخدم HUD``، وهذه المشاهد الثلاثة سنضفرها بالمشهد "
+"``الرئيس``. في المشاريع الكبيرة، يُفضل أن تقوم بإنشاء مجلدات مختلفة للمشاهد "
+"المتنوعة والنصوص البرمجية الخاصة بها، لوكن تبعاً لصغر حجم هذه اللعبة نسبياً، "
+"بإمكانك حفظ المشاهد والنصوص البرمجية الخاصة بها إلى ملف المشروع الأساسي، أي "
+"المشار إليه عن طريق ``res://``. يمكنك أن تشاهد جميع ملفات المشروع في ميناء "
+"الملفات FileSystem Dock في الزاوية السفلية اليسرى من الشاشة:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
-msgstr ""
+msgstr "مشهد اللاعب"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
 msgid ""
@@ -3502,22 +4271,29 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
+"المشهد الأول الذي سنصعه سيحدد ماهية ``اللاعب``، وواحد من مزايا صناعة مشاهد "
+"مختلفة أنه يمكننا من اختبارها بصورة فردية حتى وإن سبقت صناعة هذا المشهد باقي "
+"أجزاء اللعبة."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 msgid "Node structure"
-msgstr ""
+msgstr "هيكلية العُقد"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:65
 msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
+"للشروع في العمل، اضغط على زر \"إضافة / إنشاء عُقدة جديدة\" وقم بإضافة عُقدة :"
+"ref:`Area2Dمساحة-ثنائية-البُعد <class_Area2D>`للمشهد."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid ""
 "Godot will display a warning icon next to the node in the scene tree. You "
 "can ignore it for now. We will address it later."
 msgstr ""
+"غودوت سيظهر أيقونة إنذار إلى جانب العُقدة في شجرة المشاهد، ستقوم بتجاهل هذا "
+"الإنذار في الوقت الحالي، لأننا سنقوم بإصلاحه في وقت لاحق."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:73
 msgid ""
@@ -3526,6 +4302,10 @@ msgid ""
 "scene's root node. We can add additional nodes to the player to add "
 "functionality."
 msgstr ""
+"باستخدام ``المساحة-ثنائية-البُعد Area2D`` يمكننا تحديد فيما إذا تقاطع جسمان "
+"أو اصطدم جسم ما باللاعب، قم بتغيير اسم العُقدة إلى ``اللاعب`` وذلك عن طريق "
+"الضغط على اسم العُقدة، وهذه العقدة في العُقدة الرئيسة لهذا المشهد، بإمكانك "
+"إضافة المزيد من العُقد إلى اللاعب لإعطاء المزيد الخصائص الوظيفية."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:78
 msgid ""
@@ -3534,22 +4314,33 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
+"قبل أن نضيف أي من \"الأبناء\" إلى عُقدة ``اللاعب``، سنقوم بالتأكد من عدم "
+"إمكانية تحريكهم أو تحجيمهم عند الضغط عليهم، لذا اختر العُقدة واضغط على "
+"الأيقونة على يمين القفل؛ والفقاعة التعريفية الخاصة بها تنص \"تؤكد على منع "
+"اختيار أبناء الشيء المختار\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
 msgid ""
 "Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
 "Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
+"احفظ المشهد. اضغط على مَشهد > حفظ، أو بإمكانك أن تضغط على :kbd:`Ctrl + S` إن "
+"كان نظام التشغيل ويندوز/لينكس أو :kbd:`Cmd + S` في حالة كنت تستخدم نظام "
+"التشغيل ماك."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:87
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr ""
+msgstr "لأجل هذا المشروع، سنتبع ضوابط التسمية الخاصة بغودوت."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:89
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
+"**GDScript**: الصفوف (العُقد) تتبع قاعدة سنام الجمل PascalCase، بينما "
+"المتحولات والوظائف ستستخدم قاعدة الأفعى snake_case، وفي النهاية الثوابت "
+"ستتبع قاعدة تكبير الحروف جميعها ALL_CAPS، اطلع على :ref:"
+"`مستند_ضابطة_برمجة_غودوت`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:93
 msgid ""
@@ -3558,10 +4349,16 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: الصفوف، المتحولات المُصدرة والطرائق Methods تتبع قاعدة PascalCase، "
+"بينما الحقول الخاصة تتبع قاعدة _camelCase، المتحولات المحلية والمعاملات "
+"Parameters تستخدم قاعدة camelCase (اطلع على  :ref:"
+"`مستند_ضابطة_أسلوب_كتابة_C`. كن حذراً في القاعدة التي تتبعها في تسمية الطرائق "
+"عندما تصل بين الإشارات."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:100
+#, fuzzy
 msgid "Sprite animation"
-msgstr ""
+msgstr "الرسوميات Sprite المتحركة"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:102
 msgid ""
@@ -3574,6 +4371,15 @@ msgid ""
 "click \"[empty]\" -> \"New SpriteFrames\". This should automatically open "
 "the SpriteFrames panel."
 msgstr ""
+"اضغط على عُقدة ``اللاعب``  وضف  :ref:`AnimatedSprite رسومية-متحركة "
+"<class_AnimatedSprite>`كعُقدة بنت للعقدة الأساسية. عُقدة ``رسومية-متحركة "
+"AnimatedSprite`` ستتولى الاهتمام بالشكل والصورة المتحركة للاعب الخاص بنا. "
+"لاحظ أنه هنالك أيقونة إنذار بجانب هذه العُقدة، لأن عُقدة ``رسومية-متحركة "
+"AnimatedSprite`` تتطلب مورد  :ref:`SpriteFrames إطارات-الرسومية "
+"<class_SpriteFrames>`، والتي تضع في قوائم الرسومات المتحركة التي بالمقدور "
+"عرضها. لصناعة واحدة، ابحث عن خاصية ``الإطارات Frames``  في ميناء المستكشف "
+"Inspector  واضغط على: \"[خالية] -> إطار-رسوميات جديد\"، الأمر الي سيفتح لوحة "
+"إطارات-الرسوميات بصورة تلقائية."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:113
 msgid ""
@@ -3583,6 +4389,11 @@ msgid ""
 "``playerGrey_up[1/2]`` and ``playerGrey_walk[1/2]``, into the \"Animation "
 "Frames\" side of the panel:"
 msgstr ""
+"على اليسار ستشاهد قائمة بالرسوميات المتحركة. اضغط على \"الافتراضية\" وقم "
+"بإعادة تسميتها إلى \"اليمين right\"، ومن ثمَّ اضغط على زر \"إضافة\" لإنشاء "
+"رسومية متحركة جديدة اسمها \"أعلى up\". اسحب الصورتين الخاصتين بكل من "
+"الرسوميات المتحركة المسماة `playerGrey_up[1/2]`` وكذلك "
+"``playerGrey_walk[1/2]`` إلى جانب \"إطارات الرسوميات المتحركة\" من اللوحة:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:120
 msgid ""
@@ -3591,6 +4402,10 @@ msgid ""
 "property to ``(0.5, 0.5)``. You can find it in the Inspector under the "
 "``Node2D`` heading."
 msgstr ""
+"صورة اللاعب كبيرة قليلاً بالنسبة لنافذة اللعبة، لذا سنقوم بتحجيمها للحجم "
+"الأصغر. اضغط على عُقدة ``رسومية-متحركة AnimatedSprite`` وقم بتغيير قيمة "
+"الخاصية ``Scale`` إلى القيم ``(0.5, 0.5)``، بإمكانك إيجاداها في ميناء "
+"المُتفحص تحت ترويسة `` العقدة-ثنائية-البُعد Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:127
 msgid ""
@@ -3601,14 +4416,21 @@ msgid ""
 "\"New CapsuleShape2D\".  Using the two size handles, resize the shape to "
 "cover the sprite:"
 msgstr ""
+"أخيراً، أضف عُقدة :ref:`CollisionShape2D جسم-تصادم-ثنائي-"
+"البُعد<class_CollisionShape2D>` كعقدة بنت لـ ``Player``، وهذه العُقدة ستحدد "
+"\"صندوق الفعالية Hitbox\" أو حدود منطقة التصادم.  لأجل هذه الشخصية إن "
+"عقدة``شكل-محفظي-ثنائي-البُعد CapsuleShape2D``ستفي بالغرض، لذا إلى جانب \"الشكل"
+"\" في ميناء المتفحص اضغط على \"[فارغ] -> \"شكل-محفظي-ثنائي-البُعد جديد\". "
+"باستخدام المقابض الثنائية، قم بتعديل حجم الشكل ليناسب الرسومية Sprite "
+"بالصورة المُثلى:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:136
 msgid "When you're finished, your ``Player`` scene should look like this:"
-msgstr ""
+msgstr "عندما تنهي من كل ذلك، مشهد ``اللاعب`` الخاص بك ينبغي أن يبدو هكذا:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:141
 msgid "Moving the player"
-msgstr ""
+msgstr "تحريك اللاعب"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:143
 msgid ""
@@ -3616,28 +4438,38 @@ msgid ""
 "node, so we'll add a script. Click the ``Player`` node and click the \"Add "
 "Script\" button:"
 msgstr ""
+"الآن علينا إضافة بعض الوظائف التي يس بالمقدور الحصول عليها من العُقد المبنية "
+"سلفاً، لذا سنقوم بذلك عن طريق إضافة نص برمجي. اضغط على عُقدة ``Player`` "
+"\"اللاعب\" واضغط على زر \"إضافة نص برمجي\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:149
 msgid ""
 "In the script settings window, you can leave the default settings alone. "
 "Just click \"Create\":"
 msgstr ""
+"في نافذة إعدادات النص البرمجي، يمكنك ترك جميع الخيارات على حالتها "
+"الافتراضية، فقط اضغط على \"إنشاء\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:152
 msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the `language` drop down menu before hitting create."
 msgstr ""
+"إن كنت تستخدم نص برمجي بلغة #C أو أي لغة برمجية أخرى، اخترها من القائمة "
+"المنسدلة `اللغة` قبل أن تضغط إنشاء."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:157
 msgid ""
 "If this is your first time encountering GDScript, please read :ref:"
 "`doc_scripting` before continuing."
 msgstr ""
+"إن كان هذا هو لقاؤك الأول مع لغة البرمجية النصية GDScript، من فضلك أقرأ :ref:"
+"`doc_scripting` قبل الاستمرار."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:160
 msgid "Start by declaring the member variables this object will need:"
 msgstr ""
+"ابدأ بالتعريف عن عناصر المحتولات التي سوف نحتاجها في هذا الموضوع object:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:181
 msgid ""
@@ -3648,6 +4480,12 @@ msgid ""
 "Variables\" section of the Inspector. Remember, if you change the value "
 "here, it will override the value written in the script."
 msgstr ""
+"باستخدام الكلمة ``export`` \"تصدير\" مع المتحول الأول ``speed`` أي \"السرعة"
+"\" يمكننا أن نعدل قيمة هذا المتحول من المُتفحص، وهذا الأمر سيكون مفيداً عندما "
+"تملك قيماً ترغب في تعديلها بذات الطريقة التي تُعدل فيها خصائص المبنية سلفاً "
+"للعُقد. اضغط على عُقدة ``Player`` أي اللاعب، وسترى الخصائص تظهر في قسم "
+"\"متحولات النص البرمجي\" في المُتفحص. تذكر أنك إن غيرت القيمة هنا، فإنها "
+"ستتجاوز القيمة الموجودة في النص البرمجي."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:188
 msgid ""
@@ -3656,12 +4494,18 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"إن كنت تستخدم لغة البرمجة #C، أنت بحاجة (لإعادة) بناء تجميعات المشروع "
+"project assemblies لكي ترى القيم أو الإشارات الجديدة المُصدرة، وهذا البناء "
+"يمكن أن يتم يدوياً عن طريق الضغط على كلمة \"Mono\" في أسفل نافذة المحرر وذلك "
+"لإظهار لوحة Mono، ومن ثمَّ الضغط على زر \"بناء المشروع\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:196
 msgid ""
 "The ``_ready()`` function is called when a node enters the scene tree, which "
 "is a good time to find the size of the game window:"
 msgstr ""
+"تستدعى الوظيفة البرمجية ``_ready()`` في كل مرة تدخل عُقدة معينة إلى شجرة "
+"المشاهد، أي أنه الوقت المناسب لمعرفة أبعاد نافذة اللعبة:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:212
 msgid ""
@@ -3670,18 +4514,22 @@ msgid ""
 "of our game, which we expect will change often. For the player, we need to "
 "do the following:"
 msgstr ""
+"الآن يمكننا استخدام الوظيفة البرمجية ``_process()`` لتحديد ما الذي سيفعله "
+"اللاعب. إن هذه الوظيفة ستسدعى مع كل إطار لذا سنستخدمها لتحديث العناصر في "
+"اللعبة الخاص بنا خاصة تلك التي نتوقع تغيرها باستمرار، من أجل اللاعب علينا "
+"القيام بالتالي:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:217
 msgid "Check for input."
-msgstr ""
+msgstr "تفقّد المُدخلات."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:218
 msgid "Move in the given direction."
-msgstr ""
+msgstr "التحرك بالاتجاه المُحدد."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:219
 msgid "Play the appropriate animation."
-msgstr ""
+msgstr "تشغيل الرسم المتحرك المناسب."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:221
 msgid ""
@@ -3692,12 +4540,21 @@ msgid ""
 "we will use the default events that are assigned to the arrow keys on the "
 "keyboard."
 msgstr ""
+"علينا بداية تفقد المُدخلات - هل يضغط اللاعب على زر ما؟ لأجل هذه اللعبة علينا "
+"تفقد أربع مُدخلات ذات علاقة بالتوجيه. إن فعاليات الإدخال تكون محددة في "
+"إعدادات المشروع تحت الخيار \"خريطة المُدخلات\". هنا يمكن ان تحدد فعاليات "
+"مخصوصة وتقرنها باستخدام أزرار مختلفة، ضغطات للفأرة الحاسوب، أو غيرها من "
+"أساليب الإدخال. لأجل هذا المشروع التجريبي، سنستخدم الفعاليات الافتراضية "
+"والتي قد تم قَرنها بأزرار الأسهم على لوحة المفاتيح."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:228
 msgid ""
 "You can detect whether a key is pressed using ``Input.is_action_pressed()``, "
 "which returns ``true`` if it is pressed or ``false`` if it isn't."
 msgstr ""
+"يمكن التأكد فيما إذا تم ضغط زر معين باستخدام ``Input.is_action_pressed()``، "
+"والذي سيرجع ``true`` أي \"نعم\" إن تم ضغط الزر، أو ``false`` أي \"كلا\" إن "
+"لم يتم ضغطه."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:290
 msgid ""
@@ -3708,6 +4565,13 @@ msgid ""
 "``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
+"سبندأ بجعل قيمة \"السرعة\" ``velocity`` لتكون ``(0, 0)`` (لأنه بصورة عامة لا "
+"ينبغي للاعب أن يتحرك). ومن ثمَّ نتحقق من كل مُدخل من المدخلات فنُضيف ونطرح إلى "
+"قيمة \"السرعة\" ``velocity`` للحصول على التوجيه النهائي. على سبيل المثال إن "
+"ما بقيت ضاغطاً على \"اليمين\" ``right`` و\"الأسفل\" ``down`` بذات الوقت إن "
+"مُركب vector \"السرعة\" ``velocity`` سيكون ``(1, 1)``. في هذه الحالة نحن نضيف "
+"حركة أفقية وحركة شاقولية لذا فإن اللاعب سيتحرك بصورة *أسرع* من تحركه بمنحى "
+"أفقية فقط."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:297
 msgid ""
@@ -3715,6 +4579,9 @@ msgid ""
 "*length* to ``1``, and multiply by the desired speed. This means no more "
 "fast diagonal movement."
 msgstr ""
+"يمكنا منع ذاك السلوك عن طريق *تطبيع normalize* السُرعة، الأمر الذي يعني جعل "
+"قيمة *الطول* الخاصة بالسرعة ``1`` ومن ثم ضربها بالسرعة المُختارة. بهذه "
+"الطريقة نمنع السرعات الإضافية عند التحرك بصورة قطرية."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:301
 msgid ""
@@ -3722,12 +4589,17 @@ msgid ""
 "explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
 "know but won't be necessary for the rest of this tutorial."
 msgstr ""
+"إن لم تستخدم حسابات المُتجهات من قبل، أو احتجت لإنعاش المعلومات المتعلقة بها، "
+"يمكن الاطلاع على شرح استخدامها في غودوت في :ref:`doc_vector_math`. من المفيد "
+"معرفة تلك المعلومات ولكنها ليست ذات صلة ببقية هذه التعليمات."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:305
 msgid ""
 "We also check whether the player is moving so we can start or stop the "
 "AnimatedSprite animation."
 msgstr ""
+"كما ينبغي علينا تفقد حركة اللاعب بحيث نشغل الرسومية-المتحركة الخاصة به أو "
+"نوقفها."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:308
 msgid ""
@@ -3735,6 +4607,10 @@ msgid ""
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
+"في لغة البرمجة النصية GDScript إن الرمز ``$`` يعطينا العُقد في المسار النسبي "
+"بالنسبة للعُقدة الحالية، أو يرجع \"لا شيء\" ``null`` إن لم يجد أي عُقدة. وبما "
+"أن عُقدة الرسومية-المتحركة AnimatedSprite هي عُقدة بنت للعُقدة الحالية؛ يمكننا "
+"استخدام ``$AnimatedSprite``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
 msgid ""
@@ -3742,6 +4618,9 @@ msgid ""
 "$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
+"إن الرمز ``$`` ما هو إلا اختصار ``get_node()`` أي \"جلب_العُقدة\" باللغة "
+"العربية، لذا في النص البرمجي أعلاه إن ``$AnimatedSprite.play()`` هي مشابهة "
+"تماماً لـ``get_node(\"AnimatedSprite\").play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:314
 msgid ""
@@ -3750,6 +4629,10 @@ msgid ""
 "*Clamping* a value means restricting it to a given range. Add the following "
 "to the bottom of the ``_process`` function:"
 msgstr ""
+"والآن بما أننا نمتلك اتجاه حركةـ يمكننا تعديل موقع اللاعب. وكذلك يمكننا "
+"استخدام الوظيفة البرمجية ``clamp()`` - ترجمتها \"التشبث\" - من أجل منع شخصية "
+"اللاعب من مغادرة الشاشة. *التشبث بقيمة* يعني أنه يحصر قيمتها في مجال معين. "
+"ضف التالي إلى أسفل الوظيفة البرمجية ``_process``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:335
 msgid ""
@@ -3758,6 +4641,10 @@ msgid ""
 "this value ensures that your movement will remain consistent even if the "
 "frame rate changes."
 msgstr ""
+"إن المَعلم `delta` في الوظيفة البرمجية ‍`_process()` يشير إلى *مدة الإطار* - "
+"أي الوقت الذي استغرقه الإطار السابق ليحمل بصورة كاملة. باستخدام هذه القيمة "
+"يمكننا أن نضمن أن الحركة ستبقى ذاتها متناسقة بغض النظر عن الهبوط أو الزيادة "
+"في معدل الإطارات."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:340
 msgid ""
@@ -3766,6 +4653,10 @@ msgid ""
 "scene can be closed by clicking ``Output`` (which should be highlighted in "
 "blue) in the lower left of the Bottom Panel."
 msgstr ""
+"اضغط على \"تشغيل المشهد\" (``F6``) وتيقن من القدرة على تحريك اللاعب في جميع "
+"الاتجاهات. يمكنك إغلاق واجهة المستعرض console الخاصة بالمخُرجات والتي انفتحت "
+"بمجرد لعب المشهد عن طريق الضغط على ``المُخرجات Output`` (ينبغي أن تكون مُعلّمة "
+"باللون الأزرق) في القسم الأخفض من اللوحة السفلية."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:345
 msgid ""
@@ -3836,6 +4727,14 @@ msgid ""
 "automatically create a function in your player's script. This function will "
 "be called whenever the signal is emitted - it *handles* the signal."
 msgstr ""
+"لاحظ أن إشارة \"الضربة hit\" الخاصة بنا هناك أيضاً! وبما أن أعداؤنا سيكونون "
+"عُقد``RigidBody2D`` \"أجسام ساكنة ثنائية البُعد\"، فإننا بأن تكون إشارة "
+"``body_entered( Object body )``؛ وهذه الإشارة ستبعث عندما يحدث تماس ما بين "
+"اللاعب وأي جسم كان. اضغط على زر \"الوصل..\" ومن ثمَّ \"الوصل\" مرة أخرى في "
+"نافذة \"وصل الإشارات\". نحن لسنا بحاجة لتعديل أي من هذه الإعدادات - يتكفل "
+"غودوت بمهمة إنشاء وظيفة برمجية في النص البرمجي للاعب الخاص بك بصورة تلقائية. "
+"ستستدعى الوظيفة البرمجية في أي وقت تُبعث فيها الإشارة- لكونها *تتكفل وتدبر* "
+"أمر الإشارة."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:456
 msgid ""
@@ -3843,10 +4742,13 @@ msgid ""
 "you can also give the name of an existing function that you want to link the "
 "signal to."
 msgstr ""
+"عند وصل إشارة ما، بمقدورك بدلاً من الاعتماد على غودوت في إنشاء الوظيفة "
+"البرمجية من أجلك، أن تقوم بإعطاء اسم وظيفة برمجية موجودة ترغب في ربط الإشارة "
+"بها أيضاً."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:460
 msgid "Add this code to the function:"
-msgstr ""
+msgstr "أضف هذا النص إلى الوظيفة البرمجية:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:479
 msgid ""
@@ -3854,6 +4756,9 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"في كل مرة يصطدم فيها عدو مع اللاعب، يتم بعث إشارة معينة، لذا نحن بحاجة إلى "
+"تعطيل تضارب (تصادم) اللاعب بحيث لا نثير أكثر من إشارة ``hit`` ضربة واحدة في "
+"كل مرة."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:483
 msgid ""
@@ -3861,16 +4766,22 @@ msgid ""
 "middle of the engine's collision processing. Using ``set_deferred()`` allows "
 "us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"إن تعطيل شكل التصادر الخاص بمنطقة ما قد يسبب خطأ إن ما حدث في خضم عمليات "
+"معالجة التصادمات في المحرك، لذا باستخدام الوظيفة البرمجية "
+"``set_deferred()``يكون بالمقدور جعل غودوت يقوم بتعليق عملية تعطيل الشكل حتى "
+"يصبح الوقت آمناً للقيام بذلك."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:488
 msgid ""
 "The last piece for our player is to add a function we can call to reset the "
 "player when starting a new game."
 msgstr ""
+"آخر جزء لأجل لاعبنا سيكون بإضافة وظيفة برمجية تمكننا من إعادة توضيع كل شيء "
+"عند تشغيل لعبة جديدة."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:509
 msgid "Enemy scene"
-msgstr ""
+msgstr "مشهد العدو"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:511
 msgid ""
@@ -3879,48 +4790,55 @@ msgid ""
 "the screen and move in a random direction in a straight line, then despawn "
 "when they go offscreen."
 msgstr ""
+"الآن حان الوقت لصناعة تلك الوحوش الذي سيراوغها لاعبنا. إن سلوكها ليس "
+"بالمعقد: الوحوش ستخلق بصورة عشوائية في حدود الشاشة وتتحرك كذلك في مناحي "
+"عشوائية على خطوط مستقيمة، ومن ثم تموت عندما تتجاوز حدود الشاشة."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:516
 msgid ""
 "We will build this into a ``Mob`` scene, which we can then *instance* to "
 "create any number of independent mobs in the game."
 msgstr ""
+"سنقوم بإنشاء كل هذا في مشهد``Mob``الوحش، ومن ثم بإمكاننا *نمذجة* هذا المشهد "
+"لإنشاء أنواع مستقلة من هذه الوحوش في اللعبة."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:520
 msgid "Node setup"
-msgstr ""
+msgstr "إعداد العُقدة"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:522
 msgid "Click Scene -> New Scene and we'll create the Mob."
-msgstr ""
+msgstr "اضغط على مشهد -> مشهد جديد، حيث سنقوم بصناعة الوحش."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:524
 msgid "The Mob scene will use the following nodes:"
-msgstr ""
+msgstr "إن مشهد الوحش سيتصمن العُقد التالية:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:526
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (مسماة:``Mob``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:528
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
-msgstr ""
+msgstr ":ref:`AnimatedSpriteالرسومية_المتحركة <class_AnimatedSprite>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:529
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
-msgstr ""
+msgstr ":ref:`CollisionShape2D شكل تصادم ثنائي البُعد<class_CollisionShape2D>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:530
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
 msgstr ""
+":ref:`VisibilityNotifier2D منبه البصري ثنائي "
+"الأبعاد<class_VisibilityNotifier2D>` (المسماة``Visibility``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:532
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
-msgstr ""
+msgstr "لا تنس بأن تجعل الأبناء غير قابلين للاختيار، كما فعلت في مشهد اللاعب."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:535
 msgid ""
@@ -3929,6 +4847,11 @@ msgid ""
 "``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
+"في خصائص :ref:`RigidBody2Dالجسم الساكن ثنائي البُعد <class_RigidBody2D>`  حدد "
+"قيمة ``مقياس الجاذبية Gravity Scale`` إلى ``0``؛ بحيث لا تسقط الوحوش إلى "
+"الأسفل، بالإضافة إلى ذلك تحت قسم ``فيزياء الجسم ثنائي الأبعاد "
+"PhysicsBody2D`` اضغط على خاصية ``القناع Mask`` وأزل تحديد المربع الأول، وهذا "
+"بدوره سيضمن عدم تصادم الوحوش مع بعضها بعضاً."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:542
 msgid ""
@@ -3938,17 +4861,28 @@ msgid ""
 "\"Speed (FPS)\" setting as shown below. We'll select one of these animations "
 "randomly so that the mobs will have some variety."
 msgstr ""
+"قم بتجهيز :ref:`AnimatedSprite الرسم المتحرك <class_AnimatedSprite>` كما "
+"فعلت مع اللاعب، ولكن في هذه المرة لدينا 3 أنواع من الرسومات المتحركة "
+"``الطيران fly``و ``السباحة swim`` وكذلك ``المشي walk``، ضع خاصية ``التشغيل "
+"Playing`` في المُتصفح على \"تشغيل\" وعدل إعداد \"السرعة (عدد الإطارات في "
+"الثانية)\" كما في الصورة أدناه. سنقوم باختيار واحدة من هذه الرسوميات "
+"المتحركة عشوائياً بحيث تكون الوحوش متنوعاً نوعاً ما."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:549
 msgid ""
 "``fly`` should be set to 3 FPS, with ``swim`` and ``walk`` set to 4 FPS."
 msgstr ""
+"يجب تحديد عدد الإطارات في الثانية FPS الخاصة لأجل``الطيران fly`` إلى 3، "
+"بينما كل من ``السباحة  swim`` و ``المشي walk`` ينبغي أن تكون 4."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:551
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
+"كما في صورة اللاعب، صور هذه الوحوش بحاجة لإعادة التحجيم وتصغيرها. حدد قيمة "
+"الخاصية ``القياس Scale`` التابع لِ ``الرسومية المتحركة AnimatedSprite`` إلى "
+"``(0.75, 0.75)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:554
 msgid ""
@@ -3956,15 +4890,19 @@ msgid ""
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
 "property to ``90`` under ``Node2D``."
 msgstr ""
+"كما في مشهد اللاعب ``Player``، قم بإضافة شكل محفظي ثنائي الأبعاد "
+"``CapsuleShape2D`` لأجل التصادمات. من أجل المحاذاة مع الصورة، ستكون بحاجة "
+"إلى تحديد الخاصية ``درجات التدوير`` إلى ``90`` تحت عنوان العُقدة ثنائية البُعد "
+"``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:559
-#, fuzzy
 msgid "Enemy script"
-msgstr "الوصف"
+msgstr "النص البرمجي للعدو"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:561
 msgid "Add a script to the ``Mob`` and add the following member variables:"
 msgstr ""
+"قم بإضافة نص برمجي إلى ``Mob`` ومن ثمَّ قم بإضافة عناصر المتحولات التالية:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid ""
@@ -3975,12 +4913,20 @@ msgid ""
 "sure you've spelled these the same in the script and in the SpriteFrames "
 "resource."
 msgstr ""
+"عندما ننشئ أو نخلق وحشاً ما، فإننا سنختار قيمة عشوائية تتراوح ما بين السرعة "
+"الدُنيا ``min_speed`` والسرعة العظمى``max_speed`` لتحديد السرعة التي سيتحرك "
+"بها هذا الوحش (سيكون من الممل لو جميع الوحوش تحركت بذات السرعة). كما أننا "
+"نملك مصفوفة تحتوي أسماء الرسوميات المتحركة الثلاث والتي سنستخدمها لاختيار "
+"واحدة عشوائياً. تأكد من الكتابة الإملائية الصحيحة لكل من هذه المعطيات في النص "
+"البرمجي وكذلك في مورد إطارات الرسوميات SpriteFrames."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:593
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we randomly choose "
 "one of the three animation types:"
 msgstr ""
+"الآن دعنا نلق نظرة على بقية النص البرمجي. في الوظيفة البرمجية ``_ready()`` "
+"سنختار واحدة من هذه الأنواع الثلاثة للرسوميات المتحركة عشوائياً:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:612
 msgid ""
@@ -3989,6 +4935,11 @@ msgid ""
 "``randomize()`` in our ``Main`` scene, so we won't need it here. ``randi() % "
 "n`` is the standard way to get a random integer between ``0`` and ``n-1``."
 msgstr ""
+"يجب عليك استخدام الوظيفة البرمجية ``randomize()`` إن رغبت بحفنة من الأعداد "
+"\"العشوائية\" المختلفة في كل مرة تشغّل فيها المشهد. حيث أننا سنستخدم هذه "
+"الوظيفة البرمجية في المشهد الرئيس``Main``، لذا لسنا بحاجة إلى استخدامها هنا. "
+"إن الوظيفة البرمجية ``randi() % n`` هي الطريقة المتبعة للحصول على رقم عشوائي "
+"في المجال بين ``0`` و ``n-1``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:618
 msgid ""
@@ -3996,14 +4947,17 @@ msgid ""
 "screen. Connect the ``screen_exited()`` signal of the ``Visibility`` node "
 "and add this code:"
 msgstr ""
+"آخر جزء من هذه التحفة هو جعل الوحوش تحذف نفسها عندما تغادر حدود الشاشة. صل "
+"إشارة ``screen_exited()`` من عُقدة الوضوح ``Visibility`` وقم بإضافة التالي "
+"إلى النص البرمجي:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:635
 msgid "This completes the `Mob` scene."
-msgstr ""
+msgstr "مشهد الوحش `Mob` المكتمل."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:638
 msgid "Main scene"
-msgstr ""
+msgstr "المشهد الرئيس"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:640
 msgid ""
@@ -4011,6 +4965,9 @@ msgid ""
 "`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
 "your saved ``Player.tscn``."
 msgstr ""
+"حان الوقت لجمع جميع تلك الأجزاء سويّةً. أنشئ مشهداً جديداً وأضف إليه :ref:"
+"`عُقدة<class_Node>` وسمها \"ألرئيس\" ``Main``. اضغط على زر النمذجة واختر "
+"المشهد المحفوظ ``Player.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:646
 msgid "See :ref:`doc_instancing` to learn more about instancing."
@@ -4039,39 +4996,48 @@ msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
 msgstr ""
+":ref:`Timer <class_Timer>` (المسمى``StartTimer``) - لإعطاء نوع من التأخير "
+"قبل البدء"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:654
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
 msgstr ""
+":ref:`Position2D توضع ثنائي الأبعاد <class_Position2D>` "
+"(المسمى``StartPosition``) - لتحديد مكان بدء اللاعب"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:656
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
 msgstr ""
+"حدد خاصية ``وقت الانتظار Wait Time`` لكل من عُقد ``المؤقت Timer`` كما يلي:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:659
 msgid "``MobTimer``: ``0.5``"
-msgstr ""
+msgstr "``MobTimer  مؤقت الوحش``: ``0.5``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:660
 msgid "``ScoreTimer``: ``1``"
-msgstr ""
+msgstr "``ScoreTimerمؤقت التسجيل والنتيجة ``: ``1``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:661
 msgid "``StartTimer``: ``2``"
-msgstr ""
+msgstr "``StartTimer مؤقت البدء``: ``2``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:663
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
 msgstr ""
+"بالإضافة إلى ذلك، حدد خاصية ``مرّة واحدة One Shot`` التابعة لمؤقت البدء`` "
+"StartTimer`` بحيث تكون \"شغّال On\" كما يحب أن تحدد قيمة خاصية ``الموقع "
+"Position`` التابع لعُقدة ``موقع البداية StartPosition`` بحيث تكون (240, "
+"450)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:667
 msgid "Spawning mobs"
-msgstr ""
+msgstr "خلق الوحوش"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:669
 msgid ""
@@ -4080,6 +5046,11 @@ msgid ""
 "<class_Path2D>` node named ``MobPath`` as a child of ``Main``. When you "
 "select ``Path2D``, you will see some new buttons at the top of the editor:"
 msgstr ""
+"العُقدة الرئيسة ستقوم بخلق وحوش جديدة، ونرغب بإن تكون تلك العملية في مواقع "
+"عشوائية على إطار الشاشة. قم بإضافة عُقدة :ref:`Path2D مسار ثنائي "
+"البُعد<class_Path2D>` وسمها ``مسار الوحش MobPath`` بحيث تكون عُقدة بنت للعُقدة "
+"الرئيسة ``MobPath``. عندما تختار عُقدة ``المسار ثنائي البُعد Path2D`` حيث أنك "
+"سترى حفنة جديدة من الأزارار في القسم العلوي من المُحرر:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:676
 msgid ""
@@ -4088,18 +5059,26 @@ msgid ""
 "sure \"Use Grid Snap\" is selected. This option can be found to the left of "
 "the \"Lock\" button, appearing as a magnet next to some intersecting lines."
 msgstr ""
+"اختر الزر الأوسط (\"إضافة نقطة\") وارسم مساراً عن طريق إضافة نقاط على "
+"الزوايا. لجعل النقاط تنزاح إلى الشبكة، تأكد من اختيارك \"استخدام الانزياح "
+"إلى الشبكة\"، يمكنك إيجاد هذا الإعداد إلى أيسر زر \"القفل\" حيث يبدو "
+"كمغناطيس بقرب مجموعة من الخطوط المتقاطعة."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:683
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
 msgstr ""
+"ارسم مساراً *بعكس عقارب الساعة* وإلا فإن نقاط خلق الوحوش الخاص بنا ستكون *نحو "
+"الخارج* بدلاً من أن تكون *نحو الداخل*!"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:686
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
 msgstr ""
+"بعد توضيع النقطة ``4`` في الصورة أدناه، اضغط على زر \"إغلاق المنحنى\" "
+"وبالتالي سيكون إنشاء المنحنى قد تم."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:689
 msgid ""
@@ -4108,22 +5087,31 @@ msgid ""
 "will automatically rotate and follow the path as it moves, so we can use it "
 "to select a random position and direction along the path."
 msgstr ""
+"بما أنه قد تم تحديد المسار، قم بإضافة عُقدة بنت للعُقدة ``MobPath`` بحيث تكون :"
+"ref:`PathFollow2Dتتبع المسار ثنائي البُعد <class_PathFollow2D>` وسمها ``موقع "
+"خلق الوحوش MobSpawnLocation``، ما أن تتحرك هذه العُقدة حتى تقوم بالإدارة "
+"وتتبع المسار، لذا يمكننا استخدامها لاختيار موقع وتوجه عشوائي على طول المسار."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:695
 msgid "Main script"
-msgstr ""
+msgstr "النص البرمجي الرئيس"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:697
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
+"قم بإضافة نص برمجي للعُقدة الرئيسة``Main``. في أعلى النص البرمجي نستخدم "
+"``export (PackedScene)`` أي يُصدر (المشهد الموضب) ليسمح لنا باختيار مشهد "
+"الوحش الذي نرغب في نمذجته."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:737
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property under the Script Variables of the ``Main`` node."
 msgstr ""
+"اسحب مشهد ``Mob.tscn``من لوحة \"ملفات النظام\" وأسقطها تحت خاصية ``Mob`` تحت "
+"متحولات النص البرمجي للعُقدة الرئيسة ``Main``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:740
 msgid ""
@@ -4133,6 +5121,11 @@ msgid ""
 "bottom of the \"Connecting Signal\" window. Add the following code, as well "
 "as a ``new_game`` function to set everything up for a new game:"
 msgstr ""
+"تالياً، اضغط على اللاعب وصل إشارة الضربة ``hit`، نرغب في إنشا وظيفة برمجية "
+"اسمها \"انتهت اللعبة\" ``game_over`` والتي ستتولى العمليات المترتبة على "
+"إنتهاء اللعبة. اكتب \"game_over\" في الحقل الخاص من أجل \"الدالة المستمعة\" "
+"في أسفل نافذة \"إنشاء الوصلات\". ضف النص البرمجي التالي بالإضافة إلى الوظيفة "
+"البرمجية \"لعبة_جديدة\" ``new_game`` لكي يكون كل شيء جاهزاً من أجل جولة جديدة:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:777
 msgid ""
@@ -4141,6 +5134,10 @@ msgid ""
 "``StartTimer`` will start the other two timers. ``ScoreTimer`` will "
 "increment the score by 1."
 msgstr ""
+"الآن دعنا نصل إشارة انتهاء الوقت ``timeout()`` من كل عُقدة مؤقت (``StartTimer "
+"مؤقت البدء ``, ``ScoreTimer مؤقت النتيجة`` ,و`` مؤقت الوحش MobTimer``) إلى "
+"النص البرمجي الرئيس. إن مؤقت البدء``StartTimer`` هو الذي سيبدأ المؤقتين "
+"الآخرين. إن مؤقت النتيجة ``ScoreTimer``سيضف 1 إلى قيمة النتيجة."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:804
 msgid ""
@@ -4149,11 +5146,17 @@ msgid ""
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
+"في الوظيفة البرمجية ``_on_MobTimer_timeout()`` سنقوم بإنشائ نمذجة للوحش "
+"واختيار موقع عشوائي على طول ``المسار ثنائي البُعد Path2D`` ومن ثم جعل الوحش "
+"متحركاً. عُقدة تتبع المسار ثنائي البُعد ``PathFollow2D`` تلتف وتتبع المسار "
+"بصورة تلقائية، لذا من الممكن استخدامها لتحديد توجيه الوحش وكذلك موقعه."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:810
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr ""
+"لاحظ بأنه ينبغي إضافة النمذجة الجديدة للمشهد باستخدام الوظيفة البرمجية "
+"``add_child()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:859
 msgid ""
@@ -4161,10 +5164,13 @@ msgid ""
 "you're more comfortable working with degrees, you'll need to use the "
 "``deg2rad()`` and ``rad2deg()`` functions to convert between the two."
 msgstr ""
+"في الوظائف البرمجية التي تطلب درجات فإن GDScript يستخدم *الراديان radians* "
+"وليس الدرجات العادية. لذا إن كنت مرتاحاً أكثر بالعمل مع الدرجات يمكنك استخدام "
+"الوظيفة البرمجية ``deg2rad()`` و ``rad2deg()`` للتحويل بينهما."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:865
 msgid "HUD"
-msgstr ""
+msgstr "HUD (العناصر دائمة العرض)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:867
 msgid ""
@@ -4174,6 +5180,11 @@ msgid ""
 "stands for \"heads-up display\", an informational display that appears as an "
 "overlay on top of the game view."
 msgstr ""
+"آخر جزء تحتاجه لعبتنا هو عناصر واجهة المستخدم UI: أي واجهة تعرض التفاصيل مثل "
+"النتيجة ورسالة \"انتهت اللعبة\"، وزر إعادة التشغيل مثلاً. أنشئ مشهداً جديداً "
+"وقم بإضافة عُقدة :ref:`CanvasLayer <class_CanvasLayer>` وسمها ``HUD``، إن "
+"\"HUD\" يعني  \"heads-up display\" أي العناصر المرئية التي تمدنا بمعلومات "
+"وتكون ظاهرة بصورة فوقية على باقي عناصر اللعبة."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:873
 msgid ""
@@ -6232,23 +7243,23 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
 msgid "The final result"
-msgstr ""
+msgstr "النتيجة النهائية"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:15
 msgid "You'll also learn to:"
-msgstr ""
+msgstr "كذلك ستتعلم القيام بـ:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:17
 msgid "Create flexible UI components"
-msgstr ""
+msgstr "إنشاء مكونات واجهة مستخدم مرنة"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:18
 msgid "Use scene inheritance"
-msgstr ""
+msgstr "استخدام توريث المشاهد"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:19
 msgid "Build a complex UI"
-msgstr ""
+msgstr "بناء واجهات مستخدم معقدة"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:21
 msgid ""
@@ -6256,46 +7267,58 @@ msgid ""
 "ui_gui_design.zip>` and extract the archive. Import the `start/` project in "
 "Godot to follow this tutorial. The `end/` folder contains the final result."
 msgstr ""
+"نزّل ملفات المشروع :download:`ui_gui_design.zip <files/ui_gui_design.zip>` "
+"وفك ضغط الملفات بعد التنزيل، استورد مشروع `start/` في غودوت للمتابعة في هذه "
+"التعليمات. مجلد `end/` يتضمن النتيجة النهائية."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
 msgid ""
 "You can watch this tutorial as a `video on Youtube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
 msgstr ""
+"يمكنك متابعة هذه التعليمات `كفيديو على اليوتيوب <https://www.youtube.com/"
+"watch?v=y1E_y9AIqow>`_."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
 msgid "Breaking down the UI"
-msgstr ""
+msgstr "شرح وتفصيل واجهة المستخدم"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:30
+#, fuzzy
 msgid ""
 "Let's break down the final UI and plan the containers we'll use. As in the :"
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
 "up to three columns:"
 msgstr ""
+"دعنا نشرح الواجهة النهائية التي نتطلع لبنائها وبناء على ذلك نخطط للحاويات "
+"التي سنرغب باستخدامها. كما في :doc:`ui_main_menu` إنها تبدأ بواسطة "
+"``الحاوية_الهامشية MarginContainer`` بعدها يمكننا ملاحظة ثلاث أعمدة:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
 msgid "The life and energy counters on the left"
-msgstr ""
+msgstr "عدادات الحياة والطاقة على اليسار"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:35
 msgid "The life and energy bars"
-msgstr ""
+msgstr "شريطي الحياة والطاقة"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
 msgid "The bomb and emerald counters on the right"
-msgstr ""
+msgstr "عدادات القنابل والمجوهرات على اليمين"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
 "But the bar's label and the gauge are two parts of the same UI element. If "
 "we think of them this way, we're left with two columns:"
 msgstr ""
+"ولكن اللصاقة التعريفية الخاصة بكل شريط وكذلك العدادات هما قسمان لذات العنصر "
+"الخاص بواجهة المستخدم، لذا إن فكرنا بهم بهذه الطريقة يمكننا أن نحصل على "
+"عمودين:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:41
 msgid "The life and energy bars on the left"
-msgstr ""
+msgstr "شريطي الحياة والطاقة على اليسار"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
 msgid ""
@@ -6306,10 +7329,17 @@ msgid ""
 "``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
+"بهذه الطريقة سيصبح الوضع أسهل من أجل تراتبية الحافظات (تعشيش الحافظات ضمن "
+"بعضها): حيث أننا نملك هامش حول حافة الشاشة بفضل ``الحاوية_الهامشية "
+"MarginContainer`` متبوعة ب ``حاوية_صندوقية_أفقية HBoxContainer`` لتدبير "
+"العمودين الخاصين بنا. وإن الشريطين في الواقع فوق بعضهما في "
+"``حاوية_صندوقية_شاقولية VBoxContainer``، وما زلنا بحاجة إلى "
+"``حاوية_صندوقية_أفقية HBoxContainer`` في العمود الأيمن لنضع فيه عدادات "
+"القنابل والمجوهرات جنباً إلى جنب."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
-msgstr ""
+msgstr "حصلنا بهذه الطريقة على واجهة مستخدم مهذبة فقط باستخدام أربع حاويات"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:55
 msgid ""
@@ -6317,10 +7347,13 @@ msgid ""
 "gives us the main GUI scene's structure. With this plan in place, we can "
 "jump into Godot and create our GUI."
 msgstr ""
+"مع ذلك ما زلنا بحاجة إلى حاوية في كل عنصر من عناصر الواجهة، ولكن ما فعلناه "
+"أعطانا الهيكلية الأساسية لواجهة المستخدم الرئيسة، وبتطبيق خطتنا هذه كذلك "
+"يمكننا الانتقال إذاً إلى غودوت والشروع بالعمل."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:60
 msgid "Create the base GUI"
-msgstr ""
+msgstr "إنشاء واجهة المستخدم الأساسية"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:62
 msgid ""
@@ -6331,16 +7364,25 @@ msgid ""
 "it looks good, you can save entire sections of the node tree as reusable sub-"
 "scenes. We'll do that in a moment."
 msgstr ""
+"هناك سبيلين لإنشاء واجهة المستخدم الرسومية GUI: يمكننا تصميم العناصر في "
+"مشاهد مختلفة ومن ثمَّ تجميعها معاً، أو يمكننا وضع نموذج أولي لجميع العناصر التي "
+"نرغب بها في مشهد واحد ومن ثمَّ نقوم بالتعديل والتفصيل بها لاحقاً. أنا أفضل أن "
+"نعمل في مشهد واحد لأننا بهذه الطريقة يمكننا التلاعب بالعناصر وتوضعاتها "
+"وخصائصها بصورة أسرع، فعندما تصل إلى الهيئة التي تعجبك، يمكنك أن تحفظ أجزاء "
+"كاملة من شجرة العُقدة كنوع من تحت-المشاهد sub-scenes لاستخدامها مجدداً. سنفعل "
+"ذلك في لحظات."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:69
 msgid "For now, let's start with a few containers."
-msgstr ""
+msgstr "حالياً، دعنا نباشر العمل ببعض الحافظات."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
+"أنشئ مشهداً جديداً وأضف إليه ``حاوية_هامشية MarginContainer``. اختر العُقدة "
+"وأعد تسميتها إلى ``GUI`` أو باللغة العربية \"واجهة المستخدم الرسومية\"."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
 msgid ""
@@ -6350,10 +7392,15 @@ msgid ""
 "parent, the viewport by default. It will resize automatically on the "
 "vertical axis to make space for its child UI components."
 msgstr ""
+"نرغب في أن تتوضع واجهة المستخدم الخاصة بنا أعلى الشاشة، لذا اختر عُقدة "
+"``GUI`` ثم اضغط على زر الطبقات في أعلى إطار العرض. اختر خيار ``أعلى وعريض "
+"Top Wide`` ، وبهذه الطريقة إن العُقدة ستتوضع أعلى الحافة العلوية للعُقدة الأم "
+"لها وهو في الحالة الافتراضية إطار العرض. وستقوم بإعادة تحجيم تلقائية على "
+"المحور الشاقولي لكي تفسح مجالاً لعناصر واجهة المستخدم الأبناء."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
-msgstr ""
+msgstr "احفظ المشهد: ``GUI.tscn``، سنضع كل مكونات وعناصر واجهة المستخدم فيه."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
 msgid ""
@@ -6363,6 +7410,11 @@ msgid ""
 "``HBoxContainer`` node. This one will contain our two bars on the left and "
 "separate them from the two counters on the right."
 msgstr ""
+"باختيار ``الحافظة الهامشية MarginContainer`` توجه إلى المتُفحص ومرر بالعجلة "
+"حتى تصل إلى قسم الثوابت المخصصة، وسّع القسم واضغط على الحقل بجانب كل "
+"``هامش``ضع جميع هذه القيم إلى ``20`` بكسل. من ثمَّ قم بإضافة عُقدة "
+"``حافظة_صندوقية_أفقية HBoxContainer``، حيث أن هذه العقدة ستتضمن الشريطين "
+"الخاصين بنا على يسار الشاشة وتفصلهم بذات الوقت عن العدادات على اليمين."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
 msgid ""
@@ -6372,10 +7424,18 @@ msgid ""
 "``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
 "containers, we have the base for our GUI scene."
 msgstr ""
+"نرغب في ترتيب الشريطين فوق بعضهما أي بصورة شاقولية داخل "
+"``حافظة_صندوقية_أفقية HBoxContainer``، لذا قم بإضافة عُقدة "
+"``حافظة_صندوقية_شاقولية VBoxContainer`` كعُقدة بنت لعُدة الحافظة الصندوقية "
+"الأفقية وقم بتسميتها ``Bars`` أي باللغة العربية \"الشرائط\"، اختر العُقدة "
+"الأم أي الحافظة الصندوقية الأفقية مرة أخرى وأضف من جديد عُقدة حافظة صندوقية "
+"أفقية `HBoxContainer``  كبنت أيضاً، قم بتسمية هذه العقدة الجديدة ``Counters`` "
+"أي باللغة العربية \"العدادات\". ومع هذه الحافظات الأربع أصبحت لدينا الهيكلة "
+"الأساسية لمشهد عناصر واجهة المستخدم."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
-msgstr ""
+msgstr "ينبغي أن تملك أربع حافظات على الشكل التالي"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
 msgid ""
@@ -6384,10 +7444,15 @@ msgid ""
 "tutorial like this, it may seem weird. But once you're working on real "
 "games, you'll see it's an efficient workflow."
 msgstr ""
+"استطعنا العمل بهذه الطريقة لأننا قمنا بتفصيل وتشريح واجهة المستخدم الخاصة "
+"بنا لعدد من العناصر وأخذنا وقتنا لتحديد ومعرفة أي من الحافظات ينبغي استخدامه "
+"وأيٌّ منها الأفضل، عندما تتبع تعليمات مثل هذه قد يبدو الأمر غريباً بعض الشيء، "
+"ولكن عندما تبدأ العمل على الألعاب الحقيقية ستعرف كم هو نهج عمل منطقي وفعال "
+"جداً."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:105
 msgid "Create the bars' base"
-msgstr ""
+msgstr "إنشاء قاعدة الشريطين"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:107
 msgid ""
@@ -6396,6 +7461,11 @@ msgid ""
 "the ``HBoxContainer`` is the perfect tool for the job. Select the ``Bars`` "
 "node and add a new ``HBoxContainer`` inside of it. Name it ``Bar``."
 msgstr ""
+"كل شريط مقسوم إلى عناصر أصغر مصطفة بصورة أفقية: اللصاقة التعريفية التي تعبر "
+"عن معلومات الصحة على اليسار، والعداد على اليمين. مرّة أخرى إن الحافظة "
+"الصندوقية الأفقية ``HBoxContainer``هي الأداة المثالية للقيام بهذه الوظيفة. "
+"اختر عُقدة ``Bars`` ومن ثمَّ قم بإضافة حافظة صندوقية أفقية ``HBoxContainer`` "
+"داخلها وسمّها ``Bar``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:113
 msgid ""
@@ -8022,7 +9092,7 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:257
 #: ../../docs/community/tutorials.rst:51
 msgid "Resources"
-msgstr ""
+msgstr "الموراد"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
@@ -8285,6 +9355,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/resources.rst:218
 msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr ""
+"ضع قيمة خاصية ``النص البرمجي script`` في المُتفحص على أنه االنص البرمجي الخاص "
+"بك."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:220
 msgid ""
@@ -8293,6 +9365,10 @@ msgid ""
 "custom properties too! To save a resource from the Inspector, click the "
 "Inspector's tools menu (top right), and select \"Save\" or \"Save As...\"."
 msgstr ""
+"المتصفح سيظهر لك الخواص المقدمة من النص البرمجي الخاص بك، إن قمت بتعديل إحدى "
+"هذه القيم ومن ثم حفظت النص البرمجي الأصلي، المستكشف سيسلسل الخاصيات المُعدلة "
+"كذلك! إن رغبت في حفظ المكون من المتفحص، اضغط على قائمة المتصفح الخاصة "
+"بالأدوات (الزاوية العلوية) واختر \"حفظ\" أو \"احفظ كـ...\"."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
 msgid ""
@@ -9637,7 +10713,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:452
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:467
 msgid "Description"
-msgstr "الوصف"
+msgstr "الوصف:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "``-h``, ``--help``, ``/?``"
@@ -11497,7 +12573,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:446
 msgid "Functions"
-msgstr ""
+msgstr "الوظائف البرمجية"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:681
 msgid ""
@@ -15493,7 +16569,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
-msgstr ""
+msgstr "المزايا"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -23954,7 +25030,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
-msgstr ""
+msgstr "التحوّل"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
@@ -24637,7 +25713,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:289
 msgid "Color"
-msgstr ""
+msgstr "اللون"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:291
 msgid "Used to change the color of the particles being emitted."
@@ -49084,7 +50160,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
 msgid "Theme"
-msgstr ""
+msgstr "الموضوع"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:27
 msgid ""
@@ -58879,7 +59955,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
 msgid "Asset Library"
-msgstr "مكتبة الأصول"
+msgstr "مكتبة المُلحقات"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
@@ -59935,6 +61011,11 @@ msgid ""
 "Godot editor, GDScript, and basic 3D game development. A OpenVR-ready "
 "headset and two OpenVR-ready controllers are required."
 msgstr ""
+"**يتطلب بعض المهارة في صناعة الألعاب ثلاثية الأبعاد** قبل الخوض في سلسلة "
+"التعليمات هذه، حيث أنها تفترض أنك تملك من الخبرة ما يكفي للتعامل مع محرر "
+"غودوت بالإضافة إلى لغة البرمجة النصية GDScript والخطوط العريضة في تصميم "
+"الألعاب ثلاثية الأبعاد. عُدة واقع افتراضي تدعم OpenVR وكذلك أجهزة التحكم "
+"الخاصة به مطلوبة."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:38
 msgid ""
@@ -70791,7 +71872,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:122
 msgid "Debugger"
-msgstr ""
+msgstr "مُنقح الأخطاء"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:124
 msgid ""
@@ -70900,7 +71981,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:179
 msgid "Network Profiler"
-msgstr ""
+msgstr "ملف تعريف الشبكة Network Profiler"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:181
 msgid ""
@@ -71426,7 +72507,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:142
 msgid "Target"
-msgstr ""
+msgstr "الهدف"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target controls optimization and debug flags. Each mode means:"
@@ -72579,7 +73660,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:70
 msgid "Run"
-msgstr ""
+msgstr "تشغيل"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:72
 msgid ""
@@ -74490,7 +75571,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
-msgstr "متجه"
+msgstr "مُتجه"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
@@ -80323,6 +81404,8 @@ msgid ""
 "`awesome-godot: A curated list of resources by Calinou <https://github.com/"
 "Calinou/awesome-godot>`_"
 msgstr ""
+"`awesome-godot: Calinou قائمة موارد مُختارة لمحرك لغدوت من قبل <https://"
+"github.com/Calinou/awesome-godot>`_"
 
 #: ../../docs/community/tutorials.rst:54
 msgid ""
