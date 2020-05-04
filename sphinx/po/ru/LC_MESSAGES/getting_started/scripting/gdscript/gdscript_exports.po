@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgstr ""
 msgid "Examples"
 msgstr "Примеры"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:129
 #, fuzzy
 msgid ""
 "It must be noted that even if the script is not being run while in the "
@@ -88,11 +88,11 @@ msgstr ""
 "выполняется, экспортируемые свойства все равно можно редактировать (см. ниже "
 "слово \"tool\")."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:134
 msgid "Exporting bit flags"
 msgstr "Экспорт битовых флагов"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:136
 #, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
@@ -103,7 +103,7 @@ msgstr ""
 "``true``/``false`` (булевых) значений в одном свойстве. Используя подсказку "
 "экспорта ``int, FLAGS``, их можно настроить в редакторе:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
 #, fuzzy
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
@@ -112,7 +112,7 @@ msgstr ""
 "Также возможно ограничение флагов определенным количеством именованных "
 "флагов. Синтаксис аналогичен синтаксису перечисления:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:139
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:149
 msgid ""
 "In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
@@ -122,7 +122,7 @@ msgstr ""
 "``Wind`` - 8. Обычно константы должны быть определены соответствующим "
 "образом (например, ``const ELEMENT_WIND = 8`` и так далее)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:144
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:154
 #, fuzzy
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
@@ -132,11 +132,11 @@ msgstr ""
 "операций. Если вы сомневаетесь, вместо этого следует экспортировать булевые "
 "переменные."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:148
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:158
 msgid "Exporting arrays"
 msgstr "Экспорт массивов"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:160
 #, fuzzy
 msgid ""
 "Exporting arrays works, but with an important caveat: while regular arrays "
@@ -152,11 +152,18 @@ msgstr ""
 "Экспортируемые массивы могут иметь инициализаторы, но они должны быть "
 "постоянными выражениями."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:186
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
+msgid ""
+"If the exported array specifies a type which inherits from Resource, the "
+"array values can be set in the inspector by dragging and dropping multiple "
+"files from the FileSystem dock at once."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:206
 msgid "Setting exported variables from a tool script"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:188
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:208
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "

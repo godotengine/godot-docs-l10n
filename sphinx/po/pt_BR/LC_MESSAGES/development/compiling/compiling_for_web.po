@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:4
 msgid "Compiling for the Web"
-msgstr ""
+msgstr "Compilando para Web"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:9
 msgid "Requirements"
@@ -28,6 +28,8 @@ msgstr "Requisitos"
 #: ../../docs/development/compiling/compiling_for_web.rst:11
 msgid "To compile export templates for the Web, the following is required:"
 msgstr ""
+"Para compilar modelos de exportação para a Web, é necessário fazer o "
+"seguinte:"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:13
 msgid "`Emscripten 1.39.0+ <https://emscripten.org>`__."
@@ -39,7 +41,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:15
 msgid "`SCons 3.0+ <https://www.scons.org>`__ build system."
-msgstr ""
+msgstr "`SCons 3.0+ <https://www.scons.org>`__ sistema de construção."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:17
 msgid ""
@@ -60,6 +62,13 @@ msgid ""
 "``emsdk activate latest``, or by your package manager. It's also created "
 "when starting Emscripten's ``emcc`` program if the file doesn't exist."
 msgstr ""
+"Antes de iniciar, confirme que o arquivo de configuração do Emscripten "
+"existe e especifica todas as configurações corretamente. Este arquivo está "
+"disponível como ``~/.emscripten`` em sistemas baseados em UNIX e ``"
+"%USERPROFILE%\\.emscripten`` em Windows. É geralmente escrito pelo SDK do "
+"Emscripten, por exemplo, quando chama ``emsdk activate latest``, ou pelo seu "
+"gerenciador de pacote. É também criado quando inicia o programa ``emcc`` do "
+"Emscripten se o arquivo não existir."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:30
 msgid ""
@@ -67,6 +76,9 @@ msgid ""
 "configuration file as double backslashes ``\\\\`` or use Unix-style paths "
 "with a single forward slash ``/``."
 msgstr ""
+"No Windows, certifique-se de escapar as barras invertidas de caminhos dentro "
+"do arquivo de configuração do Emscripten como ``\\\\`` ou use caminhos tipo "
+"Unix com uma única barra ``/``."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:34
 msgid ""

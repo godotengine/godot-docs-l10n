@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -721,58 +721,48 @@ msgstr ""
 "**no**)"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:363
-#, fuzzy
 msgid "Build Godot with the Mono module enabled."
-msgstr ""
-"**module_mono_enabled** : Compiler Godot avec le module Mono activé (yes | "
-"**no**)"
+msgstr "Construire Godot avec le module Mono activé."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:365
 msgid "**mono_glue**\\ =\\ **yes** | no"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:367
-#, fuzzy
 msgid ""
 "Whether to include the glue source files in the build and define "
 "``MONO_GLUE_DISABLED`` as a preprocessor macro."
 msgstr ""
-"**mono_glue** : Inclure ou non les fichiers source \"glue\" dans la "
-"compilation et définir \"MONO_GLUE_DISABLED\" comme macro de préprocesseur "
-"(**yes** | no)"
+"S'il faut inclure les fichiers source de glue dans la compilation et définir "
+"``MONO_GLUE_DISABLED`` comme macro de préprocesseur."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:370
 msgid "**mono_prefix**\\ =path"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:372
-#, fuzzy
 msgid ""
 "Path to the Mono installation directory for the target platform and "
 "architecture."
 msgstr ""
-"**mono_prefix** : Chemin d'accès au répertoire d'installation de Mono pour "
-"la plate-forme et l'architecture cibles"
+"Chemin d'accès au répertoire d'installation de Mono pour la plate-forme et "
+"l'architecture cibles."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:374
 msgid "**xbuild_fallback**\\ =yes | **no**"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:376
-#, fuzzy
 msgid "Whether to fallback to xbuild if MSBuild is not available."
-msgstr ""
-"**xbuild_fallback** : si vous souhaitez utiliser xbuild si MSBuild n'est pas "
-"disponible (yes | **no**)"
+msgstr "S'il faut se rabattre sur xbuild si MSBuild n'est pas disponible."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:378
 msgid "**mono_static**\\ =yes | no"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:380
-#, fuzzy
 msgid "Whether to link the Mono runtime statically."
-msgstr "**mono_static** : Lier le runtime Mono statiquement (yes | **no**)"
+msgstr "S'il faut lier statiquement le runtime Mono."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:381
 msgid ""

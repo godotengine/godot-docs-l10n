@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -497,26 +497,28 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:244
 msgid "The Connect Signal window with the GUI node selected"
-msgstr "GUIノードが選択された「Connect Signal」ウィンドウ"
+msgstr "GUIノードが選択された「シグナル接続」ウィンドウ"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:248
 msgid ""
 "You can optionally connect nodes from the code. However doing it from the "
 "editor has two advantages:"
 msgstr ""
-"必要に応じて、コードからノードを接続できます。ただし、エディタから実行するこ"
-"とには、次の2つの利点があります:"
+"必要に応じて、コード内でノードを接続できます。ただし、エディタから実行するこ"
+"とには次の利点2つがあります:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
 msgid "Godot can write new callback functions for you in the connected script"
 msgstr ""
-"Godotは接続されたスクリプトで新しいコールバック関数を書くことができます"
+"Godotはあなたに代わって、接続されたスクリプト内に新しいコールバック関数を書け"
+"ます"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:251
 msgid ""
 "An emitter icon appears next to the node that emits the signal in the Scene "
 "dock"
-msgstr "シーンドックで信号を放出するノードの横にエミッタアイコンが表示されます"
+msgstr ""
+"シーンドック内で、信号を発信するノードの横に発信元アイコンが表示されます"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
 msgid ""
@@ -581,7 +583,7 @@ msgid ""
 "In Player.gd, when the Player emits the health\\_changed signal, it also "
 "sends its health value"
 msgstr ""
-"Player.gdでは、Playerがhealth\\_changedシグナルを放出すると、その体力値も送信"
+"Player.gdでは、Playerがhealth\\_changedシグナルを発信すると、その体力値も送信"
 "します"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302

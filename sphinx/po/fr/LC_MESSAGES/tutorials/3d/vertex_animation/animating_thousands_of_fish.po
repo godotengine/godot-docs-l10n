@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,7 +138,6 @@ msgstr ""
 "recompiler le shader."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:48
-#, fuzzy
 msgid ""
 "All the motions will be made using cosine waves applied to ``VERTEX`` in "
 "model space. We want the vertices to be in model space so that the motion is "
@@ -250,13 +249,12 @@ msgstr ""
 "matrice de rotation."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:126
-#, fuzzy
 msgid ""
 "We apply the rotation in the ``xy`` axes so that the fish appears to roll "
 "around its spine. For this to work, the fish's spine needs to be centered on "
 "the ``z`` axis."
 msgstr ""
-"Nous appliquons la rotation dans les axes ``xy`` pour que le poisson semble "
+"Nous appliquons la rotation sur les axes ``xy`` pour que le poisson semble "
 "rouler autour de sa colonne vertébrale. Pour que cela fonctionne, la colonne "
 "vertébrale des poissons doit être centrée sur l'axe ``z``."
 
@@ -403,7 +401,6 @@ msgstr ""
 "en 2D. Dans le cadre de ce tutoriel, sélectionnez 3D."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:203
-#, fuzzy
 msgid ""
 "For both ``color_format`` and ``custom_data_format`` you can choose between "
 "``None``, ``Byte``, and ``Float``. ``None`` means you won't be passing in "
@@ -415,14 +412,14 @@ msgid ""
 "artifacts."
 msgstr ""
 "Pour les ``color_format`` et les ``custom_data_format``, vous pouvez choisir "
-"entre ``None``,   ``Byte`` et ``Float``. ``None`` signifie que vous ne "
-"passerez pas de données en paramètres (que ce soit une variable par "
-"instante  ``COLOR``, ou une ``INSTANCE_CUSTOM``) au shader. ``Byte`` "
-"signifie  que chaque nombre qui constitue la couleur que vous passerez en "
-"paramètre sera stockée en 8 bits tandis que  ``Float`` signifie que chaque "
-"nombre sera stocké dans un nombre flottant (32 bits).  ``Float`` est plus "
-"lent mais plus précis, ``Byte`` va prendre moins de mémoire et sera plus "
-"rapide mais peut entraîner des artefacts visuels."
+"entre ``None``, ``Byte`` et ``Float``. ``None`` signifie que vous ne "
+"passerez pas de données en paramètres (que ce soit une variable par instante "
+"``COLOR``, ou une ``INSTANCE_CUSTOM``) au shader. ``Byte`` signifie que "
+"chaque nombre qui constitue la couleur que vous passerez en paramètre sera "
+"stockée avec 8 bits tandis que ``Float`` signifie que chaque nombre sera "
+"stocké dans un nombre flottant (32 bits). ``Float`` est plus lent mais plus "
+"précis, ``Byte`` va prendre moins de mémoire et sera plus rapide mais peut "
+"entraîner des artefacts visuels."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:210
 msgid "Now, set ``instance_count`` to the number of fish you want to have."

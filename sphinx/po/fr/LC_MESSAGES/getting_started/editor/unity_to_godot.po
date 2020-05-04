@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,14 +32,13 @@ msgstr ""
 "vers le monde de Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:15
-#, fuzzy
 msgid ""
 "This article talks about older versions of Unity. Nestable prefabs ('Nested "
 "prefabs') were added to Unity 2018.3. Nestable prefabs are analogous to "
 "Godot's scenes, and allow a more Godot-like approach to scene organization."
 msgstr ""
 "Cet article traite d'une ancienne version de Unity. Les Prefabs imbriqués "
-"(\"Nested prefabs\") sont utilisables depuis la version Unity 2018.3. Les "
+"('Nested prefabs') sont utilisables depuis la version Unity 2018.3. Les "
 "Prefabs imbriqués sont analogues aux scènes de Godot. Cela permet d'ailleurs "
 "d'avoir une approche de la gestion des scenes similaire à Godot dans Unity."
 
@@ -103,7 +102,6 @@ msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 msgstr "**Consoles :** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
-#, fuzzy
 msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, PlayStation VR, Gear VR, "
 "HoloLens"
@@ -274,9 +272,8 @@ msgstr ""
 "débogueur)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:76
-#, fuzzy
 msgid "This approach has several advantages:"
-msgstr "Chacun de ces formats a des avantages différents."
+msgstr "Cette approche présente plusieurs avantages :"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:78
 msgid ""
@@ -327,13 +324,12 @@ msgid "The scene system"
 msgstr "Le système de scène"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:90
-#, fuzzy
 msgid ""
 "This is the most important difference between Unity and Godot and the "
 "favorite feature of most Godot users."
 msgstr ""
-"Il s'agit de la différene la plus importante entre Godot Engine et Unity. Et "
-"c'est la fonctionnalité la plus appréciée des utilisateurs de Godot."
+"Il s'agit de la différence la plus importante entre Godot Engine et Unity. "
+"Et c'est la fonctionnalité la plus appréciée des utilisateurs de Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:92
 msgid ""
@@ -431,7 +427,6 @@ msgid "**A scene for the Enemy.**"
 msgstr "**Une scène pour l'ennemi.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:118
-#, fuzzy
 msgid ""
 "An enemy is also an element we'd like to use in several scenes. It's almost "
 "the same as the Player node. The only differences are the script (it needs "
@@ -439,7 +434,7 @@ msgid ""
 "by the AnimatedSprite node."
 msgstr ""
 "Un ennemi est aussi un élément que nous aimerions utiliser dans plusieurs "
-"scènes. C'est presque la même chose que le nœud Joueur. Les seules "
+"scènes. C'est presque la même chose que le nœud Joueur(Player). Les seules "
 "différences sont le script (il a besoin de routines 'AI' pour générer le "
 "comportement de l'ennemi) et les textures de sprite utilisées par le nœud "
 "AnimatedSprite."
@@ -449,7 +444,6 @@ msgid "**A Level scene.**"
 msgstr "**Une scène niveau.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:124
-#, fuzzy
 msgid ""
 "A Level scene is composed of Bricks (for platforms), Coins (for the player "
 "to collect) and a number of instances of the Enemy scene. Each instance is a "
@@ -458,13 +452,14 @@ msgid ""
 "You can set different properties for each Enemy node (to change its color, "
 "for example)."
 msgstr ""
-"Une scène de niveau est composée de briques (pour les plates-formes), de "
-"pièces (à collecter par le joueur) et d'un certain nombre d'instances de la "
-"scène ennemie. Chaque instance est un nœud dans l'arborescence de la scène "
-"Niveau. Ces instances sont des ennemis distincts, qui ont initialement un "
-"comportement et une apparence communs tels que définis dans la scène "
-"ennemie. Vous pouvez définir différentes propriétés pour chaque nœud ennemi "
-"(pour changer sa couleur, par exemple)."
+"Une scène de niveau(Level) est composée de briques(Bricks) (pour les plates-"
+"formes), de pièces(Coins) (à collecter par le joueur) et d'un certain nombre "
+"d'instances de la scène ennemie(Enemy). Chaque instance est un nœud dans "
+"l'arborescence de la scène niveau(Level). Ces instances sont des ennemis "
+"distincts, qui ont initialement un comportement et une apparence communs "
+"tels que définis dans la scène ennemie(Enemy). Vous pouvez définir "
+"différentes propriétés pour chaque nœud ennemi(Enemy) (pour changer sa "
+"couleur, par exemple)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:128
 msgid ""
@@ -682,7 +677,6 @@ msgstr ""
 "pour un pure débutant."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:204
-#, fuzzy
 msgid ""
 "Unity allows you to attach as many scripts as you want to a GameObject. Each "
 "script adds a behavior to the GameObject: For example, you can attach a "

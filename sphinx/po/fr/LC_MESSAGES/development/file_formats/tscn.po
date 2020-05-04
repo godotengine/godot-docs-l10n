@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,6 +96,10 @@ msgid ""
 "(in theory) be the number of resources within the file. However, in "
 "practice, its value seems not to matter."
 msgstr ""
+"Le descripteur de fichier ressemble à ``[gd_scene load_steps=1 format=2]`` "
+"et devrait être la première entrée dans le fichier. Le paramètre "
+"``load_steps`` devrait (en théorie) être le nombre de ressources dans le "
+"fichier. Cependant, en pratique, sa valeur ne semble avoir aucune importance."
 
 #: ../../docs/development/file_formats/tscn.rst:34
 msgid ""
@@ -104,6 +108,10 @@ msgid ""
 "for all of the items in the section. For example, the heading of all "
 "external resources should start with ``[ext_resource .....]``."
 msgstr ""
+"Ces sections doivent apparaître dans l'ordre, mais il peut être difficile de "
+"les distinguer. La seule différence entre elles est le premier élément de "
+"l'en-tête de tous les éléments de la section. Par exemple, l'intitulé de "
+"toutes les ressources externes doit commencer par ``[ext_resource .....]``."
 
 #: ../../docs/development/file_formats/tscn.rst:39
 msgid ""
@@ -111,24 +119,29 @@ msgid ""
 "``). However, comments will be discarded when saving the file using the "
 "Godot editor."
 msgstr ""
+"Un fichier TSCN peut contenir des commentaires sur une seule ligne avec un "
+"point-virgule (``;``). Toutefois, les commentaires seront ignorés lors de "
+"l'enregistrement du fichier en utilisant l'éditeur Godot."
 
 #: ../../docs/development/file_formats/tscn.rst:43
 msgid "Entries inside the file"
-msgstr ""
+msgstr "Entrées dans le fichier"
 
 #: ../../docs/development/file_formats/tscn.rst:45
 msgid ""
 "A heading looks like ``[<resource_type> key=value key=value key=value ...]`` "
 "where resource_type is one of:"
 msgstr ""
+"Un en-tête ressemble à ``[<resource_type> key=value key=value "
+"key=value ...]`` où resource_type est l'un de :"
 
 #: ../../docs/development/file_formats/tscn.rst:49
 msgid "``ext_resource``"
-msgstr ""
+msgstr "``ext_resource``"
 
 #: ../../docs/development/file_formats/tscn.rst:50
 msgid "``sub_resource``"
-msgstr ""
+msgstr "``sub_resource``"
 
 #: ../../docs/development/file_formats/tscn.rst:51
 msgid "``node``"
@@ -144,6 +157,9 @@ msgid ""
 "be complex datatypes such as Arrays, Transforms, Colors, and so on. For "
 "example, a spatial node looks like:"
 msgstr ""
+"En-dessous de chaque en-tête vient zéro ou d'autres paires ``key = value``. "
+"Les valeurs peuvent être des types de données complexes tels que des Arrays, "
+"Transforms, Colors, etc.... Par exemple, un noeud spatial ressemble à :"
 
 #: ../../docs/development/file_formats/tscn.rst:65
 msgid "The scene tree"
@@ -155,10 +171,13 @@ msgid ""
 "its name, parent and (most of the time) a type. For example ``[node type="
 "\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 msgstr ""
+"L'arbre de la scène est fait de… nœuds ! L'en-tête de chaque noeud consiste "
+"en son nom, parent et (la plupart du temps) un type. Par exemple ``[node "
+"type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 
 #: ../../docs/development/file_formats/tscn.rst:71
 msgid "Other valid keywords include:"
-msgstr ""
+msgstr "Autres mots clés valides inclus :"
 
 #: ../../docs/development/file_formats/tscn.rst:73
 msgid "``instance``"
@@ -174,7 +193,7 @@ msgstr "``owner``"
 
 #: ../../docs/development/file_formats/tscn.rst:76
 msgid "``index`` (if two nodes have the same name)"
-msgstr ""
+msgstr "``index`` (si deux nœuds ont le même nom)"
 
 #: ../../docs/development/file_formats/tscn.rst:77
 msgid "``groups``"
@@ -190,6 +209,14 @@ msgid ""
 "should be ``\".\"``. Here is an example scene tree (but without any node "
 "content):"
 msgstr ""
+"Le premier noeud dans le fichier, qui est également la racine de la scène, "
+"ne doit pas avoir d'entrée ``parent=Path/To/Node`` dans son en-tête. Tous "
+"les fichiers de scène doivent avoir exactement *une* racine de scène. Sinon, "
+"Godot échoue à importer le fichier. Le chemin du parent des autres nœuds "
+"doit être absolu, mais ne doit pas contenir le nom de la racine de la scène. "
+"Si le noeud est un enfant direct de la racine de la scène, le chemin doit "
+"être ``\".\"``. Voici un exemple d'arbre de scène (mais sans aucun contenu "
+"de nœud) :"
 
 #: ../../docs/development/file_formats/tscn.rst:95
 msgid ""
@@ -197,6 +224,10 @@ msgid ""
 "incomplete. Fortunately, it is easy to find out because you can simply save "
 "a file with that node in it. Some example nodes are:"
 msgstr ""
+"Comme pour la ressource interne, le document de chaque nœud est actuellement "
+"incomplet. Heureusement, il est facile de le savoir car il suffit "
+"d'enregistrer un fichier contenant ce nœud. Voici quelques exemples de "
+"nœuds :"
 
 #: ../../docs/development/file_formats/tscn.rst:134
 msgid "NodePath"
@@ -221,6 +252,9 @@ msgid ""
 "bones described in key-value pairs in the format ``bones/Id/"
 "Attribute=Value``. The bone attributes consist of:"
 msgstr ""
+"Le nœud Skeleton hérite du nœud Spatial, mais peut aussi avoir une liste "
+"d'os décrits dans des paires clé-valeur au format ``bones/Id/"
+"Attribute=Value``. Les attributs des os sont constitués de :"
 
 #: ../../docs/development/file_formats/tscn.rst:167
 msgid "``name``"
@@ -228,15 +262,15 @@ msgstr "``name``"
 
 #: ../../docs/development/file_formats/tscn.rst:168
 msgid "``parent``"
-msgstr ""
+msgstr "``parent``"
 
 #: ../../docs/development/file_formats/tscn.rst:169
 msgid "``rest``"
-msgstr ""
+msgstr "``rest``"
 
 #: ../../docs/development/file_formats/tscn.rst:170
 msgid "``pose``"
-msgstr ""
+msgstr "``pose``"
 
 #: ../../docs/development/file_formats/tscn.rst:171
 #: ../../docs/development/file_formats/tscn.rst:391
@@ -245,31 +279,37 @@ msgstr "``enabled``"
 
 #: ../../docs/development/file_formats/tscn.rst:172
 msgid "``bound_children``"
-msgstr ""
+msgstr "``bound_children``"
 
 #: ../../docs/development/file_formats/tscn.rst:174
 msgid "``name`` must be the first attribute of each bone."
-msgstr ""
+msgstr "``name``doit être le premier attribut de chaque os."
 
 #: ../../docs/development/file_formats/tscn.rst:175
 msgid ""
 "``parent`` is the index of parent bone in the bone list, with parent index, "
 "the bone list is built to a bone tree."
 msgstr ""
+"``parent`` est l'index de l'os parent dans la liste d'os, avec l'index "
+"parent, la liste d'os est construite sur un arbre d'os."
 
 #: ../../docs/development/file_formats/tscn.rst:177
 msgid "``rest`` is the transform matrix of bone in its \"resting\" position."
 msgstr ""
+"``rest`` est la matrice de transformation de l'os dans dans sa position de "
+"\"repos\"."
 
 #: ../../docs/development/file_formats/tscn.rst:178
 msgid "``pose`` is the pose matrix; use ``rest`` as the basis."
-msgstr ""
+msgstr "``pose`` est la matrice de pose ; utilisez ``rest`` comme base."
 
 #: ../../docs/development/file_formats/tscn.rst:179
 msgid ""
 "``bound_children`` is a list of ``NodePath()`` which point to "
 "BoneAttachments belonging to this bone."
 msgstr ""
+"``bound_children`` est une liste de ``NodePath()`` qui pointe vers les "
+"BoneAttachments appartenant à cet os."
 
 #: ../../docs/development/file_formats/tscn.rst:182
 msgid "Here's an example of a skeleton node with two bones:"
@@ -277,7 +317,7 @@ msgstr "Voici un exemple d'un nœud squelettique avec deux os :"
 
 #: ../../docs/development/file_formats/tscn.rst:203
 msgid "BoneAttachment"
-msgstr ""
+msgstr "BoneAttachment"
 
 #: ../../docs/development/file_formats/tscn.rst:205
 msgid ""
@@ -286,10 +326,14 @@ msgid ""
 "``bone_name=NameOfBone`` attribute, and the corresponding bone being the "
 "parent has the BoneAttachment node in its ``bound_children`` list."
 msgstr ""
+"Le noeud BoneAttachment est un noeud intermédiaire pour décrire un autre "
+"noeud parenté à un seul os dans un noeud Skeleton. Le BoneAttachment à un "
+"attribut ``bone_name=NameOfBone``, et l'os correspondant est le parent du "
+"noeud BoneAttachment dans sa liste ``bound_children``."
 
 #: ../../docs/development/file_formats/tscn.rst:210
 msgid "An example of one MeshInstance parented to a bone in Skeleton:"
-msgstr ""
+msgstr "Un exemple d'une MeshInstance parenté à un os dans Skeleton :"
 
 #: ../../docs/development/file_formats/tscn.rst:235
 msgid "AnimationPlayer"
@@ -303,6 +347,11 @@ msgid ""
 "AnimationPlayer. The root node is stored as ``root_node=NodePath(Path/To/"
 "Node)``."
 msgstr ""
+"AnimationPlayer fonctionne comme une bibliothèque d'animation. Il stocke les "
+"animations listées dans le format ``anim/Name=SubResource(ResourceId)`` ; "
+"chaque ligne fait référence à une ressources Animation. Toutes les "
+"ressources animation utilisent le noeud racine AnimationPlayer. Le noeud "
+"racine est stocké dans ``root_node=NodePath(Path/To/Node)``."
 
 #: ../../docs/development/file_formats/tscn.rst:257
 msgid "Resources"
@@ -314,6 +363,9 @@ msgid ""
 "node will have an accompanying ArrayMesh resource. The ArrayMesh resource "
 "may be either internal or external to the TSCN file."
 msgstr ""
+"Les ressources sont les éléments qui composent les nœuds. Pour exemple, un "
+"noeud MeshInstance aura une ressource ArrayMesh associée. La ressource "
+"ArrayMesh peut être interne ou externe au fichier TSCN."
 
 #: ../../docs/development/file_formats/tscn.rst:263
 msgid ""
@@ -323,18 +375,28 @@ msgid ""
 "have different methods to refer to internal and external resources, you can "
 "have the same ID for both an internal and external resource."
 msgstr ""
+"Les références aux ressources sont gérées par des numéros ``id`` dans l'en-"
+"tête de la ressource. Les ressources externes et les ressources internes "
+"sont respectivement référés à ``ExtResource(id)`` et ``SubResource(id)``. "
+"Comme il existe différentes méthodes pour référer aux ressources internes et "
+"externes, vous pouvez avoir le même ID pour une ressource interne et externe."
 
 #: ../../docs/development/file_formats/tscn.rst:269
 msgid ""
 "For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
 "\" path=....]``, you would use ``ExtResource(3)``."
 msgstr ""
+"Pour exemple, pour se référer à la ressource ``[ext_resource id=3 type="
+"\"PackedScene\" path=....]``, vous utiliserez ``ExtResource(3)``."
 
 #: ../../docs/development/file_formats/tscn.rst:275
 msgid ""
 "External resources are links to resources not contained within the TSCN file "
 "itself. An external resource consists of a path, a type and an ID."
 msgstr ""
+"Les ressources externes sont liés à des ressources non contenues dans le "
+"fichier TSCN lui-même. Une ressource externe consiste en un chemin, un type "
+"et un ID."
 
 #: ../../docs/development/file_formats/tscn.rst:278
 msgid ""
@@ -342,10 +404,13 @@ msgid ""
 "thus prefixed with ``res://``, but paths relative to the TSCN file's "
 "location are also valid."
 msgstr ""
+"Godot génère toujours des chemins absolus par rapport au répertoire des "
+"ressources relatifs et ainsi préfixé avec ``res://``, mais les chemins "
+"relatifs à l'emplacement du fichier TSCN sont également valides."
 
 #: ../../docs/development/file_formats/tscn.rst:282
 msgid "Some example external resources are:"
-msgstr ""
+msgstr "Quelques exemples de ressources externes sont :"
 
 #: ../../docs/development/file_formats/tscn.rst:290
 msgid ""

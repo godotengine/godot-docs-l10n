@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,36 +18,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
-#, fuzzy
 msgid "Introduction to Godot's editor"
 msgstr "Introduction à l'éditeur de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
-#, fuzzy
 msgid ""
 "This tutorial will run you through Godot's interface. We're going to look at "
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
-"Ce tutoriel va vous présenter l'interface de Godot. Nous allons voir les "
-"**Gestionnaire de projets, docks, espaces de travail** et tout ce que vous "
-"avez besoin de savoir pour démarrer avec le moteur."
+"Ce tutoriel va vous présenter l'interface de Godot. Nous allons voir **le "
+"Gestionnaire de projets, les docks, les espaces de travail** et tout ce que "
+"vous avez besoin de savoir pour démarrer avec le moteur."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
 msgstr "Gestionnaire de projets"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you'll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
 "La première fenêtre que vous voyez en ouvrant Godot est le Gestionnaire de "
-"projets. Tant que vous n'avez créé ou importé aucun projet, un message "
-"d'information vous proposera d'ouvrir la bibliothèque de ressources. Refusez "
-"la demande, nous verrons cela plus tard."
+"projets. Comme vous n'avez pas de projets, une fenêtre s'ouvre pour vous "
+"demander si vous voulez ouvrir la bibliothèque d'assets. Il vous suffit de "
+"cliquer sur annuler, nous y reviendrons plus tard."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
 msgid ""
@@ -58,7 +55,6 @@ msgstr ""
 "créer, supprimer, importer ou lancer les projets."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
-#, fuzzy
 msgid ""
 "In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
@@ -142,7 +138,6 @@ msgstr ""
 "pour vous et l'ouvrira dans l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
@@ -171,7 +166,6 @@ msgid "Your first look at Godot's editor"
 msgstr "Premiers pas avec l'éditeur de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
@@ -190,24 +184,21 @@ msgstr ""
 "**fenêtres d'affichage**, et les **boutons de test**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
-"Le dock **FileSystem** est l'endroit où vous gérerez les fichiers et les "
+"Le **dock FileSystem** est l'endroit où vous gérerez les fichiers et les "
 "ressources(assets) de votre projet."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
-#, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
 "Le **Dock de scène** répertorie le contenu de la scène active et "
-"l'**Inspecteur** permet de gérer les propriétés du contenu d'une scène."
+"l'**Inspecteur** permet de gérer les propriétés d'une scène."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you'll find tools "
 "to move, scale or lock your scene's objects. It changes as you jump to "
@@ -218,7 +209,6 @@ msgstr ""
 "scène. Elle est différente pour chaque espace de travail."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
-#, fuzzy
 msgid ""
 "The **Bottom Panel** is the host for the debug console, the animation "
 "editor, the audio mixer… They are wide and can take precious space. That's "
@@ -240,7 +230,6 @@ msgstr ""
 "Script et AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
-#, fuzzy
 msgid ""
 "You'll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
@@ -306,7 +295,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
 "scripts and assets to use in your projects."
@@ -319,7 +307,6 @@ msgid "Modify the interface"
 msgstr "Modifier l'interface"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
-#, fuzzy
 msgid ""
 "Godot's interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "

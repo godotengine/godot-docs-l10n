@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,6 @@ msgid "The GUI you're going to create."
 msgstr "Графічний інтерфейс, який ви будете створювати."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
-#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_main_menu_design.zip <files/"
 "ui_main_menu_design.zip>` and extract the archive. Import the ``start/`` "
@@ -64,11 +63,10 @@ msgid ""
 msgstr ""
 "Завантажте файли проекту: :download:`ui_main_menu_design.zip <files/"
 "ui_main_menu_design.zip>` і витягніть архів. Імпортуйте проект ``start/`` у "
-"Godot, щоб слідувати цьому уроку. ``end/`` містить кінцевий результат. Ви "
-"знайдете всі спрайти в теці ``start/assets/main_menu``."
+"Godot, щоб виконати цей урок. ``end/`` містить кінцевий результат. В теці "
+"``start/assets/main_menu`` ви знайдете всі спрайти."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
-#, fuzzy
 msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot's "
 "UI system works."
@@ -112,16 +110,14 @@ msgstr ""
 "ілюстрацій, перш ніж гравці почнуть використовувати ваш інтерфейс. Інакше:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
-#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
-"Графіка може викривити у гравців сприйняття гри, і ви пропустите цінні "
+"Графіка може викривити у гравців сприйняття гри, і ви втратите позитивні "
 "відгуки."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
-#, fuzzy
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
 msgstr ""
 "Якщо інтерфейс не працює належним чином, вам доведеться переробити деякі "
@@ -147,25 +143,22 @@ msgid "There are two ways to design your UI in Godot. You can:"
 msgstr "Існує два способи проектування вашого інтерфейсу в Godot. Ви можете:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
-#, fuzzy
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
-"Створити це все в одній сцені, а згодом зберегти деякі гілки, як сцени, для "
-"багаторазового використання."
+"Створити все в одній сцені, а згодом зберегти деякі її гілки, як окремі "
+"сцени, для багаторазового використання."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
-#, fuzzy
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
-"Побудувати шаблонні сцени для багаторазових компонентів та створити "
-"конкретні компоненти на основі цих шаблонів."
+"Побудувати шаблони сцен для багаторазових компонентів та створити конкретні "
+"компоненти на основі цих шаблонів."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
-#, fuzzy
 msgid ""
 "We will use the first approach, because the first version of your UI may not "
 "work as well as you'd like. You're likely to throw parts away and redesign "
@@ -174,46 +167,40 @@ msgid ""
 msgstr ""
 "Ми будемо використовувати перший підхід, оскільки перша версія вашого "
 "інтерфейсу може працювати не так добре, як вам хотілося б. Ви, ймовірно, "
-"будете викидати деталі та переробляти компоненти. Коли ви будете впевнені, "
-"що все працює, легко зробити деякі частини багаторазовими, як ви побачите "
-"нижче."
+"будете викидати певні деталі та переробляти окремі компоненти. Коли ви "
+"будете впевнені, що все працює, то зможете легко зробити необхідні частини "
+"багаторазовими, як побачите нижче."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
-#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
-"Файли, які ви знайдете в Godot. Графіка виглядає краще, ніж на чорновій "
-"конструкції, але все ще недосконала."
+"Файли, які ви знайдете в Godot. Графіка виглядає краще, ніж на чернетці, але "
+"все ще потребує вдосконалення."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
-#, fuzzy
 msgid "Design the main menu"
-msgstr "Розробка головного меню"
+msgstr "Проектування головного меню"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:85
-#, fuzzy
 msgid ""
 "Before we jump into the editor, we want to plan how we'll nest containers "
 "based on our mockup image."
 msgstr ""
-"Перш ніж зайти в редактор, слід спланувати, як ми вкладемо контейнери на "
-"основі нашого макетного зображення."
+"Перш ніж зайти в редактор, слід, на основі нашого макета, спланувати, як "
+"вкладати контейнери."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:89
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:282
-#, fuzzy
 msgid "Break down the UI mockup"
 msgstr "Розбивання макета інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:91
-#, fuzzy
 msgid "Here are my three rules of thumb to find the right containers:"
 msgstr "Ось три правила, завдяки яким я підбираю правильні контейнери:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
-#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
@@ -223,13 +210,11 @@ msgstr ""
 "найменших, що містять один віджет, як-от шкалу, панель, чи кнопку."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
-#, fuzzy
 msgid "If there's some padding around an area, use a ``MarginContainer``."
 msgstr ""
 "Якщо навколо області є якийсь простір, використовуйте ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
-#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
@@ -265,7 +250,6 @@ msgid "Interface building blocks, broken down using the three rules of thumb."
 msgstr "Інтерфейсні блоки, розбиті за допомогою трьох правил."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
-#, fuzzy
 msgid ""
 "Containers adapt to the window's resolution and width-to-height ratio. "
 "Although we could place UI elements by hand, containers are faster, more "
@@ -293,8 +277,8 @@ msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
 "``MarginContainer``. ``MarginContainer`` is a good starting point for most "
-"interfaces, as you often need padding around the UI. Press :kbd:`Meta + S` "
-"to save the scene to the disk. Name it *MainMenu*."
+"interfaces, as you often need padding around the UI. Press :kbd:`Ctrl + S` (:"
+"kbd:`Cmd + S` on macOS) to save the scene to the disk. Name it *MainMenu*."
 msgstr ""
 "Ми повинні додати кореневий вузол, перш ніж зможемо зберегти сцену. "
 "Кореневий вузол вашого інтерфейсу повинен бути самим зовнішнім контейнером, "
@@ -372,10 +356,11 @@ msgstr "і ілюстрація головного меню."
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
 #, fuzzy
 msgid ""
-"Click the **Add Node** button or press :kbd:`Meta + A` on your keyboard. "
-"Start to type ``TextureRect`` to find the corresponding node and press "
-"enter. With the new node selected, press :kbd:`Meta + D` five times to "
-"create five extra ``TextureRect`` instances."
+"Click the **Add Node** button or press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on "
+"macOS) on your keyboard. Start to type ``TextureRect`` to find the "
+"corresponding node and press enter. With the new node selected, press :kbd:"
+"`Ctrl + D` (:kbd:`Cmd + D` on macOS) five times to create five extra "
+"``TextureRect`` instances."
 msgstr ""
 "Натисніть кнопку **Додати вузол**, або натисніть ``Ctrl+A`` на клавіатурі. "
 "Почніть вводити, ``TextureRect``, щоб знайти відповідний вузол, і натисніть "
@@ -533,10 +518,11 @@ msgstr ""
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
-"`Meta + A` to add a new node inside it. Add a second ``VBoxContainer`` and "
-"name it *MenuOptions*. Select all three menu options, ``Continue``, "
-"``NewGame`` and ``Options``, and drag and drop them inside the new "
-"``VBoxContainer``. The UI's layout should barely change, if at all."
+"`Ctrl + A` (:kbd:`Cmd + A` on macOS) to add a new node inside it. Add a "
+"second ``VBoxContainer`` and name it *MenuOptions*. Select all three menu "
+"options, ``Continue``, ``NewGame`` and ``Options``, and drag and drop them "
+"inside the new ``VBoxContainer``. The UI's layout should barely change, if "
+"at all."
 msgstr ""
 "Щоб додати простору між меню і логотипом, ми використаємо ще один контейнер "
 "``VBoxContainer`` і його прапорці розмірів (Size Flags). Виберіть "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,51 +35,43 @@ msgid "Some use-cases where customizing the default page is useful include:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:13
-#, fuzzy
 msgid "Loading files from a different directory than the page;"
-msgstr "別のディレクトリからファイルを読み込む"
+msgstr "ページとは別のディレクトリからファイルを読み込む;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:14
-#, fuzzy
 msgid "Loading a ``.zip`` file instead of a ``.pck`` file as the main pack;"
 msgstr ""
-"``.pck`` ファイルの代わりに ``.zip`` ファイルをメインパックとして読み込む"
+"``.pck`` ファイルの代わりに ``.zip`` ファイルをメインパックとして読み込む;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:15
-#, fuzzy
 msgid "Loading the engine from a different directory than the main pack file;"
-msgstr ""
-"メインパックファイルとは異なるディレクトリからエンジンファイルを読み込む"
+msgstr "メインパックファイルとは異なるディレクトリからエンジンを読み込む;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:16
-#, fuzzy
 msgid ""
 "Adding a click-to-play button so that games can be started in the fullscreen "
 "mode;"
 msgstr ""
-"クリックしてプレイするボタンを追加して、ゲームをフルスクリーンモードで開始で"
-"きるようにする"
+"「クリックでプレイ」ボタンを追加して、フルスクリーンモードでもゲームを開始で"
+"きるようにする;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:17
-#, fuzzy
 msgid ""
 "Loading some extra files before the engine starts, making them available in "
 "the project file system as soon as possible;"
 msgstr ""
-"エンジンが起動する前に追加ファイルをロードして、後でファイル・システムで使用"
-"できるようにする"
+"エンジンが起動する前に追加ファイルをロードして、それらをできるだけ即座にプロ"
+"ジェクト ファイルシステム内で利用できるようにする;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:19
-#, fuzzy
 msgid ""
 "Passing custom command line arguments, e.g. ``-s`` to start a ``MainLoop`` "
 "script."
 msgstr ""
-"MainLoopスクリプトを起動するためにカスタム \"コマンド ライン\" 引数を渡す場"
-"合 ( ``-s`` など)"
+"``-s`` のようなカスタムのコマンドライン引数を渡して、\\ ``MainLoop`` スクリプ"
+"トを開始させる。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:21
-#, fuzzy
 msgid ""
 "The default HTML page is available in the Godot Engine repository at `/misc/"
 "dist/html/full-size.html <https://github.com/godotengine/godot/blob/master/"
@@ -91,8 +83,11 @@ msgid ""
 msgstr ""
 "デフォルトのHTMLページは、Godot Engineリポジトリの `/misc/dist/html/full-"
 "size.html <https://github.com/godotengine/godot/blob/master/misc/dist/html/"
-"full-size.html>`__にあります。デフォルトページのカスタマイズが役立つ簡単な"
-"ユース ケースには、次のようなものがあります:"
+"full-size.html>`__ にあり、参考実装として使えます。もうひとつのHTMLページは "
+"`/misc/dist/html/fixed-size.html <https://github.com/godotengine/godot/blob/"
+"master/misc/dist/html/fixed-size.html>`__ にあります。これはデフォルトのもの"
+"と違い、固定サイズの canvas エリアを持ち、その下に出力用ウィジェットがありま"
+"す。"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:27
 msgid ""

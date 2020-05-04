@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -382,21 +382,19 @@ msgstr ""
 "(Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
-"Bon nombre de langages existants possèdent d'horribles interfaces liant à C+"
-"+, entraînant une grande quantité de code, des bogues, des goulots "
-"d'étranglement et une inefficacité générale (Lua, Python, Squirrel, JS, "
-"etc.). Nous souhaitons nous concentrer sur un moteur robuste, pas une "
-"robuste quantité d'intégrations."
+"Bon nombre de langages existants possèdent d'horribles interfaces de liaison "
+"au C++, entraînant une grande quantité de code, des bogues, des goulots "
+"d'étranglement et une inefficacité générale (Lua, Python, Squirrel, "
+"JavaScript, etc.). Nous souhaitons nous concentrer sur un moteur robuste, "
+"pas une grande quantité d'intégrations."
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
@@ -404,28 +402,25 @@ msgid ""
 msgstr ""
 "Pas de types vectoriels natifs (vector3, matrix4, etc.), ce qui réduit "
 "considérablement les performances lors de l'utilisation de types "
-"personnalisés (Lua, Python, Squirrel, JS, AS, etc.)."
+"personnalisés (Lua, Python, Squirrel, JavaScript, ActionScript, etc.)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
 "Le ramasse-miette entraîne des délais ou une utilisation inutilement "
-"importante de la mémoire (Lua, Python, JS, AS, etc.)."
+"importante de la mémoire (Lua, Python, JavaScript, ActionScript, etc.)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
-"Difficulté d'intégration avec l'éditeur de code pour compléter le code, "
-"éditer en direct, etc. Ceci est très bien supporté par le GDScript."
+"Difficulté d'intégration dans l'éditeur de code pour fournir la complétion "
+"de code, édition en direct, etc. Ceci est très bien supporté par le GDScript."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above, and more."
 msgstr ""
 "GDScript a été conçu pour réduire les problèmes ci-dessus et plus encore."
@@ -694,7 +689,6 @@ msgid "I have a great idea for Godot. How can I share it?"
 msgstr "J'ai une super idée pour Godot. Comment puis-je la partager ?"
 
 #: ../../docs/about/faq.rst:259
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -714,7 +708,7 @@ msgstr ""
 "motivées qui veulent contribuer, mais Godot est, et sera toujours, concentré "
 "sur les fonctions de base telles que décrites dans la `feuille de route "
 "<https://github.com/godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, sur "
-"`le règlement des bugs et la résolution des problèmes <https://github.com/"
+"`la correction des bugs et la résolution des problèmes <https://github.com/"
 "godotengine/godot/issues>`_, et sur les discussions entre membres de la "
 "communauté Godot."
 
@@ -907,15 +901,15 @@ msgstr ""
 "DoD (Data oriented Design) ?"
 
 #: ../../docs/about/faq.rst:327
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
-"Pour les taches coûteuses en terme de performance, Godot Engine en interne "
-"essaiera d'utiliser au mieux le cache. Malgré cela, nous pensons que la "
-"plupart des utilisateurs ne devraient pas être forcés à pratiquer la DoD."
+"Bien que Godot en interne pour beaucoup de tâches gourmandes en performance "
+"tente d'utiliser la cohérence du cache le mieux possible, nous pensons que "
+"la plupart des utilisateurs n'ont pas vraiment besoin d'être forcés à "
+"utiliser les pratiques DoD."
 
 #: ../../docs/about/faq.rst:331
 msgid ""

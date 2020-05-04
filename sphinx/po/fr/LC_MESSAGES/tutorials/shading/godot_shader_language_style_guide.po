@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,7 +159,6 @@ msgid "Line breaks and blank lines"
 msgstr "Retours de ligne et lignes vierges"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:104
-#, fuzzy
 msgid ""
 "For a general indentation rule, follow `the \"1TBS Style\" <https://en."
 "wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)>`_ which "
@@ -168,11 +167,13 @@ msgid ""
 "This makes them easier to refactor and avoids mistakes when adding more "
 "lines to an ``if`` statement or similar."
 msgstr ""
-"Pour une règle générale d'indentation, suivez le `style d'indentation "
-"d'Allman <https://fr.wikipedia.org/wiki/Style_d"
-"%27indentation#Style_Allman>`_ qui recommande de placer l'accolade associée "
-"à une instruction de contrôle sur la ligne suivante, indentée au même "
-"niveau :"
+"Pour une règle générale d'indentation, suivez la règle `\"1TBS Style\" "
+"<https://en.wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)>`_ qui "
+"recommande de placer l'accolade associée à une instruction de contrôle sur "
+"la même ligne. Utilisez toujours des accolades pour les instructions, même "
+"si elles ne couvrent qu'une seule ligne. Cela les rend plus faciles à "
+"remanier et évite les erreurs lors de l'ajout de lignes supplémentaires à "
+"une instruction ``if`` ou similaire."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:132
 msgid "Blank lines"
@@ -368,7 +369,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
-#, fuzzy
 msgid "Local variables"
 msgstr "Variables locales"
 

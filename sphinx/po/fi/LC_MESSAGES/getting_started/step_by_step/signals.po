@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:1
-#, fuzzy
 msgid "Signal"
-msgstr "Signaalit"
+msgstr "Signaali"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
 msgid "Signals"
@@ -95,6 +94,10 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Spriten tekstuurille voit käyttää Godotin ikonia, tai mitä tahansa muuta "
+"kuvatiedostoa. Tee niin valitsemalla ``Load`` spriten tekstuuri attribuutin "
+"pudotusvalikosta. Lisää skripti root solmuun, mutta älä lisää siihen vielä "
+"mitään koodia."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:37
 msgid "Your scene tree should look like this:"
@@ -154,10 +157,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:66
 msgid ""
-"On the right side, you can bind an arbitrary number of arguments of "
-"(possibly) different types. This can be useful when you have more than one "
-"signal connected to the same method, as each signal propagation will result "
-"in different values for those extra call arguments."
+"If you toggle the Advanced menu, you'll see on the right side that you can "
+"bind an arbitrary number of arguments of (possibly) different types. This "
+"can be useful when you have more than one signal connected to the same "
+"method, as each signal propagation will result in different values for those "
+"extra call arguments."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:70

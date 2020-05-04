@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,6 +147,8 @@ msgid ""
 "Godot will display a warning icon next to the node in the scene tree. You "
 "can ignore it for now. We will address it later."
 msgstr ""
+"Godot näyttää varoitus kuvakkeen solmun vieressä skenepuussa. Voit sivuuttaa "
+"sen nyt. Me huomioimme sen myöhemmin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:73
 msgid ""
@@ -486,6 +488,10 @@ msgid ""
 "this value ensures that your movement will remain consistent even if the "
 "frame rate changes."
 msgstr ""
+"`delta`parametri `_process()` funktiossa viittaa *ruudun (animaatiossa) "
+"pituuteen* -aikaan joka kului edellisen ruudun suorittamiseen. Tätä arvoa "
+"käyttämällä varmistutaan että liike on säännönmukainen vaikka ruudun "
+"päivitysnopeus muuttuisi."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:340
 msgid ""
@@ -620,6 +626,9 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"Joka kerta kun vihollinen osuu pelaajaan, signaali välitetään. Meidän täytyy "
+"poistaa käytöstä pelaajan törmäys ettei se laukaise enää ``hit`` signaalia "
+"enempää kuin kerran."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:487
 msgid ""
@@ -627,6 +636,10 @@ msgid ""
 "middle of the engine's collision processing. Using ``set_deferred()`` allows "
 "us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"Poistamalla käytöstä alueen törmäys muodon voi aiheuttaa virheen mikäli se "
+"tapahtuu kesken pelimoottorin törmäyksen prosessoinnin. Käyttämällä "
+"``set_deferred()`` funktiota sallii Godotin odottaa käytöstä poistoa, kunnes "
+"se on turvallista."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:492
 msgid ""
@@ -1264,6 +1277,10 @@ msgid ""
 "useful to add delays such as in the above code, where we want to wait some "
 "time before showing the \"Start\" button."
 msgstr ""
+"Kun sinun täytyy pysäyttää koodi hetkeksi vaihtoehto ajastimelle on käyttää "
+"skenepuun ``create_timer()`` funktiota.  Tämä voi olla todella hyödyllistä "
+"luomaan viiveitä kuten ylläolevassa koodissa, missä me haluamme odottaa "
+"hetken ennenkuin näytämme \"Start\" painikkeen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1052
 msgid "This function is called by ``Main`` whenever the score changes."
@@ -1342,7 +1359,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1138
 msgid "Removing old creeps"
-msgstr ""
+msgstr "Vanhojen creepsien poisto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1140
 msgid ""
@@ -1350,6 +1367,9 @@ msgid ""
 "the previous game are still on screen. It would be better if they all "
 "disappeared at the start of a new game."
 msgstr ""
+"Jos pelaat \"Game Over\":iin asti ja aloitat uuden pelin. Vanhat creepsit "
+"ovat yhä edelleen ruudulla. Olisi parasta jos ne kaikki katoaisivat uuden "
+"pelin aloituksessa."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1144
 msgid ""
@@ -1359,18 +1379,26 @@ msgid ""
 "``Mob`` nodes in the ``Main`` scene tree until we run the game. Instead "
 "we'll use code."
 msgstr ""
+"Me käytämme ``start_game``signaalia joka jo välitetään ``HUD`` solmun "
+"toimesta poistaaksemme jäljellä olevat creepsit. Me emme voi käyttää "
+"editoria signaalin yhdistämiseen, koska ``Main`` skenepuussa ei ole ``Mob`` "
+"solmuja ennenkuin suoritamme pelin. Sen sijaan käytämme koodia."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
 msgstr ""
+"Aloita lisäämällä uusi funktio ``Mob.gd`` tiedostoon. ``queue_free()`` "
+"poistaa kyseisen solmun seuraavan animaatioruudun aikana."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1165
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
+"Sitten ``Main.gd`` tiedostossa lisää uusi rivi ``_on_MobTimer_timeout()`` "
+"funktion loppuun."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1177
 msgid ""
@@ -1378,6 +1406,9 @@ msgid ""
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
 "its ``_on_start_game()`` function."
 msgstr ""
+"Tämä rivi kertoo Mob solmuille (viitattuna ``mob`` muuttujalla) vastata "
+"mihin tahansa ``start_game`` signaaliin mitä ``HUD`` solmu välittää itse "
+"suorittaessaan omaa ``_on_start_game()`` funktiota."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1182
 msgid "Finishing up"
@@ -1463,7 +1494,7 @@ msgstr "Lopuksi, lisää ``$DeathSound.play()`` ``game_over()`` funktioon."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1220
 msgid "Keyboard shortcut"
-msgstr ""
+msgstr "Näppäimistön pikanäppäin"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1222
 msgid ""
@@ -1471,6 +1502,9 @@ msgid ""
 "we could also start the game by pressing a key on the keyboard. One way to "
 "do this is using the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
+"Sillä peliä pelataan näppäin kontrolleilla, olisi käytännöllistä jos pelin "
+"voisi aloittaa painamalla näppäintä näppäimistöltä. Yksi tapa tehdä tämä on "
+"käyttää \"Shortcut\" ominaisuutta ``Button`` solmusta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1226
 msgid ""
@@ -1481,12 +1515,19 @@ msgid ""
 "*Action* property, type the name ``ui_select``. This is the default input "
 "event associated with the spacebar."
 msgstr ""
+"``HUD`` solmussa, valitse ``StartButton`` ja löydä sen *Shortcut* ominaisuus "
+"inspectorissa. Valitse \"New Shortcut\" ja napsauta \"Shortcut\" kohtaa. "
+"Toinen *Shortcut* ominaisuus ilmestyy . Valitse \"New InputEventAction\" ja "
+"napsauta uusi \"InputEvent\". Lopuksi, *Action* ominaisuudessa, kirjoita "
+"nimi ``ui_select``. Tämä on vakio syöte tapahtuma liitettynä välilyöntiin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1234
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Space` to start the game."
 msgstr ""
+"Nyt kun aloita näppän ilmestyy voit painaa joko sitä tai :kbd:`Space` "
+"aloittaaksesi pelin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1238
 msgid "Project files"
@@ -1502,4 +1543,4 @@ msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1242
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
+msgstr "https://github.com/godotengine/godot-demo-projects"

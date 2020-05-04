@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -418,7 +418,6 @@ msgstr ""
 "``false` si elle ne l'est pas."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:290
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default, the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -428,8 +427,8 @@ msgid ""
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
 "Nous commençons par régler ``velocity`` à ``(0, 0)`` - par défaut le joueur "
-"ne peut pas bouger. Ensuite nous vérifions chaque entrées et les ajoutons ou "
-"les soustrayons de la ``velocity`` pour obtenir une direction totale. Par "
+"ne doit pas bouger. Ensuite nous vérifions chaque entrées et les ajoutons ou "
+"les soustrayons à la ``velocity`` pour obtenir une direction totale. Par "
 "exemple, si vous maintenez ``right`` et ``down`` en même temps, le vecteur "
 "``velocity`` résultant sera ``(1, 1)``. Dans ce cas, puisque nous ajoutons "
 "un mouvement horizontal et un mouvement vertical, le joueur se déplacerait "
@@ -1300,7 +1299,6 @@ msgstr ""
 "bouton \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1034
-#, fuzzy
 msgid ""
 "When you need to pause for a brief time, an alternative to using a Timer "
 "node is to use the SceneTree's ``create_timer()`` function. This can be very "
@@ -1527,7 +1525,6 @@ msgstr ""
 "Enfin, ajoutez ``$DeathSound.play()`` dans la fonction ``game_over()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1220
-#, fuzzy
 msgid "Keyboard shortcut"
 msgstr "Raccourci clavier"
 

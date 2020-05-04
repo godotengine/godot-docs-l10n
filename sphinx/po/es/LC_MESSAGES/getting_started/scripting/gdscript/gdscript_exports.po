@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,7 +75,7 @@ msgstr ""
 msgid "Examples"
 msgstr "Ejemplos"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:129
 #, fuzzy
 msgid ""
 "It must be noted that even if the script is not being run while in the "
@@ -85,11 +85,11 @@ msgstr ""
 "Nótese que incluso si el script no se ejecuta junto con el editor, las "
 "propiedades exportadas siguen siendo editables (buscar abajo \"tool\")."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:134
 msgid "Exporting bit flags"
 msgstr "Exportando \"bit flags\""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:136
 #, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
@@ -101,7 +101,7 @@ msgstr ""
 "indicador de exportación ``int, FLAGS``, se pueden establecer desde el "
 "editor:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
 #, fuzzy
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
@@ -110,7 +110,7 @@ msgstr ""
 "También es posible restringir los flags a un número determinado de flags con "
 "nombre. La sintaxis es similar a la sintaxis de enumeración:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:139
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:149
 msgid ""
 "In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
@@ -121,7 +121,7 @@ msgstr ""
 "deberían de definirse acorde a esto (p. ej. const ELEMENT_WIND = 8`` y así "
 "con el resto)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:144
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:154
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
@@ -129,11 +129,11 @@ msgstr ""
 "Usar bit flags requiere ciertos conocimientos de las operaciones bit a bit. "
 "En caso de duda, se pueden exportar variables booleanas en su lugar."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:148
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:158
 msgid "Exporting arrays"
 msgstr "Exportando arrays"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:160
 #, fuzzy
 msgid ""
 "Exporting arrays works, but with an important caveat: while regular arrays "
@@ -149,12 +149,19 @@ msgstr ""
 "instancias. Los arreglos exportados pueden tener inicializadores, pero estos "
 "deben de ser expresiones constantes."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:186
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
+msgid ""
+"If the exported array specifies a type which inherits from Resource, the "
+"array values can be set in the inspector by dragging and dropping multiple "
+"files from the FileSystem dock at once."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:206
 #, fuzzy
 msgid "Setting exported variables from a tool script"
 msgstr "Inicio de juegos exportados desde el sistema de archivos local"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:188
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:208
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "

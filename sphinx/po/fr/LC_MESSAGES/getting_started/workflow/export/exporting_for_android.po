@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,7 +136,6 @@ msgid "Setting it up in Godot"
 msgstr "La mise en place dans Godot"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:49
-#, fuzzy
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
 "for the user account in the computer (it's independent of the project)."
@@ -164,7 +163,6 @@ msgstr ""
 "trouvé à ``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
-#, fuzzy
 msgid ""
 "The ``jarsigner`` executable (from JDK 6 or 8) - On Windows, OpenJDK "
 "installs to a dir like ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
@@ -174,8 +172,10 @@ msgid ""
 msgstr ""
 "L'exécutable``jarsigner`` (de JDK 6 ou 8) - Sous Windows, OpenJDK s'installe "
 "dans un répertoire comme ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
-"openjdk-1.8.0.232-2\\bin``. Le chemin exact peut varier en fonction de la "
-"mise à jour d'OpenJDK que vous avez installée."
+"openjdk-1.8.0.232-2\\bin``. Sous Linux, il s'installe généralement dans un "
+"répertoire comme ``/usr/bin/jarsigner``. Le chemin exact peut varier en "
+"fonction de la mise à jour d'OpenJDK que vous avez installée et du système "
+"d'exploitation de votre machine."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:67
 msgid ""
@@ -211,12 +211,11 @@ msgid "There are two types of icons required by Godot:"
 msgstr "Il existe deux types d'icônes requises par Godot :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
-#, fuzzy
 msgid ""
 "**Main Icon:** The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
-"**Main Icon :** : L'icône \"classique\". Elle sera utilisée sur toutes les "
+"**Main Icon :** : L'icône \"classic\". Elle sera utilisée sur toutes les "
 "versions d'Android jusqu'à Android 8 (Oreo), exclusivement. Doit être au "
 "moins 192×192 px."
 
@@ -293,14 +292,13 @@ msgstr ""
 "d'arrière-plan par défaut de Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
-#, fuzzy
 msgid ""
 "It's highly recommended to provide all requested icons, and at least with "
 "the specified resolutions. Only this way your application will look great on "
 "all Android devices and versions."
 msgstr ""
 "Il est hautement recommandé de fournir toutes les icônes demandées, et au "
-"moins les résolutions spécifiées. Ce n'est que de cette façon que votre "
+"moins avec les résolutions spécifiées. Ce n'est que de cette façon que votre "
 "application sera parfaite sur tous les appareils et toutes les versions "
 "d'Android."
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,54 +35,47 @@ msgid "Some use-cases where customizing the default page is useful include:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:13
-#, fuzzy
 msgid "Loading files from a different directory than the page;"
-msgstr "Chargement de fichiers à partir d'un autre répertoire"
+msgstr "Chargement de fichiers à partir d'un répertoire différent de la page ;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:14
-#, fuzzy
 msgid "Loading a ``.zip`` file instead of a ``.pck`` file as the main pack;"
 msgstr ""
 "Chargement d'un fichier ``.zip`` au lieu d'un fichier ``.pck`` comme paquet "
-"principal"
+"principal ;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:15
-#, fuzzy
 msgid "Loading the engine from a different directory than the main pack file;"
 msgstr ""
-"Chargement des fichiers du moteur à partir d'un répertoire différent de "
-"celui du fichier pack principal"
+"Chargement du moteur à partir d'un répertoire différent de celui du fichier "
+"du pack principal ;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:16
-#, fuzzy
 msgid ""
 "Adding a click-to-play button so that games can be started in the fullscreen "
 "mode;"
 msgstr ""
-"Ajout d'un bouton \"click-to-play\" pour que les jeux puissent être lancés "
-"en mode plein écran"
+"Ajout d'un bouton click-to-play pour que les jeux puissent être lancés en "
+"mode plein écran ;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:17
-#, fuzzy
 msgid ""
 "Loading some extra files before the engine starts, making them available in "
 "the project file system as soon as possible;"
 msgstr ""
-"Chargement de certains fichiers supplémentaires avant le démarrage du "
-"moteur, de sorte qu'ils soient disponibles dans le système de fichiers plus "
-"tard"
+"Chargement de quelques fichiers supplémentaires avant le démarrage du "
+"moteur, en les rendant disponibles dans le système de fichiers du projet dès "
+"que possible ;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:19
-#, fuzzy
 msgid ""
 "Passing custom command line arguments, e.g. ``-s`` to start a ``MainLoop`` "
 "script."
 msgstr ""
-"Passer des arguments de \"ligne de commande\" personnalisés, par exemple ``-"
-"s`` pour démarrer un script de boucle principale"
+"Passer des arguments de ligne de commande personnalisés, par exemple ``-s`` "
+"pour démarrer un script ``MainLoop``."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:21
-#, fuzzy
 msgid ""
 "The default HTML page is available in the Godot Engine repository at `/misc/"
 "dist/html/full-size.html <https://github.com/godotengine/godot/blob/master/"
@@ -92,11 +85,14 @@ msgid ""
 "html/fixed-size.html>`__. It differs from the default one by having a fixed "
 "size canvas area and an output widget below it."
 msgstr ""
-"La page HTML par défaut est disponible dans le dépôt du moteur Godot à "
+"La page HTML par défaut est disponible dans le dépôt Godot Engine à "
 "l'adresse `/misc/dist/html/full-size.html <https://github.com/godotengine/"
-"godot/blob/master/misc/dist/html/full-size.html>`__. Quelques cas "
-"d'utilisation simples où il est utile de personnaliser la page par défaut "
-"inclus :"
+"godot/blob/master/misc/dist/html/full-size.html>`__ et peut être utilisée "
+"comme implémentation de référence. Un autre exemple de page HTML est "
+"disponible à l'adresse suivante : `/misc/dist/html/fixed-size.html <https://"
+"github.com/godotengine/godot/blob/master/misc/dist/html/fixed-size.html>`__. "
+"Elle diffère de la page par défaut en ayant une zone de canevas de taille "
+"fixe et un widget de sortie en dessous."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:27
 msgid ""

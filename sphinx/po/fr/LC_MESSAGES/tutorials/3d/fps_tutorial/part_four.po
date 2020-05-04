@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,15 +212,14 @@ msgstr ""
 "fonction de l'OS."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:121
-#, fuzzy
 msgid ""
 "This tutorial assumes you are using a XBox 360 or a PlayStation wired "
 "controller. Also, I do not (currently) have access to a Mac computer, so the "
 "joystick axes may need changing. If they do, please open a GitHub issue on "
 "the Godot documentation repository! Thanks!"
 msgstr ""
-"Nous supposons dans ce tutoriel que vous utilisez une manette de Xbox 360  "
-"ou une manette Playstation branchée. Je n'ai également (pour le moment) pas "
+"Nous supposons dans ce tutoriel que vous utilisez une manette de Xbox 360 ou "
+"une manette Playstation filaire. Je n'ai également (pour le moment) pas "
 "accès à un Mac donc les axes de joystick peuvent changer. Si c'est le cas, "
 "ouvrez un ticket Github sur le dépôt de la documentation Godot ! Merci !"
 
@@ -237,7 +236,6 @@ msgstr ""
 "morte radiale à l'échelle pour des calculs précis de zone morte."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:128
-#, fuzzy
 msgid ""
 "You can find a great article explaining all about how to handle joypad/"
 "controller dead zones `here <https://web.archive.org/web/20191208161810/"
@@ -245,8 +243,9 @@ msgid ""
 "html>`__."
 msgstr ""
 "Vous pouvez trouver un bon article qui explique tout sur la façon de gérer "
-"les zones mortes des contrôleurs ici : http://www.third-helix.com/2013/04/12/"
-"doing-thumbstick-dead-zones-right.html"
+"les zones mortes des contrôleurs : `ici <https://web.archive.org/"
+"web/20191208161810/http://www.third-helix.com/2013/04/12/doing-thumbstick-"
+"dead-zones-right.html>`__."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:131
 msgid ""
@@ -494,7 +493,6 @@ msgstr ""
 "float, nous aurions une erreur en tentant de lancer le projet."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:305
-#, fuzzy
 msgid ""
 "Next, we check to see if the weapon name at ``round_mouse_scroll_value`` is "
 "not equal to the current weapon name using ``WEAPON_NUMBER_TO_NAME``. If the "
@@ -506,8 +504,8 @@ msgstr ""
 "Nous vérifions ensuite si le nom de l'arme à "
 "``round_mouse_scroll_value``n'est pas égale au nom courant de l'arme en "
 "utilisant ``WEAPON_NUMBER_TO_NAME``. Si l'arme est différence de celle que "
-"le joueur utilise, on assigne ``changing_weapon_name``, on attribue  "
-"``true`` à ``changing_weapon`` afin que le joueur change d'arme dans "
+"le joueur utilise, on assigne ``changing_weapon_name``, on attribue ``true`` "
+"à ``changing_weapon`` afin que le joueur change d'arme dans "
 "``process_changing_weapon`` et on attribue ``mouse_scroll_value`` à "
 "``round_mouse_scroll_value``."
 

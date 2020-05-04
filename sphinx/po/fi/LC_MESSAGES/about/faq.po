@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -344,6 +344,11 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
+"Alkuun pelimoottori käytti `Lua <https://www.lua.org>` skripti kieltä. Lua "
+"on nopea, mutta liitoksien luominen objekti orientoidussa kielessä (fallback "
+"menetelmällä) oli hankalaa ja hidasta ja tarvitsi todella paljon koodia. "
+"Joidenkin kokeiden `Python <https://www.python.org>` kanssa, se osoittautui "
+"myös hankalaksi toteuttaa."
 
 #: ../../docs/about/faq.rst:135
 msgid ""
@@ -351,13 +356,12 @@ msgid ""
 msgstr "Tärkeimmät syyt oman skriptikielen luomiselle Godotiin olivat:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
 "Useimmissa skriptivirtuaalikoneissa ei ole hyvää säikeistystukea ja Godot "
-"käyttää säikeitä (Lua, Python, Squirrel, JS, AS, jne.)"
+"käyttää säikeitä (Lua, Python, Squirrel, JS, AS, jne.)."
 
 #: ../../docs/about/faq.rst:139
 #, fuzzy
@@ -447,6 +451,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX on tuettu Open Asset Import libraryn kautta. Huomiotavaa, FBX on "
+"yksityisomistuksellinen joten suosittelemme käyttämään muita tuettuja "
+"formaatteja, jos se sopii sinun työnkulkuun."
 
 #: ../../docs/about/faq.rst:167
 msgid ""
@@ -832,7 +839,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:307
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "Miksei Godot käytä poikkeuksia?"
 
 #: ../../docs/about/faq.rst:309
 msgid ""
@@ -841,16 +848,22 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"Me uskomme että pelien ei pidä kaatua, vaikka olisi mikä. Jos odottamaton "
+"tilanne tapahtuu, Godot tulostaa virheen (mikä voidaan seurata jopa "
+"skriptiin asti), mutta sen jälkeen yrittää toipua mahdollisimman sievästi ja "
+"jatkaa toimintaa."
 
 #: ../../docs/about/faq.rst:314
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
+"Lisäksi, poikkeukset lisäävät huomattavasti binäärin kokoa suoritettavassa "
+"ohjelmassa."
 
 #: ../../docs/about/faq.rst:318
 msgid "Why does Godot not enforce RTTI?"
-msgstr ""
+msgstr "Miksi Godot ei pakota RTTItä?"
 
 #: ../../docs/about/faq.rst:320
 msgid ""

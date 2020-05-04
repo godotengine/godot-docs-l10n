@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,6 +114,8 @@ msgid ""
 "Start the editor instead of running the scene (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Inicia el editor en lugar de ejecutar la escena (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` debe estar habilitado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid "``-p``, ``--project-manager``"
@@ -124,6 +126,9 @@ msgid ""
 "Start the project manager, even if a project is auto-detected (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Inicie el administrador de proyectos, incluso si un proyecto se detecta "
+"automáticamente (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` "
+"debe estar habilitado)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 #, fuzzy
@@ -132,7 +137,7 @@ msgstr "``+`` ``-``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 msgid "Quit after the first iteration."
-msgstr ""
+msgstr "Salir después de la primera iteración."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid "``-l <locale>``, ``--language <locale>``"
@@ -143,14 +148,17 @@ msgid ""
 "Use a specific locale (<locale> being a two-letter code). See :ref:"
 "`doc_locales` for more details."
 msgstr ""
+"Usa una configuración de región específica (<locale> es un código de dos "
+"letras). Ver :ref:`doc_locales`para más detalles."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "``--path <directory>``"
-msgstr ""
+msgstr "``--path <directorio>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "Path to a project (<directory> must contain a 'project.godot' file)."
 msgstr ""
+"Ruta a un proyecto (<directory> debe contener un archivo 'project.godot')."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:46
 #, fuzzy
@@ -159,19 +167,19 @@ msgstr "``+`` ``-``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:46
 msgid "Scan folders upwards for 'project.godot' file."
-msgstr ""
+msgstr "Buscar en las carpetas superiores el archivo 'project.godot'."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "``--main-pack <file>``"
-msgstr ""
+msgstr "``--main-pack <archivo>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "Path to a pack (.pck) file to load."
-msgstr ""
+msgstr "Ruta a un archivo de paquete (.pck) a cargar."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:50
 msgid "``--render-thread <mode>``"
-msgstr ""
+msgstr "``--render-thread <modo>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:50
 msgid ""
@@ -179,32 +187,39 @@ msgid ""
 "<class_ProjectSettings_property_rendering/threads/thread_model>` for more "
 "details."
 msgstr ""
+"Modo de renderizado del hilo ('unsafe', 'safe', 'separate'). Ver :ref:"
+"`Thread Model <class_ProjectSettings_property_rendering/threads/"
+"thread_model>` para más detalles."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid "``--remote-fs <address>``"
-msgstr ""
+msgstr "``--remote-fs <dirección>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
-msgstr ""
+msgstr "Sistema de archivos remoto (``<host/IP>[:<port>]`` dirección)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:54
 msgid "``--audio-driver <driver>``"
-msgstr ""
+msgstr "``--audio-driver <driver>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:54
 msgid ""
 "Audio driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
+"Controlador de audio. Usa ``--help`` primero para mostrar la lista de "
+"controladores disponibles."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:56
 msgid "``--video-driver <driver>``"
-msgstr ""
+msgstr "``--video-driver <driver>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:56
 msgid ""
 "Video driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
+"Controlador de video. Usa ``--help`` primero para mostrar la lista de "
+"controladores disponibles."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:59
 #, fuzzy
@@ -213,19 +228,19 @@ msgstr "**Descripción**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:64
 msgid "``-f``, ``--fullscreen``"
-msgstr ""
+msgstr "``-f``, ``--fullscreen``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:64
 msgid "Request fullscreen mode."
-msgstr ""
+msgstr "Solicitar modo de pantalla completa."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "``-m``, ``--maximized``"
-msgstr ""
+msgstr "``-m``, ``--maximized``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "Request a maximized window."
-msgstr ""
+msgstr "Solicitar una ventana maximizada."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:68
 #, fuzzy
@@ -239,44 +254,46 @@ msgstr "Modo de renderizado"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "``-t``, ``--always-on-top``"
-msgstr ""
+msgstr "``-t``, ``--always-on-top``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "Request an always-on-top window."
-msgstr ""
+msgstr "Solicita una ventana siempre en la cima."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "``--resolution <W>x<H>``"
-msgstr ""
+msgstr "``--resolution <W>x<H>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "Request window resolution."
-msgstr ""
+msgstr "Solicitar resolución de ventana."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "``--position <X>,<Y>``"
-msgstr ""
+msgstr "``--position <X>,<Y>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "Request window position."
-msgstr ""
+msgstr "Solicitar posición de la ventana."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
 msgid "``--low-dpi``"
-msgstr ""
+msgstr "``--low-dpi``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
 msgid "Force low-DPI mode (macOS and Windows only)."
-msgstr ""
+msgstr "Forzar el modo de baja DPI (solo macOS y Windows)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid "``--no-window``"
-msgstr ""
+msgstr "``--no-window``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid ""
 "Disable window creation (Windows only). Useful together with ``--script``."
 msgstr ""
+"Deshabilitar la creación de ventanas (solo Windows). Útil junto con `` --"
+"script``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:81
 #, fuzzy
@@ -289,6 +306,10 @@ msgid ""
 "(they require ``debug`` or ``release_debug`` build targets, see :ref:"
 "`doc_introduction_to_the_buildsystem_target` for more details)."
 msgstr ""
+"Las opciones de depuración solo están disponibles en el editor y el "
+"depurador de plantillas de exportación (estas requieren ``debug`` o "
+"``release_debug``, ver :ref:`doc_introduction_to_the_buildsystem_target`para "
+"más detalles)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
 #, fuzzy
@@ -297,11 +318,11 @@ msgstr "``+`` ``-``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
 msgid "Debug (local stdout debugger)."
-msgstr ""
+msgstr "Depurar (depurador stdout local)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid "``-b``, ``--breakpoints``"
-msgstr ""
+msgstr "``-b``, ``--breakpoints``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid ""

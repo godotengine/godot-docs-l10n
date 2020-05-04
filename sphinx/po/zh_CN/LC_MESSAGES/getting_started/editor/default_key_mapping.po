@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -622,7 +622,7 @@ msgstr "画布项目"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "Zoom In"
-msgstr ""
+msgstr "放大"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -641,7 +641,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "Zoom Out"
-msgstr ""
+msgstr "缩小"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -898,9 +898,8 @@ msgid "``canvas_item_editor/preview_canvas_scale``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
-#, fuzzy
 msgid "Insert Key"
-msgstr "插入空格："
+msgstr "插入关键帧"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -1385,7 +1384,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "复制"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -1524,7 +1523,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "替换"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -1853,7 +1852,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr ""
+msgstr "转到行"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -1944,9 +1943,8 @@ msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
-#, fuzzy
 msgid "Script Editor"
-msgstr "GDScript"
+msgstr "脚本编辑器"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -2024,7 +2022,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
@@ -2084,7 +2082,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
@@ -2116,7 +2114,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
-msgstr ""
+msgstr "切换脚本面板"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
@@ -2140,7 +2138,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr ""
+msgstr "重置缩放"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -2326,7 +2324,7 @@ msgstr "文件描述符"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "后退"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -2334,7 +2332,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr ""
+msgstr "前进"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
@@ -2342,7 +2340,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr ""
+msgstr "上一级"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
@@ -2350,7 +2348,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
-msgstr ""
+msgstr "刷新"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
@@ -2358,7 +2356,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "切换显示隐藏文件"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -2374,16 +2372,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "开关收藏"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
-#, fuzzy
 msgid "Toggle Mode"
-msgstr "Blend Mode(混合模式)"
+msgstr "切换模式"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -2394,9 +2391,8 @@ msgid "``file_dialog/toggle_mode``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
-#, fuzzy
 msgid "Create Folder"
-msgstr "创建节点"
+msgstr "新建文件夹"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -2413,9 +2409,8 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
-#, fuzzy
 msgid "Delete"
-msgstr "删除轨道"
+msgstr "删除"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
@@ -2480,9 +2475,8 @@ msgid "FileSystem Dock"
 msgstr "文件系统"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
-#, fuzzy
 msgid "Copy Path"
-msgstr "NodePath"
+msgstr "复制路径"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -2490,9 +2484,8 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
-#, fuzzy
 msgid "Duplicate"
-msgstr "multiplicative"
+msgstr "拷贝"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -2575,18 +2568,16 @@ msgid "Animation Track Editor"
 msgstr "动画控件"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
-#, fuzzy
 msgid "Duplicate Selection"
-msgstr "重复动画"
+msgstr "复制选中项"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
-#, fuzzy
 msgid "Duplicate Transposed"
-msgstr "重复动画"
+msgstr "复制并转置"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -2601,18 +2592,16 @@ msgid "``animation_editor/duplicate_selection_transposed``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
-#, fuzzy
 msgid "Delete Selection"
-msgstr "直接时间选择"
+msgstr "删除选中项"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
-#, fuzzy
 msgid "Go to Next Step"
-msgstr "下一步"
+msgstr "前往下一步"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -2628,7 +2617,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "返回上一步"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -2648,9 +2637,8 @@ msgid "Tile Map Editor"
 msgstr "TileMap节点"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
-#, fuzzy
 msgid "Find Tile"
-msgstr "随机砖块"
+msgstr "查找图块"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "``tile_map_editor/find_tile``"
@@ -2658,7 +2646,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid "Pick Tile"
-msgstr ""
+msgstr "选择图块"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid ":kbd:`I`"
@@ -2669,9 +2657,8 @@ msgid "``tile_map_editor/pick_tile``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
-#, fuzzy
 msgid "Paint Tile"
-msgstr "Point Size(点大小)"
+msgstr "绘制图块"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid ":kbd:`P`"
@@ -2683,16 +2670,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "Bucket Fill"
-msgstr ""
+msgstr "油漆桶填充"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "``tile_map_editor/bucket_fill``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
-#, fuzzy
 msgid "Transpose"
-msgstr "转置矩阵"
+msgstr "转置"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "``tile_map_editor/transpose``"
@@ -2700,7 +2686,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "Flip Horizontally"
-msgstr ""
+msgstr "水平翻转"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid ":kbd:`X`"
@@ -2712,7 +2698,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "Flip Vertically"
-msgstr ""
+msgstr "垂直翻转"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid ":kbd:`Z`"
@@ -2724,34 +2710,31 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "Rotate Left"
-msgstr ""
+msgstr "向左旋转"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "``tile_map_editor/rotate_left``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
-#, fuzzy
 msgid "Rotate Right"
-msgstr "Spot Light(聚光灯)"
+msgstr "向右旋转"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "``tile_map_editor/rotate_right``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
-#, fuzzy
 msgid "Clear Transform"
-msgstr "变换"
+msgstr "清除变换"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "``tile_map_editor/clear_transform``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
-#, fuzzy
 msgid "Select"
-msgstr "反映"
+msgstr "选择"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
@@ -2762,9 +2745,8 @@ msgid "``tile_map_editor/select``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
-#, fuzzy
 msgid "Cut Selection"
-msgstr "反射"
+msgstr "剪切选中项"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "``tile_map_editor/cut_selection``"
@@ -2775,9 +2757,8 @@ msgid "``tile_map_editor/copy_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
-#, fuzzy
 msgid "Erase Selection"
-msgstr "反射"
+msgstr "擦除选中项"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "``tile_map_editor/erase_selection``"
@@ -2789,18 +2770,16 @@ msgid "Tileset Editor"
 msgstr "编辑器"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
-#, fuzzy
 msgid "Next Coordinate"
-msgstr "X 坐标"
+msgstr "下一个坐标"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "``tileset_editor/next_shape``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
-#, fuzzy
 msgid "Previous Coordinate"
-msgstr "X 坐标"
+msgstr "上一个坐标"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid ":kbd:`PgUp`"
@@ -2811,9 +2790,8 @@ msgid "``tileset_editor/previous_shape``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
-#, fuzzy
 msgid "Region Mode"
-msgstr "Blend Mode(混合模式)"
+msgstr "区域模式"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
@@ -2824,9 +2802,8 @@ msgid "``tileset_editor/editmode_region``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
-#, fuzzy
 msgid "Collision Mode"
-msgstr "碰撞遮罩"
+msgstr "碰撞模式"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid ":kbd:`2`"
@@ -2837,9 +2814,8 @@ msgid "``tileset_editor/editmode_collision``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
-#, fuzzy
 msgid "Occlusion Mode"
-msgstr "包含"
+msgstr "遮挡模式"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid ":kbd:`3`"
@@ -2850,9 +2826,8 @@ msgid "``tileset_editor/editmode_occlusion``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
-#, fuzzy
 msgid "Navigation Mode"
-msgstr "动画模式"
+msgstr "导航模式"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
@@ -2863,9 +2838,8 @@ msgid "``tileset_editor/editmode_navigation``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
-#, fuzzy
 msgid "Bitmask Mode"
-msgstr "动画模式"
+msgstr "位掩码模式"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
@@ -2877,7 +2851,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "Priority Mode"
-msgstr ""
+msgstr "优先模式"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid ":kbd:`6`"
@@ -2888,9 +2862,8 @@ msgid "``tileset_editor/editmode_priority``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
-#, fuzzy
 msgid "Icon Mode"
-msgstr "Blend Mode(混合模式)"
+msgstr "图标模式"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid ":kbd:`7`"
@@ -2901,9 +2874,8 @@ msgid "``tileset_editor/editmode_icon``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
-#, fuzzy
 msgid "Z Index Mode"
-msgstr "Blend Mode(混合模式)"
+msgstr "Z索引模式"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid ":kbd:`8`"
