@@ -2,12 +2,14 @@
 # Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Airbus5717 <Abdussamadf350@gmail.com>, 2020.
 # Anas Khalil <anas.khalil@outlook.com>, 2018.
 # Aymen B'm <boxaymen7@gmail.com>, 2018.
 # Bellachia Mohamed Bahaa Eddine <bellachiamohamedbahaa@gmail.com>, 2019.
 # Codes Otaku <ilyas.gamerz@gmail.com>, 2018.
 # Ibraheem Tawfik <tawfikibraheem@gmail.com>, 2019.
 # Mohamed El-Baz <albaz2000eg@gmail.com>, 2018.
+# Moustafa Sedick <moustafa.sedick@gmail.com>, 2020.
 # Nabeel20 <nabeelandnizam@gmail.com>, 2020.
 # Omar Aglan <omar.aglan91@yahoo.com>, 2018-2019.
 # Omar Salam <omar-ma-salam@outlook.com>, 2019.
@@ -21,8 +23,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-04-27 12:19+0200\n"
-"PO-Revision-Date: 2020-04-25 00:29+0000\n"
-"Last-Translator: Nabeel20 <nabeelandnizam@gmail.com>\n"
+"PO-Revision-Date: 2020-05-04 07:47+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ar/>\n"
 "Language: ar\n"
@@ -31,12 +33,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.0.2-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.2* branch"
-msgstr "مستندات غودو - الفرع الرئيسي"
+msgstr "مستندات غودوت - الفرع *3.2*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -171,9 +172,8 @@ msgid "Community"
 msgstr "المجتمع"
 
 #: ../../docs/index.rst:131
-#, fuzzy
 msgid "Class reference"
-msgstr "مرجعية الظلال:"
+msgstr "مرجعية الظلال"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
@@ -301,7 +301,7 @@ msgid ""
 msgstr ""
 "في جال واجهتك اي مشاكل مع احد البرامج التعليمية او مشاريعك، تستطيع الحصول "
 "على المساعدة من مختلف الوسائل الاجتماعية خاصو ديسكورد غودوت و سؤال-جواب و "
-"قنوات اي ار سي"
+"الدردشة على الإنترنت."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -672,7 +672,7 @@ msgid ""
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
 "لمعرفة المزيد حول هذا الموضوع، راجع الأقسام الموجودة في :المرجع: \"تصدير "
-"<toc-learn-workflow-export>\" و :المرجع: \"تجميع غودو بنفسك <toc-devel-"
+"<toc-learn-workflow-export>\" و :المرجع: \"تجميع غودوت بنفسك <toc-devel-"
 "compiling>\"."
 
 #: ../../docs/about/faq.rst:65
@@ -768,7 +768,7 @@ msgid ""
 "complexity.**"
 msgstr ""
 "هنالك العديد من الأسباب تدفعك لاستخدام اللغة البرمجية GDScript خصوصاً عندما "
-"تعمل على نماذج بدئية في المراحل ألفا/بيتا من مشروعك، أو إن كنت تعمل على  "
+"تعمل على نماذج بدئية في المراحل ألفا/بيتا من مشروعك، أو إن كنت تعمل على "
 "عنوان AAA  التالي ولكن في آخر المطاف يبقى السبب الأهم والأسمى هو ** السهولة "
 "والبُعد عن التعقيد**."
 
@@ -787,11 +787,11 @@ msgstr ""
 "النية الخالصة في خلق لغة برمجية متضافرة بشكل كبيرة ومخصوصة لمحرك الألعاب "
 "غودوت كانت لسببين: الأول؛ هذه الطريقة تقلل الوقت اللازم للشروع وتشغيل محرك "
 "الألعاب، وبالتالي تعطي الحرية الكامنة والسريعة للمطورين لكي يكشفوا أنفسهم "
-"على المحرك بطريقة تسمح بالتركيز على الفعالية والإنتاج. الثاني؛  تقلل من "
-"العبء الإجمالي لصيانة المحرك، وكذلك من أبعاد المشكلات المحتملة وفي الوقت "
-"ذاته تتيح لمطوري المحرك التركيز على إصلاح الكبوت البرمجية وتطوير الميزات "
-"الخاصة بلبّ المحرك، بدلاً من تضييع وقت كبير في محاولة توفير ميزات تدريجياً "
-"لمجموعة كبيرة من اللغات البرمجية."
+"على المحرك بطريقة تسمح بالتركيز على الفعالية والإنتاج. الثاني؛ تقلل من العبء "
+"الإجمالي لصيانة المحرك، وكذلك من أبعاد المشكلات المحتملة وفي الوقت ذاته تتيح "
+"لمطوري المحرك التركيز على إصلاح الكبوت البرمجية وتطوير الميزات الخاصة بلبّ "
+"المحرك، بدلاً من تضييع وقت كبير في محاولة توفير ميزات تدريجياً لمجموعة كبيرة "
+"من اللغات البرمجية."
 
 #: ../../docs/about/faq.rst:114
 msgid ""
@@ -1120,7 +1120,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr "`GDNative هنا!!  <https://godotengine.org/article/dlscript-here>`_"
+msgstr "`GDNative هنا!! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
@@ -3183,7 +3183,6 @@ msgstr ""
 "نظام النوافذ على سبيل المثال."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:55
-#, fuzzy
 msgid ".NET / C#"
 msgstr ".NET / C#"
 
@@ -3193,6 +3192,9 @@ msgid ""
 "official support for it. C# is a mature language with tons of code written "
 "for it, and support was added thanks to a generous donation from Microsoft."
 msgstr ""
+"ولأن ميكروسوفت #C هي المفضلة بين مطوري الألعاب , فقد أضفنا دعما رسميا لها ،  "
+"#C  لغة مكتملة و هنالك الكثير من الاكواد المكتوبة خصيصا لها وقد تمت اضافة "
+"الدعم مع الشكر لعطاء ميكروسوفت السخي."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:62
 msgid ""
@@ -3941,9 +3943,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:1
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:1
-#, fuzzy
 msgid "Signal"
-msgstr "الإشارات"
+msgstr "الإشاراة"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1268
@@ -9966,7 +9967,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
-msgstr ""
+msgstr "تحميل تلقائي"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:41
 msgid ""
@@ -10807,7 +10808,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:455
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:470
 msgid "Description"
-msgstr "الوصف:"
+msgstr "الوصف"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "``-h``, ``--help``, ``/?``"
@@ -11584,9 +11585,8 @@ msgid "Editor setting"
 msgstr "المُعدل"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-#, fuzzy
 msgid "Open 2D Editor"
-msgstr "المُعدل"
+msgstr "فتح المُعدل 2D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
@@ -11601,9 +11601,8 @@ msgid "``editor/editor_2d``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-#, fuzzy
 msgid "Open 3D Editor"
-msgstr "المُعدل"
+msgstr "فتح المُعدل 3D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -11619,7 +11618,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr ""
+msgstr "فتح مُعدل الكود"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
@@ -11637,7 +11636,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr ""
+msgstr "ابحث في المساعدة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
@@ -11653,7 +11652,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid "Distraction Free Mode"
-msgstr ""
+msgstr "وضع خالي من الإلهاء"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
@@ -11669,7 +11668,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
-msgstr ""
+msgstr "التبويب التالي"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
@@ -11685,7 +11684,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
-msgstr ""
+msgstr "التبويب السابق"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -11716,9 +11715,8 @@ msgid "``editor/filter_files``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
-#, fuzzy
 msgid "Open Scene"
-msgstr "المشاهد"
+msgstr "فتح مشهد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -11733,9 +11731,8 @@ msgid "``editor/open_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
-#, fuzzy
 msgid "Close Scene"
-msgstr "مشهد اللاعب"
+msgstr "اغلاق المشهد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -11751,7 +11748,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "إعادة فتح المشهد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
@@ -11768,9 +11765,8 @@ msgid "``editor/reopen_closed_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
-#, fuzzy
 msgid "Save Scene"
-msgstr "مشهد اللاعب"
+msgstr "حفظ المشهد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -11866,7 +11862,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "Undo"
-msgstr ""
+msgstr "تراجع"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -11885,7 +11881,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "Redo"
-msgstr ""
+msgstr "إعادة تراجع"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -11901,7 +11897,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
-msgstr ""
+msgstr "إنهاء"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
@@ -11916,9 +11912,8 @@ msgid "``editor/file_quit``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
-#, fuzzy
 msgid "Quit to Project List"
-msgstr "إعدادات المشروع"
+msgstr "غادر إلى قائمه المشاريع"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -11950,7 +11945,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "إلغاء/تفعيل وضع الشاشة الكاملة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -11966,7 +11961,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
-msgstr ""
+msgstr "تشغيل"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
@@ -11983,9 +11978,8 @@ msgid "``editor/play``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
-#, fuzzy
 msgid "Pause Scene"
-msgstr "مشهد اللاعب"
+msgstr "إيقاف مؤقت للمشهد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
@@ -12001,7 +11995,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "Stop"
-msgstr ""
+msgstr "إيقاف"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
@@ -12017,9 +12011,8 @@ msgid "``editor/stop``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
-#, fuzzy
 msgid "Play Scene"
-msgstr "مشهد اللاعب"
+msgstr "تشغيل المشهد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -12035,9 +12028,8 @@ msgid "``editor/play_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
-#, fuzzy
 msgid "Play Custom Scene"
-msgstr "مشهد اللاعب"
+msgstr "تشغيل المشهد المخصص"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -12072,7 +12064,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "Zoom In"
-msgstr ""
+msgstr "تكبير"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -12091,7 +12083,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "Zoom Out"
-msgstr ""
+msgstr "تصغير"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -12109,7 +12101,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "Zoom Reset"
-msgstr ""
+msgstr "إعادة تعيين التكبير"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
@@ -12140,7 +12132,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid "Select Mode"
-msgstr ""
+msgstr "تحديد الوضع"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
@@ -12155,7 +12147,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 msgid "Move Mode"
-msgstr ""
+msgstr "وضع التحريك"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
@@ -12171,7 +12163,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid "Rotate Mode"
-msgstr ""
+msgstr "وضع التدوير"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
@@ -12186,7 +12178,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid "Scale Mode"
-msgstr ""
+msgstr "وضع التحجيم"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
@@ -12200,7 +12192,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 msgid "Ruler Mode"
-msgstr ""
+msgstr "وضع المسطرة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
@@ -12213,7 +12205,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "Use Smart Snap"
-msgstr ""
+msgstr "استخدام المحاذاة الذكية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
@@ -12225,7 +12217,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid "Use Grid Snap"
-msgstr ""
+msgstr "استخادم المحاذاة للشبكة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid ":kbd:`Shift + G`"
@@ -12237,7 +12229,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "Multiply grid step by 2"
-msgstr ""
+msgstr "ضاعف خطوة الشبكة بـ 2"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid ":kbd:`Num *`"
@@ -12249,7 +12241,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "Divide grid step by 2"
-msgstr ""
+msgstr "قسم خطوة الشبكة بـ 2"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid ":kbd:`Num /`"
@@ -12261,7 +12253,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 msgid "Always Show Grid"
-msgstr ""
+msgstr "إظهار الشبكة دوماً"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
@@ -12274,7 +12266,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid "Show Helpers"
-msgstr ""
+msgstr "أظهر المساعدات"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid ":kbd:`H`"
@@ -12286,7 +12278,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "Show Guides"
-msgstr ""
+msgstr "أظهر الموجهات"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
@@ -12299,7 +12291,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 msgid "Center Selection"
-msgstr ""
+msgstr "نصف المُحدد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
@@ -12312,7 +12304,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "Frame Selection"
-msgstr ""
+msgstr "تحديد الإطار"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
@@ -12325,7 +12317,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "Preview Canvas Scale"
-msgstr ""
+msgstr "إظهار تحجيم اللوحة Canvas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid ":kbd:`Ctrl + Shift + P`"
@@ -12341,7 +12333,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
-msgstr ""
+msgstr "أدخل المفتاح"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -12353,7 +12345,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "Insert Key (Existing Tracks)"
-msgstr ""
+msgstr "أدخل مفتاح (مسارات موجودة بالفعل)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid ":kbd:`Ctrl + Ins`"
@@ -12388,7 +12380,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "Clear Pose"
-msgstr ""
+msgstr "إخلاء الوضع"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid ":kbd:`Shift + K`"
@@ -12404,7 +12396,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "Toggle Freelook"
-msgstr ""
+msgstr "إلغاء/تفعيل وضع الرؤية الحُرة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "``spatial_editor/freelook_toggle``"
@@ -12412,7 +12404,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 msgid "Freelook Left"
-msgstr ""
+msgstr "الرؤية الحُرة Freelook يساراً"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
@@ -12425,7 +12417,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid "Freelook Right"
-msgstr ""
+msgstr "الرؤية الحرة Freelook يميناً"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid ":kbd:`D`"
@@ -12437,7 +12429,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "Freelook Forward"
-msgstr ""
+msgstr "الرؤية الحرة Freelook قُدماً"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "``spatial_editor/freelook_forward``"
@@ -12445,7 +12437,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "Freelook Backwards"
-msgstr ""
+msgstr "الرؤية الحُرة Freelook تراجعياً"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "``spatial_editor/freelook_backwards``"
@@ -12453,7 +12445,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "Freelook Up"
-msgstr ""
+msgstr "الرؤية الحُرة Freelook للأعلى"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "``spatial_editor/freelook_up``"
@@ -12461,7 +12453,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "Freelook Down"
-msgstr ""
+msgstr "الرؤية الحُرة للأسفل"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "``spatial_editor/freelook_down``"
@@ -12469,7 +12461,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid "Freelook Speed Modifier"
-msgstr ""
+msgstr "مُعدّل سرعة الرؤية الحُرة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid ":kbd:`Shift`"
@@ -12481,7 +12473,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid "Freelook Slow Modifier"
-msgstr ""
+msgstr "مُعدّل تباطؤ الرؤية الحُرة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid ":kbd:`Alt`"
@@ -12509,7 +12501,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 msgid "Use Local Space"
-msgstr ""
+msgstr "استخدام الحيّز المحلي"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
@@ -12522,7 +12514,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "Use Snap"
-msgstr ""
+msgstr "استخدام المحاذاة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
@@ -12543,7 +12535,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "Top View"
-msgstr ""
+msgstr "الواجهة View العلوية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid ":kbd:`Num 7`"
@@ -12555,7 +12547,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "Bottom View"
-msgstr ""
+msgstr "الواجهة View السفلية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid ":kbd:`Alt + Num 7`"
@@ -12567,7 +12559,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "Front View"
-msgstr ""
+msgstr "الواجهة View الأمامية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid ":kbd:`Num 1`"
@@ -12579,7 +12571,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "Rear View"
-msgstr ""
+msgstr "الواجهة View الخلفية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid ":kbd:`Alt + Num 1`"
@@ -12591,7 +12583,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "Right View"
-msgstr ""
+msgstr "الواجهة View اليُمنى"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid ":kbd:`Num 3`"
@@ -12603,7 +12595,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "Left View"
-msgstr ""
+msgstr "الواجهة View اليُسرى"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid ":kbd:`Alt + Num 3`"
@@ -12615,7 +12607,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "Switch Perspective/Orthogonal View"
-msgstr ""
+msgstr "التبديل بين الرؤية المنظورية / الإسقاطية Orthogonal"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid ":kbd:`Num 5`"
@@ -12626,9 +12618,8 @@ msgid "``spatial_editor/switch_perspective_orthogonal``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
-#, fuzzy
 msgid "Insert Animation Key"
-msgstr "صورة متحركة"
+msgstr "إدخال مفتاح للرسوميات المتحركة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid ":kbd:`K`"
@@ -12640,7 +12631,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid "Focus Origin"
-msgstr ""
+msgstr "مصدر التركيز"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid ":kbd:`O`"
@@ -12652,7 +12643,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "Focus Selection"
-msgstr ""
+msgstr "اختيار التركيز"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "``spatial_editor/focus_selection``"
@@ -12660,7 +12651,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid "Align Transform with View"
-msgstr ""
+msgstr "محاذاة التحوّل مع الواجهة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid ":kbd:`Ctrl + Alt + M`"
@@ -12676,7 +12667,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid "Align Rotation with View"
-msgstr ""
+msgstr "محاذاة التدوير مع الواجهة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
@@ -12692,9 +12683,8 @@ msgid "``spatial_editor/align_rotation_with_view``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
-#, fuzzy
 msgid "1 Viewport"
-msgstr "ساحات الرؤية"
+msgstr "ساحة رؤية واحدة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Ctrl + 1`"
@@ -12709,9 +12699,8 @@ msgid "``spatial_editor/1_viewport``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
-#, fuzzy
 msgid "2 Viewports"
-msgstr "ساحات الرؤية"
+msgstr "ساحتان للرؤية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Ctrl + 2`"
@@ -12726,9 +12715,8 @@ msgid "``spatial_editor/2_viewports``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
-#, fuzzy
 msgid "2 Viewports (Alt)"
-msgstr "ساحات الرؤية"
+msgstr "ساحتان للرؤية (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Ctrl + Alt + 2`"
@@ -12743,9 +12731,8 @@ msgid "``spatial_editor/2_viewports_alt``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
-#, fuzzy
 msgid "3 Viewports"
-msgstr "ساحات الرؤية"
+msgstr "3 ساحات للرؤية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Ctrl + 3`"
@@ -12760,9 +12747,8 @@ msgid "``spatial_editor/3_viewports``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
-#, fuzzy
 msgid "3 Viewports (Alt)"
-msgstr "ساحات الرؤية"
+msgstr "3 ساحات للرؤية (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Ctrl + Alt + 3`"
@@ -12777,9 +12763,8 @@ msgid "``spatial_editor/3_viewports_alt``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
-#, fuzzy
 msgid "4 Viewports"
-msgstr "ساحات الرؤية"
+msgstr "4 ساحات للرؤية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Ctrl + 4`"
@@ -12800,7 +12785,7 @@ msgstr "المُعدل"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "Cut"
-msgstr ""
+msgstr "قص"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
@@ -12820,7 +12805,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "نسخ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -12846,7 +12831,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "Paste"
-msgstr ""
+msgstr "لصق"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
@@ -12864,7 +12849,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "Select All"
-msgstr ""
+msgstr "تحديد الكل"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
@@ -12906,7 +12891,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid "Find Next"
-msgstr ""
+msgstr "إيجاد التالي"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
@@ -12920,7 +12905,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid "Find Previous"
-msgstr ""
+msgstr "إيجاد السابق"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
@@ -12957,7 +12942,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "إستبدال"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -13005,7 +12990,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid "Move Up"
-msgstr ""
+msgstr "تحريك لأعلى"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
@@ -13020,7 +13005,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid "Move Down"
-msgstr ""
+msgstr "تحريك لأسفل"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid ":kbd:`Alt + Down Arrow`"
@@ -13032,7 +13017,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "Delete Line"
-msgstr ""
+msgstr "حذف الخط"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
@@ -13050,7 +13035,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "Toggle Comment"
-msgstr ""
+msgstr "تفعيل Toggle التعليقات"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Ctrl + K`"
@@ -13066,7 +13051,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "Fold/Unfold Line"
-msgstr ""
+msgstr "إلغاء/تفعيل طي الخط"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
@@ -13079,7 +13064,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid "Clone Down"
-msgstr ""
+msgstr "استنساخ أدناه"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
@@ -13099,7 +13084,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid "Complete Symbol"
-msgstr ""
+msgstr "رمز التمام"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid ":kbd:`Ctrl + Space`"
@@ -13127,7 +13112,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid "Trim Trailing Whitespace"
-msgstr ""
+msgstr "تشذيب الفراغات البيضاء الزائدة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid ":kbd:`Ctrl + Alt + T`"
@@ -13143,7 +13128,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "Uppercase"
-msgstr ""
+msgstr "الأحرف الكبيرة (Uppercase)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid ":kbd:`Shift + F4`"
@@ -13155,7 +13140,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "Lowercase"
-msgstr ""
+msgstr "الأحرف الصغيرة (Lowercase)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid ":kbd:`Shift + F5`"
@@ -13167,7 +13152,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "Capitalize"
-msgstr ""
+msgstr "تكبير الحروف Capitalize"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid ":kbd:`Shift + F6`"
@@ -13211,7 +13196,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "Auto Indent"
-msgstr ""
+msgstr "مسافة بادئة تلقائية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Ctrl + I`"
@@ -13276,7 +13261,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr ""
+msgstr "إذهب إلي الخط"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -13293,7 +13278,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid "Toggle Breakpoint"
-msgstr ""
+msgstr "تفعيل/إلغاء تفعيل نقطة التكسّر"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
@@ -13306,7 +13291,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "Remove All Breakpoints"
-msgstr ""
+msgstr "إزالة جميع نقاط التكسّر"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
@@ -13350,7 +13335,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "Contextual Help"
-msgstr ""
+msgstr "مساعدة سياقية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + F1`"
@@ -13365,9 +13350,8 @@ msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
-#, fuzzy
 msgid "Script Editor"
-msgstr "الوصف"
+msgstr "محرر النص البرمجي"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -13436,7 +13420,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "Reopen Closed Script"
-msgstr ""
+msgstr "إعادة فتح النص البرمجي المُغلق"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "``script_editor/reopen_closed_script``"
@@ -13444,7 +13428,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
-msgstr ""
+msgstr "حفظ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
@@ -13460,7 +13444,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "Save All"
-msgstr ""
+msgstr "إحفظ الكل"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "``script_editor/save_all``"
@@ -13468,7 +13452,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "Soft Reload Script"
-msgstr ""
+msgstr "إعادة تحميل النص البرمجي بلطف"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "``script_editor/reload_script_soft``"
@@ -13476,7 +13460,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 msgid "History Previous"
-msgstr ""
+msgstr "التاريخ السابق"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
@@ -13489,7 +13473,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 msgid "History Next"
-msgstr ""
+msgstr "التاريخ التالي"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
@@ -13502,7 +13486,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
-msgstr ""
+msgstr "إغلاق"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
@@ -13535,7 +13519,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
-msgstr ""
+msgstr "تحديد التبويب البرمجي"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
@@ -13559,7 +13543,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr ""
+msgstr "إرجاع التكبير"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -13597,9 +13581,8 @@ msgid "``visual_script_editor/cut_nodes``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
-#, fuzzy
 msgid "Paste Nodes"
-msgstr "جسيمات"
+msgstr "لصق العُقد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "``visual_script_editor/paste_nodes``"
@@ -13681,7 +13664,7 @@ msgstr "المُعدل"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid "Copy Selection"
-msgstr ""
+msgstr "نسخ المُحدد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 msgid "``editor/copy_output``"
@@ -13689,7 +13672,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "Clear Output"
-msgstr ""
+msgstr "مسح المُخرجات"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "``editor/clear_output``"
@@ -13702,7 +13685,7 @@ msgstr "مُنقح الأخطاء"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "Step Into"
-msgstr ""
+msgstr "اخط خطوة ضمن"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid ":kbd:`F11`"
@@ -13714,7 +13697,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "Step Over"
-msgstr ""
+msgstr "اخط خطوة متجاوزة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid ":kbd:`F10`"
@@ -13726,7 +13709,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "Continue"
-msgstr ""
+msgstr "استمرار"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid ":kbd:`F12`"
@@ -13742,7 +13725,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "الرجوع للخلف"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -13750,7 +13733,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr ""
+msgstr "الذهاب للأمام"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
@@ -13758,7 +13741,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr ""
+msgstr "إذهب للأعلى"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
@@ -13766,7 +13749,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
-msgstr ""
+msgstr "تحديث"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
@@ -13774,7 +13757,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "أظهر الملفات المخفية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -13790,7 +13773,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "أظهر المُفضلة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -13798,7 +13781,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr ""
+msgstr "أظهر المود"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -13809,9 +13792,8 @@ msgid "``file_dialog/toggle_mode``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
-#, fuzzy
 msgid "Create Folder"
-msgstr "إنشاء العُقد"
+msgstr "أنشئ مجلد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -13829,7 +13811,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
@@ -13837,7 +13819,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 msgid "Focus Path"
-msgstr ""
+msgstr "مسار التركيز"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
@@ -13852,7 +13834,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
-msgstr ""
+msgstr "حرك المُفضلة للأعلى"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
@@ -13870,7 +13852,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
-msgstr ""
+msgstr "حرك المُفضلة للأسفل"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
@@ -13891,9 +13873,8 @@ msgid "FileSystem Dock"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
-#, fuzzy
 msgid "Copy Path"
-msgstr "المسار"
+msgstr "نسخ المسار"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -13902,7 +13883,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "Duplicate"
-msgstr ""
+msgstr "تكرير"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -13918,7 +13899,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "Add Child Node"
-msgstr ""
+msgstr "إضافة عُقدة ابن"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "``scene_tree/add_child_node``"
@@ -13942,7 +13923,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "Copy Node Path"
-msgstr ""
+msgstr "نسخ مسار العُقدة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "``scene_tree/copy_node_path``"
@@ -14007,7 +13988,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "Delete Selection"
-msgstr ""
+msgstr "إحدف المحدد (المجموعة المختارة)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -14015,7 +13996,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "إذهب إلى الخطوة التالية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -14031,7 +14012,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "إذهب إلى الخطوة السابقة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -14059,7 +14040,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid "Pick Tile"
-msgstr ""
+msgstr "اختيار البلاط"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid ":kbd:`I`"
@@ -14071,7 +14052,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid "Paint Tile"
-msgstr ""
+msgstr "طلاء البلاط"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid ":kbd:`P`"
@@ -14083,16 +14064,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "Bucket Fill"
-msgstr ""
+msgstr "وعاء التعبئة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "``tile_map_editor/bucket_fill``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
-#, fuzzy
 msgid "Transpose"
-msgstr "التحوّل"
+msgstr "المصفوفة المنقولة Transpose"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "``tile_map_editor/transpose``"
@@ -14100,7 +14080,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "Flip Horizontally"
-msgstr ""
+msgstr "القلب أفقياً"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid ":kbd:`X`"
@@ -14112,7 +14092,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "Flip Vertically"
-msgstr ""
+msgstr "القلب عموديًا"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid ":kbd:`Z`"
@@ -14149,7 +14129,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
-msgstr ""
+msgstr "حدد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
@@ -14173,7 +14153,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "Erase Selection"
-msgstr ""
+msgstr "إزالة عملية الاختيار"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "``tile_map_editor/erase_selection``"
@@ -14186,7 +14166,7 @@ msgstr "المُعدل"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "Next Coordinate"
-msgstr ""
+msgstr "الإحداثيات التالية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "``tileset_editor/next_shape``"
@@ -14206,7 +14186,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid "Region Mode"
-msgstr ""
+msgstr "وضع الأقليم Region"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
@@ -14217,9 +14197,8 @@ msgid "``tileset_editor/editmode_region``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
-#, fuzzy
 msgid "Collision Mode"
-msgstr "أشكال إصطدام ظاهرة"
+msgstr "وضع التصادم"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid ":kbd:`2`"
@@ -14231,7 +14210,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid "Occlusion Mode"
-msgstr ""
+msgstr "وضع الإطباق Occlusion"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid ":kbd:`3`"
@@ -14242,9 +14221,8 @@ msgid "``tileset_editor/editmode_occlusion``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
-#, fuzzy
 msgid "Navigation Mode"
-msgstr "الإنتقال المرئي"
+msgstr "وضع التصفح"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
@@ -14256,7 +14234,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid "Bitmask Mode"
-msgstr ""
+msgstr "وضع Bitmask"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
@@ -14268,7 +14246,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "Priority Mode"
-msgstr ""
+msgstr "وضع التفاضل Priority"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid ":kbd:`6`"
@@ -14280,7 +14258,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid "Icon Mode"
-msgstr ""
+msgstr "وضع الأيقونة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid ":kbd:`7`"
@@ -14292,7 +14270,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid "Z Index Mode"
-msgstr ""
+msgstr "وضع Z Index"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid ":kbd:`8`"
@@ -18112,7 +18090,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
-msgstr ""
+msgstr "بادئة"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
@@ -18687,7 +18665,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr "الفعل"
+msgstr "إجراء"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -50749,7 +50727,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Locale"
-msgstr ""
+msgstr "محلي"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Language and Variant"
@@ -56807,7 +56785,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:299
 msgid "Class"
-msgstr "الصنف"
+msgstr "الصف"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:299
 msgid "Operator"
@@ -80177,7 +80155,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:257
 msgid "Resources:"
-msgstr ""
+msgstr "الموارد:"
 
 #: ../../docs/development/cpp/object_class.rst:259
 msgid ""
@@ -85218,7 +85196,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:286
 msgid "Localization"
-msgstr ""
+msgstr "توطين"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:288
 msgid ""

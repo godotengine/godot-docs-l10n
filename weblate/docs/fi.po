@@ -7,6 +7,7 @@
 # ekeimaja <ekeimaja@gmail.com>, 2018.
 # Elias Vähänen <eliasvaha@gmail.com>, 2019.
 # Joonas Muuttoranta <joonas.muuttoranta@live.fi>, 2018.
+# Matti Niskanen <matti.t.niskanen@gmail.com>, 2020.
 # spiderfly <spiderfly@protonmail.com>, 2018.
 # Tapani Niemi <tapani.niemi@kapsi.fi>, 2018-2020.
 # TheAdvis <juhamk91@gmail.com>, 2020.
@@ -20,7 +21,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-04-27 12:19+0200\n"
-"PO-Revision-Date: 2020-02-02 08:54+0000\n"
+"PO-Revision-Date: 2020-04-30 17:51+0000\n"
 "Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
@@ -29,7 +30,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11-dev\n"
+"X-Generator: Weblate 4.0.2\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -46,7 +47,6 @@ msgstr ""
 "listan."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.2 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -90,7 +90,6 @@ msgstr ""
 "mutta sen käyttö sopii viimeisimmän vakaan Godot-julkaisun opetteluun."
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -858,6 +857,11 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
+"Alkuun pelimoottori käytti `Lua <https://www.lua.org>` skripti kieltä. Lua "
+"on nopea, mutta liitoksien luominen objekti orientoidussa kielessä (fallback "
+"menetelmällä) oli hankalaa ja hidasta ja tarvitsi todella paljon koodia. "
+"Joidenkin kokeiden `Python <https://www.python.org>` kanssa, se osoittautui "
+"myös hankalaksi toteuttaa."
 
 #: ../../docs/about/faq.rst:135
 msgid ""
@@ -865,13 +869,12 @@ msgid ""
 msgstr "Tärkeimmät syyt oman skriptikielen luomiselle Godotiin olivat:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
 "Useimmissa skriptivirtuaalikoneissa ei ole hyvää säikeistystukea ja Godot "
-"käyttää säikeitä (Lua, Python, Squirrel, JS, AS, jne.)"
+"käyttää säikeitä (Lua, Python, Squirrel, JS, AS, jne.)."
 
 #: ../../docs/about/faq.rst:139
 #, fuzzy
@@ -961,6 +964,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX on tuettu Open Asset Import libraryn kautta. Huomiotavaa, FBX on "
+"yksityisomistuksellinen joten suosittelemme käyttämään muita tuettuja "
+"formaatteja, jos se sopii sinun työnkulkuun."
 
 #: ../../docs/about/faq.rst:167
 msgid ""
@@ -1346,7 +1352,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:307
 msgid "Why does Godot not use exceptions?"
-msgstr ""
+msgstr "Miksei Godot käytä poikkeuksia?"
 
 #: ../../docs/about/faq.rst:309
 msgid ""
@@ -1355,16 +1361,22 @@ msgid ""
 "script), but then it will try to recover as gracefully as possible and keep "
 "going."
 msgstr ""
+"Me uskomme että pelien ei pidä kaatua, vaikka olisi mikä. Jos odottamaton "
+"tilanne tapahtuu, Godot tulostaa virheen (mikä voidaan seurata jopa "
+"skriptiin asti), mutta sen jälkeen yrittää toipua mahdollisimman sievästi ja "
+"jatkaa toimintaa."
 
 #: ../../docs/about/faq.rst:314
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
+"Lisäksi, poikkeukset lisäävät huomattavasti binäärin kokoa suoritettavassa "
+"ohjelmassa."
 
 #: ../../docs/about/faq.rst:318
 msgid "Why does Godot not enforce RTTI?"
-msgstr ""
+msgstr "Miksi Godot ei pakota RTTItä?"
 
 #: ../../docs/about/faq.rst:320
 msgid ""
@@ -1543,7 +1555,7 @@ msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:63 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr ""
+msgstr "Virtuaalitodellisuus, VR"
 
 #: ../../docs/about/docs_changelog.rst:65
 #, fuzzy
@@ -1591,7 +1603,7 @@ msgstr "Sisällön luominen"
 
 #: ../../docs/about/docs_changelog.rst:88
 msgid "Procedural geometry series:"
-msgstr ""
+msgstr "Proseduraalisen geometrian sarja:"
 
 #: ../../docs/about/docs_changelog.rst:84
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
@@ -1629,7 +1641,7 @@ msgstr ":ref:`doc_using_servers`"
 #: ../../docs/about/docs_changelog.rst:97
 #: ../../docs/tutorials/legal/index.rst:2
 msgid "Legal"
-msgstr ""
+msgstr "Laillinen"
 
 #: ../../docs/about/docs_changelog.rst:99
 msgid ":ref:`doc_complying_with_licenses`"
@@ -1763,7 +1775,7 @@ msgstr ":ref:`doc_animation_tree`"
 
 #: ../../docs/about/docs_changelog.rst:157 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
-msgstr ""
+msgstr "Graafinen käyttöliittymä"
 
 #: ../../docs/about/docs_changelog.rst:159
 msgid ":ref:`doc_gui_containers`"
@@ -1874,7 +1886,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 #: ../../docs/development/compiling/compiling_for_uwp.rst:33
 msgid "Compiling"
-msgstr ""
+msgstr "Kääntää"
 
 #: ../../docs/about/docs_changelog.rst:214
 msgid ":ref:`doc_optimizing_for_size`"
@@ -1887,7 +1899,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:218
 #: ../../docs/development/cpp/index.rst:2
 msgid "Engine development"
-msgstr ""
+msgstr "Pelimoottorin kehitys"
 
 #: ../../docs/about/docs_changelog.rst:220
 msgid ":ref:`doc_binding_to_external_libraries`"
@@ -2159,18 +2171,23 @@ msgid ""
 "signal in the engine while you are writing a script, press the \"Search Help"
 "\" button at the top right of the Script workspace."
 msgstr ""
+"Etsiäksesi lisätietoja luokasta, metodista, ominaisuudesta, vakiosta tai "
+"signaalista pelimoottorissa paina \"Search help\" painiketta oikeassa "
+"yläkulmassa skripti työtilaa."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid ""
 "A new window will pop up. Search for the item that you want to find "
 "information about."
-msgstr ""
+msgstr "Uusi ikkuna pulpahtaa. Etsi kohdetta josta haluat saada lisätietoa."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
 msgid ""
 "Click on the item you are looking for and press open. The documentation for "
 "the item will be displayed in the script workspace."
 msgstr ""
+"Napsauta kohdetta jota etsit ja paina avaa. Dokumentaatio kohteelle näkyy "
+"skripti työtilassa."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
 #, fuzzy
@@ -2550,6 +2567,9 @@ msgid ""
 "one of your monitors, go to **Project → Project Settings → Display → "
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
+"Jos tämä ei välittömästi toimi ja sinulla on hiDPI näyttö vähintään yhdessä "
+"sinun monitoreista, mene **Project → Project Settings → Display → Window** "
+"ja aktivoi **Allow Hidpi** **Dpi**n alta."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
 msgid "Configuring the project"
@@ -2794,6 +2814,8 @@ msgid ""
 "Then, expand the material by clicking on it, and set the ``Bounce`` property "
 "to ``1``."
 msgstr ""
+"sitten laajenna materiaali napsauttamalla sitä ja aseta ``Bounce`` "
+"ominaisuus ``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:104
 msgid ""
@@ -3994,9 +4016,8 @@ msgstr "Vain GDScript luo globaaleja muuttujia kullekin nimetylle skriptille."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:1
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:1
-#, fuzzy
 msgid "Signal"
-msgstr "Signaalit"
+msgstr "Signaali"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1268
@@ -4072,6 +4093,10 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
+"Spriten tekstuurille voit käyttää Godotin ikonia, tai mitä tahansa muuta "
+"kuvatiedostoa. Tee niin valitsemalla ``Load`` spriten tekstuuri attribuutin "
+"pudotusvalikosta. Lisää skripti root solmuun, mutta älä lisää siihen vielä "
+"mitään koodia."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:37
 msgid "Your scene tree should look like this:"
@@ -4412,6 +4437,8 @@ msgid ""
 "Godot will display a warning icon next to the node in the scene tree. You "
 "can ignore it for now. We will address it later."
 msgstr ""
+"Godot näyttää varoitus kuvakkeen solmun vieressä skenepuussa. Voit sivuuttaa "
+"sen nyt. Me huomioimme sen myöhemmin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:73
 msgid ""
@@ -4751,6 +4778,10 @@ msgid ""
 "this value ensures that your movement will remain consistent even if the "
 "frame rate changes."
 msgstr ""
+"`delta`parametri `_process()` funktiossa viittaa *ruudun (animaatiossa) "
+"pituuteen* -aikaan joka kului edellisen ruudun suorittamiseen. Tätä arvoa "
+"käyttämällä varmistutaan että liike on säännönmukainen vaikka ruudun "
+"päivitysnopeus muuttuisi."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:340
 msgid ""
@@ -4885,6 +4916,9 @@ msgid ""
 "need to disable the player's collision so that we don't trigger the ``hit`` "
 "signal more than once."
 msgstr ""
+"Joka kerta kun vihollinen osuu pelaajaan, signaali välitetään. Meidän täytyy "
+"poistaa käytöstä pelaajan törmäys ettei se laukaise enää ``hit`` signaalia "
+"enempää kuin kerran."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:487
 msgid ""
@@ -4892,6 +4926,10 @@ msgid ""
 "middle of the engine's collision processing. Using ``set_deferred()`` allows "
 "us to have Godot wait to disable the shape until it's safe to do so."
 msgstr ""
+"Poistamalla käytöstä alueen törmäys muodon voi aiheuttaa virheen mikäli se "
+"tapahtuu kesken pelimoottorin törmäyksen prosessoinnin. Käyttämällä "
+"``set_deferred()`` funktiota sallii Godotin odottaa käytöstä poistoa, kunnes "
+"se on turvallista."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:492
 msgid ""
@@ -5529,6 +5567,10 @@ msgid ""
 "useful to add delays such as in the above code, where we want to wait some "
 "time before showing the \"Start\" button."
 msgstr ""
+"Kun sinun täytyy pysäyttää koodi hetkeksi vaihtoehto ajastimelle on käyttää "
+"skenepuun ``create_timer()`` funktiota.  Tämä voi olla todella hyödyllistä "
+"luomaan viiveitä kuten ylläolevassa koodissa, missä me haluamme odottaa "
+"hetken ennenkuin näytämme \"Start\" painikkeen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1052
 msgid "This function is called by ``Main`` whenever the score changes."
@@ -5607,7 +5649,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1138
 msgid "Removing old creeps"
-msgstr ""
+msgstr "Vanhojen creepsien poisto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1140
 msgid ""
@@ -5615,6 +5657,9 @@ msgid ""
 "the previous game are still on screen. It would be better if they all "
 "disappeared at the start of a new game."
 msgstr ""
+"Jos pelaat \"Game Over\":iin asti ja aloitat uuden pelin. Vanhat creepsit "
+"ovat yhä edelleen ruudulla. Olisi parasta jos ne kaikki katoaisivat uuden "
+"pelin aloituksessa."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1144
 msgid ""
@@ -5624,18 +5669,26 @@ msgid ""
 "``Mob`` nodes in the ``Main`` scene tree until we run the game. Instead "
 "we'll use code."
 msgstr ""
+"Me käytämme ``start_game``signaalia joka jo välitetään ``HUD`` solmun "
+"toimesta poistaaksemme jäljellä olevat creepsit. Me emme voi käyttää "
+"editoria signaalin yhdistämiseen, koska ``Main`` skenepuussa ei ole ``Mob`` "
+"solmuja ennenkuin suoritamme pelin. Sen sijaan käytämme koodia."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid ""
 "Start by adding a new function to ``Mob.gd``. ``queue_free()`` will delete "
 "the current node at the end of the current frame."
 msgstr ""
+"Aloita lisäämällä uusi funktio ``Mob.gd`` tiedostoon. ``queue_free()`` "
+"poistaa kyseisen solmun seuraavan animaatioruudun aikana."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1165
 msgid ""
 "Then in ``Main.gd`` add a new line inside the ``_on_MobTimer_timeout()`` "
 "function, at the end."
 msgstr ""
+"Sitten ``Main.gd`` tiedostossa lisää uusi rivi ``_on_MobTimer_timeout()`` "
+"funktion loppuun."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1177
 msgid ""
@@ -5643,6 +5696,9 @@ msgid ""
 "respond to any ``start_game`` signal emitted by the ``HUD`` node by running "
 "its ``_on_start_game()`` function."
 msgstr ""
+"Tämä rivi kertoo Mob solmuille (viitattuna ``mob`` muuttujalla) vastata "
+"mihin tahansa ``start_game`` signaaliin mitä ``HUD`` solmu välittää itse "
+"suorittaessaan omaa ``_on_start_game()`` funktiota."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1182
 msgid "Finishing up"
@@ -5729,7 +5785,7 @@ msgstr "Lopuksi, lisää ``$DeathSound.play()`` ``game_over()`` funktioon."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1220
 msgid "Keyboard shortcut"
-msgstr ""
+msgstr "Näppäimistön pikanäppäin"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1222
 msgid ""
@@ -5737,6 +5793,9 @@ msgid ""
 "we could also start the game by pressing a key on the keyboard. One way to "
 "do this is using the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
+"Sillä peliä pelataan näppäin kontrolleilla, olisi käytännöllistä jos pelin "
+"voisi aloittaa painamalla näppäintä näppäimistöltä. Yksi tapa tehdä tämä on "
+"käyttää \"Shortcut\" ominaisuutta ``Button`` solmusta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1226
 msgid ""
@@ -5747,12 +5806,19 @@ msgid ""
 "*Action* property, type the name ``ui_select``. This is the default input "
 "event associated with the spacebar."
 msgstr ""
+"``HUD`` solmussa, valitse ``StartButton`` ja löydä sen *Shortcut* ominaisuus "
+"inspectorissa. Valitse \"New Shortcut\" ja napsauta \"Shortcut\" kohtaa. "
+"Toinen *Shortcut* ominaisuus ilmestyy . Valitse \"New InputEventAction\" ja "
+"napsauta uusi \"InputEvent\". Lopuksi, *Action* ominaisuudessa, kirjoita "
+"nimi ``ui_select``. Tämä on vakio syöte tapahtuma liitettynä välilyöntiin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1234
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Space` to start the game."
 msgstr ""
+"Nyt kun aloita näppän ilmestyy voit painaa joko sitä tai :kbd:`Space` "
+"aloittaaksesi pelin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1238
 msgid "Project files"
@@ -5768,7 +5834,7 @@ msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1242
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
+msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:257
@@ -11797,9 +11863,8 @@ msgid "Editor setting"
 msgstr "Editorin ikonit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-#, fuzzy
 msgid "Open 2D Editor"
-msgstr "Editori"
+msgstr "Avaa 2D-editori"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
@@ -11814,9 +11879,8 @@ msgid "``editor/editor_2d``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-#, fuzzy
 msgid "Open 3D Editor"
-msgstr "Editori"
+msgstr "Avaa 3D-editori"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -11832,7 +11896,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr ""
+msgstr "Avaa skriptieditori"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
@@ -11850,7 +11914,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr ""
+msgstr "Etsi ohjeesta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
@@ -11865,9 +11929,8 @@ msgid "``editor/editor_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
-#, fuzzy
 msgid "Distraction Free Mode"
-msgstr "Animaatiotila"
+msgstr "Häiriötön tila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
@@ -11883,7 +11946,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
-msgstr ""
+msgstr "Seuraava välilehti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
@@ -11899,7 +11962,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
-msgstr ""
+msgstr "Edellinen välilehti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -11930,9 +11993,8 @@ msgid "``editor/filter_files``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
-#, fuzzy
 msgid "Open Scene"
-msgstr "Avoin lähdekoodi"
+msgstr "Avaa skene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -11947,9 +12009,8 @@ msgid "``editor/open_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
-#, fuzzy
 msgid "Close Scene"
-msgstr "Player-skene"
+msgstr "Sulje skene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -11965,7 +12026,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "Avaa uudelleen suljettu skene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
@@ -11982,9 +12043,8 @@ msgid "``editor/reopen_closed_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
-#, fuzzy
 msgid "Save Scene"
-msgstr "Player-skene"
+msgstr "Tallenna skene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -12017,7 +12077,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
-msgstr ""
+msgstr "Tallenna kaikki skenet"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
@@ -12080,7 +12140,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "Undo"
-msgstr ""
+msgstr "Peru"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -12099,7 +12159,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "Redo"
-msgstr ""
+msgstr "Tee uudelleen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -12115,7 +12175,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
-msgstr ""
+msgstr "Lopeta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
@@ -12130,9 +12190,8 @@ msgid "``editor/file_quit``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
-#, fuzzy
 msgid "Quit to Project List"
-msgstr "Projektin järjestely"
+msgstr "Poistu projektiluetteloon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -12148,7 +12207,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Ota kuvakaappaus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
@@ -12164,7 +12223,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Siirry koko näytön tilaan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -12180,7 +12239,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
-msgstr ""
+msgstr "Pelaa"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
@@ -12197,9 +12256,8 @@ msgid "``editor/play``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
-#, fuzzy
 msgid "Pause Scene"
-msgstr "Player-skene"
+msgstr "Keskeytä skene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
@@ -12215,7 +12273,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "Stop"
-msgstr ""
+msgstr "Pysäytä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
@@ -12231,9 +12289,8 @@ msgid "``editor/stop``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
-#, fuzzy
 msgid "Play Scene"
-msgstr "Player-skene"
+msgstr "Pelaa skeneä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -12249,9 +12306,8 @@ msgid "``editor/play_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
-#, fuzzy
 msgid "Play Custom Scene"
-msgstr "Player-skene"
+msgstr "Valitse ja käynnistä skene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -12269,7 +12325,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "Laajenna alapaneeli"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -12286,7 +12342,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "Zoom In"
-msgstr ""
+msgstr "Lähennä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -12305,7 +12361,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "Zoom Out"
-msgstr ""
+msgstr "Loitonna"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -12323,7 +12379,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "Zoom Reset"
-msgstr ""
+msgstr "Palauta oletuslähennystaso"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
@@ -12341,7 +12397,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid "Pan View"
-msgstr ""
+msgstr "Panorointinäkymä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid ":kbd:`Space`"
@@ -12354,7 +12410,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid "Select Mode"
-msgstr ""
+msgstr "Valintatila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
@@ -12369,7 +12425,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 msgid "Move Mode"
-msgstr ""
+msgstr "Siirtotila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
@@ -12385,7 +12441,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid "Rotate Mode"
-msgstr ""
+msgstr "Kiertotila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
@@ -12400,7 +12456,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid "Scale Mode"
-msgstr ""
+msgstr "Skaalaustila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
@@ -12414,7 +12470,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 msgid "Ruler Mode"
-msgstr ""
+msgstr "Viivaintila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
@@ -12427,7 +12483,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "Use Smart Snap"
-msgstr ""
+msgstr "Käytä älykästä tarttumista"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
@@ -12439,7 +12495,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid "Use Grid Snap"
-msgstr ""
+msgstr "Tartu ruudukkoon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid ":kbd:`Shift + G`"
@@ -12451,7 +12507,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "Multiply grid step by 2"
-msgstr ""
+msgstr "Kerro ruudukon välistys kahdella"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid ":kbd:`Num *`"
@@ -12463,7 +12519,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "Divide grid step by 2"
-msgstr ""
+msgstr "Jaa ruudukon välistys kahdella"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid ":kbd:`Num /`"
@@ -12475,7 +12531,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 msgid "Always Show Grid"
-msgstr ""
+msgstr "Näytä aina ruudukko"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
@@ -12488,7 +12544,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid "Show Helpers"
-msgstr ""
+msgstr "Näytä avustimet"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid ":kbd:`H`"
@@ -12500,7 +12556,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "Show Guides"
-msgstr ""
+msgstr "Näytä apuviivat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
@@ -12512,9 +12568,8 @@ msgid "``canvas_item_editor/show_guides``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
-#, fuzzy
 msgid "Center Selection"
-msgstr "Päällekkäisyyden tunnistaminen"
+msgstr "Keskitä valintaan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
@@ -12526,9 +12581,8 @@ msgid "``canvas_item_editor/center_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
-#, fuzzy
 msgid "Frame Selection"
-msgstr "Päällekkäisyyden tunnistaminen"
+msgstr "Rajaa valintaan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
@@ -12541,7 +12595,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "Preview Canvas Scale"
-msgstr ""
+msgstr "Esikatsele kankaan skaalausta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid ":kbd:`Ctrl + Shift + P`"
@@ -12557,7 +12611,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
-msgstr ""
+msgstr "Lisää avainruutu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -12569,7 +12623,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "Insert Key (Existing Tracks)"
-msgstr ""
+msgstr "Lisää avainruutu (olemassa olevat raidat)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid ":kbd:`Ctrl + Ins`"
@@ -12604,7 +12658,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "Clear Pose"
-msgstr ""
+msgstr "Tyhjennä asento"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid ":kbd:`Shift + K`"
@@ -12620,7 +12674,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "Toggle Freelook"
-msgstr ""
+msgstr "Kytke liikkuminen päälle/pois"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "``spatial_editor/freelook_toggle``"
@@ -12628,7 +12682,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 msgid "Freelook Left"
-msgstr ""
+msgstr "Liiku vasemmalle"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
@@ -12641,7 +12695,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid "Freelook Right"
-msgstr ""
+msgstr "Liiku oikealle"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid ":kbd:`D`"
@@ -12653,7 +12707,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "Freelook Forward"
-msgstr ""
+msgstr "Liiku eteenpäin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "``spatial_editor/freelook_forward``"
@@ -12661,7 +12715,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "Freelook Backwards"
-msgstr ""
+msgstr "Liiku taaksepäin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "``spatial_editor/freelook_backwards``"
@@ -12669,7 +12723,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "Freelook Up"
-msgstr ""
+msgstr "Liiku ylös"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "``spatial_editor/freelook_up``"
@@ -12677,7 +12731,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "Freelook Down"
-msgstr ""
+msgstr "Liiku alas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "``spatial_editor/freelook_down``"
@@ -12685,7 +12739,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid "Freelook Speed Modifier"
-msgstr ""
+msgstr "Liikkumisen nopeussäädin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid ":kbd:`Shift`"
@@ -12697,7 +12751,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid "Freelook Slow Modifier"
-msgstr ""
+msgstr "Liikkumisen hitauskerroin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid ":kbd:`Alt`"
@@ -12725,7 +12779,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 msgid "Use Local Space"
-msgstr ""
+msgstr "Käytä paikallisavaruutta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
@@ -12738,7 +12792,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "Use Snap"
-msgstr ""
+msgstr "Käytä tarttumista"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
@@ -12746,7 +12800,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "Snap Object to Floor"
-msgstr ""
+msgstr "Kohdista objekti lattiaan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
@@ -12759,7 +12813,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "Top View"
-msgstr ""
+msgstr "Ylänäkymä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid ":kbd:`Num 7`"
@@ -12771,7 +12825,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "Bottom View"
-msgstr ""
+msgstr "Alanäkymä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid ":kbd:`Alt + Num 7`"
@@ -12783,7 +12837,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "Front View"
-msgstr ""
+msgstr "Etunäkymä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid ":kbd:`Num 1`"
@@ -12795,7 +12849,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "Rear View"
-msgstr ""
+msgstr "Takanäkymä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid ":kbd:`Alt + Num 1`"
@@ -12807,7 +12861,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "Right View"
-msgstr ""
+msgstr "Oikea näkymä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid ":kbd:`Num 3`"
@@ -12819,7 +12873,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "Left View"
-msgstr ""
+msgstr "Vasen näkymä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid ":kbd:`Alt + Num 3`"
@@ -12831,7 +12885,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "Switch Perspective/Orthogonal View"
-msgstr ""
+msgstr "Vaihda perspektiiviseen/ortogonaaliseen näkymään"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid ":kbd:`Num 5`"
@@ -12842,9 +12896,8 @@ msgid "``spatial_editor/switch_perspective_orthogonal``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
-#, fuzzy
 msgid "Insert Animation Key"
-msgstr "Animaatiotila"
+msgstr "Lisää animaatioavain"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid ":kbd:`K`"
@@ -12856,7 +12909,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid "Focus Origin"
-msgstr ""
+msgstr "Kohdista origoon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid ":kbd:`O`"
@@ -12868,7 +12921,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "Focus Selection"
-msgstr ""
+msgstr "Kohdista valintaan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "``spatial_editor/focus_selection``"
@@ -12876,7 +12929,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid "Align Transform with View"
-msgstr ""
+msgstr "Kohdista muunnos näkymään"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid ":kbd:`Ctrl + Alt + M`"
@@ -12892,7 +12945,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid "Align Rotation with View"
-msgstr ""
+msgstr "Kohdista kierto näkymään"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
@@ -12909,7 +12962,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "1 Viewport"
-msgstr ""
+msgstr "1 näyttöruutu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Ctrl + 1`"
@@ -12925,7 +12978,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid "2 Viewports"
-msgstr ""
+msgstr "2 näyttöruutua"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Ctrl + 2`"
@@ -12941,7 +12994,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid "2 Viewports (Alt)"
-msgstr ""
+msgstr "2 näyttöruutua (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Ctrl + Alt + 2`"
@@ -12957,7 +13010,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid "3 Viewports"
-msgstr ""
+msgstr "3 näyttöruutua"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Ctrl + 3`"
@@ -12973,7 +13026,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid "3 Viewports (Alt)"
-msgstr ""
+msgstr "3 Näyttöruutua (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Ctrl + Alt + 3`"
@@ -12989,7 +13042,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "4 Viewports"
-msgstr ""
+msgstr "4 Näyttöruutua"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Ctrl + 4`"
@@ -13010,7 +13063,7 @@ msgstr "Editori"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "Cut"
-msgstr ""
+msgstr "Leikkaa"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
@@ -13030,7 +13083,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "Kopioi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -13056,7 +13109,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "Paste"
-msgstr ""
+msgstr "Liitä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
@@ -13074,7 +13127,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "Select All"
-msgstr ""
+msgstr "Valitse kaikki"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
@@ -13116,7 +13169,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid "Find Next"
-msgstr ""
+msgstr "Etsi seuraava"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
@@ -13130,7 +13183,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid "Find Previous"
-msgstr ""
+msgstr "Etsi edellinen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
@@ -13147,9 +13200,8 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
-#, fuzzy
 msgid "Find in Files"
-msgstr "Android-liitännäiset"
+msgstr "Etsi tiedostoista"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
@@ -13167,7 +13219,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "Korvaa"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -13215,7 +13267,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid "Move Up"
-msgstr ""
+msgstr "Siirrä ylös"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
@@ -13230,7 +13282,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid "Move Down"
-msgstr ""
+msgstr "Siirrä alas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid ":kbd:`Alt + Down Arrow`"
@@ -13242,7 +13294,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "Delete Line"
-msgstr ""
+msgstr "Poista rivi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
@@ -13260,7 +13312,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "Toggle Comment"
-msgstr ""
+msgstr "Lisää tai poista kommentit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Ctrl + K`"
@@ -13276,7 +13328,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "Fold/Unfold Line"
-msgstr ""
+msgstr "Laskosta tai avaa rivi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
@@ -13289,7 +13341,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid "Clone Down"
-msgstr ""
+msgstr "Kloonaa alas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
@@ -13309,7 +13361,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid "Complete Symbol"
-msgstr ""
+msgstr "Täydennä symboli"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid ":kbd:`Ctrl + Space`"
@@ -13320,9 +13372,8 @@ msgid "``script_text_editor/complete_symbol``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
-#, fuzzy
 msgid "Evaluate Selection"
-msgstr "Päällekkäisyyden tunnistaminen"
+msgstr "Laske valinnan tulos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid ":kbd:`Ctrl + Shift + E`"
@@ -13338,7 +13389,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid "Trim Trailing Whitespace"
-msgstr ""
+msgstr "Poista välilyönnit lopusta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid ":kbd:`Ctrl + Alt + T`"
@@ -13354,7 +13405,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "Uppercase"
-msgstr ""
+msgstr "Isot kirjaimet"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid ":kbd:`Shift + F4`"
@@ -13366,7 +13417,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "Lowercase"
-msgstr ""
+msgstr "Pienet kirjaimet"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid ":kbd:`Shift + F5`"
@@ -13378,7 +13429,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "Capitalize"
-msgstr ""
+msgstr "Isot alkukirjaimet"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid ":kbd:`Shift + F6`"
@@ -13389,9 +13440,8 @@ msgid "``script_text_editor/capitalize``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
-#, fuzzy
 msgid "Convert Indent to Spaces"
-msgstr "Sisältötesti"
+msgstr "Muuta sisennys välilyönneiksi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Ctrl + Shift + Y`"
@@ -13407,7 +13457,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "Convert Indent to Tabs"
-msgstr ""
+msgstr "Muuta sisennys sarkaimiksi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Ctrl + Shift + I`"
@@ -13423,7 +13473,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "Auto Indent"
-msgstr ""
+msgstr "Automaattinen sisennys"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Ctrl + I`"
@@ -13439,7 +13489,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "Toggle Bookmark"
-msgstr ""
+msgstr "Aseta kirjanmerkki"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Ctrl + Alt + B`"
@@ -13455,7 +13505,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid "Go to Next Bookmark"
-msgstr ""
+msgstr "Mene seuraavaan kirjanmerkkiin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid ":kbd:`Ctrl + B`"
@@ -13467,16 +13517,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "Go to Previous Bookmark"
-msgstr ""
+msgstr "Mene edelliseen kirjanmerkkiin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "``script_text_editor/goto_previous_bookmark``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
-#, fuzzy
 msgid "Go to Function"
-msgstr "Funktiot"
+msgstr "Mene funktioon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
@@ -13488,7 +13537,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr ""
+msgstr "Mene riville"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -13505,7 +13554,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid "Toggle Breakpoint"
-msgstr ""
+msgstr "Aseta tai poista keskeytyskohta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
@@ -13518,7 +13567,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "Remove All Breakpoints"
-msgstr ""
+msgstr "Poista kaikki keskeytyskohdat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
@@ -13534,7 +13583,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid "Go to Next Breakpoint"
-msgstr ""
+msgstr "Mene seuraavaan keskeytyskohtaan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid ":kbd:`Ctrl + .`"
@@ -13546,7 +13595,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "Go to Previous Breakpoint"
-msgstr ""
+msgstr "Mene edelliseen keskeytyskohtaan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Ctrl + ,`"
@@ -13562,7 +13611,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "Contextual Help"
-msgstr ""
+msgstr "Asiayhteydellinen ohje"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + F1`"
@@ -13577,9 +13626,8 @@ msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
-#, fuzzy
 msgid "Script Editor"
-msgstr "GDScript tyyppi"
+msgstr "Skriptieditori"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -13648,7 +13696,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "Reopen Closed Script"
-msgstr ""
+msgstr "Avaa uudelleen suljettu skripti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "``script_editor/reopen_closed_script``"
@@ -13656,7 +13704,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
-msgstr ""
+msgstr "Tallenna"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
@@ -13672,7 +13720,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "Save All"
-msgstr ""
+msgstr "Tallenna kaikki"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "``script_editor/save_all``"
@@ -13680,7 +13728,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "Soft Reload Script"
-msgstr ""
+msgstr "Lataa skripti uudelleen kevyesti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "``script_editor/reload_script_soft``"
@@ -13688,7 +13736,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 msgid "History Previous"
-msgstr ""
+msgstr "Edellinen historiassa"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
@@ -13701,7 +13749,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 msgid "History Next"
-msgstr ""
+msgstr "Seuraava historiassa"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
@@ -13714,7 +13762,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
-msgstr ""
+msgstr "Sulje"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
@@ -13747,7 +13795,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
-msgstr ""
+msgstr "Näytä/piilota skriptipaneeli"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
@@ -13771,7 +13819,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr ""
+msgstr "Palauta oletuslähennystaso"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -13784,34 +13832,31 @@ msgstr "VisualScript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
-msgstr ""
+msgstr "Etsi solmun tyyppi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "``visual_script_editor/find_node_type``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
-#, fuzzy
 msgid "Copy Nodes"
-msgstr "Solmut"
+msgstr "Kopioi solmut"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
-#, fuzzy
 msgid "Cut Nodes"
-msgstr "Solmut"
+msgstr "Leikkaa solmut"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "``visual_script_editor/cut_nodes``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
-#, fuzzy
 msgid "Paste Nodes"
-msgstr "Partikkelisävyttimet"
+msgstr "Liitä solmut"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "``visual_script_editor/paste_nodes``"
@@ -13819,7 +13864,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "Delete Selected"
-msgstr ""
+msgstr "Poista valitut"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -13844,9 +13889,8 @@ msgid "``visual_script_editor/delete_selected``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
-#, fuzzy
 msgid "Make Function"
-msgstr "Matematiikkafunktiot"
+msgstr "Tee funktio"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
@@ -13857,9 +13901,8 @@ msgid "``visual_script_editor/create_function``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
-#, fuzzy
 msgid "Edit Member"
-msgstr "Jäsenet"
+msgstr "Muokkaa jäsentä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid ":kbd:`Ctrl + E`"
@@ -13875,7 +13918,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "Refresh Graph"
-msgstr ""
+msgstr "Päivitä kaaviokuva"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "``visual_script_editor/refresh_nodes``"
@@ -13893,7 +13936,7 @@ msgstr "Editori"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid "Copy Selection"
-msgstr ""
+msgstr "Kopioi valinta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 msgid "``editor/copy_output``"
@@ -13901,7 +13944,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "Clear Output"
-msgstr ""
+msgstr "Tyhjennä tuloste"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "``editor/clear_output``"
@@ -13914,7 +13957,7 @@ msgstr "Debuggeri"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "Step Into"
-msgstr ""
+msgstr "Siirry sisään"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid ":kbd:`F11`"
@@ -13926,7 +13969,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "Step Over"
-msgstr ""
+msgstr "Siirry seuraavaan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid ":kbd:`F10`"
@@ -13937,9 +13980,8 @@ msgid "``debugger/step_over``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
-#, fuzzy
 msgid "Continue"
-msgstr "Container-tyypit"
+msgstr "Jatka"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid ":kbd:`F12`"
@@ -13956,7 +13998,7 @@ msgstr "Tiedoston kuvaus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "Mene taaksepäin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -13964,7 +14006,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr ""
+msgstr "Mene eteenpäin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
@@ -13972,7 +14014,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr ""
+msgstr "Mene ylös"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
@@ -13980,7 +14022,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
-msgstr ""
+msgstr "Päivitä"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
@@ -13988,7 +14030,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "Näytä piilotiedostot"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -14004,7 +14046,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "Aseta suosikiksi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -14012,7 +14054,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr ""
+msgstr "Aseta tila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -14023,9 +14065,8 @@ msgid "``file_dialog/toggle_mode``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
-#, fuzzy
 msgid "Create Folder"
-msgstr "Solmujen luonti"
+msgstr "Luo kansio"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -14043,16 +14084,15 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "Delete"
-msgstr ""
+msgstr "Poista"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
-#, fuzzy
 msgid "Focus Path"
-msgstr "Resurssipolku"
+msgstr "Kohdista polkuun"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
@@ -14067,7 +14107,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
-msgstr ""
+msgstr "Siirrä suosikkia ylös"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
@@ -14085,7 +14125,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
-msgstr ""
+msgstr "Siirrä suosikkia alas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
@@ -14106,9 +14146,8 @@ msgid "FileSystem Dock"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
-#, fuzzy
 msgid "Copy Path"
-msgstr "Polku"
+msgstr "Kopioi polku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -14117,7 +14156,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "Duplicate"
-msgstr ""
+msgstr "Monista"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -14133,7 +14172,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "Add Child Node"
-msgstr ""
+msgstr "Lisää alisolmu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "``scene_tree/add_child_node``"
@@ -14141,7 +14180,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "Batch Rename"
-msgstr ""
+msgstr "Niputettu uudelleennimeäminen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Ctrl + F2`"
@@ -14157,7 +14196,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "Copy Node Path"
-msgstr ""
+msgstr "Kopioi solmun polku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "``scene_tree/copy_node_path``"
@@ -14198,7 +14237,7 @@ msgstr "Animaatiopuu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "Kahdenna valinta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -14206,7 +14245,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "Kahdenna käänteisesti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -14221,9 +14260,8 @@ msgid "``animation_editor/duplicate_selection_transposed``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
-#, fuzzy
 msgid "Delete Selection"
-msgstr "Päällekkäisyyden tunnistaminen"
+msgstr "Poista valitut"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -14231,7 +14269,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "Mene seuraavaan askeleeseen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -14247,7 +14285,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "Mene edelliseen askeleeseen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -14268,7 +14306,7 @@ msgstr "TileMap-solmu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "Find Tile"
-msgstr ""
+msgstr "Etsi laatta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "``tile_map_editor/find_tile``"
@@ -14276,7 +14314,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid "Pick Tile"
-msgstr ""
+msgstr "Poimi laatta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid ":kbd:`I`"
@@ -14288,7 +14326,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid "Paint Tile"
-msgstr ""
+msgstr "Maalaa laatta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid ":kbd:`P`"
@@ -14300,16 +14338,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "Bucket Fill"
-msgstr ""
+msgstr "Täyttö"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "``tile_map_editor/bucket_fill``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
-#, fuzzy
 msgid "Transpose"
-msgstr "Muunna"
+msgstr "Transponoi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "``tile_map_editor/transpose``"
@@ -14317,7 +14354,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "Flip Horizontally"
-msgstr ""
+msgstr "Käännä vaakasuorasti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid ":kbd:`X`"
@@ -14329,7 +14366,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "Flip Vertically"
-msgstr ""
+msgstr "Käännä pystysuorasti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid ":kbd:`Z`"
@@ -14341,7 +14378,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "Rotate Left"
-msgstr ""
+msgstr "Kierrä vasemmalle"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "``tile_map_editor/rotate_left``"
@@ -14349,16 +14386,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "Rotate Right"
-msgstr ""
+msgstr "Kierrä oikealle"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "``tile_map_editor/rotate_right``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
-#, fuzzy
 msgid "Clear Transform"
-msgstr "Muunna"
+msgstr "Tyhjennä muunnos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "``tile_map_editor/clear_transform``"
@@ -14366,7 +14402,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
-msgstr ""
+msgstr "Valitse"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
@@ -14378,7 +14414,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "Cut Selection"
-msgstr ""
+msgstr "Leikkaa valinta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "``tile_map_editor/cut_selection``"
@@ -14389,9 +14425,8 @@ msgid "``tile_map_editor/copy_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
-#, fuzzy
 msgid "Erase Selection"
-msgstr "Päällekkäisyyden tunnistaminen"
+msgstr "Tyhjennä valittu alue"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "``tile_map_editor/erase_selection``"
@@ -14404,7 +14439,7 @@ msgstr "Editori"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "Next Coordinate"
-msgstr ""
+msgstr "Seuraava koordinaatti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "``tileset_editor/next_shape``"
@@ -14412,7 +14447,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid "Previous Coordinate"
-msgstr ""
+msgstr "Edellinen koordinaatti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid ":kbd:`PgUp`"
@@ -14423,9 +14458,8 @@ msgid "``tileset_editor/previous_shape``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
-#, fuzzy
 msgid "Region Mode"
-msgstr "Animaatiotila"
+msgstr "Aluetila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
@@ -14436,9 +14470,8 @@ msgid "``tileset_editor/editmode_region``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
-#, fuzzy
 msgid "Collision Mode"
-msgstr "Törmäyskappaleet"
+msgstr "Törmäystila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid ":kbd:`2`"
@@ -14449,9 +14482,8 @@ msgid "``tileset_editor/editmode_collision``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
-#, fuzzy
 msgid "Occlusion Mode"
-msgstr "Liittäminen"
+msgstr "Peittotila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid ":kbd:`3`"
@@ -14462,9 +14494,8 @@ msgid "``tileset_editor/editmode_occlusion``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
-#, fuzzy
 msgid "Navigation Mode"
-msgstr "Animaatiotila"
+msgstr "Siirtymistila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
@@ -14475,9 +14506,8 @@ msgid "``tileset_editor/editmode_navigation``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
-#, fuzzy
 msgid "Bitmask Mode"
-msgstr "Animaatiotila"
+msgstr "Bittimaskitila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
@@ -14489,7 +14519,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "Priority Mode"
-msgstr ""
+msgstr "Prioriteettitila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid ":kbd:`6`"
@@ -14500,9 +14530,8 @@ msgid "``tileset_editor/editmode_priority``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
-#, fuzzy
 msgid "Icon Mode"
-msgstr "Animaatiotila"
+msgstr "Kuvaketila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid ":kbd:`7`"
@@ -14514,7 +14543,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid "Z Index Mode"
-msgstr ""
+msgstr "Z-indeksitila"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid ":kbd:`8`"
@@ -86072,6 +86101,8 @@ msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+"`Zeef Godot Engine: Kuratoitu hakemisto resursseja Andre Schmitziltä "
+"<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 
 #~ msgid "Collision Shapes"
 #~ msgstr "Törmäysmuodot"

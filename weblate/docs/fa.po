@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-04-27 12:19+0200\n"
-"PO-Revision-Date: 2020-04-23 20:22+0000\n"
+"PO-Revision-Date: 2020-05-04 07:47+0000\n"
 "Last-Translator: Focus <saeeddashticlash@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fa/>\n"
@@ -31,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.0.2-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -2505,12 +2505,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
-#, fuzzy
 msgid "Configuring the project"
 msgstr "پیکربندی پروژه"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
-#, fuzzy
 msgid ""
 "Ok, it's time to configure the project. Right now, the only way to run "
 "something is to execute the current scene. Projects, however, may have "
@@ -2530,22 +2528,34 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
+"این تنظیمات همه در پرونده project.godot ذخیره می شوند ، که یک پرونده ساده با "
+"فرمت win.ini (برای ویرایش آسان) است. ده ها تن از تنظیمات وجود دارد که می "
+"توانید در این پرونده تغییر دهید تا نحوه اجرای یک پروژه را تغییر دهید. برای "
+"ساده کردن این فرآیند ، گودوت یک گفتگوی تنظیمات پروژه را ارائه می دهد ، که به "
+"عنوان نوعی جلوی ویرایش یک فایل project.godot عمل می کند."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:193
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
+"برای دسترسی به آن گفتگو ، پروژه -> تنظیمات پروژه را انتخاب کنید. الآن "
+"امتحانش کن."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
+"پس از باز شدن پنجره ، اجازه دهید صحنه اصلی را انتخاب کنیم. ویژگی "
+"\"Application / Run / Main Scene\" را پیدا کرده و بر روی آن کلیک کنید تا "
+"\"Hello.tscn\" را انتخاب کنید."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
+"حال ، با این تغییر ، وقتی دکمه پخش معمولی (یا F5) را فشار می دهید ، این صحنه "
+"اجرا خواهد شد ، مهم نیست که کدام صحنه بطور فعال ویرایش می شود."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
 msgid ""
@@ -2554,6 +2564,10 @@ msgid ""
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
+"گفتگوی تنظیمات پروژه گزینه های زیادی را در اختیار شما می گذارد که می توانند "
+"در یک فایل project.godot ذخیره شوند و مقادیر پیش فرض آنها را نشان می دهند. "
+"اگر یک مقدار را تغییر دهید ، تیک در سمت چپ نام آن مشخص می شود. این بدان معنی "
+"است که این ویژگی در پرونده project.godot ذخیره می شود و به یاد می آورد."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:208
 msgid ""
@@ -2561,10 +2575,13 @@ msgid ""
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
+"به عنوان یک یادداشت جانبی ، همچنین می توانید گزینه های تنظیمات سفارشی را "
+"اضافه کنید و آنها را در زمان اجرا با استفاده از: REF: `ProjectSettings "
+"<class_ProjectSettings>` singleton بخوانید."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:212
 msgid "To be continued..."
-msgstr ""
+msgstr "ادامه دارد..."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:214
 msgid ""
@@ -2572,6 +2589,9 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
+"این آموزش در مورد \"صحنه ها و گره ها\" صحبت کرده است ، اما تاکنون فقط * one* "
+"صحنه و * one* گره وجود داشته است! نگران نباشید ، آموزش بعدی در مورد آن گسترش "
+"خواهد یافت ..."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
@@ -2585,12 +2605,19 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
+"ایجاد یک صحنه واحد و اضافه کردن گره به آن ممکن است برای پروژه های کوچک کار "
+"کند ، اما با بزرگ شدن یک پروژه در اندازه و پیچیدگی ، تعداد گره ها به سرعت "
+"قابل کنترل نمی شوند. برای رفع این مسئله ، گودوت اجازه می دهد تا پروژه ای در "
+"هر صحنه ای از هم جدا شود. این وسیله ای قدرتمند برای شما فراهم می کند که به "
+"شما در سازماندهی اجزای مختلف بازی خود کمک می کند."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
+"در: Ref: `doc_scenes_and_nodes` یاد گرفتید که صحنه مجموعه گره هایی است که در "
+"یک ساختار درختان سازماندهی شده و یک گره واحد به عنوان ریشه درخت وجود دارد."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -2598,32 +2625,41 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"می توانید صحنه هایی را که دوست دارید ایجاد کنید و آنها را در دیسک ذخیره "
+"کنید. صحنه های ذخیره شده به این روش \"صحنه های بسته بندی شده\" نامیده می "
+"شوند و پسوند نام فایل `` .tscn` `دارند."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
+"پس از ذخیره شدن صحنه ، می توان آن را به صحنه دیگری گشود كه گویی هر گره دیگری "
+"است."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
-msgstr ""
+msgstr "در تصویر بالا ، صحنه B به عنوان نمونه به صحنه A اضافه شد."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
-msgstr ""
+msgstr "نمونه به عنوان مثال"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
+"برای یادگیری چگونگی کار با instistic ، بیایید با بارگیری یک نمونه نمونه از "
+"پروژه شروع کنید:: بارگیری: `instading.zip <files / instancing.zip>`"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
+"این پروژه را در هر مکانی که دوست دارید از حالت فشرده خارج کنید. سپس Godot را "
+"باز کرده و با استفاده از دکمه 'Import' این پروژه را به مدیر پروژه اضافه کنید:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -2631,6 +2667,9 @@ msgid ""
 "can find inside it. After doing this, the new project will appear on the "
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
+"به پوشه استخراج شده خود بروید و پرونده \"project.godot\" را که می توانید در "
+"داخل آن پیدا کنید ، باز کنید. پس از انجام این کار ، پروژه جدید در لیست پروژه "
+"ها ظاهر می شود. پروژه را با فشار دادن دکمه 'ویرایش' ویرایش کنید."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -2639,17 +2678,25 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
+"این پروژه شامل دو صحنه است: \"Ball.tscn\" و \"Main.tscn\". صحنه توپ از: Ref: "
+"`RigidBody2D <class_RigidBody2D>` برای ارائه رفتار فیزیک استفاده می کند در "
+"حالی که صحنه اصلی مجموعه ای از موانع برخورد توپ را دارد (با استفاده از: Ref: "
+"`StaticBody2D <class_StaticBody2D>)."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr ""
+msgstr "صحنه `` اصلی` را باز کنید و گره ریشه را انتخاب کنید:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
+#, fuzzy
 msgid ""
 "We want to add an instance of the ``Ball`` scene as a child of ``Main``. "
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
+"ما می خواهیم نمونه ای از صحنه `Ball` را به عنوان چیلد` `Main` اضافه کنیم. بر "
+"روی دکمه شکل \"link\" کلیک کنید (متن آن روی هواپرداز می گوید \"یک پرونده "
+"صحنه را به عنوان یک گره ببینید.\") و پرونده `` Ball.tscn`` را انتخاب کنید."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -2657,10 +2704,13 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
+"توپ در گوشه بالا سمت چپ ناحیه صفحه نمایش قرار می گیرد (این (`0 ، 0)` در "
+"مختصات صفحه است). کلیک کنید و توپ را در جایی نزدیک به مرکز بالای صحنه کلیک "
+"کنید و بکشید:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr ""
+msgstr "\"پخش\" را فشار داده و تماشای افتادن توپ به پایین صفحه را مشاهده کنید:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple instances"

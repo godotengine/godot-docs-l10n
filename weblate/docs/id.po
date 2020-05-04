@@ -13,6 +13,7 @@
 # Khairul Hidayat <khairulcyber4rt@gmail.com>, 2018.
 # MonsterGila <fikrirazor@outlook.co.id>, 2019.
 # Nenza Nurfirmansyah <nnurfirmansyah@gmail.com>, 2020.
+# Rahman Wardantz <rahman.wardantz@gmail.com>, 2020.
 # Reza Hidayat Bayu Prabowo <rh.bayu.prabowo@gmail.com>, 2018.
 # Sandityas Noormina <bleedingfaceless@gmail.com>, 2019.
 # Sofyan Sugianto <sofyanartem@gmail.com>, 2019-2020.
@@ -23,8 +24,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-04-27 12:19+0200\n"
-"PO-Revision-Date: 2020-03-30 17:01+0000\n"
-"Last-Translator: Sofyan Sugianto <sofyanartem@gmail.com>\n"
+"PO-Revision-Date: 2020-04-30 17:51+0000\n"
+"Last-Translator: Rahman Wardantz <rahman.wardantz@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -32,7 +33,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.0.2\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -865,6 +866,7 @@ msgid "What were the motivations behind creating GDScript?"
 msgstr "Apa motivasi awal dalam pembuatan GDScript?"
 
 #: ../../docs/about/faq.rst:129
+#, fuzzy
 msgid ""
 "In the early days, the engine used the `Lua <https://www.lua.org>`__ "
 "scripting language. Lua is fast, but creating bindings to an object oriented "
@@ -872,6 +874,12 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
+"Pada awalnya, Mesin ini menggunakan bahasa skrip `Lua <https://www.lua."
+"org>`__. Lua itu cepat, tetapi ketika membuat binding pada sebuah objek yang "
+"berorientasi sistemorientasi sistem (menggunakan fallbacks) masih kompleks "
+"dan lambat ditambah menggunakan sebagian besar kode. Setelah melakukan "
+"eksperimen dengan `Python <https://www.python.org>`__, masih juga terbukti "
+"sulit untuk ditanamkan."
 
 #: ../../docs/about/faq.rst:135
 msgid ""
@@ -2218,18 +2226,26 @@ msgid ""
 "signal in the engine while you are writing a script, press the \"Search Help"
 "\" button at the top right of the Script workspace."
 msgstr ""
+"Untuk mencari informasi terkait class, metode, keberhasilan, konstanta, atau "
+"sinyal dalam mesin ketika kamu menulis skrip, tekan tombol \"Pencarian "
+"Bantuan\" pada pojok kanan atas pada ruang kerja Script."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid ""
 "A new window will pop up. Search for the item that you want to find "
 "information about."
 msgstr ""
+"Sebuah jendela baru akan muncul. Cari hal yang ingin kamu ketahui "
+"informasinya."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
+#, fuzzy
 msgid ""
 "Click on the item you are looking for and press open. The documentation for "
 "the item will be displayed in the script workspace."
 msgstr ""
+"Klik pada hal yang kamu inginkan dan tekan buka. Dokumentasi terkait hal "
+"tersebut akan muncul pada ruangkerja Skrip."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
 #, fuzzy

@@ -125,6 +125,7 @@
 # ronybezerra <ronybezerra@gmail.com>, 2018.
 # Sergio Henrique C Miranda <sergiogbrox@gmail.com>, 2019.
 # ShallZ <vzinbr@gmail.com>, 2018.
+# Sr Half <flavio05@outlook.com>, 2020.
 # sribgui <sribgui@gmail.com>, 2020.
 # Stephann Vasconcelos <stephann@protonmail.com>, 2019.
 # suxuf@2odem.com <suxuf@2odem.com>, 2018.
@@ -150,8 +151,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-04-27 12:19+0200\n"
-"PO-Revision-Date: 2020-04-27 08:41+0000\n"
-"Last-Translator: Joaquim Ferreira <joaquimferreira1996@bol.com.br>\n"
+"PO-Revision-Date: 2020-05-04 07:46+0000\n"
+"Last-Translator: Sr Half <flavio05@outlook.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -159,12 +160,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.0.2-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.2* branch"
-msgstr "Documentação do Godot – branch *master*"
+msgstr "Documentação do Godot – branch *3.2*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -176,7 +176,6 @@ msgstr ""
 "a lista."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.2 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -184,9 +183,9 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
-"Esta é a documentação para a branch de desenvolvimento (master). Procurando "
-"pela documentação da atual branch **stable**? `Dê uma olhada aqui <https://"
-"docs.godotengine.org/en/stable>`_."
+"Esta é a documentação para a branch 3.2 stable. Procurando a documentação do "
+"atual branch **development**? `Dê uma olhada aqui <https://docs.godotengine."
+"org/en/stable>`_."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -305,9 +304,8 @@ msgid "Community"
 msgstr "Comunidade"
 
 #: ../../docs/index.rst:131
-#, fuzzy
 msgid "Class reference"
-msgstr "Alterando a cena atual"
+msgstr "Referência de classe"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
@@ -550,7 +548,6 @@ msgid "Organization of the documentation"
 msgstr "Organização da documentação"
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
@@ -1008,23 +1005,21 @@ msgstr ""
 "foram:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
 "Não há um bom suporte a threads na maioria das VMs de scripting, e o Godot "
-"utiliza threads (Lua, Python, Squirrel, JS, AS, etc.)."
+"utiliza threads (Lua, Python, Squirrel, JavaScript, ActionScript, etc.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
 "Não há um bom suporte a extensão de classes na maioria das VMs de scripting, "
 "e adaptá-las para a forma como o Godot funciona é altamente ineficiente "
-"(Lua, Python, JS)."
+"(Lua, Python, JavaScript)."
 
 #: ../../docs/about/faq.rst:141
 #, fuzzy
@@ -16594,7 +16589,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "Flip Horizontally"
-msgstr ""
+msgstr "Inverter Horizontalmente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid ":kbd:`X`"
@@ -16606,7 +16601,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "Flip Vertically"
-msgstr ""
+msgstr "Inverter Verticalmente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid ":kbd:`Z`"
@@ -16618,16 +16613,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "Rotate Left"
-msgstr ""
+msgstr "Girar à Esquerda"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "``tile_map_editor/rotate_left``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
-#, fuzzy
 msgid "Rotate Right"
-msgstr "Rotation"
+msgstr "Girar à Direita"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "``tile_map_editor/rotate_right``"
@@ -81920,6 +81914,8 @@ msgstr ""
 msgid ""
 "This will look for states in a dictionary and return the state if found."
 msgstr ""
+"Isso procurará por estados em um dicionário e retornará o estado, se "
+"encontrado."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:186
 msgid ""
@@ -81928,6 +81924,10 @@ msgid ""
 "Since these references will not change it makes sense to call this new "
 "script ``persistent_state.gd``."
 msgstr ""
+"Agora que todos os estados estão definidos com seus próprios scripts, é hora "
+"de descobrir como as referências que passaram para eles serão instanciadas. "
+"Como essas referências não mudam, faz sentido chamar esse novo script de "
+"``persistent_state.gd``."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:229
 msgid ""
@@ -81935,8 +81935,12 @@ msgid ""
 "was to make the tutorial simple, but it is not usually best practice to do "
 "this."
 msgstr ""
+"O script ``persistent_state.gd`` contém código para detecção de entrada. "
+"Isso foi feito para simplificar o tutorial, mas geralmente não é uma prática "
+"recomendada fazer isso."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:235
+#, fuzzy
 msgid ""
 "This tutorial made an assumption that the node it would be attached to "
 "contained a child node which is an :ref:`AnimatedSprite "
@@ -81945,6 +81949,11 @@ msgid ""
 "idle and run animations. Also, the top-level node is assumed to be a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`."
 msgstr ""
+"Este tutorial fez uma suposição que o nó seria anexado que contém um nó "
+"filho é um :ref:`AnimatedSprite <class_AnimatedSprite>`. Também existe a "
+"suposição de que :ref:`AnimatedSprite <class_AnimatedSprite>` tenha pelo "
+"menos duas animações, as animações idle e run. Além disso, supõe-se que o nó "
+"de nível superior seja :ref:`KinematicBody2D <class_KinematicBody2D>`."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:242
 msgid ""
@@ -81955,6 +81964,12 @@ msgid ""
 "tutorial for sprite animation already. See :ref:`2D Sprite Animation "
 "<doc_2d_sprite_animation>`."
 msgstr ""
+"O arquivo zip da lhama usada neste tutorial é :download:`aqui <files/llama."
+"zip>`. A fonte era de `piskel_llama <https://www.piskelapp.com/p/"
+"agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgICfx5ygCQw/edit>`_, mas não consegui "
+"encontrar as informações originais do criador nessa página... Também há um "
+"bom tutorial para animação sprite. Veja :ref:`2D Sprite Animation "
+"<doc_2d_sprite_animation>`."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:247
 msgid ""
@@ -81962,6 +81977,9 @@ msgid ""
 "should be attached to the top node of the player, which is a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`."
 msgstr ""
+"Portanto, o único script que deve ser anexado é o ``persistent_state.gd``, "
+"que deve ser anexado ao nó superior do player, que é :ref:`KinematicBody2D "
+"<class_KinematicBody2D>`."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:254
 msgid ""
@@ -81971,6 +81989,11 @@ msgid ""
 "focus on itself and how it changes to another state. Each state is "
 "functionally separated and instantiated dynamically."
 msgstr ""
+"Agora o jogador utilizou o padrão de projeto State para implementar seus "
+"dois estados diferentes. A parte boa desse padrão é que, se alguém quiser "
+"adicionar outro estado, isso envolveria a criação de outra classe que só "
+"precisa se concentrar em si mesma e em como ela muda para outro estado. Cada "
+"estado é uma funcionalidade separada e instanciada dinamicamente."
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
@@ -84374,6 +84397,11 @@ msgid ""
 "> Existing Item\" command and set their \"Content\" property to ``True`` so "
 "they're copied to the app."
 msgstr ""
+"Crie uma pasta (*não* um filtro) chamado ``jogo`` na pasta do seu projeto "
+"Visual Studio e lá você pode colocar ou um arquivo ``data.pck``ou os "
+"arquivos do seu projeto Godot. Após isso, certifique-se de incluir todos com "
+"o comando \"Adicionar > Item Existente\" e definir sua propriedade \"Conteúdo"
+"\" para ``Verdadeiro``, assim eles são copiados para o app."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:136
 msgid ""
@@ -84383,6 +84411,12 @@ msgid ""
 "by right-clicking the project (*not* the solution) in the \"Solution Explorer"
 "\" and selecting \"Build\"."
 msgstr ""
+"Para facilitar o fluxo de trabalho, você pode abrir o \"Propriedades da "
+"Solução\" e na seção de \"Configuração\" desmarcar a opção \"Construir\" "
+"para o app. Você ainda deve construí-lo pelo menos uma vez para gerar alguns "
+"arquivos necessários, você pode fazer isso clicando com o botão direito no "
+"projeto (*não* na solução) no \"Explorador de Soluções\" e selecionando "
+"\"Construir\"."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:142
 msgid ""
@@ -84390,14 +84424,19 @@ msgid ""
 "the \"Start Without Debugging\" option from the \"Debug\" menu (or press :"
 "kbd:`Ctrl + F5`) to make it launch faster."
 msgstr ""
+"Agora você pode apenas executar o projeto e o seu app deverá abrir. Você "
+"pode também usar a opção \"Iniciar Sem Depuração\" à partir dos menu "
+"\"Depurar\" (ou pressione :kbd:`Ctrl + F5`) para executá-lo mais rápido."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:4
 msgid "Compiling for the Web"
-msgstr ""
+msgstr "Compilando para Web"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:11
 msgid "To compile export templates for the Web, the following is required:"
 msgstr ""
+"Para compilar modelos de exportação para a Web, é necessário fazer o "
+"seguinte:"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:13
 msgid "`Emscripten 1.39.0+ <https://emscripten.org>`__."
@@ -84409,7 +84448,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:15
 msgid "`SCons 3.0+ <https://www.scons.org>`__ build system."
-msgstr ""
+msgstr "`SCons 3.0+ <https://www.scons.org>`__ sistema de construção."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:23
 msgid ""
@@ -84420,6 +84459,13 @@ msgid ""
 "``emsdk activate latest``, or by your package manager. It's also created "
 "when starting Emscripten's ``emcc`` program if the file doesn't exist."
 msgstr ""
+"Antes de iniciar, confirme que o arquivo de configuração do Emscripten "
+"existe e especifica todas as configurações corretamente. Este arquivo está "
+"disponível como ``~/.emscripten`` em sistemas baseados em UNIX e ``"
+"%USERPROFILE%\\.emscripten`` em Windows. É geralmente escrito pelo SDK do "
+"Emscripten, por exemplo, quando chama ``emsdk activate latest``, ou pelo seu "
+"gerenciador de pacote. É também criado quando inicia o programa ``emcc`` do "
+"Emscripten se o arquivo não existir."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:30
 msgid ""
@@ -84427,6 +84473,9 @@ msgid ""
 "configuration file as double backslashes ``\\\\`` or use Unix-style paths "
 "with a single forward slash ``/``."
 msgstr ""
+"No Windows, certifique-se de escapar as barras invertidas de caminhos dentro "
+"do arquivo de configuração do Emscripten como ``\\\\`` ou use caminhos tipo "
+"Unix com uma única barra ``/``."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:34
 msgid ""
@@ -84976,7 +85025,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:341
 msgid "AOT cross-compilers"
-msgstr ""
+msgstr "AOT compiladores cruzados"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:343
 msgid ""
@@ -84984,6 +85033,9 @@ msgid ""
 "to have access to the Mono cross-compilers for that platform and "
 "architecture."
 msgstr ""
+"Para executar uma compilação ahead-of-time para outras plataformas, Godot "
+"precisa ter acesso ao compiladores cruzados do Mono para aquela plataforma e "
+"arquitetura."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:346
 msgid ""

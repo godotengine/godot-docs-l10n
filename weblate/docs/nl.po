@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alex H <sandertjeh13@hotmail.com>, 2019.
+# Angelin Everaerts <angelin.everaerts@gmail.com>, 2020.
 # Bas van Schoubroeck <basvanschoubroeck@hotmail.com>, 2018.
 # dem son <anthony1sep@gmail.com>, 2018.
 # Erwin <erwinschmidt@gmail.com>, 2018.
@@ -28,7 +29,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-04-27 12:19+0200\n"
-"PO-Revision-Date: 2020-04-23 20:22+0000\n"
+"PO-Revision-Date: 2020-05-04 07:47+0000\n"
 "Last-Translator: Stijn Hinlopen <f.a.hinlopen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/nl/>\n"
@@ -37,7 +38,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0.2-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -2185,15 +2186,14 @@ msgstr ""
 "bibliotheek."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
-#, fuzzy
 msgid ""
 "You'll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
-"Voor eender welk soort spel, zal je altijd de **2D werkruimte** nodig "
-"hebben. Ze dient namelijk ook om gebruikersomgevingen te ontwerpen, niet "
-"enkel voor 2D spellen. Druk op F1 om er naartoe te wisselen."
+"Voor welk type spel deender welk soort spel, zal je altijd de **2D "
+"werkruimte** nodig hebben. Ze dient namelijk ook om gebruikersomgevingen te "
+"ontwerpen, niet enkel voor 2D spellen. Druk op F1 om er naartoe te wisselen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
 #, fuzzy
@@ -4402,12 +4402,11 @@ msgstr ""
 "signaal. Het is aan jou om ervoor te zorgen dat deze de juiste waarde hebben."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:248
-#, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
 msgstr ""
-"Om een signaal uit te zenden via code, gebruik je de ``emit_signal`` methode:"
+"Om een waarde over te zetten, gebruik je ze ade ``emit_signal`` methode:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:278
 msgid ""
@@ -4832,7 +4831,6 @@ msgstr ""
 "``false``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:290
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default, the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -4841,13 +4839,14 @@ msgid ""
 "``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
 "movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
-"We beginnen met zetten van ``velocity (snelheid)`` op ``(0,0)`` - standaard "
-"hoort een speler niet te bewegen. Dan kijken we elke invoermogelijkheid, en "
-"verhogen/verlagen we de ``velocity`` waarde om de complete richting te "
-"krijgen. Bijvoorbeeld, als je zowel ``right (rechts)`` als ``down (onder)`` "
-"ingedrukt houd, zal de resulterende snelheidsvector ``(1,1)`` zijn. In dit "
-"geval, aangezien we horizontale en verticale beweging optellen, zou de "
-"speler *sneller* lopen dan als hij over alleen horizontaal liep."
+"We beginnen met het zetten van ``velocity (snelheid)`` op ``(0,0)`` - "
+"standaard hoort een speler niet te bewegen. Dan kijken we elke "
+"invoermogelijkheid, en verhogen/verlagen we de ``velocity`` waarde om de "
+"complete richting te krijgen. Bijvoorbeeld, als je zowel ``right (rechts)`` "
+"als ``down (onder)`` ingedrukt houd, zal de resulterende snelheidsvector "
+"``(1,1)`` zijn. In dit geval, aangezien we horizontale en verticale beweging "
+"optellen, zou de speler *sneller* lopen dan als hij over alleen horizontaal "
+"liep."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:297
 msgid ""
@@ -5316,8 +5315,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:663
+#, fuzzy
 msgid "``MobTimer``: ``0.5``"
-msgstr ""
+msgstr "``MobTimer``: ``0.5``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:664
 msgid "``ScoreTimer``: ``1``"
@@ -13278,7 +13278,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "Capitalize"
-msgstr ""
+msgstr "Elk Woord Met Hoofdletter"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid ":kbd:`Shift + F6`"
@@ -13290,7 +13290,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid "Convert Indent to Spaces"
-msgstr ""
+msgstr "Insprong in spaties omzetten"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Ctrl + Shift + Y`"
@@ -13306,7 +13306,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "Convert Indent to Tabs"
-msgstr ""
+msgstr "Insprong in Tabs omzetten"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Ctrl + Shift + I`"
@@ -13322,7 +13322,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "Auto Indent"
-msgstr ""
+msgstr "Automatisch inspringen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Ctrl + I`"
@@ -14096,11 +14096,11 @@ msgstr "AnimatieBoom"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "Selectie dupliceren"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
-msgstr ""
+msgstr "``animation_editor/duplicate_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"

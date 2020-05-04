@@ -26,6 +26,7 @@
 # Graziano Schrödinger Lenzi <burstina@hotmail.com>, 2019.
 # Hairic95 <hairic95@gmail.com>, 2019.
 # Jacopo Farina <jacopo1.farina@gmail.com>, 2020.
+# J. Lavoie <j.lavoie@net-c.ca>, 2020.
 # Katia Piazza <gydey@ridiculousglitch.com>, 2019.
 # Luana Pau <ezhael@gmail.com>, 2018.
 # Luca meremma <oea44041@bcaoo.com>, 2019.
@@ -40,6 +41,7 @@
 # mattiabruni <mattiabrunim@gmail.com>, 2019.
 # maxbarrett9 <barretma@dickinson.edu>, 2019-2020.
 # Micila Micillotto <micillotto@gmail.com>, 2019.
+# Mirko Proto <mirko7@protonmail.com>, 2020.
 # Mirko Soppelsa <miknsop@gmail.com>, 2019.
 # Myself <whatamidoing.wt@gmail.com>, 2018.
 # nickfla1 <lanterniniflavio@gmail.com>, 2019.
@@ -63,8 +65,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-04-27 12:19+0200\n"
-"PO-Revision-Date: 2020-04-04 15:25+0000\n"
-"Last-Translator: Davide Neri <davnerix@gmail.com>\n"
+"PO-Revision-Date: 2020-05-04 07:47+0000\n"
+"Last-Translator: J. Lavoie <j.lavoie@net-c.ca>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -72,7 +74,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -927,7 +929,6 @@ msgstr ""
 "sono state:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
@@ -946,17 +947,17 @@ msgstr ""
 "è altamente inefficiente (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
-"L'interfaccia per il binding con C++ è orrible, e risulta in una quantità "
-"enorme di codice, bug, colli di bottiglia e inefficienze in generale (Lua, "
-"Python, Squirrel, JS, ecc.). Volevamo concentrarci nel fare un ottimo motore "
-"di gioco, non su una grande quantità di integrazioni."
+"Molti linguaggi già esistenti hanno interfacce orribili per lavorare in C++, "
+"e ciò risulta in una quantità enorme di codice, bug, colli di bottiglia e "
+"inefficienze in generale (Lua, Python, Squirrel, JS, ecc.). Volevamo "
+"concentrarci nel fare un ottimo motore di gioco, non una grande quantità di "
+"integrazioni."
 
 #: ../../docs/about/faq.rst:144
 #, fuzzy
@@ -12662,9 +12663,8 @@ msgid "``editor/stop``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
-#, fuzzy
 msgid "Play Scene"
-msgstr "Scena del Player"
+msgstr "Avvia Scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -12680,9 +12680,8 @@ msgid "``editor/play_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
-#, fuzzy
 msgid "Play Custom Scene"
-msgstr "Scena del Player"
+msgstr "Avvia Scena Personalizzata"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -12700,7 +12699,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "Espandi Pannello Inferiore"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -12988,7 +12987,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
-msgstr ""
+msgstr "Inserisci chiave"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -14641,7 +14640,7 @@ msgstr "AnimazioneAlbero"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "Duplica selezione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -14649,7 +14648,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "Duplica trasposto"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -14664,9 +14663,8 @@ msgid "``animation_editor/duplicate_selection_transposed``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
-#, fuzzy
 msgid "Delete Selection"
-msgstr "Rilevamento sovrapposizione"
+msgstr "Elimina la selezione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -14674,7 +14672,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "Va' al passo successivo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -17965,27 +17963,36 @@ msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
+"A partire da Godot 3.1, GDScript supporta :ref:`optional static "
+"typing<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 msgid "Type hints"
-msgstr ""
+msgstr "Digita suggerimenti"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:672
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
+"Posiziona i due punti subito dopo il nome della variabile, senza spazi, e "
+"lascia che il compilatore GDScript deduca il tipo di variabile quando "
+"possibile."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:691
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
+"Quando lasci che il compilatore deduca il suggerimento del tipo di "
+"variabile, scrivi insieme i due punti e l'uguale: ``:=``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:697
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr ""
+"Aggiungi uno spazio su entrambi i lati della freccia 'return type' quando "
+"definisci una funzione."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:4
 msgid "Static typing in GDScript"
@@ -17994,15 +18001,15 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:6
 #: ../../docs/tutorials/physics/physics_introduction.rst:16
 msgid "In this guide, you will learn:"
-msgstr ""
+msgstr "In questa guida, imparerai:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:8
 msgid "**How to use types in GDScript**"
-msgstr ""
+msgstr "**Come usare i tipi di variabile in GDScript**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:9
 msgid "That **static types can help you avoid bugs**"
-msgstr ""
+msgstr "Che **i tipi statici possono aiutarti a evitare bug**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:11
 msgid ""
@@ -18010,20 +18017,27 @@ msgid ""
 "can use it only in some sensitive GDScript files, use it everywhere, or "
 "write code like you always did!"
 msgstr ""
+"Dove e come usi questa nuova funzione del linguaggio è completamente a tua "
+"scelta: puoi usarla solo in qualche importante file GDScript, dappertutto o "
+"puoi scrivere codice come hai sempre fatto!"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:15
+#, fuzzy
 msgid ""
 "Static types can be used on variables, constants, functions, parameters, and "
 "return types."
 msgstr ""
+"Gli oggetti di tipo 'Statico' possono essere usati nelle variabili, nelle "
+"costanti, nelle funzioni, nei parametri e nei 'return types'."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:20
 msgid "Typed GDScript is available since Godot 3.1."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:23
+#, fuzzy
 msgid "A brief look at static typing"
-msgstr ""
+msgstr "Uno sguardo veloce alla scrittura statica"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
 msgid ""
@@ -18031,6 +18045,10 @@ msgid ""
 "gives you and your teammates more information as you're working, as the "
 "arguments' types show up when you call a method."
 msgstr ""
+"Con il GDScript digitato, Godot può rilevare ancora più errori mentre scrivi "
+"codice! Fornisce a te e ai tuoicompagni di squadra maggiori informazioni "
+"mentre lavorate, poiché le tipologie degli argomenti appaiono quando "
+"chiamate un metodo."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
 msgid ""
