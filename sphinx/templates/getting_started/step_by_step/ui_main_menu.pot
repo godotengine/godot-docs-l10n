@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,7 +150,7 @@ msgid "Let's create the main menu. We'll build it in a single scene. To create a
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
-msgid "We have to add a root node before we can save the scene. Your UI's root should be the outermost container or element. In this case it's a ``MarginContainer``. ``MarginContainer`` is a good starting point for most interfaces, as you often need padding around the UI. Press :kbd:`Meta + S` to save the scene to the disk. Name it *MainMenu*."
+msgid "We have to add a root node before we can save the scene. Your UI's root should be the outermost container or element. In this case it's a ``MarginContainer``. ``MarginContainer`` is a good starting point for most interfaces, as you often need padding around the UI. Press :kbd:`Ctrl + S` (:kbd:`Cmd + S` on macOS) to save the scene to the disk. Name it *MainMenu*."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
@@ -202,7 +202,7 @@ msgid "and the main menu's illustration."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-msgid "Click the **Add Node** button or press :kbd:`Meta + A` on your keyboard. Start to type ``TextureRect`` to find the corresponding node and press enter. With the new node selected, press :kbd:`Meta + D` five times to create five extra ``TextureRect`` instances."
+msgid "Click the **Add Node** button or press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on macOS) on your keyboard. Start to type ``TextureRect`` to find the corresponding node and press enter. With the new node selected, press :kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) five times to create five extra ``TextureRect`` instances."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
@@ -270,7 +270,7 @@ msgid "The character node centers inside the right half of the screen as soon as
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
-msgid "To space out the menu options and the logo on the left, we'll use one final container and its size flags. Select the ``VBoxContainer`` and press :kbd:`Meta + A` to add a new node inside it. Add a second ``VBoxContainer`` and name it *MenuOptions*. Select all three menu options, ``Continue``, ``NewGame`` and ``Options``, and drag and drop them inside the new ``VBoxContainer``. The UI's layout should barely change, if at all."
+msgid "To space out the menu options and the logo on the left, we'll use one final container and its size flags. Select the ``VBoxContainer`` and press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on macOS) to add a new node inside it. Add a second ``VBoxContainer`` and name it *MenuOptions*. Select all three menu options, ``Continue``, ``NewGame`` and ``Options``, and drag and drop them inside the new ``VBoxContainer``. The UI's layout should barely change, if at all."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
