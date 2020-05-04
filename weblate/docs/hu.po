@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2020-04-27 12:19+0200\n"
+"POT-Creation-Date: 2020-05-04 09:58+0200\n"
 "PO-Revision-Date: 2020-01-07 06:18+0000\n"
 "Last-Translator: Máté Széles <szelessm@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/godot-engine/"
@@ -3279,7 +3279,7 @@ msgid "Signal"
 msgstr "Jelzések"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1268
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1280
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:464
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:696
@@ -3376,10 +3376,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:66
 msgid ""
-"On the right side, you can bind an arbitrary number of arguments of "
-"(possibly) different types. This can be useful when you have more than one "
-"signal connected to the same method, as each signal propagation will result "
-"in different values for those extra call arguments."
+"If you toggle the Advanced menu, you'll see on the right side that you can "
+"bind an arbitrary number of arguments of (possibly) different types. This "
+"can be useful when you have more than one signal connected to the same "
+"method, as each signal propagation will result in different values for those "
+"extra call arguments."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:70
@@ -6026,8 +6027,8 @@ msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
 "``MarginContainer``. ``MarginContainer`` is a good starting point for most "
-"interfaces, as you often need padding around the UI. Press :kbd:`Meta + S` "
-"to save the scene to the disk. Name it *MainMenu*."
+"interfaces, as you often need padding around the UI. Press :kbd:`Ctrl + S` (:"
+"kbd:`Cmd + S` on macOS) to save the scene to the disk. Name it *MainMenu*."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
@@ -6087,10 +6088,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
 msgid ""
-"Click the **Add Node** button or press :kbd:`Meta + A` on your keyboard. "
-"Start to type ``TextureRect`` to find the corresponding node and press "
-"enter. With the new node selected, press :kbd:`Meta + D` five times to "
-"create five extra ``TextureRect`` instances."
+"Click the **Add Node** button or press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on "
+"macOS) on your keyboard. Start to type ``TextureRect`` to find the "
+"corresponding node and press enter. With the new node selected, press :kbd:"
+"`Ctrl + D` (:kbd:`Cmd + D` on macOS) five times to create five extra "
+"``TextureRect`` instances."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
@@ -6200,10 +6202,11 @@ msgstr ""
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
-"`Meta + A` to add a new node inside it. Add a second ``VBoxContainer`` and "
-"name it *MenuOptions*. Select all three menu options, ``Continue``, "
-"``NewGame`` and ``Options``, and drag and drop them inside the new "
-"``VBoxContainer``. The UI's layout should barely change, if at all."
+"`Ctrl + A` (:kbd:`Cmd + A` on macOS) to add a new node inside it. Add a "
+"second ``VBoxContainer`` and name it *MenuOptions*. Select all three menu "
+"options, ``Continue``, ``NewGame`` and ``Options``, and drag and drop them "
+"inside the new ``VBoxContainer``. The UI's layout should barely change, if "
+"at all."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
@@ -6870,7 +6873,8 @@ msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
 "like your ``Bar``, but with all nodes except the root in grey. Press :kbd:"
-"`Meta + S` to save the new inherited scene and name it ``LifeBar``."
+"`Ctrl + S` (:kbd:`Cmd + S` on macOS) to save the new inherited scene and "
+"name it ``LifeBar``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
@@ -6953,10 +6957,10 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
 msgid ""
-"When you duplicate a node from the Scene tree, with :kbd:`Meta + D`, it "
-"shares its resources with the original node. You need to use ``Make Sub-"
-"Resources Unique`` before you can tweak the resources without affecting the "
-"source node."
+"When you duplicate a node from the Scene tree, with :kbd:`Ctrl + D` (:kbd:"
+"`Cmd + D` on macOS), it shares its resources with the original node. You "
+"need to use ``Make Sub-Resources Unique`` before you can tweak the resources "
+"without affecting the source node."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:481
@@ -9668,7 +9672,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:120
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:141
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:125
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:21
@@ -14636,11 +14640,11 @@ msgid ""
 "class will then appear with its new icon in the editor::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:993
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:992
 msgid "Here's a class file example:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1012
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1014
 msgid ""
 "Godot's class syntax is compact: it can only contain member variables or "
 "functions. You can use static functions, but not static member variables. In "
@@ -14650,47 +14654,48 @@ msgid ""
 "without the user knowing."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1020
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1022
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:204
 msgid "Inheritance"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1022
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1024
 msgid "A class (stored as a file) can inherit from:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1024
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1026
 msgid "A global class."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1025
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1027
 msgid "Another class file."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1026
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1028
 msgid "An inner class inside another class file."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1028
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1030
 msgid "Multiple inheritance is not allowed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1030
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1032
 msgid "Inheritance uses the ``extends`` keyword::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1042
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1044
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1054
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1056
 msgid ""
 "To call a function in a *parent class* (i.e. one ``extend``-ed in your "
 "current class), prepend ``.`` to the function name::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1059
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1061
 msgid ""
 "This is especially useful because functions in extending classes replace "
 "functions with the same name in their parent classes. If you still want to "
@@ -14698,7 +14703,7 @@ msgid ""
 "other languages)::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1067
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1069
 msgid ""
 "Default functions like  ``_init``, and most notifications such as "
 "``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, etc. "
@@ -14706,11 +14711,11 @@ msgid ""
 "them explicitly when overloading them."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1074
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1076
 msgid "Class Constructor"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1076
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1078
 msgid ""
 "The class constructor, called on class instantiation, is named ``_init``. As "
 "mentioned earlier, the constructors of parent classes are called "
@@ -14718,23 +14723,23 @@ msgid ""
 "``._init()`` explicitly."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1081
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1083
 msgid ""
 "Unlike the call of a regular function, like in the above example with ``."
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1088
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1090
 msgid "This is better explained through examples. Consider this scenario::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1108
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1113
 #, fuzzy
 msgid "There are a few things to keep in mind here:"
 msgstr "Nincs felhasználási korlátozás a Godot-ra"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1110
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1115
 msgid ""
 "If the inherited class (``State.gd``) defines a ``_init`` constructor that "
 "takes arguments (``e`` in this case), then the inheriting class (``Idle."
@@ -14742,19 +14747,19 @@ msgid ""
 "``_init`` from ``State.gd``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1113
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1118
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the parent class "
 "``State.gd``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1114
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1119
 msgid ""
 "In the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1116
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1121
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
@@ -14762,21 +14767,21 @@ msgid ""
 "constructor as well, not just variables. eg.::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1126
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1131
 msgid "Inner classes"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1128
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1133
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1150
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1158
 msgid "Classes as resources"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1152
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1160
 msgid ""
 "Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
 "They must be loaded from disk to access them in other classes. This is done "
@@ -14785,33 +14790,33 @@ msgid ""
 "class object::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1168
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1177
 msgid "Exports"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1172
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1181
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1175
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1184
 msgid "Setters/getters"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1177
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1186
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
 "way."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1180
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1189
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1187
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1196
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -14821,28 +14826,28 @@ msgid ""
 "``return`` the desired value. Below is an example::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1201
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1212
 msgid "Either of the *setter* or *getter* functions can be omitted::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1208
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1219
 msgid ""
 "Setters and getters are useful when :ref:`exporting variables "
 "<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
 "validating input."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1211
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1222
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1228
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1239
 msgid "Tool mode"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1230
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1241
 msgid ""
 "By default, scripts don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
@@ -14851,22 +14856,22 @@ msgid ""
 "top of the file::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1243
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1255
 msgid "See :ref:`doc_running_code_in_the_editor` for more information."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1245
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
 msgid ""
 "Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
 "script (especially the script's owner itself). As tool scripts run their "
 "code in the editor, misusing them may lead to crashing the editor."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1251
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1263
 msgid "Memory management"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1253
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1265
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -14877,20 +14882,20 @@ msgid ""
 "weak references."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1261
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1273
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
 "freed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1270
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
 msgid ""
 "Signals are a tool to emit messages from an object that other objects can "
 "react to. To create custom signals for a class, use the ``signal`` keyword."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1295
 msgid ""
 "Signals are a `Callback <https://en.wikipedia.org/wiki/"
 "Callback_(computer_programming)>`_ mechanism. They also fill the role of "
@@ -14899,31 +14904,31 @@ msgid ""
 "the Game Programming Patterns ebook."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1289
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1302
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
 "signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1292
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1305
 msgid ""
 "In the example below, we connect the ``health_depleted`` signal from a "
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
 "signal, the game node's ``_on_Character_health_depleted`` is called::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1305
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
 msgid "You can emit as many arguments as you want along with a signal."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1307
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1321
 msgid ""
 "Here is an example where this is useful. Let's say we want a life bar on "
 "screen to react to health changes with an animation, but we want to keep the "
 "user interface separate from the player in our scene tree."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1311
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1325
 msgid ""
 "In our ``Character.gd`` script, we define a ``health_changed`` signal and "
 "emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
@@ -14932,32 +14937,32 @@ msgid ""
 "method::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1351
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1366
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1354
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1369
 msgid ""
 "In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
 "then connect the character, that emits the signal, to the receiver, the "
 "``Lifebar`` node in this case."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1368
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1383
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1371
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1386
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1377
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1392
 msgid ""
 "These arguments show up in the editor's node dock, and Godot can use them to "
 "generate callback functions for you. However, you can still emit any number "
@@ -14965,7 +14970,7 @@ msgid ""
 "values."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1383
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1398
 msgid ""
 "GDScript can bind an array of values to connections between a signal and a "
 "method. When the signal is emitted, the callback method receives the bound "
@@ -14973,14 +14978,14 @@ msgid ""
 "will stay the same."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1388
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1403
 msgid ""
 "You can use this array of values to add extra constant information to the "
 "connection if the emitted signal itself doesn't give you access to all the "
 "data that you need."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1392
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1407
 msgid ""
 "Building on the example above, let's say we want to display a log of the "
 "damage taken by each character on the screen, like ``Player1 took 22 damage."
@@ -14989,17 +14994,17 @@ msgid ""
 "can add the character's name in the binds array argument::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1406
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1421
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1419
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1434
 msgid "Coroutines with yield"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1421
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1436
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the :ref:`yield<class_@GDScript_method_yield>` built-in "
@@ -15010,49 +15015,68 @@ msgid ""
 "becomes invalid. Here is an example::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1441
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1461
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1457
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1478
 msgid "Will print::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1447
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1463
 msgid ""
 "It is also possible to pass values between ``yield()`` and ``resume()``, for "
 "example::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1467
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
 msgid ""
 "Remember to save the new function state, when using multiple ``yield``\\s::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1481
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1499
 msgid "Coroutines & signals"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1483
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1501
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1496
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1514
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1507
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1526
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1510
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1528
+msgid "You can also get the signal's argument once it's emitted by an object:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1535
+msgid ""
+"If you're unsure whether a function may yield or not, or whether it may "
+"yield multiple times, you can yield to the ``completed`` signal "
+"conditionally:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1557
+msgid ""
+"This ensures that the function returns whatever it was supposed to return "
+"irregardless of whether coroutines were used internally. Note that using "
+"``while`` would be redundant here as the ``completed`` signal is only "
+"emitted when the function didn't yield anymore."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1563
 msgid "Onready keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1512
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1565
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -15060,7 +15084,7 @@ msgid ""
 "call to ``Node._ready()`` is made."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1524
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1578
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -15068,11 +15092,11 @@ msgid ""
 "can replace the above code with a single line::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1532
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1586
 msgid "Assert keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1534
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1588
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -15082,7 +15106,7 @@ msgid ""
 "depending on whether the project is run in a debug build."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1546
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1600
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."
@@ -15525,48 +15549,48 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:119
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:129
 msgid ""
 "It must be noted that even if the script is not being run while in the "
 "editor, the exported properties are still editable. This can be used in "
 "conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:124
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:134
 msgid "Exporting bit flags"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:126
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:136
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
 "set from the editor::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:133
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:139
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:149
 msgid ""
 "In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
 "defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:144
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:154
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:148
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:158
 msgid "Exporting arrays"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:160
 msgid ""
 "Exporting arrays works, but with an important caveat: while regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -15575,11 +15599,18 @@ msgid ""
 "initializers, but they must be constant expressions."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:186
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
+msgid ""
+"If the exported array specifies a type which inherits from Resource, the "
+"array values can be set in the inspector by dragging and dropping multiple "
+"files from the FileSystem dock at once."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:206
 msgid "Setting exported variables from a tool script"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:188
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:208
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
@@ -19662,15 +19693,15 @@ msgstr ""
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:74
 msgid ""
 "Using C# from GDScript doesn't need much work. Once loaded (see :ref:"
-"`doc_gdscript_classes_as_resources`) the script can be instantiated with :"
+"`doc_gdscript_classes_as_resources`), the script can be instantiated with :"
 "ref:`new() <class_CSharpScript_method_new>`."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:86
 msgid ""
-"When creating .cs scripts you should always keep in mind that the class "
-"Godot will use is the one named like the .cs file itself. If that class does "
-"not exist in the file, you'll see the following error: ``Invalid call. "
+"When creating ``.cs`` scripts, you should always keep in mind that the class "
+"Godot will use is the one named like the ``.cs`` file itself. If that class "
+"does not exist in the file, you'll see the following error: ``Invalid call. "
 "Nonexistent function `new` in base``."
 msgstr ""
 
@@ -19680,8 +19711,8 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:93
 msgid ""
-"You also need to check your .cs file is referenced in the project's .csproj "
-"file. Otherwise, the same error will occur."
+"You also need to check your ``.cs`` file is referenced in the project's ``."
+"csproj`` file. Otherwise, the same error will occur."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:97
@@ -19696,7 +19727,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:107
 msgid ""
-"Here we are using an :ref:`class_Object` but you can use type conversion "
+"Here we are using an :ref:`class_Object`, but you can use type conversion "
 "like explained in :ref:`doc_c_sharp_features_type_conversion_and_casting`."
 msgstr ""
 
@@ -19717,8 +19748,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:128
 msgid ""
 "Note that it doesn't matter if the field is defined as a property or an "
-"attribute, but trying to set a value on a property that does not define a "
-"setter will result in a crash."
+"attribute. However, trying to set a value on a property that does not define "
+"a setter will result in a crash."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:133
@@ -19753,7 +19784,7 @@ msgstr ""
 msgid ""
 "Again, calling C# methods from GDScript should be straightforward. The "
 "marshalling process will do its best to cast your the arguments to match "
-"function signatures. If that's impossible you'll see the following error: "
+"function signatures. If that's impossible, you'll see the following error: "
 "``Invalid call. Nonexistent function `FunctionName```."
 msgstr ""
 
@@ -19764,15 +19795,24 @@ msgstr ""
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:176
 msgid ""
 "To call GDScript methods from C# you'll need to use :ref:`Object.Call() "
-"<class_Object_method_call>`. The first arguments is the name of the method "
+"<class_Object_method_call>`. The first argument is the name of the method "
 "you want to call. The following arguments will be passed to said method."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:198
 msgid ""
 "As you can see, if the first argument of the called method is an array, "
-"you'll need to cast it as ``object``. Otherwise each element of your array "
+"you'll need to cast it as ``object``. Otherwise, each element of your array "
 "will be treated as a single argument and the function signature won't match."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/cross_language_scripting.rst:206
+msgid ""
+"A GDScript file may not inherit from a C# script. Likewise, a C# script may "
+"not inherit from a GDScript file. Due to how complex this would be to "
+"implement, this limitation is unlikely to be lifted in the future. See `this "
+"GitHub issue <https://github.com/godotengine/godot/issues/38352>`__ for more "
+"information."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:4
@@ -20813,44 +20853,46 @@ msgid "Godot can import the following image formats:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
-msgid "BMP (``.bmp``)"
+msgid ""
+"BMP (``.bmp``) - No support for 16-bit per pixel images. Only 1-bit, 4-bit, "
+"8-bit, 24-bit, and 32-bit per pixel images are supported."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:39
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:40
 msgid ""
 "DirectDraw Surface (``.dds``) - If mipmaps are present in the texture, they "
 "will be loaded directly. This can be used to achieve effects using custom "
 "mipmaps."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:42
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:43
 msgid ""
 "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:44
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:45
 msgid ""
 "Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
 "skies)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:46
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:47
 msgid ""
 "JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
 "limitations."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:49
 msgid ""
 "PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
 "(no HDR images)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:50
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:51
 msgid "Truevision Targa (``.tga``)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:51
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 msgid ""
 "SVG (``.svg``, ``.svgz``) - SVGs are rasterized using `NanoSVG <https://"
 "github.com/memononen/nanosvg>`__ when importing them. Support is limited; "
@@ -20860,32 +20902,32 @@ msgid ""
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:56
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:57
 msgid "WebP (``.webp``)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:61
 msgid ""
 "If you've compiled the Godot editor from source with specific modules "
 "disabled, some formats may not be available."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:64
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:65
 msgid "Compression"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:66
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:67
 msgid ""
 "Images are one of the largest assets in a game. To handle them efficiently, "
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:70
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:71
 msgid "Compress Mode"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:72
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:73
 msgid ""
 "**VRAM Compression:** This is the most common compression mode for 3D "
 "assets. Size on disk is reduced and video memory usage is also decreased "
@@ -20893,7 +20935,7 @@ msgid ""
 "avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:76
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:77
 msgid ""
 "**Lossless Compression:** This is the most common compression mode for 2D "
 "assets. It shows assets without any kind of artifacting, and disk "
@@ -20902,7 +20944,7 @@ msgid ""
 "pixel art."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:80
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:81
 msgid ""
 "**Lossy Compression:** This is a good choice for large 2D assets. It has "
 "some artifacts, but less than VRAM and the file size is several times lower "
@@ -20910,118 +20952,118 @@ msgid ""
 "this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:84
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:85
 msgid ""
 "**Uncompressed:** Only useful for formats that can't be compressed (such as "
 "raw float images)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:87
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages (|good| = best, |bad| = worst):"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "Uncompressed"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "Compress Lossless (PNG)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "Compress Lossy (WebP)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:91
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "Compress VRAM"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Stored as raw pixels"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Stored as PNG"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Stored as WebP"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:93
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid "Size on Disk"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:96
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:98
 msgid "|bad| Large"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid "|regular| Small"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:95
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid "|good| Very Small"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:98
 msgid "Memory Usage"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:97
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:98
 msgid "|good| Small"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:100
 msgid "Performance"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:100
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:104
 msgid "|regular| Normal"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:99
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:100
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:104
 msgid "|good| Fast"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:102
 msgid "Quality Loss"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:102
 msgid "|good| None"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:102
 msgid "|regular| Slight"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:102
 msgid "|bad| Moderate"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:104
 msgid "Load Time"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:103
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:104
 msgid "|bad| Slow"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:113
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:114
 msgid "HDR Mode"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:115
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:116
 msgid ""
 "Godot supports high dynamic range textures (as .HDR or .EXR). These are "
 "mostly useful as high dynamic range equirectangular panorama skies (the "
@@ -21030,17 +21072,17 @@ msgid ""
 "that do not."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:118
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:119
 msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
 "textures, enable the \"Force RGBE\" option."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:121
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:122
 msgid "Normal Map"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:123
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:124
 msgid ""
 "When using a texture as normal map, only the red and green channels are "
 "required. Given regular texture compression algorithms produce artifacts "
@@ -21051,45 +21093,62 @@ msgid ""
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:128
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:129
 msgid ""
 "Note that RGTC compression affects the resulting normal map image. You will "
 "have to adjust custom shaders that use the normal map to take this into "
 "account."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:131
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:133
+#: ../../docs/tutorials/3d/spatial_material.rst:369
+msgid ""
+"Godot requires the normal map to use the X+, Y- and Z+ coordinates. In other "
+"words, if you've imported a material made to be used with another engine, "
+"you may have to convert the normal map so its Y axis is flipped. Otherwise, "
+"the normal map direction may appear to be inverted on the Y axis."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:138
+#: ../../docs/tutorials/3d/spatial_material.rst:374
+msgid ""
+"More information about normal maps (including a coordinate order table for "
+"popular engines) can be found `here <http://wiki.polycount.com/wiki/"
+"Normal_Map_Technical_Details>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:143
 #: ../../docs/tutorials/3d/spatial_material.rst:30
 msgid "Flags"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:133
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:145
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:136
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:148
 msgid "Repeat"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:138
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
 "\"loop\"."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:140
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:152
 msgid "Repeating can optionally be set to mirrored mode."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:143
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:155
 #: ../../docs/tutorials/audio/audio_buses.rst:180
 msgid "Filter"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:145
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:157
 msgid ""
 "When pixels become larger than the screen pixels, this option enables linear "
 "interpolation for them. The result is a smoother (less blocky) texture. This "
@@ -21097,11 +21156,11 @@ msgid ""
 "making pixel perfect games."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:148
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:160
 msgid "Mipmaps"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:150
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:162
 msgid ""
 "When pixels become smaller than the screen, mipmaps kick in. This helps "
 "reduce the grainy effect when shrinking the textures. Keep in mind that, in "
@@ -21109,41 +21168,41 @@ msgid ""
 "mipmaps:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:153
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:165
 msgid "Texture width and height must be powers of 2"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:154
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:166
 msgid "Repeat must be enabled"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:156
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:168
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:158
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:170
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:161
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:173
 msgid "Anisotropic"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:163
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:175
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:166
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:178
 msgid "SRGB"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:168
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:180
 msgid ""
 "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or "
 "detail channels need to have this option turned on in order for colors to "
@@ -21151,37 +21210,37 @@ msgid ""
 "SRGB when used in albedo channels."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:172
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:184
 msgid "Process"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:174
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:186
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:177
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:189
 msgid "Fix Alpha Border"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:179
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:191
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
 "transparency to non transparency. It helps mitigate the outline effect when "
 "exporting images from Photoshop and the like."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:184
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:196
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:187
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:199
 msgid "Premultiplied Alpha"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:189
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:201
 msgid ""
 "An alternative to fix darkened borders is to use premultiplied alpha. By "
 "enabling this option, the texture will be converted to this format. Keep in "
@@ -21189,22 +21248,22 @@ msgid ""
 "blend mode on canvas items that need it."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:193
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:205
 msgid "HDR as sRGB"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:195
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:207
 msgid ""
 "A few HDR files are broken and contain sRGB color data. It is advised not to "
 "use them, but, in the worst-case scenario, toggling this option on will make "
 "them look right."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:198
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:210
 msgid "Invert Color"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_images.rst:200
+#: ../../docs/getting_started/workflow/assets/importing_images.rst:212
 msgid ""
 "Reverses the image's color. This is useful, for example, to convert a height "
 "map generated by external programs to depth map to use with :ref:"
@@ -30890,22 +30949,22 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:358
-msgid "Normalmap"
+msgid "Normal map"
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:360
 msgid ""
 "Normal mapping allows you to set a texture that represents finer shape "
 "detail. This does not modify geometry, only the incident angle for light. In "
-"Godot, only the red and green channels of normal maps are used for wider "
-"compatibility."
+"Godot, only the red and green channels of normal maps are used for better "
+"compression and wider compatibility."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:367
+#: ../../docs/tutorials/3d/spatial_material.rst:379
 msgid "Rim"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:369
+#: ../../docs/tutorials/3d/spatial_material.rst:381
 msgid ""
 "Some fabrics have small micro-fur that causes light to scatter around it. "
 "Godot emulates this with the *Rim* parameter. Unlike other rim lighting "
@@ -30914,7 +30973,7 @@ msgid ""
 "considerably more believable."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:376
+#: ../../docs/tutorials/3d/spatial_material.rst:388
 msgid ""
 "Rim size depends on roughness, and there is a special parameter to specify "
 "how it must be colored. If *Tint* is ``0``, the color of the light is used "
@@ -30922,16 +30981,16 @@ msgid ""
 "Using intermediate values generally works best."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:382
+#: ../../docs/tutorials/3d/spatial_material.rst:394
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
 msgid "Clearcoat"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:384
-#: ../../docs/tutorials/3d/spatial_material.rst:393
-#: ../../docs/tutorials/3d/spatial_material.rst:415
-#: ../../docs/tutorials/3d/spatial_material.rst:428
-#: ../../docs/tutorials/3d/spatial_material.rst:448
+#: ../../docs/tutorials/3d/spatial_material.rst:396
+#: ../../docs/tutorials/3d/spatial_material.rst:405
+#: ../../docs/tutorials/3d/spatial_material.rst:427
+#: ../../docs/tutorials/3d/spatial_material.rst:440
+#: ../../docs/tutorials/3d/spatial_material.rst:460
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:140
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:154
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:196
@@ -30943,19 +31002,19 @@ msgstr ""
 msgid "*This feature is only available when using the GLES3 backend.*"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:386
+#: ../../docs/tutorials/3d/spatial_material.rst:398
 msgid ""
 "The *Clearcoat* parameter is used to add a secondary pass of transparent "
 "coat to the material. This is common in car paint and toys. In practice, "
 "it's a smaller specular blob added on top of the existing material."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:391
+#: ../../docs/tutorials/3d/spatial_material.rst:403
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:60
 msgid "Anisotropy"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:395
+#: ../../docs/tutorials/3d/spatial_material.rst:407
 msgid ""
 "This changes the shape of the specular blob and aligns it to tangent space. "
 "Anisotropy is commonly used with hair, or to make materials such as brushed "
@@ -30963,11 +31022,11 @@ msgid ""
 "flowmaps."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:402
+#: ../../docs/tutorials/3d/spatial_material.rst:414
 msgid "Ambient Occlusion"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:404
+#: ../../docs/tutorials/3d/spatial_material.rst:416
 msgid ""
 "It is possible to specify a baked ambient occlusion map. This map affects "
 "how much ambient light reaches each surface of the object (it does not "
@@ -30977,11 +31036,11 @@ msgid ""
 "whenever possible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:413
+#: ../../docs/tutorials/3d/spatial_material.rst:425
 msgid "Depth"
 msgstr "Mélység"
 
-#: ../../docs/tutorials/3d/spatial_material.rst:417
+#: ../../docs/tutorials/3d/spatial_material.rst:429
 msgid ""
 "Setting a depth map on a material produces a ray-marched search to emulate "
 "the proper displacement of cavities along the view direction. This is not "
@@ -30990,34 +31049,34 @@ msgid ""
 "results, *Depth* should be used together with normal mapping."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:426
+#: ../../docs/tutorials/3d/spatial_material.rst:438
 msgid "Subsurface Scattering"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:430
+#: ../../docs/tutorials/3d/spatial_material.rst:442
 msgid ""
 "This effect emulates light that penetrates an object's surface, is "
 "scattered, and then comes out. It is useful to create realistic skin, "
 "marble, colored liquids, etc."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:437
+#: ../../docs/tutorials/3d/spatial_material.rst:449
 msgid "Transmission"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:439
+#: ../../docs/tutorials/3d/spatial_material.rst:451
 msgid ""
 "This controls how much light from the lit side (visible to light) is "
 "transferred to the dark side (opposite from the light). This works well for "
 "thin objects such as plant leaves, grass, human ears, etc."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:446
+#: ../../docs/tutorials/3d/spatial_material.rst:458
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:58
 msgid "Refraction"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:450
+#: ../../docs/tutorials/3d/spatial_material.rst:462
 msgid ""
 "When refraction is enabled, it supersedes alpha blending, and Godot attempts "
 "to fetch information from behind the object being rendered instead. This "
@@ -31025,22 +31084,22 @@ msgid ""
 "life."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:457
+#: ../../docs/tutorials/3d/spatial_material.rst:469
 msgid "Detail"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:459
+#: ../../docs/tutorials/3d/spatial_material.rst:471
 msgid ""
 "Godot allows using secondary albedo and normal maps to generate a detail "
 "texture, which can be blended in many ways. By combining this with secondary "
 "UV or triplanar modes, many interesting textures can be achieved."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:465
+#: ../../docs/tutorials/3d/spatial_material.rst:477
 msgid "There are several settings that control how detail is used."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:467
+#: ../../docs/tutorials/3d/spatial_material.rst:479
 msgid ""
 "Mask: The detail mask is a black and white image used to control where the "
 "blending takes place on a texture. White is for the detail textures, Black "
@@ -31048,26 +31107,26 @@ msgid ""
 "partial blending of the material textures and detail textures."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:472
+#: ../../docs/tutorials/3d/spatial_material.rst:484
 msgid ""
 "Blend Mode: These four modes control how the textures are blended together."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:474
+#: ../../docs/tutorials/3d/spatial_material.rst:486
 msgid ""
 "Mix: Combines pixel values of both textures. At black, only show the "
 "material texture, at white, only show the detail texture. Values of gray "
 "create a smooth blend between the two."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:478
+#: ../../docs/tutorials/3d/spatial_material.rst:490
 msgid ""
 "Add: Adds pixel values of one Texture with the other. Unlike mix mode both "
 "textures are completely mixed at white parts of a mask and not at gray "
 "parts. The original texture is mostly unchanged at black"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:482
+#: ../../docs/tutorials/3d/spatial_material.rst:494
 msgid ""
 "Sub: Subtracts pixel values of one texture with the other. The second "
 "texture is completely subtracted at white parts of a mask with only a little "
@@ -31075,41 +31134,41 @@ msgid ""
 "based on the exact texture."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:487
+#: ../../docs/tutorials/3d/spatial_material.rst:499
 msgid ""
 "Mul: Multiplies the RGB channel numbers for each pixel from the top texture "
 "with the values for the corresponding pixel from the bottom texture."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:490
+#: ../../docs/tutorials/3d/spatial_material.rst:502
 msgid ""
 "Albedo: This is where you put an albedo texture you want to blend. If "
 "nothing is in this slot it will be interpreted as white by default."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:493
+#: ../../docs/tutorials/3d/spatial_material.rst:505
 msgid ""
 "Normal: This is where you put a normal texture you want to blend. If nothing "
 "is in this slot it will be interpreted as a flat normal map. This can still "
 "be used even if the material does not have normal map enabled."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:498
+#: ../../docs/tutorials/3d/spatial_material.rst:510
 msgid "UV1 and UV2"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:500
+#: ../../docs/tutorials/3d/spatial_material.rst:512
 msgid ""
 "Godot supports two UV channels per material. Secondary UV is often useful "
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
 "offset, which is useful when using repeating textures."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:505
+#: ../../docs/tutorials/3d/spatial_material.rst:517
 msgid "Triplanar Mapping"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:507
+#: ../../docs/tutorials/3d/spatial_material.rst:519
 msgid ""
 "Triplanar mapping is supported for both UV1 and UV2. This is an alternative "
 "way to obtain texture coordinates, sometimes called \"Autotexture\". "
@@ -31117,17 +31176,17 @@ msgid ""
 "mapping can be performed in either world space or object space."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:512
+#: ../../docs/tutorials/3d/spatial_material.rst:524
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:518
+#: ../../docs/tutorials/3d/spatial_material.rst:530
 msgid "Proximity and distance fade"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:520
+#: ../../docs/tutorials/3d/spatial_material.rst:532
 msgid ""
 "Godot allows materials to fade by proximity to each other as well as "
 "depending on the distance from the viewer. Proximity fade is useful for "
@@ -31136,17 +31195,17 @@ msgid ""
 "only present after a given distance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:526
+#: ../../docs/tutorials/3d/spatial_material.rst:538
 msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for an "
 "entire scene is usually not a good idea."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:532
+#: ../../docs/tutorials/3d/spatial_material.rst:544
 msgid "Render priority"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:534
+#: ../../docs/tutorials/3d/spatial_material.rst:546
 msgid ""
 "The rendering order of objects can be changed, although this is mostly "
 "useful for transparent objects (or opaque objects that perform depth draw "
@@ -34926,7 +34985,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:837
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1226
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1230
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:668
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:778
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:951
@@ -34962,7 +35021,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:850
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1237
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1241
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:683
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:787
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:960
@@ -35332,55 +35391,62 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:295
 msgid ""
+"To actually preview the \"Pistol_fire\" animation, select the :ref:`Camera "
+"<class_Camera>` node underneath Rotation Helper and check the \"Preview\" "
+"box underneath Perspective in the top-left corner."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:299
+msgid ""
 "Scrubbing the timeline means moving ourselves through the animation. So when "
 "we say \"scrub the timeline until you reach a point\", what we mean is move "
 "through the animation window until you reach the point on the timeline."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:299
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:303
 msgid ""
 "Also, the muzzle of a gun is the end point where the bullet comes out. The "
 "muzzle flash is the flash of light that escapes the muzzle when a bullet is "
 "fired. The muzzle is also sometimes referred to as the barrel of the gun."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:303
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:307
 msgid ""
 "For finer control when scrubbing the timeline, press :kbd:`Ctrl` and scroll "
 "forward with the mouse wheel to zoom in. Scrolling backwards will zoom out."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:306
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:310
 msgid ""
 "You can also change how the timeline scrubbing snaps by changing the value "
 "in ``Step (s)`` to a lower/higher value."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:308
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:312
 msgid ""
 "Once you get to a point you like, right click on the row for \"Animation "
 "Player\" and press ``Insert Key``. In the empty name field, enter "
 "``animation_callback`` and press :kbd:`Enter`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:314
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:318
 msgid ""
 "Now when we are playing this animation the call method track will be "
 "triggered at that specific point of the animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:318
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:322
 msgid "Let's repeat the process for the rifle and knife firing animations!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:320
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:324
 msgid ""
 "Because the process is exactly the same as the pistol, the process is going "
 "to explained in a little less depth. Follow the steps from above if you get "
 "lost! It is exactly the same, just on a different animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:323
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:327
 msgid ""
 "Go to the \"Rifle_fire\" animation from the animation drop down. Add the "
 "call method track once you reach the bottom of the animation track list by "
@@ -35389,13 +35455,13 @@ msgid ""
 "call method track point at that position on the track."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:327
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:331
 msgid ""
 "Type \"animation_callback\" into the name field of the pop up which opened "
 "and press :kbd:`Enter`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:329
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:333
 msgid ""
 "Now we need to apply the callback method track to the knife animation. "
 "Select the \"Knife_fire\" animation and scroll to the bottom of the "
@@ -35404,7 +35470,7 @@ msgid ""
 "place the animation callback method point at."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:333
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:337
 msgid ""
 "We will not actually be firing the knife, and the animation is a stabbing "
 "animation rather than a firing one. For this tutorial we are reusing the gun "
@@ -35412,35 +35478,35 @@ msgid ""
 "is consistent with the other animations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:337
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:341
 msgid ""
 "From there right click on the timeline and click \"Insert Key\". Put "
 "\"animation_callback\" into the name field and press :kbd:`Enter`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:339
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:343
 msgid "Be sure to save your work!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:341
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:345
 msgid ""
 "With that done, we are almost ready to start adding the ability to fire to "
 "our player script! We need to set up one last scene: The scene for our "
 "bullet object."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:345
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:349
 msgid "Creating the bullet scene"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:347
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:351
 msgid ""
 "There are several ways to handle a gun's bullets in video games. In this "
 "tutorial series, we will be exploring two of the more common ways: Objects, "
 "and raycasts."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:352
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:356
 msgid ""
 "One of the two ways is using a bullet object. This will be an object that "
 "travels through the world and handles its own collision code. In this method "
@@ -35448,7 +35514,7 @@ msgid ""
 "it travels forward."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:356
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:360
 msgid ""
 "There are several advantages to this method. The first being we do not have "
 "to store the bullets in our player. We can simply create the bullet and then "
@@ -35456,7 +35522,7 @@ msgid ""
 "the proper signal(s) to the object it collides with, and destroying itself."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:359
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:363
 msgid ""
 "Another advantage is we can have more complex bullet movement. If we want to "
 "make the bullet fall ever so slightly as time goes on, we can make the "
@@ -35466,7 +35532,7 @@ msgid ""
 "nothing in real life moves instantly from one point to another."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:363
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:367
 msgid ""
 "One of the huge disadvantages is performance. While having each bullet "
 "calculate their own paths and handle their own collision allows for a lot of "
@@ -35476,7 +35542,7 @@ msgid ""
 "potentially have several hundred bullets."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:367
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:371
 msgid ""
 "Despite the performance hit, many first person shooters include some form of "
 "object bullets. Rocket launchers are a prime example because in many first "
@@ -35485,7 +35551,7 @@ msgid ""
 "because they generally bounce around the world before exploding."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:371
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:375
 msgid ""
 "While I cannot say for sure this is the case, these games *probably* use "
 "bullet objects in some form or another: (These are entirely from my "
@@ -35493,36 +35559,36 @@ msgid ""
 "of the following games)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:374
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:378
 msgid ""
 "Halo (Rocket launchers, fragmentation grenades, sniper rifles, brute shot, "
 "and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:375
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:379
 msgid ""
 "Destiny (Rocket launchers, grenades, fusion rifles, sniper rifles, super "
 "moves, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:376
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:380
 msgid ""
 "Call of Duty (Rocket launchers, grenades, ballistic knives, crossbows, and "
 "more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:377
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:381
 msgid "Battlefield (Rocket launchers, grenades, claymores, mortars, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:379
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:383
 msgid ""
 "Another disadvantage with bullet objects is networking. Bullet objects have "
 "to sync the positions (at least) with all the clients that are connected to "
 "the server."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:382
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:386
 msgid ""
 "While we are not implementing any form of networking (as that would be in "
 "its own entire tutorial series), it is a consideration to keep in mind when "
@@ -35530,19 +35596,19 @@ msgid ""
 "form of networking in the future."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:387
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:391
 msgid ""
 "The other way of handling bullet collisions we will be looking at is "
 "raycasting."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:389
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:393
 msgid ""
 "This method is extremely common in guns that have fast moving bullets that "
 "rarely change trajectory over time."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:391
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:395
 msgid ""
 "Instead of creating a bullet object and sending it through space, we instead "
 "send a ray starting from the barrel/muzzle of the gun forwards. We set the "
@@ -35550,7 +35616,7 @@ msgid ""
 "length we can adjust how far the bullet 'travels' through space."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:394
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:398
 msgid ""
 "While I cannot say for sure this is the case, these games *probably* use "
 "raycasts in some form or another: (These are entirely from my observations. "
@@ -35558,36 +35624,36 @@ msgid ""
 "following games)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:397
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:401
 msgid ""
 "Halo (Assault rifles, DMRs, battle rifles, covenant carbine, spartan laser, "
 "and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:398
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:402
 msgid ""
 "Destiny (Auto rifles, pulse rifles, scout rifles, hand cannons, machine "
 "guns, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:399
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:403
 msgid ""
 "Call of Duty (Assault rifles, light machine guns, sub machine guns, pistols, "
 "and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:400
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:404
 msgid "Battlefield (Assault rifles, SMGs, carbines, pistols, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:402
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:406
 msgid ""
 "One huge advantage of this method is that it's light on performance. Sending "
 "a couple hundred rays through space is *much* easier for the computer to "
 "calculate than sending a couple hundred bullet objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:406
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:410
 msgid ""
 "Another advantage is we can instantly know if we've hit something or not "
 "exactly when we call for it. For networking this is important because we do "
@@ -35595,7 +35661,7 @@ msgid ""
 "send whether or not the raycast hit."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:409
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:413
 msgid ""
 "Raycasting does have some disadvantages, though. One major disadvantage is "
 "we cannot easily cast a ray in anything but a linear line. This means we can "
@@ -35605,7 +35671,7 @@ msgid ""
 "heavier on performance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:413
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:417
 msgid ""
 "Another disadvantage is we cannot see the bullet. With bullet objects we can "
 "actually see the bullet travel through space if we attach a mesh to it, but "
@@ -35616,13 +35682,13 @@ msgid ""
 "theoretically the bullets move so fast our eyes could not see it anyway."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:420
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:424
 msgid ""
 "Let's get the bullet object set up. This is what our pistol will create when "
 "the \"Pistol_fire\" animation callback function is called."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:423
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:427
 msgid ""
 "Open up ``Bullet_Scene.tscn``. The scene contains :ref:`Spatial "
 "<class_Spatial>` node called bullet, with a :ref:`MeshInstance "
@@ -35630,20 +35696,20 @@ msgid ""
 "`CollisionShape <class_CollisionShape>` children to it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:427
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:431
 msgid ""
 "Create a new script called ``Bullet_script.gd`` and attach it to the "
 "``Bullet`` :ref:`Spatial <class_Spatial>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:429
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:433
 msgid ""
 "We are going to move the entire bullet object at the root (``Bullet``). We "
 "will be using the :ref:`Area <class_Area>` to check whether or not we've "
 "collided with something"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:431
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:435
 msgid ""
 "Why are we using an :ref:`Area <class_Area>` and not a :ref:`RigidBody "
 "<class_RigidBody>`? The main reason we're not using a :ref:`RigidBody "
@@ -35653,61 +35719,61 @@ msgid ""
 "<class_RigidBody>` nodes, including other bullets, will be effected."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:435
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:439
 msgid ""
 "Another reason is simply because it is easier to detect collisions with an :"
 "ref:`Area <class_Area>`!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:437
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:441
 msgid "Here's the script that will control our bullet:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:473
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:477
 msgid "Let's go through the script:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:477
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:481
 msgid "First we define a few class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:479
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:483
 msgid "``BULLET_SPEED``: The speed at which the bullet travels."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:480
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:484
 msgid ""
 "``BULLET_DAMAGE``: The damage the bullet will cause to anything with which "
 "it collides."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:481
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:485
 msgid "``KILL_TIMER``: How long the bullet can last without hitting anything."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:482
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:486
 msgid "``timer``: A float for tracking how long the bullet has been alive."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:483
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:487
 msgid ""
 "``hit_something``: A boolean for tracking whether or not we've hit something."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:485
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:489
 msgid ""
 "With the exception of ``timer`` and ``hit_something``, all of these "
 "variables change how the bullet interacts with the world."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:488
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:492
 msgid ""
 "The reason we are using a kill timer is so we do not have a case where we "
 "get a bullet travelling forever. By using a kill timer, we can ensure that "
 "no bullets will travel forever and consume resources."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:492
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:496
 msgid ""
 "As in :ref:`doc_fps_tutorial_part_one`, we have a couple all uppercase class "
 "variables. The reason behind this is the same as the reason given in :ref:"
@@ -35717,37 +35783,37 @@ msgid ""
 "variables and not constants."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:499
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:503
 msgid ""
 "In ``_ready`` we set the area's ``body_entered`` signal to ourself so that "
 "it calls the ``collided`` function when a body enters the area."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:504
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:508
 msgid ""
 "``_physics_process`` gets the bullet's local ``Z`` axis. If you look at the "
 "scene in local mode, you will find that the bullet faces the positive local "
 "``Z`` axis."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:507
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:511
 msgid ""
 "Next we translate the entire bullet by that forward direction, multiplying "
 "in our speed and delta time."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:509
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:513
 msgid ""
 "After that we add delta time to our timer and check whether the timer has "
 "reached a value as big or greater than our ``KILL_TIME`` constant. If it "
 "has, we use ``queue_free`` to free the bullet."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:514
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:518
 msgid "In ``collided`` we check whether we've hit something yet."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:516
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:520
 msgid ""
 "Remember that ``collided`` is only called when a body has entered the :ref:"
 "`Area <class_Area>` node. If the bullet has not already collided with "
@@ -35757,14 +35823,14 @@ msgid ""
 "bullet's rotation and position."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:521
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:525
 msgid ""
 "in ``collided``, the passed in body can be a :ref:`StaticBody "
 "<class_StaticBody>`, :ref:`RigidBody <class_RigidBody>`, or :ref:"
 "`KinematicBody <class_KinematicBody>`"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:524
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:528
 msgid ""
 "We set the Bullet's ``hit_something`` variable to ``true`` because "
 "regardless of whether or not the body that the bullet collided with has the "
@@ -35772,17 +35838,17 @@ msgid ""
 "sure the bullet does not hit anything else."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:527
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:531
 msgid "Then we free the bullet using ``queue_free``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:529
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:533
 msgid ""
 "You may be wondering why we even have a ``hit_something`` variable if we "
 "free the bullet using ``queue_free`` as soon as it hits something."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:532
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:536
 msgid ""
 "The reason we need to track whether we've hit something or not is because "
 "``queue_free`` does not immediately free the node, so the bullet could "
@@ -35791,19 +35857,19 @@ msgid ""
 "only hit one object."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:540
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:544
 msgid ""
 "Before we start programming the player again, let's take a quick look at "
 "``Player.tscn``. Open up ``Player.tscn`` again."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:543
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:547
 msgid ""
 "Expand ``Rotation_Helper`` and notice how it has two nodes: "
 "``Gun_Fire_Points`` and ``Gun_Aim_Point``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:546
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:550
 msgid ""
 "``Gun_aim_point`` is the point that the bullets will be aiming at. Notice "
 "how it is lined up with the center of the screen and pulled a distance "
@@ -35811,26 +35877,26 @@ msgid ""
 "bullets will for sure collide with as it goes along."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:551
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:555
 msgid ""
 "There is a invisible mesh instance for debugging purposes. The mesh is a "
 "small sphere that visually shows at which target the bullets will be aiming."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:554
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:558
 msgid ""
 "Open up ``Gun_Fire_Points`` and you'll find three more :ref:`Spatial "
 "<class_Spatial>` nodes, one for each weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:557
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:561
 msgid ""
 "Open up ``Rifle_Point`` and you'll find a :ref:`Raycast <class_Raycast>` "
 "node. This is where we will be sending the raycasts for our rifle's bullets. "
 "The length of the raycast will dictate how far our bullets will travel."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:561
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:565
 msgid ""
 "We are using a :ref:`Raycast <class_Raycast>` node to handle the rifle's "
 "bullet because we want to fire lots of bullets quickly. If we use bullet "
@@ -35838,7 +35904,7 @@ msgid ""
 "machines."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:565
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:569
 msgid ""
 "If you are wondering from where the positions of the points came, they are "
 "the rough positions of the ends of each weapon. You can see this by going to "
@@ -35847,7 +35913,7 @@ msgid ""
 "the end of each weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:571
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:575
 msgid ""
 "Open up ``Knife_Point`` and you'll find an :ref:`Area <class_Area>` node. We "
 "are using an :ref:`Area <class_Area>` for the knife because we only care for "
@@ -35856,20 +35922,20 @@ msgid ""
 "that looks like a knife."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:576
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:580
 msgid ""
 "Finally, we have ``Pistol_Point``. This is the point where we will be "
 "creating/instancing our bullet objects. We do not need any additional nodes "
 "here, as the bullet handles all of its own collision detection."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:580
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:584
 msgid ""
 "Now that we've seen how we will handle our other weapons, and where we will "
 "spawn the bullets, let's start working on making them work."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:583
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:587
 msgid ""
 "You can also look at the HUD nodes if you want. There is nothing fancy there "
 "and other than using a single :ref:`Label <class_Label>`, we will not be "
@@ -35878,66 +35944,66 @@ msgid ""
 "nodes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:589
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:593
 msgid "Creating the first weapon"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:591
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:595
 msgid "Lets write the code for each of our weapons, starting with the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:593
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:597
 msgid ""
 "Select ``Pistol_Point`` (``Player`` -> ``Rotation_Helper`` -> "
 "``Gun_Fire_Points`` -> ``Pistol_Point``) and create a new script called "
 "``Weapon_Pistol.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:595
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:599
 msgid "Add the following code to ``Weapon_Pistol.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:646
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:650
 msgid "Let's go over how the script works."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:650
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:654
 msgid "First we define some class variables we'll need in the script:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:652
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:656
 msgid "``DAMAGE``: The amount of damage a single bullet does."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:653
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:657
 msgid "``IDLE_ANIM_NAME``: The name of the pistol's idle animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:654
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:658
 msgid "``FIRE_ANIM_NAME``: The name of the pistol's fire animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:655
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:659
 msgid ""
 "``is_weapon_enabled``: A variable for checking whether this weapon is in use/"
 "enabled."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:656
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:660
 msgid "``bullet_scene``: The bullet scene we worked on earlier."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:657
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:661
 msgid "``player_node``: A variable to hold ``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:659
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:663
 msgid ""
 "The reason we define most of these variables is so we can use them in "
 "``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:661
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:665
 msgid ""
 "Each of the weapons we'll make will have all these variables (minus "
 "``bullet_scene``) so we have a consistent interface to interact with in "
@@ -35947,7 +36013,7 @@ msgid ""
 "to change much of the code in ``Player.gd`` and it will just work."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:666
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:670
 msgid ""
 "We could write all the code in ``Player.gd``, but then ``Player.gd`` will "
 "get increasingly harder to manage as we add weapons. By using a modular "
@@ -35955,23 +36021,23 @@ msgid ""
 "while also making it easier to add/remove/modify weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:671
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:675
 msgid "In ``_ready`` we simply pass over it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:673
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:677
 msgid ""
 "There is one thing of note though, an assumption that we'll fill in ``Player."
 "gd`` at some point."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:675
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:679
 msgid ""
 "We are going to assume that ``Player.gd`` will pass themselves in before "
 "calling any of the functions in ``Weapon_Pistol.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:677
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:681
 msgid ""
 "While this can lead to situations where the player does not pass themselves "
 "in (because we forget), we would have to have a long string of "
@@ -35981,28 +36047,28 @@ msgid ""
 "to each weapon in ``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:683
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:687
 msgid "Next let's look at ``fire_weapon``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:685
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:689
 msgid "The first thing we do is instance the bullet scene we made earlier."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:687
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:691
 msgid ""
 "By instancing the scene, we are creating a new node holding all the node(s) "
 "in the scene we instanced, effectively cloning that scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:689
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:693
 msgid ""
 "Then we add a ``clone`` to the first child node of the root of the scene we "
 "are currently in. By doing this, we're making it a child of the root node of "
 "the currently loaded scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:691
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:695
 msgid ""
 "In other words, we are adding a ``clone`` as a child of the first node "
 "(whatever is at the top of the scene tree) in the currently loaded/opened "
@@ -36011,21 +36077,21 @@ msgid ""
 "scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:694
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:698
 msgid ""
 "As mentioned later below in the section on adding sounds, this method makes "
 "an assumption. This will be explained later in the section on adding sounds "
 "in :ref:`doc_fps_tutorial_part_three`"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:697
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:701
 msgid ""
 "Next we set the global transform of the clone to the ``Pistol_Point``'s "
 "global transform. The reason we do this is so the bullet is spawned at the "
 "end of the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:699
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:703
 msgid ""
 "You can see that ``Pistol_Point`` is positioned right at the end of the "
 "pistol by clicking the :ref:`AnimationPlayer <class_AnimationPlayer>` and "
@@ -36033,23 +36099,23 @@ msgid ""
 "at the end of the pistol when it fires."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:702
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:706
 msgid ""
 "Next we scale it up by a factor of ``4`` because the bullet scene is a "
 "little too small by default."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:704
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:708
 msgid ""
 "Then we set the bullet's damage (``BULLET_DAMAGE``) to the amount of damage "
 "a single pistol bullet does (``DAMAGE``)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:708
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:712
 msgid "Now let's look at ``equip_weapon``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:710
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:714
 msgid ""
 "The first thing we do is check to see whether the animation manager is in "
 "the pistol's idle animation. If we are in the pistol's idle animation, we "
@@ -36057,20 +36123,20 @@ msgid ""
 "has successfully been equipped."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:714
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:718
 msgid ""
 "Because we know our pistol's ``equip`` animation automatically transitions "
 "to the pistol's idle animation, if we are in the pistol's idle animation the "
 "pistol must have finished playing the equip animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:717
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:721
 msgid ""
 "We know these animations will transition because we wrote the code to make "
 "them transition in ``Animation_Manager.gd``"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:719
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:723
 msgid ""
 "Next we check to see if the player is in the ``Idle_unarmed`` animation "
 "state. Because all unequipping animations go to this state, and because any "
@@ -36078,24 +36144,24 @@ msgid ""
 "``Pistol_equip`` if the player is in the ``Idle_unarmed`` state."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:722
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:726
 msgid ""
 "Since we know ``Pistol_equip`` will transition to ``Pistol_idle``, we do not "
 "need to do any more additional processing for equipping weapons, but since "
 "we were not able to equip the pistol yet, we return ``false``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:727
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:731
 msgid "Finally, let's look at ``unequip_weapon``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:729
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:733
 msgid ""
 "``unequip_weapon`` is similar to ``equip_weapon``, but instead we're "
 "checking things in reverse."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:731
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:735
 msgid ""
 "First we check to see whether the player is in the idle animation state. "
 "Then we check to make sure the player is not in the ``Pistol_unequip`` "
@@ -36103,7 +36169,7 @@ msgid ""
 "to play the ``pistol_unequip`` animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:734
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:738
 msgid ""
 "You may be wondering why we are checking to see whether the player is in the "
 "pistol's idle animation, and then making sure the player is not unequipping "
@@ -36113,7 +36179,7 @@ msgid ""
 "unequip animation plays."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:738
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:742
 msgid ""
 "Next we check to see whether the player is in ``Idle_unarmed``, which is the "
 "animation state we will transition into from ``Pistol_unequip``. If the "
@@ -36122,42 +36188,42 @@ msgid ""
 "because we have successfully unequipped the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:741
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:745
 msgid ""
 "If the player is not in ``Idle_unarmed``, we return ``false`` because we "
 "have not yet successfully unequipped the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:744
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:748
 msgid "Creating the other two weapons"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:746
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:750
 msgid ""
 "Now that we have all the code we'll need for the pistol, let's add the code "
 "for the rifle and knife next."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:748
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:752
 msgid ""
 "Select ``Rifle_Point`` (``Player`` -> ``Rotation_Helper`` -> "
 "``Gun_Fire_Points`` -> ``Rifle_Point``) and create a new script called "
 "``Weapon_Rifle.gd``, then add the following:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:801
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:805
 msgid ""
 "Most of this is exactly the same as ``Weapon_Pistol.gd``, so we're only "
 "going to look at what's changed: ``fire_weapon``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:803
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:807
 msgid ""
 "The first thing we do is get the :ref:`Raycast <class_Raycast>` node, which "
 "is a child of ``Rifle_Point``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:805
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:809
 msgid ""
 "Next we force the :ref:`Raycast <class_Raycast>` to update using "
 "``force_raycast_update``. This will force the :ref:`Raycast <class_Raycast>` "
@@ -36165,13 +36231,13 @@ msgid ""
 "collision check with the 3D physics world."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:808
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:812
 msgid ""
 "Then we check to see if the :ref:`Raycast <class_Raycast>` collided with "
 "something."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:810
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:814
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` has collided with something, we first "
 "get the collision body it collided with. This can be a :ref:`StaticBody "
@@ -36179,14 +36245,14 @@ msgid ""
 "`KinematicBody <class_KinematicBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:813
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:817
 msgid ""
 "Next we want to make sure the body we've collided with is not the player, "
 "since we (probably) do not want to give the player the ability to shoot "
 "themselves in the foot."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:815
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:819
 msgid ""
 "If the body is not the player, we then check to see if it has a function/"
 "method called ``bullet_hit``. If it does, we call it and pass in the amount "
@@ -36195,41 +36261,41 @@ msgid ""
 "came."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:820
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:824
 msgid "Now all we need to do is write the code for the knife."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:822
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:826
 msgid ""
 "Select ``Knife_Point`` (``Player`` -> ``Rotation_Helper`` -> "
 "``Gun_Fire_Points`` -> ``Knife_Point``) and create a new script called "
 "``Weapon_Knife.gd``, then add the following:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:873
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:877
 msgid ""
 "As with ``Weapon_Rifle.gd``, the only differences are in ``fire_weapon``, so "
 "let's look at that:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:875
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:879
 msgid ""
 "The first thing we do is get the :ref:`Area <class_Area>` child node of "
 "``Knife_Point``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:877
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:881
 msgid ""
 "Next we want to get all the collision bodies inside the :ref:`Area "
 "<class_Area>` using ``get_overlapping_bodies``. This will return a list of "
 "every body that touches the :ref:`Area <class_Area>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:880
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:884
 msgid "We next want to go through each of those bodies."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:882
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:886
 msgid ""
 "First we check to make sure the body is not the player, because we do not "
 "want to let the player be able to stab themselves. If the body is the "
@@ -36237,7 +36303,7 @@ msgid ""
 "``bodies``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:885
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:889
 msgid ""
 "If we have not jumped to the next body, we then check to see if the body has "
 "the ``bullet_hit`` function/method. If it does, we call it, passing in the "
@@ -36245,7 +36311,7 @@ msgid ""
 "transform of the :ref:`Area <class_Area>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:888
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:892
 msgid ""
 "While we could attempt to calculate a rough location for where the knife hit "
 "exactly, we are not going to because using the :ref:`Area <class_Area>`'s "
@@ -36253,84 +36319,84 @@ msgid ""
 "position for each body is not worth the effort."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:893
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:897
 msgid "Making the weapons work"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:895
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:899
 msgid "Let's start making the weapons work in ``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:897
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:901
 msgid ""
 "First let's start by adding some class variables we'll need for the weapons:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:915
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:919
 msgid "Let's go over what these new variables will do:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:917
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:921
 msgid ""
 "``animation_manager``: This will hold the :ref:`AnimationPlayer "
 "<class_AnimationPlayer>` node and its script, which we wrote previously."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:918
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:922
 msgid ""
 "``current_weapon_name``: The name of the weapon we are currently using. It "
 "has four possible values: ``UNARMED``, ``KNIFE``, ``PISTOL``, and ``RIFLE``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:919
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:923
 msgid "``weapons``: A dictionary that will hold all the weapon nodes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:920
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:924
 msgid ""
 "``WEAPON_NUMBER_TO_NAME``: A dictionary allowing us to convert from a "
 "weapon's number to its name. We'll use this for changing weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:921
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:925
 msgid ""
 "``WEAPON_NAME_TO_NUMBER``: A dictionary allowing us to convert from a "
 "weapon's name to its number. We'll use this for changing weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:922
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:926
 msgid ""
 "``changing_weapon``: A boolean to track whether or not we are changing guns/"
 "weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:923
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:927
 msgid "``changing_weapon_name``: The name of the weapon we want to change to."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:924
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:928
 msgid ""
 "``health``: How much health our player has. In this part of the tutorial we "
 "will not be using it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:925
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:929
 msgid ""
 "``UI_status_label``: A label to show how much health we have, and how much "
 "ammo we have both in our gun and in reserve."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:929
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:933
 msgid ""
 "Next we need to add a few things in ``_ready``. Here's the new ``_ready`` "
 "function:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:961
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:965
 msgid "Let's go over what's changed."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:963
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:967
 msgid ""
 "First we get the :ref:`AnimationPlayer <class_AnimationPlayer>` node and "
 "assign it to the ``animation_manager`` variable. Then we set the callback "
@@ -36339,24 +36405,24 @@ msgid ""
 "function, but we'll get there soon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:967
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:971
 msgid ""
 "Next we get all the weapon nodes and assign them to ``weapons``. This will "
 "allow us to access the weapon nodes only with their name (``KNIFE``, "
 "``PISTOL``, or ``RIFLE``)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:970
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:974
 msgid ""
 "We then get ``Gun_Aim_Point``'s global position so we can rotate the "
 "player's weapons to aim at it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:972
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:976
 msgid "Then we go through each weapon in ``weapons``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:974
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:978
 msgid ""
 "We first get the weapon node. If the weapon node is not ``null``, we then "
 "set its ``player_node`` variable to this script (``Player.gd``). Then we "
@@ -36364,56 +36430,56 @@ msgid ""
 "then rotate it by ``180`` degrees on the ``Y`` axis."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:977
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:981
 msgid ""
 "We rotate all of those weapon points by ``180`` degrees on their ``Y`` axis "
 "because our camera is pointing backwards. If we did not rotate all of these "
 "weapon points by ``180`` degrees, all of the weapons would fire backwards."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:980
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:984
 msgid ""
 "Then we set ``current_weapon_name`` and ``changing_weapon_name`` to "
 "``UNARMED``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:982
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:986
 msgid "Finally, we get the UI :ref:`Label <class_Label>` from our HUD."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:986
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:990
 msgid ""
 "Let's add a new function call to ``_physics_process`` so we can change "
 "weapons. Here's the new code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:996
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1000
 msgid "Now we will call ``process_changing_weapons``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1000
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1004
 msgid ""
 "Now let's add all the player input code for the weapons in "
 "``process_input``. Add the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1040
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1044
 msgid "Let's go over the additions, starting with how we're changing weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1042
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1046
 msgid ""
 "First we get the current weapon's number and assign it to "
 "``weapon_change_number``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1044
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1048
 msgid ""
 "Then we check to see if any of the number keys (keys 1-4) are pressed. If "
 "they are, we set ``weapon_change_number`` to the value mapped at that key."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1047
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1051
 msgid ""
 "The reason key 1 is mapped to ``0`` is because the first element in a list "
 "is mapped to zero, not one. Most list/array accessors in most programming "
@@ -36421,14 +36487,14 @@ msgid ""
 "Zero-based_numbering for more information."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1050
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1054
 msgid ""
 "Next we check to see if ``shift_weapon_positive`` or "
 "``shift_weapon_negative`` is pressed. If one of them is, we add/subtract "
 "``1`` from ``weapon_change_number``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1053
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1057
 msgid ""
 "Because the player may have shifted ``weapon_change_number`` outside of the "
 "number of weapons the player has, we clamp it so it cannot exceed the "
@@ -36436,7 +36502,7 @@ msgid ""
 "``weapon_change_number`` is ``0`` or more."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1056
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1060
 msgid ""
 "Then we check to make sure the player is not already changing weapons. If "
 "the player is not, we then check to see if the weapon the player wants to "
@@ -36446,51 +36512,51 @@ msgid ""
 "set ``changing_weapon`` to ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1060
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1064
 msgid ""
 "For firing the weapon we first check to see if the ``fire`` action is "
 "pressed. Then we check to make sure the player is not changing weapons. Next "
 "we get the weapon node for the current weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1064
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1068
 msgid ""
 "If the current weapon node does not equal ``null``, and the player is in its "
 "``IDLE_ANIM_NAME`` state, we set the player's animation to the current "
 "weapon's ``FIRE_ANIM_NAME``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1069
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1073
 msgid "Let's add ``process_changing_weapons`` next."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1071
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1075
 msgid "Add the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1107
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1111
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:535
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:290
 msgid "Let's go over what's happening here:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1109
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1113
 msgid ""
 "The first thing we do is make sure we've received input to change weapons. "
 "We do this by making sure ``changing_weapons`` is ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1111
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1115
 msgid ""
 "Next we define a variable (``weapon_unequipped``) so we can check whether "
 "the current weapon has been successfully unequipped or not."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1113
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1117
 msgid "Then we get the current weapon from ``weapons``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1115
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1119
 msgid ""
 "If the current weapon is not ``null``, then we need to check whether the "
 "weapon is enabled. If the weapon is enabled, we call its ``unequip_weapon`` "
@@ -36499,7 +36565,7 @@ msgid ""
 "successfully been unequipped."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1118
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1122
 msgid ""
 "If the current weapon is ``null``, then we can simply set "
 "``weapon_unequipped`` to ``true``. The reason we do this check is because "
@@ -36508,19 +36574,19 @@ msgid ""
 "player wants to change to."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1121
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1125
 msgid ""
 "If the player has successfully unequipped the current weapon "
 "(``weapon_unequipped == true``), we need to equip the new weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1123
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1127
 msgid ""
 "First we define a new variable (``weapon_equipped``) for tracking whether "
 "the player has successfully equipped the new weapon or not."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1125
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1129
 msgid ""
 "Then we get the weapon the player wants to change to. If the weapon the "
 "player wants to change to is not ``null``, we then check to see whether it's "
@@ -36529,14 +36595,14 @@ msgid ""
 "``weapon_equipped`` to ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1128
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1132
 msgid ""
 "If the weapon the player wants to change to is ``null``, we simply set "
 "``weapon_equipped`` to ``true`` because we do not have any node/script for "
 "``UNARMED``, nor do we have any animations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1131
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1135
 msgid ""
 "Finally, we check to see whether the player has successfully equipped the "
 "new weapon. If (s)he has done so, we set ``changing_weapon`` to ``false`` "
@@ -36545,30 +36611,30 @@ msgid ""
 "has changed, and then we set ``changing_weapon_name`` to an empty string."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1137
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1141
 msgid ""
 "Now, we need to add one more function to the player, and then the player is "
 "ready to start firing the weapons!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1139
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1143
 msgid ""
 "We need to add ``fire_bullet``, which will be called by the :ref:"
 "`AnimationPlayer <class_AnimationPlayer>` at those points we set earlier in "
 "the :ref:`AnimationPlayer <class_AnimationPlayer>` function track:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1151
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1155
 msgid "Let's go over what this function does:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1153
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1157
 msgid ""
 "First we check to see whether the player is changing weapons. If the player "
 "is changing weapons, we do not want shoot, so we ``return``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1155
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1159
 msgid ""
 "Calling ``return`` stops the rest of the function from being called. In this "
 "case, we are not returning a variable because we are only interested in not "
@@ -36576,45 +36642,45 @@ msgid ""
 "variable either when we call this function."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1159
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1163
 msgid ""
 "Then we tell the current weapon the player is using to fire by calling its "
 "``fire_weapon`` function."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1161
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1165
 msgid ""
 "Remember how we mentioned the speed of the animations for firing was faster "
 "than the other animations? By changing the firing animation speeds, you can "
 "change how fast the weapon fires bullets!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1167
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1171
 msgid ""
 "Before we are ready to test our new weapons, we still have a bit of work to "
 "do."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1170
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1174
 msgid "Creating some test subjects"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1172
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1176
 msgid ""
 "Create a new script by going to the scripting window, clicking \"file\", and "
 "selecting new. Name this script ``RigidBody_hit_test`` and make sure it "
 "extends :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1175
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1179
 msgid "Now we need to add this code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1192
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1196
 msgid "Let's go over how ``bullet_hit`` works:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1195
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1199
 msgid ""
 "First we get the bullet's forward directional vector. This is so we can tell "
 "from which direction the bullet will hit the :ref:`RigidBody "
@@ -36622,7 +36688,7 @@ msgid ""
 "<class_RigidBody>` in the same direction as the bullet."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1198
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1202
 msgid ""
 "We need to boost the directional vector by ``BASE_BULLET_BOOST`` so the "
 "bullets pack a bit more of a punch and move the :ref:`RigidBody "
@@ -36632,11 +36698,11 @@ msgid ""
 "<class_RigidBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1202
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1206
 msgid "Then we apply an impulse using ``apply_impulse``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1204
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1208
 msgid ""
 "First, we need to calculate the position for the impulse. Because "
 "``apply_impulse`` takes a vector relative to the :ref:`RigidBody "
@@ -36649,57 +36715,57 @@ msgid ""
 "<class_RigidBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1210
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1214
 msgid ""
 "Finally, we need to calculate the force for the impulse. For this, we use "
 "the direction the bullet is facing and multiply it by the bullet's damage. "
 "This gives a nice result and for stronger bullets, we get a stronger result."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1215
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1219
 msgid ""
 "Now we need to attach this script to all of the :ref:`RigidBody "
 "<class_RigidBody>` nodes we want to affect."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1217
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1221
 msgid ""
 "Open up ``Testing_Area.tscn`` and select all the cubes parented to the "
 "``Cubes`` node."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1219
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1223
 msgid ""
 "If you select the top cube, and then hold down :kbd:`Shift` and select the "
 "last cube, Godot will select all the cubes in-between!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1222
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1226
 msgid ""
 "Once you have all the cubes selected, scroll down in the inspector until you "
 "get to the \"scripts\" section. Click the drop down and select \"Load\". "
 "Open your newly created ``RigidBody_hit_test.gd`` script."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1230
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1234
 msgid ""
 "That was a lot of code! But now, with all that done, you can go and give "
 "your weapons a test!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1232
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1236
 msgid ""
 "You should now be able to fire as many bullets as you want at the cubes and "
 "they will move in response to the bullets colliding with them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1235
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1239
 msgid ""
 "In :ref:`doc_fps_tutorial_part_three`, we will add ammo to the weapons, as "
 "well as some sounds!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1239
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1243
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_2.zip <files/Godot_FPS_Part_2.zip>`"
@@ -61502,7 +61568,7 @@ msgstr ""
 msgid ""
 "Godot uses a mid-level object :ref:`NetworkedMultiplayerPeer "
 "<class_NetworkedMultiplayerPeer>`. This object is not meant to be created "
-"directly, but is designed so that several implementations can provide it."
+"directly, but is designed so that several C++ implementations can provide it."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:62
