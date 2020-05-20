@@ -10,6 +10,7 @@
 # Luboš Nečas <lubosnecas506@seznam.cz>, 2019.
 # Martin Novák <maidx@seznam.cz>, 2019.
 # Miroslav Kotalík <mikotalik@seznam.cz>, 2019.
+# Ondrej Pavelka <ondrej.pavelka@outlook.com>, 2020.
 # SharpCat <mix9k846@gmail.com>, 2019.
 # Validbit <validbit@outlook.com>, 2020.
 # Vít Petričák <v.petricak@gmail.com>, 2018.
@@ -21,8 +22,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-04 09:58+0200\n"
-"PO-Revision-Date: 2020-04-15 14:28+0000\n"
-"Last-Translator: Validbit <validbit@outlook.com>\n"
+"PO-Revision-Date: 2020-05-20 14:07+0000\n"
+"Last-Translator: Ondrej Pavelka <ondrej.pavelka@outlook.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
 "Language: cs\n"
@@ -30,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -42,8 +43,9 @@ msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"Dokumentace Godotu je dostupná v různých jazycích a verzích. Otevřením "
-"panelu \"read the Docs\" dole v postranní liště zobrazíte seznam."
+"Dokumentace enginu Godot je dostupná v mnoha jazycích a verzích. Rozbalte "
+"panel \"Přečtěte si dokumenty\" v dolní části postranního panelu pro "
+"zobrazení seznamu."
 
 #: ../../docs/index.rst:10
 #, fuzzy
@@ -64,9 +66,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
-"Tato dokumentace je přeložena z `anglického originálu <https://docs."
-"godotengine.org/en/latest>`_ komunitou z `Weblate <https://hosted.weblate."
-"org/projects/godot-engine/godot-docs>`_."
+"Tato dokumentace byla přeložena z `anglického originálu <https://docs."
+"godotengine.org/en/latest>`_ členy komunity z `Weblate <https://hosted."
+"weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -75,9 +77,9 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
-"V závislosti na úplnosti překladu je možné najít odstavce, nebo celé "
-"stránky, které jsou stále v angličtině. Můžete pomoci komunitě poskytnutím "
-"nových překladů, nebo revizí existujících na Weblate."
+"V závislosti na úrovni dokončení překladu můžete najít odstavce, nebo celé "
+"stránky, které jsou ještě v angličtině. Můžete pomoci komunitě tím, že "
+"poskytnete nové překlady, nebo přezkoumáte stávající překlady na Weblate."
 
 #: ../../docs/index.rst:27
 msgid ""
@@ -85,8 +87,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
-"Prozatím jsou překlady dostupné pouze v \"latest\" (vývojové) větvi, i tak "
-"by ale měly být vhodné k naučení se jak používat stabilní Godot."
+"Prozatím jsou překlady dostupné pouze v \"latest\" (vývojové) větvi, i "
+"přesto jsou vhodné k učení jak používat stable verzi Godotu."
 
 #: ../../docs/index.rst:31
 #, fuzzy
@@ -335,7 +337,6 @@ msgstr ""
 "iOS) a webové (HTML5) platformy."
 
 #: ../../docs/about/introduction.rst:45
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -344,12 +345,12 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot je zcela zdarma a open source pod permisivní MIT licencí. Žádné háčky, "
-"žádné poplatky, nic. Hry vytvořené uživatelem jsou jejich do posledního "
-"řádku kódu enginu. Vývoj Godot Enginu je plně nezávislý, komunitou řízený, "
-"dává uživatelům moc pomáhat tvarovat svůj engine tak, aby splnil jejich "
-"očekávání. Je podporován `Software Freedom Conservancy <https://"
-"sfconservancy.org>`_ not-for-profit."
+"Godot je zcela zdarma a open source engine, který spadá pod permisivní MIT "
+"licenci. Žádné háčky, bez poplatků, nic. Hry patří těm co je vytvořili, a to "
+"včetně každého řádku kódu enginu. Vývoj Godot Enginu je plně nezávislý a "
+"komunitou řízený. Dává uživatelům možnost upravit si engine tak, aby splnil "
+"všechna jejich očekávání. Je podporován organizací `Software Freedom "
+"Conservancy <https://sfconservancy.org>`_ not-for-profit."
 
 #: ../../docs/about/introduction.rst:52
 msgid ""
@@ -510,7 +511,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
-msgstr ""
+msgstr "Ve zkratce:"
 
 #: ../../docs/about/faq.rst:16
 msgid ""
@@ -10015,9 +10016,8 @@ msgid "``-s <script>``, ``--script <script>``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
-#, fuzzy
 msgid "Run a script."
-msgstr "Vytváření obsahu"
+msgstr "Spustit skript."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "``--check-only``"
@@ -12853,7 +12853,7 @@ msgstr "Strom animací"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "Duplikovat výběr"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"

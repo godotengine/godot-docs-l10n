@@ -5,11 +5,12 @@
 # <grenoscar@gmail.com>, 2018.
 # Christoffer Sundbom <christoffer_karlsson@live.se>, 2018.
 # Daniel K <danielkimblad@hotmail.com>, 2018.
+# Joakim Lundberg <joakim@joakimlundberg.com>, 2020.
 # Mattias Münster <mattiasmun@gmail.com>, 2019.
 # Molntussen <frida@molntussen.com>, 2019.
 # Tim Stahel <timstahel@gmail.com>, 2018.
 # Tobias Björkdahl <tobbe_chevy@hotmail.com>, 2018.
-# Toiya <elviraa98@gmail.com>, 2019.
+# Toiya <elviraa98@gmail.com>, 2019-2020.
 # William Nilsson <wille@kalmarit.se>, 2018.
 #
 msgid ""
@@ -17,8 +18,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-04 09:58+0200\n"
-"PO-Revision-Date: 2019-12-03 07:10+0000\n"
-"Last-Translator: Mattias Münster <mattiasmun@gmail.com>\n"
+"PO-Revision-Date: 2020-05-07 08:01+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/sv/>\n"
 "Language: sv\n"
@@ -26,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -138,7 +139,7 @@ msgstr ""
 
 #: ../../docs/index.rst:58
 msgid "weblate_widget"
-msgstr ""
+msgstr "weblate_widget"
 
 #: ../../docs/index.rst:59
 msgid ""
@@ -167,7 +168,7 @@ msgstr "Gemenskap"
 
 #: ../../docs/index.rst:131
 msgid "Class reference"
-msgstr ""
+msgstr "Klass referens"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
@@ -285,6 +286,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+":ref:`Tutorials and resources <doc_community_tutorials>` sidan listar video "
+"guider gjorda av andra användare. Om du föredrar video framför text kan det "
+"vara värt att titta där."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -292,6 +296,9 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Om du har problem med en av guiderna eller ditt projekt så kan du hitta "
+"hjälp på de olika :ref: `Community channel <doc_community_channels>`, "
+"speciellt Godots Discord community, Q&A och IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -354,7 +361,6 @@ msgid "About the documentation"
 msgstr "Om manualen"
 
 #: ../../docs/about/introduction.rst:59
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -363,12 +369,12 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"Den här manualen skrivs kontinuerligt, rättas, ändras och uppdateras av "
-"medlemmar av Godot-spelmotorns gemenskap. Den ändras via textfiler i markup "
-"språket `reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_ "
-"och komplieras sedan till en statisk hemsida/offline dokument med hjälp av "
-"det öppna källkodsprojektet `Sphinx <http://www.sphinx-doc.org>`_ och  "
-"`ReadTheDocs <https://readthedocs.org/>`_ verktygen."
+"Den här dokumentationen skrivs, rättas, ändras och uppdateras kontinuerligt "
+"av medlemmar av Godot-spelmotorns gemenskap. Den ändras via textfiler i "
+"markupspråket `reStructuredText <http://www.sphinx-doc.org/en/stable/rest."
+"html>`_ och kompileras sedan till en statisk hemsida/offlinedokument med "
+"hjälp av det öppna källkodsprojektet `Sphinx <http://www.sphinx-doc.org>`_ "
+"och `ReadTheDocs <https://readthedocs.org/>`_ verktygen."
 
 #: ../../docs/about/introduction.rst:66
 msgid ""
@@ -397,9 +403,8 @@ msgstr ""
 "\"."
 
 #: ../../docs/about/introduction.rst:77
-#, fuzzy
 msgid "Organization of the documentation"
-msgstr "Manualens organisation"
+msgstr "Dokumentationens organisation"
 
 #: ../../docs/about/introduction.rst:79
 #, fuzzy
@@ -423,7 +428,6 @@ msgstr ""
 "innehåller även :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
@@ -431,20 +435,18 @@ msgid ""
 "tutorial which should be the entry point for all new users."
 msgstr ""
 "Avdelningen :ref:`sec-learn` är kanske den viktigaste delen av den här "
-"manualen, eftersom den innewhåller all nödvändig informationom hur man "
+"manualen, eftersom den innewhåller all nödvändig information om hur man "
 "använder spelmotorn för att göra spel. Den börjar med :ref:`Steg för steg "
 "<toc-learn-step_by_step>` guiden vilket är bästa stället att börja för alla "
 "nybörjare."
 
 #: ../../docs/about/introduction.rst:91
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-"Avdelningen :ref:`sec-tutorials` , å andra sidan, kan besökas efter behov, "
-"utan någon speciell ordning. Den innehåller många funktions-specifika guider "
-"och tips."
+"Avdelningen :ref:`sec-tutorials` kan läsas efter behov, utan någon speciell "
+"ordning. Den innehåller många funktions-specifika guider och tips."
 
 #: ../../docs/about/introduction.rst:93
 msgid ""
@@ -457,7 +459,6 @@ msgstr ""
 "spelmotorn samt utvecklar C++ moduler och plugins."
 
 #: ../../docs/about/introduction.rst:96
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -466,10 +467,11 @@ msgid ""
 "tutorials outside of this documentation."
 msgstr ""
 "Avdelningen :ref:`sec-community` ger information om hur man bidrar till "
-"utvecklingen av spelmotorn och dess gemenskap. Bl.a. hur man rapporterar "
-"buggar, hjälper till med manualen etc. Den hänvisar även till olika "
-"gemenskaps-kanaler som IRC och Discord och innehåller en lista med "
-"rekommenderade tredjeparts-guider som inte är inkluderade i denna manual."
+"utvecklingen av spelmotorn och dess gemenskap, bl a hur man rapporterar "
+"buggar, hjälper till med dokumentationen, etc. Den hänvisar även till olika "
+"gemenskapskanaler som IRC och Discord och innehåller en lista med "
+"rekommenderade tredjeparts-guider som inte är inkluderade i denna "
+"dokumentation."
 
 #: ../../docs/about/introduction.rst:101
 msgid ""
@@ -500,7 +502,7 @@ msgstr "Ha så roligt med läsningen och spelutvecklingen med spelmotorn Godot!"
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:42

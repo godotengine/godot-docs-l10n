@@ -7,6 +7,7 @@
 # Bagus Aji Santoso <lobothijau@gmail.com>, 2018.
 # Damar Inderajati <damarind@gmail.com>, 2018.
 # Dimzt <dimas12345yuio@gmail.com>, 2019.
+# dzikroy 119 <dzikroy119@gmail.com>, 2020.
 # Evan Hyacinth <muhammad.ivan669@gmail.com>, 2018-2019.
 # Fajar Ru <kzofajar@gmail.com>, 2018.
 # herri siagian <herry.it.2007@gmail.com>, 2019.
@@ -24,8 +25,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-04 09:58+0200\n"
-"PO-Revision-Date: 2020-04-30 17:51+0000\n"
-"Last-Translator: Rahman Wardantz <rahman.wardantz@gmail.com>\n"
+"PO-Revision-Date: 2020-05-20 14:07+0000\n"
+"Last-Translator: dzikroy 119 <dzikroy119@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -33,7 +34,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.0.2\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -3241,12 +3242,17 @@ msgid ""
 "Supports multiple threads as efficiently as statically typed languages - one "
 "of the limitations that made us avoid VMs such as Lua, Squirrel, etc."
 msgstr ""
+"Mendukung banyak utas seefisien bahasa yang diketik secara statis - salah "
+"satu batasan yang membuat kami menghindari VM seperti Lua, Squirrel, dll."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:33
 msgid ""
 "Uses no garbage collector, so it trades a small bit of automation (most "
 "objects are reference counted anyway), by determinism."
 msgstr ""
+"Tidak menggunakan pengumpul sampah, jadi itu memperdagangkan sedikit "
+"otomatisasi (sebagian besar objek adalah referensi tetap dihitung), dengan "
+"determinisme."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:34
 msgid ""
@@ -3254,17 +3260,22 @@ msgid ""
 "GDNative) if more performance is required, all without recompiling the "
 "engine."
 msgstr ""
+"Sifat dinamisnya memudahkan untuk mengoptimalkan bagian kode dalam C ++ "
+"(melalui GDNative) jika diperlukan lebih banyak kinerja, semua tanpa "
+"mengkompilasi ulang mesin."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:36
 msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
+"Jika Anda ragu-ragu dan memiliki pengalaman dengan pemrograman, terutama "
+"bahasa yang diketik secara dinamis, buka GDScript!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 #: ../../docs/getting_started/scripting/visual_script/index.rst:2
 msgid "VisualScript"
-msgstr ""
+msgstr "ScriptVisual"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:42
 msgid ""

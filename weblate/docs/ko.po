@@ -7,6 +7,7 @@
 # bulldak <jun98518@naver.com>, 2018.
 # cbj0523 <ccbj0523@gmail.com>, 2019.
 # Ch <ccwpc@hanmail.net>, 2018, 2020.
+# Cho Sung Bae <ihopi73@gmail.com>, 2020.
 # deviancekr <day@live.co.kr>, 2020.
 # Eunwoo Lee <eunwoo123@gmail.com>, 2018.
 # geun-tak Jeong <beroberos@gmail.com>, 2018.
@@ -41,8 +42,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-04 09:58+0200\n"
-"PO-Revision-Date: 2020-04-30 17:51+0000\n"
-"Last-Translator: Ch. <ccwpc@hanmail.net>\n"
+"PO-Revision-Date: 2020-05-20 14:07+0000\n"
+"Last-Translator: Cho Sung Bae <ihopi73@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
 "Language: ko\n"
@@ -50,7 +51,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.0.2\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -108,7 +109,6 @@ msgstr ""
 "개발 브랜치의 내용으로도 안정 버전 Godot을 배우기에는 무리가 없을 것입니다."
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -116,9 +116,10 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"커뮤니티 기반으로 개발되는 자유 오픈소스 2D & 3D 게임 엔진 Godot 엔진의 공식 "
-"문서에 온 것을 환영합니다! 처음이라면 :ref:`소개 페이지<doc_about_intro>`\\ "
-"에서 이 문서에 대한 개요를 읽어보는 것을 추천합니다."
+"커뮤니티 기반으로 개발되는 자유 오픈소스 2D & 3D 게임 엔진인 'Godot 엔진 "
+"<https://godotengine.org>`__, 의 공식 문서에 온 것을 환영합니다! 이 문서를 처"
+"음 보는 것이라면  :ref:`소개 페이지<doc_about_intro>` 에서 이 문서에 대한 개"
+"요를 읽어보는 것을 추천합니다."
 
 #: ../../docs/index.rst:37
 msgid ""
@@ -188,9 +189,8 @@ msgid "Community"
 msgstr "커뮤니티"
 
 #: ../../docs/index.rst:131
-#, fuzzy
 msgid "Class reference"
-msgstr "현재 씬 변경하기"
+msgstr "클래스 레퍼런스"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
@@ -422,14 +422,13 @@ msgid "Organization of the documentation"
 msgstr "문서의 구조"
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
-"이 문서는 크게 다섯 개 섹션으로 구성되어 있고 섹션마다 분량이 크게 다르지만 "
-"구분 자체는 꽤 직관적으로 되어 있습니다:"
+"이 문서는 크게 다섯 개 섹션으로 구성되어 있으며 섹션마다 분량이 크게 다르지"
+"만 구분 자체는 꽤 직관적으로 되어 있습니다:"
 
 #: ../../docs/about/introduction.rst:83
 msgid ""
@@ -14142,9 +14141,8 @@ msgid "``canvas_item_editor/preview_canvas_scale``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
-#, fuzzy
 msgid "Insert Key"
-msgstr "다음 경우에 공백을 넣습니다:"
+msgstr "키 삽입"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -14626,7 +14624,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "복사"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -15806,7 +15804,7 @@ msgstr "애니메이션 트리"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "선택 항목 복제"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -15814,7 +15812,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "선택된 트랙에 복제"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -15829,9 +15827,8 @@ msgid "``animation_editor/duplicate_selection_transposed``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
-#, fuzzy
 msgid "Delete Selection"
-msgstr "반사"
+msgstr "선택 항목 삭제"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -15839,7 +15836,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "다음 단계로 이동"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -15855,7 +15852,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "이전 단계로 이동"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"

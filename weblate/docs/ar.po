@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Airbus5717 <Abdussamadf350@gmail.com>, 2020.
+# amrdarweesh <amr.darweesh@gmail.com>, 2020.
 # Anas Khalil <anas.khalil@outlook.com>, 2018.
 # Aymen B'm <boxaymen7@gmail.com>, 2018.
 # Bellachia Mohamed Bahaa Eddine <bellachiamohamedbahaa@gmail.com>, 2019.
@@ -23,8 +24,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-04 09:58+0200\n"
-"PO-Revision-Date: 2020-05-04 07:47+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-05-13 19:56+0000\n"
+"Last-Translator: amrdarweesh <amr.darweesh@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ar/>\n"
 "Language: ar\n"
@@ -48,7 +49,6 @@ msgstr ""
 "في الجزء السفلي من الشريط الجانبي لمشاهدة قائمة اللغات."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.2 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -56,8 +56,10 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
-"هذا المستند يخص الفرع الغير مستقر. هل تبحث عن مستند الفرع المستقر الحاليّ؟ "
-"أنظر هنا <http://docs.godotengine.org/en/stable>`_."
+"هذه هي الوثائق الخاصة بفرع 3.2 المستقر. هل تبحث عن وثائق الفرع الحالي "
+"**التطوير** ؟ 'إلقِ نظرة هنا =https://docs.godotengine.org/en/latest>'_. "
+"يمكنك أيضًا تصفح وثائق الفرع السابق المستقر '3.1 2.3.1 &amp; https://docs."
+"godotengine.org/en/3.1>__."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -11804,7 +11806,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
-msgstr ""
+msgstr "حفظ جميع المشاهد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
@@ -11934,7 +11936,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "Take Screenshot"
-msgstr ""
+msgstr "أخذ صورة للشاشة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
@@ -12052,7 +12054,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "توسيع التبويب السفلي"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -13561,25 +13563,23 @@ msgstr "البرمجية البصرية VisualScript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
-msgstr ""
+msgstr "إيجاد نوع العُقدة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "``visual_script_editor/find_node_type``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
-#, fuzzy
 msgid "Copy Nodes"
-msgstr "العُقد"
+msgstr "نسخ العُقد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
-#, fuzzy
 msgid "Cut Nodes"
-msgstr "العُقد"
+msgstr "قص العُقد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "``visual_script_editor/cut_nodes``"
@@ -13595,7 +13595,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "Delete Selected"
-msgstr ""
+msgstr "حذف المُختار"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -17928,7 +17928,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr ""
+msgstr "الحدود المُبطنة Padding"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -18793,7 +18793,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr ""
+msgstr "مسار المورد"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -21075,7 +21075,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 msgid "Value"
-msgstr ""
+msgstr "القيمة"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:149
 msgid "``%INT_TYPE%``"
@@ -22385,7 +22385,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "Format"
-msgstr ""
+msgstr "البنية (اللاحقة)"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "1 second of audio"
@@ -25149,7 +25149,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
 msgid "GDNative"
-msgstr ""
+msgstr "GDNative"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
 msgid "Clipboard synchronization between engine and operating system"
@@ -28380,7 +28380,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:455
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:470
 msgid "Type"
-msgstr ""
+msgstr "النوع"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
@@ -49841,7 +49841,7 @@ msgstr ""
 #: ../../docs/tutorials/io/background_loading.rst:24
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Usage"
-msgstr ""
+msgstr "الاستخدام"
 
 #: ../../docs/tutorials/io/background_loading.rst:26
 msgid "Usage is generally as follows"
@@ -75738,7 +75738,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:144
 msgid "Errors"
-msgstr ""
+msgstr "أخطاء"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:146
 msgid ""
@@ -75747,7 +75747,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
 msgid "Profiler"
-msgstr ""
+msgstr "مُنشئ الملفات التعريفية Profiler"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:151
 msgid ""
@@ -75808,7 +75808,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:187
 msgid "Monitors"
-msgstr ""
+msgstr "المراقبون Monitors"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:189
 msgid ""
@@ -75831,7 +75831,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:201
 msgid "Misc"
-msgstr ""
+msgstr "المتنوعات Misc"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:203
 msgid ""

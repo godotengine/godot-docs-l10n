@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Harsh Agarwal <ultramarinebicycle@gmail.com>, 2020.
 # Lakshmi-Jayakumar <lakshmi.jayakumar.tkm@gmail.com>, 2019.
 # Shirious <sad3119823@gmail.com>, 2020.
 # Suryansh5545 <suryanshpathak5545@gmail.com>, 2020.
@@ -12,8 +13,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-04 09:58+0200\n"
-"PO-Revision-Date: 2020-04-03 09:50+0000\n"
-"Last-Translator: Suryansh5545 <suryanshpathak5545@gmail.com>\n"
+"PO-Revision-Date: 2020-05-07 21:28+0000\n"
+"Last-Translator: Harsh Agarwal <ultramarinebicycle@gmail.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/hi/>\n"
 "Language: hi\n"
@@ -21,12 +22,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.2* branch"
-msgstr "गोडोट डॉक्स - * मास्टर * शाखा"
+msgstr "गोडोट प्रलेखन - *३.२* शाखा"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -37,7 +37,6 @@ msgstr ""
 "\"डॉक्स पढ़ें\" पैनल का विस्तार करें।"
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.2 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -45,8 +44,9 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
-"यह विकास (मास्टर) शाखा के लिए प्रलेखन है। वर्तमान **स्थिर ** शाखा के प्रलेखन की तलाश "
-"में? ' यहां एक नज़र है <https://docs.godotengine.org/en/stable>'_।"
+"यह प्रलेखन स्थिर ३.२ शाखा के लिए है। वर्तमान **विकास** शाखा के प्रलेखन की तलाश में हैं ? "
+"`यहाँ देखिए <https://docs.godotengine.org/en/latest>`_। आप पिछले स्थिर प्रलेखन "
+"`3.1 <https://docs.godotengine.org/en/3.1>`_को भी देख सकते हैं।"
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -79,7 +79,6 @@ msgstr ""
 "फिर भी स्थिर गोडॉट रिलीज का उपयोग करने के तरीके सीखने के लिए उपयुक्त होना चाहिए।"
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -87,10 +86,10 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"गोडोट इंजन (Godot Engine), स्वतंत्र और खुला स्रोत (free and open source) समुदाय "
-"संचालित 2d और 3d खेल इंजन के आधिकारिक प्रलेखन में आपका स्वागत है! यदि आप इस दस्तावेज़ के "
-"लिए नए हैं, तो हम अनुशंसा करते है कि आप पढ़ें: ref: ' परिचय पृष्ठ < doc_about_intro > ' "
-"इस दस्तावेज़ के अवलोकन के लिए ।"
+"गोडोट इंजन (Godot Engine), स्वतंत्र और खुले स्रोत (free and open source) समुदाय "
+"द्वारा संचालित 2d और 3d गेम इंजन के आधिकारिक प्रलेखन में आपका स्वागत है! यदि आप इस "
+"प्रलेखन के लिए नए हैं, तो हम यह अनुशंसा करते है कि आप : ref:` परिचय पृष्ठ < "
+"doc_about_intro > ` पढ़ें इस दस्तावेज़ के अवलोकन के लिए ।"
 
 #: ../../docs/index.rst:37
 msgid ""
@@ -162,7 +161,7 @@ msgstr "समुदाय"
 
 #: ../../docs/index.rst:131
 msgid "Class reference"
-msgstr ""
+msgstr "वर्ग का संदर्भ"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
@@ -395,14 +394,13 @@ msgid "Organization of the documentation"
 msgstr "प्रलेखन के संगठन"
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
-"यह प्रलेखन सामग्री के प्रभावशाली असंतुलित वितरण के साथ पांच वर्गों में आयोजित किया जाता है "
-"- लेकिन जिस तरह से इसे विभाजित किया जाता है वह अपेक्षाकृत सहज होना चाहिए:"
+"इस प्रलेखन को पांच खंडों में आयोजित किया गया है, प्रभावशाली रूप से अंतर्वस्तु के असंतुलित "
+"वितरण के साथ  - परंतु इसे विभाजित करने का तरीका अपेक्षाकृत सहज होना चाहिए:"
 
 #: ../../docs/about/introduction.rst:83
 msgid ""
@@ -821,6 +819,10 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
+"शुरुआती दिनों में, इस इंजन ने `लुआ (Lua) <https://www.lua.org>` स्क्रिप्टिंग भाषा का "
+"उपयोग किया था। लुआ तेज़ तो है, परन्तु ऑब्जेक्ट ओरिएंटेड सिस्टम (फॉलबैक का उपयोग करके) के "
+"लिए बाइंडिंग बनाना जटिल और धीमा था और भारी मात्रा में कोड लेता था। `पायथन <https://"
+"www.python.org>` __ के साथ कुछ प्रयोगों के बाद, यह एम्बेड करना भी मुश्किल साबित हुआ।"
 
 #: ../../docs/about/faq.rst:135
 msgid ""
@@ -828,22 +830,20 @@ msgid ""
 msgstr "गोडॉट के लिए एक कस्टम स्क्रिप्टिंग भाषा बनाने के मुख्य कारण थे:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"अधिकांश स्क्रिप्ट वीएम में खराब थ्रेड समर्थन, और गोडॉट धागे (लुआ, पायथन, गिलहरी, जेएस, "
-"एएस, आदि) का उपयोग करता है।"
+"अधिकांश स्क्रिप्ट वीएम में खराब थ्रेडिंग समर्थन है, और गोडोट थ्रेड्स (लुआ, पायथन, स्क्वीररेल , "
+"जावास्क्रिप्ट, एक्शनस्क्रिप्ट आदि) का उपयोग करता है।"
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
 "अधिकांश स्क्रिप्ट वीएम में खराब वर्ग-विस्तार समर्थन, और गोडॉट के काम करने के तरीके के अनुकूल "
-"होना अत्यधिक अक्षम है (लुआ, पायथन, जेएस)।"
+"होना अत्यधिक अक्षम है (लुआ, पायथन, जावास्क्रिप्ट)।"
 
 #: ../../docs/about/faq.rst:141
 #, fuzzy
@@ -917,6 +917,9 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX को ओपन एसेट इम्पोर्ट लाइब्रेरी के माध्यम से समर्थित किया जाता है। हालांकि, FBX "
+"मालिकाना है इसलिए हम आपके कार्यप्रवाह के लिए उपयुक्त होने पर ऊपर दिये गये सूचीबद्ध अन्य "
+"प्रारूपों का उपयोग करने की सलाह देते हैं।"
 
 #: ../../docs/about/faq.rst:167
 msgid ""
@@ -1325,15 +1328,14 @@ msgstr ""
 "करता है?"
 
 #: ../../docs/about/faq.rst:327
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
-"जबकि गोडॉट आंतरिक रूप से बहुत सारे भारी प्रदर्शन कार्यों के लिए कैश कॉरेनेंसेंसी का उपयोग "
-"करने का प्रयास करता है, हमारा मानना है कि अधिकांश उपयोगकर्ताओं को वास्तव में DoD प्रथाओं "
-"का उपयोग करने के लिए मजबूर होने की आवश्यकता नहीं है।"
+"हालांकि गोडोट आंतरिक रूप से भारी प्रदर्शन कार्यों के लिए कैश कोहेरेन्सी का उपयोग करने का "
+"प्रयास करता है, हम मानते हैं कि अधिकांश उपयोगकर्ताओं को वास्तव में DoD प्रथाओं का उपयोग "
+"करने के लिए मजबूर होने की आवश्यकता नहीं है।"
 
 #: ../../docs/about/faq.rst:331
 msgid ""
@@ -1702,7 +1704,7 @@ msgstr "भौतिकी"
 
 #: ../../docs/about/docs_changelog.rst:147
 msgid ":ref:`doc_ragdoll_system`"
-msgstr ""
+msgstr ":रेफ़:`डॉक_रैगडोल_सिस्टम`"
 
 #: ../../docs/about/docs_changelog.rst:148
 msgid ":ref:`doc_soft_body`"
