@@ -36,6 +36,7 @@ getting_started/scripting/gdscript/gdscript_advanced.pot
 getting_started/scripting/gdscript/gdscript_exports.pot
 getting_started/scripting/gdscript/gdscript_styleguide.pot
 getting_started/scripting/gdscript/static_typing.pot
+getting_started/scripting/gdscript/warning_system.pot
 getting_started/scripting/gdscript/gdscript_format_string.pot
 getting_started/scripting/visual_script/index.pot
 getting_started/scripting/visual_script/what_is_visual_scripting.pot
@@ -74,6 +75,7 @@ getting_started/workflow/export/exporting_for_ios.pot
 getting_started/workflow/export/exporting_for_uwp.pot
 getting_started/workflow/export/exporting_for_android.pot
 getting_started/workflow/export/exporting_for_web.pot
+getting_started/workflow/export/exporting_for_dedicated_servers.pot
 getting_started/workflow/export/one-click_deploy.pot
 getting_started/workflow/export/android_custom_build.pot
 getting_started/workflow/export/changing_application_icon_for_windows.pot
@@ -101,7 +103,8 @@ tutorials/2d/2d_sprite_animation.pot
 tutorials/3d/index.pot
 tutorials/3d/introduction_to_3d.pot
 tutorials/3d/using_transforms.pot
-tutorials/3d/3d_performance_and_limitations.pot
+tutorials/3d/optimizing_3d_performance.pot
+tutorials/3d/3d_rendering_limitations.pot
 tutorials/3d/spatial_material.pot
 tutorials/3d/lights_and_shadows.pot
 tutorials/3d/reflection_probes.pot
@@ -207,6 +210,7 @@ tutorials/vr/vr_primer.pot
 tutorials/vr/vr_starter_tutorial/index.pot
 tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.pot
 tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.pot
+tutorials/vr/developing_for_oculus_quest.pot
 tutorials/plugins/index.pot
 tutorials/plugins/editor/index.pot
 tutorials/plugins/editor/installing_plugins.pot
@@ -271,7 +275,14 @@ development/compiling/optimizing_for_size.pot
 development/compiling/compiling_with_script_encryption_key.pot
 development/cpp/index.pot
 development/cpp/introduction_to_godot_development.pot
-development/cpp/configuring_an_ide.pot
+development/cpp/configuring_an_ide/index.pot
+development/cpp/configuring_an_ide/android_studio.pot
+development/cpp/configuring_an_ide/clion.pot
+development/cpp/configuring_an_ide/kdevelop.pot
+development/cpp/configuring_an_ide/qt_creator.pot
+development/cpp/configuring_an_ide/visual_studio.pot
+development/cpp/configuring_an_ide/visual_studio_code.pot
+development/cpp/configuring_an_ide/xcode.pot
 development/cpp/core_types.pot
 development/cpp/variant_class.pot
 development/cpp/object_class.pot
@@ -282,9 +293,9 @@ development/cpp/custom_resource_format_loaders.pot
 development/cpp/custom_audiostreams.pot
 development/cpp/custom_godot_servers.pot
 development/editor/index.pot
-development/editor/introduction.pot
 development/editor/creating_icons.pot
 development/file_formats/index.pot
+development/file_formats/gdscript_grammar.pot
 development/file_formats/tscn.pot
 community/contributing/index.pot
 community/contributing/ways_to_contribute.pot

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,59 +72,59 @@ msgstr ""
 msgid "Nodes likewise have an alternative access point: the SceneTree."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:242
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
 msgid "Accessing data or logic from an object"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:246
 msgid "Godot's scripting API is duck-typed. This means that if a script executes an operation, Godot doesn't validate that it supports the operation by **type**. It instead checks that the object **implements** the individual method."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:248
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:250
 msgid "For example, the :ref:`CanvasItem <class_CanvasItem>` class has a ``visible`` property. All properties exposed to the scripting API are in fact a setter and getter pair bound to a name. If one tried to access :ref:`CanvasItem.visible <class_CanvasItem_property_visible>`, then Godot would do the following checks, in order:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:254
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:256
 msgid "If the object has a script attached, it will attempt to set the property through the script. This leaves open the opportunity for scripts to override a property defined on a base object by overriding the setter method for the property."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:259
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:261
 msgid "If the script does not have the property, it performs a HashMap lookup in the ClassDB for the \"visible\" property against the CanvasItem class and all of its inherited types. If found, it will call the bound setter or getter. For more information about HashMaps, see the :ref:`data preferences <doc_data_preferences>` docs."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:265
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:267
 msgid "If not found, it does an explicit check to see if the user wants to access the \"script\" or \"meta\" properties."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:268
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:270
 msgid "If not, it checks for a ``_set``/``_get`` implementation (depending on type of access) in the CanvasItem and its inherited types. These methods can execute logic that gives the impression that the Object has a property. This is also the case with the ``_get_property_list`` method."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:273
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:275
 msgid "Note that this happens even for non-legal symbol names such as in the case of :ref:`TileSet <class_TileSet>`'s \"1/tile_name\" property. This refers to the name of the tile with ID 1, i.e. :ref:`TileSet.tile_get_name(1) <class_TileSet_method_tile_get_name>`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:278
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:280
 msgid "As a result, this duck-typed system can locate a property either in the script, the object's class, or any class that object inherits, but only for things which extend Object."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:282
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:284
 msgid "Godot provides a variety of options for performing runtime checks on these accesses:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:285
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:287
 msgid "A duck-typed property access. These will property check (as described above). If the operation isn't supported by the object, execution will halt."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:313
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:315
 msgid "A method check. In the case of :ref:`CanvasItem.visible <class_CanvasItem_property_visible>`, one can access the methods, ``set_visible`` and ``is_visible`` like any other method."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:445
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:447
 msgid "Outsource the access to a :ref:`FuncRef <class_FuncRef>`. These may be useful in cases where one needs the max level of freedom from dependencies. In this case, one relies on an external context to setup the method."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:504
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:506
 msgid "These strategies contribute to Godot's flexible design. Between them, users have a breadth of tools to meet their specific needs."
 msgstr ""
 

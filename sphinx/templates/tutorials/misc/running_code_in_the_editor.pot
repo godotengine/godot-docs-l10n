@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,11 +104,35 @@ msgstr ""
 msgid "Save the script. Now the object will spin clockwise in the editor, but if you run the game, it will spin counter-clockwise."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:101
-msgid "Code from other nodes doesn't run in the editor. Your access to other nodes is limited. You can access the tree and nodes, and their default properties, but you can't access user variables. If you want to do so, other nodes have to run in the editor too. AutoLoad nodes cannot be accessed in the editor at all."
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
+msgid "Editing variables"
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:103
+msgid "Add and export a variable speed to the script. The function set_speed after \"setget\" is executed with your input to change the variable. Modify  ``_process()`` to include the rotation speed."
+msgstr ""
+
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:125
+msgid "Code from other nodes doesn't run in the editor. Your access to other nodes is limited. You can access the tree and nodes, and their default properties, but you can't access user variables. If you want to do so, other nodes have to run in the editor too. AutoLoad nodes cannot be accessed in the editor at all."
+msgstr ""
+
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:128
+msgid "Instancing scenes"
+msgstr ""
+
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:130
+msgid "You can instantiate packed scenes normally and add them to the scene currently opened in the editor. Be sure to set the scene root as the owner of all the nodes created this way or the nodes won't be visible in the editor."
+msgstr ""
+
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:132
+msgid "If you are using ``tool``:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:142
+msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
+msgstr ""
+
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:153
 msgid "Using ``tool`` improperly can yield many errors. It is advised to first write the code how you want it, and only then add the ``tool`` keyword to the top. Also make sure you divide your code into part that runs in editor and part that runs in game. This way you can find your bug easier."
 msgstr ""
 
