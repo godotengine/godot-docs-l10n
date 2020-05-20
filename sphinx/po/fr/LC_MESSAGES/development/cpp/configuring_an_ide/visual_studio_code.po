@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:4
+msgid "Visual Studio Code"
+msgstr "Visual Studio Code"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:6
+msgid ""
+"Visual Studio Code is a free cross-platform IDE (not to be confused with :"
+"ref:`doc_configuring_an_ide_vs`). You can get it `from Microsoft <https://"
+"code.visualstudio.com/>`__."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:11
+#, fuzzy
+msgid ""
+"Make sure the C/C++ extension is installed. You can find instructions in the "
+"`documentation <https://code.visualstudio.com/docs/languages/cpp>`_."
+msgstr ""
+"Assurez-vous que l'extension C/C++ est installée. Vous pouvez trouver les "
+"instructions dans `docs <https://code.visualstudio.com/docs/languages/cpp>`_."
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:13
+#, fuzzy
+msgid ""
+"Open the cloned Godot folder in Visual Studio Code with **File > Open "
+"Folder...**."
+msgstr ""
+"Ouvrez un dossier godot cloné dans VS Code avec ``File > Open Folder...``"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:16
+#, fuzzy
+msgid ""
+"In order to build the project, you need two configuration files: ``launch."
+"json`` and ``tasks.json``. To create them:"
+msgstr ""
+"Pour construire le projet, vous avez besoin de deux fichiers de "
+"configuration : *launch.json* et *tasks.json*. Pour les créer :"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:19
+#, fuzzy
+msgid ""
+"Open the **Debug** view by pressing :kbd:`Ctrl + Shift + D` and select the "
+"cogwheel with an orange dot:"
+msgstr ""
+"Ouvrez la vue *Debug* en appuyant sur :kbd:`Ctrl + Shift + D` et "
+"sélectionnez la roue dentée avec un point orange :"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:24
+#, fuzzy
+msgid ""
+"Select **C++ (GDB/LLDB)** (it might be named differently on macOS or "
+"Windows)."
+msgstr ""
+"Sélectionnez *C++ (GDB/LLDB)* (il peut être nommé différemment sous MacOS ou "
+"Windows)"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:26
+#, fuzzy
+msgid "Update ``launch.json`` to match:"
+msgstr "Mettez à jour *launch.json* pour qu'il corresponde :"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:30
+msgid ""
+"If you're following this guide on macOS or Windows, you will have to adjust "
+"``godot.linuxbsd.tools.64`` accordingly."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:33
+#, fuzzy
+msgid ""
+"Create a ``tasks.json`` file by starting the Debug process with :kbd:`F5`. "
+"Visual Studio Code will show a dialog with a **Configure Task** button. "
+"Choose it and select **Create tasks.json file from template**, then select "
+"**Others**."
+msgstr ""
+"Créez *tasks.json* en démarrant le processus de débogage avec :kbd:`F5`. VS "
+"Code affichera un dialogue avec un bouton *Configure Task*. Pressez le "
+"bouton et sélectionnez *Create tasks.json file from template*, puis "
+"sélectionnez *Others*"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:37
+#, fuzzy
+msgid "Update ``tasks.json`` to match:"
+msgstr "Mettez à jour *tasks.json* pour qu'il corresponde :"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:41
+msgid ""
+"If you're following this guide on macOS or Windows, you will have to adjust "
+"``platform=linuxbsd`` accordingly."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:44
+msgid ""
+"You can now start the Debug process again to test that everything works."
+msgstr ""
+"Vous pouvez maintenant relancer le processus de débogage pour vérifier que "
+"tout fonctionne."
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:45
+#, fuzzy
+msgid ""
+"If the build phase fails, check the console for hints. On Linux, it's most "
+"likely due to missing dependencies. Check :ref:`doc_compiling_for_linuxbsd`."
+msgstr ""
+"En cas d'échec de la phase de construction, consultez la console pour "
+"obtenir des conseils. Sous Linux, il est très probable que certaines "
+"dépendances manquent. Consultez :ref:`Compiler pour X11 (Linux, \\*BSD) "
+"<doc_compiling_for_x11>`"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:48
+#, fuzzy
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"Un bref aperçu de ces canaux et d'autres canaux est également disponible sur "
+"le site Web de `Godot <https://godotengine.org/community>`_."

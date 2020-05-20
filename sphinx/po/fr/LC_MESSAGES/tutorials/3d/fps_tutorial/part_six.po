@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,8 +40,8 @@ msgid ""
 "This is the last part of the FPS tutorial; by the end of this, you will have "
 "a solid base to build amazing FPS games with Godot!"
 msgstr ""
-"C'est la dernière partie du tutoriel  FPS; à la fin de celui-ci, vous aurez "
-"de solides bases pour construire d'incroyables jeux FPS avec Godot !"
+"C'est la dernière partie du tutoriel FPS ; à la fin de celui-ci, vous aurez "
+"de solides bases pour construire d'incroyables jeux FPS avec Godot !"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:16
 msgid ""
@@ -133,7 +133,7 @@ msgid ""
 "``start_menu``: A variable to hold the ``Start_Menu`` :ref:`Panel "
 "<class_Panel>`."
 msgstr ""
-"``start_menu``: Une variable utilisée pour stocker le ``Start_Menu`` :ref:"
+"``start_menu`` : Une variable utilisée pour stocker le ``Start_Menu`` :ref:"
 "`Panel <class_Panel>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:130
@@ -141,7 +141,7 @@ msgid ""
 "``level_select_menu``: A variable to hold the ``Level_Select_Menu`` :ref:"
 "`Panel <class_Panel>`."
 msgstr ""
-"``level_select_menu``: Une variable utilisée pour stocker le "
+"``level_select_menu`` : Une variable utilisée pour stocker le "
 "``Level_Select_Menu`` :ref:`Panel <class_Panel>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:131
@@ -149,7 +149,7 @@ msgid ""
 "``options_menu``: A variable to hold the ``Options_Menu`` :ref:`Panel "
 "<class_Panel>`."
 msgstr ""
-"``options_menu``: Une variable utilisée pour stocker le ``Options_Menu`` :"
+"``options_menu`` : Une variable utilisée pour stocker le ``Options_Menu`` :"
 "ref:`Panel <class_Panel>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:132
@@ -157,7 +157,7 @@ msgid ""
 "``testing_area_scene``: The path to the ``Testing_Area.tscn`` file, so we "
 "can change to it from this scene."
 msgstr ""
-"``testing_area_scene``: Le chemin vers le fichier ``Testing_Area.tscn``de "
+"``testing_area_scene`` : Le chemin vers le fichier ``Testing_Area.tscn``de "
 "façon à ce que nous puissions le changer depuis la scène."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:133
@@ -165,7 +165,7 @@ msgid ""
 "``space_level_scene``: The path to the ``Space_Level.tscn`` file, so we can "
 "change to it from this scene."
 msgstr ""
-"``space_level_scene``: Le chemin vers le fichier ``Space_Level.tscn`` de "
+"``space_level_scene`` : Le chemin vers le fichier ``Space_Level.tscn`` de "
 "façon à ce que nous puissions le modifier depuis la scène."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:134
@@ -173,7 +173,7 @@ msgid ""
 "``ruins_level_scene``: The path to the ``Ruins_Level.tscn`` file, so we can "
 "change to it from this scene."
 msgstr ""
-"``ruins_level_scene``: Le chemin vers le fichier ``Ruins_Level.tscn`` de "
+"``ruins_level_scene`` : Le chemin vers le fichier ``Ruins_Level.tscn`` de "
 "façon à ce que nous puissions le modifier depuis la scène."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:136
@@ -261,7 +261,7 @@ msgid ""
 "If the ``back`` button has been pressed, we change the currently visible "
 "panels to return to the main menu."
 msgstr ""
-"Si le bouton  ``back`` a été appuyé, on change les panneaux visibles pour "
+"Si le bouton ``back`` a été appuyé, on change les panneaux visibles pour "
 "retourner au menu principal."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:165
@@ -325,7 +325,7 @@ msgid ""
 "counterparts."
 msgstr ""
 "On assigne ensuite aux variables ``mouse_sensitivity`` et "
-"``joypad_sensitivity`` aux valeurs dans leur homologues  :ref:`HSlider "
+"``joypad_sensitivity`` aux valeurs dans leur homologues :ref:`HSlider "
 "<class_HSlider>` respectifs."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:190
@@ -375,7 +375,7 @@ msgid ""
 "``mouse_sensitivity``: The current sensitivity for our mouse, so we can load "
 "it in ``Player.gd``."
 msgstr ""
-"``mouse_sensitivity``: La sensibilité actuelle de notre souris, afin que "
+"``mouse_sensitivity`` : La sensibilité actuelle de notre souris, afin que "
 "nous puissions la charger dans``Player.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:215
@@ -383,7 +383,7 @@ msgid ""
 "``joypad_sensitivity``: The current sensitivity for our joypad, so we can "
 "load it in ``Player.gd``."
 msgstr ""
-"``joypad_sensitivity``: La sensibilité actuelle de notre contrôleur, afin "
+"``joypad_sensitivity`` : La sensibilité actuelle de notre contrôleur, afin "
 "que nous puissions la charger dans ``Player.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:217
@@ -497,7 +497,7 @@ msgid ""
 "Now, let's add a simple debugging scene so we can track things like FPS "
 "(Frames Per Second) in-game. Open up ``Debug_Display.tscn``."
 msgstr ""
-"Ajoutons maintenant une simple scène de débogage  de façon à pouvoir suivre "
+"Ajoutons maintenant une simple scène de débogage de façon à pouvoir suivre "
 "des éléments tels que les IPS (Images Par Secondes) en jeu. Ouvrez "
 "``Debug_Display.tscn``."
 
@@ -602,20 +602,20 @@ msgid ""
 "``canvas_layer``: A canvas layer so the GUI/UI created in ``Globals.gd`` is "
 "always drawn on top."
 msgstr ""
-"``canvas_layer``: Une couche du canvas afin que le GUI/UI créée dans "
+"``canvas_layer`` : Une couche du canvas afin que le GUI/UI créée dans "
 "``Globals.gd``soit toujours affichée au dessus."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:315
 msgid "``DEBUG_DISPLAY``: The debug display scene we worked on earlier."
 msgstr ""
-"``DEBUG_DISPLAY``: La scène d'affichage de débogage sur laquelle nous avons "
+"``DEBUG_DISPLAY`` : La scène d'affichage de débogage sur laquelle nous avons "
 "travaillé plus tôt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:316
 msgid ""
 "``debug_display``: A variable to hold the debug display when/if there is one."
 msgstr ""
-"``debug_display``: Une variable utilisée pour stocker l'affichage de "
+"``debug_display`` : Une variable utilisée pour stocker l'affichage de "
 "débogage quand/si il y en a une."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:318
@@ -654,7 +654,7 @@ msgid ""
 msgstr ""
 "La raison pour laquelle nous ajoutons un :ref:`CanvasLayer "
 "<class_CanvasLayer>` est parce que nous voulons que tous nos nœuds d'UI/GUI "
-"que nous instantons  dans ``Globals.gd`` se dessinent toujours au dessus de "
+"que nous instantons dans ``Globals.gd`` se dessinent toujours au dessus de "
 "tout le reste."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:334
@@ -801,16 +801,16 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:399
 msgid "``MAIN_MENU_PATH``: The path to the main menu scene."
-msgstr "``MAIN_MENU_PATH``: Le chemin vers la scène de menu principal."
+msgstr "``MAIN_MENU_PATH`` : Le chemin vers la scène de menu principal."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:400
 msgid "``POPUP_SCENE``: The pop up scene we looked at earlier."
 msgstr ""
-"``POPUP_SCENE``: La scène de popup que nous avons exploré tout à l'heure."
+"``POPUP_SCENE`` : La scène de popup que nous avons exploré tout à l'heure."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:401
 msgid "``popup``: A variable to hold the pop up scene."
-msgstr "``popup``: Une variable pour stocker la scène de popup."
+msgstr "``popup`` : Une variable pour stocker la scène de popup."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:403
 msgid ""
@@ -1015,25 +1015,25 @@ msgstr "Ouvrez ``Player.gd`` et ajouter les variables de classe suivantes :"
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:536
 msgid "``RESPAWN_TIME``: The amount of time (in seconds) it takes to respawn."
 msgstr ""
-"``RESPAWN_TIME``: Le temps qu'il faut (en secondes) pour que joueur "
+"``RESPAWN_TIME`` : Le temps qu'il faut (en secondes) pour que joueur "
 "réapparaisse."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:537
 msgid "``dead_time``: A variable to track how long the player has been dead."
 msgstr ""
-"``dead_time``: Une variable pour suivre depuis combien de temps le joueur "
+"``dead_time`` : Une variable pour suivre depuis combien de temps le joueur "
 "est mort."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:538
 msgid ""
 "``is_dead``: A variable to track whether or not the player is currently dead."
 msgstr ""
-"``is_dead``: Une variable pour savoir actuellement si le joueur est mort ou "
+"``is_dead`` : Une variable pour savoir actuellement si le joueur est mort ou "
 "non."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:539
 msgid "``globals``: A variable to hold the ``Globals.gd`` singleton."
-msgstr "``globals``: Une variable pour stocker le singleton ``Globals.gd``."
+msgstr "``globals`` : Une variable pour stocker le singleton ``Globals.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:543
 msgid ""
@@ -1138,7 +1138,7 @@ msgid ""
 "We then make the rest of the UI, the ``Panel`` and ``Crosshair`` nodes, "
 "invisible."
 msgstr ""
-"On rend ensuite le  :ref:`ColorRect <class_ColorRect>` ``Death_Screen`` "
+"On rend ensuite le :ref:`ColorRect <class_ColorRect>` ``Death_Screen`` "
 "visible afin que le joueur ait un bel écran gris au dessus de tout le reste "
 "quand il meurt.On rend ensuite le reste de l'UI, les nœuds ``Panel`` et "
 "``Crosshair`` invisibles."
@@ -1150,7 +1150,7 @@ msgid ""
 "know the player has died."
 msgstr ""
 "On assigne alors ``RESPAWN_TIME`` à ``dead_time`` de façon à ce que le "
-"compte à rebours de « depuis quand le joueur est mort » démarre. On  assigne "
+"compte à rebours de « depuis quand le joueur est mort » démarre. On assigne "
 "aussi ``true`` à ``is_dead`` pour qu'on sache que le joueur est mort."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:659
@@ -1212,7 +1212,7 @@ msgid ""
 "Next we check to see if the player has waited long enough and can respawn. "
 "We do this by checking to see if ``dead_time`` is ``0`` or less."
 msgstr ""
-"Nous vérifions ensuite si le joueur  a attendu suffisamment longtemps pour "
+"Nous vérifions ensuite si le joueur a attendu suffisamment longtemps pour "
 "pouvoir réapparaître. On fait cela en vérifiant si ``dead_time`` est égal à "
 "``0`` ou moins."
 
@@ -1320,7 +1320,7 @@ msgstr ""
 msgid ""
 "``respawn_points``: A variable to hold all the respawn points in a level"
 msgstr ""
-"``respawn_points``: Une variable utilisée pour stocker tous les points de "
+"``respawn_points`` : Une variable utilisée pour stocker tous les points de "
 "réapparition du niveau"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:740
@@ -1375,7 +1375,7 @@ msgid ""
 msgstr ""
 "Si ``respawn_points`` n'est pas ``null``, nous devons alors récupérer un "
 "nombre aléatoire entre ``0`` et le nombre d'éléments que nous avons dans "
-"``respawn_points``, en enlevant  ``1`` puisque la plupart des langages de "
+"``respawn_points``, en enlevant ``1`` puisque la plupart des langages de "
 "programmation (``GDScript`` inclut) commencent à compter à partir de ``0`` "
 "quand vous accéder à un élément dans une liste."
 
@@ -1539,7 +1539,7 @@ msgid ""
 "the sound has finished, and ``globals`` will hold the ``Globals.gd`` "
 "singleton."
 msgstr ""
-"Nous avons également ajouté deux nouvelles variables de classe,  "
+"Nous avons également ajouté deux nouvelles variables de classe, "
 "``should_loop`` et ``globals``. Nous utiliserons ``should_loop`` pour dire "
 "au lecteur audio s'il doit jouer le son à nouveau quand il est terminé et "
 "``globals`` afin de stocker le singleton ``Globals.gd``."
@@ -1549,7 +1549,7 @@ msgid ""
 "The only change in ``_ready`` is now audio player is getting the ``Globals."
 "gd`` singleton and assigning it to ``globals``."
 msgstr ""
-"Le seul changement dans ``_ready`` est que le lecteur audio  récupère le "
+"Le seul changement dans ``_ready`` est que le lecteur audio récupère le "
 "singleton ``Globals.gd`` et l'assigne à ``globals``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:879
@@ -1561,7 +1561,7 @@ msgid ""
 "an error message, remove the audio player from a list in the ``Globals.gd`` "
 "singleton called ``created_audio``, and then free the audio player."
 msgstr ""
-"``play_sound`` attend maintenant en paramètre un flux audio, appelé  "
+"``play_sound`` attend maintenant en paramètre un flux audio, appelé "
 "``audio_stream``, au lieu de ``sound_name``. Au lieu de vérifier le nom du "
 "son et de paramétrer le flux pour le lecteur audio, on vérifie qu'un flux "
 "audio est passé en paramètre. Si aucun flux n'est passé en paramètre, on "
@@ -1604,19 +1604,19 @@ msgid ""
 "``audio_clips``: A dictionary holding all the audio clips ``Globals.gd`` can "
 "play."
 msgstr ""
-"``audio_clips``: Un dictionnaire qui contient tous les clips audio que "
+"``audio_clips`` : Un dictionnaire qui contient tous les clips audio que "
 "``Globals.gd`` peut jouer."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:908
 msgid "``SIMPLE_AUDIO_PLAYER_SCENE``: The simple audio player scene."
-msgstr "``SIMPLE_AUDIO_PLAYER_SCENE``: La scène du lecteur audio."
+msgstr "``SIMPLE_AUDIO_PLAYER_SCENE`` : La scène du lecteur audio."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:909
 msgid ""
 "``created_audio``: A list to hold all the simple audio players ``Globals."
 "gd`` has created."
 msgstr ""
-"``created_audio``: Une liste pour contenir tous les lecteurs audio que "
+"``created_audio`` : Une liste pour contenir tous les lecteurs audio que "
 "``Globals.gd`` a créé."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:911
@@ -1757,7 +1757,7 @@ msgid ""
 "Now, whenever ``create_sound`` is called, we simply call ``play_sound`` in "
 "``Globals.gd``, passing in all the arguments received."
 msgstr ""
-"Désormais, à chaque appel  de ``create_sound``, nous appelons simplement "
+"Désormais, à chaque appel de ``create_sound``, nous appelons simplement "
 "``play_sound`` dans ``Globals.gd`` en passant en paramètre les arguments "
 "reçus."
 

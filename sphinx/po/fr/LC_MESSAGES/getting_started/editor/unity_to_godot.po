@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -307,6 +307,9 @@ msgid ""
 "\"Camera Override\" button in the editor viewport, which will switch between "
 "using the editor view and the game camera view."
 msgstr ""
+"Le jeu en cours peut être exploré sous différents angles en basculant le "
+"bouton \"Camera Override\" dans la fenêtre de l'éditeur, qui basculera entre "
+"la vue de l'éditeur et la vue de la caméra du jeu."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:83
 msgid ""
@@ -487,12 +490,12 @@ msgid ""
 "introduction <doc_physics_introduction>`)."
 msgstr ""
 "Comme vous pouvez le voir, chaque scène est organisée en arborescence. Il en "
-"va de même pour les propriétés des nœuds : vous n’ajoutez pas un composant "
+"va de même pour les propriétés des nœuds : vous n’ajoutez pas un composant "
 "de collision à un nœud pour le rendre réactif aux collisions, contrairement "
 "à Unity. Au lieu de cela, vous faites de ce nœud un *enfant* d'un nouveau "
 "nœud spécifique possédant des propriétés de collision. Godot propose "
-"différents types de nœuds de collision, en fonction de l'utilisation (voir: "
-"ref: `Introduction à la physique <doc_physics_introduction>`)."
+"différents types de nœuds de collision, en fonction de l'utilisation (voir :"
+"ref:`Introduction à la physique <doc_physics_introduction>`)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:139
 msgid ""
@@ -642,7 +645,7 @@ msgstr "Prefab -> Fichier de Scène réutilisable"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:191
 msgid "Scripting: GDScript, C# and Visual Script"
-msgstr "Scripting: GDScript, C# et Visual Script"
+msgstr "Scripting : GDScript, C# et Visual Script"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:194
 msgid "Design"
@@ -740,7 +743,7 @@ msgstr ""
 "Vous pouvez contrôler les nœuds en y accédant à l'aide de scripts et de "
 "fonctions d'appel (intégrées ou définies par l'utilisateur). Vous pouvez "
 "également les placer dans un groupe et appeler une fonction sur tous les "
-"nœuds contenus dans ce groupe! Ceci est expliqué dans :ref: `cette page "
+"nœuds contenus dans ce groupe ! Ceci est expliqué dans :ref:`cette page "
 "<doc_scripting_continued>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:225
@@ -778,7 +781,7 @@ msgid ""
 "Explicit: Non-public fields can be serialized using the ``[SerializeField]`` "
 "attribute."
 msgstr ""
-"Explicite: Les champs non-publics peuvent être sérialisés en utilisant "
+"Explicite : Les champs non-publics peuvent être sérialisés en utilisant "
 "l'attribut ``[SerializeField]``."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237

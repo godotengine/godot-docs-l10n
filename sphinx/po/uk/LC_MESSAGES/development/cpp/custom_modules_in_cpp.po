@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,145 +298,180 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:376
-msgid "Append the following code snippet to ``config.py``:"
+msgid "Now, we need to edit ``config.py``, add the following snippet:"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:388
 msgid ""
-"The ``get_doc_classes()`` method is necessary for the build system to know "
-"which documentation classes of the module must be merged, since the module "
-"may contain several classes. Replace ``ClassName`` with the name of the "
-"class you want to write documentation for. If you need docs for more than "
-"one class, append those as well."
+"The ``get_doc_path()`` function is used by the build system to determine the "
+"location of the docs. In this case, they will be located in the ``modules/"
+"summator/doc_classes`` directory. If you don't define this, the doc path for "
+"your module will fall back to the main ``doc/classes`` directory."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:394
 msgid ""
-"The ``get_doc_path()`` method is used by the build system to determine the "
-"location of the docs. In our case, they will be located in the "
-"``doc_classes`` directory."
+"The ``get_doc_classes()`` method is necessary for the build system to know "
+"which registered classes belong to the module. You need to list all of your "
+"classes here. The classes that you don't list will end up in the main ``doc/"
+"classes`` directory."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:398
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:401
+msgid ""
+"You can use git to check if you have missed some of your classes by checking "
+"the untracked files with ``git status``. For example::"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:406
+#, fuzzy
+msgid "Example output::"
+msgstr "Приклад:"
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:418
+#, fuzzy
+msgid "Now we can generate the documentation:"
+msgstr "Про документацію"
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:420
+msgid ""
+"We can do this via running Godot's doctool i.e. ``godot --doctool <path>``, "
+"which will dump the engine API reference to the given ``<path>`` in XML "
+"format."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:423
+msgid ""
+"In our case we'll point it to the root of the cloned repository. You can "
+"point it to an another folder, and just copy over the files that you need."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:426
 msgid "Run command:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:404
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:432
 msgid ""
-"This will dump the engine API reference to the given ``<path>`` in XML "
-"format. Notice that you'll need to configure your ``PATH`` to locate Godot's "
-"executable, and make sure that you have write access rights. If not, you "
-"might encounter an error similar to the following:"
+"Now if you go to the ``godot/modules/summator/doc_classes`` folder, you will "
+"see that it contains a ``Summator.xml`` file, or any other classes, that you "
+"referenced in your ``get_doc_classes`` function."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:414
-msgid "Get generated doc file from ``godot/doc/classes/ClassName.xml``"
-msgstr ""
-
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:416
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:436
 msgid ""
-"Copy this file to ``doc_classes``, optionally edit it, then compile the "
-"engine."
+"Edit the file(s) following :ref:`doc_updating_the_class_reference` and "
+"recompile the engine."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:418
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:438
 msgid ""
-"The build system will fetch the documentation files from the ``doc_classes`` "
-"directory and merge them with the base types. Once the compilation process "
-"is finished, the docs will become accessible within the engine's built-in "
-"documentation system."
+"Once the compilation process is finished, the docs will become accessible "
+"within the engine's built-in documentation system."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:422
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:441
 msgid ""
 "In order to keep documentation up-to-date, all you'll have to do is simply "
-"modify one of the ``ClassName.xml`` files and recompile the engine from now "
-"on."
+"modify one of the XML files and recompile the engine from now on."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:428
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:444
+msgid ""
+"If you change your module's API, you can also re-extract the docs, they will "
+"contain the things that you previously added. Of course if you point it to "
+"your godot folder, make sure you don't lose work by extracting older docs "
+"from an older engine build on top of the newer ones."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:449
+msgid ""
+"Note that if you don't have write access rights to your supplied ``<path>``, "
+"you might encounter an error similar to the following:"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:461
 #, fuzzy
 msgid "Adding custom editor icons"
 msgstr "Додавання нетипових черг обробки звукових даних"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:430
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:463
 msgid ""
 "Similarly to how you can write self-contained documentation within a module, "
 "you can also create your own custom icons for classes to appear in the "
 "editor."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:433
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:466
 msgid ""
 "For the actual process of creating editor icons to be integrated within the "
 "engine, please refer to :ref:`doc_editor_icons` first."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:436
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:469
 msgid "Once you've created your icon(s), proceed with the following steps:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:438
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:471
 msgid ""
 "Make a new directory in the root of the module named ``icons``. This is the "
 "default path for the engine to look for module's editor icons."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:441
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:474
 msgid ""
 "Move your newly created ``svg`` icons (optimized or not) into that folder."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:443
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:476
 msgid ""
 "Recompile the engine and run the editor. Now the icon(s) will appear in "
 "editor's interface where appropriate."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:446
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:479
 msgid ""
 "If you'd like to store your icons somewhere else within your module, add the "
 "following code snippet to ``config.py`` to override the default path:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:455
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:488
 msgid "Summing up"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:457
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:490
 msgid "Remember to:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:459
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:492
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:460
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:493
 msgid ""
 "use ``_bind_methods`` to bind your functions to scripting, and to allow them "
 "to work as callbacks for signals."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:463
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:496
 msgid ""
 "But this is not all, depending what you do, you will be greeted with some "
 "(hopefully positive) surprises."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:466
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:499
 msgid ""
 "If you inherit from :ref:`class_Node` (or any derived node type, such as "
 "Sprite), your new class will appear in the editor, in the inheritance tree "
 "in the \"Add Node\" dialog."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:469
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:502
 msgid ""
 "If you inherit from :ref:`class_Resource`, it will appear in the resource "
 "list, and all the exposed properties can be serialized when saved/loaded."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:472
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:505
 msgid ""
 "By this same logic, you can extend the Editor and almost any area of the "
 "engine."

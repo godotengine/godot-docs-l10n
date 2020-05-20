@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,11 +104,23 @@ msgid ""
 "to play videos)."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:67
+#: ../../docs/development/compiling/optimizing_for_size.rst:66
+msgid ""
+"Alternatively, you can supply a list of disabled modules by creating "
+"``custom.py`` at the root of the source, with the contents similar to the "
+"following:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:110
+#, fuzzy
+msgid ":ref:`doc_overriding_build_options`."
+msgstr ":ref:`doc_gui_containers`"
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:113
 msgid "Optimizing for size instead of speed"
 msgstr "针对大小而不是速度优化"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:69
+#: ../../docs/development/compiling/optimizing_for_size.rst:115
 #, fuzzy
 msgid ""
 "Godot 3.1 onwards allows compiling using size optimizations (instead of "
@@ -117,15 +129,15 @@ msgstr ""
 "Godot 3.1以后允许使用尺寸优化选项进行编译。要启用它，只需将 ``optimize`` 标志"
 "设置为 ``size``："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:76
+#: ../../docs/development/compiling/optimizing_for_size.rst:122
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr "某些平台如WebAssembly默认情况下已使用此模式。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:79
+#: ../../docs/development/compiling/optimizing_for_size.rst:125
 msgid "Compiling with link-time optimization"
 msgstr "编译时使用连接时间优化"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:81
+#: ../../docs/development/compiling/optimizing_for_size.rst:127
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
 "terms of performance and file size. It works by eliminating duplicate "
@@ -135,26 +147,26 @@ msgstr ""
 "启用链接时优化可以在性能和文件大小方面生成更高效的二进制文件。它通过消除重复"
 "的模板功能和未使用的代码来工作。目前，它可以与GCC和MSVC编译器一起使用："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:90
+#: ../../docs/development/compiling/optimizing_for_size.rst:136
 msgid ""
 "Linking becomes much slower with this option, so it should be used only for "
 "release builds."
 msgstr "使用此选项，链接变得慢得多，因此它应该仅用于发布版本。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:94
+#: ../../docs/development/compiling/optimizing_for_size.rst:140
 msgid "Stripping binaries"
 msgstr "剥离二进制文件"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:96
+#: ../../docs/development/compiling/optimizing_for_size.rst:142
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr "如果从源代码构建，请记住从二进制文件中剥离调试符号："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:103
+#: ../../docs/development/compiling/optimizing_for_size.rst:149
 msgid "Using UPX to compress binaries"
 msgstr "使用UPX压缩二进制文件"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:105
+#: ../../docs/development/compiling/optimizing_for_size.rst:151
 msgid ""
 "If you are targeting desktop platforms, the `UPX <https://upx.github.io/>`_ "
 "compressor can be used. This can reduce binary size considerably."
@@ -162,7 +174,7 @@ msgstr ""
 "如果您的目标是桌面平台，可以使用 `UPX <https://upx.github.io/>`_ 压缩器。这可"
 "以大大减少二进制大小。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:109
+#: ../../docs/development/compiling/optimizing_for_size.rst:155
 msgid ""
 "However, keep in mind that some antivirus programs may detect UPX-packed "
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "

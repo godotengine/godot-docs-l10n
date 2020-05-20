@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,13 +69,12 @@ msgstr ""
 "устройствами."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability, the ``delta`` parameter contains the time "
 "elapsed in seconds as a floating-point number since the previous call to "
 "``_process()``."
 msgstr ""
-"Параметр delta содержит время (в виде вещественного числа), прошедшее в "
+"Параметр ``delta`` содержит время (в виде вещественного числа), прошедшее в "
 "секундах после предыдущего вызова функции ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
@@ -87,7 +86,6 @@ msgstr ""
 "занимали одинаковое количество времени, независимо от FPS игры."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
-#, fuzzy
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent of the frame rate."

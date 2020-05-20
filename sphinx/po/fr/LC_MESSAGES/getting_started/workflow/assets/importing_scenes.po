@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -824,6 +824,12 @@ msgid ""
 "greater than zero. You can then name a clip, specify which frames it starts "
 "and stops on, and choose whether the animation loops or not."
 msgstr ""
+"Il est possible de spécifier plusieurs animations à partir d'une seule ligne "
+"de temps sous forme de clips. Pour que cela fonctionne, le modèle doit avoir "
+"une seule animation qui est nommée \"default\". Pour créer des clips, il "
+"faut modifier la quantité de clips pour qu'elle soit supérieure à zéro. Vous "
+"pouvez ensuite nommer un clip, spécifier les images sur lesquelles il "
+"commence et s'arrête, et choisir si l'animation se met en boucle ou non."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:331
 msgid "Scene inheritance"
@@ -889,7 +895,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:353
 msgid "Adding collision detection to objects"
-msgstr "Ajout de la détection de collision aux objets :"
+msgstr "Ajout de détection de collision aux objets"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:354
 msgid "Setting objects as navigation meshes"

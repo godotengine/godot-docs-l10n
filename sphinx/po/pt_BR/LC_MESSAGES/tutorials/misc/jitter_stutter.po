@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,29 +82,37 @@ msgid ""
 "animated in the regular _process loop, to further fixes in the frame timer."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:44
+#: ../../docs/tutorials/misc/jitter_stutter.rst:45
+msgid ""
+"You can use physics interpolation to mitigate physics-related jittering. See "
+"`lawnjelly's smoothing-addon <https://github.com/lawnjelly/smoothing-"
+"addon>`__ for an add-on that can be dropped into any project to enable "
+"physics interpolation."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:50
 msgid "Stutter"
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:46
+#: ../../docs/tutorials/misc/jitter_stutter.rst:52
 msgid ""
 "Stutter may happen due to two different reasons. The first, and most obvious "
 "one, is the game not being able to keep full framerate performance. Solving "
 "this is game specific and will require optimization."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:49
+#: ../../docs/tutorials/misc/jitter_stutter.rst:55
 msgid ""
 "The second is more complicated, because it is often not associated to the "
 "engine or game but the underlying operating system. Here is some information "
 "regarding stutter on different OSs."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:53
+#: ../../docs/tutorials/misc/jitter_stutter.rst:59
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:55
+#: ../../docs/tutorials/misc/jitter_stutter.rst:61
 msgid ""
 "Windows is known to cause stutter in windowed games. This mostly depends on "
 "the hardware installed, drivers version and processes running in parallel (e."
@@ -113,7 +121,7 @@ msgid ""
 "Normal\". This helps considerably but may not completely eliminate stutter."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:60
+#: ../../docs/tutorials/misc/jitter_stutter.rst:66
 msgid ""
 "Eliminating this completely requires giving your game full privileges to "
 "become \"time critical\", which is not advised. Some games may do it, but it "
@@ -122,17 +130,17 @@ msgid ""
 "window, e.g. puzzle games, will usually not exhibit this problem anyway)."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:64
+#: ../../docs/tutorials/misc/jitter_stutter.rst:70
 msgid ""
 "For fullscreen, Windows gives special priority to the game so stutter is no "
 "longer visible and very rare. This is how most games are played."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:68
+#: ../../docs/tutorials/misc/jitter_stutter.rst:74
 msgid "Linux (X11)"
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:70
+#: ../../docs/tutorials/misc/jitter_stutter.rst:76
 msgid ""
 "Stutter may be visible on Desktop Linux, but this is usually associated with "
 "different video drivers and compositors. Nouveau drivers often exhibit this, "
@@ -141,28 +149,28 @@ msgid ""
 "rule it out as the cause."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:74
+#: ../../docs/tutorials/misc/jitter_stutter.rst:80
 msgid ""
 "There is no workaround for driver or compositor stuttering other than "
 "reporting it as an issue to the driver or compositor developers."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:78
+#: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "macOS"
 msgstr "macOs"
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:80
+#: ../../docs/tutorials/misc/jitter_stutter.rst:86
 msgid ""
 "Generally, macOS is stutter-free, although recently some bugs were reported "
 "when running on fullscreen (this is a macOS bug). If you have a machine "
 "exhibiting this behavior, please let us know."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:84
+#: ../../docs/tutorials/misc/jitter_stutter.rst:90
 msgid "Android"
 msgstr "Android"
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:86
+#: ../../docs/tutorials/misc/jitter_stutter.rst:92
 msgid ""
 "Generally, Android is stutter and jitter-free because the running activity "
 "gets all the priority. That said, there may be problematic devices (older "
@@ -170,22 +178,22 @@ msgid ""
 "let us know."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:90
+#: ../../docs/tutorials/misc/jitter_stutter.rst:96
 msgid "iOS"
 msgstr "iOS"
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:92
+#: ../../docs/tutorials/misc/jitter_stutter.rst:98
 msgid ""
 "iOS devices are generally stutter-free, but older devices running newer "
 "versions of the operating system may exhibit problems. This is generally "
 "unavoidable."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:96
+#: ../../docs/tutorials/misc/jitter_stutter.rst:102
 msgid "Reporting stutter or jitter problems"
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:98
+#: ../../docs/tutorials/misc/jitter_stutter.rst:104
 msgid ""
 "If you are reporting a stutter or jitter problem (opening an issue) not "
 "caused by any of the above reasons, please specify very clearly all the "
@@ -193,7 +201,7 @@ msgid ""
 "This may help to better troubleshoot it."
 msgstr ""
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:101
+#: ../../docs/tutorials/misc/jitter_stutter.rst:107
 msgid ""
 "Also make sure to use the correct term (jitter or stutter) based on the "
 "exhibited behavior. This will help understand your issue much faster. "

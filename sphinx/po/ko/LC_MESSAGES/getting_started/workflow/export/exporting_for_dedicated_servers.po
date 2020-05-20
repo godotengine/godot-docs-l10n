@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:4
+#, fuzzy
+msgid "Exporting for dedicated servers"
+msgstr "웹으로 내보내기"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:6
+msgid ""
+"If you want to run a dedicated server for your project on a machine that "
+"doesn't have a GPU or display server available, you'll need to use a server "
+"build of Godot."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:10
+#, fuzzy
+msgid "Platform support"
+msgstr "모드 지원 제공"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:12
+msgid ""
+"**Linux:** `Download an official Linux server binary <https://godotengine."
+"org/download/server>`__. To compile a server binary from source, follow "
+"instructions in :ref:`doc_compiling_for_linuxbsd`."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:15
+msgid ""
+"**macOS:** :ref:`Compile a server binary from source for macOS "
+"<doc_compiling_for_osx>`."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:16
+msgid ""
+"**Windows:** There is no dedicated server build for Windows yet. As an "
+"alternative, you can use the ``--no-window`` command-line argument to "
+"prevent Godot from spawning a window."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:20
+msgid ""
+"If your project uses C#, you'll have to use a Mono-enabled server binary."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:23
+msgid "\"Headless\" versus \"server\" binaries"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:25
+msgid ""
+"The `server download page <https://godotengine.org/download/server>`__ "
+"offers two kinds of binaries with several differences."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:28
+msgid ""
+"**Server:** Use this one for running dedicated servers. It does not contain "
+"editor functionality, and is therefore smaller and more optimized."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:31
+msgid ""
+"**Headless:** This binary contains editor functionality and is intended to "
+"be used for exporting projects. This binary *can* be used to run dedicated "
+"servers, but it's not recommended as it's larger and less optimized."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:36
+#, fuzzy
+msgid "Exporting a PCK file"
+msgstr "PC로 내보내기"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:38
+msgid ""
+"Once you've downloaded a server binary, you should export a PCK file "
+"containing your project data. It's recommended to create a Linux export "
+"preset for this purpose. After creating the export preset, click **Export "
+"PCK/ZIP** at the bottom of the Export dialog then choose a destination path."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:43
+msgid ""
+"The **Export With Debug** checkbox in the file dialog has no bearing on the "
+"final PCK file, so you can leave it as-is."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:46
+#, fuzzy
+msgid "See :ref:`doc_exporting_projects` for more information."
+msgstr "자세한 설명은 :ref:`doc_running_code_in_the_editor`\\ 를 참고하세요."
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:50
+msgid ""
+"The PCK file will include resources not normally needed by the server, such "
+"as textures and sounds. This means the PCK file will be larger than it could "
+"possibly be. Support for stripping unneeded resources from a PCK for server "
+"usage is planned in a future Godot release."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:55
+msgid ""
+"On the bright side, this allows the same PCK file to be used both by a "
+"client and dedicated server build. This can be useful if you want to ship a "
+"single archive that can be used both as a client and dedicated server."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:60
+#, fuzzy
+msgid "Preparing the server distribution"
+msgstr "프로젝트 준비하기"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:62
+msgid ""
+"After downloading or compiling a server binary, you should now place it in "
+"the same folder as the PCK file you've exported. The server binary should "
+"have the same name as the PCK (excluding the extension). This lets Godot "
+"detect and use the PCK file automatically. If you want to start a server "
+"with a PCK that has a different name, you can specify the path to the PCK "
+"file using the ``--main-pack`` command-line argument::"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:72
+msgid "Next steps"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:74
+msgid ""
+"On Linux, to make your dedicated server restart after a crash or system "
+"reboot, you can `create a systemd service <https://medium.com/@benmorel/"
+"creating-a-linux-service-with-systemd-611b5c8b91d6>`__. This also lets you "
+"view server logs in a more convenient fashion, with automatic log rotation "
+"provided by systemd."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:80
+msgid ""
+"If you have experience with containers, you could also look into wrapping "
+"your dedicated server in a `Docker <https://www.docker.com/>`__ container. "
+"This way, it can be used more easily in an automatic scaling setup (which is "
+"outside the scope of this tutorial)."
+msgstr ""

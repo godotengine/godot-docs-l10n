@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:4
 msgid "One-click deploy"
-msgstr ""
+msgstr "Implantação com um clique"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
 msgid "Sounds good, what is it?"
-msgstr ""
+msgstr "Parece bom, o que é?"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
 msgid ""
@@ -33,6 +33,12 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, etc.), "
 "it's good to let the user know that it exists."
 msgstr ""
+"Esta função irá aparecer automaticamente quando uma plataforma estiver "
+"devidamente configurada e um dispositivo suportado estiver conectado ao "
+"computador. Já que as coisas podem dar errado em muitos níveis (a plataforma "
+"pode não estar configurada corretamente, o SDK pode estar instalado "
+"incorretamente, o dispositivo pode estar configurado indevidamente, etc.), é "
+"bom deixar o usuário saber que existe."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:15
 msgid ""
@@ -41,10 +47,15 @@ msgid ""
 "export, install and run the project (in debug mode) on the device. This "
 "feature is called, in industry buzzwords, \"One-Click Deploy\"."
 msgstr ""
+"Algumas plataformas (no momento da escrita deste texto, somente Android) "
+"podem detectar quando um dispositivo USB está conectado ao computador, e "
+"oferecer ao usuário para exportar automaticamente, instalar e rodar o "
+"projeto (no modo de depuração) no dispositivo. Esta função é chamada, em "
+"chavões da indústria, de \"Implantação com um clique\"."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:21
 msgid "Steps for one-click deploy"
-msgstr ""
+msgstr "Passos para implantação com um clique"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
 msgid "Configure target platform."

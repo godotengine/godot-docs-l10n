@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,9 +101,10 @@ msgstr ""
 "Подробнее об этом через минуту."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:55
+#, fuzzy
 msgid ""
 "Static types also give you better code completion options. Below, you can "
-"see the difference between a dynamic and a static typed completion options "
+"see the difference between a dynamic and a static typed completion options "
 "for a class called ``PlayerController``."
 msgstr ""
 "Статические типы также дают вам лучшие варианты завершения кода. Ниже вы "
@@ -450,7 +451,7 @@ msgstr "И тот же обратный вызов, с типовыми подс
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:302
 #, fuzzy
 msgid ""
-"You're free to replace, e.g. the ``CollisionObject2D``, with your own type, "
+"You're free to replace, e.g. the ``CollisionObject2D``, with your own type, "
 "to cast parameters automatically:"
 msgstr ""
 "Вы можете заменить, например, ``PhysicsBody2D``, на свой собственный тип, "
@@ -474,101 +475,19 @@ msgstr ""
 msgid "Warning system"
 msgstr "Система предупреждений"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:321
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:323
 #, fuzzy
 msgid ""
-"The warning system complements typed GDScript. It's here to help you avoid "
-"mistakes that are hard to spot during development, and that may lead to "
-"runtime errors."
-msgstr ""
-"Система предупреждений дополняет типизированный GDScript. Она здесь, чтобы "
-"помочь вам избежать ошибок, которые трудно обнаружить во время разработки и "
-"которые могут привести к ошибкам во время выполнения."
+"Documentation about the GDScript warning system has been moved to :ref:"
+"`doc_gdscript_warning_system`."
+msgstr "Документация об экспорте перемещена в :ref:`doc_gdscript_exports`."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:325
-msgid ""
-"You can configure warnings in the Project Settings under a new section "
-"called ``GDScript``:"
-msgstr ""
-"Вы можете настроить предупреждения в Настройках Проекта, в новом разделе под "
-"названием ``GDScript``:"
-
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:331
-#, fuzzy
-msgid "warning system project settings"
-msgstr "Подготовка проекта"
-
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:333
-#, fuzzy
-msgid ""
-"You can find a list of warnings for the active GDScript file in the script "
-"editor's status bar. The example below has 3 warnings:"
-msgstr ""
-"Вы можете найти список предупреждений для активного файла GDScript в строке "
-"состояния редактора сценариев. В приведенном ниже примере есть 3 "
-"предупреждения:"
-
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:339
-#, fuzzy
-msgid "warning system example"
-msgstr "Пример создания экземпляра"
-
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:341
-#, fuzzy
-msgid ""
-"To ignore specific warnings in one file, insert a special comment of the "
-"form ``# warning-ignore:warning-id``, or click on the ignore link to the "
-"right of the warning's description. Godot will add a comment above the "
-"corresponding line and the code won't trigger the corresponding warning "
-"anymore:"
-msgstr ""
-"Чтобы игнорировать определенные предупреждения в одном файле, вставьте "
-"специальный комментарий в форме ``#warning-ignore:warning-id`` или нажмите "
-"на ссылку игнорирования справа от описания предупреждения. Godot добавит "
-"комментарий над соответствующей строкой, и код больше не будет вызывать "
-"соответствующее предупреждение:"
-
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:350
-#, fuzzy
-msgid "warning system ignore example"
-msgstr "Пример создания экземпляра"
-
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:352
-msgid ""
-"You can also choose to ignore not just one but all warnings of a certain "
-"type in this file with ``# warning-ignore-all:warning-id``. To ignore all "
-"warnings of all types in a file add the comment ``# warnings-disable`` to it."
-msgstr ""
-"Вы также можете игнорировать не одно, а все предупреждения определенного "
-"типа в этом файле с помощью ``# warning-ignore-all:warning-id``. Чтобы "
-"игнорировать все предупреждения всех типов в файле, добавьте к нему "
-"комментарий ``# warnings-disable``."
-
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:356
-#, fuzzy
-msgid ""
-"Warnings won't prevent the game from running, but you can turn them into "
-"errors if you'd like. This way your game won't compile unless you fix all "
-"warnings. Head to the ``GDScript`` section of the Project Settings to turn "
-"on this option. Here's the same file as the previous example with warnings "
-"as errors turned on:"
-msgstr ""
-"Предупреждения не помешают запуску игры, но вы можете превратить их в "
-"ошибки, если хотите. Таким образом, ваша игра не будет скомпилирована, пока "
-"вы не исправите все предупреждения. Перейдите в раздел ``GDScript`` в "
-"настройках проекта, чтобы включить эту опцию. Вот тот же файл, что и в "
-"предыдущем примере, с предупреждениями которые интерпретируются как ошибки:"
-
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:365
-msgid "warnings as errors"
-msgstr "предупреждения как ошибки"
-
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:368
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
 #, fuzzy
 msgid "Cases where you can't specify types"
 msgstr "Случаи, когда вы не можете указать типы"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:370
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
 #, fuzzy
 msgid ""
 "To wrap up this introduction, let's cover a few cases where you can't use "
@@ -578,12 +497,12 @@ msgstr ""
 "не можете использовать типовые подсказки. Все приведенные ниже примеры "
 "**вызовут ошибки**."
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:373
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:332
 #, fuzzy
 msgid "You can't use Enums as types:"
 msgstr "Вы не можете использовать Перечисления как типы:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:380
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:339
 #, fuzzy
 msgid ""
 "You can't specify the type of individual members in an array. This will give "
@@ -591,7 +510,7 @@ msgid ""
 msgstr ""
 "Вы не можете указать тип отдельных членов в массиве. Это приведет к ошибке:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:387
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:346
 #, fuzzy
 msgid ""
 "You can't force the assignment of types in a ``for`` loop, as each element "
@@ -602,16 +521,16 @@ msgstr ""
 "элемент, по которому проходит ключевое слово ``for``, уже имеет свой тип. "
 "Таким образом, вы **не можете** написать:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:397
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:356
 #, fuzzy
 msgid "Two scripts can't depend on each other in a cyclic fashion:"
 msgstr "Два скрипта не могут циклически зависеть друг от друга:"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:420
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:379
 msgid "Summary"
 msgstr "Подведение итогов"
 
-#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:422
+#: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
 msgid ""
 "Typed GDScript is a powerful tool. Available as of version 3.1 of Godot, it "
 "helps you write more structured code, avoid common errors, and create "

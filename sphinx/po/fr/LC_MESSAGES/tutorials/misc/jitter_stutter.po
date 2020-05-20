@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,6 @@ msgstr ""
 "de 60 Hz."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:35
-#, fuzzy
 msgid ""
 "This is generally not a problem, given that refresh rates higher than 60 Hz "
 "are barely visible to the human eye, and starting with Godot 3.1, a frame "
@@ -90,9 +89,9 @@ msgid ""
 "possible."
 msgstr ""
 "Ce n'est généralement pas un problème, étant donné que les taux de "
-"rafraîchissement supérieurs à 60 Hz sont à peine visibles à l'œil humain, et "
-"à partir de Godot 3.1, une horloge d'image a été introduit qui essaie de se "
-"synchroniser au mieux avec le rafraîchissement."
+"rafraîchissement supérieurs à 60 Hz sont à peine visibles par l'œil humain, "
+"et à partir de Godot 3.1, une horloge d'image(frame) a été introduit qui "
+"essaie de se synchroniser au mieux avec le rafraîchissement."
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:38
 msgid ""
@@ -109,11 +108,19 @@ msgstr ""
 "possibilité d'animer des corps cinématiques dans la boucle régulière "
 "_process, à d'autres corrections dans l'horloge d'image."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:44
+#: ../../docs/tutorials/misc/jitter_stutter.rst:45
+msgid ""
+"You can use physics interpolation to mitigate physics-related jittering. See "
+"`lawnjelly's smoothing-addon <https://github.com/lawnjelly/smoothing-"
+"addon>`__ for an add-on that can be dropped into any project to enable "
+"physics interpolation."
+msgstr ""
+
+#: ../../docs/tutorials/misc/jitter_stutter.rst:50
 msgid "Stutter"
 msgstr "Stutter"
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:46
+#: ../../docs/tutorials/misc/jitter_stutter.rst:52
 msgid ""
 "Stutter may happen due to two different reasons. The first, and most obvious "
 "one, is the game not being able to keep full framerate performance. Solving "
@@ -124,7 +131,7 @@ msgstr ""
 "taux de rafraîchissement des images. La résolution de ce problème est "
 "spécifique au jeu et nécessitera de l'optimisation."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:49
+#: ../../docs/tutorials/misc/jitter_stutter.rst:55
 msgid ""
 "The second is more complicated, because it is often not associated to the "
 "engine or game but the underlying operating system. Here is some information "
@@ -134,11 +141,11 @@ msgstr ""
 "moteur ou au jeu mais au système d'exploitation sous-jacent. Voici quelques "
 "informations concernant les stutter sur différents systèmes d'exploitation."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:53
+#: ../../docs/tutorials/misc/jitter_stutter.rst:59
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:55
+#: ../../docs/tutorials/misc/jitter_stutter.rst:61
 msgid ""
 "Windows is known to cause stutter in windowed games. This mostly depends on "
 "the hardware installed, drivers version and processes running in parallel (e."
@@ -154,7 +161,7 @@ msgstr ""
 "Godot augmente la priorité du jeu à \"Above Normal\". Cela aide "
 "considérablement, mais n'élimine pas complètement les stutter."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:60
+#: ../../docs/tutorials/misc/jitter_stutter.rst:66
 msgid ""
 "Eliminating this completely requires giving your game full privileges to "
 "become \"time critical\", which is not advised. Some games may do it, but it "
@@ -170,7 +177,7 @@ msgstr ""
 "dans une fenêtre, par exemple les jeux de puzzle, ne présenteront "
 "généralement pas ce problème de toute façon)."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:64
+#: ../../docs/tutorials/misc/jitter_stutter.rst:70
 msgid ""
 "For fullscreen, Windows gives special priority to the game so stutter is no "
 "longer visible and very rare. This is how most games are played."
@@ -179,11 +186,11 @@ msgstr ""
 "que les stutter ne sont plus visibles et très rares. C'est ainsi que la "
 "plupart des jeux sont joués."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:68
+#: ../../docs/tutorials/misc/jitter_stutter.rst:74
 msgid "Linux (X11)"
 msgstr "Linux (X11)"
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:70
+#: ../../docs/tutorials/misc/jitter_stutter.rst:76
 msgid ""
 "Stutter may be visible on Desktop Linux, but this is usually associated with "
 "different video drivers and compositors. Nouveau drivers often exhibit this, "
@@ -198,7 +205,7 @@ msgstr ""
 "exemple KWin), il est donc conseillé d'essayer d'en utiliser un autre pour "
 "l'exclure comme cause."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:74
+#: ../../docs/tutorials/misc/jitter_stutter.rst:80
 msgid ""
 "There is no workaround for driver or compositor stuttering other than "
 "reporting it as an issue to the driver or compositor developers."
@@ -207,11 +214,11 @@ msgstr ""
 "ou au compositeur autre que de le signaler comme un problème aux "
 "développeurs du pilote ou du compositeur."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:78
+#: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "macOS"
 msgstr "macOS"
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:80
+#: ../../docs/tutorials/misc/jitter_stutter.rst:86
 msgid ""
 "Generally, macOS is stutter-free, although recently some bugs were reported "
 "when running on fullscreen (this is a macOS bug). If you have a machine "
@@ -222,11 +229,11 @@ msgstr ""
 "problème macOS). Si vous avez une machine présentant ce comportement, "
 "veuillez nous en informer."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:84
+#: ../../docs/tutorials/misc/jitter_stutter.rst:90
 msgid "Android"
 msgstr "Android"
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:86
+#: ../../docs/tutorials/misc/jitter_stutter.rst:92
 msgid ""
 "Generally, Android is stutter and jitter-free because the running activity "
 "gets all the priority. That said, there may be problematic devices (older "
@@ -238,11 +245,11 @@ msgstr ""
 "des appareils problématiques (l'ancien Kindle Fire est connu pour en être "
 "un). Si vous voyez ce problème sur Android, faites-le nous savoir."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:90
+#: ../../docs/tutorials/misc/jitter_stutter.rst:96
 msgid "iOS"
 msgstr "iOS"
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:92
+#: ../../docs/tutorials/misc/jitter_stutter.rst:98
 msgid ""
 "iOS devices are generally stutter-free, but older devices running newer "
 "versions of the operating system may exhibit problems. This is generally "
@@ -252,11 +259,11 @@ msgstr ""
 "anciens exécutant des versions plus récentes du système d'exploitation "
 "peuvent présenter des problèmes. Ceci est généralement inévitable."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:96
+#: ../../docs/tutorials/misc/jitter_stutter.rst:102
 msgid "Reporting stutter or jitter problems"
 msgstr "Signaler des problèmes de stutter ou de jitter"
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:98
+#: ../../docs/tutorials/misc/jitter_stutter.rst:104
 msgid ""
 "If you are reporting a stutter or jitter problem (opening an issue) not "
 "caused by any of the above reasons, please specify very clearly all the "
@@ -269,7 +276,7 @@ msgstr ""
 "d'exploitation, les versions de pilote, etc. Cela peut aider à mieux le "
 "dépanner."
 
-#: ../../docs/tutorials/misc/jitter_stutter.rst:101
+#: ../../docs/tutorials/misc/jitter_stutter.rst:107
 msgid ""
 "Also make sure to use the correct term (jitter or stutter) based on the "
 "exhibited behavior. This will help understand your issue much faster. "

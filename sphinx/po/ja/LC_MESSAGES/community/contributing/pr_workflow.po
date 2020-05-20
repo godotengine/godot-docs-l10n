@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,14 +133,17 @@ msgstr ""
 "こでPRを優先して行う必要があります。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:57
+#, fuzzy
 msgid ""
 "The stable branches are named after their version, e.g. ``3.1`` and ``2.1``. "
 "They are used to backport bugfixes and enhancements from the ``master`` "
 "branch to the currently maintained stable release (e.g. 3.1.2 or 2.1.6). As "
 "a rule of thumb, the last stable branch is maintained until the next major "
 "version (e.g. the ``3.0`` branch was maintained until the release of Godot "
-"3.1). If you want to make PRs against a maintained stable branch, you will "
-"have to check if your changes are also relevant for the ``master`` branch."
+"3.1). If you want to make PRs against a maintained stable branch, please "
+"check first if your changes are also relevant for the ``master`` branch, and "
+"if so make the PR for the ``master`` branch in priority. Release managers "
+"can then cherry-pick the fix to a stable branch if relevant."
 msgstr ""
 "安定したブランチは、バージョンにちなんで名前が付けられます(例:``3.1`` と "
 "``2.1``)。これらは、\\ ``master`` ブランチから現在維持されている安定したリ"
@@ -150,19 +153,20 @@ msgstr ""
 "た)。維持されている安定したブランチに対してPRを行いたい場合、変更が "
 "``master`` ブランチにも関連しているかどうかを確認する必要があります。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:65
+#: ../../docs/community/contributing/pr_workflow.rst:67
+#, fuzzy
 msgid ""
-"There might be feature branches at time, usually meant to be merged into the "
-"``master`` branch at some time."
+"There might occasionally be feature branches, usually meant to be merged "
+"into the ``master`` branch at some time."
 msgstr ""
 "機能ブランチが存在する場合がありますが、通常はいつか ``master`` ブランチに"
 "マージされることを意図しています。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:69
+#: ../../docs/community/contributing/pr_workflow.rst:71
 msgid "Forking and cloning"
 msgstr "フォークとクローン作成"
 
-#: ../../docs/community/contributing/pr_workflow.rst:71
+#: ../../docs/community/contributing/pr_workflow.rst:73
 msgid ""
 "The first step is to *fork* the `godotengine/godot <https://github.com/"
 "godotengine/godot>`_ repository on GitHub. To do so, you will need to have a "
@@ -174,7 +178,7 @@ msgstr ""
 "は、GitHubアカウントが必要であり、ログインする必要があります。リポジトリの"
 "GitHubページの右上隅に、以下に示すように「フォーク」ボタンが表示されます:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:78
+#: ../../docs/community/contributing/pr_workflow.rst:80
 msgid ""
 "Click it, and after a while you should be redirected to your own fork of the "
 "Godot repo, with your GitHub username as namespace:"
@@ -182,7 +186,7 @@ msgstr ""
 "これをクリックすると、しばらくするとGitHubのユーザ名を名前空間として、Godot "
 "repoの自分のフォークにリダイレクトされるはずです:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:83
+#: ../../docs/community/contributing/pr_workflow.rst:85
 msgid ""
 "You can then *clone* your fork, i.e. create a local copy of the online "
 "repository (in Git speak, the *origin remote*). If you haven't already, "
@@ -196,7 +200,7 @@ msgstr ""
 "サイト <https://git-scm.com>`_\\ からダウンロードし、Linuxを使用している場合"
 "はパッケージマネージャからインストールします。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:88
+#: ../../docs/community/contributing/pr_workflow.rst:90
 msgid ""
 "If you are on Windows, open Git Bash to type commands. macOS and Linux users "
 "can use their respective terminals."
@@ -204,11 +208,11 @@ msgstr ""
 "Windowsを使用している場合は、Git Bashを開いてコマンドを入力します。macOSと"
 "Linuxユーザーはそれぞれの端末を使用できます。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:91
+#: ../../docs/community/contributing/pr_workflow.rst:93
 msgid "To clone your fork from GitHub, use the following command:"
 msgstr "GitHubからフォークのクローンを作成するには、次のコマンドを使用します:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:97
+#: ../../docs/community/contributing/pr_workflow.rst:99
 msgid ""
 "In our examples, the \"$\" character denotes the command line prompt on "
 "typical UNIX shells. It is not part of the command and should not be typed."
@@ -216,7 +220,7 @@ msgstr ""
 "この例では、「$」文字は、一般的なUNIXシェルのコマンドラインプロンプトを示しま"
 "す。これはコマンドの一部ではないため、入力しないでください。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:101
+#: ../../docs/community/contributing/pr_workflow.rst:103
 msgid ""
 "After a little while, you should have a ``godot`` directory in your current "
 "working directory. Move into it using the ``cd`` command:"
@@ -224,25 +228,27 @@ msgstr ""
 "しばらくすると、現在の作業ディレクトリに ``godot`` ディレクトリが表示されま"
 "す。 ``cd`` コマンドを使用して移動します:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:108
+#: ../../docs/community/contributing/pr_workflow.rst:110
 msgid ""
 "We will start by setting up a reference to the original repository that we "
 "forked:"
 msgstr "まず、フォークした元のリポジトリへの参照を設定します:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:115
+#: ../../docs/community/contributing/pr_workflow.rst:117
+#, fuzzy
 msgid ""
 "This will create a reference named ``upstream`` pointing to the original "
-"godotengine/godot repository. This will be useful when you want to pull new "
-"commits from its ``master`` branch to update your fork. You have another "
-"``remote`` reference named ``origin``, which points to your fork."
+"``godotengine/godot`` repository. This will be useful when you want to pull "
+"new commits from its ``master`` branch to update your fork. You have another "
+"remote reference named ``origin``, which points to your fork (``USERNAME/"
+"godot``)."
 msgstr ""
 "これにより、元の godotengine/godot リポジトリを指す ``upstream`` という名前の"
 "参照が作成されます。これは、フォークを更新するために ``master`` ブランチから"
 "新しいコミットをプルする場合に便利です。フォークを指す ``origin`` という名前"
 "の別の ``remote`` 参照があります。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:120
+#: ../../docs/community/contributing/pr_workflow.rst:122
 msgid ""
 "You only need to do the above steps once, as long as you keep that local "
 "``godot`` folder (which you can move around if you want, the relevant "
@@ -252,7 +258,7 @@ msgstr ""
 "るのは1回だけです(必要に応じて移動できますが、関連するメタデータは ``.git`` "
 "サブフォルダに隠されています)。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:124
+#: ../../docs/community/contributing/pr_workflow.rst:126
 msgid ""
 "*Branch it, pull it, code it, stage it, commit, push it, rebase it... "
 "technologic.*"
@@ -260,7 +266,7 @@ msgstr ""
 "*ブランチ、プル、コーディング、ステージング、コミット、プッシュ、リベース..."
 "テクノロジー。*"
 
-#: ../../docs/community/contributing/pr_workflow.rst:127
+#: ../../docs/community/contributing/pr_workflow.rst:129
 msgid ""
 "This bad take on Daft Punk's *Technologic* shows the general conception Git "
 "beginners have of its workflow: lots of strange commands to learn by copy "
@@ -276,20 +282,21 @@ msgstr ""
 "実際に学ぶための悪い方法ではないので、Gitで作業するときに知る基本的なコマンド"
 "を提供します。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:135
+#: ../../docs/community/contributing/pr_workflow.rst:137
+#, fuzzy
 msgid ""
-"In the following, we will assume that you want to implement a feature in "
-"Godot's project manager, which is coded in the ``editor/project_manager."
-"cpp`` file."
+"In the following, we will assume as an example that you want to implement a "
+"feature in Godot's project manager, which is coded in the ``editor/"
+"project_manager.cpp`` file."
 msgstr ""
 "以下では、 ``editor/project_manager.cpp`` ファイルにコーディングされている機"
 "能をGodotのプロジェクトマネージャーに実装することを想定しています。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:140
+#: ../../docs/community/contributing/pr_workflow.rst:142
 msgid "Branching"
 msgstr "ブランチ"
 
-#: ../../docs/community/contributing/pr_workflow.rst:142
+#: ../../docs/community/contributing/pr_workflow.rst:144
 msgid ""
 "By default, the ``git clone`` should have put you on the ``master`` branch "
 "of your fork (``origin``). To start your own feature development, we will "
@@ -299,15 +306,15 @@ msgstr ""
 "origin`` )に置かれているはずです。 独自の機能開発を開始するために、機能ブラン"
 "チを作成します:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:154
+#: ../../docs/community/contributing/pr_workflow.rst:156
 msgid "This command is equivalent:"
 msgstr "このコマンドは、次のコマンドと同等です:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:161
+#: ../../docs/community/contributing/pr_workflow.rst:163
 msgid "If you want to go back to the ``master`` branch, you'd use:"
 msgstr "``master`` ブランチに戻す場合は、次の方法を使用します:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:167
+#: ../../docs/community/contributing/pr_workflow.rst:169
 msgid ""
 "You can see which branch you are currently on with the ``git branch`` "
 "command:"
@@ -315,11 +322,19 @@ msgstr ""
 "``git branch`` コマンドを使用して現在どのブランチに入っているかを確認できま"
 "す:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:178
+#: ../../docs/community/contributing/pr_workflow.rst:179
+msgid ""
+"Be sure to always go back to the ``master`` branch before creating a new "
+"branch, as your current branch will be used as the base for the new one. "
+"Alternatively, you can specify a custom base branch after the new branch's "
+"name:"
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:188
 msgid "Updating your branch"
 msgstr "ブランチの更新"
 
-#: ../../docs/community/contributing/pr_workflow.rst:180
+#: ../../docs/community/contributing/pr_workflow.rst:190
 msgid ""
 "This would not be needed the first time (just after you forked the upstream "
 "repository). However, the next time you want to work on something, you will "
@@ -332,7 +347,7 @@ msgstr ""
 "``master`` ブランチの後ろにいくつかのコミットがあることに気づくでしょう。その"
 "間に他の貢献者からのプルリクエストがマージされているでしょう。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:186
+#: ../../docs/community/contributing/pr_workflow.rst:196
 msgid ""
 "To ensure there won't be conflicts between the feature you develop and the "
 "current upstream ``master`` branch, you will have to update your branch by "
@@ -342,68 +357,91 @@ msgstr ""
 "いようにするには、アップストリームブランチを\\ *プル*\\ によってブランチを更"
 "新する必要があります。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:194
+#: ../../docs/community/contributing/pr_workflow.rst:204
 msgid ""
-"However, if you had local commits, this method will create a so-called "
-"\"merge commit\", and you will soon hear from fellow contributors that those "
-"are not wanted in PRs. To update the branch without creating a merge commit, "
-"you will have to use the ``--rebase`` option, so that your local commits are "
-"replayed on top of the updated upstream ``master`` branch. It will "
-"effectively modify the Git history of your branch, but that is for the "
-"greater good."
+"The ``--rebase`` argument will ensure that any local changes that you "
+"committed will be re-applied *on top* of the pulled branch, which is usually "
+"what we want in our PR workflow. This way, when you open a pull request, "
+"your own commits will be the only difference with the upstream ``master`` "
+"branch."
 msgstr ""
-"ただし、もしローカル コミットがあり、このメソッドがいわゆる「マージ コミッ"
-"ト」を作成し、すぐに仲間の貢献者からそれらがPRで望まれないと聞いたとします。"
-"マージコミットを作成せずにブランチを更新するには、``--rebase`` オプションを使"
-"い、ローカルコミットが更新されたアップストリーム ``master`` ブランチの上で再"
-"生できるようにする必要があります。ブランチの Git履歴は効果的に変更されます"
-"が、それはより大きな利益のためです。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:201
-msgid "Therefore, the command that you should (almost) always use is:"
-msgstr "したがって、(ほとんど)常に使用する必要があるコマンドは次のとおりです:"
-
-#: ../../docs/community/contributing/pr_workflow.rst:208
+#: ../../docs/community/contributing/pr_workflow.rst:209
 msgid ""
-"If you have already pushed the merge commit without using ``rebase``, or "
-"have made any other changes that have resulted in undesired history, you may "
-"use a hard reset to revert to a specific commit and try again:"
+"While rebasing, conflicts may arise if your commits modified code that has "
+"been changed in the upstream branch in the meantime. If that happens, Git "
+"will stop at the conflicting commit and will ask you to resolve the "
+"conflicts. You can do so with any text editor, then stage the changes (more "
+"on that later), and proceed with ``git rebase --continue``. Repeat the "
+"operation if later commits have conflicts too, until the rebase operation "
+"completes."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:216
+msgid ""
+"If you're unsure about what is going on during a rebase and you panic (no "
+"worry, we all do the first few times), you can abort the rebase with ``git "
+"rebase --abort``. You will then be back to the original state of your branch "
+"before calling ``git pull --rebase``."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:221
+msgid ""
+"If you omit the ``--rebase`` argument, you will instead create a merge "
+"commit which tells Git what to make of the two distinct branches. If any "
+"conflicts arise, they would be resolved all at once via this merge commit."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:225
+msgid ""
+"While this is a valid workflow and the default behavior of ``git pull``, "
+"merge commits within PRs are frowned upon in our PR workflow. We only use "
+"them when merging PRs into the upstream branch."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:229
+msgid ""
+"The philosophy is that a PR should represent the final stage of the changes "
+"made to the codebase, and we are not interested in mistakes and fixes that "
+"would have been done in intermediate stages before merging. Git gives us "
+"great tools to \"rewrite the history\" and make it as if we got things right "
+"the first time, and we're happy to use it to ensure that changes are easy to "
+"review and understand long after they have been merged."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:236
+#, fuzzy
+msgid ""
+"If you have already created a merge commit without using ``rebase``, or have "
+"made any other changes that have resulted in undesired history, the best "
+"option is to use an *interactive rebase* on the upstream branch. See the :"
+"ref:`dedicated section <doc_pr_workflow_rebase>` for instructions."
 msgstr ""
 "``rebase`` を使用せずにマージコミットを既にプッシュした場合、または不要な履歴"
 "をもたらす他の変更を行った場合は、ハードリセットを使用して特定のコミットに戻"
 "り、再試行できます:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:216
+#: ../../docs/community/contributing/pr_workflow.rst:241
 msgid ""
-"Once you have done this, you may run ``--rebase`` to merge master correctly."
+"If at any time you want to *reset* a local branch to a given commit or "
+"branch, you can do so with ``git reset --hard <commit ID>`` or ``git reset --"
+"hard <remote>/<branch>`` (e.g. ``git reset --hard upstream/master``)."
 msgstr ""
-"これを行ったら、\\ ``-rebase`` を実行してマスターを正しくマージできます。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:218
+#: ../../docs/community/contributing/pr_workflow.rst:245
 msgid ""
-"If you have already pushed the wrong commits to your remote branch, you will "
-"have to force push by using ``git push --force``."
+"Be warned that this will remove any changes that you might have committed in "
+"this branch. If you ever lose commits by mistake, use the ``git reflog`` "
+"command to find the commit ID of the previous state that you would like to "
+"restore, and use it as argument of ``git reset --hard`` to go back to that "
+"state."
 msgstr ""
-"間違ったコミットをリモートブランチにすでにプッシュしている場合、\\ ``git "
-"push --force`` を使用してプッシュを強制する必要があります。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:221
-msgid ""
-"``git reset --hard`` can be a dangerous operation, especially if you have "
-"untracked or uncommitted changes. However, if you have committed changes "
-"that you reset using ``git reset --hard``, you may still be able to recover "
-"them by resetting to a commit ID found with the ``git reflog`` command."
-msgstr ""
-"``git reset --hard`` は、特に追跡されていないコミットされていない変更がある場"
-"合、危険な操作になる可能性があります。ただし、\\ ``git reset --hard`` を使用"
-"してリセットした変更をコミットした場合、\\ ``git reflog`` コマンドで見つかっ"
-"たコミットIDにリセットすることでそれらを回復できる場合があります。"
-
-#: ../../docs/community/contributing/pr_workflow.rst:228
+#: ../../docs/community/contributing/pr_workflow.rst:251
 msgid "Making changes"
 msgstr "変更を行う"
 
-#: ../../docs/community/contributing/pr_workflow.rst:230
+#: ../../docs/community/contributing/pr_workflow.rst:253
 msgid ""
 "You would then do your changes to our example's ``editor/project_manager."
 "cpp`` file with your usual development environment (text editor, IDE, etc.)."
@@ -411,7 +449,7 @@ msgstr ""
 "次に、通常の開発環境(テキストエディタ、IDEなど) を使用して、例の ``editor/"
 "project_manager.cpp`` ファイルに変更を加えます。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:234
+#: ../../docs/community/contributing/pr_workflow.rst:257
 msgid ""
 "By default, those changes are *unstaged*. The staging area is a layer "
 "between your working directory (where you make your modifications) and the "
@@ -427,7 +465,7 @@ msgstr ""
 "*ステージングし*\\ 、次に ``git commit`` コマンドでコミットする必要がありま"
 "す。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:241
+#: ../../docs/community/contributing/pr_workflow.rst:264
 msgid ""
 "There are various commands you should know to review your current work, "
 "before staging it, while it is staged, and after it has been committed."
@@ -435,7 +473,7 @@ msgstr ""
 "現在の作業を確認するために、ステージングする前、ステージング中、コミット後に"
 "確認するために知っておくべきさまざまなコマンドがあります。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:244
+#: ../../docs/community/contributing/pr_workflow.rst:267
 msgid ""
 "``git diff`` will show you the current unstaged changes, i.e. the "
 "differences between your working directory and the staging area."
@@ -443,7 +481,7 @@ msgstr ""
 "``git diff`` には、現在のステージングされていない変更、つまり作業ディレクトリ"
 "とステージング領域の違いが表示されます。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:246
+#: ../../docs/community/contributing/pr_workflow.rst:269
 msgid ""
 "``git checkout -- <files>`` will undo the unstaged changes to the given "
 "files."
@@ -451,13 +489,13 @@ msgstr ""
 "``git checkout -- <files>`` は、指定されたファイルに対するステージングされて"
 "いない変更を取り消します。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:248
+#: ../../docs/community/contributing/pr_workflow.rst:271
 msgid "``git add <files>`` will *stage* the changes on the listed files."
 msgstr ""
 "``git add <files>`` は、リストされたファイルの変更を\\ *ステージング*\\ しま"
 "す。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:249
+#: ../../docs/community/contributing/pr_workflow.rst:272
 msgid ""
 "``git diff --staged`` will show the current staged changes, i.e. the "
 "differences between the staging area and the last commit."
@@ -465,13 +503,13 @@ msgstr ""
 "``git diff --staged`` は、現在のステージングされた変更、すなわちステージング"
 "領域と最後のコミットの違いが表示されます。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:251
+#: ../../docs/community/contributing/pr_workflow.rst:274
 msgid "``git reset HEAD <files>`` will *unstage* changes to the listed files."
 msgstr ""
 "``git reset HEAD <files>`` は、リストされたファイルを\\ *ステージ解除*\\ しま"
 "す。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:252
+#: ../../docs/community/contributing/pr_workflow.rst:275
 msgid ""
 "``git status`` will show you what are the currently staged and unstaged "
 "modifications."
@@ -479,7 +517,7 @@ msgstr ""
 "``git status`` は、現在ステージングされ、ステージングされていない変更が何であ"
 "るかを示します。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:254
+#: ../../docs/community/contributing/pr_workflow.rst:277
 msgid ""
 "``git commit`` will commit the staged files. It will open a text editor (you "
 "can define the one you want to use with the ``GIT_EDITOR`` environment "
@@ -492,7 +530,14 @@ msgstr ""
 "ディタを定義できます）、コミットログを書き込むことができます。 ``git commit -"
 "m \"Cool commit log\"`` を使用して、ログを直接書き込むことができます。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:259
+#: ../../docs/community/contributing/pr_workflow.rst:282
+msgid ""
+"``git commit --amend`` lets you amend the last commit with your currently "
+"staged changes (added with ``git add``). This is the best option if you want "
+"to fix a mistake in the last commit (bug, typo, style issue, etc.)."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:285
 msgid ""
 "``git log`` will show you the last commits of your current branch. If you "
 "did local commits, they should be shown at the top."
@@ -500,7 +545,7 @@ msgstr ""
 "``git log`` には、現在のブランチの最後のコミットが表示されます。ローカルコ"
 "ミットを行った場合は、上部に表示する必要があります。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:261
+#: ../../docs/community/contributing/pr_workflow.rst:287
 msgid ""
 "``git show`` will show you the changes of the last commit. You can also "
 "specify a commit hash to see the changes for that commit."
@@ -508,7 +553,7 @@ msgstr ""
 "``git show`` は、最後のコミットの変更を表示します。コミットハッシュを指定し"
 "て、そのコミットの変更を確認することもできます。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:264
+#: ../../docs/community/contributing/pr_workflow.rst:290
 msgid ""
 "That's a lot to memorize! Don't worry, just check this cheat sheet when you "
 "need to make changes, and learn by doing."
@@ -516,11 +561,11 @@ msgstr ""
 "覚えておくべきことがたくさんあります！心配する必要はありません。変更が必要な"
 "場合はこのチートシートを確認し、実行して学習してください。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:267
+#: ../../docs/community/contributing/pr_workflow.rst:293
 msgid "Here's how the shell history could look like on our example:"
 msgstr "この例では、シェルの履歴がどのように見えるかを次に示します:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:299
+#: ../../docs/community/contributing/pr_workflow.rst:325
 msgid ""
 "With this, we should have two new commits in our ``better-project-manager`` "
 "branch which were not in the ``master`` branch. They are still only local "
@@ -531,11 +576,11 @@ msgstr ""
 "り、リモートフォークはそれらを認識せず、アップストリームリポジトリも認識しま"
 "せん。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:304
+#: ../../docs/community/contributing/pr_workflow.rst:330
 msgid "Pushing changes to a remote"
 msgstr "変更をリモートにプッシュする"
 
-#: ../../docs/community/contributing/pr_workflow.rst:306
+#: ../../docs/community/contributing/pr_workflow.rst:332
 msgid ""
 "That's where ``git push`` will come into play. In Git, a commit is always "
 "done in the local repository (unlike Subversion where a commit will modify "
@@ -547,7 +592,7 @@ msgstr ""
 "す)。 新しいコミットをリモートブランチに\\ *プッシュ*\\ して、それらを世界と"
 "共有する必要があります。 この構文は次のとおりです:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:315
+#: ../../docs/community/contributing/pr_workflow.rst:341
 msgid ""
 "The part about the remote branch can be omitted if you want it to have the "
 "same name as the local branch, which is our case in this example, so we will "
@@ -556,7 +601,7 @@ msgstr ""
 "この例では、ローカル ブランチと同じ名前を付ける場合は、リモート ブランチに関"
 "する部分を省略できます:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:323
+#: ../../docs/community/contributing/pr_workflow.rst:349
 msgid ""
 "Git will ask you for your username and password, and the changes will be "
 "sent to your remote. If you check the fork's page on GitHub, you should see "
@@ -566,26 +611,28 @@ msgstr ""
 "フォークのページを確認すると、コミットが追加された新しいブランチが表示されま"
 "す。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:328
+#: ../../docs/community/contributing/pr_workflow.rst:354
 msgid "Issuing a pull request"
 msgstr "プルリクエストの発行"
 
-#: ../../docs/community/contributing/pr_workflow.rst:330
+#: ../../docs/community/contributing/pr_workflow.rst:356
+#, fuzzy
 msgid ""
 "When you load your fork's branch on GitHub, you should see a line saying *"
 "\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
 "some commits behind, if your ``master`` branch was out of sync with the "
-"upstream ``master`` branch."
+"upstream ``master`` branch)."
 msgstr ""
 "フォークのブランチをGitHubにロードすると、 *「このブランチはgodotengine:"
 "masterより2コミット先です」* という行が表示されます( ``master`` ブランチが"
 "アップストリーム ``master`` ブランチと同期していない場合、潜在的にいくつかの"
 "コミットが遅れます)。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:337
+#: ../../docs/community/contributing/pr_workflow.rst:363
+#, fuzzy
 msgid ""
 "On that line, there is a \"Pull request\" link. Clicking it will open a form "
-"that will let you issue a pull request on the godotengine/godot upstream "
+"that will let you issue a pull request on the ``godotengine/godot`` upstream "
 "repository. It should show you your two commits, and state \"Able to merge"
 "\". If not (e.g. it has way more commits, or says there are merge "
 "conflicts), don't create the PR, something went wrong. Go to IRC and ask for "
@@ -597,7 +644,7 @@ msgstr ""
 "(例えば、より多くのコミットがある場合、またはマージの競合があると言う)、PRを"
 "作成しないでください。IRCに移動し、サポートを依頼しましょう"
 
-#: ../../docs/community/contributing/pr_workflow.rst:343
+#: ../../docs/community/contributing/pr_workflow.rst:369
 msgid ""
 "Use an explicit title for the PR and put the necessary details in the "
 "comment area. You can drag and drop screenshots, GIFs or zipped projects if "
@@ -608,11 +655,11 @@ msgstr ""
 "ンショット、GIF、またはzipプロジェクトをドラッグアンドドロップして、作業内容"
 "を示すことができます。「プルリクエストを作成」をクリックし、じゃじゃーん!"
 
-#: ../../docs/community/contributing/pr_workflow.rst:349
+#: ../../docs/community/contributing/pr_workflow.rst:375
 msgid "Modifying a pull request"
 msgstr "プルリクエストの変更"
 
-#: ../../docs/community/contributing/pr_workflow.rst:351
+#: ../../docs/community/contributing/pr_workflow.rst:377
 msgid ""
 "While it is reviewed by other contributors, you will often need to make "
 "changes to your yet-unmerged PR, either because contributors requested them, "
@@ -621,7 +668,7 @@ msgstr ""
 "他の貢献者によってレビューされていますが、貢献者が要求したか、テスト中に自分"
 "で問題を発見したため、まだマージされていないPRを変更する必要があります。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:355
+#: ../../docs/community/contributing/pr_workflow.rst:381
 msgid ""
 "The good news is that you can modify a pull request simply by acting on the "
 "branch you made the pull request from. You can e.g. make a new commit on "
@@ -631,43 +678,46 @@ msgstr ""
 "クエストを変更できることです。たとえば、そのブランチで新しいコミットを行い、"
 "フォークにプッシュすると、PRが自動的に更新されます:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:370
-msgid "That should do the trick, but..."
-msgstr "これでうまくいくはずですが、..."
-
-#: ../../docs/community/contributing/pr_workflow.rst:373
-msgid "Mastering the PR workflow: the rebase"
-msgstr "PRワークフローのマスタリング: リベース"
-
-#: ../../docs/community/contributing/pr_workflow.rst:375
+#: ../../docs/community/contributing/pr_workflow.rst:396
 msgid ""
-"On the situation outlined above, your fellow contributors who are "
-"particularly pedantic regarding the Git history might ask your to *rebase* "
-"your branch to *squash* or *meld* the last two commits together (i.e. the "
-"two related to the project manager), as the second commit basically fixes an "
-"issue in the first one."
+"However, be aware that in our PR workflow, we favor commits that bring the "
+"codebase from one functional state to another functional state, without "
+"having intermediate commits fixing up bugs in your own code or style issues. "
+"Most of the time, we will prefer a single commit in a given PR (unless "
+"there's a good reason to keep the changes separate), so instead of authoring "
+"a new commit, considering using ``git commit --amend`` to amend the previous "
+"commit with your fixes. The above example would then become:"
 msgstr ""
-"上記の状況では、Gitの履歴に関して特に熱心な仲間は、最後の2つのコミット(プロ"
-"ジェクトマネージャーに関連する2つ)を\\ *squashまたはmeld*\\ に\\ *リベース*"
-"\\ するように頼むかもしれません。 2番目のコミットは基本的に最初のコミットの問"
-"題を修正するためです。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:380
-msgid ""
-"Once the PR is merged, it is not relevant for a changelog reader that the PR "
-"author made mistakes; instead, we want to keep only commits that bring from "
-"one working state to another working state."
+#: ../../docs/community/contributing/pr_workflow.rst:426
+msgid "The interactive rebase"
 msgstr ""
-"PRがマージされると、PR作成者がミスをしたことは、変更ログの読者には関係ありま"
-"せん。 代わりに、ある作業状態から別の作業状態に移行するコミットのみを保持する"
-"必要があります。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:384
+#: ../../docs/community/contributing/pr_workflow.rst:428
 msgid ""
-"To squash those two commits together, we will have to *rewrite history*. "
-"Right, we have that power. You may read that it's a bad practice, and it's "
-"true when it comes to branches of the upstream repo. But in your fork, you "
-"can do whatever you want, and everything is allowed to get neat PRs :)"
+"If you didn't follow the above steps closely to *amend* changes into a "
+"commit instead of creating fixup commits, or if you authored your changes "
+"without being aware of our workflow and Git usage tips, reviewers might "
+"request of your to *rebase* your branch to *squash* some or all of the "
+"commits into one."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:433
+msgid ""
+"Indeed, if some commits have been made following reviews to fix bugs, typos, "
+"etc. in the original commit, they are not relevant to a future changelog "
+"reader who would want to know what happened in the Godot codebase, or when "
+"and how a given file was last modified."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:438
+#, fuzzy
+msgid ""
+"To squash those extraneous commits into the main one, we will have to "
+"*rewrite history*. Right, we have that power. You may read that it's a bad "
+"practice, and it's true when it comes to branches of the upstream repo. But "
+"in your fork, you can do whatever you want, and everything is allowed to get "
+"neat PRs :)"
 msgstr ""
 "これら2つのコミットをまとめてつぶすには、\\ *履歴を書き換える*\\ 必要がありま"
 "す。 私たちにはその力があります。 あなたはそれが悪い習慣であると読むかもしれ"
@@ -675,13 +725,13 @@ msgstr ""
 "し、あなたのフォークでは、あなたがやりたいことが何でもでき、すべてがきちんと"
 "したPRを得ることができます:)"
 
-#: ../../docs/community/contributing/pr_workflow.rst:389
+#: ../../docs/community/contributing/pr_workflow.rst:443
+#, fuzzy
 msgid ""
 "We will use the *interactive rebase* ``git rebase -i`` to do this. This "
-"command takes a commit hash as argument, and will let you modify all commits "
-"between that commit hash and the last one of the branch, the so-called "
-"*HEAD*. In our example, we want to act on the last two commits, so we will "
-"do:"
+"command takes a commit ID or a branch name as argument, and will let you "
+"modify all commits between that commit/branch and the last one in your "
+"working branch, the so-called ``HEAD``."
 msgstr ""
 "これを行うには、\\ *インタラクティブなリベース* ``git rebase -i`` を使用しま"
 "す。 このコマンドは引数としてコミットハッシュを受け取り、そのコミットハッシュ"
@@ -689,11 +739,41 @@ msgstr ""
 "るようにします。 この例では、最後の2つのコミットに基づいてアクションを実行す"
 "るため、次のことを行います:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:400
-msgid "This will open a text editor with:"
-msgstr "これにより、次のテキストエディタが開きます:"
+#: ../../docs/community/contributing/pr_workflow.rst:448
+msgid ""
+"While you can give any commit ID to ``git rebase -i`` and review everything "
+"in between, the most common and convenient workflow involves rebasing on the "
+"*upstream ``master`` branch*, which you can do with:"
+msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:407
+#: ../../docs/community/contributing/pr_workflow.rst:456
+msgid ""
+"Referencing branches in Git is a bit tricky due to the distinction between "
+"remote and local branches. Here, ``upstream/master`` (with a `/`) is a local "
+"branch which has been pulled from the ``upstream`` remote's ``master`` "
+"branch."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:461
+msgid ""
+"Interactive rebases can only be done on local branches, so the `/` is "
+"important here. As the upstream remote changes frequently, your local "
+"``upstream/master`` branch may become outdated, so you can update it with "
+"``git fetch upstream master``. Contrarily to ``git pull --rebase upstream "
+"master`` which would update your currently checked out branch, ``fetch`` "
+"will only update the ``upstream/master`` reference (which is distinct from "
+"your local ``master`` branch... yes it's confusing, but you'll become "
+"familiar with this little by little)."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:471
+msgid ""
+"This will open a text editor (``vi`` by default, see `Git docs <https://git-"
+"scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor>__` to "
+"configure your favorite one) with something which may look like this:"
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:480
 msgid ""
 "The editor will also show instructions regarding how you can act on those "
 "commits. In particular, it should tell you that \"pick\" means to use that "
@@ -710,7 +790,7 @@ msgstr ""
 "ら破棄する点です。この例では、「Fix a typo(誤字を修正する)」コミットのログを"
 "保持することには関心がないので、以下を使用します:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:420
+#: ../../docs/community/contributing/pr_workflow.rst:493
 msgid ""
 "Upon saving and quitting the editor, the rebase will occur. The second "
 "commit will be melded into the first one, and ``git log`` and ``git show`` "
@@ -721,21 +801,7 @@ msgstr ""
 "コミットにマージされ、 ``git log`` と ``git show`` によって、前の2つのコミッ"
 "トから変更されたコミットが1つだけであることが確認されます。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:425
-msgid ""
-"You could have avoided this rebase by using ``git commit --amend`` when "
-"fixing the typo. This command will write the staged changes directly into "
-"the *last* commit (``HEAD``), instead of creating a new commit like we did "
-"in this example. So it is equivalent to what we did with a new commit and "
-"then a rebase to mark it as \"fixup\"."
-msgstr ""
-"タイプミスを修正するときに ``git commit --amend`` を使用すると、このリベース"
-"を回避できます。 このコマンドは、この例のように新しいコミットを作成する代わり"
-"に、ステージングされた変更を\\ *最後の*\\ コミット( ``HEAD`` )に直接書き込み"
-"ます。 つまり、新しいコミットでリフィックスし、それを「fixup」としてマークす"
-"ることと同じです。"
-
-#: ../../docs/community/contributing/pr_workflow.rst:431
+#: ../../docs/community/contributing/pr_workflow.rst:498
 msgid ""
 "But! You rewrote the history, and now your local and remote branches have "
 "diverged. Indeed, commit 1b4aad7 in the above example will have changed, and "
@@ -746,7 +812,7 @@ msgstr ""
 "した。実際に、上記の例のコミット:1b4aad7は変更され、新しいコミットハッシュを"
 "取得します。リモートブランチにプッシュしようとすると、エラーが発生します:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:445
+#: ../../docs/community/contributing/pr_workflow.rst:512
 #, fuzzy
 msgid ""
 "This is a sane behavior, Git will not let you push changes that would "
@@ -757,7 +823,7 @@ msgstr ""
 "プッシュできません。 しかし、実際にはここでやりたいことなので、\\ *強制する* "
 "\\必要があります:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:453
+#: ../../docs/community/contributing/pr_workflow.rst:520
 msgid ""
 "And tadaa! Git will happily *replace* your remote branch with what you had "
 "locally (so make sure that's what you wanted, using ``git log``). This will "
@@ -767,11 +833,11 @@ msgstr ""
 "換*\\ します(したがって、 ``git log`` を使用して、それが目的のものであること"
 "を確認してください) これにより、それに応じてPRも更新されます。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:458
+#: ../../docs/community/contributing/pr_workflow.rst:525
 msgid "Deleting a Git branch"
 msgstr "Gitブランチの削除"
 
-#: ../../docs/community/contributing/pr_workflow.rst:460
+#: ../../docs/community/contributing/pr_workflow.rst:527
 msgid ""
 "After your pull request gets merged, there's one last thing you should do: "
 "delete your Git branch for the PR. There won't be issues if you don't delete "
@@ -783,13 +849,13 @@ msgstr ""
 "めします。 これを2回行う必要があります。1回はローカルブランチ用、もう1回は"
 "GitHub上のリモートブランチ用です。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:465
+#: ../../docs/community/contributing/pr_workflow.rst:532
 msgid "To delete our better project manager branch locally, use this command:"
 msgstr ""
 "プロジェクトマネージャブランチをローカルで削除するベターな方法では、次のコマ"
 "ンドを使用します:"
 
-#: ../../docs/community/contributing/pr_workflow.rst:471
+#: ../../docs/community/contributing/pr_workflow.rst:538
 msgid ""
 "Alternatively, if the branch hadn't been merged yet and we wanted to delete "
 "it anyway, instead of ``-d`` you would use ``-D``."
@@ -797,7 +863,13 @@ msgstr ""
 "あるいは、ブランチがまだマージされておらず、とにかく削除したい場合は、 ``-"
 "d`` の代わりに ``-D`` を使用します。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:474
+#: ../../docs/community/contributing/pr_workflow.rst:541
 msgid "Next, to delete the remote branch on GitHub use this command:"
 msgstr ""
 "次に、GitHub のリモートブランチを削除するには、次のコマンドを使用します:"
+
+#: ../../docs/community/contributing/pr_workflow.rst:547
+msgid ""
+"You can also delete the remote branch from the GitHub PR itself, a button "
+"should appear once it has been merged or closed."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -217,13 +217,12 @@ msgstr ""
 "animación de cualquier valor o método de cualquier otro nodo"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
-#, fuzzy
 msgid ""
 "The project uses a simple organization that works for game jams and tiny "
 "games."
 msgstr ""
-"El proyecto utiliza una organización simple que funciona para los game jams "
-"y juegos pequeños."
+"El proyecto utiliza una organización simple que funciona para game jams y "
+"juegos pequeños."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 msgid ""
@@ -434,7 +433,6 @@ msgstr ""
 "nodo conectado *justo después* de que se haya producido el cambio."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
-#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
@@ -450,10 +448,11 @@ msgstr ""
 "seguro que acceder a los nodos directamente para comunicarse entre dos "
 "clases separadas. Puede estar bien que un nodo padre obtenga valores de sus "
 "hijos. Pero querrás favorecer las señales si estás trabajando con dos ramas "
-"separadas. Lee Patrones de Programación de Juegos para obtener más "
-"información sobre el patrón `Observador <http://gameprogrammingpatterns.com/"
-"observer.html>`_. El `libro completo <http://gameprogrammingpatterns.com/"
-"contents.html>`_ está disponible en línea de forma gratuita."
+"separadas. Lee Game Programming Patterns (Patrones de Programación de "
+"Juegos) para obtener más información sobre el patrón `Observador <http://"
+"gameprogrammingpatterns.com/observer.html>`_. El `libro completo <http://"
+"gameprogrammingpatterns.com/contents.html>`_ está disponible en línea de "
+"forma gratuita (en inglés)."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
 msgid ""
@@ -661,11 +660,10 @@ msgid ""
 "``new_value`` directly"
 msgstr ""
 "``str`` es una función incorporada que convierte cualquier valor en texto "
-"(string). La propiedad  ``text`` de ``Number`` requiere un string por lo que "
+"(string). La propiedad ``text`` de ``Number`` requiere un string por lo que "
 "no podemos asignarlo a ``new_value`` directamente"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
-#, fuzzy
 msgid ""
 "Also call ``update_health`` at the end of the ``_ready`` function to "
 "initialize the ``Number`` node's ``text`` with the right value at the start "
@@ -673,9 +671,9 @@ msgid ""
 "every attack!"
 msgstr ""
 "Llama también a ``update_health`` al final de la función ``_ready`` para "
-"inicializar el texto del nodo ``Number`` con el valor correcto al principio "
-"del juego. Pulsa F5 para probar el juego: ¡la barra de vida se actualiza con "
-"cada ataque!"
+"inicializar el ``text`` del nodo ``Number`` con el valor correcto al "
+"principio del juego. Presiona :kbd:`F5` para probar el juego: ¡la barra de "
+"vida se actualiza con cada ataque!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""

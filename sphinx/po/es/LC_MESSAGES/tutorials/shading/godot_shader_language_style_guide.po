@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,43 +70,38 @@ msgid "Here is a complete shader example based on these guidelines:"
 msgstr "He aquí un ejemplo simple de su funcionamiento:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:50
-#, fuzzy
 msgid "Formatting"
-msgstr "Formato"
+msgstr "Formateando"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:53
-#, fuzzy
 msgid "Encoding and special characters"
-msgstr "Trabajando con relaciones de aspecto"
+msgstr "Codificación y caracteres especiales"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:55
-#, fuzzy
 msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
 msgstr ""
-"Si creas un nuevo archivo, asegúrate de que utiliza caracteres de salto de "
-"línea (*LF*) para separar líneas, no *CRLF* o *CR*."
+"Utiliza caracteres de salto de línea (*LF*) para separar líneas, no *CRLF* o "
+"*CR*. *(por defecto del editor)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:56
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:57
-#, fuzzy
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
-"Utilice la codificación UTF-8 sin BOM (BOM <https://es.wikipedia.org/wiki/"
-"Marca_de_orden_de_bytes>)."
+"Utilice la codificación UTF-8 sin `byte order mark <https://en.wikipedia.org/"
+"wiki/Byte_order_mark>`_. *(por defecto del editor)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:58
-#, fuzzy
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
-"Utilice 4 espacios en lugar de tabuladores para la sangría (lo que se "
-"denomina 'tabulaciones suaves')."
+"Utilice tabuladores en lugar de espacios para la indentación. *(por defecto "
+"del editor)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:61
 msgid "Indentation"
@@ -154,7 +149,6 @@ msgid "Line breaks and blank lines"
 msgstr "Saltos de línea y líneas en blanco"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:104
-#, fuzzy
 msgid ""
 "For a general indentation rule, follow `the \"1TBS Style\" <https://en."
 "wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)>`_ which "
@@ -163,19 +157,20 @@ msgid ""
 "This makes them easier to refactor and avoids mistakes when adding more "
 "lines to an ``if`` statement or similar."
 msgstr ""
-"Para una regla general de identación, sigue  `el 'Estilo Allman' <https://en."
-"wikipedia.org/wiki/Identation_style#Allman_style>_ que recomienda poner el "
-"corchete asociado con una estructura de control en la siguiente línea, "
-"identado al mismo nivel:"
+"Para una regla general de identación, sigue `el estilo \"1TBS\" <https://en."
+"wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)>`_ que recomienda "
+"poner el corchete asociado con una estructura de control en la misma línea. "
+"Siempre usa llaves para las sentencias, aunque sean de una sola línea. Esto "
+"hace más fácil el refactor y evita errores cuando se agrega más de una línea "
+"a una sentencia ``if`` o similar."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:132
 msgid "Blank lines"
 msgstr "Lineas en blanco"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:134
-#, fuzzy
 msgid "Surround function definitions with one (and only one) blank line:"
-msgstr "Envuelva sus funciones y definiciones de clases por una linea vacía."
+msgstr "Envuelva sus funciones y definiciones de clases por una linea vacía :"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:146
 #, fuzzy
@@ -186,9 +181,8 @@ msgstr ""
 "use una linea blanca dentro de las funciones para separar secciones lógicas."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:149
-#, fuzzy
 msgid "Line length"
-msgstr "Duración de la animación"
+msgstr "Longitud de línea"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:151
 msgid "Keep individual lines of code under 100 characters."
@@ -214,9 +208,8 @@ msgid "The only exception to that rule is the ternary operator:"
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:189
-#, fuzzy
 msgid "Comment spacing"
-msgstr "Comentarios"
+msgstr "Espaciado de comentarios"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:191
 msgid ""
@@ -284,42 +277,38 @@ msgid "Naming conventions"
 msgstr "Convenciones para la definición de nombres"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:295
-#, fuzzy
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, leading to "
 "inconsistent code."
 msgstr ""
-"Estas convenciones deberán seguir el estilo de Godot. Romperlas hará que tu "
-"código choque con las convenciones de nomenclaturas incorporadas, lo cual es "
-"feo."
+"Estas convenciones de nombres siguen el estilo de Godot Engine. Romperlas "
+"hará que tu código choque con las convenciones de nomenclaturas "
+"incorporadas, lo que crea un código inconsistente."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:300
 msgid "Functions and variables"
 msgstr "Funciones y Variables"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:302
-#, fuzzy
 msgid "Use snake\\_case to name functions and variables:"
-msgstr "Funciones y Variables"
+msgstr "Usa snake\\_case para nombrar funciones y variables:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:311
 msgid "Constants"
 msgstr "Constantes"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:313
-#, fuzzy
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
 msgstr ""
-"Usa CONSTANT\\_CASE, todas en mayusculas, con el símbolo de subrayado (\\_) "
-"para separar palabras: ``const MAX_SPEED = 200``"
+"Escribe constantes en CONSTANT\\_CASE, todas en mayusculas con el símbolo de "
+"subrayado (\\_) para separar palabras:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:321
-#, fuzzy
 msgid "Code order"
-msgstr "Orden del árbol"
+msgstr "Orden de código"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:323
 msgid "We suggest to organize shader code this way:"
@@ -347,7 +336,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
-#, fuzzy
 msgid "Local variables"
 msgstr "Variables locales"
 

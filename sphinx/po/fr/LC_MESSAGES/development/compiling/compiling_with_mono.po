@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,7 +155,6 @@ msgstr ""
 "répéter ce processus."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:68
-#, fuzzy
 msgid ""
 "``<godot_binary>`` refers to the tools binary you compiled above with the "
 "Mono module enabled. Its exact name will differ based on your system and "
@@ -296,13 +295,12 @@ msgstr ""
 "l'exécutable Godot."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:163
-#, fuzzy
 msgid ""
 "The information below doesn't apply for Android, iOS and WASM, as there is "
 "no data directory for these platforms."
 msgstr ""
-"Les informations ci-dessous ne s'appliquent pas à Android, car il n'y a pas "
-"de répertoire de données pour cette plate-forme."
+"Les informations ci-dessous ne s'appliquent pas à Android, iOS et WASM, car "
+"il n'existe pas de répertoire de données pour ces plates-formes."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:167
 msgid "Export templates"
@@ -444,9 +442,8 @@ msgstr ""
 "comme les assemblies `` GodotTools`` et ses dépendances."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:223
-#, fuzzy
 msgid "Building the Mono runtime"
-msgstr "Construction(Building) des modèles d'exportation"
+msgstr "Construction du runtime Mono"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:225
 msgid ""
@@ -455,21 +452,24 @@ msgid ""
 "targeting other platforms like Android, iOS and WebAssembly. You will have "
 "to build the Mono runtime yourself for those platforms."
 msgstr ""
+"Lorsque vous compilez Godot pour le bureau, vous utiliserez probablement le "
+"runtime Mono pré-construit qui est installé sur votre système. Ce ne sera "
+"probablement pas le cas lorsque vous visez d'autres plateformes comme "
+"Android, iOS et WebAssembly. Vous devrez construire vous-même le runtime "
+"Mono pour ces plates-formes."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:230
-#, fuzzy
 msgid ""
 "We recommend using these `build scripts <https://github.com/godotengine/"
 "godot-mono-builds>`_. They simplify this process but also include some "
 "patches needed for proper functioning with Godot. See the README on the link "
 "above for instructions on how to use the scripts."
 msgstr ""
-"Avant de construire Godot, vous devez recompiler le runtime Mono pour les "
-"architectures cibles. Nous vous recommandons d'utiliser ces scripts de "
-"compilation <https://github.com/godotengine/godot-mono-builds>`_. Ils "
-"simplifient ce processus mais incluent également certains correctifs "
-"nécessaires au bon fonctionnement de Godot. Voir le README sur le lien ci-"
-"dessus pour les instructions sur la façon d'utiliser les scripts."
+"Nous vous recommandons d'utiliser ces `scripts de construction <https://"
+"github.com/godotengine/godot-mono-builds>`_. Ils simplifient ce processus "
+"mais incluent également certains correctifs nécessaires au bon "
+"fonctionnement de Godot. Consultez le README sur le lien ci-dessus pour "
+"savoir comment utiliser les scripts."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:236
 msgid "Targeting Android"
@@ -491,7 +491,6 @@ msgstr ""
 "ajoutés au projet Gradle."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:244
-#, fuzzy
 msgid ""
 "Once you've built Mono, you can proceed to build Godot with the instructions "
 "described in this page and the :ref:`Compiling for "
@@ -505,16 +504,13 @@ msgstr ""
 "`Compiling for Android<doc_compiling_for_android>`. Assurez-vous d'indiquer "
 "à SCons l'emplacement du runtime Mono que vous venez de construire : ``scons "
 "[...] mono_prefix=\"$HOME/mono-installs/android-armeabi-v7a-release\"`` (Ce "
-"chemin peut être différent sur votre système, selon les options que vous "
-"avez utilisées pour construire Mono)."
+"chemin peut être différent sur votre système)."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:252
-#, fuzzy
 msgid "Targeting iOS"
-msgstr "Cibler Android"
+msgstr "Cibler iOS"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:254
-#, fuzzy
 msgid ""
 "Once you've built Mono, you can proceed to build Godot with the instructions "
 "described in this page and the :ref:`Compiling for "
@@ -525,35 +521,43 @@ msgid ""
 msgstr ""
 "Une fois que vous avez compilé Mono, vous pouvez procéder à la compilation "
 "de Godot avec les instructions décrites dans cette page et la page :ref:"
-"`Compiling for Android<doc_compiling_for_android>`. Assurez-vous d'indiquer "
-"à SCons l'emplacement du runtime Mono que vous venez de construire : ``scons "
-"[...] mono_prefix=\"$HOME/mono-installs/android-armeabi-v7a-release\"`` (Ce "
-"chemin peut être différent sur votre système, selon les options que vous "
-"avez utilisées pour construire Mono)."
+"`Compiling for iOS<doc_compiling_for_ios>`. Assurez-vous d'indiquer à SCons "
+"l'emplacement du runtime Mono que vous venez de construire : ``scons [...] "
+"mono_prefix=\"$HOME/mono-installs/ios-arm64-release\"`` (Ce chemin peut être "
+"différent sur votre système)."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:261
 msgid ""
 "After building Godot for each architecture, you will notice SCons has copied "
 "the Mono libraries for each of them to the output directory:"
 msgstr ""
+"Après avoir compilé Godot pour chaque architecture, vous remarquerez que "
+"SCons a copié les bibliothèques Mono pour chacune d'entre elles dans le "
+"répertoire de sortie :"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:274
 msgid ""
 "The last three are only for iOS devices and are not available for the iOS "
 "simulator."
 msgstr ""
+"Les trois derniers sont uniquement destinés aux appareils iOS et ne sont pas "
+"disponibles pour le simulateur iOS."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:276
 msgid ""
 "These libraries must be put in universal (multi-architecture) \"fat\" files "
 "to be distributed with the export templates."
 msgstr ""
+"Ces bibliothèques doivent être mises dans des fichiers \"gras\" universels "
+"(multi-architecture) pour être distribuées avec les modèles d'exportation."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:279
 msgid ""
 "The following bash script will create the \"fat\" libraries in the directory "
 "``#bin/ios/iphone-mono-libs``:"
 msgstr ""
+"Le script bash suivant va créer les bibliothèques \"fat\" dans le répertoire "
+"\"bin/ios/iphone-mono-libs\" :"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:295
 msgid ""
@@ -561,20 +565,23 @@ msgid ""
 "templates. The Godot editor will look for the libraries in ``<templates>/"
 "iphone-mono-libs/lib<name>.iphone.fat.a``."
 msgstr ""
+"Le dossier \"iphone-mono-libs\" doit être distribué avec les modèles "
+"d'exportation. L'éditeur Godot cherchera les bibliothèques dans "
+"``<templates>/iphone-mono-libs/lib<name>.iphone.fat.a``."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:299
-#, fuzzy
 msgid "Targeting WebAssembly"
-msgstr "**Web :** WebAssembly"
+msgstr "Cibler WebAssembly"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:301
 msgid ""
 "Building for WebAssembly currently involves the same process regardless of "
 "whether the Mono module is enabled."
 msgstr ""
+"La compilation pour le WebAssembly implique actuellement le même processus, "
+"que le module Mono soit activé ou non."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:303
-#, fuzzy
 msgid ""
 "Once you've built Mono, you can proceed to build Godot with the instructions "
 "described in this page and the :ref:`Compiling for the "
@@ -585,16 +592,14 @@ msgid ""
 msgstr ""
 "Une fois que vous avez compilé Mono, vous pouvez procéder à la compilation "
 "de Godot avec les instructions décrites dans cette page et la page :ref:"
-"`Compiling for Android<doc_compiling_for_android>`. Assurez-vous d'indiquer "
-"à SCons l'emplacement du runtime Mono que vous venez de construire : ``scons "
-"[...] mono_prefix=\"$HOME/mono-installs/android-armeabi-v7a-release\"`` (Ce "
-"chemin peut être différent sur votre système, selon les options que vous "
-"avez utilisées pour construire Mono)."
+"`Compiling for the Web<doc_compiling_for_web>`. Assurez-vous d'indiquer à "
+"SCons l'emplacement du runtime Mono que vous venez de construire : ``scons "
+"[...] mono_prefix=\"$HOME/mono-installs/wasm-runtime-release\"`` (Ce chemin "
+"peut être différent sur votre système)."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:311
-#, fuzzy
 msgid "Base Class Library"
-msgstr "Bibliothèque d'assets"
+msgstr "Bibliothèque de classe de base"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:313
 msgid ""
@@ -604,11 +609,15 @@ msgid ""
 "the SCons ``platform`` option, e.g.: ``<templates>/bcl/windows``, "
 "``<templates>/bcl/javascript``."
 msgstr ""
+"Les modèles d'exportation doivent également inclure la BCL (Base Class "
+"Library) pour chaque plate-forme cible. Godot recherche le dossier BCL dans "
+"``<templates>/bcl/<target_platform>``, où ``<target_platform>`` est le même "
+"nom transmis à l'option SCons ``platform``, par exemple : ``<templates>/bcl/"
+"windows``, ``<templates>/bcl/javascript``."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:318
-#, fuzzy
 msgid "Alternatively, Godot will look for them in the following locations:"
-msgstr "Et encore une fois, il produira le mouvement suivant :"
+msgstr "Sinon, Godot les recherchera aux endroits suivants :"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:321
 msgid "Android"
@@ -616,7 +625,7 @@ msgstr "Android"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:321
 msgid "``<templates>/bcl/monodroid``"
-msgstr ""
+msgstr "``<templates>/bcl/monodroid``"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:323
 msgid "iOS"
@@ -624,25 +633,23 @@ msgstr "iOS"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:323
 msgid "``<templates>/bcl/monotouch``"
-msgstr ""
+msgstr "``<templates>/bcl/monotouch``"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:325
-#, fuzzy
 msgid "WebAssembly"
-msgstr "**Web :** WebAssembly"
+msgstr "WebAssembly"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:325
 msgid "``<templates>/bcl/wasm``"
-msgstr ""
+msgstr "``<templates>/bcl/wasm``"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:327
-#, fuzzy
 msgid "Linux and macOS"
-msgstr "Éxécution sur macOS"
+msgstr "Linux et macOS"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:327
 msgid "``<templates>/bcl/net_4_x``"
-msgstr ""
+msgstr "``<templates>/bcl/net_4_x``"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:329
 msgid "Windows"
@@ -650,7 +657,7 @@ msgstr "Windows"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:329
 msgid "``<templates>/bcl/net_4_x_win``"
-msgstr ""
+msgstr "``<templates>/bcl/net_4_x_win``"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:332
 msgid ""
@@ -658,6 +665,9 @@ msgid ""
 "and macOS, but this may change in the future as they're not guaranteed to be "
 "the same (as is the case with the Windows BCL)."
 msgstr ""
+"Pour l'instant, nous supposons que le même profil BCL peut être utilisé pour "
+"Linux et MacOS, mais cela pourrait changer à l'avenir car il n'est pas "
+"garanti qu'ils soient identiques (comme c'est le cas avec le BCL de Windows)."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:336
 msgid ""
@@ -665,11 +675,13 @@ msgid ""
 "the editor will use the BCL it's running on (``<data_folder>/Mono/lib/"
 "mono/4.5``) if it cannot find the BCL in the export templates."
 msgstr ""
+"Si la plate-forme cible est la même que la plate-forme de l'éditeur Godot, "
+"alors l'éditeur utilisera le BCL sur lequel il s'exécute (``<data_folder>/"
+"Mono/lib/mono/4.5``) s'il ne trouve pas le BCL dans le modèles d'exportation."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:341
-#, fuzzy
 msgid "AOT cross-compilers"
-msgstr "Un compilateur pour C"
+msgstr "Compilateurs croisés AOT"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:343
 msgid ""
@@ -677,6 +689,9 @@ msgid ""
 "to have access to the Mono cross-compilers for that platform and "
 "architecture."
 msgstr ""
+"Pour effectuer une compilation anticipée (AOT) pour d'autres plates-formes, "
+"Godot doit avoir accès aux compilateurs croisés Mono pour cette plate-forme "
+"et cette architecture."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:346
 msgid ""
@@ -684,15 +699,17 @@ msgid ""
 "folder. The location of this folder is ``<data_folder>/Tools/aot-compilers/"
 "``."
 msgstr ""
+"Godot cherchera l'exécutable cross-compiler dans le dossier des compilateurs "
+"AOT. L'emplacement de ce dossier est ``<data_folder>/Tools/aot-compilers``."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:349
-#, fuzzy
 msgid ""
 "In order to build the cross-compilers we recommend using these `build "
 "scripts <https://github.com/godotengine/godot-mono-builds>`_."
 msgstr ""
-"Si vous participer à la documentation, son dépôt peut être trouvé `ici "
-"<https://github.com/godotengine/godot-docs>`_."
+"Afin de construire les compilateurs croisés, nous recommandons d'utiliser "
+"ces `scripts de construction <https://github.com/godotengine/godot-mono-"
+"builds>`_."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:352
 msgid ""
@@ -700,6 +717,9 @@ msgid ""
 "directory. The executable name is ``<triple>-mono-sgen``, e.g.: ``aarch64-"
 "apple-darwin-mono-sgen``."
 msgstr ""
+"Après les avoir compilé, copiez l'exécutable dans le répertoire des "
+"compilateurs Godot AOT. Le nom de l'exécutable est ``<triple>-mono-sgen``, "
+"par exemple ``aarch64-apple-darwin-mono-sgen``."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:356
 msgid "Command-line options"
@@ -714,11 +734,8 @@ msgstr ""
 "construction avec le module Mono :"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:361
-#, fuzzy
 msgid "**module_mono_enabled**\\ =yes | **no**"
-msgstr ""
-"**module_mono_enabled** : Compiler Godot avec le module Mono activé (yes | "
-"**no**)"
+msgstr "**module_mono_enabled**\\ =yes | **no**"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:363
 msgid "Build Godot with the Mono module enabled."
@@ -726,7 +743,7 @@ msgstr "Construire Godot avec le module Mono activé."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:365
 msgid "**mono_glue**\\ =\\ **yes** | no"
-msgstr ""
+msgstr "**mono_glue**\\ =\\ **yes** | no"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:367
 msgid ""
@@ -738,7 +755,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:370
 msgid "**mono_prefix**\\ =path"
-msgstr ""
+msgstr "**mono_prefix**\\ =path"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:372
 msgid ""
@@ -750,7 +767,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:374
 msgid "**xbuild_fallback**\\ =yes | **no**"
-msgstr ""
+msgstr "**xbuild_fallback**\\ =yes | **no**"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:376
 msgid "Whether to fallback to xbuild if MSBuild is not available."
@@ -758,7 +775,7 @@ msgstr "S'il faut se rabattre sur xbuild si MSBuild n'est pas disponible."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:378
 msgid "**mono_static**\\ =yes | no"
-msgstr ""
+msgstr "**mono_static**\\ =yes | no"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:380
 msgid "Whether to link the Mono runtime statically."
@@ -768,17 +785,17 @@ msgstr "S'il faut lier statiquement le runtime Mono."
 msgid ""
 "The default is **yes** for iOS and WASM, and **no** for other platforms."
 msgstr ""
+"La valeur par défaut est **yes** pour iOS et WASM, et **no** pour les autres "
+"plateformes."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:383
 msgid "**copy_mono_root**\\ =yes | **no**"
-msgstr ""
+msgstr "**copy_mono_root**\\ =yes | **no**"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:385
-#, fuzzy
 msgid ""
 "Whether to copy the Mono framework assemblies and configuration files "
 "required by the Godot editor."
 msgstr ""
-"**copy_mono_root** : Indique s'il faut copier les assemblies du framework "
-"Mono et les fichiers de configuration requis par l'éditeur Godot (yes | "
-"**no**)"
+"Indique s'il faut copier les assemblies du framework Mono et les fichiers de "
+"configuration requis par l'éditeur Godot."

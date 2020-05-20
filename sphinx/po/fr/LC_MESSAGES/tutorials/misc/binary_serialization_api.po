@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -444,10 +444,16 @@ msgid ""
 "data structures should be 8, and the offset should be (offset - 4) * 2 + 4. "
 "The \"float\" type itself is always double precision."
 msgstr ""
+"Suit le contenu réel du paquet, qui varie pour chaque type de paquet. Notez "
+"que cela suppose que Godot est compilé avec des flotteurs de précision "
+"unique. Si, au lieu de cela, on utilise des doubles, la longueur des champs "
+"\"Float\" dans les structures de données devrait être de 8, et le décalage "
+"devrait être (décalage - 4) * 2 + 4. Le type \"float\" lui-même est toujours "
+"en double précision."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:89
 msgid "0: null"
-msgstr "0: null"
+msgstr "0 : null"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:92
 msgid "1: :ref:`bool<class_bool>`"
@@ -577,14 +583,12 @@ msgid "2: :ref:`int<class_int>`"
 msgstr "2 : :ref:`int<class_int>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:106
-#, fuzzy
 msgid "Signed, 64-bit Integer"
-msgstr "Entier de 32 bits signé"
+msgstr "Entier 64 bits signé"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:110
-#, fuzzy
 msgid "3: :ref:`float<class_float>`"
-msgstr ":ref:`float <class_float>`"
+msgstr "3 : :ref:`float<class_float>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:115
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:137
@@ -1057,9 +1061,8 @@ msgid "Array Length (Floats)"
 msgstr "Array Length (Flottants)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:414
-#, fuzzy
 msgid "32 Bits IEEE 754 Float"
-msgstr "32 Bits IEE 754 Float"
+msgstr "32 Bits IEEE 754 Float"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:418
 msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -311,9 +311,8 @@ msgstr ""
 "réalité augmentée."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:81
-#, fuzzy
 msgid "Built-ins"
-msgstr "Variable intégrée"
+msgstr "Variables intégrées"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:83
 msgid ""
@@ -330,13 +329,14 @@ msgstr ""
 "pas marqués."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:89
-#, fuzzy
 msgid "Global built-ins"
-msgstr "Variables intégrées de fragment"
+msgstr "Variables intégrées Globales"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:91
 msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
+"Les modules intégrés globaux sont disponibles partout, y compris dans les "
+"fonctions personnalisées."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:94
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
@@ -430,7 +430,6 @@ msgid "**z**: Animation frame."
 msgstr "**z** : Trame d'animation."
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
-#, fuzzy
 msgid ""
 "This allows you to easily adjust the shader to a particle system using "
 "default particles material. When writing a custom particle shader, this "

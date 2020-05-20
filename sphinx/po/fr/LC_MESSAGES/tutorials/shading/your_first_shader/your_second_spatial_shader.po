@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -260,7 +260,6 @@ msgstr ""
 "un sympathique effet d'eau."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:131
-#, fuzzy
 msgid ""
 "In order to add fresnal reflectance, we will compute a fresnel term in our "
 "fragment shader. Here, we aren't going to use a real fresnel term for "
@@ -271,17 +270,16 @@ msgid ""
 "way to tell when you are looking at the surface head-on or at a glancing "
 "angle."
 msgstr ""
-"Afin d'ajouter une réflectance Fresnel, nous calculerons un terme de Fresnel "
-"dans notre shader fragment. Nous n'allons pas utiliser un véritable terme de "
-"Fresnel, mais nous allons plutôt l'approximer en utilisant le produit "
-"scalaire des vecteurs ``NORMAL`` et ``VIEW``. Le vecteur ``NORMAL`` pointe à "
-"l'opposé d'une surface du, tandis que le vecteur ``VIEW`` est la direction "
-"entre votre œil et ce point de la surface. Le produit scalaire entre les "
-"deux est un moyen pratique de savoir quand vous regardez la surface de face "
-"ou à un angle de vue."
+"Afin d'ajouter une réflectance de Fresnel, nous calculerons un terme de "
+"Fresnel dans notre shader fragment. Nous n'allons pas utiliser un véritable "
+"terme de Fresnel pour des raisons de performance, mais nous allons plutôt "
+"l'approximer en utilisant le produit scalaire des vecteurs ``NORMAL`` et "
+"``VIEW``. Le vecteur ``NORMAL`` pointe à l'opposé de la surface du mesh, "
+"tandis que le vecteur ``VIEW`` est la direction entre votre œil et ce point "
+"de la surface. Le produit scalaire entre les deux est un moyen pratique de "
+"savoir quand vous regardez la surface de face ou à un angle oblique."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:143
-#, fuzzy
 msgid ""
 "And mix it into both ``ROUGHNESS`` and ``ALBEDO``. This is the benefit of "
 "ShaderMaterials over SpatialMaterials. With SpatialMaterials, we could set "
@@ -312,7 +310,6 @@ msgid "Animating with ``TIME``"
 msgstr "Animation avec ``TIME``"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:170
-#, fuzzy
 msgid ""
 "Going back to the vertex function, we can animate the waves using the built-"
 "in variable ``TIME``."
@@ -339,7 +336,6 @@ msgstr ""
 "heightmap dans une fonction appelée ``height()``."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:184
-#, fuzzy
 msgid ""
 "In order to use ``TIME`` in the ``height()`` function, we need to pass it in."
 msgstr ""
@@ -428,14 +424,13 @@ msgid "At first this looks complicated. So let's go through it line-by-line."
 msgstr "Au début, cela semble compliqué. Voyons donc cela ligne par ligne."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:250
-#, fuzzy
 msgid ""
 "Offset the position by the ``noise`` texture. This will make the waves "
 "curve, so they won't be straight lines completely aligned with the grid."
 msgstr ""
-"Décalez la position par la texture ``noise``. Les vagurs seront ainsi "
-"courbées de sorte qu'elles ne soient pas des lignes droites complètement "
-"alignées sur la grille."
+"Décalez la position par la texture ``noise``. Cela courbera les vagues, de "
+"sorte qu'elles ne soient pas des lignes droites complètement alignées sur la "
+"grille."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:257
 msgid ""
@@ -519,12 +514,11 @@ msgstr ""
 "maintenir la vague dans la fourchette 0-1."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:314
-#, fuzzy
 msgid ""
 "With this code you should end up with more complex looking waves and all you "
 "had to do was add a bit of math!"
 msgstr ""
-"Avec ce code, vous devriez vous retrouver avec des vagues d'apparence plus "
+"Avec ce code vous devriez vous retrouver avec des vagues d'apparence plus "
 "complexe et tout ce que vous aviez à faire était d'ajouter un peu de "
 "mathématiques !"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -231,16 +231,16 @@ msgid "Adding support for x86 devices"
 msgstr "Ajout de la prise en charge des appareils x86"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:122
-#, fuzzy
 msgid ""
 "If you also want to include support for x86 and x86-64 devices, run the "
 "SCons command a third and fourth time with the ``android_arch=x86``, and "
 "``android_arch=x86_64`` arguments before building the APK with Gradle. For "
 "example, for the release template:"
 msgstr ""
-"Si vous voulez également inclure le support des appareils x86, lancez la "
-"commande SCons une troisième fois avec l'argument ``android_arch=x86`` avant "
-"de construire l'APK avec Gradle. Par exemple, pour le modèle de version :"
+"Si vous voulez également inclure le support des appareils x86 et x86-64, "
+"lancez la commande SCons une troisième et une quatrième fois avec les "
+"arguments ``android_arch=x86``, et ``android_arch=x86_64`` avant de "
+"construire l'APK avec Gradle. Par exemple, pour le modèle de version :"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:140
 msgid ""
@@ -356,7 +356,7 @@ msgstr "Dépannage"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:203
 msgid "Platform doesn't appear in SCons"
-msgstr ""
+msgstr "La plate-forme n'apparaît pas dans SCons"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:205
 msgid ""
@@ -366,6 +366,11 @@ msgid ""
 "up the buildsystem <doc_android_setting_up_the_buildsystem>` for more "
 "information."
 msgstr ""
+"Vérifiez que vous avez bien défini les variables d'environnement "
+"\"ANDROID_HOME\" et \"ANDROID_NDK_ROOT\". Ceci est nécessaire pour que la "
+"plate-forme apparaisse dans la liste des plates-formes détectées par SCons. "
+"Voir :ref:`Configuration du système de construction "
+"<doc_android_setting_up_the_buildsystem>` pour plus d'informations."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:212
 msgid "Application not installed"
@@ -401,7 +406,7 @@ msgid ""
 msgstr ""
 "Vérifiez alors la sortie pendant que l'application est installée ; le "
 "message d'erreur devrait être présenté là. Demander assistance si vous "
-"n'arrivez pas pas à vous en sortir."
+"n'arrivez pas à vous en sortir."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:231
 msgid "Application exits immediately"

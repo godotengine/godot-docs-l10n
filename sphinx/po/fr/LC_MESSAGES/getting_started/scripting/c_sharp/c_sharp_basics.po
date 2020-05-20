@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,6 +123,9 @@ msgid ""
 "JetBrains Rider comes with bundled MSBuild, so you just need a recent .NET "
 "Framework Developer Pack. Make sure to set the following preferences:"
 msgstr ""
+"JetBrains Rider est livré avec MSBuild, il vous suffit donc de disposer d'un "
+"pack développeur récent de la framework .NET. Assurez-vous de définir les "
+"préférences suivantes de cette manière :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:56
 msgid "In Godot:"
@@ -130,25 +133,27 @@ msgstr "Dans Godot :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
 msgid "Mono External Editor to JetBrains Rider"
-msgstr ""
+msgstr "Éditeur externe Mono pour JetBrains Rider"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
 msgid "Mono Build Tool to JetBrains Mono."
-msgstr ""
+msgstr "Outils de compilation Mono pour JetBrains Mono."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
 msgid "In Rider:"
-msgstr ""
+msgstr "Dans Rider :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:63
 msgid ""
 "``TargetFrameworkVersion`` in ``csproj`` should match the installed .NET "
 "Framework Developer Pack."
 msgstr ""
+"``TargetFrameworkVersion`` dans ``csproj`` doit correspondre au .NET "
+"Framework Developer Pack installé."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
 msgid "Install **Godot support** plugin."
-msgstr ""
+msgstr "Installez le plugin ** Godot support **."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
 msgid "macOS and Linux"
@@ -175,13 +180,13 @@ msgid ""
 "channel is an earlier version of Mono and will not work."
 msgstr ""
 "Pour télécharger Mono sur macOS, utilisez le lien \"Stable Channel\" dans la "
-"page `téléchargements de Mono  <http://www.mono-project.com/download/>`_. Le "
+"page `téléchargements de Mono <http://www.mono-project.com/download/>`_. Le "
 "canal Visual Studio est une version antérieure de Mono et ne fonctionnera "
 "pas."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:81
 msgid "Additional notes"
-msgstr "Informations supplémentaires :"
+msgstr "Informations supplémentaires"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:83
 msgid ""
@@ -683,6 +688,11 @@ msgid ""
 "Debugger Agent under the Mono category. Then turn on the setting \"wait for "
 "debugger.\" Next, copy the port number and open up Visual Studio Code."
 msgstr ""
+"Pour configurer Visual Studio Code pour le débogage, ouvrez un projet Godot. "
+"Cliquez sur Projet et ouvrez les paramètres du projet. Faites défiler vers "
+"le bas et cliquez sur \"Debugger Agent\" sous la catégorie \"Mono\". Activez "
+"ensuite le paramètre \"wait for debugger\". Ensuite, copiez le numéro de "
+"port et ouvrez Visual Studio Code."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:322
 msgid ""
@@ -695,3 +705,12 @@ msgid ""
 "turned on in Godot, run the project, and run the debugger in Visual Studio "
 "Code."
 msgstr ""
+"Vous devez télécharger l'extension Mono Debug de Microsoft. Ensuite, ouvrez "
+"le dossier du projet Godot. Allez dans l'onglet run et cliquez sur \"create "
+"a launch.json file\". Sélectionnez C# Mono dans le menu déroulant. Lorsque "
+"le fichier \"launch.json\" est automatiquement ouvert, changez le numéro de "
+"port pour celui que vous avez copié précédemment et enregistrez le fichier. "
+"Dans l'onglet run, changez le paramètre \"run\" de \"launch\" à \"attach\". "
+"Chaque fois que vous voulez déboguer, assurez-vous que l'option \"Wait for "
+"Debugger\" est activée dans Godot, exécutez le projet et lancez le débogueur "
+"dans Visual Studio Code."

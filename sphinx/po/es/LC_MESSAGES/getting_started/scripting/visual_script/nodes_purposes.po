@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -262,13 +262,13 @@ msgstr ""
 "escribiendo a un *Puerto de Datos* (Data Port)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
-#, fuzzy
 msgid ""
 "If instead reading this value is desired, drag the node again but hold :kbd:"
 "`Ctrl` (or :kbd:`Cmd` on macOS). This will create a getter:"
 msgstr ""
 "Si en cambio deseas leer este valor, arrastra el nodo de nuevo pero mantén "
-"presionada la tecla *Control* (o Comando en Mac). Esto creará un getter:"
+"presionada la tecla :kbd:`Ctrl` (o :kbd:`Cmd` en macOS). Esto creará un "
+"getter:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:127
 msgid "In this case, the value can be read from a *Data Port*."
@@ -324,11 +324,10 @@ msgstr ""
 "trabajo para crear un getter:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
-#, fuzzy
 msgid "Likewise, hold :kbd:`Ctrl` (or :kbd:`Cmd` on macOS) to drop a setter:"
 msgstr ""
-"Del mismo modo, manteniendo presionado *Control* (*Command* en Mac) para "
-"crear un setter:"
+"Del mismo modo, manteniendo presionado :kbd:`Ctrl` (o :kbd:`Cmd` en macOS) "
+"para crear un setter:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 msgid "Signals"
@@ -340,9 +339,9 @@ msgid ""
 "this, do the same steps you did for variables in the previous step, except "
 "for *Signals*:"
 msgstr ""
-"También es posible crear  tus propias señales en un script y usarlas. Para "
+"También es posible crear tus propias señales en un script y usarlas. Para "
 "esto, realiza los mismos pasos utilizados para variables en el paso "
-"anterior, pero para la sección *Signals*:"
+"anterior, pero para la sección *Señales*:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:171
 msgid ""
@@ -391,11 +390,12 @@ msgstr ""
 "disponibles:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:198
-#, fuzzy
 msgid ""
 "Pressing :kbd:`Ctrl + F` (or :kbd:`Cmd + F` on macOS) allows you to search "
 "the list."
-msgstr "Ctrl-F (Command-F en Mac) le permite buscar en la lista."
+msgstr ""
+"Presionar :kbd:`Ctrl + F` (o :kbd:`Cmd + F` en macOS) le permite buscar en "
+"la lista."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:200
 msgid ""
@@ -663,18 +663,17 @@ msgid "Condition"
 msgstr "Condición"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
-#, fuzzy
 msgid ""
 "This is a simple node that checks a bool port. If ``true``, it will go via "
 "the \"true\" sequence port. If ``false``, the second. After going for either "
 "of them, it goes via the \"done\" port. Leaving sequence ports disconnected "
 "is fine if not all of them are used."
 msgstr ""
-"Este es un nodo simple que compara un puerto booleano. Si es true, "
-"continuará por el puerto secuencia true. Si es falso, irá por el segundo. "
-"Después de ir por cualquiera de ellos, sigue por el puerto \"done\". Dejar "
-"los puertos de secuencia desconectados está bien si alguno de ellos no es "
-"usado."
+"Este es un nodo simple que compara un puerto booleano. Si es ``true``, "
+"continuará por el puerto secuencia \"true\". Si es ``false``, irá por el "
+"segundo. Después de ir por cualquiera de ellos, sigue por el puerto \"done"
+"\". Dejar los puertos de secuencia desconectados está bien si alguno de "
+"ellos no es usado."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
@@ -793,17 +792,16 @@ msgid "Built-In"
 msgstr "Funciones propias"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
-#, fuzzy
 msgid ""
 "There is a list of built-in helpers. The list is almost identical to the one "
 "from :ref:`GDScript<class_@GDScript>`. Most of them are mathematical "
 "functions, but others can be useful helpers. Make sure to take a look at the "
 "list at some point."
 msgstr ""
-"Hay una lista de utilidades integradas. La lista es casi idéntica a la de "
-"GDScript. La mayoría de ellos son funciones matemáticas, pero otras pueden "
-"ser útiles para facilitar operaciones comunes. Asegúrate de echar un vistazo "
-"a la lista en algún momento."
+"Hay una lista de utilidades integradas. La lista es casi idéntica a la de :"
+"ref:`GDScript<class_@GDScript>`. La mayoría de ellos son funciones "
+"matemáticas, pero otras pueden ser útiles para facilitar operaciones "
+"comunes. Asegúrate de echar un vistazo a la lista en algún momento."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:404
 msgid "By Type"
@@ -982,10 +980,11 @@ msgid "Access local variables or properties:"
 msgstr "Acceder a variables locales o propiedades:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:498
+#, fuzzy
 msgid ""
 "Use most of the existing built-in functions that are available to GDScript, "
-"such as sin(),cos(),print(), as well as constructors, such as Vector3(x,y,z),"
-"Rect2(..), etc.:"
+"such as ``sin()``, ``cos()``, ``print()``, as well as constructors, such as "
+"``Vector3(x, y, z)``, ``Rect2(...)``, etc.:"
 msgstr ""
 "Utilizar la mayoría de las funciones built-in disponibles en GDScript, como "
 "sin(), cos(), print, así como constructores como Vector3(x,y,z),Rect2(...), "

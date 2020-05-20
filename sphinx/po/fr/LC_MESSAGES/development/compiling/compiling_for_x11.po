@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,6 +48,12 @@ msgid ""
 "of the SCons script file to ``#! /usr/bin/python3``. Use the command ``which "
 "scons`` to find the location of the SCons script file."
 msgstr ""
+"Système de compilation SCons 3.0+. Si votre distribution utilise Python 2 "
+"par défaut, ou si vous utilisez une version de SCons antérieure à 3.1.2, "
+"vous devrez changer la version de Python que SCons utilise en changeant le "
+"shebang (la première ligne) du fichier de script SCons en ``#! /usr/bin/"
+"python3``. Utilisez la commande ``which scons`` pour trouver l'emplacement "
+"du fichier de script SCons."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:21
 msgid "pkg-config (used to detect the dependencies below)."
@@ -204,12 +210,32 @@ msgid ""
 "official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
 "by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
+"Si vous souhaitez utiliser des paramètres d'édition séparés pour vos propres "
+"constructions Godot et vos versions officielles, vous pouvez activer :ref:"
+"`doc_data_paths_self_contained_mode` en créant un fichier appelé ``._sc_`` "
+"ou ``_sc_`` dans le dossier ``bin/``."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:132
+msgid "Compiling a headless/server build"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:134
+msgid ""
+"To compile a *headless* build which provides editor functionality to export "
+"projects in an automated manner, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:139
+msgid ""
+"To compile a *server* build which is optimized to run dedicated game "
+"servers, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:145
 msgid "Building export templates"
 msgstr "Création de modèles d'exportation"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:134
+#: ../../docs/development/compiling/compiling_for_x11.rst:147
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -225,7 +251,7 @@ msgstr ""
 "virtuelle ou un conteneur pour mettre en place un environnement de "
 "compilation approprié."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:142
+#: ../../docs/development/compiling/compiling_for_x11.rst:155
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
@@ -233,15 +259,15 @@ msgstr ""
 "Pour construire(build) des modèles d'exportation X11 (Linux, \\*BSD), "
 "exécutez le système de construction(build) avec les paramètres suivants :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:145
+#: ../../docs/development/compiling/compiling_for_x11.rst:158
 msgid "(32 bits)"
 msgstr "(32 bits)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:152
+#: ../../docs/development/compiling/compiling_for_x11.rst:165
 msgid "(64 bits)"
 msgstr "(64 bits)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:159
+#: ../../docs/development/compiling/compiling_for_x11.rst:172
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
@@ -250,14 +276,14 @@ msgstr ""
 "forme hôte n'est pas toujours simple et peut nécessiter un environnement "
 "chroot."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:162
+#: ../../docs/development/compiling/compiling_for_x11.rst:175
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
 "Pour créer des modèles d'exportation standard, les fichiers résultants "
 "doivent être copiés vers :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:168
+#: ../../docs/development/compiling/compiling_for_x11.rst:181
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
@@ -265,7 +291,7 @@ msgstr ""
 "et nommé ainsi (même pour \\*BSD qui est considéré comme \"Linux X11\" par "
 "Godot) :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:177
+#: ../../docs/development/compiling/compiling_for_x11.rst:190
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
@@ -275,7 +301,7 @@ msgstr ""
 "personnalisé, vous pouvez plutôt configurer vos binaires comme modèles "
 "d'exportation personnalisés ici :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:183
+#: ../../docs/development/compiling/compiling_for_x11.rst:196
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Godot source folder, so the next time you "
@@ -286,11 +312,11 @@ msgstr ""
 "Godot, de sorte que la prochaine fois que vous construirez(build), vous "
 "aurez automatiquement les modèles personnalisés référencés."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:188
+#: ../../docs/development/compiling/compiling_for_x11.rst:201
 msgid "Using Clang and LLD for faster development"
 msgstr "Utiliser Clang et LLD pour un développement plus rapide"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:190
+#: ../../docs/development/compiling/compiling_for_x11.rst:203
 msgid ""
 "You can also use Clang and LLD to build Godot. This has two upsides compared "
 "to the default GCC + GNU ld setup:"
@@ -299,7 +325,7 @@ msgstr ""
 "Cela présente deux avantages par rapport à la configuration par défaut de "
 "GCC + GNU ld :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:193
+#: ../../docs/development/compiling/compiling_for_x11.rst:206
 msgid ""
 "LLD links Godot significantly faster compared to GNU ld or gold. This leads "
 "to faster iteration times."
@@ -307,11 +333,11 @@ msgstr ""
 "LLD relie(links) Godot beaucoup plus rapidement que GNU ld ou gold. Cela "
 "conduit à des temps d'itération plus rapides."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:195
+#: ../../docs/development/compiling/compiling_for_x11.rst:208
 msgid "Clang tends to give more useful error messages compared to GCC."
 msgstr "Clang a tendance à donner des messages d'erreur plus utiles que GCC."
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:197
+#: ../../docs/development/compiling/compiling_for_x11.rst:210
 msgid ""
 "To do so, install Clang and the ``lld`` package from your distribution's "
 "package manager then use the following SCons command::"
@@ -319,7 +345,7 @@ msgstr ""
 "Pour ce faire, installez Clang et le paquet ``lld`` du gestionnaire de "
 "paquets de votre distribution puis utilisez la commande SCons suivante :"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:202
+#: ../../docs/development/compiling/compiling_for_x11.rst:215
 msgid ""
 "It's still recommended to use GCC for production builds as they can be "
 "compiled using link-time optimization, making the resulting binaries smaller "

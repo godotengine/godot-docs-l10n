@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:4
-#, fuzzy
 msgid "Default editor shortcuts"
-msgstr "Entorno por defecto"
+msgstr "Atajos por defecto del editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:5
 msgid ""
@@ -30,6 +29,12 @@ msgid ""
 "keys associated with these and other actions navigate to ``Editor -> Editor "
 "Settings -> Shortcuts``."
 msgstr ""
+"Muchas de las funciones del editor de Godot se pueden ejecutar mediante "
+"atajos de teclado. Esta página enumera las funciones que tienen atajos de "
+"teclado asociados de forma predeterminada, pero también hay muchas otras "
+"disponibles para personalizar en la configuración del editor. Para cambiar "
+"las teclas asociadas con estas y otras acciones, vaya a ``Editor -> Editor "
+"Settings -> Shortcuts``."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:10
 msgid ""
@@ -38,6 +43,10 @@ msgid ""
 "to be assigned to more than one function. The correct action will be "
 "performed depending on the context."
 msgstr ""
+"Si bien algunas acciones son universales, muchos atajos son específicos de "
+"las herramientas individuales. Por esta razón, es posible que algunas "
+"combinaciones de teclas se asignen a más de una función. La acción correcta "
+"se realizará según el contexto."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:15
 msgid ""
@@ -47,11 +56,16 @@ msgid ""
 "standard shortcuts on that OS should find Godot Editor's default key mapping "
 "intuitive."
 msgstr ""
+"Si bien las compilaciones del editor para Windows y Linux comparten la "
+"mayoría de las configuraciones predeterminadas, algunos accesos directos "
+"pueden diferir para la versión de macOS. Esto se hace para una mejor "
+"integración del editor en el ecosistema macOS. Los usuarios que dominan los "
+"accesos directos estándar en ese sistema operativo deberían encontrar "
+"intuitiva la asignación de teclas predeterminada de Godot Editor."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:21
-#, fuzzy
 msgid "General Editor Actions"
-msgstr "Propiedades de los nodos"
+msgstr "Acciones Generales del Editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -67,9 +81,8 @@ msgstr "Propiedades de los nodos"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:461
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
-#, fuzzy
 msgid "Action name"
-msgstr "Acción"
+msgstr "Nombre de la acción"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -85,9 +98,8 @@ msgstr "Acción"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:461
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
-#, fuzzy
 msgid "Windows, Linux"
-msgstr "**Escritorio:** Windows, macOS, Linux"
+msgstr "Windows, Linux"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -120,9 +132,8 @@ msgstr "macOS"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:461
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
-#, fuzzy
 msgid "Editor setting"
-msgstr "Plugins del editor"
+msgstr "Configuración del editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid "Open 2D Editor"
@@ -130,15 +141,15 @@ msgstr "Abrir Editor 2D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
-msgstr ""
+msgstr ":kbd:`F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`Alt + 1`"
-msgstr ""
+msgstr ":kbd:`Alt + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid "``editor/editor_2d``"
-msgstr ""
+msgstr "``editor/editor_2d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid "Open 3D Editor"
@@ -146,15 +157,15 @@ msgstr "Abrir Editor 3D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
-msgstr ""
+msgstr ":kbd:`F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`Alt + 2`"
-msgstr ""
+msgstr ":kbd:`Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid "``editor/editor_3d``"
-msgstr ""
+msgstr "``editor/editor_3d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
@@ -164,15 +175,15 @@ msgstr "Abrir Editor de Script"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid ":kbd:`F3`"
-msgstr ""
+msgstr ":kbd:`F3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid ":kbd:`Alt + 3`"
-msgstr ""
+msgstr ":kbd:`Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "``editor/editor_script``"
-msgstr ""
+msgstr "``editor/editor_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
@@ -180,15 +191,15 @@ msgstr "Buscar en la Ayuda"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
-msgstr ""
+msgstr ":kbd:`Shift + F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Alt + Space`"
-msgstr ""
+msgstr ":kbd:`Alt + Space`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "``editor/editor_help``"
-msgstr ""
+msgstr "``editor/editor_help``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid "Distraction Free Mode"
@@ -196,7 +207,7 @@ msgstr "Modo Sin Distracciones"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Cmd + Ctrl + D`"
@@ -239,9 +250,8 @@ msgid "``editor/prev_tab``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
-#, fuzzy
 msgid "Filter Files"
-msgstr "Archivos Externos"
+msgstr "Filtrar archivos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid ":kbd:`Ctrl + Alt + P`"
@@ -322,9 +332,8 @@ msgid "``editor/save_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
-#, fuzzy
 msgid "Save Scene As"
-msgstr "Escena del jugador (player)"
+msgstr "Guardar Escena Como"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid ":kbd:`Ctrl + Shift + S`"
@@ -599,9 +608,8 @@ msgid "``editor/bottom_panel_expand``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:86
-#, fuzzy
 msgid "2D / Canvas Item Editor"
-msgstr "Canvas Item"
+msgstr "2D / Editor de Canvas Item"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -902,9 +910,8 @@ msgid "``canvas_item_editor/anim_insert_key_existing_tracks``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:133
-#, fuzzy
 msgid "Make Custom Bones from Nodes"
-msgstr "Cargadores de recursos en formato personalizado"
+msgstr "Crear Hueso(s) Personalizado(s) a partir de Nodo(s)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:133
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
@@ -1227,7 +1234,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "1 Viewport"
-msgstr "1 Viewport"
+msgstr "1 vista"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Ctrl + 1`"
@@ -1322,9 +1329,8 @@ msgid "``spatial_editor/4_viewports``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:214
-#, fuzzy
 msgid "Text Editor"
-msgstr "El editor"
+msgstr "Editor de Texto"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "Cut"
@@ -1927,9 +1933,8 @@ msgid "``script_editor/window_move_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
-#, fuzzy
 msgid "Next Script"
-msgstr "Script Personalizado"
+msgstr "Script Siguiente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Ctrl + Shift + .`"
@@ -1944,9 +1949,8 @@ msgid "``script_editor/next_script``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
-#, fuzzy
 msgid "Previous Script"
-msgstr "Script Personalizado"
+msgstr "Script Anterior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid ":kbd:`Ctrl + Shift + ,`"
@@ -2091,9 +2095,8 @@ msgid "``script_editor/reset_zoom``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:342
-#, fuzzy
 msgid "Visual Script Editor"
-msgstr "VisualScript"
+msgstr "Editor de Visual Script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
@@ -2194,9 +2197,8 @@ msgid "``visual_script_editor/toggle_breakpoint``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:367
-#, fuzzy
 msgid "Editor Output"
-msgstr "Manual del editor"
+msgstr "Salidas del editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
@@ -2405,9 +2407,8 @@ msgid "``file_dialog/move_favorite_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
-#, fuzzy
 msgid "FileSystem Dock"
-msgstr "Sistema de archivos"
+msgstr "Panel de Sistema de Archivos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "Copy Path"
@@ -2431,9 +2432,8 @@ msgid "``filesystem_dock/delete``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:435
-#, fuzzy
 msgid "Scene Tree Dock"
-msgstr "Árbol de Escenas"
+msgstr "Panel de Escenas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "Add Child Node"
@@ -2472,9 +2472,8 @@ msgid "``scene_tree/delete``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:448
-#, fuzzy
 msgid "Force Delete"
-msgstr "Fract Delta"
+msgstr "Eliminar (Sin Confirmar)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:448
 msgid ":kbd:`Shift + Del`"
@@ -2497,9 +2496,8 @@ msgid "``scene_tree/move_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:458
-#, fuzzy
 msgid "Animation Track Editor"
-msgstr "AnimationTree"
+msgstr "Editor de pistas de animación"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
@@ -2566,9 +2564,8 @@ msgid "``animation_editor/goto_prev_step``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:475
-#, fuzzy
 msgid "Tile Map Editor"
-msgstr "Nodo Camera"
+msgstr "Editor de Tile Map"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "Find Tile"
@@ -2699,9 +2696,8 @@ msgid "``tile_map_editor/erase_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:510
-#, fuzzy
 msgid "Tileset Editor"
-msgstr "El editor"
+msgstr "Editor de Tileset"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "Next Coordinate"

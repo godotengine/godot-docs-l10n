@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:4
 msgid "Bisecting regressions"
-msgstr ""
+msgstr "Régressions en bisectation"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:8
 msgid ""
@@ -29,15 +29,21 @@ msgid ""
 "possible for contributors to fix bugs faster, as they can know in advance "
 "which commit caused the regression. Your effort will be widely appreciated :)"
 msgstr ""
+"La bisection est un moyen de trouver des régressions dans les logiciels. "
+"Après avoir signalé un bogue sur le dépôt `Godot sur GitHub <https://github."
+"com/godotengine/godot>`__, un contributeur peut vous demander de *bisecter* "
+"le problème. Le Bisecting permet aux contributeurs de corriger les bugs plus "
+"rapidement, car ils peuvent savoir à l'avance quel commit a causé la "
+"régression. Votre effort sera largement apprécié :)"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:14
 msgid "The guide below explains how to find a regression by bisecting."
 msgstr ""
+"Le guide ci-dessous explique comment trouver une régression par bissection."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:17
-#, fuzzy
 msgid "What is bisecting?"
-msgstr "Qu'est-ce que c'est ?"
+msgstr "Qu'est-ce que la bissection ?"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:19
 msgid ""
@@ -48,10 +54,17 @@ msgid ""
 "it's typically used for bugs, it can also be used to find other kinds of "
 "unexpected changes such as performance regressions."
 msgstr ""
+"Les développeurs de Godot utilisent le système de contrôle de version `Git "
+"<https://git-scm.com/>``__. Dans le contexte de Git, la bissection est le "
+"processus consistant à effectuer une \"recherche binaire\" manuelle <https://"
+"en.wikipedia.org/wiki/Binary_search_algorithm>`__ pour déterminer quand une "
+"régression est apparue. Bien qu'il soit généralement utilisé pour les "
+"bogues, il peut également être utilisé pour trouver d'autres types de "
+"changements inattendus tels que les régressions de performance."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:27
 msgid "Using official builds to speed up bisecting"
-msgstr ""
+msgstr "Utiliser les compilations officielles pour accélérer la bissection"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:29
 msgid ""
@@ -62,6 +75,13 @@ msgid ""
 "betas, and release candidates `here <https://downloads.tuxfamily.org/"
 "godotengine/>`__."
 msgstr ""
+"Avant d'utiliser la commande \"bisect\" de Git, nous vous recommandons "
+"fortement d'essayer de reproduire le bug avec une version officielle plus "
+"ancienne (ou plus récente). Cela réduit considérablement le nombre de "
+"commits qui doivent potentiellement être construits à partir des sources et "
+"testés. Vous pouvez trouver les binaires des versions officielles, ainsi que "
+"les alphas, les bêtas et les candidats aux versions `ici <https://downloads."
+"tuxfamily.org/godotengine/>`__."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:35
 msgid ""
@@ -73,6 +93,14 @@ msgid ""
 "and RC builds. If you do manage to reproduce the bug with Godot 3.2 beta 1, "
 "then try older alpha builds."
 msgstr ""
+"Par exemple, si vous avez signalé un bogue contre Godot 3.2, vous devez "
+"d'abord essayer de reproduire le bogue dans Godot 3.1 (pas une version de "
+"correction, voir ci-dessous pour la raison). Si le bogue ne s'y produit pas, "
+"essayez de le reproduire dans Godot 3.2 *beta 1* (qui se situe à peu près au "
+"milieu de toutes les versions de test disponibles). Si vous ne pouvez pas "
+"reproduire le bogue avec Godot 3.2 beta 1, essayez des versions bêta et RC "
+"plus récentes. Si vous parvenez à reproduire le bogue avec Godot 3.2 beta 1, "
+"essayez des versions alpha plus anciennes."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:44
 msgid ""
@@ -82,10 +110,15 @@ msgid ""
 "of branch doesn't follow the rest of Godot's development, which is done in "
 "the ``master`` branch."
 msgstr ""
+"Pour bissecter une régression, n'utilisez pas les versions de patchs telles "
+"que Godot 3.1.2. Utilisez plutôt la première version de la version mineure "
+"comme Godot 3.1. En effet, les versions de correction sont construites à "
+"partir d'une branche *stable* distincte. Ce type de branche ne suit pas le "
+"reste du développement de Godot, qui est fait dans la branche ``master``."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:51
 msgid "The Git bisect command"
-msgstr ""
+msgstr "La commande git bisect"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:53
 msgid ""
@@ -95,6 +128,12 @@ msgid ""
 "process semi-automated as you only have to build the engine, run it and try "
 "to reproduce the bug."
 msgstr ""
+"Si vous avez trouvé une compilation qui ne présentait pas le bogue dans le "
+"processus de test ci-dessus, vous pouvez maintenant commencer à couper la "
+"régression en deux. Le système de contrôle de version Git offre une commande "
+"intégrée pour cela : ``git bisect``. Cela rend le processus semi-"
+"automatique, car il suffit de construire le moteur, de l'exécuter et "
+"d'essayer de reproduire le bogue."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:61
 msgid ""
@@ -103,6 +142,11 @@ msgid ""
 "compiling>` page for your target platform. (Compiling Godot from source "
 "doesn't require C++ programming knowledge.)"
 msgstr ""
+"Avant de bissecter une régression, vous devez mettre en place un "
+"environnement de compilation pour compiler Godot à partir de la source. Pour "
+"ce faire, lisez la page :ref:`Compilation <toc-devel-compilation>` pour "
+"votre plate-forme cible. (Compiler Godot à partir des sources ne nécessite "
+"pas de connaissances en programmation C++)."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:66
 msgid ""
@@ -112,6 +156,13 @@ msgid ""
 "there and report the results of your \"pre-bisecting\" on the GitHub issue "
 "so another contributor can continue bisecting from there."
 msgstr ""
+"Notez que la compilation de Godot peut prendre un certain temps sur du "
+"matériel lent (jusqu'à une heure pour chaque recompilation complète sur un "
+"CPU dual-core lent). Cela signifie que le processus complet peut prendre "
+"jusqu'à plusieurs heures. Si votre matériel est trop lent, vous pouvez vous "
+"arrêter là et rapporter les résultats de votre \"pré-bisection\" sur le "
+"numéro de GitHub afin qu'un autre contributeur puisse continuer à bissecter "
+"à partir de là."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:72
 msgid ""
@@ -123,18 +174,31 @@ msgid ""
 ">`__, go to the folder that contains the pre-release you downloaded and look "
 "for the ``README.txt`` file. The commit hash is written inside that file."
 msgstr ""
+"Pour commencer à bissecter, vous devez d'abord déterminer les hashs de "
+"commit (identifiants) des \"mauvaises\" et \"bonnes\" constructions. \"bad\" "
+"se réfère à la version qui présente le bogue, tandis que \"good\" se réfère "
+"à la version qui ne présente pas le bogue. Si vous utilisez une pré-version "
+"comme \"bonne\" ou \"mauvaise\" version, naviguez dans le `miroir de "
+"téléchargement <https://downloads.tuxfamily.org/godotengine/>`__, allez dans "
+"le dossier qui contient la pré-version que vous avez téléchargée et cherchez "
+"le fichier ``README.txt``. Le hachage du commit est écrit à l'intérieur de "
+"ce fichier."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:80
 msgid ""
 "If you're using a stable release as the \"good\" or \"bad\" build, use one "
 "of the following commit hashes depending on the version:"
 msgstr ""
+"Si vous utilisez une version stable comme \"bonne\" ou \"mauvaise\" "
+"compilation, utilisez l'un des hashs de commit suivants selon la version :"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:89
 msgid ""
 "To refer to the latest state of the master branch, you can use ``master`` "
 "instead of a commit hash."
 msgstr ""
+"Pour faire référence au dernier état de la branche master, vous pouvez "
+"utiliser ``master`` au lieu d'un hash de commit."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:92
 msgid ""
@@ -142,10 +206,15 @@ msgid ""
 "done, in the terminal window, use ``cd`` to reach the Godot repository "
 "folder and enter the following command:"
 msgstr ""
+":ref:`obtenez le code source de Godot avec Git <doc_getting_source>`. Une "
+"fois cela fait, dans la fenêtre du terminal, utilisez ``cd`` pour atteindre "
+"le dossier du dépôt de Godot et entrez la commande suivante :"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:102
 msgid "Compile Godot. This assumes you've set up a build environment:"
 msgstr ""
+"Compiler Godot. Cela suppose que vous avez mis en place un environnement de "
+"compilation :"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:110
 msgid ""
@@ -153,19 +222,24 @@ msgid ""
 "as possible to the task. This is what the ``-j`` parameter does. Here, the "
 "command assigns 4 CPU threads to compiling Godot."
 msgstr ""
+"Comme la compilation de Godot prend du temps, vous voulez y consacrer autant "
+"de threads CPU que possible. C'est ce que fait le paramètre ``-j``. Ici, la "
+"commande assigne 4 threads CPU à la compilation de Godot."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:114
 msgid ""
 "Run the binary located in the ``bin/`` folder and try to reproduce the bug."
 msgstr ""
+"Exécutez le binaire situé dans le dossier ``bin/`` et essayez de reproduire "
+"le bogue."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:116
 msgid "If the build **still** exhibits the bug, run the following command:"
-msgstr ""
+msgstr "Si le build présente **encore** le bug, lancez la commande suivante :"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:122
 msgid "If the build **does not** exhibit the bug, run the following command:"
-msgstr ""
+msgstr "Si le build **ne présente pas** le bug, lancez la commande suivante :"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:128
 msgid ""
@@ -177,6 +251,13 @@ msgid ""
 "most regressions; Git will remind you of the number of steps remaining (in "
 "the worst case scenario)."
 msgstr ""
+"Après avoir entré l'une des commandes ci-dessus, Git passera à un commit "
+"différent. Vous devez maintenant recompiler Godot, essayer de reproduire le "
+"bug, puis entrer ``git bisect good`` ou ``git bisect bad`` selon le "
+"résultat. Vous devrez répéter cela plusieurs fois. Plus la plage de "
+"validation est longue, plus il faudra d'étapes. 5 à 10 étapes sont "
+"généralement suffisantes pour trouver la plupart des régressions ; Git vous "
+"rappellera le nombre d'étapes restantes (dans le pire des cas)."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:135
 msgid ""
@@ -185,9 +266,15 @@ msgid ""
 "issue you've bisected. This will help in solving the issue. Thanks again for "
 "contributing to Godot :)"
 msgstr ""
+"Une fois que vous avez effectué suffisamment d'étapes, Git affichera le hach "
+"de commit où la régression est apparue. Écrivez ce hach de commit en "
+"commentaire du numéro de GitHub que vous avez découpé. Cela vous aidera à "
+"résoudre le problème. Merci encore d'avoir contribué à Godot :)"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:142
 msgid ""
 "You can read the full documentation on ``git bisect`` `here <https://git-scm."
 "com/docs/git-bisect>`__."
 msgstr ""
+"Vous pouvez lire la documentation complète sur ``git bisect`` `ici <https://"
+"git-scm.com/docs/git-bisect>`__."

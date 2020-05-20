@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "What this tutorial covers"
 msgstr "Ce que couvre ce tutoriel"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:9
-#, fuzzy
 msgid ""
 "As seen in the :ref:`doc_making_plugins` page, making a basic plugin that "
 "extends the editor is fairly easy. Main screen plugins allow you to create "
@@ -37,9 +36,9 @@ msgstr ""
 "Comme on le voit dans la page :ref:`doc_making_plugins`, réaliser un plugin "
 "de base qui étend l'éditeur est assez facile. Ce mécanisme de plugin vous "
 "permet également de créer de nouvelles interfaces utilisateur dans la partie "
-"centrale de l'éditeur, de la même manière que les vues de base en 2D, 3D, "
-"Script et AssetLib. Ces plugins d'éditeur sont appelés \"Main screen plugins"
-"\"."
+"centrale de l'éditeur, de la même manière que les vues de base en \"2D\", "
+"\"3D\", \"Script\", et \"AssetLib\". Ces plugins éditeur sont appelés \"Main "
+"screen plugins\"."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:15
 msgid ""
@@ -61,6 +60,9 @@ msgid ""
 "put it in a folder called ``main_screen``, but you can use any name you'd "
 "like."
 msgstr ""
+"Créez d'abord un nouveau plugin à partir du menu Plugins. Pour ce tutoriel, "
+"nous le placerons dans un dossier appelé ``main_screen``, mais vous pouvez "
+"utiliser le nom que vous souhaitez."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:25
 msgid ""
@@ -68,6 +70,10 @@ msgid ""
 "methods, but for a main screen plugin we need to add a few extra methods. "
 "Add five extra methods such that the script looks like this:"
 msgstr ""
+"Le script du plugin sera fourni avec les méthodes ``_enter_tree()`` et "
+"``_exit_tree()``, mais pour un plugin pour l'écran principal, nous devons "
+"ajouter quelques méthodes supplémentaires. Ajoutez cinq méthodes "
+"supplémentaires de sorte que le script ressemble à ceci :"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:58
 msgid ""
@@ -89,7 +95,6 @@ msgid "Main screen scene"
 msgstr "Scène de l'écran principal"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:67
-#, fuzzy
 msgid ""
 "Create a new scene with a root node derived from ``Control`` (for this "
 "example plugin, we'll make the root node a ``CenterContainer``). Select this "
@@ -97,12 +102,13 @@ msgid ""
 "Rect``. You also need to enable the ``Expand`` vertical size flag in the "
 "inspector. The panel now uses all the space available in the main viewport."
 msgstr ""
-"Créer une nouvelle scène avec un noeud racine ``Panel``. Sélectionnez ce "
-"nœud racine, et dans la fenêtre d'affichage, cliquez sur le menu ``Layout`` "
-"et sélectionnez ``Full Rect``. Vous devez également activer le drapeau de "
-"taille verticale ``Expand`` dans l'inspecteur. Le panel utilise désormais "
-"tout l'espace disponible dans la fenêtre d'affichage. Maintenant, ajoutons "
-"un nouveau script sur le nœud racine. Nommez-le ``main_panel.gd``."
+"Créer une nouvelle scène avec un noeud racine dérivé de ``Control`` (pour "
+"cet exemple de plugin, nous allons faire du noeud racine un "
+"``CenterContainer``). Sélectionnez ce nœud racine, et dans la fenêtre "
+"d'affichage, cliquez sur le menu ``Layout`` et sélectionnez ``Full Rect``. "
+"Vous devez également activer le drapeau de taille verticale ``Expand`` dans "
+"l'inspecteur. Le panneau utilise maintenant tout l'espace disponible dans la "
+"fenêtre d'affichage principale."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:74
 msgid ""
@@ -110,37 +116,39 @@ msgid ""
 "node, and set the text to \"Print Hello\" or similar. Add a script to the "
 "button like this:"
 msgstr ""
+"Ensuite, ajoutons un bouton à notre exemple de plugin pour l'écran "
+"principal. Ajoutez un nœud ``Button`` et définissez le texte comme \"Print "
+"Hello\" ou similaire. Ajoutez un script au bouton comme ceci :"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:87
 msgid ""
 "Then connect the \"pressed\" signal to itself. If you need help with "
 "signals, see the :ref:`doc_signals` article."
 msgstr ""
+"Ensuite, connectez le signal \"pressed\" à lui-même. Si vous avez besoin "
+"d'aide pour les signaux, consultez l'article :ref:`doc_signals`."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:90
-#, fuzzy
 msgid ""
 "We are done with the main screen panel. Save the scene as ``main_panel."
 "tscn``."
 msgstr ""
 "Nous avons terminé pour le panneau de l'écran principal. Enregistrez la "
-"scène sous le nom de ``main_panel.tscn``."
+"scène sous le nom ``main_panel.tscn``."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:93
-#, fuzzy
 msgid "Update the plugin script"
-msgstr "Trouvez le script iap.gd dans"
+msgstr "Mettre à jour le script du plugin"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:95
-#, fuzzy
 msgid ""
 "We need to update the ``main_screen_plugin.gd`` script so the plugin "
 "instances our main panel scene and places it where it needs to be. Here is "
 "the full plugin script:"
 msgstr ""
-"Nous devons maintenant mettre à jour le script ``main_screen_plugin.gd`` "
-"afin que le plugin instance nos 2 scènes d'interface graphique et les place "
-"aux bons endroits dans l'éditeur. Voici le ``main.gd`` complet :"
+"Nous devons mettre à jour le script ``main_screen_plugin.gd`` afin que le "
+"plugin instance notre scène d'écran principal et la place là où elle doit "
+"être. Voici le script complet du plugin :"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:140
 msgid ""
@@ -148,9 +156,11 @@ msgid ""
 "holds a reference to the scene, and we instance it into "
 "`main_panel_instance`."
 msgstr ""
+"Quelques lignes spécifiques ont été ajoutées. Le ``MainPanel`` est une "
+"constante qui fait référence à la scène, et nous l'utilisons dans l'instance "
+"`main_panel_instance`."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:143
-#, fuzzy
 msgid ""
 "The ``_enter_tree()`` function is called before ``_ready()``. This is where "
 "we instance the main panel scene, and add them as children of specific parts "
@@ -159,13 +169,14 @@ msgid ""
 "call the ``make_visible(false)`` function to hide the main panel so it "
 "doesn't compete for space when first activating the plugin."
 msgstr ""
-"La classe ``EditorPlugin`` ne fournit aucune fonction pour ajouter un "
-"élément dans la fenêtre principale. Nous devons donc utiliser la fonction "
-"``get_editor_interface().get_editor_viewport()`` pour obtenir ce viewport et "
-"y ajouter notre instance de panel principal en tant qu'enfant. Nous appelons "
-"la fonction ``make_visible(false)`` pour cacher le panneau principal afin "
-"qu'il ne soit pas directement affiché lors de la première activation du "
-"plugin."
+"La fonction ``_enter_tree()`` est appelée avant ``_ready()``. C'est là que "
+"nous instancions la scène d'écran principal, et que nous les ajoutons en "
+"tant qu'enfants de parties spécifiques de l'éditeur. Nous utilisons la "
+"fonction ``get_editor_interface().get_editor_viewport()`` pour obtenir le "
+"viewport et y ajouter notre instance d'écran principal en tant qu'enfant. "
+"Nous appelons la fonction ``make_visible(false)`` pour cacher l'écran "
+"principal afin qu'il ne soit pas en compétition pour l'espace lors de la "
+"première activation du plugin."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:150
 msgid ""
@@ -173,24 +184,29 @@ msgid ""
 "the main screen still exists, we call ``queue_free()`` to free the instance "
 "and remove it from memory."
 msgstr ""
+"La fonction ``_exit_tree()`` est appelée lorsque le plugin est désactivé. Si "
+"l'écran principal existe toujours, nous appelons la fonction "
+"``queue_free()`` pour libérer l'instance et la supprimer de la mémoire."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:154
-#, fuzzy
 msgid ""
 "The ``make_visible()`` function is overridden to hide or show the main panel "
 "as needed. This function is automatically called by the editor when the user "
 "clicks on the main viewport buttons at the top of the editor."
 msgstr ""
-"Enfin, la fonction ``make_visible()`` est surchargée pour cacher ou montrer "
-"le panneau principal selon les besoins. Cette fonction est automatiquement "
-"appelée par l'éditeur lorsque l'utilisateur clique sur un autre bouton de la "
-"fenêtre principale comme 2D, 3D ou Script."
+"La fonction ``make_visible()`` est surchargée pour cacher ou montrer le "
+"panneau principal selon les besoins. Cette fonction est automatiquement "
+"appelée par l'éditeur lorsque l'utilisateur clique sur les boutons de la "
+"fenêtre principale en haut de l'éditeur."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:158
 msgid ""
 "The ``get_plugin_name()`` and ``get_plugin_icon()`` functions control the "
 "displayed name and icon for the plugin's main viewport button."
 msgstr ""
+"Les fonctions ``get_plugin_name()`` et ``get_plugin_icon()`` contrôlent le "
+"nom et l'icône affichés pour le bouton principal de la fenêtre de "
+"visualisation du plugin."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:161
 msgid ""
@@ -199,35 +215,36 @@ msgid ""
 "is selected. This is similar to how clicking on a 3D node will automatically "
 "switch to the 3D viewport."
 msgstr ""
+"Une autre fonction que vous pouvez ajouter est la fonction ``handles()``, "
+"qui vous permet de gérer un type de nœud, en focalisant automatiquement "
+"l'écran principal lorsque le type est sélectionné. Cette fonction est "
+"similaire à celle qui permet de cliquer sur un nœud 3D pour passer "
+"automatiquement à la fenêtre de visualisation 3D."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:167
 msgid "Try the plugin"
 msgstr "Essayez le plugin"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:169
-#, fuzzy
 msgid ""
 "Activate the plugin in the Project Settings. You'll observe a new button "
 "next to 2D, 3D, Script above the main viewport. Clicking it will take you to "
 "your new main screen plugin, and the button in the middle will print text."
 msgstr ""
 "Activez le plugin dans les Paramètres du projet. Vous observerez un nouveau "
-"bouton à côté de 2D, 3D, Script au-dessus de la fenêtre principale. Vous "
-"remarquerez également un nouvel onglet dans le dock de gauche. Essayez de "
-"cliquer sur les boutons des panneaux latéraux et principal : les événements "
-"sont émis et captés par la scène cible correspondante pour modifier la "
-"légende du Label à l'intérieur de celle-ci."
+"bouton à côté de 2D, 3D, Script au-dessus de la fenêtre principale. En "
+"cliquant dessus, vous accéderez à l'écran principal de votre nouveau plugin, "
+"et le bouton du milieu imprimera du texte."
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:173
-#, fuzzy
 msgid ""
 "If you would like to try a finished version of this plugin, check out the "
 "plugin demos here: https://github.com/godotengine/godot-demo-projects/tree/"
 "master/plugins"
 msgstr ""
-"Si vous souhaitez voir un exemple plus complet de ce dont sont capables les "
-"plugins d'écran principal, consultez les projets de démonstration 2.5D ici : "
-"https://github.com/godotengine/godot-demo-projects/tree/master/misc/2.5d"
+"Si vous souhaitez essayer une version finalisée de ce plugin, consultez les "
+"démos du plugin ici : https://github.com/godotengine/godot-demo-projects/"
+"tree/master/plugins"
 
 #: ../../docs/tutorials/plugins/editor/making_main_screen_plugins.rst:177
 msgid ""

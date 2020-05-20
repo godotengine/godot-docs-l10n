@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgstr "每个缩进级别必须大于包含它的代码块。"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:675
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:695
 msgid "**Good**:"
 msgstr "**良好的**："
 
@@ -126,7 +126,7 @@ msgstr "**良好的**："
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:683
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:703
 msgid "**Bad**:"
 msgstr "**糟糕的**："
 
@@ -305,62 +305,80 @@ msgstr ""
 "导致风格不一致的代码。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
+#, fuzzy
+msgid "File names"
+msgstr "文件名称"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
+msgid ""
+"Use snake_case for file names. For named classes, convert the PascalCase "
+"class name to snake_case::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:446
+msgid ""
+"This is consistent with how C++ files are named in Godot's source code. This "
+"also avoids case sensitivity issues that can crop up when exporting a "
+"project from Windows to other platforms."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:451
 msgid "Classes and nodes"
 msgstr "类与节点"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:453
 msgid "Use PascalCase for class and node names:"
 msgstr "对类和节点名称使用帕斯卡命名法（PascalCase）："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:439
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:459
 msgid "Also use PascalCase when loading a class into a constant or a variable:"
 msgstr "将类加载到常量或变量时同样适用："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:446
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:466
 msgid "Functions and variables"
 msgstr "函数与变量"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:448
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:468
 msgid "Use snake\\_case to name functions and variables:"
 msgstr "使用蛇形命名法（snake\\_case）来命名函数与变量："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:455
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:475
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods functions the user must "
 "override, private functions, and private variables:"
 msgstr ""
 "在虚方法（用户必须重写的函数）、私有函数、和私有变量前加一个下划线（\\_）："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:464
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:484
 msgid "Signals"
 msgstr "信号"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:466
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:486
 msgid "Use the past tense to name signals:"
 msgstr "用过去时态来命名信号："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:474
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:494
 msgid "Constants and enums"
 msgstr "常数和枚举"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:476
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:496
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
 msgstr "使用 CONSTANT\\_CASE，全部大写，用下划线（\\_）分隔单词 ："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:483
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:503
 msgid ""
 "Use PascalCase for enum *names* and CONSTANT\\_CASE for their members, as "
 "they are constants:"
 msgstr ""
 "对枚举*名称*使用PascalCase，对其成员使用CONSTANT\\_CASE ，因为它们是常量："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:497
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:517
 msgid "Code order"
 msgstr "代码顺序"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:499
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:519
 msgid ""
 "This first section focuses on code order. For formatting, see :ref:"
 "`formatting`. For naming conventions, see :ref:`naming_conventions`."
@@ -368,11 +386,11 @@ msgstr ""
 "第一节主要讨论代码顺序。有关格式，请参见 :ref:`formatting`。有关命名约定，请"
 "参见 :ref:`naming_conventions`。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:502
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:522
 msgid "We suggest to organize GDScript code this way:"
 msgstr "我们建议按以下方式组织GDScript代码："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:525
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:545
 msgid ""
 "We optimized the order to make it easy to read the code from top to bottom, "
 "to help developers reading the code for the first time understand how it "
@@ -381,40 +399,40 @@ msgstr ""
 "我们优化了顺序，使从上到下阅读代码变得容易，帮助第一次阅读代码的开发人员了解"
 "代码的工作原理，并避免与变量声明顺序相关的错误。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:529
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:549
 msgid "This code order follows four rules of thumb:"
 msgstr "此代码顺序遵循四个经验法则："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:531
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:551
 msgid "Properties and signals come first, followed by methods."
 msgstr "首先是属性和信号，然后是方法。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:532
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:552
 msgid "Public comes before private."
 msgstr "公共变量优先于私有变量。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:533
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:553
 msgid "Virtual callbacks come before the class's interface."
 msgstr "虚拟回调出现在类的接口之前。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:534
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:554
 msgid ""
 "The object's construction and initialization functions, ``_init`` and "
 "``_ready``, come before functions that modify the object at runtime."
 msgstr ""
 "对象的构造和初始化函数``_init``和``_ready``应该在运行时修改对象的函数之前。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:539
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:559
 msgid "Class declaration"
 msgstr "类声明"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:541
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:561
 msgid ""
 "If the code is meant to run in the editor, place the ``tool`` keyword on the "
 "first line of the script."
 msgstr "如果代码要在编辑器中运行，请将 ``tool`` 关键字放在脚本的第一行。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:544
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:564
 msgid ""
 "Follow with the `class_name` if necessary. You can turn a GDScript file into "
 "a global type in your project using this feature. For more information, see :"
@@ -423,11 +441,11 @@ msgstr ""
 "如有必要，在后面加上 `class_name`。您可以使用此功能将GDScript文件转换为项目中"
 "的全局类型。有关更多信息，请参见 :ref:`doc gdscript`。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:548
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:568
 msgid "Then, add the `extends` keyword if the class extends a built-in type."
 msgstr "然后，如果类扩展了内置类型，则添加 `extends` 关键字。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:550
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:570
 msgid ""
 "Following that, you should have the class's optional docstring as comments. "
 "You can use that to explain the role of your class to your teammates, how it "
@@ -436,30 +454,30 @@ msgstr ""
 "然后，您应该添加类的可选文档字符串作为注释。您可以使用它来向您的团队解释类的"
 "角色、工作原理，以及其他开发人员应该如何使用它，下面举个例子。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:562
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:582
 msgid "Signals and properties"
 msgstr "信号和属性"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:564
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:584
 #, fuzzy
 msgid ""
 "Write signal declarations, followed by properties, that is to say, member "
 "variables, after the docstring."
 msgstr "编写信号声明，后跟属性（即成员变量），在文档字符串之后。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:567
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:587
 msgid ""
 "Enums should come after signals, as you can use them as export hints for "
 "other properties."
 msgstr "枚举应该在信号之后，因为您可以将它们用作其他属性的导出提示。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:570
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:590
 msgid ""
 "Then, write constants, exported variables, public, private, and onready "
 "variables, in that order."
 msgstr "然后，按该顺序写入常量、导出变量、公共变量、私有变量和 onready 变量。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:593
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
 msgid ""
 "The GDScript compiler evaluates onready variables right before the "
 "``_ready`` callback. You can use that to cache node dependencies, that is to "
@@ -470,39 +488,39 @@ msgstr ""
 "点依赖项，也就是说，在您的类所依赖的场景中获取子节点。这就是上面的例子所展示"
 "的。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:599
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:619
 #, fuzzy
 msgid "Member variables"
 msgstr "成员访问"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:601
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
 msgid ""
 "Don't declare member variables if they are only used locally in a method, as "
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:626
 #, fuzzy
 msgid "Local variables"
 msgstr "局部变量"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:608
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
 msgid ""
 "Declare local variables as close as possible to their first use. This makes "
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:633
 msgid "Methods and static functions"
 msgstr "方法和静态函数"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:635
 msgid "After the class's properties come the methods."
 msgstr "在类的属性之后是方法。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:617
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
@@ -511,13 +529,13 @@ msgstr ""
 "从 ``_init()`` 回调方法开始，引擎将在创建内存对象时调用该方法。接下来是 "
 "``_ready()`` 回调，当Godot向场景树添加一个节点时调用它。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:641
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
 msgstr "这些函数应首先出现，因为它们显示如何初始化对象。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:624
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:644
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
@@ -526,17 +544,17 @@ msgstr ""
 "其他内置的虚拟回调，如 ``_unhandling_input()`` 和 ``_physics_process``，应该"
 "放在后面。它们控制对象的主循环和与游戏引擎的交互。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:648
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
 msgstr "类的其余接口，公共和私有方法，都是按照这个顺序出现的。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:665
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:685
 msgid "Static typing"
 msgstr "静态类型"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:667
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:687
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
@@ -544,24 +562,24 @@ msgstr ""
 "从Godot 3.1开始，GDScript支持 :ref:`可选的静态类型 "
 "<doc_gdscript_static_typing>`。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
 msgid "Type hints"
 msgstr "类型提示"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:672
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
 "将冒号放在变量名称之后，不带空格，并在尽可能让GDScript编译器推断变量的类型。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:691
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:711
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr "当让编译器推断类型提示时，将冒号和等号一起写： ``:=``。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:697
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:717
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr "定义函数时，在返回类型箭头的两侧添加一个空格。"

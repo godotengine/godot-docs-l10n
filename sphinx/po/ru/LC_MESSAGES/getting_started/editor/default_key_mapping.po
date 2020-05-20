@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:4
 msgid "Default editor shortcuts"
-msgstr ""
+msgstr "Стандартные сочетания клавиш"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:5
 msgid ""
@@ -29,6 +29,11 @@ msgid ""
 "keys associated with these and other actions navigate to ``Editor -> Editor "
 "Settings -> Shortcuts``."
 msgstr ""
+"Многие функции Godot могут быть вызваны с помощью сочетаний клавиш на "
+"клавиатуре. На этой странице перечислены функции, которые по умолчанию имеют "
+"сочетание горячих клавиш, но многие другие также доступны для персональной "
+"настройки. Чтобы изменить сочетания клавиш относительно действий пройдите в "
+"``Редактор -> Настройки редактора -> Горячие клавиши``."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:10
 msgid ""
@@ -37,6 +42,10 @@ msgid ""
 "to be assigned to more than one function. The correct action will be "
 "performed depending on the context."
 msgstr ""
+"Когда как некоторые действия универсальны, многие из горячих клавиш отвечают "
+"за конкретные инструменты. В связи с этим возможным является назначение "
+"одной и той же комбинации сразу к нескольким действиям. Нужное действие "
+"будет совершаться зависимо от контекста."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:15
 msgid ""
@@ -46,6 +55,11 @@ msgid ""
 "standard shortcuts on that OS should find Godot Editor's default key mapping "
 "intuitive."
 msgstr ""
+"Windows и Linux версии редактора делят многие стандартные настройки, "
+"некоторые сочетания для версии macOS могут отличаться. Это сделано для "
+"лучшей интеграции редактора в экосистему macOS. Пользователи привыкшие к "
+"сочетаниям клавиш для конкретной ОС найдут стандартные сочетания клавиш "
+"интуитивными."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:21
 #, fuzzy
@@ -124,72 +138,70 @@ msgid "Editor setting"
 msgstr "Редактор"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-#, fuzzy
 msgid "Open 2D Editor"
-msgstr "Редактор"
+msgstr "Открыть 2D-редактор"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
-msgstr ""
+msgstr ":kbd:`F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`Alt + 1`"
-msgstr ""
+msgstr ":kbd:`Alt + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid "``editor/editor_2d``"
-msgstr ""
+msgstr "``editor/editor_2d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-#, fuzzy
 msgid "Open 3D Editor"
-msgstr "Редактор"
+msgstr "Открыть 3D-редактор"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
-msgstr ""
+msgstr ":kbd:`F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`Alt + 2`"
-msgstr ""
+msgstr ":kbd:`Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid "``editor/editor_3d``"
-msgstr ""
+msgstr "``editor/editor_3d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr ""
+msgstr "Открыть редактор скриптов"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid ":kbd:`F3`"
-msgstr ""
+msgstr ":kbd:`F3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid ":kbd:`Alt + 3`"
-msgstr ""
+msgstr ":kbd:`Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "``editor/editor_script``"
-msgstr ""
+msgstr "``editor/editor_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr ""
+msgstr "Справка"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
-msgstr ""
+msgstr ":kbd:`Shift + F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Alt + Space`"
-msgstr ""
+msgstr ":kbd:`Alt + Space`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "``editor/editor_help``"
-msgstr ""
+msgstr "``editor/editor_help``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 #, fuzzy
@@ -198,63 +210,63 @@ msgstr "Анимация"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Cmd + Ctrl + D`"
-msgstr ""
+msgstr ":kbd:`Cmd + Ctrl + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid "``editor/distraction_free_mode``"
-msgstr ""
+msgstr "``editor/distraction_free_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
-msgstr ""
+msgstr "Следующая вкладка"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Cmd + Tab`"
-msgstr ""
+msgstr ":kbd:`Cmd + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "``editor/next_tab``"
-msgstr ""
+msgstr "``editor/next_tab``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
-msgstr ""
+msgstr "Предыдущая вкладка"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Cmd + Shift + Tab`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "``editor/prev_tab``"
-msgstr ""
+msgstr "``editor/prev_tab``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid "Filter Files"
-msgstr ""
+msgstr "Отсортировать файлы"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid ":kbd:`Ctrl + Alt + P`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid ":kbd:`Cmd + Alt + P`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid "``editor/filter_files``"
-msgstr ""
+msgstr "``editor/filter_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 #, fuzzy
@@ -263,15 +275,15 @@ msgstr "Открытый исходный код"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
-msgstr ""
+msgstr ":kbd:`Ctrl + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Cmd + O`"
-msgstr ""
+msgstr ":kbd:`Cmd + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "``editor/open_scene``"
-msgstr ""
+msgstr "``editor/open_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 #, fuzzy
@@ -280,42 +292,41 @@ msgstr "Сцена Игрока"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Cmd + Shift + W`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "``editor/close_scene``"
-msgstr ""
+msgstr "``editor/close_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "Открыть закрытую сцену"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid ":kbd:`Ctrl + Shift + T`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid ":kbd:`Cmd + Shift + T`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "``editor/reopen_closed_scene``"
-msgstr ""
+msgstr "``editor/reopen_closed_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
-#, fuzzy
 msgid "Save Scene"
-msgstr "Сцена Игрока"
+msgstr "Сохранить сцену"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Cmd + S`"
@@ -344,7 +355,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
-msgstr ""
+msgstr "Сохранить все сцены"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
@@ -886,9 +897,8 @@ msgid "``canvas_item_editor/preview_canvas_scale``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
-#, fuzzy
 msgid "Insert Key"
-msgstr "Вставьте пробел:"
+msgstr "Вставить ключ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -2548,9 +2558,8 @@ msgid "Animation Track Editor"
 msgstr "Дерево анимации"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
-#, fuzzy
 msgid "Duplicate Selection"
-msgstr "Выбор платформы"
+msgstr "Дублировать выделенное"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -2558,7 +2567,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "Дублировать и переместить"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -2573,9 +2582,8 @@ msgid "``animation_editor/duplicate_selection_transposed``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
-#, fuzzy
 msgid "Delete Selection"
-msgstr "Выбор платформы"
+msgstr "Удалить выделенное"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"

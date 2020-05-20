@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,31 +70,31 @@ msgstr ""
 msgid "Examples"
 msgstr "Przykłady"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:129
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:136
 msgid ""
 "It must be noted that even if the script is not being run while in the "
 "editor, the exported properties are still editable. This can be used in "
 "conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:134
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:141
 msgid "Exporting bit flags"
 msgstr "Eksport bitowych flag"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:136
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
 "set from the editor::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:149
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:156
 msgid ""
 "In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
@@ -104,7 +104,7 @@ msgstr ""
 "ma wartość 4, a ``Wind`` odpowiada wartości 8. Zazwyczaj stałe powinny być "
 "odpowiednio zdefiniowane (np. ``const ``ELEMENT_WIND = 8``)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:154
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:161
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
@@ -112,11 +112,11 @@ msgstr ""
 "Korzystanie z flag bitowych wymaga pewnego zrozumienia operacji bitowych. W "
 "razie wątpliwości należy wyeksportować je jako bool."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:158
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:165
 msgid "Exporting arrays"
 msgstr "Eksportowanie tablic"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:160
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:167
 msgid ""
 "Exporting arrays works, but with an important caveat: while regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -125,22 +125,111 @@ msgid ""
 "initializers, but they must be constant expressions."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:173
 msgid ""
 "If the exported array specifies a type which inherits from Resource, the "
 "array values can be set in the inspector by dragging and dropping multiple "
 "files from the FileSystem dock at once."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:206
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:213
 msgid "Setting exported variables from a tool script"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:208
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:215
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
 "automatically. To update it, call :ref:`property_list_changed_notify() "
 "<class_Object_method_property_list_changed_notify>` after setting the "
 "exported variable's value."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:222
+#, fuzzy
+msgid "Advanced exports"
+msgstr "Zaawansowana matematyka wektorów"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:224
+msgid ""
+"Not every type of export can be provided on the level of the language itself "
+"to avoid unnecessary design complexity. The following describes some more or "
+"less common exporting features which can be implemented with a low-level API."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:228
+msgid ""
+"Before reading further, you should get familiar with the way properties are "
+"handled and how they can be customized with :ref:`_set() "
+"<class_Object_method__get_property_list>`, :ref:`_get() "
+"<class_Object_method__get_property_list>`, and :ref:`_get_property_list() "
+"<class_Object_method__get_property_list>` methods as described in :ref:"
+"`doc_accessing_data_or_logic_from_object`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:235
+msgid ""
+"For binding properties using the above methods in C++, see :ref:"
+"`doc_binding_properties_using_set_get_property_list`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:238
+msgid ""
+"The script must operate in the ``tool`` mode so the above methods can work "
+"from within the editor."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:242
+#, fuzzy
+msgid "Adding script categories"
+msgstr "Właściwości węzła"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:244
+msgid ""
+"For better visual distinguishing of properties, a special script category "
+"can be embedded into the inspector to act as a separator. ``Script "
+"Variables`` is one example of a built-in category."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:261
+msgid "``name`` is the name of a category to be added to the inspector;"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:263
+msgid ""
+"``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
+"a script category specifically, so the type ``TYPE_NIL`` can be ignored as "
+"it won't be actually used for the scripting logic, yet it must be defined "
+"anyway."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:268
+#, fuzzy
+msgid "Grouping properties"
+msgstr "Właściwości węzła"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:270
+msgid "A list of properties with similar names can be grouped."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:284
+msgid ""
+"``name`` is the name of a group which is going to be displayed as "
+"collapsible list of properties;"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:287
+msgid ""
+"every successive property added after the group property will be collapsed "
+"and shortened as determined by the prefix defined via the ``hint_string`` "
+"key. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in "
+"this case."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:291
+msgid ""
+"``PROPERTY_USAGE_GROUP`` indicates that the property should be treated as a "
+"script group specifically, so the type ``TYPE_NIL`` can be ignored as it "
+"won't be actually used for the scripting logic, yet it must be defined "
+"anyway."
 msgstr ""

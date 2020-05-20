@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,6 +110,12 @@ msgid ""
 "own style guides (or lack thereof), and don't want to introduce differences "
 "that would make syncing with upstream repositories harder."
 msgstr ""
+"Le style de code de Godot ne doit *pas* être appliqué à du code tiers, c'est-"
+"à-dire qui est inclus dans l'arbre des sources de Godot mais qui n'a pas été "
+"écrit spécifiquement pour notre projet. Un tel code provient généralement de "
+"différents projets en amont avec leurs propres guides de style (ou leur "
+"absence), et ne veut pas introduire de différences qui rendraient la "
+"synchronisation avec les dépôts en amont plus difficile."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:44
 msgid ""
@@ -119,6 +125,11 @@ msgid ""
 "you can use ``/* clang-format off */`` and ``/* clang-format on */`` to tell "
 "clang-format to ignore a chunk of code."
 msgstr ""
+"Le code tiers est généralement inclus dans le dossier \"third party/\" et "
+"peut donc être facilement exclu des scripts de formatage. Dans les rares cas "
+"où un extrait de code tiers doit être inclus directement dans un fichier "
+"Godot, vous pouvez utiliser ``/* clang-format off */`` et ``/* clang-format "
+"on */``pour indiquer au \"clang-format\" d'ignorer une partie du code."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:52
 msgid "Using clang-format locally"
@@ -208,10 +219,15 @@ msgid ""
 "don't run clang-format on compiled objects (.o and .a files) that are in "
 "Godot's tree. So better use ``core/*.{cpp,h}`` than ``core/*``."
 msgstr ""
+"Le chemin peut pointer vers plusieurs fichiers, soit l'un après l'autre, "
+"soit en utilisant des * comme dans un shell Unix typique. Faites attention "
+"lors de l'utilisation des * afin de ne pas utiliser le format clang sur des "
+"objets compilés (fichiers .o et .a) qui se trouvent dans l'arbre de Godot. "
+"Il vaut donc mieux utiliser ``core/*.{cpp,h}`` que ``core/*``."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:94
 msgid "Pre-commit hook"
-msgstr ""
+msgstr "Crochet de pré commit"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:96
 msgid ""
@@ -219,12 +235,19 @@ msgid ""
 "format automatically on all your commits to check them, and let you apply "
 "its changes in the final commit."
 msgstr ""
+"Pour faciliter l'utilisation, nous fournissons un crochet de pré-commission "
+"pour Git qui s'exécutera automatiquement au format clang sur tous vos "
+"commits pour les vérifier, et vous permettra d'appliquer ses changements "
+"dans le commit final."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:100
 msgid ""
 "This \"hook\" is a script which can be found in ``misc/hooks``, refer to "
 "that folder's README.md for installation instructions."
 msgstr ""
+"Ce \"crochet\" est un script qui peut être trouvé dans \"misc/hooks\", "
+"reportez-vous au fichier README.md de ce dossier pour les instructions "
+"d'installation."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:103
 msgid ""
@@ -233,68 +256,93 @@ msgid ""
 "hook was tested on Linux and macOS, but should also work in the Git Shell on "
 "Windows."
 msgstr ""
+"Si le format de votre clang n'est pas dans le \"PATH\", vous devrez peut-"
+"être modifier le \"pré-commit-clang-format\" pour qu'il pointe vers le "
+"binaire correct et qu'il fonctionne. Le crochet a été testé sous Linux et "
+"macOS, mais devrait également fonctionner dans le Git Shell sous Windows."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:109
 msgid "IDE plugin"
-msgstr ""
+msgstr "Plugin IDE"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:111
 msgid ""
 "Most IDEs or code editors have beautifier plugins that can be configured to "
 "run clang-format automatically, for example each time you save a file."
 msgstr ""
+"La plupart des IDE ou des éditeurs de code disposent de plugins "
+"d'embellissement qui peuvent être configurés pour exécuter automatiquement "
+"clang, par exemple chaque fois que vous enregistrez un fichier."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:114
 msgid "Here is a non-exhaustive list of beautifier plugins for some IDEs:"
 msgstr ""
+"Voici une liste non exhaustive de plugins d'embellissement pour quelques "
+"IDE :"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:116
 msgid ""
 "Qt Creator: `Beautifier plugin <http://doc.qt.io/qtcreator/creator-"
 "beautifier.html>`__"
 msgstr ""
+"Qt Creator : `plugin d'embellissement <http://doc.qt.io/qtcreator/creator-"
+"beautifier.html>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:117
 msgid ""
 "Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
 "items?itemName=xaver.clang-format>`__"
 msgstr ""
+"Code du studio visuel : `Format Clang<https://marketplace.visualstudio.com/"
+"items?itemName=xaver.clang-format>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:118
 msgid ""
 "Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
 "itemName=LLVMExtensions.ClangFormat>`__"
 msgstr ""
+"Visual Studio : ` Format Clang <https://marketplace.visualstudio.com/items?"
+"itemName=LLVMExtensions.ClangFormat>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:119
 msgid "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
-msgstr ""
+msgstr "vim : `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:121
 msgid "(Pull requests welcome to extend this list with tested plugins.)"
 msgstr ""
+"(Les PR pour étendre cette liste avec des plugins testés sont les "
+"bienvenues.)"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:124
 msgid "Header includes"
-msgstr ""
+msgstr "L'en-tête comprend"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:126
 msgid ""
 "When adding new C++ or Objective-C files or including new headers in "
 "existing ones, the following rules should be followed:"
 msgstr ""
+"Lors de l'ajout de nouveaux fichiers C++ ou Objective-C ou de l'inclusion de "
+"nouveaux en-têtes dans des fichiers existants, les règles suivantes doivent "
+"être suivies :"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:129
 msgid ""
 "The first lines in the file should be Godot's copyright header and MIT "
 "license, copy-pasted from another file. Make sure to adjust the filename."
 msgstr ""
+"Les premières lignes du fichier doivent être l'en-tête de copyright de Godot "
+"et la licence du MIT, copiées-collées à partir d'un autre fichier. Veillez à "
+"ajuster le nom du fichier."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:131
 msgid ""
 "In a ``.h`` header, include guards should be used with the form "
 "``FILENAME_H``."
 msgstr ""
+"Dans un en-tête ``.h``, les gardes d'inclusion doivent être utilisés sur ce "
+"modèle : ``FILENAME_H``."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:134
 msgid ""
@@ -302,6 +350,9 @@ msgid ""
 "one where the class is declared (e.g. ``#include \"filename.h\"``), followed "
 "by an empty line for separation."
 msgstr ""
+"Dans un fichier ``.cpp`` (par exemple ``filename.cpp``), le premier include "
+"doit être celui où la classe est déclarée (par exemple ``#include \"filename."
+"h\"``), suivi d'une ligne vide pour la séparation."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:137
 msgid ""
@@ -311,6 +362,11 @@ msgid ""
 "The block of Godot header includes should then be followed by an empty line "
 "for separation."
 msgstr ""
+"Puis viennent les en-têtes de la base de code de Godot, inclus dans l'ordre "
+"alphabétique (imposé par le ``clang-format``) avec les chemins relatifs au "
+"dossier racine. Ces inclusions doivent être faites avec des guillemets, par "
+"exemple ``#inclure \"core/object.h\"``. Le bloc des includes de l'en-tête "
+"Godot doit alors être suivi d'une ligne vide pour la séparation."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:142
 msgid ""
@@ -319,6 +375,10 @@ msgid ""
 "symbols, e.g. ``#include <png.h>``. The block of third-party headers should "
 "also be followed by an empty line for separation."
 msgstr ""
+"Enfin, les en-têtes tiers (provenant soit de ``thirdparty`` soit des chemins "
+"d'inclusion du système) viennent ensuite et doivent être inclus avec les "
+"symboles < et >, par exemple ``#include <png.h>``. Le bloc des en-têtes "
+"tiers doit également être suivi d'une ligne vide pour la séparation."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:146
 msgid ""
@@ -326,6 +386,9 @@ msgid ""
 "them, i.e. in the `.h` header if used in the declarative code or in the `."
 "cpp` if used only in the imperative code."
 msgstr ""
+"Les en-têtes Godot et tiers doivent être inclus dans le fichier qui les "
+"requiert, c'est-à-dire dans l'en-tête `.h` si utilisé dans le code "
+"déclaratif ou dans le `.cpp` si utilisé uniquement dans le code impératif."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:150
 msgid "Example:"
@@ -333,7 +396,7 @@ msgstr "Exemple :"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:238
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:240
 msgid ""
@@ -342,16 +405,23 @@ msgid ""
 "that this style guide only applies to code written and maintained by Godot, "
 "not third-party code such as the ``java/src/com/google`` subfolder."
 msgstr ""
+"Le code Java de Godot (principalement en ``platform/android``) est également "
+"mis en forme par ``clang-format``, donc voir les instructions ci-dessus pour "
+"le régler. Gardez à l'esprit que ce guide de style ne s'applique qu'au code "
+"écrit et maintenu par Godot, et non au code d'une tierce partie comme le "
+"sous-dossier ``java/src/com/google``."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:246
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:248
 msgid ""
 "Godot's SCons buildsystem is written in Python, and various scripts included "
 "in the source tree are also using Python."
 msgstr ""
+"Le système de construction SCons de Godot est écrit en Python, et divers "
+"scripts inclus dans l'arbre des sources utilisent également Python."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:251
 msgid ""
@@ -360,3 +430,8 @@ msgid ""
 "If you are so inclined, you can check and format your Python changes using "
 "`autopep8 <https://pypi.org/project/autopep8/>`__."
 msgstr ""
+"Pour ces derniers, nous suivons le guide de style `PEP-8 <https://www.python."
+"org/dev/peps/pep-0008/>`__, qui n'est cependant pas aussi fortement appliqué "
+"que pour le code C++. Si vous le souhaitez, vous pouvez vérifier et formater "
+"vos modifications Python en utilisant `autopep8 <https://pypi.org/project/"
+"autopep8/>`__."

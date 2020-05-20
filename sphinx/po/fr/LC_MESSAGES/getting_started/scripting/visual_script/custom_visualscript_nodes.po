@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,9 @@ msgid ""
 "Custom nodes are written in GDScript and can then be used in VisualScript. "
 "This is useful for offloading complex code to GDScript and reusing it."
 msgstr ""
+"Les nœuds personnalisés sont écrits en GDScript et peuvent ensuite être "
+"utilisés en VisualScript. Ceci est utile pour décharger du code complexe en "
+"GDScript et le réutiliser."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:10
 msgid "Creating a custom node"
@@ -37,6 +40,9 @@ msgid ""
 "a ``tool`` keyword at the top. This is needed for the script to run in the "
 "editor."
 msgstr ""
+"Créez un nouveau script qui extends :ref:`class_VisualScriptCustomNode` et "
+"mettez un mot-clé ``tool`` en haut. Ceci est nécessaire pour que le script "
+"s'exécute dans l'éditeur."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:14
 msgid ""
@@ -45,34 +51,48 @@ msgid ""
 "``_has_input_sequence_port`` function is not necessary if it should return "
 "``false`` for example."
 msgstr ""
+"Certaines fonctions peuvent être crées pour définir les valeurs des "
+"paramètres du nœud personnalisé. Il suffit d'ajouter les fonctions "
+"nécessaires, une fonction ``_has_input_sequence_port`` n'est pas nécessaire "
+"si elle doit retourner ``false`` (Faux) par exemple."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:17
 msgid ""
 "The most important part of a custom node is the ``_step`` function. The "
 "logic of the node is defined there."
 msgstr ""
+"La partie la plus importante d'un nœud personnalisé est la fonction `` "
+"_step``. La logique du nœud y est définie."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:19
 msgid "The ``inputs`` parameter holds the value of the input ports."
 msgstr ""
+"Les paramètres d'entrée ``inputs`` contiennent la valeur des ports d'entrées."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:21
 msgid ""
 "The ``outputs`` parameter is an array where the indices represent the output "
 "port ids. It can be modified to set the values of the output ports."
 msgstr ""
+"Le paramètre de sorties ``outputs`` est une liste où les indices "
+"représentent les identités (ids) des ports de sortie. Il peut être modifié "
+"pour changer les valeurs des ports de sortie."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:23
 msgid ""
 "``start_mode`` can be checked to see if it is the first time ``_step`` is "
 "called."
 msgstr ""
+"La méthode``start_mode`` peut être utilisée pour vérifier si ``_step`` est "
+"appelée pour la première fois."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:25
 msgid ""
 "``working_mem`` is persistent each ``_step`` call. It can be used to store "
 "information."
 msgstr ""
+"`` working_mem`` est conservé entre chaque appel de `` _step``. Il peut donc "
+"être utilisé pour stocker des informations."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:27
 msgid ""
@@ -81,6 +101,11 @@ msgid ""
 "return the id of the sequence port which should be called next. If your "
 "custom node doesn't have any, just return 0."
 msgstr ""
+"Si vous voulez faire remonter une erreur, par exemple si les types de saisie "
+"sont incorrects, vous pouvez renvoyer le message d'erreur sous forme de "
+"chaîne de caractères. Lorsque tout va bien, retournez l'identifiant (id) du "
+"port de séquence qui doit être appelé après. Si votre nœud personnalisé n'en "
+"a pas, retournez simplement 0."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:31
 msgid "Example:"
@@ -95,6 +120,9 @@ msgid ""
 "To use the script, add a ``CustomNode``, select it and drag your custom node "
 "script into the ``script`` property shown in the inspector."
 msgstr ""
+"Pour utiliser le script, ajoutez un ``CustomNode``, sélectionnez-le et "
+"faites glisser votre script de nœud personnalisé dans la propriété "
+"``script`` affichée dans l'inspecteur."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:100
 msgid "Result:"

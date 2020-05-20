@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,6 +22,15 @@ msgid "Contribute to the Class Reference"
 msgstr "在类参考手册中贡献"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:8
+#, fuzzy
+msgid ""
+"This guide also is available as a `video tutorial on YouTube <https://www."
+"youtube.com/watch?v=5jeHXxeX-JY>`_."
+msgstr ""
+"您可以在Youtube上观看这个指南的 `视频 <https://www.youtube.com/watch?"
+"v=5jeHXxeX-JY>`_。"
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:10
 msgid ""
 "Godot ships with many nodes and singletons to help you develop your games. "
 "Each is a class, documented in the :ref:`class reference <toc-class-ref>`. "
@@ -32,7 +41,7 @@ msgstr ""
 "类参考手册 <toc-class-ref>` 中。这个参考手册对于任何学习该引擎的人来说都是必"
 "不可少的：它既可以在线也可以在引擎中使用。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:11
+#: ../../docs/community/contributing/updating_the_class_reference.rst:13
 msgid ""
 "But it's incomplete. Some methods, variables and signals lack descriptions. "
 "Others changed with recent releases and need updates. The developers can't "
@@ -43,7 +52,7 @@ msgstr ""
 "改，需要更新。开发人员不能自己编写整个参考手册。Godot需要您和我们所有人为此做"
 "出贡献。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:14
+#: ../../docs/community/contributing/updating_the_class_reference.rst:16
 msgid ""
 "**Important:** If you are planning to make larger changes or a more "
 "substantial contribution, it is usually a good idea to create an issue (or a "
@@ -53,19 +62,18 @@ msgstr ""
 "**重要:** 如果您打算进行较大的更改或做出更大的贡献，通常最好创建一个问题(或在"
 "现有问题中发表评论)，让其他人知道，以便他们不会也开始从事同一件事。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:17
-msgid ""
-"This guide is available as a `video tutorial on YouTube <https://www.youtube."
-"com/watch?v=5jeHXxeX-JY>`_."
-msgstr ""
-"您可以在Youtube上观看这个指南的 `视频 <https://www.youtube.com/watch?"
-"v=5jeHXxeX-JY>`_。"
-
 #: ../../docs/community/contributing/updating_the_class_reference.rst:21
+msgid ""
+"Not sure where to start contributing? Take a look at the current class "
+"reference completion status `here <https://godotengine.github.io/doc-status/"
+">`__."
+msgstr ""
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:25
 msgid "How to contribute"
 msgstr "如何贡献"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:23
+#: ../../docs/community/contributing/updating_the_class_reference.rst:27
 msgid ""
 "The class reference lies in the following XML files, in Godot's GitHub "
 "repository: `doc/classes/ <https://github.com/godotengine/godot/tree/master/"
@@ -74,31 +82,31 @@ msgstr ""
 "类参考手册位于Godot的GitHub存储库中 `doc/classes/ <https://github.com/"
 "godotengine/godot/tree/master/doc/classes>`_ 路径下的XML文件中。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:25
+#: ../../docs/community/contributing/updating_the_class_reference.rst:29
 msgid "There are 5 steps to update the class reference (full guide below):"
 msgstr "有5个步骤来更新类参考手册(接下来会谈到完整指南)："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:27
+#: ../../docs/community/contributing/updating_the_class_reference.rst:31
 msgid "Fork `Godot's repository <https://github.com/godotengine/godot>`_"
 msgstr "分叉 `Godot存储库 <https://github.com/godotengine/godot>`_"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:28
+#: ../../docs/community/contributing/updating_the_class_reference.rst:32
 msgid "Clone your fork on your computer"
 msgstr "在电脑上克隆您的分叉"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:29
+#: ../../docs/community/contributing/updating_the_class_reference.rst:33
 msgid "Edit the class file in ``doc/classes/`` to write documentation"
 msgstr "在 ``doc/classes/`` 中编辑类文件以写入文档"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:30
+#: ../../docs/community/contributing/updating_the_class_reference.rst:34
 msgid "Commit your changes and push them to your fork"
 msgstr "提交您的更改并把它们推到您的分叉上"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:31
+#: ../../docs/community/contributing/updating_the_class_reference.rst:35
 msgid "Make a pull request on the Godot repository"
 msgstr "在Godot存储库上拉取请求"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:33
+#: ../../docs/community/contributing/updating_the_class_reference.rst:37
 msgid ""
 "Always use these XML files to edit the API reference. Do not edit the "
 "generated .rst files :ref:`in the online documentation <toc-class-ref>`, "
@@ -109,31 +117,32 @@ msgstr ""
 "github.com/godotengine/godot-docs>`_ 存储库中，在 :ref:`在线文档 <toc-class-"
 "ref>` 中生成的.rst文件。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:36
+#: ../../docs/community/contributing/updating_the_class_reference.rst:40
 msgid "Get started with GitHub"
 msgstr "开始使用GitHub"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:38
+#: ../../docs/community/contributing/updating_the_class_reference.rst:42
 msgid ""
 "If you're new to git and GitHub, this guide will help you get started. "
 "You'll learn to:"
 msgstr "如果您是Git和Github的新手，这个指南会帮助您入门。您将学会："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:40
+#: ../../docs/community/contributing/updating_the_class_reference.rst:44
 msgid "Fork and clone Godot's repository"
 msgstr "分叉和克隆Godot仓库"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:41
+#: ../../docs/community/contributing/updating_the_class_reference.rst:45
 msgid "Keep your fork up to date with other contributors"
 msgstr "保持分叉与其他贡献者同步"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:42
+#: ../../docs/community/contributing/updating_the_class_reference.rst:46
 msgid "Create a pull request so your improvements end in the official docs"
 msgstr "创建拉取请求，以便您的改进最终在官方文档中"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:44
+#: ../../docs/community/contributing/updating_the_class_reference.rst:48
+#, fuzzy
 msgid ""
-"If you're new to git, the version-control system Godot uses, go through "
+"If you're new to Git, the version control system Godot uses, go through "
 "`GitHub's interactive guide <https://try.github.io/levels/1/challenges/1>`_. "
 "You'll learn some essential vocabulary and get a sense for the tool."
 msgstr ""
@@ -141,19 +150,19 @@ msgstr ""
 "<https://try.github.io/levels/1/challenges/1>`_ 。您将学习一些必要的词汇并了"
 "解该工具。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:47
+#: ../../docs/community/contributing/updating_the_class_reference.rst:51
 msgid "Fork Godot"
 msgstr "分叉Godot"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:49
+#: ../../docs/community/contributing/updating_the_class_reference.rst:53
 msgid "Fork the Godot Engine into a GitHub repository of your own."
 msgstr "分叉Godot引擎到您自己的GitHub存储库。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:51
+#: ../../docs/community/contributing/updating_the_class_reference.rst:55
 msgid "Clone the repository on your computer:"
 msgstr "在计算机上克隆存储库："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:57
+#: ../../docs/community/contributing/updating_the_class_reference.rst:61
 #, fuzzy
 msgid ""
 "Create a new branch to make your changes. It makes it a lot easier to sync "
@@ -163,7 +172,7 @@ msgstr ""
 "创建一个新分支以进行更改。它使您的改进与其他文档编写者同步变得容易得多，如果"
 "您对git有任何问题，则更容易清理您的存储库。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:63
+#: ../../docs/community/contributing/updating_the_class_reference.rst:67
 msgid ""
 "The new branch is the same as your master branch, until you start to write "
 "API docs. In the ``doc/`` folder, you'll find the class reference."
@@ -171,11 +180,11 @@ msgstr ""
 "在您开始编写API文档之前，新分支与主分支相同。在 ``doc /`` 文件夹中，您将找到"
 "类参考手册。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:66
+#: ../../docs/community/contributing/updating_the_class_reference.rst:70
 msgid "How to keep your local clone up-to-date"
 msgstr "如何使本地克隆保持最新状态"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:68
+#: ../../docs/community/contributing/updating_the_class_reference.rst:72
 msgid ""
 "Other writers contribute to Godot's documentation. Your local repository "
 "will fall behind it, and you'll have to synchronize it. Especially if other "
@@ -184,7 +193,7 @@ msgstr ""
 "其他编写者为Godot的文档做出了贡献。您的本地存储库将落后于它，您将不得不同步"
 "它。特别是如果其他贡献者在您处理它时更新类参考手册。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:70
+#: ../../docs/community/contributing/updating_the_class_reference.rst:74
 msgid ""
 "First add an ``upstream`` git *remote* to work with. Remotes are links to "
 "online repositories you can download new files from."
@@ -192,11 +201,11 @@ msgstr ""
 "首先添加一个 ``upstream`` git *remote* 来使用。远程数据库是您可以从在线存储库"
 "中下载新文件的链接。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:76
+#: ../../docs/community/contributing/updating_the_class_reference.rst:80
 msgid "You can check the list of all remote servers with:"
 msgstr "您可以使用以下命令检查所有远程服务器的列表："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:82
+#: ../../docs/community/contributing/updating_the_class_reference.rst:86
 #, fuzzy
 msgid ""
 "You should have two: ``origin``, your fork on GitHub, that git adds by "
@@ -205,13 +214,13 @@ msgstr ""
 "您应该有两个：``origin`` ，您在github上的fork，默认添加的git，以及您刚添加的 "
 "``upstream``："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:92
+#: ../../docs/community/contributing/updating_the_class_reference.rst:96
 msgid ""
 "Each time you want to sync your branch to the state of the upstream "
 "repository, enter:"
 msgstr "每次要将分支同步到上游存储库的状态时，请输入："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:98
+#: ../../docs/community/contributing/updating_the_class_reference.rst:102
 msgid ""
 "This command will first ``fetch``, or download the latest version of the "
 "Godot repository. Then, it will reapply your local changes on top."
@@ -219,13 +228,13 @@ msgstr ""
 "此命令将首先 ``获取(fetch)``，或下载最新版本的Godot存储库。然后，它将重新应用"
 "您的本地更改。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:100
+#: ../../docs/community/contributing/updating_the_class_reference.rst:104
 msgid ""
 "If you made changes you don't want to keep in your local branch, use the "
 "following commands instead:"
 msgstr "如果您进行了更改，且不希望保留在本地分支中，则请使用以下命令："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:107
+#: ../../docs/community/contributing/updating_the_class_reference.rst:111
 msgid ""
 "**Warning:** The above command will reset your branch to the state of the "
 "``upstream master`` branch. It will discard all local changes. Make sure to "
@@ -234,7 +243,7 @@ msgstr ""
 "**警告：** 上述命令会将分支重置为 ``upstream master`` 分支的状态。它将丢弃所"
 "有本地更改。确保仅在进行重要更改 *之前* 运行此命令 。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:109
+#: ../../docs/community/contributing/updating_the_class_reference.rst:113
 #, fuzzy
 msgid ""
 "Another option is to delete the branch you're working on, synchronize the "
@@ -243,7 +252,7 @@ msgstr ""
 "另一个选择是删除您正在处理的分支，将主分支与Godot存储库同步，并创建一个全新的"
 "分支："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:118
+#: ../../docs/community/contributing/updating_the_class_reference.rst:122
 msgid ""
 "If you're feeling lost by now, come to our `IRC channels <http://webchat."
 "freenode.net/?channels=#godotengine>`_ and ask for help. Experienced git "
@@ -252,11 +261,11 @@ msgstr ""
 "如果您现在感到迷茫，请来我们的 `IRC频道 <http://webchat.freenode.net/?"
 "channels=#godotengine>`_ 并寻求帮助。经验丰富的git用户会帮助您。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:121
+#: ../../docs/community/contributing/updating_the_class_reference.rst:125
 msgid "Updating the documentation template"
 msgstr "更新文档模板"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:123
+#: ../../docs/community/contributing/updating_the_class_reference.rst:127
 msgid ""
 "When classes are modified in the source code, the documentation template "
 "might become outdated. To make sure that you are editing an up-to-date "
@@ -268,9 +277,10 @@ msgstr ""
 "编译Godot(您可以按照 :ref:`doc_introduction_to_the_buildsystem` 页面)，然后运"
 "行以下命令(假设64位Linux)："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:129
+#: ../../docs/community/contributing/updating_the_class_reference.rst:133
+#, fuzzy
 msgid ""
-"The xml files in doc/classes should then be up-to-date with current Godot "
+"The XML files in doc/classes should then be up-to-date with current Godot "
 "Engine features. You can then check what changed using the ``git diff`` "
 "command. If there are changes to other classes than the one you are planning "
 "to document, please commit those changes first before starting to edit the "
@@ -280,11 +290,11 @@ msgstr ""
 "用 ``git diff`` 命令检查更改的内容。如果其他类的更改超出了您计划记录的类，请"
 "在开始编辑模板之前先提交这些更改："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:136
+#: ../../docs/community/contributing/updating_the_class_reference.rst:140
 msgid "You are now ready to edit this file to add stuff."
 msgstr "您现在可以编辑此文件以添加内容。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:138
+#: ../../docs/community/contributing/updating_the_class_reference.rst:142
 msgid ""
 "**Note:** If this has been done recently by another contributor, you don't "
 "forcefully need to go through these steps (unless you know that the class "
@@ -293,26 +303,27 @@ msgstr ""
 "**注意：** 如果最近已由其他撰稿人完成，则您不必强行执行这些步骤(除非您知道您"
 "计划编辑的类最近 *已* 被修改过)。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:141
+#: ../../docs/community/contributing/updating_the_class_reference.rst:145
 msgid "Push and request a pull of your changes"
 msgstr "推送并请求拉取您的更改"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:143
+#: ../../docs/community/contributing/updating_the_class_reference.rst:147
 msgid ""
 "Once your modifications are finished, push your changes on your GitHub "
 "repository:"
 msgstr "完成修改后，在GitHub存储库上推送您的更改："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:152
+#: ../../docs/community/contributing/updating_the_class_reference.rst:156
 msgid ""
 "When it's done, you can ask for a Pull Request via the GitHub UI of your "
 "Godot fork."
 msgstr "完成后，您可以通过Godot分叉的GitHub UI请求拉取请求。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:156
+#: ../../docs/community/contributing/updating_the_class_reference.rst:160
+#, fuzzy
 msgid ""
 "Although you can edit files on GitHub, it's not recommended. As hundreds of "
-"contributors work on Godot, the git history must stay clean. Each commit "
+"contributors work on Godot, the Git history must stay clean. Each commit "
 "should bundle all related improvements you make to the class reference, a "
 "new feature, bug fixes... When you edit from GitHub, it will create a new "
 "branch and a Pull Request every time you want to save it. If a few days pass "
@@ -326,17 +337,17 @@ msgstr ""
 "个拉取请求。如果在您的更改得到审核之前几天过去了，您将无法干净地更新到最新版"
 "本的存储库。此外，从GitHub保持干净的缩进更难。它们在文档中非常重要。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:158
+#: ../../docs/community/contributing/updating_the_class_reference.rst:162
 msgid ""
 "TL;DR: If you don't know what you're doing exactly, do not edit files from "
 "GitHub."
 msgstr "总结：如果您不知道自己在做什么，请不要编辑GitHub中的文件。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:161
+#: ../../docs/community/contributing/updating_the_class_reference.rst:165
 msgid "How to edit class XML"
 msgstr "如何编辑类XML"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:163
+#: ../../docs/community/contributing/updating_the_class_reference.rst:167
 msgid ""
 "Edit the file for your chosen class in ``doc/classes/`` to update the class "
 "reference. The folder contains an XML file for each class. The XML lists the "
@@ -346,7 +357,7 @@ msgstr ""
 "在 ``doc/classes/`` 中编辑所选类的文件以更新类参考手册。该文件夹包含每个类的"
 "XML文件。XML列出了您在类参考手册中找到的常量和方法。Godot自动生成并更新XML。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:165
+#: ../../docs/community/contributing/updating_the_class_reference.rst:169
 #, fuzzy
 msgid ""
 "Edit it using your favorite text editor. If you use a code editor, make sure "
@@ -356,7 +367,7 @@ msgstr ""
 "使用您喜欢的文本编辑器编辑它。如果使用代码编辑器，请确保它不会更改缩进样式："
 "XML的制表符和BBcode样式块中的4个空格。以下更多关于该内容。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:167
+#: ../../docs/community/contributing/updating_the_class_reference.rst:171
 msgid ""
 "If you need to check that the modifications you've made are correct in the "
 "generated documentation, build Godot as described :ref:`here <toc-devel-"
@@ -365,11 +376,11 @@ msgstr ""
 "如果您需要在生成的文档中检查所做的修改是否正确，按照 :ref:`这里 <toc-devel-"
 "compiling>` 的描述构建Godot，运行编辑器并打开您所修改页面的帮助。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:170
+#: ../../docs/community/contributing/updating_the_class_reference.rst:174
 msgid "How to write the class reference"
 msgstr "如何编写类参考手册"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:172
+#: ../../docs/community/contributing/updating_the_class_reference.rst:176
 msgid ""
 "Each class has a brief and a long description. The brief description is "
 "always at the top of the page, while the full description lies below the "
@@ -381,35 +392,35 @@ msgstr ""
 "变量和常量列表下方。方法、成员变量、常量和信号在不同的类别或XML节点中。对于以"
 "上每个，了解它们如何在Godot的源代码中工作，并填写它们的 ``<description>``。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:174
+#: ../../docs/community/contributing/updating_the_class_reference.rst:178
 msgid "Our job is to add the missing text between these marks:"
 msgstr "我们的工作是在这些标记之间添加缺少的文本："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:176
+#: ../../docs/community/contributing/updating_the_class_reference.rst:180
 msgid "<description></description>"
 msgstr "<description></description>"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:177
+#: ../../docs/community/contributing/updating_the_class_reference.rst:181
 msgid "<brief_description></brief_description>"
 msgstr "<brief_description></brief_description>"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:178
+#: ../../docs/community/contributing/updating_the_class_reference.rst:182
 msgid "<constant></constant>"
 msgstr "<constant></constant>"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:179
+#: ../../docs/community/contributing/updating_the_class_reference.rst:183
 msgid "<method></method>"
 msgstr "<method></method>"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:180
+#: ../../docs/community/contributing/updating_the_class_reference.rst:184
 msgid "<member></member>"
 msgstr "<member></member>"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:181
+#: ../../docs/community/contributing/updating_the_class_reference.rst:185
 msgid "<signal></signal>"
 msgstr "<signal></signal>"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:183
+#: ../../docs/community/contributing/updating_the_class_reference.rst:187
 msgid ""
 "Write in a clear and simple language. Always follow the :ref:`writing "
 "guidelines <doc_docs_writing_guidelines>` to keep your descriptions short "
@@ -420,11 +431,11 @@ msgstr ""
 "以使您的描述简短易读。在描述中 **不要留下空行**：XML文件中的每一行都将生成一"
 "个新段落。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:185
+#: ../../docs/community/contributing/updating_the_class_reference.rst:189
 msgid "Here's how a class looks like in XML:"
 msgstr "以下是XML中的类的样子："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:224
+#: ../../docs/community/contributing/updating_the_class_reference.rst:228
 msgid ""
 "Use a code editor like Vim, Atom, Code, Notepad++ or anything similar to "
 "edit the file quickly. Use the search function to find classes fast."
@@ -432,11 +443,11 @@ msgstr ""
 "使用代码编辑器，如Vim、Atom、Code、Notepad ++或类似的编辑器，快速编辑文件。使"
 "用搜索功能快速查找类。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:228
+#: ../../docs/community/contributing/updating_the_class_reference.rst:232
 msgid "Improve formatting with BBcode style tags"
 msgstr "使用BBcode样式标签改进格式"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:230
+#: ../../docs/community/contributing/updating_the_class_reference.rst:234
 msgid ""
 "Godot's class reference supports BBcode-like tags. They add nice formatting "
 "to the text. Here's the list of available tags:"
@@ -444,186 +455,205 @@ msgstr ""
 "Godot的类参考手册支持类似BBcode的标记。它们为文本添加了很好的格式。这是可用标"
 "签的列表："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:233
+#: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Tag"
 msgstr "标签"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:233
+#: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Effect"
 msgstr "效果"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:233
+#: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Usage"
 msgstr "用法"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:233
+#: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Result"
 msgstr "结果"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:235
+#: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "[Class]"
 msgstr "[Class]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:235
+#: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Link a class"
 msgstr "链接到一个类"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:235
+#: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Move the [Sprite]."
 msgstr "移动[Sprite]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:235
+#: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Move the :ref:`class_sprite`."
 msgstr "移动 :ref:`class_Sprite`。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "[method methodname]"
 msgstr "[method methodname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "Link to a method in this class"
 msgstr "链接到此类中的方法"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "Call [method hide]."
 msgstr "调用[method hide]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "See :ref:`hide <class_spatial_method_hide>`."
 msgstr "参见 :ref:`hide <class_Spatial_method_hide>`。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "[method Class.methodname]"
 msgstr "[method Class.methodname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Link to another class's method"
 msgstr "链接到另一个类的方法"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Call [method Spatial.hide]."
 msgstr "调用[method Spatial.hide]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "[member membername]"
 msgstr "[member membername]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Link to a member in this class"
 msgstr "链接到这个类的成员"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Get [member scale]."
 msgstr "获得[member scale]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Get :ref:`scale <class_node2d_property_scale>`."
 msgstr "获得 :ref:`scale <class_Node2d_property_scale>`。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "[member Class.membername]"
 msgstr "[member Class.membername]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Link to another class's member"
 msgstr "链接到另一个类的成员"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Get [member Node2D.scale]."
 msgstr "获得 [member Node2D.scale]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "[signal signalname]"
 msgstr "[signal signalname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Link to a signal in this class"
 msgstr "链接到此类中的信号"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Emit [signal renamed]."
 msgstr "发射 [signal renamed]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:251
 msgid "Emit :ref:`renamed <class_node_signal_renamed>`."
 msgstr "发射 :ref:`renamed <class_Node_signal_renamed>`。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:251
 msgid "[signal Class.signalname]"
 msgstr "[signal Class.signalname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:251
 msgid "Link to another class's signal"
 msgstr "链接到另一个类的信号"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:251
 msgid "Emit [signal Node.renamed]."
 msgstr "发射 [signal Node.renamed]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:253
 msgid "[b] [/b]"
 msgstr "[b] [/b]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:253
 msgid "Bold"
 msgstr "粗体"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:253
 msgid "Some [b]bold[/b] text."
 msgstr "一些[b]粗体[/b]文字。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:253
 msgid "Some **bold** text."
 msgstr "一些 **粗体** 文字。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:255
 msgid "[i] [/i]"
 msgstr "[i] [/i]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:255
 msgid "Italic"
 msgstr "斜体"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:255
 msgid "Some [i]italic[/i] text."
 msgstr "一些[i]斜体[/i]文字。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:255
 msgid "Some *italic* text."
 msgstr "一些 *斜体* 文字。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:257
 msgid "[code] [/code]"
 msgstr "[code] [/code]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:257
 msgid "Monospace"
 msgstr "等宽字体"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:257
 msgid "Some [code]monospace[/code] text."
 msgstr "一些[code]等宽字体[/code] 文本。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:257
 msgid "Some ``monospace`` text."
 msgstr "一些 ``等宽字体`` 文本。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#, fuzzy
+msgid "[kbd] [/kbd]"
+msgstr "[b] [/b]"
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#, fuzzy
+msgid "Keyboard/mouse shortcut"
+msgstr "键盘快捷键"
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#, fuzzy
+msgid "Some [kbd]Ctrl + C[/kbd] key."
+msgstr "一些[b]粗体[/b]文字。"
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+msgid "Some :kbd:`Ctrl + C` key."
+msgstr ""
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:261
 msgid "[codeblock] [/codeblock]"
 msgstr "[codeblock] [/codeblock]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:261
 msgid "Multiline preformatted block"
 msgstr "多行预格式化块"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:261
 msgid "*See below.*"
 msgstr "*见下文。*"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:258
+#: ../../docs/community/contributing/updating_the_class_reference.rst:264
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
 "always use **four spaces** for indentation (the parser will delete tabs). "
@@ -632,22 +662,22 @@ msgstr ""
 "对预格式化的代码块使用 ``[codeblock]``。在 ``[codeblock]`` 中，始终使用 **四"
 "个空格** 进行缩进(解析器将删除制表符)。例如："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:268
+#: ../../docs/community/contributing/updating_the_class_reference.rst:274
 msgid "Will display as:"
 msgstr "将显示为："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:278
+#: ../../docs/community/contributing/updating_the_class_reference.rst:284
 msgid "I don't know what this method does!"
 msgstr "我不知道这个方法干什么用！"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:280
+#: ../../docs/community/contributing/updating_the_class_reference.rst:286
 msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
 "没问题。将其留下，并在您请求提取更改时列出跳过的方法。别的编写者会处理它。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:282
+#: ../../docs/community/contributing/updating_the_class_reference.rst:288
 msgid ""
 "You can still have a look at the methods' implementation in Godot's source "
 "code on GitHub. Also, if you have doubts, feel free to ask on the `Q&A "
@@ -657,11 +687,11 @@ msgstr ""
 "在 `问答网站 <https://godotengine.org/qa/>`__ 和IRC(freenode，#godotengine)上"
 "询问。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:286
+#: ../../docs/community/contributing/updating_the_class_reference.rst:292
 msgid "Localization"
 msgstr "本地化"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:288
+#: ../../docs/community/contributing/updating_the_class_reference.rst:294
 msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
@@ -669,7 +699,7 @@ msgstr ""
 "在 `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`__ 上的文档可以被翻译成任何语言。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:291
+#: ../../docs/community/contributing/updating_the_class_reference.rst:297
 msgid ""
 "Translated strings are synced manually by documentation maintainers in the "
 "`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`__ "
@@ -678,7 +708,7 @@ msgstr ""
 "翻译后的字符串由文档维护人员在 `godot-docs-l10n <https://github.com/"
 "godotengine/godot-docs-l10n>`__ 存储库中手动同步更新。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:295
+#: ../../docs/community/contributing/updating_the_class_reference.rst:301
 msgid ""
 "Languages with a good level of completion have their own localized instances "
 "of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "

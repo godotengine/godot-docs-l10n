@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,31 +120,42 @@ msgstr ""
 "réseau, au support des expressions régulières (regex), ou à theora/webm pour "
 "lire des vidéos)."
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:67
+#: ../../docs/development/compiling/optimizing_for_size.rst:66
+msgid ""
+"Alternatively, you can supply a list of disabled modules by creating "
+"``custom.py`` at the root of the source, with the contents similar to the "
+"following:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:110
+#, fuzzy
+msgid ":ref:`doc_overriding_build_options`."
+msgstr ":ref:`Conteneurs <doc_gui_containers>`"
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:113
 msgid "Optimizing for size instead of speed"
 msgstr "Optimiser pour la taille plutôt que pour la vitesse"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:69
-#, fuzzy
+#: ../../docs/development/compiling/optimizing_for_size.rst:115
 msgid ""
 "Godot 3.1 onwards allows compiling using size optimizations (instead of "
 "speed). To enable this, set the ``optimize`` flag to ``size``:"
 msgstr ""
-"Godot 3.1 (et suivant) permet de compiler en utilisant des optimisations de "
-"taille. Pour l'activer, il suffit de définir le drapeau \"optimize'' sur "
-"\"size'' :"
+"Godot 3.1 et suivants permettent de compiler en utilisant des optimisations "
+"de taille (au lieu de vitesse). Pour ce faire, il suffit de mettre le "
+"drapeau ``optimize`` sur ``size`` :"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:76
+#: ../../docs/development/compiling/optimizing_for_size.rst:122
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr ""
 "Certaines plateformes telles que WebAssembly utilisent déjà ce mode par "
 "défaut."
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:79
+#: ../../docs/development/compiling/optimizing_for_size.rst:125
 msgid "Compiling with link-time optimization"
 msgstr "Compilation avec optimisation du temps de liaison"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:81
+#: ../../docs/development/compiling/optimizing_for_size.rst:127
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
 "terms of performance and file size. It works by eliminating duplicate "
@@ -157,7 +168,7 @@ msgstr ""
 "(templates) en double et le code inutilisé. Il peut actuellement être "
 "utilisé avec les compilateurs GCC et MSVC :"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:90
+#: ../../docs/development/compiling/optimizing_for_size.rst:136
 msgid ""
 "Linking becomes much slower with this option, so it should be used only for "
 "release builds."
@@ -165,22 +176,22 @@ msgstr ""
 "Le \"liking\" devient beaucoup plus lent avec cette option, il doit être "
 "utilisé uniquement pour les versions \"release\"."
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:94
+#: ../../docs/development/compiling/optimizing_for_size.rst:140
 msgid "Stripping binaries"
 msgstr "Nettoyage des binaires"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:96
+#: ../../docs/development/compiling/optimizing_for_size.rst:142
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr ""
 "Si vous compiler à partir des sources, n'oubliez pas de retirer les symboles "
 "de débogage des binaires :"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:103
+#: ../../docs/development/compiling/optimizing_for_size.rst:149
 msgid "Using UPX to compress binaries"
 msgstr "Utiliser UPX pour compresser les binaires"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:105
+#: ../../docs/development/compiling/optimizing_for_size.rst:151
 msgid ""
 "If you are targeting desktop platforms, the `UPX <https://upx.github.io/>`_ "
 "compressor can be used. This can reduce binary size considerably."
@@ -189,7 +200,7 @@ msgstr ""
 "github.io/>`_ peut être utilisé. Cela peut réduire considérablement la "
 "taille des binaires."
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:109
+#: ../../docs/development/compiling/optimizing_for_size.rst:155
 msgid ""
 "However, keep in mind that some antivirus programs may detect UPX-packed "
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "

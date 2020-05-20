@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,19 +147,19 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:92
 msgid "``ammo_in_weapon``: The amount of ammo currently in the pistol"
 msgstr ""
-"``ammo_in_weapon``: Le nombre de munitions actuellement dans le pistolet"
+"``ammo_in_weapon`` : Le nombre de munitions actuellement dans le pistolet"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:93
 msgid ""
 "``spare_ammo``: The amount of ammo we have left in reserve for the pistol"
 msgstr ""
-"``spare_ammo``: Le nombre de munitions que nous avons en réserve (disponible "
-"pour le rechargement de l'arme) pour le pistolet"
+"``spare_ammo`` : Le nombre de munitions que nous avons en réserve "
+"(disponible pour le rechargement de l'arme) pour le pistolet"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:94
 msgid "``AMMO_IN_MAG``: The amount of ammo in a fully reloaded weapon/magazine"
 msgstr ""
-"``AMMO_IN_MAG``: Le nombre de munitions dans une arme ou un chargeur, quand "
+"``AMMO_IN_MAG`` : Le nombre de munitions dans une arme ou un chargeur, quand "
 "il/elle est entièrement chargé de munitions"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:96
@@ -173,7 +173,7 @@ msgid ""
 "Add the following right under ``Clone.BULLET_DAMAGE = DAMAGE``: "
 "``ammo_in_weapon -= 1``"
 msgstr ""
-"Ajoutez ce qui suit juste en dessous : ``Clone.BULLET_DAMAGE = DAMAGE``: "
+"Ajoutez ce qui suit juste en dessous : ``Clone.BULLET_DAMAGE = DAMAGE`` : "
 "``ammo_in_weapon -= 1``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:100
@@ -285,7 +285,7 @@ msgstr "Maintenant ajoutez ce qui suit à ``Player.gd`` :"
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:173
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:235
 msgid "Let's go over what's happening:"
-msgstr "Regardons ce qui ce passe  :"
+msgstr "Regardons ce qui ce passe :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:175
 msgid ""
@@ -401,7 +401,7 @@ msgid ""
 "already full of ammo."
 msgstr ""
 "Ensuite nous vérifions si le joueur a assez de munitions dans l'inventaire, "
-"et si les munitions présente dans l'arme sont équales à l'arme rechargée au "
+"et si les munitions présente dans l'arme sont égales à l'arme rechargée au "
 "maximum. De cette façon nous nous assurons que le joueur ne peut pas "
 "recharger si il n'a plus de munitions ou si il est déjà au maximum."
 
@@ -537,7 +537,7 @@ msgid ""
 "Now we need to add ``process_reloading``. Add the following function to "
 "``Player.gd``:"
 msgstr ""
-"Maintenant nous devons ajouter ``process_reloading``.  Ajoutez la fonction "
+"Maintenant nous devons ajouter ``process_reloading``. Ajoutez la fonction "
 "suivante à ``Player.gd`` :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:358
@@ -629,7 +629,7 @@ msgid ""
 msgstr ""
 "Si le joueur a appuyé sur ``reload```, on regarde quel est l'arme courante "
 "et on vérifie qu'elle n'est pas ``null``. Ensuite on utilise la constante "
-"``CAN_RELOAD`` de l'arme  pour savoir si celle-ci peut recharger ou non."
+"``CAN_RELOAD`` de l'arme pour savoir si celle-ci peut recharger ou non."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:418
 msgid ""
@@ -728,9 +728,9 @@ msgid ""
 "which can be found in the Sonniss.com GDC 2017 Game Audio Bundle."
 msgstr ""
 "Nous ne proposons aucun assets de sons dans ce tutoriel (pour des raisons "
-"légales).  https://gamesounds.xyz/ est une collection de **\"sons et "
-"musiques du domaine public qui conviennent aux jeux video\"**. J'ai utilisé "
-"le Gamemaster's Gun Sound Pack qui peut être trouvé dans le Sonniss.com GDC "
+"légales). https://gamesounds.xyz/ est une collection de **\"sons et musiques "
+"du domaine public qui conviennent aux jeux video\"**. J'ai utilisé le "
+"Gamemaster's Gun Sound Pack qui peut être trouvé dans le Sonniss.com GDC "
 "2017 Game Audio Bundle."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:467

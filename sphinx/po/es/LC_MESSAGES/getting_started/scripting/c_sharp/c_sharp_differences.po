@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -475,9 +475,8 @@ msgid "``Array``"
 msgstr "``Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
-#, fuzzy
 msgid "``Godot.Collections.Array``"
-msgstr "Godot.Array"
+msgstr "``Godot.Collections.Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
 msgid "``PoolIntArray``"
@@ -536,34 +535,32 @@ msgid "``Vector3[]``"
 msgstr "``Vector3[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:284
-#, fuzzy
 msgid ""
 "``Godot.Collections.Array<T>`` is a type-safe wrapper around ``Godot."
 "Collections.Array``. Use the ``Godot.Collections.Array<T>(Godot.Collections."
 "Array)`` constructor to create one."
 msgstr ""
-"``Godot.Array<T>`` es una envoltura de tipo-seguro para ``Godot.Array``. Usa "
-"el constructor ``Godot.Array<T>(Godot.Array)`` para crear uno."
+"``Godot.Collections.Array<T>`` es una envoltura de tipo-seguro para ``Godot."
+"Collections.Array``. Usa el constructor ``Godot.Collections.Array<T>(Godot."
+"Collections.Array)`` para crear uno."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:288
 msgid "Dictionary"
 msgstr "Diccionario"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:290
-#, fuzzy
 msgid "Use ``Godot.Collections.Dictionary``."
-msgstr "Usa ``Godot.Dictionary``."
+msgstr "Usa ``Godot.Collections.Dictionary``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:292
-#, fuzzy
 msgid ""
 "``Godot.Collections.Dictionary<T>`` is a type-safe wrapper around ``Godot."
 "Collections.Dictionary``. Use the ``Godot.Collections.Dictionary<T>(Godot."
 "Collections.Dictionary)`` constructor to create one."
 msgstr ""
-"``Godot.Dictionary<T>`` es una envoltura de tipo-seguro para ``Godot."
-"Dictionary``. Utiliza el constructor ``Godot.Dictionary<T>(Godot."
-"Dictionary)`` para crear uno."
+"``Godot.Collections.Dictionary<T>`` es una envoltura de tipo-seguro para "
+"``Godot.Collections.Dictionary``. Utiliza el constructor ``Godot.Collections."
+"Dictionary<T>(Godot.Collections.Dictionary)`` para crear uno."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:296
 msgid "Variant"

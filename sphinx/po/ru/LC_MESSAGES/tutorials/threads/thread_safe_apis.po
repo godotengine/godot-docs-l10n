@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:4
-msgid "Thread safe APIs"
+#, fuzzy
+msgid "Thread-safe APIs"
 msgstr "Потоко-безопасные API"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:7
@@ -48,10 +49,11 @@ msgid "Global scope"
 msgstr "Глобальный контекст"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:17
+#, fuzzy
 msgid ""
-":ref:`Global Scope<class_@GlobalScope>` singletons are all thread safe. "
+":ref:`Global Scope<class_@GlobalScope>` singletons are all thread-safe. "
 "Accessing servers from threads is supported (for VisualServer and Physics "
-"servers, ensure threaded or thread safe operation is enabled in the project "
+"servers, ensure threaded or thread-safe operation is enabled in the project "
 "settings!)."
 msgstr ""
 ":ref:`Глобальные<class_@GlobalScope>` синглтоны полностью потоко-безопасны. "
@@ -73,8 +75,9 @@ msgid "Scene tree"
 msgstr "Дерево сцены"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:24
+#, fuzzy
 msgid ""
-"Interacting with the active scene tree is **NOT** thread safe. Make sure to "
+"Interacting with the active scene tree is **NOT** thread-safe. Make sure to "
 "use mutexes when sending data between threads. If you want to call functions "
 "from a thread, the *call_deferred* function may be used:"
 msgstr ""
@@ -129,12 +132,12 @@ msgstr "Ресурсы"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:60
 msgid ""
-"Modifying a unique resource from multiple threads is not supported, but "
-"loading them on threads or handling a reference is perfectly supported. "
-"Scenes, textures, meshes, etc. Can be loaded and manipulated on threads, "
-"then added to the active scene in the main thread."
+"Modifying a unique resource from multiple threads is not supported. However "
+"handling references on multiple threads is supported, hence loading "
+"resources on a thread is as well - scenes, textures, meshes, etc - can be "
+"loaded and manipulated on a thread and then added to the active scene on the "
+"main thread. The limitation here is as described above, one must be careful "
+"not to load the same resource from multiple threads at once, therefore it is "
+"easiest to use **one** thread for loading and modifying resources, and then "
+"the main thread for adding them."
 msgstr ""
-"Изменение уникального ресурса через много-поточность не поддерживается, но "
-"загрузка их из потоков или выделение ссылки отлично поддерживается. Сцены, "
-"текстуры, сетки, итд. Они могут быть загружены или настроены через потоки, а "
-"затем добавлены в активную сцену на главном потоке."

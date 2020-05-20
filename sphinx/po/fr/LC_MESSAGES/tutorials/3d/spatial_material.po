@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -795,23 +795,21 @@ msgstr ""
 "scène."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:358
-#, fuzzy
 msgid "Normal map"
-msgstr "Normalmap"
+msgstr "Normal map(carte de normale)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:360
-#, fuzzy
 msgid ""
 "Normal mapping allows you to set a texture that represents finer shape "
 "detail. This does not modify geometry, only the incident angle for light. In "
 "Godot, only the red and green channels of normal maps are used for better "
 "compression and wider compatibility."
 msgstr ""
-"Une carte de normale permet l'utilisation d'une texture pour ajouter des "
-"détails fins à une forme. Ce n'est pas la géométrie de l'objet qui est "
-"modifiée, mais seulement l'angle d’incidence de la lumière sur sa surface. "
-"Dans Godot, seulement les canaux rouges et verts des cartes de normale sont "
-"utilisés pour une plus grande compatibilité."
+"Une carte de normale vous permet de définir une texture qui représente un "
+"détail de forme plus fin. Cela ne modifie pas la géométrie, mais seulement "
+"l'angle d'incidence de la lumière. Dans Godot, seuls les canaux rouge et "
+"vert des cartes normales sont utilisés pour une meilleure compression et une "
+"plus grande compatibilité."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:369
 msgid ""
@@ -820,6 +818,11 @@ msgid ""
 "you may have to convert the normal map so its Y axis is flipped. Otherwise, "
 "the normal map direction may appear to be inverted on the Y axis."
 msgstr ""
+"Godot requiert que la normal map utilise les coordonnées X+, Y- et Z+. En "
+"d'autres termes, si vous avez importé un matériau conçu pour être utilisé "
+"avec un autre moteur, vous devrez peut-être convertir la carte normale pour "
+"que son axe Y soit inversé. Sinon, la direction normale de la carte peut "
+"sembler inversée sur l'axe Y."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:374
 msgid ""
@@ -827,6 +830,9 @@ msgid ""
 "popular engines) can be found `here <http://wiki.polycount.com/wiki/"
 "Normal_Map_Technical_Details>`__."
 msgstr ""
+"Vous trouverez plus d'informations sur les nomal map (incluant un tableau "
+"des coordonnées pour les moteurs les plus populaires) `ici <http://wiki."
+"polycount.com/wiki/Normal_Map_Technical_Details>`__."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:379
 msgid "Rim"
@@ -1002,6 +1008,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:477
 msgid "There are several settings that control how detail is used."
 msgstr ""
+"Il existe plusieurs paramètres qui contrôlent la façon dont le détail est "
+"utilisé."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:479
 msgid ""
@@ -1010,11 +1018,18 @@ msgid ""
 "is for the regular material textures, different shades of gray are for "
 "partial blending of the material textures and detail textures."
 msgstr ""
+"Mask : Le masque de détail est une image en noir et blanc utilisée pour "
+"contrôler l'endroit où le mélange se fait sur une texture. Le blanc est pour "
+"les textures de détail, le noir est pour les textures matérielles "
+"régulières, les différentes nuances de gris sont pour le mélange partiel des "
+"textures matérielles et des textures de détail."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:484
 msgid ""
 "Blend Mode: These four modes control how the textures are blended together."
 msgstr ""
+"Blend Mode : Ces quatre modes contrôlent la façon dont les textures sont "
+"mélangées."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:486
 msgid ""
@@ -1022,6 +1037,9 @@ msgid ""
 "material texture, at white, only show the detail texture. Values of gray "
 "create a smooth blend between the two."
 msgstr ""
+"Mix : Combine les valeurs des pixels des deux textures. En noir, ne montre "
+"que la texture du matériau, en blanc, ne montre que la texture du détail. "
+"Les valeurs de gris créent un mélange lisse entre les deux."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:490
 msgid ""
@@ -1029,6 +1047,11 @@ msgid ""
 "textures are completely mixed at white parts of a mask and not at gray "
 "parts. The original texture is mostly unchanged at black"
 msgstr ""
+"Ajouter : Ajoute les valeurs des pixels d'une texture à l'autre. "
+"Contrairement au mode de mélange (mix mode), les deux textures sont "
+"complètement mélangées pour les parties blanches d'un masque et non dans les "
+"parties grises. La texture originale est pratiquement inchangée pour les "
+"parties noires"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:494
 msgid ""
@@ -1037,18 +1060,27 @@ msgid ""
 "subtraction in black parts, gray parts being different levels of subtraction "
 "based on the exact texture."
 msgstr ""
+"Sub : Soustrait les valeurs des pixels d'une texture à l'autre. La deuxième "
+"texture est entièrement soustraite dans les parties blanches d'un masque, "
+"avec seulement une petite soustraction dans les parties noires, les parties "
+"grises étant différents niveaux de soustraction basés sur la texture exacte."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:499
 msgid ""
 "Mul: Multiplies the RGB channel numbers for each pixel from the top texture "
 "with the values for the corresponding pixel from the bottom texture."
 msgstr ""
+"Mul : Multiplie les nombres des canaux RVB pour chaque pixel de la texture "
+"supérieure par les valeurs du pixel correspondant de la texture inférieure."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:502
 msgid ""
 "Albedo: This is where you put an albedo texture you want to blend. If "
 "nothing is in this slot it will be interpreted as white by default."
 msgstr ""
+"Albedo : C'est ici que vous mettez une texture d'albédo que vous voulez "
+"mélanger. Si rien ne se trouve dans ce créneau, elle sera interprétée comme "
+"blanche par défaut."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:505
 msgid ""
@@ -1056,6 +1088,10 @@ msgid ""
 "is in this slot it will be interpreted as a flat normal map. This can still "
 "be used even if the material does not have normal map enabled."
 msgstr ""
+"Normal : C'est ici que vous mettez une texture normale que vous voulez "
+"mélanger. Si rien ne se trouve dans ce créneau, elle sera interprétée comme "
+"une carte normale plate. Cette option peut être utilisée même si la carte "
+"normale n'est pas activée pour le matériau."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:510
 msgid "UV1 and UV2"

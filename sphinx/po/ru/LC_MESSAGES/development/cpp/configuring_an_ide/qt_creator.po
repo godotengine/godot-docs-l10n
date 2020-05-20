@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:4
+msgid "Qt Creator"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:6
+#, fuzzy
+msgid "Qt Creator is a free, open source IDE for all desktop platforms."
+msgstr ""
+"`KDevelop <https://www.kdevelop.org>`_ это бесплатная, открытая IDE для всех "
+"десктопных платформ."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:9
+msgid "Importing the project"
+msgstr "Импортирование проекта"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:11
+#, fuzzy
+msgid "Choose **New Project > Import Project > Import Existing Project**."
+msgstr ""
+"Выберите *New Project* -> *Import Project* -> *Import Existing Project*."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:15
+msgid "Set the path to your Godot root directory and enter the project name."
+msgstr "Установить путь к корневой директории Godot и введите имя проекта."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:19
+#, fuzzy
+msgid ""
+"Here you can choose which folders and files will be visible to the project. "
+"C/C++ files are added automatically. Potentially useful additions: ``*.py`` "
+"for buildsystem files, ``*.java`` for Android platform development, ``*.mm`` "
+"for macOS platform development. Click **Next**."
+msgstr ""
+"Здесь вы можете выбрать какие папки и файлы будут видимы в проекте. Файлы C/C"
+"++ добавляются автоматически. Потенциально хорошо добавить: \\*.py для "
+"конфигурационных файлов, \\*.java для разработки под Android, \\*.mm для "
+"macOS. Щёлкните \"Next\"."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:26
+#, fuzzy
+msgid "Click **Finish**."
+msgstr "Щёлкните *Finish*."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:27
+#, fuzzy
+msgid ""
+"Add a line containing ``.`` to ``project_name.includes`` to get working code "
+"completion."
+msgstr ""
+"Добавьте строку содержащую ``.`` в *project_name.includes* для включения "
+"функции авто-завершения кода."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:33
+msgid "Build and run"
+msgstr "Сборка и запуск"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:35
+msgid "Build configuration:"
+msgstr "Конфигурация сборки:"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:37
+#, fuzzy
+msgid "Click on **Projects** and open the **Build** tab."
+msgstr "Щёлкните *Projects* и откройте вкладку *Build*."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:38
+#, fuzzy
+msgid "Delete the predefined ``make`` build step."
+msgstr "Удалите предустановленный этап сборки ``make``."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:42
+#, fuzzy
+msgid "Click **Add Build Step > Custom Process Step**."
+msgstr "Щёлкните *Add Build Step* -> *Custom Process Step*."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:46
+#, fuzzy
+msgid ""
+"Type ``scons`` in the **Command** field. If it fails with ``Could not start "
+"process \"scons\"``, it can mean that ``scons`` is not in your ``PATH`` "
+"environment variable. In this case, you'll have to specify the full path to "
+"the SCons binary."
+msgstr ""
+"Выберите ``scons`` во поле *Command*. Если он будет ругаться 'Could not "
+"start process \"scons\"', это будет означать что ``scons`` не установлен в "
+"переменной среды ``PATH``, так что вам нужно будет установить полный путь к "
+"бинарнику SCons."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:50
+#, fuzzy
+msgid ""
+"Fill the **Arguments** field with your compilation options (e.g.: "
+"``p=linuxbsd target=debug -j 4``)."
+msgstr ""
+"Заполните поле *Arguments* вашими опциями компиляции. (напр.: ``p=x11 "
+"target=debug -j 4``)"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:55
+msgid "Run configuration:"
+msgstr "Конфигурация запуска:"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:57
+#, fuzzy
+msgid "Open the **Run** tab."
+msgstr "Откройте вкладку *Run*."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:58
+#, fuzzy
+msgid ""
+"Point the **Executable** to your compiled Godot binary (e.g: ``%{buildDir}/"
+"bin/godot.linuxbsd.opt.tools.64``)."
+msgstr ""
+"Настройте *Executable* на скомпилированный бинарный файл Godot (напр.: ``"
+"%{buildDir}/bin/godot.x11.opt.tools.64``)"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:60
+#, fuzzy
+msgid ""
+"If you want to run a specific project, point **Working directory** to the "
+"project folder."
+msgstr ""
+"Если вы хотите запустить определённую игру или проект, настройте *Working "
+"directory* на директорию игры."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:62
+#, fuzzy
+msgid ""
+"If you want to run the editor, add ``-e`` to the **Command line arguments** "
+"field."
+msgstr ""
+"Если вы хотите запустить редактор, добавьте ``-e`` в поле *Command line "
+"arguments*."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:68
+msgid "Updating sources after pulling latest commits"
+msgstr "Обновление источников после получения последних коммитов"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:70
+#, fuzzy
+msgid ""
+"As a developer, you usually want to frequently pull the latest commits from "
+"the upstream Git repository or a specific fork. However, this brings a "
+"problem with it: as the development continues, source files (and folders) "
+"are added or removed. These changes need to be reflected in your project "
+"files for Qt Creator too, so you continue to have a nice programming "
+"experience. A simple way to check is to right click at your root folder in "
+"the **Projects View** and click on **Edit files...**."
+msgstr ""
+"Как разработчик вы обычно хотите часто получать последние коммиты из "
+"главного git репозитория или определённого форка итд. Хотя это приводит к "
+"маленькой проблеме: так как разработка продолжается, исходные файлы (и "
+"папки) добавляются или удаляются. Эти изменения нужно также отразить в ваших "
+"проектных файлах для Qt Creator, чтобы вы смогли продолжить кодинг. "
+"Простейший способ проверки этого, просто кликнуть правой кнопкой мыши по "
+"вашей корневой папке в \"Projects View\" и кликнуть по \"Edit files...\""
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:80
+#, fuzzy
+msgid ""
+"Now a new dialog should appear that is similar in functionality to the one "
+"in the third step of the *Importing the project* section above. Here, you "
+"can check whether you want to add/remove specific files and/or folders. You "
+"can choose by clicking with your mouse or just simply by clicking the "
+"**Apply Filter** button. Click on **OK** and you're ready to continue "
+"working."
+msgstr ""
+"После этого должно появиться диалоговое окно с подобной функциональностью "
+"как в одном из окон из третьего пункта раздела \"Importing the project\". "
+"Здесь вы сможете добавить/удалить определённые файлы и/или папки. Вы можете "
+"выбрать щелчком мыши  или просто кликнув кнопку \"Apply Filter\". Просто "
+"кликните на \"Ok\" и вы сможете продолжить работу."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:89
+msgid "Code style configuration"
+msgstr "Конфигурация стилей кода"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:91
+#, fuzzy
+msgid ""
+"Developers must follow the project's :ref:`code style "
+"<doc_code_style_guidelines>` and the IDE should help them follow it. By "
+"default, Qt Creator does use spaces for indentation which doesn't match the "
+"Godot code style guidelines. You can change this behavior by changing the "
+"**Code Style** in **Options > C++**."
+msgstr ""
+"Разработчики должны следовать проектным :ref:`стилям кода "
+"<doc_code_style_guidelines>` и IDE должно помогать им в этом. По умолчанию, "
+"Qt Cretor использует пробелы для отступов что некорректно в проектах на "
+"Godot. Вы можете изменить это поведение в \"Code Style\" в *Options* -> *C+"
+"+*."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:98
+#, fuzzy
+msgid ""
+"Click on **Edit** to change the current settings, then click on **Copy Built-"
+"in Code Style** button to set a new code style. Set a name for it (e.g. "
+"Godot) and change the Tab policy to be **Tabs Only**."
+msgstr ""
+"Щёлкнув по *Edit* вы измените текущие настройки, после кликните по кнопке "
+"*Copy Built-in Code Style* для установки нового стиля кода. Установить имя "
+"(напр. Godot) и измените настройку вкладок в *Tabs Only*."
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:104
+#, fuzzy
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"Краткий обзор по этим каналам также доступен на веб-сайте\n"
+"<https://godotengine.org/community>`_."

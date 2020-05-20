@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -318,26 +318,12 @@ msgid ""
 "They can extend **other** resource types besides just the base Resource."
 msgstr "它们可以扩展除基本 ``Resource`` 之外的 **其他** 资源类型。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:185
-msgid ""
-"Resources and Dictionaries are both passed by reference, but only Resources "
-"are reference-counted. This means that if a Dictionary is passed between "
-"objects and the first object is deleted, all other objects' references to "
-"the Dictionary will be invalidated. Conversely, Resources will not be freed "
-"from memory until *all* the objects are deleted."
-msgstr ""
-"``资源（Resources）`` 和 ``字典（Dictionaries）`` 都是通过引用传递的，但是只"
-"有 ``资源（Resources）`` 是引用计数的。这意味着，如果在对象之间传递一个 ``字"
-"典（Dictionary）``，并且删除第一个对象，则所有其他对象对该 ``字典"
-"（Dictionary）`` 的引用都将无效。相反，直到删除 *所有* 对象之前，不会从内存中"
-"释放 ``资源（Resources）``。"
-
-#: ../../docs/getting_started/step_by_step/resources.rst:215
+#: ../../docs/getting_started/step_by_step/resources.rst:183
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr ""
 "Godot 使在属性检查器面板中创建自定义 ``资源（Resources）`` 变得很容易。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:217
+#: ../../docs/getting_started/step_by_step/resources.rst:185
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
@@ -345,11 +331,11 @@ msgstr ""
 "在属性检查器面板中创建一个普通的 ``资源（Resources）`` 对象。只要您的脚本扩展"
 "了该类型，它甚至可以是派生 ``资源（Resource）`` 的类型。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:218
+#: ../../docs/getting_started/step_by_step/resources.rst:186
 msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr "将属性检查器中的 ``script`` 属性设置为您的脚本。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:220
+#: ../../docs/getting_started/step_by_step/resources.rst:188
 msgid ""
 "The Inspector will now display your Resource script's custom properties. If "
 "one edits those values and saves the resource, the Inspector serializes the "
@@ -360,7 +346,7 @@ msgstr ""
 "并保存资源，则属性检查器也会序列化自定义属性！要从属性检查器中保存资源，请点"
 "击属性检查器的工具菜单（右上角），然后选择 ``保存`` 或 ``另存为...``。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:225
+#: ../../docs/getting_started/step_by_step/resources.rst:193
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -372,11 +358,11 @@ msgstr ""
 "以简化该过程。仅为脚本定义名称会将其添加到属性检查器的创建对话框。这会将脚本"
 "自动添加到您创建的 ``资源（Resource）`` 对象中。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:230
+#: ../../docs/getting_started/step_by_step/resources.rst:198
 msgid "Let's see some examples."
 msgstr "让我们看一些示例。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:303
+#: ../../docs/getting_started/step_by_step/resources.rst:271
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -389,7 +375,7 @@ msgstr ""
 "（Control）`` 的工具脚本，并将它们与一个 :ref:`EditorPlugin "
 "<class_EditorPlugin>` 结合起来，以为他们的数据创建自定义的可视化和编辑器。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:309
+#: ../../docs/getting_started/step_by_step/resources.rst:277
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
@@ -400,19 +386,19 @@ msgstr ""
 "符串，类似于将字符串映射到辅助自定义 ``资源（Resource）`` 脚本的 ``字典"
 "（Dictionary）``。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:345
+#: ../../docs/getting_started/step_by_step/resources.rst:313
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr "不仅可以内联 ``字典（Dictionary）`` 值，还可以选择..."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:347
+#: ../../docs/getting_started/step_by_step/resources.rst:315
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
 msgstr "从电子表格导入值表并生成这些键值对，或者..."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:349
+#: ../../docs/getting_started/step_by_step/resources.rst:317
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
@@ -420,7 +406,7 @@ msgstr ""
 "在编辑器中设计可视化，并创建一个简单的插件，可在当您打开这些类型的 ``资源"
 "（Resources）`` 时，将其添加到属性检查器中。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:352
+#: ../../docs/getting_started/step_by_step/resources.rst:320
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
@@ -428,7 +414,7 @@ msgstr ""
 "``CurveTables`` 是相同的东西，除了映射到一个浮点值数组或一个 :ref:`Curve "
 "<class_Curve>`/:ref:`Curve2D <class_Curve2D>` 资源对象之外。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:357
+#: ../../docs/getting_started/step_by_step/resources.rst:325
 msgid ""
 "Beware that resource files (\\*.tres/\\*.res) will store the path of the "
 "script they use in the file. When loaded, they will fetch and load this "
@@ -442,7 +428,7 @@ msgstr ""
 "类，即脚本的内部类（例如在GDScript中使用 ``class`` 关键字）将不起作用。Godot"
 "将无法正确序列化脚本子类上的自定义属性。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:363
+#: ../../docs/getting_started/step_by_step/resources.rst:331
 msgid ""
 "In the example below, Godot would load the ``Node`` script, see that it "
 "doesn't extend ``Resource``, and then determine that the script failed to "

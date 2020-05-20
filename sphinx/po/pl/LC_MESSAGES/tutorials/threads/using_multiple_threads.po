@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,11 +67,11 @@ msgstr ""
 msgid ""
 "Accessing objects or data from multiple threads is not always supported (if "
 "you do it, it will cause unexpected behaviors or crashes). Read the :ref:"
-"`Thread safe APIs<doc_thread_safe_apis>` to understand which engine APIs "
-"support multiple thread access."
+"`doc_thread_safe_apis` documentation to understand which engine APIs support "
+"multiple thread access."
 msgstr ""
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:57
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:58
 msgid ""
 "When processing your own data or calling your own functions, as a rule, try "
 "to avoid accessing the same data directly from different threads. You may "
@@ -80,7 +80,7 @@ msgid ""
 "accessing a piece of data from different threads."
 msgstr ""
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:63
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:64
 msgid ""
 "When calling :ref:`Mutex.lock()<class_Mutex_method_lock>`, a thread ensures "
 "that all other threads will be blocked (put on suspended state) if they try "
@@ -89,17 +89,17 @@ msgid ""
 "proceed with the lock (but only one at a time)."
 msgstr ""
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:69
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:70
 #, fuzzy
 msgid "Here is an example of using a Mutex:"
 msgstr "Poniżej znajduje się przykładowy plik klasy."
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:101
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:102
 #, fuzzy
 msgid "Semaphores"
 msgstr "Użyj semaforu"
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:103
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:104
 msgid ""
 "Sometimes you want your thread to work *\"on demand\"*. In other words, tell "
 "it when to work and let it suspend when it isn't doing anything. For this, :"
@@ -108,7 +108,7 @@ msgid ""
 "until some data arrives."
 msgstr ""
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:109
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:110
 msgid ""
 "The main thread, instead, uses :ref:`Semaphore."
 "post()<class_Semaphore_method_post>` to signal that data is ready to be "

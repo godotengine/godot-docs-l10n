@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Change scenes manually"
 msgstr "Изменение сцен вручную"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:6
-#, fuzzy
 msgid ""
 "Sometimes it helps to have more control over how one swaps scenes around. As "
 "mentioned above, a :ref:`Viewport <class_Viewport>`'s child nodes will "
@@ -30,11 +29,11 @@ msgid ""
 "the \"current\" scene. Autoloads fall into this category, but so do scenes "
 "which one instances and adds to the tree at runtime:"
 msgstr ""
-"Иногда это помогает иметь больший контроль над тем как переключаются сцены. "
-"Как показано выше ноды потомки :ref:`Viewport <class_Viewport>` будут "
-"отрисовывать генерируемую картинку. Это истинно даже для нодов вне \"текущей"
-"\" сцены. Автозагрузки попадают под эту категорию, но также и сцены которые "
-"инстанцируются и добавляются в сцену во время выполнения:"
+"Таким образом, можно получить больший контроль над переключением сцен. Как "
+"показано выше, ноды потомки :ref:`Viewport <class_Viewport>` будут "
+"отрисовывать генерируемую картинку. Это истинно даже для нод вне \"текущей\" "
+"сцены.  Автозагрузки попадают в эту категорию, но также и сцены, которые "
+"создаются и добавляются в дерево во время выполнения:"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:38
 msgid ""
@@ -71,7 +70,7 @@ msgstr "Освобождение памяти."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:53
 msgid "Pro: RAM is no longer dragging the dead weight."
-msgstr "За: RAM более не мёртвый груз."
+msgstr "За: в RAM памяти больше нет мёртвого груза."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:55
 msgid ""
@@ -80,7 +79,7 @@ msgid ""
 "soon is unnecessary."
 msgstr ""
 "Против: Возврат в эту сцену теперь более затратный так как мы должны снова "
-"загрузить её назад в память (занимает время И память). Не проблема если "
+"загрузить её назад в память (занимает время и память). Не проблема если "
 "скорый возврат не требуется."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:59
@@ -88,8 +87,8 @@ msgid ""
 "Con: No longer have access to that scene's data. Not a problem if using that "
 "data soon is unnecessary."
 msgstr ""
-"Против: Больше нет доступа к данным сцены. Не проблема если эти данные скоро "
-"не потребуются."
+"Против: Больше нет доступа к данным сцены. Не проблема, если эти данные "
+"потребуются не скоро."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:62
 msgid ""
@@ -97,9 +96,9 @@ msgid ""
 "re-attaching one or more of its nodes to a different scene, or even directly "
 "to the :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
-"Заметка: Также пере-подключайте одну или несколько нод в другую сцену или "
-"напрямую в :ref:`SceneTree <class_SceneTree>`. Это может быть полезно для "
-"сохранения данных сцены которая будет скоро удалена."
+"Заметка: Также вы можете переключить одну или несколько нод в другую сцену, "
+"или напрямую в :ref:`SceneTree <class_SceneTree>`. Это может быть полезно "
+"для сохранения данных сцены которая будет скоро удалена."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:66
 msgid "Processing stops."
@@ -110,16 +109,16 @@ msgid ""
 "Pro: No nodes means no process, physics process, or input handling. The CPU "
 "is available to work on the new scene's contents."
 msgstr ""
-"За: Нет нодов - значит нет обработки, физической обработки, или обработки "
-"ввода. Значит что CPU будет работать над новыми задачами сцены."
+"За: Нет нод - значит нет обработки, физической обработки, или обработки "
+"ввода. Значит что мощности CPU теперь пойдут на выполнение новых задач сцены."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:71
 msgid ""
 "Con: Those nodes' processing and input handling no longer operate. Not a "
 "problem if using the updated data is unnecessary."
 msgstr ""
-"Против: Обработка нодов и ввода больше не доступна. Не проблема если вас не "
-"интересует  использование обновлённых данных."
+"Против: Обработка нод и ввода больше не доступна. Не проблема если вас не "
+"интересует использование обновлённых данных."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:74
 msgid ""
@@ -128,7 +127,7 @@ msgid ""
 "player's perspective."
 msgstr ""
 "**Мы можем скрыть существующую сцену.** Изменяя видимость или обнаружение "
-"столкновения для нодов, мы можем скрыть целую под-древо нодов из вида игрока."
+"столкновения для нод, мы можем скрыть целую под-древо нод из вида игрока."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:78
 msgid "Memory still exists."

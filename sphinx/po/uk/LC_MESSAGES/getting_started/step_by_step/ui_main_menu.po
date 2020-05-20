@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -272,7 +272,6 @@ msgstr ""
 "сцену, натисніть **Сцена> Нова сцена**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
-#, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
@@ -288,7 +287,6 @@ msgstr ""
 "сцену на диск. Назвіть її *MainMenu*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
-#, fuzzy
 msgid ""
 "Select the ``MarginContainer`` again, and head to the inspector to define "
 "the margins' size. Scroll down the ``Control`` class, to the ``Custom "
@@ -328,7 +326,6 @@ msgid "Add the UI sprites"
 msgstr "Додавання спрайтів до інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:147
-#, fuzzy
 msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
@@ -349,12 +346,10 @@ msgid "the version note,"
 msgstr "інформація про версію,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
-#, fuzzy
 msgid "and the main menu's illustration."
 msgstr "і ілюстрація головного меню."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on "
 "macOS) on your keyboard. Start to type ``TextureRect`` to find the "
@@ -362,13 +357,13 @@ msgid ""
 "`Ctrl + D` (:kbd:`Cmd + D` on macOS) five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
-"Натисніть кнопку **Додати вузол**, або натисніть ``Ctrl+A`` на клавіатурі. "
-"Почніть вводити, ``TextureRect``, щоб знайти відповідний вузол, і натисніть "
-"клавішу Enter. Вибравши новий вузол, натисніть ``Ctrl+D`` п'ять раз, щоб "
-"створити п'ять додаткових екземплярів ``TextureRect``."
+"Натисніть кнопку **Додати вузол**, або натисніть ``Ctrl+A`` (:kbd:`Cmd + A` "
+"на macOS) на клавіатурі. Почніть вводити, ``TextureRect``, щоб знайти "
+"відповідний вузол, і натисніть клавішу Enter. Вибравши новий вузол, "
+"натисніть ``Ctrl+D`` (:kbd:`Cmd + D` на macOS) п'ять раз, щоб створити п'ять "
+"додаткових екземплярів ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
 "property and click **[empty] > Load**. A file browser opens and lets you "
@@ -376,7 +371,7 @@ msgid ""
 msgstr ""
 "Клацніть кожен з вузлів, щоб вибрати його. У інспекторі знайдіть властивість "
 "**Texture** та натисніть **[порожньо]> Завантажити**. Відкриється браузер "
-"файлів і дозволить вибрати спрайт для завантаження в якості текстури."
+"файлів і дозволить вибрати спрайт для встановлення текстури."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
 msgid "The file browser lets you find and load textures."
@@ -414,7 +409,6 @@ msgstr ""
 "Додавання контейнерів для автоматичного розміщення елементів інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
-#, fuzzy
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -433,9 +427,9 @@ msgstr ""
 "дві: ліву і праву, або верхню і нижню сторони. Вони також дозволяють "
 "користувачеві змінювати розмір лівої та правої областей за допомогою "
 "інтерактивної шкали. З іншого боку, ``HBoxContainer`` просто розділяється на "
-"стільки колонок, скільки нащадків. Хоча ви можете дезактивувати можливість "
-"зміни розміру Split контейнера, я рекомендую надавати перевагу box "
-"контейнерам."
+"стільки колонок, скільки має нащадків. Хоча ви можете дезактивувати "
+"можливість зміни розміру Split контейнера, я рекомендую надавати перевагу "
+"box контейнерам."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:197
 msgid ""
@@ -449,7 +443,6 @@ msgstr ""
 "для параметрів меню зліва та ``CenterContainer`` для ілюстрації праворуч."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
-#, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
@@ -485,7 +478,6 @@ msgid "There's no space between the logo and the other UI elements."
 msgstr "Між логотипом та іншими елементами інтерфейсу немає місця."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
-#, fuzzy
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "

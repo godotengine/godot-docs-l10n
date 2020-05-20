@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,6 @@ msgstr ""
 "difficile de déplacer ces objets."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:10
-#, fuzzy
 msgid ""
 "To make each instance move in an interesting way, we will use a :ref:"
 "`Particles <class_Particles>` node. Particles take advantage of GPU "
@@ -87,7 +86,6 @@ msgstr ""
 "nombre aléatoire à partir du ``RANDOM_SEED`` de chaque particule."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:54
-#, fuzzy
 msgid ""
 "A unique thing about particle shaders is that some built-in variables are "
 "saved across frames. ``TRANSFORM``, ``COLOR``, and ``CUSTOM`` can all be "
@@ -109,7 +107,6 @@ msgstr ""
 "contiennent qu'une fonction vertex et aucune autre."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:61
-#, fuzzy
 msgid ""
 "First we will distinguish between code that needs to be run only when the "
 "particle system starts and code that should always run. We want to give each "
@@ -122,9 +119,9 @@ msgstr ""
 "uniquement au démarrage du système de particules et le code devant toujours "
 "être exécuté. Nous voulons attribuer à chaque poisson une position aléatoire "
 "et un décalage d'animation aléatoire lors de la première exécution du "
-"système nous encapsulons donc ce code dans une instruction `` if`` vérifiant "
-"la variable intégrée `` RESTART`` qui devient ``true`` pour une frame "
-"lorsque le système de particules est redémarré."
+"système. Pour ce faire, nous encapsulons donc ce code dans une instruction "
+"`` if`` vérifiant la variable intégrée `` RESTART`` qui devient ``true`` "
+"pour une image(frame) lorsque le système de particules est redémarré."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:66
 msgid "From a high level, this looks like:"

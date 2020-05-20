@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,10 +189,26 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:132
-msgid "Building export templates"
+msgid "Compiling a headless/server build"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:134
+msgid ""
+"To compile a *headless* build which provides editor functionality to export "
+"projects in an automated manner, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:139
+msgid ""
+"To compile a *server* build which is optimized to run dedicated game "
+"servers, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:145
+msgid "Building export templates"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:147
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -201,78 +217,78 @@ msgid ""
 "a suitable build environment."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:142
+#: ../../docs/development/compiling/compiling_for_x11.rst:155
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:145
+#: ../../docs/development/compiling/compiling_for_x11.rst:158
 msgid "(32 bits)"
 msgstr "%1 біт"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:152
+#: ../../docs/development/compiling/compiling_for_x11.rst:165
 msgid "(64 bits)"
 msgstr "%1 біт"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:159
+#: ../../docs/development/compiling/compiling_for_x11.rst:172
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:162
+#: ../../docs/development/compiling/compiling_for_x11.rst:175
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:168
+#: ../../docs/development/compiling/compiling_for_x11.rst:181
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:177
+#: ../../docs/development/compiling/compiling_for_x11.rst:190
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
 "here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:183
+#: ../../docs/development/compiling/compiling_for_x11.rst:196
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Godot source folder, so the next time you "
 "build, you automatically have the custom templates referenced."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:188
+#: ../../docs/development/compiling/compiling_for_x11.rst:201
 msgid "Using Clang and LLD for faster development"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:190
+#: ../../docs/development/compiling/compiling_for_x11.rst:203
 msgid ""
 "You can also use Clang and LLD to build Godot. This has two upsides compared "
 "to the default GCC + GNU ld setup:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:193
+#: ../../docs/development/compiling/compiling_for_x11.rst:206
 msgid ""
 "LLD links Godot significantly faster compared to GNU ld or gold. This leads "
 "to faster iteration times."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:195
+#: ../../docs/development/compiling/compiling_for_x11.rst:208
 msgid "Clang tends to give more useful error messages compared to GCC."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:197
+#: ../../docs/development/compiling/compiling_for_x11.rst:210
 msgid ""
 "To do so, install Clang and the ``lld`` package from your distribution's "
 "package manager then use the following SCons command::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:202
+#: ../../docs/development/compiling/compiling_for_x11.rst:215
 msgid ""
 "It's still recommended to use GCC for production builds as they can be "
 "compiled using link-time optimization, making the resulting binaries smaller "

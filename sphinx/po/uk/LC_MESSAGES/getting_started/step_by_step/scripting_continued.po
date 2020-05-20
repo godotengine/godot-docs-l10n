@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,8 +49,8 @@ msgid ""
 "function."
 msgstr ""
 "Обробка в режимі очікування активується, коли в скрипті знайдено метод :ref:"
-"`Node._process() <class_Node_method__process>`.  Його можна вимкнути та "
-"увімкнути за допомогою функції  :ref:`Node.set_process() "
+"`Node._process() <class_Node_method__process>`. Його можна вимкнути та "
+"увімкнути за допомогою функції :ref:`Node.set_process() "
 "<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
@@ -68,14 +68,13 @@ msgstr ""
 "програма. Цей показник може змінюватись в залежності від часу та пристроїв."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability, the ``delta`` parameter contains the time "
 "elapsed in seconds as a floating-point number since the previous call to "
 "``_process()``."
 msgstr ""
 "Для управління цією властивістю є параметр ``delta``, який містить час у "
-"секундах, що минув, починаючи з попереднього виклику ``_process()``."
+"секундах, що минув від попереднього виклику ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -86,7 +85,6 @@ msgstr ""
 "однаковий час, незалежно від FPS гри."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
-#, fuzzy
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent of the frame rate."

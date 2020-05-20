@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -344,24 +344,11 @@ msgid ""
 "They can extend **other** resource types besides just the base Resource."
 msgstr "그들은 기본 리소스 외에도 **다른** 리소스 타입도 확장할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:185
-msgid ""
-"Resources and Dictionaries are both passed by reference, but only Resources "
-"are reference-counted. This means that if a Dictionary is passed between "
-"objects and the first object is deleted, all other objects' references to "
-"the Dictionary will be invalidated. Conversely, Resources will not be freed "
-"from memory until *all* the objects are deleted."
-msgstr ""
-"리소스와 딕셔너리는 둘 다 참조로 전달되지만, 오직 리소스만 참조 횟수로 계산됩"
-"니다. 즉, 딕셔너리를 객체 사이로 전달한 뒤 첫 번째 객체를 삭제하면, 딕셔너리"
-"의 모든 다른 객체 참조는 무효화될 것입니다. 반면 리소스는 *모든* 객체가 사라"
-"질 때까지 메모리를 해제하지 않습니다."
-
-#: ../../docs/getting_started/step_by_step/resources.rst:215
+#: ../../docs/getting_started/step_by_step/resources.rst:183
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr "Godot는 인스펙터(Inspecter)에서 맞춤 리소스를 만들기 쉽게 합니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:217
+#: ../../docs/getting_started/step_by_step/resources.rst:185
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
@@ -369,12 +356,12 @@ msgstr ""
 "인스펙터(Inspecter)에서 순수한 리소스를 만듭니다. 스크립트가 해당 타입을 확장"
 "하는 동안, 이것은 심지어 리소스를 파생하는 타입일 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:218
+#: ../../docs/getting_started/step_by_step/resources.rst:186
 msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr ""
 "인스펙터(Inspecter)에서 ``script`` 속성을 당신의 스크립트로 설정합니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:220
+#: ../../docs/getting_started/step_by_step/resources.rst:188
 msgid ""
 "The Inspector will now display your Resource script's custom properties. If "
 "one edits those values and saves the resource, the Inspector serializes the "
@@ -387,7 +374,7 @@ msgstr ""
 "구 메뉴 (우측 상단)를 클릭하고, \"저장하기\"나 \"다른 이름으로 저장...\"을 선"
 "택합니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:225
+#: ../../docs/getting_started/step_by_step/resources.rst:193
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -400,11 +387,11 @@ msgstr ""
 "인스펙터(Inspecter)의 생성 대화 상자에 리소스를 추가할 것입니다. 이렇게 하면 "
 "생성된 리소스 객체에 스크립트가 자동으로 추가됩니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:230
+#: ../../docs/getting_started/step_by_step/resources.rst:198
 msgid "Let's see some examples."
 msgstr "몇 가지 예를 살펴보겠습니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:303
+#: ../../docs/getting_started/step_by_step/resources.rst:271
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -418,7 +405,7 @@ msgstr ""
 "`EditorPlugin <class_EditorPlugin>`\\ 으로 결합하여 맞춤 시각화와 데이터를 위"
 "한 편집기를 만들 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:309
+#: ../../docs/getting_started/step_by_step/resources.rst:277
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
@@ -428,20 +415,20 @@ msgstr ""
 "할 수 있습니다. DataTables은 맞춤 구조체에 매핑된 문자열로, 이차적인 맞춤 리"
 "소스 스크립트에 문자열을 매핑하는 딕셔너리와 유사합니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:345
+#: ../../docs/getting_started/step_by_step/resources.rst:313
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr ""
 "딕셔너리 값을 inlining(인라이닝)하는 대신, 또 다른 할 수 있는 대안으로..."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:347
+#: ../../docs/getting_started/step_by_step/resources.rst:315
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
 msgstr "스프레드 시트에서 테이블 값을 가져오고 키 값 쌍을 생성합니다, 혹은..."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:349
+#: ../../docs/getting_started/step_by_step/resources.rst:317
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
@@ -449,7 +436,7 @@ msgstr ""
 "편집기 내에서 시각화를 설계하고 해당 타입 리소스를 열 때 인스펙터(Inspecter)"
 "에 리소스를 추가하는 간단한 플러그인을 제작합니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:352
+#: ../../docs/getting_started/step_by_step/resources.rst:320
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
@@ -462,7 +449,7 @@ msgstr ""
 "한 계층 구조를 만들 수 있지만, 항목을 행이나 열, 격자 등으로 배열하기는 더 어"
 "렵습니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:357
+#: ../../docs/getting_started/step_by_step/resources.rst:325
 msgid ""
 "Beware that resource files (\\*.tres/\\*.res) will store the path of the "
 "script they use in the file. When loaded, they will fetch and load this "
@@ -477,7 +464,7 @@ msgstr ""
 "(GDScript에서 ``class`` 키워드를 사용하는 것)를 할당할 수 없습니다. Godot는 "
 "스크립트 하위 클래스에 맞춤 속성을 정확하게 직렬화 하지 않을 것입니다."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:363
+#: ../../docs/getting_started/step_by_step/resources.rst:331
 msgid ""
 "In the example below, Godot would load the ``Node`` script, see that it "
 "doesn't extend ``Resource``, and then determine that the script failed to "

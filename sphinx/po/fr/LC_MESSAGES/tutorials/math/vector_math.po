@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -291,7 +291,6 @@ msgid "Normalization"
 msgstr "Normalisation"
 
 #: ../../docs/tutorials/math/vector_math.rst:189
-#, fuzzy
 msgid ""
 "**Normalizing** a vector means reducing its length to ``1`` while preserving "
 "its direction. This is done by dividing each of its components by its "
@@ -300,7 +299,8 @@ msgid ""
 msgstr ""
 "**Normaliser** un vecteur, c'est réduire sa longueur à ``1`` tout en "
 "conservant sa direction. Pour ce faire, on divise chacune de ses composantes "
-"par son ampleur :"
+"par son magnitude . Comme il s'agit d'une opération très courante, "
+"``Vector2`` et ``Vector3`` fournissent une méthode de normalisation :"
 
 #: ../../docs/tutorials/math/vector_math.rst:204
 msgid ""
@@ -433,7 +433,6 @@ msgstr ""
 "est de **180°**, peuvent-ils voir le joueur ?"
 
 #: ../../docs/tutorials/math/vector_math.rst:302
-#, fuzzy
 msgid ""
 "The green arrows ``fA`` and ``fB`` are **unit vectors** representing the "
 "zombies' facing directions and the blue semicircle represents its field of "
@@ -445,10 +444,9 @@ msgstr ""
 "Les flèches vertes ``fA`` et ``fB`` sont des **vecteurs unitaires** "
 "représentant la direction dans laquelle les zombies sont orientés et le demi-"
 "cercle bleu représente leur champ de vision. Pour le zombie ``A``, nous "
-"trouvons le vecteur de direction ``AP`` pointant vers le lecteur en "
-"utilisant ``P - A`` et le normaliser. Si l'angle entre ce vecteur et le "
-"vecteur faisant face est inférieur à 90°, alors le zombie peut voir le "
-"joueur."
+"trouvons le vecteur de direction ``AP`` pointant vers le joueur en utilisant "
+"``P - A`` et en le normalisant. Si l'angle entre ce vecteur et le vecteur "
+"faisant face est inférieur à 90°, alors le zombie peut voir le joueur."
 
 #: ../../docs/tutorials/math/vector_math.rst:310
 msgid "In code it would look like this:"

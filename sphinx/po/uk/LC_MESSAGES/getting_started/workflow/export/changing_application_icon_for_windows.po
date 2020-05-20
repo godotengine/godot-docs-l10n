@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for Windows"
-msgstr ""
+msgstr "Зміна іконки програми для Windows"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
 msgid ""
@@ -27,36 +27,47 @@ msgid ""
 "most likely want to change that for your project. There are two types of "
 "icons that can be changed on Windows: the file icon and the taskbar icon."
 msgstr ""
+"За замовчуванням піктограмою експортованого проекту буде значок Godot. Ви, "
+"швидше за все, захочете змінити це для свого проекту. Існує два типи "
+"піктограм, які можна змінити в Windows: значок файлу та значок панелі "
+"завдань."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
 msgid "Changing the taskbar icon"
-msgstr ""
+msgstr "Зміна піктограми панелі завдань"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
 "The taskbar icon is the icon that shows up on the taskbar when your project "
 "is running."
 msgstr ""
+"Піктограма панелі завдань - це значок, який з’являється на панелі завдань "
+"під час запуску проекту."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Icon**. Click on the folder icon and select your desired icon."
 msgstr ""
+"Щоб змінити значок панелі завдань, перейдіть до **Проект → Параметри проекту "
+"→ Application (Застосування) → Config (Налаштування) → Icon (Піктограма). "
+"Клацніть зображення папки та виберіть потрібний значок."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:22
 msgid "This is also the icon that gets displayed in the Godot project list."
-msgstr ""
+msgstr "Цей значок також відображається у списку проектів Godot."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:27
 msgid "Changing the file icon"
-msgstr ""
+msgstr "Зміна піктограми файлу"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:29
 msgid ""
 "The file icon is the icon of the executable that you click on to start the "
 "project."
 msgstr ""
+"Піктограма файлу - це піктограма виконуваного файлу, яку ви натискаєте, щоб "
+"запустити проект."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:34
 msgid ""
@@ -64,6 +75,9 @@ msgid ""
 "tool called **rcedit**. You can download it `here <https://github.com/"
 "electron/rcedit/releases>`_."
 msgstr ""
+"Перш ніж вибрати її в опціях експорту, вам потрібно буде встановити "
+"додатковий інструмент під назвою **rcedit**. Завантажити його можна "
+"`тут<https://github.com/electron/rcedit/releases>`_."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
 msgid ""
@@ -72,12 +86,18 @@ msgid ""
 "Click on the folder icon for the **rcedit** entry. Navigate to and select "
 "the rcedit executable."
 msgstr ""
+"Після завантаження потрібно вказати Godot шлях до виконуваного файлу rcedit "
+"на вашому комп'ютері. Перейдіть до **Редактор → Параметри редактора → Export "
+"→ Windows**. Клацніть зображення папки щоб записати **rcedit**. Перейдіть та "
+"виберіть виконуваний файл rcedit."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:44
 msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
 msgstr ""
+"Користувачам Linux та macOS для використання rcedit потрібно буде встановити "
+"ще й `WINE<https://www.winehq.org/>`_."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:49
 msgid ""
@@ -86,6 +106,11 @@ msgid ""
 "Export**. Assuming you have already created a Windows Desktop preset, select "
 "your icon in ICO format in the **Application → Icon** field."
 msgstr ""
+"Тепер у вас має бути все необхідне для заміни піктограми файлу. Для цього "
+"вам потрібно буде вказати піктограму під час експорту. Перейдіть до **Проект "
+"→ Експорт**. Якщо припустити, що ви вже створили попередньо встановлену "
+"програму Windows Desktop, виберіть піктограму у форматі ICO у полі "
+"**Application → Icon**."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:55
 msgid ""
@@ -93,20 +118,25 @@ msgid ""
 "information, please refer to `this tutorial <http://skyboygames.com/easily-"
 "create-a-windows-app-icon-with-gimp/>`_."
 msgstr ""
+"Ви можете використовувати програмне забезпечення, наприклад GIMP, для "
+"експорту зображення ICO. Для отримання додаткової інформації зверніться до "
+"`цього підручника<http://skyboygames.com/easily-create-a-windows-app-icon-"
+"with-gimp/>`_."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
 msgid "Testing the result"
-msgstr ""
+msgstr "Тестування результату"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:64
 msgid ""
 "You can now export the project. If it worked correctly, you should see this:"
 msgstr ""
+"Тепер ви можете експортувати проект. Якщо він працював правильно, ви повинні "
+"побачити таке:"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:69
-#, fuzzy
 msgid "ICO file requirements"
-msgstr "Вимоги"
+msgstr "Вимоги до файлу ICO"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:71
 msgid ""
@@ -114,6 +144,9 @@ msgid ""
 "wikipedia.org/wiki/ICO_(file_format)>`_, there are some requirements to "
 "ensure the icon (and your executable) works on Windows."
 msgstr ""
+"Незалежно від того, яку програму ви використовуєте для створення свого `ICO-"
+"файлу<https://en.wikipedia.org/wiki/ICO_(file_format)>`_, існують деякі "
+"вимоги до піктограми (і вашого виконуваного файлу) для її роботи в Windows."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:75
 msgid ""
@@ -127,6 +160,8 @@ msgid ""
 "Your ICO file should at least contain icons in the following resolutions: "
 "16×16, 48×48 and 256×256."
 msgstr ""
+"Ваш ICO-файл повинен містити піктограми хоча би в таких роздільних "
+"здатностях: 16 × 16, 48 × 48 та 256 × 256."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
 msgid ""
@@ -134,9 +169,15 @@ msgid ""
 "supported icon sizes on Windows 10: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, "
 "48, 56, 60, 63, 84 and one larger than 255 pixels (such as 256, 512 or 1024)."
 msgstr ""
+"Якщо ви хочете повністю підтримувати екрани з високою роздільною здатністю, "
+"то ось повний перелік підтримуваних розмірів піктограм у Windows 10: 16, 20, "
+"24, 28, 30, 31, 32, 40, 42, 47, 48, 56, 60, 63, 84 та один розміром більше "
+"255 пікселів (наприклад, 256, 512, або 1024)."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
 msgid ""
 "It is also possible to convert a PNG image to an hiDPI-friendly ICO file "
 "using this `ImageMagick <https://www.imagemagick.org/>`_ command:"
 msgstr ""
+"Також можна конвертувати зображення PNG у файл ICO, сприятливий для hiDPI, "
+"за допомогою цієї команди `ImageMagick <https://www.imagemagick.org/>`_:"

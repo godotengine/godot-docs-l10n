@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,10 +120,26 @@ msgstr ""
 "target=release_debug`` で構築された最適化されたエディタバイナリの場合:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:57
+msgid "Compiling a headless/server build"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:59
+msgid ""
+"To compile a *headless* build which provides editor functionality to export "
+"projects in an automated manner, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:64
+msgid ""
+"To compile a *server* build which is optimized to run dedicated game "
+"servers, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:70
 msgid "Cross-compiling for macOS from Linux"
 msgstr "LinuxからのmacOSのクロスコンパイル"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:59
+#: ../../docs/development/compiling/compiling_for_osx.rst:72
 msgid ""
 "It is possible to compile for macOS in a Linux environment (and maybe also "
 "in Windows using the Windows Subsystem for Linux). For that, you'll need to "
@@ -136,7 +152,7 @@ msgstr ""
 "osxcross>`__ をインストールする必要があります。まず、指示に従ってインストール"
 "します:"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:64
+#: ../../docs/development/compiling/compiling_for_osx.rst:77
 msgid ""
 "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ "
 "somewhere on your machine (or download a ZIP file and extract it somewhere), "
@@ -146,7 +162,7 @@ msgstr ""
 "のどこかにクローンします(またはzipファイルをダウンロードしてどこかに解凍しま"
 "す)。例:"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:70
+#: ../../docs/development/compiling/compiling_for_osx.rst:83
 msgid ""
 "Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
 "osxcross#packaging-the-sdk"
@@ -154,7 +170,7 @@ msgstr ""
 "以下のURLの内容に従ってSDKをパッケージ化します:https://github.com/"
 "tpoechtrager/osxcross#packaging-the-sdk"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:72
+#: ../../docs/development/compiling/compiling_for_osx.rst:85
 msgid ""
 "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
 "osxcross#installation"
@@ -162,7 +178,7 @@ msgstr ""
 "OSXCrossをインストールするには、以下の手順に従ってください:https://github."
 "com/tpoechtrager/osxcross#installation"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:75
+#: ../../docs/development/compiling/compiling_for_osx.rst:88
 msgid ""
 "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the "
 "OSXCross installation (the same place where you cloned the repository/"
@@ -171,11 +187,11 @@ msgstr ""
 "その後、\\ ``OSXCROSS_ROOT`` をOSXCrossインストールへのパス(リポジトリをク"
 "ローンした、またはzipを抽出したのと同じ場所)として定義する必要があります。例:"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:81
+#: ../../docs/development/compiling/compiling_for_osx.rst:94
 msgid "Now you can compile with SCons like you normally would::"
 msgstr "これで、通常のようにSConsでコンパイルできます:"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:85
+#: ../../docs/development/compiling/compiling_for_osx.rst:98
 msgid ""
 "If you have an OSXCross SDK version different from the one expected by the "
 "SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` "

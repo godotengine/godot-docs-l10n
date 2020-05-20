@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -382,26 +382,11 @@ msgid ""
 msgstr ""
 "Вони можуть розширювати **інші** типи ресурсів, окрім базового ресурсу."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:185
-#, fuzzy
-msgid ""
-"Resources and Dictionaries are both passed by reference, but only Resources "
-"are reference-counted. This means that if a Dictionary is passed between "
-"objects and the first object is deleted, all other objects' references to "
-"the Dictionary will be invalidated. Conversely, Resources will not be freed "
-"from memory until *all* the objects are deleted."
-msgstr ""
-"Ресурси та словники передаються за посиланням, але враховуються лише "
-"Ресурси. Це означає, що якщо Словник буде передано між об'єктами, і перший "
-"об'єкт буде видалений, всі інші посилання об'єктів на Словник будуть визнані "
-"недійсними. І навпаки, ресурси не будуть звільнені з пам'яті, поки *всі* "
-"об'єкти не будуть видалені."
-
-#: ../../docs/getting_started/step_by_step/resources.rst:215
+#: ../../docs/getting_started/step_by_step/resources.rst:183
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr "Godot дозволяє легко створювати власні ресурси в Інспекторі."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:217
+#: ../../docs/getting_started/step_by_step/resources.rst:185
 #, fuzzy
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
@@ -410,12 +395,12 @@ msgstr ""
 "Створіть звичайний об'єкт Resource в інспекторі. Це навіть може бути тип, "
 "який походить від ресурса, якщо ваш скрипт розширює цей тип."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:218
+#: ../../docs/getting_started/step_by_step/resources.rst:186
 #, fuzzy
 msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr "Встановіть властивість ``script`` в Інспекторі для вашого скрипту."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:220
+#: ../../docs/getting_started/step_by_step/resources.rst:188
 #, fuzzy
 msgid ""
 "The Inspector will now display your Resource script's custom properties. If "
@@ -428,7 +413,7 @@ msgstr ""
 "властивості! Щоб зберегти ресурс у Інспекторі, натисніть меню інструментів "
 "Інспектора (вгорі праворуч) та виберіть \"Зберегти\" або \"Зберегти як ...\"."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:225
+#: ../../docs/getting_started/step_by_step/resources.rst:193
 #, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
@@ -443,12 +428,12 @@ msgstr ""
 "вікна створення . Це автоматично додасть ваш скрипт до створеного вами "
 "об'єкта Resource."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:230
+#: ../../docs/getting_started/step_by_step/resources.rst:198
 #, fuzzy
 msgid "Let's see some examples."
 msgstr "Декілька прикладів:"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:303
+#: ../../docs/getting_started/step_by_step/resources.rst:271
 #, fuzzy
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
@@ -463,7 +448,7 @@ msgstr ""
 "комбінувати їх з :ref:`EditorPlugin <class_EditorPlugin>`, щоб створити "
 "власні візуалізації та редактори для своїх даних."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:309
+#: ../../docs/getting_started/step_by_step/resources.rst:277
 #, fuzzy
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
@@ -475,7 +460,7 @@ msgstr ""
 "(строка, текст), відображений у користувацькій структурі, подібно до "
 "словника, що відображає рядок у вторинному скрипті користувацького ресурсу."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:345
+#: ../../docs/getting_started/step_by_step/resources.rst:313
 #, fuzzy
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
@@ -484,7 +469,7 @@ msgstr ""
 "Замість того, щоб просто вписати значення Словника, можна також "
 "альтернативно…"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:347
+#: ../../docs/getting_started/step_by_step/resources.rst:315
 #, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
@@ -493,7 +478,7 @@ msgstr ""
 "Імпортувати таблицю значень із електронної таблиці та згенерувати пари ключ-"
 "значення або…"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:349
+#: ../../docs/getting_started/step_by_step/resources.rst:317
 #, fuzzy
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
@@ -502,7 +487,7 @@ msgstr ""
 "Створити візуалізацію в редакторі та створити простий плагін, який додасть "
 "його в Інспектор, коли ви відкриєте ці типи ресурсів."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:352
+#: ../../docs/getting_started/step_by_step/resources.rst:320
 #, fuzzy
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
@@ -512,7 +497,7 @@ msgstr ""
 "значень, або об'єкта ресурсу :ref:`Curve <class_Curve>`/:ref:`Curve2D "
 "<class_Curve2D>` ."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:357
+#: ../../docs/getting_started/step_by_step/resources.rst:325
 #, fuzzy
 msgid ""
 "Beware that resource files (\\*.tres/\\*.res) will store the path of the "
@@ -529,7 +514,7 @@ msgstr ""
 "ключового слова ``class`` в GDScript), не буде працювати. Godot не буде "
 "належним чином серіалізувати власні властивості підкласу скрипту."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:363
+#: ../../docs/getting_started/step_by_step/resources.rst:331
 #, fuzzy
 msgid ""
 "In the example below, Godot would load the ``Node`` script, see that it "

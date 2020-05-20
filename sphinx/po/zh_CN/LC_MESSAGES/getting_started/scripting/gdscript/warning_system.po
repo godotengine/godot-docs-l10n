@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:4
+#, fuzzy
+msgid "GDScript warning system"
+msgstr "警告系统"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:6
+#, fuzzy
+msgid ""
+"The GDScript warning system complements :ref:`static typing "
+"<doc_gdscript_static_typing>` (but it can work without static typing too). "
+"It's here to help you avoid mistakes that are hard to spot during "
+"development, and that may lead to runtime errors."
+msgstr ""
+"该警告系统是对类型化的GDScript的补充。它可以帮助您避免开发过程中的难以发现的"
+"错误，以及可能导致运行时错误的错误。"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:11
+#, fuzzy
+msgid ""
+"You can configure warnings in the Project Settings under the section called "
+"**Gdscript**:"
+msgstr "您可以在项目设置的新部分 ``GDScript`` 下配置警告："
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:17
+#, fuzzy
+msgid "Warning system project settings"
+msgstr "警告系统项目设置"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:19
+#, fuzzy
+msgid ""
+"You can find a list of warnings for the active GDScript file in the script "
+"editor's status bar. The example below has 3 warnings:"
+msgstr ""
+"您可以在脚本编辑器的状态栏中找到有关活动GDScript文件的警告列表。下面的示例有3"
+"条警告："
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:25
+#, fuzzy
+msgid "Warning system example"
+msgstr "警告系统示例"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:27
+#, fuzzy
+msgid ""
+"To ignore specific warnings in one file, insert a special comment of the "
+"form ``# warning-ignore:warning-id``, or click on the ignore link to the "
+"right of the warning's description. Godot will add a comment above the "
+"corresponding line and the code won't trigger the corresponding warning "
+"anymore:"
+msgstr ""
+"要忽略一个文件中的特定警告，请插入 ``#warning-ignore:warning-id`` 形式的特殊"
+"注释，或点击警告说明右侧的忽略链接。Godot将在相应的行上方添加注释，并且该代码"
+"将不再触发相应的警告："
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:36
+#, fuzzy
+msgid "Warning system ignore example"
+msgstr "警告系统忽略示例"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:38
+#, fuzzy
+msgid ""
+"You can also choose to ignore not just one but all warnings of a certain "
+"type in this file with ``# warning-ignore-all:warning-id``. To ignore all "
+"warnings of all types in a file add the comment ``# warnings-disable`` to it."
+msgstr ""
+"你可以选择使用``# warning-ignore-all:warning-id``忽略文件中一个或所有的针对某"
+"些类型的警告。要忽略所有类型的警告则在文件中添加 ``# warnings-disable``即可。"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:42
+#, fuzzy
+msgid ""
+"Warnings won't prevent the game from running, but you can turn them into "
+"errors if you'd like. This way your game won't compile unless you fix all "
+"warnings. Head to the ``GDScript`` section of the Project Settings to turn "
+"on this option. Here's the same file as the previous example with warnings "
+"as errors turned on:"
+msgstr ""
+"警告不会阻止游戏的运行，但是您可以根据需要将其转换为错误。这样，除非您修复所"
+"有警告，否则游戏无法编译。前往项目设置的 ``GDScript`` 部分打开此选项。这是与"
+"前一个示例相同的文件，并在启用了警告转成错误："
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:51
+#, fuzzy
+msgid "Warnings as errors"
+msgstr "警告当作错误"

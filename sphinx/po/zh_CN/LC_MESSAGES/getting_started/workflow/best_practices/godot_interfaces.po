@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,11 +96,11 @@ msgstr ""
 msgid "Nodes likewise have an alternative access point: the SceneTree."
 msgstr "节点也有一个可选的访问点：场景树。"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:242
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
 msgid "Accessing data or logic from an object"
 msgstr "从对象访问数据或逻辑"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:246
 msgid ""
 "Godot's scripting API is duck-typed. This means that if a script executes an "
 "operation, Godot doesn't validate that it supports the operation by "
@@ -110,7 +110,7 @@ msgstr ""
 "Godot的脚本API是鸭子类型。这意味着，如果脚本执行操作，则Godot不会通过 **类型"
 "** 验证其是否支持该操作。相反，它检查对象是否 **实现** 了单个方法。"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:248
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:250
 msgid ""
 "For example, the :ref:`CanvasItem <class_CanvasItem>` class has a "
 "``visible`` property. All properties exposed to the scripting API are in "
@@ -123,7 +123,7 @@ msgstr ""
 "有人试图访问 :ref:`CanvasItem.visible <class_CanvasItem_property_visible>`，"
 "那么Godot会按照以下顺序进行检查："
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:254
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:256
 msgid ""
 "If the object has a script attached, it will attempt to set the property "
 "through the script. This leaves open the opportunity for scripts to override "
@@ -133,7 +133,7 @@ msgstr ""
 "如果对象附加了脚本，它将尝试通过脚本设置属性。通过覆盖属性的 ``setter`` 方"
 "法，这为脚本提供了覆盖基础对象上定义的属性的机会。"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:259
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:261
 msgid ""
 "If the script does not have the property, it performs a HashMap lookup in "
 "the ClassDB for the \"visible\" property against the CanvasItem class and "
@@ -146,7 +146,7 @@ msgstr ""
 "``getter``。有关哈希表的更多信息，参见 :ref:`数据偏好 "
 "<doc_data_preferences>` 文档。"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:265
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:267
 msgid ""
 "If not found, it does an explicit check to see if the user wants to access "
 "the \"script\" or \"meta\" properties."
@@ -154,7 +154,7 @@ msgstr ""
 "如果没有找到，它会进行显式检查，以查看用户是否要访问 ``script`` 或 ``meta`` "
 "属性。"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:268
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:270
 msgid ""
 "If not, it checks for a ``_set``/``_get`` implementation (depending on type "
 "of access) in the CanvasItem and its inherited types. These methods can "
@@ -165,7 +165,7 @@ msgstr ""
 "（取决于访问类型）。这些方法可以执行逻辑，从而给人一种对象具有属性的印象。"
 "``_get_property_list`` 方法也是如此。"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:273
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:275
 msgid ""
 "Note that this happens even for non-legal symbol names such as in the case "
 "of :ref:`TileSet <class_TileSet>`'s \"1/tile_name\" property. This refers to "
@@ -176,7 +176,7 @@ msgstr ""
 "tile_name`` 属性，这种情况也会发生。这是指ID为1的 ``tile`` 的名称，即 :ref:"
 "`TileSet.tile_get_name(1) <class_TileSet_method_tile_get_name>`。"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:278
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:280
 msgid ""
 "As a result, this duck-typed system can locate a property either in the "
 "script, the object's class, or any class that object inherits, but only for "
@@ -185,13 +185,13 @@ msgstr ""
 "因此，这个鸭子类型的系统可以在脚本、对象的类、或对象继承的任何类、但只能用于"
 "扩展Object的对象中，定位属性。"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:282
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:284
 msgid ""
 "Godot provides a variety of options for performing runtime checks on these "
 "accesses:"
 msgstr "Godot提供了多种选项，来对这些访问，执行运行时检查："
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:285
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:287
 msgid ""
 "A duck-typed property access. These will property check (as described "
 "above). If the operation isn't supported by the object, execution will halt."
@@ -199,7 +199,7 @@ msgstr ""
 "鸭子类型属性的访问。这些将进行属性检查（如上所述）。如果对象不支持该操作，则"
 "执行将停止。"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:313
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:315
 msgid ""
 "A method check. In the case of :ref:`CanvasItem.visible "
 "<class_CanvasItem_property_visible>`, one can access the methods, "
@@ -209,7 +209,7 @@ msgstr ""
 "<class_CanvasItem_property_visible>` 的情况下，我们可以像访问任何其他方法一"
 "样，访问这些方法，``set_visible`` 和 ``is_visible`` 。"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:445
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:447
 msgid ""
 "Outsource the access to a :ref:`FuncRef <class_FuncRef>`. These may be "
 "useful in cases where one needs the max level of freedom from dependencies. "
@@ -219,7 +219,7 @@ msgstr ""
 "的情况下，这些方法可能会很有用。在这种情况下，需要依靠外部上下文来设置此方"
 "法。"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:504
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:506
 msgid ""
 "These strategies contribute to Godot's flexible design. Between them, users "
 "have a breadth of tools to meet their specific needs."

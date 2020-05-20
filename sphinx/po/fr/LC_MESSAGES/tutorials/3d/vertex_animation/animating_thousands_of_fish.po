@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,10 +99,10 @@ msgstr ""
 "En général, on utilise des os (bones) et un squelette (:ref:`Skeleton "
 "<class_Skeleton>`) pour animer des objets. Cependant, les os sont animés par "
 "le CPU et vous vous retrouvez avec des milliers d'opérations à calculer à "
-"chaque image et il devient impossible d'avoir des milliers d'objets.\n"
-"En utilisant l'animation de points dans un «shader de sommets» (vertex "
-"shader), vous évitez l'utilisation des os et pouvez donc calculer "
-"l'animation complète en quelques lignes de code et entièrement sur le GPU."
+"chaque image et il devient impossible d'avoir des milliers d'objets. En "
+"utilisant l'animation de points dans un shader de sommets (vertex shader), "
+"vous évitez l'utilisation des os et pouvez donc calculer l'animation "
+"complète en quelques lignes de code et entièrement sur le GPU."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:37
 msgid "The animation will be made of four key motions:"
@@ -305,7 +305,6 @@ msgstr ""
 "limitera à la moitié arrière."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:163
-#, fuzzy
 msgid ""
 "In order to apply the mask to the twist, we use ``mix``. ``mix`` allows us "
 "to mix the vertex position between a fully rotated vertex and one that is "
@@ -533,7 +532,6 @@ msgstr ""
 "la même façon que vous avez changé la valeur personnalisé par instance."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:269
-#, fuzzy
 msgid ""
 "One problem that you will run into at this point is that the fish are "
 "animated, but they are not moving. You can move them by updating the per-"
@@ -545,7 +543,7 @@ msgstr ""
 "ont une animation, mais ils ne bougent pas. Vous pouvez les déplacer en "
 "mettant à jour la transformation par instance pour chaque poisson. "
 "Cependant, même si faire cela est plus rapide que déplacer des milliers de "
-"MeshInstances par image, il est probable que ça soit plus lent."
+"MeshInstances par image, il est probable que ça soit tout de même lent."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:274
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,7 +176,8 @@ msgstr ""
 "있어서 슬라이드 행동을 커스터마이징 할 수 있습니다:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:73
-msgid "``floor_normal`` - *default value:* ``Vector2( 0, 0 )``"
+#, fuzzy
+msgid "``up_direction`` - *default value:* ``Vector2( 0, 0 )``"
 msgstr "``floor_normal`` - *기본 값:* ``Vector2( 0, 0 )``"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:75
@@ -194,23 +195,24 @@ msgstr ""
 "본 값으로 모든 표면은 벽으로 간주되는 것을 뜻합니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:80
-msgid "``slope_stop_min_velocity`` - *default value:* ``5``"
+#, fuzzy
+msgid "``stop_on_slope`` - *default value:* ``false``"
 msgstr "``slope_stop_min_velocity`` - *기본 값:* ``5``"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:82
 #, fuzzy
 msgid ""
-"This parameter is the minimum velocity required to move when standing on a "
-"slope. It prevents a body from sliding down when standing still."
+"This parameter prevents a body from sliding down slopes when standing still."
 msgstr ""
 "이것은 경사면에 서있을 수 있는 최소 속도입니다. 이것으로 서있는 상태일 때 바"
 "디가 경사면에 미끄러져 내려가는 것을 방지합니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:85
-msgid "``max_bounces`` - *default value:* ``4``"
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:84
+#, fuzzy
+msgid "``max_slides`` - *default value:* ``4``"
 msgstr "``max_bounces`` - *기본 값:* ``4``"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:87
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:86
 #, fuzzy
 msgid ""
 "This parameter is the maximum number of collisions before the body stops "
@@ -219,7 +221,7 @@ msgstr ""
 "이것은 바디가 멈추기 전 충돌의 최대 수입니다. 너무 낮게 설정하면 움직임이 완"
 "전히 차단될 수 있습니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:90
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:89
 msgid ""
 "``floor_max_angle`` - *default value:* ``0.785398`` (in radians, equivalent "
 "to ``45`` degrees)"
@@ -227,24 +229,38 @@ msgstr ""
 "``floor_max_angle`` - *기본 값:* ``0.785398`` (라디안에서는, ``45``\\ 도와 같"
 "습니다)"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:92
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:91
 #, fuzzy
 msgid ""
 "This parameter is the maximum angle before a surface is no longer considered "
 "a \"floor.\""
 msgstr "이것은 표면이 더 이상 \"바닥\"으로 인식되지 않는 최대 각도입니다."
 
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:93
+#, fuzzy
+msgid "``infinite_inertia`` - *default value:* ``true``"
+msgstr "``max_bounces`` - *기본 값:* ``4``"
+
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:95
+msgid ""
+"When this parameter is ``true``, the body can push :ref:`RigidBody2D "
+"<class_RigidBody2D>` nodes, ignoring their mass, but won't detect collisions "
+"with them. If it's ``false`` the body will collide with rigid bodies and "
+"stop."
+msgstr ""
+
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:100
 msgid "``move_and_slide_with_snap``"
 msgstr "``move_and_slide_with_snap``"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:97
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:102
+#, fuzzy
 msgid ""
 "This method adds some additional functionality to ``move_and_slide()`` by "
 "adding the ``snap`` parameter. As long as this vector is in contact with the "
 "ground, the body will remain attached to the surface. Note that this means "
 "you must disable snapping when jumping, for example. You can do this either "
-"by setting ``snap`` to ``Vector2(0, 0)`` or by using ``move_and_slide()`` "
+"by setting ``snap`` to ``Vector2.ZERO`` or by using ``move_and_slide()`` "
 "instead."
 msgstr ""
 "이 메서드는 ``move_and_slide()``\\ 에 ``snap`` 매개변수를 넣어 추가적인 기능"
@@ -253,12 +269,12 @@ msgstr ""
 "을 ``Vector2(0, 0)``\\ 로 설정하거나 ``move_and_slide()``\\ 를 사용하면 됩니"
 "다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:105
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:110
 #, fuzzy
 msgid "Detecting collisions"
 msgstr "충돌 준비하기"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:107
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:112
 #, fuzzy
 msgid ""
 "When using ``move_and_collide()`` the function returns a "
@@ -268,14 +284,14 @@ msgstr ""
 "가 포함된 :ref:`KinematicCollision2D <class_KinematicCollision2D>` 객체를 반"
 "환합니다. 이 정보를 사용하여 응답을 확인할 수 있습니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:110
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:115
 msgid ""
 "When using ``move_and_slide()`` it's possible to have multiple collisions "
 "occur, as the slide response is calculated. To process these collisions, use "
 "``get_slide_count()`` and ``get_slide_collision()``:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:128
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:133
 #, fuzzy
 msgid ""
 "See :ref:`KinematicCollision2D <class_KinematicCollision2D>` for details on "
@@ -284,11 +300,11 @@ msgstr ""
 "파티클 이펙트를 사용하는 더 많은 정보는 :ref:`Particles2D "
 "<class_Particles2D>` 를 참고하세요."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:132
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:137
 msgid "Which movement method to use?"
 msgstr "어떤 이동 메서드를 사용해야 할까요?"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:134
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:139
 #, fuzzy
 msgid ""
 "A common question from new Godot users is: \"How do you decide which "
@@ -305,7 +321,7 @@ msgstr ""
 "``move_and_collide()``\\ 는 더 일반적인 것입니다. 예를 들어 두 개의 코드 단문"
 "은 값은 충돌 응답 결과가 나타납니다:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:165
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:170
 msgid ""
 "Anything you do with ``move_and_slide()`` can also be done with "
 "``move_and_collide()``, but it might take a little more code. However, as "
@@ -316,7 +332,7 @@ msgstr ""
 "니다, 하지만 좀 더 많은 코드를 갖습니다. 하지만 아래에서 예제를 보면, "
 "``move_and_slide()``\\ 가 원하는 응답을 제공하지 않는 경우도 있습니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:169
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:174
 msgid ""
 "In the example above, we assign the velocity that ``move_and_slide()`` "
 "returns back into the ``velocity`` variable. This is because when the "
@@ -324,14 +340,14 @@ msgid ""
 "internally to reflect the slowdown."
 msgstr ""
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:174
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:179
 msgid ""
 "For example, if your character fell on the floor, you don't want it to "
 "accumulate vertical speed due to the effect of gravity. Instead, you want "
 "its vertical speed to reset to zero."
 msgstr ""
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:178
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:183
 msgid ""
 "``move_and_slide()`` may also recalculate the kinematic body's velocity "
 "several times in a loop as, to produce a smooth motion, it moves the "
@@ -340,11 +356,11 @@ msgid ""
 "in our ``velocity`` variable, and use on the next frame."
 msgstr ""
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:185
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:190
 msgid "Examples"
 msgstr "예제"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:187
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:192
 msgid ""
 "To see these examples in action, download the sample project: :download:"
 "`using_kinematic2d.zip <files/using_kinematic2d.zip>`."
@@ -352,18 +368,18 @@ msgstr ""
 "실제 예제를 보기 위해, 샘플 프로젝트를 다운로드 하세요: :download:"
 "`using_kinematic2d.zip <files/using_kinematic2d.zip>`."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:191
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:196
 msgid "Movement and walls"
 msgstr "이동과 벽"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:193
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:198
 msgid ""
 "If you've downloaded the sample project, this example is in \"BasicMovement."
 "tscn\"."
 msgstr ""
 "샘플 프로젝트를 다운로드 했다면, 이 예제는 \"BasicMovement.tscn\"입니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:195
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:200
 msgid ""
 "For this example, add a ``KinematicBody2D`` with two children: a ``Sprite`` "
 "and a ``CollisionShape2D``. Use the Godot \"icon.png\" as the Sprite's "
@@ -378,16 +394,16 @@ msgstr ""
 "RectangleShape2D\"를 선택하고 스프라이트 이미지에 맞게 사각형 크기를 조정합니"
 "다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:201
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:206
 msgid ""
 "See :ref:`doc_2d_movement` for examples of implementing 2D movement schemes."
 msgstr "2D 이동 구조를 구현하는 예제는 :ref:`doc_2d_movement`\\ 를 참고하세요."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:203
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:208
 msgid "Attach a script to the KinematicBody2D and add the following code:"
 msgstr "KinematicBody2D에 스크립트를 붙이고 다음의 코드를 추가하세요:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:266
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:271
 msgid ""
 "Run this scene and you'll see that ``move_and_collide()`` works as expected, "
 "moving the body along the velocity vector. Now let's see what happens when "
@@ -401,7 +417,7 @@ msgstr ""
 "추가합니다. 가시성을 위해, 스프라이트, Polygon2D, 혹은 \"디버그\" 메뉴에서 "
 "\"충돌 모양 보이기\"를 키면 됩니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:272
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:277
 msgid ""
 "Run the scene again and try moving into the obstacle. You'll see that the "
 "``KinematicBody2D`` can't penetrate the obstacle. However, try moving into "
@@ -412,7 +428,7 @@ msgstr ""
 "통과하지 못하는 것을 볼 수 있습니다. 하지만 장애물 안으로 움직이려고 하면 장"
 "애물이 풀처럼 행동하는 것을 찾을 수 있습니다 - 바디가 끼어있는 느낌이 듭니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:276
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:281
 msgid ""
 "This happens because there is no *collision response*. "
 "``move_and_collide()`` stops the body's movement when a collision occurs. We "
@@ -422,7 +438,7 @@ msgstr ""
 "\\ 는 충돌이 발생할 때 바디의 움직임을 멈춥니다. 충돌로부터 원하는 어떤 응답"
 "이라도 코딩해야 합니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:280
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:285
 msgid ""
 "Try changing the function to ``move_and_slide(velocity)`` and running again. "
 "Note that we removed ``delta`` from the velocity calculation."
@@ -430,7 +446,7 @@ msgstr ""
 "함수를 ``move_and_slide(velocity)``\\ 로 변경하고 다시 실행합니다. 우리는 속"
 "도 계산에서 ``delta``\\ 를 제거했습니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:283
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:288
 msgid ""
 "``move_and_slide()`` provides a default collision response of sliding the "
 "body along the collision object. This is useful for a great many game types, "
@@ -440,11 +456,11 @@ msgstr ""
 "을 제공합니다. 이것은 아주 많은 게임 유형에 유용하고, 원하는 행동을 얻을 때 "
 "필요할 수도 있습니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:288
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:293
 msgid "Bouncing/reflecting"
 msgstr "튕김/반사"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:290
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:295
 msgid ""
 "What if you don't want a sliding collision response? For this example "
 "(\"BounceandCollide.tscn\" in the sample project), we have a character "
@@ -454,7 +470,7 @@ msgstr ""
 "는 \"BounceandCollide.tscn\") 이 예제의 경우, 총을 쏘는 캐릭터가 있고 총알이 "
 "벽에 튕겨 나가게 하고 싶습니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:294
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:299
 msgid ""
 "This example uses three scenes. The main scene contains the Player and "
 "Walls. The Bullet and Wall are separate scenes so that they can be instanced."
@@ -462,7 +478,7 @@ msgstr ""
 "이 예제는 세 개의 씬을 사용합니다. 메인 씬은 Player와 Wall을 갖고 있습니다. "
 "Bullet과 Wall은 분리된 씬으로 그들은 인스턴스 할 수 있습니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:297
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:302
 msgid ""
 "The Player is controlled by the `w` and `s` keys for forward and back. "
 "Aiming uses the mouse pointer. Here is the code for the Player, using "
@@ -471,11 +487,11 @@ msgstr ""
 "Player는 `w`\\ 와 `s`\\ 키로 조작하며 각각 앞뒤로 움직입니다. 마우스로 조준합"
 "니다. 이것이 ``move_and_slide()``\\ 를 사용하는 Player 코드입니다:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:384
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:389
 msgid "And the code for the Bullet:"
 msgstr "그리고 Bullet을 위한 코드입니다:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:446
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:451
 msgid ""
 "The action happens in ``_physics_process()``. After using "
 "``move_and_collide()``, if a collision occurs, a ``KinematicCollision2D`` "
@@ -485,7 +501,7 @@ msgstr ""
 "사용한 이후, 충돌이 발생하면, ``KinematicCollision2D`` 객체는 반환됩니다 (그"
 "렇지 않으면, ``Nil``\\ 을 반환합니다)."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:450
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:455
 msgid ""
 "If there is a returned collision, we use the ``normal`` of the collision to "
 "reflect the bullet's ``velocity`` with the ``Vector2.bounce()`` method."
@@ -493,7 +509,7 @@ msgstr ""
 "반환된 충돌이 있다면, 우리는 충돌의 ``normal``\\ 을 사용해 ``Vector2."
 "bounce()`` 메서드로 총알의 ``velocity``\\ 를 반사합니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:453
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:458
 msgid ""
 "If the colliding object (``collider``) has a ``hit`` method, we also call "
 "it. In the example project, we've added a flashing color effect to the Wall "
@@ -503,11 +519,11 @@ msgstr ""
 "다. 예제 프로젝트에서는, 이를 설명하기 위해 Wall에 반짝이는 색상 효과를 추가"
 "했습니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:460
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:465
 msgid "Platformer movement"
 msgstr "플랫포머 움직임"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:462
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:467
 msgid ""
 "Let's try one more popular example: the 2D platformer. ``move_and_slide()`` "
 "is ideal for quickly getting a functional character controller up and "
@@ -519,7 +535,7 @@ msgstr ""
 "적입니다. 샘플 프로젝트를 다운로드 했다면, \"Platformer.tscn\"에서 이것을 찾"
 "을 수 있습니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:466
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:471
 msgid ""
 "For this example, we'll assume you have a level made of ``StaticBody2D`` "
 "objects. They can be any shape and size. In the sample project, we're using :"
@@ -529,11 +545,11 @@ msgstr ""
 "떤 모양이나 크기가 될 수 있습니다. 샘플 프로젝트에서, 우리는 플랫폼 모양을 만"
 "들기 위해 :ref:`Polygon2D <class_Polygon2D>`\\ 를 사용합니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:470
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:475
 msgid "Here's the code for the player body:"
 msgstr "플레이어 바디를 위한 코드입니다:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:551
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:556
 #, fuzzy
 msgid ""
 "When using ``move_and_slide()``, the function returns a vector representing "
@@ -547,7 +563,7 @@ msgstr ""
 "드럽게 위 아래 경사면을 움직입니다. ``velocity =``\\ 를 삭제하고 이것을 하지 "
 "않으면 어떤 일이 발생하는 지 봅시다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:556
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:561
 #, fuzzy
 msgid ""
 "Also note that we've added ``Vector2(0, -1)`` as the floor normal. This "
@@ -558,7 +574,7 @@ msgstr ""
 "쪽으로 향하게 합니다. 즉 캐릭터가 이 노멀을 가진 객체와 충돌하면, 바닥으로 인"
 "식할 것입니다."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:560
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:565
 #, fuzzy
 msgid ""
 "Using the floor normal allows us to make jumping work, using "
@@ -572,7 +588,7 @@ msgstr ""
 "닥 벡터의 45도 이내라면 항상 ``참``\\ 을 반환합니다 (``floor_max_angle``\\ "
 "을 설정해서 조정할 수 있습니다)."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:565
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:570
 #, fuzzy
 msgid ""
 "This angle also allows you to implement other features like wall jumps using "

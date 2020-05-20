@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,10 +43,10 @@ msgstr "これにより、オブジェクトは、例えば、多くの機能を
 
 #: ../../docs/development/cpp/object_class.rst:31
 #: ../../docs/development/cpp/object_class.rst:89
-#: ../../docs/development/cpp/object_class.rst:252
-#: ../../docs/development/cpp/object_class.rst:268
-#: ../../docs/development/cpp/object_class.rst:289
-#: ../../docs/development/cpp/object_class.rst:308
+#: ../../docs/development/cpp/object_class.rst:254
+#: ../../docs/development/cpp/object_class.rst:270
+#: ../../docs/development/cpp/object_class.rst:291
+#: ../../docs/development/cpp/object_class.rst:310
 msgid "References:"
 msgstr "リファレンス:"
 
@@ -255,12 +255,12 @@ msgstr ""
 msgid "This creates the property using the setter and the getter."
 msgstr "これにより、セッターとゲッターを使用してプロパティが作成されます。"
 
-#: ../../docs/development/cpp/object_class.rst:173
+#: ../../docs/development/cpp/object_class.rst:175
 msgid "Binding properties using ``_set``/``_get``/``_get_property_list``"
 msgstr ""
 "``_set``/``_get``/``_get_property_list`` を使用してプロパティをバインドします"
 
-#: ../../docs/development/cpp/object_class.rst:175
+#: ../../docs/development/cpp/object_class.rst:177
 msgid ""
 "An additional method of creating properties exists when more flexibility is "
 "desired (i.e. adding or removing properties on context)."
@@ -268,7 +268,7 @@ msgstr ""
 "より柔軟な必要がある場合(つまり、コンテキスト上のプロパティの追加または削除)"
 "に、プロパティを作成する追加の方法が存在します。"
 
-#: ../../docs/development/cpp/object_class.rst:178
+#: ../../docs/development/cpp/object_class.rst:180
 msgid ""
 "The following functions can be overridden in an Object derived class, they "
 "are NOT virtual, DO NOT make them virtual, they are called for every "
@@ -278,7 +278,7 @@ msgstr ""
 "りません。仮想にしないでください。オーバーライドのたびに呼び出され、前の関数"
 "は無効になりません(多重レベル呼出し)。"
 
-#: ../../docs/development/cpp/object_class.rst:190
+#: ../../docs/development/cpp/object_class.rst:192
 msgid ""
 "This is also a little less efficient since ``p_property`` must be compared "
 "against the desired names in serial order."
@@ -286,16 +286,16 @@ msgstr ""
 "また、 ``p_property`` を必要な名前と順番に比較しなければならないため、これは"
 "少し効率が悪くなります。"
 
-#: ../../docs/development/cpp/object_class.rst:194
+#: ../../docs/development/cpp/object_class.rst:196
 msgid "Dynamic casting"
 msgstr "動的キャスト"
 
-#: ../../docs/development/cpp/object_class.rst:196
+#: ../../docs/development/cpp/object_class.rst:198
 msgid ""
 "Godot provides dynamic casting between Object-derived classes, for example:"
 msgstr "Godotは、オブジェクト派生クラス間の動的キャストを提供します。例:"
 
-#: ../../docs/development/cpp/object_class.rst:206
+#: ../../docs/development/cpp/object_class.rst:208
 msgid ""
 "If cast fails, NULL is returned. This system uses RTTI, but it also works "
 "fine (although a bit slower) when RTTI is disabled. This is useful on "
@@ -307,11 +307,11 @@ msgstr ""
 "これは、HTML5 やコンソール (メモリ使用量が少ない) など、バイナリ サイズが小さ"
 "いプラットフォームで便利です。"
 
-#: ../../docs/development/cpp/object_class.rst:212
+#: ../../docs/development/cpp/object_class.rst:214
 msgid "Signals"
 msgstr "シグナル"
 
-#: ../../docs/development/cpp/object_class.rst:214
+#: ../../docs/development/cpp/object_class.rst:216
 msgid ""
 "Objects can have a set of signals defined (similar to Delegates in other "
 "languages). Connecting to them is rather easy:"
@@ -319,7 +319,7 @@ msgstr ""
 "オブジェクトは、一連のシグナルを定義できます(他の言語のデリゲートと同様)。そ"
 "れらに接続する方がかなり簡単です:"
 
-#: ../../docs/development/cpp/object_class.rst:223
+#: ../../docs/development/cpp/object_class.rst:225
 msgid ""
 "The method ``_node_entered_tree`` must be registered to the class using "
 "``ClassDB::register_method`` (explained before)."
@@ -327,7 +327,7 @@ msgstr ""
 "メソッド ``_node_entered_tree`` は、 ``ClassDB::register_method`` を使用して"
 "クラスに登録する必要があります(前に説明しました)。"
 
-#: ../../docs/development/cpp/object_class.rst:226
+#: ../../docs/development/cpp/object_class.rst:228
 msgid ""
 "Adding signals to a class is done in ``_bind_methods``, using the "
 "``ADD_SIGNAL`` macro, for example:"
@@ -335,11 +335,11 @@ msgstr ""
 "クラスへのシグナルの追加は ``_bind_methods`` で行われ、``ADD_SIGNAL`` マクロ"
 "を使用します。例:"
 
-#: ../../docs/development/cpp/object_class.rst:234
+#: ../../docs/development/cpp/object_class.rst:236
 msgid "References"
 msgstr "参照"
 
-#: ../../docs/development/cpp/object_class.rst:236
+#: ../../docs/development/cpp/object_class.rst:238
 msgid ""
 ":ref:`Reference <class_reference>` inherits from Object and holds a "
 "reference count. It is the base for reference counted object types. "
@@ -349,7 +349,7 @@ msgstr ""
 "を保持します。参照カウントオブジェクトタイプのベースです。これらの宣言は、"
 "Ref<> template を使用して行う必要があります。例:"
 
-#: ../../docs/development/cpp/object_class.rst:248
+#: ../../docs/development/cpp/object_class.rst:250
 msgid ""
 "``myref`` is reference counted. It will be freed when no more Ref<> "
 "templates point to it."
@@ -357,7 +357,7 @@ msgstr ""
 "``myref`` は参照カウントされます。Ref<>templates が参照を指定しなくなったとき"
 "に解放されます。"
 
-#: ../../docs/development/cpp/object_class.rst:254
+#: ../../docs/development/cpp/object_class.rst:256
 msgid ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
 "reference.h>`__"
@@ -365,11 +365,11 @@ msgstr ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
 "reference.h>`_"
 
-#: ../../docs/development/cpp/object_class.rst:257
+#: ../../docs/development/cpp/object_class.rst:259
 msgid "Resources:"
 msgstr "リソース:"
 
-#: ../../docs/development/cpp/object_class.rst:259
+#: ../../docs/development/cpp/object_class.rst:261
 msgid ""
 ":ref:`Resource <class_resource>` inherits from Reference, so all resources "
 "are reference counted. Resources can optionally contain a path, which "
@@ -383,11 +383,11 @@ msgstr ""
 "できます。 これは通常、リソースローダーによって行われます。 2つの異なるリソー"
 "スが同じパスを持つことはできません。そうしようとするとエラーになります。"
 
-#: ../../docs/development/cpp/object_class.rst:265
+#: ../../docs/development/cpp/object_class.rst:267
 msgid "Resources without a path are fine too."
 msgstr "パスのないリソースも問題ありません。"
 
-#: ../../docs/development/cpp/object_class.rst:270
+#: ../../docs/development/cpp/object_class.rst:272
 msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
 "resource.h>`__"
@@ -395,16 +395,16 @@ msgstr ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
 "resource.h>`_"
 
-#: ../../docs/development/cpp/object_class.rst:273
+#: ../../docs/development/cpp/object_class.rst:275
 msgid "Resource loading"
 msgstr "リソースの読み込み"
 
-#: ../../docs/development/cpp/object_class.rst:275
+#: ../../docs/development/cpp/object_class.rst:277
 msgid "Resources can be loaded with the ResourceLoader API, like this:"
 msgstr ""
 "リソースは、次のようにResourceLoader APIを使用して読み込むことができます:"
 
-#: ../../docs/development/cpp/object_class.rst:281
+#: ../../docs/development/cpp/object_class.rst:283
 msgid ""
 "If a reference to that resource has been loaded previously and is in memory, "
 "the resource loader will return that reference. This means that there can be "
@@ -414,11 +414,11 @@ msgstr ""
 "はその参照を返します。つまり、ディスク上で参照されているファイルから同時に読"
 "み込まれるリソースは 1 つだけです。"
 
-#: ../../docs/development/cpp/object_class.rst:286
+#: ../../docs/development/cpp/object_class.rst:288
 msgid "resourceinteractiveloader (TODO)"
 msgstr "リソースインタラクティブローダー (TODO)"
 
-#: ../../docs/development/cpp/object_class.rst:291
+#: ../../docs/development/cpp/object_class.rst:293
 msgid ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_loader.h>`__"
@@ -426,15 +426,15 @@ msgstr ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_loader.h>`_"
 
-#: ../../docs/development/cpp/object_class.rst:294
+#: ../../docs/development/cpp/object_class.rst:296
 msgid "Resource saving"
 msgstr "リソースの保存"
 
-#: ../../docs/development/cpp/object_class.rst:296
+#: ../../docs/development/cpp/object_class.rst:298
 msgid "Saving a resource can be done with the resource saver API:"
 msgstr "リソースの保存は、リソースセーバー API を使用して行うことができます:"
 
-#: ../../docs/development/cpp/object_class.rst:302
+#: ../../docs/development/cpp/object_class.rst:304
 msgid ""
 "Instance will be saved. Sub resources that have a path to a file will be "
 "saved as a reference to that resource. Sub resources without a path will be "
@@ -446,7 +446,7 @@ msgstr ""
 "バンドルされ、割り当てられたサブID(「res://someresource.res::1」 など)が割り"
 "当てられます。これは、読み込み時にキャッシュするのにも役立ちます。"
 
-#: ../../docs/development/cpp/object_class.rst:310
+#: ../../docs/development/cpp/object_class.rst:312
 msgid ""
 "`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_saver.h>`__"

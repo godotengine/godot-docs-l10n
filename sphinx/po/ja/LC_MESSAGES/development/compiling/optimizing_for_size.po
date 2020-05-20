@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,11 +115,23 @@ msgstr ""
 "のモジュールや、正規表現サポート、あるいはビデオ再生のためにtheora/webmを残し"
 "ておきたいかもしれません)。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:67
+#: ../../docs/development/compiling/optimizing_for_size.rst:66
+msgid ""
+"Alternatively, you can supply a list of disabled modules by creating "
+"``custom.py`` at the root of the source, with the contents similar to the "
+"following:"
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:110
+#, fuzzy
+msgid ":ref:`doc_overriding_build_options`."
+msgstr "\\ :ref:`doc_gui_containers`"
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:113
 msgid "Optimizing for size instead of speed"
 msgstr "スピードの代わりにサイズを最適化する"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:69
+#: ../../docs/development/compiling/optimizing_for_size.rst:115
 #, fuzzy
 msgid ""
 "Godot 3.1 onwards allows compiling using size optimizations (instead of "
@@ -128,17 +140,17 @@ msgstr ""
 "Godot 3.1以降では、サイズ最適化にてコンパイルすることができます。これを有効に"
 "するには、\\ ``size`` にて ``optimize`` フラグを指定するだけです。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:76
+#: ../../docs/development/compiling/optimizing_for_size.rst:122
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr ""
 "WebAssemblyのようないくつかのプラットフォームでは、標準でこのモードが有効に"
 "なっています。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:79
+#: ../../docs/development/compiling/optimizing_for_size.rst:125
 msgid "Compiling with link-time optimization"
 msgstr "リンク時最適化を使用したコンパイル"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:81
+#: ../../docs/development/compiling/optimizing_for_size.rst:127
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
 "terms of performance and file size. It works by eliminating duplicate "
@@ -149,7 +161,7 @@ msgstr ""
 "り効率的なバイナリが生成されます。重複するテンプレート関数と未使用のコードを"
 "排除することで機能します。現在、GCCおよびMSVCコンパイラで使用できます。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:90
+#: ../../docs/development/compiling/optimizing_for_size.rst:136
 msgid ""
 "Linking becomes much slower with this option, so it should be used only for "
 "release builds."
@@ -157,22 +169,22 @@ msgstr ""
 "このオプションではリンクが非常に遅くなるため、リリースビルドにのみ使用する必"
 "要があります。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:94
+#: ../../docs/development/compiling/optimizing_for_size.rst:140
 msgid "Stripping binaries"
 msgstr "バイナリの除去"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:96
+#: ../../docs/development/compiling/optimizing_for_size.rst:142
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr ""
 "ソースからビルドする場合は、バイナリからデバッグシンボルを削除することを忘れ"
 "ないでください:"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:103
+#: ../../docs/development/compiling/optimizing_for_size.rst:149
 msgid "Using UPX to compress binaries"
 msgstr "UPXを使用してバイナリを圧縮する"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:105
+#: ../../docs/development/compiling/optimizing_for_size.rst:151
 msgid ""
 "If you are targeting desktop platforms, the `UPX <https://upx.github.io/>`_ "
 "compressor can be used. This can reduce binary size considerably."
@@ -181,7 +193,7 @@ msgstr ""
 "github.io/>`_ コンプレッサーを使用できます。これにより、バイナリサイズを大幅"
 "に削減できます。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:109
+#: ../../docs/development/compiling/optimizing_for_size.rst:155
 msgid ""
 "However, keep in mind that some antivirus programs may detect UPX-packed "
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "

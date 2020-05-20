@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,6 @@ msgstr ""
 "la sección :ref:`Scripting <doc_scripting>` del tutorial paso a paso."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:21
-#, fuzzy
 msgid ""
 "C# is a high-level programming language developed by Microsoft. In Godot, it "
 "is implemented with the Mono 6.x .NET framework, including full support for "
@@ -63,8 +62,8 @@ msgid ""
 "documentation."
 msgstr ""
 "C# es un lenguaje de programación de alto nivel desarrollado por Microsoft. "
-"En Godot se implementa con el framework Mono 5.x .NET incluyendo soporte "
-"completo para C# 7.0. Mono es una implementación de código abierto del "
+"En Godot se implementa con el framework .NET Mono 6.x, incluyendo soporte "
+"completo para C# 8.0. Mono es una implementación de código abierto del "
 "Microsoft's .NET Framework basada en los estándares ECMA para C# y Common "
 "Language Runtime. Un buen punto de partida para comprobar sus capacidades es "
 "la página `Compatibilidad <http://www.mono-project.com/docs/about-mono/"
@@ -87,9 +86,8 @@ msgid "Setting up C# for Godot"
 msgstr "Configuración C# para Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:39
-#, fuzzy
 msgid "Windows (Visual Studio)"
-msgstr "Visual Studio Code"
+msgstr "Windows (Visual Studio)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:41
 msgid ""
@@ -113,9 +111,8 @@ msgstr ""
 "individuales\"."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
-#, fuzzy
 msgid "Windows (JetBrains Rider)"
-msgstr "JetBrains Rider"
+msgstr "Windows (JetBrains Rider)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:53
 msgid ""
@@ -124,9 +121,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:56
-#, fuzzy
 msgid "In Godot:"
-msgstr "En Godot 3.1:"
+msgstr "En Godot:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
 msgid "Mono External Editor to JetBrains Rider"
@@ -208,7 +204,6 @@ msgid "Configuring an external editor"
 msgstr "Configuración de un editor externo"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:95
-#, fuzzy
 msgid ""
 "C# support in Godot's script editor is minimal. Consider using an external "
 "IDE or editor, such as  `Visual Studio Code <https://code.visualstudio.com/"
@@ -218,32 +213,30 @@ msgid ""
 "click on **Editor**, and select your external editor of choice. Godot "
 "currently supports the following external editors:"
 msgstr ""
-"El soporte de C# en el editor de scripts de Godot es mínimo. Considera la "
-"posibilidad de utilizar un IDE o editor externo, como `Visual Studio Code "
-"<https://code.visualstudio.com/>`_ o MonoDevelop. Éstos proporcionan "
-"autocompletado, depuración y otras características útiles para C#. Para "
-"seleccionar un editor externo en Godot, haz clic en **Editor → Ajustes del "
-"Editor** y ve hacia abajo hasta **Mono**. En **Mono**, haz clic en "
-"**Editor** y selecciona el editor externo que desees."
+"El soporte de C# en el editor de scripts de Godot es mínimo. Considera "
+"utilizar un IDE o editor externo como `Visual Studio Code <https://code."
+"visualstudio.com/>`_ o MonoDevelop. Estos proporcionan autocompletado, "
+"depuración y otras características útiles para C#. Para seleccionar un "
+"editor externo en Godot, haz clic en **Editor → Ajustes del Editor** y ve "
+"hacia abajo hasta **Mono**. En **Mono**, haz clic en **Editor** y selecciona "
+"el editor externo que desees. Godot soporta actualmente los siguientes "
+"editores externos:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:104
-#, fuzzy
 msgid "Visual Studio 2019"
-msgstr "Visual Studio Code"
+msgstr "Visual Studio 2019"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:105
 msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:106
-#, fuzzy
 msgid "MonoDevelop"
-msgstr "KDevelop"
+msgstr "MonoDevelop"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:107
-#, fuzzy
 msgid "Visual Studio for Mac"
-msgstr "Visual Studio Code"
+msgstr "Visual Studio for Mac"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:108
 msgid "JetBrains Rider"
@@ -255,11 +248,10 @@ msgid ""
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
-"Si está usando Visual Studio Code, asegúrese de descargar e instalar la "
-"extensión de C# \n"
-"<https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp>`_ "
-"para habilitar características como el resaltado de sintaxis y el "
-"autocompletado."
+"Si usas Visual Studio Code, asegúrate de descargar e instalar la extensión "
+"de `C# <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
+"csharp>`_ para habilitar características como el resaltado de sintaxis y el "
+"IntelliSense."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:115
 msgid ""
@@ -381,17 +373,16 @@ msgstr ""
 "`@GDScript <class_@gdscript>` y :ref:`@GlobalScope <class_@globalscope>`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
-#, fuzzy
 msgid ""
 "Keep in mind that the class you wish to attach to your node should have the "
 "same name as the ``.cs`` file. Otherwise, you will get the following error "
 "and won't be able to run the scene: *\"Cannot find class XXX for script "
 "res://XXX.cs\"*"
 msgstr ""
-"Tén en cuenta que la clase que deseas adjuntar a tu nodo debe ser nombrada "
-"como un archivo ``.cs``. De lo contrario, se producirá el siguiente error y "
-"no se podrá ejecutar la escena: *\"Cannot find class XXX for script res://"
-"XXX.cs\"*"
+"Ten en cuenta que la clase que deseas adjuntar a tu nodo debe ser nombrada "
+"igual que el archivo ``.cs``. De lo contrario, se producirá el siguiente "
+"error y no se podrá ejecutar la escena: *\"Cannot find class XXX for script "
+"res://XXX.cs\"*"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:210
 msgid "General differences between C# and GDScript"
@@ -460,19 +451,14 @@ msgstr ""
 "en caliente, con la excepción de las variables exportadas."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:233
-#, fuzzy
 msgid ""
 "Exporting Mono projects is supported for desktop platforms (Linux, Windows "
 "and macOS), Android, HTML5, and iOS. UWP is not currently supported. "
 "(`#20271 <https://github.com/godotengine/godot/issues/20271>`_)."
 msgstr ""
-"La exportación de proyectos Mono sólo es compatible con plataformas de "
-"escritorio (Linux, Windows y macOS). Android, iOS, HTML5 y UWP no son "
-"compatibles actualmente (`#20267 <https://github.com/godotengine/godot/"
-"issues/20267>`_, `#20268 <https://github.com/godotengine/godot/"
-"issues/20268>`_ `#20270 <https://github.com/godotengine/godot/"
-"issues/20270>`_ `#20271 <https://github.com/godotengine/godot/"
-"issues/20271>`_)."
+"La exportación de proyectos Mono soporta plataformas de escritorio (Linux, "
+"Windows y macOS). Android, iOS, HTML5 y UWP no son compatibles actualmente "
+"(`#20271 <https://github.com/godotengine/godot/issues/20271>`_)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:236
 msgid ""
@@ -542,20 +528,19 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:277
-#, fuzzy
 msgid ""
 "Whenever packages are added or modified, run ``nuget restore`` (*not* "
 "``dotnet restore``) in the root of the project directory. To ensure that "
 "NuGet packages will be available for msbuild to use, run:"
 msgstr ""
-"Cada vez que se añadan o modifiquen paquetes, ejecuta ``nuget restore`` en "
-"la raíz del directorio del proyecto. Para asegurarse de que los paquetes "
-"NuGet estén disponibles para ser usados por msbuild, ejecuta:"
+"Cada vez que se añadan o modifiquen paquetes, ejecuta ``nuget restore`` "
+"(*no* ``dotnet restore``) en la raíz del directorio del proyecto. Para "
+"asegurarse de que los paquetes NuGet estén disponibles para ser usados por "
+"msbuild, ejecuta:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:286
-#, fuzzy
 msgid "Profiling your C# code"
-msgstr "Pintando tu mundo"
+msgstr "Evaluando tu código C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:288
 msgid ""

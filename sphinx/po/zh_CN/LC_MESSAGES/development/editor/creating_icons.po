@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,12 @@ msgid "Editor icons"
 msgstr "编辑器图标"
 
 #: ../../docs/development/editor/creating_icons.rst:6
+#, fuzzy
 msgid ""
 "When a new class is created and exposed to scripting, the editor's interface "
 "will display it with a default icon representing the base class it inherits "
-"from. Yet in most cases it is recommended to create icons for new classes to "
-"improve the user experience."
+"from. In most cases, it's still recommended to create icons for new classes "
+"to improve the user experience."
 msgstr ""
 "当创建一个新类并进行脚本编写时，编辑器的界面将使用默认图标显示它，该图标表示"
 "该类继承的基类。但是在大多数情况下，建议为新类创建图标以改善用户体验。"
@@ -80,10 +81,26 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:37
+msgid "Color conversion for light editor themes"
+msgstr ""
+
+#: ../../docs/development/editor/creating_icons.rst:39
+msgid ""
+"If the user has configured their editor to use a light theme, Godot will "
+"convert the icon's colors based on a `set of predefined color mappings "
+"<https://github.com/godotengine/godot/blob/"
+"b9f2e57d6240346f1833fd0390de195c956299e7/editor/editor_themes.cpp#L122-"
+"L184>`__. This is to ensure the icon always displays with a sufficient "
+"contrast rate. Try to restrict your icon's color palette to colors found in "
+"the list above. Otherwise, your icon may become difficult to read on a light "
+"background."
+msgstr ""
+
+#: ../../docs/development/editor/creating_icons.rst:47
 msgid "Icon optimization"
 msgstr "图标优化"
 
-#: ../../docs/development/editor/creating_icons.rst:39
+#: ../../docs/development/editor/creating_icons.rst:49
 #, fuzzy
 msgid ""
 "Because the editor renders SVGs once at load time, they need to be small in "
@@ -93,27 +110,40 @@ msgstr ""
 "因为编辑器是在运行时渲染 ``svg`` 的，所以它们的尺寸必须很小，以便可以有效地对"
 "其进行解析。必须先对编辑器图标进行优化，然后才能将其添加到引擎中："
 
-#: ../../docs/development/editor/creating_icons.rst:43
-msgid "Add them to the ``engine/icons/svg`` folder."
-msgstr "将它们添加到 ``engine/icons/svg`` 文件夹中。"
-
-#: ../../docs/development/editor/creating_icons.rst:45
+#: ../../docs/development/editor/creating_icons.rst:53
 msgid ""
-"Run the ``optimize.py`` script. You must have the ``scour`` package "
-"installed:"
-msgstr "运行 ``optimize.py`` 脚本。您必须安装了 ``scour`` 软件包："
+"Install `svgcleaner <https://github.com/RazrFalcon/svgcleaner>`__ by "
+"downloading a binary from its `Releases tab <https://github.com/RazrFalcon/"
+"svgcleaner/releases/latest>`__ and placing it into a location in your "
+"``PATH`` environment variable."
+msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:52
+#: ../../docs/development/editor/creating_icons.rst:58
 msgid ""
-"The optimized icons will be generated in the ``engine/icons/optimized`` "
-"folder."
-msgstr "优化的图标将在 ``engine/icons/optimized`` 目录中生成。"
+"Run the command below, replacing ``svg_source.svg`` with the path to your "
+"SVG file (which can be a relative or absolute path):"
+msgstr ""
 
-#: ../../docs/development/editor/creating_icons.rst:55
+#: ../../docs/development/editor/creating_icons.rst:65
+msgid ""
+"The ``--multipass`` switch improves compression, so make sure to include it. "
+"The optimized icon will be saved to ``svg_optimized.svg``. You can also "
+"change the destination parameter to any relative or absolute path you'd like."
+msgstr ""
+
+#: ../../docs/development/editor/creating_icons.rst:71
+msgid ""
+"While this optimization step won't impact the icon's quality noticeably, it "
+"will still remove editor-only information such as guides. Therefore, it's "
+"recommended to keep the source SVG around if you need to make further "
+"changes."
+msgstr ""
+
+#: ../../docs/development/editor/creating_icons.rst:77
 msgid "Integrating and sharing the icons"
 msgstr "集成和分享图标"
 
-#: ../../docs/development/editor/creating_icons.rst:57
+#: ../../docs/development/editor/creating_icons.rst:79
 #, fuzzy
 msgid ""
 "If you're contributing to the engine itself, you should make a pull request "
@@ -125,7 +155,7 @@ msgstr ""
 "并后，不要忘记将图标的原始版本添加到 ``godot-design`` 存储库中，以便其他贡献"
 "者可以改进图标。"
 
-#: ../../docs/development/editor/creating_icons.rst:61
+#: ../../docs/development/editor/creating_icons.rst:83
 msgid ""
 "It's also possible to create custom icons within a module. If you're "
 "creating your own module and don't plan to integrate it with Godot, you "
@@ -135,7 +165,7 @@ msgstr ""
 "也可以在模块内创建自定义图标。如果您要创建自己的模块，并且不打算将其与Godot集"
 "成，则不需要单独的拉取请求即可在编辑器中使用图标，因为它们可以独立存在。"
 
-#: ../../docs/development/editor/creating_icons.rst:66
+#: ../../docs/development/editor/creating_icons.rst:88
 msgid ""
 "For specific instructions on how to create module icons, refer to :ref:"
 "`Creating custom module icons<doc_custom_module_icons>`."
@@ -143,20 +173,21 @@ msgstr ""
 "有关如何创建模块图标的特定说明，请参考 :ref:`创建自定义模块图标 "
 "<doc_custom_module_icons>`。"
 
-#: ../../docs/development/editor/creating_icons.rst:70
+#: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
 msgstr "故障排除"
 
-#: ../../docs/development/editor/creating_icons.rst:72
-msgid "If icons don't appear in the editor make sure that:"
+#: ../../docs/development/editor/creating_icons.rst:94
+#, fuzzy
+msgid "If icons don't appear in the editor, make sure that:"
 msgstr "如果图标未出现在编辑器中，请确保："
 
-#: ../../docs/development/editor/creating_icons.rst:74
+#: ../../docs/development/editor/creating_icons.rst:96
 msgid ""
 "Each icon's filename matches the naming requirement as described previously."
 msgstr "每个图标的文件名都符合前面所述的命名要求。"
 
-#: ../../docs/development/editor/creating_icons.rst:76
+#: ../../docs/development/editor/creating_icons.rst:98
 #, fuzzy
 msgid ""
 "``modules/svg`` is enabled (it should be enabled by default). Without it, "
@@ -165,11 +196,11 @@ msgstr ""
 "启用了 ``modules/svg`` （默认情况下应该启用）。没有它，图标将根本不会出现在编"
 "辑器中。"
 
-#: ../../docs/development/editor/creating_icons.rst:80
+#: ../../docs/development/editor/creating_icons.rst:102
 msgid "References"
 msgstr "参考"
 
-#: ../../docs/development/editor/creating_icons.rst:82
+#: ../../docs/development/editor/creating_icons.rst:104
 msgid ""
 "`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
 "icons>`__"

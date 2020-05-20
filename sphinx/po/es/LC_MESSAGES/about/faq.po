@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,11 +94,11 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
-"Para más detalles, revisa los archivos  `COPYRIGHT.txt <https://github.com/"
+"Para más detalles, revisa los archivos `COPYRIGHT.txt <https://github.com/"
 "godotengine/godot/blob/master/COPYRIGHT.txt>`_ al igual que `LICENSE.txt "
 "<https://github.com/godotengine/godot/blob/master/LICENSE.txt>`_ y "
 "`LOGO_LICENSE.txt <https://github.com/godotengine/godot/blob/master/"
-"LOGO_LICENSE.md>`_  en el repositorio de Godot."
+"LOGO_LICENSE.md>`_ en el repositorio de Godot."
 
 #: ../../docs/about/faq.rst:31
 msgid ""
@@ -338,7 +338,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:127
 msgid "What were the motivations behind creating GDScript?"
-msgstr "¿Cuáles fueron las motivaciones para crear GDScript?"
+msgstr "¿Cuáles son las motivaciones detrás de la creación de GDScript?"
 
 #: ../../docs/about/faq.rst:129
 msgid ""
@@ -370,7 +370,6 @@ msgstr ""
 "(Lua, Python, Squirrel, JavaScript, ActionScript, etc.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
@@ -380,7 +379,6 @@ msgstr ""
 "ineficiente (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
@@ -389,7 +387,7 @@ msgid ""
 msgstr ""
 "Muchos lenguajes existentes tienen interfaces horribles para hacer binding a "
 "C++, lo que resulta en una gran cantidad de código, errores, cuellos de "
-"botella e ineficiencia general (Lua, Python, Squirrel, JS, etc.). Queríamos "
+"botella e ineficiente general (Lua, Python, Squirrel, JS, etc.). Queríamos "
 "centrarnos en un gran motor, no en una gran cantidad de integraciones."
 
 #: ../../docs/about/faq.rst:144
@@ -403,7 +401,6 @@ msgstr ""
 "Squirrel, JavaScript, ActionScript, etc.)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
@@ -412,7 +409,6 @@ msgstr ""
 "grande de memoria (Lua, Python, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
@@ -422,7 +418,6 @@ msgstr ""
 "por GDScript."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above, and more."
 msgstr "GDScript fue diseñado para acabar con los problemas anteriores y más."
 
@@ -688,7 +683,6 @@ msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Tengo una idea genial para Godot. ¿Cómo puedo compartirla?"
 
 #: ../../docs/about/faq.rst:259
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -701,8 +695,8 @@ msgid ""
 "community members."
 msgstr ""
 "Puede ser tentador querer proponer ideas para Godot, como las que resultan "
-"en cambios masivos al nucleo, algo como imitar lo que otro motor de juego "
-"hace, o flujos de trabajo que te gustaria implementar en el editor. Estos "
+"en cambios masivos al núcleo, algo como imitar lo que otro motor de juego "
+"hace, o flujos de trabajo que te gustaría implementar en el editor. Estos "
 "son grandiosos y estamos agradecidos de tener gente motivada en querer "
 "contribuir, pero el enfoque de Godot siempre sera la funcionalidad del "
 "nucleo como mencionado en 'el mapa vial<https://github.com/godotengine/godot-"
@@ -891,7 +885,6 @@ msgstr ""
 "a Datos)?"
 
 #: ../../docs/about/faq.rst:327
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "

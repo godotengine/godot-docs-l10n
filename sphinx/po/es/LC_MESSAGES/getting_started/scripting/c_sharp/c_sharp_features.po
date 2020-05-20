@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,13 +71,12 @@ msgid "**Using the AS operator**"
 msgstr "**Utilizando el operador AS**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:38
-#, fuzzy
 msgid ""
 "The ``as`` operator returns ``null`` if the node cannot be cast to Sprite, "
 "and for that reason, it cannot be used with value types."
 msgstr ""
-"El operador ``as`` retorna null si el nodo no puede ser convertido a Sprite, "
-"y por esta razón no puede ser usado en tipos \"valor\"."
+"El operador ``as`` retorna ``null`` si el nodo no puede ser convertido a "
+"Sprite, y por esta razón no puede ser usado en tipos \"valor\"."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid "**Using the generic methods**"
@@ -126,7 +125,7 @@ msgid ""
 "For more advanced type checking, you can look into `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 msgstr ""
-"Para tipos avanzados de comprobaciones, puedes mirar  `Pattern Matching "
+"Para tipos avanzados de comprobaciones, puedes mirar `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
@@ -188,7 +187,7 @@ msgid ""
 msgstr ""
 "Las señales soportan parámetros y valores vinculados de todos los `tipos "
 "built-in <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/"
-"keywords/built-in-types-table>`_  y clases derivadas de :ref:`Godot.Object "
+"keywords/built-in-types-table>`_ y clases derivadas de :ref:`Godot.Object "
 "<class_Object>`. Consecuentemente, cualquier ``Node`` o ``Reference`` será "
 "compatible automaticamente, pero objetos de datos personalizados deberán "
 "extender de `Godot.Object` o alguna de sus subclases."
@@ -204,9 +203,8 @@ msgstr ""
 "señal (con ``Connect`` o ``EmitSignal``)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:174
-#, fuzzy
 msgid "Preprocessor defines"
-msgstr "Funciones de procesamiento"
+msgstr "Defines de preprocesador"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:176
 msgid ""

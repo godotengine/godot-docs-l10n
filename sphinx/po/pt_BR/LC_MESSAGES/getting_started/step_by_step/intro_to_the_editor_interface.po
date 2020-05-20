@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,14 +38,15 @@ msgid "Project manager"
 msgstr "Gerenciador de Projetos"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you'll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
 "Quando você executa a Godot, a primeira janela que vê é o Gerenciador de "
-"Projetos. Ele lhe permite criar, remover, importar e jogar projetos."
+"Projetos. Como você não possui projetos, haverá uma janela perguntando se "
+"você deseja abrir a biblioteca de assets, clique em cancelar, vamos voltar a "
+"essa janela depois."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
 msgid ""
@@ -56,7 +57,6 @@ msgstr ""
 "remover, importar ou jogar projetos de jogo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
-#, fuzzy
 msgid ""
 "In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
@@ -94,7 +94,6 @@ msgstr ""
 "um renderizador."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
-#, fuzzy
 msgid ""
 "Click the Browse button to open Godot's file browser and pick a location or "
 "type the folder's path in the Project Path field."
@@ -204,7 +203,6 @@ msgstr ""
 "permite o gerenciamento das propriedades do conteúdo da Cena."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you'll find tools "
 "to move, scale or lock your scene's objects. It changes as you jump to "
@@ -212,7 +210,7 @@ msgid ""
 msgstr ""
 "No centro, você tem a **Barra de Ferramentas** no topo, onde você encontra "
 "as ferramentas para mover, redimensionar ou travar objetos da sua cena. A "
-"barra se altera conforme você alterna entre diferentes workspaces."
+"barra se altera conforme você alterna entre diferentes espaços de trabalho."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
 #, fuzzy
@@ -237,7 +235,6 @@ msgstr ""
 "AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
-#, fuzzy
 msgid ""
 "You'll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
@@ -245,8 +242,8 @@ msgid ""
 msgstr ""
 "Você usará o **Espaço de trabalho 2D** para todos os tipos de jogos. Além de "
 "ser onde os jogos 2D são desenvolvidos, este espaço de trabalho é onde você "
-"pode criar as suas interfaces de usuário (UI). Pressione F1 (ou :kbd:`Alt + "
-"1` no macOS) para acessá-lo."
+"pode criar as suas interfaces de usuário (UI). Pressione :kbd:`F1` (ou :kbd:"
+"`Alt + 1` no macOS) para acessá-lo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
 msgid ""
@@ -289,27 +286,33 @@ msgid ""
 "signal in the engine while you are writing a script, press the \"Search Help"
 "\" button at the top right of the Script workspace."
 msgstr ""
+"Para procurar informações sobre uma classe, método, propriedade, constante "
+"ou sinal na engine enquanto você escreve um script, pressione o botão "
+"\"Procurar Ajuda\" no canto superior direito do espaço de trabalho de Script."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid ""
 "A new window will pop up. Search for the item that you want to find "
 "information about."
 msgstr ""
+"Uma nova janela surgirá. Procure pelo item que você quer encontrar "
+"informações a respeito."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
 msgid ""
 "Click on the item you are looking for and press open. The documentation for "
 "the item will be displayed in the script workspace."
 msgstr ""
+"Clique no item que você está procurando e pressione abrir. A documentação "
+"para o item será apresentada no espaço de trabalho de script."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
 "scripts and assets to use in your projects."
 msgstr ""
 "Finalmente, o **AssetLib** é uma biblioteca de complementos, scripts e "
-"ativos gratuitos para usar nos seus projetos."
+"assets gratuitos para usar nos seus projetos."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:162
 msgid "Modify the interface"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -350,7 +350,6 @@ msgstr ""
 "haut de votre shader, en dehors de la fonction ``vertex()``."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:158
-#, fuzzy
 msgid ""
 "This will allow you to send a noise texture to the shader. Now look in the "
 "inspecter under your material. You should see a section called \"Shader "
@@ -423,13 +422,12 @@ msgstr ""
 "d'apparence aléatoire."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:188
-#, fuzzy
 msgid ""
 "Right now it is too spiky, we want to soften the hills a bit. To do that, we "
 "will use a uniform. You already used a uniform above to pass in the noise "
 "texture, now let's learn how they work."
 msgstr ""
-"Actuellement, c'est trop épineux, nous voulons adoucir un peu les collines. "
+"Actuellement, c'est trop pointu, nous voulons adoucir un peu les collines. "
 "Pour ce faire, nous utiliserons un uniform. Vous avez déjà utilisé un "
 "uniform ci-dessus pour transmettre la texture de bruit, maintenant apprenons "
 "comment ils fonctionnent."
@@ -470,7 +468,6 @@ msgstr ""
 "prioritaire sur la valeur utilisée pour l'initialiser dans le shader."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:216
-#, fuzzy
 msgid ""
 "Changing uniforms in Spatial-based nodes is different from CanvasItem-based "
 "nodes. Here, we set the material inside the PlaneMesh resource. In other "
@@ -478,12 +475,12 @@ msgid ""
 "``surface_get_material()``. While in the MeshInstance you would access the "
 "material using ``get_surface_material()`` or ``material_override``."
 msgstr ""
-"La modification des uniformes des nœuds spatiaux est différente de celle des "
-"nœuds CanvasItem. Ici, nous définissons le matériau à l'intérieur de la "
-"ressource PlaneMesh. Dans d'autres ressources de maillage, vous devrez peut-"
-"être d'abord accéder au matériau en appelant ``surface_get_material()``. "
-"Dans le MeshInstance, vous accéderez au matériau à l'aide de "
-"``get_surface_material()`` ou ``material_override``."
+"La modification des uniformes des nœuds basés sur Spatial est différente de "
+"celle des nœuds basés sur CanvasItem. Ici, nous définissons le matériau à "
+"l'intérieur de la ressource PlaneMesh. Dans d'autres ressources de maillage, "
+"vous devrez peut-être d'abord accéder au matériau en appelant "
+"``surface_get_material()``. Dans le MeshInstance, vous accéderez au matériau "
+"à l'aide de ``get_surface_material()`` ou ``material_override``."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:222
 msgid ""

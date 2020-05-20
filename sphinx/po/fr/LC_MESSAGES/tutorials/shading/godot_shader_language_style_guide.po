@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,10 +19,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:4
 msgid "Godot shader language style guide"
-msgstr ""
+msgstr "Guide de style du langage de shader Godot"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:6
-#, fuzzy
 msgid ""
 "This style guide lists conventions to write elegant shaders. The goal is to "
 "encourage writing clean, readable code and promote consistency across "
@@ -42,6 +41,10 @@ msgid ""
 "a GLSL file in Godot's source code `here <https://github.com/godotengine/"
 "godot/blob/master/drivers/gles2/shaders/copy.glsl>`__."
 msgstr ""
+"Comme le langage de shader Godot est proche des langages de type C et de "
+"GLSL, ce guide s'inspire du formatage GLSL propre à Godot. Vous pouvez voir "
+"un exemple de fichier GLSL dans le code source de Godot `ici <https://github."
+"com/godotengine/godot/blob/master/drivers/gles2/shaders/copy.glsl>`__."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:16
 msgid ""
@@ -63,7 +66,6 @@ msgstr ""
 "votre équipe est plus important que de suivre ce guide à la lettre."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:23
-#, fuzzy
 msgid ""
 "Godot's built-in shader editor uses a lot of these conventions by default. "
 "Let it help you."
@@ -72,7 +74,6 @@ msgstr ""
 "défaut. Laissez-le vous aider."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:26
-#, fuzzy
 msgid "Here is a complete shader example based on these guidelines:"
 msgstr "Voici un exemple de classe complet basé sur ces lignes directrices :"
 
@@ -117,12 +118,11 @@ msgid "Indentation"
 msgstr "Indentation"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:63
-#, fuzzy
 msgid ""
 "Each indent level should be one tab greater than the block containing it."
 msgstr ""
-"Chaque niveau d'indentation doit être supérieur d'une unité au bloc qui le "
-"contient."
+"Chaque niveau d'indentation doit être supérieur d'une tabulation au bloc qui "
+"le contient."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:65
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:84
@@ -180,19 +180,17 @@ msgid "Blank lines"
 msgstr "Lignes vides"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:134
-#, fuzzy
 msgid "Surround function definitions with one (and only one) blank line:"
 msgstr ""
-"Encadrer les fonctions et les définitions de classes par deux ligne vide :"
+"Entourez les définitions de fonctions d'une (et d'une seule) ligne vierge :"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:146
-#, fuzzy
 msgid ""
 "Use one (and only one) blank line inside functions to separate logical "
 "sections."
 msgstr ""
-"Utiliser une ligne vide à l'intérieur des fonctions pour séparer les "
-"sections logiques."
+"Utilisez une (et une seule) ligne blanche à l'intérieur des fonctions pour "
+"séparer les sections logiques."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:149
 msgid "Line length"
@@ -203,7 +201,6 @@ msgid "Keep individual lines of code under 100 characters."
 msgstr "Gardez chaque ligne de code en dessous de 100 caractères."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:153
-#, fuzzy
 msgid ""
 "If you can, try to keep lines under 80 characters. This helps to read the "
 "code on small displays and with two shaders opened side-by-side in an "
@@ -220,7 +217,7 @@ msgstr "Une Instruction par ligne"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:160
 msgid "Never combine multiple statements on a single line."
-msgstr ""
+msgstr "Ne combinez jamais plusieurs déclarations sur une seule ligne."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:179
 msgid "The only exception to that rule is the ternary operator:"
@@ -243,40 +240,38 @@ msgstr ""
 msgid ""
 "Don't use multiline comment syntax if your comment can fit on a single line:"
 msgstr ""
+"N'utilisez pas la syntaxe des commentaires multilignes si votre commentaire "
+"peut tenir sur une seule ligne :"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:216
-#, fuzzy
 msgid ""
 "In the shader editor, to make the selected code a comment (or uncomment it), "
 "press :kbd:`Ctrl + K`. This feature adds or removes ``//`` at the start of "
 "the selected lines."
 msgstr ""
-"Dans l'éditeur de script, pour basculer le code sélectionné en commenté, "
-"appuyez sur :kbd:`Ctrl + K`. Cette fonctionnalité ajoute un symbole # au "
-"début des lignes sélectionnées."
+"Dans l'éditeur de shaders, pour faire du code sélectionné un commentaire (ou "
+"le décommenter), appuyez sur :kbd:`Ctrl + K`. Cette fonction permet "
+"d'ajouter ou de supprimer ``//`` au début des lignes sélectionnées."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:221
 msgid "Whitespace"
 msgstr "Espace"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:223
-#, fuzzy
 msgid ""
 "Always use one space around operators and after commas. Also, avoid "
 "extraneous spaces in function calls."
 msgstr ""
-"Utiliser toujours un seul espace autour des opérateurs et après les "
-"virgules. Éviter les espaces supplémentaires dans les références de "
-"dictionnaires et les appels de fonctions."
+"Utilisez toujours un espace autour des opérateurs et après les virgules. "
+"Évitez également les espaces superflus dans les appels de fonction."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:242
 msgid "Don't use spaces to align expressions vertically:"
 msgstr "Ne pas utiliser d'espaces pour aligner verticalement les expressions :"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:250
-#, fuzzy
 msgid "Floating-point numbers"
-msgstr "Nombre à virgule flottante (réel)"
+msgstr "Nombres à virgule flottante"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:252
 msgid ""
@@ -284,11 +279,14 @@ msgid ""
 "This makes it easier to distinguish floating-point numbers from integers, as "
 "well as distinguishing numbers greater than 1 from those lower than 1."
 msgstr ""
+"Spécifiez toujours au moins un chiffre pour la partie entière et la partie "
+"fractionnaire. Cela permet de distinguer plus facilement les nombres à "
+"virgule flottante des nombres entiers, ainsi que de distinguer les nombres "
+"supérieurs à 1 de ceux qui sont inférieurs à 1."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:273
-#, fuzzy
 msgid "Accessing vector members"
-msgstr "Additionner des vecteurs"
+msgstr "Accès aux membres d'un vecteur"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:275
 msgid ""
@@ -297,6 +295,11 @@ msgid ""
 "``x``, ``y``, ``z``, and ``w``. This allows those reading your code to "
 "better understand what the underlying data represents."
 msgstr ""
+"Utilisez ``r``, ``g``, ``b``, et ``a`` pour accéder aux membres d'un vecteur "
+"s'il contient une couleur. Si le vecteur contient autre chose qu'une "
+"couleur, utilisez ``x``, ``y``, ``z``, et ``w``. Cela permet à ceux qui "
+"lisent votre code de mieux comprendre ce que les données sous-jacentes "
+"représentent."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:293
 msgid "Naming conventions"
@@ -337,9 +340,8 @@ msgid "Code order"
 msgstr "Ordre du code"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:323
-#, fuzzy
 msgid "We suggest to organize shader code this way:"
-msgstr "Nous suggérons d'organiser le code GDScript de cette manière :"
+msgstr "Nous suggérons d'organiser le code des shaders de cette façon :"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:340
 msgid ""
@@ -353,20 +355,21 @@ msgstr ""
 "liées à l'ordre de déclaration des variables."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:344
-#, fuzzy
 msgid "This code order follows two rules of thumb:"
-msgstr "Cet ordre du code suit quatre règles générales :"
+msgstr "Cet ordre de code suit deux règles générales :"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:346
-#, fuzzy
 msgid "Metadata and properties first, followed by methods."
-msgstr "Les propriétés et signaux viennent en premier, suivis des méthodes."
+msgstr "Les métadonnées et les propriétés d'abord, puis les méthodes."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:347
 msgid ""
 "\"Public\" comes before \"private\". In a shader language's context, \"public"
 "\" refers to what's easily adjustable by the user (uniforms)."
 msgstr ""
+"Le mot \"public\" vient avant le mot \"privé\". Dans le contexte d'une "
+"langue de type shader, \"public\" fait référence à ce qui est facilement "
+"ajustable par l'utilisateur (les uniformes)."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
 msgid "Local variables"
@@ -378,3 +381,6 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Déclarez les variables locales le plus près possible de leur première "
+"utilisation. Il est ainsi plus facile de suivre le code, sans avoir à trop "
+"le faire défiler pour retrouver l'endroit où la variable a été déclarée."

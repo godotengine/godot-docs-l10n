@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,3 +138,38 @@ msgid ""
 msgstr ""
 "フォルダを無視すると、そのフォルダはファイルシステムドックから自動的に非表示"
 "になるので、煩雑さを軽減するのに役立ちます。"
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:77
+msgid "Case sensitivity"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:79
+msgid ""
+"Windows and recent macOS versions use case-insensitive filesystems by "
+"default, whereas Linux distributions use a case-sensitive filesystem by "
+"default. This can cause issues after exporting a project, since Godot's PCK "
+"virtual filesystem is case-sensitive. To avoid this, it's recommended to "
+"stick to ``snake_case`` naming for all files in the project (and lowercase "
+"characters in general)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:88
+msgid ""
+"You can break this rule when style guides say otherwise (such as the C# "
+"style guide). Still, be consistent to avoid mistakes."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:91
+msgid ""
+"On Windows 10, to further avoid mistakes related to case sensitivity, you "
+"can also make the project folder case-sensitive. After enabling the Windows "
+"Subsystem for Linux feature, run the following command in a PowerShell "
+"window::"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:101
+msgid ""
+"If you haven't enabled the Windows Subsystem for Linux, you can enter the "
+"following line in a PowerShell window *running as Administrator* then reboot "
+"when asked::"
+msgstr ""

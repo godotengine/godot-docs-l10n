@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -172,8 +172,8 @@ msgid ""
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
-"もうひとつは ``preload()`` です。この関数は``load()``とは違い、コンパイル時に"
-"ファイルをディスクから読み込んでロードします。そのため、パスが変数の場合は"
+"もうひとつは ``preload()`` です。この関数は ``load()`` とは違い、コンパイル時"
+"にファイルをディスクから読み込んでロードします。そのため、パスが変数の場合は"
 "preloadは呼べません。パスは定数の文字列である必要があります。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
@@ -196,7 +196,7 @@ msgid ""
 "instance() <class_PackedScene_method_instance>` method."
 msgstr ""
 "シーンのインスタンスを得るには、\\ :ref:`PackedScene.instance() "
-"class_PackedScene_method_instance>`\\ メソッドを使う必要があります。"
+"<class_PackedScene_method_instance>`\\ メソッドを使う必要があります。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
 msgid ""
@@ -353,26 +353,12 @@ msgid ""
 msgstr ""
 "基本リソースだけでなく、\\ **その他**\\ のリソースタイプも拡張できます。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:185
-msgid ""
-"Resources and Dictionaries are both passed by reference, but only Resources "
-"are reference-counted. This means that if a Dictionary is passed between "
-"objects and the first object is deleted, all other objects' references to "
-"the Dictionary will be invalidated. Conversely, Resources will not be freed "
-"from memory until *all* the objects are deleted."
-msgstr ""
-"リソースと辞書(ディクショナリ)はどちらも参照によって渡されますが、参照カウン"
-"トされるのはリソースだけです。つまり、オブジェクト間で辞書が渡され、最初のオ"
-"ブジェクトが削除されると、辞書への他のすべてのオブジェクトの参照は無効になり"
-"ます。逆に、関連するオブジェクトが\\ *全て*\\ 削除されるまで、リソースはメモ"
-"リから解放されません。"
-
-#: ../../docs/getting_started/step_by_step/resources.rst:215
+#: ../../docs/getting_started/step_by_step/resources.rst:183
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr ""
 "Godotを使用すると、インスペクタでカスタムリソースを簡単に作成できます。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:217
+#: ../../docs/getting_started/step_by_step/resources.rst:185
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
@@ -380,11 +366,11 @@ msgstr ""
 "インスペクタでプレーンなリソースオブジェクトを作成します。これは、スクリプト"
 "がその型を拡張可能なら、新たなリソースを派生させる原型にもできます。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:218
+#: ../../docs/getting_started/step_by_step/resources.rst:186
 msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr "インスペクタで ``script`` プロパティをスクリプトに設定します。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:220
+#: ../../docs/getting_started/step_by_step/resources.rst:188
 msgid ""
 "The Inspector will now display your Resource script's custom properties. If "
 "one edits those values and saves the resource, the Inspector serializes the "
@@ -396,7 +382,7 @@ msgstr ""
 "化します。インスペクタからリソースを保存するには、インスペクタのツールメ"
 "ニュー(右上)をクリックし、「保存」または「名前を付けて保存」を選択します。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:225
+#: ../../docs/getting_started/step_by_step/resources.rst:193
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -409,11 +395,11 @@ msgstr ""
 "するだけで、その名前がインスペクタの作成ダイアログに追加されます。これによ"
 "り、作成したリソースオブジェクトにスクリプトが自動的に追加されます。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:230
+#: ../../docs/getting_started/step_by_step/resources.rst:198
 msgid "Let's see some examples."
 msgstr "いくつかの例を見てみましょう。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:303
+#: ../../docs/getting_started/step_by_step/resources.rst:271
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -427,7 +413,7 @@ msgstr ""
 "`EditorPlugin <class_EditorPlugin>` と組み合わせて、データ用のカスタムビジュ"
 "アライゼーションとエディタを作成することもできます。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:309
+#: ../../docs/getting_started/step_by_step/resources.rst:277
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
@@ -438,13 +424,13 @@ msgstr ""
 "文字列をセカンダリカスタムリソーススクリプトにマッピングする辞書に似ていま"
 "す。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:345
+#: ../../docs/getting_started/step_by_step/resources.rst:313
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr "辞書の値を単にインライン化する代わりに..."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:347
+#: ../../docs/getting_started/step_by_step/resources.rst:315
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
@@ -452,7 +438,7 @@ msgstr ""
 "スプレッドシートから値の表をインポートして、これらのキーと値のペアを生成す"
 "る、または..."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:349
+#: ../../docs/getting_started/step_by_step/resources.rst:317
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
@@ -460,7 +446,7 @@ msgstr ""
 "エディタ内でビジュアライゼーションを設計し、これらのタイプのリソースを開いた"
 "ときにインスペクタに追加する単純なプラグインを作成します。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:352
+#: ../../docs/getting_started/step_by_step/resources.rst:320
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
@@ -468,7 +454,7 @@ msgstr ""
 "CurveTablesも同じですが、float値の配列または :ref:`Curve <class_Curve>`/:ref:"
 "`Curve2D <class_Curve2D>` リソースオブジェクトにマッピングされます。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:357
+#: ../../docs/getting_started/step_by_step/resources.rst:325
 msgid ""
 "Beware that resource files (\\*.tres/\\*.res) will store the path of the "
 "script they use in the file. When loaded, they will fetch and load this "
@@ -484,7 +470,7 @@ msgstr ""
 "も、それは機能しません。Godot は、スクリプト サブクラスのカスタム プロパティ"
 "を正しくシリアル化しません。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:363
+#: ../../docs/getting_started/step_by_step/resources.rst:331
 msgid ""
 "In the example below, Godot would load the ``Node`` script, see that it "
 "doesn't extend ``Resource``, and then determine that the script failed to "

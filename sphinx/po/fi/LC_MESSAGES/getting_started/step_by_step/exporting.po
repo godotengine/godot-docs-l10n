@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,23 +119,23 @@ msgid ""
 "changed:"
 msgstr "Tässä koko skripti pelaajalle, muutokset kommenteihin merkittynä:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:246
+#: ../../docs/getting_started/step_by_step/exporting.rst:240
 #, fuzzy
 msgid "Setting a main scene"
 msgstr "Skenen pystytys"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:248
+#: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
 "The main scene is the one that your game will start in. In *Project -> "
 "Project Settings -> Application -> Run*, set *Main Scene* to \"Main.tscn\" "
 "by clicking the folder icon and selecting it."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:253
+#: ../../docs/getting_started/step_by_step/exporting.rst:247
 msgid "Export templates"
 msgstr "Vientimallit"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:255
+#: ../../docs/getting_started/step_by_step/exporting.rst:249
 msgid ""
 "In order to export, you need to download the *export templates* from the "
 "http://godotengine.org/download. These templates are optimized versions of "
@@ -147,7 +147,7 @@ msgstr ""
 "esikäännettyjä optimoituja versioita pelimoottorista ilman editoria Voit "
 "myös ladata ne Godotissa napsauttamalla *Editori -> Hallinnoi vientimalleja*:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:262
+#: ../../docs/getting_started/step_by_step/exporting.rst:256
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
@@ -155,7 +155,7 @@ msgstr ""
 "Voit napsauttaa \"Lataa\" avautuneessa ikkunassa saadaksesi vientimallin "
 "version, joka vastaa sinun Godotin versiota."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:267
+#: ../../docs/getting_started/step_by_step/exporting.rst:261
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
@@ -163,11 +163,11 @@ msgstr ""
 "Jos päivität Godotin, sinun täytyy ladata vientimallit, jotka vastaavat "
 "uutta versiota tai viedyt projektisi eivät välttämättä toimi kunnolla."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:271
+#: ../../docs/getting_started/step_by_step/exporting.rst:265
 msgid "Export presets"
 msgstr "Viennin esiasetukset"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:273
+#: ../../docs/getting_started/step_by_step/exporting.rst:267
 #, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
@@ -175,7 +175,7 @@ msgid ""
 msgstr ""
 "Seuraavaksi voit säätää viennin asetukset napsauttamalla *Projekti -> Vie*:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:275
+#: ../../docs/getting_started/step_by_step/exporting.rst:269
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
@@ -184,7 +184,7 @@ msgstr ""
 "alusta. Voit tehdä niin monia esiasetuksia kuin haluat erilaisilla "
 "asetuksilla."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:280
+#: ../../docs/getting_started/step_by_step/exporting.rst:274
 msgid ""
 "At the bottom of the window are two buttons. \"Export PCK/ZIP\" only creates "
 "a packed version of your project's data. This doesn't include an executable "
@@ -194,7 +194,7 @@ msgstr ""
 "version projektisi datasta. Se ei sisällä suoritettavaa tiedostoa, joten "
 "projektia ei voi ajaa sellaisenaan."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:284
+#: ../../docs/getting_started/step_by_step/exporting.rst:278
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
@@ -202,7 +202,7 @@ msgstr ""
 "Toinen painike, \"Vie projekti\", luo valmiin suoritettavan version "
 "pelistäsi, kuten esimerkiksi `.apk` Androidille tai `.exe` Windowsille."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:287
+#: ../../docs/getting_started/step_by_step/exporting.rst:281
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
@@ -210,11 +210,11 @@ msgstr ""
 "\"Resurssit\" ja \"Ominaisuudet\" välilehdillä voit räätälöidä pelisi "
 "viennin kullekin alustalle. Voimme jättää nuo asetukset toistaiseksi rauhaan."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:291
+#: ../../docs/getting_started/step_by_step/exporting.rst:285
 msgid "Exporting by platform"
 msgstr "Vienti alustottain"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:293
+#: ../../docs/getting_started/step_by_step/exporting.rst:287
 msgid ""
 "In this section, we'll walk through the process for each platform, including "
 "any additional software or requirements you'll need."
@@ -222,11 +222,11 @@ msgstr ""
 "Tässä luvussa käymme prosessin läpi kullekin alustalle, sisältäen kaikki "
 "tarvitsemasi ylimääräiset ohjelmistot tai edellytykset."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:297
+#: ../../docs/getting_started/step_by_step/exporting.rst:291
 msgid "PC (Linux/macOS/Windows)"
 msgstr "PC (Linux/macOS/Windows)"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:299
+#: ../../docs/getting_started/step_by_step/exporting.rst:293
 msgid ""
 "Exporting PC platforms works the same across the three supported operating "
 "systems. Open the export window and click \"Add..\" to create the preset(s) "
@@ -239,11 +239,11 @@ msgstr ""
 "valitse nimi ja kohdekansio. Valitse sijainti projektikansiosi "
 "*ulkopuolelta*."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:304
+#: ../../docs/getting_started/step_by_step/exporting.rst:298
 msgid "Click \"Save\" and the engine will build the export files."
 msgstr "Napsauta \"Tallenna\" ja pelimoottori rakentaa vientitiedostot."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:306
+#: ../../docs/getting_started/step_by_step/exporting.rst:300
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
@@ -255,7 +255,7 @@ msgstr ""
 "tapauksessa pakattu tiedosto sisältää macOS `.app` tiedoston, jonka voit "
 "ajaa kaksoisnapsautuksella."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:311
+#: ../../docs/getting_started/step_by_step/exporting.rst:305
 msgid ""
 "On Windows, if you want your exported executable to have a different icon "
 "than the default one, you need to change it manually. See: :ref:"
@@ -265,11 +265,11 @@ msgstr ""
 "oletuskuvakkeesta Windowsilla, sinun täytyy vaihtaa se käsin. Katso: :ref:"
 "`doc_changing_application_icon_for_windows`."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:316
+#: ../../docs/getting_started/step_by_step/exporting.rst:310
 msgid "Android"
 msgstr "Android"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:318
+#: ../../docs/getting_started/step_by_step/exporting.rst:312
 msgid ""
 "Mobile devices come with a wide variety of capabilities. In most cases, "
 "Godot's default settings will work, but mobile development is sometimes more "
@@ -281,7 +281,7 @@ msgstr ""
 "kuin tiedettä ja voit joutua tekemään hieman kokeiluja ja etsiä apuja "
 "saadaksesi kaiken toimimaan."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:324
+#: ../../docs/getting_started/step_by_step/exporting.rst:318
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
@@ -289,17 +289,17 @@ msgstr ""
 "Ennen kuin voit viedä projektisi Androidille, sinun täytyy ladata seuraavat "
 "ohjelmistot:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:327
+#: ../../docs/getting_started/step_by_step/exporting.rst:321
 msgid "Android SDK: https://developer.android.com/studio/"
 msgstr "Android SDK: https://developer.android.com/studio/"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:328
+#: ../../docs/getting_started/step_by_step/exporting.rst:322
 msgid ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 msgstr ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:330
+#: ../../docs/getting_started/step_by_step/exporting.rst:324
 msgid ""
 "When you run Android Studio for the first time, click on *Configure -> SDK "
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
@@ -309,7 +309,7 @@ msgstr ""
 "SDK Manager* ja asenna \"Android SDK Platform Tools\". Tämä asentaa `adb` "
 "komentorivityökalun, jota Godot käyttää keskustellakseen laitteesi kanssa."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:334
+#: ../../docs/getting_started/step_by_step/exporting.rst:328
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
@@ -317,7 +317,7 @@ msgstr ""
 "Seuraavaksi, luo debug keystore suorittamalla seuraava komento järjestelmäsi "
 "komentorivillä:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:341
+#: ../../docs/getting_started/step_by_step/exporting.rst:335
 msgid ""
 "Click on *Editor -> Editor Settings* in Godot and select the *Export/"
 "Android* section. Here, you need to set the paths to the Android SDK "
@@ -328,7 +328,7 @@ msgstr ""
 "Android* osio. Sinun täytyy asettaa tähän polut järjestelmäsi Android SDK -"
 "sovelluksiin ja juuri luomasi keystoren sijaintiin."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:347
+#: ../../docs/getting_started/step_by_step/exporting.rst:341
 #, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
@@ -338,7 +338,7 @@ msgstr ""
 "Nyt olet valmis viemään. Napsauta *Projekti -> Vie* ja lisää Androidin "
 "esiasetukset (katso yllä)."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:351
+#: ../../docs/getting_started/step_by_step/exporting.rst:345
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
@@ -346,7 +346,7 @@ msgstr ""
 "Napsauta \"Vie projekti\" painiketta ja Godot koostaa APK:n, jonka voit "
 "ladata laitteellesi. Tehdäksesi tämän komentoriviltä, käytä seuraavaa:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:358
+#: ../../docs/getting_started/step_by_step/exporting.rst:352
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
@@ -354,7 +354,7 @@ msgstr ""
 "Voi olla, että laitteesi tarvitsee olla *kehitystilassa* (*developer mode*). "
 "Katso tarkemmat tiedot laitteesi dokumentaatiosta."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:361
+#: ../../docs/getting_started/step_by_step/exporting.rst:355
 msgid ""
 "If your system supports it, connecting a compatible Android device will "
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
@@ -364,7 +364,7 @@ msgstr ""
 "ilmestyy \"One-click Deploy\" painike, kun yhdistät yhteensopivan Android-"
 "laitteen:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:366
+#: ../../docs/getting_started/step_by_step/exporting.rst:360
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
@@ -372,11 +372,11 @@ msgstr ""
 "Tämän painikkeen napsauttaminen muodostaa APK:n ja kopioi sen laitteellesi "
 "yhdellä kertaa."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:369
+#: ../../docs/getting_started/step_by_step/exporting.rst:363
 msgid "iOS"
 msgstr "iOS"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:371
+#: ../../docs/getting_started/step_by_step/exporting.rst:365
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
@@ -384,7 +384,7 @@ msgstr ""
 "Kääntääksesi pelisi iOS:lle, sinulla täytyy olla MacOS-tietokone, jossa on "
 "asennettuna Xcode."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:374
+#: ../../docs/getting_started/step_by_step/exporting.rst:368
 msgid ""
 "Before exporting, there are some settings that you *must* complete for the "
 "project to export successfully. First, the \"App Store Team Id\", which you "
@@ -396,16 +396,16 @@ msgstr ""
 "sisään omalle Apple-kehittäjätunnuksellesi ja katsomalla \"Membership\"-"
 "osiota."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:378
+#: ../../docs/getting_started/step_by_step/exporting.rst:372
 msgid "You must also provide icons and splash screen images as shown below:"
 msgstr ""
 "Sinun täytyy myös asettaa ikonit ja käynnistyskuvat, kuten näytetty alla:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:382
+#: ../../docs/getting_started/step_by_step/exporting.rst:376
 msgid "Click \"Export Project\" and select a destination folder."
 msgstr "Napsauta \"Vie projekti\" ja valitse kohdekansio."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:384
+#: ../../docs/getting_started/step_by_step/exporting.rst:378
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
@@ -413,7 +413,7 @@ msgstr ""
 "Kun olet vienyt projektisi onnistuneesti, löydät seuraavat kansiot ja "
 "tiedostot luotuina antamastasi sijainnista:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:389
+#: ../../docs/getting_started/step_by_step/exporting.rst:383
 msgid ""
 "You can now open the project in Xcode and build the project for iOS. Xcode "
 "build procedure is beyond the scope of this tutorial. See https://help.apple."
@@ -423,11 +423,11 @@ msgstr ""
 "kääntämiseen liittyvät toimenpiteet eivät kuulu tämän oppaan piiriin. Katso "
 "https://help.apple.com/xcode/mac/current/#/devc8c2a6be1 lisätietoja varten."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:395
+#: ../../docs/getting_started/step_by_step/exporting.rst:389
 msgid "HTML5 (web)"
 msgstr "HTML5 (verkko)"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:397
+#: ../../docs/getting_started/step_by_step/exporting.rst:391
 msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
@@ -435,13 +435,13 @@ msgstr ""
 "Napsauta \"Vie projekti\" HTML5-esiasetuksissa. Meidän ei tarvitse muuttaa "
 "mitään oletusasetuksista."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:400
+#: ../../docs/getting_started/step_by_step/exporting.rst:394
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"
 msgstr "Kun vienti on valmis, saat seuraavat tiedostot sisältävän kansion:"
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:405
+#: ../../docs/getting_started/step_by_step/exporting.rst:399
 #, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
@@ -454,7 +454,7 @@ msgstr ""
 "sinulla ei ole sellaista asennettuna tietokoneellasi, voit hakea Googlella "
 "omalle käyttöjärjestelmällesi sopivia ehdotuksia."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:410
+#: ../../docs/getting_started/step_by_step/exporting.rst:404
 msgid ""
 "Point your browser at the URL where you've placed the html file. You may "
 "have to wait a few moments while the game loads before you see the start "
@@ -463,7 +463,7 @@ msgstr ""
 "Syötä selaimeesi URL siihen kohteeseen, jonne sijoitit html-tiedoston. Voit "
 "joutua odottamaan hetken pelin latautumista, ennen kuin näet aloitusruudun."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:415
+#: ../../docs/getting_started/step_by_step/exporting.rst:409
 msgid ""
 "The console window beneath the game tells you if anything goes wrong. You "
 "can disable it by setting \"Export With Debug\" off when you export the "
@@ -473,7 +473,7 @@ msgstr ""
 "vikaan. Voit kytkeä sen pois päältä asettamalla \"Vie debugaten\" off-"
 "asentoon, kun viet projektisi."
 
-#: ../../docs/getting_started/step_by_step/exporting.rst:420
+#: ../../docs/getting_started/step_by_step/exporting.rst:414
 #, fuzzy
 msgid ""
 "While WASM is supported in all major browsers, it is still an emerging "

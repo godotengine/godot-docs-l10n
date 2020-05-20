@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,10 +204,26 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:132
+msgid "Compiling a headless/server build"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:134
+msgid ""
+"To compile a *headless* build which provides editor functionality to export "
+"projects in an automated manner, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:139
+msgid ""
+"To compile a *server* build which is optimized to run dedicated game "
+"servers, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:145
 msgid "Building export templates"
 msgstr "エクスポートテンプレートの構築"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:134
+#: ../../docs/development/compiling/compiling_for_x11.rst:147
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -221,7 +237,7 @@ msgstr ""
 "るべきでしょう。バーチャルマシンやコンテナを使えば、適切なビルド環境をセット"
 "アップできます。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:142
+#: ../../docs/development/compiling/compiling_for_x11.rst:155
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
@@ -229,15 +245,15 @@ msgstr ""
 "X11(Linux、\\*BSD)エクスポートテンプレートをビルドするには、次のパラメーター"
 "を使用してビルド システムを実行します:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:145
+#: ../../docs/development/compiling/compiling_for_x11.rst:158
 msgid "(32 bits)"
 msgstr "(32ビット)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:152
+#: ../../docs/development/compiling/compiling_for_x11.rst:165
 msgid "(64 bits)"
 msgstr "(64ビット)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:159
+#: ../../docs/development/compiling/compiling_for_x11.rst:172
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
@@ -245,14 +261,14 @@ msgstr ""
 "注意点として、現在のホスト プラットフォームの反対のビット(64/32)へのクロスコ"
 "ンパイルは、簡単にいくとは限らず、chroot環境が必要になるかもしれません。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:162
+#: ../../docs/development/compiling/compiling_for_x11.rst:175
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
 "標準のエクスポート テンプレートを作成するには、結果のファイルを次の場所にコ"
 "ピーする必要があります:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:168
+#: ../../docs/development/compiling/compiling_for_x11.rst:181
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
@@ -260,7 +276,7 @@ msgstr ""
 "そして、このように命名されます (Godotでは\\*BSD の場合も「Linux X11」と見なさ"
 "れます):"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:177
+#: ../../docs/development/compiling/compiling_for_x11.rst:190
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
@@ -269,7 +285,7 @@ msgstr ""
 "ただし、カスタムモジュールまたはカスタムC++ コードを作成する場合は、ここでカ"
 "スタムエクスポート テンプレートとしてバイナリを構成する必要があります:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:183
+#: ../../docs/development/compiling/compiling_for_x11.rst:196
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Godot source folder, so the next time you "
@@ -279,11 +295,11 @@ msgstr ""
 "レクトリに出力されたファイルを指定するだけです。こうすれば、次にビルドした時"
 "も、自動的にカスタム テンプレートを参照するようになります。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:188
+#: ../../docs/development/compiling/compiling_for_x11.rst:201
 msgid "Using Clang and LLD for faster development"
 msgstr "ClangとLLDを使用して開発を高速化する"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:190
+#: ../../docs/development/compiling/compiling_for_x11.rst:203
 msgid ""
 "You can also use Clang and LLD to build Godot. This has two upsides compared "
 "to the default GCC + GNU ld setup:"
@@ -291,7 +307,7 @@ msgstr ""
 "ClangとLLDを使用してGodotを構築することもできます。これには、デフォルトのGCC "
 "+ GNU ldセットアップと比較して2つの利点があります:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:193
+#: ../../docs/development/compiling/compiling_for_x11.rst:206
 msgid ""
 "LLD links Godot significantly faster compared to GNU ld or gold. This leads "
 "to faster iteration times."
@@ -299,11 +315,11 @@ msgstr ""
 "LLDは、GNU ldまたはgoldと比較してGodotを大幅に高速にリンクします。これによ"
 "り、反復時間が短縮されます。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:195
+#: ../../docs/development/compiling/compiling_for_x11.rst:208
 msgid "Clang tends to give more useful error messages compared to GCC."
 msgstr "Clangは、GCCよりも有用なエラーメッセージを提供する傾向があります。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:197
+#: ../../docs/development/compiling/compiling_for_x11.rst:210
 msgid ""
 "To do so, install Clang and the ``lld`` package from your distribution's "
 "package manager then use the following SCons command::"
@@ -311,7 +327,7 @@ msgstr ""
 "これを行うには、ディストリビューションのパッケージマネージャーからClangと "
 "``lld`` パッケージをインストールし、次のSConsコマンドを使用します:"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:202
+#: ../../docs/development/compiling/compiling_for_x11.rst:215
 msgid ""
 "It's still recommended to use GCC for production builds as they can be "
 "compiled using link-time optimization, making the resulting binaries smaller "

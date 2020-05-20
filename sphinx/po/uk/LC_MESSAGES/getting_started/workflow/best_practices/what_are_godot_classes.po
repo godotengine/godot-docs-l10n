@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
 msgid "Godot scenes and scripts are classes"
-msgstr ""
+msgstr "Сцени та скрипти Godot - це класи"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
@@ -29,6 +29,11 @@ msgid ""
 "while scripts can contain `imperative code <https://en.wikipedia.org/wiki/"
 "Imperative_programming>`_."
 msgstr ""
+"У Godot скрипти та сцени можуть бути еквівалентами класів в об'єктно-"
+"орієнтованій мові програмування. Основна відмінність полягає в тому, що "
+"сцени є `декларативним кодом <https://en.wikipedia.org/wiki/"
+"Declarative_programming>`_, тоді як скрипти можуть містити `імперативний "
+"код<https://en.wikipedia.org/wiki/Imperative_programming>`_."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:12
 msgid ""
@@ -36,6 +41,9 @@ msgid ""
 "Oriented design principles to the scenes, nodes, or script that make up your "
 "game."
 msgstr ""
+"Як результат, багато кращих практик роботи в Godot зводяться до застосування "
+"принципів об'єктно-орієнтованого підходу до сцен, вузлів, або скриптів, які "
+"складають вашу гру."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:15
 msgid ""
@@ -43,11 +51,13 @@ msgid ""
 "help you get a sense of how Godot works under the hood, and to help you "
 "better understand where some of this series' best practices come from."
 msgstr ""
+"Цей гайд пояснює, як скрипти та сцени працюють в ядрі движка, щоб допомогти "
+"вам зрозуміти, як Godot працює всередині, а також краще зрозуміти, звідки "
+"беруться деякі найкращі практики."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:20
-#, fuzzy
 msgid "Making sense of classes in Godot"
-msgstr "Використання пакунків Nuget у Godot"
+msgstr "Сенс класів у Godot"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:22
 msgid ""
@@ -56,6 +66,10 @@ msgid ""
 "tell the engine a sequence of initializations to perform on one of the "
 "engine's built-in classes."
 msgstr ""
+"Godot Engine забезпечує вбудовані класи, такі як :ref:`Node <class_Node>`. "
+"Створені користувачем типи технічно не є класами. Натомість це ресурси, які "
+"повідомляють движку послідовність ініціалізацій, які потрібно виконати на "
+"одному з вбудованих класів движка."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
 msgid ""
@@ -63,26 +77,25 @@ msgid ""
 "ref:`ClassDB <class_ClassDB>`. This database provides runtime access to "
 "class information. ``ClassDB`` contains information about classes like:"
 msgstr ""
+"Внутрішні класи Godot мають методи, які реєструють дані класу в :ref:"
+"`ClassDB <class_ClassDB>`. Ця база даних під час виконання забезпечує доступ "
+"до інформації класу. ``ClassDB`` містить інформацію про такі класи, як:"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
-#, fuzzy
 msgid "properties"
-msgstr "Властивості вузла"
+msgstr "властивості"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
-#, fuzzy
 msgid "methods"
-msgstr "'method'"
+msgstr "методи"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:33
-#, fuzzy
 msgid "constants"
-msgstr "Константи"
+msgstr "константи"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
-#, fuzzy
 msgid "signals"
-msgstr "signal"
+msgstr "сигнали"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
 msgid ""

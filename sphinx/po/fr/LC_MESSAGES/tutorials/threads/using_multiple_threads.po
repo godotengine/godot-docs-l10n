@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,11 +76,12 @@ msgid "Mutexes"
 msgstr "Mutexes"
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:53
+#, fuzzy
 msgid ""
 "Accessing objects or data from multiple threads is not always supported (if "
 "you do it, it will cause unexpected behaviors or crashes). Read the :ref:"
-"`Thread safe APIs<doc_thread_safe_apis>` to understand which engine APIs "
-"support multiple thread access."
+"`doc_thread_safe_apis` documentation to understand which engine APIs support "
+"multiple thread access."
 msgstr ""
 "Accéder à des objets ou des données depuis plusieurs threads n'est pas "
 "toujours supporté (si vous le faites, cela provoquera des comportements "
@@ -88,7 +89,7 @@ msgstr ""
 "APIs<doc_thread_safe_apis>` pour comprendre quelles API du moteur supportent "
 "l'accès par plusieurs threads."
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:57
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:58
 msgid ""
 "When processing your own data or calling your own functions, as a rule, try "
 "to avoid accessing the same data directly from different threads. You may "
@@ -104,7 +105,7 @@ msgstr ""
 "ref:`Mutex<class_Mutex>` lorsque vous accédez à une donnée depuis différents "
 "threads."
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:63
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:64
 msgid ""
 "When calling :ref:`Mutex.lock()<class_Mutex_method_lock>`, a thread ensures "
 "that all other threads will be blocked (put on suspended state) if they try "
@@ -119,15 +120,15 @@ msgstr ""
 "les autres threads seront autorisés à verrouiller le mutex (mais un seul à "
 "la fois)."
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:69
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:70
 msgid "Here is an example of using a Mutex:"
 msgstr "Voici un exemple d'utilisation d'un Mutex :"
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:101
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:102
 msgid "Semaphores"
 msgstr "Semaphores"
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:103
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:104
 msgid ""
 "Sometimes you want your thread to work *\"on demand\"*. In other words, tell "
 "it when to work and let it suspend when it isn't doing anything. For this, :"
@@ -142,7 +143,7 @@ msgstr ""
 "wait()<class_Semaphore_method_wait>` est utilisée dans le thread pour le "
 "suspendre jusqu'à ce que des données arrivent."
 
-#: ../../docs/tutorials/threads/using_multiple_threads.rst:109
+#: ../../docs/tutorials/threads/using_multiple_threads.rst:110
 msgid ""
 "The main thread, instead, uses :ref:`Semaphore."
 "post()<class_Semaphore_method_post>` to signal that data is ready to be "

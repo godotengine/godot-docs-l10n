@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgid ""
 "The second thing to note is ``Blast_Area``. This is an :ref:`Area "
 "<class_Area>` node that will represent the blast radius of the grenade."
 msgstr ""
-"La seconde chose à noter est ``Blast_Area``. C'est un nœud  :ref:`Area "
+"La seconde chose à noter est ``Blast_Area``. C'est un nœud :ref:`Area "
 "<class_Area>` qui va représenter le rayon d'explosion de la grenade."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:28
@@ -91,7 +91,7 @@ msgid ""
 "have ``Local Coords`` unchecked as well."
 msgstr ""
 "Enfin, la dernière chose à explorer est ``Explosion``. C'est un nœud :ref:"
-"`Particles <class_Particles>`  qui va émettre un effet d'explosion quand la "
+"`Particles <class_Particles>` qui va émettre un effet d'explosion quand la "
 "grenade va exploser. One chose à noter ici, c'est que nous avons activé "
 "``One shot``. Cela fait en sorte que nous émettions toutes les particules à "
 "fois. Les particules sont émises en utilisant les coordonnées du monde et "
@@ -124,15 +124,15 @@ msgstr ""
 msgid ""
 "``GRENADE_DAMAGE``: The amount of damage the grenade causes when it explodes."
 msgstr ""
-"``GRENADE_DAMAGE``: Le montant de dégâts qu'inflige les grenades quand elles "
-"explosent."
+"``GRENADE_DAMAGE`` : Le montant de dégâts qu'inflige les grenades quand "
+"elles explosent."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:93
 msgid ""
 "``GRENADE_TIME``: The amount of time the grenade takes (in seconds) to "
 "explode once it's created/thrown."
 msgstr ""
-"``GRENADE_TIME``: Le temps que la grenade met (en secondes) pour exploser "
+"``GRENADE_TIME`` : Le temps que la grenade met (en secondes) pour exploser "
 "une fois qu'elle est créée/jetée."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:94
@@ -140,15 +140,15 @@ msgid ""
 "``grenade_timer``: A variable for tracking how long the grenade has been "
 "created/thrown."
 msgstr ""
-"``grenade_timer``: Une variable utilisée pour savoir depuis combien de temps "
-"la grenade a été créée/jetée."
+"``grenade_timer`` : Une variable utilisée pour savoir depuis combien de "
+"temps la grenade a été créée/jetée."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:95
 msgid ""
 "``EXPLOSION_WAIT_TIME``: The amount of time needed (in seconds) to wait "
 "before we destroy the grenade scene after the explosion"
 msgstr ""
-"``EXPLOSION_WAIT_TIME``: Le temps nécessaire (en seconde) d'attente avant "
+"``EXPLOSION_WAIT_TIME`` : Le temps nécessaire (en seconde) d'attente avant "
 "que nous détruisions la scène de la grenade après l'explosion"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:96
@@ -156,7 +156,7 @@ msgid ""
 "``explosion_wait_timer``: A variable for tracking how much time has passed "
 "since the grenade exploded."
 msgstr ""
-"``explosion_wait_timer``: Une variable utilisée pour suivre le temps passé "
+"``explosion_wait_timer`` : Une variable utilisée pour suivre le temps passé "
 "après que l'explosion soit arrivée."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:97
@@ -164,7 +164,7 @@ msgid ""
 "``rigid_shape``: The :ref:`CollisionShape <class_CollisionShape>` for the "
 "grenade's :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
-"``rigid_shape``: La :ref:`CollisionShape <class_CollisionShape>` pour le :"
+"``rigid_shape`` : La :ref:`CollisionShape <class_CollisionShape>` pour le :"
 "ref:`RigidBody <class_RigidBody>` de la grenade."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:98
@@ -172,7 +172,7 @@ msgid ""
 "``grenade_mesh``: The :ref:`MeshInstance <class_MeshInstance>` for the "
 "grenade."
 msgstr ""
-"``grenade_mesh``: La :ref:`MeshInstance <class_MeshInstance>` pour la "
+"``grenade_mesh`` : La :ref:`MeshInstance <class_MeshInstance>` pour la "
 "grenade."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:99
@@ -180,7 +180,7 @@ msgid ""
 "``blast_area``: The blast :ref:`Area <class_Area>` used to damage things "
 "when the grenade explodes."
 msgstr ""
-"``blast_area``: La :ref:`Area <class_Area>` de l'explosion utilisée pour "
+"``blast_area`` : La :ref:`Area <class_Area>` de l'explosion utilisée pour "
 "faire des dégâts aux objets quand la grenade explose."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:100
@@ -188,7 +188,7 @@ msgid ""
 "``explosion_particles``: The :ref:`Particles <class_Particles>` that come "
 "out when the grenade explodes."
 msgstr ""
-"``explosion_particles``: Les :ref:`Particles <class_Particles>` qui sortent "
+"``explosion_particles`` : Les :ref:`Particles <class_Particles>` qui sortent "
 "quand les grenades explosent."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:102
@@ -346,11 +346,11 @@ msgid ""
 "we no longer need it."
 msgstr ""
 "Ensuite, nous vérifions si ``explosion_wait_timer`` est supérieur ou égal à "
-"``EXPLOSION_WAIT_TIME``. Parce que nous avons ajouté ``delta``,  cela va "
-"être appelée une seule fois. Si ``explosion_wait_timer`` est supérieur ou "
-"égal à ``EXPLOSION_WAIT_TIME``, les grenades ont attendues suffisamment "
-"longtemps pour laisser les :ref:`Particles <class_Particles>` se lancer et "
-"nous pouvons détruire/libérer la grenade comme nous n'en avons plus besoin."
+"``EXPLOSION_WAIT_TIME``. Parce que nous avons ajouté ``delta``, cela va être "
+"appelée une seule fois. Si ``explosion_wait_timer`` est supérieur ou égal à "
+"``EXPLOSION_WAIT_TIME``, les grenades ont attendues suffisamment longtemps "
+"pour laisser les :ref:`Particles <class_Particles>` se lancer et nous "
+"pouvons détruire/libérer la grenade comme nous n'en avons plus besoin."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:148
 msgid ""
@@ -398,7 +398,7 @@ msgid ""
 "``attached``: A variable for tracking whether or not the sticky grenade has "
 "attached to a :ref:`PhysicsBody <class_PhysicsBody>`."
 msgstr ""
-"``attached``: Une variable utilisé pour savoir si oui ou non, la grenade "
+"``attached`` : Une variable utilisé pour savoir si oui ou non, la grenade "
 "collante est attachée à un :ref:`PhysicsBody <class_PhysicsBody>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:249
@@ -406,14 +406,14 @@ msgid ""
 "``attach_point``: A variable to hold a :ref:`Spatial <class_Spatial>` that "
 "will be at the position where the sticky grenade collided."
 msgstr ""
-"``attach_point``: Une variable qui stocke un :ref:`Spatial <class_Spatial>` "
+"``attach_point`` : Une variable qui stocke un :ref:`Spatial <class_Spatial>` "
 "qui sera à la position où la grenade collante est entrée en collision."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:250
 msgid ""
 "``player_body``: The player's :ref:`KinematicBody <class_KinematicBody>`."
 msgstr ""
-"``player_body``: Le :ref:`KinematicBody <class_KinematicBody>` du joueur."
+"``player_body`` : Le :ref:`KinematicBody <class_KinematicBody>` du joueur."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:252
 msgid ""
@@ -436,7 +436,7 @@ msgid ""
 msgstr ""
 "Maintenant, regardons les petits changements dans ``_ready``. Nous avons "
 "ajouté une ligne de code de façon à ce que quand n'importe quel corps rentre "
-"dans  ``Stick_Area``, la fonction ``collided_with_body`` soit appelée."
+"dans ``Stick_Area``, la fonction ``collided_with_body`` soit appelée."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:262
 msgid "Next let's take a look at ``collided_with_body``."
@@ -610,7 +610,7 @@ msgid ""
 "``grenade_amounts``: The amount of grenades the player is currently carrying "
 "(for each type of grenade)."
 msgstr ""
-"``grenade_amounts``: Le nombre de grenades que le joueur porte actuellement "
+"``grenade_amounts`` : Le nombre de grenades que le joueur porte actuellement "
 "(pour chaque type de grenade)."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:320
@@ -623,14 +623,14 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:321
 msgid "``grenade_scene``: The grenade scene we worked on earlier."
 msgstr ""
-"``grenade_scene``: La scène de grenade sur laquelle nous avons travaillé "
+"``grenade_scene`` : La scène de grenade sur laquelle nous avons travaillé "
 "plus tôt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:322
 msgid ""
 "``sticky_grenade_scene``: The sticky grenade scene we worked on earlier."
 msgstr ""
-"``sticky_grenade_scene``: La scène de grenade collante sur laquelle nous "
+"``sticky_grenade_scene`` : La scène de grenade collante sur laquelle nous "
 "avons travaillé plus tôt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:323
@@ -638,7 +638,7 @@ msgid ""
 "``GRENADE_THROW_FORCE``: The force at which the player will throw the "
 "grenades."
 msgstr ""
-"``GRENADE_THROW_FORCE``: La force avec laquelle le joueur va lancer les "
+"``GRENADE_THROW_FORCE`` : La force avec laquelle le joueur va lancer les "
 "grenades."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:325
@@ -828,7 +828,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:442
 msgid "``GRENADE_AMOUNTS``: The amount of grenades each pickup contains."
-msgstr "``GRENADE_AMOUNTS``: Le montant de grenades que chaque bonus contient."
+msgstr ""
+"``GRENADE_AMOUNTS`` : Le montant de grenades que chaque bonus contient."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:444
 msgid ""
@@ -865,7 +866,7 @@ msgid ""
 "``grabbed_object``: A variable to hold the grabbed :ref:`RigidBody "
 "<class_RigidBody>` node."
 msgstr ""
-"``grabbed_object``: Une variable pour stocker le nœud :ref:`RigidBody "
+"``grabbed_object`` : Une variable pour stocker le nœud :ref:`RigidBody "
 "<class_RigidBody>` attrapé."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:467
@@ -873,7 +874,7 @@ msgid ""
 "``OBJECT_THROW_FORCE``: The force with which the player throws the grabbed "
 "object."
 msgstr ""
-"``OBJECT_THROW_FORCE``: La force avec laquelle le joueur va lancer l'objet "
+"``OBJECT_THROW_FORCE`` : La force avec laquelle le joueur va lancer l'objet "
 "attrapé."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:468
@@ -881,15 +882,15 @@ msgid ""
 "``OBJECT_GRAB_DISTANCE``: The distance away from the camera at which the "
 "player holds the grabbed object."
 msgstr ""
-"``OBJECT_GRAB_DISTANCE``: La distance entre la caméra et l'objet attrapé par "
-"le joueur."
+"``OBJECT_GRAB_DISTANCE`` : La distance entre la caméra et l'objet attrapé "
+"par le joueur."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:469
 msgid ""
 "``OBJECT_GRAB_RAY_DISTANCE``: The distance the :ref:`Raycast "
 "<class_Raycast>` goes. This is the player's grab distance."
 msgstr ""
-"``OBJECT_GRAB_RAY_DISTANCE``: La distance parcourue par le :ref:`Raycast "
+"``OBJECT_GRAB_RAY_DISTANCE`` : La distance parcourue par le :ref:`Raycast "
 "<class_Raycast>`. C'est la distance à laquelle le joueur peut attraper des "
 "objets."
 
@@ -945,7 +946,7 @@ msgid ""
 "see :ref:`Ray-casting <doc_ray-casting>` for more information on raycasting "
 "in Godot."
 msgstr ""
-"voir  :ref:`Ray-casting <doc_ray-casting>` pour plus d'informations sur le "
+"voir :ref:`Ray-casting <doc_ray-casting>` pour plus d'informations sur le "
 "raycasting dans Godot."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:526
@@ -997,7 +998,7 @@ msgid ""
 "mode on the :ref:`RigidBody <class_RigidBody>` we collided with to "
 "``MODE_STATIC`` so it doesn't move in our hands."
 msgstr ""
-"Si le rayon est rentré en contact avec un  :ref:`RigidBody "
+"Si le rayon est rentré en contact avec un :ref:`RigidBody "
 "<class_RigidBody>`, on l'assigne au ``grabbed_object`. On met ensuite le "
 "mode du :ref:`RigidBody <class_RigidBody>` avec lequel nous sommes rentré en "
 "contact en ``MODE_STATIC``de façon à ce qu'il ne bouge pas dans nos mains."
@@ -1019,7 +1020,7 @@ msgid ""
 "If ``grabbed_object`` is not ``null``, then we need to throw the :ref:"
 "`RigidBody <class_RigidBody>` the player is holding."
 msgstr ""
-"Si ``grabbed_object`` n'est pas ``null``, nous devons alors lancer le  :ref:"
+"Si ``grabbed_object`` n'est pas ``null``, nous devons alors lancer le :ref:"
 "`RigidBody <class_RigidBody>` que le joueur tient."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:544
@@ -1069,7 +1070,7 @@ msgid ""
 msgstr ""
 "Nous assignons alors ``1`` au collision et layer mask du :ref:`RigidBody "
 "<class_RigidBody>` attrapé, afin qu'il puisse rentre en collision avec "
-"d'autres objets  à nouveau."
+"d'autres objets à nouveau."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:556
 msgid ""
@@ -1171,7 +1172,7 @@ msgid ""
 "``Vision_Area``, and a ``Smoke`` :ref:`Particles <class_Particles>` node."
 msgstr ""
 "Remarquez comme la tourelle se décompose en plusieurs parties : ``Base``, "
-"``Head``, ``Vision_Area``, et un nœud de  :ref:`Particles <class_Particles>` "
+"``Head``, ``Vision_Area``, et un nœud de :ref:`Particles <class_Particles>` "
 "``Smoke``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:602
@@ -1238,21 +1239,21 @@ msgid ""
 "``use_raycast``: An exported boolean so we can change whether the turret "
 "uses objects or raycasting for bullets."
 msgstr ""
-"``use_raycast``: Un booléen exporté que nous allons pouvoir changer quand la "
-"tourelle utilise des objets ou tire des rayons pour des balles."
+"``use_raycast`` : Un booléen exporté que nous allons pouvoir changer quand "
+"la tourelle utilise des objets ou tire des rayons pour des balles."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:783
 msgid ""
 "``TURRET_DAMAGE_BULLET``: The amount of damage a single bullet scene does."
 msgstr ""
-"``TURRET_DAMAGE_BULLET``: Le montant de dégâts d'une seule scène de balle."
+"``TURRET_DAMAGE_BULLET`` : Le montant de dégâts d'une seule scène de balle."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:784
 msgid ""
 "``TURRET_DAMAGE_RAYCAST``: The amount of damage a single :ref:`Raycast "
 "<class_Raycast>` bullet does."
 msgstr ""
-"``TURRET_DAMAGE_RAYCAST``: Le montant de dégats qu'une seule balle :ref:"
+"``TURRET_DAMAGE_RAYCAST`` : Le montant de dégâts qu'une seule balle :ref:"
 "`Raycast <class_Raycast>` fait."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:785
@@ -1260,40 +1261,41 @@ msgid ""
 "``FLASH_TIME``: The amount of time (in seconds) the muzzle flash meshes are "
 "visible."
 msgstr ""
-"``FLASH_TIME``: La durée (en seconde) pendant laquelle le flash sur le canon "
-"est visible."
+"``FLASH_TIME`` : La durée (en seconde) pendant laquelle le flash sur le "
+"canon est visible."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:786
 msgid ""
 "``flash_timer``: A variable for tracking how long the muzzle flash meshes "
 "have been visible."
 msgstr ""
-"``flash_timer``: Une variable utilisée pour savoir combien de temps a passé "
+"``flash_timer`` : Une variable utilisée pour savoir combien de temps a passé "
 "depuis qu'on a rendu visible le flash du canon."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:787
 msgid "``FIRE_TIME``: The amount of time (in seconds) needed to fire a bullet."
-msgstr "``FIRE_TIME``: Le temps nécessaire (en secondes) pour tirer une balle."
+msgstr ""
+"``FIRE_TIME`` : Le temps nécessaire (en secondes) pour tirer une balle."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:788
 msgid ""
 "``fire_timer``: A variable for tracking how much time has passed since the "
 "turret last fired."
 msgstr ""
-"``fire_timer``: Une variable utilisée pour savoir combien de temps a passé "
+"``fire_timer`` : Une variable utilisée pour savoir combien de temps a passé "
 "depuis qu'une balle a été tirée."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:789
 msgid "``node_turret_head``: A variable to hold the ``Head`` node."
 msgstr ""
-"``node_turret_head``: Une variable utilisée pour stocker le nœud ``Head``."
+"``node_turret_head`` : Une variable utilisée pour stocker le nœud ``Head``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:790
 msgid ""
 "``node_raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node "
 "attached to the turret's head."
 msgstr ""
-"``node_raycast``: Une variable nous permettant de stocker le nœud :ref:"
+"``node_raycast`` : Une variable nous permettant de stocker le nœud :ref:"
 "`Raycast <class_Raycast>` attaché à la tête de la tourelle."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:791
@@ -1301,7 +1303,7 @@ msgid ""
 "``node_flash_one``: A variable to hold the first muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
 msgstr ""
-"``node_flash_one``: Une variable utilisée pour stocker le premier :ref:"
+"``node_flash_one`` : Une variable utilisée pour stocker le premier :ref:"
 "`MeshInstance <class_MeshInstance>`du flash du canon."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:792
@@ -1309,43 +1311,44 @@ msgid ""
 "``node_flash_two``: A variable to hold the second muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
 msgstr ""
-"``node_flash_two``: Une variable utilisée pour stocker le second :ref:"
+"``node_flash_two`` : Une variable utilisée pour stocker le second :ref:"
 "`MeshInstance <class_MeshInstance>`du flash du canon."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:793
 msgid "``ammo_in_turret``: The amount of ammo currently in the turret."
 msgstr ""
-"``ammo_in_turret``: Le nombre de balles dont la tourelle dispose "
+"``ammo_in_turret`` : Le nombre de balles dont la tourelle dispose "
 "actuellement."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:794
 msgid "``AMMO_IN_FULL_TURRET``: The amount of ammo in a full turret."
 msgstr ""
-"``AMMO_IN_FULL_TURRET``: Le nombre de balle dont une tourelle pleine dispose."
+"``AMMO_IN_FULL_TURRET`` : Le nombre de balle dont une tourelle pleine "
+"dispose."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:795
 msgid "``AMMO_RELOAD_TIME``: The amount of time it takes the turret to reload."
 msgstr ""
-"``AMMO_RELOAD_TIME``: Le temps qu'il faut pour qu'une tourelle recharge."
+"``AMMO_RELOAD_TIME`` : Le temps qu'il faut pour qu'une tourelle recharge."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:796
 msgid ""
 "``ammo_reload_timer``: A variable for tracking how long the turret has been "
 "reloading."
 msgstr ""
-"``ammo_reload_timer``: Une variable utilisée pour le temps qu'a passer une "
+"``ammo_reload_timer`` : Une variable utilisée pour le temps qu'a passer une "
 "tourelle a recharger."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:797
 msgid "``current_target``: The turret's current target."
-msgstr "``current_target``: La cible courante de la tourelle."
+msgstr "``current_target`` : La cible courante de la tourelle."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:798
 msgid ""
 "``is_active``: A variable for tracking whether the turret is able to fire at "
 "the target."
 msgstr ""
-"``is_active``: Une variable pour savoir si la tourelle peut tirer sur la "
+"``is_active`` : Une variable pour savoir si la tourelle peut tirer sur la "
 "cible ou non."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:799
@@ -1353,23 +1356,23 @@ msgid ""
 "``PLAYER_HEIGHT``: The amount of height we're adding to the target so we're "
 "not shooting at its feet."
 msgstr ""
-"``PLAYER_HEIGHT``: La hauteur que nous ajoutons afin que la tourelle ne tire "
-"pas sur les pieds de la cible."
+"``PLAYER_HEIGHT`` : La hauteur que nous ajoutons afin que la tourelle ne "
+"tire pas sur les pieds de la cible."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:800
 msgid "``smoke_particles``: A variable to hold the smoke particles node."
 msgstr ""
-"``smoke_particles``: Une variable pour stocker les nœuds de particule de "
+"``smoke_particles`` : Une variable pour stocker les nœuds de particule de "
 "fumée."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:801
 msgid "``turret_health``: The amount of health the turret currently has."
-msgstr "``turret_health``: La santé actuelle de la tourelle."
+msgstr "``turret_health`` : La santé actuelle de la tourelle."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:802
 msgid "``MAX_TURRET_HEALTH``: The amount of health a fully healed turret has."
 msgstr ""
-"``MAX_TURRET_HEALTH``: La quantité de santé dont une tourelle intacte "
+"``MAX_TURRET_HEALTH`` : La quantité de santé dont une tourelle intacte "
 "dispose."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:803
@@ -1377,7 +1380,7 @@ msgid ""
 "``DESTROYED_TIME``: The amount of time (in seconds) it takes for a destroyed "
 "turret to repair itself."
 msgstr ""
-"``DESTROYED_TIME``: Le temps qu'il faut (en seconde) pour une tourelle "
+"``DESTROYED_TIME`` : Le temps qu'il faut (en seconde) pour une tourelle "
 "détruite pour se réparer elle-même."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:804
@@ -1385,7 +1388,7 @@ msgid ""
 "``destroyed_timer``: A variable for tracking the amount of time a turret has "
 "been destroyed."
 msgstr ""
-"``destroyed_timer``: Une variable pour suivre le temps pendant lequel une "
+"``destroyed_timer`` : Une variable pour suivre le temps pendant lequel une "
 "tourelle a été détruite."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:805
@@ -1393,7 +1396,7 @@ msgid ""
 "``bullet_scene``: The bullet scene the turret fires (same scene as the "
 "player's pistol)"
 msgstr ""
-"``bullet_scene``: La scène de la balle que doit tirer la tourelle (même "
+"``bullet_scene`` : La scène de la balle que doit tirer la tourelle (même "
 "scène que celle pour le pistolet du joueur)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:807
@@ -1506,7 +1509,7 @@ msgid ""
 "can fire a bullet, so we call the ``fire_bullet`` function."
 msgstr ""
 "S'il y en a, nous vérifions alors si ``fire_timer`` est supérieur à zéro. Si "
-"c'est le cas,  la tourelle ne peut pas tirer et nous devons soustraire "
+"c'est le cas, la tourelle ne peut pas tirer et nous devons soustraire "
 "``delta`` de ``fire_timer``. Si ``fire_timer`` est inférieur ou égal à zéro, "
 "la tourelle peut alors tirer une balle, nous appelons donc la fonction "
 "``fire_bullet``."
@@ -1752,7 +1755,7 @@ msgid ""
 "``Turret`` node."
 msgstr ""
 "Sélectionnez maintenant l'autre nœud :ref:`StaticBody "
-"<class_StaticBody>`(que ce soit dans ``Body`` ou dans ``Head``)  et assignez "
+"<class_StaticBody>`(que ce soit dans ``Body`` ou dans ``Head``) et assignez "
 "lui le script ``TurretBodies.gd``. Une fois le script attaché, assignez de "
 "nouveau le :ref:`NodePath <class_NodePath>` au nœud ``Turret``."
 
@@ -1788,7 +1791,7 @@ msgid ""
 "Now you can pick up :ref:`RigidBody <class_RigidBody>` nodes and throw "
 "grenades. We now also have turrets to fire at the player."
 msgstr ""
-"Vous pouvez maintenant récupérer des nœuds  :ref:`RigidBody "
+"Vous pouvez maintenant récupérer des nœuds :ref:`RigidBody "
 "<class_RigidBody>` et lancer des grenades. Nous avons également des "
 "tourelles qui tirent sur le joueur."
 

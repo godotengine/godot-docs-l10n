@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,21 +35,18 @@ msgid "Some use-cases where customizing the default page is useful include:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:13
-#, fuzzy
 msgid "Loading files from a different directory than the page;"
-msgstr "Cargar archivos de diferentes directorios"
+msgstr "Cargar archivos de diferentes directorios;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:14
-#, fuzzy
 msgid "Loading a ``.zip`` file instead of a ``.pck`` file as the main pack;"
-msgstr "Cargar archivos ``.zip`` en lugar de ``.pck`` como paquete principal"
+msgstr "Cargar archivos ``.zip`` en lugar de ``.pck`` como paquete principal;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:15
-#, fuzzy
 msgid "Loading the engine from a different directory than the main pack file;"
 msgstr ""
 "Cargar archivos del motor desde un directorio distinto al paquete de datos "
-"principal"
+"principal;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:16
 msgid ""
@@ -58,13 +55,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:17
-#, fuzzy
 msgid ""
 "Loading some extra files before the engine starts, making them available in "
 "the project file system as soon as possible;"
 msgstr ""
 "Cargar archivos extra antes de que arranque el motor, así estarán "
-"disponibles en el sistema de archivos luego"
+"disponibles en el sistema de archivos luego;"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:19
 #, fuzzy
@@ -76,7 +72,6 @@ msgstr ""
 "un script MainLoop"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:21
-#, fuzzy
 msgid ""
 "The default HTML page is available in the Godot Engine repository at `/misc/"
 "dist/html/full-size.html <https://github.com/godotengine/godot/blob/master/"
@@ -88,8 +83,11 @@ msgid ""
 msgstr ""
 "La página HTML por defecto está disponible en el repositorio de Godot Engine "
 "en `/misc/dist/html/full-size.html <https://github.com/godotengine/godot/"
-"blob/master/misc/dist/html/full-size.html>`__. Algunos casos de uso simple "
-"donde es útil personalizar la página por defecto incluyen:"
+"blob/master/misc/dist/html/full-size.html>`__ y puede ser usada como "
+"referencia para implementación. Otro ejemplo de página está disponible en `/"
+"misc/dist/html/fixed-size.html <https://github.com/godotengine/godot/blob/"
+"master/misc/dist/html/fixed-size.html>`__, este difiere del que viene por "
+"defecto en que usa un canvas de area fija y un widget de salidas debajo."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:27
 msgid ""

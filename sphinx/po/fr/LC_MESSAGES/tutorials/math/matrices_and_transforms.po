@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,10 +128,11 @@ msgstr ""
 "contribuent au déplacement dans une direction donnée."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:53
+#, fuzzy
 msgid ""
 "When we refer to a value such as `t.x.y`, that's the Y component of the X "
 "column vector. In other words, the bottom-left of the matrix. Similarly, `t."
-"x.x` is top-left, `t.y.x` is top-right,and `t.y.y` is bottom-right, where "
+"x.x` is top-left, `t.y.x` is top-right, and `t.y.y` is bottom-right, where "
 "`t` is the Transform2D."
 msgstr ""
 "Lorsque nous faisons référence à une valeur telle que `t.x.y`, c'est la "
@@ -243,7 +244,6 @@ msgstr ""
 "faisons cela, nous obtenons le résultat souhaité de la rotation de l'objet :"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:127
-#, fuzzy
 msgid ""
 "If you have trouble understanding the above, try this exercise: Cut a square "
 "of paper, draw X and Y vectors on top of it, place it on graph paper, then "
@@ -255,7 +255,6 @@ msgstr ""
 "d'extrémité."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:131
-#, fuzzy
 msgid ""
 "To perform rotation in code, we need to be able to calculate the values "
 "programmatically. This image shows the formulas needed to calculate the "
@@ -852,7 +851,6 @@ msgid "How does it all work in 3D?"
 msgstr "Comment tout cela fonctionne-t-il en 3D ?"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:584
-#, fuzzy
 msgid ""
 "One of the great things about transformation matrices is that they work very "
 "similarly between 2D and 3D transformations. All the code and formulas used "
@@ -945,7 +943,6 @@ msgstr ""
 "de base."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:625
-#, fuzzy
 msgid ""
 "With 2D, we have an easy way (atan2) to switch between a transformation "
 "matrix and an angle. In 3D, we can't simply represent rotation as one "

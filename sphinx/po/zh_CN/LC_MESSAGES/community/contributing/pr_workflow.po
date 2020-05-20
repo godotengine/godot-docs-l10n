@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,8 +132,10 @@ msgid ""
 "branch to the currently maintained stable release (e.g. 3.1.2 or 2.1.6). As "
 "a rule of thumb, the last stable branch is maintained until the next major "
 "version (e.g. the ``3.0`` branch was maintained until the release of Godot "
-"3.1). If you want to make PRs against a maintained stable branch, you will "
-"have to check if your changes are also relevant for the ``master`` branch."
+"3.1). If you want to make PRs against a maintained stable branch, please "
+"check first if your changes are also relevant for the ``master`` branch, and "
+"if so make the PR for the ``master`` branch in priority. Release managers "
+"can then cherry-pick the fix to a stable branch if relevant."
 msgstr ""
 "稳定的分支以它们的版本命名，例如 ``3.0`` 和 ``2.1`` 。它们(例如3.0.2或2.1.5)"
 "用于将错误修复和增强功能从 ``master`` 分支移植到当前维护的稳定版本。根据经"
@@ -141,17 +143,18 @@ msgstr ""
 "Godot 2.1发行)。如果要对维护的稳定分支进行PR，则必须检查您的更改是否也与 "
 "``master`` 分支相关。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:65
+#: ../../docs/community/contributing/pr_workflow.rst:67
+#, fuzzy
 msgid ""
-"There might be feature branches at time, usually meant to be merged into the "
-"``master`` branch at some time."
+"There might occasionally be feature branches, usually meant to be merged "
+"into the ``master`` branch at some time."
 msgstr "有时可能会有功能分支，通常意味着在某个时候合并到 ``master`` 分支。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:69
+#: ../../docs/community/contributing/pr_workflow.rst:71
 msgid "Forking and cloning"
 msgstr "分叉和克隆"
 
-#: ../../docs/community/contributing/pr_workflow.rst:71
+#: ../../docs/community/contributing/pr_workflow.rst:73
 msgid ""
 "The first step is to *fork* the `godotengine/godot <https://github.com/"
 "godotengine/godot>`_ repository on GitHub. To do so, you will need to have a "
@@ -162,7 +165,7 @@ msgstr ""
 "godot>`_ 库。 为此，您需要拥有一个GitHub帐户并登录。在存储库的GitHub页面的右"
 "上角，您应该看到如下所示的 ``Fork`` 按钮："
 
-#: ../../docs/community/contributing/pr_workflow.rst:78
+#: ../../docs/community/contributing/pr_workflow.rst:80
 msgid ""
 "Click it, and after a while you should be redirected to your own fork of the "
 "Godot repo, with your GitHub username as namespace:"
@@ -170,7 +173,7 @@ msgstr ""
 "点击它，一段时间后，您应该被重定向到您自己的Godot存储库分叉，并将GitHub用户名"
 "作为名称空间："
 
-#: ../../docs/community/contributing/pr_workflow.rst:83
+#: ../../docs/community/contributing/pr_workflow.rst:85
 msgid ""
 "You can then *clone* your fork, i.e. create a local copy of the online "
 "repository (in Git speak, the *origin remote*). If you haven't already, "
@@ -182,7 +185,7 @@ msgstr ""
 "remote*)。如果您还没有，若您使用的是Windows或macOS，请从 `其网站 <https://"
 "git-scm.com>`_ 下载Git；若您使用的是Linux，请通过您的软件包管理器安装它。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:88
+#: ../../docs/community/contributing/pr_workflow.rst:90
 msgid ""
 "If you are on Windows, open Git Bash to type commands. macOS and Linux users "
 "can use their respective terminals."
@@ -190,11 +193,11 @@ msgstr ""
 "如果您使用的是Windows，请打开Git Bash键入命令。macOS和Linux用户可以使用各自的"
 "终端。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:91
+#: ../../docs/community/contributing/pr_workflow.rst:93
 msgid "To clone your fork from GitHub, use the following command:"
 msgstr "要从GitHub克隆您的fork，请使用以下命令："
 
-#: ../../docs/community/contributing/pr_workflow.rst:97
+#: ../../docs/community/contributing/pr_workflow.rst:99
 msgid ""
 "In our examples, the \"$\" character denotes the command line prompt on "
 "typical UNIX shells. It is not part of the command and should not be typed."
@@ -202,31 +205,33 @@ msgstr ""
 "在我们的示例中，``$`` 字符表示典型UNIX shell上的命令行提示符。 它不是命令的一"
 "部分，不应该键入。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:101
+#: ../../docs/community/contributing/pr_workflow.rst:103
 msgid ""
 "After a little while, you should have a ``godot`` directory in your current "
 "working directory. Move into it using the ``cd`` command:"
 msgstr ""
 "稍后，您应该在当前工作目录中有一个 ``godot`` 目录。 使用 ``cd`` 命令进入它："
 
-#: ../../docs/community/contributing/pr_workflow.rst:108
+#: ../../docs/community/contributing/pr_workflow.rst:110
 msgid ""
 "We will start by setting up a reference to the original repository that we "
 "forked:"
 msgstr "我们将从建立对我们分叉的原始存储库的引用开始："
 
-#: ../../docs/community/contributing/pr_workflow.rst:115
+#: ../../docs/community/contributing/pr_workflow.rst:117
+#, fuzzy
 msgid ""
 "This will create a reference named ``upstream`` pointing to the original "
-"godotengine/godot repository. This will be useful when you want to pull new "
-"commits from its ``master`` branch to update your fork. You have another "
-"``remote`` reference named ``origin``, which points to your fork."
+"``godotengine/godot`` repository. This will be useful when you want to pull "
+"new commits from its ``master`` branch to update your fork. You have another "
+"remote reference named ``origin``, which points to your fork (``USERNAME/"
+"godot``)."
 msgstr ""
 "这将创建一个名为 ``upstream`` 的引用，指向原始的godotengine/godot存储库。当您"
 "想从它的 ``master`` 分支中提取新的提交来更新您的fork时，这将非常有用。您有另"
 "一个名为 ``origin`` 的 ``remote`` 引用，它指向您的fork。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:120
+#: ../../docs/community/contributing/pr_workflow.rst:122
 msgid ""
 "You only need to do the above steps once, as long as you keep that local "
 "``godot`` folder (which you can move around if you want, the relevant "
@@ -235,13 +240,13 @@ msgstr ""
 "您只需要做一次上面的步骤，只要您保留本地的 ``godot`` 文件夹(您可以随意移动"
 "它，相关的元数据隐藏在它的 ``.git`` 子文件夹中)。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:124
+#: ../../docs/community/contributing/pr_workflow.rst:126
 msgid ""
 "*Branch it, pull it, code it, stage it, commit, push it, rebase it... "
 "technologic.*"
 msgstr "*分支、拉取、编码、暂存、提交、推送、重新设置基线……技术。*"
 
-#: ../../docs/community/contributing/pr_workflow.rst:127
+#: ../../docs/community/contributing/pr_workflow.rst:129
 msgid ""
 "This bad take on Daft Punk's *Technologic* shows the general conception Git "
 "beginners have of its workflow: lots of strange commands to learn by copy "
@@ -255,20 +260,21 @@ msgstr ""
 "糟糕的学习方式，只要您好奇并且在迷失时毫不犹豫地询问您的搜索引擎，因此，我们"
 "将为您提供在Git中工作时要了解的基本命令。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:135
+#: ../../docs/community/contributing/pr_workflow.rst:137
+#, fuzzy
 msgid ""
-"In the following, we will assume that you want to implement a feature in "
-"Godot's project manager, which is coded in the ``editor/project_manager."
-"cpp`` file."
+"In the following, we will assume as an example that you want to implement a "
+"feature in Godot's project manager, which is coded in the ``editor/"
+"project_manager.cpp`` file."
 msgstr ""
 "在下文中，我们假设您要在Godot的项目管理器中实现一个功能，该功能已在 ``editor/"
 "project_manager.cpp`` 文件中编码。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:140
+#: ../../docs/community/contributing/pr_workflow.rst:142
 msgid "Branching"
 msgstr "分支"
 
-#: ../../docs/community/contributing/pr_workflow.rst:142
+#: ../../docs/community/contributing/pr_workflow.rst:144
 msgid ""
 "By default, the ``git clone`` should have put you on the ``master`` branch "
 "of your fork (``origin``). To start your own feature development, we will "
@@ -277,25 +283,33 @@ msgstr ""
 "默认情况下，``git clone`` 应该让您进入fork(``origin``)的 ``master`` 分支。要"
 "开始自己的功能开发，我们将创建一个功能分支："
 
-#: ../../docs/community/contributing/pr_workflow.rst:154
+#: ../../docs/community/contributing/pr_workflow.rst:156
 msgid "This command is equivalent:"
 msgstr "此命令是等效的："
 
-#: ../../docs/community/contributing/pr_workflow.rst:161
+#: ../../docs/community/contributing/pr_workflow.rst:163
 msgid "If you want to go back to the ``master`` branch, you'd use:"
 msgstr "如果您想回到 ``master`` 分支，您会使用："
 
-#: ../../docs/community/contributing/pr_workflow.rst:167
+#: ../../docs/community/contributing/pr_workflow.rst:169
 msgid ""
 "You can see which branch you are currently on with the ``git branch`` "
 "command:"
 msgstr "您可以使用 ``git branch`` 命令查看当前使用的分支："
 
-#: ../../docs/community/contributing/pr_workflow.rst:178
+#: ../../docs/community/contributing/pr_workflow.rst:179
+msgid ""
+"Be sure to always go back to the ``master`` branch before creating a new "
+"branch, as your current branch will be used as the base for the new one. "
+"Alternatively, you can specify a custom base branch after the new branch's "
+"name:"
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:188
 msgid "Updating your branch"
 msgstr "更新您的分支"
 
-#: ../../docs/community/contributing/pr_workflow.rst:180
+#: ../../docs/community/contributing/pr_workflow.rst:190
 msgid ""
 "This would not be needed the first time (just after you forked the upstream "
 "repository). However, the next time you want to work on something, you will "
@@ -307,7 +321,7 @@ msgstr ""
 "您会注意到您的fork的 ``master`` 落后于上游 ``master`` 分支几个提交：其他贡献"
 "者的拉取请求同时被合并。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:186
+#: ../../docs/community/contributing/pr_workflow.rst:196
 msgid ""
 "To ensure there won't be conflicts between the feature you develop and the "
 "current upstream ``master`` branch, you will have to update your branch by "
@@ -316,57 +330,87 @@ msgstr ""
 "为了确保您开发的功能与当前的上游 ``master`` 分支之间不会发生冲突，您将不得不"
 "通过 *拉* 上游分支来更新您的分支。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:194
-#, fuzzy
+#: ../../docs/community/contributing/pr_workflow.rst:204
 msgid ""
-"However, if you had local commits, this method will create a so-called "
-"\"merge commit\", and you will soon hear from fellow contributors that those "
-"are not wanted in PRs. To update the branch without creating a merge commit, "
-"you will have to use the ``--rebase`` option, so that your local commits are "
-"replayed on top of the updated upstream ``master`` branch. It will "
-"effectively modify the Git history of your branch, but that is for the "
-"greater good."
+"The ``--rebase`` argument will ensure that any local changes that you "
+"committed will be re-applied *on top* of the pulled branch, which is usually "
+"what we want in our PR workflow. This way, when you open a pull request, "
+"your own commits will be the only difference with the upstream ``master`` "
+"branch."
 msgstr ""
-"但是，如果您有本地提交，则此方法将创建一个所谓的“合并提交”，并且您很快就会从"
-"其他贡献者那里得知，PR中不需要这些提交。那么如何在不创建合并提交的情况下更新"
-"分支？您将必须使用 ``--rebase`` 选项，以便在更新的上游master分支顶部重放本地"
-"提交。它将有效地修改分支的Git历史记录，但这将更有利。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:201
-msgid "Therefore, the command that you should (almost) always use is:"
-msgstr "因此，您应该(几乎)始终使用的命令是："
-
-#: ../../docs/community/contributing/pr_workflow.rst:208
+#: ../../docs/community/contributing/pr_workflow.rst:209
 msgid ""
-"If you have already pushed the merge commit without using ``rebase``, or "
-"have made any other changes that have resulted in undesired history, you may "
-"use a hard reset to revert to a specific commit and try again:"
+"While rebasing, conflicts may arise if your commits modified code that has "
+"been changed in the upstream branch in the meantime. If that happens, Git "
+"will stop at the conflicting commit and will ask you to resolve the "
+"conflicts. You can do so with any text editor, then stage the changes (more "
+"on that later), and proceed with ``git rebase --continue``. Repeat the "
+"operation if later commits have conflicts too, until the rebase operation "
+"completes."
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:216
 msgid ""
-"Once you have done this, you may run ``--rebase`` to merge master correctly."
-msgstr ""
-
-#: ../../docs/community/contributing/pr_workflow.rst:218
-msgid ""
-"If you have already pushed the wrong commits to your remote branch, you will "
-"have to force push by using ``git push --force``."
+"If you're unsure about what is going on during a rebase and you panic (no "
+"worry, we all do the first few times), you can abort the rebase with ``git "
+"rebase --abort``. You will then be back to the original state of your branch "
+"before calling ``git pull --rebase``."
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:221
 msgid ""
-"``git reset --hard`` can be a dangerous operation, especially if you have "
-"untracked or uncommitted changes. However, if you have committed changes "
-"that you reset using ``git reset --hard``, you may still be able to recover "
-"them by resetting to a commit ID found with the ``git reflog`` command."
+"If you omit the ``--rebase`` argument, you will instead create a merge "
+"commit which tells Git what to make of the two distinct branches. If any "
+"conflicts arise, they would be resolved all at once via this merge commit."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:228
+#: ../../docs/community/contributing/pr_workflow.rst:225
+msgid ""
+"While this is a valid workflow and the default behavior of ``git pull``, "
+"merge commits within PRs are frowned upon in our PR workflow. We only use "
+"them when merging PRs into the upstream branch."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:229
+msgid ""
+"The philosophy is that a PR should represent the final stage of the changes "
+"made to the codebase, and we are not interested in mistakes and fixes that "
+"would have been done in intermediate stages before merging. Git gives us "
+"great tools to \"rewrite the history\" and make it as if we got things right "
+"the first time, and we're happy to use it to ensure that changes are easy to "
+"review and understand long after they have been merged."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:236
+msgid ""
+"If you have already created a merge commit without using ``rebase``, or have "
+"made any other changes that have resulted in undesired history, the best "
+"option is to use an *interactive rebase* on the upstream branch. See the :"
+"ref:`dedicated section <doc_pr_workflow_rebase>` for instructions."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:241
+msgid ""
+"If at any time you want to *reset* a local branch to a given commit or "
+"branch, you can do so with ``git reset --hard <commit ID>`` or ``git reset --"
+"hard <remote>/<branch>`` (e.g. ``git reset --hard upstream/master``)."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:245
+msgid ""
+"Be warned that this will remove any changes that you might have committed in "
+"this branch. If you ever lose commits by mistake, use the ``git reflog`` "
+"command to find the commit ID of the previous state that you would like to "
+"restore, and use it as argument of ``git reset --hard`` to go back to that "
+"state."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:251
 msgid "Making changes"
 msgstr "做出变更"
 
-#: ../../docs/community/contributing/pr_workflow.rst:230
+#: ../../docs/community/contributing/pr_workflow.rst:253
 msgid ""
 "You would then do your changes to our example's ``editor/project_manager."
 "cpp`` file with your usual development environment (text editor, IDE, etc.)."
@@ -374,7 +418,7 @@ msgstr ""
 "然后，您将使用常用的开发环境(文本编辑器，IDE等)对我们的示例的 ``editor/"
 "project_manager.cpp`` 文件进行更改。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:234
+#: ../../docs/community/contributing/pr_workflow.rst:257
 msgid ""
 "By default, those changes are *unstaged*. The staging area is a layer "
 "between your working directory (where you make your modifications) and the "
@@ -388,29 +432,29 @@ msgstr ""
 "将工作目录中的更改带到Git存储库，您需要使用 ``git add`` 命令对它们进行 *暂存"
 "(stage)*，然后使用 ``git commit`` 命令提交它们。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:241
+#: ../../docs/community/contributing/pr_workflow.rst:264
 msgid ""
 "There are various commands you should know to review your current work, "
 "before staging it, while it is staged, and after it has been committed."
 msgstr "在暂存之前，暂存后和提交之后，您应该了解各种命令来查看当前工作。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:244
+#: ../../docs/community/contributing/pr_workflow.rst:267
 msgid ""
 "``git diff`` will show you the current unstaged changes, i.e. the "
 "differences between your working directory and the staging area."
 msgstr "``git diff`` 将显示当前未暂存的更改，即工作目录和暂存区域之间的差异。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:246
+#: ../../docs/community/contributing/pr_workflow.rst:269
 msgid ""
 "``git checkout -- <files>`` will undo the unstaged changes to the given "
 "files."
 msgstr "``git checkout -- <files>`` 将撤消给定文件的未暂存更改。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:248
+#: ../../docs/community/contributing/pr_workflow.rst:271
 msgid "``git add <files>`` will *stage* the changes on the listed files."
 msgstr "``git add <files>`` 将 *暂存* 列出的文件的更改。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:249
+#: ../../docs/community/contributing/pr_workflow.rst:272
 msgid ""
 "``git diff --staged`` will show the current staged changes, i.e. the "
 "differences between the staging area and the last commit."
@@ -418,17 +462,17 @@ msgstr ""
 "``git diff --staged`` 将显示当前的暂存的更改，即暂存区域和上次提交之间的差"
 "异。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:251
+#: ../../docs/community/contributing/pr_workflow.rst:274
 msgid "``git reset HEAD <files>`` will *unstage* changes to the listed files."
 msgstr "``git reset HEAD <files>`` 将 *取消暂存* 列出的文件的更改。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:252
+#: ../../docs/community/contributing/pr_workflow.rst:275
 msgid ""
 "``git status`` will show you what are the currently staged and unstaged "
 "modifications."
 msgstr "``git status`` 将显示当前暂存和未暂存的修改。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:254
+#: ../../docs/community/contributing/pr_workflow.rst:277
 msgid ""
 "``git commit`` will commit the staged files. It will open a text editor (you "
 "can define the one you want to use with the ``GIT_EDITOR`` environment "
@@ -441,7 +485,14 @@ msgstr ""
 "器)，以便您编写提交日志。您可以使用 ``git commit -m \"Cool commit log\"`` 直"
 "接写日志。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:259
+#: ../../docs/community/contributing/pr_workflow.rst:282
+msgid ""
+"``git commit --amend`` lets you amend the last commit with your currently "
+"staged changes (added with ``git add``). This is the best option if you want "
+"to fix a mistake in the last commit (bug, typo, style issue, etc.)."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:285
 msgid ""
 "``git log`` will show you the last commits of your current branch. If you "
 "did local commits, they should be shown at the top."
@@ -449,14 +500,14 @@ msgstr ""
 "``git log`` 将显示当前分支的最后提交。 如果您做了本地提交，它们应该显示在顶"
 "部。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:261
+#: ../../docs/community/contributing/pr_workflow.rst:287
 msgid ""
 "``git show`` will show you the changes of the last commit. You can also "
 "specify a commit hash to see the changes for that commit."
 msgstr ""
 "``git show`` 将显示上次提交的更改。您还可以指定提交哈希以查看该提交的更改。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:264
+#: ../../docs/community/contributing/pr_workflow.rst:290
 msgid ""
 "That's a lot to memorize! Don't worry, just check this cheat sheet when you "
 "need to make changes, and learn by doing."
@@ -464,11 +515,11 @@ msgstr ""
 "要记住的东西太多了！不用担心，当您需要进行更改时，只需检查一下备忘单，然后边"
 "做边学即可。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:267
+#: ../../docs/community/contributing/pr_workflow.rst:293
 msgid "Here's how the shell history could look like on our example:"
 msgstr "以下是我们的示例中shell历史记录的样子："
 
-#: ../../docs/community/contributing/pr_workflow.rst:299
+#: ../../docs/community/contributing/pr_workflow.rst:325
 msgid ""
 "With this, we should have two new commits in our ``better-project-manager`` "
 "branch which were not in the ``master`` branch. They are still only local "
@@ -478,11 +529,11 @@ msgstr ""
 "交不在 ``master`` 分支中。它们仍然只是本地的，远程分支不知道它们，上游存储库"
 "也不知道。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:304
+#: ../../docs/community/contributing/pr_workflow.rst:330
 msgid "Pushing changes to a remote"
 msgstr "将更改推送到远程"
 
-#: ../../docs/community/contributing/pr_workflow.rst:306
+#: ../../docs/community/contributing/pr_workflow.rst:332
 msgid ""
 "That's where ``git push`` will come into play. In Git, a commit is always "
 "done in the local repository (unlike Subversion where a commit will modify "
@@ -493,7 +544,7 @@ msgstr ""
 "Subversion不同，其提交将直接修改远程存储库)。您需要 *推送* 新提交到远程分支以"
 "与世界共享它们。这个语法是："
 
-#: ../../docs/community/contributing/pr_workflow.rst:315
+#: ../../docs/community/contributing/pr_workflow.rst:341
 msgid ""
 "The part about the remote branch can be omitted if you want it to have the "
 "same name as the local branch, which is our case in this example, so we will "
@@ -502,7 +553,7 @@ msgstr ""
 "如果您希望远程分支与本地分支具有相同的名称，则可以省略有关远程分支的部分，在"
 "本示例中就是这种情况，因此我们将执行以下操作："
 
-#: ../../docs/community/contributing/pr_workflow.rst:323
+#: ../../docs/community/contributing/pr_workflow.rst:349
 msgid ""
 "Git will ask you for your username and password, and the changes will be "
 "sent to your remote. If you check the fork's page on GitHub, you should see "
@@ -511,25 +562,27 @@ msgstr ""
 "Git会要求您提供用户名和密码，更改将发送到您的远程分支。如果您在GitHub上查看"
 "fork的页面，则应该看到一个带有已添加提交的新分支。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:328
+#: ../../docs/community/contributing/pr_workflow.rst:354
 msgid "Issuing a pull request"
 msgstr "发出拉取请求"
 
-#: ../../docs/community/contributing/pr_workflow.rst:330
+#: ../../docs/community/contributing/pr_workflow.rst:356
+#, fuzzy
 msgid ""
 "When you load your fork's branch on GitHub, you should see a line saying *"
 "\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially "
 "some commits behind, if your ``master`` branch was out of sync with the "
-"upstream ``master`` branch."
+"upstream ``master`` branch)."
 msgstr ""
 "当您在GitHub上加载fork的分支时，您应该看到一行说 *“此分支比godotengine:master"
 "提前2个提交。”* 如果您的 ``master`` 分支与上游 ``master`` 分支不同步，则可能"
 "会有一些提交。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:337
+#: ../../docs/community/contributing/pr_workflow.rst:363
+#, fuzzy
 msgid ""
 "On that line, there is a \"Pull request\" link. Clicking it will open a form "
-"that will let you issue a pull request on the godotengine/godot upstream "
+"that will let you issue a pull request on the ``godotengine/godot`` upstream "
 "repository. It should show you your two commits, and state \"Able to merge"
 "\". If not (e.g. it has way more commits, or says there are merge "
 "conflicts), don't create the PR, something went wrong. Go to IRC and ask for "
@@ -540,7 +593,7 @@ msgstr ""
 "能够合并``。 如果没有(例如，它有更多的提交，或说有合并冲突)，不要创建PR，出错"
 "了。去IRC并寻求支持：)"
 
-#: ../../docs/community/contributing/pr_workflow.rst:343
+#: ../../docs/community/contributing/pr_workflow.rst:369
 msgid ""
 "Use an explicit title for the PR and put the necessary details in the "
 "comment area. You can drag and drop screenshots, GIFs or zipped projects if "
@@ -550,11 +603,11 @@ msgstr ""
 "为PR使用明确的标题，并将必要的详细信息放在注释区域。您可以拖放屏幕截图，GIF或"
 "压缩的项目(如果相关)，以展示您的工作实现的内容。点击“创建拉取请求”，没错！"
 
-#: ../../docs/community/contributing/pr_workflow.rst:349
+#: ../../docs/community/contributing/pr_workflow.rst:375
 msgid "Modifying a pull request"
 msgstr "修改拉取请求"
 
-#: ../../docs/community/contributing/pr_workflow.rst:351
+#: ../../docs/community/contributing/pr_workflow.rst:377
 msgid ""
 "While it is reviewed by other contributors, you will often need to make "
 "changes to your yet-unmerged PR, either because contributors requested them, "
@@ -563,7 +616,7 @@ msgstr ""
 "虽然它是由其他贡献者审核的，但您经常需要对尚未合并的PR进行更改，或者是因为贡"
 "献者要求他们，或者是因为您在测试时发现了自己的问题。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:355
+#: ../../docs/community/contributing/pr_workflow.rst:381
 msgid ""
 "The good news is that you can modify a pull request simply by acting on the "
 "branch you made the pull request from. You can e.g. make a new commit on "
@@ -572,64 +625,99 @@ msgstr ""
 "好消息是您可以简单地通过对您发出拉取请求的分支进行操作来修改拉取请求。 您可"
 "以，例如在该分支上进行新的提交，将其推送到您的分支，PR将自动更新："
 
-#: ../../docs/community/contributing/pr_workflow.rst:370
-msgid "That should do the trick, but..."
-msgstr "这应该是诀窍，但……"
-
-#: ../../docs/community/contributing/pr_workflow.rst:373
-msgid "Mastering the PR workflow: the rebase"
-msgstr "掌握PR工作流程：重新设置基线"
-
-#: ../../docs/community/contributing/pr_workflow.rst:375
+#: ../../docs/community/contributing/pr_workflow.rst:396
 msgid ""
-"On the situation outlined above, your fellow contributors who are "
-"particularly pedantic regarding the Git history might ask your to *rebase* "
-"your branch to *squash* or *meld* the last two commits together (i.e. the "
-"two related to the project manager), as the second commit basically fixes an "
-"issue in the first one."
+"However, be aware that in our PR workflow, we favor commits that bring the "
+"codebase from one functional state to another functional state, without "
+"having intermediate commits fixing up bugs in your own code or style issues. "
+"Most of the time, we will prefer a single commit in a given PR (unless "
+"there's a good reason to keep the changes separate), so instead of authoring "
+"a new commit, considering using ``git commit --amend`` to amend the previous "
+"commit with your fixes. The above example would then become:"
 msgstr ""
-"在上面提到的情况下，您的对于Git历史特别迂腐的贡献者，可能会要求您 *重新设置基"
-"线* 您的分支来 *压缩* 或者 *合并* 最后两个提交到一起(即两个与这个项目 "
-"``manager`` 有关)， 因为第二个提交基本上解决了第一个提交的问题。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:380
-msgid ""
-"Once the PR is merged, it is not relevant for a changelog reader that the PR "
-"author made mistakes; instead, we want to keep only commits that bring from "
-"one working state to another working state."
+#: ../../docs/community/contributing/pr_workflow.rst:426
+msgid "The interactive rebase"
 msgstr ""
-"PR合并后，将与变更日志读者即PR编写者无关将让人误解。相反，我们只想保留从一个"
-"工作状态进入另一工作状态的提交。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:384
+#: ../../docs/community/contributing/pr_workflow.rst:428
 msgid ""
-"To squash those two commits together, we will have to *rewrite history*. "
-"Right, we have that power. You may read that it's a bad practice, and it's "
-"true when it comes to branches of the upstream repo. But in your fork, you "
-"can do whatever you want, and everything is allowed to get neat PRs :)"
+"If you didn't follow the above steps closely to *amend* changes into a "
+"commit instead of creating fixup commits, or if you authored your changes "
+"without being aware of our workflow and Git usage tips, reviewers might "
+"request of your to *rebase* your branch to *squash* some or all of the "
+"commits into one."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:433
+msgid ""
+"Indeed, if some commits have been made following reviews to fix bugs, typos, "
+"etc. in the original commit, they are not relevant to a future changelog "
+"reader who would want to know what happened in the Godot codebase, or when "
+"and how a given file was last modified."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:438
+#, fuzzy
+msgid ""
+"To squash those extraneous commits into the main one, we will have to "
+"*rewrite history*. Right, we have that power. You may read that it's a bad "
+"practice, and it's true when it comes to branches of the upstream repo. But "
+"in your fork, you can do whatever you want, and everything is allowed to get "
+"neat PRs :)"
 msgstr ""
 "要将这两个提交压缩在一起，我们将不得不 *重写历史记录* 。对，我们有这种能力。"
 "您可能会了解到这是一个不好的做法，确实，当涉及到上游存储库的分支时。但是在您"
 "的分叉中，您可以做任何您想做的事情，并且一切都被允许以获得整洁的PR :)"
 
-#: ../../docs/community/contributing/pr_workflow.rst:389
+#: ../../docs/community/contributing/pr_workflow.rst:443
+#, fuzzy
 msgid ""
 "We will use the *interactive rebase* ``git rebase -i`` to do this. This "
-"command takes a commit hash as argument, and will let you modify all commits "
-"between that commit hash and the last one of the branch, the so-called "
-"*HEAD*. In our example, we want to act on the last two commits, so we will "
-"do:"
+"command takes a commit ID or a branch name as argument, and will let you "
+"modify all commits between that commit/branch and the last one in your "
+"working branch, the so-called ``HEAD``."
 msgstr ""
 "我们将使用 *交互式重新设置基线* ``git rebase -i`` 来执行此操作。此命令将使用"
 "提交哈希作为参数，并允许您修改该提交哈希与分支的最后一个提交之间的所有提交，"
 "即所谓的 *HEAD*。在我们的示例中，我们希望对最后两次提交采取行动，因此我们将执"
 "行以下操作："
 
-#: ../../docs/community/contributing/pr_workflow.rst:400
-msgid "This will open a text editor with:"
-msgstr "这将打开一个文本编辑器："
+#: ../../docs/community/contributing/pr_workflow.rst:448
+msgid ""
+"While you can give any commit ID to ``git rebase -i`` and review everything "
+"in between, the most common and convenient workflow involves rebasing on the "
+"*upstream ``master`` branch*, which you can do with:"
+msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:407
+#: ../../docs/community/contributing/pr_workflow.rst:456
+msgid ""
+"Referencing branches in Git is a bit tricky due to the distinction between "
+"remote and local branches. Here, ``upstream/master`` (with a `/`) is a local "
+"branch which has been pulled from the ``upstream`` remote's ``master`` "
+"branch."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:461
+msgid ""
+"Interactive rebases can only be done on local branches, so the `/` is "
+"important here. As the upstream remote changes frequently, your local "
+"``upstream/master`` branch may become outdated, so you can update it with "
+"``git fetch upstream master``. Contrarily to ``git pull --rebase upstream "
+"master`` which would update your currently checked out branch, ``fetch`` "
+"will only update the ``upstream/master`` reference (which is distinct from "
+"your local ``master`` branch... yes it's confusing, but you'll become "
+"familiar with this little by little)."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:471
+msgid ""
+"This will open a text editor (``vi`` by default, see `Git docs <https://git-"
+"scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor>__` to "
+"configure your favorite one) with something which may look like this:"
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:480
 msgid ""
 "The editor will also show instructions regarding how you can act on those "
 "commits. In particular, it should tell you that \"pick\" means to use that "
@@ -645,7 +733,7 @@ msgstr ""
 "从压缩的提交中丢弃提交日志。在我们的示例中，我们对保持 ``修复错字`` 提交的日"
 "志不感兴趣，因此我们使用："
 
-#: ../../docs/community/contributing/pr_workflow.rst:420
+#: ../../docs/community/contributing/pr_workflow.rst:493
 msgid ""
 "Upon saving and quitting the editor, the rebase will occur. The second "
 "commit will be melded into the first one, and ``git log`` and ``git show`` "
@@ -656,20 +744,7 @@ msgstr ""
 "且 ``git log`` 和 ``git show`` 现在应该确认您只有一个具有先前两个提交的更改的"
 "提交。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:425
-msgid ""
-"You could have avoided this rebase by using ``git commit --amend`` when "
-"fixing the typo. This command will write the staged changes directly into "
-"the *last* commit (``HEAD``), instead of creating a new commit like we did "
-"in this example. So it is equivalent to what we did with a new commit and "
-"then a rebase to mark it as \"fixup\"."
-msgstr ""
-"您可以在修复拼写错误时使用 ``git commit --amend`` 来避免这种重新设置基线。此"
-"命令将暂存更改直接写入 *最后的* 提交(``HEAD``)，而不是像我们在此示例中那样创"
-"建新提交。因此，这等效于我们对新提交进行的操作，然后进行了重新设置基线以将其"
-"标记为 ``fixup``。"
-
-#: ../../docs/community/contributing/pr_workflow.rst:431
+#: ../../docs/community/contributing/pr_workflow.rst:498
 msgid ""
 "But! You rewrote the history, and now your local and remote branches have "
 "diverged. Indeed, commit 1b4aad7 in the above example will have changed, and "
@@ -680,7 +755,7 @@ msgstr ""
 "1b4aad7将已更改，因此获得了新的提交哈希。如果您尝试推送到远程分支，将引发错"
 "误："
 
-#: ../../docs/community/contributing/pr_workflow.rst:445
+#: ../../docs/community/contributing/pr_workflow.rst:512
 #, fuzzy
 msgid ""
 "This is a sane behavior, Git will not let you push changes that would "
@@ -690,7 +765,7 @@ msgstr ""
 "这是一种理智的行为，Git不允许您推送将覆盖远程内容的更改。 但这实际上是我们要"
 "在此处执行的操作，因此我们将不得不 *强制* 执行此操作："
 
-#: ../../docs/community/contributing/pr_workflow.rst:453
+#: ../../docs/community/contributing/pr_workflow.rst:520
 msgid ""
 "And tadaa! Git will happily *replace* your remote branch with what you had "
 "locally (so make sure that's what you wanted, using ``git log``). This will "
@@ -699,11 +774,11 @@ msgstr ""
 "还有没错！ Git很乐意用您在本地拥有的东西 *替换* 您的远程分支(所以使用 ``git "
 "log`` 确保您想要的东西)。这也将相应地更新PR。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:458
+#: ../../docs/community/contributing/pr_workflow.rst:525
 msgid "Deleting a Git branch"
 msgstr "删除Git分支"
 
-#: ../../docs/community/contributing/pr_workflow.rst:460
+#: ../../docs/community/contributing/pr_workflow.rst:527
 msgid ""
 "After your pull request gets merged, there's one last thing you should do: "
 "delete your Git branch for the PR. There won't be issues if you don't delete "
@@ -714,17 +789,23 @@ msgstr ""
 "除分支不会有问题，但是这样做是一个好习惯。您将需要执行两次，一次是对本地分"
 "支，另一次是对GitHub上的远程分支。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:465
+#: ../../docs/community/contributing/pr_workflow.rst:532
 msgid "To delete our better project manager branch locally, use this command:"
 msgstr "要在本地删除 ``better project manager`` 分支，请使用以下命令："
 
-#: ../../docs/community/contributing/pr_workflow.rst:471
+#: ../../docs/community/contributing/pr_workflow.rst:538
 msgid ""
 "Alternatively, if the branch hadn't been merged yet and we wanted to delete "
 "it anyway, instead of ``-d`` you would use ``-D``."
 msgstr ""
 "或者，如果分支尚未合并，我们想要删除它，不是使用 ``-d``，而是使用 ``-D``。"
 
-#: ../../docs/community/contributing/pr_workflow.rst:474
+#: ../../docs/community/contributing/pr_workflow.rst:541
 msgid "Next, to delete the remote branch on GitHub use this command:"
 msgstr "接下来，要删除GitHub上的远程分支，请使用以下命令："
+
+#: ../../docs/community/contributing/pr_workflow.rst:547
+msgid ""
+"You can also delete the remote branch from the GitHub PR itself, a button "
+"should appear once it has been merged or closed."
+msgstr ""

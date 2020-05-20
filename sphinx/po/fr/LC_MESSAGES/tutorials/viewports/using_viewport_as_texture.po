@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,6 @@ msgstr ""
 "celle de cette planète."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:17
-#, fuzzy
 msgid ""
 "This tutorial assumes you are familiar with how to set up a basic scene "
 "including: a :ref:`Camera <class_Camera>`, a :ref:`light source "
@@ -66,7 +65,6 @@ msgstr ""
 "appliquées au maillage."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:23
-#, fuzzy
 msgid "In this tutorial, we'll cover the following topics:"
 msgstr "Durant ce tutoriel, nous couvrirons les sujets suivant :"
 
@@ -199,7 +197,6 @@ msgstr ""
 "SpatialMaterial`` :"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:80
-#, fuzzy
 msgid ""
 "Now we go into the :ref:`Mesh Instance <class_MeshInstance>` and add a :ref:"
 "`SpatialMaterial <class_SpatialMaterial>` to it. No need for a special :ref:"
@@ -221,7 +218,6 @@ msgstr ""
 "``Edit`` :"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:86
-#, fuzzy
 msgid ""
 "Open the newly created :ref:`SpatialMaterial <class_SpatialMaterial>` and "
 "scroll down to the \"Albedo\" section and click beside the \"Texture\" "
@@ -229,7 +225,7 @@ msgid ""
 "Choose \"New ViewportTexture\""
 msgstr ""
 "Ouvrez le nouveau :ref:`Spatial Material <class_SpatialMaterial>` créé et "
-"descendez jusqu'à la section \"Albédo\" et cliquez à côté de la propriété "
+"descendez jusqu'à la section \"Albedo\" et cliquez à côté de la propriété "
 "\"Texture\" pour ajouter une Albedo Texture. Ici, nous allons appliquer la "
 "texture que nous avons faite. Choisissez \"New ViewportTexture\""
 
@@ -289,7 +285,6 @@ msgstr ""
 "texture et voyons ce qui se passe."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:120
-#, fuzzy
 msgid ""
 "Not too bad. If you look around, you can see that the seam has now "
 "disappeared, but in its place, we have pinching at the poles. This pinching "
@@ -302,7 +297,7 @@ msgstr ""
 "jointure a maintenant disparu, mais à sa place, nous avons des pincements "
 "aux pôles. Ce pincement est dû à la façon dont Godot mappe les textures aux "
 "sphères dans son :ref:`Spatial Material <class_SpatialMaterial>`. Il utilise "
-"une technique de projection appelée projection équirectangulaire, qui "
+"une technique de projection appelée projection équi-rectangulaire, qui "
 "traduit une carte sphérique sur un plan 2D."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:125
@@ -540,7 +535,6 @@ msgstr ""
 "notre sortie ``COLOR`` comme valeur de ``Roughness``."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:282
-#, fuzzy
 msgid ""
 "You'll notice that very little changes except that the planet is no longer "
 "reflecting the sky. This is happening because, by default, when something is "
@@ -557,14 +551,14 @@ msgstr ""
 "Vous remarquerez que très peu de changements, sauf que la planète ne reflète "
 "plus le ciel. Cela se produit parce que, par défaut, quand quelque chose est "
 "rendu avec une valeur alpha, il est dessiné comme un objet transparent sur "
-"le fond. Et comme le fond par défaut de :ref:`Viewport <class_Viewport>` est "
-"opaque, le canal ``alpha`` du :ref:`Viewport Texture "
+"l'arrière plan. Et comme l'arrière plan par défaut de :ref:`Viewport "
+"<class_Viewport>` est opaque, le canal ``alpha`` du :ref:`Viewport Texture "
 "<class_ViewportTexture>` est ``1``, ce qui fait que la texture de la planète "
 "est dessinée avec des couleurs légèrement plus faibles et une valeur de "
 "``Roughness`` de ``1`` partout. Pour corriger cela, nous allons dans le :ref:"
-"`Viewport <class_Viewport>` et mettons \"Transparent Bg\" à on. Puisque nous "
-"rendons maintenant un objet transparent par-dessus un autre, nous voulons "
-"activer ``blend_premul_alpha`` :"
+"`Viewport <class_Viewport>` et activons la propriété \"Transparent Bg\". "
+"Puisque nous rendons maintenant un objet transparent par-dessus un autre, "
+"nous voulons activer ``blend_premul_alpha`` :"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:295
 msgid ""

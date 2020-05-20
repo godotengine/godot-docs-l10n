@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:4
+msgid "KDevelop"
+msgstr "KDevelop"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:6
+msgid ""
+"`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
+"desktop platforms."
+msgstr ""
+"`KDevelop <https://www.kdevelop.org>`_ est un IDE libre et open source pour "
+"toutes les plateformes de bureau."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:8
+#, fuzzy
+msgid "Start by opening KDevelop and choosing **Open Project**."
+msgstr "Commencez par ouvrir Kdevelop et choisir \"open project\"."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:12
+msgid "Choose the directory where you cloned Godot."
+msgstr "Choisissez le dossier où vous avez cloné Godot."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:14
+#, fuzzy
+msgid ""
+"On the next screen, choose **Custom Build System** for the **Project "
+"Manager**."
+msgstr ""
+"Sur l'écran suivant, choisissez \"Custom Build System\" pour le *Project "
+"manager*."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:18
+msgid "Now that the project has been imported, open the project configuration."
+msgstr ""
+"Maintenant que le projet a été importé, ouvrez la configuration du projet."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:22
+msgid "Add the following includes/imports:"
+msgstr "Ajouter les includes/imports suivants :"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:35
+msgid "Apply the changes."
+msgstr "Appliquez les changements."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:37
+#, fuzzy
+msgid ""
+"Switch to the **Custom Build System** tab. Add a build configuration and "
+"keep the build directory blank. Enable build tools and add ``scons`` as the "
+"executable then add ``platform=linuxbsd target=debug`` (``platform=osx`` if "
+"you're on macOS) as the arguments."
+msgstr ""
+"Passez à l'onglet \"Custom Build System\". Ajoutez une configuration de "
+"compilation et laissez le répertoire de compilation vide. Activez les outils "
+"de compilation et ajoutez ``scons`` comme exécutable puis ajoutez "
+"``platform=x11 target=debug`` (``platform=osx`` si vous êtes sous MacOS) "
+"comme argument."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:44
+#, fuzzy
+msgid ""
+"Next, we need to tell KDevelop where to find the binary. From the **Run** "
+"menu, choose **Configure Launches**."
+msgstr ""
+"Ensuite, nous devons dire à KDevelop où trouver le binaire. Dans le menu "
+"\"Run\", choisissez \"Configure Launches\"."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
+#, fuzzy
+msgid ""
+"Click **Add** if no launcher exists. Then add the path to your executable in "
+"the executable section. Your executable should be located in the ``bin/`` "
+"subdirectory and should be named something like ``godot.linuxbsd.tools.64`` "
+"(the name could be different depending on your platform and build options)."
+msgstr ""
+"Cliquez sur \"Add\" si aucun lanceur n'existe. Ajoutez ensuite le chemin "
+"d'accès à votre exécutable dans la section des exécutables. Votre exécutable "
+"doit être situé dans le sous-répertoire ``bin/`` et doit être nommé quelque "
+"chose comme ``godot.x11.tools.64`` (le nom peut être différent selon votre "
+"plate-forme et selon vos options de compilation)."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
+#, fuzzy
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"Un bref aperçu de ces canaux et d'autres canaux est également disponible sur "
+"le site Web de `Godot <https://godotengine.org/community>`_."

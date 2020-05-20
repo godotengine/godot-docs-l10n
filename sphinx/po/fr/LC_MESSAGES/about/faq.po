@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -198,7 +198,7 @@ msgid ""
 msgstr ""
 "Les langages officiellement supportés par Godot sont le GDScript, le Visual "
 "Scripting, C# et C++. Voir les sous-catégories pour chaque langage dans la "
-"section :ref: `script <toc-learn-scripting>`."
+"section :ref:`script <toc-learn-scripting>`."
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -280,8 +280,8 @@ msgid ""
 "complexity.**"
 msgstr ""
 "L'utilisation de GDScript présente de nombreux avantages lors du prototypage "
-"dans les phase alpha ou bêta de votre projet ou dans le cas où vous ne créez "
-"pas le prochain blockbuster, mais l'avantage le plus évident est la "
+"dans les phases alpha ou bêta de votre projet ou dans le cas où vous ne "
+"créez pas le prochain blockbuster, mais l'avantage le plus évident est la "
 "**réduction de la complexité** générale."
 
 #: ../../docs/about/faq.rst:106
@@ -363,23 +363,22 @@ msgstr ""
 "pour Godot étaient :"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Pas de bon support des threads dans la plupart des VMs de scripts, et Godot "
-"utilise des threads (Lua, Python, Squirrel, JS, AS, etc.)."
+"Mauvais support des threads dans la plupart des scripts de machines "
+"virtuelles, et Godot utilise des threads (Lua, Python, Squirrel, JS, AS, "
+"etc.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
-"Pas de bon support d'extension de classes dans la plupart des VMs de "
-"scripts, et les adapter à la façon dont Godot fonctionne est très inefficace "
-"(Lua, Python, JS)."
+"Mauvais support d'extension de classes dans la plupart des scripts de "
+"machines virtuelles, et les adapter à la façon dont Godot fonctionne est "
+"très inefficace (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:141
 msgid ""
@@ -436,7 +435,7 @@ msgid ""
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Godot supporte Collada via l'exportateur OpenCollada <https://github.com/"
+"Godot supporte Collada via l'exportateur `OpenCollada <https://github.com/"
 "KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ (Maya, 3DSMax). Si vous "
 "utilisez Blender, jetez un œil à notre propre `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
@@ -502,7 +501,7 @@ msgid ""
 msgstr ""
 "Si vous connaissez un SDK externe qui n'est pas supporté par Godot mais qui "
 "permet une intégration libre et open source, n'hésitez pas à commencer cette "
-"intégration vous-même. Godot n'est pas la propriété d'une personne; il "
+"intégration vous-même. Godot n'est pas la propriété d'une personne ; il "
 "appartient à la communauté, et il grandit avec des contributeurs ambitieux "
 "comme vous."
 
@@ -543,7 +542,7 @@ msgstr ""
 "La façon la plus courante et la plus appropriée d'y parvenir est d'utiliser "
 "une unique résolution de base pour le jeu et de ne gérer que les différents "
 "aspects d'écran. C'est principalement nécessaire pour la 2D, puisque c'est "
-"juste une question de champ de vision caméra X ou Y en en 3D."
+"juste une question de champ de XFov ou YFov en 3D."
 
 #: ../../docs/about/faq.rst:201
 msgid ""
@@ -642,7 +641,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
+msgstr "`GDNative is here ! <https ://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:241
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -368,30 +368,13 @@ msgid ""
 msgstr ""
 "Du kannst **andere** Ressourcentypen als nur die Basisressource erweitern."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:185
-#, fuzzy
-msgid ""
-"Resources and Dictionaries are both passed by reference, but only Resources "
-"are reference-counted. This means that if a Dictionary is passed between "
-"objects and the first object is deleted, all other objects' references to "
-"the Dictionary will be invalidated. Conversely, Resources will not be freed "
-"from memory until *all* the objects are deleted."
-msgstr ""
-"Ressourcen und Dictionaries (Wörterbücher) unterscheiden sich auch "
-"dahingehend, dass beide als Referenz übergeben werden, aber nur Ressourcen "
-"werden als Referenz gezählt. Das bedeutet, wenn ein Dictionary zwischen "
-"Objekten übergeben wird und das erste Objekt gelöscht wird, wird die "
-"Variable des zweiten Objekts ungültig. Dies gilt nicht für Ressourcen, die "
-"ihr Speicher erst freigegeben wird, wenn *alle* Instanzen nicht mehr "
-"vorhanden sind."
-
-#: ../../docs/getting_started/step_by_step/resources.rst:215
+#: ../../docs/getting_started/step_by_step/resources.rst:183
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr ""
 "Godot erleichtert es, im Inspektor benutzerdefinierte Ressourcen zu "
 "erstellen."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:217
+#: ../../docs/getting_started/step_by_step/resources.rst:185
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
@@ -399,11 +382,11 @@ msgstr ""
 "Erstelle im Inspektor ein einfaches Ressourcenobjekt. Dies kann sogar ein "
 "Typ sein, der Ressource ableitet, solange Dein Skript diesen Typ erweitert."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:218
+#: ../../docs/getting_started/step_by_step/resources.rst:186
 msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr "Stelle die Eigenschaft ``script`` im Inspektor als Dein Skript ein."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:220
+#: ../../docs/getting_started/step_by_step/resources.rst:188
 msgid ""
 "The Inspector will now display your Resource script's custom properties. If "
 "one edits those values and saves the resource, the Inspector serializes the "
@@ -417,7 +400,7 @@ msgstr ""
 "das Menü des Inspektors (oben rechts) und wähle \"Speichern\" oder "
 "\"Speichern unter ...\"."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:225
+#: ../../docs/getting_started/step_by_step/resources.rst:193
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -431,11 +414,11 @@ msgstr ""
 "Erstellungsdialog des Inspektors hinzugefügt. Dadurch wird Dein Skript "
 "automatisch zu dem von Dir erstellten Ressourcenobjekt hinzugefügt."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:230
+#: ../../docs/getting_started/step_by_step/resources.rst:198
 msgid "Let's see some examples."
 msgstr "Sehen wir uns einige Beispiele an."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:303
+#: ../../docs/getting_started/step_by_step/resources.rst:271
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -450,7 +433,7 @@ msgstr ""
 "kombinieren, um benutzerdefinierte Visualisierungen und Editoren für ihre "
 "Daten zu erstellen."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:309
+#: ../../docs/getting_started/step_by_step/resources.rst:277
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
@@ -462,14 +445,14 @@ msgstr ""
 "Dictionary, das einen String einem sekundären benutzerdefinierten "
 "Ressourcenskript zuordnet."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:345
+#: ../../docs/getting_started/step_by_step/resources.rst:313
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr ""
 "Anstatt nur die Dictionary-Werte einzugeben, können Sie alternativ auch ..."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:347
+#: ../../docs/getting_started/step_by_step/resources.rst:315
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
@@ -477,7 +460,7 @@ msgstr ""
 "eine Wertetabelle aus einer Kalkulationstabelle importieren und diese "
 "Schlüsselwertpaare generieren oder ..."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:349
+#: ../../docs/getting_started/step_by_step/resources.rst:317
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
@@ -485,7 +468,7 @@ msgstr ""
 "eine Visualisierung im Editor entwerfen und ein einfaches Plugin erstellen, "
 "das beim Öffnen dieser Ressourcentypen zum Inspektor hinzugefügt wird."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:352
+#: ../../docs/getting_started/step_by_step/resources.rst:320
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
@@ -494,7 +477,7 @@ msgstr ""
 "Float-Werten (Gleitkommawerten) oder einem Ressourcenobjekt, wie :ref:`Curve "
 "<class_Curve>` / :ref:`Curve2D <class_Curve2D>` zugeordnet sind."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:357
+#: ../../docs/getting_started/step_by_step/resources.rst:325
 msgid ""
 "Beware that resource files (\\*.tres/\\*.res) will store the path of the "
 "script they use in the file. When loaded, they will fetch and load this "
@@ -511,7 +494,7 @@ msgstr ""
 "funktioniert. Godot wird die benutzerdefinierten Eigenschaften der "
 "Skriptunterklasse nicht ordnungsgemäß serialisieren."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:363
+#: ../../docs/getting_started/step_by_step/resources.rst:331
 msgid ""
 "In the example below, Godot would load the ``Node`` script, see that it "
 "doesn't extend ``Resource``, and then determine that the script failed to "

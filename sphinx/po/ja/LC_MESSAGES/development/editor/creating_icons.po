@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,12 @@ msgid "Editor icons"
 msgstr "エディタアイコン"
 
 #: ../../docs/development/editor/creating_icons.rst:6
+#, fuzzy
 msgid ""
 "When a new class is created and exposed to scripting, the editor's interface "
 "will display it with a default icon representing the base class it inherits "
-"from. Yet in most cases it is recommended to create icons for new classes to "
-"improve the user experience."
+"from. In most cases, it's still recommended to create icons for new classes "
+"to improve the user experience."
 msgstr ""
 "新しいクラスが作成され、スクリプトに公開されると、エディタのインターフェイス"
 "は、継承元の基本クラスを表すデフォルトのアイコンでそれを表示します。しかし、"
@@ -86,10 +87,26 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:37
+msgid "Color conversion for light editor themes"
+msgstr ""
+
+#: ../../docs/development/editor/creating_icons.rst:39
+msgid ""
+"If the user has configured their editor to use a light theme, Godot will "
+"convert the icon's colors based on a `set of predefined color mappings "
+"<https://github.com/godotengine/godot/blob/"
+"b9f2e57d6240346f1833fd0390de195c956299e7/editor/editor_themes.cpp#L122-"
+"L184>`__. This is to ensure the icon always displays with a sufficient "
+"contrast rate. Try to restrict your icon's color palette to colors found in "
+"the list above. Otherwise, your icon may become difficult to read on a light "
+"background."
+msgstr ""
+
+#: ../../docs/development/editor/creating_icons.rst:47
 msgid "Icon optimization"
 msgstr "アイコンの最適化"
 
-#: ../../docs/development/editor/creating_icons.rst:39
+#: ../../docs/development/editor/creating_icons.rst:49
 #, fuzzy
 msgid ""
 "Because the editor renders SVGs once at load time, they need to be small in "
@@ -100,30 +117,40 @@ msgstr ""
 "イズを小さくする必要があります。エディタアイコンは、エンジンに追加する前にま"
 "ず最適化をする必要があります:"
 
-#: ../../docs/development/editor/creating_icons.rst:43
-msgid "Add them to the ``engine/icons/svg`` folder."
-msgstr "それらを ``engine/icons/svg`` フォルダに追加します。"
-
-#: ../../docs/development/editor/creating_icons.rst:45
+#: ../../docs/development/editor/creating_icons.rst:53
 msgid ""
-"Run the ``optimize.py`` script. You must have the ``scour`` package "
-"installed:"
+"Install `svgcleaner <https://github.com/RazrFalcon/svgcleaner>`__ by "
+"downloading a binary from its `Releases tab <https://github.com/RazrFalcon/"
+"svgcleaner/releases/latest>`__ and placing it into a location in your "
+"``PATH`` environment variable."
 msgstr ""
-"``optimize.py`` スクリプトを実行します。\\ ``scour`` パッケージをインストール"
-"する必要があります:"
 
-#: ../../docs/development/editor/creating_icons.rst:52
+#: ../../docs/development/editor/creating_icons.rst:58
 msgid ""
-"The optimized icons will be generated in the ``engine/icons/optimized`` "
-"folder."
+"Run the command below, replacing ``svg_source.svg`` with the path to your "
+"SVG file (which can be a relative or absolute path):"
 msgstr ""
-"最適化されたアイコンは ``engine/icons/optimized`` フォルダに生成されます。"
 
-#: ../../docs/development/editor/creating_icons.rst:55
+#: ../../docs/development/editor/creating_icons.rst:65
+msgid ""
+"The ``--multipass`` switch improves compression, so make sure to include it. "
+"The optimized icon will be saved to ``svg_optimized.svg``. You can also "
+"change the destination parameter to any relative or absolute path you'd like."
+msgstr ""
+
+#: ../../docs/development/editor/creating_icons.rst:71
+msgid ""
+"While this optimization step won't impact the icon's quality noticeably, it "
+"will still remove editor-only information such as guides. Therefore, it's "
+"recommended to keep the source SVG around if you need to make further "
+"changes."
+msgstr ""
+
+#: ../../docs/development/editor/creating_icons.rst:77
 msgid "Integrating and sharing the icons"
 msgstr "アイコンの統合と共有"
 
-#: ../../docs/development/editor/creating_icons.rst:57
+#: ../../docs/development/editor/creating_icons.rst:79
 #, fuzzy
 msgid ""
 "If you're contributing to the engine itself, you should make a pull request "
@@ -136,7 +163,7 @@ msgstr ""
 "したら、アイコンの元のバージョンを ``godot-design`` リポジトリに追加して、他"
 "の貢献者がアイコンを改善できるようにすることを忘れないでください。"
 
-#: ../../docs/development/editor/creating_icons.rst:61
+#: ../../docs/development/editor/creating_icons.rst:83
 msgid ""
 "It's also possible to create custom icons within a module. If you're "
 "creating your own module and don't plan to integrate it with Godot, you "
@@ -148,7 +175,7 @@ msgstr ""
 "ため、エディタ内でアイコンを使用可能にするために別のプルリクエストを行う必要"
 "はありません。"
 
-#: ../../docs/development/editor/creating_icons.rst:66
+#: ../../docs/development/editor/creating_icons.rst:88
 msgid ""
 "For specific instructions on how to create module icons, refer to :ref:"
 "`Creating custom module icons<doc_custom_module_icons>`."
@@ -156,20 +183,21 @@ msgstr ""
 "モジュールアイコンの作成方法に関する具体的な手順については、\\ :ref:`カスタム"
 "モジュールアイコンの作成 <doc_custom_module_icons>` を参照してください。"
 
-#: ../../docs/development/editor/creating_icons.rst:70
+#: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
 msgstr "トラブルシューティング"
 
-#: ../../docs/development/editor/creating_icons.rst:72
-msgid "If icons don't appear in the editor make sure that:"
+#: ../../docs/development/editor/creating_icons.rst:94
+#, fuzzy
+msgid "If icons don't appear in the editor, make sure that:"
 msgstr "エディタにアイコンが表示されない場合は、次のことを確認してください:"
 
-#: ../../docs/development/editor/creating_icons.rst:74
+#: ../../docs/development/editor/creating_icons.rst:96
 msgid ""
 "Each icon's filename matches the naming requirement as described previously."
 msgstr "各アイコンのファイル名は、前述の命名要件に一致しているか。"
 
-#: ../../docs/development/editor/creating_icons.rst:76
+#: ../../docs/development/editor/creating_icons.rst:98
 #, fuzzy
 msgid ""
 "``modules/svg`` is enabled (it should be enabled by default). Without it, "
@@ -178,11 +206,11 @@ msgstr ""
 "``modules/svg`` は有効になっているか(デフォルトでは有効になっているはずで"
 "す)。それなしでは、アイコンはエディタにまったく表示されません。"
 
-#: ../../docs/development/editor/creating_icons.rst:80
+#: ../../docs/development/editor/creating_icons.rst:102
 msgid "References"
 msgstr "参照"
 
-#: ../../docs/development/editor/creating_icons.rst:82
+#: ../../docs/development/editor/creating_icons.rst:104
 msgid ""
 "`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
 "icons>`__"

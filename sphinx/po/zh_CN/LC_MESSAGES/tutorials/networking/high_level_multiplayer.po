@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
-msgid "High level multiplayer"
+#, fuzzy
+msgid "High-level multiplayer"
 msgstr "高级多人游戏"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
-msgid "High level vs low level API"
+#, fuzzy
+msgid "High-level vs low-level API"
 msgstr "高级API vs 低级API"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
@@ -255,8 +257,9 @@ msgstr ""
 "`SceneTree <class_SceneTree>`。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:78
+#, fuzzy
 msgid ""
-"To initialize high level networking, the SceneTree must be provided a "
+"To initialize high-level networking, the SceneTree must be provided a "
 "NetworkedMultiplayerPeer object."
 msgstr ""
 "为了初始化高级别网络，必须为SceneTree提供一个NetworkedMultiplayerPeer对象。"
@@ -828,3 +831,23 @@ msgstr ""
 "请注意，您也可以使用 rpc_id(<id>, \"exploded\", bomb_owner) 将 stun() 消息仅"
 "发送到特定的游戏角色。这对于像炸弹这样的范围攻击来说可能没有多大意义，但在其"
 "他情况下有意义，比如单目标伤害时。"
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:425
+#, fuzzy
+msgid "Exporting for dedicated servers"
+msgstr "为Web导出"
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:427
+msgid ""
+"Once you've made a multiplayer game, you may want to export it to run it on "
+"a dedicated server with no GPU available. See :ref:"
+"`doc_exporting_for_dedicated_servers` for more information."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:433
+msgid ""
+"The code samples on this page aren't designed to run on a dedicated server. "
+"You'll have to modify them so the server isn't considered to be a player. "
+"You'll also have to modify the game starting mechanism so that the first "
+"player who joins can start the game."
+msgstr ""

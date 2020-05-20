@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,10 +39,10 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot é `Software Livre e de Código Aberto https://opensource.org/licenses/"
-"MIT>`_ disponível sob a Licença MIT `aprovada pela OSI <https://opensource."
-"org/licenses/MIT>`_. Isso significa que é livre como em \"liberdade de "
-"expressão\", bem como em \"cerveja grátis.\""
+"Godot é um `Software Livre e de Código Aberto <https://pt.wikipedia.org/wiki/"
+"Software_livre_e_de_código_aberto>`_ disponível sob a Licença MIT `aprovada "
+"pela OSI <https://opensource.org/licenses/MIT>`_. Isso significa que é livre "
+"como em \"liberdade de expressão\", bem como em \"cerveja grátis.\""
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
@@ -71,10 +71,10 @@ msgid ""
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Todo o conteúdo desta documentação estão sob a licença permissiva Creative "
-"Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/"
-"by/3.0/>`_), com atribuição a \"Juan Linietsky, Ariel Manzur e a comunidade "
-"Godot Engine.\""
+"Todo o conteúdo desta documentação anexa está publicado sob a licença "
+"permissiva Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
+"creativecommons.org/licenses/by/3.0/>`_), com atribuição a \"Juan Linietsky, "
+"Ariel Manzur e a comunidade Godot Engine.\""
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -83,8 +83,8 @@ msgid ""
 "different licenses."
 msgstr ""
 "Logomarcas e ícones geralmente estão sob a mesma licença Creative Commons. "
-"Note que algumas bibliotecas de terceiros incluídas no código do Godot podem "
-"ter licenças diferentes."
+"Note que algumas bibliotecas de terceiros incluídas no código-fonte do Godot "
+"podem ter licenças diferentes."
 
 #: ../../docs/about/faq.rst:27
 msgid ""
@@ -377,7 +377,6 @@ msgstr ""
 "(Lua, Python, JavaScript)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
@@ -386,43 +385,39 @@ msgid ""
 msgstr ""
 "Muitas linguagens existentes têm interfaces terríveis entre si e o C++, "
 "resultando em uma grande quantidade de código, bugs, gargalos e ineficiência "
-"em geral (Lua, Python, Squirrel, JS e etc). Nós queríamos focar em uma "
-"engine incrível, e não em uma incrível quantidade de integrações."
+"em geral (Lua, Python, Squirrel, JavaScript e etc). Nós queríamos focar em "
+"uma engine incrível, e não em uma incrível quantidade de integrações."
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
-"Não existem tipos de vetor nativos (Vector3, Matrix4, etc.), resultando em "
+"Não existem tipos de vetor nativos (vector3, matrix4, etc.), resultando em "
 "uma performance muito reduzida ao usar tipos personalizados (Lua, Python, "
-"Squirrel, JS, AS, etc.)."
+"Squirrel, JavaScript, ActionScript, etc.)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
 "Coletor de lixo resulta em atrasos e um grande uso desnecessário de memória "
-"(Lua, Python, JS, AS, etc.)."
+"(Lua, Python, JavaScript, ActionScript, etc.)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
-"Dificuldade de integração com o editor de código para prover completamento "
-"de código, edição em tempo real, etc. (todas elas). Isso é muito bem "
-"suportado por GDScript."
+"Dificuldade de integração com o editor de código para fornecer "
+"complementação de código, edição em tempo real, e etc. (todas elas). Isso é "
+"muito bem suportado por GDScript."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above, and more."
-msgstr "GDScript foi projetado para reduzir os problemas acima e mais."
+msgstr "O GDScript foi projetado para reduzir os problemas acima, e mais."
 
 #: ../../docs/about/faq.rst:156
 msgid "What type of 3D model formats does Godot support?"
@@ -686,7 +681,6 @@ msgstr ""
 "Eu tenho uma grande ideia para Godot. Como posso compartilhar essa ideia?"
 
 #: ../../docs/about/faq.rst:259
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -699,14 +693,14 @@ msgid ""
 "community members."
 msgstr ""
 "Pode ser tentador querer trazer ideias ao Godot, como aquelas que resultam e "
-"mudanças massivas no núcleo, um tipo de mímica que outro motor de jogos faz, "
-"ou modos de trabalho alternativo que você iria querer dentro do editor. Tudo "
-"isso é ótimo e nós agradecemos por ter tantas pessoas motivadas querendo "
-"contribuir, porém, o foco da Godot é e sempre será, a funcionalidade central "
-"como descrita no `Roadmap <https://github.com/godotengine/godot-roadmap/blob/"
-"master/ROADMAP.md>`_, `consertando bugs e discutindo problemas <https://"
-"github.com/godotengine/godot/issues>`_, e discussão entre membros da "
-"comunidade da godot."
+"mudanças massivas no núcleo, um tipo de mímica que outro engine de jogos "
+"faz, ou modos de trabalho alternativo que você iria querer dentro do editor. "
+"Tudo isso é ótimo e nós agradecemos por ter tantas pessoas motivadas "
+"querendo contribuir, porém, o foco da Godot é e sempre será, a "
+"funcionalidade central como descrita no `Roadmap <https://github.com/"
+"godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, `consertando bugs e "
+"discutindo problemas <https://github.com/godotengine/godot/issues>`_, e "
+"discussão entre membros da comunidade da godot."
 
 #: ../../docs/about/faq.rst:268
 msgid ""

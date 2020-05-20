@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -330,11 +330,70 @@ msgstr ""
 "检查 ``scons --help`` 的输出，以获取有关您愿意编译的版本的每个选项的详细信"
 "息。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:196
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
+#, fuzzy
+msgid "Overriding the build options"
+msgstr "其他构建选项"
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
+#, fuzzy
+msgid "Using a file"
+msgstr "使用脚本"
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:203
+msgid ""
+"The default ``custom.py`` file can be created at the root of the Godot "
+"Engine source to initialize any SCons build options passed via the command "
+"line:"
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:215
+#, fuzzy
+msgid ""
+"You can also disable some of the builtin modules before compiling, saving "
+"some time it takes to build the engine, see :ref:`doc_optimizing_for_size` "
+"page for more details."
+msgstr ""
+"您可以通过仅编译具有所需功能的Android导出模板来进一步优化大小。有关更多信息，"
+"请参见 :ref:`doc_optimizing_for_size`。"
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
+msgid ""
+"Another custom file can be specified explicitly with the ``profile`` command "
+"line option, both overriding the default build configuration:"
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:225
+msgid ""
+"Build options set from the file can be overridden by the command line "
+"options."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
+msgid "It's also possible to override the options conditionally:"
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:243
+msgid "Using the SCONSFLAGS"
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
+msgid ""
+"``SCONSFLAGS`` is an environment variable which is used by the SCons to set "
+"the options automatically without having to supply them via the command line."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:248
+msgid ""
+"For instance, you may want to build Godot in parallel with the "
+"aforementioned ``-j`` option for all the future builds:"
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:265
 msgid "Export templates"
 msgstr "导出模板"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:267
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -345,7 +404,7 @@ msgstr ""
 "此外，您可能想要自己构建它们(可能想要构建更新的版本、要使用自定义模块、不信任"
 "我们编译的包是否安全)。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:203
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:272
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most files are optimized binaries or packages for each platform:"
@@ -353,7 +412,7 @@ msgstr ""
 "如果下载官方导出模板程序包并解压缩，您会注意到大多数文件都是针对每个平台的优"
 "化二进制文件或程序包："
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:226
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:295
 msgid ""
 "To create those yourself, follow the instructions detailed for each platform "
 "in this same tutorial section. Each platform explains how to create its own "
@@ -362,7 +421,7 @@ msgstr ""
 "要自己创建它们，请按照该教程中针对每个平台的详细说明的部分进行操作。每个平台"
 "都说明了如何创建自己的模板。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:230
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:299
 msgid ""
 "The ``version.txt`` file should contain the corresponding Godot version "
 "identifier. This file is used to install export templates in a version-"
@@ -380,7 +439,7 @@ msgstr ""
 "godot/blob/master/version.py>`__ 的 ``major``、``minor``、``patch`` (如果存"
 "在)和 ``status`` 行。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:238
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:307
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross-compilation, since you can cross-compile "

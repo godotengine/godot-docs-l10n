@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,8 +54,8 @@ msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"Тепер ви повинні побачити Керівник проектів. Він дозволяє створювати, "
-"видаляти, імпортувати або відтворювати ігрові проекти."
+"Тепер ви повинні побачити «Керування проєктами». За його допомогою можна "
+"створювати, видаляти, імпортувати або відтворювати ігрові проєкти."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
 #, fuzzy
@@ -111,9 +111,9 @@ msgid ""
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"Якщо ви бачите зелену галочку справа, значить редактор виявив порожню теку. "
-"Ви також можете натиснути кнопку `` Створити теку`` поруч із назвою проекту "
-"і тоді, для проекту, буде створена порожня тека з іменем проекту."
+"Якщо ви бачите зелену позначку праворуч, значить редактор виявив порожню "
+"теку. Ви також можете натиснути кнопку `` Створити теку`` поруч із назвою "
+"проєкту і тоді, для проєкту буде створена порожня тека з назвою проєкту."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
 msgid ""
@@ -236,7 +236,6 @@ msgstr ""
 "AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
-#, fuzzy
 msgid ""
 "You'll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
@@ -287,21 +286,27 @@ msgid ""
 "signal in the engine while you are writing a script, press the \"Search Help"
 "\" button at the top right of the Script workspace."
 msgstr ""
+"Для пошуку інформації про клас, метод, властивість, константу або сигнал у "
+"движку під час написання скрипту, використовуйте кнопку \"Пошук довідки\" у "
+"верхньому правому куті робочої області Script."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid ""
 "A new window will pop up. Search for the item that you want to find "
 "information about."
 msgstr ""
+"З'явиться нове вікно. В пошуковому вікні введіть назву елемента інформацію "
+"про який хочете знайти."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
 msgid ""
 "Click on the item you are looking for and press open. The documentation for "
 "the item will be displayed in the script workspace."
 msgstr ""
+"Клацніть на потрібний елемент у списку та натисніть відкрити. Документація "
+"для елемента буде виведена в робочій області Скрипт."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
 "scripts and assets to use in your projects."
@@ -314,7 +319,6 @@ msgid "Modify the interface"
 msgstr "Зміна інтерфейсу"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
-#, fuzzy
 msgid ""
 "Godot's interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
@@ -322,7 +326,7 @@ msgid ""
 msgstr ""
 "Інтерфейс Godot розміщений в одному вікні. Ви не можете розділити його на "
 "кілька екранів, хоча ви можете працювати із зовнішнім редактором коду, "
-"наприклад, Atom або Visual Studio."
+"наприклад, Atom, або Visual Studio Code."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:169
 msgid "Move and resize docks"

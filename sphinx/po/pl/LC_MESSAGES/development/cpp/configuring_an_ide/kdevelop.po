@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:4
+#, fuzzy
+msgid "KDevelop"
+msgstr "Kdevelop"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:6
+msgid ""
+"`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
+"desktop platforms."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:8
+msgid "Start by opening KDevelop and choosing **Open Project**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:12
+msgid "Choose the directory where you cloned Godot."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:14
+msgid ""
+"On the next screen, choose **Custom Build System** for the **Project "
+"Manager**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:18
+msgid "Now that the project has been imported, open the project configuration."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:22
+msgid "Add the following includes/imports:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:35
+msgid "Apply the changes."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:37
+msgid ""
+"Switch to the **Custom Build System** tab. Add a build configuration and "
+"keep the build directory blank. Enable build tools and add ``scons`` as the "
+"executable then add ``platform=linuxbsd target=debug`` (``platform=osx`` if "
+"you're on macOS) as the arguments."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:44
+msgid ""
+"Next, we need to tell KDevelop where to find the binary. From the **Run** "
+"menu, choose **Configure Launches**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
+msgid ""
+"Click **Add** if no launcher exists. Then add the path to your executable in "
+"the executable section. Your executable should be located in the ``bin/`` "
+"subdirectory and should be named something like ``godot.linuxbsd.tools.64`` "
+"(the name could be different depending on your platform and build options)."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
+#, fuzzy
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"Krótkie omówienie dotyczące tych i innych kanałów komunikacyjnych dostępne "
+"jest także na stronie Godot '<https://godotengine.org/community>`_."

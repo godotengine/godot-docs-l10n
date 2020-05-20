@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,7 +157,7 @@ msgid "else"
 msgstr "else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:149
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:785
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:801
 msgid "for"
 msgstr "for"
 
@@ -166,7 +166,7 @@ msgid "See for_."
 msgstr "Дивіться for_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:774
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:790
 msgid "while"
 msgstr "while"
 
@@ -175,7 +175,7 @@ msgid "See while_."
 msgstr "Дивіться while_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:153
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:820
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:836
 msgid "match"
 msgstr "match"
 
@@ -647,94 +647,103 @@ msgid "Ternary if/else"
 msgstr "Потрійне if/else (якщо/інакше)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
+msgid "``as``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
+#, fuzzy
+msgid "Type casting"
+msgstr "Тестування"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
 msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "Assignment (lowest priority)"
 msgstr "Присвоювання значення, найнижчий пріоритет"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "Literals"
 msgstr "Літерали"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:281
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
 msgid "**Literal**"
 msgstr "**Літерал**"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:281
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
 msgid "**Type**"
 msgstr "**Тип**"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
 msgid "``45``"
 msgstr "``45``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
 msgid "Base 10 integer"
 msgstr "Ціле число за десятковою системою числення"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "``0x8F51``"
 msgstr "``0x8F51``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "Base 16 (hexadecimal) integer"
 msgstr "Ціле число на основі шістнадцяткової системи числення"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "``0b101010``"
 msgstr "``0b101010``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "Base 2 (binary) integer"
 msgstr "Ціле число в двійковій (бінарній) системі числення"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "``3.14``, ``58.1e-10``"
 msgstr "``3.14``, ``58.1e-10``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "Floating-point number (real)"
 msgstr "Число з рухомою комою (дійсне)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "``\"Hello\"``, ``\"Hi\"``"
 msgstr "``\"Hello\"``, ``\"Привіт\"``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "Strings"
 msgstr "Рядки (Текст)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "``\"\"\"Hello\"\"\"``"
 msgstr "``\"\"\"Hello, Dude\"\"\"``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "Multiline string"
 msgstr "Багаторядковий рядок (текст)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid "``@\"Node/Label\"``"
 msgstr "``@\"Node/Label\"``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid ":ref:`class_NodePath` or StringName"
 msgstr ":ref:`class_NodePath` або StringName"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid "``$NodePath``"
 msgstr "``$NodePath``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid "Shorthand for ``get_node(\"NodePath\")``"
 msgstr "Скорочення для ``get_node(\"NodePath\")``"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
 msgid "Comments"
 msgstr "Коментарі"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:305
 msgid ""
 "Anything from a ``#`` to the end of the line is ignored and is considered a "
 "comment."
@@ -742,11 +751,11 @@ msgstr ""
 "Все що знаходиться після символа ``#``, і до кінця рядка, ігнорується і "
 "вважається коментарем."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:313
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:315
 msgid "Built-in types"
 msgstr "Вбудовані типи"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:315
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:317
 #, fuzzy
 msgid ""
 "Built-in types are stack-allocated. They are passed as values. This means a "
@@ -762,19 +771,19 @@ msgstr ""
 "(Об'єднані масиви, такі як ``PoolByteArray``, не входять в число винятків і "
 "передаються як значення.)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:322
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:324
 msgid "Basic built-in types"
 msgstr "Базові вбудовані типи"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:324
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:326
 msgid "A variable in GDScript can be assigned to several built-in types."
 msgstr "Змінна в GDScript може бути призначена декільком вбудованим типам."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:327
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:329
 msgid "null"
 msgstr "null"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:329
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:331
 msgid ""
 "``null`` is an empty data type that contains no information and can not be "
 "assigned any other value."
@@ -782,19 +791,19 @@ msgstr ""
 "``null`` це порожній тип даних, який не містить інформації та не може "
 "приймати інші значення."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:333
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:335
 msgid ":ref:`bool <class_bool>`"
 msgstr ":ref:`bool <class_bool>` (логічні)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:335
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:337
 msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
 msgstr "Скорочене для \"boolean\", може містити лише ``true``, або ``false``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:338
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:340
 msgid ":ref:`int <class_int>`"
 msgstr ":ref:`int <class_int>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:340
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:342
 msgid ""
 "Short for \"integer\", it stores whole numbers (positive and negative). It "
 "is stored as a 64-bit value, equivalent to \"int64_t\" in C++."
@@ -803,11 +812,11 @@ msgstr ""
 "(позитивні та негативні). Воно зберігається як 64-бітове значення, "
 "еквівалент \"int64_t\" в C ++."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:344
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:346
 msgid ":ref:`float <class_float>`"
 msgstr ":ref:`float <class_float>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:346
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:348
 msgid ""
 "Stores real numbers, including decimals, using floating-point values. It is "
 "stored as a 64-bit value, equivalent to \"double\" in C++. Note: Currently, "
@@ -819,11 +828,11 @@ msgstr ""
 "C ++. Примітка: В даний час структури даних, такі як Vector2, Vector3 і "
 "PoolRealArray, зберігають 32-бітні одноточні значення \"float\"."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:352
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:354
 msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:354
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:356
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Strings can contain `standard C escape sequences <https://en."
@@ -832,18 +841,18 @@ msgid ""
 msgstr ""
 "Послідовність символів у `форматі Unicode <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Рядки (текст) можуть містити `стандартні escape послідовності з "
-"С  <https://en.wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript також "
+"С <https://en.wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript також "
 "підтримує :ref:`doc_gdscript_printf`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:360
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:362
 msgid "Vector built-in types"
 msgstr "Векторні вбудовані типи"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:363
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:365
 msgid ":ref:`Vector2 <class_Vector2>`"
 msgstr ":ref:`Vector2 <class_Vector2>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:365
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:367
 msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
 "array."
@@ -851,11 +860,11 @@ msgstr ""
 "2D векторний тип містить поля ``x`` і ``y``. Також можна отримати доступ до "
 "масиву."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:369
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:371
 msgid ":ref:`Rect2 <class_Rect2>`"
 msgstr ":ref:`Rect2 <class_Rect2>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:371
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:373
 msgid ""
 "2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
 "Also contains an ``end`` field which is ``position + size``."
@@ -863,11 +872,11 @@ msgstr ""
 "Тип Прямокутник 2D, містить два векторних поля: ``position`` і ``size``. "
 "Також містить поле ``end``, яке є ``.position + size``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:375
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:377
 msgid ":ref:`Vector3 <class_Vector3>`"
 msgstr ":ref:`Vector3 <class_Vector3>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:377
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:379
 msgid ""
 "3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
 "accessed as an array."
@@ -875,19 +884,19 @@ msgstr ""
 "Тип 3D вектора, містить поля ``x``, ``y`` і ``z``. Його також можна отримати "
 "як масив."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:381
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:383
 msgid ":ref:`Transform2D <class_Transform2D>`"
 msgstr ":ref:`Transform2D <class_Transform2D>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:383
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:385
 msgid "3×2 matrix used for 2D transforms."
 msgstr "3 × 2 матриця, що використовується для 2D перетворень."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid ":ref:`Plane <class_Plane>`"
 msgstr ":ref:`Plane <class_Plane>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid ""
 "3D Plane type in normalized form that contains a ``normal`` vector field and "
 "a ``d`` scalar distance."
@@ -895,11 +904,11 @@ msgstr ""
 "Тип 3D площини в нормалізованому вигляді, містить векторне поле ``normal`` і "
 "скалярну відстань ``d``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:394
 msgid ":ref:`Quat <class_Quat>`"
 msgstr ":ref:`Quat <class_Quat>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:394
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:396
 msgid ""
 "Quaternion is a datatype used for representing a 3D rotation. It's useful "
 "for interpolating rotations."
@@ -907,11 +916,11 @@ msgstr ""
 "Quaternion - це тип даних, який використовується для представлення "
 "тривимірного обертання. Корисний для інтерполяції обертів."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:398
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:400
 msgid ":ref:`AABB <class_AABB>`"
 msgstr ":ref:`AABB <class_AABB>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:400
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:402
 msgid ""
 "Axis-aligned bounding box (or 3D box) contains 2 vectors fields: "
 "``position`` and ``size``. Also contains an ``end`` field which is "
@@ -921,11 +930,11 @@ msgstr ""
 "поля: ``position`` і ``size``. Також містить поле ``end``, яке є ``position "
 "+ size``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:405
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:407
 msgid ":ref:`Basis <class_Basis>`"
 msgstr ":ref:`Basis <class_Basis>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:407
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:409
 msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
@@ -934,26 +943,26 @@ msgstr ""
 "містить 3 векторних полів (``x``, ``y`` і ``z``) , а також може бути "
 "доступна в вигляді масиву 3D векторів."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:412
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:414
 msgid ":ref:`Transform <class_Transform>`"
 msgstr ":ref:`Transform <class_Transform>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:414
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:416
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
 "3D перетворення містить поле Basis (Основа) ``basis``та поле Vector3 "
 "``origin``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:418
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:420
 msgid "Engine built-in types"
 msgstr "Вбудовані типи движка"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:421
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:423
 msgid ":ref:`Color <class_Color>`"
 msgstr ":ref:`Color <class_Color>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:423
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:425
 msgid ""
 "Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
 "be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
@@ -962,11 +971,11 @@ msgstr ""
 "можуть бути доступні ``h``, ``s`` і ``v`` для hue(відтінок)/ "
 "saturation(насиченість) / value(значення)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:427
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:429
 msgid ":ref:`NodePath <class_NodePath>`"
 msgstr ":ref:`NodePath <class_NodePath>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:429
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:431
 msgid ""
 "Compiled path to a node used mainly in the scene system. It can be easily "
 "assigned to, and from, a String."
@@ -974,33 +983,33 @@ msgstr ""
 "Упорядкований шлях до вузла, що використовується в основному в системі сцен. "
 "Його можна легко присвоювати рядку (тексту) і з нього."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:433
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:435
 msgid ":ref:`RID <class_RID>`"
 msgstr ":ref:`RID <class_RID>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:435
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:437
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
 msgstr ""
 "Ідентифікатор ресурсу (RID). Сервери використовують загальні RID для "
 "посилання непрозорих даних."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:438
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:440
 msgid ":ref:`Object <class_Object>`"
 msgstr ":ref:`Object <class_Object>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:440
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:442
 msgid "Base class for anything that is not a built-in type."
 msgstr "Базовий клас для всього, що не є вбудованим типом."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:443
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:445
 msgid "Container built-in types"
 msgstr "Вбудовані типи контейнерів"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:446
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:448
 msgid ":ref:`Array <class_Array>`"
 msgstr ":ref:`Array <class_Array>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:448
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:450
 msgid ""
 "Generic sequence of arbitrary object types, including other arrays or "
 "dictionaries (see below). The array can resize dynamically. Arrays are "
@@ -1011,7 +1020,7 @@ msgstr ""
 "індексуються, починаючи з індексу ``0``. Негативні показники рахуються з "
 "кінця."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:462
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:464
 msgid ""
 "GDScript arrays are allocated linearly in memory for speed. Large arrays "
 "(more than tens of thousands of elements) may however cause memory "
@@ -1028,7 +1037,7 @@ msgstr ""
 "повільніше, ніж загальні масиви. Тому їх рекомендується використовувати лише "
 "для великих наборів даних:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:469
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:471
 msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
@@ -1036,20 +1045,20 @@ msgstr ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: масив з байтів (цілих чисел від "
 "0 до 255)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:470
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:472
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
 msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: масив з цілих чисел."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:471
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:473
 msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
 msgstr ""
 ":ref:`PoolRealArray <class_PoolRealArray>`: масив з чисел із рухомою крапкою."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:472
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:474
 msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
 msgstr ":ref:`PoolStringArray <class_PoolStringArray>`: масив з рядків."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:473
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:475
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
 "<class_Vector2>` objects."
@@ -1057,7 +1066,7 @@ msgstr ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: Масив з об'єктів :ref:"
 "`Vector2 <class_Vector2>`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:474
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:476
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
 "<class_Vector3>` objects."
@@ -1065,7 +1074,7 @@ msgstr ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: Масив з об'єктів :ref:"
 "`Vector3 <class_Vector3>`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:475
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:477
 msgid ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
 "<class_Color>` objects."
@@ -1073,17 +1082,17 @@ msgstr ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: Масив з об'єктів :ref:`Color "
 "<class_Color>`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:478
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:480
 msgid ":ref:`Dictionary <class_Dictionary>`"
 msgstr ":ref:`Dictionary <class_Dictionary>`"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:480
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:482
 msgid "Associative container which contains values referenced by unique keys."
 msgstr ""
 "Асоціативний контейнер, який містить значення, на які посилаються унікальні "
 "ключі."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:493
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:495
 #, fuzzy
 msgid ""
 "Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
@@ -1097,7 +1106,7 @@ msgstr ""
 "ідентифікатор GDScript, ключі, записані у цій формі, не можуть починатися з "
 "цифри."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:507
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:509
 msgid ""
 "To add a key to an existing dictionary, access it like an existing key and "
 "assign to it::"
@@ -1105,15 +1114,24 @@ msgstr ""
 "Щоб додати ключ до наявного словника, використовуйте ім'я словника, ім'я "
 "нового ключа та призначте ключу значення:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:516
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:525
+msgid ""
+"The bracket syntax can be used to access properties of any :ref:"
+"`class_Object`, not just Dictionaries. Keep in mind it will cause a script "
+"error when attempting to index a non-existing property. To avoid this, use "
+"the :ref:`Object.get() <class_Object_method_get>` and :ref:`Object.set() "
+"<class_Object_method_set>` methods instead."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:532
 msgid "Data"
 msgstr "Дані"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:519
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:535
 msgid "Variables"
 msgstr "Змінні"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:521
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:537
 msgid ""
 "Variables can exist as class members or local to functions. They are created "
 "with the ``var`` keyword and may, optionally, be assigned a value upon "
@@ -1123,7 +1141,7 @@ msgstr ""
 "створюються за допомогою ключового слова ``var`` і, за бажання, їм можна "
 "присвоювати значення після ініціалізації."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:532
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:548
 msgid ""
 "Variables can optionally have a type specification. When a type is "
 "specified, the variable will be forced to have always that same type, and "
@@ -1133,7 +1151,7 @@ msgstr ""
 "вказаний, змінна буде змушена завжди мати один і той самий тип, а спроба "
 "призначити несумісне значення призведе до помилки."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:536
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:552
 msgid ""
 "Types are specified in the variable declaration using a ``:`` (colon) symbol "
 "after the variable name, followed by the type."
@@ -1141,7 +1159,7 @@ msgstr ""
 "Типи задаються при створенні змінної з використанням символа ``:`` "
 "(двокрапка) після імені змінної, за яким вказується тип."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:544
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:560
 msgid ""
 "If the variable is initialized within the declaration, the type can be "
 "inferred, so it's possible to omit the type name::"
@@ -1149,7 +1167,7 @@ msgstr ""
 "Якщо змінна ініціалізована при створенні, тип можна призначити опустивши "
 "ім'я типу:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:550
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:566
 msgid ""
 "Type inference is only possible if the assigned value has a defined type, "
 "otherwise it will raise an error."
@@ -1157,19 +1175,19 @@ msgstr ""
 "Таке визначення типу можливе лише в тому випадку, якщо призначене значення "
 "має визначений тип, інакше виникне помилка."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:553
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:569
 msgid "Valid types are:"
 msgstr "Підтримувані типи:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:555
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:571
 msgid "Built-in types (Array, Vector2, int, String, etc.)."
 msgstr "Вбудовані типи (Array, Vector2, int, String, тощо)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:556
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:572
 msgid "Engine classes (Node, Resource, Reference, etc.)."
 msgstr "Класи движка (Node, Resource, Reference, тощо)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:557
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:573
 msgid ""
 "Constant names if they contain a script resource (``MyScript`` if you "
 "declared ``const MyScript = preload(\"res://my_script.gd\")``)."
@@ -1177,7 +1195,7 @@ msgstr ""
 "Імена констант, якщо вони містять ресурс скрипту (``MyScript`` якщо ви "
 "визначили ``const MyScript = preload(\"res://my_script.gd\")``)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:558
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:574
 msgid ""
 "Other classes in the same script, respecting scope (``InnerClass."
 "NestedClass`` if you declared ``class NestedClass`` inside the ``class "
@@ -1187,15 +1205,15 @@ msgstr ""
 "NestedClass`` якщо ви визначили ``class NestedClass`` всередині ``class "
 "InnerClass`` в тих самих межах)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:559
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:575
 msgid "Script classes declared with the ``class_name`` keyword."
 msgstr "Класи скриптів, оголошені за допомогою ключового слова ``class_name``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:562
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:578
 msgid "Casting"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:564
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:580
 msgid ""
 "Values assigned to typed variables must have a compatible type. If it's "
 "needed to coerce a value to be of a certain type, in particular for object "
@@ -1205,7 +1223,7 @@ msgstr ""
 "потрібно примусити значення бути певного типу, зокрема для типів об'єктів, "
 "ви можете використовувати оператор ``as``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:568
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:584
 msgid ""
 "Casting between object types results in the same object if the value is of "
 "the same type or a subtype of the cast type."
@@ -1213,14 +1231,14 @@ msgstr ""
 "Оператор спрацює вірно, якщо тип присвоєного об'єкта збігається з типом "
 "змінної, або є підтипом її типу."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:576
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:592
 msgid ""
 "If the value is not a subtype, the casting operation will result in a "
 "``null`` value."
 msgstr ""
 "Якщо значення не є підтипом, ця операція призведе до значення ``null``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:583
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:599
 msgid ""
 "For built-in types, they will be forcibly converted if possible, otherwise "
 "the engine will raise an error."
@@ -1228,17 +1246,17 @@ msgstr ""
 "Вбудовані типи будуть примусово перетворені, якщо це можливо, в противному "
 "випадку движок видасть помилку."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:592
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:608
 msgid ""
 "Casting is also useful to have better type-safe variables when interacting "
 "with the scene tree::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:602
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:618
 msgid "Constants"
 msgstr "Константи"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:604
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:620
 msgid ""
 "Constants are similar to variables, but must be constants or constant "
 "expressions and must be assigned on initialization."
@@ -1246,7 +1264,7 @@ msgstr ""
 "Константи схожі на змінні, але повинні бути незмінними, або постійними, "
 "виразами і повинні бути призначені при ініціалізації."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:618
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:634
 msgid ""
 "Although the type of constants is inferred from the assigned value, it's "
 "also possible to add explicit type specification::"
@@ -1254,15 +1272,15 @@ msgstr ""
 "Хоча тип констант виводиться із призначеного значення, також можна додати "
 "явну специфікацію типу:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:624
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:640
 msgid "Assigning a value of an incompatible type will raise an error."
 msgstr "Призначення значення несумісного типу призведе до помилки."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:627
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:643
 msgid "Enums"
 msgstr "Переліки"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:629
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:645
 msgid ""
 "Enums are basically a shorthand for constants, and are pretty useful if you "
 "want to assign consecutive integers to some constant."
@@ -1270,7 +1288,7 @@ msgstr ""
 "Переліки - це, в основному, скорочення для констант, і вони дуже корисні, "
 "якщо ви хочете призначити послідовні цілі числа якимось константам."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:632
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:648
 msgid ""
 "If you pass a name to the enum, it will put all the keys inside a constant "
 "dictionary of that name."
@@ -1278,7 +1296,7 @@ msgstr ""
 "Якщо ви передасте ім'я до переліку, він помістить усі ключі всередину "
 "постійного словника цього імені."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:635
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:651
 msgid ""
 "In Godot 3.1 and later, keys in a named enum are not registered as global "
 "constants. They should be accessed prefixed by the enum's name (``Name."
@@ -1288,11 +1306,11 @@ msgstr ""
 "як глобальні константи. До них слід звертатися з префіксом імені переліку "
 "(``Ім'я.КЛЮЧ``); дивіться приклад нижче."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:655
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:671
 msgid "Functions"
 msgstr "Функції"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:657
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:673
 msgid ""
 "Functions always belong to a `class <Classes_>`_. The scope priority for "
 "variable look-up is: local → class member → global. The ``self`` variable is "
@@ -1306,14 +1324,14 @@ msgstr ""
 "завжди потрібна (і, на відміну від Python, *не* повинна передаватися в "
 "якості першого аргументу функції)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:670
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:686
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
 "Функція може повертати значення (``return``) в будь-якій точці. За "
 "замовчуванням повертається - ``null``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:672
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:688
 msgid ""
 "Functions can also have type specification for the arguments and for the "
 "return value. Types for arguments can be added in a similar way to "
@@ -1322,13 +1340,13 @@ msgstr ""
 "Функції можуть також мати специфікацію типу для аргументів та для значення, "
 "яке повертається. Типи аргументів можуть бути додані аналогічно змінним:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:678
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:694
 msgid ""
 "If a function argument has a default value, it's possible to infer the type::"
 msgstr ""
 "Якщо аргумент функції має значення за замовчуванням, то можна визначити тип:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:683
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:699
 msgid ""
 "The return type of the function can be specified after the arguments list "
 "using the arrow token (``->``)::"
@@ -1336,7 +1354,7 @@ msgstr ""
 "Тип повернення функції можна вказати після списку аргументів, використовуючи "
 "символ стрілки ( ``->``):"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:689
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:705
 msgid ""
 "Functions that have a return type **must** return a proper value. Setting "
 "the type as ``void`` means the function doesn't return anything. Void "
@@ -1348,7 +1366,7 @@ msgstr ""
 "Функції можуть використовувати ключове слово ``return``, але вони не можуть "
 "повертати ніякого значення."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:698
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:714
 msgid ""
 "Non-void functions must **always** return a value, so if your code has "
 "branching statements (such as an ``if``/``else`` construct), all the "
@@ -1363,12 +1381,12 @@ msgstr ""
 "редактор викличе помилку, оскільки якщо умова блоку не буде виконана, "
 "функція не матиме значення для повернення."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:706
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:722
 #, fuzzy
 msgid "Referencing functions"
 msgstr "Довідка функцій"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:708
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:724
 msgid ""
 "Contrary to Python, functions are *not* first-class objects in GDScript. "
 "This means they cannot be stored in variables, passed as an argument to "
@@ -1379,7 +1397,7 @@ msgstr ""
 "означає, що вони не можуть зберігатися у змінних, передаватися як аргумент в "
 "інші функції, або повертатися з інших функцій. Це з міркувань продуктивності."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:712
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:728
 msgid ""
 "To reference a function by name at run-time, (e.g. to store it in a "
 "variable, or pass it to another function as an argument) one must use the "
@@ -1389,11 +1407,11 @@ msgstr ""
 "її в змінній, або передати в іншу функцію як аргумент) необхідно "
 "використовувати помічники ``call``, або ``funcref``::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:726
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:742
 msgid "Static functions"
 msgstr "Статичні функції"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:728
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:744
 msgid ""
 "A function can be declared static. When a function is static, it has no "
 "access to the instance member variables or ``self``. This is mainly useful "
@@ -1403,12 +1421,12 @@ msgstr ""
 "доступу до змінних членів екземпляра (instance), або ``self``. Це в "
 "основному корисно для створення бібліотек допоміжних функцій:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:737
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:753
 #, fuzzy
 msgid "Statements and control flow"
 msgstr "Оператори і контрольний потік"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:739
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:755
 msgid ""
 "Statements are standard and can be assignments, function calls, control flow "
 "structures, etc (see below). ``;`` as a statement separator is entirely "
@@ -1418,11 +1436,11 @@ msgstr ""
 "структурами контрольного потоку тощо (дивіться нижче). Роздільник ``;`` "
 "абсолютно необов'язковий."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:744
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:760
 msgid "if/else/elif"
 msgstr "if/else/elif"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:746
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:762
 msgid ""
 "Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
 "Parenthesis around conditions are allowed, but not required. Given the "
@@ -1434,11 +1452,11 @@ msgstr ""
 "відступів на основі табуляції, ``elif`` можна використовувати замість "
 "``else``/``if`` для підтримки рівня відступу."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:760
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:776
 msgid "Short statements can be written on the same line as the condition::"
 msgstr "Короткі вирази можна записати на тому ж рядку, що і умова:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:767
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:783
 msgid ""
 "Sometimes, you might want to assign a different initial value based on a "
 "boolean expression. In this case, ternary-if expressions come in handy::"
@@ -1446,7 +1464,7 @@ msgstr ""
 "Іноді, можливо, ви захочете призначити інше початкове значення на основі "
 "булевого виразу. У цьому випадку стають у нагоді потрійні вирази:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:776
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:792
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
@@ -1454,7 +1472,7 @@ msgstr ""
 "Прості цикли створюються за допомогою синтаксису ``while``. Цикли можуть "
 "бути перервані, з допомогою ``break``, або продовжені з ``continue``:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:787
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:803
 msgid ""
 "To iterate through a range, such as an array or table, a *for* loop is used. "
 "When iterating over an array, the current array element is stored in the "
@@ -1466,7 +1484,7 @@ msgstr ""
 "масиву зберігається у змінній циклу. Під час ітерації над словником у "
 "змінній циклу зберігається індекс."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:822
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:838
 msgid ""
 "A ``match`` statement is used to branch execution of a program. It's the "
 "equivalent of the ``switch`` statement found in many other languages, but "
@@ -1476,23 +1494,23 @@ msgstr ""
 "``switch``, який можна знайти в багатьох інших мовах, але``match`` пропонує "
 "деякі додаткові функції."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:825
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:841
 msgid "Basic syntax::"
 msgstr "Основний синтаксис:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:836
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:852
 msgid "**Crash-course for people who are familiar with switch statements**:"
 msgstr "**Прискорений курс для людей, які знайомі із switch**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:838
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:854
 msgid "Replace ``switch`` with ``match``."
 msgstr "Замініть ``switch`` на ``match``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:839
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:855
 msgid "Remove ``case``."
 msgstr "Видаліть ``case``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:840
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:856
 msgid ""
 "Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
@@ -1500,21 +1518,22 @@ msgstr ""
 "Видаліть будь-які ``break``. Якщо ви не хочете видаляти ``break`` ви можете "
 "використовувати ``continue`` щоб перескакувати їх."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:841
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:857
 msgid "Change ``default`` to a single underscore."
 msgstr "Змініть ``default`` на одне підкреслення."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:844
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:860
 msgid "**Control flow**:"
 msgstr "**Потік керування**:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:846
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:862
+#, fuzzy
 msgid ""
-"The patterns are matched from top to bottom. If a pattern matches, the "
+"The patterns are matched from top to bottom. If a pattern matches, the first "
 "corresponding block will be executed. After that, the execution continues "
 "below the ``match`` statement. If you want to have a fallthrough, you can "
-"use ``continue`` to stop execution in the current block and check the ones "
-"below it."
+"use ``continue`` to stop execution in the current block and check for an "
+"additional match in the patterns below it."
 msgstr ""
 "Шаблони перевіряються зверху вниз. Якщо шаблон відповідає, відповідний блок "
 "буде виконаний. Після цього виконання продовжується нижче оператора "
@@ -1522,36 +1541,36 @@ msgstr ""
 "``continue`` для зупинки виконання в поточному блоці і перевірки тих, що "
 "знаходяться під ним."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:850
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:866
 msgid "There are 6 pattern types:"
 msgstr "Є 6 типів шаблонів:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:862
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:878
 msgid "Constant pattern"
 msgstr "Постійний шаблон"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:853
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
 msgid "Constant primitives, like numbers and strings::"
 msgstr "Постійні примітиви, як числа та рядки:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:874
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:890
 msgid "Variable pattern"
 msgstr "Змінний шаблон"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:865
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:881
 msgid "Matches the contents of a variable/enum::"
 msgstr "Відповідає вмісту змінної / переліку:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:888
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:904
 msgid "Wildcard pattern"
 msgstr "Шаблон Wildcard"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:877
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:893
 #, fuzzy
 msgid "This pattern matches everything. It's written as a single underscore."
 msgstr "Цей шаблон відповідає всім. Це написано як окреме підкреслення."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:879
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:895
 msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages::"
@@ -1559,11 +1578,11 @@ msgstr ""
 "Він може бути використаний в якості еквівалента ``default`` в ``switch`` з "
 "інших мов:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:901
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:917
 msgid "Binding pattern"
 msgstr "Зв'язувальний шаблон"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:891
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:907
 msgid ""
 "A binding pattern introduces a new variable. Like the wildcard pattern, it "
 "matches everything - and also gives that value a name. It's especially "
@@ -1573,11 +1592,11 @@ msgstr ""
 "відповідає всім - а також надає цьому значенню ім'я. Це особливо корисно для "
 "моделей масивів та словників:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:922
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:938
 msgid "Array pattern"
 msgstr "Шаблон масиву"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:904
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:920
 #, fuzzy
 msgid ""
 "Matches an array. Every single element of the array pattern is a pattern "
@@ -1586,7 +1605,7 @@ msgstr ""
 "Відповідає масиву. Кожен окремий елемент шаблону масиву є самим шаблоном, "
 "тому ви можете вкласти їх."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:906
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:922
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
 "pattern, otherwise the pattern doesn't match."
@@ -1594,7 +1613,7 @@ msgstr ""
 "Спочатку тестується довжина масиву, він повинен бути того ж розміру, що і "
 "шаблон, інакше шаблон не збігатиметься."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:908
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:924
 #, fuzzy
 msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
@@ -1603,15 +1622,15 @@ msgstr ""
 "**Масив відкритого типу**: Масив може бути більшим за шаблон, зробивши "
 "останній під-шаблон ``..``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:910
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:926
 msgid "Every subpattern has to be comma-separated."
 msgstr "Кожен під-шаблон повинен бути розділений комою."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:949
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:965
 msgid "Dictionary pattern"
 msgstr "Словниковий шаблон"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:941
 msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
@@ -1619,7 +1638,7 @@ msgstr ""
 "Працює так само, як і шаблон масиву. Кожен ключ повинен бути постійним "
 "шаблоном."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:927
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:943
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
 "the pattern, otherwise the pattern doesn't match."
@@ -1627,30 +1646,30 @@ msgstr ""
 "Спочатку тестується розмір словника, він повинен бути того ж розміру, що і "
 "шаблон, інакше шаблон не співладе."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:929
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:945
 msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:931
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:947
 msgid "Every subpattern has to be comma separated."
 msgstr "Кожен під-шаблон повинен бути відокремлений комою."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:933
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:949
 msgid ""
 "If you don't specify a value, then only the existence of the key is checked."
 msgstr "Якщо значення не вказано, перевіряється лише наявність ключа."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:935
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:951
 msgid "A value pattern is separated from the key pattern with a ``:``."
 msgstr "Шаблон значення відокремлений від основного шаблону ``:``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:962
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:978
 msgid "Multiple patterns"
 msgstr "Кілька шаблонів"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:952
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:968
 msgid ""
 "You can also specify multiple patterns separated by a comma. These patterns "
 "aren't allowed to have any bindings in them."
@@ -1658,11 +1677,11 @@ msgstr ""
 "Ви також можете вказати кілька шаблонів, розділених комою. Ці шаблони не "
 "можуть мати ніяких прив'язок у них."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:965
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
 msgid "Classes"
 msgstr "Класи"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:967
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:983
 msgid ""
 "By default, all script files are unnamed classes. In this case, you can only "
 "reference them using the file's path, using either a relative or an absolute "
@@ -1673,7 +1692,7 @@ msgstr ""
 "або відносний, або абсолютний шлях. Наприклад, якщо ви назвали файл скрипту "
 "``character.gd``:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:980
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:996
 msgid ""
 "Instead, you can give your class a name to register it as a new type in "
 "Godot's editor. For that, you use the ``class_name`` keyword. You can add an "
@@ -1686,11 +1705,11 @@ msgstr ""
 "зображення, щоб використовувати його як піктограму. Потім ваш клас з’явиться "
 "з новою піктограмою в редакторі:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:992
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1008
 msgid "Here's a class file example:"
 msgstr "Ось зразок файла класу:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1014
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1030
 msgid ""
 "Godot's class syntax is compact: it can only contain member variables or "
 "functions. You can use static functions, but not static member variables. In "
@@ -1705,35 +1724,35 @@ msgstr ""
 "екземпляр, і це включає масиви та словники. Це в дусі безпеки потоку, "
 "оскільки скрипти можна ініціалізувати в окремих потоках."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1022
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1038
 msgid "Inheritance"
 msgstr "Успадкування"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1024
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1040
 msgid "A class (stored as a file) can inherit from:"
 msgstr "Клас (зберігається як файл) може успадковувати від:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1026
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1042
 msgid "A global class."
 msgstr "Глобального класу."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1027
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1043
 msgid "Another class file."
 msgstr "Іншого класу."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1028
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1044
 msgid "An inner class inside another class file."
 msgstr "Внутрішнього класу всередині іншого файла класу."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1030
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1046
 msgid "Multiple inheritance is not allowed."
 msgstr "Багаторазове успадкування неможливе."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1032
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1048
 msgid "Inheritance uses the ``extends`` keyword::"
 msgstr "При успадкуванні використовується ключове слово ``extends``:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1044
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1060
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used::"
@@ -1741,7 +1760,7 @@ msgstr ""
 "Щоб перевірити, чи певний екземпляр успадковує певний клас, можна "
 "використовувати ключове слово ``is``:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1056
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1072
 msgid ""
 "To call a function in a *parent class* (i.e. one ``extend``-ed in your "
 "current class), prepend ``.`` to the function name::"
@@ -1750,7 +1769,7 @@ msgstr ""
 "допомогою ``extend`` у вашому поточному класі), використовуйте ``.`` "
 "(крапку) та ім'я функції:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1061
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1077
 msgid ""
 "This is especially useful because functions in extending classes replace "
 "functions with the same name in their parent classes. If you still want to "
@@ -1762,7 +1781,7 @@ msgstr ""
 "викликати їх, ви можете встановивши їм префікс ``.`` (крапку) (це як ключове "
 "слово ``super`` в інших мовах):"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1069
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1085
 #, fuzzy
 msgid ""
 "Default functions like  ``_init``, and most notifications such as "
@@ -1775,11 +1794,11 @@ msgstr ""
 "викликаються у всіх батьківських класах автоматично. Не потрібно їх "
 "викликати при перевантаженні."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1076
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1092
 msgid "Class Constructor"
 msgstr "Конструктор класу"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1078
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1094
 msgid ""
 "The class constructor, called on class instantiation, is named ``_init``. As "
 "mentioned earlier, the constructors of parent classes are called "
@@ -1791,7 +1810,7 @@ msgstr ""
 "автоматично при успадкуванні класу. Тож зазвичай не потрібно явно викликати "
 "``._init()``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1083
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1099
 msgid ""
 "Unlike the call of a regular function, like in the above example with ``."
 "some_func``, if the constructor from the inherited class takes arguments, "
@@ -1801,15 +1820,15 @@ msgstr ""
 "``.some_func``, якщо конструктор із спадкового класу бере аргументи, вони "
 "передаються так:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1090
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1106
 msgid "This is better explained through examples. Consider this scenario::"
 msgstr "Це краще пояснюється на прикладах. Розглянемо цей скрипт:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1113
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1129
 msgid "There are a few things to keep in mind here:"
 msgstr "Тут слід зазначити таке:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1115
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1131
 msgid ""
 "If the inherited class (``State.gd``) defines a ``_init`` constructor that "
 "takes arguments (``e`` in this case), then the inheriting class (``Idle."
@@ -1821,7 +1840,7 @@ msgstr ""
 "клас (нащадок) (``Idle.gd``) повинен також визначити ``_init`` і передати "
 "відповідні параметри в ``_init`` з ``State.gd``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1118
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1134
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the parent class "
 "``State.gd``."
@@ -1829,7 +1848,7 @@ msgstr ""
 "``Idle.gd`` може мати іншу кількість аргументів, ніж батьківський клас "
 "``State.gd``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1119
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1135
 msgid ""
 "In the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``."
@@ -1837,7 +1856,7 @@ msgstr ""
 "У наведеному вище прикладі ``e`` передане конструктору ``State.gd`` те саме, "
 "що й ``e`` передане в ``Idle.gd``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1121
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1137
 #, fuzzy
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
@@ -1850,11 +1869,11 @@ msgstr ""
 "нічого з ним не робить. Це приводить нас до того, що ви можете передавати "
 "літерали в базовий конструктор, а не лише змінні. Наприклад:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1131
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1147
 msgid "Inner classes"
 msgstr "Внутрішні класи"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1133
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1149
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
@@ -1863,11 +1882,11 @@ msgstr ""
 "допомогою ключового слова ``class``. Вони встановлені за допомогою функції "
 "``ClassName.new()``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1158
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1174
 msgid "Classes as resources"
 msgstr "Класи як ресурси"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1160
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1176
 msgid ""
 "Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
 "They must be loaded from disk to access them in other classes. This is done "
@@ -1881,20 +1900,20 @@ msgstr ""
 "``preload``(дивіться нижче). Створення екземпляра завантаженого ресурсу "
 "класу здійснюється викликом функції ``new`` на об'єкті класу:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1177
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1193
 msgid "Exports"
 msgstr "Експорт"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1181
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1197
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
 msgstr "Документація про експорт переміщена до :ref:`doc_gdscript_exports`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1184
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1200
 msgid "Setters/getters"
 msgstr "Сетери/гетери"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1186
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1202
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
@@ -1903,7 +1922,7 @@ msgstr ""
 "Часто корисно знати, коли змінна класу змінюється з будь-якої причини. Також "
 "можливо їх треба буде інкапсулювати."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1189
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1205
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
@@ -1912,7 +1931,7 @@ msgstr ""
 "слова ``setget``. Він використовується безпосередньо після визначення "
 "змінної:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1196
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1212
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -1928,11 +1947,11 @@ msgstr ""
 "*getter* (``getterfunc`` вище) повинна повернути через ``return`` бажане "
 "значення. Нижче наведено приклад:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1212
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1228
 msgid "Either of the *setter* or *getter* functions can be omitted::"
 msgstr "Будь-яку з функцій *сетера*, або *гетера*, можна опустити:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1219
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1235
 msgid ""
 "Setters and getters are useful when :ref:`exporting variables "
 "<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
@@ -1942,7 +1961,7 @@ msgstr ""
 "до редактора в скриптах інструментів, або плагінах, для перевірки введення "
 "даних."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1222
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1238
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
@@ -1950,11 +1969,11 @@ msgstr ""
 "Як було сказано, *локальний* доступ *не* запускає сетер та геттер. Ось "
 "демонстрація цього:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1239
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1255
 msgid "Tool mode"
 msgstr "Режим інструмента"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1241
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
 #, fuzzy
 msgid ""
 "By default, scripts don't run inside the editor and only the exported "
@@ -1969,11 +1988,11 @@ msgstr ""
 "код або уникають цього вручну). Для цього існує ключове слово ``tool`` і "
 "воно має бути розміщене у верхній частині файлу:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1255
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1271
 msgid "See :ref:`doc_running_code_in_the_editor` for more information."
 msgstr "Додаткову інформацію дивіться в :ref:`doc_running_code_in_the_editor`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1273
 msgid ""
 "Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
 "script (especially the script's owner itself). As tool scripts run their "
@@ -1984,11 +2003,11 @@ msgstr ""
 "Оскільки скрипти інструментів виконують свій код у редакторі, неправильне "
 "використання може призвести до збою редактора."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1263
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1279
 msgid "Memory management"
 msgstr "Управління пам'яттю"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1265
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1281
 #, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
@@ -2007,7 +2026,7 @@ msgstr ""
 "Щоб уникнути еталонних циклів, які неможливо звільнити, передбачена функція "
 "``weakref`` створення слабких посилань."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1273
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1289
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
@@ -2017,11 +2036,11 @@ msgstr ""
 "``is_instance_valid(instance)`` можуть бути використані для перевірки, чи "
 "об'єкт звільнений."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1280
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1296
 msgid "Signals"
 msgstr "Сигнали"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1298
 msgid ""
 "Signals are a tool to emit messages from an object that other objects can "
 "react to. To create custom signals for a class, use the ``signal`` keyword."
@@ -2030,7 +2049,7 @@ msgstr ""
 "реагувати інші об'єкти. Щоб створити спеціальні сигнали для класу, "
 "використовуйте ключове слово ``signal``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1295
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1311
 msgid ""
 "Signals are a `Callback <https://en.wikipedia.org/wiki/"
 "Callback_(computer_programming)>`_ mechanism. They also fill the role of "
@@ -2044,7 +2063,7 @@ msgstr ""
 "інформації читайте `Observer tutorial <https://gameprogrammingpatterns.com/"
 "observer.html>`_ у книзі \"Шаблони програмування ігор\"."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1302
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1318
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
 "signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
@@ -2053,7 +2072,7 @@ msgstr ""
 "вбудовані сигнали вузлів, таких як :ref:`class_Button`, або :ref:"
 "`class_RigidBody`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1305
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1321
 msgid ""
 "In the example below, we connect the ``health_depleted`` signal from a "
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
@@ -2063,11 +2082,11 @@ msgstr ""
 "вузла ``Character`` до вузла . Коли вузол ``Character`` випромінює сигнал, з "
 "вузла ``Game`` викликається ``_on_Character_health_depleted``:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
 msgid "You can emit as many arguments as you want along with a signal."
 msgstr "Ви можете передати скільки завгодно аргументів разом із сигналом."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1321
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1337
 msgid ""
 "Here is an example where this is useful. Let's say we want a life bar on "
 "screen to react to health changes with an animation, but we want to keep the "
@@ -2077,7 +2096,7 @@ msgstr ""
 "реагувала на зміни здоров'я за допомогою анімації, але ми хочемо, щоб "
 "інтерфейс користувача був окремим від гравця в нашому дереві сцен."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1325
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1341
 msgid ""
 "In our ``Character.gd`` script, we define a ``health_changed`` signal and "
 "emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
@@ -2091,7 +2110,7 @@ msgstr ""
 "сцени ми підключаємо його до ``Lifebar`` за допомогою методу :ref:`Object."
 "connect() <class_Object_method_connect>`:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1366
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
@@ -2099,7 +2118,7 @@ msgstr ""
 "Щоб використовувати сигнали, ваш клас повинен розширенням класу ``Object``, "
 "або подібного типу, як то ``Node``, ``KinematicBody``, ``Control``..."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1369
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1385
 msgid ""
 "In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
 "then connect the character, that emits the signal, to the receiver, the "
@@ -2109,7 +2128,7 @@ msgstr ""
 "підключаємо вузол, який випромінює сигнал, до приймача, у цьому випадку "
 "вузол ``Lifebar``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1383
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1399
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
@@ -2117,7 +2136,7 @@ msgstr ""
 "Це дозволяє ``Lifebar`` реагувати на зміни стану здоров’я, без з'єднання з "
 "вузлом ``Character``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1386
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1402
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
@@ -2125,7 +2144,7 @@ msgstr ""
 "Ви можете записати необов'язкові імена аргументів у дужки після визначення "
 "сигналу::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1392
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1408
 msgid ""
 "These arguments show up in the editor's node dock, and Godot can use them to "
 "generate callback functions for you. However, you can still emit any number "
@@ -2137,7 +2156,7 @@ msgstr ""
 "ви можете випромінювати будь-яку кількість аргументів, коли ви випромінюєте "
 "сигнали; Ви повинні випромінювати правильні значення."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1398
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1414
 msgid ""
 "GDScript can bind an array of values to connections between a signal and a "
 "method. When the signal is emitted, the callback method receives the bound "
@@ -2149,7 +2168,7 @@ msgstr ""
 "зв'язані значення. Ці пов'язані аргументи є унікальними для кожного "
 "з'єднання, і значення залишаться тими самими."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1403
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1419
 msgid ""
 "You can use this array of values to add extra constant information to the "
 "connection if the emitted signal itself doesn't give you access to all the "
@@ -2159,7 +2178,7 @@ msgstr ""
 "інформацію до з'єднання, якщо сам випромінений сигнал не надає вам доступ до "
 "всіх необхідних вам даних."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1407
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1423
 msgid ""
 "Building on the example above, let's say we want to display a log of the "
 "damage taken by each character on the screen, like ``Player1 took 22 damage."
@@ -2173,7 +2192,7 @@ msgstr ""
 "пошкодження. Отже, коли ми підключаємо сигнал ``health_changed`` до ігрової "
 "консолі, ми можемо додати ім'я персонажа в аргументі поєднаного масиву:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1421
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1437
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
@@ -2181,11 +2200,11 @@ msgstr ""
 "Наш вузол ``BattleLog`` отримує кожен елемент прив'язаного масиву, як "
 "додатковий аргумент:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1434
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1450
 msgid "Coroutines with yield"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1436
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1452
 #, fuzzy
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
@@ -2203,12 +2222,12 @@ msgstr ""
 "``resume()`` цього об'єкта продовжить виконання та поверне те, що поверне "
 "функція. Після відновлення об'єкт стану стає недійсним. Ось приклад:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1457
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1478
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1473
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1494
 msgid "Will print::"
 msgstr "Буде виведено:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1463
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1479
 msgid ""
 "It is also possible to pass values between ``yield()`` and ``resume()``, for "
 "example::"
@@ -2216,17 +2235,17 @@ msgstr ""
 "Крім того , можна передавати значення між ``yield()`` і ``resume()``, "
 "наприклад:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1500
 msgid ""
 "Remember to save the new function state, when using multiple ``yield``\\s::"
 msgstr ""
 "Не забудьте зберегти новий стан функції при використанні декількох ``yield``:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1499
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1515
 msgid "Coroutines & signals"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1501
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1517
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
@@ -2236,7 +2255,7 @@ msgstr ""
 "``yield`` може прийняти два аргументи, об'єкт і сигнал. Коли сигнал буде "
 "отримано, виконання почнеться. Ось кілька прикладів:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1514
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1530
 #, fuzzy
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
@@ -2245,23 +2264,23 @@ msgstr ""
 "Самі супровідники використовують сигнал ``completed`` під час переходу в "
 "недійсний стан, наприклад:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1526
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1542
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr "``my_func`` продовжить виконання лише після натискання обох кнопок."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1528
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1544
 msgid "You can also get the signal's argument once it's emitted by an object:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1535
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1551
 msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1557
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1573
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "irregardless of whether coroutines were used internally. Note that using "
@@ -2269,11 +2288,11 @@ msgid ""
 "emitted when the function didn't yield anymore."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1563
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1579
 msgid "Onready keyword"
 msgstr "Ключове слово Onready"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1565
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1581
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2285,7 +2304,7 @@ msgstr ""
 "час входу в дерево активних сцен, під-вузли можна отримати лише тоді, коли "
 "здійснюється виклик ``Node._ready()``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1578
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1594
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2297,11 +2316,11 @@ msgstr ""
 "відкладає ініціалізацію змінної члена до виклику ``_ready()``. Воно може "
 "замінити вищевказаний код одним рядком:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1586
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1602
 msgid "Assert keyword"
 msgstr "Ключове слово Assert"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1588
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1604
 #, fuzzy
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
@@ -2319,7 +2338,7 @@ msgstr ""
 "скрипту може змінюватись залежно від того, чи виконується проект у "
 "налагодженні."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1600
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

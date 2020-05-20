@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:4
+msgid "KDevelop"
+msgstr "KDevelop"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:6
+msgid ""
+"`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
+"desktop platforms."
+msgstr ""
+"`KDevelop <https://www.kdevelop.org>`_ это бесплатная, открытая IDE для всех "
+"десктопных платформ."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:8
+#, fuzzy
+msgid "Start by opening KDevelop and choosing **Open Project**."
+msgstr "Начните с открытия KDevelop и выбирания \"open project\"."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:12
+msgid "Choose the directory where you cloned Godot."
+msgstr "Выберите директорию где вы склонировали Godot."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:14
+#, fuzzy
+msgid ""
+"On the next screen, choose **Custom Build System** for the **Project "
+"Manager**."
+msgstr ""
+"На следующем экране, выберите \"Custom Build System\" для *Project manager*."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:18
+msgid "Now that the project has been imported, open the project configuration."
+msgstr "Теперь, когда проект импортирован, откройте конфигурацию проекта."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:22
+msgid "Add the following includes/imports:"
+msgstr "Добавьте следующие инклуды/импорты:"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:35
+msgid "Apply the changes."
+msgstr "Примените изменения."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:37
+#, fuzzy
+msgid ""
+"Switch to the **Custom Build System** tab. Add a build configuration and "
+"keep the build directory blank. Enable build tools and add ``scons`` as the "
+"executable then add ``platform=linuxbsd target=debug`` (``platform=osx`` if "
+"you're on macOS) as the arguments."
+msgstr ""
+"Переключитесь на вкладку \"Custom Build System\". Добавьте сонфигурацию "
+"сборки и сохраните бланк директории сборки. Включите утилиты сборки и "
+"добавьте ``scons`` как ваш исполняемый файл и ``platform=x11 target=debug`` "
+"(``platform=osx`` если вы используете macOS) как аргументы."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:44
+#, fuzzy
+msgid ""
+"Next, we need to tell KDevelop where to find the binary. From the **Run** "
+"menu, choose **Configure Launches**."
+msgstr ""
+"Затем вы должны сообщить KDevelop где найти исполняемый файл. Из меню \"Run"
+"\" выберите \"Configure Launches\"."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
+#, fuzzy
+msgid ""
+"Click **Add** if no launcher exists. Then add the path to your executable in "
+"the executable section. Your executable should be located in the ``bin/`` "
+"subdirectory and should be named something like ``godot.linuxbsd.tools.64`` "
+"(the name could be different depending on your platform and build options)."
+msgstr ""
+"Кликните по \"Add\" если лаунчер отсутствует. Затем добавьте путь к "
+"экзешнику в секции исполнямых файлов. Ваш исполняемый файл должен находиться "
+"в под-директории ``bin/`` и должен иметь имя подобное ``godot.x11.tools.64`` "
+"(имя может быть немного другим в зависимости от вашей платформы и ваших "
+"опций сборки)."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
+#, fuzzy
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"Краткий обзор по этим каналам также доступен на веб-сайте\n"
+"<https://godotengine.org/community>`_."

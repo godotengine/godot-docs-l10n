@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,26 +214,33 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:117
 msgid ""
-"If you import a file with the same file path/name as one you already have in "
-"your project, the imported one will replace it. This is something to watch "
-"out for when creating DLC or mods (solved easily with a tool isolating mods "
-"to a specific mods subfolder). However, it is also a way of creating patches "
-"for one's own game. A PCK file of this kind can fix the content of a "
-"previously loaded PCK."
+"By default, if you import a file with the same file path/name as one you "
+"already have in your project, the imported one will replace it. This is "
+"something to watch out for when creating DLC or mods (solved easily with a "
+"tool isolating mods to a specific mods subfolder). However, it is also a way "
+"of creating patches for one's own game. A PCK file of this kind can fix the "
+"content of a previously loaded PCK."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:124
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:123
+msgid ""
+"To opt out of this behavior, pass ``false`` as the second argument to :ref:"
+"`ProjectSettings.load_resource_pack() "
+"<class_ProjectSettings_method_load_resource_pack>`."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:127
 msgid ""
 "For a C# project, you need to build the DLL and place it in the project "
 "directory first. Then, before loading the resource pack, you need to load "
 "its DLL as follows: ``Assembly.LoadFile(\"mod.dll\")``"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:129
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:132
 msgid "Summary"
 msgstr "Podsumowanie"
 
-#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:131
+#: ../../docs/getting_started/workflow/export/exporting_pcks.rst:134
 msgid ""
 "This tutorial should illustrate how easy adding mods, patches or DLC to a "
 "game is. The most important thing is to identify how one plans to distribute "

@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:4
+msgid "KDevelop"
+msgstr "KDevelop"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:6
+msgid ""
+"`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
+"desktop platforms."
+msgstr ""
+"`KDevelop <https://www.kdevelop.org>`_ は、すべてのデスクトッププラットフォー"
+"ム向けの無料のオープンソースIDEです。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:8
+#, fuzzy
+msgid "Start by opening KDevelop and choosing **Open Project**."
+msgstr "KDevelopを開き、\"open project\" を選択して開始します。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:12
+msgid "Choose the directory where you cloned Godot."
+msgstr "Godotのクローンを作成したディレクトリを選択します。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:14
+#, fuzzy
+msgid ""
+"On the next screen, choose **Custom Build System** for the **Project "
+"Manager**."
+msgstr ""
+"次の画面で、\\ *Project manager* の \"Custom Build System\" を選択します。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:18
+msgid "Now that the project has been imported, open the project configuration."
+msgstr "プロジェクトがインポートされたので、プロジェクトの設定を開きます。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:22
+msgid "Add the following includes/imports:"
+msgstr "次を includes/imports に追加します:"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:35
+msgid "Apply the changes."
+msgstr "変更(Apply)を適用します。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:37
+#, fuzzy
+msgid ""
+"Switch to the **Custom Build System** tab. Add a build configuration and "
+"keep the build directory blank. Enable build tools and add ``scons`` as the "
+"executable then add ``platform=linuxbsd target=debug`` (``platform=osx`` if "
+"you're on macOS) as the arguments."
+msgstr ""
+"\"Custom Build System\" タブに切り替えます。ビルド構成(Build configuration)を"
+"追加し、ビルドディレクトリ(Build Directory)を空白のままにします。ビルドツール"
+"(Build Tools)を有効(Enable)にし、実行可能ファイル(Executable)として `` "
+"scons`` を追加してから、引数(Arguments)として ``platform = x11 target = "
+"debug`` (macOSを使用している場合は `` platform = osx``)を追加します。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:44
+#, fuzzy
+msgid ""
+"Next, we need to tell KDevelop where to find the binary. From the **Run** "
+"menu, choose **Configure Launches**."
+msgstr ""
+"次に、バイナリを見つける場所をKDevelopに指示する必要があります。\"Run\" メ"
+"ニューから[起動設定]を選択します。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
+#, fuzzy
+msgid ""
+"Click **Add** if no launcher exists. Then add the path to your executable in "
+"the executable section. Your executable should be located in the ``bin/`` "
+"subdirectory and should be named something like ``godot.linuxbsd.tools.64`` "
+"(the name could be different depending on your platform and build options)."
+msgstr ""
+"ランチャーが存在しない場合は、[追加] をクリックします。次に、実行可能"
+"(Executable)セクションに実行可能ファイルへのパスを追加します。実行可能ファイ"
+"ルは ``bin/`` サブディレクトリに配置し、\\ ``godot.x11.tools.64`` のような名"
+"前を付ける必要があります(名前はプラットフォームやビルドオプションによって異な"
+"る場合があります) 。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
+#, fuzzy
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"これらのチャネルやその他のチャネルの概要は、`Godotウェブサイト <https://"
+"godotengine.org/community>`_\\ でもご覧いただけます。"

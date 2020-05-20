@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,14 +22,13 @@ msgid "Exporting for Android"
 msgstr "Exportando para Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
-#, fuzzy
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for it. "
 "The following steps detail what is needed to setup the SDK and the engine."
 msgstr ""
-"Exportar para Android tem menos requisitos do que compilar a Godot para ele. "
-"Os passos seguintes detalham o que é necessário para configurar o SDK e a "
-"engine."
+"Exportar para Android possui menos requisitos do que compilar a Godot para "
+"ele. Os passos seguintes detalham o que é necessário para configurar o SDK e "
+"o motor."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 #, fuzzy
@@ -37,11 +36,12 @@ msgid "Download the Android SDK"
 msgstr "Baixe o Android SDK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
-#, fuzzy
 msgid ""
 "Download and install the Android SDK from `developer.android.com <https://"
 "developer.android.com/studio/>`__."
-msgstr "Android SDK: https://developer.android.com/studio/"
+msgstr ""
+"Baixe e instale o Android SDK a partir de `developer.android.com <https://"
+"developer.android.com/studio/>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
 #, fuzzy
@@ -58,14 +58,13 @@ msgid "Install OpenJDK or Oracle JDK"
 msgstr "Instale OpenJDK ou Oracle JDK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
-#, fuzzy
 msgid ""
 "Download and install  `OpenJDK <https://github.com/ojdkbuild/ojdkbuild>`__ "
 "or `Oracle JDK <http://www.oracle.com/technetwork/java/javase/downloads/"
 "index.html>`__. Versions below JDK 8 may not work; some users have reported "
 "issues with the jarsigner (used to sign the APKs) in JDK 7."
 msgstr ""
-"Baixe e instale `OpenJDK <https://github.com/ojdkbuild/ojdkbuild>`__ ou "
+"Baixe e instale o `OpenJDK <https://github.com/ojdkbuild/ojdkbuild>`__ ou o "
 "`Oracle JDK <http://www.oracle.com/technetwork/java/javase/downloads/index."
 "html>`__. As versões abaixo de JDK 8 podem não funcionar; alguns usuários "
 "relataram problemas com o jarsigner (usado para assinar os APKs) em JDK 7."
@@ -86,15 +85,14 @@ msgid "Create a debug.keystore"
 msgstr "Crie um debug.keystore"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:27
-#, fuzzy
 msgid ""
 "Android needs a debug keystore file to install to devices and distribute non-"
 "release APKs. If you have used the SDK before and have built projects, ant "
 "or eclipse probably generated one for you (on Linux and macOS, you can find "
 "it in the ``~/.android`` directory)."
 msgstr ""
-"O Android precisa de um arquivo de depuração de chaves para instalar em "
-"dispositivos e distribuir APKs não liberados. Se você já usou o SDK antes e "
+"O Android precisa de um arquivo de debug keystore para instalar em "
+"dispositivos e distribuir APKs sem lançamento. Se você já usou o SDK antes e "
 "construiu projetos, ant ou eclipse provavelmente gerou um para você (no "
 "Linux e macOS, você pode encontrá-lo no diretório ``~/.android```)."
 
@@ -128,17 +126,16 @@ msgid "Make sure you have adb"
 msgstr "Verifique se você possui adb"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
-#, fuzzy
 msgid ""
 "Android Debug Bridge (``adb``) is the command line tool used to communicate "
 "with Android devices. It's installed with the SDK, but you may need to "
 "install one (any) of the Android API levels for it to be installed in the "
 "SDK directory."
 msgstr ""
-"Android Debug Bridge (adb) é a ferramenta de linha de comando utilizada para "
-"comunicar com dispositivos Android. Ele é instalado com o SDK, mas você pode "
-"precisar instalar um (qualquer) dos níveis da API do Android para que ele "
-"seja instalado no diretório do SDK."
+"Android Debug Bridge (``adb``) é a ferramenta de linha de comando utilizada "
+"para comunicar com dispositivos Android. Ele é instalado com o SDK, mas você "
+"pode precisar instalar um (qualquer) dos níveis da API do Android para que "
+"ele seja instalado no diretório do SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:47
 #, fuzzy
@@ -203,38 +200,32 @@ msgid "Once that is configured, everything is ready to export to Android!"
 msgstr "Uma vez configurado, tudo está pronto para exportar para o Android!"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
-#, fuzzy
 msgid "Providing launcher icons"
-msgstr "Fornecer de ícones da aplicação"
+msgstr "Fornecendo ícones de launcher"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:75
-#, fuzzy
 msgid ""
 "Launcher icons are used by Android launcher apps to represent your "
 "application to users. Godot only requires high-resolution icons (for "
 "``xxxhdpi`` density screens) and will automatically generate lower-"
 "resolution variants."
 msgstr ""
-"Os ícones de aplicação são usadas por aplicações de launcher do Android para "
-"representar a sua aplicação aos usuários. A Godot só requer ícones de alta "
+"Os ícones de launcher são usados por aplicativos de launcher do Android para "
+"representar o seu aplicativo aos usuários. O Godot só requer ícones de alta "
 "resolução (para telas de densidade ``xxxhdpi``), e irá gerar automaticamente "
 "variantes para resoluções menores."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:77
-#, fuzzy
 msgid "There are two types of icons required by Godot:"
-msgstr ""
-"Existem duas maneiras de projetar sua interface do usuário no Godot. Você "
-"pode:"
+msgstr "Há dois tipos de ícones requisitados pelo Godot:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
-#, fuzzy
 msgid ""
 "**Main Icon:** The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
 "**Ícone principal:**: O ícone \"clássico\". Será utilizado em todas as "
-"versões do Android até ao Android 8 (Oreo), exclusivo. Deve ter pelo menos "
+"versões do Android até o Android 8 (Oreo), exclusivo. Deve ter pelo menos "
 "192×192 px."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
@@ -246,6 +237,12 @@ msgid ""
 "launcher application will control the icon's animation and masking. Must be "
 "at least 432×432 px."
 msgstr ""
+"**Ícones Adaptáveis**: A partir do Android 8 (inclusivo), 'Ícones Adaptáveis "
+"<https://developer.android.com/guide/practices/ui_guidelines/"
+"icon_design_adaptive>'_ foram introduzidos. Aplicativos vão precisar incluir "
+"separadamente ícones de fundo e de frente para terem um visual nativo. O "
+"aplicativo de launcher do usuário vai controlar a animação e máscara do "
+"ícone. Deve ter no minimo 432x432 px."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 msgid ""
@@ -258,8 +255,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
 msgid ""
 "The most important adaptive icon design rule is to have your icon critical "
-"elements inside the safe zone: a centered circle with a radius of 66dp (264 "
-"pixels on ``xxxhdpi``) to avoid being clipped by the launcher."
+"elements inside the safe zone: a centered circle with a diameter of 66dp "
+"(264 pixels on ``xxxhdpi``) to avoid being clipped by the launcher."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
@@ -293,9 +290,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95
-#, fuzzy
 msgid "Exporting for Google Play Store"
-msgstr "Exportando por plataforma"
+msgstr "Exportando para a Google Play Store"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:97
 msgid ""

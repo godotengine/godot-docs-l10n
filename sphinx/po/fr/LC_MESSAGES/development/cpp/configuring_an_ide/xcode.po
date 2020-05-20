@@ -1,0 +1,272 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:4
+msgid "Xcode"
+msgstr "Xcode"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:6
+msgid ""
+"Xcode is a free macOS-only IDE. You can download it from the Mac App Store."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:9
+msgid "Project setup"
+msgstr "Configuration du projet"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:11
+#, fuzzy
+msgid "Create an Xcode external build project anywhere."
+msgstr "Créer un projet de construction externe Xcode n'importe où"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:15
+msgid "Go to the build target's **Info** tab, then:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:17
+#, fuzzy
+msgid "Set **Build Tool** to the full path to SCons."
+msgstr "Réglez le *Build tool* au chemin de scons"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:18
+#, fuzzy
+msgid ""
+"Set **Arguments** to something like ``platform=osx tools=yes bits=64 "
+"target=debug``."
+msgstr ""
+"Définissez *Arguments* comme suit : platform=osx tools=yes bits=64 "
+"target=debug"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:20
+#, fuzzy
+msgid "Set **Directory** to the path to Godot's source folder."
+msgstr ""
+"Définir *Header Search Paths* vers un chemin absolu vers le dossier source "
+"de Godot"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:21
+#, fuzzy
+msgid "You may uncheck **Pass build settings in environment**."
+msgstr "Vous pouvez décocher *Pass build settings in environment*"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:25
+msgid ""
+"Add a Command Line Tool target which will be used for indexing the project:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:27
+#, fuzzy
+msgid ""
+"In Xcode's menu, choose **File > New > Target...** and add a new Xcode "
+"command line tool target."
+msgstr ""
+"Allez dans Xcode File > New > Target... et ajoutez une nouvelle cible de "
+"ligne de commande Xcode"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:34
+#, fuzzy
+msgid ""
+"Name it something so you know not to compile with this target (e.g. "
+"``GodotXcodeIndex``)."
+msgstr ""
+"Donnez-lui un nom pour que vous sachiez qu'il ne faut pas compiler avec "
+"cette cible"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:35
+#, fuzzy
+msgid ""
+"Goto the newly created target's **Build Settings** tab and look for **Header "
+"Search Paths**."
+msgstr ""
+"Allez à l'onglet *Build Settings* de la cible nouvellement créée et "
+"recherchez pour *Header Search Paths\""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:36
+#, fuzzy
+msgid ""
+"Set **Header Search Paths** to the absolute path to Godot's source folder."
+msgstr ""
+"Définir *Header Search Paths* vers un chemin absolu vers le dossier source "
+"de Godot"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:37
+#, fuzzy
+msgid ""
+"Make it recursive by adding two asterisks (``**``) to the end of the path, e."
+"g. ``/Users/me/repos/godot-source/**``."
+msgstr "Rendre le tout récursif en ajoutant deux \\* à la fin du chemin"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:40
+#, fuzzy
+msgid "Add the Godot source to the project:"
+msgstr "Ajouter la source Godot au projet :"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:42
+#, fuzzy
+msgid "Drag and drop Godot source into the project file browser."
+msgstr ""
+"Glissez-déposez la source Godot dans le navigateur de fichiers de projet."
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:43
+#, fuzzy
+msgid "Uncheck **Create external build system project**."
+msgstr "Décochez *Create External Build System*"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:47
+#, fuzzy
+msgid "Click **Next**."
+msgstr "Cliquez sur Suivant"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:48
+#, fuzzy
+msgid "Select **Create groups**."
+msgstr "Sélectionnez *créer des groupes*"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:52
+#, fuzzy
+msgid ""
+"Check *only* your command line indexing target in the **Add to targets** "
+"section."
+msgstr ""
+"Cochez uniquement votre cible de ligne de commande dans la section « Ajouter "
+"aux cibles »"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:54
+#, fuzzy
+msgid ""
+"Click finish. Xcode will now index the files. This may take a few minutes."
+msgstr "Cliquez sur Terminer. Xcode va maintenant indexer les fichiers."
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:55
+#, fuzzy
+msgid ""
+"Once Xcode is done indexing, you should have jump-to-definition, "
+"autocompletion, and full syntax highlighting."
+msgstr ""
+"Vous devriez avoir accès à la définition, à la saisie semi-automatique et à "
+"la coloration syntaxique complète une fois l'opération terminée."
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:59
+msgid "Scheme setup"
+msgstr "Configuration du schéma"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:61
+msgid ""
+"To enable debugging support, edit the external build target's build scheme:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:63
+#, fuzzy
+msgid "Open the scheme editor of the external build target."
+msgstr "Ouvrir l'éditeur de schéma de la cible de compilation externe"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:64
+#, fuzzy
+msgid "Expand the **Build** menu."
+msgstr "Développez le menu *Build*"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:65
+#, fuzzy
+msgid "Goto **Post Actions**."
+msgstr "Allez à *Post Actions*"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:66
+#, fuzzy
+msgid ""
+"Add a new script run action, select your project in **Provide build settings "
+"from** as this allows you to use the``${PROJECT_DIR}`` variable."
+msgstr ""
+"Ajoutez une nouvelle action d'exécution de script, sélectionnez votre projet "
+"dans ``Provide build settings from`` cela vous permet d'utiliser la variable "
+"``${PROJECT_DIR}``."
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:71
+#, fuzzy
+msgid ""
+"Write a script that gives the binary a name that Xcode will recognize, such "
+"as: ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/godot/"
+"bin/godot``"
+msgstr ""
+"par exemple ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 "
+"${PROJECT_DIR}/godot/bin/godot``"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:73
+#, fuzzy
+msgid "Build the external build target."
+msgstr "Construisez la cible de construction externe"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:75
+#, fuzzy
+msgid "Edit the external build target's Run scheme:"
+msgstr "Construisez la cible de construction externe"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:77
+#, fuzzy
+msgid "Open the scheme editor again."
+msgstr "Ouvrez de nouveau l'éditeur de schéma"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:78
+#, fuzzy
+msgid "Click **Run**."
+msgstr "Cliquez sur Run"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:82
+#, fuzzy
+msgid ""
+"Set the **Executable** to the file you linked in your post-build action "
+"script."
+msgstr ""
+"Définissez l'*Executable* au fichier que vous avez lié dans votre script "
+"d'action post-construction"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:83
+#, fuzzy
+msgid "Check **Debug executable** if it isn't checked already."
+msgstr "Cochez *Debug executable* s'il ne l'est pas déjà"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:84
+msgid ""
+"You can go to **Arguments** tab and specify the full path to a ``project."
+"godot`` file to debug the editor instead of the project manager. "
+"Alternatively, use ``--path`` to point to a project *folder* which will be "
+"run directly (instead of opening the editor)."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:89
+msgid "Test the Run scheme:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
+#, fuzzy
+msgid "Set a breakpoint in ``platform/osx/godot_main_osx.mm``."
+msgstr "Définissez un point d'arrêt dans platform/osx/godot_main_osx.mm"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:92
+#, fuzzy
+msgid "If all goes well, it should break at the specified breakpoint."
+msgstr "Il devrait s'interrompre au point !"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:94
+#, fuzzy
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"Un bref aperçu de ces canaux et d'autres canaux est également disponible sur "
+"le site Web de `Godot <https://godotengine.org/community>`_."

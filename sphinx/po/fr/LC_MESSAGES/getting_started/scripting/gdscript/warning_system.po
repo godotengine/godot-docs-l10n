@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:4
+#, fuzzy
+msgid "GDScript warning system"
+msgstr "Système d'avertissement"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:6
+#, fuzzy
+msgid ""
+"The GDScript warning system complements :ref:`static typing "
+"<doc_gdscript_static_typing>` (but it can work without static typing too). "
+"It's here to help you avoid mistakes that are hard to spot during "
+"development, and that may lead to runtime errors."
+msgstr ""
+"Le système d’avertissement complète le GDScript typé. Il est là pour vous "
+"aider à éviter les erreurs difficiles à repérer pendant le développement, "
+"qui peuvent mener à des erreurs à l'exécution."
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:11
+#, fuzzy
+msgid ""
+"You can configure warnings in the Project Settings under the section called "
+"**Gdscript**:"
+msgstr ""
+"Vous pouvez configurer les avertissements dans les paramètres du projet dans "
+"une nouvelle section intitulée `` GDScript`` :"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:17
+#, fuzzy
+msgid "Warning system project settings"
+msgstr "système d'avertissement et paramètres de projet"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:19
+msgid ""
+"You can find a list of warnings for the active GDScript file in the script "
+"editor's status bar. The example below has 3 warnings:"
+msgstr ""
+"Vous pouvez trouver une liste des avertissements pour le fichier GDScript "
+"actif dans la barre d'état de l'éditeur de script. L'exemple ci-dessous "
+"comporte 3 avertissements :"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:25
+#, fuzzy
+msgid "Warning system example"
+msgstr "exemple de système d'avertissement"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:27
+msgid ""
+"To ignore specific warnings in one file, insert a special comment of the "
+"form ``# warning-ignore:warning-id``, or click on the ignore link to the "
+"right of the warning's description. Godot will add a comment above the "
+"corresponding line and the code won't trigger the corresponding warning "
+"anymore:"
+msgstr ""
+"Pour ignorer des avertissements spécifiques dans un fichier, insérez un "
+"commentaire spécial de la forme ``#warning-ignore:warning-id```, ou cliquez "
+"sur le lien ignorer à droite de la description de l'avertissement. Godot "
+"ajoutera un commentaire au-dessus de la ligne correspondante et le code ne "
+"déclenchera plus l'avertissement correspondant :"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:36
+#, fuzzy
+msgid "Warning system ignore example"
+msgstr "exemple où le système d'avertissement est ignoré"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:38
+msgid ""
+"You can also choose to ignore not just one but all warnings of a certain "
+"type in this file with ``# warning-ignore-all:warning-id``. To ignore all "
+"warnings of all types in a file add the comment ``# warnings-disable`` to it."
+msgstr ""
+"Vous pouvez aussi choisir d'ignorer, non pas un, mais tous les "
+"avertissements d'un certain type dans le fichier avec ``# warning-ignore-all:"
+"warning-id``. Pour ignorer tous les avertissements de tous les types dans un "
+"fichier, ajoutez lui le commentaire ``# warnings-disable``."
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:42
+msgid ""
+"Warnings won't prevent the game from running, but you can turn them into "
+"errors if you'd like. This way your game won't compile unless you fix all "
+"warnings. Head to the ``GDScript`` section of the Project Settings to turn "
+"on this option. Here's the same file as the previous example with warnings "
+"as errors turned on:"
+msgstr ""
+"Les avertissements n'empêcheront pas le jeu de fonctionner, mais vous pouvez "
+"les transformer en erreurs si vous le souhaitez. De cette façon, votre jeu "
+"ne sera pas compilé à moins que vous ne corrigiez tous les avertissements. "
+"Allez à la section ``GDScript`` des Paramètres du projet pour activer cette "
+"option. Voici le même fichier que l'exemple précédent avec les "
+"avertissements d'erreurs activées :"
+
+#: ../../docs/getting_started/scripting/gdscript/warning_system.rst:51
+#, fuzzy
+msgid "Warnings as errors"
+msgstr "les avertissements en tant qu'erreurs"

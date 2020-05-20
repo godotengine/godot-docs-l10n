@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgid ""
 msgstr ""
 "El procesamiento en tiempo de espera (idle) se activa cuando el método :ref:"
 "`Node._process() <class_Node_method__process>` se encuentra en un script. Se "
-"puede apagar y encender con la función  :ref:`Node.set_process() "
+"puede apagar y encender con la función :ref:`Node.set_process() "
 "<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
@@ -71,7 +71,6 @@ msgstr ""
 "los dispositivos."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability, the ``delta`` parameter contains the time "
 "elapsed in seconds as a floating-point number since the previous call to "
@@ -90,7 +89,6 @@ msgstr ""
 "tardan la misma cantidad de tiempo, independientemente de los FPS del juego."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
-#, fuzzy
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent of the frame rate."

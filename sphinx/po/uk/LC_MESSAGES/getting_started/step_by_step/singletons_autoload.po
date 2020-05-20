@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 09:58+0200\n"
+"POT-Creation-Date: 2020-05-20 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,15 +45,14 @@ msgstr ""
 "Можна вирішити це деякими обхідними шляхами, але вони мають свої обмеження:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
-#, fuzzy
 msgid ""
 "You can use a \"master\" scene that loads and unloads other scenes as its "
 "children. However, this means you can no longer run those scenes "
 "individually and expect them to work correctly."
 msgstr ""
-"Ви можете використовувати \"головну\" сцену, яка завантажує та вивантажує "
-"інші сцени як свої нащадки. Однак це означає, що ви більше не можете "
-"запускати ці сцени окремо і очікуєте від них правильної роботи."
+"Ви можете використовувати \"майстер-сцену\", яка завантажує та вивантажує "
+"інші сцени в вигляді своїх нащадків. Однак це означає, що ви більше не "
+"можете запускати ці сцени окремо і очікувати від них правильної роботи."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:19
 msgid ""
@@ -91,20 +90,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Can store global variables, such as player information"
-msgstr "Може зберігати глобальні змінні, наприклад інформацію про гравця"
+msgstr "Можуть зберігати глобальні змінні, наприклад інформацію про гравця"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-#, fuzzy
 msgid "Can handle switching scenes and between-scene transitions"
-msgstr "Може працювати з переключенням сцен і переходами між сценами"
+msgstr "Можуть працювати з переключенням сцен і переходами між сценами"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
-#, fuzzy
 msgid ""
 "Act like a singleton, since GDScript does not support global variables by "
 "design"
 msgstr ""
-"Діє як синглтон, оскільки GDScript не підтримує глобальні змінні за дизайном"
+"Діяти як синглтон, оскільки GDScript не підтримує глобальні змінні за "
+"дизайном"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 #, fuzzy
