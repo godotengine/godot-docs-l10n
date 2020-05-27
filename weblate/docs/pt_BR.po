@@ -26,6 +26,7 @@
 # Cochise César <cochisecesar@gmail.com>, 2018.
 # Danilo Castro <danilo.moreira94@gmail.com>, 2018.
 # Danilo Mendonça de Oliveira <danilo.mo@live.com>, 2020.
+# Danyllo Viana <danyllospik@yahoo.com.br>, 2020.
 # Davi <wokep.ma.wavid@gmail.com>, 2019.
 # DeeJayLSP <djlsplays@gmail.com>, 2020.
 # Deyvid Lopes <deyvidyury@yahoo.com.br>, 2019.
@@ -73,6 +74,7 @@
 # Lauan Souza <lauan.s.souza@gmail.com>, 2019.
 # Leandro <xupisco@gmail.com>, 2018.
 # Leonardo Dimano <leodimano@live.com>, 2020.
+# Leonardo Marquezani <leomarquezani@gmail.com>, 2020.
 # Leonardo Nyanko Desu <leonardo.sensei2@gmail.com>, 2019.
 # Leonardo Ramos <ranyor@gmail.com>, 2019.
 # Lucas Araujo <lucassants2808@gmail.com>, 2020.
@@ -154,8 +156,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-20 16:21+0200\n"
-"PO-Revision-Date: 2020-05-13 19:56+0000\n"
-"Last-Translator: André Sousa <andrelvsousa@gmail.com>\n"
+"PO-Revision-Date: 2020-05-27 11:28+0000\n"
+"Last-Translator: DeeJayLSP <djlsplays@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -1112,11 +1114,11 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
-"O objetivo de Godot é criar uma engine gratuita com licença MIT de código "
+"O objetivo do Godot é criar um motor gratuito com licença MIT de código "
 "aberto que seja modular e extensível. Não há planos para que a comunidade de "
-"desenvolvimento da engine dê suporte a qualquer SDK de terceiros, de código "
+"desenvolvimento do motor dê suporte a qualquer SDK de terceiros, de código "
 "fechado/proprietário, já que a integração com estes seriam contra a "
-"filosofia de Godot."
+"filosofia do Godot."
 
 #: ../../docs/about/faq.rst:174
 msgid ""
@@ -1653,9 +1655,8 @@ msgid "Audio"
 msgstr "Áudio"
 
 #: ../../docs/about/docs_changelog.rst:30
-#, fuzzy
 msgid ":ref:`doc_recording_with_microphone`"
-msgstr ":ref:`doc_complying_with_licenses`"
+msgstr ":ref:`doc_recording_with_microphone`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`doc_sync_with_audio`"
@@ -2219,13 +2220,12 @@ msgstr ""
 "projeto pra você e abrir ele no editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
 "Na próxima vez que abrir o Godot, você verá seu novo projeto na lista. Um "
-"clique duplo nele fará abri-lo no editor."
+"duplo clique nele fará abri-lo no editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -3452,7 +3452,7 @@ msgid ""
 "official support for it. C# is a mature language with tons of code written "
 "for it, and support was added thanks to a generous donation from Microsoft."
 msgstr ""
-"Como a C# da Microsoft é favorita entre desenvolvedores de jogos, "
+"Como a C# da Microsoft é uma favorita entre desenvolvedores de jogos, "
 "adicionamos suporte oficial para ela. C# é uma linguagem madura, com "
 "toneladas de código escritos para ela, e cujo suporte foi adicionado graças "
 "a uma generosa doação da Microsoft."
@@ -4687,6 +4687,10 @@ msgid ""
 "- what the object *is*. Click the \"Other Node\" button and add an :ref:"
 "`Area2D <class_Area2D>` node to the scene."
 msgstr ""
+"Para iniciarmos, precisamos escolher o nó raiz para o objeto jogador. Como "
+"regra geral, o nó raiz da cena deve refletir à funcionalidade desejado do "
+"objeto - o que o objeto *é*. Clique no botão \"Outros Nós\" e adicione o nó :"
+"ref:`Area2D <class_Area2D>` à cena."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:78
 msgid ""
@@ -4834,7 +4838,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:150
 msgid "Make sure to save the scene again after these changes."
-msgstr ""
+msgstr "Certifique-se de salvar a cena novamente após as alterações."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:153
 msgid "Moving the player"
@@ -5074,7 +5078,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:355
 msgid "If you get an error in the \"Debugger\" panel that says"
-msgstr ""
+msgstr "Se encontrar um erro no painel \"Depurador\" que diz"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:357
 msgid ""
@@ -5135,6 +5139,8 @@ msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions."
 msgstr ""
+"Execute a cena novamente e verifique que as animações estão corretas em cada "
+"uma das direções"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:428
 msgid ""
@@ -5143,6 +5149,10 @@ msgid ""
 "code. If you named the animation ``\"Walk\"``, you must also use a capital "
 "\"W\" in the code."
 msgstr ""
+"Um erro comum aqui é digitar os nomes das animações de forma errada. O nome "
+"das animações no painel SpriteFrames deve ser igual ao que foi digitado no "
+"código. Se você nomeou a animação ``\"Walk\"`` você também deve usar a letra "
+"maiúscula \"W\" no código."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:433
 #, fuzzy
@@ -5212,6 +5222,8 @@ msgid ""
 "Note the green icon indicating that a signal is connected to this function. "
 "Add this code to the function:"
 msgstr ""
+"Note que o icone verde indica que um sinal está conectado a esta função. "
+"Adicione esse código à função:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:502
 msgid ""
@@ -5339,7 +5351,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:567
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
-msgstr ""
+msgstr "Ajuste o \"Speed (FPS)\" para ``3`` em todas as animações."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:571
 #, fuzzy
@@ -5351,6 +5363,8 @@ msgid ""
 "We'll select one of these animations randomly so that the mobs will have "
 "some variety."
 msgstr ""
+"Vamos selecionar uma das animações aleatoriamente para que os inimigos "
+"tenham alguma variedade."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:575
 msgid ""
@@ -5619,7 +5633,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:773
 msgid "You can assign this property's value in two ways:"
-msgstr ""
+msgstr "Você pode atribuir o valor dessa propriedade de duas formas:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:775
 #, fuzzy
@@ -5709,6 +5723,8 @@ msgid ""
 "Let's test the scene to make sure everything is working. Add this to "
 "``_ready()``:"
 msgstr ""
+"Vamos testar a cena para garantir que tudo esta funcionando. Adicione isso "
+"ao ``_ready()``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:924
 msgid ""
@@ -5722,12 +5738,16 @@ msgid ""
 "You should be able to move the player around, see mobs spawning, and see the "
 "player disappear when hit by a mob."
 msgstr ""
+"Você deve ser capaz de mover o jogador, ver os inimigos nascendo, e ver o "
+"jogador desaparecer quando atingido por um inimigo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:931
 msgid ""
 "When you're sure everything is working, remove the call to ``new_game()`` "
 "from ``_ready()``."
 msgstr ""
+"Quando tiver certeza que tudo esta funcionando, remova a chamada de "
+"``new_game()`` em ``_ready()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:935
 msgid "HUD"
@@ -6094,6 +6114,8 @@ msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``game_over()`` function in ``Main``:"
 msgstr ""
+"Agora todos os inimigos estarão no grupo \"inimigos\". Podemos então "
+"adicionar a seguinte linha à função ``game_over()`` em ``Main``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1236
 msgid ""
@@ -53261,9 +53283,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:208
-#, fuzzy
 msgid "Translating the transformation matrix"
-msgstr "Criando a animação"
+msgstr "Transladando a matriz de transformação"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:210
 msgid ""
@@ -55206,6 +55227,8 @@ msgid ""
 "Dragonbones. From Godot 3.1 onwards, though, this functionality is supported "
 "built-in."
 msgstr ""
+"Uma opção é criar animações em softwares de terceiros como Spine ou "
+"Dragonbones. A partir do Godot 3.1, porém, esta funcionalidade é embutida."
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:17
 msgid ""
@@ -57400,7 +57423,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:97
 msgid "Translating the project name"
-msgstr ""
+msgstr "Traduzindo o nome do projeto"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:99
 msgid ""
@@ -79363,19 +79386,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/consoles.rst:4
-#, fuzzy
 msgid "Console support in Godot"
-msgstr "Quais linguagens são suportadas em Godot?"
+msgstr "Suporte a Consoles em Godot"
 
 #: ../../docs/tutorials/platform/consoles.rst:7
 msgid "Console publishing process"
-msgstr ""
+msgstr "Processo de publicação para console"
 
 #: ../../docs/tutorials/platform/consoles.rst:9
 msgid ""
 "Regardless of the engine used to create the game, the process to publish a "
 "game to a console platform is as follows:"
 msgstr ""
+"Independentemente do motor usado para criar o jogo, o processo para publicar "
+"um jogo para uma plataforma de console é a seguinte:"
 
 #: ../../docs/tutorials/platform/consoles.rst:12
 msgid ""
@@ -79383,6 +79407,9 @@ msgid ""
 "sign NDAs and publishing contracts. This requires you to have a registered "
 "legal entity."
 msgstr ""
+"Registrar uma conta de desenvolvedor no site da fabricante do console, então "
+"assinar acordos de não-divulgação e contratos de publicação. Isso requer que "
+"você tenha uma entidade legal registrada."
 
 #: ../../docs/tutorials/platform/consoles.rst:15
 msgid ""
@@ -79392,16 +79419,26 @@ msgid ""
 "generally known to be more accepting of smaller developers, but this is not "
 "guaranteed."
 msgstr ""
+"Obter acesso à plataforma de publicação ao passar no processo de aceitação. "
+"Isso pode levar meses. Observe que este passo é significantemente mais fácil "
+"se uma publicadora estabelecida está apoiando seu jogo. A Nintendo é "
+"geralmente conhecida aceitar melhor desenvolvedores pequenos, mas isso não é "
+"garantido."
 
 #: ../../docs/tutorials/platform/consoles.rst:19
 msgid ""
 "Get access to developer tools and order a console specially made for "
 "developers (*devkit*). The cost of those devkits is confidential."
 msgstr ""
+"Conseguir acesso a ferramentas de desenvolvedor e encomendar um console "
+"especialmente feito para desenvolvedores (*devkit*). O custo desses devkits "
+"é confidencial."
 
 #: ../../docs/tutorials/platform/consoles.rst:21
 msgid "Port the engine to the console platform or pay a company to do it."
 msgstr ""
+"Portar o motor para a plataforma de console ou pagar uma empresa para fazê-"
+"lo."
 
 #: ../../docs/tutorials/platform/consoles.rst:22
 msgid ""
@@ -79411,28 +79448,41 @@ msgid ""
 "info/>`__. Indie developers can generally get a rating for cheaper compared "
 "to more established developers."
 msgstr ""
+"Para ser publicado, seu jogo precisa ser classificado nas regiões em que "
+"você deseja vendê-lo. Por exemplo, na América do Norte, a `ESRB <https://www."
+"esrb.org/>`__ lida com classificações de jogo. Na Europa, isso é feito pela "
+"`PEGI <https://pegi.info/>`__. Já no Brasil é feito pela `Cocind <https://"
+"www.justica.gov.br/seus-direitos/classificacao>`__. Desenvolvedores "
+"independentes geralmente podem conseguir uma classificação por um valor "
+"menor comparado a desenvolvedores mais estabelecidos."
 
 #: ../../docs/tutorials/platform/consoles.rst:28
 msgid ""
 "Due to the complexity of the process, the budget to publish a game by "
 "yourself on a single console often exceeds $1,000 (this is a rough figure)."
 msgstr ""
+"Devido à complexidade do processo, o orçamento para publicar um jogo por "
+"conta própria em um único console excede $1000 (aproximadamente)."
 
 #: ../../docs/tutorials/platform/consoles.rst:32
 msgid "Official support"
-msgstr ""
+msgstr "Suporte oficial"
 
 #: ../../docs/tutorials/platform/consoles.rst:34
 msgid ""
 "Godot currently does not officially support consoles. The reasons for this "
 "are:"
 msgstr ""
+"O Godot atualmente não suporta consoles oficialmente. Os motivos para isso "
+"são:"
 
 #: ../../docs/tutorials/platform/consoles.rst:36
 msgid ""
 "To develop for consoles, one must be licensed as a company. As an open "
 "source project, Godot does not have such a legal figure."
 msgstr ""
+"Para desenvolver para consoles, é preciso ser licenciado como uma empresa. "
+"Como um projeto de código aberto, o Godot não tem uma imagem legal."
 
 #: ../../docs/tutorials/platform/consoles.rst:38
 msgid ""
@@ -79440,18 +79490,25 @@ msgid ""
 "could get access to them, we could not publish the platform-specific code "
 "under an open source license."
 msgstr ""
+"SDKs de console são secretas e cobertas por acordos de não-divulgação. Mesmo "
+"se pudéssemos conseguir acesso a elas, não poderíamos publicar o código "
+"específico da plataforma sob uma licença de código aberto."
 
 #: ../../docs/tutorials/platform/consoles.rst:41
 msgid ""
 "Consoles require specialized hardware to develop for, so regular individuals "
 "can't create games for them anyway."
 msgstr ""
+"Consoles requerem hardware especializado para desenvolver para, então "
+"pessoas normais não podem criar jogos para eles de qualquer forma."
 
 #: ../../docs/tutorials/platform/consoles.rst:44
 msgid ""
 "However, it is still possible to port your games to consoles thanks to "
 "services provided by third-party companies."
 msgstr ""
+"Porém, ainda é possível portar seus jogos para consoles graças a serviços "
+"fornecidos por empresas de terceiros."
 
 #: ../../docs/tutorials/platform/consoles.rst:49
 msgid ""
@@ -79462,11 +79519,16 @@ msgid ""
 "they are a licensed console developer. Doing so would violate the console "
 "manufacturer's NDA."
 msgstr ""
+"Na prática, o processo é bastante similar ao Unity e Unreal Engine, exceto "
+"que você precisa contatar um desenvolvedor de terceiros para lidar com o "
+"processo de port. Em outras palavras, não há motor que esteja legalmente "
+"permitido a distribuir modelos de exportação para consoles sem exigir que o "
+"usuário prove que ele(a) é um desenvolvedor licenciado de console. Fazer "
+"isso violaria o acordo de não-divulgação da fabricante do console."
 
 #: ../../docs/tutorials/platform/consoles.rst:57
-#, fuzzy
 msgid "Third-party support"
-msgstr "Ferramentas de terceiros"
+msgstr "Suporte de terceiros"
 
 #: ../../docs/tutorials/platform/consoles.rst:59
 msgid ""
@@ -79474,22 +79536,29 @@ msgid ""
 "ported Godot on their own). These companies also offer publishing of your "
 "games to various consoles."
 msgstr ""
+"Ports para console do Godot são oferecidos por empresas de terceiros (que "
+"portaram o Godot por conta própria). Estas empresas também oferecem "
+"publicação de seus jogos a vários consoles."
 
 #: ../../docs/tutorials/platform/consoles.rst:63
 msgid "Following is the list of providers:"
-msgstr ""
+msgstr "A seguir uma lista de fornecedoras:"
 
 #: ../../docs/tutorials/platform/consoles.rst:65
 msgid ""
 "`Lone Wolf Technology <http://www.lonewolftechnology.com/>`_ offers Switch, "
 "PS4 and Xbox One porting and publishing of Godot games."
 msgstr ""
+"A `Lone Wolf Technology <http://www.lonewolftechnology.com/>`_ oferece "
+"porting e publicação de jogos em Godot para Switch, PS4 e Xbox One."
 
 #: ../../docs/tutorials/platform/consoles.rst:67
 msgid ""
 "`Pineapple Works <https://pineapple.works/>`_ offers Switch and Xbox One "
 "porting and publishing of Godot games."
 msgstr ""
+"A `Pineapple Works <https://pineapple.works/>`_ oferece porting e publicação "
+"de jogos em Godot para Switch e Xbox One."
 
 #: ../../docs/tutorials/platform/consoles.rst:70
 msgid ""
@@ -79497,6 +79566,9 @@ msgid ""
 "feel free to `open an issue or pull request <https://github.com/godotengine/"
 "godot-docs>`_ to add your company to the list above."
 msgstr ""
+"Se sua empresa oferece serviços de porting e/ou publicação para jogos em "
+"Godot, sinta-se livre para `abrir um issue ou pull request <https://github."
+"com/godotengine/godot-docs>`_ para adicionar sua empresa à lista acima."
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:9
 msgid ""
@@ -91944,7 +92016,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:4
 msgid "Documentation guidelines"
-msgstr ""
+msgstr "Diretrizes de documentação"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:6
 #, fuzzy
@@ -92128,13 +92200,15 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:117
 msgid "Translating existing pages"
-msgstr ""
+msgstr "Traduzindo páginas existentes"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:119
 msgid ""
 "You can help to translate the official Godot documentation on our `Hosted "
 "Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
 msgstr ""
+"Você pode ajudar a traduzir a documentação oficial do Godot em nosso `Hosted "
+"Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:128
 msgid ""
@@ -92142,6 +92216,9 @@ msgid ""
 "godotengine/godot-docs-l10n>`_ where you can see when the data was last "
 "synchronized."
 msgstr ""
+"Também há o `Repositório Godot i18n <https://github.com/godotengine/godot-"
+"docs-l10n>`_ oficial onde você pode ver quando os dados foram sincronizados "
+"pela última vez."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:135
 msgid ""

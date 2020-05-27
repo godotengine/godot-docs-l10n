@@ -67,6 +67,7 @@
 # Neo6666666 <Neo6666666@gmail.com>, 2018-2019.
 # Niara <kitekatkek@gmail.com>, 2019.
 # Nick <nikita.porutchyk@gmail.com>, 2018.
+# Nikita <Kulacnikita@ya.ru>, 2020.
 # Nikita Nigmatullin <nnigmat@gmail.com>, 2018.
 # Nikita <yakrobat@protonmail.com>, 2019.
 # Novikov Vladimir <valdemar.const@gmail.com>, 2018.
@@ -141,8 +142,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-20 16:21+0200\n"
-"PO-Revision-Date: 2020-05-20 14:07+0000\n"
-"Last-Translator: Alex <theavganec@gmail.com>\n"
+"PO-Revision-Date: 2020-05-26 12:19+0000\n"
+"Last-Translator: Nikita <Kulacnikita@ya.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -283,7 +284,7 @@ msgstr "Начало работы"
 
 #: ../../docs/index.rst:80
 msgid "Tutorials"
-msgstr "Обучающие разделы"
+msgstr "Туториалы"
 
 #: ../../docs/index.rst:110
 msgid "Development"
@@ -1004,13 +1005,13 @@ msgstr ""
 "скриптовых языков (Lua, Python, Squirrel, JS, AS, и пр.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
-"В большинстве виртуальных машин нет хорошей поддержки расширения класса и "
-"процесс адаптации в Godot крайне неэффективен (Lua, Python, JS)."
+"Слабая поддержка расширения классов в большинстве виртуальных машин, "
+"обрабатывающих скрипты, а так же адаптирование их для использования в "
+"проектах Godot в высшей степени не эффективно (Lua, Python, JavaScript)."
 
 #: ../../docs/about/faq.rst:141
 msgid ""
@@ -4605,6 +4606,9 @@ msgid ""
 "and ``Aspect`` to \"keep\". This ensures that the game scales consistently "
 "on different sized screens."
 msgstr ""
+"Также в этой секции, под опциями \"Stretch\", установите ``Mode`` на \"2d\" "
+"и ``Aspect`` на \"keep\". Это гарантирует, что игра последовательно "
+"масштабируется на экранах разного размера."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:49
 msgid "Organizing the project"
@@ -4795,7 +4799,7 @@ msgstr "Когда вы закончите, сцена с вашим ``Player`` 
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:150
 msgid "Make sure to save the scene again after these changes."
-msgstr ""
+msgstr "После этих изменений обязательно сохраните сцену еще раз"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:153
 msgid "Moving the player"
@@ -5036,13 +5040,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:355
 msgid "If you get an error in the \"Debugger\" panel that says"
-msgstr ""
+msgstr "Если вы получаете ошибку в панели \"Отладчик\", которая говорит"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:357
 msgid ""
 "``Attempt to call function 'play' in base 'null instance' on a null "
 "instance``"
 msgstr ""
+"``Попытка вызова функции 'play' в основании 'null instance' на нулевом "
+"экземпляре``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:359
 #, fuzzy
@@ -5096,6 +5102,8 @@ msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions."
 msgstr ""
+"Воспроизведите сцену еще раз и проверьте правильность анимации в каждом из "
+"направлений."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:428
 msgid ""
@@ -5170,6 +5178,8 @@ msgid ""
 "Note the green icon indicating that a signal is connected to this function. "
 "Add this code to the function:"
 msgstr ""
+"Обратите внимание на зеленый значок, указывающий на то, что сигнал подключен "
+"к этой функции. Добавьте этот код в функцию:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:502
 msgid ""
@@ -5308,6 +5318,8 @@ msgid ""
 "We'll select one of these animations randomly so that the mobs will have "
 "some variety."
 msgstr ""
+"Мы выберем одну из этих анимаций случайным образом, так что мобы будут иметь "
+"некоторое разнообразие."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:575
 msgid ""
@@ -5570,7 +5582,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:773
 msgid "You can assign this property's value in two ways:"
-msgstr ""
+msgstr "Значение этого свойства можно присвоить двумя способами:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:775
 #, fuzzy
@@ -14354,11 +14366,11 @@ msgstr ":kbd:`Ctrl + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Cmd + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "``editor/save_scene``"
-msgstr ""
+msgstr "``editor/save_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 #, fuzzy
@@ -14371,7 +14383,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid ":kbd:`Cmd + Shift + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid "``editor/save_scene_as``"
@@ -14384,12 +14396,12 @@ msgstr "Сохранить все сцены"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid ":kbd:`Ctrl + Shift + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid ":kbd:`Cmd + Shift + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "``editor/save_all_scenes``"
@@ -14397,7 +14409,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:54
 msgid "Quick Open"
-msgstr ""
+msgstr "Быстрое открытие"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:54
 msgid ":kbd:`Shift + Alt + O`"
@@ -14405,15 +14417,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:54
 msgid "``editor/quick_open``"
-msgstr ""
+msgstr "``editor/quick_open``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid "Quick Open Scene"
-msgstr ""
+msgstr "Быстрое открытие сцены"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid ":kbd:`Ctrl + Shift + O`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid ":kbd:`Cmd + Shift + O`"
@@ -14651,7 +14663,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "Zoom In"
-msgstr ""
+msgstr "Приблизить"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -15404,7 +15416,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "Копировать"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -15543,7 +15555,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "Заменить"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -15867,7 +15879,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr ""
+msgstr "Перейти к строке"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -16130,7 +16142,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
-msgstr ""
+msgstr "Переключить панель скриптов"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
@@ -16617,7 +16629,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "Перейти к следующему шагу"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -16633,7 +16645,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "Перейти к предыдущему шагу"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -25745,8 +25757,9 @@ msgstr "Несколько заполнителей"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:125
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
+#, fuzzy
 msgid "Placeholder"
-msgstr ""
+msgstr "Заполнитель"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:127
 msgid "``%CLASS%``"
@@ -26943,7 +26956,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "Uncompressed"
-msgstr ""
+msgstr "Несжатый"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "Compress Lossless (PNG)"
@@ -27097,7 +27110,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:143
 #: ../../docs/tutorials/3d/spatial_material.rst:30
 msgid "Flags"
-msgstr ""
+msgstr "Флаги"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:145
 msgid ""
@@ -27123,7 +27136,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:155
 #: ../../docs/tutorials/audio/audio_buses.rst:180
 msgid "Filter"
-msgstr ""
+msgstr "Фильтр"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:157
 msgid ""
@@ -27167,7 +27180,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:173
 msgid "Anisotropic"
-msgstr ""
+msgstr "Анизотропный"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:175
 msgid ""
@@ -27189,7 +27202,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:184
 msgid "Process"
-msgstr ""
+msgstr "Процесс"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:186
 msgid ""
@@ -27355,7 +27368,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
 msgid "Trimming"
-msgstr ""
+msgstr "Тримминг"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:54
 msgid ""
@@ -27477,7 +27490,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<lang2>"
-msgstr ""
+msgstr "<lang2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<langN>"
@@ -27485,7 +27498,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
 msgid "KEY1"
-msgstr ""
+msgstr "KEY1"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
@@ -27496,7 +27509,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
 msgid "KEY2"
-msgstr ""
+msgstr "KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:64
 msgid "KEYN"
@@ -27521,7 +27534,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 #: ../../docs/tutorials/i18n/locales.rst:220
 msgid "es"
-msgstr ""
+msgstr "es"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 #: ../../docs/tutorials/i18n/locales.rst:372
@@ -27530,7 +27543,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "GREET"
-msgstr ""
+msgstr "GREET"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "Hello, friend!"
@@ -27546,7 +27559,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "ASK"
-msgstr ""
+msgstr "ASK"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "How are you?"
@@ -27562,7 +27575,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "BYE"
-msgstr ""
+msgstr "BYE"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Goodbye"
@@ -27574,7 +27587,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "さようなら"
-msgstr ""
+msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "QUOTE"
@@ -27916,7 +27929,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:155
 #: ../../docs/tutorials/io/data_paths.rst:51
 msgid "Location"
-msgstr ""
+msgstr "Расположение"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
 msgid ""
@@ -27951,7 +27964,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:178
 msgid "Meshes"
-msgstr ""
+msgstr "Меши"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:181
 msgid "Compress"
@@ -28236,7 +28249,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:320
 msgid "Clips"
-msgstr ""
+msgstr "Клипы"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:322
 msgid ""
@@ -28976,7 +28989,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid "**JavaScript**"
-msgstr ""
+msgstr "**JavaScript**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
@@ -28984,7 +28997,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "**OSX**"
-msgstr ""
+msgstr "**OSX**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "Running on macOS"
@@ -29000,7 +29013,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "**UWP**"
-msgstr ""
+msgstr "**UWP**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "Running on UWP"
@@ -29016,7 +29029,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "**X11**"
-msgstr ""
+msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
@@ -29040,7 +29053,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
-msgstr ""
+msgstr "**релиз**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "Running on a release build"
@@ -29065,7 +29078,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
-msgstr ""
+msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "Running on a 64-bit build (any architecture)"
@@ -29121,7 +29134,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "**pc**"
-msgstr ""
+msgstr "*pc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "Host OS is a PC platform (desktop/laptop)"
@@ -29137,7 +29150,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "**etc**"
-msgstr ""
+msgstr "**и т.д.**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "Textures using ETC1 compression are supported"
@@ -29153,7 +29166,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "**s3tc**"
-msgstr ""
+msgstr "**s3tc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "Textures using S3TC (DXT/BC) compression are supported"
@@ -29953,7 +29966,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:45
 msgid "Limitations"
-msgstr ""
+msgstr "Ограничения"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:47
 msgid ""
@@ -34222,7 +34235,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:282
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
-msgstr ""
+msgstr "Масштаб"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:284
 msgid "Determines the initial scale of the particles."
@@ -34359,7 +34372,7 @@ msgstr ""
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:40
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:12
 msgid "Setup"
-msgstr ""
+msgstr "Настройка"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:19
 msgid ""
@@ -48650,7 +48663,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:114
 msgid "Chorus"
-msgstr ""
+msgstr "Хор"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:116
 msgid ""
@@ -48713,7 +48726,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:152
 msgid "Delay"
-msgstr ""
+msgstr "Задержка"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:154
 msgid ""
@@ -48775,7 +48788,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:194
 msgid "Limiter"
-msgstr ""
+msgstr "Ограничитель"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:196
 msgid ""
@@ -48809,7 +48822,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:215
 msgid "Panner"
-msgstr ""
+msgstr "Панель"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:217
 msgid ""
@@ -48830,7 +48843,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:228
 msgid "PitchShift"
-msgstr ""
+msgstr "PitchShift"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:230
 msgid ""
@@ -48851,7 +48864,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:240
 msgid "Reverb"
-msgstr ""
+msgstr "Реверберация"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:242
 msgid ""
@@ -48982,7 +48995,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:43
 msgid "AudioStreamPlayer"
-msgstr ""
+msgstr "AudioStreamPlayer"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:45
 msgid ""
@@ -48992,7 +49005,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:49
 msgid "AudioStreamPlayer2D"
-msgstr ""
+msgstr "AudioStreamPlayer2D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:51
 msgid ""
@@ -49011,7 +49024,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:65
 msgid "AudioStreamPlayer3D"
-msgstr ""
+msgstr "AudioStreamPlayer3D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:67
 msgid ""
@@ -49062,7 +49075,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:102
 msgid "Doppler"
-msgstr ""
+msgstr "Допплер"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:104
 msgid ""
@@ -49490,7 +49503,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:107
 msgid "collision_mask"
-msgstr ""
+msgstr "collision_mask"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:105
 msgid ""
@@ -49514,7 +49527,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:117
 msgid "**Example:**"
-msgstr ""
+msgstr "**Пример**"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:119
 msgid ""
@@ -49569,7 +49582,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:151
 msgid "StaticBody2D"
-msgstr ""
+msgstr "StaticBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:153
 msgid ""
@@ -49604,7 +49617,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:168
 msgid "RigidBody2D"
-msgstr ""
+msgstr "RigidBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:170
 msgid ""
@@ -49737,7 +49750,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:286
 msgid "KinematicBody2D"
-msgstr ""
+msgstr "KinematicBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:288
 msgid ""
@@ -55222,7 +55235,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:4
 msgid "InputEvent"
-msgstr ""
+msgstr "InputEvent"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:9
 msgid ""
@@ -55375,7 +55388,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 msgid "Event"
-msgstr ""
+msgstr "Событие"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 msgid "Type Index"
@@ -55399,7 +55412,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
 msgid "KEY"
-msgstr ""
+msgstr "KEY"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
 msgid "Contains a scancode and Unicode value, as well as modifiers."
@@ -55423,7 +55436,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
 msgid "MOUSE_MOTION"
-msgstr ""
+msgstr "MOUSE_MOTION"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
 msgid ""
@@ -55448,7 +55461,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:146
 msgid "JOYSTICK_BUTTON"
-msgstr ""
+msgstr "JOYSTICK_BUTTON"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:146
 msgid "Contains Joystick/Joypad button information."
@@ -55474,7 +55487,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:153
 msgid "SCREEN_DRAG"
-msgstr ""
+msgstr "SCREEN_DRAG"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:153
 msgid ""
@@ -55497,7 +55510,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:162
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:164
 msgid ""
@@ -56362,7 +56375,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:54
 msgid "Serializing"
-msgstr ""
+msgstr "Сериализация"
 
 #: ../../docs/tutorials/io/saving_games.rst:56
 msgid ""
@@ -56913,7 +56926,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "aa"
-msgstr ""
+msgstr "aa"
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Afar"
@@ -56921,7 +56934,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:14
 msgid "aa_DJ"
-msgstr ""
+msgstr "aa_DJ"
 
 #: ../../docs/tutorials/i18n/locales.rst:14
 msgid "Afar (Djibouti)"
@@ -56937,7 +56950,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:18
 msgid "aa_ET"
-msgstr ""
+msgstr "aa_ET"
 
 #: ../../docs/tutorials/i18n/locales.rst:18
 msgid "Afar (Ethiopia)"
@@ -56949,7 +56962,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:20
 msgid "Afrikaans"
-msgstr ""
+msgstr "Африкаанс"
 
 #: ../../docs/tutorials/i18n/locales.rst:22
 msgid "af_ZA"
@@ -56961,7 +56974,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:24
 msgid "agr_PE"
-msgstr ""
+msgstr "agr_PE"
 
 #: ../../docs/tutorials/i18n/locales.rst:24
 msgid "Aguaruna (Peru)"
@@ -56969,7 +56982,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:26
 msgid "ak_GH"
-msgstr ""
+msgstr "ak_GH"
 
 #: ../../docs/tutorials/i18n/locales.rst:26
 msgid "Akan (Ghana)"
@@ -56985,7 +56998,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:30
 msgid "an_ES"
-msgstr ""
+msgstr "an_ES"
 
 #: ../../docs/tutorials/i18n/locales.rst:30
 msgid "Aragonese (Spain)"
@@ -58265,7 +58278,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:352
 msgid "id"
-msgstr ""
+msgstr "id"
 
 #: ../../docs/tutorials/i18n/locales.rst:352
 msgid "Indonesian"
@@ -60555,12 +60568,12 @@ msgstr ""
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:48
 #: ../../docs/development/cpp/inheritance_class_tree.rst:10
 msgid "Reference"
-msgstr ""
+msgstr "Reference"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Tag"
-msgstr ""
+msgstr "Тег"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "**bold**"
@@ -61227,7 +61240,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:107
 msgid "Worlds"
-msgstr ""
+msgstr "Миры"
 
 #: ../../docs/tutorials/viewports/viewports.rst:109
 msgid ""
@@ -61548,7 +61561,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:71
 msgid "Resizing"
-msgstr ""
+msgstr "Изменение размера"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:73
 msgid ""
@@ -75498,7 +75511,7 @@ msgstr "Ключ"
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 #: ../../docs/development/file_formats/tscn.rst:167
 msgid "``name``"
-msgstr ""
+msgstr "``имя``"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 msgid ""
@@ -75512,7 +75525,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
 msgid "Any"
-msgstr ""
+msgstr "Любой"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
 msgid "The default value of the option for this preset."
@@ -75535,7 +75548,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 msgid "``hint_string``"
-msgstr ""
+msgstr "``hint_string``"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 msgid ""
@@ -76060,7 +76073,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:47
 msgid "Prerequisites"
-msgstr ""
+msgstr "Требования"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:49
 msgid "Before we start you'll need a few things:"
@@ -77307,7 +77320,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:19
 msgid "Ads"
-msgstr ""
+msgstr "Объявления"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:20
 msgid "Video ads"
@@ -77331,7 +77344,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:25
 msgid "Login"
-msgstr ""
+msgstr "Вход"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:26
 msgid "Cloud saves"
@@ -84628,19 +84641,19 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:56
 msgid "**FreeBSD**"
-msgstr ""
+msgstr "**FreeBSD**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:62
 msgid "**Gentoo**"
-msgstr ""
+msgstr "**Gentoo**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:73
 msgid "**OpenBSD**"
-msgstr ""
+msgstr "**OpenBSD**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:77
 msgid "**openSUSE**"
-msgstr ""
+msgstr "**openSUSE**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:82
 msgid "**Solus**"
@@ -84914,7 +84927,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:9
 msgid "Note"
-msgstr ""
+msgstr "Примечание"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:11
 msgid ""
@@ -85374,7 +85387,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:53
 msgid "darling-dmg"
-msgstr ""
+msgstr "darling-dmg"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:55
 msgid "Clone the repository on your machine:"
@@ -85402,7 +85415,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:101
 msgid "Toolchain"
-msgstr ""
+msgstr "Инструментарий"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:103
 msgid "Build cctools:"
@@ -85788,7 +85801,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:14
 msgid "pkg-config"
-msgstr ""
+msgstr "pkg-config"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:16
 msgid ""
@@ -85886,7 +85899,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_with_mono.rst:78
 #: ../../docs/development/cpp/custom_godot_servers.rst:506
 msgid "Notes"
-msgstr ""
+msgstr "Примечания"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:79
 msgid ""
@@ -87726,7 +87739,7 @@ msgstr "Вектор"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
-msgstr ""
+msgstr "Список"
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
@@ -87810,7 +87823,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:187
 msgid "StringName"
-msgstr ""
+msgstr "StringName"
 
 #: ../../docs/development/cpp/core_types.rst:189
 msgid ""
@@ -87855,7 +87868,7 @@ msgstr ""
 #: ../../docs/development/cpp/core_types.rst:214
 #: ../../docs/development/file_formats/tscn.rst:134
 msgid "NodePath"
-msgstr ""
+msgstr "NodePath"
 
 #: ../../docs/development/cpp/core_types.rst:216
 msgid ""
@@ -87873,7 +87886,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:225
 msgid "RID"
-msgstr ""
+msgstr "RID"
 
 #: ../../docs/development/cpp/core_types.rst:227
 msgid ""
@@ -88457,11 +88470,11 @@ msgstr "Дерево наследования классов"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:5
 msgid "Object"
-msgstr ""
+msgstr "Объект"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:15
 msgid "Control"
-msgstr ""
+msgstr "Control"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:20
 msgid "Node2D"
@@ -88469,7 +88482,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:25
 msgid "Spatial"
-msgstr ""
+msgstr "Spatial"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:29
 msgid "Source files: :download:`class_tree.zip <files/class_tree.zip>`."
@@ -89214,7 +89227,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:20
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
-msgstr ""
+msgstr ":ref:`ResourceLoader<class_resourceloader>`"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:358
@@ -89459,7 +89472,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:232
 msgid "Resampling"
-msgstr ""
+msgstr "Передискретизация"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:234
 msgid ""
@@ -91246,7 +91259,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:142
 msgid "Branching"
-msgstr ""
+msgstr "Ветвление"
 
 #: ../../docs/community/contributing/pr_workflow.rst:144
 msgid ""
@@ -91973,7 +91986,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:60
 msgid "Installation"
-msgstr ""
+msgstr "Установка"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:62
 msgid "Here's how to install clang-format:"
@@ -92157,7 +92170,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:246
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:248
 msgid ""
@@ -92233,7 +92246,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:34
 msgid "Labels"
-msgstr ""
+msgstr "Обозначения на карте"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:36
 msgid "The following labels are currently defined in the Godot repository:"
@@ -92241,7 +92254,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:38
 msgid "**Categories:**"
-msgstr ""
+msgstr "**Категории:**"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:40
 msgid ""
@@ -92411,7 +92424,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:108
 msgid "**Platforms:**"
-msgstr ""
+msgstr "**Платформы:**"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:110
 msgid "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
@@ -92760,7 +92773,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:53
 msgid "Active:"
-msgstr ""
+msgstr "Активный:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:59
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:403
@@ -92849,7 +92862,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:149
 msgid "simple"
-msgstr ""
+msgstr "простой"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:150
 msgid "basic"
@@ -92857,7 +92870,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:151
 msgid "easy"
-msgstr ""
+msgstr "лёгкий"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:152
 msgid "actual"
@@ -92865,7 +92878,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:153
 msgid "just"
-msgstr ""
+msgstr "просто"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:154
 msgid "clear"
@@ -93581,7 +93594,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:180
 msgid "<description></description>"
-msgstr ""
+msgstr "<description></description>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:181
 msgid "<brief_description></brief_description>"
@@ -93589,7 +93602,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:182
 msgid "<constant></constant>"
-msgstr ""
+msgstr "<constant></constant>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:183
 msgid "<method></method>"
@@ -93597,7 +93610,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:184
 msgid "<member></member>"
-msgstr ""
+msgstr "<member></member>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:185
 msgid "<signal></signal>"
@@ -93637,7 +93650,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Result"
-msgstr ""
+msgstr "Результат"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "[Class]"
@@ -93749,7 +93762,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:253
 msgid "Bold"
-msgstr ""
+msgstr "Жирный"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:253
 msgid "Some [b]bold[/b] text."
@@ -93781,7 +93794,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:257
 msgid "Monospace"
-msgstr ""
+msgstr "Монопространство"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:257
 msgid "Some [code]monospace[/code] text."

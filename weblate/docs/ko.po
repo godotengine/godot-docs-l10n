@@ -9,6 +9,7 @@
 # Ch <ccwpc@hanmail.net>, 2018, 2020.
 # Cho Sung Bae <ihopi73@gmail.com>, 2020.
 # deviancekr <day@live.co.kr>, 2020.
+# Doyun Kwon <caen4516@gmail.com>, 2020.
 # Eunwoo Lee <eunwoo123@gmail.com>, 2018.
 # geun-tak Jeong <beroberos@gmail.com>, 2018.
 # Hyun Cho (C.H) <uncaose@gmail.com>, 2018.
@@ -42,8 +43,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-20 16:21+0200\n"
-"PO-Revision-Date: 2020-05-20 14:07+0000\n"
-"Last-Translator: Cho Sung Bae <ihopi73@gmail.com>\n"
+"PO-Revision-Date: 2020-05-22 21:00+0000\n"
+"Last-Translator: Doyun Kwon <caen4516@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
 "Language: ko\n"
@@ -947,8 +948,8 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
-"FBX는 공개 에셋 라이브러리를 지원합니다. 하지만, FBX는 독점적이므로 워크플로"
-"우에 적합한 경우, 위에 나열된 다른 형식을 사용하는 것이 좋습니다."
+"FBX는 공개 에셋 라이브러리를 통해서 지원합니다. 하지만, FBX는 독점적이므로 워"
+"크플로우에 적합한 경우, 위에 나열된 다른 형식을 사용하는 것을 권장합니다."
 
 #: ../../docs/about/faq.rst:167
 msgid ""
@@ -4955,9 +4956,8 @@ msgid "Node setup"
 msgstr "노드 설정하기"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:545
-#, fuzzy
 msgid "Click Scene -> New Scene and add the following nodes:"
-msgstr "씬 -> 새 씬을 클릭하고 거기에서 적을 만들겁니다."
+msgstr "씬 -> 새 씬을 클릭 후 다음 노드들을 추가합니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:547
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
@@ -5047,9 +5047,8 @@ msgstr ""
 "야 합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:582
-#, fuzzy
 msgid "Save the scene."
-msgstr "Player(플레이어) 씬"
+msgstr "씬을 저장합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
 msgid "Enemy script"
@@ -13512,9 +13511,8 @@ msgid "Editor setting"
 msgstr "편집기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-#, fuzzy
 msgid "Open 2D Editor"
-msgstr "편집기"
+msgstr "2D 편집기 열기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
@@ -13529,9 +13527,8 @@ msgid "``editor/editor_2d``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-#, fuzzy
 msgid "Open 3D Editor"
-msgstr "편집기"
+msgstr "3D 편집기 열기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -13547,7 +13544,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr ""
+msgstr "스크립트 편집기 열기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
@@ -13565,7 +13562,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr ""
+msgstr "도움말 검색"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
@@ -13580,9 +13577,8 @@ msgid "``editor/editor_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
-#, fuzzy
 msgid "Distraction Free Mode"
-msgstr "애니메이션 모드"
+msgstr "집중 모드"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
@@ -13598,7 +13594,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
-msgstr ""
+msgstr "다음 탭"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
@@ -13614,7 +13610,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
-msgstr ""
+msgstr "이전 탭"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -13646,9 +13642,8 @@ msgid "``editor/filter_files``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
-#, fuzzy
 msgid "Open Scene"
-msgstr "오픈 소스"
+msgstr "씬 열기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -13663,9 +13658,8 @@ msgid "``editor/open_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
-#, fuzzy
 msgid "Close Scene"
-msgstr "Player(플레이어) 씬"
+msgstr "씬 닫기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -13681,7 +13675,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "닫은 씬 다시 열기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
@@ -13698,9 +13692,8 @@ msgid "``editor/reopen_closed_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
-#, fuzzy
 msgid "Save Scene"
-msgstr "Player(플레이어) 씬"
+msgstr "씬 저장"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -13733,7 +13726,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
-msgstr ""
+msgstr "모든 씬 저장"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
@@ -13797,7 +13790,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "Undo"
-msgstr ""
+msgstr "되돌리기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -13816,7 +13809,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "Redo"
-msgstr ""
+msgstr "다시 실행"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -13832,7 +13825,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
-msgstr ""
+msgstr "종료"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
@@ -13847,9 +13840,8 @@ msgid "``editor/file_quit``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
-#, fuzzy
 msgid "Quit to Project List"
-msgstr "프로젝트 설정하기"
+msgstr "종료 후 프로젝트 목록 열기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -13865,7 +13857,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "Take Screenshot"
-msgstr ""
+msgstr "스크린샷 찍기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
@@ -13881,7 +13873,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "전체 화면 토글"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -13898,7 +13890,7 @@ msgstr "전체화면 모드를 요청합니다."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
-msgstr ""
+msgstr "실행"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
@@ -22559,7 +22551,6 @@ msgstr ""
 "서 **Editor**\\ 를 클릭하면 외부 편집기를 선택하는 페이지가 나타납니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:104
-#, fuzzy
 msgid "Visual Studio 2019"
 msgstr "Visual Studio 2019"
 
@@ -30796,7 +30787,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
 #, fuzzy
 msgid "Scenes and scripts are objects"
-msgstr "씬과 노드(Scenes and nodes)"
+msgstr "씬과 스크립트는 오브젝트입니다"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
 #, fuzzy
@@ -30837,7 +30828,7 @@ msgstr ""
 msgid ""
 "Many Object-Oriented principles which apply to written code *also* apply to "
 "scenes."
-msgstr ""
+msgstr "코드에 적용되는 많은 객체지향 원칙은 *씬에도* 적용됩니다."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:136
 msgid ""
@@ -30852,7 +30843,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
 msgid "Scene organization"
-msgstr "씬 조직"
+msgstr "씬 구성"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:6
 msgid ""

@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Adrian Paun <adipaun97@protonmail.com>, 2018.
+# arydevy <arydev7@gmail.com>, 2020.
 # Calin Sopterean <csopterean@gmail.com>, 2018.
 # Grigore Antoniuc <grisa181@gmail.com>, 2018.
 # Marincia Cătălin <catalinmarincia@gmail.com>, 2020.
@@ -12,8 +13,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-20 16:21+0200\n"
-"PO-Revision-Date: 2020-03-20 12:44+0000\n"
-"Last-Translator: Victor S. <victorstancioiu@gmail.com>\n"
+"PO-Revision-Date: 2020-05-27 11:28+0000\n"
+"Last-Translator: arydevy <arydev7@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ro/>\n"
 "Language: ro\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.0-dev\n"
+"X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -83,7 +84,6 @@ msgstr ""
 "versiuni stabile Godot."
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -91,9 +91,9 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"Bine ai venit la documentația oficială a Godot Engine, game engine-ul 2D și "
+"Bine ai venit la documentația oficială a Godot Engine, motorul grafic 2D și "
 "3D gratuit, open source și dezvoltat de către comunitate! Dacă ești nou în "
-"această documentație, îți recomandăm să citești  :ref:`introduction page "
+"această documentație, îți recomandăm să citești :ref:`introduction page "
 "<doc_about_intro>` ca să îți faci o idee generală despre ce are de oferit "
 "această documentație."
 
@@ -131,7 +131,7 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Trimiteți o problemă sau un pull request în `repository-ul GitHub <https://"
+"Trimiteți o problemă sau un pull request în `depozitul GitHub <https://"
 "github.com/godotengine/godot-docs/issues>`_, ajută-ne `să traducem "
 "documentația <https://hosted.weblate.org/engage/godot-engine/>`_ în limba "
 "ta, sau discută cu noi fie pe canalul ``#documentation`` de pe `Discord "
@@ -283,7 +283,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "inainte sa incepem"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -310,13 +310,12 @@ msgid ""
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"Un game engine este o unealtă complexă, deci este foarte dificil să prezinți "
-"Godot în doar câteva cuvinte. Totuși aici este prezentarea noastră de PR, pe "
-"care o poți refolosi fără restricții dacă ai nevoie de câteva notițe rapide "
-"despre Godot Engine."
+"Un motor grafic este o unealtă complexă, deci este foarte dificil să "
+"prezinți Godot în doar câteva cuvinte. Totuși aici este prezentarea noastră "
+"de PR, pe care o poți refolosi fără restricții dacă ai nevoie de câteva "
+"notițe rapide despre Godot Engine."
 
 #: ../../docs/about/introduction.rst:38
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -325,7 +324,7 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot Engine este plin de caracteristici și este un game engine cross-"
+"Godot Engine este plin de caracteristici și este un motor grafic  cross-"
 "platform pentru a putea crea jocuri 2D sau 3D într-o interfață comună. Godot "
 "pune la dispoziție un set cuprinzător de unelte des întâlnite, pentru ca "
 "userii să se poată concentra pe a face jocuri fără să fie nevoiți să "
@@ -364,7 +363,6 @@ msgid "About the documentation"
 msgstr "Despre documentație"
 
 #: ../../docs/about/introduction.rst:59
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -374,7 +372,7 @@ msgid ""
 "readthedocs.org/>`_ tools."
 msgstr ""
 "Documentația de fața este intr-o continuă scriere,corectare,editare și "
-"rescriere de membrii comunitații Godot Engine.Aceasta este editată prin "
+"rescriere de membrii comunitații Godot .Aceasta este editată prin "
 "intermediul fișierelor text aflate în  limbajul `reStructuredText <http://"
 "www.sphinx-doc.org/en/stable/rest.html>`_markup si este pe urma compilat "
 "intr-un site static/document offline folosind uneltele open-source `Sphinx "
@@ -443,7 +441,7 @@ msgid ""
 msgstr ""
 "Secțiunea :ref:`sec-learn` este principalul *raison d'être* (motiv de "
 "existență) al acestui document, conținând toate informațiile necesare despre "
-"engine pentru a putea crea jocuri. Începe cu tutorialul  :ref:`Pas cu pas "
+"engine pentru a putea crea jocuri. Începe cu tutorialul :ref:`Pas cu pas "
 "<toc-learn-step_by_step>` ce ar trebui să fie punctul de pornire pentru toți "
 "utilizatorii noi."
 
@@ -476,12 +474,12 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
-"Secțiunea  :ref:`sec-community` oferă informații in legatură cu "
-"contribuțiile făcute la dezvotarea engine-ului si la vitalitatea comunității "
-"ca de exemplu: cum să reportezi buguri,stadiul documentației și așa mai "
-"departe.Aceasta mai oferă si link-uri catre diferite canale IRC si Discord "
-"ale comunitații si conține o listă de tutoriale third-party recomandate "
-"aflate in afara documentației."
+"Secțiunea :ref:`sec-community` oferă informații in legatură cu contribuțiile "
+"făcute la dezvotarea engine-ului si la vitalitatea comunității ca de "
+"exemplu: cum să reportezi buguri,stadiul documentației și așa mai departe."
+"Aceasta mai oferă si link-uri catre diferite canale IRC si Discord ale "
+"comunitații si conține o listă de tutoriale third-party recomandate aflate "
+"in afara documentației."
 
 #: ../../docs/about/introduction.rst:101
 msgid ""
@@ -513,7 +511,7 @@ msgstr "Distracție plăcută la citit și făcut jocuri cu Godot Engine!"
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:42
@@ -546,6 +544,7 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
+"Esti liber sa descarci Godot pentru orce motiv personal,non profit,comercial"
 
 #: ../../docs/about/faq.rst:17
 #, fuzzy
@@ -629,8 +628,9 @@ msgstr "Windows"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
 #: ../../docs/tutorials/misc/jitter_stutter.rst:84
+#, fuzzy
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
@@ -702,10 +702,9 @@ msgstr ""
 #: ../../docs/about/faq.rst:65
 #, fuzzy
 msgid "Which programming languages are supported in Godot?"
-msgstr "Ce limbi sunt suportate de către Godot ?"
+msgstr "Ce limbaje de programare sunt suportate de către Godot ?"
 
 #: ../../docs/about/faq.rst:67
-#, fuzzy
 msgid ""
 "The officially supported languages for Godot are GDScript, Visual Scripting, "
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
@@ -737,7 +736,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See the question about "
@@ -750,8 +748,9 @@ msgstr ""
 "<https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:93
+#, fuzzy
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "Ce e GSscript si de ce las folosi"
 
 #: ../../docs/about/faq.rst:95
 msgid ""
