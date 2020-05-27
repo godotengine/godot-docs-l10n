@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
-#, fuzzy
 msgid ""
 "A tilemap is a grid of tiles used to create a game's layout. There are "
 "several benefits to using :ref:`TileMap <class_TileMap>` nodes to design "
@@ -52,7 +51,6 @@ msgid "Project setup"
 msgstr "Configuración del proyecto"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:23
-#, fuzzy
 msgid ""
 "This demo we'll use the following tiles taken from Kenney's \"Abstract "
 "Platformer\" art pack. You can find the complete set `here <https://kenney."
@@ -65,14 +63,12 @@ msgstr ""
 "esta demo nos ceñiremos a este pequeño conjunto."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
-#, fuzzy
 msgid "Create a new project and place the above image in the project folder."
 msgstr ""
-"Cree un nuevo proyecto y coloque la imagen anterior en la carpeta de "
-"proyectos."
+"Crea un proyecto nuevo y coloque la imagen anterior en la carpeta del "
+"proyecto."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:31
-#, fuzzy
 msgid ""
 "When using a tileset, it's important that adjacent tiles match up. Godot's "
 "default is to import 2D images using an interpolated \"filter\" mode, which "
@@ -81,16 +77,14 @@ msgid ""
 "`doc_import_images` for details."
 msgstr ""
 "Cuando se usa un tileset, es importante que los tiles adyacentes coincidan. "
-"Godot por defecto importa imágenes 2D usando un modo de \"filter\" "
-"interpolado, lo que resultará en unos bordes feos entre los tiles. "
-"Selecciona la imagen y haz clic en la pestaña Importar. Desactiva el "
-"``Filter`` y haz clic en \"Reimport\". Ver :ref:`doc_import_images` para más "
-"detalles."
+"Godot por defecto importa imágenes 2D usando un modo \"filter\" interpolado, "
+"lo que resultará en unos bordes feos entre los tiles. Selecciona la imagen y "
+"haz clic en la pestaña Importar. Desactiva el ``Filter`` y haz clic en "
+"\"Reimport\". Ver :ref:`doc_import_images` para más detalles."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
-#, fuzzy
 msgid "TileMap node"
-msgstr "Nodo Camera"
+msgstr "Nodo TileMap"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:39
 msgid ""
@@ -113,7 +107,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:52
 msgid "``Cell Size``"
-msgstr ""
+msgstr "``Cell Size``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:51
 msgid ""
@@ -152,7 +146,6 @@ msgid "``Quadrant``"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
-#, fuzzy
 msgid ""
 "Defines the chunk size used for batched drawing. This can negatively affect "
 "performance. Don't change it unless you know what you're doing."
@@ -162,9 +155,8 @@ msgstr ""
 "estás haciendo."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
-#, fuzzy
 msgid "``Custom Transform``"
-msgstr "Transformar"
+msgstr "``Custom Transform``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
@@ -203,13 +195,12 @@ msgstr ""
 "seleccione \"New TileSet\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
-#, fuzzy
 msgid ""
 "When you do this, the \"TileSet\" panel will open at the bottom of the "
 "editor window:"
 msgstr ""
-"Haz clic en el nuevo recurso SpriteFrames y verás que aparece un nuevo panel "
-"en la parte inferior de la ventana del editor:"
+"Al hacer esto, el panel \"TileSet\" se abrirá en la parte inferior de la "
+"ventana del editor:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:89
 msgid ""

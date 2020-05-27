@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,107 +23,111 @@ msgstr "\\ Visual Studio Code"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:6
 msgid ""
-"Visual Studio Code is a free cross-platform IDE (not to be confused with :"
-"ref:`doc_configuring_an_ide_vs`). You can get it `from Microsoft <https://"
-"code.visualstudio.com/>`__."
+"`Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-"
+"platform IDE by `Microsoft <https://microsoft.com>`_ (not to be confused "
+"with :ref:`doc_configuring_an_ide_vs`)."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:11
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:10
+msgid "Importing the project"
+msgstr "プロジェクトのインポート"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:12
 #, fuzzy
 msgid ""
 "Make sure the C/C++ extension is installed. You can find instructions in the "
-"`documentation <https://code.visualstudio.com/docs/languages/cpp>`_."
+"`official documentation <https://code.visualstudio.com/docs/languages/cpp>`_."
 msgstr ""
 "C/C++拡張機能がインストールされていることを確認してください。手順は `docs "
 "<https://code.visualstudio.com/docs/languages/cpp>`_ にあります。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:13
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:14
 #, fuzzy
 msgid ""
-"Open the cloned Godot folder in Visual Studio Code with **File > Open "
-"Folder...**."
+"From the Visual Studio Code's main screen open the Godot root folder with "
+"**File > Open Folder...**."
 msgstr ""
 "``ファイル → フォルダーを開く...`` を使用して、VS Codeで複製されたgodotフォル"
 "ダを開きます"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:16
+msgid ""
+"Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter "
+"*Configure Task*."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:21
+msgid "Select the **Create tasks.json file from template** option."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:26
+#, fuzzy
+msgid "Then select **Others**."
+msgstr "*グループの作成を選択*"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:31
+msgid ""
+"Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new "
+"section to it:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:52
+msgid "An example of a filled out ``tasks.json``."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:54
+msgid ""
+"Arguments are can be different based on your own setup and needs. See :ref:"
+"`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:58
+#, fuzzy
+msgid "Debugging the project"
+msgstr "プロジェクトの準備"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:60
 #, fuzzy
 msgid ""
-"In order to build the project, you need two configuration files: ``launch."
-"json`` and ``tasks.json``. To create them:"
+"To run and debug the project you need to create a new configuration in the "
+"``launch.json`` file."
 msgstr ""
 "プロジェクトをビルドするには、2つの構成ファイル: *launch.json* および *tasks."
 "json* が必要です。それらを作成するには:"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:19
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:62
 #, fuzzy
-msgid ""
-"Open the **Debug** view by pressing :kbd:`Ctrl + Shift + D` and select the "
-"cogwheel with an orange dot:"
-msgstr ""
-":kbd:`Ctrl + Shift + D`を押してデバッグビューを開き、オレンジ色のドットが付い"
-"た歯車を選択します:"
+msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
+msgstr "``:kbd:`Shift + 上矢印``` を押して、ノードを8ピクセル上に移動します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:24
-#, fuzzy
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:63
 msgid ""
-"Select **C++ (GDB/LLDB)** (it might be named differently on macOS or "
-"Windows)."
-msgstr ""
-"*C++ (GDB/LLDB)* を選択します(macOSまたはWindowsでは異なる名前が付けられる場"
-"合があります)"
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:26
-#, fuzzy
-msgid "Update ``launch.json`` to match:"
-msgstr "一致するように *launch.json* を更新します:"
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:30
-msgid ""
-"If you're following this guide on macOS or Windows, you will have to adjust "
-"``godot.linuxbsd.tools.64`` accordingly."
+"If ``launch.json`` file is missing you will be prompted to create a new one."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:33
-#, fuzzy
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:68
 msgid ""
-"Create a ``tasks.json`` file by starting the Debug process with :kbd:`F5`. "
-"Visual Studio Code will show a dialog with a **Configure Task** button. "
-"Choose it and select **Create tasks.json file from template**, then select "
-"**Others**."
-msgstr ""
-":kbd:`F5` でデバッグプロセスを開始して *tasks.json* を作成します。VS Codeに"
-"は、\\ *タスクの構成* ボタンのあるダイアログが表示されます。それをタップし"
-"て、\\ *テンプレートから tasks.json を生成* を選択し、\\ *Others* を選択しま"
-"す"
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:37
-#, fuzzy
-msgid "Update ``tasks.json`` to match:"
-msgstr "一致するように *tasks.json* を更新します:"
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:41
-msgid ""
-"If you're following this guide on macOS or Windows, you will have to adjust "
-"``platform=linuxbsd`` accordingly."
+"Select **C++ (GDB/LLDB)**. There may be another platform specific option "
+"here. If selected, adjust the configuration example provided accordingly."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:44
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:70
 msgid ""
-"You can now start the Debug process again to test that everything works."
-msgstr "デバッグプロセスを再度開始して、すべてが機能することをテストできます。"
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:45
-#, fuzzy
-msgid ""
-"If the build phase fails, check the console for hints. On Linux, it's most "
-"likely due to missing dependencies. Check :ref:`doc_compiling_for_linuxbsd`."
+"Within the ``launch.json`` file find the ``\"configurations\"`` array and "
+"add a new section to it:"
 msgstr ""
-"ビルドフェーズが失敗した場合は、コンソールでヒントを確認してください。 Linux"
-"では、いくつかの依存関係が欠落している可能性が最も高いです。要確認 :ref:`X11"
-"用のコンパイル (Linux、\\ * BSD) <doc_compiling_for_x11>`"
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:48
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:100
+msgid "An example of a filled out ``launch.json``."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:102
+msgid ""
+"The name under ``program`` depends on your build configuration, e.g. ``godot."
+"x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:105
 #, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "

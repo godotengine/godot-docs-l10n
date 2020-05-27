@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,10 +31,11 @@ msgstr ""
 "到Windows应用商店。也可以在任何平台上，而不仅仅是从Windows上，导出UWP软件包。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
+#, fuzzy
 msgid ""
 "However, if you want to install and run the app, you need to sign it with a "
-"trusted signature. Currently, Godot does not support signing of packages, so "
-"you need to use external tools to do so."
+"trusted signature. Godot supports automatic signing of packages with "
+"external tools."
 msgstr ""
 "但是，如果要安装并运行应用程序，则需要使用可信签名对其进行签名。目前，Godot不"
 "支持签名包，因此您需要使用外部工具来执行此操作。"
@@ -157,18 +158,44 @@ msgstr ""
 "令："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
-msgid "Signing the package"
-msgstr "签名包"
+#, fuzzy
+msgid "Setting up automatic signing"
+msgstr "设置装配"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
-msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
-msgstr "最后，使用Windows SDK或Visual Studio中的 ``SignTool.exe``："
+msgid ""
+"To setup automatic signing on export you need to go to Editor Settings > "
+"Export > Uwp. From there you need to click on the folder for ``Signtool``, "
+"and navigate to the ``SignTool.exe`` file on your computer."
+msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:72
+msgid ""
+"After setting that up close the editor settings, go to Project > Export, and "
+"select the UWP preset. Under the ``Signing`` options click on the folder "
+"next to ``Certificate`` and go to the certificate file. Then enter the "
+"pfxPassword in the password field."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:79
+msgid "Your project will now be automatically signed on export."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:81
+msgid ""
+"If you want to sign an exported app manually run ``SignTool.exe`` and use "
+"the following command."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:84
+msgid "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:87
 msgid "Installing the package"
 msgstr "安装包"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:73
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:89
 msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
@@ -176,13 +203,13 @@ msgstr ""
 "从Windows 10周年更新开始，只需双击Windows资源管理器中的 ``.appx`` 文件即可安"
 "装软件包。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:76
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:92
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
 msgstr "也可以使用 ``Add-AppxPackage`` PowerShell cmdlet进行安装。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:78
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:94
 msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."

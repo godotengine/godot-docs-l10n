@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:4
-#, fuzzy
 msgid "Thread-safe APIs"
 msgstr "APIs thread-safe"
 
@@ -48,7 +47,6 @@ msgid "Global scope"
 msgstr "Portée globale"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:17
-#, fuzzy
 msgid ""
 ":ref:`Global Scope<class_@GlobalScope>` singletons are all thread-safe. "
 "Accessing servers from threads is supported (for VisualServer and Physics "
@@ -76,7 +74,6 @@ msgid "Scene tree"
 msgstr "Arbre de scène"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:24
-#, fuzzy
 msgid ""
 "Interacting with the active scene tree is **NOT** thread-safe. Make sure to "
 "use mutexes when sending data between threads. If you want to call functions "
@@ -155,3 +152,13 @@ msgid ""
 "easiest to use **one** thread for loading and modifying resources, and then "
 "the main thread for adding them."
 msgstr ""
+"La modification d'une ressource unique à partir de plusieurs threads n'est "
+"pas prise en charge. Cependant, la gestion des références sur plusieurs "
+"threads est prise en charge, de sorte que le chargement de ressources sur un "
+"thread l'est également - les scènes, les textures, les maillages, etc - "
+"peuvent être chargés et manipulés sur un thread et ensuite ajoutés à la "
+"scène active sur le fil principal. La limitation ici est comme décrite ci-"
+"dessus, il faut faire attention à ne pas charger la même ressource à partir "
+"de plusieurs threads en même temps, il est donc plus facile d'utiliser "
+"**un** thread pour le chargement et la modification des ressources, puis le "
+"thread principal pour les ajouter."

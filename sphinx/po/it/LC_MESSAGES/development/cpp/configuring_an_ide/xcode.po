@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,195 +23,182 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:6
 msgid ""
-"Xcode is a free macOS-only IDE. You can download it from the Mac App Store."
+"`Xcode <https://developer.apple.com/xcode>`_ is a free macOS-only IDE. You "
+"can download it from the Mac App Store."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:9
-msgid "Project setup"
-msgstr "Impostare il progetto"
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:11
-msgid "Create an Xcode external build project anywhere."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:10
+msgid "Importing the project"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:15
-msgid "Go to the build target's **Info** tab, then:"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:17
-msgid "Set **Build Tool** to the full path to SCons."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:12
+msgid ""
+"From Xcode's main screen create a new project using the **Other > External "
+"Build System** template."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:18
 msgid ""
-"Set **Arguments** to something like ``platform=osx tools=yes bits=64 "
-"target=debug``."
+"Open your build targets from the **Targets** section and select the **Info** "
+"tab."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:20
-msgid "Set **Directory** to the path to Godot's source folder."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:19
+#, fuzzy
+msgid "Fill out the form with the following settings:"
+msgstr "L'HUD visualizza le seguenti informazioni:"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
+msgid "Build Tool"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:21
-msgid "You may uncheck **Pass build settings in environment**."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
+msgid "A full path to the **scons** executable, e.g. **/usr/local/bin/scons**"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:25
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
+msgid "Arguments"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
 msgid ""
-"Add a Command Line Tool target which will be used for indexing the project:"
+"See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:27
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
+#, fuzzy
+msgid "Directory"
+msgstr "Vettore"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
+msgid "A full path to the Godot root folder"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:33
 msgid ""
-"In Xcode's menu, choose **File > New > Target...** and add a new Xcode "
-"command line tool target."
+"Add a Command Line Tool target which will be used for indexing the project "
+"by choosing **File > New > Target...**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:34
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:40
+msgid "Select **OS X > Application > Command Line Tool**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:46
 msgid ""
 "Name it something so you know not to compile with this target (e.g. "
 "``GodotXcodeIndex``)."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:35
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:48
 msgid ""
-"Goto the newly created target's **Build Settings** tab and look for **Header "
-"Search Paths**."
+"For this target open the **Build Settings** tab and look for **Header Search "
+"Paths**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:36
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:49
 msgid ""
-"Set **Header Search Paths** to the absolute path to Godot's source folder."
+"Set **Header Search Paths** to the absolute path to the Godot root folder. "
+"You need to include subdirectories as well. To achieve that, add two two "
+"asterisks (``**``) to the end of the path, e.g. ``/Users/me/repos/godot-"
+"source/**``."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:37
-msgid ""
-"Make it recursive by adding two asterisks (``**``) to the end of the path, e."
-"g. ``/Users/me/repos/godot-source/**``."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:40
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:53
 #, fuzzy
-msgid "Add the Godot source to the project:"
-msgstr "Aggiungi questo codice alla funzione:"
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:42
-#, fuzzy
-msgid "Drag and drop Godot source into the project file browser."
+msgid ""
+"Add the Godot source to the project by dragging and dropping it into the "
+"project file browser."
 msgstr "Trascinare e rilasciare lo script sul nodo nella Scena dock."
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:43
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:54
 msgid "Uncheck **Create external build system project**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:47
-#, fuzzy
-msgid "Click **Next**."
-msgstr "Clicca Avanti"
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:48
-#, fuzzy
-msgid "Select **Create groups**."
-msgstr "Scegli \"Crea Gruppi\""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:52
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:60
 msgid ""
-"Check *only* your command line indexing target in the **Add to targets** "
-"section."
+"Next select **Create groups** for the **Added folders** option and check "
+"*only* your command line indexing target in the **Add to targets** section."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:54
-msgid ""
-"Click finish. Xcode will now index the files. This may take a few minutes."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:67
+msgid "Xcode will now index the files. This may take a few minutes."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:55
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:68
 msgid ""
 "Once Xcode is done indexing, you should have jump-to-definition, "
 "autocompletion, and full syntax highlighting."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:59
-msgid "Scheme setup"
-msgstr "Configurazione dello schema"
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:72
+#, fuzzy
+msgid "Debugging the project"
+msgstr "Preparazione del progetto"
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:61
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:74
 msgid ""
-"To enable debugging support, edit the external build target's build scheme:"
+"To enable debugging support you need to edit the external build target's "
+"build and run schemes."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:63
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:76
 msgid "Open the scheme editor of the external build target."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:64
-msgid "Expand the **Build** menu."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:65
-msgid "Goto **Post Actions**."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:66
-msgid ""
-"Add a new script run action, select your project in **Provide build settings "
-"from** as this allows you to use the``${PROJECT_DIR}`` variable."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:71
-msgid ""
-"Write a script that gives the binary a name that Xcode will recognize, such "
-"as: ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/godot/"
-"bin/godot``"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:73
-msgid "Build the external build target."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:75
-msgid "Edit the external build target's Run scheme:"
-msgstr ""
-
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:77
-msgid "Open the scheme editor again."
+msgid "Locate the **Build > Post Actions** section."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:78
-msgid "Click **Run**."
+msgid "Add a new script run action"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:82
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:79
+msgid ""
+"Under **Provide build settings from** select your project. This allows to "
+"reference the project directory within the script."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:81
+msgid ""
+"Create a script that will give the binary a name that Xcode can recognize, e."
+"g.:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
+msgid "Build the external build target."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:93
+msgid "Open the scheme editor again and select **Run**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:99
 msgid ""
 "Set the **Executable** to the file you linked in your post-build action "
 "script."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:83
-msgid "Check **Debug executable** if it isn't checked already."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:100
+msgid "Check **Debug executable**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:84
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:101
 msgid ""
-"You can go to **Arguments** tab and specify the full path to a ``project."
-"godot`` file to debug the editor instead of the project manager. "
-"Alternatively, use ``--path`` to point to a project *folder* which will be "
-"run directly (instead of opening the editor)."
+"You can add two arguments on the **Arguments** tab: the ``-e`` flag opens "
+"the editor instead of the project manager, and the ``--path`` argument tells "
+"the executable to open the specified project (must be provided as an "
+"*absolute* path to the project root, not the ``project.godot`` file)."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:89
-msgid "Test the Run scheme:"
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:106
+msgid ""
+"To check that everything is working, put a breakpoint in ``platform/osx/"
+"godot_main_osx.mm`` and run the project."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
-msgid "Set a breakpoint in ``platform/osx/godot_main_osx.mm``."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:92
-msgid "If all goes well, it should break at the specified breakpoint."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:94
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
 #, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "

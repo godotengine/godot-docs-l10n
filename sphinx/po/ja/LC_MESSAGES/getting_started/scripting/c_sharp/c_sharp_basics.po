@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,8 +117,8 @@ msgstr "\\ JetBrains Rider"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:53
 msgid ""
-"JetBrains Rider comes with bundled MSBuild, so you just need a recent .NET "
-"Framework Developer Pack. Make sure to set the following preferences:"
+"JetBrains Rider comes with bundled MSBuild, so nothing extra is required. "
+"Make sure to set the following preferences:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:56
@@ -139,9 +139,7 @@ msgid "In Rider:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:63
-msgid ""
-"``TargetFrameworkVersion`` in ``csproj`` should match the installed .NET "
-"Framework Developer Pack."
+msgid "Set ``MSBuild version`` to either bundled with Rider or .NET Core."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64

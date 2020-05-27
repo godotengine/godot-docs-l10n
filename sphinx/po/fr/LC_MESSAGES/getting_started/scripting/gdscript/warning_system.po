@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,35 +18,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:4
-#, fuzzy
 msgid "GDScript warning system"
-msgstr "Système d'avertissement"
+msgstr "Système d’avertissement de GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:6
-#, fuzzy
 msgid ""
 "The GDScript warning system complements :ref:`static typing "
 "<doc_gdscript_static_typing>` (but it can work without static typing too). "
 "It's here to help you avoid mistakes that are hard to spot during "
 "development, and that may lead to runtime errors."
 msgstr ""
-"Le système d’avertissement complète le GDScript typé. Il est là pour vous "
-"aider à éviter les erreurs difficiles à repérer pendant le développement, "
-"qui peuvent mener à des erreurs à l'exécution."
+"Le système d'avertissement de GDScript complète :ref:`le typage statique "
+"<doc_gdscript_static_typing>` (mais il peut aussi fonctionner sans typage "
+"statique). Il est là pour vous aider à éviter les erreurs difficiles à "
+"repérer pendant le développement, et qui peuvent conduire à des erreurs "
+"d'exécution."
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:11
-#, fuzzy
 msgid ""
 "You can configure warnings in the Project Settings under the section called "
 "**Gdscript**:"
 msgstr ""
-"Vous pouvez configurer les avertissements dans les paramètres du projet dans "
-"une nouvelle section intitulée `` GDScript`` :"
+"Vous pouvez configurer les avertissements dans les paramètres du projet, "
+"dans la section intitulée **Gdscript** :"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:17
-#, fuzzy
 msgid "Warning system project settings"
-msgstr "système d'avertissement et paramètres de projet"
+msgstr "Paramètres de projet du système d'avertissement"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:19
 msgid ""
@@ -58,9 +56,8 @@ msgstr ""
 "comporte 3 avertissements :"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:25
-#, fuzzy
 msgid "Warning system example"
-msgstr "exemple de système d'avertissement"
+msgstr "Exemple de système d'avertissement"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:27
 msgid ""
@@ -71,15 +68,14 @@ msgid ""
 "anymore:"
 msgstr ""
 "Pour ignorer des avertissements spécifiques dans un fichier, insérez un "
-"commentaire spécial de la forme ``#warning-ignore:warning-id```, ou cliquez "
+"commentaire spécial de la forme ``#warning-ignore:warning-id``, ou cliquez "
 "sur le lien ignorer à droite de la description de l'avertissement. Godot "
 "ajoutera un commentaire au-dessus de la ligne correspondante et le code ne "
 "déclenchera plus l'avertissement correspondant :"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:36
-#, fuzzy
 msgid "Warning system ignore example"
-msgstr "exemple où le système d'avertissement est ignoré"
+msgstr "Exemple où le système d'avertissement est ignoré"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:38
 msgid ""
@@ -108,6 +104,5 @@ msgstr ""
 "avertissements d'erreurs activées :"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:51
-#, fuzzy
 msgid "Warnings as errors"
-msgstr "les avertissements en tant qu'erreurs"
+msgstr "Les avertissements en tant qu'erreurs"

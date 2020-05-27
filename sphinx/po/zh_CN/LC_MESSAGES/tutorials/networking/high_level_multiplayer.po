@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,8 +35,8 @@ msgid ""
 "below. But make sure to read the rest later on!"
 msgstr ""
 "下面解释了Godot高级、低级网络的区别以及一些基本原理。如果您等不及了且将网络添"
-"加到您的第一个节点中，请跳到下面的 `初始化网络`_  。但是请确保稍后阅读其余部"
-"分!"
+"加到您的第一个节点中，请跳到下面的 `初始化网络`_ 。但是请确保稍后阅读其余部"
+"分！"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
 msgid ""
@@ -219,7 +219,6 @@ msgstr ""
 "同时还包括当节点连接或断开时将通知您的信号。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:64
-#, fuzzy
 msgid ""
 "This class interface can abstract most types of network layers, topologies "
 "and libraries. By default, Godot provides an implementation based on ENet (:"
@@ -231,9 +230,9 @@ msgid ""
 "networking APIs."
 msgstr ""
 "这个类接口可以表示大多数类型的网络层、拓扑结构和库。默认情况下，Godot提供基于"
-"ENet的实现 ( :ref:`NetworkedMultiplayerEnet "
-"<class_NetworkedMultiplayerENet>`),  但是这也可以用于实现手机的API(针对专用"
-"WiFi、蓝牙)或自定义设备/特定的控制台的网络API。"
+"ENet的实现（:ref:`NetworkedMultiplayerEnet "
+"<class_NetworkedMultiplayerENet>`），但是这也可以用于实现手机的API（针对专用"
+"WiFi、蓝牙）或自定义设备/特定的控制台的网络API。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:70
 msgid ""
@@ -306,7 +305,6 @@ msgid "Managing connections"
 msgstr "管理连接"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:121
-#, fuzzy
 msgid ""
 "Some games accept connections at any time, others during the lobby phase. "
 "Godot can be requested to no longer accept connections at any point (see "
@@ -315,8 +313,8 @@ msgid ""
 "following signals in SceneTree:"
 msgstr ""
 "有些游戏在任何时候都可以接受连接，也有游戏只在大厅阶段接受连接。可以请求Godot"
-"在任何时间点不再接受连接(参见 `set_refuse_new_network_connections(bool)`  "
-"和 :ref:`SceneTree <class_SceneTree>` 的相关方法)。为了管理连接的节点，Godot"
+"在任何时间点不再接受连接（参见 `set_refuse_new_network_connections(bool)` "
+"和 :ref:`SceneTree <class_SceneTree>` 的相关方法）。为了管理连接的节点，Godot"
 "在SceneTree中提供了以下信号:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:124

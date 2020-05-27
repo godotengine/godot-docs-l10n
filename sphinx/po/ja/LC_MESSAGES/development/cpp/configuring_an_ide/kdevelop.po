@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,16 +29,24 @@ msgstr ""
 "`KDevelop <https://www.kdevelop.org>`_ は、すべてのデスクトッププラットフォー"
 "ム向けの無料のオープンソースIDEです。"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:8
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:9
+msgid "Importing the project"
+msgstr "プロジェクトのインポート"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:11
 #, fuzzy
-msgid "Start by opening KDevelop and choosing **Open Project**."
+msgid "From the KDevelop's main screen select **Open Project**."
 msgstr "KDevelopを開き、\"open project\" を選択して開始します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:12
-msgid "Choose the directory where you cloned Godot."
-msgstr "Godotのクローンを作成したディレクトリを選択します。"
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:17
+msgid "KDevelop's main screen."
+msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:14
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:19
+msgid "Navigate to the Godot root folder and select it."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:20
 #, fuzzy
 msgid ""
 "On the next screen, choose **Custom Build System** for the **Project "
@@ -46,56 +54,93 @@ msgid ""
 msgstr ""
 "次の画面で、\\ *Project manager* の \"Custom Build System\" を選択します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:18
-msgid "Now that the project has been imported, open the project configuration."
-msgstr "プロジェクトがインポートされたので、プロジェクトの設定を開きます。"
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:26
+msgid ""
+"After the project has been imported, open the project configuration by right-"
+"clicking on it in the **Projects** panel and selecting **Open Configuration.."
+"** option."
+msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:22
-msgid "Add the following includes/imports:"
-msgstr "次を includes/imports に追加します:"
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:33
+msgid ""
+"Under **Language Support** open the **Includes/Imports** tab and add the "
+"following paths:"
+msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:35
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
 msgid "Apply the changes."
 msgstr "変更(Apply)を適用します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:37
-#, fuzzy
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:50
 msgid ""
-"Switch to the **Custom Build System** tab. Add a build configuration and "
-"keep the build directory blank. Enable build tools and add ``scons`` as the "
-"executable then add ``platform=linuxbsd target=debug`` (``platform=osx`` if "
-"you're on macOS) as the arguments."
+"Under **Custom Build System** add a new build configuration with the "
+"following settings:"
 msgstr ""
-"\"Custom Build System\" タブに切り替えます。ビルド構成(Build configuration)を"
-"追加し、ビルドディレクトリ(Build Directory)を空白のままにします。ビルドツール"
-"(Build Tools)を有効(Enable)にし、実行可能ファイル(Executable)として `` "
-"scons`` を追加してから、引数(Arguments)として ``platform = x11 target = "
-"debug`` (macOSを使用している場合は `` platform = osx``)を追加します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:44
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 #, fuzzy
-msgid ""
-"Next, we need to tell KDevelop where to find the binary. From the **Run** "
-"menu, choose **Configure Launches**."
-msgstr ""
-"次に、バイナリを見つける場所をKDevelopに指示する必要があります。\"Run\" メ"
-"ニューから[起動設定]を選択します。"
+msgid "Build Directory"
+msgstr "それを構築します:"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
-#, fuzzy
-msgid ""
-"Click **Add** if no launcher exists. Then add the path to your executable in "
-"the executable section. Your executable should be located in the ``bin/`` "
-"subdirectory and should be named something like ``godot.linuxbsd.tools.64`` "
-"(the name could be different depending on your platform and build options)."
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
+msgid "*blank*"
 msgstr ""
-"ランチャーが存在しない場合は、[追加] をクリックします。次に、実行可能"
-"(Executable)セクションに実行可能ファイルへのパスを追加します。実行可能ファイ"
-"ルは ``bin/`` サブディレクトリに配置し、\\ ``godot.x11.tools.64`` のような名"
-"前を付ける必要があります(名前はプラットフォームやビルドオプションによって異な"
-"る場合があります) 。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
+msgid "Enable"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
+msgid "**True**"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
+#, fuzzy
+msgid "Executable"
+msgstr "実行可能ファイル名。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
+msgid "**scons**"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
+msgid "Arguments"
+msgstr "引数"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
+#, fuzzy
+msgid ""
+"See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+"GodotのUIシステムの仕組みを知るには、まず\\ :doc:"
+"`ui_introduction_to_the_ui_system`\\ を見て下さい。"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:66
+msgid "Apply the changes and close the configuration window."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:69
+#, fuzzy
+msgid "Debugging the project"
+msgstr "プロジェクトの準備"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:71
+msgid "Select **Run > Configure Launches...** from the top menu."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:77
+msgid "Click **Add** to create a new launch configuration."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:78
+msgid ""
+"Select **Executable** option and specify the path to your executable located "
+"in the ``<Godot root directory>/bin`` folder. The name depends on your build "
+"configuration, e.g. ``godot.x11.tools.64`` for 64-bit X11 platform with "
+"``tools`` enabled."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
 #, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "

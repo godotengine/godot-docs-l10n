@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -316,13 +316,12 @@ msgstr ""
 "minimizar las colisiones de hash y mantener la velocidad de los accesos."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:130
-#, fuzzy
 msgid ""
 "As one might be able to tell, Dictionaries specialize in tasks that Arrays "
 "do not. An overview of their operational details is as follows:"
 msgstr ""
 "Como se puede ver, los Diccionarios se especializan en tareas que los Arrays "
-"no pueden realizar. A continuación se muestra un resumen general de los "
+"no pueden realizar. A continuación se muestra un resumen general de sus "
 "detalles operativos:"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:133
@@ -507,7 +506,7 @@ msgid ""
 "exists in the first place."
 msgstr ""
 "**Claridad:** Los objetos son una fuente de datos confiable cuando se trata "
-"de los datos que los scripts y las clases de motor definen para sí mismos.  "
+"de los datos que los scripts y las clases de motor definen para sí mismos. "
 "Las propiedades pueden no tener los valores que uno espera, pero uno no "
 "necesita preocuparse de si la propiedad existe en primer lugar."
 
@@ -559,7 +558,6 @@ msgid "Enumerations: int vs. string"
 msgstr "Enumeraciones: int vs. string"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
-#, fuzzy
 msgid ""
 "Most languages offer an enumeration type option. GDScript is no different, "
 "but unlike most other languages, it allows one to use either integers or "
@@ -568,7 +566,8 @@ msgid ""
 msgstr ""
 "La mayoría de los idiomas ofrecen una opción de tipo de enumeración. "
 "GDScript no es diferente, pero a diferencia de la mayoría de los otros "
-"lenguajes, permite usar enteros o strings para los valores numéricos. "
+"lenguajes, permite usar enteros o strings para los valores enumerados (esto "
+"último sólamente cuando se utiliza la palabra clave ``export`` en GDScript). "
 "Entonces surge la pregunta, \"¿qué se debe usar?\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:281

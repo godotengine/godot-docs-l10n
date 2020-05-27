@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,14 +81,12 @@ msgstr ""
 "automáticamente."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
-#, fuzzy
 msgid "Supported image formats"
-msgstr "Animaciones soportadas"
+msgstr "Formatos de imagen soportados"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:36
-#, fuzzy
 msgid "Godot can import the following image formats:"
-msgstr "Godot soporta los siguientes formatos de *archivo de escena 3D*:"
+msgstr "Godot soporta los siguientes formatos de imagen:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
 msgid ""
@@ -169,20 +167,19 @@ msgid "Compress Mode"
 msgstr "Modos de compresión"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:73
-#, fuzzy
 msgid ""
 "**VRAM Compression:** This is the most common compression mode for 3D "
 "assets. Size on disk is reduced and video memory usage is also decreased "
 "considerably (usually by a factor between 4 and 6). This mode should be "
 "avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
-"Compresión VRAM: este es el modo de compresión más común para los recursos "
-"3D. El tamaño del archivo en el disco se reduce y el uso de la memoria de "
-"video también se reduce considerablemente. Para 3D, sin embargo, se pueden "
-"obtener objetos no deseados."
+"**Compresión VRAM:** Este es el modo de compresión más común para los "
+"recursos 3D. El tamaño del archivo en el disco se reduce y el uso de la "
+"memoria de video también se reduce considerablemente (normalmente en un "
+"factor entre 4 y 6). Este modo debe ser evitado para 2D ya que puede "
+"producir artefactos visibles."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:77
-#, fuzzy
 msgid ""
 "**Lossless Compression:** This is the most common compression mode for 2D "
 "assets. It shows assets without any kind of artifacting, and disk "
@@ -190,10 +187,11 @@ msgid ""
 "than VRAM Compression, though. This is also the recommended setting for "
 "pixel art."
 msgstr ""
-"Compresión sin pérdida: esta es la compresión más común para los recursos en "
-"2D. Muestra las imágenes sin ningún tipo de defecto, y la compresión en el "
-"disco es decente. Sin embargo, usará una cantidad considerablemente mayor de "
-"memoria de video que VRAM."
+"**Compresión sin pérdida:** Esta es la compresión más común para los "
+"recursos en 2D. Muestra las imágenes sin ningún tipo de defecto, y la "
+"compresión en el disco es decente. Sin embargo, usará una cantidad "
+"considerablemente mayor de memoria de video que VRAM. Esta es recomendada "
+"para pixel art."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:81
 msgid ""
@@ -204,16 +202,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:85
-#, fuzzy
 msgid ""
 "**Uncompressed:** Only useful for formats that can't be compressed (such as "
 "raw float images)."
 msgstr ""
-"Sin compresión: Sólo es útil para archivos de formatos que no se pueden "
-"comprimir (como raw float)."
+"**Sin compresión:** Sólo es útil para archivos de formatos que no se pueden "
+"comprimir (como imágenes raw float)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
-#, fuzzy
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages (|good| = best, |bad| = worst):"
@@ -254,9 +250,8 @@ msgid "Stored as WebP"
 msgstr "Guardado como WebP"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
-#, fuzzy
 msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
-msgstr "Guardado como S3TC/BC,PVRTC/ETC, según plataforma"
+msgstr "Guardado como S3TC/BC o PVRTC/ETC, según plataforma"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:96
 msgid "Size on Disk"

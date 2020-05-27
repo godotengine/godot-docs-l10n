@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Contribute to the Class Reference"
 msgstr "Contribuer à la référence des classes (API)"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:8
-#, fuzzy
 msgid ""
 "This guide also is available as a `video tutorial on YouTube <https://www."
 "youtube.com/watch?v=5jeHXxeX-JY>`_."
@@ -75,6 +74,9 @@ msgid ""
 "reference completion status `here <https://godotengine.github.io/doc-status/"
 ">`__."
 msgstr ""
+"Vous ne savez pas par où commencer pour contribuer ? Jetez un coup d'œil à "
+"l'état d'achèvement actuel des références de classe `ici <https://"
+"godotengine.github.io/doc-status/>`__."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:25
 msgid "How to contribute"
@@ -135,8 +137,9 @@ msgid "Get started with GitHub"
 msgstr "Débuter avec Github"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:42
+#, fuzzy
 msgid ""
-"If you're new to git and GitHub, this guide will help you get started. "
+"If you're new to Git and GitHub, this guide will help you get started. "
 "You'll learn to:"
 msgstr ""
 "Si vous débutez avec git et GitHub, ce guide vous aidera à démarrer. Vous "
@@ -157,13 +160,12 @@ msgstr ""
 "documentations officielles"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:48
-#, fuzzy
 msgid ""
 "If you're new to Git, the version control system Godot uses, go through "
 "`GitHub's interactive guide <https://try.github.io/levels/1/challenges/1>`_. "
 "You'll learn some essential vocabulary and get a sense for the tool."
 msgstr ""
-"Si vous êtes nouveau sur git, le système de contrôle de version que Godot "
+"Si vous êtes nouveau sur Git, le système de contrôle de version que Godot "
 "utilise, consultez le guide interactif `GitHub's interactive guide <https://"
 "try.github.io/levels/1/challenges/1>`_. Vous y apprendrez le vocabulaire "
 "essentiel et vous vous familiariserez avec l'outil."
@@ -229,8 +231,9 @@ msgid "You can check the list of all remote servers with:"
 msgstr "Vous pouvez consulter la liste de tous les serveurs distants avec :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:86
+#, fuzzy
 msgid ""
-"You should have two: ``origin``, your fork on GitHub, that git adds by "
+"You should have two: ``origin``, your fork on GitHub that Git adds by "
 "default, and ``upstream``, that you just added:"
 msgstr ""
 "Vous devriez en avoir deux : ``origin``, votre fork sur GitHub, que git "
@@ -282,9 +285,10 @@ msgstr ""
 "à créer une nouvelle branche :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:122
+#, fuzzy
 msgid ""
-"If you're feeling lost by now, come to our `IRC channels <http://webchat."
-"freenode.net/?channels=#godotengine>`_ and ask for help. Experienced git "
+"If you're feeling lost by now, come to our `IRC channels <https://webchat."
+"freenode.net/?channels=#godotengine>`_ and ask for help. Experienced Git "
 "users will give you a hand."
 msgstr ""
 "Si vous vous sentez perdu, venez sur nos `canaux IRC <http://webchat."
@@ -310,7 +314,6 @@ msgstr ""
 "suivante (Linux 64 bits) :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:133
-#, fuzzy
 msgid ""
 "The XML files in doc/classes should then be up-to-date with current Godot "
 "Engine features. You can then check what changed using the ``git diff`` "
@@ -318,7 +321,7 @@ msgid ""
 "to document, please commit those changes first before starting to edit the "
 "template:"
 msgstr ""
-"Les fichiers xml dans doc/classes devraient alors être à jour avec les "
+"Les fichiers XML dans doc/classes devraient alors être à jour avec les "
 "fonctionnalités actuelles du moteur Godot. Vous pouvez alors vérifier ce qui "
 "a changé en utilisant la commande ``git diff``. S'il y a des changements "
 "dans d'autres classes que celle que vous envisagez de documenter, veuillez "
@@ -359,7 +362,6 @@ msgstr ""
 "l'interface utilisateur GitHub de votre fork Godot."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:160
-#, fuzzy
 msgid ""
 "Although you can edit files on GitHub, it's not recommended. As hundreds of "
 "contributors work on Godot, the Git history must stay clean. Each commit "
@@ -378,7 +380,7 @@ msgstr ""
 "partir de GitHub, il créera une nouvelle branche et une Pull Request à "
 "chaque fois que vous voudrez l'enregistrer. Si quelques jours s'écoulent "
 "avant que vos modifications ne soient examinées, vous ne pourrez pas "
-"effectuer correctement la mise à jour vers la dernière version du dépôt. En "
+"effectuer proprement la mise à jour vers la dernière version du dépôt. En "
 "outre, il est plus difficile de conserver les idents de GitHub propres. Et "
 "ils sont très importants dans la documentation."
 
@@ -682,24 +684,20 @@ msgid "Some ``monospace`` text."
 msgstr "Du texte ``monospace``."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:259
-#, fuzzy
 msgid "[kbd] [/kbd]"
-msgstr "[b] [/b]"
+msgstr "[kbd] [/kbd]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:259
-#, fuzzy
 msgid "Keyboard/mouse shortcut"
-msgstr "Raccourci clavier"
+msgstr "Raccourci clavier/souris"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:259
-#, fuzzy
 msgid "Some [kbd]Ctrl + C[/kbd] key."
-msgstr "Du texte en [b]gras[/b]."
+msgstr "Des touches [kbd]Ctrl + C[/kbd]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:259
-#, fuzzy
 msgid "Some :kbd:`Ctrl + C` key."
-msgstr ":kbd:`Ctrl + C`"
+msgstr "Des touches :kbd:`Ctrl + C`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:261
 msgid "[codeblock] [/codeblock]"

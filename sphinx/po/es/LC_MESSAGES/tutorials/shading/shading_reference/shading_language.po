@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,9 +76,8 @@ msgid "**bool**"
 msgstr "**bool**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:25
-#, fuzzy
 msgid "Boolean datatype, can only contain ``true`` or ``false``."
-msgstr "Tipo de dato booleano, puede contener solamente \"true\" o \"false\""
+msgstr "Tipo de dato booleano, puede contener solamente ``true`` o ``false``."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:27
 msgid "**bvec2**"
@@ -224,7 +223,7 @@ msgstr "**mat3**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:59
 msgid "3x3 matrix, in column major order."
-msgstr "Matriz 3x3,  ordenada por columnas."
+msgstr "Matriz 3x3, ordenada por columnas (column-major order)."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:61
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:554
@@ -234,7 +233,7 @@ msgstr "**mat4**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:61
 msgid "4x4 matrix, in column major order."
-msgstr "Matriz 4x4,  ordenada por columnas."
+msgstr "Matriz 4x4, ordenada por columnas (column-major order)."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:63
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
@@ -915,7 +914,7 @@ msgid ""
 "provides optional shader hints to make the compiler understand for what the "
 "uniform is used."
 msgstr ""
-"Cualquier tipo GLSL excepto *void*  puede ser un uniform. Adicionalmente, "
+"Cualquier tipo GLSL excepto *void* puede ser un uniform. Adicionalmente, "
 "Godot provee shader hints opcionales para hacer que el compilador entienda "
 "para qué se usará el uniform."
 

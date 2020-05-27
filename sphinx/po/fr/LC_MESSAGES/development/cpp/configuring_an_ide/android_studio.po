@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,42 +22,50 @@ msgid "Android Studio"
 msgstr "Android Studio"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:6
-#, fuzzy
 msgid ""
 "`Android Studio <https://developer.android.com/studio>`_ is a free "
 "`JetBrains <https://www.jetbrains.com/>`_ IDE for Android development. It "
 "has a feature-rich editor which supports Java and C/C++. It can be used to "
 "work on Godot's core engine as well as the Android platform codebase."
 msgstr ""
-"`Android Studio <https://developer.android.com/studio>`_ est un `JetBrains "
-"<https://www.jetbrains.com/>`_ IDE pour le développement d'Android. Il "
-"dispose d'un éditeur riche en fonctionnalités qui supporte Java et C/C++, et "
-"peut donc être utilisé pour le développement du cœur du moteur Godot et des "
-"bases de code de la plate-forme Android."
+"`Android Studio <https://developer.android.com/studio>`_ est un IDE gratuit "
+"pour le développement d'Android, `JetBrains <https://www.jetbrains.com/>`_. "
+"Il dispose d'un éditeur riche en fonctionnalités qui supporte Java et C/C++. "
+"Il peut être utilisé pour travailler sur le moteur principal de Godot ainsi "
+"que sur la base de code de la plate-forme Android."
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:11
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:12
+msgid "Importing the project"
+msgstr "Importation du projet"
+
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:14
 #, fuzzy
 msgid ""
-"From Android Studio's welcome window, select **Open an existing Android "
+"From the Android Studio's welcome window select **Open an existing Android "
 "Studio project**."
 msgstr ""
-"Dans la fenêtre *Welcome to Android Studio*, sélectionnez *Open an existing "
-"Android Studio project*"
+"Dans la fenêtre d'accueil d'Android Studio, sélectionnez **Open an existing "
+"Android Studio project**."
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:16
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:21
+#, fuzzy
+msgid "Android Studio's welcome window."
+msgstr "Android Studio"
+
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:23
 #, fuzzy
 msgid ""
 "Navigate to ``<Godot root directory>/platform/android/java`` and select the "
-"``settings.gradle`` gradle file."
+"``settings.gradle`` file."
 msgstr ""
-"Naviguez jusqu'au ``<godot root directory>/platform/android/java`` et "
+"Naviguez jusqu'au ``<Godot root directory>/platform/android/java`` et "
 "sélectionnez le fichier gradle ``settings.gradle``."
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:17
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:24
 msgid "Android Studio will import and index the project."
 msgstr "Android Studio va importer et indexer le projet."
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:18
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:25
 msgid ""
 "To build the project, follow the :ref:`compiling instructions <toc-devel-"
 "compiling>`."
@@ -65,11 +73,10 @@ msgstr ""
 "Pour construire le projet, suivez les instructions de la section :ref:"
 "`compilation <toc-devel-compilation>`."
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:20
-#, fuzzy
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:27
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
 msgstr ""
-"Un bref aperçu de ces canaux et d'autres canaux est également disponible sur "
-"le site Web de `Godot <https://godotengine.org/community>`_."
+"Si vous rencontrez des problèmes, demandez de l'aide sur l'un des `canaux "
+"communautaires de Godot <https://godotengine.org/community>`__."

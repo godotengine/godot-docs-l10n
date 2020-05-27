@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,9 +195,8 @@ msgstr ""
 "antihoraire."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
-#, fuzzy
 msgid "Editing variables"
-msgstr "Éditer des instances"
+msgstr "Édition des variables"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:103
 msgid ""
@@ -205,6 +204,9 @@ msgid ""
 "\"setget\" is executed with your input to change the variable. Modify  "
 "``_process()`` to include the rotation speed."
 msgstr ""
+"Ajouter et exporter une vitesse variable au script. La fonction set_speed "
+"après \"setget\" est exécutée avec votre entrée pour modifier la variable. "
+"Modifiez ``_process()`` pour inclure la vitesse de rotation."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:125
 msgid ""
@@ -232,14 +234,18 @@ msgid ""
 "of all the nodes created this way or the nodes won't be visible in the "
 "editor."
 msgstr ""
+"Vous pouvez instancier des scènes emballées normalement et les ajouter à la "
+"scène actuellement ouverte dans l'éditeur. Assurez-vous de définir la racine "
+"de la scène comme étant le propriétaire de tous les nœuds créés de cette "
+"manière, sinon les nœuds ne seront pas visibles dans l'éditeur."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:132
 msgid "If you are using ``tool``:"
-msgstr ""
+msgstr "Si vous utilisez un ``tool`` :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:142
 msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
-msgstr ""
+msgstr "Si vous utilisez :ref:`EditorScript<class_EditorScript>` :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:153
 msgid ""

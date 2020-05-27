@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,9 +53,8 @@ msgstr ""
 "parámetros físicos básicos y luego agregarles aleatoriedad."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:21
-#, fuzzy
 msgid "Particle nodes"
-msgstr "Shaders Particle"
+msgstr "Nodos de partículas"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:23
 msgid ""
@@ -74,7 +73,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:36
-#, fuzzy
 msgid ""
 "The rest of this tutorial is going to use the Particles2D node. First, add a "
 "Particles2D node to your scene. After creating that node you will notice "
@@ -82,11 +80,11 @@ msgid ""
 "your Particles2D node in the inspector. This is because the node needs a "
 "ParticlesMaterial to function."
 msgstr ""
-"Los sistemas de partículas se agregan a la escena a través del nodo :ref:"
-"`Particles2D <class_Particles2D>`. Sin embargo, después de crear ese nodo, "
-"notará que solo se creó un punto blanco y que hay un icono de advertencia al "
-"lado de su nodo Particles2D en el inspector. Esto se debe a que el nodo "
-"necesita un material ParticlesMaterial para funcionar."
+"El resto de este tutorial va a utilizar el nodo Particles2D. Primero, añade "
+"un nodo Particles2D a tu escena. Después de crear este nodo notarás que sólo "
+"se ha creado un punto blanco, y que hay un icono de advertencia junto a tu "
+"nodo Particles2D en el inspector. Esto se debe a que el nodo necesita un "
+"ParticlesMaterial para funcionar."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:42
 msgid "ParticlesMaterial"
@@ -362,7 +360,6 @@ msgid "Spread"
 msgstr "Spread (Propagación)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:200
-#, fuzzy
 msgid ""
 "This parameter is the angle in degrees which will be randomly added in "
 "either direction to the base ``Direction``. A spread of ``180`` will emit in "
@@ -370,8 +367,8 @@ msgid ""
 "parameter must be greater than 0."
 msgstr ""
 "Este parámetro es el ángulo en grados que se añadirá aleatoriamente en "
-"cualquier dirección a la base ``Direction``. Un spread de ``180`` emitirá en "
-"todas las direcciones (+/- 180)."
+"cualquier dirección a la base ``Direction``. Un spread(Dispersión) de "
+"``180`` emitirá en todas las direcciones (+/- 180)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:208
 msgid "Gravity"
@@ -478,7 +475,6 @@ msgid "Angle"
 msgstr "Angle (Ángulo)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:276
-#, fuzzy
 msgid ""
 "Determines the initial angle of the particle (in degrees). This parameter is "
 "mostly useful randomized."

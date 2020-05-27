@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -359,7 +359,6 @@ msgstr ""
 "的梯度。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:203
-#, fuzzy
 msgid ""
 "To make a gradient in GLSL, we use the ``mix`` function. ``mix`` takes two "
 "values to interpolate between and a third argument to choose how much to "
@@ -368,9 +367,9 @@ msgid ""
 "typically reserved for mixing two floats together; ``mix`` can take any "
 "values whether it be floats or vector types."
 msgstr ""
-"要在glsl中创建渐变，我们使用 ``mix`` 函数。  ``mix`` 需要两个值来插值和第三个"
+"要在 GLSL 中创建渐变，我们使用 ``mix`` 函数。``mix`` 需要两个值来插值和第三个"
 "参数来选择在它们之间插入多少，实质上它*将两个值混合在一起。 在其他API中，此函"
-"数通常称为 ``lerp`` 。 虽然 ``lerp`` 通常用于将两个浮点数混合在一起，但 "
+"数通常称为 ``lerp`` 。虽然 ``lerp`` 通常用于将两个浮点数混合在一起，但 "
 "``mix`` 可以取任何值，无论它是浮点数还是向量类型。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:213

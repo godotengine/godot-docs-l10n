@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgid ""
 "files as that only contains the JRE, not the JDK which is required here."
 msgstr ""
 "Si vous installez OpenJDK, choisissez ``1.8``. Ne choisissez pas le fichier "
-"``openjdk-jre``qui ne contient que le JRE et non le JDK, qui est requis ici."
+"``openjdk-jre`` qui ne contient que le JRE et non le JDK, qui est requis ici."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:25
 msgid "Create a debug.keystore"
@@ -170,8 +170,8 @@ msgid ""
 "usr/bin/jarsigner``. The exact path may vary depending on the OpenJDK update "
 "you've installed and your machine's operating system."
 msgstr ""
-"L'exécutable``jarsigner`` (de JDK 6 ou 8) - Sous Windows, OpenJDK s'installe "
-"dans un répertoire comme ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
+"L'exécutable ``jarsigner`` (de JDK 6 ou 8) - Sous Windows, OpenJDK "
+"s'installe dans un répertoire comme ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
 "openjdk-1.8.0.232-2\\bin``. Sous Linux, il s'installe généralement dans un "
 "répertoire comme ``/usr/bin/jarsigner``. Le chemin exact peut varier en "
 "fonction de la mise à jour d'OpenJDK que vous avez installée et du système "
@@ -248,7 +248,6 @@ msgstr ""
 "comprendre ces règles et certaines des capacités des icônes adaptatives."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
-#, fuzzy
 msgid ""
 "The most important adaptive icon design rule is to have your icon critical "
 "elements inside the safe zone: a centered circle with a diameter of 66dp "
@@ -343,14 +342,14 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:112
 msgid "**Release User:** Replace with the key alias."
-msgstr "**Release User : ** Remplacer par l'alias de clé."
+msgstr "**Release User :** Remplacer par l'alias de clé."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:113
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
 "key password currently have to be the same."
 msgstr ""
-"**Release Password : ** Mot de passe de la clé. Notez que le mot de passe du "
+"**Release Password :** Mot de passe de la clé. Notez que le mot de passe du "
 "keystore et le mot de passe de la clé doivent actuellement être les mêmes."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:115

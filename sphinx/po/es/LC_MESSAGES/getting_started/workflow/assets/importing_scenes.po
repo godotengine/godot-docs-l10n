@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,6 @@ msgstr ""
 "posible."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
-#, fuzzy
 msgid "Godot supports the following 3D *scene file formats*:"
 msgstr "Godot soporta los siguientes formatos de *archivo de escena 3D*:"
 
@@ -67,7 +66,6 @@ msgid "ESCN, a Godot specific format that Blender can export with a plugin."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:20
-#, fuzzy
 msgid ""
 "FBX, supported via the Open Asset Import library. However, FBX is "
 "proprietary, so we recommend using other formats listed above, if suitable "
@@ -114,9 +112,8 @@ msgstr ""
 "están actualizados con las últimas versiones del software."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:39
-#, fuzzy
 msgid "Exporting glTF 2.0 files from Blender"
-msgstr "Exportación de archivos DAE desde Blender"
+msgstr "Exportación de archivos glTF 2.0 desde Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:41
 msgid ""
@@ -160,22 +157,21 @@ msgid "Exporting DAE files from Blender"
 msgstr "Exportación de archivos DAE desde Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
-#, fuzzy
 msgid ""
 "Blender has built-in COLLADA support, but it does not work properly for the "
 "needs of game engines and should not be used as is."
 msgstr ""
-"Blender también tiene integrado soporte para COLLADA, pero igualmente está "
-"roto y no debe ser usado."
+"Blender también tiene integrado soporte para COLLADA, pero no funciona "
+"correctamente para las necesidades de motores de juegos y no debe ser usado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
-#, fuzzy
 msgid ""
 "Godot provides a `Blender plugin <https://github.com/godotengine/collada-"
 "exporter>`_ that will correctly export COLLADA scenes for use in Godot."
 msgstr ""
-"Godot proporciona un `Plugin Python <https://github.com/godotengine/collada-"
-"exporter>`__ que hará un trabajo mucho mejor al exportar las escenas."
+"Godot proporciona un `plugin para Blender <https://github.com/godotengine/"
+"collada-exporter>`__ que exportará correctamente archivos COLLADA para ser "
+"usados en Godot."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:67
 msgid "Exporting ESCN files from Blender"
@@ -291,14 +287,12 @@ msgid "Allows setting a specific name to the generated root node."
 msgstr "Permite establecer un nombre específico para el nodo raíz generado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:114
-#, fuzzy
 msgid "Root Scale"
-msgstr "Nombre de la Raíz"
+msgstr "Escala de la raíz"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:116
-#, fuzzy
 msgid "The scale of the root node."
-msgstr "El papel del script"
+msgstr "La escala del nodo raíz."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:119
 msgid "Custom Script"
@@ -560,9 +554,8 @@ msgstr ""
 "directamente con mallas en lugar de escenas."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
-#, fuzzy
 msgid "Light Baking"
-msgstr "Light nodes"
+msgstr "Bakeo de iluminación"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:227
 msgid "Whether or not the mesh is used in baked lightmaps."
@@ -583,11 +576,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:233
-#, fuzzy
 msgid "For more information on light baking see :ref:`doc_baked_lightmaps`."
 msgstr ""
-"Para más información sobre scripts singleton/autoload, ve :ref:"
-"`doc_singletons_autoload`."
+"Para más información sobre bakeo de iluminación, ver :ref:"
+"`doc_baked_lightmaps`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:236
 msgid "External Files"
@@ -644,14 +636,12 @@ msgid "Filter Script"
 msgstr "Filtro de Script"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:263
-#, fuzzy
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
 "which tracks from which animations should be kept."
 msgstr ""
 "Es posible especificar un filtro de script en una sintaxis especial para "
-"decidir qué pistas de qué animaciones se deben mantener. (@TODO necesita "
-"documentación)"
+"decidir qué pistas de qué animaciones se deben mantener."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:266
 msgid ""
@@ -758,7 +748,6 @@ msgid "Scene inheritance"
 msgstr "Herencia de escenas"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:333
-#, fuzzy
 msgid ""
 "In many cases, it may be desired to make modifications to the imported "
 "scene. By default, this is not possible because if the source asset changes "
@@ -767,8 +756,8 @@ msgid ""
 msgstr ""
 "En muchos casos, es posible que prefieras hacer modificaciones en la escena "
 "importada. Por defecto, esto no es posible porque si el recurso de origen "
-"cambia (archivo.dae, .gltf, .obj re-exportado desde la aplicación de "
-"modelado 3D), Godot reimportará toda la escena."
+"cambia (archivo``.dae``, ``.gltf``, ``.obj`` re-exportado desde la "
+"aplicación de modelado 3D), Godot reimportará toda la escena."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:336
 msgid ""

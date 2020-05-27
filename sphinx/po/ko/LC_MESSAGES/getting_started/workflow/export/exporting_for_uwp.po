@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,10 +32,11 @@ msgstr ""
 "만 아니라 어느 플랫폼에서든지 가능합니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
+#, fuzzy
 msgid ""
 "However, if you want to install and run the app, you need to sign it with a "
-"trusted signature. Currently, Godot does not support signing of packages, so "
-"you need to use external tools to do so."
+"trusted signature. Godot supports automatic signing of packages with "
+"external tools."
 msgstr ""
 "하지만, 앱을 설치하고 실행하고 싶다면, 신뢰할 수 있는 서명으로 서명해야합니"
 "다. 현재 Godot는 패키지 서명을 지원하지 않으므로, 외부의 도구를 사용해야합니"
@@ -165,20 +166,44 @@ msgstr ""
 "로 명령 프롬포트를 열고 다음 명령을 실행하세요::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
-msgid "Signing the package"
-msgstr "패키지 서명하기"
+#, fuzzy
+msgid "Setting up automatic signing"
+msgstr "씬 설정하기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
-msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
+msgid ""
+"To setup automatic signing on export you need to go to Editor Settings > "
+"Export > Uwp. From there you need to click on the folder for ``Signtool``, "
+"and navigate to the ``SignTool.exe`` file on your computer."
 msgstr ""
-"마지막으로, Windows SDK나 Visual Studio에서 ``SignTool.exe``\\ 를 사용합니"
-"다::"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:72
+msgid ""
+"After setting that up close the editor settings, go to Project > Export, and "
+"select the UWP preset. Under the ``Signing`` options click on the folder "
+"next to ``Certificate`` and go to the certificate file. Then enter the "
+"pfxPassword in the password field."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:79
+msgid "Your project will now be automatically signed on export."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:81
+msgid ""
+"If you want to sign an exported app manually run ``SignTool.exe`` and use "
+"the following command."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:84
+msgid "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:87
 msgid "Installing the package"
 msgstr "패키지 설치하기"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:73
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:89
 msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
@@ -186,13 +211,13 @@ msgstr ""
 "Windows 10 1주년 업데이트로, 파일 탐색기에서 단순히 ``.appx`` 파일을 더블 클"
 "릭하는 것으로 패키지를 설치할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:76
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:92
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
 msgstr "``Add-AppxPackage`` PowerShell cmdlet을 사용해서 설치할 수도 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:78
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:94
 msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."

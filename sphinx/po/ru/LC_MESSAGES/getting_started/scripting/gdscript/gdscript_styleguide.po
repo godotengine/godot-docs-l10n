@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,7 +134,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:695
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:697
 msgid "**Good**:"
 msgstr "**Хорошо**:"
 
@@ -148,7 +148,7 @@ msgstr "**Хорошо**:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:703
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:705
 msgid "**Bad**:"
 msgstr "**Плохо**:"
 
@@ -565,7 +565,7 @@ msgstr ""
 "Затем, пишите константы, экспортированные переменные, модификаторы public, "
 "private, и инициализированные переменные, в таком порядке."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid ""
 "The GDScript compiler evaluates onready variables right before the "
 "``_ready`` callback. You can use that to cache node dependencies, that is to "
@@ -577,40 +577,40 @@ msgstr ""
 "зависимости узлов, иными словами, получить дочерние узлы в сцене, на которую "
 "опирается ваш класс. Пример выше показывает это."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:619
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
 #, fuzzy
 msgid "Member variables"
 msgstr "Доступ к полям"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:623
 msgid ""
 "Don't declare member variables if they are only used locally in a method, as "
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
 #, fuzzy
 msgid "Local variables"
 msgstr "Локальные Переменные"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:630
 msgid ""
 "Declare local variables as close as possible to their first use. This makes "
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:633
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:635
 #, fuzzy
 msgid "Methods and static functions"
 msgstr "Статические функции"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:635
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
 msgid "After the class's properties come the methods."
 msgstr "После свойств класса идут методы."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:639
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
@@ -620,7 +620,7 @@ msgstr ""
 "при создании объекта в памяти. Затем следует обратный вызов `` _ready () ``, "
 "который Godot вызывает при добавлении узла в дерево сцены."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:643
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
@@ -628,7 +628,7 @@ msgstr ""
 "Эти функции должны следовать первыми, так как они показывают, как "
 "инициализируется объект."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:644
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:646
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
@@ -638,7 +638,7 @@ msgstr ""
 "``_unhandled_input()`` и ``_physics_process``, должны следовать дальше. Они "
 "контролируют основной цикл объекта и взаимодействие с игровым движком."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:648
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:650
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
@@ -646,12 +646,12 @@ msgstr ""
 "Остальные интерфейсы, публичные и приватные методы класса следуют далее, в "
 "указанном порядке."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:685
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:687
 #, fuzzy
 msgid "Static typing"
 msgstr "Статические функции"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:687
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:689
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
@@ -659,12 +659,12 @@ msgstr ""
 "Начиная с версии Godot 3.1, GDScript поддерживает :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
 #, fuzzy
 msgid "Type hints"
 msgstr "Тип"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:694
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
@@ -672,7 +672,7 @@ msgstr ""
 "Поместите двоеточие сразу после имени переменной, без пробела, и позвольте "
 "компилятору GDScript определить тип переменной, когда это возможно."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:711
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:713
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
@@ -680,7 +680,7 @@ msgstr ""
 "Когда вы позволите компилятору вывести подсказку типа, запишите двоеточие и "
 "знаки равенства вместе: ``: = ``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:717
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:719
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr ""

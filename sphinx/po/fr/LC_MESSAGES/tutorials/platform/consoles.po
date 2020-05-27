@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,13 +23,15 @@ msgstr "Support des consoles dans Godot"
 
 #: ../../docs/tutorials/platform/consoles.rst:7
 msgid "Console publishing process"
-msgstr ""
+msgstr "Processus de publication sur console"
 
 #: ../../docs/tutorials/platform/consoles.rst:9
 msgid ""
 "Regardless of the engine used to create the game, the process to publish a "
 "game to a console platform is as follows:"
 msgstr ""
+"Quel que soit le moteur utilisé pour créer le jeu, le processus de "
+"publication d'un jeu sur une plateforme de console est le suivant :"
 
 #: ../../docs/tutorials/platform/consoles.rst:12
 msgid ""
@@ -37,6 +39,9 @@ msgid ""
 "sign NDAs and publishing contracts. This requires you to have a registered "
 "legal entity."
 msgstr ""
+"Enregistrez un compte de développeur sur le site web du fabricant de la "
+"console, puis signez des accords de confidentialité et des contrats "
+"d'édition. Pour cela, vous devez disposer d'une entité juridique enregistrée."
 
 #: ../../docs/tutorials/platform/consoles.rst:15
 msgid ""
@@ -46,16 +51,26 @@ msgid ""
 "generally known to be more accepting of smaller developers, but this is not "
 "guaranteed."
 msgstr ""
+"Accédez à la plateforme de publication en passant par le processus "
+"d'acceptation. Cela peut prendre jusqu'à plusieurs mois. Notez que cette "
+"étape est beaucoup plus facile si un éditeur établi soutient votre jeu. "
+"Nintendo est généralement connu pour accepter davantage les petits "
+"développeurs, mais ce n'est pas garanti."
 
 #: ../../docs/tutorials/platform/consoles.rst:19
 msgid ""
 "Get access to developer tools and order a console specially made for "
 "developers (*devkit*). The cost of those devkits is confidential."
 msgstr ""
+"Accédez aux outils de développement et commandez une console spécialement "
+"conçue pour les développeurs (*devkit*). Le coût de ces devkits est "
+"confidentiel."
 
 #: ../../docs/tutorials/platform/consoles.rst:21
 msgid "Port the engine to the console platform or pay a company to do it."
 msgstr ""
+"Portez le moteur sur la plateforme de la console ou payez une entreprise "
+"pour le faire."
 
 #: ../../docs/tutorials/platform/consoles.rst:22
 msgid ""
@@ -65,25 +80,33 @@ msgid ""
 "info/>`__. Indie developers can generally get a rating for cheaper compared "
 "to more established developers."
 msgstr ""
+"Pour être publié, votre jeu doit être classé dans les régions où vous "
+"souhaitez le vendre. Par exemple, en Amérique du Nord, c'est l'`ESRB "
+"<https://www.esrb.org/>`__ qui gère le classement des jeux. En Europe, c'est "
+"le `PEGI <https://pegi.info/>`__ qui s'en charge. Les développeurs "
+"indépendants peuvent généralement obtenir une classification moins chère par "
+"rapport aux développeurs plus établis."
 
 #: ../../docs/tutorials/platform/consoles.rst:28
 msgid ""
 "Due to the complexity of the process, the budget to publish a game by "
 "yourself on a single console often exceeds $1,000 (this is a rough figure)."
 msgstr ""
+"En raison de la complexité du processus, le budget nécessaire pour publier "
+"un jeu par vous-même sur une seule console dépasse souvent 1 000 dollars (ce "
+"chiffre est approximatif)."
 
 #: ../../docs/tutorials/platform/consoles.rst:32
 msgid "Official support"
 msgstr "Support officiel"
 
 #: ../../docs/tutorials/platform/consoles.rst:34
-#, fuzzy
 msgid ""
 "Godot currently does not officially support consoles. The reasons for this "
 "are:"
 msgstr ""
-"Actuellement, Godot ne supporte pas officiellement les consoles (à "
-"l'exception de la Xbox One en utilisant UWP)."
+"Actuellement, Godot ne supporte pas officiellement les consoles. Les raisons "
+"en sont les suivantes :"
 
 #: ../../docs/tutorials/platform/consoles.rst:36
 msgid ""
@@ -130,6 +153,12 @@ msgid ""
 "they are a licensed console developer. Doing so would violate the console "
 "manufacturer's NDA."
 msgstr ""
+"En pratique, le processus est assez similaire à Unity et Unreal Engine, sauf "
+"que vous devez contacter un développeur tiers pour gérer le processus de "
+"portage. En d'autres termes, aucun moteur n'est légalement autorisé à "
+"distribuer des modèles d'exportation de console sans exiger de l'utilisateur "
+"qu'il prouve qu'il est un développeur de console sous licence. Cela "
+"violerait le NDA du fabricant de la console."
 
 #: ../../docs/tutorials/platform/consoles.rst:57
 msgid "Third-party support"

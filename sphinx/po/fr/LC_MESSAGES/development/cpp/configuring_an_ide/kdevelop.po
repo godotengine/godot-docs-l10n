@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,79 +29,122 @@ msgstr ""
 "`KDevelop <https://www.kdevelop.org>`_ est un IDE libre et open source pour "
 "toutes les plateformes de bureau."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:8
-#, fuzzy
-msgid "Start by opening KDevelop and choosing **Open Project**."
-msgstr "Commencez par ouvrir Kdevelop et choisir \"open project\"."
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:9
+msgid "Importing the project"
+msgstr "Importation du projet"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:12
-msgid "Choose the directory where you cloned Godot."
-msgstr "Choisissez le dossier où vous avez cloné Godot."
-
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:14
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:11
 #, fuzzy
+msgid "From the KDevelop's main screen select **Open Project**."
+msgstr "Commencez par ouvrir Kdevelop et choisir **Open Project**."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:17
+msgid "KDevelop's main screen."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:19
+msgid "Navigate to the Godot root folder and select it."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:20
 msgid ""
 "On the next screen, choose **Custom Build System** for the **Project "
 "Manager**."
 msgstr ""
-"Sur l'écran suivant, choisissez \"Custom Build System\" pour le *Project "
-"manager*."
+"Sur l'écran suivant, choisissez **Custom Build System** pour le **Project "
+"Manager**."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:18
-msgid "Now that the project has been imported, open the project configuration."
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:26
+msgid ""
+"After the project has been imported, open the project configuration by right-"
+"clicking on it in the **Projects** panel and selecting **Open Configuration.."
+"** option."
 msgstr ""
-"Maintenant que le projet a été importé, ouvrez la configuration du projet."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:22
-msgid "Add the following includes/imports:"
-msgstr "Ajouter les includes/imports suivants :"
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:33
+msgid ""
+"Under **Language Support** open the **Includes/Imports** tab and add the "
+"following paths:"
+msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:35
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
 msgid "Apply the changes."
 msgstr "Appliquez les changements."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:37
-#, fuzzy
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:50
 msgid ""
-"Switch to the **Custom Build System** tab. Add a build configuration and "
-"keep the build directory blank. Enable build tools and add ``scons`` as the "
-"executable then add ``platform=linuxbsd target=debug`` (``platform=osx`` if "
-"you're on macOS) as the arguments."
+"Under **Custom Build System** add a new build configuration with the "
+"following settings:"
 msgstr ""
-"Passez à l'onglet \"Custom Build System\". Ajoutez une configuration de "
-"compilation et laissez le répertoire de compilation vide. Activez les outils "
-"de compilation et ajoutez ``scons`` comme exécutable puis ajoutez "
-"``platform=x11 target=debug`` (``platform=osx`` si vous êtes sous MacOS) "
-"comme argument."
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:44
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 #, fuzzy
-msgid ""
-"Next, we need to tell KDevelop where to find the binary. From the **Run** "
-"menu, choose **Configure Launches**."
-msgstr ""
-"Ensuite, nous devons dire à KDevelop où trouver le binaire. Dans le menu "
-"\"Run\", choisissez \"Configure Launches\"."
+msgid "Build Directory"
+msgstr "Construisez-le :"
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
-#, fuzzy
-msgid ""
-"Click **Add** if no launcher exists. Then add the path to your executable in "
-"the executable section. Your executable should be located in the ``bin/`` "
-"subdirectory and should be named something like ``godot.linuxbsd.tools.64`` "
-"(the name could be different depending on your platform and build options)."
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
+msgid "*blank*"
 msgstr ""
-"Cliquez sur \"Add\" si aucun lanceur n'existe. Ajoutez ensuite le chemin "
-"d'accès à votre exécutable dans la section des exécutables. Votre exécutable "
-"doit être situé dans le sous-répertoire ``bin/`` et doit être nommé quelque "
-"chose comme ``godot.x11.tools.64`` (le nom peut être différent selon votre "
-"plate-forme et selon vos options de compilation)."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
+msgid "Enable"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
+msgid "**True**"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
 #, fuzzy
+msgid "Executable"
+msgstr "Le nom de l'exécutable."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
+msgid "**scons**"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
+msgid "Arguments"
+msgstr "Arguments"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
+#, fuzzy
+msgid ""
+"See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+"Lisez d'abord :doc:`ui_introduction_to_the_ui_system` pour apprendre comment "
+"le système d'interface utilisateur (UI) de Godot marche."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:66
+#, fuzzy
+msgid "Apply the changes and close the configuration window."
+msgstr "Maintenant, enregistrez et fermez la fenêtre d'exportation."
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:69
+#, fuzzy
+msgid "Debugging the project"
+msgstr "Préparation du projet"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:71
+msgid "Select **Run > Configure Launches...** from the top menu."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:77
+msgid "Click **Add** to create a new launch configuration."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:78
+msgid ""
+"Select **Executable** option and specify the path to your executable located "
+"in the ``<Godot root directory>/bin`` folder. The name depends on your build "
+"configuration, e.g. ``godot.x11.tools.64`` for 64-bit X11 platform with "
+"``tools`` enabled."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
 msgstr ""
-"Un bref aperçu de ces canaux et d'autres canaux est également disponible sur "
-"le site Web de `Godot <https://godotengine.org/community>`_."
+"Si vous rencontrez des problèmes, demandez de l'aide sur l'un des `canaux "
+"communautaires de Godot <https://godotengine.org/community>`__."

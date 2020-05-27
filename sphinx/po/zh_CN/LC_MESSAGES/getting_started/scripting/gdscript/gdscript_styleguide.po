@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgstr "每个缩进级别必须大于包含它的代码块。"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:695
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:697
 msgid "**Good**:"
 msgstr "**良好的**："
 
@@ -126,7 +126,7 @@ msgstr "**良好的**："
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:703
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:705
 msgid "**Bad**:"
 msgstr "**糟糕的**："
 
@@ -477,7 +477,7 @@ msgid ""
 "variables, in that order."
 msgstr "然后，按该顺序写入常量、导出变量、公共变量、私有变量和 onready 变量。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid ""
 "The GDScript compiler evaluates onready variables right before the "
 "``_ready`` callback. You can use that to cache node dependencies, that is to "
@@ -488,39 +488,39 @@ msgstr ""
 "点依赖项，也就是说，在您的类所依赖的场景中获取子节点。这就是上面的例子所展示"
 "的。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:619
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
 #, fuzzy
 msgid "Member variables"
 msgstr "成员访问"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:623
 msgid ""
 "Don't declare member variables if they are only used locally in a method, as "
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
 #, fuzzy
 msgid "Local variables"
 msgstr "局部变量"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:630
 msgid ""
 "Declare local variables as close as possible to their first use. This makes "
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:633
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:635
 msgid "Methods and static functions"
 msgstr "方法和静态函数"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:635
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
 msgid "After the class's properties come the methods."
 msgstr "在类的属性之后是方法。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:639
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
@@ -529,13 +529,13 @@ msgstr ""
 "从 ``_init()`` 回调方法开始，引擎将在创建内存对象时调用该方法。接下来是 "
 "``_ready()`` 回调，当Godot向场景树添加一个节点时调用它。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:643
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
 msgstr "这些函数应首先出现，因为它们显示如何初始化对象。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:644
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:646
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
@@ -544,17 +544,17 @@ msgstr ""
 "其他内置的虚拟回调，如 ``_unhandling_input()`` 和 ``_physics_process``，应该"
 "放在后面。它们控制对象的主循环和与游戏引擎的交互。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:648
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:650
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
 msgstr "类的其余接口，公共和私有方法，都是按照这个顺序出现的。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:685
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:687
 msgid "Static typing"
 msgstr "静态类型"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:687
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:689
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
@@ -562,24 +562,24 @@ msgstr ""
 "从Godot 3.1开始，GDScript支持 :ref:`可选的静态类型 "
 "<doc_gdscript_static_typing>`。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
 msgid "Type hints"
 msgstr "类型提示"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:694
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
 "将冒号放在变量名称之后，不带空格，并在尽可能让GDScript编译器推断变量的类型。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:711
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:713
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr "当让编译器推断类型提示时，将冒号和等号一起写： ``:=``。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:717
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:719
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr "定义函数时，在返回类型箭头的两侧添加一个空格。"

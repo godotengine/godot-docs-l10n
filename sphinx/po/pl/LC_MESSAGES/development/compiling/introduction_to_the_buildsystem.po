@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -256,84 +256,121 @@ msgid ""
 "architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:186
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
+#, fuzzy
+msgid "Custom modules"
+msgstr "Własne moduły w C++"
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
+msgid ""
+"It's possible to compile modules residing outside of Godot's directory tree, "
+"along with the built-in modules."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:193
+msgid ""
+"A ``custom_modules`` build option can be passed to the command line before "
+"compiling. The option represents a comma-separated list of directory paths "
+"containing a collection of independent C++ modules that can be seen as C++ "
+"packages, just like the built-in ``modules/`` directory."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
+msgid ""
+"For instance, it's possible to provide both relative, absolute, and user "
+"directory paths containing such modules:"
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:207
+msgid ""
+"If there's any custom module with the exact directory name as a built-in "
+"module, the engine will only compile the custom one. This logic can be used "
+"to override built-in module implementations."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:213
+#, fuzzy
+msgid ":ref:`doc_custom_modules_in_c++`"
+msgstr ":ref:`Niestandardowy post-processing `"
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
 msgid "Other build options"
 msgstr "Inne opcje budowania"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Godot should be built (compiler, debug options, etc.) as well as the "
 "features to include/disable."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:192
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:222
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
 #, fuzzy
 msgid "Overriding the build options"
 msgstr "Inne opcje budowania"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:231
 #, fuzzy
 msgid "Using a file"
 msgstr "Używanie skryptu"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:203
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:233
 msgid ""
 "The default ``custom.py`` file can be created at the root of the Godot "
 "Engine source to initialize any SCons build options passed via the command "
 "line:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:215
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
 msgid ""
 "You can also disable some of the builtin modules before compiling, saving "
 "some time it takes to build the engine, see :ref:`doc_optimizing_for_size` "
 "page for more details."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:248
 msgid ""
 "Another custom file can be specified explicitly with the ``profile`` command "
 "line option, both overriding the default build configuration:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:225
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:255
 msgid ""
 "Build options set from the file can be overridden by the command line "
 "options."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:258
 msgid "It's also possible to override the options conditionally:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:243
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:273
 msgid "Using the SCONSFLAGS"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:275
 msgid ""
 "``SCONSFLAGS`` is an environment variable which is used by the SCons to set "
 "the options automatically without having to supply them via the command line."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:248
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:278
 msgid ""
 "For instance, you may want to build Godot in parallel with the "
 "aforementioned ``-j`` option for all the future builds:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:265
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:295
 msgid "Export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:267
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:297
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -341,20 +378,20 @@ msgid ""
 "modules, or simply don't trust your own shadow)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:272
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:302
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most files are optimized binaries or packages for each platform:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:295
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:325
 msgid ""
 "To create those yourself, follow the instructions detailed for each platform "
 "in this same tutorial section. Each platform explains how to create its own "
 "template."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:299
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:329
 msgid ""
 "The ``version.txt`` file should contain the corresponding Godot version "
 "identifier. This file is used to install export templates in a version-"
@@ -366,7 +403,7 @@ msgid ""
 "com/godotengine/godot/blob/master/version.py>`__."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:307
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:337
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross-compilation, since you can cross-compile "

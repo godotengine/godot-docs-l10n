@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,6 +157,10 @@ msgid ""
 "- what the object *is*. Click the \"Other Node\" button and add an :ref:"
 "`Area2D <class_Area2D>` node to the scene."
 msgstr ""
+"Para iniciarmos, precisamos escolher o nó raiz para o objeto jogador. Como "
+"regra geral, o nó raiz da cena deve refletir à funcionalidade desejado do "
+"objeto - o que o objeto *é*. Clique no botão \"Outros Nós\" e adicione o nó :"
+"ref:`Area2D <class_Area2D>` à cena."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:78
 msgid ""
@@ -304,7 +308,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:150
 msgid "Make sure to save the scene again after these changes."
-msgstr ""
+msgstr "Certifique-se de salvar a cena novamente após as alterações."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:153
 msgid "Moving the player"
@@ -544,7 +548,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:355
 msgid "If you get an error in the \"Debugger\" panel that says"
-msgstr ""
+msgstr "Se encontrar um erro no painel \"Depurador\" que diz"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:357
 msgid ""
@@ -605,6 +609,8 @@ msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions."
 msgstr ""
+"Execute a cena novamente e verifique que as animações estão corretas em cada "
+"uma das direções"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:428
 msgid ""
@@ -613,6 +619,10 @@ msgid ""
 "code. If you named the animation ``\"Walk\"``, you must also use a capital "
 "\"W\" in the code."
 msgstr ""
+"Um erro comum aqui é digitar os nomes das animações de forma errada. O nome "
+"das animações no painel SpriteFrames deve ser igual ao que foi digitado no "
+"código. Se você nomeou a animação ``\"Walk\"`` você também deve usar a letra "
+"maiúscula \"W\" no código."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:433
 #, fuzzy
@@ -682,6 +692,8 @@ msgid ""
 "Note the green icon indicating that a signal is connected to this function. "
 "Add this code to the function:"
 msgstr ""
+"Note que o icone verde indica que um sinal está conectado a esta função. "
+"Adicione esse código à função:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:502
 msgid ""
@@ -809,7 +821,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:567
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
-msgstr ""
+msgstr "Ajuste o \"Speed (FPS)\" para ``3`` em todas as animações."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:571
 #, fuzzy
@@ -821,6 +833,8 @@ msgid ""
 "We'll select one of these animations randomly so that the mobs will have "
 "some variety."
 msgstr ""
+"Vamos selecionar uma das animações aleatoriamente para que os inimigos "
+"tenham alguma variedade."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:575
 msgid ""
@@ -884,7 +898,7 @@ msgstr ""
 msgid ""
 "First, we get the list of animation names from the AnimatedSprite's "
 "``frames`` property. This returns an Array containing all three animation "
-"names: ``[\"walk\", \"swim\", \"fly]``."
+"names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:639
@@ -1089,7 +1103,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:773
 msgid "You can assign this property's value in two ways:"
-msgstr ""
+msgstr "Você pode atribuir o valor dessa propriedade de duas formas:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:775
 #, fuzzy
@@ -1179,6 +1193,8 @@ msgid ""
 "Let's test the scene to make sure everything is working. Add this to "
 "``_ready()``:"
 msgstr ""
+"Vamos testar a cena para garantir que tudo esta funcionando. Adicione isso "
+"ao ``_ready()``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:924
 msgid ""
@@ -1192,12 +1208,16 @@ msgid ""
 "You should be able to move the player around, see mobs spawning, and see the "
 "player disappear when hit by a mob."
 msgstr ""
+"Você deve ser capaz de mover o jogador, ver os inimigos nascendo, e ver o "
+"jogador desaparecer quando atingido por um inimigo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:931
 msgid ""
 "When you're sure everything is working, remove the call to ``new_game()`` "
 "from ``_ready()``."
 msgstr ""
+"Quando tiver certeza que tudo esta funcionando, remova a chamada de "
+"``new_game()`` em ``_ready()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:935
 msgid "HUD"
@@ -1564,6 +1584,8 @@ msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``game_over()`` function in ``Main``:"
 msgstr ""
+"Agora todos os inimigos estarão no grupo \"inimigos\". Podemos então "
+"adicionar a seguinte linha à função ``game_over()`` em ``Main``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1236
 msgid ""

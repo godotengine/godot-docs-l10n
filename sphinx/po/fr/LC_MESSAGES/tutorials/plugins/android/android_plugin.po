@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,12 +122,21 @@ msgid ""
 "not version the Android plugin systems, the new one is now labelled ``v1`` "
 "and is the starting point for the modern Godot Android ecosystem."
 msgstr ""
+"Bien qu'introduit dans Godot 3.2.0, le système de plugin Android a bénéficié "
+"d'une mise à jour importante de l'architecture à partir de Godot 3.2.2. Le "
+"nouveau système de plugin est rétrocompatible avec le précédent, mais les "
+"deux systèmes restent fonctionnels dans les futures versions de la branche "
+"3.2.x. Comme précédemment nous ne versionnions pas les systèmes de plugin "
+"Android, le nouveau système est maintenant appelé ``v1`` et constitue le "
+"point de départ de l'écosystème moderne Android de Godot."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:37
 msgid ""
 "**Note:** In Godot 4.0, the previous system will be fully deprecated and "
 "removed."
 msgstr ""
+"**Note :** Dans Godot 4.0, le système précédent sera entièrement déprécié et "
+"supprimé."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:39
 msgid ""
@@ -274,70 +283,76 @@ msgstr ""
 "utilisateurs."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:86
-#, fuzzy
 msgid ""
 "It's recommended that the ``aar`` filename matches the following pattern: "
 "``[PluginName]*.aar`` where ``PluginName`` is the name of the plugin in "
 "PascalCase (e.g.: ``GodotPayment.release.aar``)."
 msgstr ""
-"**Note :** Le nom de fichier ``aar`` du plugin doit correspondre au modèle "
+"Il est recommandé que le nom de fichier ``aar`` corresponde au modèle "
 "suivant : ``[PluginName]*.aar`` où ``PluginName`` est le nom du plugin en "
-"camel case (par exemple : ``GodotPayment.release.aar``)."
+"PascalCase (par exemple : ``GodotPayment.release.aar``)."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:88
 msgid ""
 "Create a Godot Android Plugin configuration file to help the system detect "
 "and load your plugin:"
 msgstr ""
+"Créez un fichier de configuration de plugin Godot Android pour aider le "
+"système à détecter et à charger votre plugin :"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:90
 msgid ""
 "The configuration file extension must be ``gdap`` (e.g.: ``MyPlugin.gdap``)."
 msgstr ""
+"L'extension du fichier de configuration doit être ``gdap`` (par exemple : "
+"``MyPlugin.gdap``)."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:92
-#, fuzzy
 msgid "The configuration file format is as follow::"
-msgstr "Les fichiers CSV doivent être formatés comme suit :"
+msgstr "Le format du fichier de configuration est le suivant :"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:106
 msgid "The ``config`` section and fields are required and defined as follow:"
 msgstr ""
+"La section ``config`` et les champs sont obligatoires et définis comme suit :"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:108
-#, fuzzy
 msgid "**name**: name of the plugin"
-msgstr "Un nom (le nom de l'option)"
+msgstr "**name** : nom du plugin"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:110
 msgid ""
 "**binary_type**: can be either ``local`` or ``remote``. The type affects the "
 "**binary** field"
 msgstr ""
+"**binary_type** : peut être soit ``local`` ou ``remote``. Le type affecte le "
+"champ **binary**"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:112
-#, fuzzy
 msgid "**binary**:"
-msgstr "**Category** :"
+msgstr "**binary** :"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:114
 msgid ""
 "if **binary_type** is ``local``, then this should be the filepath of the "
 "plugin ``aar`` file."
 msgstr ""
+"si **binary_type** est ``local``, alors cela devrait être le chemin d'accès "
+"du fichier ``aar`` du plugin."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:116
-#, fuzzy
 msgid ""
 "The filepath can be relative (e.g.: ``MyPlugin.aar``) in which case it's "
 "relative to the ``res://android/plugins`` directory."
 msgstr ""
-"Une fois que vous avez accès au fichier ``aar``du plugin, déplacez-le dans "
-"le répertoire ``res://android/plugins`` du projet Godot."
+"Le chemin d'accès au fichier peut être relatif (par exemple : ``MyPlugin."
+"aar``), auquel cas il est relatif au répertoire ``res://android/plugins`."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:118
 msgid "The filepath can be absolute: ``res://some_path/MyPlugin.aar``."
 msgstr ""
+"Le chemin d'accès au fichier peut être absolu : ``res://some_path/MyPlugin."
+"aar``."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:120
 msgid ""
@@ -346,11 +361,17 @@ msgid ""
 "dependencies#dependency-types>`_ (e.g.: ``org.godot.example:my-"
 "plugin:0.0.0``)."
 msgstr ""
+"si **binary_type** est ``remote``, alors cela devrait être une déclaration "
+"pour un `remote gradle binary <https://developer.android.com/studio/build/"
+"dependencies#dependency-types>`_ (par exemple : ``org.godot.example:my-"
+"plugin:0.0.0``)."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:122
 msgid ""
 "The ``dependencies`` section and fields are optional and defined as follow:"
 msgstr ""
+"La section et les champs ``dependencies`` sont facultatifs et définis comme "
+"suit :"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:124
 msgid ""
@@ -359,18 +380,26 @@ msgid ""
 "``binary_type`` is ``local``), the local binaries' filepaths can be relative "
 "or absolute."
 msgstr ""
+"**local** : contient une liste de chemins d'accès aux fichiers binaires "
+"locaux ``.aar`` dont dépend le plugin. Comme pour le champ ``binary`` (quand "
+"le ``binary_type`` est ``local``), les chemins des fichiers binaires locaux "
+"peuvent être relatifs ou absolus."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:126
 msgid ""
 "**remote**: contains a list of remote binary gradle dependencies for the "
 "plugin."
 msgstr ""
+"**remote** : contient une liste de dépendances de remote binary gradle pour "
+"le plugin."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:128
 msgid ""
 "**custom_maven_repos**: contains a list of URLs specifying the custom maven "
 "repositories required for the plugin's dependencies"
 msgstr ""
+"**custom_maven_repos** : contient une liste d'URLs spécifiant les dépôts "
+"maven personnalisés nécessaires aux dépendances du plugin"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:131
 msgid "Loading and using a Android plugin"
@@ -382,6 +411,10 @@ msgid ""
 "its local binary (e.g.: ``MyPlugin.aar``) and dependencies to the Godot "
 "project's ``res://android/plugins`` directory."
 msgstr ""
+"Déplacez le fichier de configuration du plugin (par exemple : ``MyPlugin."
+"gdap``) et, le cas échéant, son binaire local (par exemple : ``MyPlugin."
+"aar``) et ses dépendances dans le répertoire ``res://android/plugins`` du "
+"projet Godot."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:135
 msgid ""
@@ -389,6 +422,10 @@ msgid ""
 "android/plugins`` directory and show a list of detected and toggleable "
 "plugins in the Android export presets window under the **Plugins** section."
 msgstr ""
+"L'éditeur Godot analysera automatiquement tous les fichiers ``.gdap`` dans "
+"le répertoire ``res://android/plugins`` et affichera une liste des plugins "
+"détectés et activables dans la fenêtre des presets d'exportation Android "
+"sous la section **Plugins**."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:139
 msgid "From your script:"
@@ -453,31 +490,29 @@ msgid "Reference implementations"
 msgstr "Implémentations de référence"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:164
-#, fuzzy
 msgid ""
 "`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
 "godot_oculus_mobile>`_"
 msgstr ""
-"`Godot Oculus Mobile plugin <https://github.com/m4gr3d/godot_oculus_mobile/"
-"tree/2.0>`_"
+"`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
+"godot_oculus_mobile>`_"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:166
-#, fuzzy
 msgid ""
 "`Bundled gdnative resources <https://github.com/GodotVR/godot_oculus_mobile/"
 "tree/master/plugin/src/main/assets/addons/godot_ovrmobile>`_"
 msgstr ""
-"`Ressources gdnatives groupées <https://github.com/m4gr3d/"
-"godot_oculus_mobile/tree/2.0/plugin/src/main/assets/addons/godot_ovrmobile>`_"
+"`Ressources gdnatives groupées <https://github.com/GodotVR/"
+"godot_oculus_mobile/tree/master/plugin/src/main/assets/addons/"
+"godot_ovrmobile>`_"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:168
-#, fuzzy
 msgid ""
 "`Godot Payment plugin <https://github.com/godotengine/godot/tree/master/"
 "platform/android/java/plugins/godotpayment>`_"
 msgstr ""
-"`Godot Payment plugin <https://github.com/m4gr3d/godot/tree/"
-"rearch_godot_android_plugin/platform/android/java/plugins/godotpayment>`_"
+"`Godot Payment plugin <https://github.com/godotengine/godot/tree/master/"
+"platform/android/java/plugins/godotpayment>`_"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:172
 msgid "Troubleshooting"

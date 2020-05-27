@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,6 +179,8 @@ msgid ""
 "Global time, in seconds. It's subject to the rollover setting (which is "
 "3,600 -1 hour- by default)."
 msgstr ""
+"Temps global, en secondes. Il est soumis au paramètre de roulement (qui est "
+"de 3 600 -1 heure par défaut)."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:59
 msgid "Vertex built-ins"
@@ -347,9 +349,8 @@ msgstr "Couleur du sommet primitif."
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:132
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:179
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
-#, fuzzy
 msgid "in vec4 **MODULATE**"
-msgstr "in vec4 **COLOR**"
+msgstr "in vec4 **MODULATE**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:132
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:179
@@ -358,6 +359,8 @@ msgid ""
 "Final modulate color. If used, **COLOR** will not be multiplied by modulate "
 "automatically after the fragment function."
 msgstr ""
+"Modulation finale de la couleur. Si elle est utilisée, **COLOR** ne sera pas "
+"multipliée par la modulation automatiquement après la fonction de fragment."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:136
 msgid "inout float **POINT_SIZE**"
@@ -567,14 +570,14 @@ msgid "in vec4 **COLOR**"
 msgstr "in vec4 **COLOR**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
-#, fuzzy
 msgid ""
 "Input Color. This is the output of the fragment function (with final "
 "modulation applied, if **MODULATE** is not used in any function of the "
 "shader)."
 msgstr ""
-"Couleur d'entrée. Il s'agit de la sortie de la fonction fragment avec la "
-"modulation finale appliquée."
+"Input Color. C'est la sortie de la fonction de fragment (avec la modulation "
+"finale appliquée, si **MODULATE** n'est utilisé dans aucune fonction du "
+"shader)."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
 msgid "sampler2D **TEXTURE**"

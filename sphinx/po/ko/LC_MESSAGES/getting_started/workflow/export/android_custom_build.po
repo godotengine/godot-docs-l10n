@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,20 +123,20 @@ msgstr "Java 설치하기"
 msgid ""
 "The Android SDK doesn't come with Java, so it needs to be installed "
 "manually. You need to install a Java SDK (**not** just the runtime or JRE). "
-"`OpenJDK 8 <https://adoptopenjdk.net/index.html>`__ is recommended. Oracle "
-"JDK 8 should also work. Later versions may not work for Android development."
+"`OpenJDK 8 <https://adoptopenjdk.net/index.html>`__ is required, newer "
+"versions won't work."
 msgstr ""
 "Android SDK에는 Java가 포함되지 않습니다, 따라서 수동으로 설치해야 합니다. "
 "Java SDK를 설치합니다 (runtime이나 JRE가 **아닙니다**). OpenSDK 8을 추천합니"
 "다, 다른 방법으로 Oracle의 버전 8 용 Java SDK도 가능합니다. 이후 버전은 "
 "Android 개발에 작동하지 않을 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:55
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:54
 #, fuzzy
 msgid "Download the command-line tools"
 msgstr "명령줄 도구 다운로드하기"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:57
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:56
 #, fuzzy
 msgid ""
 "Go to the `Android Studio download page <https://developer.android.com/"
@@ -144,13 +144,13 @@ msgid ""
 "so don't download it."
 msgstr "Android SDK: https://developer.android.com/studio/"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:62
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:61
 msgid ""
 "If you do want Android Studio, read further down for instructions for doing "
 "the same using Android Studio."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:65
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:64
 #, fuzzy
 msgid ""
 "Look on that page for the *Command line tools only* section. Currently, they "
@@ -159,7 +159,7 @@ msgstr ""
 "해당 페이지에서 *Command Line Tools*\\ 를 찾아봅니다. 현재 *Download "
 "Options* 아래에 있습니다. 아래로 화면을 스크롤합니다."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:68
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:67
 #, fuzzy
 msgid ""
 "Download the ZIP file for your platform, there will be a single ``tools`` "
@@ -168,13 +168,13 @@ msgstr ""
 "플랫폼에 맞는 zip 파일을 다운로드합니다, 거기에는 하나의 *tools* 폴더가 있습"
 "니다:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:73
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:72
 msgid ""
 "This may appear a little confusing, but be sure to follow these instructions "
 "carefully:"
 msgstr "약간 혼란스러울 수 있습니다, 그러므로 다음 설명을 주의깊게 따르세요:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:76
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:75
 #, fuzzy
 msgid ""
 "Create a new folder anywhere you want named ``android-sdk`` (it **must** be "
@@ -183,14 +183,14 @@ msgstr ""
 "아무 위치에서 새 폴더를 만들고 *android-sdk*\\ 로 이름을 짓습니다 (**빈 디렉"
 "토리이어야 합니다). Windows에서는,"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:85
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:84
 msgid ""
 "If you already have an android-sdk folder, normally located in ``"
 "%LOCALAPPDATA%\\Android\\Sdk``, then use this folder instead of creating an "
 "empty ``android-sdk`` folder."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:88
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:87
 msgid ""
 "Unzip the Android SDK ZIP file into the ``android-sdk`` folder. This folder "
 "should now contain the unzipped folder called ``tools``. Rename ``tools`` to "
@@ -199,18 +199,18 @@ msgid ""
 "this :"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:100
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:99
 msgid ""
 "We need to setup the directory structure this way for the sdkmanager (inside "
 "the bin folder) to work."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:103
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:102
 #, fuzzy
 msgid "Accepting the licenses"
 msgstr "라이선스 수락하기"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:105
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:104
 #, fuzzy
 msgid ""
 "To be able to use the Android SDK tools, Google requires you to accept its "
@@ -219,7 +219,7 @@ msgstr ""
 "여기에서 하는 모든 것이 좋거나 나쁠 수 있습니다, 하지만 무엇을 하든 지 구글"
 "은 라이선스 수락을 요청합니다."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:108
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:107
 #, fuzzy
 msgid ""
 "To do this, the ``sdkmanager`` must be executed from the command line with a "
@@ -232,16 +232,16 @@ msgstr ""
 "이며, Unix 사용자는 명령줄 내비게이션이 작동하는 방식을 알고 있다고 가정합니"
 "다):"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:115
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:114
 msgid "Then open a command line window:"
 msgstr "그 후 명령줄 창을 엽니다:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:119
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:118
 #, fuzzy
 msgid "In there, run ``sdkmanager --licenses``:"
 msgstr "여기서 \"--licenses\" 인수가 있는 sdkmanager를 수동으로 실행합니다:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:123
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:122
 #, fuzzy
 msgid ""
 "This will ask you to accept several licenses, just write ``y`` and press :"
@@ -250,14 +250,14 @@ msgstr ""
 "이것으로 몇 가지 라이선스를 수락하는 요청들이 들어옵니다, 모든 요청이 끝날 때"
 "까지 *\"y\"*\\ 를 치고 *엔터*\\ 를 누릅니다."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:126
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:125
 #, fuzzy
 msgid ""
 "Afterwards, install the platform tools (this is required to install ``adb``):"
 msgstr ""
 "그런 다음, 플랫폼 도구를 실행합니다 (*adb*\\ 를 설치하는 데 필요합니다):"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:130
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:129
 msgid ""
 "If you get an error saying ``Warning: Could not create settings``, try ``./"
 "sdkmanager --sdk_root=../../ --licenses`` or ``./sdkmanager --"
@@ -265,13 +265,13 @@ msgid ""
 "bin/`` folder because the path for ``--sdk_root`` is relative."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:133
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:217
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:132
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:216
 #, fuzzy
 msgid "Generating the keystore"
 msgstr "Keystore 생성하기"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:135
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:134
 #, fuzzy
 msgid ""
 "Once the *platform tools* are installed, the last step is to generate a "
@@ -280,12 +280,12 @@ msgstr ""
 "*플랫폼 도구*\\ 를 설치하면, 마지막 단계는 디버그 Keystore를 생성하는 것입니"
 "다 (빌드에 필요합니다). 다음 명령을 쳐서 두 폴더 위로 이동합니다:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:142
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:141
 #, fuzzy
 msgid "(or open a new shell in the ``android-sdk`` folder)."
 msgstr "(혹은 *android-sdk* 폴더에서 새 셸을 엽니다)."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:144
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:143
 #, fuzzy
 msgid ""
 "And you need to input the following line (on Linux and macOS, this should "
@@ -294,7 +294,7 @@ msgstr ""
 "그리고 다음 문장을 입력해야 합니다 (Unix에서 즉시 실행될 것이며, Windows에서"
 "는 아래 추가 설명이 있습니다):"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:151
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:150
 #, fuzzy
 msgid ""
 "On Windows, the full path to Java should be provided. You need to add ``&`` "
@@ -305,7 +305,7 @@ msgstr ""
 "을 사용한다면 문장의 시작에 &를 추가해야 합니다, 일반적인 콘솔에는 필요하지 "
 "않습니다)."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:155
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:154
 #, fuzzy
 msgid ""
 "To make it clearer, here is an capture of a line that works on PowerShell "
@@ -316,21 +316,21 @@ msgstr ""
 "하고 keytool.exe에 대한 전체 Java 경로를 추가함). 다시 말하지만, Java가 설치"
 "되어 있어야 합니다:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:161
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:172
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:244
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:255
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:160
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:171
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:243
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:254
 #, fuzzy
 msgid "(right-click and open the image in a new tab if this appears too small)"
 msgstr "(이미지가 너무 작으면, 우클릭하고 새 탭에서 이미지를 여세요)"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:165
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:248
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:164
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:247
 msgid "Setting up Godot"
 msgstr "Godot에서 설정하기"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:167
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:250
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:166
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:249
 #, fuzzy
 msgid ""
 "Go to the **Editor Settings** and set up a few fields in **Export > "
@@ -339,8 +339,8 @@ msgstr ""
 "*편집기 설정*\\ 으로 가서 *Export -> Android*\\ 의 몇 가지 영역을 설정합니"
 "다. 다음과 같아야 합니다:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:174
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:257
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:173
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:256
 #, fuzzy
 msgid ""
 "As it can be seen, most paths are inside either the ``android-sdk`` folder "
@@ -351,16 +351,16 @@ msgstr ""
 "있습니다. Unix 사용자의 경우, *jarsigner*\\ 는 종종 \"/usr/bin\"\\ 에 있습니"
 "다."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:178
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:261
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:177
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:260
 msgid "With this, you should be all set."
 msgstr "이것으로 모두 설정되었습니다."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:182
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:181
 msgid "Install the Android SDK (Android Studio)"
 msgstr "Android SDK 설치하기 (Android 스튜디오)"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:184
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:183
 #, fuzzy
 msgid ""
 "If you just finished installing the SDK via the command-line tools, feel "
@@ -373,12 +373,12 @@ msgstr ""
 "용 Godot를 개발하려는 계획이라면 (Java 소스 코드 수정), 혹은 애드온을 개발할 "
 "계획이라면 좋을 것입니다."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:190
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:189
 #, fuzzy
 msgid "Download and install Android Studio"
 msgstr "Android 스튜디오 다운로드하고 설치하기"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:192
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:191
 msgid ""
 "Download the latest version of Android Studio. When installing, pay "
 "attention to where the *android-sdk* directory is created."
@@ -386,7 +386,7 @@ msgstr ""
 "최신 Android 스튜디오를 다운로드합니다. 설치할 때, 어디에 *android-sdk* 디렉"
 "토리가 만들어지는 지 확인하세요."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:197
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:196
 msgid ""
 "This is funny, the path it proposes by default contains whitespace (and "
 "complains about it). It must be changed."
@@ -394,7 +394,7 @@ msgstr ""
 "이게 재밌는 것이, 기본적으로 제안하는 경로에는 공백이 포함됩니다 (그리고 그것"
 "에 불평합니다). 이것은 바꾸어야 합니다."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:199
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:198
 msgid ""
 "In any case, it's better to select a different path inside your user "
 "folders. The recommended one is usually:"
@@ -402,7 +402,7 @@ msgstr ""
 "어쨌든, 사용자 폴더 내에서 다른 경로를 선택하는 것이 좋습니다. 추천하는 경로"
 "는 보통 이렇습니다:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:206
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:205
 msgid ""
 "Replace *yourusername* by your actual user name. Once it's correct, select "
 "from the list above in the same screen:"
@@ -410,15 +410,15 @@ msgstr ""
 "*yourusername* 부분을 실제 사용자 이름으로 바꿉니다. 올바르면 위와 같은 화면"
 "에서 다음을 선택하세요:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:209
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:208
 msgid "Android SDK"
 msgstr "Android SDK"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:210
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:209
 msgid "Android SDK Platform"
 msgstr "Android SDK Platform"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:212
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:211
 msgid ""
 "The rest are not needed, because the build system will fetch them itself. "
 "After selecting them, go on with the installation."
@@ -426,7 +426,7 @@ msgstr ""
 "나머지는 필요없습니다, 빌드 시스템이 자체적으로 이들을 가져오기 때문이죠. 선"
 "택한 추 설치를 계속하세요."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:219
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:218
 #, fuzzy
 msgid ""
 "Go to the folder where you installed ``android-sdk`` in the previous step, "
@@ -435,7 +435,7 @@ msgstr ""
 "이전 단계에서 android-sdk를 설치한 폴더로 가서, 파일 탐색기를 사용하고 거기에"
 "서 명령줄 도구를 엽니다:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:224
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:223
 #, fuzzy
 msgid ""
 "The actual command line to type is the following. On Linux and macOS, it "
@@ -445,7 +445,7 @@ msgstr ""
 "실제 입력할 명령 문장은 다음과 같습니다. Unix에서 이것은 즉시 작동하지만, "
 "Windows에서는 추가 세부 사항이 필요합니다 (계속 읽어주세요)."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:232
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:231
 #, fuzzy
 msgid ""
 "On Windows, the full path to Java should be provided (and ``&`` needs to be "
@@ -458,7 +458,7 @@ msgstr ""
 "지 않습니다). 걱정하지 마세요, 적어도 Windows에서 Android 스튜디오를 쓴다면, "
 "Java가 번들로 제공됩니다."
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:237
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:236
 #, fuzzy
 msgid ""
 "To make it clearer, here is a screen capture of a line that works on "
@@ -471,12 +471,12 @@ msgstr ""
 "를 제거하세요). Android 스튜디오와 함께 제공되는 Java 버전에 대한 경로를 사용"
 "합니다:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:265
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:264
 #, fuzzy
 msgid "Enabling the custom build and exporting"
 msgstr "맞춤 빌드를 활성화하고 내보내기"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:267
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:266
 #, fuzzy
 msgid ""
 "When setting up the Android project in the **Project > Export** dialog, "
@@ -485,7 +485,7 @@ msgstr ""
 "*프로젝트 -> 내보내기* 대화 상자에서 Android 프로젝트를 설정할 때, *custiom "
 "build*\\ 가 켜져있어야 합니다:"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:272
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:271
 #, fuzzy
 msgid ""
 "From now on, attempting to export the project or one-click deploy will call "
@@ -495,7 +495,7 @@ msgstr ""
 "지금부터 프로젝트를 내보내거나, 원 클릭 배포를 하면 *Gradle* 빌드 시스템으로 "
 "새로운 템플릿을 생성하게 됩니다 (매 번 이 창이 나타날 것입니다):"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:278
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:277
 msgid ""
 "The templates built will be used automatically afterwards, so no further "
 "configuration is needed."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,13 +35,12 @@ msgid "Download the Android SDK"
 msgstr "Descargar el SDK de Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
-#, fuzzy
 msgid ""
 "Download and install the Android SDK from `developer.android.com <https://"
 "developer.android.com/studio/>`__."
 msgstr ""
-"Descarga e instala el SDK de Android desde http://developer.android.com/sdk/"
-"index.html"
+"Descarga e instala el SDK de Android desde `developer.android.com <https://"
+"developer.android.com/studio/>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
 msgid ""
@@ -90,7 +89,6 @@ msgstr ""
 "android``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:32
-#, fuzzy
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose::"
@@ -112,30 +110,28 @@ msgid "Make sure you have adb"
 msgstr "Asegúrate de que tienes adb"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
-#, fuzzy
 msgid ""
 "Android Debug Bridge (``adb``) is the command line tool used to communicate "
 "with Android devices. It's installed with the SDK, but you may need to "
 "install one (any) of the Android API levels for it to be installed in the "
 "SDK directory."
 msgstr ""
-"Android Debug Bridge (adb) es la herramienta de línea de comandos utilizada "
-"para comunicarse con dispositivos Android. Se instala con el SDK, pero es "
-"posible que necesites instalar uno (cualquiera) de los niveles de la API de "
-"Android para que se instale en el directorio del SDK."
+"Android Debug Bridge (``adb``) es la herramienta de línea de comandos "
+"utilizada para comunicarse con dispositivos Android. Se instala con el SDK, "
+"pero es posible que necesites instalar uno (cualquiera) de los niveles de la "
+"API de Android para que se instale en el directorio del SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:47
 msgid "Setting it up in Godot"
 msgstr "Instalándolo en Godot"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:49
-#, fuzzy
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
 "for the user account in the computer (it's independent of the project)."
 msgstr ""
 "Acceda a la pantalla Ajustes del editor. Esta pantalla contiene la "
-"configuración del editor para la cuenta de usuario en la computadora (Es "
+"configuración del editor para la cuenta de usuario en la computadora (es "
 "independiente del proyecto)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:55
@@ -186,9 +182,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:77
-#, fuzzy
 msgid "There are two types of icons required by Godot:"
-msgstr "Hay dos maneras de diseñar tu UI en Godot. Tú puedes:"
+msgstr "Hay dos tipos de iconos requeridos por Godot:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
 msgid ""
@@ -283,46 +278,42 @@ msgstr ""
 "exportación Android:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:111
-#, fuzzy
 msgid "**Release:** Enter the path to the keystore file you just generated."
 msgstr ""
-"Lanzamiento: Introduce la dirección a el archivo de almacén de claves que "
+"**Release:** Introduce la dirección a el archivo de almacén de claves que "
 "acabas de generar."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:112
-#, fuzzy
 msgid "**Release User:** Replace with the key alias."
-msgstr "Usuario de lanzamiento : Reemplaza con el alias de la llave."
+msgstr "**Release User:** Reemplaza con el alias de la clave."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:113
-#, fuzzy
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
 "key password currently have to be the same."
 msgstr ""
-"Contraseña de lanzamiento: contraseña de la llave. Ten en cuenta que la "
-"contraseña del almacén de datos y la contraseña de la llave tienen que ser "
+"**Release Password:** contraseña de la clave. Ten en cuenta que la "
+"contraseña del almacén de datos y la contraseña de la clave tienen que ser "
 "iguales."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:115
-#, fuzzy
 msgid ""
 "**Your export_presets.cfg file now contains sensitive information.** If you "
 "use a version control system, you should remove it from public repositories "
 "and add it to your ``.gitignore`` file or equivalent."
 msgstr ""
-"**Ahora tu archivo export_presets.cfg contiene información sensible;** si "
+"**Ahora tu archivo export_presets.cfg contiene información sensible.** Si "
 "estás usando un sistema de control de versiones, es una buena idea removerlo "
-"de repositorios públicos."
+"de repositorios públicos y agregarlo a tu archivo ``.gitignore`` o "
+"equivalente."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:119
-#, fuzzy
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while choosing "
 "the APK's name."
 msgstr ""
-"No olvides deshabilitar el botón ``Exportar con Depuración`` al seleccionar "
-"el nombre del APK."
+"No olvides desmarcar el botón ``Exportar con Depuración`` al seleccionar el "
+"nombre del APK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:124
 msgid "Optimizing the APK size"

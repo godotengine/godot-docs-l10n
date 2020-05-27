@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,10 +33,10 @@ msgid ""
 "editor. Exporting is done by using the ``export`` keyword::"
 msgstr ""
 "Dans Godot, les membres de classe peuvent être exportés. Cela signifie que "
-"leur valeur est sauvegardée avec la ressource (par exemple la :référence:"
-"`scène <class_PackedScene>`) à laquelle ils sont attachés. Ils seront "
-"également disponibles pour l'édition dans l'éditeur de propriétés. "
-"L'exportation se fait en utilisant le mot clé ``export`` :"
+"leur valeur est sauvegardée avec la ressource (par exemple la :ref:`scene "
+"<class_PackedScene>`) à laquelle ils sont attachés. Ils seront également "
+"disponibles pour l'édition dans l'éditeur de propriétés. L'exportation se "
+"fait en utilisant le mot clé ``export`` :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
 msgid ""
@@ -176,9 +176,8 @@ msgstr ""
 "valeur de la variable exportée."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:222
-#, fuzzy
 msgid "Advanced exports"
-msgstr "Mathématiques vectorielles avancées"
+msgstr "Exportations avancées"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:224
 msgid ""
@@ -186,6 +185,10 @@ msgid ""
 "to avoid unnecessary design complexity. The following describes some more or "
 "less common exporting features which can be implemented with a low-level API."
 msgstr ""
+"Tous les types d'exportation ne peuvent pas être fournis au niveau du "
+"langage lui-même pour éviter une complexité de conception inutile. Ce qui "
+"suit décrit quelques fonctions d'exportation plus ou moins courantes qui "
+"peuvent être mises en œuvre avec une API de bas niveau."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:228
 msgid ""
@@ -196,23 +199,33 @@ msgid ""
 "<class_Object_method__get_property_list>` methods as described in :ref:"
 "`doc_accessing_data_or_logic_from_object`."
 msgstr ""
+"Avant de poursuivre la lecture, vous devriez vous familiariser avec la "
+"manière dont les propriétés sont gérées et comment elles peuvent être "
+"personnalisées avec les méthodes :ref:`_set() "
+"<class_Object_method__get_property_list>`, :ref :`_get() "
+"<class_Object_method__get_property_list>`, et :ref:`_get_property_list() "
+"<class_Object_method__get_property_list>` comme décrit dans :ref:"
+"`doc_accessing_data_or_logic_from_object`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:235
 msgid ""
 "For binding properties using the above methods in C++, see :ref:"
 "`doc_binding_properties_using_set_get_property_list`."
 msgstr ""
+"Pour les propriétés de liaison utilisant les méthodes ci-dessus en C++, "
+"voir :ref:`doc_binding_properties_using_set_get_property_list`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:238
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
 msgstr ""
+"Le script doit fonctionner en mode ``tool`` pour que les méthodes ci-dessus "
+"puissent fonctionner dans l'éditeur."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:242
-#, fuzzy
 msgid "Adding script categories"
-msgstr "Ajouter des propriétés"
+msgstr "Ajout de catégories de script"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:244
 msgid ""
@@ -220,10 +233,13 @@ msgid ""
 "can be embedded into the inspector to act as a separator. ``Script "
 "Variables`` is one example of a built-in category."
 msgstr ""
+"Pour une meilleure distinction visuelle des propriétés, une catégorie "
+"d'écriture spéciale peut être intégrée à l'inspecteur pour servir de "
+"séparateur. ``Script Variables`` est un exemple de catégorie intégrée."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:261
 msgid "``name`` is the name of a category to be added to the inspector;"
-msgstr ""
+msgstr "``name`` est le nom d'une catégorie à ajouter à l'inspecteur ;"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:263
 msgid ""
@@ -232,21 +248,26 @@ msgid ""
 "it won't be actually used for the scripting logic, yet it must be defined "
 "anyway."
 msgstr ""
+"La propriété ``PROPERTY_USAGE_CATEGORY`` indique que la propriété doit être "
+"traitée comme une catégorie de script spécifique, donc le type ``TYPE_NIL`` "
+"peut être ignoré car il ne sera pas réellement utilisé pour la logique de "
+"script, mais il doit quand même être défini."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:268
-#, fuzzy
 msgid "Grouping properties"
-msgstr "Ajouter des propriétés"
+msgstr "Regroupement des propriétés"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:270
 msgid "A list of properties with similar names can be grouped."
-msgstr ""
+msgstr "Une liste de propriétés ayant des noms similaires peut être groupée."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:284
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "
 "collapsible list of properties;"
 msgstr ""
+"``name`` est le nom d'un groupe qui va s'afficher sous forme de liste "
+"pliable de propriétés ;"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:287
 msgid ""
@@ -255,6 +276,10 @@ msgid ""
 "key. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in "
 "this case."
 msgstr ""
+"chaque propriété successive ajoutée après la propriété de groupe sera "
+"réduite et raccourcie comme déterminé par le préfixe défini via la clé "
+"``hint_string``. Par exemple, ``rotate_speed`` va être raccourci en "
+"``speed`` dans ce cas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:291
 msgid ""
@@ -263,3 +288,7 @@ msgid ""
 "won't be actually used for the scripting logic, yet it must be defined "
 "anyway."
 msgstr ""
+"``PROPERTY_USAGE_GROUP`` indique que la propriété doit être traitée comme un "
+"groupe de script spécifique, donc le type ``TYPE_NIL`` peut être ignoré car "
+"il ne sera pas réellement utilisé pour la logique de script, mais il doit "
+"quand même être défini."

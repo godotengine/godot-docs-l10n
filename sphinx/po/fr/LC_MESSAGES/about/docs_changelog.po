@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Documentation changelog"
 msgstr "Changelog de la documentation"
 
 #: ../../docs/about/docs_changelog.rst:6
-#, fuzzy
 msgid ""
 "The documentation is continually being improved. The release of version 3.2 "
 "includes many new tutorials, many fixes and updates for old tutorials, and "
@@ -30,10 +29,10 @@ msgid ""
 "of new tutorials added since version 3.1."
 msgstr ""
 "La documentation est continuellement en cours d'amélioration. La sortie de "
-"la version 3.1 comprend de nombreux nouveaux tutoriels, de nombreuses "
+"la version 3.2 comprend de nombreux nouveaux tutoriels, de nombreuses "
 "corrections et mises à jour pour les anciens tutoriels, ainsi que de "
-"nombreuses mises à jour de class reference. Ci-dessous, une liste des "
-"nouveaux tutoriels ajoutés depuis la version 3.0."
+"nombreuses mises à jour pour la :ref:`class reference <toc-class-ref>`. Ci-"
+"dessous, une liste des nouveaux tutoriels ajoutés depuis la version 3.1."
 
 #: ../../docs/about/docs_changelog.rst:11
 msgid ""
@@ -56,7 +55,7 @@ msgstr "Gestion de projet"
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`doc_android_custom_build`"
-msgstr ":ref:`Compiler pour Android <doc_android_custom_custom_build>`"
+msgstr ":ref:`Compiler pour Android <doc_android_custom_build>`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/about/docs_changelog.rst:134
@@ -72,9 +71,8 @@ msgid "Audio"
 msgstr "Audio"
 
 #: ../../docs/about/docs_changelog.rst:30
-#, fuzzy
 msgid ":ref:`doc_recording_with_microphone`"
-msgstr ":ref:`Se conformer aux licences <doc_complying_with_licenses>`"
+msgstr ":ref:`doc_recording_with_microphone`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`doc_sync_with_audio`"
@@ -142,9 +140,8 @@ msgstr ""
 "<doc_your_second_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:57
-#, fuzzy
 msgid ":ref:`doc_visual_shaders`"
-msgstr "ref:`Plugins Visual Shader <doc_visual_shader_plugins>`"
+msgstr ":ref:`doc_visual_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:60
 msgid "Networking"
@@ -173,15 +170,15 @@ msgstr "Extensions"
 
 #: ../../docs/about/docs_changelog.rst:73
 msgid ":ref:`doc_android_plugin`"
-msgstr ":ref:`Créer des plugins Android <doc_android_plugin>`"
+msgstr ":ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:74
 msgid ":ref:`doc_inspector_plugins`"
-msgstr "ref:`Plugins spatial gizmo <doc_spatial_gizmo_plugins>`"
+msgstr ":ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:75
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr "ref:`Plugins Visual Shader <doc_visual_shader_plugins>`"
+msgstr ":ref:`doc_visual_shader_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:78
 #: ../../docs/about/docs_changelog.rst:196
@@ -190,7 +187,7 @@ msgstr "Le Multi-threading"
 
 #: ../../docs/about/docs_changelog.rst:80
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr ":ref:`Multithreading <doc_using_multiple_threads>`"
+msgstr ":ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:83
 #: ../../docs/about/docs_changelog.rst:201
@@ -366,7 +363,7 @@ msgstr ":ref:`Squelettes 2D <doc_2d_skeletons>`"
 
 #: ../../docs/about/docs_changelog.rst:156
 msgid ":ref:`doc_animation_tree`"
-msgstr ":ref:`AnimationTree <doc_animations_tree>`"
+msgstr ":ref:`doc_animation_tree`"
 
 #: ../../docs/about/docs_changelog.rst:159
 msgid "GUI"
@@ -378,7 +375,7 @@ msgstr ":ref:`Conteneurs <doc_gui_containers>`"
 
 #: ../../docs/about/docs_changelog.rst:164
 msgid "Viewports"
-msgstr "Fenêtre d'aperçu (Viewports)"
+msgstr "Fenêtre d'affichage (Viewports)"
 
 #: ../../docs/about/docs_changelog.rst:166
 msgid ":ref:`doc_viewport_as_texture`"
@@ -386,7 +383,7 @@ msgstr ":ref:`Utiliser un Viewport comme texture <doc_viewport_as_texture>`"
 
 #: ../../docs/about/docs_changelog.rst:167
 msgid ":ref:`doc_custom_postprocessing`"
-msgstr "ref:`Post-traitement personnalisé <doc_custom_postprocessing>`"
+msgstr ":ref:`Post-traitement personnalisé <doc_custom_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:172
 msgid ":ref:`doc_intro_to_shaders_water_workshop`"
@@ -436,7 +433,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:188
 msgid ":ref:`doc_spatial_gizmo_plugins`"
-msgstr "ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
+msgstr ":ref:`Spatial gizmo plugins <doc_spatial_gizmo_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:191
 msgid "Platform-specific"
@@ -481,7 +478,7 @@ msgstr "Compilation"
 
 #: ../../docs/about/docs_changelog.rst:216
 msgid ":ref:`doc_optimizing_for_size`"
-msgstr ":ref:`Optimizer la taille des exports `"
+msgstr ":ref:`doc_optimizing_for_size`"
 
 #: ../../docs/about/docs_changelog.rst:217
 msgid ":ref:`doc_compiling_with_script_encryption_key`"

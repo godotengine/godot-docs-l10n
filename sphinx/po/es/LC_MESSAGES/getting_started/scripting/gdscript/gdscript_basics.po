@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -644,9 +644,8 @@ msgid "``as``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
-#, fuzzy
 msgid "Type casting"
-msgstr "Prueba"
+msgstr "Conversión (casting) de tipo"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
@@ -1529,7 +1528,6 @@ msgid "**Control flow**:"
 msgstr "**Control del flujo**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:862
-#, fuzzy
 msgid ""
 "The patterns are matched from top to bottom. If a pattern matches, the first "
 "corresponding block will be executed. After that, the execution continues "
@@ -2083,7 +2081,7 @@ msgid ""
 "signal, the game node's ``_on_Character_health_depleted`` is called::"
 msgstr ""
 "En el ejemplo de abajo conectamos la señal ``health_depleted`` de un nodo "
-"``Character`` a un nodo ``Game``.  Cuando el nodo ``Character`` emite la "
+"``Character`` a un nodo ``Game``. Cuando el nodo ``Character`` emite la "
 "señal, el nodo del juego ``_on_Character_health_depleted`` es llamado::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335

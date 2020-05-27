@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,55 +22,51 @@ msgid "Android in-app purchases"
 msgstr "Achats intégrés à l’application Android"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:6
-#, fuzzy
 msgid ""
 "Godot Engine has integrated GooglePaymentsV3 module with which we can "
 "implement in-app purchases in our game."
 msgstr ""
-"Godot Engine a intégré le module GooglePaymentsV3, avec lequel nous pouvons "
-"implémenter les achats intégrés dans notre jeu."
+"Le moteur Godot a intégré le module GooglePaymentsV3 avec lequel nous "
+"pouvons mettre en place des achats in-app dans notre jeu."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:8
-#, fuzzy
 msgid ""
 "The `Godot demo projects repository <https://github.com/godotengine/godot-"
 "demo-projects>`__ has an `android_iap <https://github.com/godotengine/godot-"
 "demo-projects/tree/master/misc/android_iap>`__ example project. It includes "
 "a GDScript interface for Android IAPs."
 msgstr ""
-"Pour un exemple de fonctionnement, voir les projets de démonstration `3D in "
-"2D <https://github.com/godotengine/godot-demo-projects/tree/master/"
-"viewport/3d_in_2d>`_ et `2D in 3D <https://github.com/godotengine/godot-demo-"
-"projects/tree/master/viewport/2d_in_3d>`_ respectivement."
+"Le `dépôt de projets de démonstration de Godot <https://github.com/"
+"godotengine/godot-demo-projects>`__ a un projet d'exemple `android_iap "
+"<https://github.com/godotengine/godot-demo-projects/tree/master/misc/"
+"android_iap>`__. Il comprend une interface GDScript pour les IAP Android."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:12
-#, fuzzy
 msgid "Find the ``iap.gd`` script in:"
-msgstr "Trouvez le script iap.gd dans"
+msgstr "Trouvez le script ``iap.gd`` dans :"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:18
-#, fuzzy
 msgid ""
 "Copy it to your project, then open the Project Settings, add it to the "
 "AutoLoad list and name it as IAP so that we can reference it anywhere in the "
 "game."
 msgstr ""
-"Ajoutez-le à la liste de Chargement Automatique et appelez-le IAP, pour "
-"pouvoir y faire référence depuis n’importe où dans le jeu."
+"Copiez-le dans votre projet, puis ouvrez les paramètres du projet, ajoutez-"
+"le à la liste AutoLoad et nommez-le IAP afin que nous puissions le "
+"référencer partout dans le jeu."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:22
 msgid "Getting the product details"
 msgstr "Obtenir les détails du produit"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:24
-#, fuzzy
 msgid ""
 "When starting our game, we will need to get the item details from Google "
 "such as the product price, description, localized price string, etc."
 msgstr ""
 "Au début de notre jeu, nous devrons obtenir de Google les détails des "
-"articles, tels que le prix du produit, la description et la chaîne de prix "
-"localisée, etc."
+"articles, tels que le prix du produit, la description et la chaîne de "
+"caractère de prix localisée, etc."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:41
 msgid ""
@@ -85,31 +81,30 @@ msgid "Check if user purchased an item"
 msgstr "Vérifier si l'utilisateur a acheté un article"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:46
-#, fuzzy
 msgid ""
 "When starting our game, we can check if the user has purchased any product. "
 "**You should do this only after 2/3 seconds after your game is loaded.** If "
 "we do this as the first thing when the game is launched, IAPs might not be "
 "initialized and our game will crash on start."
 msgstr ""
-"Au démarrage de notre jeu, nous pouvons vérifier si l'utilisateur a acheté "
-"un produit. VOUS NE DEVEZ LE FAIRE QU'APRÈS 2/3 SECONDES APRÈS LE CHARGEMENT "
-"DE VOTRE JEU. Si nous faisons cela en premier au lancement du jeu, il se "
-"peut que le IAP ne soit pas initialisé et que notre jeu plante au démarrage."
+"Lors du démarrage de notre jeu, nous pouvons vérifier si l'utilisateur a "
+"acheté un produit. **Vous ne devez le faire qu'après 2/3 secondes après le "
+"chargement de votre jeu.** Si nous le faisons en premier lors du lancement "
+"du jeu, les IAP peuvent ne pas être initialisés et notre jeu se bloquera au "
+"démarrage."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:59
-#, fuzzy
 msgid ""
 "The Google IAP policy says the game should restore the user's purchases if "
 "the user replaces their phone or reinstalls the same app. We can use the "
 "above code to check what products the user has purchased and we can make our "
 "game respond accordingly."
 msgstr ""
-"Selon la politique de Google IAP, le jeu doit restaurer les achats de "
-"l'utilisateur si celui-ci remplace son téléphone ou réinstalle la même "
+"La politique Google IAP stipule que le jeu doit restaurer les achats de "
+"l'utilisateur si l'utilisateur remplace son téléphone ou réinstalle la même "
 "application. Nous pouvons utiliser le code ci-dessus pour vérifier quels "
-"produits l'utilisateur a achetés et nous pouvons faire en sorte que notre "
-"jeu réponde en conséquence."
+"produits l'utilisateur a achetés et nous pouvons faire réagir notre jeu en "
+"conséquence."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:62
 msgid "Simple Purchase"
@@ -129,40 +124,40 @@ msgstr ""
 "et améliorer l'expérience de l'utilisateur selon vos besoins."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:81
-#, fuzzy
 msgid "``purchase_fail``: When the purchase is failed due to any reason."
-msgstr "``purchase_fail`` - Lorsque l'achat échoue pour une raison quelconque"
+msgstr "``purchase_fail`` : Lorsque l'achat échoue pour une raison quelconque."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:82
-#, fuzzy
 msgid "``purchase_cancel``: When the user cancels the purchase."
-msgstr "``purchase_cancel`` - Lorsque l'utilisateur annule l'achat"
+msgstr "``purchase_cancel`` : Lorsque l'utilisateur annule l'achat."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:83
-#, fuzzy
 msgid "``purchase_owned``: When the user already bought the product earlier."
 msgstr ""
-"``purchase_owned`` - Lorsque l'utilisateur a déjà acheté le produit "
-"auparavant"
+"``purchase_owned`` : Lorsque l'utilisateur a déjà acheté le produit "
+"auparavant."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:86
 msgid "Consumables and Non-Consumables"
 msgstr "Consommables et non-consommables"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:88
-#, fuzzy
 msgid "There are two types of products - consumables and non-consumables:"
-msgstr "Il existe deux types d'icônes requises par Godot :"
+msgstr "Il existe deux types de produits - consommables et non consommables :"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:90
 msgid ""
 "**Consumables** are purchased and used, for example, healing potions which "
 "can be purchased again and again."
 msgstr ""
+"Les **Consumables** sont achetés et utilisés, par exemple, les potions de "
+"soins qui peuvent être achetées à plusieurs reprises."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:91
 msgid "**Non-consumables** are one time purchases, for example, level packs."
 msgstr ""
+"Les **non-consumables** sont des achats ponctuels, par exemple des packs de "
+"niveau."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:93
 msgid ""
@@ -201,29 +196,28 @@ msgid "Testing"
 msgstr "En période de test"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:120
-#, fuzzy
 msgid ""
 "If we add a Gmail ID as a tester in the Google Play dashboard, that tester "
 "can purchase items and they will not be charged. Another way to test IAP is "
 "using redeem codes generated by us for our game because the purchase flow is "
 "the same."
 msgstr ""
-"Si nous ajoutons un identifiant gmail comme testeur dans le tableau de bord "
-"de Google, ce testeur peut acheter des articles et ils ne seront pas "
-"facturés. Une autre façon de tester IAP est d'utiliser les codes de rachat "
-"que nous générons pour notre jeu, car le flux d'achat est le même."
+"Si nous ajoutons un identifiant Gmail comme testeur dans le tableau de bord "
+"de Google Play, ce testeur peut acheter des articles et ils ne seront pas "
+"facturés. Une autre façon de tester IAP consiste à utiliser les codes de "
+"rachat générés par nous pour notre jeu, car le flux d'achat est le même."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:122
-#, fuzzy
 msgid ""
 "Third way of testing is in development side. If we put the product ids as "
 "shown below, we will get a static fixed response according to the product "
 "ID. This is a quick way of testing things before going to the dashboard."
 msgstr ""
-"La troisième façon de tester est du côté du développement. Si nous mettons "
-"les identifiants de produit comme indiqué ci-dessous, nous obtiendrons une "
-"réponse fixe statique en fonction de l'identifiant de produit. Il s'agit "
-"d'un moyen rapide de tester les choses avant d'accéder au tableau de bord."
+"La troisième façon de tester se situe du côté du développement. Si nous "
+"mettons les identifiants des produits comme indiqué ci-dessous, nous "
+"obtiendrons une réponse statique fixe en fonction de l'identifiant du "
+"produit. C'est une façon rapide de tester les choses avant d'aller sur le "
+"tableau de bord."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:124
 msgid "android.test.purchased"

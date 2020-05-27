@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:4
-#, fuzzy
 msgid "Exporting for dedicated servers"
-msgstr "Exporter pour le Web"
+msgstr "Exportation pour les serveurs dédiés"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:6
 msgid ""
@@ -28,24 +27,32 @@ msgid ""
 "doesn't have a GPU or display server available, you'll need to use a server "
 "build of Godot."
 msgstr ""
+"Si vous voulez exécuter un serveur dédié à votre projet sur une machine qui "
+"n'a pas de GPU ou de serveur d'affichage disponible, vous devrez utiliser "
+"une version serveur de Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:10
-#, fuzzy
 msgid "Platform support"
-msgstr "offrir la prise en charge de mods"
+msgstr "Support de plate-forme"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:12
 msgid ""
 "**Linux:** `Download an official Linux server binary <https://godotengine."
 "org/download/server>`__. To compile a server binary from source, follow "
-"instructions in :ref:`doc_compiling_for_linuxbsd`."
+"instructions in :ref:`doc_compiling_for_x11`."
 msgstr ""
+"**Linux :** `Téléchargez le binaire officiel du serveur Linux <https://"
+"godotengine.org/download/server>`__. Pour compiler un binaire de serveur à "
+"partir des sources, suivez les instructions dans :ref:"
+"`doc_compiling_for_x11`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:15
 msgid ""
 "**macOS:** :ref:`Compile a server binary from source for macOS "
 "<doc_compiling_for_osx>`."
 msgstr ""
+"**macOS :** :ref:`Compiler un binaire serveur à partir des sources pour "
+"macOS <doc_compiling_for_osx>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:16
 msgid ""
@@ -53,27 +60,37 @@ msgid ""
 "alternative, you can use the ``--no-window`` command-line argument to "
 "prevent Godot from spawning a window."
 msgstr ""
+"**Windows :** Il n'existe pas encore de serveur dédié pour Windows. Comme "
+"alternative, vous pouvez utiliser l'argument de la ligne de commande ``--no-"
+"window`` pour empêcher Godot d'ouvrir une fenêtre."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:20
 msgid ""
 "If your project uses C#, you'll have to use a Mono-enabled server binary."
 msgstr ""
+"Si votre projet utilise le C#, vous devrez utiliser un binaire serveur "
+"compatible Mono."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:23
 msgid "\"Headless\" versus \"server\" binaries"
-msgstr ""
+msgstr "Binaires \"Headless\" contre binaires \"server\""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:25
 msgid ""
 "The `server download page <https://godotengine.org/download/server>`__ "
 "offers two kinds of binaries with several differences."
 msgstr ""
+"La `page de téléchargement du serveur <https://godotengine.org/download/"
+"server>`__ propose deux types de binaires avec plusieurs différences."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:28
 msgid ""
 "**Server:** Use this one for running dedicated servers. It does not contain "
 "editor functionality, and is therefore smaller and more optimized."
 msgstr ""
+"**Server :** Utilisez celui-ci pour faire fonctionner des serveurs dédiés. "
+"Il ne contient pas la fonctionnalité éditeur, et est donc plus petit et plus "
+"optimisé."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:31
 msgid ""
@@ -81,11 +98,14 @@ msgid ""
 "be used for exporting projects. This binary *can* be used to run dedicated "
 "servers, but it's not recommended as it's larger and less optimized."
 msgstr ""
+"**Headless :** Ce binaire contient la fonctionnalité éditeur et est destiné "
+"à être utilisé pour l'exportation de projets. Ce binaire *peut* être utilisé "
+"pour faire fonctionner des serveurs dédiés, mais il n'est pas recommandé car "
+"il est plus gros et moins optimisé."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:36
-#, fuzzy
 msgid "Exporting a PCK file"
-msgstr "Exportation pour PC"
+msgstr "Exportation d'un fichier PCK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:38
 msgid ""
@@ -94,17 +114,24 @@ msgid ""
 "preset for this purpose. After creating the export preset, click **Export "
 "PCK/ZIP** at the bottom of the Export dialog then choose a destination path."
 msgstr ""
+"Une fois que vous avez téléchargé un binaire de serveur, vous devez exporter "
+"un fichier PCK contenant les données de votre projet. Il est recommandé de "
+"créer un préréglage d'exportation Linux à cet effet. Après avoir créé le "
+"préréglage d'exportation, cliquez sur **Export PCK/ZIP** en bas de la boîte "
+"de dialogue Exporter puis choisissez un chemin de destination."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:43
 msgid ""
 "The **Export With Debug** checkbox in the file dialog has no bearing on the "
 "final PCK file, so you can leave it as-is."
 msgstr ""
+"La case à cocher **Export With Debug** dans la boîte de dialogue du fichier "
+"n'a aucune incidence sur le fichier PCK final, vous pouvez donc la laisser "
+"tel quel."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:46
-#, fuzzy
 msgid "See :ref:`doc_exporting_projects` for more information."
-msgstr "Voir :ref:`doc_running_code_in_the_editor` pour plus d'informations."
+msgstr "Voir :ref:`doc_exporting_projects` pour plus d'informations."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:50
 msgid ""
@@ -113,6 +140,11 @@ msgid ""
 "possibly be. Support for stripping unneeded resources from a PCK for server "
 "usage is planned in a future Godot release."
 msgstr ""
+"Le fichier PCK inclura des ressources dont le serveur n'a normalement pas "
+"besoin, telles que des textures et des sons. Cela signifie que le fichier "
+"PCK sera plus volumineux qu'il ne pourrait l'être. La prise en charge de "
+"l'extraction des ressources non nécessaires d'un PCK pour l'utilisation du "
+"serveur est prévue dans une prochaine version de Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:55
 msgid ""
@@ -120,11 +152,14 @@ msgid ""
 "client and dedicated server build. This can be useful if you want to ship a "
 "single archive that can be used both as a client and dedicated server."
 msgstr ""
+"Le bon côté des choses est que cela permet d'utiliser le même fichier PCK à "
+"la fois pour un client et pour un serveur dédié. Cela peut être utile si "
+"vous voulez expédier une seule archive qui peut être utilisée à la fois "
+"comme client et comme serveur dédié."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:60
-#, fuzzy
 msgid "Preparing the server distribution"
-msgstr "Préparation du projet"
+msgstr "Préparation de la distribution du serveur"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:62
 msgid ""
@@ -135,6 +170,13 @@ msgid ""
 "with a PCK that has a different name, you can specify the path to the PCK "
 "file using the ``--main-pack`` command-line argument::"
 msgstr ""
+"Après avoir téléchargé ou compilé un binaire de serveur, vous devez "
+"maintenant le placer dans le même dossier que le fichier PCK que vous avez "
+"exporté. Le binaire de serveur doit avoir le même nom que le PCK (sans "
+"l'extension). Cela permet à Godot de détecter et d'utiliser automatiquement "
+"le fichier PCK. Si vous voulez démarrer un serveur avec un PCK qui a un nom "
+"différent, vous pouvez spécifier le chemin d'accès au fichier PCK en "
+"utilisant l'argument de ligne de commande``--main-pack`` :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:72
 msgid "Next steps"
@@ -148,6 +190,11 @@ msgid ""
 "view server logs in a more convenient fashion, with automatic log rotation "
 "provided by systemd."
 msgstr ""
+"Sous Linux, pour faire redémarrer votre serveur dédié après un plantage ou "
+"un redémarrage du système, vous pouvez `créer un service systemd <https://"
+"medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c8b91d6>`__. "
+"Cela vous permet également de consulter les logs du serveur de manière plus "
+"pratique, avec la rotation automatique des journaux fournie par systemd."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:80
 msgid ""
@@ -156,3 +203,8 @@ msgid ""
 "This way, it can be used more easily in an automatic scaling setup (which is "
 "outside the scope of this tutorial)."
 msgstr ""
+"Si vous avez de l'expérience avec les conteneurs, vous pourriez aussi "
+"envisager d'emballer votre serveur dédié dans un conteneur `Docker <https://"
+"www.docker.com/>`__. De cette façon, il peut être utilisé plus facilement "
+"dans une configuration de mise à l'échelle automatique (ce qui n'entre pas "
+"dans le cadre de ce tutoriel)."

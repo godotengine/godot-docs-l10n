@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,7 +160,6 @@ msgid "KEYN"
 msgstr "KEYN"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
-#, fuzzy
 msgid ""
 "The \"lang\" tags must represent a language, which must be one of the :ref:"
 "`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags must "
@@ -170,11 +169,14 @@ msgid ""
 "and \"Key1\" will be different keys. The top-left cell is ignored and can be "
 "left empty or having any content. Here's an example:"
 msgstr ""
-"Las etiquetas \"lang\" deben representar un lenguaje, que debe ser uno de "
-"los :ref:`locales válidos <doc_locales>` soportados por el motor. Las "
+"Las etiquetas \"lang\" deben representar un lenguaje, el cual debe ser uno "
+"de los :ref:`locales válidos <doc_locales>` soportados por el motor. Las "
 "etiquetas \"KEY\" deben ser únicas y representar una cadena universalmente "
-"(normalmente están en mayúsculas, para diferenciarse de otras cadenas). Aquí "
-"hay un ejemplo:"
+"(normalmente están en mayúsculas, para diferenciarse de otras cadenas). "
+"Estas claves será reemplazadas en tiempo de ejecución por la cadena "
+"traducida. Nota que las mayúsculas son importantes, \"KEY1\" y \"Key1\" son "
+"claves distintas. La celda de arriba a la izquierda es ignorada y puede "
+"dejarse vacía o tener cualquier contenido. Aquí hay un ejemplo:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "en"
@@ -197,9 +199,8 @@ msgid "Hello, friend!"
 msgstr "Hello, friend!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
-#, fuzzy
 msgid "Hola, amigo!"
-msgstr "Hola, Amigo!"
+msgstr "Hola, amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "こんにちは"
@@ -226,9 +227,8 @@ msgid "BYE"
 msgstr "BYE"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
-#, fuzzy
 msgid "Goodbye"
-msgstr "Good Bye"
+msgstr "Goodbye"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Adiós"

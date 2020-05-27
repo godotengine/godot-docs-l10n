@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Editor icons"
 msgstr "Icônes de l'éditeur"
 
 #: ../../docs/development/editor/creating_icons.rst:6
-#, fuzzy
 msgid ""
 "When a new class is created and exposed to scripting, the editor's interface "
 "will display it with a default icon representing the base class it inherits "
@@ -32,8 +31,8 @@ msgstr ""
 "Lorsqu'une nouvelle classe est créée et exposée au scripting, l'interface de "
 "l'éditeur l'affiche avec une icône par défaut représentant la classe de base "
 "dont elle hérite. Cependant, dans la plupart des cas, il est recommandé de "
-"créer des icônes pour les nouvelles classes afin d'améliorer l'expérience de "
-"l'utilisateur."
+"créer des icônes pour les nouvelles classes afin d'améliorer l'expérience "
+"utilisateur."
 
 #: ../../docs/development/editor/creating_icons.rst:12
 msgid "Creating icons"
@@ -94,7 +93,7 @@ msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:37
 msgid "Color conversion for light editor themes"
-msgstr ""
+msgstr "Conversion des couleurs pour les thèmes clairs de l'éditeur"
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid ""
@@ -107,6 +106,14 @@ msgid ""
 "the list above. Otherwise, your icon may become difficult to read on a light "
 "background."
 msgstr ""
+"Si l'utilisateur a configuré son éditeur pour utiliser un thème clair, Godot "
+"convertira les couleurs d'icône en se basant sur un `ensemble de mappages de "
+"couleurs prédéfinis <https://github.com/godotengine/godot/blob/"
+"b9f2e57d6240346f1833fd0390de195c956299e7/editor/editor_themes.cpp#L122-"
+"L184>`__. Cela permet de s'assurer que l'icône s'affiche toujours avec un "
+"taux de contraste suffisant. Essayez de limiter la palette de couleurs de "
+"votre icône aux couleurs de la liste ci-dessus. Sinon, votre icône peut "
+"devenir difficile à lire sur un fond clair."
 
 #: ../../docs/development/editor/creating_icons.rst:47
 msgid "Icon optimization"
@@ -130,12 +137,19 @@ msgid ""
 "svgcleaner/releases/latest>`__ and placing it into a location in your "
 "``PATH`` environment variable."
 msgstr ""
+"Installez `svgcleaner <https://github.com/RazrFalcon/svgcleaner>`__ en "
+"téléchargeant un binaire depuis son `onglet Releases <https://github.com/"
+"RazrFalcon/svgcleaner/releases/latest>`__ et en le plaçant dans un "
+"emplacement de votre variable d'environnement ``PATH``."
 
 #: ../../docs/development/editor/creating_icons.rst:58
 msgid ""
 "Run the command below, replacing ``svg_source.svg`` with the path to your "
 "SVG file (which can be a relative or absolute path):"
 msgstr ""
+"Exécutez la commande ci-dessous, en remplaçant ``svg_source.svg`` par le "
+"chemin d'accès à votre fichier SVG (qui peut être un chemin relatif ou "
+"absolu) :"
 
 #: ../../docs/development/editor/creating_icons.rst:65
 msgid ""
@@ -143,6 +157,10 @@ msgid ""
 "The optimized icon will be saved to ``svg_optimized.svg``. You can also "
 "change the destination parameter to any relative or absolute path you'd like."
 msgstr ""
+"L'option ``--multipass`` améliore la compression, alors assurez-vous de "
+"l'inclure. L'icône optimisée sera sauvegardée dans le fichier "
+"``svg_optimized.svg``. Vous pouvez également changer le paramètre de "
+"destination pour n'importe quel chemin relatif ou absolu que vous souhaitez."
 
 #: ../../docs/development/editor/creating_icons.rst:71
 msgid ""
@@ -151,6 +169,10 @@ msgid ""
 "recommended to keep the source SVG around if you need to make further "
 "changes."
 msgstr ""
+"Bien que cette étape d'optimisation n'ait pas d'impact notable sur la "
+"qualité de l'icône, elle supprime néanmoins les informations réservées à "
+"éditeur, telles que les guides. Il est donc recommandé de conserver le SVG "
+"source si vous devez apporter d'autres modifications."
 
 #: ../../docs/development/editor/creating_icons.rst:77
 msgid "Integrating and sharing the icons"
@@ -194,7 +216,6 @@ msgid "Troubleshooting"
 msgstr "Dépannage"
 
 #: ../../docs/development/editor/creating_icons.rst:94
-#, fuzzy
 msgid "If icons don't appear in the editor, make sure that:"
 msgstr "Si les icônes n'apparaissent pas dans l'éditeur, assurez-vous que :"
 

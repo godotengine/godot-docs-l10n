@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,29 +34,38 @@ msgstr ""
 "機能豊富なエディタを備えているため、GodotコアエンジンおよびAndroidプラット"
 "フォームコードベースの開発に使用できます。"
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:11
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:12
+msgid "Importing the project"
+msgstr "プロジェクトのインポート"
+
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:14
 #, fuzzy
 msgid ""
-"From Android Studio's welcome window, select **Open an existing Android "
+"From the Android Studio's welcome window select **Open an existing Android "
 "Studio project**."
 msgstr ""
 "Android Studio *Welcome to Android Studio* ウィンドウから、\\ *Open an "
 "existing Android Studio project* を選択します"
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:16
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:21
+#, fuzzy
+msgid "Android Studio's welcome window."
+msgstr "\\ Android Studio"
+
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:23
 #, fuzzy
 msgid ""
 "Navigate to ``<Godot root directory>/platform/android/java`` and select the "
-"``settings.gradle`` gradle file."
+"``settings.gradle`` file."
 msgstr ""
 "``<godot root directory>/platform/android/java`` に移動し、\\ ``settings."
 "gradle`` gradleファイルを選択します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:17
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:24
 msgid "Android Studio will import and index the project."
 msgstr "Android Studioはプロジェクトをインポートしてインデックスを作成します。"
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:18
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:25
 msgid ""
 "To build the project, follow the :ref:`compiling instructions <toc-devel-"
 "compiling>`."
@@ -64,7 +73,7 @@ msgstr ""
 "プロジェクトをビルドするには、\\ :ref:`コンパイル手順<toc-devel-compiling>` "
 "に従ってください。"
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:20
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:27
 #, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "

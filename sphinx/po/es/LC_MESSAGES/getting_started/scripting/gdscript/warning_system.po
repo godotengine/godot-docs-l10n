@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,33 +18,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:4
-#, fuzzy
 msgid "GDScript warning system"
-msgstr "Sistema de advertencias"
+msgstr "Sistema de advertencias de GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:6
-#, fuzzy
 msgid ""
 "The GDScript warning system complements :ref:`static typing "
 "<doc_gdscript_static_typing>` (but it can work without static typing too). "
 "It's here to help you avoid mistakes that are hard to spot during "
 "development, and that may lead to runtime errors."
 msgstr ""
-"El sistema de advertencias complementa el GDScript tipado. Está allí para "
-"ayudar a evitar errores que son difíciles de ver durante el desarrollo y que "
-"pueden llevar a errores en tiempo de ejecución."
+"El sistema de advertencias complementa el :ref:`tipado estático "
+"<doc_gdscript_static_typing>` (pero puede funcionar también sin tipado "
+"estático). Está allí para ayudar a evitar errores que son difíciles de ver "
+"durante el desarrollo y que pueden llevar a errores en tiempo de ejecución."
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:11
-#, fuzzy
 msgid ""
 "You can configure warnings in the Project Settings under the section called "
 "**Gdscript**:"
 msgstr ""
 "Puedes configurar las advertencias (warnings) en los ajustes de proyecto en "
-"una nueva sección llamada ``GDScript``:"
+"la sección llamada **GDScript**:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:17
-#, fuzzy
 msgid "Warning system project settings"
 msgstr "Sistema de advertencias en Ajustes del Proyecto"
 
@@ -58,7 +55,6 @@ msgstr ""
 "advertencias:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:25
-#, fuzzy
 msgid "Warning system example"
 msgstr "Ejemplo del sistema de advertencias"
 
@@ -77,9 +73,8 @@ msgstr ""
 "activará la advertencia correspondiente:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:36
-#, fuzzy
 msgid "Warning system ignore example"
-msgstr "Ejemplo de ignorar advertencia"
+msgstr "Ejemplo de ignorar una advertencia"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:38
 msgid ""
@@ -103,6 +98,5 @@ msgstr ""
 "anterior con advertencias convertidas a errores:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:51
-#, fuzzy
 msgid "Warnings as errors"
-msgstr "Advertencias como errores"
+msgstr "Tratar advertencias como errores"

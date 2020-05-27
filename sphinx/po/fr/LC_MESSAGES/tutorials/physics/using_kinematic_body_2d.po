@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,9 +181,8 @@ msgstr ""
 "glissement :"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:73
-#, fuzzy
 msgid "``up_direction`` - *default value:* ``Vector2( 0, 0 )``"
-msgstr "``floor_normal`` - *valeur par défaut :* ``Vector2( 0, 0 )``"
+msgstr "``up_direction`` - *valeur par défaut :* ``Vecteur2( 0, 0 )``"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:75
 msgid ""
@@ -200,23 +199,19 @@ msgstr ""
 "défaut signifie que toutes les surfaces sont considérées comme des murs."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:80
-#, fuzzy
 msgid "``stop_on_slope`` - *default value:* ``false``"
-msgstr "``slope_stop_min_velocity`` - *valeur par défaut :* ``5``"
+msgstr "``stop_on_slope`` - * valeur par défaut :* ``false``"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:82
-#, fuzzy
 msgid ""
 "This parameter prevents a body from sliding down slopes when standing still."
 msgstr ""
-"Ce paramètre est la vitesse minimale requise pour se déplacer en se tenant "
-"sur une pente. Cela évite qu'un corps ne glisse sur une pente lorsqu'il est "
-"immobile."
+"Ce paramètre empêche un corps de glisser sur les pentes lorsqu'il est à "
+"l'arrêt."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:84
-#, fuzzy
 msgid "``max_slides`` - *default value:* ``4``"
-msgstr "``max_bounces`` - *valeur par défaut :* ``4``"
+msgstr "``max_slides`` - *valeur par défaut :* ``4``"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:86
 msgid ""
@@ -244,9 +239,8 @@ msgstr ""
 "considérée comme un \"sol\"."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:93
-#, fuzzy
 msgid "``infinite_inertia`` - *default value:* ``true``"
-msgstr "``max_bounces`` - *valeur par défaut :* ``4``"
+msgstr "``infinite_inertia`` - *valeur par défaut :* ``true``"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:95
 msgid ""
@@ -255,13 +249,16 @@ msgid ""
 "with them. If it's ``false`` the body will collide with rigid bodies and "
 "stop."
 msgstr ""
+"Lorsque ce paramètre est ``true``, le corps peut pousser :ref:`RigidBody2D "
+"<class_RigidBody2D>` des noeuds, en ignorant leur masse, mais ne détectera "
+"pas les collisions avec eux. S'il est ``false``, le corps entre en collision "
+"avec les corps rigides et s'arrête."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:100
 msgid "``move_and_slide_with_snap``"
 msgstr "``move_and_slide_with_snap``"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:102
-#, fuzzy
 msgid ""
 "This method adds some additional functionality to ``move_and_slide()`` by "
 "adding the ``snap`` parameter. As long as this vector is in contact with the "
@@ -272,9 +269,9 @@ msgid ""
 msgstr ""
 "Cette méthode ajoute une fonctionnalité en plus à ``move_and_slide()`` en "
 "ajoutant le paramètre ``snap``. Tant que ce vecteur est en contact avec le "
-"sol, le corps restera attaché à sa surface. Notez que cela veut dire qu'il "
+"sol, le corps restera attaché à la surface. Notez que cela veut dire qu'il "
 "faut désactiver cette fonctionnalité pendant un saut, par exemple. Vos "
-"pouvez faire cela soit en ajustant la valeur de ``snap`` à ``Vector2(0, 0)`` "
+"pouvez faire cela soit en ajustant la valeur de ``snap`` à ``Vector2.ZERO`` "
 "ou en utilisant ``move_and_slide()`` à la place."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:110

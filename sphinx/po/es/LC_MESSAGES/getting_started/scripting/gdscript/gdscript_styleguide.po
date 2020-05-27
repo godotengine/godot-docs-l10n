@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,7 +122,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:695
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:697
 msgid "**Good**:"
 msgstr "**Bien**:"
 
@@ -136,7 +136,7 @@ msgstr "**Bien**:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:703
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:705
 msgid "**Bad**:"
 msgstr "**Mal**:"
 
@@ -310,9 +310,8 @@ msgstr ""
 "incorporadas, lo que crea un código inconsistente."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
-#, fuzzy
 msgid "File names"
-msgstr "Vietnamita"
+msgstr "Nombres de archivo"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 msgid ""
@@ -476,7 +475,7 @@ msgid ""
 "variables, in that order."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid ""
 "The GDScript compiler evaluates onready variables right before the "
 "``_ready`` callback. You can use that to cache node dependencies, that is to "
@@ -484,89 +483,89 @@ msgid ""
 "the example above shows."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:619
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
 msgid "Member variables"
 msgstr "Varaibles miembro"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:623
 msgid ""
 "Don't declare member variables if they are only used locally in a method, as "
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
 msgid "Local variables"
 msgstr "Variables locales"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:630
 msgid ""
 "Declare local variables as close as possible to their first use. This makes "
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:633
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:635
 msgid "Methods and static functions"
 msgstr "Métodos y funciones estáticas"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:635
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
 msgid "After the class's properties come the methods."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:639
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
 "Godot calls when it adds a node to the scene tree."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:643
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:644
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:646
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
 "and interactions with the game engine."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:648
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:650
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:685
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:687
 msgid "Static typing"
 msgstr "Tipado estáticas"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:687
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:689
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
 msgid "Type hints"
 msgstr "Indicio/hint de tipo"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:694
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:711
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:713
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:717
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:719
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr ""

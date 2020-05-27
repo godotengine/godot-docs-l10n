@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,9 @@ msgstr "Qt Creator"
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:6
 #, fuzzy
-msgid "Qt Creator is a free, open source IDE for all desktop platforms."
+msgid ""
+"`Qt Creator <https://doc.qt.io/qtcreator/index.html>`_ is a free, open "
+"source IDE for all desktop platforms."
 msgstr ""
 "`KDevelop <https://www.kdevelop.org>`_ 是一个适用于所有桌面平台的免费开源"
 "IDE。"
@@ -34,163 +36,148 @@ msgstr "导入项目"
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:11
 #, fuzzy
-msgid "Choose **New Project > Import Project > Import Existing Project**."
+msgid ""
+"From the Qt Creator's main screen select **New Project > Import Project > "
+"Import Existing Project**."
 msgstr ""
 "选择 *新建项目（New Project）* -> *导入项目（Import Project）* -> *导入现有项"
 "目（Import Existing Project）*。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:15
-msgid "Set the path to your Godot root directory and enter the project name."
-msgstr "将路径设置为Godot根目录，然后输入项目名称。"
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:17
+#, fuzzy
+msgid "Under **Location** select the Godot root folder."
+msgstr ""
+"设置 *标头搜索路径（Header Search Paths）* 为您的 Godot 源代码目录的绝对路径"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:19
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:23
 #, fuzzy
 msgid ""
-"Here you can choose which folders and files will be visible to the project. "
-"C/C++ files are added automatically. Potentially useful additions: ``*.py`` "
-"for buildsystem files, ``*.java`` for Android platform development, ``*.mm`` "
-"for macOS platform development. Click **Next**."
+"Next, you can choose which folders and files will be visible to the project. "
+"While C/C++ files are added automatically, other extensions can be "
+"potentially useful: ``*.py`` for buildsystem files, ``*.java`` for Android "
+"platform development, ``*.mm`` for macOS platform development."
 msgstr ""
 "在这里，您可以选择对项目可见的文件夹和文件。C/C++文件会自动添加。潜在的有益补"
 "充：\\*.py 为构建系统文件，\\*.java 用于Android开发，\\*.mm 用于MacOS。点"
 "击“下一步”。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:26
-#, fuzzy
-msgid "Click **Finish**."
-msgstr "点击 *完成（Finish）*。"
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:27
-#, fuzzy
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:32
 msgid ""
-"Add a line containing ``.`` to ``project_name.includes`` to get working code "
-"completion."
-msgstr "在 *project_name.includes* 文件中添加新行 ``.`` 以完成工作代码。"
+"You can change this configuration later by right-clicking on your project "
+"and selecting the **Edit Files...** option."
+msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:33
-msgid "Build and run"
-msgstr "构建和运行"
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:40
+msgid "Finish the import."
+msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:35
-msgid "Build configuration:"
-msgstr "构建配置："
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:41
+msgid ""
+"Open the ``project_name.includes`` file and add a line containing ``.`` to "
+"it to correctly enable the code completion."
+msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:37
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:48
 #, fuzzy
-msgid "Click on **Projects** and open the **Build** tab."
+msgid "From the left-side menu select **Projects** and open the **Build** tab."
 msgstr "点击 *项目（Projects）* 并打开 *构建（Build）* 选项卡。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:38
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:49
 #, fuzzy
 msgid "Delete the predefined ``make`` build step."
 msgstr "删除预先定义的 ``make`` 构建步骤。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:42
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:55
 #, fuzzy
-msgid "Click **Add Build Step > Custom Process Step**."
+msgid ""
+"Click **Add Build Step > Custom Process Step** to add a new build step with "
+"the following settings:"
 msgstr ""
 "点击 *添加构建步骤（Add Build Step）* -> *自定义构建步骤（Custom Process "
 "Step）*。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:46
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
+msgid "Command"
+msgstr "命令"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
+msgid "**scons**"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
+msgid "Arguments"
+msgstr "参数"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
 #, fuzzy
 msgid ""
-"Type ``scons`` in the **Command** field. If it fails with ``Could not start "
-"process \"scons\"``, it can mean that ``scons`` is not in your ``PATH`` "
-"environment variable. In this case, you'll have to specify the full path to "
-"the SCons binary."
+"See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+"先阅读:doc:`ui_introduction_to_the_ui_system`来学习Godot的用户界面系统是如何"
+"工作的。"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:68
+#, fuzzy
+msgid ""
+"If the build fails with ``Could not start process \"scons\"``, it can mean "
+"that ``scons`` is not in your ``PATH`` environment variable. In this case, "
+"you'll have to specify the full path to the SCons binary."
 msgstr ""
 "在 *命令（Command）* 字段中输入 ``scons`` 。如果失败并提示 ``无法启动进程 "
 "\"scons\"``，则可能意味着 ``scons`` 不在您的 ``PATH`` 环境变量中，因此您可能"
 "必须使用SCons二进制文件的完整路径。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:50
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:73
 #, fuzzy
+msgid "Debugging the project"
+msgstr "准备项目"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:75
+#, fuzzy
+msgid "From the left-side menu select **Projects** and open the **Run** tab."
+msgstr "点击 *项目（Projects）* 并打开 *构建（Build）* 选项卡。"
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:76
 msgid ""
-"Fill the **Arguments** field with your compilation options (e.g.: "
-"``p=linuxbsd target=debug -j 4``)."
+"Under **Executable** specify the path to your executable located in the "
+"``<Godot root directory>/bin`` folder. The name depends on your build "
+"configuration, e.g. ``godot.x11.tools.64`` for 64-bit X11 platform with "
+"``tools`` enabled. You can use ``%{buildDir}`` to reference the project "
+"root, e.g: ``%{buildDir}/bin/godot.x11.opt.tools.64``."
 msgstr ""
-"在 *参数(Arguments)* 字段填入您的构建选项。（例如：``p=x11 target=debug -j "
-"4``）"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:55
-msgid "Run configuration:"
-msgstr "运行配置："
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:57
-#, fuzzy
-msgid "Open the **Run** tab."
-msgstr "打开 *运行（Run）* 选项卡。"
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:58
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:80
 #, fuzzy
 msgid ""
-"Point the **Executable** to your compiled Godot binary (e.g: ``%{buildDir}/"
-"bin/godot.linuxbsd.opt.tools.64``)."
-msgstr ""
-"将 *可执行文件（Executable）* 指向编译的Godot二进制文件（例如：``%{buildDir}/"
-"bin/godot.x11.opt.tools.64``）"
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:60
-#, fuzzy
-msgid ""
-"If you want to run a specific project, point **Working directory** to the "
-"project folder."
+"If you want to run a specific project, specify its root folder under "
+"**Working directory**."
 msgstr ""
 "如果要运行特定的游戏或项目，请将 *工作目录（Working directory）* 指向游戏目"
 "录。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:62
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:81
 #, fuzzy
 msgid ""
 "If you want to run the editor, add ``-e`` to the **Command line arguments** "
 "field."
 msgstr "如果要运行编辑器，请在 *命令行参数* 字段中添加 ``-e``。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:68
-msgid "Updating sources after pulling latest commits"
-msgstr "拉取最新提交后更新源文件"
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:70
-#, fuzzy
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:87
 msgid ""
-"As a developer, you usually want to frequently pull the latest commits from "
-"the upstream Git repository or a specific fork. However, this brings a "
-"problem with it: as the development continues, source files (and folders) "
-"are added or removed. These changes need to be reflected in your project "
-"files for Qt Creator too, so you continue to have a nice programming "
-"experience. A simple way to check is to right click at your root folder in "
-"the **Projects View** and click on **Edit files...**."
+"To learn more about command line arguments, refer to the :ref:`command line "
+"tutorial <doc_command_line_tutorial>`."
 msgstr ""
-"作为开发人员，您通常希望经常从上游git存储库或特定的fork等中提取最新的提交。但"
-"是，这带来了一个小问题：随着开发的继续，源文件（和文件夹）被添加或删除了。这"
-"些更改也需要反映在Qt Creator的项目文件中，因此您将继续编码。检查这些内容的一"
-"种简单方法是，右键单击“项目视图”中的根文件夹，然后单击“编辑文件...”"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:80
-#, fuzzy
-msgid ""
-"Now a new dialog should appear that is similar in functionality to the one "
-"in the third step of the *Importing the project* section above. Here, you "
-"can check whether you want to add/remove specific files and/or folders. You "
-"can choose by clicking with your mouse or just simply by clicking the "
-"**Apply Filter** button. Click on **OK** and you're ready to continue "
-"working."
-msgstr ""
-"现在将出现一个新对话框，其功能与“导入项目”部分的第三步中的功能类似。现在，您"
-"可以在此处检查是否要添加/删除特定的文件和/或文件夹。您可以通过单击鼠标或仅单"
-"击“应用过滤器”按钮进行选择。只需单击“确定”，就可以继续工作了。"
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:89
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:91
 msgid "Code style configuration"
 msgstr "代码风格配置"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:91
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:93
 #, fuzzy
 msgid ""
 "Developers must follow the project's :ref:`code style "
 "<doc_code_style_guidelines>` and the IDE should help them follow it. By "
-"default, Qt Creator does use spaces for indentation which doesn't match the "
+"default, Qt Creator uses spaces for indentation which doesn't match the "
 "Godot code style guidelines. You can change this behavior by changing the "
 "**Code Style** in **Options > C++**."
 msgstr ""
@@ -199,7 +186,7 @@ msgstr ""
 "项目是不正确的。您可以通过在 *选项（Options）* -> *C++* 中更改“代码风格"
 "（Code Style）”来更改此行为。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:98
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:102
 #, fuzzy
 msgid ""
 "Click on **Edit** to change the current settings, then click on **Copy Built-"
@@ -210,7 +197,7 @@ msgstr ""
 "in Code Style）* 按钮以设置新的代码风格。为它设置一个名称（例如Godot）并将制"
 "表符（Tab）策略更改为 *仅制表符（Tabs Only）*。"
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:104
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:110
 #, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "

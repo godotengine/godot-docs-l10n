@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:4
-#, fuzzy
 msgid "GDScript grammar"
-msgstr "Chaînes de format GDScript"
+msgstr "Grammaire GDScript"
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:6
 msgid ""
@@ -28,6 +27,9 @@ msgid ""
 "wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form>`_, for reference "
 "purposes."
 msgstr ""
+"Il s'agit de la grammaire formelle du GDScript écrite en `EBNF <https://en."
+"wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form>`_, à titre de "
+"référence."
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:9
 msgid ""
@@ -36,3 +38,8 @@ msgid ""
 "grammar definition. Inconsistencies here likely mean an error in this "
 "grammar, not a bug in GDScript."
 msgstr ""
+"Cette grammaire est uniquement descriptive, dérivée de la documentation de "
+"référence et de l'implémentation actuelle. L'analyseur GDScript n'est "
+"**pas** généré à partir d'une définition de la grammaire. Les incohérences "
+"ici signifient probablement une erreur dans cette grammaire, pas un bogue "
+"dans GDScript."
