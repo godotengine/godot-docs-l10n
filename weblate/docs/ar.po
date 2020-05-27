@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2020-05-20 16:21+0200\n"
+"POT-Creation-Date: 2020-05-27 13:49+0200\n"
 "PO-Revision-Date: 2020-05-22 21:00+0000\n"
 "Last-Translator: Anas <anas.ghamdi61@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
@@ -4311,7 +4311,6 @@ msgstr ""
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 #: ../../docs/tutorials/misc/state_design_pattern.rst:233
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:9
 msgid "Project setup"
 msgstr "إعدادات المشروع"
 
@@ -5092,7 +5091,7 @@ msgstr ""
 msgid ""
 "First, we get the list of animation names from the AnimatedSprite's "
 "``frames`` property. This returns an Array containing all three animation "
-"names: ``[\"walk\", \"swim\", \"fly]``."
+"names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:639
@@ -5891,7 +5890,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:247
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:265
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:295
 #: ../../docs/development/compiling/compiling_with_mono.rst:167
 msgid "Export templates"
 msgstr ""
@@ -6013,7 +6012,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:322
 msgid ""
-"Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
+"Open JDK(version 8 is required, more recent versions won't work): https://"
+"adoptopenjdk.net/index.html"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:324
@@ -10886,6 +10886,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:90
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:120
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "Command"
 msgstr ""
 
@@ -11460,7 +11461,6 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:240
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:172
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:30
 msgid "Debugging"
 msgstr ""
 
@@ -17036,7 +17036,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:695
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:697
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:65
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:84
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:111
@@ -17058,7 +17058,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:703
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:705
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:73
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:92
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:121
@@ -17404,7 +17404,7 @@ msgid ""
 "variables, in that order."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:613
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid ""
 "The GDScript compiler evaluates onready variables right before the "
 "``_ready`` callback. You can use that to cache node dependencies, that is to "
@@ -17412,13 +17412,13 @@ msgid ""
 "the example above shows."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:619
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
 #, fuzzy
 msgid "Member variables"
 msgstr "الأعضاء"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:623
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
 msgid ""
 "Don't declare member variables if they are only used locally in a method, as "
@@ -17426,13 +17426,13 @@ msgid ""
 "variables in the method's body."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
 msgid "Local variables"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:630
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:277
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:353
 msgid ""
@@ -17441,67 +17441,67 @@ msgid ""
 "where the variable was declared."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:633
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:635
 msgid "Methods and static functions"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:635
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
 msgid "After the class's properties come the methods."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:639
 msgid ""
 "Start with the ``_init()`` callback method, that the engine will call upon "
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
 "Godot calls when it adds a node to the scene tree."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:643
 msgid ""
 "These function should come first because they show how the object is "
 "initialized."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:644
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:646
 msgid ""
 "Other built-in virtual callbacks, like ``_unhandled_input()`` and "
 "``_physics_process``, should come next. These control the object's main loop "
 "and interactions with the game engine."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:648
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:650
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:685
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:687
 msgid "Static typing"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:687
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:689
 msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
 msgid "Type hints"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:694
 msgid ""
 "Place the colon right after the variable's name, without a space, and let "
 "the GDScript compiler infer the variable's type when possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:711
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:713
 msgid ""
 "When you let the compiler infer the type hint, write the colon and equal "
 "signs together: ``:=``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:717
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:719
 msgid ""
 "Add a space on either sides of the return type arrow when defining functions."
 msgstr ""
@@ -19528,8 +19528,8 @@ msgstr "مايكروسوفت ويندوز (ومنصة الويندوز العا�
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:53
 msgid ""
-"JetBrains Rider comes with bundled MSBuild, so you just need a recent .NET "
-"Framework Developer Pack. Make sure to set the following preferences:"
+"JetBrains Rider comes with bundled MSBuild, so nothing extra is required. "
+"Make sure to set the following preferences:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:56
@@ -19550,9 +19550,7 @@ msgid "In Rider:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:63
-msgid ""
-"``TargetFrameworkVersion`` in ``csproj`` should match the installed .NET "
-"Framework Developer Pack."
+msgid "Set ``MSBuild version`` to either bundled with Rider or .NET Core."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
@@ -24823,8 +24821,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
 msgid ""
 "However, if you want to install and run the app, you need to sign it with a "
-"trusted signature. Currently, Godot does not support signing of packages, so "
-"you need to use external tools to do so."
+"trusted signature. Godot supports automatic signing of packages with "
+"external tools."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
@@ -24932,30 +24930,56 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
-msgid "Signing the package"
-msgstr ""
+#, fuzzy
+msgid "Setting up automatic signing"
+msgstr "إنشاء المحتوى"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
-msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
+msgid ""
+"To setup automatic signing on export you need to go to Editor Settings > "
+"Export > Uwp. From there you need to click on the folder for ``Signtool``, "
+"and navigate to the ``SignTool.exe`` file on your computer."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:72
+msgid ""
+"After setting that up close the editor settings, go to Project > Export, and "
+"select the UWP preset. Under the ``Signing`` options click on the folder "
+"next to ``Certificate`` and go to the certificate file. Then enter the "
+"pfxPassword in the password field."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:79
+msgid "Your project will now be automatically signed on export."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:81
+msgid ""
+"If you want to sign an exported app manually run ``SignTool.exe`` and use "
+"the following command."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:84
+msgid "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:87
 msgid "Installing the package"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:73
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:89
 msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:76
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:92
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:78
+#: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:94
 msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."
@@ -25645,7 +25669,7 @@ msgstr "منصات محددة"
 msgid ""
 "**Linux:** `Download an official Linux server binary <https://godotengine."
 "org/download/server>`__. To compile a server binary from source, follow "
-"instructions in :ref:`doc_compiling_for_linuxbsd`."
+"instructions in :ref:`doc_compiling_for_x11`."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:15
@@ -25894,59 +25918,59 @@ msgstr ""
 msgid ""
 "The Android SDK doesn't come with Java, so it needs to be installed "
 "manually. You need to install a Java SDK (**not** just the runtime or JRE). "
-"`OpenJDK 8 <https://adoptopenjdk.net/index.html>`__ is recommended. Oracle "
-"JDK 8 should also work. Later versions may not work for Android development."
+"`OpenJDK 8 <https://adoptopenjdk.net/index.html>`__ is required, newer "
+"versions won't work."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:55
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:54
 msgid "Download the command-line tools"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:57
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:56
 msgid ""
 "Go to the `Android Studio download page <https://developer.android.com/"
 "studio/#command-tools>`_. To save disk space, you don't want the full IDE, "
 "so don't download it."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:62
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:61
 msgid ""
 "If you do want Android Studio, read further down for instructions for doing "
 "the same using Android Studio."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:65
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:64
 msgid ""
 "Look on that page for the *Command line tools only* section. Currently, they "
 "are listed under *Download Options*. Scroll down a bit until you see them."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:68
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:67
 msgid ""
 "Download the ZIP file for your platform, there will be a single ``tools`` "
 "folder inside:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:73
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:72
 msgid ""
 "This may appear a little confusing, but be sure to follow these instructions "
 "carefully:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:76
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:75
 msgid ""
 "Create a new folder anywhere you want named ``android-sdk`` (it **must** be "
 "an empty directory). On Windows, the following path is usually good enough:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:85
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:84
 msgid ""
 "If you already have an android-sdk folder, normally located in ``"
 "%LOCALAPPDATA%\\Android\\Sdk``, then use this folder instead of creating an "
 "empty ``android-sdk`` folder."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:88
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:87
 msgid ""
 "Unzip the Android SDK ZIP file into the ``android-sdk`` folder. This folder "
 "should now contain the unzipped folder called ``tools``. Rename ``tools`` to "
@@ -25955,24 +25979,24 @@ msgid ""
 "this :"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:100
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:99
 msgid ""
 "We need to setup the directory structure this way for the sdkmanager (inside "
 "the bin folder) to work."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:103
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:102
 #, fuzzy
 msgid "Accepting the licenses"
 msgstr "إنشاء المحتوى"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:105
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:104
 msgid ""
 "To be able to use the Android SDK tools, Google requires you to accept its "
 "licenses."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:108
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:107
 msgid ""
 "To do this, the ``sdkmanager`` must be executed from the command line with a "
 "special argument. Navigate to the ``tools/bin`` directory inside the SDK "
@@ -25980,26 +26004,26 @@ msgid ""
 "are expected to understand how command line navigation works):"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:115
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:114
 msgid "Then open a command line window:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:119
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:118
 msgid "In there, run ``sdkmanager --licenses``:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:123
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:122
 msgid ""
 "This will ask you to accept several licenses, just write ``y`` and press :"
 "kbd:`Enter` on every of them until it's done."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:126
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:125
 msgid ""
 "Afterwards, install the platform tools (this is required to install ``adb``):"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:130
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:129
 msgid ""
 "If you get an error saying ``Warning: Could not create settings``, try ``./"
 "sdkmanager --sdk_root=../../ --licenses`` or ``./sdkmanager --"
@@ -26007,79 +26031,79 @@ msgid ""
 "bin/`` folder because the path for ``--sdk_root`` is relative."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:133
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:217
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:132
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:216
 #, fuzzy
 msgid "Generating the keystore"
 msgstr "إنشاء المحتوى"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:135
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:134
 msgid ""
 "Once the *platform tools* are installed, the last step is to generate a "
 "debug keystore (this is needed to build). Go up two folders by writing:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:142
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:141
 msgid "(or open a new shell in the ``android-sdk`` folder)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:144
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:143
 msgid ""
 "And you need to input the following line (on Linux and macOS, this should "
 "work out of the box, for Windows there are further instructions below):"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:151
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:150
 msgid ""
 "On Windows, the full path to Java should be provided. You need to add ``&`` "
 "at the beginning of the line if you use PowerShell; it's not needed for the "
 "regular ``cmd.exe`` console."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:155
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:154
 msgid ""
 "To make it clearer, here is an capture of a line that works on PowerShell "
 "(by adding ``&`` and the full Java path before ``keytool.exe``). Again, keep "
 "in mind that you need Java installed:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:161
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:172
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:244
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:255
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:160
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:171
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:243
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:254
 msgid "(right-click and open the image in a new tab if this appears too small)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:165
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:248
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:164
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:247
 msgid "Setting up Godot"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:167
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:250
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:166
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:249
 msgid ""
 "Go to the **Editor Settings** and set up a few fields in **Export > "
 "Android**. Make sure they look like the following:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:174
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:257
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:173
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:256
 msgid ""
 "As it can be seen, most paths are inside either the ``android-sdk`` folder "
 "you originally created, or inside the Java install. For Linux and macOS "
 "users, ``jarsigner`` is often located in ``/usr/bin``."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:178
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:261
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:177
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:260
 msgid "With this, you should be all set."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:182
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:181
 msgid "Install the Android SDK (Android Studio)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:184
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:183
 msgid ""
 "If you just finished installing the SDK via the command-line tools, feel "
 "free to skip this section entirely. The Android Studio path is easier, but "
@@ -26087,63 +26111,63 @@ msgid ""
 "for Android (modify the Java source code) or if you plan to develop add-ons."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:190
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:189
 msgid "Download and install Android Studio"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:192
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:191
 msgid ""
 "Download the latest version of Android Studio. When installing, pay "
 "attention to where the *android-sdk* directory is created."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:197
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:196
 msgid ""
 "This is funny, the path it proposes by default contains whitespace (and "
 "complains about it). It must be changed."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:199
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:198
 msgid ""
 "In any case, it's better to select a different path inside your user "
 "folders. The recommended one is usually:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:206
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:205
 msgid ""
 "Replace *yourusername* by your actual user name. Once it's correct, select "
 "from the list above in the same screen:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:209
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:208
 #, fuzzy
 msgid "Android SDK"
 msgstr "أندرويد"
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:210
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:209
 msgid "Android SDK Platform"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:212
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:211
 msgid ""
 "The rest are not needed, because the build system will fetch them itself. "
 "After selecting them, go on with the installation."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:219
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:218
 msgid ""
 "Go to the folder where you installed ``android-sdk`` in the previous step, "
 "use File Explorer and open a command line tool there:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:224
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:223
 msgid ""
 "The actual command line to type is the following. On Linux and macOS, it "
 "should work out of the box, but on Windows, it needs additional details "
 "(keep reading afterwards)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:232
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:231
 msgid ""
 "On Windows, the full path to Java should be provided (and ``&`` needs to be "
 "added at the beginning on the line if you use PowerShell, it's not needed "
@@ -26151,7 +26175,7 @@ msgid ""
 "Studio on Windows, Java comes bundled with it."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:237
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:236
 msgid ""
 "To make it clearer, here is a screen capture of a line that works on "
 "PowerShell (by adding ``&`` and the full Java Path to ``keytool.exe``; "
@@ -26159,24 +26183,24 @@ msgid ""
 "that comes with Android Studio:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:265
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:264
 msgid "Enabling the custom build and exporting"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:267
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:266
 msgid ""
 "When setting up the Android project in the **Project > Export** dialog, "
 "**Custom Build** needs to be enabled:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:272
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:271
 msgid ""
 "From now on, attempting to export the project or one-click deploy will call "
 "the `Gradle <https://gradle.org/>`__ build system to generate fresh "
 "templates (this window will appear every time):"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/android_custom_build.rst:278
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:277
 msgid ""
 "The templates built will be used automatically afterwards, so no further "
 "configuration is needed."
@@ -29663,7 +29687,6 @@ msgstr ""
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:12
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:32
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:40
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:12
 msgid "Setup"
 msgstr ""
 
@@ -36748,7 +36771,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:837
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1230
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1226
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:668
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:778
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:951
@@ -36784,7 +36807,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:850
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1241
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1237
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:683
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:787
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:960
@@ -37003,24 +37026,29 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:218
 msgid ""
-"Thirdly, we check whether ``current_state`` is set. If ``current_state`` is "
-"*not* currently set, then we set ``current_state`` to the passed in "
-"animation name and tell :ref:`AnimationPlayer <class_AnimationPlayer>` to "
-"start playing the animation with a blend time of ``-1`` at the speed set in "
-"``animation_speeds`` and then we return ``true``."
+"Thirdly, we check whether ``current_state`` is set. If we have a state in "
+"``current_state``, then we get all the possible states we can transition to."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:222
-msgid "Blend time is how long to blend/mix the two animations together."
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:220
+msgid ""
+"If the animation name is in the list of possible transitions, we set "
+"``current_state`` to the passed in animation (``animation_name``), tell :ref:"
+"`AnimationPlayer <class_AnimationPlayer>` to play the animation with a blend "
+"time of ``-1`` at the speed set in ``animation_speeds`` and return ``true``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:224
+msgid "Blend time is how long to blend/mix the two animations together."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:226
 msgid ""
 "By putting in a value of ``-1``, the new animation instantly plays, "
 "overriding whatever animation is already playing."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:226
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:228
 msgid ""
 "If you put in a value of ``1``, for one second the new animation will play "
 "with increasing strength, blending the two animations together for one "
@@ -37029,45 +37057,31 @@ msgid ""
 "a walking animation to a running animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:230
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:232
 msgid ""
 "We set the blend time to ``-1`` because we want to instantly change "
 "animations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:232
-msgid ""
-"If we have a state in ``current_state``, then we get all the possible states "
-"we can transition to."
-msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:234
-msgid ""
-"If the animation name is in the list of possible transitions, we set "
-"``current_state`` to the passed in animation (``animation_name``), tell :ref:"
-"`AnimationPlayer <class_AnimationPlayer>` to play the animation with a blend "
-"time of ``-1`` at the speed set in ``animation_speeds`` and return ``true``."
-msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:240
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:236
 msgid "Now lets look at ``animation_ended``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:242
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:238
 msgid ""
 "``animation_ended`` is the function that will be called by :ref:"
 "`AnimationPlayer <class_AnimationPlayer>` when it's done playing an "
 "animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:245
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:241
 msgid ""
 "For certain animation states, we may need to transition into another state "
 "when it's finished. To handle this, we check for every possible animation "
 "state. If we need to, we will transition into another state."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:248
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:244
 msgid ""
 "If you are using your own animated models, make sure that none of the "
 "animations are set to loop. Looping animations do not send the "
@@ -37075,14 +37089,14 @@ msgid ""
 "are about to loop again."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:252
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:248
 msgid ""
 "The transitions in ``animation_ended`` would ideally be part of the data in "
 "``states``, but in an effort to make the tutorial easier to understand, "
 "we'll hard code each state transition in ``animation_ended``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:258
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:254
 msgid ""
 "Finally, there is ``animation_callback``. This function will be called by a "
 "call method track in our animations. If we have a :ref:`FuncRef "
@@ -37091,46 +37105,46 @@ msgid ""
 "``callback_function``, we print out a warning to the console."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:262
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:258
 msgid ""
 "Try running ``Testing_Area.tscn`` to make sure there are no runtime issues. "
 "If the game runs but nothing seems to have changed, then everything is "
 "working correctly."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:266
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:262
 msgid "Getting the animations ready"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:268
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:264
 msgid ""
 "Now that we have a working animation manager, we need to call it from our "
 "player script. Before that, though, we need to set some animation callback "
 "tracks in our firing animations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:271
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:267
 msgid ""
 "Open up ``Player.tscn`` if you don't have it open and navigate to the :ref:"
 "`AnimationPlayer <class_AnimationPlayer>` node (``Player`` -> "
 "``Rotation_Helper`` -> ``Model`` -> ``Animation_Player``)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:274
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:270
 msgid ""
 "We need to attach a call method track to three of our animations: The firing "
 "animation for the pistol, rifle, and knife. Let's start with the pistol. "
 "Click the animation drop down list and select \"Pistol_fire\"."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:277
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:273
 msgid ""
 "Now scroll down to the bottom of the list of animation tracks. The final "
 "item in the list should read ``Armature/Skeleton:Left_UpperPointer``. Now "
 "above the list, click the \"Add track\" button, to the left of the time line"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:282
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:278
 msgid ""
 "This will bring up a window with a few choices. We want to add a call method "
 "track, so click the option that reads \"Call Method Track\". This will open "
@@ -37138,7 +37152,7 @@ msgid ""
 "<class_AnimationPlayer>` node, select it, and press OK."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:288
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:284
 msgid ""
 "Now at the bottom of list of animation tracks you will have a green track "
 "that reads \"AnimationPlayer\". Now we need to add the point where we want "
@@ -37146,70 +37160,70 @@ msgid ""
 "where the muzzle starts to flash."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:292
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:288
 msgid ""
 "The timeline is the window where all the points in our animation are stored. "
 "Each of the little points represents a point of animation data."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:295
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:291
 msgid ""
 "To actually preview the \"Pistol_fire\" animation, select the :ref:`Camera "
 "<class_Camera>` node underneath Rotation Helper and check the \"Preview\" "
 "box underneath Perspective in the top-left corner."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:299
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:295
 msgid ""
 "Scrubbing the timeline means moving ourselves through the animation. So when "
 "we say \"scrub the timeline until you reach a point\", what we mean is move "
 "through the animation window until you reach the point on the timeline."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:303
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:299
 msgid ""
 "Also, the muzzle of a gun is the end point where the bullet comes out. The "
 "muzzle flash is the flash of light that escapes the muzzle when a bullet is "
 "fired. The muzzle is also sometimes referred to as the barrel of the gun."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:307
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:303
 msgid ""
 "For finer control when scrubbing the timeline, press :kbd:`Ctrl` and scroll "
 "forward with the mouse wheel to zoom in. Scrolling backwards will zoom out."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:310
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:306
 msgid ""
 "You can also change how the timeline scrubbing snaps by changing the value "
 "in ``Step (s)`` to a lower/higher value."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:312
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:308
 msgid ""
 "Once you get to a point you like, right click on the row for \"Animation "
 "Player\" and press ``Insert Key``. In the empty name field, enter "
 "``animation_callback`` and press :kbd:`Enter`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:318
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:314
 msgid ""
 "Now when we are playing this animation the call method track will be "
 "triggered at that specific point of the animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:322
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:318
 msgid "Let's repeat the process for the rifle and knife firing animations!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:324
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:320
 msgid ""
 "Because the process is exactly the same as the pistol, the process is going "
 "to explained in a little less depth. Follow the steps from above if you get "
 "lost! It is exactly the same, just on a different animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:327
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:323
 msgid ""
 "Go to the \"Rifle_fire\" animation from the animation drop down. Add the "
 "call method track once you reach the bottom of the animation track list by "
@@ -37218,13 +37232,13 @@ msgid ""
 "call method track point at that position on the track."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:331
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:327
 msgid ""
 "Type \"animation_callback\" into the name field of the pop up which opened "
 "and press :kbd:`Enter`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:333
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:329
 msgid ""
 "Now we need to apply the callback method track to the knife animation. "
 "Select the \"Knife_fire\" animation and scroll to the bottom of the "
@@ -37233,7 +37247,7 @@ msgid ""
 "place the animation callback method point at."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:337
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:333
 msgid ""
 "We will not actually be firing the knife, and the animation is a stabbing "
 "animation rather than a firing one. For this tutorial we are reusing the gun "
@@ -37241,35 +37255,35 @@ msgid ""
 "is consistent with the other animations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:341
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:337
 msgid ""
 "From there right click on the timeline and click \"Insert Key\". Put "
 "\"animation_callback\" into the name field and press :kbd:`Enter`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:343
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:339
 msgid "Be sure to save your work!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:345
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:341
 msgid ""
 "With that done, we are almost ready to start adding the ability to fire to "
 "our player script! We need to set up one last scene: The scene for our "
 "bullet object."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:349
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:345
 msgid "Creating the bullet scene"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:351
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:347
 msgid ""
 "There are several ways to handle a gun's bullets in video games. In this "
 "tutorial series, we will be exploring two of the more common ways: Objects, "
 "and raycasts."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:356
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:352
 msgid ""
 "One of the two ways is using a bullet object. This will be an object that "
 "travels through the world and handles its own collision code. In this method "
@@ -37277,7 +37291,7 @@ msgid ""
 "it travels forward."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:360
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:356
 msgid ""
 "There are several advantages to this method. The first being we do not have "
 "to store the bullets in our player. We can simply create the bullet and then "
@@ -37285,7 +37299,7 @@ msgid ""
 "the proper signal(s) to the object it collides with, and destroying itself."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:363
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:359
 msgid ""
 "Another advantage is we can have more complex bullet movement. If we want to "
 "make the bullet fall ever so slightly as time goes on, we can make the "
@@ -37295,7 +37309,7 @@ msgid ""
 "nothing in real life moves instantly from one point to another."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:367
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:363
 msgid ""
 "One of the huge disadvantages is performance. While having each bullet "
 "calculate their own paths and handle their own collision allows for a lot of "
@@ -37305,7 +37319,7 @@ msgid ""
 "potentially have several hundred bullets."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:371
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:367
 msgid ""
 "Despite the performance hit, many first person shooters include some form of "
 "object bullets. Rocket launchers are a prime example because in many first "
@@ -37314,7 +37328,7 @@ msgid ""
 "because they generally bounce around the world before exploding."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:375
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:371
 msgid ""
 "While I cannot say for sure this is the case, these games *probably* use "
 "bullet objects in some form or another: (These are entirely from my "
@@ -37322,36 +37336,36 @@ msgid ""
 "of the following games)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:378
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:374
 msgid ""
 "Halo (Rocket launchers, fragmentation grenades, sniper rifles, brute shot, "
 "and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:379
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:375
 msgid ""
 "Destiny (Rocket launchers, grenades, fusion rifles, sniper rifles, super "
 "moves, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:380
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:376
 msgid ""
 "Call of Duty (Rocket launchers, grenades, ballistic knives, crossbows, and "
 "more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:381
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:377
 msgid "Battlefield (Rocket launchers, grenades, claymores, mortars, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:383
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:379
 msgid ""
 "Another disadvantage with bullet objects is networking. Bullet objects have "
 "to sync the positions (at least) with all the clients that are connected to "
 "the server."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:386
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:382
 msgid ""
 "While we are not implementing any form of networking (as that would be in "
 "its own entire tutorial series), it is a consideration to keep in mind when "
@@ -37359,19 +37373,19 @@ msgid ""
 "form of networking in the future."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:391
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:387
 msgid ""
 "The other way of handling bullet collisions we will be looking at is "
 "raycasting."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:393
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:389
 msgid ""
 "This method is extremely common in guns that have fast moving bullets that "
 "rarely change trajectory over time."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:395
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:391
 msgid ""
 "Instead of creating a bullet object and sending it through space, we instead "
 "send a ray starting from the barrel/muzzle of the gun forwards. We set the "
@@ -37379,7 +37393,7 @@ msgid ""
 "length we can adjust how far the bullet 'travels' through space."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:398
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:394
 msgid ""
 "While I cannot say for sure this is the case, these games *probably* use "
 "raycasts in some form or another: (These are entirely from my observations. "
@@ -37387,36 +37401,36 @@ msgid ""
 "following games)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:401
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:397
 msgid ""
 "Halo (Assault rifles, DMRs, battle rifles, covenant carbine, spartan laser, "
 "and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:402
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:398
 msgid ""
 "Destiny (Auto rifles, pulse rifles, scout rifles, hand cannons, machine "
 "guns, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:403
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:399
 msgid ""
 "Call of Duty (Assault rifles, light machine guns, sub machine guns, pistols, "
 "and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:404
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:400
 msgid "Battlefield (Assault rifles, SMGs, carbines, pistols, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:406
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:402
 msgid ""
 "One huge advantage of this method is that it's light on performance. Sending "
 "a couple hundred rays through space is *much* easier for the computer to "
 "calculate than sending a couple hundred bullet objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:410
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:406
 msgid ""
 "Another advantage is we can instantly know if we've hit something or not "
 "exactly when we call for it. For networking this is important because we do "
@@ -37424,7 +37438,7 @@ msgid ""
 "send whether or not the raycast hit."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:413
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:409
 msgid ""
 "Raycasting does have some disadvantages, though. One major disadvantage is "
 "we cannot easily cast a ray in anything but a linear line. This means we can "
@@ -37434,7 +37448,7 @@ msgid ""
 "heavier on performance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:417
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:413
 msgid ""
 "Another disadvantage is we cannot see the bullet. With bullet objects we can "
 "actually see the bullet travel through space if we attach a mesh to it, but "
@@ -37445,13 +37459,13 @@ msgid ""
 "theoretically the bullets move so fast our eyes could not see it anyway."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:424
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:420
 msgid ""
 "Let's get the bullet object set up. This is what our pistol will create when "
 "the \"Pistol_fire\" animation callback function is called."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:427
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:423
 msgid ""
 "Open up ``Bullet_Scene.tscn``. The scene contains :ref:`Spatial "
 "<class_Spatial>` node called bullet, with a :ref:`MeshInstance "
@@ -37459,20 +37473,20 @@ msgid ""
 "`CollisionShape <class_CollisionShape>` children to it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:431
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:427
 msgid ""
 "Create a new script called ``Bullet_script.gd`` and attach it to the "
 "``Bullet`` :ref:`Spatial <class_Spatial>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:433
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:429
 msgid ""
 "We are going to move the entire bullet object at the root (``Bullet``). We "
 "will be using the :ref:`Area <class_Area>` to check whether or not we've "
 "collided with something"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:435
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:431
 msgid ""
 "Why are we using an :ref:`Area <class_Area>` and not a :ref:`RigidBody "
 "<class_RigidBody>`? The main reason we're not using a :ref:`RigidBody "
@@ -37482,61 +37496,61 @@ msgid ""
 "<class_RigidBody>` nodes, including other bullets, will be effected."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:439
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:435
 msgid ""
 "Another reason is simply because it is easier to detect collisions with an :"
 "ref:`Area <class_Area>`!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:441
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:437
 msgid "Here's the script that will control our bullet:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:477
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:473
 msgid "Let's go through the script:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:481
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:477
 msgid "First we define a few class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:483
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:479
 msgid "``BULLET_SPEED``: The speed at which the bullet travels."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:484
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:480
 msgid ""
 "``BULLET_DAMAGE``: The damage the bullet will cause to anything with which "
 "it collides."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:485
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:481
 msgid "``KILL_TIMER``: How long the bullet can last without hitting anything."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:486
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:482
 msgid "``timer``: A float for tracking how long the bullet has been alive."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:487
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:483
 msgid ""
 "``hit_something``: A boolean for tracking whether or not we've hit something."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:489
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:485
 msgid ""
 "With the exception of ``timer`` and ``hit_something``, all of these "
 "variables change how the bullet interacts with the world."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:492
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:488
 msgid ""
 "The reason we are using a kill timer is so we do not have a case where we "
 "get a bullet travelling forever. By using a kill timer, we can ensure that "
 "no bullets will travel forever and consume resources."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:496
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:492
 msgid ""
 "As in :ref:`doc_fps_tutorial_part_one`, we have a couple all uppercase class "
 "variables. The reason behind this is the same as the reason given in :ref:"
@@ -37546,37 +37560,37 @@ msgid ""
 "variables and not constants."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:503
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:499
 msgid ""
 "In ``_ready`` we set the area's ``body_entered`` signal to ourself so that "
 "it calls the ``collided`` function when a body enters the area."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:508
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:504
 msgid ""
 "``_physics_process`` gets the bullet's local ``Z`` axis. If you look at the "
 "scene in local mode, you will find that the bullet faces the positive local "
 "``Z`` axis."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:511
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:507
 msgid ""
 "Next we translate the entire bullet by that forward direction, multiplying "
 "in our speed and delta time."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:513
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:509
 msgid ""
 "After that we add delta time to our timer and check whether the timer has "
 "reached a value as big or greater than our ``KILL_TIME`` constant. If it "
 "has, we use ``queue_free`` to free the bullet."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:518
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:514
 msgid "In ``collided`` we check whether we've hit something yet."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:520
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:516
 msgid ""
 "Remember that ``collided`` is only called when a body has entered the :ref:"
 "`Area <class_Area>` node. If the bullet has not already collided with "
@@ -37586,14 +37600,14 @@ msgid ""
 "bullet's rotation and position."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:525
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:521
 msgid ""
 "in ``collided``, the passed in body can be a :ref:`StaticBody "
 "<class_StaticBody>`, :ref:`RigidBody <class_RigidBody>`, or :ref:"
 "`KinematicBody <class_KinematicBody>`"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:528
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:524
 msgid ""
 "We set the Bullet's ``hit_something`` variable to ``true`` because "
 "regardless of whether or not the body that the bullet collided with has the "
@@ -37601,17 +37615,17 @@ msgid ""
 "sure the bullet does not hit anything else."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:531
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:527
 msgid "Then we free the bullet using ``queue_free``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:533
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:529
 msgid ""
 "You may be wondering why we even have a ``hit_something`` variable if we "
 "free the bullet using ``queue_free`` as soon as it hits something."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:536
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:532
 msgid ""
 "The reason we need to track whether we've hit something or not is because "
 "``queue_free`` does not immediately free the node, so the bullet could "
@@ -37620,19 +37634,19 @@ msgid ""
 "only hit one object."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:544
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:540
 msgid ""
 "Before we start programming the player again, let's take a quick look at "
 "``Player.tscn``. Open up ``Player.tscn`` again."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:547
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:543
 msgid ""
 "Expand ``Rotation_Helper`` and notice how it has two nodes: "
 "``Gun_Fire_Points`` and ``Gun_Aim_Point``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:550
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:546
 msgid ""
 "``Gun_aim_point`` is the point that the bullets will be aiming at. Notice "
 "how it is lined up with the center of the screen and pulled a distance "
@@ -37640,26 +37654,26 @@ msgid ""
 "bullets will for sure collide with as it goes along."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:555
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:551
 msgid ""
 "There is a invisible mesh instance for debugging purposes. The mesh is a "
 "small sphere that visually shows at which target the bullets will be aiming."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:558
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:554
 msgid ""
 "Open up ``Gun_Fire_Points`` and you'll find three more :ref:`Spatial "
 "<class_Spatial>` nodes, one for each weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:561
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:557
 msgid ""
 "Open up ``Rifle_Point`` and you'll find a :ref:`Raycast <class_Raycast>` "
 "node. This is where we will be sending the raycasts for our rifle's bullets. "
 "The length of the raycast will dictate how far our bullets will travel."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:565
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:561
 msgid ""
 "We are using a :ref:`Raycast <class_Raycast>` node to handle the rifle's "
 "bullet because we want to fire lots of bullets quickly. If we use bullet "
@@ -37667,7 +37681,7 @@ msgid ""
 "machines."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:569
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:565
 msgid ""
 "If you are wondering from where the positions of the points came, they are "
 "the rough positions of the ends of each weapon. You can see this by going to "
@@ -37676,7 +37690,7 @@ msgid ""
 "the end of each weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:575
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:571
 msgid ""
 "Open up ``Knife_Point`` and you'll find an :ref:`Area <class_Area>` node. We "
 "are using an :ref:`Area <class_Area>` for the knife because we only care for "
@@ -37685,20 +37699,20 @@ msgid ""
 "that looks like a knife."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:580
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:576
 msgid ""
 "Finally, we have ``Pistol_Point``. This is the point where we will be "
 "creating/instancing our bullet objects. We do not need any additional nodes "
 "here, as the bullet handles all of its own collision detection."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:584
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:580
 msgid ""
 "Now that we've seen how we will handle our other weapons, and where we will "
 "spawn the bullets, let's start working on making them work."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:587
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:583
 msgid ""
 "You can also look at the HUD nodes if you want. There is nothing fancy there "
 "and other than using a single :ref:`Label <class_Label>`, we will not be "
@@ -37707,66 +37721,66 @@ msgid ""
 "nodes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:593
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:589
 msgid "Creating the first weapon"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:595
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:591
 msgid "Lets write the code for each of our weapons, starting with the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:597
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:593
 msgid ""
 "Select ``Pistol_Point`` (``Player`` -> ``Rotation_Helper`` -> "
 "``Gun_Fire_Points`` -> ``Pistol_Point``) and create a new script called "
 "``Weapon_Pistol.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:599
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:595
 msgid "Add the following code to ``Weapon_Pistol.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:650
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:646
 msgid "Let's go over how the script works."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:654
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:650
 msgid "First we define some class variables we'll need in the script:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:656
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:652
 msgid "``DAMAGE``: The amount of damage a single bullet does."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:657
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:653
 msgid "``IDLE_ANIM_NAME``: The name of the pistol's idle animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:658
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:654
 msgid "``FIRE_ANIM_NAME``: The name of the pistol's fire animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:659
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:655
 msgid ""
 "``is_weapon_enabled``: A variable for checking whether this weapon is in use/"
 "enabled."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:660
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:656
 msgid "``bullet_scene``: The bullet scene we worked on earlier."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:661
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:657
 msgid "``player_node``: A variable to hold ``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:663
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:659
 msgid ""
 "The reason we define most of these variables is so we can use them in "
 "``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:665
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:661
 msgid ""
 "Each of the weapons we'll make will have all these variables (minus "
 "``bullet_scene``) so we have a consistent interface to interact with in "
@@ -37776,7 +37790,7 @@ msgid ""
 "to change much of the code in ``Player.gd`` and it will just work."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:670
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:666
 msgid ""
 "We could write all the code in ``Player.gd``, but then ``Player.gd`` will "
 "get increasingly harder to manage as we add weapons. By using a modular "
@@ -37784,23 +37798,23 @@ msgid ""
 "while also making it easier to add/remove/modify weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:675
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:671
 msgid "In ``_ready`` we simply pass over it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:677
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:673
 msgid ""
 "There is one thing of note though, an assumption that we'll fill in ``Player."
 "gd`` at some point."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:679
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:675
 msgid ""
 "We are going to assume that ``Player.gd`` will pass themselves in before "
 "calling any of the functions in ``Weapon_Pistol.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:681
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:677
 msgid ""
 "While this can lead to situations where the player does not pass themselves "
 "in (because we forget), we would have to have a long string of "
@@ -37810,28 +37824,28 @@ msgid ""
 "to each weapon in ``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:687
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:683
 msgid "Next let's look at ``fire_weapon``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:689
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:685
 msgid "The first thing we do is instance the bullet scene we made earlier."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:691
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:687
 msgid ""
 "By instancing the scene, we are creating a new node holding all the node(s) "
 "in the scene we instanced, effectively cloning that scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:693
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:689
 msgid ""
 "Then we add a ``clone`` to the first child node of the root of the scene we "
 "are currently in. By doing this, we're making it a child of the root node of "
 "the currently loaded scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:695
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:691
 msgid ""
 "In other words, we are adding a ``clone`` as a child of the first node "
 "(whatever is at the top of the scene tree) in the currently loaded/opened "
@@ -37840,21 +37854,21 @@ msgid ""
 "scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:698
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:694
 msgid ""
 "As mentioned later below in the section on adding sounds, this method makes "
 "an assumption. This will be explained later in the section on adding sounds "
 "in :ref:`doc_fps_tutorial_part_three`"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:701
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:697
 msgid ""
 "Next we set the global transform of the clone to the ``Pistol_Point``'s "
 "global transform. The reason we do this is so the bullet is spawned at the "
 "end of the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:703
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:699
 msgid ""
 "You can see that ``Pistol_Point`` is positioned right at the end of the "
 "pistol by clicking the :ref:`AnimationPlayer <class_AnimationPlayer>` and "
@@ -37862,23 +37876,23 @@ msgid ""
 "at the end of the pistol when it fires."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:706
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:702
 msgid ""
 "Next we scale it up by a factor of ``4`` because the bullet scene is a "
 "little too small by default."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:708
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:704
 msgid ""
 "Then we set the bullet's damage (``BULLET_DAMAGE``) to the amount of damage "
 "a single pistol bullet does (``DAMAGE``)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:712
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:708
 msgid "Now let's look at ``equip_weapon``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:714
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:710
 msgid ""
 "The first thing we do is check to see whether the animation manager is in "
 "the pistol's idle animation. If we are in the pistol's idle animation, we "
@@ -37886,20 +37900,20 @@ msgid ""
 "has successfully been equipped."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:718
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:714
 msgid ""
 "Because we know our pistol's ``equip`` animation automatically transitions "
 "to the pistol's idle animation, if we are in the pistol's idle animation the "
 "pistol must have finished playing the equip animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:721
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:717
 msgid ""
 "We know these animations will transition because we wrote the code to make "
 "them transition in ``Animation_Manager.gd``"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:723
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:719
 msgid ""
 "Next we check to see if the player is in the ``Idle_unarmed`` animation "
 "state. Because all unequipping animations go to this state, and because any "
@@ -37907,24 +37921,24 @@ msgid ""
 "``Pistol_equip`` if the player is in the ``Idle_unarmed`` state."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:726
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:722
 msgid ""
 "Since we know ``Pistol_equip`` will transition to ``Pistol_idle``, we do not "
 "need to do any more additional processing for equipping weapons, but since "
 "we were not able to equip the pistol yet, we return ``false``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:731
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:727
 msgid "Finally, let's look at ``unequip_weapon``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:733
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:729
 msgid ""
 "``unequip_weapon`` is similar to ``equip_weapon``, but instead we're "
 "checking things in reverse."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:735
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:731
 msgid ""
 "First we check to see whether the player is in the idle animation state. "
 "Then we check to make sure the player is not in the ``Pistol_unequip`` "
@@ -37932,7 +37946,7 @@ msgid ""
 "to play the ``pistol_unequip`` animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:738
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:734
 msgid ""
 "You may be wondering why we are checking to see whether the player is in the "
 "pistol's idle animation, and then making sure the player is not unequipping "
@@ -37942,7 +37956,7 @@ msgid ""
 "unequip animation plays."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:742
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:738
 msgid ""
 "Next we check to see whether the player is in ``Idle_unarmed``, which is the "
 "animation state we will transition into from ``Pistol_unequip``. If the "
@@ -37951,42 +37965,42 @@ msgid ""
 "because we have successfully unequipped the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:745
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:741
 msgid ""
 "If the player is not in ``Idle_unarmed``, we return ``false`` because we "
 "have not yet successfully unequipped the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:748
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:744
 msgid "Creating the other two weapons"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:750
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:746
 msgid ""
 "Now that we have all the code we'll need for the pistol, let's add the code "
 "for the rifle and knife next."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:752
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:748
 msgid ""
 "Select ``Rifle_Point`` (``Player`` -> ``Rotation_Helper`` -> "
 "``Gun_Fire_Points`` -> ``Rifle_Point``) and create a new script called "
 "``Weapon_Rifle.gd``, then add the following:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:805
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:801
 msgid ""
 "Most of this is exactly the same as ``Weapon_Pistol.gd``, so we're only "
 "going to look at what's changed: ``fire_weapon``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:807
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:803
 msgid ""
 "The first thing we do is get the :ref:`Raycast <class_Raycast>` node, which "
 "is a child of ``Rifle_Point``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:809
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:805
 msgid ""
 "Next we force the :ref:`Raycast <class_Raycast>` to update using "
 "``force_raycast_update``. This will force the :ref:`Raycast <class_Raycast>` "
@@ -37994,13 +38008,13 @@ msgid ""
 "collision check with the 3D physics world."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:812
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:808
 msgid ""
 "Then we check to see if the :ref:`Raycast <class_Raycast>` collided with "
 "something."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:814
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:810
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` has collided with something, we first "
 "get the collision body it collided with. This can be a :ref:`StaticBody "
@@ -38008,14 +38022,14 @@ msgid ""
 "`KinematicBody <class_KinematicBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:817
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:813
 msgid ""
 "Next we want to make sure the body we've collided with is not the player, "
 "since we (probably) do not want to give the player the ability to shoot "
 "themselves in the foot."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:819
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:815
 msgid ""
 "If the body is not the player, we then check to see if it has a function/"
 "method called ``bullet_hit``. If it does, we call it and pass in the amount "
@@ -38024,41 +38038,41 @@ msgid ""
 "came."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:824
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:820
 msgid "Now all we need to do is write the code for the knife."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:826
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:822
 msgid ""
 "Select ``Knife_Point`` (``Player`` -> ``Rotation_Helper`` -> "
 "``Gun_Fire_Points`` -> ``Knife_Point``) and create a new script called "
 "``Weapon_Knife.gd``, then add the following:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:877
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:873
 msgid ""
 "As with ``Weapon_Rifle.gd``, the only differences are in ``fire_weapon``, so "
 "let's look at that:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:879
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:875
 msgid ""
 "The first thing we do is get the :ref:`Area <class_Area>` child node of "
 "``Knife_Point``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:881
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:877
 msgid ""
 "Next we want to get all the collision bodies inside the :ref:`Area "
 "<class_Area>` using ``get_overlapping_bodies``. This will return a list of "
 "every body that touches the :ref:`Area <class_Area>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:884
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:880
 msgid "We next want to go through each of those bodies."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:886
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:882
 msgid ""
 "First we check to make sure the body is not the player, because we do not "
 "want to let the player be able to stab themselves. If the body is the "
@@ -38066,7 +38080,7 @@ msgid ""
 "``bodies``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:889
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:885
 msgid ""
 "If we have not jumped to the next body, we then check to see if the body has "
 "the ``bullet_hit`` function/method. If it does, we call it, passing in the "
@@ -38074,7 +38088,7 @@ msgid ""
 "transform of the :ref:`Area <class_Area>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:892
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:888
 msgid ""
 "While we could attempt to calculate a rough location for where the knife hit "
 "exactly, we are not going to because using the :ref:`Area <class_Area>`'s "
@@ -38082,84 +38096,84 @@ msgid ""
 "position for each body is not worth the effort."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:897
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:893
 msgid "Making the weapons work"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:899
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:895
 msgid "Let's start making the weapons work in ``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:901
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:897
 msgid ""
 "First let's start by adding some class variables we'll need for the weapons:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:919
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:915
 msgid "Let's go over what these new variables will do:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:921
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:917
 msgid ""
 "``animation_manager``: This will hold the :ref:`AnimationPlayer "
 "<class_AnimationPlayer>` node and its script, which we wrote previously."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:922
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:918
 msgid ""
 "``current_weapon_name``: The name of the weapon we are currently using. It "
 "has four possible values: ``UNARMED``, ``KNIFE``, ``PISTOL``, and ``RIFLE``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:923
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:919
 msgid "``weapons``: A dictionary that will hold all the weapon nodes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:924
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:920
 msgid ""
 "``WEAPON_NUMBER_TO_NAME``: A dictionary allowing us to convert from a "
 "weapon's number to its name. We'll use this for changing weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:925
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:921
 msgid ""
 "``WEAPON_NAME_TO_NUMBER``: A dictionary allowing us to convert from a "
 "weapon's name to its number. We'll use this for changing weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:926
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:922
 msgid ""
 "``changing_weapon``: A boolean to track whether or not we are changing guns/"
 "weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:927
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:923
 msgid "``changing_weapon_name``: The name of the weapon we want to change to."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:928
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:924
 msgid ""
 "``health``: How much health our player has. In this part of the tutorial we "
 "will not be using it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:929
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:925
 msgid ""
 "``UI_status_label``: A label to show how much health we have, and how much "
 "ammo we have both in our gun and in reserve."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:933
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:929
 msgid ""
 "Next we need to add a few things in ``_ready``. Here's the new ``_ready`` "
 "function:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:965
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:961
 msgid "Let's go over what's changed."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:967
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:963
 msgid ""
 "First we get the :ref:`AnimationPlayer <class_AnimationPlayer>` node and "
 "assign it to the ``animation_manager`` variable. Then we set the callback "
@@ -38168,24 +38182,24 @@ msgid ""
 "function, but we'll get there soon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:971
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:967
 msgid ""
 "Next we get all the weapon nodes and assign them to ``weapons``. This will "
 "allow us to access the weapon nodes only with their name (``KNIFE``, "
 "``PISTOL``, or ``RIFLE``)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:974
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:970
 msgid ""
 "We then get ``Gun_Aim_Point``'s global position so we can rotate the "
 "player's weapons to aim at it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:976
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:972
 msgid "Then we go through each weapon in ``weapons``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:978
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:974
 msgid ""
 "We first get the weapon node. If the weapon node is not ``null``, we then "
 "set its ``player_node`` variable to this script (``Player.gd``). Then we "
@@ -38193,56 +38207,56 @@ msgid ""
 "then rotate it by ``180`` degrees on the ``Y`` axis."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:981
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:977
 msgid ""
 "We rotate all of those weapon points by ``180`` degrees on their ``Y`` axis "
 "because our camera is pointing backwards. If we did not rotate all of these "
 "weapon points by ``180`` degrees, all of the weapons would fire backwards."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:984
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:980
 msgid ""
 "Then we set ``current_weapon_name`` and ``changing_weapon_name`` to "
 "``UNARMED``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:986
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:982
 msgid "Finally, we get the UI :ref:`Label <class_Label>` from our HUD."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:990
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:986
 msgid ""
 "Let's add a new function call to ``_physics_process`` so we can change "
 "weapons. Here's the new code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1000
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:996
 msgid "Now we will call ``process_changing_weapons``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1004
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1000
 msgid ""
 "Now let's add all the player input code for the weapons in "
 "``process_input``. Add the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1044
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1040
 msgid "Let's go over the additions, starting with how we're changing weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1046
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1042
 msgid ""
 "First we get the current weapon's number and assign it to "
 "``weapon_change_number``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1048
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1044
 msgid ""
 "Then we check to see if any of the number keys (keys 1-4) are pressed. If "
 "they are, we set ``weapon_change_number`` to the value mapped at that key."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1051
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1047
 msgid ""
 "The reason key 1 is mapped to ``0`` is because the first element in a list "
 "is mapped to zero, not one. Most list/array accessors in most programming "
@@ -38250,14 +38264,14 @@ msgid ""
 "Zero-based_numbering for more information."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1054
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1050
 msgid ""
 "Next we check to see if ``shift_weapon_positive`` or "
 "``shift_weapon_negative`` is pressed. If one of them is, we add/subtract "
 "``1`` from ``weapon_change_number``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1057
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1053
 msgid ""
 "Because the player may have shifted ``weapon_change_number`` outside of the "
 "number of weapons the player has, we clamp it so it cannot exceed the "
@@ -38265,7 +38279,7 @@ msgid ""
 "``weapon_change_number`` is ``0`` or more."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1060
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1056
 msgid ""
 "Then we check to make sure the player is not already changing weapons. If "
 "the player is not, we then check to see if the weapon the player wants to "
@@ -38275,51 +38289,51 @@ msgid ""
 "set ``changing_weapon`` to ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1064
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1060
 msgid ""
 "For firing the weapon we first check to see if the ``fire`` action is "
 "pressed. Then we check to make sure the player is not changing weapons. Next "
 "we get the weapon node for the current weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1068
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1064
 msgid ""
 "If the current weapon node does not equal ``null``, and the player is in its "
 "``IDLE_ANIM_NAME`` state, we set the player's animation to the current "
 "weapon's ``FIRE_ANIM_NAME``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1073
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1069
 msgid "Let's add ``process_changing_weapons`` next."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1075
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1071
 msgid "Add the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1111
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1107
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:535
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:290
 msgid "Let's go over what's happening here:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1113
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1109
 msgid ""
 "The first thing we do is make sure we've received input to change weapons. "
 "We do this by making sure ``changing_weapons`` is ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1115
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1111
 msgid ""
 "Next we define a variable (``weapon_unequipped``) so we can check whether "
 "the current weapon has been successfully unequipped or not."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1117
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1113
 msgid "Then we get the current weapon from ``weapons``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1119
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1115
 msgid ""
 "If the current weapon is not ``null``, then we need to check whether the "
 "weapon is enabled. If the weapon is enabled, we call its ``unequip_weapon`` "
@@ -38328,7 +38342,7 @@ msgid ""
 "successfully been unequipped."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1122
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1118
 msgid ""
 "If the current weapon is ``null``, then we can simply set "
 "``weapon_unequipped`` to ``true``. The reason we do this check is because "
@@ -38337,19 +38351,19 @@ msgid ""
 "player wants to change to."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1125
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1121
 msgid ""
 "If the player has successfully unequipped the current weapon "
 "(``weapon_unequipped == true``), we need to equip the new weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1127
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1123
 msgid ""
 "First we define a new variable (``weapon_equipped``) for tracking whether "
 "the player has successfully equipped the new weapon or not."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1129
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1125
 msgid ""
 "Then we get the weapon the player wants to change to. If the weapon the "
 "player wants to change to is not ``null``, we then check to see whether it's "
@@ -38358,14 +38372,14 @@ msgid ""
 "``weapon_equipped`` to ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1132
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1128
 msgid ""
 "If the weapon the player wants to change to is ``null``, we simply set "
 "``weapon_equipped`` to ``true`` because we do not have any node/script for "
 "``UNARMED``, nor do we have any animations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1135
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1131
 msgid ""
 "Finally, we check to see whether the player has successfully equipped the "
 "new weapon. If (s)he has done so, we set ``changing_weapon`` to ``false`` "
@@ -38374,30 +38388,30 @@ msgid ""
 "has changed, and then we set ``changing_weapon_name`` to an empty string."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1141
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1137
 msgid ""
 "Now, we need to add one more function to the player, and then the player is "
 "ready to start firing the weapons!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1143
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1139
 msgid ""
 "We need to add ``fire_bullet``, which will be called by the :ref:"
 "`AnimationPlayer <class_AnimationPlayer>` at those points we set earlier in "
 "the :ref:`AnimationPlayer <class_AnimationPlayer>` function track:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1155
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1151
 msgid "Let's go over what this function does:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1157
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1153
 msgid ""
 "First we check to see whether the player is changing weapons. If the player "
 "is changing weapons, we do not want shoot, so we ``return``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1159
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1155
 msgid ""
 "Calling ``return`` stops the rest of the function from being called. In this "
 "case, we are not returning a variable because we are only interested in not "
@@ -38405,45 +38419,45 @@ msgid ""
 "variable either when we call this function."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1163
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1159
 msgid ""
 "Then we tell the current weapon the player is using to fire by calling its "
 "``fire_weapon`` function."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1165
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1161
 msgid ""
 "Remember how we mentioned the speed of the animations for firing was faster "
 "than the other animations? By changing the firing animation speeds, you can "
 "change how fast the weapon fires bullets!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1171
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1167
 msgid ""
 "Before we are ready to test our new weapons, we still have a bit of work to "
 "do."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1174
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1170
 msgid "Creating some test subjects"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1176
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1172
 msgid ""
 "Create a new script by going to the scripting window, clicking \"file\", and "
 "selecting new. Name this script ``RigidBody_hit_test`` and make sure it "
 "extends :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1179
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1175
 msgid "Now we need to add this code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1196
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1192
 msgid "Let's go over how ``bullet_hit`` works:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1199
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1195
 msgid ""
 "First we get the bullet's forward directional vector. This is so we can tell "
 "from which direction the bullet will hit the :ref:`RigidBody "
@@ -38451,7 +38465,7 @@ msgid ""
 "<class_RigidBody>` in the same direction as the bullet."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1202
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1198
 msgid ""
 "We need to boost the directional vector by ``BASE_BULLET_BOOST`` so the "
 "bullets pack a bit more of a punch and move the :ref:`RigidBody "
@@ -38461,11 +38475,11 @@ msgid ""
 "<class_RigidBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1206
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1202
 msgid "Then we apply an impulse using ``apply_impulse``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1208
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1204
 msgid ""
 "First, we need to calculate the position for the impulse. Because "
 "``apply_impulse`` takes a vector relative to the :ref:`RigidBody "
@@ -38478,57 +38492,57 @@ msgid ""
 "<class_RigidBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1214
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1210
 msgid ""
 "Finally, we need to calculate the force for the impulse. For this, we use "
 "the direction the bullet is facing and multiply it by the bullet's damage. "
 "This gives a nice result and for stronger bullets, we get a stronger result."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1219
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1215
 msgid ""
 "Now we need to attach this script to all of the :ref:`RigidBody "
 "<class_RigidBody>` nodes we want to affect."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1221
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1217
 msgid ""
 "Open up ``Testing_Area.tscn`` and select all the cubes parented to the "
 "``Cubes`` node."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1223
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1219
 msgid ""
 "If you select the top cube, and then hold down :kbd:`Shift` and select the "
 "last cube, Godot will select all the cubes in-between!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1226
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1222
 msgid ""
 "Once you have all the cubes selected, scroll down in the inspector until you "
 "get to the \"scripts\" section. Click the drop down and select \"Load\". "
 "Open your newly created ``RigidBody_hit_test.gd`` script."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1234
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1230
 msgid ""
 "That was a lot of code! But now, with all that done, you can go and give "
 "your weapons a test!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1236
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1232
 msgid ""
 "You should now be able to fire as many bullets as you want at the cubes and "
 "they will move in response to the bullets colliding with them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1239
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1235
 msgid ""
 "In :ref:`doc_fps_tutorial_part_three`, we will add ammo to the weapons, as "
 "well as some sounds!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1243
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1239
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_2.zip <files/Godot_FPS_Part_2.zip>`"
@@ -72348,6 +72362,9 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 #: ../../docs/<rst_epilog>:0
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
 msgid "Arguments"
 msgstr ""
 
@@ -76485,7 +76502,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/state_design_pattern.rst:81
 msgid ""
 "Third, the ``_physics_process(delta)`` method is actually implemented here. "
-"This allows the states to have a default ``_phyics_process(delta)`` "
+"This allows the states to have a default ``_physics_process(delta)`` "
 "implementation where ``velocity`` is used to move the player. The way that "
 "the states can modify the movement of the player is to use the ``velocity`` "
 "variable defined in their base class."
@@ -77478,80 +77495,117 @@ msgid ""
 "architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:186
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
+#, fuzzy
+msgid "Custom modules"
+msgstr "إشارات مخصصة"
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
+msgid ""
+"It's possible to compile modules residing outside of Godot's directory tree, "
+"along with the built-in modules."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:193
+msgid ""
+"A ``custom_modules`` build option can be passed to the command line before "
+"compiling. The option represents a comma-separated list of directory paths "
+"containing a collection of independent C++ modules that can be seen as C++ "
+"packages, just like the built-in ``modules/`` directory."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
+msgid ""
+"For instance, it's possible to provide both relative, absolute, and user "
+"directory paths containing such modules:"
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:207
+msgid ""
+"If there's any custom module with the exact directory name as a built-in "
+"module, the engine will only compile the custom one. This logic can be used "
+"to override built-in module implementations."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:213
+#, fuzzy
+msgid ":ref:`doc_custom_modules_in_c++`"
+msgstr ":ref:`doc_android_custom_build`"
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
 msgid "Other build options"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Godot should be built (compiler, debug options, etc.) as well as the "
 "features to include/disable."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:192
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:222
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
 #, fuzzy
 msgid "Overriding the build options"
 msgstr "الوظائف البرمجية القابلة للتجاوز"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:231
 #, fuzzy
 msgid "Using a file"
 msgstr "إنشاء المحتوى"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:203
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:233
 msgid ""
 "The default ``custom.py`` file can be created at the root of the Godot "
 "Engine source to initialize any SCons build options passed via the command "
 "line:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:215
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
 msgid ""
 "You can also disable some of the builtin modules before compiling, saving "
 "some time it takes to build the engine, see :ref:`doc_optimizing_for_size` "
 "page for more details."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:248
 msgid ""
 "Another custom file can be specified explicitly with the ``profile`` command "
 "line option, both overriding the default build configuration:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:225
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:255
 msgid ""
 "Build options set from the file can be overridden by the command line "
 "options."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:258
 msgid "It's also possible to override the options conditionally:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:243
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:273
 msgid "Using the SCONSFLAGS"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:275
 msgid ""
 "``SCONSFLAGS`` is an environment variable which is used by the SCons to set "
 "the options automatically without having to supply them via the command line."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:248
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:278
 msgid ""
 "For instance, you may want to build Godot in parallel with the "
 "aforementioned ``-j`` option for all the future builds:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:267
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:297
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -77559,20 +77613,20 @@ msgid ""
 "modules, or simply don't trust your own shadow)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:272
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:302
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most files are optimized binaries or packages for each platform:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:295
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:325
 msgid ""
 "To create those yourself, follow the instructions detailed for each platform "
 "in this same tutorial section. Each platform explains how to create its own "
 "template."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:299
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:329
 msgid ""
 "The ``version.txt`` file should contain the corresponding Godot version "
 "identifier. This file is used to install export templates in a version-"
@@ -77584,7 +77638,7 @@ msgid ""
 "com/godotengine/godot/blob/master/version.py>`__."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:307
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:337
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross-compilation, since you can cross-compile "
@@ -80036,35 +80090,50 @@ msgid ""
 "work on Godot's core engine as well as the Android platform codebase."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:11
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:12
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:10
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:9
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:9
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:12
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:10
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:10
+msgid "Importing the project"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:14
 msgid ""
-"From Android Studio's welcome window, select **Open an existing Android "
+"From the Android Studio's welcome window select **Open an existing Android "
 "Studio project**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:16
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:21
+#, fuzzy
+msgid "Android Studio's welcome window."
+msgstr "أندرويد"
+
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:23
 msgid ""
 "Navigate to ``<Godot root directory>/platform/android/java`` and select the "
-"``settings.gradle`` gradle file."
+"``settings.gradle`` file."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:17
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:24
 msgid "Android Studio will import and index the project."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:18
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:25
 msgid ""
 "To build the project, follow the :ref:`compiling instructions <toc-devel-"
 "compiling>`."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:20
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:33
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:104
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:63
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:48
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:94
+#: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:27
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:43
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:110
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:105
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
 #, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
@@ -80078,39 +80147,49 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:6
 msgid ""
-"`CLion <https://www.jetbrains.com/clion/>`_ is a commercial IDE for C++. It "
-"requires a ``CMakeLists.txt`` file as a project file, which is problematic "
-"for Godot which uses the SCons buildsystem instead of CMake. However, there "
-"is a ``CMakeLists.txt`` configuration for :ref:`Android Studio "
-"<doc_configuring_an_ide_android_studio>` which can also be used by CLion."
+"`CLion <https://www.jetbrains.com/clion/>`_ is a commercial `JetBrains "
+"<https://www.jetbrains.com/>`_ IDE for C++."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:13
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:12
 msgid ""
-"If you've already opened another project, choose **File > Open** at the top "
-"of the CLion window. Otherwise, choose the option to import an existing "
-"project in the Welcome window."
+"CLion requires a ``CMakeLists.txt`` file as a project file, which is "
+"problematic for Godot because it uses the SCons buildsystem instead of "
+"CMake. However, there is a ``CMakeLists.txt`` configuration for :ref:"
+"`Android Studio <doc_configuring_an_ide_android_studio>` which can also be "
+"used by CLion."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:16
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:17
 msgid ""
-"Navigate to your Godot Git clone then select the folder ``platform/android/"
-"java/lib`` - the ``CMakeLists.txt`` file is located there. Select the folder "
-"(*not* the ``CMakeLists.txt file``), then click **OK**."
+"From the CLion's welcome window choose the option to import an existing "
+"project. If you've already opened another project, choose **File > Open** "
+"from the top menu."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:22
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:20
+msgid ""
+"Navigate to ``<Godot root directory>/platform/android/java/lib`` (the "
+"``CMakeLists.txt`` file is located there) and select it (but *not* the "
+"``CMakeLists.txt`` file itself), then click **OK**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:27
+msgid "The folder containing the ``CMakeLists.txt`` file."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:29
 msgid ""
 "If this popup window appears, select **This Window** to open the project:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:26
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:34
 msgid ""
-"Choose **Tools > CMake >Change Project Root** and select the root Godot "
-"folder."
+"Choose **Tools > CMake > Change Project Root** from the top menu and select "
+"the Godot root folder."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/clion.rst:30
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:40
 msgid ""
 "You should be now be able to see all the project files. Autocomplete should "
 "work once the project has finished indexing."
@@ -80127,52 +80206,106 @@ msgid ""
 "desktop platforms."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:8
-msgid "Start by opening KDevelop and choosing **Open Project**."
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:11
+msgid "From the KDevelop's main screen select **Open Project**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:12
-msgid "Choose the directory where you cloned Godot."
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:17
+msgid "KDevelop's main screen."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:14
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:19
+msgid "Navigate to the Godot root folder and select it."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:20
 msgid ""
 "On the next screen, choose **Custom Build System** for the **Project "
 "Manager**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:18
-msgid "Now that the project has been imported, open the project configuration."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:22
-msgid "Add the following includes/imports:"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:35
-msgid "Apply the changes."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:37
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:26
 msgid ""
-"Switch to the **Custom Build System** tab. Add a build configuration and "
-"keep the build directory blank. Enable build tools and add ``scons`` as the "
-"executable then add ``platform=linuxbsd target=debug`` (``platform=osx`` if "
-"you're on macOS) as the arguments."
+"After the project has been imported, open the project configuration by right-"
+"clicking on it in the **Projects** panel and selecting **Open Configuration.."
+"** option."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:44
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:33
 msgid ""
-"Next, we need to tell KDevelop where to find the binary. From the **Run** "
-"menu, choose **Configure Launches**."
+"Under **Language Support** open the **Includes/Imports** tab and add the "
+"following paths:"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
+msgid "Apply the changes."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:50
 msgid ""
-"Click **Add** if no launcher exists. Then add the path to your executable in "
-"the executable section. Your executable should be located in the ``bin/`` "
-"subdirectory and should be named something like ``godot.linuxbsd.tools.64`` "
-"(the name could be different depending on your platform and build options)."
+"Under **Custom Build System** add a new build configuration with the "
+"following settings:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
+msgid "Build Directory"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
+msgid "*blank*"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
+msgid "Enable"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
+msgid "**True**"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
+msgid "Executable"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
+msgid "**scons**"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
+msgid ""
+"See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:66
+msgid "Apply the changes and close the configuration window."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:69
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:73
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:30
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:58
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:72
+#, fuzzy
+msgid "Debugging the project"
+msgstr "تنظيم المشروع"
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:71
+msgid "Select **Run > Configure Launches...** from the top menu."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:77
+msgid "Click **Add** to create a new launch configuration."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:78
+msgid ""
+"Select **Executable** option and specify the path to your executable located "
+"in the ``<Godot root directory>/bin`` folder. The name depends on your build "
+"configuration, e.g. ``godot.x11.tools.64`` for 64-bit X11 platform with "
+"``tools`` enabled."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:4
@@ -80180,138 +80313,112 @@ msgid "Qt Creator"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:6
-msgid "Qt Creator is a free, open source IDE for all desktop platforms."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:9
-msgid "Importing the project"
+msgid ""
+"`Qt Creator <https://doc.qt.io/qtcreator/index.html>`_ is a free, open "
+"source IDE for all desktop platforms."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:11
-msgid "Choose **New Project > Import Project > Import Existing Project**."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:15
-msgid "Set the path to your Godot root directory and enter the project name."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:19
 msgid ""
-"Here you can choose which folders and files will be visible to the project. "
-"C/C++ files are added automatically. Potentially useful additions: ``*.py`` "
-"for buildsystem files, ``*.java`` for Android platform development, ``*.mm`` "
-"for macOS platform development. Click **Next**."
+"From the Qt Creator's main screen select **New Project > Import Project > "
+"Import Existing Project**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:26
-msgid "Click **Finish**."
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:17
+msgid "Under **Location** select the Godot root folder."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:27
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:23
 msgid ""
-"Add a line containing ``.`` to ``project_name.includes`` to get working code "
-"completion."
+"Next, you can choose which folders and files will be visible to the project. "
+"While C/C++ files are added automatically, other extensions can be "
+"potentially useful: ``*.py`` for buildsystem files, ``*.java`` for Android "
+"platform development, ``*.mm`` for macOS platform development."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:33
-msgid "Build and run"
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:32
+msgid ""
+"You can change this configuration later by right-clicking on your project "
+"and selecting the **Edit Files...** option."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:35
-msgid "Build configuration:"
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:40
+msgid "Finish the import."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:37
-msgid "Click on **Projects** and open the **Build** tab."
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:41
+msgid ""
+"Open the ``project_name.includes`` file and add a line containing ``.`` to "
+"it to correctly enable the code completion."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:38
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:48
+msgid "From the left-side menu select **Projects** and open the **Build** tab."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:49
 msgid "Delete the predefined ``make`` build step."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:42
-msgid "Click **Add Build Step > Custom Process Step**."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:46
-msgid ""
-"Type ``scons`` in the **Command** field. If it fails with ``Could not start "
-"process \"scons\"``, it can mean that ``scons`` is not in your ``PATH`` "
-"environment variable. In this case, you'll have to specify the full path to "
-"the SCons binary."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:50
-msgid ""
-"Fill the **Arguments** field with your compilation options (e.g.: "
-"``p=linuxbsd target=debug -j 4``)."
-msgstr ""
-
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:55
-msgid "Run configuration:"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:57
-msgid "Open the **Run** tab."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:58
 msgid ""
-"Point the **Executable** to your compiled Godot binary (e.g: ``%{buildDir}/"
-"bin/godot.linuxbsd.opt.tools.64``)."
+"Click **Add Build Step > Custom Process Step** to add a new build step with "
+"the following settings:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:60
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:68
 msgid ""
-"If you want to run a specific project, point **Working directory** to the "
-"project folder."
+"If the build fails with ``Could not start process \"scons\"``, it can mean "
+"that ``scons`` is not in your ``PATH`` environment variable. In this case, "
+"you'll have to specify the full path to the SCons binary."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:62
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:75
+msgid "From the left-side menu select **Projects** and open the **Run** tab."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:76
+msgid ""
+"Under **Executable** specify the path to your executable located in the "
+"``<Godot root directory>/bin`` folder. The name depends on your build "
+"configuration, e.g. ``godot.x11.tools.64`` for 64-bit X11 platform with "
+"``tools`` enabled. You can use ``%{buildDir}`` to reference the project "
+"root, e.g: ``%{buildDir}/bin/godot.x11.opt.tools.64``."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:80
+msgid ""
+"If you want to run a specific project, specify its root folder under "
+"**Working directory**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:81
 msgid ""
 "If you want to run the editor, add ``-e`` to the **Command line arguments** "
 "field."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:68
-msgid "Updating sources after pulling latest commits"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:70
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:87
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:55
 msgid ""
-"As a developer, you usually want to frequently pull the latest commits from "
-"the upstream Git repository or a specific fork. However, this brings a "
-"problem with it: as the development continues, source files (and folders) "
-"are added or removed. These changes need to be reflected in your project "
-"files for Qt Creator too, so you continue to have a nice programming "
-"experience. A simple way to check is to right click at your root folder in "
-"the **Projects View** and click on **Edit files...**."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:80
-msgid ""
-"Now a new dialog should appear that is similar in functionality to the one "
-"in the third step of the *Importing the project* section above. Here, you "
-"can check whether you want to add/remove specific files and/or folders. You "
-"can choose by clicking with your mouse or just simply by clicking the "
-"**Apply Filter** button. Click on **OK** and you're ready to continue "
-"working."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:89
-msgid "Code style configuration"
+"To learn more about command line arguments, refer to the :ref:`command line "
+"tutorial <doc_command_line_tutorial>`."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:91
+msgid "Code style configuration"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:93
 msgid ""
 "Developers must follow the project's :ref:`code style "
 "<doc_code_style_guidelines>` and the IDE should help them follow it. By "
-"default, Qt Creator does use spaces for indentation which doesn't match the "
+"default, Qt Creator uses spaces for indentation which doesn't match the "
 "Godot code style guidelines. You can change this behavior by changing the "
 "**Code Style** in **Options > C++**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:98
+#: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:102
 msgid ""
 "Click on **Edit** to change the current settings, then click on **Copy Built-"
 "in Code Style** button to set a new code style. Set a name for it (e.g. "
@@ -80325,166 +80432,173 @@ msgstr "البرمجية البصرية VisualScript"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:6
 msgid ""
-"Visual Studio Community is a Windows-only IDE that's free for non-commercial "
-"use. It has many useful features, such as memory view, performance view, "
-"source control and more. You can get it `from Microsoft <https://"
-"visualstudio.microsoft.com/downloads/>`__."
+"`Visual Studio Community <https://visualstudio.microsoft.com>`__ is a "
+"Windows-only IDE by `Microsoft <https://microsoft.com>`_ that's free for non-"
+"commercial use. It has many useful features, such as memory view, "
+"performance view, source control and more."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:14
-msgid "To start developing with Visual Studio, follow these steps:"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:16
-msgid "Open the Visual Studio Installer and install the C++ package:"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:20
 msgid ""
-"Open a Command Prompt or PowerShell window, use ``cd`` to reach the Godot "
-"source directory and run ``scons platform=windows vsproj=yes``."
+"Visual Studio requires a solution file to work on a project. While Godot "
+"does not come with the solution file, it can be generated using SCons."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:17
+msgid ""
+"Navigate to the Godot root folder and open a Command Prompt or PowerShell "
+"window."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:18
+msgid "Run ``scons platform=windows vsproj=yes`` to generate the solution."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:19
+msgid ""
+"You can now open the project by double-clicking on the ``godot.sln`` in the "
+"project root or by using the **Open a project or solution** option inside of "
+"the Visual Studio."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:21
+msgid "Use the **Build** top menu to build the project."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:23
 msgid ""
-"Now open the Godot folder by clicking **Open a project or solution** and "
-"choose ``godot.sln``. - You can also double-click the ``godot.sln`` file in "
-"Explorer."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:27
-msgid "You can now start developing with Visual Studio."
+"Visual Studio must be configured with the C++ package. It can be selected in "
+"the intaller:"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:32
 msgid ""
 "Visual Studio features a powerful debugger. This allows the user to examine "
-"Godot's source code, stop at specific points in the code, make changes, and "
-"view them on the run."
+"Godot's source code, stop at specific points in the code, inspect the "
+"current execution context, and make live changes to the codebase."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:35
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:36
 msgid ""
-"Debugging the Godot Engine inside the editor will require an extra setup "
-"step."
+"You can launch the project with the debugger attached using the **Debug > "
+"Start Debugging** option from the top menu. However, unless you want to "
+"debug the project manager specifically, you'd need to configure debugging "
+"options first. This is due to the fact that when the Godot project manager "
+"opens a project, the initial process is terminated and the debugger gets "
+"detached."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:37
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:41
 msgid ""
-"Because opening Godot opens the Project Manager at first instead of the "
-"project you're working on, the debugger will detach as soon as you open a "
-"project. This means that the debugger will stop, even though Godot is still "
-"running in another process."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:42
-msgid ""
-"To overcome this, you need to edit the debugging command line arguments in "
-"VS. In your project, click **Project > Project Properties**:"
+"To configure the launch options to use with the debugger use **Project > "
+"Properties** from the top menu:"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:47
-msgid "Then add this to the command arguments:"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:51
 msgid ""
-"The ``-e`` flag is for entering the editor directly (which skips the Project "
-"Manager)."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:52
-msgid ""
-"The ``--path`` argument should be an *absolute* path to a project directory "
-"(not a `project.godot` file)."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:55
-msgid ""
-"To learn more about command line arguments, refer to the :ref:`command line "
-"tutorial <doc_command_line_tutorial>`."
+"Open the **Debugging** section and under **Command Arguments** add two new "
+"arguments: the ``-e`` flag opens the editor instead of the project manager, "
+"and the ``--path`` argument tells the executable to open the specified "
+"project (must be provided as an *absolute* path to the project root, not the "
+"``project.godot`` file)."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:58
 msgid ""
+"Even if you start the project without a debugger attached it can still be "
+"connected to the running process using **Debug > Attach to Process...** menu."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:61
+msgid ""
 "To check that everything is working, put a breakpoint in ``main.cpp`` and "
-"press F5 to start debugging."
+"press :kbd:`F5` to start debugging."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:6
 msgid ""
-"Visual Studio Code is a free cross-platform IDE (not to be confused with :"
-"ref:`doc_configuring_an_ide_vs`). You can get it `from Microsoft <https://"
-"code.visualstudio.com/>`__."
+"`Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-"
+"platform IDE by `Microsoft <https://microsoft.com>`_ (not to be confused "
+"with :ref:`doc_configuring_an_ide_vs`)."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:11
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:12
 msgid ""
 "Make sure the C/C++ extension is installed. You can find instructions in the "
-"`documentation <https://code.visualstudio.com/docs/languages/cpp>`_."
+"`official documentation <https://code.visualstudio.com/docs/languages/cpp>`_."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:13
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:14
 msgid ""
-"Open the cloned Godot folder in Visual Studio Code with **File > Open "
-"Folder...**."
+"From the Visual Studio Code's main screen open the Godot root folder with "
+"**File > Open Folder...**."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:16
 msgid ""
-"In order to build the project, you need two configuration files: ``launch."
-"json`` and ``tasks.json``. To create them:"
+"Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter "
+"*Configure Task*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:19
-msgid ""
-"Open the **Debug** view by pressing :kbd:`Ctrl + Shift + D` and select the "
-"cogwheel with an orange dot:"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:24
-msgid ""
-"Select **C++ (GDB/LLDB)** (it might be named differently on macOS or "
-"Windows)."
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:21
+msgid "Select the **Create tasks.json file from template** option."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:26
-msgid "Update ``launch.json`` to match:"
+msgid "Then select **Others**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:30
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:31
 msgid ""
-"If you're following this guide on macOS or Windows, you will have to adjust "
-"``godot.linuxbsd.tools.64`` accordingly."
+"Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new "
+"section to it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:33
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:52
+msgid "An example of a filled out ``tasks.json``."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:54
 msgid ""
-"Create a ``tasks.json`` file by starting the Debug process with :kbd:`F5`. "
-"Visual Studio Code will show a dialog with a **Configure Task** button. "
-"Choose it and select **Create tasks.json file from template**, then select "
-"**Others**."
+"Arguments are can be different based on your own setup and needs. See :ref:"
+"`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:37
-msgid "Update ``tasks.json`` to match:"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:41
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:60
 msgid ""
-"If you're following this guide on macOS or Windows, you will have to adjust "
-"``platform=linuxbsd`` accordingly."
+"To run and debug the project you need to create a new configuration in the "
+"``launch.json`` file."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:44
-msgid ""
-"You can now start the Debug process again to test that everything works."
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:62
+msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:45
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:63
 msgid ""
-"If the build phase fails, check the console for hints. On Linux, it's most "
-"likely due to missing dependencies. Check :ref:`doc_compiling_for_linuxbsd`."
+"If ``launch.json`` file is missing you will be prompted to create a new one."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:68
+msgid ""
+"Select **C++ (GDB/LLDB)**. There may be another platform specific option "
+"here. If selected, adjust the configuration example provided accordingly."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:70
+msgid ""
+"Within the ``launch.json`` file find the ``\"configurations\"`` array and "
+"add a new section to it:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:100
+msgid "An example of a filled out ``launch.json``."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:102
+msgid ""
+"The name under ``program`` depends on your build configuration, e.g. ``godot."
+"x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:4
@@ -80493,185 +80607,160 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:6
 msgid ""
-"Xcode is a free macOS-only IDE. You can download it from the Mac App Store."
+"`Xcode <https://developer.apple.com/xcode>`_ is a free macOS-only IDE. You "
+"can download it from the Mac App Store."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:11
-msgid "Create an Xcode external build project anywhere."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:15
-msgid "Go to the build target's **Info** tab, then:"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:17
-msgid "Set **Build Tool** to the full path to SCons."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:12
+msgid ""
+"From Xcode's main screen create a new project using the **Other > External "
+"Build System** template."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:18
 msgid ""
-"Set **Arguments** to something like ``platform=osx tools=yes bits=64 "
-"target=debug``."
+"Open your build targets from the **Targets** section and select the **Info** "
+"tab."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:20
-msgid "Set **Directory** to the path to Godot's source folder."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:19
+#, fuzzy
+msgid "Fill out the form with the following settings:"
+msgstr "المستند الرئيسي لهذا الموقع منظم في الأقسام التالية:"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
+msgid "Build Tool"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:21
-msgid "You may uncheck **Pass build settings in environment**."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
+msgid "A full path to the **scons** executable, e.g. **/usr/local/bin/scons**"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:25
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
+#, fuzzy
+msgid "Directory"
+msgstr "مُتجه"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
+msgid "A full path to the Godot root folder"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:33
 msgid ""
-"Add a Command Line Tool target which will be used for indexing the project:"
+"Add a Command Line Tool target which will be used for indexing the project "
+"by choosing **File > New > Target...**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:27
-msgid ""
-"In Xcode's menu, choose **File > New > Target...** and add a new Xcode "
-"command line tool target."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:40
+msgid "Select **OS X > Application > Command Line Tool**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:34
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:46
 msgid ""
 "Name it something so you know not to compile with this target (e.g. "
 "``GodotXcodeIndex``)."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:35
-msgid ""
-"Goto the newly created target's **Build Settings** tab and look for **Header "
-"Search Paths**."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:36
-msgid ""
-"Set **Header Search Paths** to the absolute path to Godot's source folder."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:37
-msgid ""
-"Make it recursive by adding two asterisks (``**``) to the end of the path, e."
-"g. ``/Users/me/repos/godot-source/**``."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:40
-#, fuzzy
-msgid "Add the Godot source to the project:"
-msgstr "أضف هذا النص إلى الوظيفة البرمجية:"
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:42
-msgid "Drag and drop Godot source into the project file browser."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:43
-msgid "Uncheck **Create external build system project**."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:47
-msgid "Click **Next**."
-msgstr ""
-
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:48
-msgid "Select **Create groups**."
+msgid ""
+"For this target open the **Build Settings** tab and look for **Header Search "
+"Paths**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:52
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:49
 msgid ""
-"Check *only* your command line indexing target in the **Add to targets** "
-"section."
+"Set **Header Search Paths** to the absolute path to the Godot root folder. "
+"You need to include subdirectories as well. To achieve that, add two two "
+"asterisks (``**``) to the end of the path, e.g. ``/Users/me/repos/godot-"
+"source/**``."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:53
+msgid ""
+"Add the Godot source to the project by dragging and dropping it into the "
+"project file browser."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:54
-msgid ""
-"Click finish. Xcode will now index the files. This may take a few minutes."
+msgid "Uncheck **Create external build system project**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:55
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:60
+msgid ""
+"Next select **Create groups** for the **Added folders** option and check "
+"*only* your command line indexing target in the **Add to targets** section."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:67
+msgid "Xcode will now index the files. This may take a few minutes."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:68
 msgid ""
 "Once Xcode is done indexing, you should have jump-to-definition, "
 "autocompletion, and full syntax highlighting."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:59
-msgid "Scheme setup"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:61
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:74
 msgid ""
-"To enable debugging support, edit the external build target's build scheme:"
+"To enable debugging support you need to edit the external build target's "
+"build and run schemes."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:63
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:76
 msgid "Open the scheme editor of the external build target."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:64
-msgid "Expand the **Build** menu."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:65
-msgid "Goto **Post Actions**."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:66
-msgid ""
-"Add a new script run action, select your project in **Provide build settings "
-"from** as this allows you to use the``${PROJECT_DIR}`` variable."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:71
-msgid ""
-"Write a script that gives the binary a name that Xcode will recognize, such "
-"as: ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/godot/"
-"bin/godot``"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:73
-msgid "Build the external build target."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:75
-msgid "Edit the external build target's Run scheme:"
-msgstr ""
-
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:77
-msgid "Open the scheme editor again."
+msgid "Locate the **Build > Post Actions** section."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:78
-msgid "Click **Run**."
+msgid "Add a new script run action"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:82
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:79
+msgid ""
+"Under **Provide build settings from** select your project. This allows to "
+"reference the project directory within the script."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:81
+msgid ""
+"Create a script that will give the binary a name that Xcode can recognize, e."
+"g.:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
+msgid "Build the external build target."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:93
+msgid "Open the scheme editor again and select **Run**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:99
 msgid ""
 "Set the **Executable** to the file you linked in your post-build action "
 "script."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:83
-msgid "Check **Debug executable** if it isn't checked already."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:100
+msgid "Check **Debug executable**."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:84
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:101
 msgid ""
-"You can go to **Arguments** tab and specify the full path to a ``project."
-"godot`` file to debug the editor instead of the project manager. "
-"Alternatively, use ``--path`` to point to a project *folder* which will be "
-"run directly (instead of opening the editor)."
+"You can add two arguments on the **Arguments** tab: the ``-e`` flag opens "
+"the editor instead of the project manager, and the ``--path`` argument tells "
+"the executable to open the specified project (must be provided as an "
+"*absolute* path to the project root, not the ``project.godot`` file)."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:89
-msgid "Test the Run scheme:"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
-msgid "Set a breakpoint in ``platform/osx/godot_main_osx.mm``."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:92
-msgid "If all goes well, it should break at the specified breakpoint."
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:106
+msgid ""
+"To check that everything is working, put a breakpoint in ``platform/osx/"
+"godot_main_osx.mm`` and run the project."
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:4
@@ -81695,22 +81784,87 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:261
-msgid "Improving the build system for development"
+msgid "Compiling a module externally"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:263
+msgid ""
+"Compiling a module involves moving the module's sources directly under the "
+"engine's ``modules/`` directory. While this is the most straightforward way "
+"to compile a module, there are a couple of reasons as to why this might not "
+"be a practical thing to do:"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:268
+msgid ""
+"Having to manually copy modules sources every time you want to compile the "
+"engine with or without the module, or taking additional steps needed to "
+"manually disable a module during compilation with a build option similar to "
+"``module_summator_enabled=no``. Creating symbolic links may also be a "
+"solution, but you may additionally need to overcome OS restrictions like "
+"needing the symbolic link privilege if doing this via script."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:275
+msgid ""
+"Depending on whether you have to work with the engine's source code, the "
+"module files added directly to ``modules/`` changes the working tree to the "
+"point where using a VCS (like ``git``) proves to be cumbersome as you need "
+"to make sure that only the engine-related code is committed by filtering "
+"changes."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:281
+msgid ""
+"So if you feel like the independent structure of custom modules is needed, "
+"lets take our \"summator\" module and move it to the engine's parent "
+"directory:"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:289
+msgid ""
+"Compile the engine with our module by providing ``custom_modules`` build "
+"option which accepts a comma-separated list of directory paths containing "
+"custom C++ modules, similar to the following:"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:297
+msgid ""
+"The build system shall detect all modules under the ``../modules`` directory "
+"and compile them accordingly, including our \"summator\" module."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:302
+msgid ""
+"Any path passed to ``custom_modules`` will be converted to an absolute path "
+"internally as a way to distinguish between custom and built-in modules. It "
+"means that things like generating module documentation may rely on a "
+"specific path structure on your machine."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:309
+msgid ""
+":ref:`Introduction to the buildsystem - Custom modules build option "
+"<doc_buildsystem_custom_modules>`."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:312
+msgid "Improving the build system for development"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:314
 msgid ""
 "So far we defined a clean and simple SCsub that allows us to add the sources "
 "of our new module as part of the Godot binary."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:266
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:317
 msgid ""
 "This static approach is fine when we want to build a release version of our "
 "game given we want all the modules in a single binary."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:269
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:320
 msgid ""
 "However, the trade-off is every single change means a full recompilation of "
 "the game. Even if SCons is able to detect and recompile only the file that "
@@ -81718,27 +81872,27 @@ msgid ""
 "a long and costly part."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:274
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:325
 msgid ""
 "The solution to avoid such a cost is to build our own module as a shared "
 "library that will be dynamically loaded when starting our game's binary."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:307
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:358
 msgid ""
 "Once compiled, we should end up with a ``bin`` directory containing both the "
 "``godot*`` binary and our ``libsummator*.so``. However given the .so is not "
 "in a standard directory (like ``/usr/lib``), we have to help our binary find "
-"it during runtime with the ``LD_LIBRARY_PATH`` environ variable:"
+"it during runtime with the ``LD_LIBRARY_PATH`` environment variable:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:317
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:368
 msgid ""
 "**note**: Pay attention you have to ``export`` the environ variable "
 "otherwise you won't be able to play your project from within the editor."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:320
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:371
 msgid ""
 "On top of that, it would be nice to be able to select whether to compile our "
 "module as shared library (for development) or as a part of the Godot binary "
@@ -81746,23 +81900,23 @@ msgid ""
 "using the `ARGUMENT` command:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:352
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:403
 msgid ""
 "Now by default ``scons`` command will build our module as part of Godot's "
 "binary and as a shared library when passing ``summator_shared=yes``."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:355
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:406
 msgid ""
 "Finally, you can even speed up the build further by explicitly specifying "
 "your shared module as target in the SCons command:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:363
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:414
 msgid "Writing custom documentation"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:365
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:416
 msgid ""
 "Writing documentation may seem like a boring task, but it is highly "
 "recommended to document your newly created module in order to make it easier "
@@ -81771,22 +81925,22 @@ msgid ""
 "someone else, so be kind to your future self!"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:371
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:422
 msgid "There are several steps in order to setup custom docs for the module:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:373
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:424
 msgid ""
 "Make a new directory in the root of the module. The directory name can be "
 "anything, but we'll be using the ``doc_classes`` name throughout this "
 "section."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:376
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:427
 msgid "Now, we need to edit ``config.py``, add the following snippet:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:388
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:439
 msgid ""
 "The ``get_doc_path()`` function is used by the build system to determine the "
 "location of the docs. In this case, they will be located in the ``modules/"
@@ -81794,7 +81948,7 @@ msgid ""
 "your module will fall back to the main ``doc/classes`` directory."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:394
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:445
 msgid ""
 "The ``get_doc_classes()`` method is necessary for the build system to know "
 "which registered classes belong to the module. You need to list all of your "
@@ -81802,64 +81956,64 @@ msgid ""
 "classes`` directory."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:401
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:452
 msgid ""
-"You can use git to check if you have missed some of your classes by checking "
+"You can use Git to check if you have missed some of your classes by checking "
 "the untracked files with ``git status``. For example::"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:406
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:457
 msgid "Example output::"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:418
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:469
 #, fuzzy
 msgid "Now we can generate the documentation:"
 msgstr "عن المستندات"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:420
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:471
 msgid ""
 "We can do this via running Godot's doctool i.e. ``godot --doctool <path>``, "
 "which will dump the engine API reference to the given ``<path>`` in XML "
 "format."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:423
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:474
 msgid ""
 "In our case we'll point it to the root of the cloned repository. You can "
 "point it to an another folder, and just copy over the files that you need."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:426
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:477
 msgid "Run command:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:432
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:483
 msgid ""
 "Now if you go to the ``godot/modules/summator/doc_classes`` folder, you will "
 "see that it contains a ``Summator.xml`` file, or any other classes, that you "
 "referenced in your ``get_doc_classes`` function."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:436
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:487
 msgid ""
 "Edit the file(s) following :ref:`doc_updating_the_class_reference` and "
 "recompile the engine."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:438
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:489
 msgid ""
 "Once the compilation process is finished, the docs will become accessible "
 "within the engine's built-in documentation system."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:441
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:492
 msgid ""
 "In order to keep documentation up-to-date, all you'll have to do is simply "
 "modify one of the XML files and recompile the engine from now on."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:444
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:495
 msgid ""
 "If you change your module's API, you can also re-extract the docs, they will "
 "contain the things that you previously added. Of course if you point it to "
@@ -81867,94 +82021,94 @@ msgid ""
 "from an older engine build on top of the newer ones."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:449
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:500
 msgid ""
 "Note that if you don't have write access rights to your supplied ``<path>``, "
 "you might encounter an error similar to the following:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:461
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:512
 msgid "Adding custom editor icons"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:463
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:514
 msgid ""
 "Similarly to how you can write self-contained documentation within a module, "
 "you can also create your own custom icons for classes to appear in the "
 "editor."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:466
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:517
 msgid ""
 "For the actual process of creating editor icons to be integrated within the "
 "engine, please refer to :ref:`doc_editor_icons` first."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:469
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:520
 msgid "Once you've created your icon(s), proceed with the following steps:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:471
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:522
 msgid ""
 "Make a new directory in the root of the module named ``icons``. This is the "
 "default path for the engine to look for module's editor icons."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:474
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:525
 msgid ""
 "Move your newly created ``svg`` icons (optimized or not) into that folder."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:476
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:527
 msgid ""
 "Recompile the engine and run the editor. Now the icon(s) will appear in "
 "editor's interface where appropriate."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:479
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:530
 msgid ""
 "If you'd like to store your icons somewhere else within your module, add the "
 "following code snippet to ``config.py`` to override the default path:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:488
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:539
 msgid "Summing up"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:490
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:541
 msgid "Remember to:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:492
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:543
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:493
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:544
 msgid ""
 "use ``_bind_methods`` to bind your functions to scripting, and to allow them "
 "to work as callbacks for signals."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:496
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:547
 msgid ""
 "But this is not all, depending what you do, you will be greeted with some "
 "(hopefully positive) surprises."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:499
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:550
 msgid ""
 "If you inherit from :ref:`class_Node` (or any derived node type, such as "
 "Sprite), your new class will appear in the editor, in the inheritance tree "
 "in the \"Add Node\" dialog."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:502
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:553
 msgid ""
 "If you inherit from :ref:`class_Resource`, it will appear in the resource "
 "list, and all the exposed properties can be serialized when saved/loaded."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:505
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:556
 msgid ""
 "By this same logic, you can extend the Editor and almost any area of the "
 "engine."
@@ -83281,7 +83435,7 @@ msgid ""
 "project in the form of a patch (a text file describing the changes in a "
 "ready-to-apply manner) or - in the modern workflow that we use - via a so-"
 "called \"pull request\" (PR), i.e. a proposal to directly merge one or more "
-"git commits (patches) into the main development branch."
+"Git commits (patches) into the main development branch."
 msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:68
@@ -83303,7 +83457,7 @@ msgstr ""
 msgid ""
 "The whole community will benefit from your work, and other contributors will "
 "behave the same way, contributing code that will be beneficial to you. At "
-"the time of this writing, more than 300 developers have contributed code "
+"the time of this writing, more than 1000 developers have contributed code "
 "changes to the engine!"
 msgstr ""
 
@@ -83311,7 +83465,7 @@ msgstr ""
 msgid ""
 "To ensure good collaboration and overall quality, the Godot developers "
 "enforce some rules for code contributions, for example regarding the style "
-"to use in the C++ code (indentation, brackets, etc.) or the git and PR "
+"to use in the C++ code (indentation, brackets, etc.) or the Git and PR "
 "workflow."
 msgstr ""
 
@@ -83475,7 +83629,7 @@ msgid ""
 "API as exposed to GDScript and the other scripting languages. It can be "
 "consulted offline, directly in Godot's code editor, or online at :ref:`Godot "
 "API <toc-class-ref>`. To contribute to the class reference, you have to edit "
-"the `doc/base/classes.xml` in Godot's git repository, and make a pull "
+"the `doc/base/classes.xml` in Godot's Git repository, and make a pull "
 "request. See :ref:`doc_updating_the_class_reference` for more details."
 msgstr ""
 
@@ -84174,7 +84328,7 @@ msgstr ""
 msgid ""
 "By default, those changes are *unstaged*. The staging area is a layer "
 "between your working directory (where you make your modifications) and the "
-"local git repository (the commits and all the metadata in the ``.git`` "
+"local Git repository (the commits and all the metadata in the ``.git`` "
 "folder). To bring changes from the working directory to the Git repository, "
 "you need to *stage* them with the ``git add`` command, and then to commit "
 "them with the ``git commit`` command."
@@ -85083,7 +85237,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:65
-msgid "*Needs rebase*: the issue need a git rebase to be merged."
+msgid "*Needs rebase*: the issue need a Git rebase to be merged."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:66
@@ -86139,7 +86293,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:42
 msgid ""
-"If you're new to git and GitHub, this guide will help you get started. "
+"If you're new to Git and GitHub, this guide will help you get started. "
 "You'll learn to:"
 msgstr ""
 
@@ -86210,7 +86364,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:86
 msgid ""
-"You should have two: ``origin``, your fork on GitHub, that git adds by "
+"You should have two: ``origin``, your fork on GitHub that Git adds by "
 "default, and ``upstream``, that you just added:"
 msgstr ""
 
@@ -86247,8 +86401,8 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:122
 msgid ""
-"If you're feeling lost by now, come to our `IRC channels <http://webchat."
-"freenode.net/?channels=#godotengine>`_ and ask for help. Experienced git "
+"If you're feeling lost by now, come to our `IRC channels <https://webchat."
+"freenode.net/?channels=#godotengine>`_ and ask for help. Experienced Git "
 "users will give you a hand."
 msgstr ""
 
@@ -87002,6 +87156,10 @@ msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Add the Godot source to the project:"
+#~ msgstr "أضف هذا النص إلى الوظيفة البرمجية:"
 
 #~ msgid ""
 #~ "To begin, click the \"Add/Create a New Node\" button and add an :ref:"
