@@ -74,9 +74,8 @@ while [ $# -gt 0 ]; do
   shift
 done
 
-# Make ordered list of Sphinx templates based on table of contents in index.html
-# This requires having run `make html` in the docs repo and copied the main
-# `index.html` over next to this script.
+# Make ordered list of Sphinx templates based on the directory
+# structure of rst files in the source directory.
 if [ "$make_templates_list" = true ]; then
   echo "=== Making ordered list of Sphinx templates based on table of contents ==="
   find $SOURCE_DIR -type f -name "*.rst" > templates_list.txt
