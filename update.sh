@@ -79,15 +79,9 @@ done
 # `index.html` over next to this script.
 if [ "$make_templates_list" = true ]; then
   echo "=== Making ordered list of Sphinx templates based on table of contents ==="
-  if [ ! -f "index.html" ]; then
-    echo "Main 'index.html' file is missing, build it with 'make docs' and copy it here."
-    exit 1
-  fi
-  # The strings we are interested in are of the form:
-  # <li class="toctree-l1"><a class="reference internal" href="about/index.html">About</a><ul>
-  toc=$(grep "<li class=\"toctree-.*href=\".*.html\">.*" index.html)
-  templates=$(echo "$toc" | sed -e 's@^.*href="\(.*\)\.html".*@\1.pot@' | awk '!x[$0]++')
-  echo -e "index.pot\n$templates" > templates_list.txt
+  find $SOURCE_DIR -type f -name "*.rst" > templates_list.txt
+  sed -i 's|.rst|.pot|g' templates_list.txt
+  sed -i "s|$SOURCE_DIR/||g" templates_list.txt
 fi
 
 # Generate/Update Sphinx template from rst files
