@@ -42,7 +42,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: 2020-05-22 21:00+0000\n"
 "Last-Translator: Doyun Kwon <caen4516@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
@@ -212,6 +212,7 @@ msgstr "정보"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:7
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:4
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:7
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:7
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:7
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:4
 #: ../../docs/tutorials/2d/2d_transforms.rst:7
@@ -609,7 +610,7 @@ msgid "**For the editor:**"
 msgstr "**편집기의 경우:**"
 
 #: ../../docs/about/faq.rst:38 ../../docs/tutorials/misc/jitter_stutter.rst:59
-#: ../../docs/development/compiling/compiling_with_mono.rst:329
+#: ../../docs/development/compiling/compiling_with_mono.rst:334
 msgid "Windows"
 msgstr "Windows"
 
@@ -647,14 +648,14 @@ msgstr "Windows (그리고 UWP)"
 #: ../../docs/about/faq.rst:47
 #: ../../docs/getting_started/step_by_step/exporting.rst:310
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
-#: ../../docs/development/compiling/compiling_with_mono.rst:321
+#: ../../docs/development/compiling/compiling_with_mono.rst:326
 msgid "Android"
 msgstr "Android"
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/getting_started/step_by_step/exporting.rst:363
 #: ../../docs/tutorials/misc/jitter_stutter.rst:96
-#: ../../docs/development/compiling/compiling_with_mono.rst:323
+#: ../../docs/development/compiling/compiling_with_mono.rst:328
 msgid "iOS"
 msgstr "iOS"
 
@@ -2376,7 +2377,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 #: ../../docs/getting_started/editor/external_editor.rst:32
-#: ../../docs/development/compiling/compiling_with_mono.rst:191
+#: ../../docs/development/compiling/compiling_with_mono.rst:196
 msgid "Editor"
 msgstr "편집기"
 
@@ -5078,21 +5079,21 @@ msgstr ""
 "이제 스크립트의 나머지를 봅시다. ``_ready()`` 에서 우리는 무작위로 세 개의 애"
 "니메이션 유형들 중 하나를 고릅니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:635
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:636
 msgid ""
 "First, we get the list of animation names from the AnimatedSprite's "
 "``frames`` property. This returns an Array containing all three animation "
 "names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:639
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:640
 msgid ""
 "We then need to pick a random number between ``0`` and ``2`` to select one "
 "of these names from the list (array indices start at ``0``). ``randi() % n`` "
 "selects a random integer between ``0`` and ``n-1``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:643
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:644
 #, fuzzy
 msgid ""
 "You must use ``randomize()`` if you want your sequence of \"random\" numbers "
@@ -5104,7 +5105,7 @@ msgstr ""
 "사용할꺼니까, 더이상 여기 있으면 안됩니다. ``randi() % n`` 은  ``0`` 과 "
 "``n-1`` 사이의 무작위 정수 값을 얻는 기본적인 방법입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:647
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:648
 #, fuzzy
 msgid ""
 "The last piece is to make the mobs delete themselves when they leave the "
@@ -5114,15 +5115,15 @@ msgstr ""
 "적이 나갈 때 스스로를 삭제하는 것이 적의 마지막 과제입니다. ``Visubility`` 노"
 "드의 ``screen_exited()`` 시그널을 연결하고 이 코드를 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:664
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:665
 msgid "This completes the `Mob` scene."
 msgstr "이걸로 `적` 씬이 완성되었습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:667
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:668
 msgid "Main scene"
 msgstr "메인 씬"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:669
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:670
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
@@ -5132,7 +5133,7 @@ msgstr ""
 "`Node <class_Node>` 를 만드세요. \"인스턴스\" 버튼을 누르고 저장한 ``Player."
 "tscn`` 을 선택하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:675
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:676
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
@@ -5140,7 +5141,7 @@ msgstr ""
 "``Main`` 의 자식으로 다음의 노드들을 추가하고, 여기에서 설명하는 대로 이름을 "
 "지으세요 (값은 초 단위 입니다):"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:678
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:679
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
@@ -5148,7 +5149,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (``MobTimer`` 라고 이름지음) - 얼마나 자주 적이 스"
 "폰하는지를 조절함"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:679
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:680
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
@@ -5156,7 +5157,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (``ScoreTimer`` 라고 이름지음) - 매 초마다 점수를 "
 "증가시킴"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:680
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
@@ -5164,7 +5165,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (``StratTimer`` 라고 이름지음) - 시작하기 전에 지"
 "연시간을 줌"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:682
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
@@ -5172,24 +5173,24 @@ msgstr ""
 ":ref:`Position2D <class_Position2D>` (``StartPosition`` 이라고 이름지음) - 플"
 "레이어의 시작 위치를 표시함"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:683
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:684
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
 msgstr "각  ``Timer`` 마다 ``Wait Time`` 속성을 다음과 같이 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:686
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:687
 msgid "``MobTimer``: ``0.5``"
 msgstr "``MobTimer``: ``0.5``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:687
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:688
 msgid "``ScoreTimer``: ``1``"
 msgstr "``ScoreTimer``: ``1``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:688
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:689
 msgid "``StartTimer``: ``2``"
 msgstr "``StartTimer``: ``2``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:690
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:691
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
@@ -5197,11 +5198,11 @@ msgstr ""
 "그리고, ``StartTimer`` 속성의 ``One Shot`` 을 \"On\"으로 설정하고 "
 "``StartPosition`` 노드의 ``Position`` 을 ``(240, 450)`` 으로 설정하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:694
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:695
 msgid "Spawning mobs"
 msgstr "적 스폰하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:696
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:697
 msgid ""
 "The Main node will be spawning new mobs, and we want them to appear at a "
 "random location on the edge of the screen. Add a :ref:`Path2D "
@@ -5213,7 +5214,7 @@ msgstr ""
 "``Main`` 의 자식으로 추가하고 ``MobPath`` 라고 이름지으세요. ``Path2D`` 를 선"
 "택한다면, 당신은 편집기 위쪽에 새로운 버튼들이 보일 것입니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:703
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:704
 #, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
@@ -5226,7 +5227,7 @@ msgstr ""
 "어있어야 합니다. 이 설정은 \"잠금\" 버튼 왼쪽과 \"스냅 설정\" 버튼 옆의 세 개"
 "의 점에서 찾을 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:710
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:711
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
@@ -5234,7 +5235,7 @@ msgstr ""
 "*시계 방향* 으로 그리세요, 그렇지 않으면 적들은 *안쪽* 이 아닌 *바깥쪽* 으로 "
 "향할 것입니다!"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:715
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:716
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
@@ -5242,7 +5243,7 @@ msgstr ""
 "이미지에서 ``4`` 포인트를 찍고 난 후, \"커브 닫기\" 버튼을 누르면 커브가 완성"
 "됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:718
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:719
 msgid ""
 "Now that the path is defined, add a :ref:`PathFollow2D <class_PathFollow2D>` "
 "node as a child of ``MobPath`` and name it ``MobSpawnLocation``. This node "
@@ -5254,16 +5255,16 @@ msgstr ""
 "이 노드는 자동으로 회전하고 이동하면서 경로를 따라갈 것입니다, 그래서 우리는 "
 "이걸로 경로를 따라 임의의 위치와 방향을 선택하기 위해 사용할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:723
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:724
 #, fuzzy
 msgid "Your scene should look like this:"
 msgstr "씬 트리는 다음과 같아야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:728
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:729
 msgid "Main script"
 msgstr "메인 스크립트"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:730
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:731
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
@@ -5271,17 +5272,17 @@ msgstr ""
 "``Main`` 에 스크립트를 추가합니다. 스크립트의 위에 ``export (PackedScene)`` "
 "를 사용해서 우리가 인스턴스하길 원하는 적 씬을 고를 수 있도록 만듭니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:770
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:771
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob`` property in the "
 "Inspector under \"Script Variables\"."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:773
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:774
 msgid "You can assign this property's value in two ways:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:775
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:776
 #, fuzzy
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
@@ -5290,13 +5291,13 @@ msgstr ""
 "\"파일 시스템\" 패널에서 ``Mob.tscn`` 을 드래그하고 ``Main`` 노드의 스크립트 "
 "속성 아래 ``Mob`` 속성에 드랍하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:777
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:778
 msgid ""
 "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``Mob."
 "tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:780
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:781
 #, fuzzy
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
@@ -5312,7 +5313,7 @@ msgstr ""
 "고 치세요. 다음의 코드를 추가하고 ``new_game`` 함수를 추가하여 새로운 게임을 "
 "위한 모든 것들을 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:818
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:819
 #, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
@@ -5324,7 +5325,7 @@ msgstr ""
 "``timeout()`` 시그널을 연결하세요. ``StartTimer`` 는 나머지 두 타이머를 시작"
 "하게 만들 것입니다. ``ScoreTimer`` 는 점수가 1씩 증가하게 합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:845
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:846
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -5336,12 +5337,12 @@ msgstr ""
 "``PathFollow2D`` 노드는 자동으로 경로를 따라 돌고, 그래서 이걸로 적들의 위치"
 "와 방향을 선택하기 위해서 사용할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:851
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:852
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr "새로운 인스턴스는 ``add_child()`` 를 사용해야 추가할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:899
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:900
 #, fuzzy
 msgid ""
 "Why ``PI``? In functions requiring angles, GDScript uses *radians*, not "
@@ -5352,41 +5353,41 @@ msgstr ""
 "로 좀 더 편한 작업을 하고싶다면, ``deg2rad()`` 와 ``rad2deg()`` 함수로 이 둘"
 "을 전환할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:905
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:906
 #, fuzzy
 msgid "Testing the scene"
 msgstr "씬 설정하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:907
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:908
 msgid ""
 "Let's test the scene to make sure everything is working. Add this to "
 "``_ready()``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:924
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:925
 msgid ""
 "Let's also assign ``Main`` as our \"Main Scene\" - the one that runs "
 "automatically when the game launches. Press the \"Play\" button and select "
 "``Main.tscn`` when prompted."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:928
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid ""
 "You should be able to move the player around, see mobs spawning, and see the "
 "player disappear when hit by a mob."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:931
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:932
 msgid ""
 "When you're sure everything is working, remove the call to ``new_game()`` "
 "from ``_ready()``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:936
 msgid "HUD"
 msgstr "HUD"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:937
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -5399,7 +5400,7 @@ msgstr ""
 "<class_CanvasLayer>` 노드를 추가하고 ``HUD`` 라고 이름지으세요. \"HUD\"는 "
 "\"heads-up display\"의 약자로, 정보가 게임 화면 앞에 덮어씌우는 방식입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:943
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:944
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
@@ -5409,24 +5410,24 @@ msgstr ""
 "들을 그릴수 있게 해주고, 이로써 보여지는 정보가 플레이어나 적과 같은 게임 요"
 "소들에 의해 가려지지 않게 만듭니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:947
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:948
 #, fuzzy
 msgid "The HUD needs to display the following information:"
 msgstr "HUD는 다음의 정보들을 보여줍니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:949
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:950
 msgid "Score, changed by ``ScoreTimer``."
 msgstr "점수, ``ScoreTimer`` 가 바꿈."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:950
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:951
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr "메시지, \"Game Over\"나 \"Get Ready!\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:951
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:952
 msgid "A \"Start\" button to begin the game."
 msgstr "게임을 시작하기 위한 \"Start\" 버튼."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:953
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:954
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
@@ -5436,28 +5437,28 @@ msgstr ""
 "기 위해, 우리는 두 가지 형식의 :ref:`Control <class_Control>` 노드를 쓸겁니"
 "다: :ref:`Label <class_Label>` 과 :ref:`Button <class_Button>` 입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:957
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:958
 msgid "Create the following as children of the ``HUD`` node:"
 msgstr "다음에 맞춰 ``HUD`` 노드의 자식으로 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:959
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:960
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr "``ScoreLabel`` 로 이름지은 :ref:`Label <class_Label>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:960
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:961
 #, fuzzy
 msgid ":ref:`Label <class_Label>` named ``Message``."
 msgstr "``MessageLabel`` 로 이름지은 :ref:`Label <class_Label>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:961
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:962
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
 msgstr "``StartButton`` 으로 이름지은 :ref:`Button <class_Button>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:962
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:963
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr "``MessageTimer`` 로 이름지은 :ref:`Timer <class_Timer>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:964
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:965
 #, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the ``Text`` field in the "
@@ -5470,11 +5471,11 @@ msgstr ""
 "assets에는 \"Xolonium-Regular.ttf\"라는 폰트 파일이 있습니다. 이 폰트를 사용"
 "하려면, 각 ``Control`` 노드마다 다음과 같이 하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:969
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:970
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr "\"Custom Fonts\" 에서, \"새 DynamicFont\"를 선택하세요"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:973
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:974
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -5484,14 +5485,14 @@ msgstr ""
 "\"를 눌러서 \"Xolonium-Regular.ttf\" 파일을 선택하세요. 또한 폰트의 ``Size`` "
 "도 설정해야 합니다. ``64`` 정도가 좋습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:979
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:980
 msgid ""
 "Once you've done this on the ``ScoreLabel``, you can click the down arrow "
 "next to the DynamicFont property and choose \"Copy\", then \"Paste\" it in "
 "the same place on the other two Control nodes."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:983
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:984
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -5507,7 +5508,7 @@ msgstr ""
 "져 있는 지를 나타냅니다. 더 자세한 설명은 :ref:"
 "`doc_design_interfaces_with_the_control_nodes` 를 참고하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:990
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:991
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
@@ -5515,7 +5516,7 @@ msgstr ""
 "아래에 보이는 대로 노드를 정렬하세요. \"레이아웃(Layout)\" 버튼을 클릭해서 "
 "Control 노드의 레이아웃을 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:995
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:996
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
@@ -5523,65 +5524,65 @@ msgstr ""
 "당신은 노드들을 드래그해서 수동으로 놓을 수도 있습니다, 혹은 더 정확한 방법으"
 "로는, 다음의 설정을 사용하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:999
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1000
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1001
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1002
 msgid "*Layout* : \"Top Wide\""
 msgstr "*레이아웃* : \"Top Wide\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1002
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1003
 msgid "*Text* : ``0``"
 msgstr "*Text* : ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1003
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1010
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1004
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
 msgid "*Align* : \"Center\""
 msgstr "*Align* : \"Center\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1006
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1007
 #, fuzzy
 msgid "Message"
 msgstr "MessageLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1008
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
 msgid "*Layout* : \"HCenter Wide\""
 msgstr "*레이아웃* : \"HCenter Wide\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1010
 msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "*Text* : ``Dodge the Creeps!``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1012
 msgid "*Autowrap* : \"On\""
 msgstr "*Autowrap* : \"On\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1014
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1015
 msgid "StartButton"
 msgstr "StartButton"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1016
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
 msgid "*Text* : ``Start``"
 msgstr "*Text* : ``Start``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
 msgid "*Layout* : \"Center Bottom\""
 msgstr "*레이아웃* : \"Center Bottom\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1019
 msgid "*Margin* :"
 msgstr "*Margin* :"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1020
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
 msgid "Top: ``-200``"
 msgstr "Top: ``-200``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1022
 msgid "Bottom: ``-100``"
 msgstr "Bottom: ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1023
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 #, fuzzy
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
@@ -5591,17 +5592,17 @@ msgstr ""
 "\" 처럼 말이죠. ``MessageTimer`` 에서, ``WaitTime`` 을 ``2`` 로 설정하고 "
 "``OneShot`` 속성을 \"On\"으로 하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1027
 msgid "Now add this script to ``HUD``:"
 msgstr "이제 ``HUD`` 에 이 스크립트를 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1045
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1046
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr "``start_game`` 시그널은 ``Main`` 노드에게 버튼이 눌려졌음을 알립니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1067
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1068
 #, fuzzy
 msgid ""
 "This function is called when we want to display a message temporarily, such "
@@ -5611,7 +5612,7 @@ msgstr ""
 "\" 처럼 말이죠. ``MessageTimer`` 에서, ``WaitTime`` 을 ``2`` 로 설정하고 "
 "``OneShot`` 속성을 \"On\"으로 하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1100
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1102
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
@@ -5621,7 +5622,7 @@ msgstr ""
 "보여주고, 타이틀 화면으로 돌아와서, 잠깐 일시정지한 후 \"Start\" 버튼을 보여"
 "줍니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1104
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1106
 #, fuzzy
 msgid ""
 "When you need to pause for a brief time, an alternative to using a Timer "
@@ -5634,11 +5635,11 @@ msgstr ""
 "간 지연에 매우 유용한데, \"Start\" 버튼을 보여주기 전에 약간의 시간을 기다려"
 "줍니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1122
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1124
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr "이 함수는 점수가 변경될 때마다 ``Main`` 에 의해서 호출됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1124
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1126
 #, fuzzy
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
@@ -5647,11 +5648,11 @@ msgstr ""
 "``MessageTimer`` 의 ``timeout()`` 시그널과 ``StartButton`` 의 ``pressed()`` "
 "를 연결하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1152
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1154
 msgid "Connecting HUD to Main"
 msgstr "메인에 HUD를 연결하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1154
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1156
 #, fuzzy
 msgid ""
 "Now that we're done creating the ``HUD`` scene, go back to ``Main``. "
@@ -5663,7 +5664,7 @@ msgstr ""
 "래에 위치시킵니다. 모든 트리는 이렇게 되어야 하므로, 놓친 것이 없는지 확인해"
 "보세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1160
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
@@ -5671,7 +5672,7 @@ msgstr ""
 "이제 ``HUD`` 기능을 ``Main`` 스크립트에 연결할겁니다. 여기에는 ``Main`` 씬에 "
 "추가적인 것이 요구됩니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1163
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1165
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function of the Main node by typing \"new_game\" in the "
@@ -5679,7 +5680,7 @@ msgid ""
 "green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1168
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1170
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -5687,11 +5688,11 @@ msgstr ""
 "``new_game()`` 에서, 점수 화면을 업데이트하고 \"Get Ready\" 메시지를 보이게 "
 "합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1183
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "``game_over()`` 에서는, 일치하는 ``HUD`` 함수를 호출해야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1194
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1196
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
@@ -5699,7 +5700,7 @@ msgstr ""
 "마지막으로, ``_on_ScoreTimer_timeout()`` 를 추가해서 점수가 바뀌는 것과 일치"
 "한 화면을 유지하도록 합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1208
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
@@ -5707,11 +5708,11 @@ msgstr ""
 "이제 실행할 준비가 끝났습니다! \"프로젝트 실행\" 버튼을 누르세요. 아마 메인 "
 "씬을 선택하라고 물어볼 겁니다, ``Main.tscn`` 을 골라줍시다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1210
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1212
 msgid "Removing old creeps"
 msgstr "오래된 적들 제거하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1212
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1214
 #, fuzzy
 msgid ""
 "If you play until \"Game Over\" and then start a new game right away, the "
@@ -5724,7 +5725,7 @@ msgstr ""
 "직 화면에 남아 있습니다.새 게임이 시작되면 적이 모두 사라지는 것이 좋을 것입"
 "니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1217
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1219
 msgid ""
 "In the ``Mob`` scene, select the root node and click the \"Node\" tab next "
 "to the Inspector (the same place where you find the node's signals). Next to "
@@ -5732,23 +5733,23 @@ msgid ""
 "\"Add\"."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1223
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1225
 msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``game_over()`` function in ``Main``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1236
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1238
 msgid ""
 "The ``call_group()`` function calls the named function on every node in a "
 "group - in this case we are telling every mob to delete itself."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1240
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1242
 msgid "Finishing up"
 msgstr "마무리 작업"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1242
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1244
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -5758,12 +5759,12 @@ msgstr ""
 "을 향상시킬 \"주스\"를 추가하는 것입니다. 독창적인 아이디어로 자유롭게 게임 "
 "플레이를 확장시켜보세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1247
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1249
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:59
 msgid "Background"
 msgstr "배경(Background)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1249
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1251
 #, fuzzy
 msgid ""
 "The default gray background is not very appealing, so let's change its "
@@ -5779,7 +5780,7 @@ msgstr ""
 "``ColorRect`` 는 오직 하나의 속성만 가지고 있습니다: ``Color`` 입니다. 원하"
 "는 색깔을 고르고 ``ColorRect`` 의 크기를 조절해 화면을 덮도록 만듭시다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1255
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1257
 #, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
@@ -5788,11 +5789,11 @@ msgstr ""
 "또한 배경 이미지를 추가할 수도 있는데, 이미지가 있다면, ``Sprite`` 노드를 사"
 "용하면 됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1259
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1261
 msgid "Sound effects"
 msgstr "음향 효과(Sound effects)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1261
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1263
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -5804,7 +5805,7 @@ msgstr ""
 "Loop.ogg\"는 배경 음악으로, \"gameover.wav\"는 플레이어가 죽었을 때 쓰면 됩니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1266
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1268
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -5816,7 +5817,7 @@ msgstr ""
 "이름 지으세요. 각각에서, ``Stream`` 속성을 클릭하시고 \"Load\"를 선택해서 이"
 "름에 맞는 오디오 파일을 선택하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1271
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1273
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -5824,17 +5825,17 @@ msgstr ""
 "음악을 실행시키려면, ``new_game()`` 함수에 ``$Music.play()`` 를 추가하고 "
 "``game_over()`` 함수에 ``$Music.stop()`` 을 추가하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1274
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1276
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr ""
 "마지막으로, ``game_over()`` 함수에 ``$DeathSound.play()`` 를 추가하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1277
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1279
 #, fuzzy
 msgid "Keyboard shortcut"
 msgstr "키보드 단축키"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1279
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1281
 #, fuzzy
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
@@ -5845,7 +5846,7 @@ msgstr ""
 "하는 게 편리할 것입니다. 이렇게 하는 방법들 중 하나로 ``Button`` 노드의 "
 "\"Shortcut\" 속성을 사용하는 것이 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1283
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1285
 #, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
@@ -5862,7 +5863,7 @@ msgstr ""
 "서 이름을 \"ui_select\"로 입력하세요. 이것은 스페이스바로 지정된 기본 입력 이"
 "벤트입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1291
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1293
 #, fuzzy
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
@@ -5871,7 +5872,7 @@ msgstr ""
 "이제 시작 버튼이 나타날 때, 버튼을 클릭하거나 스페이스바를 눌러서 게임을 시작"
 "할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1295
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1297
 msgid "Project files"
 msgstr "프로젝트 파일"
 
@@ -5879,11 +5880,11 @@ msgstr "프로젝트 파일"
 msgid "You can find a completed version of this project at these locations:"
 msgstr "당신은 여기서 이 프로젝트의 완성 버전을 확인하실 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1298
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1300
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1299
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1301
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"
 
@@ -6009,7 +6010,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/exporting.rst:247
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:295
-#: ../../docs/development/compiling/compiling_with_mono.rst:167
+#: ../../docs/development/compiling/compiling_with_mono.rst:172
 msgid "Export templates"
 msgstr "템플릿 내보내기"
 
@@ -9374,12 +9375,13 @@ msgstr ""
 "세요:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
-msgid "Create a main menu screen"
-msgstr "메인 메뉴 화면 만들기"
+msgid ":doc:`ui_main_menu`"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
-msgid "Create a game user interface"
-msgstr "게임 사용자 인터페이스 만들기"
+#, fuzzy
+msgid ":doc:`ui_game_user_interface`"
+msgstr ":ref:`doc_godot_interfaces`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -10076,18 +10078,7 @@ msgstr ""
 "후의 ``Player`` 의 ``health`` 가 됩니다: 즉, ``new_value`` 입니다. 그리고 "
 "``0.6`` 은 애니메이션의 지속 시간입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:445
-msgid ""
-"The last two arguments are constants from the ``Tween`` class. "
-"``TRANS_LINEAR`` means the animation should be linear. ``EASE_IN`` doesn't "
-"do anything with a linear transition, but we must provide this last argument "
-"or we'll get an error."
-msgstr ""
-"마지막 두 인수는 ``Tween`` 클래스의 상수입니다. ``TRANS_LINEAR`` 는 애니메이"
-"션이 선형적인 것을 의미합니다. ``EASE_IN`` 선형 변환에선 아무것도 하지 않지"
-"만, 꼭 이 마지막 인수를 채워야 에러가 나지 않습니다."
-
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:450
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:441
 msgid ""
 "The animation will not play until we activated the ``Tween`` node with "
 "``tween.start()``. We only have to do this once if the node is not active. "
@@ -10097,7 +10088,7 @@ msgstr ""
 "지 않습니다. 노드가 활성화되어있지 않으면 이 작업만 하면 됩니다. 이 코드를 마"
 "지막 줄 이후에 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:460
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -10113,11 +10104,11 @@ msgstr ""
 "다. `tween` 노드는 코드로 제어되는 애니메이션에 완벽합니다. 수제 애니메이션"
 "은, `AnimationPlayer` 를 확인하세요."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:472
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:463
 msgid "Assign the animated\\_health to the LifeBar"
 msgstr "animated\\_health를 LifeBar에 지정하기"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:474
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:465
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
@@ -10125,11 +10116,11 @@ msgstr ""
 "이제 ``animated_health`` 변수가 애니메이트 하지만 실제 ``Bar`` 와 ``Number`` "
 "노드는 더 이상 업데이트 할 수 없습니다. 이것을 고칩시다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:477
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
 msgid "So far, the update\\_health method looks like this:"
 msgstr "지금까지, update\\_health 메서드는 이렇게 보입니다:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:492
 msgid ""
 "In this specific case, because ``number_label`` takes text, we need to use "
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
@@ -10139,7 +10130,7 @@ msgstr ""
 "``_process`` 메서드로 그것을 애니메이트 해야 합니다. 이제 ``_process` 안에 "
 "``Number`` 와 ``TextureProgress`` 노드를 전과 같이 업데이트 합시다:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:523
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:514
 msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
@@ -10147,7 +10138,7 @@ msgstr ""
 "`number_label` 과 `bar` 는 `Number` 와 `TextureProgress` 노드에 참조로 저장"
 "된 변수들입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:516
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
@@ -10157,11 +10148,11 @@ msgstr ""
 "만 텍스트는 소수 숫자로 보여지고 난잡해 보입니다. 그리고 게임의 스타일을 고려"
 "해서, 체력 막대가 더 멋진 방식으로 움직이면 좋을 것입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:522
 msgid "The animation is smooth, but the number is broken"
 msgstr "애니메이션은 부드럽지만 숫자는 망가졌습니다"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:524
 msgid ""
 "We can fix both problems by rounding out ``animated_health``. Use a local "
 "variable named ``round_value`` to store the rounded ``animated_health``. "
@@ -10172,15 +10163,15 @@ msgstr ""
 "장합니다. 그런 뒤 그것을 ``number_label.text`` 와 ``bar.value`` 에 지정합니"
 "다:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:546
 msgid "Try the game again to see a nice blocky animation."
 msgstr "게임을 다시 실행하면 멋진 블록 애니메이션을 볼 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:550
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "animated\\_health를 반올림 해서 일석이조의 효과를 냈습니다"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:554
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -10196,11 +10187,11 @@ msgstr ""
 "살아있는 것처럼 느끼도록 만듭니다. ``Player`` 가 3 데미지를 입으면, 즉각적으"
 "로 발생합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:562
 msgid "Fade the bar when the Player dies"
 msgstr "Player가 죽을 때 막대가 사라지게 하기"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:564
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
@@ -10212,7 +10203,7 @@ msgstr ""
 "사라지게 해봅시다. 우리는 ``Tween`` 노드가 여러 애니메이션을 동시에 관리하므"
 "로 같은 노드를 다시 사용할 것입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:569
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
@@ -10223,15 +10214,15 @@ msgstr ""
 "아야 합니다. :kbd:`F1` 키를 눌러 2D 작업 공간으로 돌아갑니다. 씬 독에서 "
 "``Player`` 노드를 선택하고 인스펙터(Inspecter) 옆의 노드 탭을 클릭합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:583
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:574
 msgid "Find the ``died`` signal, select it, and click the Connect button."
 msgstr "``died`` 시그널을 찾아서, 선택하고, 연결하기 버튼을 누릅니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
 msgid "The signal should already have the Enemy connected to it"
 msgstr "시그널에는 이미 Enemy와 연결되어 있어야 합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:580
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -10244,11 +10235,11 @@ msgstr ""
 "함수 만들기 설정을 둔 채로 창 아래 연결 버튼을 누릅니다. 이걸로 Script 작업 "
 "공간에서 ``GUI.gd`` 파일로 진입하게 됩니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:597
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:588
 msgid "You should get these values in the Connecting Signal window"
 msgstr "시그널 연결 창에서 이 값들을 받아야 합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:601
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:592
 msgid ""
 "You should see a pattern by now: every time the GUI needs a new piece of "
 "information, we emit a new signal. Use them wisely: the more connections you "
@@ -10258,7 +10249,7 @@ msgstr ""
 "는 새 시그널을 방출합니다. 그들을 현명하게 사용하세요: 더 많은 연결을 추가할"
 "수록, 추적하는 일은 더 어려워집니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:594
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
@@ -10266,7 +10257,7 @@ msgstr ""
 "UI 요소가 사라지도록 애니메이트 하기 위해, 우리는 그것의 ``modulate`` 속성을 "
 "사용해야 합니다. ``modulate`` 는 ``Color`` 로 텍스처의 색상을 곱합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:609
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:600
 msgid ""
 "`modulate` comes from the `CanvasItem` class, All 2D and UI nodes inherit "
 "from it. It lets you toggle the visibility of the node, assign a shader to "
@@ -10276,7 +10267,7 @@ msgstr ""
 "상속됩니다. 이것은 노드의 가시성을 켜고 끌 수 있고, 셰이더를 지정하고, "
 "`modulate` 에서 색상을 사용하여 수정할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:602
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
@@ -10286,7 +10277,7 @@ msgstr ""
 "리고 알파입니다. 처음 세 개의 채널들 중 하나를 어둡게 하면 그것은 인터페이스"
 "에서 어두워집니다. 알파 채널을 낮추면 인터페이스는 희미해집니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:606
 msgid ""
 "We're going to tween between two color values: from a white with an alpha of "
 "``1``, that is to say at full opacity, to a pure white with an alpha value "
@@ -10300,7 +10291,7 @@ msgstr ""
 "``start_color`` 과 ``end_color`` 라고 이름짓습니다. ``Color()`` 생성자"
 "(constructor)를 사용해서 두 ``Color`` 값을 만듭니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:637
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:628
 msgid ""
 "``Color(1.0, 1.0, 1.0)`` corresponds to white. The fourth argument, "
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
@@ -10309,7 +10300,7 @@ msgstr ""
 "``Color(1.0, 1.0, 1.0)`` 는 흰색과 같습니다. 네 번째 인수는, ``start_color`` "
 "와 ``end_color`` 에서 각각 ``1.0`` 과 ``0.0`` 인, 알파 채널입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:632
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
@@ -10317,27 +10308,27 @@ msgstr ""
 "우리는 ``Tween`` 노드의 ``interpolate_property`` 메서드를 다시 호출해야 합니"
 "다:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:645
+#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
-"linear transition. Here again, because the transition is linear, the easing "
-"does not matter. Here's the complete ``_on_Player_died`` method:"
+"linear transition. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
 "이번엔 ``modulate`` 속성을 바꾸고 그것이 ``start_color``\\ 에서 ``end_color``"
 "\\ 로 애니메이트 해야 합니다. 지속 시간은 1초로 선형 전환입니다. 다시 말하지"
 "만, 전환이 선형이기 때문에 완화는 아무 문제가 없습니다. 이것이 완전한 "
 "``_on_Player_died`` 메서드 입니다:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:669
 msgid "And that is it. You may now play the game to see the final result!"
 msgstr "그리고 됬습니다. 이제 게임을 실행해서 최종 결과물을 봅시다!"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:673
 msgid "The final result. Congratulations for getting there!"
 msgstr "최종 결과물. 여기까지 오신 것에 축하합니다!"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:677
 msgid ""
 "Using the exact same techniques, you can change the color of the bar when "
 "the Player gets poisoned, turn the bar red when its health drops low, shake "
@@ -11067,8 +11058,9 @@ msgid "project.godot"
 msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
+#, fuzzy
 msgid ""
-"The project.godot file is the project description file, and it is always "
+"The ``project.godot`` file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
@@ -11077,10 +11069,11 @@ msgstr ""
 "열 때 Godot가 제일 먼저 찾는 파일입니다."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
+#, fuzzy
 msgid ""
 "This file contains the project configuration in plain text, using the win."
-"ini format. Even an empty project.godot can function as a basic definition "
-"of a blank project."
+"ini format. Even an empty ``project.godot`` can function as a basic "
+"definition of a blank project."
 msgstr ""
 "이 파일은 프로젝트 설정을 win.ini 형식을 사용해, 일반 텍스트로 갖습니다. 심지"
 "어 비어있는 project.godot도 비어있는 프로젝트의 기본 정의 기능을 할 수 있습니"
@@ -11091,10 +11084,11 @@ msgid "Path delimiter"
 msgstr "경로 구분 기호"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
+#, fuzzy
 msgid ""
 "Godot only supports ``/`` as a path delimiter. This is done for portability "
 "reasons. All operating systems support this, even Windows, so a path such as "
-"``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
+"``C:\\project\\project.godot`` needs to be typed as ``C:/project/project."
 "godot``."
 msgstr ""
 "Godot는 오직 ``/``\\ 만을 경로 구분 기호로 지원합니다. 그 이유는 이식 능력 입"
@@ -11118,9 +11112,10 @@ msgstr ""
 "로가 만들어졌습니다."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
+#, fuzzy
 msgid ""
-"The path ``res://`` will always point at the project root (where project."
-"godot is located, so ``res://project.godot`` is always valid)."
+"The path ``res://`` will always point at the project root (where ``project."
+"godot`` is located, so ``res://project.godot`` is always valid)."
 msgstr ""
 "``res://`` 경로는 항상 프로젝트 루트를 향합니다 (거기에는 project.godot이 있"
 "고, 그래서 ``res://project.godot`` 경로는 항상 존재합니다)."
@@ -11141,20 +11136,23 @@ msgid "User path"
 msgstr "사용자 경로(User path)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
+#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
-"special path ``user://`` that is always writable."
+"special path ``user://`` that is always writable. This path resolves "
+"differently depending on the OS the project is running on. Local path "
+"resolution is further explained in :ref:`doc_data_paths`."
 msgstr ""
 "디스크 쓰기는 게임 상태를 저장하거나 콘텐츠 팩을 다운로드하는 등의 작업에 여"
 "전히 필요합니다. 이를 위해, 엔진은 언제나 작성 가능한 ``user://`` 라는 특수 "
 "경로를 보장합니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:81
+#: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid "Host file system"
 msgstr "호스트 파일 시스템(Host file system)"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:83
+#: ../../docs/getting_started/step_by_step/filesystem.rst:85
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
@@ -11166,11 +11164,11 @@ msgstr ""
 "습니다. 하지만, 호스트 파일 시스템 경로는 Godot에서 개발 도구를 만들 때 유용"
 "할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:89
+#: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid "Drawbacks"
 msgstr "단점"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:91
+#: ../../docs/getting_started/step_by_step/filesystem.rst:93
 msgid ""
 "There are some drawbacks to this simple file system design. The first issue "
 "is that moving assets around (renaming them or moving them from one path to "
@@ -11183,7 +11181,7 @@ msgstr ""
 "등) 이 애셋에 관해 존재하는 참조를 깨버릴 것입니다. 이 참조는 새 애셋 위치를 "
 "향하도록 다시 정의해야만 합니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:96
+#: ../../docs/getting_started/step_by_step/filesystem.rst:98
 msgid ""
 "To avoid this, do all your move, delete and rename operations from within "
 "Godot, on the FileSystem dock. Never move assets from outside Godot, or "
@@ -11195,11 +11193,12 @@ msgstr ""
 "마세요, 그렇지 않으면 종속 여부를 수동으로 설정해야만 합니다 (Godot는 이를 감"
 "지하고 당신이 고치는 것을 어쨌든 도울 것이지만, 왜 어려운 길로 가시나요?)."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:101
+#: ../../docs/getting_started/step_by_step/filesystem.rst:103
+#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
-"saves an asset as \"myfile.PNG\", but then references it as \"myfile.png\", "
+"saves an asset as ``myfile.PNG``, but then references it as ``myfile.png``, "
 "it will work fine on their platform, but not on other platforms, such as "
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
@@ -11211,7 +11210,7 @@ msgstr ""
 "는 압축된 패키지로 모든 파일을 저장하는 내보낸 바이너리에도 적용될 수 있습니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:107
+#: ../../docs/getting_started/step_by_step/filesystem.rst:109
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot. One simple fool-proof convention is to only "
@@ -13268,16 +13267,18 @@ msgid "Running a script"
 msgstr "스크립트 실행하기"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:280
+#, fuzzy
 msgid ""
-"It is possible to run a simple .gd script from the command line. This "
-"feature is especially useful in large projects, for batch conversion of "
+"It is possible to run a simple ``.gd`` script from the command line. This "
+"feature is especially useful in large projects, e.g. for batch conversion of "
 "assets or custom import/export."
 msgstr ""
 "명령줄에서 .gd 스크립트를 간단하게 실행할 수 있습니다.특히 일괄 변환 또는 맞"
 "춤 가져 오기/내보내기를 위한, 큰 프로젝트에서 유용합니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:284
-msgid "The script must inherit from SceneTree or MainLoop."
+#, fuzzy
+msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "스크립트는 SceneTree나 MainLoop에서 상속해야 합니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:286
@@ -13289,9 +13290,10 @@ msgid "And how to run it:"
 msgstr "그리고 어떻게 실행하는 지의 예제입니다:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
+#, fuzzy
 msgid ""
-"If no project.godot exists at the path, current path is assumed to be the "
-"current working directory (unless ``-path`` is specified)."
+"If no ``project.godot`` exists at the path, current path is assumed to be "
+"the current working directory (unless ``--path`` is specified)."
 msgstr ""
 "project.godot이 경로에 존재하지 않으면, 현재 경로는 (``-path`` 가 지정되지 않"
 "는 한) 현재 작업 디렉토리로 가정합니다."
@@ -19066,7 +19068,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:184
 #: ../../docs/tutorials/physics/using_area_2d.rst:132
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:190
-#: ../../docs/development/compiling/compiling_with_mono.rst:120
+#: ../../docs/development/compiling/compiling_with_mono.rst:123
 msgid "Examples"
 msgstr "예제"
 
@@ -19114,17 +19116,23 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:161
 msgid ""
+"Export hints are also provided for the physics and render layers defined in "
+"the project settings::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:168
+msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
 msgstr ""
 "비트 플래그를 사용하려면 비트 연산에 대한 이해가 필요합니다. 의심스럽다면, 불"
 "리언 변수를 대신 내보내어야 합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:165
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:172
 msgid "Exporting arrays"
 msgstr "배열 내보내기"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:167
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:174
 msgid ""
 "Exporting arrays works, but with an important caveat: while regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -19138,18 +19146,18 @@ msgstr ""
 "니다. 내보낸 배열은 이니셜라이저(Initializer)를 갖지만, 반드시 상수 표현식이 "
 "되어야 합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:173
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:180
 msgid ""
 "If the exported array specifies a type which inherits from Resource, the "
 "array values can be set in the inspector by dragging and dropping multiple "
 "files from the FileSystem dock at once."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:213
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:220
 msgid "Setting exported variables from a tool script"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:215
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:222
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
@@ -19158,19 +19166,19 @@ msgid ""
 "exported variable's value."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:222
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:229
 #, fuzzy
 msgid "Advanced exports"
 msgstr "고급 벡터 연산"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:224
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:231
 msgid ""
 "Not every type of export can be provided on the level of the language itself "
 "to avoid unnecessary design complexity. The following describes some more or "
 "less common exporting features which can be implemented with a low-level API."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:228
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:235
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_set() "
@@ -19180,35 +19188,35 @@ msgid ""
 "`doc_accessing_data_or_logic_from_object`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:235
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:242
 msgid ""
 "For binding properties using the above methods in C++, see :ref:"
 "`doc_binding_properties_using_set_get_property_list`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:238
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:245
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:242
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:249
 #, fuzzy
 msgid "Adding script categories"
 msgstr "노드 속성"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:251
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
 "Variables`` is one example of a built-in category."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:261
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:268
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:263
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:270
 msgid ""
 "``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
 "a script category specifically, so the type ``TYPE_NIL`` can be ignored as "
@@ -19216,22 +19224,22 @@ msgid ""
 "anyway."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:268
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:275
 #, fuzzy
 msgid "Grouping properties"
 msgstr "노드 속성"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:270
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:277
 msgid "A list of properties with similar names can be grouped."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:284
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:291
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "
 "collapsible list of properties;"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:287
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:294
 msgid ""
 "every successive property added after the group property will be collapsed "
 "and shortened as determined by the prefix defined via the ``hint_string`` "
@@ -19239,7 +19247,7 @@ msgid ""
 "this case."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:291
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:298
 msgid ""
 "``PROPERTY_USAGE_GROUP`` indicates that the property should be treated as a "
 "script group specifically, so the type ``TYPE_NIL`` can be ignored as it "
@@ -20396,7 +20404,7 @@ msgstr "두 개의 스크립트가 주기적으로 서로에게 의지할 수 �
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:379
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:132
-#: ../../docs/tutorials/2d/2d_movement.rst:347
+#: ../../docs/tutorials/2d/2d_movement.rst:355
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:213
 msgid "Summary"
 msgstr "요약"
@@ -24748,6 +24756,66 @@ msgid ""
 "If you haven't enabled the Windows Subsystem for Linux, you can enter the "
 "following line in a PowerShell window *running as Administrator* then reboot "
 "when asked::"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:4
+msgid "Version Control Systems"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:9
+msgid ""
+"Godot aims to be VCS friendly and generate mostly readable and mergeable "
+"files. Godot also supports the use of version control systems in the editor "
+"itself. However, VCS in the editor requires a plugin for the specific VCS "
+"you are using. VCS can be setup or shut down in the editor under **Project > "
+"Version Control**."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:17
+#, fuzzy
+msgid "Official Git plugin"
+msgstr "간단한 플러그인 만들기"
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:19
+msgid ""
+"Using Git from inside the editor is supported with an official plugin. You "
+"can find the latest releases `here <https://github.com/godotengine/godot-git-"
+"plugin/releases>`__ (it is not available in the asset library). "
+"Documentation on how to use the Git plugin can be found `here <https://"
+"github.com/godotengine/godot-git-plugin/wiki>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:27
+msgid "Files to exclude from VCS"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:29
+msgid "There are some folders Godot creates you should have your VCS ignore:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:31
+msgid ""
+"``.import/``: This folder stores all the files it imports automatically "
+"based on your source assets and their import flags."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:33
+msgid ""
+"``*.translation``: These files are binary imported translations generated "
+"from CSV files."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:34
+msgid ""
+"``export_presets.cfg``: This file contains all the export presets for the "
+"project, including sensitive information such as Android keystore "
+"credentials."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:36
+msgid ""
+"``.mono/``: This folder stores automatically-generated Mono files. It only "
+"exists in projects that use the Mono version of Godot."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
@@ -34441,7 +34509,7 @@ msgstr ""
 "겁니다. 하지만 원리는 다른 노드 유형(Area2D, RiqidBody2D)에도 적용할 수 있습"
 "니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:17
+#: ../../docs/tutorials/2d/2d_movement.rst:19
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:22
 #: ../../docs/tutorials/animation/2d_skeletons.rst:30
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:21
@@ -34451,7 +34519,7 @@ msgstr ""
 msgid "Setup"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:19
+#: ../../docs/tutorials/2d/2d_movement.rst:21
 msgid ""
 "Each example below uses the same scene setup. Start with a "
 "``KinematicBody2D`` with two children: ``Sprite`` and ``CollisionShape2D``. "
@@ -34463,7 +34531,7 @@ msgstr ""
 "처로 Godot 아이콘(\"icon.png\")을 사용하거나 가지고 있는 다른 2D 이미지를 사"
 "용할 수 있습니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:23
+#: ../../docs/tutorials/2d/2d_movement.rst:25
 msgid ""
 "Open ``Project -> Project Settings`` and select the \"Input Map\" tab. Add "
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
@@ -34473,11 +34541,11 @@ msgstr ""
 "입력 액션들을 추가하세요 (see :ref:`InputEvent <doc_inputevent>` for "
 "details):"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:29
+#: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
 msgstr "8 방향 이동"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:31
+#: ../../docs/tutorials/2d/2d_movement.rst:33
 msgid ""
 "In this scenario, you want the user to press the four directional keys (up/"
 "left/down/right or W/A/S/D) and move in the selected direction. The name \"8-"
@@ -34488,13 +34556,14 @@ msgstr ""
 "누르고 선택된 방향으로 움직였으면 합니다. \"8 방향 이동\" 명칭은 동시에 두 키"
 "를 눌러서 플레이어가 대각선으로 움직이게 되는 것에서 유래합니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:37
+#: ../../docs/tutorials/2d/2d_movement.rst:39
 msgid "Add a script to the kinematic body and add the following code:"
 msgstr "kinematic body에 스크립트를 추가하고 다음과 같은 코드를 추가합니다:"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:101
+#: ../../docs/tutorials/2d/2d_movement.rst:103
+#, fuzzy
 msgid ""
-"In the ``get_input()`` function we check for the four key events and sum "
+"In the ``get_input()`` function, we check for the four key events and sum "
 "them up to get the velocity vector. This has the benefit of making two "
 "opposite keys cancel each other out, but will also result in diagonal "
 "movement being faster due to the two directions being added together."
@@ -34503,7 +34572,7 @@ msgstr ""
 "니다. 두 반대편 키를 서로 상쇄하는 장점이 있지만 두 개의 방향을 함께 추가하"
 "기 때문에 대각선 이동이 더 빨라지게 된다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:106
+#: ../../docs/tutorials/2d/2d_movement.rst:108
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
@@ -34511,7 +34580,7 @@ msgstr ""
 "우리는 속도를 *정상화*해서 방지할 수 있습니다. *길이*를 ``1``로 설정하고 원하"
 "는 속도를 곱합니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:109
+#: ../../docs/tutorials/2d/2d_movement.rst:111
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
@@ -34519,11 +34588,18 @@ msgstr ""
 "벡터 수학을 사용해 본 적이 없거나 재교육이 필요한 경우 :ref:"
 "`doc_vector_math` 에서 Godot 내 벡터 사용에 대한 설명을 볼 수 있습니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:113
+#: ../../docs/tutorials/2d/2d_movement.rst:116
+msgid ""
+"If the code above does nothing when you press the keys, double-check that "
+"you've set up input actions correctly as described in the :ref:"
+"`doc_2d_movement_setup` part of this tutorial."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:121
 msgid "Rotation + movement"
 msgstr "회전 + 이동"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:115
+#: ../../docs/tutorials/2d/2d_movement.rst:123
 msgid ""
 "This type of movement is sometimes called \"Asteroids-style\" because it "
 "resembles how that classic arcade game worked. Pressing left/right rotates "
@@ -34535,7 +34611,7 @@ msgstr ""
 "르면 캐릭터가 회전합니다. 반면에 위 또는 아래를 누르면 보고 있는 방향에 대햐"
 "여 전진 하거나 후진합니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:190
+#: ../../docs/tutorials/2d/2d_movement.rst:198
 msgid ""
 "Here we've added two new variables to track our rotation direction and "
 "speed. Again, pressing both keys at once will cancel out and result in no "
@@ -34546,7 +34622,7 @@ msgstr ""
 "시 두 키를 동시에 누르면 취소되고 회전하지 않습니다. 이 회전은 바디의 "
 "``rotation`` 속성에 직접 적용됩니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:194
+#: ../../docs/tutorials/2d/2d_movement.rst:202
 msgid ""
 "To set the velocity, we use the ``Vector2.rotated()`` method, so that it "
 "points in the same direction as the body. ``rotated()`` is a useful vector "
@@ -34557,11 +34633,11 @@ msgstr ""
 "은 방향을 가리키도록 합니다. ``rotated``는 삼각함수를 적용해야 하는 여러 가"
 "지 상황에서 사용할 수 있는 유용한 벡터 함수입니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:200
+#: ../../docs/tutorials/2d/2d_movement.rst:208
 msgid "Rotation + movement (mouse)"
 msgstr "회전 + 이동 (마우스)"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:202
+#: ../../docs/tutorials/2d/2d_movement.rst:210
 msgid ""
 "This style of movement is a variation of the previous one. This time, the "
 "direction is set by the mouse position instead of the keyboard. The "
@@ -34572,7 +34648,7 @@ msgstr ""
 "의해 방향이 정해집니다. 캐릭터는 항상 마우스 포인터를 봅니다(\"look at\"). 그"
 "러나 전방/후진 입력은 동일하게 유지됩니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:261
+#: ../../docs/tutorials/2d/2d_movement.rst:269
 msgid ""
 "Here we're using the :ref:`Node2D <class_Node2D>` ``look_at()`` method to "
 "point the player towards a given position. Without this function, you could "
@@ -34582,11 +34658,11 @@ msgstr ""
 "<class_Node2D>` 의 ``look_at()`` 메서드를 사용하고 있습니다. 이 함수가 없으"
 "면 각도를 다음과 같이 설정하여 동일한 효과를 얻을 수 있습니다:"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:276
+#: ../../docs/tutorials/2d/2d_movement.rst:284
 msgid "Click-and-move"
 msgstr "클릭과 이동"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:278
+#: ../../docs/tutorials/2d/2d_movement.rst:286
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
@@ -34594,7 +34670,7 @@ msgstr ""
 "이번 마지막 예제는 마우스만 사용하여 캐릭터를 제어합니다. 화면을 클릭하면 플"
 "레이어는 지정 위치로 움직입니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:335
+#: ../../docs/tutorials/2d/2d_movement.rst:343
 #, fuzzy
 msgid ""
 "Note the ``distance_to()`` check we make prior to movement. Without this "
@@ -34606,7 +34682,7 @@ msgstr ""
 "위치를 약간 지나쳐서 되돌아가려 할 때 지정 위치에 도달하고 \"덜덜 떨 것입니다"
 "\", only to move too far and repeat."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:340
+#: ../../docs/tutorials/2d/2d_movement.rst:348
 #, fuzzy
 msgid ""
 "Uncommenting the ``look_at()`` line will also turn the body to point in its "
@@ -34615,13 +34691,13 @@ msgstr ""
 "원한다면 ``rotation`` 줄의 주석 처리를 제거해서 움직이는 방향으로 몸을 돌리"
 "게 할 수 있습니다."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:343
+#: ../../docs/tutorials/2d/2d_movement.rst:351
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:349
+#: ../../docs/tutorials/2d/2d_movement.rst:357
 msgid ""
 "You may find these code samples useful as starting points for your own "
 "projects. Feel free to use them and experiment with them to see what you can "
@@ -34630,7 +34706,7 @@ msgstr ""
 "당신은 이 코드 샘플들이 자신의 프로젝트 시작점으로서  유용하다는 것을 알게 "
 "될 것입니다. 자유롭게 그것들을 사용해서 무엇을 만들 수 있을 지 실험해보세요."
 
-#: ../../docs/tutorials/2d/2d_movement.rst:352
+#: ../../docs/tutorials/2d/2d_movement.rst:360
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"
@@ -49786,22 +49862,34 @@ msgstr ""
 "의 값이 현재 프레임에 정확하지 않을 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:84
+#, fuzzy
 msgid ""
 "In order to avoid this inaccuracy, any code that needs to access a body's "
 "properties should be run in the :ref:`Node._physics_process() "
 "<class_Node_method__physics_process>` callback, which is called before each "
-"physics step at a constant frame rate (60 times per second by default)."
+"physics step at a constant frame rate (60 times per second by default). This "
+"method will be passed a ``delta`` parameter, which is a floating-point "
+"number equal to the time passed in *seconds* since the last step. When using "
+"the default 60 Hz physics update rate, it will typically be equal to "
+"``0.01666...`` (but not always, see below)."
 msgstr ""
 "이러한 부정확성을 피하기 위해, 바디의 속성에 접근해야 하는 모든 코드는 각 물"
 "리 단계 전에 일정한 프레임률 (기본 초당 60회)로 호출되는 :ref:`Node."
 "_physics_process() <class_Node_method__physics_process>` 콜백에서 실행되어야 "
 "합니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:90
+#: ../../docs/tutorials/physics/physics_introduction.rst:94
+msgid ""
+"It's recommended to always use the ``delta`` parameter when relevant in your "
+"physics calculations, so that the game behaves correctly if you change the "
+"physics update rate or if the player's device can't keep up."
+msgstr ""
+
+#: ../../docs/tutorials/physics/physics_introduction.rst:99
 msgid "Collision layers and masks"
 msgstr "충돌 레이어와 마스크"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:92
+#: ../../docs/tutorials/physics/physics_introduction.rst:101
 msgid ""
 "One of the most powerful, but frequently misunderstood, collision features "
 "is the collision layer system. This system allows you to build up complex "
@@ -49814,15 +49902,15 @@ msgstr ""
 "요 개념은 **레이어**\\ 와 **마스크**\\ 입니다. 각 ``CollisionObject2D`` 에는 "
 "서로 상호 작용할 수 있는 20개의 서로 다른 물리 레이어가 있습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:98
+#: ../../docs/tutorials/physics/physics_introduction.rst:107
 msgid "Let's look at each of the properties in turn:"
 msgstr "각 속성을 차례대로 살펴보겠습니다:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:102
+#: ../../docs/tutorials/physics/physics_introduction.rst:111
 msgid "collision_layer"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:101
+#: ../../docs/tutorials/physics/physics_introduction.rst:110
 msgid ""
 "This describes the layers that the object appears **in**. By default, all "
 "bodies are on layer ``1``."
@@ -49830,11 +49918,11 @@ msgstr ""
 "이것은 객체가 **나타나는** 레이어를 형성합니다. 기본적으로 모든 바디는 레이"
 "어 ``1``에 있습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:107
+#: ../../docs/tutorials/physics/physics_introduction.rst:116
 msgid "collision_mask"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:105
+#: ../../docs/tutorials/physics/physics_introduction.rst:114
 msgid ""
 "This describes what layers the body will **scan** for collisions. If an "
 "object isn't in one of the mask layers, the body will ignore it. By default, "
@@ -49844,7 +49932,7 @@ msgstr ""
 "이어 중 하나에 있지 않으면, 바디는 이를 무시합니다. 기본적으로 모든 바디는 레"
 "이어 ``1``\\ 을 스캔합니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:109
+#: ../../docs/tutorials/physics/physics_introduction.rst:118
 msgid ""
 "These properties can be configured via code, or by editing them in the "
 "Inspector."
@@ -49852,7 +49940,7 @@ msgstr ""
 "이러한 속성은 코드를 통해, 혹은 인스펙터(Inspecter)에서 편집하여 구성할 수 있"
 "습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:111
+#: ../../docs/tutorials/physics/physics_introduction.rst:120
 msgid ""
 "Keeping track of what you're using each layer for can be difficult, so you "
 "may find it useful to assign names to the layers you're using. Names can be "
@@ -49862,11 +49950,11 @@ msgstr ""
 "어에 이름을 지정하는 것이 유용할 수 있습니다. 이름은 프로젝트 설정 -> Layer "
 "Names에서 지정할 수 있습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:117
+#: ../../docs/tutorials/physics/physics_introduction.rst:126
 msgid "**Example:**"
 msgstr "**예시:**"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:119
+#: ../../docs/tutorials/physics/physics_introduction.rst:128
 msgid ""
 "You have four node types in your game: Walls, Player, Enemy, and Coin. Both "
 "Player and Enemy should collide with Walls. The Player node should detect "
@@ -49877,7 +49965,7 @@ msgstr ""
 "어와 적 모두 벽과 충돌해야 합니다. 플레이어 노드는 적과 코인의 충돌을 모두 감"
 "지해야 하지만, 적과 코인은 서로 무시해야 합니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:124
+#: ../../docs/tutorials/physics/physics_introduction.rst:133
 msgid ""
 "Start by naming layers 1-4 \"walls\", \"player\", \"enemies\", and \"coins\" "
 "and place each node type in its respective layer using the \"Layer\" "
@@ -49890,11 +49978,11 @@ msgstr ""
 "어에 배치합니다. 그런 다음 각 노드가 상호 작용할 레이어를 선택하여 각 노드의 "
 "\"Mask\" 속성을 설정합니다. 예를 들어, 플레이어의 설정은 다음과 같습니다:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:133
+#: ../../docs/tutorials/physics/physics_introduction.rst:142
 msgid "Area2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:135
+#: ../../docs/tutorials/physics/physics_introduction.rst:144
 msgid ""
 "Area nodes provide **detection** and **influence**. They can detect when "
 "objects overlap and emit signals when bodies enter or exit. Areas can also "
@@ -49906,15 +49994,15 @@ msgstr ""
 "정의된 영역에서 중력 또는 제동과 같은 물리적 특성을 치환하는 데 사용될 수도 "
 "있습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:140
+#: ../../docs/tutorials/physics/physics_introduction.rst:149
 msgid "There are three main uses for :ref:`Area2D <class_Area2D>`:"
 msgstr ":ref:`Area2D <class_Area2D>`\\ 에는 3가지 주요 용도가 있습니다:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:142
+#: ../../docs/tutorials/physics/physics_introduction.rst:151
 msgid "Overriding physics parameters (such as gravity) in a given region."
 msgstr "특정 지역에서 (중력과 같은) 물리적 매개변수를 오버라이딩 합니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:144
+#: ../../docs/tutorials/physics/physics_introduction.rst:153
 msgid ""
 "Detecting when other bodies enter or exit a region or what bodies are "
 "currently in a region."
@@ -49922,19 +50010,19 @@ msgstr ""
 "다른 바디가 특정 지역에 들어오거나 나가는 때를 감지하거나 현재 지역에 있는 바"
 "디가 무엇인 지를 탐지합니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:146
+#: ../../docs/tutorials/physics/physics_introduction.rst:155
 msgid "Checking other areas for overlap."
 msgstr "다른 영역들이 겹치는지 확인합니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:148
+#: ../../docs/tutorials/physics/physics_introduction.rst:157
 msgid "By default, areas also receive mouse and touchscreen input."
 msgstr "기본적으로, 영역은 마우스 및 터치스크린 입력도 받습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:151
+#: ../../docs/tutorials/physics/physics_introduction.rst:160
 msgid "StaticBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:153
+#: ../../docs/tutorials/physics/physics_introduction.rst:162
 msgid ""
 "A static body is one that is not moved by the physics engine. It "
 "participates in collision detection, but does not move in response to the "
@@ -49948,7 +50036,7 @@ msgstr ""
 "이용하여 **마치** 움직이는 것처럼 충돌하는 바디에 움직임이나 회전을 전달할 "
 "수 있습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:158
+#: ../../docs/tutorials/physics/physics_introduction.rst:167
 msgid ""
 "``StaticBody2D`` nodes are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
@@ -49956,27 +50044,27 @@ msgstr ""
 "``StaticBody2D`` 노드는 환경에 속하거나 동적 동작을 수행할 필요가 없는 객체"
 "에 가장 많이 사용됩니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:161
+#: ../../docs/tutorials/physics/physics_introduction.rst:170
 msgid "Example uses for ``StaticBody2D``:"
 msgstr "``StaticBody2D`` 이용 예시:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:163
+#: ../../docs/tutorials/physics/physics_introduction.rst:172
 msgid "Platforms (including moving platforms)"
 msgstr "플랫폼 (이동 플랫폼 포함)"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:164
+#: ../../docs/tutorials/physics/physics_introduction.rst:173
 msgid "Conveyor belts"
 msgstr "컨베이어 벨트"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:165
+#: ../../docs/tutorials/physics/physics_introduction.rst:174
 msgid "Walls and other obstacles"
 msgstr "벽 및 기타 장애물"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:168
+#: ../../docs/tutorials/physics/physics_introduction.rst:177
 msgid "RigidBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:170
+#: ../../docs/tutorials/physics/physics_introduction.rst:179
 msgid ""
 "This is the node that implements simulated 2D physics. You do not control a :"
 "ref:`RigidBody2D <class_RigidBody2D>` directly. Instead, you apply forces to "
@@ -49989,7 +50077,7 @@ msgstr ""
 "리 엔진은 다른 물체와의 충돌을 포함한 결과 움직임과 충돌, 회전 등의 충돌 반응"
 "을 계산합니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:176
+#: ../../docs/tutorials/physics/physics_introduction.rst:185
 msgid ""
 "You can modify a rigid body's behavior via  properties such as \"Mass\", "
 "\"Friction\", or \"Bounce\", which can be set in the Inspector."
@@ -49997,7 +50085,7 @@ msgstr ""
 "인스펙터(Inspecter)에서 설정할 수 있는 \"Mass\", \"Friction\", 또는 \"Bounce"
 "\"와 같은 특성을 통해 리지드 바디의 동작을 수정할 수 있습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:179
+#: ../../docs/tutorials/physics/physics_introduction.rst:188
 msgid ""
 "The body's behavior is also affected by the world's properties, as set in "
 "`Project Settings -> Physics`, or by entering an :ref:`Area2D "
@@ -50007,7 +50095,7 @@ msgstr ""
 "을 받거나 전역 물리 특성을 오버라이딩 하는 :ref:`Area2D <class_Area2D>`\\ 를 "
 "입력한 것에 영향을 받습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:183
+#: ../../docs/tutorials/physics/physics_introduction.rst:192
 msgid ""
 "When a rigid body is at rest and hasn't moved for a while, it goes to sleep. "
 "A sleeping body acts like a static body, and its forces are not calculated "
@@ -50018,15 +50106,15 @@ msgstr ""
 "는 정적 바디처럼 작용하며, 그 힘은 물리 엔진에 의해 계산되지 않습니다. 충돌 "
 "또는 코드를 통해 힘이 가해지면 바디가 깨어나게 됩니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:189
+#: ../../docs/tutorials/physics/physics_introduction.rst:198
 msgid "Rigid body modes"
 msgstr "리지드 바디 모드"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:191
+#: ../../docs/tutorials/physics/physics_introduction.rst:200
 msgid "A rigid body can be set to one of four modes:"
 msgstr "리지드 바디는 다음 네 가지 모드 중 하나로 설정할 수 있습니다:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:193
+#: ../../docs/tutorials/physics/physics_introduction.rst:202
 msgid ""
 "**Rigid** - The body behaves as a physical object. It collides with other "
 "bodies and responds to forces applied to it. This is the default mode."
@@ -50034,7 +50122,7 @@ msgstr ""
 "**Rigid** - 이 바디는 물리적 물체처럼 작동합니다. 그것은 다른 바디들과 충돌하"
 "고 그것에 적용되는 힘에 반응합니다. 기본 모드입니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:194
+#: ../../docs/tutorials/physics/physics_introduction.rst:203
 msgid ""
 "**Static** - The body behaves like a :ref:`StaticBody2D "
 "<class_StaticBody2D>` and does not move."
@@ -50042,12 +50130,12 @@ msgstr ""
 "**Static** - 이 바디는 :ref:`StaticBody2D <class_StaticBody2D>`\\ 처럼 동작하"
 "며 움직이지 않습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:195
+#: ../../docs/tutorials/physics/physics_introduction.rst:204
 msgid "**Character** - Similar to \"Rigid\" mode, but the body cannot rotate."
 msgstr ""
 "**Character** - \"Rigid\" 모드와 유사하지만 바디를 회전할 수는 없습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:196
+#: ../../docs/tutorials/physics/physics_introduction.rst:205
 msgid ""
 "**Kinematic** - The body behaves like a :ref:`KinematicBody2D "
 "<class_KinematicBody2D>` and must be moved by code."
@@ -50055,11 +50143,11 @@ msgstr ""
 "**Kinematic** - 이 바디는 :ref:`KinematicBody2D <class_KinematicBody2D>`\\ 처"
 "럼 작동하며 코드를 통해 움직여야 한다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:199
+#: ../../docs/tutorials/physics/physics_introduction.rst:208
 msgid "Using RigidBody2D"
 msgstr "RigidBody2D 사용하기"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:201
+#: ../../docs/tutorials/physics/physics_introduction.rst:210
 msgid ""
 "One of the benefits of using a rigid body is that a lot of behavior can be "
 "had \"for free\" without writing any code. For example, if you were making "
@@ -50072,7 +50160,7 @@ msgstr ""
 "드\"-스타일의 게임을 만드는 경우, RigidBody2D들을 만들고 해당 속성을 조정하기"
 "만 하면 됩니다. 쌓기, 낙하 및 튕김은 물리 엔진에 의해 자동으로 계산됩니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:207
+#: ../../docs/tutorials/physics/physics_introduction.rst:216
 msgid ""
 "However, if you do wish to have some control over the body, you should take "
 "care - altering the ``position``, ``linear_velocity``, or other physics "
@@ -50093,11 +50181,11 @@ msgstr ""
 "`Physics2DDirectBodyState <class_Physics2DDirectBodyState>`\\ 에 접근할 수 있"
 "습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:216
+#: ../../docs/tutorials/physics/physics_introduction.rst:225
 msgid "For example, here is the code for an \"Asteroids\" style spaceship:"
 msgstr "예를 들어, 다음은 \"소행성\" 스타일 우주선의 코드입니다:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:261
+#: ../../docs/tutorials/physics/physics_introduction.rst:270
 msgid ""
 "Note that we are not setting the ``linear_velocity`` or ``angular_velocity`` "
 "properties directly, but rather applying forces (``thrust`` and ``torque``) "
@@ -50107,7 +50195,7 @@ msgstr ""
 "바디에 힘을 (``thrust``\\ 과 ``torque``) 적용하고 그 결과적인 움직임을 물리 "
 "엔진이 계산하도록 한다는 점에 유의해야 합니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:265
+#: ../../docs/tutorials/physics/physics_introduction.rst:274
 msgid ""
 "When a rigid body goes to sleep, the ``_integrate_forces()`` function will "
 "not be called. To override this behavior, you will need to keep the body "
@@ -50121,11 +50209,11 @@ msgstr ""
 "하여 바디를 깨어 있게 해야 합니다. 이것이 퍼포먼스에 안 좋은 영향을 줄 수 있"
 "으니 조심하세요."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:272
+#: ../../docs/tutorials/physics/physics_introduction.rst:281
 msgid "Contact reporting"
 msgstr "접촉 알림"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:274
+#: ../../docs/tutorials/physics/physics_introduction.rst:283
 msgid ""
 "By default, rigid bodies do not keep track of contacts, because this can "
 "require a huge amount of memory if many bodies are in the scene. To enable "
@@ -50144,7 +50232,7 @@ msgstr ""
 "<class_Physics2DDirectBodyState_method_get_contact_count>`\\ 이나 관련된 기능"
 "을 통해 얻을 수 있습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:281
+#: ../../docs/tutorials/physics/physics_introduction.rst:290
 msgid ""
 "Contact monitoring via signals can be enabled via the :ref:`contact_monitor "
 "<class_RigidBody2D_property_contact_monitor>` property. See :ref:"
@@ -50155,11 +50243,11 @@ msgstr ""
 "다. 사용 가능한 시그널 목록은 :ref:`RigidBody2D <class_RigidBody2D>`\\ 를 참"
 "조하십시오."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:286
+#: ../../docs/tutorials/physics/physics_introduction.rst:295
 msgid "KinematicBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:288
+#: ../../docs/tutorials/physics/physics_introduction.rst:297
 msgid ""
 ":ref:`KinematicBody2D <class_KinematicBody2D>` bodies detect collisions with "
 "other bodies, but are not affected by physics properties like gravity or "
@@ -50171,7 +50259,7 @@ msgstr ""
 "를 통해 사용자가 제어해야 합니다. 물리 엔진은 키네마틱 바디를 움직이지 않습니"
 "다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:293
+#: ../../docs/tutorials/physics/physics_introduction.rst:302
 msgid ""
 "When moving a kinematic body, you should not set its ``position`` directly. "
 "Instead, you use the ``move_and_collide()`` or ``move_and_slide()`` methods. "
@@ -50185,11 +50273,11 @@ msgstr ""
 "시 정지합니다. 바디가 충돌한 후에는 모든 충돌 응답을 수동으로 코딩해야 합니"
 "다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:300
+#: ../../docs/tutorials/physics/physics_introduction.rst:309
 msgid "Kinematic collision response"
 msgstr "키네마틱 충돌 응답"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:302
+#: ../../docs/tutorials/physics/physics_introduction.rst:311
 msgid ""
 "After a collision, you may want the body to bounce, to slide along a wall, "
 "or to alter the properties of the object it hit. The way you handle "
@@ -50200,11 +50288,11 @@ msgstr ""
 "경하기를 원할 수 있습니다. 충돌 응답을 다루기 위해선 KinematicBody2D을 움직이"
 "기 위해 사용된 메서드에 의해 결정됩니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:307
+#: ../../docs/tutorials/physics/physics_introduction.rst:316
 msgid ":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:309
+#: ../../docs/tutorials/physics/physics_introduction.rst:318
 msgid ""
 "When using ``move_and_collide()``, the function returns a :ref:"
 "`KinematicCollision2D <class_KinematicCollision2D>` object, which contains "
@@ -50215,22 +50303,22 @@ msgstr ""
 "가 포함된 :ref:`KinematicCollision2D <class_KinematicCollision2D>` 객체를 반"
 "환합니다. 이 정보를 사용하여 응답을 확인할 수 있습니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:314
+#: ../../docs/tutorials/physics/physics_introduction.rst:323
 msgid ""
 "For example, if you want to find the point in space where the collision "
 "occurred:"
 msgstr ""
 "예를 들어, 충돌이 발생한 공간의 지점을 찾으려면 다음과 같이 하면 됩니다:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:345
+#: ../../docs/tutorials/physics/physics_introduction.rst:354
 msgid "Or to bounce off of the colliding object:"
 msgstr "혹은 충돌 개체가 튀어나오도록 하려면 다음과 같습니다:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:374
+#: ../../docs/tutorials/physics/physics_introduction.rst:383
 msgid ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:376
+#: ../../docs/tutorials/physics/physics_introduction.rst:385
 msgid ""
 "Sliding is a common collision response; imagine a player moving along walls "
 "in a top-down game or running up and down slopes in a platformer. While it's "
@@ -50244,7 +50332,7 @@ msgstr ""
 "``move_and_slide()``\\ 는 많은 코드를 작성하지 않고 슬라이딩 이동을 실행할 "
 "수 있는 편리한 방법입니다."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:382
+#: ../../docs/tutorials/physics/physics_introduction.rst:391
 msgid ""
 "``move_and_slide()`` automatically includes the timestep in its calculation, "
 "so you should **not** multiply the velocity vector by ``delta``."
@@ -50252,7 +50340,7 @@ msgstr ""
 "``move_and_slide()`` 는 자동으로 타임 스텝를 계산에 포함하므로, 속도 벡터에 "
 "``delta``\\ 를 곱하면 **안 됩니다**."
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:386
+#: ../../docs/tutorials/physics/physics_introduction.rst:395
 msgid ""
 "For example, use the following code to make a character that can walk along "
 "the ground (including slopes) and jump when standing on the ground:"
@@ -50260,7 +50348,7 @@ msgstr ""
 "예를 들어, 다음 코드를 사용하여 지면 (경사 포함)을 따라 걸을 수 있고 지면에 "
 "있을 때 점프할 수 있는 캐릭터를 만들 수 있습니다:"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:453
+#: ../../docs/tutorials/physics/physics_introduction.rst:462
 msgid ""
 "See :ref:`doc_kinematic_character_2d` for more details on using "
 "``move_and_slide()``, including a demo project with detailed code."
@@ -53059,19 +53147,18 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:214
 msgid ""
-"This should be fairly common sense, assuming that you read and understood "
-"the vector tutorial, but let's work through an example. Again, we'll start "
-"with the identity transform, but this time we'll also keep track of the "
-"origin vector:"
+"Let's work through an example to help understand this. We will start with "
+"the identity transform like last time, except we will keep track of the "
+"origin vector this time."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:221
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:220
 msgid ""
 "If we want the object to move to a position of (1, 2), we simply need to set "
 "its `origin` vector to (1, 2):"
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:226
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:225
 msgid ""
 "There is also a `translated()` method, which performs a different operation "
 "to adding or changing `origin` directly. The `translated()` method will "
@@ -53080,21 +53167,22 @@ msgid ""
 "`Vector2.UP`."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:232
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:231
 msgid ""
 "Godot's 2D uses coordinates based on pixels, so in actual projects you will "
 "want to translate by hundreds of units."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:236
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:235
 #, fuzzy
 msgid "Putting it all together"
 msgstr "대상 가리키기"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:238
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:237
 msgid ""
 "We're going to apply everything we mentioned so far onto one transform. To "
-"follow along, get a simple project with a Sprite set to the Godot logo."
+"follow along, create a simple project with a Sprite node and use the Godot "
+"logo for the texture resource."
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:241
@@ -54534,7 +54622,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "**Particle Systems**: A cutout animation rig can be combined with particle "
-"systems. This can useful for magic effects, jetpacks, etc."
+"systems. This can be useful for magic effects, jetpacks, etc."
 msgstr ""
 "**입자 시스템**: 또한 전통적인 애니메이션 구조와 혼합될 수 있습니다. 마법 효"
 "과, 제트팩 등에 유용함."
@@ -54677,7 +54765,7 @@ msgid ""
 "We want the left arm to appear *behind* the hip and the torso. We could move "
 "the left arm nodes behind the hip (above the hip node in the scene "
 "hierarchy), but then the left arm is no longer in its proper place in the "
-"hierarchy. This means it wouldn't be affected the movement of the torso. "
+"hierarchy. This means it wouldn't be affected by the movement of the torso. "
 "We'll fix this problem with ``RemoteTransform2D`` nodes."
 msgstr ""
 
@@ -55042,7 +55130,7 @@ msgid "Setting easing curves for multiple keys"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:356
-msgid "To apply the same the easing curve to multiple keyframes at once:"
+msgid "To apply the same easing curve to multiple keyframes at once:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:358
@@ -55052,14 +55140,14 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:359
 #, fuzzy
 msgid ""
-"Click on the pencil icon in the bottom right of the animation panel, this "
+"Click on the pencil icon in the bottom right of the animation panel. This "
 "will open the transition editor."
 msgstr ""
 "노드 탭에서 AnimationPlayer 노드를 클릭해서 뷰포트 하단의 애니메이션 패널을 "
 "엽니다."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
-msgid "In the transition editor click on the desired curve to apply it."
+msgid "In the transition editor, click on the desired curve to apply it."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:366
@@ -56473,8 +56561,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
-msgid "Customizing mouse cursor"
-msgstr ""
+#, fuzzy
+msgid "Customizing the mouse cursor"
+msgstr "빌드 커스터마이징하기"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:6
 msgid ""
@@ -56484,12 +56573,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:8
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:14
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:25
 msgid "Using project settings"
 msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:9
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:26
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:37
 msgid "Using a script"
 msgstr ""
 
@@ -56499,48 +56588,63 @@ msgid ""
 "mouse cursor. The second way is more customizable, but involves scripting."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:16
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:15
+msgid ""
+"You could display a \"software\" mouse cursor by hiding the mouse cursor and "
+"moving a Sprite to the cursor position in a ``_process`` method, but this "
+"will add at least one frame of latency compared to an \"hardware\" mouse "
+"cursor. Therefore, it's recommended to use the approach described here "
+"whenever possible."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:21
+msgid ""
+"If you have to use the \"software\" approach, consider adding an "
+"extrapolation step to better display the actual mouse input."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:27
 msgid ""
 "Open project settings, go to Display>Mouse Cursor. You will see Custom Image "
 "and Custom Image Hotspot."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:20
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:31
 msgid ""
 "Custom Image is the desired image that you would like to set as the mouse "
 "cursor. Custom Hotspot is the point in the image that you would like to use "
 "as the cursor's detection point."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:23
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:34
 msgid "The custom image **must** be less than 256x256."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:28
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:39
 msgid "Create a Node and attach the following script."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:64
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:75
 msgid ""
 "Check :ref:`Input.set_custom_mouse_cursor() "
 "<class_Input_method_set_custom_mouse_cursor>`."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:68
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:79
 msgid "Demo project"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:70
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:81
 msgid ""
 "Find out more by studying this demo project: https://github.com/"
 "guilhermefelipecgs/custom_hardware_cursor"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:74
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:85
 msgid "Cursor list"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:76
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:87
 msgid ""
 "As documented in the :ref:`Input <class_Input>` class (see the "
 "**CursorShape** enum), there are multiple mouse cursors you can define. "
@@ -62157,7 +62261,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:49
-msgid "Godot provides a several useful tools to do this easily."
+msgid "Godot provides several useful tools to do this easily."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:52
@@ -62215,21 +62319,21 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:90
 msgid ""
-"Stretch settings are located in the project settings, it's just a bunch of "
-"configuration variables that provide several options:"
+"Stretch settings are located in the project settings and provide several "
+"options:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:96
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:95
 msgid "Stretch Mode"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:98
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:97
 msgid ""
 "The **Stretch Mode** setting defines how the base size is stretched to fit "
 "the resolution of the window or screen."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:103
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:102
 msgid ""
 "The animations below use a \"base size\" of just 16×9 pixels to demonstrate "
 "the effect of different stretch modes. A single sprite, also 16×9 pixels in "
@@ -62237,20 +62341,20 @@ msgid ""
 "<class_Line2D>` is added on top of it:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:113
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:112
 msgid ""
 "**Stretch Mode = Disabled** (default): No stretching happens. One unit in "
 "the scene corresponds to one pixel on the screen. In this mode, the "
 "**Stretch Aspect** setting has no effect."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:117
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:116
 msgid ""
 "This is a good option if you want full control over every screen pixel, and "
 "is probably the best option for 3D games."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:122
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:121
 msgid ""
 "**Stretch Mode = 2D**: In this mode, the size specified in display/width and "
 "display/height in the project settings is stretched to cover the whole "
@@ -62260,14 +62364,14 @@ msgid ""
 "sprite pixels and screen pixels, which may result in scaling artifacts."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:130
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:129
 msgid ""
 "This is a good option if your 2D artwork has a sufficiently high resolution "
 "and does not require pixel-perfect rendering. Consider enabling texture "
 "filtering and mipmapping on your 2D textures and fonts."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:137
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:136
 msgid ""
 "**Stretch Mode = Viewport**: Viewport scaling means that the size of the "
 "root :ref:`Viewport <class_Viewport>` is set precisely to the base size "
@@ -62276,23 +62380,23 @@ msgid ""
 "screen (taking the **Stretch Aspect** setting into account)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:144
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:143
 msgid ""
 "This mode is useful when working with pixel-precise games, or for the sake "
 "of rendering to a lower resolution to improve performance."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:150
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:149
 msgid "Stretch Aspect"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:152
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:151
 msgid ""
 "The second setting is the stretch aspect. Note that this only takes effect "
 "if **Stretch Mode** is set to something other than **Disabled**."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:155
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:154
 msgid ""
 "In the animations below, you will notice gray and black areas. The black "
 "areas are added by the engine and cannot be drawn into. The gray areas are "
@@ -62300,7 +62404,7 @@ msgid ""
 "region outside the blue frame you see in the 2D editor."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:160
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:159
 msgid ""
 "**Stretch Aspect = Ignore**: Ignore the aspect ratio when stretching the "
 "screen. This means that the original resolution will be stretched to exactly "
@@ -62308,7 +62412,7 @@ msgid ""
 "nonuniform stretching: things looking wider or taller than designed."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:168
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:167
 msgid ""
 "**Stretch Aspect = Keep**: Keep aspect ratio when stretching the screen. "
 "This means that the viewport retains its original size regardless of the "
@@ -62316,13 +62420,13 @@ msgid ""
 "screen (\"letterboxing\") or the sides (\"pillarboxing\")."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:174
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:173
 msgid ""
 "This is a good option if you know the aspect ratio of your target devices in "
 "advance, or if you don't want to handle different aspect ratios."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:180
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:179
 msgid ""
 "**Stretch Aspect = Keep Width**: Keep aspect ratio when stretching the "
 "screen. If the screen is wider than the base size, black bars are added at "
@@ -62332,13 +62436,13 @@ msgid ""
 "\"Expand Vertically\"."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:187
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:186
 msgid ""
 "This is usually the best option for creating GUIs or HUDs that scale, so "
 "some controls can be anchored to the bottom (:ref:`doc_size_and_anchors`)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:193
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:192
 msgid ""
 "**Stretch Aspect = Keep Height**: Keep aspect ratio when stretching the "
 "screen. If the screen is taller than the base size, black bars are added at "
@@ -62348,13 +62452,13 @@ msgid ""
 "\"Expand Horizontally\"."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:200
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:199
 msgid ""
 "This is usually the best option for 2D games that scroll horizontally (like "
 "runners or platformers)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:205
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:204
 msgid ""
 "**Stretch Aspect = Expand**: Keep aspect ratio when stretching the screen, "
 "but keep neither the base width nor height. Depending on the screen aspect "
@@ -62363,25 +62467,25 @@ msgid ""
 "screen is taller than the original size)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:215
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:214
 msgid "Stretch Shrink"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:217
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:216
 msgid ""
 "The **Shrink** setting allows you to add an extra scaling factor on top of "
 "what the **Stretch** options above already provide. The default value of 1 "
 "means that no scaling occurs."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:221
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:220
 msgid ""
 "If, for example, you set **Shrink** to 4 and leave **Stretch Mode** on "
 "**Disabled**, each unit in your scene will correspond to 4×4 pixels on the "
 "screen."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:225
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:224
 msgid ""
 "If **Stretch Mode** is set to something other than **Disabled**, the size of "
 "the root viewport is scaled down by the **Shrink** factor, and pixels in the "
@@ -62390,22 +62494,22 @@ msgid ""
 "lower resolution."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:232
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:231
 msgid "From scripts"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:234
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:233
 msgid ""
 "To configure stretching at runtime from a script, use the ``get_tree()."
 "set_screen_stretch()`` function (see :ref:`SceneTree.set_screen_stretch() "
 "<class_SceneTree_method_set_screen_stretch>`)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:239
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:238
 msgid "Reducing aliasing on downsampling"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:241
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:240
 msgid ""
 "If the game has a very high base resolution (e.g. 3840×2160), aliasing might "
 "appear when downsampling to something considerably lower like 1280×720. "
@@ -62414,12 +62518,12 @@ msgid ""
 "data is loaded:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:253
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:252
 #, fuzzy
 msgid "Handling aspect ratios"
 msgstr "시그널 다루기"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:255
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:254
 msgid ""
 "Once scaling for different resolutions is accounted for, make sure that your "
 "*user interface* also scales for different aspect ratios. This can be done "
@@ -62427,11 +62531,11 @@ msgid ""
 "<doc_gui_containers>`."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:261
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:260
 msgid "Field of view scaling"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:263
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:262
 msgid ""
 "The 3D Camera node's **Keep Aspect** property defaults to the **Keep "
 "Height** scaling mode (also called *Hor+*). This is usually the best value "
@@ -62439,7 +62543,7 @@ msgid ""
 "will automatically use a wider field of view."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:268
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:267
 msgid ""
 "However, if your 3D game is intended to be played in portrait mode, it may "
 "make more sense to use **Keep Width** instead (also called *Vert-*). This "
@@ -77826,7 +77930,8 @@ msgstr ""
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:44
 msgid ""
 "The library must have a dependency on the Godot engine library (``godot-lib."
-"x.y.aar``). A stable version is made available for each Godot release."
+"<version>.<status>.aar``). A stable version is made available for each Godot "
+"release on the `Godot download page <https://godotengine.org/download>`_."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:46
@@ -77858,7 +77963,10 @@ msgid "Add the Godot engine library as a dependency to your plugin module:"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:58
-msgid "Download the Godot engine library (godot-lib.x.y.aar)"
+msgid ""
+"Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
+"from the `Godot download page <https://godotengine.org/download>`_ (e.g: "
+"``godot-lib.3.2.2.stable.aar``)."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:60
@@ -85776,7 +85884,7 @@ msgid "NuGet"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:14
-msgid "pkg-config"
+msgid "**On Linux/macOS only:** pkg-config"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:16
@@ -85798,17 +85906,17 @@ msgid ""
 "Mono's ``bin`` directory to your ``PATH`` environment variable)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:27
+#: ../../docs/development/compiling/compiling_with_mono.rst:29
 msgid ""
 "Alternatively, you can use the following command, though it's deprecated and "
 "may not work correctly::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:32
+#: ../../docs/development/compiling/compiling_with_mono.rst:34
 msgid "Environment variables"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:34
+#: ../../docs/development/compiling/compiling_with_mono.rst:36
 msgid ""
 "By default, SCons will try to find Mono in the Windows Registry on Windows "
 "or via ``pkg-config`` on other platforms. You can specify a different "
@@ -85816,27 +85924,27 @@ msgid ""
 "SCons; e.g. ``scons [...] mono_prefix=%ProgramFiles%/Mono``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:39
+#: ../../docs/development/compiling/compiling_with_mono.rst:41
 msgid ""
 "This is the directory that contains the subdirectories ``include`` and "
 "``lib``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:42
+#: ../../docs/development/compiling/compiling_with_mono.rst:44
 msgid "Enable the Mono module"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:44
+#: ../../docs/development/compiling/compiling_with_mono.rst:46
 msgid ""
 "By default, the Mono module is disabled when building. To enable it, add the "
 "option ``module_mono_enabled=yes`` to the SCons command line."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:48
+#: ../../docs/development/compiling/compiling_with_mono.rst:50
 msgid "Generate the glue"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:50
+#: ../../docs/development/compiling/compiling_with_mono.rst:52
 msgid ""
 "Glue sources are the wrapper functions that will be called by managed "
 "methods. These source files must be generated before building your final "
@@ -85844,14 +85952,14 @@ msgid ""
 "binary with the options ``tools=yes`` and ``mono_glue=no``::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:57
+#: ../../docs/development/compiling/compiling_with_mono.rst:59
 msgid ""
 "After the build finishes, you need to run the compiled executable with the "
 "parameter ``--generate-mono-glue`` followed by the path to an output "
 "directory. This path must be ``modules/mono/glue`` in the Godot directory::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:63
+#: ../../docs/development/compiling/compiling_with_mono.rst:65
 msgid ""
 "This command will tell Godot to generate the file ``modules/mono/glue/"
 "mono_glue.gen.cpp`` and the C# solution for the Godot API at ``modules/mono/"
@@ -85859,7 +85967,7 @@ msgid ""
 "Godot for all the desired targets without having to repeat this process."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:68
+#: ../../docs/development/compiling/compiling_with_mono.rst:70
 msgid ""
 "``<godot_binary>`` refers to the tools binary you compiled above with the "
 "Mono module enabled. Its exact name will differ based on your system and "
@@ -85871,12 +85979,12 @@ msgid ""
 "the Mono glue."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:78
+#: ../../docs/development/compiling/compiling_with_mono.rst:80
 #: ../../docs/development/cpp/custom_godot_servers.rst:506
 msgid "Notes"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:79
+#: ../../docs/development/compiling/compiling_with_mono.rst:82
 msgid ""
 "**Do not build your final binaries with** ``mono_glue=no``. This disables C# "
 "scripting. This option must be used only for the temporary binary that will "
@@ -85884,7 +85992,7 @@ msgid ""
 "without the glue sources."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:83
+#: ../../docs/development/compiling/compiling_with_mono.rst:86
 msgid ""
 "The glue sources must be regenerated every time the ClassDB-registered API "
 "changes. That is, for example, when a new method is registered to the "
@@ -85893,28 +86001,28 @@ msgid ""
 "the glue sources."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:91
+#: ../../docs/development/compiling/compiling_with_mono.rst:94
 msgid "Rebuild with Mono glue"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:93
+#: ../../docs/development/compiling/compiling_with_mono.rst:96
 msgid ""
 "Once you have generated the Mono glue, you can build the final binary with "
 "``mono_glue=yes``. This is the default value for ``mono_glue``, so you can "
 "also omit it. To build a Mono-enabled editor::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:99
+#: ../../docs/development/compiling/compiling_with_mono.rst:102
 msgid "And Mono-enabled export templates::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:103
+#: ../../docs/development/compiling/compiling_with_mono.rst:106
 msgid ""
 "If everything went well, apart from the normal output, SCons should have "
 "created the following files in the ``bin`` directory:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:106
+#: ../../docs/development/compiling/compiling_with_mono.rst:109
 msgid ""
 "If you're not linking the Mono runtime statically, the build script will "
 "place the Mono runtime shared library (``monosgen-2.0``) next to the Godot "
@@ -85924,7 +86032,7 @@ msgid ""
 "Gradle takes care of the rest."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:112
+#: ../../docs/development/compiling/compiling_with_mono.rst:115
 msgid ""
 "Unlike \"classical\" Godot builds, when building with the Mono module "
 "enabled (and depending on the target platform), a data directory may be "
@@ -85934,32 +86042,32 @@ msgid ""
 "directory<compiling_with_mono_data_directory>`."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:123
+#: ../../docs/development/compiling/compiling_with_mono.rst:126
 msgid "Example (Windows)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:139
+#: ../../docs/development/compiling/compiling_with_mono.rst:143
 msgid "Example (X11)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:157
+#: ../../docs/development/compiling/compiling_with_mono.rst:162
 msgid "Data directory"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:159
+#: ../../docs/development/compiling/compiling_with_mono.rst:164
 msgid ""
 "The data directory is a dependency for Godot binaries built with the Mono "
 "module enabled. It contains important files for the correct functioning of "
 "Godot. It must be distributed together with the Godot executable."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:163
+#: ../../docs/development/compiling/compiling_with_mono.rst:168
 msgid ""
 "The information below doesn't apply for Android, iOS and WASM, as there is "
 "no data directory for these platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:169
+#: ../../docs/development/compiling/compiling_with_mono.rst:174
 msgid ""
 "The name of the data directory for an export template differs based on the "
 "configuration it was built with. The format is ``data.mono.<platform>.<bits>."
@@ -85967,7 +86075,7 @@ msgid ""
 "windows.64.release``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:174
+#: ../../docs/development/compiling/compiling_with_mono.rst:179
 msgid ""
 "This directory must be placed with its original name next to the Godot "
 "export templates. When exporting a project, Godot will also copy this "
@@ -85976,81 +86084,81 @@ msgid ""
 "in the project setting ``application/config/name``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:180
+#: ../../docs/development/compiling/compiling_with_mono.rst:185
 msgid ""
 "In the case of macOS, where the export template is compressed as a ZIP "
 "archive, the contents of the data directory can be placed in the following "
 "locations inside the ZIP archive:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:185
-#: ../../docs/development/compiling/compiling_with_mono.rst:207
+#: ../../docs/development/compiling/compiling_with_mono.rst:190
+#: ../../docs/development/compiling/compiling_with_mono.rst:212
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Mono/lib``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:185
+#: ../../docs/development/compiling/compiling_with_mono.rst:190
 msgid "``/osx_template.app/Contents/Frameworks/GodotSharp/Mono/lib``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:187
-#: ../../docs/development/compiling/compiling_with_mono.rst:209
+#: ../../docs/development/compiling/compiling_with_mono.rst:192
+#: ../../docs/development/compiling/compiling_with_mono.rst:214
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Mono/etc``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:187
+#: ../../docs/development/compiling/compiling_with_mono.rst:192
 msgid "``/osx_template.app/Contents/Resources/GodotSharp/Mono/etc``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:193
+#: ../../docs/development/compiling/compiling_with_mono.rst:198
 msgid ""
 "The name of the data directory for the Godot editor will always be "
 "``GodotSharp``. The contents of this directory are the following:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:196
+#: ../../docs/development/compiling/compiling_with_mono.rst:201
 msgid "``Api``"
 msgstr "``Api(응용 프로그램 프로그래밍 인터페이스)``"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:197
+#: ../../docs/development/compiling/compiling_with_mono.rst:202
 msgid "``Mono`` (optional)"
 msgstr "``Mono`` (선택)"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:198
+#: ../../docs/development/compiling/compiling_with_mono.rst:203
 msgid "``Tools``"
 msgstr "``Tools(도구)``"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:200
+#: ../../docs/development/compiling/compiling_with_mono.rst:205
 msgid ""
 "The ``Api`` subdirectory contains the Godot API assemblies. On macOS, if the "
 "Godot editor is distributed as a bundle, the contents of the data directory "
 "may be placed in the following locations:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:205
+#: ../../docs/development/compiling/compiling_with_mono.rst:210
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Api``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:205
+#: ../../docs/development/compiling/compiling_with_mono.rst:210
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Api``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:207
+#: ../../docs/development/compiling/compiling_with_mono.rst:212
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Mono/lib``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:209
+#: ../../docs/development/compiling/compiling_with_mono.rst:214
 msgid "``<bundle_name>.app/Contents/Resources/GodotSharp/Mono/etc``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:211
+#: ../../docs/development/compiling/compiling_with_mono.rst:216
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Tools``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:211
+#: ../../docs/development/compiling/compiling_with_mono.rst:216
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Tools``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:214
+#: ../../docs/development/compiling/compiling_with_mono.rst:219
 msgid ""
 "The ``Mono`` subdirectory is optional. It will be needed when distributing "
 "the editor, as issues can arise when the user-installed Mono version isn't "
@@ -86059,18 +86167,18 @@ msgid ""
 "this folder and its contents."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:219
+#: ../../docs/development/compiling/compiling_with_mono.rst:224
 msgid ""
 "The ``Tools`` subdirectory contains tools required by the editor, like the "
 "``GodotTools`` assemblies and its dependencies."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:223
+#: ../../docs/development/compiling/compiling_with_mono.rst:228
 #, fuzzy
 msgid "Building the Mono runtime"
 msgstr "간단한 플러그인 만들기"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:225
+#: ../../docs/development/compiling/compiling_with_mono.rst:230
 msgid ""
 "When building Godot for the desktop, you will likely use the pre-built Mono "
 "runtime that is installed on your system. This likely won't be the case when "
@@ -86078,7 +86186,7 @@ msgid ""
 "to build the Mono runtime yourself for those platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:230
+#: ../../docs/development/compiling/compiling_with_mono.rst:235
 msgid ""
 "We recommend using these `build scripts <https://github.com/godotengine/"
 "godot-mono-builds>`_. They simplify this process but also include some "
@@ -86086,12 +86194,12 @@ msgid ""
 "above for instructions on how to use the scripts."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:236
+#: ../../docs/development/compiling/compiling_with_mono.rst:241
 #, fuzzy
 msgid "Targeting Android"
 msgstr "안드로이드로 내보내기"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:238
+#: ../../docs/development/compiling/compiling_with_mono.rst:243
 msgid ""
 "Compiling the Android export templates with Mono is a bit simpler than it is "
 "for the desktop platforms, as there are no additional steps required after "
@@ -86100,7 +86208,7 @@ msgid ""
 "automatically added to the Gradle project."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:244
+#: ../../docs/development/compiling/compiling_with_mono.rst:249
 msgid ""
 "Once you've built Mono, you can proceed to build Godot with the instructions "
 "described in this page and the :ref:`Compiling for "
@@ -86110,12 +86218,12 @@ msgid ""
 "may be different on your system)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:252
+#: ../../docs/development/compiling/compiling_with_mono.rst:257
 #, fuzzy
 msgid "Targeting iOS"
 msgstr "안드로이드로 내보내기"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:254
+#: ../../docs/development/compiling/compiling_with_mono.rst:259
 msgid ""
 "Once you've built Mono, you can proceed to build Godot with the instructions "
 "described in this page and the :ref:`Compiling for "
@@ -86125,49 +86233,49 @@ msgid ""
 "different on your system)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:261
+#: ../../docs/development/compiling/compiling_with_mono.rst:266
 msgid ""
 "After building Godot for each architecture, you will notice SCons has copied "
 "the Mono libraries for each of them to the output directory:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:274
+#: ../../docs/development/compiling/compiling_with_mono.rst:279
 msgid ""
 "The last three are only for iOS devices and are not available for the iOS "
 "simulator."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:276
+#: ../../docs/development/compiling/compiling_with_mono.rst:281
 msgid ""
 "These libraries must be put in universal (multi-architecture) \"fat\" files "
 "to be distributed with the export templates."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:279
+#: ../../docs/development/compiling/compiling_with_mono.rst:284
 msgid ""
 "The following bash script will create the \"fat\" libraries in the directory "
 "``#bin/ios/iphone-mono-libs``:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:295
+#: ../../docs/development/compiling/compiling_with_mono.rst:300
 msgid ""
 "The ``iphone-mono-libs`` folder must be distributed with the export "
 "templates. The Godot editor will look for the libraries in ``<templates>/"
 "iphone-mono-libs/lib<name>.iphone.fat.a``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:299
+#: ../../docs/development/compiling/compiling_with_mono.rst:304
 #, fuzzy
 msgid "Targeting WebAssembly"
 msgstr "**웹:** WebAssembly"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:301
+#: ../../docs/development/compiling/compiling_with_mono.rst:306
 msgid ""
 "Building for WebAssembly currently involves the same process regardless of "
 "whether the Mono module is enabled."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:303
+#: ../../docs/development/compiling/compiling_with_mono.rst:308
 msgid ""
 "Once you've built Mono, you can proceed to build Godot with the instructions "
 "described in this page and the :ref:`Compiling for the "
@@ -86177,12 +86285,12 @@ msgid ""
 "different on your system)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:311
+#: ../../docs/development/compiling/compiling_with_mono.rst:316
 #, fuzzy
 msgid "Base Class Library"
 msgstr "애셋 라이브러리"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:313
+#: ../../docs/development/compiling/compiling_with_mono.rst:318
 msgid ""
 "The export templates must also include the BCL (Base Class Library) for each "
 "target platform. Godot looks for the BCL folder at ``<templates>/bcl/"
@@ -86191,73 +86299,73 @@ msgid ""
 "``<templates>/bcl/javascript``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:318
+#: ../../docs/development/compiling/compiling_with_mono.rst:323
 msgid "Alternatively, Godot will look for them in the following locations:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:321
+#: ../../docs/development/compiling/compiling_with_mono.rst:326
 msgid "``<templates>/bcl/monodroid``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:323
+#: ../../docs/development/compiling/compiling_with_mono.rst:328
 msgid "``<templates>/bcl/monotouch``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:325
+#: ../../docs/development/compiling/compiling_with_mono.rst:330
 #, fuzzy
 msgid "WebAssembly"
 msgstr "**웹:** WebAssembly"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:325
+#: ../../docs/development/compiling/compiling_with_mono.rst:330
 msgid "``<templates>/bcl/wasm``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:327
+#: ../../docs/development/compiling/compiling_with_mono.rst:332
 #, fuzzy
 msgid "Linux and macOS"
 msgstr "macOS에서 실행 중"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:327
+#: ../../docs/development/compiling/compiling_with_mono.rst:332
 msgid "``<templates>/bcl/net_4_x``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:329
+#: ../../docs/development/compiling/compiling_with_mono.rst:334
 msgid "``<templates>/bcl/net_4_x_win``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:332
+#: ../../docs/development/compiling/compiling_with_mono.rst:337
 msgid ""
 "As of now, we're assuming the same BCL profile can be used for both Linux "
 "and macOS, but this may change in the future as they're not guaranteed to be "
 "the same (as is the case with the Windows BCL)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:336
+#: ../../docs/development/compiling/compiling_with_mono.rst:341
 msgid ""
 "If the target platform is the same as the platform of the Godot editor, then "
 "the editor will use the BCL it's running on (``<data_folder>/Mono/lib/"
 "mono/4.5``) if it cannot find the BCL in the export templates."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:341
+#: ../../docs/development/compiling/compiling_with_mono.rst:346
 msgid "AOT cross-compilers"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:343
+#: ../../docs/development/compiling/compiling_with_mono.rst:348
 msgid ""
 "To perform ahead-of-time (AOT) compilation for other platforms, Godot needs "
 "to have access to the Mono cross-compilers for that platform and "
 "architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:346
+#: ../../docs/development/compiling/compiling_with_mono.rst:351
 msgid ""
 "Godot will look for the cross-compiler executable in the AOT compilers "
 "folder. The location of this folder is ``<data_folder>/Tools/aot-compilers/"
 "``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:349
+#: ../../docs/development/compiling/compiling_with_mono.rst:354
 #, fuzzy
 msgid ""
 "In order to build the cross-compilers we recommend using these `build "
@@ -86266,77 +86374,77 @@ msgstr ""
 "이 문서에 기여하고 싶다면, 문서의 저장소를 `여기서 <https://github.com/"
 "godotengine/godot-docs>`_ 알아보실 수 있습니다."
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:352
+#: ../../docs/development/compiling/compiling_with_mono.rst:357
 msgid ""
 "After building them, copy the executable to the Godot AOT compilers "
 "directory. The executable name is ``<triple>-mono-sgen``, e.g.: ``aarch64-"
 "apple-darwin-mono-sgen``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:356
+#: ../../docs/development/compiling/compiling_with_mono.rst:361
 msgid "Command-line options"
 msgstr "명령 줄 설정"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:358
+#: ../../docs/development/compiling/compiling_with_mono.rst:363
 msgid ""
 "The following is the list of command-line options available when building "
 "with the Mono module:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:361
+#: ../../docs/development/compiling/compiling_with_mono.rst:366
 msgid "**module_mono_enabled**\\ =yes | **no**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:363
+#: ../../docs/development/compiling/compiling_with_mono.rst:368
 msgid "Build Godot with the Mono module enabled."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:365
+#: ../../docs/development/compiling/compiling_with_mono.rst:370
 msgid "**mono_glue**\\ =\\ **yes** | no"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:367
+#: ../../docs/development/compiling/compiling_with_mono.rst:372
 msgid ""
 "Whether to include the glue source files in the build and define "
 "``MONO_GLUE_DISABLED`` as a preprocessor macro."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:370
+#: ../../docs/development/compiling/compiling_with_mono.rst:375
 msgid "**mono_prefix**\\ =path"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:372
+#: ../../docs/development/compiling/compiling_with_mono.rst:377
 msgid ""
 "Path to the Mono installation directory for the target platform and "
 "architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:374
+#: ../../docs/development/compiling/compiling_with_mono.rst:379
 msgid "**xbuild_fallback**\\ =yes | **no**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:376
+#: ../../docs/development/compiling/compiling_with_mono.rst:381
 msgid "Whether to fallback to xbuild if MSBuild is not available."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:378
+#: ../../docs/development/compiling/compiling_with_mono.rst:383
 msgid "**mono_static**\\ =yes | no"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:380
+#: ../../docs/development/compiling/compiling_with_mono.rst:385
 msgid "Whether to link the Mono runtime statically."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:381
+#: ../../docs/development/compiling/compiling_with_mono.rst:386
 msgid ""
 "The default is **yes** for iOS and WASM, and **no** for other platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:383
+#: ../../docs/development/compiling/compiling_with_mono.rst:388
 msgid "**copy_mono_root**\\ =yes | **no**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:385
+#: ../../docs/development/compiling/compiling_with_mono.rst:390
 msgid ""
 "Whether to copy the Mono framework assemblies and configuration files "
 "required by the Godot editor."
@@ -86675,7 +86783,7 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:110
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:105
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:107
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
 #, fuzzy
 msgid ""
@@ -87105,10 +87213,13 @@ msgid "An example of a filled out ``tasks.json``."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:54
+#, fuzzy
 msgid ""
-"Arguments are can be different based on your own setup and needs. See :ref:"
+"Arguments can be different based on your own setup and needs. See :ref:"
 "`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
+"godot의 UI 시스템이 어떻게 작동하는지 알아보려면 :"
+"doc:'ui_introduction_to_the_ui_system'를 먼저 읽어보세요."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:60
 msgid ""
@@ -87137,11 +87248,11 @@ msgid ""
 "add a new section to it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:100
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:102
 msgid "An example of a filled out ``launch.json``."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:102
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:104
 msgid ""
 "The name under ``program`` depends on your build configuration, e.g. ``godot."
 "x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
@@ -93750,6 +93861,22 @@ msgid ""
 msgstr ""
 "Zeef Godot Engine: Andre Schmitz 의 선별된 리소스 디렉토리입니다. <https://"
 "godot-engine.zeef.com/andre.antonio.schmitz>"
+
+#~ msgid "Create a main menu screen"
+#~ msgstr "메인 메뉴 화면 만들기"
+
+#~ msgid "Create a game user interface"
+#~ msgstr "게임 사용자 인터페이스 만들기"
+
+#~ msgid ""
+#~ "The last two arguments are constants from the ``Tween`` class. "
+#~ "``TRANS_LINEAR`` means the animation should be linear. ``EASE_IN`` "
+#~ "doesn't do anything with a linear transition, but we must provide this "
+#~ "last argument or we'll get an error."
+#~ msgstr ""
+#~ "마지막 두 인수는 ``Tween`` 클래스의 상수입니다. ``TRANS_LINEAR`` 는 애니메"
+#~ "이션이 선형적인 것을 의미합니다. ``EASE_IN`` 선형 변환에선 아무것도 하지 "
+#~ "않지만, 꼭 이 마지막 인수를 채워야 에러가 나지 않습니다."
 
 #~ msgid ""
 #~ "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index."

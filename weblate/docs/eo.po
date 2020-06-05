@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: 2020-05-01 11:42+0000\n"
 "Last-Translator: Sr Half <flavio05@outlook.com>\n"
 "Language-Team: Esperanto <https://hosted.weblate.org/projects/godot-engine/"
@@ -152,6 +152,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:7
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:4
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:7
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:7
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:7
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:4
 #: ../../docs/tutorials/2d/2d_transforms.rst:7
@@ -464,7 +465,7 @@ msgid "**For the editor:**"
 msgstr ""
 
 #: ../../docs/about/faq.rst:38 ../../docs/tutorials/misc/jitter_stutter.rst:59
-#: ../../docs/development/compiling/compiling_with_mono.rst:329
+#: ../../docs/development/compiling/compiling_with_mono.rst:334
 msgid "Windows"
 msgstr ""
 
@@ -502,14 +503,14 @@ msgstr ""
 #: ../../docs/about/faq.rst:47
 #: ../../docs/getting_started/step_by_step/exporting.rst:310
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
-#: ../../docs/development/compiling/compiling_with_mono.rst:321
+#: ../../docs/development/compiling/compiling_with_mono.rst:326
 msgid "Android"
 msgstr ""
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/getting_started/step_by_step/exporting.rst:363
 #: ../../docs/tutorials/misc/jitter_stutter.rst:96
-#: ../../docs/development/compiling/compiling_with_mono.rst:323
+#: ../../docs/development/compiling/compiling_with_mono.rst:328
 msgid "iOS"
 msgstr ""
 
@@ -1916,7 +1917,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 #: ../../docs/getting_started/editor/external_editor.rst:32
-#: ../../docs/development/compiling/compiling_with_mono.rst:191
+#: ../../docs/development/compiling/compiling_with_mono.rst:196
 msgid "Editor"
 msgstr ""
 
@@ -3936,107 +3937,107 @@ msgid ""
 "one of the three animation types:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:635
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:636
 msgid ""
 "First, we get the list of animation names from the AnimatedSprite's "
 "``frames`` property. This returns an Array containing all three animation "
 "names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:639
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:640
 msgid ""
 "We then need to pick a random number between ``0`` and ``2`` to select one "
 "of these names from the list (array indices start at ``0``). ``randi() % n`` "
 "selects a random integer between ``0`` and ``n-1``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:643
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:644
 msgid ""
 "You must use ``randomize()`` if you want your sequence of \"random\" numbers "
 "to be different every time you run the scene. We're going to use "
 "``randomize()`` in our ``Main`` scene, so we won't need it here."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:647
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:648
 msgid ""
 "The last piece is to make the mobs delete themselves when they leave the "
 "screen. Connect the ``screen_exited()`` signal of the "
 "``VisibilityNotifier2D`` node and add this code:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:664
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:665
 msgid "This completes the `Mob` scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:667
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:668
 msgid "Main scene"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:669
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:670
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
 "your saved ``Player.tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:675
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:676
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:678
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:679
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:679
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:680
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:680
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:682
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:683
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:684
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:686
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:687
 msgid "``MobTimer``: ``0.5``"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:687
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:688
 msgid "``ScoreTimer``: ``1``"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:688
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:689
 msgid "``StartTimer``: ``2``"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:690
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:691
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:694
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:695
 msgid "Spawning mobs"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:696
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:697
 msgid ""
 "The Main node will be spawning new mobs, and we want them to appear at a "
 "random location on the edge of the screen. Add a :ref:`Path2D "
@@ -4044,7 +4045,7 @@ msgid ""
 "select ``Path2D``, you will see some new buttons at the top of the editor:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:703
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:704
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -4052,19 +4053,19 @@ msgid ""
 "the \"Lock\" button, appearing as a magnet next to some intersecting lines."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:710
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:711
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:715
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:716
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:718
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:719
 msgid ""
 "Now that the path is defined, add a :ref:`PathFollow2D <class_PathFollow2D>` "
 "node as a child of ``MobPath`` and name it ``MobSpawnLocation``. This node "
@@ -4072,43 +4073,43 @@ msgid ""
 "to select a random position and direction along the path."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:723
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:724
 msgid "Your scene should look like this:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:728
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:729
 msgid "Main script"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:730
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:731
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:770
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:771
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob`` property in the "
 "Inspector under \"Script Variables\"."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:773
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:774
 msgid "You can assign this property's value in two ways:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:775
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:776
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property ."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:777
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:778
 msgid ""
 "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``Mob."
 "tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:780
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:781
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
@@ -4118,7 +4119,7 @@ msgid ""
 "will set everything up for a new game:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:818
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:819
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` , and ``MobTimer``) to the main script. "
@@ -4126,7 +4127,7 @@ msgid ""
 "increment the score by 1."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:845
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:846
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -4134,52 +4135,52 @@ msgid ""
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:851
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:852
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:899
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:900
 msgid ""
 "Why ``PI``? In functions requiring angles, GDScript uses *radians*, not "
 "degrees. If you're more comfortable working with degrees, you'll need to use "
 "the ``deg2rad()`` and ``rad2deg()`` functions to convert between the two."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:905
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:906
 msgid "Testing the scene"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:907
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:908
 msgid ""
 "Let's test the scene to make sure everything is working. Add this to "
 "``_ready()``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:924
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:925
 msgid ""
 "Let's also assign ``Main`` as our \"Main Scene\" - the one that runs "
 "automatically when the game launches. Press the \"Play\" button and select "
 "``Main.tscn`` when prompted."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:928
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid ""
 "You should be able to move the player around, see mobs spawning, and see the "
 "player disappear when hit by a mob."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:931
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:932
 msgid ""
 "When you're sure everything is working, remove the call to ``new_game()`` "
 "from ``_ready()``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:936
 msgid "HUD"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:937
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -4188,57 +4189,57 @@ msgid ""
 "overlay on top of the game view."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:943
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:944
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
 "isn't covered up by any game elements like the player or mobs."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:947
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:948
 msgid "The HUD needs to display the following information:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:949
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:950
 msgid "Score, changed by ``ScoreTimer``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:950
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:951
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:951
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:952
 msgid "A \"Start\" button to begin the game."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:953
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:954
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
 "`Label <class_Label>` and :ref:`Button <class_Button>`."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:957
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:958
 msgid "Create the following as children of the ``HUD`` node:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:959
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:960
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:960
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:961
 msgid ":ref:`Label <class_Label>` named ``Message``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:961
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:962
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:962
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:963
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:964
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:965
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the ``Text`` field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -4246,25 +4247,25 @@ msgid ""
 "Regular.ttf\". To use this font, do the following:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:969
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:970
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:973
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:974
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
 "font's ``Size``. A setting of ``64`` works well."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:979
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:980
 msgid ""
 "Once you've done this on the ``ScoreLabel``, you can click the down arrow "
 "next to the DynamicFont property and choose \"Copy\", then \"Paste\" it in "
 "the same place on the other two Control nodes."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:983
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:984
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -4274,106 +4275,106 @@ msgid ""
 "`doc_design_interfaces_with_the_control_nodes` for more details."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:990
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:991
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:995
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:996
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:999
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1000
 msgid "ScoreLabel"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1001
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1002
 msgid "*Layout* : \"Top Wide\""
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1002
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1003
 msgid "*Text* : ``0``"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1003
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1010
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1004
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
 msgid "*Align* : \"Center\""
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1006
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1007
 #, fuzzy
 msgid "Message"
 msgstr "MessageLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1008
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
 msgid "*Layout* : \"HCenter Wide\""
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1010
 msgid "*Text* : ``Dodge the Creeps!``"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1012
 msgid "*Autowrap* : \"On\""
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1014
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1015
 msgid "StartButton"
 msgstr "StartButton"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1016
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
 msgid "*Text* : ``Start``"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
 msgid "*Layout* : \"Center Bottom\""
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1019
 msgid "*Margin* :"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1020
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
 msgid "Top: ``-200``"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1022
 msgid "Bottom: ``-100``"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1023
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
 "Shot`` property to \"On\"."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1027
 msgid "Now add this script to ``HUD``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1045
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1046
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1067
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1068
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\"."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1100
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1102
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
 "show the \"Start\" button."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1104
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1106
 msgid ""
 "When you need to pause for a brief time, an alternative to using a Timer "
 "node is to use the SceneTree's ``create_timer()`` function. This can be very "
@@ -4381,34 +4382,34 @@ msgid ""
 "time before showing the \"Start\" button."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1122
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1124
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1124
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1126
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton`` and add the following code to the new functions:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1152
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1154
 msgid "Connecting HUD to Main"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1154
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1156
 msgid ""
 "Now that we're done creating the ``HUD`` scene, go back to ``Main``. "
 "Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. "
 "The scene tree should look like this, so make sure you didn't miss anything:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1160
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1163
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1165
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function of the Main node by typing \"new_game\" in the "
@@ -4416,33 +4417,33 @@ msgid ""
 "green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1168
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1170
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1183
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1194
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1196
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1208
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1210
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1212
 msgid "Removing old creeps"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1212
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1214
 msgid ""
 "If you play until \"Game Over\" and then start a new game right away, the "
 "creeps from the previous game may still be on the screen. It would be better "
@@ -4451,7 +4452,7 @@ msgid ""
 "feature."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1217
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1219
 msgid ""
 "In the ``Mob`` scene, select the root node and click the \"Node\" tab next "
 "to the Inspector (the same place where you find the node's signals). Next to "
@@ -4459,35 +4460,35 @@ msgid ""
 "\"Add\"."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1223
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1225
 msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``game_over()`` function in ``Main``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1236
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1238
 msgid ""
 "The ``call_group()`` function calls the named function on every node in a "
 "group - in this case we are telling every mob to delete itself."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1240
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1242
 msgid "Finishing up"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1242
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1244
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
 "Feel free to expand the gameplay with your own ideas."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1247
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1249
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:59
 msgid "Background"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1249
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1251
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -4497,17 +4498,17 @@ msgid ""
 "screen."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1255
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1257
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``TextureRect`` node instead."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1259
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1261
 msgid "Sound effects"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1261
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1263
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -4515,7 +4516,7 @@ msgid ""
 "for when the player loses."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1266
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1268
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -4523,28 +4524,28 @@ msgid ""
 "corresponding audio file."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1271
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1273
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1274
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1276
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1277
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1279
 msgid "Keyboard shortcut"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1279
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1281
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. We can do "
 "this with the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1283
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1285
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -4554,13 +4555,13 @@ msgid ""
 "event associated with the spacebar."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1291
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1293
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Space` to start the game."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1295
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1297
 msgid "Project files"
 msgstr ""
 
@@ -4568,11 +4569,11 @@ msgstr ""
 msgid "You can find a completed version of this project at these locations:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1298
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1300
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1299
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1301
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr ""
 
@@ -4666,7 +4667,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/exporting.rst:247
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:295
-#: ../../docs/development/compiling/compiling_with_mono.rst:167
+#: ../../docs/development/compiling/compiling_with_mono.rst:172
 msgid "Export templates"
 msgstr ""
 
@@ -7146,11 +7147,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
-msgid "Create a main menu screen"
+msgid ":doc:`ui_main_menu`"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
-msgid "Create a game user interface"
+msgid ":doc:`ui_game_user_interface`"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
@@ -7667,22 +7668,14 @@ msgid ""
 "that's ``new_value``. And ``0.6`` is the animation's duration in seconds."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:445
-msgid ""
-"The last two arguments are constants from the ``Tween`` class. "
-"``TRANS_LINEAR`` means the animation should be linear. ``EASE_IN`` doesn't "
-"do anything with a linear transition, but we must provide this last argument "
-"or we'll get an error."
-msgstr ""
-
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:450
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:441
 msgid ""
 "The animation will not play until we activated the ``Tween`` node with "
 "``tween.start()``. We only have to do this once if the node is not active. "
 "Add this code after the last line:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:460
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -7692,60 +7685,60 @@ msgid ""
 "animations, check out `AnimationPlayer`."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:472
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:463
 msgid "Assign the animated\\_health to the LifeBar"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:474
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:465
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:477
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
 msgid "So far, the update\\_health method looks like this:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:492
 msgid ""
 "In this specific case, because ``number_label`` takes text, we need to use "
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
 "``TextureProgress`` nodes like before, inside of ``_process``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:523
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:514
 msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:516
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
 "nice for the life bar to animate in a choppier fashion."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:522
 msgid "The animation is smooth, but the number is broken"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:524
 msgid ""
 "We can fix both problems by rounding out ``animated_health``. Use a local "
 "variable named ``round_value`` to store the rounded ``animated_health``. "
 "Then assign it to ``number_label.text`` and ``bar.value``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:546
 msgid "Try the game again to see a nice blocky animation."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:550
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:554
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -7755,11 +7748,11 @@ msgid ""
 "damage, it happens in an instant."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:562
 msgid "Fade the bar when the Player dies"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:564
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
@@ -7767,7 +7760,7 @@ msgid ""
 "manages multiple animations in parallel for us."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:569
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
@@ -7775,15 +7768,15 @@ msgid ""
 "Inspector."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:583
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:574
 msgid "Find the ``died`` signal, select it, and click the Connect button."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
 msgid "The signal should already have the Enemy connected to it"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:580
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -7792,38 +7785,38 @@ msgid ""
 "Script Workspace."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:597
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:588
 msgid "You should get these values in the Connecting Signal window"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:601
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:592
 msgid ""
 "You should see a pattern by now: every time the GUI needs a new piece of "
 "information, we emit a new signal. Use them wisely: the more connections you "
 "add, the harder they are to track."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:594
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:609
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:600
 msgid ""
 "`modulate` comes from the `CanvasItem` class, All 2D and UI nodes inherit "
 "from it. It lets you toggle the visibility of the node, assign a shader to "
 "it, and modify it using a color with `modulate`."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:602
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
 "interface. If we lower the alpha channel, our interface fades out."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:606
 msgid ""
 "We're going to tween between two color values: from a white with an alpha of "
 "``1``, that is to say at full opacity, to a pure white with an alpha value "
@@ -7832,36 +7825,35 @@ msgid ""
 "Use the ``Color()`` constructor to build two ``Color`` values."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:637
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:628
 msgid ""
 "``Color(1.0, 1.0, 1.0)`` corresponds to white. The fourth argument, "
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
 "the alpha channel."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:632
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:645
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
-"linear transition. Here again, because the transition is linear, the easing "
-"does not matter. Here's the complete ``_on_Player_died`` method:"
+"linear transition. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:669
 msgid "And that is it. You may now play the game to see the final result!"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:673
 msgid "The final result. Congratulations for getting there!"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:677
 msgid ""
 "Using the exact same techniques, you can change the color of the bar when "
 "the Player gets poisoned, turn the bar red when its health drops low, shake "
@@ -8421,7 +8413,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
 msgid ""
-"The project.godot file is the project description file, and it is always "
+"The ``project.godot`` file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
@@ -8429,8 +8421,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
 msgid ""
 "This file contains the project configuration in plain text, using the win."
-"ini format. Even an empty project.godot can function as a basic definition "
-"of a blank project."
+"ini format. Even an empty ``project.godot`` can function as a basic "
+"definition of a blank project."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:50
@@ -8441,7 +8433,7 @@ msgstr ""
 msgid ""
 "Godot only supports ``/`` as a path delimiter. This is done for portability "
 "reasons. All operating systems support this, even Windows, so a path such as "
-"``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
+"``C:\\project\\project.godot`` needs to be typed as ``C:/project/project."
 "godot``."
 msgstr ""
 
@@ -8459,8 +8451,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
 msgid ""
-"The path ``res://`` will always point at the project root (where project."
-"godot is located, so ``res://project.godot`` is always valid)."
+"The path ``res://`` will always point at the project root (where ``project."
+"godot`` is located, so ``res://project.godot`` is always valid)."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
@@ -8479,14 +8471,16 @@ msgstr ""
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
-"special path ``user://`` that is always writable."
-msgstr ""
-
-#: ../../docs/getting_started/step_by_step/filesystem.rst:81
-msgid "Host file system"
+"special path ``user://`` that is always writable. This path resolves "
+"differently depending on the OS the project is running on. Local path "
+"resolution is further explained in :ref:`doc_data_paths`."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
+msgid "Host file system"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/filesystem.rst:85
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
@@ -8494,11 +8488,11 @@ msgid ""
 "writing development tools in Godot."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:89
+#: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid "Drawbacks"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:91
+#: ../../docs/getting_started/step_by_step/filesystem.rst:93
 msgid ""
 "There are some drawbacks to this simple file system design. The first issue "
 "is that moving assets around (renaming them or moving them from one path to "
@@ -8507,7 +8501,7 @@ msgid ""
 "location."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:96
+#: ../../docs/getting_started/step_by_step/filesystem.rst:98
 msgid ""
 "To avoid this, do all your move, delete and rename operations from within "
 "Godot, on the FileSystem dock. Never move assets from outside Godot, or "
@@ -8515,17 +8509,17 @@ msgid ""
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:101
+#: ../../docs/getting_started/step_by_step/filesystem.rst:103
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
-"saves an asset as \"myfile.PNG\", but then references it as \"myfile.png\", "
+"saves an asset as ``myfile.PNG``, but then references it as ``myfile.png``, "
 "it will work fine on their platform, but not on other platforms, such as "
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:107
+#: ../../docs/getting_started/step_by_step/filesystem.rst:109
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot. One simple fool-proof convention is to only "
@@ -10204,13 +10198,13 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:280
 msgid ""
-"It is possible to run a simple .gd script from the command line. This "
-"feature is especially useful in large projects, for batch conversion of "
+"It is possible to run a simple ``.gd`` script from the command line. This "
+"feature is especially useful in large projects, e.g. for batch conversion of "
 "assets or custom import/export."
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:284
-msgid "The script must inherit from SceneTree or MainLoop."
+msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:286
@@ -10223,8 +10217,8 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
 msgid ""
-"If no project.godot exists at the path, current path is assumed to be the "
-"current working directory (unless ``-path`` is specified)."
+"If no ``project.godot`` exists at the path, current path is assumed to be "
+"the current working directory (unless ``--path`` is specified)."
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
@@ -15464,7 +15458,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:184
 #: ../../docs/tutorials/physics/using_area_2d.rst:132
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:190
-#: ../../docs/development/compiling/compiling_with_mono.rst:120
+#: ../../docs/development/compiling/compiling_with_mono.rst:123
 msgid "Examples"
 msgstr ""
 
@@ -15501,15 +15495,21 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:161
 msgid ""
+"Export hints are also provided for the physics and render layers defined in "
+"the project settings::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:168
+msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:165
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:172
 msgid "Exporting arrays"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:167
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:174
 msgid ""
 "Exporting arrays works, but with an important caveat: while regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -15518,18 +15518,18 @@ msgid ""
 "initializers, but they must be constant expressions."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:173
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:180
 msgid ""
 "If the exported array specifies a type which inherits from Resource, the "
 "array values can be set in the inspector by dragging and dropping multiple "
 "files from the FileSystem dock at once."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:213
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:220
 msgid "Setting exported variables from a tool script"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:215
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:222
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
@@ -15538,18 +15538,18 @@ msgid ""
 "exported variable's value."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:222
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:229
 msgid "Advanced exports"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:224
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:231
 msgid ""
 "Not every type of export can be provided on the level of the language itself "
 "to avoid unnecessary design complexity. The following describes some more or "
 "less common exporting features which can be implemented with a low-level API."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:228
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:235
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_set() "
@@ -15559,34 +15559,34 @@ msgid ""
 "`doc_accessing_data_or_logic_from_object`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:235
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:242
 msgid ""
 "For binding properties using the above methods in C++, see :ref:"
 "`doc_binding_properties_using_set_get_property_list`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:238
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:245
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:242
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:249
 msgid "Adding script categories"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:251
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
 "Variables`` is one example of a built-in category."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:261
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:268
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:263
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:270
 msgid ""
 "``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
 "a script category specifically, so the type ``TYPE_NIL`` can be ignored as "
@@ -15594,21 +15594,21 @@ msgid ""
 "anyway."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:268
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:275
 msgid "Grouping properties"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:270
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:277
 msgid "A list of properties with similar names can be grouped."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:284
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:291
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "
 "collapsible list of properties;"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:287
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:294
 msgid ""
 "every successive property added after the group property will be collapsed "
 "and shortened as determined by the prefix defined via the ``hint_string`` "
@@ -15616,7 +15616,7 @@ msgid ""
 "this case."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:291
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:298
 msgid ""
 "``PROPERTY_USAGE_GROUP`` indicates that the property should be treated as a "
 "script group specifically, so the type ``TYPE_NIL`` can be ignored as it "
@@ -16548,7 +16548,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:379
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:132
-#: ../../docs/tutorials/2d/2d_movement.rst:347
+#: ../../docs/tutorials/2d/2d_movement.rst:355
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:213
 msgid "Summary"
 msgstr ""
@@ -20163,6 +20163,65 @@ msgid ""
 "If you haven't enabled the Windows Subsystem for Linux, you can enter the "
 "following line in a PowerShell window *running as Administrator* then reboot "
 "when asked::"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:4
+msgid "Version Control Systems"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:9
+msgid ""
+"Godot aims to be VCS friendly and generate mostly readable and mergeable "
+"files. Godot also supports the use of version control systems in the editor "
+"itself. However, VCS in the editor requires a plugin for the specific VCS "
+"you are using. VCS can be setup or shut down in the editor under **Project > "
+"Version Control**."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:17
+msgid "Official Git plugin"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:19
+msgid ""
+"Using Git from inside the editor is supported with an official plugin. You "
+"can find the latest releases `here <https://github.com/godotengine/godot-git-"
+"plugin/releases>`__ (it is not available in the asset library). "
+"Documentation on how to use the Git plugin can be found `here <https://"
+"github.com/godotengine/godot-git-plugin/wiki>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:27
+msgid "Files to exclude from VCS"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:29
+msgid "There are some folders Godot creates you should have your VCS ignore:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:31
+msgid ""
+"``.import/``: This folder stores all the files it imports automatically "
+"based on your source assets and their import flags."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:33
+msgid ""
+"``*.translation``: These files are binary imported translations generated "
+"from CSV files."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:34
+msgid ""
+"``export_presets.cfg``: This file contains all the export presets for the "
+"project, including sensitive information such as Android keystore "
+"credentials."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:36
+msgid ""
+"``.mono/``: This folder stores automatically-generated Mono files. It only "
+"exists in projects that use the Mono version of Godot."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
@@ -28326,7 +28385,7 @@ msgid ""
 "well."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:17
+#: ../../docs/tutorials/2d/2d_movement.rst:19
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:22
 #: ../../docs/tutorials/animation/2d_skeletons.rst:30
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:21
@@ -28336,7 +28395,7 @@ msgstr ""
 msgid "Setup"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:19
+#: ../../docs/tutorials/2d/2d_movement.rst:21
 msgid ""
 "Each example below uses the same scene setup. Start with a "
 "``KinematicBody2D`` with two children: ``Sprite`` and ``CollisionShape2D``. "
@@ -28344,18 +28403,18 @@ msgid ""
 "any other 2D image you have."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:23
+#: ../../docs/tutorials/2d/2d_movement.rst:25
 msgid ""
 "Open ``Project -> Project Settings`` and select the \"Input Map\" tab. Add "
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
 "details):"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:29
+#: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:31
+#: ../../docs/tutorials/2d/2d_movement.rst:33
 msgid ""
 "In this scenario, you want the user to press the four directional keys (up/"
 "left/down/right or W/A/S/D) and move in the selected direction. The name \"8-"
@@ -28363,35 +28422,42 @@ msgid ""
 "pressing two keys at the same time."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:37
+#: ../../docs/tutorials/2d/2d_movement.rst:39
 msgid "Add a script to the kinematic body and add the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:101
+#: ../../docs/tutorials/2d/2d_movement.rst:103
 msgid ""
-"In the ``get_input()`` function we check for the four key events and sum "
+"In the ``get_input()`` function, we check for the four key events and sum "
 "them up to get the velocity vector. This has the benefit of making two "
 "opposite keys cancel each other out, but will also result in diagonal "
 "movement being faster due to the two directions being added together."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:106
+#: ../../docs/tutorials/2d/2d_movement.rst:108
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:109
+#: ../../docs/tutorials/2d/2d_movement.rst:111
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:113
+#: ../../docs/tutorials/2d/2d_movement.rst:116
+msgid ""
+"If the code above does nothing when you press the keys, double-check that "
+"you've set up input actions correctly as described in the :ref:"
+"`doc_2d_movement_setup` part of this tutorial."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:121
 msgid "Rotation + movement"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:115
+#: ../../docs/tutorials/2d/2d_movement.rst:123
 msgid ""
 "This type of movement is sometimes called \"Asteroids-style\" because it "
 "resembles how that classic arcade game worked. Pressing left/right rotates "
@@ -28399,7 +28465,7 @@ msgid ""
 "direction it's facing."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:190
+#: ../../docs/tutorials/2d/2d_movement.rst:198
 msgid ""
 "Here we've added two new variables to track our rotation direction and "
 "speed. Again, pressing both keys at once will cancel out and result in no "
@@ -28407,7 +28473,7 @@ msgid ""
 "property."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:194
+#: ../../docs/tutorials/2d/2d_movement.rst:202
 msgid ""
 "To set the velocity, we use the ``Vector2.rotated()`` method, so that it "
 "points in the same direction as the body. ``rotated()`` is a useful vector "
@@ -28415,11 +28481,11 @@ msgid ""
 "need to apply trigonometric functions."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:200
+#: ../../docs/tutorials/2d/2d_movement.rst:208
 msgid "Rotation + movement (mouse)"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:202
+#: ../../docs/tutorials/2d/2d_movement.rst:210
 msgid ""
 "This style of movement is a variation of the previous one. This time, the "
 "direction is set by the mouse position instead of the keyboard. The "
@@ -28427,24 +28493,24 @@ msgid ""
 "remain the same, however."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:261
+#: ../../docs/tutorials/2d/2d_movement.rst:269
 msgid ""
 "Here we're using the :ref:`Node2D <class_Node2D>` ``look_at()`` method to "
 "point the player towards a given position. Without this function, you could "
 "get the same effect by setting the angle like this:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:276
+#: ../../docs/tutorials/2d/2d_movement.rst:284
 msgid "Click-and-move"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:278
+#: ../../docs/tutorials/2d/2d_movement.rst:286
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:335
+#: ../../docs/tutorials/2d/2d_movement.rst:343
 msgid ""
 "Note the ``distance_to()`` check we make prior to movement. Without this "
 "test, the body would \"jitter\" upon reaching the target position, as it "
@@ -28452,26 +28518,26 @@ msgid ""
 "far and repeat."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:340
+#: ../../docs/tutorials/2d/2d_movement.rst:348
 msgid ""
 "Uncommenting the ``look_at()`` line will also turn the body to point in its "
 "direction of motion if you prefer."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:343
+#: ../../docs/tutorials/2d/2d_movement.rst:351
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:349
+#: ../../docs/tutorials/2d/2d_movement.rst:357
 msgid ""
 "You may find these code samples useful as starting points for your own "
 "projects. Feel free to use them and experiment with them to see what you can "
 "make."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:352
+#: ../../docs/tutorials/2d/2d_movement.rst:360
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"
@@ -43139,14 +43205,25 @@ msgid ""
 "In order to avoid this inaccuracy, any code that needs to access a body's "
 "properties should be run in the :ref:`Node._physics_process() "
 "<class_Node_method__physics_process>` callback, which is called before each "
-"physics step at a constant frame rate (60 times per second by default)."
+"physics step at a constant frame rate (60 times per second by default). This "
+"method will be passed a ``delta`` parameter, which is a floating-point "
+"number equal to the time passed in *seconds* since the last step. When using "
+"the default 60 Hz physics update rate, it will typically be equal to "
+"``0.01666...`` (but not always, see below)."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:90
+#: ../../docs/tutorials/physics/physics_introduction.rst:94
+msgid ""
+"It's recommended to always use the ``delta`` parameter when relevant in your "
+"physics calculations, so that the game behaves correctly if you change the "
+"physics update rate or if the player's device can't keep up."
+msgstr ""
+
+#: ../../docs/tutorials/physics/physics_introduction.rst:99
 msgid "Collision layers and masks"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:92
+#: ../../docs/tutorials/physics/physics_introduction.rst:101
 msgid ""
 "One of the most powerful, but frequently misunderstood, collision features "
 "is the collision layer system. This system allows you to build up complex "
@@ -43155,49 +43232,49 @@ msgid ""
 "can interact with."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:98
+#: ../../docs/tutorials/physics/physics_introduction.rst:107
 msgid "Let's look at each of the properties in turn:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:102
+#: ../../docs/tutorials/physics/physics_introduction.rst:111
 msgid "collision_layer"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:101
+#: ../../docs/tutorials/physics/physics_introduction.rst:110
 msgid ""
 "This describes the layers that the object appears **in**. By default, all "
 "bodies are on layer ``1``."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:107
+#: ../../docs/tutorials/physics/physics_introduction.rst:116
 msgid "collision_mask"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:105
+#: ../../docs/tutorials/physics/physics_introduction.rst:114
 msgid ""
 "This describes what layers the body will **scan** for collisions. If an "
 "object isn't in one of the mask layers, the body will ignore it. By default, "
 "all bodies scan layer ``1``."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:109
+#: ../../docs/tutorials/physics/physics_introduction.rst:118
 msgid ""
 "These properties can be configured via code, or by editing them in the "
 "Inspector."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:111
+#: ../../docs/tutorials/physics/physics_introduction.rst:120
 msgid ""
 "Keeping track of what you're using each layer for can be difficult, so you "
 "may find it useful to assign names to the layers you're using. Names can be "
 "assigned in Project Settings -> Layer Names."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:117
+#: ../../docs/tutorials/physics/physics_introduction.rst:126
 msgid "**Example:**"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:119
+#: ../../docs/tutorials/physics/physics_introduction.rst:128
 msgid ""
 "You have four node types in your game: Walls, Player, Enemy, and Coin. Both "
 "Player and Enemy should collide with Walls. The Player node should detect "
@@ -43205,7 +43282,7 @@ msgid ""
 "other."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:124
+#: ../../docs/tutorials/physics/physics_introduction.rst:133
 msgid ""
 "Start by naming layers 1-4 \"walls\", \"player\", \"enemies\", and \"coins\" "
 "and place each node type in its respective layer using the \"Layer\" "
@@ -43214,11 +43291,11 @@ msgid ""
 "this:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:133
+#: ../../docs/tutorials/physics/physics_introduction.rst:142
 msgid "Area2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:135
+#: ../../docs/tutorials/physics/physics_introduction.rst:144
 msgid ""
 "Area nodes provide **detection** and **influence**. They can detect when "
 "objects overlap and emit signals when bodies enter or exit. Areas can also "
@@ -43226,33 +43303,33 @@ msgid ""
 "defined area."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:140
+#: ../../docs/tutorials/physics/physics_introduction.rst:149
 msgid "There are three main uses for :ref:`Area2D <class_Area2D>`:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:142
+#: ../../docs/tutorials/physics/physics_introduction.rst:151
 msgid "Overriding physics parameters (such as gravity) in a given region."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:144
+#: ../../docs/tutorials/physics/physics_introduction.rst:153
 msgid ""
 "Detecting when other bodies enter or exit a region or what bodies are "
 "currently in a region."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:146
+#: ../../docs/tutorials/physics/physics_introduction.rst:155
 msgid "Checking other areas for overlap."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:148
+#: ../../docs/tutorials/physics/physics_introduction.rst:157
 msgid "By default, areas also receive mouse and touchscreen input."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:151
+#: ../../docs/tutorials/physics/physics_introduction.rst:160
 msgid "StaticBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:153
+#: ../../docs/tutorials/physics/physics_introduction.rst:162
 msgid ""
 "A static body is one that is not moved by the physics engine. It "
 "participates in collision detection, but does not move in response to the "
@@ -43261,33 +43338,33 @@ msgid ""
 "``constant_angular_velocity`` properties."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:158
+#: ../../docs/tutorials/physics/physics_introduction.rst:167
 msgid ""
 "``StaticBody2D`` nodes are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:161
+#: ../../docs/tutorials/physics/physics_introduction.rst:170
 msgid "Example uses for ``StaticBody2D``:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:163
+#: ../../docs/tutorials/physics/physics_introduction.rst:172
 msgid "Platforms (including moving platforms)"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:164
+#: ../../docs/tutorials/physics/physics_introduction.rst:173
 msgid "Conveyor belts"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:165
+#: ../../docs/tutorials/physics/physics_introduction.rst:174
 msgid "Walls and other obstacles"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:168
+#: ../../docs/tutorials/physics/physics_introduction.rst:177
 msgid "RigidBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:170
+#: ../../docs/tutorials/physics/physics_introduction.rst:179
 msgid ""
 "This is the node that implements simulated 2D physics. You do not control a :"
 "ref:`RigidBody2D <class_RigidBody2D>` directly. Instead, you apply forces to "
@@ -43296,20 +43373,20 @@ msgid ""
 "rotating, etc."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:176
+#: ../../docs/tutorials/physics/physics_introduction.rst:185
 msgid ""
 "You can modify a rigid body's behavior via  properties such as \"Mass\", "
 "\"Friction\", or \"Bounce\", which can be set in the Inspector."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:179
+#: ../../docs/tutorials/physics/physics_introduction.rst:188
 msgid ""
 "The body's behavior is also affected by the world's properties, as set in "
 "`Project Settings -> Physics`, or by entering an :ref:`Area2D "
 "<class_Area2D>` that is overriding the global physics properties."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:183
+#: ../../docs/tutorials/physics/physics_introduction.rst:192
 msgid ""
 "When a rigid body is at rest and hasn't moved for a while, it goes to sleep. "
 "A sleeping body acts like a static body, and its forces are not calculated "
@@ -43317,41 +43394,41 @@ msgid ""
 "by a collision or via code."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:189
+#: ../../docs/tutorials/physics/physics_introduction.rst:198
 msgid "Rigid body modes"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:191
+#: ../../docs/tutorials/physics/physics_introduction.rst:200
 msgid "A rigid body can be set to one of four modes:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:193
+#: ../../docs/tutorials/physics/physics_introduction.rst:202
 msgid ""
 "**Rigid** - The body behaves as a physical object. It collides with other "
 "bodies and responds to forces applied to it. This is the default mode."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:194
+#: ../../docs/tutorials/physics/physics_introduction.rst:203
 msgid ""
 "**Static** - The body behaves like a :ref:`StaticBody2D "
 "<class_StaticBody2D>` and does not move."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:195
+#: ../../docs/tutorials/physics/physics_introduction.rst:204
 msgid "**Character** - Similar to \"Rigid\" mode, but the body cannot rotate."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:196
+#: ../../docs/tutorials/physics/physics_introduction.rst:205
 msgid ""
 "**Kinematic** - The body behaves like a :ref:`KinematicBody2D "
 "<class_KinematicBody2D>` and must be moved by code."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:199
+#: ../../docs/tutorials/physics/physics_introduction.rst:208
 msgid "Using RigidBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:201
+#: ../../docs/tutorials/physics/physics_introduction.rst:210
 msgid ""
 "One of the benefits of using a rigid body is that a lot of behavior can be "
 "had \"for free\" without writing any code. For example, if you were making "
@@ -43360,7 +43437,7 @@ msgid ""
 "bouncing would automatically be calculated by the physics engine."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:207
+#: ../../docs/tutorials/physics/physics_introduction.rst:216
 msgid ""
 "However, if you do wish to have some control over the body, you should take "
 "care - altering the ``position``, ``linear_velocity``, or other physics "
@@ -43373,18 +43450,18 @@ msgid ""
 "physics engine."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:216
+#: ../../docs/tutorials/physics/physics_introduction.rst:225
 msgid "For example, here is the code for an \"Asteroids\" style spaceship:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:261
+#: ../../docs/tutorials/physics/physics_introduction.rst:270
 msgid ""
 "Note that we are not setting the ``linear_velocity`` or ``angular_velocity`` "
 "properties directly, but rather applying forces (``thrust`` and ``torque``) "
 "to the body and letting the physics engine calculate the resulting movement."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:265
+#: ../../docs/tutorials/physics/physics_introduction.rst:274
 msgid ""
 "When a rigid body goes to sleep, the ``_integrate_forces()`` function will "
 "not be called. To override this behavior, you will need to keep the body "
@@ -43393,11 +43470,11 @@ msgid ""
 "that this can have a negative effect on performance."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:272
+#: ../../docs/tutorials/physics/physics_introduction.rst:281
 msgid "Contact reporting"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:274
+#: ../../docs/tutorials/physics/physics_introduction.rst:283
 msgid ""
 "By default, rigid bodies do not keep track of contacts, because this can "
 "require a huge amount of memory if many bodies are in the scene. To enable "
@@ -43409,18 +43486,18 @@ msgid ""
 "functions."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:281
+#: ../../docs/tutorials/physics/physics_introduction.rst:290
 msgid ""
 "Contact monitoring via signals can be enabled via the :ref:`contact_monitor "
 "<class_RigidBody2D_property_contact_monitor>` property. See :ref:"
 "`RigidBody2D <class_RigidBody2D>` for the list of available signals."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:286
+#: ../../docs/tutorials/physics/physics_introduction.rst:295
 msgid "KinematicBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:288
+#: ../../docs/tutorials/physics/physics_introduction.rst:297
 msgid ""
 ":ref:`KinematicBody2D <class_KinematicBody2D>` bodies detect collisions with "
 "other bodies, but are not affected by physics properties like gravity or "
@@ -43428,7 +43505,7 @@ msgid ""
 "engine will not move a kinematic body."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:293
+#: ../../docs/tutorials/physics/physics_introduction.rst:302
 msgid ""
 "When moving a kinematic body, you should not set its ``position`` directly. "
 "Instead, you use the ``move_and_collide()`` or ``move_and_slide()`` methods. "
@@ -43437,11 +43514,11 @@ msgid ""
 "any collision response must be coded manually."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:300
+#: ../../docs/tutorials/physics/physics_introduction.rst:309
 msgid "Kinematic collision response"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:302
+#: ../../docs/tutorials/physics/physics_introduction.rst:311
 msgid ""
 "After a collision, you may want the body to bounce, to slide along a wall, "
 "or to alter the properties of the object it hit. The way you handle "
@@ -43449,11 +43526,11 @@ msgid ""
 "KinematicBody2D."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:307
+#: ../../docs/tutorials/physics/physics_introduction.rst:316
 msgid ":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:309
+#: ../../docs/tutorials/physics/physics_introduction.rst:318
 msgid ""
 "When using ``move_and_collide()``, the function returns a :ref:"
 "`KinematicCollision2D <class_KinematicCollision2D>` object, which contains "
@@ -43461,21 +43538,21 @@ msgid ""
 "information to determine the response."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:314
+#: ../../docs/tutorials/physics/physics_introduction.rst:323
 msgid ""
 "For example, if you want to find the point in space where the collision "
 "occurred:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:345
+#: ../../docs/tutorials/physics/physics_introduction.rst:354
 msgid "Or to bounce off of the colliding object:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:374
+#: ../../docs/tutorials/physics/physics_introduction.rst:383
 msgid ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:376
+#: ../../docs/tutorials/physics/physics_introduction.rst:385
 msgid ""
 "Sliding is a common collision response; imagine a player moving along walls "
 "in a top-down game or running up and down slopes in a platformer. While it's "
@@ -43484,19 +43561,19 @@ msgid ""
 "without writing much code."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:382
+#: ../../docs/tutorials/physics/physics_introduction.rst:391
 msgid ""
 "``move_and_slide()`` automatically includes the timestep in its calculation, "
 "so you should **not** multiply the velocity vector by ``delta``."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:386
+#: ../../docs/tutorials/physics/physics_introduction.rst:395
 msgid ""
 "For example, use the following code to make a character that can walk along "
 "the ground (including slopes) and jump when standing on the ground:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:453
+#: ../../docs/tutorials/physics/physics_introduction.rst:462
 msgid ""
 "See :ref:`doc_kinematic_character_2d` for more details on using "
 "``move_and_slide()``, including a demo project with detailed code."
@@ -45797,19 +45874,18 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:214
 msgid ""
-"This should be fairly common sense, assuming that you read and understood "
-"the vector tutorial, but let's work through an example. Again, we'll start "
-"with the identity transform, but this time we'll also keep track of the "
-"origin vector:"
+"Let's work through an example to help understand this. We will start with "
+"the identity transform like last time, except we will keep track of the "
+"origin vector this time."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:221
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:220
 msgid ""
 "If we want the object to move to a position of (1, 2), we simply need to set "
 "its `origin` vector to (1, 2):"
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:226
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:225
 msgid ""
 "There is also a `translated()` method, which performs a different operation "
 "to adding or changing `origin` directly. The `translated()` method will "
@@ -45818,20 +45894,21 @@ msgid ""
 "`Vector2.UP`."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:232
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:231
 msgid ""
 "Godot's 2D uses coordinates based on pixels, so in actual projects you will "
 "want to translate by hundreds of units."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:236
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:235
 msgid "Putting it all together"
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:238
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:237
 msgid ""
 "We're going to apply everything we mentioned so far onto one transform. To "
-"follow along, get a simple project with a Sprite set to the Godot logo."
+"follow along, create a simple project with a Sprite node and use the Godot "
+"logo for the texture resource."
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:241
@@ -47203,7 +47280,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:44
 msgid ""
 "**Particle Systems**: A cutout animation rig can be combined with particle "
-"systems. This can useful for magic effects, jetpacks, etc."
+"systems. This can be useful for magic effects, jetpacks, etc."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:46
@@ -47311,7 +47388,7 @@ msgid ""
 "We want the left arm to appear *behind* the hip and the torso. We could move "
 "the left arm nodes behind the hip (above the hip node in the scene "
 "hierarchy), but then the left arm is no longer in its proper place in the "
-"hierarchy. This means it wouldn't be affected the movement of the torso. "
+"hierarchy. This means it wouldn't be affected by the movement of the torso. "
 "We'll fix this problem with ``RemoteTransform2D`` nodes."
 msgstr ""
 
@@ -47653,7 +47730,7 @@ msgid "Setting easing curves for multiple keys"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:356
-msgid "To apply the same the easing curve to multiple keyframes at once:"
+msgid "To apply the same easing curve to multiple keyframes at once:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:358
@@ -47662,12 +47739,12 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:359
 msgid ""
-"Click on the pencil icon in the bottom right of the animation panel, this "
+"Click on the pencil icon in the bottom right of the animation panel. This "
 "will open the transition editor."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
-msgid "In the transition editor click on the desired curve to apply it."
+msgid "In the transition editor, click on the desired curve to apply it."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:366
@@ -49065,7 +49142,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
-msgid "Customizing mouse cursor"
+msgid "Customizing the mouse cursor"
 msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:6
@@ -49076,12 +49153,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:8
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:14
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:25
 msgid "Using project settings"
 msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:9
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:26
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:37
 msgid "Using a script"
 msgstr ""
 
@@ -49091,48 +49168,63 @@ msgid ""
 "mouse cursor. The second way is more customizable, but involves scripting."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:16
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:15
+msgid ""
+"You could display a \"software\" mouse cursor by hiding the mouse cursor and "
+"moving a Sprite to the cursor position in a ``_process`` method, but this "
+"will add at least one frame of latency compared to an \"hardware\" mouse "
+"cursor. Therefore, it's recommended to use the approach described here "
+"whenever possible."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:21
+msgid ""
+"If you have to use the \"software\" approach, consider adding an "
+"extrapolation step to better display the actual mouse input."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:27
 msgid ""
 "Open project settings, go to Display>Mouse Cursor. You will see Custom Image "
 "and Custom Image Hotspot."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:20
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:31
 msgid ""
 "Custom Image is the desired image that you would like to set as the mouse "
 "cursor. Custom Hotspot is the point in the image that you would like to use "
 "as the cursor's detection point."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:23
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:34
 msgid "The custom image **must** be less than 256x256."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:28
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:39
 msgid "Create a Node and attach the following script."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:64
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:75
 msgid ""
 "Check :ref:`Input.set_custom_mouse_cursor() "
 "<class_Input_method_set_custom_mouse_cursor>`."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:68
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:79
 msgid "Demo project"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:70
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:81
 msgid ""
 "Find out more by studying this demo project: https://github.com/"
 "guilhermefelipecgs/custom_hardware_cursor"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:74
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:85
 msgid "Cursor list"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:76
+#: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:87
 msgid ""
 "As documented in the :ref:`Input <class_Input>` class (see the "
 "**CursorShape** enum), there are multiple mouse cursors you can define. "
@@ -54700,7 +54792,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:49
-msgid "Godot provides a several useful tools to do this easily."
+msgid "Godot provides several useful tools to do this easily."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:52
@@ -54758,21 +54850,21 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:90
 msgid ""
-"Stretch settings are located in the project settings, it's just a bunch of "
-"configuration variables that provide several options:"
+"Stretch settings are located in the project settings and provide several "
+"options:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:96
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:95
 msgid "Stretch Mode"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:98
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:97
 msgid ""
 "The **Stretch Mode** setting defines how the base size is stretched to fit "
 "the resolution of the window or screen."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:103
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:102
 msgid ""
 "The animations below use a \"base size\" of just 16×9 pixels to demonstrate "
 "the effect of different stretch modes. A single sprite, also 16×9 pixels in "
@@ -54780,20 +54872,20 @@ msgid ""
 "<class_Line2D>` is added on top of it:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:113
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:112
 msgid ""
 "**Stretch Mode = Disabled** (default): No stretching happens. One unit in "
 "the scene corresponds to one pixel on the screen. In this mode, the "
 "**Stretch Aspect** setting has no effect."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:117
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:116
 msgid ""
 "This is a good option if you want full control over every screen pixel, and "
 "is probably the best option for 3D games."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:122
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:121
 msgid ""
 "**Stretch Mode = 2D**: In this mode, the size specified in display/width and "
 "display/height in the project settings is stretched to cover the whole "
@@ -54803,14 +54895,14 @@ msgid ""
 "sprite pixels and screen pixels, which may result in scaling artifacts."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:130
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:129
 msgid ""
 "This is a good option if your 2D artwork has a sufficiently high resolution "
 "and does not require pixel-perfect rendering. Consider enabling texture "
 "filtering and mipmapping on your 2D textures and fonts."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:137
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:136
 msgid ""
 "**Stretch Mode = Viewport**: Viewport scaling means that the size of the "
 "root :ref:`Viewport <class_Viewport>` is set precisely to the base size "
@@ -54819,23 +54911,23 @@ msgid ""
 "screen (taking the **Stretch Aspect** setting into account)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:144
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:143
 msgid ""
 "This mode is useful when working with pixel-precise games, or for the sake "
 "of rendering to a lower resolution to improve performance."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:150
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:149
 msgid "Stretch Aspect"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:152
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:151
 msgid ""
 "The second setting is the stretch aspect. Note that this only takes effect "
 "if **Stretch Mode** is set to something other than **Disabled**."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:155
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:154
 msgid ""
 "In the animations below, you will notice gray and black areas. The black "
 "areas are added by the engine and cannot be drawn into. The gray areas are "
@@ -54843,7 +54935,7 @@ msgid ""
 "region outside the blue frame you see in the 2D editor."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:160
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:159
 msgid ""
 "**Stretch Aspect = Ignore**: Ignore the aspect ratio when stretching the "
 "screen. This means that the original resolution will be stretched to exactly "
@@ -54851,7 +54943,7 @@ msgid ""
 "nonuniform stretching: things looking wider or taller than designed."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:168
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:167
 msgid ""
 "**Stretch Aspect = Keep**: Keep aspect ratio when stretching the screen. "
 "This means that the viewport retains its original size regardless of the "
@@ -54859,13 +54951,13 @@ msgid ""
 "screen (\"letterboxing\") or the sides (\"pillarboxing\")."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:174
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:173
 msgid ""
 "This is a good option if you know the aspect ratio of your target devices in "
 "advance, or if you don't want to handle different aspect ratios."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:180
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:179
 msgid ""
 "**Stretch Aspect = Keep Width**: Keep aspect ratio when stretching the "
 "screen. If the screen is wider than the base size, black bars are added at "
@@ -54875,13 +54967,13 @@ msgid ""
 "\"Expand Vertically\"."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:187
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:186
 msgid ""
 "This is usually the best option for creating GUIs or HUDs that scale, so "
 "some controls can be anchored to the bottom (:ref:`doc_size_and_anchors`)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:193
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:192
 msgid ""
 "**Stretch Aspect = Keep Height**: Keep aspect ratio when stretching the "
 "screen. If the screen is taller than the base size, black bars are added at "
@@ -54891,13 +54983,13 @@ msgid ""
 "\"Expand Horizontally\"."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:200
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:199
 msgid ""
 "This is usually the best option for 2D games that scroll horizontally (like "
 "runners or platformers)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:205
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:204
 msgid ""
 "**Stretch Aspect = Expand**: Keep aspect ratio when stretching the screen, "
 "but keep neither the base width nor height. Depending on the screen aspect "
@@ -54906,25 +54998,25 @@ msgid ""
 "screen is taller than the original size)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:215
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:214
 msgid "Stretch Shrink"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:217
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:216
 msgid ""
 "The **Shrink** setting allows you to add an extra scaling factor on top of "
 "what the **Stretch** options above already provide. The default value of 1 "
 "means that no scaling occurs."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:221
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:220
 msgid ""
 "If, for example, you set **Shrink** to 4 and leave **Stretch Mode** on "
 "**Disabled**, each unit in your scene will correspond to 4×4 pixels on the "
 "screen."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:225
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:224
 msgid ""
 "If **Stretch Mode** is set to something other than **Disabled**, the size of "
 "the root viewport is scaled down by the **Shrink** factor, and pixels in the "
@@ -54933,22 +55025,22 @@ msgid ""
 "lower resolution."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:232
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:231
 msgid "From scripts"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:234
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:233
 msgid ""
 "To configure stretching at runtime from a script, use the ``get_tree()."
 "set_screen_stretch()`` function (see :ref:`SceneTree.set_screen_stretch() "
 "<class_SceneTree_method_set_screen_stretch>`)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:239
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:238
 msgid "Reducing aliasing on downsampling"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:241
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:240
 msgid ""
 "If the game has a very high base resolution (e.g. 3840×2160), aliasing might "
 "appear when downsampling to something considerably lower like 1280×720. "
@@ -54957,11 +55049,11 @@ msgid ""
 "data is loaded:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:253
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:252
 msgid "Handling aspect ratios"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:255
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:254
 msgid ""
 "Once scaling for different resolutions is accounted for, make sure that your "
 "*user interface* also scales for different aspect ratios. This can be done "
@@ -54969,11 +55061,11 @@ msgid ""
 "<doc_gui_containers>`."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:261
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:260
 msgid "Field of view scaling"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:263
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:262
 msgid ""
 "The 3D Camera node's **Keep Aspect** property defaults to the **Keep "
 "Height** scaling mode (also called *Hor+*). This is usually the best value "
@@ -54981,7 +55073,7 @@ msgid ""
 "will automatically use a wider field of view."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:268
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:267
 msgid ""
 "However, if your 3D game is intended to be played in portrait mode, it may "
 "make more sense to use **Keep Width** instead (also called *Vert-*). This "
@@ -69974,7 +70066,8 @@ msgstr ""
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:44
 msgid ""
 "The library must have a dependency on the Godot engine library (``godot-lib."
-"x.y.aar``). A stable version is made available for each Godot release."
+"<version>.<status>.aar``). A stable version is made available for each Godot "
+"release on the `Godot download page <https://godotengine.org/download>`_."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:46
@@ -70005,7 +70098,10 @@ msgid "Add the Godot engine library as a dependency to your plugin module:"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:58
-msgid "Download the Godot engine library (godot-lib.x.y.aar)"
+msgid ""
+"Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
+"from the `Godot download page <https://godotengine.org/download>`_ (e.g: "
+"``godot-lib.3.2.2.stable.aar``)."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:60
@@ -77787,7 +77883,7 @@ msgid "NuGet"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:14
-msgid "pkg-config"
+msgid "**On Linux/macOS only:** pkg-config"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:16
@@ -77809,17 +77905,17 @@ msgid ""
 "Mono's ``bin`` directory to your ``PATH`` environment variable)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:27
+#: ../../docs/development/compiling/compiling_with_mono.rst:29
 msgid ""
 "Alternatively, you can use the following command, though it's deprecated and "
 "may not work correctly::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:32
+#: ../../docs/development/compiling/compiling_with_mono.rst:34
 msgid "Environment variables"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:34
+#: ../../docs/development/compiling/compiling_with_mono.rst:36
 msgid ""
 "By default, SCons will try to find Mono in the Windows Registry on Windows "
 "or via ``pkg-config`` on other platforms. You can specify a different "
@@ -77827,27 +77923,27 @@ msgid ""
 "SCons; e.g. ``scons [...] mono_prefix=%ProgramFiles%/Mono``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:39
+#: ../../docs/development/compiling/compiling_with_mono.rst:41
 msgid ""
 "This is the directory that contains the subdirectories ``include`` and "
 "``lib``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:42
+#: ../../docs/development/compiling/compiling_with_mono.rst:44
 msgid "Enable the Mono module"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:44
+#: ../../docs/development/compiling/compiling_with_mono.rst:46
 msgid ""
 "By default, the Mono module is disabled when building. To enable it, add the "
 "option ``module_mono_enabled=yes`` to the SCons command line."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:48
+#: ../../docs/development/compiling/compiling_with_mono.rst:50
 msgid "Generate the glue"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:50
+#: ../../docs/development/compiling/compiling_with_mono.rst:52
 msgid ""
 "Glue sources are the wrapper functions that will be called by managed "
 "methods. These source files must be generated before building your final "
@@ -77855,14 +77951,14 @@ msgid ""
 "binary with the options ``tools=yes`` and ``mono_glue=no``::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:57
+#: ../../docs/development/compiling/compiling_with_mono.rst:59
 msgid ""
 "After the build finishes, you need to run the compiled executable with the "
 "parameter ``--generate-mono-glue`` followed by the path to an output "
 "directory. This path must be ``modules/mono/glue`` in the Godot directory::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:63
+#: ../../docs/development/compiling/compiling_with_mono.rst:65
 msgid ""
 "This command will tell Godot to generate the file ``modules/mono/glue/"
 "mono_glue.gen.cpp`` and the C# solution for the Godot API at ``modules/mono/"
@@ -77870,7 +77966,7 @@ msgid ""
 "Godot for all the desired targets without having to repeat this process."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:68
+#: ../../docs/development/compiling/compiling_with_mono.rst:70
 msgid ""
 "``<godot_binary>`` refers to the tools binary you compiled above with the "
 "Mono module enabled. Its exact name will differ based on your system and "
@@ -77882,12 +77978,12 @@ msgid ""
 "the Mono glue."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:78
+#: ../../docs/development/compiling/compiling_with_mono.rst:80
 #: ../../docs/development/cpp/custom_godot_servers.rst:506
 msgid "Notes"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:79
+#: ../../docs/development/compiling/compiling_with_mono.rst:82
 msgid ""
 "**Do not build your final binaries with** ``mono_glue=no``. This disables C# "
 "scripting. This option must be used only for the temporary binary that will "
@@ -77895,7 +77991,7 @@ msgid ""
 "without the glue sources."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:83
+#: ../../docs/development/compiling/compiling_with_mono.rst:86
 msgid ""
 "The glue sources must be regenerated every time the ClassDB-registered API "
 "changes. That is, for example, when a new method is registered to the "
@@ -77904,28 +78000,28 @@ msgid ""
 "the glue sources."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:91
+#: ../../docs/development/compiling/compiling_with_mono.rst:94
 msgid "Rebuild with Mono glue"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:93
+#: ../../docs/development/compiling/compiling_with_mono.rst:96
 msgid ""
 "Once you have generated the Mono glue, you can build the final binary with "
 "``mono_glue=yes``. This is the default value for ``mono_glue``, so you can "
 "also omit it. To build a Mono-enabled editor::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:99
+#: ../../docs/development/compiling/compiling_with_mono.rst:102
 msgid "And Mono-enabled export templates::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:103
+#: ../../docs/development/compiling/compiling_with_mono.rst:106
 msgid ""
 "If everything went well, apart from the normal output, SCons should have "
 "created the following files in the ``bin`` directory:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:106
+#: ../../docs/development/compiling/compiling_with_mono.rst:109
 msgid ""
 "If you're not linking the Mono runtime statically, the build script will "
 "place the Mono runtime shared library (``monosgen-2.0``) next to the Godot "
@@ -77935,7 +78031,7 @@ msgid ""
 "Gradle takes care of the rest."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:112
+#: ../../docs/development/compiling/compiling_with_mono.rst:115
 msgid ""
 "Unlike \"classical\" Godot builds, when building with the Mono module "
 "enabled (and depending on the target platform), a data directory may be "
@@ -77945,32 +78041,32 @@ msgid ""
 "directory<compiling_with_mono_data_directory>`."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:123
+#: ../../docs/development/compiling/compiling_with_mono.rst:126
 msgid "Example (Windows)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:139
+#: ../../docs/development/compiling/compiling_with_mono.rst:143
 msgid "Example (X11)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:157
+#: ../../docs/development/compiling/compiling_with_mono.rst:162
 msgid "Data directory"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:159
+#: ../../docs/development/compiling/compiling_with_mono.rst:164
 msgid ""
 "The data directory is a dependency for Godot binaries built with the Mono "
 "module enabled. It contains important files for the correct functioning of "
 "Godot. It must be distributed together with the Godot executable."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:163
+#: ../../docs/development/compiling/compiling_with_mono.rst:168
 msgid ""
 "The information below doesn't apply for Android, iOS and WASM, as there is "
 "no data directory for these platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:169
+#: ../../docs/development/compiling/compiling_with_mono.rst:174
 msgid ""
 "The name of the data directory for an export template differs based on the "
 "configuration it was built with. The format is ``data.mono.<platform>.<bits>."
@@ -77978,7 +78074,7 @@ msgid ""
 "windows.64.release``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:174
+#: ../../docs/development/compiling/compiling_with_mono.rst:179
 msgid ""
 "This directory must be placed with its original name next to the Godot "
 "export templates. When exporting a project, Godot will also copy this "
@@ -77987,81 +78083,81 @@ msgid ""
 "in the project setting ``application/config/name``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:180
+#: ../../docs/development/compiling/compiling_with_mono.rst:185
 msgid ""
 "In the case of macOS, where the export template is compressed as a ZIP "
 "archive, the contents of the data directory can be placed in the following "
 "locations inside the ZIP archive:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:185
-#: ../../docs/development/compiling/compiling_with_mono.rst:207
+#: ../../docs/development/compiling/compiling_with_mono.rst:190
+#: ../../docs/development/compiling/compiling_with_mono.rst:212
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Mono/lib``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:185
+#: ../../docs/development/compiling/compiling_with_mono.rst:190
 msgid "``/osx_template.app/Contents/Frameworks/GodotSharp/Mono/lib``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:187
-#: ../../docs/development/compiling/compiling_with_mono.rst:209
+#: ../../docs/development/compiling/compiling_with_mono.rst:192
+#: ../../docs/development/compiling/compiling_with_mono.rst:214
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Mono/etc``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:187
+#: ../../docs/development/compiling/compiling_with_mono.rst:192
 msgid "``/osx_template.app/Contents/Resources/GodotSharp/Mono/etc``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:193
+#: ../../docs/development/compiling/compiling_with_mono.rst:198
 msgid ""
 "The name of the data directory for the Godot editor will always be "
 "``GodotSharp``. The contents of this directory are the following:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:196
+#: ../../docs/development/compiling/compiling_with_mono.rst:201
 msgid "``Api``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:197
+#: ../../docs/development/compiling/compiling_with_mono.rst:202
 msgid "``Mono`` (optional)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:198
+#: ../../docs/development/compiling/compiling_with_mono.rst:203
 msgid "``Tools``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:200
+#: ../../docs/development/compiling/compiling_with_mono.rst:205
 msgid ""
 "The ``Api`` subdirectory contains the Godot API assemblies. On macOS, if the "
 "Godot editor is distributed as a bundle, the contents of the data directory "
 "may be placed in the following locations:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:205
+#: ../../docs/development/compiling/compiling_with_mono.rst:210
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Api``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:205
+#: ../../docs/development/compiling/compiling_with_mono.rst:210
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Api``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:207
+#: ../../docs/development/compiling/compiling_with_mono.rst:212
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Mono/lib``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:209
+#: ../../docs/development/compiling/compiling_with_mono.rst:214
 msgid "``<bundle_name>.app/Contents/Resources/GodotSharp/Mono/etc``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:211
+#: ../../docs/development/compiling/compiling_with_mono.rst:216
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Tools``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:211
+#: ../../docs/development/compiling/compiling_with_mono.rst:216
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Tools``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:214
+#: ../../docs/development/compiling/compiling_with_mono.rst:219
 msgid ""
 "The ``Mono`` subdirectory is optional. It will be needed when distributing "
 "the editor, as issues can arise when the user-installed Mono version isn't "
@@ -78070,17 +78166,17 @@ msgid ""
 "this folder and its contents."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:219
+#: ../../docs/development/compiling/compiling_with_mono.rst:224
 msgid ""
 "The ``Tools`` subdirectory contains tools required by the editor, like the "
 "``GodotTools`` assemblies and its dependencies."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:223
+#: ../../docs/development/compiling/compiling_with_mono.rst:228
 msgid "Building the Mono runtime"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:225
+#: ../../docs/development/compiling/compiling_with_mono.rst:230
 msgid ""
 "When building Godot for the desktop, you will likely use the pre-built Mono "
 "runtime that is installed on your system. This likely won't be the case when "
@@ -78088,7 +78184,7 @@ msgid ""
 "to build the Mono runtime yourself for those platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:230
+#: ../../docs/development/compiling/compiling_with_mono.rst:235
 msgid ""
 "We recommend using these `build scripts <https://github.com/godotengine/"
 "godot-mono-builds>`_. They simplify this process but also include some "
@@ -78096,11 +78192,11 @@ msgid ""
 "above for instructions on how to use the scripts."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:236
+#: ../../docs/development/compiling/compiling_with_mono.rst:241
 msgid "Targeting Android"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:238
+#: ../../docs/development/compiling/compiling_with_mono.rst:243
 msgid ""
 "Compiling the Android export templates with Mono is a bit simpler than it is "
 "for the desktop platforms, as there are no additional steps required after "
@@ -78109,7 +78205,7 @@ msgid ""
 "automatically added to the Gradle project."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:244
+#: ../../docs/development/compiling/compiling_with_mono.rst:249
 msgid ""
 "Once you've built Mono, you can proceed to build Godot with the instructions "
 "described in this page and the :ref:`Compiling for "
@@ -78119,11 +78215,11 @@ msgid ""
 "may be different on your system)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:252
+#: ../../docs/development/compiling/compiling_with_mono.rst:257
 msgid "Targeting iOS"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:254
+#: ../../docs/development/compiling/compiling_with_mono.rst:259
 msgid ""
 "Once you've built Mono, you can proceed to build Godot with the instructions "
 "described in this page and the :ref:`Compiling for "
@@ -78133,48 +78229,48 @@ msgid ""
 "different on your system)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:261
+#: ../../docs/development/compiling/compiling_with_mono.rst:266
 msgid ""
 "After building Godot for each architecture, you will notice SCons has copied "
 "the Mono libraries for each of them to the output directory:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:274
+#: ../../docs/development/compiling/compiling_with_mono.rst:279
 msgid ""
 "The last three are only for iOS devices and are not available for the iOS "
 "simulator."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:276
+#: ../../docs/development/compiling/compiling_with_mono.rst:281
 msgid ""
 "These libraries must be put in universal (multi-architecture) \"fat\" files "
 "to be distributed with the export templates."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:279
+#: ../../docs/development/compiling/compiling_with_mono.rst:284
 msgid ""
 "The following bash script will create the \"fat\" libraries in the directory "
 "``#bin/ios/iphone-mono-libs``:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:295
+#: ../../docs/development/compiling/compiling_with_mono.rst:300
 msgid ""
 "The ``iphone-mono-libs`` folder must be distributed with the export "
 "templates. The Godot editor will look for the libraries in ``<templates>/"
 "iphone-mono-libs/lib<name>.iphone.fat.a``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:299
+#: ../../docs/development/compiling/compiling_with_mono.rst:304
 msgid "Targeting WebAssembly"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:301
+#: ../../docs/development/compiling/compiling_with_mono.rst:306
 msgid ""
 "Building for WebAssembly currently involves the same process regardless of "
 "whether the Mono module is enabled."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:303
+#: ../../docs/development/compiling/compiling_with_mono.rst:308
 msgid ""
 "Once you've built Mono, you can proceed to build Godot with the instructions "
 "described in this page and the :ref:`Compiling for the "
@@ -78184,12 +78280,12 @@ msgid ""
 "different on your system)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:311
+#: ../../docs/development/compiling/compiling_with_mono.rst:316
 #, fuzzy
 msgid "Base Class Library"
 msgstr "Biblioteko de havaĵoj"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:313
+#: ../../docs/development/compiling/compiling_with_mono.rst:318
 msgid ""
 "The export templates must also include the BCL (Base Class Library) for each "
 "target platform. Godot looks for the BCL folder at ``<templates>/bcl/"
@@ -78198,147 +78294,147 @@ msgid ""
 "``<templates>/bcl/javascript``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:318
+#: ../../docs/development/compiling/compiling_with_mono.rst:323
 msgid "Alternatively, Godot will look for them in the following locations:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:321
+#: ../../docs/development/compiling/compiling_with_mono.rst:326
 msgid "``<templates>/bcl/monodroid``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:323
+#: ../../docs/development/compiling/compiling_with_mono.rst:328
 msgid "``<templates>/bcl/monotouch``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:325
+#: ../../docs/development/compiling/compiling_with_mono.rst:330
 msgid "WebAssembly"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:325
+#: ../../docs/development/compiling/compiling_with_mono.rst:330
 msgid "``<templates>/bcl/wasm``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:327
+#: ../../docs/development/compiling/compiling_with_mono.rst:332
 msgid "Linux and macOS"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:327
+#: ../../docs/development/compiling/compiling_with_mono.rst:332
 msgid "``<templates>/bcl/net_4_x``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:329
+#: ../../docs/development/compiling/compiling_with_mono.rst:334
 msgid "``<templates>/bcl/net_4_x_win``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:332
+#: ../../docs/development/compiling/compiling_with_mono.rst:337
 msgid ""
 "As of now, we're assuming the same BCL profile can be used for both Linux "
 "and macOS, but this may change in the future as they're not guaranteed to be "
 "the same (as is the case with the Windows BCL)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:336
+#: ../../docs/development/compiling/compiling_with_mono.rst:341
 msgid ""
 "If the target platform is the same as the platform of the Godot editor, then "
 "the editor will use the BCL it's running on (``<data_folder>/Mono/lib/"
 "mono/4.5``) if it cannot find the BCL in the export templates."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:341
+#: ../../docs/development/compiling/compiling_with_mono.rst:346
 msgid "AOT cross-compilers"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:343
+#: ../../docs/development/compiling/compiling_with_mono.rst:348
 msgid ""
 "To perform ahead-of-time (AOT) compilation for other platforms, Godot needs "
 "to have access to the Mono cross-compilers for that platform and "
 "architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:346
+#: ../../docs/development/compiling/compiling_with_mono.rst:351
 msgid ""
 "Godot will look for the cross-compiler executable in the AOT compilers "
 "folder. The location of this folder is ``<data_folder>/Tools/aot-compilers/"
 "``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:349
+#: ../../docs/development/compiling/compiling_with_mono.rst:354
 msgid ""
 "In order to build the cross-compilers we recommend using these `build "
 "scripts <https://github.com/godotengine/godot-mono-builds>`_."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:352
+#: ../../docs/development/compiling/compiling_with_mono.rst:357
 msgid ""
 "After building them, copy the executable to the Godot AOT compilers "
 "directory. The executable name is ``<triple>-mono-sgen``, e.g.: ``aarch64-"
 "apple-darwin-mono-sgen``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:356
+#: ../../docs/development/compiling/compiling_with_mono.rst:361
 msgid "Command-line options"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:358
+#: ../../docs/development/compiling/compiling_with_mono.rst:363
 msgid ""
 "The following is the list of command-line options available when building "
 "with the Mono module:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:361
+#: ../../docs/development/compiling/compiling_with_mono.rst:366
 msgid "**module_mono_enabled**\\ =yes | **no**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:363
+#: ../../docs/development/compiling/compiling_with_mono.rst:368
 msgid "Build Godot with the Mono module enabled."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:365
+#: ../../docs/development/compiling/compiling_with_mono.rst:370
 msgid "**mono_glue**\\ =\\ **yes** | no"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:367
+#: ../../docs/development/compiling/compiling_with_mono.rst:372
 msgid ""
 "Whether to include the glue source files in the build and define "
 "``MONO_GLUE_DISABLED`` as a preprocessor macro."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:370
+#: ../../docs/development/compiling/compiling_with_mono.rst:375
 msgid "**mono_prefix**\\ =path"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:372
+#: ../../docs/development/compiling/compiling_with_mono.rst:377
 msgid ""
 "Path to the Mono installation directory for the target platform and "
 "architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:374
+#: ../../docs/development/compiling/compiling_with_mono.rst:379
 msgid "**xbuild_fallback**\\ =yes | **no**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:376
+#: ../../docs/development/compiling/compiling_with_mono.rst:381
 msgid "Whether to fallback to xbuild if MSBuild is not available."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:378
+#: ../../docs/development/compiling/compiling_with_mono.rst:383
 msgid "**mono_static**\\ =yes | no"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:380
+#: ../../docs/development/compiling/compiling_with_mono.rst:385
 msgid "Whether to link the Mono runtime statically."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:381
+#: ../../docs/development/compiling/compiling_with_mono.rst:386
 msgid ""
 "The default is **yes** for iOS and WASM, and **no** for other platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:383
+#: ../../docs/development/compiling/compiling_with_mono.rst:388
 msgid "**copy_mono_root**\\ =yes | **no**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:385
+#: ../../docs/development/compiling/compiling_with_mono.rst:390
 msgid ""
 "Whether to copy the Mono framework assemblies and configuration files "
 "required by the Godot editor."
@@ -78674,7 +78770,7 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:110
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:105
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:107
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
@@ -79097,7 +79193,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:54
 msgid ""
-"Arguments are can be different based on your own setup and needs. See :ref:"
+"Arguments can be different based on your own setup and needs. See :ref:"
 "`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 
@@ -79128,11 +79224,11 @@ msgid ""
 "add a new section to it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:100
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:102
 msgid "An example of a filled out ``launch.json``."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:102
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:104
 msgid ""
 "The name under ``program`` depends on your build configuration, e.g. ``godot."
 "x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
