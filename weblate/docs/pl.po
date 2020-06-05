@@ -23,6 +23,7 @@
 # Kolunio <kolunio15wie@gmail.com>, 2020.
 # Letero <jkurzynski93@gmail.com>, 2020.
 # luluu9 <maxmax89_89@o2.pl>, 2018.
+# Maciej Krzyżanowski <krzmaciek@gmail.com>, 2020.
 # Maciej <WriteToFeniks@gmail.com>, 2019.
 # Matshiro <mrmatshiro@gmail.com>, 2020.
 # Michael <michael0march@gmail.com>, 2019.
@@ -43,6 +44,7 @@
 # Spamowy Mail <spamowy15@gmail.com>, 2020.
 # Szymon Nowakowski <smnbdg13@gmail.com>, 2019.
 # Tomek <kobewi4e@gmail.com>, 2018-2020.
+# wieslaw.mlynarski Wiesław <wieslaw.mlynarski@gmail.com>, 2020.
 # Zamulacz <mcichocki@protonmail.com>, 2019.
 #
 msgid ""
@@ -50,7 +52,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-27 13:49+0200\n"
-"PO-Revision-Date: 2020-05-18 00:28+0000\n"
+"PO-Revision-Date: 2020-06-05 15:30+0000\n"
 "Last-Translator: Tomek <kobewi4e@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
@@ -63,9 +65,8 @@ msgstr ""
 "X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.2* branch"
-msgstr "Dokumentacja Godot - gałąź *master*"
+msgstr "Dokumentacja Godot - gałąź *3.2*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -76,7 +77,6 @@ msgstr ""
 "Rozwiń panel \"Czytaj Dokumenty\" na dole menu aby dotrzeć do listy."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.2 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -84,9 +84,10 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
-"To jest dokumentacja dla gałęzi rozwojowej (master). Szukasz dokumentacji "
-"dla aktualnej gałęzi **stabilnej**?. `Sprawdź tutaj <http://docs.godotengine."
-"org/en/stable>`_."
+"To jest dokumentacja dla gałęzi stabilnej 3.2. Szukasz dokumentacji dla "
+"aktualnej gałęzi **rozwojowej**?. `Sprawdź tutaj <http://docs.godotengine."
+"org/en/latest>`_. Możesz także przejrzeć dokumentację poprzedniej stabilnej "
+"gałęzi `3.1 <https://docs.godotengine.org/en/3.1>`_."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -120,7 +121,6 @@ msgstr ""
 "nauczyć się obsługi stabilnych wersji Godot'a."
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -128,10 +128,10 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"Witamy w oficjalnej dokumentacji silnika Godot, darmowego i napędzanego "
-"przez społeczność Open Source silnika gier 2D i 3D! Początkującym zalecamy "
-"zapoznanie się ze :ref:`stroną wprowadzającą <doc_about_intro>`, aby "
-"mieć ogólne pojęcie o czym ta dokumentacja traktuje."
+"Witamy w oficjalnej dokumentacji `silnika Godot <https://godotengine."
+"org>`__, darmowego i otwartego, napędzanego przez społeczność silnika gier "
+"2D i 3D! Początkującym zalecamy zapoznanie się ze :ref:`stroną wprowadzającą "
+"<doc_about_intro>`, aby mieć ogólne pojęcie o czym ta dokumentacja traktuje."
 
 #: ../../docs/index.rst:37
 msgid ""
@@ -204,9 +204,8 @@ msgid "Community"
 msgstr "Społeczność"
 
 #: ../../docs/index.rst:131
-#, fuzzy
 msgid "Class reference"
-msgstr "Zmiana aktualnej sceny"
+msgstr "Referencja klas"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
@@ -449,14 +448,13 @@ msgid "Organization of the documentation"
 msgstr "Organizacja dokumentacji"
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
 "Dokumentacja ta podzielona jest na pięć części o imponująco niezrównoważonej "
-"dystrybucji treści, ale sposób jej podziału powinien być stosunkowo "
+"dystrybucji treści - ale sposób jej podziału powinien być stosunkowo "
 "intuicyjny:"
 
 #: ../../docs/about/introduction.rst:83
@@ -886,7 +884,6 @@ msgid "What were the motivations behind creating GDScript?"
 msgstr "Jakie były motywy tworzenia GDScript?"
 
 #: ../../docs/about/faq.rst:129
-#, fuzzy
 msgid ""
 "In the early days, the engine used the `Lua <https://www.lua.org>`__ "
 "scripting language. Lua is fast, but creating bindings to an object oriented "
@@ -896,9 +893,9 @@ msgid ""
 msgstr ""
 "W początkowym okresie silnik używał języka skryptowego `Lua <http://www.lua."
 "org>`__. Lua jest szybka, ale tworzenie wiązań do obiektowo zorientowanego "
-"systemu, było skomplikowane i powolne i zajmowało olbrzymią ilość kodu. Po "
-"kilku eksperymentach z `Python <https://www.python.org>`__, okazał się "
-"również trudny do poprawnej implementacji."
+"systemu było skomplikowane i powolne oraz zajmowało olbrzymią ilość kodu. Po "
+"kilku eksperymentach z `Pythonem <https://www.python.org>`__, również się "
+"okazał trudny do poprawnej implementacji."
 
 #: ../../docs/about/faq.rst:135
 msgid ""
@@ -908,26 +905,23 @@ msgstr ""
 "były:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Słaba obsługa wątków w większości maszyn wirtualnych skryptów, a Godot używa "
-"wątków (Lua, Python, Squirrel, JS, AS, itp.)."
+"Słaba obsługa wątków w większości skryptowych maszyn wirtualnych, a Godot "
+"używa wątków (Lua, Python, Squirrel, JavaScript, ActionScript, itp.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
-"Słabe wsparcie dla klas w większości skryptowych maszyn wirtualnych i "
-"dostosowanie do sposobu działania Godota jest wysoce nieefektywne (Lua, "
-"Python, JS)."
+"Słabe wsparcie dla rozszerzania klas w większości skryptowych maszyn "
+"wirtualnych i dostosowywanie do sposobu działania Godota jest wysoce "
+"nieefektywne (Lua, Python, JavaScript)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
@@ -935,44 +929,41 @@ msgid ""
 "a great engine, not a great amount of integrations."
 msgstr ""
 "Wiele istniejących języków ma okropne interfejsy do wiązania z C++, co "
-"skutkuje dużą ilością kodu, błędów, bottleneck'ów i ogólnej nieefektywności "
-"(Lua, Python, Squirrel, JS, itp.). Chcieliśmy skupić się na świetnym "
+"skutkuje dużą ilością kodu, błędów, wąskich gardeł i ogólnej nieefektywności "
+"(Lua, Python, Squirrel, JavaScript, itp.). Chcieliśmy skupić się na świetnym "
 "silniku, a nie na dużej ilości integracji."
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
-"Brak natywnego wsparcia dla typów wektorów (vector3, matrix4, itd.). "
-"sktutkuje znacznym zmniejszeniem wydajności kiedy używa się własnych typów "
-"(Lua, Python, Squirrel, JS, AS, itd.)."
+"Brak natywnych typów wektorowych (vector3, matrix4, itd.), skutkujący "
+"znacznym zmniejszeniem wydajności kiedy używa się własnych typów (Lua, "
+"Python, Squirrel, JavaScript, ActionScript, itd.)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Odśmiecacz pamięci skutkuje niepotrzebnie dużym użyciem pamięci (Lua, "
-"Python, JS, AS, itd.)."
+"Odśmiecacz pamięci skutkuje przestojami i niepotrzebnie dużym zużyciem "
+"pamięci (Lua, Python, JavaScript, ActionScript, itd.)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
-"Trudności ze zintegrowaniem z edytorem kodu funkcji auto uzupełniania, "
-"edycji w czasie rzeczywistym, itd. Są one bardzo dobrze wspierane przez "
-"GDScript."
+"Trudności ze zintegrowaniem z edytorem kodu dla auto-uzupełniania, edycji w "
+"czasie rzeczywistym, itd. (każdy z nich). Funkcje te są bardzo dobrze "
+"wspierane przez GDScript."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above, and more."
-msgstr "GDScript został zaprojektowany tak żeby zminimalizować te problemy."
+msgstr ""
+"GDScript został zaprojektowany tak, żeby zredukować te problemy i nie tylko."
 
 #: ../../docs/about/faq.rst:156
 msgid "What type of 3D model formats does Godot support?"
@@ -1202,7 +1193,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:247
 msgid "I would like to contribute! How can I get started?"
-msgstr "Chciałbym przyczynić się do rozwoju Godota! Jak mogę zacząć?"
+msgstr "Chcę się przyczynić do rozwoju Godota! Jak mogę zacząć?"
 
 #: ../../docs/about/faq.rst:249
 msgid ""
@@ -1232,7 +1223,6 @@ msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Mam świetny pomysł dla Godot'a. Jak mogę się nim podzielić?"
 
 #: ../../docs/about/faq.rst:259
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -1244,15 +1234,16 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
-"Kusząca może być chęć dodawania do Godota nowych pomysłów, zwłaszcza takich, "
-"które prowadzą do gruntownych zmian, w jakiś sposób próbujących imitować "
-"działanie innych silników do tworzenia gier lub alternatywnych rozwiązań, "
-"które chciałbyś umieścić w edytorze. To świetne pomysły i jesteśmy "
-"wdzięczni, że tak zmotywowani ludzie chcą nam wspomóc, ale centrum uwagi "
-"Godota jest i zawsze będzie rozwój głównych funkcji określonych w `Roadmap "
-"<https://github.com/godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, "
-"pozbywanie się błędów i problemów <https://github.com/godotengine/godot/"
-"issues>`_, oraz wzmocnienie komunikacji między członkami społeczności Godot."
+"Kusząca może być chęć dodawania do Godota nowych pomysłów, na przykład "
+"takich, które prowadzą do gruntownych zmian, w jakiś sposób próbujących "
+"imitować działanie innych silników do tworzenia gier lub alternatywnych "
+"rozwiązań, które chciałbyś umieścić w edytorze. To świetne pomysły i "
+"jesteśmy wdzięczni, że tak zmotywowani ludzie chcą nam wspomóc, ale w "
+"centrum uwagi Godota jest i zawsze będzie rozwój głównych funkcji "
+"określonych w `Roadmap <https://github.com/godotengine/godot-roadmap/blob/"
+"master/ROADMAP.md>`_, pozbywanie się błędów i problemów <https://github.com/"
+"godotengine/godot/issues>`_, oraz komunikacja między członkami społeczności "
+"Godot."
 
 #: ../../docs/about/faq.rst:268
 msgid ""
@@ -1407,7 +1398,7 @@ msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
-"Dodatkowo, wyjątki znacznie zwiększają rozmiar pliku binarnego pliku "
+"Dodatkowo, wyjątki znacząco zwiększają rozmiar skompilowanego pliku "
 "wykonywalnego."
 
 #: ../../docs/about/faq.rst:318
@@ -1431,16 +1422,15 @@ msgstr ""
 "zorientowanego na dane)?"
 
 #: ../../docs/about/faq.rst:327
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
-"Podczas gdy Godot wewnętrznie, dla wielu zadań wymagających dużej "
-"wydajności, próbuje wykorzystać spójność pamięci najlepiej jak to możliwe, "
-"wierzymy, że większość użytkowników tak naprawdę nie musi być zmuszana do "
-"używania praktyk DoD."
+"Mimo, że wewnętrznie Godot dla wielu zadań wymagających dużej wydajności "
+"próbuje wykorzystać spójność pamięci najlepiej jak to możliwe, wierzymy, że "
+"większość użytkowników tak naprawdę nie musi być zmuszana do używania "
+"praktyk DoD."
 
 #: ../../docs/about/faq.rst:331
 msgid ""
@@ -1499,17 +1489,16 @@ msgid "Documentation changelog"
 msgstr "Dziennik zmian w dokumentacji"
 
 #: ../../docs/about/docs_changelog.rst:6
-#, fuzzy
 msgid ""
 "The documentation is continually being improved. The release of version 3.2 "
 "includes many new tutorials, many fixes and updates for old tutorials, and "
 "many updates to the :ref:`class reference <toc-class-ref>`. Below is a list "
 "of new tutorials added since version 3.1."
 msgstr ""
-"Dokumentacja jest wciąż ulepszana. Wydanie wersji 3.1 zawiera wiele nowych "
-"poradników a stare poradniki oraz odnośniki klas zostały odświeżone i "
-"poprawione. Poniżej możesz zobaczyć listę nowych poradników dodanych od "
-"wersji 3.0."
+"Dokumentacja jest wciąż ulepszana. Wydanie wersji 3.2 zawiera wiele nowych "
+"poradników, wiele poprawek do starych poradników oraz wiele poprawek w :ref:"
+"`referencji klas <toc-class-ref>`. Poniżej jest lista nowych poradników "
+"dodanych od czasu wersji 3.1."
 
 #: ../../docs/about/docs_changelog.rst:11
 msgid ""
@@ -1550,9 +1539,8 @@ msgid "Audio"
 msgstr "Dźwięk"
 
 #: ../../docs/about/docs_changelog.rst:30
-#, fuzzy
 msgid ":ref:`doc_recording_with_microphone`"
-msgstr ":ref:`doc_complying_with_licenses`"
+msgstr ":ref:`doc_recording_with_microphone`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`doc_sync_with_audio`"
@@ -1614,9 +1602,8 @@ msgid ":ref:`doc_your_second_spatial_shader`"
 msgstr ":ref:`doc_your_second_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:57
-#, fuzzy
 msgid ":ref:`doc_visual_shaders`"
-msgstr ":ref:`doc_visual_shader_plugins`"
+msgstr ":ref:`doc_visual_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:60
 #: ../../docs/tutorials/networking/index.rst:2
@@ -1754,24 +1741,20 @@ msgid "Best Practices:"
 msgstr "Najlepsze praktyki:"
 
 #: ../../docs/about/docs_changelog.rst:122
-#, fuzzy
 msgid ":ref:`doc_introduction_best_practices`"
-msgstr ":ref:`Wprowadzenie <doc_introduction_best_practices>`"
+msgstr ":ref:`doc_introduction_best_practices`"
 
 #: ../../docs/about/docs_changelog.rst:123
-#, fuzzy
 msgid ":ref:`doc_what_are_godot_classes`"
-msgstr ":ref:`Czym są klasy Godot <doc_what_are_godot_classes>`"
+msgstr ":ref:`doc_what_are_godot_classes`"
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`doc_scene_organization`"
-msgstr ":ref:`Organizacja sceny <doc_scene_organization>`"
+msgstr ":ref:`doc_scene_organization`"
 
 #: ../../docs/about/docs_changelog.rst:125
-#, fuzzy
 msgid ":ref:`doc_scenes_versus_scripts`"
-msgstr ":ref:`Sceny kontra skrypty <doc_scenes_versus_scripts>`"
+msgstr ":ref:`doc_scenes_versus_scripts`"
 
 #: ../../docs/about/docs_changelog.rst:126
 msgid ":ref:`doc_autoloads_versus_internal_nodes`"
@@ -1784,23 +1767,20 @@ msgid ":ref:`doc_node_alternatives`"
 msgstr ":ref:`Alternatywy węzłów <doc_node_alternatives>`"
 
 #: ../../docs/about/docs_changelog.rst:128
-#, fuzzy
 msgid ":ref:`doc_godot_interfaces`"
-msgstr ":ref:`Interfejs Godota <doc_godot_interfaces>`"
+msgstr ":ref:`doc_godot_interfaces`"
 
 #: ../../docs/about/docs_changelog.rst:129
-#, fuzzy
 msgid ":ref:`doc_godot_notifications`"
-msgstr ":ref:`Powiadomienia Godota <doc_godot_notifications>`"
+msgstr ":ref:`doc_godot_notifications`"
 
 #: ../../docs/about/docs_changelog.rst:130
 msgid ":ref:`doc_data_preferences`"
 msgstr ":ref:`Preferencje danych <doc_data_preferences>`"
 
 #: ../../docs/about/docs_changelog.rst:131
-#, fuzzy
 msgid ":ref:`doc_logic_preferences`"
-msgstr ":ref:`Preferencje logiki <doc_logic_preferences>`"
+msgstr ":ref:`doc_logic_preferences`"
 
 #: ../../docs/about/docs_changelog.rst:136
 msgid ":ref:`doc_2d_lights_and_shadows`"
@@ -1819,16 +1799,12 @@ msgid ":ref:`doc_csg_tools`"
 msgstr ":ref:`Narzędzia CSG <doc_csg_tools>`"
 
 #: ../../docs/about/docs_changelog.rst:143
-#, fuzzy
 msgid ":ref:`doc_animating_thousands_of_fish`"
-msgstr ":ref:`doc_matrices_and_transforms`"
+msgstr ":ref:`doc_animating_thousands_of_fish`"
 
 #: ../../docs/about/docs_changelog.rst:144
-#, fuzzy
 msgid ":ref:`doc_controlling_thousands_of_fish`"
-msgstr ""
-":ref:`Kontrolowanie tysięcy ryb za pomocą cząsteczek "
-"<doc_controlling_thousands_of_fish>`"
+msgstr ":ref:`doc_controlling_thousands_of_fish`"
 
 #: ../../docs/about/docs_changelog.rst:147
 #: ../../docs/tutorials/physics/index.rst:2
@@ -1836,14 +1812,12 @@ msgid "Physics"
 msgstr "Fizyka"
 
 #: ../../docs/about/docs_changelog.rst:149
-#, fuzzy
 msgid ":ref:`doc_ragdoll_system`"
-msgstr ":ref:`System Ragdolli <doc_ragdoll_system>`"
+msgstr ":ref:`doc_ragdoll_system`"
 
 #: ../../docs/about/docs_changelog.rst:150
-#, fuzzy
 msgid ":ref:`doc_soft_body`"
-msgstr ":ref:`Ciało miękkie <doc_soft_body>`"
+msgstr ":ref:`doc_soft_body`"
 
 #: ../../docs/about/docs_changelog.rst:153
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:2
@@ -1865,9 +1839,8 @@ msgid "GUI"
 msgstr "GUI (Interfejs)"
 
 #: ../../docs/about/docs_changelog.rst:161
-#, fuzzy
 msgid ":ref:`doc_gui_containers`"
-msgstr ":ref:`Interfejs Godota <doc_godot_interfaces>`"
+msgstr ":ref:`doc_gui_containers`"
 
 #: ../../docs/about/docs_changelog.rst:164
 #: ../../docs/tutorials/viewports/index.rst:2
@@ -1890,11 +1863,8 @@ msgstr ""
 "<doc_intro_to_shaders_water_workshop>`"
 
 #: ../../docs/about/docs_changelog.rst:173
-#, fuzzy
 msgid ":ref:`doc_migrating_to_godot_shader_language`"
-msgstr ""
-":ref:`Migracja do języka cieniowania Godota "
-"<doc_migrating_to_godot_shader_language>`"
+msgstr ":ref:`doc_migrating_to_godot_shader_language`"
 
 #: ../../docs/about/docs_changelog.rst:174
 msgid ":ref:`doc_advanced_postprocessing`"
@@ -1905,14 +1875,12 @@ msgid "Shading Reference:"
 msgstr "O Shaderach:"
 
 #: ../../docs/about/docs_changelog.rst:178
-#, fuzzy
 msgid ":ref:`doc_shaders`"
-msgstr ":ref:`Shadery <doc_shaders>`"
+msgstr ":ref:`doc_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:179
-#, fuzzy
 msgid ":ref:`doc_shading_language`"
-msgstr ":ref:`Język cieniowania <doc_shading_language>`"
+msgstr ":ref:`doc_shading_language`"
 
 #: ../../docs/about/docs_changelog.rst:180
 msgid ":ref:`doc_spatial_shader`"
@@ -1923,15 +1891,12 @@ msgid ":ref:`doc_canvas_item_shader`"
 msgstr ":ref:`Shader Canvas Item`"
 
 #: ../../docs/about/docs_changelog.rst:182
-#, fuzzy
 msgid ":ref:`doc_particle_shader`"
-msgstr " :ref:`Shadery cząstek<doc_particle_shader>`"
+msgstr ":ref:`doc_particle_shader`"
 
 #: ../../docs/about/docs_changelog.rst:187
-#, fuzzy
 msgid ":ref:`doc_making_main_screen_plugins`"
-msgstr ""
-":ref:`Tworzenie wtyczek ekranu głównego <doc_making_main_screen_plugins>`"
+msgstr ":ref:`doc_making_main_screen_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:188
 msgid ":ref:`doc_spatial_gizmo_plugins`"
@@ -1952,9 +1917,8 @@ msgid ":ref:`doc_thread_safe_apis`"
 msgstr ":ref:`Bezpieczne API Thread<doc_thread_safe_apis>`"
 
 #: ../../docs/about/docs_changelog.rst:203
-#, fuzzy
 msgid ":ref:`doc_making_trees`"
-msgstr " :ref:`Tworzenie drzew <doc_making_trees>`"
+msgstr ":ref:`doc_making_trees`"
 
 #: ../../docs/about/docs_changelog.rst:206
 #: ../../docs/tutorials/misc/index.rst:2
@@ -1962,24 +1926,20 @@ msgid "Miscellaneous"
 msgstr "Różności"
 
 #: ../../docs/about/docs_changelog.rst:208
-#, fuzzy
 msgid ":ref:`doc_jitter_stutter`"
-msgstr ":ref:`Naprawa drgań i migania <doc_jitter_stutter>`"
+msgstr ":ref:`doc_jitter_stutter`"
 
 #: ../../docs/about/docs_changelog.rst:209
-#, fuzzy
 msgid ":ref:`doc_running_code_in_the_editor`"
-msgstr ":ref:`Uruchamianie kodu w edytorze <doc_running_code_in_the_editor>`"
+msgstr ":ref:`doc_running_code_in_the_editor`"
 
 #: ../../docs/about/docs_changelog.rst:210
-#, fuzzy
 msgid ":ref:`doc_change_scenes_manually`"
-msgstr ":ref:`Ręczna zmiana scen <doc_change_scenes_manually>`"
+msgstr ":ref:`doc_change_scenes_manually`"
 
 #: ../../docs/about/docs_changelog.rst:211
-#, fuzzy
 msgid ":ref:`doc_gles2_gles3_differences`"
-msgstr ":ref:`Różnice pomiędzy GLES2 i GLES3 <doc_gles2_gles3_differences>`"
+msgstr ":ref:`doc_gles2_gles3_differences`"
 
 #: ../../docs/about/docs_changelog.rst:214
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:349
@@ -1993,14 +1953,12 @@ msgid "Compiling"
 msgstr "Kompilowanie"
 
 #: ../../docs/about/docs_changelog.rst:216
-#, fuzzy
 msgid ":ref:`doc_optimizing_for_size`"
-msgstr ":ref:`Optymalizacja rozmiaru projektu <doc_optimizing_for_size>`"
+msgstr ":ref:`doc_optimizing_for_size`"
 
 #: ../../docs/about/docs_changelog.rst:217
-#, fuzzy
 msgid ":ref:`doc_compiling_with_script_encryption_key`"
-msgstr "Kompilowanie z Mono"
+msgstr ":ref:`doc_compiling_with_script_encryption_key`"
 
 #: ../../docs/about/docs_changelog.rst:220
 #: ../../docs/development/cpp/index.rst:2
@@ -2008,50 +1966,47 @@ msgid "Engine development"
 msgstr "Rozwój silnika"
 
 #: ../../docs/about/docs_changelog.rst:222
-#, fuzzy
 msgid ":ref:`doc_binding_to_external_libraries`"
-msgstr "Łączenie zewnętrznych bibliotek z Godotem (jak PhysX, FMOD itp.)."
+msgstr ":ref:`doc_binding_to_external_libraries`"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
-#, fuzzy
 msgid "Introduction to Godot's editor"
-msgstr "Wprowadzenie do Godot Engine"
+msgstr "Wprowadzenie do edytora silnika Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
-#, fuzzy
 msgid ""
 "This tutorial will run you through Godot's interface. We're going to look at "
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
-"Ten samouczek poprowadzi cię przez interfejs Godota. Zobaczymy **Menedżera "
-"projektów, panele** i wszystko, co musisz wiedzieć, by zacząć go używać."
+"Ten samouczek poprowadzi cię przez interfejs Godota. Przyjrzymy się "
+"**menedżerowi projektów, dokom, przestrzeniom roboczym** i wszystkiemu, co "
+"musisz wiedzieć, by zacząć pracę z silnikiem."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
 msgstr "Menedżer projektów"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you'll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
-"Po uruchomieniu programu Godot pierwszym oknem, które zobaczysz, jest "
-"Menedżer Projektów. Pozwala grać, tworzyć, usuwać, importować projekty."
+"Po uruchomieniu Godota, pierwszym oknem, które zobaczysz, jest Menedżer "
+"Projektów. Ponieważ nie masz projektów, pojawi się okienko pytające, czy "
+"chcesz otworzyć bibliotekę zasobów. Po prostu kliknij anuluj, przyjrzymy się "
+"jej później."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
-#, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"Po uruchomieniu programu Godot pierwszym oknem, które zobaczysz, jest "
-"Menedżer Projektów. Pozwala grać, tworzyć, usuwać, importować projekty."
+"Teraz powinien się pokazać menedżer projektów. Pozwala ci on tworzyć, "
+"usuwać, importować lub uruchamiać projekty gier."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
-#, fuzzy
 msgid ""
 "In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
@@ -2059,7 +2014,6 @@ msgstr ""
 "W prawym górnym rogu znajduje się rozwijane menu do zmiany języka edytora."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -2067,43 +2021,44 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"Z zakładki **Szablony** możesz pobrać szablony i dema projektów open source, "
-"które pomogą ci szybciej rozpocząć pracę."
+"Z zakładki **Szablony** możesz pobrać otwartoźródłowe szablony projektów i "
+"dema z Biblioteki Zasobów, by pomóc ci szybciej rozpocząć pracę. Wybierz po "
+"prostu szablon lub demo, które chcesz i kliknij pobierz. Kiedy pobieranie "
+"się skończy, kliknij instaluj i wybierz, gdzie chcesz, żeby projekt się "
+"znalazł. Możesz dowiedzieć się o tym więcej w :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
 msgstr "Utwórz lub zaimportuj projekt"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
 "Aby utworzyć nowy projekt, kliknij przycisk ``Nowy projekt`` po prawej "
-"stronie. Nadaj mu nazwę i wybierz pusty folder na komputerze, aby go zapisać."
+"stronie. Nadaj mu nazwę, wybierz pusty folder na komputerze, aby go zapisać "
+"oraz wybierz renderer."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
-#, fuzzy
 msgid ""
 "Click the Browse button to open Godot's file browser and pick a location or "
 "type the folder's path in the Project Path field."
 msgstr ""
-"Kliknij przycisk Przeglądaj, aby otworzyć przeglądarkę plików Godota i "
-"wybrać lokalizację lub wpisać ścieżkę do folderu w polu ścieżka projektu."
+"Kliknij przycisk Przeglądaj, aby otworzyć Godotową przeglądarkę plików i "
+"wybierz lokalizację lub wpisz ścieżkę do folderu w polu Ścieżka projektu."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
-#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"Gdy zobaczysz zielony haczyk po prawej, oznacza to, że silnik wykrywa pusty "
-"folder i możesz kliknąć ``Stwórz``. Godot stworzy projekt dla Ciebie i "
-"otworzy go w edytorze."
+"Kiedy zobaczysz zielony haczyk po prawej, oznacza to, że silnik wykrywa "
+"pusty folder. Możesz także kliknąć przycisk ``Utwórz katalog`` obok nazwy "
+"twojego projektu i zostanie utworzony pusty folder z nazwą projektu."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
 msgid ""
@@ -2121,23 +2076,20 @@ msgstr ""
 "tutorialu każdy backend jest w porządku."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"Gdy zobaczysz zielony haczyk po prawej, oznacza to, że silnik wykrywa pusty "
-"folder i możesz kliknąć ``Stwórz``. Godot stworzy projekt dla Ciebie i "
-"otworzy go w edytorze."
+"Kiedy skończysz kliknij ``Utwórz i edytuj`. Godot utworzy dla ciebie projekt "
+"i otworzy go w edytorze."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"Następnym razem, gdy otworzysz menedżera projektu, nowy projekt zostanie "
-"wyświetlony na liście. Kliknij dwukrotnie, aby otworzyć go w edytorze."
+"Następnym razem, gdy otworzysz menedżer projektów, zobaczysz swój nowy "
+"projekt na liście. Kliknij na niego dwukrotnie, aby otworzyć go w edytorze."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -2154,20 +2106,18 @@ msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr "Jeśli ścieżka do katalogu będzie poprawna, zobaczysz zielony znacznik."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
-#, fuzzy
 msgid "Your first look at Godot's editor"
 msgstr "Twoje pierwsze spojrzenie na edytor Godota"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"Witamy w Godocie! W oknie projektu powinien być widoczny interfejs edytora z "
-"aktywnym widokiem 3D. Można zmienić aktualny obszar roboczy na górze "
-"interfejsu. Wybierz 2D, by przejść do widoku 2D."
+"Witamy w Godocie! Po otwarciu projektu, powinien ci się pokazać interfejs "
+"edytora, z różnymi menu na górze interfejsu oraz dokami wzdłuż końca każdego "
+"boku głównego widoku sceny."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
@@ -2178,32 +2128,29 @@ msgstr ""
 "robocze** oraz **przyciski odtwarzacza**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
-"Po lewej stronie znajduje się **panel systemu plików**, gdzie można "
-"zarządzać plikami projektu i zasobami."
+"W **Doku systemu plików** będziesz zarządzać plikami i zasobami swojego "
+"projektu."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
-#, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"Po prawej stronie znajdują się **Panel sceny**, który wyświetla zawartość "
-"aktywnej sceny oraz **Inspektor** poniżej."
+"**Dok sceny** listuje zawartość aktywnej sceny, a **Inspector** pozwala na "
+"zarządzanie właściwościami zawartości sceny."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you'll find tools "
 "to move, scale or lock your scene's objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"Na środku u góry znajduje się **Pasek Narzędzi**, oferujący funkcje "
-"przesuwania, skalowania czy blokowania obiektów sceny. Zmienia się w "
-"zależności od obszaru roboczego."
+"Na górze na środku jest **Pasek narzędzi**, gdzie znajdziesz narzędzia do "
+"przesuwania, skalowania czy blokowania obiektów sceny. Zmienia się on kiedy "
+"przechodzisz między różnymi obszarami roboczymi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
 #, fuzzy
@@ -2280,12 +2227,16 @@ msgid ""
 "signal in the engine while you are writing a script, press the \"Search Help"
 "\" button at the top right of the Script workspace."
 msgstr ""
+"By wyszukać informacje o klasie, metodzie, właściwości, stałej albo sygnale "
+"w silniku podczas pisana skryptu, wciśnij przycisk \"Wyszukaj w pomocy\" w "
+"prawym górnym rogu przestrzeni roboczej skryptu."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid ""
 "A new window will pop up. Search for the item that you want to find "
 "information about."
 msgstr ""
+"Pojawi się nowe okno. Wyszukaj pozycję, o której chcesz znaleźć informacje."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
 msgid ""
@@ -15202,9 +15153,8 @@ msgid "``file_dialog/toggle_mode``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
-#, fuzzy
 msgid "Create Folder"
-msgstr "Tworzenie węzłów"
+msgstr "Utwórz katalog"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -19667,6 +19617,13 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
+"``%s`` widoczne w przykładzie powyżej jest najprostszym symbolem zastępczym "
+"i działa dla większości przypadków: konwertuje wartość tą samą metodą, którą "
+"niejawna konwersja lub ``str()`` by ją skonwertowała. Łańcuchy znaków "
+"pozostają niezmienione, Wartości logiczne (Boolean) zmieniają się w albo ``"
+"\"True\"`` albo ``\"False\"``, liczby całkowite lub rzeczywiste stają się "
+"dziesiętnymi, inne typy zwykle zwracają swoje dane w ciąg znaków łatwy do "
+"odczytania przez człowieka."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
@@ -19675,6 +19632,10 @@ msgid ""
 "the corresponding value. The method can handle arrays or dictionaries for "
 "the key/value pairs."
 msgstr ""
+"Jest jeszcze inny sposób by sformatować tekst w GDScript, mianowicie za "
+"pomocą metody ``String.format()``. Zamienia ona wszystkie wystąpienia klucza "
+"w łańcuchu znaków na odpowiednią wartość. Ta metoda pozwala na obsługę "
+"tablic, czy słowników dla par klucz/wartość."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:50
 msgid ""
@@ -19684,17 +19645,21 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
-msgstr ""
+msgstr "Krótki przykład w GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
+#, fuzzy
 msgid ""
 "There are other `format specifiers`_, but they are only applicable when "
 "using the ``%`` operator."
 msgstr ""
+"Istnieją inne `specyfikatory formatu`_, ale mają one zastosowanie tylko przy "
+"użyciu operatora` `%` `."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:71
+#, fuzzy
 msgid "Multiple placeholders"
-msgstr ""
+msgstr "Wiele symboli zastępczych"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
 msgid ""
@@ -76868,16 +76833,19 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:243
 msgid "Files are delivered with server-side chunked compression"
 msgstr ""
+"Pliki są dostarczone przy pomocy fragment-owej kompresji po stronie serwera"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:244
 msgid "Files are delivered with server-side compression on Chromium"
-msgstr ""
+msgstr "Pliki są dostarczone przy pomocy kompresji z serwera w Chromium"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:245
 msgid ""
 "Not all file downloads have started yet (usually on servers without multi-"
 "threading)"
 msgstr ""
+"Nie wszystkie ściągnięcia plików rozpoczęły się (zwykle na serwerach bez "
+"mulit wątkowości)"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:248
 msgid ""

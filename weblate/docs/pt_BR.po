@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# 0 S0IC BR <braswashington@gmail.com>, 2020.
 # Abraao C. S. Filho <acsf09@gmail.com>, 2019.
 # Accácio <raccacio@poli.ufrj.br>, 2018-2019.
 # Alan Araújo <alan.r.araujo@gmail.com>, 2018.
@@ -45,6 +46,7 @@
 # Fupi Brazil <fupicat@gmail.com>, 2020.
 # Gabriel Andrade <gabrielandrade@poli.ufrj.br>, 2019.
 # Gabriel Carvalho <billlmaster@gmail.com>, 2018-2019.
+# Gabriel Gomes Guimarães <gabrielgguimaraes21@gmail.com>, 2020.
 # Gabriel Henrique Pereira Soare <ghsoares99795@gmail.com>, 2019.
 # Gadiel <gadiel.mendes@gmail.com>, 2020.
 # George Marques <georgemjesus@gmail.com>, 2018.
@@ -85,12 +87,14 @@
 # Luccas Brandão <srluccasbrandao@gmail.com>, 2018.
 # Luciano Pestana Santos <lucianopestana@hotmail.com>, 2018.
 # Luigi <luigimendeszanchett@gmail.com>, 2019.
+# Luís Ângelo Rodrigues Jr <luisangelorjr@gmail.com>, 2020.
 # Luiz Carlos L. G. de Oliveira <luizcarlos1405@gmail.com>, 2020.
 # Luiz Montevechio <montevechiol@gmail.com>, 2019.
 # Luk3M <luk3@hotmail.com.br>, 2018.
 # M4gma <lucboari@gmail.com>, 2018.
 # Marcelo de Farias <anjonegro2100@gmail.com>, 2019.
 # Marcus Correia <marknokalt@live.com>, 2018-2019.
+# MARIO VINICIUS BELO BARBOSA MELLO <spanker.br@gmail.com>, 2020.
 # Matheus <matheus.cumpian@hotmail.com>, 2018.
 # Matheus Moutinho Vieira <mmoutinhov@gmail.com>, 2019.
 # Matheus Paiva <matheus75679@gmail.com>, 2019.
@@ -146,7 +150,7 @@
 # Walter Bolitto <wrcarval@live.com>, 2018.
 # Wellyngton R Weller <well.weller@hotmail.com>, 2020.
 # Wesley <wsplay357@gmail.com>, 2019.
-# William Batista Costa <costa.williambatista@gmail.com>, 2019.
+# William Batista Costa <costa.williambatista@gmail.com>, 2019-2020.
 # Wow Bitch <hahaj@itmailr.com>, 2019.
 # Z <rainromes@gmail.com>, 2020.
 # Zeero <igcdzeero@gmail.com>, 2019.
@@ -156,8 +160,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-27 13:49+0200\n"
-"PO-Revision-Date: 2020-05-27 11:28+0000\n"
-"Last-Translator: DeeJayLSP <djlsplays@gmail.com>\n"
+"PO-Revision-Date: 2020-06-04 18:34+0000\n"
+"Last-Translator: Gabriel Gomes Guimarães <gabrielgguimaraes21@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -188,9 +192,11 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
-"Esta é a documentação para a branch 3.2 stable. Procurando a documentação do "
-"atual branch **development**? `Dê uma olhada aqui <https://docs.godotengine."
-"org/en/stable>`_."
+"Esta é a documentação para a branch estável (3.2). Procurando pela "
+"documentação da atual branch de **desenvolvimento**? `Dê uma olhada aqui "
+"<https://docs.godotengine.org/en/latest>`_. Também pode ver a documentação "
+"da versão estável anterior `3.1 <https://docs.godotengine.org/en/3.1>`_ "
+"branch."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -220,8 +226,8 @@ msgid ""
 "stable Godot releases nevertheless."
 msgstr ""
 "Por enquanto, as traduções localizadas estão disponíveis apenas para a "
-"branch \"mais recente\" (desenvolvimento), mas devem ser adequadas para "
-"aprender como usar versões estáveis de Godot."
+"branch \"latest\" (desenvolvimento), mas devem ser adequadas para aprender "
+"como usar versões estáveis de Godot."
 
 #: ../../docs/index.rst:31
 msgid ""
@@ -231,11 +237,11 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"Seja bem-vindo à documentação oficial do `Godot Engine<https://godotengine."
+"Seja bem-vindo à documentação oficial do `Godot Engine <https://godotengine."
 "org>`__, o motor de jogos gratuito e de código aberto impulsionado pela "
 "comunidade para jogos 2D e 3D! Se você não conhece a documentação, sugerimos "
-"que leia a :ref:`introdução <doc_about_intro>` para ter uma visão sobre o "
-"que a documentação tem para oferecer."
+"que leia a :ref:`introdução <doc_about_intro>` para ter uma visão geral "
+"sobre o que a documentação tem para oferecer."
 
 #: ../../docs/index.rst:37
 msgid ""
@@ -273,8 +279,8 @@ msgstr ""
 "Envie um problema ou uma pull request no `repositório do GitHub <https://"
 "github.com/godotengine/godot-docs/issues>`_, ajude-nos a `traduzir a "
 "documentação <https://hosted.weblate.org/engage/godot-engine/>`_ para o seu "
-"idioma, ou fale conosco no ``#documentation`` canal do `Discord <https://"
-"discord.gg/zH7NUgz>`_, ou no ``#godotengine-doc`` canal do `irc.freenode.net "
+"idioma, ou fale conosco no canal ``#documentation`` do `Discord <https://"
+"discord.gg/zH7NUgz>`_, ou no canal ``#godotengine-doc`` do `irc.freenode.net "
 "<http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:58
@@ -402,11 +408,11 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Bem-vindo à documentação oficial do Godot Engine, o motor de jogo 2D e 3D "
-"orientado para a comunidade de código aberto e gratuito! Por trás desta "
-"boca, você encontrará uma ferramenta poderosa e de fácil utilização que você "
-"pode usar para desenvolver qualquer tipo de jogo, para qualquer plataforma e "
-"sem nenhuma restrição de uso."
+"Bem-vindo à documentação oficial do Godot Engine, o motor de jogo 2D e 3D de "
+"código aberto e gratuito orientado para a comunidade! Por trás disso tudo, "
+"você encontrará uma ferramenta poderosa e de fácil utilização que você pode "
+"usar para desenvolver qualquer tipo de jogo, para qualquer plataforma e sem "
+"nenhuma restrição de uso."
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -485,12 +491,12 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot é completamente gratuito e de código aberto sob a  licença MIT "
-"permissiva. Sem amarras, sem royalties, nada. Os jogos dos usuários são "
-"deles, até a última linha do código do motor. O desenvolvimento do Godot é "
-"totalmente independente e voltado para a comunidade, capacitando os usuários "
-"a ajudar a moldar seu motor para atender às suas expectativas. Ele é mantido "
-"pela `Software Freedom Conservancy <https://sfconservancy.org>`_ sem fins "
+"Godot é completamente gratuito e de código aberto sob a permissiva licença "
+"MIT. Sem amarras, sem royalties, nada. Os jogos dos usuários são deles, até "
+"a última linha do código do motor. O desenvolvimento do Godot é totalmente "
+"independente e voltado para a comunidade, capacitando os usuários a ajudar a "
+"moldar seu motor para atender às suas expectativas. Ele é mantido pela "
+"`Software Freedom Conservancy <https://sfconservancy.org>`_ sem fins "
 "lucrativos."
 
 #: ../../docs/about/introduction.rst:52
@@ -682,7 +688,7 @@ msgid ""
 "profit, commercial, or otherwise."
 msgstr ""
 "Você está livre para baixar e usar Godot para qualquer propósito, pessoal, "
-"sem lucro, comercial, ou qualquer outro;"
+"sem lucro, comercial, ou qualquer outro."
 
 #: ../../docs/about/faq.rst:17
 msgid ""
@@ -916,7 +922,7 @@ msgstr ""
 "pontos fortes do Godot o mais rápido possível. Se você já escreveu alguma "
 "coisa em uma linguagem como o Python antes disso, você se sentirá em casa. "
 "Para exemplos, histórico e uma visão geral completa do poder que o GDScript "
-"oferece, confira nosso guia `GDScript:  <gdscript_basics>`_."
+"oferece, confira nosso guia `GDScript: <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:102
 msgid ""
@@ -1265,9 +1271,9 @@ msgid ""
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Para estender o Godot, criar plugins para o Godot Editor ou adicionar o "
-"suporte a novas línguas, veja :ref:`EditorPlugins <doc_making_plugins>` e "
-"ferramentas."
+"Para estender o Godot, como criar plugins para o Editor ou adicionar suporte "
+"a novas linguagens, dê uma olhada em:ref:`EditorPlugins "
+"<doc_making_plugins>` e ferramentas."
 
 #: ../../docs/about/faq.rst:236
 msgid "Also, see the official blog posts on these topics:"
@@ -1321,7 +1327,7 @@ msgstr ""
 "O primeiro lugar para começar é em `issues <https://github.com/godotengine/"
 "godot/issues>`_. Procure um problema que você se identifica, então proceda "
 "para `How to Contribute <https://github.com/godotengine/godot/blob/master/"
-"CONTRIBUTING.md#contributing-pull-requests>`_  guia para aprender como fazer "
+"CONTRIBUTING.md#contributing-pull-requests>`_ guia para aprender como fazer "
 "um fork, modificar e enviar uma solicitação de envio (Pull request = PR) com "
 "suas alterações."
 
@@ -1343,14 +1349,14 @@ msgid ""
 "community members."
 msgstr ""
 "Pode ser tentador querer trazer ideias ao Godot, como aquelas que resultam e "
-"mudanças massivas no núcleo, um tipo de mímica que outro engine de jogos "
-"faz, ou modos de trabalho alternativo que você iria querer dentro do editor. "
-"Tudo isso é ótimo e nós agradecemos por ter tantas pessoas motivadas "
-"querendo contribuir, porém, o foco da Godot é e sempre será, a "
-"funcionalidade central como descrita no `Roadmap <https://github.com/"
-"godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, `consertando bugs e "
-"discutindo problemas <https://github.com/godotengine/godot/issues>`_, e "
-"discussão entre membros da comunidade da godot."
+"mudanças massivas no núcleo, um tipo de mímica que outro motor de jogos faz, "
+"ou modos de trabalho alternativo que você iria querer dentro do editor. Tudo "
+"isso é ótimo e nós agradecemos por ter tantas pessoas motivadas querendo "
+"contribuir, porém, o foco da Godot é e sempre será, a funcionalidade central "
+"como descrita no `Roadmap <https://github.com/godotengine/godot-roadmap/blob/"
+"master/ROADMAP.md>`_, `consertando bugs e discutindo problemas <https://"
+"github.com/godotengine/godot/issues>`_, e discussão entre membros da "
+"comunidade da godot."
 
 #: ../../docs/about/faq.rst:268
 msgid ""
@@ -1431,8 +1437,8 @@ msgstr ""
 #: ../../docs/about/faq.rst:294
 msgid "Why does Godot not use STL (Standard Template Library)"
 msgstr ""
-"Por que Godot não usa STL (Standard Template Library, ou \n"
-"Biblioteca de Modelos Padrão)"
+"Por que Godot não usa STL (Standard Template Library, ou Biblioteca de "
+"Modelos Padrão)"
 
 #: ../../docs/about/faq.rst:296
 msgid ""
@@ -1535,15 +1541,14 @@ msgstr ""
 "Design, ou Design orientado a Dados)?"
 
 #: ../../docs/about/faq.rst:327
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
-"Embora Godot internamente, para muitas das tarefas de alto desempenho, tente "
-"usar a coerência do cache da melhor maneira possível, acreditamos que a "
-"maioria dos usuários não precisa realmente ser forçado a usar práticas de "
+"Enquanto Godot internamente, para muitas das tarefas de alto desempenho, "
+"tente usar a coerência do cache da melhor maneira possível, acreditamos que "
+"a maioria dos usuários não precisa realmente ser forçado a usar práticas de "
 "DoD."
 
 #: ../../docs/about/faq.rst:331
@@ -1581,7 +1586,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:346
 msgid "How can I support Godot development or contribute?"
-msgstr "Como eu posso ajudar o desenvolvimento de Godot ou contribuir?"
+msgstr "Como posso ajudar o desenvolvimento de Godot ou contribuir?"
 
 #: ../../docs/about/faq.rst:348
 msgid "See :ref:`doc_ways_to_contribute`."
@@ -1604,7 +1609,6 @@ msgid "Documentation changelog"
 msgstr "Alterações da Documentação"
 
 #: ../../docs/about/docs_changelog.rst:6
-#, fuzzy
 msgid ""
 "The documentation is continually being improved. The release of version 3.2 "
 "includes many new tutorials, many fixes and updates for old tutorials, and "
@@ -1612,9 +1616,9 @@ msgid ""
 "of new tutorials added since version 3.1."
 msgstr ""
 "Esta documentação está sendo continuamente melhorada. O lançamento da versão "
-"3.1 inclui muitos novos tutoriais, muitas correções e atualizações de "
+"3.2 inclui muitos novos tutoriais, muitas correções e atualizações de "
 "antigos tutoriais, e muitas atualizações das referências de classes. Abaixo "
-"está a lista dos novos tutoriais adicionados desde a versão 3.0."
+"está uma lista dos novos tutoriais adicionados desde a versão 3.1."
 
 #: ../../docs/about/docs_changelog.rst:11
 msgid ""
@@ -1638,7 +1642,7 @@ msgstr "Fluxo de trabalho do projeto"
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`doc_android_custom_build`"
-msgstr ":ref:`build personalizada android <doc_android_custom_build>`"
+msgstr ":ref:`doc_android_custom_build`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/about/docs_changelog.rst:134 ../../docs/tutorials/2d/index.rst:2
@@ -1647,7 +1651,7 @@ msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr ":ref:`animação de Sprite 2D <doc_2d_sprite_animation>`"
+msgstr ":ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:28
 #: ../../docs/tutorials/audio/index.rst:2
@@ -1660,19 +1664,19 @@ msgstr ":ref:`doc_recording_with_microphone`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`doc_sync_with_audio`"
-msgstr ":ref:`sincronização com o áudio <doc_sync_with_audio>`"
+msgstr ":ref:`doc_sync_with_audio`"
 
 #: ../../docs/about/docs_changelog.rst:34 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr "Math"
+msgstr "Matemática"
 
 #: ../../docs/about/docs_changelog.rst:36
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr ":ref:`Beziers e curves <doc_beziers_and_curves>`"
+msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid ":ref:`doc_interpolation`"
-msgstr ":ref:`Interpolação <doc_interpolation>`"
+msgstr ":ref:`doc_interpolation`"
 
 #: ../../docs/about/docs_changelog.rst:40
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -1681,7 +1685,7 @@ msgstr "Entradas"
 
 #: ../../docs/about/docs_changelog.rst:42
 msgid ":ref:`doc_input_examples`"
-msgstr ":ref:`Exemplos de entradas <doc_input_examples>`"
+msgstr ":ref:`doc_input_examples`"
 
 #: ../../docs/about/docs_changelog.rst:45 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
@@ -1689,13 +1693,13 @@ msgstr "Internacionalização"
 
 #: ../../docs/about/docs_changelog.rst:47
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr ":ref:`Localização usando gettext <doc_localization_using_gettext>`"
+msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:50
 #: ../../docs/about/docs_changelog.rst:170
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr "Sombreamento"
+msgstr "Criando Shaders"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid "Your First Shader Series:"
@@ -1703,25 +1707,23 @@ msgstr "Sua Primeira Série Shader:"
 
 #: ../../docs/about/docs_changelog.rst:53
 msgid ":ref:`doc_what_are_shaders`"
-msgstr ":ref:`O que são shaders? <doc_what_are_shaders>`"
+msgstr ":ref:`doc_what_are_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:54
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr ""
-":ref:`Seu primeiro shader CanvasItem <doc_your_first_canvasitem_shader>`"
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr ":ref:`Seu primeiro shader Spatial  <doc_your_first_spatial_shader>`"
+msgstr ":ref:`doc_your_first_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:56
 msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr ":ref:`Seu segundo shader Spatial <doc_your_second_spatial_shader>`"
+msgstr ":ref:`doc_your_second_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:57
-#, fuzzy
 msgid ":ref:`doc_visual_shaders`"
-msgstr ":ref:`Plugins de shader visual <doc_visual_shader_plugins>`"
+msgstr ":ref:`doc_visual_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:60
 #: ../../docs/tutorials/networking/index.rst:2
@@ -1730,7 +1732,7 @@ msgstr "Trabalho em rede"
 
 #: ../../docs/about/docs_changelog.rst:62
 msgid ":ref:`doc_webrtc`"
-msgstr ":ref:`WebRTC <doc_webrtc>`"
+msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:65 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
@@ -1738,13 +1740,11 @@ msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:67
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr ":ref:`Tutorial para iniciantes de VR <doc_vr_starter_tutorial>`"
+msgstr ":ref:`doc_vr_starter_tutorial_part_one`"
 
 #: ../../docs/about/docs_changelog.rst:68
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr ""
-":ref:`Tutorial de iniciante de VR (Parte 2) "
-"<doc_vr_starter_tutorial_part_two>`"
+msgstr ":ref:`doc_vr_starter_tutorial_part_two`"
 
 #: ../../docs/about/docs_changelog.rst:71
 #: ../../docs/about/docs_changelog.rst:185
@@ -1754,25 +1754,25 @@ msgstr "Plugins"
 
 #: ../../docs/about/docs_changelog.rst:73
 msgid ":ref:`doc_android_plugin`"
-msgstr ":ref:`Plugins Android <doc_android_plugin>`"
+msgstr ":ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:74
 msgid ":ref:`doc_inspector_plugins`"
-msgstr ":ref:`Plugins de inspetor <doc_inspector_plugins>`"
+msgstr ":ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:75
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr ":ref:`Plugins de shader visual <doc_visual_shader_plugins>`"
+msgstr ":ref:`doc_visual_shader_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:78
 #: ../../docs/about/docs_changelog.rst:196
 #: ../../docs/tutorials/threads/index.rst:2
 msgid "Multi-threading"
-msgstr "Multi-threading"
+msgstr "Múltiplas execuções (Multi-threading)"
 
 #: ../../docs/about/docs_changelog.rst:80
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr ":ref:`Utilizando threads múltiplos <doc_using_multiple_threads>`"
+msgstr ":ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:83
 #: ../../docs/about/docs_changelog.rst:201
@@ -2101,12 +2101,10 @@ msgstr ""
 ":ref: Binding de bibliotecas externas `doc_binding_to_external_libraries`"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
-#, fuzzy
 msgid "Introduction to Godot's editor"
 msgstr "Introdução ao editor do Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
-#, fuzzy
 msgid ""
 "This tutorial will run you through Godot's interface. We're going to look at "
 "the **Project Manager, docks, workspaces** and everything you need to know "
@@ -2114,7 +2112,7 @@ msgid ""
 msgstr ""
 "Este tutorial vai lhe apresentar a interface do Godot. Vamos dar uma olhada "
 "no **Gerenciador de Projetos, painéis, áreas de trabalho** e tudo que você "
-"precisa conhecer para começar a usar a engine."
+"precisa saber para começar a usar a engine."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
@@ -2224,8 +2222,8 @@ msgid ""
 "The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"Na próxima vez que abrir o Godot, você verá seu novo projeto na lista. Um "
-"duplo clique nele fará abri-lo no editor."
+"Na próxima vez que abrir o Gerenciador de Projetos, você verá seu novo "
+"projeto na lista. Um duplo clique nele fará abri-lo no editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -2244,20 +2242,18 @@ msgstr ""
 "confirmação."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
-#, fuzzy
 msgid "Your first look at Godot's editor"
-msgstr "Seu primeiro olhar no editor do Godot"
+msgstr "Seu primeiro olhar no editor da Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
 "Bem-vindo(a) ao Godot! Com seu projeto aberto, você verá a interface do "
-"editor com menus ao longo do topo da interface e painéis ao ao longo de "
-"ambas as extremidades laterais da janela de exibição."
+"editor com menus ao longo do topo da interface e painéis ao longo de ambas "
+"as extremidades laterais da janela de exibição."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
@@ -2268,21 +2264,20 @@ msgstr ""
 "as **workspaces** e os **botões de teste**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
-"O **Painel Arquivos** é onde você vai gerenciar seus recursos e arquivos do "
-"projeto."
+"O **Painel Arquivos(FileSystem dock)** é onde você vai gerenciar seus "
+"recursos e arquivos do projeto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
-#, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"O **Painél de Cenas** lista o conteúdo da cena ativa e o **Inspetor** "
-"permite o gerenciamento das propriedades do conteúdo da Cena."
+"O **Painél de Cenas(Scene dock)** lista o conteúdo da cena ativa e o "
+"**Inspetor(Inspector)** permite o gerenciamento das propriedades do conteúdo "
+"da Cena."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid ""
@@ -2401,7 +2396,6 @@ msgid "Modify the interface"
 msgstr "Modificar a interface"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
-#, fuzzy
 msgid ""
 "Godot's interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
@@ -3504,7 +3498,6 @@ msgstr ""
 "perfeitamente; tudo graças ao nosso uso de uma ponte de API C interna."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
-#, fuzzy
 msgid ""
 "This language is the best choice for performance and does not need to be "
 "used throughout an entire game, as other parts can be written in GDScript or "
@@ -3513,8 +3506,8 @@ msgid ""
 msgstr ""
 "Esta linguagem é a melhor escolha para performance e não precisa ser usada "
 "no jogo todo, já que outras partes podem ser escritas em GDScript ou Visual "
-"Script. Entretanto, a API é limpa e fácil de usar, porque se assemelha, em "
-"sua maior parte, à API C++ real do Godot."
+"Script. Entretanto, a API é clara e fácil de usar, porque se assemelha, em "
+"sua maior parte, à API C++ da Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
 msgid ""
@@ -5084,6 +5077,8 @@ msgid ""
 "``Attempt to call function 'play' in base 'null instance' on a null "
 "instance``"
 msgstr ""
+"``Tentativa de chamar a função 'play' na base 'instance null' em uma "
+"instância nula``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:359
 #, fuzzy
@@ -25684,8 +25679,9 @@ msgstr "Múltiplos espaços reservados"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:125
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
+#, fuzzy
 msgid "Placeholder"
-msgstr ""
+msgstr "Placeholder"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:127
 msgid "``%CLASS%``"
@@ -25948,7 +25944,7 @@ msgid ""
 msgstr ""
 "Este plugin pode ser utilizado para exportar cenas do Blender para um "
 "formato específico de cena do Godot chamado de ESCN, que é similar ao TSCN "
-"(formato de texto), mas será importado como binário SCN pela perfomance."
+"(formato de texto), mas será importado como SCN binário para desempenho."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:12
 msgid "Details on exporting"
@@ -26749,7 +26745,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
 msgid "Automatic reimport"
-msgstr "Reimporto Automático"
+msgstr "Reimportação Automática"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
@@ -30531,13 +30527,12 @@ msgstr ""
 "Linux e macOS, você pode encontrá-lo no diretório ``~/.android```)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:32
-#, fuzzy
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose::"
 msgstr ""
 "Se você não conseguir encontrá-lo ou precisar gerar um, o comando da "
-"ferramenta-chave do JDK pode ser usado para este objetivo:"
+"ferramenta-chave do JDK pode ser usado para este propósito::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:37
 msgid ""
@@ -30572,17 +30567,15 @@ msgstr ""
 "ele seja instalado no diretório do SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:47
-#, fuzzy
 msgid "Setting it up in Godot"
-msgstr "Configurando na Godot"
+msgstr "Configurando no Godot"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:49
-#, fuzzy
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
 "for the user account in the computer (it's independent of the project)."
 msgstr ""
-"Entrar na tela Configurações do Editor. Esta tela contém as configurações do "
+"Entre na tela Configurações do Editor. Esta tela contém as configurações do "
 "editor para a conta do usuário no computador (é independente do projeto)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:55
@@ -30597,16 +30590,14 @@ msgid "In that screen, the path to 3 files needs to be set:"
 msgstr "Nessa tela, o caminho para 3 arquivos precisa ser definido:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
-#, fuzzy
 msgid ""
 "The ``adb`` executable (``adb.exe`` on Windows) - It can usually be found at "
 "``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
 msgstr ""
 "O executável ``adb`` (``adb.exe`` no Windows) - Normalmente pode ser "
-"encontrado em ``%LOCALAPPDATA%`Android`Sdk``platform-tools`adb.exe``."
+"encontrado em ``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
-#, fuzzy
 msgid ""
 "The ``jarsigner`` executable (from JDK 6 or 8) - On Windows, OpenJDK "
 "installs to a dir like ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
@@ -30614,13 +30605,14 @@ msgid ""
 "usr/bin/jarsigner``. The exact path may vary depending on the OpenJDK update "
 "you've installed and your machine's operating system."
 msgstr ""
-"O executável ``jarsigner`` (do JDK 6 ou 8) - No Windows, o OpenJDK instala "
+"O executável ``jarsigner`` (do JDK 6 ou 8) - No Windows, o OpenJDK o instala "
 "para um diretório como ``%PROGRAMFILES%ojdkbuild\\java-1.8.0-"
-"openjdk-1.8.0.232-2\\bin``. O caminho exato pode variar dependendo da "
-"atualização do OpenJDK que você tenha instalado."
+"openjdk-1.8.0.232-2\\bin``. No Linux, ele tipicamente instala para um "
+"diretório como ``/usr/bin/jarsigner``.  O caminho exato pode variar "
+"dependendo da atualização do OpenJDK que você tenha instalado e do sistema "
+"operacional da sua máquina."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:67
-#, fuzzy
 msgid ""
 "The debug ``.keystore`` file - It can be found in the folder where you put "
 "the ``debug.keystore`` file you created above."
@@ -30629,7 +30621,6 @@ msgstr ""
 "coloca o arquivo ``debug.keystore``` que você criou acima."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:70
-#, fuzzy
 msgid "Once that is configured, everything is ready to export to Android!"
 msgstr "Uma vez configurado, tudo está pronto para exportar para o Android!"
 
@@ -30685,6 +30676,10 @@ msgid ""
 "designing-adaptive-icons-515af294c783>`_ that helps to understand those "
 "rules and some of the capabilities of adaptive icons."
 msgstr ""
+"É importante seguir algumas regras ao criar ícones adaptáveis. `O Google "
+"Design forneceu um bom artigo <https://medium.com/google-design/designing-"
+"adaptive-icons-515af294c783>` _ que ajuda a entender essas regras e alguns "
+"dos recursos dos ícones adaptáveis."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
 msgid ""
@@ -30692,29 +30687,42 @@ msgid ""
 "elements inside the safe zone: a centered circle with a diameter of 66dp "
 "(264 pixels on ``xxxhdpi``) to avoid being clipped by the launcher."
 msgstr ""
+"A regra de design de ícone adaptativo mais importante é ter partes "
+"importantes do seu ícone dentro da área segura: um círculo centralizado com "
+"um diâmetro de 66dp (264 pixels em ``xxxhdpi``) para evitar ser cortado pelo "
+"launcher."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
 msgid ""
 "If you don't provide some of the requested icons, Godot will replace them "
 "using a fallback chain, trying the next in line when the current one fails:"
 msgstr ""
+"Se você não fornecer alguns dos ícones solicitados, o Godot os substituirá "
+"usando uma cadeia de fallback, tentando a próxima na linha quando a atual "
+"falhar:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
 msgid ""
 "**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
 msgstr ""
+"**Ícone principal:** Ícone principal fornecido -> Ícone do projeto -> Ícone "
+"principal do Godot padrão."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:89
 msgid ""
 "**Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon "
 "-> Project icon -> Default Godot foreground icon."
 msgstr ""
+"**Ícone Adaptativo (frente)**: Ícone de frente fornecido -> Ícone principal "
+"fornecido -> Ícone do projeto -> Ícone principal do Godot padrão."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:90
 msgid ""
 "**Adaptive Icon Background:** Provided background icon -> Default Godot "
 "background icon."
 msgstr ""
+"**Ícone Adaptativo (verso):** Ícone de verso fornecido -> Ícone principal do "
+"Godot padrão."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
 msgid ""
@@ -30722,6 +30730,9 @@ msgid ""
 "the specified resolutions. Only this way your application will look great on "
 "all Android devices and versions."
 msgstr ""
+"É altamente recomendado fornecer todos os ícones requeridos, e ao menos com "
+"as resoluções especificadas. Só assim seu aplicativo vai parecer ótimo em "
+"todos os dispositivos Android e suas versões."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95
 msgid "Exporting for Google Play Store"
@@ -30732,6 +30743,8 @@ msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
 msgstr ""
+"Enviar um APK para a Play Store do Google requer que você o assine usando um "
+"arquivo keystore não-depuração; tal arquivo pode ser gerado assim:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:104
 msgid ""
@@ -30740,10 +30753,16 @@ msgid ""
 "guides to learn more about `APK signing <https://developer.android.com/"
 "studio/publish/app-signing>`__."
 msgstr ""
+"Este keystore e chave são usados para verificar sua identidade de "
+"desenvolvedor, lembre-se da senha e mantenha-a em um lugar seguro! Use os "
+"guias de Desenvolvedor Android do Google para aprender mais sobre `Assinar o "
+"app <https://developer.android.com/studio/publish/app-signing>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:107
 msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr ""
+"Agora preencha-o nos seguintes campos nas suas Predefinições de Exportação "
+"Android:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:111
 msgid "**Release:** Enter the path to the keystore file you just generated."
@@ -31037,7 +31056,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:99
 msgid "Exported ``.html`` file must not be reused"
-msgstr ""
+msgstr "Esse também o ícone que é mostrado na lista de projetos da Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid ""
@@ -31064,9 +31083,10 @@ msgid "Unimplemented functionality"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
+#, fuzzy
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
-msgstr ""
+msgstr "A funcionalidade seguinte está em indisponível na plataforma HTML5:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:7
@@ -31156,7 +31176,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid "Export options"
-msgstr ""
+msgstr "Opções de exportação"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:166
 msgid ""
@@ -31179,8 +31199,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
+#, fuzzy
 msgid "Calling JavaScript from script"
-msgstr ""
+msgstr "Chamando JavaScript por script"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:182
 msgid ""
@@ -31425,8 +31446,9 @@ msgid "Steps for one-click deploy"
 msgstr "Passos para implantação com um clique"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
+#, fuzzy
 msgid "Configure target platform."
-msgstr ""
+msgstr "Configurar plataforma-alvo."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:24
 msgid ""
@@ -31833,7 +31855,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
 msgid "Changing the taskbar icon"
-msgstr ""
+msgstr "Mudando o ícone da barra de tarefas"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
@@ -31849,11 +31871,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:22
 msgid "This is also the icon that gets displayed in the Godot project list."
-msgstr ""
+msgstr "Esse também o ícone que é mostrado na lista de projetos da Godot"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:27
 msgid "Changing the file icon"
-msgstr ""
+msgstr "Mudando o ícone do arquivo"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:29
 msgid ""
@@ -31899,7 +31921,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
 msgid "Testing the result"
-msgstr ""
+msgstr "Testando o resultado"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:64
 msgid ""
@@ -79047,18 +79069,23 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:243
+#, fuzzy
 msgid "Files are delivered with server-side chunked compression"
 msgstr ""
+"Os arquivos são entregues com compactação em pedaços por parte do servidor"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:244
 msgid "Files are delivered with server-side compression on Chromium"
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:245
+#, fuzzy
 msgid ""
 "Not all file downloads have started yet (usually on servers without multi-"
 "threading)"
 msgstr ""
+"Nem todos os downloads de arquivos começaram ainda(normalmente em servidores "
+"sem multi-threading )"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:248
 msgid ""
@@ -79314,8 +79341,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:137
+#, fuzzy
 msgid "Customizing the presentation"
-msgstr ""
+msgstr "Customizando a apresentação"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:138
 msgid ""
@@ -79400,7 +79428,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/consoles.rst:4
 msgid "Console support in Godot"
-msgstr "Suporte a Consoles em Godot"
+msgstr "Suporte para Consoles em Godot"
 
 #: ../../docs/tutorials/platform/consoles.rst:7
 msgid "Console publishing process"
@@ -79412,7 +79440,7 @@ msgid ""
 "game to a console platform is as follows:"
 msgstr ""
 "Independentemente do motor usado para criar o jogo, o processo para publicar "
-"um jogo para uma plataforma de console é a seguinte:"
+"um jogo para uma plataforma de console é o seguinte:"
 
 #: ../../docs/tutorials/platform/consoles.rst:12
 msgid ""
@@ -79435,8 +79463,8 @@ msgstr ""
 "Obter acesso à plataforma de publicação ao passar no processo de aceitação. "
 "Isso pode levar meses. Observe que este passo é significantemente mais fácil "
 "se uma publicadora estabelecida está apoiando seu jogo. A Nintendo é "
-"geralmente conhecida aceitar melhor desenvolvedores pequenos, mas isso não é "
-"garantido."
+"geralmente conhecida por aceitar melhor desenvolvedores pequenos, mas isso "
+"não é garantido."
 
 #: ../../docs/tutorials/platform/consoles.rst:19
 msgid ""
@@ -90119,7 +90147,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:4
 msgid "Ways to contribute"
-msgstr ""
+msgstr "Maneiras de contribuir"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:6
 msgid ""

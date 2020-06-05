@@ -8,22 +8,26 @@
 # jakub zukal <jakubzukal@email.cz>, 2018.
 # Josef Kuchař <josef.kuchar267@gmail.com>, 2018.
 # Luboš Nečas <lubosnecas506@seznam.cz>, 2019.
+# markidak <markidak@gmail.com>, 2020.
 # Martin Novák <maidx@seznam.cz>, 2019.
 # Miroslav Kotalík <mikotalik@seznam.cz>, 2019.
 # Ondrej Pavelka <ondrej.pavelka@outlook.com>, 2020.
 # SharpCat <mix9k846@gmail.com>, 2019.
 # Validbit <validbit@outlook.com>, 2020.
 # Vít Petričák <v.petricak@gmail.com>, 2018.
+# VladimirBlazek <vblazek042@gmail.com>, 2020.
 # Vladimír Machat <machat.v@gmail.com>, 2019.
+# VojtechBrezina <vojta.brezina@gmail.com>, 2020.
 # Vojtěch Šamla <auzkok@seznam.cz>, 2018-2020.
+# Zbyněk <zbynek.fiala@gmail.com>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-05-27 13:49+0200\n"
-"PO-Revision-Date: 2020-05-20 14:07+0000\n"
-"Last-Translator: Ondrej Pavelka <ondrej.pavelka@outlook.com>\n"
+"PO-Revision-Date: 2020-06-05 15:30+0000\n"
+"Last-Translator: VladimirBlazek <vblazek042@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
 "Language: cs\n"
@@ -34,9 +38,8 @@ msgstr ""
 "X-Generator: Weblate 4.1-dev\n"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.2* branch"
-msgstr "Godot Dokumentace – *master* větev"
+msgstr "Godot Dokumentace – *3.2* větev"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -48,7 +51,6 @@ msgstr ""
 "zobrazení seznamu."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.2 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -56,9 +58,10 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
-"Zde je dokumentace pro vývojovou (master) větev. Hledáte dokumentaci pro "
-"aktuální **stable** větev? Podívejte se zde <https://docs.godotengine.org/en/"
-"stable>`_."
+"Zde je dokumentace pro stabilní 3.2 větev. Hledáte dokumentaci pro aktuální "
+"**stable** větev? Podívejte se zde <https://docs.godotengine.org/en/"
+"stable>`_. Také můžete prohlížet dokumentaci pro předešlou stabilní `3.1 "
+"<https://docs.godotengine.org/en/3.1>`_ vetěv."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -91,7 +94,6 @@ msgstr ""
 "přesto jsou vhodné k učení jak používat stable verzi Godotu."
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -99,10 +101,10 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"Vítejete v officialní dokumentaci Godot Engine, svobodném a open source "
-"komunitou poháněném 2D a 3D herním enginu! Jste-li zde poprvé, doporučujeme "
-"prečíst si :ref:`introduction page <doc_about_intro>` pro lepší představu co "
-"tato dokumentace nabízí."
+"Vítejete v officialní dokumentaci `Godot Engine <https://godotengine."
+"org>`__, svobodném a open source komunitou poháněném 2D a 3D herním enginu! "
+"Jste-li zde poprvé, doporučujeme prečíst si :ref:`introduction page "
+"<doc_about_intro>` pro lepší představu co tato dokumentace nabízí."
 
 #: ../../docs/index.rst:37
 msgid ""
@@ -173,9 +175,8 @@ msgid "Community"
 msgstr "Komunita"
 
 #: ../../docs/index.rst:131
-#, fuzzy
 msgid "Class reference"
-msgstr "Podmínka"
+msgstr "Dokumentace tříd"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
@@ -412,7 +413,6 @@ msgid "Organization of the documentation"
 msgstr "Organizace této dokumentace"
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
@@ -458,6 +458,9 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
+"\"sec-devel\" sekce je určena pro pokročilé uživatele a přispivatele do "
+"zdrojového kódu Godot enginu. Tato sekce obsahuje informace ohledně "
+"kompilování enginu, tvorby modulů v C++, nebo pluginů editoru."
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -476,6 +479,11 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
+"A konečně :ref: 'sec-class-ref' je dokumentace ke Godot API, která je také "
+"dostupná přímo v editoru skrpitů v engine. Je automaticky generovaná ze "
+"souboru v hlavním zdrojovém repozitáři, takže generované soubory v "
+"dokumentaci by se nemeli modifikovat. Pro více informací viz zde :ref:"
+"`doc_updating_the_class_reference`"
 
 #: ../../docs/about/introduction.rst:107
 msgid ""
@@ -1213,9 +1221,8 @@ msgid "2D"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:25
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr "Animace"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:28
 #: ../../docs/tutorials/audio/index.rst:2
@@ -1223,28 +1230,24 @@ msgid "Audio"
 msgstr "Zvuk"
 
 #: ../../docs/about/docs_changelog.rst:30
-#, fuzzy
 msgid ":ref:`doc_recording_with_microphone`"
-msgstr "Animace"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:31
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr "Animace"
+msgstr ":ref:`doc_sync_with_audio`"
 
 #: ../../docs/about/docs_changelog.rst:34 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr ""
+msgstr "Matematika"
 
 #: ../../docs/about/docs_changelog.rst:36
-#, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr "Částice"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:37
-#, fuzzy
 msgid ":ref:`doc_interpolation`"
-msgstr "Animace"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:40
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -1252,18 +1255,16 @@ msgid "Inputs"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:42
-#, fuzzy
 msgid ":ref:`doc_input_examples`"
-msgstr "Částice"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:45 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:47
-#, fuzzy
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr "Lokalizace"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:50
 #: ../../docs/about/docs_changelog.rst:170
@@ -1292,9 +1293,8 @@ msgid ":ref:`doc_your_second_spatial_shader`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:57
-#, fuzzy
 msgid ":ref:`doc_visual_shaders`"
-msgstr "Pluginy"
+msgstr ":ref:`doc_visual_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:60
 #: ../../docs/tutorials/networking/index.rst:2
@@ -1302,23 +1302,20 @@ msgid "Networking"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:62
-#, fuzzy
 msgid ":ref:`doc_webrtc`"
-msgstr "Částice"
+msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:65 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:67
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr "Animace"
+msgstr ":ref:`doc_vr_starter_tutorial_part_one`"
 
 #: ../../docs/about/docs_changelog.rst:68
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr "Animace"
+msgstr ":ref:`doc_vr_starter_tutorial_part_two`"
 
 #: ../../docs/about/docs_changelog.rst:71
 #: ../../docs/about/docs_changelog.rst:185
@@ -1327,19 +1324,16 @@ msgid "Plugins"
 msgstr "Pluginy"
 
 #: ../../docs/about/docs_changelog.rst:73
-#, fuzzy
 msgid ":ref:`doc_android_plugin`"
-msgstr "Pluginy"
+msgstr ":ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:74
-#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr "Pluginy"
+msgstr ":ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:75
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr "Pluginy"
+msgstr ":ref:`doc_visual_shader_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:78
 #: ../../docs/about/docs_changelog.rst:196
@@ -1348,14 +1342,12 @@ msgid "Multi-threading"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:80
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr "Částice"
+msgstr ":ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:83
 #: ../../docs/about/docs_changelog.rst:201
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
 msgstr "Vytváření obsahu"
 
@@ -1364,35 +1356,29 @@ msgid "Procedural geometry series:"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:86
-#, fuzzy
 msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr "Částice"
+msgstr ":ref:`Procedural geometry <toc-procedural_geometry>`"
 
 #: ../../docs/about/docs_changelog.rst:87
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr "Částice"
+msgstr ":ref:`doc_arraymesh`"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`doc_surfacetool`"
-msgstr "Částice"
+msgstr ":ref:`doc_surfacetool`"
 
 #: ../../docs/about/docs_changelog.rst:89
-#, fuzzy
 msgid ":ref:`doc_meshdatatool`"
-msgstr "Částice"
+msgstr ":ref:`doc_meshdatatool`"
 
 #: ../../docs/about/docs_changelog.rst:90
-#, fuzzy
 msgid ":ref:`doc_immediategeometry`"
-msgstr "Částice"
+msgstr ":ref:`doc_immediategeometry`"
 
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "Animace"
+msgstr "Optimalizace"
 
 #: ../../docs/about/docs_changelog.rst:95
 msgid ":ref:`doc_using_multimesh`"
@@ -1454,9 +1440,8 @@ msgid ":ref:`doc_what_are_godot_classes`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`doc_scene_organization`"
-msgstr "Animace"
+msgstr ":ref:`doc_scene_organization`"
 
 #: ../../docs/about/docs_changelog.rst:125
 msgid ":ref:`doc_scenes_versus_scripts`"
@@ -1475,9 +1460,8 @@ msgid ":ref:`doc_godot_interfaces`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:129
-#, fuzzy
 msgid ":ref:`doc_godot_notifications`"
-msgstr "Podmínka"
+msgstr ":ref:`doc_godot_notifications`"
 
 #: ../../docs/about/docs_changelog.rst:130
 msgid ":ref:`doc_data_preferences`"
@@ -1594,14 +1578,12 @@ msgid ":ref:`doc_canvas_item_shader`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:182
-#, fuzzy
 msgid ":ref:`doc_particle_shader`"
-msgstr "Částice"
+msgstr ":ref:`doc_particle_shader`"
 
 #: ../../docs/about/docs_changelog.rst:187
-#, fuzzy
 msgid ":ref:`doc_making_main_screen_plugins`"
-msgstr "Animace"
+msgstr ":ref:`doc_making_main_screen_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:188
 msgid ":ref:`doc_spatial_gizmo_plugins`"
@@ -1674,9 +1656,8 @@ msgid ":ref:`doc_binding_to_external_libraries`"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
-#, fuzzy
 msgid "Introduction to Godot's editor"
-msgstr "Představení"
+msgstr "Úvod do Godotova editoru"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1924,6 +1905,9 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"Představ si na chvilku, že nejsi herní vývojář. Jsi prostě kuchař! Vyměň jsi "
+"svůj hipsterský obječek za chuchařský čepec a dvouřadé sako. Teď, místo "
+"vytváření her, tvoříš nové a chutné recpty pro své hosty."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -1932,6 +1916,9 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
+"Tak, jak kuchař vytváří předpis? Předpisy jsou rozděleny do dvou částí: v "
+"první jsou přísady a ve druhé postup jak pokrm připravit. Takhle může "
+"kdokoliv postupovat podle receptu a kochat se tvým velkolepým výkonem."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -1939,19 +1926,24 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
+"Vytváření her v Godotu je nemlich to samé. Používání enginu je jako být v "
+"kuchyni. V této kuchyni jsou \"uzly\" jako lednička plná čerstvých přísad ze "
+"kterých se vaří."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
+"Existuje mnoho typů uzlů. Některé zobrazí obrázky jiné přehrávají zvuky, "
+"další uzly zobrazují 3D modely atd. Jsou jich mraky."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:101
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:46
 #: ../../docs/development/file_formats/tscn.rst:26
 msgid "Nodes"
-msgstr ""
+msgstr "Uzly"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -1960,32 +1952,37 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
+"Ale začněme od Adama. Uzly jsou základní stavební bloky pro vytvoření hry. "
+"Tak jak už bylo řečeno, uzel může vykonávat velké množství speciálních "
+"funkcí. Avšak libovolný uzel má vždycky následůjící vlastnosti (atributy):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr ""
+msgstr "Má jméno."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr ""
+msgstr "Má editovatelné vlastnosti."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
-msgstr ""
+msgstr "Může obdržet pokyn (callback), aby zpracoval každý snímek (frame)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr ""
+msgstr "Může být rozšířen o další funkce."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to another node as a child."
-msgstr ""
+msgstr "Může být přidán do dalšího uzlu jako jeho potomek."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
+"Ta poslední vlastnost (dědičnost) je obzvlášť důležitá. Uzly mohou mít jiné "
+"uzly jako potomky. Takové uspořádání uzlů nazýváme \"stromem\"."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -1993,6 +1990,9 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
+"V Godotu představuje možnost seskupovat uzly do stromů mocný nástroj pro "
+"organizování herního projektu. Protože ruzné uzly umí různé funkce, jejich "
+"kombinováním můžeme vytvořit komplexnější chování a nakonec celou hru."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -2000,10 +2000,13 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
+"Jestli ti to teď nedává zrovínka dvakrát smysl, nic si s toho nedělej. "
+"Nejdůležitější je si uvědomit, že v Godotu existují uzly a že se dají "
+"seskupovat (do stromů)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
-msgstr ""
+msgstr "Scény"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
@@ -3243,9 +3246,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:1
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:1
-#, fuzzy
 msgid "Signal"
-msgstr "Signály"
+msgstr "Signál"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1296
@@ -3405,9 +3407,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:171
-#, fuzzy
 msgid "Custom signals"
-msgstr "Signály"
+msgstr "Vlastní signály"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:173
 msgid "You can also declare your own custom signals in Godot:"
@@ -3615,9 +3616,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:108
-#, fuzzy
 msgid "Sprite animation"
-msgstr "Animace"
+msgstr "Animace spritu"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
@@ -3847,9 +3847,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:364
-#, fuzzy
 msgid "Choosing animations"
-msgstr "Animace"
+msgstr "Výběr animací"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:366
 msgid ""
@@ -3971,9 +3970,8 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:543
-#, fuzzy
 msgid "Node setup"
-msgstr "Cesta ke zdroji"
+msgstr "Nastavení uzlu"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:545
 msgid "Click Scene -> New Scene and add the following nodes:"
@@ -4044,14 +4042,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:582
-#, fuzzy
 msgid "Save the scene."
-msgstr "Hlavní scéna"
+msgstr "Ulož scénu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
-#, fuzzy
 msgid "Enemy script"
-msgstr "Popis"
+msgstr "Skript nepřítele"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid "Add a script to the ``Mob`` and add the following member variables:"
@@ -4103,7 +4099,6 @@ msgid "This completes the `Mob` scene."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:667
-#, fuzzy
 msgid "Main scene"
 msgstr "Hlavní scéna"
 
@@ -4282,9 +4277,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:905
-#, fuzzy
 msgid "Testing the scene"
-msgstr "Vytváření obsahu"
+msgstr "Testování scény"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:907
 msgid ""
@@ -4440,9 +4434,8 @@ msgid "*Align* : \"Center\""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1006
-#, fuzzy
 msgid "Message"
-msgstr "Používání"
+msgstr "Zpráva"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1008
 msgid "*Layout* : \"HCenter Wide\""
@@ -4789,9 +4782,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:240
-#, fuzzy
 msgid "Setting a main scene"
-msgstr "Animace"
+msgstr "Nastavení hlavní scény"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
@@ -4828,9 +4820,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:265
-#, fuzzy
 msgid "Export presets"
-msgstr "Exportovat"
+msgstr "Exportovat přednastavení"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:267
 msgid ""
@@ -5241,9 +5232,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
-#, fuzzy
 msgid "Open source"
-msgstr "Zdroje"
+msgstr "Open source"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
 msgid ""
@@ -9100,9 +9090,8 @@ msgid "Editor manual"
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
-#, fuzzy
 msgid "From Unity to Godot Engine"
-msgstr "O Godot Engine"
+msgstr "Od Unity k Godot Enginu"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:10
 msgid ""
@@ -9652,9 +9641,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:230
-#, fuzzy
 msgid "Script serialization"
-msgstr "Animace"
+msgstr "Serializace skriptů"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:232
 msgid "Unity can handle script serialization in two ways:"
@@ -9721,9 +9709,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
-#, fuzzy
 msgid "Command line reference"
-msgstr "Podmínka"
+msgstr "Reference pro příkazový řádek"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
 msgid "**General options**"
@@ -10515,9 +10502,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:21
-#, fuzzy
 msgid "General Editor Actions"
-msgstr "Editor"
+msgstr "Obecné akce editoru"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -10533,9 +10519,8 @@ msgstr "Editor"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:461
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
-#, fuzzy
 msgid "Action name"
-msgstr "Akce"
+msgstr "Název akce"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -10568,14 +10553,12 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:461
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
-#, fuzzy
 msgid "Editor setting"
-msgstr "Editor"
+msgstr "Nastavení editoru"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-#, fuzzy
 msgid "Open 2D Editor"
-msgstr "Editor"
+msgstr "Otevřít 2D Editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
@@ -10590,9 +10573,8 @@ msgid "``editor/editor_2d``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-#, fuzzy
 msgid "Open 3D Editor"
-msgstr "Editor"
+msgstr "Otevřít 3D Editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -10608,7 +10590,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr ""
+msgstr "Otevřít Editor Skriptů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
@@ -10626,24 +10608,23 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr ""
+msgstr "Prohledat nápovědu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
-msgstr ""
+msgstr ":kbd:`Shift + F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Alt + Space`"
-msgstr ""
+msgstr ":kbd:`Alt + Space`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "``editor/editor_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
-#, fuzzy
 msgid "Distraction Free Mode"
-msgstr "Animace"
+msgstr "Nerozptylující režitm"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
@@ -10659,7 +10640,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
-msgstr ""
+msgstr "Další panel"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
@@ -10675,7 +10656,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
-msgstr ""
+msgstr "Předchozí tab"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -10706,9 +10687,8 @@ msgid "``editor/filter_files``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
-#, fuzzy
 msgid "Open Scene"
-msgstr "Zdroje"
+msgstr "Otevřít scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -10724,7 +10704,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "Close Scene"
-msgstr ""
+msgstr "Zavřít scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -10740,7 +10720,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "Znovu otevřít zavřenou scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
@@ -10757,9 +10737,8 @@ msgid "``editor/reopen_closed_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
-#, fuzzy
 msgid "Save Scene"
-msgstr "Hlavní scéna"
+msgstr "Uložit scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -10791,7 +10770,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
-msgstr ""
+msgstr "Uložit všechny scény"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
@@ -10854,7 +10833,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "Undo"
-msgstr ""
+msgstr "Zpět"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -10873,7 +10852,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "Redo"
-msgstr ""
+msgstr "Znovu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -10889,7 +10868,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
-msgstr ""
+msgstr "Ukončit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
@@ -10905,7 +10884,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "Quit to Project List"
-msgstr ""
+msgstr "Ukončit do seznamu projektů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -10921,7 +10900,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Vytvořit snímek obrazovky"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
@@ -10937,7 +10916,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Přepnout celou obrazovku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -10953,7 +10932,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
-msgstr ""
+msgstr "Hrát"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
@@ -10971,7 +10950,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "Pause Scene"
-msgstr ""
+msgstr "Pozastavit scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
@@ -10987,7 +10966,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "Stop"
-msgstr ""
+msgstr "Stop"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
@@ -11003,9 +10982,8 @@ msgid "``editor/stop``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
-#, fuzzy
 msgid "Play Scene"
-msgstr "Hlavní scéna"
+msgstr "Přehrát scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -11021,9 +10999,8 @@ msgid "``editor/play_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
-#, fuzzy
 msgid "Play Custom Scene"
-msgstr "Signály"
+msgstr "Přehrát upravenou scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -11058,7 +11035,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "Zoom In"
-msgstr ""
+msgstr "Zvětšit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -11077,7 +11054,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "Zoom Out"
-msgstr ""
+msgstr "Změnšit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -11095,7 +11072,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "Zoom Reset"
-msgstr ""
+msgstr "Obnovení lupy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
@@ -11126,7 +11103,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid "Select Mode"
-msgstr ""
+msgstr "Režim výběru"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
@@ -11141,7 +11118,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 msgid "Move Mode"
-msgstr ""
+msgstr "Režim přesouvání"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
@@ -11157,7 +11134,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid "Rotate Mode"
-msgstr ""
+msgstr "Režim otáčení"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
@@ -11172,7 +11149,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid "Scale Mode"
-msgstr ""
+msgstr "Režim škálování"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
@@ -11186,7 +11163,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 msgid "Ruler Mode"
-msgstr ""
+msgstr "Režim pravítka"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
@@ -11199,7 +11176,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "Use Smart Snap"
-msgstr ""
+msgstr "Použít chytré přichycování"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
@@ -11260,7 +11237,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid "Show Helpers"
-msgstr ""
+msgstr "Zobrazit pomocníky"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid ":kbd:`H`"
@@ -11272,7 +11249,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "Show Guides"
-msgstr ""
+msgstr "Zobrazit vodítka"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
@@ -11285,7 +11262,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 msgid "Center Selection"
-msgstr ""
+msgstr "Vycentrovat výběr"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
@@ -11298,7 +11275,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "Frame Selection"
-msgstr ""
+msgstr "Výběr snímku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
@@ -11327,7 +11304,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
-msgstr ""
+msgstr "Vložit klíč"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -11339,7 +11316,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "Insert Key (Existing Tracks)"
-msgstr ""
+msgstr "Vložit klíč (existující stopy)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid ":kbd:`Ctrl + Ins`"
@@ -11374,7 +11351,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "Clear Pose"
-msgstr ""
+msgstr "Vymazat pózu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid ":kbd:`Shift + K`"
@@ -11390,7 +11367,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "Toggle Freelook"
-msgstr ""
+msgstr "Přepnout volný pohled"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "``spatial_editor/freelook_toggle``"
@@ -11398,7 +11375,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 msgid "Freelook Left"
-msgstr ""
+msgstr "Volný pohled doleva"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
@@ -11411,7 +11388,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid "Freelook Right"
-msgstr ""
+msgstr "Volný pohled doprava"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid ":kbd:`D`"
@@ -11423,7 +11400,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "Freelook Forward"
-msgstr ""
+msgstr "Volný pohled vpřed"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "``spatial_editor/freelook_forward``"
@@ -11431,7 +11408,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "Freelook Backwards"
-msgstr ""
+msgstr "Volný pohled dozadu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "``spatial_editor/freelook_backwards``"
@@ -11439,7 +11416,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "Freelook Up"
-msgstr ""
+msgstr "Volný pohled nahoru"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "``spatial_editor/freelook_up``"
@@ -11447,7 +11424,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "Freelook Down"
-msgstr ""
+msgstr "Volný pohled dolů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "``spatial_editor/freelook_down``"
@@ -11455,7 +11432,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid "Freelook Speed Modifier"
-msgstr ""
+msgstr "Rychlost volného pohledu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid ":kbd:`Shift`"
@@ -11508,7 +11485,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "Use Snap"
-msgstr ""
+msgstr "Použít přichycování"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
@@ -11529,7 +11506,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "Top View"
-msgstr ""
+msgstr "Pohled shora"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid ":kbd:`Num 7`"
@@ -11541,7 +11518,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "Bottom View"
-msgstr ""
+msgstr "Pohled zdola"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid ":kbd:`Alt + Num 7`"
@@ -11553,7 +11530,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "Front View"
-msgstr ""
+msgstr "Pohled zepředu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid ":kbd:`Num 1`"
@@ -11565,7 +11542,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "Rear View"
-msgstr ""
+msgstr "Pohled zezadu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid ":kbd:`Alt + Num 1`"
@@ -11577,7 +11554,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "Right View"
-msgstr ""
+msgstr "Pohled zprava"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid ":kbd:`Num 3`"
@@ -11589,7 +11566,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "Left View"
-msgstr ""
+msgstr "Pohled zleva"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid ":kbd:`Alt + Num 3`"
@@ -11612,9 +11589,8 @@ msgid "``spatial_editor/switch_perspective_orthogonal``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
-#, fuzzy
 msgid "Insert Animation Key"
-msgstr "Animace"
+msgstr "Vložit animační klíč"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid ":kbd:`K`"
@@ -11626,7 +11602,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid "Focus Origin"
-msgstr ""
+msgstr "Zaměřit počátek"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid ":kbd:`O`"
@@ -11638,7 +11614,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "Focus Selection"
-msgstr ""
+msgstr "Zaměřit výběr"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "``spatial_editor/focus_selection``"
@@ -11679,7 +11655,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "1 Viewport"
-msgstr ""
+msgstr "1 výřez"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Ctrl + 1`"
@@ -11695,7 +11671,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid "2 Viewports"
-msgstr ""
+msgstr "2 výřezy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Ctrl + 2`"
@@ -11711,7 +11687,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid "2 Viewports (Alt)"
-msgstr ""
+msgstr "2 výřezy (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Ctrl + Alt + 2`"
@@ -11727,7 +11703,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid "3 Viewports"
-msgstr ""
+msgstr "3 výřezy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Ctrl + 3`"
@@ -11743,7 +11719,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid "3 Viewports (Alt)"
-msgstr ""
+msgstr "3 výřezy (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Ctrl + Alt + 3`"
@@ -11759,7 +11735,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "4 Viewports"
-msgstr ""
+msgstr "4 výřezy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Ctrl + 4`"
@@ -11774,13 +11750,12 @@ msgid "``spatial_editor/4_viewports``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:214
-#, fuzzy
 msgid "Text Editor"
-msgstr "Editor"
+msgstr "Textový editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "Cut"
-msgstr ""
+msgstr "Vyjmout"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
@@ -11800,7 +11775,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "Kopírovat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -11826,7 +11801,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "Paste"
-msgstr ""
+msgstr "Vložit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
@@ -11844,7 +11819,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "Select All"
-msgstr ""
+msgstr "Vybrat vše"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
@@ -11886,7 +11861,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid "Find Next"
-msgstr ""
+msgstr "Najít další"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
@@ -11900,7 +11875,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid "Find Previous"
-msgstr ""
+msgstr "Najít předchozí"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
@@ -11917,9 +11892,8 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
-#, fuzzy
 msgid "Find in Files"
-msgstr "Pluginy"
+msgstr "Najít v souborech"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
@@ -11937,7 +11911,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "Nahradit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -11985,7 +11959,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid "Move Up"
-msgstr ""
+msgstr "Přesunout nahoru"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
@@ -12000,7 +11974,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid "Move Down"
-msgstr ""
+msgstr "Přesunout dolů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid ":kbd:`Alt + Down Arrow`"
@@ -12012,7 +11986,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "Delete Line"
-msgstr ""
+msgstr "Odstranit řádek"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
@@ -12030,7 +12004,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "Toggle Comment"
-msgstr ""
+msgstr "Přepnout komentář"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Ctrl + K`"
@@ -12046,7 +12020,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "Fold/Unfold Line"
-msgstr ""
+msgstr "Složit/Rozložit řádek"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
@@ -12107,7 +12081,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid "Trim Trailing Whitespace"
-msgstr ""
+msgstr "Osekat koncové mezery"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid ":kbd:`Ctrl + Alt + T`"
@@ -12123,7 +12097,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "Uppercase"
-msgstr ""
+msgstr "Velká písmena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid ":kbd:`Shift + F4`"
@@ -12135,7 +12109,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "Lowercase"
-msgstr ""
+msgstr "Malá písmena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid ":kbd:`Shift + F5`"
@@ -12147,7 +12121,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "Capitalize"
-msgstr ""
+msgstr "Velká písmena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid ":kbd:`Shift + F6`"
@@ -12158,9 +12132,8 @@ msgid "``script_text_editor/capitalize``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
-#, fuzzy
 msgid "Convert Indent to Spaces"
-msgstr "Typ"
+msgstr "Převést odsazení na mezery"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Ctrl + Shift + Y`"
@@ -12176,7 +12149,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "Convert Indent to Tabs"
-msgstr ""
+msgstr "Převést odsazení na taby"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Ctrl + Shift + I`"
@@ -12192,7 +12165,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "Auto Indent"
-msgstr ""
+msgstr "Automatické odsazení"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Ctrl + I`"
@@ -12243,9 +12216,8 @@ msgid "``script_text_editor/goto_previous_bookmark``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
-#, fuzzy
 msgid "Go to Function"
-msgstr "Funkce"
+msgstr "Přejít na funkci"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
@@ -12257,7 +12229,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr ""
+msgstr "Jít na řádek"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -12274,7 +12246,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid "Toggle Breakpoint"
-msgstr ""
+msgstr "Přepnout breakpoint"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
@@ -12287,7 +12259,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "Remove All Breakpoints"
-msgstr ""
+msgstr "Odstranit všechny breakpointy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
@@ -12303,7 +12275,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid "Go to Next Breakpoint"
-msgstr ""
+msgstr "Přejít na další breakpoint"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid ":kbd:`Ctrl + .`"
@@ -12315,7 +12287,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "Go to Previous Breakpoint"
-msgstr ""
+msgstr "Přejít na předchozí breakpoint"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Ctrl + ,`"
@@ -12331,7 +12303,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "Contextual Help"
-msgstr ""
+msgstr "Kontextová nápověda"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + F1`"
@@ -12346,9 +12318,8 @@ msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
-#, fuzzy
 msgid "Script Editor"
-msgstr "Cesta ke zdroji"
+msgstr "Editor skriptů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -12383,9 +12354,8 @@ msgid "``script_editor/window_move_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
-#, fuzzy
 msgid "Next Script"
-msgstr "Popis"
+msgstr "Další skript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Ctrl + Shift + .`"
@@ -12417,7 +12387,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "Reopen Closed Script"
-msgstr ""
+msgstr "Znovu otevřít zavřený skript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "``script_editor/reopen_closed_script``"
@@ -12425,7 +12395,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
-msgstr ""
+msgstr "Uložit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
@@ -12441,7 +12411,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "Save All"
-msgstr ""
+msgstr "Uložit vše"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "``script_editor/save_all``"
@@ -12449,7 +12419,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "Soft Reload Script"
-msgstr ""
+msgstr "Lehký restart skriptu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "``script_editor/reload_script_soft``"
@@ -12457,7 +12427,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 msgid "History Previous"
-msgstr ""
+msgstr "Historie předchozí"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
@@ -12470,7 +12440,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 msgid "History Next"
-msgstr ""
+msgstr "Historie další"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
@@ -12483,7 +12453,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
-msgstr ""
+msgstr "Zavřít"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
@@ -12516,7 +12486,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
-msgstr ""
+msgstr "Přepnout panel skriptů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
@@ -12540,7 +12510,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr ""
+msgstr "Obnovit původní přiblížení"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -12552,7 +12522,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
-msgstr ""
+msgstr "Vyhledat typ uzlu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "``visual_script_editor/find_node_type``"
@@ -12560,7 +12530,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "Copy Nodes"
-msgstr ""
+msgstr "Zkopírovat uzly"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
@@ -12568,16 +12538,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "Cut Nodes"
-msgstr ""
+msgstr "Vyjmout uzly"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "``visual_script_editor/cut_nodes``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
-#, fuzzy
 msgid "Paste Nodes"
-msgstr "Částice"
+msgstr "Vložit uzly"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "``visual_script_editor/paste_nodes``"
@@ -12585,7 +12554,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "Delete Selected"
-msgstr ""
+msgstr "Smazat vybraný"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -12610,9 +12579,8 @@ msgid "``visual_script_editor/delete_selected``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
-#, fuzzy
 msgid "Make Function"
-msgstr "Funkce"
+msgstr "Vytvořit funkci"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
@@ -12623,9 +12591,8 @@ msgid "``visual_script_editor/create_function``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
-#, fuzzy
 msgid "Edit Member"
-msgstr "Členové"
+msgstr "Upravit členy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid ":kbd:`Ctrl + E`"
@@ -12641,7 +12608,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "Refresh Graph"
-msgstr ""
+msgstr "Obnovit graf"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "``visual_script_editor/refresh_nodes``"
@@ -12652,14 +12619,13 @@ msgid "``visual_script_editor/toggle_breakpoint``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:367
-#, fuzzy
 msgid "Editor Output"
-msgstr "Editor"
+msgstr "Výstup editoru"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid "Copy Selection"
-msgstr ""
+msgstr "Kopírovat výběr"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 msgid "``editor/copy_output``"
@@ -12667,7 +12633,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "Clear Output"
-msgstr ""
+msgstr "Vymazat výstup"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "``editor/clear_output``"
@@ -12680,7 +12646,7 @@ msgstr "Ladicí program"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "Step Into"
-msgstr ""
+msgstr "Vstoupit do"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid ":kbd:`F11`"
@@ -12692,7 +12658,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "Step Over"
-msgstr ""
+msgstr "Přeskočit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid ":kbd:`F10`"
@@ -12703,9 +12669,8 @@ msgid "``debugger/step_over``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
-#, fuzzy
 msgid "Continue"
-msgstr "Typ"
+msgstr "Pokračovat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid ":kbd:`F12`"
@@ -12721,7 +12686,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "Jít zpět"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -12729,7 +12694,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr ""
+msgstr "Jit dopředu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
@@ -12737,7 +12702,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr ""
+msgstr "Jít o úroveň výš"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
@@ -12745,7 +12710,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
-msgstr ""
+msgstr "Obnovit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
@@ -12753,7 +12718,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "Zobrazit skryté soubory"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -12769,7 +12734,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "Zobrazit oblíbené"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -12777,7 +12742,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr ""
+msgstr "Přepnout režim"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -12788,9 +12753,8 @@ msgid "``file_dialog/toggle_mode``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
-#, fuzzy
 msgid "Create Folder"
-msgstr "Iterátor"
+msgstr "Vytvořit složku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -12808,16 +12772,15 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "Delete"
-msgstr ""
+msgstr "Odstranit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
-#, fuzzy
 msgid "Focus Path"
-msgstr "Cesta ke zdroji"
+msgstr "Zvýraznit cestu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
@@ -12832,7 +12795,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
-msgstr ""
+msgstr "Přesunout oblíbenou položku nahoru"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
@@ -12850,7 +12813,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
-msgstr ""
+msgstr "Přesunout oblíbenou položku dolů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
@@ -12871,9 +12834,8 @@ msgid "FileSystem Dock"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
-#, fuzzy
 msgid "Copy Path"
-msgstr "Cesta"
+msgstr "Kopírovat cestu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -12882,7 +12844,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplikovat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -12898,7 +12860,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "Add Child Node"
-msgstr ""
+msgstr "Přidat podřízený uzel"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "``scene_tree/add_child_node``"
@@ -12906,7 +12868,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "Batch Rename"
-msgstr ""
+msgstr "Dávkové přejmenování"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Ctrl + F2`"
@@ -12922,7 +12884,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "Copy Node Path"
-msgstr ""
+msgstr "Kopírovat cestu k uzlu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "``scene_tree/copy_node_path``"
@@ -12957,9 +12919,8 @@ msgid "``scene_tree/move_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:458
-#, fuzzy
 msgid "Animation Track Editor"
-msgstr "Strom animací"
+msgstr "Editor animace stop"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
@@ -12971,7 +12932,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "Duplikovat transponované"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -12987,7 +12948,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "Delete Selection"
-msgstr ""
+msgstr "Smazat vyběr"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -12995,7 +12956,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "Přejít k dalšímu kroku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -13011,7 +12972,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "Přejít k předchozímu kroku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -13031,7 +12992,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "Find Tile"
-msgstr ""
+msgstr "Najít dlaždici"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "``tile_map_editor/find_tile``"
@@ -13039,7 +13000,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid "Pick Tile"
-msgstr ""
+msgstr "Vybrat dlaždici"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid ":kbd:`I`"
@@ -13070,9 +13031,8 @@ msgid "``tile_map_editor/bucket_fill``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
-#, fuzzy
 msgid "Transpose"
-msgstr "Podmínka"
+msgstr "Transponovat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "``tile_map_editor/transpose``"
@@ -13080,7 +13040,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "Flip Horizontally"
-msgstr ""
+msgstr "Převrátit horizontálně"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid ":kbd:`X`"
@@ -13092,7 +13052,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "Flip Vertically"
-msgstr ""
+msgstr "Převrátit vertikálně"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid ":kbd:`Z`"
@@ -13104,7 +13064,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "Rotate Left"
-msgstr ""
+msgstr "Otočit doleva"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "``tile_map_editor/rotate_left``"
@@ -13112,7 +13072,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "Rotate Right"
-msgstr ""
+msgstr "Otočit doprava"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "``tile_map_editor/rotate_right``"
@@ -13128,7 +13088,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
-msgstr ""
+msgstr "Vybrat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
@@ -13152,16 +13112,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "Erase Selection"
-msgstr ""
+msgstr "Vymazat označené"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "``tile_map_editor/erase_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:510
-#, fuzzy
 msgid "Tileset Editor"
-msgstr "Editor"
+msgstr "Editor dlaždic"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "Next Coordinate"
@@ -13184,9 +13143,8 @@ msgid "``tileset_editor/previous_shape``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
-#, fuzzy
 msgid "Region Mode"
-msgstr "Animace"
+msgstr "Režim oblasti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
@@ -13197,9 +13155,8 @@ msgid "``tileset_editor/editmode_region``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
-#, fuzzy
 msgid "Collision Mode"
-msgstr "Viditelné kolizní tvary"
+msgstr "Kolizní režim"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid ":kbd:`2`"
@@ -13222,9 +13179,8 @@ msgid "``tileset_editor/editmode_occlusion``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
-#, fuzzy
 msgid "Navigation Mode"
-msgstr "Animace"
+msgstr "Navigační režim"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
@@ -13235,9 +13191,8 @@ msgid "``tileset_editor/editmode_navigation``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
-#, fuzzy
 msgid "Bitmask Mode"
-msgstr "Animace"
+msgstr "Režim bitové masky"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
@@ -13260,9 +13215,8 @@ msgid "``tileset_editor/editmode_priority``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
-#, fuzzy
 msgid "Icon Mode"
-msgstr "Animace"
+msgstr "Režim ikony"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid ":kbd:`7`"
@@ -13720,9 +13674,8 @@ msgid "``foo()``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
-#, fuzzy
 msgid "Function call"
-msgstr "Funkce"
+msgstr "Volání funkce"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "``is``"
@@ -13778,9 +13731,8 @@ msgid "``-``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:252
-#, fuzzy
 msgid "Subtraction"
-msgstr "Představení"
+msgstr "Odčítání"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 msgid "``<<`` ``>>``"
@@ -13827,9 +13779,8 @@ msgid "``in``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
-#, fuzzy
 msgid "Content test"
-msgstr "Typ"
+msgstr "Test obsahu"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "``!`` ``not``"
@@ -13868,9 +13819,8 @@ msgid "``as``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
-#, fuzzy
 msgid "Type casting"
-msgstr "Testované"
+msgstr "Přetypování"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
@@ -13951,9 +13901,8 @@ msgid ":ref:`class_NodePath` or StringName"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
-#, fuzzy
 msgid "``$NodePath``"
-msgstr "Cesta ke zdroji"
+msgstr "``$NodePath``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid "Shorthand for ``get_node(\"NodePath\")``"
@@ -14010,9 +13959,8 @@ msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:340
-#, fuzzy
 msgid ":ref:`int <class_int>`"
-msgstr "Animace"
+msgstr ":ref:`int <class_int>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:342
 msgid ""
@@ -14394,16 +14342,20 @@ msgid ""
 "Constants are similar to variables, but must be constants or constant "
 "expressions and must be assigned on initialization."
 msgstr ""
+"Konstanty jsou podobné proměnným, musí ale být konstantní nebo konstantní "
+"výraz a musí jím být přidělen při inicializaci."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:634
 msgid ""
 "Although the type of constants is inferred from the assigned value, it's "
 "also possible to add explicit type specification::"
 msgstr ""
+"Ačkoli typ konstanty je převedený z přiřazené hodnoty, je i možné daný typ "
+"specifikovat::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:640
 msgid "Assigning a value of an incompatible type will raise an error."
-msgstr ""
+msgstr "Při priřazení hodnoty nekompatibilního typu bude výsledkem error."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:643
 msgid "Enums"
@@ -14611,18 +14563,16 @@ msgid "There are 6 pattern types:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:878
-#, fuzzy
 msgid "Constant pattern"
-msgstr "Konstanty"
+msgstr "Konstantní vzor"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
 msgid "Constant primitives, like numbers and strings::"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:890
-#, fuzzy
 msgid "Variable pattern"
-msgstr "Proměnná"
+msgstr "Variabilní vzor"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:881
 msgid "Matches the contents of a variable/enum::"
@@ -14643,9 +14593,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:917
-#, fuzzy
 msgid "Binding pattern"
-msgstr "Signály"
+msgstr "Vazebný vzor"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:907
 msgid ""
@@ -15611,9 +15560,8 @@ msgid "GDScript exports"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
-#, fuzzy
 msgid "Introduction to exports"
-msgstr "Představení"
+msgstr "Úvod do exportu"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
 msgid ""
@@ -15756,9 +15704,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:242
-#, fuzzy
 msgid "Adding script categories"
-msgstr "Vytváření obsahu"
+msgstr "Přidání kategorií skriptů"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:244
 msgid ""
@@ -15855,9 +15802,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:94
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:50
-#, fuzzy
 msgid "Formatting"
-msgstr "Formát"
+msgstr "Formátování"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:97
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:53
@@ -16160,9 +16106,8 @@ msgid "Use the past tense to name signals:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:494
-#, fuzzy
 msgid "Constants and enums"
-msgstr "Konstanty"
+msgstr "Konstanty a výčtové typy"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:496
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:313
@@ -16282,9 +16227,8 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
-#, fuzzy
 msgid "Member variables"
-msgstr "Členové"
+msgstr "Členské proměnné"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:623
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
@@ -16297,9 +16241,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
-#, fuzzy
 msgid "Local variables"
-msgstr "Místní souřadnice"
+msgstr "Lokální proměnné"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:630
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:277
@@ -16355,9 +16298,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
-#, fuzzy
 msgid "Type hints"
-msgstr "Typ"
+msgstr "Upřesnění typů"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:694
 msgid ""
@@ -16543,9 +16485,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:146
-#, fuzzy
 msgid "Variable casting"
-msgstr "Proměnná"
+msgstr "Přetypování proměnných"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:148
 msgid ""
@@ -16768,9 +16709,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:17
-#, fuzzy
 msgid "Warning system project settings"
-msgstr "Testované"
+msgstr "Výstražný systém nastavení projektu"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:19
 msgid ""
@@ -17365,9 +17305,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
-#, fuzzy
 msgid "Creating a script"
-msgstr "Vytváření obsahu"
+msgstr "Vytvoření skriptu"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
 msgid ""
@@ -18219,9 +18158,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:4
-#, fuzzy
 msgid "Custom VisualScript nodes"
-msgstr "Pluginy"
+msgstr "Vlastní uzly VisualScriptu"
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:6
 msgid ""
@@ -18230,9 +18168,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:10
-#, fuzzy
 msgid "Creating a custom node"
-msgstr "Vytváření obsahu"
+msgstr "Vytvoření vlastního uzlu"
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:12
 msgid ""
@@ -18443,9 +18380,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:81
-#, fuzzy
 msgid "Additional notes"
-msgstr "Animace"
+msgstr "Další poznámky"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:83
 msgid ""
@@ -18481,9 +18417,8 @@ msgid "Visual Studio 2019"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:106
-#, fuzzy
 msgid "MonoDevelop"
-msgstr "Vývoj"
+msgstr "Monodevelop"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:107
 msgid "Visual Studio for Mac"
@@ -18900,9 +18835,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
-#, fuzzy
 msgid "C# signals"
-msgstr "Signály"
+msgstr "C# signály"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:86
 msgid ""
@@ -19299,9 +19233,8 @@ msgid "``get_rotation()``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:216
-#, fuzzy
 msgid "``Rotation``"
-msgstr "Podmínka"
+msgstr "`` Rotace``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:221
 msgid "Plane"
@@ -19368,9 +19301,8 @@ msgid "``length()``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
-#, fuzzy
 msgid "``Length``"
-msgstr "Cesta ke zdroji"
+msgstr "`` Délka``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``length_squared()``"
@@ -19431,9 +19363,8 @@ msgid "``PoolColorArray``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
-#, fuzzy
 msgid "``Color[]``"
-msgstr "Barva"
+msgstr "`` Barva [] ``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:280
 msgid "``PoolVector2Array``"
@@ -19513,9 +19444,8 @@ msgid "Other differences:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
-#, fuzzy
 msgid "``Color8``"
-msgstr "Barva"
+msgstr "`` Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 msgid "``Color.Color8``"
@@ -19881,9 +19811,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:4
-#, fuzzy
 msgid "Cross-language scripting"
-msgstr "Vytváření obsahu"
+msgstr "Skriptování mezi jazyky"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:6
 msgid ""
@@ -20038,9 +19967,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:4
-#, fuzzy
 msgid "Creating script templates"
-msgstr "Vytváření obsahu"
+msgstr "Vytváření šablon skriptů"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:6
 msgid ""
@@ -20056,9 +19984,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:15
-#, fuzzy
 msgid "Locating the templates"
-msgstr "Vytváření obsahu"
+msgstr "Vyhledání šablon"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:17
 msgid "There are two places where templates can be managed."
@@ -20554,9 +20481,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:14
-#, fuzzy
 msgid "Body type"
-msgstr "Typ"
+msgstr "Typ těla"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:16
 msgid ""
@@ -20568,9 +20494,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:23
 #: ../../docs/tutorials/2d/using_tilemaps.rst:110
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
-#, fuzzy
 msgid "Collision shapes"
-msgstr "Viditelné kolizní tvary"
+msgstr "Kolizní tvary"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:25
 msgid ""
@@ -20777,9 +20702,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "Animation supported:"
-msgstr "Animace"
+msgstr "Animace podporována:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
@@ -20790,19 +20714,16 @@ msgid "transform animation of pose bones"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
-#, fuzzy
 msgid "shape key animation"
-msgstr "Animace"
+msgstr "tvar klíčové animace"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
-#, fuzzy
 msgid "light animation"
-msgstr "Animace"
+msgstr "světelná animace"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "camera animation"
-msgstr "Animace"
+msgstr "animace kamery"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
@@ -20862,9 +20783,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
-#, fuzzy
 msgid "Constraints"
-msgstr "Konstanty"
+msgstr "Omezení"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
 msgid ""
@@ -20875,9 +20795,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
-#, fuzzy
 msgid "Animation Mode"
-msgstr "Animace"
+msgstr "Uzel animace"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:63
 msgid ""
@@ -21101,9 +21020,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
-#, fuzzy
 msgid "Supported image formats"
-msgstr "Animace"
+msgstr "Podporované formáty obrázků"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:36
 msgid "Godot can import the following image formats:"
@@ -22107,9 +22025,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:94
-#, fuzzy
 msgid "Import options"
-msgstr "Podmínka"
+msgstr "Možnosti importu"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:96
 msgid "The importer has several options, which will be discussed below:"
@@ -22383,9 +22300,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:242
-#, fuzzy
 msgid "Animation options"
-msgstr "Animace"
+msgstr "Možnosti animace"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
 msgid ""
@@ -23015,14 +22931,12 @@ msgid "PCK files usually contain, but are not limited to:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:42
-#, fuzzy
 msgid "scripts"
-msgstr "Popis"
+msgstr "skripty"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:43
-#, fuzzy
 msgid "scenes"
-msgstr "Hlavní scéna"
+msgstr "scény"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:44
 msgid "shaders"
@@ -23295,9 +23209,8 @@ msgid "Running on a release build"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
-#, fuzzy
 msgid "**editor**"
-msgstr "Editor"
+msgstr "**editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "Running on an editor build"
@@ -23804,9 +23717,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
-#, fuzzy
 msgid "Setting up automatic signing"
-msgstr "Animace"
+msgstr "Nastavení automatického podepisování"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid ""
@@ -24535,9 +24447,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:10
-#, fuzzy
 msgid "Platform support"
-msgstr "Animace"
+msgstr "Podpora platformy"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:12
 msgid ""
@@ -24625,9 +24536,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:60
-#, fuzzy
 msgid "Preparing the server distribution"
-msgstr "Vytváření obsahu"
+msgstr "Příprava distribuce serveru"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:62
 msgid ""
@@ -24860,9 +24770,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:102
-#, fuzzy
 msgid "Accepting the licenses"
-msgstr "Vytváření obsahu"
+msgstr "Přijetí licence"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:104
 msgid ""
@@ -24907,9 +24816,8 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:132
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:216
-#, fuzzy
 msgid "Generating the keystore"
-msgstr "Vytváření obsahu"
+msgstr "Generování úložiště klíčů"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:134
 msgid ""
@@ -25301,12 +25209,10 @@ msgid "methods"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:33
-#, fuzzy
 msgid "constants"
-msgstr "Konstanty"
+msgstr "konstanty"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
-#, fuzzy
 msgid "signals"
 msgstr "Signály"
 
@@ -25435,9 +25341,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
-#, fuzzy
 msgid "Scene organization"
-msgstr "Animace"
+msgstr "Organizace scény"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:6
 msgid ""
@@ -25628,9 +25533,8 @@ msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:251
-#, fuzzy
 msgid "Choosing a node tree structure"
-msgstr "Budoucí"
+msgstr "Výběr stromové struktury uzlu"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:253
 msgid ""
@@ -25937,9 +25841,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
-#, fuzzy
 msgid "Named types"
-msgstr "Typ"
+msgstr "Pojmenované typy"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:66
 msgid ""
@@ -26586,9 +26489,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:4
-#, fuzzy
 msgid "Godot notifications"
-msgstr "Podmínka"
+msgstr "Godot oznámení"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:6
 msgid ""
@@ -27920,9 +27822,8 @@ msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
-#, fuzzy
 msgid "Creating a TileSet"
-msgstr "Vytváření obsahu"
+msgstr "Vytvoření sady dlaždic"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
@@ -28080,9 +27981,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:21
-#, fuzzy
 msgid "Particle nodes"
-msgstr "Částice"
+msgstr "Částicové uzly"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:23
 msgid ""
@@ -28452,9 +28352,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:301
-#, fuzzy
 msgid "Emission Shapes"
-msgstr "Viditelné kolizní tvary"
+msgstr "Tvary emisí"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:303
 msgid ""
@@ -29110,9 +29009,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:4
-#, fuzzy
 msgid "2D meshes"
-msgstr "Signály"
+msgstr "2D sítě"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:9
 msgid ""
@@ -29507,9 +29405,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:4
-#, fuzzy
 msgid "2D Sprite animation"
-msgstr "Animace"
+msgstr "2D animace spritu"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
 msgid ""
@@ -29601,9 +29498,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:70
-#, fuzzy
 msgid "Controlling the animation"
-msgstr "Animace"
+msgstr "Ovládání animace"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:72
 msgid ""
@@ -29614,9 +29510,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:90
-#, fuzzy
 msgid "Sprite sheet with AnimatedSprite"
-msgstr "Animace"
+msgstr "Sprite list s AnimatedSprite"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:92
 msgid ""
@@ -29675,9 +29570,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:125
-#, fuzzy
 msgid "Sprite sheet with AnimationPlayer"
-msgstr "Animace"
+msgstr "Sprite list s AnimationPlayer"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:127
 msgid ""
@@ -29743,9 +29637,8 @@ msgid "Press \"Play\" on the animation to see how it looks."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:183
-#, fuzzy
 msgid "Controlling an AnimationPlayer animation"
-msgstr "Animace"
+msgstr "Ovládání animace AnimationPlayer"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:185
 msgid ""
@@ -30520,9 +30413,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/optimizing_3d_performance.rst:1
-#, fuzzy
 msgid "optimization"
-msgstr "Animace"
+msgstr "Optimalizace"
 
 #: ../../docs/tutorials/3d/optimizing_3d_performance.rst:7
 msgid "Optimizing 3D performance"
@@ -33152,9 +33044,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:53
-#, fuzzy
 msgid "Environment options"
-msgstr "Podmínka"
+msgstr "Možnosti prostředí"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:55
 msgid ""
@@ -34233,9 +34124,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:27
-#, fuzzy
 msgid "Introduction to CSG nodes"
-msgstr "Představení"
+msgstr "Úvod do uzlů CSG"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:29
 msgid ""
@@ -34328,9 +34218,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:80
-#, fuzzy
 msgid "Custom meshes"
-msgstr "Signály"
+msgstr "Vlastní sítě"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:82
 msgid ""
@@ -34345,7 +34234,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:87
 msgid "it must not self-intersect,"
-msgstr ""
+msgstr "Nesmí se samo se sebou prolínat,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:88
 msgid "it must not contain internal faces,"
@@ -41887,9 +41776,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:18
-#, fuzzy
 msgid "Animating one Fish"
-msgstr "Animace"
+msgstr "Animace jedné Ryby"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:20
 msgid ""
@@ -42398,9 +42286,8 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:4
 #: ../../docs/tutorials/audio/audio_buses.rst:48
-#, fuzzy
 msgid "Audio buses"
-msgstr "Zvuk"
+msgstr "Audio sběrnice"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:9
 msgid ""
@@ -43271,9 +43158,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:27
-#, fuzzy
 msgid "Collision objects"
-msgstr "Viditelné kolizní tvary"
+msgstr "Kolizní objekty"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:29
 msgid ""
@@ -43383,9 +43269,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:90
-#, fuzzy
 msgid "Collision layers and masks"
-msgstr "Viditelné kolizní tvary"
+msgstr "Kolizní vrstvy a masky"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:92
 msgid ""
@@ -43848,9 +43733,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:19
-#, fuzzy
 msgid "What is an area?"
-msgstr "Částice"
+msgstr "Co je to plocha?"
 
 #: ../../docs/tutorials/physics/using_area_2d.rst:21
 msgid ""
@@ -44742,9 +44626,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:43
-#, fuzzy
 msgid "Collision shape adjustment"
-msgstr "Viditelné kolizní tvary"
+msgstr "Nastavení tvaru kolize"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:45
 msgid ""
@@ -45473,9 +45356,8 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:417
 #: ../../docs/tutorials/math/vectors_advanced.rst:589
-#, fuzzy
 msgid "More information"
-msgstr "Animace"
+msgstr "Více informací"
 
 #: ../../docs/tutorials/math/vector_math.rst:419
 msgid ""
@@ -45912,9 +45794,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:103
-#, fuzzy
 msgid "Rotating the transformation matrix"
-msgstr "Animace"
+msgstr "Otáčení transformační matice"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:105
 msgid ""
@@ -46505,9 +46386,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:31
-#, fuzzy
 msgid "Vector interpolation"
-msgstr "Animace"
+msgstr "Vektorová interpolace"
 
 #: ../../docs/tutorials/math/interpolation.rst:33
 msgid ""
@@ -46536,9 +46416,8 @@ msgid "It will produce the following motion:"
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:53
-#, fuzzy
 msgid "Transform interpolation"
-msgstr "Podmínka"
+msgstr "Transformace interpolace"
 
 #: ../../docs/tutorials/math/interpolation.rst:55
 msgid ""
@@ -46562,9 +46441,8 @@ msgid "And again, it will produce the following motion:"
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:80
-#, fuzzy
 msgid "Smoothing motion"
-msgstr "Podmínka"
+msgstr "Vyhlazování pohybu"
 
 #: ../../docs/tutorials/math/interpolation.rst:82
 msgid ""
@@ -47760,9 +47638,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:264
-#, fuzzy
 msgid "Animation tips"
-msgstr "Animace"
+msgstr "Tipy pro animaci"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:266
 msgid ""
@@ -47806,9 +47683,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:294
-#, fuzzy
 msgid "Creating a rest pose"
-msgstr "Vytváření obsahu"
+msgstr "Vytváření klidové polohy"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:296
 msgid ""
@@ -47823,9 +47699,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:302
-#, fuzzy
 msgid "Create a new animation, rename it \"rest\"."
-msgstr "Animace"
+msgstr "Vytvořte novou animaci, přejmenujte ji na \"rest\"."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:304
 msgid "Select all nodes in your rig (box selection should work fine)."
@@ -47938,9 +47813,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:4
-#, fuzzy
 msgid "2D skeletons"
-msgstr "Kostra"
+msgstr "2D kostry"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:9
 msgid ""
@@ -48007,9 +47881,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:51
-#, fuzzy
 msgid "Creating the polygons"
-msgstr "Vytváření obsahu"
+msgstr "Vytváření polygonů"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:53
 msgid ""
@@ -48091,9 +47964,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:111
-#, fuzzy
 msgid "Creating the skeleton"
-msgstr "Vytváření obsahu"
+msgstr "Vytvoření kostry"
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:113
 msgid ""
@@ -48281,9 +48153,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:19
-#, fuzzy
 msgid "Creating an AnimationTree"
-msgstr "Animace"
+msgstr "Vytvoření AnimationTree"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:21
 msgid ""
@@ -48326,9 +48197,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:40
-#, fuzzy
 msgid "Creating a tree"
-msgstr "Vytváření obsahu"
+msgstr "Vytvoření stromu"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:42
 msgid ""
@@ -48468,9 +48338,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:107
-#, fuzzy
 msgid "Transition"
-msgstr "Podmínka"
+msgstr "Přechod"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:109
 msgid ""
@@ -48601,9 +48470,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:170
-#, fuzzy
 msgid "Root motion"
-msgstr "Podmínka"
+msgstr "Kořenový pohyb"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:172
 msgid ""
@@ -49170,9 +49038,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:152
-#, fuzzy
 msgid "Capturing actions"
-msgstr "Animace"
+msgstr "Zachytávání akcí"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:154
 msgid ""
@@ -49241,9 +49108,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:291
-#, fuzzy
 msgid "Mouse motion"
-msgstr "Podmínka"
+msgstr "Pohyb myši"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:293
 msgid ""
@@ -49726,9 +49592,8 @@ msgid "Linux: ``~/.local/share/godot/``"
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:57
-#, fuzzy
 msgid "User settings"
-msgstr "Testované"
+msgstr "Uživatelská nastavení"
 
 #: ../../docs/tutorials/io/data_paths.rst:59
 msgid "Linux: ``~/.config/godot/``"
@@ -50127,9 +49992,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:4
-#, fuzzy
 msgid "Localization using gettext"
-msgstr "Lokalizace"
+msgstr "Lokalizace pomocí gettextu"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:6
 msgid ""
@@ -50235,9 +50099,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:62
-#, fuzzy
 msgid "Creating the PO template (POT) manually"
-msgstr "Vytváření obsahu"
+msgstr "Ruční vytvoření šablony PO (POT)"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:64
 msgid ""
@@ -50267,9 +50130,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:89
-#, fuzzy
 msgid "Creating the PO template (POT) using pybabel"
-msgstr "Vytváření obsahu"
+msgstr "Vytvoření šablony PO (POT) pomocí pybabel"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:91
 msgid ""
@@ -53655,9 +53517,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:42
-#, fuzzy
 msgid "Centering a control"
-msgstr "Vytváření obsahu"
+msgstr "Vystředění ovládacího prvku"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:44
 msgid ""
@@ -53786,9 +53647,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:60
-#, fuzzy
 msgid "Container types"
-msgstr "Typ"
+msgstr "Typy kontejnerů"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:62
 msgid ""
@@ -53943,9 +53803,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:162
-#, fuzzy
 msgid "Creating custom Containers"
-msgstr "Vytváření obsahu"
+msgstr "Vytváření vlastních kontejnerů"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:164
 msgid ""
@@ -54347,9 +54206,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:129
-#, fuzzy
 msgid "Animation effects"
-msgstr "Animace"
+msgstr "Animační efekty"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:131
 msgid ""
@@ -56389,9 +56247,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:201
-#, fuzzy
 msgid "Local arrays"
-msgstr "Místní souřadnice"
+msgstr "Místní pole"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:203
 msgid ""
@@ -56978,9 +56835,8 @@ msgid "**Vector3**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:552
-#, fuzzy
 msgid "**Color**"
-msgstr "Barva"
+msgstr "**Barva**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:554
 msgid "**Transform**"
@@ -57324,9 +57180,8 @@ msgid "vec_type **mix** (float a, float b, float c)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:659
-#, fuzzy
 msgid "Linear interpolate"
-msgstr "Animace"
+msgstr "Lineární interpolací"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
 msgid "vec_type **mix** (vec_type a, vec_type b, float c)"
@@ -57374,9 +57229,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:671
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
-#, fuzzy
 msgid "Hermite interpolate"
-msgstr "Animace"
+msgstr "Hermitova interpolovat"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
 msgid "vec_type **smoothstep** (float a, float b, vec_type c)"
@@ -57435,9 +57289,8 @@ msgid "float **length** (vec_type x)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:687
-#, fuzzy
 msgid "Vector length"
-msgstr "Vektor"
+msgstr "Délka vektoru"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:689
 msgid "float **distance** (vec_type a, vec_type b)"
@@ -58050,9 +57903,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:81
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
-#, fuzzy
 msgid "Built-ins"
-msgstr "Animace"
+msgstr "Vestavěné"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:83
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:41
@@ -58067,9 +57919,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:89
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:47
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:48
-#, fuzzy
 msgid "Global built-ins"
-msgstr "Animace"
+msgstr "Globální vestavěné"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:91
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:49
@@ -58689,9 +58540,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:203
-#, fuzzy
 msgid "Light built-ins"
-msgstr "Animace"
+msgstr "Vestavěné světlé"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
 msgid ""
@@ -59188,9 +59038,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:4
-#, fuzzy
 msgid "Particle shaders"
-msgstr "Částice"
+msgstr "Shadery částic"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:6
 msgid ""
@@ -59391,9 +59240,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:4
-#, fuzzy
 msgid "What are shaders?"
-msgstr "Částice"
+msgstr "Co jsou to shadery?"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:9
 msgid ""
@@ -60795,9 +60643,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:4
-#, fuzzy
 msgid "VisualShaders"
-msgstr "Pluginy"
+msgstr "Vizuální shadery"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:6
 msgid ""
@@ -60822,9 +60669,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:22
-#, fuzzy
 msgid "Creating a VisualShader"
-msgstr "Vytváření obsahu"
+msgstr "Vytvoření visualshaderu"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:24
 msgid ""
@@ -60949,9 +60795,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:94
-#, fuzzy
 msgid "Visual Shader nodes"
-msgstr "Pluginy"
+msgstr "Vizuální Shader uzly"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:96
 msgid ""
@@ -61338,9 +61183,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:42
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:98
-#, fuzzy
 msgid "gl_Position"
-msgstr "Podmínka"
+msgstr "gl_Position"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:44
 msgid ""
@@ -61581,9 +61425,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:133
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:200
-#, fuzzy
 msgid "Types"
-msgstr "Typ"
+msgstr "Typy"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:135
 msgid ""
@@ -61619,9 +61462,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:160
-#, fuzzy
 msgid "fragColor"
-msgstr "Barva"
+msgstr "fragColor"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:162
 msgid "fragCoord"
@@ -62100,9 +61942,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:146
-#, fuzzy
 msgid "An optimization"
-msgstr "Animace"
+msgstr "Optimalizace"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:148
 msgid ""
@@ -62407,14 +62248,12 @@ msgid "Clients:"
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:137
-#, fuzzy
 msgid "``connected_to_server``"
-msgstr "Podmínka"
+msgstr "\"connected_to_server\""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:138
-#, fuzzy
 msgid "``connection_failed``"
-msgstr "Podmínka"
+msgstr "`` connection_failed``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:139
 msgid "``server_disconnected``"
@@ -63255,7 +63094,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
 msgid "Asset Library"
-msgstr "Knihovna assetů"
+msgstr "Otevřít knihovnu assetů"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
@@ -64203,14 +64042,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/index.rst:2
-#, fuzzy
 msgid "VR starter tutorial"
-msgstr "Tutoriály"
+msgstr "Úvodní příručka VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:4
-#, fuzzy
 msgid "VR starter tutorial part 1"
-msgstr "Tutoriály"
+msgstr "VR starter tutorial část 1"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:11
 msgid ""
@@ -64567,9 +64404,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:186
-#, fuzzy
 msgid "Creating the controllers"
-msgstr "Vytváření obsahu"
+msgstr "Vytváření řadičů"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:190
 msgid ""
@@ -70476,9 +70312,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:139
-#, fuzzy
 msgid "From your script:"
-msgstr "Popis"
+msgstr "Z tvého skriptu:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:149
 #, fuzzy
@@ -71380,9 +71215,8 @@ msgid "Fails if a canvas cannot be found on the page."
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:165
-#, fuzzy
 msgid "Command line argument."
-msgstr "Podmínka"
+msgstr "Argument příkazové řádky."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:168
 msgid "Promise that resolves once the engine started."
@@ -71458,9 +71292,8 @@ msgid "Complete list of :ref:`supported locales <doc_locales>`."
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:221
-#, fuzzy
 msgid "Language code."
-msgstr "Jazyk"
+msgstr "Jazykový kód."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:226
 msgid ""
@@ -72173,9 +72006,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:24
-#, fuzzy
 msgid "What is a Mesh?"
-msgstr "Částice"
+msgstr "Co je to Mesh?"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:26
 msgid ""
@@ -78769,9 +78601,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:110
-#, fuzzy
 msgid ":ref:`doc_overriding_build_options`."
-msgstr "Pluginy"
+msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:113
 msgid "Optimizing for size instead of speed"
@@ -78994,9 +78825,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:21
-#, fuzzy
 msgid "Android Studio's welcome window."
-msgstr "Pluginy"
+msgstr "Uvítací okno Android studia."
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:23
 msgid ""
@@ -79141,7 +78971,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
-msgstr ""
+msgstr "Povolit"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"
@@ -80852,9 +80682,8 @@ msgid "Example output::"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:469
-#, fuzzy
 msgid "Now we can generate the documentation:"
-msgstr "O dokumentaci"
+msgstr "Nyní můžeme generovat dokumentaci:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:471
 msgid ""
@@ -83554,9 +83383,8 @@ msgid "The guide below explains how to find a regression by bisecting."
 msgstr ""
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:17
-#, fuzzy
 msgid "What is bisecting?"
-msgstr "Částice"
+msgstr ""
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:19
 msgid ""
