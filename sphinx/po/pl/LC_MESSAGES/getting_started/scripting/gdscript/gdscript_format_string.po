@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,6 +80,13 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
+"``%s`` widoczne w przykładzie powyżej jest najprostszym symbolem zastępczym "
+"i działa dla większości przypadków: konwertuje wartość tą samą metodą, którą "
+"niejawna konwersja lub ``str()`` by ją skonwertowała. Łańcuchy znaków "
+"pozostają niezmienione, Wartości logiczne (Boolean) zmieniają się w albo ``"
+"\"True\"`` albo ``\"False\"``, liczby całkowite lub rzeczywiste stają się "
+"dziesiętnymi, inne typy zwykle zwracają swoje dane w ciąg znaków łatwy do "
+"odczytania przez człowieka."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
@@ -88,6 +95,10 @@ msgid ""
 "the corresponding value. The method can handle arrays or dictionaries for "
 "the key/value pairs."
 msgstr ""
+"Jest jeszcze inny sposób by sformatować tekst w GDScript, mianowicie za "
+"pomocą metody ``String.format()``. Zamienia ona wszystkie wystąpienia klucza "
+"w łańcuchu znaków na odpowiednią wartość. Ta metoda pozwala na obsługę "
+"tablic, czy słowników dla par klucz/wartość."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:50
 msgid ""
@@ -97,17 +108,21 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
-msgstr ""
+msgstr "Krótki przykład w GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
+#, fuzzy
 msgid ""
 "There are other `format specifiers`_, but they are only applicable when "
 "using the ``%`` operator."
 msgstr ""
+"Istnieją inne `specyfikatory formatu`_, ale mają one zastosowanie tylko przy "
+"użyciu operatora` `%` `."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:71
+#, fuzzy
 msgid "Multiple placeholders"
-msgstr ""
+msgstr "Wiele symboli zastępczych"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
 msgid ""

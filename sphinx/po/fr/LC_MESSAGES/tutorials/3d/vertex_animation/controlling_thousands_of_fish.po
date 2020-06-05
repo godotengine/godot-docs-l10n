@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,8 +120,8 @@ msgstr ""
 "être exécuté. Nous voulons attribuer à chaque poisson une position aléatoire "
 "et un décalage d'animation aléatoire lors de la première exécution du "
 "système. Pour ce faire, nous encapsulons donc ce code dans une instruction "
-"`` if`` vérifiant la variable intégrée `` RESTART`` qui devient ``true`` "
-"pour une image(frame) lorsque le système de particules est redémarré."
+"``if`` vérifiant la variable intégrée ``RESTART`` qui devient ``true`` pour "
+"une image(frame) lorsque le système de particules est redémarré."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:66
 msgid "From a high level, this looks like:"
@@ -140,8 +140,8 @@ msgid ""
 "First, generate 4 seeds inside the ``RESTART`` block using the ``hash`` "
 "function provided above:"
 msgstr ""
-"Tout d'abord, générez 4 graines à l'intérieur du bloc ``RESTART``à l'aide de "
-"la fonction ``hash`` fournie ci-dessus :"
+"Tout d'abord, générez 4 graines à l'intérieur du bloc ``RESTART`` à l'aide "
+"de la fonction ``hash`` fournie ci-dessus :"
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:90
 msgid ""
@@ -178,8 +178,8 @@ msgid ""
 "``TRANSFORM`` directly or by writing to ``VELOCITY``."
 msgstr ""
 "Vous pouvez maintenant déplacer chaque poisson individuellement à chaque "
-"image, soit en ajoutant directement à son \"TRANSFORM\", soit en réécrivant "
-"sa \"VELOCITY\"."
+"image, soit en ajoutant directement à son ``TRANSFORM``, soit en réécrivant "
+"sa ``VELOCITY``."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:113
 msgid "Let's transform the fish by setting their ``VELOCITY``."
@@ -203,7 +203,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:128
 msgid "This will give each fish a unique speed between ``2`` and ``10``."
-msgstr "Cela donnera à chaque poisson une vitesse unique entre ``2``et ``10``."
+msgstr ""
+"Cela donnera à chaque poisson une vitesse unique entre ``2`` et ``10``."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:130
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,13 +74,12 @@ msgstr ""
 "інтерфейсу користувача:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
-msgid "Create a main menu screen"
-msgstr "Створення головного меню"
+msgid ":doc:`ui_main_menu`"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
-#, fuzzy
-msgid "Create a game user interface"
-msgstr "Створення інтерфейсу для гри"
+msgid ":doc:`ui_game_user_interface`"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 #, fuzzy
@@ -876,20 +875,7 @@ msgstr ""
 "``health`` ``Player`` (життя гравця) після ``health_changed`` (зміни_життя): "
 "це ``new_value``. І ``0.6`` це тривалість анімації в секундах."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:445
-#, fuzzy
-msgid ""
-"The last two arguments are constants from the ``Tween`` class. "
-"``TRANS_LINEAR`` means the animation should be linear. ``EASE_IN`` doesn't "
-"do anything with a linear transition, but we must provide this last argument "
-"or we'll get an error."
-msgstr ""
-"Останні два аргументи - константи класу ``Tween``. ``TRANS_LINEAR`` означає, "
-"що анімація повинна бути лінійною. ``EASE_IN`` не робить нічого з лінійним "
-"переходом, але ми повинні навести цей останній аргумент, інакше отримаємо "
-"помилку."
-
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:450
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:441
 #, fuzzy
 msgid ""
 "The animation will not play until we activated the ``Tween`` node with "
@@ -900,7 +886,7 @@ msgstr ""
 "допомогою ``tween.start()``. Це потрібно зробити лише один раз, якщо вузол "
 "не активний. Додайте цей код після останнього рядка:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:460
 #, fuzzy
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
@@ -917,12 +903,12 @@ msgstr ""
 "вузлі. Вузол `tween` ідеально підходить для коду контролювання анімації. Для "
 "анімації ручної роботи перегляньте `AnimationPlayer`."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:472
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:463
 #, fuzzy
 msgid "Assign the animated\\_health to the LifeBar"
 msgstr "Призначення animated\\_health LifeBar"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:474
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:465
 #, fuzzy
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
@@ -931,12 +917,12 @@ msgstr ""
 "Тепер змінна ``animated_health`` анімована, але ми більше не оновлюємо вузли "
 "``Bar`` та ``Number``. Давайте виправимо це."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:477
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
 #, fuzzy
 msgid "So far, the update\\_health method looks like this:"
 msgstr "Поки що метод ``update_health`` виглядає приблизно так:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:492
 #, fuzzy
 msgid ""
 "In this specific case, because ``number_label`` takes text, we need to use "
@@ -948,7 +934,7 @@ msgstr ""
 "вузли ``Number`` і ``TextureProgress``, як і раніше, але всередині "
 "``_process``:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:523
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:514
 msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
@@ -956,7 +942,7 @@ msgstr ""
 "`number_label` та `bar` - це змінні, які зберігають посилання на вузли "
 "`Number` та `TextureProgress`."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:516
 #, fuzzy
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
@@ -967,12 +953,12 @@ msgstr ""
 "десяткове число і це схоже на безлад. А зважаючи на стиль гри, було б "
 "непогано, щоб шкала здоров'я анімувалася поривчастим способом."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:522
 #, fuzzy
 msgid "The animation is smooth, but the number is broken"
 msgstr "Гладка анімація, та недоладне число"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:524
 #, fuzzy
 msgid ""
 "We can fix both problems by rounding out ``animated_health``. Use a local "
@@ -984,17 +970,17 @@ msgstr ""
 "заокругленого значення ``animated_health``. Потім призначте його "
 "``number_label.text`` та ``bar.value``:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:546
 #, fuzzy
 msgid "Try the game again to see a nice blocky animation."
 msgstr "Спробуйте гру ще раз, щоб побачити приємну анімацію."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:550
 #, fuzzy
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "Заокруглюючи animated_health ми вбиваємо двох зайців одним пострілом"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:554
 #, fuzzy
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
@@ -1011,11 +997,11 @@ msgstr ""
 "хитрістю. Це оживляє GUI. Якщо ``Player`` отримує 3 пошкодження, гравець "
 "помирає, а шкала стає порожня."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:562
 msgid "Fade the bar when the Player dies"
 msgstr "Зникнення шкали при смерті гравця"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:564
 #, fuzzy
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
@@ -1028,7 +1014,7 @@ msgstr ""
 "персонажа, шкалу також сховаємо. Ми повторно використаємо той самий вузол "
 "``Tween``, який паралельно управляє декількома анімаціями."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:569
 #, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
@@ -1041,16 +1027,16 @@ msgstr ""
 "області 2D. Виберіть вузол ``Player`` на панелі Сцена та натисніть на "
 "вкладку Вузол біля Інспектора."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:583
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:574
 msgid "Find the ``died`` signal, select it, and click the Connect button."
 msgstr "Знайдіть сигнал ``died``, виберіть його та натисніть кнопку Приєднати."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
 #, fuzzy
 msgid "The signal should already have the Enemy connected to it"
 msgstr "Сигнал вже має бути підключеним до Enemy"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:580
 #, fuzzy
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
@@ -1063,12 +1049,12 @@ msgstr ""
 "отримувач має бути ``_on_Player_died``. Натисніть «З'єднати» внизу вікна. Це "
 "перенесе вас до файлу ``GUI.gd`` в робочій області скриптів."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:597
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:588
 #, fuzzy
 msgid "You should get these values in the Connecting Signal window"
 msgstr "Ви повинні отримати такі значення у вікні З'єднання сигналу"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:601
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:592
 msgid ""
 "You should see a pattern by now: every time the GUI needs a new piece of "
 "information, we emit a new signal. Use them wisely: the more connections you "
@@ -1078,7 +1064,7 @@ msgstr ""
 "ми випромінюємо новий сигнал. Використовуйте їх розумно: чим більше ви "
 "додасте з'єднань, тим важче буде відстежувати їх."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:594
 #, fuzzy
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
@@ -1088,7 +1074,7 @@ msgstr ""
 "властивість ``modulate``. ``modulate`` це ``Color``, який множить кольори "
 "наших текстур."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:609
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:600
 #, fuzzy
 msgid ""
 "`modulate` comes from the `CanvasItem` class, All 2D and UI nodes inherit "
@@ -1099,7 +1085,7 @@ msgstr ""
 "та UI-вузли. Він дозволяє перемикати видимість вузла, призначати йому шейдер "
 "і змінювати його за допомогою кольору `modulate`."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:602
 #, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
@@ -1111,7 +1097,7 @@ msgstr ""
 "затемнить інтерфейс. Якщо ми знизимо альфа-канал, наш інтерфейс стане "
 "прозорим."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:606
 #, fuzzy
 msgid ""
 "We're going to tween between two color values: from a white with an alpha of "
@@ -1126,7 +1112,7 @@ msgstr ""
 "та назвемо їх ``start_color`` та ``end_color``. Використовуйте конструктор "
 "``Color()`` для побудови двох значень ``Color``."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:637
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:628
 #, fuzzy
 msgid ""
 "``Color(1.0, 1.0, 1.0)`` corresponds to white. The fourth argument, "
@@ -1136,7 +1122,7 @@ msgstr ""
 "``Color(1.0, 1.0, 1.0)`` відповідає білому. Четвертим аргументом, відповідно "
 "``1.0`` і ``0.0`` в ``start_color`` і ``end_color``, є альфа-канал."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:632
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
@@ -1144,30 +1130,29 @@ msgstr ""
 "Потім нам доведеться знову викликати метод ``interpolate_property`` вузла "
 "``Tween``:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:645
 #, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
-"linear transition. Here again, because the transition is linear, the easing "
-"does not matter. Here's the complete ``_on_Player_died`` method:"
+"linear transition. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
 "Цього разу ми змінимо властивість ``modulate`` і попросимо її анімувати з "
 "``start_color`` до ``end_color``. Тривалість становить одну секунду, з "
 "лінійним переходом. Знову ж таки, оскільки перехід лінійний, плавність "
 "значення не має. Ось повний метод ``_on_Player_died``:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:669
 msgid "And that is it. You may now play the game to see the final result!"
 msgstr ""
 "І це все. Тепер ви можете запустити гру, щоб побачити кінцевий результат!"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:673
 #, fuzzy
 msgid "The final result. Congratulations for getting there!"
 msgstr "Кінцевий результат. Вітаємо з успіхом!"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:677
 #, fuzzy
 msgid ""
 "Using the exact same techniques, you can change the color of the bar when "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -263,15 +263,14 @@ msgid "Delay"
 msgstr "Retraso"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:154
-#, fuzzy
 msgid ""
 "Adds an \"echo\" effect with a feedback loop. It can be used together with "
 "*Reverb* to simulate wide rooms, canyons, etc. where sound bounces are far "
 "apart."
 msgstr ""
-"Añade un efecto \"Eco\" con loop en reaccion. Puede ser usado junto con "
-"\"Reverb\", para simular habitaciones espaciosas, cañones, etc. Donde el "
-"sonido rebota lejos."
+"Añade un efecto \"eco\" con bucle de retroalimentación. Puede ser usado "
+"junto con *Reverb*, para simular habitaciones espaciosas, cañones, etc., "
+"donde el sonido rebota lejos."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:159
 msgid "Distortion"
@@ -333,7 +332,6 @@ msgid "Limiter"
 msgstr "Limitador"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:196
-#, fuzzy
 msgid ""
 "A limiter is similar to a compressor, but it's less flexible and designed to "
 "prevent a signal's amplitude exceeding a given dB threshold. Adding a "
@@ -341,7 +339,7 @@ msgid ""
 msgstr ""
 "Un limitador es similar a un compresor, pero es menos flexible y esta "
 "diseñado para omitir el sonido al exceder el limite de dB. Añadir uno al "
-"*Master Bus* es siempre recomendado para reducir los efectos de los recortes."
+"Master Bus es siempre recomendado para reducir los efectos de los recortes."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:201
 msgid "LowPassFilter, LowShelfFilter"
@@ -361,13 +359,12 @@ msgid "NotchFilter"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:211
-#, fuzzy
 msgid ""
 "The opposite of the BandPassFilter, it removes a band of sound from the "
 "frequency spectrum at a given *Cutoff* frequency."
 msgstr ""
-"Lo opuesto al \"BandPassFilter\", remueve una banda del sonido del espectro "
-"de frecuencias en una cierta frecuencia de *Cutoff*."
+"Lo opuesto al BandPassFilter, remueve una banda del sonido del espectro de "
+"frecuencias en una cierta frecuencia de *Cutoff*."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:215
 msgid "Panner"

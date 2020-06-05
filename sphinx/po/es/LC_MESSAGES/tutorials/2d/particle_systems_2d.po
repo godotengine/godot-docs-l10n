@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,6 +71,20 @@ msgid ""
 "inspector, and selecting \"Convert to CPUParticles2D\" in the \"Particles\" "
 "menu of the toolbar."
 msgstr ""
+"Godot provee dos tipos de nodos distintos para partículas 2D, :ref:"
+"`class_Particles2D` y :ref:`class_CPUParticles2D`. Particles2D es más "
+"avanzado y utiliza la GPU para procesar los efectos de partículas, pero esto "
+"está limitado a un API gráfico de alto rendimiento, y en nuestro caso del "
+"renderizador GLES3. Para proyectos que usan el backend GLES2, existe "
+"CPUParticles2D que es una opción manejada por CPU que está cercana en "
+"características a lo ofrecido por Particles2D, pero con menor performance. "
+"Mientras que Particles2D es configurado por :ref:`class_ParticlesMaterial` "
+"(y opcionalmente por un shader personalizado), las opciones disponibles so "
+"provistas por propiedades de nodos en CPUParticles2D (con la excepción de la "
+"configuración de trails). Puedes convertir un nodo Particles2D a uno "
+"CPUParticles2D haciendo clic en el nodo en el inspector y seleccionando "
+"\"Convertir a CPUParticles2D\" en el menu \"Particles\" de la barra de "
+"herramientas."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:36
 msgid ""
@@ -383,15 +397,14 @@ msgid "Initial Velocity"
 msgstr "Initial Velocity (Velocidad Inicial)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:217
-#, fuzzy
 msgid ""
 "Initial velocity is the speed at which particles will be emitted (in pixels/"
 "sec). Speed might later be modified by gravity or other accelerations (as "
 "described further below)."
 msgstr ""
-"La velocidad lineal es la velocidad a la que se emitirán las partículas (en "
+"Initial Velocity es la velocidad a la que se emitirán las partículas (en "
 "píxeles/segundo). La velocidad puede ser modificada posteriormente por la "
-"gravedad u otras aceleraciones (como se explica más adelante)."
+"gravedad u otras aceleraciones (como se describe más adelante)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:224
 msgid "Angular Velocity"
@@ -528,6 +541,9 @@ msgid ""
 "Ensure that a ParticlesMaterial is set, and the Particles2D node is "
 "selected. A \"Particles\" menu should appear in the Toolbar:"
 msgstr ""
+"Asegúrate que el ParticlesMaterial está asignado y que el nodo Particles2D "
+"está seleccionado. Un menú \"Particles\" aparecerá en la barra de "
+"herramientas:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:312
 msgid "Open it and select \"Load Emission Mask\":"
@@ -535,7 +551,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:316
 msgid "Then select which texture you want to use as your mask:"
-msgstr ""
+msgstr "Luego selecciona la textura que usarás como máscara:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:320
 msgid "A dialog box with several settings will appear."
@@ -547,7 +563,7 @@ msgstr "Máscara de Emisión"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:325
 msgid "Three types of emission masks can be generated from a texture:"
-msgstr ""
+msgstr "Desde una textura se pueden generar tres tipos de máscaras de emisión:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:327
 msgid ""
@@ -559,6 +575,8 @@ msgstr ""
 msgid ""
 "Border Pixels: Particles will spawn from the outer edges of the texture."
 msgstr ""
+"Píxeles de Borde: Las partículas saldrán de los bordes exteriores de la "
+"textura."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:336
 msgid ""
@@ -577,6 +595,8 @@ msgid ""
 "``Capture from Pixel`` will cause the particles to inherit the color of the "
 "mask at their spawn points."
 msgstr ""
+"``Capture from Pixel`` causará que las partículas hereden el color de la "
+"máscara donde son emitidos."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:348
 msgid ""
@@ -597,3 +617,5 @@ msgid ""
 "An image should not be added to ``Point Texture`` or ``Color Texture`` "
 "directly. The \"Load Emission Mask\" menu should always be used instead."
 msgstr ""
+"La imagen no debe ser agregada directamente a ``Point Texture`` o ``Color "
+"Texture``. Se debe usar siempre el menú \"Cargar Máscara de Emisión\"."

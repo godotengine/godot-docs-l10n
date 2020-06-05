@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,9 @@ msgid ""
 "Custom nodes are written in GDScript and can then be used in VisualScript. "
 "This is useful for offloading complex code to GDScript and reusing it."
 msgstr ""
+"Los nodos personalizados son escritos en GDScript y pueden ser usado luego "
+"en VisualScript. Esto es útil para llevar lógica compleja a GDScript y "
+"reusarla."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:10
 msgid "Creating a custom node"
@@ -37,6 +40,9 @@ msgid ""
 "a ``tool`` keyword at the top. This is needed for the script to run in the "
 "editor."
 msgstr ""
+"Crea un nuevo script que extienda :ref:`class_VisualScriptCustomNode` y pon "
+"la palabra cave ``tool`` al principio. Esto es necesario para que el script "
+"se ejecute en el editor."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:14
 msgid ""
@@ -45,34 +51,47 @@ msgid ""
 "``_has_input_sequence_port`` function is not necessary if it should return "
 "``false`` for example."
 msgstr ""
+"Existen funciones que pueden ser implementadas para asignar parámetros del "
+"nodo personalizado. Sólo agrega las que necesites, funciones "
+"``_has_input_sequence_port`` no son necesarias si esta debe retornar "
+"``false``, por ejemplo."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:17
 msgid ""
 "The most important part of a custom node is the ``_step`` function. The "
 "logic of the node is defined there."
 msgstr ""
+"La parte más importante de en nodo personalizado es la función ``_step``. La "
+"lógica del nodo es definida allí."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:19
 msgid "The ``inputs`` parameter holds the value of the input ports."
-msgstr ""
+msgstr "El parámetro ``inputs`` contiene valores de los puertos de entrada."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:21
 msgid ""
 "The ``outputs`` parameter is an array where the indices represent the output "
 "port ids. It can be modified to set the values of the output ports."
 msgstr ""
+"El parámetro ``outputs`` es un arreglo donde el índice representa el id de "
+"los puertos de salida. Puede ser modificado para asignar valores a los "
+"puertos de salida."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:23
 msgid ""
 "``start_mode`` can be checked to see if it is the first time ``_step`` is "
 "called."
 msgstr ""
+"``start_mode`` puede ser revisado para ver si es la primera vez que se llamó "
+"a ``_step``."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:25
 msgid ""
 "``working_mem`` is persistent each ``_step`` call. It can be used to store "
 "information."
 msgstr ""
+"``working_mem`` es persistente para cada llamada a ``_step``. Puede ser "
+"usado para guardar información."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:27
 msgid ""
@@ -81,6 +100,10 @@ msgid ""
 "return the id of the sequence port which should be called next. If your "
 "custom node doesn't have any, just return 0."
 msgstr ""
+"Si quieres disparar un error, por ejemplo si el tipo de entrada es "
+"incorrecto, puedes retornar el mensaje de error como una cadena. Cuando todo "
+"va bien, retorna el id de la secuencia de puertos que debería ser llamado en "
+"el siguiente paso. Si tu nodo personalizado no tiene ninguno, sólo retorna 0."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:31
 msgid "Example:"
@@ -95,6 +118,9 @@ msgid ""
 "To use the script, add a ``CustomNode``, select it and drag your custom node "
 "script into the ``script`` property shown in the inspector."
 msgstr ""
+"Para usar el script, agrega un ``CustomNode``, selecciona el script "
+"personalizado y arrástralo a la propiedad ``script`` que se ve en el "
+"inspector."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:100
 msgid "Result:"

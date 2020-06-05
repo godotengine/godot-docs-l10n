@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -690,9 +690,10 @@ msgid "Running a script"
 msgstr "スクリプトの実行"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:280
+#, fuzzy
 msgid ""
-"It is possible to run a simple .gd script from the command line. This "
-"feature is especially useful in large projects, for batch conversion of "
+"It is possible to run a simple ``.gd`` script from the command line. This "
+"feature is especially useful in large projects, e.g. for batch conversion of "
 "assets or custom import/export."
 msgstr ""
 "コマンドラインから単純な.gdスクリプトを実行することは可能です。この機能は大規"
@@ -700,7 +701,8 @@ msgstr ""
 "利です。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:284
-msgid "The script must inherit from SceneTree or MainLoop."
+#, fuzzy
+msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "スクリプトはSceneTreeまたはMainLoopから継承する必要があります。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:286
@@ -712,9 +714,10 @@ msgid "And how to run it:"
 msgstr "実行方法:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
+#, fuzzy
 msgid ""
-"If no project.godot exists at the path, current path is assumed to be the "
-"current working directory (unless ``-path`` is specified)."
+"If no ``project.godot`` exists at the path, current path is assumed to be "
+"the current working directory (unless ``--path`` is specified)."
 msgstr ""
 "パスにproject.godotが存在しない場合は、現在のパスが現在の作業ディレクトリであ"
 "ると見なされます( ``-path`` が指定されている場合を除く)。"

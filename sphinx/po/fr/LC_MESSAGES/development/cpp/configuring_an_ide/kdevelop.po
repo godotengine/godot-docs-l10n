@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,17 +34,16 @@ msgid "Importing the project"
 msgstr "Importation du projet"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:11
-#, fuzzy
 msgid "From the KDevelop's main screen select **Open Project**."
-msgstr "Commencez par ouvrir Kdevelop et choisir **Open Project**."
+msgstr "Dans l'écran principal de KDevelop, sélectionnez **Open Project**."
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:17
 msgid "KDevelop's main screen."
-msgstr ""
+msgstr "L'écran principal de KDevelop."
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:19
 msgid "Navigate to the Godot root folder and select it."
-msgstr ""
+msgstr "Naviguez jusqu'au dossier racine de Godot et sélectionnez-le."
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:20
 msgid ""
@@ -60,12 +59,17 @@ msgid ""
 "clicking on it in the **Projects** panel and selecting **Open Configuration.."
 "** option."
 msgstr ""
+"Après l'importation du projet, ouvrez la configuration du projet en cliquant "
+"avec le bouton droit de la souris sur celui-ci dans le panneau **Projects** "
+"et en sélectionnant l'option **Open Configuration..**."
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:33
 msgid ""
 "Under **Language Support** open the **Includes/Imports** tab and add the "
 "following paths:"
 msgstr ""
+"Sous **Language Support**, ouvrez l'onglet **Includes/Imports** et ajoutez "
+"les chemins d'accès suivants :"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
 msgid "Apply the changes."
@@ -76,62 +80,60 @@ msgid ""
 "Under **Custom Build System** add a new build configuration with the "
 "following settings:"
 msgstr ""
+"Sous **Custom Build System**, ajoutez une nouvelle configuration de "
+"compilation avec les paramètres suivants :"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
-#, fuzzy
 msgid "Build Directory"
-msgstr "Construisez-le :"
+msgstr "Build Directory"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 msgid "*blank*"
-msgstr ""
+msgstr "*blank*"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
-msgstr ""
+msgstr "Activer"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"
-msgstr ""
+msgstr "**True**"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
-#, fuzzy
 msgid "Executable"
-msgstr "Le nom de l'exécutable."
+msgstr "Executable"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
 msgid "**scons**"
-msgstr ""
+msgstr "**scons**"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
 msgid "Arguments"
 msgstr "Arguments"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
-#, fuzzy
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
-"Lisez d'abord :doc:`ui_introduction_to_the_ui_system` pour apprendre comment "
-"le système d'interface utilisateur (UI) de Godot marche."
+"Voir :ref:`doc_introduction_to_the_buildsystem` pour une liste complète des "
+"arguments."
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:66
-#, fuzzy
 msgid "Apply the changes and close the configuration window."
-msgstr "Maintenant, enregistrez et fermez la fenêtre d'exportation."
+msgstr "Appliquez les changements et fermez la fenêtre de configuration."
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:69
-#, fuzzy
 msgid "Debugging the project"
-msgstr "Préparation du projet"
+msgstr "Débogage du projet"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:71
 msgid "Select **Run > Configure Launches...** from the top menu."
-msgstr ""
+msgstr "Sélectionnez **Run > Configure Launches...** dans le menu du haut."
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:77
 msgid "Click **Add** to create a new launch configuration."
 msgstr ""
+"Cliquez sur **Add** pour créer une nouvelle configuration de lancement."
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:78
 msgid ""
@@ -140,6 +142,10 @@ msgid ""
 "configuration, e.g. ``godot.x11.tools.64`` for 64-bit X11 platform with "
 "``tools`` enabled."
 msgstr ""
+"Sélectionnez l'option **Exécutable** et indiquez le chemin de votre "
+"exécutable situé dans le dossier ``<Godot root directory>/bin``. Le nom "
+"dépend de votre configuration de compilation, par exemple ``godot.x11."
+"tools.64`` pour une plate-forme X11 64 bits avec ``tools`` activé."
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
 msgid ""

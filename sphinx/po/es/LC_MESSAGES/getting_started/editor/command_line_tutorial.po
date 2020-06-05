@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -440,6 +440,9 @@ msgid ""
 "path ends with .pck or .zip (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Exporta el proyecto usando el objetivo de exportación indicado. Exporta sólo "
+"el paquete principal si termina con .pck o .zip (tiene que tener habilitado :"
+"ref:`tools <doc_introduction_to_the_buildsystem_tools>`)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid "``--export-debug <target>``"
@@ -696,9 +699,10 @@ msgid "Running a script"
 msgstr "Ejecutar un script"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:280
+#, fuzzy
 msgid ""
-"It is possible to run a simple .gd script from the command line. This "
-"feature is especially useful in large projects, for batch conversion of "
+"It is possible to run a simple ``.gd`` script from the command line. This "
+"feature is especially useful in large projects, e.g. for batch conversion of "
 "assets or custom import/export."
 msgstr ""
 "Es posible ejecutar un script.gd simple desde línea de comandos. Esta "
@@ -706,7 +710,8 @@ msgstr ""
 "conversión por lotes de recursos o la importación/exportación personalizada."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:284
-msgid "The script must inherit from SceneTree or MainLoop."
+#, fuzzy
+msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "El script debe heredar de SceneTree o MainLoop."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:286
@@ -718,9 +723,10 @@ msgid "And how to run it:"
 msgstr "Y cómo ejecutarlo:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
+#, fuzzy
 msgid ""
-"If no project.godot exists at the path, current path is assumed to be the "
-"current working directory (unless ``-path`` is specified)."
+"If no ``project.godot`` exists at the path, current path is assumed to be "
+"the current working directory (unless ``--path`` is specified)."
 msgstr ""
 "Si no existe el archivo project.godot en la ruta, se asume que la ruta "
 "actual es el directorio de trabajo actual (a menos que se especifique ``-"

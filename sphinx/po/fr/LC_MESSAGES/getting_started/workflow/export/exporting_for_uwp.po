@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,15 +33,14 @@ msgstr ""
 "n'importe quelle plateforme, pas seulement à partir de Windows."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
-#, fuzzy
 msgid ""
 "However, if you want to install and run the app, you need to sign it with a "
 "trusted signature. Godot supports automatic signing of packages with "
 "external tools."
 msgstr ""
 "Cependant, si vous voulez installer et exécuter l'application, vous devez la "
-"signer avec une signature de confiance. Godot ne supporte pas la signature "
-"de paquets, vous devez donc utiliser des outils externes pour le faire."
+"signer avec une signature de confiance. Godot supporte la signature de "
+"paquets, avec des outils externes."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
 msgid ""
@@ -181,6 +180,10 @@ msgid ""
 "Export > Uwp. From there you need to click on the folder for ``Signtool``, "
 "and navigate to the ``SignTool.exe`` file on your computer."
 msgstr ""
+"Pour configurer la signature automatique à l'exportation, vous devez aller "
+"dans les Editor Settings > Export > Uwp. De là, vous devez cliquer sur le "
+"dossier ``Signtool``, et naviguer jusqu'au fichier ``SignTool.exe`` sur "
+"votre ordinateur."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:72
 msgid ""
@@ -189,20 +192,27 @@ msgid ""
 "next to ``Certificate`` and go to the certificate file. Then enter the "
 "pfxPassword in the password field."
 msgstr ""
+"Après avoir configuré cela, fermez les paramètres de l'éditeur, allez à "
+"Project > Export, et sélectionnez le préréglage UWP. Sous les options "
+"``Signing``, cliquez sur le dossier à côté de ``Certificate`` et allez au "
+"fichier de certificat. Ensuite, entrez le pfxPassword dans le champ du mot "
+"de passe."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:79
 msgid "Your project will now be automatically signed on export."
-msgstr ""
+msgstr "Votre projet sera désormais automatiquement signé à l'exportation."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:81
 msgid ""
 "If you want to sign an exported app manually run ``SignTool.exe`` and use "
 "the following command."
 msgstr ""
+"Si vous voulez signer une application exportée manuellement, lancez "
+"``SignTool.exe`` et utilisez la commande suivante."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:84
 msgid "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
-msgstr ""
+msgstr "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:87
 msgid "Installing the package"

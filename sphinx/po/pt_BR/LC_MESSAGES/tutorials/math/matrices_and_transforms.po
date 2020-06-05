@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -272,19 +272,18 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:214
 msgid ""
-"This should be fairly common sense, assuming that you read and understood "
-"the vector tutorial, but let's work through an example. Again, we'll start "
-"with the identity transform, but this time we'll also keep track of the "
-"origin vector:"
+"Let's work through an example to help understand this. We will start with "
+"the identity transform like last time, except we will keep track of the "
+"origin vector this time."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:221
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:220
 msgid ""
 "If we want the object to move to a position of (1, 2), we simply need to set "
 "its `origin` vector to (1, 2):"
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:226
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:225
 msgid ""
 "There is also a `translated()` method, which performs a different operation "
 "to adding or changing `origin` directly. The `translated()` method will "
@@ -293,21 +292,22 @@ msgid ""
 "`Vector2.UP`."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:232
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:231
 msgid ""
 "Godot's 2D uses coordinates based on pixels, so in actual projects you will "
 "want to translate by hundreds of units."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:236
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:235
 #, fuzzy
 msgid "Putting it all together"
 msgstr "Preparando o projeto"
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:238
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:237
 msgid ""
 "We're going to apply everything we mentioned so far onto one transform. To "
-"follow along, get a simple project with a Sprite set to the Godot logo."
+"follow along, create a simple project with a Sprite node and use the Godot "
+"logo for the texture resource."
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:241

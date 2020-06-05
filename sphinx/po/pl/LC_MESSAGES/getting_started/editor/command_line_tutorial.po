@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -667,9 +667,10 @@ msgid "Running a script"
 msgstr "Uruchomienie skryptu"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:280
+#, fuzzy
 msgid ""
-"It is possible to run a simple .gd script from the command line. This "
-"feature is especially useful in large projects, for batch conversion of "
+"It is possible to run a simple ``.gd`` script from the command line. This "
+"feature is especially useful in large projects, e.g. for batch conversion of "
 "assets or custom import/export."
 msgstr ""
 "Z wiersza poleceń można uruchomić prosty skrypt .gd. Funkcja ta jest "
@@ -677,7 +678,8 @@ msgstr ""
 "importu/eksportu."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:284
-msgid "The script must inherit from SceneTree or MainLoop."
+#, fuzzy
+msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "Skrypt musi dziedziczyć po SceneTree lub MainLoop."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:286
@@ -689,9 +691,10 @@ msgid "And how to run it:"
 msgstr "I jak go uruchomić:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
+#, fuzzy
 msgid ""
-"If no project.godot exists at the path, current path is assumed to be the "
-"current working directory (unless ``-path`` is specified)."
+"If no ``project.godot`` exists at the path, current path is assumed to be "
+"the current working directory (unless ``--path`` is specified)."
 msgstr ""
 "Jeżeli w ścieżce nie istnieje project.godot, to zakłada się, że bieżąca "
 "ścieżka jest bieżącym katalogiem roboczym (chyba że podano ``-path``)."

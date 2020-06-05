@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,8 +75,9 @@ msgid "project.godot"
 msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
+#, fuzzy
 msgid ""
-"The project.godot file is the project description file, and it is always "
+"The ``project.godot`` file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
@@ -85,10 +86,11 @@ msgstr ""
 "열 때 Godot가 제일 먼저 찾는 파일입니다."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
+#, fuzzy
 msgid ""
 "This file contains the project configuration in plain text, using the win."
-"ini format. Even an empty project.godot can function as a basic definition "
-"of a blank project."
+"ini format. Even an empty ``project.godot`` can function as a basic "
+"definition of a blank project."
 msgstr ""
 "이 파일은 프로젝트 설정을 win.ini 형식을 사용해, 일반 텍스트로 갖습니다. 심지"
 "어 비어있는 project.godot도 비어있는 프로젝트의 기본 정의 기능을 할 수 있습니"
@@ -99,10 +101,11 @@ msgid "Path delimiter"
 msgstr "경로 구분 기호"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
+#, fuzzy
 msgid ""
 "Godot only supports ``/`` as a path delimiter. This is done for portability "
 "reasons. All operating systems support this, even Windows, so a path such as "
-"``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
+"``C:\\project\\project.godot`` needs to be typed as ``C:/project/project."
 "godot``."
 msgstr ""
 "Godot는 오직 ``/``\\ 만을 경로 구분 기호로 지원합니다. 그 이유는 이식 능력 입"
@@ -125,9 +128,10 @@ msgstr ""
 "로가 만들어졌습니다."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
+#, fuzzy
 msgid ""
-"The path ``res://`` will always point at the project root (where project."
-"godot is located, so ``res://project.godot`` is always valid)."
+"The path ``res://`` will always point at the project root (where ``project."
+"godot`` is located, so ``res://project.godot`` is always valid)."
 msgstr ""
 "``res://`` 경로는 항상 프로젝트 루트를 향합니다 (거기에는 project.godot이 있"
 "고, 그래서 ``res://project.godot`` 경로는 항상 존재합니다)."
@@ -148,20 +152,23 @@ msgid "User path"
 msgstr "사용자 경로(User path)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
+#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
-"special path ``user://`` that is always writable."
+"special path ``user://`` that is always writable. This path resolves "
+"differently depending on the OS the project is running on. Local path "
+"resolution is further explained in :ref:`doc_data_paths`."
 msgstr ""
 "디스크 쓰기는 게임 상태를 저장하거나 콘텐츠 팩을 다운로드하는 등의 작업에 여"
 "전히 필요합니다. 이를 위해, 엔진은 언제나 작성 가능한 ``user://`` 라는 특수 "
 "경로를 보장합니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:81
+#: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid "Host file system"
 msgstr "호스트 파일 시스템(Host file system)"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:83
+#: ../../docs/getting_started/step_by_step/filesystem.rst:85
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
@@ -173,11 +180,11 @@ msgstr ""
 "습니다. 하지만, 호스트 파일 시스템 경로는 Godot에서 개발 도구를 만들 때 유용"
 "할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:89
+#: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid "Drawbacks"
 msgstr "단점"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:91
+#: ../../docs/getting_started/step_by_step/filesystem.rst:93
 msgid ""
 "There are some drawbacks to this simple file system design. The first issue "
 "is that moving assets around (renaming them or moving them from one path to "
@@ -190,7 +197,7 @@ msgstr ""
 "등) 이 애셋에 관해 존재하는 참조를 깨버릴 것입니다. 이 참조는 새 애셋 위치를 "
 "향하도록 다시 정의해야만 합니다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:96
+#: ../../docs/getting_started/step_by_step/filesystem.rst:98
 msgid ""
 "To avoid this, do all your move, delete and rename operations from within "
 "Godot, on the FileSystem dock. Never move assets from outside Godot, or "
@@ -202,11 +209,12 @@ msgstr ""
 "마세요, 그렇지 않으면 종속 여부를 수동으로 설정해야만 합니다 (Godot는 이를 감"
 "지하고 당신이 고치는 것을 어쨌든 도울 것이지만, 왜 어려운 길로 가시나요?)."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:101
+#: ../../docs/getting_started/step_by_step/filesystem.rst:103
+#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
-"saves an asset as \"myfile.PNG\", but then references it as \"myfile.png\", "
+"saves an asset as ``myfile.PNG``, but then references it as ``myfile.png``, "
 "it will work fine on their platform, but not on other platforms, such as "
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
@@ -218,7 +226,7 @@ msgstr ""
 "는 압축된 패키지로 모든 파일을 저장하는 내보낸 바이너리에도 적용될 수 있습니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:107
+#: ../../docs/getting_started/step_by_step/filesystem.rst:109
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot. One simple fool-proof convention is to only "

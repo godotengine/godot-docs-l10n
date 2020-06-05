@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,45 +18,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
-#, fuzzy
 msgid "Introduction to Godot's editor"
-msgstr "Wprowadzenie do Godot Engine"
+msgstr "Wprowadzenie do edytora silnika Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
-#, fuzzy
 msgid ""
 "This tutorial will run you through Godot's interface. We're going to look at "
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
-"Ten samouczek poprowadzi cię przez interfejs Godota. Zobaczymy **Menedżera "
-"projektów, panele** i wszystko, co musisz wiedzieć, by zacząć go używać."
+"Ten samouczek poprowadzi cię przez interfejs Godota. Przyjrzymy się "
+"**menedżerowi projektów, dokom, przestrzeniom roboczym** i wszystkiemu, co "
+"musisz wiedzieć, by zacząć pracę z silnikiem."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
 msgstr "Menedżer projektów"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you'll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
-"Po uruchomieniu programu Godot pierwszym oknem, które zobaczysz, jest "
-"Menedżer Projektów. Pozwala grać, tworzyć, usuwać, importować projekty."
+"Po uruchomieniu Godota, pierwszym oknem, które zobaczysz, jest Menedżer "
+"Projektów. Ponieważ nie masz projektów, pojawi się okienko pytające, czy "
+"chcesz otworzyć bibliotekę zasobów. Po prostu kliknij anuluj, przyjrzymy się "
+"jej później."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
-#, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
 msgstr ""
-"Po uruchomieniu programu Godot pierwszym oknem, które zobaczysz, jest "
-"Menedżer Projektów. Pozwala grać, tworzyć, usuwać, importować projekty."
+"Teraz powinien się pokazać menedżer projektów. Pozwala ci on tworzyć, "
+"usuwać, importować lub uruchamiać projekty gier."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
-#, fuzzy
 msgid ""
 "In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
@@ -64,7 +62,6 @@ msgstr ""
 "W prawym górnym rogu znajduje się rozwijane menu do zmiany języka edytora."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
-#, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -72,43 +69,44 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"Z zakładki **Szablony** możesz pobrać szablony i dema projektów open source, "
-"które pomogą ci szybciej rozpocząć pracę."
+"Z zakładki **Szablony** możesz pobrać otwartoźródłowe szablony projektów i "
+"dema z Biblioteki Zasobów, by pomóc ci szybciej rozpocząć pracę. Wybierz po "
+"prostu szablon lub demo, które chcesz i kliknij pobierz. Kiedy pobieranie "
+"się skończy, kliknij instaluj i wybierz, gdzie chcesz, żeby projekt się "
+"znalazł. Możesz dowiedzieć się o tym więcej w :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
 msgstr "Utwórz lub zaimportuj projekt"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
 "Aby utworzyć nowy projekt, kliknij przycisk ``Nowy projekt`` po prawej "
-"stronie. Nadaj mu nazwę i wybierz pusty folder na komputerze, aby go zapisać."
+"stronie. Nadaj mu nazwę, wybierz pusty folder na komputerze, aby go zapisać "
+"oraz wybierz renderer."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
-#, fuzzy
 msgid ""
 "Click the Browse button to open Godot's file browser and pick a location or "
 "type the folder's path in the Project Path field."
 msgstr ""
-"Kliknij przycisk Przeglądaj, aby otworzyć przeglądarkę plików Godota i "
-"wybrać lokalizację lub wpisać ścieżkę do folderu w polu ścieżka projektu."
+"Kliknij przycisk Przeglądaj, aby otworzyć Godotową przeglądarkę plików i "
+"wybierz lokalizację lub wpisz ścieżkę do folderu w polu Ścieżka projektu."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
-#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"Gdy zobaczysz zielony haczyk po prawej, oznacza to, że silnik wykrywa pusty "
-"folder i możesz kliknąć ``Stwórz``. Godot stworzy projekt dla Ciebie i "
-"otworzy go w edytorze."
+"Kiedy zobaczysz zielony haczyk po prawej, oznacza to, że silnik wykrywa "
+"pusty folder. Możesz także kliknąć przycisk ``Utwórz katalog`` obok nazwy "
+"twojego projektu i zostanie utworzony pusty folder z nazwą projektu."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
 msgid ""
@@ -126,23 +124,20 @@ msgstr ""
 "tutorialu każdy backend jest w porządku."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"Gdy zobaczysz zielony haczyk po prawej, oznacza to, że silnik wykrywa pusty "
-"folder i możesz kliknąć ``Stwórz``. Godot stworzy projekt dla Ciebie i "
-"otworzy go w edytorze."
+"Kiedy skończysz kliknij ``Utwórz i edytuj`. Godot utworzy dla ciebie projekt "
+"i otworzy go w edytorze."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"Następnym razem, gdy otworzysz menedżera projektu, nowy projekt zostanie "
-"wyświetlony na liście. Kliknij dwukrotnie, aby otworzyć go w edytorze."
+"Następnym razem, gdy otworzysz menedżer projektów, zobaczysz swój nowy "
+"projekt na liście. Kliknij na niego dwukrotnie, aby otworzyć go w edytorze."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -159,20 +154,18 @@ msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr "Jeśli ścieżka do katalogu będzie poprawna, zobaczysz zielony znacznik."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
-#, fuzzy
 msgid "Your first look at Godot's editor"
 msgstr "Twoje pierwsze spojrzenie na edytor Godota"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"Witamy w Godocie! W oknie projektu powinien być widoczny interfejs edytora z "
-"aktywnym widokiem 3D. Można zmienić aktualny obszar roboczy na górze "
-"interfejsu. Wybierz 2D, by przejść do widoku 2D."
+"Witamy w Godocie! Po otwarciu projektu, powinien ci się pokazać interfejs "
+"edytora, z różnymi menu na górze interfejsu oraz dokami wzdłuż końca każdego "
+"boku głównego widoku sceny."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
@@ -183,32 +176,29 @@ msgstr ""
 "robocze** oraz **przyciski odtwarzacza**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
-"Po lewej stronie znajduje się **panel systemu plików**, gdzie można "
-"zarządzać plikami projektu i zasobami."
+"W **Doku systemu plików** będziesz zarządzać plikami i zasobami swojego "
+"projektu."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
-#, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"Po prawej stronie znajdują się **Panel sceny**, który wyświetla zawartość "
-"aktywnej sceny oraz **Inspektor** poniżej."
+"**Dok sceny** listuje zawartość aktywnej sceny, a **Inspector** pozwala na "
+"zarządzanie właściwościami zawartości sceny."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you'll find tools "
 "to move, scale or lock your scene's objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"Na środku u góry znajduje się **Pasek Narzędzi**, oferujący funkcje "
-"przesuwania, skalowania czy blokowania obiektów sceny. Zmienia się w "
-"zależności od obszaru roboczego."
+"Na górze na środku jest **Pasek narzędzi**, gdzie znajdziesz narzędzia do "
+"przesuwania, skalowania czy blokowania obiektów sceny. Zmienia się on kiedy "
+"przechodzisz między różnymi obszarami roboczymi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
 #, fuzzy
@@ -285,12 +275,16 @@ msgid ""
 "signal in the engine while you are writing a script, press the \"Search Help"
 "\" button at the top right of the Script workspace."
 msgstr ""
+"By wyszukać informacje o klasie, metodzie, właściwości, stałej albo sygnale "
+"w silniku podczas pisana skryptu, wciśnij przycisk \"Wyszukaj w pomocy\" w "
+"prawym górnym rogu przestrzeni roboczej skryptu."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid ""
 "A new window will pop up. Search for the item that you want to find "
 "information about."
 msgstr ""
+"Pojawi się nowe okno. Wyszukaj pozycję, o której chcesz znaleźć informacje."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,11 +39,11 @@ msgid ""
 "well."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:17
+#: ../../docs/tutorials/2d/2d_movement.rst:19
 msgid "Setup"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:19
+#: ../../docs/tutorials/2d/2d_movement.rst:21
 msgid ""
 "Each example below uses the same scene setup. Start with a "
 "``KinematicBody2D`` with two children: ``Sprite`` and ``CollisionShape2D``. "
@@ -51,18 +51,18 @@ msgid ""
 "any other 2D image you have."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:23
+#: ../../docs/tutorials/2d/2d_movement.rst:25
 msgid ""
 "Open ``Project -> Project Settings`` and select the \"Input Map\" tab. Add "
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
 "details):"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:29
+#: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:31
+#: ../../docs/tutorials/2d/2d_movement.rst:33
 msgid ""
 "In this scenario, you want the user to press the four directional keys (up/"
 "left/down/right or W/A/S/D) and move in the selected direction. The name \"8-"
@@ -70,35 +70,42 @@ msgid ""
 "pressing two keys at the same time."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:37
+#: ../../docs/tutorials/2d/2d_movement.rst:39
 msgid "Add a script to the kinematic body and add the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:101
+#: ../../docs/tutorials/2d/2d_movement.rst:103
 msgid ""
-"In the ``get_input()`` function we check for the four key events and sum "
+"In the ``get_input()`` function, we check for the four key events and sum "
 "them up to get the velocity vector. This has the benefit of making two "
 "opposite keys cancel each other out, but will also result in diagonal "
 "movement being faster due to the two directions being added together."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:106
+#: ../../docs/tutorials/2d/2d_movement.rst:108
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:109
+#: ../../docs/tutorials/2d/2d_movement.rst:111
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:113
+#: ../../docs/tutorials/2d/2d_movement.rst:116
+msgid ""
+"If the code above does nothing when you press the keys, double-check that "
+"you've set up input actions correctly as described in the :ref:"
+"`doc_2d_movement_setup` part of this tutorial."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:121
 msgid "Rotation + movement"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:115
+#: ../../docs/tutorials/2d/2d_movement.rst:123
 msgid ""
 "This type of movement is sometimes called \"Asteroids-style\" because it "
 "resembles how that classic arcade game worked. Pressing left/right rotates "
@@ -106,7 +113,7 @@ msgid ""
 "direction it's facing."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:190
+#: ../../docs/tutorials/2d/2d_movement.rst:198
 msgid ""
 "Here we've added two new variables to track our rotation direction and "
 "speed. Again, pressing both keys at once will cancel out and result in no "
@@ -114,7 +121,7 @@ msgid ""
 "property."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:194
+#: ../../docs/tutorials/2d/2d_movement.rst:202
 msgid ""
 "To set the velocity, we use the ``Vector2.rotated()`` method, so that it "
 "points in the same direction as the body. ``rotated()`` is a useful vector "
@@ -122,11 +129,11 @@ msgid ""
 "need to apply trigonometric functions."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:200
+#: ../../docs/tutorials/2d/2d_movement.rst:208
 msgid "Rotation + movement (mouse)"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:202
+#: ../../docs/tutorials/2d/2d_movement.rst:210
 msgid ""
 "This style of movement is a variation of the previous one. This time, the "
 "direction is set by the mouse position instead of the keyboard. The "
@@ -134,24 +141,24 @@ msgid ""
 "remain the same, however."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:261
+#: ../../docs/tutorials/2d/2d_movement.rst:269
 msgid ""
 "Here we're using the :ref:`Node2D <class_Node2D>` ``look_at()`` method to "
 "point the player towards a given position. Without this function, you could "
 "get the same effect by setting the angle like this:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:276
+#: ../../docs/tutorials/2d/2d_movement.rst:284
 msgid "Click-and-move"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:278
+#: ../../docs/tutorials/2d/2d_movement.rst:286
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:335
+#: ../../docs/tutorials/2d/2d_movement.rst:343
 msgid ""
 "Note the ``distance_to()`` check we make prior to movement. Without this "
 "test, the body would \"jitter\" upon reaching the target position, as it "
@@ -159,30 +166,30 @@ msgid ""
 "far and repeat."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:340
+#: ../../docs/tutorials/2d/2d_movement.rst:348
 msgid ""
 "Uncommenting the ``look_at()`` line will also turn the body to point in its "
 "direction of motion if you prefer."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:343
+#: ../../docs/tutorials/2d/2d_movement.rst:351
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:347
+#: ../../docs/tutorials/2d/2d_movement.rst:355
 msgid "Summary"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:349
+#: ../../docs/tutorials/2d/2d_movement.rst:357
 msgid ""
 "You may find these code samples useful as starting points for your own "
 "projects. Feel free to use them and experiment with them to see what you can "
 "make."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:352
+#: ../../docs/tutorials/2d/2d_movement.rst:360
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"

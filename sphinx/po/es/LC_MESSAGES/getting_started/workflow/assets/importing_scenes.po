@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,10 +48,11 @@ msgstr "Godot soporta los siguientes formatos de *archivo de escena 3D*:"
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
 msgid "glTF 2.0. Godot has full support for text and binary formats."
 msgstr ""
+"glTF 2.0. Godot tiene soporte completo para formato de texto y binario."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
 msgid "DAE (COLLADA), an older format that is fully supported."
-msgstr ""
+msgstr "DAE (COLLADA), un formato viejo que está completamente soportado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
 msgid ""
@@ -64,6 +65,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:19
 msgid "ESCN, a Godot specific format that Blender can export with a plugin."
 msgstr ""
+"ESCN, un formato específico de Godot que puede ser exportado por Blender con "
+"un plugin."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:20
 msgid ""
@@ -121,6 +124,9 @@ msgid ""
 "glb`` file), glTF embedded (``.gltf`` file), and with textures (``gltf`` + "
 "``.bin`` + textures)."
 msgstr ""
+"Existen tres modo de exportar archivos glTF desde blender. Como un glTF "
+"binario (archivo ``.glb``), glTF embebido (archivo ``.gltf``), y con "
+"texturas (``gltf`` + ``.bin`` + texturas)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:44
 msgid ""
@@ -128,6 +134,9 @@ msgid ""
 "mesh and textures set up in Blender. When brought into Godot the textures "
 "are part of the object's material file."
 msgstr ""
+"Archivos binarios glTF es la opción más pequeña de las tres. Incluyen las "
+"mallas y texturas asignadas en Blender. Cuando los llevas a Godot, las "
+"texturas son parte del archivo de material del objeto."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:47
 msgid ""
@@ -135,6 +144,9 @@ msgid ""
 "provide extra functionality in Godot, and shouldn't be used since they have "
 "a larger file size."
 msgstr ""
+"Archivos glTF embebidos funcionan igual que archivos binarios. No proveen "
+"funcionalidad extra en Godot y no deben ser usados ya que son archivos de "
+"gran tamaño."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:50
 msgid ""
@@ -145,12 +157,20 @@ msgid ""
 "files separate from the material file. If you don't need either of those "
 "glTF binary files are fine."
 msgstr ""
+"Existen dos razones para usar glTF con texturas por separado. Una es tener "
+"la descripción de la escena en formato texto y el binario en un archivo "
+"separado, esto puede ser útil para control de versiones si quieres revisar "
+"cambios en un formato de texto. El segundo es que necesitas las texturas "
+"separadas del archivo de material. Si no necesitas nada de eso, los archivos "
+"glTF binarios están bien."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
 msgid ""
 "Blender does not export emissive textures with the glTF file. If your model "
 "uses one it must be brought in separately."
 msgstr ""
+"Blender no exporta texturas emisivas con el archivo glTF. Si tu modelo las "
+"usa, deben ser agregadas de manera separada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:58
 msgid "Exporting DAE files from Blender"
@@ -559,21 +579,23 @@ msgstr "Bakeo de iluminación"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:227
 msgid "Whether or not the mesh is used in baked lightmaps."
-msgstr ""
+msgstr "Indica si la malla será o no usada en bakeo de lightmaps."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:229
 msgid "**Disabled:** The mesh is not used in baked lightmaps."
-msgstr ""
+msgstr "**Deshabilitado:** La malla no será usada en lightmaps bakeados."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:230
 msgid "**Enable:** The mesh is used in baked lightmaps."
-msgstr ""
+msgstr "**Activado:** La malla será usada en bakeo de lightmaps."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:231
 msgid ""
 "**Gen Lightmaps:** The mesh is used in baked lightmaps, and unwraps a second "
 "UV layer for lightmaps."
 msgstr ""
+"**Gen Lightmaps:** La malla será usada en lightmaps bakeados, y desenvolverá "
+"una segunda capa UV para lightmaps."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:233
 msgid "For more information on light baking see :ref:`doc_baked_lightmaps`."
@@ -652,6 +674,12 @@ msgid ""
 "expression match, using ``?`` and ``*`` wildcards (using ``String.matchn()`` "
 "under the hood)."
 msgstr ""
+"El filtro de script es ejecutado en cada animación importada. La sintaxis "
+"consta de dos tipos de sentencias, la primera es para seleccionar qué "
+"animación filtrar, la segunda para filtrar pistas individuales en la "
+"animación seleccionada. Todos los patrones de nombre son realizados usando "
+"una expresión de coincidencias sensible a mayúsculas, usando comodines ``?`` "
+"y ``*`` (utiliza ``String.matchn()`` por detrás)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:272
 msgid ""
@@ -660,6 +688,10 @@ msgid ""
 "filters to all imported animations which have a name ending in ``\"_Loop"
 "\"``::"
 msgstr ""
+"El script deberá comenzar con una sentecia de filtro de animación (como "
+"denota la línea comenzada con una ``@``). Por ejemplo, si vamos a aplicar "
+"filtros a todas las animaciones importadas que tengan un nombre terminado en "
+"``\"Loop\"``::"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:278
 msgid ""
@@ -668,6 +700,10 @@ msgid ""
 "with names that begin with ``\"Arm_Left\"``, but also *exclude* all "
 "animations which have names ending in ``\"Attack\"``::"
 msgstr ""
+"Similarmente, se pueden agregar patrones adicionales a la misma línea, "
+"separados por comas. Aquí está un ejemplo modificado para *incluir* todas "
+"las animaciones cuyos nombres comiencen con ``\"Arm_Left\"``, y también "
+"*excluir* todas las animaciones que terminen con ``\"Attack\"``::"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:284
 msgid ""
@@ -676,6 +712,11 @@ msgid ""
 "no track filter patterns are specified, then all tracks within the matched "
 "animations will be discarded!"
 msgstr ""
+"Siguiendo a la sentencia de filtro de selección de animación, podemos "
+"agregar patrones de filtro de pistas para indicar qué pistas de animación "
+"deben mantenerse o descartarse. Si no hay patrón de filtro de animación "
+"especificado, entonces todas las pistas dentro de la animación que coinciden "
+"con el filtro serán descartadas."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:288
 msgid ""
@@ -685,6 +726,11 @@ msgid ""
 "early rule may then be re-included once again by a filter rule further down "
 "in the filter script."
 msgstr ""
+"Es importante notar que las sentencias de filtro de pista son aplicadas en "
+"orden para cada pista de la animación, esto significa que una línea puede "
+"incluir una pista, y una regla posterior descartarla. De manera similar, una "
+"pista excluida tempranamente puede ser re-incluída nuevamente por una regla "
+"de filtro más adelante en el script."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:293
 msgid ""
@@ -692,6 +738,10 @@ msgid ""
 "\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
 "\"Control\"``, unless they have ``\"Arm\"`` in their name::"
 msgstr ""
+"Por ejemplo: incluye todas las pistas en animaciones con nombres terminados "
+"en ``\"_Loop\"``, pero descarta cualquier track que afecta un ``\"Skeleton"
+"\"`` que terminan en ``\"Control\"``, a menos que tengan ``\"Arm\"`` en su "
+"nombre::"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:302
 msgid ""
@@ -699,11 +749,15 @@ msgid ""
 "discarded, while tracks such as ``\"Skeleton:Head\"`` or ``\"Skeleton:"
 "Arm_Left_Control\"`` would be retained."
 msgstr ""
+"En el ejemplo anterior, pistas como ``\"Skeleton:Leg_Control\"`` serán "
+"descartadas, mientras que pistas como ``\"Skeleton:Head\"`` o ``\"Skeleton:"
+"Arm_Left_Control\"`` serán retenidas."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
 msgid ""
 "Any track filter lines that do not begin with a ``+`` or ``-`` are ignored."
 msgstr ""
+"Cualquier filtro de pista que no comience con un ``+`` o ``-`` son ignorados."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:310
 msgid ""
@@ -742,6 +796,11 @@ msgid ""
 "greater than zero. You can then name a clip, specify which frames it starts "
 "and stops on, and choose whether the animation loops or not."
 msgstr ""
+"Es posible especificar animaciones múltiples desde una única línea de tiempo "
+"como clips. Para que esto funcione, el modelo debe contener una única "
+"animación llamada ``default``. Para crear clips, cambia la cantidad de clips "
+"a algo más grande que cero. Entonces puedes nombrar un clip, especificar en "
+"qué frames comienza y termina y elegir si la animación es cíclica o no."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:331
 msgid "Scene inheritance"

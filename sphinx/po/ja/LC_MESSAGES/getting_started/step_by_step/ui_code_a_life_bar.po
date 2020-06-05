@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,12 +68,13 @@ msgstr ""
 "のUIチュートリアルを参照してください:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
-msgid "Create a main menu screen"
-msgstr "メインメニュー画面の作成"
+msgid ":doc:`ui_main_menu`"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
-msgid "Create a game user interface"
-msgstr "ゲーム ユーザーインターフェイスの作成"
+#, fuzzy
+msgid ":doc:`ui_game_user_interface`"
+msgstr "\\ :ref:`doc_godot_interfaces`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -792,18 +793,7 @@ msgstr ""
 "``health_changed`` 後の ``Player`` の ``health`` 、つまり ``new_value`` で"
 "す。 ``0.6`` はアニメーションの秒単位の長さです。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:445
-msgid ""
-"The last two arguments are constants from the ``Tween`` class. "
-"``TRANS_LINEAR`` means the animation should be linear. ``EASE_IN`` doesn't "
-"do anything with a linear transition, but we must provide this last argument "
-"or we'll get an error."
-msgstr ""
-"最後の2つの引数は、 ``Tween`` クラスの定数です。 ``TRANS_LINEAR`` は、アニ"
-"メーションがリニアでなければならないことを意味します。 ``EASE_IN`` は線形遷移"
-"では何も行いませんが、この最後の引数を指定しないとエラーが発生します。"
-
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:450
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:441
 msgid ""
 "The animation will not play until we activated the ``Tween`` node with "
 "``tween.start()``. We only have to do this once if the node is not active. "
@@ -813,7 +803,7 @@ msgstr ""
 "生されません。ノードがアクティブでない場合は、これを一度だけ実行する必要があ"
 "ります。 最後の行の後にこのコードを追加します:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:460
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -829,11 +819,11 @@ msgstr ""
 "は、コードで制御されたアニメーションに最適です。自作のアニメーションについて"
 "は、 `AnimationPlayer` をご覧ください。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:472
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:463
 msgid "Assign the animated\\_health to the LifeBar"
 msgstr "LifeBarにanimated\\_healthを割り当て"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:474
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:465
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
@@ -841,11 +831,11 @@ msgstr ""
 "``animated_health`` 変数はアニメーションされますが、実際の ``Bar`` ノードと"
 "``Number`` ノードは更新されません。これを修正しましょう。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:477
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
 msgid "So far, the update\\_health method looks like this:"
 msgstr "これまでのところ、update\\_healthメソッドは次のようになります:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:492
 msgid ""
 "In this specific case, because ``number_label`` takes text, we need to use "
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
@@ -855,7 +845,7 @@ msgstr ""
 "使ってアニメーションする必要があります。前と同じように、 ``_process`` 内の "
 "``Number`` ノードと ``TextureProgress`` ノードを更新します:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:523
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:514
 msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
@@ -863,7 +853,7 @@ msgstr ""
 "`number_label` と `bar` は、 `Number` ノードと `TextureProgress` ノードへの参"
 "照を格納する変数です。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:516
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
@@ -874,11 +864,11 @@ msgstr ""
 "のスタイルを考慮すると、ライフバーがより途切れやすい方法でアニメーションされ"
 "るとよいでしょう。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:522
 msgid "The animation is smooth, but the number is broken"
 msgstr "アニメーションは滑らかですが、番号の表示が乱れています"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:524
 msgid ""
 "We can fix both problems by rounding out ``animated_health``. Use a local "
 "variable named ``round_value`` to store the rounded ``animated_health``. "
@@ -889,16 +879,16 @@ msgstr ""
 "``animated_health`` を格納します。 それを ``number_label.text`` と ``bar."
 "value`` に割り当てます:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:546
 msgid "Try the game again to see a nice blocky animation."
 msgstr ""
 "もう一度ゲームを実行すると、ブロックのようなアニメーションが表示されます。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:550
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "animated\\_healthの四捨五入と文字列へ変換を一緒に行えば、一石二鳥です"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:554
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -914,11 +904,11 @@ msgstr ""
 "バーは、単に見た目上のトリックですが、それによってGUIが生き生きと感じられま"
 "す。もしも ``Player`` が3つのダメージを受けた場合、一瞬で発生します。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:562
 msgid "Fade the bar when the Player dies"
 msgstr "自機損失時にバーを消す"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:564
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
@@ -930,7 +920,7 @@ msgstr ""
 "しょう。複数のアニメーションを並行して管理するため、同じ ``Tween`` ノードを再"
 "利用します。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:569
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
@@ -942,15 +932,15 @@ msgstr ""
 "クで ``Player`` ノードを選択し、インスペクタの隣にあるノードタブをクリックし"
 "ます。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:583
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:574
 msgid "Find the ``died`` signal, select it, and click the Connect button."
 msgstr "``died`` シグナルを見つけて選択し、接続ボタンをクリックします。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
 msgid "The signal should already have the Enemy connected to it"
 msgstr "シグナルにはすでに敵が接続しているはずです"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:580
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -963,11 +953,11 @@ msgstr ""
 "す。関数作成オプションをオンのままにして、ウィンドウ下部の接続をクリックしま"
 "す。 これにより、スクリプトワークスペースの ``GUI.gd`` ファイルに移動します。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:597
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:588
 msgid "You should get these values in the Connecting Signal window"
 msgstr "これらの値は、シグナルの接続ウィンドウに表示されます"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:601
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:592
 msgid ""
 "You should see a pattern by now: every time the GUI needs a new piece of "
 "information, we emit a new signal. Use them wisely: the more connections you "
@@ -977,7 +967,7 @@ msgstr ""
 "クションを追加すればするほど、それらを追跡するのは難しくなります。上手く使い"
 "ましょう。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:594
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
@@ -985,7 +975,7 @@ msgstr ""
 "UI要素でフェードをアニメーションするには、その ``modulate`` プロパティを使用"
 "する必要があります。 ``modulate`` はテクスチャの色を乗算する ``Color`` です。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:609
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:600
 msgid ""
 "`modulate` comes from the `CanvasItem` class, All 2D and UI nodes inherit "
 "from it. It lets you toggle the visibility of the node, assign a shader to "
@@ -995,7 +985,7 @@ msgstr ""
 "れを継承します。ノードの表示/非表示を切り替え、シェーダを割り当て、 "
 "`modulate` で色を使用して修正することができます。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:602
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
@@ -1005,7 +995,7 @@ msgstr ""
 "ります。最初の3つのチャネルのいずれかを暗くすると、インターフェイスが暗くなり"
 "ます。アルファチャンネルを下げると、インターフェイスがフェードアウトします。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:606
 msgid ""
 "We're going to tween between two color values: from a white with an alpha of "
 "``1``, that is to say at full opacity, to a pure white with an alpha value "
@@ -1019,7 +1009,7 @@ msgstr ""
 "``start_color`` と ``end_color`` という名前を付けます。 ``Color()`` コンスト"
 "ラクタを使用して、2つの ``Color`` 値を構築します。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:637
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:628
 msgid ""
 "``Color(1.0, 1.0, 1.0)`` corresponds to white. The fourth argument, "
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
@@ -1028,7 +1018,7 @@ msgstr ""
 "``Color(1.0、1.0、1.0)`` は白に対応します。 4番目の引数、 ``start_color`` と "
 "``end_color`` のそれぞれ ``1.0`` と ``0.0`` は、アルファチャンネルです。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:632
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
@@ -1036,27 +1026,27 @@ msgstr ""
 "次に、 ``Tween`` ノードの ``interpolate_property`` メソッドをもう一度呼び出す"
 "必要があります:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:645
+#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
-"linear transition. Here again, because the transition is linear, the easing "
-"does not matter. Here's the complete ``_on_Player_died`` method:"
+"linear transition. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
 "今回は、\\ ``modulate`` プロパティを変更し、\\ ``start_color`` から "
 "``end_color`` にアニメートします。継続時間は1秒で、線形に遷移します。ここで"
 "も、遷移は線形であるため、イージングは重要ではありません。完全な "
 "``_on_Player_died`` メソッドは次のとおりです:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:669
 msgid "And that is it. You may now play the game to see the final result!"
 msgstr "以上です。これでゲームをプレイして最終結果を確認できます！"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:673
 msgid "The final result. Congratulations for getting there!"
 msgstr "最終結果。上手くいきましたね！"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:677
 msgid ""
 "Using the exact same techniques, you can change the color of the bar when "
 "the Player gets poisoned, turn the bar red when its health drops low, shake "

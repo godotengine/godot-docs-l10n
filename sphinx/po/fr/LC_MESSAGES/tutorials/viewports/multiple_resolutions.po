@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,7 +125,8 @@ msgstr ""
 "différentes tailles et différents rapports d'aspect."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:49
-msgid "Godot provides a several useful tools to do this easily."
+#, fuzzy
+msgid "Godot provides several useful tools to do this easily."
 msgstr "Godot fournit plusieurs outils utiles pour le faire facilement."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:52
@@ -206,19 +207,20 @@ msgid "Stretch settings"
 msgstr "Parametre d'étirement"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:90
+#, fuzzy
 msgid ""
-"Stretch settings are located in the project settings, it's just a bunch of "
-"configuration variables that provide several options:"
+"Stretch settings are located in the project settings and provide several "
+"options:"
 msgstr ""
 "Les paramètres d'étirement sont situés dans les paramètres du projet, c'est "
 "juste un tas de variables de configuration qui fournissent plusieurs "
 "options :"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:96
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:95
 msgid "Stretch Mode"
 msgstr "Mode Étirement"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:98
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:97
 msgid ""
 "The **Stretch Mode** setting defines how the base size is stretched to fit "
 "the resolution of the window or screen."
@@ -226,7 +228,7 @@ msgstr ""
 "Le paramètre **Mode d'étirement** définit comment la taille de base est "
 "étirée pour s'adapter à la résolution de la fenêtre ou de l'écran."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:103
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:102
 msgid ""
 "The animations below use a \"base size\" of just 16×9 pixels to demonstrate "
 "the effect of different stretch modes. A single sprite, also 16×9 pixels in "
@@ -238,7 +240,7 @@ msgstr ""
 "sprite, également de taille 16×9 pixels, couvre la totalité du viewport, et "
 "une diagonale :ref:`Line2D <class_Line2D>` est ajoutée par dessus :"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:113
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:112
 msgid ""
 "**Stretch Mode = Disabled** (default): No stretching happens. One unit in "
 "the scene corresponds to one pixel on the screen. In this mode, the "
@@ -248,7 +250,7 @@ msgstr ""
 "unité dans la scène correspond à un pixel sur l'écran. Dans ce mode, le "
 "réglage **Stretch Aspect** n'a aucun effet."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:117
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:116
 msgid ""
 "This is a good option if you want full control over every screen pixel, and "
 "is probably the best option for 3D games."
@@ -256,7 +258,7 @@ msgstr ""
 "C'est une bonne option si vous voulez un contrôle total sur chaque pixel de "
 "l'écran, et c'est probablement la meilleure option pour les jeux 3D."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:122
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:121
 msgid ""
 "**Stretch Mode = 2D**: In this mode, the size specified in display/width and "
 "display/height in the project settings is stretched to cover the whole "
@@ -273,7 +275,7 @@ msgstr ""
 "de correspondance 1:1 entre les pixels des sprites et les pixels de l'écran, "
 "ce qui peut entraîner des artefacts de mise à l'échelle."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:130
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:129
 msgid ""
 "This is a good option if your 2D artwork has a sufficiently high resolution "
 "and does not require pixel-perfect rendering. Consider enabling texture "
@@ -283,7 +285,7 @@ msgstr ""
 "et ne nécessite pas un rendu parfait au pixel près. Pensez à activer le "
 "filtrage des textures et le mipmapping sur vos textures et polices 2D."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:137
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:136
 msgid ""
 "**Stretch Mode = Viewport**: Viewport scaling means that the size of the "
 "root :ref:`Viewport <class_Viewport>` is set precisely to the base size "
@@ -298,7 +300,7 @@ msgstr ""
 "ce viewport est mise à l'échelle pour s'adapter à l'écran (en tenant compte "
 "du paramètre **Stretch Aspect**)."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:144
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:143
 msgid ""
 "This mode is useful when working with pixel-precise games, or for the sake "
 "of rendering to a lower resolution to improve performance."
@@ -307,11 +309,11 @@ msgstr ""
 "obtenir un rendu à une résolution plus faible afin d'améliorer les "
 "performances."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:150
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:149
 msgid "Stretch Aspect"
 msgstr "Stretch Aspect"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:152
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:151
 msgid ""
 "The second setting is the stretch aspect. Note that this only takes effect "
 "if **Stretch Mode** is set to something other than **Disabled**."
@@ -319,7 +321,7 @@ msgstr ""
 "Le deuxième réglage est le stretch aspect. Notez que cela ne prend effet que "
 "si **Stretch Mode** est réglé sur autre chose que **Désactivé**."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:155
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:154
 msgid ""
 "In the animations below, you will notice gray and black areas. The black "
 "areas are added by the engine and cannot be drawn into. The gray areas are "
@@ -332,7 +334,7 @@ msgstr ""
 "dessinées. Les zones grises correspondent à la région en dehors du cadre "
 "bleu que vous voyez dans l'éditeur 2D."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:160
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:159
 msgid ""
 "**Stretch Aspect = Ignore**: Ignore the aspect ratio when stretching the "
 "screen. This means that the original resolution will be stretched to exactly "
@@ -345,7 +347,7 @@ msgstr ""
 "entraîner un étirement non uniforme : les objets semblent plus larges ou "
 "plus hauts que prévu."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:168
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:167
 msgid ""
 "**Stretch Aspect = Keep**: Keep aspect ratio when stretching the screen. "
 "This means that the viewport retains its original size regardless of the "
@@ -358,7 +360,7 @@ msgstr ""
 "haut/en bas de l'écran (\"letterboxing\") ou sur les côtés (\"pillarboxing"
 "\")."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:174
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:173
 msgid ""
 "This is a good option if you know the aspect ratio of your target devices in "
 "advance, or if you don't want to handle different aspect ratios."
@@ -367,7 +369,7 @@ msgstr ""
 "vos appareils cibles ou si vous ne voulez pas gérer des rapports d'aspect "
 "différents."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:180
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:179
 msgid ""
 "**Stretch Aspect = Keep Width**: Keep aspect ratio when stretching the "
 "screen. If the screen is wider than the base size, black bars are added at "
@@ -383,7 +385,7 @@ msgstr ""
 "sens vertical (et plus de contenu sera visible vers le bas). Vous pouvez "
 "aussi considérer cela comme une \"Expansion Verticale\"."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:187
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:186
 msgid ""
 "This is usually the best option for creating GUIs or HUDs that scale, so "
 "some controls can be anchored to the bottom (:ref:`doc_size_and_anchors`)."
@@ -392,7 +394,7 @@ msgstr ""
 "ou des HUDs à l'échelle, comme cela certaines commandes peuvent être ancrées "
 "au bas (:ref:`doc_size_and_anchors`)."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:193
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:192
 msgid ""
 "**Stretch Aspect = Keep Height**: Keep aspect ratio when stretching the "
 "screen. If the screen is taller than the base size, black bars are added at "
@@ -408,7 +410,7 @@ msgstr ""
 "horizontal (et plus de contenu sera visible à droite). Vous pouvez aussi "
 "considérer cela comme une \"Expansion Horizontale\"."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:200
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:199
 msgid ""
 "This is usually the best option for 2D games that scroll horizontally (like "
 "runners or platformers)."
@@ -416,7 +418,7 @@ msgstr ""
 "C'est généralement la meilleure option pour les jeux 2D qui défilent "
 "horizontalement (comme les runners ou les platformers)."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:205
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:204
 msgid ""
 "**Stretch Aspect = Expand**: Keep aspect ratio when stretching the screen, "
 "but keep neither the base width nor height. Depending on the screen aspect "
@@ -430,11 +432,11 @@ msgstr ""
 "horizontal (si l'écran est plus large que la taille de base) ou dans le sens "
 "vertical (si l'écran est plus haut que la taille d'origine)."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:215
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:214
 msgid "Stretch Shrink"
 msgstr "Stretch Shrink"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:217
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:216
 msgid ""
 "The **Shrink** setting allows you to add an extra scaling factor on top of "
 "what the **Stretch** options above already provide. The default value of 1 "
@@ -445,7 +447,7 @@ msgstr ""
 "fournissent déjà. La valeur par défaut de 1 signifie qu'il n'y a pas de mise "
 "à l'échelle."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:221
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:220
 msgid ""
 "If, for example, you set **Shrink** to 4 and leave **Stretch Mode** on "
 "**Disabled**, each unit in your scene will correspond to 4×4 pixels on the "
@@ -455,7 +457,7 @@ msgstr ""
 "Mode** sur **Disabled**, chaque unité de votre scène correspondra à 4×4 "
 "pixels à l'écran."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:225
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:224
 msgid ""
 "If **Stretch Mode** is set to something other than **Disabled**, the size of "
 "the root viewport is scaled down by the **Shrink** factor, and pixels in the "
@@ -469,11 +471,11 @@ msgstr ""
 "jeux 2D, mais peut être utilisé pour augmenter les performances des jeux 3D "
 "en les rendant à une résolution plus faible."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:232
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:231
 msgid "From scripts"
 msgstr "Depuis les scripts"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:234
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:233
 msgid ""
 "To configure stretching at runtime from a script, use the ``get_tree()."
 "set_screen_stretch()`` function (see :ref:`SceneTree.set_screen_stretch() "
@@ -483,11 +485,11 @@ msgstr ""
 "``get_tree().set_screen_stretch()`` (voir :ref:`SceneTree."
 "set_screen_stretch() <class_SceneTree_method_set_screen_stretch>`)."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:239
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:238
 msgid "Reducing aliasing on downsampling"
 msgstr "Réduction de l'aliasing lors du sous-échantillonnage"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:241
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:240
 msgid ""
 "If the game has a very high base resolution (e.g. 3840×2160), aliasing might "
 "appear when downsampling to something considerably lower like 1280×720. "
@@ -502,11 +504,11 @@ msgstr ""
 "Ceci peut être fait en appelant la méthode ci-dessous avant que les données "
 "du jeu ne soient chargées :"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:253
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:252
 msgid "Handling aspect ratios"
 msgstr "Manipulation des rapports d'aspect"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:255
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:254
 msgid ""
 "Once scaling for different resolutions is accounted for, make sure that your "
 "*user interface* also scales for different aspect ratios. This can be done "
@@ -519,11 +521,11 @@ msgstr ""
 "être fait en utilisant :ref:`anchors <doc_size_and_anchors>` et/ou :ref:"
 "`containers <doc_gui_containers>`."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:261
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:260
 msgid "Field of view scaling"
 msgstr "Mise à l'échelle du champ de vision"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:263
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:262
 msgid ""
 "The 3D Camera node's **Keep Aspect** property defaults to the **Keep "
 "Height** scaling mode (also called *Hor+*). This is usually the best value "
@@ -536,7 +538,7 @@ msgstr ""
 "en mode paysage, car les écrans larges utilisent automatiquement un champ de "
 "vision plus large."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:268
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:267
 msgid ""
 "However, if your 3D game is intended to be played in portrait mode, it may "
 "make more sense to use **Keep Width** instead (also called *Vert-*). This "

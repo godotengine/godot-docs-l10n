@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,6 @@ msgstr ""
 "para todo lo que es 3D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
-#, fuzzy
 msgid ""
 "Spatial nodes have a local transform, which is relative to the parent node "
 "(as long as the parent node is also of **or inherits from** the type "
@@ -76,12 +75,12 @@ msgid ""
 "<class_Transform>`, or as 3 :ref:`Vector3 <class_Vector3>` members "
 "representing location, Euler rotation (X, Y and Z angles) and scale."
 msgstr ""
-"Los nodos Spatial tienen una transformación local, que es relativa al nodo "
-"padre (siempre y cuando el nodo padre sea también **heredado** del tipo "
-"Spatial). Se puede acceder a esta transformación como una matriz 4x3 :ref:"
-"`Transform <class_Transform>`, o como 3 vectores :ref:`Vector3 "
-"<class_Vector3>` miembros que representan la ubicación, la rotación en "
-"ángulos de Euler (ángulos x,y y z) y la escala."
+"Los nodos Spatial tienen una matriz de transformación local, que es relativa "
+"al nodo padre (siempre y cuando el nodo padre sea también del tipo Spatial o "
+"**herede** de este). Se puede acceder a esta matriz de transformación como "
+"una matriz 4x3 :ref:`Transform <class_Transform>`, o como 3 vectores :ref:"
+"`Vector3 <class_Vector3>` miembros que representan la ubicación, la rotación "
+"en ángulos de Euler (ángulos x,y y z) y la escala."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
@@ -267,7 +266,6 @@ msgstr ""
 "ser una mala idea (a menos que sepas lo que estás haciendo)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:133
-#, fuzzy
 msgid ""
 "When working with 3D assets, it's always best to work in the correct scale "
 "(set your DCC to metric). Godot allows scaling post-import and, while this "
@@ -313,7 +311,6 @@ msgid "Space and manipulation gizmos"
 msgstr "Gizmos de espacio y manipulación"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:152
-#, fuzzy
 msgid ""
 "Moving objects in the 3D view is done through the manipulator gizmos. Each "
 "axis is represented by a color: Red, Green, Blue represent X, Y, Z "
@@ -332,19 +329,16 @@ msgid "Some useful keybindings:"
 msgstr "Algunos keybindings útiles:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
-#, fuzzy
 msgid ""
 "To snap placement or rotation, press :kbd:`Ctrl` while moving, scaling or "
 "rotating."
 msgstr ""
-"Para ajustar el movimiento o la rotación, pulsa la tecla \"s\" mientras te "
-"mueves, escalas o giras."
+"Para ajustar el movimiento o la rotación, presiona la tecla :kbd:`Ctrl` "
+"mientras estás moviendo, escalando o rotando."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:164
-#, fuzzy
 msgid "To center the view on the selected object, press :kbd:`F`."
-msgstr ""
-"Para centrar la vista en el objeto seleccionado, pulsar la tecla \"f\"."
+msgstr "Para centrar la vista en el objeto seleccionado, presiona :kbd:`F`."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid "View menu"

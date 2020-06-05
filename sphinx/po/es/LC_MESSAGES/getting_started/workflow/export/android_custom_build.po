@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,6 @@ msgid "Install a JDK"
 msgstr "Instala un JDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:48
-#, fuzzy
 msgid ""
 "The Android SDK doesn't come with Java, so it needs to be installed "
 "manually. You need to install a Java SDK (**not** just the runtime or JRE). "
@@ -126,8 +125,8 @@ msgid ""
 msgstr ""
 "Android SDK no viene con Java, así que este necesita ser instalado "
 "manualmente. Instala Java SDK (**no** sólo el runtime o JRE). `OpenJDK 8 "
-"<https://adoptopenjdk.net/index.html>`__ es recomendado,Oracle JDK 8 también "
-"funcionara. Versiones posteriores pueden no funcionar en desarrollo Android."
+"<https://adoptopenjdk.net/index.html>`__ es requerido. Versiones más nuevas "
+"no funcionarán."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:54
 msgid "Download the command-line tools"
@@ -148,6 +147,8 @@ msgid ""
 "If you do want Android Studio, read further down for instructions for doing "
 "the same using Android Studio."
 msgstr ""
+"Si quieres Android Studio, lee más abajo para instrucciones para hacer lo "
+"mismo usando Android Studio."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:64
 msgid ""
@@ -188,6 +189,9 @@ msgid ""
 "%LOCALAPPDATA%\\Android\\Sdk``, then use this folder instead of creating an "
 "empty ``android-sdk`` folder."
 msgstr ""
+"Si ya tienes una carpeta android-sdk, normalmente ubicada en ``%LOCALAPPDATA%"
+"\\Android\\Sdk``, usa esta carpeta en lugar de crear una ``android-sdk`` "
+"vacía."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:87
 msgid ""
@@ -197,12 +201,19 @@ msgid ""
 "place ``latest`` into it. Your final directory structure should look like "
 "this :"
 msgstr ""
+"Descomprime el archivo ZIP de Android SDK en la carpeta ``android-sdk``. "
+"Esta carpeta ahora tendrá una carpeta descomprimida llamada ``tools``. "
+"Renombra ``tools`` a ``latest``. Finalmente crea una carpeta vacía llamada "
+"``cmdline-tools`` y coloca ``latest`` dentro, La estructura final de "
+"directorios debería verse así:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:99
 msgid ""
 "We need to setup the directory structure this way for the sdkmanager (inside "
 "the bin folder) to work."
 msgstr ""
+"Necesitamos configurar la estructura de este modo para que funcione el "
+"sdkmanager (dentro de la carpeta bin)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:102
 msgid "Accepting the licenses"

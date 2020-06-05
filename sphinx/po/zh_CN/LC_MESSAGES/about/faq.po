@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -327,8 +327,8 @@ msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Godot使用线程，而大多数脚本虚拟机(VM)中的线程支持不佳(Lua、Python、Squirrel、"
-"JS、AS等)。"
+"大多数脚本语言(Lua、Python、Squirrel、JS、AS等)的虚拟机(VM)对线程的没有很好的"
+"支持，但Godot需要使用线程。"
 
 #: ../../docs/about/faq.rst:139
 #, fuzzy
@@ -336,8 +336,8 @@ msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
-"大多数虚拟机没有很好地支持类扩展，适配Godot的工作方式效率极低(Lua、Python、"
-"JS)。"
+"大多数脚本语言(Lua、Python、JS)的虚拟机没有很好地支持类扩展，适配Godot的工作"
+"方式效率极低。"
 
 #: ../../docs/about/faq.rst:141
 #, fuzzy
@@ -352,13 +352,12 @@ msgstr ""
 "量的整合。"
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
-"没有原生矢量类型(vector3、matrix4等)，导致使用自定义类型实现时性能大大降低"
+"没有原生向量类型(vector3、matrix4等)，导致使用自定义类型实现时性能大大降低"
 "(Lua、Python、Squirrel、JS、AS等)。"
 
 #: ../../docs/about/faq.rst:147

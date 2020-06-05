@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -653,16 +653,18 @@ msgid "Running a script"
 msgstr "运行脚本"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:280
+#, fuzzy
 msgid ""
-"It is possible to run a simple .gd script from the command line. This "
-"feature is especially useful in large projects, for batch conversion of "
+"It is possible to run a simple ``.gd`` script from the command line. This "
+"feature is especially useful in large projects, e.g. for batch conversion of "
 "assets or custom import/export."
 msgstr ""
 "可以从命令行运行简单的 ``.gd`` 脚本。此功能在大型项目中特别有用，可用于素材的"
 "批量转换或自定义导入/导出。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:284
-msgid "The script must inherit from SceneTree or MainLoop."
+#, fuzzy
+msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "该脚本必须继承自 ``场景树（SceneTree）`` 或 ``主循环（MainLoop）``。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:286
@@ -674,9 +676,10 @@ msgid "And how to run it:"
 msgstr "以及如何运行它："
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
+#, fuzzy
 msgid ""
-"If no project.godot exists at the path, current path is assumed to be the "
-"current working directory (unless ``-path`` is specified)."
+"If no ``project.godot`` exists at the path, current path is assumed to be "
+"the current working directory (unless ``--path`` is specified)."
 msgstr ""
 "如果路径中不存在 ``project.godot``，则假定当前路径为当前工作目录（除非指定了 "
 "``-path``）。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,14 +122,14 @@ msgid ""
 "**Union:** Geometry of both primitives is merged, intersecting geometry is "
 "removed."
 msgstr ""
-"**Union:** La géométrie des deux primitives est fusionnée, la géométrie "
+"**Union :** La géométrie des deux primitives est fusionnée, la géométrie "
 "croisée est supprimée."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:51
 msgid ""
 "**Intersection:** Only intersecting geometry remains, the rest is removed."
 msgstr ""
-"**Intersection:** Seule la géométrie d'intersection est conservée, le reste "
+"**Intersection :** Seule la géométrie d'intersection est conservée, le reste "
 "est supprimé."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:52
@@ -137,7 +137,7 @@ msgid ""
 "**Subtraction:** The second shape is subtracted from the first, leaving a "
 "dent with its shape."
 msgstr ""
-"**Subtraction:** La deuxième forme est soustraite de la première, laissant "
+"**Subtraction :** La deuxième forme est soustraite de la première, laissant "
 "une bosse avec sa forme."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:60
@@ -154,18 +154,18 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:65
 msgid "**Depth:** Extruded back a given amount."
-msgstr "**Depth:** Extrusion d'une quantité donnée."
+msgstr "**Depth :** Extrusion d'une quantité donnée."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:66
 msgid "**Spin:** Extruded while spinning around its origin."
-msgstr "**Spin:** Extrudée en tournant autour de son origine."
+msgstr "**Spin :** Extrudée en tournant autour de son origine."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:67
 msgid ""
 "**Path:** Extruded along a Path node. This operation is commonly called "
 "lofting."
 msgstr ""
-"**Path:** Extrudé le long d'un nœud de chemin. Cette opération est "
+"**Path :** Extrudé le long d'un nœud de chemin. Cette opération est "
 "communément appelée lofting."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:74
@@ -319,7 +319,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:145
 msgid "Next, create a CSGCombiner and name it ``desk``."
-msgstr "Ensuite, créez un CSGCombiner et nommez-le ``desk''."
+msgstr "Ensuite, créez un CSGCombiner et nommez-le ``desk``."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:147
 msgid "A desk has one surface and 4 legs:"
@@ -389,7 +389,7 @@ msgid ""
 "Select the ``pillow`` node and switch the mode to **Subtraction**; the "
 "combined spheres will cut a hole into the mattress."
 msgstr ""
-"Sélectionnez le nœud \" oreiller \" et passez en mode **Subtraction** ; les "
+"Sélectionnez le nœud ``pillow`` et passez en mode **Subtraction** ; les "
 "sphères combinées perceront un trou dans le matelas."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:185

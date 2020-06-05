@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,6 +38,8 @@ msgid ""
 "If you are interested in displaying 3D meshes on a 2D viewport, see the :ref:"
 "`doc_viewport_as_texture` tutorial."
 msgstr ""
+"Si quieres mostrar meshes 3D en un viewport 2D, revisa el tutorial :ref:"
+"`doc_viewport_as_texture`."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:15
 msgid ""
@@ -51,6 +53,8 @@ msgid ""
 "Currently, the only way to generate a 2D mesh within the editor is by either "
 "importing an OBJ file as a mesh, or converting it from a Sprite."
 msgstr ""
+"Actualmente, el único modo de generar un mesh 2D con el editor es o "
+"importando un archivo OBJ como mesh o convirtiéndolo desde un Sprite."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:21
 msgid "Optimizing pixels drawn"
@@ -62,6 +66,10 @@ msgid ""
 "drawing large images with transparency, Godot will draw the whole quad to "
 "the screen. The large transparent areas will still be drawn."
 msgstr ""
+"Este modo de trabajo es útil para optimizar el dibujado 2D en algunas "
+"situaciones. Cuando se dibujan imágenes grandes con transparencia, Godot "
+"dibujará todo el quad en pantalla. El área transparente también será "
+"dibujada."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:25
 msgid ""
@@ -76,6 +84,8 @@ msgid ""
 "Converting to a mesh will ensure that only the opaque parts will be drawn "
 "and the rest will be ignored."
 msgstr ""
+"Convertir a malla asegura que sólo las áreas opacas se dibujarán y el resto "
+"será ignorado."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:31
 msgid "Converting Sprites to 2D meshes"
@@ -90,7 +100,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:38
 msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
-msgstr ""
+msgstr "Coloca un ``Sprite`` y selecciona \"Convertir a Mesh2D\" en el menú:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:42
 msgid ""

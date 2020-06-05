@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Documentation changelog"
 msgstr "Alterações da Documentação"
 
 #: ../../docs/about/docs_changelog.rst:6
-#, fuzzy
 msgid ""
 "The documentation is continually being improved. The release of version 3.2 "
 "includes many new tutorials, many fixes and updates for old tutorials, and "
@@ -30,9 +29,9 @@ msgid ""
 "of new tutorials added since version 3.1."
 msgstr ""
 "Esta documentação está sendo continuamente melhorada. O lançamento da versão "
-"3.1 inclui muitos novos tutoriais, muitas correções e atualizações de "
+"3.2 inclui muitos novos tutoriais, muitas correções e atualizações de "
 "antigos tutoriais, e muitas atualizações das referências de classes. Abaixo "
-"está a lista dos novos tutoriais adicionados desde a versão 3.0."
+"está uma lista dos novos tutoriais adicionados desde a versão 3.1."
 
 #: ../../docs/about/docs_changelog.rst:11
 msgid ""
@@ -55,7 +54,7 @@ msgstr "Fluxo de trabalho do projeto"
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`doc_android_custom_build`"
-msgstr ":ref:`build personalizada android <doc_android_custom_build>`"
+msgstr ":ref:`doc_android_custom_build`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/about/docs_changelog.rst:134
@@ -64,7 +63,7 @@ msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr ":ref:`animação de Sprite 2D <doc_2d_sprite_animation>`"
+msgstr ":ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:28
 msgid "Audio"
@@ -76,19 +75,19 @@ msgstr ":ref:`doc_recording_with_microphone`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`doc_sync_with_audio`"
-msgstr ":ref:`sincronização com o áudio <doc_sync_with_audio>`"
+msgstr ":ref:`doc_sync_with_audio`"
 
 #: ../../docs/about/docs_changelog.rst:34
 msgid "Math"
-msgstr "Math"
+msgstr "Matemática"
 
 #: ../../docs/about/docs_changelog.rst:36
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr ":ref:`Beziers e curves <doc_beziers_and_curves>`"
+msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid ":ref:`doc_interpolation`"
-msgstr ":ref:`Interpolação <doc_interpolation>`"
+msgstr ":ref:`doc_interpolation`"
 
 #: ../../docs/about/docs_changelog.rst:40
 msgid "Inputs"
@@ -96,7 +95,7 @@ msgstr "Entradas"
 
 #: ../../docs/about/docs_changelog.rst:42
 msgid ":ref:`doc_input_examples`"
-msgstr ":ref:`Exemplos de entradas <doc_input_examples>`"
+msgstr ":ref:`doc_input_examples`"
 
 #: ../../docs/about/docs_changelog.rst:45
 msgid "Internationalization"
@@ -104,12 +103,12 @@ msgstr "Internacionalização"
 
 #: ../../docs/about/docs_changelog.rst:47
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr ":ref:`Localização usando gettext <doc_localization_using_gettext>`"
+msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:50
 #: ../../docs/about/docs_changelog.rst:170
 msgid "Shading"
-msgstr "Sombreamento"
+msgstr "Criando Shaders"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid "Your First Shader Series:"
@@ -117,25 +116,23 @@ msgstr "Sua Primeira Série Shader:"
 
 #: ../../docs/about/docs_changelog.rst:53
 msgid ":ref:`doc_what_are_shaders`"
-msgstr ":ref:`O que são shaders? <doc_what_are_shaders>`"
+msgstr ":ref:`doc_what_are_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:54
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr ""
-":ref:`Seu primeiro shader CanvasItem <doc_your_first_canvasitem_shader>`"
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr ":ref:`Seu primeiro shader Spatial  <doc_your_first_spatial_shader>`"
+msgstr ":ref:`doc_your_first_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:56
 msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr ":ref:`Seu segundo shader Spatial <doc_your_second_spatial_shader>`"
+msgstr ":ref:`doc_your_second_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:57
-#, fuzzy
 msgid ":ref:`doc_visual_shaders`"
-msgstr ":ref:`Plugins de shader visual <doc_visual_shader_plugins>`"
+msgstr ":ref:`doc_visual_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:60
 msgid "Networking"
@@ -143,7 +140,7 @@ msgstr "Trabalho em rede"
 
 #: ../../docs/about/docs_changelog.rst:62
 msgid ":ref:`doc_webrtc`"
-msgstr ":ref:`WebRTC <doc_webrtc>`"
+msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:65
 msgid "VR"
@@ -151,13 +148,11 @@ msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:67
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr ":ref:`Tutorial para iniciantes de VR <doc_vr_starter_tutorial>`"
+msgstr ":ref:`doc_vr_starter_tutorial_part_one`"
 
 #: ../../docs/about/docs_changelog.rst:68
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr ""
-":ref:`Tutorial de iniciante de VR (Parte 2) "
-"<doc_vr_starter_tutorial_part_two>`"
+msgstr ":ref:`doc_vr_starter_tutorial_part_two`"
 
 #: ../../docs/about/docs_changelog.rst:71
 #: ../../docs/about/docs_changelog.rst:185
@@ -166,24 +161,24 @@ msgstr "Plugins"
 
 #: ../../docs/about/docs_changelog.rst:73
 msgid ":ref:`doc_android_plugin`"
-msgstr ":ref:`Plugins Android <doc_android_plugin>`"
+msgstr ":ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:74
 msgid ":ref:`doc_inspector_plugins`"
-msgstr ":ref:`Plugins de inspetor <doc_inspector_plugins>`"
+msgstr ":ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:75
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr ":ref:`Plugins de shader visual <doc_visual_shader_plugins>`"
+msgstr ":ref:`doc_visual_shader_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:78
 #: ../../docs/about/docs_changelog.rst:196
 msgid "Multi-threading"
-msgstr "Multi-threading"
+msgstr "Múltiplas execuções (Multi-threading)"
 
 #: ../../docs/about/docs_changelog.rst:80
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr ":ref:`Utilizando threads múltiplos <doc_using_multiple_threads>`"
+msgstr ":ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:83
 #: ../../docs/about/docs_changelog.rst:201

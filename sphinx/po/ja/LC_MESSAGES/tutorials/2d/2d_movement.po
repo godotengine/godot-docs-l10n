@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,11 +44,11 @@ msgstr ""
 "この例では :ref:`KinematicBody2D <class_KinematicBody2D>` を使用しますが、同"
 "じことが他のノードタイプ(Area2D、RigidBody2D)にも適用されます。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:17
+#: ../../docs/tutorials/2d/2d_movement.rst:19
 msgid "Setup"
 msgstr "セットアップ"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:19
+#: ../../docs/tutorials/2d/2d_movement.rst:21
 msgid ""
 "Each example below uses the same scene setup. Start with a "
 "``KinematicBody2D`` with two children: ``Sprite`` and ``CollisionShape2D``. "
@@ -60,7 +60,7 @@ msgstr ""
 "イトのテクスチャにGodotアイコン( \"icon.png\")を使用するか、他の2Dイメージを"
 "使用できます。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:23
+#: ../../docs/tutorials/2d/2d_movement.rst:25
 msgid ""
 "Open ``Project -> Project Settings`` and select the \"Input Map\" tab. Add "
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
@@ -70,11 +70,11 @@ msgstr ""
 "の入力アクションを追加します(詳細については、\\ :ref:`InputEvent "
 "<doc_inputevent>` を参照してください):"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:29
+#: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
 msgstr "8方向移動"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:31
+#: ../../docs/tutorials/2d/2d_movement.rst:33
 msgid ""
 "In this scenario, you want the user to press the four directional keys (up/"
 "left/down/right or W/A/S/D) and move in the selected direction. The name \"8-"
@@ -85,13 +85,14 @@ msgstr ""
 "た方向に移動するようにします。「8方向移動」という名称は、2つのキーを同時に押"
 "すことでプレイヤーが斜めに移動できることに由来しています。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:37
+#: ../../docs/tutorials/2d/2d_movement.rst:39
 msgid "Add a script to the kinematic body and add the following code:"
 msgstr "キネマティックボディにスクリプトを追加して、次のコードを追加します:"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:101
+#: ../../docs/tutorials/2d/2d_movement.rst:103
+#, fuzzy
 msgid ""
-"In the ``get_input()`` function we check for the four key events and sum "
+"In the ``get_input()`` function, we check for the four key events and sum "
 "them up to get the velocity vector. This has the benefit of making two "
 "opposite keys cancel each other out, but will also result in diagonal "
 "movement being faster due to the two directions being added together."
@@ -100,7 +101,7 @@ msgstr ""
 "ベクトルを取得します。これには、2つの反対方向のキーが互いに相殺するという利点"
 "がありますが、2つの方向が加算されるため、斜めの移動が速くなります。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:106
+#: ../../docs/tutorials/2d/2d_movement.rst:108
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
@@ -108,7 +109,7 @@ msgstr ""
 "速度を*正規化*した場合、つまり速度の*長さ*を ``1`` に設定し、希望の速度で乗算"
 "した場合、これを防ぐことができます。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:109
+#: ../../docs/tutorials/2d/2d_movement.rst:111
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
@@ -117,11 +118,18 @@ msgstr ""
 "は、\\ :ref:`doc_vector_math` でGodotのベクトル使用の説明をみることができま"
 "す。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:113
+#: ../../docs/tutorials/2d/2d_movement.rst:116
+msgid ""
+"If the code above does nothing when you press the keys, double-check that "
+"you've set up input actions correctly as described in the :ref:"
+"`doc_2d_movement_setup` part of this tutorial."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_movement.rst:121
 msgid "Rotation + movement"
 msgstr "回転+移動"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:115
+#: ../../docs/tutorials/2d/2d_movement.rst:123
 msgid ""
 "This type of movement is sometimes called \"Asteroids-style\" because it "
 "resembles how that classic arcade game worked. Pressing left/right rotates "
@@ -132,7 +140,7 @@ msgstr ""
 "\"Asteroids-style\" と呼ばれることもあります。左/右を押すとキャラクタが回転"
 "し、上/下を押すとキャラクタの向きに関係なく前後に移動します。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:190
+#: ../../docs/tutorials/2d/2d_movement.rst:198
 msgid ""
 "Here we've added two new variables to track our rotation direction and "
 "speed. Again, pressing both keys at once will cancel out and result in no "
@@ -143,7 +151,7 @@ msgstr ""
 "場合も、両方のキーを同時に押すとキャンセルされ、回転しなくなります。回転は、"
 "ボディの ``rotation`` プロパティに直接適用されます。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:194
+#: ../../docs/tutorials/2d/2d_movement.rst:202
 msgid ""
 "To set the velocity, we use the ``Vector2.rotated()`` method, so that it "
 "points in the same direction as the body. ``rotated()`` is a useful vector "
@@ -154,11 +162,11 @@ msgstr ""
 "ドを使用します。\\ ``rotated()`` は、三角関数を適用する必要がある多くの状況で"
 "使用できる便利なベクトル関数です。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:200
+#: ../../docs/tutorials/2d/2d_movement.rst:208
 msgid "Rotation + movement (mouse)"
 msgstr "回転+移動(マウス)"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:202
+#: ../../docs/tutorials/2d/2d_movement.rst:210
 msgid ""
 "This style of movement is a variation of the previous one. This time, the "
 "direction is set by the mouse position instead of the keyboard. The "
@@ -169,7 +177,7 @@ msgstr ""
 "の代わりにマウスの位置によって方向が設定されます。 キャラクタは常にマウスポイ"
 "ンタを \"見ます\" 。ただし、フォワード/バック入力は同じままです。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:261
+#: ../../docs/tutorials/2d/2d_movement.rst:269
 msgid ""
 "Here we're using the :ref:`Node2D <class_Node2D>` ``look_at()`` method to "
 "point the player towards a given position. Without this function, you could "
@@ -179,11 +187,11 @@ msgstr ""
 "プレイヤーを特定の位置に向けます。この関数を使用しない場合は、次のように角度"
 "を設定しても同じ効果が得られます:"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:276
+#: ../../docs/tutorials/2d/2d_movement.rst:284
 msgid "Click-and-move"
 msgstr "クリックと移動"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:278
+#: ../../docs/tutorials/2d/2d_movement.rst:286
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
@@ -191,7 +199,7 @@ msgstr ""
 "この最後の例では、マウスのみを使用してキャラクタを制御します。画面上でクリッ"
 "クすると、プレイヤーが目的の場所に移動します。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:335
+#: ../../docs/tutorials/2d/2d_movement.rst:343
 msgid ""
 "Note the ``distance_to()`` check we make prior to movement. Without this "
 "test, the body would \"jitter\" upon reaching the target position, as it "
@@ -202,7 +210,7 @@ msgstr ""
 "いと、身体は目標位置に到達すると、位置をわずかに越えて前後に移動しようとする"
 "ので、動き過ぎを繰り返す「ジッタ」を起こします。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:340
+#: ../../docs/tutorials/2d/2d_movement.rst:348
 msgid ""
 "Uncommenting the ``look_at()`` line will also turn the body to point in its "
 "direction of motion if you prefer."
@@ -210,7 +218,7 @@ msgstr ""
 "好みに応じて ``look_at()`` 行のコメントを外すと、ボディが動きの方向を指すよう"
 "に回転します。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:343
+#: ../../docs/tutorials/2d/2d_movement.rst:351
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
@@ -218,11 +226,11 @@ msgstr ""
 "このテクニックは、 \"following\" キャラクタの基礎としても使用できます。"
 "``target`` 位置には、移動先の任意のオブジェクトの位置を指定できます。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:347
+#: ../../docs/tutorials/2d/2d_movement.rst:355
 msgid "Summary"
 msgstr "概要"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:349
+#: ../../docs/tutorials/2d/2d_movement.rst:357
 msgid ""
 "You may find these code samples useful as starting points for your own "
 "projects. Feel free to use them and experiment with them to see what you can "
@@ -231,7 +239,7 @@ msgstr ""
 "これらのコードサンプルは、独自のプロジェクトの開始点として便利です。ご自由に"
 "使って、どんなものが作れるか試してみてください。"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:352
+#: ../../docs/tutorials/2d/2d_movement.rst:360
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"

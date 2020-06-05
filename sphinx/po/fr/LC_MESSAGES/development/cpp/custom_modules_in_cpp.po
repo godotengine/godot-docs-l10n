@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgid ""
 msgstr ""
 "Bien qu'il soit recommandé que la majeure partie d'un jeu soit écrite en "
 "scripting (car c'est un énorme gain de temps), il est parfaitement possible "
-"d'utiliser C+++ à la place. L'ajout de modules C+++ peut être utile dans les "
+"d'utiliser C++ à la place. L'ajout de modules C++ peut être utile dans les "
 "scénarios suivants :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:28
@@ -276,9 +276,8 @@ msgstr ""
 "`Compilation <toc-devel-compilation>` pour plus d'informations."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:261
-#, fuzzy
 msgid "Compiling a module externally"
-msgstr "Compilation d'une version sans headless/serveur"
+msgstr "Compilation d'un module en externe"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:263
 msgid ""
@@ -287,6 +286,10 @@ msgid ""
 "to compile a module, there are a couple of reasons as to why this might not "
 "be a practical thing to do:"
 msgstr ""
+"La compilation d'un module implique de déplacer les sources du module "
+"directement sous le répertoire ``modules/`` du moteur. Bien que ce soit la "
+"façon la plus simple de compiler un module, il y a plusieurs raisons pour "
+"lesquelles cela n'est pas pratique :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:268
 msgid ""
@@ -297,6 +300,14 @@ msgid ""
 "solution, but you may additionally need to overcome OS restrictions like "
 "needing the symbolic link privilege if doing this via script."
 msgstr ""
+"Devoir copier manuellement les sources des modules chaque fois que vous "
+"voulez compiler le moteur avec ou sans le module, ou prendre des mesures "
+"supplémentaires nécessaires pour désactiver manuellement un module pendant "
+"la compilation avec une option de compilation similaire à "
+"``module_summator_enabled=no``. La création de liens symboliques peut "
+"également être une solution, mais vous devrez peut-être en outre surmonter "
+"des restrictions du système d'exploitation, comme le fait d'avoir besoin du "
+"privilège de lien symbolique si vous le faites par script."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:275
 msgid ""
@@ -306,6 +317,11 @@ msgid ""
 "to make sure that only the engine-related code is committed by filtering "
 "changes."
 msgstr ""
+"Selon que vous devez ou non travailler avec le code source du moteur, les "
+"fichiers de module ajoutés directement à ``modules/`` modifient "
+"l'arborescence de travail au point où l'utilisation d'un VCS (comme ``git``) "
+"s'avère lourde car vous devez vous assurer que seul le code lié au moteur "
+"est commit en filtrant les modifications."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:281
 msgid ""
@@ -313,6 +329,9 @@ msgid ""
 "lets take our \"summator\" module and move it to the engine's parent "
 "directory:"
 msgstr ""
+"Donc, si vous pensez que la structure indépendante des modules personnalisés "
+"est nécessaire, prenons notre module \"summator\" et déplaçons-le dans le "
+"répertoire parent du moteur :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:289
 msgid ""
@@ -320,12 +339,18 @@ msgid ""
 "option which accepts a comma-separated list of directory paths containing "
 "custom C++ modules, similar to the following:"
 msgstr ""
+"Compilez le moteur avec notre module en fournissant l'option de compilation "
+"``custom_modules`` qui accepte une liste de chemins de répertoire séparés "
+"par des virgules contenant des modules C++ personnalisés, comme ci-dessous :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:297
 msgid ""
 "The build system shall detect all modules under the ``../modules`` directory "
 "and compile them accordingly, including our \"summator\" module."
 msgstr ""
+"Le système de compilation doit détecter tous les modules du répertoire ``../"
+"modules`` et les compiler en conséquence, y compris notre module \"summator"
+"\"."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:302
 msgid ""
@@ -334,12 +359,19 @@ msgid ""
 "means that things like generating module documentation may rely on a "
 "specific path structure on your machine."
 msgstr ""
+"Tout chemin passé à ``custom_modules`` sera converti en un chemin absolu en "
+"interne afin de distinguer les modules personnalisés des modules intégrés. "
+"Cela signifie que des choses comme la génération de la documentation des "
+"modules peuvent dépendre d'une structure de chemin spécifique sur votre "
+"machine."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:309
 msgid ""
 ":ref:`Introduction to the buildsystem - Custom modules build option "
 "<doc_buildsystem_custom_modules>`."
 msgstr ""
+":ref:`Introduction au système de compilation - Option de compilation de "
+"modules personnalisés <doc_buildsystem_custom_modules>`."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:312
 msgid "Improving the build system for development"
@@ -385,7 +417,6 @@ msgstr ""
 "de notre jeu."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:358
-#, fuzzy
 msgid ""
 "Once compiled, we should end up with a ``bin`` directory containing both the "
 "``godot*`` binary and our ``libsummator*.so``. However given the .so is not "
@@ -500,12 +531,11 @@ msgstr ""
 "retrouveront dans le répertoire principal ``doc/classes``."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:452
-#, fuzzy
 msgid ""
 "You can use Git to check if you have missed some of your classes by checking "
 "the untracked files with ``git status``. For example::"
 msgstr ""
-"Vous pouvez utiliser git pour vérifier si vous avez manqué certainnes de vos "
+"Vous pouvez utiliser Git pour vérifier si vous avez manqué certaines de vos "
 "classes en vérifiant les fichiers non tracés avec ``git status``. Par "
 "exemple :"
 

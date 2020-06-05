@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,7 +128,7 @@ msgid ""
 "repository."
 msgstr ""
 "Utilisez toujours ces fichiers XML pour modifier la référence de l'API. Ne "
-"modifiez pas les fichiers .rst générés :ref:` dans la documentation en ligne "
+"modifiez pas les fichiers .rst générés :ref:`dans la documentation en ligne "
 "<toc-class-ref>`, hébergés dans le dépôt `godot-docs <https://github.com/"
 "godotengine/godot-docs>`_."
 
@@ -137,12 +137,11 @@ msgid "Get started with GitHub"
 msgstr "Débuter avec Github"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:42
-#, fuzzy
 msgid ""
 "If you're new to Git and GitHub, this guide will help you get started. "
 "You'll learn to:"
 msgstr ""
-"Si vous débutez avec git et GitHub, ce guide vous aidera à démarrer. Vous "
+"Si vous débutez avec Git et GitHub, ce guide vous aidera à démarrer. Vous "
 "apprendrez à :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:44
@@ -231,12 +230,11 @@ msgid "You can check the list of all remote servers with:"
 msgstr "Vous pouvez consulter la liste de tous les serveurs distants avec :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:86
-#, fuzzy
 msgid ""
 "You should have two: ``origin``, your fork on GitHub that Git adds by "
 "default, and ``upstream``, that you just added:"
 msgstr ""
-"Vous devriez en avoir deux : ``origin``, votre fork sur GitHub, que git "
+"Vous devriez en avoir deux : ``origin``, votre fork sur GitHub, que Git "
 "ajoute par défaut, et ``upstream``, que vous venez d'ajouter :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:96
@@ -285,15 +283,14 @@ msgstr ""
 "à créer une nouvelle branche :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:122
-#, fuzzy
 msgid ""
 "If you're feeling lost by now, come to our `IRC channels <https://webchat."
 "freenode.net/?channels=#godotengine>`_ and ask for help. Experienced Git "
 "users will give you a hand."
 msgstr ""
-"Si vous vous sentez perdu, venez sur nos `canaux IRC <http://webchat."
+"Si vous vous sentez perdu, venez sur nos `canaux IRC <https://webchat."
 "freenode.net/?channels=#godotengine>`_ et demandez de l'aide. Des "
-"utilisateurs expérimentés de git vous donneront un coup de main."
+"utilisateurs expérimentés de Git vous donneront un coup de main."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:125
 msgid "Updating the documentation template"
@@ -486,10 +483,11 @@ msgid ""
 "and easy to read. **Do not leave empty lines** in the descriptions: each "
 "line in the XML file will result in a new paragraph."
 msgstr ""
-"Écrivez dans un langage clair et simple. Suivez toujours les directives "
-"<doc_docs_writing_guidelines>` pour garder vos descriptions courtes et "
-"faciles à lire. **Ne laissez pas de lignes vides** dans les descriptions : "
-"chaque ligne du fichier XML donnera lieu à un nouveau paragraphe."
+"Écrivez dans un langage clair et simple. Suivez toujours les directives :ref:"
+"`writing guidelines <doc_docs_writing_guidelines>` pour garder vos "
+"descriptions courtes et faciles à lire. **Ne laissez pas de lignes vides** "
+"dans les descriptions : chaque ligne du fichier XML donnera lieu à un "
+"nouveau paragraphe."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:189
 msgid "Here's how a class looks like in XML:"
@@ -500,7 +498,7 @@ msgid ""
 "Use a code editor like Vim, Atom, Code, Notepad++ or anything similar to "
 "edit the file quickly. Use the search function to find classes fast."
 msgstr ""
-"Utilisez un éditeur de code comme Vim, Atom, Code, Notepad+++ ou autre pour "
+"Utilisez un éditeur de code comme Vim, Atom, Code, Notepad++ ou autre pour "
 "éditer le fichier rapidement. Utilisez la fonction de recherche pour trouver "
 "rapidement des classes."
 
@@ -717,8 +715,8 @@ msgid ""
 "always use **four spaces** for indentation (the parser will delete tabs). "
 "Example:"
 msgstr ""
-"Utiliser``[codeblock]`` pour des blocs de code préformatés. À l'intérieur de "
-"``[codeblock]``, utiliser toujours **quatre espaces** pour l'indentation "
+"Utiliser ``[codeblock]`` pour des blocs de code préformatés. À l'intérieur "
+"de ``[codeblock]``, utiliser toujours **quatre espaces** pour l'indentation "
 "(l'analyseur supprimera les tabulations). Par exemple :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:274

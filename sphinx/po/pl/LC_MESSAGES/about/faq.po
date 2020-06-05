@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -338,7 +338,6 @@ msgid "What were the motivations behind creating GDScript?"
 msgstr "Jakie były motywy tworzenia GDScript?"
 
 #: ../../docs/about/faq.rst:129
-#, fuzzy
 msgid ""
 "In the early days, the engine used the `Lua <https://www.lua.org>`__ "
 "scripting language. Lua is fast, but creating bindings to an object oriented "
@@ -348,9 +347,9 @@ msgid ""
 msgstr ""
 "W początkowym okresie silnik używał języka skryptowego `Lua <http://www.lua."
 "org>`__. Lua jest szybka, ale tworzenie wiązań do obiektowo zorientowanego "
-"systemu, było skomplikowane i powolne i zajmowało olbrzymią ilość kodu. Po "
-"kilku eksperymentach z `Python <https://www.python.org>`__, okazał się "
-"również trudny do poprawnej implementacji."
+"systemu było skomplikowane i powolne oraz zajmowało olbrzymią ilość kodu. Po "
+"kilku eksperymentach z `Pythonem <https://www.python.org>`__, również się "
+"okazał trudny do poprawnej implementacji."
 
 #: ../../docs/about/faq.rst:135
 msgid ""
@@ -360,26 +359,23 @@ msgstr ""
 "były:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Słaba obsługa wątków w większości maszyn wirtualnych skryptów, a Godot używa "
-"wątków (Lua, Python, Squirrel, JS, AS, itp.)."
+"Słaba obsługa wątków w większości skryptowych maszyn wirtualnych, a Godot "
+"używa wątków (Lua, Python, Squirrel, JavaScript, ActionScript, itp.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
-"Słabe wsparcie dla klas w większości skryptowych maszyn wirtualnych i "
-"dostosowanie do sposobu działania Godota jest wysoce nieefektywne (Lua, "
-"Python, JS)."
+"Słabe wsparcie dla rozszerzania klas w większości skryptowych maszyn "
+"wirtualnych i dostosowywanie do sposobu działania Godota jest wysoce "
+"nieefektywne (Lua, Python, JavaScript)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
@@ -387,44 +383,41 @@ msgid ""
 "a great engine, not a great amount of integrations."
 msgstr ""
 "Wiele istniejących języków ma okropne interfejsy do wiązania z C++, co "
-"skutkuje dużą ilością kodu, błędów, bottleneck'ów i ogólnej nieefektywności "
-"(Lua, Python, Squirrel, JS, itp.). Chcieliśmy skupić się na świetnym "
+"skutkuje dużą ilością kodu, błędów, wąskich gardeł i ogólnej nieefektywności "
+"(Lua, Python, Squirrel, JavaScript, itp.). Chcieliśmy skupić się na świetnym "
 "silniku, a nie na dużej ilości integracji."
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
-"Brak natywnego wsparcia dla typów wektorów (vector3, matrix4, itd.). "
-"sktutkuje znacznym zmniejszeniem wydajności kiedy używa się własnych typów "
-"(Lua, Python, Squirrel, JS, AS, itd.)."
+"Brak natywnych typów wektorowych (vector3, matrix4, itd.), skutkujący "
+"znacznym zmniejszeniem wydajności kiedy używa się własnych typów (Lua, "
+"Python, Squirrel, JavaScript, ActionScript, itd.)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Odśmiecacz pamięci skutkuje niepotrzebnie dużym użyciem pamięci (Lua, "
-"Python, JS, AS, itd.)."
+"Odśmiecacz pamięci skutkuje przestojami i niepotrzebnie dużym zużyciem "
+"pamięci (Lua, Python, JavaScript, ActionScript, itd.)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
-"Trudności ze zintegrowaniem z edytorem kodu funkcji auto uzupełniania, "
-"edycji w czasie rzeczywistym, itd. Są one bardzo dobrze wspierane przez "
-"GDScript."
+"Trudności ze zintegrowaniem z edytorem kodu dla auto-uzupełniania, edycji w "
+"czasie rzeczywistym, itd. (każdy z nich). Funkcje te są bardzo dobrze "
+"wspierane przez GDScript."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above, and more."
-msgstr "GDScript został zaprojektowany tak żeby zminimalizować te problemy."
+msgstr ""
+"GDScript został zaprojektowany tak, żeby zredukować te problemy i nie tylko."
 
 #: ../../docs/about/faq.rst:156
 msgid "What type of 3D model formats does Godot support?"
@@ -654,7 +647,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:247
 msgid "I would like to contribute! How can I get started?"
-msgstr "Chciałbym przyczynić się do rozwoju Godota! Jak mogę zacząć?"
+msgstr "Chcę się przyczynić do rozwoju Godota! Jak mogę zacząć?"
 
 #: ../../docs/about/faq.rst:249
 msgid ""
@@ -684,7 +677,6 @@ msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Mam świetny pomysł dla Godot'a. Jak mogę się nim podzielić?"
 
 #: ../../docs/about/faq.rst:259
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -696,15 +688,16 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
-"Kusząca może być chęć dodawania do Godota nowych pomysłów, zwłaszcza takich, "
-"które prowadzą do gruntownych zmian, w jakiś sposób próbujących imitować "
-"działanie innych silników do tworzenia gier lub alternatywnych rozwiązań, "
-"które chciałbyś umieścić w edytorze. To świetne pomysły i jesteśmy "
-"wdzięczni, że tak zmotywowani ludzie chcą nam wspomóc, ale centrum uwagi "
-"Godota jest i zawsze będzie rozwój głównych funkcji określonych w `Roadmap "
-"<https://github.com/godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, "
-"pozbywanie się błędów i problemów <https://github.com/godotengine/godot/"
-"issues>`_, oraz wzmocnienie komunikacji między członkami społeczności Godot."
+"Kusząca może być chęć dodawania do Godota nowych pomysłów, na przykład "
+"takich, które prowadzą do gruntownych zmian, w jakiś sposób próbujących "
+"imitować działanie innych silników do tworzenia gier lub alternatywnych "
+"rozwiązań, które chciałbyś umieścić w edytorze. To świetne pomysły i "
+"jesteśmy wdzięczni, że tak zmotywowani ludzie chcą nam wspomóc, ale w "
+"centrum uwagi Godota jest i zawsze będzie rozwój głównych funkcji "
+"określonych w `Roadmap <https://github.com/godotengine/godot-roadmap/blob/"
+"master/ROADMAP.md>`_, pozbywanie się błędów i problemów <https://github.com/"
+"godotengine/godot/issues>`_, oraz komunikacja między członkami społeczności "
+"Godot."
 
 #: ../../docs/about/faq.rst:268
 msgid ""
@@ -859,7 +852,7 @@ msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr ""
-"Dodatkowo, wyjątki znacznie zwiększają rozmiar pliku binarnego pliku "
+"Dodatkowo, wyjątki znacząco zwiększają rozmiar skompilowanego pliku "
 "wykonywalnego."
 
 #: ../../docs/about/faq.rst:318
@@ -883,16 +876,15 @@ msgstr ""
 "zorientowanego na dane)?"
 
 #: ../../docs/about/faq.rst:327
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
-"Podczas gdy Godot wewnętrznie, dla wielu zadań wymagających dużej "
-"wydajności, próbuje wykorzystać spójność pamięci najlepiej jak to możliwe, "
-"wierzymy, że większość użytkowników tak naprawdę nie musi być zmuszana do "
-"używania praktyk DoD."
+"Mimo, że wewnętrznie Godot dla wielu zadań wymagających dużej wydajności "
+"próbuje wykorzystać spójność pamięci najlepiej jak to możliwe, wierzymy, że "
+"większość użytkowników tak naprawdę nie musi być zmuszana do używania "
+"praktyk DoD."
 
 #: ../../docs/about/faq.rst:331
 msgid ""

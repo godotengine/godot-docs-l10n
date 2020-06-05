@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,8 +79,9 @@ msgid "project.godot"
 msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
+#, fuzzy
 msgid ""
-"The project.godot file is the project description file, and it is always "
+"The ``project.godot`` file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
@@ -90,10 +91,11 @@ msgstr ""
 "ouvre un projet."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
+#, fuzzy
 msgid ""
 "This file contains the project configuration in plain text, using the win."
-"ini format. Even an empty project.godot can function as a basic definition "
-"of a blank project."
+"ini format. Even an empty ``project.godot`` can function as a basic "
+"definition of a blank project."
 msgstr ""
 "Ce fichier contient la configuration du projet en texte brut sous le format "
 "win.ini. Même un fichier project.godot vide peut fonctionner comme une "
@@ -104,10 +106,11 @@ msgid "Path delimiter"
 msgstr "Délimiteur de chemin d'accès (Path delimiter)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
+#, fuzzy
 msgid ""
 "Godot only supports ``/`` as a path delimiter. This is done for portability "
 "reasons. All operating systems support this, even Windows, so a path such as "
-"``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
+"``C:\\project\\project.godot`` needs to be typed as ``C:/project/project."
 "godot``."
 msgstr ""
 "Godot supporte uniquement ``/`` comment délimiteur de chemin d'accès pour "
@@ -130,9 +133,10 @@ msgstr ""
 "ce problème, le chemin spécial ``res://`` a été créé."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
+#, fuzzy
 msgid ""
-"The path ``res://`` will always point at the project root (where project."
-"godot is located, so ``res://project.godot`` is always valid)."
+"The path ``res://`` will always point at the project root (where ``project."
+"godot`` is located, so ``res://project.godot`` is always valid)."
 msgstr ""
 "Le chemin ``res://`` pointera toujours vers la racine du projet (là où "
 "project.godot est localisé, ainsi ``res://project.godot`` est toujours "
@@ -155,21 +159,24 @@ msgid "User path"
 msgstr "Chemin de l'utilisateur (User path)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
+#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
-"special path ``user://`` that is always writable."
+"special path ``user://`` that is always writable. This path resolves "
+"differently depending on the OS the project is running on. Local path "
+"resolution is further explained in :ref:`doc_data_paths`."
 msgstr ""
 "L'écriture sur le disque reste nécessaire lors de diverses tâches comme la "
 "sauvegarde d'une partie ou le téléchargement de contenu additionnel. Pour "
 "cela, le moteur assure le fait que le chemin spécial ``user://`` est "
 "toujours accessible en écriture."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:81
+#: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid "Host file system"
 msgstr "Système de fichier hôte (Host file system)"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:83
+#: ../../docs/getting_started/step_by_step/filesystem.rst:85
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
@@ -182,11 +189,11 @@ msgstr ""
 "utiliser un système de fichier hôte peut être utile lors du développement "
 "d'outils dans Godot."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:89
+#: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid "Drawbacks"
 msgstr "Inconvénients"
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:91
+#: ../../docs/getting_started/step_by_step/filesystem.rst:93
 msgid ""
 "There are some drawbacks to this simple file system design. The first issue "
 "is that moving assets around (renaming them or moving them from one path to "
@@ -200,7 +207,7 @@ msgstr ""
 "existante de ces assets. Ces références devront être redéfinie du point de "
 "leur nouvelle position."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:96
+#: ../../docs/getting_started/step_by_step/filesystem.rst:98
 msgid ""
 "To avoid this, do all your move, delete and rename operations from within "
 "Godot, on the FileSystem dock. Never move assets from outside Godot, or "
@@ -213,11 +220,12 @@ msgstr ""
 "détecte ça et vous aides à le faire quand même, mais pourquoi prendre le "
 "chemin compliqué ?)."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:101
+#: ../../docs/getting_started/step_by_step/filesystem.rst:103
+#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
-"saves an asset as \"myfile.PNG\", but then references it as \"myfile.png\", "
+"saves an asset as ``myfile.PNG``, but then references it as ``myfile.png``, "
 "it will work fine on their platform, but not on other platforms, such as "
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
@@ -230,7 +238,7 @@ msgstr ""
 "également s'appliquer sur les fichiers binaires exportés, qui utilisent un "
 "paquet compressé pour stocker tous les fichiers."
 
-#: ../../docs/getting_started/step_by_step/filesystem.rst:107
+#: ../../docs/getting_started/step_by_step/filesystem.rst:109
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot. One simple fool-proof convention is to only "

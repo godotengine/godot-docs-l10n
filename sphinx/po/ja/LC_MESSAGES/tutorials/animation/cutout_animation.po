@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,9 +117,10 @@ msgstr ""
 "<class_Polygon2D>` で作成でき、UVアニメーション、変形などが可能です。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:44
+#, fuzzy
 msgid ""
 "**Particle Systems**: A cutout animation rig can be combined with particle "
-"systems. This can useful for magic effects, jetpacks, etc."
+"systems. This can be useful for magic effects, jetpacks, etc."
 msgstr ""
 "**パーティクルシステム**: カットアウトアニメーションリグは、パーティクルシス"
 "テムと組み合わせることができます。これは魔法の効果、ジェットパックなどに役立"
@@ -249,11 +250,12 @@ msgid ""
 msgstr "左腕には問題があります。2D では、子ノードは親ノードの前に表示されます:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:121
+#, fuzzy
 msgid ""
 "We want the left arm to appear *behind* the hip and the torso. We could move "
 "the left arm nodes behind the hip (above the hip node in the scene "
 "hierarchy), but then the left arm is no longer in its proper place in the "
-"hierarchy. This means it wouldn't be affected the movement of the torso. "
+"hierarchy. This means it wouldn't be affected by the movement of the torso. "
 "We'll fix this problem with ``RemoteTransform2D`` nodes."
 msgstr ""
 "左腕が腰と胴体の\\ *後ろ*\\ に表示されるようにします。左腕のノードを腰の後ろ"
@@ -706,7 +708,8 @@ msgid "Setting easing curves for multiple keys"
 msgstr "複数のキーのイージング曲線を設定する"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:356
-msgid "To apply the same the easing curve to multiple keyframes at once:"
+#, fuzzy
+msgid "To apply the same easing curve to multiple keyframes at once:"
 msgstr "同じイージング曲線を複数のキーフレームに一度に適用するには:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:358
@@ -714,15 +717,17 @@ msgid "Select the relevant keys."
 msgstr "関連するキーを選択します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:359
+#, fuzzy
 msgid ""
-"Click on the pencil icon in the bottom right of the animation panel, this "
+"Click on the pencil icon in the bottom right of the animation panel. This "
 "will open the transition editor."
 msgstr ""
 "アニメーションパネルの右下にある鉛筆アイコンをクリックすると、トランジション"
 "エディタが開きます。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
-msgid "In the transition editor click on the desired curve to apply it."
+#, fuzzy
+msgid "In the transition editor, click on the desired curve to apply it."
 msgstr "トランジションエディタで、目的のカーブをクリックして適用します。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:366

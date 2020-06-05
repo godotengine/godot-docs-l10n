@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -357,15 +357,16 @@ msgstr ""
 "l'architecture détectée."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
-#, fuzzy
 msgid "Custom modules"
-msgstr "Modules personnalisées en C++"
+msgstr "Modules personnalisées"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
 msgid ""
 "It's possible to compile modules residing outside of Godot's directory tree, "
 "along with the built-in modules."
 msgstr ""
+"Il est possible de compiler des modules résidant à l’extérieur de l’arbre de "
+"répertoire de Godot, en même temps que les modules intégrés."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:193
 msgid ""
@@ -374,12 +375,19 @@ msgid ""
 "containing a collection of independent C++ modules that can be seen as C++ "
 "packages, just like the built-in ``modules/`` directory."
 msgstr ""
+"Une option de compilation ``custom_modules`` peut être passée à la ligne de "
+"commande avant la compilation. L'option représente une liste de chemins de "
+"répertoire séparés par des virgules contenant une collection de modules C++ "
+"indépendants qui peuvent être considérés comme des paquets C++, tout comme "
+"le répertoire intégré ``modules/``."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
 msgid ""
 "For instance, it's possible to provide both relative, absolute, and user "
 "directory paths containing such modules:"
 msgstr ""
+"Par exemple, il est possible de fournir à la fois des chemins d'accès "
+"relatifs, absolus et des répertoires utilisateurs contenant de tels modules :"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:207
 msgid ""
@@ -387,11 +395,14 @@ msgid ""
 "module, the engine will only compile the custom one. This logic can be used "
 "to override built-in module implementations."
 msgstr ""
+"S'il existe un module personnalisé avec le nom exact du répertoire comme "
+"module intégré, le moteur ne compilera que le module personnalisé. Cette "
+"logique peut être utilisée pour passer outre les implémentations de modules "
+"intégrés."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:213
-#, fuzzy
 msgid ":ref:`doc_custom_modules_in_c++`"
-msgstr ":ref:`Post-traitement personnalisé <doc_custom_postprocessing>`"
+msgstr ":ref:`doc_custom_modules_in_c++`"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
 msgid "Other build options"
@@ -541,7 +552,7 @@ msgstr ""
 "3.1.1, le fichier ``version.txt`` doit contenir ``3.1.1.stable`` sur la "
 "première ligne (et rien d'autre). Cet identifiant de version est basé sur "
 "les lignes ``major``, ``minor``, ``patch`` (si présent) et ``status`` du "
-"fichier `version.py` dans le dépôt Git Godot <https://github.com/godotengine/"
+"`fichier version.py dans le dépôt Git Godot <https://github.com/godotengine/"
 "godot/blob/master/version.py>`__."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:337

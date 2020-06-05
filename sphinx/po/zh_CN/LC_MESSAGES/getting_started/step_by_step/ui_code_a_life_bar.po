@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,12 +62,13 @@ msgid ""
 msgstr "如果您想学习如何设置界面，请查看渐进式UI教程："
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
-msgid "Create a main menu screen"
-msgstr "创建一个主菜单屏幕"
+msgid ":doc:`ui_main_menu`"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
-msgid "Create a game user interface"
-msgstr "创建一个游戏用户界面"
+#, fuzzy
+msgid ":doc:`ui_game_user_interface`"
+msgstr ":ref:`doc_godot_interfaces`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -724,18 +725,7 @@ msgstr ""
 "``animated_health``。动画的结束点是在 ``health_changed`` 之后的 ``Player`` "
 "的 ``health``：即 ``new_value``。``0.6`` 是动画的持续时间，以秒为单位。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:445
-msgid ""
-"The last two arguments are constants from the ``Tween`` class. "
-"``TRANS_LINEAR`` means the animation should be linear. ``EASE_IN`` doesn't "
-"do anything with a linear transition, but we must provide this last argument "
-"or we'll get an error."
-msgstr ""
-"最后两个参数是 ``Tween`` 类中的常量。``TRANS_LINEAR`` 表示动画应该是线性的。"
-"``EASE_IN`` 不会对线性变换做任何事情，但是我们必须提供最后一个参数，否则会出"
-"现错误。"
-
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:450
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:441
 msgid ""
 "The animation will not play until we activated the ``Tween`` node with "
 "``tween.start()``. We only have to do this once if the node is not active. "
@@ -744,7 +734,7 @@ msgstr ""
 "直到我们通过 ``tween.start()`` 激活了 ``Tween`` 节点后，动画才会播放。如果节"
 "点未被激活，则只需执行一次。在最后一行之后添加以下代码："
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:460
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -758,11 +748,11 @@ msgstr ""
 "何时死亡。您总是希望将动画存储在单独的数据容器或节点中。``Tween`` 节点非常适"
 "合代码控制的动画。对于手工制作的动画，请查看 ``AnimationPlayer``。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:472
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:463
 msgid "Assign the animated\\_health to the LifeBar"
 msgstr "将 ``animated_health`` 分配给 ``LifeBar``"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:474
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:465
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
@@ -770,11 +760,11 @@ msgstr ""
 "现在，``animated_health`` 变量动画化，但是我们不再更新实际的 ``Bar`` 和 "
 "``Number`` 节点。让我们解决这个问题。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:477
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
 msgid "So far, the update\\_health method looks like this:"
 msgstr "到目前为止，``update_health`` 方法看起来像这样："
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:492
 msgid ""
 "In this specific case, because ``number_label`` takes text, we need to use "
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
@@ -784,7 +774,7 @@ msgstr ""
 "``_process`` 方法来动画化它。现在，像之前一样，在 ``_process`` 里面更新 "
 "``Number`` 和 ``TextureProgress`` 节点："
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:523
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:514
 msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
@@ -792,7 +782,7 @@ msgstr ""
 "``number_label`` 和 ``bar`` 是变量，用于存储对 ``Number`` 和 "
 "``TextureProgress`` 节点的引用。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:516
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
@@ -801,11 +791,11 @@ msgstr ""
 "玩这个游戏，可以看到条形图的动画是平滑的。但是文本显示的是十进制数字，看起来"
 "很乱。考虑到游戏的风格，生命条采用波动的动画效果会很不错。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:522
 msgid "The animation is smooth, but the number is broken"
 msgstr "动画很流畅，但是数字坏了"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:524
 msgid ""
 "We can fix both problems by rounding out ``animated_health``. Use a local "
 "variable named ``round_value`` to store the rounded ``animated_health``. "
@@ -815,15 +805,15 @@ msgstr ""
 "``round_value`` 的局部变量来存储四舍五入的 ``animated_health``。然后将其赋值"
 "给 ``number_label.text`` 和 ``bar.value``："
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:546
 msgid "Try the game again to see a nice blocky animation."
 msgstr "再次尝试游戏，以查看漂亮的方块动画。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:550
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "通过舍入 ``animated_health``，我们达到了一石二鸟的效果"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:554
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -838,11 +828,11 @@ msgstr ""
 "渐下降，这是一个技巧。它使GUI感觉更加生动。如果 ``Player`` 受到3点伤害，就会"
 "在瞬间发生。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:562
 msgid "Fade the bar when the Player dies"
 msgstr "当 ``Player`` 死亡时，淡出条形图"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:564
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
@@ -853,7 +843,7 @@ msgstr ""
 "死亡时，让我们也淡出条形图。我们将重用相同的 ``Tween`` 节点，因为它为我们并行"
 "管理多个动画。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:569
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
@@ -864,15 +854,15 @@ msgstr ""
 "kbd:`F1` 跳转回2D工作区。在场景停靠面板中选择 ``Player`` 节点，然后单击属性检"
 "查器旁边的节点选项卡。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:583
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:574
 msgid "Find the ``died`` signal, select it, and click the Connect button."
 msgstr "找到 ``died`` 信号，选择它，然后点击连接按钮。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
 msgid "The signal should already have the Enemy connected to it"
 msgstr "这个信号应该有 ``Enemy`` 已经连上了它"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:580
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -884,11 +874,11 @@ msgstr ""
 "且节点中的方法应该显示 ``_on_Player_died``。保留创建函数选项启用并点击窗口底"
 "部的连接。这将把您带到脚本工作区中的 ``GUI.gd`` 文件中。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:597
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:588
 msgid "You should get these values in the Connecting Signal window"
 msgstr "您应该在连接信号窗口中获得这些值"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:601
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:592
 msgid ""
 "You should see a pattern by now: every time the GUI needs a new piece of "
 "information, we emit a new signal. Use them wisely: the more connections you "
@@ -897,7 +887,7 @@ msgstr ""
 "您现在应该可以看到一种模式：每当GUI需要新信息时，我们都会发出新信号。明智地使"
 "用它们：添加的连接越多，跟踪起来就越困难。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:594
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
@@ -905,7 +895,7 @@ msgstr ""
 "要动画化UI元素上的淡入淡出，我们必须使用其 ``modulate`` 属性。``modulate`` 是"
 "一种将我们的纹理颜色相乘的 ``Color``。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:609
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:600
 msgid ""
 "`modulate` comes from the `CanvasItem` class, All 2D and UI nodes inherit "
 "from it. It lets you toggle the visibility of the node, assign a shader to "
@@ -915,7 +905,7 @@ msgstr ""
 "它允许您切换节点的可见性，给它分配一个着色器，然后用一个带有 ``modulate`` 的"
 "颜色来修改它。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:602
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
@@ -925,7 +915,7 @@ msgstr ""
 "们使前三个通道中的任何一个变暗，则都会使界面变暗。如果降低Alpha通道，则界面会"
 "淡出。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:606
 msgid ""
 "We're going to tween between two color values: from a white with an alpha of "
 "``1``, that is to say at full opacity, to a pure white with an alpha value "
@@ -938,7 +928,7 @@ msgstr ""
 "加两个变量，并将它们命名为 ``start_color`` 和 ``end_color``。使用 "
 "``Color()`` 构造函数构建两个 ``Color`` 值。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:637
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:628
 msgid ""
 "``Color(1.0, 1.0, 1.0)`` corresponds to white. The fourth argument, "
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
@@ -947,33 +937,33 @@ msgstr ""
 "``Color(1.0, 1.0, 1.0)`` 对应于白色。第四个参数是alpha通道，分别是 "
 "``start_color`` 和 ``end_color`` 中的 ``1.0`` 和 ``0.0``。"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:632
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
 msgstr ""
 "然后，我们必须再次调用 ``Tween`` 节点的 ``interpolate_property`` 方法："
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:645
+#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
-"linear transition. Here again, because the transition is linear, the easing "
-"does not matter. Here's the complete ``_on_Player_died`` method:"
+"linear transition. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
 "这一次，我们改变了 ``modulate`` 属性，并将其从 ``start_color`` 动画化到 "
 "``end_color``。持续时间为1秒，线性过渡。再一次，因为过渡是线性的，所以缓动并"
 "不重要。下面是完整的 ``_on_Player_died`` 方法："
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:669
 msgid "And that is it. You may now play the game to see the final result!"
 msgstr "就是这样。您现在可以玩游戏以查看最终结果！"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:673
 msgid "The final result. Congratulations for getting there!"
 msgstr "最终结果。恭喜您做到了！"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:677
 msgid ""
 "Using the exact same techniques, you can change the color of the bar when "
 "the Player gets poisoned, turn the bar red when its health drops low, shake "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgid ""
 "shader code. However, it can be converted to shader code if additional "
 "functionality is needed."
 msgstr ""
-"Le \" SpatialMaterial \" est un matériau 3D par défaut qui vise à fournir la "
+"Le ``SpatialMaterial`` est un matériau 3D par défaut qui vise à fournir la "
 "plupart des caractéristiques que les artistes recherchent dans un matériau, "
 "sans qu'il soit nécessaire d'écrire du code de shader. Cependant, il peut "
 "être converti en code shader si des fonctionnalités supplémentaires sont "
@@ -51,11 +51,11 @@ msgid ""
 "*Material* property of the node using the mesh (such as a MeshInstance "
 "node), or in the *Material Override* property of the node using the mesh."
 msgstr ""
-"Il existe trois façons d'ajouter un `` SpatialMaterial '' à un objet. Il "
-"peut être ajouté dans la propriété *Material* du maillage. Il peut être "
-"ajouté dans la propriété *Material* du nœud qui utilise le maillage (tel "
-"qu'un nœud MeshInstance), ou dans la propriété *Material Override* du nœud "
-"qui utilise le maillage."
+"Il existe trois façons d'ajouter un ``SpatialMaterial`` à un objet. Il peut "
+"être ajouté dans la propriété *Material* du maillage. Il peut être ajouté "
+"dans la propriété *Material* du nœud qui utilise le maillage (tel qu'un nœud "
+"MeshInstance), ou dans la propriété *Material Override* du nœud qui utilise "
+"le maillage."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:22
 msgid ""
@@ -356,7 +356,7 @@ msgid ""
 "``SpatialMaterial`` also has several configurable parameters to tweak many "
 "aspects of the rendering:"
 msgstr ""
-"``SpatialMaterial'' possède également plusieurs paramètres configurables "
+"``SpatialMaterial`` possède également plusieurs paramètres configurables "
 "pour modifier de nombreux aspects du rendu :"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:169
@@ -377,7 +377,7 @@ msgid ""
 "**Burley:** Default mode, the original Disney Principled PBS diffuse "
 "algorithm."
 msgstr ""
-"**Burley:** Mode par défaut, l'algorithme de diffusion original Disney "
+"**Burley :** Mode par défaut, l'algorithme de diffusion original Disney "
 "Principled PBS."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:175
@@ -390,16 +390,16 @@ msgid ""
 "roughness increases. Works great for hair and simulating cheap subsurface "
 "scattering. This implementation is energy conserving."
 msgstr ""
-"**Lambert Wrap:** Étend de Lambert pour couvrir plus de 90 degrés lorsque la "
-"rugosité augmente. Idéal pour les cheveux et pour simuler la diffusion sous-"
-"surface à bas prix. Cette implémentation conserve l'énergie."
+"**Lambert Wrap :** Étend de Lambert pour couvrir plus de 90 degrés lorsque "
+"la rugosité augmente. Idéal pour les cheveux et pour simuler la diffusion "
+"sous-surface à bas prix. Cette implémentation conserve l'énergie."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:179
 msgid ""
 "**Oren Nayar:** This implementation aims to take microsurfacing into account "
 "(via roughness). Works well for clay-like materials and some types of cloth."
 msgstr ""
-"**Oren Nayar:** Cette implémentation vise à prendre en compte le "
+"**Oren Nayar :** Cette implémentation vise à prendre en compte le "
 "microrevêtement (via la rugosité). Convient bien aux matériaux argileux et à "
 "certains types de tissus."
 
@@ -410,7 +410,7 @@ msgid ""
 "environment's ambient light settings or disable ambient light in the spatial "
 "material to achieve a better effect."
 msgstr ""
-"**Toon:** Fournit une coupe dure pour l'éclairage, avec un lissage affecté "
+"**Toon :** Fournit une coupe dure pour l'éclairage, avec un lissage affecté "
 "par la rugosité. Il est recommandé de désactiver la contribution du ciel en "
 "fonction des réglages de la lumière ambiante de votre environnement ou de "
 "désactiver la lumière ambiante dans le spatial material pour obtenir un "
@@ -431,32 +431,32 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:194
 msgid "**ShlickGGX:** The most common blob used by PBR 3D engines nowadays."
 msgstr ""
-"**ShlickGGGX:** La tâche la plus communément utilisée par les moteurs 3D PBR "
-"de nos jours."
+"**ShlickGGGX :** La tâche la plus communément utilisée par les moteurs 3D "
+"PBR de nos jours."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:195
 msgid ""
 "**Blinn:** Common in previous-generation engines. Not worth using nowadays, "
 "but left here for the sake of compatibility."
 msgstr ""
-"**Blinn:**Commun dans les moteurs des générations précédentes. Ne vaut pas "
+"**Blinn :** Commun dans les moteurs des générations précédentes. Ne vaut pas "
 "la peine d'être utilisé de nos jours, mais laissé ici pour des raisons de "
 "compatibilité."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:197
 msgid "**Phong:** Same as above."
-msgstr "**Phong:** Comme au-dessus."
+msgstr "**Phong :** Comme au-dessus."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:198
 msgid ""
 "**Toon:** Creates a toon blob, which changes size depending on roughness."
 msgstr ""
-"**Toon:** Crée une tâche toon, qui change de taille en fonction de la "
+"**Toon :** Crée une tâche toon, qui change de taille en fonction de la "
 "rugosité."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:199
 msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
-msgstr "**Disabled:** Parfois, la tâche est en travers du chemin. Va-t'en !"
+msgstr "**Disabled :** Parfois, la tâche est en travers du chemin. Va-t'en !"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:204
 msgid "Blend Mode"
@@ -474,23 +474,24 @@ msgstr ""
 msgid ""
 "**Mix:** Default blend mode, alpha controls how much the object is visible."
 msgstr ""
-"**Mix:** Mode de mélange par défaut, alpha contrôle la visibilité de l'objet."
+"**Mix :** Mode de mélange par défaut, alpha contrôle la visibilité de "
+"l'objet."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:210
 msgid ""
 "**Add:** Object is blended additively, nice for flares or some fire-like "
 "effects."
 msgstr ""
-"**Add:** L'objet est mélangé de façon additive, agréable pour les fusées "
+"**Add :** L'objet est mélangé de façon additive, agréable pour les fusées "
 "éclairantes ou pour certains effets de type feu."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:212
 msgid "**Sub:** Object is subtracted."
-msgstr "** Sub : ** objet est soustrait."
+msgstr "**Sub :** objet est soustrait."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:213
 msgid "**Mul:** Object is multiplied."
-msgstr "** Mul : ** objet est multiplié."
+msgstr "**Mul :** objet est multiplié."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:218
 msgid "Cull Mode"
@@ -506,13 +507,13 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:222
 msgid "**Back:** The back of the object is culled when not visible (default)."
 msgstr ""
-"**Retour:** L’arrière de l'objet est éliminé lorsqu'il n'est pas visible "
+"**Retour :** L’arrière de l'objet est éliminé lorsqu'il n'est pas visible "
 "(par défaut)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:223
 msgid "**Front:** The front of the object is culled when not visible."
 msgstr ""
-"**Face avant:** La face avant de l'objet est éliminée lorsqu'elle n'est pas "
+"**Face avant :** La face avant de l'objet est éliminée lorsqu'elle n'est pas "
 "visible."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:224
@@ -520,7 +521,7 @@ msgid ""
 "**Disabled:** Used for objects that are double-sided (no culling is "
 "performed)."
 msgstr ""
-"**Désactivé:** Utilisé pour les objets qui sont recto-verso (aucune "
+"**Désactivé :** Utilisé pour les objets qui sont recto-verso (aucune "
 "élimination n'est effectuée)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:227
@@ -534,14 +535,14 @@ msgstr "Indique quand le rendu de profondeur doit avoir lieu."
 #: ../../docs/tutorials/3d/spatial_material.rst:231
 msgid "**Opaque Only (default):** Depth is only drawn for opaque objects."
 msgstr ""
-"**Opaque Only(par défaut):** La profondeur n'est dessinée que pour les "
+"**Opaque Only(par défaut) :** La profondeur n'est dessinée que pour les "
 "objets opaques."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:232
 msgid ""
 "**Always:** Depth draw is drawn for both opaque and transparent objects."
 msgstr ""
-"**Always:** Le dessin en profondeur est dessiné pour les objets opaques et "
+"**Always :** Le dessin en profondeur est dessiné pour les objets opaques et "
 "transparents."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:233
@@ -549,7 +550,7 @@ msgid ""
 "**Never:** No depth draw takes place (do not confuse this with the No Depth "
 "Test option above)."
 msgstr ""
-"**Never:** Aucun dessin en profondeur n'a lieu (ne pas confondre avec "
+"**Never :** Aucun dessin en profondeur n'a lieu (ne pas confondre avec "
 "l'option Aucun test de profondeur ci-dessus)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:235
@@ -558,7 +559,7 @@ msgid ""
 "with the opaque parts, then transparency is drawn above. Use this option "
 "with transparent grass or tree foliage."
 msgstr ""
-"**Pré-passe de profondeur:** Pour les objets transparents, une première "
+"**Pré-passe de profondeur :** Pour les objets transparents, une première "
 "passe est effectuée sur les parties opaques, puis la transparence est tracée "
 "par dessus. Utilisez cette option avec de l'herbe ou du feuillage "
 "transparent."
@@ -598,27 +599,27 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:258
 msgid "**Disabled:** Billboard mode is disabled."
-msgstr "**Désactivé:** Le mode ``Billboard`` est désactivé."
+msgstr "**Désactivé :** Le mode ``Billboard`` est désactivé."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:259
 msgid ""
 "**Enabled:** Billboard mode is enabled, the object's -Z axis will always "
 "face the camera."
 msgstr ""
-"**Activé:** Le mode ``Billboard`` est activé. L'axe Z de l'objet fera "
+"**Activé :** Le mode ``Billboard`` est activé. L'axe Z de l'objet fera "
 "toujours face à la caméra."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:261
 msgid ""
 "**Y-Billboard:** The object's X axis will always be aligned with the camera."
-msgstr "**Y-Billboard:** L'axe X de l'objet fera toujours face à la caméra."
+msgstr "**Y-Billboard :** L'axe X de l'objet fera toujours face à la caméra."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:262
 msgid ""
 "**Particles:** Most suited for particle systems, because it allows "
 "specifying animation options."
 msgstr ""
-"**Particules:** Plus adapté aux systèmes de particules, car il permet de "
+"**Particules :** Plus adapté aux systèmes de particules, car il permet de "
 "spécifier des options d'animation."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:267
@@ -663,9 +664,9 @@ msgid ""
 "When transparency other than ``0`` or ``1`` is not needed, it's possible to "
 "set a threshold to prevent the object from rendering semi-transparent pixels."
 msgstr ""
-"Lorsque la transparence autre que \" 0 \" ou \" 1 \" n'est pas nécessaire, "
-"il est possible de définir un seuil pour empêcher l'objet de rendre des "
-"pixels semi-transparents."
+"Lorsque la transparence autre que ``0`` ou ``1`` n'est pas nécessaire, il "
+"est possible de définir un seuil pour empêcher l'objet de rendre des pixels "
+"semi-transparents."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:295
 msgid ""
@@ -771,7 +772,7 @@ msgid ""
 "(simulating natural microsurfacing). Most common types of materials can be "
 "achieved with the right combination of *Metallic* and *Roughness*."
 msgstr ""
-"*La rugosité affecte la façon dont la réflexion se produit. Une valeur de "
+"*La rugosité* affecte la façon dont la réflexion se produit. Une valeur de "
 "``0`` en fait un miroir parfait tandis qu'une valeur de ``1`` brouille "
 "complètement la réflexion (simulant la surface naturelle au niveau "
 "microscopique). La plupart des types de matériaux courants peuvent être "

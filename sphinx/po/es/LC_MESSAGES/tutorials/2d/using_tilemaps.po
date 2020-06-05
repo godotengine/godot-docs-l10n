@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,7 +131,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid "``Half Offset`` and ``Tile Origin``"
-msgstr ""
+msgstr "``Half Offset`` y ``Tile Origin``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid ""
@@ -208,6 +208,9 @@ msgid ""
 "the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
 "image."
 msgstr ""
+"Primero, necesitas agregar la(s) textura(s) que usarás para los tiles. Haz "
+"click en el botón \"Agregar Textura(s) al TileSet\" y selecciona la imagen "
+"``tilesheet.png``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
@@ -222,6 +225,9 @@ msgid ""
 "created tile now appears on the right side. Click in the viewport and you "
 "can place tiles. Right-click to remove them."
 msgstr ""
+"Haz clic en el TileMap en el árbol de escena y verás que el nuevo tile "
+"recientemente creado aparece al lado derecho. Haz clic en el viewport y "
+"podrás ubicar tiles. Clic derecho para removerlos."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:104
 msgid ""
@@ -239,6 +245,9 @@ msgid ""
 "obstacles, for example - then you'll need to add collision shapes to any "
 "tiles that you want to be considered \"solid\"."
 msgstr ""
+"Si estás haciendo un mapa que requiere colisiones - por ejemplo paredes, "
+"pisos u otros obstaculos - entonces necesitarás agregar formas de colisión a "
+"los tiles que se deban considerar \"sólidos\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:116
 msgid ""
@@ -252,7 +261,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:124
 msgid ""
 "You can add occlusion and navigation shapes to the tile in the same way."
-msgstr ""
+msgstr "Puedes agregar formas de oclusión y navegación al tile del mismo modo."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:127
 msgid "Atlas tiles"
@@ -264,6 +273,9 @@ msgid ""
 "tiles all at once using an atlas. Click \"New Atlas\" and drag to select the "
 "entire tile sheet."
 msgstr ""
+"En lugar de agregar tiles uno a la vez, se puede definir un grupo de tiles a "
+"la vez usando un atlas. Clic en \"Nuevo Atlas\" y arrastra para seleccionar "
+"todo el tileset."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:135
 msgid ""
@@ -278,6 +290,9 @@ msgid ""
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
 "represent the atlas."
 msgstr ""
+"Una vez que se haya definido el atlas, puedes agregar formas de colisión "
+"individualmente a los tiles como antes. También puedes hacer clic en \"Icono"
+"\" para seleccionar uno de los tiles que represente el atlas."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:145
 msgid ""
@@ -291,6 +306,8 @@ msgid ""
 "grouping similar tiles together when you're working with a large number of "
 "tiles."
 msgstr ""
+"Además de ahorrar tiempo cuando se definen tiles, esto puede ayudar a "
+"agrupar tiles similares cuando trabajas con gran número de tiles."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:154
 msgid "Tips and tricks"
@@ -302,6 +319,10 @@ msgid ""
 "may notice lines appearing between your tiles. To fix this, open Project "
 "Settings and enable \"Use Pixel Snap\" in the \"Rendering/Quality\" section."
 msgstr ""
+"Si estás usando una :ref:`Camera2D <class_Camera2D>` para desplazar el "
+"nivel, tal vez notes unas líneas que aparecen entre tus tiles. Para arreglar "
+"esto, abre Ajustes de Proyecto y activa \"Use Pixel Snap\" en la sección "
+"\"Rendering/Quality\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:160
 msgid ""
@@ -312,6 +333,8 @@ msgstr ""
 msgid ""
 "To draw straight lines, hold :kbd:`Shift` while clicking and dragging a tile."
 msgstr ""
+"Para dibujar líneas rectas manten presionado :kbd:`Shift` mientras haces "
+"clic y arrastras un tile."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:164
 msgid ""

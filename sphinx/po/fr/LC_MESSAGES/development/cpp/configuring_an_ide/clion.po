@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,14 @@ msgid ""
 "`CLion <https://www.jetbrains.com/clion/>`_ is a commercial `JetBrains "
 "<https://www.jetbrains.com/>`_ IDE for C++."
 msgstr ""
+"`CLion <https://www.jetbrains.com/clion/>`_ est un IDE commercial `JetBrains "
+"<https://www.jetbrains.com/>`_ pour C++."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:10
 msgid "Importing the project"
 msgstr "Importation du projet"
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:12
-#, fuzzy
 msgid ""
 "CLion requires a ``CMakeLists.txt`` file as a project file, which is "
 "problematic for Godot because it uses the SCons buildsystem instead of "
@@ -40,10 +41,9 @@ msgid ""
 "`Android Studio <doc_configuring_an_ide_android_studio>` which can also be "
 "used by CLion."
 msgstr ""
-"`CLion <https://www.jetbrains.com/clion/>`_ est un IDE commercial pour C++. "
-"Il nécessite un fichier ``CMakeLists.txt`` comme fichier projet, ce qui est "
-"problématique pour Godot qui utilise le système de construction SCons au "
-"lieu de CMake. Cependant, il existe une configuration ``CMakeLists.txt`` "
+"CLion nécessite un fichier ``CMakeLists.txt`` comme fichier projet, ce qui "
+"est problématique pour Godot car il utilise le système de compilation SCons "
+"au lieu de CMake. Cependant, il existe une configuration ``CMakeLists.txt`` "
 "pour :ref:`Android Studio <doc_configuring_an_ide_android_studio>` qui peut "
 "également être utilisée par CLion."
 
@@ -53,22 +53,24 @@ msgid ""
 "project. If you've already opened another project, choose **File > Open** "
 "from the top menu."
 msgstr ""
+"Dans la fenêtre d'accueil du CLion, choisissez l'option d'importation d'un "
+"projet existant. Si vous avez déjà ouvert un autre projet, choisissez **File "
+"> Open** dans le menu du haut."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:20
-#, fuzzy
 msgid ""
 "Navigate to ``<Godot root directory>/platform/android/java/lib`` (the "
 "``CMakeLists.txt`` file is located there) and select it (but *not* the "
 "``CMakeLists.txt`` file itself), then click **OK**."
 msgstr ""
-"Naviguez jusqu'à votre clone Git de Godot puis sélectionnez le dossier "
-"``platform/android/java/lib`` - le fichier ``CMakeLists.txt`` s'y trouve. "
-"Sélectionnez le dossier (*pas* le fichier ``CMakeLists.txt file``), puis "
+"Naviguez jusqu'au répertoire racine de ``<Godot root directory>/platform/"
+"android/java/lib`` (le fichier ``CMakeLists.txt`` s'y trouve) et "
+"sélectionnez-le (mais *pas* le fichier ``CMakeLists.txt`` lui-même), puis "
 "cliquez sur **OK**."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:27
 msgid "The folder containing the ``CMakeLists.txt`` file."
-msgstr ""
+msgstr "Le dossier contenant le fichier ``CMakeLists.txt``."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:29
 msgid ""
@@ -78,13 +80,12 @@ msgstr ""
 "projet :"
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:34
-#, fuzzy
 msgid ""
 "Choose **Tools > CMake > Change Project Root** from the top menu and select "
 "the Godot root folder."
 msgstr ""
-"Choisissez **Tools > CMake >Change Project Root** et sélectionnez le dossier "
-"racine de Godot."
+"Choisissez **Tools > CMake > Change Project Root** dans le menu du haut et "
+"sélectionnez le dossier racine de Godot."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:40
 msgid ""

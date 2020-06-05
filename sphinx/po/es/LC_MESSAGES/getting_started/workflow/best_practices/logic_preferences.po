@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,6 +97,9 @@ msgid ""
 "initialization), then preloading the value has no meaning. This point isn't "
 "a significant factor if one intends to always create the script on its own."
 msgstr ""
+"Si algo puede reemplazar el valor (como la inicialización de una escena "
+"exportada), entonces precargar el valor no tiene sentido. Este punto no es "
+"un factor significante si uno quiere crear siempre los scripts."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:102
 msgid ""
@@ -111,6 +114,9 @@ msgid ""
 "instead, initialized either using an ``export`` or a ``load`` (and perhaps "
 "not even initialized until later)."
 msgstr ""
+"Si la clase 'importada' es capaz de cambiar, entonces debería ser una "
+"propiedad, inicializada ya sea con un ``export`` o un ``load`` (y tal vez no "
+"inicializada sino más adelante)."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:110
 msgid ""
@@ -126,7 +132,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:121
 msgid "Large levels: static vs. dynamic"
-msgstr ""
+msgstr "Niveles grandes: estático vs dinámico"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:123
 msgid ""
@@ -141,6 +147,9 @@ msgid ""
 "dilemma associated with the two options is one of the age-old programming "
 "choices: does one optimize memory over speed, or vice versa?"
 msgstr ""
+"Bien, la respuesta simple es \"cuando la performance lo requiera\". El "
+"dilema asociado con las dos opciones es una de las viejas opciones de "
+"programación: se optimiza memoria por sobre velocidad o viceversa?"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:131
 msgid ""
@@ -158,6 +167,12 @@ msgid ""
 "Games with large and varied environments or procedurally generated elements "
 "often implement these strategies to avoid wasting memory."
 msgstr ""
+"Sin importar qué, se debe romper escenas largas en otras más pequeñas (para "
+"ayudar en la reusabilidad de contenido). Los desarrolladores pueden entonces "
+"designar un nodo que manipule la creación/carga y borrado/descarga de "
+"recursos y nodos en tiempo real. Juegos con gra variedad y tamaño de "
+"entornos o elementos generados proceduralmente normalmente emplean esas "
+"estrategias para evitar desperdiciar memoria."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:142
 msgid ""
@@ -169,7 +184,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:147
 msgid "As such, the best options would be..."
-msgstr ""
+msgstr "Como tales, las mejores opciones serían..."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:149
 msgid "To use a static level for smaller games."
@@ -182,6 +197,10 @@ msgid ""
 "time, so as to improve usability and stability, then it could evolve into a "
 "reliable tool across projects."
 msgstr ""
+"Si se tiene tiempo/recursos en un juego mediano/largo, crea una librería o "
+"plugin que pueda administrar nodos y recursos. Si se mejora con el tiempo, "
+"tanto para mejorar usabilidad como estabilidad, entonces puede evolucionar "
+"en una buena herramienta para usar en otros proyectos."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:156
 msgid ""
@@ -196,3 +215,6 @@ msgid ""
 "please see the :ref:`\"Change scenes manually\" "
 "<doc_change_scenes_manually>` documentation."
 msgstr ""
+"Para ejemplos de los varios modos en que se pueden cambiar escenas en tiempo "
+"de ejecución, lee la documentación de :ref:`\"Cambiar escenas manualmente\" "
+"<doc_change_scenes_manually>`."

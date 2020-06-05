@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -301,12 +301,11 @@ msgid "Vertex Color"
 msgstr "Vertex Color (Color de vértice)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:144
-#, fuzzy
 msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
 "come from your 3D modelling application. By default, they are ignored."
 msgstr ""
-"Este menú permite elegir lo que se hace por defecto en los colores de los "
+"Esta opción permite elegir lo que se hace por defecto en los colores de los "
 "vértices que provienen de su aplicación de modelado 3D. Por defecto, se "
 "ignoran."
 
@@ -610,9 +609,8 @@ msgstr ""
 "Las opciones anteriores sólo están habilitadas para Particle Billboard."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:270
-#, fuzzy
 msgid "Billboard Keep Scale"
-msgstr "Billboard Mode"
+msgstr "Billboard Keep Scale"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:272
 msgid "Enables scaling a mesh in billboard mode."
@@ -778,22 +776,21 @@ msgstr ""
 "resultante y no se ve afectado por otras luces de la escena."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:358
-#, fuzzy
 msgid "Normal map"
-msgstr "Normalmap"
+msgstr "Normal map"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:360
-#, fuzzy
 msgid ""
 "Normal mapping allows you to set a texture that represents finer shape "
 "detail. This does not modify geometry, only the incident angle for light. In "
 "Godot, only the red and green channels of normal maps are used for better "
 "compression and wider compatibility."
 msgstr ""
-"Normal mapping permite establecer una textura que representa detalles de "
-"forma más precisos. Esto no modifica la geometría, sólo el ángulo de "
-"incidencia de la luz. En Godot, sólo R y G se utilizan para mapas normales, "
-"con el fin de lograr una mayor compatibilidad."
+"El mapeo de normales (normal mapping) permite establecer una textura que "
+"representa detalles de forma más precisos. Esto no modifica la geometría, "
+"sólo el ángulo de incidencia de la luz. En Godot, sólo los canales rojo "
+"(red) y verde (green) se utilizan para mapas normales, con el fin de lograr "
+"una mayor compatibilidad."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:369
 msgid ""
@@ -802,6 +799,10 @@ msgid ""
 "you may have to convert the normal map so its Y axis is flipped. Otherwise, "
 "the normal map direction may appear to be inverted on the Y axis."
 msgstr ""
+"Godot requiere que el mapa de normales use coordenadas X+, Y- y Z+. En otras "
+"palabras, si has importado un material hecho para ser usado en otro motor, "
+"tal vez debas convertir el mapa de normales así el eje Y queda invertido. De "
+"otro modo la dirección del mapa de normales aparecerá invertido en el eje Y."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:374
 msgid ""
@@ -809,6 +810,9 @@ msgid ""
 "popular engines) can be found `here <http://wiki.polycount.com/wiki/"
 "Normal_Map_Technical_Details>`__."
 msgstr ""
+"Más información sobre mapa de normales (incluyendo la tabla de orden de "
+"coordenadas para motores populares) se puede encontrar `aquí <http://wiki."
+"polycount.com/wiki/Normal_Map_Technical_Details>`__."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:379
 msgid "Rim"

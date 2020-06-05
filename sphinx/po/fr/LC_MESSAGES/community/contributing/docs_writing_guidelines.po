@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,7 +127,7 @@ msgid ""
 "you describe as the subject. It's natural to write using the passive voice, "
 "but it's harder to read and produces longer sentences."
 msgstr ""
-"L'utilisation directe de la voix lorsque c'est possible. De prendre les "
+"L'utilisation de la voix directe lorsque c'est possible. De prendre les "
 "classes, les méthodes, et les constantes de vous décrire le sujet. Il est "
 "naturel d'écrire à l'aide de la voix passive, mais c'est plus difficile à "
 "lire et produit des phrases plus longue."
@@ -143,11 +143,11 @@ msgstr "Active :"
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:59
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:403
 msgid "**Don't** use the passive voice:"
-msgstr "** N'utilisez pas ** la voix passive :"
+msgstr "**N'utilisez pas** la voix passive :"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:66
 msgid "**Do** use the node's name as a noun:"
-msgstr "** Utilisez ** utilisez le nom du nœud comme nom :"
+msgstr "**Utilisez** utilisez le nom du nœud comme nom :"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:76
 msgid ""
@@ -155,15 +155,15 @@ msgid ""
 "any expression you can replace with a single word."
 msgstr ""
 "Privilégiez les verbes précis mais courants aux verbes génériques comme "
-"\"faire\", \"régler\", et toute expression que vous pouvez remplacer par un "
-"seul mot."
+"``make``, ``set``, et toute expression que vous pouvez remplacer par un seul "
+"mot."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:79
 msgid ""
 "**Don't** repeat the method's name. It already states it sets the pivot "
 "value to a new one:"
 msgstr ""
-"** Ne répétez pas** le nom de la méthode. Il indique déjà qu'il change la "
+"**Ne répétez pas** le nom de la méthode. Il indique déjà qu'il change la "
 "valeur pivot :"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:87
@@ -189,7 +189,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:108
 msgid "**Do** use simple present, preterit or future."
-msgstr "** Utilisez ** présent simple, prétérit ou futur."
+msgstr "** Utilisez** présent simple, prétérit ou futur."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:115
 msgid ""
@@ -315,7 +315,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:188
 msgid "**Do** explain what the node does instead:"
-msgstr "** Expliquez ** ce que fait le nœud à la place :"
+msgstr "** Expliquez** ce que fait le nœud à la place :"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:195
 msgid "**Don't** use \"basic\", it is too vague:"
@@ -444,7 +444,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:297
 msgid "**Do** write constants variables with dynamic typing:"
-msgstr "** Écrivez ** des variables consistante avec le typage dynamique :"
+msgstr "** Écrivez** des variables consistante avec le typage dynamique :"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:307
 msgid "**Don't** write functions with inferred arguments or return types:"
@@ -466,9 +466,9 @@ msgid ""
 "and ``bars``. You can also copy them directly from your game projects, "
 "ensuring that any code snippet compiles without errors."
 msgstr ""
-"Les exemples du monde réel sont plus accessibles aux débutants que les \"foo"
-"\" et les \"bars\" abstraits. Vous pouvez également les copier directement à "
-"partir de vos projets de jeu, en vous assurant que tout extrait de code se "
+"Les exemples du monde réel sont plus accessibles aux débutants que les "
+"``foos`` et ``bars`` abstraits. Vous pouvez également les copier directement "
+"à partir de vos projets de jeu, en vous assurant que tout extrait de code se "
 "compile sans erreur."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:336
@@ -477,8 +477,8 @@ msgid ""
 "to understand code better. It gives them a frame of reference as to where "
 "they could use the code snippets in a live project."
 msgstr ""
-"Le fait d'écrire \"var vitesse = 10\" plutôt que \"var ma_variable = 10\" "
-"permet aux débutants de mieux comprendre le code. Il leur donne un cadre de "
+"Le fait d'écrire ``var speed = 10`` plutôt que ``var my_var = 10`` permet "
+"aux débutants de mieux comprendre le code. Il leur donne un cadre de "
 "référence pour utiliser les extraits de code dans un projet en direct."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:340
@@ -498,7 +498,7 @@ msgid ""
 msgstr ""
 "Bien sûr, il y a des moments où il n'est pas pratique d'utiliser des "
 "exemples réels. Dans ces situations, vous devriez quand même éviter "
-"d'utiliser des noms tels que \"mon_var\", \"foo\" ou \"ma_func()\" et "
+"d'utiliser des noms tels que ``my_var``, ``foo()`` ou ``my_func()`` et "
 "envisager des noms plus significatifs pour vos exemples."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:370
@@ -590,7 +590,7 @@ msgstr "**Commencez par** ``si vrai`` :"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:439
 msgid "Use ``[code]`` around arguments"
-msgstr "Utiliser \"[code]\" autour des arguments"
+msgstr "Utiliser ``[code]`` autour des arguments"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:441
 msgid ""
@@ -599,10 +599,11 @@ msgid ""
 "XML files in the Godot repository, replace existing arguments written like "
 "'this' or \\`this\\` with ``[code]this[/code]``."
 msgstr ""
-"Dans la référence de classe, entourez toujours les arguments par \"[code][/"
+"Dans la référence de classe, entourez toujours les arguments par ``[code][/"
 "code]``. Dans la documentation et dans Godot, il s'affichera comme ``ceci``. "
 "Lorsque vous éditez des fichiers XML dans le dépôt Godot, remplacez les "
-"arguments existants écrits comme 'ceci' ou \\'ceci' par ``[code]ceci[/code]."
+"arguments existants écrits comme 'ceci' ou \\`this\\` par ``[code]this[/"
+"code]``."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:448
 msgid "Common vocabulary to use in Godot's documentation"

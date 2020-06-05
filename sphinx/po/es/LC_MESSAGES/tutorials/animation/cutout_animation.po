@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:44
 msgid ""
 "**Particle Systems**: A cutout animation rig can be combined with particle "
-"systems. This can useful for magic effects, jetpacks, etc."
+"systems. This can be useful for magic effects, jetpacks, etc."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:46
@@ -197,7 +197,7 @@ msgid ""
 "We want the left arm to appear *behind* the hip and the torso. We could move "
 "the left arm nodes behind the hip (above the hip node in the scene "
 "hierarchy), but then the left arm is no longer in its proper place in the "
-"hierarchy. This means it wouldn't be affected the movement of the torso. "
+"hierarchy. This means it wouldn't be affected by the movement of the torso. "
 "We'll fix this problem with ``RemoteTransform2D`` nodes."
 msgstr ""
 
@@ -552,7 +552,7 @@ msgid "Setting easing curves for multiple keys"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:356
-msgid "To apply the same the easing curve to multiple keyframes at once:"
+msgid "To apply the same easing curve to multiple keyframes at once:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:358
@@ -560,15 +560,16 @@ msgid "Select the relevant keys."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:359
+#, fuzzy
 msgid ""
-"Click on the pencil icon in the bottom right of the animation panel, this "
+"Click on the pencil icon in the bottom right of the animation panel. This "
 "will open the transition editor."
 msgstr ""
 "Haz clic en el ícono de lápiz en la parte inferior derecha del panel de "
 "animación, esto abrirá el editor de transiciones."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
-msgid "In the transition editor click on the desired curve to apply it."
+msgid "In the transition editor, click on the desired curve to apply it."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:366

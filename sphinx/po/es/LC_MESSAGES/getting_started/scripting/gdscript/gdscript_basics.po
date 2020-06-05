@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -495,7 +495,7 @@ msgstr "Referencia de atributo"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "``foo()``"
-msgstr ""
+msgstr "``foo()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "Function call"
@@ -641,7 +641,7 @@ msgstr "if / else en una linea"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 msgid "``as``"
-msgstr ""
+msgstr "``as``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 msgid "Type casting"
@@ -1113,6 +1113,12 @@ msgid ""
 "the :ref:`Object.get() <class_Object_method_get>` and :ref:`Object.set() "
 "<class_Object_method_set>` methods instead."
 msgstr ""
+"Los corchetes puede pueden usarse para acceder a propiedades de cualquier :"
+"ref:`class_Object`, no sólo Dictionary. Ten en cuenta que esto puede "
+"provocar errores en scripts cuando se intenta acceder a una propiedad que no "
+"existe. Para evitar esto, una los métodos :ref:`Object.get() "
+"<class_Object_method_get>` y :ref:`Object.set() <class_Object_method_set>` "
+"en su lugar."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:532
 msgid "Data"
@@ -1298,6 +1304,9 @@ msgid ""
 "constants. They should be accessed prefixed by the enum's name (``Name."
 "KEY``); see an example below."
 msgstr ""
+"A partir de Godot 3.1, las claves de un enum con nombre no son registradas "
+"como constantes globales. Deben accederse con el nombre del enum como "
+"prefijo (``Nombre.CLAVE``), ver el ejemplo a continuación."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:671
 msgid "Functions"
@@ -2107,6 +2116,11 @@ msgid ""
 "``Lifebar`` using the :ref:`Object.connect() <class_Object_method_connect>` "
 "method::"
 msgstr ""
+"En nuestro script ``Character.gd``, definimos una señal ``health_changed`` y "
+"la emitimos con :ref:`Object.emit_signal() "
+"<class_Object_method_emit_signal>`, y desde ``Game``, nodo que se encuentra "
+"más arriba en el árbol de escena, lo conectamos con ``Lifebar`` usando el "
+"método :ref:`Object.connect() <class_Object_method_connect>`::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
 msgid ""
@@ -2185,12 +2199,19 @@ msgid ""
 "that took damage. So when we connect the signal to the in-game console, we "
 "can add the character's name in the binds array argument::"
 msgstr ""
+"Tomando el ejemplo anterior, digamos que queremos mostrar un registro del "
+"daño recibido por cada personaje en pantalla, como ``Jugador1 recibió 22 de "
+"daño.``. La señal ``health_changed`` no nos dice el nombre del personaje que "
+"recibió daño. Entonces cuando conectemos la señal a la consola del juego, "
+"podemos agregar el nombre del personaje en el arreglo pasado como argumento::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1437
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
 msgstr ""
+"Nuestro nodo ``BattleLog`` (registro de batalla) recibe cada elemento en el "
+"arreglo como un argumento extra::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1450
 msgid "Coroutines with yield"
@@ -2232,6 +2253,8 @@ msgstr ""
 msgid ""
 "Remember to save the new function state, when using multiple ``yield``\\s::"
 msgstr ""
+"Recuerda guardar el estado nuevo de la función cuando uses múltiples "
+"``yield``\\s::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1515
 msgid "Coroutines & signals"
@@ -2266,6 +2289,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1544
 msgid "You can also get the signal's argument once it's emitted by an object:"
 msgstr ""
+"También puedes obtener el argumento de la señal una vez fue emitida por un "
+"objeto:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1551
 msgid ""
@@ -2273,6 +2298,9 @@ msgid ""
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
 msgstr ""
+"Si no tienes seguridad de si una función podrá usar yield o no, o si podría "
+"usar yield muchas veces, puedes usar yield con la señal ``completed`` con "
+"alguna condición:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1573
 msgid ""
@@ -2281,6 +2309,10 @@ msgid ""
 "``while`` would be redundant here as the ``completed`` signal is only "
 "emitted when the function didn't yield anymore."
 msgstr ""
+"Esto asegura que la función retornará cuando se suponga que deba retornar, "
+"indepenientemente de si se usaron corrutinas internamente. Nota que usar "
+"``while`` sería redundante aquí ya que la señal ``completed`` se emite sólo "
+"cuando la función no usa más yield."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1579
 msgid "Onready keyword"
@@ -2325,6 +2357,14 @@ msgid ""
 "have side effects. Otherwise, the behavior of the script would vary "
 "depending on whether the project is run in a debug build."
 msgstr ""
+"La palabra clave ``assert`` puede ser usada para revisar condiciones en "
+"compilaciones de depuración. Esas comprobaciones son ignoradas en "
+"compilaciones que no son de depuración. Esto quiere decir que la expresión "
+"pasada como argumento no será evaluada en un proyecto exportado como "
+"release. Debido a esto, estas comprobaciones **no** deben contener "
+"expresiones que tengan efectos secundarios. De otro modo, el comportamiento "
+"del script variará dependiendo de si el proyecto se ejecuta o no en una "
+"versión de depuración."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
 msgid ""

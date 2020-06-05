@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,9 +146,11 @@ msgstr ""
 "アーカイブファイル)であり、次の注意事項があります:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:44
+#, fuzzy
 msgid ""
 "The library must have a dependency on the Godot engine library (``godot-lib."
-"x.y.aar``). A stable version is made available for each Godot release."
+"<version>.<status>.aar``). A stable version is made available for each Godot "
+"release on the `Godot download page <https://godotengine.org/download>`_."
 msgstr ""
 "ライブラリは、Godotエンジンライブラリ(``godot-lib.x.y.aar``)に依存している必"
 "要があります。Godotのリリースごとに安定したバージョンが利用可能になります。"
@@ -189,8 +191,11 @@ msgstr ""
 "プラグインモジュールへの依存関係としてGodotエンジンライブラリを追加します:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:58
-msgid "Download the Godot engine library (godot-lib.x.y.aar)"
-msgstr "Godotエンジンライブラリ(godot-lib.x.y.aar)をダウンロードします"
+msgid ""
+"Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
+"from the `Godot download page <https://godotengine.org/download>`_ (e.g: "
+"``godot-lib.3.2.2.stable.aar``)."
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:60
 msgid ""

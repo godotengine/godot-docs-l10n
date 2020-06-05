@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,6 +84,9 @@ msgid ""
 "translations written in the gettext ``.po`` format. See :ref:"
 "`doc_localization_using_gettext` for details."
 msgstr ""
+"Si necesitas un formato de archivo más poderoso, Godot también soporta la "
+"carga de traducciones en el formato gettext ``.po``. Ver :ref:"
+"`doc_localization_using_gettext` para más detalles."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 msgid "Translation format"
@@ -113,21 +116,27 @@ msgid ""
 "workarounds as described `here <https://stackoverflow.com/questions/4221176/"
 "excel-to-csv-with-utf8-encoding>`__."
 msgstr ""
+"Por defecto, Microsoft Excel siempre guarda archivos CSV en una codificación "
+"ANSI en lugar de UTF-8. No hay modo integrado para hacer esto, pero hay "
+"soluciones alternas como se describe `aquí <https://stackoverflow.com/"
+"questions/4221176/excel-to-csv-with-utf8-encoding>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
 msgid ""
 "We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
 "Sheets instead."
 msgstr ""
+"Recomendamos usar `LibreOffice <https://www.libreoffice.org/>`__ o Google "
+"Sheets en su lugar."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
 msgid "CSV files must be formatted as follows:"
-msgstr ""
+msgstr "Los archivos CSV deben ser formateados así:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "keys"
-msgstr ""
+msgstr "keys"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<lang1>"
@@ -240,19 +249,19 @@ msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "QUOTE"
-msgstr ""
+msgstr "QUOTE"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hello\" said the man."
-msgstr ""
+msgstr "\"Hello\" said the man."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hola\" dijo el hombre."
-msgstr ""
+msgstr "\"Hola\" dijo el hombre."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "「こんにちは」男は言いました"
-msgstr ""
+msgstr "「こんにちは」男は言いました"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:88
 msgid ""
@@ -266,6 +275,16 @@ msgid ""
 "Alternatively, you can select another delimiter than comma in the import "
 "options."
 msgstr ""
+"El mismo ejemplo es mostrado debajo como un archivo de texto plano separado "
+"por comas, lo que debería ser el resultado de editar lo anterior en una hoja "
+"de cálculo. Cuando se edita la versión de texto plano, asegúrate de cerrar "
+"entre comillas cualquier mensaje que contenga comas, saltos de línea o "
+"comillas, así las comas no son interpretadas como delimitadores, los saltos "
+"de línea no crean nuevas entradas y las comillas no son interpretadas como "
+"caracteres envolventes. Asegúrate de escapar de cualquier entrecomillado que "
+"pueda contenerse precediéndolo con comillas. De modo alternativo puedes "
+"seleccionar otros delimitadores aparte de comas en las opciones de "
+"importación."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
 msgid "CSV importer"
@@ -297,7 +316,11 @@ msgid ""
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
+"Selecciona el archivo ``.csv`` y ve al panel **Importar** para definir las "
+"opciones de importación. Puedes cambiar la compresión de las traducciones "
+"importadas y seleccionar el limitador cuando interpretas un archivo CSV."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:123
 msgid "Be sure to click **Reimport** after any change to these options."
 msgstr ""
+"Asegúrate de hacer clic en **Reimportar** después de cambiar esas opciones."

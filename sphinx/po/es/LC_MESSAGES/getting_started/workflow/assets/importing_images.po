@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,6 +93,8 @@ msgid ""
 "BMP (``.bmp``) - No support for 16-bit per pixel images. Only 1-bit, 4-bit, "
 "8-bit, 24-bit, and 32-bit per pixel images are supported."
 msgstr ""
+"BMP (``.bmp``) - No ofrece soporte para imágenes 16-bit per pixel. Sólo "
+"imágenes de 1-bit, 4-bit, 8-bit, 24-bit, y 32-bit per pixel son soportadas."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:40
 msgid ""
@@ -100,33 +102,44 @@ msgid ""
 "will be loaded directly. This can be used to achieve effects using custom "
 "mipmaps."
 msgstr ""
+"DirectDraw Surface (``.dds``) - Si hay mipmaps presente en la textura, serán "
+"cargados directamente. Esto puede ser usado para conseguir efectos usando "
+"mipmaps personalizados."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:43
 msgid ""
 "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
 msgstr ""
+"OpenEXR (``.exr``) - Soporta HDR (altamente recomendado para cielos "
+"panorámicos)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:45
 msgid ""
 "Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
 "skies)."
 msgstr ""
+"Radiance HDR (``.hdr``) - Soporta HDR (altamente recomendado para cielos "
+"panorámicos)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:47
 msgid ""
 "JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
 "limitations."
 msgstr ""
+"JPEG (``.jpg``, ``.jpeg``) - No soporta transparencia ddebido a las "
+"limitaciones del formato."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:49
 msgid ""
 "PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
 "(no HDR images)."
 msgstr ""
+"PNG (``.png``) - La precisión está limitada a 8 bits por canal cuando se "
+"importa (no imágenes HDR)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:51
 msgid "Truevision Targa (``.tga``)"
-msgstr ""
+msgstr "Truevision Targa (``.tga``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 msgid ""
@@ -137,16 +150,25 @@ msgid ""
 "automated thanks to its `command-line interface <https://wiki.inkscape.org/"
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
+"SVG (``.svg``, ``.svgz``) - Los SVG son rasterizados usando `NanoSVG "
+"<https://github.com/memononen/nanosvg>`__ cuando se los importa. El soporte "
+"es limitado, vectores complejos pueden no renderizarse correctamente. Para "
+"vectores complejos, renderizarlos a PNG usando Inkscape es normalmente una "
+"mejor solución. Esto puede ser automatizado gracias a su `interfaz de línea "
+"de comandos <https://wiki.inkscape.org/wiki/index.php/"
+"Using_the_Command_Line#Export_files>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:57
 msgid "WebP (``.webp``)"
-msgstr ""
+msgstr "WebP (``.webp``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:61
 msgid ""
 "If you've compiled the Godot editor from source with specific modules "
 "disabled, some formats may not be available."
 msgstr ""
+"Si has compilado el editor de Godot desde el fuente con módulos específicos "
+"deshabilitados, algunos formatos pueden no estar disponibles."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:65
 msgid "Compression"
@@ -200,6 +222,11 @@ msgid ""
 "compared to Lossless or Uncompressed. Video memory usage isn't decreased by "
 "this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
+"**Lossy Compression:** Esta es una buena elección para assets 2D grandes. "
+"Tiene algunos defectos pero ocupa menos VRAM y el tamaño de archivo es "
+"muchas veces menor comparado a Lossless o Uncompressed. El uso de memoria de "
+"video no es decrementado por este modo, es lo mismo que Lossless o "
+"Uncompressed."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:85
 msgid ""
@@ -371,6 +398,9 @@ msgid ""
 "have to adjust custom shaders that use the normal map to take this into "
 "account."
 msgstr ""
+"Nota que la compresión RGTC afecta el mapa de normales resultante. Puedes "
+"tener que ajustar shaders personalizados para que usan el mapa de normales "
+"para tener esto en cuenta."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:133
 msgid ""
@@ -379,6 +409,10 @@ msgid ""
 "you may have to convert the normal map so its Y axis is flipped. Otherwise, "
 "the normal map direction may appear to be inverted on the Y axis."
 msgstr ""
+"Godot requiere que el mapa de normales use coordenadas X+, Y- y Z+. En otras "
+"palabras, si has importado un material hecho para ser usado en otro motor, "
+"tal vez debas convertir el mapa de normales así el eje Y queda invertido. De "
+"otro modo la dirección del mapa de normales aparecerá invertido en el eje Y."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:138
 msgid ""
@@ -386,6 +420,9 @@ msgid ""
 "popular engines) can be found `here <http://wiki.polycount.com/wiki/"
 "Normal_Map_Technical_Details>`__."
 msgstr ""
+"Más información sobre mapa de normales (incluyendo la tabla de orden de "
+"coordenadas para motores populares) se puede encontrar `aquí <http://wiki."
+"polycount.com/wiki/Normal_Map_Technical_Details>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:143
 msgid "Flags"

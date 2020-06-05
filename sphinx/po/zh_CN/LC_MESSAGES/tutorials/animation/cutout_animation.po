@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,7 +116,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "**Particle Systems**: A cutout animation rig can be combined with particle "
-"systems. This can useful for magic effects, jetpacks, etc."
+"systems. This can be useful for magic effects, jetpacks, etc."
 msgstr ""
 "**粒子系统**:也可以与传统的动画层次结构混合，对魔术效果，喷气背包等有用。"
 
@@ -245,11 +245,12 @@ msgid ""
 msgstr "左臂有些问题。在二维中，子节点出现在父节点的前面："
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:121
+#, fuzzy
 msgid ""
 "We want the left arm to appear *behind* the hip and the torso. We could move "
 "the left arm nodes behind the hip (above the hip node in the scene "
 "hierarchy), but then the left arm is no longer in its proper place in the "
-"hierarchy. This means it wouldn't be affected the movement of the torso. "
+"hierarchy. This means it wouldn't be affected by the movement of the torso. "
 "We'll fix this problem with ``RemoteTransform2D`` nodes."
 msgstr ""
 "我们希望左臂出现在臀部和躯干的后面。可以将左臂移动节点在臀部后面（在场景层次"
@@ -676,7 +677,8 @@ msgid "Setting easing curves for multiple keys"
 msgstr "为多个关键帧设置缓动曲线"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:356
-msgid "To apply the same the easing curve to multiple keyframes at once:"
+#, fuzzy
+msgid "To apply the same easing curve to multiple keyframes at once:"
 msgstr "将相同的缓动曲线同时应用于多个关键帧："
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:358
@@ -686,12 +688,13 @@ msgstr "选择相关的关键帧。"
 #: ../../docs/tutorials/animation/cutout_animation.rst:359
 #, fuzzy
 msgid ""
-"Click on the pencil icon in the bottom right of the animation panel, this "
+"Click on the pencil icon in the bottom right of the animation panel. This "
 "will open the transition editor."
 msgstr "单击Node选项卡中的AnimationPlayer节点，打开视图底部的动画面板。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
-msgid "In the transition editor click on the desired curve to apply it."
+#, fuzzy
+msgid "In the transition editor, click on the desired curve to apply it."
 msgstr "在转换编辑器中，单击所需的曲线来应用它。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:366

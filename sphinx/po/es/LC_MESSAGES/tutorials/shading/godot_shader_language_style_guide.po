@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-27 13:49+0200\n"
+"POT-Creation-Date: 2020-06-05 17:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,12 +48,18 @@ msgid ""
 "to apply some of the guidelines below. When that happens, use your best "
 "judgment, and ask fellow developers for insights."
 msgstr ""
+"Las guías de estilos no están hechas con la intención de ser tratadas como "
+"reglamento estricto. Algunas veces no serás capaz de utilizar algunos de los "
+"lineamientos indicados, cuando eso suceda utiliza tu mejor criterio y busca "
+"la opinión de otros desarrolladores."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:20
 msgid ""
 "In general, keeping your code consistent in your projects and within your "
 "team is more important than following this guide to a tee."
 msgstr ""
+"En general, mantener tu código consistente en tus proyectos y entre todos "
+"los de tu equipo es más importante que seguir esta guía al pié de la letra."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:23
 #, fuzzy
@@ -88,6 +94,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:56
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
+"Utiliza un carácter de salto de línea al final de cada archivo. *(por "
+"defecto del editor)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:57
 msgid ""
@@ -187,6 +195,7 @@ msgstr "Longitud de línea"
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:151
 msgid "Keep individual lines of code under 100 characters."
 msgstr ""
+"Mantiene líneas de código individuales por debajo de los 100 caracteres."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:153
 msgid ""
@@ -205,7 +214,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:179
 msgid "The only exception to that rule is the ternary operator:"
-msgstr ""
+msgstr "La única excepción a esta regla es el operador ternario:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:189
 msgid "Comment spacing"
@@ -216,6 +225,8 @@ msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
 msgstr ""
+"Comentarios normales deberían comenzar con un espacio, pero no el código "
+"comentado. Esto ayuda a diferenciar texto comentado de código deshabilitado."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:208
 msgid ""
@@ -245,7 +256,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:242
 msgid "Don't use spaces to align expressions vertically:"
-msgstr ""
+msgstr "No uses espacios para alinear la verticalidad de las expresiones:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:250
 #, fuzzy
@@ -320,6 +331,10 @@ msgid ""
 "to help developers reading the code for the first time understand how it "
 "works, and to avoid errors linked to the order of variable declarations."
 msgstr ""
+"Optimizamos el orden para hacer más fácil leer el código desde arriba hacia "
+"abajo, para ayudar a que los desarrolladores que leen el código por primera "
+"vez entiendan cómo funciona y para evitar errores vinculados al orden de "
+"declaración de variables."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:344
 msgid "This code order follows two rules of thumb:"
@@ -345,3 +360,6 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Declara las variables locales tan cerca como puedas de su primer uso. Esto "
+"hace que sea más fácil de seguir el código sin tener que desplazar el código "
+"demasiado para encontrar dónde fue declarada la variable."
