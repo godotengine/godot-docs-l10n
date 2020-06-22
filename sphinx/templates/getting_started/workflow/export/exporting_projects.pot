@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,46 +113,38 @@ msgid "When exporting, Godot makes a list of all the files to export and then cr
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
-msgid "Export every single file in the project"
+msgid "Export all resources in the project"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
-msgid "Export only resources (+ custom filter), this is the default."
+msgid "Export selected scenes (and dependencies)"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
-msgid "Export only selected resources (+ custom filter)"
+msgid "Export selected resources (and dependencies)"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
-msgid "**Export every single file** - This mode exports every single file in the project. This is good to test if something is being forgotten, but developers often have a lot of unrelated stuff around in the project directory, which makes it a bad idea."
+msgid "**Export all resources in the project** will export every resource in the project. **Export selected scenes** and **Export selected resources** gives you a list of the scenes or resources in the project, and you have to select every scene or resource you want to export."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
-msgid "**Export only resources** - Only resources are exported. For most projects, this is enough. However many developers like to use custom datafiles in their games. To compensate for this, filters can be added for extra extensions (for instance, ``*.txt,*.csv``)."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
-msgid "**Export only selected resources** - Only select resources from a list are exported. This is probably overkill for most projects, but in some cases it is justified (usually huge projects). This mode offers total control of what is exported. Individual resources can be selected and dependency detection is performed to ensure that everything needed is added."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:124
 msgid "Exporting from the command line"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid "In production, it is useful to automate builds, and Godot supports this with the ``--export`` and ``--export-debug`` command line parameters. Exporting from the command line still requires an export preset to define the export parameters. A basic invocation of the command would be:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:135
 msgid "This will export to ``some_name.exe``, assuming there is a preset called \"Windows Desktop\" and the template can be found. The output path is relative to the project path or absolute; it does not respect the directory the command was invoked from."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:140
 msgid "You can also configure it to export only the PCK or ZIP file, allowing a single export to be used with multiple Godot executables. This takes place if the target name ends with ``.pck`` or ``.zip``."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:144
 msgid "It is often useful to combine the ``--export`` flag with the ``--path`` flag, and to create a dedicated export preset for automated export:"
 msgstr ""
 
