@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-06-05 17:37+0200\n"
-"PO-Revision-Date: 2020-05-20 14:07+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"PO-Revision-Date: 2020-06-22 11:41+0000\n"
+"Last-Translator: Kate Kaz <blackseafad@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
 "Language: uk\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -792,7 +792,6 @@ msgstr ""
 "**зменшення складності.**"
 
 #: ../../docs/about/faq.rst:106
-#, fuzzy
 msgid ""
 "The original intent of creating a tightly integrated, custom scripting "
 "language for Godot was two-fold: first, it reduces the amount of time "
@@ -804,14 +803,14 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
-"Оригінальний намір створення щільно інтегрованої скриптової мови для Godot "
-"був подвійним: по-перше, це зменшує кількість часу, необхідного, щоб "
+"Першочерговый намір створення щільно інтегрованої скриптової мови для Godot "
+"був неоднозначним: по-перше, це зменшує кількість часу, необхідного, щоб "
 "розпочати роботу з Godot, надаючи розробникам швидкий спосіб доступу до "
 "двигуна з акцентом на продуктивність; по-друге, це зменшує загальне "
 "навантаження на технічне обслуговування, зменшує розмірність проблем, і "
 "дозволяє розробникам двигуна зосередитися на усуненні помилок і покращенні "
 "функцій, пов'язаних з ядром двигуна, а не витрачати багато часу, намагаючись "
-"отримати невеликий набір додаткових функцій, що працюють через великий набір "
+"отримати невеликий набір додаткових функцій, працюючих на великій кількості "
 "мов."
 
 #: ../../docs/about/faq.rst:114
@@ -904,14 +903,13 @@ msgstr ""
 "великому рушії, а не на великій кількості інтеграцій."
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
-"Немає рідних векторних типів (vector3, matrix4 та ін.), що призводить до "
-"значного зниження продуктивності при використанні власних типів (Lua, "
+"Відсутність рідних векторних типів (vector3, matrix4 та ін.), що призводить "
+"до значного зниження продуктивності при використанні власних типів (Lua, "
 "Python, Squirrel, JS, AS та ін.)."
 
 #: ../../docs/about/faq.rst:147
@@ -85590,21 +85588,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
-#, fuzzy
 msgid "Build Directory"
-msgstr "Напрямок"
+msgstr "Каталог збирання"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 msgid "*blank*"
-msgstr ""
+msgstr "*порожній*"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
-msgstr ""
+msgstr "Увімкнути"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"
-msgstr ""
+msgstr "**True**"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:57
 msgid "Executable"

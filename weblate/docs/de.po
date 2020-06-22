@@ -114,8 +114,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-06-05 17:37+0200\n"
-"PO-Revision-Date: 2020-05-31 05:50+0000\n"
-"Last-Translator: HugeGameArt <hugegameartgd@gmail.com>\n"
+"PO-Revision-Date: 2020-06-22 11:41+0000\n"
+"Last-Translator: Maik <bahaleba@yahoo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -123,7 +123,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -139,7 +139,6 @@ msgstr ""
 "Seitenleiste, um die Liste zu öffnen."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.2 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -147,9 +146,11 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
-"Dies ist die Dokumentation für den instabilen (Master-)Branch. Wenn Sie "
-"stattdessen nach dem aktuellen **stabilen** Branch suchen, schauen Sie doch "
-"mal `hier <http://docs.godotengine.org/en/stable>`_."
+"Dies ist die Dokumentation für die offizielle Version 3.2. Wenn Sie "
+"stattdessen nach der aktuellen **in Entwicklung** befindlichen Version "
+"suchen, finde Sie diese hier: <https://docs.godotengine.org/en/latest>. Sie "
+"können die Dokumentation der vorhergehenden stabilen Version 3.1 unter: "
+"<https://docs.godotengine.org/en/3.1> finden."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -184,7 +185,6 @@ msgstr ""
 "zu lernen, wie man stabile Godot-Releases verwendet."
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -195,7 +195,7 @@ msgstr ""
 "Willkommen in der offiziellen Dokumentation der Godot Engine, der freien, "
 "quelloffenen und gemeinschaftlich entwickelten 2D- und 3D-Spiele-Engine! "
 "Falls Sie diese Dokumentation zum ersten Mal aufrufen, empfehlen wir als "
-"Erstes, die :ref:`Einführungsseite  <doc_about_intro>` zu lesen, um eine "
+"Erstes die :ref:`Einführungsseite <doc_about_intro>` zu lesen, um eine "
 "Übersicht der verfügbaren Inhalte zu erhalten."
 
 #: ../../docs/index.rst:37
@@ -968,7 +968,6 @@ msgid "What were the motivations behind creating GDScript?"
 msgstr "Was war die Motivation, GDScript zu entwickeln?"
 
 #: ../../docs/about/faq.rst:129
-#, fuzzy
 msgid ""
 "In the early days, the engine used the `Lua <https://www.lua.org>`__ "
 "scripting language. Lua is fast, but creating bindings to an object oriented "
@@ -976,11 +975,11 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
-"In den Anfängen nutzte die Engine noch `Lua <http://www.lua.org>`__ als "
+"Anfänglich nutzte die Engine noch `Lua <http://www.lua.org>`__ als "
 "Skriptsprache. Lua ist schnell, aber die Sprachanbindung an ein "
 "objektorientiertes System zu erstellen (durch Verwendung von Fallbacks) war "
 "komplex, langsam und beanspruchte enorm viel Code. Nach einigen Experimenten "
-"mit `Python <http://www.python.org>`__ stellte  auch sie sich als schwierig "
+"mit `Python <http://www.python.org>`__ stellte auch sie sich als schwierig "
 "einzubetten heraus."
 
 #: ../../docs/about/faq.rst:135
@@ -990,46 +989,44 @@ msgstr ""
 "Die Hauptgründe, eine eigene Skriptsprache für Godot zu entwickeln, waren:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Schlechte Thread-Unterstützung in den meisten Skript-VMs (Lua, Python, "
-"Squirrel, JS, AS, etc.)."
+"Schlechte Threading-Unterstützung in den meisten Skript-VMs und Godot nutzt "
+"Threads (Lua, Python, Squirrel, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
-"Schlechte Klassenerweiterung in den meisten Skript-VMs, Anpassung an die "
-"Funktionsweise von Godot ist sehr ineffizient (Lua, Python, JS)."
+"Schlechte Unterstützung für Klassenerweiterung in den meisten Skript-VMs und "
+"die Anpassung an die Funktionsweise von Godot ist sehr ineffizient (Lua, "
+"Python, JS)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
-"Viele bestehende Sprachen haben ineffiziente Schnittstellen für die "
-"Einbindung von C++, was zu einer großen Menge Code, Bugs, Engpässen und "
-"allgemeiner Ineffizienz führt (Lua, Python, Squirrel, JS, etc.). Wir wollten "
-"uns auf eine großartige Engine konzentrieren, nicht auf eine große Anzahl "
-"von Scriptsprachen."
+"Viele bestehende Sprachen haben ineffiziente Schnittstellen zum Binding mit C"
+"++, was zu einer großen Menge Code, Bugs, Engpässen und allgemeiner "
+"Ineffizienz führt (Lua, Python, Squirrel, JS, etc.). Wir wollten uns auf "
+"eine großartige Engine konzentrieren, nicht auf eine große Anzahl von "
+"Scriptsprachen."
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
-"Keine nativen Vektor-Typen (vector3, matrix4, usw.) → geringere Performance "
-"wenn eigene Objekttypen genutzt werden (Lua, Python, Squirrel, JS, AS, etc.)."
+"Keine nativen Vektor-Typen (vector3, matrix4, usw.), resultierend in stark "
+"reduzierter Performance wenn eigene Objekttypen genutzt werden (Lua, Python, "
+"Squirrel, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:147
 #, fuzzy
@@ -1041,17 +1038,15 @@ msgstr ""
 "Speicherbelegung (Lua, Python, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
 "Schwierigkeiten bei der Integration in den Code-Editor zur Code-"
-"Vervollständigung, Live-Bearbeitung, etc. (all dies). Dies wird von GDScript "
-"unterstützt."
+"Vervollständigung, Live-Bearbeitung, etc. (alle davon). Dies wird von "
+"GDScript unterstützt."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above, and more."
 msgstr "GDScript wurde entworfen, um diese und weitere Probleme zu umgehen."
 
@@ -1317,7 +1312,6 @@ msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Ich habe eine tolle Idee für Godot. Wie kann ich sie teilen?"
 
 #: ../../docs/about/faq.rst:259
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -1333,7 +1327,7 @@ msgstr ""
 "gravierenden Codeänderungen führen würden, um eine Art Nachahmung einer "
 "anderen Game-Engine zu verwirklichen oder alternative Workflows, die in den "
 "Editor eingebaut werden sollen. Diesen Enthusiasmus finden wir großartig und "
-"sind dankbar dafür, solch motivierte Leute dabei zu haben, doch Godots Fokus "
+"sind dankbar dafür, so motivierte Leute dabei zu haben, doch Godots Fokus "
 "ist und bleibt die Kernfunktionalität, so wie sie in der `Roadmap <https://"
 "github.com/godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, `squashing "
 "bugs and addressing issues <https://github.com/godotengine/godot/issues>`_ "
@@ -1524,7 +1518,6 @@ msgstr ""
 "oriented Design)?"
 
 #: ../../docs/about/faq.rst:327
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
@@ -1594,17 +1587,16 @@ msgid "Documentation changelog"
 msgstr "Änderungen Dokumentation"
 
 #: ../../docs/about/docs_changelog.rst:6
-#, fuzzy
 msgid ""
 "The documentation is continually being improved. The release of version 3.2 "
 "includes many new tutorials, many fixes and updates for old tutorials, and "
 "many updates to the :ref:`class reference <toc-class-ref>`. Below is a list "
 "of new tutorials added since version 3.1."
 msgstr ""
-"Die Dokumentation wird stetig verbessert. Version 3.1 beinhaltet viele neue "
-"Tutorials, Fehlerbehebungen, Updates für alte Tutorials und viele "
-"Aktualisierungen bei dem Nachschlagewerk für Klassen-Referenzen. Anbei ist "
-"eine Liste aller neuen Tutorials die seit Version 3.0 hinzugefügt wurden."
+"Die Dokumentation wird stetig verbessert. Version 3.2 beinhaltet viele neue "
+"Tutorials, Fehlerbehebungen sowie Updates für alte Tutorials und viele "
+"Aktualisierungen bei der Klassen-Referenz. Anbei ist eine Liste aller neuen "
+"Tutorials die seit Version 3.1 hinzugefügt wurden."
 
 #: ../../docs/about/docs_changelog.rst:11
 msgid ""
@@ -1645,10 +1637,8 @@ msgid "Audio"
 msgstr "Audio"
 
 #: ../../docs/about/docs_changelog.rst:30
-#, fuzzy
 msgid ":ref:`doc_recording_with_microphone`"
-msgstr ""
-":ref:`Einhalten von Lizenzen beim Kommpelieren <doc_complying_with_licenses>`"
+msgstr ":ref:`doc_recording_with_microphone`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`doc_sync_with_audio`"
@@ -1711,9 +1701,8 @@ msgstr ""
 ":ref:`Dein erster Spatial Shader: Teil 2 <doc_your_second_spatial_shader>`"
 
 #: ../../docs/about/docs_changelog.rst:57
-#, fuzzy
 msgid ":ref:`doc_visual_shaders`"
-msgstr ":ref:`Visuele Shader Plugins <doc_visual_shader_plugins>`"
+msgstr ":ref:`Visuelle Shader Plugins <doc_visual_shader_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:60
 #: ../../docs/tutorials/networking/index.rst:2
@@ -2109,14 +2098,15 @@ msgid "Project manager"
 msgstr "Projektverwaltung"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you'll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
 "Wenn Du Godot startest, erscheint als erstes Fenster die Projektverwaltung. "
-"Hier kannst Du Projekte anlegen, entfernen, importieren oder spielen."
+"Weil Du noch keine Projekte angelegt hast wird ein Popup erscheinen mit der "
+"Frage, ob Du die Asset Library öffnen möchtest. Klick einfach auf Abbrechen, "
+"wir schauen uns das später an."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
 msgid ""
@@ -2127,7 +2117,6 @@ msgstr ""
 "erstellen, entfernen, importieren oder Spielen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
-#, fuzzy
 msgid ""
 "In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
@@ -2164,13 +2153,12 @@ msgstr ""
 "auf deinem Computer aus, um es dort anzulegen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
-#, fuzzy
 msgid ""
 "Click the Browse button to open Godot's file browser and pick a location or "
 "type the folder's path in the Project Path field."
 msgstr ""
-"Klicke auf \"Durchstöbern\", um Godots Dateibrowser zu öffnen und wähle "
-"einen Ort oder tippe einen Pfad zum Zielverzeichnis im Projektpfadfeld ein."
+"Klicke auf \"Durchsuchen\", um Godots Dateibrowser zu öffnen und wähle einen "
+"Ort oder tippe einen Pfad zum Zielverzeichnis im Projektpfadfeld ein."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
 msgid ""
@@ -2207,7 +2195,6 @@ msgstr ""
 "Projekt für dich und öffnet es im Editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
@@ -2746,8 +2733,8 @@ msgid ""
 "tscn in Scene -> Save:"
 msgstr ""
 "Szenen müssen abgespeichert sein bevor sie ausgeführt werden können. "
-"Speichere also die Szene bspw. als \n"
-"\"Hello.tscn\" in \"Szene\" -> \"Szene speichern\" ab:"
+"Speichere also die Szene bspw. als \"Hello.tscn\" in \"Szene\" -> \"Szene "
+"speichern\" ab:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:155
 msgid ""
@@ -4284,9 +4271,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:1
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:1
-#, fuzzy
 msgid "Signal"
-msgstr "Signale"
+msgstr "Signal"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1296
@@ -10076,7 +10062,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid ":doc:`ui_main_menu`"
-msgstr ""
+msgstr ":doc:`ui_main_menu`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
 #, fuzzy
@@ -11842,10 +11828,14 @@ msgid ""
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
+"Ein Dateisystem verwaltet wie Assets gespeichert und auf diese zugegriffen "
+"wird. Ein gut gestaltetes Dateisystem erlaubt außerdem mehreren Entwicklern "
+"kollaborativ dieselben Dateien zu bearbeiten. Godot speichert alle Assets "
+"als Dateien im Dateisystem."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
-msgstr ""
+msgstr "Implementierung"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:17
 msgid ""
@@ -11857,6 +11847,13 @@ msgid ""
 "resources. For example, a font resource is often bundled together with the "
 "font textures."
 msgstr ""
+"Das Dateisystem speichert Resourcen auf der Festplatte. Alles, vom Script zu "
+"Szenen oder PNG Bildern sind Resourcen für die Engine. Wenn eine Resource "
+"Eigenschaften (Felder) besitzt welche andere Resourcen im Dateisystem "
+"referenzieren so werden diese miteinbezogen. Wenn eine Resource integrierte "
+"Sub-Resourcen besitzt so werden diese Zusammen in einer einzigen Datei "
+"gebündelt gespeichert. Zum Beispiel Schriftarten werden oft mit "
+"dazugehörigen Schrift-Texturen für die Darstellung gebündelt."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
 msgid ""
@@ -11864,14 +11861,21 @@ msgid ""
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
+"Godots Dateisystem vermeidet die Nutzung von Meta-dateien. Vorhandene "
+"Dateiverwaltungen der Betriebssysteme oder Versionskontrollsysteme (Git, "
+"SVN, Mercurial, Perforce, etc.) sind in der Regel besser als alles was "
+"zusätzlich implementiert werden könnte, also versucht Godot sein bestes gut "
+"mit diesen zusammenzuarbeiten (auch wenn die Verwendung von Metadaten "
+"eigentlich nichts damit zu tun hat)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:28
 msgid "Example of file system contents:"
-msgstr ""
+msgstr "Beispiel von Dateisystem-Inhalten:"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:39
+#, fuzzy
 msgid "project.godot"
-msgstr ""
+msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
 msgid ""
@@ -11879,6 +11883,11 @@ msgid ""
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
+"Die ``project.godot`` Datei ist die Projektdatei für Godot Projekte und "
+"befindet sich immer im Wurzelverzeichnis eines Projekts. Tatsächlich "
+"definiert der Ort dieser Datei sogar was als das Wurzelverzeichnis für das "
+"Projekt genutzt wird. Dies ist die erste Datei die Godot lokalisiert wenn "
+"ein Projekt geöffnet wird."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
 msgid ""
@@ -11886,10 +11895,13 @@ msgid ""
 "ini format. Even an empty ``project.godot`` can function as a basic "
 "definition of a blank project."
 msgstr ""
+"Diese Datei beinhaltet die Konfiguration des Projekts in direkter Text-"
+"ausführung unter nutzung des win.ini Formats. selbst eine leere ``project."
+"godot`` datei kann als Basis für ein leeres Projekt dienen."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:50
 msgid "Path delimiter"
-msgstr ""
+msgstr "Pfad-Trennzeichen"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
 msgid ""
@@ -11898,11 +11910,15 @@ msgid ""
 "``C:\\project\\project.godot`` needs to be typed as ``C:/project/project."
 "godot``."
 msgstr ""
+"Godot unterstützt lediglich ``/`` als Pfad-Trennzeichen. Dies wird aus "
+"Portabilitätsgründen so gehalten, denn alle Betriebssysteme unterstützen "
+"dies, sogar Windows, also muss ein Pfad wie ``C:project\\project.godot`` als "
+"``C:/project/project.godot`` angegeben werden."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:58
 #: ../../docs/tutorials/io/data_paths.rst:16
 msgid "Resource path"
-msgstr ""
+msgstr "Resourcen-Pfad"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:60
 msgid ""
@@ -11910,12 +11926,18 @@ msgid ""
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
 "`` was created."
 msgstr ""
+"Beim Zugriff auf eine Resource kann das Dateisystem-Layout des "
+"Betriebssystems umständlich und unter Umständen nicht portabel sein. Um "
+"dieses Problem zu umgehen wurde der Spezialpfad ``res://`` geschaffen."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
 msgid ""
 "The path ``res://`` will always point at the project root (where ``project."
 "godot`` is located, so ``res://project.godot`` is always valid)."
 msgstr ""
+"Der Pfad ``res://`` zeigt immer zur Wurzel des Projektverzeichnisses (wo "
+"``project.godot`` zu finden ist, also ist ``res://project.godot`` immer "
+"gültig)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
 msgid ""
@@ -11924,10 +11946,15 @@ msgid ""
 "phones or consoles, or running from DVD), the file system will become read-"
 "only and writing will no longer be permitted."
 msgstr ""
+"Das Dateisystem ist nur frei für Lese- und Schreibzugriffe wenn ein Projekt "
+"lokal im Editor ausgeführt wird. In Exporten (herausgeschriebenen "
+"Anwendungen) oder bei de Ausführung auf unterschiedlichen Geräten (wie "
+"Mobilgeräten, Konsolen oder schreibgeschützen Medien) wird das schreiben ins "
+"Dateisystem gesperrt und nur Lesen ist möglich."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:74
 msgid "User path"
-msgstr ""
+msgstr "Nutzer-Pfad"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
 msgid ""
@@ -11937,10 +11964,16 @@ msgid ""
 "differently depending on the OS the project is running on. Local path "
 "resolution is further explained in :ref:`doc_data_paths`."
 msgstr ""
+"Schreiben ins Dateisystem wird dennoch oft benötigt, z.B. um Spielstände "
+"abzulegen oder Inhalts-Pakete herunterzuladen. Hierzu stellt die Engine "
+"einen Spezialpfad bereit: ``user://``, welcher immer beschreibbar ist. "
+"Dieser Pfad wird unter diversen Betriebssystemen zu unterschiedlichen "
+"tatsächlichen Pfaden aufgelöst. Lokale Pfadauflösung wird tiefer beschrieben "
+"in :ref: `doc_data_paths`."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid "Host file system"
-msgstr ""
+msgstr "Host Dateisystem"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:85
 msgid ""
@@ -11949,10 +11982,15 @@ msgid ""
 "on all platforms. However, using host file system paths can be useful when "
 "writing development tools in Godot."
 msgstr ""
+"Alternativ können auch Host-Dateisystempfade genutzt werden, was allerdings "
+"nicht für herausgeschrieben Anwendungen empfohlen wird, da die Korrekte "
+"Funktion ihrere Nutzung nicht auf allen Platformen garantiert werden kann. "
+"Dennoch kann es nützlich sein diese zur Entwicklung von Werkzeugen (tools) "
+"in Godot zu nutzen."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid "Drawbacks"
-msgstr ""
+msgstr "Nachteile"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:93
 msgid ""
@@ -11962,6 +12000,11 @@ msgid ""
 "These references will have to be re-defined to point at the new asset "
 "location."
 msgstr ""
+"Es existieren auch Nachteile für diese simple Dateisystem-Gestaltung. Das "
+"erste Problem ist dass Verschieben von Assets (Umbenennen oder von einem "
+"Ordner in einen anderen innerhalb des Projekts verlegen) existierende "
+"Referenzen ungültig macht. Diese Referenzen müssen korrigiert werden so dass "
+"sie zum neuen Ort zeigen."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:98
 msgid ""
@@ -11970,6 +12013,12 @@ msgid ""
 "dependencies will have to be fixed manually (Godot detects this and helps "
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
+"Um dies zu vermeiden sollten alle Aktionen wie Verschieben, Löschen oder "
+"Umbenennen innerhalb Godots (im Dateisystem-Dock) ausgeführt werden. Datein "
+"sollten nicht außerhalb Godots verschoben werden (Falls dies doch mal "
+"vorkommt wird Godot beim Beheben der Probleme versuchen behilflich zu sein. "
+"Aber Garantien können nicht gegeben werden, also warum den schweren weg "
+"gehen?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
 msgid ""
@@ -11980,6 +12029,13 @@ msgid ""
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
+"Weiterhin ist es so, dass unter Windows und macOS Dateien und Pfade in Groß- "
+"und Kleinschreibung unterschieden werden. Wenn Entwickler auf einem dieser "
+"Systeme eine Datei als ``myfile.PNG`` abspeichert und diese aber als "
+"``myfile.png`` referenziert wird dies vielleicht unter deren Betriebssystem "
+"funktionieren, aber nicht unter z.B. Linux, Android etc. Dies kann auch auf "
+"exportierte Binärdateien zutreffen, welche ein komprimiertes Format nutzen "
+"um Dateien unterzubringen."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:109
 msgid ""
@@ -11987,12 +12043,15 @@ msgid ""
 "files when working with Godot. One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
+"Es wird empfohlen, dass Teams klare Namenskonventionen zur Arbeit in Godot "
+"festlegen. Eine simple, einfach einzuhaltende Regel ist Pfade und Dateinamen "
+"allesamt in Kleinschreibung zu halten."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:33
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
-msgstr ""
+msgstr "Szenen-Baum (SceneTree)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
 msgid ""
@@ -12000,10 +12059,13 @@ msgid ""
 "Scenes are collections of nodes. They become active once they enter the "
 "*scene tree*."
 msgstr ""
+"In vorangegangen Tutorials drehte sich alles um das Konzept der Nodes. "
+"Szenen sind Sammlungen von Nodes. Sie werden aktiv sobald sie in den Szenen-"
+"Baum (*scene tree*) eingefügt werden."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:14
 msgid "MainLoop"
-msgstr ""
+msgstr "MainLoop"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -12012,6 +12074,9 @@ msgid ""
 "Afterwards, all drivers, servers, scripting languages, scene system, etc are "
 "loaded."
 msgstr ""
+"Godot arbeitet intern wie folgt. Eine OS-Klasse (:ref:`OS<class_OS>`) ist "
+"die einzige Instanz die zu Begin ausgeführt wird. Darauf folgend werden "
+"Treiber, Server, Scriptsprachen, Szenen-System etc. geladen."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:21
 msgid ""
@@ -12020,6 +12085,10 @@ msgid ""
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
+"Sobald die Initialisierung abgeschlossen ist, wird :ref:`OS<class_OS>` ein :"
+"ref:`MainLoop<class_MainLoop>` übergeben um ausgeführt zu werden. Bis zu "
+"diesem Punkt ist alles interner Ablauf (siehe main/main.cpp im source code "
+"falls Interesse besteht die Internen Abläufe nachzuvollziehen)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:27
 msgid ""
@@ -12028,6 +12097,11 @@ msgid ""
 "(physics-synchronized callback), and input. Again, this is low level and "
 "when making games in Godot, writing your own MainLoop seldom makes sense."
 msgstr ""
+"Die Nutzer-Anwendung, oder das Spiel, startet im MainLoop. Diese Klasse "
+"definiert Methoden für die Initialisierung, Idle (Bild-synchrone "
+"Rückrufmethode), fixed (Physik-synchrone Rückrufmethode) und Eingabe "
+"(input). Dies sind tief gehende Funktionen, welche in der typischen "
+"Erstellung eines Spiels nur sehr selten verwendet werden."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
@@ -12051,6 +12125,10 @@ msgid ""
 "<class_SceneTree>`. This is automatically instanced and set when running a "
 "scene, no need to do any extra work."
 msgstr ""
+"Das Szenen-System stellt eine Implemetierung des MainLoops dar (:ref:"
+"`SceneTree <class_SceneTree>`) welcher OS so übergeben wird. Dies geschieht "
+"standardmäßig automatisch sobald eine Szene ausgeführt wird und erfordert "
+"kein manuelles Eingreifen."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
@@ -12066,18 +12144,25 @@ msgid ""
 "added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)."
 msgstr ""
+"Es beinhaltet die Wurzel :ref:`Viewport<class_Viewport>`, zu welcher eine "
+"Szene hinzugefügt wird, als Kind, welches beim ersten Öffnen Teil des Szenen-"
+"Baums (*Scene Tree*) wird."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:52
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
 "in a group or get a list of them."
 msgstr ""
+"Es enthält Informationen zu Gruppen und hat Möglichkeiten Node-Methoden "
+"einer Gruppe aufzurufen oder eine Liste dieser zu erstellen."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:54
 msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
 msgstr ""
+"Es beinhaltet einige Funktionalität zum Globalen Zustand, wie dem Pausieren "
+"oder Beenden des Prozesses."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
 msgid ""
@@ -12085,16 +12170,22 @@ msgid ""
 "<class_SceneTree>` singleton can be obtained by calling :ref:`Node."
 "get_tree() <class_Node_method_get_tree>`."
 msgstr ""
+"Wenn ein Node teil des Szenen-Baums (Scene Tree) ist, kann auf den Szenen-"
+"Baum (:ref:`SceneTree<class_SceneTree>`) als Singleton über :ref:`Node."
+"get_tree() <class_Node_method_get_tree>`zugegriffen werden."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:63
 msgid "Root viewport"
-msgstr ""
+msgstr "Wurzel Fenster (Viewport)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
 msgid ""
 "The root :ref:`Viewport <class_Viewport>` is always at the top of the scene. "
 "From a node, it can be obtained in two different ways:"
 msgstr ""
+"Das Wurzel-Fenster (:ref:`Viewport <class_Viewport>`) ist immer am oberen "
+"Ende der Szene. Durch einen Node kann über folgende Wege auf es zugegriffen "
+"werden:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:80
 msgid ""
@@ -12103,6 +12194,10 @@ msgid ""
 "sense that the top of all nodes is always a node of this type otherwise "
 "nothing would be seen."
 msgstr ""
+"Dieser Node enthält das Haupt-Fenster (Viewport - :ref:`Viewport "
+"<class_Viewport>`). Alles was diesem untergeordnet ist wird standardmäßig "
+"dargestellt, so macht es Sinn das die Wurzel aller Nodes immer ein Node "
+"dieses Typs ist, andererseits ist nichts sichtbar."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:85
 msgid ""
@@ -12110,17 +12205,22 @@ msgid ""
 "and such), this one is the only one that is never created by the user. It's "
 "created automatically inside SceneTree."
 msgstr ""
+"Wärend andere Fenster (Viewport) in der Szene erstellt werden können (für "
+"Split-screens z.B.), ist dieses das einzige das nicht vom Nutzer erstellt "
+"wird. Es wird automatisch durch den Szenen-Baum (SceneTree) bereitgestellt."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:90
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:22
 msgid "Scene tree"
-msgstr ""
+msgstr "Szenen-Baum (SceneTree)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:92
 msgid ""
 "When a node is connected, directly or indirectly, to the root viewport, it "
 "becomes part of the *scene tree*."
 msgstr ""
+"Wenn ein Node eingebunden wird, direkt oder indirekt, in das Wurzel-Fenster "
+"(Viewport) wird es Teil des Szenen-Baums (*SceneTree*)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:95
 msgid ""
@@ -13922,9 +14022,8 @@ msgid "Editor setting"
 msgstr "Editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-#, fuzzy
 msgid "Open 2D Editor"
-msgstr "Editor"
+msgstr "2D Editor öffnen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
@@ -13939,9 +14038,8 @@ msgid "``editor/editor_2d``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-#, fuzzy
 msgid "Open 3D Editor"
-msgstr "Editor"
+msgstr "3D Editor öffnen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -13957,7 +14055,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr ""
+msgstr "Skripteditor öffnen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
@@ -13975,7 +14073,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr ""
+msgstr "Hilfe durchsuchen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
@@ -13990,9 +14088,8 @@ msgid "``editor/editor_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
-#, fuzzy
 msgid "Distraction Free Mode"
-msgstr "Animationsmodus"
+msgstr "Ablenkungsfreier Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
@@ -14008,7 +14105,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
-msgstr ""
+msgstr "Nächster Tab"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
@@ -14024,7 +14121,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
-msgstr ""
+msgstr "Vorheriger Tab"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -14055,9 +14152,8 @@ msgid "``editor/filter_files``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
-#, fuzzy
 msgid "Open Scene"
-msgstr "Open Source"
+msgstr "Szene öffnen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -14072,9 +14168,8 @@ msgid "``editor/open_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
-#, fuzzy
 msgid "Close Scene"
-msgstr "Spieler-Szene"
+msgstr "Szene schließen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -14090,7 +14185,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "Geschlossene Szene erneut öffnen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
@@ -14107,9 +14202,8 @@ msgid "``editor/reopen_closed_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
-#, fuzzy
 msgid "Save Scene"
-msgstr "Spieler-Szene"
+msgstr "Szene speichern"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -14142,7 +14236,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
-msgstr ""
+msgstr "Alle Szenen speichern"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
@@ -14206,7 +14300,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "Undo"
-msgstr ""
+msgstr "Rückgängig machen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -14225,7 +14319,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "Redo"
-msgstr ""
+msgstr "Wiederherstellen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -14241,7 +14335,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
-msgstr ""
+msgstr "Verlassen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
@@ -14256,9 +14350,8 @@ msgid "``editor/file_quit``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
-#, fuzzy
 msgid "Quit to Project List"
-msgstr "Projektkonfiguration"
+msgstr "Zur Projektverwaltung zurückkehren"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -14356,9 +14449,8 @@ msgid "``editor/stop``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
-#, fuzzy
 msgid "Play Scene"
-msgstr "Spieler-Szene"
+msgstr "Szene starten"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -14374,9 +14466,8 @@ msgid "``editor/play_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
-#, fuzzy
 msgid "Play Custom Scene"
-msgstr "Spieler-Szene"
+msgstr "Spiele angepasste Szene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -14394,7 +14485,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "Unteres Panel vergrößern"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -14411,7 +14502,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "Zoom In"
-msgstr ""
+msgstr "Vergrößern"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -14430,7 +14521,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "Zoom Out"
-msgstr ""
+msgstr "Verkleinern"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -15162,7 +15253,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "Kopieren"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -15188,7 +15279,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "Paste"
-msgstr ""
+msgstr "Einfügen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
@@ -15299,7 +15390,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "Ersetzen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -15623,7 +15714,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr ""
+msgstr "Gehe zu Zeile"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -15713,9 +15804,8 @@ msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
-#, fuzzy
 msgid "Script Editor"
-msgstr "GDScript-Typ"
+msgstr "Skripteditor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -15792,7 +15882,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
-msgstr ""
+msgstr "Speichern"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
@@ -15852,7 +15942,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
-msgstr ""
+msgstr "Schließen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
@@ -15909,7 +15999,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr ""
+msgstr "Vergrößerung zurücksetzen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -16093,7 +16183,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "Zurück"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -16101,7 +16191,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr ""
+msgstr "Vor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
@@ -16109,7 +16199,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr ""
+msgstr "Hoch"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
@@ -16117,7 +16207,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
-msgstr ""
+msgstr "Aktualisieren"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
@@ -16125,7 +16215,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "Versteckte Dateien ein- und ausblenden"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -16141,7 +16231,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "Favoriten ein- und ausblenden"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -16149,7 +16239,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr ""
+msgstr "Modus umschalten"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -16160,9 +16250,8 @@ msgid "``file_dialog/toggle_mode``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
-#, fuzzy
 msgid "Create Folder"
-msgstr "Nodes erstellen"
+msgstr "Ordner erstellen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -16180,16 +16269,15 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
-#, fuzzy
 msgid "Focus Path"
-msgstr "Ressourcenpfad"
+msgstr "Zu Pfad springen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
@@ -16204,7 +16292,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
-msgstr ""
+msgstr "Favorit nach oben schieben"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
@@ -16222,7 +16310,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
-msgstr ""
+msgstr "Favorit nach unten schieben"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
@@ -16244,9 +16332,8 @@ msgid "FileSystem Dock"
 msgstr "Dateisystem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
-#, fuzzy
 msgid "Copy Path"
-msgstr "Pfad"
+msgstr "Pfad kopieren"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -16255,7 +16342,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplizieren"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -16336,7 +16423,7 @@ msgstr "AnimationTree"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "Auswahl duplizieren"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -16344,7 +16431,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "Umgesetztes duplizieren"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -16359,9 +16446,8 @@ msgid "``animation_editor/duplicate_selection_transposed``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
-#, fuzzy
 msgid "Delete Selection"
-msgstr "Überschreibbare Funktionen"
+msgstr "Auswahl löschen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -16369,7 +16455,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "Zum nächsten Schritt"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -16385,7 +16471,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "Zum vorherigen Schritt"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -16503,7 +16589,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
-msgstr ""
+msgstr "Auswählen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
@@ -83468,7 +83554,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
-msgstr ""
+msgstr "Aktivieren"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"

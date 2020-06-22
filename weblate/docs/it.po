@@ -68,8 +68,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-06-05 17:37+0200\n"
-"PO-Revision-Date: 2020-05-13 19:56+0000\n"
-"Last-Translator: Riccardo Ferro <Riccardo3Ferro@gmail.com>\n"
+"PO-Revision-Date: 2020-06-22 11:41+0000\n"
+"Last-Translator: Mirko Soppelsa <miknsop@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -77,7 +77,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -103,7 +103,7 @@ msgstr ""
 "Questa è la documentazione per la versione stabile 3.2. Stai cercando la "
 "documentazione per la versione corrente **in sviluppo**? `Dai un'occhiata "
 "qui: <http://docs.godotengine.org/en/latest>`_. Puoi anche vedere la "
-"documentazione della precedente versione stabile  `3.1 <https://docs."
+"documentazione della precedente versione stabile `3.1 <https://docs."
 "godotengine.org/en/3.1>`_."
 
 #: ../../docs/index.rst:18
@@ -139,7 +139,6 @@ msgstr ""
 "usare le versioni stabili di Godot."
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -438,12 +437,13 @@ msgid ""
 msgstr ""
 "Questa documentazione è continuamente scritta, corretta, modificata e "
 "migliorata dai membri della community di Godot Engine. Viene modificata via "
-"file testuali basati sul linguaggio di markup  `reStructuredText <http://www."
+"file testuali basati sul linguaggio di markup `reStructuredText <http://www."
 "sphinx-doc.org/en/stable/rest.html>`_ e poi viene compilata in un documento "
 "web statico/offline utilizzando i programmi open source `Sphinx <http://www."
 "sphinx-doc.org>`_ e `ReadTheDocs <https://readthedocs.org/>`_."
 
 #: ../../docs/about/introduction.rst:66
+#, fuzzy
 msgid ""
 "You can contribute to Godot's documentation by opening issue tickets or "
 "sending patches via pull requests on its GitHub `source repository <https://"
@@ -452,10 +452,10 @@ msgid ""
 "docs/>`_."
 msgstr ""
 "È possibile contribuire alla documentazione su Godot attraverso l'apertura "
-"di un issue o inviando le patch attraverso pull request sul `repository "
+"di un issue o inviando le patch attraverso pull request al `repository "
 "presente su GitHub <https://github.com/godotengine/godot-docs>`_ oppure "
-"traducendo nel proprio linguaggio su  `Hosted Weblate <https://hosted."
-"weblate.org/projects/godot-engine/godot-docs/>`_."
+"traducendo nella propria lingua su `Hosted Weblate <https://hosted.weblate."
+"org/projects/godot-engine/godot-docs/>`_."
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -473,14 +473,13 @@ msgid "Organization of the documentation"
 msgstr "Struttura della documentazione"
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
-"La documentazione è organizzata in cinque sezioni con una distribuzione di "
-"contenuti sbilanciata in maniera impressionante – ma il modo in cui è "
+"Questa documentazione è organizzata in cinque sezioni con una distribuzione "
+"di contenuti sbilanciata in maniera impressionante – ma il modo in cui è "
 "organizzata dovrebbe essere abbastanza intuitivo:"
 
 #: ../../docs/about/introduction.rst:83
@@ -503,7 +502,7 @@ msgstr ""
 "La sezione :ref:`sec-learn` è il principale motivo per l'esistenza di questa "
 "documentazione visto che contiene tutte le informazioni necessarie su come "
 "utilizzare il motore per creare videogiochi. Inizia con il tutorial :ref:"
-"`Passo Passo <toc-learn-step_by_step>` che dovrebbe essere il punto di "
+"`Passo passo <toc-learn-step_by_step>` che dovrebbe essere il punto di "
 "inizio per tutti i nuovi utenti."
 
 #: ../../docs/about/introduction.rst:91
@@ -976,13 +975,12 @@ msgstr ""
 "Squirrel, JS, AS, ecc.)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Il garbage collector produce blocchi o un uso della memoria inutilmente alto "
-"(Lua, Python, JS, AS, ecc.)."
+"Il garbage collector produce rallentamenti o un uso della memoria "
+"inutilmente alto (Lua, Python, JavaScript, ActionScript, ecc.)."
 
 #: ../../docs/about/faq.rst:149
 #, fuzzy
@@ -2084,10 +2082,10 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"Dalla scheda **Templates** puoi scaricare template open source e progetti "
-"dimostrativi (sempre open source) per iniziare più in fretta. Seleziona "
-"semplicemente il template o la demo che vuoi, clicca download e quando ha "
-"finito di scaricare clicca installa e scegli dove vuoi salvare il progetto."
+"Dalla scheda **Templates** puoi scaricare dei progetti open source  e dei "
+"progetti dimostrativi per iniziare più in fretta. Semplicemente seleziona il "
+"template o la demo che vuoi, clicca download e quando ha finito di scaricare "
+"clicca installa e scegli dove vuoi salvare il progetto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
 msgid "Create or import a project"
@@ -4301,8 +4299,8 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
-"Vicino alla tab \"Inspector\" ne è presente una chiamata \"Node\".  Clicca "
-"questa tab e vedrai tutti i segnali  che il nodo selezionato può emettere. "
+"Vicino alla tab \"Inspector\" ne è presente una chiamata \"Node\". Clicca "
+"questa tab e vedrai tutti i segnali che il nodo selezionato può emettere. "
 "Nel caso del nodo Timer, quello che c'interessa è \"timeout\". Questo "
 "segnale viene emesso ogni volta il Timer raggiunge ``0``."
 
@@ -4444,6 +4442,8 @@ msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
+"Un segnale ha anche la possibilità di dichiarare uno o più argomenti. "
+"Specificare i nomi degli argomenti tra parentesi:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:243
 msgid ""
@@ -4452,6 +4452,10 @@ msgid ""
 "number of arguments when you emit signals. So it's up to you to emit the "
 "correct values."
 msgstr ""
+"I segnali sono argomenti che vengono visualizzati nel riquadro del nodo "
+"dell'editor e Godot può utilizzarli per generare funzioni di callback. "
+"Tuttavia, è ancora possibile emettere un numero qualsiasi di argomenti "
+"quando si emettono segnali, quindi spetta a te fornire i valori corretti."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:248
 #, fuzzy
@@ -4582,6 +4586,9 @@ msgid ""
 "and ``Aspect`` to \"keep\". This ensures that the game scales consistently "
 "on different sized screens."
 msgstr ""
+"Sempre in questa sezione, sotto le opzioni \"Stretch\", impostare ``Mode`` a "
+"\"2d\" e ``Aspect`` a \"keep\". Questo assicura che il gioco sia scalabile "
+"in modo coerente su schermi di dimensioni diverse."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:49
 msgid "Organizing the project"
@@ -4630,6 +4637,11 @@ msgid ""
 "- what the object *is*. Click the \"Other Node\" button and add an :ref:"
 "`Area2D <class_Area2D>` node to the scene."
 msgstr ""
+"Per iniziare, dobbiamo scegliere un nodo radice per l'oggetto giocatore. "
+"Come regola generale, il nodo radice di una scena dovrebbe riflettere la "
+"funzionalità desiderata dell'oggetto - ciò che l'oggetto *è*. Fare clic sul "
+"pulsante \"Altro nodo\" e aggiungere un nodo :ref:`Area2D <class_Area2D>`` "
+"alla scena."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:78
 msgid ""
@@ -4777,7 +4789,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:150
 msgid "Make sure to save the scene again after these changes."
-msgstr ""
+msgstr "Assicurati di salvare di nuovo la scena dopo queste modifiche."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:153
 msgid "Moving the player"
@@ -5010,20 +5022,25 @@ msgstr ""
 "precedente, in caso di variazione del frame rate."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:352
+#, fuzzy
 msgid ""
 "Click \"Play Scene\" (``F6``) and confirm you can move the player around the "
 "screen in all directions."
 msgstr ""
+"Clicca su \"Play Scene\" (``F6``) e verifica di poter muovere il giocatore "
+"sullo schermo in tutte le direzioni."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:355
 msgid "If you get an error in the \"Debugger\" panel that says"
-msgstr ""
+msgstr "Se si ottiene un errore nel pannello \"Debugger\" che dice"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:357
 msgid ""
 "``Attempt to call function 'play' in base 'null instance' on a null "
 "instance``"
 msgstr ""
+"`` Tentativo di chiamare la funzione 'play' nella base 'istanza nulla' su "
+"un'istanza nulla``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:359
 #, fuzzy
@@ -5043,7 +5060,6 @@ msgid "Choosing animations"
 msgstr "Scegliere le animazioni"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:366
-#, fuzzy
 msgid ""
 "Now that the player can move, we need to change which animation the "
 "AnimatedSprite is playing based on its direction. We have the \"walk\" "
@@ -5057,7 +5073,7 @@ msgstr ""
 "l'animazione eseguita da AnimatedSprite in base alla direzione. Abbiamo "
 "l'animazione \"right\", che deve essere specchiata orizzontalmente usando la "
 "proprietà ``flip_h`` per ottenere il movimento a sinistra, e un animazione "
-"\"up\",  la quale deve essere capovolta verticalmente  con ``flip_v`` per "
+"\"up\", la quale deve essere capovolta verticalmente con ``flip_v`` per "
 "ottenere il movimento verso il basso. Aggiungiamo questo pezzo di codice "
 "alla fine della funzione ``_process()``:"
 
@@ -5077,6 +5093,8 @@ msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions."
 msgstr ""
+"Riprodurre la scena e verificare che le animazioni siano corrette in "
+"ciascuna delle direzioni."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:428
 msgid ""
@@ -5085,6 +5103,10 @@ msgid ""
 "code. If you named the animation ``\"Walk\"``, you must also use a capital "
 "\"W\" in the code."
 msgstr ""
+"Un errore comune è quello di sbagliare i nomi delle animazioni. I nomi delle "
+"animazioni nel pannello SpriteFrames devono corrispondere a quello che si "
+"digita nel codice. Se avete chiamato l'animazione ```\"Walk\"```, dovete "
+"anche usare una \"W\" maiuscola nel codice."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:433
 #, fuzzy
@@ -5152,6 +5174,8 @@ msgid ""
 "Note the green icon indicating that a signal is connected to this function. "
 "Add this code to the function:"
 msgstr ""
+"Notare l'icona verde che indica che a questa funzione è collegato un "
+"segnale. Aggiungere questo codice alla funzione:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:502
 msgid ""
@@ -5279,17 +5303,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:567
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
-msgstr ""
+msgstr "Regolare \"Speed (FPS)\" su ```3`` per tutte le animazioni."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:571
 msgid "Set the ``Playing`` property in the Inspector to “On”."
-msgstr ""
+msgstr "Impostare la proprietà ```Playing``` nell'Inspector su \"On\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:573
 msgid ""
 "We'll select one of these animations randomly so that the mobs will have "
 "some variety."
 msgstr ""
+"Selezioneremo una di queste animazioni a caso in modo che i nemici abbiano "
+"una certa varietà."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:575
 msgid ""
@@ -5312,9 +5338,8 @@ msgstr ""
 "proprietà ``Rotation Degrees`` su ``90`` sotto ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:582
-#, fuzzy
 msgid "Save the scene."
-msgstr "Salva Scena"
+msgstr "Salva Scena."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
 msgid "Enemy script"
@@ -5325,18 +5350,14 @@ msgid "Add a script to the ``Mob`` and add the following member variables:"
 msgstr "Aggiungi uno script a ``Mob`` e le seguenti variabili membro:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:611
-#, fuzzy
 msgid ""
 "When we spawn a mob, we'll pick a random value between ``min_speed`` and "
 "``max_speed`` for how fast each mob will move (it would be boring if they "
 "were all moving at the same speed)."
 msgstr ""
-"Quando viene generato un mob, sceglieremo un valore casuale tra "
-"``min_speed``` e ``max_speed``` per quanto velocemente ogni mob si muoverà "
-"(sarebbe noioso se si muovessero tutti alla stessa velocità). Inoltre, "
-"abbiamo anche un array contenente i nomi delle tre animazioni, che useremo "
-"per selezionarne una casuale. Assicurati di averle scritte nello script e "
-"nella risorsa SpriteFrames."
+"Quando viene generato un nemico, sceglieremo un valore casuale tra "
+"``min_speed``` e ``max_speed``` per regolare la velocità con cui ogni nemico "
+"si muoverà (sarebbe noioso se si muovessero tutti alla stessa velocità)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:615
 msgid ""
@@ -5352,6 +5373,9 @@ msgid ""
 "``frames`` property. This returns an Array containing all three animation "
 "names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
+"Per prima cosa, otteniamo l'elenco dei nomi delle animazioni dalla proprietà "
+"``frames`` di AnimatedSprite. Questo restituisce un Array contenente tutti e "
+"tre i nomi delle animazioni: ``[\"walk\", \"swim\", \"fly\"]``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:640
 msgid ""
@@ -5359,6 +5383,10 @@ msgid ""
 "of these names from the list (array indices start at ``0``). ``randi() % n`` "
 "selects a random integer between ``0`` and ``n-1``."
 msgstr ""
+"Dobbiamo quindi scegliere un numero casuale tra ``0`` e ``2`` per "
+"selezionare uno di questi nomi dalla lista (gli indici degli array iniziano "
+"con ``0``). ``randi() % n`` seleziona un numero intero casuale tra ``0`` e "
+"``n-1``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:644
 #, fuzzy
@@ -5552,10 +5580,12 @@ msgid ""
 "Click the ``Main`` node and you will see the ``Mob`` property in the "
 "Inspector under \"Script Variables\"."
 msgstr ""
+"Clicca sul nodo ``Main``` e vedrai la proprietà ``Mob`` nell'Inspector sotto "
+"\"Script Variables\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:774
 msgid "You can assign this property's value in two ways:"
-msgstr ""
+msgstr "È possibile assegnare il valore di questa proprietà in due modi:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:776
 #, fuzzy
@@ -5571,6 +5601,8 @@ msgid ""
 "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``Mob."
 "tscn``."
 msgstr ""
+"Cliccare la freccia rivolta verso il basso accanto a \"[empty]\" e scegliere "
+"\"Load\". Selezionare ``Mob.tscn```."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:781
 #, fuzzy
@@ -5643,6 +5675,8 @@ msgid ""
 "Let's test the scene to make sure everything is working. Add this to "
 "``_ready()``:"
 msgstr ""
+"Proviamo la scena per assicurarci che tutto funzioni. Aggiungere questo a "
+"``_ready()``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:925
 msgid ""
@@ -5650,18 +5684,25 @@ msgid ""
 "automatically when the game launches. Press the \"Play\" button and select "
 "``Main.tscn`` when prompted."
 msgstr ""
+"Assegniamo anche ``Main``` come nostra \"Scena principale\" - quella che "
+"viene eseguita automaticamente al lancio del gioco. Premi il pulsante \"Play"
+"\" e seleziona ``Main.tscn``` quando richiesto."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:929
 msgid ""
 "You should be able to move the player around, see mobs spawning, and see the "
 "player disappear when hit by a mob."
 msgstr ""
+"Dovresti essere in grado di muovere il giocatore, vedere i mob che vengono "
+"generati e vedere il giocatore scomparire quando viene colpito da un mob."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:932
 msgid ""
 "When you're sure everything is working, remove the call to ``new_game()`` "
 "from ``_ready()``."
 msgstr ""
+"Quando si è sicuri che tutto funzioni, rimuovere la chiamata a "
+"``new_game()`` da ``_ready()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
 msgid "HUD"
@@ -5778,6 +5819,10 @@ msgid ""
 "next to the DynamicFont property and choose \"Copy\", then \"Paste\" it in "
 "the same place on the other two Control nodes."
 msgstr ""
+"Una volta fatto questo sul ``ScoreLabel``, è possibile fare clic sulla "
+"freccia rivolta verso il basso accanto alla proprietà DynamicFont e "
+"scegliere \"Copia\", quindi \"Incolla\" nello stesso punto degli altri due "
+"nodi Controllo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:984
 msgid ""
@@ -5976,6 +6021,11 @@ msgid ""
 "\"Receiver Method\" in the \"Connect a Signal\" window. Verify that the "
 "green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
+"Nella scheda Node, collegare il segnale ``start_game`` dell'HUD alla "
+"funzione ``new_game()`` del nodo principale digitando \"new_game\" nel "
+"\"Receiver Method\" nella finestra \"Connect a Signal\". Verificare che "
+"l'icona verde di connessione appaia ora accanto a ``func new_game()`` nello "
+"script."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1170
 msgid ""
@@ -6031,18 +6081,26 @@ msgid ""
 "\"Signals\", click \"Groups\" and you can type a new group name and click "
 "\"Add\"."
 msgstr ""
+"Nella scena ``Mob``, selezionare il nodo radice e cliccare sulla scheda "
+"\"Nodo\" accanto all'Inspector (lo stesso posto dove si trovano i segnali "
+"del nodo). Accanto a \"Segnali\", cliccare su \"Gruppi\" e si può digitare "
+"un nuovo nome per il gruppo e cliccare su \"Aggiungi\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1225
 msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``game_over()`` function in ``Main``:"
 msgstr ""
+"Ora tutti i mob saranno nel gruppo \"mob\". Possiamo quindi aggiungere la "
+"seguente riga alla funzione ``game_over()`` nella funzione ``Main``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1238
 msgid ""
 "The ``call_group()`` function calls the named function on every node in a "
 "group - in this case we are telling every mob to delete itself."
 msgstr ""
+"La funzione ``call_group()``` chiama la funzione cosi denominata su ogni "
+"nodo di un gruppo - cosi facendo diciamo ad ogni mob di cancellarsi."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1242
 msgid "Finishing up"
@@ -6488,6 +6546,8 @@ msgid ""
 "Open JDK(version 8 is required, more recent versions won't work): https://"
 "adoptopenjdk.net/index.html"
 msgstr ""
+"Aprire JDK (è richiesta la versione 8, le versioni più recenti non "
+"funzionano): https://adoptopenjdk.net/index.html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:324
 msgid ""
@@ -7288,10 +7348,16 @@ msgid ""
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
+"``Scale On Expand (compat)`` scala la texture per adattarsi al rettangolo di "
+"delimitazione del nodo solo se la proprietà ``expand`` è ``true``; "
+"altrimenti, si comporta come la modalità ``Keep``. Modalità predefinita per "
+"la compatibilità all'indietro."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
+"```Scale``` scala la texture per adattarsi al rettangolo di delimitazione "
+"del nodo."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid "``Tile`` makes the texture repeat, but it won't scale."
@@ -7322,16 +7388,21 @@ msgid ""
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node's limits."
 msgstr ""
+"``Keep Aspect Covered`` funziona proprio come ``Keep Aspect Centered``, ma "
+"il lato più corto si adatta al rettangolo di delimitazione e l'altro si "
+"aggancia ai limiti del nodo."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
+"Come per i nodi Sprite, è possibile modulare il colore di TextureRect. Fare "
+"clic sulla proprietà ``Modulate`` e utilizzare il selezionatore di colori."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureRect modulated with a red color"
-msgstr ""
+msgstr "TextureRect modulato con un colore rosso"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:98
 msgid "TextureButton"
@@ -7345,6 +7416,12 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
+"** TextureButton ** è simile a TextureRect, tranne per il fatto che ha 5 "
+"slot per trama: uno per ciascuno degli stati dei pulsanti. Il più delle "
+"volte, userete le texture Normal, Pressed e Hover .  è utile se "
+"l'interfaccia è in ascolto dell'input da tastiera. La sesta area immagine, "
+"la  Clic Mask, consente di definire l'area in cui è possibile fare clic "
+"utilizzando un'immagine in bianco e nero a 1 bit."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""
@@ -7356,6 +7433,13 @@ msgid ""
 "``modulate`` property, to change its color, and ``Resize`` and ``Stretch`` "
 "modes to change its scale behavior."
 msgstr ""
+"Nella sezione  Base Button, troverai alcune caselle di controllo che "
+"cambiano il comportamento del pulsante. Quando `` Toggle Mode '' è attivo, "
+"il pulsante commuta tra gli stati attivo e normale quando lo si preme. `` "
+"Disabled`` lo disabilita di default, nel qual caso utilizzerà la texture `` "
+"Disabled``. TextureButton condivide alcune proprietà con il frame texture: "
+"ha una proprietà `` modulate``, per cambiarne il colore, e `` Resize`` e `` "
+"Stretch`` per cambiare il suo comportamento in scala."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureButton and its 5 texture slots"
@@ -7371,6 +7455,9 @@ msgid ""
 "Under and Over textures sandwich the Progress one, which displays the bar's "
 "value."
 msgstr ""
+"** TextureProgress ** consente di creare una barra di avanzamento con un "
+"massimo di 3 sprite. Le trame Under, Over sono intervallate da Progress, che "
+"mostra il contenuto della barra."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:126
 msgid ""
@@ -7379,6 +7466,10 @@ msgid ""
 "``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
 "the gauge."
 msgstr ""
+"La proprietà `` Mode '' controlla la direzione in cui cresce la barra: "
+"orizzontale, verticale o radiale. Se lo si imposta su radiale, le proprietà "
+"`` Initial Angle'' e `` Fill Degrees '' consentono di limitare l'intervallo "
+"del misuratore."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
 msgid ""
@@ -7390,10 +7481,18 @@ msgid ""
 "the default of ``0`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
+"Per animare la barra, dovresti vedere la sezione Intervallo. Regola le "
+"proprietà `` Min '' e `` Max`` per impostare l'intervallo del misuratore. Ad "
+"esempio, per rappresentare la vita di un personaggio, devi impostare `` "
+"Min`` su `` 0 '' e `` Max`` sulla vita massima del personaggio. Cambia la "
+"proprietà `` Value`` per aggiornare la barra. Se si lasciano i valori `` "
+"Min`` e `` Max`` nei valori predefiniti di `` 0`` e `` 100 '' e si imposta "
+"la proprietà `` Value`` su `` 40``, il Verrà visualizzato il 40% della trama "
+"`` Progress`` e il 60% rimarrà nascosto."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"
-msgstr ""
+msgstr "Barra TextureProgress, riempita per due terzi"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:146
 msgid ""
@@ -7824,7 +7923,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
-msgstr ""
+msgstr "Progettare il menu principale"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:85
 msgid ""
@@ -7857,6 +7956,8 @@ msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
+"Se gli elementi sono disposti in righe o colonne, utilizzare un "
+"``HBoxContainer`` o ``VBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
@@ -66555,9 +66656,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:157
-#, fuzzy
 msgid "Let's go over what this code does."
-msgstr "Non so cosa faccia questo metodo!"
+msgstr "Vediamo cosa fa questo codice."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:161
 msgid ""
@@ -81221,7 +81321,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
-msgstr ""
+msgstr "Abilita"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"
