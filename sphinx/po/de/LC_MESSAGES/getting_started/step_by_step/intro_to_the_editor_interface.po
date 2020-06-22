@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,14 +37,15 @@ msgid "Project manager"
 msgstr "Projektverwaltung"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you'll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
 "Wenn Du Godot startest, erscheint als erstes Fenster die Projektverwaltung. "
-"Hier kannst Du Projekte anlegen, entfernen, importieren oder spielen."
+"Weil Du noch keine Projekte angelegt hast wird ein Popup erscheinen mit der "
+"Frage, ob Du die Asset Library öffnen möchtest. Klick einfach auf Abbrechen, "
+"wir schauen uns das später an."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
 msgid ""
@@ -55,7 +56,6 @@ msgstr ""
 "erstellen, entfernen, importieren oder Spielen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
-#, fuzzy
 msgid ""
 "In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
@@ -92,13 +92,12 @@ msgstr ""
 "auf deinem Computer aus, um es dort anzulegen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
-#, fuzzy
 msgid ""
 "Click the Browse button to open Godot's file browser and pick a location or "
 "type the folder's path in the Project Path field."
 msgstr ""
-"Klicke auf \"Durchstöbern\", um Godots Dateibrowser zu öffnen und wähle "
-"einen Ort oder tippe einen Pfad zum Zielverzeichnis im Projektpfadfeld ein."
+"Klicke auf \"Durchsuchen\", um Godots Dateibrowser zu öffnen und wähle einen "
+"Ort oder tippe einen Pfad zum Zielverzeichnis im Projektpfadfeld ein."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
 msgid ""
@@ -135,7 +134,6 @@ msgstr ""
 "Projekt für dich und öffnet es im Editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
@@ -272,7 +270,7 @@ msgstr ""
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
-"+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
+"+ 3` on macOS) to access it, and :kbd:`Shift + F1` to search the reference."
 msgstr ""
 "Der **Skript**-Arbeitsbereich ist ein kompletter Code-Editor mit einem "
 "Debugger, Autovervollständigung und eingebauter Code-Referenz. Drücke F3, um "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr "Instancier"
+msgstr "Instanciation"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:7
 msgid "Introduction"
@@ -117,8 +117,8 @@ msgstr ""
 "Ce projet contient deux scènes : \"Ball.tscn\" et \"Main.tscn\". La scène de "
 "la balle utilise un :ref:`RigidBody2D <class_RigidBody2D>` pour fournir un "
 "comportement physique pendant que la scène principale dispose d'un ensemble "
-"d'obstacles (utilisant des :ref:`StaticBody2D <class_StaticBody2D>`) pour "
-"que le balle entre en collision avec."
+"d'obstacles (utilisant des :ref:`StaticBody2D <class_StaticBody2D>`) avec "
+"lesquels la balle pourra rentrer en collision."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
@@ -131,9 +131,9 @@ msgid ""
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
 "Nous voulons ajouter une instance de la scène ``Ball`` en tant qu'enfant de "
-"\"Main\". Cliquez sur le bouton en forme de \"lien\" (son texte en survol "
-"indique \"Instancier un fichier de scène en tant que nœud.\") et "
-"sélectionnez le fichier ``Ball.tscn``."
+"``Main``. Cliquez sur le bouton en forme de \"lien\" (son texte en survol "
+"indique \"Instancier un fichier de scène comme nœud.\") et sélectionnez le "
+"fichier ``Ball.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -173,24 +173,15 @@ msgid "Editing instances"
 msgstr "Éditer des instances"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
+#, fuzzy
 msgid ""
-"Open the ``Ball`` scene and add a ``PhysicsMaterial`` by opening the "
-"\"Physics Material Override\" dropdown in the Inspector dock and selecting "
-"\"New PhysicsMaterial\"."
+"Open the ``Ball`` scene, expand the ``PhysicsMaterial`` by clicking on it, "
+"and set the ``Bounce`` property to ``1``."
 msgstr ""
-"Ouvrez la scène ``Ball`` et ajoutez un ``PhysicsMaterial`` en ouvrant le "
-"menu déroulant \"Physics Material Override\" dans le dock Inspecteur et en "
-"sélectionnant \"Nouveau PhysicsMaterial\"."
+"Ensuite, développez le materiel en cliquant dessus et définissez la "
+"propriété ``Bounce`` sur ``1``."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:99
-msgid ""
-"Then, expand the material by clicking on it, and set the ``Bounce`` property "
-"to ``1``."
-msgstr ""
-"Ensuite, développez le contenu en cliquant dessus et définissez la propriété "
-"``Bounce`` sur ``1``."
-
-#: ../../docs/getting_started/step_by_step/instancing.rst:104
+#: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
 "Press \"Play\" and notice that all of the instanced balls are now much more "
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
@@ -201,7 +192,7 @@ msgstr ""
 "basées sur la scène sauvegardée, les modifications apportées à cette scène "
 "affecteront toutes les instances."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:108
+#: ../../docs/getting_started/step_by_step/instancing.rst:102
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
@@ -211,10 +202,12 @@ msgid ""
 msgstr ""
 "Vous pouvez également ajuster individuellement les instances. Remettez la "
 "valeur de rebond sur ``0``. Puis dans la scène ``Main``, sélectionnez l'une "
-"des balles instanciées et réglez son ``Bounce`` sur ``1``. Enfin appuyez sur "
-"\"Jouer\"."
+"des balles instanciées. Les ressources comme ``PhysicsMaterial`` sont "
+"partagées par défaut entre les instances, alors nous devons la rendre "
+"unique. Cliquez sur la flèche vers le bas et sélectionnez \"Rendre Unique\". "
+"Réglez son ``Bounce`` sur ``1`` et appuyez sur \"Jouer\"."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:116
+#: ../../docs/getting_started/step_by_step/instancing.rst:110
 msgid ""
 "Notice that a grey \"revert\" button appears next to the adjusted property. "
 "When this button is present, it means you modified a property in the "
@@ -225,17 +218,17 @@ msgid ""
 msgstr ""
 "Remarquez qu'un bouton gris \"retour en arrière\" apparaît à côté de la "
 "propriété ajustée. Lorsque ce bouton est présent, cela signifie que vous "
-"avez modifié une propriété dans la scène instanciée pour remplacer sa valeur "
-"dans la scène sauvegardée. Même si cette propriété est modifiée dans la "
+"avez modifié une propriété dans la scène instanciée remplaçant ainsi la "
+"valeur de la scène sauvegardée. Même si cette propriété est modifiée dans la "
 "scène originale, la valeur personnalisée restera. Appuyez sur le bouton de "
 "retour en arrière pour rétablir la propriété à la valeur de la scène "
 "sauvegardée."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:124
+#: ../../docs/getting_started/step_by_step/instancing.rst:118
 msgid "Conclusion"
 msgstr "Conclusion"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:126
+#: ../../docs/getting_started/step_by_step/instancing.rst:120
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "
@@ -243,4 +236,4 @@ msgid ""
 msgstr ""
 "L'instanciation peut être utile lorsque vous voulez créer plusieurs copies "
 "d'un même objet. Il est également possible de créer des instances dans le "
-"code en utilisant GDScript, voir le chapitre :ref:`doc_scripting_continued`."
+"code en utilisant GDScript, voir le chapitre :ref:`doc_instancing_continued`."

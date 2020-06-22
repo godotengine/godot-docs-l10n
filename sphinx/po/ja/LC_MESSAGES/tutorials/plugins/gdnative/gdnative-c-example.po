@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -763,13 +763,19 @@ msgstr ""
 "ジェクトクラス名です。また、\\ *Library*\\ をクリックして\\ *読込み*\\ を選択"
 "し、\\ ``.gdnlib`` ファイルを選択する必要があります:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:513
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:515
+msgid ""
+"The *Class Name* must have the same spelling as the one given in "
+"``godot_nativescript_init`` when registering the class."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:519
 #, fuzzy
 msgid "Finally, click on the save icon and save this as ``bin/simple.gdns``:"
 msgstr ""
 "最後に保存アイコンをクリックし、これを ``bin/simple.gdns`` として保存します:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:517
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:523
 msgid ""
 "Now it's time to build our scene. Add a Control node to your scene as your "
 "root and call it ``main``. Then add a Button and a Label as child nodes. "
@@ -779,23 +785,23 @@ msgstr ""
 "``main`` と名付けます。次に、ボタンとラベルを子ノードとして追加します。画面上"
 "のどこかに適当な場所にボタンを配置して、名前を付けます。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:523
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:529
 msgid "Select the control node and attach a script to it:"
 msgstr "コントロール ノードを選択し、スクリプトをアタッチします:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:527
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:533
 msgid "Next link up the ``pressed`` signal on the button to your script:"
 msgstr "次に、ボタンの ``pressed`` シグナルをスクリプトにリンクします:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:531
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:537
 msgid "Don't forget to save your scene, call it ``main.tscn``."
 msgstr "``main.tscn`` と名付けてシーンを保存することを忘れないでください。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:533
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:539
 msgid "Now we can implement our ``main.gd`` code:"
 msgstr "``main.gd`` コードを実装できます:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:545
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:551
 msgid ""
 "After all that, our project should work. The first time you run it Godot "
 "will ask you what your main scene is and you select your ``main.tscn`` file "

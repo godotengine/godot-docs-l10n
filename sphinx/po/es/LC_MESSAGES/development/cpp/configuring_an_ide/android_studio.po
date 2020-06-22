@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:4
-#, fuzzy
 msgid "Android Studio"
-msgstr "Android SDK"
+msgstr "Android Studio"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:6
 msgid ""
@@ -29,26 +28,36 @@ msgid ""
 "has a feature-rich editor which supports Java and C/C++. It can be used to "
 "work on Godot's core engine as well as the Android platform codebase."
 msgstr ""
+"`Android Studio <https://developer.android.com/studio>`_ es un `JetBrains "
+"<https://www.jetbrains.com/>`_ IDE gratuito para el desarrollo de Android. "
+"Tiene un editor con muchas características que soporta Java y C/C++. Puede "
+"ser usado para trabajar en el núcleo del motor de Godot así como en el "
+"código base de la plataforma Android."
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:12
 msgid "Importing the project"
-msgstr ""
+msgstr "Importando el proyecto"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:14
 msgid ""
 "From the Android Studio's welcome window select **Open an existing Android "
 "Studio project**."
 msgstr ""
+"En la ventana de bienvenida de Android Studio seleccione **Open an existing "
+"Android Studio project**."
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:21
 msgid "Android Studio's welcome window."
-msgstr "Pantalla de bienvenida de Android Studio."
+msgstr "Ventana de bienvenida de Android Studio."
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:23
+#, fuzzy
 msgid ""
 "Navigate to ``<Godot root directory>/platform/android/java`` and select the "
 "``settings.gradle`` file."
 msgstr ""
+"Navega a ``<Directorio raíz de Godot>/platform/android/java`` y selecciona "
+"el archivo ``settings.gradle``."
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:24
 msgid "Android Studio will import and index the project."

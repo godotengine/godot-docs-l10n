@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,10 +77,43 @@ msgstr ""
 "використовують їх."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
+#, fuzzy
+msgid "Style guide"
+msgstr "Настанови по стилю C#"
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
+msgid ""
+"For consistency across projects, we recommend following these guidelines:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
+msgid ""
+"Use **snake_case** for folder and file names (with the exception of C# "
+"scripts). This sidesteps case sensitivity issues that can crop up after "
+"exporting a project on Windows. C# scripts are an exception to this rule, as "
+"the convention is to name them after the class name which should be in "
+"PascalCase."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:57
+msgid ""
+"Use **PascalCase** for node names, as this matches built-in node casing."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
+msgid ""
+"In general, keep third-party resources in a top-level ``addons/`` folder, "
+"even if they aren't editor plugins. This makes it easier to track which "
+"files are third-party. There are some exceptions to this rule; for instance, "
+"if you use third-party game assets for a character, it makes more sense to "
+"include them within the same folder as the character scenes and scripts."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:65
 msgid "Importing"
 msgstr "Імпортування"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:67
 msgid ""
 "Godot versions prior to 3.0 did the import process from files outside the "
 "project. While this can be useful in large projects, it resulted in an "
@@ -90,17 +123,17 @@ msgstr ""
 "це може бути корисно у великих проектах, це створило організаційні клопоти "
 "для більшості розробників."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:54
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:71
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
 msgstr "Через це ресурси тепер прозоро імпортуються з папки проекту."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:75
 msgid "Ignoring specific folders"
 msgstr "Ігнорування конкретних папок"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:60
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:77
 msgid ""
 "To prevent Godot from importing files contained in a specific folder, create "
 "an empty file called ``.gdignore`` in the folder (the leading ``.`` is "
@@ -110,7 +143,7 @@ msgstr ""
 "порожній файл, який називається ``.gdignore``(крапка ``.`` обов'язкова). Це "
 "може бути корисно для пришвидшення імпорту початкового проекту."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:66
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:83
 msgid ""
 "To create a file whose name starts with a dot on Windows, you can use a text "
 "editor such as Notepad++ or use the following command in a command prompt: "
@@ -120,7 +153,7 @@ msgstr ""
 "скористатися текстовим редактором, таким як Notepad++, або скористатися "
 "такою командою в командному рядку: ``type nul > .gdignore``"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:70
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:87
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
 "using the ``load()`` and ``preload()`` methods."
@@ -128,7 +161,7 @@ msgstr ""
 "Після того, як тека буде проігнорована, ресурси в ній вже не можна "
 "завантажувати за допомогою методів ``load()`` і ``preload()``."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:73
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:90
 msgid ""
 "Ignoring a folder will also automatically hide it from the FileSystem dock, "
 "which can be useful to reduce clutter."
@@ -136,11 +169,11 @@ msgstr ""
 "Ігнорування теки також автоматично приховає її від панелі Файлова система, "
 "що може бути корисно для зменшення безладу."
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:77
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:94
 msgid "Case sensitivity"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:79
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:96
 msgid ""
 "Windows and recent macOS versions use case-insensitive filesystems by "
 "default, whereas Linux distributions use a case-sensitive filesystem by "
@@ -150,13 +183,13 @@ msgid ""
 "characters in general)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:88
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:105
 msgid ""
 "You can break this rule when style guides say otherwise (such as the C# "
 "style guide). Still, be consistent to avoid mistakes."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:91
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:108
 msgid ""
 "On Windows 10, to further avoid mistakes related to case sensitivity, you "
 "can also make the project folder case-sensitive. After enabling the Windows "
@@ -164,7 +197,7 @@ msgid ""
 "window::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:101
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:118
 msgid ""
 "If you haven't enabled the Windows Subsystem for Linux, you can enter the "
 "following line in a PowerShell window *running as Administrator* then reboot "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -346,7 +346,6 @@ msgid "What were the motivations behind creating GDScript?"
 msgstr "Was war die Motivation, GDScript zu entwickeln?"
 
 #: ../../docs/about/faq.rst:129
-#, fuzzy
 msgid ""
 "In the early days, the engine used the `Lua <https://www.lua.org>`__ "
 "scripting language. Lua is fast, but creating bindings to an object oriented "
@@ -354,11 +353,11 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
-"In den Anfängen nutzte die Engine noch `Lua <http://www.lua.org>`__ als "
+"Anfänglich nutzte die Engine noch `Lua <http://www.lua.org>`__ als "
 "Skriptsprache. Lua ist schnell, aber die Sprachanbindung an ein "
 "objektorientiertes System zu erstellen (durch Verwendung von Fallbacks) war "
 "komplex, langsam und beanspruchte enorm viel Code. Nach einigen Experimenten "
-"mit `Python <http://www.python.org>`__ stellte  auch sie sich als schwierig "
+"mit `Python <http://www.python.org>`__ stellte auch sie sich als schwierig "
 "einzubetten heraus."
 
 #: ../../docs/about/faq.rst:135
@@ -368,46 +367,44 @@ msgstr ""
 "Die Hauptgründe, eine eigene Skriptsprache für Godot zu entwickeln, waren:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Schlechte Thread-Unterstützung in den meisten Skript-VMs (Lua, Python, "
-"Squirrel, JS, AS, etc.)."
+"Schlechte Threading-Unterstützung in den meisten Skript-VMs und Godot nutzt "
+"Threads (Lua, Python, Squirrel, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
-"Schlechte Klassenerweiterung in den meisten Skript-VMs, Anpassung an die "
-"Funktionsweise von Godot ist sehr ineffizient (Lua, Python, JS)."
+"Schlechte Unterstützung für Klassenerweiterung in den meisten Skript-VMs und "
+"die Anpassung an die Funktionsweise von Godot ist sehr ineffizient (Lua, "
+"Python, JS)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
-"Viele bestehende Sprachen haben ineffiziente Schnittstellen für die "
-"Einbindung von C++, was zu einer großen Menge Code, Bugs, Engpässen und "
-"allgemeiner Ineffizienz führt (Lua, Python, Squirrel, JS, etc.). Wir wollten "
-"uns auf eine großartige Engine konzentrieren, nicht auf eine große Anzahl "
-"von Scriptsprachen."
+"Viele bestehende Sprachen haben ineffiziente Schnittstellen zum Binding mit C"
+"++, was zu einer großen Menge Code, Bugs, Engpässen und allgemeiner "
+"Ineffizienz führt (Lua, Python, Squirrel, JS, etc.). Wir wollten uns auf "
+"eine großartige Engine konzentrieren, nicht auf eine große Anzahl von "
+"Scriptsprachen."
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
-"Keine nativen Vektor-Typen (vector3, matrix4, usw.) → geringere Performance "
-"wenn eigene Objekttypen genutzt werden (Lua, Python, Squirrel, JS, AS, etc.)."
+"Keine nativen Vektor-Typen (vector3, matrix4, usw.), resultierend in stark "
+"reduzierter Performance wenn eigene Objekttypen genutzt werden (Lua, Python, "
+"Squirrel, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:147
 #, fuzzy
@@ -419,17 +416,15 @@ msgstr ""
 "Speicherbelegung (Lua, Python, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
 "Schwierigkeiten bei der Integration in den Code-Editor zur Code-"
-"Vervollständigung, Live-Bearbeitung, etc. (all dies). Dies wird von GDScript "
-"unterstützt."
+"Vervollständigung, Live-Bearbeitung, etc. (alle davon). Dies wird von "
+"GDScript unterstützt."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above, and more."
 msgstr "GDScript wurde entworfen, um diese und weitere Probleme zu umgehen."
 
@@ -695,7 +690,6 @@ msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Ich habe eine tolle Idee für Godot. Wie kann ich sie teilen?"
 
 #: ../../docs/about/faq.rst:259
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -711,7 +705,7 @@ msgstr ""
 "gravierenden Codeänderungen führen würden, um eine Art Nachahmung einer "
 "anderen Game-Engine zu verwirklichen oder alternative Workflows, die in den "
 "Editor eingebaut werden sollen. Diesen Enthusiasmus finden wir großartig und "
-"sind dankbar dafür, solch motivierte Leute dabei zu haben, doch Godots Fokus "
+"sind dankbar dafür, so motivierte Leute dabei zu haben, doch Godots Fokus "
 "ist und bleibt die Kernfunktionalität, so wie sie in der `Roadmap <https://"
 "github.com/godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, `squashing "
 "bugs and addressing issues <https://github.com/godotengine/godot/issues>`_ "
@@ -902,7 +896,6 @@ msgstr ""
 "oriented Design)?"
 
 #: ../../docs/about/faq.rst:327
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "

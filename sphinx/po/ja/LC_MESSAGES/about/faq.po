@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -344,22 +344,20 @@ msgid ""
 msgstr "Godot専用のスクリプト言語を作った主な理由は以下の通りです:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"ほとんどのスクリプトVM(Lua、Python、Squirrel、JS、ASなど)ではスレッドサポート"
-"が不十分ですが、Godotはスレッドを使用します。"
+"ほとんどのスクリプトVM(Lua、Python、Squirrel、JavaScript、ActionScriptなど)で"
+"はスレッドサポートが不十分ですが、Godotはスレッドを使用します。"
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
-"ほとんどのスクリプトVM(Lua、Python、JS)ではクラス拡張のサポートが不十分で、"
-"Godotの動作方法に適応させる作業は非常に非効率的です。"
+"ほとんどのスクリプトVM(Lua、Python、JavaScript)ではクラス拡張のサポートが不十"
+"分で、Godotの動作方法に適応させる作業は非常に非効率的です。"
 
 #: ../../docs/about/faq.rst:141
 #, fuzzy
@@ -852,13 +850,12 @@ msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr "GodotがユーザーにDoD(データ指向設計)の実装を強制しないのはなぜですか？"
 
 #: ../../docs/about/faq.rst:327
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
-"多くの重いパフォーマンスタスクのためにGodotが内部的に可能な限り最高のキャッ"
+"多くの重いパフォーマンスタスクのためにGodotは内部的に可能な限り最高のキャッ"
 "シュコヒーレンシーを使用しようとしていますが、ほとんどのユーザーはDoDプラク"
 "ティスを強制する必要はほとんどないと考えています。"
 

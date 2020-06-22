@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,9 +19,8 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:4
 #: ../../docs/tutorials/audio/audio_buses.rst:48
-#, fuzzy
 msgid "Audio buses"
-msgstr "Áudio"
+msgstr "Barramentos de áudio"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:7
 msgid "Introduction"
@@ -32,6 +31,9 @@ msgid ""
 "Godot's audio processing code has been written with games in mind, with the "
 "aim of achieving an optimal balance between performance and sound quality."
 msgstr ""
+"O código de processamento de áudio do Godot foi escrito com jogos em mente, "
+"com o intuito de alcançar um equilíbrio favorável entre desempenho e "
+"qualidade de som."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:12
 msgid ""
@@ -40,20 +42,28 @@ msgid ""
 "the device running your game will limit the number of buses and effects that "
 "can be used before performance starts to suffer."
 msgstr ""
+"O motor de áudio do Godot permite qualquer número de barramentos de áudio a "
+"serem criados e qualquer número de processadores de efeito podem ser "
+"adicionados a cada barramento. Apenas o hardware do dispositivo executando "
+"seu jogo irá limitar o número de barramentos e efeitos que podem ser usados "
+"antes que o desempenho comece a cair."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:18
 msgid "Decibel scale"
-msgstr ""
+msgstr "Escala decibel"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:20
 msgid ""
 "Godot's sound interface is designed to meet the expectations of sound design "
 "professionals. To this end, it primarily uses the decibel scale."
 msgstr ""
+"A interface de som do Godot é designada para combinar com as expectativas "
+"dos profissionais de design de som. Para este fim, utiliza-se primariamente "
+"a escala decibel."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:23
 msgid "For those unfamiliar with it, it can be explained with a few facts:"
-msgstr ""
+msgstr "Para aqueles não familiarizados, pode-se explicar com alguns fatos:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:25
 msgid ""
@@ -61,17 +71,25 @@ msgid ""
 "power by using 20 times the base 10 logarithm of the ratio (20 × log\\ :sub:"
 "`10`\\ (P/P\\ :sub:`0`\\ ))."
 msgstr ""
+"A escala decibel (dB) é uma escala relativa. Ela representa a taxa de "
+"potência de som ao usar 20 vezes o logaritmo de base 10 da proporção (20 × "
+"log\\ :sub:`10`\\ (P/P\\ :sub:`0`\\ ))."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:28
 msgid ""
 "For every 6 dB, sound amplitude doubles or halves. 12 dB represents a factor "
 "of 4, 18 dB a factor of 8, 20 dB a factor of 10, 40 dB a factor of 100, etc."
 msgstr ""
+"Para cada 6 dB, a amplitude de som se duplica ou se divide pela metade. 12 "
+"dB representam um fator de 4, 18 dB um fator de 8, 20 dB um fator de 10, "
+"40dB um fator de 100, etc."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:30
 msgid ""
 "Since the scale is logarithmic, true zero (no audio) can't be represented."
 msgstr ""
+"Como a escala é logarítmica, um zero verdadeiro (sem áudio) não pode ser "
+"representado."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:31
 msgid ""
@@ -80,12 +98,19 @@ msgid ""
 "amplitudes that are too high to be represented properly below 0 dB create a "
 "kind of distortion called *clipping*."
 msgstr ""
+"0 dB é a amplitude máxima possível em um sistema de áudio digital. Este não "
+"é o limite humano, mas um limite do hardware de som. Áudio com amplitudes "
+"que são muito altas para serem representados corretamente criam uma "
+"distorção chamada *clipping*."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:35
+#, fuzzy
 msgid ""
-"To avoid clipping, your sound mix be arranged so that the output of the "
-"*master bus* (more on that later) never exceeds 0 dB."
+"To avoid clipping, your sound mix should be arranged so that the output of "
+"the *master bus* (more on that later) never exceeds 0 dB."
 msgstr ""
+"Para evitar clipping, sua mixagem de som deve ser organizada para que a "
+"saída do *barramento mestre* (mais detalhes depois) nunca exceda 0dB."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:37
 msgid ""
@@ -93,6 +118,9 @@ msgid ""
 "sound volume at -6 dB is half as loud as 0dB. -12 dB is half as loud as -6 "
 "dB and so on."
 msgstr ""
+"Para cada 6 dB abaixo do limite de 0 dB, a energia de som é *cortada pela "
+"metade*. Significa que o volume de som em -6 dB possui metade da intensidade "
+"de 0 dB. -12 dB possui metade da intensidade de -6 dB e assim por diante."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:40
 msgid ""
@@ -100,12 +128,17 @@ msgid ""
 "-60 dB and -80 dB. This makes your working range generally between -60 dB "
 "and 0 dB."
 msgstr ""
+"Ao trabalhar com decibels, um som é considerado inaudível entre -60 dB e -80 "
+"dB. Isso faz com que seu alcance de trabalho seja geralmente entre -60 dB e "
+"0 dB."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:44
 msgid ""
 "This can take a bit getting used to, but it's friendlier in the end and will "
 "allow you to communicate better with audio professionals."
 msgstr ""
+"Pode levar um pouco de tempo para pegar o jeito, porém é mais amigável no "
+"fim e permitirá que você se comunique melhor com profissionais de áudio."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:50
 msgid "Audio buses can be found in the bottom panel of the Godot editor:"
@@ -130,6 +163,15 @@ msgid ""
 "the non-master audio buses. Routing always passes audio from buses on the "
 "right to buses further to the left. This avoids infinite routing loops."
 msgstr ""
+"O barramento mais à esquerda é o *barramento mestre*. Este barramento gera o "
+"mix para seus alto-falantes então, como mencionado na seção *Escala decibel* "
+"acima, certifique-se de que seu nível de mixagem não chegue a 0 dB neste "
+"barramento. O resto dos barramentos de áudio podem ser flexivelmente "
+"encaminhados. Após modificar o som, eles o enviam para outro barramento à "
+"esquerda. O barramento destinatário pode ser especificado por cada um dos "
+"barramentos não-mestre. O encaminhamento sempre passa áudio de barramentos "
+"na direita para barramentos além para a esquerda. Isso evita ciclos de "
+"encaminhamento infinitos."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:70
 msgid ""

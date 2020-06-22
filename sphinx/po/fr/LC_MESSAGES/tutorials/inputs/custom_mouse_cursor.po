@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
-#, fuzzy
 msgid "Customizing the mouse cursor"
 msgstr "Personnalisation du curseur de la souris"
 
@@ -59,12 +58,19 @@ msgid ""
 "cursor. Therefore, it's recommended to use the approach described here "
 "whenever possible."
 msgstr ""
+"Vous pouvez afficher un curseur de souris \"logiciel\" en cachant le curseur "
+"de souris et en déplaçant un Sprite à la position du curseur dans une "
+"méthode ``_process``, mais cela ajoutera au moins une frame de latence par "
+"rapport à un curseur de souris \"matériel\". Par conséquent, il est "
+"recommandé d’utiliser l’approche décrite ici chaque fois que possible."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:21
 msgid ""
 "If you have to use the \"software\" approach, consider adding an "
 "extrapolation step to better display the actual mouse input."
 msgstr ""
+"Si vous devez utiliser l'approche \"logiciel\", envisagez d'ajouter une "
+"étape d'extrapolation pour mieux afficher l'entrée réelle de la souris."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:27
 msgid ""

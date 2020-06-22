@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -223,61 +223,33 @@ msgstr ""
 "パッケージを作成します。エクスポートには3つの異なるモードがあります:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
-msgid "Export every single file in the project"
+#, fuzzy
+msgid "Export all resources in the project"
 msgstr "プロジェクト内のすべてのファイルをエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
-msgid "Export only resources (+ custom filter), this is the default."
-msgstr "リソースのみをエクスポート(+カスタムフィルタ)、これがデフォルトです。"
+#, fuzzy
+msgid "Export selected scenes (and dependencies)"
+msgstr "選択したリソースのみをエクスポート(+カスタムフィルタ)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
-msgid "Export only selected resources (+ custom filter)"
+#, fuzzy
+msgid "Export selected resources (and dependencies)"
 msgstr "選択したリソースのみをエクスポート(+カスタムフィルタ)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
 msgid ""
-"**Export every single file** - This mode exports every single file in the "
-"project. This is good to test if something is being forgotten, but "
-"developers often have a lot of unrelated stuff around in the project "
-"directory, which makes it a bad idea."
+"**Export all resources in the project** will export every resource in the "
+"project. **Export selected scenes** and **Export selected resources** gives "
+"you a list of the scenes or resources in the project, and you have to select "
+"every scene or resource you want to export."
 msgstr ""
-"**プロジェクト内のリソースをすべてエクスポート** - このモードでは、プロジェク"
-"ト内のすべてのファイルがエクスポートされます。これは何かが忘れられているかど"
-"うかをテストするのに適していますが、多くの場合、開発者はプロジェクトディレク"
-"トリに無関係なものをたくさん配置しているので、それは良い考えとはいえません。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
-msgid ""
-"**Export only resources** - Only resources are exported. For most projects, "
-"this is enough. However many developers like to use custom datafiles in "
-"their games. To compensate for this, filters can be added for extra "
-"extensions (for instance, ``*.txt,*.csv``)."
-msgstr ""
-"**選択したシーン(と依存関係にあるもの)をエクスポート** - リソースのみがエクス"
-"ポートされます。ほとんどのプロジェクトでは、これで十分です。ただし、多くの開"
-"発者は、ゲームでカスタムデータファイルを使用することを好みます。これを補うた"
-"めに、追加の拡張子用のフィルターを追加できます(たとえば、\\ ``*.txt、*."
-"csv``)。"
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
-msgid ""
-"**Export only selected resources** - Only select resources from a list are "
-"exported. This is probably overkill for most projects, but in some cases it "
-"is justified (usually huge projects). This mode offers total control of what "
-"is exported. Individual resources can be selected and dependency detection "
-"is performed to ensure that everything needed is added."
-msgstr ""
-"**選択したリソース(と依存関係にあるもの)をエクスポート** - リストから選択した"
-"リソースのみがエクスポートされます。これはおそらくほとんどのプロジェクトでは"
-"やり過ぎですが、場合によっては正当化されます(通常は巨大なプロジェクト)。この"
-"モードでは、エクスポート対象を完全に制御できます。個々のリソースを選択し、依"
-"存関係の検出を実行して、必要なものがすべて追加されていることを確認できます。"
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:124
 msgid "Exporting from the command line"
 msgstr "コマンドラインからエクスポート"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid ""
 "In production, it is useful to automate builds, and Godot supports this with "
 "the ``--export`` and ``--export-debug`` command line parameters. Exporting "
@@ -289,7 +261,7 @@ msgstr ""
 "ンドラインからのエクスポートでも、設定のためにエクスポート用プリセットを指定"
 "する必要があります。コマンドラインでの基本的な呼び出し方はこうです:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:135
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. The output path is "
@@ -301,7 +273,7 @@ msgstr ""
 "の相対パスか、絶対パスを指定します。コマンド実行時のディレクトリは関係ありま"
 "せん。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:140
 msgid ""
 "You can also configure it to export only the PCK or ZIP file, allowing a "
 "single export to be used with multiple Godot executables. This takes place "
@@ -311,7 +283,7 @@ msgstr ""
 "ポートすれば複数のGodot実行ファイルで使用できます。設定するには、ターゲットの"
 "ファイル名の拡張子に\\ ``.pck``\\ あるいは\\ ``.zip``\\ を指定します。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:144
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"

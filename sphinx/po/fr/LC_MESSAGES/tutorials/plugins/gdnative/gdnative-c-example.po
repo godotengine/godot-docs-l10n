@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -797,13 +797,19 @@ msgstr ""
 "notre fichier ``.gdnlib`` en cliquant sur *Library* et en sélectionnant "
 "*Load* :"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:513
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:515
+msgid ""
+"The *Class Name* must have the same spelling as the one given in "
+"``godot_nativescript_init`` when registering the class."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:519
 msgid "Finally, click on the save icon and save this as ``bin/simple.gdns``:"
 msgstr ""
 "Enfin, cliquez sur l'icône de sauvegarde et enregistrez le fichier sous le "
 "nom ``bin/simple.gdns`` :"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:517
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:523
 msgid ""
 "Now it's time to build our scene. Add a Control node to your scene as your "
 "root and call it ``main``. Then add a Button and a Label as child nodes. "
@@ -814,23 +820,23 @@ msgstr ""
 "un Bouton et un Label comme nœuds enfants. Placez-les à un endroit agréable "
 "sur l'écran et donnez un nom à votre bouton."
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:523
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:529
 msgid "Select the control node and attach a script to it:"
 msgstr "Sélectionnez le nœud de contrôle et attachez-y un script :"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:527
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:533
 msgid "Next link up the ``pressed`` signal on the button to your script:"
 msgstr "Reliez ensuite le signal ``pressed`` du bouton à votre script :"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:531
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:537
 msgid "Don't forget to save your scene, call it ``main.tscn``."
 msgstr "N'oubliez pas de sauvegarder votre scène, appelez la ``main.tscn``."
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:533
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:539
 msgid "Now we can implement our ``main.gd`` code:"
 msgstr "Nous pouvons maintenant mettre en œuvre notre code ``main.gd`` :"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:545
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:551
 msgid ""
 "After all that, our project should work. The first time you run it Godot "
 "will ask you what your main scene is and you select your ``main.tscn`` file "

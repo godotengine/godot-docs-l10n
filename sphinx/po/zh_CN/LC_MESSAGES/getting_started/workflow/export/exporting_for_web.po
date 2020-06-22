@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -258,39 +258,50 @@ msgstr ""
 "`自定义HTML页面 <doc_customizing_html5_shell>` 可以显示它。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
+#, fuzzy
+msgid "Shader language limitations"
+msgstr "3D性能和局限性"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
+msgid ""
+"When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
+"doesn't support dynamic loops, so shaders using those won't work there."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:118
 msgid "Unimplemented functionality"
 msgstr "未实现的功能"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
 msgstr "HTML5平台上目前无法使用以下功能："
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
 msgid "Threads"
 msgstr "线程"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:123
 msgid "GDNative"
 msgstr "GDNative"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:118
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:124
 msgid "C#"
 msgstr "C#"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 #, fuzzy
 msgid "Clipboard synchronization between engine and operating system"
 msgstr "引擎和操作系统之间的剪贴板同步"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
 msgstr ""
 "除了 :ref:`class_HTTPClient` 和 :ref:`class_WebSocketClient` 之外的网络"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 #, fuzzy
 msgid ""
 "Check the `list of open HTML5 issues on GitHub <https://github.com/"
@@ -302,11 +313,11 @@ msgstr ""
 "q=is:open+is:issue+label:platform:html5>`__ 看看您关注的功能是否有问题。如果"
 "没有，请打开一个来表达您的关注。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
 msgid "Serving the files"
 msgstr "提供文件"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:130
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:136
 msgid ""
 "Exporting for the web generates several files to be served from a web "
 "server, including a default HTML page for presentation. A custom HTML file "
@@ -315,7 +326,7 @@ msgstr ""
 "导出为Web生成多个要从Web服务器提供的文件，包括用于演示的默认HTML页面。可以使"
 "用自定义HTML文件，请参阅 :ref:`doc_customizing_html5_shell` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:140
 msgid ""
 "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache "
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
@@ -324,7 +335,7 @@ msgstr ""
 "生成的 ``.html`` 文件可以在Apache服务器中用作 ``DirectoryIndex``，并且可以在"
 "任何时候重命名为例如 ``index.html``，默认情况下永远不会依赖它的名称。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:138
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:144
 msgid ""
 "The HTML page draws the game at maximum size within the browser window. This "
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
@@ -333,7 +344,7 @@ msgstr ""
 "HTML页面在浏览器窗口内以最大尺寸绘制游戏。这样，就可以将其插入游戏大小的 "
 "``<iframe>`` 中，这在大多数网络游戏托管站点中很常见。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:142
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:148
 msgid ""
 "The other exported files are served as they are, next to the ``.html`` file, "
 "names unchanged. The ``.wasm`` file is a binary WebAssembly module "
@@ -349,7 +360,7 @@ msgstr ""
 "画面图像。默认HTML页面中未使用它，但 :ref:`自定义HTML页面 "
 "<doc_customizing_html5_shell>` 中包含了它。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:150
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
 "The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
@@ -358,7 +369,7 @@ msgstr ""
 "``.pck`` 文件是二进制文件，通常与MIME类型 :mimetype:`application/octet-"
 "stream` 一起分发。``.wasm`` 文件以 :mimetype:`application/wasm` 分发。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:154
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:160
 msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
@@ -366,7 +377,7 @@ msgstr ""
 "分发WebAssembly模块（``.wasm``）时，使用一个 :mimetype:`application/wasm` 以"
 "外的MIME类型，可能会阻止某些启动优化。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:158
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid ""
 "Delivering the files with server-side compression is recommended especially "
 "for the ``.pck`` and ``.wasm`` files, which are usually large in size. The "
@@ -376,11 +387,11 @@ msgstr ""
 "建议使用服务器端压缩来分发文件，尤其是对通常很大的 ``.pck`` 和 ``.wasm`` 文"
 "件。WebAssembly模块压缩特别好，通过gzip压缩缩小到原始大小的四分之一。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
 msgid "Export options"
 msgstr "导出选项"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:166
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:172
 msgid ""
 "If a runnable web export template is available, a button appears between the "
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
@@ -389,7 +400,7 @@ msgstr ""
 "如果可以使用可运行的Web导出模板，则编辑器中的 *停止场景* 和 *播放编辑的场景* "
 "按钮之间会出现一个按钮，可以在默认浏览器中快速打开游戏进行测试。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:176
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
@@ -397,7 +408,7 @@ msgstr ""
 "如果给出了 **自定义HTML Shell** 文件的路径，则将使用它来代替默认的HTML页面。"
 "请参阅 :ref:`doc_customizing_html5_shell`。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
 msgid ""
 "**Head Include** is appended into the ``<head>`` element of the generated "
 "HTML page. This allows to, for example, load webfonts and third-party "
@@ -406,11 +417,11 @@ msgstr ""
 "**Head Include** 被附加到生成的HTML页面的 ``<head>`` 元素中。这允许，例如，加"
 "载 ``webfonts`` 和第三方JavaScript API、包括CSS、或运行JavaScript代码。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:186
 msgid "Calling JavaScript from script"
 msgstr "从脚本调用JavaScript"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:182
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:188
 msgid ""
 "In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
@@ -422,7 +433,7 @@ msgstr ""
 "作方式与同名的JavaScript函数类似。它将字符串作为参数，并将其作为JavaScript代"
 "码执行。这允许以与集成到Godot中的脚本语言不可能的方式与浏览器交互。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:199
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
@@ -430,19 +441,19 @@ msgstr ""
 "最后一个JavaScript语句的值转换为GDScript值，并在某些情况下由 ``eval()`` 返"
 "回："
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:202
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr "JavaScript ``number`` 作为GDScript的 :ref:`class_float` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:197
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:203
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr "JavaScript ``boolean`` 作为GDScript的 :ref:`class_bool` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:198
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:204
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr "JavaScript ``string`` 作为GDScript的 :ref:`class_String` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:199
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
@@ -450,11 +461,11 @@ msgstr ""
 "JavaScript ``RellBuffer``、 ``TypedArray`` 和 ``DataView`` 作为GDScript的 :"
 "ref:`class_PoolByteArray` 返回"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:208
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:214
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr "任何其他JavaScript值都返回为 ``null`` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:210
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:216
 msgid ""
 "HTML5 export templates may be built without support for the singleton. With "
 "such templates, and on platforms other than HTML5, calling ``JavaScript."
@@ -465,7 +476,7 @@ msgstr ""
 "上，调用 ``JavaScript.eval`` 也会返回 ``null`` 。可以使用 ``JavaScript`` 的 :"
 "ref:`功能标签 <doc_feature_tags>` 来检查单例的可用性："
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:223
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:229
 msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
@@ -473,7 +484,7 @@ msgstr ""
 "GDScript中的多行字符串由3双引号 ``\"\"\"`` 包围，如同上文中的 ``my_func3()`` "
 "那样，有助于保证JavaScript代码的可读性。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:226
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:232
 msgid ""
 "The ``eval`` method also accepts a second, optional Boolean argument, which "
 "specifies whether to execute the code in the global execution context, "

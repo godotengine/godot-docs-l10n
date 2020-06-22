@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,14 +51,14 @@ msgid "Most GLSL ES 3.0 datatypes are supported:"
 msgstr "Większość typów z GLSL ES 3.0 jest wspierana:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:21
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:517
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:522
 msgid "Type"
 msgstr "Typ"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:21
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:471
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:517
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:581
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:476
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:522
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:586
 msgid "Description"
 msgstr "Opis"
 
@@ -71,7 +71,7 @@ msgid "Void datatype, useful only for functions that return nothing."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:25
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:542
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:547
 msgid "**bool**"
 msgstr "**bool**"
 
@@ -105,7 +105,7 @@ msgid "Four-component vector of booleans."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:33
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:544
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:549
 msgid "**int**"
 msgstr "**int**"
 
@@ -170,7 +170,7 @@ msgid "Four-component vector of unsigned integers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:49
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:546
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:551
 msgid "**float**"
 msgstr "**float**"
 
@@ -180,7 +180,7 @@ msgid "Floating-point scalar."
 msgstr "Liczby zmiennoprzecinkowe"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:51
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:548
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:553
 msgid "**vec2**"
 msgstr "**vec2**"
 
@@ -189,7 +189,7 @@ msgid "Two-component vector of floating-point values."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:53
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:550
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:555
 msgid "**vec3**"
 msgstr "**vec3**"
 
@@ -198,8 +198,8 @@ msgid "Three-component vector of floating-point values."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:55
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:519
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:552
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:524
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:557
 msgid "**vec4**"
 msgstr "**vec4**"
 
@@ -224,8 +224,8 @@ msgid "3x3 matrix, in column major order."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:61
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:554
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:556
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:559
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:561
 msgid "**mat4**"
 msgstr "**mat4**"
 
@@ -234,12 +234,12 @@ msgid "4x4 matrix, in column major order."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:63
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:531
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:533
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:528
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:530
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:532
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:534
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:536
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:538
 msgid "**sampler2D**"
 msgstr "**sampler2D**"
 
@@ -452,7 +452,7 @@ msgstr "Lokalne zmienne"
 msgid ""
 "Local arrays are declared in functions. They can use all of the allowed "
 "datatypes, except samplers. The array declaration follows a C-style syntax: "
-"``typename + identifier + [array size]``."
+"``[const] + [precision] + typename + identifier + [array size]``."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:212
@@ -703,108 +703,114 @@ msgid ""
 "be careful not to make this mistake!"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:373
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:374
+msgid ""
+"When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
+"doesn't support dynamic loops, so shaders using those won't work there."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:378
 msgid "Discarding"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:375
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:380
 msgid ""
 "Fragment and light functions can use the **discard** keyword. If used, the "
 "fragment is discarded and nothing is written."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:378
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:383
 msgid "Functions"
 msgstr "Funkcje"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:380
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:385
 msgid ""
 "It is possible to define functions in a Godot shader. They use the following "
 "syntax:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:395
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:400
 msgid ""
 "You can only use functions that have been defined above (higher in the "
 "editor) the function from which you are calling them."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:398
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:403
 msgid "Function arguments can have special qualifiers:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:400
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:405
 msgid "**in**: Means the argument is only for reading (default)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:401
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:406
 msgid "**out**: Means the argument is only for writing."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:402
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:407
 msgid "**inout**: Means the argument is fully passed via reference."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:404
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:409
 msgid "Example below:"
 msgstr "Przykład poniżej:"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:413
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:418
 msgid "Varyings"
 msgstr "Varying"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:415
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:420
 msgid ""
 "To send data from the vertex to the fragment processor function, *varyings* "
 "are used. They are set for every primitive vertex in the *vertex processor*, "
 "and the value is interpolated for every pixel in the fragment processor."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:432
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:437
 msgid "Varying can also be an array:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:449
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:454
 msgid "Interpolation qualifiers"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:451
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:456
 msgid ""
 "Certain values are interpolated during the shading pipeline. You can modify "
 "how these interpolations are done by using *interpolation qualifiers*."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:468
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:473
 msgid "There are two possible interpolation qualifiers:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:471
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:476
 msgid "Qualifier"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:473
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:478
 msgid "**flat**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:473
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:478
 msgid "The value is not interpolated."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:475
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:480
 msgid "**smooth**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:475
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:480
 msgid ""
 "The value is interpolated in a perspective-correct fashion. This is the "
 "default."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:480
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:485
 msgid "Uniforms"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:482
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:487
 msgid ""
 "Passing values to shaders is possible. These are global to the whole shader "
 "and are called *uniforms*. When a shader is later assigned to a material, "
@@ -812,1032 +818,1032 @@ msgid ""
 "written from within the shader."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:492
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:497
 msgid ""
 "You can set uniforms in the editor in the material. Or you can set them "
 "through GDScript:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:498
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:503
 msgid ""
 "The first argument to ``set_shader_param`` is the name of the uniform in the "
 "shader. It must match *exactly* to the name of the uniform in the shader or "
 "else it will not be recognized."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:501
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:506
 msgid ""
 "Any GLSL type except for *void* can be a uniform. Additionally, Godot "
 "provides optional shader hints to make the compiler understand for what the "
 "uniform is used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:512
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:517
 msgid ""
 "It's important to understand that textures that are supplied as color "
 "require hints for proper sRGB->linear conversion (i.e. ``hint_albedo``), as "
 "Godot's 3D engine renders in linear color space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:514
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:519
 msgid "Full list of hints below:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:517
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:522
 msgid "Hint"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:519
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:524
 msgid "hint_color"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:519
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:524
 msgid "Used as color"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:521
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:526
 msgid "**int, float**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:521
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:526
 msgid "hint_range(min, max[, step])"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:521
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:526
 msgid "Used as range (with min/max/step)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:528
 msgid "hint_albedo"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:523
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:528
 msgid "Used as albedo color, default white"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:530
 msgid "hint_black_albedo"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:530
 msgid "Used as albedo color, default black"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:532
 msgid "hint_normal"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:532
 msgid "Used as normalmap"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:534
 msgid "hint_white"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:529
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:534
 msgid "As value, default to white."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:531
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:536
 msgid "hint_black"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:531
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:536
 msgid "As value, default to black"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:533
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:538
 msgid "hint_aniso"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:533
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:538
 msgid "As flowmap, default to right."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:536
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:541
 msgid ""
 "GDScript uses different variable types than GLSL does, so when passing "
 "variables from GDScript to shaders, Godot converts the type automatically. "
 "Below is a table of the corresponding types:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:540
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:545
 #, fuzzy
 msgid "GDScript type"
 msgstr "GDScript"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:540
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:545
 #, fuzzy
 msgid "GLSL type"
 msgstr "Typ"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:548
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:553
 #, fuzzy
 msgid "**Vector2**"
 msgstr "Vector"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:550
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:555
 #, fuzzy
 msgid "**Vector3**"
 msgstr "Vector"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:552
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:557
 #, fuzzy
 msgid "**Color**"
 msgstr "**kolor**"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:554
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:559
 #, fuzzy
 msgid "**Transform**"
 msgstr "Przekształcanie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:556
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:561
 #, fuzzy
 msgid "**Transform2D**"
 msgstr "Transform2D"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:559
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:564
 msgid ""
 "Be careful when setting shader uniforms from GDScript, no error will be "
 "thrown if the type does not match. Your shader will just exhibit undefined "
 "behavior."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:562
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:567
 msgid "Uniforms can also be assigned default values:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:572
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:577
 #, fuzzy
 msgid "Built-in functions"
 msgstr "Funkcje statyczne"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:574
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:579
 msgid ""
 "A large number of built-in functions are supported, conforming to GLSL ES "
 "3.0. When vec_type (float), vec_int_type, vec_uint_type, vec_bool_type "
 "nomenclature is used, it can be scalar or vector."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:577
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:582
 msgid ""
 "For a list of the functions that are not available in the GLES2 backend, "
 "please see the :ref:`Differences between GLES2 and GLES3 doc "
 "<doc_gles2_gles3_differences>`."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:581
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:586
 msgid "Function"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:583
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:588
 #, fuzzy
 msgid "vec_type **radians** (vec_type degrees)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:583
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:588
 msgid "Convert degrees to radians"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:590
 #, fuzzy
 msgid "vec_type **degrees** (vec_type radians)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:585
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:590
 msgid "Convert radians to degrees"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:587
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:592
 #, fuzzy
 msgid "vec_type **sin** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:587
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:592
 msgid "Sine"
 msgstr "Sinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:589
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:594
 #, fuzzy
 msgid "vec_type **cos** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:589
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:594
 msgid "Cosine"
 msgstr "Cosinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:591
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:596
 #, fuzzy
 msgid "vec_type **tan** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:591
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:596
 msgid "Tangent"
 msgstr "Tangens"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:593
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:598
 #, fuzzy
 msgid "vec_type **asin** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:593
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:598
 #, fuzzy
 msgid "Arcsine"
 msgstr "Cosinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:595
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:600
 #, fuzzy
 msgid "vec_type **acos** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:595
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:600
 #, fuzzy
 msgid "Arccosine"
 msgstr "Cosinus"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:597
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:602
 #, fuzzy
 msgid "vec_type **atan** (vec_type y_over_x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:597
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:602
 #, fuzzy
 msgid "Arctangent"
 msgstr "Tangens"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:599
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:604
 #, fuzzy
 msgid "vec_type **atan** (vec_type y, vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:599
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:604
 msgid "Arctangent to convert vector to angle"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:606
 #, fuzzy
 msgid "vec_type **sinh** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:601
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:606
 msgid "Hyperbolic sine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:608
 #, fuzzy
 msgid "vec_type **cosh** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:603
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:608
 msgid "Hyperbolic cosine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:605
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:610
 #, fuzzy
 msgid "vec_type **tanh** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:605
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:610
 msgid "Hyperbolic tangent"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:607
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:612
 #, fuzzy
 msgid "vec_type **asinh** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:607
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:612
 msgid "Inverse hyperbolic sine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:609
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:614
 #, fuzzy
 msgid "vec_type **acosh** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:609
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:614
 msgid "Inverse hyperbolic cosine"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:611
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:616
 #, fuzzy
 msgid "vec_type **atanh** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:611
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:616
 msgid "Inverse hyperbolic tangent"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:613
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:618
 #, fuzzy
 msgid "vec_type **pow** (vec_type x, vec_type y)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:613
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:618
 msgid "Power (undefined if ``x`` < 0 or if ``x`` = 0 and ``y`` <= 0)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:615
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:620
 #, fuzzy
 msgid "vec_type **exp** (vec_type x)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:615
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:620
 msgid "Base-e exponential"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:617
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:622
 #, fuzzy
 msgid "vec_type **exp2** (vec_type x)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:617
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:622
 msgid "Base-2 exponential"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:619
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:624
 #, fuzzy
 msgid "vec_type **log** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:619
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:624
 msgid "Natural logarithm"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:621
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:626
 #, fuzzy
 msgid "vec_type **log2** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:621
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:626
 msgid "Base-2 logarithm"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:623
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:628
 #, fuzzy
 msgid "vec_type **sqrt** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:623
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:628
 msgid "Square root"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:625
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:630
 #, fuzzy
 msgid "vec_type **inversesqrt** (vec_type x)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:625
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:630
 msgid "Inverse square root"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:627
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:632
 #, fuzzy
 msgid "vec_type **abs** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:627
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:629
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:632
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:634
 msgid "Absolute"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:629
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:634
 #, fuzzy
 msgid "ivec_type **abs** (ivec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:631
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:636
 #, fuzzy
 msgid "vec_type **sign** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:631
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:633
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:636
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:638
 msgid "Sign"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:633
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:638
 #, fuzzy
 msgid "ivec_type **sign** (ivec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:635
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:640
 #, fuzzy
 msgid "vec_type **floor** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:635
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:640
 msgid "Floor"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:637
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:642
 #, fuzzy
 msgid "vec_type **round** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:637
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:642
 msgid "Round"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:639
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:644
 #, fuzzy
 msgid "vec_type **roundEven** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:639
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:644
 msgid "Round to the nearest even number"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:641
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:646
 #, fuzzy
 msgid "vec_type **trunc** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:641
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:646
 msgid "Truncation"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:643
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:648
 #, fuzzy
 msgid "vec_type **ceil** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:643
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:648
 msgid "Ceil"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:650
 #, fuzzy
 msgid "vec_type **fract** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:650
 msgid "Fractional"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:647
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:652
 #, fuzzy
 msgid "vec_type **mod** (vec_type x, vec_type y)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:647
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:649
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:652
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:654
 msgid "Remainder"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:649
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:654
 #, fuzzy
 msgid "vec_type **mod** (vec_type x , float y)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:656
 #, fuzzy
 msgid "vec_type **modf** (vec_type x, out vec_type i)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:656
 msgid "Fractional of ``x``, with ``i`` as integer part"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:658
 #, fuzzy
 msgid "vec_type  **min** (vec_type a, vec_type b)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:658
 msgid "Minimum"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:660
 #, fuzzy
 msgid "vec_type  **max** (vec_type a, vec_type b)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:660
 msgid "Maximum"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:662
 #, fuzzy
 msgid "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:662
 msgid "Clamp to ``min..max``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:659
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:664
 msgid "vec_type **mix** (float a, float b, float c)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:659
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:664
 #, fuzzy
 msgid "Linear interpolate"
 msgstr "Interpolacja"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:666
 #, fuzzy
 msgid "vec_type **mix** (vec_type a, vec_type b, float c)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:666
 msgid "Linear interpolate (scalar coefficient)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:668
 #, fuzzy
 msgid "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:668
 msgid "Linear interpolate (vector coefficient)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:665
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:670
 #, fuzzy
 msgid "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:665
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:670
 msgid "Linear interpolate (boolean-vector selection)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:672
 #, fuzzy
 msgid "vec_type **step** (vec_type a, vec_type b)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:672
 msgid "``b[i] < a[i] ? 0.0 : 1.0``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:674
 #, fuzzy
 msgid "vec_type **step** (float a, vec_type b)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:674
 msgid "``b[i] < a ? 0.0 : 1.0``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:671
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:676
 #, fuzzy
 msgid "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:671
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:676
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:678
 #, fuzzy
 msgid "Hermite interpolate"
 msgstr "Interpolacja"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:673
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:678
 #, fuzzy
 msgid "vec_type **smoothstep** (float a, float b, vec_type c)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:675
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:680
 #, fuzzy
 msgid "bvec_type **isnan** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:675
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:680
 msgid "Returns ``true`` if scalar or vector component is ``NaN``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:682
 #, fuzzy
 msgid "bvec_type **isinf** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:682
 msgid "Returns ``true`` if scalar or vector component is ``INF``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:684
 #, fuzzy
 msgid "ivec_type **floatBitsToInt** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:684
 msgid "Float->Int bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:686
 #, fuzzy
 msgid "uvec_type **floatBitsToUint** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:686
 msgid "Float->UInt bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:683
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:688
 #, fuzzy
 msgid "vec_type **intBitsToFloat** (ivec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:683
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:688
 msgid "Int->Float bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:685
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:690
 #, fuzzy
 msgid "vec_type **uintBitsToFloat** (uvec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:685
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:690
 msgid "UInt->Float bit copying, no conversion"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:687
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:692
 msgid "float **length** (vec_type x)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:687
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:692
 #, fuzzy
 msgid "Vector length"
 msgstr "Wektory"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:689
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:694
 msgid "float **distance** (vec_type a, vec_type b)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:689
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:694
 msgid "Distance between vectors i.e ``length(a - b)``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:691
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:696
 msgid "float **dot** (vec_type a, vec_type b)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:691
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:696
 msgid "Dot product"
 msgstr "Iloczyn skalarny"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:693
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:698
 msgid "vec3 **cross** (vec3 a, vec3 b)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:693
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:698
 #, fuzzy
 msgid "Cross croduct"
 msgstr "Iloczyn skalarny"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:695
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:700
 #, fuzzy
 msgid "vec_type **normalize** (vec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:695
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:700
 msgid "Normalize to unit length"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:697
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:702
 msgid "vec3 **reflect** (vec3 I, vec3 N)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:697
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:702
 msgid "Reflect"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:699
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:704
 msgid "vec3 **refract** (vec3 I, vec3 N, float eta)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:699
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:704
 msgid "Refract"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:706
 #, fuzzy
 msgid "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:706
 msgid "If ``dot(Nref, I)`` < 0, return N, otherwise –N"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:703
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:708
 msgid "mat_type **matrixCompMult** (mat_type x, mat_type y)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:703
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:708
 #, fuzzy
 msgid "Matrix component multiplication"
 msgstr "Mnożenie skalarne"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:705
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:710
 msgid "mat_type **outerProduct** (vec_type column, vec_type row)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:705
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:710
 #, fuzzy
 msgid "Matrix outer product"
 msgstr "Iloczyn skalarny"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:712
 #, fuzzy
 msgid "mat_type **transpose** (mat_type m)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:712
 msgid "Transpose matrix"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:709
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:714
 msgid "float **determinant** (mat_type m)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:709
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:714
 msgid "Matrix determinant"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:716
 msgid "mat_type **inverse** (mat_type m)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:711
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:716
 #, fuzzy
 msgid "Inverse matrix"
 msgstr "Odwrócona kinematyka"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:718
 #, fuzzy
 msgid "bvec_type **lessThan** (vec_type x, vec_type y)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:718
 msgid "Bool vector comparison on < int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:720
 #, fuzzy
 msgid "bvec_type **greaterThan** (vec_type x, vec_type y)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:720
 msgid "Bool vector comparison on > int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:722
 #, fuzzy
 msgid "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:722
 msgid "Bool vector comparison on <= int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:719
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:724
 #, fuzzy
 msgid "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:719
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:724
 msgid "Bool vector comparison on >= int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:721
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:726
 #, fuzzy
 msgid "bvec_type **equal** (vec_type x, vec_type y)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:721
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:726
 msgid "Bool vector comparison on == int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:723
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:728
 #, fuzzy
 msgid "bvec_type **notEqual** (vec_type x, vec_type y)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:723
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:728
 msgid "Bool vector comparison on != int/uint/float vectors"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:730
 msgid "bool **any** (bvec_type x)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:725
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:730
 msgid "Any component is ``true``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:727
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:732
 msgid "bool **all** (bvec_type x)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:727
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:732
 msgid "All components are ``true``"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:734
 #, fuzzy
 msgid "bvec_type **not** (bvec_type x)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:729
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:734
 #, fuzzy
 msgid "Invert boolean vector"
 msgstr "Kolor wierzchołka"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:731
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:736
 #, fuzzy
 msgid "ivec2 **textureSize** (sampler2D_type s, int lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:731
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:736
 msgid "Get the size of a 2D texture"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:733
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:738
 #, fuzzy
 msgid "ivec3 **textureSize** (sampler2DArray_type s, int lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:733
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:738
 msgid "Get the size of a 2D texture array"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:735
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:740
 msgid "ivec3 **textureSize** (sampler3D s, int lod)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:735
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:740
 msgid "Get the size of a 3D texture"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:737
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:742
 msgid "ivec2 **textureSize** (samplerCube s, int lod)"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:737
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:742
 msgid "Get the size of a cubemap texture"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:739
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:744
 #, fuzzy
 msgid "vec4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:739
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:744
 msgid "Perform a 2D texture read"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:741
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:746
 #, fuzzy
 msgid "vec4_type  **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:741
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:746
 msgid "Perform a 2D texture array read"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:748
 #, fuzzy
 msgid "vec4_type  **texture** (sampler3D_type s, vec3 uv [, float bias])"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:743
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:748
 msgid "Perform a 3D texture read"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:750
 #, fuzzy
 msgid "vec4 **texture** (samplerCube s, vec3 uv [, float bias])"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:745
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:750
 msgid "Perform a cubemap texture read"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:747
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:752
 #, fuzzy
 msgid "vec4_type **textureProj** (sampler2D_type s, vec3 uv [, float bias])"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:747
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:749
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:752
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:754
 msgid "Perform a 2D texture read with projection"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:749
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:754
 #, fuzzy
 msgid "vec4_type **textureProj** (sampler2D_type s, vec4 uv [, float bias])"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:751
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:756
 #, fuzzy
 msgid "vec4_type  **textureProj** (sampler3D_type s, vec4 uv [, float bias])"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:751
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:756
 msgid "Perform a 3D texture read with projection"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:753
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:758
 #, fuzzy
 msgid "vec4_type **textureLod** (sampler2D_type s, vec2 uv, float lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:753
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:758
 msgid "Perform a 2D texture read at custom mipmap"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:755
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:760
 #, fuzzy
 msgid "vec4_type **textureLod** (sampler2DArray_type s, vec3 uv, float lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:755
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:760
 msgid "Perform a 2D texture array read at custom mipmap"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:757
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:762
 #, fuzzy
 msgid "vec4_type **textureLod** (sampler3D_type s, vec3 uv, float lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:757
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:759
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:762
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:764
 msgid "Perform a 3D texture read at custom mipmap"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:759
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:764
 #, fuzzy
 msgid "vec4 **textureLod** (samplerCube s, vec3 uv, float lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:761
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:766
 #, fuzzy
 msgid "vec4_type **textureProjLod** (sampler2D_type s, vec3 uv, float lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:761
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:763
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:766
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:768
 msgid "Perform a 2D texture read with projection/LOD"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:763
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:768
 #, fuzzy
 msgid "vec4_type **textureProjLod** (sampler2D_type s, vec4 uv, float lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:765
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:770
 #, fuzzy
 msgid "vec4_type **textureProjLod** (sampler3D_type s, vec4 uv, float lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:765
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:770
 msgid "Perform a 3D texture read with projection/LOD"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:767
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:772
 #, fuzzy
 msgid "vec4_type **texelFetch** (sampler2D_type s, ivec2 uv, int lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:767
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:769
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:771
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:772
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:774
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:776
 msgid "Fetch a single texel using integer coordinates"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:769
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:774
 #, fuzzy
 msgid "vec4_type **texelFetch** (sampler2DArray_type s, ivec3 uv, int lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:771
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:776
 #, fuzzy
 msgid "vec4_type **texelFetch** (sampler3D_type s, ivec3 uv, int lod)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:773
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:778
 #, fuzzy
 msgid "vec_type **dFdx** (vec_type p)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:773
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:778
 msgid "Derivative in ``x`` using local differencing"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:775
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:780
 #, fuzzy
 msgid "vec_type **dFdy** (vec_type p)"
 msgstr "Przeliczanie stopni na radiany"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:775
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:780
 msgid "Derivative in ``y`` using local differencing"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:777
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:782
 #, fuzzy
 msgid "vec_type **fwidth** (vec_type p)"
 msgstr "Przeliczanie radianów na stopnie"
 
-#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:777
+#: ../../docs/tutorials/shading/shading_reference/shading_language.rst:782
 msgid "Sum of absolute derivative in ``x`` and ``y``"
 msgstr ""

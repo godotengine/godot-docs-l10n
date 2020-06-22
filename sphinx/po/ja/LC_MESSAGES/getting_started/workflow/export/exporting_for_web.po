@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -280,32 +280,43 @@ msgstr ""
 "<doc_customizing_html5_shell>` で表示できます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
+#, fuzzy
+msgid "Shader language limitations"
+msgstr "3Dのパフォーマンスと制限"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
+msgid ""
+"When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
+"doesn't support dynamic loops, so shaders using those won't work there."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:118
 msgid "Unimplemented functionality"
 msgstr "実装されていない機能"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
 msgstr "現在、HTML5 プラットフォームでは次の機能を使用できません:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
 msgid "Threads"
 msgstr "スレッド"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:123
 msgid "GDNative"
 msgstr "GDNative"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:118
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:124
 msgid "C#"
 msgstr "\\ C#"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 #, fuzzy
 msgid "Clipboard synchronization between engine and operating system"
 msgstr "エンジンとオペレーティングシステム間のクリップボード同期"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
@@ -313,7 +324,7 @@ msgstr ""
 ":ref:`class_HTTPClient` および :ref:`class_WebSocketClient` 以外のネットワー"
 "ク処理"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 #, fuzzy
 msgid ""
 "Check the `list of open HTML5 issues on GitHub <https://github.com/"
@@ -327,11 +338,11 @@ msgstr ""
 "覧にない場合は、あなたの知りたいことを伝えるために、新しいIssueをオープンして"
 "ください。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
 msgid "Serving the files"
 msgstr "ファイルの提供"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:130
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:136
 msgid ""
 "Exporting for the web generates several files to be served from a web "
 "server, including a default HTML page for presentation. A custom HTML file "
@@ -341,7 +352,7 @@ msgstr ""
 "Webサーバーから提供される複数のファイルが生成されます。 カスタムHTMLファイル"
 "を使用できます。\\ :ref:`doc_customizing_html5_shell`\\ を参照して下さい。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:140
 msgid ""
 "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache "
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
@@ -351,7 +362,7 @@ msgstr ""
 "用でき、いつでも ``index.html`` などの名前に変更できますが、その名前はデフォ"
 "ルトでは全く依存しません。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:138
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:144
 msgid ""
 "The HTML page draws the game at maximum size within the browser window. This "
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
@@ -361,7 +372,7 @@ msgstr ""
 "で、ほとんどのWebゲームホスティングサイトで一般的であるように、ゲームのサイズ"
 "で ``<iframe>`` に挿入できます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:142
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:148
 msgid ""
 "The other exported files are served as they are, next to the ``.html`` file, "
 "names unchanged. The ``.wasm`` file is a binary WebAssembly module "
@@ -380,7 +391,7 @@ msgstr ""
 "\\ :ref:`カスタムHTMLページ <doc_customizing_html5_shell>`\\ に含まれていま"
 "す。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:150
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
 "The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
@@ -390,7 +401,7 @@ msgstr ""
 "stream` で配信されます。``.wasm`` ファイルは :mimetype:`application/wasm` と"
 "して配信されます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:154
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:160
 msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
@@ -398,7 +409,7 @@ msgstr ""
 ":mimetype:`application/wasm` 以外のMIMEタイプでWebAssemblyモジュール(``."
 "wasm``)を配信すると、起動時の最適化が妨げられる可能性があります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:158
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid ""
 "Delivering the files with server-side compression is recommended especially "
 "for the ``.pck`` and ``.wasm`` files, which are usually large in size. The "
@@ -409,11 +420,11 @@ msgstr ""
 "ファイルと ``.wasm`` ファイルで特に推奨されます。WebAssemblyモジュールは、"
 "gzip圧縮によって元のサイズの約4分の1にまで圧縮されています。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
 msgid "Export options"
 msgstr "エクスポートオプション"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:166
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:172
 msgid ""
 "If a runnable web export template is available, a button appears between the "
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
@@ -423,7 +434,7 @@ msgstr ""
 "止] ボタンと [編集したシーンを再生] ボタンの間にボタンが表示され、既定のブラ"
 "ウザでゲームをすばやく開いてテストできます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:176
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
@@ -432,7 +443,7 @@ msgstr ""
 "ジの代わりにそれが使用されます。\\ :ref:`doc_customizing_html5_shell`\\ を参"
 "照してください。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
 msgid ""
 "**Head Include** is appended into the ``<head>`` element of the generated "
 "HTML page. This allows to, for example, load webfonts and third-party "
@@ -442,11 +453,11 @@ msgstr ""
 "これにより、たとえば、WebfontsやサードパーティのJavaScript APIをロードした"
 "り、CSSを組み込んだり、JavaScriptコードを実行したりできます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:186
 msgid "Calling JavaScript from script"
 msgstr "スクリプトからJavaScriptを呼び出す"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:182
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:188
 msgid ""
 "In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
@@ -459,7 +470,7 @@ msgstr ""
 "引数として受け取り、JavaScriptコードとして実行します。これにより、Godotに統合"
 "されたスクリプト言語では不可能な方法でブラウザと対話できます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:199
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
@@ -467,19 +478,19 @@ msgstr ""
 "最後のJavaScriptステートメントの値はGDScriptの値に変換され、特定の状況下では "
 "``eval()`` によって返されます:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:202
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr "JavaScript番号はGDScriptとして返されます :ref:`class_float`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:197
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:203
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr "JavaScriptブール値はGDScriptとして返されます :ref:`class_bool`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:198
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:204
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr "JavaScript文字列はGDScriptとして返されます :ref:`class_String`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:199
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
@@ -487,11 +498,11 @@ msgstr ""
 "JavaScriptのArrayBuffer、TypedArray、DataViewはGDScriptとして返されます :ref:"
 "`class_PoolByteArray`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:208
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:214
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr "その他の JavaScriptの値は ``null`` として返されます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:210
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:216
 msgid ""
 "HTML5 export templates may be built without support for the singleton. With "
 "such templates, and on platforms other than HTML5, calling ``JavaScript."
@@ -503,7 +514,7 @@ msgstr ""
 "eval`` を呼び出すと ``null`` も返されます。 シングルトンの可用性は、 "
 "``JavaScript`` :ref:`feature tag <doc_feature_tags>`\\ で確認できます:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:223
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:229
 msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
@@ -511,7 +522,7 @@ msgstr ""
 "上記の ``my_func3()`` のように、3つの引用符 ``\"\"\"`` で囲まれたGDScriptの複"
 "数行の文字列は、JavaScriptコードを読みやすくするのに役立ちます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:226
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:232
 msgid ""
 "The ``eval`` method also accepts a second, optional Boolean argument, which "
 "specifies whether to execute the code in the global execution context, "

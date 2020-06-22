@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr ""
 "O sistema de arquivos gerencia como os assets são armazenados e como são "
 "acessados. Um sistema de arquivos bem projetado também permite que vários "
 "desenvolvedores editem os mesmos arquivos fonte e assets enquanto colaboram. "
-"A Godot guarda todos os assets como arquivos em seu sistema de arquivos."
+"O Godot guarda todos os assets como arquivos em seu sistema de arquivos."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
@@ -65,9 +65,9 @@ msgid ""
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
-"O sistema de arquivos da Godot evita usar arquivos de metadados. "
+"O sistema de arquivos do Godot evita usar arquivos de metadados. "
 "Gerenciadores de assets e sistemas de controle de versão existentes são "
-"muito melhores do que qualquer coisa que poderíamos implementar, então a "
+"muito melhores do que qualquer coisa que poderíamos implementar, então o "
 "Godot tenta de tudo para funcionar bem com SVN, Git, Mercurial, Perforce, "
 "etc."
 
@@ -80,7 +80,6 @@ msgid "project.godot"
 msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
-#, fuzzy
 msgid ""
 "The ``project.godot`` file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
@@ -88,7 +87,7 @@ msgid ""
 msgstr ""
 "O arquivo project.godot é o arquivo de descrição do projeto, e é sempre "
 "encontrado na raiz do projeto. Na verdade, sua localização define onde está "
-"a raiz. Este é o primeiro arquivo que a Godot procura ao abrir um projeto."
+"a raiz. Este é o primeiro arquivo que o Godot procura ao abrir um projeto."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
 #, fuzzy

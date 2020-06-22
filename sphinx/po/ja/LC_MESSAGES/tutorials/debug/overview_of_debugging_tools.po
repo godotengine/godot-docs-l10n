@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,10 +48,21 @@ msgstr ""
 "シーンまたはコードへの変更を再ロードするオプションがあります。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:18
+#, fuzzy
+msgid "Debugger Panel"
+msgstr "デバッガ"
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:20
+msgid ""
+"Many of Godot's debugging tools are part of the Debugger panel, which you "
+"can find information about in :ref:`doc_debugger_panel`."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
 msgid "Debug menu options"
 msgstr "デバッグメニューオプション"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:20
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:26
 msgid ""
 "There are a few common debug options you can toggle on or off when running "
 "your game in the editor, which can help you in debugging your game."
@@ -59,19 +70,19 @@ msgstr ""
 "エディタでゲームを実行するときにオンとオフを切り替えることができるいくつかの"
 "一般的なデバッグオプションがあり、ゲームのデバッグに役立ちます。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:23
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid "You can find these options in the **Debug** editor menu."
 msgstr "これらのオプションは、エディタの **デバッグ** メニューにあります。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Here are the descriptions of the options:"
 msgstr "オプションの説明は次のとおりです:"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:30
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
 msgid "Deploy with Remote Debug"
 msgstr "リモートデバッグでデプロイ"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:32
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid ""
 "When exporting and deploying, the resulting executable will attempt to "
 "connect to the IP of your computer for debugging."
@@ -79,11 +90,11 @@ msgstr ""
 "エクスポートおよびデプロイするとき、結果として生成される実行可能ファイルは、"
 "デバッグのためにコンピューターのIPに接続しようとします。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:42
 msgid "Small Deploy with Network FS"
 msgstr "ネットワークファイルシステムでスモールデプロイ"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:44
 msgid ""
 "This option speeds up testing for games with a large footprint on remote "
 "devices."
@@ -91,7 +102,7 @@ msgstr ""
 "このオプションは、リモートデバイス上で大きなフットプリントを持つゲームのテス"
 "トを高速化します。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:46
 msgid ""
 "When **Small Deploy with Network FS** is on, instead of exporting the full "
 "game, deploying the game builds a minimal executable. The editor then "
@@ -102,7 +113,7 @@ msgstr ""
 "ルドされます。その後、エディタはプロジェクトからネットワーク経由でファイルを"
 "提供します。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:44
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:50
 msgid ""
 "Also, on Android, the game is deployed using the USB cable to speed up "
 "deployment."
@@ -110,11 +121,11 @@ msgstr ""
 "また、Androidでは、デプロイを高速化するためにUSBケーブルを使用してゲームがデ"
 "プロイされます。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:47
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:53
 msgid "Visible Collision Shapes"
 msgstr "コリジョン形状の表示"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:55
 msgid ""
 "This option makes collision shapes and raycast nodes visible in the running "
 "game."
@@ -122,19 +133,19 @@ msgstr ""
 "このオプションは、実行中のゲームでコリジョンシェイプとレイキャストノードを表"
 "示します。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:52
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:58
 msgid "Visible Navigation"
 msgstr "ナビゲーションの表示"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:54
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:60
 msgid "Navigation meshes and polygons will be visible on the running game."
 msgstr "ナビゲーションメッシュとポリゴンは、実行中のゲームに表示されます。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:57
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:63
 msgid "Sync Scene Changes"
 msgstr "シーンの変更を同期"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:59
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:65
 msgid ""
 "With this option, any change you make to a scene in the editor at runtime "
 "appears instantly. When used remotely on a device, this is more efficient "
@@ -144,11 +155,11 @@ msgstr ""
 "されます。デバイスでリモートで使用する場合、これはネットワークファイルシステ"
 "ムで使用すると、より効率的です。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:64
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:70
 msgid "Sync Script Changes"
 msgstr "スクリプトの変更を同期"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:66
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:72
 msgid ""
 "Any script that is saved will be reloaded on the running game. When used "
 "remotely on a device, this is more efficient with the network filesystem."
@@ -157,11 +168,11 @@ msgstr ""
 "で使用する場合、これはネットワークファイルシステムで使用すると、より効率的で"
 "す。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:70
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:76
 msgid "Script editor debug tools and options"
 msgstr "スクリプトエディタのデバッグツールとオプション"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:72
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
 msgid ""
 "The script editor has its own set of debug tools for use with breakpoints "
 "and two options. The breakpoint tools can also be found in the **Debugger** "
@@ -171,7 +182,7 @@ msgstr ""
 "のデバッグツールセットがあります。ブレークポイントツールは、デバッガの[**デ"
 "バッグ**]タブにもあります。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:84
 msgid ""
 "The **Break** button causes a break in the script like a breakpoint would. "
 "**Continue** makes the game continue after pausing at a breakpoint. **Step "
@@ -184,7 +195,7 @@ msgstr ""
 "関数に入ります。それ以外の場合、\\ **ステップオーバー** と同じことを行いま"
 "す。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:83
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:89
 msgid ""
 "The **Keep Debugger Open** option keeps the debugger open after a scene has "
 "been closed. And the **Debug with External Editor** option lets you debug "
@@ -194,11 +205,11 @@ msgstr ""
 "いたままにします。また、\\ **外部エディタでデバッグ**\\ オプションを使用する"
 "と、外部エディタでゲームをデバッグできます。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:88
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:94
 msgid "Debug project settings"
 msgstr "デバッグプロジェクトの設定"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:90
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:96
 msgid ""
 "In the project settings, there is a **Debug** category with three "
 "subcategories which control different things."
@@ -206,11 +217,11 @@ msgstr ""
 "プロジェクト設定には、異なるものを制御する3つのサブカテゴリを持つ **Debug** "
 "カテゴリがあります。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:94
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:100
 msgid "Settings"
 msgstr "\\ Settings"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:96
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:102
 msgid ""
 "These are some general settings such as printing the current FPS to the "
 "**Output** panel, the maximum amount of functions when profiling and others."
@@ -218,11 +229,11 @@ msgstr ""
 "これらは、現在のFPSを **Output** パネルに出力するなどの一般的な設定、プロファ"
 "イリング時の関数の最大量などです。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:101
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:107
 msgid "GDScript"
 msgstr "\\ GDScript"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:103
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:109
 msgid ""
 "These settings allow you to toggle specific GDScript warnings, such as for "
 "unused variables. You can also turn off warnings completely."
@@ -230,11 +241,11 @@ msgstr ""
 "これらの設定により、未使用の変数など、特定のGDScriptの警告を切り替えることが"
 "できます。警告を完全にオフにすることもできます。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:107
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
 msgid "Shapes"
 msgstr "\\ Shapes"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:109
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:115
 msgid ""
 "Shapes are where you can adjust the color of shapes that only appear for "
 "debugging purposes, such as collision and navigation shapes."
@@ -242,239 +253,11 @@ msgstr ""
 "Shapesは、コリジョンシェイプやナビゲーションシェイプなど、デバッグ目的でのみ"
 "表示されるシェイプの色を調整できる場所です。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
-msgid "Debugging tools"
-msgstr "デバッグツール"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:115
-msgid ""
-"You can find the debugger in the bottom panel. Click on **Debugger** to open "
-"it."
-msgstr ""
-"デバッガは下のパネルにあります。 [**デバッガ**]をクリックして開きます。"
-
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:119
-msgid ""
-"The debugger is split into several tabs, each focusing on a specific task."
-msgstr ""
-"デバッガはいくつかのタブに分割され、各タブは特定のタスクに焦点を当てていま"
-"す。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:122
-msgid "Debugger"
-msgstr "デバッガ"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:124
-msgid ""
-"The debugger tab opens automatically when the GDScript compiler reaches a "
-"breakpoint in your code."
-msgstr ""
-"デバッガタブは、GDScriptコンパイラーがコードのブレークポイントに達すると自動"
-"的に開きます。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:127
-msgid ""
-"It gives you a `stack trace <https://en.wikipedia.org/wiki/Stack_trace>`__, "
-"information about the state of the object, and buttons to control the "
-"program's execution."
-msgstr ""
-"これは、\\ `stack trace <https://en.wikipedia.org/wiki/Stack_trace>`__、オブ"
-"ジェクトの状態に関する情報、およびプログラムの実行を制御するボタンを提供しま"
-"す。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:131
-msgid "You can use the buttons in the top-right to:"
-msgstr "右上のボタンを使用して、次の操作を行うことができます:"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
-msgid ""
-"Skip all breakpoints. That way, you can save breakpoints for future "
-"debugging sessions."
-msgstr ""
-"すべてのブレークポイントをスキップします。これにより、将来のデバッグセッショ"
-"ンのためにブレークポイントを保存できます。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:135
-msgid "Copy the current error message."
-msgstr "現在のエラーメッセージをコピーします。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:136
-msgid ""
-"**Step Into** the code. This button takes you to the next line of code, and "
-"if it's a function, it steps line-by-line through the function."
-msgstr ""
-"**ステップイン**\\ 。このボタンを使用すると、次のコード行に移動し、そこが関数"
-"の場合は、関数内を1行ずつステップ実行します。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:138
-msgid ""
-"**Step Over** the code. This button goes to the next line of code, but it "
-"doesn't step line-by-line through functions."
-msgstr ""
-"**ステップオーバー**\\ 。このボタンはコードの次の行に移動しますが、関数を1行"
-"ずつステップ実行しません。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:140
-msgid "**Break**. This button pauses the game's execution."
-msgstr "**ブレーク**\\ 。このボタンは、ゲームの実行を一時停止します。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:141
-msgid "**Continue**. This button resumes the game after a breakpoint or pause."
-msgstr ""
-"**実行を継続**\\ 。このボタンは、ブレークポイントまたは一時停止後にゲームを再"
-"開します。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:144
-msgid "Errors"
-msgstr "エラー"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:146
-msgid ""
-"This is where errors and warning messages are printed while running the game."
-msgstr "これは、ゲームの実行中にエラーと警告メッセージが出力される場所です。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
-msgid "Profiler"
-msgstr "プロファイラー"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:151
-msgid ""
-"The debugger comes with three profilers for your processor, network "
-"operations, and video memory."
-msgstr ""
-"デバッガには、プロセッサ、ネットワーク操作、およびビデオメモリ用の3つのプロ"
-"ファイラが付属しています。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:154
-msgid ""
-"The profiler is used to show why individual frames take as long as they do "
-"to process and render."
-msgstr ""
-"プロファイラーは、個々のフレームが処理とレンダリングにかかる時間を示すために"
-"使用されます。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:157
-msgid ""
-"Unlike other debugging tools, the profiler does not start automatically. It "
-"can be started at any time during gameplay by pressing the start button. You "
-"can even start the profiler before opening the game to profile startup "
-"performance. It can also be started and stopped while the game is running "
-"without losing information from when it was last running. The information it "
-"records won't go away unless you click clear, or close the game, reopen it "
-"and start the profiler again."
-msgstr ""
-"他のデバッグツールとは異なり、プロファイラーは自動的に起動しません。ゲームプ"
-"レイ中に開始ボタンを押すといつでも開始できます。ゲームを開く前にプロファイ"
-"ラーを起動して、起動パフォーマンスをプロファイリングすることもできます。ま"
-"た、ゲームの実行中に、前回の実行時から情報を失うことなく開始および停止するこ"
-"とができます。クリアをクリックするか、ゲームを閉じて再度開き、プロファイラー"
-"を再起動しない限り、記録された情報は消えません。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:165
-msgid ""
-"After starting and stopping the profiler you should see things being kept "
-"track of on the left and a graph on the right. The items listed on the left "
-"are everything that contributes to frame time, and they should each have a "
-"value for time and calls for the current frame you are looking at."
-msgstr ""
-"プロファイラーを起動および停止した後、左側に追跡されているもの、右側にグラフ"
-"が表示されます。左側にリストされている項目はフレーム時間に寄与するすべてのも"
-"のであり、また、それぞれに時間の値がを持ち、現在のフレームを呼び出している必"
-"要があります。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:170
-msgid ""
-"The frame number in the top right tells you which frame you are currently "
-"looking at. You can change this by using the up or down arrows, typing in "
-"the frame number, or clicking on the graph."
-msgstr ""
-"右上のフレーム番号は、現在見ているフレームを示します。これを変更するには、上"
-"矢印または下矢印を使用するか、フレーム番号を入力するか、グラフをクリックしま"
-"す。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:174
-msgid ""
-"If you want to add something to your graph, or think it looks too cluttered, "
-"you can check and uncheck the box next to an item to add or remove it from "
-"the graph."
-msgstr ""
-"グラフに何かを追加したい場合、または見た目が乱雑すぎると思われる場合は、アイ"
-"テムの横にあるチェックボックスをオンまたはオフにして、グラフに追加または削除"
-"できます。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:179
-msgid "Network Profiler"
-msgstr "ネットワークプロファイラー"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:181
-msgid ""
-"The Network Profiler contains a list of all the nodes that communicate over "
-"the multiplayer API and, for each one, some counters on the amount of "
-"incoming and outgoing network interactions. It also features a bandwidth "
-"meter that displays the total bandwidth usage at any given moment."
-msgstr ""
-"ネットワークプロファイラーには、マルチプレイヤーAPIを介して通信するすべての"
-"ノードのリストと、各ノードについて、着信および発信ネットワークインタラクショ"
-"ンの量に関するカウンターが含まれています。また、任意の時点での総帯域幅使用量"
-"を表示する帯域幅メーターも備えています。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:187
-msgid "Monitors"
-msgstr "モニター"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:189
-msgid ""
-"The monitors are graphs of several aspects of the game while its running "
-"such as FPS, memory usage, how many nodes are in a scene and more. All "
-"monitors keep track of stats automatically, so even if one monitor isn't "
-"open while the game is running, you can open it later and see how the values "
-"changed."
-msgstr ""
-"モニターは、ゲームの複数の側面をグラフ化したもので、FPS、メモリ使用量、シーン"
-"内のノード数など、ゲームの動作を示します。すべてのモニターは統計を自動的に追"
-"跡するため、ゲームの実行中にモニターを1つも開いていなくても、後で開いて値の変"
-"化を確認できます。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:195
-msgid "Video Memory"
-msgstr "ビデオメモリー"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:197
-msgid ""
-"The **Video Mem** tab lists the video memory usage of the running game and "
-"the resources using it."
-msgstr ""
-"[**ビデオメモリー**]タブには、実行中のゲームのビデオメモリ使用量とそれを使用"
-"するリソースが一覧表示されます。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:201
-msgid "Misc"
-msgstr "その他"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:203
-msgid ""
-"The **Misc** tab contains tools to identify the control nodes you are "
-"clicking at runtime:"
-msgstr ""
-"[**その他**]タブには、実行時にクリックしているコントロールノードを識別する"
-"ツールが含まれています:"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:206
-msgid ""
-"**Clicked Control** tells you where the clicked node is in the scene tree."
-msgstr ""
-"**クリックされたコントロール** は、クリックされたノードがシーンツリーのどこに"
-"あるかを示します。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:207
-msgid "**Clicked Control Type** tells you the type of the node you clicked is."
-msgstr "**Clicked Control Type** は、クリックしたノードのタイプを示します。"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:210
 msgid "Remote in scene dock"
 msgstr "シーンドックのリモート"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:212
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:121
 msgid ""
 "When running a game in the editor two options appear at the top of the "
 "**Scene** dock, **Remote** and **Local**. While using **Remote** you can "
@@ -484,7 +267,7 @@ msgstr ""
 "ローカル** の2つのオプションが表示されます。\\ **リモート** を使用している"
 "間、実行中のプロジェクトのノードのパラメーターを検査または変更できます。"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:218
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:127
 msgid ""
 "Some editor settings related to debugging can be found inside the **Editor "
 "Settings**, under the **Network > Debug** and **Debugger** sections."

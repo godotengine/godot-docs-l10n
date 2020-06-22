@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
-msgid "Features"
-msgstr "Características"
+#, fuzzy
+msgid "C# features"
+msgstr "Funcionalidades personalizadas"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -155,6 +156,11 @@ msgid ""
 "manually triggered by clicking the “Build” button at the top right corner of "
 "the editor window."
 msgstr ""
+"Estas señales pueden ser conectadas en el editor o desde el código con "
+"\"Connect\". Si quieres conectar una señal en el editor, necesitas "
+"(re)construir los ensamblajes del proyecto para ver la nueva señal. Esta "
+"construcción puede ser activada manualmente haciendo clic en el botón \"Build"
+"\" en la esquina superior derecha de la ventana del editor."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:119
 msgid "Emitting signals is done with the ``EmitSignal`` method."
@@ -211,6 +217,8 @@ msgid ""
 "Godot has a set of defines that allow you to change your C# code depending "
 "on the environment you are compiling to."
 msgstr ""
+"Godot tiene un conjunto de definiciones que le permiten cambiar su código C# "
+"dependiendo del entorno en el que esté compilando."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:179
 msgid ""
@@ -218,6 +226,9 @@ msgid ""
 "regenerate your `csproj` file to use this feature (compare "
 "``<DefineConstants>`` with a new 3.2+ project)."
 msgstr ""
+"Si creaste tu proyecto antes de Godot 3.2, tienes que modificar o regenerar "
+"tu archivo `csproj` para usar esta característica (compara "
+"``<DefineConstants>`` con un nuevo proyecto 3.2+)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:184
 msgid "Examples"
@@ -225,13 +236,15 @@ msgstr "Ejemplos"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:186
 msgid "For example, you can change code based on the platform:"
-msgstr ""
+msgstr "Por ejemplo, puedes cambiar el código basado en la plataforma:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:203
 msgid ""
 "Or you can detect which engine your code is in, useful for making cross-"
 "engine libraries:"
 msgstr ""
+"O puedes detectar en qué motor está tu código, útil para hacer bibliotecas "
+"de motores cruzados:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:219
 msgid "Full list of defines"
@@ -239,13 +252,15 @@ msgstr "A continuación está la lista completa de hints"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:221
 msgid "``GODOT`` is always defined for Godot projects."
-msgstr ""
+msgstr "\"GODOT\" siempre está definido para los proyectos de Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:223
 msgid ""
 "One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the "
 "architecture is 64-bit or 32-bit."
 msgstr ""
+"Uno de ``GODOT_64`` o ``GODOT_32`` se define dependiendo de si la "
+"arquitectura es de 64 o 32 bits."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
 msgid ""
@@ -255,33 +270,49 @@ msgid ""
 "the :ref:``OS <class_OS>`` singleton, but not every possible OS the method "
 "returns is an OS that Godot with Mono runs on."
 msgstr ""
+"Uno de \"GGODOT_X11\", \"GGODOT_WINDOWS\", \"GGODOT_OSX\", \"GGODOT_ANDROID"
+"\", \"GGODOT_HTML5\", o \"GGODOT_SERVER\", dependiendo del sistema "
+"operativo. Estos nombres pueden cambiar en el futuro. Se crean desde el "
+"método ``get_name()`` del singleton :ref:``OS <class_OS>``, pero no todos "
+"los sistemas operativos posibles que el método devuelve son sistemas "
+"operativos en los que Godot con Mono funciona."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:230
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
 "export features:"
 msgstr ""
+"Cuando se **exporta**, también se puede definir lo siguiente dependiendo de "
+"las características de la exportación:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
 msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
 "platform type."
 msgstr ""
+"Una de ``GODOT_PC``, ``GODOT_MOBILE``, o ``GODOT_WEB`` dependiendo del tipo "
+"de plataforma."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
 "depending on the architecture."
 msgstr ""
+"Uno de ``GODOT_ARM64_V8A`` o ``GODOT_ARMEABI_V7A`` en Android sólo "
+"dependiendo de la arquitectura."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
 msgid ""
 "One of ``GODOT_S3TC``, ``GODOT_ETC``, or ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
+"Uno de ``GODOT_S3TC``, ``GODOT_ETC``, o ``GODOT_ETC2`` dependiendo del tipo "
+"de compresión de la textura."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
 msgid ""
 "Any custom features added in the export menu will be capitalized and "
 "prefixed: ``foo`` -> ``GODOT_FOO``."
 msgstr ""
+"Cualquier característica personalizada añadida en el menú de exportación se "
+"escribirá en mayúsculas y con el prefijo: ``foo`` -> ``GODOT_FOO``."

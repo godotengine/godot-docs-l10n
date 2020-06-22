@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr "Cryptage des sauvegardes de jeu"
 msgid "Why?"
 msgstr "Pourquoi ?"
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:9
+#: ../../docs/tutorials/io/encrypting_save_games.rst:12
 msgid ""
 "Because the world today is not the world of yesterday. A capitalist "
 "oligarchy runs the world and forces us to consume in order to keep the gears "
@@ -53,7 +53,7 @@ msgstr ""
 "prolonger leur expérience, et leurs moyens préférés de le faire sont les "
 "achats dans l'application et la monnaie virtuelle."
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:22
+#: ../../docs/tutorials/io/encrypting_save_games.rst:25
 msgid ""
 "But what if someone were to find a way to edit the saved games and assign "
 "the items and currency without effort? That would be terrible, because it "
@@ -69,7 +69,7 @@ msgstr ""
 "produit, ils n'auront rien pour les empêcher de penser, et l'agonie énorme "
 "de réaliser leur propre inutilité prendra de nouveau le dessus."
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:29
+#: ../../docs/tutorials/io/encrypting_save_games.rst:32
 msgid ""
 "No, we definitely do not want that to happen, so let's see how to encrypt "
 "savegames and protect the world order."
@@ -77,11 +77,11 @@ msgstr ""
 "Non, nous ne voulons définitivement pas que cela se produise, alors "
 "regardons comment encrypter nos sauvegardes et protéger l'ordre mondial."
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:33
+#: ../../docs/tutorials/io/encrypting_save_games.rst:36
 msgid "How?"
 msgstr "Comment ?"
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:35
+#: ../../docs/tutorials/io/encrypting_save_games.rst:38
 msgid ""
 "The class :ref:`File <class_File>` can open a file at a location and read/"
 "write data (integers, strings and variants). It also supports encryption. To "
@@ -92,7 +92,7 @@ msgstr ""
 "variantes). Il supporte également le cryptage. Pour créer un fichier crypté, "
 "une passphrase doit être fournie, comme ceci :"
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:55
+#: ../../docs/tutorials/io/encrypting_save_games.rst:58
 msgid ""
 "This will make the file unreadable to users, but will still not prevent them "
 "from sharing savefiles. To solve this, use the device unique id or some "
@@ -103,15 +103,15 @@ msgstr ""
 "problème, utilisez l'identifiant unique de l'appareil ou un identifiant "
 "utilisateur unique, par exemple :"
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:74
+#: ../../docs/tutorials/io/encrypting_save_games.rst:77
 msgid "Note that ``OS.get_unique_id()`` does not work on UWP or HTML5."
 msgstr "Notez que ``OS.get_unique_id()`` ne fonctionne pas en UWP ou HTML5."
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:76
+#: ../../docs/tutorials/io/encrypting_save_games.rst:79
 msgid "That is all! Thank you for your cooperation, citizen."
 msgstr "C'est tout ! Merci pour votre coopération, citoyen."
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:78
+#: ../../docs/tutorials/io/encrypting_save_games.rst:81
 msgid ""
 "This method cannot really prevent players from editing their savegames "
 "locally because, since the encryption key is stored inside the game, the "

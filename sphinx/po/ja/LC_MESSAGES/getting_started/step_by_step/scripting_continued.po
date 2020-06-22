@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,15 +68,13 @@ msgstr ""
 "レートは、時間とデバイスによって異なります。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability, the ``delta`` parameter contains the time "
 "elapsed in seconds as a floating-point number since the previous call to "
 "``_process()``."
 msgstr ""
-"この変動を管理しやすくするために、\\ ``delta``\\ パラメーターには、\\ "
-"``_process()``\\ の前回の呼び出し以降の経過秒数が浮動小数点として含まれていま"
-"す。"
+"この変動を管理しやすくするために ``delta`` パラメーターには ``_process()`` の"
+"前回の呼び出し以降の経過秒数が浮動小数点として含まれています。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -87,13 +85,12 @@ msgstr ""
 "することができます。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
-#, fuzzy
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent of the frame rate."
 msgstr ""
-"たとえば、移動速度を一定にし、フレームレートから独立させるために、移動量が時"
-"間デルタで乗算されることがよくあります。"
+"たとえば、移動速度を一定にしフレームレートから独立させるために、移動量が時間"
+"デルタで乗算されることがよくあります。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
 msgid ""

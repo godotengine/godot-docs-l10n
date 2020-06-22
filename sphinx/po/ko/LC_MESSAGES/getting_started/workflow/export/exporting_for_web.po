@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -273,39 +273,50 @@ msgstr ""
 "<doc_customizing_html5_shell>` \\ 가 부팅 스플래시를 보여줄 수 있습니다."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
+#, fuzzy
+msgid "Shader language limitations"
+msgstr "언어 사양"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
+msgid ""
+"When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
+"doesn't support dynamic loops, so shaders using those won't work there."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:118
 msgid "Unimplemented functionality"
 msgstr "구현되지 않은 기능"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
 msgstr "다음 기능은 현재 HTML5 플랫폼에서 사용할 수 없습니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:116
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
 msgid "Threads"
 msgstr "스레드(Threads)"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:123
 msgid "GDNative"
 msgstr "GDNative"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:118
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:124
 msgid "C#"
 msgstr "C#"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 #, fuzzy
 msgid "Clipboard synchronization between engine and operating system"
 msgstr "엔진과 운영체제 간의 클립보드 동기화"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
 msgstr ""
 ":ref:`class_HTTPClient`\\ 와 :ref:`class_WebSocketClient` 이외의 네트워킹"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 #, fuzzy
 msgid ""
 "Check the `list of open HTML5 issues on GitHub <https://github.com/"
@@ -318,11 +329,11 @@ msgstr ""
 "능에 아직 이슈가 있는지 찾아보세요. 기능이 아직 없다면 하나를 열어서 관심있"
 "는 기능을 이야기를 해보세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
 msgid "Serving the files"
 msgstr "파일 전달하기"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:130
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:136
 msgid ""
 "Exporting for the web generates several files to be served from a web "
 "server, including a default HTML page for presentation. A custom HTML file "
@@ -332,7 +343,7 @@ msgstr ""
 "HTML 페이지도 이에 속합니다. 맞춤 HTML 파일을 사용할 수 있습니다, :ref:"
 "`doc_customizing_html5_shell`\\ 을 보세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:140
 msgid ""
 "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache "
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
@@ -342,7 +353,7 @@ msgstr ""
 "고 언제든지 ``index.html``\\ 과 같은 이름으로 바꿀 수 있습니다, 이름은 기본적"
 "으로 파일에 의지하지 않습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:138
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:144
 msgid ""
 "The HTML page draws the game at maximum size within the browser window. This "
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
@@ -352,7 +363,7 @@ msgstr ""
 "을 게임의 크기가 있는 ``<iframe>``\\ 에 넣을 수 있습니다, 흔한 웹 게임 호스"
 "팅 사이트에서 쓰는 방식이죠."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:142
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:148
 msgid ""
 "The other exported files are served as they are, next to the ``.html`` file, "
 "names unchanged. The ``.wasm`` file is a binary WebAssembly module "
@@ -369,7 +380,7 @@ msgstr ""
 "플래시 이미지입니다. 기본 HTML 페이지에서는 쓰이지 않지만, :ref:`맞춤 HTML 페"
 "이지 <doc_customizing_html5_shell>`\\ 를 위해 포함됩니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:150
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
 "The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
@@ -379,7 +390,7 @@ msgstr ""
 "stream`\\ 으로 전달됩니다.  ``.wasm`` 파일은 :mimetype:`application/wasm`\\ "
 "으로 전달됩니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:154
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:160
 msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
@@ -387,7 +398,7 @@ msgstr ""
 "WebAssembly 모듈  (``.wasm``)을  :mimetype:`application/wasm`\\ 이외의 MIME "
 "타입으로 전달하면 일부 시작 최적화를 방지할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:158
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid ""
 "Delivering the files with server-side compression is recommended especially "
 "for the ``.pck`` and ``.wasm`` files, which are usually large in size. The "
@@ -398,11 +409,11 @@ msgstr ""
 "큰 사이즈의 파일에 적합합니다. WebAssembly 모듈은 압축을 특히 잘하는데, gzip "
 "압축을 사용하여 원번 크기의 약 4분의 1까지 줄일 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
 msgid "Export options"
 msgstr "내보내기 설정"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:166
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:172
 msgid ""
 "If a runnable web export template is available, a button appears between the "
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
@@ -412,7 +423,7 @@ msgstr ""
 "튼과 *편집 중인 씬 실행* 버튼 사이에 버튼이 나타나 테스트를 위해 빠르게 기본 "
 "브라우저에서 게임을 열 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:176
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
@@ -420,7 +431,7 @@ msgstr ""
 "**맞춤 HTML 셸** 파일에 대한 경로가 주어진다면, 그것이 기본 HTML 페이지 대신 "
 "사용됩니다. :ref:`doc_customizing_html5_shell`\\ 을 참고하세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
 msgid ""
 "**Head Include** is appended into the ``<head>`` element of the generated "
 "HTML page. This allows to, for example, load webfonts and third-party "
@@ -430,11 +441,11 @@ msgstr ""
 "로 웹 폰트나CSS가 포함된 타사 JavaScript API를 불러오거나, JavaScript 코드를 "
 "실행할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:186
 msgid "Calling JavaScript from script"
 msgstr "스크립트에서 JavaScript 호출하기"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:182
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:188
 msgid ""
 "In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
@@ -447,7 +458,7 @@ msgstr ""
 "인수로 가지며 JavaScript 코드로 실행합니다. 이걸로 Godot와 통합될 수 없는 스"
 "크립트 언어를 브라우저와 상호작용할 수 있게됩니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:193
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:199
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
@@ -455,19 +466,19 @@ msgstr ""
 "마지막 JavaScript 명령문의 값은 GDScript 값으로 변환되며 특정 경우에 "
 "``eval()``\\ 에 의해 반환됩니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:202
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr "JavaScript ``number``\\ 는 GDScript에서 :ref:`class_float`\\ 로 반환됨"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:197
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:203
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr "JavaScript ``boolean``\\ 은 GDScript에서 :ref:`class_bool`\\ 로 반환됨"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:198
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:204
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr "JavaScript ``string``\\ GDScript에서 :ref:`class_String`\\ 으로 반환됨"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:199
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
@@ -475,11 +486,11 @@ msgstr ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` 그리고 ``DataView``\\ 는 GDScript"
 "에서 :ref:`class_PoolByteArray`\\ 로 반환됨"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:208
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:214
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr "다른 JavaScript 값은 ``null``\\ 로 반환됩니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:210
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:216
 msgid ""
 "HTML5 export templates may be built without support for the singleton. With "
 "such templates, and on platforms other than HTML5, calling ``JavaScript."
@@ -491,7 +502,7 @@ msgstr ""
 "것입니다. 싱글톤의 유효성은 ``Javascript`` :ref:`기능 태그 "
 "<doc_feature_tags>`\\ 로 확인할 수 있습니다::"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:223
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:229
 msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
@@ -499,7 +510,7 @@ msgstr ""
 "위의 ``my_func3()``\\ 에서 3개의 큰따옴표 ``\"\"\"``\\ 로 둘러싸인 GDScript"
 "의 여러 줄의 문자열은 JavaScript 코드가 읽을 수 있도록 유지할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:226
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:232
 msgid ""
 "The ``eval`` method also accepts a second, optional Boolean argument, which "
 "specifies whether to execute the code in the global execution context, "

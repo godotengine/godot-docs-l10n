@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -699,20 +699,18 @@ msgid "Running a script"
 msgstr "Ejecutar un script"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:280
-#, fuzzy
 msgid ""
 "It is possible to run a simple ``.gd`` script from the command line. This "
 "feature is especially useful in large projects, e.g. for batch conversion of "
 "assets or custom import/export."
 msgstr ""
-"Es posible ejecutar un script.gd simple desde línea de comandos. Esta "
-"función es especialmente útil en proyectos de gran envergadura, para la "
-"conversión por lotes de recursos o la importación/exportación personalizada."
+"Es posible ejecutar un script ``.gd`` desde línea de comandos. Esta función "
+"es especialmente útil en proyectos de gran envergadura, para la conversión "
+"por lotes de recursos o la importación/exportación personalizada."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:284
-#, fuzzy
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
-msgstr "El script debe heredar de SceneTree o MainLoop."
+msgstr "El script debe heredar de ``SceneTree`` o ``MainLoop``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:286
 msgid "Here is a simple example of how it works:"
@@ -723,11 +721,9 @@ msgid "And how to run it:"
 msgstr "Y cómo ejecutarlo:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
-#, fuzzy
 msgid ""
 "If no ``project.godot`` exists at the path, current path is assumed to be "
 "the current working directory (unless ``--path`` is specified)."
 msgstr ""
-"Si no existe el archivo project.godot en la ruta, se asume que la ruta "
-"actual es el directorio de trabajo actual (a menos que se especifique ``-"
-"path``)."
+"Si ``project.godot`` no existe en la ruta, se asume que la ruta actual es el "
+"directorio de trabajo a utilizar (a menos que se especifique ``--path``)."

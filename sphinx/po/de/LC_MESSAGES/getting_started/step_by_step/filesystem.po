@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,10 +32,14 @@ msgid ""
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
+"Ein Dateisystem verwaltet wie Assets gespeichert und auf diese zugegriffen "
+"wird. Ein gut gestaltetes Dateisystem erlaubt außerdem mehreren Entwicklern "
+"kollaborativ dieselben Dateien zu bearbeiten. Godot speichert alle Assets "
+"als Dateien im Dateisystem."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
-msgstr ""
+msgstr "Implementierung"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:17
 msgid ""
@@ -47,6 +51,13 @@ msgid ""
 "resources. For example, a font resource is often bundled together with the "
 "font textures."
 msgstr ""
+"Das Dateisystem speichert Resourcen auf der Festplatte. Alles, vom Script zu "
+"Szenen oder PNG Bildern sind Resourcen für die Engine. Wenn eine Resource "
+"Eigenschaften (Felder) besitzt welche andere Resourcen im Dateisystem "
+"referenzieren so werden diese miteinbezogen. Wenn eine Resource integrierte "
+"Sub-Resourcen besitzt so werden diese Zusammen in einer einzigen Datei "
+"gebündelt gespeichert. Zum Beispiel Schriftarten werden oft mit "
+"dazugehörigen Schrift-Texturen für die Darstellung gebündelt."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
 msgid ""
@@ -54,14 +65,21 @@ msgid ""
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
+"Godots Dateisystem vermeidet die Nutzung von Meta-dateien. Vorhandene "
+"Dateiverwaltungen der Betriebssysteme oder Versionskontrollsysteme (Git, "
+"SVN, Mercurial, Perforce, etc.) sind in der Regel besser als alles was "
+"zusätzlich implementiert werden könnte, also versucht Godot sein bestes gut "
+"mit diesen zusammenzuarbeiten (auch wenn die Verwendung von Metadaten "
+"eigentlich nichts damit zu tun hat)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:28
 msgid "Example of file system contents:"
-msgstr ""
+msgstr "Beispiel von Dateisystem-Inhalten:"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:39
+#, fuzzy
 msgid "project.godot"
-msgstr ""
+msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
 msgid ""
@@ -69,6 +87,11 @@ msgid ""
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
+"Die ``project.godot`` Datei ist die Projektdatei für Godot Projekte und "
+"befindet sich immer im Wurzelverzeichnis eines Projekts. Tatsächlich "
+"definiert der Ort dieser Datei sogar was als das Wurzelverzeichnis für das "
+"Projekt genutzt wird. Dies ist die erste Datei die Godot lokalisiert wenn "
+"ein Projekt geöffnet wird."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
 msgid ""
@@ -76,10 +99,13 @@ msgid ""
 "ini format. Even an empty ``project.godot`` can function as a basic "
 "definition of a blank project."
 msgstr ""
+"Diese Datei beinhaltet die Konfiguration des Projekts in direkter Text-"
+"ausführung unter nutzung des win.ini Formats. selbst eine leere ``project."
+"godot`` datei kann als Basis für ein leeres Projekt dienen."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:50
 msgid "Path delimiter"
-msgstr ""
+msgstr "Pfad-Trennzeichen"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
 msgid ""
@@ -88,10 +114,14 @@ msgid ""
 "``C:\\project\\project.godot`` needs to be typed as ``C:/project/project."
 "godot``."
 msgstr ""
+"Godot unterstützt lediglich ``/`` als Pfad-Trennzeichen. Dies wird aus "
+"Portabilitätsgründen so gehalten, denn alle Betriebssysteme unterstützen "
+"dies, sogar Windows, also muss ein Pfad wie ``C:project\\project.godot`` als "
+"``C:/project/project.godot`` angegeben werden."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:58
 msgid "Resource path"
-msgstr ""
+msgstr "Resourcen-Pfad"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:60
 msgid ""
@@ -99,12 +129,18 @@ msgid ""
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
 "`` was created."
 msgstr ""
+"Beim Zugriff auf eine Resource kann das Dateisystem-Layout des "
+"Betriebssystems umständlich und unter Umständen nicht portabel sein. Um "
+"dieses Problem zu umgehen wurde der Spezialpfad ``res://`` geschaffen."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
 msgid ""
 "The path ``res://`` will always point at the project root (where ``project."
 "godot`` is located, so ``res://project.godot`` is always valid)."
 msgstr ""
+"Der Pfad ``res://`` zeigt immer zur Wurzel des Projektverzeichnisses (wo "
+"``project.godot`` zu finden ist, also ist ``res://project.godot`` immer "
+"gültig)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
 msgid ""
@@ -113,10 +149,15 @@ msgid ""
 "phones or consoles, or running from DVD), the file system will become read-"
 "only and writing will no longer be permitted."
 msgstr ""
+"Das Dateisystem ist nur frei für Lese- und Schreibzugriffe wenn ein Projekt "
+"lokal im Editor ausgeführt wird. In Exporten (herausgeschriebenen "
+"Anwendungen) oder bei de Ausführung auf unterschiedlichen Geräten (wie "
+"Mobilgeräten, Konsolen oder schreibgeschützen Medien) wird das schreiben ins "
+"Dateisystem gesperrt und nur Lesen ist möglich."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:74
 msgid "User path"
-msgstr ""
+msgstr "Nutzer-Pfad"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
 msgid ""
@@ -126,10 +167,16 @@ msgid ""
 "differently depending on the OS the project is running on. Local path "
 "resolution is further explained in :ref:`doc_data_paths`."
 msgstr ""
+"Schreiben ins Dateisystem wird dennoch oft benötigt, z.B. um Spielstände "
+"abzulegen oder Inhalts-Pakete herunterzuladen. Hierzu stellt die Engine "
+"einen Spezialpfad bereit: ``user://``, welcher immer beschreibbar ist. "
+"Dieser Pfad wird unter diversen Betriebssystemen zu unterschiedlichen "
+"tatsächlichen Pfaden aufgelöst. Lokale Pfadauflösung wird tiefer beschrieben "
+"in :ref: `doc_data_paths`."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid "Host file system"
-msgstr ""
+msgstr "Host Dateisystem"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:85
 msgid ""
@@ -138,10 +185,15 @@ msgid ""
 "on all platforms. However, using host file system paths can be useful when "
 "writing development tools in Godot."
 msgstr ""
+"Alternativ können auch Host-Dateisystempfade genutzt werden, was allerdings "
+"nicht für herausgeschrieben Anwendungen empfohlen wird, da die Korrekte "
+"Funktion ihrere Nutzung nicht auf allen Platformen garantiert werden kann. "
+"Dennoch kann es nützlich sein diese zur Entwicklung von Werkzeugen (tools) "
+"in Godot zu nutzen."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid "Drawbacks"
-msgstr ""
+msgstr "Nachteile"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:93
 msgid ""
@@ -151,6 +203,11 @@ msgid ""
 "These references will have to be re-defined to point at the new asset "
 "location."
 msgstr ""
+"Es existieren auch Nachteile für diese simple Dateisystem-Gestaltung. Das "
+"erste Problem ist dass Verschieben von Assets (Umbenennen oder von einem "
+"Ordner in einen anderen innerhalb des Projekts verlegen) existierende "
+"Referenzen ungültig macht. Diese Referenzen müssen korrigiert werden so dass "
+"sie zum neuen Ort zeigen."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:98
 msgid ""
@@ -159,6 +216,12 @@ msgid ""
 "dependencies will have to be fixed manually (Godot detects this and helps "
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
+"Um dies zu vermeiden sollten alle Aktionen wie Verschieben, Löschen oder "
+"Umbenennen innerhalb Godots (im Dateisystem-Dock) ausgeführt werden. Datein "
+"sollten nicht außerhalb Godots verschoben werden (Falls dies doch mal "
+"vorkommt wird Godot beim Beheben der Probleme versuchen behilflich zu sein. "
+"Aber Garantien können nicht gegeben werden, also warum den schweren weg "
+"gehen?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
 msgid ""
@@ -169,6 +232,13 @@ msgid ""
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
+"Weiterhin ist es so, dass unter Windows und macOS Dateien und Pfade in Groß- "
+"und Kleinschreibung unterschieden werden. Wenn Entwickler auf einem dieser "
+"Systeme eine Datei als ``myfile.PNG`` abspeichert und diese aber als "
+"``myfile.png`` referenziert wird dies vielleicht unter deren Betriebssystem "
+"funktionieren, aber nicht unter z.B. Linux, Android etc. Dies kann auch auf "
+"exportierte Binärdateien zutreffen, welche ein komprimiertes Format nutzen "
+"um Dateien unterzubringen."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:109
 msgid ""
@@ -176,3 +246,6 @@ msgid ""
 "files when working with Godot. One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
+"Es wird empfohlen, dass Teams klare Namenskonventionen zur Arbeit in Godot "
+"festlegen. Eine simple, einfach einzuhaltende Regel ist Pfade und Dateinamen "
+"allesamt in Kleinschreibung zu halten."

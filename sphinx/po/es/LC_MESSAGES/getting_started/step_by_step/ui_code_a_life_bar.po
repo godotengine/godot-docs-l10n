@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,12 +68,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid ":doc:`ui_main_menu`"
-msgstr ""
+msgstr ":doc:`ui_main_menu`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
-#, fuzzy
 msgid ":doc:`ui_game_user_interface`"
-msgstr ":ref:`doc_godot_interfaces`"
+msgstr ":doc:`ui_game_user_interface`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -1055,7 +1054,6 @@ msgstr ""
 "``Tween``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:645
-#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
@@ -1063,8 +1061,7 @@ msgid ""
 msgstr ""
 "Esta vez cambiaremos la propiedad ``modulate`` y la tendremos animada de "
 "``start_color`` a ``end_color``. La duración es de un segundo, con una "
-"transición lineal. Aquí también, debido a que la transición es lineal, el "
-"easing no importa. Aquí está el método completo ``_on_Player_died``:"
+"transición lineal. Aquí está el método completo ``_on_Player_died``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:669
 msgid "And that is it. You may now play the game to see the final result!"

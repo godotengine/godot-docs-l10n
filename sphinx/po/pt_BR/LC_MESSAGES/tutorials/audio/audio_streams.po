@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:4
 msgid "Audio streams"
-msgstr ""
+msgstr "Fluxos de áudio"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:7
 msgid "Introduction"
@@ -31,6 +31,9 @@ msgid ""
 "each bus via an AudioStreamPlayer node. There are different kinds of "
 "AudioStreamPlayers. Each one loads an AudioStream and plays it back."
 msgstr ""
+"Como você já deve ter lido em :ref: `doc_audio_buses`, um som é enviado para "
+"cada barramento a partir de um nó AudioStreamPlayer. Existem diferentes "
+"tipos de AudioStreamPlayers. Cada um carrega um AudioStream e o reproduz."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:14
 msgid "AudioStream"
@@ -43,6 +46,10 @@ msgid ""
 "files such as WAV (``.wav``) or Ogg Vorbis (``.ogg``) can be loaded as "
 "AudioStreams and placed inside an AudioStreamPlayer."
 msgstr ""
+"Um fluxo de áudio é um objeto abstrato que emite som. O som pode vir de "
+"vários lugares, mas é mais comum ser carregado do sistema de arquivos. "
+"Arquivos de áudio como WAV (``.wav``) ou Ogg Vorbis (``.ogg``) podem ser "
+"carregados como AudioStreams e colocados dentro de um AudioStreamPlayer."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:21
 msgid ""
@@ -177,12 +184,12 @@ msgstr ""
 "Ambos têm essa propriedade, que deve ser ativada manualmente:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:111
-#, fuzzy
 msgid ""
 "Enable it by setting it depending on how objects will be moved: use **Idle** "
 "for objects moved using ``_process``, or **Physics** for objects moved using "
 "``_physics_process``. The tracking will happen automatically."
 msgstr ""
-"Basta habilitá-lo, definindo-o dependendo de como os objetos serão movidos "
-"(seja na etapa regular *process* ou *physics_process*) e o rastreamento "
-"ocorrerá automaticamente!"
+"Basta habilitá-lo, definindo-o dependendo de como os objetos serão movidos : "
+"Use **idle** para objetos movidos usando``_process``, ou **Physics** para "
+"objetos movidos usando ``_physics_process``. O rastreamento ocorrerá "
+"automaticamente."

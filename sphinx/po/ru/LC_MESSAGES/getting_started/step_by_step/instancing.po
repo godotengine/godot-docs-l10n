@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -167,23 +167,15 @@ msgid "Editing instances"
 msgstr "Редактирование экземпляров"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
+#, fuzzy
 msgid ""
-"Open the ``Ball`` scene and add a ``PhysicsMaterial`` by opening the "
-"\"Physics Material Override\" dropdown in the Inspector dock and selecting "
-"\"New PhysicsMaterial\"."
-msgstr ""
-"Откройте сцену ``Ball`` и добавьте ``PhysicsMaterial`` нажав на стрелку и "
-"выбрав пункт \"New PhysicsMaterial\"."
-
-#: ../../docs/getting_started/step_by_step/instancing.rst:99
-msgid ""
-"Then, expand the material by clicking on it, and set the ``Bounce`` property "
-"to ``1``."
+"Open the ``Ball`` scene, expand the ``PhysicsMaterial`` by clicking on it, "
+"and set the ``Bounce`` property to ``1``."
 msgstr ""
 "Затем раскройте параметры материала и установите параметр ``Bounce`` на "
 "``1``."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:104
+#: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
 "Press \"Play\" and notice that all of the instanced balls are now much more "
 "bouncy. Because the instanced balls are based on the saved scene, changes to "
@@ -193,7 +185,7 @@ msgstr ""
 "более упругие. Так как эти шары основаны на сохраненной сцене, изменения "
 "этой сцены подействуют на другие экземпляры шаров."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:108
+#: ../../docs/getting_started/step_by_step/instancing.rst:102
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
@@ -208,7 +200,7 @@ msgstr ""
 "на стрелку вниз и выберите пункт \"Сделать Уникальным (Make Unique)\". "
 "Установите для параметра``Bounce`` значение ``1`` и нажмите \"Играть\"."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:116
+#: ../../docs/getting_started/step_by_step/instancing.rst:110
 msgid ""
 "Notice that a grey \"revert\" button appears next to the adjusted property. "
 "When this button is present, it means you modified a property in the "
@@ -224,11 +216,11 @@ msgstr ""
 "значение останется. Нажатие кнопки возврата восстановит старое значение "
 "свойства, как в сохраненной сцене."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:124
+#: ../../docs/getting_started/step_by_step/instancing.rst:118
 msgid "Conclusion"
 msgstr "Вывод"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:126
+#: ../../docs/getting_started/step_by_step/instancing.rst:120
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "

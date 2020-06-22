@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:33
 msgid "SceneTree"
-msgstr ""
+msgstr "Szenen-Baum (SceneTree)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:7
 msgid "Introduction"
@@ -32,10 +32,13 @@ msgid ""
 "Scenes are collections of nodes. They become active once they enter the "
 "*scene tree*."
 msgstr ""
+"In vorangegangen Tutorials drehte sich alles um das Konzept der Nodes. "
+"Szenen sind Sammlungen von Nodes. Sie werden aktiv sobald sie in den Szenen-"
+"Baum (*scene tree*) eingefügt werden."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:14
 msgid "MainLoop"
-msgstr ""
+msgstr "MainLoop"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -44,6 +47,9 @@ msgid ""
 "Afterwards, all drivers, servers, scripting languages, scene system, etc are "
 "loaded."
 msgstr ""
+"Godot arbeitet intern wie folgt. Eine OS-Klasse (:ref:`OS<class_OS>`) ist "
+"die einzige Instanz die zu Begin ausgeführt wird. Darauf folgend werden "
+"Treiber, Server, Scriptsprachen, Szenen-System etc. geladen."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:21
 msgid ""
@@ -52,6 +58,10 @@ msgid ""
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
+"Sobald die Initialisierung abgeschlossen ist, wird :ref:`OS<class_OS>` ein :"
+"ref:`MainLoop<class_MainLoop>` übergeben um ausgeführt zu werden. Bis zu "
+"diesem Punkt ist alles interner Ablauf (siehe main/main.cpp im source code "
+"falls Interesse besteht die Internen Abläufe nachzuvollziehen)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:27
 msgid ""
@@ -60,6 +70,11 @@ msgid ""
 "(physics-synchronized callback), and input. Again, this is low level and "
 "when making games in Godot, writing your own MainLoop seldom makes sense."
 msgstr ""
+"Die Nutzer-Anwendung, oder das Spiel, startet im MainLoop. Diese Klasse "
+"definiert Methoden für die Initialisierung, Idle (Bild-synchrone "
+"Rückrufmethode), fixed (Physik-synchrone Rückrufmethode) und Eingabe "
+"(input). Dies sind tief gehende Funktionen, welche in der typischen "
+"Erstellung eines Spiels nur sehr selten verwendet werden."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
@@ -83,6 +98,10 @@ msgid ""
 "<class_SceneTree>`. This is automatically instanced and set when running a "
 "scene, no need to do any extra work."
 msgstr ""
+"Das Szenen-System stellt eine Implemetierung des MainLoops dar (:ref:"
+"`SceneTree <class_SceneTree>`) welcher OS so übergeben wird. Dies geschieht "
+"standardmäßig automatisch sobald eine Szene ausgeführt wird und erfordert "
+"kein manuelles Eingreifen."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
@@ -98,18 +117,25 @@ msgid ""
 "added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)."
 msgstr ""
+"Es beinhaltet die Wurzel :ref:`Viewport<class_Viewport>`, zu welcher eine "
+"Szene hinzugefügt wird, als Kind, welches beim ersten Öffnen Teil des Szenen-"
+"Baums (*Scene Tree*) wird."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:52
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
 "in a group or get a list of them."
 msgstr ""
+"Es enthält Informationen zu Gruppen und hat Möglichkeiten Node-Methoden "
+"einer Gruppe aufzurufen oder eine Liste dieser zu erstellen."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:54
 msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
 msgstr ""
+"Es beinhaltet einige Funktionalität zum Globalen Zustand, wie dem Pausieren "
+"oder Beenden des Prozesses."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
 msgid ""
@@ -117,16 +143,22 @@ msgid ""
 "<class_SceneTree>` singleton can be obtained by calling :ref:`Node."
 "get_tree() <class_Node_method_get_tree>`."
 msgstr ""
+"Wenn ein Node teil des Szenen-Baums (Scene Tree) ist, kann auf den Szenen-"
+"Baum (:ref:`SceneTree<class_SceneTree>`) als Singleton über :ref:`Node."
+"get_tree() <class_Node_method_get_tree>`zugegriffen werden."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:63
 msgid "Root viewport"
-msgstr ""
+msgstr "Wurzel Fenster (Viewport)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
 msgid ""
 "The root :ref:`Viewport <class_Viewport>` is always at the top of the scene. "
 "From a node, it can be obtained in two different ways:"
 msgstr ""
+"Das Wurzel-Fenster (:ref:`Viewport <class_Viewport>`) ist immer am oberen "
+"Ende der Szene. Durch einen Node kann über folgende Wege auf es zugegriffen "
+"werden:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:80
 msgid ""
@@ -135,6 +167,10 @@ msgid ""
 "sense that the top of all nodes is always a node of this type otherwise "
 "nothing would be seen."
 msgstr ""
+"Dieser Node enthält das Haupt-Fenster (Viewport - :ref:`Viewport "
+"<class_Viewport>`). Alles was diesem untergeordnet ist wird standardmäßig "
+"dargestellt, so macht es Sinn das die Wurzel aller Nodes immer ein Node "
+"dieses Typs ist, andererseits ist nichts sichtbar."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:85
 msgid ""
@@ -142,16 +178,21 @@ msgid ""
 "and such), this one is the only one that is never created by the user. It's "
 "created automatically inside SceneTree."
 msgstr ""
+"Wärend andere Fenster (Viewport) in der Szene erstellt werden können (für "
+"Split-screens z.B.), ist dieses das einzige das nicht vom Nutzer erstellt "
+"wird. Es wird automatisch durch den Szenen-Baum (SceneTree) bereitgestellt."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:90
 msgid "Scene tree"
-msgstr ""
+msgstr "Szenen-Baum (SceneTree)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:92
 msgid ""
 "When a node is connected, directly or indirectly, to the root viewport, it "
 "becomes part of the *scene tree*."
 msgstr ""
+"Wenn ein Node eingebunden wird, direkt oder indirekt, in das Wurzel-Fenster "
+"(Viewport) wird es Teil des Szenen-Baums (*SceneTree*)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:95
 msgid ""

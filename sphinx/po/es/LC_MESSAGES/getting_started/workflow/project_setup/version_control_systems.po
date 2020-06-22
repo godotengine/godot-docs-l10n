@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:4
 msgid "Version Control Systems"
-msgstr ""
+msgstr "Sistemas de Control de Versiones"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:7
 msgid "Introduction"
@@ -33,11 +33,16 @@ msgid ""
 "you are using. VCS can be setup or shut down in the editor under **Project > "
 "Version Control**."
 msgstr ""
+"Godot trata de ser amigable a los VCS (siglas en inglés de sistema de "
+"control de versiones) y en general crea archivos legibles y combinables. "
+"Godot además soporta el uso de sistemas de control de versiones desde el "
+"editor mismo, sin embargo, VCS en el editor requiere de un plugin específico "
+"para el VCS que se está usando. El VCS puede ser configurado o detenido en "
+"el editor, dentro de **Project > Version Control**."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:17
-#, fuzzy
 msgid "Official Git plugin"
-msgstr "Inicializando el plugin"
+msgstr "Plugin Git oficial"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:19
 msgid ""
@@ -47,26 +52,38 @@ msgid ""
 "Documentation on how to use the Git plugin can be found `here <https://"
 "github.com/godotengine/godot-git-plugin/wiki>`__."
 msgstr ""
+"El uso de Git desde el editor está soportado con un plugin oficial. Puedes "
+"encontrar las versiones más recientes `aquí <https://github.com/godotengine/"
+"godot-git-plugin/releases>`__ (no está disponible en la assets library). La "
+"documentación sobre cómo usar el plugin Git está `aquí <https://github.com/"
+"godotengine/godot-git-plugin/wiki>`__."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:27
 msgid "Files to exclude from VCS"
-msgstr ""
+msgstr "Archivos a excluir del VCS"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:29
 msgid "There are some folders Godot creates you should have your VCS ignore:"
 msgstr ""
+"Existe algunas carpetas creadas por Godot que tienes que hacer que el VCS "
+"ignore:"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:31
 msgid ""
 "``.import/``: This folder stores all the files it imports automatically "
 "based on your source assets and their import flags."
 msgstr ""
+"``.import/``: Esta carpeta contiene todos los archivos que importa "
+"automaticament basados en tus assets de origen y sus configuraciones de "
+"importación."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:33
 msgid ""
 "``*.translation``: These files are binary imported translations generated "
 "from CSV files."
 msgstr ""
+"``*.translation``: Esos son archivos binarios de traducciones importadas "
+"generadas desde archivos CSV."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:34
 msgid ""
@@ -74,9 +91,14 @@ msgid ""
 "project, including sensitive information such as Android keystore "
 "credentials."
 msgstr ""
+"``export_presets.cfg``: Este archivo contiene todas las configuraciones de "
+"exportación del proyecto, incluyendo información sensible como las "
+"credenciales de Android keystore."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:36
 msgid ""
 "``.mono/``: This folder stores automatically-generated Mono files. It only "
 "exists in projects that use the Mono version of Godot."
 msgstr ""
+"``.mono/``: Esta carpeta guarda archivos Mono generados automáticamente. "
+"Sólo existe en la versión Mono de Godot."

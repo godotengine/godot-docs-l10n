@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,6 +50,11 @@ msgid ""
 "*Material* property of the node using the mesh (such as a MeshInstance "
 "node), or in the *Material Override* property of the node using the mesh."
 msgstr ""
+"Hay tres maneras de añadir un \"SpatialMaterial\" a un objeto. Se puede "
+"añadir en la propiedad *Material* de la malla. Se puede añadir en la "
+"propiedad *Material* del nodo que utiliza la malla (como un nodo "
+"MeshInstance), o en la propiedad *Material Override* del nodo que utiliza la "
+"malla."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:22
 msgid ""
@@ -61,6 +66,12 @@ msgid ""
 "also override the regular material property of the node and the material "
 "property of the mesh."
 msgstr ""
+"Si se añade un material a la propia malla, cada vez que se utilice esa malla "
+"tendrá ese material. Si se añade un material al nodo usando la malla, el "
+"material sólo será usado por ese nodo, también anulará la propiedad de "
+"material de la malla. Si se añade un material en la propiedad *Material "
+"Override* del nodo, sólo será utilizado por ese nodo. También anulará la "
+"propiedad material regular del nodo y la propiedad material de la malla."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:30
 msgid "Flags"
@@ -124,7 +135,7 @@ msgstr "Activar el desvanecimiento de la distancia o la proximidad"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:55
 msgid "Use Shadow to Opacity"
-msgstr ""
+msgstr "Usar la sombra para la opacidad"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:57
 msgid ""
@@ -132,6 +143,9 @@ msgid ""
 "areas are transparent. Useful for overlaying shadows onto a camera feed in "
 "AR."
 msgstr ""
+"La iluminación modifica el alfa para que las áreas sombreadas sean opacas y "
+"las no sombreadas sean transparentes. Útil para superponer sombras a una "
+"cámara en AR."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:61
 msgid "Unshaded"
@@ -289,12 +303,14 @@ msgstr ""
 "sería lo iluminaría."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:137
+#, fuzzy
 msgid "Ensure Correct Normals"
-msgstr ""
+msgstr "Asegurar los estándares correctos"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:139
+#, fuzzy
 msgid "Fixes normals when non-uniform scaling is used."
-msgstr ""
+msgstr "Fija los niveles normales cuando se utiliza una escala no uniforme."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:142
 msgid "Vertex Color"
@@ -614,7 +630,7 @@ msgstr "Billboard Keep Scale"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:272
 msgid "Enables scaling a mesh in billboard mode."
-msgstr ""
+msgstr "Permite escalar una malla en modo cartelera."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:275
 msgid "Grow"
@@ -986,7 +1002,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:477
 msgid "There are several settings that control how detail is used."
-msgstr ""
+msgstr "Hay varios ajustes que controlan el uso de los detalles."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:479
 msgid ""
@@ -995,11 +1011,17 @@ msgid ""
 "is for the regular material textures, different shades of gray are for "
 "partial blending of the material textures and detail textures."
 msgstr ""
+"Máscara: La máscara de detalle es una imagen en blanco y negro que se "
+"utiliza para controlar dónde tiene lugar la mezcla en una textura. El blanco "
+"es para las texturas de detalle, el negro es para las texturas materiales "
+"regulares, los diferentes tonos de gris son para la mezcla parcial de las "
+"texturas materiales y las texturas de detalle."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:484
 msgid ""
 "Blend Mode: These four modes control how the textures are blended together."
 msgstr ""
+"Modo de fusión: Estos cuatro modos controlan cómo se mezclan las texturas."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:486
 msgid ""
@@ -1007,6 +1029,9 @@ msgid ""
 "material texture, at white, only show the detail texture. Values of gray "
 "create a smooth blend between the two."
 msgstr ""
+"Mezclar: Combina los valores de los píxeles de ambas texturas. En negro, "
+"sólo muestra la textura del material, en blanco, sólo muestra la textura del "
+"detalle. Los valores de gris crean una mezcla suave entre los dos."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:490
 msgid ""
@@ -1014,6 +1039,10 @@ msgid ""
 "textures are completely mixed at white parts of a mask and not at gray "
 "parts. The original texture is mostly unchanged at black"
 msgstr ""
+"Añade: Añade los valores de los píxeles de una textura con la otra. A "
+"diferencia del modo de mezcla, ambas texturas se mezclan completamente en "
+"las partes blancas de una máscara y no en las partes grises. La textura "
+"original es mayormente sin cambios en el negro"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:494
 msgid ""
@@ -1022,18 +1051,26 @@ msgid ""
 "subtraction in black parts, gray parts being different levels of subtraction "
 "based on the exact texture."
 msgstr ""
+"Sustracción: resta los valores de los píxeles de una textura con la otra. La "
+"segunda textura se sustrae completamente en las partes blancas de una "
+"máscara con sólo una pequeña sustracción en las partes negras, siendo las "
+"partes grises diferentes niveles de sustracción basados en la textura exacta."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:499
 msgid ""
 "Mul: Multiplies the RGB channel numbers for each pixel from the top texture "
 "with the values for the corresponding pixel from the bottom texture."
 msgstr ""
+"Mul: Multiplica los números de canal RGB de cada píxel de la textura "
+"superior por los valores del píxel correspondiente de la textura inferior."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:502
 msgid ""
 "Albedo: This is where you put an albedo texture you want to blend. If "
 "nothing is in this slot it will be interpreted as white by default."
 msgstr ""
+"Albedo: Aquí es donde pones una textura de albedo que quieres mezclar. Si no "
+"hay nada en esta ranura se interpretará como blanco por defecto."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:505
 msgid ""
@@ -1041,6 +1078,9 @@ msgid ""
 "is in this slot it will be interpreted as a flat normal map. This can still "
 "be used even if the material does not have normal map enabled."
 msgstr ""
+"Normal: Aquí es donde pones una textura normal que quieres mezclar. Si no "
+"hay nada en esta ranura se interpretará como un mapa plano normal. Esto "
+"puede ser usado incluso si el material no tiene el mapa normal habilitado."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:510
 msgid "UV1 and UV2"

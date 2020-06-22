@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,210 +22,158 @@ msgid "Android in-app purchases"
 msgstr "Androidのアプリ内購入"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:6
+msgid ""
+"Godot offers a first-party ``GodotGooglePlayBilling`` Android plugin since "
+"Godot 3.2.2. The new plugin uses the `Google Play Billing library <https://"
+"developer.android.com/google/play/billing>`__ instead of the now deprecated "
+"AIDL IAP implementation."
+msgstr ""
+
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:10
 #, fuzzy
 msgid ""
-"Godot Engine has integrated GooglePaymentsV3 module with which we can "
-"implement in-app purchases in our game."
+"If you learn better by looking at an example, you can find the demo project "
+"`here <https://github.com/godotengine/godot-demo-projects/tree/master/misc/"
+"android_iap>`__."
 msgstr ""
-"GodotエンジンにはGooglePaymentsV3モジュールが統合されており、ゲーム内でアプリ"
-"内購入を実装できます。"
+"メイン画面プラグインの機能のより完全な例を見たい場合は、ここで2.5Dデモプロ"
+"ジェクトをチェックしてください: https://github.com/godotengine/godot-demo-"
+"projects/tree/master/misc/2.5d"
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:8
-#, fuzzy
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:15
+msgid "Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:17
 msgid ""
-"The `Godot demo projects repository <https://github.com/godotengine/godot-"
-"demo-projects>`__ has an `android_iap <https://github.com/godotengine/godot-"
-"demo-projects/tree/master/misc/android_iap>`__ example project. It includes "
-"a GDScript interface for Android IAPs."
+"The new ``GodotGooglePlayBilling`` API is not compatible with its "
+"predecessor ``GodotPaymentsV3``."
 msgstr ""
-"これがどのように機能するかの例については、デモプロジェクト `3D in 2D "
-"<https://github.com/godotengine/godot-demo-projects/tree/master/"
-"viewport/3d_in_2d>`_ および `2D in 3D <https://github.com/godotengine/godot-"
-"demo-projects/tree/master/viewport/2d_in_3d> `_ があります。"
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:12
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:20
 #, fuzzy
-msgid "Find the ``iap.gd`` script in:"
-msgstr "iap.gdスクリプトを探す"
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:18
-#, fuzzy
-msgid ""
-"Copy it to your project, then open the Project Settings, add it to the "
-"AutoLoad list and name it as IAP so that we can reference it anywhere in the "
-"game."
-msgstr ""
-"Autoloadリストに追加し、IAPという名前を付けて、ゲーム内のどこからでも参照でき"
-"るようにします。"
+msgid "Changes"
+msgstr "レベル(舞台)の変更"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:22
-msgid "Getting the product details"
-msgstr "製品の詳細を取得する"
+msgid ""
+"You need to enable the Custom Build option in your Android export settings "
+"and install the ``GodotGooglePlayBilling`` plugin manually (see below for "
+"details)"
+msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:24
+msgid ""
+"All purchases have to be acknowledged by your app. This is a `requirement "
+"from Google <https://developer.android.com/google/play/billing/"
+"integrate#process>`__. Purchases that are not acknowledged by your app will "
+"be refunded."
+msgstr ""
+
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:27
 #, fuzzy
-msgid ""
-"When starting our game, we will need to get the item details from Google "
-"such as the product price, description, localized price string, etc."
-msgstr ""
-"ゲームを始める際には、商品価格、説明、ローカライズされた価格文字列など、"
-"Googleから商品の詳細を取得する必要があります。"
+msgid "Support for subscriptions"
+msgstr "インポートオプション"
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:41
-msgid ""
-"We can use the IAP details to display the title, price and/or description on "
-"our shop scene."
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:28
+msgid "Signals (no polling or callback objects)"
 msgstr ""
-"IAPの詳細を使用して、ショップシーンのタイトル、価格、説明を表示できます。"
 
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:32
+msgid "Usage"
+msgstr "使用法"
+
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:35
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:44
-msgid "Check if user purchased an item"
-msgstr "ユーザーがアイテムを購入したかどうかを確認する"
+msgid "Getting started"
+msgstr "入門"
+
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:37
+msgid ""
+"If not already done, make sure you have enabled and successfully set up :ref:"
+"`Android Custom Builds <doc_android_custom_build>`. Grab "
+"the``GodotGooglePlayBilling`` plugin binary and config from the `releases "
+"page <https://github.com/godotengine/godot-google-play-billing/releases>`__ "
+"and put both into `res://android/plugins`. The plugin should now show up in "
+"the Android export settings, where you can enable it."
+msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:46
-#, fuzzy
 msgid ""
-"When starting our game, we can check if the user has purchased any product. "
-"**You should do this only after 2/3 seconds after your game is loaded.** If "
-"we do this as the first thing when the game is launched, IAPs might not be "
-"initialized and our game will crash on start."
+"To use the ``GodotGooglePlayBilling`` API you first have to get the "
+"``GodotGooglePlayBilling`` singleton and start the connection:"
 msgstr ""
-"ゲームを開始するときに、ユーザーが製品を購入したかどうかを確認できます。ゲー"
-"ムをロードした後、2/3秒後にのみこれを行う必要があります。ゲームの起動時にこれ"
-"を最初に行うと、IAPが初期化されない可能性があり、開始時にゲームがクラッシュし"
-"ます。"
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:59
-#, fuzzy
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:75
 msgid ""
-"The Google IAP policy says the game should restore the user's purchases if "
-"the user replaces their phone or reinstalls the same app. We can use the "
-"above code to check what products the user has purchased and we can make our "
-"game respond accordingly."
+"All API methods only work if the API is connected. You can use ``payment."
+"isReady()`` to check the connection status."
 msgstr ""
-"Google IAPポリシーでは、ユーザーが携帯電話を交換するか、同じアプリを再インス"
-"トールした場合、ゲームはユーザーの購入を復元する必要があるとしています。上記"
-"のコードを使用して、ユーザーが購入した製品を確認し、それに応じてゲームを応答"
-"させることができます。"
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:62
-msgid "Simple Purchase"
-msgstr "簡単な購入"
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:64
-msgid "We can put this purchase logic on a product's buy button."
-msgstr "この購入ロジックを製品の購入ボタンに配置できます。"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:79
-msgid ""
-"We can also implement other signals for the purchase flow and improve the "
-"user experience as you needed."
+msgid "Querying available items"
 msgstr ""
-"また、購入フローに他のシグナルを実装し、必要に応じてユーザーエクスペリエンス"
-"を向上させることもできます。"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:81
-#, fuzzy
-msgid "``purchase_fail``: When the purchase is failed due to any reason."
-msgstr "``purchase_fail`` - 何らかの理由で購入が失敗したとき"
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:82
-#, fuzzy
-msgid "``purchase_cancel``: When the user cancels the purchase."
-msgstr "``purchase_cancel`` - ユーザーが購入をキャンセルしたとき"
+msgid ""
+"As soon as the API is connected, you can query SKUs using "
+"``querySkuDetails``."
+msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:83
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:115
 #, fuzzy
-msgid "``purchase_owned``: When the user already bought the product earlier."
-msgstr "``purchase_owned`` - ユーザーが既に以前に製品を購入している場合"
+msgid "Full example:"
+msgstr "例:"
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:86
-msgid "Consumables and Non-Consumables"
-msgstr "消耗品と非消耗品"
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:88
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:96
 #, fuzzy
-msgid "There are two types of products - consumables and non-consumables:"
-msgstr "Godotに必要なアイコンには2つのタイプがあります:"
+msgid "Purchase an item"
+msgstr "ユーザーがアイテムを購入したかどうかを確認する"
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:90
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:98
 msgid ""
-"**Consumables** are purchased and used, for example, healing potions which "
-"can be purchased again and again."
+"To initiate the purchase flow for an item, call ``purchase``. You **must** "
+"query the SKU details for an item before you can initiate the purchase flow "
+"for it."
 msgstr ""
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:91
-msgid "**Non-consumables** are one time purchases, for example, level packs."
-msgstr ""
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:93
-msgid ""
-"Google doesn't have this separation in their dashboard. If our product is a "
-"consumable, and if a user has purchased it, it will not be available for "
-"purchase until it is consumed. So we should call the consume method for our "
-"consumables and don't call consume for your non-consumables."
-msgstr ""
-"Googleでは、ダッシュボードにこの分別はありません。提供する商品が消耗品であ"
-"り、ユーザーがそれを購入した場合、それが消費されるまで新たに購入できません。"
-"したがって、私たちは消耗品に対して消費メソッドを呼び出し、非消耗品に対しては"
-"消費メソッドを呼び出さないでください。"
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:103
-msgid ""
-"If our game has only consumables, we don't have to do this. We can set it to "
-"consume the item automatically after a purchase."
-msgstr ""
-"ゲームに消耗品しかない場合、これを行う必要はありません。購入後にアイテムを自"
-"動的に消費するように設定できます。"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:109
-msgid "If our game has only non-consumables, we can"
-msgstr "ゲームに非消耗品のみが含まれている場合、つぎのようにできます"
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:115
-msgid "We should set the auto consume value only once when the game starts."
-msgstr ""
-"ゲームの開始時に1回だけ自動消費(auto consume)の値を設定する必要があります。"
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:118
-msgid "Testing"
-msgstr "テストする"
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:120
 #, fuzzy
-msgid ""
-"If we add a Gmail ID as a tester in the Google Play dashboard, that tester "
-"can purchase items and they will not be charged. Another way to test IAP is "
-"using redeem codes generated by us for our game because the purchase flow is "
-"the same."
-msgstr ""
-"GoogleダッシュボードでテスターとしてGmail IDを追加すると、そのテスターはアイ"
-"テムを購入でき、課金されません。 IAPをテストする別の方法は、購入フローが同じ"
-"であるため、ゲーム用に生成されたコードを使用することです。"
+msgid "Check if the user purchased an item"
+msgstr "ユーザーがアイテムを購入したかどうかを確認する"
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:122
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:111
+msgid ""
+"To get all purchases, call ``queryPurchases``. Unlike most of the other "
+"functions, ``queryPurchases`` is a synchronous operation and returns a :ref:"
+"`Dictionary <class_Dictionary>` with a status code and either an array of "
+"purchases or an error message."
+msgstr ""
+
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:129
 #, fuzzy
+msgid "Consumables"
+msgstr "定数"
+
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:131
 msgid ""
-"Third way of testing is in development side. If we put the product ids as "
-"shown below, we will get a static fixed response according to the product "
-"ID. This is a quick way of testing things before going to the dashboard."
+"If your in-app item is not a one-time purchase but a consumable item (e.g. "
+"coins) which can be purchased multiple times, you can consume an item by "
+"calling ``consumePurchase`` with a purchase token. Call ``queryPurchases`` "
+"to get the purchase token. Calling ``consumePurchase`` automatically "
+"acknowledges a purchase."
 msgstr ""
-"第3のテスト方法は開発側です。以下に示すように、製品IDを入力すると、製品IDに基"
-"づいて静的な固定応答が返されます。これは、ダッシュボードに移動する前に、簡単"
-"にテストする方法です。"
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:124
-msgid "android.test.purchased"
-msgstr "android.test.purchased"
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:148
+#, fuzzy
+msgid "Subscriptions"
+msgstr "説明"
 
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:125
-msgid "android.test.canceled"
-msgstr "android.test.canceled"
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:126
-msgid "android.test.refunded"
-msgstr "android.test.refunded"
-
-#: ../../docs/tutorials/platform/android_in_app_purchases.rst:127
-msgid "android.test.item_unavailable"
-msgstr "android.test.item_unavailable"
+#: ../../docs/tutorials/platform/android_in_app_purchases.rst:150
+msgid ""
+"Subscriptions don't work much different from regular in-app items. Just use "
+"``\"subs\"`` as second argument to ``querySkuDetails`` to get subscription "
+"details. Check ``is_auto_renewing`` in the results of ``queryPurchases()`` "
+"to see if a user has cancelled an auto-renewing subscription"
+msgstr ""

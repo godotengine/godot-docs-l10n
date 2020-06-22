@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,10 +72,43 @@ msgstr ""
 "在一个文件夹中。然后，它们可以使用一个单独的文件夹来存储使用它们的构建关卡。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
+#, fuzzy
+msgid "Style guide"
+msgstr "C# 风格指南"
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
+msgid ""
+"For consistency across projects, we recommend following these guidelines:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
+msgid ""
+"Use **snake_case** for folder and file names (with the exception of C# "
+"scripts). This sidesteps case sensitivity issues that can crop up after "
+"exporting a project on Windows. C# scripts are an exception to this rule, as "
+"the convention is to name them after the class name which should be in "
+"PascalCase."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:57
+msgid ""
+"Use **PascalCase** for node names, as this matches built-in node casing."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
+msgid ""
+"In general, keep third-party resources in a top-level ``addons/`` folder, "
+"even if they aren't editor plugins. This makes it easier to track which "
+"files are third-party. There are some exceptions to this rule; for instance, "
+"if you use third-party game assets for a character, it makes more sense to "
+"include them within the same folder as the character scenes and scripts."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:65
 msgid "Importing"
 msgstr "导入"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:67
 msgid ""
 "Godot versions prior to 3.0 did the import process from files outside the "
 "project. While this can be useful in large projects, it resulted in an "
@@ -84,17 +117,17 @@ msgstr ""
 "3.0版之前的 Godot 版本从项目外的文件执行导入过程。尽管这在大型项目中很有用，"
 "但它给大多数开发人员带来了组织麻烦。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:54
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:71
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
 msgstr "因此，现在可以从项目文件夹中透明地导入素材。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:75
 msgid "Ignoring specific folders"
 msgstr "忽略具体文件夹"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:60
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:77
 msgid ""
 "To prevent Godot from importing files contained in a specific folder, create "
 "an empty file called ``.gdignore`` in the folder (the leading ``.`` is "
@@ -103,7 +136,7 @@ msgstr ""
 "为防止 Godot 导入特定文件夹中的文件，请在文件夹中创建一个名为 ``.gdignore`` "
 "的空文件（以 ``.``号开头）。这对于加快初始项目导入非常有用。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:66
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:83
 msgid ""
 "To create a file whose name starts with a dot on Windows, you can use a text "
 "editor such as Notepad++ or use the following command in a command prompt: "
@@ -113,7 +146,7 @@ msgstr ""
 "Notepad++ 或者在命令提示符（Win+R 键-->输入cmd打开）中输入：``type nul > ."
 "gdignore``。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:70
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:87
 msgid ""
 "Once the folder is ignored, resources in that folder can't be loaded anymore "
 "using the ``load()`` and ``preload()`` methods."
@@ -121,18 +154,18 @@ msgstr ""
 "一旦文件夹被忽略，该文件夹中的资源就不能再使用 ``load()`` 和 ``preload()`` 方"
 "法加载。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:73
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:90
 #, fuzzy
 msgid ""
 "Ignoring a folder will also automatically hide it from the FileSystem dock, "
 "which can be useful to reduce clutter."
 msgstr "忽略文件夹也会自动将其从 FileSystem dock 隐藏，这有助于减少杂乱。"
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:77
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:94
 msgid "Case sensitivity"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:79
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:96
 msgid ""
 "Windows and recent macOS versions use case-insensitive filesystems by "
 "default, whereas Linux distributions use a case-sensitive filesystem by "
@@ -142,13 +175,13 @@ msgid ""
 "characters in general)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:88
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:105
 msgid ""
 "You can break this rule when style guides say otherwise (such as the C# "
 "style guide). Still, be consistent to avoid mistakes."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:91
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:108
 msgid ""
 "On Windows 10, to further avoid mistakes related to case sensitivity, you "
 "can also make the project folder case-sensitive. After enabling the Windows "
@@ -156,7 +189,7 @@ msgid ""
 "window::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:101
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:118
 msgid ""
 "If you haven't enabled the Windows Subsystem for Linux, you can enter the "
 "following line in a PowerShell window *running as Administrator* then reboot "

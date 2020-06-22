@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,17 +53,24 @@ msgid ""
 "files need to be created:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:78
-msgid "With the following contents:"
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:79
+msgid ""
+"These files must be in the top-level folder of your module (next to your "
+"``SCsub`` and ``config.py`` files) for the module to be registered properly."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:105
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:82
+#, fuzzy
+msgid "These files should contain the following:"
+msgstr "적 씬은 다음 노드들을 사용할 것입니다:"
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:109
 msgid ""
 "Next, you need to create a ``SCsub`` file so the build system compiles this "
 "module:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:117
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:121
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
 "library files.  See the library's official documentation for specific "
@@ -71,16 +78,16 @@ msgid ""
 "the installation commands for Linux below, for reference."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:128
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:132
 msgid ""
-"**Important:** The voices that Festival uses (and any other potential "
-"external/3rd-party resource) all have varying licenses and terms of use; "
-"some (if not most) of them may be be problematic with Godot, even if the "
-"Festival Library itself is MIT License compatible. Please be sure to check "
-"the licenses and terms of use."
+"The voices that Festival uses (and any other potential external/3rd-party "
+"resource) all have varying licenses and terms of use; some (if not most) of "
+"them may be be problematic with Godot, even if the Festival Library itself "
+"is MIT License compatible. Please be sure to check the licenses and terms of "
+"use."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:133
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:137
 msgid ""
 "The external library will also need to be installed inside your module to "
 "make the source files accessible to the compiler, while also keeping the "
@@ -89,48 +96,47 @@ msgid ""
 "commands:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:143
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:147
 msgid ""
 "If you don't want the external repository source files committed to your "
 "repository, you can link to them instead by adding them as submodules (from "
 "within the modules/tts/ directory), as seen below:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:152
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:156
 msgid ""
-"**Important:** Please note that Git submodules are not used in the Godot "
-"repository.  If you are developing a module to be merged into the main Godot "
-"repository, you should not use submodules.  If your module doesn't get "
-"merged in, you can always try to implement the external library as a "
-"GDNative C++ plugin."
+"Please note that Git submodules are not used in the Godot repository.  If "
+"you are developing a module to be merged into the main Godot repository, you "
+"should not use submodules.  If your module doesn't get merged in, you can "
+"always try to implement the external library as a GDNative C++ plugin."
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:157
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:161
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:168
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:172
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone `env` first, so it won't add those flags to whole Godot build "
 "(which can cause errors). Example `SCsub` with custom flags:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:183
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:187
 #, fuzzy
 msgid "The final module should look like this:"
 msgstr "최종 스크립트는 다음과 같아야 합니다:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:201
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:205
 msgid "Using the module"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:203
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:207
 msgid "You can now use your newly created module from any script:"
 msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:212
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:216
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr ""

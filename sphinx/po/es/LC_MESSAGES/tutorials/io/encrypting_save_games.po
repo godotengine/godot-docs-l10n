@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Why?"
 msgstr "¿Por qué?"
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:9
+#: ../../docs/tutorials/io/encrypting_save_games.rst:12
 msgid ""
 "Because the world today is not the world of yesterday. A capitalist "
 "oligarchy runs the world and forces us to consume in order to keep the gears "
@@ -40,7 +40,7 @@ msgid ""
 "of doing so is through in-app purchases and virtual currency."
 msgstr ""
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:22
+#: ../../docs/tutorials/io/encrypting_save_games.rst:25
 msgid ""
 "But what if someone were to find a way to edit the saved games and assign "
 "the items and currency without effort? That would be terrible, because it "
@@ -50,39 +50,39 @@ msgid ""
 "would again take over their life."
 msgstr ""
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:29
+#: ../../docs/tutorials/io/encrypting_save_games.rst:32
 msgid ""
 "No, we definitely do not want that to happen, so let's see how to encrypt "
 "savegames and protect the world order."
 msgstr ""
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:33
+#: ../../docs/tutorials/io/encrypting_save_games.rst:36
 msgid "How?"
 msgstr ""
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:35
+#: ../../docs/tutorials/io/encrypting_save_games.rst:38
 msgid ""
 "The class :ref:`File <class_File>` can open a file at a location and read/"
 "write data (integers, strings and variants). It also supports encryption. To "
 "create an encrypted file, a passphrase must be provided, like this:"
 msgstr ""
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:55
+#: ../../docs/tutorials/io/encrypting_save_games.rst:58
 msgid ""
 "This will make the file unreadable to users, but will still not prevent them "
 "from sharing savefiles. To solve this, use the device unique id or some "
 "unique user identifier, for example:"
 msgstr ""
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:74
+#: ../../docs/tutorials/io/encrypting_save_games.rst:77
 msgid "Note that ``OS.get_unique_id()`` does not work on UWP or HTML5."
 msgstr ""
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:76
+#: ../../docs/tutorials/io/encrypting_save_games.rst:79
 msgid "That is all! Thank you for your cooperation, citizen."
 msgstr ""
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:78
+#: ../../docs/tutorials/io/encrypting_save_games.rst:81
 msgid ""
 "This method cannot really prevent players from editing their savegames "
 "locally because, since the encryption key is stored inside the game, the "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,33 +48,21 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
-msgid "Install OpenJDK or Oracle JDK"
-msgstr "OpenJDK 또는 Oracle JDK 설치하기"
+#, fuzzy
+msgid "Install OpenJDK 8"
+msgstr "Java 설치하기"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
 msgid ""
-"Download and install  `OpenJDK <https://github.com/ojdkbuild/ojdkbuild>`__ "
-"or `Oracle JDK <http://www.oracle.com/technetwork/java/javase/downloads/"
-"index.html>`__. Versions below JDK 8 may not work; some users have reported "
-"issues with the jarsigner (used to sign the APKs) in JDK 7."
-msgstr ""
-"`OpenJDK <https://github.com/ojdkbuild/ojdkbuild>`__ 또는 `Oracle JDK "
-"<http://www.oracle.com/technetwork/java/javase/downloads/index.html>`__\\ 를 "
-"다운로드하고 설치하세요. JDK 8 버전 아래는 작동하지 않을 것입니다; 일부 사용"
-"자가 JDK 7에서 jarsigner (APK를 서명하는데 사용됨)와 관련된 이슈를 제보했습니"
-"다."
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:22
-msgid ""
-"If you install OpenJDK, choose ``1.8``. Don't choose the ``openjdk-jre`` "
-"files as that only contains the JRE, not the JDK which is required here."
+"Download and install  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>`__, newer versions do not work."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:25
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:24
 msgid "Create a debug.keystore"
 msgstr "debug.keystore 만들기"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:27
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:26
 msgid ""
 "Android needs a debug keystore file to install to devices and distribute non-"
 "release APKs. If you have used the SDK before and have built projects, ant "
@@ -86,7 +74,7 @@ msgstr ""
 "eclipse가 파일이 있을 것입니다 (Linux와 macOS에서, ``~/.android`` 디렉토리에"
 "서 찾을 수 있습니다)."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:32
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:31
 #, fuzzy
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
@@ -95,7 +83,7 @@ msgstr ""
 "찾을 수 없거나 만들어야 하는 경우, 이 용도를 위해 JDK에서 keytool 명령어를 사"
 "용할 수 있습니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:37
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
 msgid ""
 "This will create a ``debug.keystore`` file in your current directory. You "
 "should move it to a memorable location such as ``%USERPROFILE%\\.android"
@@ -104,11 +92,11 @@ msgid ""
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:39
 msgid "Make sure you have adb"
 msgstr "adb가 있는지 확인하세요"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:41
 #, fuzzy
 msgid ""
 "Android Debug Bridge (``adb``) is the command line tool used to communicate "
@@ -120,11 +108,11 @@ msgstr ""
 "다. SDK와 함께 설치되지만, SDK 디렉토리에 설치하기 위해 Android API 수준에 맞"
 "는 것을 설치해야 할 지도 모릅니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:47
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:46
 msgid "Setting it up in Godot"
 msgstr "Godot에서 설정하기"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:49
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:48
 #, fuzzy
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
@@ -133,21 +121,21 @@ msgstr ""
 "편집기 설정 화면으로 갑니다. 이 화면은 컴퓨터의 사용자 계정을 위한 편집기 설"
 "정을 갖고 있습니다 (프로젝트와는 독립된 것입니다)."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:55
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:54
 msgid "Scroll down to the section where the Android settings are located:"
 msgstr "Android 설정이 있는 섹션까지 내립니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:59
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
 msgid "In that screen, the path to 3 files needs to be set:"
 msgstr "이 화면에서 3개의 파일 경로가 설정되어야 합니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:60
 msgid ""
 "The ``adb`` executable (``adb.exe`` on Windows) - It can usually be found at "
 "``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:63
 msgid ""
 "The ``jarsigner`` executable (from JDK 6 or 8) - On Windows, OpenJDK "
 "installs to a dir like ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-"
@@ -156,21 +144,21 @@ msgid ""
 "you've installed and your machine's operating system."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:67
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
 "The debug ``.keystore`` file - It can be found in the folder where you put "
 "the ``debug.keystore`` file you created above."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:70
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:69
 msgid "Once that is configured, everything is ready to export to Android!"
 msgstr "일단 구성되면, Android에 내보낼 준비가 끝납니다!"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:72
 msgid "Providing launcher icons"
 msgstr "실행 아이콘 제공"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:75
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:74
 msgid ""
 "Launcher icons are used by Android launcher apps to represent your "
 "application to users. Godot only requires high-resolution icons (for "
@@ -181,12 +169,12 @@ msgstr ""
 "다. Godot은 고해상도 아이콘 (``xxxhdpi``) 만 필요하며 저해상도는 자동으로 생"
 "성합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:77
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
 #, fuzzy
 msgid "There are two types of icons required by Godot:"
 msgstr "Godot에는 UI를 디자인하는 두 가지 방법이 있습니다. 먼저 당신은:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
 #, fuzzy
 msgid ""
 "**Main Icon:** The \"classic\" icon. This will be used on all Android "
@@ -195,7 +183,7 @@ msgstr ""
 "** Main Icon : ** : \"classic\" icon. 이는 모든 Android 버전에서 최대 "
 "Android 8 (Oreo)까지만 사용됩니다. 192 × 192 픽셀 이상이어야합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
 msgid ""
 "**Adaptive Icons:** Starting from Android 8 (inclusive), `Adaptive Icons "
 "<https://developer.android.com/guide/practices/ui_guidelines/"
@@ -210,7 +198,7 @@ msgstr ""
 "응용 프로그램은 아이콘의 애니메이션 및 마스킹을 제어합니다. 432 × 432 픽셀 이"
 "상이어야합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
 msgid ""
 "It's important to adhere to some rules when designing adaptive icons. "
 "`Google Design has provided a nice article <https://medium.com/google-design/"
@@ -218,48 +206,48 @@ msgid ""
 "rules and some of the capabilities of adaptive icons."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:83
 msgid ""
 "The most important adaptive icon design rule is to have your icon critical "
 "elements inside the safe zone: a centered circle with a diameter of 66dp "
 "(264 pixels on ``xxxhdpi``) to avoid being clipped by the launcher."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:85
 msgid ""
 "If you don't provide some of the requested icons, Godot will replace them "
 "using a fallback chain, trying the next in line when the current one fails:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:87
 msgid ""
 "**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:89
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
 msgid ""
 "**Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon "
 "-> Project icon -> Default Godot foreground icon."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:90
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:89
 msgid ""
 "**Adaptive Icon Background:** Provided background icon -> Default Godot "
 "background icon."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:91
 msgid ""
 "It's highly recommended to provide all requested icons, and at least with "
 "the specified resolutions. Only this way your application will look great on "
 "all Android devices and versions."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
 msgid "Exporting for Google Play Store"
 msgstr "구글 플레이 스토어로 내보내기"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:97
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:96
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
@@ -267,7 +255,7 @@ msgstr ""
 "APK를 구글 플레이 스토어에 업로드 하려면 비 디버그 키스토어 파일을 서명해야합"
 "니다; 그러한 파일은 다음과 같이 생성될 수 있습니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:104
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:103
 msgid ""
 "This keystore and key are used to verify your developer identity, remember "
 "the password and keep it in a safe place! Use Google's Android Developer "
@@ -279,21 +267,21 @@ msgstr ""
 "app-signing>`__\\ 에 대해 더 자세히 배우고 싶다면 구글 Android 개발자 가이드"
 "를 사용하세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:107
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:106
 msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr "이제 Android 내보내기 프리셋에서 다음 항목을 채우세요:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:111
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:110
 #, fuzzy
 msgid "**Release:** Enter the path to the keystore file you just generated."
 msgstr "Release: 막 생성한 키스토어 파일의 경로를 입력하세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:112
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:111
 #, fuzzy
 msgid "**Release User:** Replace with the key alias."
 msgstr "Release User: 키 별명으로 바꾸세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:113
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:112
 #, fuzzy
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
@@ -301,7 +289,7 @@ msgid ""
 msgstr ""
 "Release Password: 키 암호. 키스토어 암호와 키 암호는 현재로선 같아야 합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:115
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:114
 #, fuzzy
 msgid ""
 "**Your export_presets.cfg file now contains sensitive information.** If you "
@@ -311,7 +299,7 @@ msgstr ""
 "**이제 export_presets.cfg 파일에는 민감한 정보가 들어있습니다;** 버전 제어 시"
 "스템을 사용한다면, 공개 저장소에서 이것을 제거하는 것이 좋을 것입니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:119
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:118
 #, fuzzy
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while choosing "
@@ -320,11 +308,11 @@ msgstr ""
 "APK의 이름을 고르면서 ``Export With Debug`` 버튼을 비활성화하는 것을 잊지마세"
 "요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:124
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:123
 msgid "Optimizing the APK size"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:126
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:125
 msgid ""
 "By default, the APK will contain native libraries for both ARMv7 and ARMv8 "
 "architectures. This increases its size significantly. To create a smaller "
@@ -334,7 +322,7 @@ msgid ""
 "run on ARMv8 devices, but the opposite is not true."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:133
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:132
 msgid ""
 "Since August 2019, Google Play requires all applications to be available in "
 "64-bit form. This means you cannot upload an APK that contains *just* an "
@@ -345,7 +333,7 @@ msgid ""
 "devices in use today."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:140
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:139
 msgid ""
 "You can optimize the size further by compiling an Android export template "
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "

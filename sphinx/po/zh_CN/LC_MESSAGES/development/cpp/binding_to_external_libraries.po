@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,17 +56,24 @@ msgid ""
 "files need to be created:"
 msgstr "和以前一样，需要以某种方式注册新类，因此还需要创建两个文件："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:78
-msgid "With the following contents:"
-msgstr "具有以下内容："
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:79
+msgid ""
+"These files must be in the top-level folder of your module (next to your "
+"``SCsub`` and ``config.py`` files) for the module to be registered properly."
+msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:105
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:82
+#, fuzzy
+msgid "These files should contain the following:"
+msgstr "这样做会产生以下行为:"
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:109
 msgid ""
 "Next, you need to create a ``SCsub`` file so the build system compiles this "
 "module:"
 msgstr "接下来，需要创建一个 ``SCsub`` 文件，以便构建系统编译此模块："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:117
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:121
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
 "library files.  See the library's official documentation for specific "
@@ -76,19 +83,20 @@ msgstr ""
 "您需要在计算机上安装外部库才能获取.a库文件。有关如何为您的操作系统执行此操作"
 "的特定说明，请参见库的官方文档。我们在下面包含了Linux的安装命令，以供参考。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:128
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:132
+#, fuzzy
 msgid ""
-"**Important:** The voices that Festival uses (and any other potential "
-"external/3rd-party resource) all have varying licenses and terms of use; "
-"some (if not most) of them may be be problematic with Godot, even if the "
-"Festival Library itself is MIT License compatible. Please be sure to check "
-"the licenses and terms of use."
+"The voices that Festival uses (and any other potential external/3rd-party "
+"resource) all have varying licenses and terms of use; some (if not most) of "
+"them may be be problematic with Godot, even if the Festival Library itself "
+"is MIT License compatible. Please be sure to check the licenses and terms of "
+"use."
 msgstr ""
 "**重要：** Festival使用的声音（以及任何其他潜在的外部/第三方资源）均具有不同"
 "的许可和使用条款；即使Festival库本身是与MIT许可兼容的，但其中的一些（不是大多"
 "数）可能与Godot会有问题。请务必检查许可和使用条款。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:133
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:137
 msgid ""
 "The external library will also need to be installed inside your module to "
 "make the source files accessible to the compiler, while also keeping the "
@@ -100,7 +108,7 @@ msgstr ""
 "可以通过 ``git`` 使用以下命令从 ``modules/tts/`` 目录中安装 ``Festival`` 和 "
 "``Speech_tools`` 库："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:143
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:147
 msgid ""
 "If you don't want the external repository source files committed to your "
 "repository, you can link to them instead by adding them as submodules (from "
@@ -109,25 +117,25 @@ msgstr ""
 "如果您不希望将外部存储库源文件提交到您的存储库，您可以通过将它们添加为子模块"
 "（从 ``modules/tts/`` 目录中）来链接它们，如下所示："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:152
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:156
+#, fuzzy
 msgid ""
-"**Important:** Please note that Git submodules are not used in the Godot "
-"repository.  If you are developing a module to be merged into the main Godot "
-"repository, you should not use submodules.  If your module doesn't get "
-"merged in, you can always try to implement the external library as a "
-"GDNative C++ plugin."
+"Please note that Git submodules are not used in the Godot repository.  If "
+"you are developing a module to be merged into the main Godot repository, you "
+"should not use submodules.  If your module doesn't get merged in, you can "
+"always try to implement the external library as a GDNative C++ plugin."
 msgstr ""
 "**重要：** 请注意，Godot存储库中未使用Git子模块。如果要开发将要合并到主Godot"
 "存储库中的模块，则不应使用子模块。如果您的模块未合并，则始终可以尝试将外部库"
 "实现为GDNative C++插件。"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:157
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:161
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
 msgstr "要添加供编译器查看的包含目录，可以将其追加到环境的路径中："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:168
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:172
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone `env` first, so it won't add those flags to whole Godot build "
@@ -137,18 +145,18 @@ msgstr ""
 "这些标志添加到整个Godot构建中（这可能会导致错误）。带有自定义标志的示例 "
 "`SCsub`："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:183
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:187
 msgid "The final module should look like this:"
 msgstr "最终模块应如下所示："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:201
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:205
 msgid "Using the module"
 msgstr "使用模块"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:203
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:207
 msgid "You can now use your newly created module from any script:"
 msgstr "现在，您可以通过任何脚本使用新创建的模块："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:212
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:216
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr "如果说出文本，输出将是 ``is_spoken:True`` 。"

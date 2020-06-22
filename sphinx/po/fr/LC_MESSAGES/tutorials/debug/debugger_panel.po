@@ -1,0 +1,277 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:4
+#, fuzzy
+msgid "Debugger panel"
+msgstr "Débogueur"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:6
+#, fuzzy
+msgid ""
+"Many of Godot's debugging tools, including the debugger, can be found in the "
+"debugger panel at the bottom of the screen. Click on **Debugger** to open it."
+msgstr ""
+"Vous trouverez le débogueur dans le panneau inférieur. Cliquez sur "
+"**Debugger** pour l'ouvrir."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:11
+#, fuzzy
+msgid ""
+"The debugger panel is split into several tabs, each focusing on a specific "
+"task."
+msgstr ""
+"Le débogueur est divisé en plusieurs onglets, chacun se concentrant sur une "
+"tâche spécifique."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:14
+msgid "Debugger"
+msgstr "Débogueur"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:16
+#, fuzzy
+msgid ""
+"The Debugger tab opens automatically when the GDScript compiler reaches a "
+"breakpoint in your code."
+msgstr ""
+"L'onglet débogueur s'ouvre automatiquement lorsque le compilateur GDScript "
+"atteint un point d'arrêt dans votre code."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:19
+msgid ""
+"It gives you a `stack trace <https://en.wikipedia.org/wiki/Stack_trace>`__, "
+"information about the state of the object, and buttons to control the "
+"program's execution."
+msgstr ""
+"Cela vous donne une `trace d'appels <https://fr.wikipedia.org/wiki/Trace_d"
+"%27appels>`__, des informations sur l'état de l'objet, et des boutons "
+"servant à contrôler l'exécution du programme."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:23
+#, fuzzy
+msgid "You can use the buttons in the top-right corner to:"
+msgstr "Vous pouvez utiliser les boutons en haut à droite pour :"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:25
+msgid ""
+"Skip all breakpoints. That way, you can save breakpoints for future "
+"debugging sessions."
+msgstr ""
+"Ignorer tous les points d'arrêt. Cela permet de garder les points d'arrêt "
+"pour un futur débogage."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:27
+msgid "Copy the current error message."
+msgstr "Copier le message d'erreur en cours."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:28
+msgid ""
+"**Step Into** the code. This button takes you to the next line of code, and "
+"if it's a function, it steps line-by-line through the function."
+msgstr ""
+"**Step Into**. Ce bouton vous amène à la prochaine ligne de code, et si "
+"c'est une fonction, elle est exécutée ligne par ligne."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:30
+msgid ""
+"**Step Over** the code. This button goes to the next line of code, but it "
+"doesn't step line-by-line through functions."
+msgstr ""
+"**Step Over**. Ce bouton vous amène à la prochaine ligne de code, mais sans "
+"entrer dans les fonctions."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:32
+msgid "**Break**. This button pauses the game's execution."
+msgstr "**Break**. Ce bouton met en pause l'exécution du jeu."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:33
+msgid "**Continue**. This button resumes the game after a breakpoint or pause."
+msgstr ""
+"**Continue**. Ce bouton relance le jeu après un point d'arrêt(breakpoint) ou "
+"à l'endroit où le jeu a été mis en pause."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:36
+msgid "Errors"
+msgstr "Erreurs"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:38
+#, fuzzy
+msgid ""
+"This is where error and warning messages are printed while running the game."
+msgstr ""
+"C'est là que les erreurs et les messages d'avertissement sont imprimés lors "
+"de l'exécution du jeu."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:40
+#, fuzzy
+msgid ""
+"You can disable specific warnings in **Project Settings > Debug > GDScript**."
+msgstr ""
+"Vous pouvez configurer les avertissements dans les paramètres du projet, "
+"dans la section intitulée **Gdscript** :"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:43
+msgid "Profiler"
+msgstr "Profileur"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:45
+msgid ""
+"The debugger comes with three profilers for your processor, network "
+"operations, and video memory."
+msgstr ""
+"Le débogueur est fourni avec trois profileurs : un pour le processeur, un "
+"pour les échanges via le réseau, et un pour la mémoire vidéo."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:48
+msgid ""
+"The profiler is used to show why individual frames take as long as they do "
+"to process and render."
+msgstr ""
+"Le profileur est utilisé pour pourquoi chaque image prend tant de temps pour "
+"être traitée et rendue."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:51
+msgid ""
+"Unlike other debugging tools, the profiler does not start automatically. It "
+"can be started at any time during gameplay by pressing the start button. You "
+"can even start the profiler before opening the game to profile startup "
+"performance. It can also be started and stopped while the game is running "
+"without losing information from when it was last running. The information it "
+"records won't go away unless you click clear, or close the game, reopen it "
+"and start the profiler again."
+msgstr ""
+"Contrairement aux autres outils de débogage, le profileur ne démarre pas "
+"automatiquement. Il peut être démarré à tout moment pendant le jeu en "
+"appuyant sur le bouton de démarrage. Vous pouvez même démarrer le profileur "
+"avant l'ouverture du jeu pour profiler les performances de démarrage. Il "
+"peut également être démarré et arrêté pendant le jeu sans perdre les "
+"informations relatives à la dernière exécution du jeu. Les informations "
+"qu'il enregistre ne disparaissent que si vous cliquez sur effacer, ou si "
+"vous fermez le jeu, le rouvrez et redémarrez le profileur."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:59
+#, fuzzy
+msgid ""
+"After starting and stopping the profiler, you should see things being kept "
+"track of on the left and a graph on the right. The items listed on the left "
+"are everything that contributes to frame time, and they should each have a "
+"value for time and calls for the current frame you are looking at."
+msgstr ""
+"Après avoir démarré et arrêté le profileur, vous devriez voir à gauche les "
+"éléments suivis et à droite un graphique. Les éléments listés à gauche sont "
+"tout ce qui contribue à la durée du d'une image(FPS), et chacun d'eux "
+"devrait avoir une valeur de temps et d'appels pour l'image que vous regardez "
+"actuellement."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:64
+msgid ""
+"The frame number in the top right tells you which frame you are currently "
+"looking at. You can change this by using the up or down arrows, typing in "
+"the frame number, or clicking on the graph."
+msgstr ""
+"Le numéro de l'image en haut à droite vous indique quelle image vous "
+"regardez actuellement. Vous pouvez le modifier en utilisant les flèches vers "
+"le haut ou vers le bas, en saisissant le numéro de l'image ou en cliquant "
+"sur le graphique."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:68
+#, fuzzy
+msgid ""
+"If you want to add something to your graph or think it looks too cluttered, "
+"you can check and uncheck the box next to an item to add or remove it from "
+"the graph."
+msgstr ""
+"Si vous voulez ajouter quelque chose à votre graphique, ou si vous pensez "
+"qu'il a l'air trop encombré, vous pouvez cocher et décocher la case à côté "
+"d'un élément à ajouter ou à retirer du graphique."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:73
+msgid "Network Profiler"
+msgstr "Profileur réseau"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:75
+msgid ""
+"The Network Profiler contains a list of all the nodes that communicate over "
+"the multiplayer API and, for each one, some counters on the amount of "
+"incoming and outgoing network interactions. It also features a bandwidth "
+"meter that displays the total bandwidth usage at any given moment."
+msgstr ""
+"Le Network Profiler contient une liste de tous les nœuds qui communiquent "
+"via l'API multijoueur et, pour chacun d'entre eux, des compteurs sur la "
+"quantité d'interactions réseau entrantes et sortantes. Il comporte également "
+"un compteur de bande passante qui affiche l'utilisation totale de la bande "
+"passante à un moment donné."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:81
+msgid "Monitors"
+msgstr "Moniteurs"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:83
+msgid ""
+"The monitors are graphs of several aspects of the game while its running "
+"such as FPS, memory usage, how many nodes are in a scene and more. All "
+"monitors keep track of stats automatically, so even if one monitor isn't "
+"open while the game is running, you can open it later and see how the values "
+"changed."
+msgstr ""
+"Les moniteurs sont des graphiques de plusieurs aspects du jeu pendant son "
+"déroulement, tels que les FPS, l'utilisation de la mémoire, le nombre de "
+"nœuds dans une scène et plus encore. Tous les moniteurs suivent les "
+"statistiques automatiquement, de sorte que même si un moniteur n'est pas "
+"ouvert pendant le jeu, vous pouvez l'ouvrir plus tard et voir comment les "
+"valeurs ont changé."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:89
+#, fuzzy
+msgid "Video RAM"
+msgstr "Vidéos publicitaires"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:91
+msgid ""
+"The **Video RAM** tab shows the video RAM usage of the game while it is "
+"running. It provides a list of every resource using video RAM by resource "
+"path, the type of resource it is, what format it is in, and how much Video "
+"RAM that resource is using. There is also a total video RAM usage number at "
+"the top right of the panel."
+msgstr ""
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:99
+msgid "Misc"
+msgstr "Divers"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:101
+msgid ""
+"The **Misc** tab contains tools to identify the control nodes you are "
+"clicking at runtime:"
+msgstr ""
+"L'onglet **Misc** contient des outils permettant d'identifier les nœuds de "
+"contrôle sur lesquels vous cliquez pendant de l'exécution :"
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:104
+msgid ""
+"**Clicked Control** tells you where the clicked node is in the scene tree."
+msgstr ""
+"**Clicked Control** vous indique où se trouve le nœud cliqué dans l'arbre "
+"des scènes."
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:105
+msgid "**Clicked Control Type** tells you the type of the node you clicked is."
+msgstr ""
+"**Clicked Control Type** vous indique le type du nœud sur lequel vous avez "
+"cliqué."

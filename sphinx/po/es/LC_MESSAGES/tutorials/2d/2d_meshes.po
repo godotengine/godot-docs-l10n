@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,10 @@ msgid ""
 "it can't really display 3D meshes directly (although it can be done via "
 "``Viewport`` and ``ViewportTexture``)."
 msgstr ""
+"En 3D, las mallas son usadas para mostrar el mundo, en 2D son raras porque "
+"las imágenes son más usadas. El motor 2D de Godot es un motor de dos "
+"dimensiones puro, así que no se pueden mostrar mallas 3D directamente "
+"(aunque se puede lograr mediante un ``Viewport`` y ``ViewportTexture``)."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:13
 msgid ""
@@ -47,6 +51,9 @@ msgid ""
 "or ignored) instead of 3D. You can experiment creating them yourself using "
 "``SurfaceTool`` from code and displaying them in a ``MeshInstance2D`` node."
 msgstr ""
+"Las mallas 2D son mallas que contienen una geometría bidimensional (Z puede "
+"ser omitido o ignorado) en lugar de 3D. Puedes experimentar creándolas con "
+"``SurfaceTool`` desde código y mostrándolas en un nodo ``MeshInstance2D``."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:18
 msgid ""
@@ -58,7 +65,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:21
 msgid "Optimizing pixels drawn"
-msgstr ""
+msgstr "Optimizando los píxeles dibujados"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:23
 msgid ""
@@ -78,6 +85,10 @@ msgid ""
 "each other with large transparent areas (for example, when using "
 "``ParallaxBackground``)."
 msgstr ""
+"Esto puede afectar el desempeño, especialmente en dispositivos móviles, "
+"cuando se dibujan imágenes grandes generalmente de tamaño de la pantalla), o "
+"se superponen muchas imágenes con grandes áreas transparentes (por ejemplo "
+"cuando se utiliza ``ParallaxBackground``)."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:28
 msgid ""
@@ -97,6 +108,9 @@ msgid ""
 "``MeshInstance2D``. Start with an image that contains large amounts of "
 "transparency on the edges, like this tree:"
 msgstr ""
+"Puedes sacar ventaja de esta optimización convirtiendo un ``Sprite`` a "
+"``MeshInstance2D``. Comienza con una imagen que contenga grandes porciones "
+"transparentes en los bordes, como este árbol:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:38
 msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
@@ -106,15 +120,21 @@ msgstr "Coloca un ``Sprite`` y selecciona \"Convertir a Mesh2D\" en el menú:"
 msgid ""
 "A dialog will appear, showing a preview of how the 2D mesh will be created:"
 msgstr ""
+"Un diálogo aparecerá, mostrando una previsualización de cómo será creada la "
+"malla 2D:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:46
 msgid ""
 "The default values are good enough for many cases, but you can change growth "
 "and simplification according to your needs:"
 msgstr ""
+"Los valores por defecto suelen estar bien para muchos casos, pero puedes "
+"cambiar el crecimiento y simplificación de acuerdo a tus necesidades:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:50
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
 "replaced:"
 msgstr ""
+"Finalmente, presiona el botón ``Convertir a Mesh2D`` y tu Sprite será "
+"reemplazado:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,9 +176,10 @@ msgstr ""
 "若要添加新TileSet，请单击“Tile Set”属性并选择“新建 TileSet(New TileSet)”。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
+#, fuzzy
 msgid ""
-"When you do this, the \"TileSet\" panel will open at the bottom of the "
-"editor window:"
+"Click on the TileSet property, and the \"TileSet\" panel will open at the "
+"bottom of the editor window:"
 msgstr ""
 "当你这么做的时候你会看到一个\"TileSet(瓦片集)\"面板出现在编辑器窗口的底部："
 
@@ -255,15 +256,20 @@ msgid "Atlas tiles"
 msgstr "Atlas Tiles(图块组)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:129
+#, fuzzy
 msgid ""
 "Rather than adding individual tiles one at a time, you can define a group of "
-"tiles all at once using an atlas. Click \"New Atlas\" and drag to select the "
-"entire tile sheet."
+"tiles all at once using an atlas. This also allows you to randomly generate "
+"tiles from the group."
 msgstr ""
 "与其一次添加一个图块，您可以使用图块组(Atlas Tiles)一次性定义一组图块。单"
 "击“New Atlas”并拖动以选择整张图块清单(tile sheet)。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:135
+#: ../../docs/tutorials/2d/using_tilemaps.rst:133
+msgid "Click \"New Atlas\" and drag to select the entire tile sheet."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:137
 msgid ""
 "If you haven't already, make sure to change the \"Step\" in the snap "
 "settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
@@ -272,7 +278,7 @@ msgstr ""
 "如果你还没有设置，请确保将Snap Options中的“Step”更改为“(64,64)” 或者别的适合"
 "你图块的大小。你可以在属性面板中找到它："
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:141
+#: ../../docs/tutorials/2d/using_tilemaps.rst:143
 msgid ""
 "Once you've defined the atlas you can add collision shapes to the individual "
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
@@ -281,13 +287,13 @@ msgstr ""
 "一旦你定义了图块组，你就可以像以前一样将碰撞形状(Collision Shape)添加到各个图"
 "块上。你也可以点击“Icon”来选择其中一个作为整个图块组的图标。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:145
+#: ../../docs/tutorials/2d/using_tilemaps.rst:147
 msgid ""
 "Back in the TileMap, you can select the atlas tile and you'll see all of the "
 "tiles it contains:"
 msgstr "回到TileMap，你可以选择图块组，你会看到它所包含的所有图块："
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:150
+#: ../../docs/tutorials/2d/using_tilemaps.rst:152
 msgid ""
 "In addition to saving time when defining the tiles, this can help by "
 "grouping similar tiles together when you're working with a large number of "
@@ -296,11 +302,206 @@ msgstr ""
 "除了节省定义图块的时间外，这可以帮助你在处理大量图块时将类似的图块分组在一"
 "起。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:154
+#: ../../docs/tutorials/2d/using_tilemaps.rst:156
+#, fuzzy
+msgid "Random tile priorities"
+msgstr "Render priority(渲染优先级)"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:158
+msgid ""
+"When drawing with atlas tiles, enabling the \"Use priority\" option causes "
+"tiles to be selected at random. By default, each tile in the tileset has an "
+"equal likelihood of occurring. You can change the likelihood by setting "
+"different priorities for each tile. For example, a tile with priority 2 is "
+"twice as likely to be selected as a tile with priority 1, and a tile with "
+"priority 3 is 50% more likely to be selected than a tile with priority 2."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:166
+#, fuzzy
+msgid "Autotiles"
+msgstr "Atlas Tiles(图块组)"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:168
+msgid ""
+"Autotiles allow you to define a group of tiles, then add rules to control "
+"which tile gets used for drawing based on the content of adjacent cells."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:171
+msgid ""
+"Click \"New Autotile\" and drag to select the tiles you wish to use. You can "
+"add collisions, occlusion, navigation shapes, tile priorties, and select an "
+"icon tile in the same manner as for atlas tiles."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:175
+msgid ""
+"Tile selection is controlled by bitmasks. Bitmasks can be added by clicking "
+"\"Bitmask\", then clicking parts of the tiles to add or remove bits in the "
+"mask. Left-clicking an area of the tile adds a bit, right-click removes \"off"
+"\", and shift-left-click sets an \"ignore\" bit."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:180
+msgid ""
+"Whenever Godot updates a cell using an autotile, it first creates a pattern "
+"based on which adjacent cells are already set. Then, it searches the "
+"autotile for a single tile with a bitmask matching the created pattern. If "
+"no matching bitmask is found, the \"icon\" tile will be used instead. If "
+"more than one matching bitmask is found, one of them will be selected "
+"randomly, using the tile priorities."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:187
+msgid ""
+"The rules for matching a bitmask to a pattern depend on the tileset's "
+"autotile bitmask mode. This can be set in the \"Inspector\" tab, under the "
+"\"Selected Tile\" heading. Allowed values are \"2x2\", \"3x3 (minimal)\", "
+"and \"3x3\"."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:191
+msgid ""
+"All \"on\" and \"off\" bits must be satisfied for a bitmask to match, but "
+"\"ignore\" bits are ignored."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:195
+#, fuzzy
+msgid "2x2"
+msgstr "22"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:197
+msgid "In 2x2 mode, each bitmask contains four bits, one for each corner."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:199
+msgid ""
+"Where a bit is \"on\", all cells connected to that corner must be filled "
+"using the same autotile, in order for the bitmask to match. For example, if "
+"the top-left bit is set, the cell directly above, directly left, and "
+"diagonally above-left must be filled."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:204
+msgid ""
+"Where a bit is \"off\", at least one cell connected to that corner must not "
+"be set using the same autotile."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:207
+msgid ""
+"At least one bit must be set for the tile to be used, so a total of 15 tiles "
+"would be needed to provide exactly one tile for each arrangement that this "
+"mode can test for."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:211
+msgid ""
+"2x2 mode can only match cells that are part of a 2-by-2 block - cells with "
+"no neighbors and lines only one cell wide are not supported."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:215
+msgid "3x3 (minimal)"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:217
+msgid ""
+"In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
+"center)."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:220
+msgid "The 4 corner bits work the same as in 2x2 mode."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:222
+msgid ""
+"When an edge bit is \"on\", the cell which shares that edge must be filled. "
+"When an edge bit is \"off\", the cell which shares that edge must be empty."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:225
+msgid "The center bit should be \"on\" for any tile you wish to use."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:227
+msgid ""
+"Note that in this mode, it makes no sense for a corner bit to be \"on\" when "
+"either edge bit adjacent to it is not \"on\"."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:230
+msgid ""
+"A total of 47 tiles would be needed to provide exactly one bitmask for each "
+"arrangement that this mode can test for."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:235
+msgid "3x3"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:237
+msgid ""
+"In 3x3 mode, each bitmaks contains 9 bits (4 corners, 4 edges, 1 center)"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:239
+msgid ""
+"Each bit checks a single adjacent cell. Corner bits only check diagonally "
+"adjacent cells. The center bit should be \"on\" for any tile you wish to use."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:242
+msgid ""
+"A total of 256 tiles would be needed to provide exactly one bitmask for each "
+"arrangement that this mode can test for."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:247
+#, fuzzy
+msgid "Disabling autotile"
+msgstr "禁用不需要的模块"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:249
+msgid ""
+"When using an autotile, it is possible to turn of the autotile behaviour and "
+"select tiles manually, by clicking \"Disable Autotile\" at the top of the "
+"tile selection window."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:254
+#, fuzzy
+msgid "Autotile binding"
+msgstr "自动总线禁用"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:256
+msgid ""
+"By default, autotile only checks for adjacent cells filled using the same "
+"autotile. This behaviour can be overridden in order to have autotiles bind "
+"to each other, or even bind to empty cells. At present, this can only be "
+"done through scripting. You will need to add a script to your tileset, and "
+"define a function named \"_is_tile_bound(drawn_id, neighbor_id)\". This "
+"function will be called for each adjacent cell that does not contain the "
+"same autotile, and should return true if you want the drawn cell to \"bind\" "
+"to the neighbor cell. You can find the id of an autotile using "
+"\"find_tile_by_name(name)\", empty cells are given an id of -1."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:266
+msgid ""
+"Note that to use this in the editor, the script should start with a \"tool\" "
+"declaration, and you may need to close and reload the scene for these "
+"changes to take effect."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:271
 msgid "Tips and tricks"
 msgstr "提示和技巧"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:156
+#: ../../docs/tutorials/2d/using_tilemaps.rst:273
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
@@ -310,18 +511,18 @@ msgstr ""
 "到在图块之间出现了一些线条。要解决此问题，请打开“项目设置”，然后在“Rendering/"
 "Quality(渲染/质量)”部分中启用“Use Pixel Snap”。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:160
+#: ../../docs/tutorials/2d/using_tilemaps.rst:277
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr "您可以使用编辑器右上方的图标来翻转和旋转图块。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:162
+#: ../../docs/tutorials/2d/using_tilemaps.rst:279
 #, fuzzy
 msgid ""
 "To draw straight lines, hold :kbd:`Shift` while clicking and dragging a tile."
 msgstr "要绘制直线，请在单击并拖动图块时按住<Shift>。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:164
+#: ../../docs/tutorials/2d/using_tilemaps.rst:281
 msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."

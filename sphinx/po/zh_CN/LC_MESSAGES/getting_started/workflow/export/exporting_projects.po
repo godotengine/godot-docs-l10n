@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -198,56 +198,33 @@ msgstr ""
 "式："
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
-msgid "Export every single file in the project"
+#, fuzzy
+msgid "Export all resources in the project"
 msgstr "导出项目中的每一个文件"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
-msgid "Export only resources (+ custom filter), this is the default."
-msgstr "仅导出资源（+ 自定义过滤器）, 这是默认值。"
+#, fuzzy
+msgid "Export selected scenes (and dependencies)"
+msgstr "仅导出所选资源 （+ 自定义过滤器）"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
-msgid "Export only selected resources (+ custom filter)"
+#, fuzzy
+msgid "Export selected resources (and dependencies)"
 msgstr "仅导出所选资源 （+ 自定义过滤器）"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
 msgid ""
-"**Export every single file** - This mode exports every single file in the "
-"project. This is good to test if something is being forgotten, but "
-"developers often have a lot of unrelated stuff around in the project "
-"directory, which makes it a bad idea."
+"**Export all resources in the project** will export every resource in the "
+"project. **Export selected scenes** and **Export selected resources** gives "
+"you a list of the scenes or resources in the project, and you have to select "
+"every scene or resource you want to export."
 msgstr ""
-"**导出每个单个文件**——此模式导出项目中的每个单个文件。这对于测试是否有什么被"
-"遗忘很有用，但是开发人员通常在项目目录中有很多无关的东西，这使它成为一个坏主"
-"意。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
-msgid ""
-"**Export only resources** - Only resources are exported. For most projects, "
-"this is enough. However many developers like to use custom datafiles in "
-"their games. To compensate for this, filters can be added for extra "
-"extensions (for instance, ``*.txt,*.csv``)."
-msgstr ""
-"**仅导出资源**——仅导出资源。对于大多数项目来说，这就够了。然而，许多开发人员"
-"喜欢在他们的游戏中使用自定义数据文件。为了弥补这一点，可以为额外的扩展名添加"
-"过滤器（如 ``*.txt,*.csv`` 等）。"
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
-msgid ""
-"**Export only selected resources** - Only select resources from a list are "
-"exported. This is probably overkill for most projects, but in some cases it "
-"is justified (usually huge projects). This mode offers total control of what "
-"is exported. Individual resources can be selected and dependency detection "
-"is performed to ensure that everything needed is added."
-msgstr ""
-"**仅导出选定资源**——仅导出列表中的选定资源。这对大多数项目来说可能是过度的，"
-"但在某些情况下它是合理的（通常是巨大的项目）。此模式可以完全控制导出的内容。"
-"可以选择单个资源，并执行依赖性检测以确保添加了所需的所有内容。"
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:124
 msgid "Exporting from the command line"
 msgstr "从命令行导出"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid ""
 "In production, it is useful to automate builds, and Godot supports this with "
 "the ``--export`` and ``--export-debug`` command line parameters. Exporting "
@@ -258,7 +235,7 @@ msgstr ""
 "行参数来支持它。从命令行导出仍需要导出预设来定义导出参数。该命令的基本调用将"
 "是："
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:135
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. The output path is "
@@ -269,7 +246,7 @@ msgstr ""
 "``some_name.exe``。输出路径相对于项目路径或绝对路径；它不遵命令被调用时的目"
 "录。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:140
 msgid ""
 "You can also configure it to export only the PCK or ZIP file, allowing a "
 "single export to be used with multiple Godot executables. This takes place "
@@ -278,7 +255,7 @@ msgstr ""
 "您还可以将其配置为仅导出PCK或ZIP文件，从而允许单个导出可以被多个Godot可执行文"
 "件使用。如果目标名称以 ``.pck`` 或 ``.zip`` 结尾，才会发生这种情况。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:144
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"

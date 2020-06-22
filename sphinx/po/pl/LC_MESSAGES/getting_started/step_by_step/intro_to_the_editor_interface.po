@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,14 +201,13 @@ msgstr ""
 "przechodzisz między różnymi obszarami roboczymi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
-#, fuzzy
 msgid ""
 "The **Bottom Panel** is the host for the debug console, the animation "
 "editor, the audio mixer… They are wide and can take precious space. That's "
 "why they're folded by default."
 msgstr ""
-"**Dolny Panel** jest konsolą debugowania, edytora animacji, miksera audio... "
-"Są one szerokie i zajmują cenne miejsce, dlatego są domyślnie złożone."
+"**Dolny Panel** mieści konsolę debugowania, edytor animacji, mikser audio... "
+"Są one szerokie i mogą zabrać cenne miejsce. Dlatego są domyślnie zwinięte."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
 msgid "The workspaces"
@@ -222,34 +221,32 @@ msgstr ""
 "Zasobów."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
-#, fuzzy
 msgid ""
 "You'll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
-"Będziesz korzystał z **Przestrzeni roboczej 2D** we wszystkich typach gier. "
+"**Przestrzeni roboczej 2D** będziesz korzystać we wszystkich typach gier. "
 "Poza grami 2D, przestrzeń robocza 2D jest miejscem gdzie budujesz swój "
-"interfejs. Naciśnij F1, aby uzyskać do niej dostęp."
+"interfejs. Naciśnij :kbd:`F1` (lub :kbd:`Alt + 1` na macOS), aby uzyskać do "
+"niej dostęp."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
 "W **obszarze roboczym 3D** możesz pracować z siatkami, światłami i "
-"projektować otoczenie trójwymiarowe . Naciśnij F2, aby uzyskać do niego "
-"dostęp."
+"projektować poziomy dla gier 3D. Naciśnij `F2` (lub :kbd:`Alt + 2` na "
+"macOS), aby uzyskać do niego dostęp."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
-#, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
 msgstr ""
-"Zauważ tekst [Perspektywa] pod paskiem narzędzi, jest to przycisk "
-"otwierający listę opcji związanych z 3D."
+"Zwróć uwagę na przycisk perspektywy pod paskiem narzędzi, otwiera listę "
+"opcji związanych z widokiem 3D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:134
 msgid ""
@@ -263,11 +260,12 @@ msgstr ""
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
-"+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
+"+ 3` on macOS) to access it, and :kbd:`Shift + F1` to search the reference."
 msgstr ""
-"Okno **Skrypt** jest kompletnym edytorem kodu z debuggerem, bogatym auto "
-"uzupełnieniem i wbudowanymi odnośnikami do kodu. Nacisnąć F3, aby uzyskać do "
-"niego dostęp, oraz F4, aby wyszukać odniesienie."
+"Obszar roboczy **Script** to kompletny edytor kodu z debugerem, bogatym "
+"autouzupełnianiem i wbudowaną referencją kodu. Naciśnij :kbd:'F3' (lub :"
+"kbd:'Alt + 3' w systemie macOS), aby uzyskać do niego dostęp i :kbd:'Shift + "
+"F1', aby przeszukać referencję klas."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
@@ -291,22 +289,23 @@ msgid ""
 "Click on the item you are looking for and press open. The documentation for "
 "the item will be displayed in the script workspace."
 msgstr ""
+"Kliknij pozycję, której szukasz i wciśnij otwórz. Dokumentacja dla tej "
+"pozycji pojawi się w obszarze roboczym skryptów."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
 "scripts and assets to use in your projects."
 msgstr ""
-"Wreszcie **Biblioteka zasobów** jest biblioteką darmowych dodatków, skryptów "
-"i zasobów do wykorzystania w twoich projektach."
+"Wreszcie, **Biblioteka zasobów** jest biblioteką darmowych i "
+"otwartoźródłowych dodatków, skryptów i zasobów, do wykorzystania w twoich "
+"projektach."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:162
 msgid "Modify the interface"
 msgstr "Modyfikuj interfejs"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
-#, fuzzy
 msgid ""
 "Godot's interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
@@ -314,7 +313,7 @@ msgid ""
 msgstr ""
 "Interfejs Godota żyje w jednym oknie. Nie można go podzielić na kilka "
 "ekranów, chociaż można pracować z zewnętrznym edytorem kodu, takim jak na "
-"przykład Atom, Visual Studio czy Notepad++."
+"przykład Atom, Visual Studio."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:169
 msgid "Move and resize docks"

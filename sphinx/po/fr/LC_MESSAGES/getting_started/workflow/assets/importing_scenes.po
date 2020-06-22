@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,31 +191,36 @@ msgstr ""
 "pour les besoins des moteurs de jeu et ne devrait pas être utilisé tel quel."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
+#, fuzzy
 msgid ""
 "Godot provides a `Blender plugin <https://github.com/godotengine/collada-"
-"exporter>`_ that will correctly export COLLADA scenes for use in Godot."
+"exporter>`_ that will correctly export COLLADA scenes for use in Godot. It "
+"does not work in Blender 2.8 or newer, but there are plans to update it in "
+"the future."
 msgstr ""
 "Godot fournit un plugin `Blender <https://github.com/godotengine/collada-"
 "exporter>`_ qui exportera correctement les scènes COLLADA pour une "
 "utilisation dans Godot."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:68
 msgid "Exporting ESCN files from Blender"
 msgstr "Exportation de fichiers ESCN depuis Blender"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:70
+#, fuzzy
 msgid ""
 "The most powerful one, called `godot-blender-exporter <https://github.com/"
 "godotengine/godot-blender-exporter>`__. It uses a .escn file, which is kind "
 "of another name for a .tscn file (Godot scene file); it keeps as much "
-"information as possible from a Blender scene."
+"information as possible from a Blender scene. However, it is considered "
+"experimental."
 msgstr ""
 "Le plus puissant, appelé `godot-blender-exporter <https://github.com/"
 "godotengine/godot-blender-exporter>`__. Il utilise des fichiers .escn qui "
 "sont un peu un autre nom de fichier .tscn (fichier de scène Godot), il "
 "conserve autant d'informations que possible à partir d'une scène Blender."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:74
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:76
 msgid ""
 "The ESCN exporter has a detailed `document <escn_exporter/index.html>`__ "
 "describing its functionality and usage."
@@ -223,11 +228,11 @@ msgstr ""
 "L'exportateur ESCN a un `document détaillé <escn_exporter/index.html>`__ "
 "décrivant ses fonctionnalités et son utilisation."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:78
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:80
 msgid "Import workflows"
 msgstr "Processus d’importation"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:80
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:82
 msgid ""
 "Godot scene importer allows different workflows regarding how data is "
 "imported. Depending on many options, it is possible to import a scene with:"
@@ -236,7 +241,7 @@ msgstr ""
 "manière dont les données sont importées. Suivant de nombreuses options, il "
 "est possible d'importer une scène avec :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:83
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
 msgid ""
 "External materials (default): Where each material is saved to a file "
 "resource. Modifications to them are kept."
@@ -244,7 +249,7 @@ msgstr ""
 "Matériaux externes (par défaut) : où chaque matériau est enregistré dans un "
 "fichier ressource. Leurs modifications sont conservées."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:84
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:86
 msgid ""
 "External meshes: Where each mesh is saved to a different file. Many users "
 "prefer to deal with meshes directly."
@@ -253,7 +258,7 @@ msgstr ""
 "différent. De nombreux utilisateurs préfèrent traiter directement les "
 "maillages."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:87
 msgid ""
 "External animations: Allowing saved animations to be modified and merged "
 "when sources change."
@@ -261,7 +266,7 @@ msgstr ""
 "Animations externes : Permet de modifier et de fusionner des animations "
 "enregistrées lorsque les sources changent."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:86
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:88
 msgid ""
 "External scenes: Save each of the root nodes of the imported scenes as a "
 "separate scene."
@@ -269,11 +274,11 @@ msgstr ""
 "Scènes externes : enregistrer les nœuds racine des scènes importées chacun "
 "en tant que scène distincte."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:87
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:89
 msgid "Single scene: A single scene file with everything built in."
 msgstr "Scène unique : un fichier de scène unique avec tout intégré."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:91
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:93
 msgid ""
 "As different developers have different needs, this import process is highly "
 "customizable."
@@ -281,24 +286,24 @@ msgstr ""
 "Comme différents développeurs ont des besoins différents, ce processus "
 "d'importation est hautement personnalisable."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:94
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:96
 msgid "Import options"
 msgstr "Options d'importation"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:96
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:98
 msgid "The importer has several options, which will be discussed below:"
 msgstr ""
 "L'importateur a plusieurs options, lesquelles seront discutées ci-dessous :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:101
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:103
 msgid "Nodes"
 msgstr "Les nœuds"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:104
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
 msgid "Root Type"
 msgstr "Type racine"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:108
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
 "this can be modified."
@@ -306,27 +311,27 @@ msgstr ""
 "Par défaut, le type du nœud racine dans les scènes importées est \"Spatial"
 "\", mais cela peut être modifié."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:111
 msgid "Root Name"
 msgstr "Nom racine"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:111
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:113
 msgid "Allows setting a specific name to the generated root node."
 msgstr "Permet de définir un nom spécifique pour le nœud racine généré."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:114
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:116
 msgid "Root Scale"
 msgstr "Échelle de racine"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:116
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:118
 msgid "The scale of the root node."
 msgstr "L'échelle du nœud racine."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:119
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
 msgid "Custom Script"
 msgstr "Script personnalisé"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:123
 msgid ""
 "A special script to process the whole scene after import can be provided. "
 "This is great for post processing, changing materials, doing funny stuff "
@@ -336,11 +341,11 @@ msgstr ""
 "fourni. Ceci est idéal pour le post-traitement, le changement de matériaux, "
 "les choses amusantes avec la géométrie, etc."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:125
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:127
 msgid "Create a script like this:"
 msgstr "Créez un script comme celui-ci :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:137
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:139
 msgid ""
 "The ``post_import`` function takes the imported scene as argument (the "
 "parameter is actually the root node of the scene). The scene that will "
@@ -350,14 +355,14 @@ msgstr ""
 "paramètre est en fait le nœud racine de la scène). La scène qui sera "
 "finalement utilisée doit être retournée. Cela peut en être une différente."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:142
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:161
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:216
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:308
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:144
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:163
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:218
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:310
 msgid "Storage"
 msgstr "Stockage"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:144
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:146
 msgid ""
 "By default, Godot imports a single scene. This option allows specifying that "
 "nodes below the root will each be a separate scene and instanced into the "
@@ -367,7 +372,7 @@ msgstr ""
 "que les nœuds situés en dessous de la racine seront chacun une scène "
 "distincte et seront instanciés dans la scène importée."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:148
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:150
 msgid ""
 "Of course, instancing such imported scenes in other places manually works, "
 "too."
@@ -375,15 +380,15 @@ msgstr ""
 "Bien entendu, instancier manuellement des scènes importées à d'autres "
 "endroits fonctionne également."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:152
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:154
 msgid "Materials"
 msgstr "Matériaux"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:155
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
 msgid "Location"
 msgstr "Emplacement"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:159
 msgid ""
 "Godot supports materials in meshes or nodes. By default, materials will be "
 "put on each node."
@@ -391,7 +396,7 @@ msgstr ""
 "Godot prend en charge les matériaux dans les mailles ou les nœuds. Par "
 "défaut, les matériaux seront placés sur chaque nœud."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:163
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:165
 msgid ""
 "Materials can be stored within the scene or in external files. By default, "
 "they are stored in external files so editing them is possible. This is "
@@ -403,7 +408,7 @@ msgstr ""
 "édition est donc possible. En effet, la plupart des DCC 3D n’ont pas les "
 "mêmes options de matériaux que celles présentes dans Godot."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:167
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:169
 msgid ""
 "When materials are built-in, they will be lost each time the source scene is "
 "modified and re-imported."
@@ -411,11 +416,11 @@ msgstr ""
 "Lorsque des matériaux sont intégrés, ils seront perdus chaque fois que la "
 "scène source sera modifiée et réimportée."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:171
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:173
 msgid "Keep On Reimport"
 msgstr "Continuer à réimporter"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:173
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:175
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
 "edited ones and ignore the ones coming from the source scene. This option is "
@@ -426,15 +431,15 @@ msgstr ""
 "provenant de la scène source. Cette option est uniquement disponible si les "
 "matériaux sont enregistrés en tant que fichiers."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:178
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:180
 msgid "Meshes"
 msgstr "Maillages"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:181
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
 msgid "Compress"
 msgstr "Compresser"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:185
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
 "order to save space."
@@ -442,11 +447,11 @@ msgstr ""
 "Fait utiliser des nombres de moindre précision dans plusieurs aspects des "
 "maillages pour sauver de l’espace."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
 msgid "These are:"
 msgstr "Ceux-ci sont :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:187
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:189
 msgid ""
 "Transform Matrix (Location, rotation, and scale)             : 32-bit float "
 "to 16-bit signed integer."
@@ -454,7 +459,7 @@ msgstr ""
 "Matrice de transformation (position, rotation, and échelle)             : "
 "flottant 32-bit vers entier signé 16-bit."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:188
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
 msgid ""
 "Vertices                                                     : 32-bit float "
 "to 16-bit signed integer."
@@ -462,7 +467,7 @@ msgstr ""
 "Sommets                                                     : flottant 32-"
 "bit vers entier signé 16-bit."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:189
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:191
 msgid ""
 "Normals                                                      : 32-bit float "
 "to 32-bit unsigned integer."
@@ -470,7 +475,7 @@ msgstr ""
 "Normales                                                      : flottant 32-"
 "bit vers entier non-signé 32-bit."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:192
 msgid ""
 "Tangents                                                     : 32-bit float "
 "to 32-bit unsigned integer."
@@ -478,7 +483,7 @@ msgstr ""
 "Tangentes                                                    : flottant 32-"
 "bit vers entier non-signé 32-bit."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:191
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:193
 msgid ""
 "Vertex Colors                                                : 32-bit float "
 "to 32-bit unsigned integer."
@@ -486,7 +491,7 @@ msgstr ""
 "Couleur des sommets                                                : "
 "flottant 32-bit vers entier non-signé 32-bit."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:192
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
 msgid ""
 "UV                                                           : 32-bit float "
 "to 32-bit unsigned integer."
@@ -494,7 +499,7 @@ msgstr ""
 "UV                                                           : flottant 32-"
 "bit vers entier non-signé 32-bit."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:193
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:195
 msgid ""
 "UV2                                                          : 32-bit float "
 "to 32-bit unsigned integer."
@@ -502,7 +507,7 @@ msgstr ""
 "UV2                                                          : flottant 32-"
 "bit vers entier non-signé 32-bit."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
 msgid ""
 "Vertex weights                                               : 32-bit float "
 "to 16-bit unsigned integer."
@@ -510,7 +515,7 @@ msgstr ""
 "Poids des sommets                                               : flottant "
 "32-bit vers entier non-signé 16-bit."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:195
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:197
 msgid ""
 "Armature bones                                               : 32-bit float "
 "to 16-bit unsigned integer."
@@ -518,7 +523,7 @@ msgstr ""
 "Squelette d’armature                                               : "
 "flottant 32-bit vers entier non-signé 16-bit."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
 msgid ""
 "Array index                                                  : 32-bit or 16-"
 "bit unsigned integer based on how many elements there are."
@@ -527,18 +532,18 @@ msgstr ""
 "flottant 32-bit vers entier non-signé 16 ou 32-bit selon le nombre "
 "d’éléments."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:200
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
 msgid "Additional info:"
 msgstr "Information supplémentaire :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:199
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:201
 msgid ""
 "UV2 = The second UV channel for detail textures and baked lightmap textures."
 msgstr ""
 "UV2 = le deuxième canal UV for les textures de détail et les textures de "
 "lightmap précalculé."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:200
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
 msgid ""
 "Array index = An array of numbers that number each element of the arrays "
 "above; i.e. they number the vertices and normals."
@@ -546,7 +551,7 @@ msgstr ""
 "Indices de tableau = Un tableau de nombres qui numérote chaque élément des "
 "tableaux ci-dessus, ç-à-d. qu’il numérote les sommets et les normales."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:204
 msgid ""
 "In some cases, this might lead to loss of precision, so disabling this "
 "option may be needed. For instance, if a mesh is very big or there are "
@@ -561,11 +566,11 @@ msgstr ""
 "des lacunes dans la géométrie ou des sommets qui ne se trouvent pas "
 "exactement où ils devraient être."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:208
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:210
 msgid "Ensure Tangents"
 msgstr "Vérifier les tangentes"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:210
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:212
 msgid ""
 "If textures with normal mapping are to be used, meshes need to have tangent "
 "arrays. This option ensures that these are generated if not present in the "
@@ -578,7 +583,7 @@ msgstr ""
 "source. Godot utilise Mikktspace pour cela, mais il est toujours préférable "
 "de les générer dans l'exportateur."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:218
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:220
 msgid ""
 "Meshes can be stored in separate files (resources) instead of built-in. This "
 "does not have much practical use unless one wants to build objects with them "
@@ -588,7 +593,7 @@ msgstr ""
 "lieu d'être intégrés. Cela n'a pas beaucoup d'intérêt à moins que l'on "
 "veuille construire des objets avec directement."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:221
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
 msgid ""
 "This option is provided to help those who prefer working directly with "
 "meshes instead of scenes."
@@ -596,24 +601,24 @@ msgstr ""
 "Cette option est fournie pour aider ceux qui préfèrent travailler "
 "directement avec des maillages au lieu de scènes."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:227
 msgid "Light Baking"
 msgstr "Pré-calcul de l'éclairage"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:227
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:229
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr "Que le maillage soit utilisé ou non dans les lumières préparées."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:229
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:231
 msgid "**Disabled:** The mesh is not used in baked lightmaps."
 msgstr ""
 "**Désactivé:** Le maillage n'est pas utilisé dans les lumières préparées."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:230
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:232
 msgid "**Enable:** The mesh is used in baked lightmaps."
 msgstr "**Activer:** Le maillage est utilisé dans les lumières préparées."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:231
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:233
 msgid ""
 "**Gen Lightmaps:** The mesh is used in baked lightmaps, and unwraps a second "
 "UV layer for lightmaps."
@@ -621,17 +626,17 @@ msgstr ""
 "**Gen Lightmaps :** Le maillage est utilisé dans les lightmaps préparées et "
 "ouvre un second calque UV pour les lightmaps."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:233
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:235
 msgid "For more information on light baking see :ref:`doc_baked_lightmaps`."
 msgstr ""
 "Pour plus d'informations sur le pré-calcul de lumière voir :ref:"
 "`doc_baked_lightmaps`."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:236
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
 msgid "External Files"
 msgstr "Fichiers externes"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:240
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
 "with the name of the scene."
@@ -639,11 +644,11 @@ msgstr ""
 "Les maillages générés et les matériels peuvent être optionnellement stocké "
 "dans un sous-répertoire nommé d’après la scène."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:242
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
 msgid "Animation options"
 msgstr "Options d’animation"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:246
 msgid ""
 "Godot provides many options regarding how animation data is dealt with. Some "
 "exporters (such as Blender) can generate many animations in a single file. "
@@ -657,15 +662,15 @@ msgstr ""
 "ligne de temps ou, au pire, placent chaque animation dans un fichier "
 "distinct."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:251
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:253
 msgid "Import of animations is enabled by default."
 msgstr "L'import d'animation est activé par défaut."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:254
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:256
 msgid "FPS"
 msgstr "IPS"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:256
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:258
 msgid ""
 "Most 3D export formats store animation timeline in seconds instead of "
 "frames. To ensure animations are imported as faithfully as possible, please "
@@ -678,11 +683,11 @@ msgstr ""
 "par seconde utilisées pour les éditer. Ne pas le faire peut entraîner des "
 "saccades minimes."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:261
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:263
 msgid "Filter Script"
 msgstr "Script de filtrage"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:263
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:265
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
 "which tracks from which animations should be kept."
@@ -690,7 +695,7 @@ msgstr ""
 "Il est possible de spécifier un script de filtrage dans une syntaxe spéciale "
 "pour décider quelles pistes de quelles animations doivent être conservées."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:266
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
 msgid ""
 "The filter script is executed against each imported animation. The syntax "
 "consists of two types of statements, the first for choosing which animations "
@@ -707,7 +712,7 @@ msgstr ""
 "utilisant les caractères génériques ``?`` et ``*`` (en utilisant ``String."
 "matchn()`` sous le capot)."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:272
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:274
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
@@ -719,7 +724,7 @@ msgstr ""
 "appliquer des filtres à toutes les animations importées dont le nom se "
 "termine par ``\"_Loop\"`` :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:278
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:280
 msgid ""
 "Similarly, additional patterns can be added to the same line, separated by "
 "commas. Here is a modified example to additionally *include* all animations "
@@ -731,7 +736,7 @@ msgstr ""
 "toutes les animations dont le nom commence par ``\"Arm_Left\"``, mais aussi "
 "*exclure* toutes les animations dont le nom se termine par ``\"Attack\"`` :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:284
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:286
 msgid ""
 "Following the animation selection filter statement, we add track filtering "
 "patterns to indicate which animation tracks should be kept or discarded. If "
@@ -743,7 +748,7 @@ msgstr ""
 "conservées ou supprimées. Si aucun motif de filtre de piste n'est spécifié, "
 "toutes les pistes des animations correspondantes seront supprimées !"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:288
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:290
 msgid ""
 "It's important to note that track filter statements are applied in order for "
 "each track within the animation, this means that one line may include a "
@@ -758,7 +763,7 @@ msgstr ""
 "être à nouveau incluse par une règle de filtrage plus bas dans le script de "
 "filtrage."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:293
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:295
 msgid ""
 "For example: include all tracks in animations with names ending in ``\"_Loop"
 "\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
@@ -769,7 +774,7 @@ msgstr ""
 "\"Skeleton\"`` qui se terminent par ``\"Control\"``, sauf si elles ont ``"
 "\"Arm\"`` dans leur nom :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:302
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:304
 msgid ""
 "In the above example, tracks like ``\"Skeleton:Leg_Control\"`` would be "
 "discarded, while tracks such as ``\"Skeleton:Head\"`` or ``\"Skeleton:"
@@ -779,14 +784,14 @@ msgstr ""
 "seraient rejetées, alors que des pistes comme ``\"Skeleton:Head\"`` ou ``"
 "\"Skeleton:Arm_Left_Control\"`` seraient retenues."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
 msgid ""
 "Any track filter lines that do not begin with a ``+`` or ``-`` are ignored."
 msgstr ""
 "Toutes les lignes de filtre de piste qui ne commencent pas par un ``+`` ou "
 "``-`` sont ignorées."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:310
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:312
 msgid ""
 "By default, animations are saved as built-in. It is possible to save them to "
 "a file instead. This allows adding custom tracks to the animations and "
@@ -797,11 +802,11 @@ msgstr ""
 "d'ajouter des pistes personnalisées aux animations et de les conserver après "
 "une réimportation."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:314
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:316
 msgid "Optimizer"
 msgstr "Optimiseur"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:316
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:318
 msgid ""
 "When animations are imported, an optimizer is run, which reduces the size of "
 "the animation considerably. In general, this should always be turned on "
@@ -812,11 +817,11 @@ msgstr ""
 "devrait toujours être activée, à moins que vous ne soupçonniez qu'elle "
 "pourrait casser une animation donnée."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:320
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:322
 msgid "Clips"
 msgstr "Clips"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:322
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:324
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "
 "clips. For this to work, the model must have only one animation that is "
@@ -831,11 +836,11 @@ msgstr ""
 "pouvez ensuite nommer un clip, spécifier les images sur lesquelles il "
 "commence et s'arrête, et choisir si l'animation se met en boucle ou non."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:331
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:333
 msgid "Scene inheritance"
 msgstr "Héritage de scène"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:333
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
 msgid ""
 "In many cases, it may be desired to make modifications to the imported "
 "scene. By default, this is not possible because if the source asset changes "
@@ -847,7 +852,7 @@ msgstr ""
 "change (fichier source ``.dae``, ``.gltf``, ``.obj`` réexporté depuis une "
 "application de modélisation 3D), Godot réimporte la scène entière."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:336
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:338
 msgid ""
 "It is possible, however, to make local modifications by using *Scene "
 "Inheritance*. Try to open the imported scene and the following dialog will "
@@ -857,19 +862,19 @@ msgstr ""
 "l'*héritage de scène*. Essayez simplement d'ouvrir la scène importée et la "
 "boîte de dialogue suivante apparaîtra :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:341
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:343
 msgid "In inherited scenes, the only limitations for modifications are:"
 msgstr ""
 "Dans les scènes héritées, les seules limitations pour les modifications "
 "sont :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:343
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:345
 msgid "Nodes can't be removed (but can be added anywhere)."
 msgstr ""
 "Les nœuds ne peuvent pas être supprimés (mais peuvent être ajoutés n'importe "
 "où)."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:344
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:346
 msgid ""
 "Sub-Resources can't be edited (save them externally as described above for "
 "this)"
@@ -877,15 +882,15 @@ msgstr ""
 "Les sous-ressources ne peuvent pas être éditées (sauvegardez-les en externe "
 "comme décrit ci-dessus)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:346
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:348
 msgid "Other than that, everything is allowed!"
 msgstr "Sinon, tout est permis !"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:349
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:351
 msgid "Import hints"
 msgstr "Conseils pour l'importation"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:351
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:353
 msgid ""
 "Many times, when editing a scene, there are common tasks that need to be "
 "done after exporting:"
@@ -893,15 +898,15 @@ msgstr ""
 "Souvent, lors de l'édition d'une scène, il y a des tâches communes qui "
 "doivent être effectuées après l'exportation :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:353
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:355
 msgid "Adding collision detection to objects"
 msgstr "Ajout de détection de collision aux objets"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:354
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:356
 msgid "Setting objects as navigation meshes"
 msgstr "Réglage des objets comme maillages de navigation"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:355
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:357
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)"
@@ -909,7 +914,7 @@ msgstr ""
 "Supprimer les nœuds qui ne sont pas utilisés dans le moteur de jeu (comme "
 "les lumières spécifiques utilisées pour la modélisation)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:357
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
 msgid ""
 "To simplify this workflow, Godot offers a few suffixes that can be added to "
 "the names of the objects in your 3D modelling software. When imported, Godot "
@@ -920,11 +925,11 @@ msgstr ""
 "3D. Lors de l'importation, Godot les détectera et effectuera des actions "
 "automatiquement :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:362
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:364
 msgid "Remove nodes (-noimp)"
 msgstr "Supprimer les nœuds (-noimp)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:364
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:366
 msgid ""
 "Node names that have this suffix will be removed at import time, no matter "
 "what their type is. They will not appear in the imported scene."
@@ -933,11 +938,11 @@ msgstr ""
 "l'importation, quel que soit leur type. Ils n'apparaîtront pas dans la scène "
 "importée."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:368
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
 msgid "Create collisions (-col, -colonly, -convcolonly)"
 msgstr "Créer des collisions (-col, -colonly, -colonly, -convcolonly)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
 msgid ""
 "Option \"-col\" will work only for Mesh nodes. If it is detected, a child "
 "static collision node will be added, using the same geometry as the mesh."
@@ -946,7 +951,7 @@ msgstr ""
 "détectée, un nœud de collision statique enfant sera ajouté, utilisant la "
 "même géométrie que le maillage."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:373
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:375
 msgid ""
 "However, it is often the case that the visual geometry is too complex or too "
 "un-smooth for collisions, which ends up not working well."
@@ -954,7 +959,7 @@ msgstr ""
 "Cependant, il arrive souvent que la géométrie visuelle soit trop complexe ou "
 "trop peu lisse pour les collisions, ce qui finit par ne pas bien fonctionner."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:376
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:378
 msgid ""
 "To solve this, the \"-colonly\" modifier exists, which will remove the mesh "
 "upon import and create a :ref:`class_staticbody` collision instead. This "
@@ -965,7 +970,7 @@ msgstr ""
 "`class_staticbody` à la place. Cela permet de séparer le maillage visuel et "
 "la collision réelle."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:382
 msgid ""
 "Option \"-convcolonly\" will create a :ref:`class_convexpolygonshape` "
 "instead of a :ref:`class_concavepolygonshape`."
@@ -973,7 +978,7 @@ msgstr ""
 "L'option \"-convcolonly\" créera une :ref:`class_convexpolygonshape` au lieu "
 "d'une :ref:`class_concavepolygonshape`."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:382
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
 msgid ""
 "Option \"-colonly\" can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
@@ -985,24 +990,24 @@ msgstr ""
 "nœud collision en tant qu'enfant. Le nœud collision aura une des formes "
 "prédéfinies, en fonction du type de dessin vide de Blender :"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:389
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:391
 msgid "Single arrow will create a :ref:`class_rayshape`"
 msgstr "Une flèche simple créera une :ref:`class_rayshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:390
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:392
 msgid "Cube will create a :ref:`class_boxshape`"
 msgstr "Un cube créera une :ref:`class_boxshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:391
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:393
 msgid "Image will create a :ref:`class_planeshape`"
 msgstr "Une image créera une :ref:`class_planeshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:392
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`"
 msgstr "Sphère (et autres non listés) va créer :ref:`class_sphereshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:396
 msgid ""
 "For better visibility in Blender's editor, the user can set \"X-Ray\" option "
 "on collision empties and set some distinct color for them in User "
@@ -1012,11 +1017,11 @@ msgstr ""
 "définir l'option \"X-Ray\" sur les vides de collision et définir une couleur "
 "distincte pour eux dans User Preferences / Themes / 3D View / Empty."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:400
 msgid "Create navigation (-navmesh)"
 msgstr "Créer une navigation (-navmesh)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:400
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
 msgid ""
 "A mesh node with this suffix will be converted to a navigation mesh. "
 "Original Mesh node will be removed."
@@ -1024,11 +1029,11 @@ msgstr ""
 "Un nœud de maillage avec ce suffixe sera converti en un maillage de "
 "navigation. Le nœud de maillage original sera supprimé."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "Créer un VehicleBody (-vehicle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleBody <class_VehicleBody>` node."
@@ -1036,11 +1041,11 @@ msgstr ""
 "Un nœud de maillage avec ce suffixe sera importé en tant qu'enfant d'un "
 "nœud :ref:`VehicleBody <class_VehicleBody>`."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:409
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "Créer une VehicleWheel (-wheel)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleWheel <class_VehicleWheel>` node."
@@ -1048,19 +1053,19 @@ msgstr ""
 "Un nœud de maillage avec ce suffixe sera importé en tant qu'enfant d'un "
 "nœud :ref:`VehicleWheel <class_VehicleWheel>`."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:414
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
 msgid "Rigid Body (-rigid)"
 msgstr "Corps Rigide (-rigid)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:418
 msgid "Creates a rigid body from this mesh."
 msgstr "Crée un corps rigide à partir de ce maillage."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:419
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:421
 msgid "Animation loop (-loop, -cycle)"
 msgstr "Boucle d'animation (-loop, -cycle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:421
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "\"loop\" or \"cycle\" will be imported as a Godot Animation with the loop "
@@ -1071,7 +1076,7 @@ msgstr ""
 "d'animation Godot avec le drapeau loop activé. Ceci est sensible à la casse "
 "et ne nécessite pas de trait d'union."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the \"loop\" or \"cycle\" prefix or suffix."

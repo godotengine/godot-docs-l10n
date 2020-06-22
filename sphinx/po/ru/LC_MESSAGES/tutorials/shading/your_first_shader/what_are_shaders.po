@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:4
-#, fuzzy
 msgid "What are shaders?"
-msgstr "Типы Шейдеров"
+msgstr "Типы Шейдеров?"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:7
 msgid "Introduction"
@@ -177,18 +176,26 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:93
 #, fuzzy
 msgid ""
-"For more information about how shaders operate specifically in Godot see "
+"For more information about how shaders operate specifically in Godot, see "
 "the :ref:`Shaders <doc_shaders>` doc."
 msgstr ""
 "Для получения дополнительной информации о самих событиях ввода посмотрите "
 "руководство :ref:`Input Event Tutorial<doc_inputevent>`."
 
-#: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:96
+#: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:97
+msgid ""
+"The ``light()`` function won't be run if the ``vertex_lighting`` render mode "
+"is enabled, or if **Rendering > Quality > Shading > Force Vertex Shading** "
+"is enabled in the Project Settings. (It's enabled by default on mobile "
+"platforms.)"
+msgstr ""
+
+#: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:103
 #, fuzzy
 msgid "Technical overview"
 msgstr "Обзор"
 
-#: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:98
+#: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:105
 msgid ""
 "GPUs are able to render graphics much faster than CPUs for a few reasons, "
 "but most notably, because they are able to run calculations massively in "
@@ -199,7 +206,7 @@ msgid ""
 "once, but with different data."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:104
+#: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:111
 msgid ""
 "That is where shaders come in. The GPU will call the shader a bunch of times "
 "simultaneously, and then operate on different bits of data (vertices, or "
@@ -212,7 +219,7 @@ msgid ""
 "resulting in massively slower render times."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:112
+#: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:119
 msgid ""
 "This is different from CPU-based operations. On a CPU, if you can speed up "
 "even one pixel, the entire rendering time will decrease. On a GPU, you have "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,107 +43,118 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:18
 #, fuzzy
+msgid "Debugger Panel"
+msgstr "Debugger"
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:20
+msgid ""
+"Many of Godot's debugging tools are part of the Debugger panel, which you "
+"can find information about in :ref:`doc_debugger_panel`."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
+#, fuzzy
 msgid "Debug menu options"
 msgstr "**Beschreibung**"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:20
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:26
 msgid ""
 "There are a few common debug options you can toggle on or off when running "
 "your game in the editor, which can help you in debugging your game."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:23
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid "You can find these options in the **Debug** editor menu."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Here are the descriptions of the options:"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:30
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
 msgid "Deploy with Remote Debug"
 msgstr "Mit Fern-Fehlerbehebung starten"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:32
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid ""
 "When exporting and deploying, the resulting executable will attempt to "
 "connect to the IP of your computer for debugging."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:42
 msgid "Small Deploy with Network FS"
 msgstr "Kleine Programmdatei über ein Netzwerkdateisystem"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:44
 msgid ""
 "This option speeds up testing for games with a large footprint on remote "
 "devices."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:46
 msgid ""
 "When **Small Deploy with Network FS** is on, instead of exporting the full "
 "game, deploying the game builds a minimal executable. The editor then "
 "provides files from the project over the network."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:44
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:50
 msgid ""
 "Also, on Android, the game is deployed using the USB cable to speed up "
 "deployment."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:47
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:53
 msgid "Visible Collision Shapes"
 msgstr "Collision-Shapes sichtbar"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:55
 msgid ""
 "This option makes collision shapes and raycast nodes visible in the running "
 "game."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:52
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:58
 msgid "Visible Navigation"
 msgstr "Navigation sichtbar"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:54
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:60
 msgid "Navigation meshes and polygons will be visible on the running game."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:57
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:63
 msgid "Sync Scene Changes"
 msgstr "Szenenänderungen synchronisieren"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:59
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:65
 msgid ""
 "With this option, any change you make to a scene in the editor at runtime "
 "appears instantly. When used remotely on a device, this is more efficient "
 "with the network filesystem."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:64
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:70
 msgid "Sync Script Changes"
 msgstr "Skriptänderungen synchronisieren"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:66
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:72
 msgid ""
 "Any script that is saved will be reloaded on the running game. When used "
 "remotely on a device, this is more efficient with the network filesystem."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:70
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:76
 msgid "Script editor debug tools and options"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:72
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
 msgid ""
 "The script editor has its own set of debug tools for use with breakpoints "
 "and two options. The breakpoint tools can also be found in the **Debugger** "
 "tab of the debugger."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:84
 msgid ""
 "The **Break** button causes a break in the script like a breakpoint would. "
 "**Continue** makes the game continue after pausing at a breakpoint. **Step "
@@ -151,246 +162,67 @@ msgid ""
 "if possible. Otherwise, it does the same thing as **Step Over**."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:83
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:89
 msgid ""
 "The **Keep Debugger Open** option keeps the debugger open after a scene has "
 "been closed. And the **Debug with External Editor** option lets you debug "
 "your game with an external editor."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:88
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:94
 #, fuzzy
 msgid "Debug project settings"
 msgstr "Projekteinstellungen überschreiben"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:90
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:96
 msgid ""
 "In the project settings, there is a **Debug** category with three "
 "subcategories which control different things."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:94
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:100
 #, fuzzy
 msgid "Settings"
 msgstr "Zeichenketten"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:96
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:102
 msgid ""
 "These are some general settings such as printing the current FPS to the "
 "**Output** panel, the maximum amount of functions when profiling and others."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:101
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:107
 msgid "GDScript"
 msgstr "GDScript"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:103
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:109
 msgid ""
 "These settings allow you to toggle specific GDScript warnings, such as for "
 "unused variables. You can also turn off warnings completely."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:107
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
 msgid "Shapes"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:109
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:115
 msgid ""
 "Shapes are where you can adjust the color of shapes that only appear for "
 "debugging purposes, such as collision and navigation shapes."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
-msgid "Debugging tools"
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:115
-msgid ""
-"You can find the debugger in the bottom panel. Click on **Debugger** to open "
-"it."
-msgstr ""
-
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:119
-msgid ""
-"The debugger is split into several tabs, each focusing on a specific task."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:122
-msgid "Debugger"
-msgstr "Debugger"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:124
-msgid ""
-"The debugger tab opens automatically when the GDScript compiler reaches a "
-"breakpoint in your code."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:127
-msgid ""
-"It gives you a `stack trace <https://en.wikipedia.org/wiki/Stack_trace>`__, "
-"information about the state of the object, and buttons to control the "
-"program's execution."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:131
-msgid "You can use the buttons in the top-right to:"
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
-msgid ""
-"Skip all breakpoints. That way, you can save breakpoints for future "
-"debugging sessions."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:135
-msgid "Copy the current error message."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:136
-msgid ""
-"**Step Into** the code. This button takes you to the next line of code, and "
-"if it's a function, it steps line-by-line through the function."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:138
-msgid ""
-"**Step Over** the code. This button goes to the next line of code, but it "
-"doesn't step line-by-line through functions."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:140
-msgid "**Break**. This button pauses the game's execution."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:141
-msgid "**Continue**. This button resumes the game after a breakpoint or pause."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:144
-msgid "Errors"
-msgstr "Fehler"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:146
-msgid ""
-"This is where errors and warning messages are printed while running the game."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:149
-msgid "Profiler"
-msgstr "Profiler"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:151
-msgid ""
-"The debugger comes with three profilers for your processor, network "
-"operations, and video memory."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:154
-msgid ""
-"The profiler is used to show why individual frames take as long as they do "
-"to process and render."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:157
-msgid ""
-"Unlike other debugging tools, the profiler does not start automatically. It "
-"can be started at any time during gameplay by pressing the start button. You "
-"can even start the profiler before opening the game to profile startup "
-"performance. It can also be started and stopped while the game is running "
-"without losing information from when it was last running. The information it "
-"records won't go away unless you click clear, or close the game, reopen it "
-"and start the profiler again."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:165
-msgid ""
-"After starting and stopping the profiler you should see things being kept "
-"track of on the left and a graph on the right. The items listed on the left "
-"are everything that contributes to frame time, and they should each have a "
-"value for time and calls for the current frame you are looking at."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:170
-msgid ""
-"The frame number in the top right tells you which frame you are currently "
-"looking at. You can change this by using the up or down arrows, typing in "
-"the frame number, or clicking on the graph."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:174
-msgid ""
-"If you want to add something to your graph, or think it looks too cluttered, "
-"you can check and uncheck the box next to an item to add or remove it from "
-"the graph."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:179
-msgid "Network Profiler"
-msgstr "Netzwerk-Profiler"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:181
-msgid ""
-"The Network Profiler contains a list of all the nodes that communicate over "
-"the multiplayer API and, for each one, some counters on the amount of "
-"incoming and outgoing network interactions. It also features a bandwidth "
-"meter that displays the total bandwidth usage at any given moment."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:187
-msgid "Monitors"
-msgstr "Monitore"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:189
-msgid ""
-"The monitors are graphs of several aspects of the game while its running "
-"such as FPS, memory usage, how many nodes are in a scene and more. All "
-"monitors keep track of stats automatically, so even if one monitor isn't "
-"open while the game is running, you can open it later and see how the values "
-"changed."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:195
-#, fuzzy
-msgid "Video Memory"
-msgstr "Grafikspeicher"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:197
-msgid ""
-"The **Video Mem** tab lists the video memory usage of the running game and "
-"the resources using it."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:201
-msgid "Misc"
-msgstr "Verschiedenes"
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:203
-msgid ""
-"The **Misc** tab contains tools to identify the control nodes you are "
-"clicking at runtime:"
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:206
-msgid ""
-"**Clicked Control** tells you where the clicked node is in the scene tree."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:207
-msgid "**Clicked Control Type** tells you the type of the node you clicked is."
-msgstr ""
-
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:210
 msgid "Remote in scene dock"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:212
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:121
 msgid ""
 "When running a game in the editor two options appear at the top of the "
 "**Scene** dock, **Remote** and **Local**. While using **Remote** you can "
 "inspect or change the nodes' parameters in the running project."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:218
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:127
 msgid ""
 "Some editor settings related to debugging can be found inside the **Editor "
 "Settings**, under the **Network > Debug** and **Debugger** sections."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
-msgid "API differences to GDScript"
+#, fuzzy
+msgid "C# API differences to GDScript"
 msgstr "Diferenças da API para o GDScript"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:6
@@ -129,15 +130,15 @@ msgid "Math functions"
 msgstr "Funções estáticas"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:40
-#, fuzzy
 msgid ""
 "Math global functions, like ``abs``, ``acos``, ``asin``, ``atan`` and "
 "``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
 "``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
 msgstr ""
-"Funções matemáticas como ``abs``, ``acos``, ``asin``, ``atan`` e ``atan2`` "
-"estão localizadas sob ``Mathf`` em vez de no escopo global. ``PI`` é ``Mathf."
-"PI``"
+"Funções matemáticas globais, como ``abs``, ``acos``, ``asin``, ``atan`` e "
+"``atan2`` estão localizadas sob ``Mathf`` como ``Abs``, ``Acos``, ``Asin``, "
+"``Atan`` and ``Atan2``.  A constante ``PI`` pode ser encontrada como ``Mathf."
+"Pi``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
 #, fuzzy
@@ -251,15 +252,14 @@ msgid "Singletons"
 msgstr "Singletons"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:129
-#, fuzzy
 msgid ""
 "Singletons are available as static classes rather than using the singleton "
 "pattern. This is to make code less verbose than it would be with an "
 "``Instance`` property."
 msgstr ""
-"Singletons fornecem métodos estáticos em vez de usar o padrão singleton em "
-"C#. Isso é para tornar o código menos detalhado e semelhante ao GDScript. "
-"Exemplo:"
+"Singletons estão disponíveis como classes estáticas em vez de usar o padrão "
+"singleton. Isto é para fazer o código menos prolixo que seria com uma "
+"propriedade ``Instanciada``. "
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:138
 msgid ""
@@ -280,14 +280,12 @@ msgid "String"
 msgstr "String"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:152
-#, fuzzy
 msgid ""
 "Use ``System.String`` (``string``). Most of Godot's String methods are "
 "provided by the ``StringExtensions`` class as extension methods."
 msgstr ""
-"Use ``System.String`` (``string``). Todos os métodos Godot String são "
-"fornecidos pela classe ``StringExtensions`` como métodos de extensão. "
-"Exemplo:"
+"Use ``System.String`` (``string``). Quase todos os métodos Godot String são "
+"fornecidos pela classe ``StringExtensions`` como métodos de extensão."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:162
 #, fuzzy

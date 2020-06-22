@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -697,12 +697,18 @@ msgstr ""
 "入“SIMPLE”，这是我们在调用godot_nativescript_register_class时在C源代码中使用"
 "的对象类名。 我们还需要通过单击Library并选择Load来选择我们的GDNLIB文件:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:513
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:515
+msgid ""
+"The *Class Name* must have the same spelling as the one given in "
+"``godot_nativescript_init`` when registering the class."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:519
 #, fuzzy
 msgid "Finally, click on the save icon and save this as ``bin/simple.gdns``:"
 msgstr "最后点击保存图标并将其另存为bin / simple.gdns:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:517
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:523
 #, fuzzy
 msgid ""
 "Now it's time to build our scene. Add a Control node to your scene as your "
@@ -713,27 +719,27 @@ msgstr ""
 "main。 然后添加一个按钮和一个标签作为子节点。 将它们放在屏幕上的好地方，并为"
 "您的按钮命名。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:523
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:529
 #, fuzzy
 msgid "Select the control node and attach a script to it:"
 msgstr "选择控制节点并为控制节点创建脚本:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:527
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:533
 #, fuzzy
 msgid "Next link up the ``pressed`` signal on the button to your script:"
 msgstr "接下来将按钮上的按下信号链接到您的脚本:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:531
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:537
 #, fuzzy
 msgid "Don't forget to save your scene, call it ``main.tscn``."
 msgstr "不要忘记保存您的场景，称之为main.tscn。"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:533
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:539
 #, fuzzy
 msgid "Now we can implement our ``main.gd`` code:"
 msgstr "现在我们可以实现main.gd代码:"
 
-#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:545
+#: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:551
 #, fuzzy
 msgid ""
 "After all that, our project should work. The first time you run it Godot "

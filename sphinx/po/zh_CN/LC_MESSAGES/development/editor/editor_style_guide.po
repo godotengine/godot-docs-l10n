@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/editor/editor_style_guide.rst:4
+#, fuzzy
+msgid "Editor style guide"
+msgstr "C# 风格指南"
+
+#: ../../docs/development/editor/editor_style_guide.rst:7
+msgid "Introduction"
+msgstr "简介"
+
+#: ../../docs/development/editor/editor_style_guide.rst:9
+msgid "Thanks for your interest in contributing to the Godot editor!"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:11
+msgid ""
+"This page describes the grammar and writing style used throughout the Godot "
+"editor. Following this style guide will help your contribution get merged "
+"faster since there will be fewer review steps required."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:16
+#, fuzzy
+msgid "Writing style"
+msgstr "警告系统"
+
+#: ../../docs/development/editor/editor_style_guide.rst:18
+msgid ""
+"**Write messages (errors, warnings, ...) as full sentences.** They should "
+"start with an uppercase letter and end with a period."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:20
+msgid ""
+"**Try to keep sentences short.** This makes it more likely that their "
+"translations will be short as well, which is a good thing to avoid UI bugs."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:22
+msgid ""
+"**Use contractions.** For example, use \"isn't\" instead of \"is not\". An "
+"exception to this rule can be made when you specifically want to emphasize "
+"one of the contraction's words."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:25
+msgid ""
+"**Use double quotes in messages** (``\"\"``) instead of simple quotes "
+"(``''``). Double quotes should be used to quote user input, file paths and "
+"possibly other things depending on the context."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:31
+msgid ""
+"Try to follow the :ref:`doc_docs_writing_guidelines` in addition to the "
+"guidelines outlined above."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:35
+#, fuzzy
+msgid "Button and menu texts"
+msgstr "选项和预设"
+
+#: ../../docs/development/editor/editor_style_guide.rst:37
+msgid "Capitalize text in buttons and menu actions:"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:39
+msgid "**Good:** *Open Editor Data Folder*"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:40
+msgid "**Bad:** *Open editor data folder*"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:42
+msgid ""
+"If a menu action opens a modal dialog, suffix it with an ellipsis (``...``)."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:44
+msgid "**Good:** *Editor Settings...*"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:45
+#, fuzzy
+msgid "**Bad:** *Editor Settings*"
+msgstr "编辑器图标"
+
+#: ../../docs/development/editor/editor_style_guide.rst:48
+#, fuzzy
+msgid "Inspector sections"
+msgstr "导入插件"
+
+#: ../../docs/development/editor/editor_style_guide.rst:50
+msgid ""
+"In general, don't create sections that contain less than 3 items. Sections "
+"that contain few items make it difficult to navigate the inspector, while "
+"missing the benefits of using sections such as folding."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:54
+msgid ""
+"There are some valid exceptions for this, such as material features in :ref:"
+"`class_SpatialMaterial`."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:57
+msgid "This advice also applies to the Project Settings and Editor Settings."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:60
+#, fuzzy
+msgid "Inspector performance hints"
+msgstr "导入插件"
+
+#: ../../docs/development/editor/editor_style_guide.rst:62
+msgid ""
+"Enum properties that noticeably impact performance should have a performance "
+"hint associated. The hint should refer to the *absolute* performance impact, "
+"rather than being relative to the other options provided in the enum. Here "
+"are some examples taken from the Godot editor:"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:67
+msgid "**Screen-space antialiasing:** *Disabled (Fastest), FXAA (Fast)*"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:68
+msgid ""
+"**MSAA quality:** *Disabled (Fastest), 2x (Fast), 4x (Average), 8x (Slow), "
+"16x (Slower)*"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:70
+msgid ""
+"**DirectionalLight mode:** *Orthogonal (Fast), PSSM 2 Splits (Average), PSSM "
+"4 Splits (Slow)*"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:73
+msgid ""
+"For consistency, try to stick to the terms below (from fastest to slowest):"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:75
+msgid "*Fastest, Faster, Fast, Average, Slow, Slower, Slowest*"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:77
+msgid ""
+"Their usage doesn't have to be contiguous. For example, you can use only "
+"\"Fast\" and \"Slow\" from the list above."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:80
+msgid ""
+"If you're adding a new enum, its values should be ordered from the fastest "
+"option to the slowest option."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:84
+#, fuzzy
+msgid "Tooltips"
+msgstr "工具"
+
+#: ../../docs/development/editor/editor_style_guide.rst:86
+msgid ""
+"Consider adding tooltips whenever the action performed by a button or menu "
+"action isn't obvious. You can also provide additional context or highlight "
+"caveats in the tooltip."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:90
+msgid ""
+"You can do this by calling ``set_tooltip(TTR(\"Text here.\"))`` on the "
+"Control-based node in question. If the tooltip is particularly long (more "
+"than ~80 characters), wrap it over several lines by adding line breaks using "
+"``\\n``."
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:94
+msgid ""
+"Tooltips should follow the writing style described above. In addition to "
+"this, use indicative mood instead of imperative mood:"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:97
+msgid "**Good:** *Computes global illumination for the selected GIProbe.*"
+msgstr ""
+
+#: ../../docs/development/editor/editor_style_guide.rst:98
+msgid "**Bad:** *Compute global illumination for the selected GIProbe.*"
+msgstr ""

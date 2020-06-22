@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,26 +79,24 @@ msgid "project.godot"
 msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
-#, fuzzy
 msgid ""
 "The ``project.godot`` file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
-"Le fichier project.godot est un fichier de description de projet, et il se "
-"trouve toujours à la racine du projet. En faite la localisation définie où "
-"la racine se situe. C'est le premier fichier que Godot va regarder quand il "
-"ouvre un projet."
+"Le fichier ``project.godot`` est le fichier de description du projet, et il "
+"se trouve toujours à la racine du projet. En faite la localisation définie "
+"où la racine se situe. C'est le premier fichier que Godot va regarder quand "
+"il ouvre un projet."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
-#, fuzzy
 msgid ""
 "This file contains the project configuration in plain text, using the win."
 "ini format. Even an empty ``project.godot`` can function as a basic "
 "definition of a blank project."
 msgstr ""
-"Ce fichier contient la configuration du projet en texte brut sous le format "
-"win.ini. Même un fichier project.godot vide peut fonctionner comme une "
+"Ce fichier contient la configuration du projet en texte brut, au format win."
+"ini. Même un fichier ``project.godot`` vide peut fonctionner comme une "
 "définition basique d'un projet vide."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:50
@@ -106,17 +104,17 @@ msgid "Path delimiter"
 msgstr "Délimiteur de chemin d'accès (Path delimiter)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
-#, fuzzy
 msgid ""
 "Godot only supports ``/`` as a path delimiter. This is done for portability "
 "reasons. All operating systems support this, even Windows, so a path such as "
 "``C:\\project\\project.godot`` needs to be typed as ``C:/project/project."
 "godot``."
 msgstr ""
-"Godot supporte uniquement ``/`` comment délimiteur de chemin d'accès pour "
-"plusieurs raisons. Toutes opérations de système supporte cela, même Windows. "
-"Un chemin tel que ``c:\\project\\project.godot`` doit donc être écrit ``c:/"
-"project/project.godot``."
+"Godot ne prend en charge que ``/`` comme délimiteur de chemin. Cela est fait "
+"pour des raisons de portabilité. Tous les systèmes d'exploitation le "
+"prennent en charge, même Windows, donc un chemin tel que ``C:\\project"
+"\\project.godot`` doit être saisie sous la forme ``C:/project/project."
+"godot``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:58
 msgid "Resource path"
@@ -133,13 +131,12 @@ msgstr ""
 "ce problème, le chemin spécial ``res://`` a été créé."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
-#, fuzzy
 msgid ""
 "The path ``res://`` will always point at the project root (where ``project."
 "godot`` is located, so ``res://project.godot`` is always valid)."
 msgstr ""
-"Le chemin ``res://`` pointera toujours vers la racine du projet (là où "
-"project.godot est localisé, ainsi ``res://project.godot`` est toujours "
+"Le chemin ``res://`` pointera toujours vers la racine du projet (là où est "
+"localisé ``project.godot``, ainsi ``res://project.godot`` est toujours "
 "valide)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
@@ -159,7 +156,6 @@ msgid "User path"
 msgstr "Chemin de l'utilisateur (User path)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
-#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
@@ -167,10 +163,12 @@ msgid ""
 "differently depending on the OS the project is running on. Local path "
 "resolution is further explained in :ref:`doc_data_paths`."
 msgstr ""
-"L'écriture sur le disque reste nécessaire lors de diverses tâches comme la "
-"sauvegarde d'une partie ou le téléchargement de contenu additionnel. Pour "
-"cela, le moteur assure le fait que le chemin spécial ``user://`` est "
-"toujours accessible en écriture."
+"L'écriture sur le disque est toujours nécessaire pour des tâches telles que "
+"la sauvegarde de l'état du jeu ou le téléchargement de packs de contenu. À "
+"cette fin, le moteur s'assure qu'il existe un chemin spécial ``user://`` qui "
+"est toujours accessible en écriture. Ce chemin se résout différemment selon "
+"le système d'exploitation sur lequel le projet s'exécute. La résolution du "
+"chemin local est expliquée plus en détail dans :ref:`doc_data_paths`."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid "Host file system"
@@ -221,7 +219,6 @@ msgstr ""
 "chemin compliqué ?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
-#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -232,8 +229,8 @@ msgid ""
 msgstr ""
 "Le second est que sous Windows et macOS, les fichiers et les chemins d'accès "
 "ne sont pas sensible à la casse. Si un développeur travaille dans un "
-"environnement non sensible à la casse et sauvegarde un asset \"monfichier.PNG"
-"\", mais le référence à \"monfichier.png\", cela marchera sur sa plateforme, "
+"environnement non sensible à la casse et sauvegarde un asset ``myfile.PNG``, "
+"mais le référence comme ``myfile.png``, cela marchera sur sa plateforme, "
 "mais pas sur d'autres plateforme tel que Linux, Android, etc. Cela peut "
 "également s'appliquer sur les fichiers binaires exportés, qui utilisent un "
 "paquet compressé pour stocker tous les fichiers."

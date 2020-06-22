@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,65 +226,33 @@ msgstr ""
 "después hace el empaquetamiento. Hay 3 diferentes modos de exportación:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
-msgid "Export every single file in the project"
+#, fuzzy
+msgid "Export all resources in the project"
 msgstr "Exportar todos los archivos del proyecto"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
-msgid "Export only resources (+ custom filter), this is the default."
-msgstr ""
-"Exportar solo los recursos (+filtro personalizado), esta es la opción por "
-"defecto."
+#, fuzzy
+msgid "Export selected scenes (and dependencies)"
+msgstr "Exportar solo los recursos seleccionados (+filtro personalizado)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
-msgid "Export only selected resources (+ custom filter)"
+#, fuzzy
+msgid "Export selected resources (and dependencies)"
 msgstr "Exportar solo los recursos seleccionados (+filtro personalizado)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
 msgid ""
-"**Export every single file** - This mode exports every single file in the "
-"project. This is good to test if something is being forgotten, but "
-"developers often have a lot of unrelated stuff around in the project "
-"directory, which makes it a bad idea."
+"**Export all resources in the project** will export every resource in the "
+"project. **Export selected scenes** and **Export selected resources** gives "
+"you a list of the scenes or resources in the project, and you have to select "
+"every scene or resource you want to export."
 msgstr ""
-"**Exportar todos los archivos del proyecto** - Este modo exporta todos los "
-"archivos del proyecto. Esto sirve para comprobar si se nos ha olvidado algo, "
-"pero los desarrolladores suelen tener muchos archivos innecesarios en el "
-"directorio de desarrollo, lo que hace que usar esta opción pueda ser una "
-"mala idea."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
-msgid ""
-"**Export only resources** - Only resources are exported. For most projects, "
-"this is enough. However many developers like to use custom datafiles in "
-"their games. To compensate for this, filters can be added for extra "
-"extensions (for instance, ``*.txt,*.csv``)."
-msgstr ""
-"**Exportar solo los recursos** - Solo se exportan los recursos. Para la "
-"mayoría de los proyectos esto es suficiente. No obstante, a muchos "
-"desarrolladores les gusta tener tipos de archivos personalizados en sus "
-"juegos. Para compensar esto, se pueden añadir filtros para extensiones "
-"adicionales (como . *.txt, *.csv, etc.)."
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
-msgid ""
-"**Export only selected resources** - Only select resources from a list are "
-"exported. This is probably overkill for most projects, but in some cases it "
-"is justified (usually huge projects). This mode offers total control of what "
-"is exported. Individual resources can be selected and dependency detection "
-"is performed to ensure that everything needed is added."
-msgstr ""
-"**Exportar solo los recursos seleccionados** - Solo se exportan los recursos "
-"de la lista. Esto probablemente es demasiado para muchos proyectos, pero en "
-"algunos casos está justificado (usualmente en proyectos enormes). Este modo "
-"ofrece un control total de lo que se exporta. Hay que seleccionar cada "
-"recurso individualmente y la detección de dependencias se ejecuta para "
-"asegurarnos de que se añade todo lo necesario."
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:124
 msgid "Exporting from the command line"
 msgstr "Exportando desde la línea de comandos"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid ""
 "In production, it is useful to automate builds, and Godot supports this with "
 "the ``--export`` and ``--export-debug`` command line parameters. Exporting "
@@ -297,7 +265,7 @@ msgstr ""
 "exportación para definir los parámetros de exportación. Una invocación "
 "básica comandos podría ser:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:135
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. The output path is "
@@ -309,7 +277,7 @@ msgstr ""
 "relativa a la ruta del proyecto o absoluta. No se respeta el directorio "
 "desde el cual el comando fue invocado."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:140
 msgid ""
 "You can also configure it to export only the PCK or ZIP file, allowing a "
 "single export to be used with multiple Godot executables. This takes place "
@@ -319,7 +287,7 @@ msgstr ""
 "permitiendo que una sola exportación sea usada con múltiples ejecutables de "
 "Godot. Esto sucede si el nombre del destino termina con ``.pck`` o ``.zip``."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:144
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"

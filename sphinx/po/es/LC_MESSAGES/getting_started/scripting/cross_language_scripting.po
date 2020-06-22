@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,8 @@ msgstr ""
 msgid ""
 "The following two scripts will be used as references throughout this page."
 msgstr ""
+"Los siguientes dos scripts se utilizarán como referencias a lo largo de esta "
+"página."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:66
 msgid "Instantiating nodes"
@@ -60,6 +62,9 @@ msgid ""
 "`doc_gdscript_classes_as_resources`), the script can be instantiated with :"
 "ref:`new() <class_CSharpScript_method_new>`."
 msgstr ""
+"Usar C# de GDScript no necesita mucho trabajo. Una vez cargado (ver :ref:"
+"`doc_gdscript_classes_as_resources`), el script puede ser instanciado con :"
+"ref:`new() <class_CSharpScript_method_new>`."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:86
 msgid ""
@@ -76,6 +81,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:91
 msgid "For example, MyCoolNode.cs should contain a class named MyCoolNode."
 msgstr ""
+"Por ejemplo, \"MyCoolNode.cs\"debe contener una clase llamada \"MyCoolNode\"."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:93
 msgid ""
@@ -94,6 +100,9 @@ msgid ""
 "From the C# side, everything work the same way. Once loaded, the GDScript "
 "can be instantiated with :ref:`GDScript.New() <class_GDScript_method_new>`."
 msgstr ""
+"Desde el lado de C#, todo funciona de la misma manera. Una vez cargado, el "
+"GDScript puede ser instanciado con :ref:`GDScript.New() "
+"<class_GDScript_method_new>`."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:107
 msgid ""
@@ -117,6 +126,8 @@ msgid ""
 "Accessing C# fields from GDScript is straightforward, you shouldn't have "
 "anything to worry about."
 msgstr ""
+"Acceder a los campos C# desde GDScript es sencillo, no deberías tener nada "
+"de qué preocuparte."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:128
 msgid ""
@@ -130,7 +141,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:133
 msgid "Accessing GDScript fields from C#"
-msgstr ""
+msgstr "Accediendo a los campos de GDScript desde C#"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:135
 msgid ""
@@ -151,6 +162,10 @@ msgid ""
 "GDScript side knows about. Essentially, you want to work with built-in types "
 "as described in :ref:`doc_gdscript` or classes extending :ref:`class_Object`."
 msgstr ""
+"Ten en cuenta que al establecer un valor de campo sólo debes usar los tipos "
+"que el lado GDScript conoce. Esencialmente, quieres trabajar con tipos "
+"incorporados como se describe en :ref:`doc_gdscript` o clases que se "
+"extienden :ref:`class_Object`."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:153
 msgid "Calling methods"
@@ -167,6 +182,11 @@ msgid ""
 "function signatures. If that's impossible, you'll see the following error: "
 "``Invalid call. Nonexistent function `FunctionName```."
 msgstr ""
+"De nuevo, llamar a los métodos C# desde GDScript debería ser sencillo. El "
+"proceso de clasificación hará todo lo posible para lanzar los argumentos "
+"para hacer coincidir las firmas de las funciones. Si eso es imposible, verá "
+"el siguiente error: ``Llamada inválida. Función inexistente \"Nombre de la "
+"función\"."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:174
 msgid "Calling GDScript methods from C#"
@@ -178,6 +198,10 @@ msgid ""
 "<class_Object_method_call>`. The first argument is the name of the method "
 "you want to call. The following arguments will be passed to said method."
 msgstr ""
+"Para llamar a los métodos de GDScript desde C# necesitarás usar :ref:`Object."
+"Call() <class_Object_method_call>`. El primer argumento es el nombre del "
+"método que quieres llamar. Los siguientes argumentos se pasarán a dicho "
+"método."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:198
 msgid ""
@@ -185,6 +209,10 @@ msgid ""
 "you'll need to cast it as ``object``. Otherwise, each element of your array "
 "will be treated as a single argument and the function signature won't match."
 msgstr ""
+"Como puedes ver, si el primer argumento del método llamado es un array, "
+"necesitarás lanzarlo como \"object\". De lo contrario, cada elemento de tu "
+"array será tratado como un único argumento y la firma de la función no "
+"coincidirá."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:204
 msgid "Inheritance"
@@ -198,3 +226,8 @@ msgid ""
 "GitHub issue <https://github.com/godotengine/godot/issues/38352>`__ for more "
 "information."
 msgstr ""
+"Un archivo GDSCript no puede heredar de un script C# del mismo en que un "
+"script C# no puede heredar de un archivo GDScript. Debido a la complejidad "
+"que llevaría implementarla, es poco probable que esta limitación sea "
+"cambiada en el futuro. Ver `esta issue en GitHub <https://github.com/"
+"godotengine/godot/issues/38352>`__ para más información."

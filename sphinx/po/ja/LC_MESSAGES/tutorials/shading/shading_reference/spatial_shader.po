@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr "レンダリングモード"
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:94
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:302
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:309
 msgid "Description"
 msgstr "説明"
 
@@ -329,12 +329,12 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:94
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:302
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:309
 msgid "Built-in"
 msgstr "ビルトイン"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:96
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:304
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:311
 msgid "in float **TIME**"
 msgstr "\\ in float **TIME**"
 
@@ -425,13 +425,13 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:313
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr "\\ in vec2 **VIEWPORT_SIZE**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:306
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:313
 msgid "Size of viewport (in pixels)."
 msgstr "ビューポートのサイズ (ピクセル単位)。"
 
@@ -441,19 +441,19 @@ msgstr "\\ inout mat4 **WORLD_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:313
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:320
 msgid "Model space to world space transform."
 msgstr "モデル空間からワールド空間への変換。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:315
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:322
 msgid "in mat4 **INV_CAMERA_MATRIX**"
 msgstr "\\ in mat4 **INV_CAMERA_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:315
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:322
 msgid "World space to view space transform."
 msgstr "ワールド空間からビュー空間への変換。"
 
@@ -463,19 +463,19 @@ msgstr "\\ inout mat4 **PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:319
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:326
 msgid "View space to clip space transform."
 msgstr "ビュー空間からクリップ空間への変換。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:317
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:324
 msgid "in mat4 **CAMERA_MATRIX**"
 msgstr "\\ in mat4 **CAMERA_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:317
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:324
 msgid "View space to world space transform."
 msgstr "ビュー空間からワールド空間への変換。"
 
@@ -493,7 +493,7 @@ msgstr "\\ inout mat4 **INV_PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:321
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:328
 msgid "Clip space to view space transform."
 msgstr "クリップ空間からビュー空間への変換。"
 
@@ -567,13 +567,13 @@ msgstr "UVセカンダリチャネル。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:171
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:228
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:335
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:342
 msgid "in bool **OUTPUT_IS_SRGB**"
 msgstr "\\ in bool **OUTPUT_IS_SRGB**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:171
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:228
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:335
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:342
 msgid ""
 "``true`` when calculations happen in sRGB color space (``true`` in GLES2, "
 "``false`` in GLES3)."
@@ -631,7 +631,7 @@ msgstr ""
 "パティに書き込みを行わない場合、Godotは対応する機能を最適化します。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:315
 msgid "in vec4 **FRAGCOORD**"
 msgstr "\\ in vec4 **FRAGCOORD**"
 
@@ -646,17 +646,17 @@ msgstr ""
 "は左下です。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:313
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:320
 msgid "in mat4 **WORLD_MATRIX**"
 msgstr "\\ in mat4 **WORLD_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:319
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:326
 msgid "in mat4 **PROJECTION_MATRIX**"
 msgstr "\\ in mat4 **PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:321
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:328
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
 msgstr "\\ in mat4 **INV_PROJECTION_MATRIX**"
 
@@ -669,7 +669,7 @@ msgid "Vertex that comes from vertex function (default, in view space)."
 msgstr "頂点関数からの頂点(デフォルト、ビュー空間内)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:210
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:329
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:336
 msgid "in vec3 **VIEW**"
 msgstr "\\ in vec3 **VIEW**"
 
@@ -715,22 +715,22 @@ msgid "Depth from variable above. Defaults to 1.0."
 msgstr "上記の変数からの深さ。デフォルトは1.0です。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:325
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:332
 msgid "in vec2 **UV**"
 msgstr "\\ in vec2 **UV**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:325
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:332
 msgid "UV that comes from vertex function."
 msgstr "頂点関数からやって来るUV。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:226
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:327
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:334
 msgid "in vec2 **UV2**"
 msgstr "\\ in vec2 **UV2**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:226
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:327
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:334
 msgid "UV2 that comes from vertex function."
 msgstr "頂点関数からやって来るUV2。"
 
@@ -751,12 +751,12 @@ msgid "Albedo (default white)."
 msgstr "アルベド(デフォルトは白)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:234
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:342
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:349
 msgid "out float **ALPHA**"
 msgstr "\\ out float **ALPHA**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:234
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:342
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:349
 msgid ""
 "Alpha (0..1); if written to, the material will go to the transparent "
 "pipeline."
@@ -992,11 +992,19 @@ msgstr ""
 "ライトを一緒に追加する場合は、上書きするのではなく、\\ ``+=`` を使用して "
 "``DIFFUSE_LIGHT`` にライトの関与を追加します。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:304
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:303
+msgid ""
+"The ``light()`` function won't be run if the ``vertex_lighting`` render mode "
+"is enabled, or if **Rendering > Quality > Shading > Force Vertex Shading** "
+"is enabled in the Project Settings. (It's enabled by default on mobile "
+"platforms.)"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:311
 msgid "Elapsed total time in seconds."
 msgstr "経過した合計時間(秒単位)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:308
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:315
 msgid ""
 "Coordinate of pixel center in screen space. ``xy`` specifies position in "
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
@@ -1006,78 +1014,78 @@ msgstr ""
 "``z`` は ``DEPTH`` を使用しない場合のフラグメントの深さを指定します。原点は左"
 "下です。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:323
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:330
 msgid "in vec3 **NORMAL**"
 msgstr "\\ in vec3 **NORMAL**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:323
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:330
 msgid "Normal vector, in view space."
 msgstr "ビュー空間内の法線ベクトル。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:329
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:336
 msgid "View vector, in view space."
 msgstr "ビュー空間内のビューベクトル。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:331
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:338
 msgid "in vec3 **LIGHT**"
 msgstr "\\ in vec3 **LIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:331
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:338
 msgid "Light Vector, in view space."
 msgstr "ビュー空間内のライトベクトル。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:333
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:340
 msgid "in vec3 **ATTENUATION**"
 msgstr "\\ in vec3 **ATTENUATION**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:333
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:340
 msgid "Attenuation based on distance or shadow."
 msgstr "距離または影に基づく減衰。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:338
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:345
 msgid "in vec3 **ALBEDO**"
 msgstr "\\ in vec3 **ALBEDO**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:338
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:345
 msgid "Base albedo."
 msgstr "ベースアルベド。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:340
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:347
 msgid "in vec3 **LIGHT_COLOR**"
 msgstr "\\ in vec3 **LIGHT_COLOR**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:340
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:347
 msgid "Color of light multiplied by energy."
 msgstr "ライトの色にエネルギーを掛けたもの。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:345
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:352
 msgid "in float **ROUGHNESS**"
 msgstr "\\ in float **ROUGHNESS**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:345
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:352
 msgid "Roughness."
 msgstr "粗さ。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:347
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:354
 msgid "in vec3 **TRANSMISSION**"
 msgstr "\\ in vec3 **TRANSMISSION**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:347
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:354
 msgid "Transmission mask from fragment function."
 msgstr "フラグメント関数からのトランスミッションマスク(チャンネルマスク)。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:349
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:356
 msgid "out vec3 **DIFFUSE_LIGHT**"
 msgstr "\\ out vec3 **DIFFUSE_LIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:349
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:356
 msgid "Diffuse light result."
 msgstr "拡散光の結果。"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:351
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:358
 msgid "out vec3 **SPECULAR_LIGHT**"
 msgstr "\\ out vec3 **SPECULAR_LIGHT**"
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:351
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:358
 msgid "Specular light result."
 msgstr "スペキュラー光の結果。"

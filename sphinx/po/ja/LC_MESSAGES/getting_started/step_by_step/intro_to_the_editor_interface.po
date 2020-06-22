@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
-#, fuzzy
 msgid "Introduction to Godot's editor"
 msgstr "Godotエディタ・イントロダクション"
 
@@ -57,7 +56,6 @@ msgstr ""
 "除、インポート、またはプレイできます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
-#, fuzzy
 msgid ""
 "In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
@@ -95,7 +93,6 @@ msgstr ""
 "ンダラーを選択します。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
-#, fuzzy
 msgid ""
 "Click the Browse button to open Godot's file browser and pick a location or "
 "type the folder's path in the Project Path field."
@@ -137,13 +134,12 @@ msgstr ""
 "が作成され、エディタで開きます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"次回にプロジェクトマネージャーを開くと、リストに新しいプロジェクトが表示され"
-"ます。ダブルクリックしてエディタで開きます。"
+"次回以降プロジェクトマネージャーを開くと、リストに新しいプロジェクトが表示さ"
+"れます。ダブルクリックしてエディタで開きます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
 msgid ""
@@ -165,14 +161,13 @@ msgid "Your first look at Godot's editor"
 msgstr "はじめてのGodotエディタ"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"Godotへようこそ！　プロジェクトを開くと、エディタのインターフェイスが表示さ"
-"れ、上部にはメニューが、ビューポートを挟んだ両側にはドックがあるはずです。"
+"Godotへようこそ！　プロジェクトを開くとエディタのインターフェイスが表示され上"
+"部にはメニューが、そしてビューポートを挟んだ両側にはドックがあるはずです。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
 msgid ""
@@ -183,7 +178,6 @@ msgstr ""
 "そして\\ **テストプレイボタン**\\ があります。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
@@ -191,24 +185,22 @@ msgstr ""
 "す。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
-#, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"**シーン ドック**\\ には開いているシーンの中身がリストされていて、\\ **インス"
-"ペクタ**\\ ではそれらのプロパティを管理できます。"
+"**シーン ドック** には開いているシーンの中身がリストされており、 **インスペク"
+"タ** ではそれらのプロパティを管理できます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you'll find tools "
 "to move, scale or lock your scene's objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"中央上部にある\\ **ツールバー**\\ には、シーン内のオブジェクトを動かしたり、"
-"サイズ変更やロックするためのツールが並んでいます。ワークスペースごとに違うも"
-"のに変わります。"
+"中央上部にある **ツールバー** には、シーン内のオブジェクトを動かしたりサイズ"
+"変更やこれらをロックするためのツールが並んでいます。それらはワークスペースご"
+"とに違うものに変わります。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
 #, fuzzy
@@ -267,10 +259,11 @@ msgstr ""
 "ご覧ください。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
+#, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
-"+ 3` on macOS) to access it, and :kbd:`F4` to search the reference."
+"+ 3` on macOS) to access it, and :kbd:`Shift + F1` to search the reference."
 msgstr ""
 "**Script**\\ ワークスペースは、デバッガーや豊富な自動補完、および組み込みの"
 "コードリファレンスを備えた、完全なコードエディタです。\\ :kbd:`F3` ( macOSで"
@@ -299,15 +292,16 @@ msgid ""
 "Click on the item you are looking for and press open. The documentation for "
 "the item will be displayed in the script workspace."
 msgstr ""
+"探している項目をクリックして[開く]を押します。項目のドキュメントがスクリプト"
+"ワークスペースに表示されます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
 "scripts and assets to use in your projects."
 msgstr ""
-"最後に\\ **AssetLib**\\ はあなたのプロジェクトで使える、フリーのアドオン、ス"
-"クリプトやアセットをそろえたライブラリです。"
+"最後に **AssetLib** はあなたのプロジェクトで使えるフリーのアドオン、スクリプ"
+"トやアセットをそろえたライブラリです。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:162
 msgid "Modify the interface"

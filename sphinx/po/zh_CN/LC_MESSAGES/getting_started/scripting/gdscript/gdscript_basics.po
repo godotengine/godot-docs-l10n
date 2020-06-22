@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -618,7 +618,7 @@ msgstr "三元 if/else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 msgid "``as``"
-msgstr ""
+msgstr "``as``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 #, fuzzy
@@ -1424,9 +1424,8 @@ msgstr "**控制流**："
 msgid ""
 "The patterns are matched from top to bottom. If a pattern matches, the first "
 "corresponding block will be executed. After that, the execution continues "
-"below the ``match`` statement. If you want to have a fallthrough, you can "
-"use ``continue`` to stop execution in the current block and check for an "
-"additional match in the patterns below it."
+"below the ``match`` statement. You can use ``continue`` to stop execution in "
+"the current block and check for an additional match in the patterns below it."
 msgstr ""
 "模式从上到下匹配。如果模式匹配，将执行相应的块。之后，在 ``match`` 语句之下将"
 "继续执行。如果您希望下移，可以使用 ``continue`` 来停止当前块中的执行并检查其"
@@ -2080,7 +2079,7 @@ msgstr "``my_func`` 仅在按下两个按钮后继续执行。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1544
 msgid "You can also get the signal's argument once it's emitted by an object:"
-msgstr ""
+msgstr "一旦一个信号被某个对象发出，你还可以获取该信号的参数："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1551
 msgid ""

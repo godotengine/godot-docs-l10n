@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,16 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:4
 msgid "HTML5 shell class reference"
-msgstr ""
+msgstr "Referência da classe shell HTML5"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:6
 msgid ""
 "Projects exported for the Web expose the ``Engine`` class to the JavaScript "
 "environment, that allows fine control over the engine's start-up process."
 msgstr ""
+"Projetos exportados para a Web expõem a classe ``Engine`` ao ambiente "
+"JavaScript, que permite um bom controle sobre o processo de inicialização do "
+"motor."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:9
 msgid ""
@@ -33,6 +36,9 @@ msgid ""
 "of `Promises <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/"
 "Using_promises>`__."
 msgstr ""
+"Este API é construído de uma maneira assíncrona e requer conhecimento básico "
+"sobre `Promises <https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/"
+"Guide/Usando_promises>__."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:13
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:43
@@ -47,11 +53,15 @@ msgid ""
 "the exported HTML page. To understand practical use of the ``Engine`` class, "
 "see :ref:`Custom HTML page for Web export <doc_customizing_html5_shell>`."
 msgstr ""
+"A classe ``Engine`` fornece métodos para carregar e inicializar projetos "
+"exportados na Web. Para configurações de exportação padrão, isto já é parte "
+"da página HTML exportada. Para entender o uso prático da classe ``Engine``, "
+"veja :ref: `Personalizar página HTML para exportação Web "
+"<doc_customizing_html5_shell>`."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:20
-#, fuzzy
 msgid "Static Methods"
-msgstr "Funções estáticas"
+msgstr "Métodos Estáticos"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:23
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:45
@@ -100,9 +110,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:33
-#, fuzzy
 msgid "Instance Properties"
-msgstr "Sinais e propriedades"
+msgstr "Propriedades de Instância"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:36
 msgid "Emscripten ``Module``"
@@ -113,9 +122,8 @@ msgid "`engine.rtenv <#engine.rtenv>`__"
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:40
-#, fuzzy
 msgid "Instance Methods"
-msgstr "Criando instâncias de cenas"
+msgstr "Métodos de Instância"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:43
 msgid "`Engine <#Engine>`__ **(** **)**"
@@ -190,9 +198,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:72
-#, fuzzy
 msgid "Static Method Descriptions"
-msgstr "Funções estáticas"
+msgstr "Descrições de Métodos Estáticos"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:76
 msgid "Load the engine from the specified base path."
@@ -256,7 +263,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:110
 msgid "Instance Property Descriptions"
-msgstr ""
+msgstr "Descrições de Propriedades de Instância"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:114
 msgid ""
@@ -267,7 +274,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:118
 msgid "Instance Method Descriptions"
-msgstr ""
+msgstr "Descrições de Métodos de Instância"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:122
 msgid "Create a new instance of the ``Engine`` class."

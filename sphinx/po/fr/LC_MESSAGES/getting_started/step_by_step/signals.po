@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,14 +39,14 @@ msgstr ""
 "Les signaux sont la version de Godot du modèle *observer*. Ils permettent à "
 "un nœud d'envoyer un message que les autres nœuds peuvent écouter et auquel "
 "ils peuvent répondre. Par exemple, au lieu de vérifier en continu si un "
-"bouton est appuyé, le bouton peut émettre un signal lorsqu'il est appuyé."
+"bouton est appuyé, le bouton peut émettre un signal lorsqu'il est pressé."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:17
 msgid ""
 "You can read more about the observer pattern here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"Vous pouvez en savoir plus sur le modèle d'observateur ici : https://"
+"Vous pouvez en savoir plus sur le modèle *observer* ici : https://"
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:19
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:27
 msgid "Timer example"
-msgstr "Exemple de minuterie"
+msgstr "Exemple de Timer"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:29
 msgid ""
@@ -142,7 +142,7 @@ msgid ""
 "signal. Select the root node."
 msgstr ""
 "Sur le côté gauche, vous verrez les nœuds de votre scène et pourrez "
-"sélectionner le nœud que vous souhaitez \"écouter\" pour le signal. Notez "
+"sélectionner le nœud que vous souhaitez faire \"écouter\" le signal. Notez "
 "que le nœud Timer est bleu, c'est une indication visuelle que c'est le nœud "
 "qui émet le signal. Sélectionnez le nœud racine."
 
@@ -204,8 +204,7 @@ msgid ""
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
 "Exécutez la scène et vous verrez le Sprite clignoter à chaque seconde. Vous "
-"pouvez modifier la propriété *Temps d'Attente* du temporisateur pour "
-"modifier cela."
+"pouvez modifier la propriété *Wait Time* du Timer pour modifier cela."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:125
 msgid "Connecting signals in code"
@@ -218,9 +217,9 @@ msgid ""
 "can't use the editor to make the connection."
 msgstr ""
 "Vous pouvez également établir la connexion du signal en code plutôt qu'avec "
-"l'éditeur. Cela est généralement nécessaire lorsque vous installez des nœuds "
-"via du code et vous ne pouvez donc pas utiliser l'éditeur pour établir la "
-"connexion."
+"l'éditeur. Cela est généralement nécessaire lorsque vous instanciez des "
+"nœuds via du code et vous ne pouvez donc pas utiliser l'éditeur pour établir "
+"la connexion."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
@@ -228,7 +227,7 @@ msgid ""
 "\"Node\" tab and clicking disconnect."
 msgstr ""
 "Commencez par déconnecter le signal en sélectionnant la connexion dans "
-"l'onglet \"Nœud\" de la minuterie et en cliquant sur Déconnecter."
+"l'onglet \"Nœud\" du Timer et en cliquant sur Déconnecter."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:136
 msgid ""
@@ -242,7 +241,7 @@ msgstr ""
 "``connect``. Nous allons la mettre dans ``_ready()`` afin que la connexion "
 "soit établie lors de l'exécution. La syntaxe de la fonction est "
 "``<nœud_source>.connecter(<nom_signal>, <nœud_cible>, <nom_fonction_ "
-"cible>)``. Voici le code pour la connexion de notre minuterie :"
+"cible>)``. Voici le code pour la connexion de notre Timer :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:171
 msgid "Custom signals"

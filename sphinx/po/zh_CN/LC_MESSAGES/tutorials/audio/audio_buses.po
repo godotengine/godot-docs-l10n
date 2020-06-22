@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,8 +96,8 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_buses.rst:35
 #, fuzzy
 msgid ""
-"To avoid clipping, your sound mix be arranged so that the output of the "
-"*master bus* (more on that later) never exceeds 0 dB."
+"To avoid clipping, your sound mix should be arranged so that the output of "
+"the *master bus* (more on that later) never exceeds 0 dB."
 msgstr ""
 "由于上述原因，您的声音混音应该以 *Master Bus* 的声音输出(稍后更多)的方式工"
 "作，不应超过0dB。"
@@ -148,7 +148,6 @@ msgstr ""
 "音的响度。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:60
-#, fuzzy
 msgid ""
 "The leftmost bus is the *master bus*. This bus outputs the mix to your "
 "speakers so, as mentioned in the *Decibel scale* section above, make sure "
@@ -158,10 +157,11 @@ msgid ""
 "the non-master audio buses. Routing always passes audio from buses on the "
 "right to buses further to the left. This avoids infinite routing loops."
 msgstr ""
-"最左边的总线是 *Master Bus* 。 此总线将混音输出到您的扬声器，因此，如上面的项"
-"目(分贝音阶)中所述，请确保您的混音在此总线中很少或永远不会超过0dB。 其余的音"
-"频总线用于 *路由* 。 这意味着，在修改声音后，他们必须将它发送到左边的另一辆公"
-"共汽车。 路由总是从右到左无一例外，因为这可以避免创建无限的路由循环！"
+"最左边的总线是 *主总线* 。 此总线将混音输出到您的扬声器，因此，正如之前*分贝"
+"刻度*部分所述，请确保您在此总线中的混音水平永远不会达到 0 dB。其余的音频总线"
+"可以被灵活路由。 在修改声音之后，它们会将其送往位于左侧的另一个总线。非主总线"
+"的目标总线可以被单独设置。右侧总线的音频总是会被路由至左侧总线，这避免了无限"
+"循环。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:70
 #, fuzzy
@@ -352,7 +352,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:166
 msgid "EQ"
-msgstr ""
+msgstr "EQ"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:168
 msgid ""

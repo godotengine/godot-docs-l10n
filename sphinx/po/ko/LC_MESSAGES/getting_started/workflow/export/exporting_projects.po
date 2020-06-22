@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -217,58 +217,33 @@ msgstr ""
 "다. 내보내기 위한 3가지 다른 모드가 있습니다:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
-msgid "Export every single file in the project"
+#, fuzzy
+msgid "Export all resources in the project"
 msgstr "프로젝트에 모든 단일 파일을 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
-msgid "Export only resources (+ custom filter), this is the default."
-msgstr "리소스 (+ 맞춤 필터)만 내보내기, 기본 값입니다."
+#, fuzzy
+msgid "Export selected scenes (and dependencies)"
+msgstr "선택된 리소스 (+ 맞춤 필더)만 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
-msgid "Export only selected resources (+ custom filter)"
+#, fuzzy
+msgid "Export selected resources (and dependencies)"
 msgstr "선택된 리소스 (+ 맞춤 필더)만 내보내기"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
 msgid ""
-"**Export every single file** - This mode exports every single file in the "
-"project. This is good to test if something is being forgotten, but "
-"developers often have a lot of unrelated stuff around in the project "
-"directory, which makes it a bad idea."
+"**Export all resources in the project** will export every resource in the "
+"project. **Export selected scenes** and **Export selected resources** gives "
+"you a list of the scenes or resources in the project, and you have to select "
+"every scene or resource you want to export."
 msgstr ""
-"**모든 단일 파일 내보내기** - 이 모드는 프로젝트에서 모든 단일 파일을 내보냅"
-"니다. 잊어버린 것이 있는지 테스트하기는 좋지만, 개발자는 프로젝트 디렉토리에 "
-"종종 많은 관련은 없으므로, 나쁜 생각입니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
-msgid ""
-"**Export only resources** - Only resources are exported. For most projects, "
-"this is enough. However many developers like to use custom datafiles in "
-"their games. To compensate for this, filters can be added for extra "
-"extensions (for instance, ``*.txt,*.csv``)."
-msgstr ""
-"**리소스만 내보내기** - 리소스만 내보냅니다. 대부분의 프로젝트에는 충분합니"
-"다. 하지만 많은 개발자가 게임에 맞춤 데이터 파일을 사용하기를 좋아합니다. 이"
-"를 보완하기 위해, 추가 확장을 위한 필터가 추가될 수 있습니다 (예를 들어, ``*."
-"txt,*.csv``\\ 가 있습니다)."
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
-msgid ""
-"**Export only selected resources** - Only select resources from a list are "
-"exported. This is probably overkill for most projects, but in some cases it "
-"is justified (usually huge projects). This mode offers total control of what "
-"is exported. Individual resources can be selected and dependency detection "
-"is performed to ensure that everything needed is added."
-msgstr ""
-"**선택된 리소스만 내보내기** - 목록에서 선택된 리소스만 내보냅니다. 이것도 대"
-"부분의 프로젝트에는 과분할 정도일지 몰라도, 몇몇 경우에는 이것이 합당하다 (보"
-"통 거대한 프로젝트). 이 모드로 내보내는 것을 전부다 관리할 수 있습니다. 개별 "
-"리소스를 선택하고 필요한 모든 것을 추가하도록 종속 감지 여부를 확인합니다."
-
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:124
 msgid "Exporting from the command line"
 msgstr "명령줄에서 내보내기"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid ""
 "In production, it is useful to automate builds, and Godot supports this with "
 "the ``--export`` and ``--export-debug`` command line parameters. Exporting "
@@ -280,7 +255,7 @@ msgstr ""
 "에서 내보내려면 여전히 내보내기 매개 변수를 정의하기 위한 내보내기 프리셋이 "
 "필요합니다. 명령의 기본 호출은 다음과 같습니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:135
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. The output path is "
@@ -291,7 +266,7 @@ msgstr ""
 "이것은 ``some_name.exe``\\ 로 내보냅니다. 출력 경로는 프로젝트 경로 또는 절"
 "대 경로를 기준으로 합니다; 명령이 호출 된 디렉토리를 따르지 않습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:140
 #, fuzzy
 msgid ""
 "You can also configure it to export only the PCK or ZIP file, allowing a "
@@ -301,7 +276,7 @@ msgstr ""
 "PCK 또는 ZIP 파일만 내보내도록 설정할 수도 있습니다 (여러 Godot 실행 파일에"
 "서 단일 내보내기를 사용할 수 있음). 다음과 같은 경우에 발생합니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:144
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"

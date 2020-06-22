@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -390,18 +390,20 @@ msgid ""
 "we chose to stick to writing dynamic code. This leads to writing GDScript "
 "that is concise and accessible."
 msgstr ""
+"文档中的代码示例应遵循一致的样式，以免混淆用户。 由于静态类型提示是GDScript的"
+"可选功能，因此我们选择坚持编写动态代码。 这导致编写简洁明了的GDScript。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:285
 msgid "The exception is topics that explain static typing concepts to users."
-msgstr ""
+msgstr "例外情况是向用户解释静态类型概念的主题。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:287
 msgid "**Don't** add a type hint with a colon or by casting:"
-msgstr ""
+msgstr "**不要**用冒号或强制转换添加类型提示："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:297
 msgid "**Do** write constants variables with dynamic typing:"
-msgstr ""
+msgstr "[Do] 使用动态类型编写常量变量："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:307
 #, fuzzy
@@ -415,7 +417,7 @@ msgstr "动态类型的优缺点"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:330
 msgid "Use real-world code examples where appropriate"
-msgstr ""
+msgstr "在适当的情况下使用实际代码示例"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:332
 msgid ""
@@ -423,6 +425,8 @@ msgid ""
 "and ``bars``. You can also copy them directly from your game projects, "
 "ensuring that any code snippet compiles without errors."
 msgstr ""
+"对于初学者来说，比起抽象的foos和bars，现实世界中的示例更容易被使用。您还可以"
+"直接从游戏项目中复制它们，以确保所有代码段都能正确编译。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:336
 msgid ""
@@ -430,6 +434,8 @@ msgid ""
 "to understand code better. It gives them a frame of reference as to where "
 "they could use the code snippets in a live project."
 msgstr ""
+"编写``var speed = 10''而不是``var my_var = 10``可使初学者更好地理解代码。它为"
+"他们提供了有关在实际项目中可以在何处使用代码段的参考框架。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:340
 #, fuzzy
@@ -448,6 +454,8 @@ msgid ""
 "``foo()`` or ``my_func()`` and consider more meaningful names for your "
 "examples."
 msgstr ""
+"当然，有时候使用实际示例是不切实际的。在这种情况下，您仍应避免使用诸如“ "
+"my_var”，“ foo（）”或“ my_func（）”之类的名称，并考虑示例中更有意义的名称。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:370
 msgid ""
@@ -619,34 +627,43 @@ msgid ""
 "spelled out form (:kbd:`Control`/:kbd:`Command`). For combinations, use the "
 "``+`` symbol with a space on either side of the symbol."
 msgstr ""
+"键盘和鼠标快捷方式应使用``：kbd：``标记，该标记可使快捷方式在其余文本和内联代"
+"码中脱颖而出。使用紧凑形式的修饰键（：kbd：`Ctrl` /：kbd：`Cmd`）而不是其拼写"
+"形式（：kbd：`Control` /：kbd：`Command）。对于组合，请在符号的两侧使用``"
+"+''符号。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:490
 msgid ""
 "Make sure to mention shortcuts that differ on macOS compared to other "
 "platforms. On macOS, ``Cmd`` often replaces ``Ctrl`` in keyboard shortcuts."
 msgstr ""
+"确保提及与其他平台相比在macOS上不同的快捷方式。在macOS上，“ Cmd”通常会替换键"
+"盘快捷键中的“ Ctrl”。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:493
 msgid ""
 "Try to integrate the shortcut into sentences the best you can. Here are some "
 "examples with the ``:kbd:`` tag left as-is for better visibility:"
 msgstr ""
+"尽量将快捷方式集成到句子中。以下是带有``：kbd：``标记的示例，以便更好地查看："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:496
 msgid ""
 "Press ``:kbd:`Ctrl + Alt + T``` to toggle the panel (``:kbd:`Cmd + Alt + "
 "T``` on macOS)."
 msgstr ""
+"按``：kbd：`Ctrl + Alt + T`''来切换面板（在MacOS上为:: kbd：`Cmd + Alt + "
+"T```）。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:497
 msgid ""
 "Press ``:kbd:`Space``` and hold the left mouse button to pan in the 2D "
 "editor."
-msgstr ""
+msgstr "按``：kbd：`Space`并按住鼠标左键在2D编辑器中平移。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:498
 msgid "Press ``:kbd:`Shift + Up Arrow``` to move the node upwards by 8 pixels."
-msgstr ""
+msgstr "按`:kbd:`Shift+Up Arrow``可将节点向上移动8像素。"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:501
 msgid "Image contribution guidelines"

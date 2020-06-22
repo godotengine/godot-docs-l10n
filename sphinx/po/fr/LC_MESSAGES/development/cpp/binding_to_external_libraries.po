@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,11 +63,18 @@ msgstr ""
 "Tout comme avant, la nouvelle classe doit être enregistrée d'une manière ou "
 "d'une autre, deux fichiers supplémentaires doivent être créés :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:78
-msgid "With the following contents:"
-msgstr "Avec les éléments suivants :"
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:79
+msgid ""
+"These files must be in the top-level folder of your module (next to your "
+"``SCsub`` and ``config.py`` files) for the module to be registered properly."
+msgstr ""
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:105
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:82
+#, fuzzy
+msgid "These files should contain the following:"
+msgstr "Ce code vous donne le comportement suivant :"
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:109
 msgid ""
 "Next, you need to create a ``SCsub`` file so the build system compiles this "
 "module:"
@@ -75,7 +82,7 @@ msgstr ""
 "Ensuite, vous devez créer un fichier ``SCsub`` pour que le système de "
 "compilation compile ce module :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:117
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:121
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
 "library files.  See the library's official documentation for specific "
@@ -88,13 +95,14 @@ msgstr ""
 "procéder pour votre système d'exploitation. Nous avons inclus les commandes "
 "d'installation pour Linux ci-dessous, pour référence."
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:128
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:132
+#, fuzzy
 msgid ""
-"**Important:** The voices that Festival uses (and any other potential "
-"external/3rd-party resource) all have varying licenses and terms of use; "
-"some (if not most) of them may be be problematic with Godot, even if the "
-"Festival Library itself is MIT License compatible. Please be sure to check "
-"the licenses and terms of use."
+"The voices that Festival uses (and any other potential external/3rd-party "
+"resource) all have varying licenses and terms of use; some (if not most) of "
+"them may be be problematic with Godot, even if the Festival Library itself "
+"is MIT License compatible. Please be sure to check the licenses and terms of "
+"use."
 msgstr ""
 "**Important :** Les voix utilisées par Festival (et d'autre ressource "
 "externe/ressource tierce) ont toutes des licences et des conditions "
@@ -103,7 +111,7 @@ msgstr ""
 "elle-même est sous Licence compatible MIT. Veuillez lire les licences et les "
 "conditions d'utilisation."
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:133
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:137
 msgid ""
 "The external library will also need to be installed inside your module to "
 "make the source files accessible to the compiler, while also keeping the "
@@ -117,7 +125,7 @@ msgstr ""
 "speech_tools peuvent être installés depuis le répertoire modules/tts/ via "
 "git en utilisant les commandes suivantes :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:143
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:147
 msgid ""
 "If you don't want the external repository source files committed to your "
 "repository, you can link to them instead by adding them as submodules (from "
@@ -128,13 +136,13 @@ msgstr ""
 "comme sous-modules (depuis les répertoires modules/tts/), comme montré ci-"
 "dessous :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:152
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:156
+#, fuzzy
 msgid ""
-"**Important:** Please note that Git submodules are not used in the Godot "
-"repository.  If you are developing a module to be merged into the main Godot "
-"repository, you should not use submodules.  If your module doesn't get "
-"merged in, you can always try to implement the external library as a "
-"GDNative C++ plugin."
+"Please note that Git submodules are not used in the Godot repository.  If "
+"you are developing a module to be merged into the main Godot repository, you "
+"should not use submodules.  If your module doesn't get merged in, you can "
+"always try to implement the external library as a GDNative C++ plugin."
 msgstr ""
 "**Important :** Veuillez noter que les sous-modules Git ne sont pas utilisés "
 "dans le dépôt Godot.  Si vous développez un module à merge dans le dépôt "
@@ -142,7 +150,7 @@ msgstr ""
 "module n'est pas merged, vous pouvez toujours essayer d'implémenter la "
 "bibliothèque externe comme un plugin GDNative C++."
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:157
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:161
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
@@ -150,7 +158,7 @@ msgstr ""
 "Pour ajouter des répertoires d'include à consulter par le compilateur, vous "
 "pouvez l'ajouter aux chemins de l'environnement :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:168
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:172
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone `env` first, so it won't add those flags to whole Godot build "
@@ -161,20 +169,20 @@ msgstr ""
 "n'ajoute pas ces drapeaux à la construction de Godot (ce qui peut causer des "
 "erreurs). Exemple `SCsub` avec des drapeaux personnalisés :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:183
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:187
 msgid "The final module should look like this:"
 msgstr "Le module final devrait ressembler à cela :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:201
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:205
 msgid "Using the module"
 msgstr "Utilisation du module"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:203
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:207
 msgid "You can now use your newly created module from any script:"
 msgstr ""
 "Vous pouvez maintenant utiliser votre module nouvellement créé à partir de "
 "n'importe quel script :"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:212
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:216
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr "Et la sortie sera ``is_spoken: True`` si le texte est prononcé."

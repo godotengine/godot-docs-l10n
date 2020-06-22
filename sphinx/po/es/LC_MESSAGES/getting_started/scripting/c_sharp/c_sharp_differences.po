@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
-msgid "API differences to GDScript"
+#, fuzzy
+msgid "C# API differences to GDScript"
 msgstr "Diferencias con la API de GDScript"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:6
@@ -212,6 +213,11 @@ msgid ""
 "`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
 "parameters. Default values can be set by assigning a value."
 msgstr ""
+"Utilice el atributo ``[Export]`` en lugar de la palabra clave ``export`` de "
+"GDScript. Este atributo también puede ser proporcionado con los parámetros "
+"opcionales :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` y "
+"``hintString``. Los valores por defecto se pueden establecer asignando un "
+"valor."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:114
 msgid "Signal keyword"
@@ -576,7 +582,7 @@ msgstr "Comunicándose con otros lenguajes de scripting"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
-msgstr ""
+msgstr "Esto se explica ampliamente en :ref:`doc_cross_language_scripting`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:306
 msgid "Yield"

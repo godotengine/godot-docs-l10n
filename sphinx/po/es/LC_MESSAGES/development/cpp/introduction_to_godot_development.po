@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-05 17:37+0200\n"
+"POT-Creation-Date: 2020-06-22 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:4
 msgid "Introduction to Godot development"
-msgstr ""
+msgstr "Introducción al desarrollo en Godot"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:6
 msgid ""
@@ -27,10 +27,13 @@ msgid ""
 "source code, and give useful tips for extending/fixing the engine on the C++ "
 "side."
 msgstr ""
+"Esta página pretende introducir la organización global del código fuente del "
+"Motor Godot, y dar consejos útiles para extender/fijar el motor en el lado C+"
+"+."
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:11
 msgid "Architecture diagram"
-msgstr ""
+msgstr "Diagrama de la arquitectura"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:13
 msgid ""
@@ -38,10 +41,13 @@ msgid ""
 "core components down to the abstracted drivers, via the scene structure and "
 "the servers."
 msgstr ""
+"El siguiente diagrama describe la arquitectura utilizada por Godot, desde "
+"los componentes centrales hasta los conductores abstractos, pasando por la "
+"estructura de la escena y los servidores."
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:20
 msgid "Debugging the editor with gdb"
-msgstr ""
+msgstr "Depurar el editor con gdb"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:22
 msgid ""
@@ -52,7 +58,13 @@ msgid ""
 "e`` argument to Godot Engine's binary from within your project's folder. "
 "Typically:"
 msgstr ""
+"Si estás escribiendo o corrigiendo errores que afectan al editor de Godot "
+"Engine, recuerda que el binario por defecto ejecutará primero el gestor de "
+"proyectos, y luego sólo ejecutará el editor en otro proceso una vez que "
+"hayas seleccionado un proyecto. Para lanzar un proyecto directamente, "
+"necesitas ejecutar el editor pasando el argumento ``-e`` al binario de Godot "
+"Engine desde la carpeta de tu proyecto. Generalmente:"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:35
 msgid "Or:"
-msgstr ""
+msgstr "O:"
