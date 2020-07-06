@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-06-22 14:46+0200\n"
-"PO-Revision-Date: 2020-06-04 18:34+0000\n"
+"PO-Revision-Date: 2020-06-29 15:26+0000\n"
 "Last-Translator: StiLins <aigars.skilins@gmail.com>\n"
 "Language-Team: Latvian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/lv/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= "
 "19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -111,7 +111,7 @@ msgid ""
 msgstr ""
 "Godot Konstruktors ir atklāta koda projekts izstrādāts ar brīvprātīgo "
 "atbalstu. Dokumentācijas komandai vienmēr noderēs jūsu atsauksmes un "
-"palīdzība uzlabot macību materiālu un klāšu atsauces. Ja jūs kaut ko "
+"palīdzība uzlabot mācību materiālu un klāšu atsauces. Ja jūs kaut ko "
 "nesaprotat vai nevarat atrast to ko meklējat dokumentos, palīdziet mums "
 "uzlabot dokumentāciju sniedzot atsauces!"
 
@@ -749,7 +749,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:93
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "Kas ir GDScript un kāpēc jums vajadzētu to izmantot?"
 
 #: ../../docs/about/faq.rst:95
 msgid ""
@@ -761,6 +761,13 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"GDScript ir Godot integrētā skriptošanas valoda. Tā no pašiem pamatiem tika "
+"būvēta tā, lai maksimalizētu Godot potenciālu ar vismazāk nepieciešamo koda "
+"daudzumu, sniedzot gan iesācējiem, gan ekspertiem iespēju izmantot Godot "
+"stiprās puses pēc iespējas ātrāk. Ja jūs jebkad esat rakstījuši kodu Python "
+"programmēšanas valodā, jūs jutīsities kā mājās. Priekšstatam, vēsturi un "
+"pilnu GDScript piedāvāto iespēju pārskatu varat apskatīt :ref:`GDScript "
+"skriptošanas ceļvedis <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:102
 msgid ""
@@ -769,6 +776,10 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"Ir vairāki iemesli, lai lietotu GDScript --it īpaši kad jūs izstrādājat "
+"prototipu projekta alfa/beta posmos, vai ja jūs neplānojat izstrādāt nākamo "
+"AAA spēli--, bet galvenais iemesls ir vispārēja **sarežģītības samazināšanās."
+"**"
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -782,6 +793,15 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"Oriģinālais nodoms cieši integrētas, individuālas skriptošanas valodas "
+"izveidei bija divkāršs: pirmkārt, tā var samazināt nepieciešamā laika "
+"daudzumu, lai uzsāktu darbu ar Godot, tādējādi sniedzot veidu ātrai "
+"konstruktora apgūšanai ar fokusu uz produktivitāti; otrkārt, šādi ir "
+"iespējams reducēt konstruktora uzturēšanas darbu smagumu, samazināt problēmu "
+"sazarošanos un atbrīvo konstruktora izstrādātājus, ļaujot tiem fokusēties "
+"kļūdu novēršanai un konstruktora galvenas funkcionalitātes uzlabošanai --tā "
+"vietā, lai veltītu daudz laika cenšoties nodrošināt nelielu uzlabojumu "
+"darbspēju programmēšanas valodu kvantumam."
 
 #: ../../docs/about/faq.rst:114
 msgid ""
@@ -795,6 +815,16 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
+"Tā kā Godot ir atklāta koda projekts, jau no sākuma bija nepieciešams "
+"steidzīgi kā prioritāti izvirzīt integrētāku un plūstošu pieredzi tā vietā, "
+"lai piesaistītu vairāk lietotāju, atbalstot pazīstamākas programmēšanas "
+"valodas --it īpaši ņemot vērā, ka atbalsot pazīstamākas valodas, "
+"pasliktinātos pieredze. Mēs saprotam, ja jūs vēlaties izmantot citu "
+"programmēšanas valodu (apskatiet sarakstu ar atbalstītajām valodām "
+"augšpusē). Tomēr būtu ieteicams, ja jūs neesat pamēģinājis/usi GDScript, "
+"pamēģiniet to **trīs dienas**. Tā pat kā ar Godot, brīdī, kad jūs "
+"ieraudzīsiet cik spēcīga tā ir un cik ātra kļūst projekta izveide, mēs esam "
+"pārliecināti, ka GDScript jums iepatiksies."
 
 #: ../../docs/about/faq.rst:123
 msgid ""
@@ -802,10 +832,12 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"Vairāk informācijas par to kā apgūt GDScript vai dinamiski rakstāmās valodas "
+"varat atrast iekš :ref:`doc_gdscript_more_efficiently` mācību materiāla."
 
 #: ../../docs/about/faq.rst:127
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "Kāda bija motivācija GDScript izveidei?"
 
 #: ../../docs/about/faq.rst:129
 msgid ""
@@ -815,23 +847,33 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
+"Pirmsākumos konstruktors izmantoja `Lua <https://www.lua.org>`__ "
+"skriptošanas valodu. Lua ir ātra, bet izveidot saites ar objekta orientētu "
+"sistēmu (izmantojot 'fallbacks') bija sarežģīti un lēni, kā arī pieprasīja "
+"milzīgu daudzumu koda. Pēc dažiem eksperimentiem ar `Python <https://www."
+"python.org>`__, tā arī izrādījās pārāk sarežģīta, lai to ievietotu."
 
 #: ../../docs/about/faq.rst:135
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
 msgstr ""
+"Galvenie iemesli pielāgotas skriptošanas valodas izveidei priekš Godot bija:"
 
 #: ../../docs/about/faq.rst:137
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
+"Slikts dzīslošanas atbalsts pārsvarā visās skriptošanas VMs, un Godot "
+"izmanto dzīslas (Lua, Python, Squirrel, JavaScript, ActionScript, u.c.)."
 
 #: ../../docs/about/faq.rst:139
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
+"Slikta klašu-izplešanas atbalsts gandrīz visās skriptu VMs, un tās adaptēt "
+"uz veidu, kā strādā Godot ir ārkārtīgi neefektīvi (Lua, Python, JavaScript)."
 
 #: ../../docs/about/faq.rst:141
 msgid ""
@@ -840,6 +882,11 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
+"Daudzām eksistējošām valodām ir šausmīgas saskarnes, lai izveidotu saites ar "
+"C++, rezultātā tiek iegūts liels koda daudzums, kļūdas, vājās vietas un "
+"vispārēja neefektivitāte (Lua, Python, Squirrel, JavaScript, etc.) Mēs "
+"vēlējāmies fokusēties uz lieliska konstruktora izveidošanu, nevis lielu "
+"integrāciju daudzumu."
 
 #: ../../docs/about/faq.rst:144
 msgid ""
@@ -847,26 +894,35 @@ msgid ""
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
+"Nav vietēju vektoru tipu (vector3, matrix4, u.c.), rezultējot samazinātā "
+"izpildījumā, kad tiek izmantoti pielāgotie tipi (Lua, Python, Squirrel, "
+"JavaScript, ActionScript, u.c.)."
 
 #: ../../docs/about/faq.rst:147
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
+"Atkritumu savācējs veido aizkavējumus vai izmanto nevajadzīgi lielu atmiņas "
+"apjomu (Lua, Python, JavaScript, ActionScript, u.c.)."
 
 #: ../../docs/about/faq.rst:149
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
+"Sarežģīti tās integrēt koda redaktorā, lai sniegtu koda pabeigšanu, tiešo "
+"rediģēšanu, u.c. (visām). Šī funkcionalitāte ir labi atbalstīta iekš "
+"GDScript."
 
 #: ../../docs/about/faq.rst:153
 msgid "GDScript was designed to curtail the issues above, and more."
 msgstr ""
+"GDScript tika veidots, lai samazinātu augstāk aprakstītās problēmas un vēl."
 
 #: ../../docs/about/faq.rst:156
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "Kādus 3D modelēšanas formātus atbalsta Godot?"
 
 #: ../../docs/about/faq.rst:158
 msgid ""
@@ -875,10 +931,14 @@ msgid ""
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
+"Godot atbalsta Collada caur `OpenCollada <https://github.com/KhronosGroup/"
+"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ eksportētāju (Maya, 3DSMax). Ja jūs "
+"izmantojat Blender, apskatiet mūsu `Labāks Collada Eksportētājs <https://"
+"godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:161
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "Ar Godot 3.0, glTF tiek atbalstīts."
 
 #: ../../docs/about/faq.rst:163
 msgid ""
@@ -886,11 +946,16 @@ msgid ""
 "proprietary so we recommend using other formats listed above, if suitable "
 "for your workflow."
 msgstr ""
+"FBX tiek atbalstīts caur 'Open Asset Import' bibliotēku. FBX ir patentēts, "
+"tāpēc mēs iesakām izmantot citus formātus, kas nosaukti augšpusē, ja tie ir "
+"pielāgojami jūsu darbplūsmai."
 
 #: ../../docs/about/faq.rst:167
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
+"Vai [ievietojiet aizvērtu SDK kā piemēram FMOD, GameWorks, u.c.] tiks "
+"atbalstīts iekš Godot?"
 
 #: ../../docs/about/faq.rst:169
 msgid ""
@@ -899,6 +964,10 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"Godot mērķis ir izveidot brīvu un atvērta koda MIT licences konstruktoru, "
+"kas ir modulārs un paplašināms. Mums, konstruktora izveides sabiedrībai, nav "
+"plānu atbalstīt jebkādu trešās personas, aizvērta koda/patentētu SDK, jo tos "
+"integrēt būtu nostāties pret Godot principiem."
 
 #: ../../docs/about/faq.rst:174
 msgid ""
@@ -906,12 +975,17 @@ msgid ""
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
+"Tā kā Godot ir atvērta koda un modulārs, nekas jums vai kādam citam, kas "
+"ieinteresēts šādu bibliotēku pievienošanai, neliedz tās kā moduli pievienot "
+"savai spēlei--kā atvērtu vai aizvērtu kodu."
 
 #: ../../docs/about/faq.rst:178
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question below."
 msgstr ""
+"Lai noskaidrotu, kā atbalsts jūsu izvēlētajam SDK varētu tiktu sniegts, "
+"apskatiet Spraudņu jautājumu zemāk."
 
 #: ../../docs/about/faq.rst:181
 msgid ""
@@ -920,6 +994,10 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"Ja jūs zināt par trešās partijas SDK, kas netiek atbalstīts iekš Godot, bet "
+"piedāvā brīvu un atvērta koda integrāciju, apsveriet pašam sākt integrācijas "
+"darbu. Godot nepieder konkrētai personai; tas pieder sabiedrībai, un tas aug "
+"līdz ar sabiedrības ambīcijām un līdzstrādniekiem kā jūs."
 
 #: ../../docs/about/faq.rst:187
 msgid ""
@@ -4247,9 +4325,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:582
-#, fuzzy
 msgid "Save the scene."
-msgstr "Saglabāt Visas Ainas"
+msgstr "Saglabāt Ainu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
 msgid "Enemy script"
@@ -70910,14 +70987,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:10
-#, fuzzy
 msgid ""
 "If you learn better by looking at an example, you can find the demo project "
 "`here <https://github.com/godotengine/godot-demo-projects/tree/master/misc/"
 "android_iap>`__."
 msgstr ""
-"Papildus šai dokumentācijai jums ir iespēja apskatīt vairākus `Godot demo "
-"projektus <https://github.com/godotengine/godot-demo-projects>`_."
+"Ja jūs labāk iemācāties apskatot piemēru, jums ir iespēja apskatīt vairākus "
+"`Godot demo projektus <https://github.com/godotengine/godot-demo-projects/"
+"tree/master/misc/android_iap>`_."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:15
 msgid "Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)"
@@ -71030,9 +71107,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:148
-#, fuzzy
 msgid "Subscriptions"
-msgstr "Apraksts"
+msgstr "Abonēšana"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:150
 msgid ""
@@ -79471,9 +79547,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:76
-#, fuzzy
 msgid "Windows example:"
-msgstr "Windows"
+msgstr "Windows paraugs:"
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:82
 msgid ""

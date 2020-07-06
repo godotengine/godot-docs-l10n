@@ -13,6 +13,7 @@
 # artism90 <artism90@googlemail.com>, 2020.
 # Beep Beep <robinada05@gmail.com>, 2020.
 # Benedikt <benedikt.29+webl@pm.me>, 2019.
+# B Schulz <xython.yt@gmail.com>, 2020.
 # Carsten Nikiel <carsten@nikiel.de>, 2018-2019.
 # CatgamerHD <katzenspieler.catgamerhd04@gmail.com>, 2019.
 # chillhelm <wilhelm@neubert.online>, 2018.
@@ -25,6 +26,7 @@
 # datenbauer <d-vaupel@web.de>, 2019.
 # David <david.breier@outlook.de>, 2018.
 # Draco Drache <jan.holger.te@gmail.com>, 2019-2020.
+# DrunkBlood <Cold-Hand@outlook.com>, 2020.
 # Eduard Albrecht <eddysoulo91@googlemail.com>, 2019.
 # Ettore Atalan <atalanttore@googlemail.com>, 2019.
 # Fabian Böhle <mail@fabianboehle.de>, 2019.
@@ -33,6 +35,7 @@
 # Gero <me@gero.io>, 2018-2019.
 # Gordon <gkone@gmx.net>, 2018.
 # Gordon Karnauka <G.Karnauka@googlemail.com>, 2020.
+# Günther Bohn <ciscouser@gmx.de>, 2020.
 # Headmade Games <janusdr@gmail.com>, 2018-2019.
 # heroldini <heroldini@gmail.com>, 2018.
 # HugeGameArt <hugegameartgd@gmail.com>, 2020.
@@ -89,6 +92,7 @@
 # Rene Polak <rene.polak@gmx.at>, 2019.
 # R. K <rene.kling1992@gmail.com>, 2018-2019.
 # Robin Bauknecht <robin.bauknecht@gmail.com>, 2018-2019.
+# RoniPerson <online141@gmx.de>, 2020.
 # Sam Walz <samuel.walz@gmail.com>, 2019.
 # Schweini07 <schweinthaler@gmx.at>, 2019.
 # Sebastian Franz <sebastian11@online.de>, 2020.
@@ -98,6 +102,7 @@
 # Skull140 <skul.l140.+git@gmail.com>, 2020.
 # So Wieso <sowieso@dukun.de>, 2018-2019.
 # ssantos <ssantos@web.de>, 2018-2019.
+# StarWolf3000 <hollowrider@gmail.com>, 2020.
 # themangomago <markus.schneider84@gmail.com>, 2018.
 # Thomas Eigel <yurumi@gmx.de>, 2018-2019.
 # Thomas Karcher <t_karcher@posteo.de>, 2019.
@@ -114,8 +119,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-06-22 14:46+0200\n"
-"PO-Revision-Date: 2020-06-22 11:41+0000\n"
-"Last-Translator: Maik <bahaleba@yahoo.de>\n"
+"PO-Revision-Date: 2020-07-02 02:59+0000\n"
+"Last-Translator: StarWolf3000 <hollowrider@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -195,7 +200,7 @@ msgstr ""
 "Willkommen in der offiziellen Dokumentation der Godot Engine, der freien, "
 "quelloffenen und gemeinschaftlich entwickelten 2D- und 3D-Spiele-Engine! "
 "Falls Sie diese Dokumentation zum ersten Mal aufrufen, empfehlen wir als "
-"Erstes die :ref:`Einführungsseite <doc_about_intro>` zu lesen, um eine "
+"Erstes, die :ref:`Einführungsseite <doc_about_intro>` zu lesen, um eine "
 "Übersicht der verfügbaren Inhalte zu erhalten."
 
 #: ../../docs/index.rst:37
@@ -396,8 +401,8 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
-"Die :ref:`Tutorials and resources <doc_community_tutorials>` Seite enthält "
-"von der Gemeinschaft erstellte Video-Tutorials. Falls du dir lieber Videos "
+"Die Seite :ref:`Tutorials and resources <doc_community_tutorials>` enthält "
+"von der Community erstellte Video-Tutorials. Falls du dir lieber Videos "
 "anschauen möchten statt Texte zu lesen, könnten diese einen Blick wert sein."
 
 #: ../../docs/about/introduction.rst:27
@@ -1032,7 +1037,6 @@ msgstr ""
 "Squirrel, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
@@ -1541,8 +1545,8 @@ msgid ""
 msgstr ""
 "DoD ist größtenteils eine Cache-Zusammenhang-Optimierung, mit welcher nur "
 "eine erhebliche Leistungssteigerung erlangt werden kann, wenn diese mehrere "
-"tausende Objekte berechnen muss. Wenn wenige Hundert  Sprites oder Gegner "
-"pro Bild bewegt werden, wird DoD keine Hilfe sein und eine andere "
+"tausende Objekte berechnen muss. Wenn wenige Hundert Sprites oder Gegner pro "
+"Bild bewegt werden, wird DoD keine Hilfe sein und eine andere "
 "Herangehensweise der Optimierung sollte in Erwägung gezogen werden."
 
 #: ../../docs/about/faq.rst:338
@@ -2083,12 +2087,11 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:4
 msgid "Godot release policy"
-msgstr ""
+msgstr "Godot Freigaberichtlinie"
 
 #: ../../docs/about/release_policy.rst:7
-#, fuzzy
 msgid "Godot versioning"
-msgstr "Die Versionsangabe"
+msgstr "Godot Versionsangabe"
 
 #: ../../docs/about/release_policy.rst:9
 msgid ""
@@ -2113,6 +2116,9 @@ msgid ""
 "trailing zero. For example, the first release in the 3.2 series is ``3.2``, "
 "not ``3.2.0``."
 msgstr ""
+"Die erste Ausgabe in einer Major/Minor Release Serie endet nicht mit einer "
+"angehängten Null. Zum Beispiel ist das erste Release in einer 3.2 Series "
+"``3.2``, nicht ``3.2.0``."
 
 #: ../../docs/about/release_policy.rst:27
 msgid "Release support timeline"
@@ -2124,11 +2130,14 @@ msgid ""
 "durations are not set in stone, here's a table with the expected level of "
 "support for each Godot version:"
 msgstr ""
+"Godot-Versionen werden für eine gewisse Zeit unterstützt. Da diese "
+"Zeitspanne nicht allzu gut absehbar ist folgt eine Tabelle mit den "
+"Schätzungen für jede Godot-Version:"
 
 #: ../../docs/about/release_policy.rst:34
 #, fuzzy
 msgid "**Version**"
-msgstr "**Beschreibung**"
+msgstr "**Version**"
 
 #: ../../docs/about/release_policy.rst:34
 #, fuzzy
@@ -2140,26 +2149,24 @@ msgid "**Support level**"
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:36
-#, fuzzy
 msgid "Godot 4.0"
-msgstr "Godot"
+msgstr "Godot 4.0"
 
 #: ../../docs/about/release_policy.rst:36
 msgid "~2021 (see below)"
-msgstr ""
+msgstr "~2021 (siehe unten)"
 
 #: ../../docs/about/release_policy.rst:36
 msgid "|unstable| *Current focus of development (unstable).*"
-msgstr ""
+msgstr "|instabil| *momentaner Schwerpunkt der Entwicklung (instabil).*"
 
 #: ../../docs/about/release_policy.rst:38
-#, fuzzy
 msgid "Godot 3.2"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.2"
 
 #: ../../docs/about/release_policy.rst:38
 msgid "January 2020"
-msgstr ""
+msgstr "Januar 2020"
 
 #: ../../docs/about/release_policy.rst:38
 msgid ""
@@ -2168,13 +2175,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:41
-#, fuzzy
 msgid "Godot 3.1"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.1"
 
 #: ../../docs/about/release_policy.rst:41
 msgid "March 2019"
-msgstr ""
+msgstr "März 2019"
 
 #: ../../docs/about/release_policy.rst:41
 #: ../../docs/about/release_policy.rst:43
@@ -2183,55 +2189,50 @@ msgid "|partial| Only critical, security and platform support fixes."
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:43
-#, fuzzy
 msgid "Godot 3.0"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.0"
 
 #: ../../docs/about/release_policy.rst:43
 msgid "January 2018"
-msgstr ""
+msgstr "Januar 2018"
 
 #: ../../docs/about/release_policy.rst:45
-#, fuzzy
 msgid "Godot 2.1"
-msgstr "In Godot 3.1:"
+msgstr "Godot 2.1"
 
 #: ../../docs/about/release_policy.rst:45
 msgid "July 2016"
-msgstr ""
+msgstr "Juli 2016"
 
 #: ../../docs/about/release_policy.rst:47
-#, fuzzy
 msgid "Godot 2.0"
-msgstr "Godot"
+msgstr "Godot 2.0"
 
 #: ../../docs/about/release_policy.rst:47
 msgid "February 2016"
-msgstr ""
+msgstr "Februar 2016"
 
 #: ../../docs/about/release_policy.rst:47
 #: ../../docs/about/release_policy.rst:49
 #: ../../docs/about/release_policy.rst:51
 msgid "|eol| No longer supported."
-msgstr ""
+msgstr "|eol| Nicht länger unterstützt."
 
 #: ../../docs/about/release_policy.rst:49
-#, fuzzy
 msgid "Godot 1.1"
-msgstr "In Godot 3.1:"
+msgstr "Godot 1.1"
 
 #: ../../docs/about/release_policy.rst:49
 msgid "May 2015"
-msgstr ""
+msgstr "Mai 2015"
 
 #: ../../docs/about/release_policy.rst:51
-#, fuzzy
 msgid "Godot 1.0"
-msgstr "Godot"
+msgstr "Godot 1.0"
 
 #: ../../docs/about/release_policy.rst:51
 msgid "December 2014"
-msgstr ""
+msgstr "Dezember 2014"
 
 #: ../../docs/about/release_policy.rst:59
 msgid ""
@@ -2247,7 +2248,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:69
 msgid "When is the next release out?"
-msgstr ""
+msgstr "Wann erscheint die nächste Godot-Version?"
 
 #: ../../docs/about/release_policy.rst:71
 msgid ""
@@ -2255,6 +2256,9 @@ msgid ""
 "a major or minor Godot release made available every year. Following this "
 "trend, this means Godot 4.0 will most likely be released in **2021**."
 msgstr ""
+"Während Mitwirkende des Godot-Projekts keine Terminfristen haben, gibt es "
+"für gewöhnlich jedes Jahr eine neue Godot Version. Diesem Trend folgend "
+"dürfte die Version 4.0 in **2021** veröffentlicht werden."
 
 #: ../../docs/about/release_policy.rst:75
 msgid ""
@@ -2263,6 +2267,12 @@ msgid ""
 "only have new patch releases once an important security or platform support "
 "fix has been merged."
 msgstr ""
+"Patches werden öfters bereitgestellt, für gewöhnlich alle zwei- bis sechs "
+"Monate während eine Version gänzlich unterstützt wird.\n"
+"Nur teilweise unterstützte Erscheinungen werden nur neue Patches erhalten "
+"falls kritische Sicherheitsrisiken \n"
+"vorhanden sind, oder ein plattformübergreifender Unterstützungs-Patch "
+"fusioniert wurde."
 
 #: ../../docs/about/release_policy.rst:82
 msgid ""
@@ -2412,12 +2422,10 @@ msgstr ""
 "Wenn der Dateipfad zum Ordner korrekt ist, sehen Sie einen grünen Haken."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
-#, fuzzy
 msgid "Your first look at Godot's editor"
 msgstr "Dein erster Blick auf Godots Editor"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
@@ -2440,7 +2448,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
-msgstr "Im **Dateisystem-Panel** werden Projektdateien sowie Assets verwaltet."
+msgstr ""
+"Im **Dateisystem-Panel** werden Projektdateien sowie Nutzerinhalte verwaltet."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
 #, fuzzy
@@ -2571,15 +2580,14 @@ msgid "Modify the interface"
 msgstr "Oberfläche anpassen"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
-#, fuzzy
 msgid ""
 "Godot's interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio Code for instance."
 msgstr ""
-"Godot nutzt ein einzelnes Programmfenster. Du kannst es also nicht auf "
-"mehrere Bildschirme aufteilen. Allerdings besteht die Möglichkeit, einen "
-"externen Code–Editor, wie z.B. Atom oder Visual Studio, zu benutzen."
+"Godot nutzt ein einzelnes Programmfenster und kann somit nicht auf mehrere "
+"Bildschirme aufgeteilt werden. Es ist allerdings möglich einen externen Code–"
+"Editor, wie z.B. Atom oder Visual Studio Code zu benutzen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:169
 msgid "Move and resize docks"
@@ -3076,12 +3084,12 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
-"Eine einzelne Szene zu erstellen und ihr alle benötigten  Nodes "
-"hinzuzufügen, kann bei kleinen Projekten funktionieren. Aber wenn ein "
-"Projekt an Größe und Komplexität zunimmt, wird der Nodebaum schnell "
-"unübersichtlich. Godot erlaubt es, ein Projekt in beliebig viele Szenen "
-"aufzuteilen. Damit steht Dir ein mächtiges Werkzeug zur Verfügung, das Dir "
-"hilft, die verschiedenen Komponenten Deines Spiels zu organisieren."
+"Eine einzelne Szene zu erstellen und ihr alle benötigten Nodes hinzuzufügen, "
+"kann bei kleinen Projekten funktionieren. Aber wenn ein Projekt an Größe und "
+"Komplexität zunimmt, wird der Nodebaum schnell unübersichtlich. Godot "
+"erlaubt es, ein Projekt in beliebig viele Szenen aufzuteilen. Damit steht "
+"Dir ein mächtiges Werkzeug zur Verfügung, das Dir hilft, die verschiedenen "
+"Komponenten Deines Spiels zu organisieren."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
@@ -3494,7 +3502,7 @@ msgstr ""
 "Hauptgrund dessen Auswahl, ist die starke Vernetzung mit Godot, die eine "
 "reibungslose Bedienung ermöglicht. Beide verfügen über eine sehr gute "
 "Editorintegration, während C# und C++ in einer separaten IDE bearbeitet "
-"werden müssen. Wenn Sie ein großer Fan von statisch geschriebenen Sprachen "
+"werden müssen. Wenn Du ein großer Fan von statisch geschriebenen Sprachen "
 "bist, solltest Du stattdessen C# und C++ verwenden."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
@@ -3599,7 +3607,7 @@ msgid ""
 "\"blocks and connections\" language, but adapted to how Godot works."
 msgstr ""
 "Seit Version 3.0 unterstüzt Godot :ref:`Visual "
-"Scripting<doc_what_is_visual_script>`.  Dies ist eine typische "
+"Scripting<doc_what_is_visual_script>`. Dies ist eine typische "
 "Implementierung einer \"Blöcke und Verbindungen\" Sprache, die an die "
 "funktionsweise von Godot angepasst wurde."
 
@@ -4711,8 +4719,8 @@ msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
-"Ein Signal kann auch optional als ein oder mehrere Argumente deklariert "
-"werden. Bestimme die Argument-Namen zwischen den Parenthesen."
+"Ein Signal kann optional ein oder mehrere Argumente deklarieren. "
+"Spezifiziere die Argumentnamen zwischen den Klammern:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:243
 msgid ""
@@ -5034,10 +5042,10 @@ msgid ""
 "property to ``(0.5, 0.5)``. You can find it in the Inspector under the "
 "``Node2D`` heading."
 msgstr ""
-"Das Spielerbilder sind ein bisschen zu groß für das Spielefenster, also "
-"müssen wir sie verkleinern. Klicke auf den  ``AnimatedSprite`` Node und "
-"setze die Eigenschaft ``Scale`` auf ``(0.5, 0.5)``. Du kannst sie im "
-"Inspektor unterhalb der Überschrift ``Node2D``finden."
+"Die Spielerbilder sind ein bisschen zu groß für das Spielefenster, also "
+"müssen wir sie verkleinern. Klicke auf den ``AnimatedSprite`` Node und setze "
+"die Eigenschaft ``Scale`` auf ``(0.5, 0.5)``. Du kannst sie im Inspektor "
+"unterhalb der Überschrift ``Node2D``finden."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:137
 msgid ""
@@ -5384,7 +5392,7 @@ msgid ""
 msgstr ""
 "Ein allgemeiner Fehler ist hier, die Namen der Animationen falsch zu "
 "benennen. Die Animationsnamen in dem SpriteFrames Bereich müssen mit dem, "
-"was im Code geschrieben steht, übereinstimmen. Wenn du Animation  ``\"Walk"
+"was im Code geschrieben steht, übereinstimmen. Wenn du Animation ``\"Walk"
 "\"`` heißt, dann muss auch ein großgeschriebenes \"W\" im Code stehen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:433
@@ -5469,24 +5477,23 @@ msgstr ""
 "Signal nicht mehr als einmal ausgelöst wird."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:506
-#, fuzzy
 msgid ""
 "Disabling the area's collision shape can cause an error if it happens in the "
 "middle of the engine's collision processing. Using ``set_deferred()`` tells "
 "Godot to wait to disable the shape until it's safe to do so."
 msgstr ""
-"Deaktivieren der Collision Shape während der Kollisionsberechnung der Engine "
-"kann einen Fehler auslösen. Der Gebrauch von ``set_deferred()`` erlaubt es "
-"Godot, die Collision Shape zu einem sicheren Zeitpunkt zu deaktivieren."
+"Deaktivierung der Collision Shape während der Kollisionsberechnung der "
+"Engine kann einen Fehler auslösen. Der Gebrauch von ``set_deferred()`` "
+"erlaubt es Godot, die Collision Shape zu einem sicheren Zeitpunkt zu "
+"deaktivieren."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:510
-#, fuzzy
 msgid ""
 "The last piece is to add a function we can call to reset the player when "
 "starting a new game."
 msgstr ""
-"Das letzte Stück für unseren Spieler ist es, eine Funktion hinzuzufügen, die "
-"wir aufrufen können, um den Spieler beim Start eines neuen Spiels "
+"Das letzte was wir tun müssen ist eine Funktion hinzuzufügen, die wir "
+"aufrufen können, um den Spieler beim erneuten Start des Spiels "
 "zurückzusetzen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:531
@@ -5494,26 +5501,25 @@ msgid "Enemy scene"
 msgstr "Feind-Szene"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:533
-#, fuzzy
 msgid ""
 "Now it's time to make the enemies our player will have to dodge. Their "
 "behavior will not be very complex: mobs will spawn randomly at the edges of "
 "the screen, choose a random direction, and move in a straight line."
 msgstr ""
-"Jetzt ist es an der Zeit, sich die Feinde zu machen, denen unser Spieler "
-"ausweichen muss. Ihr Verhalten wird nicht sehr komplex sein: Mobs werden "
-"zufällig an den Rändern des Bildschirms spawnen und sich in eine zufällige "
-"Richtung in einer geraden Linie bewegen, dann verschwinden , wenn sie aus "
-"dem Bildschirm gehen."
+"Jetzt ist es an der Zeit die Feinde zu erstellen, denen der Spieler "
+"ausweichen muss. Ihr Verhalten wird nicht allzu komplex sein: Mobs werden "
+"zufällig an den Rändern des Bildschirms erscheinen und sich in einer "
+"zufälligen Richtung in einer geraden Linie fortbewegen, um danach geradeaus "
+"weiterzugehen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:537
-#, fuzzy
 msgid ""
 "We'll create a ``Mob`` scene, which we can then *instance* to create any "
 "number of independent mobs in the game."
 msgstr ""
-"Wir werden dies in eine ``Mob`` Szene einbauen, die wir dann *instanzieren* "
-"um beliebig viele unabhängige Mobs im Spiel erstellen können."
+"Wir werden dies in eine ``Mob`` -Szene einbauen, die wir dann "
+"*instanziieren* um beliebig viele unabhängige Mobs im Spiel erstellen zu "
+"können."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:540
 msgid "See :ref:`doc_instancing` to learn more about instancing."
@@ -5525,9 +5531,9 @@ msgid "Node setup"
 msgstr "Node einrichten"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:545
-#, fuzzy
 msgid "Click Scene -> New Scene and add the following nodes:"
-msgstr "Klicken Sie auf Szene -> Neue Szene und wir erstellen den Mob."
+msgstr ""
+"Klicken Sie auf Szene -> Neue Szene und füge die folgenden Nodes hinzu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:547
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
@@ -5570,18 +5576,17 @@ msgstr ""
 "die Mobs nicht miteinander kollidieren."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:563
-#, fuzzy
 msgid ""
 "Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
 "player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. "
 "There are two images for each animation in the art folder."
 msgstr ""
-"Richte das :ref:`AnimatedSprite <class_AnimatedSprite>` wie für den Spieler "
-"ein. Diesmal haben wir 3 Animationen: ``fly``, ``swim``, und ``walk``. "
-"Stelle die Eigenschaft ``Playing`` im Inspektor auf \"On\" und passe die "
-"Einstellung \"Speed (FPS)\" wie unten gezeigt an. Wir werden eine dieser "
-"Animationen nach dem Zufallsprinzip auswählen, damit die Mobs eine gewisse "
-"Vielfalt haben."
+"Richte das :ref:`AnimatedSprite <class_AnimatedSprite>` so wie wir es für "
+"den Spieler getan haben. Dieses Mal haben wir drei Animationen: ``fly``, "
+"``swim``, und ``walk``. Stelle die Eigenschaft ``Playing`` im Inspektor auf "
+"\"On\" und passe die Einstellung \"Speed (FPS)\" wie unten gezeigt an. Wir "
+"werden eine dieser Animationen nach dem Zufallsprinzip auswählen, damit die "
+"Mobs eine gewisse Vielfalt haben."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:567
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
@@ -5609,7 +5614,6 @@ msgstr ""
 "Setze die ``Scale`` Eigenschaft von ``AnimatedSprite`` auf ``(0.75, 0.75)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:578
-#, fuzzy
 msgid ""
 "As in the ``Player`` scene, add a ``CapsuleShape2D`` for the collision. To "
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
@@ -5617,12 +5621,12 @@ msgid ""
 msgstr ""
 "Wie in der Szene ``Player``, füge eine ``CapsuleShape2D`` für die Kollision "
 "hinzu. Um die Form mit dem Bild auszurichten, musst Du die Eigenschaft "
-"``Rotation Degrees`` auf ``90`` unter ``Node2D`` einstellen."
+"``Rotation Degrees`` auf ``90`` (unter ``Node2D``-Transform im Inspektor) "
+"einstellen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:582
-#, fuzzy
 msgid "Save the scene."
-msgstr "Spieler-Szene"
+msgstr "Speichere die Szene."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
 msgid "Enemy script"
@@ -5635,17 +5639,16 @@ msgstr ""
 "hinzu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:611
-#, fuzzy
 msgid ""
 "When we spawn a mob, we'll pick a random value between ``min_speed`` and "
 "``max_speed`` for how fast each mob will move (it would be boring if they "
 "were all moving at the same speed)."
 msgstr ""
 "Wir wählen mit einem Zufallswert zwischen ``min_speed`` und ``max_speed``, "
-"wie schnell sich jeder Mob bewegen wird (es wäre langweilig, wenn sie sich "
-"alle mit der gleichen Geschwindigkeit bewegen würden). Stelle sie im "
-"Inspektor auf ``150`` und ``250``. Wir haben auch ein Array mit den Namen "
-"der drei Animationen, mit dem wir eine zufällige auswählen können."
+"wie schnell sich jeder Mob bewegen wird (es wäre trivial, würden sich alle "
+"mit der selben Geschwindigkeit fortbewegen). Stelle sie im Inspektor auf "
+"``150`` und ``250``. Wir haben auch einen Array mit den Namen der drei "
+"Animationen, mit dessen Hilfe wir eine Zufällige auswählen können."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:615
 msgid ""
@@ -5672,33 +5675,32 @@ msgid ""
 "selects a random integer between ``0`` and ``n-1``."
 msgstr ""
 "Wir werden eine zufällige Zahl zwischen``0`` und``2`` auswählen müssen, um "
-"einen von diesen Namen von der Liste auswählen zu können (Arrays starten "
-"bei  ``0``).  ``randi() % n`` wählt eine zufällige Ganzzahl zwischen  ``0`` "
-"und  ``n-1`` aus."
+"einen von diesen Namen von der Liste auswählen zu können (Arrays starten bei "
+"``0``).  ``randi() % n`` wählt eine zufällige Ganzzahl zwischen  ``0`` und  "
+"``n-1`` aus."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:645
-#, fuzzy
 msgid ""
 "You must use ``randomize()`` if you want your sequence of \"random\" numbers "
 "to be different every time you run the scene. We're going to use "
 "``randomize()`` in our ``Main`` scene, so we won't need it here."
 msgstr ""
 "Du musst ``randomize()`` verwenden, wenn Du möchtest, dass Ihre Reihenfolge "
-"der \"Zufallszahlen\" bei jedem Ausführen der Szene unterschiedlich ist. Wir "
-"werden ``randomize()`` in unserer ``Main`` Szene verwenden, so dass wir es "
-"hier nicht brauchen. ``randi() % n`` ist der Standardweg, um eine zufällige "
-"ganze Zahl zwischen ``0`` und ``n-1`` zu erhalten."
+"der \"Zufallszahlen\" bei jedem erneuten Ausführen der Szene unterschiedlich "
+"ist. Wir werden ``randomize()`` in unserer ``Main`` Szene verwenden, so dass "
+"wir es hier nicht brauchen. ``randi() % n`` ist der Standardweg, um eine "
+"zufällige ganze Zahl zwischen ``0`` und ``n-1`` zu erhalten."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:649
-#, fuzzy
 msgid ""
 "The last piece is to make the mobs delete themselves when they leave the "
 "screen. Connect the ``screen_exited()`` signal of the "
 "``VisibilityNotifier2D`` node and add this code:"
 msgstr ""
-"Das letzte Stück ist, die Mobs dazu zu bringen, sich selbst zu löschen, wenn "
-"sie den Bildschirm verlassen. Verbinde das Signal ``screen_exited()`` vom "
-"Node ``Visibility`` und füge  diesen Code hinzu:"
+"Das Letzte was getan werden muss ist die Mobs dazu zu bringen, sich selbst "
+"zu löschen, sobald sie den Bildschirm verlassen. Verbinde das Signal "
+"``screen_exited()`` vom Node ``VisibilityNotifier2D`` und füge  diesen Code "
+"hinzu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:666
 msgid "This completes the `Mob` scene."
@@ -5846,9 +5848,8 @@ msgstr ""
 "Richtung entlang des Pfades auswählen können."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:725
-#, fuzzy
 msgid "Your scene should look like this:"
-msgstr "Der Szenenbaum sollte so aussehen:"
+msgstr "Die Szene sollte so aussehen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:730
 msgid "Main script"
@@ -5876,13 +5877,12 @@ msgid "You can assign this property's value in two ways:"
 msgstr "Man kann einen Wert für eine Eigenschaft auf zwei Wege hinzufügen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:777
-#, fuzzy
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property ."
 msgstr ""
 "Ziehe ``Mob.tscn`` aus dem Panel \"FileSystem\" und lege es in der "
-"Eigenschaft ``Mob`` unter den Script Variables des Nodes ``Main`` ab."
+"Eigenschaft ``Mob`` unter den Skript-Variablen des Nodes ``Main`` ab."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:779
 msgid ""
@@ -5893,7 +5893,6 @@ msgstr ""
 "auf ``Mob.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:782
-#, fuzzy
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
@@ -5902,15 +5901,14 @@ msgid ""
 "following code to the new function, as well as a ``new_game`` function that "
 "will set everything up for a new game:"
 msgstr ""
-"Klicke anschließend auf den Player und verbinde das Signal \"Hit\". Wir "
-"wollen eine neue Funktion namens ``Game_over`` erstellen, die sich darum "
-"kümmert, was passieren muss, wenn ein Spiel endet. Gebe \"game_over\" in das "
-"Feld \"Method In Node\" unten im Fenster \"Signal verbinden\" ein. Füge den "
-"folgenden Code sowie eine ``new_game`` Funktion hinzu, um alles für ein "
-"neues Spiel einzurichten:"
+"Klicke anschließend auf 'Player' und verbinde das Signal \"Hit\". Wir werden "
+"eine neue Funktion namens ``Game_over`` erstellen, die sich darum kümmert, "
+"was passieren muss, wenn eine Runde endet. Gib \"game_over\" in das Feld "
+"\"Receiver Method\" unten im Fenster \"Signal verbinden\" ein und clicke "
+"\"Verbinden\". Füge den folgenden Code sowie die ``new_game`` Funktion "
+"hinzu, um alles für eine neue Runde einzurichten:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:820
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` , and ``MobTimer``) to the main script. "
@@ -5943,7 +5941,6 @@ msgstr ""
 "werden muss."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:901
-#, fuzzy
 msgid ""
 "Why ``PI``? In functions requiring angles, GDScript uses *radians*, not "
 "degrees. If you're more comfortable working with degrees, you'll need to use "
@@ -6025,9 +6022,8 @@ msgstr ""
 "wie den Spieler oder Mobs verdeckt werden."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:949
-#, fuzzy
 msgid "The HUD needs to display the following information:"
-msgstr "Das HUD zeigt die folgenden Informationen an:"
+msgstr "Das HUD sollte die folgenden Informationen anzeigen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:951
 msgid "Score, changed by ``ScoreTimer``."
@@ -6061,7 +6057,6 @@ msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr ":ref:`Label <class_Label>` genannt ``ScoreLabel``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:962
-#, fuzzy
 msgid ":ref:`Label <class_Label>` named ``Message``."
 msgstr ":ref:`Label <class_Label>` genannt ``MessageLabel``."
 
@@ -6074,7 +6069,6 @@ msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` genannt ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:966
-#, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the ``Text`` field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -6083,9 +6077,9 @@ msgid ""
 msgstr ""
 "Klicke auf das ``ScoreLabel`` und gib eine Zahl in das _Text_field im "
 "Inspektor ein. Die Standardschriftart für ``Control``-Nodes ist klein und "
-"skaliert nicht gut. In den Spielressourcen ist eine Schriftdatei namens "
-"\"Xolonium-Regular.ttf\" enthalten. Um diese Schriftart zu verwenden, gehe "
-"für jeden der drei ``Control``-Nodes wie folgt vor:"
+"lässt sich nicht gut skalieren. In den Spielassets ist eine Schriftdatei "
+"namens \"Xolonium-Regular.ttf\" enthalten. Um diese Schriftart zu verwenden, "
+"gehe für jeden der drei ``Control``-Nodes wie folgt vor:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:971
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
@@ -6268,13 +6262,13 @@ msgstr ""
 "ändert."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1127
-#, fuzzy
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton`` and add the following code to the new functions:"
 msgstr ""
 "Verbinde jeweils das Signal ``timeout()`` von ``MessageTimer`` und das "
-"Signal ``pressed()`` von ``StartButton``."
+"Signal ``pressed()`` von ``StartButton`` und füge den folgenden Code in die "
+"neuen Funktionen ein:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1155
 msgid "Connecting HUD to Main"
@@ -8501,7 +8495,7 @@ msgid ""
 "Although we could place UI elements by hand, containers are faster, more "
 "precise, and **responsive**."
 msgstr ""
-"Behälter passen sich an die Auflösung  und das Seitenverhältnis des "
+"Behälter passen sich an die Auflösung und das Seitenverhältnis des "
 "Bildschirms an. Obwohl wir UI-Elemente händisch platzieren könnten, sind "
 "Behälter schneller, genauer und **responsiv**."
 
@@ -9226,7 +9220,7 @@ msgid ""
 "You should see the ``Background`` resize along with its parent containers."
 msgstr ""
 "Wähle den ``Background`` im Szenenfenster. Im Inspektor solltest du die "
-"Eigenschaft ``Texture`` sehen. Ziehe  ``label_HP_bg.png`` aus dem "
+"Eigenschaft ``Texture`` sehen. Ziehe ``label_HP_bg.png`` aus dem "
 "Dateibrowser in das ``Textur``-Feld. Es bleibt gequätscht. Der übergeordnete "
 "MarginContainer zwingt seine Größe auf 0 herunter bis wir für die "
 "untergeordneten Elemente eine minimale Größe erzwingen. Wähle den Node "
@@ -9353,7 +9347,7 @@ msgstr ""
 "Du musst die Ressource ``Dynamic Font`` eingeben. Klappe die Kategorie "
 "``Font`` aus und klicke auf das Feld neben ``Font Data``. Klicke auf die "
 "Fläche ``Load``. Gehe im Dateibrowser herunter zum Ordner assets/font und "
-"klicke zweimal auf ``Comfortaa-Bold.ttf``,  um es zu öffnen. Du solltest im "
+"klicke zweimal auf ``Comfortaa-Bold.ttf``, um es zu öffnen. Du solltest im "
 "Ansichtsfenster sehen, dass der Font aufgefrischt wird. Klappe das "
 "Einstellungsmenü auf, um die Schriftgröße zu ändern. Setze die Eigenschaft "
 "``Size`` auf einen höheren Wert wie ``24`` oder ``28``."
@@ -9415,7 +9409,7 @@ msgid ""
 msgstr ""
 "Wähle die Leisten Node aus und füge ihr ein ``TextureProgress`` hinzu. Nenne "
 "es ``Gauge``. In dem Inspector öffne nun die ``Textures`` Abschnitt. Gehe "
-"nun weiter zum FileSystem-Dock und ziehe die ``Lifebar_bg.png``Textur  auf "
+"nun weiter zum FileSystem-Dock und ziehe die ``Lifebar_bg.png``Textur auf "
 "dem ``Under`` slot. Mache das gleiche mit dem ``lifebar_fill.png`` Bild und "
 "ziehe es auf den ``Progress`` slot. Nun ändere in der ``Range`` class im "
 "Inspektor die ``Value`` Eigenschaft zu ``50`` um zu sehen, wie sich die "
@@ -9940,7 +9934,7 @@ msgstr ""
 "Größe mit der anderen Bar übereinstimmt. Weil die minimale Größe von "
 "``TextureProgress`` basierend auf ihren Texturen gesetzt wird, wirst du "
 "nicht in der Lage sein, die ``Count`` node unter diese Größe zu verkleinern. "
-"Das ist auch die Größe, die der ``Bar`` Container haben wird. Du könntest  "
+"Das ist auch die Größe, die der ``Bar`` Container haben wird. Du könntest "
 "diesen auch verkleinern."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:501
@@ -10074,7 +10068,7 @@ msgstr ""
 "Damit ``EmeraldCounter`` und ``BombCounter`` die in ``Counter.tscn`` "
 "definierte Größe nutzen, müssen wir ``Counter.tscn`` im ``Counters`` "
 "Behälter ändern. Wähle ``Counters`` aus und öffne die ``Size Flags`` Sektion "
-"im Inspektor. Deaktiviere den ``Fill``  Tag für die ``Vertical`` "
+"im Inspektor. Deaktiviere den ``Fill`` Tag für die ``Vertical`` "
 "Eigenschaften und wähle ``Shrink Center`` an, damit sich der Behälter im "
 "``HBoxContainer`` zentriert."
 
@@ -10494,7 +10488,7 @@ msgstr ""
 "Klicke das Skript Icon rechts neben ``GUI`` im Szenen Reiter um sein Skript "
 "zu öffnen. In der ``_ready`` Funktion werden wir eine neue Variable namens "
 "``max_health`` (maximales leben) für den ``Player`` (Spieler) speichern und "
-"ihr den Wert von ``bar``s (Balken) ``max_value`` (maximaler Wert)  geben:"
+"ihr den Wert von ``bar``s (Balken) ``max_value`` (maximaler Wert) geben:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:164
 msgid ""
@@ -12059,7 +12053,6 @@ msgid "Example of file system contents:"
 msgstr "Beispiel von Dateisystem-Inhalten:"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:39
-#, fuzzy
 msgid "project.godot"
 msgstr "project.godot"
 
@@ -12251,7 +12244,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:14
 msgid "MainLoop"
-msgstr "MainLoop"
+msgstr "Hauptschleife"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -12302,8 +12295,8 @@ msgid ""
 "The scene system is the game engine, while the :ref:`OS <class_OS>` and "
 "servers are the low level API."
 msgstr ""
-"Das Szenensystem ist die Game Engine, wohingegen das  :ref:`OS <class_OS> "
-"und Server zur Low Level API gehören."
+"Das Szenensystem ist die Game Engine, wohingegen das :ref:`OS <class_OS> und "
+"Server zur Low Level API gehören."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
 msgid ""
@@ -12625,6 +12618,8 @@ msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
+"Um zu beginnen, lade die Vorlage von hier runter: :download:`autoload.zip "
+"<files/autoload.zip>` und öffne sie anschließend in Godot."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""
@@ -12633,16 +12628,21 @@ msgid ""
 "``pressed()`` signal connected. When you run the project, it starts in "
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
+"Das Projekt enthält zwei Szenen: ``Scene1.tscn`` und ``Scene2.tscn``. Jede "
+"Szene enthält ein Label, dieses den Szenennamen anzeigt und einen Knopf der "
+"mit einem ``pressed()`` -Signal verbunden wurde."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid "Global.gd"
-msgstr ""
+msgstr "Global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:112
 msgid ""
 "Switch to the \"Script\" tab and create a new script called Global.gd. Make "
 "sure it inherits from ``Node``:"
 msgstr ""
+"Wechsle zum \"Skript\"-Reiter und erstelle ein neues Skript genannt Global."
+"gd. Stelle sicher dass es sich von ``Node`` ableitet:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
 msgid ""
@@ -12651,12 +12651,19 @@ msgid ""
 "the script by clicking the browse button or typing its path: ``res://Global."
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
+"Der nächste Schritt ist, dieses Skript zur Autoloader-Liste hinzuzufügen. "
+"Öffne die ``Projekt > Projekteinstellungen`` aus dem Menü, wechsle zum "
+"\"AutoLoad\"-Reiter und wähle das Skript aus durch das klicken des \"Suchen"
+"\"-Knopfes, oder gebe den folgenden Pfad ein: ``res://Global.gd``. Drücke "
+"\"Hinzufügen\" um es der AutoLoader-Liste beizufügen:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
 msgstr ""
+"Ab jetzt würde bei jeder Ausführung des Projekts das Skript vorgeladen "
+"werden."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
 msgid ""
@@ -12671,6 +12678,9 @@ msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
 msgstr ""
+"Als nächstes benötigen wir eine Funktion um die Szene zu modifizieren. Diese "
+"Funktion muss die aktuelle Szene leeren und diese mit der gewünschten "
+"ersetzen."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
 msgid ""
@@ -12684,17 +12694,21 @@ msgstr ""
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
 msgstr ""
+"Schlussendlich müssen wir noch die leeren Callback-Funktionen in den zwei "
+"Szenen ausfüllen:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:252
 #: ../../docs/tutorials/math/vector_math.rst:264
 msgid "and"
-msgstr ""
+msgstr "und"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button."
 msgstr ""
+"Führe das Projekt aus und überprüfe, dass du zwischen den Szenen hin- und "
+"her springen kannst durch die Betätigung des Knopfes."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
 msgid ""
@@ -12706,7 +12720,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/index.rst:2
 msgid "Editor manual"
-msgstr ""
+msgstr "Editor Benutzerhandbuch"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
 msgid "From Unity to Godot Engine"
@@ -12754,6 +12768,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "MIT license, free and fully open source without any restriction"
 msgstr ""
+"MIT-Lizenz, kostenlos und gänzlich Open-Source ohne jegliche Beschränkungen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "OS (editor)"
@@ -12782,7 +12797,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "**Web:** WebAssembly or asm.js"
-msgstr ""
+msgstr "**Web:** WebAssembly oder asm.js"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
@@ -12811,7 +12826,7 @@ msgstr "**Mobil:** Android, iOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "**Web:** WebAssembly"
-msgstr ""
+msgstr "**Web:** WebAssembly"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "**Console:** See :ref:`doc_consoles`"
@@ -12827,11 +12842,11 @@ msgstr "Szenensystem"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid "Component/Scene (GameObject > Component)"
-msgstr ""
+msgstr "Komponente/Szene (SpielObjekt > Komponente)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:35
 msgid "Prefabs"
-msgstr ""
+msgstr "Vorgefertigtes"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid ""
@@ -12841,51 +12856,51 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid "Third-party tools"
-msgstr ""
+msgstr "Third-Party Werkzeuge"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid "Visual Studio or VS Code"
-msgstr ""
+msgstr "Visual Studio oder VS Code"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid ":ref:`External editors are possible <doc_external_editor>`"
-msgstr ""
+msgstr ":ref:`Externe Editoren sind möglich <doc_external_editor>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:38
 msgid ":ref:`Android SDK for Android export <doc_exporting_for_android>`"
-msgstr ""
+msgstr ":ref:`Android SDK für den Android export <doc_exporting_for_android>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:40
 msgid "Notable advantages"
-msgstr ""
+msgstr "Bemerkenswerte Vorteile"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:40
 msgid "Huge community"
-msgstr ""
+msgstr "Gigantische Gemeinschaft"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:41
 msgid "Large assets store"
-msgstr ""
+msgstr "Großer Assets-Laden"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:40
 msgid "Scene System"
-msgstr ""
+msgstr "Szenen-System"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:41
 msgid ":ref:`Animation Pipeline <doc_animations>`"
-msgstr ""
+msgstr ":ref:`Animations-Pipeline <doc_animations>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:42
 msgid ":ref:`Easy to write Shaders <doc_shading_language>`"
-msgstr ""
+msgstr ":ref:`Einfach zu schreibende Shader <doc_shading_language>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:43
 msgid "Debug on Device"
-msgstr ""
+msgstr "Auf Gerät debuggen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:50
 msgid "The editor"
-msgstr ""
+msgstr "Der Editor"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:52
 msgid ""
@@ -12893,6 +12908,10 @@ msgid ""
 "games. The pictures below display the default layouts of both editors with "
 "colored blocks to indicate common functionalities."
 msgstr ""
+"Die Godot-Engine stellt dir einen funktionsreichen Editor zur Verfügung um "
+"die Spiele von morgen zu schaffen. Die Bilder unten zeigen das Standard-"
+"Layout beider Editoren mit farbigen Blöcken um die verbreiteten "
+"Funktionalitäten anzuzeigen."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:58
 msgid ""
@@ -12902,6 +12921,13 @@ msgid ""
 "format, and no metadata. This makes Godot more friendly to VCS systems, such "
 "as Git, Subversion, or Mercurial."
 msgstr ""
+"Während beide Editoren sich ziemlich ähneln, stecken unter der Oberfläche "
+"viele Unterschiedlichkeiten. Beide ermöglichen es dir, dein Projekt "
+"geschickt durch das Dateisystem geordnet und aufgeräumt halten zu können. "
+"Doch Godot's Ansatz ist wesentlich einfacher gestaltet mit einer einzigen "
+"Konfigurationsdatei, minimalem Textformat, keine Metadaten. Dadurch ist "
+"Godot handlicher zu VCS Systemen, wie zum Beispiel Git, Subversion, oder "
+"Mercurial."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:63
 msgid ""
@@ -12909,6 +12935,10 @@ msgid ""
 "has a specific function, the approach used by Godot is more visually "
 "descriptive. It's easier to understand what a scene does at a glance."
 msgstr ""
+"Godot's Szenenpanel ist ähnlich zu dem Hierarchie-System Unitys. Doch jedes "
+"Node verfügt über eine ganz bestimmte Funktion, dieser Ansatz seitens Godot "
+"ist visuell mehr darstellend. Es ist einfacher gestaltet, den Überblick über "
+"alles behalten zu können."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:67
 msgid ""
@@ -12919,6 +12949,13 @@ msgid ""
 "or even links to resources in real-time is possible without needing to write "
 "code."
 msgstr ""
+"Der Inspektor Godots ist minimalistisch aufgebaut, er zeigt lediglich "
+"Eigenschaften an. Dank dieser Funktionsweise können Objekte dem Endbenutzer "
+"mehr nützliche Parameter preisgeben, ohne Funktionalitäten in Sprach-APIs zu "
+"verbergen. Zusätzlich erlaubt Godot es einem, jegliche jener Eigenschaften "
+"visuell zu animieren. Sei es das Ändern der Farben, Texturen, Enumerationen, "
+"oder selbst Links zu Ressourcen in Echtzeit sind möglich, ohne den Zwang "
+"Code dafür schreiben zu müssen."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:72
 msgid ""
@@ -12927,16 +12964,24 @@ msgid ""
 "rather than inside the editor (but the tree and objects can still be "
 "explored in the debugger window)."
 msgstr ""
+"Die Toolbar oberhalb des Bildschirms ist ähnlich in beiden Editoren "
+"vertreten, bieten die volle Kontrolle über die Projekt-Wiedergabe. Projekte "
+"in Godot dagegen laufen in seperaten Fenstern, anstelle innerhalb des "
+"Editors (der Tree und die Objekte können jedoch immer noch erkundigt werden "
+"im Debugger-Fenster)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:76
 msgid "This approach has several advantages:"
-msgstr ""
+msgstr "Dieser Ansatz hat diverse Vorteile:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:78
 msgid ""
 "Running the project and closing it is fast (Unity has to save, run the "
 "project, close the project, and then reload the previous state)."
 msgstr ""
+"Das Projekt abzuspielen und es zu schließen geht schnell (Unity muss dagegen "
+"z.B. das Projekt abspeichern, abspielen, schließen, und dann den vorherigen "
+"Stand neuladen)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:79
 msgid ""
@@ -12945,10 +12990,16 @@ msgid ""
 "the game is closed. This allows fantastic workflows, like creating levels "
 "while you play them."
 msgstr ""
+"Live-Bearbeitung ist um einiges nützlicher da Modifizierungen, getätigt im "
+"Editor, im Spiel sofort Wirkung zeigen, und gehen dann nicht verloren (und "
+"müssen nicht synchronisiert werden) sobald das Spiel geschlossen wird. Dies "
+"erlaubt effiziente Arbeitsweisen, so in etwa wie Levels zu erstellen während "
+"du sie spielst."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:80
 msgid "The editor is more stable because the game runs in a separate process."
 msgstr ""
+"Der Editor ist stabiler da das Spiel als separater Prozess ausgeführt wird."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:81
 msgid ""
@@ -12956,6 +13007,10 @@ msgid ""
 "\"Camera Override\" button in the editor viewport, which will switch between "
 "using the editor view and the game camera view."
 msgstr ""
+"Das Rennspiel kann von verschiedenen Blickwinkeln aus beobachtet werden "
+"durch das Umschalten des \"Camera Override\"-Knopfes im Editor-Viewport, "
+"welcher zwischen der Ansicht der Editoransicht und der Spielkamera "
+"umschaltet."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:83
 msgid ""
@@ -12963,22 +13018,32 @@ msgid ""
 "options allow deployment to a device (connected phone, tablet, or browser "
 "via HTML5), and debugging/live editing on it after the game is exported."
 msgstr ""
+"Godot's oberste Toolbar enthält ein Menü für fernes Debugging. Diese "
+"Optionen erlauben die Ausführung auf einem anderen Gerät (ein verbundenes "
+"Handy, ein Tablet, aber auch via Browser - HTML5), wie auch das Live-"
+"Debugging nachdem das Spiel exportiert wurde."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:88
 msgid "The scene system"
-msgstr ""
+msgstr "Das Szenensystem"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:90
 msgid ""
 "This is the most important difference between Unity and Godot and the "
 "favorite feature of most Godot users."
 msgstr ""
+"Hierbei handelt es sich um den wichtigsten Unterschied zwischen der Unity- "
+"und Godotengine als auch um die meistgemochtesten Features der meisten Godot-"
+"Benutzer."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:92
 msgid ""
 "Working on a 'level' in Unity usually means embedding all the required "
 "assets in a scene and linking them together with components and scripts."
 msgstr ""
+"An einem 'Level' in Unity zu arbeiten bedeutet normalerweise all die "
+"benötigten Assets in eine Szene einzubinden und sie mit Komponenten und "
+"Skripten zu verbinden."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:95
 msgid ""
@@ -12989,28 +13054,38 @@ msgid ""
 "you can compose a whole scene with different scenes stored in different "
 "files."
 msgstr ""
+"Godot's Szenensystem ist von der Oberfläche her Unity sehr ähnlich. Ein "
+"'Level' besteht aus einer Sammlung von Nodes, jedes mit seinem eigenen "
+"Nutzen: Spites, Meshes, Lights et cetera. Wie dem auch sei, in Godot sind "
+"Nodes in 'Trees' arrangiert. Jedes Node kann mehrere Kinder-Nodes haben, die "
+"dann eine Subszene aus der Hauptszene heraus bilden. Dies hat zur Folge dass "
+"es durchaus möglich ist, eine ganze Szene mit verschiedenen Szenen "
+"zusammenzusetzen, dabei können nämlich Szenen auch in einzelne Dateien "
+"gespeichert werden."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:98
 msgid ""
 "For example, think of a platformer level. You would compose it with multiple "
 "elements:"
 msgstr ""
+"Stelle dir zum Beispiel ein Plattformer-Level vor. Du würdest es mithilfe "
+"diverser Elemente zusammenstellen:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:100
 msgid "Bricks"
-msgstr ""
+msgstr "Bauklötze"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:101
 msgid "Coins"
-msgstr ""
+msgstr "Münzen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:102
 msgid "The player"
-msgstr ""
+msgstr "Der Spieler"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:103
 msgid "The enemies"
-msgstr ""
+msgstr "Die Gegner"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:105
 msgid ""
@@ -13021,16 +13096,25 @@ msgid ""
 "the level: For example, you'd add a BoxCollider2D to all the elements of the "
 "scene so that they can collide. This principle is different in Godot."
 msgstr ""
+"In Unity würdest du alle SpielObjekte in eine Szene packen: Den Spieler, "
+"mehrere Instanzen der Feinde, Bauklötze überfall um den Boden zu definieren, "
+"und schlussendlich mehrere Instanzen der Münzen, verteilt auf das gesamte "
+"Level. Danach würde man diverse Komponenten zu jedem Element verlinken und "
+"Logik in das Level einbauen: Zum Beispiel könntest du eine 'BoxCollider2D' "
+"zu allen Elementen der Szene hinzufügen, damit diese miteinander kollidieren "
+"könnten. Dieses Prinzip ist so in dieser Form nicht in Godot vertreten."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:110
 msgid ""
 "In Godot, you would split your whole scene into three separate, smaller "
 "scenes, and instance them in the main scene."
 msgstr ""
+"In Godot würdest du deine gesamte Szene in drei kleineren, separaten Szenen "
+"unterbringen, und sie in der Hauptszene instanziieren."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:112
 msgid "**A scene for the Player alone.**"
-msgstr ""
+msgstr "**Nur schon für den Spieler an sich eine eigene Szene**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:114
 msgid ""
@@ -13039,10 +13123,16 @@ msgid ""
 "at least an AnimatedSprite node. This node contains the sprite textures "
 "necessary for various animations (for example, a walking animation)."
 msgstr ""
+"Verstehe den Spieler als ein Element dieses wir gerne in verschiedenen "
+"Eltern-Szenen (eigentlich 'Level'-Szenen) verwenden wollen. In unserem Fall "
+"benötigt das Spielerelement wenigstens ein 'AnimatedSprite'-Node. Dieser "
+"Node-Typ enthält die Sprite-Texturen die benötigt werden für diverse selbst "
+"erstelle Animationen (wie zum Beispiel eine \"Stand-, \"Renn-\", \"Attacken-"
+"\" Animation)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:116
 msgid "**A scene for the Enemy.**"
-msgstr ""
+msgstr "**Eine Szene für den Gegner.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:118
 msgid ""
@@ -13051,10 +13141,15 @@ msgid ""
 "'AI' routines to generate the enemy's behavior) and the sprite textures used "
 "by the AnimatedSprite node."
 msgstr ""
+"Ein Gegner ist ebenso ein Element welches wir gerne in verschiedenen Szenen "
+"verwenden wollen. Es ist fast exakt das selbe wie beim 'Spieler-Node'. Die "
+"einzig markanten Unterschiede sind Skripte und Sprite Texturen. Ein Gegner-"
+"Element benötigt nämlich Pfade (KI-Vorgabenbasiert) um das Feindverhalten "
+"abzubilden."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:122
 msgid "**A Level scene.**"
-msgstr ""
+msgstr "**Eine Level-Szene.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:124
 msgid ""
@@ -13065,6 +13160,13 @@ msgid ""
 "You can set different properties for each Enemy node (to change its color, "
 "for example)."
 msgstr ""
+"Eine Level-Szene kann etwa mithilfe von Bauklötzen (für z.B. Plattformen), "
+"Münzen (für den Spieler zum Einsammeln), und einer Anzahl von Instanzen "
+"einer Gegner-Szene zusammengestellt werden. Jede Instanz ist ein Node in dem "
+"Level-Szenenbaum. Diese Instanzen sind separate Gegner, welche ursprünglich "
+"ein selbes Verhaltensmuster als auch Aussehen teilen (Gegner-Szene). Du "
+"kannst verschiedene Eigenschaften für jedes Feind-Node einstellen (um zum "
+"Beispiel die Farbe zu ändern)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:128
 msgid ""
@@ -13075,6 +13177,12 @@ msgid ""
 "\"Spatial\" (root type of all 3D-related nodes) or \"Control\" (root type of "
 "all GUI-related nodes)."
 msgstr ""
+"4. **Eine Hauptszene** Die Hauptszene würde zusammengestellt werden mit "
+"einem 'Root' (Wurzel-) Node mit zwei Kindern: Einem Spieler-Instanz Node, "
+"und einem Level-Instanz Node. Das Root-Node kann alles mögliche sein, "
+"normalerweile stellen \"Node\", der globalste Typ, oder \"Node2D\" (Root "
+"aller 2D-bezogenen Nodes), \"Spatial\" (Root aller 3D-bezogenen Nodes), oder "
+"\"Control\" (Root Typ für alle GUI-verwandten Nodes) den Root dar."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:134
 msgid ""
@@ -13085,6 +13193,12 @@ msgid ""
 "collision types nodes, depending on the usage (see the :ref:`Physics "
 "introduction <doc_physics_introduction>`)."
 msgstr ""
+"Wie du bereits sehen kannst ist jede Szene wie ein Baum organisiert. Das "
+"selbe gilt für Node-Eigenschaften: Du fügst *nicht* eine "
+"Kollisionskomponente zu einem Node hinzu, wie du es bei Unity tun würdest. "
+"Anstelle dessen machst du jenes Node zum Unterobjekt. Godot stellt diverse "
+"Kollisionstypen bereit, abhängig von der Verwendung (siehe :ref:`Einleitung "
+"Physik<doc_physics_introduction>`)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:139
 msgid ""
@@ -13092,9 +13206,12 @@ msgid ""
 "increase the depth of the scene tree? And doesn't Unity already allow you to "
 "organize GameObjects by putting them inside empty GameObjects?"
 msgstr ""
+"Welche Vorteile ergeben sich bei solch einem System? Würde dieses System "
+"nicht möglicherweise die Tiefe des Szenenbaumes negativ beeinflussen durch "
+"Erhöhung der Anzahl? Und erlaubt es Unity ohnehin nicht schon, SpielObjekte "
+"zu organisieren und zwar dadurch, diese in leere SpielObjekte zu packen?"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:141
-#, fuzzy
 msgid ""
 "Godot's system is closer to the well-known object-oriented paradigm: Godot "
 "provides a number of nodes which are not clearly \"Game Objects\", but they "
@@ -13103,8 +13220,8 @@ msgstr ""
 "1) Das System ist stärker ausgerichtet am Paradigma der objektorientierten "
 "Programmierung: Godot bringt eine Reihe an Nodes mit, die in dem Sinne zwar "
 "keine \"Game Objects\" darstellen, allerdings erhalten davon abgeleitete "
-"Nodes die Eigenschaften und Methoden des Eltern-Nodes: Das ist das Prinzip "
-"der Vererbung."
+"Unterobjekte die Eigenschaften und Methoden des Eltern-Nodes: Das ist das "
+"Prinzip der Vererbung."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:142
 msgid ""
@@ -13114,6 +13231,12 @@ msgid ""
 "a child of any node. Putting multiple GameObjects in an empty GameObject in "
 "Unity does not provide the same functionality."
 msgstr ""
+"Godot gestattet die Extrahierung eines Subbaumes einer Szene um das Ganze zu "
+"einer eigenen Szene zu machen. Falls ein Szenenbaum zu tief gehen würde "
+"könnte er also in kleinere Subbäume geteilt werden. Das ist eindeutig besser "
+"und trägt zur Lesbarkeit bei, so kann man jeden Subbaum in ein Node "
+"einbinden. Mehrere SpielObjekte in ein SpielObjekt zu stecken wäre so in der "
+"Form in Unity nicht möglich."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:145
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:4
@@ -13182,29 +13305,31 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:185
 msgid "GameObject -> Node"
-msgstr ""
+msgstr "SpielObject (GameObject) -> Node"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:186
 msgid "Add a component -> Inheriting"
-msgstr ""
+msgstr "Füge eine Komponente hinzu -> Vererbung"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:187
 msgid "Prefab -> Reusable Scene file"
-msgstr ""
+msgstr "Prefab -> Wiederverwendbare Szenendatei"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:191
 msgid "Scripting: GDScript, C# and Visual Script"
-msgstr ""
+msgstr "Skripting: GDScript, C# und Visual Script"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:194
 msgid "Design"
-msgstr ""
+msgstr "Gestaltung"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:196
 msgid ""
 "Unity supports C#. C# benefits from its integration with Visual Studio and "
 "has desirable features such as static typing."
 msgstr ""
+"Unity unterstützt C#. C# profitiert von der Integration seitens Visual "
+"Studios und bietet begehrenswerte Features wie Static Typing."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:198
 msgid ""
@@ -13239,22 +13364,29 @@ msgid ""
 "either add a new node between your target node and its current parent, then "
 "add a script to this new node."
 msgstr ""
+"füge ein neues Node zwischen Zielnode und aktuellem Parent-Node hinzu, dann "
+"hefte ein Skript an dieses neue Node an."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:213
 msgid ""
 "or, you can split your target node into multiple children and attach one "
 "script to each of them."
 msgstr ""
+"oder du teilst dein Zielnode in mehrere Unterobjekte und heftest dann ein "
+"Skript an jedes davon an."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:215
 msgid ""
 "As you can see, it can be easy to turn a scene tree to a mess. Consider "
 "splitting any complicated scene into multiple, smaller branches."
 msgstr ""
+"Wie du sehen kannst bereiten komplexe Szenenbäume schnell Kopfschmerzen. "
+"Bevorzuge das Auseinanderhalten komplizierter Szenen und setze sie in "
+"mehrere, kleinere Nodebäume."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:218
 msgid "Connections: groups and signals"
-msgstr ""
+msgstr "Verbindungen: Gruppen und Signale"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:220
 msgid ""
@@ -13263,6 +13395,11 @@ msgid ""
 "functions on all nodes in this group. See more in the :ref:`scripting "
 "documentation <doc_scripting_continued>`."
 msgstr ""
+"Du kannst Nodes handhaben durch den Zugriff auf sie durch ein angehängtes "
+"Skript, oder rufe die eingebauten benutzerdefinierten Funktionen in ihnen "
+"auf. Du kannst also Nodes in eine Gruppe platzieren und dann Funktionen in "
+"allen Nodes dieser Gruppe aufrufen. Mehr dazu unter: :ref:`scripting "
+"documentation <doc_scripting_continued>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:225
 msgid ""
@@ -13271,6 +13408,10 @@ msgid ""
 "are triggered. See more in the :ref:`signals documentation "
 "<doc_gdscript_signals>`."
 msgstr ""
+"Nodes können ein Signal senden falls bestimmte Aktionen ausgelöst werden. "
+"Ein Signal kann eingerichtet werden, jenste Funktion aufzurufen. Du kannst "
+"auch eigene Signale definieren und spezifizieren wann diese ausgelöst werden "
+"sollen. Siehe mehr unter :ref:`Signal-Dokumentation <doc_gdscript_signals>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:230
 msgid "Script serialization"
@@ -13278,19 +13419,24 @@ msgstr "Skript-Serialisierung"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:232
 msgid "Unity can handle script serialization in two ways:"
-msgstr ""
+msgstr "Unity kann die Skript-Serialisierung auf zwei Wege leisten:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:234
 msgid ""
 "Implicit: All public fields in a class are automatically serialized if the "
 "type is a serializable type (``Dictionary`` is not serializable)."
 msgstr ""
+"Implizit: Alle öffentlichen Felder einer Klasse werden automatisch "
+"serialisiert falls der Typ auch wirklich serialisierbar ist. (``Ein "
+"Dictionary`` ist z.B. nicht serialisierbar)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:235
 msgid ""
 "Explicit: Non-public fields can be serialized using the ``[SerializeField]`` "
 "attribute."
 msgstr ""
+"Explizit: Nicht-öffentliche Felder können serialisiert werden durch der "
+"Benützung des ``[SerializeField]`` Attribute."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
 msgid ""
@@ -13312,7 +13458,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:247
 msgid "Using Godot in C++"
-msgstr ""
+msgstr "Das Verwenden von Godot mit C++"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:249
 msgid ""
@@ -13321,16 +13467,23 @@ msgid ""
 "consider Godot Engine's editor as a \"game\" written in C++ using the Godot "
 "API."
 msgstr ""
+"Godot ermöglicht es dir, deine Projekte direkt in C++ durch API zu "
+"entwickeln, was in Unity z.B. nicht möglich ist. Z.B. könnte man den Editor "
+"der Godot-Engine als ein \"Spiel\", geschrieben in C++ mithilfe der Nutzung "
+"der Godot API betrachten."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:252
 msgid ""
 "If you are interested in using Godot in C++, you may want to start reading "
 "the :ref:`Developing in C++ <doc_introduction_to_godot_development>` page."
 msgstr ""
+"Falls du interessiert daran bist, C++ mit Godot zusammen zu verwenden, "
+"schaue hier vorbei: :ref:`Entwickeln in C++ "
+"<doc_introduction_to_godot_development>`."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:4
 msgid "Command line tutorial"
-msgstr ""
+msgstr "Befehlszeilen-Tutorial"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
 msgid ""
@@ -13339,6 +13492,13 @@ msgid ""
 "command line. Given the engine relies on almost no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
+"Manche Entwickler lieben es, die Befehlszeile ausgiebig zu nutzen. Godot "
+"wurde dazu designt, für diese Nutzer auch nützlich zu sein, d.h. hier die "
+"Anleitung um vollumfänglich von der Befehlszeile aus zu arbeiten. Dadurch "
+"dass die Engine sich fast ausschließlich nur auf eigenen Code stützt und "
+"kaum externe Bibliotheken verwendet gehen die Initialisierungszeiten "
+"ziemlich schnell von statten, was sich als praktisch für diese Arbeitsweise "
+"herausstellt."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 #, fuzzy
@@ -13358,7 +13518,7 @@ msgstr "Node-Eigenschaften"
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:59
 msgid "Command"
-msgstr ""
+msgstr "Befehl"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:20
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:34
@@ -13428,17 +13588,16 @@ msgid "``-h``, ``--help``, ``/?``"
 msgstr "``*`` ``/`` ``%``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
-#, fuzzy
 msgid "Display the list of command line options."
-msgstr "Kommandozeile Hilfsmittel herunterladen"
+msgstr "Zeigt die Liste der Befehlszeilen-Optionen."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "``--version``"
-msgstr ""
+msgstr "``--version``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "Display the version string."
-msgstr ""
+msgstr "Zeigt die Versions-Zeichenkette."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:26
 #, fuzzy
@@ -13456,6 +13615,8 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr ""
+"Ruhiger Modus, unterdrückt stdout Nachrichten. Fehler werden immer noch "
+"angezeigt."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:31
 #, fuzzy
@@ -13472,6 +13633,8 @@ msgid ""
 "Start the editor instead of running the scene (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Starte den Editor anstelle der laufenden Szene (:ref:`Tools "
+"<doc_introduction_to_the_buildsystem_tools>` müssen aktiviert sein)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid "``-p``, ``--project-manager``"
@@ -13482,6 +13645,9 @@ msgid ""
 "Start the project manager, even if a project is auto-detected (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Starte die Projektverwaltung, selbst wenn ein Projekt automatisch erkannt "
+"wird (:ref:`Tools <doc_introduction_to_the_buildsystem_tools>` muss "
+"aktiviert sein)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 #, fuzzy
@@ -13490,7 +13656,7 @@ msgstr "``+`` ``-``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 msgid "Quit after the first iteration."
-msgstr ""
+msgstr "Beende nach dem ersten Schleifendurchgang."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid "``-l <locale>``, ``--language <locale>``"
@@ -14725,7 +14891,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "Zoom Reset"
-msgstr ""
+msgstr "Zoom zurücksetzen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
@@ -19276,7 +19442,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:231
 msgid "Dictionaries"
-msgstr ""
+msgstr "Wörterbücher"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
 msgid ""
@@ -21653,7 +21819,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:58
 #: ../../docs/development/file_formats/tscn.rst:27
 msgid "Connections"
-msgstr ""
+msgstr "Verbindungen"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:60
 msgid ""
@@ -22001,7 +22167,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
 msgid "Comment"
-msgstr ""
+msgstr "Kommentar"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:315
 msgid ""
@@ -22114,7 +22280,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:398
 msgid "Built-In"
-msgstr ""
+msgstr "eingebaut"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
 msgid ""
@@ -22388,7 +22554,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:329
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:124
 msgid "C#"
-msgstr ""
+msgstr "C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:4
 msgid "C# basics"
@@ -22608,7 +22774,7 @@ msgstr ""
 #: ../../docs/tutorials/io/background_loading.rst:87
 #: ../../docs/tutorials/misc/pausing_games.rst:80
 msgid "Example"
-msgstr ""
+msgstr "Beispiel"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:150
 msgid ""
@@ -23230,7 +23396,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
-msgstr ""
+msgstr "Einzelstück"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:129
 msgid ""
@@ -23253,7 +23419,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 #: ../../docs/development/cpp/core_types.rst:174
 msgid "String"
-msgstr ""
+msgstr "Zeichenkette"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:152
 msgid ""
@@ -23289,7 +23455,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 msgid "Basis"
-msgstr ""
+msgstr "Basis"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:192
 msgid ""
@@ -23343,7 +23509,7 @@ msgstr "``Drehung``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:221
 msgid "Plane"
-msgstr ""
+msgstr "Fläche"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
 msgid ""
@@ -23387,7 +23553,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
 msgid "Quat"
-msgstr ""
+msgstr "Quat"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:253
 msgid ""
@@ -23507,7 +23673,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:296
 msgid "Variant"
-msgstr ""
+msgstr "Variante"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:298
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
@@ -29614,7 +29780,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
 #, fuzzy
 msgid "What nodes are available to the script"
-msgstr "Welche Objekte sind dem Skript zugänglich?"
+msgstr "Welche Nodes sind dem Skript verfügbar"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
 msgid "How they are organized"
@@ -30007,7 +30173,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:345
 msgid "If so, one will need to..."
-msgstr ""
+msgstr "Falls ja, muss man..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:347
 msgid "Move the player somewhere else in the tree."
@@ -30015,11 +30181,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:348
 msgid "Delete the room."
-msgstr ""
+msgstr "Lösche diesen Raum."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:349
 msgid "Instantiate and add the new room."
-msgstr ""
+msgstr "Instanziieren und neuen Raum hinzufügen."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:350
 msgid "Re-add the player."
@@ -30040,26 +30206,36 @@ msgid ""
 "In a more complex game with larger assets, it can be a better idea to simply "
 "keep the player somewhere else in the SceneTree entirely. This results in:"
 msgstr ""
+"In einem etwas komplexeren Spiel mit größeren Nutzerinhalten kann es "
+"durchaus eine gute Idee sein den Spieler außerhalb aufzubewahren, irgendwo "
+"im Szenenbaum. Die Ergebnisse in:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid "More consistency."
-msgstr ""
+msgstr "Höhere Beständigkeit."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:363
 msgid "No \"special cases\" that must be documented and maintained somewhere."
 msgstr ""
+"Keine \"Spezialfälle\" die hier weder dokumentiert noch sonst wo unterhalten "
+"werden dürfen."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:364
 msgid ""
 "No opportunity for errors to occur because these details are not accounted "
 "for."
 msgstr ""
+"Keine Möglichkeit für das Auftreten von Fehlern, da diese Details dafür "
+"nicht begründet werden können."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:367
 msgid ""
 "In contrast, if one ever needs to have a child node that does *not* inherit "
 "the transform of their parent, one has the following options:"
 msgstr ""
+"Falls man aber dennoch jemals ein Unterobjekt benötigen würde welches "
+"*nicht* den Transform des Eltern-Node übernehmen sollte, hat man dazu "
+"folgende Möglichkeiten:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:370
 msgid ""
@@ -30102,16 +30278,24 @@ msgid ""
 "one still has the flexibility to move nodes around, it is still best when "
 "such moves are unnecessary by default."
 msgstr ""
+"Bedeutet dies, dass Nodes selbst Komponenten sind? Nein, überhaupt nicht. "
+"Godot's Szenenbäume bilden eine ansammelnde Beziehung, nicht aber in etwa "
+"eine Zusammensetzung. Doch während man immer noch die Flexibilität hat Nodes "
+"herumzubewegen, ist es einfach immer noch das beste wenn diese Versetzungen "
+"nicht zwingend notwendig werden."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:4
 msgid "When to use scenes versus scripts"
-msgstr ""
+msgstr "Wann Szenen, wann Skripte verwenden"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:6
 msgid ""
 "We've already covered how scenes and scripts are different. Scripts define "
 "an engine class extension with imperative code, scenes with declarative code."
 msgstr ""
+"Wir haben bereits darüber geredet, was Szenen von Skripten unterscheidet. "
+"Skripte definieren eine Engine-Klassenerweiterung mit imperativen Code, "
+"Szenen mit deklarativen Code."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:10
 msgid ""
@@ -30123,7 +30307,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
 msgid "Anonymous types"
-msgstr ""
+msgstr "Anonyme Typen"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:18
 msgid ""
@@ -30131,6 +30315,9 @@ msgid ""
 "alone. This is, in essence, what the Godot Editor does, only in the C++ "
 "constructor of its objects."
 msgstr ""
+"Es ist tatsächlich möglich, den Szeneninhalt komplett in einem Skript zu "
+"definieren. Dies ist, in der Essenz, genau das was der Godot Editor tut, "
+"ausschließlich aber in den C++Konstruktoren derer Objekte."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
 msgid ""
@@ -32347,11 +32534,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:195
 msgid "2x2"
-msgstr ""
+msgstr "2x2"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:197
 msgid "In 2x2 mode, each bitmask contains four bits, one for each corner."
-msgstr ""
+msgstr "Im 2x2 Modus enthält jede Bitmaske 4 Bits, eins für jede Ecke."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:199
 msgid ""
@@ -32382,13 +32569,15 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:215
 msgid "3x3 (minimal)"
-msgstr ""
+msgstr "3x3 (minimal)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:217
 msgid ""
 "In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
 "center)."
 msgstr ""
+"Im 3x3 (minimal) Modus enthält jede Bitmaske 9 Bits (4 Ecken, 4 Ränder, 1 "
+"Mitte)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:220
 msgid "The 4 corner bits work the same as in 2x2 mode."
@@ -32401,8 +32590,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:225
+#, fuzzy
 msgid "The center bit should be \"on\" for any tile you wish to use."
-msgstr ""
+msgstr "Das mittlere Bit sollte \"an\" sein für alle zu nutzenden Kacheln."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:227
 msgid ""
@@ -32418,12 +32608,12 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:235
 msgid "3x3"
-msgstr ""
+msgstr "3x3"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:237
 msgid ""
 "In 3x3 mode, each bitmaks contains 9 bits (4 corners, 4 edges, 1 center)"
-msgstr ""
+msgstr "Im 3x3 Modus enthält jede Bitmaske 9 Bits (4 Ecken, 4 Ränder, 1 Mitte)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:239
 msgid ""
@@ -32475,7 +32665,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:271
 msgid "Tips and tricks"
-msgstr ""
+msgstr "Tipps und Tricks"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:273
 msgid ""
@@ -32868,7 +33058,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:282
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
-msgstr ""
+msgstr "Maßstab"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:284
 msgid "Determines the initial scale of the particles."
@@ -71829,9 +72019,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:840
-#, fuzzy
 msgid "Let's go over how this script works!"
-msgstr "Schauen wir, was diese neuen Variablen machen."
+msgstr "Schauen wir, was dieses neue Script macht."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:844
 #, fuzzy
@@ -76842,9 +77031,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:18
-#, fuzzy
 msgid "What is geometry?"
-msgstr "Generierte Geometrie"
+msgstr "Was ist Geometrie?"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:20
 msgid ""
@@ -76905,7 +77093,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:52
 msgid "Surfaces"
-msgstr ""
+msgstr "Oberflächen"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:54
 msgid ""
@@ -86994,19 +87182,19 @@ msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:35
 msgid "Button and menu texts"
-msgstr ""
+msgstr "Schaltflächen und Menü Texte"
 
 #: ../../docs/development/editor/editor_style_guide.rst:37
 msgid "Capitalize text in buttons and menu actions:"
-msgstr ""
+msgstr "Großschreibung von Texten in Schaltflächen und Menüs:"
 
 #: ../../docs/development/editor/editor_style_guide.rst:39
 msgid "**Good:** *Open Editor Data Folder*"
-msgstr ""
+msgstr "**gut:** *Editor Datenverzeichnis öffnen*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:40
 msgid "**Bad:** *Open editor data folder*"
-msgstr ""
+msgstr "**schlecht:** *Editor Datenverzeichnis öffnen*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:42
 msgid ""
@@ -87015,17 +87203,15 @@ msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:44
 msgid "**Good:** *Editor Settings...*"
-msgstr ""
+msgstr "**Gut:** *Editoreigenschaften...*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:45
-#, fuzzy
 msgid "**Bad:** *Editor Settings*"
-msgstr "Editor"
+msgstr "**schlecht:** *Editoreigenschaften*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:48
-#, fuzzy
 msgid "Inspector sections"
-msgstr ":ref:`Spatial gizmo Plug-Ins <doc_spatial_gizmo_plugins>`"
+msgstr "Inspector Sektion"
 
 #: ../../docs/development/editor/editor_style_guide.rst:50
 msgid ""
@@ -87039,15 +87225,18 @@ msgid ""
 "There are some valid exceptions for this, such as material features in :ref:"
 "`class_SpatialMaterial`."
 msgstr ""
+"Es gibt einige gültige Ausnahmen hierfür, z.B. Materialeigenschaften in :ref:"
+"`class_SpatialMaterial`."
 
 #: ../../docs/development/editor/editor_style_guide.rst:57
 msgid "This advice also applies to the Project Settings and Editor Settings."
 msgstr ""
+"Dieser Ratschlag gilt ebenso für die Projekteinstellungen und die "
+"Editoreinstellungen."
 
 #: ../../docs/development/editor/editor_style_guide.rst:60
-#, fuzzy
 msgid "Inspector performance hints"
-msgstr ":ref:`Spatial gizmo Plug-Ins <doc_spatial_gizmo_plugins>`"
+msgstr "Inspector Leistungs Tipps"
 
 #: ../../docs/development/editor/editor_style_guide.rst:62
 msgid ""
@@ -87081,6 +87270,8 @@ msgstr ""
 #: ../../docs/development/editor/editor_style_guide.rst:75
 msgid "*Fastest, Faster, Fast, Average, Slow, Slower, Slowest*"
 msgstr ""
+"*schnellster, schneller, schnell, durchschnittlich, langsam, langsamer, "
+"langsamste*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:77
 msgid ""
@@ -87121,8 +87312,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:97
+#, fuzzy
 msgid "**Good:** *Computes global illumination for the selected GIProbe.*"
-msgstr ""
+msgstr "**Gut:** *berechnet globale Beleuchtung für die ausgewählte GIProbe.*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:98
 msgid "**Bad:** *Compute global illumination for the selected GIProbe.*"
@@ -87130,12 +87322,11 @@ msgstr ""
 
 #: ../../docs/development/file_formats/index.rst:2
 msgid "Godot file formats"
-msgstr ""
+msgstr "Godot Dateiformate"
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:4
-#, fuzzy
 msgid "GDScript grammar"
-msgstr "GDScript Zeichenketten formatieren"
+msgstr "GDScript Grammatik"
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:6
 msgid ""
@@ -87154,7 +87345,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:2
 msgid "TSCN file format"
-msgstr ""
+msgstr "TSCN Dateiformat"
 
 #: ../../docs/development/file_formats/tscn.rst:4
 msgid ""
@@ -87171,6 +87362,9 @@ msgid ""
 "but is used to indicate to Godot that the file has been exported from "
 "another program and should not be edited by the user from within Godot."
 msgstr ""
+"Das ESCN (Exported Scene) Dateiformat ist zum TSCN Dateiformat identisch, "
+"zeigt Godot aber, dass diese Datei von einem anderen Programm exportiert "
+"wurde und vom Nutzer innerhalb Godots nicht editiert werden sollte."
 
 #: ../../docs/development/file_formats/tscn.rst:14
 msgid ""
@@ -87186,21 +87380,21 @@ msgstr "Dateistruktur"
 
 #: ../../docs/development/file_formats/tscn.rst:21
 msgid "There are five main sections inside the TSCN file:"
-msgstr ""
+msgstr "Es gibt 5 Hauptblöcke innerhalb der TSCN Datei:"
 
 #: ../../docs/development/file_formats/tscn.rst:23
 msgid "File Descriptor"
-msgstr ""
+msgstr "Datei Beschreiber"
 
 #: ../../docs/development/file_formats/tscn.rst:24
 #: ../../docs/development/file_formats/tscn.rst:273
 msgid "External resources"
-msgstr ""
+msgstr "Externe Quellen"
 
 #: ../../docs/development/file_formats/tscn.rst:25
 #: ../../docs/development/file_formats/tscn.rst:295
 msgid "Internal resources"
-msgstr ""
+msgstr "Interne Quellen"
 
 #: ../../docs/development/file_formats/tscn.rst:29
 msgid ""
@@ -87227,7 +87421,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:43
 msgid "Entries inside the file"
-msgstr ""
+msgstr "Einträge innerhalb der Datei"
 
 #: ../../docs/development/file_formats/tscn.rst:45
 msgid ""
@@ -87261,7 +87455,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:65
 msgid "The scene tree"
-msgstr ""
+msgstr "Der Szenenbaum"
 
 #: ../../docs/development/file_formats/tscn.rst:67
 msgid ""
@@ -87269,23 +87463,25 @@ msgid ""
 "its name, parent and (most of the time) a type. For example ``[node type="
 "\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 msgstr ""
+"Der Szenenbaum besteht aus... Nodes! Der Kopf jedes Nodes besteht aus seinem "
+"Namen, Eltern und (meistens) einem Typ. Zum Beispiel ``[node type=\"Camera\" "
+"name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 
 #: ../../docs/development/file_formats/tscn.rst:71
 msgid "Other valid keywords include:"
-msgstr ""
+msgstr "Andere gültige Schlüsselwörter beinhalten:"
 
 #: ../../docs/development/file_formats/tscn.rst:73
-#, fuzzy
 msgid "``instance``"
-msgstr "``in``"
+msgstr "``instance``"
 
 #: ../../docs/development/file_formats/tscn.rst:74
 msgid "``instance_placeholder``"
-msgstr ""
+msgstr "``instance_Platzhalter``"
 
 #: ../../docs/development/file_formats/tscn.rst:75
 msgid "``owner``"
-msgstr ""
+msgstr "``Eigentümer``"
 
 #: ../../docs/development/file_formats/tscn.rst:76
 msgid "``index`` (if two nodes have the same name)"
@@ -87443,10 +87639,13 @@ msgid ""
 "thus prefixed with ``res://``, but paths relative to the TSCN file's "
 "location are also valid."
 msgstr ""
+"Godot erzeugt immer absolute Pfade ausgehend vom Quellverzeichnis und zeigt "
+"dieses an als ``res://``, aber Pfade relativ zu TSCN Datei-Verzeichnisssen "
+"sind ebenso möglich."
 
 #: ../../docs/development/file_formats/tscn.rst:282
 msgid "Some example external resources are:"
-msgstr ""
+msgstr "Einige Beispiele externer Quellen sind:"
 
 #: ../../docs/development/file_formats/tscn.rst:290
 msgid ""

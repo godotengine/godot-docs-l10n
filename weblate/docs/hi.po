@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# abhishek mohite <abhishekmohite421@gmail.com>, 2020.
 # Harsh Agarwal <ultramarinebicycle@gmail.com>, 2020.
 # Lakshmi-Jayakumar <lakshmi.jayakumar.tkm@gmail.com>, 2019.
 # Shirious <sad3119823@gmail.com>, 2020.
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-06-22 14:46+0200\n"
-"PO-Revision-Date: 2020-05-07 21:28+0000\n"
-"Last-Translator: Harsh Agarwal <ultramarinebicycle@gmail.com>\n"
+"PO-Revision-Date: 2020-06-26 06:11+0000\n"
+"Last-Translator: abhishek mohite <abhishekmohite421@gmail.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/hi/>\n"
 "Language: hi\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -851,17 +852,16 @@ msgstr ""
 "होना अत्यधिक अक्षम है (लुआ, पायथन, जावास्क्रिप्ट)।"
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
-"कई मौजूदा भाषाओं में सी + + के लिए बाध्यकारी के लिए भयानक इंटरफेस होते हैं, जिसके "
-"परिणामस्वरूप बड़ी मात्रा में कोड, बग, बाधाएं और सामान्य अक्षमता (लुआ, पायथन, गिलहरी, "
-"जेएस आदि) होती है। हम एक महान इंजन पर ध्यान केंद्रित करना चाहते थे, न कि बड़ी मात्रा में "
-"एकीकरण।"
+"अनेक कंप्यूटर भाषाओं (Lua, Python, Squirrel, JavaScript आदि) में C++ को उपलब्ध बनाने "
+"के लिए भयावह इंटरफेस मौजूद हैं, जिससे लम्बे-चौड़े कोड, (bugs)दोष, बाधाएं और प्रभावहीनता "
+"जैसी मुश्किलें आ जाती है। हमारा ध्यान एक बढ़िया इंजन बनाने पर था न की इसपर, कि इंजन पर "
+"अनेक कंप्यूटर भाषाओ का प्रयोग संभव हो।"
 
 #: ../../docs/about/faq.rst:144
 #, fuzzy
@@ -874,34 +874,31 @@ msgstr ""
 "पायथन, गिलहरी, जेएस, एएस, आदि) का उपयोग करते समय अत्यधिक कम प्रदर्शन होता है।"
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
-"कचरा कलेक्टर स्टालों या अनावश्यक रूप से बड़े स्मृति उपयोग (Lua, अजगर, जेएस, AS, आदि) में "
-"परिणाम है ।"
+"Lua, Python, JavaScript, ActionScript, आदि भाषाओ में कूड़ा जमा करने वाले प्रोग्राम के "
+"कारन रूकावट या बहुत अधिक मेमोरी इस्तेमाल जैसी परेशानी अति है।"
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
-"कोड पूरा करने, लाइव संपादन, आदि (उन सभी) प्रदान करने के लिए कोड संपादक के साथ एकीकृत "
-"करने में कठिनाई। यह जीडीस्क्रिप्ट द्वारा अच्छी तरह से समर्थित है।"
+"उन सभी में कोड सुधरने में इस्तेमाल होने वाले सॉफ्टवर्स के साथ सहयोग करने में कठिन है जिसके "
+"कारन कॉड स्व-पूर्णता, सक्रिय संशोधन में परेशानिया आती है। किन्तु GDस्क्रिप्ट कंप्यूटर भाषा इस "
+"मामले में अत्यंत सक्षम ह।"
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above, and more."
-msgstr "GDScript ऊपर और अधिक मुद्दों में कटौती करने के लिए डिज़ाइन किया गया था।"
+msgstr "GDस्क्रिप्ट को ऊपर जैसे और कई मुद्दों पर अंकुश लगाने के लिए बनाया गया ह।"
 
 #: ../../docs/about/faq.rst:156
 msgid "What type of 3D model formats does Godot support?"
 msgstr "गोडॉट किस प्रकार के 3डी मॉडल प्रारूपों का समर्थन करता है?"
 
 #: ../../docs/about/faq.rst:158
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
@@ -909,7 +906,7 @@ msgid ""
 "godotengine.org/download>`_."
 msgstr ""
 "गोडॉट ' ओपनकोलाडा <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
-"OpenCOLLADA-Tools> '_ निर्यातक (माया, 3DSMax) के माध्यम से कोलाडा का समर्थन करता "
+"OpenCOLLADA-Tools> '_ exporter(Maya, 3DSMax) के माध्यम से कोलाडा का समर्थन करता "
 "है ।"
 
 #: ../../docs/about/faq.rst:161
