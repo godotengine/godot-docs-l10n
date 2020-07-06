@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,20 +225,23 @@ msgstr ""
 "索算法来完成。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
+#, fuzzy
 msgid ""
 "Godot implements Dictionary as an ``OrderedHashMap<Variant, Variant>``. The "
-"engine stores a giant array (initialized to 1000 records) of key-value "
+"engine stores a small array (initialized to 2^3 or 8 records) of key-value "
 "pairs. When one attempts to access a value, they provide it a key. It then "
-"*hashes* the key, i.e. converts it into a number. The \"hash\" becomes the "
-"index into the array, giving the OHM a quick lookup for the value within the "
-"conceptual \"table\" of keys mapped to values."
+"*hashes* the key, i.e. converts it into a number. The \"hash\" is used to "
+"calculate the index into the array. As an array, the OHM then has a quick "
+"lookup within the \"table\" of keys mapped to values. When the HashMap "
+"becomes too full, it increases to the next power of 2 (so, 16 records, then "
+"32, etc.) and rebuilds the structure."
 msgstr ""
 "Godot将字典实现为一个 ``OrderedHashMap <Variant, Variant>``。引擎存储一个由键"
 "值对组成的巨大数组（初始化为1000条记录）。当试图访问一个值时，其会提供一个"
 "键。然后它 *散列* 键，即把它转换成一个数字。“哈希”变成数组的索引，让OHM库快速"
 "查找映射到值的键的概念“表”中的值。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:112
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:113
 msgid ""
 "Hashes are to reduce the chance of a key collision. If one occurs, the table "
 "must recalculate another index for the value that takes the previous "
@@ -249,11 +252,11 @@ msgstr ""
 "算另一个索引。总之，这导致以牺牲内存和一些较小的操作效率为代价，对所有记录的"
 "常量时间访问。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:117
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:118
 msgid "Hashing every key an arbitrary number of times."
 msgstr "散列每个键任意次数。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:119
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:120
 msgid ""
 "Hash operations are constant-time, so even if an algorithm must do more than "
 "one, as long as the number of hash calculations doesn't become too dependent "
@@ -262,31 +265,30 @@ msgstr ""
 "散列操作是常量时间的，因此即使一个算法必须执行多于一个，只要散列计算的数量不"
 "太依赖于列表的密度，一切都会保持快速。这导致了……"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:124
-msgid "Maintaining a huge size for the table."
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:125
+#, fuzzy
+msgid "Maintaining an ever-growing size for the table."
 msgstr "维护一个巨大的列表尺寸。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:126
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:127
 msgid ""
-"The reason it starts with 1000 records, and the reason it forces large gaps "
-"of unused memory interspersed in the table is to minimize hash collisions "
-"and maintain the speed of the accesses."
+"HashMaps maintain gaps of unused memory interspersed in the table on purpose "
+"to reduce hash collisions and maintain the speed of accesses. This is why it "
+"constantly increases in size quadratically by powers of 2."
 msgstr ""
-"从1000条记录开始的原因，以及迫使大量未使用的内存散布在表中的原因，是为了最大"
-"程度地减少哈希冲突，并保持访问速度。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:130
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:132
 #, fuzzy
 msgid ""
 "As one might be able to tell, Dictionaries specialize in tasks that Arrays "
 "do not. An overview of their operational details is as follows:"
 msgstr "也许有人会说，字典专门处理数组所没有的任务。其操作细节概述如下："
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:133
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
 msgid "**Iterate:** Fast."
 msgstr "**迭代**：快速。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:137
 msgid ""
 "Op: Iterate over the map's internal vector of hashes. Return each key. "
 "Afterwards, users then use the key to jump to and return the desired value."
@@ -294,11 +296,11 @@ msgstr ""
 "操作：遍历映射的内部散列向量。返回每个键。之后，用户使用该键跳转到并返回所需"
 "的值。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:139
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
 msgid "**Insert, Erase, Move:** Fastest."
 msgstr "**插入，删除，移动**：最快。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:143
 msgid ""
 "Op: Hash the given key. Do 1 addition operation to look up the appropriate "
 "value (array start + offset). Move is two of these (one insert, one erase). "
@@ -307,45 +309,45 @@ msgstr ""
 "操作：散列给定的键。执行1个加法操作来查找适当的值（数组开始+偏移量）。移动其"
 "中的两个（一个插入，一个擦除）。映射必须进行一些维护，以保留其功能："
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:146
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
 msgid "update ordered List of records."
 msgstr "更新记录的有序列表。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
 msgid "determine if table density mandates a need to expand table capacity."
 msgstr "确定列表密度，是否需要扩展列表容量。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:152
 msgid ""
 "The Dictionary remembers in what order users inserted its keys. This enables "
 "it to execute reliable iterations."
 msgstr "字典会记住用户插入键的顺序。这使它能够执行可靠的迭代。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:153
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
 msgid "**Get, Set:** Fastest. Same as a lookup *by key*."
 msgstr "**取值，设值**：最快。和*根据键*查找相同。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
 msgid "Op: Same as insert/erase/move."
 msgstr "操作：和插入/删除/移动类似。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
 msgid "**Find:** Slowest. Identifies the key of a value."
 msgstr "**查找**：最慢。标识值的键。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:161
 msgid ""
 "Op: Must iterate through records and compare the value until a match is "
 "found."
 msgstr "操作：必须遍历记录并比较该值，直到找到匹配的为止。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:162
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:164
 msgid ""
 "Note that Godot does not provide this feature out-of-the-box (because they "
 "aren't meant for this task)."
 msgstr "请注意，Godot并未开箱即用地提供此功能（因为它们并非用于此任务）。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:165
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:167
 msgid ""
 "Godot implements Objects as stupid, but dynamic containers of data content. "
 "Objects query data sources when posed questions. For example, to answer the "
@@ -360,7 +362,7 @@ msgstr ""
 "`doc_what_are_godot_classes` 文章中，找到有关什么是对象以及它们如何工作的更多"
 "信息。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:172
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:174
 msgid ""
 "The important detail here is the complexity of the Object's task. Every time "
 "it performs one of these multi-source queries, it runs through *several* "
@@ -378,7 +380,7 @@ msgstr ""
 "类，一直到原始 ``Object`` 类为止。虽然这些都是单独的快速操作，但它必须进行如"
 "此多的检查，于是这一事实使得它们比查找数据的两种方法都要慢。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:184
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:186
 msgid ""
 "When developers mention how slow the scripting API is, it is this chain of "
 "queries they refer to. Compared to compiled C++ code where the application "
@@ -390,13 +392,13 @@ msgstr ""
 "知道在哪里可以找到任何东西的，C++代码相比，不可避免的是，脚本API操作将花费更"
 "长的时间。他们必须定位任何相关数据的来源，然后才能尝试访问它。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:190
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:192
 msgid ""
 "The reason GDScript is slow is because every operation it performs passes "
 "through this system."
 msgstr "GDScript很慢的原因是，它执行的每个操作都要经过这个系统。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:193
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:195
 msgid ""
 "C# can process some content at higher speeds via more optimized bytecode. "
 "But, if the C# script calls into an engine class' content or if the script "
@@ -405,7 +407,7 @@ msgstr ""
 "C#可以通过更优化的字节码，以更快的速度处理一些内容。但是，如果C#脚本调用引擎"
 "类的内容，或者脚本试图访问它的外部内容，它会通过这个管道。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:198
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:200
 msgid ""
 "NativeScript C++ goes even further and keeps everything internal by default. "
 "Calls into external structures will go through the scripting API. In "
@@ -417,7 +419,7 @@ msgstr ""
 "通过脚本API进行。在NativeScript C++中，注册方法以将其公开给脚本API是一项手动"
 "任务。至此，外部非C++类将使用API来查找它们。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:204
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:206
 msgid ""
 "So, assuming one extends from Reference to create a data structure, like an "
 "Array or Dictionary, why choose an Object over the other two options?"
@@ -425,7 +427,7 @@ msgstr ""
 "因此，假设从引用扩展到创建数据结构，比如一个 ``Array`` 或 ``Dictionary``，为"
 "什么选择一个 ``Object`` 而不是其他两个选项？"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:207
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:209
 msgid ""
 "**Control:** With objects comes the ability to create more sophisticated "
 "structures. One can layer abstractions over the data to ensure the external "
@@ -436,7 +438,7 @@ msgstr ""
 "应内部数据结构的更改。更重要的是，对象可以有信号，允许响应式行为。对象带来了"
 "创建更复杂结构的能力。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:212
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:214
 msgid ""
 "**Clarity:** Objects are a reliable data source when it comes to the data "
 "that scripts and engine classes define for them. Properties may not hold the "
@@ -446,7 +448,7 @@ msgstr ""
 "**清晰**：当涉及到脚本和引擎类为对象定义的数据时，对象是一个可靠的数据源。属"
 "性可能不包含期望的值，但是无需担心这个属性是否首先存在。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:217
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:219
 msgid ""
 "**Convenience:** If one already has a similar data structure in mind, then "
 "extending from an existing class makes the task of building the data "
@@ -456,7 +458,7 @@ msgstr ""
 "**便利**：如果已经有了类似的数据结构，之后从现有类扩展，可以使构建数据结构的"
 "任务变得容易得多。相比之下，数组和字典不能满足所有的用例。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:222
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:224
 msgid ""
 "Objects also give users the opportunity to create even more specialized data "
 "structures. With it, one can design their own List, Binary Search Tree, "
@@ -465,7 +467,7 @@ msgstr ""
 "对象还让用户有机会创建更专门化的数据结构。有了它，一个人可以设计自己的列表、"
 "二叉搜索树、堆、散列树、图、不相交集、以及其他选择。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:226
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:228
 msgid ""
 "\"Why not use Node for tree structures?\" one might ask. Well, the Node "
 "class contains things that won't be relevant to one's custom data structure. "
@@ -475,18 +477,18 @@ msgstr ""
 "“为什么不在树结构中使用节点？”有人可能会问。节点类包含与自定义数据结构无关的"
 "内容。因此在构建树结构时，构造自己的节点类型是很有帮助的。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:270
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:272
 msgid ""
 "From here, one can then create their own structures with specific features, "
 "limited only by their imagination."
 msgstr ""
 "从这里开始，然后就可以创建具有特定功能的结构，只会受到他们想象力的限制。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:274
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
 msgid "Enumerations: int vs. string"
 msgstr "枚举：整数VS字符串"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:278
 #, fuzzy
 msgid ""
 "Most languages offer an enumeration type option. GDScript is no different, "
@@ -497,7 +499,7 @@ msgstr ""
 "大多数语言都提供枚举类型选项。GDScript也一样，但与大多数其他语言不同的是，它"
 "允许对枚举值使用整数或字符串。问题就来了，“应该用哪个呢？”"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:281
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:283
 msgid ""
 "The short answer is, \"whichever you are more comfortable with.\" This is a "
 "feature specific to GDScript and not Godot scripting in general; The "
@@ -506,7 +508,7 @@ msgstr ""
 "简而言之，“你觉得哪个更舒服就选哪个。”这是GDScript特有的特性，而并非一般的"
 "Godot脚本；该语言将可用性置于性能之上。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:285
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:287
 msgid ""
 "On a technical level, integer comparisons (constant-time) will happen faster "
 "than string comparisons (linear-time). If one wants to keep up other "
@@ -515,7 +517,7 @@ msgstr ""
 "在技术层面上，整数比较（常量时间）比字符串比较（线性时间）更快。如果你想保持"
 "其他语言的习惯，那么应该使用整数。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:289
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:291
 msgid ""
 "The primary issue with using integers comes up when one wants to *print* an "
 "enum value. As integers, attempting to print MY_ENUM will print ``5`` or "
@@ -527,7 +529,7 @@ msgstr ""
 "``MY_ENUM``，将会打印 ``5`` 之类的东西，而不是像 ``MyEnum`` 这样的词。要打印"
 "整数枚举，必须编写一个字典来映射每个枚举对应的字符串值。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:295
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:297
 msgid ""
 "If the primary purpose of using an enum is for printing values and one "
 "wishes to group them together as related concepts, then it makes sense to "
@@ -537,14 +539,14 @@ msgstr ""
 "如果使用枚举的主要目的是打印值，并且希望将它们作为相关概念组合在一起，那么使"
 "用它们作为字符串是有意义的。这样，就不需要在打印上执行单独的数据结构。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:301
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
 msgid ""
 "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 msgstr ""
 "``AnimatedTexture`` VS ``AnimatedSprite`` VS ``AnimationPlayer`` VS "
 "``AnimationTree``"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:305
 msgid ""
 "Under what circumstances should one use each of Godot's animation classes? "
 "The answer may not be immediately clear to new Godot users."
@@ -552,7 +554,7 @@ msgstr ""
 "在什么情况下应该使用Godot的各种动画类？对于Godot的新用户来说，可能不是马上清"
 "楚答案。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:306
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:308
 msgid ""
 ":ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that the engine "
 "draws as an animated loop rather than a static image. Users can manipulate..."
@@ -560,15 +562,15 @@ msgstr ""
 ":ref:`AnimatedTexture <class_AnimatedTexture>` 是引擎绘制一个动画循环，而不是"
 "一个静态图像的纹理。用户可以进行如下操作…"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:310
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
 msgid "the rate at which it moves across each section of the texture (fps)."
 msgstr "它在纹理的每个部分移动的速率（每秒帧数）。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
 msgid "the number of regions contained within the texture (frames)."
 msgstr "纹理中包含的区域数（帧）。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:316
 msgid ""
 "Godot's :ref:`VisualServer <class_VisualServer>` then draws the regions in "
 "sequence at the prescribed rate. The good news is that this involves no "
@@ -578,7 +580,7 @@ msgstr ""
 "Godot的 :ref:`VisualServer <class_VisualServer>` 按规定的速度依次绘制区块。好"
 "消息是，这并不涉及引擎部分额外的逻辑。坏消息是，用户几乎没有控制权。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:319
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:321
 msgid ""
 "Also note that AnimatedTexture is a :ref:`Resource <class_Resource>` unlike "
 "the other :ref:`Node <class_Node>` objects discussed here. One might create "
@@ -595,7 +597,7 @@ msgstr ""
 "<class_TileSet>` 中，并将其与 :ref:`TileMap <class_TileMap>` 集成在一起，以获"
 "得许多自动动画化的背景，所有的渲染将在单个批处理内绘制调用。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:327
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:329
 msgid ""
 "The AnimatedSprite node, in combination with the :ref:`SpriteFrames "
 "<class_SpriteFrames>` resource, allows one to create a variety of animation "
@@ -607,7 +609,7 @@ msgstr ""
 "使用，允许用户通过精灵表创建各种动画序列，在动画之间切换，并控制它们的速度、"
 "区域偏移量、和方向。这使得它们非常适合控制基于二维的帧动画。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:333
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:335
 msgid ""
 "If one needs trigger other effects in relation to animation changes (for "
 "example, create particle effects, call functions, or manipulate other "
@@ -619,18 +621,18 @@ msgstr ""
 "基于帧的动画外的其他外围元素），那么就需要使用一个 :ref:`AnimationPlayer "
 "<class_AnimationPlayer>` 节点与 ``AnimatedSprite`` 关联。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:341
 msgid ""
 "AnimationPlayers are also the tool one will need to use if they wish to "
 "design more complex 2D animation systems, such as..."
 msgstr ""
 "如果你想设计更复杂的二维动画系统，``AnimationPlayer`` 也是你的必备工具，例如…"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:342
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
 msgid "**Cut-Out animations:** editing sprites' transforms at runtime."
 msgstr "**剪纸动画**：在运行时编辑精灵的变换。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:346
 msgid ""
 "**2D Mesh animations:** defining a region for the sprite's texture and "
 "rigging a skeleton to it. Then one animates the bones which stretch and bend "
@@ -639,11 +641,11 @@ msgstr ""
 "**二维网格动画**：为精灵的纹理划分一个区域，并将骨骼绑定在上面。然后动画化该"
 "骨骼，使骨骼按照彼此之间的关系，成比例地拉伸和弯曲纹理。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:349
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
 msgid "A mix of the above."
 msgstr "综上所述。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:353
 msgid ""
 "While one needs an AnimationPlayer to design each of the individual "
 "animation sequences for a game, it can also be useful to combine animations "

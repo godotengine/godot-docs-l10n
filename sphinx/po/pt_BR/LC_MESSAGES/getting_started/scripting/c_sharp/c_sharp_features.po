@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -286,10 +286,10 @@ msgstr ""
 #, fuzzy
 msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
-"``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. These names may "
-"change in the future. These are created from the ``get_name()`` method of "
-"the :ref:``OS <class_OS>`` singleton, but not every possible OS the method "
-"returns is an OS that Godot with Mono runs on."
+"``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
+"These names may change in the future. These are created from the "
+"``get_name()`` method of the :ref:``OS <class_OS>`` singleton, but not every "
+"possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
 "Um dos `GODOT_X11`, `GODOT_WINDOWS`, `GODOT_OSX`, `GODOT_ANDROID`, "
 "`GODOT_HTML5`, ou `GODOT_SERVER` dependendo do sistema operacional. Esses "
@@ -298,7 +298,7 @@ msgstr ""
 "possíveis S.O que o método retorna é um sistema operacional que Godot com o "
 "Mono é executado."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:230
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
 #, fuzzy
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
@@ -307,7 +307,7 @@ msgstr ""
 "Quando **exportar**, também pode ser definido o seguinte, dependendo das "
 "características de exportação:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
 #, fuzzy
 msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
@@ -316,7 +316,7 @@ msgstr ""
 "Um dos ``GODOT_PC``, ``GODOT_MOBILE``, ou ``GODOT_WEB```, dependendo do tipo "
 "de plataforma."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
 #, fuzzy
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
@@ -325,15 +325,25 @@ msgstr ""
 "Um dos ``GODOT_ARM64_V8A`` ou ``GODOT_ARMEABI_V7A`` apenas no Android, "
 "dependendo da arquitetura."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
+#, fuzzy
 msgid ""
-"One of ``GODOT_S3TC``, ``GODOT_ETC``, or ``GODOT_ETC2`` depending on the "
+"One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
+"architecture."
+msgstr ""
+"Um dos ``GODOT_ARM64_V8A`` ou ``GODOT_ARMEABI_V7A`` apenas no Android, "
+"dependendo da arquitetura."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
+#, fuzzy
+msgid ""
+"Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
 "Um dos ``GODOT_S3TC``, ``GODOT_ETC``, ou ``GODOT_ETC2``, dependendo do tipo "
 "de compressão de textura."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
 #, fuzzy
 msgid ""
 "Any custom features added in the export menu will be capitalized and "
@@ -341,3 +351,13 @@ msgid ""
 msgstr ""
 "Quaisquer recursos personalizados adicionados no menu de exportação serão "
 "capitalizados e prefixados: ``foo`` -> ``GODOT_FOO```."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
+#, fuzzy
+msgid ""
+"To see an example project, see the OS testing demo: https://github.com/"
+"godotengine/godot-demo-projects/tree/master/misc/os_test"
+msgstr ""
+"Além desta documentação, você também pode querer dar uma olhada nos vários "
+"`Projetos de demonstração do Godot <https://github.com/godotengine/godot-"
+"demo-projects>`_."

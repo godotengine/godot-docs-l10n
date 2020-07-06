@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -379,7 +379,7 @@ msgstr ""
 "このようなコストを回避するソリューションは、ゲームのバイナリを起動するときに"
 "動的に読み込まれる共有ライブラリとして独自のモジュールを構築することです。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:362
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:370
 #, fuzzy
 msgid ""
 "Once compiled, we should end up with a ``bin`` directory containing both the "
@@ -392,7 +392,7 @@ msgstr ""
 "lib`` など)にない場合、 ``LD_LIBRARY_PATH`` 環境変数を使用して、実行時にバイ"
 "ナリを見つける必要があります:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:373
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:381
 #, fuzzy
 msgid ""
 "You have to ``export`` the environment variable otherwise you won't be able "
@@ -401,7 +401,7 @@ msgstr ""
 "**注**: environ変数を ``export`` する必要があることに注意してください。そうし"
 "ないと、エディタ内からプロジェクトを再生できなくなります。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:376
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:384
 msgid ""
 "On top of that, it would be nice to be able to select whether to compile our "
 "module as shared library (for development) or as a part of the Godot binary "
@@ -412,7 +412,7 @@ msgstr ""
 "リの一部として(リリース用)コンパイルするかを選択できると便利です。それに"
 "は、\\ `ARGUMENT` コマンドを使用してSConsに渡すカスタムフラグを定義できます:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:408
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:416
 msgid ""
 "Now by default ``scons`` command will build our module as part of Godot's "
 "binary and as a shared library when passing ``summator_shared=yes``."
@@ -421,7 +421,7 @@ msgstr ""
 "して、そして ``summator_shared = yes`` を渡すときに共有ライブラリとしてビルド"
 "します。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:411
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:419
 #, fuzzy
 msgid ""
 "Finally, you can even speed up the build further by explicitly specifying "
@@ -430,11 +430,11 @@ msgstr ""
 "最後に、共有モジュールを scons コマンドのターゲットとして明示的に指定すること"
 "で、ビルドをさらに高速化することもできます:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:419
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:427
 msgid "Writing custom documentation"
 msgstr "カスタムドキュメントの作成"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:421
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:429
 msgid ""
 "Writing documentation may seem like a boring task, but it is highly "
 "recommended to document your newly created module in order to make it easier "
@@ -447,13 +447,13 @@ msgstr ""
 "ます。1年前に書いたコードは、他の人が書いたコードと区別がつかないかもしれない"
 "ので、将来の自分に親切にしてください!"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:427
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:435
 msgid "There are several steps in order to setup custom docs for the module:"
 msgstr ""
 "モジュールのカスタムドキュメントをセットアップするには、いくつかの手順があり"
 "ます:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:429
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:437
 msgid ""
 "Make a new directory in the root of the module. The directory name can be "
 "anything, but we'll be using the ``doc_classes`` name throughout this "
@@ -462,14 +462,14 @@ msgstr ""
 "モジュールのルートに新しいディレクトリを作成します。ディレクトリ名は何でもか"
 "まいませんが、このセクションでは ``doc_classes`` という名前を使用します。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:432
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:440
 #, fuzzy
 msgid "Now, we need to edit ``config.py``, add the following snippet:"
 msgstr ""
 "``_process_input`` にコードを追加する必要があります ``_process_input`` に以下"
 "を追加します:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:444
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:452
 #, fuzzy
 msgid ""
 "The ``get_doc_path()`` function is used by the build system to determine the "
@@ -480,7 +480,7 @@ msgstr ""
 "``get_doc_path()`` メソッドは、ドキュメントの場所を決定するためにビルド シス"
 "テムで使用されます。この例では、 ``doc_classes`` ディレクトリに配置されます。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:450
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:458
 #, fuzzy
 msgid ""
 "The ``get_doc_classes()`` method is necessary for the build system to know "
@@ -491,53 +491,53 @@ msgstr ""
 "``get_doc_path()`` メソッドは、ドキュメントの場所を決定するためにビルド シス"
 "テムで使用されます。この例では、 ``doc_classes`` ディレクトリに配置されます。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:457
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:465
 msgid ""
 "You can use Git to check if you have missed some of your classes by checking "
 "the untracked files with ``git status``. For example::"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:462
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:470
 #, fuzzy
 msgid "Example output::"
 msgstr "以下はその例です:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:474
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
 #, fuzzy
 msgid "Now we can generate the documentation:"
 msgstr "このドキュメントについて"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:476
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:484
 msgid ""
 "We can do this via running Godot's doctool i.e. ``godot --doctool <path>``, "
 "which will dump the engine API reference to the given ``<path>`` in XML "
 "format."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:479
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:487
 msgid ""
 "In our case we'll point it to the root of the cloned repository. You can "
 "point it to an another folder, and just copy over the files that you need."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:490
 msgid "Run command:"
 msgstr "コマンドの実行:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:488
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:496
 msgid ""
 "Now if you go to the ``godot/modules/summator/doc_classes`` folder, you will "
 "see that it contains a ``Summator.xml`` file, or any other classes, that you "
 "referenced in your ``get_doc_classes`` function."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:492
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:500
 msgid ""
 "Edit the file(s) following :ref:`doc_updating_the_class_reference` and "
 "recompile the engine."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:494
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:502
 #, fuzzy
 msgid ""
 "Once the compilation process is finished, the docs will become accessible "
@@ -547,7 +547,7 @@ msgstr ""
 "フェッチし、基本型とマージします。コンパイルプロセスが完了すると、ドキュメン"
 "トはエンジンの組み込みドキュメントシステム内でアクセスできるようになります。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:497
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:505
 #, fuzzy
 msgid ""
 "In order to keep documentation up-to-date, all you'll have to do is simply "
@@ -556,7 +556,7 @@ msgstr ""
 "ドキュメントを最新の状態に保つために必要なことは、単に ``ClassName.xml`` ファ"
 "イルの1つを変更し、エンジンを再コンパイルすることだけです。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:500
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:508
 msgid ""
 "If you change your module's API, you can also re-extract the docs, they will "
 "contain the things that you previously added. Of course if you point it to "
@@ -564,17 +564,17 @@ msgid ""
 "from an older engine build on top of the newer ones."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:505
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:513
 msgid ""
 "Note that if you don't have write access rights to your supplied ``<path>``, "
 "you might encounter an error similar to the following:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:517
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:525
 msgid "Adding custom editor icons"
 msgstr "カスタムエディタアイコンの追加"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:519
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:527
 msgid ""
 "Similarly to how you can write self-contained documentation within a module, "
 "you can also create your own custom icons for classes to appear in the "
@@ -583,7 +583,7 @@ msgstr ""
 "モジュール内で自己完結型のドキュメントを作成する方法と同様に、エディタに表示"
 "されるクラスの独自のカスタムアイコンを作成することもできます。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:522
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:530
 msgid ""
 "For the actual process of creating editor icons to be integrated within the "
 "engine, please refer to :ref:`doc_editor_icons` first."
@@ -591,11 +591,11 @@ msgstr ""
 "エンジン内に統合されるエディタアイコンを作成する実際のプロセスについては、最"
 "初に :ref:`doc_editor_icons` を参照してください。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:525
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:533
 msgid "Once you've created your icon(s), proceed with the following steps:"
 msgstr "アイコンを作成したら、次の手順に進みます:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:527
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:535
 msgid ""
 "Make a new directory in the root of the module named ``icons``. This is the "
 "default path for the engine to look for module's editor icons."
@@ -603,14 +603,14 @@ msgstr ""
 "``icons`` という名前のモジュールのルートに新しいディレクトリを作成します。こ"
 "れは、モジュールのエディタアイコンを検索するエンジンのデフォルトパスです。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:530
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:538
 msgid ""
 "Move your newly created ``svg`` icons (optimized or not) into that folder."
 msgstr ""
 "新しく作成した ``svg`` アイコン(最適化されているかどうかに関係なく)をそのフォ"
 "ルダに移動します。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:532
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:540
 msgid ""
 "Recompile the engine and run the editor. Now the icon(s) will appear in "
 "editor's interface where appropriate."
@@ -618,7 +618,7 @@ msgstr ""
 "エンジンを再コンパイルし、エディタを実行します。必要に応じて、エディタのイン"
 "ターフェースにアイコンが表示されます。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:535
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:543
 msgid ""
 "If you'd like to store your icons somewhere else within your module, add the "
 "following code snippet to ``config.py`` to override the default path:"
@@ -626,19 +626,19 @@ msgstr ""
 "モジュール内の別の場所にアイコンを保存したい場合は、次のコードスニペットを "
 "``config.py`` に追加してデフォルトパスをオーバーライドします:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:544
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:552
 msgid "Summing up"
 msgstr "まとめ"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:546
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:554
 msgid "Remember to:"
 msgstr "覚えておいてください:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:548
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:556
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
 msgstr "継承に ``GDCLASS`` マクロを使用するので、Godotはそれをラップできます"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:549
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:557
 msgid ""
 "use ``_bind_methods`` to bind your functions to scripting, and to allow them "
 "to work as callbacks for signals."
@@ -646,7 +646,7 @@ msgstr ""
 "関数をスクリプトにバインドし、シグナルのコールバックとして機能できるようにす"
 "るには、 ``_bind_methods`` を使用します。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:552
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:560
 msgid ""
 "But this is not all, depending what you do, you will be greeted with some "
 "(hopefully positive) surprises."
@@ -654,7 +654,7 @@ msgstr ""
 "しかし、これはすべてではありません、あなたが何をするかに応じて、いくつかの(う"
 "まくいけば肯定的な)驚きで迎えられます。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:555
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:563
 msgid ""
 "If you inherit from :ref:`class_Node` (or any derived node type, such as "
 "Sprite), your new class will appear in the editor, in the inheritance tree "
@@ -664,7 +664,7 @@ msgstr ""
 "クラスがエディタに表示され、「ノードの追加」ダイアログボックスの継承ツリーに"
 "表示されます。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:558
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:566
 msgid ""
 "If you inherit from :ref:`class_Resource`, it will appear in the resource "
 "list, and all the exposed properties can be serialized when saved/loaded."
@@ -672,7 +672,7 @@ msgstr ""
 ":ref:`class_Resource`\\ から継承すると、リソース リストに表示され、公開されて"
 "いるすべてのプロパティは、保存/読み込み時にシリアル化できます。"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:561
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:569
 msgid ""
 "By this same logic, you can extend the Editor and almost any area of the "
 "engine."

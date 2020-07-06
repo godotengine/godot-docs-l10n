@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -780,11 +780,31 @@ msgstr ""
 "Плюс в карму за предоставление скриншотов, конкретных значений, тестовых "
 "случаев или проектов-примеров (если возможно)."
 
-#: ../../docs/about/faq.rst:294
+#: ../../docs/about/faq.rst:293
+msgid "Is it possible to use Godot as a library?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:295
+msgid ""
+"Godot is meant to be used with its editor. We recommend you give it a try, "
+"as it will most likely save you time in the long term. There are no plans to "
+"make Godot usable as a library, as it would make the rest of the engine more "
+"convoluted and difficult to use for casual users."
+msgstr ""
+
+#: ../../docs/about/faq.rst:300
+msgid ""
+"If you want to use a rendering library, look into using an established "
+"rendering engine instead. Keep in mind rendering engines usually have "
+"smaller communities compared to Godot. This will make it more difficult to "
+"find answers to your questions."
+msgstr ""
+
+#: ../../docs/about/faq.rst:306
 msgid "Why does Godot not use STL (Standard Template Library)"
 msgstr "Почему Godot не использует STL (Стандартную библиотеку шаблонов)"
 
-#: ../../docs/about/faq.rst:296
+#: ../../docs/about/faq.rst:308
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
@@ -794,7 +814,7 @@ msgstr ""
 "считаем, что STL - это отличная библиотека общего назначения, но у нас были "
 "особые требования к Godot."
 
-#: ../../docs/about/faq.rst:300
+#: ../../docs/about/faq.rst:312
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
@@ -803,7 +823,7 @@ msgstr ""
 "отладочным двоичным файлам. Вместо этого мы используем несколько шаблонов с "
 "очень короткими именами."
 
-#: ../../docs/about/faq.rst:301
+#: ../../docs/about/faq.rst:313
 msgid ""
 "Most of our containers cater to special needs, like Vector, which uses copy "
 "on write and we use to pass data around, or the RID system, which requires "
@@ -816,7 +836,7 @@ msgstr ""
 "производительности. Аналогично, наши реализации хэш-карт предназначены для "
 "бесшовной интеграции с внутренними типами движков."
 
-#: ../../docs/about/faq.rst:302
+#: ../../docs/about/faq.rst:314
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
@@ -824,7 +844,7 @@ msgstr ""
 "В наши контейнеры встроена функция отслеживания использования памяти, "
 "которая помогает лучше отслеживать использование памяти."
 
-#: ../../docs/about/faq.rst:303
+#: ../../docs/about/faq.rst:315
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
@@ -832,7 +852,7 @@ msgstr ""
 "Для больших массивов мы используем память в виде пулов, отображаемых либо на "
 "предварительно выделенный буфер, либо на виртуальную память."
 
-#: ../../docs/about/faq.rst:304
+#: ../../docs/about/faq.rst:316
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
@@ -840,11 +860,11 @@ msgstr ""
 "Мы используем наш собственный тип String, так как предоставляемый STL "
 "является слишком простым и не имеет надлежащей поддержки интернационализации."
 
-#: ../../docs/about/faq.rst:307
+#: ../../docs/about/faq.rst:319
 msgid "Why does Godot not use exceptions?"
 msgstr "Почему Godot не использует исключения?"
 
-#: ../../docs/about/faq.rst:309
+#: ../../docs/about/faq.rst:321
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
@@ -856,7 +876,7 @@ msgstr ""
 "скрипта), но затем попытается исправить ее как можно более изящно и "
 "продолжить работу."
 
-#: ../../docs/about/faq.rst:314
+#: ../../docs/about/faq.rst:326
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
@@ -864,11 +884,11 @@ msgstr ""
 "Кроме того, исключения значительно увеличивают размер двоичного исполняемого "
 "файла."
 
-#: ../../docs/about/faq.rst:318
+#: ../../docs/about/faq.rst:330
 msgid "Why does Godot not enforce RTTI?"
 msgstr "Почему Godot не навязывает применение RTTI?"
 
-#: ../../docs/about/faq.rst:320
+#: ../../docs/about/faq.rst:332
 msgid ""
 "Godot provides its own type-casting system, which can optionally use RTTI "
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
@@ -879,13 +899,13 @@ msgstr ""
 "Отключение RTTI в Godot означает достижение значительно меньшего объёма "
 "двоичных исполняемых файлов ценой небольшой потери производительности."
 
-#: ../../docs/about/faq.rst:325
+#: ../../docs/about/faq.rst:337
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
 "Почему Godot не принуждает пользователей к внедрению DoD (дизайн, "
 "ориентированный на данные)?"
 
-#: ../../docs/about/faq.rst:327
+#: ../../docs/about/faq.rst:339
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
@@ -896,7 +916,7 @@ msgstr ""
 "задач, большинство пользователей не нуждаются в использовании дата-"
 "ориентированного дизайна (DoD)."
 
-#: ../../docs/about/faq.rst:331
+#: ../../docs/about/faq.rst:343
 msgid ""
 "DoD is mostly a cache coherency optimization that can only gain you "
 "significant performance improvements when dealing with dozens of thousands "
@@ -910,7 +930,7 @@ msgstr ""
 "То есть, если вы перемещаете несколько сотен спрайтов или врагов на кадр, "
 "DoD не поможет вам, и вы должны рассмотреть другой подход к оптимизации."
 
-#: ../../docs/about/faq.rst:338
+#: ../../docs/about/faq.rst:350
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
@@ -918,7 +938,7 @@ msgstr ""
 "Подавляющее большинство игр в этом не нуждаются, и Godot предоставляет "
 "удобных помощников, которые подходят для большинства случаев."
 
-#: ../../docs/about/faq.rst:341
+#: ../../docs/about/faq.rst:353
 msgid ""
 "If a game that really needs to process such large amount of objects is "
 "needed, our recommendation is to use C++ and GDNative for the high "
@@ -929,19 +949,19 @@ msgstr ""
 "где требуется высокая производительность, и GDScript (или C#) для остальной "
 "части игры."
 
-#: ../../docs/about/faq.rst:346
+#: ../../docs/about/faq.rst:358
 msgid "How can I support Godot development or contribute?"
 msgstr "Как я могу поддержать разработку Godot или внести свой вклад?"
 
-#: ../../docs/about/faq.rst:348
+#: ../../docs/about/faq.rst:360
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr "Смотрите :ref:`doc_ways_to_contribute`."
 
-#: ../../docs/about/faq.rst:351
+#: ../../docs/about/faq.rst:363
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Кто работает над Godot? Как я могу связаться с вами?"
 
-#: ../../docs/about/faq.rst:353
+#: ../../docs/about/faq.rst:365
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."

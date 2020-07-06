@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,7 +185,6 @@ msgstr ""
 "correctamente para las necesidades de motores de juegos y no debe ser usado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
-#, fuzzy
 msgid ""
 "Godot provides a `Blender plugin <https://github.com/godotengine/collada-"
 "exporter>`_ that will correctly export COLLADA scenes for use in Godot. It "
@@ -193,15 +192,15 @@ msgid ""
 "the future."
 msgstr ""
 "Godot proporciona un `plugin para Blender <https://github.com/godotengine/"
-"collada-exporter>`__ que exportará correctamente archivos COLLADA para ser "
-"usados en Godot."
+"collada-exporter>`__ que exportará correctamente las escenas COLLADA para "
+"ser usados en Godot. De momento no funciona con la version de blender 2.8 y "
+"posteriores, pero hay planes de actualizarlo en un futuro."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:68
 msgid "Exporting ESCN files from Blender"
 msgstr "Exportar archivos ESCN desde Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:70
-#, fuzzy
 msgid ""
 "The most powerful one, called `godot-blender-exporter <https://github.com/"
 "godotengine/godot-blender-exporter>`__. It uses a .escn file, which is kind "
@@ -210,9 +209,10 @@ msgid ""
 "experimental."
 msgstr ""
 "El más poderoso, llamado `godot-blender-exporter <https://github.com/"
-"godotengine/godot-blender-exporter>`__. Utiliza archivos .escn que es un "
+"godotengine/godot-blender-exporter>`__. Utiliza archivos .escn que es otro "
 "tipo de archivo .tscn (archivo de escena Godot) con otro nombre, este guarda "
-"la mayor cantidad de información posible de una escena de Blender."
+"la mayor cantidad de información posible de una escena de Blender. De todas "
+"formas, se considera experimental."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:76
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,11 +26,12 @@ msgid "Modules"
 msgstr "Модули"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:9
+#, fuzzy
 msgid ""
 "The Summator example in :ref:`doc_custom_modules_in_c++` is great for small, "
 "custom modules, but what if you want to use a larger, external library? "
-"Let's look at an example using Festival, a speech synthesis (text-to-speech) "
-"library written in C++."
+"Let's look at an example using `Festival <http://www.cstr.ed.ac.uk/projects/"
+"festival/>`_, a speech synthesis (text-to-speech) library written in C++."
 msgstr ""
 "Пример Summator в :ref:`doc_custom_modules_in_c++` хорош для маленьких, "
 "ручных модулей, но если вы хотите использовать большую, внешнюю библиотеку? "
@@ -152,7 +153,7 @@ msgstr ""
 "Чтобы добавить директории включения(include) для компилятора, вы может "
 "добавить их в пути переменных сред:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:172
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:181
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone `env` first, so it won't add those flags to whole Godot build "
@@ -162,18 +163,18 @@ msgstr ""
 "вы должны сначала клонировать `env`, чтобы он не добавлял флаги целиком в "
 "Godot (что вызовет ошибки). К примеру `SCsub` с собственными флагами:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:187
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:196
 msgid "The final module should look like this:"
 msgstr "В итоге скрипт должен выглядеть так:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:205
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:214
 msgid "Using the module"
 msgstr "Использование модуля"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:207
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:216
 msgid "You can now use your newly created module from any script:"
 msgstr "Теперь вы можете использовать ваш новый модуль из любого скрипта:"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:216
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:225
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr "А вывод будет ``is_spoken: True`` если текст будет произнесён."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -379,7 +379,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:345
 msgid "If so, one will need to..."
-msgstr ""
+msgstr "Falls ja, muss man..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:347
 msgid "Move the player somewhere else in the tree."
@@ -387,11 +387,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:348
 msgid "Delete the room."
-msgstr ""
+msgstr "Lösche diesen Raum."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:349
 msgid "Instantiate and add the new room."
-msgstr ""
+msgstr "Instanziieren und neuen Raum hinzufügen."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:350
 msgid "Re-add the player."
@@ -412,26 +412,36 @@ msgid ""
 "In a more complex game with larger assets, it can be a better idea to simply "
 "keep the player somewhere else in the SceneTree entirely. This results in:"
 msgstr ""
+"In einem etwas komplexeren Spiel mit größeren Nutzerinhalten kann es "
+"durchaus eine gute Idee sein den Spieler außerhalb aufzubewahren, irgendwo "
+"im Szenenbaum. Die Ergebnisse in:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid "More consistency."
-msgstr ""
+msgstr "Höhere Beständigkeit."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:363
 msgid "No \"special cases\" that must be documented and maintained somewhere."
 msgstr ""
+"Keine \"Spezialfälle\" die hier weder dokumentiert noch sonst wo unterhalten "
+"werden dürfen."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:364
 msgid ""
 "No opportunity for errors to occur because these details are not accounted "
 "for."
 msgstr ""
+"Keine Möglichkeit für das Auftreten von Fehlern, da diese Details dafür "
+"nicht begründet werden können."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:367
 msgid ""
 "In contrast, if one ever needs to have a child node that does *not* inherit "
 "the transform of their parent, one has the following options:"
 msgstr ""
+"Falls man aber dennoch jemals ein Unterobjekt benötigen würde welches "
+"*nicht* den Transform des Eltern-Node übernehmen sollte, hat man dazu "
+"folgende Möglichkeiten:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:370
 msgid ""
@@ -474,3 +484,8 @@ msgid ""
 "one still has the flexibility to move nodes around, it is still best when "
 "such moves are unnecessary by default."
 msgstr ""
+"Bedeutet dies, dass Nodes selbst Komponenten sind? Nein, überhaupt nicht. "
+"Godot's Szenenbäume bilden eine ansammelnde Beziehung, nicht aber in etwa "
+"eine Zusammensetzung. Doch während man immer noch die Flexibilität hat Nodes "
+"herumzubewegen, ist es einfach immer noch das beste wenn diese Versetzungen "
+"nicht zwingend notwendig werden."

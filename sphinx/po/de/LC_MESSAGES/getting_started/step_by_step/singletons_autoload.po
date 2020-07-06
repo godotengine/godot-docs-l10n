@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,6 +150,8 @@ msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
+"Um zu beginnen, lade die Vorlage von hier runter: :download:`autoload.zip "
+"<files/autoload.zip>` und öffne sie anschließend in Godot."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""
@@ -158,16 +160,21 @@ msgid ""
 "``pressed()`` signal connected. When you run the project, it starts in "
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
+"Das Projekt enthält zwei Szenen: ``Scene1.tscn`` und ``Scene2.tscn``. Jede "
+"Szene enthält ein Label, dieses den Szenennamen anzeigt und einen Knopf der "
+"mit einem ``pressed()`` -Signal verbunden wurde."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid "Global.gd"
-msgstr ""
+msgstr "Global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:112
 msgid ""
 "Switch to the \"Script\" tab and create a new script called Global.gd. Make "
 "sure it inherits from ``Node``:"
 msgstr ""
+"Wechsle zum \"Skript\"-Reiter und erstelle ein neues Skript genannt Global."
+"gd. Stelle sicher dass es sich von ``Node`` ableitet:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
 msgid ""
@@ -176,12 +183,19 @@ msgid ""
 "the script by clicking the browse button or typing its path: ``res://Global."
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
+"Der nächste Schritt ist, dieses Skript zur Autoloader-Liste hinzuzufügen. "
+"Öffne die ``Projekt > Projekteinstellungen`` aus dem Menü, wechsle zum "
+"\"AutoLoad\"-Reiter und wähle das Skript aus durch das klicken des \"Suchen"
+"\"-Knopfes, oder gebe den folgenden Pfad ein: ``res://Global.gd``. Drücke "
+"\"Hinzufügen\" um es der AutoLoader-Liste beizufügen:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
 msgstr ""
+"Ab jetzt würde bei jeder Ausführung des Projekts das Skript vorgeladen "
+"werden."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
 msgid ""
@@ -196,6 +210,9 @@ msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
 msgstr ""
+"Als nächstes benötigen wir eine Funktion um die Szene zu modifizieren. Diese "
+"Funktion muss die aktuelle Szene leeren und diese mit der gewünschten "
+"ersetzen."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
 msgid ""
@@ -209,16 +226,20 @@ msgstr ""
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
 msgstr ""
+"Schlussendlich müssen wir noch die leeren Callback-Funktionen in den zwei "
+"Szenen ausfüllen:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:252
 msgid "and"
-msgstr ""
+msgstr "und"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button."
 msgstr ""
+"Führe das Projekt aus und überprüfe, dass du zwischen den Szenen hin- und "
+"her springen kannst durch die Betätigung des Knopfes."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
 msgid ""

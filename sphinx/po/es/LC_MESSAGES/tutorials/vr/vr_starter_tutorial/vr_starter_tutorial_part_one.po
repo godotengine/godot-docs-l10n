@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:4
-#, fuzzy
 msgid "VR starter tutorial part 1"
-msgstr "Tutorial VR para principiantes"
+msgstr "Tutorial VR para principiantes parte 1"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:7
 msgid "Introduction"
@@ -85,38 +84,35 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:26
-#, fuzzy
 msgid ""
 "How to create a :ref:`RigidBody <class_RigidBody>`-based system that allows "
 "for picking up, dropping, and throwing RigidBody nodes using the VR "
 "controllers."
 msgstr ""
-"Cómo hacer un sistema :ref:`RigidBody <class_RigidBody>` basado en un "
-"sistema de agarrar y soltar."
+"Cómo hacer un sistema basado en :ref:`RigidBody <class_RigidBody>` que "
+"permita agarrar, soltar y arrojar nodos RigidBody usando controladores VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:27
 msgid "How to create simple destroyable target."
 msgstr "Cómo crear objetos destruibles simples."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:28
-#, fuzzy
 msgid ""
 "How to create some special :ref:`RigidBody <class_RigidBody>`-based objects "
 "that can destroy the targets."
 msgstr ""
-"Cómo hacer un sistema :ref:`RigidBody <class_RigidBody>` basado en un "
-"sistema de agarrar y soltar."
+"Cómo hacer un sistema basado en objetos :ref:`RigidBody "
+"<class_RigidBody>`que puedan destruir blancos."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:30
-#, fuzzy
 msgid ""
 "While this tutorial can be completed by beginners, it is highly advised to "
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development."
 msgstr ""
-"Aunque este tutorial puede ser completado por principiantes, es altamente "
-"aconsejable completar :ref:`doc_your_first_game`, si eres nuevo en Godot y/o "
-"en el desarrollo de juegos **antes de** pasar por esta serie de tutoriales."
+"Aunque este tutorial puede ser realizado por principiantes, es altamente "
+"aconsejable completar primero :ref:`doc_your_first_game` si eres nuevo en "
+"Godot y/o en el desarrollo de juegos."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:34
 msgid ""
@@ -190,13 +186,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:58
-#, fuzzy
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`_."
 msgstr ""
-"una copia del `repositorio godot-cpp <https://github.com/GodotNativeTools/"
-"godot-cpp>`_."
+"Podrás encontrar el proyecto completado en el `repositorio de OpenVR en "
+"GitHub <https://github.com/GodotVR/godot_openvr_fps>`_."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:62
 msgid "Getting everything ready"
@@ -211,16 +206,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:67
-#, fuzzy
 msgid ""
 "The starter assets are not required to use the scripts provided in this "
 "tutorial. The starter assets include several premade scenes and scripts that "
 "will be used throughout the tutorial."
 msgstr ""
-"Aunque estos recursos no son necesariamente requeridos para utilizar los "
-"scripts proporcionados en este tutorial, harán que el tutorial sea mucho más "
-"fácil de seguir ya que hay varias escenas preconfiguradas que utilizaremos a "
-"lo largo de la serie de tutoriales."
+"Los recursos ofrecidos no son requeridos para usar los scripts provistos en "
+"este tutorial. Estos recursos incluyen escenas prefabricadas y scripts que "
+"se usarán a lo largo del tutorial."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:70
 msgid ""
@@ -252,13 +245,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:85
-#, fuzzy
 msgid ""
 "Before we jump into the tutorial, let's take a moment to talk about how the "
 "nodes used for VR work."
 msgstr ""
-"Antes de entrar en el editor, queremos planear cómo anidaremos los "
-"containers basados en nuestra imagen de prototipo."
+"Antes de comenzar con el tutorial, nos tomaremos un momento paraver cómo "
+"funcionan los nodos utilizados para VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:87
 msgid ""
@@ -342,9 +334,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:157
-#, fuzzy
 msgid "Let's go over what this code does."
-msgstr "Repasemos lo que hace."
+msgstr "Veamos lo que hace este código."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:161
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,14 +80,15 @@ msgstr ""
 "séparé pour stocker les niveaux construits qui les utilisent."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
-#, fuzzy
 msgid "Style guide"
-msgstr "Guide de style C#"
+msgstr "Guide de style"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
 msgid ""
 "For consistency across projects, we recommend following these guidelines:"
 msgstr ""
+"Par souci de cohérence entre les projets, nous recommandons de suivre ces "
+"lignes directrices :"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid ""
@@ -97,11 +98,19 @@ msgid ""
 "the convention is to name them after the class name which should be in "
 "PascalCase."
 msgstr ""
+"Utilisez **snake_case** pour les noms de dossiers et de fichiers (à "
+"l'exception des scripts C#). Cela permet d'éviter les problèmes de "
+"sensibilité à la casse qui peuvent survenir après l'exportation d'un projet "
+"sous Windows. Les scripts C# sont une exception à cette règle, car la "
+"convention est de les nommer d'après le nom de la classe qui doit être en "
+"PascalCase."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:57
 msgid ""
 "Use **PascalCase** for node names, as this matches built-in node casing."
 msgstr ""
+"Utilisez **PascalCase** pour les noms de nœud, car cela correspond à la "
+"casse des nœuds intégrés."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 msgid ""
@@ -111,6 +120,12 @@ msgid ""
 "if you use third-party game assets for a character, it makes more sense to "
 "include them within the same folder as the character scenes and scripts."
 msgstr ""
+"En général, gardez les ressources tierces dans un dossier de haut niveau "
+"``addons/``, même s'il ne s'agit pas de plugins d'éditeur. Cela facilite le "
+"suivi des fichiers tiers. Il y a quelques exceptions à cette règle ; par "
+"exemple, si vous utilisez des ressources de jeu tierces pour un personnage, "
+"il est plus logique de les inclure dans le même dossier que les scènes et "
+"les scripts du personnage."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:65
 msgid "Importing"

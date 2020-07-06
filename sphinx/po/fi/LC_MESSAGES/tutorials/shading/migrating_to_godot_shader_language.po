@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,9 +139,9 @@ msgstr "Vakiot"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:73
 msgid ""
-"Godot currently does not support constants. You can fake the functionality "
-"by using a uniform initialized to the value, but you will not benefit from "
-"the increased speed from using a constant."
+"Global array constants are not supported in Godot 3.2.x. You can fake the "
+"functionality by using a uniform initialized to the value, but you will not "
+"benefit from the increased speed from using a constant."
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:77
@@ -359,7 +359,7 @@ msgstr "Tyypit"
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:135
 msgid ""
 "Shadertoy uses the webgl spec, so it runs a slightly different version of "
-"GLSL. However, it still has the regular types, including `Constants`_ and "
+"GLSL. However, it still has the regular types, including constants and "
 "macros."
 msgstr ""
 
@@ -542,7 +542,7 @@ msgstr ""
 msgid ""
 "The Book of Shaders uses the webgl spec, so it runs a slightly different "
 "version of GLSL. However, it still has the regular types, including "
-"`Constants`_ and macros."
+"constants and macros."
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:208

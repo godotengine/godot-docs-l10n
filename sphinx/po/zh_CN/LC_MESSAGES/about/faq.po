@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -338,7 +338,6 @@ msgstr ""
 "式的效率极低。"
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
@@ -346,7 +345,7 @@ msgid ""
 "a great engine, not a great amount of integrations."
 msgstr ""
 "许多现有语言具有绑定到C ++的糟糕接口，会导致产生大量代码、错误、瓶颈和普遍的"
-"效率低下(Lua、Python、Squirrel、JS等)。我们希望专注于一个伟大的引擎，而不是大"
+"效率低下(Lua、Python、Squirrel、JS等)。我们希望专注于一个更好的引擎，而不是大"
 "量的整合。"
 
 #: ../../docs/about/faq.rst:144
@@ -359,23 +358,20 @@ msgstr ""
 "(Lua、Python、Squirrel、JS、AS等)。"
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
-msgstr "垃圾收集器导致抛锚或不必要的大内存使用(Lua、Python、JS、AS等)。"
+msgstr "垃圾收集器导致停顿或不必要的大内存使用(Lua、Python、JS、AS等)。"
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
-"难以与Godot代码编辑器集成从而支持代码补全、动态编辑等等。(所有这些语言)。但这"
-"方面GDScript支持得很好。"
+"难以与Godot代码编辑器集成从而支持代码补全、动态编辑等。(所有这些语言)。但这方"
+"面GDScript支持得很好。"
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above, and more."
 msgstr "GDScript为减少上述问题以及更多问题而设计。"
 
@@ -607,7 +603,6 @@ msgid "I have a great idea for Godot. How can I share it?"
 msgstr "有关于Godot的好主意。如何分享它？"
 
 #: ../../docs/about/faq.rst:259
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -687,11 +682,31 @@ msgid ""
 "example projects (if applicable)."
 msgstr "最好可以附上截图、具体数值、测试用例或示例项目(如果有的话)。"
 
-#: ../../docs/about/faq.rst:294
+#: ../../docs/about/faq.rst:293
+msgid "Is it possible to use Godot as a library?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:295
+msgid ""
+"Godot is meant to be used with its editor. We recommend you give it a try, "
+"as it will most likely save you time in the long term. There are no plans to "
+"make Godot usable as a library, as it would make the rest of the engine more "
+"convoluted and difficult to use for casual users."
+msgstr ""
+
+#: ../../docs/about/faq.rst:300
+msgid ""
+"If you want to use a rendering library, look into using an established "
+"rendering engine instead. Keep in mind rendering engines usually have "
+"smaller communities compared to Godot. This will make it more difficult to "
+"find answers to your questions."
+msgstr ""
+
+#: ../../docs/about/faq.rst:306
 msgid "Why does Godot not use STL (Standard Template Library)"
 msgstr "为什么Godot不使用STL(标准模板库)？"
 
-#: ../../docs/about/faq.rst:296
+#: ../../docs/about/faq.rst:308
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
@@ -700,7 +715,7 @@ msgstr ""
 "像许多其他库一样(Qt就是一个例子)，Godot没有使用STL。我们相信STL是一个伟大的通"
 "用库，但我们对Godot有特殊的要求。"
 
-#: ../../docs/about/faq.rst:300
+#: ../../docs/about/faq.rst:312
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
@@ -708,7 +723,7 @@ msgstr ""
 "STL模板会创建大量符号，这会产生大量的调试二进制文件。 我们使用名称很短的少量"
 "模板来代替。"
 
-#: ../../docs/about/faq.rst:301
+#: ../../docs/about/faq.rst:313
 msgid ""
 "Most of our containers cater to special needs, like Vector, which uses copy "
 "on write and we use to pass data around, or the RID system, which requires "
@@ -719,19 +734,19 @@ msgstr ""
 "数据，或RID系统，这需要O(1)访问时间来提高性能。同样，我们的哈希映射实现旨在与"
 "内部引擎类型无缝集成。"
 
-#: ../../docs/about/faq.rst:302
+#: ../../docs/about/faq.rst:314
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr "我们的容器内置了内存跟踪，这有助于更好地跟踪内存使用情况。"
 
-#: ../../docs/about/faq.rst:303
+#: ../../docs/about/faq.rst:315
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr "对于大型数组，我们使用内存池，可以映射到预先分配的缓冲区或虚拟内存。"
 
-#: ../../docs/about/faq.rst:304
+#: ../../docs/about/faq.rst:316
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
@@ -739,11 +754,11 @@ msgstr ""
 "我们使用自定义字符串类型，由于STL提供的版本过于基础，并且缺乏适当的国际化支"
 "持。"
 
-#: ../../docs/about/faq.rst:307
+#: ../../docs/about/faq.rst:319
 msgid "Why does Godot not use exceptions?"
 msgstr "为什么Godot不使用异常？"
 
-#: ../../docs/about/faq.rst:309
+#: ../../docs/about/faq.rst:321
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
@@ -753,17 +768,17 @@ msgstr ""
 "我们相信无论如何游戏都不应该崩溃。如果发生意外情况，Godot将打印一个错误(甚至"
 "可以追溯到脚本)，但之后它会尽可能优雅地恢复，并继续前进。"
 
-#: ../../docs/about/faq.rst:314
+#: ../../docs/about/faq.rst:326
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr "此外，异常会显著增加可执行文件的二进制大小。"
 
-#: ../../docs/about/faq.rst:318
+#: ../../docs/about/faq.rst:330
 msgid "Why does Godot not enforce RTTI?"
 msgstr "为什么Godot不执行运行时类型识别(RTTI)？"
 
-#: ../../docs/about/faq.rst:320
+#: ../../docs/about/faq.rst:332
 msgid ""
 "Godot provides its own type-casting system, which can optionally use RTTI "
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
@@ -772,12 +787,11 @@ msgstr ""
 "Godot提供了自己的类型转换系统，可以可选地在内部使用运行时类型识别(RTTI)。在"
 "Godot中禁用运行时类型识别，意味着可以以较小的性能代价实现相当小的二进制大小。"
 
-#: ../../docs/about/faq.rst:325
+#: ../../docs/about/faq.rst:337
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr "为什么Godot不强迫用户实践DoD(面向数据设计)？"
 
-#: ../../docs/about/faq.rst:327
-#, fuzzy
+#: ../../docs/about/faq.rst:339
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
@@ -786,7 +800,7 @@ msgstr ""
 "虽然Godot内部针对许多繁重的性能任务，尝试尽可能地使用缓存一致性，但我们相信大"
 "多数用户并不真正需要被迫使用DoD实践。"
 
-#: ../../docs/about/faq.rst:331
+#: ../../docs/about/faq.rst:343
 msgid ""
 "DoD is mostly a cache coherency optimization that can only gain you "
 "significant performance improvements when dealing with dozens of thousands "
@@ -798,7 +812,7 @@ msgstr ""
 "提升(每帧都经过少量修改)。比如，如果你每帧移动几百个精灵或敌人，面向数据设计"
 "不会帮您的，您应该考虑一种不同的优化方法。"
 
-#: ../../docs/about/faq.rst:338
+#: ../../docs/about/faq.rst:350
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
@@ -806,7 +820,7 @@ msgstr ""
 "绝大多数游戏都不需要这个，并且Godot提供了方便的辅助工具来完成大多数情况下的工"
 "作。"
 
-#: ../../docs/about/faq.rst:341
+#: ../../docs/about/faq.rst:353
 msgid ""
 "If a game that really needs to process such large amount of objects is "
 "needed, our recommendation is to use C++ and GDNative for the high "
@@ -815,19 +829,19 @@ msgstr ""
 "如果一个游戏确实需要处理如此庞大的对象，我们建议在游戏的高性能部分使用C++和"
 "GDNative，而其余部分使用GDScript(或C#)。"
 
-#: ../../docs/about/faq.rst:346
+#: ../../docs/about/faq.rst:358
 msgid "How can I support Godot development or contribute?"
 msgstr "怎样支持或参与Godot的发展呢？"
 
-#: ../../docs/about/faq.rst:348
+#: ../../docs/about/faq.rst:360
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr "参阅 :ref:`doc_ways_to_contribute`。"
 
-#: ../../docs/about/faq.rst:351
+#: ../../docs/about/faq.rst:363
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "谁在为Godot工作？如何联系？"
 
-#: ../../docs/about/faq.rst:353
+#: ../../docs/about/faq.rst:365
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."

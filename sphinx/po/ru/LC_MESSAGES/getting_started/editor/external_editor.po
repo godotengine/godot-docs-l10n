@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,13 @@ msgstr ""
 msgid "Using an external text editor"
 msgstr "Использование внешнего текстового редактора"
 
-#: ../../docs/getting_started/editor/external_editor.rst:6
+#: ../../docs/getting_started/editor/external_editor.rst:8
+msgid ""
+"`External editors are currently incompatible with Godot's \"Sync Script "
+"Changes\" feature. <https://github.com/godotengine/godot/issues/10946>`__"
+msgstr ""
+
+#: ../../docs/getting_started/editor/external_editor.rst:10
 #, fuzzy
 msgid ""
 "Godot can be used with an external text editor, such as Sublime Text or "
@@ -34,7 +40,7 @@ msgstr ""
 "предоставляет эту опцию через меню ``Редактор -> Настройки редактора -> Text "
 "Editor -> External``"
 
-#: ../../docs/getting_started/editor/external_editor.rst:12
+#: ../../docs/getting_started/editor/external_editor.rst:16
 #, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
@@ -46,112 +52,112 @@ msgstr ""
 "позволяют лучше интегрировать редактор с godot. Godot заменяет следующие "
 "параметры внутри флагов:"
 
-#: ../../docs/getting_started/editor/external_editor.rst:18
+#: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "Field in Exec Flags"
 msgstr "Поле в Исполняемых Флагах"
 
-#: ../../docs/getting_started/editor/external_editor.rst:18
+#: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "Is replaced with"
 msgstr "Заменяется на"
 
-#: ../../docs/getting_started/editor/external_editor.rst:20
+#: ../../docs/getting_started/editor/external_editor.rst:24
 #, fuzzy
 msgid "``{project}``"
 msgstr "{project}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:20
+#: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The absolute path to the project directory"
 msgstr "Абсолютный путь к каталогу проекта"
 
-#: ../../docs/getting_started/editor/external_editor.rst:22
+#: ../../docs/getting_started/editor/external_editor.rst:26
 #, fuzzy
 msgid "``{file}``"
 msgstr "{file}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:22
+#: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The absolute path to the file"
 msgstr "Абсолютный путь к файлу"
 
-#: ../../docs/getting_started/editor/external_editor.rst:24
+#: ../../docs/getting_started/editor/external_editor.rst:28
 #, fuzzy
 msgid "``{col}``"
 msgstr "{col}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:24
+#: ../../docs/getting_started/editor/external_editor.rst:28
 msgid "The column number of the error"
 msgstr "Номер столбца ошибки"
 
-#: ../../docs/getting_started/editor/external_editor.rst:26
+#: ../../docs/getting_started/editor/external_editor.rst:30
 #, fuzzy
 msgid "``{line}``"
 msgstr "{line}"
 
-#: ../../docs/getting_started/editor/external_editor.rst:26
+#: ../../docs/getting_started/editor/external_editor.rst:30
 msgid "The line number of the error"
 msgstr "Номер строки ошибки"
 
-#: ../../docs/getting_started/editor/external_editor.rst:29
+#: ../../docs/getting_started/editor/external_editor.rst:33
 msgid "Some example Exec Flags for various editors include:"
 msgstr "Некоторые примеры Исполняемых Флагов для различных редакторов:"
 
-#: ../../docs/getting_started/editor/external_editor.rst:32
+#: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "Editor"
 msgstr "Редактор"
 
-#: ../../docs/getting_started/editor/external_editor.rst:32
+#: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "Exec Flags"
 msgstr "Исполняемые Флаги"
 
-#: ../../docs/getting_started/editor/external_editor.rst:34
+#: ../../docs/getting_started/editor/external_editor.rst:38
 #, fuzzy
 msgid "Geany/Kate"
 msgstr "geany/kate"
 
-#: ../../docs/getting_started/editor/external_editor.rst:34
+#: ../../docs/getting_started/editor/external_editor.rst:38
 #, fuzzy
 msgid "``{file} --line {line} --column {col}``"
 msgstr "``{file} --line {line} --column {col}``"
 
-#: ../../docs/getting_started/editor/external_editor.rst:36
+#: ../../docs/getting_started/editor/external_editor.rst:40
 #, fuzzy
 msgid "Atom/Sublime Text"
 msgstr "atom/sublime text"
 
-#: ../../docs/getting_started/editor/external_editor.rst:36
+#: ../../docs/getting_started/editor/external_editor.rst:40
 #, fuzzy
 msgid "``{file}:{line}``"
 msgstr "``{file}:{line}``"
 
-#: ../../docs/getting_started/editor/external_editor.rst:38
+#: ../../docs/getting_started/editor/external_editor.rst:42
 #, fuzzy
 msgid "JetBrains Rider"
 msgstr "JetBrains rider"
 
-#: ../../docs/getting_started/editor/external_editor.rst:38
+#: ../../docs/getting_started/editor/external_editor.rst:42
 #, fuzzy
 msgid "``--line {line} {file}``"
 msgstr "``--line {line} {file}``"
 
-#: ../../docs/getting_started/editor/external_editor.rst:40
+#: ../../docs/getting_started/editor/external_editor.rst:44
 #, fuzzy
 msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
-#: ../../docs/getting_started/editor/external_editor.rst:40
+#: ../../docs/getting_started/editor/external_editor.rst:44
 #, fuzzy
 msgid "``{project} --goto {file}:{line}:{col}``"
 msgstr "``{project} --goto {file}:{line}:{col}``"
 
-#: ../../docs/getting_started/editor/external_editor.rst:42
+#: ../../docs/getting_started/editor/external_editor.rst:46
 msgid "Vim (gVim)"
 msgstr "Vim (gVim)"
 
-#: ../../docs/getting_started/editor/external_editor.rst:42
+#: ../../docs/getting_started/editor/external_editor.rst:46
 #, fuzzy
 msgid "``\"+call cursor({line}, {col})\" {file}``"
 msgstr "``\"+call cursor({line}, {col})\" {file}``"
 
-#: ../../docs/getting_started/editor/external_editor.rst:45
+#: ../../docs/getting_started/editor/external_editor.rst:49
 #, fuzzy
 msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
 msgstr "Для кода Visual Studio вам нужно указать на файл ``code.cmd``."

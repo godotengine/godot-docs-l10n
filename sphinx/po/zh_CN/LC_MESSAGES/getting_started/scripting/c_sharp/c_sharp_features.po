@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -243,38 +243,53 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
 msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
-"``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. These names may "
-"change in the future. These are created from the ``get_name()`` method of "
-"the :ref:``OS <class_OS>`` singleton, but not every possible OS the method "
-"returns is an OS that Godot with Mono runs on."
+"``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
+"These names may change in the future. These are created from the "
+"``get_name()`` method of the :ref:``OS <class_OS>`` singleton, but not every "
+"possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:230
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
 "export features:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
 msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
 "platform type."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
 "depending on the architecture."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
 msgid ""
-"One of ``GODOT_S3TC``, ``GODOT_ETC``, or ``GODOT_ETC2`` depending on the "
+"One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
+"architecture."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
+msgid ""
+"Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
 msgid ""
 "Any custom features added in the export menu will be capitalized and "
 "prefixed: ``foo`` -> ``GODOT_FOO``."
 msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
+#, fuzzy
+msgid ""
+"To see an example project, see the OS testing demo: https://github.com/"
+"godotengine/godot-demo-projects/tree/master/misc/os_test"
+msgstr ""
+"为了阐明这点，可以看看这个 `轰炸机演示 <https://github.com/godotengine/godot-"
+"demo-projects/tree/master/networking/multiplayer_bomber>`_ :"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:4
 msgid "Command line tutorial"
-msgstr ""
+msgstr "Befehlszeilen-Tutorial"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
 msgid ""
@@ -28,6 +28,13 @@ msgid ""
 "command line. Given the engine relies on almost no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
+"Manche Entwickler lieben es, die Befehlszeile ausgiebig zu nutzen. Godot "
+"wurde dazu designt, für diese Nutzer auch nützlich zu sein, d.h. hier die "
+"Anleitung um vollumfänglich von der Befehlszeile aus zu arbeiten. Dadurch "
+"dass die Engine sich fast ausschließlich nur auf eigenen Code stützt und "
+"kaum externe Bibliotheken verwendet gehen die Initialisierungszeiten "
+"ziemlich schnell von statten, was sich als praktisch für diese Arbeitsweise "
+"herausstellt."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 #, fuzzy
@@ -45,7 +52,7 @@ msgstr "Node-Eigenschaften"
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:90
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:120
 msgid "Command"
-msgstr ""
+msgstr "Befehl"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:20
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:34
@@ -61,17 +68,16 @@ msgid "``-h``, ``--help``, ``/?``"
 msgstr "``*`` ``/`` ``%``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
-#, fuzzy
 msgid "Display the list of command line options."
-msgstr "Kommandozeile Hilfsmittel herunterladen"
+msgstr "Zeigt die Liste der Befehlszeilen-Optionen."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "``--version``"
-msgstr ""
+msgstr "``--version``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "Display the version string."
-msgstr ""
+msgstr "Zeigt die Versions-Zeichenkette."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:26
 #, fuzzy
@@ -89,6 +95,8 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr ""
+"Ruhiger Modus, unterdrückt stdout Nachrichten. Fehler werden immer noch "
+"angezeigt."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:31
 #, fuzzy
@@ -105,6 +113,8 @@ msgid ""
 "Start the editor instead of running the scene (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Starte den Editor anstelle der laufenden Szene (:ref:`Tools "
+"<doc_introduction_to_the_buildsystem_tools>` müssen aktiviert sein)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid "``-p``, ``--project-manager``"
@@ -115,6 +125,9 @@ msgid ""
 "Start the project manager, even if a project is auto-detected (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Starte die Projektverwaltung, selbst wenn ein Projekt automatisch erkannt "
+"wird (:ref:`Tools <doc_introduction_to_the_buildsystem_tools>` muss "
+"aktiviert sein)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 #, fuzzy
@@ -123,7 +136,7 @@ msgstr "``+`` ``-``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 msgid "Quit after the first iteration."
-msgstr ""
+msgstr "Beende nach dem ersten Schleifendurchgang."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid "``-l <locale>``, ``--language <locale>``"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,11 +50,11 @@ msgstr ""
 "能な独自の機能がいくつかあります。このような機能は、関連するインターフェース"
 "で文書化され、この入門書の範囲外になります。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:12
+#: ../../docs/tutorials/vr/vr_primer.rst:17
 msgid "AR/VR server"
 msgstr "AR/VRサーバー"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:14
+#: ../../docs/tutorials/vr/vr_primer.rst:19
 msgid ""
 "When Godot starts, each available interface will make itself known to the AR/"
 "VR server. GDNative interfaces are setup as singletons; as long as they are "
@@ -66,7 +66,7 @@ msgstr ""
 "ジェクトのGDNativeシングルトンのリストに追加されている限り、サーバーに認識さ"
 "れます。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:16
+#: ../../docs/tutorials/vr/vr_primer.rst:23
 msgid ""
 "You can use the function :ref:`get_interfaces() "
 "<class_ARVRServer_method_get_interfaces>` to return a list of available "
@@ -85,11 +85,11 @@ msgstr ""
 "た、Godotコアで利用可能であり、プロトタイピングやこのようなチュートリアルに最"
 "適なデスクトップ上の画面に出力できます。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:18
+#: ../../docs/tutorials/vr/vr_primer.rst:31
 msgid "To enable an interface, you execute the following code:"
 msgstr "インターフェイスを有効にするには、次のコードを実行します:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:35
+#: ../../docs/tutorials/vr/vr_primer.rst:48
 msgid ""
 "This code finds the interface we wish to use, initializes it and, if that is "
 "successful, binds the main viewport to the interface. This last step gives "
@@ -101,7 +101,7 @@ msgstr ""
 "により、ビューポートをインターフェイスに制御できるようになり、ビューポートで"
 "の立体視レンダリングなどが自動的に有効になります。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:37
+#: ../../docs/tutorials/vr/vr_primer.rst:52
 msgid ""
 "For our mobile VR interface, and any interface where the main input is "
 "directly displayed on screen, the main viewport needs to be the viewport "
@@ -119,7 +119,7 @@ msgstr ""
 "るビューポートは、デバイス上で完全に処理された立体視出力を表示しながら、左目"
 "の歪みのないバージョンを表示します。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:39
+#: ../../docs/tutorials/vr/vr_primer.rst:59
 msgid ""
 "Finally, you should only initialize an interface once; switching scenes and "
 "reinitializing interfaces will just introduce a lot of overhead. If you want "
@@ -135,11 +135,11 @@ msgstr ""
 "す。ただし、ほとんどのシナリオでは、VRになってからヘッドセットを無効にするこ"
 "とはありません。これはゲーマーを混乱させる可能性があります。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:42
+#: ../../docs/tutorials/vr/vr_primer.rst:66
 msgid "New AR/VR nodes"
 msgstr "新しいAR/VRノード"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:44
+#: ../../docs/tutorials/vr/vr_primer.rst:68
 msgid ""
 "Three new node types have been added for supporting AR and VR in Godot and "
 "one additional node type especially for AR. These are:"
@@ -147,11 +147,11 @@ msgstr ""
 "GodotでARとVRをサポートするために3つの新しいノードタイプが追加され、特にAR用"
 "に1つの追加ノードタイプが追加されました。これらは:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:46
+#: ../../docs/tutorials/vr/vr_primer.rst:71
 msgid ":ref:`ARVROrigin <class_ARVROrigin>` - our origin point in the world"
 msgstr ":ref:`ARVROrigin <class_ARVROrigin>` - 世界の原点"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:47
+#: ../../docs/tutorials/vr/vr_primer.rst:72
 msgid ""
 ":ref:`ARVRCamera <class_ARVRCamera>` - a special subclass of the camera, "
 "which is positionally tracked"
@@ -159,7 +159,7 @@ msgstr ""
 ":ref:`ARVRCamera <class_ARVRCamera>` - ポジショントラッキングされるカメラの特"
 "別なサブクラス"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:48
+#: ../../docs/tutorials/vr/vr_primer.rst:73
 msgid ""
 ":ref:`ARVRController <class_ARVRController>` - a new spatial class, which "
 "tracks the location of a controller"
@@ -167,7 +167,7 @@ msgstr ""
 ":ref:`ARVRController <class_ARVRController>` - コントローラーの位置をトラッキ"
 "ングする新しいSpatialクラス"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:49
+#: ../../docs/tutorials/vr/vr_primer.rst:74
 msgid ""
 ":ref:`ARVRAnchor <class_ARVRAnchor>` - an anchor point for an AR "
 "implementation mapping a real world location into your virtual world"
@@ -175,7 +175,7 @@ msgstr ""
 ":ref:`ARVRAnchor <class_ARVRAnchor>` - 実世界の位置を仮想世界にマッピングする"
 "AR実装用のアンカーポイント"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:51
+#: ../../docs/tutorials/vr/vr_primer.rst:76
 msgid ""
 "The first two must exist in your scene for AR/VR to work and this tutorial "
 "focuses purely on them."
@@ -183,7 +183,7 @@ msgstr ""
 "AR/VRが機能するには、シーンに最初の2つが存在する必要があります。このチュート"
 "リアルでは、純粋にそれらに焦点を合わせます。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:53
+#: ../../docs/tutorials/vr/vr_primer.rst:79
 msgid ""
 ":ref:`ARVROrigin <class_ARVROrigin>` is an important node, you must have one "
 "and only one of these somewhere in your scene. This node maps the center of "
@@ -207,7 +207,7 @@ msgstr ""
 "はこの中心位置に関連してトラッキングされ、仮想世界にそのトラッキングがミラー"
 "リングされます。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:55
+#: ../../docs/tutorials/vr/vr_primer.rst:89
 msgid ""
 "To keep things simple, when you physically move around your room, the ARVR "
 "Origin point stays where it is, the position of the camera and controllers "
@@ -221,7 +221,7 @@ msgstr ""
 "ローラー入力を介して、またはテレポートシステムを実装して、仮想世界を移動する"
 "場合、原点の位置を調整する必要があります。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:58
+#: ../../docs/tutorials/vr/vr_primer.rst:95
 msgid ""
 ":ref:`ARVRCamera <class_ARVRCamera>` is the second node that must always be "
 "a part of your scene and it must always be a child node of your origin node. "
@@ -241,7 +241,7 @@ msgstr ""
 "ほとんどは無視されます。使用されるカメラのプロパティは、ニアプレーンとファー"
 "プレーンの設定のみです。 FOV、アスペクト比、投影モードはすべて無視されます。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:60
+#: ../../docs/tutorials/vr/vr_primer.rst:103
 msgid ""
 "Note that, for our native mobile VR implementation, there is no positional "
 "tracking, only the orientation of the phone and by extension, the HMD is "
@@ -252,40 +252,118 @@ msgstr ""
 "HMDのみが追跡されることに注意してください。この実装では、カメラを人工的に1.85"
 "の高さ(Y)に配置します。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:62
+#: ../../docs/tutorials/vr/vr_primer.rst:107
 msgid ""
 "Conclusion: your minimum setup in your scene to make AR or VR work should "
 "look like this:"
 msgstr ""
 "結論: ARまたはVRを機能させるためのシーンの最小設定は次のようになります:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:66
+#: ../../docs/tutorials/vr/vr_primer.rst:111
+#, fuzzy
 msgid ""
-"And that's all you need to get started. Obviously, you need to add something "
-"more into your scene, so there is something to see, but after that, you can "
-"export the game to your phone of choice, pop it into a viewer and away you "
-"go."
+"And that's all you need to get started with the native mobile interface. "
+"Obviously, you need to add something more into your scene, so there is "
+"something to see, but after that, you can export the game to your phone of "
+"choice, pop it into a viewer and away you go."
 msgstr ""
 "そして、それがあなたが始めるために必要なすべてです。もちろん、シーンに何かを"
 "追加する必要があるので、見るべきものはありますが、その後、ゲームを好きな携帯"
 "電話にエクスポートし、3Dビュワーにひょいと入れて、(現実世界から)離れて行くこ"
 "とができます。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:69
+#: ../../docs/tutorials/vr/vr_primer.rst:116
+#, fuzzy
+msgid "Official plugins and resources"
+msgstr "チュートリアルとリソース"
+
+#: ../../docs/tutorials/vr/vr_primer.rst:118
+msgid ""
+"As mentioned earlier, Godot does not support the various VR and AR SDKs out "
+"of the box, you need a plugin for the specific SDK you want to use. There "
+"are several official plugins available in the `GodotVR Repository <https://"
+"github.com/GodotVR>`_."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:122
+msgid ""
+"`Godot Oculus Mobile <https://github.com/GodotVR/godot_oculus_mobile>`_ "
+"provides support for the Oculus Go and Oculus Quest. The Quest will require "
+"additional setup documented `here <doc_developing_for_oculus_quest>`_."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:124
+msgid ""
+"`Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (not to be "
+"confused with OpenXR) supports the OpenVR SDK used by Steam."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:126
+#, fuzzy
+msgid ""
+"`Godot Oculus <https://github.com/GodotVR/godot_oculus>`_ supports the "
+"Oculus SDK (desktop headsets only)."
+msgstr ""
+"`Godot Oculus Mobileプラグイン <https://github.com/m4gr3d/"
+"godot_oculus_mobile/tree/2.0>`_"
+
+#: ../../docs/tutorials/vr/vr_primer.rst:128
+msgid ""
+"`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ supports "
+"OpenHMD, an open source API and drivers for headsets."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:130
+msgid ""
+"`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ supports OpenXR, "
+"an open standard for VR and AR software. This plugin is early in "
+"development, only supports Linux and requires extra setup described in the "
+"repository."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:134
+msgid "These plugins can be downloaded from GitHub or the Godot Asset Library."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:136
+msgid "In addition to the plugins, there are several official demos."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:138
+#, fuzzy
+msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
+msgstr ""
+"`Godot Oculus Mobileプラグイン <https://github.com/m4gr3d/"
+"godot_oculus_mobile/tree/2.0>`_"
+
+#: ../../docs/tutorials/vr/vr_primer.rst:139
+msgid ""
+"`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (the "
+"tutorial for this project is `here <doc_vr_starter_tutorial_part_one>`_)"
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:141
+msgid ""
+"`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, which shows "
+"implementations for VR features such as movement and picking up objects."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:145
 msgid "Other things to consider"
 msgstr "考慮すべきその他のもの"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:71
+#: ../../docs/tutorials/vr/vr_primer.rst:147
 msgid ""
 "There are a few other subjects that we need to briefly touch upon in this "
 "primer that are important to know."
 msgstr "この入門書では、知っておくべき重要なテーマをいくつか簡単に説明します。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:73
+#: ../../docs/tutorials/vr/vr_primer.rst:150
+#, fuzzy
 msgid ""
 "The first are our units. In normal 3D games, you don't have to think a lot "
 "about units. As long as everything is at the same scale, a box sized 1 unit "
-"by 1 unit by 1 unit can be any size from a cube you can hold in your hand to "
+"by 1 unit by 1 unit can be any size from a cub you can hold in your hand to "
 "something the size of a building. In AR and VR, this changes because things "
 "in your virtual world are mapped to things in the real world. If you step 1 "
 "meter forward in the real world, but you only move 1 cm forward in your "
@@ -309,7 +387,7 @@ msgstr ""
 "ARVROriginノードでも公開されるプロパティがあります。たとえば、これを10の値に"
 "設定すると、座標系が変更され、10単位= 1メートルになります。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:77
+#: ../../docs/tutorials/vr/vr_primer.rst:161
 #, fuzzy
 msgid ""
 "Performance is another thing that needs to be carefully considered. "
@@ -322,7 +400,7 @@ msgstr ""
 "意する必要がありますが、デスクトップゲームでも、(仮想)生活をさらに難しくする3"
 "つの要因があります:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:79
+#: ../../docs/tutorials/vr/vr_primer.rst:165
 msgid ""
 "You are rendering stereoscopic, two for the price of one. While not exactly "
 "doubling the work load and with things in the pipeline such as supporting "
@@ -334,7 +412,7 @@ msgstr ""
 "パイプラインのことを念頭に置いても、両眼の画像のレンダリングにはまだ余分な作"
 "業負荷が残っています"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:80
+#: ../../docs/tutorials/vr/vr_primer.rst:168
 msgid ""
 "A normal game will run acceptably on 30fps and ideally manages 60fps. That "
 "gives you a big range to play with between lower end and higher end "
@@ -348,7 +426,7 @@ msgstr ""
 "す。安定した90fpsで実行するようにゲームをターゲットし、ユーザーがすぐに乗り物"
 "酔いしないようにする必要があります。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:81
+#: ../../docs/tutorials/vr/vr_primer.rst:172
 msgid ""
 "The high FOV and related lens distortion effect require many VR experiences "
 "to render at double the resolution. Yes a VIVE may only have a resolution of "
@@ -360,7 +438,7 @@ msgstr ""
 "片目あたり1080x1200です。なので、それぞれの目は2160x2400でレンダリングされま"
 "す。これは、ほとんどの AR アプリケーションでは問題ではありません。"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:83
+#: ../../docs/tutorials/vr/vr_primer.rst:176
 msgid ""
 "All in all, the workload your GPU has in comparison with a normal 3D game is "
 "a fair amount higher. While things are in the pipeline to improve this, such "

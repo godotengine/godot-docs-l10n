@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,8 +114,9 @@ msgid "Android plugin"
 msgstr "plugin Android"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:35
+#, fuzzy
 msgid ""
-"While introduced in Godot 3.2.0, the Android plugin system got a significant "
+"While introduced in Godot 3.2, the Android plugin system got a significant "
 "architecture update starting with Godot 3.2.2. The new plugin system is "
 "backward-incompatible with the previous one, but both systems are kept "
 "functional in future releases of the 3.2.x branch. Since we previously did "
@@ -130,7 +131,7 @@ msgstr ""
 "Android, le nouveau système est maintenant appelé ``v1`` et constitue le "
 "point de départ de l'écosystème moderne Android de Godot."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:37
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:39
 msgid ""
 "**Note:** In Godot 4.0, the previous system will be fully deprecated and "
 "removed."
@@ -138,7 +139,7 @@ msgstr ""
 "**Note :** Dans Godot 4.0, le système précédent sera entièrement déprécié et "
 "supprimé."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:39
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:41
 msgid ""
 "As a prerequisite, make sure you understand how to set up a :ref:`custom "
 "build environment<doc_android_custom_build>` for Android."
@@ -147,7 +148,7 @@ msgstr ""
 "environnement de construction(build) personnalisé pour Android :ref:`custom "
 "build environment<doc_android_custom_build>`."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:41
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:43
 msgid ""
 "At its core, a Godot Android plugin is a `Android archive library <https://"
 "developer.android.com/studio/projects/android-library#aar-contents>`_ (*aar* "
@@ -157,7 +158,7 @@ msgstr ""
 "Android <https://developer.android.com/studio/projects/android-library#aar-"
 "contents>`_ (fichier d'archives *aar*) avec les mises en garde suivantes :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:44
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:46
 msgid ""
 "The library must have a dependency on the Godot engine library (``godot-lib."
 "<version>.<status>.aar``). A stable version is made available for each Godot "
@@ -168,7 +169,7 @@ msgstr ""
 "disposition pour chaque version de Godot sur la `page de téléchargement de "
 "Godot <https://godotengine.org/download>`_."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:46
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:48
 msgid ""
 "The library must include a specifically configured ``<meta-data>`` tag in "
 "its manifest file."
@@ -176,11 +177,12 @@ msgstr ""
 "La bibliothèque doit inclure une balise ``<meta-data>`` configurée "
 "spécifiquement dans son fichier manifeste."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:49
-msgid "Building a Android plugin"
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:51
+#, fuzzy
+msgid "Building an Android plugin"
 msgstr "Construire(building) un plugin Android"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:51
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:53
 msgid ""
 "**Prerequisite:** `Android Studio <https://developer.android.com/studio>`_ "
 "is strongly recommended as the IDE to use to create Android plugins. The "
@@ -190,7 +192,7 @@ msgstr ""
 "fortement recommandé comme IDE à utiliser pour créer des plugins Android. "
 "Les instructions ci-dessous supposent que vous utilisez Android Studio."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:54
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:56
 msgid ""
 "Follow `these instructions <https://developer.android.com/studio/projects/"
 "android-library>`__ to create an Android library module for your plugin."
@@ -199,13 +201,13 @@ msgstr ""
 "android-library>`__ pour créer un module de bibliothèque Android pour votre "
 "plugin."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:56
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:58
 msgid "Add the Godot engine library as a dependency to your plugin module:"
 msgstr ""
 "Ajoutez la bibliothèque du moteur Godot en tant que dépendance à votre "
 "module de plugin :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:58
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:60
 msgid ""
 "Download the Godot engine library (``godot-lib.<version>.<status>.aar``) "
 "from the `Godot download page <https://godotengine.org/download>`_ (e.g: "
@@ -215,7 +217,7 @@ msgstr ""
 "aar``) à partir de la `page de téléchargement de Godot <https://godotengine."
 "org/download>`_ (par exemple : ``godot-lib.3.2.2.stable.aar``)."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:60
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:62
 msgid ""
 "Follow `these instructions <https://developer.android.com/studio/projects/"
 "android-library#AddDependency>`__ to add the Godot engine library as a "
@@ -225,7 +227,7 @@ msgstr ""
 "android-library#AddDependency>`__ pour ajouter la bibliothèque du moteur "
 "Godot comme dépendance à votre plugin."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:63
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:65
 msgid ""
 "In the plugin module's ``build.gradle`` file, replace ``implementation`` "
 "with ``compileOnly`` for the dependency line for the Godot engine library."
@@ -234,7 +236,7 @@ msgstr ""
 "``implementation`` par ``implementation`` pour la ligne de dépendance de la "
 "bibliothèque du moteur Godot."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:65
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:67
 msgid ""
 "Create a new class in the plugin module and make sure it extends ``org."
 "godotengine.godot.plugin.GodotPlugin``. At runtime, it will be used to "
@@ -246,27 +248,27 @@ msgstr ""
 "l'exécution, elle sera utilisée pour instancier un objet singleton qui sera "
 "utilisé par le moteur Godot pour charger, initialiser et exécuter le plugin."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:68
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:70
 msgid "Update the plugin ``AndroidManifest.xml`` file:"
 msgstr "Mettez à jour le fichier du plugin ``AndroidManifest.xml`` :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:70
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:72
 msgid "Open the plugin ``AndroidManifest.xml`` file."
 msgstr "Ouvrez le fichier du plugin ``AndroidManifest.xml``."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:72
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:74
 msgid "Add the ``<application></application>`` tag if it's missing."
 msgstr ""
 "Ajoutez la balise ``<application></application>`` si elle est manquante."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:74
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:76
 msgid ""
 "In the ``<application>`` tag, add a ``<meta-data>`` tag setup as follow::"
 msgstr ""
 "Dans la balise ``<application>``, ajoutez une balise ``<meta-data>`` "
 "configurée comme suit :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:80
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:82
 msgid ""
 "Where ``PluginName`` is the name of the plugin, and ``plugin.init."
 "ClassFullName`` is the full name (package + class name) of the plugin "
@@ -275,7 +277,7 @@ msgstr ""
 "Où ``PluginName`` est le nom du plugin, et ``plugin.init.ClassFullName`` est "
 "le nom complet (paquet + nom de classe) de la classe de chargement du plugin."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:82
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:84
 msgid ""
 "Add the remaining logic for your plugin and run the ``gradlew build`` "
 "command to generate the plugin's ``aar`` file. The build will likely "
@@ -290,7 +292,7 @@ msgstr ""
 "version (généralement la version ``release``) que vous fournirez à vos "
 "utilisateurs."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:86
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:88
 msgid ""
 "It's recommended that the ``aar`` filename matches the following pattern: "
 "``[PluginName]*.aar`` where ``PluginName`` is the name of the plugin in "
@@ -300,7 +302,7 @@ msgstr ""
 "suivant : ``[PluginName]*.aar`` où ``PluginName`` est le nom du plugin en "
 "PascalCase (par exemple : ``GodotPayment.release.aar``)."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:88
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:90
 msgid ""
 "Create a Godot Android Plugin configuration file to help the system detect "
 "and load your plugin:"
@@ -308,27 +310,27 @@ msgstr ""
 "Créez un fichier de configuration de plugin Godot Android pour aider le "
 "système à détecter et à charger votre plugin :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:90
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:92
 msgid ""
 "The configuration file extension must be ``gdap`` (e.g.: ``MyPlugin.gdap``)."
 msgstr ""
 "L'extension du fichier de configuration doit être ``gdap`` (par exemple : "
 "``MyPlugin.gdap``)."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:92
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:94
 msgid "The configuration file format is as follow::"
 msgstr "Le format du fichier de configuration est le suivant :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:106
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:108
 msgid "The ``config`` section and fields are required and defined as follow:"
 msgstr ""
 "La section ``config`` et les champs sont obligatoires et définis comme suit :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:108
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:110
 msgid "**name**: name of the plugin"
 msgstr "**name** : nom du plugin"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:110
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:112
 msgid ""
 "**binary_type**: can be either ``local`` or ``remote``. The type affects the "
 "**binary** field"
@@ -336,11 +338,11 @@ msgstr ""
 "**binary_type** : peut être soit ``local`` ou ``remote``. Le type affecte le "
 "champ **binary**"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:112
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:114
 msgid "**binary**:"
 msgstr "**binary** :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:114
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:116
 msgid ""
 "if **binary_type** is ``local``, then this should be the filepath of the "
 "plugin ``aar`` file."
@@ -348,7 +350,7 @@ msgstr ""
 "si **binary_type** est ``local``, alors cela devrait être le chemin d'accès "
 "du fichier ``aar`` du plugin."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:116
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:118
 msgid ""
 "The filepath can be relative (e.g.: ``MyPlugin.aar``) in which case it's "
 "relative to the ``res://android/plugins`` directory."
@@ -356,13 +358,13 @@ msgstr ""
 "Le chemin d'accès au fichier peut être relatif (par exemple : ``MyPlugin."
 "aar``), auquel cas il est relatif au répertoire ``res://android/plugins`."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:118
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:120
 msgid "The filepath can be absolute: ``res://some_path/MyPlugin.aar``."
 msgstr ""
 "Le chemin d'accès au fichier peut être absolu : ``res://some_path/MyPlugin."
 "aar``."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:120
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:122
 msgid ""
 "if **binary_type** is ``remote``, then this should be a declaration for a "
 "`remote gradle binary <https://developer.android.com/studio/build/"
@@ -374,14 +376,14 @@ msgstr ""
 "dependencies#dependency-types>`_ (par exemple : ``org.godot.example:my-"
 "plugin:0.0.0``)."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:122
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:124
 msgid ""
 "The ``dependencies`` section and fields are optional and defined as follow:"
 msgstr ""
 "La section et les champs ``dependencies`` sont facultatifs et définis comme "
 "suit :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:124
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:126
 msgid ""
 "**local**: contains a list of filepaths to the local ``.aar`` binary files "
 "the plugin depends on. Similarly to the ``binary`` field (when the "
@@ -393,7 +395,7 @@ msgstr ""
 "le ``binary_type`` est ``local``), les chemins des fichiers binaires locaux "
 "peuvent être relatifs ou absolus."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:126
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:128
 msgid ""
 "**remote**: contains a list of remote binary gradle dependencies for the "
 "plugin."
@@ -401,7 +403,7 @@ msgstr ""
 "**remote** : contient une liste de dépendances de remote binary gradle pour "
 "le plugin."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:128
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:130
 msgid ""
 "**custom_maven_repos**: contains a list of URLs specifying the custom maven "
 "repositories required for the plugin's dependencies"
@@ -409,11 +411,12 @@ msgstr ""
 "**custom_maven_repos** : contient une liste d'URLs spécifiant les dépôts "
 "maven personnalisés nécessaires aux dépendances du plugin"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:131
-msgid "Loading and using a Android plugin"
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:133
+#, fuzzy
+msgid "Loading and using an Android plugin"
 msgstr "Chargement et utilisation d'un plugin Android"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:133
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:135
 msgid ""
 "Move the plugin configuration file (e.g.: ``MyPlugin.gdap``) and, if any, "
 "its local binary (e.g.: ``MyPlugin.aar``) and dependencies to the Godot "
@@ -424,7 +427,7 @@ msgstr ""
 "aar``) et ses dépendances dans le répertoire ``res://android/plugins`` du "
 "projet Godot."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:135
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:137
 msgid ""
 "The Godot editor will automatically parse all ``.gdap`` files in the ``res://"
 "android/plugins`` directory and show a list of detected and toggleable "
@@ -435,17 +438,18 @@ msgstr ""
 "détectés et activables dans la fenêtre des presets d'exportation Android "
 "sous la section **Plugins**."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:139
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:141
 msgid "From your script:"
 msgstr "De votre script :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:149
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:151
 msgid "Bundling GDNative resources"
 msgstr "Regroupement des ressources GDNatives"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:150
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:153
+#, fuzzy
 msgid ""
-"A Android plugin can define and provide C/C++ GDNative resources, either to "
+"An Android plugin can define and provide C/C++ GDNative resources, either to "
 "provide and/or access functionality from the game logic. The GDNative "
 "resources can be bundled within the plugin ``aar`` file which simplifies the "
 "distribution and deployment process:"
@@ -455,7 +459,7 @@ msgstr ""
 "Les ressources GDNatives peuvent être regroupées dans le fichier ``aar`` du "
 "plugin, ce qui simplifie le processus de distribution et de déploiement :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:153
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:156
 msgid ""
 "The shared libraries (``.so``) for the defined GDNative libraries will be "
 "automatically bundled by the ``aar`` build system."
@@ -464,7 +468,7 @@ msgstr ""
 "définies seront automatiquement regroupées par le système de construction "
 "``aar``."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:155
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:158
 msgid ""
 "Godot ``*.gdnlib`` and ``*.gdns`` resource files must be manually defined in "
 "the plugin ``assets`` directory. The recommended path for these resources "
@@ -476,7 +480,7 @@ msgstr ""
 "recommandé pour ces ressources par rapport au répertoire ``assets`` doit "
 "être : ``godot/plugin/v1/[NomDuPlugin]/``."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:158
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:161
 msgid ""
 "For GDNative libraries, the plugin singleton object must override the ``org."
 "godotengine.godot.plugin.GodotPlugin::getPluginGDNativeLibrariesPaths()`` "
@@ -493,11 +497,11 @@ msgstr ""
 "l'exécution, le plugin fournira ces chemins au noyau Godot qui les utilisera "
 "pour charger et initialiser les bibliothèques GDNative."
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:163
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:166
 msgid "Reference implementations"
 msgstr "Implémentations de référence"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:164
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:168
 msgid ""
 "`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
 "godot_oculus_mobile>`_"
@@ -505,7 +509,7 @@ msgstr ""
 "`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
 "godot_oculus_mobile>`_"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:166
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:170
 msgid ""
 "`Bundled gdnative resources <https://github.com/GodotVR/godot_oculus_mobile/"
 "tree/master/plugin/src/main/assets/addons/godot_ovrmobile>`_"
@@ -514,31 +518,37 @@ msgstr ""
 "godot_oculus_mobile/tree/master/plugin/src/main/assets/addons/"
 "godot_ovrmobile>`_"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:168
-msgid ""
-"`Godot Payment plugin <https://github.com/godotengine/godot/tree/master/"
-"platform/android/java/plugins/godotpayment>`_"
-msgstr ""
-"`Godot Payment plugin <https://github.com/godotengine/godot/tree/master/"
-"platform/android/java/plugins/godotpayment>`_"
-
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:172
+#, fuzzy
+msgid ""
+"`Godot Google Play Billing plugin <https://github.com/godotengine/godot-"
+"google-play-billing>`_"
+msgstr ""
+"`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
+"godot_oculus_mobile>`_"
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:176
 msgid "Troubleshooting"
 msgstr "Dépannage"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:175
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:179
 msgid "Godot crashes upon load"
 msgstr "Godot crashes lors du chargement"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:177
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:181
 msgid "Check ``adb logcat`` for possible problems, then:"
 msgstr "Vérifiez les problèmes éventuels dans ``adb logcat``, puis :"
 
-#: ../../docs/tutorials/plugins/android/android_plugin.rst:179
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:183
 msgid ""
-"Check that the methods used in the Java singleton only use simple Java "
-"datatypes. More complex datatypes are not supported."
+"Check that the methods exposed by the plugin used the following Java types:  "
+"``void``, ``boolean``, ``int``, ``float``, ``java.lang.String``, ``org."
+"godotengine.godot.Dictionary``, ``int[]``, ``byte[]``, ``float[]``, ``java."
+"lang.String[]``."
 msgstr ""
-"Vérifiez que les méthodes utilisées dans le singleton Java utilisent "
-"uniquement des types de données Java simples. car les types de données plus "
-"complexes ne sont pas pris en charge."
+
+#: ../../docs/tutorials/plugins/android/android_plugin.rst:185
+#, fuzzy
+msgid "More complex datatypes are not supported for now."
+msgstr ""
+"Le mélange de formes(Blend shapes) n'est pas pris en charge dans le GLES2."

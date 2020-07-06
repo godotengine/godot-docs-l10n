@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -203,13 +203,12 @@ msgstr ""
 "sélectionnez \"New TileSet\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
-#, fuzzy
 msgid ""
 "Click on the TileSet property, and the \"TileSet\" panel will open at the "
 "bottom of the editor window:"
 msgstr ""
-"Quand vous faites ça, vous verrez apparaître un nouveau panel \"TileSet\" en "
-"bas de la fenêtre de l'éditeur :"
+"Cliquez sur la propriété TileSet, et le panneau \"TileSet\" s'ouvrira au bas "
+"de la fenêtre de l'éditeur :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:89
 msgid ""
@@ -292,20 +291,20 @@ msgid "Atlas tiles"
 msgstr "Atlas de Tuile"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:129
-#, fuzzy
 msgid ""
 "Rather than adding individual tiles one at a time, you can define a group of "
 "tiles all at once using an atlas. This also allows you to randomly generate "
 "tiles from the group."
 msgstr ""
 "Plutôt que d'ajouter une tuile à la fois, vous pouvez définir un groupe de "
-"tuiles en utilisant un Atlas. Cliquez sur le bouton \"New Atlas\" dans "
-"l'onglet TileSet et cliquez-glissez pour sélectionner l'entière feuille de "
-"tuile."
+"tuiles en utilisant un atlas. Cela vous permet également de générer "
+"aléatoirement des tuiles à partir du groupe."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:133
 msgid "Click \"New Atlas\" and drag to select the entire tile sheet."
 msgstr ""
+"Cliquez sur \"Nouvel atlas\" et faites glisser pour sélectionner la feuille "
+"de tuile entière."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:137
 msgid ""
@@ -347,9 +346,8 @@ msgstr ""
 "avec un large nombre de tuile."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:156
-#, fuzzy
 msgid "Random tile priorities"
-msgstr "Priorité de rendu"
+msgstr "Priorités des tuiles aléatoires"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:158
 msgid ""
@@ -360,17 +358,27 @@ msgid ""
 "twice as likely to be selected as a tile with priority 1, and a tile with "
 "priority 3 is 50% more likely to be selected than a tile with priority 2."
 msgstr ""
+"Lorsque vous dessinez avec des tuiles de l'atlas, l'activation de l'option "
+"\"Use priority\" fait que les tuiles sont choisies au hasard. Par défaut, "
+"chaque tuile de l'ensemble a une probabilité égale d'être choisit. Vous "
+"pouvez modifier cette probabilité en définissant des priorités différentes "
+"pour chaque tuile. Par exemple, une tuile de priorité 2 a deux fois plus de "
+"chances d'être sélectionnée qu'une tuile de priorité 1, et une tuile de "
+"priorité 3 a 50 % plus de chances d'être sélectionnée qu'une tuile de "
+"priorité 2."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:166
-#, fuzzy
 msgid "Autotiles"
-msgstr "Atlas de Tuile"
+msgstr "Autotiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:168
 msgid ""
 "Autotiles allow you to define a group of tiles, then add rules to control "
 "which tile gets used for drawing based on the content of adjacent cells."
 msgstr ""
+"Les Autotiles vous permettent de définir un groupe de tuiles, puis d'ajouter "
+"des règles pour contrôler quelle tuile est utilisée pour le dessin en "
+"fonction du contenu des cellules adjacentes."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:171
 msgid ""
@@ -378,6 +386,11 @@ msgid ""
 "add collisions, occlusion, navigation shapes, tile priorties, and select an "
 "icon tile in the same manner as for atlas tiles."
 msgstr ""
+"Cliquez sur \"Nouvelle Auto-tuile\" et faites glisser pour sélectionner les "
+"tuiles que vous souhaitez utiliser. Vous pouvez ajouter des collisions, des "
+"occlusions, des formes de navigation, des priorités de tuiles et "
+"sélectionner une icône de tuile de la même manière que pour les tuiles de "
+"l'atlas."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:175
 msgid ""
@@ -386,6 +399,11 @@ msgid ""
 "mask. Left-clicking an area of the tile adds a bit, right-click removes \"off"
 "\", and shift-left-click sets an \"ignore\" bit."
 msgstr ""
+"Le choix des tuiles est contrôlé par des bitmasks. Les bitmasques peuvent "
+"être ajoutés en cliquant sur \"Bitmask\", puis en cliquant sur des parties "
+"des tuiles pour ajouter ou supprimer des bits dans le masque. Un clic gauche "
+"sur une zone de la tuile ajoute un bit, un clic droit enlève \"off\", et un "
+"shift + clic gauche met un bit \"ignore\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
 msgid ""
@@ -396,6 +414,13 @@ msgid ""
 "more than one matching bitmask is found, one of them will be selected "
 "randomly, using the tile priorities."
 msgstr ""
+"Chaque fois que Godot met à jour une cellule en utilisant une autotile, il "
+"crée d'abord un modèle basé sur les cellules adjacentes qui sont déjà "
+"définies. Ensuite, il recherche dans l'autotile une seule tuile avec un "
+"bitmask correspondant au modèle créé. Si aucun masque binaire correspondant "
+"n'est trouvé, la tuile \"icon\" sera utilisée à la place. Si plus d'un "
+"masque binaire correspondant est trouvé, l'un d'entre eux sera sélectionné "
+"au hasard, en utilisant les priorités de la tuile."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:187
 msgid ""
@@ -404,21 +429,26 @@ msgid ""
 "\"Selected Tile\" heading. Allowed values are \"2x2\", \"3x3 (minimal)\", "
 "and \"3x3\"."
 msgstr ""
+"Les règles de correspondance entre un bitmask et un motif dépendent du mode "
+"de bitmask autotile du tileset. Ce mode peut être défini dans l'onglet "
+"\"Inspecteur\", sous la rubrique \"Selected Tile\". Les valeurs autorisées "
+"sont \"2x2\", \"3x3 (minimal)\" et \"3x3\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:191
 msgid ""
 "All \"on\" and \"off\" bits must be satisfied for a bitmask to match, but "
 "\"ignore\" bits are ignored."
 msgstr ""
+"Tous les bits \"on\" et \"off\" doivent être satisfaits pour qu'un masque "
+"binaire corresponde, mais les bits \"ignore\" sont ignorés."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:195
-#, fuzzy
 msgid "2x2"
-msgstr "22"
+msgstr "2x2"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:197
 msgid "In 2x2 mode, each bitmask contains four bits, one for each corner."
-msgstr ""
+msgstr "En mode 2x2, chaque bitmask contient quatre bits, un pour chaque coin."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:199
 msgid ""
@@ -427,12 +457,19 @@ msgid ""
 "the top-left bit is set, the cell directly above, directly left, and "
 "diagonally above-left must be filled."
 msgstr ""
+"Lorsqu'un bit est \"on\", toutes les cellules connectées à ce coin doivent "
+"être remplies en utilisant la même autotile, afin que le bitmask "
+"corresponde. Par exemple, si le bit en haut à gauche est activé, la cellule "
+"directement au-dessus, directement à gauche et en diagonale au-dessus de la "
+"gauche doit être remplie."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:204
 msgid ""
 "Where a bit is \"off\", at least one cell connected to that corner must not "
 "be set using the same autotile."
 msgstr ""
+"Lorsqu'un bit est \"off\", au moins une cellule connectée à ce coin ne doit "
+"pas être mise en place en utilisant la même autotile."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:207
 msgid ""
@@ -440,74 +477,95 @@ msgid ""
 "would be needed to provide exactly one tile for each arrangement that this "
 "mode can test for."
 msgstr ""
+"Il faut au moins un bit pour que la tuile soit utilisée, ce qui fait qu'il "
+"faudrait un total de 15 tuiles pour fournir exactement une tuile pour chaque "
+"arrangement que ce mode peut tester."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:211
 msgid ""
 "2x2 mode can only match cells that are part of a 2-by-2 block - cells with "
 "no neighbors and lines only one cell wide are not supported."
 msgstr ""
+"Le mode 2x2 ne peut correspondre qu'à des cellules faisant partie d'un bloc "
+"de 2 par 2 - les cellules sans voisins et les lignes d'une seule largeur de "
+"cellule ne sont supportées."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:215
 msgid "3x3 (minimal)"
-msgstr ""
+msgstr "3x3 (minimal)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:217
 msgid ""
 "In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
 "center)."
 msgstr ""
+"En mode 3x3 (minimal), chaque bitmask contient 9 bits (4 coins, 4 bords, 1 "
+"centre)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:220
 msgid "The 4 corner bits work the same as in 2x2 mode."
-msgstr ""
+msgstr "Les 4 coins fonctionnent de la même manière qu'en mode 2x2."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:222
 msgid ""
 "When an edge bit is \"on\", the cell which shares that edge must be filled. "
 "When an edge bit is \"off\", the cell which shares that edge must be empty."
 msgstr ""
+"Lorsqu'un bit de bord est \"on\", la cellule qui partage ce bord doit être "
+"remplie. Lorsqu'un bit de bordure est \"off\", la cellule qui partage cette "
+"bordure doit être vide."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:225
 msgid "The center bit should be \"on\" for any tile you wish to use."
 msgstr ""
+"Le bit central doit être \"on\" pour toute tuile que vous souhaitez utiliser."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:227
 msgid ""
 "Note that in this mode, it makes no sense for a corner bit to be \"on\" when "
 "either edge bit adjacent to it is not \"on\"."
 msgstr ""
+"Notez que dans ce mode, il n'est pas logique qu'un bit de coin soit \"on\" "
+"alors qu'un bit de bord adjacent n'est pas \"on\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:230
 msgid ""
 "A total of 47 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
 msgstr ""
+"Au total, 47 tuiles seraient nécessaires pour fournir exactement un bitmask "
+"pour chaque arrangement que ce mode peut tester."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:235
 msgid "3x3"
-msgstr ""
+msgstr "3x3"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:237
 msgid ""
 "In 3x3 mode, each bitmaks contains 9 bits (4 corners, 4 edges, 1 center)"
 msgstr ""
+"En mode 3x3, chaque bitmak contient 9 bits (4 coins, 4 bords, 1 centre)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:239
 msgid ""
 "Each bit checks a single adjacent cell. Corner bits only check diagonally "
 "adjacent cells. The center bit should be \"on\" for any tile you wish to use."
 msgstr ""
+"Chaque bit vérifie une seule cellule adjacente. Les bits de coin ne "
+"vérifient que les cellules diagonalement adjacentes. Le bit du centre doit "
+"être \"on\" pour toute tuile que vous souhaitez utiliser."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:242
 msgid ""
 "A total of 256 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
 msgstr ""
+"Un total de 256 tuiles serait nécessaire pour fournir exactement un bitmask "
+"pour chaque arrangement que ce mode peut tester."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:247
-#, fuzzy
 msgid "Disabling autotile"
-msgstr "Désactiver les modules non désirés"
+msgstr "Désactivation de l'autotile"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:249
 msgid ""
@@ -515,11 +573,14 @@ msgid ""
 "select tiles manually, by clicking \"Disable Autotile\" at the top of the "
 "tile selection window."
 msgstr ""
+"Lors de l'utilisation d'une autotile, il est possible de désactiver le "
+"comportement de l'autotile et de sélectionner les tuiles manuellement, en "
+"cliquant sur \"Désactiver l'autotile\" en haut de la fenêtre de sélection "
+"des tuiles."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:254
-#, fuzzy
 msgid "Autotile binding"
-msgstr "Bandes de couleur"
+msgstr "Liaison d'autotile"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:256
 msgid ""
@@ -533,6 +594,17 @@ msgid ""
 "to the neighbor cell. You can find the id of an autotile using "
 "\"find_tile_by_name(name)\", empty cells are given an id of -1."
 msgstr ""
+"Par défaut, l'autotile ne vérifie que les cellules adjacentes remplies à "
+"l'aide de la même autotile. Il est possible de passer outre à ce "
+"comportement afin que les autotiles se lient entre elles, ou même se lient "
+"aux cellules vides. À l'heure actuelle, cela ne peut se faire que par le "
+"biais d'un script. Vous devrez ajouter un script à votre tileset, et définir "
+"une fonction appelée \"_is_tile_bound(drawn_id, neighbor_id)\". Cette "
+"fonction sera appelée pour chaque cellule adjacente qui ne contient pas la "
+"même autotile, et devrait retourner vrai si vous voulez que la cellule "
+"dessinée se \"lie\" à la cellule voisine. Vous pouvez trouver l'identifiant "
+"d'une autotile en utilisant \"find_tile_by_name(name)\", les cellules vides "
+"ont un identifiant de -1."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:266
 msgid ""
@@ -540,6 +612,9 @@ msgid ""
 "declaration, and you may need to close and reload the scene for these "
 "changes to take effect."
 msgstr ""
+"Notez que pour l'utiliser dans l'éditeur, le script doit commencer par une "
+"déclaration \"tool\", et vous devrez peut-être fermer et recharger la scène "
+"pour que ces changements prennent effet."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:271
 msgid "Tips and tricks"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
-#, fuzzy
 msgid "C# features"
-msgstr "Funcionalidades personalizadas"
+msgstr "Características de C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -263,12 +262,13 @@ msgstr ""
 "arquitectura es de 64 o 32 bits."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
+#, fuzzy
 msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
-"``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. These names may "
-"change in the future. These are created from the ``get_name()`` method of "
-"the :ref:``OS <class_OS>`` singleton, but not every possible OS the method "
-"returns is an OS that Godot with Mono runs on."
+"``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
+"These names may change in the future. These are created from the "
+"``get_name()`` method of the :ref:``OS <class_OS>`` singleton, but not every "
+"possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
 "Uno de \"GGODOT_X11\", \"GGODOT_WINDOWS\", \"GGODOT_OSX\", \"GGODOT_ANDROID"
 "\", \"GGODOT_HTML5\", o \"GGODOT_SERVER\", dependiendo del sistema "
@@ -277,7 +277,7 @@ msgstr ""
 "los sistemas operativos posibles que el método devuelve son sistemas "
 "operativos en los que Godot con Mono funciona."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:230
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
 "export features:"
@@ -285,7 +285,7 @@ msgstr ""
 "Cuando se **exporta**, también se puede definir lo siguiente dependiendo de "
 "las características de la exportación:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
 msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
 "platform type."
@@ -293,7 +293,7 @@ msgstr ""
 "Una de ``GODOT_PC``, ``GODOT_MOBILE``, o ``GODOT_WEB`` dependiendo del tipo "
 "de plataforma."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
 "depending on the architecture."
@@ -301,18 +301,38 @@ msgstr ""
 "Uno de ``GODOT_ARM64_V8A`` o ``GODOT_ARMEABI_V7A`` en Android sólo "
 "dependiendo de la arquitectura."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
+#, fuzzy
 msgid ""
-"One of ``GODOT_S3TC``, ``GODOT_ETC``, or ``GODOT_ETC2`` depending on the "
+"One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
+"architecture."
+msgstr ""
+"Uno de ``GODOT_ARM64_V8A`` o ``GODOT_ARMEABI_V7A`` en Android sólo "
+"dependiendo de la arquitectura."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
+#, fuzzy
+msgid ""
+"Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
 "Uno de ``GODOT_S3TC``, ``GODOT_ETC``, o ``GODOT_ETC2`` dependiendo del tipo "
 "de compresión de la textura."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
 msgid ""
 "Any custom features added in the export menu will be capitalized and "
 "prefixed: ``foo`` -> ``GODOT_FOO``."
 msgstr ""
 "Cualquier característica personalizada añadida en el menú de exportación se "
 "escribirá en mayúsculas y con el prefijo: ``foo`` -> ``GODOT_FOO``."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
+#, fuzzy
+msgid ""
+"To see an example project, see the OS testing demo: https://github.com/"
+"godotengine/godot-demo-projects/tree/master/misc/os_test"
+msgstr ""
+"Para aclarar, aquí hay un ejemplo de cómo se ve esto en el `bomber demo "
+"<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
+"multiplayer_bomber>`_:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,11 +26,12 @@ msgid "Modules"
 msgstr "模块（Modules）"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:9
+#, fuzzy
 msgid ""
 "The Summator example in :ref:`doc_custom_modules_in_c++` is great for small, "
 "custom modules, but what if you want to use a larger, external library? "
-"Let's look at an example using Festival, a speech synthesis (text-to-speech) "
-"library written in C++."
+"Let's look at an example using `Festival <http://www.cstr.ed.ac.uk/projects/"
+"festival/>`_, a speech synthesis (text-to-speech) library written in C++."
 msgstr ""
 ":ref:`doc_custom_modules_in_c++` 中的Summator示例非常适合小型自定义模块，但如"
 "果您想使用更大的外部库，该怎么办？ 让我们看一个使用Festival的示例，这是一个用"
@@ -135,7 +136,7 @@ msgid ""
 "the environment's paths:"
 msgstr "要添加供编译器查看的包含目录，可以将其追加到环境的路径中："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:172
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:181
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone `env` first, so it won't add those flags to whole Godot build "
@@ -145,18 +146,18 @@ msgstr ""
 "这些标志添加到整个Godot构建中（这可能会导致错误）。带有自定义标志的示例 "
 "`SCsub`："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:187
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:196
 msgid "The final module should look like this:"
 msgstr "最终模块应如下所示："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:205
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:214
 msgid "Using the module"
 msgstr "使用模块"
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:207
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:216
 msgid "You can now use your newly created module from any script:"
 msgstr "现在，您可以通过任何脚本使用新创建的模块："
 
-#: ../../docs/development/cpp/binding_to_external_libraries.rst:216
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:225
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr "如果说出文本，输出将是 ``is_spoken:True`` 。"

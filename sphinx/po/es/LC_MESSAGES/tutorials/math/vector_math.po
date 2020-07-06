@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -285,7 +285,6 @@ msgid "Normalization"
 msgstr "Normalización"
 
 #: ../../docs/tutorials/math/vector_math.rst:189
-#, fuzzy
 msgid ""
 "**Normalizing** a vector means reducing its length to ``1`` while preserving "
 "its direction. This is done by dividing each of its components by its "
@@ -294,7 +293,8 @@ msgid ""
 msgstr ""
 "**Normalizar** un vector significa reducir su longitud a ``1`` preservando "
 "su dirección. Esto se hace dividiendo cada uno de sus componentes por su "
-"magnitud:"
+"magnitud. Como esta es una operación común, ``Vector2`` y ``Vector3`` "
+"proveen un método para normalizar:"
 
 #: ../../docs/tutorials/math/vector_math.rst:204
 msgid ""
@@ -424,7 +424,6 @@ msgstr ""
 "**180°**, ¿pueden ver al jugador?"
 
 #: ../../docs/tutorials/math/vector_math.rst:302
-#, fuzzy
 msgid ""
 "The green arrows ``fA`` and ``fB`` are **unit vectors** representing the "
 "zombies' facing directions and the blue semicircle represents its field of "
@@ -434,11 +433,12 @@ msgid ""
 "facing vector is less than 90°, then the zombie can see the player."
 msgstr ""
 "Las flechas verdes ``fA`` y ``fB`` son **vectores unitarios** que "
-"representan las direcciones de los zombis y el semicírculo azul representa "
-"su campo de visión. Para zombie ``A``, encontramos el vector de dirección "
-"``AP`` apuntando al jugador usando ``P - A`` y lo normalizamos. Si el ángulo "
-"entre este vector y el vector opuesto es inferior a 90°, el zombi podrá ver "
-"al jugador."
+"representan las direcciones que apuntan los zombis y el semicírculo azul "
+"representa su campo de visión. Para zombie ``A``, encontramos el vector de "
+"dirección ``AP`` apuntando al jugador usando ``P - A`` y lo normalizamos; "
+"Godot tiene una función auxiliar para hacer esto, llamada ``direction_to``. "
+"Si el ángulo entre este vector y el vector opuesto es inferior a 90°, el "
+"zombi podrá ver al jugador."
 
 #: ../../docs/tutorials/math/vector_math.rst:310
 msgid "In code it would look like this:"

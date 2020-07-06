@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,12 +83,26 @@ msgstr "开始编译"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:33
 #, fuzzy
-msgid ""
-"Start a terminal, go to the root directory of the engine source code and "
-"type::"
+msgid "Start a terminal, go to the root directory of the engine source code."
 msgstr "启动终端，然后进入引擎源代码的根目录。键入下面的指令："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:37
+#: ../../docs/development/compiling/compiling_for_osx.rst:35
+msgid "To compile for Intel (x86-64) powered Macs, use::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:39
+msgid ""
+"To compile for Apple Silicon (ARM64) powered Macs, use (only for Godot "
+"3.2.3+)::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:43
+msgid ""
+"To support both architectures in a single \"Universal 2\" binary, run the "
+"above two commands and then use ``lipo`` to bundle them together::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:47
 #, fuzzy
 msgid ""
 "If all goes well, the resulting binary executable will be placed in the "
@@ -99,46 +113,46 @@ msgstr ""
 "如果一切顺利，生成的二进制可执行文件将放在 `` bin`` 子目录中。该可执行文件包"
 "含整个引擎，并且运行时无需任何依赖项。 执行它将会启动项目管理器。"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:42
+#: ../../docs/development/compiling/compiling_for_osx.rst:52
 msgid ""
 "If you want to use separate editor settings for your own Godot builds and "
 "official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
 "by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:47
+#: ../../docs/development/compiling/compiling_for_osx.rst:57
 #, fuzzy
 msgid ""
 "To create an ``.app`` bundle like in the official builds, you need to use "
 "the template located in ``misc/dist/osx_tools.app``. Typically, for an "
-"optimized editor binary built with ``scons p=osx target=release_debug``::"
+"optimized editor binary built with ``target=release_debug``::"
 msgstr ""
 "要像在官方版本中那样创建.app，您需要使用位于 ``misc/dist/osx_tools.app`` 中的"
 "模板。通常，使用 ``scons p=osx target=release_debug`` 用于 ``.64`` 优化二进制"
 "文件构建："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:57
+#: ../../docs/development/compiling/compiling_for_osx.rst:67
 msgid "Compiling a headless/server build"
-msgstr ""
+msgstr "编译无头/服务器构建"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:59
+#: ../../docs/development/compiling/compiling_for_osx.rst:69
 msgid ""
 "To compile a *headless* build which provides editor functionality to export "
 "projects in an automated manner, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:64
+#: ../../docs/development/compiling/compiling_for_osx.rst:74
 msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
 "servers, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:70
+#: ../../docs/development/compiling/compiling_for_osx.rst:80
 #, fuzzy
 msgid "Cross-compiling for macOS from Linux"
 msgstr "在Linux平台上为iOS做交叉编译"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:72
+#: ../../docs/development/compiling/compiling_for_osx.rst:82
 #, fuzzy
 msgid ""
 "It is possible to compile for macOS in a Linux environment (and maybe also "
@@ -150,7 +164,7 @@ msgstr ""
 "`OSXCross <https://github.com/tpoechtrager/osxcross>`__ 才能使用macOS作为目标"
 "平台。首先，按照说明安装它："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:77
+#: ../../docs/development/compiling/compiling_for_osx.rst:87
 #, fuzzy
 msgid ""
 "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ "
@@ -160,21 +174,21 @@ msgstr ""
 "在您机器的某个地方克隆 `OSXCross存储库 <https://github.com/tpoechtrager/"
 "osxcross>`_ （或下载一个zip文件并将其解压缩到某处），例如："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:83
+#: ../../docs/development/compiling/compiling_for_osx.rst:93
 msgid ""
 "Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
 "osxcross#packaging-the-sdk"
 msgstr ""
 "按照说明打包SDK：https://github.com/tpoechtrager/osxcross#packaging-the-sdk"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:85
+#: ../../docs/development/compiling/compiling_for_osx.rst:95
 msgid ""
 "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
 "osxcross#installation"
 msgstr ""
 "按照说明安装OSXCross：https://github.com/tpoechtrager/osxcross#installation"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:88
+#: ../../docs/development/compiling/compiling_for_osx.rst:98
 #, fuzzy
 msgid ""
 "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the "
@@ -184,12 +198,12 @@ msgstr ""
 "之后，您需要将 ``OSXCROSS_ROOT`` 定义为OSXCross的安装路径（您克隆存储库/提取"
 "zip的位置），例如："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:94
+#: ../../docs/development/compiling/compiling_for_osx.rst:104
 #, fuzzy
 msgid "Now you can compile with SCons like you normally would::"
 msgstr "现在您可以像通常那样使用SCons进行编译："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:98
+#: ../../docs/development/compiling/compiling_for_osx.rst:108
 #, fuzzy
 msgid ""
 "If you have an OSXCross SDK version different from the one expected by the "

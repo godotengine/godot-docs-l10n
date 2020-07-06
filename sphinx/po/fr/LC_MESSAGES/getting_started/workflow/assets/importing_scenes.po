@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,23 +191,22 @@ msgstr ""
 "pour les besoins des moteurs de jeu et ne devrait pas être utilisé tel quel."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
-#, fuzzy
 msgid ""
 "Godot provides a `Blender plugin <https://github.com/godotengine/collada-"
 "exporter>`_ that will correctly export COLLADA scenes for use in Godot. It "
 "does not work in Blender 2.8 or newer, but there are plans to update it in "
 "the future."
 msgstr ""
-"Godot fournit un plugin `Blender <https://github.com/godotengine/collada-"
+"Godot fournit un `plugin Blender <https://github.com/godotengine/collada-"
 "exporter>`_ qui exportera correctement les scènes COLLADA pour une "
-"utilisation dans Godot."
+"utilisation dans Godot. Il ne fonctionne pas avec Blender 2.8 ou plus "
+"récent, mais il est prévu de le mettre à jour dans le futur."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:68
 msgid "Exporting ESCN files from Blender"
 msgstr "Exportation de fichiers ESCN depuis Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:70
-#, fuzzy
 msgid ""
 "The most powerful one, called `godot-blender-exporter <https://github.com/"
 "godotengine/godot-blender-exporter>`__. It uses a .escn file, which is kind "
@@ -218,7 +217,8 @@ msgstr ""
 "Le plus puissant, appelé `godot-blender-exporter <https://github.com/"
 "godotengine/godot-blender-exporter>`__. Il utilise des fichiers .escn qui "
 "sont un peu un autre nom de fichier .tscn (fichier de scène Godot), il "
-"conserve autant d'informations que possible à partir d'une scène Blender."
+"conserve autant d'informations que possible à partir d'une scène Blender. "
+"Cependant, il est considéré comme expérimental."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:76
 msgid ""

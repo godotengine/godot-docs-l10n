@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,6 @@ msgstr ""
 "ils se heurtent souvent au problème suivant :"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:16
-#, fuzzy
 msgid ""
 "They create their first scene and fill it with content only to eventually "
 "end up saving branches of their scene into separate scenes as the nagging "
@@ -54,14 +53,14 @@ msgid ""
 "because the node paths do not find their targets and signal connections "
 "established in the editor break."
 msgstr ""
-"Ils créent leur première scène et la remplissent de contenu avant que le "
-"sentiment de devoir la diviser en morceaux réutilisables ne les hante. Ils "
-"sauvegardent des branches de leur scène dans leur propre scène. Ils "
-"constatent alors que les références dures, sur lesquelles ils pouvaient "
-"compter auparavant, ne sont plus fonctionnelles. La réutilisation de la "
-"scène à plusieurs endroits crée des problèmes car les chemins de nœuds ne "
-"trouvent plus leurs cibles. Les connexions de signal établies dans l'éditeur "
-"sont rompues."
+"Ils créent leur première scène et la remplissent de contenu, pour finir par "
+"sauvegarder des branches de leur scène dans des scènes séparées au fur et à "
+"mesure que s'accumule le sentiment tenace qu'ils doivent séparer les choses. "
+"Cependant, ils constatent alors que les références dures, sur lesquelles ils "
+"pouvaient compter auparavant, ne sont plus fonctionnelles. La réutilisation "
+"de la scène à plusieurs endroits crée des problèmes car les chemins de nœuds "
+"ne trouvent plus leurs cibles et les connexions de signal établies dans "
+"l'éditeur sont rompues."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
 msgid ""
@@ -76,7 +75,6 @@ msgstr ""
 "la façon dont on l'utilise."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:29
-#, fuzzy
 msgid ""
 "One of the biggest things to consider in OOP is maintaining focused, "
 "singular-purpose classes with `loose coupling <https://en.wikipedia.org/wiki/"
@@ -87,17 +85,15 @@ msgstr ""
 "maintien de classes ciblées et à but unique avec un `couplage lâche <https://"
 "en.wikipedia.org/wiki/Loose_coupling>`_ à d'autres parties du code de base. "
 "La taille des objets reste ainsi réduite (pour des raisons de "
-"maintenabilité) et leur réutilisabilité est améliorée, de sorte qu'il n'est "
-"pas nécessaire d'en réécrire la logique complète."
+"maintenabilité) et leur réutilisabilité est améliorée."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:35
-#, fuzzy
 msgid ""
 "These OOP best practices have *several* implications for best practices in "
 "scene structure and script usage."
 msgstr ""
-"Ces bonnes pratiques POO ont *plusieurs* répercussions sur les meilleures "
-"pratiques en matière de structure de scène et d'utilisation de script."
+"Ces bonnes pratiques de la POO ont *plusieurs* implications sur les bonnes "
+"pratiques en matière de structure des scènes et d'utilisation de script."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:38
 msgid ""
@@ -135,7 +131,6 @@ msgstr ""
 "parent pour les initialiser :"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:52
-#, fuzzy
 msgid ""
 "Connect to a signal. Extremely safe, but should be used only to \"respond\" "
 "to behavior, not start it. Note that signal names are usually past-tense "
@@ -168,7 +163,6 @@ msgid "Initialize a NodePath."
 msgstr "Initialiser un Chemin de Nœud (NodePath)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:150
-#, fuzzy
 msgid ""
 "These options hide the points of access from the child node. This in turn "
 "keeps the child **loosely coupled** to its environment. One can re-use it in "
@@ -264,7 +258,6 @@ msgstr ""
 "indiquant ce qu'ils doivent faire pour configurer ce nœud."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:234
-#, fuzzy
 msgid ""
 "So, why do all this complex switcharoo work? Well, because scenes operate "
 "best when they operate alone. If unable to work alone, then working with "
@@ -278,20 +271,21 @@ msgstr ""
 "Alors, pourquoi tout ce schmilblick complexe fonctionne-t-il ? Parce que les "
 "scènes fonctionnent mieux lorsqu'elles fonctionnent seules. Si une scène est "
 "incapable de travailler seule, elle peut travailler avec d'autres de façon "
-"anonyme (avec un minimum de dépendances dures, c.-à-d. un couplage lâche). "
-"Si les changements inévitables apportés à une classe l'amènent à interagir "
-"avec d'autres scènes d'une manière imprévue, alors tout s'écroule. Le "
-"changement d'une classe peut avoir des effets néfastes sur les autres "
-"classes."
+"anonyme (avec un minimum de dépendances dures, c.-à-d. un couplage lâche) "
+"est la meilleure chose suivante. Inévitablement, il peut être nécessaire "
+"d'apporter des changements à une classe l'amènent à interagir avec d'autres "
+"scènes d'une manière imprévue, alors tout s'écroule. L'objectif de cette "
+"approche indirecte est d'éviter de se retrouver dans une situation où le "
+"changement d'une classe a des effets négatifs sur les autres classes."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:243
-#, fuzzy
 msgid ""
 "Scripts and scenes, as extensions of engine classes, should abide by *all* "
 "OOP principles. Examples include..."
 msgstr ""
-"Les scripts et les scènes, en tant qu'extensions de classe de Godot, doivent "
-"respecter *tous* les principes de la POO. En voici quelques exemples..."
+"Les scripts et les scènes, en tant qu'extensions de classe du moteur, "
+"doivent respecter *tous* les principes de la POO. En voici quelques "
+"exemples..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:246
 msgid "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
@@ -331,7 +325,6 @@ msgstr ""
 "pour commencer."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:261
-#, fuzzy
 msgid ""
 "A game should always have a sort of \"entry point\"; somewhere the developer "
 "can definitively track where things begin so that they can follow the logic "
@@ -345,7 +338,7 @@ msgstr ""
 "afin de pouvoir suivre la logique qui se prolonge ailleurs. Cet endroit sert "
 "également de vue d'ensemble pour toutes les autres données et logiques du "
 "programme. Pour les applications traditionnelles, ce serait la fonction "
-"\"main\". Ici, il s'agirait d'un nœud principal."
+"\"main\". Ici, il s'agirait d'un nœud Main."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:267
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:278
@@ -432,7 +425,6 @@ msgstr ""
 "ou moins \"World\" comme nœud principal."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:301
-#, fuzzy
 msgid ""
 "Any GUI would need to also be a singleton; be a transitory part of the "
 "\"World\"; or be manually added as a direct child of the root. Otherwise, "
@@ -507,13 +499,12 @@ msgstr ""
 "supposant qu'il n'y aura jamais qu'une seule des cibles)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:332
-#, fuzzy
 msgid ""
 "When should one do this? Well, this is subjective. The dilemma arises when "
 "one must micro-manage when a node must move around the SceneTree to preserve "
 "itself. For example..."
 msgstr ""
-"Quand faut-il le faire ? C'est à eux de décider. Le dilemme se pose "
+"Quand faut-il le faire ? Eh bien, c'est subjectif. Le dilemme se pose "
 "lorsqu'il faut micro-gérer quand un nœud doit se déplacer dans l'arbre des "
 "scènes pour se préserver. Par exemple..."
 
@@ -565,7 +556,6 @@ msgid "Re-add the player."
 msgstr "Replacer le joueur."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:352
-#, fuzzy
 msgid ""
 "The issue is that the player here is a \"special case\"; one where the "
 "developers must *know* that they need to handle the player this way for the "
@@ -574,23 +564,22 @@ msgid ""
 "is dangerous. It's a maintenance burden, strains code readability, and "
 "bloats the intellectual content of a project unnecessarily."
 msgstr ""
-"La difficulté ici est que le joueur est un \"cas spécial\", un cas où les "
+"Le problème ici est que le joueur est un \"cas spécial\", un cas où les "
 "développeurs ont besoin de *savoir* qu'ils doivent manipuler le joueur de "
 "cette façon pour le projet. Dans ce contexte, la seule façon de partager ces "
-"informations de manière fiable en équipe est de la *documenter*. Il est "
-"cependant fastidieux de consigner les détails de la mise en œuvre dans la "
+"informations de manière fiable en équipe est de la *documenter*. Cependant, "
+"il est dangereux de conserver les détails de l'implémentation dans la "
 "documentation. C'est une charge de maintenance, qui pèse sur la lisibilité "
-"du code et gonfle inutilement le contenu d'un projet."
+"du code et gonfle inutilement le contenu intellectuel d'un projet."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:359
-#, fuzzy
 msgid ""
 "In a more complex game with larger assets, it can be a better idea to simply "
 "keep the player somewhere else in the SceneTree entirely. This results in:"
 msgstr ""
 "Dans un jeu plus complexe avec des assets plus volumineux, il peut être "
 "préférable de simplement garder le joueur ailleurs dans l'arbre de scène. "
-"Cela implique..."
+"Cela implique :"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid "More consistency."
@@ -659,7 +648,6 @@ msgstr ""
 "la gestion des connexions de jeu et similaires."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:387
-#, fuzzy
 msgid ""
 "The key to scene organization is to consider the SceneTree in relational "
 "terms rather than spatial terms. Are the nodes dependent on their parent's "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:4
 msgid "Part 2"
-msgstr ""
+msgstr "Parte 2"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:7
 msgid "Part overview"
@@ -27,7 +27,7 @@ msgstr "Resumen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:9
 msgid "In this part we will be giving our player weapons to play with."
-msgstr ""
+msgstr "En esta parte le daremos a nuestro personaje armas para usar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:13
 msgid ""
@@ -36,6 +36,10 @@ msgid ""
 "with transitions, and the weapons will interact with objects in the "
 "environment."
 msgstr ""
+"Al final de esta parte, tu tendras un personaje que podra disparar una "
+"pistola, un rifle y atacar usando un cuchillo. El jugador tambien podra "
+"tener animaciones con transiciones, y las armas podran interactuar con "
+"objetos del entorno."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:17
 msgid ""
@@ -43,14 +47,17 @@ msgid ""
 "moving on to this part of the tutorial. The finished project from :ref:"
 "`doc_fps_tutorial_part_one` will be the starting project for part 2"
 msgstr ""
+"Se supone que has terminado :ref:`doc_fps_tutorial_part_one` antes de llegar "
+"a esta parte del tutorial. La parte final de :ref:"
+"`doc_fps_tutorial_part_one` sera el inicio del poryecto de la parte 2"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:20
 msgid "Let's get started!"
-msgstr ""
+msgstr "¡Vamos a empezar!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:23
 msgid "Making a system to handle animations"
-msgstr ""
+msgstr "Hacer un sistema que maneje las animaciones"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:25
 msgid ""
@@ -64,6 +71,8 @@ msgid ""
 "Create a new script called ``AnimationPlayer_Manager.gd`` and attach that to "
 "the :ref:`AnimationPlayer <class_AnimationPlayer>`."
 msgstr ""
+"Crea un nuevo script llamado ``AnimationPlayer_Manager.gd`` y adjuntalo a :"
+"ref:`AnimationPlayer <class_AnimationPlayer>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:30
 msgid "Add the following code to ``AnimationPlayer_Manager.gd``:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -304,6 +304,8 @@ msgid ""
 "Alternatively, you can specify a custom base branch after the new branch's "
 "name:"
 msgstr ""
+"创建新分支之前，请务必始终返回到“ master”分支，因为您当前的分支将用作新分支的"
+"基础。或者，您可以在新分支的名称之后指定一个自定义基础分支："
 
 #: ../../docs/community/contributing/pr_workflow.rst:188
 msgid "Updating your branch"
@@ -338,6 +340,9 @@ msgid ""
 "your own commits will be the only difference with the upstream ``master`` "
 "branch."
 msgstr ""
+"--rebase参数将确保您所提交的任何本地更改将被“重新应用”到“拉动”分支的顶部，这"
+"通常是我们在PR工作流程中想要的。这样，当您打开请求请求时，您自己的提交将是与"
+"上游``master''分支的唯一区别。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:209
 msgid ""
@@ -349,6 +354,11 @@ msgid ""
 "operation if later commits have conflicts too, until the rebase operation "
 "completes."
 msgstr ""
+"在重新定基础时，如果您提交同时在上游分支中已更改的修改后的代码，则可能会发生"
+"冲突。如果发生这种情况，Git将在冲突的提交处停止，并要求您解决冲突。您可以使用"
+"任何文本编辑器执行此操作，然后进行更改（稍后再进行介绍），然后继续执行git "
+"rebase --continue。如果以后的提交也有冲突，请重复该操作，直到重新设置操作完"
+"成。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:216
 msgid ""
@@ -357,6 +367,9 @@ msgid ""
 "rebase --abort``. You will then be back to the original state of your branch "
 "before calling ``git pull --rebase``."
 msgstr ""
+"如果您不确定重新设置期间发生了什么并且感到恐慌（不用担心，我们都要做前几"
+"次），则可以使用git rebase --abort中止重新设置。然后您将返回分支的原始状态，"
+"然后再调用``git pull --rebase''。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:221
 msgid ""
@@ -364,6 +377,8 @@ msgid ""
 "commit which tells Git what to make of the two distinct branches. If any "
 "conflicts arise, they would be resolved all at once via this merge commit."
 msgstr ""
+"如果省略了--rebase参数，则将创建一个合并提交，告诉Git如何处理两个不同的分支。"
+"如果发生任何冲突，将通过此合并提交立即解决所有冲突。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:225
 msgid ""
@@ -371,6 +386,8 @@ msgid ""
 "merge commits within PRs are frowned upon in our PR workflow. We only use "
 "them when merging PRs into the upstream branch."
 msgstr ""
+"虽然这是有效的工作流程，并且默认行为是``git pull''，但PR工作流程中不赞成PR中"
+"的合并提交。我们仅在将PR合并到上游分支时才使用它们。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:229
 msgid ""
@@ -381,6 +398,10 @@ msgid ""
 "the first time, and we're happy to use it to ensure that changes are easy to "
 "review and understand long after they have been merged."
 msgstr ""
+"我们的理念是，PR应该代表对代码库所做更改的最后阶段，并且我们对合并之前在中间"
+"阶段所做的错误和修复不感兴趣。 Git提供了很棒的工具来“重写历史记录”，使它好像"
+"我们第一次就做对了一样，并且我们乐于使用它来确保更改在合并之后很容易被查看和"
+"理解。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:236
 msgid ""
@@ -389,6 +410,9 @@ msgid ""
 "option is to use an *interactive rebase* on the upstream branch. See the :"
 "ref:`dedicated section <doc_pr_workflow_rebase>` for instructions."
 msgstr ""
+"如果您已经创建了一个合并提交而不使用``rebase''，或者进行了其他任何导致不希望"
+"的历史记录的更改，那么最好的选择是在上游分支上使用一个* interactive rebase "
+"*。有关说明，请参见<doc_pr_workflow_rebase>专用部分。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:241
 msgid ""
@@ -396,6 +420,9 @@ msgid ""
 "branch, you can do so with ``git reset --hard <commit ID>`` or ``git reset --"
 "hard <remote>/<branch>`` (e.g. ``git reset --hard upstream/master``)."
 msgstr ""
+"如果您想在任何时候将本地分支“重置”为给定的提交或分支，则可以使用“ git reset "
+"--hard <提交ID>”或“ git reset --hard <remote> /”来实现。 <branch>``（例如git "
+"reset --hard上游/ master``）。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:245
 msgid ""
@@ -405,6 +432,9 @@ msgid ""
 "restore, and use it as argument of ``git reset --hard`` to go back to that "
 "state."
 msgstr ""
+"请注意，这将删除您可能已在此分支中提交的所有更改。如果您错误地丢失了提交，请"
+"使用git reflog命令查找您想要还原的先前状态的提交ID，并将其用作git reset --"
+"hard的参数。回到那个状态。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:251
 msgid "Making changes"
@@ -492,6 +522,9 @@ msgid ""
 "staged changes (added with ``git add``). This is the best option if you want "
 "to fix a mistake in the last commit (bug, typo, style issue, etc.)."
 msgstr ""
+"git commit --amend允许您使用当前暂存的更改来修改最后一次提交（添加了git "
+"add）。如果要修复上一次提交中的错误（错误，错别字，样式问题等），这是最佳选"
+"择。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:285
 msgid ""
@@ -636,10 +669,15 @@ msgid ""
 "a new commit, considering using ``git commit --amend`` to amend the previous "
 "commit with your fixes. The above example would then become:"
 msgstr ""
+"但是，请注意，在我们的PR工作流程中，我们偏向于将代码库从一种功能状态转换为另"
+"一种功能状态的提交，而没有中间提交来解决您自己的代码或样式问题中的错误。在大"
+"多数情况下，我们会倾向于在给定的PR中进行一次提交（除非有充分的理由将更改分"
+"开），因此与其撰写新的提交，不如考虑使用git commit --amend来修改先前提交的修"
+"复程序。上面的示例将变为："
 
 #: ../../docs/community/contributing/pr_workflow.rst:426
 msgid "The interactive rebase"
-msgstr ""
+msgstr "交互式衍合"
 
 #: ../../docs/community/contributing/pr_workflow.rst:428
 msgid ""
@@ -649,6 +687,9 @@ msgid ""
 "request of your to *rebase* your branch to *squash* some or all of the "
 "commits into one."
 msgstr ""
+"如果您没有严格按照上述步骤将*更改*修改为提交而不是创建修订提交，或者如果您在"
+"不了解我们的工作流程和Git使用技巧的情况下编写了更改，则审阅者可能会要求您*进"
+"行更改*您的分支将*部分或全部提交压缩为一个。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:433
 msgid ""
@@ -657,6 +698,9 @@ msgid ""
 "reader who would want to know what happened in the Godot codebase, or when "
 "and how a given file was last modified."
 msgstr ""
+"确实，如果对某些修订进行了一些修订，以解决原始提交中的错误，错别字等，则它们"
+"与将来的变更日志阅读器无关，后者希望了解Godot代码库中发生了什么，或者何时以及"
+"如何进行给定文件是最后修改的。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:438
 #, fuzzy

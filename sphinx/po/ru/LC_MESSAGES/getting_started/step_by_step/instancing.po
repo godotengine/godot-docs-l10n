@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,9 +124,8 @@ msgid ""
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
 "Мы хотим добавить экземпляр сцены ``Ball`` в качестве дочернего элемента "
-"``Main``. Нажмите кнопку в виде \"связи\" (в тексте всплывающей подсказки "
-"сказано: \"Инстанцировать файл сцены как Узел.\") и выберите файл ``Ball."
-"tscn``."
+"``Main``. Нажмите кнопку в виде \"цепи\" (во всплывающей подсказке сказано: "
+"\"Добавить файл сцены как Узел.\") и выберите файл ``Ball.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -140,9 +139,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr ""
-"Нажмите кнопку \"Воспроизвести\" и посмотрите, как мяч падает в нижнюю часть "
-"экрана:"
+msgstr "Нажмите «Play» и посмотрите, как мяч упадет вниз:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple instances"
@@ -160,20 +157,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr "Запустите сцену снова и все шары упадут."
+msgstr "Запустите сцену снова, и все шары упадут."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"
 msgstr "Редактирование экземпляров"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
-#, fuzzy
 msgid ""
 "Open the ``Ball`` scene, expand the ``PhysicsMaterial`` by clicking on it, "
 "and set the ``Bounce`` property to ``1``."
 msgstr ""
-"Затем раскройте параметры материала и установите параметр ``Bounce`` на "
-"``1``."
+"Откройте сцену Ball,откройте колонку  PhysicsMaterial (физические материалы) "
+"в инспекторе свойств,и установите в свойство Bounce(упругость) значение 1"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""

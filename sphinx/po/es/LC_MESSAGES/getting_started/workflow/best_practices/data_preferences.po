@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -257,13 +257,16 @@ msgstr ""
 "ordenado."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
+#, fuzzy
 msgid ""
 "Godot implements Dictionary as an ``OrderedHashMap<Variant, Variant>``. The "
-"engine stores a giant array (initialized to 1000 records) of key-value "
+"engine stores a small array (initialized to 2^3 or 8 records) of key-value "
 "pairs. When one attempts to access a value, they provide it a key. It then "
-"*hashes* the key, i.e. converts it into a number. The \"hash\" becomes the "
-"index into the array, giving the OHM a quick lookup for the value within the "
-"conceptual \"table\" of keys mapped to values."
+"*hashes* the key, i.e. converts it into a number. The \"hash\" is used to "
+"calculate the index into the array. As an array, the OHM then has a quick "
+"lookup within the \"table\" of keys mapped to values. When the HashMap "
+"becomes too full, it increases to the next power of 2 (so, 16 records, then "
+"32, etc.) and rebuilds the structure."
 msgstr ""
 "Godot implementa el Dictionary como un ``OrderedHashMap<Variant, Variant>``. "
 "El motor almacena un array gigante (inicializado a 1000 registros) de pares "
@@ -273,7 +276,7 @@ msgstr ""
 "rápida consulta del valor dentro de la \"tabla\" conceptual de claves "
 "asignadas a valores."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:112
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:113
 msgid ""
 "Hashes are to reduce the chance of a key collision. If one occurs, the table "
 "must recalculate another index for the value that takes the previous "
@@ -286,11 +289,11 @@ msgstr ""
 "constante a todos los registros a expensas de la memoria y de una menor "
 "eficiencia operativa."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:117
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:118
 msgid "Hashing every key an arbitrary number of times."
 msgstr "Hashing de cada clave un número arbitrario de veces."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:119
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:120
 msgid ""
 "Hash operations are constant-time, so even if an algorithm must do more than "
 "one, as long as the number of hash calculations doesn't become too dependent "
@@ -301,21 +304,19 @@ msgstr ""
 "demasiado de la densidad de la tabla, las cosas se mantendrán rápidas. Lo "
 "que lleva a..."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:124
-msgid "Maintaining a huge size for the table."
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:125
+#, fuzzy
+msgid "Maintaining an ever-growing size for the table."
 msgstr "Manteniendo un gran tamaño para la tabla."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:126
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:127
 msgid ""
-"The reason it starts with 1000 records, and the reason it forces large gaps "
-"of unused memory interspersed in the table is to minimize hash collisions "
-"and maintain the speed of the accesses."
+"HashMaps maintain gaps of unused memory interspersed in the table on purpose "
+"to reduce hash collisions and maintain the speed of accesses. This is why it "
+"constantly increases in size quadratically by powers of 2."
 msgstr ""
-"La razón por la que comienza con 1000 registros, y la razón por la que "
-"fuerza grandes espacios de memoria sin usar intercalados en la tabla es para "
-"minimizar las colisiones de hash y mantener la velocidad de los accesos."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:130
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:132
 msgid ""
 "As one might be able to tell, Dictionaries specialize in tasks that Arrays "
 "do not. An overview of their operational details is as follows:"
@@ -324,11 +325,11 @@ msgstr ""
 "no pueden realizar. A continuación se muestra un resumen general de sus "
 "detalles operativos:"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:133
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
 msgid "**Iterate:** Fast."
 msgstr "**Iterate:** Rápido."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:137
 msgid ""
 "Op: Iterate over the map's internal vector of hashes. Return each key. "
 "Afterwards, users then use the key to jump to and return the desired value."
@@ -337,11 +338,11 @@ msgstr ""
 "Después, los usuarios utilizan la clave para saltar y devolver el valor "
 "deseado."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:139
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
 msgid "**Insert, Erase, Move:** Fastest."
 msgstr "**Insert, Erase, Move:** Más rápido."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:143
 msgid ""
 "Op: Hash the given key. Do 1 addition operation to look up the appropriate "
 "value (array start + offset). Move is two of these (one insert, one erase). "
@@ -352,17 +353,17 @@ msgstr ""
 "dos de estos dos pasos (uno para insertar y otro para borrar). El mapa debe "
 "hacer algún tipo de mantenimiento para conservar sus capacidades:"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:146
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
 msgid "update ordered List of records."
 msgstr "actualización ordenada de la Lista de registros."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
 msgid "determine if table density mandates a need to expand table capacity."
 msgstr ""
 "determinará si la densidad de las tablas requiere ampliar la capacidad de "
 "las mismas."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:152
 msgid ""
 "The Dictionary remembers in what order users inserted its keys. This enables "
 "it to execute reliable iterations."
@@ -370,19 +371,19 @@ msgstr ""
 "El Diccionario recuerda en qué orden los usuarios insertaron sus claves. "
 "Esto le permite ejecutar iteraciones de forma segura."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:153
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
 msgid "**Get, Set:** Fastest. Same as a lookup *by key*."
 msgstr "**Get, Set:** El más rápido. Igual que una búsqueda *por clave*."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
 msgid "Op: Same as insert/erase/move."
 msgstr "Op: Igual que insertar/borrar/mover."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
 msgid "**Find:** Slowest. Identifies the key of a value."
 msgstr "**Find:** El más lento. Identifica la clave de un valor."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:161
 msgid ""
 "Op: Must iterate through records and compare the value until a match is "
 "found."
@@ -390,7 +391,7 @@ msgstr ""
 "Op: Debe iterar a través de los registros y comparar el valor hasta que se "
 "encuentre una coincidencia."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:162
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:164
 msgid ""
 "Note that Godot does not provide this feature out-of-the-box (because they "
 "aren't meant for this task)."
@@ -398,7 +399,7 @@ msgstr ""
 "Hay que tener en cuenta que Godot no proporciona esta característica out-of-"
 "the-box (porque no están pensados para esta tarea)."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:165
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:167
 msgid ""
 "Godot implements Objects as stupid, but dynamic containers of data content. "
 "Objects query data sources when posed questions. For example, to answer the "
@@ -415,7 +416,7 @@ msgstr ""
 "encontrar más información sobre qué son los objetos y cómo funcionan en el "
 "artículo :ref:`doc_what_are_godot_classes`."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:172
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:174
 msgid ""
 "The important detail here is the complexity of the Object's task. Every time "
 "it performs one of these multi-source queries, it runs through *several* "
@@ -438,7 +439,7 @@ msgstr ""
 "comprobaciones lo que las hace más lentas que las dos alternativas para "
 "buscar datos."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:184
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:186
 msgid ""
 "When developers mention how slow the scripting API is, it is this chain of "
 "queries they refer to. Compared to compiled C++ code where the application "
@@ -453,7 +454,7 @@ msgstr ""
 "comandos tarden mucho más tiempo. Deben localizar la fuente de cualquier "
 "dato relevante antes de intentar acceder a ella."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:190
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:192
 msgid ""
 "The reason GDScript is slow is because every operation it performs passes "
 "through this system."
@@ -461,7 +462,7 @@ msgstr ""
 "La razón por la cual GDScript es lento es porque cada operación que realiza "
 "pasa a través de este sistema."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:193
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:195
 msgid ""
 "C# can process some content at higher speeds via more optimized bytecode. "
 "But, if the C# script calls into an engine class' content or if the script "
@@ -472,7 +473,7 @@ msgstr ""
 "clase de motor o si el script intenta acceder a algo externo a él, pasará "
 "por este proceso."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:198
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:200
 msgid ""
 "NativeScript C++ goes even further and keeps everything internal by default. "
 "Calls into external structures will go through the scripting API. In "
@@ -486,7 +487,7 @@ msgstr ""
 "scripting es una tarea manual. Es en este punto donde las clases externas, "
 "que no son de tipo C++, utilizarán la API para localizarlas."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:204
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:206
 msgid ""
 "So, assuming one extends from Reference to create a data structure, like an "
 "Array or Dictionary, why choose an Object over the other two options?"
@@ -495,7 +496,7 @@ msgstr ""
 "estructura de datos, como un Array o un Dictionary, ¿por qué elegir un "
 "Object en lugar de las otras dos opciones?"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:207
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:209
 msgid ""
 "**Control:** With objects comes the ability to create more sophisticated "
 "structures. One can layer abstractions over the data to ensure the external "
@@ -508,7 +509,7 @@ msgstr ""
 "estructura de los datos internos. Además, los objetos pueden tener señales, "
 "lo que permite un comportamiento reactivo."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:212
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:214
 msgid ""
 "**Clarity:** Objects are a reliable data source when it comes to the data "
 "that scripts and engine classes define for them. Properties may not hold the "
@@ -520,7 +521,7 @@ msgstr ""
 "Las propiedades pueden no tener los valores que uno espera, pero uno no "
 "necesita preocuparse de si la propiedad existe en primer lugar."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:217
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:219
 msgid ""
 "**Convenience:** If one already has a similar data structure in mind, then "
 "extending from an existing class makes the task of building the data "
@@ -532,7 +533,7 @@ msgstr ""
 "la estructura de datos sea mucho más fácil. En comparación, los Arrays y "
 "Diccionarios no satisfacen todos los casos de uso que uno pueda tener."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:222
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:224
 msgid ""
 "Objects also give users the opportunity to create even more specialized data "
 "structures. With it, one can design their own List, Binary Search Tree, "
@@ -543,7 +544,7 @@ msgstr ""
 "diseñar su propia List, Binary Search Tree, Heap, Splay Tree, Graph, "
 "Disjoint Set, y cualquier otra opción."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:226
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:228
 msgid ""
 "\"Why not use Node for tree structures?\" one might ask. Well, the Node "
 "class contains things that won't be relevant to one's custom data structure. "
@@ -555,7 +556,7 @@ msgstr ""
 "para la estructura de datos personalizada de cada quien. Como tal, puede ser "
 "útil construir un tipo de nodo propio al construir estructuras de árbol."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:270
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:272
 msgid ""
 "From here, one can then create their own structures with specific features, "
 "limited only by their imagination."
@@ -563,11 +564,11 @@ msgstr ""
 "A partir de aquí, uno puede crear sus propias estructuras con "
 "características específicas, limitadas sólo por su imaginación."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:274
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
 msgid "Enumerations: int vs. string"
 msgstr "Enumeraciones: int vs. string"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:278
 msgid ""
 "Most languages offer an enumeration type option. GDScript is no different, "
 "but unlike most other languages, it allows one to use either integers or "
@@ -580,7 +581,7 @@ msgstr ""
 "último sólamente cuando se utiliza la palabra clave ``export`` en GDScript). "
 "Entonces surge la pregunta, \"¿qué se debe usar?\""
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:281
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:283
 msgid ""
 "The short answer is, \"whichever you are more comfortable with.\" This is a "
 "feature specific to GDScript and not Godot scripting in general; The "
@@ -590,7 +591,7 @@ msgstr ""
 "característica específica de GDScript y no de Godot scripting en general; "
 "los lenguajes priorizan la usabilidad sobre el rendimiento."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:285
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:287
 msgid ""
 "On a technical level, integer comparisons (constant-time) will happen faster "
 "than string comparisons (linear-time). If one wants to keep up other "
@@ -601,7 +602,7 @@ msgstr ""
 "embargo, si uno quiere mantener las convenciones de otros idiomas, entonces "
 "debería usar enteros."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:289
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:291
 msgid ""
 "The primary issue with using integers comes up when one wants to *print* an "
 "enum value. As integers, attempting to print MY_ENUM will print ``5`` or "
@@ -615,7 +616,7 @@ msgstr ""
 "imprimir un entero, uno tendría que escribir un Diccionario que mapea el "
 "valor de la cadena correspondiente para cada enumeración."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:295
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:297
 msgid ""
 "If the primary purpose of using an enum is for printing values and one "
 "wishes to group them together as related concepts, then it makes sense to "
@@ -627,13 +628,13 @@ msgstr ""
 "usarlos como strings. De esta manera, no es necesaria una estructura de "
 "datos separada para ejecutar en la impresión."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:301
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
 msgid ""
 "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 msgstr ""
 "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:305
 msgid ""
 "Under what circumstances should one use each of Godot's animation classes? "
 "The answer may not be immediately clear to new Godot users."
@@ -642,7 +643,7 @@ msgstr ""
 "animación de Godot? La respuesta puede no ser muy clara para los nuevos "
 "usuarios de Godot."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:306
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:308
 msgid ""
 ":ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that the engine "
 "draws as an animated loop rather than a static image. Users can manipulate..."
@@ -651,16 +652,16 @@ msgstr ""
 "dibuja como un bucle animado en lugar de una imagen estática. Los usuarios "
 "pueden manipular..."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:310
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
 msgid "the rate at which it moves across each section of the texture (fps)."
 msgstr ""
 "la velocidad a la que se mueve a través de cada sección de la textura (fps)."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
 msgid "the number of regions contained within the texture (frames)."
 msgstr "el número de regiones que contiene la textura (frames)."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:316
 msgid ""
 "Godot's :ref:`VisualServer <class_VisualServer>` then draws the regions in "
 "sequence at the prescribed rate. The good news is that this involves no "
@@ -672,7 +673,7 @@ msgstr ""
 "implica ninguna lógica adicional por parte del motor. La mala noticia es que "
 "los usuarios tienen muy poco control."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:319
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:321
 msgid ""
 "Also note that AnimatedTexture is a :ref:`Resource <class_Resource>` unlike "
 "the other :ref:`Node <class_Node>` objects discussed here. One might create "
@@ -690,7 +691,7 @@ msgstr ""
 "integrarlo con un ref:`TileMap <class_TileMap>` para muchos fondos con "
 "animación automática que se renderizan en una sola llamada."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:327
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:329
 msgid ""
 "The AnimatedSprite node, in combination with the :ref:`SpriteFrames "
 "<class_SpriteFrames>` resource, allows one to create a variety of animation "
@@ -704,7 +705,7 @@ msgstr ""
 "velocidad, desplazamiento por regiones y orientación. Esto los vuelve muy "
 "buenos para controlar animaciones basadas en cuadros 2D."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:333
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:335
 msgid ""
 "If one needs trigger other effects in relation to animation changes (for "
 "example, create particle effects, call functions, or manipulate other "
@@ -718,7 +719,7 @@ msgstr ""
 "cuadros), entonces se necesita usar un nodo de :ref:`AnimationPlayer "
 "<class_AnimationPlayer>` en conjunto con el AnimatedSprite."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:341
 msgid ""
 "AnimationPlayers are also the tool one will need to use if they wish to "
 "design more complex 2D animation systems, such as..."
@@ -726,13 +727,13 @@ msgstr ""
 "AnimationPlayers también es la herramienta que uno necesita utilizar si se "
 "desea diseñar sistemas de animación 2D mas complejos, como…"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:342
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
 msgid "**Cut-Out animations:** editing sprites' transforms at runtime."
 msgstr ""
 "**Animaciones recortadas:** editando las transformaciones de los sprites en "
 "el momento de la ejecución."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:346
 msgid ""
 "**2D Mesh animations:** defining a region for the sprite's texture and "
 "rigging a skeleton to it. Then one animates the bones which stretch and bend "
@@ -742,11 +743,11 @@ msgstr ""
 "sprite y riggeando un esqueleto a el. Luego se animan los huesos que estiran "
 "y curvan la textura en proporción a las relaciones entre los huesos."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:349
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
 msgid "A mix of the above."
 msgstr "Una mezcla de lo de arriba."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:353
 msgid ""
 "While one needs an AnimationPlayer to design each of the individual "
 "animation sequences for a game, it can also be useful to combine animations "

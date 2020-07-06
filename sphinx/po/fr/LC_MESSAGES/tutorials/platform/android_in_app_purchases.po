@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,32 +28,36 @@ msgid ""
 "developer.android.com/google/play/billing>`__ instead of the now deprecated "
 "AIDL IAP implementation."
 msgstr ""
+"Depuis la version 3.2.2, Godot propose un plugin Android "
+"``GodotGooglePlayBilling``. Le nouveau plugin utilise la bibliothèque "
+"`Google Play Billing library <https://developer.android.com/google/play/"
+"billing>`__ au lieu de l'implémentation AIDL IAP qui est maintenant obsolète."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:10
-#, fuzzy
 msgid ""
 "If you learn better by looking at an example, you can find the demo project "
 "`here <https://github.com/godotengine/godot-demo-projects/tree/master/misc/"
 "android_iap>`__."
 msgstr ""
-"Si vous souhaitez voir un exemple plus complet de ce dont sont capables les "
-"plugins d'écran principal, consultez les projets de démonstration 2.5D ici : "
-"https://github.com/godotengine/godot-demo-projects/tree/master/misc/2.5d"
+"Si vous apprenez mieux en regardant un exemple, vous pouvez trouver le "
+"projet de démo `ici <https://github.com/godotengine/godot-demo-projects/tree/"
+"master/misc/android_iap>`__."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:15
 msgid "Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)"
-msgstr ""
+msgstr "Migrer à partir de Godot 3.2.1 et moins (GodotPaymentsV3)"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:17
 msgid ""
 "The new ``GodotGooglePlayBilling`` API is not compatible with its "
 "predecessor ``GodotPaymentsV3``."
 msgstr ""
+"La nouvelle API ``GodotGooglePlayBilling`` n'est pas compatible avec son "
+"prédécesseur ``GodotPaymentsV3``."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:20
-#, fuzzy
 msgid "Changes"
-msgstr "Canaux"
+msgstr "Modifications"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:22
 msgid ""
@@ -61,6 +65,9 @@ msgid ""
 "and install the ``GodotGooglePlayBilling`` plugin manually (see below for "
 "details)"
 msgstr ""
+"Vous devez activer l'option Custom Build dans vos paramètres d'exportation "
+"Android et installer le plugin ``GodotGooglePlayBilling`` manuellement (voir "
+"ci-dessous pour plus de détails)"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:24
 msgid ""
@@ -69,15 +76,18 @@ msgid ""
 "integrate#process>`__. Purchases that are not acknowledged by your app will "
 "be refunded."
 msgstr ""
+"Tous les achats doivent être confirmés par votre application. C'est une "
+"`exigence de Google <https://developer.android.com/google/play/billing/"
+"integrate#process>`__. Les achats qui ne sont pas reconnus par votre "
+"application seront remboursés."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:27
-#, fuzzy
 msgid "Support for subscriptions"
-msgstr "Options d'importation"
+msgstr "Prise en charge des abonnements"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:28
 msgid "Signals (no polling or callback objects)"
-msgstr ""
+msgstr "Signaux (pas polling ou callback d'objets)"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:32
 msgid "Usage"
@@ -97,39 +107,50 @@ msgid ""
 "and put both into `res://android/plugins`. The plugin should now show up in "
 "the Android export settings, where you can enable it."
 msgstr ""
+"Si ce n'est pas déjà fait, assurez-vous que vous avez activé et configuré "
+"avec succès :ref:`Android Custom Builds <doc_android_custom_build>`. Prenez "
+"le binaire et la configuration du plugin ``GodotGooglePlayBilling`` sur la "
+"`page des versions <https://github.com/godotengine/godot-google-play-billing/"
+"releases>`__ et mettez les deux dans `res://android/plugins`. Le plugin "
+"devrait maintenant apparaître dans les paramètres d'exportation d'Android, "
+"où vous pouvez l'activer."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:46
 msgid ""
 "To use the ``GodotGooglePlayBilling`` API you first have to get the "
 "``GodotGooglePlayBilling`` singleton and start the connection:"
 msgstr ""
+"Pour utiliser l'API ``GodotGooglePlayBilling``, vous devez d'abord obtenir "
+"le singleton ``GodotGooglePlayBilling`` et démarrer la connexion :"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:75
 msgid ""
 "All API methods only work if the API is connected. You can use ``payment."
 "isReady()`` to check the connection status."
 msgstr ""
+"Toutes les méthodes API ne fonctionnent que si l'API est connectée. Vous "
+"pouvez utiliser ``payment.isReady()`` pour vérifier l'état de la connexion."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:79
 msgid "Querying available items"
-msgstr ""
+msgstr "Recherche d'articles disponibles"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:81
 msgid ""
 "As soon as the API is connected, you can query SKUs using "
 "``querySkuDetails``."
 msgstr ""
+"Dès que l'API est connectée, vous pouvez interroger les SKU en utilisant "
+"``querySkuDetails``."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:83
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:115
-#, fuzzy
 msgid "Full example:"
-msgstr "Par exemple :"
+msgstr "Exemple complet :"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:96
-#, fuzzy
 msgid "Purchase an item"
-msgstr "Vérifier si l'utilisateur a acheté un article"
+msgstr "Acheter un article"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:98
 msgid ""
@@ -137,9 +158,11 @@ msgid ""
 "query the SKU details for an item before you can initiate the purchase flow "
 "for it."
 msgstr ""
+"Pour lancer le flux d'achat d'un article, appelez ``purchase``. Vous "
+"**devez** demander les détails du SKU d'un article avant de pouvoir lancer "
+"le processus d'achat."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:109
-#, fuzzy
 msgid "Check if the user purchased an item"
 msgstr "Vérifier si l'utilisateur a acheté un article"
 
@@ -150,11 +173,14 @@ msgid ""
 "`Dictionary <class_Dictionary>` with a status code and either an array of "
 "purchases or an error message."
 msgstr ""
+"Pour obtenir tous les achats, appelez le service ``queryPurchases``. "
+"Contrairement à la plupart des autres fonctions, ``queryPurchases`` est une "
+"opération synchrone et retourne un :ref:`Dictionary <class_Dictionary>` avec "
+"un code de statut et soit un tableau d'achats soit un message d'erreur."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:129
-#, fuzzy
 msgid "Consumables"
-msgstr "Constantes"
+msgstr "Consommables"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:131
 msgid ""
@@ -164,11 +190,16 @@ msgid ""
 "to get the purchase token. Calling ``consumePurchase`` automatically "
 "acknowledges a purchase."
 msgstr ""
+"Si votre article intégré à l'application n'est pas un achat unique mais un "
+"article consommable (par exemple des pièces de monnaie) qui peut être acheté "
+"plusieurs fois, vous pouvez consommer un article en appelant "
+"``consumePurchase`` avec un jeton d'achat. Appelez ``queryPurchases`` pour "
+"obtenir le jeton d'achat. Le fait d'appeler ``consumePurchase`` confirme "
+"automatiquement l'achat."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:148
-#, fuzzy
 msgid "Subscriptions"
-msgstr "Description"
+msgstr "Abonnements"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:150
 msgid ""
@@ -177,3 +208,8 @@ msgid ""
 "details. Check ``is_auto_renewing`` in the results of ``queryPurchases()`` "
 "to see if a user has cancelled an auto-renewing subscription"
 msgstr ""
+"Les abonnements ne sont pas très différents des articles intégrés à "
+"l'application. Il suffit d'utiliser ``\"subs\"`` comme deuxième argument à "
+"``querySkuDetails`` pour obtenir les détails de l'abonnement. Vérifiez "
+"``is_auto_renewing`` dans les résultats de ``queryPurchases()`` pour voir si "
+"un utilisateur a annulé un abonnement à renouvellement automatique"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,14 +78,15 @@ msgstr ""
 "usan."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
-#, fuzzy
 msgid "Style guide"
-msgstr "Guía de estilo de C#"
+msgstr "Guía de estilo"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
 msgid ""
 "For consistency across projects, we recommend following these guidelines:"
 msgstr ""
+"Para que haya coherencia entre los proyectos, recomendamos seguir estas "
+"directrices:"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid ""
@@ -95,11 +96,19 @@ msgid ""
 "the convention is to name them after the class name which should be in "
 "PascalCase."
 msgstr ""
+"Utilice **snake_case** para los nombres de carpetas y archivos (con la "
+"excepción de los scripts C#). Esto evita los problemas de sensibilidad a las "
+"mayúsculas y minúsculas que pueden surgir después de exportar un proyecto a "
+"Windows. Los scripts de C# son una excepción a esta regla, ya que la "
+"convención es nombrarlos después del nombre de la clase que debe estar en "
+"PascalCase."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:57
 msgid ""
 "Use **PascalCase** for node names, as this matches built-in node casing."
 msgstr ""
+"Usa **PascalCase** para los nombres de los nodos, ya que esto coincide con "
+"la carcasa del nodo incorporado."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 msgid ""
@@ -109,6 +118,12 @@ msgid ""
 "if you use third-party game assets for a character, it makes more sense to "
 "include them within the same folder as the character scenes and scripts."
 msgstr ""
+"En general, mantenga los recursos de terceros en una carpeta ``addons/`` de "
+"nivel superior, aunque no sean plugins de edición. Esto facilita el "
+"seguimiento de los archivos de terceros. Hay algunas excepciones a esta "
+"regla; por ejemplo, si utilizas recursos de juego de terceros para un "
+"personaje, tiene más sentido incluirlos dentro de la misma carpeta que las "
+"escenas y los scripts del personaje."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:65
 msgid "Importing"

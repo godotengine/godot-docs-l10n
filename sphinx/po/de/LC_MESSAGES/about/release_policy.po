@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,12 +19,11 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:4
 msgid "Godot release policy"
-msgstr ""
+msgstr "Godot Freigaberichtlinie"
 
 #: ../../docs/about/release_policy.rst:7
-#, fuzzy
 msgid "Godot versioning"
-msgstr "Die Versionsangabe"
+msgstr "Godot Versionsangabe"
 
 #: ../../docs/about/release_policy.rst:9
 msgid ""
@@ -49,6 +48,9 @@ msgid ""
 "trailing zero. For example, the first release in the 3.2 series is ``3.2``, "
 "not ``3.2.0``."
 msgstr ""
+"Die erste Ausgabe in einer Major/Minor Release Serie endet nicht mit einer "
+"angehängten Null. Zum Beispiel ist das erste Release in einer 3.2 Series "
+"``3.2``, nicht ``3.2.0``."
 
 #: ../../docs/about/release_policy.rst:27
 msgid "Release support timeline"
@@ -60,11 +62,14 @@ msgid ""
 "durations are not set in stone, here's a table with the expected level of "
 "support for each Godot version:"
 msgstr ""
+"Godot-Versionen werden für eine gewisse Zeit unterstützt. Da diese "
+"Zeitspanne nicht allzu gut absehbar ist folgt eine Tabelle mit den "
+"Schätzungen für jede Godot-Version:"
 
 #: ../../docs/about/release_policy.rst:34
 #, fuzzy
 msgid "**Version**"
-msgstr "**Beschreibung**"
+msgstr "**Version**"
 
 #: ../../docs/about/release_policy.rst:34
 #, fuzzy
@@ -76,26 +81,24 @@ msgid "**Support level**"
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:36
-#, fuzzy
 msgid "Godot 4.0"
-msgstr "Godot"
+msgstr "Godot 4.0"
 
 #: ../../docs/about/release_policy.rst:36
 msgid "~2021 (see below)"
-msgstr ""
+msgstr "~2021 (siehe unten)"
 
 #: ../../docs/about/release_policy.rst:36
 msgid "|unstable| *Current focus of development (unstable).*"
-msgstr ""
+msgstr "|instabil| *momentaner Schwerpunkt der Entwicklung (instabil).*"
 
 #: ../../docs/about/release_policy.rst:38
-#, fuzzy
 msgid "Godot 3.2"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.2"
 
 #: ../../docs/about/release_policy.rst:38
 msgid "January 2020"
-msgstr ""
+msgstr "Januar 2020"
 
 #: ../../docs/about/release_policy.rst:38
 msgid ""
@@ -104,13 +107,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:41
-#, fuzzy
 msgid "Godot 3.1"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.1"
 
 #: ../../docs/about/release_policy.rst:41
 msgid "March 2019"
-msgstr ""
+msgstr "März 2019"
 
 #: ../../docs/about/release_policy.rst:41
 #: ../../docs/about/release_policy.rst:43
@@ -119,55 +121,50 @@ msgid "|partial| Only critical, security and platform support fixes."
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:43
-#, fuzzy
 msgid "Godot 3.0"
-msgstr "In Godot 3.1:"
+msgstr "Godot 3.0"
 
 #: ../../docs/about/release_policy.rst:43
 msgid "January 2018"
-msgstr ""
+msgstr "Januar 2018"
 
 #: ../../docs/about/release_policy.rst:45
-#, fuzzy
 msgid "Godot 2.1"
-msgstr "In Godot 3.1:"
+msgstr "Godot 2.1"
 
 #: ../../docs/about/release_policy.rst:45
 msgid "July 2016"
-msgstr ""
+msgstr "Juli 2016"
 
 #: ../../docs/about/release_policy.rst:47
-#, fuzzy
 msgid "Godot 2.0"
-msgstr "Godot"
+msgstr "Godot 2.0"
 
 #: ../../docs/about/release_policy.rst:47
 msgid "February 2016"
-msgstr ""
+msgstr "Februar 2016"
 
 #: ../../docs/about/release_policy.rst:47
 #: ../../docs/about/release_policy.rst:49
 #: ../../docs/about/release_policy.rst:51
 msgid "|eol| No longer supported."
-msgstr ""
+msgstr "|eol| Nicht länger unterstützt."
 
 #: ../../docs/about/release_policy.rst:49
-#, fuzzy
 msgid "Godot 1.1"
-msgstr "In Godot 3.1:"
+msgstr "Godot 1.1"
 
 #: ../../docs/about/release_policy.rst:49
 msgid "May 2015"
-msgstr ""
+msgstr "Mai 2015"
 
 #: ../../docs/about/release_policy.rst:51
-#, fuzzy
 msgid "Godot 1.0"
-msgstr "Godot"
+msgstr "Godot 1.0"
 
 #: ../../docs/about/release_policy.rst:51
 msgid "December 2014"
-msgstr ""
+msgstr "Dezember 2014"
 
 #: ../../docs/about/release_policy.rst:59
 msgid ""
@@ -183,7 +180,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:69
 msgid "When is the next release out?"
-msgstr ""
+msgstr "Wann erscheint die nächste Godot-Version?"
 
 #: ../../docs/about/release_policy.rst:71
 msgid ""
@@ -191,6 +188,9 @@ msgid ""
 "a major or minor Godot release made available every year. Following this "
 "trend, this means Godot 4.0 will most likely be released in **2021**."
 msgstr ""
+"Während Mitwirkende des Godot-Projekts keine Terminfristen haben, gibt es "
+"für gewöhnlich jedes Jahr eine neue Godot Version. Diesem Trend folgend "
+"dürfte die Version 4.0 in **2021** veröffentlicht werden."
 
 #: ../../docs/about/release_policy.rst:75
 msgid ""
@@ -199,6 +199,12 @@ msgid ""
 "only have new patch releases once an important security or platform support "
 "fix has been merged."
 msgstr ""
+"Patches werden öfters bereitgestellt, für gewöhnlich alle zwei- bis sechs "
+"Monate während eine Version gänzlich unterstützt wird.\n"
+"Nur teilweise unterstützte Erscheinungen werden nur neue Patches erhalten "
+"falls kritische Sicherheitsrisiken \n"
+"vorhanden sind, oder ein plattformübergreifender Unterstützungs-Patch "
+"fusioniert wurde."
 
 #: ../../docs/about/release_policy.rst:82
 msgid ""

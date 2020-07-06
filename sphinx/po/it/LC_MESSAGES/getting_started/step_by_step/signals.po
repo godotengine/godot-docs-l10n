@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,12 +43,11 @@ msgstr ""
 "quando è premuto."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:17
-#, fuzzy
 msgid ""
 "You can read more about the observer pattern here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"Puoi scoprire di più relativamente agli observer pattern qui: http://"
+"Puoi leggere di più relativamente agli observer pattern qui: http://"
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:19
@@ -77,16 +76,15 @@ msgid "Timer example"
 msgstr "Esempio di Timer"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:29
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
 "Per vedere come funzionano i segnali, proviamo ad usare un nodo :ref:`Timer "
-"<class_Timer>`. Creiamo una nuova scena con un Node2D e due children: un "
-"Timer e un nodo :ref:`Sprite <class_Sprite>`. Nel pannello della scena, "
-"rinomina Node2D con TimerExample."
+"<class_Timer>`. Creiamo una nuova scena con un Node2D e due figli: un Timer "
+"e un nodo :ref:`Sprite <class_Sprite>`. Nel pannello della scena, rinomina "
+"Node2D con TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:33
 msgid ""
@@ -164,6 +162,11 @@ msgid ""
 "method, as each signal propagation will result in different values for those "
 "extra call arguments."
 msgstr ""
+"Se attivi il menu Avanzato, vedrai sul lato destro che puoi associare un "
+"numero arbitrario di argomenti di (possibilmente) tipi diversi. Questo può "
+"essere utile quando hai più di un segnale collegato allo stesso metodo, "
+"poiché ogni propagazione del segnale comporterà valori diversi per quegli "
+"argomenti di chiamata extra."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:70
 msgid ""
@@ -264,8 +267,8 @@ msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
-"Un segnale ha anche la possibilità di dichiarare uno o più argomenti. "
-"Specificare i nomi degli argomenti tra parentesi:"
+"Un segnale può anche opzionalmente dichiarare uno o più argomenti. Specifica "
+"i nomi degli argomenti tra parentesi:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:243
 msgid ""
@@ -280,11 +283,12 @@ msgstr ""
 "quando si emettono segnali, quindi spetta a te fornire i valori corretti."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:248
-#, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
-msgstr "Per emettere un segnale da codice, usa la funzione ``emit_signal``:"
+msgstr ""
+"Per passare dei valori aggiungili come secondo argomento alla funzione "
+"``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:276
 msgid "Conclusion"

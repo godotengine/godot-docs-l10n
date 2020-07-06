@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/editor/editor_style_guide.rst:4
-#, fuzzy
 msgid "Editor style guide"
-msgstr "Guide de style C#"
+msgstr "Guide de style de l'éditeur"
 
 #: ../../docs/development/editor/editor_style_guide.rst:7
 msgid "Introduction"
@@ -28,7 +27,7 @@ msgstr "Introduction"
 
 #: ../../docs/development/editor/editor_style_guide.rst:9
 msgid "Thanks for your interest in contributing to the Godot editor!"
-msgstr ""
+msgstr "Merci de votre intérêt à la contribution à l'éditeur de Godot !"
 
 #: ../../docs/development/editor/editor_style_guide.rst:11
 msgid ""
@@ -36,23 +35,32 @@ msgid ""
 "editor. Following this style guide will help your contribution get merged "
 "faster since there will be fewer review steps required."
 msgstr ""
+"Cette page décrit la grammaire et le style d'écriture utilisés dans "
+"l'éditeur Godot. Suivre ce guide de style, aidera votre contribution a être "
+"fusionnée plus rapidement, car les étapes de révision seront moins "
+"nombreuses."
 
 #: ../../docs/development/editor/editor_style_guide.rst:16
-#, fuzzy
 msgid "Writing style"
-msgstr "Système d'avertissement"
+msgstr "Style d'écriture"
 
 #: ../../docs/development/editor/editor_style_guide.rst:18
 msgid ""
 "**Write messages (errors, warnings, ...) as full sentences.** They should "
 "start with an uppercase letter and end with a period."
 msgstr ""
+"**Écrivez les messages (erreurs, avertissements, ...) sous forme de phrases "
+"complètes** Elles doivent commencer par une lettre majuscule et se terminer "
+"par un point."
 
 #: ../../docs/development/editor/editor_style_guide.rst:20
 msgid ""
 "**Try to keep sentences short.** This makes it more likely that their "
 "translations will be short as well, which is a good thing to avoid UI bugs."
 msgstr ""
+"**Essayez de garder les phrases courtes.** Cela rend plus probable que leurs "
+"traductions soient également courtes, ce qui est une bonne chose pour éviter "
+"les bogues de l'interface utilisateur."
 
 #: ../../docs/development/editor/editor_style_guide.rst:22
 msgid ""
@@ -60,6 +68,9 @@ msgid ""
 "exception to this rule can be made when you specifically want to emphasize "
 "one of the contraction's words."
 msgstr ""
+"**Utilisez des contractions.** Par exemple, utilisez \"isn't\" au lieu de "
+"\"is not\". Une exception à cette règle peut être faite lorsque vous "
+"souhaitez spécifiquement souligner l'un des mots de la contraction."
 
 #: ../../docs/development/editor/editor_style_guide.rst:25
 msgid ""
@@ -67,48 +78,53 @@ msgid ""
 "(``''``). Double quotes should be used to quote user input, file paths and "
 "possibly other things depending on the context."
 msgstr ""
+"**Utilisez des guillemets doubles dans les messages** (``\"\"``) au lieu de "
+"guillemets simples (``''``). Les guillemets doubles doivent être utilisés "
+"pour citer les entrées de l'utilisateur, les chemins d'accès aux fichiers et "
+"éventuellement d'autres choses selon le contexte."
 
 #: ../../docs/development/editor/editor_style_guide.rst:31
 msgid ""
 "Try to follow the :ref:`doc_docs_writing_guidelines` in addition to the "
 "guidelines outlined above."
 msgstr ""
+"Essayez de suivre les lignes directrices :ref:`doc_docs_writing_guidelines` "
+"en plus des lignes directrices décrites ci-dessus."
 
 #: ../../docs/development/editor/editor_style_guide.rst:35
-#, fuzzy
 msgid "Button and menu texts"
-msgstr "Options et préréglages"
+msgstr "Textes des boutons et des menus"
 
 #: ../../docs/development/editor/editor_style_guide.rst:37
 msgid "Capitalize text in buttons and menu actions:"
-msgstr ""
+msgstr "Mettez le texte en majuscule dans les boutons et les actions de menu :"
 
 #: ../../docs/development/editor/editor_style_guide.rst:39
 msgid "**Good:** *Open Editor Data Folder*"
-msgstr ""
+msgstr "**Bien :** *Open Editor Data Folder*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:40
 msgid "**Bad:** *Open editor data folder*"
-msgstr ""
+msgstr "**Mauvais :** *Open editor data folder*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:42
 msgid ""
 "If a menu action opens a modal dialog, suffix it with an ellipsis (``...``)."
 msgstr ""
+"Si une action de menu ouvre un dialogue modal, suffixez-le par une ellipse "
+"(``...``)."
 
 #: ../../docs/development/editor/editor_style_guide.rst:44
 msgid "**Good:** *Editor Settings...*"
-msgstr ""
+msgstr "**Bon :** *Editor Settings...*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:45
-#, fuzzy
 msgid "**Bad:** *Editor Settings*"
-msgstr "Paramètres de l'éditeur"
+msgstr "**Mauvais :** *Editor Settings*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:48
-#, fuzzy
 msgid "Inspector sections"
-msgstr "Plugins inspecteur"
+msgstr "Sections de l'inspecteur"
 
 #: ../../docs/development/editor/editor_style_guide.rst:50
 msgid ""
@@ -116,21 +132,27 @@ msgid ""
 "that contain few items make it difficult to navigate the inspector, while "
 "missing the benefits of using sections such as folding."
 msgstr ""
+"En général, ne créez pas de sections qui contiennent moins de 3 éléments. "
+"Les sections qui contiennent peu d'éléments rendent la navigation dans "
+"l'inspecteur difficile, tout en ne bénéficiant pas des avantages de "
+"l'utilisation de sections telles que le pliage."
 
 #: ../../docs/development/editor/editor_style_guide.rst:54
 msgid ""
 "There are some valid exceptions for this, such as material features in :ref:"
 "`class_SpatialMaterial`."
 msgstr ""
+"Il y a quelques exceptions valables, telles que les caractéristiques "
+"matérielles dans :ref:`class_SpatialMaterial`."
 
 #: ../../docs/development/editor/editor_style_guide.rst:57
 msgid "This advice also applies to the Project Settings and Editor Settings."
 msgstr ""
+"Ces conseils s'appliquent également aux paramètres du projet et de l'éditeur."
 
 #: ../../docs/development/editor/editor_style_guide.rst:60
-#, fuzzy
 msgid "Inspector performance hints"
-msgstr "Plugins inspecteur"
+msgstr "Indices de performance de l'inspecteur"
 
 #: ../../docs/development/editor/editor_style_guide.rst:62
 msgid ""
@@ -139,48 +161,62 @@ msgid ""
 "rather than being relative to the other options provided in the enum. Here "
 "are some examples taken from the Godot editor:"
 msgstr ""
+"Les propriétés énumérées qui ont un impact notable sur les performances "
+"devrait être associé à un indice de performance. L'indice doit faire "
+"référence à l'impact *absolu* sur les performances, plutôt que d'être "
+"relatif aux autres options fournies dans l'énumération. Voici quelques "
+"exemples tirés de l'éditeur Godot :"
 
 #: ../../docs/development/editor/editor_style_guide.rst:67
 msgid "**Screen-space antialiasing:** *Disabled (Fastest), FXAA (Fast)*"
-msgstr ""
+msgstr "**Screen-space antialiasing:** *Disabled (Fastest), FXAA (Fast)*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:68
 msgid ""
 "**MSAA quality:** *Disabled (Fastest), 2x (Fast), 4x (Average), 8x (Slow), "
 "16x (Slower)*"
 msgstr ""
+"**MSAA quality:** *Disabled (Fastest), 2x (Fast), 4x (Average), 8x (Slow), "
+"16x (Slower)*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:70
 msgid ""
 "**DirectionalLight mode:** *Orthogonal (Fast), PSSM 2 Splits (Average), PSSM "
 "4 Splits (Slow)*"
 msgstr ""
+"**DirectionalLight mode:** *Orthogonal (Fast), PSSM 2 Splits (Average), PSSM "
+"4 Splits (Slow)*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:73
 msgid ""
 "For consistency, try to stick to the terms below (from fastest to slowest):"
 msgstr ""
+"Par souci de cohérence, essayez de vous en tenir aux termes ci-dessous (de "
+"fastest à slowest) :"
 
 #: ../../docs/development/editor/editor_style_guide.rst:75
 msgid "*Fastest, Faster, Fast, Average, Slow, Slower, Slowest*"
-msgstr ""
+msgstr "*Fastest, Faster, Fast, Average, Slow, Slower, Slowest*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:77
 msgid ""
 "Their usage doesn't have to be contiguous. For example, you can use only "
 "\"Fast\" and \"Slow\" from the list above."
 msgstr ""
+"Leur utilisation n'a pas besoin d'être contiguë. Par exemple, vous pouvez "
+"utiliser uniquement \"Fast\" et \"Slow\" dans la liste ci-dessus."
 
 #: ../../docs/development/editor/editor_style_guide.rst:80
 msgid ""
 "If you're adding a new enum, its values should be ordered from the fastest "
 "option to the slowest option."
 msgstr ""
+"Si vous ajoutez une nouvelle énumération, ses valeurs doivent être classées "
+"de l'option la plus rapide à l'option la plus lente."
 
 #: ../../docs/development/editor/editor_style_guide.rst:84
-#, fuzzy
 msgid "Tooltips"
-msgstr "Outils"
+msgstr "Info-bulles"
 
 #: ../../docs/development/editor/editor_style_guide.rst:86
 msgid ""
@@ -188,6 +224,10 @@ msgid ""
 "action isn't obvious. You can also provide additional context or highlight "
 "caveats in the tooltip."
 msgstr ""
+"Envisagez d'ajouter des infobulles chaque fois que l'action effectuée par un "
+"bouton ou une action de menu n'est pas évidente. Vous pouvez également "
+"fournir un contexte supplémentaire ou mettre en évidence des avertissements "
+"dans l'infobulle."
 
 #: ../../docs/development/editor/editor_style_guide.rst:90
 msgid ""
@@ -196,17 +236,23 @@ msgid ""
 "than ~80 characters), wrap it over several lines by adding line breaks using "
 "``\\n``."
 msgstr ""
+"Vous pouvez le faire en appelant ``set_tooltip(TTR(\"Text here.\"))`` sur le "
+"noeud basé sur Control en question. Si l'info-bulle est particulièrement "
+"longue (plus de ~80 caractères), vous pouvez l'encapsuler sur plusieurs "
+"lignes en ajoutant des sauts de ligne en utilisant ``\\n``."
 
 #: ../../docs/development/editor/editor_style_guide.rst:94
 msgid ""
 "Tooltips should follow the writing style described above. In addition to "
 "this, use indicative mood instead of imperative mood:"
 msgstr ""
+"Les infobulles doivent suivre le style d'écriture décrit ci-dessus. En "
+"outre, utilisez un ton indicatif au lieu d'un ton impératif :"
 
 #: ../../docs/development/editor/editor_style_guide.rst:97
 msgid "**Good:** *Computes global illumination for the selected GIProbe.*"
-msgstr ""
+msgstr "**Bon :** *Computes global illumination for the selected GIProbe.*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:98
 msgid "**Bad:** *Compute global illumination for the selected GIProbe.*"
-msgstr ""
+msgstr "**Mauvais :** *Compute global illumination for the selected GIProbe.*"

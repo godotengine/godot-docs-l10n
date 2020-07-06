@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,10 +105,11 @@ msgstr ""
 "等）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:161
+#, fuzzy
 msgid ""
 "Export hints are also provided for the physics and render layers defined in "
 "the project settings::"
-msgstr ""
+msgstr "还为项目设置中定义的物理层和渲染层提供了导出提示："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:168
 msgid ""
@@ -134,11 +135,14 @@ msgstr ""
 "须是常量表达式。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:180
+#, fuzzy
 msgid ""
 "If the exported array specifies a type which inherits from Resource, the "
 "array values can be set in the inspector by dragging and dropping multiple "
 "files from the FileSystem dock at once."
 msgstr ""
+"如果导出的数组指定了从Resource继承的类型，则可以通过一次从FileSystem扩展坞中"
+"拖放多个文件来在检查器中设置数组值。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:220
 #, fuzzy
@@ -153,6 +157,10 @@ msgid ""
 "<class_Object_method_property_list_changed_notify>` after setting the "
 "exported variable's value."
 msgstr ""
+"在 :ref:`doc_gdscript_tool_mode` 下的脚本中，更改一个导出变量的值时，属性检查"
+"器中对应的值不会自动更新。要更新它，请在设置导出变量的值之后，调用 :ref:"
+"`property_list_changed_notify() "
+"<class_Object_method_property_list_changed_notify>` 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:229
 #, fuzzy

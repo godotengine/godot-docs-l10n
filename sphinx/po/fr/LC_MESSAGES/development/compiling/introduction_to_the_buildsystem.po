@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -405,10 +405,31 @@ msgid ":ref:`doc_custom_modules_in_c++`"
 msgstr ":ref:`doc_custom_modules_in_c++`"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
+#, fuzzy
+msgid "Cleaning generated files"
+msgstr "Nettoyage des modèles d'exportation générés"
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
+msgid ""
+"Sometimes, you may encounter an error due to generated files being present. "
+"You can remove them by using ``scons --clean <options>``, where "
+"``<options>`` is the list of build options you've used to build Godot "
+"previously."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:222
+msgid ""
+"Alternatively, you can use ``git clean -fixd`` which will clean build "
+"artifacts for all platforms and configurations. Beware, as this will remove "
+"all untracked and ignored files in the repository. Don't run this command if "
+"you have uncommitted work!"
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
 msgid "Other build options"
 msgstr "Autres options de compilation"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:230
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Godot should be built (compiler, debug options, etc.) as well as the "
@@ -418,7 +439,7 @@ msgstr ""
 "configurer la façon dont Godot devrait être compilé (compilateur, options de "
 "débogage, etc.) ainsi que les fonctionnalités à activer/désactiver."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:222
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:234
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
@@ -426,15 +447,15 @@ msgstr ""
 "Vérifiez le résultat de ``scons --help`` pour obtenir des détails à propos "
 "de chaque option de la version que vous souhaitez compiler."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:240
 msgid "Overriding the build options"
 msgstr "Remplacement des options de compilation"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:231
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:243
 msgid "Using a file"
 msgstr "Utilisation d'un fichier"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:233
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
 msgid ""
 "The default ``custom.py`` file can be created at the root of the Godot "
 "Engine source to initialize any SCons build options passed via the command "
@@ -444,7 +465,7 @@ msgstr ""
 "Godot pour initialiser toutes les options de compilation de SCons passées "
 "par la ligne de commande :"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:257
 msgid ""
 "You can also disable some of the builtin modules before compiling, saving "
 "some time it takes to build the engine, see :ref:`doc_optimizing_for_size` "
@@ -454,7 +475,7 @@ msgstr ""
 "compilation, ce qui permet d'économiser le temps nécessaire à la compilation "
 "du moteur, voir la page :ref:`doc_optimizing_for_size` pour plus de détails."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:248
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:260
 msgid ""
 "Another custom file can be specified explicitly with the ``profile`` command "
 "line option, both overriding the default build configuration:"
@@ -463,7 +484,7 @@ msgstr ""
 "de ligne de commande ``profile``, tous deux remplaçant la configuration de "
 "construction par défaut :"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:255
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:267
 msgid ""
 "Build options set from the file can be overridden by the command line "
 "options."
@@ -471,17 +492,17 @@ msgstr ""
 "Les options de compilation définies à partir du fichier peuvent être "
 "remplacées par les options de la ligne de commande."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:258
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:270
 msgid "It's also possible to override the options conditionally:"
 msgstr ""
 "Il est également possible de remplacer les options de manière "
 "conditionnelle :"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:273
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:285
 msgid "Using the SCONSFLAGS"
 msgstr "Utilisation de SCONSFLAGS"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:275
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:287
 msgid ""
 "``SCONSFLAGS`` is an environment variable which is used by the SCons to set "
 "the options automatically without having to supply them via the command line."
@@ -490,7 +511,7 @@ msgstr ""
 "pour définir les options automatiquement sans avoir à les fournir via la "
 "ligne de commande."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:278
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:290
 msgid ""
 "For instance, you may want to build Godot in parallel with the "
 "aforementioned ``-j`` option for all the future builds:"
@@ -498,11 +519,11 @@ msgstr ""
 "Par exemple, vous pouvez vouloir compiler Godot en parallèle avec l'option "
 "``-j`` susmentionnée pour toutes les compilations futures :"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:295
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:307
 msgid "Export templates"
 msgstr "Exporter des modèles"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:297
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:309
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -515,7 +536,7 @@ msgstr ""
 "plus récents, que vous utilisez des modules personnalisés, ou tout "
 "simplement que vous ne faites pas confiance à votre propre ombre)."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:302
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:314
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most files are optimized binaries or packages for each platform:"
@@ -524,7 +545,7 @@ msgstr ""
 "le décompressez, vous remarquerez que la plupart des fichiers sont des "
 "binaires ou des paquets optimisés pour chaque plate-forme :"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:325
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:337
 msgid ""
 "To create those yourself, follow the instructions detailed for each platform "
 "in this same tutorial section. Each platform explains how to create its own "
@@ -534,7 +555,7 @@ msgstr ""
 "plate-forme dans cette même section de tutoriel. Chaque plateforme explique "
 "comment créer son propre modèle."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:329
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:341
 msgid ""
 "The ``version.txt`` file should contain the corresponding Godot version "
 "identifier. This file is used to install export templates in a version-"
@@ -555,7 +576,7 @@ msgstr ""
 "`fichier version.py dans le dépôt Git Godot <https://github.com/godotengine/"
 "godot/blob/master/version.py>`__."
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:337
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:349
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross-compilation, since you can cross-compile "

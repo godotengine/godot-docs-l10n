@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,11 +49,11 @@ msgstr ""
 "플랫폼은 추상화하기에 불가능한 독특한 기능을 갖고 있습니다. 그런 기능은 입문"
 "서의 영역을 벗어나는 것이므로 관련 인터페이스에서 서술하겠습니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:12
+#: ../../docs/tutorials/vr/vr_primer.rst:17
 msgid "AR/VR server"
 msgstr "AR/VR 서버"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:14
+#: ../../docs/tutorials/vr/vr_primer.rst:19
 msgid ""
 "When Godot starts, each available interface will make itself known to the AR/"
 "VR server. GDNative interfaces are setup as singletons; as long as they are "
@@ -64,7 +64,7 @@ msgstr ""
 "GDNative 인터페이스는 싱글톤으로 설정됩니다; 인터페이스가 프로젝트의 "
 "GDNative 싱글톤 목록에 추가되는 만큼, 서버로 알려질 것입니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:16
+#: ../../docs/tutorials/vr/vr_primer.rst:23
 msgid ""
 "You can use the function :ref:`get_interfaces() "
 "<class_ARVRServer_method_get_interfaces>` to return a list of available "
@@ -83,11 +83,11 @@ msgstr ""
 "코어로 데스크톱에서 화면을 출력할 수 있으므로, 프로토타입을 만들거나 이것과 "
 "같은 튜토리얼을 하기에 이상적입니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:18
+#: ../../docs/tutorials/vr/vr_primer.rst:31
 msgid "To enable an interface, you execute the following code:"
 msgstr "인터페이스를 활성화하기 위해, 다음 코드를 실행합니다:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:35
+#: ../../docs/tutorials/vr/vr_primer.rst:48
 msgid ""
 "This code finds the interface we wish to use, initializes it and, if that is "
 "successful, binds the main viewport to the interface. This last step gives "
@@ -99,7 +99,7 @@ msgstr ""
 "페이스를 제어하여 뷰포트에 입체 렌더링과 같은 것을 자동으로 활성화하도록 할 "
 "것입니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:37
+#: ../../docs/tutorials/vr/vr_primer.rst:52
 #, fuzzy
 msgid ""
 "For our mobile VR interface, and any interface where the main input is "
@@ -116,7 +116,7 @@ msgstr ""
 "기에서 완전히 처리된 입체 영상을 출력하지만, 화면에 표시하는 뷰포트는 왜곡되"
 "지 않은 왼쪽 눈 장면을 보여줄 것입니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:39
+#: ../../docs/tutorials/vr/vr_primer.rst:59
 #, fuzzy
 msgid ""
 "Finally, you should only initialize an interface once; switching scenes and "
@@ -132,11 +132,11 @@ msgstr ""
 "는, VR에서는 헤드셋을 비활성화하진 않을 것입니다, 게이머로 하여금 당황할테니"
 "까요."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:42
+#: ../../docs/tutorials/vr/vr_primer.rst:66
 msgid "New AR/VR nodes"
 msgstr "새로운 AR/VR 노드"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:44
+#: ../../docs/tutorials/vr/vr_primer.rst:68
 msgid ""
 "Three new node types have been added for supporting AR and VR in Godot and "
 "one additional node type especially for AR. These are:"
@@ -144,11 +144,11 @@ msgstr ""
 "Godot에서 AR과 VR을 지원하기 위해 세가지 새로운 노드 타입이 추가되었고 AR만"
 "을 위한 추가적인 노드 타입 한 가지가 추가되었습니다. 다음과 같습니다:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:46
+#: ../../docs/tutorials/vr/vr_primer.rst:71
 msgid ":ref:`ARVROrigin <class_ARVROrigin>` - our origin point in the world"
 msgstr ":ref:`ARVROrigin <class_ARVROrigin>` - 월드에서 원점"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:47
+#: ../../docs/tutorials/vr/vr_primer.rst:72
 msgid ""
 ":ref:`ARVRCamera <class_ARVRCamera>` - a special subclass of the camera, "
 "which is positionally tracked"
@@ -156,7 +156,7 @@ msgstr ""
 ":ref:`ARVRCamera <class_ARVRCamera>` - 위치 추적이 가능한 카메라의 특수 하위 "
 "클래스"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:48
+#: ../../docs/tutorials/vr/vr_primer.rst:73
 msgid ""
 ":ref:`ARVRController <class_ARVRController>` - a new spatial class, which "
 "tracks the location of a controller"
@@ -164,7 +164,7 @@ msgstr ""
 ":ref:`ARVRController <class_ARVRController>` - 컨트롤러의 위치를 추적하는 새"
 "로운 Spatial 클래스"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:49
+#: ../../docs/tutorials/vr/vr_primer.rst:74
 msgid ""
 ":ref:`ARVRAnchor <class_ARVRAnchor>` - an anchor point for an AR "
 "implementation mapping a real world location into your virtual world"
@@ -172,7 +172,7 @@ msgstr ""
 ":ref:`ARVRAnchor <class_ARVRAnchor>` - 실제 세상 위치를 가상 세계에 매핑하는 "
 "AR 구현을 위한 기준점"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:51
+#: ../../docs/tutorials/vr/vr_primer.rst:76
 msgid ""
 "The first two must exist in your scene for AR/VR to work and this tutorial "
 "focuses purely on them."
@@ -180,7 +180,7 @@ msgstr ""
 "AR/VR을 위해선 앞의 두 개가 씬에 있어야 하고 이 튜토리얼 역시 이 둘에 초점을 "
 "두고 있습니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:53
+#: ../../docs/tutorials/vr/vr_primer.rst:79
 msgid ""
 ":ref:`ARVROrigin <class_ARVROrigin>` is an important node, you must have one "
 "and only one of these somewhere in your scene. This node maps the center of "
@@ -202,7 +202,7 @@ msgstr ""
 "지만, 원점은 당신이 있는 방의 중심에 있게 됩니다. 물리적으로 방을 돌어다니면 "
 "HMD의 위치는 중심점에 따라 추적하고 이는 가상 세계에 반영됩니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:55
+#: ../../docs/tutorials/vr/vr_primer.rst:89
 msgid ""
 "To keep things simple, when you physically move around your room, the ARVR "
 "Origin point stays where it is, the position of the camera and controllers "
@@ -216,7 +216,7 @@ msgstr ""
 "거나 컨트롤러 조작을 통한 순간이동을 구현할 때, 그 위치에 원점을 조정해야할 "
 "것입니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:58
+#: ../../docs/tutorials/vr/vr_primer.rst:95
 msgid ""
 ":ref:`ARVRCamera <class_ARVRCamera>` is the second node that must always be "
 "a part of your scene and it must always be a child node of your origin node. "
@@ -236,7 +236,7 @@ msgstr ""
 "라의 유일한 속성은 근거리 및 원거리 평면 설정입니다. FOV, 종횡비 그리고 투영 "
 "모드 모두 무시됩니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:60
+#: ../../docs/tutorials/vr/vr_primer.rst:103
 msgid ""
 "Note that, for our native mobile VR implementation, there is no positional "
 "tracking, only the orientation of the phone and by extension, the HMD is "
@@ -247,39 +247,113 @@ msgstr ""
 "만 확장되어, HMD를 추적합니다. 이 구현에서 인위적으로 카메라를 1.85의 높이 "
 "(Y)에 둡니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:62
+#: ../../docs/tutorials/vr/vr_primer.rst:107
 msgid ""
 "Conclusion: your minimum setup in your scene to make AR or VR work should "
 "look like this:"
 msgstr "결론: 씬에서 AR이나 VR 작업을 위한 최소 설정은 다음과 같아야 합니다:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:66
+#: ../../docs/tutorials/vr/vr_primer.rst:111
+#, fuzzy
 msgid ""
-"And that's all you need to get started. Obviously, you need to add something "
-"more into your scene, so there is something to see, but after that, you can "
-"export the game to your phone of choice, pop it into a viewer and away you "
-"go."
+"And that's all you need to get started with the native mobile interface. "
+"Obviously, you need to add something more into your scene, so there is "
+"something to see, but after that, you can export the game to your phone of "
+"choice, pop it into a viewer and away you go."
 msgstr ""
 "그리고 여기까지가 시작하는데 필요한 것입니다. 분명히, 씬에 무언가를 추가해야"
 "할 것입니다, 그래야 볼거리가 있으니까요, 하지만 그 후, 게임을 선택한 폰에 내"
 "보내고 뷰어에 나타나게 하거나 멀어지게 할 수 있습니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:69
+#: ../../docs/tutorials/vr/vr_primer.rst:116
+#, fuzzy
+msgid "Official plugins and resources"
+msgstr "노드와 리소스"
+
+#: ../../docs/tutorials/vr/vr_primer.rst:118
+msgid ""
+"As mentioned earlier, Godot does not support the various VR and AR SDKs out "
+"of the box, you need a plugin for the specific SDK you want to use. There "
+"are several official plugins available in the `GodotVR Repository <https://"
+"github.com/GodotVR>`_."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:122
+msgid ""
+"`Godot Oculus Mobile <https://github.com/GodotVR/godot_oculus_mobile>`_ "
+"provides support for the Oculus Go and Oculus Quest. The Quest will require "
+"additional setup documented `here <doc_developing_for_oculus_quest>`_."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:124
+msgid ""
+"`Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (not to be "
+"confused with OpenXR) supports the OpenVR SDK used by Steam."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:126
+msgid ""
+"`Godot Oculus <https://github.com/GodotVR/godot_oculus>`_ supports the "
+"Oculus SDK (desktop headsets only)."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:128
+msgid ""
+"`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ supports "
+"OpenHMD, an open source API and drivers for headsets."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:130
+msgid ""
+"`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ supports OpenXR, "
+"an open standard for VR and AR software. This plugin is early in "
+"development, only supports Linux and requires extra setup described in the "
+"repository."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:134
+msgid "These plugins can be downloaded from GitHub or the Godot Asset Library."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:136
+msgid "In addition to the plugins, there are several official demos."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:138
+#, fuzzy
+msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
+msgstr ""
+"`godot-cpp 저장소 <https://github.com/GodotNativeTools/godot-cpp>`_ 의 사본."
+
+#: ../../docs/tutorials/vr/vr_primer.rst:139
+msgid ""
+"`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (the "
+"tutorial for this project is `here <doc_vr_starter_tutorial_part_one>`_)"
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:141
+msgid ""
+"`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, which shows "
+"implementations for VR features such as movement and picking up objects."
+msgstr ""
+
+#: ../../docs/tutorials/vr/vr_primer.rst:145
 msgid "Other things to consider"
 msgstr "고려해야 할 다른 사항"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:71
+#: ../../docs/tutorials/vr/vr_primer.rst:147
 msgid ""
 "There are a few other subjects that we need to briefly touch upon in this "
 "primer that are important to know."
 msgstr ""
 "이 입문서도 알아두면 좋지만, 이를 넘어 간략하게 볼 몇 가지 사항이 있습니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:73
+#: ../../docs/tutorials/vr/vr_primer.rst:150
+#, fuzzy
 msgid ""
 "The first are our units. In normal 3D games, you don't have to think a lot "
 "about units. As long as everything is at the same scale, a box sized 1 unit "
-"by 1 unit by 1 unit can be any size from a cube you can hold in your hand to "
+"by 1 unit by 1 unit can be any size from a cub you can hold in your hand to "
 "something the size of a building. In AR and VR, this changes because things "
 "in your virtual world are mapped to things in the real world. If you step 1 "
 "meter forward in the real world, but you only move 1 cm forward in your "
@@ -302,7 +376,7 @@ msgstr ""
 "는데, 이는 ARVROrigin 노드에서 world scale이란 이름으로 나타나 있습니다. 예"
 "를 들어, 속성 값을 10으로 설정하면 시스템은 10 단위 = 1미터로 인지합니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:77
+#: ../../docs/tutorials/vr/vr_primer.rst:161
 #, fuzzy
 msgid ""
 "Performance is another thing that needs to be carefully considered. "
@@ -314,7 +388,7 @@ msgstr ""
 "의 생각보다 게임에 많은 자원을 잡아 먹습니다. 모바일 VR의 경우, 더욱 주의해야"
 "합니다, 하지만 데스크톱 게임이라도, 세 가지 요인이 작업을 더욱 어렵게 합니다:"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:79
+#: ../../docs/tutorials/vr/vr_primer.rst:165
 msgid ""
 "You are rendering stereoscopic, two for the price of one. While not exactly "
 "doubling the work load and with things in the pipeline such as supporting "
@@ -326,7 +400,7 @@ msgstr ""
 "거나 파이프라인에있는 작업을 두 배로 늘리지는 않더라도, 두 눈을 위한 렌더링 "
 "이미지로 추가 작업 부하가 있습니다"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:80
+#: ../../docs/tutorials/vr/vr_primer.rst:168
 msgid ""
 "A normal game will run acceptably on 30fps and ideally manages 60fps. That "
 "gives you a big range to play with between lower end and higher end "
@@ -340,7 +414,7 @@ msgstr ""
 "시 게임이 안정적인 90fps로 실행되어 사용자가 즉시 멀미를 느끼지 않도록 해야 "
 "합니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:81
+#: ../../docs/tutorials/vr/vr_primer.rst:172
 msgid ""
 "The high FOV and related lens distortion effect require many VR experiences "
 "to render at double the resolution. Yes a VIVE may only have a resolution of "
@@ -352,7 +426,7 @@ msgstr ""
 "에 2160x2400의 결과로 렌더링합니다. 이는 대부분의 AR 애플리케이션에서 문제가 "
 "되지 않습니다."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:83
+#: ../../docs/tutorials/vr/vr_primer.rst:176
 msgid ""
 "All in all, the workload your GPU has in comparison with a normal 3D game is "
 "a fair amount higher. While things are in the pipeline to improve this, such "

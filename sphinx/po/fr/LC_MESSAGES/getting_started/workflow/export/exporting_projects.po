@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -231,21 +231,16 @@ msgstr ""
 "et crée ensuite le paquet. Il existe 3 modes différents pour l'exportation :"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
-#, fuzzy
 msgid "Export all resources in the project"
-msgstr "Exporter chaque fichier situé dans le projet"
+msgstr "Exporter toutes les ressources du projet"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
-#, fuzzy
 msgid "Export selected scenes (and dependencies)"
-msgstr ""
-"Exporter uniquement les ressources sélectionnées (+ filtre personnalisé)"
+msgstr "Exporter les scènes sélectionnées (y compris les dépendances)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
-#, fuzzy
 msgid "Export selected resources (and dependencies)"
-msgstr ""
-"Exporter uniquement les ressources sélectionnées (+ filtre personnalisé)"
+msgstr "Exporter les ressources sélectionnées (y compris les dépendances)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
 msgid ""
@@ -254,6 +249,11 @@ msgid ""
 "you a list of the scenes or resources in the project, and you have to select "
 "every scene or resource you want to export."
 msgstr ""
+"**Exporter toutes les ressources du projet** exportera toutes les ressources "
+"du projet. **Exporter les scènes sélectionnées** et **Exporter les "
+"ressources sélectionnées** vous donne une liste des scènes ou des ressources "
+"du projet, et vous devez sélectionner chaque scène ou ressource que vous "
+"souhaitez exporter."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:124
 msgid "Exporting from the command line"

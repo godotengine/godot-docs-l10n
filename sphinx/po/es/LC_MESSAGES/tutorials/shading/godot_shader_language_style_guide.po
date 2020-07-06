@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,17 +22,16 @@ msgid "Godot shader language style guide"
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:6
-#, fuzzy
 msgid ""
 "This style guide lists conventions to write elegant shaders. The goal is to "
 "encourage writing clean, readable code and promote consistency across "
 "projects, discussions, and tutorials. Hopefully, this will also support the "
 "development of auto-formatting tools."
 msgstr ""
-"Esta guía enumera las convenciones para escribir un GDscript elegante. La "
-"meta es motivar la escritura de un código limpio y legible, y promover la "
-"consistencia entre proyectos, discusiones y tutoriales. Esperamos que esto "
-"también motive al desarrollo de herramientas de autoformateo."
+"Esta guía enumera las convenciones para escribir shaders elegantes. La meta "
+"es motivar la escritura de un código limpio y legible, y promover la "
+"consistencia entre proyectos, discusiones y tutoriales. Esto también puede "
+"ayudar al desarrollo de herramientas de autoformateo."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:11
 msgid ""
@@ -62,18 +61,17 @@ msgstr ""
 "los de tu equipo es más importante que seguir esta guía al pié de la letra."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:23
-#, fuzzy
 msgid ""
 "Godot's built-in shader editor uses a lot of these conventions by default. "
 "Let it help you."
 msgstr ""
-"El editor de scripts de Godot usa muchas de estas convenciones por defecto. "
-"Deja que te ayude."
+"El editor integrado de shaders de Godot usa muchas de estas convenciones por "
+"defecto. Deja que te ayude."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:26
-#, fuzzy
 msgid "Here is a complete shader example based on these guidelines:"
-msgstr "He aquí un ejemplo simple de su funcionamiento:"
+msgstr ""
+"Aquí hay un ejemplo completo de shader basado en estas guías de estilo:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:50
 msgid "Formatting"
@@ -116,11 +114,11 @@ msgid "Indentation"
 msgstr "Indentación"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:63
-#, fuzzy
 msgid ""
 "Each indent level should be one tab greater than the block containing it."
 msgstr ""
-"Cada nivel de la Indentación deberá uno mayor que el bloque que lo contiene."
+"Cada nivel de indentación deberá ser una tabulación mayor que el bloque que "
+"la contiene."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:65
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:84
@@ -181,12 +179,12 @@ msgid "Surround function definitions with one (and only one) blank line:"
 msgstr "Envuelva sus funciones y definiciones de clases por una linea vacía :"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:146
-#, fuzzy
 msgid ""
 "Use one (and only one) blank line inside functions to separate logical "
 "sections."
 msgstr ""
-"use una linea blanca dentro de las funciones para separar secciones lógicas."
+"Utiliza una (y sólo una) linea vacía dentro de las funciones para separar "
+"secciones lógicas."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:149
 msgid "Line length"
@@ -245,23 +243,20 @@ msgid "Whitespace"
 msgstr "Espacio en blanco"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:223
-#, fuzzy
 msgid ""
 "Always use one space around operators and after commas. Also, avoid "
 "extraneous spaces in function calls."
 msgstr ""
 "Utiliza siempre un espacio entre los operadores y después de las comas. "
-"Evita los espacios adicionales en las referencias de los diccionarios y las "
-"llamadas de función, o para crear \"columnas\"."
+"Evita los espacios adicionales en las llamadas a funciones."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:242
 msgid "Don't use spaces to align expressions vertically:"
 msgstr "No uses espacios para alinear la verticalidad de las expresiones:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:250
-#, fuzzy
 msgid "Floating-point numbers"
-msgstr "Número de coma flotante (real)"
+msgstr "Números de coma flotante"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:252
 msgid ""
@@ -271,9 +266,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:273
-#, fuzzy
 msgid "Accessing vector members"
-msgstr "Añadir vectores"
+msgstr "Accediendo a miembros de vectores"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:275
 msgid ""

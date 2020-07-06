@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,7 +143,6 @@ msgstr ""
 "activée (c'est le cas par défaut)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:49
-#, fuzzy
 msgid ""
 "**Expand**: Attempts to use as much space as possible in the parent "
 "container (in each axis). Controls that don't expand will be pushed away by "
@@ -151,8 +150,8 @@ msgid ""
 "from each other is determined by the *Ratio* (see below)."
 msgstr ""
 "**Expand** : Tente d'utiliser le plus d'espace possible dans le conteneur "
-"parent (dans chaque axe). Les *Controls* qui ne s'étendent pas seront "
-"repoussées par ceux qui le font. Pour ceux qui s'étendent, l'espace qu'ils "
+"parent (dans chaque axe). Les Controls qui ne s'étendent pas seront "
+"repoussées par ceux qui le font. Entre ceux qui s'étendent, l'espace qu'ils "
 "prendront par rapport aux autres est déterminé par le *Ratio* (voir ci-"
 "dessous)."
 
@@ -247,14 +246,13 @@ msgstr ""
 "les marges en fonction de la configuration du thème."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:92
-#, fuzzy
 msgid ""
 "Again, keep in mind that the margins are a *Theme* value, so they need to be "
 "edited from the constants overrides section of each control:"
 msgstr ""
-"Encore une fois, gardez à l'esprit que les marges sont une valeur *Theme*, "
-"donc elles doivent être éditées dans la section de réécriture des constantes "
-"si vous le souhaitez pour un control unique :"
+"Encore une fois, gardez à l'esprit que les marges sont une valeur de "
+"*Theme*, donc elles doivent être éditées dans la section de réécriture des "
+"constantes de chaque Control :"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:98
 msgid "Tab Container"

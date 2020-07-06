@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -241,13 +241,16 @@ msgstr ""
 "トし、順序に対応した検索アルゴリズムを作成することで完了します。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
+#, fuzzy
 msgid ""
 "Godot implements Dictionary as an ``OrderedHashMap<Variant, Variant>``. The "
-"engine stores a giant array (initialized to 1000 records) of key-value "
+"engine stores a small array (initialized to 2^3 or 8 records) of key-value "
 "pairs. When one attempts to access a value, they provide it a key. It then "
-"*hashes* the key, i.e. converts it into a number. The \"hash\" becomes the "
-"index into the array, giving the OHM a quick lookup for the value within the "
-"conceptual \"table\" of keys mapped to values."
+"*hashes* the key, i.e. converts it into a number. The \"hash\" is used to "
+"calculate the index into the array. As an array, the OHM then has a quick "
+"lookup within the \"table\" of keys mapped to values. When the HashMap "
+"becomes too full, it increases to the next power of 2 (so, 16 records, then "
+"32, etc.) and rebuilds the structure."
 msgstr ""
 "Godotは、Dictionaryを ``OrderedHashMap<Variant, Variant>``として実装します。"
 "エンジンは、キーと値のペアの巨大な配列(1000レコードに初期化された)を保存しま"
@@ -256,7 +259,7 @@ msgstr ""
 "デックスになり、OHM(訳注:オブジェクト・ハンドル・マネージャー？)は値にマップ"
 "されたキーの概念的な「テーブル」内の値をすばやく検索できます。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:112
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:113
 msgid ""
 "Hashes are to reduce the chance of a key collision. If one occurs, the table "
 "must recalculate another index for the value that takes the previous "
@@ -268,11 +271,11 @@ msgstr ""
 "より、メモリと若干の運用効率が犠牲になりますが、全体として、すべてのレコード"
 "に定数時間でアクセスできます。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:117
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:118
 msgid "Hashing every key an arbitrary number of times."
 msgstr "すべてのキーを任意の回数ハッシュします。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:119
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:120
 msgid ""
 "Hash operations are constant-time, so even if an algorithm must do more than "
 "one, as long as the number of hash calculations doesn't become too dependent "
@@ -282,21 +285,19 @@ msgstr ""
 "ぎない限り、アルゴリズムで複数の処理を行う必要がある場合でも、処理は高速にな"
 "ります。話は続きます..."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:124
-msgid "Maintaining a huge size for the table."
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:125
+#, fuzzy
+msgid "Maintaining an ever-growing size for the table."
 msgstr "巨大なサイズのテーブルを保持します。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:126
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:127
 msgid ""
-"The reason it starts with 1000 records, and the reason it forces large gaps "
-"of unused memory interspersed in the table is to minimize hash collisions "
-"and maintain the speed of the accesses."
+"HashMaps maintain gaps of unused memory interspersed in the table on purpose "
+"to reduce hash collisions and maintain the speed of accesses. This is why it "
+"constantly increases in size quadratically by powers of 2."
 msgstr ""
-"1000個のレコードから始まり、テーブルに散在する未使用メモリの大きなギャップを"
-"強制する理由は、ハッシュの衝突を最小限に抑え、アクセスの速度を維持するためで"
-"す。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:130
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:132
 #, fuzzy
 msgid ""
 "As one might be able to tell, Dictionaries specialize in tasks that Arrays "
@@ -305,11 +306,11 @@ msgstr ""
 "おわかりになると思いますが、Dictionaryは配列ではないタスクに特化しています。"
 "運用の詳細の概要は次のとおりです。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:133
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
 msgid "**Iterate:** Fast."
 msgstr "**反復処理:** 高速。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:137
 msgid ""
 "Op: Iterate over the map's internal vector of hashes. Return each key. "
 "Afterwards, users then use the key to jump to and return the desired value."
@@ -317,11 +318,11 @@ msgstr ""
 "処理: マップのハッシュの内部ベクトルを反復処理し、各キーを返します。その後、"
 "ユーザーはキーを使用して目的の値にジャンプしてリターンします。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:139
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
 msgid "**Insert, Erase, Move:** Fastest."
 msgstr "**挿入、消去、移動:** 最速。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:143
 msgid ""
 "Op: Hash the given key. Do 1 addition operation to look up the appropriate "
 "value (array start + offset). Move is two of these (one insert, one erase). "
@@ -331,17 +332,17 @@ msgstr ""
 "の開始+オフセット)を検索します。移動はこれらの2つです(1つは挿入、1つは消去)。"
 "マップは、その機能を維持するためにいくつかのメンテナンスを行う必要があります:"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:146
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
 msgid "update ordered List of records."
 msgstr "レコードの順序付きリストを更新します。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
 msgid "determine if table density mandates a need to expand table capacity."
 msgstr ""
 "テーブルの密度により、テーブルの容量を拡張する必要があるかどうかを判断しま"
 "す。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:152
 msgid ""
 "The Dictionary remembers in what order users inserted its keys. This enables "
 "it to execute reliable iterations."
@@ -349,26 +350,26 @@ msgstr ""
 "Dictionaryは、ユーザーがキーを挿入した順序を記憶しています。これにより、信頼"
 "性の高い反復処理を実行できます。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:153
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
 msgid "**Get, Set:** Fastest. Same as a lookup *by key*."
 msgstr "**取得、設定:** 最速。\\ *キーによる検索*\\ と同じです。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
 msgid "Op: Same as insert/erase/move."
 msgstr "処理: 挿入/消去/移動と同じです。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
 msgid "**Find:** Slowest. Identifies the key of a value."
 msgstr "**検索:** 最も遅い。値のキーを識別します。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:161
 msgid ""
 "Op: Must iterate through records and compare the value until a match is "
 "found."
 msgstr ""
 "処理: レコードを反復処理し、一致が見つかるまで値を比較する必要があります。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:162
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:164
 msgid ""
 "Note that Godot does not provide this feature out-of-the-box (because they "
 "aren't meant for this task)."
@@ -376,7 +377,7 @@ msgstr ""
 "Godotはすぐにはこの機能を提供しないことに注意してください(これらの機能はこの"
 "タスク用ではないため)。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:165
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:167
 msgid ""
 "Godot implements Objects as stupid, but dynamic containers of data content. "
 "Objects query data sources when posed questions. For example, to answer the "
@@ -393,7 +394,7 @@ msgstr ""
 "オブジェクトとは何か、そしてそれらがどのように機能するかについての詳細を見つ"
 "けることができます。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:172
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:174
 msgid ""
 "The important detail here is the complexity of the Object's task. Every time "
 "it performs one of these multi-source queries, it runs through *several* "
@@ -414,7 +415,7 @@ msgstr ""
 "データを検索するための Array/Dictionary 両方の代替手段よりも遅くなる理由で"
 "す。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:184
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:186
 msgid ""
 "When developers mention how slow the scripting API is, it is this chain of "
 "queries they refer to. Compared to compiled C++ code where the application "
@@ -428,14 +429,14 @@ msgstr ""
 "とは避けられません。アクセスを行う前に、関連するデータのソースを見つける必要"
 "があるからです。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:190
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:192
 msgid ""
 "The reason GDScript is slow is because every operation it performs passes "
 "through this system."
 msgstr ""
 "GDScriptが遅いのは、実行するすべての操作がこのシステムを通過するためです。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:193
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:195
 msgid ""
 "C# can process some content at higher speeds via more optimized bytecode. "
 "But, if the C# script calls into an engine class' content or if the script "
@@ -446,7 +447,7 @@ msgstr ""
 "はスクリプトが外部の何かにアクセスしようとする場合、このパイプラインを通過し"
 "ます。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:198
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:200
 msgid ""
 "NativeScript C++ goes even further and keeps everything internal by default. "
 "Calls into external structures will go through the scripting API. In "
@@ -459,7 +460,7 @@ msgstr ""
 "トAPIに公開するメソッドを登録するのは手動のタスクです。この時点で、外部の非C+"
 "+クラスがAPIを使用してそれらを見つけます。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:204
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:206
 msgid ""
 "So, assuming one extends from Reference to create a data structure, like an "
 "Array or Dictionary, why choose an Object over the other two options?"
@@ -468,7 +469,7 @@ msgstr ""
 "すると仮定すると、なぜ他の2つのオプションよりも Object を選択するのでしょう"
 "か？"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:207
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:209
 msgid ""
 "**Control:** With objects comes the ability to create more sophisticated "
 "structures. One can layer abstractions over the data to ensure the external "
@@ -480,7 +481,7 @@ msgstr ""
 "いようにすることができます。さらに、Object はシグナルを持ち、反応的な動作を可"
 "能にします。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:212
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:214
 msgid ""
 "**Clarity:** Objects are a reliable data source when it comes to the data "
 "that scripts and engine classes define for them. Properties may not hold the "
@@ -491,7 +492,7 @@ msgstr ""
 "頼できるデータソースです。プロパティは期待する値を保持していない場合がありま"
 "すが、プロパティがそもそも存在するかどうかを心配する必要はありません。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:217
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:219
 msgid ""
 "**Convenience:** If one already has a similar data structure in mind, then "
 "extending from an existing class makes the task of building the data "
@@ -502,7 +503,7 @@ msgstr ""
 "張すると、データ構造を構築するタスクがはるかに簡単になります。それに比べて、"
 "Array と Dictionary はすべてのユースケースを満たしているわけではありません。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:222
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:224
 msgid ""
 "Objects also give users the opportunity to create even more specialized data "
 "structures. With it, one can design their own List, Binary Search Tree, "
@@ -512,7 +513,7 @@ msgstr ""
 "きます。これを使用して、独自のリスト、バイナリ検索ツリー、ヒープ、スプレー"
 "木、グラフ、素集合、およびその他のオプションのホストを設計できます。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:226
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:228
 msgid ""
 "\"Why not use Node for tree structures?\" one might ask. Well, the Node "
 "class contains things that won't be relevant to one's custom data structure. "
@@ -523,7 +524,7 @@ msgstr ""
 "クラスには、カスタムデータ構造に関係のないものが含まれています。そのため、ツ"
 "リー構造を構築するときに、独自のノードタイプを構築すると役立ちます。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:270
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:272
 msgid ""
 "From here, one can then create their own structures with specific features, "
 "limited only by their imagination."
@@ -531,11 +532,11 @@ msgstr ""
 "ここから、想像力によってのみ制限される特定の機能を備えた独自の構造を作成でき"
 "ます。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:274
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
 msgid "Enumerations: int vs. string"
 msgstr "列挙型: int 対 string"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:278
 #, fuzzy
 msgid ""
 "Most languages offer an enumeration type option. GDScript is no different, "
@@ -547,7 +548,7 @@ msgstr ""
 "ほとんどの言語とは異なり、整数値または文字列を列挙値に使用できます。 そのた"
 "め、このように思うはずです「どちらを使うべきか？」"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:281
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:283
 msgid ""
 "The short answer is, \"whichever you are more comfortable with.\" This is a "
 "feature specific to GDScript and not Godot scripting in general; The "
@@ -557,7 +558,7 @@ msgstr ""
 "リプトにはない、GDScript固有の機能です。この言語はパフォーマンスよりも使いや"
 "すさを優先しています。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:285
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:287
 msgid ""
 "On a technical level, integer comparisons (constant-time) will happen faster "
 "than string comparisons (linear-time). If one wants to keep up other "
@@ -567,7 +568,7 @@ msgstr ""
 "速に行われます。しかし、他の言語の規則を維持したい場合は、整数を使用する必要"
 "があります。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:289
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:291
 msgid ""
 "The primary issue with using integers comes up when one wants to *print* an "
 "enum value. As integers, attempting to print MY_ENUM will print ``5`` or "
@@ -580,7 +581,7 @@ msgstr ""
 "く、``5`` などが出力されます。整数の列挙型を出力するには、各列挙型に対応する"
 "文字列値をマップする辞書(Dictionary)を作成する必要があります。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:295
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:297
 msgid ""
 "If the primary purpose of using an enum is for printing values and one "
 "wishes to group them together as related concepts, then it makes sense to "
@@ -591,12 +592,12 @@ msgstr ""
 "グループ化する場合、それらを文字列として使用することは理にかなっています。そ"
 "うすれば、印刷で実行するための別個のデータ構造は不要です。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:301
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
 msgid ""
 "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 msgstr "AnimatedTexture 対 AnimatedSprite 対 AnimationPlayer 対 AnimationTree"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:305
 msgid ""
 "Under what circumstances should one use each of Godot's animation classes? "
 "The answer may not be immediately clear to new Godot users."
@@ -604,7 +605,7 @@ msgstr ""
 "どのような状況でGodotの各アニメーションクラスを使用する必要がありますか？ 答"
 "えは、新しいGodotユーザーにはすぐにはわからないかもしれません。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:306
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:308
 msgid ""
 ":ref:`AnimatedTexture <class_AnimatedTexture>` is a texture that the engine "
 "draws as an animated loop rather than a static image. Users can manipulate..."
@@ -613,15 +614,15 @@ msgstr ""
 "なくアニメーション ループとして描画するテクスチャです。ユーザーは次の操作がで"
 "きます..."
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:310
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
 msgid "the rate at which it moves across each section of the texture (fps)."
 msgstr "テクスチャの各セクションを移行する速度(fps)。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:312
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
 msgid "the number of regions contained within the texture (frames)."
 msgstr "テクスチャに含まれる領域の数(フレーム数)。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:314
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:316
 msgid ""
 "Godot's :ref:`VisualServer <class_VisualServer>` then draws the regions in "
 "sequence at the prescribed rate. The good news is that this involves no "
@@ -632,7 +633,7 @@ msgstr ""
 "順番に描画します。良いニュースは、これはエンジンの部分に余分なロジックを含み"
 "ないことです。悪いニュースは、ユーザーがほとんど制御できないことです。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:319
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:321
 msgid ""
 "Also note that AnimatedTexture is a :ref:`Resource <class_Resource>` unlike "
 "the other :ref:`Node <class_Node>` objects discussed here. One might create "
@@ -650,7 +651,7 @@ msgstr ""
 "バッチ描画呼び出しですべてをレンダリングできる、多くの自動アニメーション背景"
 "を作成できます。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:327
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:329
 msgid ""
 "The AnimatedSprite node, in combination with the :ref:`SpriteFrames "
 "<class_SpriteFrames>` resource, allows one to create a variety of animation "
@@ -663,7 +664,7 @@ msgstr ""
 "成し、アニメーションの反復、速度、領域のオフセット、および方向を制御できま"
 "す。これにより、2Dフレームベースのアニメーションの制御に適しています。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:333
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:335
 msgid ""
 "If one needs trigger other effects in relation to animation changes (for "
 "example, create particle effects, call functions, or manipulate other "
@@ -676,7 +677,7 @@ msgstr ""
 "ション以外の他の周辺要素の操作など)、AnimatedSprite と組み合わせて :ref:"
 "`AnimationPlayer <class_AnimationPlayer>` ノードを使用する必要があります。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:339
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:341
 msgid ""
 "AnimationPlayers are also the tool one will need to use if they wish to "
 "design more complex 2D animation systems, such as..."
@@ -684,12 +685,12 @@ msgstr ""
 "AnimationPlayer は、次のようなより複雑な2Dアニメーションシステムを設計する場"
 "合に使用する必要があるツールでもあります。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:342
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
 msgid "**Cut-Out animations:** editing sprites' transforms at runtime."
 msgstr ""
 "**カットアウトアニメーション:** 実行時にスプライトの幾何学変換を編集します。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:344
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:346
 msgid ""
 "**2D Mesh animations:** defining a region for the sprite's texture and "
 "rigging a skeleton to it. Then one animates the bones which stretch and bend "
@@ -699,11 +700,11 @@ msgstr ""
 "ンをリギングします。次に、ボーンのアニメーション化を行い、ボーンの相互関係に"
 "応じてテクスチャを伸縮させます。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:349
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
 msgid "A mix of the above."
 msgstr "上記のミックス。"
 
-#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:351
+#: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:353
 msgid ""
 "While one needs an AnimationPlayer to design each of the individual "
 "animation sequences for a game, it can also be useful to combine animations "

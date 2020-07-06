@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,12 +84,13 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_streams.rst:32
 #, fuzzy
 msgid ""
-"Keep in mind Ogg Vorbis files don't contain looping information. If looping "
-"an Ogg Vorbis file is desired, it must be set up using the import options:"
+"Keep in mind that while WAV files may contain looping information in their "
+"metadata, Ogg Vorbis files do not. If looping an Ogg Vorbis file is desired, "
+"it must be set up using the import options:"
 msgstr ""
 "请记住.wav和.ogg通常不包含循环信息，因此必须在每个的导入选项上设置此信息:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:37
+#: ../../docs/tutorials/audio/audio_streams.rst:38
 #, fuzzy
 msgid ""
 "There are other types of AudioStreamPlayer, such as AudioStreamRandomPitch. "
@@ -101,11 +102,11 @@ msgstr ""
 "AudioStream，并在每次随机播放时调整音高(对于某些音效非常有用)，并且将来还会出"
 "现更多音频。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:43
+#: ../../docs/tutorials/audio/audio_streams.rst:44
 msgid "AudioStreamPlayer"
 msgstr "AudioStreamPlayer"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:45
+#: ../../docs/tutorials/audio/audio_streams.rst:46
 #, fuzzy
 msgid ""
 "This is the standard, non-positional stream player. It can play to any bus. "
@@ -114,11 +115,11 @@ msgstr ""
 "这是标准的流播放器，它可以播放任何给定的总线。 在5.1声音中，它可以发送到立体"
 "声混音或前置扬声器。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:49
+#: ../../docs/tutorials/audio/audio_streams.rst:50
 msgid "AudioStreamPlayer2D"
 msgstr "AudioStreamPlayer2D"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:51
+#: ../../docs/tutorials/audio/audio_streams.rst:52
 #, fuzzy
 msgid ""
 "This is a variant of AudioStreamPlayer, but emits sound in a 2D positional "
@@ -128,7 +129,7 @@ msgstr ""
 "这是AudioStreamPlayer的变体，但在2D位置环境中发出声音。 当靠近屏幕左侧时，平"
 "移将向左移动。 当靠近右侧时，它会向右移动."
 
-#: ../../docs/tutorials/audio/audio_streams.rst:57
+#: ../../docs/tutorials/audio/audio_streams.rst:58
 msgid ""
 "Area2Ds can be used to divert sound from any AudioStreamPlayer2Ds they "
 "contain to specific buses. This makes it possible to create buses with "
@@ -139,11 +140,11 @@ msgstr ""
 "得创建具有不同混响或声音质量的总线成为可能，以处理在游戏世界的特定部分发生的"
 "动作。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:65
+#: ../../docs/tutorials/audio/audio_streams.rst:66
 msgid "AudioStreamPlayer3D"
 msgstr "AudioStreamPlayer3D"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:67
+#: ../../docs/tutorials/audio/audio_streams.rst:68
 #, fuzzy
 msgid ""
 "This is a variant of AudioStreamPlayer, but emits sound in a 3D positional "
@@ -154,22 +155,22 @@ msgstr ""
 "这是AudioStreamPlayer的变体，但在3D位置环境中发出声音。 根据播放器相对于屏幕"
 "的位置，它可以根据所选的音频设置将声音定位在立体声，5.1或7.1中。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:71
+#: ../../docs/tutorials/audio/audio_streams.rst:72
 msgid ""
 "Similar to AudioStreamPlayer2D, an Area can divert the sound to an audio bus."
 msgstr "与AudioStreamPlayer2D类似，Area可以将声音转移到音频总线。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:75
+#: ../../docs/tutorials/audio/audio_streams.rst:76
 msgid ""
 "Unlike for 2D, the 3D version of AudioStreamPlayer has a few more advanced "
 "options:"
 msgstr "与2D不同，AudioStreamPlayer的3D版本有一些更高级的选项:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:80
+#: ../../docs/tutorials/audio/audio_streams.rst:81
 msgid "Reverb buses"
 msgstr "混响总线"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:82
+#: ../../docs/tutorials/audio/audio_streams.rst:83
 #, fuzzy
 msgid ""
 "Godot allows for 3D audio streams that enter a specific Area node to send "
@@ -181,7 +182,7 @@ msgstr ""
 "型的房间设置多个混响配置时，这非常有用。 这是通过在 *Area* 属性的 *Reverb "
 "Bus* 部分中启用此类混响来完成的:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:89
+#: ../../docs/tutorials/audio/audio_streams.rst:90
 #, fuzzy
 msgid ""
 "At the same time, a special bus layout is created where each area receives "
@@ -191,7 +192,7 @@ msgstr ""
 "同时，创建一个特殊的总线布局，每个区域从每个区域接收混响信息。 当然，必须在该"
 "总线中创建实际的混响效果才能发生任何事情:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:95
+#: ../../docs/tutorials/audio/audio_streams.rst:96
 #, fuzzy
 msgid ""
 "The Area's **Reverb Bus** section also has a parameter named **Uniformity**. "
@@ -204,11 +205,11 @@ msgstr ""
 "类型的房间反弹声音更多(例如，典型的仓库)，因此即使光源很远，也可以在房间内几"
 "乎均匀地听到混响。 使用此参数可以模拟该效果。"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:102
+#: ../../docs/tutorials/audio/audio_streams.rst:103
 msgid "Doppler"
 msgstr "多普勒"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:104
+#: ../../docs/tutorials/audio/audio_streams.rst:105
 #, fuzzy
 msgid ""
 "When the relative velocity between an emitter and listener changes, this is "
@@ -220,7 +221,7 @@ msgstr ""
 "可以跟踪 * AudioStreamPlayer3D* 或 *Camera* 的速度变化。 两者都有此属性，必须"
 "手动启用:"
 
-#: ../../docs/tutorials/audio/audio_streams.rst:111
+#: ../../docs/tutorials/audio/audio_streams.rst:112
 msgid ""
 "Enable it by setting it depending on how objects will be moved: use **Idle** "
 "for objects moved using ``_process``, or **Physics** for objects moved using "

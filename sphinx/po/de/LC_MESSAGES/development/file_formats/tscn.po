@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:2
 msgid "TSCN file format"
-msgstr ""
+msgstr "TSCN Dateiformat"
 
 #: ../../docs/development/file_formats/tscn.rst:4
 msgid ""
@@ -36,6 +36,9 @@ msgid ""
 "but is used to indicate to Godot that the file has been exported from "
 "another program and should not be edited by the user from within Godot."
 msgstr ""
+"Das ESCN (Exported Scene) Dateiformat ist zum TSCN Dateiformat identisch, "
+"zeigt Godot aber, dass diese Datei von einem anderen Programm exportiert "
+"wurde und vom Nutzer innerhalb Godots nicht editiert werden sollte."
 
 #: ../../docs/development/file_formats/tscn.rst:14
 msgid ""
@@ -51,21 +54,21 @@ msgstr "Dateistruktur"
 
 #: ../../docs/development/file_formats/tscn.rst:21
 msgid "There are five main sections inside the TSCN file:"
-msgstr ""
+msgstr "Es gibt 5 Hauptblöcke innerhalb der TSCN Datei:"
 
 #: ../../docs/development/file_formats/tscn.rst:23
 msgid "File Descriptor"
-msgstr ""
+msgstr "Datei Beschreiber"
 
 #: ../../docs/development/file_formats/tscn.rst:24
 #: ../../docs/development/file_formats/tscn.rst:273
 msgid "External resources"
-msgstr ""
+msgstr "Externe Quellen"
 
 #: ../../docs/development/file_formats/tscn.rst:25
 #: ../../docs/development/file_formats/tscn.rst:295
 msgid "Internal resources"
-msgstr ""
+msgstr "Interne Quellen"
 
 #: ../../docs/development/file_formats/tscn.rst:26
 msgid "Nodes"
@@ -73,7 +76,7 @@ msgstr "Nodes (\"Knoten\")"
 
 #: ../../docs/development/file_formats/tscn.rst:27
 msgid "Connections"
-msgstr ""
+msgstr "Verbindungen"
 
 #: ../../docs/development/file_formats/tscn.rst:29
 msgid ""
@@ -100,7 +103,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:43
 msgid "Entries inside the file"
-msgstr ""
+msgstr "Einträge innerhalb der Datei"
 
 #: ../../docs/development/file_formats/tscn.rst:45
 msgid ""
@@ -134,7 +137,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:65
 msgid "The scene tree"
-msgstr ""
+msgstr "Der Szenenbaum"
 
 #: ../../docs/development/file_formats/tscn.rst:67
 msgid ""
@@ -142,23 +145,25 @@ msgid ""
 "its name, parent and (most of the time) a type. For example ``[node type="
 "\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 msgstr ""
+"Der Szenenbaum besteht aus... Nodes! Der Kopf jedes Nodes besteht aus seinem "
+"Namen, Eltern und (meistens) einem Typ. Zum Beispiel ``[node type=\"Camera\" "
+"name=\"PlayerCamera\" parent=\"Player/Head\"]``"
 
 #: ../../docs/development/file_formats/tscn.rst:71
 msgid "Other valid keywords include:"
-msgstr ""
+msgstr "Andere gültige Schlüsselwörter beinhalten:"
 
 #: ../../docs/development/file_formats/tscn.rst:73
-#, fuzzy
 msgid "``instance``"
-msgstr "``in``"
+msgstr "``instance``"
 
 #: ../../docs/development/file_formats/tscn.rst:74
 msgid "``instance_placeholder``"
-msgstr ""
+msgstr "``instance_Platzhalter``"
 
 #: ../../docs/development/file_formats/tscn.rst:75
 msgid "``owner``"
-msgstr ""
+msgstr "``Eigentümer``"
 
 #: ../../docs/development/file_formats/tscn.rst:76
 msgid "``index`` (if two nodes have the same name)"
@@ -332,10 +337,13 @@ msgid ""
 "thus prefixed with ``res://``, but paths relative to the TSCN file's "
 "location are also valid."
 msgstr ""
+"Godot erzeugt immer absolute Pfade ausgehend vom Quellverzeichnis und zeigt "
+"dieses an als ``res://``, aber Pfade relativ zu TSCN Datei-Verzeichnisssen "
+"sind ebenso möglich."
 
 #: ../../docs/development/file_formats/tscn.rst:282
 msgid "Some example external resources are:"
-msgstr ""
+msgstr "Einige Beispiele externer Quellen sind:"
 
 #: ../../docs/development/file_formats/tscn.rst:290
 msgid ""

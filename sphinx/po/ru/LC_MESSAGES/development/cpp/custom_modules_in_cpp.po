@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -377,7 +377,7 @@ msgstr ""
 "общей(shared) библиотеки которая динамически загрузится при старте нашей "
 "игры."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:362
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:370
 #, fuzzy
 msgid ""
 "Once compiled, we should end up with a ``bin`` directory containing both the "
@@ -391,7 +391,7 @@ msgstr ""
 "нашему бинарному файлу найти его в среде выполнения через переменную среды "
 "``LD_LIBRARY_PATH``:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:373
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:381
 #, fuzzy
 msgid ""
 "You have to ``export`` the environment variable otherwise you won't be able "
@@ -400,7 +400,7 @@ msgstr ""
 "**замечание**: Будьте внимательны в экспорте переменной среды иначе вы не "
 "сможете запустить ваш проект из редактора."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:376
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:384
 msgid ""
 "On top of that, it would be nice to be able to select whether to compile our "
 "module as shared library (for development) or as a part of the Godot binary "
@@ -412,7 +412,7 @@ msgstr ""
 "часть бинарного файла Godot (для релиза). Для этого мы можем установить "
 "собственный флаг для SCons используя команду `ARGUMENT`:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:408
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:416
 #, fuzzy
 msgid ""
 "Now by default ``scons`` command will build our module as part of Godot's "
@@ -422,7 +422,7 @@ msgstr ""
 "бинарного файла godot, а в общую библиотеку когда будет передано "
 "``summator_shared=yes``."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:411
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:419
 #, fuzzy
 msgid ""
 "Finally, you can even speed up the build further by explicitly specifying "
@@ -431,11 +431,11 @@ msgstr ""
 "Наконец вы можете даже ускорить сборку явно определяя ваш общий модуль как "
 "цель для команды scons:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:419
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:427
 msgid "Writing custom documentation"
 msgstr "Написание собственной документации"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:421
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:429
 msgid ""
 "Writing documentation may seem like a boring task, but it is highly "
 "recommended to document your newly created module in order to make it easier "
@@ -449,12 +449,12 @@ msgstr ""
 "который вы написали один год назад может быть спутан с кодом который был "
 "написан другим человеком, так что будьте добры к самим себе!"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:427
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:435
 msgid "There are several steps in order to setup custom docs for the module:"
 msgstr ""
 "Существует много шагов для установки собственной документации в модуль:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:429
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:437
 msgid ""
 "Make a new directory in the root of the module. The directory name can be "
 "anything, but we'll be using the ``doc_classes`` name throughout this "
@@ -463,14 +463,14 @@ msgstr ""
 "Создайте новую папку в корне модуля. Имя папки может быть любым, но мы "
 "используем ``doc_classes`` в этом разделе."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:432
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:440
 #, fuzzy
 msgid "Now, we need to edit ``config.py``, add the following snippet:"
 msgstr ""
 "Теперь нам нужно добавить перезарядку для винтовки. Откройте ``Weapon_Rifle."
 "gd`` и добавьте следующие переменные класса:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:444
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:452
 #, fuzzy
 msgid ""
 "The ``get_doc_path()`` function is used by the build system to determine the "
@@ -482,7 +482,7 @@ msgstr ""
 "позиции документации. В нашем случае, они располагаются в папке "
 "``doc_classes``."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:450
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:458
 #, fuzzy
 msgid ""
 "The ``get_doc_classes()`` method is necessary for the build system to know "
@@ -494,53 +494,53 @@ msgstr ""
 "позиции документации. В нашем случае, они располагаются в папке "
 "``doc_classes``."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:457
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:465
 msgid ""
 "You can use Git to check if you have missed some of your classes by checking "
 "the untracked files with ``git status``. For example::"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:462
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:470
 #, fuzzy
 msgid "Example output::"
 msgstr "Пример:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:474
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
 #, fuzzy
 msgid "Now we can generate the documentation:"
 msgstr "О документации"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:476
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:484
 msgid ""
 "We can do this via running Godot's doctool i.e. ``godot --doctool <path>``, "
 "which will dump the engine API reference to the given ``<path>`` in XML "
 "format."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:479
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:487
 msgid ""
 "In our case we'll point it to the root of the cloned repository. You can "
 "point it to an another folder, and just copy over the files that you need."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:490
 msgid "Run command:"
 msgstr "Команда запуска:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:488
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:496
 msgid ""
 "Now if you go to the ``godot/modules/summator/doc_classes`` folder, you will "
 "see that it contains a ``Summator.xml`` file, or any other classes, that you "
 "referenced in your ``get_doc_classes`` function."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:492
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:500
 msgid ""
 "Edit the file(s) following :ref:`doc_updating_the_class_reference` and "
 "recompile the engine."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:494
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:502
 #, fuzzy
 msgid ""
 "Once the compilation process is finished, the docs will become accessible "
@@ -550,7 +550,7 @@ msgstr ""
 "соединит их в базовые типы. После завершения процесса компиляции, "
 "документация будет доступна через встроенную систему документации движка."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:497
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:505
 #, fuzzy
 msgid ""
 "In order to keep documentation up-to-date, all you'll have to do is simply "
@@ -559,7 +559,7 @@ msgstr ""
 "Для содержания документации в актуальном состоянии, все что вам нужно делать "
 "это редактировать один из файлов ``ClassName.xml`` и компилировать движок."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:500
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:508
 msgid ""
 "If you change your module's API, you can also re-extract the docs, they will "
 "contain the things that you previously added. Of course if you point it to "
@@ -567,71 +567,71 @@ msgid ""
 "from an older engine build on top of the newer ones."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:505
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:513
 msgid ""
 "Note that if you don't have write access rights to your supplied ``<path>``, "
 "you might encounter an error similar to the following:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:517
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:525
 #, fuzzy
 msgid "Adding custom editor icons"
 msgstr "Сложение векторов"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:519
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:527
 msgid ""
 "Similarly to how you can write self-contained documentation within a module, "
 "you can also create your own custom icons for classes to appear in the "
 "editor."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:522
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:530
 msgid ""
 "For the actual process of creating editor icons to be integrated within the "
 "engine, please refer to :ref:`doc_editor_icons` first."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:525
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:533
 msgid "Once you've created your icon(s), proceed with the following steps:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:527
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:535
 msgid ""
 "Make a new directory in the root of the module named ``icons``. This is the "
 "default path for the engine to look for module's editor icons."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:530
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:538
 msgid ""
 "Move your newly created ``svg`` icons (optimized or not) into that folder."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:532
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:540
 msgid ""
 "Recompile the engine and run the editor. Now the icon(s) will appear in "
 "editor's interface where appropriate."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:535
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:543
 msgid ""
 "If you'd like to store your icons somewhere else within your module, add the "
 "following code snippet to ``config.py`` to override the default path:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:544
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:552
 msgid "Summing up"
 msgstr "Итоги"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:546
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:554
 msgid "Remember to:"
 msgstr "Запомните:"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:548
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:556
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
 msgstr ""
 "используйте ``GDCLASS`` для наследования, чтобы Godot мог распознать класс"
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:549
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:557
 msgid ""
 "use ``_bind_methods`` to bind your functions to scripting, and to allow them "
 "to work as callbacks for signals."
@@ -639,7 +639,7 @@ msgstr ""
 "используйте ``_bind_methods`` для связки ваших функций для скриптинга, и "
 "разрешите им работать как обратные вызовы для сигналов."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:552
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:560
 msgid ""
 "But this is not all, depending what you do, you will be greeted with some "
 "(hopefully positive) surprises."
@@ -647,7 +647,7 @@ msgstr ""
 "Но это еще не все, в зависимости от того что вы делаете, вы столкнётесь с "
 "некоторыми (надеемся позитивными) сюрпризами."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:555
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:563
 msgid ""
 "If you inherit from :ref:`class_Node` (or any derived node type, such as "
 "Sprite), your new class will appear in the editor, in the inheritance tree "
@@ -657,7 +657,7 @@ msgstr ""
 "как Sprite), ваш новый класс будет показан в редакторе, в дереве "
 "наследований в диалоге \"Add Node\"."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:558
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:566
 msgid ""
 "If you inherit from :ref:`class_Resource`, it will appear in the resource "
 "list, and all the exposed properties can be serialized when saved/loaded."
@@ -666,7 +666,7 @@ msgstr ""
 "ресурсов, и все ваши открытые свойства будут сериализованы во время загрузки/"
 "сохранения."
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:561
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:569
 msgid ""
 "By this same logic, you can extend the Editor and almost any area of the "
 "engine."

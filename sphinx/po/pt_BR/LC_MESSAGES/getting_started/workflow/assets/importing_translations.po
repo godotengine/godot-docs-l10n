@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,7 +93,6 @@ msgid "Translation format"
 msgstr "Formato de tradução"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
-#, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
 "has a special importer that can read CSV files. Most spreadsheet editors can "
@@ -106,8 +105,9 @@ msgstr ""
 "especial que pode ler arquivos CSV. Todos os editores de planilhas (seja ele "
 "LibreOffice, Microsoft Office, Google Docs, etc.) podem exportar para este "
 "formato, então o único requisito é que os arquivos tenham uma organização "
-"especial. Os arquivos CSV devem ser salvos com codificação UTF-8 e "
-"formatados como se segue:"
+"especial. Os arquivos CSV **devem** ser salvos com codificação UTF-8 sem uma "
+"`marca de ordem de byte <https://pt.wikipedia.org/wiki/"
+"Marca_de_ordem_de_byte>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid ""

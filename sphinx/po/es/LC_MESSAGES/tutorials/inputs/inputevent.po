@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,6 @@ msgstr ""
 "permita cambiar las teclas utilizadas dentro del juego en ejecución."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:40
-#, fuzzy
 msgid ""
 "You can set up your InputMap under **Project > Project Settings > Input "
 "Map** and then use those actions like this:"
@@ -228,16 +227,15 @@ msgstr ""
 "Control indicados para recibir el evento."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:115
-#, fuzzy
 msgid ""
 "In accordance with Godot's node-based design, this enables specialized child "
 "nodes to handle and consume particular events, while their ancestors, and "
 "ultimately the scene root, can provide more generalized behavior if needed."
 msgstr ""
 "De acuerdo al diseño basado en nodos de Godot, esto habilita que nodos hijos "
-"especializados para manipular y consumir eventos particulares, mientras que "
-"los ancestros y finalmente el árbol de escenas, pueden proveer un "
-"comportamiento más generalizado si es necesario."
+"especializados manipulen y consuman eventos particulares, mientras que los "
+"ancestros y finalmente el árbol de escenas, pueden proveer un comportamiento "
+"más generalizado si es necesario."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:121
 msgid "Anatomy of an InputEvent"
@@ -255,7 +253,6 @@ msgstr ""
 "dispositivo, etc."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:127
-#, fuzzy
 msgid ""
 "There are several specialized types of InputEvent, described in the table "
 "below:"
@@ -296,7 +293,6 @@ msgid "KEY"
 msgstr "KEY"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
-#, fuzzy
 msgid "Contains a scancode and Unicode value, as well as modifiers."
 msgstr "Contiene un scancode y un valor unicode, así como modificadores."
 

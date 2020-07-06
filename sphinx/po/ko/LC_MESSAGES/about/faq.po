@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -737,11 +737,31 @@ msgstr ""
 "스크린샷이나, 구체적인 값, 실험 사례, (가능하다면) 예제 프로젝트를 가져오면 "
 "추가 점수가 될 것입니다."
 
-#: ../../docs/about/faq.rst:294
+#: ../../docs/about/faq.rst:293
+msgid "Is it possible to use Godot as a library?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:295
+msgid ""
+"Godot is meant to be used with its editor. We recommend you give it a try, "
+"as it will most likely save you time in the long term. There are no plans to "
+"make Godot usable as a library, as it would make the rest of the engine more "
+"convoluted and difficult to use for casual users."
+msgstr ""
+
+#: ../../docs/about/faq.rst:300
+msgid ""
+"If you want to use a rendering library, look into using an established "
+"rendering engine instead. Keep in mind rendering engines usually have "
+"smaller communities compared to Godot. This will make it more difficult to "
+"find answers to your questions."
+msgstr ""
+
+#: ../../docs/about/faq.rst:306
 msgid "Why does Godot not use STL (Standard Template Library)"
 msgstr "Godot가 STL (표준 템플릿 라이브러리)을 사용하지 않는 이유"
 
-#: ../../docs/about/faq.rst:296
+#: ../../docs/about/faq.rst:308
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
@@ -751,7 +771,7 @@ msgstr ""
 "STL이 훌륭한 범용 라이브러리라고 생각하지만, Godot에게는 특별한 요구 사항이 "
 "있었습니다."
 
-#: ../../docs/about/faq.rst:300
+#: ../../docs/about/faq.rst:312
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
@@ -759,7 +779,7 @@ msgstr ""
 "STL 템플릿은 매우 큰 심볼들을 만들고, 그것은 거대한 디버그 바이너리를 초래합"
 "니다. 우리는 대신 매우 짧은 이름의 템플릿을 거의 사용하지 않습니다."
 
-#: ../../docs/about/faq.rst:301
+#: ../../docs/about/faq.rst:313
 msgid ""
 "Most of our containers cater to special needs, like Vector, which uses copy "
 "on write and we use to pass data around, or the RID system, which requires "
@@ -771,7 +791,7 @@ msgstr ""
 "니다, RID 시스템의 경우, 성능을 위해 O(1) 접근 시간이 필요합니다. 마찬가지로 "
 "해시 맵 구현은 내부 엔진 유형과 부드럽게 통합하도록 설계되었습니다."
 
-#: ../../docs/about/faq.rst:302
+#: ../../docs/about/faq.rst:314
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
@@ -779,7 +799,7 @@ msgstr ""
 "컨테이너는 메모리 추적 기능이 내장되어 있어서, 메모리 사용량을 추적하는데 더 "
 "도움이 됩니다."
 
-#: ../../docs/about/faq.rst:303
+#: ../../docs/about/faq.rst:315
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
@@ -787,7 +807,7 @@ msgstr ""
 "큰 배열의 경우, 풀(Pool)로 된 메모리를 사용합니다, 사전에 지정된 버퍼 메모리 "
 "혹은 가상 메모리에 매핑될 수 있습니다."
 
-#: ../../docs/about/faq.rst:304
+#: ../../docs/about/faq.rst:316
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
@@ -795,11 +815,11 @@ msgstr ""
 "STL에서 제공하는 문자열 유형은 너무 단순하고 현지화 지원 기능이 부족해서 맞"
 "춤 문자열 유형을 사용합니다."
 
-#: ../../docs/about/faq.rst:307
+#: ../../docs/about/faq.rst:319
 msgid "Why does Godot not use exceptions?"
 msgstr "왜 Godot는 예외(Exception)를 사용하지 않나요?"
 
-#: ../../docs/about/faq.rst:309
+#: ../../docs/about/faq.rst:321
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
@@ -810,17 +830,17 @@ msgstr ""
 "태가 벌어지면, Godot는 오류를 작성합니다 (스크립트에서도 추적할 수 있습니"
 "다), 그런 다음 가능한 한 정상적으로 복구한 후 계속 진행합니다."
 
-#: ../../docs/about/faq.rst:314
+#: ../../docs/about/faq.rst:326
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr "또한 예외는 실행 파일에서 이진 크기를 상당히 늘립니다."
 
-#: ../../docs/about/faq.rst:318
+#: ../../docs/about/faq.rst:330
 msgid "Why does Godot not enforce RTTI?"
 msgstr "왜 Godot는 런타임 유형 정보(RTTI)를 시행하지 않나요?"
 
-#: ../../docs/about/faq.rst:320
+#: ../../docs/about/faq.rst:332
 msgid ""
 "Godot provides its own type-casting system, which can optionally use RTTI "
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
@@ -830,11 +850,11 @@ msgstr ""
 "사용할 수 있습니다. Godot에서 런타임 유형 정보를 끄게 되면 약간의 성능 가격으"
 "로 상당히 작은 이진 크기를 얻을 수 있습니다."
 
-#: ../../docs/about/faq.rst:325
+#: ../../docs/about/faq.rst:337
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr "왜 Godot는 사용자에게 DoD(데이터 지향 디자인) 구현을 강요하지 않나요?"
 
-#: ../../docs/about/faq.rst:327
+#: ../../docs/about/faq.rst:339
 #, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
@@ -845,7 +865,7 @@ msgstr ""
 "용하려 하지만, 우리는 대부분의 사용자가 DoD 관행을 따라야 할 필요가 없다고 생"
 "각합니다."
 
-#: ../../docs/about/faq.rst:331
+#: ../../docs/about/faq.rst:343
 msgid ""
 "DoD is mostly a cache coherency optimization that can only gain you "
 "significant performance improvements when dealing with dozens of thousands "
@@ -859,7 +879,7 @@ msgstr ""
 "한다 하면, DoD는 도움이 되지 않습니다, 당신은 최적화에 있어서 다른 접근법을 "
 "생각해 봐야 하는 것이죠."
 
-#: ../../docs/about/faq.rst:338
+#: ../../docs/about/faq.rst:350
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
@@ -867,7 +887,7 @@ msgstr ""
 "대부분의 게임에는 필요하지 않을 테지만, Godot는 이런 작업의 대부분의 경우에 "
 "도움을 줄 편리한 도우미를 제공합니다."
 
-#: ../../docs/about/faq.rst:341
+#: ../../docs/about/faq.rst:353
 msgid ""
 "If a game that really needs to process such large amount of objects is "
 "needed, our recommendation is to use C++ and GDNative for the high "
@@ -877,19 +897,19 @@ msgstr ""
 "요한 부분은 C++과 GDNative 사용하고, 그 외 나머지 부분은 GDScript (혹은 C#)"
 "을 사용하는 것입니다."
 
-#: ../../docs/about/faq.rst:346
+#: ../../docs/about/faq.rst:358
 msgid "How can I support Godot development or contribute?"
 msgstr "어떻게 Godot 개발을 돕거나 후원할 수 있나요?"
 
-#: ../../docs/about/faq.rst:348
+#: ../../docs/about/faq.rst:360
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr ":ref:`doc_ways_to_contribute`\\ 를 참고하세요."
 
-#: ../../docs/about/faq.rst:351
+#: ../../docs/about/faq.rst:363
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Godot는 누가 만드나요? 제가 연락할 수 있을까요?"
 
-#: ../../docs/about/faq.rst:353
+#: ../../docs/about/faq.rst:365
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."

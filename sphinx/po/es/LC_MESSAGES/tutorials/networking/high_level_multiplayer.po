@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
-#, fuzzy
 msgid "High-level multiplayer"
 msgstr "Multijugador de alto nivel"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
-#, fuzzy
 msgid "High-level vs low-level API"
-msgstr "Alto nivel VS bajo nivel API"
+msgstr "API de alto nivel vs bajo nivel"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
 msgid ""
@@ -155,7 +153,6 @@ msgstr ""
 "protocolos de bajo nivel como TCP y UDP."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:34
-#, fuzzy
 msgid ""
 "More about TCP/IP, UDP, and networking: https://gafferongames.com/post/"
 "udp_vs_tcp/"
@@ -163,7 +160,6 @@ msgstr ""
 "Más sobre TCP/IP, UDP y redes: https://gafferongames.com/post/udp_vs_tcp/"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:37
-#, fuzzy
 msgid ""
 "Gaffer On Games has a lot of useful articles about networking in Games "
 "(`here <https://gafferongames.com/categories/game-networking/>`__), "
@@ -171,9 +167,9 @@ msgid ""
 "<https://gafferongames.com/post/"
 "what_every_programmer_needs_to_know_about_game_networking/>`__."
 msgstr ""
-"Gaffer On Games tiene muchos artículos útiles sobre la creación de redes en "
-"Juegos (`aquí <https://gafferongames.com/tags/networking>`__), incluida la "
-"exhaustiva `introduction to networking models in games <https://"
+"Gaffer On Games tiene muchos artículos útiles (en inglés) sobre la creación "
+"de redes en Juegos (`aquí <https://gafferongames.com/tags/networking>`__), "
+"incluida la exhaustiva `introduction to networking models in games <https://"
 "gafferongames.com/post/"
 "what_every_programmer_needs_to_know_about_game_networking/>`__ (introducción "
 "a modelos de redes en juegos)."
@@ -251,7 +247,6 @@ msgstr ""
 "se conectan o desconectan los peers."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:64
-#, fuzzy
 msgid ""
 "This class interface can abstract most types of network layers, topologies "
 "and libraries. By default, Godot provides an implementation based on ENet (:"
@@ -265,9 +260,11 @@ msgstr ""
 "Esta interfaz de clase puede abstraer la mayoría de los tipos de capas de "
 "red, topologías y bibliotecas. Por defecto, Godot proporciona una "
 "implementación basada en ENet (:ref:`NetworkedMultiplayerEnet "
-"<class_NetworkedMultiplayerENet>`), pero esto podría usarse para implementar "
-"APIs móviles (para adhoc WiFi, Bluetooth) o APIs personalizadas de red "
-"específicas del dispositivo/consola."
+"<class_NetworkedMultiplayerENet>`), una basada en WebRTC (:ref:"
+"`WebRTCMultiplayer <class_WebRTCMultiplayer>`) y otra basada en WebSocket (:"
+"ref:`WebSocketMultiplayerPeer <class_WebSocketMultiplayerPeer>`), pero esto "
+"podría usarse para implementar APIs móviles (para WiFi ad hoc, Bluetooth) o "
+"APIs personalizadas de red específicas del dispositivo/consola."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:70
 msgid ""
@@ -293,7 +290,6 @@ msgstr ""
 "relacionado con el árbol: :ref:`SceneTree <class_SceneTree>`."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:78
-#, fuzzy
 msgid ""
 "To initialize high-level networking, the SceneTree must be provided a "
 "NetworkedMultiplayerPeer object."
@@ -348,7 +344,6 @@ msgid "Managing connections"
 msgstr "Administrar conexiones"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:121
-#, fuzzy
 msgid ""
 "Some games accept connections at any time, others during the lobby phase. "
 "Godot can be requested to no longer accept connections at any point (see "
@@ -358,24 +353,22 @@ msgid ""
 msgstr ""
 "Algunos juegos aceptan conexiones en cualquier momento, otros durante la "
 "fase de lobby(vestíbulo). Se puede solicitar a Godot que ya no acepte "
-"conexiones en ningún punto (mira `set_refuse_new_network_connections(bool)` "
-"y métodos relacionados en :ref:`SceneTree <class_SceneTree>`). Para "
-"administrar quién se conecta, Godot proporciona las siguientes señales en "
-"SceneTree:"
+"conexiones en ningún punto (mira "
+"``set_refuse_new_network_connections(bool)`` y métodos relacionados en :ref:"
+"`SceneTree <class_SceneTree>`). Para administrar quién se conecta, Godot "
+"proporciona las siguientes señales en SceneTree:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:124
 msgid "Server and Clients:"
 msgstr "Servidor y Clientes:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:126
-#, fuzzy
 msgid "``network_peer_connected(int id)``"
-msgstr "`network_peer_connected(int id)`"
+msgstr "``network_peer_connected(int id)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:127
-#, fuzzy
 msgid "``network_peer_disconnected(int id)``"
-msgstr "`network_peer_disconnected(int id)`"
+msgstr "``network_peer_disconnected(int id)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:129
 msgid ""
@@ -405,19 +398,16 @@ msgid "Clients:"
 msgstr "Clientes:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:137
-#, fuzzy
 msgid "``connected_to_server``"
-msgstr "Conexiones"
+msgstr "``connected_to_server``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:138
-#, fuzzy
 msgid "``connection_failed``"
-msgstr "Conexiones"
+msgstr "``connection_failed``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:139
-#, fuzzy
 msgid "``server_disconnected``"
-msgstr "`network_peer_disconnected(int id)`"
+msgstr "``server_disconnected``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:141
 msgid ""
@@ -532,13 +522,12 @@ msgstr ""
 "de manera confiable)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:174
-#, fuzzy
 msgid ""
 "There is also the ``get_rpc_sender_id`` function in ``SceneTree``, which can "
 "be used to check which peer (or peer ID) sent an RPC."
 msgstr ""
-"También está la función `get_rpc_sender_id` en `SceneTree` que se puede usar "
-"para verificar qué peer (o ID peer) envió una llamada RPC."
+"También está la función ``get_rpc_sender_id`` en ``SceneTree`` que se puede "
+"usar para verificar qué peer (o ID de peer) envió una llamada RPC."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:177
 msgid "Back to lobby"
@@ -553,13 +542,12 @@ msgstr ""
 "cuenta a todos."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:225
-#, fuzzy
 msgid ""
 "You might have already noticed something different, which is the usage of "
 "the ``remote`` keyword on the ``register_player`` function:"
 msgstr ""
-"Ya habrás notado algo diferente, que es el uso de la palabra clave `remote` "
-"en la función `register_player`:"
+"Ya habrás notado algo diferente, que es el uso de la palabra clave "
+"``remote`` en la función ``register_player``:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:231
 msgid ""
@@ -585,55 +573,48 @@ msgstr ""
 "Hay cuatro palabras clave diferentes:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:237
-#, fuzzy
 msgid "``remote``"
-msgstr "remote"
+msgstr "``remote``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:238
-#, fuzzy
 msgid "``remotesync``"
-msgstr "`remotesync`"
+msgstr "``remotesync``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:239
-#, fuzzy
 msgid "``master``"
-msgstr "master"
+msgstr "``master``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:240
-#, fuzzy
 msgid "``puppet``"
-msgstr "puppet"
+msgstr "``puppet``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:242
-#, fuzzy
 msgid ""
 "The ``remote`` keyword means that the ``rpc()`` call will go via network and "
 "execute remotely."
 msgstr ""
-"La palabra clave `remote` significa que la llamada `rpc()` irá a través de "
-"la red y se ejecutará de forma remota."
+"La palabra clave ``remote`` significa que la llamada ``rpc()`` irá a través "
+"de la red y se ejecutará de forma remota."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:244
-#, fuzzy
 msgid ""
 "The ``remotesync`` keyword means that the ``rpc()`` call will go via network "
 "and execute remotely, but will also execute locally (do a normal function "
 "call)."
 msgstr ""
-"La palabra clave `remotesync` significa que la llamada`rpc()` irá a través "
-"de la red y se ejecutará de forma remota, pero también se ejecutará "
-"localmente (realiza una llamada a función normal)."
+"La palabra clave ``remotesync`` significa que la llamada``rpc()`` irá a "
+"través de la red y se ejecutará de forma remota, pero también se ejecutará "
+"localmente (realiza una llamada normal a una función)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:246
-#, fuzzy
 msgid ""
 "The others will be explained further down. Note that you could also use the "
 "``get_rpc_sender_id`` function on ``SceneTree`` to check which peer actually "
 "made the RPC call to ``register_player``."
 msgstr ""
-"Los otros serán explicados más abajo. Tenga en cuenta que también puede usar "
-"la función `get_rpc_sender_id` en` SceneTree` para verificar qué peer "
-"realmente hizo la llamada RPC a `register_player`."
+"Los otros serán explicados más abajo. Ten en cuenta que también se puede "
+"usar la función ``get_rpc_sender_id`` en `` SceneTree`` para verificar qué "
+"peer realmente hizo la llamada RPC a ``register_player``."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:249
 msgid ""
@@ -775,31 +756,29 @@ msgstr ""
 "servidor tiene autoridad sobre todos los nodos por defecto."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
-#, fuzzy
 msgid ""
 "The network master can be set with the function :ref:`Node."
 "set_network_master(id, recursive) <class_Node_method_set_network_master>` "
 "(recursive is ``true`` by default and means the network master is "
 "recursively set on all child nodes of the node as well)."
 msgstr ""
-"La red maestra se puede configurar con la función :ref:`Node."
+"El master de la red se puede configurar con la función :ref:`Node."
 "set_network_master(id, recursive) <class_Node_method_set_network_master>` "
-"(recursive es verdadero de manera predeterminada y significa que la red "
-"maestra también se establece recursivamente en todos los nodos hijos del "
-"nodo también)."
+"(recursive es ``true`` de manera predeterminada y significa que el master de "
+"la red también se establece recursivamente en todos los nodos hijos del "
+"nodo)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:348
-#, fuzzy
 msgid ""
 "Checking that a specific node instance on a peer is the network master for "
 "this node for all connected peers is done by calling :ref:`Node."
 "is_network_master() <class_Node_method_is_network_master>`. This will return "
 "``true`` when executed on the server and ``false`` on all client peers."
 msgstr ""
-"Comprobar que una instancia de nodo específica en un peer es la red maestra "
-"para este nodo, para todos los peers conectados se hace llamando a :ref:"
+"Comprobar que una instancia de nodo específica en un peer es el master de "
+"red para este nodo, en todos los peers conectados, se hace llamando a :ref:"
 "`Node.is_network_master() <class_Node_method_is_network_master>`. Este "
-"retornara verdadero cuando se ejecute en el servidor y falso en todos los "
+"retornara ``true`` cuando se ejecute en el servidor y ``false`` en todos los "
 "peers clientes."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:350
@@ -837,15 +816,14 @@ msgid "Master and puppet keywords"
 msgstr "Palabras clave master y puppet"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:383
-#, fuzzy
 msgid ""
 "The real advantage of this model is when used with the ``master``/``puppet`` "
 "keywords in GDScript (or their equivalent in C# and Visual Script). "
 "Similarly to the ``remote`` keyword, functions can also be tagged with them:"
 msgstr ""
 "La verdadera ventaja de este modelo es cuando se usa con las palabras clave "
-"`master`/`puppet` en GDScript (o su equivalente en C# y Visual Script). "
-"Similar a la palabra clave `remote`, las funciones también se pueden "
+"``master``/``puppet`` en GDScript (o su equivalente en C# y Visual Script). "
+"Similar a la palabra clave ``remote``, las funciones también se pueden "
 "etiquetar con ellas:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
@@ -857,7 +835,6 @@ msgid "Example player code:"
 msgstr "Ejemplo de código de jugador:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:408
-#, fuzzy
 msgid ""
 "In the above example, a bomb explodes somewhere (likely managed by whoever "
 "is master). The bomb knows the bodies in the area, so it checks them and "
@@ -865,45 +842,42 @@ msgid ""
 msgstr ""
 "En el ejemplo anterior, una bomba explota en algún lugar (probablemente sea "
 "administrada por quien sea master). La bomba conoce los cuerpos en el área, "
-"por lo que los verifica y verifica que contengan una función 'exploded'."
+"por lo que los verifica y verifica que contengan una función ``exploded``."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:411
-#, fuzzy
 msgid ""
 "If they do, the bomb calls ``exploded`` on it. However, the ``exploded`` "
 "method in the player has a ``master`` keyword. This means that only the "
 "player who is master for that instance will actually get the function."
 msgstr ""
-"Si lo tienen, la bomba llama 'exploded' en él. Sin embargo, el método "
-"`exploded` en el jugador tiene una palabra clave`master`. Esto significa que "
-"solo el jugador que es master para esa instancia realmente obtendrá la "
-"función."
+"Si lo tienen, la bomba llama ``exploded`` en él. Sin embargo, el método "
+"``exploded`` en el jugador tiene una palabra clave ``master``. Esto "
+"significa que solo el jugador que es master para esa instancia realmente "
+"recibirá la función."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:414
-#, fuzzy
 msgid ""
 "This instance, then, calls the ``stun`` method in the same instances of that "
 "same player (but in different peers), and only those which are set as "
 "puppet, making the player look stunned in all the peers (as well as the "
 "current, master one)."
 msgstr ""
-"Esta instancia, entonces, llama a la función `stun` en las mismas instancias "
-"de ese mismo jugador (pero en diferentes peers), y solo aquellos que se "
-"establecen como puppet, haciendo que el jugador se vea aturdido en todos los "
-"peers (así como en el actual , único master)."
+"Esta instancia, entonces, llama a la función ``stun`` en las mismas "
+"instancias de ese mismo jugador (pero en diferentes peers), y solo aquellos "
+"que se establecen como puppet, haciendo que el jugador se vea aturdido en "
+"todos los peers (así como en el actual , único master)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
-#, fuzzy
 msgid ""
 "Note that you could also send the ``stun()`` message only to a specific "
 "player by using ``rpc_id(<id>, \"exploded\", bomb_owner)``. This may not "
 "make much sense for an area-of-effect case like the bomb, but in other "
 "cases, like single target damage."
 msgstr ""
-"Ten en cuenta que también puedes enviar el mensaje stun() solo a un jugador "
-"específico utilizando rpc_id(<id>, \"exploded\", bomb_owner). Esto puede no "
-"tener mucho sentido para un caso de área de efecto como el de la bomba, sino "
-"en otros casos, como daño a un solo objetivo."
+"Ten en cuenta que también puedes enviar el mensaje ``stun()`` solo a un "
+"jugador específico utilizando ``rpc_id(<id>, \"exploded\", bomb_owner)``. "
+"Esto puede no tener mucho sentido para un caso de área de efecto como el de "
+"la bomba, sino en otros casos, como daño a un solo objetivo."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:425
 msgid "Exporting for dedicated servers"

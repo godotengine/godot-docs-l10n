@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 14:46+0200\n"
+"POT-Creation-Date: 2020-07-06 14:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,7 +226,6 @@ msgstr ""
 "précédentes."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:93
-#, fuzzy
 msgid ""
 "For more information about how shaders operate specifically in Godot, see "
 "the :ref:`Shaders <doc_shaders>` doc."
@@ -241,6 +240,10 @@ msgid ""
 "is enabled in the Project Settings. (It's enabled by default on mobile "
 "platforms.)"
 msgstr ""
+"La fonction ``light()`` ne sera pas exécutée si le mode de rendu "
+"``vertex_lighting`` est activé, ou si **Rendering > Quality > Shading > "
+"Force Vertex Shading** est activé dans les paramètres du projet. (C'est "
+"activée par défaut sur les plateformes mobiles.)"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:103
 msgid "Technical overview"
