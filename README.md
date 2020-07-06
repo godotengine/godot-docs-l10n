@@ -1,8 +1,8 @@
 # Localization of Godot Engine documentation
 
 This repository contains the localization templates and catalogs for the
-[official documentation](https://docs.godotengine.org) of the [Godot
-[Engine](https://godotengine.org) project.
+[official documentation](https://docs.godotengine.org) of the
+[Godot Engine](https://godotengine.org) project.
 
 The source strings are extracted by sphinx-gettext from the
 [godot-docs](https://github.com/godotengine/godot-docs) repository.
