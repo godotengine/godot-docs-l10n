@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,83 +100,83 @@ msgstr ""
 msgid "First, we set up some variables and initialize the ``current_scene`` with the main scene of the game:"
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:106
+#: ../../docs/tutorials/io/background_loading.rst:107
 msgid "The function ``goto_scene`` is called from the game when the scene needs to be switched. It requests an interactive loader, and calls ``set_process(true)`` to start polling the loader in the ``_process`` callback. It also starts a \"loading\" animation, which could show a progress bar or loading screen."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:128
+#: ../../docs/tutorials/io/background_loading.rst:129
 msgid "``_process`` is where the loader is polled. ``poll`` is called, and then we deal with the return value from that call. ``OK`` means keep polling, ``ERR_FILE_EOF`` means loading is done, anything else means there was an error. Also note we skip one frame (via ``wait_frames``, set on the ``goto_scene`` function) to allow the loading screen to show up."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:134
+#: ../../docs/tutorials/io/background_loading.rst:135
 msgid "Note how we use ``OS.get_ticks_msec`` to control how long we block the thread. Some stages might load fast, which means we might be able to cram more than one call to ``poll`` in one frame; some might take way more than your value for ``time_max``, so keep in mind we won't have precise control over the timings."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:170
+#: ../../docs/tutorials/io/background_loading.rst:172
 msgid "Some extra helper functions. ``update_progress`` updates a progress bar, or can also update a paused animation (the animation represents the entire load process from beginning to end). ``set_new_scene`` puts the newly loaded scene on the tree. Because it's a scene being loaded, ``instance()`` needs to be called on the resource obtained from the loader."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:195
+#: ../../docs/tutorials/io/background_loading.rst:199
 msgid "Using multiple threads"
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:197
+#: ../../docs/tutorials/io/background_loading.rst:201
 msgid "ResourceInteractiveLoader can be used from multiple threads. A couple of things to keep in mind if you attempt it:"
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:201
+#: ../../docs/tutorials/io/background_loading.rst:205
 msgid "Use a semaphore"
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:203
+#: ../../docs/tutorials/io/background_loading.rst:207
 msgid "While your thread waits for the main thread to request a new resource, use a ``Semaphore`` to sleep (instead of a busy loop or anything similar)."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:207
+#: ../../docs/tutorials/io/background_loading.rst:211
 msgid "Not blocking main thread during the polling"
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:209
+#: ../../docs/tutorials/io/background_loading.rst:213
 msgid "If you have a mutex to allow calls from the main thread to your loader class, don't lock the main thread while you call ``poll`` on your loader class. When a resource is done loading, it might require some resources from the low-level APIs (VisualServer, etc), which might need to lock the main thread to acquire them. This might cause a deadlock if the main thread is waiting for your mutex while your thread is waiting to load a resource."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:218
+#: ../../docs/tutorials/io/background_loading.rst:222
 msgid "Example class"
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:220
+#: ../../docs/tutorials/io/background_loading.rst:224
 msgid "You can find an example class for loading resources in threads here: :download:`resource_queue.gd <files/resource_queue.gd>`. Usage is as follows:"
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:227
+#: ../../docs/tutorials/io/background_loading.rst:231
 msgid "Call after you instance the class to start the thread."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:233
+#: ../../docs/tutorials/io/background_loading.rst:237
 msgid "Queue a resource. Use optional argument \"p_in_front\" to put it in front of the queue."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:240
+#: ../../docs/tutorials/io/background_loading.rst:244
 msgid "Remove a resource from the queue, discarding any loading done."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:246
+#: ../../docs/tutorials/io/background_loading.rst:250
 msgid "Returns ``true`` if a resource is fully loaded and ready to be retrieved."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:252
+#: ../../docs/tutorials/io/background_loading.rst:256
 msgid "Get the progress of a resource. Returns -1 if there was an error (for example if the resource is not in the queue), or a number between 0.0 and 1.0 with the progress of the load. Use mostly for cosmetic purposes (updating progress bars, etc), use ``is_ready`` to find out if a resource is actually ready."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:262
+#: ../../docs/tutorials/io/background_loading.rst:266
 msgid "Returns the fully loaded resource, or ``null`` on error. If the resource is not fully loaded (``is_ready`` returns ``false``), it will block your thread and finish the load. If the resource is not on the queue, it will call ``ResourceLoader::load`` to load it normally and return it."
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:268
+#: ../../docs/tutorials/io/background_loading.rst:272
 msgid "Example:"
 msgstr ""
 
-#: ../../docs/tutorials/io/background_loading.rst:298
+#: ../../docs/tutorials/io/background_loading.rst:305
 msgid "**Note**: this code, in its current form, is not tested in real world scenarios. If you run into any issues, ask for help in one of `Godot's community channels <https://godotengine.org/community>`__."
 msgstr ""
 

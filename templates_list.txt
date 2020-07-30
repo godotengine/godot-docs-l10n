@@ -2,6 +2,7 @@ index.pot
 about/index.pot
 about/introduction.pot
 about/faq.pot
+about/list_of_features.pot
 about/docs_changelog.pot
 about/release_policy.pot
 getting_started/step_by_step/index.pot
@@ -105,7 +106,6 @@ tutorials/2d/2d_sprite_animation.pot
 tutorials/3d/index.pot
 tutorials/3d/introduction_to_3d.pot
 tutorials/3d/using_transforms.pot
-tutorials/3d/optimizing_3d_performance.pot
 tutorials/3d/3d_rendering_limitations.pot
 tutorials/3d/spatial_material.pot
 tutorials/3d/lights_and_shadows.pot
@@ -245,8 +245,12 @@ tutorials/content/procedural_geometry/surfacetool.pot
 tutorials/content/procedural_geometry/immediategeometry.pot
 tutorials/content/making_trees.pot
 tutorials/optimization/index.pot
+tutorials/optimization/general_optimization.pot
 tutorials/optimization/using_servers.pot
-tutorials/optimization/using_multimesh.pot
+tutorials/optimization/cpu_optimization.pot
+tutorials/optimization/gpu_optimization.pot
+tutorials/optimization/batching.pot
+tutorials/optimization/optimizing_3d_performance.pot
 tutorials/misc/index.pot
 tutorials/misc/jitter_stutter.pot
 tutorials/misc/handling_quit_requests.pot
@@ -313,5 +317,6 @@ community/contributing/bug_triage_guidelines.pot
 community/contributing/documentation_guidelines.pot
 community/contributing/docs_writing_guidelines.pot
 community/contributing/updating_the_class_reference.pot
+community/contributing/editor_and_docs_localization.pot
 community/channels.pot
 community/tutorials.pot
