@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -331,7 +331,7 @@ msgstr ""
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:233
 msgid ""
 "To configure stretching at runtime from a script, use the ``get_tree()."
-"set_screen_stretch()`` function (see :ref:`SceneTree.set_screen_stretch() "
+"set_screen_stretch()`` method (see :ref:`SceneTree.set_screen_stretch() "
 "<class_SceneTree_method_set_screen_stretch>`)."
 msgstr ""
 
@@ -345,14 +345,14 @@ msgid ""
 "appear when downsampling to something considerably lower like 1280×720. "
 "Aliasing can be made less visible by shrinking all images by a factor of 2 "
 "upon loading. This can be done by calling the method below before the game "
-"data is loaded:"
+"data is loaded::"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:252
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:249
 msgid "Handling aspect ratios"
 msgstr "Mit einem Signal (Seitenverhältnis) umgehen"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:254
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:251
 msgid ""
 "Once scaling for different resolutions is accounted for, make sure that your "
 "*user interface* also scales for different aspect ratios. This can be done "
@@ -360,11 +360,11 @@ msgid ""
 "<doc_gui_containers>`."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:260
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:257
 msgid "Field of view scaling"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:262
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:259
 msgid ""
 "The 3D Camera node's **Keep Aspect** property defaults to the **Keep "
 "Height** scaling mode (also called *Hor+*). This is usually the best value "
@@ -372,10 +372,43 @@ msgid ""
 "will automatically use a wider field of view."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:267
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:264
 msgid ""
 "However, if your 3D game is intended to be played in portrait mode, it may "
 "make more sense to use **Keep Width** instead (also called *Vert-*). This "
 "way, smartphones with an aspect ratio taller than 16:9 (e.g. 19:9) will use "
 "a *taller* field of view, which is more logical here."
 msgstr ""
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:270
+msgid "Scaling 2D and 3D elements differently using Viewports"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:272
+msgid ""
+"Using multiple Viewport nodes, you can have different scales for various "
+"elements. For instance, you can use this to render the 3D world at a low "
+"resolution while keeping 2D elements at the native resolution. This can "
+"improve performance significantly while keeping the HUD and other 2D "
+"elements crisp."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:277
+msgid ""
+"This is done by using the root Viewport node only for 2D elements, then "
+"creating a Viewport node to display the 3D world and displaying it using a "
+"ViewportContainer or TextureRect node. There will effectively be two "
+"viewports in the final project. One upside of using TextureRect over "
+"ViewportContainer is that it allows enable linear filtering. This makes "
+"scaled 3D viewports look better in many cases."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:284
+#, fuzzy
+msgid ""
+"See the `3D viewport scaling demo <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/viewport/3d_scaling>`__ for examples."
+msgstr ""
+"Zusätzlich zu dieser Dokumentation möchtest Du vielleicht auch einen Blick "
+"auf die verschieden `Godot Demoprojekte <https://github.com/godotengine/"
+"godot-demo-projects>`_ werfen."

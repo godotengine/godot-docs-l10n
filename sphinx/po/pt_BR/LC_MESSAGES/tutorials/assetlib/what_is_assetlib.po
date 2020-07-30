@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
-msgstr ""
+msgstr "Sobre a Biblioteca de Assets"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:6
 msgid ""
@@ -29,6 +29,12 @@ msgid ""
 "download directly from within the engine, but it can also be accessed at "
 "Godot's `official website <https://godotengine.org/asset-library/asset>`_."
 msgstr ""
+"A Biblioteca de Assets do Godot, de outro modo conhecida como AssetLib, é um "
+"repositório de addons, scripts, ferramentas e outros recursos para Godot "
+"enviados por usuários, coletivamente referidos como assets. Eles estão "
+"disponíveis a todos os usuários do Godot para download de dentro do motor, "
+"mas também pode ser acessado no `site oficial <https://godotengine.org/asset-"
+"library/asset>`_ do Godot."
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:11
 msgid ""
@@ -39,6 +45,12 @@ msgid ""
 "distributed under non-free, proprietary licenses, limiting what you can do "
 "with them."
 msgstr ""
+"De começo, a Biblioteca de Assets pode parecer e funcionar de maneira "
+"semelhante a lojas de assets disponíveis para outros motores, como a Unity "
+"Asset Store, ou o Marketplace do Unreal Engine, onde você pode enviar tanto "
+"assets gratuitamente disponíveis, como assets pagos, comerciais. Além disso, "
+"muitas vezes esses assets são distribuídos sob licenças proprietárias não-"
+"livres, limitando o que você pode fazer com eles."
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:17
 msgid ""
@@ -47,6 +59,10 @@ msgid ""
 "and the Boost Software License). This makes the AssetLib more similar to the "
 "software repositories of a Linux distribution."
 msgstr ""
+"A Biblioteca de Assets é diferente - todos os assets são distribuídos "
+"gratuitamente, e sob uma série de licenças de código aberto (como a licença "
+"MIT, a GPL, e a Boost Software License). Isso faz a AssetLib mais similar "
+"aos repositórios de software de uma distribuição Linux."
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:21
 msgid ""
@@ -54,6 +70,9 @@ msgid ""
 "Godot, and on the website), how you can submit your own assets, and what the "
 "guidelines for submission are."
 msgstr ""
+"Este conjunto de páginas irá abordar como usar a AssetLib (tanto de dentro "
+"do Godot, quanto no site), como você pode enviar seus próprios assets e "
+"quais são as diretrizes para envio."
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:24
 msgid ""
@@ -63,16 +82,22 @@ msgid ""
 "asset-library>`_, where you can submit pull requests and issues, so please "
 "do not hesitate to visit it!"
 msgstr ""
+"Observe que a AssetLib é relativamente jovem - pode ter vários pontos "
+"problemáticos, bugs e problemas de usabilidade. Como em todos os projetos do "
+"Godot, o repositório de código está disponível no `GitHub <https://github."
+"com/godotengine/godot-asset-library>`_, onde você pode enviar pull requests "
+"e issues, portanto não hesite em visitá-lo!"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
-#, fuzzy
 msgid "Types of assets"
-msgstr "Tipo de elenco"
+msgstr "Tipos de assets"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:31
 msgid ""
 "Be aware that there are, broadly, two different types of assets you can post."
 msgstr ""
+"Esteja ciente de que existem, de maneira geral, dois tipos diferentes de "
+"assets que você pode postar."
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:33
 msgid ""
@@ -80,6 +105,9 @@ msgid ""
 "\"Templates\" tab in the Godot project manager. These assets are standalone "
 "Godot projects that can run by themselves."
 msgstr ""
+"Assets rotulados como \"Templates\", \"Projects\", ou \"Demos\" aparecem na "
+"aba \"Modelos\" no gerenciador de projetos do Godot. Estes assets são "
+"projetos do Godot independentes que podem ser executados sozinhos."
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:37
 msgid ""
@@ -87,6 +115,9 @@ msgid ""
 "screen tab, next to \"2D\", \"3D\", and \"Script\". These assets are meant "
 "to be downloaded and placed into an existing Godot project."
 msgstr ""
+"Outros assets são exibidos no editor do Godot na aba \"AssetLib\" da tela "
+"principal, ao lado de \"2D\", \"3D\" e \"Script\". Esses assets devem ser "
+"baixados e colocados em um projeto do Godot existente."
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:42
 msgid "Frequently asked questions"
@@ -94,7 +125,7 @@ msgstr "Perguntas Frequentes"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:45
 msgid "Can paid assets be uploaded to the asset library?"
-msgstr ""
+msgstr "Assets pagos podem ser enviados à biblioteca de assets?"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:47
 msgid ""
@@ -102,3 +133,6 @@ msgid ""
 "libraries which allow it. That said, you are allowed to monetize and sell "
 "Godot assets outside the Asset Library."
 msgstr ""
+"Não para a oficial, embora no futuro possa haver outras bibliotecas de "
+"assets que permitam. Dito isso, você tem permissão para monetizar e vender "
+"assets do Godot fora da Biblioteca de Assets."

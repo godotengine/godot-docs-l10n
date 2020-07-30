@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -405,9 +405,8 @@ msgid ":ref:`doc_custom_modules_in_c++`"
 msgstr ":ref:`doc_custom_modules_in_c++`"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
-#, fuzzy
 msgid "Cleaning generated files"
-msgstr "Nettoyage des modèles d'exportation générés"
+msgstr "Nettoyage des fichiers générés"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
 msgid ""
@@ -416,6 +415,10 @@ msgid ""
 "``<options>`` is the list of build options you've used to build Godot "
 "previously."
 msgstr ""
+"Parfois, vous pouvez rencontrer une erreur due à la présence de fichiers "
+"générés. Vous pouvez les supprimer en utilisant ``scons --clean <options>``, "
+"où ``<options>`` est la liste des options de compilation que vous avez "
+"utilisées pour compiler Godot précédemment."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:222
 msgid ""
@@ -424,6 +427,10 @@ msgid ""
 "all untracked and ignored files in the repository. Don't run this command if "
 "you have uncommitted work!"
 msgstr ""
+"Vous pouvez aussi utiliser ``git clean -fixd`` qui nettoiera les artefacts "
+"de compilation pour toutes les plateformes et configurations. Attention, car "
+"cela supprimera tous les fichiers non suivis et ignorés dans le répertoire. "
+"Ne lancez pas cette commande si vous avez un travail non commité !"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
 msgid "Other build options"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:4
-#, fuzzy
 msgid "Using the ArrayMesh"
-msgstr "Usando el AssetLib"
+msgstr "Usando ArrayMesh"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:6
 msgid ""
 "This tutorial will present the basics of using an :ref:`ArrayMesh "
 "<class_arraymesh>`"
 msgstr ""
+"Este tutorial presentará los fundamentos del uso de un :ref:`ArrayMesh "
+"<class_arraymesh>`"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:8
 msgid ""
@@ -34,6 +35,10 @@ msgid ""
 "<class_ArrayMesh_method_add_surface_from_arrays>`, which takes up to four "
 "parameters. The first two are required, while the second two are optional."
 msgstr ""
+"Para ello, utilizaremos la función :ref:`add_surface_from_arrays() "
+"<class_ArrayMesh_method_add_surface_from_arrays>`, que toma hasta cuatro "
+"parámetros. Los dos primeros son obligatorios, mientras que los dos segundos "
+"son opcionales."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:11
 msgid ""
@@ -50,53 +55,62 @@ msgid ""
 "stores a ``Pool**Array`` (e.g. PoolVector3Array, PoolIntArray, etc.) for "
 "each type of information."
 msgstr ""
+"El segundo es el Array actual que almacena la información del mesh. El array "
+"es un array normal de Godot que se construye con los corchetes vacíos "
+"``[]``. Almacena un ``Pool**Array`` (por ejemplo, PoolVector3Array, "
+"PoolIntArray, etc.) para cada tipo de información."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:20
 msgid "``ARRAY_VERTEX`` = 0 | PoolVector3Array or PoolVector2Array"
-msgstr ""
+msgstr "``ARRAY_VERTEX`` = 0 | PoolVector3Array o PoolVector2Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:21
-#, fuzzy
 msgid "``ARRAY_NORMAL`` = 1 | PoolVector3Array"
-msgstr "``PoolVector3Array``"
+msgstr "``ARRAY_NORMAL`` = 1 | PoolVector3Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:22
 msgid ""
 "``ARRAY_TANGENT`` = 2 | PoolRealArray of groups of 4 floats. first 3 floats "
 "determine the tangent, and the last the binormal direction as -1 or 1."
 msgstr ""
+"``ARRAY_TANGENT`` = 2 | PoolRealArray de grupos de 4 floats. Los primeros 3 "
+"floats determinan la tangente, y el último la dirección binormal como -1 o 1."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:24
 msgid "``ARRAY_COLOR`` = 3 | PoolColorArray"
-msgstr ""
+msgstr "``ARRAY_COLOR`` = 3 | PoolColorArray"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:25
 msgid "``ARRAY_TEX_UV`` = 4 | PoolVector2Array or PoolVector3Array"
-msgstr ""
+msgstr "``ARRAY_TEX_UV`` = 4 | PoolVector2Array o PoolVector3Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:26
 msgid "``ARRAY_TEX_UV2`` = 5 | PoolVector2Array or PoolVector3Array"
-msgstr ""
+msgstr "``ARRAY_TEX_UV2`` = 5 | PoolVector2Array o PoolVector3Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:27
 msgid ""
 "``ARRAY_BONES`` = 6 | PoolRealArray of groups of 4 floats or PoolIntArray of "
 "groups of 4 ints"
 msgstr ""
+"``ARRAY_BONES`` = 6 | PoolRealArray de grupos de 4 floats o PoolIntArray de "
+"grupos de 4 ints"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:28
 msgid "``ARRAY_WEIGHTS`` = 7 | PoolRealArray of groups of 4 floats"
-msgstr ""
+msgstr "``ARRAY_WEIGHTS`` = 7 | PoolRealArray de grupos de 4 floats"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:29
 msgid "``ARRAY_INDEX`` = 8 | PoolIntArray"
-msgstr ""
+msgstr "``ARRAY_INDEX`` = 8 | PoolIntArray"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:31
 msgid ""
 "The Array of vertices is always required. All the others are optional and "
 "will only be used if included."
 msgstr ""
+"El Array de vértices siempre es requerido. Todos los demás son opcionales y "
+"sólo se usarán si se incluyen."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:33
 msgid ""
@@ -105,10 +119,14 @@ msgid ""
 "of 4 floats. So the array size will be four times the size of the vertex "
 "array size, but they will have the same number of elements"
 msgstr ""
+"Cada array debe tener el mismo número de elementos que el array de vértices, "
+"excepto el array de índices. Para arrays como las tangentes, un elemento es "
+"un grupo de 4 floats. Así que el tamaño del array será cuatro veces el "
+"tamaño del array de vértices, pero tendrán el mismo número de elementos"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:37
 msgid "The index array is unique."
-msgstr ""
+msgstr "El array de índices es único."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:39
 msgid ""
@@ -116,6 +134,9 @@ msgid ""
 "this tutorial does not cover using blendshapes, it is possible to specify "
 "them when creating a surface from arrays."
 msgstr ""
+"El tercer parámetro es un conjunto de blendshapes para que el Mesh lo "
+"utilice. Aunque este tutorial no cubre el uso de blendshapes, es posible "
+"especificarlos al crear una superficie a partir de arrays."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:42
 msgid ""
@@ -141,15 +162,17 @@ msgid ""
 "adding an ArrayMesh in the editor is not useful, but in this case it allows "
 "as to access the ArrayMesh from code without creating one."
 msgstr ""
+"Añade un :ref:`ArrayMesh <class_arraymesh>` a un MeshInstance. Normalmente, "
+"añadir un ArrayMesh en el editor no es útil, pero en este caso permite como "
+"acceder al ArrayMesh desde el código sin crear uno."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:54
-#, fuzzy
 msgid "Next, add a script to the MeshInstance."
-msgstr "Agrega el script al nodo."
+msgstr "A continuación, agrega el script al MeshInstance."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:56
 msgid "Under ``_ready()``, create a new Array."
-msgstr ""
+msgstr "Dentro de ``_ready()``, crea un nuevo Array."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:63
 msgid ""
@@ -186,9 +209,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:134
-#, fuzzy
 msgid "Generating geometry"
-msgstr "Geometría generada"
+msgstr "Generando geometría"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:136
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -412,6 +412,9 @@ msgid ""
 "``Rotation_Helper``. Notice how in ``Rotation_Helper`` we have a node called "
 "``Grenade_Toss_Pos``. This is where we will be spawning the grenades."
 msgstr ""
+"Primeiramente, abra ``Player.tscn`` e expanda a árvore de nós até chegar a "
+"``Rotation_Helper``. Observe como em ``Rotation_Helper`` temos um nó chamado "
+"``Grenade_Toss_Pos``. É aqui que iremos gerar as granadas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:306
 msgid ""
@@ -534,12 +537,16 @@ msgid ""
 "While we're still in ``Player.gd``, let's add a function to add grenades to "
 "the player. Add the following function to ``Player.gd``:"
 msgstr ""
+"Enquanto ainda estamos no ``Player.gd``, vamos adicionar uma função para "
+"adicionar granadas ao jogador. Adicione a seguinte função ao ``Player.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:409
 msgid ""
 "Now we can add a grenade using ``add_grenade``, and it will automatically be "
 "clamped to a maximum of ``4`` grenades."
 msgstr ""
+"Agora podemos adicionar uma granada usando `` add_grenade``, e ela será "
+"automaticamente fixada no máximo em `` 4`` granadas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:411
 msgid ""
@@ -548,30 +555,42 @@ msgid ""
 "from ``clamp(grenade_amounts[current_grenade], 0, 4)`` to "
 "``clamp(grenade_amounts[current_grenade], 0, MAX_GRENADES)``"
 msgstr ""
+"Você pode alterar o ``4`` para uma constante se quiser. Você precisaria "
+"criar uma nova constante global, algo como `` MAX_GRENADES``, e depois mudar "
+"o clamp de `` clamp (grenade_amounts [current_grenade], 0, 4) `` para `` "
+"clamp (grenade_amounts [current_grenade], 0, MAX_GRENADES) ``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:414
 msgid ""
 "If you do not want to limit how many grenades the player can carry, remove "
 "the line that clamps the grenades altogether!"
 msgstr ""
+"Se você não quiser limitar quantas granadas o jogador pode transportar, "
+"remova a linha que limita as granadas por completo!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:416
 msgid ""
 "Now we have a function to add grenades, let's open up ``AmmoPickup.gd`` and "
 "use it!"
 msgstr ""
+"Agora temos uma função para adicionar granadas, vamos abrir `` AmmoPickup."
+"gd`` e usá-lo!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:418
 msgid ""
 "Open up ``AmmoPickup.gd`` and go to the ``trigger_body_entered`` function. "
 "Change it to the following:"
 msgstr ""
+"Abra o `` AmmoPickup.gd`` e vá para a função `` trigger_body_entered``. "
+"Altere para o seguinte:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:433
 msgid ""
 "Now we are also checking to see if the body has the ``add_grenade`` "
 "function. If it does, we call it like we call ``add_ammo``."
 msgstr ""
+"Agora também estamos verificando se o corpo tem a função ``add_grenade``. Se "
+"isso acontecer, chamamos de ``add_ammo``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:435
 msgid ""
@@ -579,33 +598,39 @@ msgid ""
 "``GRENADE_AMOUNTS``. Let's add it! Add the following class variable to "
 "``AmmoPickup.gd`` with the other class variables:"
 msgstr ""
+"Você deve ter notado que estamos usando uma nova constante que ainda não "
+"definimos, ``GRENADE_AMOUNTS``. Vamos adicioná-lo! Adicione a seguinte "
+"variável de classe a ``AmmoPickup.gd`` com as outras variáveis de classe:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:442
 msgid "``GRENADE_AMOUNTS``: The amount of grenades each pickup contains."
 msgstr ""
+"``GRENADE_AMOUNTS``: A quantidade de granadas que cada captador contém."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:444
 msgid ""
 "Notice how the second element in ``GRENADE_AMOUNTS`` is ``0``. This is so "
 "the small ammo pickup does not give the player any additional grenades."
 msgstr ""
+"Observe como o segundo elemento em ``GRENADE_AMOUNTS`` é ``0``. É assim que "
+"a pequena munição não oferece granadas adicionais ao jogador."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:449
 msgid "Now you should be able to throw grenades! Go give it a try!"
-msgstr ""
+msgstr "Agora você deve ser capaz de lançar granadas! Vá experimentá-lo!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:453
 msgid "Adding the ability to grab and throw RigidBody nodes to the player"
 msgstr ""
+"Adicionando a capacidade de pegar e lançar nós RigidBody para o jogador"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:455
-#, fuzzy
 msgid ""
 "Next, let's give the player the ability to pick up and throw :ref:`RigidBody "
 "<class_RigidBody>` nodes."
 msgstr ""
-"Adicionar a habilidade de agarrar e arremessar nós :ref:`RigidBody "
-"<class_RigidBody>`"
+"A seguir, vamos dar ao jogador a capacidade de pegar e lançar nós :ref: "
+"`RigidBody <class_RigidBody>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:457
 #, fuzzy
@@ -619,29 +644,38 @@ msgid ""
 "``grabbed_object``: A variable to hold the grabbed :ref:`RigidBody "
 "<class_RigidBody>` node."
 msgstr ""
+"``grabbed_object``: Uma variável para conter o nó :ref:`RigidBody "
+"<class_RigidBody>` capturado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:467
 msgid ""
 "``OBJECT_THROW_FORCE``: The force with which the player throws the grabbed "
 "object."
 msgstr ""
+"``OBJECT_THROW_FORCE``:A força com a qual o jogador joga o objeto agarrado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:468
 msgid ""
 "``OBJECT_GRAB_DISTANCE``: The distance away from the camera at which the "
 "player holds the grabbed object."
 msgstr ""
+"``OBJECT_GRAB_DISTANCE``: A distância da câmera em que o jogador segura o "
+"objeto agarrado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:469
 msgid ""
 "``OBJECT_GRAB_RAY_DISTANCE``: The distance the :ref:`Raycast "
 "<class_Raycast>` goes. This is the player's grab distance."
 msgstr ""
+"``OBJECT_GRAB_RAY_DISTANCE``: A distância the :ref:`Raycast <class_Raycast>` "
+"pecorre. Esta é a distância de agarrar do jogador."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:471
 msgid ""
 "With that done, all we need to do is add some code to ``process_input``:"
 msgstr ""
+"Feito isso, tudo o que precisamos fazer é adicionar algum código ao `` "
+"process_input``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:509
 msgid "Let's go over what's happening."

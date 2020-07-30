@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr ""
+msgstr "Singletons (Entwurfsmuster/Einzelstück) - (AutoLoad)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:7
 msgid "Introduction"
@@ -31,12 +31,17 @@ msgid ""
 "no method for storing information (e.g. a player's score or inventory) that "
 "is needed by more than one scene."
 msgstr ""
+"Godot's Szenensystem, obwohl mächtig und flexibel, hat einen Nachteil: es "
+"gibt keine Möglichkeit Informationen zu speichern die in mehreren Szenen "
+"benötigt werden (z.B. ein Spielstand oder Inventar)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:13
 msgid ""
 "It's possible to address this with some workarounds, but they come with "
 "their own limitations:"
 msgstr ""
+"Es ist möglich dieses Problem anzugehen mit gewissen Zwischenlösungen, diese "
+"bieten jedoch auch Begrenzungen:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
 msgid ""
@@ -44,6 +49,10 @@ msgid ""
 "children. However, this means you can no longer run those scenes "
 "individually and expect them to work correctly."
 msgstr ""
+"Es kann eine übergeordnete Szene verwendet werden die die anderen lädt und "
+"entlädt und als 'Kinder' behandelt. Wie dem auch sei, dies bedeutet jedoch "
+"auch dass du nicht länger in der Lage sein würdest, jene Szenen individuell "
+"abzuspielen und zu erwarten, dass diese danach noch korrekt funktionieren."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:19
 msgid ""
@@ -51,6 +60,10 @@ msgid ""
 "that require it, but frequently saving and loading data is cumbersome and "
 "may be slow."
 msgstr ""
+"Informationen können auf der Festplatte unter ``Benutzer://`` gespeichert "
+"und dann von jeglichen Szenen die diese benötigen geladen werden. Jedoch "
+"wirkt sich oftmals wiederholendes Speichern und Laden von Daten abwürgend "
+"aus und kann die Anwendung verlangsamen."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
 msgid ""
@@ -60,32 +73,42 @@ msgid ""
 "same scene or class for multiple singletons, so long as they have different "
 "names."
 msgstr ""
+"Das `Singleton Muster <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
+"ist ein nützliches Werkzeug um dauerhafte Informationen zwischen Szenen zu "
+"speichern. In diesem Fall ist es möglich die gleiche Szene oder Klasse für "
+"mehrere Einzelelemente zu nutzen, solange sie unterschiedliche Namen haben."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
 msgstr ""
+"Durch die Verwendung dieses Konzepts wird es dir ermöglicht, Objekte zu "
+"instanziieren die:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
 msgid "Are always loaded, no matter which scene is currently running"
 msgstr ""
+"Werden immer geladen, unabhängig davon welche Szene gerade abgespielt wird"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Can store global variables, such as player information"
-msgstr ""
+msgstr "Können globale Variablen, wie z.B. Spielerinformationen abspeichern"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
 msgid "Can handle switching scenes and between-scene transitions"
-msgstr ""
+msgstr "Zum umschalten von Szenen und wechseln zwischen Szenen"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
 msgid ""
 "Act like a singleton, since GDScript does not support global variables by "
 "design"
 msgstr ""
+"verhält sich wie ein Singleton, da GDScript keine globalen Variablen "
+"unterstützt"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
 msgstr ""
+"Automatisch ladende Nodes und Skripte können diese Eigenschaften haben."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
@@ -98,12 +121,19 @@ msgid ""
 "and the script will be attached to it. This node will be added to the root "
 "viewport before any other scenes are loaded."
 msgstr ""
+"Du kannst AutoLoad verwenden um eine Szene oder ein Skript zu laden dieses "
+"von :ref:`Node <class_Node>` vererbt wurde. Notiz: Bei des Autoloadens des "
+"Skripts wird ein Node erstellt und ein Skript wird daran angehängt. Dieses "
+"Node wird zum 'Root-Viewport' hinzugefügt und zwar noch bevor andere Szenen "
+"geladen werden."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:48
 msgid ""
 "To autoload a scene or script, select ``Project -> Project Settings`` from "
 "the menu and switch to the \"AutoLoad\" tab."
 msgstr ""
+"Um eine Szene oder ein Skript zu autoloaden, wähle ``Projekt -> "
+"Projekteinstellungen``aus dem Menü und wechsle auf den \"AutoLoad\"-Reiter."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
 msgid ""
@@ -112,18 +142,26 @@ msgid ""
 "order of the entries as they are added to the global scene tree can be "
 "manipulated using the up/down arrow keys."
 msgstr ""
+"Hier kann man eine beliebige Anzahl an Szenen oder Skripten hinzufügen. "
+"Jeder Eintrag in der Liste benötigt einen Namen, der als ``name``des Nodes "
+"zugewiesen wird. Die Reihenfolge der Einträge, die zum globalen Szenenbaum "
+"hinzugefügt werden, kann durch die hoch/runter Pfeiltasten verändert werden."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
 msgstr ""
+"Das bedeutet, dass ein Node auf ein Singleton namens \"SpielerVariablen\" "
+"zugreifen kann mit:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
 msgid ""
 "If the \"Enable\" column is checked (default ``true``) then the singleton "
 "can simply be accessed directly:"
 msgstr ""
+"Falls die \"Aktiviert\" Spalte angehakt ist (Standardmäßig ``wahr``), dann "
+"kann das Singleton direkt angesprochen werden:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -131,10 +169,14 @@ msgid ""
 "any other node in the scene tree. In fact, if you look at the running scene "
 "tree, you'll see the autoloaded nodes appear:"
 msgstr ""
+"Beachte, dass auf automatisch geladene Objekte (Skripte und/oder Szenen) "
+"genauso zugegriffen wird wie auf jedes andere Node innerhalb des "
+"Szenenbaums. Wenn man sich also den aktuellen Szenenbaum ansieht, sieht man "
+"die automatisch geladenen Nodes erscheinen:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid "Custom scene switcher"
-msgstr ""
+msgstr "Szenenwechsler"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
@@ -144,6 +186,11 @@ msgid ""
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
+"Diese Anleitung zeigt wie man einen Szenenwechler mittels AutoLoad baut. Für "
+"grundlegende Szenenwechsler kann man :ref:`SceneTree.change_scene() "
+"<class_SceneTree_method_change_scene>` method (see :ref:`doc_scene_tree`für "
+"Details) nutzen. Falls ein komplexeres Verhalten beim Szenenwechsel benötigt "
+"wird, bietet diese Methode mehr Flexibilität."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
 msgid ""
@@ -204,6 +251,11 @@ msgid ""
 "``global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
+"Zurück zum Skript, es muss sich die aktuelle Szene aus der `_ready()` "
+"Funktion holen. Sowohl die aktuelle Szene (die mit dem Button) und ``global."
+"gd`` sind Unterobjekte des Stammverzeichnisses, aber automatisch geladene "
+"Nodes kommen immer zuerst. Das bedeutet, dass das letzte Unterobjekt des "
+"Stammverzeichnisses immer die geladene Szene ist."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:158
 msgid ""
@@ -221,6 +273,11 @@ msgid ""
 "completed. Thus, the current scene will not be removed while it is still "
 "being used (i.e. its code is still running)."
 msgstr ""
+"Durch Nutzung von:ref:`Object.call_deferred() "
+"<class_Object_method_call_deferred>`wird die zweite Funktion nur ausgeführt, "
+"wenn das komplette Programm der aktuellen Szene beendet ist. Daher wird die "
+"aktuelle Szene nicht gelöscht, solange sie noch genutzt wird (z.B. Programm "
+"läuft noch)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
 msgid ""
@@ -248,3 +305,7 @@ msgid ""
 "appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`"
 msgstr ""
+"Beachte: Wenn Szenen kurz sind, ist der Wechsel unverzüglich. Bei "
+"komplexeren Szenen, gibt es möglicherweise einen merkbaren Zeitverzug bis "
+"zum erscheinen. Wie dies gehandhabt wird ist nachfolgend erklärt: :ref:"
+"`doc_background_loading`"

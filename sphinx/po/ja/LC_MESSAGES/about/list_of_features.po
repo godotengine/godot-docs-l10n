@@ -1,0 +1,1540 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/about/list_of_features.rst:4
+#, fuzzy
+msgid "List of features"
+msgstr "カスタム機能"
+
+#: ../../docs/about/list_of_features.rst:6
+msgid "This page aims to list all features currently supported by Godot."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:10
+msgid ""
+"This page lists features supported by the current stable version of Godot "
+"(3.2). `More features <https://docs.godotengine.org/en/latest/about/"
+"list_of_features.html>`__ are available in the latest development version "
+"(4.0)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:15
+msgid "Features"
+msgstr "特徴"
+
+#: ../../docs/about/list_of_features.rst:18
+#, fuzzy
+msgid "Platforms"
+msgstr "**プラットフォーム:**"
+
+#: ../../docs/about/list_of_features.rst:20
+msgid "**Can run both the editor and exported projects:**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:22
+msgid "Windows 7 and later (64-bit and 32-bit)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:23
+msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:27
+#, fuzzy
+msgid "Linux (64-bit and 32-bit, x86 and ARM)."
+msgstr "プラットフォームアーキテクチャ(64ビットまたは32ビット、x86またはARM)。"
+
+#: ../../docs/about/list_of_features.rst:25
+msgid ""
+"Binaries are statically linked and can run on any distribution if compiled "
+"on an old enough base distribution."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:27
+msgid "Official binaries are compiled on Ubuntu 14.04."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:29
+#, fuzzy
+msgid "**Runs exported projects:**"
+msgstr "プロジェクトのエクスポート"
+
+#: ../../docs/about/list_of_features.rst:31
+#, fuzzy
+msgid "Android 4.4 and later."
+msgstr "\\ Android SDK Platform"
+
+#: ../../docs/about/list_of_features.rst:32
+msgid "iOS 10.0 and later."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:33
+msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:34
+#, fuzzy
+msgid ":ref:`Consoles <doc_consoles>`."
+msgstr "\\ :ref:`bool <class_bool>`"
+
+#: ../../docs/about/list_of_features.rst:36
+msgid ""
+"Godot aims to be as platform-independent as possible and can be ported to "
+"new platforms with relative ease."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:40
+msgid "Editor"
+msgstr "エディタ"
+
+#: ../../docs/about/list_of_features.rst:42
+#: ../../docs/about/list_of_features.rst:77
+#: ../../docs/about/list_of_features.rst:311
+#, fuzzy
+msgid "**Features:**"
+msgstr "**フィーチャータグ**"
+
+#: ../../docs/about/list_of_features.rst:44
+#, fuzzy
+msgid "Scene tree editor."
+msgstr "シーンツリー"
+
+#: ../../docs/about/list_of_features.rst:45
+#, fuzzy
+msgid "Script editor."
+msgstr "スクリプトエディタ"
+
+#: ../../docs/about/list_of_features.rst:46
+msgid ""
+"Support for :ref:`external script editors <doc_external_editor>` such as "
+"Visual Studio Code or Vim."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:48
+msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:49
+msgid "No support for debugging in threads yet."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:50
+#, fuzzy
+msgid "Performance monitoring tools."
+msgstr "GodotにおけるC#のパフォーマンス"
+
+#: ../../docs/about/list_of_features.rst:51
+#, fuzzy
+msgid "Live script reloading."
+msgstr "ロード(load) 対 プリロード(preload)"
+
+#: ../../docs/about/list_of_features.rst:52
+#, fuzzy
+msgid "Live scene editing."
+msgstr "シーンの継承を使用する"
+
+#: ../../docs/about/list_of_features.rst:53
+msgid ""
+"Changes will reflect in the editor and will be kept after closing the "
+"running project."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:54
+#, fuzzy
+msgid "Remote inspector."
+msgstr "シーンドックのリモート"
+
+#: ../../docs/about/list_of_features.rst:55
+msgid ""
+"Changes won't reflect in the editor and won't be kept after closing the "
+"running project."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:56
+#, fuzzy
+msgid "Live camera replication."
+msgstr "カメラのアニメーション"
+
+#: ../../docs/about/list_of_features.rst:57
+msgid "Move the in-editor camera and see the result in the running project."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:58
+msgid "Use the editor in dozens of languages contributed by the community."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:60
+#, fuzzy
+msgid "**Plugins:**"
+msgstr "プラグイン"
+
+#: ../../docs/about/list_of_features.rst:62
+msgid ""
+"Editor plugins can be downloaded from the :ref:`asset library "
+"<doc_what_is_assetlib>` to extend editor functionality."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:64
+msgid ""
+"Create your own plugins using GDScript to add new features or speed up your "
+"workflow."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:65
+msgid ""
+"Download projects from the asset library in the project manager and import "
+"them directly."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:68
+msgid "2D graphics"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:70
+#: ../../docs/about/list_of_features.rst:124
+msgid "**Two renderers available:**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:72
+#: ../../docs/about/list_of_features.rst:127
+msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:73
+#: ../../docs/about/list_of_features.rst:127
+msgid "High-end visuals. Recommended on desktop platforms."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:75
+#: ../../docs/about/list_of_features.rst:133
+msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:75
+#: ../../docs/about/list_of_features.rst:130
+msgid "Recommended on mobile and Web platforms."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:79
+msgid "Sprite, polygon and line rendering."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:80
+msgid ""
+"High-level tools to draw lines and polygons such as Polygon2D and Line2D."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:81
+msgid "AnimatedSprite as a helper for creating animated sprites."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:82
+#, fuzzy
+msgid "Parallax layers."
+msgstr "キャンバス・レイヤー"
+
+#: ../../docs/about/list_of_features.rst:83
+msgid "Pseudo-3D support by automatically duplicating a layer several times."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:84
+msgid "2D lighting with normal maps."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:85
+msgid "Hard or soft shadows."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:90
+msgid ""
+"Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
+"(DynamicFont)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:87
+msgid "Bitmap fonts can be exported using tools like BMFont."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:88
+msgid ""
+"DynamicFont supports monochrome fonts as well as colored fonts. Supported "
+"formats are TTF and OTF."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:90
+msgid ""
+"DynamicFont supports optional font outlines with adjustable width and color."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:91
+msgid ""
+"Support for font oversampling to keep fonts sharp at higher resolutions."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:92
+msgid "GPU-based particles with support for custom particle shaders."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:93
+#: ../../docs/about/list_of_features.rst:195
+#, fuzzy
+msgid "CPU-based particles."
+msgstr "パーティクル"
+
+#: ../../docs/about/list_of_features.rst:96
+#, fuzzy
+msgid "2D tools"
+msgstr "\\ tool"
+
+#: ../../docs/about/list_of_features.rst:98
+msgid "2D camera with built-in smoothing and drag margins."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:100
+msgid "Path2D node to represent a path in 2D space."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:100
+#: ../../docs/about/list_of_features.rst:233
+msgid "Can be drawn in the editor or generated procedurally."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:101
+msgid "PathFollow2D node to make nodes follow a Path2D."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:102
+msgid "2D geometry helper class."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:103
+msgid "Line2D node to draw textured 2D lines."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:106
+#, fuzzy
+msgid "2D physics"
+msgstr "物理"
+
+#: ../../docs/about/list_of_features.rst:108
+#: ../../docs/about/list_of_features.rst:240
+#, fuzzy
+msgid "**Physics bodies:**"
+msgstr "物理演算のプロパティ"
+
+#: ../../docs/about/list_of_features.rst:110
+#: ../../docs/about/list_of_features.rst:242
+#, fuzzy
+msgid "Static bodies."
+msgstr "静的関数"
+
+#: ../../docs/about/list_of_features.rst:111
+#: ../../docs/about/list_of_features.rst:243
+#, fuzzy
+msgid "Rigid bodies."
+msgstr "リジッドボディのモード"
+
+#: ../../docs/about/list_of_features.rst:112
+#: ../../docs/about/list_of_features.rst:244
+#, fuzzy
+msgid "Kinematic bodies."
+msgstr "\\ KinematicBody2D"
+
+#: ../../docs/about/list_of_features.rst:113
+#: ../../docs/about/list_of_features.rst:246
+msgid "Joints."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:114
+#: ../../docs/about/list_of_features.rst:249
+msgid "Areas to detect bodies entering or leaving it."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:116
+#: ../../docs/about/list_of_features.rst:251
+#, fuzzy
+msgid "**Collision detection:**"
+msgstr "3Dでの衝突検出"
+
+#: ../../docs/about/list_of_features.rst:118
+msgid "Built-in shapes: line, box, circle, capsule."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:119
+msgid ""
+"Collision polygons (can be drawn manually or generated from a sprite in the "
+"editor)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:122
+msgid "3D graphics"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:128
+#, fuzzy
+msgid "HDR rendering with sRGB."
+msgstr "3Dのパフォーマンスと制限"
+
+#: ../../docs/about/list_of_features.rst:131
+#, fuzzy
+msgid "LDR rendering for greater compatibility."
+msgstr "スペキュラーをフォンに(互換性が高い)。"
+
+#: ../../docs/about/list_of_features.rst:132
+msgid ""
+"Not all features are available. Features available only when using the "
+"OpenGL ES 3.0 renderer are marked *GLES3* below."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:135
+#, fuzzy
+msgid "**Camera:**"
+msgstr "**カテゴリ:**"
+
+#: ../../docs/about/list_of_features.rst:137
+msgid "Perspective, orthographic and frustum-offset cameras."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:139
+msgid "**Physically-based rendering:**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:141
+msgid "Follows the Disney PBR model."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:142
+msgid "Uses a roughness-metallic workflow with support for ORM textures."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:143
+#, fuzzy
+msgid "Normal mapping."
+msgstr "Normalmap(法線マップ)"
+
+#: ../../docs/about/list_of_features.rst:144
+msgid ""
+"*GLES3:* Parallax/relief mapping with automatic level of detail based on "
+"distance."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:145
+msgid "*GLES3:* Sub-surface scattering and transmittance."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:146
+msgid "*GLES3:* Proximity fade (soft particles)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:147
+msgid ""
+"Distance fade which can use alpha blending or dithering to avoid going "
+"through the transparent pipeline."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:149
+msgid "Dithering can be determined on a per-pixel or per-object basis."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:151
+#, fuzzy
+msgid "**Real-time lighting:**"
+msgstr "\\ **vertex_lighting**"
+
+#: ../../docs/about/list_of_features.rst:153
+msgid "Directional lights (sun/moon). Up to 4 per scene."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:154
+#, fuzzy
+msgid "Omnidirectional lights."
+msgstr "指向性(Directional)ライト"
+
+#: ../../docs/about/list_of_features.rst:155
+msgid "Spot lights with adjustable cone angle and attenuation."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:157
+#, fuzzy
+msgid "**Shadow mapping:**"
+msgstr "シャドウマッピング"
+
+#: ../../docs/about/list_of_features.rst:159
+msgid ""
+"*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
+"blending between splits."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:161
+msgid ""
+"*OmniLight:* Dual parabolid (fast) or cubemap (slower but more accurate). "
+"Supports colored projector textures in the form of panoramas."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:163
+#, fuzzy
+msgid "*SpotLight:* Single texture."
+msgstr "ライトテクスチャのUV。"
+
+#: ../../docs/about/list_of_features.rst:165
+msgid "**Global illumination with indirect lighting:**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:167
+msgid "Baked lightmaps (fast, but can't be updated at run-time)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:168
+msgid "Lightmaps are baked on the CPU."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:169
+msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:171
+#, fuzzy
+msgid "**Reflections:**"
+msgstr "反射"
+
+#: ../../docs/about/list_of_features.rst:173
+msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:174
+msgid ""
+"Fast baked reflections or slow real-time reflections using ReflectionProbe. "
+"Parallax correction can optionally be enabled."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:176
+#, fuzzy
+msgid "*GLES3:* Screen-space reflections."
+msgstr "スクリーンスペースリフレクション"
+
+#: ../../docs/about/list_of_features.rst:177
+msgid "Reflection techniques can be mixed together for greater accuracy."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:179
+msgid "**Sky:**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:181
+msgid "Panorama sky (using an HDRI)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:182
+#, fuzzy
+msgid "Procedural sky."
+msgstr "手続き型ジオメトリ(幾何)"
+
+#: ../../docs/about/list_of_features.rst:184
+msgid "**Fog:**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:186
+msgid "Depth fog with an adjustable attenuation curve."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:187
+msgid "Height fog (floor or ceiling) with adjustable attenuation."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:188
+msgid ""
+"Support for automatic depth fog color depending on the camera direction (to "
+"match the sun color)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:190
+msgid "Optional transmittance to make lights more visible in the fog."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:192
+#, fuzzy
+msgid "**Particles:**"
+msgstr "パーティクル"
+
+#: ../../docs/about/list_of_features.rst:194
+msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:197
+#, fuzzy
+msgid "**Post-processing:**"
+msgstr "カスタムポストプロセッシング"
+
+#: ../../docs/about/list_of_features.rst:199
+#, fuzzy
+msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
+msgstr ""
+"**Mode:** トーンマッピングモード、Linear、Reindhart、Filmic、またはAcesのいず"
+"れかです。"
+
+#: ../../docs/about/list_of_features.rst:200
+msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:201
+msgid "*GLES3:* Near and far depth of field."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:202
+#, fuzzy
+msgid "*GLES3:* Screen-space ambient occlusion."
+msgstr "スクリーンスペースアンビエントオクルージョン"
+
+#: ../../docs/about/list_of_features.rst:203
+msgid ""
+"Glow/bloom with optional bicubic upscaling and several blend modes "
+"available: Screen, Soft Light, Add, Replace."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:205
+msgid "Color correction using an one-dimensional ramp."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:206
+msgid "Brightness, contrast and saturation adjustments."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:208
+#, fuzzy
+msgid "**Texture filtering:**"
+msgstr "**フィーチャータグ**"
+
+#: ../../docs/about/list_of_features.rst:210
+msgid "Nearest, bilinear, trilinear or anisotropic filtering."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:212
+#, fuzzy
+msgid "**Texture compression:**"
+msgstr "テクスチャ圧縮"
+
+#: ../../docs/about/list_of_features.rst:214
+msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:215
+msgid "*GLES3:* ETC2 (not supported on macOS)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:216
+msgid "ETC1 (recommended when using the GLES2 renderer)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:217
+msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:219
+msgid "**Anti-aliasing:**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:221
+#, fuzzy
+msgid "Multi-sample antialiasing (MSAA)."
+msgstr "複数のインスタンス"
+
+#: ../../docs/about/list_of_features.rst:223
+msgid ""
+"Most of these effects can be adjusted for better performance or to further "
+"improve quality. This can be helpful when using Godot for offline rendering."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:227
+#, fuzzy
+msgid "3D tools"
+msgstr "\\ tool"
+
+#: ../../docs/about/list_of_features.rst:229
+msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:230
+#, fuzzy
+msgid ""
+"Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
+msgstr "\\ :ref:`手続き型ジオメトリ <toc-procedural_geometry>`"
+
+#: ../../docs/about/list_of_features.rst:231
+msgid ""
+":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
+"prototyping)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:233
+msgid "Path3D node to represent a path in 3D space."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:234
+msgid "PathFollow3D node to make nodes follow a Path3D."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:235
+msgid "3D geometry helper class."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:238
+#, fuzzy
+msgid "3D physics"
+msgstr "物理"
+
+#: ../../docs/about/list_of_features.rst:245
+msgid "Vehicle bodies (intended for arcade physics, not simulation)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:247
+#, fuzzy
+msgid "Soft bodies."
+msgstr "\\ SoftBody"
+
+#: ../../docs/about/list_of_features.rst:248
+#, fuzzy
+msgid "Ragdolls."
+msgstr "ラグドールシステム"
+
+#: ../../docs/about/list_of_features.rst:253
+msgid ""
+"Built-in shapes: cuboid, sphere, capsule, cylinder (only with Bullet "
+"physics)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:254
+msgid "Generate triangle collision shapes for any mesh from the editor."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:255
+msgid ""
+"Generate one or several convex collision shapes for any mesh from the editor."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:258
+msgid "Shaders"
+msgstr "シェーダー"
+
+#: ../../docs/about/list_of_features.rst:260
+msgid "*2D:* Custom vertex, fragment, and light shaders."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:261
+msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:262
+msgid ""
+"Text-based shaders using a `shader language inspired by GLSL "
+"<doc_shading_language>`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:264
+#, fuzzy
+msgid "Visual shader editor."
+msgstr "ビジュアルシェーダーエディタの使用"
+
+#: ../../docs/about/list_of_features.rst:264
+#, fuzzy
+msgid "Support for visual shader plugins."
+msgstr "ビジュアルシェーダープラグイン"
+
+#: ../../docs/about/list_of_features.rst:267
+msgid "Scripting"
+msgstr "スクリプト"
+
+#: ../../docs/about/list_of_features.rst:269
+#, fuzzy
+msgid "**General:**"
+msgstr "一般"
+
+#: ../../docs/about/list_of_features.rst:271
+#, fuzzy
+msgid "Object-oriented design pattern with scripts extending nodes."
+msgstr "オブジェクト指向の設計と構成"
+
+#: ../../docs/about/list_of_features.rst:272
+msgid "Signals and groups for communicating between scripts."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:273
+msgid ""
+"Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:274
+msgid ""
+"Many 2D and 3D linear algebra data types such as vectors and transforms."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:276
+msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:278
+#, fuzzy
+msgid ""
+":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
+"static typing <doc_gdscript_static_typing>`."
+msgstr ""
+"Godot 3.1から、GDScriptはオプショナルな静的型付けをサポートしています。"
+
+#: ../../docs/about/list_of_features.rst:280
+msgid "Syntax inspired by Python."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:281
+msgid "Syntax highlighting is provided on GitHub."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:282
+msgid ""
+":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
+"actions or make use of multiple processor cores."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:285
+msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:287
+msgid "Packaged in a separate binary to keep file sizes and dependencies down."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:288
+msgid "Uses Mono 6.x."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:289
+msgid "Full support for the C# 7.0 syntax and features."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:290
+#, fuzzy
+msgid "Supports all platforms."
+msgstr "サポートされている画像形式"
+
+#: ../../docs/about/list_of_features.rst:291
+msgid ""
+"Using an external editor is recommended to benefit from IDE functionality."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:293
+msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:295
+msgid ""
+":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:296
+msgid ""
+"Works best when used for specific purposes (such as level-specific logic) "
+"rather than as a language to create entire projects."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:299
+msgid "**GDNative (C, C++, Rust, D, ...):**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:302
+msgid ""
+"When you need it, link to native libraries for higher performance and third-"
+"party integrations."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:302
+msgid ""
+"For scripting game logic, GDScript or C# are recommended if their "
+"performance is suitable."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:304
+msgid "Official bindings for C and C++."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:305
+msgid "Use any build system and language features you wish."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:306
+msgid ""
+"Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the "
+"community."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:309
+msgid "Audio"
+msgstr "オーディオ"
+
+#: ../../docs/about/list_of_features.rst:313
+msgid "Mono, stereo, 5.1 and 7.1 output."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:314
+msgid "Non-positional and positional playback in 2D and 3D."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:315
+msgid "Optional Doppler effect in 2D and 3D."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:316
+msgid ""
+"Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:317
+#, fuzzy
+msgid "Dozens of effects included."
+msgstr "例に含まれるのは……"
+
+#: ../../docs/about/list_of_features.rst:318
+msgid ""
+"Listener3D node to listen from a position different than the camera in 3D."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:319
+msgid "Audio input to record microphones."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:321
+#, fuzzy
+msgid "MIDI input."
+msgstr "入力"
+
+#: ../../docs/about/list_of_features.rst:321
+msgid "No support for MIDI output yet."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:323
+msgid "**APIs used:**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:325
+#, fuzzy
+msgid "*Windows:* WASAPI."
+msgstr "\\ **Windows**"
+
+#: ../../docs/about/list_of_features.rst:326
+msgid "*macOS:* CoreAudio."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:327
+msgid "*Linux:* PulseAudio or ALSA."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:330
+#, fuzzy
+msgid "Import"
+msgstr "インポート"
+
+#: ../../docs/about/list_of_features.rst:332
+#, fuzzy
+msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
+msgstr ":ref:`カスタム型<doc_making_plugins>`"
+
+#: ../../docs/about/list_of_features.rst:334
+#, fuzzy
+msgid "**Formats:**"
+msgstr "**プラットフォーム:**"
+
+#: ../../docs/about/list_of_features.rst:336
+msgid "*Images:* See :ref:`doc_importing_images_supported_formats`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:338
+#, fuzzy
+msgid "*Audio:*"
+msgstr "オーディオ"
+
+#: ../../docs/about/list_of_features.rst:338
+msgid "WAV with optional IMA-ADPCM compression."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:339
+msgid "Ogg Vorbis."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:346
+#, fuzzy
+msgid "*3D scenes:*"
+msgstr "シーン"
+
+#: ../../docs/about/list_of_features.rst:341
+msgid "glTF 2.0 *(recommended)*."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:342
+#, fuzzy
+msgid ""
+"`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
+"export from Blender)."
+msgstr "\\ https://github.com/godotengine/godot-demo-projects"
+
+#: ../../docs/about/list_of_features.rst:344
+msgid "FBX (experimental)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:345
+msgid "Collada (.dae)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:346
+msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:349
+msgid "Input"
+msgstr "入力"
+
+#: ../../docs/about/list_of_features.rst:352
+msgid ""
+"Input mapping system using hardcoded input events or remappable input "
+"actions."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:352
+msgid ""
+"Axis values can be mapped to two different actions with a configurable "
+"deadzone."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:353
+msgid "Use the same code to support both keyboards and gamepads."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:354
+#, fuzzy
+msgid "Keyboard input."
+msgstr "キーボードイベント"
+
+#: ../../docs/about/list_of_features.rst:357
+#, fuzzy
+msgid "Mouse input."
+msgstr "マウスイベント"
+
+#: ../../docs/about/list_of_features.rst:356
+msgid ""
+"The mouse cursor can be visible, hidden, captured or confined within the "
+"window."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:357
+msgid ""
+"When captured, raw input will be used on Windows and Linux to sidestep the "
+"OS' mouse acceleration settings."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:359
+msgid "Gamepad input (up to 8 simulatenous controllers)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:360
+msgid "Pen/tablet input with pressure support."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:363
+#, fuzzy
+msgid "Navigation"
+msgstr "ナビゲーションモード"
+
+#: ../../docs/about/list_of_features.rst:365
+msgid "A* algorithm in 2D and 3D."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:366
+#, fuzzy
+msgid "Navigation meshes."
+msgstr "ナビゲーションモード"
+
+#: ../../docs/about/list_of_features.rst:367
+msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:368
+msgid "Generate navigation meshes from the editor."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:371
+msgid "Networking"
+msgstr "ネットワーク"
+
+#: ../../docs/about/list_of_features.rst:373
+msgid "Low-level TCP networking using StreamPeer and TCP_Server."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:374
+msgid "Low-level UDP networking using PacketPeer and UDPServer."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:375
+msgid "Low-level HTTP requests using HTTPClient."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:376
+msgid "High-level HTTP requests using HTTPRequest."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:377
+msgid "Supports HTTPS out of the box using bundled certificates."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:379
+#, fuzzy
+msgid "High-level multiplayer API using UDP and ENet."
+msgstr "高レベルのマルチプレイヤー"
+
+#: ../../docs/about/list_of_features.rst:379
+msgid "Automatic replication using remote procedure calls (RPCs)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:380
+msgid "Supports unreliable, reliable and ordered transfers."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:381
+msgid "WebSocket client and server, available on all platforms."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:382
+msgid "WebRTC client and server, available on all platforms."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:383
+msgid ""
+"Support for UPnP to sidestep the requirement to forward ports when hosting a "
+"server behind a NAT."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:387
+msgid "Internationalization"
+msgstr "国際化"
+
+#: ../../docs/about/list_of_features.rst:389
+msgid "Full support for Unicode including emoji."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:390
+msgid ""
+"Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
+"or :ref:`gettext <doc_localization_using_gettext>`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:392
+msgid ""
+"Use localized strings in your project automatically in GUI elements or by "
+"using the ``tr()`` function."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:394
+msgid ""
+"Support for right-to-left typesetting and text shaping planned in Godot 4.0."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:397
+msgid "Windowing and OS integration"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:399
+msgid "Move, resize, minimize, and maximize the window spawned by the project."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:400
+#, fuzzy
+msgid "Change the window title and icon."
+msgstr "ファイル・アイコンの変更"
+
+#: ../../docs/about/list_of_features.rst:401
+msgid ""
+"Request attention (will cause the title bar to blink on most platforms)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:403
+#, fuzzy
+msgid "Fullscreen mode."
+msgstr "全画面表示モードを指定します。"
+
+#: ../../docs/about/list_of_features.rst:403
+msgid ""
+"Doesn't use exclusive fullscreen, so the screen resolution can't be changed "
+"this way. Use a Viewport with a different resolution instead."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:405
+msgid "Borderless window (fullscreen or non-fullscreen)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:406
+msgid "Ability to keep the window always on top."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:407
+msgid "Transparent window with per-pixel transparency."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:408
+msgid "Global menu integration on macOS."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:409
+msgid "Execute commands in a blocking or non-blocking manner."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:410
+msgid ""
+"Open file paths and URLs using default or custom protocol handlers (if "
+"registered on the system)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:411
+#, fuzzy
+msgid "Parse custom command line arguments."
+msgstr "コマンドライン引数。"
+
+#: ../../docs/about/list_of_features.rst:414
+#, fuzzy
+msgid "Mobile"
+msgstr "モバイル上"
+
+#: ../../docs/about/list_of_features.rst:416
+#, fuzzy
+msgid "In-app purchases on Android and iOS."
+msgstr "アプリ内購入"
+
+#: ../../docs/about/list_of_features.rst:417
+msgid "Support for advertisements using third-party modules."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:420
+msgid "XR support (AR and VR)"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:422
+msgid "Support for ARKit on iOS out of the box."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:423
+msgid "Support for the OpenXR and OpenVR APIs."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:424
+msgid ""
+"Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
+"to plugins."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:427
+#, fuzzy
+msgid "GUI system"
+msgstr "ファイルシステム"
+
+#: ../../docs/about/list_of_features.rst:429
+msgid ""
+"Godot's GUI is built using the same Control nodes used to make games in "
+"Godot. The editor UI can easily be extended in many ways using add-ons."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:432
+#, fuzzy
+msgid "**Nodes:**"
+msgstr "ノード"
+
+#: ../../docs/about/list_of_features.rst:434
+#, fuzzy
+msgid "Buttons."
+msgstr "Button"
+
+#: ../../docs/about/list_of_features.rst:435
+msgid "Checkboxes, check buttons, radio buttons."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:436
+msgid "Text entry using LineEdit (single line) and TextEdit (multiple lines)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:437
+msgid "Dropdown menus using PopupMenu and OptionButton."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:438
+#, fuzzy
+msgid "Scrollbars."
+msgstr "スクロールコンテナ"
+
+#: ../../docs/about/list_of_features.rst:439
+#, fuzzy
+msgid "Labels."
+msgstr "ラベル"
+
+#: ../../docs/about/list_of_features.rst:440
+msgid ""
+"RichTextLabel for :ref:`text formatted using BBCode "
+"<doc_bbcode_in_richtextlabel>`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:441
+msgid "Trees (can also be used to represent tables)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:442
+msgid ""
+"Containers (horizontal, vertical, grid, center, margin, draggable "
+"splitter, ...)."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:443
+msgid "Controls can be rotated and scaled."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:445
+#, fuzzy
+msgid "**Sizing:**"
+msgstr "サイズ変更"
+
+#: ../../docs/about/list_of_features.rst:447
+msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:452
+#, fuzzy
+msgid "Containers to place GUI elements automatically following certain rules."
+msgstr "UI要素を自動的に配置するコンテナを追加する"
+
+#: ../../docs/about/list_of_features.rst:449
+#, fuzzy
+msgid ":ref:`Stack <class_BoxContainer>` layouts."
+msgstr "\\ :ref:`String <class_String>`"
+
+#: ../../docs/about/list_of_features.rst:450
+#, fuzzy
+msgid ":ref:`Grid <class_GridContainer>` layouts."
+msgstr "\\ :ref:`Sprite <class_Sprite>`"
+
+#: ../../docs/about/list_of_features.rst:451
+msgid ""
+":ref:`Margin <class_MarginContainer>` and :ref:`centered "
+"<class_CenterContainer>` layouts."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:453
+msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:454
+msgid ""
+"Scale to multiple resolutions using the ``2d`` or ``viewport`` stretch modes."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:455
+msgid ""
+"Support any aspect ratio using anchors and the ``expand`` stretch aspect."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:457
+msgid "**Theming:**"
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:459
+#, fuzzy
+msgid "Built-in theme editor."
+msgstr "エディタの実行"
+
+#: ../../docs/about/list_of_features.rst:460
+msgid "Generate a theme based on the current editor theme settings."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:461
+msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:462
+msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:463
+msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:465
+msgid ""
+"Godot's small distribution size can make it a suitable alternative to "
+"frameworks like Electron or Qt."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:469
+msgid "Animation"
+msgstr "アニメーション"
+
+#: ../../docs/about/list_of_features.rst:471
+msgid "Direct kinematics and inverse kinematics."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:472
+msgid "Support for animating any property with customizable interpolation."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:473
+msgid "Support for calling methods in animation tracks."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:474
+msgid "Support for playing sounds in animation tracks."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:475
+msgid "Support for Bézier curves in animation."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:478
+#, fuzzy
+msgid "Formats"
+msgstr "フォーマット"
+
+#: ../../docs/about/list_of_features.rst:481
+msgid ""
+"Scenes and resources can be saved in :ref:`text-based "
+"<doc_tscn_file_format>` or binary formats."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:481
+msgid ""
+"Text-based formats are human-readable and more friendly to version control."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:482
+msgid "Binary formats are faster to save/load for large scenes/resources."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:483
+msgid "Read and write text or binary files using :ref:`class_File`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:484
+msgid "Can optionally be compressed or encrypted."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:485
+msgid "Read and write :ref:`class_JSON` files."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:486
+msgid ""
+"Read and write INI-style configuration files using :ref:`class_ConfigFile`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:487
+msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:488
+msgid "Read XML files using :ref:`class_XMLParser`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:489
+msgid ""
+"Pack game data into a PCK file (custom format optimized for fast seeking), "
+"into a ZIP archive, or directly into the executable for single-file "
+"distribution."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:491
+msgid ""
+":ref:`Export additional PCK files<doc_exporting_pcks>` that can be read by "
+"the engine to support mods and DLCs."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:495
+msgid "Miscellaneous"
+msgstr "その他"
+
+#: ../../docs/about/list_of_features.rst:497
+msgid ""
+":ref:`Low-level access to servers <doc_using_servers>` which allows "
+"bypassing the scene tree's overhead when needed."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:501
+#, fuzzy
+msgid "Command line interface for automation."
+msgstr "コマンドライン引数。"
+
+#: ../../docs/about/list_of_features.rst:500
+msgid "Export and deploy projects using continuous integration platforms."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:501
+#, fuzzy
+msgid ""
+"`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
+"dist/shell>`__ are available for Bash, zsh and fish."
+msgstr ""
+"`エディタ/アイコン <https://github.com/godotengine/godot/tree/master/editor/"
+"icons>`__"
+
+#: ../../docs/about/list_of_features.rst:503
+msgid ""
+"Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked "
+"into the engine binary."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:510
+msgid "Engine and editor written in C++03."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:506
+#, fuzzy
+msgid ""
+"Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, "
+"Clang and MSVC. MinGW is also supported."
+msgstr ""
+"GodotのUIシステムの仕組みを知るには、まず\\ :doc:"
+"`ui_introduction_to_the_ui_system`\\ を見て下さい。"
+
+#: ../../docs/about/list_of_features.rst:508
+msgid ""
+"Friendly towards packagers: in most cases, system libraries can be used "
+"instead of the ones provided by Godot. The build system doesn't download "
+"anything. Builds can be fully reproducible."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:511
+msgid "Godot 4.0 will be written in C++17."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:513
+msgid "Licensed under the permissive MIT license."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:513
+msgid ""
+"Open developement process with :ref:`contributions welcome "
+"<doc_ways_to_contribute>`."
+msgstr ""
+
+#: ../../docs/about/list_of_features.rst:517
+msgid ""
+"The `roadmap <https://github.com/godotengine/godot-roadmap>`__ repository "
+"documents features that have been agreed upon and may be implemented in "
+"future Godot releases."
+msgstr ""
+"ロードマップ <https://github.com/godotengine/godot-roadmap>`__ リポジトリに"
+"は、合意された機能や、今後の Godot リリースで実装される可能性のある機能が記載"
+"されています。"

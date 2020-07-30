@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,7 +159,7 @@ msgstr ""
 "まず、いくつかの変数を設定し、ゲームのメインシーンで ``current_scene`` を初期"
 "化します:"
 
-#: ../../docs/tutorials/io/background_loading.rst:106
+#: ../../docs/tutorials/io/background_loading.rst:107
 msgid ""
 "The function ``goto_scene`` is called from the game when the scene needs to "
 "be switched. It requests an interactive loader, and calls "
@@ -173,7 +173,7 @@ msgstr ""
 "た、プログレスバーまたはロード画面を表示できる「ロード」アニメーションも開始"
 "します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:128
+#: ../../docs/tutorials/io/background_loading.rst:129
 msgid ""
 "``_process`` is where the loader is polled. ``poll`` is called, and then we "
 "deal with the return value from that call. ``OK`` means keep polling, "
@@ -187,7 +187,7 @@ msgstr ""
 "発生したことを意味します。また、ロード画面が表示されるように、1フレームをス"
 "キップします( ``wait_frames`` を介して、\\ ``goto_scene`` 関数で設定)。"
 
-#: ../../docs/tutorials/io/background_loading.rst:134
+#: ../../docs/tutorials/io/background_loading.rst:135
 msgid ""
 "Note how we use ``OS.get_ticks_msec`` to control how long we block the "
 "thread. Some stages might load fast, which means we might be able to cram "
@@ -201,7 +201,7 @@ msgstr ""
 "``time_max`` の値よりもはるかに大きくなる可能性があるため、タイミングを正確に"
 "制御できないことに注意してください。"
 
-#: ../../docs/tutorials/io/background_loading.rst:170
+#: ../../docs/tutorials/io/background_loading.rst:172
 msgid ""
 "Some extra helper functions. ``update_progress`` updates a progress bar, or "
 "can also update a paused animation (the animation represents the entire load "
@@ -215,11 +215,11 @@ msgstr ""
 "ンをツリーに置きます。 ロードされるシーンなので、ローダーから取得したリソース"
 "で ``instance()`` を呼び出す必要があります。"
 
-#: ../../docs/tutorials/io/background_loading.rst:195
+#: ../../docs/tutorials/io/background_loading.rst:199
 msgid "Using multiple threads"
 msgstr "複数のスレッドの使用"
 
-#: ../../docs/tutorials/io/background_loading.rst:197
+#: ../../docs/tutorials/io/background_loading.rst:201
 msgid ""
 "ResourceInteractiveLoader can be used from multiple threads. A couple of "
 "things to keep in mind if you attempt it:"
@@ -227,11 +227,11 @@ msgstr ""
 "リソースインタラクティブローダーは、複数のスレッドから使用できます。以下の点"
 "に注意してください:"
 
-#: ../../docs/tutorials/io/background_loading.rst:201
+#: ../../docs/tutorials/io/background_loading.rst:205
 msgid "Use a semaphore"
 msgstr "セマフォを使用する"
 
-#: ../../docs/tutorials/io/background_loading.rst:203
+#: ../../docs/tutorials/io/background_loading.rst:207
 msgid ""
 "While your thread waits for the main thread to request a new resource, use a "
 "``Semaphore`` to sleep (instead of a busy loop or anything similar)."
@@ -240,11 +240,11 @@ msgstr ""
 "ループまたは同様のものの代わりに) ``セマフォ(Semaphore)`` を使用してスリープ"
 "します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:207
+#: ../../docs/tutorials/io/background_loading.rst:211
 msgid "Not blocking main thread during the polling"
 msgstr "ポーリング中にメイン スレッドをブロックしない"
 
-#: ../../docs/tutorials/io/background_loading.rst:209
+#: ../../docs/tutorials/io/background_loading.rst:213
 msgid ""
 "If you have a mutex to allow calls from the main thread to your loader "
 "class, don't lock the main thread while you call ``poll`` on your loader "
@@ -261,11 +261,11 @@ msgstr ""
 "機している間にメインスレッドがミューテックスを待機している場合、デッドロック"
 "を引き起こす可能性があります。"
 
-#: ../../docs/tutorials/io/background_loading.rst:218
+#: ../../docs/tutorials/io/background_loading.rst:222
 msgid "Example class"
 msgstr "サンプルクラス"
 
-#: ../../docs/tutorials/io/background_loading.rst:220
+#: ../../docs/tutorials/io/background_loading.rst:224
 msgid ""
 "You can find an example class for loading resources in threads here: :"
 "download:`resource_queue.gd <files/resource_queue.gd>`. Usage is as follows:"
@@ -273,11 +273,11 @@ msgstr ""
 "スレッドでリソースをロードするためのサンプルクラスはここです: :download:"
 "`resource_queue.gd <files/resource_queue.gd>`\\ 。使用法は次のとおりです:"
 
-#: ../../docs/tutorials/io/background_loading.rst:227
+#: ../../docs/tutorials/io/background_loading.rst:231
 msgid "Call after you instance the class to start the thread."
 msgstr "スレッドを開始するクラスをインスタンスした後に呼び出します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:233
+#: ../../docs/tutorials/io/background_loading.rst:237
 msgid ""
 "Queue a resource. Use optional argument \"p_in_front\" to put it in front of "
 "the queue."
@@ -285,18 +285,18 @@ msgstr ""
 "リソースをキューに入れます。キューの先頭に置く場合は、オプションの引数 "
 "\"p_in_front\" を使用します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:240
+#: ../../docs/tutorials/io/background_loading.rst:244
 msgid "Remove a resource from the queue, discarding any loading done."
 msgstr "キューからリソースを削除し、行われた読み込みを破棄します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:246
+#: ../../docs/tutorials/io/background_loading.rst:250
 msgid ""
 "Returns ``true`` if a resource is fully loaded and ready to be retrieved."
 msgstr ""
 "リソースが完全に読み込まれて取得できる状態にある場合は、\\ ``true`` を返しま"
 "す。"
 
-#: ../../docs/tutorials/io/background_loading.rst:252
+#: ../../docs/tutorials/io/background_loading.rst:256
 msgid ""
 "Get the progress of a resource. Returns -1 if there was an error (for "
 "example if the resource is not in the queue), or a number between 0.0 and "
@@ -309,7 +309,7 @@ msgstr ""
 "を返します。主に装飾を目的(進行状況バーの更新など)に使用し、\\ ``is_ready`` "
 "を使用してリソースが実際に準備できているかどうかを確認します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:262
+#: ../../docs/tutorials/io/background_loading.rst:266
 msgid ""
 "Returns the fully loaded resource, or ``null`` on error. If the resource is "
 "not fully loaded (``is_ready`` returns ``false``), it will block your thread "
@@ -321,11 +321,11 @@ msgstr ""
 "レッドがブロックされ、読み込みが終了します。リソースがキューにない場合は "
 "``ResourceLoader::load`` を呼び出して、通常どおりに読み込んで返します。"
 
-#: ../../docs/tutorials/io/background_loading.rst:268
+#: ../../docs/tutorials/io/background_loading.rst:272
 msgid "Example:"
 msgstr "例:"
 
-#: ../../docs/tutorials/io/background_loading.rst:298
+#: ../../docs/tutorials/io/background_loading.rst:305
 #, fuzzy
 msgid ""
 "**Note**: this code, in its current form, is not tested in real world "

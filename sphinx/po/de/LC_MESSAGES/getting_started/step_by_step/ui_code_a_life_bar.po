@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgstr "Wie man eine GUI mit GDScript **kontrolliert**"
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
 msgstr ""
-"Wie man eine Lebensbar mit  einer :ref:`Tween <class_Tween>`-Node animiert"
+"Wie man eine Lebensbar mit einer :ref:`Tween <class_Tween>`-Node animiert"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:25
 msgid ""
@@ -446,7 +446,6 @@ msgstr ""
 "mit dem neuen Wert aufgerufen und verhindert damit diese Fehler."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
-#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
@@ -463,9 +462,9 @@ msgstr ""
 "direkte Zugriff auf Funktionen anderer Klassen bzw. Nodes. Es kann in "
 "Ordnung sein, dass Elternknoten Werte von den Kindknoten erhalten, aber bei "
 "der Kommunikation von Knoten in unterschiedlichen Verzweigungen sollten "
-"Signals bevorzugt werden. Im Buch \"Game Programming Patterns\", das online "
-"kostenlos verfügbar ist, ist das Observer Pattern noch detaillierter "
-"beschrieben: <http://gameprogrammingpatterns.com/observer.html>"
+"Signals bevorzugt werden. Im kostenlosen Online verfügbaren Buch \"Game "
+"Programming Patterns\", ist das Observer Pattern noch detaillierter "
+"beschrieben: <http://gameprogrammingpatterns.com/observer.html>."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
 msgid ""
@@ -482,8 +481,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:224
 msgid "The first section lists custom signals defined in ``Player.gd``:"
 msgstr ""
-"Der erste Abschnitt zeigt die eigenen Signale, welche in ``Player.gd`` "
-"definiert sind."
+"Der erste Abschnitt zeigt die selbst erstellten Signale, welche in ``Player."
+"gd`` definiert sind."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:226
 msgid ""
@@ -529,8 +528,7 @@ msgid ""
 "You can optionally connect nodes from the code. However doing it from the "
 "editor has two advantages:"
 msgstr ""
-"Man kann optional auch Signale im Code verbinden. Dies jedoch im Editor zu "
-"tun hat zwei Vorteile:"
+"Man kann Signale auch im Code verbinden. Im Editor hat man aber 2 Vorteile:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
 msgid "Godot can write new callback functions for you in the connected script"
@@ -573,9 +571,9 @@ msgid ""
 "the name with anything you'd like."
 msgstr ""
 "Wenn eine Node im Editor verbunden wird, generiert Godot eine Methode nach "
-"dem folgenden Musster:\n"
-"``_on_EmitterName_signal_name``. Falls die Methode bereits existiert, bleibt "
-"die \"Erstelle Funktion\". Der Name kann nach belieben verändert werden."
+"dem folgenden Musster: ``_on_EmitterName_signal_name``. Falls die Methode "
+"bereits existiert, bleibt die \"Erstelle Funktion\". Der Name kann nach "
+"belieben verändert werden."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
 msgid "Godot writes the callback method for you and takes you to it"

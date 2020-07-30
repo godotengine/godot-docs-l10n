@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,7 +122,7 @@ msgid ""
 msgstr ""
 "Он содержит корень :ref:`Viewport <class_Viewport>`, к которому сцена "
 "добавляется как дочерняя, когда она впервые открывается то становится частью "
-"*древа сцен* (подробнее об этом ниже)"
+"*древа сцен* (подробнее об этом ниже)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:52
 msgid ""
@@ -221,7 +221,6 @@ msgid "Tree order"
 msgstr "Последовательность в древе"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:108
-#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
@@ -230,8 +229,8 @@ msgid ""
 msgstr ""
 "Большинство операций с узлами в Godot, таких как рисование в 2D, обработка "
 "или получение уведомлений, выполняются в древовидном порядке. Это означает, "
-"что родители и дети в порядке Древа Сцен с меньшим местом, получат "
-"уведомление раньше текущего узла."
+"что родители и дети с более низким рангом в дереве, получат уведомление "
+"раньше текущего узла."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
 msgid "\"Becoming active\" by entering the *Scene Tree*"
@@ -242,15 +241,13 @@ msgid "A scene is loaded from disk or created by scripting."
 msgstr "Сцена загружается с диска или создается с помощью скрипта."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:119
-#, fuzzy
 msgid ""
 "The root node of that scene (only one root, remember?) is added as either a "
 "child of the \"root\" Viewport (from SceneTree), or to any child or "
 "grandchild of it."
 msgstr ""
 "Корневой узел этой сцены (только один корень, помните?) добавляется либо как "
-"дочерний в \"корневое\" окно (из Древа Сцен), либо как дочерний в ней "
-"ребенок или внук."
+"дочерний \"корневого\" Viewport (из Древа Сцен), либо к любому его потомку."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:122
 msgid ""
@@ -283,30 +280,27 @@ msgid "Changing current scene"
 msgstr "Смена текущей сцены"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:135
-#, fuzzy
 msgid ""
 "After a scene is loaded, it is often desired to change this scene for "
 "another one. The simple way to do this is to use the :ref:`SceneTree."
 "change_scene() <class_SceneTree_method_change_scene>` function:"
 msgstr ""
-"После загрузки сцены часто бывает что нужно сменить её на другую. Самый "
-"простой способ заключается в использовании функции :ref:`SceneTree."
+"После загрузки сцены часто требуется изменить эту сцену на другую. Самый "
+"простой способ сделать это - использовать функцию :ref:`SceneTree."
 "change_scene() <class_SceneTree_method_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:153
-#, fuzzy
 msgid ""
 "Rather than using file paths, one can also use ready-made :ref:`PackedScene "
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
 "change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
-"Вместо использования путей к файлам можно использовать готовые ресурсы :ref:"
-"`PackedScene <class_PackedScene>`, используя аналогичную функцию :ref:"
-"`SceneTree.change_scene_to(PackedScene scene) "
+"Вместо того чтобы использовать пути к файлам, можно также использовать "
+"готовые ресурсы :ref:`PackedScene <class_PackedScene>`, используя "
+"эквивалентную функцию :ref:`SceneTree.change_scene_to(PackedScene scene) "
 "<class_SceneTree_method_change_scene_to>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:174
-#, fuzzy
 msgid ""
 "These are quick and useful ways to switch scenes but have the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
@@ -315,9 +309,10 @@ msgid ""
 "(background) loading. This must be done manually using autoloads (see next "
 "chapter) and :ref:`doc_background_loading`."
 msgstr ""
-"Это быстрые и полезные способы переключения между сценами, но у них есть "
-"недостаток, заключающийся в том, что игра будет \"виснуть\" до тех пор, пока "
-"новая сцена не будет загружена и запущена. В какой-то момент может "
-"потребоваться создать экраны загрузки с анимированым индикатором, или "
-"загрузку фона. Это должно быть сделано вручную с помощью автозагрузки (см. "
-"следующую главу!) и :ref:`doc_background_load`."
+"Это быстрые и полезные способы переключения сцен, но у них есть недостаток, "
+"что игра будет останавливаться до тех пор, пока новая сцена не будет "
+"загружена и запущена. На каком-то этапе развития вашей игры может быть "
+"предпочтительнее создать правильные загрузочные экраны с индикатором "
+"прогресса, анимированными индикаторами или потоковой (фоновой) загрузкой. "
+"Это должно быть сделано вручную с помощью автозагрузок (см. следующую главу) "
+"и :ref:`doc_background_loading`."

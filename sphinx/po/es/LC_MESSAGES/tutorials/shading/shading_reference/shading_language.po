@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -274,8 +274,8 @@ msgstr "**sampler2DArray**"
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:69
 msgid "Sampler type for binding 2D texture arrays, which are read as float."
 msgstr ""
-"Tipo Sampler para vincular arreglos de texturas 2D, las cuales son leídas "
-"como float."
+"Tipo Sampler para vincular arrays de texturas 2D, las cuales son leídas como "
+"float."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:71
 msgid "**isampler2DArray**"
@@ -285,8 +285,8 @@ msgstr "**isampler2DArray**"
 msgid ""
 "Sampler type for binding 2D texture arrays, which are read as signed integer."
 msgstr ""
-"Tipo Sampler para vincular arreglos de texturas 2D, las cuales son leídas "
-"como enteros con signo."
+"Tipo Sampler para vincular arrays de texturas 2D, las cuales son leídas como "
+"enteros con signo."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:73
 msgid "**usampler2DArray**"
@@ -297,8 +297,8 @@ msgid ""
 "Sampler type for binding 2D texture arrays, which are read as unsigned "
 "integer."
 msgstr ""
-"Tipo Sampler para vincular arreglos de texturas 2D, las cuales son leídas "
-"como enteros sin signo."
+"Tipo Sampler para vincular arrays de texturas 2D, las cuales son leídas como "
+"enteros sin signo."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:75
 msgid "**sampler3D**"
@@ -477,17 +477,19 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:195
 msgid "Arrays"
-msgstr "Arreglos"
+msgstr "Arrays"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:197
 msgid ""
 "Arrays are containers for multiple variables of a similar type. Note: As of "
 "Godot 3.2, only local and varying arrays have been implemented."
 msgstr ""
+"Los arrays son contenedores de múltiples variables de un tipo similar. Nota: "
+"A partir de Godot 3.2, sólo se han implementado arrays locales y variables."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:201
 msgid "Local arrays"
-msgstr "Arreglos locales"
+msgstr "Arrays locales"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:203
 msgid ""
@@ -495,6 +497,10 @@ msgid ""
 "datatypes, except samplers. The array declaration follows a C-style syntax: "
 "``[const] + [precision] + typename + identifier + [array size]``."
 msgstr ""
+"Los arrays locales se declaran en funciones. Pueden utilizar todos los tipos "
+"de datos permitidos, excepto los samplers. La declaración de los arrays "
+"sigue una sintaxis de tipo C: ``[const] + [precision] + typename + "
+"identifier + [array size]``."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:212
 msgid "They can be initialized at the beginning like:"
@@ -505,10 +511,13 @@ msgid ""
 "You can declare multiple arrays (even with different sizes) in one "
 "expression:"
 msgstr ""
+"Puedes declarar múltiples arrays (incluso con diferentes tamaños) en una "
+"expresión:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:234
 msgid "To access an array element, use the indexing syntax:"
 msgstr ""
+"Para acceder a un elemento del array, utiliza la sintaxis de indexación:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:244
 msgid ""
@@ -516,6 +525,9 @@ msgid ""
 "the built-in ``length()`` function). It doesn't accept any parameters and "
 "will return the array's size."
 msgstr ""
+"Los arrays también tienen una función integrada ``.length()`` (que no debe "
+"confundirse con la función integrada ``length()``). No acepta ningún "
+"parámetro y devolverá el tamaño del array."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:255
 msgid ""
@@ -526,6 +538,12 @@ msgid ""
 "expression or a simple number, the editor will check its bounds to prevent "
 "this crash."
 msgstr ""
+"Si usas un índice por debajo de 0 o mayor que el tamaño de del array - el "
+"shader se bloqueará y romperá la renderización. Para evitarlo, usa las "
+"funciones ``length()``, ``if``, o ``clamp()`` para asegurarte de que el "
+"índice está entre 0 y la longitud del array. Siempre prueba y comprueba "
+"cuidadosamente tu código. Si pasas una expresión constante o un número "
+"simple, el editor comprobará sus límites para evitar este fallo."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:258
 msgid "Constants"
@@ -550,6 +568,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:276
 msgid "Similar to variables, arrays can also be declared with ``const``."
 msgstr ""
+"Al igual que las variables, los arrays también pueden ser declarados con "
+"``const``."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:286
 msgid ""
@@ -824,7 +844,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:439
 msgid "Varying can also be an array:"
-msgstr ""
+msgstr "La variación también puede ser un array:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:456
 msgid "Interpolation qualifiers"
@@ -1356,7 +1376,8 @@ msgid "Clamp to ``min..max``"
 msgstr "Restringe a ``min..max``"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:666
-msgid "vec_type **mix** (float a, float b, float c)"
+#, fuzzy
+msgid "float **mix** (float a, float b, float c)"
 msgstr "vec_type **mix** (float a, float b, float c)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:666
@@ -1497,7 +1518,7 @@ msgid "vec3 **cross** (vec3 a, vec3 b)"
 msgstr "vec3 **cross** (vec3 a, vec3 b)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:700
-msgid "Cross croduct"
+msgid "Cross product"
 msgstr "Producto vectorial"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:702
@@ -1658,7 +1679,7 @@ msgstr "ivec3 **textureSize** (sampler2DArray_type s, int lod)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:740
 msgid "Get the size of a 2D texture array"
-msgstr "Obtiene el tamaño de un arreglo de texturas 2D"
+msgstr "Obtiene el tamaño de un array de texturas 2D"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:742
 msgid "ivec3 **textureSize** (sampler3D s, int lod)"

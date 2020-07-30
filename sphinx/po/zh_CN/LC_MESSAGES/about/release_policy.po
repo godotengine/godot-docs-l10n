@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Godot versioning"
 msgstr "**Godot 版本**"
 
 #: ../../docs/about/release_policy.rst:9
-#, fuzzy
 msgid ""
 "Godot uses ``major.minor.patch`` version numbering. However, it does not "
 "strictly follow `Semantic Versioning <https://semver.org/>`__. This means "
@@ -34,37 +33,34 @@ msgid ""
 "3.2) will most likely introduce breaking changes. Still, there won't be as "
 "many breaking changes as a \"semver-major\" version bump such as 3.2 -> 4.0."
 msgstr ""
-"Godot使用``major.minor.patch``版本编号。然而，它并没有严格遵循`Semantic "
-"Versioning <https://semver.org/>`__。这意味着被该标准认为是 \"semver-minor "
-"\"的版本（如3.1->3.2）很可能会引入突破性的变化。不过，与 \"semver-major \"的"
-"版本升级（如3.2 -> 4.0）相比，中断性的变化还是不会太多。"
+"Godot使用``major.minor.patch``的方式进行版本编号。然而，这种编号方式并没有严"
+"格遵循`Semantic Versioning <https://semver.org/>`__的编号标准。这意味着被该标"
+"准认为是\"semver-minor \"的版本（如3.1->3.2）很可能会引入破坏性变更。不过，"
+"与 \"semver-major \"的版本升级（如3.2 -> 4.0）相比，破坏性变更还是不会太多。"
 
 #: ../../docs/about/release_policy.rst:15
-#, fuzzy
 msgid ""
 "In the interest of stability and usability, patch releases may occasionally "
 "introduce small breaking changes as well. When repackaging Godot projects (e."
 "g. in a Flatpak), make sure to always use the same patch version as the one "
 "used to initially export the project."
 msgstr ""
-"为了保证稳定性和可用性，补丁发布可能偶尔也会引入一些小的突破性变化。当重新打"
+"为了保证稳定性和可用性，补丁发布可能偶尔也会引入一些小的破坏性变更。当重新打"
 "包Godot项目时（例如在Flatpak中），请确保始终使用与最初导出项目时相同的补丁版"
 "本。"
 
 #: ../../docs/about/release_policy.rst:22
-#, fuzzy
 msgid ""
 "The first release in a major/minor release series doesn't end with a "
 "trailing zero. For example, the first release in the 3.2 series is ``3.2``, "
 "not ``3.2.0``."
 msgstr ""
-"一个主要/次要版本系列的第一个版本不以尾部的零结尾。例如，3.2系列的第一个版本"
-"是``3.2``，而不是``3.2.0``。"
+"在一组主要/次要版本中，第一个版本不以零结尾。例如，3.2系列的第一个版本是"
+"``3.2``，而不是``3.2.0``。"
 
 #: ../../docs/about/release_policy.rst:27
-#, fuzzy
 msgid "Release support timeline"
-msgstr "发行支持时间表"
+msgstr "版本支持时间表"
 
 #: ../../docs/about/release_policy.rst:29
 msgid ""
@@ -97,7 +93,6 @@ msgid "~2021 (see below)"
 msgstr "~2021(见下文)"
 
 #: ../../docs/about/release_policy.rst:36
-#, fuzzy
 msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "[unstable]*当前开发重点（不稳定）。*"
 
@@ -128,7 +123,6 @@ msgstr "三月2019"
 #: ../../docs/about/release_policy.rst:41
 #: ../../docs/about/release_policy.rst:43
 #: ../../docs/about/release_policy.rst:45
-#, fuzzy
 msgid "|partial| Only critical, security and platform support fixes."
 msgstr "|partial| 仅对关键、安全和平台支持进行修复。"
 
@@ -145,14 +139,12 @@ msgid "Godot 2.1"
 msgstr "Godot 2.1"
 
 #: ../../docs/about/release_policy.rst:45
-#, fuzzy
 msgid "July 2016"
 msgstr "2016年7月"
 
 #: ../../docs/about/release_policy.rst:47
-#, fuzzy
 msgid "Godot 2.0"
-msgstr "Godot"
+msgstr "Godot 2.0"
 
 #: ../../docs/about/release_policy.rst:47
 msgid "February 2016"
@@ -173,9 +165,8 @@ msgid "May 2015"
 msgstr "2015年5月"
 
 #: ../../docs/about/release_policy.rst:51
-#, fuzzy
 msgid "Godot 1.0"
-msgstr "Godot"
+msgstr "Godot 1.0"
 
 #: ../../docs/about/release_policy.rst:51
 msgid "December 2014"
@@ -210,15 +201,15 @@ msgstr ""
 "Godot版本。按照这一趋势，这意味着Godot 4.0很可能在**2021年**发布。"
 
 #: ../../docs/about/release_policy.rst:75
-#, fuzzy
 msgid ""
 "Patch releases are made available more frequently, typically every 2-6 "
 "months while a release is fully supported. Partially supported releases will "
 "only have new patch releases once an important security or platform support "
 "fix has been merged."
 msgstr ""
-"补丁发布的频率较高，一般每2-6个月发布一次，而一个版本是完全支持的。部分支持的"
-"版本只有在重要的安全或平台支持修复被合并后才会有新的补丁发布。"
+"补丁发布的频率则更高，一般每2-6个月发布一次，直到一个版本进入完全支持的状态。"
+"而部分支持的版本只有在重要的安全修复或平台支持修复被合并后，才会得到新的补"
+"丁。"
 
 #: ../../docs/about/release_policy.rst:82
 msgid ""

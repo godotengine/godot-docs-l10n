@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,8 @@ msgid ""
 "Godot's audio processing code has been written with games in mind, with the "
 "aim of achieving an optimal balance between performance and sound quality."
 msgstr ""
+"Godots Audioverarbeitung wurde für die Spielentwicklung erstellt, damit eine "
+"optimale Balance zwischen Leistung und Klangqualität erreicht werden kann."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:12
 msgid ""
@@ -42,24 +44,33 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:18
 msgid "Decibel scale"
-msgstr ""
+msgstr "Dezibel Skala"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:20
 msgid ""
 "Godot's sound interface is designed to meet the expectations of sound design "
 "professionals. To this end, it primarily uses the decibel scale."
 msgstr ""
+"Godots Sound Interface wurde entwickelt um den Erwartungen eines "
+"professionellen Sound Designs gerecht zu werden, weshalb hauptsächlich die "
+"Dezibel Skala verwendet wird."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:23
 msgid "For those unfamiliar with it, it can be explained with a few facts:"
 msgstr ""
+"Für alle die damit noch nicht vertraut sind werden nachfolgend einige Fakten "
+"erklärt:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:25
+#, fuzzy
 msgid ""
 "The decibel (dB) scale is a relative scale. It represents the ratio of sound "
 "power by using 20 times the base 10 logarithm of the ratio (20 × log\\ :sub:"
 "`10`\\ (P/P\\ :sub:`0`\\ ))."
 msgstr ""
+"Die Dezibel Skala (dB) ist eine relative Skala. Es stellt das Verhältnis der "
+"Schallleistung dar, indem das 20-fache des Basis-10-Logarithmus des "
+"Verhältnisses verwendet wird (20 × log\\ :sub:`10`\\ (P/P\\ :sub:`0`\\ ))."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:28
 msgid ""
@@ -138,7 +149,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:73
 msgid "Playback of audio through a bus"
-msgstr ""
+msgstr "Wiedergabe von Audio durch einen Bus"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:75
 msgid ""
@@ -184,7 +195,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:105
 msgid "BandLimit and BandPass"
-msgstr ""
+msgstr "Bandlimit und Bandpass"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:107
 msgid ""
@@ -210,7 +221,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:122
 msgid "Compressor"
-msgstr ""
+msgstr "Kompressor"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:124
 msgid ""
@@ -225,7 +236,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:132
 msgid "The compressor has many uses. For example:"
-msgstr ""
+msgstr "Der Kompressor kann vielfältig genutzt werden, zum Beispiel:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:134
 msgid "It can be used in the Master bus to compress the whole output."
@@ -282,7 +293,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:166
 msgid "EQ"
-msgstr ""
+msgstr "EQ"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:168
 msgid ""
@@ -292,7 +303,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:172
 msgid "EQ6, EQ10, EQ21"
-msgstr ""
+msgstr "EQ6, EQ10, EQ21"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:174
 msgid ""
@@ -305,7 +316,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:180
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:182
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:4
-msgid "Contribute to the Class Reference"
+#, fuzzy
+msgid "Contributing to the class reference"
 msgstr "クラスリファレンスへの貢献"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:8
@@ -393,7 +394,7 @@ msgstr ""
 msgid ""
 "Edit it using your favorite text editor. If you use a code editor, make sure "
 "that it doesn't change the indent style: tabs for the XML, and 4 spaces "
-"inside BBcode-style blocks. More on that below."
+"inside BBCode-style blocks. More on that below."
 msgstr ""
 "お気に入りのテキストエディタを使用して編集します。コードエディタを使用する場"
 "合は、インデントスタイル(XMLのタブ、およびBBcodeスタイルのブロック内の4つのス"
@@ -479,216 +480,218 @@ msgstr ""
 "Vim、Atom、Code、Notepad++などのコードエディタを使用して、ファイルをすばやく"
 "編集できます。検索機能を使用して、クラスを高速に検索します。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:232
-msgid "Improve formatting with BBcode style tags"
+#: ../../docs/community/contributing/updating_the_class_reference.rst:233
+#, fuzzy
+msgid "Improve formatting with BBCode style tags"
 msgstr "BBcodeスタイルタグを使用した書式設定を改善する"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:234
+#: ../../docs/community/contributing/updating_the_class_reference.rst:235
+#, fuzzy
 msgid ""
-"Godot's class reference supports BBcode-like tags. They add nice formatting "
+"Godot's class reference supports BBCode-like tags. They add nice formatting "
 "to the text. Here's the list of available tags:"
 msgstr ""
 "Godotのクラス参照は、BBcodeのようなタグをサポートしています。これらは、テキス"
 "トに素敵な書式を追加します。使用可能なタグの一覧を次に表示します:"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Tag"
 msgstr "タグ"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Effect"
 msgstr "効果"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Usage"
 msgstr "使用法"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Result"
 msgstr "結果"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "[Class]"
 msgstr "\\ [Class]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Link a class"
 msgstr "クラスをリンクする"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Move the [Sprite]."
 msgstr "[Sprite] へ移動。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Move the :ref:`class_sprite`."
 msgstr ":ref:`class_sprite` へ移動。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "[method methodname]"
 msgstr "\\ [method methodname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "Link to a method in this class"
 msgstr "このクラスのメソッドへのリンク"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "Call [method hide]."
 msgstr "[メソッド hide]を呼び出します。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "See :ref:`hide <class_spatial_method_hide>`."
 msgstr ":ref:`hide <class_spatial_method_hide>` を参照してください。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "[method Class.methodname]"
 msgstr "\\ [method Class.methodname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "Link to another class's method"
 msgstr "別のクラスのメソッドへのリンク"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "Call [method Spatial.hide]."
 msgstr "[メソッド Spatial.hide] を呼び出します。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
 msgid "[member membername]"
 msgstr "\\ [member membername]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
 msgid "Link to a member in this class"
 msgstr "このクラスのメンバーへのリンク"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
 msgid "Get [member scale]."
 msgstr "[メンバー scale] を取得します。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "Get :ref:`scale <class_node2d_property_scale>`."
 msgstr ":ref:`scale <class_node2d_property_scale>` を取得します。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "[member Class.membername]"
 msgstr "\\ [member Class.membername]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "Link to another class's member"
 msgstr "別のクラスのメンバーへのリンク"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "Get [member Node2D.scale]."
 msgstr "[メンバーNode2D.scale] を取得します。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
 msgid "[signal signalname]"
 msgstr "\\ [signal signalname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
 msgid "Link to a signal in this class"
 msgstr "このクラスのシグナルへのリンク"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
 msgid "Emit [signal renamed]."
 msgstr "[シグナル renamed] を発信します。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "Emit :ref:`renamed <class_node_signal_renamed>`."
 msgstr ":ref:`renamed <class_node_signal_renamed>` を発信します。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "[signal Class.signalname]"
 msgstr "\\ [signal Class.signalname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "Link to another class's signal"
 msgstr "別のクラスのシグナルへのリンク"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "Emit [signal Node.renamed]."
 msgstr "[シグナル Node.renamed] を発信します。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "[b] [/b]"
 msgstr "\\ [b] [/b]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Bold"
 msgstr "太字"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some [b]bold[/b] text."
 msgstr "部分的な [b]bold[/b] テキスト。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some **bold** text."
 msgstr "部分的な **bold** テキスト。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "[i] [/i]"
 msgstr "\\ [i] [/i]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Italic"
 msgstr "斜体"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some [i]italic[/i] text."
 msgstr "部分的な [i]italic[/i] テキスト。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some *italic* text."
 msgstr "部分的な *italic* テキスト。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "[code] [/code]"
 msgstr "\\ [code] [/code]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Monospace"
 msgstr "モノスペース"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Some [code]monospace[/code] text."
 msgstr "部分的な [code]monospace[/code] テキスト。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Some ``monospace`` text."
 msgstr "部分的な ``monospace`` テキスト。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 #, fuzzy
 msgid "[kbd] [/kbd]"
 msgstr "\\ [b] [/b]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Keyboard/mouse shortcut"
 msgstr "キーボードショートカット"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 #, fuzzy
 msgid "Some [kbd]Ctrl + C[/kbd] key."
 msgstr "部分的な [b]bold[/b] テキスト。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Some :kbd:`Ctrl + C` key."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:261
+#: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "[codeblock] [/codeblock]"
 msgstr "\\ [codeblock] [/codeblock]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:261
+#: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "Multiline preformatted block"
 msgstr "マルチラインプリフォーマットブロック"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:261
+#: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "*See below.*"
 msgstr "*下記参照。*"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:264
+#: ../../docs/community/contributing/updating_the_class_reference.rst:265
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
 "always use **four spaces** for indentation (the parser will delete tabs). "
@@ -698,15 +701,15 @@ msgstr ""
 "``[codeblock]`` 内では、インデントには常に **4つのスペース** を使用します"
 "(パーサーはタブを削除します)。例:"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:274
+#: ../../docs/community/contributing/updating_the_class_reference.rst:275
 msgid "Will display as:"
 msgstr "次のように表示されます:"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:284
+#: ../../docs/community/contributing/updating_the_class_reference.rst:285
 msgid "I don't know what this method does!"
 msgstr "この方法が何をするのかわかりません！"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:286
+#: ../../docs/community/contributing/updating_the_class_reference.rst:287
 msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
@@ -714,7 +717,7 @@ msgstr ""
 "大丈夫ですよ。そのままにしておき、変更のプルを要求したときにスキップしたメ"
 "ソッドをリストします。他の人が担当します。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:288
+#: ../../docs/community/contributing/updating_the_class_reference.rst:289
 msgid ""
 "You can still have a look at the methods' implementation in Godot's source "
 "code on GitHub. Also, if you have doubts, feel free to ask on the `Q&A "
@@ -724,11 +727,11 @@ msgstr ""
 "がある場合は、\\ `Q＆A Webサイト <https://godotengine.org/qa/>`_\\ および"
 "IRC(freenode、＃godotengine)でお気軽にお問い合わせください。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:292
+#: ../../docs/community/contributing/updating_the_class_reference.rst:293
 msgid "Localization"
 msgstr "ローカライズ"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:294
+#: ../../docs/community/contributing/updating_the_class_reference.rst:295
 msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
@@ -736,7 +739,7 @@ msgstr ""
 "ドキュメントは、\\ `Hosted Weblate <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/>`__ で任意の言語に翻訳できます。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:297
+#: ../../docs/community/contributing/updating_the_class_reference.rst:298
 msgid ""
 "Translated strings are synced manually by documentation maintainers in the "
 "`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`__ "
@@ -746,7 +749,7 @@ msgstr ""
 "godot-docs-l10n>`__ リポジトリのドキュメントメンテナーによって手動で同期され"
 "ます。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:301
+#: ../../docs/community/contributing/updating_the_class_reference.rst:302
 msgid ""
 "Languages with a good level of completion have their own localized instances "
 "of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "

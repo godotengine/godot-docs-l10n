@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,10 +45,11 @@ msgstr ""
 "ものを視覚的に提示するためにとても役立ちます。使用例は次のとおりです:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:13
+#, fuzzy
 msgid ""
 "If you have a cannon that shoots cannonballs affected by physics (gravity), "
-"you can draw cannonball's trajectory in the editor, making level design a "
-"lot easier."
+"you can draw the cannonball's trajectory in the editor, making level design "
+"a lot easier."
 msgstr ""
 "物理演算(重力)の影響を受ける砲弾を発射する大砲を持っている場合、エディタで砲"
 "弾の軌跡を描くことができ、レベル設計がはるかに簡単になります。"
@@ -92,8 +93,10 @@ msgid "How to use it"
 msgstr "使用方法"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:30
+#, fuzzy
 msgid ""
-"To turn a script into a tool, add ``tool`` keyword at the top of your code."
+"To turn a script into a tool, add the keyword ``tool`` at the top of your "
+"code."
 msgstr ""
 "スクリプトをツールにするには、コードの先頭に ``tool`` キーワードを追加しま"
 "す。"
@@ -106,32 +109,37 @@ msgstr ""
 "editor_hint`` を使用します。"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:34
-msgid "For example, if you want to execute some code only in editor, use:"
+#, fuzzy
+msgid "For example, if you want to execute some code only in the editor, use:"
 msgstr "たとえば、エディタでのみコードを実行する場合は、次を使用します:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
+#, fuzzy
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
-"previous expression:"
+"the same statement:"
 msgstr "一方、ゲームでのみコードを実行する場合は、前の表現を単純に否定します:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
+#, fuzzy
 msgid ""
-"Pieces of code that are not having any of the 2 conditions above will run "
-"both in editor and in game."
+"Pieces of code do not have either of the 2 conditions above will run both in-"
+"editor and in-game."
 msgstr ""
 "上記の2つの条件のいずれにも該当しないコードは、エディタとゲームの両方で実行さ"
 "れます。"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
-msgid "Here is how a ``_process()`` function might look like for you:"
+#, fuzzy
+msgid "Here is how a ``_process()`` function might look for you:"
 msgstr "以下は ``_process()`` 関数がどのように見えるかです:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
+#, fuzzy
 msgid ""
-"Modifications in editor are permanent. In our case, when we remove the "
-"script, the node will keep its rotation direction. Be careful so that you "
-"don't make unwanted modifications."
+"Modifications in editor are permanent. For example, in the following case, "
+"when we remove the script, the node will keep its rotation. Be careful to "
+"avoid making unwanted modifications."
 msgstr ""
 "エディタでの変更は永続的です。この場合、スクリプトを削除すると、ノードは回転"
 "方向を維持します。不要な変更を加えないように注意してください。"
@@ -226,11 +234,12 @@ msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:153
+#, fuzzy
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "
 "write the code how you want it, and only then add the ``tool`` keyword to "
-"the top. Also make sure you divide your code into part that runs in editor "
-"and part that runs in game. This way you can find your bug easier."
+"the top. Also, make sure to separate code that runs in-editor from code that "
+"runs in-game. This way, you can find bugs more easily."
 msgstr ""
 "``tool`` を不適切に使用すると、多くのエラーが発生する可能性があります。最初に"
 "あなたが望むようにコードを書き、次に ``tool`` キーワードを追加することをお勧"

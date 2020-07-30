@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,13 +85,12 @@ msgid "Encoding and special characters"
 msgstr "Обработка уведомления"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:99
-#, fuzzy
 msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
 msgstr ""
 "Для перевода строки используйте символы перевода строки (**LF**), а не CRLF "
-"или CR."
+"или CR. *(редактор по умолчанию)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:100
 msgid "Use one line feed character at the end of each file. *(editor default)*"
@@ -99,20 +98,19 @@ msgstr ""
 "Используйте символ перевода строки в конце каждого файла. *(editor default)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:101
-#, fuzzy
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
 "Используйте кодировку **UTF-8** без `маркера последовательности байтов "
-"<https://ru.wikipedia.org/wiki/Маркер_последовательности_байтов>`_."
+"<https://ru.wikipedia.org/wiki/Маркер_последовательности_байтов>`_. "
+"*(редактор по умолчанию)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
-#, fuzzy
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
 "Используйте **4 пробела** вместо табов для отступа (которые называются "
-"«мягкими табами»)."
+"«мягкими табами»). *(редактор по умолчанию)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 msgid "Indentation"
@@ -196,9 +194,8 @@ msgid "Blank lines"
 msgstr "Пустые строки"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:240
-#, fuzzy
 msgid "Surround functions and class definitions with two blank lines:"
-msgstr "Добавляйте пустые строки до и после объявления функций и классов."
+msgstr "Окружите функции и определения классов двумя пустыми строками:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:255
 msgid "Use one blank line inside functions to separate logical sections."
@@ -207,9 +204,8 @@ msgstr ""
 "частей друг от друга."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
-#, fuzzy
 msgid "Line length"
-msgstr "Длительность анимации"
+msgstr "Длина строки"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:260
 msgid "Keep individual lines of code under 100 characters."
@@ -226,9 +222,8 @@ msgstr ""
 "бок в стороннем текстовом редакторе. Например, чтобы посмотреть на различия."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:267
-#, fuzzy
 msgid "One statement per line"
-msgstr "Одно выражение - одна строка"
+msgstr "Одно выражение на строку"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:269
 msgid ""
@@ -244,7 +239,6 @@ msgid "The only exception to that rule is the ternary operator:"
 msgstr "Единственным исключением из этого правила является тернарный оператор:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
-#, fuzzy
 msgid "Avoid unnecessary parentheses"
 msgstr "Избегайте лишних скобок"
 
@@ -258,9 +252,8 @@ msgstr ""
 "выполнения операций)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
-#, fuzzy
 msgid "Boolean operators"
-msgstr "Логическое ИЛИ"
+msgstr "Логические операторы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
 msgid ""
@@ -271,14 +264,12 @@ msgstr ""
 "как они наиболее доступны:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:321
-#, fuzzy
 msgid "Use ``and`` instead of ``&&``."
-msgstr "``and`` ``&&``"
+msgstr "Используйте `` and`` вместо `` && ``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
-#, fuzzy
 msgid "Use ``or`` instead of ``||``."
-msgstr "``or`` ``||``"
+msgstr "Используйте ``or`` вместо ``||``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:324
 msgid ""
@@ -289,43 +280,38 @@ msgstr ""
 "избежание неоднозначностей. Это может облегчить чтение длинных выражений."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:342
-#, fuzzy
 msgid "Comment spacing"
-msgstr "Комментарии"
+msgstr "Интервал в комментариях"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:344
-#, fuzzy
 msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
 msgstr ""
-"Обычные комментарии должны начинаться с пробела, в отличие от комментариев в "
-"отключенном коде. Это позволяет отличать текстовые комментарии от "
-"отключенного кода."
+"Обычные комментарии должны начинаться с пробела, но не с кода, который вы "
+"комментируете. Это помогает отличить текстовые комментарии от отключенного "
+"кода."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:363
-#, fuzzy
 msgid ""
 "In the script editor, to toggle the selected code commented, press :kbd:"
 "`Ctrl + K`. This feature adds a single # sign at the start of the selected "
 "lines."
 msgstr ""
-"В редакторе скриптов, чтобы закомментировать выбранный код, нажмите "
-"<kbd>Ctrl</kbd> <kbd>K</kbd>. Это добавит символ # в начале выбранных строк."
+"В редакторе скриптов, чтобы закомментировать выбранный код, нажмите :kbd:"
+"`Ctrl + K`. Это добавит один символ # в начале выбранных строк."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 msgid "Whitespace"
 msgstr "Пробел"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
-#, fuzzy
 msgid ""
 "Always use one space around operators and after commas. Also, avoid extra "
 "spaces in dictionary references and function calls."
 msgstr ""
-"Всегда ставьте пробел до и после операторов, а также после запятых. "
-"Избегайте лишних пробелов при обращении к словарям и вызовах функций, или "
-"для того, чтобы выровнять \"в столбик\"."
+"Всегда используйте один пробел до и после операторов, а также после запятых. "
+"Кроме того, избегайте лишних пробелов в ссылках на словарь и вызовах функций."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:393
 msgid "Don't use spaces to align expressions vertically:"
@@ -344,31 +330,31 @@ msgstr ""
 "экранировать меньше символов в данной строке. Смотрите примеры ниже:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
-#, fuzzy
 msgid "Naming conventions"
-msgstr "Соглашения в именовании"
+msgstr "Соглашения об именовании"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:426
-#, fuzzy
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, leading to "
 "inconsistent code."
 msgstr ""
-"Эти соглашения об именах следуют стилю Godot Engine. Нарушение данных правил "
-"приведет к конфликту вашего кода со встроенными соглашениями об именах, что "
-"является ужасным."
+"Эти соглашения об именовании следуют стилю Godot Engine. Нарушение этих "
+"правил приведет к конфликту вашего кода со встроенными соглашениями об "
+"именовании, что приведет к противоречивому коду."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:431
-#, fuzzy
 msgid "File names"
-msgstr "Отсортировать файлы"
+msgstr "Имена файлов"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 msgid ""
 "Use snake_case for file names. For named classes, convert the PascalCase "
 "class name to snake_case::"
 msgstr ""
+"Используйте snake_case (слова из маленьких букв с подчеркиваниями) для имен "
+"файлов. Для именованных классов преобразуйте имя класса PascalCase (слова с "
+"заглавными буквами) в snake_case::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:446
 msgid ""
@@ -376,63 +362,60 @@ msgid ""
 "also avoids case sensitivity issues that can crop up when exporting a "
 "project from Windows to other platforms."
 msgstr ""
+"Это согласуется с тем, как файлы C++ называются в исходном коде Godot. Это "
+"также позволяет избежать проблем с чувствительностью к регистру, которые "
+"могут возникнуть при экспорте проекта из Windows на другие платформы."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:451
-#, fuzzy
 msgid "Classes and nodes"
-msgstr "Классы и Узлы"
+msgstr "Классы и узлы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:453
 msgid "Use PascalCase for class and node names:"
 msgstr "Используйте PascalCase для имен классов и узлов:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:459
-#, fuzzy
 msgid "Also use PascalCase when loading a class into a constant or a variable:"
-msgstr "Также при загрузке класса в константу или переменную:"
+msgstr ""
+"Также используйте PascalCase (слова с заглавными буквами) при загрузке "
+"класса в константу или переменную:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:466
-#, fuzzy
 msgid "Functions and variables"
-msgstr "Функции и Переменные"
+msgstr "Функции и переменные"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:468
-#, fuzzy
 msgid "Use snake\\_case to name functions and variables:"
-msgstr "Функции и Переменные"
+msgstr "Используйте snake\\_case для именования функций и переменных:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:475
-#, fuzzy
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods functions the user must "
 "override, private functions, and private variables:"
 msgstr ""
 "Добавьте одно нижнее подчеркивание (\\_) к наименованию виртуальных методов "
 "(функции, которые пользователь должен переопределить), приватных функций и "
-"приватных переменных: ``func _ready()``"
+"приватных переменных:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:484
 msgid "Signals"
 msgstr "Сигналы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:486
-#, fuzzy
 msgid "Use the past tense to name signals:"
-msgstr "Используйте прошедшее время:"
+msgstr "Используйте прошедшее время в именах сигналов:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:494
-#, fuzzy
 msgid "Constants and enums"
-msgstr "постоянный (константный) шаблон"
+msgstr "Константы и перечисления"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:496
-#, fuzzy
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
 msgstr ""
-"Используйте CONSTANT\\_CASE, все большими буквами, с нижним подчеркиванием "
-"(\\_) в качестве разделителя слов: ``const MAX_SPEED = 200``"
+"Пишите константы с CONSTANT\\_CASE, все большими буквами, с нижним "
+"подчеркиванием (\\_) в качестве разделителя слов:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:503
 msgid ""
@@ -443,9 +426,8 @@ msgstr ""
 "значений, поскольку они являются константами:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:517
-#, fuzzy
 msgid "Code order"
-msgstr "Последовательность в древе"
+msgstr "Порядок кода"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:519
 msgid ""
@@ -536,9 +518,8 @@ msgstr ""
 "следует использовать его."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:582
-#, fuzzy
 msgid "Signals and properties"
-msgstr "Это его редактируемые свойства."
+msgstr "Сигналы и свойства"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:584
 msgid ""
@@ -577,9 +558,8 @@ msgstr ""
 "опирается ваш класс. Пример выше показывает это."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:621
-#, fuzzy
 msgid "Member variables"
-msgstr "Доступ к полям"
+msgstr "Переменные-члены"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:623
 msgid ""
@@ -587,11 +567,13 @@ msgid ""
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
+"Не объявляйте переменные-члены, если они используются только локально в "
+"методе, так как это затрудняет выполнение кода. Вместо этого объявите их как "
+"локальные переменные в теле метода."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
-#, fuzzy
 msgid "Local variables"
-msgstr "Локальные Переменные"
+msgstr "Локальные переменные"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:630
 msgid ""
@@ -599,11 +581,13 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Объявляйте локальные переменные как можно ближе к их первому использованию. "
+"Это облегчает отслеживание кода, не требуя слишком большой прокрутки, чтобы "
+"найти, где была объявлена переменная."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:635
-#, fuzzy
 msgid "Methods and static functions"
-msgstr "Статические функции"
+msgstr "Методы и статические функции"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
 msgid "After the class's properties come the methods."
@@ -646,9 +630,8 @@ msgstr ""
 "указанном порядке."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:687
-#, fuzzy
 msgid "Static typing"
-msgstr "Статические функции"
+msgstr "Статическая типизация"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:689
 msgid ""
@@ -659,9 +642,8 @@ msgstr ""
 "typing<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
-#, fuzzy
 msgid "Type hints"
-msgstr "Тип"
+msgstr "Подсказки типа"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:694
 msgid ""

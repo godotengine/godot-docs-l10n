@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:4
-msgid "Contribute to the Class Reference"
+#, fuzzy
+msgid "Contributing to the class reference"
 msgstr "在类参考手册中贡献"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:8
@@ -366,7 +367,7 @@ msgstr ""
 msgid ""
 "Edit it using your favorite text editor. If you use a code editor, make sure "
 "that it doesn't change the indent style: tabs for the XML, and 4 spaces "
-"inside BBcode-style blocks. More on that below."
+"inside BBCode-style blocks. More on that below."
 msgstr ""
 "使用您喜欢的文本编辑器编辑它。如果使用代码编辑器，请确保它不会更改缩进样式："
 "XML的制表符和BBcode样式块中的4个空格。以下更多关于该内容。"
@@ -447,215 +448,217 @@ msgstr ""
 "使用代码编辑器，如Vim、Atom、Code、Notepad ++或类似的编辑器，快速编辑文件。使"
 "用搜索功能快速查找类。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:232
-msgid "Improve formatting with BBcode style tags"
+#: ../../docs/community/contributing/updating_the_class_reference.rst:233
+#, fuzzy
+msgid "Improve formatting with BBCode style tags"
 msgstr "使用BBcode样式标签改进格式"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:234
+#: ../../docs/community/contributing/updating_the_class_reference.rst:235
+#, fuzzy
 msgid ""
-"Godot's class reference supports BBcode-like tags. They add nice formatting "
+"Godot's class reference supports BBCode-like tags. They add nice formatting "
 "to the text. Here's the list of available tags:"
 msgstr ""
 "Godot的类参考手册支持类似BBcode的标记。它们为文本添加了很好的格式。这是可用标"
 "签的列表："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Tag"
 msgstr "标签"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Effect"
 msgstr "效果"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Usage"
 msgstr "用法"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Result"
 msgstr "结果"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "[Class]"
 msgstr "[Class]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Link a class"
 msgstr "链接到一个类"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Move the [Sprite]."
 msgstr "移动[Sprite]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Move the :ref:`class_sprite`."
 msgstr "移动 :ref:`class_Sprite`。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "[method methodname]"
 msgstr "[method methodname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "Link to a method in this class"
 msgstr "链接到此类中的方法"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "Call [method hide]."
 msgstr "调用[method hide]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "See :ref:`hide <class_spatial_method_hide>`."
 msgstr "参见 :ref:`hide <class_Spatial_method_hide>`。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "[method Class.methodname]"
 msgstr "[method Class.methodname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "Link to another class's method"
 msgstr "链接到另一个类的方法"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "Call [method Spatial.hide]."
 msgstr "调用[method Spatial.hide]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
 msgid "[member membername]"
 msgstr "[member membername]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
 msgid "Link to a member in this class"
 msgstr "链接到这个类的成员"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
 msgid "Get [member scale]."
 msgstr "获得[member scale]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "Get :ref:`scale <class_node2d_property_scale>`."
 msgstr "获得 :ref:`scale <class_Node2d_property_scale>`。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "[member Class.membername]"
 msgstr "[member Class.membername]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "Link to another class's member"
 msgstr "链接到另一个类的成员"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "Get [member Node2D.scale]."
 msgstr "获得 [member Node2D.scale]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
 msgid "[signal signalname]"
 msgstr "[signal signalname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
 msgid "Link to a signal in this class"
 msgstr "链接到此类中的信号"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
 msgid "Emit [signal renamed]."
 msgstr "发射 [signal renamed]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "Emit :ref:`renamed <class_node_signal_renamed>`."
 msgstr "发射 :ref:`renamed <class_Node_signal_renamed>`。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "[signal Class.signalname]"
 msgstr "[signal Class.signalname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "Link to another class's signal"
 msgstr "链接到另一个类的信号"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "Emit [signal Node.renamed]."
 msgstr "发射 [signal Node.renamed]。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "[b] [/b]"
 msgstr "[b] [/b]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Bold"
 msgstr "粗体"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some [b]bold[/b] text."
 msgstr "一些[b]粗体[/b]文字。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some **bold** text."
 msgstr "一些 **粗体** 文字。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "[i] [/i]"
 msgstr "[i] [/i]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Italic"
 msgstr "斜体"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some [i]italic[/i] text."
 msgstr "一些[i]斜体[/i]文字。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some *italic* text."
 msgstr "一些 *斜体* 文字。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "[code] [/code]"
 msgstr "[code] [/code]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Monospace"
 msgstr "等宽字体"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Some [code]monospace[/code] text."
 msgstr "一些[code]等宽字体[/code] 文本。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Some ``monospace`` text."
 msgstr "一些 ``等宽字体`` 文本。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "[kbd] [/kbd]"
 msgstr "[kbd] [/kbd]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 #, fuzzy
 msgid "Keyboard/mouse shortcut"
 msgstr "键盘快捷键"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Some [kbd]Ctrl + C[/kbd] key."
 msgstr "一些[kbd]Ctrl + C[/kbd]键。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Some :kbd:`Ctrl + C` key."
 msgstr "一些Ctrl + C键。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:261
+#: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "[codeblock] [/codeblock]"
 msgstr "[codeblock] [/codeblock]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:261
+#: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "Multiline preformatted block"
 msgstr "多行预格式化块"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:261
+#: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "*See below.*"
 msgstr "*见下文。*"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:264
+#: ../../docs/community/contributing/updating_the_class_reference.rst:265
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
 "always use **four spaces** for indentation (the parser will delete tabs). "
@@ -664,22 +667,22 @@ msgstr ""
 "对预格式化的代码块使用 ``[codeblock]``。在 ``[codeblock]`` 中，始终使用 **四"
 "个空格** 进行缩进(解析器将删除制表符)。例如："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:274
+#: ../../docs/community/contributing/updating_the_class_reference.rst:275
 msgid "Will display as:"
 msgstr "将显示为："
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:284
+#: ../../docs/community/contributing/updating_the_class_reference.rst:285
 msgid "I don't know what this method does!"
 msgstr "我不知道这个方法干什么用！"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:286
+#: ../../docs/community/contributing/updating_the_class_reference.rst:287
 msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
 "没问题。将其留下，并在您请求提取更改时列出跳过的方法。别的编写者会处理它。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:288
+#: ../../docs/community/contributing/updating_the_class_reference.rst:289
 msgid ""
 "You can still have a look at the methods' implementation in Godot's source "
 "code on GitHub. Also, if you have doubts, feel free to ask on the `Q&A "
@@ -689,11 +692,11 @@ msgstr ""
 "在 `问答网站 <https://godotengine.org/qa/>`__ 和IRC(freenode，#godotengine)上"
 "询问。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:292
+#: ../../docs/community/contributing/updating_the_class_reference.rst:293
 msgid "Localization"
 msgstr "本地化"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:294
+#: ../../docs/community/contributing/updating_the_class_reference.rst:295
 msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
@@ -701,7 +704,7 @@ msgstr ""
 "在 `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`__ 上的文档可以被翻译成任何语言。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:297
+#: ../../docs/community/contributing/updating_the_class_reference.rst:298
 msgid ""
 "Translated strings are synced manually by documentation maintainers in the "
 "`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`__ "
@@ -710,7 +713,7 @@ msgstr ""
 "翻译后的字符串由文档维护人员在 `godot-docs-l10n <https://github.com/"
 "godotengine/godot-docs-l10n>`__ 存储库中手动同步更新。"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:301
+#: ../../docs/community/contributing/updating_the_class_reference.rst:302
 msgid ""
 "Languages with a good level of completion have their own localized instances "
 "of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,12 +69,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid ":doc:`ui_main_menu`"
-msgstr ""
+msgstr ":doc:`ui_main_menu`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
-#, fuzzy
 msgid ":doc:`ui_game_user_interface`"
-msgstr "\\ :ref:`doc_godot_interfaces`"
+msgstr ":doc:`ui_game_user_interface`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -215,13 +214,12 @@ msgstr ""
 "メソッドをアニメーション化および制御できます。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
-#, fuzzy
 msgid ""
 "The project uses a simple organization that works for game jams and tiny "
 "games."
 msgstr ""
-"このプロジェクトは、ゲームジャムや小さなゲームに適したシンプルな構造を使用し"
-"ています。"
+"このプロジェクトでは、ゲームジャムや小さなゲームに適したシンプルな構造を使用"
+"しています。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 msgid ""
@@ -424,7 +422,6 @@ msgstr ""
 "更新します。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
-#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
@@ -440,8 +437,8 @@ msgstr ""
 "接アクセスするよりも軽量で安全です。親ノードから子の値を取得することは問題あ"
 "りません。しかし、2つの別々のブランチをまたいで作業しているなら、シグナルを優"
 "先したほうがいいでしょう。Observerパターンの詳細については、Game Programming "
-"Patternsの `Observer pattern <http://gameprogrammingpatterns.com/observer."
-"html>`_ (英語)を参照してください。\\ `full book <http://"
+"Patternsの `Observer pattern <https://gameprogrammingpatterns.com/observer."
+"html>`_ (英語)を参照してください。\\ `完全版の本 <https://"
 "gameprogrammingpatterns.com/contents.html>`_\\ はオンラインで無料で入手できま"
 "す。"
 

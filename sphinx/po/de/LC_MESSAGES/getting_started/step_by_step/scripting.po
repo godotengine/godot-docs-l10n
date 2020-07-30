@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -206,8 +206,8 @@ msgstr ""
 "Da Godot `Mono <https://mono-project.com>`_ als .NET runtime verwendet, "
 "können viele .NET Bibliotheken und Frameworks von Drittanbietern, sowie "
 "Common Language Infrastructure-kompatible Programmiersprachen, wie zum "
-"Beispiel F#, Boo oder ClojureCLR, in Scripts verwendet werden.\n"
-"C# ist aber die einzige offiziell unterstützte .NET-Option."
+"Beispiel F#, Boo oder ClojureCLR, in Scripts verwendet werden. C# ist aber "
+"die einzige offiziell unterstützte .NET-Option."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:71
 msgid "GDNative / C++"
@@ -232,17 +232,17 @@ msgstr ""
 "beliebige Compiler verwendet werden, um Shared Libraries zu erzeugen."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
-#, fuzzy
 msgid ""
 "This language is the best choice for performance and does not need to be "
 "used throughout an entire game, as other parts can be written in GDScript or "
 "Visual Script. However, the API is clear and easy to use as it resembles, "
 "mostly, Godot's actual C++ API."
 msgstr ""
-"Diese Sprache ist die beste Wahl für Leistung und muss nicht alleine für ein "
-"Spiel verwendet werden, da andere Teil auch in GDScript or Visual Script "
-"geschrieben sein können. Die API ist klar und einfach zu benutzen, da sie in "
-"den meisten Teilen der eigentlichen C++ API Godots sehr änhlich ist."
+"Diese Programmiersprache ist die beste Wahl für Leistung und muss nicht "
+"alleine für ein Spiel verwendet werden, da andere Teile auch in GDScript "
+"oder Visual Script geschrieben werden können. Die API ist klar und einfach "
+"zu benutzen, da sie in den meisten Teilen der eigentlichen C++ API von Godot "
+"sehr ähnlich ist."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
 msgid ""
@@ -316,7 +316,7 @@ msgstr "Label"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr "\"Button\""
+msgstr "Schaltfläche (Button)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"
@@ -329,7 +329,7 @@ msgid ""
 msgstr ""
 "Verwende den 2D-Editor, um die Schaltfläche (Button) und das Label so zu "
 "positionieren, wie im folgenden Bild dargestellt. Du kannst den Text in der "
-"der Registerkarte \"Inspektor\" festlegen."
+"Registerkarte \"Inspektor\" festlegen."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:124
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
@@ -597,8 +597,9 @@ msgstr ""
 "über den Typ."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:334
+#, fuzzy
 msgid ""
-"The right-hand panel of the connect dialogue is for binding specific values "
+"The 'advanced' panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""

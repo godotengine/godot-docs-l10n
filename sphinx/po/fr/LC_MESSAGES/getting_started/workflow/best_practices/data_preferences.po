@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -260,7 +260,6 @@ msgstr ""
 "un algorithme de recherche ordonné."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
-#, fuzzy
 msgid ""
 "Godot implements Dictionary as an ``OrderedHashMap<Variant, Variant>``. The "
 "engine stores a small array (initialized to 2^3 or 8 records) of key-value "
@@ -271,13 +270,16 @@ msgid ""
 "becomes too full, it increases to the next power of 2 (so, 16 records, then "
 "32, etc.) and rebuilds the structure."
 msgstr ""
-"Godot implémente le dictionnaire Dictionary en tant que "
-"``OrderedHashMap<Variant, Variant>``. Le moteur stocke un tableau géant "
-"(initialisé à 1000 données) de paires clé-valeur. Quand on essaie d'accéder "
-"à une valeur, on lui fournit une clé. Ensuite, il *hashes* la clé, c'est-à-"
-"dire qu'il la convertit en un nombre. Le \"hash\" devient l'index dans le "
-"tableau, donnant à l'OHM une recherche rapide de la valeur dans la \"table\" "
-"conceptuelle des clés mappées aux valeurs."
+"Godot implémente le Dictionary(dictionnaire) sous la forme d'un "
+"``OrderedHashMap<Variant, Variant>``. Le moteur stocke un petit tableau "
+"(initialisé à 2^3 ou 8 enregistrements) de paires clé-valeur. Lorsqu'on "
+"tente d'accéder à une valeur, ils lui fournissent une clé. Il *hashes* "
+"ensuite la clé, c'est-à-dire la convertit en un nombre. Le \"hash\" est "
+"utilisé pour calculer l'index dans le tableau. En tant que tableau, l'OHM a "
+"ensuite une recherche rapide dans le \"tableau\" des clés mises en "
+"correspondance avec les valeurs. Lorsque le HashMap devient trop plein, il "
+"passe à la puissance 2 suivante (donc, 16 enregistrements, puis 32, etc.) et "
+"reconstruit la structure."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:113
 msgid ""
@@ -308,9 +310,8 @@ msgstr ""
 "rapides. Ce qui mène à..."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:125
-#, fuzzy
 msgid "Maintaining an ever-growing size for the table."
-msgstr "Maintien d'une table de grande taille."
+msgstr "Maintenir une taille toujours plus grande pour la table."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:127
 msgid ""
@@ -318,6 +319,10 @@ msgid ""
 "to reduce hash collisions and maintain the speed of accesses. This is why it "
 "constantly increases in size quadratically by powers of 2."
 msgstr ""
+"Les HashMaps maintiennent des espaces de mémoire inutilisés intercalés dans "
+"le tableau dans le but de réduire les collisions de hash et de maintenir la "
+"vitesse d'accès. C'est pourquoi sa taille augmente constamment de façon "
+"quadratique par puissances de 2."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:132
 msgid ""

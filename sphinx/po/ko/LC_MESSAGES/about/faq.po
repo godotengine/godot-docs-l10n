@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -342,16 +342,14 @@ msgid ""
 msgstr "Godot를 위한 맞춤 스크립트 언어를 개발하게 된 주요 이유는 이러합니다:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"대부분의 스크립트 가상 머신에서 스레드 지원이 좋지 않습니다. 하지만 Godot는 "
+"대부분의 스크립트 가상 머신에서 스레드 지원이 좋지 않습니다. 하지만 Godot은 "
 "스레드를 사용합니다 (Lua, Python, Squirrel, JS, AS 등)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
@@ -360,7 +358,6 @@ msgstr ""
 "에 맞춰 변형하자면 너무 비효율적입니다 (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
@@ -373,7 +370,6 @@ msgstr ""
 "었습니다."
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
@@ -383,7 +379,6 @@ msgstr ""
 "성능이 크게 감소합니다 (Lua, Python, Squirrel, JS, AS 등)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
@@ -392,7 +387,6 @@ msgstr ""
 "Python, JS, AS 등)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
@@ -427,7 +421,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "Godot 3.0부터 glTF를 지원합니다."
 
 #: ../../docs/about/faq.rst:163
-#, fuzzy
 msgid ""
 "FBX is supported via the Open Asset Import library. However, FBX is "
 "proprietary so we recommend using other formats listed above, if suitable "
@@ -499,11 +492,11 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
-"이 질문은 자주 나타났습니다. 다행이라면 Apple이 기기의 해상도를 원래 두 배로 "
+"이 질문은 자주 나타났습니다. 다행이라면 애플이 기기의 해상도를 원래 두 배로 "
 "했기 때문에 나온 오해에서 비롯되었습니다. 이 때문에 사람들이 같은 애셋을 다"
 "른 해상도로 만드는 것이 좋은 생각으로 여기고, 많은 사람들이 그렇게 했습니다. "
-"이 작업은 원래 Apple 기기에 초점을 맞췄습니다. 하지만 다양한 해상도와 화면 비"
-"율을 가진 여러 Android와 Apple 기기가 만들어졌습니다. 그들은 매우 넓은 화면"
+"이 작업은 원래 애플 기기에 초점을 맞췄습니다. 하지만 다양한 해상도와 화면 비"
+"율을 가진 여러 안드로이드와 애플 기기가 만들어졌습니다. 그들은 매우 넓은 화면"
 "과 DPI를 갖고 있었죠."
 
 #: ../../docs/about/faq.rst:197
@@ -575,12 +568,12 @@ msgid ""
 "the App Store or Google Play."
 msgstr ""
 "(가로 300화소도 안되는) 오래된 기기의 작은 화면에서도 게임이 작동하기를 정말 "
-"원한다면, 내보내기 설정으로 이미지를 압축해서 App Store나 구글 플레이에 적합"
+"원한다면, 내보내기 설정으로 이미지를 압축해서 앱 스토어나 구글 플레이에 적합"
 "한 화면으로 만들 수 있습니다."
 
 #: ../../docs/about/faq.rst:230
 msgid "How can I extend Godot?"
-msgstr "어떻게 Godot를 확장할 수 있나요?"
+msgstr "어떻게 Godot을 확장할 수 있나요?"
 
 #: ../../docs/about/faq.rst:232
 msgid ""
@@ -600,22 +593,24 @@ msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
-"`A look at the GDNative architecture <https://godotengine.org/article/look-"
-"gdnative-architecture>`_"
+"`GDNative 건축의 모습 <https://godotengine.org/article/look-gdnative-"
+"architecture>`_"
 
 #: ../../docs/about/faq.rst:239
+#, fuzzy
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
+msgstr "`GDNative이 왔어요! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:241
+#, fuzzy
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
-"GDScript 구현, Godot 모듈, Godot를 위한 `비공식 Python 지원 <https://github."
-"com/touilleMan/godot-python>`_\\ 을 살펴볼 수도 있습니다. 이것이 Godot가 어떻"
+"GDScript 구현, Godot 모듈, Godot을 위한 `비공식 Python 지원 <https://github."
+"com/touilleMan/godot-python>`_\\ 을 살펴볼 수도 있습니다. 이것이 Godot과 어떻"
 "게 제 3자 라이브러리와 통합하는 지를 보여주는 좋은 출발점이 될 것입니다."
 
 #: ../../docs/about/faq.rst:247
@@ -623,11 +618,12 @@ msgid "I would like to contribute! How can I get started?"
 msgstr "저도 기여하고 싶어요! 어떻게 시작해야 하나요?"
 
 #: ../../docs/about/faq.rst:249
+#, fuzzy
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
-"멋집니다! 오픈 소스 프로젝트인 만큼 Godot는 당신같이 혁신적이고 야심 찬 개발"
+"좋습니다! 오픈 소스 프로젝트인 만큼 Godot은 당신같이 혁신적이고 야심 찬 개발"
 "자들에 의해 번창합니다."
 
 #: ../../docs/about/faq.rst:252
@@ -639,7 +635,7 @@ msgid ""
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
 "처음으로 시작해야 할 부분은 `Issues <https://github.com/godotengine/godot/"
-"issues>`_\\ 입니다. 당신이 공감하는 이슈를 찾은 다음, `기여하는 방법 "
+"issues>`_\\ 입니다. 당신이 공감하는 문제를 찾은 다음, `기여하는 방법 "
 "<https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
 "md#contributing-pull-requests>`_ 가이드를 따라가세요. 변경 사항과 함께 Pull "
 "Request (PR)를 포크 요청, 수정 및 제출하는 법을 배울 수 있습니다."
@@ -649,7 +645,6 @@ msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Godot에 대한 좋은 아이디어가 있습니다. 어떻게 이것을 공유할 수 있나요?"
 
 #: ../../docs/about/faq.rst:259
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -661,8 +656,8 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
-"Godot로 아이디어를 가져오는 것이, 마치 거대한 핵심 변화를 가져오거나, 다른 종"
-"류의 게임 엔진을 흉내 내거나, 편집기에 내장하길 원하는 대체 워크플로가 생기"
+"Godot으로 아이디어를 가져오는 것이, 마치 거대한 핵심 변화를 가져오거나, 다른 "
+"종류의 게임 엔진을 흉내 내거나, 편집기에 내장하길 원하는 대체 워크플로가 생기"
 "는 것 같아서 매력적일 것입니다. 아이디어는 멋집니다. 그래서 이런 사람들이 "
 "Godot에 기여하는 것을 원한다는 사실에 감사하고 있습니다. 하지만 Godot의 초점"
 "은 `로드맵 \n"
@@ -712,7 +707,7 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
-"그러니 Godot가 여러분의 생각을 달갑게 여기지 않는다고 생각하진 마세요. 다만 "
+"그러니 Godot이 여러분의 생각을 달갑게 여기지 않는다고 생각하진 마세요. 다만 "
 "개발자와 커뮤니티가 생각을 바탕으로 기술적 토대를 마련하기 위해, 먼저 문제점 "
 "순으로 재구성해주세요."
 
@@ -739,23 +734,32 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:293
 msgid "Is it possible to use Godot as a library?"
-msgstr ""
+msgstr "Godot는 라이브러리로서 사용될 수 있을까요?"
 
 #: ../../docs/about/faq.rst:295
+#, fuzzy
 msgid ""
 "Godot is meant to be used with its editor. We recommend you give it a try, "
 "as it will most likely save you time in the long term. There are no plans to "
 "make Godot usable as a library, as it would make the rest of the engine more "
 "convoluted and difficult to use for casual users."
 msgstr ""
+"Godot은 편집기와 함께 사용하게 되어있습니다. 우리는 여러분들이 사용해보는 것"
+"은 장기적으로는 시간을 절약할 수 있기 때문에 시도해보는걸 추천합니다.  고도"
+"를 라이브러리를 쓸 계획은 없지만, 그것은 나머지 엔진을 더 복잡하게 만들고 캐"
+"주얼한 사용자들을 위해 사용하기 어렵게 만들 것이기 때문입니다."
 
 #: ../../docs/about/faq.rst:300
+#, fuzzy
 msgid ""
 "If you want to use a rendering library, look into using an established "
 "rendering engine instead. Keep in mind rendering engines usually have "
 "smaller communities compared to Godot. This will make it more difficult to "
 "find answers to your questions."
 msgstr ""
+"만약 렌더링 라이브러리를 원하신다면, 대신 기존의 렌더링 엔진을 사용하는 것을 "
+"고려하세요. 렌더링 엔진은 Godot에 비에 더 작은 커뮤니티를 가지고 있다는 점을 "
+"명십하세요."
 
 #: ../../docs/about/faq.rst:306
 msgid "Why does Godot not use STL (Standard Template Library)"
@@ -772,26 +776,29 @@ msgstr ""
 "있었습니다."
 
 #: ../../docs/about/faq.rst:312
+#, fuzzy
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
-"STL 템플릿은 매우 큰 심볼들을 만들고, 그것은 거대한 디버그 바이너리를 초래합"
-"니다. 우리는 대신 매우 짧은 이름의 템플릿을 거의 사용하지 않습니다."
+"STL 템플릿은 매우 큰 상징들을 만들고, 그것은 거대한 디버그 이진법을 초래합니"
+"다. 우리는 대신 매우 짧은 이름의 템플릿을 거의 사용하지 않습니다."
 
 #: ../../docs/about/faq.rst:313
+#, fuzzy
 msgid ""
 "Most of our containers cater to special needs, like Vector, which uses copy "
 "on write and we use to pass data around, or the RID system, which requires "
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
-"우리의 컨테이너 대부분은 이런 특수 목적에 맞춰졌습니다, Vector의 경우는, 가"
-"상 메모리 쓰기 시 복사 (copy on write)를 사용하고 데이터를 전달하는데 사용합"
-"니다, RID 시스템의 경우, 성능을 위해 O(1) 접근 시간이 필요합니다. 마찬가지로 "
-"해시 맵 구현은 내부 엔진 유형과 부드럽게 통합하도록 설계되었습니다."
+"우리의 컨테이너 대부분은 이런 특수 목적에 맞춰졌습니다, 벡터의 경우는, 가상 "
+"메모리 쓰기 시 복사와 붙이기를 사용하고 데이터를 전달하는데 사용합니다, RID "
+"시스템의 경우, 성능을 위해 O(1) 접근 시간이 필요합니다. 마찬가지로 해시 맵 구"
+"현은 내부 엔진 유형과 부드럽게 통합하도록 설계되었습니다."
 
 #: ../../docs/about/faq.rst:314
+#, fuzzy
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
@@ -827,7 +834,7 @@ msgid ""
 "going."
 msgstr ""
 "우리는 게임이 무엇이든 간에 충돌하지 않아야 한다고 생각합니다. 예기치 못한 사"
-"태가 벌어지면, Godot는 오류를 작성합니다 (스크립트에서도 추적할 수 있습니"
+"태가 벌어지면, Godot은 오류를 작성합니다 (스크립트에서도 추적할 수 있습니"
 "다), 그런 다음 가능한 한 정상적으로 복구한 후 계속 진행합니다."
 
 #: ../../docs/about/faq.rst:326
@@ -846,22 +853,21 @@ msgid ""
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
 "can be achieved, at a little performance cost."
 msgstr ""
-"Godot는 자체 유형 캐스팅 시스템을 제공하는데, 내부적으로 런타임 유형 정보를 "
+"Godot은 자체 유형 캐스팅 시스템을 제공하는데, 내부적으로 런타임 유형 정보를 "
 "사용할 수 있습니다. Godot에서 런타임 유형 정보를 끄게 되면 약간의 성능 가격으"
 "로 상당히 작은 이진 크기를 얻을 수 있습니다."
 
 #: ../../docs/about/faq.rst:337
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
-msgstr "왜 Godot는 사용자에게 DoD(데이터 지향 디자인) 구현을 강요하지 않나요?"
+msgstr "왜 Godot은 사용자에게 DoD(데이터 지향 디자인) 구현을 강요하지 않나요?"
 
 #: ../../docs/about/faq.rst:339
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
-"더 높은 성능 처리를 위해 Godot는 내부적으로 가능한 한 최선의 캐시 일관성을 사"
+"더 높은 성능 처리를 위해 Godot은 내부적으로 가능한 한 최선의 캐시 일관성을 사"
 "용하려 하지만, 우리는 대부분의 사용자가 DoD 관행을 따라야 할 필요가 없다고 생"
 "각합니다."
 
@@ -884,7 +890,7 @@ msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
 msgstr ""
-"대부분의 게임에는 필요하지 않을 테지만, Godot는 이런 작업의 대부분의 경우에 "
+"대부분의 게임에는 필요하지 않을 테지만, Godot은 이런 작업의 대부분의 경우에 "
 "도움을 줄 편리한 도우미를 제공합니다."
 
 #: ../../docs/about/faq.rst:353
@@ -907,7 +913,7 @@ msgstr ":ref:`doc_ways_to_contribute`\\ 를 참고하세요."
 
 #: ../../docs/about/faq.rst:363
 msgid "Who is working on Godot? How can I contact you?"
-msgstr "Godot는 누가 만드나요? 제가 연락할 수 있을까요?"
+msgstr "Godot은 누가 만드나요? 제가 연락할 수 있을까요?"
 
 #: ../../docs/about/faq.rst:365
 msgid ""

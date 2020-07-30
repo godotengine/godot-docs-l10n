@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,12 +42,12 @@ msgid ""
 "``add_control_to_dock`` we'll use ``add_inspector_plugin``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:37
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:40
 #, fuzzy
 msgid "EditorInspectorPlugin"
 msgstr "导入插件"
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:39
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:42
 msgid ""
 "To actually connect into the Inspector, we create a :ref:"
 "`class_EditorInspectorPlugin` class. This script provides the \"hooks\" to "
@@ -58,7 +58,7 @@ msgid ""
 "inspector (including any :ref:`class_Resource` that is embedded!)."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:47
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:50
 msgid ""
 "Once enabled, EditorInspectorPlugin has methods that allow for adding :ref:"
 "`class_EditorProperty` nodes or just custom :ref:`class_Control` nodes to "
@@ -66,12 +66,12 @@ msgid ""
 "overriding or changing existing property editors."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:80
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:84
 #, fuzzy
 msgid "EditorProperty"
 msgstr "编辑器开发"
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:82
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:86
 msgid ""
 "Next, we define the actual :ref:`class_EditorProperty` custom value editor "
 "that we want instantiated to edit integers. This is a custom :ref:"

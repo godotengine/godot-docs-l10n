@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,13 +163,22 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:66
 msgid ""
+"If you have screenshots in your repo, place them in their own subfolder and "
+"add a **.gdignore** file in the same folder (note: **gd**, not **git**). "
+"This prevents Godot from importing your screenshots. On Windows, open a "
+"command prompt in the project folder and run ``type nul > .gdignore`` to "
+"create a file whose name starts with a period."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:72
+msgid ""
 "If your asset is a library for working with other files, consider including "
 "example files in the asset."
 msgstr ""
 "Si votre asset est une librairie qui fonctionne avec d’autres fichiers, "
 "pensez à inclure des fichiers examples dans votre asset."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:69
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:75
 msgid ""
 "The icon should be a square, its aspect ratio should be 1:1. It should also "
 "ideally have a minimum resolution of 64x64 pixels."
@@ -178,7 +187,7 @@ msgstr ""
 "Idéalement, elle devrait également avoir une résolution minimale de 64x64 "
 "pixels."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:72
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:78
 msgid ""
 "While the asset library allows more than just GitHub, consider hosting your "
 "asset's source code on GitHub. Other services may not work reliably, and a "
@@ -189,11 +198,11 @@ msgstr ""
 "ne pas fonctionner de manière fiable, et un manque de familiarité peut "
 "constituer un obstacle pour les contributeurs."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:77
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:83
 msgid "Submitting"
 msgstr "Soumettre"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:79
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:85
 msgid ""
 "Once you are logged in, you will be able to head over to the \"Submit Assets"
 "\" page of the AssetLib, which will look like this:"
@@ -201,11 +210,11 @@ msgstr ""
 "Une fois connecté, vous pourrez vous rendre sur la page \"Submit Assets\" de "
 "l'AssetLib, qui ressemblera à ceci :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:82
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:88
 msgid "|image0|"
 msgstr "|image0|"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:84
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:90
 msgid ""
 "While it may look like a lot (and there is more as you scroll down), each "
 "field is described in terms of what you should put in. We will nonetheless "
@@ -216,11 +225,11 @@ msgstr ""
 "vous devez y mettre. Nous allons néanmoins revoir ici aussi ce qui est "
 "requis dans le formulaire de soumission."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:89
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:95
 msgid "**Asset Name**:"
 msgstr "**Asset Name** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:89
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:95
 msgid ""
 "The name of your asset. Should be a unique, descriptive title of what your "
 "asset is."
@@ -228,11 +237,11 @@ msgstr ""
 "Le nom de votre asset. Il doit s'agir d'un titre unique et descriptif de "
 "votre asset."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:95
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:101
 msgid "**Category**:"
 msgstr "**Category** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:92
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:98
 msgid ""
 "The category that your asset belongs to, and will be shown in search "
 "results. The category is split into **Addons** and **Projects**. In-editor, "
@@ -247,11 +256,11 @@ msgstr ""
 "l'AssetLib, tandis que les assets de type Addon ne sont visibles qu'à "
 "l'intérieur d'un projet."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:101
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:107
 msgid "**Godot version**:"
 msgstr "**Godot version** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:98
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:104
 msgid ""
 "The version of the engine that the asset works with. Currently, it's not "
 "possible to have a single asset entry contain downloads for multiple engine "
@@ -268,11 +277,11 @@ msgstr ""
 "lorsqu'il s'agit de versions majeures du moteur, comme Godot 2.x et Godot 3."
 "x."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:108
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:114
 msgid "**Version**:"
 msgstr "**Version** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:104
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:110
 msgid ""
 "The version number of the asset. While you are free to choose and use any "
 "versioning scheme that you like, you may want to look into something such as "
@@ -288,11 +297,11 @@ msgstr ""
 "interne, incrémenté chaque fois que l'URL de téléchargement de l'asset est "
 "modifiée ou mise à jour."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:113
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:119
 msgid "**Repository host**:"
 msgstr "**Repository host** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:111
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:117
 msgid ""
 "Assets uploaded to the AssetLib are not hosted on it directly. Instead, they "
 "point to repositories hosted on third-party Git providers, such as GitHub, "
@@ -305,11 +314,11 @@ msgstr ""
 "choisissez le fournisseur que votre asset utilise, afin que le site puisse "
 "calculer le lien de téléchargement final."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:116
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:122
 msgid "**Repository URL**:"
 msgstr "**Repository URL** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:116
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:122
 msgid ""
 "The URL to your asset's files/webpage. This will vary based on your choice "
 "of provider, but it should look similar to `https://github.com/<user>/"
@@ -319,11 +328,11 @@ msgstr ""
 "de votre choix de fournisseur, mais cela devrait ressembler à `https://"
 "github.com/<user>/<project>`."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:121
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:127
 msgid "**Issues URL**:"
 msgstr "**Issues URL** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:119
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:125
 msgid ""
 "The URL to your asset's issue tracker. Again, this will differ from "
 "repository host to repository host, but will likely look similar to `https://"
@@ -336,11 +345,11 @@ msgstr ""
 "ce champ vide si vous utilisez l'outil de suivi des problèmes de votre "
 "fournisseur, et s'il fait partie du même dépôt."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:125
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:131
 msgid "**Download Commit**:"
 msgstr "**Download Commit** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:124
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:130
 msgid ""
 "The commit of the asset. For example, "
 "`b1d3172f89b86e52465a74f63a74ac84c491d3e1`. The site computes the actual "
@@ -350,11 +359,11 @@ msgstr ""
 "`b1d3172f89b86e52465a74f63a74ac84c491d3e1`. Le site calcule l'URL de "
 "téléchargement réel à partir de cette information."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:129
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:135
 msgid "**Icon URL**:"
 msgstr "**Icon URL** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:128
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:134
 msgid ""
 "The URL to your asset's icon (which will be used as a thumbnail in the "
 "AssetLib search results and on the asset's page). Should be an image in "
@@ -364,11 +373,11 @@ msgstr ""
 "les résultats de recherche d'AssetLib et sur la page de l'asset). Il doit "
 "s'agir d'une image au format PNG ou JPG."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:134
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:140
 msgid "**License**:"
 msgstr "**License** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:132
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:138
 msgid ""
 "The license under which you are distributing the asset. The list includes a "
 "variety of free and open-source software licenses, such as GPL (v2 and v3), "
@@ -381,11 +390,11 @@ msgstr ""
 "site `OpenSource.org <https://opensource.org>`_ pour une description "
 "détaillée de chacune des licences énumérées."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:140
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:146
 msgid "**Description**:"
 msgstr "**Description** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:137
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:143
 msgid ""
 "Finally, you can use the Description field for a textual overview of your "
 "asset, its features and behavior, a changelog, et cetera. In the future, "
@@ -397,7 +406,7 @@ msgstr ""
 "journal des modifications, etc. À l'avenir, le formatage avec Markdown sera "
 "pris en charge, mais actuellement, votre seule option est le texte en clair."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:142
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:148
 msgid ""
 "You may also include up to three video and/or image previews, which will be "
 "shown at the bottom of the asset page. Use the \"Enable\" checkbox on each "
@@ -408,27 +417,27 @@ msgstr ""
 "case à cocher \"Enable\" sur chacune des cases de soumission de l'aperçu "
 "pour les activer."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:146
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:152
 msgid "**Type**:"
 msgstr "**Type** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:147
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:153
 msgid "Either an image, or a video."
 msgstr "Soit une image, soit une vidéo."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:148
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:154
 msgid "**Image/YouTube URL**:"
 msgstr "**Image/YouTube URL** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:149
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:155
 msgid "Either a link to the image, or to a video, hosted on YouTube."
 msgstr "Soit un lien vers l'image, soit vers une vidéo, hébergée sur YouTube."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:153
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:159
 msgid "**Thumbnail URL**:"
 msgstr "**Thumbnail URL** :"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:151
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:157
 msgid ""
 "A URL to an image that will be used as a thumbnail for the preview. This "
 "option will be removed eventually, and thumbnails will be automatically "
@@ -438,7 +447,7 @@ msgstr ""
 "option sera supprimée à terme et les vignettes seront calculées "
 "automatiquement à la place."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:155
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:161
 msgid ""
 "Once you are done, hit Submit. Your asset will be entered into the pending "
 "queue, which you can visit on the AssetLib `here <https://godotengine.org/"

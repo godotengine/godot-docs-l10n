@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,9 +71,8 @@ msgid ":doc:`ui_main_menu`"
 msgstr ":doc:`ui_main_menu`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
-#, fuzzy
 msgid ":doc:`ui_game_user_interface`"
-msgstr ":ref:`doc_godot_interfaces`"
+msgstr ":doc:`ui_game_user_interface`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -198,8 +197,8 @@ msgstr ""
 msgid ""
 "``number_label`` displays a life count as a number. It's a ``Label`` node"
 msgstr ""
-"``number_label`` отображает количество здоровья в числовом виде. Этот узел "
-"-  ``Label``"
+"``number_label`` отображает количество здоровья в числовом виде. Этот узел - "
+"``Label``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
@@ -214,13 +213,12 @@ msgstr ""
 "значение или метод из любого другого узла"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
-#, fuzzy
 msgid ""
 "The project uses a simple organization that works for game jams and tiny "
 "games."
 msgstr ""
-"Проект использует простую организацию, которая подходит для средних и малых "
-"размеров игр."
+"Проект использует простую организацию, которая работает для игровых джемов и "
+"крошечных игр."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 msgid ""
@@ -428,7 +426,6 @@ msgstr ""
 "*сразу после* изменений."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
-#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
@@ -439,14 +436,14 @@ msgid ""
 "gameprogrammingpatterns.com/observer.html>`_. The `full book <https://"
 "gameprogrammingpatterns.com/contents.html>`_ is available online for free."
 msgstr ""
-"Шаблон Observer, эти сигналы являются его наследниками, по-прежнему "
-"добавляет немного связей между ветвями узла. Но это, как правило, легче и "
-"безопаснее, чем доступ к узлам напрямую для связи между двумя отдельными "
-"классами. Для родительского узла может быть нормальным получать значения от "
-"его дочерних узлов. Но вы хотите, чтобы пользу сигналов, если вы работаете с "
-"двумя отдельными ветвями. Прочитайте шаблоны программирования игр для "
-"получения дополнительной информации о `Observer шаблоне <http://"
-"gameprogrammingpatterns.com/observer.html>`_. `Полная версия <http://"
+"Шаблон Observer, из которого исходят эти сигналы, по-прежнему добавляет "
+"немного связей между ветвями узла. Но это, как правило, легче и безопаснее, "
+"чем доступ к узлам напрямую для связи между двумя отдельными классами. Для "
+"родительского узла может быть нормальным получать значения от его дочерних "
+"узлов. Но вы захотите отдать предпочтение сигналам, если работаете с двумя "
+"отдельными ветвями. Прочитайте шаблоны программирования игр для получения "
+"дополнительной информации о `Observer шаблоне <https://"
+"gameprogrammingpatterns.com/observer.html>`_. `Полная версия книги <https://"
 "gameprogrammingpatterns.com/contents.html>`_ доступна для скачивания "
 "бесплатно."
 
@@ -637,7 +634,7 @@ msgstr "Этот метод должен:"
 msgid ""
 "set the ``Number`` node's ``text`` to ``new_value`` converted to a string"
 msgstr ""
-"задайте свойству ``text`` узла ``Number`` значение ``new_value``,  "
+"задайте свойству ``text`` узла ``Number`` значение ``new_value``, "
 "приведенное к строковому типу"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:331
@@ -688,11 +685,11 @@ msgid ""
 "``health`` when the character takes damage."
 msgstr ""
 "Интерфейс нашей игры уже вполне рабочий, однако не помешает добавить немного "
-"анимаций.  В этом нам поможет узел ``Tween`` — незаменимый инструмент для "
-"создания анимаций.  ``Tween`` может плавно менять значение любого свойства, "
-"которого вы только пожелаете. Например, когда игрок``Player`` получает "
-"урон,  полоска здоровья ``TextureProgress`` уменьшается до текущего уровня "
-"здоровья ``health``."
+"анимаций. В этом нам поможет узел ``Tween`` — незаменимый инструмент для "
+"создания анимаций. ``Tween`` может плавно менять значение любого свойства, "
+"которого вы только пожелаете. Например, когда игрок``Player`` получает урон, "
+"полоска здоровья ``TextureProgress`` уменьшается до текущего уровня здоровья "
+"``health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:374
 msgid ""
@@ -709,8 +706,8 @@ msgid ""
 "We will use the ``Tween`` node's ``interpolate_property`` method. It takes "
 "seven arguments:"
 msgstr ""
-"Мы будем использовать метод  узла ``Tween``, который "
-"называется``interpolate_property`` и принимает семь аргументов:"
+"Мы будем использовать метод узла ``Tween``, который "
+"называется ``interpolate_property`` и принимает семь аргументов:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:381
 msgid "A reference to the node who owns the property to animate"
@@ -1041,16 +1038,14 @@ msgid ""
 msgstr "Затем снова вызываем метод ``interpolate_property`` узла ``Tween``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:645
-#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
 "linear transition. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
-"На этот раз мы меняем свойство ``modulate`` и анимируем его из "
-"``start_color`` на `end_color``. Продолжительность составляет одну секунду, "
-"с линейным переходом. Здесь опять же, поскольку переход линейный, плавность "
-"не имеет значения. Вот полный метод ``_on_on_Player_died``:"
+"На этот раз мы меняем свойство ``modulate`` и анимируем его от "
+"``start_color`` к `end_color``. Продолжительность составляет одну секунду, с "
+"линейным переходом. Вот полный метод ``_on_on_Player_died``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:669
 msgid "And that is it. You may now play the game to see the final result!"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -254,7 +254,6 @@ msgstr ""
 "per aprire il pannello \"SpriteFrames\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:121
-#, fuzzy
 msgid ""
 "On the left is a list of animations. Click the \"default\" one and rename it "
 "to \"walk\". Then click the \"New Animation\" button to create a second "
@@ -265,10 +264,13 @@ msgid ""
 "animation:"
 msgstr ""
 "Sulla sinistra c'è una lista di animazioni. Clicca su quella con scritto "
-"\"default\" e rinominala in \"right\". Ora clicca sul tasto \"Aggiungi\" per "
-"creare una seconda animazione chiamata \"up\". Trascina le due immagini per "
-"ogni animazione, chiamate ``playerGrey_up[1/2]`` e ``playerGrey_walk[1/2]``, "
-"all'interno della sezione \"Frames animazione\" del pannello:"
+"\"default\" e rinominala in \"walk\". Ora clicca sul tasto \"Aggiungi\" per "
+"creare una seconda animazione chiamata \"up\". Trova le immagini del "
+"giocatore nella scheda \"FileSystem\" - si trovano nella cartella `` art`` "
+"che hai decompresso in precedenza. Trascina le due immagini per ogni "
+"animazione, chiamate ``playerGrey_up[1/2]`` e ``playerGrey_walk[1/2]``, "
+"all'interno della sezione \"Frames animazione\" del pannello per "
+"l'animazione corrispondente:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:130
 msgid ""
@@ -439,7 +441,6 @@ msgstr ""
 "lo è."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:302
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default, the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -452,10 +453,10 @@ msgstr ""
 "Iniziamo impostando la ``velocity`` a ``(0, 0)`` - di default il giocatore "
 "non dovrebbe muoversi. Poi controlliamo ogni input e aggiungiamo/sottraiamo "
 "da ``velocity`` per ottenere una direzione globale. Per esempio, se tieni "
-"premuto ``right`` e ``down`` allo stesso tempo, il vettore ``velocity`` che "
+"premuto ``destra`` e ``giù`` allo stesso tempo, il vettore ``velocity`` che "
 "otterremo sarà ``(1, 1)``. In questo caso, dato che stiamo sommando un "
 "movimento orizzontale e uno verticale, il giocatore si muoverà *più* "
-"*velocemente* rispetto al solo movimento orizzontale."
+"*velocemente* in diagonale rispetto al solo movimento orizzontale."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid ""
@@ -647,7 +648,6 @@ msgstr ""
 "Aggiungi quanto di seguito in cima allo script, dopo ``extends Area2d``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:466
-#, fuzzy
 msgid ""
 "This defines a custom signal called \"hit\" that we will have our player "
 "emit (send out) when it collides with an enemy. We will use ``Area2D`` to "
@@ -655,13 +655,12 @@ msgid ""
 "next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
 "Questo definisce un segnale personalizzato chiamato \"hit\" che il giocatore "
-"emetterà quando entra a contatto con un nemico. Useremo ``Area2D``per "
-"rilevare la collisione. Seleziona il nodo ``Player`` e fai click "
-"sull'etichetta \"Node\", vicino a \"Inspector\", per vedere la lista di "
-"segnali che il giocatore può emettere:"
+"emetterà quando entra a contatto con un nemico. Useremo il nodo "
+"``Area2D``per rilevare la collisione. Seleziona il nodo ``Player`` e fai "
+"click sull'etichetta \"Node\", vicino a \"Inspector\", per vedere la lista "
+"di segnali che il giocatore può emettere:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:473
-#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered(body: Node)`` "
@@ -670,14 +669,13 @@ msgid ""
 "change any of these settings so click \"Connect\" again. Godot will "
 "automatically create a function in your player's script."
 msgstr ""
-"Come puoi notare la lista contiene anche il nostro segnale \"hit\". Poiché i "
-"nemici saranno nodi ``RigidBody2D``, vogliamo usare il segnale "
-"``body_entered( Object body )``; questo segnale viene emesso quando un corpo "
-"entra a contatto con il giocatore. Clicca \"Connect..\" e poi di nuovo "
-"\"Connect\" nella finestra \"Connecting Signal\". Non abbiamo bisogno di "
-"cambiare nessuna delle impostazioni - Godot creerà automaticamente una "
-"funzione nello script del giocatore. Questa funzione sarà invocata ogni "
-"volta che il segnale viene emesso - gestisce il segnale."
+"Come puoi notare la lista contiene anche il nostro segnale personalizzato "
+"\"hit\". Poiché i nemici saranno nodi ``RigidBody2D``, vogliamo usare il "
+"segnale ``body_entered(body: Node)``. Questo segnale viene emesso quando un "
+"corpo entra a contatto con il giocatore. Clicca \"Connetti..\" e appare la "
+"finestra \"Connetti un Segnale\". Non abbiamo bisogno di cambiare nessuna "
+"delle impostazioni quindi clicca \"Connetti\" nuovamente. Godot creerà "
+"automaticamente una funzione nello script del tuo player."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -698,41 +696,38 @@ msgstr ""
 "segnale ``hit`` più di una volta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:506
-#, fuzzy
 msgid ""
 "Disabling the area's collision shape can cause an error if it happens in the "
 "middle of the engine's collision processing. Using ``set_deferred()`` tells "
 "Godot to wait to disable the shape until it's safe to do so."
 msgstr ""
 "Disabilitare la forma di collisione dell'area può causare un errore se si "
-"verifica nel mezzo dell'elaborazione di collisione del motore. Usando "
-"```set_deferred()`` ci permette di avere Godot mettere in pausa per "
-"disabilitare la forma fino a quando non è sicuro di farlo."
+"usa mentre il motore sta elaborando le collisioni. Usando "
+"```set_deferred()`` si dice a Godot di aspettare a disabilitare la forma di "
+"collisione, fino a quando non è sicuro farlo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:510
-#, fuzzy
 msgid ""
 "The last piece is to add a function we can call to reset the player when "
 "starting a new game."
 msgstr ""
-"L'ultimo pezzo da aggiungere al nostro giocatore è una funzione che possiamo "
-"chiamare per resettarlo quando si comincia una nuova partita."
+"L'ultimo pezzo è aggiungere una funzione che chiamiamo per resettare il "
+"player quando inizia una nuova partita."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:531
 msgid "Enemy scene"
 msgstr "Scena del nemico"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:533
-#, fuzzy
 msgid ""
 "Now it's time to make the enemies our player will have to dodge. Their "
 "behavior will not be very complex: mobs will spawn randomly at the edges of "
 "the screen, choose a random direction, and move in a straight line."
 msgstr ""
-"Ora è il momento di rendere i nemici che il nostro giocatore dovrà schivare. "
-"Il loro comportamento non sarà molto complesso: i mob si riprodurranno in "
-"modo casuale ai bordi dello schermo e si muoveranno in una direzione casuale "
-"in linea retta, per poi sparire quando escono dallo schermo."
+"Ora è il momento di creare i nemici che il nostro giocatore dovrà schivare. "
+"Il loro comportamento non sarà molto complesso: i mob si generano in modo "
+"casuale ai bordi dello schermo, scelgono una direzione randomica e si "
+"muovono in linea retta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:537
 msgid ""
@@ -781,7 +776,6 @@ msgstr ""
 "selezionati, come hai fatto con la scena del Giocatore."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:556
-#, fuzzy
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
 "Scale`` to ``0``, so the mob will not fall downward. In addition, under the "
@@ -789,23 +783,20 @@ msgid ""
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
 "Nelle proprietà di :ref:`RigidBody2D <class_RigidBody2D>`, imposta ``Gravity "
-"Scale`` a ``0`` in modo che il nemico non cada verso il basso. Inoltre, "
+"Scale`` a ``0``, in modo che il nemico non cada verso il basso. Inoltre, "
 "sotto la sezione ``PhysicsBody2D``, clicca sulla proprietà ``Mask`` e "
 "deseleziona la prima casella. Questo farà in modo che i nemici non collidano "
 "tra di loro."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:563
-#, fuzzy
 msgid ""
 "Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
 "player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. "
 "There are two images for each animation in the art folder."
 msgstr ""
-"Imposta :ref:`AnimatedSprite <class_AnimatedSprite>` come hai fatto per il "
-"giocatore. Questa volta abbiamo 3 animazioni: ``fly``, ``swim`` e ``walk``. "
-"Imposta la proprietà ``Playing`` nell'Inspector su \"On\" e regola la "
-"proprietà \"Speed (FPS)\" come mostrato sotto. Selezioneremo casualmente una "
-"di queste animazione in modo che i nemici abbiamo un po' di varietà."
+"Imposta :ref: `AnimatedSprite <class_AnimatedSprite>` come hai fatto per il "
+"giocatore. Questa volta abbiamo 3 animazioni: `` fly``, `` swim`` e `` "
+"walk``. Ci sono due immagini per ogni animazione nella cartella grafica."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:567
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
@@ -813,7 +804,7 @@ msgstr "Regolare \"Speed (FPS)\" su ```3`` per tutte le animazioni."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:571
 msgid "Set the ``Playing`` property in the Inspector to “On”."
-msgstr "Impostare la proprietà ```Playing``` nell'Inspector su \"On\"."
+msgstr "Impostare la proprietà ```Playing``` nell' \"Inspector\" su \"On\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:573
 msgid ""
@@ -981,15 +972,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:688
 msgid "``MobTimer``: ``0.5``"
-msgstr "``MobTimer``: `` 0.5 ``"
+msgstr "``MobTimer``: ``0.5``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:689
 msgid "``ScoreTimer``: ``1``"
-msgstr "``ScoreTimer``: `` 1 ``"
+msgstr "``ScoreTimer``: ``1``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:690
 msgid "``StartTimer``: ``2``"
-msgstr "``StartTimer``: `` 2 ``"
+msgstr "``StartTimer``: ``2``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:692
 msgid ""
@@ -1004,7 +995,6 @@ msgid "Spawning mobs"
 msgstr "Generare Mobs"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:698
-#, fuzzy
 msgid ""
 "The Main node will be spawning new mobs, and we want them to appear at a "
 "random location on the edge of the screen. Add a :ref:`Path2D "
@@ -1012,10 +1002,10 @@ msgid ""
 "select ``Path2D``, you will see some new buttons at the top of the editor:"
 msgstr ""
 "Il nodo principale genererà nuovi mob, e vogliamo che appaiano in una "
-"posizione casuale sul bordo dello schermo. Aggiungere un nodo :ref:``Path2D "
-"<class_Path2D>`` chiamato ``MobPath``` come figlio di ``Main```. "
-"Selezionando ``Path2D```, si vedranno alcuni nuovi pulsanti nella parte "
-"superiore dell'editor:"
+"posizione casuale sul bordo dello schermo. Aggiungi un nodo :ref:`Path2D "
+"<class_Path2D>` chiamato ``MobPath``` come figlio di ``Main```. Quando "
+"selezioni ``Path2D```, vedrai alcuni nuovi pulsanti nella parte superiore "
+"dell'editor:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:705
 #, fuzzy
@@ -1136,16 +1126,15 @@ msgstr ""
 "''new_game'' per impostare tutto per un nuovo gioco:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:826
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` , and ``MobTimer``) to the main script. "
 "``StartTimer`` will start the other two timers. ``ScoreTimer`` will "
 "increment the score by 1."
 msgstr ""
-"Collegare ora il segnale ''timeout()'' di ciascuno dei nodi Timer "
-"(''StartTimer'', ''ScoreTimer'' e ''MobTimer'') allo script principale. "
-"''StartTimer'' avvierà gli altri due timer. ''ScoreTimer'' incrementerà il "
+"Collega ora il segnale ``timeout()`` di ciascuno dei nodi Timer "
+"(``StartTimer``, ``ScoreTimer`` e ``MobTimer``) allo script principale. "
+"``StartTimer`` avvierà gli altri due timer. ``ScoreTimer`` incrementerà il "
 "punteggio di 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:853
@@ -1169,15 +1158,15 @@ msgstr ""
 "''add_child()''."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:907
-#, fuzzy
 msgid ""
 "Why ``PI``? In functions requiring angles, GDScript uses *radians*, not "
 "degrees. If you're more comfortable working with degrees, you'll need to use "
 "the ``deg2rad()`` and ``rad2deg()`` functions to convert between the two."
 msgstr ""
-"Nelle funzioni che richiedono angoli, GDScript utilizza i radianti, non i "
-"gradi. Se si ha più familiarità con i gradi, è necessario utilizzare le "
-"funzioni ''deg2rad()'' e ''rad2deg()'' per eseguire la conversione tra i due."
+"Perché ``PI``? Nelle funzioni che richiedono angoli, GDScript utilizza i "
+"*radianti*, non i gradi. Se si ha più familiarità con i gradi, è necessario "
+"utilizzare le funzioni ``deg2rad()`` e ``rad2deg()`` per eseguire la "
+"conversione tra i due."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:913
 msgid "Testing the scene"
@@ -1295,19 +1284,17 @@ msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:'Timer <class_Timer>' denominato ''MessageTimer''."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:972
-#, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the ``Text`` field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
 "well. There is a font file included in the game assets called \"Xolonium-"
 "Regular.ttf\". To use this font, do the following:"
 msgstr ""
-"Fare clic su ''ScoreLabel'' e digitare un numero nel campo \"Text\" nella "
-"finestra di ispezione. Il tipo di carattere predefinito per i nodi "
-"''Controllo'' è piccolo e non è scalabile bene. C'è un file di font incluso "
-"nelle risorse di gioco chiamato \"Xolonium-Regular.ttf\". Per utilizzare "
-"questo tipo di carattere, eseguire le operazioni seguenti per ognuno dei tre "
-"nodi ''Control'':"
+"Fare clic su ``ScoreLabel`` e digitare un numero nel campo ``Testo`` "
+"nell'Inspector. Il tipo di font predefinito per i nodi ``Control`` è piccolo "
+"e non scala bene. C'è un file di font incluso nelle risorse di gioco "
+"chiamato \"Xolonium-Regular.ttf\". Per utilizzare questo font, eseguire le "
+"operazioni seguenti:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:977
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
@@ -1420,11 +1407,11 @@ msgstr "*Margine* :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1028
 msgid "Top: ``-200``"
-msgstr "In alto: ''-200''"
+msgstr "In alto: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1029
 msgid "Bottom: ``-100``"
-msgstr "In basso: ''-100''"
+msgstr "In basso: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1031
 #, fuzzy

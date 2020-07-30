@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -696,18 +696,18 @@ msgstr ""
 "mudanças massivas no núcleo, um tipo de mímica que outro motor de jogos faz, "
 "ou modos de trabalho alternativo que você iria querer dentro do editor. Tudo "
 "isso é ótimo e nós agradecemos por ter tantas pessoas motivadas querendo "
-"contribuir, porém, o foco da Godot é e sempre será, a funcionalidade central "
+"contribuir, porém, o foco do Godot é e sempre será, a funcionalidade central "
 "como descrita no `Roadmap <https://github.com/godotengine/godot-roadmap/blob/"
 "master/ROADMAP.md>`_, `consertando bugs e discutindo problemas <https://"
 "github.com/godotengine/godot/issues>`_, e discussão entre membros da "
-"comunidade da godot."
+"comunidade do Godot."
 
 #: ../../docs/about/faq.rst:268
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
-"A maior parte dos desenvolvedores na comunidade da Godot ficarão mais "
+"A maior parte dos desenvolvedores na comunidade do Godot ficarão mais "
 "interessados em aprender coisas como:"
 
 #: ../../docs/about/faq.rst:271
@@ -780,7 +780,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:293
 msgid "Is it possible to use Godot as a library?"
-msgstr ""
+msgstr "É possível utilizar a Godot como uma biblioteca?"
 
 #: ../../docs/about/faq.rst:295
 msgid ""
@@ -789,6 +789,11 @@ msgid ""
 "make Godot usable as a library, as it would make the rest of the engine more "
 "convoluted and difficult to use for casual users."
 msgstr ""
+"Godot é desenvolvida para ser usada com sua interface de edição. "
+"Recomendamos que você experimente, pois provavelmente economizará tempo a "
+"longo prazo. Não há planos de tornar Godot utilizável como uma biblioteca, "
+"pois isso tornaria o restante do mecanismo mais complicado e difícil de usar "
+"para usuários casuais."
 
 #: ../../docs/about/faq.rst:300
 msgid ""
@@ -797,6 +802,10 @@ msgid ""
 "smaller communities compared to Godot. This will make it more difficult to "
 "find answers to your questions."
 msgstr ""
+"Se você deseja usar uma biblioteca de renderização, procure usar um "
+"mecanismo de renderização estabelecido. Lembre-se de que os mecanismos de "
+"renderização geralmente têm comunidades menores em comparação com Godot. "
+"Isso tornará mais difícil encontrar respostas para suas perguntas."
 
 #: ../../docs/about/faq.rst:306
 msgid "Why does Godot not use STL (Standard Template Library)"

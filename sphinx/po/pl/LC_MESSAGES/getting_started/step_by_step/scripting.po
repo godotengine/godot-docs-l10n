@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,17 +228,16 @@ msgstr ""
 "bibliotek współdzielonych."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
-#, fuzzy
 msgid ""
 "This language is the best choice for performance and does not need to be "
 "used throughout an entire game, as other parts can be written in GDScript or "
 "Visual Script. However, the API is clear and easy to use as it resembles, "
 "mostly, Godot's actual C++ API."
 msgstr ""
-"Ten język jest najlepszym wyborem dla wydajności i nie musi być używany "
-"przez całą grę, ponieważ inne części mogą być napisane w GDScript lub "
-"skrypcie wizualnym. API jest jednak jasne i łatwe w użyciu, ponieważ "
-"przypomina rzeczywiste API C++ Godota."
+"Ten język jest najlepszym wyborem pod względem wydajności i co istotne nie "
+"musi być używany do napisania całej gry, ponieważ inne części mogą być "
+"napisane w GDScript lub skrypcie wizualnym (Visual Script). API jest jednak "
+"jasne i łatwe w użyciu, ponieważ przypomina rzeczywiste API C++ Godota."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
 msgid ""
@@ -290,13 +289,13 @@ msgid "Scene setup"
 msgstr "Konfiguracja sceny"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
-#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
-"Użyj okna dialogowego \"Dodaj węzeł - dziecko\" dostępnego na karcie Scena "
-"(lub naciśnij ``Ctrl+A``), aby utworzyć hierarchię z następującymi węzłami:"
+"Użyj przycisku \"Dodaj węzeł\" (ikona w kształcie plusa) dostępnego na "
+"karcie Scena (lub naciśnij :kbd:`Ctrl + A`), aby utworzyć hierarchię z "
+"następującymi węzłami:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
 msgid "Panel"
@@ -478,6 +477,8 @@ msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
+"Na górze okna wyświetlona jest lista węzłów Twojej sceny z nazwą węzła "
+"emitującego podświetlonego na niebiesko. Zaznacz tutaj węzeł \"Panel\"."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
 msgid ""
@@ -485,6 +486,10 @@ msgid ""
 "created. By default, the method name will contain the emitting node's name "
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
+"Dół okna dialogowego wyświetla nazwę metody która zostanie stworzona. "
+"Domyślnie nazwa metody będzie zawierała nazwę węzła emitującego (\"Przycisk"
+"\" w tym wypadku), skutkując linią "
+"``_on_[NazwaWęzłaEmitującego]_[NazwaSygnału]``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:211
 msgid ""
@@ -513,8 +518,7 @@ msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
-"Dla wygody usuwa wszystko pod ``rozszerza Panel``. Resztę skryptu wypełnisz "
-"ręcznie."
+"Usuńmy wszystko pod ``extends Panel``. Resztę skryptu wypełnimy ręcznie."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:223
 msgid ""
@@ -522,28 +526,27 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
-"Ponieważ Przycisk i Etykieta są spokrewnione w panelu, do którego dołączony "
-"jest skrypt, możesz przywołać Przycisk wpisując poniższe zdanie poniżej "
-"funkcji ``ready()``:"
+"Ponieważ Przycisk (Button) i Etykieta (Label) są spokrewnione w Panelu, do "
+"którego dołączony jest skrypt, można obsłużyć Przycisk wpisując poniższy kod "
+"w funkcji ``_ready()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:240
 msgid "Next, write a function which will be called when the button is pressed:"
 msgstr ""
-"Następnie należy zapisać funkcję, która zostanie wywołana po naciśnięciu "
-"przycisku:"
+"Następnie dodajmy funkcję, która zostanie wywołana po naciśnięciu przycisku:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"Na koniec należy podłączyć przycisk do sygnału \"pressed\" do ``_ready()`` "
-"używając :ref:`Object.connect() <class_Object_method_connect>`."
+"Na koniec należy podłączyć przycisk do sygnału \"pressed\" do "
+"``_on_Button_pressed()`` używając :ref:`Object.connect() "
+"<class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"
-msgstr "Końcowy scenariusz powinien tak wyglądać:"
+msgstr "Końcowy skrypt powinien wyglądać następująco:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:304
 msgid ""
@@ -562,16 +565,22 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
+" Powszechnym błędem jest brak zrozumienia co do tego, jak działa metoda "
+"``get_node(path)``. Dla wybranego węzła, ``get_node(path)`` szuka swoich "
+"najbliższych dzieci. W kodzie powyżej, oznacza to, że Button musi być "
+"dzieckiem elementu Panel. Gdyby Button był dzieckiem elementu Label, kod, "
+"który zwróciłby węzeł Button wyglądałby następująco:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:330
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr ""
-"Pamiętaj, że do referencji danego węzła odnosimy się po jego nazwie, nie "
-"typie."
+"Pamiętaj również, że do węzłów należy odwoływać się przy użyciu ich nazwy, a "
+"nie typu."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:334
+#, fuzzy
 msgid ""
-"The right-hand panel of the connect dialogue is for binding specific values "
+"The 'advanced' panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
@@ -586,6 +595,6 @@ msgid ""
 "more information."
 msgstr ""
 "Podejście z użyciem kodu również pozwala na takie przypisania poprzez użycie "
-"czwartego parametru,  ``Array``,  którego wartość domyślnie jest pusta. "
+"czwartego parametru, ``Array``,  którego wartość domyślnie jest pusta. "
 "Możesz dowiedzieć się więcej na ten temat, czytając o metodzie ``Object."
 "connect``."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -293,7 +293,7 @@ msgstr ""
 "de le déplacer en utilisant l'API de bas niveau :ref:`CanvasItem "
 "<class_CanvasItem>`."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:111
+#: ../../docs/tutorials/optimization/using_servers.rst:113
 msgid ""
 "The Canvas Item API in the server allows you to add draw primitives to it. "
 "Once added, they can't be modified. The Item needs to be cleared and the "
@@ -306,15 +306,15 @@ msgstr ""
 "définir la transformation, qui peut être effectuée autant de fois que "
 "souhaité)."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:115
+#: ../../docs/tutorials/optimization/using_servers.rst:117
 msgid "Primitives are cleared this way:"
 msgstr "Les primitifs sont éliminés de cette façon :"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:124
+#: ../../docs/tutorials/optimization/using_servers.rst:126
 msgid "Instantiating a Mesh into 3D space"
 msgstr "Instanciation d'un Mesh dans l'espace 3D"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:126
+#: ../../docs/tutorials/optimization/using_servers.rst:128
 msgid ""
 "The 3D APIs are different from the 2D ones, so the instantiation API must be "
 "used."
@@ -322,11 +322,11 @@ msgstr ""
 "Les API 3D sont différentes des API 2D, il faut donc utiliser l'API "
 "d'instanciation."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:152
+#: ../../docs/tutorials/optimization/using_servers.rst:156
 msgid "Creating a 2D RigidBody and moving a sprite with it"
 msgstr "Créer un RigidBody en 2D et déplacer un sprite avec lui"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:154
+#: ../../docs/tutorials/optimization/using_servers.rst:158
 msgid ""
 "This creates a :ref:`RigidBody2D <class_RigidBody2D>` using the :ref:"
 "`Physics2DServer <class_Physics2DServer>` API, and moves a :ref:`CanvasItem "
@@ -336,7 +336,7 @@ msgstr ""
 "`Physics2DServer <class_Physics2DServer>`, et déplace un :ref:`CanvasItem "
 "<class_CanvasItem>` lorsque le corps bouge."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:186
+#: ../../docs/tutorials/optimization/using_servers.rst:192
 msgid ""
 "The 3D version should be very similar, as 2D and 3D physics servers are "
 "identical (using :ref:`RigidBody <class_RigidBody>` and :ref:`PhysicsServer "
@@ -346,11 +346,11 @@ msgstr ""
 "et 3D sont identiques (en utilisant respectivement :ref:`RigidBody "
 "<class_RigidBody>` et :ref:`PhysicsServer <class_PhysicsServer>`)."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:190
+#: ../../docs/tutorials/optimization/using_servers.rst:196
 msgid "Getting data from the servers"
 msgstr "Obtention des données depuis les serveurs"
 
-#: ../../docs/tutorials/optimization/using_servers.rst:192
+#: ../../docs/tutorials/optimization/using_servers.rst:198
 msgid ""
 "Try to **never** request any information from ``VisualServer``, "
 "``PhysicsServer`` or ``Physics2DServer`` by calling functions unless you "
@@ -369,7 +369,7 @@ msgstr ""
 "considérablement les performances si vous les appelez à chaque trame (et la "
 "raison ne sera pas évidente)."
 
-#: ../../docs/tutorials/optimization/using_servers.rst:198
+#: ../../docs/tutorials/optimization/using_servers.rst:204
 msgid ""
 "Because of this, most APIs in such servers are designed so it's not even "
 "possible to request information back, until it's actual data that can be "

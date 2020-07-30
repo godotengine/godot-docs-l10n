@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,16 +171,16 @@ msgstr ""
 "アップすることをお勧めします。ありがたいことに、ダイアログはこれらのコール"
 "バックを生成します。 スクリプトは次のようになります:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:123
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:125
 msgid "This is a good template to use when creating new plugins."
 msgstr ""
 "これは、新しいプラグインを作成するときに使用するのに適したテンプレートです。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:126
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:128
 msgid "A custom node"
 msgstr "カスタム ノード"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:128
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:130
 msgid ""
 "Sometimes you want a certain behavior in many nodes, such as a custom scene "
 "or control that can be reused. Instancing is helpful in a lot of cases, but "
@@ -194,12 +194,13 @@ msgstr ""
 "る適切な解決策は、カスタムの動作を持つノードを追加するプラグインを作成するこ"
 "とです。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:136
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:138
+#, fuzzy
 msgid ""
 "Nodes added via an EditorPlugin are \"CustomType\" nodes. While they work "
 "with any scripting language, they have fewer features than :ref:`the Script "
 "Class system <doc_scripting_continued_class_name>`. If you are writing "
-"GDScript or NativeScript, we recommend using them instead."
+"GDScript or NativeScript, we recommend using Script Classes instead."
 msgstr ""
 "EditorPluginを介して追加されたノードは \"CustomType\" ノードです。 どのスクリ"
 "プト言語でも動作しますが、\\ :ref:`スクリプトクラスシステム "
@@ -207,7 +208,7 @@ msgstr ""
 "またはNativeScriptを作成している場合は、そちらを代わりに使用することをお勧め"
 "します。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:141
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:143
 msgid ""
 "To create a new node type, you can use the function :ref:`add_custom_type() "
 "<class_EditorPlugin_method_add_custom_type>` from the :ref:"
@@ -224,7 +225,7 @@ msgstr ""
 "必要です。このスクリプトは ``tool`` キーワードを使用する必要はありませんが、"
 "スクリプトをエディタで実行させるためにそれを追加できます。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:148
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:150
 msgid ""
 "For this tutorial, we'll create a simple button that prints a message when "
 "clicked. For that, we'll need a simple script that extends from :ref:"
@@ -234,7 +235,7 @@ msgstr ""
 "を作成します。そのためには、\\ :ref:`class_Button` から拡張する簡単なスクリプ"
 "トが必要です。必要に応じて :ref:`class_BaseButton` を拡張することもできます:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:184
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:188
 msgid ""
 "That's it for our basic button. You can save this as ``my_button.gd`` inside "
 "the plugin folder. You'll also need a 16×16 icon to show in the scene tree. "
@@ -250,7 +251,7 @@ msgstr ""
 "(`preload(\"res://icon.png\")`)を使用します。 必要に応じて、SVGアイコンを使用"
 "することもできます。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:192
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:196
 msgid ""
 "Now, we need to add it as a custom type so it shows on the **Create New "
 "Node** dialog. For that, change the ``custom_node.gd`` script to the "
@@ -260,7 +261,7 @@ msgstr ""
 "て追加する必要があります。そのためには、\\ ``custom_node.gd`` スクリプトを次"
 "のように変更します:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:238
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:244
 msgid ""
 "With that done, the plugin should already be available in the plugin list in "
 "the **Project Settings**, so activate it as explained in `Checking the "
@@ -270,11 +271,11 @@ msgstr ""
 "に使用可能になっているはずなので、\\ `Checking the results`_ で説明されている"
 "ようにアクティブにします。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:241
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:247
 msgid "Then try it out by adding your new node:"
 msgstr "次に、新しいノードを追加して試してください:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:245
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:251
 msgid ""
 "When you add the node, you can see that it already has the script you "
 "created attached to it. Set a text to the button, save and run the scene. "
@@ -284,11 +285,11 @@ msgstr ""
 "ボタンにテキストを設定し、シーンを保存して実行します。 ボタンをクリックする"
 "と、コンソールにテキストが表示されます:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:252
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:258
 msgid "A custom dock"
 msgstr "カスタムドック"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:254
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:260
 msgid ""
 "Sometimes, you need to extend the editor and add tools that are always "
 "available. An easy way to do it is to add a new dock with a plugin. Docks "
@@ -300,7 +301,7 @@ msgstr ""
 "ロールに基づいた単なるシーンであるため、通常のGUIシーンと同様の方法で作成され"
 "ます。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:258
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:264
 msgid ""
 "Creating a custom dock is done just like a custom node. Create a new "
 "``plugin.cfg`` file in the ``addons/my_custom_dock`` folder, then add the "
@@ -310,7 +311,7 @@ msgstr ""
 "my_custom_dock`` フォルダに新しい ``plugin.cfg`` ファイルを作成し、次のコンテ"
 "ンツを追加します:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:283
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:289
 msgid ""
 "Then create the script ``custom_dock.gd`` in the same folder. Fill it with "
 "the :ref:`template we've seen before <doc_making_plugins_template_code>` to "
@@ -320,7 +321,7 @@ msgstr ""
 "切るために、\\ :ref:`前に見たテンプレート <doc_making_plugins_template_code> "
 "` を入力してください。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:287
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:293
 msgid ""
 "Since we're trying to add a new custom dock, we need to create the contents "
 "of the dock. This is nothing more than a standard Godot scene: just create a "
@@ -330,7 +331,7 @@ msgstr ""
 "必要があります。これは、標準のGodotシーンに他なりません。エディタで新しいシー"
 "ンを作成し、編集するだけです。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:291
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:297
 msgid ""
 "For an editor dock, the root node **must** be a :ref:`Control "
 "<class_Control>` or one of its child classes. For this tutorial, you can "
@@ -344,7 +345,7 @@ msgstr ""
 "必ず短くわかりやすい名前を付けてください。また、ボタンにテキストを追加するこ"
 "とを忘れないでください。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:299
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:305
 msgid ""
 "Save this scene as ``my_dock.tscn``. Now, we need to grab the scene we "
 "created then add it as a dock in the editor. For this, you can rely on the "
@@ -357,7 +358,7 @@ msgstr ""
 "`EditorPlugin <class_EditorPlugin>` クラスの関数 :ref:`add_control_to_dock() "
 "<class_EditorPlugin_method_add_control_to_dock>` を使用できます。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:304
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:310
 msgid ""
 "You need to select a dock position and define the control to add (which is "
 "the scene you just created). Don't forget to **remove the dock** when the "
@@ -367,7 +368,7 @@ msgstr ""
 "必要があります。プラグインが非アクティブになったら、\\ **ドックを削除する** "
 "ことを忘れないでください。 スクリプトは次のようになります:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:362
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:371
 msgid ""
 "Note that, while the dock will initially appear at its specified position, "
 "the user can freely change its position and save the resulting layout."
@@ -375,11 +376,11 @@ msgstr ""
 "ドックは指定された位置に最初に表示されますが、ユーザーは自由に位置を変更し、"
 "結果のレイアウトを保存できることに注意してください。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:366
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:375
 msgid "Checking the results"
 msgstr "結果の確認"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:368
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:377
 msgid ""
 "It's now time to check the results of your work. Open the **Project "
 "Settings** and click on the **Plugins** tab. Your plugin should be the only "
@@ -391,7 +392,7 @@ msgstr ""
 "せん。 表示されていない場合は、右上隅の[**アップデート**]ボタンをクリックしま"
 "す。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:375
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:384
 msgid ""
 "You can see the plugin is inactive on the **Status** column; click on the "
 "status to select **Active**. The dock should become visible before you even "
@@ -401,11 +402,11 @@ msgstr ""
 "スをクリックして[**Active**]を選択します。設定ウィンドウを閉じる前に、ドック"
 "が表示されるはずです。これで、カスタムドックができました:"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:382
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:391
 msgid "Going beyond"
 msgstr "今後の展開"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:384
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:393
 msgid ""
 "Now that you've learned how to make basic plugins, you can extend the editor "
 "in several ways. Lots of functionality can be added to the editor with "
@@ -417,7 +418,7 @@ msgstr ""
 "ジュールを詳しく掘り下げることなく、専用のエディタを作成するための強力な方法"
 "です。"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:389
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:398
 msgid ""
 "You can make your own plugins to help yourself and share them in the `Asset "
 "Library <https://godotengine.org/asset-library/>`_ so that people can "

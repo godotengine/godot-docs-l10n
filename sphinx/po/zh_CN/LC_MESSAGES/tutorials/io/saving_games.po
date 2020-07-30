@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,7 +138,7 @@ msgstr ""
 "回到一个字典中，然后遍历字典以读取保存的值。 首先我们需要创建对象，这可以通过"
 "使用文件名和父值来实现。 这就是我们的加载函数:"
 
-#: ../../docs/tutorials/io/saving_games.rst:292
+#: ../../docs/tutorials/io/saving_games.rst:293
 msgid ""
 "Now we can save and load an arbitrary number of objects laid out almost "
 "anywhere across the scene tree! Each object can store different data "
@@ -147,11 +147,11 @@ msgstr ""
 "现在我们可以保存和加载几乎任何位于场景树中的任意数量的对象了！ 每个对象可以根"
 "据需要保存的内容存储不同的数据。"
 
-#: ../../docs/tutorials/io/saving_games.rst:297
+#: ../../docs/tutorials/io/saving_games.rst:298
 msgid "Some notes"
 msgstr "一些注释"
 
-#: ../../docs/tutorials/io/saving_games.rst:299
+#: ../../docs/tutorials/io/saving_games.rst:300
 msgid ""
 "We have glossed over setting up the game state for loading. It's ultimately "
 "up to the project creator where much of this logic goes. This is often "
@@ -162,7 +162,7 @@ msgstr ""
 "决定权在项目创建者手里。这通常很复杂, 需要根据单个项目的需求对此步骤进行大量"
 "定制。"
 
-#: ../../docs/tutorials/io/saving_games.rst:304
+#: ../../docs/tutorials/io/saving_games.rst:305
 msgid ""
 "Additionally, our implementation assumes no Persist objects are children of "
 "other Persist objects. Otherwise, invalid paths would be created. To "

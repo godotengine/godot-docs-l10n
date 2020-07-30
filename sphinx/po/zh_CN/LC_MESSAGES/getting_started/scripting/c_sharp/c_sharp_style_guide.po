@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -342,6 +342,8 @@ msgid ""
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
+"如果变量只在方法中使用，勿声明其为成员变量，因为我们难以定位在何处使用了该变"
+"量。相反，你应该将它们在方法内部定义为局部变量。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
 #, fuzzy
@@ -354,6 +356,8 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"声明局部变量的位置离首次使用它的位置越近越好。这让人更容易跟上代码的思路，而"
+"不需要上下翻找该变量的声明位置。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:282
 msgid "Implicitly typed local variables"

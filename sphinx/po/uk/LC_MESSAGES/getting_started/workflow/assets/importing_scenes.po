@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -901,7 +901,8 @@ msgstr ""
 "незалежно від їх типу. Вони не з’являться на імпортованій сцені."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
-msgid "Create collisions (-col, -colonly, -convcolonly)"
+#, fuzzy
+msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
 msgstr "Створити зіткнення (-col, -colonly, -convcolonly)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
@@ -914,6 +915,15 @@ msgstr ""
 "тої самої геометрії, що і сітка."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:375
+#, fuzzy
+msgid ""
+"Option \"-convcol\" will create a :ref:`class_convexpolygonshape` instead of "
+"a :ref:`class_concavepolygonshape`."
+msgstr ""
+"Суфікс \"-convcolonly\" створить :ref:`class_convexpolygonshape` замість :"
+"ref:`class_concavepolygonshape`."
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:377
 msgid ""
 "However, it is often the case that the visual geometry is too complex or too "
 "un-smooth for collisions, which ends up not working well."
@@ -922,7 +932,7 @@ msgstr ""
 "занадто гладкою, для зіткнень, і в кінцевому підсумку не працює належним "
 "чином."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:378
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
 msgid ""
 "To solve this, the \"-colonly\" modifier exists, which will remove the mesh "
 "upon import and create a :ref:`class_staticbody` collision instead. This "
@@ -932,15 +942,16 @@ msgstr ""
 "імпорті та, натомість, створить зіткнення :ref:`class_staticbody`. Це "
 "допомагає розділити видиму сітку та фактичне зіткнення."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:382
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
+#, fuzzy
 msgid ""
-"Option \"-convcolonly\" will create a :ref:`class_convexpolygonshape` "
-"instead of a :ref:`class_concavepolygonshape`."
+"Option \"-convcolonly\" works in a similar way but will create a :ref:"
+"`class_convexpolygonshape` instead."
 msgstr ""
 "Суфікс \"-convcolonly\" створить :ref:`class_convexpolygonshape` замість :"
 "ref:`class_concavepolygonshape`."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:386
 msgid ""
 "Option \"-colonly\" can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
@@ -952,25 +963,25 @@ msgstr ""
 "в якості нащадка. Вузол зіткнення матиме одну з заздалегідь визначених форм, "
 "залежно від типу порожнього об'єкта Blender:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:391
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:393
 msgid "Single arrow will create a :ref:`class_rayshape`"
 msgstr "Просто стрілка створить форму :ref:`class_rayshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:392
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
 msgid "Cube will create a :ref:`class_boxshape`"
 msgstr "Куб створить :ref:`class_boxshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:393
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:395
 msgid "Image will create a :ref:`class_planeshape`"
 msgstr "Зображення створить форму :ref:`class_planeshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:396
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`"
 msgstr ""
 "Сфера (та інші, які не перераховані) створить форму :ref:`class_sphereshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:396
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
 msgid ""
 "For better visibility in Blender's editor, the user can set \"X-Ray\" option "
 "on collision empties and set some distinct color for them in User "
@@ -980,11 +991,11 @@ msgstr ""
 "\"X-Ray\" на порожніх об'єктах зіткнення та встановити для них певний колір "
 "у розділі Налаштування користувача / Теми / 3D Перегляд / Порожняки (Empty)."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:400
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
 msgid "Create navigation (-navmesh)"
 msgstr "Створити навігацію (-navmesh)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
 msgid ""
 "A mesh node with this suffix will be converted to a navigation mesh. "
 "Original Mesh node will be removed."
@@ -992,11 +1003,11 @@ msgstr ""
 "Меш вузол (вузол сітки) з цим суфіксом буде перетворений на навігаційну "
 "сітку. Оригінальний вузол сітки буде видалений."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "Створити VehicleBody (-vehicle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:410
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleBody <class_VehicleBody>` node."
@@ -1004,11 +1015,11 @@ msgstr ""
 "Вузол сітки з цим суфіксом буде імпортований в якості нащадка вузла :ref:"
 "`VehicleBody <class_VehicleBody>`."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "Створити VehicleWheel (-wheel)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:415
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleWheel <class_VehicleWheel>` node."
@@ -1016,19 +1027,19 @@ msgstr ""
 "Вузол сітки з цим суфіксом буде імпортований в якості нащадка вузла :ref:"
 "`VehicleWheel <class_VehicleWheel>`."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:418
 msgid "Rigid Body (-rigid)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:418
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:420
 msgid "Creates a rigid body from this mesh."
 msgstr "Створює жорстке (тверде) тіло з цієї сітки."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:421
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
 msgid "Animation loop (-loop, -cycle)"
 msgstr "Цикл анімації (-loop, -cycle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "\"loop\" or \"cycle\" will be imported as a Godot Animation with the loop "
@@ -1038,7 +1049,7 @@ msgstr ""
 "приставкою \"loop\", або \"cycle\", будуть імпортовані як анімація Godot з "
 "встановленою галочкою циклу. Це залежне від регістру і не потребує дефісів."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:429
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the \"loop\" or \"cycle\" prefix or suffix."

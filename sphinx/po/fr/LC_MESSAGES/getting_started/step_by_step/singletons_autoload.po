@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,16 +32,16 @@ msgid ""
 "is needed by more than one scene."
 msgstr ""
 "Bien que puissant et flexible, le gestionnaire de scène de Godot présente un "
-"inconvénient : il n'y a pas de moyen de stocker de l'information (comme le "
-"score d'un joueur ou son inventaire) nécessaire à plusieurs scènes."
+"inconvénient : il n'y a pas de méthode pour stocker des informations (comme "
+"le score d'un joueur ou son inventaire) nécessaires à plusieurs scènes."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:13
 msgid ""
 "It's possible to address this with some workarounds, but they come with "
 "their own limitations:"
 msgstr ""
-"Il est possible de résoudre ceci à l'aide de contournements, mais ceux-ci "
-"ont leur propres limites :"
+"Il a différentes solutions pour contourner ceci, mais celles-ci ont leurs "
+"propres limites :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
 msgid ""
@@ -93,23 +93,23 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Can store global variables, such as player information"
 msgstr ""
-"Peut stocker des variables globales, telles que les informations du joueur"
+"Peuvent stocker des variables globales, telles que les informations du joueur"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
 msgid "Can handle switching scenes and between-scene transitions"
-msgstr "Peut s'occuper des changements de scènes et des transitions"
+msgstr "Peuvent s'occuper des changements de scènes et des transitions"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
 msgid ""
 "Act like a singleton, since GDScript does not support global variables by "
 "design"
 msgstr ""
-"Agit comme un singleton, puisque GDScript ne supporte pas les variables "
+"Agissent comme un singleton, puisque GDScript ne supporte pas les variables "
 "globales du fait de sa conception"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
-msgstr "Les nœuds Autoloading et les scripts répondent à ce besoin."
+msgstr "Les nœuds Autoload et les scripts répondent à ce besoin."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
@@ -124,8 +124,8 @@ msgid ""
 msgstr ""
 "Vous pouvez utiliser AutoLoad pour charger une scène ou un script qui hérite "
 "de :ref:`Node <class_Node>`. Note : lors du chargement automatique d'un "
-"script, un Nœud sera créé et le script y sera attaché. Ce nœud sera ajouté à "
-"la fenêtre d'affichage racine avant le chargement de toute autre scène."
+"script, un Nœud sera créé et le script y sera attaché. Ce nœud sera ajouté "
+"au viewport racine avant le chargement de toute autre scène."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:48
 msgid ""
@@ -133,7 +133,7 @@ msgid ""
 "the menu and switch to the \"AutoLoad\" tab."
 msgstr ""
 "Pour charger automatiquement une scène ou un script, sélectionnez ``Projet -"
-"> Paramètres du projet`` depuis le menu puis allez à l'onglet AutoLoad."
+"> Paramètres du projet`` depuis le menu puis allez à l'onglet \"AutoLoad\"."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
 msgid ""
@@ -161,7 +161,7 @@ msgid ""
 "If the \"Enable\" column is checked (default ``true``) then the singleton "
 "can simply be accessed directly:"
 msgstr ""
-"Si la colonne \"Enable\" est cochée (``vrai`` par défaut), vous pouvez "
+"Si la colonne \"Enable\" est cochée (``true`` par défaut), vous pouvez "
 "simplement accéder directement au singleton :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
@@ -177,7 +177,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid "Custom scene switcher"
-msgstr "Sélecteur de scène personnalisé"
+msgstr "Changeur de scène personnalisé"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
@@ -187,11 +187,12 @@ msgid ""
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
-"Ce court tutoriel vous expliquera comment faire un sélecteur de scènes avec "
-"l'auto-chargement. Pour une sélection simple de scène, la méthode :ref:"
+"Ce court tutoriel vous expliquera comment faire un changeur de scènes en "
+"utilisant autoload. Pour un changement simple de scène, la méthode :ref:"
 "`SceneTree.change_scene() <class_SceneTree_method_change_scene>` suffit "
-"(décrite dans :ref:`doc_scene_tree`), donc cette méthode convient pour des "
-"comportements plus complexes lorsqu'il s'agit de jongler entre les scènes."
+"(décrite dans :ref:`doc_scene_tree`). Cependant, si vous avez besoin d'un "
+"comportement plus complexe lors d'un changement de scène, cette méthode "
+"offre plus de fonctionnalités."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
 msgid ""
@@ -199,7 +200,7 @@ msgid ""
 "autoload.zip>` and open it in Godot."
 msgstr ""
 "D'abord télécharger le modèle à partir d'ici : :download:`autoload.zip "
-"<files/autoload.zip>` , ensuite, l'ouvrir dans Godot."
+"<files/autoload.zip>` , ensuite, ouvrez le dans Godot."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""
@@ -209,9 +210,10 @@ msgid ""
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
 "Le projet contient deux scènes : ``Scene1.tscn`` et ``Scene2.tscn``. Chaque "
-"scène contient une étiquette affichant le nom de la scène et un bouton avec "
-"son signal ``pressé()`` actif. Quand vous exécutez le projet, il démarre à "
-"``Scene1.tscn``. Cependant, appuyer sur le bouton ne fait rien."
+"scène contient une étiquette(label) affichant le nom de la scène et un "
+"bouton avec son signal ``pressed()`` connecté. Quand vous exécutez le "
+"projet, il démarre à ``Scene1.tscn``. Cependant, appuyer sur le bouton ne "
+"fait rien."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid "Global.gd"
@@ -233,10 +235,10 @@ msgid ""
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
 "L'étape suivante consiste à ajouter ce script à la liste autoLoad. Ouvrez "
-"``Project > Project Settings`` dans le menu, passez à l'onglet \"AutoLoad\" "
+"``Project > Project Settings`` dans le menu, allez à l'onglet \"AutoLoad\" "
 "et sélectionnez le script en cliquant sur le bouton Parcourir ou en tapant "
 "son chemin : ``res://Global.gd``. Appuyez sur \"Add\" pour l'ajouter à la "
-"liste de chargement automatique :"
+"liste autoload :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
 msgid ""
@@ -253,7 +255,7 @@ msgid ""
 "``global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
-"Revenant au script, il doit récupérer la scène en cours dans la fonction "
+"Revenons au script, il doit récupérer la scène en cours dans la fonction "
 "`_ready ()`. La scène actuelle (celle avec le bouton) et ``global.gd`` sont "
 "des enfants de root, mais les nœuds auto-chargés sont toujours les premiers. "
 "Cela veut dire que le dernier enfant de root est toujours la scène chargée."
@@ -263,8 +265,8 @@ msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
 msgstr ""
-"La prochaine étape est la fonction de changement de scène. Cette fonction "
-"libère la scène en cours et la remplace par celle demandée."
+"Il nous faut maintenant une fonction pour changer de scène. Cette fonction "
+"doit libérer la scène actuelle et la remplacer par la scène demandée."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
 msgid ""

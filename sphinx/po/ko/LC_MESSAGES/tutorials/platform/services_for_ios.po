@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,9 +113,9 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:87
 #: ../../docs/tutorials/platform/services_for_ios.rst:127
-#: ../../docs/tutorials/platform/services_for_ios.rst:198
-#: ../../docs/tutorials/platform/services_for_ios.rst:242
-#: ../../docs/tutorials/platform/services_for_ios.rst:387
+#: ../../docs/tutorials/platform/services_for_ios.rst:230
+#: ../../docs/tutorials/platform/services_for_ios.rst:274
+#: ../../docs/tutorials/platform/services_for_ios.rst:419
 msgid "Parameters"
 msgstr ""
 
@@ -128,41 +128,45 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:97
 #: ../../docs/tutorials/platform/services_for_ios.rst:137
 #: ../../docs/tutorials/platform/services_for_ios.rst:161
-#: ../../docs/tutorials/platform/services_for_ios.rst:212
-#: ../../docs/tutorials/platform/services_for_ios.rst:259
-#: ../../docs/tutorials/platform/services_for_ios.rst:288
-#: ../../docs/tutorials/platform/services_for_ios.rst:318
+#: ../../docs/tutorials/platform/services_for_ios.rst:199
+#: ../../docs/tutorials/platform/services_for_ios.rst:244
+#: ../../docs/tutorials/platform/services_for_ios.rst:291
+#: ../../docs/tutorials/platform/services_for_ios.rst:320
 #: ../../docs/tutorials/platform/services_for_ios.rst:350
-#: ../../docs/tutorials/platform/services_for_ios.rst:407
+#: ../../docs/tutorials/platform/services_for_ios.rst:382
+#: ../../docs/tutorials/platform/services_for_ios.rst:439
 msgid "Response event"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:99
 #: ../../docs/tutorials/platform/services_for_ios.rst:139
-#: ../../docs/tutorials/platform/services_for_ios.rst:214
-#: ../../docs/tutorials/platform/services_for_ios.rst:261
-#: ../../docs/tutorials/platform/services_for_ios.rst:290
-#: ../../docs/tutorials/platform/services_for_ios.rst:320
+#: ../../docs/tutorials/platform/services_for_ios.rst:201
+#: ../../docs/tutorials/platform/services_for_ios.rst:246
+#: ../../docs/tutorials/platform/services_for_ios.rst:293
+#: ../../docs/tutorials/platform/services_for_ios.rst:322
 #: ../../docs/tutorials/platform/services_for_ios.rst:352
-#: ../../docs/tutorials/platform/services_for_ios.rst:409
+#: ../../docs/tutorials/platform/services_for_ios.rst:384
+#: ../../docs/tutorials/platform/services_for_ios.rst:441
 msgid "The response event will be a dictionary with the following fields:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:101
-#: ../../docs/tutorials/platform/services_for_ios.rst:216
-#: ../../docs/tutorials/platform/services_for_ios.rst:263
-#: ../../docs/tutorials/platform/services_for_ios.rst:292
-#: ../../docs/tutorials/platform/services_for_ios.rst:322
+#: ../../docs/tutorials/platform/services_for_ios.rst:203
+#: ../../docs/tutorials/platform/services_for_ios.rst:248
+#: ../../docs/tutorials/platform/services_for_ios.rst:295
+#: ../../docs/tutorials/platform/services_for_ios.rst:324
 #: ../../docs/tutorials/platform/services_for_ios.rst:354
+#: ../../docs/tutorials/platform/services_for_ios.rst:386
 msgid "On error:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:111
-#: ../../docs/tutorials/platform/services_for_ios.rst:227
-#: ../../docs/tutorials/platform/services_for_ios.rst:273
-#: ../../docs/tutorials/platform/services_for_ios.rst:302
-#: ../../docs/tutorials/platform/services_for_ios.rst:332
+#: ../../docs/tutorials/platform/services_for_ios.rst:214
+#: ../../docs/tutorials/platform/services_for_ios.rst:259
+#: ../../docs/tutorials/platform/services_for_ios.rst:305
+#: ../../docs/tutorials/platform/services_for_ios.rst:334
 #: ../../docs/tutorials/platform/services_for_ios.rst:364
+#: ../../docs/tutorials/platform/services_for_ios.rst:396
 msgid "On success:"
 msgstr ""
 
@@ -205,145 +209,157 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:178
 msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
-"has 8 methods:"
+"has 9 methods:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:181
-msgid "``bool is_authenticated();``"
+msgid "``Error authenticate();``"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:182
-msgid "``Error post_score(Variant p_score);``"
+msgid "``bool is_authenticated();``"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:183
-msgid "``Error award_achievement(Variant p_params);``"
+msgid "``Error post_score(Variant p_score);``"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:184
-msgid "``void reset_achievements();``"
+msgid "``Error award_achievement(Variant p_params);``"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:185
-msgid "``void request_achievements();``"
+msgid "``void reset_achievements();``"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:186
-msgid "``void request_achievement_descriptions();``"
+msgid "``void request_achievements();``"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:187
-msgid "``Error show_game_center(Variant p_params);``"
+msgid "``void request_achievement_descriptions();``"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:188
+msgid "``Error show_game_center(Variant p_params);``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/services_for_ios.rst:189
 msgid "``Error request_identity_verification_signature();``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:190
+#: ../../docs/tutorials/platform/services_for_ios.rst:191
 msgid "plus the standard pending event interface."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:193
+#: ../../docs/tutorials/platform/services_for_ios.rst:194
+msgid "authenticate"
+msgstr ""
+
+#: ../../docs/tutorials/platform/services_for_ios.rst:196
+msgid "Authenticates a user in Game Center."
+msgstr ""
+
+#: ../../docs/tutorials/platform/services_for_ios.rst:225
 msgid "post_score"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:195
+#: ../../docs/tutorials/platform/services_for_ios.rst:227
 msgid "Posts a score to a Game Center leaderboard."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:200
-#: ../../docs/tutorials/platform/services_for_ios.rst:389
+#: ../../docs/tutorials/platform/services_for_ios.rst:232
+#: ../../docs/tutorials/platform/services_for_ios.rst:421
 msgid "Takes a Dictionary as a parameter, with two fields:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:202
+#: ../../docs/tutorials/platform/services_for_ios.rst:234
 msgid "``score`` a float number"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:203
+#: ../../docs/tutorials/platform/services_for_ios.rst:235
 msgid "``category`` a string with the category name"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:205
-#: ../../docs/tutorials/platform/services_for_ios.rst:252
+#: ../../docs/tutorials/platform/services_for_ios.rst:237
+#: ../../docs/tutorials/platform/services_for_ios.rst:284
 msgid "Example:"
 msgstr "예시:"
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:237
+#: ../../docs/tutorials/platform/services_for_ios.rst:269
 msgid "award_achievement"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:239
+#: ../../docs/tutorials/platform/services_for_ios.rst:271
 msgid "Modifies the progress of a Game Center achievement."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:244
+#: ../../docs/tutorials/platform/services_for_ios.rst:276
 msgid "Takes a Dictionary as a parameter, with 3 fields:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:246
+#: ../../docs/tutorials/platform/services_for_ios.rst:278
 msgid "``name`` (string) the achievement name"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:247
+#: ../../docs/tutorials/platform/services_for_ios.rst:279
 msgid ""
 "``progress`` (float) the achievement progress from 0.0 to 100.0 (passed to "
 "``GKAchievement::percentComplete``)"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:249
+#: ../../docs/tutorials/platform/services_for_ios.rst:281
 msgid ""
 "``show_completion_banner`` (bool) whether Game Center should display an "
 "achievement banner at the top of the screen"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:283
+#: ../../docs/tutorials/platform/services_for_ios.rst:315
 msgid "reset_achievements"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:285
+#: ../../docs/tutorials/platform/services_for_ios.rst:317
 msgid "Clears all Game Center achievements. The function takes no parameters."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:312
+#: ../../docs/tutorials/platform/services_for_ios.rst:344
 msgid "request_achievements"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:314
+#: ../../docs/tutorials/platform/services_for_ios.rst:346
 msgid ""
 "Request all the Game Center achievements the player has made progress on. "
 "The function takes no parameters."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:344
+#: ../../docs/tutorials/platform/services_for_ios.rst:376
 msgid "request_achievement_descriptions"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:346
+#: ../../docs/tutorials/platform/services_for_ios.rst:378
 msgid ""
 "Request the descriptions of all existing Game Center achievements regardless "
 "of progress. The function takes no parameters."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:381
+#: ../../docs/tutorials/platform/services_for_ios.rst:413
 msgid "show_game_center"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:383
+#: ../../docs/tutorials/platform/services_for_ios.rst:415
 msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
 "achievements, and challenges."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:391
+#: ../../docs/tutorials/platform/services_for_ios.rst:423
 msgid ""
 "``view`` (string) (optional) the name of the view to present. Accepts "
 "\"default\", \"leaderboards\", \"achievements\", or \"challenges\". Defaults "
 "to \"default\"."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:394
+#: ../../docs/tutorials/platform/services_for_ios.rst:426
 msgid ""
 "``leaderboard_name`` (string) (optional) the name of the leaderboard to "
 "present. Only used when \"view\" is \"leaderboards\" (or \"default\" is "
@@ -351,19 +367,19 @@ msgid ""
 "the aggregate leaderboard."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:399
+#: ../../docs/tutorials/platform/services_for_ios.rst:431
 msgid "Examples:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:411
+#: ../../docs/tutorials/platform/services_for_ios.rst:443
 msgid "On close:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:421
+#: ../../docs/tutorials/platform/services_for_ios.rst:453
 msgid "Multi-platform games"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:423
+#: ../../docs/tutorials/platform/services_for_ios.rst:455
 msgid ""
 "When working on a multi-platform game, you won't always have the \"GameCenter"
 "\" singleton available (for example when running on PC or Android). Because "

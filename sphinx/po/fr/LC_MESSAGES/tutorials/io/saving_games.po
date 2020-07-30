@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,7 +152,7 @@ msgstr ""
 "d'abord créer l'objet et nous pouvons utiliser le nom du fichier et les "
 "valeurs parentales pour y parvenir. Voici notre fonction de chargement :"
 
-#: ../../docs/tutorials/io/saving_games.rst:292
+#: ../../docs/tutorials/io/saving_games.rst:293
 msgid ""
 "Now we can save and load an arbitrary number of objects laid out almost "
 "anywhere across the scene tree! Each object can store different data "
@@ -162,11 +162,11 @@ msgstr ""
 "disposés presque partout dans l'arbre de scène ! Chaque objet peut stocker "
 "des données différentes en fonction de ce qu'il doit sauvegarder."
 
-#: ../../docs/tutorials/io/saving_games.rst:297
+#: ../../docs/tutorials/io/saving_games.rst:298
 msgid "Some notes"
 msgstr "Quelques notes"
 
-#: ../../docs/tutorials/io/saving_games.rst:299
+#: ../../docs/tutorials/io/saving_games.rst:300
 msgid ""
 "We have glossed over setting up the game state for loading. It's ultimately "
 "up to the project creator where much of this logic goes. This is often "
@@ -178,7 +178,7 @@ msgstr ""
 "où va une grande partie de cette logique. C'est souvent compliqué et devra "
 "être fortement personnalisé en fonction des besoins du projet."
 
-#: ../../docs/tutorials/io/saving_games.rst:304
+#: ../../docs/tutorials/io/saving_games.rst:305
 msgid ""
 "Additionally, our implementation assumes no Persist objects are children of "
 "other Persist objects. Otherwise, invalid paths would be created. To "

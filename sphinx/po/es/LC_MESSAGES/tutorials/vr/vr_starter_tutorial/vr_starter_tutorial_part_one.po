@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -398,9 +398,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:186
-#, fuzzy
 msgid "Creating the controllers"
-msgstr "Codificando los controladores"
+msgstr "Creando los controladores"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:190
 msgid ""
@@ -517,9 +516,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:235
-#, fuzzy
 msgid "The code for the VR controllers"
-msgstr "Codificando los controladores"
+msgstr "El código para los controles VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:237
 msgid ""
@@ -555,14 +553,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:538
-#, fuzzy
 msgid "Explaining the VR controller code"
-msgstr "Codificando los controladores"
+msgstr "Explicando el código de controles VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:540
-#, fuzzy
 msgid "First, let's go through all the class variables in the script:"
-msgstr "Vamos a repasar cada una de las variables de clase:"
+msgstr "Primero, veamos todas las variables de la clase en el script:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:542
 msgid ""
@@ -584,6 +580,9 @@ msgid ""
 "controller velocities. This is used to smooth the velocity calculations over "
 "time."
 msgstr ""
+"``prior_controller_velocities``: Un array para mantener las últimas 30 "
+"velocidades calculadas del controlador VR. Esto se utiliza para suavizar los "
+"cálculos de velocidad a lo largo del tiempo."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:545
 msgid ""
@@ -601,22 +600,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:547
-#, fuzzy
 msgid ""
 "``grab_area``: A variable to hold the :ref:`Area <class_Area>` node used to "
 "grab objects with the VR controller."
 msgstr ""
-"``node_raycast``: Una variable para mantener el nodo :ref:`Raycast "
-"<class_Raycast>` junto a la cabeza de la torreta."
+"``grab_area``: Una variable que contiene el nodo :ref:`Area <class_Area>` "
+"usado para agarrar objetos con el controlador VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:548
-#, fuzzy
 msgid ""
 "``grab_raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node "
 "used to grab objects with the VR controller."
 msgstr ""
-"``node_raycast``: Una variable para mantener el nodo :ref:`Raycast "
-"<class_Raycast>` junto a la cabeza de la torreta."
+"``grab_raycast``: Una variable que contiene el nodo :ref:`Raycast "
+"<class_Raycast>` usado para agarrar objetos con el controlador VR."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:549
 msgid ""
@@ -652,13 +649,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:554
-#, fuzzy
 msgid ""
 "``teleport_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node used to show where the player is teleporting to."
 msgstr ""
-"``bomb_mesh``: El :ref:`MeshInstance <class_MeshInstance>` utilizado para el "
-"mesh de la bomba."
+"``teleport_mesh``: Una variable que contiene el nodo :ref:`MeshInstance "
+"<class_MeshInstance>` usado para mostrar dónde se está teletransportando el "
+"jugador."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:555
 msgid ""
@@ -777,12 +774,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:593
-#, fuzzy
 msgid ""
 "Then the ``hand_mesh`` and ``hand_pickup_drop_sound`` nodes are gotten and "
 "assigned them to their respective variables for use later."
 msgstr ""
-"Luego obtenemos todos los nodos y los asignamos a las respectivas variables."
+"Luego los nodos ``hand_mesh`` y ``hand_pickup_drop_sound`` se obtienen y "
+"asignan a sus respectivas variables para uso posterior."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:595
 msgid ""
@@ -934,11 +931,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:658
-#, fuzzy
 msgid ""
 "First this function resets the ``controller_velocity`` variable to zero :ref:"
 "`Vector3 <class_Vector3>`."
-msgstr "Primero ponemos ``dir`` a un :ref:`Vector3 <class_Vector3>`."
+msgstr ""
+"Primero, esta función resetea la variable ``controller_velocity`` a un :ref:"
+"`Vector3 <class_Vector3>` cero."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:662
 msgid ""
@@ -948,6 +946,12 @@ msgid ""
 "there are cached velocities within ``prior_controller_velocities``, then we "
 "iterate through each of the stored velocities using a ``for`` loop."
 msgstr ""
+"Entonces comprobamos si hay alguna velocidad de controlador de RV almacenada/"
+"en caché guardada en el array ``prior_controller_velocities``. Lo hacemos "
+"comprobando si la función ``size()`` devuelve un valor mayor que ``0``. Si "
+"hay velocidades en caché dentro de ``prior_controller_velocities``, entonces "
+"iteramos a través de cada una de las velocidades almacenadas usando un bucle "
+"``for``."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:665
 msgid ""
@@ -959,6 +963,13 @@ msgid ""
 "previous velocities into account, making the direction of the controller's "
 "velocity more accurate."
 msgstr ""
+"Para cada una de las velocidades almacenadas, simplemente añadimos su valor "
+"a ``controller_velocity``. Una vez que el código ha pasado por todas las "
+"velocidades en ``prior_controller_velocities``, dividimos "
+"``controller_velocity`` por el tamaño del array "
+"``prior_controller_velocities``, lo que nos dará el valor de la velocidad "
+"combinada. Esto ayuda a tener en cuenta las velocidades anteriores, haciendo "
+"que la dirección de la velocidad del controlador sea más precisa."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:671
 msgid ""
@@ -1263,6 +1274,12 @@ msgid ""
 "ref:`PhysicsBody <class_PhysicsBody>` nodes. We assign the array of :ref:"
 "`PhysicsBody <class_PhysicsBody>` to a new variable called ``bodies``."
 msgstr ""
+"Entonces la función comprueba si la variable ``grab_mode`` es igual a "
+"``AREA``. Si lo es, entonces obtiene todos los nodos :ref:`PhysicsBody "
+"<class_PhysicsBody>` dentro del ``grab_area`` usando las funciones "
+"``get_overlapping_bodies``. Esta función devolverá un array de nodos :ref:"
+"`PhysicsBody <class_PhysicsBody>`. Asignamos el array de :ref:`PhysicsBody "
+"<class_PhysicsBody>` a una nueva variable llamada ``bodies``."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:805
 msgid ""
@@ -1649,10 +1666,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:969
-#, fuzzy
 msgid ""
 "Once you have ``VR_Interactable_Rigidbody.gd`` open, add the following code:"
-msgstr "Añade un script al cuerpo cinemático y agrega el siguiente código:"
+msgstr ""
+"Una vez que tengas ``VR_Interactable_Rigidbody.gd`` abierto, agrega el "
+"siguiente código:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:997
 msgid "Let's quickly go through what this script."
@@ -1786,9 +1804,8 @@ msgid ""
 msgstr "Como este script es bastante simple, veamos rápidamente lo que hace."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1096
-#, fuzzy
 msgid "Explaining the vignette code"
-msgstr "Cambiar el ícono del archivo"
+msgstr "Explicando el código de viñeta"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1098
 msgid ""

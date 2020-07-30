@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,9 +104,9 @@ msgstr ""
 "переменные по дизайну"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
-#, fuzzy
 msgid "Autoloading nodes and scripts can give us these characteristics."
-msgstr "Автозагрузка удовлетворяет наши потребности."
+msgstr ""
+"Узлы и скрипты автоматической загрузки могут дать нам эти характеристики."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
@@ -153,13 +153,12 @@ msgstr ""
 "\"PlayerVariables\":"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
-#, fuzzy
 msgid ""
 "If the \"Enable\" column is checked (default ``true``) then the singleton "
 "can simply be accessed directly:"
 msgstr ""
-"Если колонка \"Включить\" отмечена галочкой (по умолчанию true), то Синглтон "
-"можно просто получить напрямую:"
+"Если установлен флажок \"Enable\" (по умолчанию ``true``), то к синглтону "
+"можно просто получить прямой доступ:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -177,7 +176,6 @@ msgid "Custom scene switcher"
 msgstr "Пользовательский переключатель сцены"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoload. For "
 "basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -224,7 +222,6 @@ msgstr ""
 "gd. Убедитесь, что он унаследован от ``Node``:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
-#, fuzzy
 msgid ""
 "The next step is to add this script to the autoLoad list. Open ``Project > "
 "Project Settings`` from the menu, switch to the \"AutoLoad\" tab and select "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,27 +88,31 @@ msgid "Select **OS X > Application > Command Line Tool**."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:46
-#, fuzzy
 msgid ""
 "Name it something so you know not to compile with this target (e.g. "
 "``GodotXcodeIndex``)."
-msgstr "Назовите её так, чтобы вы запомнили что её не надо компилировать"
+msgstr ""
+"Назовите его так, чтобы вы знали, что не нужно компилировать с этой целью "
+"(например, ``GodotXcodeIndex``)."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:48
-#, fuzzy
 msgid ""
 "For this target open the **Build Settings** tab and look for **Header Search "
 "Paths**."
-msgstr "Перейдите на вкладку *Build Settings* и поищите *Header Search Paths*"
+msgstr ""
+"Для этой цели откройте вкладку **Build Settings** и найдите **Header Search "
+"Paths**."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:49
-#, fuzzy
 msgid ""
 "Set **Header Search Paths** to the absolute path to the Godot root folder. "
 "You need to include subdirectories as well. To achieve that, add two two "
 "asterisks (``**``) to the end of the path, e.g. ``/Users/me/repos/godot-"
 "source/**``."
-msgstr "Сделайте её рекурсивной добавив две \\* в конец пути"
+msgstr ""
+"Установите в **Header Search Paths** абсолютный путь к корневой папке Godot. "
+"Вам также нужно включить подкаталоги. Для этого добавьте две звездочки "
+"(``**``) в конец пути, например ``/Users/me/repos/godot-source/**``."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:53
 #, fuzzy
@@ -118,16 +122,17 @@ msgid ""
 msgstr "Перетащите исходный код Godot в браузер файлов проекта."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:54
-#, fuzzy
 msgid "Uncheck **Create external build system project**."
-msgstr "Снимите флажок *Create External Build System*"
+msgstr "Снимите флажок **Create external build system project**."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:60
 #, fuzzy
 msgid ""
 "Next select **Create groups** for the **Added folders** option and check "
 "*only* your command line indexing target in the **Add to targets** section."
-msgstr "Выберите только свою командную строку цели в разделе *Add to targets*"
+msgstr ""
+"Далее выберите **Create groups** для опции **Added folders** и проверьте "
+"*only* your command line indexing target in the **Add to targets** section."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:67
 #, fuzzy
@@ -155,14 +160,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:76
-#, fuzzy
 msgid "Open the scheme editor of the external build target."
-msgstr "Откройте редактор схемы внешней цели сборки"
+msgstr "Откройте редактор схемы внешней цели сборки."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:77
-#, fuzzy
 msgid "Locate the **Build > Post Actions** section."
-msgstr "Перейдите в *Post Actions*"
+msgstr "Найдите раздел **Build > Post Actions**."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:78
 #, fuzzy
@@ -176,35 +179,32 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:81
-#, fuzzy
 msgid ""
 "Create a script that will give the binary a name that Xcode can recognize, e."
 "g.:"
-msgstr "Напишите скрипт чтобы дать имя исполняемому файлу которое поймёт Xcode"
+msgstr ""
+"Создайте скрипт, который даст двоичному файлу имя, которое Xcode может "
+"распознать, например:"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
-#, fuzzy
 msgid "Build the external build target."
-msgstr "Постройте внешнюю цель сборки"
+msgstr "Соберите внешнюю цель сборки."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:93
-#, fuzzy
 msgid "Open the scheme editor again and select **Run**."
-msgstr "Откройте редактор схем снова"
+msgstr "Откройте редактор схем снова и выберите **Run**."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:99
-#, fuzzy
 msgid ""
 "Set the **Executable** to the file you linked in your post-build action "
 "script."
 msgstr ""
 "Установите *Executable* на файл который вы присоединили к вашему скрипту "
-"сборки"
+"сборки."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:100
-#, fuzzy
 msgid "Check **Debug executable**."
-msgstr "Проверьте *Debug executable* если он уже не установлен"
+msgstr "Проверьте **Debug executable**."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:101
 msgid ""
@@ -215,17 +215,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:106
-#, fuzzy
 msgid ""
 "To check that everything is working, put a breakpoint in ``platform/osx/"
 "godot_main_osx.mm`` and run the project."
-msgstr "Установите точку отладки в platform/osx/godot_main_osx.mm"
+msgstr ""
+"Чтобы проверить, что все работает, поместите точку останова в ``platform/osx/"
+"godot_main_osx.mm`` и запустите проект."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
-#, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
 msgstr ""
-"Краткий обзор по этим каналам также доступен на веб-сайте\n"
-"<https://godotengine.org/community>`_."
+"Если у вас возникнут какие-либо проблемы, обратитесь за помощью в один из "
+"каналов сообщества `Каналов сообщества Godot <https://godotengine.org/"
+"community>`__."

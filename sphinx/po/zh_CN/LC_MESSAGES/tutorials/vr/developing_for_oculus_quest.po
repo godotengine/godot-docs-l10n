@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,62 +117,62 @@ msgstr ""
 msgid "Now add a script to the main node and add the following code:"
 msgstr "将脚本添加到场景中的KinematicBody2D上，并添加以下代码:"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:73
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:76
 #, fuzzy
 msgid ""
 "Before you can export this project to the Quest you need to do three more "
 "things."
 msgstr "必须先下载以下软件，然后才能导出Android项目："
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:76
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:79
 msgid ""
 "First go into the project settings and make sure that the main scene is the "
 "scene we run. Godot does not ask you to set this on export."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:81
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:84
 msgid ""
 "Then go into the export menu and configure a new Android export. if you "
 "still haven't gone through the :ref:`doc_exporting_for_android` page do it "
 "now. If you didn't you'll have some red messages on this screen."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:86
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:89
 msgid ""
 "If you did you can forge ahead and make a few small changes to the export "
 "settings. First change the XR Mode to ``Oculus Mobile VR``. Then change the "
 "Degrees of Freedom mode to ``6DOF``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:92
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:95
 msgid "Now save and close the export window."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:95
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:98
 #, fuzzy
 msgid "Setting Up Your Quest"
 msgstr "设置Godot"
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:97
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:100
 msgid ""
 "Finally take out your phone, when you got your Quest you needed to install "
 "an Oculus app on it and link it up to your Quest. Start the Oculus app. "
 "Press the settings cogwheel on the bottom right hand side. Select your Quest:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:104
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:107
 msgid "Select \"More Settings\", and select \"Developer Mode\":"
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:108
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:111
 msgid "Now turn developer mode on:"
 msgstr "现在开启开发者模式："
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:112
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:115
 msgid "This allows you to deploy your games to the Quest."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:114
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:117
 msgid ""
 "Connect the Quest to your PC with the provided USB cable. Put the Quest on, "
 "it may give a few dialogs to give the PC permission to deploy apps. Now hit "
@@ -180,7 +180,7 @@ msgid ""
 "of your Godot window. It should build your game and export it to the Quest."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:120
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:123
 msgid ""
 "The above does the bare minimum to get your project running on the Quest, "
 "it's not very exciting. Holger Dammertz has made a great toolkit for the "
@@ -188,13 +188,13 @@ msgid ""
 "really nice controller meshes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:125
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:128
 msgid ""
 "You can find the toolkit `here <https://github.com/NeoSpark314/"
 "godot_oculus_quest_toolkit>`__."
 msgstr ""
 
-#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:127
+#: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:130
 #, fuzzy
 msgid ""
 "If you want to help out with improving the plugin please join us `here "

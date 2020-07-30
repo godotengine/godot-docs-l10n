@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:4
 msgid "Physics introduction"
-msgstr ""
+msgstr "Physik Einleitung"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:6
 msgid ""
@@ -28,6 +28,10 @@ msgid ""
 "When a collision is detected, you typically want something to happen. This "
 "is known as **collision response**."
 msgstr ""
+"In der Spielentwicklung muss man oft wissen ob zwei Objekte im Spiel sich "
+"berühren oder überlagern. Dies wird als **Kollisions-Abfrage** bezeichnet. "
+"Falls es zu solch einer Kollision kommt, soll normalerweise etwas passieren. "
+"Dies wird als **Kollisions-Anwort** bezeichnet."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:11
 msgid ""
@@ -36,6 +40,12 @@ msgid ""
 "project can be confusing. You can avoid problems and simplify development if "
 "you understand how each works and what their pros and cons are."
 msgstr ""
+"Godot bietet ein ganze Anzahl an Kollisions Objekten in 2D und 3D und "
+"unterstützt damit beides, Kollisions-Abfrage und Kollisions-Antwort. Es kann "
+"am Anfang verwirrend sein zu entscheiden, welches der beiden zu nutzen ist. "
+"Man kann diesem Problemen aus dem Weg gehen und sich die Entwicklung "
+"vereinfachen, wenn man erst einmal verstanden hat wie beide funktionieren "
+"und wo ihr Vor- und Nachteile sind."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:16
 msgid "In this guide, you will learn:"
@@ -72,7 +82,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:35
 msgid ":ref:`Area2D <class_Area2D>`"
-msgstr ""
+msgstr ":ref:`Area2D <class_Area2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:32
 msgid ""
@@ -101,7 +111,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:48
 msgid ":ref:`RigidBody2D <class_RigidBody2D>`"
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:46
 msgid ""
@@ -239,7 +249,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:126
 msgid "**Example:**"
-msgstr ""
+msgstr "**Beispiel:**"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:128
 msgid ""

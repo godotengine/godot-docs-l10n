@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:4
-msgid "Contribute to the Class Reference"
-msgstr ""
+#, fuzzy
+msgid "Contributing to the class reference"
+msgstr "Як створити довідку з класу"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:8
 #, fuzzy
@@ -306,7 +307,7 @@ msgstr ""
 msgid ""
 "Edit it using your favorite text editor. If you use a code editor, make sure "
 "that it doesn't change the indent style: tabs for the XML, and 4 spaces "
-"inside BBcode-style blocks. More on that below."
+"inside BBCode-style blocks. More on that below."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:171
@@ -375,258 +376,258 @@ msgid ""
 "edit the file quickly. Use the search function to find classes fast."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:232
-msgid "Improve formatting with BBcode style tags"
+#: ../../docs/community/contributing/updating_the_class_reference.rst:233
+msgid "Improve formatting with BBCode style tags"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:234
+#: ../../docs/community/contributing/updating_the_class_reference.rst:235
 msgid ""
-"Godot's class reference supports BBcode-like tags. They add nice formatting "
+"Godot's class reference supports BBCode-like tags. They add nice formatting "
 "to the text. Here's the list of available tags:"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Tag"
 msgstr "Теґ"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Effect"
 msgstr "Ефект"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Usage"
 msgstr "Використання"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Result"
 msgstr "Результат"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "[Class]"
 msgstr "Клас"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Link a class"
 msgstr "Посилання на клас"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Move the [Sprite]."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Move the :ref:`class_sprite`."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "[method methodname]"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "Link to a method in this class"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "Call [method hide]."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:241
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:242
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "See :ref:`hide <class_spatial_method_hide>`."
 msgstr "Див.: Ref: `сховати <class_spatial_method_hide>`."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "[method Class.methodname]"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "Link to another class's method"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:243
+#: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "Call [method Spatial.hide]."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
 msgid "[member membername]"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
 msgid "Link to a member in this class"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
 msgid "Get [member scale]."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:245
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:246
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "Get :ref:`scale <class_node2d_property_scale>`."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "[member Class.membername]"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "Link to another class's member"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "Get [member Node2D.scale]."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
 msgid "[signal signalname]"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
 msgid "Link to a signal in this class"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
 msgid "Emit [signal renamed]."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:249
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:250
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "Emit :ref:`renamed <class_node_signal_renamed>`."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "[signal Class.signalname]"
 msgstr "[signal Class.signalname]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "Link to another class's signal"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:251
+#: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "Emit [signal Node.renamed]."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "[b] [/b]"
 msgstr "[b] [/b]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Bold"
 msgstr "Напівжирний"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some [b]bold[/b] text."
 msgstr "Якийсь текст [b]напівжирним шрифтом[/b]."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:253
+#: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some **bold** text."
 msgstr "Якийсь текст **напівжирним шрифтом**."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "[i] [/i]"
 msgstr "[i] [/i]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Italic"
 msgstr "Курсив"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some [i]italic[/i] text."
 msgstr "Якийсь текст [i]курсивом[/i]."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:255
+#: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some *italic* text."
 msgstr "Якийсь текст *курсивом*."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "[code] [/code]"
 msgstr "[code] [/code]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Monospace"
 msgstr "Моноширинний"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Some [code]monospace[/code] text."
 msgstr "Якийсь текст [code]моноширинним шрифтом[/code]."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:257
+#: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Some ``monospace`` text."
 msgstr "Якийсь текст ``моноширинним шрифтом``."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "[kbd] [/kbd]"
 msgstr ". [kbd] [/kbd]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 #, fuzzy
 msgid "Keyboard/mouse shortcut"
 msgstr "Гарячі клавіші"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Some [kbd]Ctrl + C[/kbd] key."
 msgstr "Деякі [kbd] клавіші Ctrl + C [/kbd]."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:259
+#: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Some :kbd:`Ctrl + C` key."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:261
+#: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "[codeblock] [/codeblock]"
 msgstr "[codeblock] [/codeblock]"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:261
+#: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "Multiline preformatted block"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:261
+#: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "*See below.*"
 msgstr "*Див. нижче.*"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:264
+#: ../../docs/community/contributing/updating_the_class_reference.rst:265
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
 "always use **four spaces** for indentation (the parser will delete tabs). "
 "Example:"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:274
+#: ../../docs/community/contributing/updating_the_class_reference.rst:275
 msgid "Will display as:"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:284
+#: ../../docs/community/contributing/updating_the_class_reference.rst:285
 msgid "I don't know what this method does!"
 msgstr "Не знаю для чого призначено цей метод!"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:286
+#: ../../docs/community/contributing/updating_the_class_reference.rst:287
 msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:288
+#: ../../docs/community/contributing/updating_the_class_reference.rst:289
 msgid ""
 "You can still have a look at the methods' implementation in Godot's source "
 "code on GitHub. Also, if you have doubts, feel free to ask on the `Q&A "
 "website <https://godotengine.org/qa/>`__ and on IRC (freenode, #godotengine)."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:292
+#: ../../docs/community/contributing/updating_the_class_reference.rst:293
 msgid "Localization"
 msgstr "Локалізація"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:294
+#: ../../docs/community/contributing/updating_the_class_reference.rst:295
 msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:297
+#: ../../docs/community/contributing/updating_the_class_reference.rst:298
 msgid ""
 "Translated strings are synced manually by documentation maintainers in the "
 "`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`__ "
 "repository."
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:301
+#: ../../docs/community/contributing/updating_the_class_reference.rst:302
 msgid ""
 "Languages with a good level of completion have their own localized instances "
 "of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "

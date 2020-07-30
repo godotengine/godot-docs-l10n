@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -292,24 +292,20 @@ msgid "vec_type **modf** ( vec_type x, out vec_type i )"
 msgstr "vec_type **modf** ( vec_type x, out vec_type i )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:139
-#, fuzzy
 msgid "vec_int_type **floatBitsToInt** ( vec_type x )"
-msgstr "vec_int_type **floatBitsToInt** ( vec_type )"
+msgstr "vec_int_type **floatBitsToInt** ( vec_type x )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:141
-#, fuzzy
 msgid "vec_uint_type **floatBitsToUint** ( vec_type x )"
-msgstr "vec_uint_type **floatBitsToUint** ( vec_type )"
+msgstr "vec_uint_type **floatBitsToUint** ( vec_type x )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:143
-#, fuzzy
 msgid "vec_type **intBitsToFloat** ( vec_int_type x )"
-msgstr "vec_type **intBitsToFloat** ( vec_int_type )"
+msgstr "vec_type **intBitsToFloat** ( vec_int_type x )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:145
-#, fuzzy
 msgid "vec_type **uintBitsToFloat** ( vec_uint_type x )"
-msgstr "vec_type **uintBitsToFloat** ( vec_uint_type )"
+msgstr "vec_type **uintBitsToFloat** ( vec_uint_type x )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:147
 msgid "ivec2 **textureSize** ( sampler2D_type s, int lod )"
@@ -325,55 +321,51 @@ msgid "ivec2 **textureSize** ( samplerCube s, int lod )"
 msgstr "ivec2 **textureSize** ( samplerCube s, int lod )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:151
-#, fuzzy
 msgid "vec4_type **texture** ( sampler_type s, vec_type uv [, float bias] )"
-msgstr "vec4_type **texture** ( sampler2D_type s, vec2 uv [, float bias] )"
+msgstr "vec4_type **texture** ( sampler_type s, vec_type uv [, float bias] )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:151
 msgid "**bias** not available in vertex shader"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:153
-#, fuzzy
 msgid ""
 "vec4_type **textureProj** ( sampler_type s, vec_type uv [, float bias] )"
-msgstr "vec4_type **textureProj** ( sampler2D_type s, vec3 uv [, float bias] )"
+msgstr ""
+"vec4_type **textureProj** ( sampler_type s, vec_type uv [, float bias] )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:155
-#, fuzzy
 msgid "vec4_type **textureLod** ( sampler_type s, vec_type uv, float lod )"
-msgstr "vec4_type **textureLod** ( sampler2D_type s, vec2 uv, float lod )"
+msgstr "vec4_type **textureLod** ( sampler_type s, vec_type uv, float lod )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:155
 msgid "Only available in vertex shader on some hardware"
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:157
-#, fuzzy
 msgid "vec4_type **textureProjLod** ( sampler_type s, vec_type uv, float lod )"
-msgstr "vec4_type **textureProjLod** ( sampler2D_type s, vec3 uv, float lod )"
+msgstr ""
+"vec4_type **textureProjLod** ( sampler_type s, vec_type uv, float lod )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:159
-#, fuzzy
 msgid ""
 "vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
 "vec_type dPdy)"
-msgstr "vec4_type **textureLod** ( sampler2D_type s, vec2 uv, float lod )"
+msgstr ""
+"vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
+"vec_type dPdy)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:161
-#, fuzzy
 msgid "vec_type **dFdx** ( vec_type p )"
-msgstr "vec_type **dFdx** ( vec_type )"
+msgstr "vec_type **dFdx** ( vec_type p )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:163
-#, fuzzy
 msgid "vec_type **dFdy** ( vec_type p )"
-msgstr "vec_type **dFdy** ( vec_type )"
+msgstr "vec_type **dFdy** ( vec_type p )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:165
-#, fuzzy
 msgid "vec_type **fwidth** ( vec_type p )"
-msgstr "vec_type **fwidth** ( vec_type )"
+msgstr "vec_type **fwidth** ( vec_type p )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:168
 msgid ""
@@ -392,9 +384,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:189
-#, fuzzy
 msgid "Built in variables and render modes"
-msgstr "Variable / Modo de renderizado"
+msgstr "Variables integradas y modos de renderizado"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:191
 msgid ""

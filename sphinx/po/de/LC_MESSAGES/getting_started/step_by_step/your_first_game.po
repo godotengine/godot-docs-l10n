@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,6 @@ msgstr ""
 "Endergebnis:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
-#, fuzzy
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process and "
@@ -70,7 +69,6 @@ msgid "Project setup"
 msgstr "Projektkonfiguration"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:31
-#, fuzzy
 msgid ""
 "Launch Godot and create a new project. Then, download :download:"
 "`dodge_assets.zip <files/dodge_assets.zip>`. This contains the images and "
@@ -84,19 +82,17 @@ msgstr ""
 "Projektordner."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:36
-#, fuzzy
 msgid ""
 "For this tutorial, we will assume you are familiar with the Godot editor. If "
 "you haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation "
 "of setting up a project and using the editor."
 msgstr ""
-"Für dieses Tutorial gehen wir davon aus, dass Du mit dem Editor vertraut "
+"In dieser Anleitung gehen wir davon aus, dass Du mit dem Editor vertraut "
 "bist. Falls Du :ref:`doc_scenes_and_nodes` noch nicht gelesen hast, "
 "informiere Dich darüber, wie Du ein Projekt einrichten und den Editor "
 "verwenden kannst."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:40
-#, fuzzy
 msgid ""
 "This game is designed for portrait mode, so we need to adjust the size of "
 "the game window. Click on Project -> Project Settings -> Display -> Window "
@@ -122,7 +118,6 @@ msgid "Organizing the project"
 msgstr "Projektorganisation"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:51
-#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -135,7 +130,7 @@ msgstr ""
 "und ``HUD``, die wir in der ``Main``-Szene des Spiels kombinieren werden. In "
 "einem größeren Projekt kann es nützlich sein, Ordner für die verschiedenen "
 "Szenen und deren Skripte zu erstellen. Bei diesem relativ kleinen Spiel "
-"kannst Du Deine Szenen und Skripte jedoch im Stammordner des Projekts "
+"kannst du deine Szenen und Skripte jedoch im Stammordner des Projekts "
 "speichern, der als ``res://`` bezeichnet wird. Du kannst Deinen "
 "Projektordner im Dateisystem-Panel in der unteren linken Ecke sehen:"
 
@@ -164,11 +159,11 @@ msgid ""
 "- what the object *is*. Click the \"Other Node\" button and add an :ref:"
 "`Area2D <class_Area2D>` node to the scene."
 msgstr ""
-"Um zu beginnen, müssen wir eine Wurzel-Node für das Spieler-Objekt wählen. "
-"Als eine generelle Regel, eine Wurzel-Node einer Szene sollte immer die "
+"Um zu beginnen, müssen wir einen Wurzel-Node für das Spieler-Objekt wählen. "
+"Als eine generelle Regel gilt, ein Wurzel-Node einer Szene sollte immer die "
 "gewünschte Funktionalität des Objektes reflektieren - was das Objekt *ist*. "
-"Klicke auf den \"Andere Node\" - Knopf und füge eine :ref:`Area2D "
-"<class_Area2D> Node zu der Szene hinzu."
+"Klicke auf den \"Andere Node\" - Knopf und füge einen :ref:`Area2D "
+"<class_Area2D>` Node zu der Szene hinzu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:78
 msgid ""
@@ -179,17 +174,17 @@ msgstr ""
 "Dieses kann vorerst ignoriert werden, wir werden uns später darum kümmern."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:81
-#, fuzzy
 msgid ""
 "With ``Area2D`` we can detect objects that overlap or run into the player. "
 "Change the node's name to ``Player`` by double-clicking on it. Now that "
 "we've set the scene's root node, we can add additional nodes to give it more "
 "functionality."
 msgstr ""
-"Mit ``Area2D`` können Objekte erkannt werden, die den Spieler überlappen "
-"oder an diesen berühren. Ändere den Namen des Nodes zu ``Player``, indem Du "
-"auf dessen Namen klickst. Dieser Node ist der Wurzel-Node der Szene. Man "
-"kann weitere Nodes und damit weitere Funktionalität hinzufügen."
+"Mit ``Area2D`` können Objekte erkannt werden, die mit dem Spieler überlappen "
+"oder diesen berühren. Wir ändern den Namen des Nodes zu ``Player``, indem "
+"wir darauf Doppelklicken. Nun da wir den Wurzel-Node der Szene gesetzt "
+"haben, können wir weitere Nodes hinzufügen, um ihm damit mehr Funktionalität "
+"zu geben."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:86
 msgid ""
@@ -205,7 +200,6 @@ msgstr ""
 "Auswählen von Unterobjekten dieses Nodes.\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:93
-#, fuzzy
 msgid ""
 "Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
 "Linux or :kbd:`Cmd + S` on macOS."
@@ -243,7 +237,6 @@ msgid "Sprite animation"
 msgstr "Sprite-Animation"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -261,10 +254,9 @@ msgstr ""
 "eine :ref:`SpriteFrames <class_SpriteFrames>` Ressource, eine Liste der "
 "Animationen, die angezeigt werden können. Um eine zu erstellen suche die "
 "Eigenschaft ``Frames`` im Inspektor und klicke \"<null>\" -> \"Neue "
-"SpriteFrames\". Nun sollte sich automatisch das Animationspanel öffnen."
+"SpriteFrames\". Nun sollte sich automatisch das Animationspanel öffnen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:121
-#, fuzzy
 msgid ""
 "On the left is a list of animations. Click the \"default\" one and rename it "
 "to \"walk\". Then click the \"New Animation\" button to create a second "
@@ -274,12 +266,12 @@ msgid ""
 "into the \"Animation Frames\" side of the panel for the corresponding "
 "animation:"
 msgstr ""
-"Auf der linken Seite befindet sich die Liste der Animationen. Klicke auf die "
-"\"default\" Animation und benenne sie in \"right\" um. Dann klicke auf die "
-"\"hinzufügen\" Schaltfläche, um eine zweite Animation, \"up\" genannt, "
-"hinzuzufügen. Ziehe die zwei Bilder der Animation, ``playerGrey_up[1/2]`` "
-"und ``playerGrey_walk[1/2]``, in den \"Animationframes\" Bereich des "
-"Fensters:"
+"Auf der linken Seite befindet sich eine Liste von Animationen. Klicke auf "
+"die \"default\" Animation und benenne sie in \"walk\" um. Dann klicke auf "
+"die \"hinzufügen\" Schaltfläche, um eine zweite Animation \"up\" "
+"hinzuzufügen. Finde die zwei Bilder, ``playerGrey_up[1/2]`` und "
+"``playerGrey_walk[1/2]``, im \"Dateisystem\" Reiter und ziehe sie in den "
+"\"Animationframes\" Bereich zu den entsprechenden Animationen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:130
 msgid ""
@@ -324,13 +316,12 @@ msgid "Moving the player"
 msgstr "Den Spieler Bewegen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:155
-#, fuzzy
 msgid ""
 "Now we need to add some functionality that we can't get from a built-in "
 "node, so we'll add a script. Click the ``Player`` node and click the "
 "\"Attach Script\" button:"
 msgstr ""
-"Jetzt müssen wir einige Funktionen hinzufügen, die wir nicht von einem "
+"Jetzt müssen wir Funktionalität hinzufügen, die wir nicht von einem "
 "eingebauten Node bekommen können, also werden wir ein Skript hinzufügen. "
 "Klicke auf den ``Player`` Node und dann auf die Schaltfläche \"Skript "
 "hinzufügen\":"
@@ -447,17 +438,15 @@ msgstr ""
 "zugeordnet sind."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:240
-#, fuzzy
 msgid ""
 "You can detect whether a key is pressed using ``Input.is_action_pressed()``, "
 "which returns ``true`` if it's pressed or ``false`` if it isn't."
 msgstr ""
 "Du kannst herausfinden, ob eine Taste gedrückt wird, indem Du ``Input."
-"is_action_pressed()`` benutzt, das ``true`` zurückgibt, wenn sie gedrückt "
-"wird oder ``false``, wenn nicht."
+"is_action_pressed()`` benutzt, welches ``true`` zurückgibt, wenn eine Taste "
+"gedrückt wird und ``false`` wenn nicht."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:302
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default, the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -477,16 +466,15 @@ msgstr ""
 "horizontal bewegen würde."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
-#, fuzzy
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, then multiply by the desired speed. This means no more "
 "fast diagonal movement."
 msgstr ""
-"Wir können das verhindern, wenn wir die Geschwindigkeit *normalisieren*, was "
-"bedeutet, dass wir ihre *Länge* auf ``1`` festlegen und mit der gewünschten "
-"Geschwindigkeit multiplizieren. Das sorgt dafür dass keine schnelle "
-"diagonale Bewegung mehr stattfindet."
+"Wir können das verhindern, indem wir die Geschwindigkeit *normalisieren*, "
+"was bedeutet, dass wir ihre *Länge* auf ``1`` festlegen, anschließend "
+"multiplizieren wir mit der gewünschten Geschwindigkeit. Das sorgt dafür dass "
+"keine schnelle diagonale Bewegung mehr stattfindet."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:313
 msgid ""
@@ -500,13 +488,12 @@ msgstr ""
 "Rest dieses Tutorials nicht notwendig sein."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:317
-#, fuzzy
 msgid ""
 "We also check whether the player is moving so we can call ``play()`` or "
 "``stop()`` on the AnimatedSprite."
 msgstr ""
 "Wir prüfen auch, ob sich der Spieler bewegt, damit wir die AnimatedSprite-"
-"Animation starten oder stoppen können."
+"Animation mit ``play()`` und``stop()``, starten oder stoppen können."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:320
 msgid ""
@@ -530,7 +517,6 @@ msgstr ""
 "verwenden."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:326
-#, fuzzy
 msgid ""
 "Now that we have a movement direction, we can update the player's position. "
 "We can also use ``clamp()`` to prevent it from leaving the screen. "
@@ -539,8 +525,10 @@ msgid ""
 "under the `else`):"
 msgstr ""
 "Jetzt, da wir eine Bewegungsrichtung haben, können wir die Position des "
-"Spilers aktualisieren und mit ``clamp()`` verhindern, dass er den Bildschirm "
-"verlässt, indem wir am Ende der ``_process`` Funktion folgendes hinzufügen:"
+"Spielers aktualisieren und mit ``clamp()`` verhindern, dass er den "
+"Bildschirm verlässt. ``clamp()`` beschränkt dabei einen Wert auf einen "
+"angegebenen Bereich. Am Ende der ``_process`` Funktion fügen wir also "
+"folgendes hinzufügen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:347
 msgid ""
@@ -575,24 +563,21 @@ msgstr ""
 "instance``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:359
-#, fuzzy
 msgid ""
 "this likely means you spelled the name of the AnimatedSprite node wrong. "
 "Node names are case-sensitive and ``$NodeName`` must match the name you see "
 "in the scene tree."
 msgstr ""
-"Wenn Du im \"Debugger\"-Fenster einen Fehler erhältst, der sich auf eine "
-"\"null instance\" bezieht, bedeutet das wahrscheinlich, dass Du den Node-"
-"Namen falsch geschrieben hast. Node-Namen sind case-sensitive und ``"
-"$NodeName`` oder ``get_node(\"NodeName\")`` müssen mit dem Namen "
-"übereinstimmen, den Du im Szenenbaum siehst."
+"bedeutet das wahrscheinlich, dass der Node-Namen des AnimatedSprite falsch "
+"geschrieben wurde. Node-Namen sind case-sensitive und ``$NodeName`` oder "
+"``get_node(\"NodeName\")`` müssen mit dem Namen übereinstimmen, der im "
+"Szenenbaum zu sehen ist."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:364
 msgid "Choosing animations"
 msgstr "Animationen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:366
-#, fuzzy
 msgid ""
 "Now that the player can move, we need to change which animation the "
 "AnimatedSprite is playing based on its direction. We have the \"walk\" "
@@ -603,14 +588,13 @@ msgid ""
 "the end of the ``_process()`` function:"
 msgstr ""
 "Jetzt, da sich der Spieler bewegen kann, müssen wir ändern, welche Animation "
-"der AnimatedSprite je nach Richtung abspielt. Wir haben eine \"right\" "
+"der AnimatedSprite je nach Richtung abspielt. Wir haben eine \"walk\" "
 "Animation, die horizontal mit der Eigenschaft ``flip_h`` für die "
 "Linksbewegung gespiegelt werden sollte, und eine \"up\"-Animation, die "
 "vertikal mit ``flip_v`` für die Abwärtsbewegung gespiegelt werden sollte. "
 "Lass uns diesen Code an das Ende unserer ``_process()`` Funktion setzen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:401
-#, fuzzy
 msgid ""
 "The boolean assignments in the code above are a common shorthand for "
 "programmers. Since we're doing a comparison test (boolean) and also "
@@ -642,7 +626,6 @@ msgstr ""
 "\"`` heißt, dann muss auch ein großgeschriebenes \"W\" im Code stehen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:433
-#, fuzzy
 msgid ""
 "When you're sure the movement is working correctly, add this line to "
 "``_ready()``, so the player will be hidden when the game starts:"
@@ -667,9 +650,8 @@ msgstr ""
 "werden Godots *Signal*-Funktionalität nutzen, damit es funktioniert."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:452
-#, fuzzy
 msgid "Add the following at the top of the script, after ``extends Area2D``:"
-msgstr "Füge das Folgende oben im Skript nach ``extends Area2d`` hinzu:"
+msgstr "Füge das Folgende oben im Skript nach ``extends Area2D`` hinzu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:466
 msgid ""
@@ -686,7 +668,6 @@ msgstr ""
 "Spieler ausgeben kann:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:473
-#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered(body: Node)`` "
@@ -695,14 +676,14 @@ msgid ""
 "change any of these settings so click \"Connect\" again. Godot will "
 "automatically create a function in your player's script."
 msgstr ""
-"Beachte, dass unser benutzerdefiniertes \"Hit\"-Signal auch da ist! Da "
+"Beachte, dass unser benutzerdefiniertes \"hit\"-Signal auch da ist! Da "
 "unsere Feinde ``RigidBody2D`` Nodes sein werden, brauchen wir das Signal "
-"``body_entered( Object body )``; dieses wird ausgesendet, wenn ein Körper "
-"den Spieler berührt. Klicke auf \"Verbinden...\" und dann, im \"Signal "
-"verbinden\"-Fenster, wieder auf \"Verbinden\". Wir müssen keine dieser "
-"Einstellungen ändern - Godot erstellt automatisch eine Funktion im Skript "
-"des Spielers. Diese Funktion wird immer dann aufgerufen, wenn das Signal "
-"ausgelöst wird - sie handhabt das Signal."
+"``body_entered(body: Node)``; dieses wird ausgesendet, wenn ein Körper den "
+"Spieler berührt. Klicke auf \"Verbinden...\" und dann, im \"Signal verbinden"
+"\"-Fenster, wieder auf \"Verbinden\". Wir müssen keine dieser Einstellungen "
+"ändern - Godot erstellt automatisch eine Funktion im Skript des Spielers. "
+"Diese Funktion wird immer dann aufgerufen, wenn das Signal ausgelöst wird - "
+"sie handhabt das Signal."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -779,7 +760,7 @@ msgstr "Node einrichten"
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:545
 msgid "Click Scene -> New Scene and add the following nodes:"
 msgstr ""
-"Klicken Sie auf Szene -> Neue Szene und füge die folgenden Nodes hinzu:"
+"Klicken Sie auf Szene -> Neue Szene und fügen Sie die folgenden Nodes hinzu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:547
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
@@ -794,7 +775,6 @@ msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:551
-#, fuzzy
 msgid ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
 msgstr ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (genannt "
@@ -829,19 +809,16 @@ msgid ""
 msgstr ""
 "Richte das :ref:`AnimatedSprite <class_AnimatedSprite>` so wie wir es für "
 "den Spieler getan haben. Dieses Mal haben wir drei Animationen: ``fly``, "
-"``swim``, und ``walk``. Stelle die Eigenschaft ``Playing`` im Inspektor auf "
-"\"On\" und passe die Einstellung \"Speed (FPS)\" wie unten gezeigt an. Wir "
-"werden eine dieser Animationen nach dem Zufallsprinzip auswählen, damit die "
-"Mobs eine gewisse Vielfalt haben."
+"``swim``, und ``walk``. Zu jeder Animation gibt es zwei Bilder im \"art\" "
+"Ordner."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:567
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
 msgstr "Setze die \"Geschwindigkeit (FPS)\" auf ``3`` für alle Animationen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:571
-#, fuzzy
 msgid "Set the ``Playing`` property in the Inspector to “On”."
-msgstr "Stelle die Eigenschaft ``script`` im Inspektor als Dein Skript ein."
+msgstr "Stelle die Eigenschaft ``Playing`` im Inspektor auf \"On\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:573
 msgid ""
@@ -849,7 +826,7 @@ msgid ""
 "some variety."
 msgstr ""
 "Wir werden eine der Animationen zufällig auswählen, sodass die mobs eine "
-"gewisse Variabilität haben."
+"gewisse Vielfalt haben."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:575
 msgid ""
@@ -921,8 +898,8 @@ msgid ""
 "selects a random integer between ``0`` and ``n-1``."
 msgstr ""
 "Wir werden eine zufällige Zahl zwischen``0`` und``2`` auswählen müssen, um "
-"einen von diesen Namen von der Liste auswählen zu können (Arrays starten bei "
-"``0``).  ``randi() % n`` wählt eine zufällige Ganzzahl zwischen  ``0`` und  "
+"einen von diesen Namen aus der Liste auswählen zu können (Arrays starten bei "
+"``0``). ``randi() % n`` wählt eine zufällige Ganzzahl zwischen ``0`` und "
 "``n-1`` aus."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:645
@@ -945,7 +922,7 @@ msgid ""
 msgstr ""
 "Das Letzte was getan werden muss ist die Mobs dazu zu bringen, sich selbst "
 "zu löschen, sobald sie den Bildschirm verlassen. Verbinde das Signal "
-"``screen_exited()`` vom Node ``VisibilityNotifier2D`` und füge  diesen Code "
+"``screen_exited()`` vom Node ``VisibilityNotifier2D`` und füge diesen Code "
 "hinzu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:666
@@ -1139,16 +1116,14 @@ msgstr ""
 "auf ``Mob.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:782
-#, fuzzy
 msgid ""
 "Next, select the ``Player`` node in the Scene dock, and access the Node dock "
 "on the sidebar. Make sure to have the Signals tab selected in the Node dock."
 msgstr ""
-"Wähle den „Button“-Node im Szenenbaum aus und klicke dann auf die \"Node\"-"
+"Wähle den „Player“-Node im Szenenbaum aus und klicke dann auf die \"Node\"-"
 "Registerkarte. Als nächstes, stelle sicher, dass \"Signale\" ausgewählt ist."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:785
-#, fuzzy
 msgid ""
 "You should see a list of the signals for the ``Player`` node. Find and "
 "double-click the ``hit`` signal in the list (or right-click it and select "
@@ -1159,12 +1134,14 @@ msgid ""
 "following code to the new function, as well as a ``new_game`` function that "
 "will set everything up for a new game:"
 msgstr ""
-"Klicke anschließend auf 'Player' und verbinde das Signal \"Hit\". Wir werden "
-"eine neue Funktion namens ``Game_over`` erstellen, die sich darum kümmert, "
-"was passieren muss, wenn eine Runde endet. Gib \"game_over\" in das Feld "
-"\"Receiver Method\" unten im Fenster \"Signal verbinden\" ein und clicke "
-"\"Verbinden\". Füge den folgenden Code sowie die ``new_game`` Funktion "
-"hinzu, um alles für eine neue Runde einzurichten:"
+"Du solltest eine Liste der Signale für die ``Player`` Node sehen. Suche und "
+"doppelklicke das ``hit`` Signal (oder Rechtsklicke darauf und drücke "
+"\"Connect...\"). Dies wird das Fenster für die Signal-Verbindung öffnen. Wir "
+"wollen eine neue Funktion namen ``game_over`` erstellen, welche angeben "
+"wird, was passieren muss, wenn das Spiel beendet wurde. Schreib \"game_over"
+"\" in die \"Reciever Method\"-Box unten im Fenster und klicke auf \"Connect"
+"\".  Füge dann sowohl den folgenden Code zur neuen Funkion, als auch eine "
+"``new_game``-Funktion, die alles für ein neues Spiel einstellen wird."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:826
 msgid ""
@@ -1210,9 +1187,8 @@ msgstr ""
 "zu konvertieren."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:913
-#, fuzzy
 msgid "Testing the scene"
-msgstr "Die Szene einrichten"
+msgstr "Die Szene testen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 msgid ""

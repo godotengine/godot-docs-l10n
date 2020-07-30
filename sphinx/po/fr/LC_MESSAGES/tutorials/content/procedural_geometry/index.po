@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:2
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:4
 msgid "Procedural geometry"
 msgstr "Géométrie procédurale"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:4
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:6
 msgid ""
 "There are many ways to procedurally generate geometry in Godot. In this "
 "tutorial series we will explore a few of them. Each technique has its own "
@@ -34,11 +34,11 @@ msgstr ""
 "préférable de comprendre chacune et comment elle peut être utile dans une "
 "situation donnée."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:18
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:20
 msgid "What is geometry?"
 msgstr "Qu'est-ce que la géométrie ?"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:20
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:22
 msgid ""
 "Geometry is a fancy way of saying shape. In computer graphics, geometry is "
 "typically represented by an array of positions called \"vertices\". In "
@@ -49,11 +49,11 @@ msgstr ""
 "\"sommets(vertices)\". Dans Godot, la géométrie est représentée par des "
 "mailles(Meshes)."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:24
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:26
 msgid "What is a Mesh?"
 msgstr "Qu'est-ce qu'un Mesh ?"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:26
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:28
 msgid ""
 "Many things in Godot have mesh in their name: the :ref:`Mesh <class_Mesh>`, "
 "the :ref:`ArrayMesh <class_ArrayMesh>`, the :ref:`MeshInstance "
@@ -67,7 +67,7 @@ msgstr ""
 "`MultiMeshInstance <class_MultiMeshInstance>`. Bien qu'ils soient tous liés, "
 "ils ont des utilisations légèrement différentes."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:30
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:32
 msgid ""
 "Meshes and ArrayMeshes are resources that are drawn using a MeshInstance "
 "node. Resources like Meshes and ArrayMeshes cannot be added to the scene "
@@ -84,7 +84,7 @@ msgstr ""
 "parties de votre scène avec différents matériaux ou transformations "
 "(échelle, rotation, position, etc.)."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:36
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:38
 msgid ""
 "If you are going to draw the same object many times, it can be helpful to "
 "use a MultiMesh with a MultiMeshInstance. The MultiMeshInstance draws meshes "
@@ -103,11 +103,11 @@ msgstr ""
 "stocker différentes couleurs et transformations pour chaque instance, mais "
 "toutes les instances utilisent le même matériau."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:44
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:46
 msgid "What a Mesh is"
 msgstr "Qu'est-ce qu'un Mesh est"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:46
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:48
 msgid ""
 "A Mesh is composed of one or more surfaces. A surface is an array composed "
 "of multiple sub-arrays containing vertices, normals, UVs, etc. Normally the "
@@ -124,11 +124,11 @@ msgstr ""
 "un Mesh manuellement en fournissant un tableau contenant les informations de "
 "surface."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:52
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:54
 msgid "Surfaces"
 msgstr "Surfaces"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:54
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:56
 msgid ""
 "Each surface has its own material. Alternatively, you can override the "
 "material for all surfaces in the Mesh when you use a MeshInstance using "
@@ -138,11 +138,11 @@ msgstr ""
 "matériau de toutes les surfaces du Mesh lorsque vous utilisez un "
 "MeshInstance en utilisant ``MeshInstance.override_material``."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:58
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:60
 msgid "Surface array"
 msgstr "Tableau de surface"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:60
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:62
 msgid ""
 "The surface array is an array of length ``ArrayMesh.ARRAY_MAX``. Each "
 "position in the array is filled with a sub-array containing per-vertex "
@@ -155,7 +155,7 @@ msgstr ""
 "ARRAY_NORMAL`` est un :ref:`PoolVector3Array <class_PoolVector3Array>` de "
 "normales de sommets."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:64
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:66
 msgid ""
 "The surface array can be indexed or non-indexed. Creating a non-indexed "
 "array is as easy as not assigning an array at the index ``ArrayMesh."
@@ -181,11 +181,11 @@ msgstr ""
 "triangles, ce qui n'est pas toujours souhaitable (par exemple, lorsque vous "
 "voulez des normales par face)."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:73
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:75
 msgid "Tools"
 msgstr "Outils"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:75
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:77
 msgid ""
 "Godot provides different ways of accessing and working with geometry. More "
 "information on each will be provided in the following tutorials."
@@ -194,11 +194,11 @@ msgstr ""
 "avec elle. Les tutoriels suivants vous fourniront de plus amples "
 "informations sur chacune d'entre elles."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:79
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:81
 msgid "ArrayMesh"
 msgstr "ArrayMesh"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:81
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:83
 msgid ""
 "The ArrayMesh resource extends Mesh to add a few different quality of life "
 "functions, and most importantly, the ability to construct a Mesh surface "
@@ -208,7 +208,7 @@ msgstr ""
 "qualité de vie différentes, et surtout, la capacité de construire une "
 "surface de Mesh par le biais de scripts."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:84
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:86
 msgid ""
 "For more information about the ArrayMesh, please see the :ref:`ArrayMesh "
 "tutorial <doc_arraymesh>`."
@@ -216,11 +216,11 @@ msgstr ""
 "Pour plus d'informations sur ArrayMesh, consultez le tutoriel :ref:"
 "`ArrayMesh tutorial <doc_arraymesh>`."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:87
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:89
 msgid "MeshDataTool"
 msgstr "MeshDataTool"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:89
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:91
 msgid ""
 "The MeshDataTool is a resource that converts Mesh data into arrays of "
 "vertices, faces, and edges that can be modified at runtime."
@@ -229,7 +229,7 @@ msgstr ""
 "tableaux de sommets, de faces et de bords qui peuvent être modifiés à "
 "l'exécution."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:92
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:94
 msgid ""
 "For more information about the MeshDataTool, please see the :ref:"
 "`MeshDataTool tutorial <doc_meshdatatool>`."
@@ -237,11 +237,11 @@ msgstr ""
 "Pour plus d'informations sur le MeshDataTool, veuillez consulter le "
 "tutoriel :ref:`MeshDataTool tutorial <doc_meshdatatool>`."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:95
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:97
 msgid "SurfaceTool"
 msgstr "SurfaceTool"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:97
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:99
 msgid ""
 "The SurfaceTool allows the creation of Meshes using an OpenGL 1.x immediate "
 "mode style interface."
@@ -249,7 +249,7 @@ msgstr ""
 "Le SurfaceTool permet la création de Meshes en utilisant une interface du "
 "type mode immédiat OpenGL 1.x."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:99
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:101
 msgid ""
 "For more information about the SurfaceTool, please see the :ref:`SurfaceTool "
 "tutorial <doc_surfacetool>`."
@@ -257,11 +257,11 @@ msgstr ""
 "Pour plus d'informations sur SurfaceTool, consultez le tutoriel :ref:"
 "`SurfaceTool tutorial <doc_surfacetool>`."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:102
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:104
 msgid "ImmediateGeometry"
 msgstr "ImmediateGeometry"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:104
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:106
 msgid ""
 "ImmediateGeometry is a node that uses an immediate mode style interface "
 "(like SurfaceTool) to draw objects. The difference between ImmediateGeometry "
@@ -276,7 +276,7 @@ msgstr ""
 "code. Le SurfaceTool génère un Mesh qui doit être ajouté à un MeshInstance "
 "pour être visible."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:109
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:111
 msgid ""
 "ImmediateGeometry is useful for prototyping because of the straightforward "
 "API, but it is slow because the geometry is rebuilt every frame. It is most "
@@ -289,7 +289,7 @@ msgstr ""
 "pour déboguer visuellement (par exemple en traçant des lignes pour "
 "visualiser les raycasts physique, etc.)."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:113
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:115
 msgid ""
 "For more information about ImmediateGeometry, please see the :ref:"
 "`ImmediateGeometry tutorial <doc_immediategeometry>`."
@@ -297,11 +297,11 @@ msgstr ""
 "Pour plus d'informations sur ImmediateGeometry, veuillez consulter le "
 "tutoriel :ref:`ImmediateGeometry tutorial <doc_immediategeometry>`."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:116
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:118
 msgid "Which one should I use?"
 msgstr "Lequel dois-je utiliser ?"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:118
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:120
 msgid ""
 "Which method you use depends on what you are trying to do and what kind of "
 "procedure you are comfortable with."
@@ -309,7 +309,7 @@ msgstr ""
 "La méthode que vous utilisez dépend de ce que vous essayez de faire et du "
 "type de procédure avec lequel vous êtes à l'aise."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:120
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:122
 msgid ""
 "Both SurfaceTool and ArrayMesh are excellent for generating static geometry "
 "(meshes) that don't change over time."
@@ -317,7 +317,7 @@ msgstr ""
 "SurfaceTool et ArrayMesh sont tous deux excellents pour générer une "
 "géométrie statique (maillages) qui ne change pas avec le temps."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:122
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:124
 msgid ""
 "Using an ArrayMesh is slightly faster than using a SurfaceTool, but the API "
 "is more a little more challenging. Additionally, SurfaceTool has a few "
@@ -328,7 +328,7 @@ msgstr ""
 "SurfaceTool possède quelques méthodes de qualité de vie comme "
 "``generate_normals()`` et ``index()``."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:125
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:127
 msgid ""
 "ImmediateGeometry regenerates the mesh every frame, so it is much slower "
 "than ArrayMesh or SurfaceTool. However, if you need the geometry to change "
@@ -341,7 +341,7 @@ msgstr ""
 "interface beaucoup plus facile qui peut même être un peu plus rapide que la "
 "génération d'un ArrayMesh à chaque image."
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:129
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:131
 msgid ""
 "The MeshDataTool is not fast, but it gives you access to all kinds of "
 "properties of the mesh that you don't get with the others (edges, faces, "

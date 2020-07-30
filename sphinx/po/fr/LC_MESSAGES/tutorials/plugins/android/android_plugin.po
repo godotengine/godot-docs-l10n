@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,7 +114,6 @@ msgid "Android plugin"
 msgstr "plugin Android"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:35
-#, fuzzy
 msgid ""
 "While introduced in Godot 3.2, the Android plugin system got a significant "
 "architecture update starting with Godot 3.2.2. The new plugin system is "
@@ -123,7 +122,7 @@ msgid ""
 "not version the Android plugin systems, the new one is now labelled ``v1`` "
 "and is the starting point for the modern Godot Android ecosystem."
 msgstr ""
-"Bien qu'introduit dans Godot 3.2.0, le système de plugin Android a bénéficié "
+"Bien qu'introduit dans Godot 3.2, le système de plugin Android a bénéficié "
 "d'une mise à jour importante de l'architecture à partir de Godot 3.2.2. Le "
 "nouveau système de plugin est rétrocompatible avec le précédent, mais les "
 "deux systèmes restent fonctionnels dans les futures versions de la branche "
@@ -178,9 +177,8 @@ msgstr ""
 "spécifiquement dans son fichier manifeste."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:51
-#, fuzzy
 msgid "Building an Android plugin"
-msgstr "Construire(building) un plugin Android"
+msgstr "Compiler un plugin Android"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:53
 msgid ""
@@ -412,7 +410,6 @@ msgstr ""
 "maven personnalisés nécessaires aux dépendances du plugin"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:133
-#, fuzzy
 msgid "Loading and using an Android plugin"
 msgstr "Chargement et utilisation d'un plugin Android"
 
@@ -447,7 +444,6 @@ msgid "Bundling GDNative resources"
 msgstr "Regroupement des ressources GDNatives"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:153
-#, fuzzy
 msgid ""
 "An Android plugin can define and provide C/C++ GDNative resources, either to "
 "provide and/or access functionality from the game logic. The GDNative "
@@ -519,13 +515,12 @@ msgstr ""
 "godot_ovrmobile>`_"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:172
-#, fuzzy
 msgid ""
 "`Godot Google Play Billing plugin <https://github.com/godotengine/godot-"
 "google-play-billing>`_"
 msgstr ""
-"`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
-"godot_oculus_mobile>`_"
+"`Godot Google Play Billing plugin <https://github.com/godotengine/godot-"
+"google-play-billing>`_"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:176
 msgid "Troubleshooting"
@@ -546,9 +541,13 @@ msgid ""
 "godotengine.godot.Dictionary``, ``int[]``, ``byte[]``, ``float[]``, ``java."
 "lang.String[]``."
 msgstr ""
+"Vérifiez que les méthodes exposées par le plugin utilisent les types Java "
+"suivants : ``void``, ``boolean``, ``int``, ``float``, ``java.lang.String``, "
+"``org.godotengine.godot.Dictionary``, ``int[]``, ``byte[]``, ``float[]``, "
+"``java.lang.String[]``."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:185
-#, fuzzy
 msgid "More complex datatypes are not supported for now."
 msgstr ""
-"Le mélange de formes(Blend shapes) n'est pas pris en charge dans le GLES2."
+"Les types de données plus complexes ne sont pas pris en charge pour "
+"l'instant."

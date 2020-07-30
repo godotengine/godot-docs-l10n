@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,14 +72,13 @@ msgstr ""
 "verschiedenen Geräten oder auch über Zeit variieren."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability, the ``delta`` parameter contains the time "
 "elapsed in seconds as a floating-point number since the previous call to "
 "``_process()``."
 msgstr ""
-"Zur Berücksichtigung dieser Varibilität, enthält der ``delta`` Parameter die "
-"vergangene Zeit in Sekunden als Fließkommazahl (float) seit dem letzten "
+"Zur Berücksichtigung dieser Variabilität, enthält der ``delta`` Parameter "
+"die vergangene Zeit in Sekunden als Fließkommazahl (float) seit dem letzten "
 "Aufruf von ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
@@ -91,7 +90,6 @@ msgstr ""
 "unabhängig von den FPS des Spiels immer dieselbe Zeit in Anspruch nehmen."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
-#, fuzzy
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent of the frame rate."

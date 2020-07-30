@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,14 +79,15 @@ msgstr ""
 "их используют."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
-#, fuzzy
 msgid "Style guide"
-msgstr "Руководство по стилю C#"
+msgstr "Руководство по стилю"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
 msgid ""
 "For consistency across projects, we recommend following these guidelines:"
 msgstr ""
+"Для согласованности между проектами, мы рекомендуем следовать следующим "
+"советам:"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid ""
@@ -96,11 +97,18 @@ msgid ""
 "the convention is to name them after the class name which should be in "
 "PascalCase."
 msgstr ""
+"Используйте стиль **snake_case** для имен папок и файлов (за исключением C# "
+"скриптов). Это позволяет обойти проблемы со стилем которые могут появиться "
+"после экспорта проекта в Windows. C# скрипты исключены из этого правила, их "
+"правило именования это называть их так же как имя класса которое должно быть "
+"в стиле PascalCase."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:57
 msgid ""
 "Use **PascalCase** for node names, as this matches built-in node casing."
 msgstr ""
+"Используйте **PascalCase** для имен узлов , так как это соответствует "
+"встроенному стилю наименования узлов."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 msgid ""
@@ -110,6 +118,12 @@ msgid ""
 "if you use third-party game assets for a character, it makes more sense to "
 "include them within the same folder as the character scenes and scripts."
 msgstr ""
+"В общем случае, храните сторонние ресурсы в папке верхнего уровня ``addons/"
+"``, даже если они не плагины редактора. Это упрощает отслеживание того какие "
+"файлы являются сторонними. Есть несколько исключений из этого правила; на "
+"пример, если вы используете ресурсы из сторонней игры для персонажа, есть "
+"больше смысла в том чтобы включить их в ту же папку где находятся сцены и "
+"скрипты персонажа."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:65
 msgid "Importing"
@@ -133,9 +147,8 @@ msgstr ""
 "Благодаря этому ресурсы теперь прозрачно импортируются из папки проекта."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:75
-#, fuzzy
 msgid "Ignoring specific folders"
-msgstr "Спецификаторы форматирования"
+msgstr "Игнорирование определённых папок"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:77
 msgid ""
@@ -176,7 +189,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:94
 msgid "Case sensitivity"
-msgstr ""
+msgstr "Чувствительность к регистру"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:96
 msgid ""
@@ -187,12 +200,22 @@ msgid ""
 "stick to ``snake_case`` naming for all files in the project (and lowercase "
 "characters in general)."
 msgstr ""
+"Windows и недавние версии macOS используют нечувствительные к регистру "
+"файловые системы по умолчанию, тогда как дистрибутивы Linux используют "
+"чувствительные к регистру файловые системы по умолчанию. Это может вызвать "
+"проблемы после экспорта проекта, так как виртуальная файловая система Godot-"
+"а PCK чувствительна к регистру. Чтобы избежать этого, рекомендуется "
+"использовать стиль наименования ``snake_case`` для всех файлов проекта (и "
+"строчных букв вообще)."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:105
 msgid ""
 "You can break this rule when style guides say otherwise (such as the C# "
 "style guide). Still, be consistent to avoid mistakes."
 msgstr ""
+"Вы можете нарушать это правило когда руководства по стилю говорят иное "
+"(например руководство по стилю C#). И всё же будьте последовательны чтобы "
+"избежать ошибок."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:108
 msgid ""
@@ -201,9 +224,10 @@ msgid ""
 "Subsystem for Linux feature, run the following command in a PowerShell "
 "window::"
 msgstr ""
-"На Windows 10, вы можете сделать чувствительность к регистру в названии "
-"проекта, если включите опцию WSL (Windows Subsystem for Linux) следующей "
-"командой в PowerShell::"
+"В Windows 10, чтобы в дальнейшем избежать ошибок, связанных с "
+"чувствительностью к регистру, вы также можете сделать папку проекта "
+"чувствительной к регистру. После включения функции Windows Subsystem for "
+"Linux выполните следующую команду в окне PowerShell::"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:118
 msgid ""

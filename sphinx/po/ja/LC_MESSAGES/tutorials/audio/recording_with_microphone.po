@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,7 +62,7 @@ msgstr ""
 "す。録音には ``AudioStreamRecord`` という名前の ``AudioStreamPlayer`` が使用"
 "されます。"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:40
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:41
 msgid ""
 "The audio recording is handled by the :ref:`class_AudioEffectRecord` "
 "resource which has three methods: :ref:`get_recording() "
@@ -78,7 +78,7 @@ msgstr ""
 "<class_AudioEffectRecord_method_set_recording_active>` の3つのメソッドを持"
 "つ :ref:`class_AudioEffectRecord` リソースで処理されます。"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:64
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:65
 msgid ""
 "At the start of the demo, the recording effect is not active. When the user "
 "presses the ``RecordButton``, the effect is enabled with "
@@ -88,7 +88,7 @@ msgstr ""
 "``RecordButton`` を押すと、エフェクトは ``set_recording_active(true)`` で有効"
 "になります。"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:68
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:69
 msgid ""
 "On the next button press, as ``effect.is_recording_active()`` is ``true``, "
 "the recorded stream can be stored into the ``recording`` variable by calling "
@@ -98,7 +98,7 @@ msgstr ""
 "で、\\ ``effect.get_recording()`` を呼び出すことで、記録されたストリームを "
 "``recording`` 変数に保存できます。"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:86
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:87
 msgid ""
 "To playback the recording, you assign the recording as the stream of the "
 "``AudioStreamPlayer`` and call ``play()``."
@@ -106,7 +106,7 @@ msgstr ""
 "録音を再生するには、録音を ``AudioStreamPlayer`` のストリームとして割り当"
 "て、\\ ``play()`` を呼び出します。"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:97
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:98
 msgid ""
 "To save the recording, you call ``save_to_wav()`` with the path to a file. "
 "In this demo, the path is defined by the user via a ``LineEdit`` input box."

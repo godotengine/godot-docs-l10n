@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/development/file_formats/tscn.rst:2
+#: ../../docs/development/file_formats/tscn.rst:4
 msgid "TSCN file format"
 msgstr "TSCN-tiedostomuoto"
 
-#: ../../docs/development/file_formats/tscn.rst:4
+#: ../../docs/development/file_formats/tscn.rst:6
 #, fuzzy
 msgid ""
 "The TSCN (text scene) file format represents a single scene tree inside "
@@ -37,7 +37,7 @@ msgstr ""
 "käännetään :code:`.scn` binääritiedostoiksi ja tallennetaan .import "
 "kansioon. Tämä pienentää datakokoa ja nopeuttaa lataamista."
 
-#: ../../docs/development/file_formats/tscn.rst:10
+#: ../../docs/development/file_formats/tscn.rst:12
 #, fuzzy
 msgid ""
 "The ESCN (exported scene) file format is identical to the TSCN file format, "
@@ -48,7 +48,7 @@ msgstr ""
 "niitä käytetään ilmaisemaan Godotille, että tiedosto on tuotu toisesta "
 "ohjelmasta, eikä käyttäjän tule voida muokata sitä Godotissa."
 
-#: ../../docs/development/file_formats/tscn.rst:14
+#: ../../docs/development/file_formats/tscn.rst:16
 msgid ""
 "For those looking for a complete description, the parsing is handled in the "
 "file `resource_format_text.cpp <https://github.com/godotengine/godot/blob/"
@@ -60,37 +60,37 @@ msgstr ""
 "scene/resources/resource_format_text.cpp>`_, luokassa "
 "``ResourceFormatLoaderText``."
 
-#: ../../docs/development/file_formats/tscn.rst:19
+#: ../../docs/development/file_formats/tscn.rst:21
 msgid "File structure"
 msgstr "Tiedoston rakenne"
 
-#: ../../docs/development/file_formats/tscn.rst:21
+#: ../../docs/development/file_formats/tscn.rst:23
 msgid "There are five main sections inside the TSCN file:"
 msgstr "TSCN-tiedosto sisältää viisi pääosiota:"
 
-#: ../../docs/development/file_formats/tscn.rst:23
+#: ../../docs/development/file_formats/tscn.rst:25
 msgid "File Descriptor"
 msgstr "Tiedoston kuvaus"
 
-#: ../../docs/development/file_formats/tscn.rst:24
-#: ../../docs/development/file_formats/tscn.rst:273
+#: ../../docs/development/file_formats/tscn.rst:26
+#: ../../docs/development/file_formats/tscn.rst:275
 msgid "External resources"
 msgstr "Ulkoiset resurssit"
 
-#: ../../docs/development/file_formats/tscn.rst:25
-#: ../../docs/development/file_formats/tscn.rst:295
+#: ../../docs/development/file_formats/tscn.rst:27
+#: ../../docs/development/file_formats/tscn.rst:297
 msgid "Internal resources"
 msgstr "Sisäiset resurssit"
 
-#: ../../docs/development/file_formats/tscn.rst:26
+#: ../../docs/development/file_formats/tscn.rst:28
 msgid "Nodes"
 msgstr "Solmut"
 
-#: ../../docs/development/file_formats/tscn.rst:27
+#: ../../docs/development/file_formats/tscn.rst:29
 msgid "Connections"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:29
+#: ../../docs/development/file_formats/tscn.rst:31
 #, fuzzy
 msgid ""
 "The file descriptor looks like ``[gd_scene load_steps=1 format=2]`` and "
@@ -103,7 +103,7 @@ msgstr ""
 "(teoriassa) olla tiedoston sisältämien resurssien lukumäärä, joskaan sillä "
 "ei käytännössä tunnu olevan väliä."
 
-#: ../../docs/development/file_formats/tscn.rst:34
+#: ../../docs/development/file_formats/tscn.rst:36
 #, fuzzy
 msgid ""
 "These sections should appear in order, but it can be hard to distinguish "
@@ -116,18 +116,18 @@ msgstr ""
 "joka on yhdistävä tekijä kaikille osion muille kohdille. Esimerkiksi "
 "kaikkien ulkoisten resurssien otsikko alkaa :code:`[ext_resource .....]`"
 
-#: ../../docs/development/file_formats/tscn.rst:39
+#: ../../docs/development/file_formats/tscn.rst:41
 msgid ""
 "A TSCN file may contain single-line comments starting with a semicolon (``;"
 "``). However, comments will be discarded when saving the file using the "
 "Godot editor."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:43
+#: ../../docs/development/file_formats/tscn.rst:45
 msgid "Entries inside the file"
 msgstr "Tiedoston kohdat"
 
-#: ../../docs/development/file_formats/tscn.rst:45
+#: ../../docs/development/file_formats/tscn.rst:47
 #, fuzzy
 msgid ""
 "A heading looks like ``[<resource_type> key=value key=value key=value ...]`` "
@@ -136,23 +136,23 @@ msgstr ""
 "Otsikko on muotoa :code:`[<resource_type> key=value key=value "
 "key=value ...]`, missä resource_type on jokin seuraavista:"
 
-#: ../../docs/development/file_formats/tscn.rst:49
+#: ../../docs/development/file_formats/tscn.rst:51
 msgid "``ext_resource``"
 msgstr "``ext_resource``"
 
-#: ../../docs/development/file_formats/tscn.rst:50
+#: ../../docs/development/file_formats/tscn.rst:52
 msgid "``sub_resource``"
 msgstr "``sub_resource`` (aliresurssi)"
 
-#: ../../docs/development/file_formats/tscn.rst:51
+#: ../../docs/development/file_formats/tscn.rst:53
 msgid "``node``"
 msgstr "``node`` (solmu)"
 
-#: ../../docs/development/file_formats/tscn.rst:52
+#: ../../docs/development/file_formats/tscn.rst:54
 msgid "``connection``"
 msgstr "``connection`` (yhteys)"
 
-#: ../../docs/development/file_formats/tscn.rst:54
+#: ../../docs/development/file_formats/tscn.rst:56
 #, fuzzy
 msgid ""
 "Below every heading comes zero or more ``key = value`` pairs. The values can "
@@ -164,11 +164,11 @@ msgstr ""
 "taulukoita, muunnoksia, värejä ja niin edelleen. Esimerkiksi tilasolmu "
 "(spatial node) näyttää tältä:"
 
-#: ../../docs/development/file_formats/tscn.rst:65
+#: ../../docs/development/file_formats/tscn.rst:67
 msgid "The scene tree"
 msgstr "Skenepuu"
 
-#: ../../docs/development/file_formats/tscn.rst:67
+#: ../../docs/development/file_formats/tscn.rst:69
 #, fuzzy
 msgid ""
 "The scene tree is made up of… nodes! The heading of each node consists of "
@@ -179,31 +179,31 @@ msgstr ""
 "yläsolmun nimen ja (yleensä) tyypin. Esimerkiksi :code:`[node type=\"Camera"
 "\" name=\"PlayerCamera\" parent=\"Player/Head\"]`"
 
-#: ../../docs/development/file_formats/tscn.rst:71
+#: ../../docs/development/file_formats/tscn.rst:73
 msgid "Other valid keywords include:"
 msgstr "Muita avainsanoja ovat:"
 
-#: ../../docs/development/file_formats/tscn.rst:73
+#: ../../docs/development/file_formats/tscn.rst:75
 msgid "``instance``"
 msgstr "``instance`` (ilmentymä)"
 
-#: ../../docs/development/file_formats/tscn.rst:74
+#: ../../docs/development/file_formats/tscn.rst:76
 msgid "``instance_placeholder``"
 msgstr "``instance_placeholder`` (ilmentymän paikanpitäjä)"
 
-#: ../../docs/development/file_formats/tscn.rst:75
+#: ../../docs/development/file_formats/tscn.rst:77
 msgid "``owner``"
 msgstr "``owner``"
 
-#: ../../docs/development/file_formats/tscn.rst:76
+#: ../../docs/development/file_formats/tscn.rst:78
 msgid "``index`` (if two nodes have the same name)"
 msgstr "``index`` (jos kahdella solmulla on sama nimi)"
 
-#: ../../docs/development/file_formats/tscn.rst:77
+#: ../../docs/development/file_formats/tscn.rst:79
 msgid "``groups``"
 msgstr "``groups``"
 
-#: ../../docs/development/file_formats/tscn.rst:79
+#: ../../docs/development/file_formats/tscn.rst:81
 #, fuzzy
 msgid ""
 "The first node in the file, which is also the scene root, must not have a "
@@ -222,7 +222,7 @@ msgstr ""
 "alla, niiden polkujen tulee olla :code:`\".\"`. Seuraavassa on esimerkki "
 "skenepuusta (ilman solmusisältöä)."
 
-#: ../../docs/development/file_formats/tscn.rst:95
+#: ../../docs/development/file_formats/tscn.rst:97
 #, fuzzy
 msgid ""
 "Similar to the internal resource, the document for each node is currently "
@@ -233,11 +233,11 @@ msgstr ""
 "tällä hetkellä keskeneräinen. Niiden sisältö on kuitenkin helppo selvittää "
 "tallentamalla haluttu solmu tiedostoon. Joitakin esimerkkejä solmuista:"
 
-#: ../../docs/development/file_formats/tscn.rst:134
+#: ../../docs/development/file_formats/tscn.rst:136
 msgid "NodePath"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:136
+#: ../../docs/development/file_formats/tscn.rst:138
 #, fuzzy
 msgid ""
 "A tree structure is not enough to represent the whole scene. Godot uses a "
@@ -254,11 +254,11 @@ msgstr ""
 "käyttää :code:`NodePath()` rakennetta osoittamaan solmun animoitavaa "
 "attribuuttia."
 
-#: ../../docs/development/file_formats/tscn.rst:161
+#: ../../docs/development/file_formats/tscn.rst:163
 msgid "Skeleton"
 msgstr "Luuranko"
 
-#: ../../docs/development/file_formats/tscn.rst:163
+#: ../../docs/development/file_formats/tscn.rst:165
 #, fuzzy
 msgid ""
 "The Skeleton node inherits the Spatial node, but also may have a list of "
@@ -269,36 +269,36 @@ msgstr ""
 "luita (bones) avain-arvo pareina muodossa :code:`bones/Id/Attribute=Value`. "
 "Luiden attribuutit ovat"
 
-#: ../../docs/development/file_formats/tscn.rst:167
+#: ../../docs/development/file_formats/tscn.rst:169
 msgid "``name``"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:168
+#: ../../docs/development/file_formats/tscn.rst:170
 msgid "``parent``"
 msgstr "``parent``"
 
-#: ../../docs/development/file_formats/tscn.rst:169
+#: ../../docs/development/file_formats/tscn.rst:171
 msgid "``rest``"
 msgstr "``rest``"
 
-#: ../../docs/development/file_formats/tscn.rst:170
+#: ../../docs/development/file_formats/tscn.rst:172
 msgid "``pose``"
 msgstr "``pose``"
 
-#: ../../docs/development/file_formats/tscn.rst:171
-#: ../../docs/development/file_formats/tscn.rst:391
+#: ../../docs/development/file_formats/tscn.rst:173
+#: ../../docs/development/file_formats/tscn.rst:393
 msgid "``enabled``"
 msgstr "``enabled``"
 
-#: ../../docs/development/file_formats/tscn.rst:172
+#: ../../docs/development/file_formats/tscn.rst:174
 msgid "``bound_children``"
 msgstr "``bound_children``"
 
-#: ../../docs/development/file_formats/tscn.rst:174
+#: ../../docs/development/file_formats/tscn.rst:176
 msgid "``name`` must be the first attribute of each bone."
 msgstr "``name`` täytyy olla jokaisen luun ensimmäinen attribuutti."
 
-#: ../../docs/development/file_formats/tscn.rst:175
+#: ../../docs/development/file_formats/tscn.rst:177
 #, fuzzy
 msgid ""
 "``parent`` is the index of parent bone in the bone list, with parent index, "
@@ -307,16 +307,16 @@ msgstr ""
 ":code:`parent` on indeksi ylempään luuhun luulistassa. Sen avulla "
 "luulistasta muodostuu puu"
 
-#: ../../docs/development/file_formats/tscn.rst:177
+#: ../../docs/development/file_formats/tscn.rst:179
 msgid "``rest`` is the transform matrix of bone in its \"resting\" position."
 msgstr "``rest`` on luun muunnosmatriisi lepoasennossa."
 
-#: ../../docs/development/file_formats/tscn.rst:178
+#: ../../docs/development/file_formats/tscn.rst:180
 #, fuzzy
 msgid "``pose`` is the pose matrix; use ``rest`` as the basis."
 msgstr ":code:`pose` on asentomatriisi, joka käyttää :code:`rest` pohjanaan"
 
-#: ../../docs/development/file_formats/tscn.rst:179
+#: ../../docs/development/file_formats/tscn.rst:181
 msgid ""
 "``bound_children`` is a list of ``NodePath()`` which point to "
 "BoneAttachments belonging to this bone."
@@ -324,15 +324,15 @@ msgstr ""
 "``bound_children`` on lista ``NodePath()`` rakenteita, jotka viittaavat "
 "tälle luulle kuuluviin BoneAttachment-solmuihin."
 
-#: ../../docs/development/file_formats/tscn.rst:182
+#: ../../docs/development/file_formats/tscn.rst:184
 msgid "Here's an example of a skeleton node with two bones:"
 msgstr "Tässä esimerkki skeleton-solmusta kahdella luulla:"
 
-#: ../../docs/development/file_formats/tscn.rst:203
+#: ../../docs/development/file_formats/tscn.rst:205
 msgid "BoneAttachment"
 msgstr "BoneAttachment"
 
-#: ../../docs/development/file_formats/tscn.rst:205
+#: ../../docs/development/file_formats/tscn.rst:207
 #, fuzzy
 msgid ""
 "BoneAttachment node is an intermediate node to describe some node being "
@@ -345,17 +345,17 @@ msgstr ""
 "code:`bone_name=NameOfBone` ja vastaavalla isäntäluulla on BoneAttachment-"
 "solmu :code:`bound_children` listassaan."
 
-#: ../../docs/development/file_formats/tscn.rst:210
+#: ../../docs/development/file_formats/tscn.rst:212
 msgid "An example of one MeshInstance parented to a bone in Skeleton:"
 msgstr ""
 "Esimerkki yhdestä MeshInstance-solmusta, joka toimii Skeletonin luun "
 "isäntänä:"
 
-#: ../../docs/development/file_formats/tscn.rst:235
+#: ../../docs/development/file_formats/tscn.rst:237
 msgid "AnimationPlayer"
 msgstr "Animaatiotoistin (AnimationPlayer)"
 
-#: ../../docs/development/file_formats/tscn.rst:237
+#: ../../docs/development/file_formats/tscn.rst:239
 #, fuzzy
 msgid ""
 "AnimationPlayer works as an animation library. It stores animations listed "
@@ -370,11 +370,11 @@ msgstr ""
 "juurisolmua. Juurisolmu on tallennettu muodossa :code:"
 "`root_node=NodePath(Path/To/Node)`."
 
-#: ../../docs/development/file_formats/tscn.rst:257
+#: ../../docs/development/file_formats/tscn.rst:259
 msgid "Resources"
 msgstr "Resurssit"
 
-#: ../../docs/development/file_formats/tscn.rst:259
+#: ../../docs/development/file_formats/tscn.rst:261
 msgid ""
 "Resources are components that make up the nodes. For example, a MeshInstance "
 "node will have an accompanying ArrayMesh resource. The ArrayMesh resource "
@@ -384,7 +384,7 @@ msgstr ""
 "MeshInstance-solmulla on ArrayMesh-resurssi. ArrayMesh-resurssi voi olla "
 "joko TSCN-tiedoston sisäinen tai sen ulkopuolinen."
 
-#: ../../docs/development/file_formats/tscn.rst:263
+#: ../../docs/development/file_formats/tscn.rst:265
 #, fuzzy
 msgid ""
 "References to the resources are handled by ``id`` numbers in the resource's "
@@ -398,7 +398,7 @@ msgstr ""
 "`ExtResource(id)` ja :code:`SubResource(id)`. Koska sisäisiin ja ulkoisiin "
 "resursseihin viitataan eri metodeilla, niillä voi olla sama tunnusluku."
 
-#: ../../docs/development/file_formats/tscn.rst:269
+#: ../../docs/development/file_formats/tscn.rst:271
 #, fuzzy
 msgid ""
 "For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
@@ -407,7 +407,7 @@ msgstr ""
 "Esimerkiksi resurssiin :code:`[ext_resource id=3 type=\"PackedScene\" "
 "path=....]` voidaan viitata näin: :code:`ExtResource(3)`"
 
-#: ../../docs/development/file_formats/tscn.rst:275
+#: ../../docs/development/file_formats/tscn.rst:277
 #, fuzzy
 msgid ""
 "External resources are links to resources not contained within the TSCN file "
@@ -416,7 +416,7 @@ msgstr ""
 "Ulkoiset resurssit ovat linkkejä resursseihin, jotka eivät sisälly TSCN-"
 "tiedostoon itsessään. Ulkoinen resurssi koostuu seuraavista:"
 
-#: ../../docs/development/file_formats/tscn.rst:278
+#: ../../docs/development/file_formats/tscn.rst:280
 #, fuzzy
 msgid ""
 "Godot always generates absolute paths relative to the resource directory and "
@@ -427,18 +427,18 @@ msgstr ""
 "alkavat :code:`res://`, mutta TSCN-tiedoston sijaintiin suhteelliset polut "
 "ovat myös mahdollisia."
 
-#: ../../docs/development/file_formats/tscn.rst:282
+#: ../../docs/development/file_formats/tscn.rst:284
 msgid "Some example external resources are:"
 msgstr "Joitakin esimerkkejä ulkoisista resursseista:"
 
-#: ../../docs/development/file_formats/tscn.rst:290
+#: ../../docs/development/file_formats/tscn.rst:292
 msgid ""
 "Like TSCN files, a TRES file may contain single-line comments starting with "
 "a semicolon (``;``). However, comments will be discarded when saving the "
 "resource using the Godot editor."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:297
+#: ../../docs/development/file_formats/tscn.rst:299
 #, fuzzy
 msgid ""
 "A TSCN file can contain meshes, materials and other data. These are "
@@ -453,7 +453,7 @@ msgstr ""
 "resursseilla on myös :code:`key=value` pareja kunkin otsikon alla. "
 "Esimerkiksi kapselitörmäysmuoto näyttää tältä:"
 
-#: ../../docs/development/file_formats/tscn.rst:311
+#: ../../docs/development/file_formats/tscn.rst:313
 #, fuzzy
 msgid ""
 "Some internal resources contain links to other internal resources (such as a "
@@ -466,7 +466,7 @@ msgstr ""
 "viitattavan resurssin on esiinnyttävä ennen viittausta siihen. Näin ollen "
 "tiedoston sisäisten resurssien osiossa järjestyksellä on väliä."
 
-#: ../../docs/development/file_formats/tscn.rst:316
+#: ../../docs/development/file_formats/tscn.rst:318
 #, fuzzy
 msgid ""
 "Unfortunately, documentation on the formats for these subresources isn't "
@@ -477,11 +477,11 @@ msgstr ""
 "vaikka osaa niistä voi tutkia tarkastelemalla tallennettujen tiedostojen "
 "resursseja, toisia voi tutkia vain lukemalla Godotin lähdekoodia."
 
-#: ../../docs/development/file_formats/tscn.rst:321
+#: ../../docs/development/file_formats/tscn.rst:323
 msgid "ArrayMesh"
 msgstr "ArrayMesh"
 
-#: ../../docs/development/file_formats/tscn.rst:323
+#: ../../docs/development/file_formats/tscn.rst:325
 msgid ""
 "ArrayMesh consists of several surfaces, each in the format ``surface"
 "\\Index={}``. Each surface is a set of vertices and a material."
@@ -489,27 +489,27 @@ msgstr ""
 "ArrayMesh koostuu useista pinnoista, jotka kukin ovat muotoa ``surface"
 "\\Index={}``. Kullakin pinnalla on joukko kärkipisteitä ja materiaali."
 
-#: ../../docs/development/file_formats/tscn.rst:326
+#: ../../docs/development/file_formats/tscn.rst:328
 msgid "TSCN files support two surface formats:"
 msgstr "TSCN-tiedostot tukevat kahta erilaista pinnan formaattia:"
 
-#: ../../docs/development/file_formats/tscn.rst:328
+#: ../../docs/development/file_formats/tscn.rst:330
 msgid "For the old format, each surface has three essential keys:"
 msgstr "Vanhassa formaatissa kullakin pinnalla on kolme olennaista avainta:"
 
-#: ../../docs/development/file_formats/tscn.rst:330
+#: ../../docs/development/file_formats/tscn.rst:332
 msgid "``primitive``"
 msgstr "``primitive``"
 
-#: ../../docs/development/file_formats/tscn.rst:331
+#: ../../docs/development/file_formats/tscn.rst:333
 msgid "``arrays``"
 msgstr "``arrays``"
 
-#: ../../docs/development/file_formats/tscn.rst:332
+#: ../../docs/development/file_formats/tscn.rst:334
 msgid "``morph_arrays``"
 msgstr "``morph_arrays``"
 
-#: ../../docs/development/file_formats/tscn.rst:334
+#: ../../docs/development/file_formats/tscn.rst:336
 msgid ""
 "``primitive`` is an enumerate variable, ``primitive=4`` which is "
 "``PRIMITIVE_TRIANGLES`` is frequently used."
@@ -517,43 +517,43 @@ msgstr ""
 "``primitive`` on enumeroitu muuttuja; ``primitive=4`` joka on "
 "PRIMITIVE_TRIANGLES on usein käytetty."
 
-#: ../../docs/development/file_formats/tscn.rst:337
+#: ../../docs/development/file_formats/tscn.rst:339
 msgid "``arrays`` is a two-dimensional array, it contains:"
 msgstr "``arrays`` on kaksiulotteinen taulukko, joka sisältää:"
 
-#: ../../docs/development/file_formats/tscn.rst:339
+#: ../../docs/development/file_formats/tscn.rst:341
 msgid "Vertex positions array"
 msgstr "Taulukko kärkipisteiden sijainteja"
 
-#: ../../docs/development/file_formats/tscn.rst:340
+#: ../../docs/development/file_formats/tscn.rst:342
 msgid "Tangents array"
 msgstr "Taulukko tangentteja"
 
-#: ../../docs/development/file_formats/tscn.rst:341
+#: ../../docs/development/file_formats/tscn.rst:343
 msgid "Vertex colors array"
 msgstr "Taulukko kärkipisteiden värejä"
 
-#: ../../docs/development/file_formats/tscn.rst:342
+#: ../../docs/development/file_formats/tscn.rst:344
 msgid "UV array 1"
 msgstr "UV-taulukko 1"
 
-#: ../../docs/development/file_formats/tscn.rst:343
+#: ../../docs/development/file_formats/tscn.rst:345
 msgid "UV array 2"
 msgstr "UV-taulukko 2"
 
-#: ../../docs/development/file_formats/tscn.rst:344
+#: ../../docs/development/file_formats/tscn.rst:346
 msgid "Bone indexes array"
 msgstr "Taulukko luuindeksejä"
 
-#: ../../docs/development/file_formats/tscn.rst:345
+#: ../../docs/development/file_formats/tscn.rst:347
 msgid "Bone weights array"
 msgstr "Taulukko luiden painoja"
 
-#: ../../docs/development/file_formats/tscn.rst:346
+#: ../../docs/development/file_formats/tscn.rst:348
 msgid "Vertex indexes array"
 msgstr "Taulukko kärkipisteiden indeksejä"
 
-#: ../../docs/development/file_formats/tscn.rst:348
+#: ../../docs/development/file_formats/tscn.rst:350
 msgid ""
 "``morph_arrays`` is an array of morphs. Each morph is exactly an ``arrays`` "
 "without the vertex indexes array."
@@ -561,15 +561,15 @@ msgstr ""
 "``morph_arrays`` on taulukko morpheja. Kukin morph on tarkalleen ``arrays`` "
 "ilman kärkipisteiden indeksitaulukkoa."
 
-#: ../../docs/development/file_formats/tscn.rst:351
+#: ../../docs/development/file_formats/tscn.rst:353
 msgid "An example of ArrayMesh:"
 msgstr "Esimerkki ArrayMeshistä:"
 
-#: ../../docs/development/file_formats/tscn.rst:375
+#: ../../docs/development/file_formats/tscn.rst:377
 msgid "Animation"
 msgstr "Animaatio"
 
-#: ../../docs/development/file_formats/tscn.rst:377
+#: ../../docs/development/file_formats/tscn.rst:379
 msgid ""
 "An animation resource consists of tracks. Besides, it has ``length``, "
 "``loop`` and ``step`` applied to all the tracks."
@@ -577,11 +577,11 @@ msgstr ""
 "Animaatioresurssi koostuu raidoista. Lisäksi kullakin raidalla on pituus "
 "(``length``), kierto (``loop``) ja askellus (``step``)."
 
-#: ../../docs/development/file_formats/tscn.rst:380
+#: ../../docs/development/file_formats/tscn.rst:382
 msgid "``length`` and ``step`` are both durations in seconds."
 msgstr "Sekä ``length`` että ``step`` ilmaisevat aikaa sekunteina."
 
-#: ../../docs/development/file_formats/tscn.rst:382
+#: ../../docs/development/file_formats/tscn.rst:384
 msgid ""
 "Each track is described by a list of key-value pairs in the format ``tracks/"
 "Id/Attribute``. Each track includes:"
@@ -589,31 +589,31 @@ msgstr ""
 "Kukin raita on kuvattu listana avain-arvo pareja ``tracks/Id/Attribute``. "
 "Kukin raita sisältää:"
 
-#: ../../docs/development/file_formats/tscn.rst:385
+#: ../../docs/development/file_formats/tscn.rst:387
 msgid "``type``"
 msgstr "``type`` (tyyppi)"
 
-#: ../../docs/development/file_formats/tscn.rst:386
+#: ../../docs/development/file_formats/tscn.rst:388
 msgid "``path``"
 msgstr "``path`` (polku)"
 
-#: ../../docs/development/file_formats/tscn.rst:387
+#: ../../docs/development/file_formats/tscn.rst:389
 msgid "``interp``"
 msgstr "``interp`` (interpolaatio)"
 
-#: ../../docs/development/file_formats/tscn.rst:388
+#: ../../docs/development/file_formats/tscn.rst:390
 msgid "``keys``"
 msgstr "``keys`` (avainruudut)"
 
-#: ../../docs/development/file_formats/tscn.rst:389
+#: ../../docs/development/file_formats/tscn.rst:391
 msgid "``loop_wrap``"
 msgstr "``loop_wrap`` (kierron tyyppi)"
 
-#: ../../docs/development/file_formats/tscn.rst:390
+#: ../../docs/development/file_formats/tscn.rst:392
 msgid "``imported``"
 msgstr "``imported`` (tuotu)"
 
-#: ../../docs/development/file_formats/tscn.rst:393
+#: ../../docs/development/file_formats/tscn.rst:395
 msgid ""
 "The ``type`` must be the first attribute of each track. The value of "
 "``type`` can be:"
@@ -621,19 +621,19 @@ msgstr ""
 "Kunkin raidan ensimmäisen attribuutin on oltava ``type``. ``type`` arvo voi "
 "olla:"
 
-#: ../../docs/development/file_formats/tscn.rst:396
+#: ../../docs/development/file_formats/tscn.rst:398
 msgid "``transform``"
 msgstr "``transform`` (muunnos)"
 
-#: ../../docs/development/file_formats/tscn.rst:397
+#: ../../docs/development/file_formats/tscn.rst:399
 msgid "``value``"
 msgstr "``value`` (arvo)"
 
-#: ../../docs/development/file_formats/tscn.rst:398
+#: ../../docs/development/file_formats/tscn.rst:400
 msgid "``method``"
 msgstr "``method`` (metodi)"
 
-#: ../../docs/development/file_formats/tscn.rst:400
+#: ../../docs/development/file_formats/tscn.rst:402
 msgid ""
 "The ``path`` has the format ``NodePath(Path/To/Node:attribute)``. It's the "
 "path to the animated node or attribute, relative to the root node defined in "
@@ -643,7 +643,7 @@ msgstr ""
 "AnimationPlayer solmussa määritellystä juurisolmusta animoituun solmuun tai "
 "attribuuttiin."
 
-#: ../../docs/development/file_formats/tscn.rst:404
+#: ../../docs/development/file_formats/tscn.rst:406
 #, fuzzy
 msgid ""
 "The ``interp`` is the method to interpolate frames from the keyframes. It is "
@@ -652,29 +652,29 @@ msgstr ""
 ":code:`interp` on menetelmä, jolla ruutuja interpoloidaan avainruuduista. Se "
 "on enumeraatiomuuttuja, jolla voi olla seuraavat arvot:"
 
-#: ../../docs/development/file_formats/tscn.rst:407
+#: ../../docs/development/file_formats/tscn.rst:409
 #, fuzzy
 msgid "``0`` (constant)"
 msgstr "0 (vakio)"
 
-#: ../../docs/development/file_formats/tscn.rst:408
+#: ../../docs/development/file_formats/tscn.rst:410
 #, fuzzy
 msgid "``1`` (linear)"
 msgstr "1 (lineaarinen)"
 
-#: ../../docs/development/file_formats/tscn.rst:409
+#: ../../docs/development/file_formats/tscn.rst:411
 #, fuzzy
 msgid "``2`` (cubic)"
 msgstr "2 (kuutiollinen)"
 
-#: ../../docs/development/file_formats/tscn.rst:411
+#: ../../docs/development/file_formats/tscn.rst:413
 msgid ""
 "The ``keys`` correspond to the keyframes. It appears as a "
 "``PoolRealArray()``, but may have a different structure for tracks with "
 "different types."
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:414
+#: ../../docs/development/file_formats/tscn.rst:416
 msgid ""
 "A Transform track uses every 12 real numbers in the ``keys`` to describe a "
 "keyframe. The first number is the timestamp. The second number is the "

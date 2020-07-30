@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,9 +37,8 @@ msgstr ""
 "herausstellt."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
-#, fuzzy
 msgid "Command line reference"
-msgstr "Kommandozeilenparameter."
+msgstr "Kommandozeilenparameter"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
 #, fuzzy
@@ -351,6 +350,8 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:104
 msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
 msgstr ""
+"Simuliert eine hohe CPU Auslastung (verzögert jedes Bild um <ms> "
+"Millisekunden)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:106
 msgid "``--time-scale <scale>``"
@@ -394,20 +395,19 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "Print the frames per second to the stdout."
-msgstr ""
+msgstr "Gibt die Bilder pro Sekunde an stdout."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "**Standalone tools**"
-msgstr ""
+msgstr "**Eigenständige Werkzeuge**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
 msgid "``-s <script>``, ``--script <script>``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
-#, fuzzy
 msgid "Run a script."
-msgstr "Ein Skript hinzufügen"
+msgstr "Ein Skript ausführen."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "``--check-only``"
@@ -481,7 +481,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
 msgid "``--test <test>``"
-msgstr ""
+msgstr "``--test <test>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
 msgid ""
@@ -500,10 +500,14 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
+"Es wird empfohlen das Godot Programm in die PATH Umgebungsvariable "
+"aufzunehmen, so daß es von überall einfach durch Eingabe von "
+"``godot``erreicht werden kann. Hierfür muss bei Linux die Datei in ``/usr/"
+"local/bin`` stehen und der Name der Datei sollte ``godot``sein."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:150
 msgid "Setting the project path"
-msgstr ""
+msgstr "Projektpfad setzen"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:152
 msgid ""
@@ -511,40 +515,50 @@ msgid ""
 "working directory is, you may need to set the path to your project for any "
 "of the following commands to work correctly."
 msgstr ""
+"Abhängig davon wo sich das Godot Programm befindet und welches das aktuelle "
+"Arbeitsverzeichnis ist, sollte man den Pfad zum Projekt setzen, damit die "
+"folgenden Befehle korrekt funktionieren."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:156
 msgid ""
 "This can be done by giving the path to the ``project.godot`` file of your "
 "project as either the first argument, like this:"
 msgstr ""
+"Hierzu kann der Pfad in der ``project.godot`` Datei des Projekts entweder "
+"wie folgt als erstes Argument eingetragen werden:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:163
 msgid "Or by using the ``--path`` argument:"
-msgstr ""
+msgstr "oder durch nutzen des ``--path`` Arguments:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:169
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr ""
+"Zum Beispiel, der vollständige Befehl zum exportieren deines Spiels (wie "
+"unten beschrieben) sieht in etwa so aus:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:176
 msgid "Creating a project"
-msgstr ""
+msgstr "Projekt erzeugen"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:179
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
 msgstr ""
+"Ein neues Projekt kann auch über die Kommandozeile erzeugt werden indem in "
+"der Shell (Eingabeaufforderung) zum gewünschten Verzeichnis gewechselt und "
+"eine Datei project.godot erzeugt wird."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:190
 msgid "The project can now be opened with Godot."
-msgstr ""
+msgstr "Das Projekt kann nun mit Godot geöffnet werden."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:194
 msgid "Running the editor"
-msgstr ""
+msgstr "Editor starten"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:196
 msgid ""
@@ -552,16 +566,21 @@ msgid ""
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
+"Den Editor startet man durch ausführen von Godot mit dem ``-e`` Flag. Dies "
+"muss aus dem Projekt-Verzeichnis oder einem Unterverzeichnis geschehen, "
+"ansonsten wird der Befehl ignoriert und der Projekt Manager erscheint."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:204
 msgid ""
 "If a scene has been created and saved, it can be edited later by running the "
 "same code with that scene as argument."
 msgstr ""
+"Eine Szene wurde erzeugt und gespeichert, sie kann später editiert werden "
+"mit dem gleichen Code und der Szene als Argument."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:212
 msgid "Erasing a scene"
-msgstr ""
+msgstr "Szene löschen"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:214
 msgid ""
@@ -569,26 +588,33 @@ msgid ""
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
 "scene or else an error will be thrown upon opening."
 msgstr ""
+"Godot schont dein Filesystem und wird keine extra Metadata Dateien erzeugen. "
+"Nutze ``rm`` um eine Szenendatei zu löschen. Stelle sicher, dass nichts auf "
+"diese Szene verweist, ansonsten wird beim Öffnen ein Fehler angezeigt."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:223
 msgid "Running the game"
-msgstr ""
+msgstr "Spiel starten"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:225
 msgid ""
 "To run the game, simply execute Godot within the project directory or "
 "subdirectory."
 msgstr ""
+"Um das Spiel zu starten einfach Godot ausführen innerhalb des Projekt "
+"Verzeichnisses oder Unterverzeichnisses."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:232
 msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
 msgstr ""
+"Wenn eine spezielle Szene getestet werden muss, füge diese Szene in der "
+"Eingabeaufforderung ein."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:240
 msgid "Debugging"
-msgstr ""
+msgstr "Debugging"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:242
 msgid ""
@@ -596,6 +622,10 @@ msgid ""
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for running either the game or a simple scene."
 msgstr ""
+"Auf der Kommandozeile Fehler erkennen ist schwierig, da diese nur so "
+"vorbeirauschen. Hierfür gibt es einen Kommandozeilen-Debugger indem ``-d`` "
+"angefügt wird. Dies funktioniert sowohl mit Spielen als auch einfachen "
+"Szenen."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:257
 msgid "Exporting"
@@ -624,7 +654,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:278
 msgid "Running a script"
-msgstr ""
+msgstr "ein Skript starten"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:280
 msgid ""
@@ -639,11 +669,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:286
 msgid "Here is a simple example of how it works:"
-msgstr ""
+msgstr "Hier ein kleines Beispiel wie es funktioniert:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:297
 msgid "And how to run it:"
-msgstr ""
+msgstr "und so startet man es:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
 msgid ""

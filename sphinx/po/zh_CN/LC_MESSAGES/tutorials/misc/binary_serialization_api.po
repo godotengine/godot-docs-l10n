@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,11 +26,12 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:9
+#, fuzzy
 msgid ""
 "Godot has a simple serialization API based on Variant. It's used for "
 "converting data types to an array of bytes efficiently. This API is used in "
 "the functions ``get_var`` and ``store_var`` of :ref:`class_File` as well as "
-"the packet APIs for :ref:`class_PacketPeer`. This format is not used for "
+"the packet APIs for :ref:`class_PacketPeer`. This format is *not* used for "
 "binary scenes and resources."
 msgstr ""
 "Godot有一个基于变量的简单序列化API。 它被用于高效地将数据类型转换为字节数"
@@ -42,43 +43,44 @@ msgid "Packet specification"
 msgstr "包规范"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:18
+#, fuzzy
 msgid ""
-"The packet is designed to be always padded to 4 bytes. All values are little "
-"endian encoded. All packets have a 4 byte header representing an integer, "
+"The packet is designed to be always padded to 4 bytes. All values are little-"
+"endian-encoded. All packets have a 4-byte header representing an integer, "
 "specifying the type of data:"
 msgstr ""
 "数据包被设计成4个字节的填充。 所有值都是小端编码。 所有数据包都有一个4字节的"
 "头，表示成一个指定数据类型的整数:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:95
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:104
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:113
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:122
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:135
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:146
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:161
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:174
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:193
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:208
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:223
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:242
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:267
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:298
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:313
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:322
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:333
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:343
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:362
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:374
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:386
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:399
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:410
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:421
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:429
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:442
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:455
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:470
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:96
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:105
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:114
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:123
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:136
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:147
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:162
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:175
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:194
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:209
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:224
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:243
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:268
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:299
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:314
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:323
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:334
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:344
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:363
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:375
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:387
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:400
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:411
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:422
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:430
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:443
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:456
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Type"
 msgstr "类型"
 
@@ -95,7 +97,7 @@ msgid "null"
 msgstr "null"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:27
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:390
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:391
 msgid "1"
 msgstr "1"
 
@@ -120,89 +122,89 @@ msgid "float"
 msgstr "float"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:33
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:97
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:106
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:115
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:124
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:137
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:139
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:148
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:150
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:152
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:154
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:163
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:165
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:167
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:176
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:178
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:180
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:182
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:184
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:186
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:195
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:197
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:199
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:201
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:210
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:212
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:214
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:216
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:225
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:227
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:229
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:231
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:233
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:235
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:244
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:246
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:248
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:250
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:252
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:254
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:256
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:258
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:260
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:269
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:271
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:273
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:275
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:277
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:279
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:281
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:283
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:285
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:287
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:289
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:291
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:300
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:302
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:304
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:306
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:315
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:335
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:337
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:345
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:364
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:376
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:388
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:401
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:403
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:412
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:414
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:423
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:431
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:444
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:446
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:448
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:457
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:459
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:461
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:463
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:472
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:474
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:476
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:478
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:480
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:98
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:107
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:116
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:125
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:138
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:140
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:149
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:151
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:153
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:155
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:164
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:166
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:168
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:177
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:179
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:181
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:183
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:185
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:187
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:196
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:198
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:200
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:202
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:211
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:213
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:215
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:217
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:226
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:228
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:230
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:232
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:234
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:236
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:245
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:247
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:249
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:251
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:253
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:255
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:257
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:259
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:261
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:270
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:272
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:274
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:276
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:278
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:280
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:282
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:284
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:286
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:288
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:290
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:292
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:301
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:303
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:305
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:307
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:316
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:336
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:338
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:346
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:365
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:377
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:389
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:402
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:404
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:413
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:415
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:424
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:432
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:445
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:447
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:449
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:458
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:460
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:462
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:464
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:473
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:475
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:477
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:479
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:481
 msgid "4"
 msgstr "4"
 
@@ -235,20 +237,20 @@ msgid "vector3"
 msgstr "vector3"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:41
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:106
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:126
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:139
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:150
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:165
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:178
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:197
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:212
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:227
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:246
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:271
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:302
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:324
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:337
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:107
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:127
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:140
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:151
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:166
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:179
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:198
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:213
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:228
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:247
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:272
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:303
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:325
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:338
 msgid "8"
 msgstr "8"
 
@@ -281,15 +283,15 @@ msgid "aabb"
 msgstr "aabb"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:49
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:152
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:167
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:180
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:199
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:214
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:229
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:248
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:273
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:304
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:153
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:168
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:181
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:200
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:215
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:230
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:249
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:274
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:305
 msgid "12"
 msgstr "12"
 
@@ -322,14 +324,14 @@ msgid "node path"
 msgstr "node path"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:154
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:182
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:201
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:216
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:231
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:250
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:275
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:306
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:155
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:183
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:202
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:217
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:232
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:251
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:276
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:307
 msgid "16"
 msgstr "16"
 
@@ -362,10 +364,10 @@ msgid "array"
 msgstr "array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:65
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:184
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:233
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:252
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:277
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:185
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:234
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:253
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:278
 msgid "20"
 msgstr "20"
 
@@ -398,10 +400,10 @@ msgid "string array"
 msgstr "string array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:73
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:186
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:235
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:254
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:279
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:187
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:236
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:255
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:280
 msgid "24"
 msgstr "24"
 
@@ -436,703 +438,721 @@ msgstr "max"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:82
 msgid ""
 "Following this is the actual packet contents, which varies for each type of "
-"packet. Note that this assumes Godot is compiled with single precision "
-"floats. If instead doubles are used, the length of \"Float\" fields within "
-"data structures should be 8, and the offset should be (offset - 4) * 2 + 4. "
-"The \"float\" type itself is always double precision."
+"packet. Note that this assumes Godot is compiled with single-precision "
+"floats, which is the default. If Godot was compiled with double-precision "
+"floats, the length of \"Float\" fields within data structures should be 8, "
+"and the offset should be ``(offset - 4) * 2 + 4``. The \"float\" type itself "
+"always uses double precision."
 msgstr ""
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:89
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:90
 msgid "0: null"
 msgstr "0: null"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:92
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:93
 msgid "1: :ref:`bool<class_bool>`"
 msgstr "1: :ref:`bool<class_bool>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:95
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:104
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:113
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:122
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:135
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:146
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:161
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:174
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:193
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:208
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:223
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:242
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:267
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:298
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:313
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:322
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:333
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:343
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:362
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:374
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:386
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:399
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:410
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:421
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:429
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:442
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:455
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:470
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:96
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:105
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:114
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:123
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:136
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:147
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:162
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:175
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:194
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:209
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:224
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:243
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:268
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:299
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:314
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:323
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:334
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:344
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:363
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:375
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:387
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:400
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:411
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:422
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:430
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:443
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:456
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Offset"
 msgstr "偏移量"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:95
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:104
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:113
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:122
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:135
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:146
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:161
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:174
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:193
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:208
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:223
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:242
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:267
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:298
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:313
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:322
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:333
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:343
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:362
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:374
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:386
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:399
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:410
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:421
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:429
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:442
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:455
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:470
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:96
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:105
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:114
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:123
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:136
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:147
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:162
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:175
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:194
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:209
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:224
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:243
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:268
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:299
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:314
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:323
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:334
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:344
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:363
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:375
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:387
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:400
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:411
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:422
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:430
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:443
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:456
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Len"
 msgstr "长度"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:95
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:104
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:113
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:122
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:135
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:146
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:161
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:174
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:193
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:208
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:223
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:242
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:267
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:298
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:313
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:322
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:333
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:343
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:362
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:374
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:386
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:399
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:410
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:421
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:429
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:442
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:455
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:470
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:96
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:105
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:114
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:123
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:136
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:147
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:162
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:175
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:194
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:209
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:224
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:243
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:268
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:299
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:314
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:323
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:334
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:344
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:363
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:375
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:387
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:400
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:411
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:422
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:430
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:443
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:456
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Description"
 msgstr "描述"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:97
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:106
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:124
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:315
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:335
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:337
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:345
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:364
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:376
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:388
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:401
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:403
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:412
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:414
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:423
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:431
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:444
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:457
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:472
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:98
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:107
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:125
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:316
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:336
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:338
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:346
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:365
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:377
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:389
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:402
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:404
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:413
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:415
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:424
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:432
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:445
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:458
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:473
 msgid "Integer"
 msgstr "Integer"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:97
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:98
 msgid "0 for False, 1 for True"
 msgstr "0 代表 False, 1 代表 True"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:101
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:102
 msgid "2: :ref:`int<class_int>`"
 msgstr "2: :ref:`int<class_int>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:106
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:107
 #, fuzzy
-msgid "Signed, 64-bit Integer"
-msgstr "有符号，32位整数"
+msgid "64-bit signed integer"
+msgstr "32位符号整数"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:110
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:111
 #, fuzzy
 msgid "3: :ref:`float<class_float>`"
 msgstr ":ref:`float<class_float>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:115
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:137
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:139
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:148
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:150
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:152
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:154
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:163
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:165
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:167
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:176
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:178
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:180
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:182
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:184
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:186
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:195
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:197
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:199
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:201
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:210
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:212
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:214
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:216
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:225
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:227
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:229
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:231
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:233
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:235
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:244
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:246
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:248
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:250
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:252
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:254
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:256
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:258
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:260
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:269
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:271
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:273
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:275
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:277
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:279
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:281
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:283
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:285
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:287
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:289
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:291
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:300
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:302
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:304
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:306
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:446
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:448
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:459
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:461
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:463
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:474
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:476
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:478
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:480
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:116
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:138
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:140
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:149
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:151
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:153
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:155
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:164
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:166
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:168
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:177
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:179
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:181
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:183
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:185
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:187
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:196
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:198
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:200
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:202
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:211
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:213
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:215
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:217
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:226
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:228
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:230
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:232
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:234
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:236
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:245
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:247
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:249
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:251
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:253
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:255
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:257
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:259
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:261
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:270
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:272
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:274
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:276
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:278
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:280
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:282
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:284
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:286
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:288
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:290
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:292
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:301
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:303
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:305
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:307
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:447
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:449
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:460
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:462
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:464
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:475
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:477
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:479
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:481
 msgid "Float"
 msgstr "Float"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:115
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:116
 msgid "IEE 754 32-Bits Float"
 msgstr "IEE 754格式的32位浮点数"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:119
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:120
 msgid "4: :ref:`String<class_string>`"
 msgstr "4: :ref:`String<class_string>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:124
-msgid "String Length (in Bytes)"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:125
+#, fuzzy
+msgid "String length (in bytes)"
 msgstr "字符串长度 (字节)"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:126
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:324
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:347
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:433
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:127
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:325
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:348
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:434
 msgid "X"
 msgstr "X"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:126
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:324
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:347
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:433
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:127
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:325
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:348
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:434
 msgid "Bytes"
 msgstr "Bytes"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:126
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:324
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:347
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:433
-msgid "UTF-8 Encoded String"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:127
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:325
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:348
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:434
+#, fuzzy
+msgid "UTF-8 encoded string"
 msgstr "UTF-8编码字符串"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:129
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:130
 msgid "This field is padded to 4 bytes."
 msgstr "该字段会被填充成4个字节。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:132
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:133
 msgid "5: :ref:`Vector2<class_vector2>`"
 msgstr "5: :ref:`Vector2<class_vector2>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:137
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:148
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:163
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:225
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:446
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:459
-msgid "X Coordinate"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:138
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:149
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:164
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:226
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:447
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:460
+#, fuzzy
+msgid "X coordinate"
 msgstr "X 坐标"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:139
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:150
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:165
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:227
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:448
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:461
-msgid "Y Coordinate"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:140
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:151
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:166
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:228
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:449
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:462
+#, fuzzy
+msgid "Y coordinate"
 msgstr "Y 坐标"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:143
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:144
 msgid "6: :ref:`Rect2<class_rect2>`"
 msgstr "6: :ref:`Rect2<class_rect2>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:152
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:231
-msgid "X Size"
-msgstr "X大小"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:153
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:232
+#, fuzzy
+msgid "X size"
+msgstr "基本大小"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:154
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:233
-msgid "Y Size"
-msgstr "Y大小"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:155
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:234
+#, fuzzy
+msgid "Y size"
+msgstr "基本大小"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:158
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:159
 msgid "7: :ref:`Vector3<class_vector3>`"
 msgstr "7: :ref:`Vector3<class_vector3>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:167
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:229
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:463
-msgid "Z Coordinate"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:168
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:230
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:464
+#, fuzzy
+msgid "Z coordinate"
 msgstr "Z 坐标"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:171
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:172
 msgid "8: :ref:`Transform2D<class_transform2d>`"
 msgstr "8: :ref:`Transform2D<class_transform2d>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:176
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:244
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:269
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:177
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:245
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:270
 #, fuzzy
 msgid "The X component of the X column vector, accessed via [0][0]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:178
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:246
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:271
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:179
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:247
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:272
 #, fuzzy
 msgid "The Y component of the X column vector, accessed via [0][1]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:180
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:250
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:275
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:181
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:251
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:276
 #, fuzzy
 msgid "The X component of the Y column vector, accessed via [1][0]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:182
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:252
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:277
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:183
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:253
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:278
 #, fuzzy
 msgid "The Y component of the Y column vector, accessed via [1][1]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:184
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:185
 #, fuzzy
 msgid "The X component of the origin vector, accessed via [2][0]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:186
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:187
 #, fuzzy
 msgid "The Y component of the origin vector, accessed via [2][1]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:190
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:191
 msgid "9: :ref:`Plane<class_plane>`"
 msgstr "9: :ref:`Plane<class_plane>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:195
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:196
 msgid "Normal X"
 msgstr "法线 X"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:197
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:198
 msgid "Normal Y"
 msgstr "法线 Y"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:199
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:200
 msgid "Normal Z"
 msgstr "法线 Z"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:201
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:202
 msgid "Distance"
 msgstr "距离"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:205
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:206
 msgid "10: :ref:`Quat<class_quat>`"
 msgstr "10: :ref:`Quat<class_quat>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:210
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:211
 msgid "Imaginary X"
 msgstr "虚数X"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:212
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:213
 msgid "Imaginary Y"
 msgstr "虚数Y"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:214
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:215
 msgid "Imaginary Z"
 msgstr "虚数Z"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:216
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:217
 msgid "Real W"
 msgstr "实数W"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:220
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:221
 msgid "11: :ref:`AABB<class_aabb>`"
 msgstr "11: :ref:`AABB<class_aabb>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:235
-msgid "Z Size"
-msgstr "Z大小"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:236
+#, fuzzy
+msgid "Z size"
+msgstr "基本大小"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:239
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:240
 msgid "12: :ref:`Basis<class_basis>`"
 msgstr "12: :ref:`Basis<class_basis>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:248
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:273
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:249
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:274
 #, fuzzy
 msgid "The Z component of the X column vector, accessed via [0][2]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:254
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:279
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:255
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:280
 #, fuzzy
 msgid "The Z component of the Y column vector, accessed via [1][2]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:256
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:281
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:257
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:282
 msgid "28"
 msgstr "28"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:256
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:281
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:257
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:282
 #, fuzzy
 msgid "The X component of the Z column vector, accessed via [2][0]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:258
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:283
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:259
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:284
 msgid "32"
 msgstr "32"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:258
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:283
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:259
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:284
 #, fuzzy
 msgid "The Y component of the Z column vector, accessed via [2][1]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:260
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:285
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:261
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:286
 msgid "36"
 msgstr "36"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:260
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:285
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:261
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:286
 #, fuzzy
 msgid "The Z component of the Z column vector, accessed via [2][2]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:264
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:265
 msgid "13: :ref:`Transform<class_transform>`"
 msgstr "13: :ref:`Transform<class_transform>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:287
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:288
 msgid "40"
 msgstr "40"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:287
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:288
 #, fuzzy
 msgid "The X component of the origin vector, accessed via [3][0]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:289
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:290
 msgid "44"
 msgstr "44"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:289
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:290
 #, fuzzy
 msgid "The Y component of the origin vector, accessed via [3][1]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:291
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:292
 msgid "48"
 msgstr "48"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:291
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:292
 #, fuzzy
 msgid "The Z component of the origin vector, accessed via [3][2]"
 msgstr "向量的各个组成部分可以直接通过名称访问。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:295
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:296
 msgid "14: :ref:`Color<class_color>`"
 msgstr "14: :ref:`Color<class_color>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:300
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:474
-msgid "Red (0..1)"
-msgstr "红色通道 (0..1)"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:301
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:475
+msgid "Red (typically 0..1, can be above 1 for overbright colors)"
+msgstr ""
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:302
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:476
-msgid "Green (0..1)"
-msgstr "绿色通道 (0..1)"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:303
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:477
+msgid "Green (typically 0..1, can be above 1 for overbright colors)"
+msgstr ""
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:304
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:478
-msgid "Blue (0..1)"
-msgstr "蓝色通道 (0..1)"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:305
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:479
+msgid "Blue (typically 0..1, can be above 1 for overbright colors)"
+msgstr ""
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:306
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:480
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:307
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:481
 msgid "Alpha (0..1)"
 msgstr "透明通道 (0..1)"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:310
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:311
 msgid "15: :ref:`NodePath<class_nodepath>`"
 msgstr "15: :ref:`NodePath<class_nodepath>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:315
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:316
+#, fuzzy
 msgid ""
-"String Length, or New Format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
+"String length, or new format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
 msgstr "字符串长度或新格式 (val&0x80000000!=0 和 NameCount=val&0x7FFFFFFF)"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:319
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:320
 msgid "For old format:"
 msgstr "对于旧格式:"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:327
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:328
 msgid "Padded to 4 bytes."
 msgstr "填充到4个字节。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:330
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:331
 msgid "For new format:"
 msgstr "对于新格式:"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:335
-msgid "Sub-Name Count"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:336
+#, fuzzy
+msgid "Sub-name count"
 msgstr "子名称计数"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:337
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:338
 msgid "Flags (absolute: val&1 != 0 )"
 msgstr "标志 (absolute: val&1 != 0 )"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:340
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:341
 msgid "For each Name and Sub-Name"
 msgstr "对于每个名称和子名称"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:345
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:431
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:346
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:432
 msgid "X+0"
 msgstr "X+0"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:345
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:431
-msgid "String Length"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:346
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:432
+#, fuzzy
+msgid "String length"
 msgstr "字符串长度"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:347
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:433
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:348
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:434
 msgid "X+4"
 msgstr "X+4"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:350
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:351
 msgid "Every name string is padded to 4 bytes."
 msgstr "每个名称字符串都会填充到4个字节。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:353
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:354
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
 msgstr "16: :ref:`RID<class_rid>` (暂不支持)"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:356
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:357
 msgid "17: :ref:`Object<class_object>` (unsupported)"
 msgstr "17: :ref:`Object<class_object>` (暂不支持)"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:359
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:360
 msgid "18: :ref:`Dictionary<class_dictionary>`"
 msgstr "18: :ref:`Dictionary<class_dictionary>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:364
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:376
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:365
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:377
 msgid "val&0x7FFFFFFF = elements, val&0x80000000 = shared (bool)"
 msgstr "val&0x7FFFFFFF = elements, val&0x80000000 = shared (bool)"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:367
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:368
 msgid ""
 "Then what follows is, for amount of \"elements\", pairs of key and value, "
 "one after the other, using this same format."
 msgstr ""
 "然后，对于``elements``的数量，使用相同的格式，一个接一个地使用密钥和值对。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:371
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:372
 msgid "19: :ref:`Array<class_array>`"
 msgstr "19: :ref:`Array<class_array>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:379
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:380
 msgid ""
 "Then what follows is, for amount of \"elements\", values one after the "
 "other, using this same format."
 msgstr "然后，对于``elements``的数量，使用相同的格式一个接一个地输出值。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:383
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:384
 msgid "20: :ref:`PoolByteArray<class_poolbytearray>`"
 msgstr "20: :ref:`PoolByteArray<class_poolbytearray>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:388
-msgid "Array Length (Bytes)"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:389
+#, fuzzy
+msgid "Array length (Bytes)"
 msgstr "数组长度(字节)"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:390
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:391
 msgid "8..8+length"
 msgstr "8..8+长度"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:390
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:391
 msgid "Byte"
 msgstr "Byte"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:390
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:391
 msgid "Byte (0..255)"
 msgstr "字节 (0..255)"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:393
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:394
 msgid "The array data is padded to 4 bytes."
 msgstr "数组数据填充为4个字节。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:396
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:397
 msgid "21: :ref:`PoolIntArray<class_poolintarray>`"
 msgstr "21: :ref:`PoolIntArray<class_poolintarray>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:401
-msgid "Array Length (Integers)"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:402
+#, fuzzy
+msgid "Array length (Integers)"
 msgstr "数组长度(整数)"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:403
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:414
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:404
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:415
 msgid "8..8+length\\*4"
 msgstr "8..8+长度\\*4"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:403
-msgid "32 Bits Signed Integer"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:404
+#, fuzzy
+msgid "32-bit signed integer"
 msgstr "32位符号整数"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:407
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:408
 msgid "22: :ref:`PoolRealArray<class_poolrealarray>`"
 msgstr "22: :ref:`PoolRealArray<class_poolrealarray>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:412
-msgid "Array Length (Floats)"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:413
+#, fuzzy
+msgid "Array length (Floats)"
 msgstr "数组长度(浮点数)"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:414
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:415
 #, fuzzy
-msgid "32 Bits IEEE 754 Float"
+msgid "32-bits IEEE 754 float"
 msgstr "IEE 754格式的32位浮点数"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:418
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:419
 msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"
 msgstr "23: :ref:`PoolStringArray<class_poolstringarray>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:423
-msgid "Array Length (Strings)"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:424
+#, fuzzy
+msgid "Array length (Strings)"
 msgstr "数组长度(字符串)"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:426
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:427
 msgid "For each String:"
 msgstr "对于每个字符串:"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:436
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:437
 msgid "Every string is padded to 4 bytes."
 msgstr "每个字符串填充为4个字节。"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:439
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:440
 msgid "24: :ref:`PoolVector2Array<class_poolvector2array>`"
 msgstr "24: :ref:`PoolVector2Array<class_poolvector2array>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:444
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:457
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:472
-msgid "Array Length"
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:445
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:458
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:473
+#, fuzzy
+msgid "Array length"
 msgstr "数组长度"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:446
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:447
 msgid "8..8+length\\*8"
 msgstr "8..8+长度\\*8"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:448
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:449
 msgid "8..12+length\\*8"
 msgstr "8..12+长度\\*8"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:452
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:453
 msgid "25: :ref:`PoolVector3Array<class_poolvector3array>`"
 msgstr "25: :ref:`PoolVector3Array<class_poolvector3array>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:459
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:460
 msgid "8..8+length\\*12"
 msgstr "8..8+长度\\*12"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:461
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:462
 msgid "8..12+length\\*12"
 msgstr "8..12+长度\\*12"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:463
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:464
 msgid "8..16+length\\*12"
 msgstr "8..16+长度\\*12"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:467
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:468
 msgid "26: :ref:`PoolColorArray<class_poolcolorarray>`"
 msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:474
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 msgid "8..8+length\\*16"
 msgstr "8..8+长度\\*16"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:476
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "8..12+length\\*16"
 msgstr "8..12+长度\\*16"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:478
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:479
 msgid "8..16+length\\*16"
 msgstr "8..16+长度\\*16"
 
-#: ../../docs/tutorials/misc/binary_serialization_api.rst:480
+#: ../../docs/tutorials/misc/binary_serialization_api.rst:481
 msgid "8..20+length\\*16"
 msgstr "8..20+长度\\*16"

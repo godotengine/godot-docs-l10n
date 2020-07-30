@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,13 +76,12 @@ msgid "SCons as a build tool,"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:35
-#, fuzzy
 msgid ""
 "a copy of the `godot-cpp repository <https://github.com/GodotNativeTools/"
 "godot-cpp>`__."
 msgstr ""
 "una copia del `repositorio godot-cpp <https://github.com/GodotNativeTools/"
-"godot-cpp>`_."
+"godot-cpp>`__."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:38
 msgid ""
@@ -648,6 +647,10 @@ msgid ""
 "``emit_signal``. In NativeScript 1.0 We first build an array of values and "
 "then call ``emit_signal``."
 msgstr ""
+"Después de un segundo emitimos nuestra señal y reiniciamos nuestro contador. "
+"De nuevo en la nueva versión de godot-cpp podemos añadir los valores de "
+"nuestros parámetros directamente a ``emit_signal``. En NativeScript 1.0 "
+"primero construimos un array de valores y luego llamamos a ``emit_signal``."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:822
 msgid ""

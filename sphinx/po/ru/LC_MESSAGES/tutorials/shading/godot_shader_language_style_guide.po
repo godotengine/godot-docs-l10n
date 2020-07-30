@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,13 +87,12 @@ msgid "Encoding and special characters"
 msgstr "Обработка уведомления"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:55
-#, fuzzy
 msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
 msgstr ""
 "Для перевода строки используйте символы перевода строки (**LF**), а не CRLF "
-"или CR."
+"или CR. *(редактор по умолчанию)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:56
 msgid "Use one line feed character at the end of each file. *(editor default)*"
@@ -101,20 +100,19 @@ msgstr ""
 "Используйте символ перевода строки в конце каждого файла. *(editor default)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:57
-#, fuzzy
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
 "Используйте кодировку **UTF-8** без `маркера последовательности байтов "
-"<https://ru.wikipedia.org/wiki/Маркер_последовательности_байтов>`_."
+"<https://ru.wikipedia.org/wiki/Маркер_последовательности_байтов>`_. "
+"*(редактор по умолчанию)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:58
-#, fuzzy
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
 "Используйте **4 пробела** вместо табов для отступа (которые называются "
-"«мягкими табами»)."
+"«мягкими табами»). *(редактор по умолчанию)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:61
 msgid "Indentation"
@@ -163,7 +161,6 @@ msgid "Line breaks and blank lines"
 msgstr "Разрывы строки и пустые строки"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:104
-#, fuzzy
 msgid ""
 "For a general indentation rule, follow `the \"1TBS Style\" <https://en."
 "wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)>`_ which "
@@ -172,10 +169,13 @@ msgid ""
 "This makes them easier to refactor and avoids mistakes when adding more "
 "lines to an ``if`` statement or similar."
 msgstr ""
-"Для общего правила отступа следуйте `\" стилю Олмана \" <https://ru."
-"wikipedia.org/wiki/Отступ_(программирование)#Стиль_Олмана>`_, который "
-"рекомендует размещать фигурную скобку, связанную с оператором управления, на "
-"следующей строке, с отступом к тому же уровню:"
+"Для общего правила отступа следуйте стилю ` \"1TBS Style\" <https://en."
+"wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)>`_ который "
+"рекомендует поместить скобку, связанную с управляющим оператором, в ту же "
+"строку. Всегда используйте фигурные скобки для операторов, даже если они "
+"охватывают только одну строку. Это облегчает их рефакторинг и позволяет "
+"избежать ошибок при добавлении большего количества строк в оператор ``if`` "
+"или аналогичный ему."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:132
 msgid "Blank lines"
@@ -184,7 +184,7 @@ msgstr "Пустые строки"
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:134
 #, fuzzy
 msgid "Surround function definitions with one (and only one) blank line:"
-msgstr "Добавляйте пустые строки до и после объявления функций и классов."
+msgstr "Окружите определения функций одной (и только одной) пустой строкой:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:146
 #, fuzzy
@@ -196,9 +196,8 @@ msgstr ""
 "частей друг от друга."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:149
-#, fuzzy
 msgid "Line length"
-msgstr "Длительность анимации"
+msgstr "Длина строки"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:151
 msgid "Keep individual lines of code under 100 characters."
@@ -216,9 +215,8 @@ msgstr ""
 "бок в стороннем текстовом редакторе. Например, чтобы посмотреть на различия."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:158
-#, fuzzy
 msgid "One statement per line"
-msgstr "Одно выражение - одна строка"
+msgstr "Одно выражение на строку"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:160
 msgid "Never combine multiple statements on a single line."
@@ -229,19 +227,17 @@ msgid "The only exception to that rule is the ternary operator:"
 msgstr "Единственным исключением из этого правила является тернарный оператор:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:189
-#, fuzzy
 msgid "Comment spacing"
-msgstr "Комментарии"
+msgstr "Интервал в комментариях"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:191
-#, fuzzy
 msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
 msgstr ""
-"Обычные комментарии должны начинаться с пробела, в отличие от комментариев в "
-"отключенном коде. Это позволяет отличать текстовые комментарии от "
-"отключенного кода."
+"Обычные комментарии должны начинаться с пробела, но не с кода, который вы "
+"комментируете. Это помогает отличить текстовые комментарии от отключенного "
+"кода."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:208
 msgid ""
@@ -302,48 +298,42 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:293
-#, fuzzy
 msgid "Naming conventions"
-msgstr "Соглашения в именовании"
+msgstr "Соглашения об именовании"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:295
-#, fuzzy
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, leading to "
 "inconsistent code."
 msgstr ""
-"Эти соглашения об именах следуют стилю Godot Engine. Нарушение данных правил "
-"приведет к конфликту вашего кода со встроенными соглашениями об именах, что "
-"является ужасным."
+"Эти соглашения об именовании следуют стилю Godot Engine. Нарушение этих "
+"правил приведет к конфликту вашего кода со встроенными соглашениями об "
+"именовании, что приведет к противоречивому коду."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:300
-#, fuzzy
 msgid "Functions and variables"
-msgstr "Функции и Переменные"
+msgstr "Функции и переменные"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:302
-#, fuzzy
 msgid "Use snake\\_case to name functions and variables:"
-msgstr "Функции и Переменные"
+msgstr "Используйте snake\\_case для именования функций и переменных:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:311
 msgid "Constants"
 msgstr "Константы"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:313
-#, fuzzy
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
 msgstr ""
-"Используйте CONSTANT\\_CASE, все большими буквами, с нижним подчеркиванием "
-"(\\_) в качестве разделителя слов: ``const MAX_SPEED = 200``"
+"Пишите константы с CONSTANT\\_CASE, все большими буквами, с нижним "
+"подчеркиванием (\\_) в качестве разделителя слов:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:321
-#, fuzzy
 msgid "Code order"
-msgstr "Последовательность в древе"
+msgstr "Порядок кода"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:323
 #, fuzzy
@@ -379,9 +369,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
-#, fuzzy
 msgid "Local variables"
-msgstr "Локальные Переменные"
+msgstr "Локальные переменные"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:353
 msgid ""
@@ -389,3 +378,6 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Объявляйте локальные переменные как можно ближе к их первому использованию. "
+"Это облегчает отслеживание кода, не требуя слишком большой прокрутки, чтобы "
+"найти, где была объявлена переменная."

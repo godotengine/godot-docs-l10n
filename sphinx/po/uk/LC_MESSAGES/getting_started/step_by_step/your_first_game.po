@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -607,8 +607,8 @@ msgid ""
 "When you're sure the movement is working correctly, add this line to "
 "``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
-"Коли ви впевнені, що рух працює правильно, додайте цей рядок до `` _ready () "
-"``, щоб гравець був прихований, коли гра починається:"
+"Коли ви впевнені, що рух працює правильно, додайте цей рядок до ``_ready "
+"()``, щоб гравець був прихований, коли гра починається:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:446
 msgid "Preparing for collisions"
@@ -625,7 +625,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:452
 msgid "Add the following at the top of the script, after ``extends Area2D``:"
-msgstr "Додайте наступне у верхній частині скрипту після ``extends Area2d``:"
+msgstr "Додайте наступний код в початок скрипта, після ``extends Area2d``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:466
 msgid ""
@@ -641,7 +641,6 @@ msgstr ""
 "побачити список сигналів, які гравець може випромінювати:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:473
-#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered(body: Node)`` "
@@ -650,20 +649,21 @@ msgid ""
 "change any of these settings so click \"Connect\" again. Godot will "
 "automatically create a function in your player's script."
 msgstr ""
-"Зверніть увагу, що там тепер є і наш власний \"ударний\" сигнал \"hit\"! "
-"Оскільки наші вороги будуть вузлами ``RigidBody2D`` (тверде тіло 2D), нам "
-"потрібен сигнал ``body_entered``( тіло об'єкта ); він буде випромінюватися, "
-"коли тіло буде стикатися з гравцем. Клацніть \"Приєднати ...\", а потім "
-"знову \"З'єднати\" у вікні \"Приєднання сигналу\". Нам не потрібно змінювати "
-"жодне з налаштувань - Godot автоматично створить функцію в скрипті вашого "
-"гравця. Ця функція буде викликатися, коли буде випромінюватися сигнал - вона "
-"обробляє сигнал."
+"Зверніть увагу, що наш користувацький сигнал \"hit\" там також присутнiй! "
+"Оскільки наші противники будуть вузлами `` RigidBody2D``, нам потрібен "
+"сигнал ``body_entered(body: Node)``. Цей сигнал буде викликатися, коли тіло "
+"(body) контактує з гравцем. Натисніть \"Підключити..\" i з'явится вікно "
+"\"Підключити сигнал\". Нам не потрібно змінювати будь-які з цих налаштувань, "
+"тож знову натиснiть \"Підключити\". Godot автоматично створить функцію у "
+"скрипті вашого гравця."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
 "Note the green icon indicating that a signal is connected to this function. "
 "Add this code to the function:"
 msgstr ""
+"Зверніть увагу на зелений значок, який вказує на те, що сигнал підключений "
+"до цієї функції. Додайте цей код до функції:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:502
 msgid ""

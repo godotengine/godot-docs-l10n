@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,19 +22,20 @@ msgid "Mesh"
 msgstr "Меш"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
-#, fuzzy
 msgid "Modifiers"
-msgstr "Идентификаторы"
+msgstr "Модификаторы"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:6
 msgid ""
 "There is an exporting option :code:`Apply Modifiers` to control whether mesh "
 "modifiers are applied to the exported mesh."
 msgstr ""
+"Существует опция экспорта: code: `Apply Modifiers`, чтобы контролировать, "
+"применяются ли модификаторы сетки к экспортируемому мешу."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:11
 msgid "Shape Key"
-msgstr ""
+msgstr "Ключ формы"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:12
 msgid ""
@@ -42,6 +43,9 @@ msgid ""
 "almost like exporting the mesh again, so don't be surprised it takes a "
 "relatively long time."
 msgstr ""
+"Экспорт ключевых сетки формы поддерживается, однако экспорт каждой ключевой "
+"формы-это почти как еще раз экспортировать сетку, так что не удивляйтесь, "
+"если это займет довольно много времени."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:17
 msgid ""
@@ -52,3 +56,10 @@ msgid ""
 "github.com/godotengine/godot-blender-exporter/issues>`__, which helps to "
 "develop the exporter to have a more precise check of modifiers."
 msgstr ""
+"Большинство модификаторов не совместимы с ключами формы (например, "
+"подповерхностный модификатор - subsurface modifier), поэтому, если вы "
+"обнаружили, что экспортируются ключи неправильной формы, попробуйте "
+"отключить :code:`Apply Modifiers` и повторите экспорт. Кроме того, стоит "
+"сообщить о несовместимом модификаторе в `issue list <https://github.com/"
+"godotengine/godot-blender-exporter/issues>`__, что поможет улучшить "
+"экспортер для более точной проверки модификаторов."

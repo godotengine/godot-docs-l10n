@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -262,7 +262,6 @@ msgstr ""
 "arquitectura es de 64 o 32 bits."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
-#, fuzzy
 msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
 "``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
@@ -270,12 +269,12 @@ msgid ""
 "``get_name()`` method of the :ref:``OS <class_OS>`` singleton, but not every "
 "possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
-"Uno de \"GGODOT_X11\", \"GGODOT_WINDOWS\", \"GGODOT_OSX\", \"GGODOT_ANDROID"
-"\", \"GGODOT_HTML5\", o \"GGODOT_SERVER\", dependiendo del sistema "
+"Uno de ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
+"``GODOT_IOS``, ``GODOT_HTML5``, o ``GODOT_SERVER``, dependiendo del sistema "
 "operativo. Estos nombres pueden cambiar en el futuro. Se crean desde el "
 "método ``get_name()`` del singleton :ref:``OS <class_OS>``, pero no todos "
 "los sistemas operativos posibles que el método devuelve son sistemas "
-"operativos en los que Godot con Mono funciona."
+"operativos en los que funciona Godot con Mono."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
 msgid ""
@@ -302,22 +301,20 @@ msgstr ""
 "dependiendo de la arquitectura."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
-#, fuzzy
 msgid ""
 "One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
 "architecture."
 msgstr ""
-"Uno de ``GODOT_ARM64_V8A`` o ``GODOT_ARMEABI_V7A`` en Android sólo "
-"dependiendo de la arquitectura."
+"Uno de ``GODOT_ARM64`` o ``GODOT_ARMV7`` en iOS sólo dependiendo de la "
+"arquitectura."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
-#, fuzzy
 msgid ""
 "Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
-"Uno de ``GODOT_S3TC``, ``GODOT_ETC``, o ``GODOT_ETC2`` dependiendo del tipo "
-"de compresión de la textura."
+"Cualquiera de ``GODOT_S3TC``, ``GODOT_ETC`` y ``GODOT_ETC2`` dependiendo del "
+"tipo de compresión de textura."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
 msgid ""
@@ -328,11 +325,9 @@ msgstr ""
 "escribirá en mayúsculas y con el prefijo: ``foo`` -> ``GODOT_FOO``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
-#, fuzzy
 msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
-"Para aclarar, aquí hay un ejemplo de cómo se ve esto en el `bomber demo "
-"<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
-"multiplayer_bomber>`_:"
+"Para ver un proyecto de ejemplo, revisa la demo de pruebas de SO: https://"
+"github.com/godotengine/godot-demo-projects/tree/master/misc/os_test"

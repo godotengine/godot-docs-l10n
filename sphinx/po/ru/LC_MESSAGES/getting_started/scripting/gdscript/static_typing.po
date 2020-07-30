@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:4
-#, fuzzy
 msgid "Static typing in GDScript"
-msgstr "Использование в GDScript"
+msgstr "Статическая типизация в GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:6
 msgid "In this guide, you will learn:"
@@ -61,18 +60,17 @@ msgid "A brief look at static typing"
 msgstr "Краткий обзор статической типизации"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
-#, fuzzy
 msgid ""
 "With typed GDScript, Godot can detect even more errors as you write code! It "
 "gives you and your teammates more information as you're working, as the "
 "arguments' types show up when you call a method."
 msgstr ""
-"С типизированным GDScript, Godot может обнаружить еще больше ошибок при "
-"написании кода! Это дает вам и вашей команде больше информации во время "
-"работы, поскольку типы аргументов отображаются при вызове метода."
+"С помощью типизированного GDScript Godot может обнаружить еще больше ошибок "
+"при написании кода! Это дает вам и вашим товарищам по команде больше "
+"информации по мере работы, поскольку типы аргументов появляются при вызове "
+"метода."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
-#, fuzzy
 msgid ""
 "Imagine you're programming an inventory system. You code an ``Item`` node, "
 "then an ``Inventory``. To add items to the inventory, the people who work "
@@ -82,8 +80,8 @@ msgstr ""
 "Представьте, что вы программируете систему инвентаризации. Вы "
 "запрограммировали узел ``Item``, а затем ``Inventory``. Чтобы добавить "
 "предметы в инвентарь, люди, работающие с вашим кодом, должны всегда "
-"передавать ``Item`` методу ``Inventory.add``. Используя типы вы можете "
-"обеспечить это:"
+"передавать ``Item`` методу ``Inventory.add``. С помощью типов вы можете "
+"осуществить это:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:49
 msgid ""
@@ -101,33 +99,30 @@ msgstr ""
 "Подробнее об этом через минуту."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:55
-#, fuzzy
 msgid ""
 "Static types also give you better code completion options. Below, you can "
 "see the difference between a dynamic and a static typed completion options "
 "for a class called ``PlayerController``."
 msgstr ""
 "Статические типы также дают вам лучшие варианты завершения кода. Ниже вы "
-"можете увидеть разницу между динамической и статической типизацией вариантов "
-"завершения для класса под названием ``PlayerController``."
+"можете увидеть разницу между динамическими и статическими типизированными "
+"вариантами завершения для класса под названием ``PlayerController``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:59
-#, fuzzy
 msgid ""
 "You've probably stored a node in a variable before, and typed a dot to be "
 "left with no autocomplete suggestions:"
 msgstr ""
-"Возможно, вы ранее хранили узел в переменной и набирали точку, и оставались "
-"без предложений авто-завершения:"
+"Возможно, вы ранее хранили узел в переменной и набирали точку, но оставались "
+"без предложений автозавершения:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:65
-#, fuzzy
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
 "you're passing to the function. If you write the type explicitly however, "
 "you will get all public methods and variables from the node:"
 msgstr ""
-"Это обусловлено динамическим кодом. Godot не может знать, какой тип узла или "
+"Это связано с динамическим кодом. Godot не может знать, какой тип узла или "
 "значения вы передаете в функцию. Однако, если вы опишите тип явно, вы "
 "получите все публичные методы и переменные из узла:"
 
@@ -140,7 +135,6 @@ msgstr ""
 "компиляция Just-In-Time и другие улучшения компилятора уже в планах!"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:76
-#, fuzzy
 msgid ""
 "Overall, typed programming gives you a more structured experience. It helps "
 "prevent errors and improves the self-documenting aspect of your scripts. "
@@ -151,27 +145,26 @@ msgid ""
 "the faster you can move forward."
 msgstr ""
 "В целом, типизированное программирование дает вам более структурированный "
-"опыт. Это помогает предотвратить ошибки и улучшает само-документируемый "
-"аспект ваших скриптов. Это особенно полезно, когда вы работаете в команде "
-"или над долгосрочным проектом: исследования показали, что разработчики "
-"проводят большую часть своего времени за чтением чужого кода или скриптов, "
-"которые они написали в прошлом и о которых забыли. Чем яснее и "
-"структурированнее код, тем быстрее его понять, тем быстрее вы сможете "
-"двигаться вперед."
+"опыт. Это помогает предотвратить ошибки и улучшает аспект "
+"самодокументирования ваших скриптов. Это особенно полезно, когда вы "
+"работаете в команде или над долгосрочным проектом: исследования показали, "
+"что разработчики проводят большую часть своего времени за чтением чужого "
+"кода или скриптов, которые они написали в прошлом и о которых забыли. Чем "
+"яснее и структурированнее код, тем быстрее его понять, тем быстрее вы "
+"сможете двигаться вперед."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:85
 msgid "How to use static typing"
 msgstr "Как использовать статическую типизацию"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:87
-#, fuzzy
 msgid ""
 "To define the type of a variable or a constant, write a colon after the "
 "variable's name, followed by its type. E.g. ``var health: int``. This forces "
 "the variable's type to always stay the same:"
 msgstr ""
-"Чтобы определить тип переменной или константы, запишите двоеточие после "
-"имени переменной, а затем ее тип. Например ``var health: int``. Это "
+"Чтобы определить тип переменной или константы, напишите двоеточие после "
+"имени переменной, а затем ее тип. Например, ``var health: int``. Это "
 "заставляет тип переменной всегда оставаться неизменным:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:96
@@ -290,7 +283,6 @@ msgstr ""
 "придерживаться типа ``PlayerController``:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:172
-#, fuzzy
 msgid ""
 "As we're dealing with a custom type, if the ``body`` doesn't extend "
 "``PlayerController``, the ``player``\\ variable will be set to ``null``. We "
@@ -298,9 +290,9 @@ msgid ""
 "full autocompletion on the player variable thanks to that cast."
 msgstr ""
 "Так как мы имеем дело с пользовательским типом, если ``body`` не расширяет "
-"``PlayerController``, значение переменной ``player`` будет установлено "
+"``PlayerController``, значение переменной ``player`` будет установлено на "
 "``null``. Мы можем использовать это, чтобы проверить, является ли тело "
-"Player-ом или нет. Мы также получим полное авто-заполнение переменной Player-"
+"Player-ом или нет. Мы также получим полное автозаполнение переменной Player-"
 "а благодаря этому исполнению."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:179
@@ -363,7 +355,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:206
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
-msgstr ""
+msgstr "Небезопасная строка (строка 7) против Безопасных Строк (строки 6 и 8)"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:210
 msgid ""

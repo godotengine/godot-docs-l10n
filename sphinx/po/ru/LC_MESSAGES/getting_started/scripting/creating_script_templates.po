@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:4
-#, fuzzy
 msgid "Creating script templates"
-msgstr "Создание скрипта"
+msgstr "Создание сценарных шаблонов"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:6
 msgid ""
 "Godot provides a way to use script templates as seen in the ``Script Create "
 "Dialog`` while creating a new script:"
 msgstr ""
+"Godot предоставляет способ использования сценарных шаблонов, как показано в "
+"``Script Create Dialog``, при создании нового скрипта:"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:11
 msgid ""
@@ -34,38 +35,41 @@ msgid ""
 "possible to modify existing and create new ones, both per project and the "
 "editor."
 msgstr ""
+"Набор сценарных шаблонов предоставляется по умолчанию, но также можно "
+"изменять существующие и создавать новые, как для каждого проекта, так и для "
+"редактора."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:15
-#, fuzzy
 msgid "Locating the templates"
-msgstr "Движение Игрока"
+msgstr "Расположение шаблонов"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:17
 msgid "There are two places where templates can be managed."
-msgstr ""
+msgstr "Есть два места, где можно управлять шаблонами."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:20
-#, fuzzy
 msgid "Editor-defined templates"
-msgstr "Экспорт шаблонов"
+msgstr "Шаблоны, определенные редактором"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:22
 msgid ""
 "These are available globally throughout any project. The location of these "
 "templates are determined per each OS:"
 msgstr ""
+"Они доступны глобально в рамках любого проекта. Расположение этих шаблонов "
+"определяется для каждой ОС:"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:25
 msgid "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
-msgstr ""
+msgstr "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:26
 msgid "Linux: ``$HOME/.local/share/godot/script_templates/``"
-msgstr ""
+msgstr "Linux: ``$HOME/.local/share/godot/script_templates/``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:27
 msgid "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
-msgstr ""
+msgstr "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:29
 msgid ""
@@ -73,11 +77,13 @@ msgid ""
 "built-in templates automatically, so this logic can be used to reset the "
 "default templates in case you've accidentally overwritten them."
 msgstr ""
+"Если ``script_templates`` не обнаружен, Godot автоматически создаст набор "
+"встроенных шаблонов по умолчанию, поэтому эта логика может быть использована "
+"для сброса шаблонов по умолчанию в случае их случайной перезаписи."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:34
-#, fuzzy
 msgid "Project-defined templates"
-msgstr "Файлы проекта"
+msgstr "Шаблоны, определенные проектом"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:36
 msgid ""
@@ -86,16 +92,22 @@ msgid ""
 "script_templates_search_path`` setting in the :ref:`ProjectSettings "
 "<class_ProjectSettings>`, both via code and the editor."
 msgstr ""
+"По умолчанию для поиска шаблонов используется каталог ``res://"
+"script_templates/``. Путь можно изменить, настроив параметр ``editor/"
+"script_templates_search_path`` в :ref:`ProjectSettings "
+"<class_ProjectSettings>`, как с помощью кода, так и с помощью редактора."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:41
 msgid ""
 "If no ``script_templates`` directory is found within a project, it is simply "
 "ignored."
 msgstr ""
+"Если в проекте не найден каталог ``script_templates``, он просто "
+"игнорируется."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:45
 msgid "Language support and overriding behavior"
-msgstr ""
+msgstr "Языковая поддержка и переопределяющее поведение"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:47
 msgid ""
@@ -104,6 +116,10 @@ msgid ""
 "recognized by that language according to template's file extension. For "
 "GDScript and C#, the extensions must be ``gd`` and ``cs`` respectively."
 msgstr ""
+"В зависимости от того, реализует ли конкретный язык способ генерирования "
+"скриптов из шаблонов, можно создать шаблон, который может быть распознан "
+"этим языком в соответствии с расширением файла шаблона. Для GDScript и C# "
+"расширения должны быть ``gd`` и ``cs`` соответственно."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:52
 msgid ""
@@ -114,17 +130,25 @@ msgid ""
 "won't be visible throughout the project's filesystem anymore, yet the "
 "templates can be modified by an external text editor anytime."
 msgstr ""
+"Шаблоны сценариев имеют то же расширение, что и обычные файлы сценариев. Это "
+"может привести к тому, что синтаксический анализатор скриптов будет "
+"рассматривать эти шаблоны как реальные скрипты внутри проекта. Чтобы "
+"избежать этого, убедитесь, что вы игнорируете каталог, содержащий их, создав "
+"файл ``.gdignore``. Каталог больше не будет виден во всей файловой системе "
+"проекта, но шаблоны могут быть изменены внешним текстовым редактором в любое "
+"время."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:59
 msgid ""
 "The built-in editor templates are automatically shadowed by the project-"
 "specific templates given both scripts have the same filename."
 msgstr ""
+"Встроенные шаблоны редактора автоматически затеняются шаблонами конкретного "
+"проекта, если оба сценария имеют одинаковое имя файла."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:63
-#, fuzzy
 msgid "Default template"
-msgstr "Экспорт шаблонов"
+msgstr "Шаблон по умолчанию"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:65
 msgid ""
@@ -132,26 +156,28 @@ msgid ""
 "cannot be configured nor overridden, but you can use these as the base for "
 "creating other templates."
 msgstr ""
+"Шаблон ``Default`` всегда генерируется динамически для каждого языка и не "
+"может быть настроен или переопределен, но вы можете использовать его в "
+"качестве основы для создания других шаблонов."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:116
-#, fuzzy
 msgid "List of template placeholders"
-msgstr "Несколько заполнителей"
+msgstr "Список заполнителей шаблонов"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:118
 msgid ""
 "The following describes the complete list of built-in template placeholders "
 "which are currently implemented."
 msgstr ""
+"Ниже приведен полный список встроенных заполнителей шаблонов, которые в "
+"настоящее время реализованы."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:122
-#, fuzzy
 msgid "Base placeholders"
-msgstr "Несколько заполнителей"
+msgstr "Базовые заполнители"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:125
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
-#, fuzzy
 msgid "Placeholder"
 msgstr "Заполнитель"
 
@@ -161,23 +187,23 @@ msgstr "Описание"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:127
 msgid "``%CLASS%``"
-msgstr ""
+msgstr "``%CLASS%``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:127
 msgid "The name of the new class (used in C# only)."
-msgstr ""
+msgstr "Имя нового класса (используется только в C#)."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:129
 msgid "``%BASE%``"
-msgstr ""
+msgstr "``%BASE%``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:129
 msgid "The base type a new script inherits from."
-msgstr ""
+msgstr "Базовый тип, от которого наследуется новый сценарий."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:131
 msgid "``%TS%``"
-msgstr ""
+msgstr "``%TS%``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:131
 msgid ""
@@ -186,11 +212,14 @@ msgid ""
 "``text_editor/indent/size`` settings in the :ref:`EditorSettings "
 "<class_EditorSettings>` respectively."
 msgstr ""
+"Заполнитель вдавливания. Точный тип и количество пробелов, используемых для "
+"отступа, определяются настройками ``text_editor/indent/type`` и "
+"``text_editor/indent/size`` в файле :ref:`EditorSettings "
+"<class_EditorSettings>` соответственно."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:139
-#, fuzzy
 msgid "Type placeholders"
-msgstr "Несколько заполнителей"
+msgstr "Типы заполнителей"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:141
 msgid ""
@@ -199,43 +228,43 @@ msgid ""
 "completion/add_type_hints`` setting in the :ref:`EditorSettings "
 "<class_EditorSettings>`."
 msgstr ""
+"Они актуальны только для GDScript со статической типизацией. Будут ли эти "
+"заполнители фактически заменены, определяется параметром ``text_editor/"
+"completion/add_type_hints`` в файле :ref:`EditorSettings "
+"<class_EditorSettings>`."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
 msgid "Value"
 msgstr "Значение"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:149
-#, fuzzy
 msgid "``%INT_TYPE%``"
-msgstr "``TYPE_*``"
+msgstr "``%INT_TYPE%``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:149
 msgid "``: int``"
-msgstr ""
+msgstr "``: int``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:151
 msgid "``%STRING_TYPE%``"
-msgstr ""
+msgstr "``%STRING_TYPE%``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:151
-#, fuzzy
 msgid "``: String``"
-msgstr "Строки"
+msgstr "``: String``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:153
-#, fuzzy
 msgid "``%FLOAT_TYPE%``"
-msgstr "``TYPE_*``"
+msgstr "``%FLOAT_TYPE%``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:153
-#, fuzzy
 msgid "``: float``"
-msgstr "float"
+msgstr "``: float``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:155
 msgid "``%VOID_RETURN%``"
-msgstr ""
+msgstr "``%VOID_RETURN%``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:155
 msgid "``-> void``"
-msgstr ""
+msgstr "``-> void``"

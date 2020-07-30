@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,12 @@ msgid ""
 "3.2) will most likely introduce breaking changes. Still, there won't be as "
 "many breaking changes as a \"semver-major\" version bump such as 3.2 -> 4.0."
 msgstr ""
+"Godot nutzt ``major.minor.patch`` Versions-Nummerierungen. Wie auch immer, "
+"es folgt nicht strikt `Semantic Versioning <https://semver.org/>`__. Das "
+"bedeutet, dass Versionen, die nach diesem Standard als \"semver-minor\" "
+"betrachtet werden (z.B. 3.1 -> 3.2) vermutlich größere Änderungen einführen. "
+"Dennoch werden es nicht so viele Änderungen sein wie in einem \"semver-major"
+"\" Versionssprung (z.B. 3.2 -> 4.0)."
 
 #: ../../docs/about/release_policy.rst:15
 msgid ""
@@ -41,6 +47,10 @@ msgid ""
 "g. in a Flatpak), make sure to always use the same patch version as the one "
 "used to initially export the project."
 msgstr ""
+"Im Interesse der Stabilität und Benutzbarkeit fügen Patches gelegentlich "
+"neue Features hinzu. Beim Neuverpacken von Godot-Projekten (z.B. Flatpak) "
+"sollte daher sicher gegangen werden, dass immer die selbe Patch-Version "
+"genutzt wird wie beim ersten Export."
 
 #: ../../docs/about/release_policy.rst:22
 msgid ""
@@ -54,7 +64,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:27
 msgid "Release support timeline"
-msgstr ""
+msgstr "Zeitrahmen der Veröffentlichungsunterstützung"
 
 #: ../../docs/about/release_policy.rst:29
 msgid ""
@@ -67,18 +77,16 @@ msgstr ""
 "Schätzungen für jede Godot-Version:"
 
 #: ../../docs/about/release_policy.rst:34
-#, fuzzy
 msgid "**Version**"
 msgstr "**Version**"
 
 #: ../../docs/about/release_policy.rst:34
-#, fuzzy
 msgid "**Release date**"
-msgstr "**Ergebnis**"
+msgstr "**Erscheinungsdatum**"
 
 #: ../../docs/about/release_policy.rst:34
 msgid "**Support level**"
-msgstr ""
+msgstr "**Unterstützungsniveau**"
 
 #: ../../docs/about/release_policy.rst:36
 msgid "Godot 4.0"
@@ -105,6 +113,9 @@ msgid ""
 "|supported| Backwards-compatible new features (backported from the "
 "``master`` branch) as well as bug, security, and platform support fixes."
 msgstr ""
+"|unterstützt| Rückwärts-kompatible neue Funktionen (rückportiert aus dem "
+"``Master``-Zweig) sowie Fehler-, Sicherheits- und Plattform-Unterstützungs-"
+"Fixes."
 
 #: ../../docs/about/release_policy.rst:41
 msgid "Godot 3.1"
@@ -119,6 +130,8 @@ msgstr "März 2019"
 #: ../../docs/about/release_policy.rst:45
 msgid "|partial| Only critical, security and platform support fixes."
 msgstr ""
+"|teilweise| Nur kritische Fehlerbehebungen, Sicherheits- und Plattform-"
+"Unterstützung."
 
 #: ../../docs/about/release_policy.rst:43
 msgid "Godot 3.0"
@@ -171,12 +184,18 @@ msgid ""
 "**Legend:** |supported| Full support - |partial| Partial support - |eol| No "
 "support (end of life) - |unstable| Development version"
 msgstr ""
+"**Legende:** |unterstützt| Volle Rückwärtskompatibilität - |Partiell| "
+"Partielle Unterstützung - |eol| Keine Unterstützung (veraltet) - |instabil| "
+"Entwicklungsversion"
 
 #: ../../docs/about/release_policy.rst:65
 msgid ""
 "Pre-release Godot versions aren't intended to be used in production and are "
 "provided on a best-effort basis."
 msgstr ""
+"Vorabversionen von Godot sind nicht für den Einsatz in der Produktion "
+"vorgesehen und werden auf einer \"Beste Bemühung\"-Basis zur Verfügung "
+"gestellt."
 
 #: ../../docs/about/release_policy.rst:69
 msgid "When is the next release out?"
@@ -200,11 +219,10 @@ msgid ""
 "fix has been merged."
 msgstr ""
 "Patches werden öfters bereitgestellt, für gewöhnlich alle zwei- bis sechs "
-"Monate während eine Version gänzlich unterstützt wird.\n"
-"Nur teilweise unterstützte Erscheinungen werden nur neue Patches erhalten "
-"falls kritische Sicherheitsrisiken \n"
-"vorhanden sind, oder ein plattformübergreifender Unterstützungs-Patch "
-"fusioniert wurde."
+"Monate während eine Version gänzlich unterstützt wird. Nur teilweise "
+"unterstützte Erscheinungen werden nur neue Patches erhalten falls kritische "
+"Sicherheitsrisiken vorhanden sind, oder ein plattformübergreifender "
+"Unterstützungs-Patch fusioniert wurde."
 
 #: ../../docs/about/release_policy.rst:82
 msgid ""
@@ -212,3 +230,6 @@ msgid ""
 "documents features that have been agreed upon and may be implemented in "
 "future Godot releases."
 msgstr ""
+"Diese `roadmap <https://github.com/godotengine/godot-roadmap>`__ Dokumente "
+"zeigen Verbesserungen (Features) auf die man sich geeinigt hat und die "
+"möglicherweise in zukünftigen Godot-Versionen eingebaut werden."

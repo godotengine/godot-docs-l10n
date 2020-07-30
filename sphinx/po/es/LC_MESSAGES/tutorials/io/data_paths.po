@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:4
 msgid "Data paths"
-msgstr ""
+msgstr "Rutas de datos"
 
 #: ../../docs/tutorials/io/data_paths.rst:7
 msgid "Path separators"
-msgstr ""
+msgstr "Separadores de rutas"
 
 #: ../../docs/tutorials/io/data_paths.rst:9
 msgid ""
@@ -31,10 +31,13 @@ msgid ""
 "UNIX-style path separators (``/``). These work on all platforms, including "
 "Windows."
 msgstr ""
+"Con el fin de apoyar tantas plataformas como sea posible, Godot sólo acepta "
+"separadores de ruta de estilo UNIX (``/``). Estos funcionan en todas las "
+"plataformas, incluyendo Windows."
 
 #: ../../docs/tutorials/io/data_paths.rst:13
 msgid "A path like ``C:\\Projects`` will become ``C:/Projects``."
-msgstr ""
+msgstr "Una ruta como ``C:\\Projects`` se convertirá en ``C:/Projects``."
 
 #: ../../docs/tutorials/io/data_paths.rst:16
 msgid "Resource path"
@@ -46,6 +49,9 @@ msgid ""
 "project exists in any given folder that contains a ``project.godot`` text "
 "file, even if such file is empty."
 msgstr ""
+"Como se menciona en :ref:`doc_command_line_tutorial`, Godot considera que un "
+"proyecto existe en cualquier carpeta que contenga un archivo de texto "
+"``project.godot``, incluso si dicho archivo está vacío."
 
 #: ../../docs/tutorials/io/data_paths.rst:22
 msgid ""
@@ -53,10 +59,14 @@ msgid ""
 "base. For example, a texture located in the root of the project folder may "
 "be opened from the following path: ``res://some_texture.png``."
 msgstr ""
+"El acceso a los archivos del proyecto se puede hacer abriendo cualquier ruta "
+"con ``res://`` como base. Por ejemplo, una textura ubicada en la raíz de la "
+"carpeta del proyecto puede abrirse desde la siguiente ruta: ``res://"
+"some_texture.png``."
 
 #: ../../docs/tutorials/io/data_paths.rst:27
 msgid "User path (persistent data)"
-msgstr ""
+msgstr "Ruta de usuario (datos persistentes)"
 
 #: ../../docs/tutorials/io/data_paths.rst:29
 msgid ""
@@ -64,12 +74,17 @@ msgid ""
 "will be read-only, due to it being inside a package, self-contained "
 "executable, or system-wide install location."
 msgstr ""
+"Mientras el proyecto esté en marcha, es un escenario común que la ruta de "
+"recursos sea de sólo lectura, debido a que está dentro de un paquete, un "
+"ejecutable autónomo o una ubicación de instalación en todo el sistema."
 
 #: ../../docs/tutorials/io/data_paths.rst:33
 msgid ""
 "Storing persistent files in such scenarios should be done by using the "
 "``user://`` prefix, for example: ``user://game_save.txt``."
 msgstr ""
+"El almacenamiento de archivos persistentes en tales escenarios debe hacerse "
+"usando el prefijo ``user://``, por ejemplo: ``user://game_save.txt``."
 
 #: ../../docs/tutorials/io/data_paths.rst:36
 msgid ""
@@ -80,6 +95,12 @@ msgid ""
 "the Project Settings, but it can be overridden on a per-platform basis "
 "using :ref:`feature tags <doc_feature_tags>`."
 msgstr ""
+"En algunos dispositivos (por ejemplo, móviles y consolas), esta ruta es "
+"única para el proyecto. En los sistemas operativos de escritorio, el motor "
+"utiliza el típico ``~/.local/share/godot/app_userdata/Name`` en macOS y "
+"Linux, y ``%APPDATA%/Name`` en Windows. El nombre se toma del nombre de la "
+"aplicación definido en la configuración del proyecto, pero puede ser "
+"sobrescrito en cada plataforma usando :ref:`feature tags <doc_feature_tags>`."
 
 #: ../../docs/tutorials/io/data_paths.rst:45
 msgid "Editor data paths"
@@ -90,6 +111,9 @@ msgid ""
 "The editor uses different paths for user data, user settings and cache "
 "depending on the platform. By default, these paths are:"
 msgstr ""
+"El editor utiliza diferentes rutas para los datos del usuario, la "
+"configuración del usuario y la caché dependiendo de la plataforma. Por "
+"defecto, estas rutas son:"
 
 #: ../../docs/tutorials/io/data_paths.rst:51
 msgid "Type"
@@ -106,16 +130,16 @@ msgstr "Datos de usuario"
 #: ../../docs/tutorials/io/data_paths.rst:53
 #: ../../docs/tutorials/io/data_paths.rst:57
 msgid "Windows: ``%APPDATA%\\Godot\\``"
-msgstr ""
+msgstr "Windows: ``%APPDATA%\\Godot\\``"
 
 #: ../../docs/tutorials/io/data_paths.rst:54
 #: ../../docs/tutorials/io/data_paths.rst:58
 msgid "macOS: ``~/Library/Application Support/Godot/``"
-msgstr ""
+msgstr "macOS: ``~/Library/Application Support/Godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:55
 msgid "Linux: ``~/.local/share/godot/``"
-msgstr ""
+msgstr "Linux: ``~/.local/share/godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:57
 msgid "User settings"
@@ -123,39 +147,45 @@ msgstr "Ajustes de usuario"
 
 #: ../../docs/tutorials/io/data_paths.rst:59
 msgid "Linux: ``~/.config/godot/``"
-msgstr ""
+msgstr "Linux: ``~/.config/godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:61
 msgid "Cache"
-msgstr ""
+msgstr "Cache"
 
 #: ../../docs/tutorials/io/data_paths.rst:61
 msgid "Windows: ``%TEMP%\\Godot\\``"
-msgstr ""
+msgstr "Windows: ``%TEMP%\\Godot\\``"
 
 #: ../../docs/tutorials/io/data_paths.rst:62
 msgid "macOS: ``~/Library/Caches/Godot/``"
-msgstr ""
+msgstr "macOS: ``~/Library/Caches/Godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:63
 msgid "Linux: ``~/.cache/godot/``"
-msgstr ""
+msgstr "Linux: ``~/.cache/godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:66
 msgid "**User data** contains export templates and project-specific data."
 msgstr ""
+"**Los datos de usuario** contienen plantillas de exportación y datos "
+"específicos del proyecto."
 
 #: ../../docs/tutorials/io/data_paths.rst:67
 msgid ""
 "**User settings** contains editor settings, text editor themes, script "
 "templates, etc."
 msgstr ""
+"**Los ajustes del usuario** contienen ajustes del editor, temas del editor "
+"de texto, plantillas de script, etc."
 
 #: ../../docs/tutorials/io/data_paths.rst:69
 msgid ""
 "**Cache** contains temporary data. It can safely be removed when Godot is "
 "closed."
 msgstr ""
+"**La cache** contiene datos temporales. Pueden ser eliminados con seguridad "
+"cuando Godot se cierre."
 
 #: ../../docs/tutorials/io/data_paths.rst:72
 msgid ""
@@ -164,6 +194,10 @@ msgid ""
 "all platforms. Environment variables can be overridden as per the "
 "specification to change the editor (and project) data paths."
 msgstr ""
+"Godot cumple con la `XDG Base Directory Specification <https://"
+"specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>` en "
+"todas las plataformas. Las variables de entorno pueden ser anuladas según la "
+"especificación para cambiar las rutas de datos del editor (y del proyecto)."
 
 #: ../../docs/tutorials/io/data_paths.rst:77
 msgid ""
@@ -171,10 +205,13 @@ msgid ""
 "org.godotengine.Godot>`__, the editor data paths will be located in "
 "subfolders in ``~/.var/app/org.godotengine.Godot/``."
 msgstr ""
+"Si usas `Godot empaquetado como un Flatpak <https://flathub.org/apps/details/"
+"org.godotengine.Godot>`__, las rutas de datos del editor se ubicarán en "
+"subcarpetas como ``~/.var/app/org.godotengine.Godot/``."
 
 #: ../../docs/tutorials/io/data_paths.rst:85
 msgid "Self-contained mode"
-msgstr ""
+msgstr "Modo autónomo"
 
 #: ../../docs/tutorials/io/data_paths.rst:87
 msgid ""
@@ -184,9 +221,17 @@ msgid ""
 "directory as the editor binary. This is useful to create a \"portable\" "
 "installation, which can then be placed on an USB drive."
 msgstr ""
+"Si creas un archivo llamado ``._sc_`` o ``_sc_`` en el mismo directorio que "
+"el binario del editor, Godot habilitará el *modo autónomo* (self-contained "
+"mode). Esto hará que Godot escriba todos los datos del usuario en un "
+"directorio llamado ``editor_data/`` en el mismo directorio que el binario "
+"del editor. Esto es útil para crear una instalación \"portable\", que luego "
+"puede ser colocada en una unidad USB."
 
 #: ../../docs/tutorials/io/data_paths.rst:93
 msgid ""
 "The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "
 "uses self-contained mode by default."
 msgstr ""
+"El `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "
+"utiliza el modo autónomo por defecto."

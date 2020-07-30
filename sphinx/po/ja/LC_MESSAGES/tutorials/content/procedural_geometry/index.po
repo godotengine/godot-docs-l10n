@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:2
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:4
 msgid "Procedural geometry"
 msgstr "手続き型ジオメトリ(幾何)"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:4
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:6
 msgid ""
 "There are many ways to procedurally generate geometry in Godot. In this "
 "tutorial series we will explore a few of them. Each technique has its own "
@@ -33,11 +33,11 @@ msgstr ""
 "ため、それぞれを理解し、特定の状況でどのように役立つかを理解することが最善で"
 "す。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:18
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:20
 msgid "What is geometry?"
 msgstr "ジオメトリとは何ですか？"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:20
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:22
 msgid ""
 "Geometry is a fancy way of saying shape. In computer graphics, geometry is "
 "typically represented by an array of positions called \"vertices\". In "
@@ -47,11 +47,11 @@ msgstr ""
 "では、ジオメトリは通常「頂点」と呼ばれる位置の配列で表されます。 Godotでは、"
 "ジオメトリはメッシュで表されます。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:24
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:26
 msgid "What is a Mesh?"
 msgstr "メッシュとは何ですか?"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:26
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:28
 msgid ""
 "Many things in Godot have mesh in their name: the :ref:`Mesh <class_Mesh>`, "
 "the :ref:`ArrayMesh <class_ArrayMesh>`, the :ref:`MeshInstance "
@@ -65,7 +65,7 @@ msgstr ""
 "\\ :ref:` MultiMeshInstance <class_MultiMeshInstance> `\\ 。それらはすべて関"
 "連がありますが、用途が少し異なります。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:30
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:32
 msgid ""
 "Meshes and ArrayMeshes are resources that are drawn using a MeshInstance "
 "node. Resources like Meshes and ArrayMeshes cannot be added to the scene "
@@ -80,7 +80,7 @@ msgstr ""
 "シュを複数のMeshInstanceで再利用して、異なるマテリアルまたは変換(スケール、回"
 "転、位置など)を使用してシーンの異なる部分に描画することができます。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:36
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:38
 msgid ""
 "If you are going to draw the same object many times, it can be helpful to "
 "use a MultiMesh with a MultiMeshInstance. The MultiMeshInstance draws meshes "
@@ -97,11 +97,11 @@ msgstr ""
 "す。インスタンス配列を使用して、インスタンスごとに異なる色と変換を保存します"
 "が、すべてのインスタンスは同じマテリアルを使用します。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:44
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:46
 msgid "What a Mesh is"
 msgstr "メッシュとは"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:46
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:48
 msgid ""
 "A Mesh is composed of one or more surfaces. A surface is an array composed "
 "of multiple sub-arrays containing vertices, normals, UVs, etc. Normally the "
@@ -116,11 +116,11 @@ msgstr ""
 "されていますが、ArrayMeshではユーザーは、サーフェス情報を含む配列を渡すことに"
 "より、メッシュを手動で構築できます。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:52
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:54
 msgid "Surfaces"
 msgstr "サーフェス"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:54
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:56
 msgid ""
 "Each surface has its own material. Alternatively, you can override the "
 "material for all surfaces in the Mesh when you use a MeshInstance using "
@@ -130,11 +130,11 @@ msgstr ""
 "override_material`` を使用してMeshInstanceを使用するときに、メッシュ内のすべ"
 "てのサーフェスのマテリアルをオーバーライドできます。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:58
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:60
 msgid "Surface array"
 msgstr "サーフェス配列"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:60
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:62
 msgid ""
 "The surface array is an array of length ``ArrayMesh.ARRAY_MAX``. Each "
 "position in the array is filled with a sub-array containing per-vertex "
@@ -146,7 +146,7 @@ msgstr ""
 "ARRAY_NORMAL`` にある配列は、頂点法線の :ref:`PoolVector3Array "
 "<class_PoolVector3Array>` です。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:64
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:66
 msgid ""
 "The surface array can be indexed or non-indexed. Creating a non-indexed "
 "array is as easy as not assigning an array at the index ``ArrayMesh."
@@ -169,11 +169,11 @@ msgstr ""
 "を共有する必要があることを意味します。これは常に望ましいわけではありません(た"
 "とえば、面ごとの法線が必要な場合)。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:73
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:75
 msgid "Tools"
 msgstr "ツール"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:75
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:77
 msgid ""
 "Godot provides different ways of accessing and working with geometry. More "
 "information on each will be provided in the following tutorials."
@@ -181,11 +181,11 @@ msgstr ""
 "Godotは、ジオメトリにアクセスして操作するさまざまな方法を提供します。それぞれ"
 "の詳細については、次のチュートリアルで説明します。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:79
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:81
 msgid "ArrayMesh"
 msgstr "\\ ArrayMesh"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:81
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:83
 msgid ""
 "The ArrayMesh resource extends Mesh to add a few different quality of life "
 "functions, and most importantly, the ability to construct a Mesh surface "
@@ -195,7 +195,7 @@ msgstr ""
 "追加します。最も重要なことは、スクリプティングによってMeshサーフェスを構築す"
 "る機能です。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:84
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:86
 msgid ""
 "For more information about the ArrayMesh, please see the :ref:`ArrayMesh "
 "tutorial <doc_arraymesh>`."
@@ -203,11 +203,11 @@ msgstr ""
 "ArrayMeshの詳細については、\\ :ref:`ArrayMesh tutoria <doc_arraymesh>` を参照"
 "してください。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:87
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:89
 msgid "MeshDataTool"
 msgstr "\\ MeshDataTool"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:89
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:91
 msgid ""
 "The MeshDataTool is a resource that converts Mesh data into arrays of "
 "vertices, faces, and edges that can be modified at runtime."
@@ -215,7 +215,7 @@ msgstr ""
 "MeshDataToolは、メッシュデータを、実行時に変更できる頂点、面、およびエッジの"
 "配列に変換するリソースです。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:92
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:94
 msgid ""
 "For more information about the MeshDataTool, please see the :ref:"
 "`MeshDataTool tutorial <doc_meshdatatool>`."
@@ -223,11 +223,11 @@ msgstr ""
 "MeshDataToolの詳細については、\\ :ref:`MeshDataTool tutorial "
 "<doc_meshdatatool>` を参照してください。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:95
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:97
 msgid "SurfaceTool"
 msgstr "\\ SurfaceTool"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:97
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:99
 msgid ""
 "The SurfaceTool allows the creation of Meshes using an OpenGL 1.x immediate "
 "mode style interface."
@@ -235,7 +235,7 @@ msgstr ""
 "SurfaceToolでは、OpenGL 1.xイミディエイトモードスタイルのインターフェイスを使"
 "用してメッシュを作成できます。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:99
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:101
 msgid ""
 "For more information about the SurfaceTool, please see the :ref:`SurfaceTool "
 "tutorial <doc_surfacetool>`."
@@ -243,11 +243,11 @@ msgstr ""
 "SurfaceToolの詳細については、\\ :ref:`SurfaceTool tutorial "
 "<doc_surfacetool>` を参照してください。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:102
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:104
 msgid "ImmediateGeometry"
 msgstr "\\ ImmediateGeometry"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:104
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:106
 msgid ""
 "ImmediateGeometry is a node that uses an immediate mode style interface "
 "(like SurfaceTool) to draw objects. The difference between ImmediateGeometry "
@@ -261,7 +261,7 @@ msgstr ""
 "できるノード自体であり、コードから直接描画されることです。 SurfaceToolは、表"
 "示するMeshInstanceに追加する必要があるメッシュを生成します。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:109
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:111
 msgid ""
 "ImmediateGeometry is useful for prototyping because of the straightforward "
 "API, but it is slow because the geometry is rebuilt every frame. It is most "
@@ -273,7 +273,7 @@ msgstr ""
 "すばやく追加して視覚的にデバッグするのに最も役立ちます(たとえば、物理的なレイ"
 "キャストなどを視覚化するために線を描画する)。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:113
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:115
 msgid ""
 "For more information about ImmediateGeometry, please see the :ref:"
 "`ImmediateGeometry tutorial <doc_immediategeometry>`."
@@ -281,11 +281,11 @@ msgstr ""
 "ImmediateGeometryの詳細については、\\ :ref:`ImmediateGeometry tutorial "
 "<doc_immediategeometry>` を参照してください。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:116
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:118
 msgid "Which one should I use?"
 msgstr "どちらを使うべきですか？"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:118
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:120
 msgid ""
 "Which method you use depends on what you are trying to do and what kind of "
 "procedure you are comfortable with."
@@ -293,7 +293,7 @@ msgstr ""
 "どの方法を使用するかは、何をしようとしているか、どのような手順に慣れているか"
 "によって異なります。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:120
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:122
 msgid ""
 "Both SurfaceTool and ArrayMesh are excellent for generating static geometry "
 "(meshes) that don't change over time."
@@ -301,7 +301,7 @@ msgstr ""
 "SurfaceToolとArrayMeshはどちらも、時間とともに変化しない静的なジオメトリ(メッ"
 "シュ)の生成に最適です。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:122
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:124
 msgid ""
 "Using an ArrayMesh is slightly faster than using a SurfaceTool, but the API "
 "is more a little more challenging. Additionally, SurfaceTool has a few "
@@ -311,7 +311,7 @@ msgstr ""
 "戦的です。さらに、SurfaceToolには ``generate_normals()`` や ``index()`` など"
 "の利便性向上メソッドがいくつかあります。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:125
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:127
 msgid ""
 "ImmediateGeometry regenerates the mesh every frame, so it is much slower "
 "than ArrayMesh or SurfaceTool. However, if you need the geometry to change "
@@ -323,7 +323,7 @@ msgstr ""
 "ためにジオメトリが必要な場合は、すべてのフレームでArrayMeshを生成するよりも少"
 "し速い可能性がある、はるかに簡単なインターフェイスを提供します。"
 
-#: ../../docs/tutorials/content/procedural_geometry/index.rst:129
+#: ../../docs/tutorials/content/procedural_geometry/index.rst:131
 msgid ""
 "The MeshDataTool is not fast, but it gives you access to all kinds of "
 "properties of the mesh that you don't get with the others (edges, faces, "

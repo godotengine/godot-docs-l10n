@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,9 +30,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:10
+#, fuzzy
 msgid ""
 "If you learn better by looking at an example, you can find the demo project "
-"`here <https://github.com/godotengine/godot-demo-projects/tree/master/misc/"
+"`here <https://github.com/godotengine/godot-demo-projects/tree/master/mobile/"
 "android_iap>`__."
 msgstr ""
 "Si comprendes mejor mirando un ejemplo, puedes encontrar el proyecto de "
@@ -69,9 +70,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:27
-#, fuzzy
 msgid "Support for subscriptions"
-msgstr "Opciones de Importación"
+msgstr "Soporte para suscripciones"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:28
 msgid "Signals (no polling or callback objects)"
@@ -120,9 +120,8 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:83
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:115
-#, fuzzy
 msgid "Full example:"
-msgstr "Un ejemplo:"
+msgstr "Ejemplo completo:"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:96
 msgid "Purchase an item"
@@ -146,11 +145,14 @@ msgid ""
 "`Dictionary <class_Dictionary>` with a status code and either an array of "
 "purchases or an error message."
 msgstr ""
+"Para obtener todas las compras, llama a ``queryPurchases``. A diferencia de "
+"la mayoría de las otras funciones, ``queryPurchases`` es una operación "
+"sincrónica y devuelve un :ref:`Dictionary <class_Dictionary>` con un código "
+"de estado y un conjunto de compras o un mensaje de error."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:129
-#, fuzzy
 msgid "Consumables"
-msgstr "Constantes"
+msgstr "Consumibles"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:131
 msgid ""
@@ -162,9 +164,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:148
-#, fuzzy
 msgid "Subscriptions"
-msgstr "Descripción"
+msgstr "Suscripciones"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:150
 msgid ""

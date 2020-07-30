@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgid ""
 "sure it won't fail."
 msgstr ""
 "Envoie ``InvalidCastException`` si le nœud retourné ne peut pas être "
-"concertit en Sprite. Utilisez le à la place de l'opérateur \"as\" si vous "
+"concertit en Sprite. Utilisez le à la place de l'opérateur ``as`` si vous "
 "êtes presque sûr qu'il n'échouera pas."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
@@ -96,7 +96,7 @@ msgid ""
 "``GetNode<T>()`` casts the node before returning it. It will throw an "
 "``InvalidCastException`` if the node cannot be cast to the desired type."
 msgstr ""
-"``GetNode <T> ()`` lance le nœud avant de le retourner. Il enverra une "
+"``GetNode <T> ()`` convertit le nœud avant de le retourner. Il enverra une "
 "``InvalidCastException`` si le nœud ne peut pas être converti au type désiré."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:58
@@ -138,7 +138,7 @@ msgid ""
 "For a complete C# example, see the **Handling a signal** section in the step "
 "by step :ref:`doc_scripting` tutorial."
 msgstr ""
-"Pour un exemple complet de C#, voir la section **Manipuler un signal** dans "
+"Pour un exemple complet en C#, voir la section **Manipuler un signal** dans "
 "le tutoriel Pas à pas :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:88
@@ -265,7 +265,6 @@ msgstr ""
 "ou 32-bit."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
-#, fuzzy
 msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
 "``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
@@ -274,11 +273,11 @@ msgid ""
 "possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
 "``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
-"``GODOT_HTML5``, ou ``GODOT_SERVER`` est défini selon l'OS. Ces noms sont "
-"éventuellement amenés à changer dans le futur. Ils sont créer depuis la "
-"méthode ``get_names()`` du singleton :ref:``OS <class_OS>``, mais tous les "
-"OS potentiellement retournés ne sont pas des OS sur lesquels Godot peut "
-"fonctionner avec Mono."
+"``GODOT_IOS``, ``GODOT_HTML5``, ou ``GODOT_SERVER`` est défini selon l'OS. "
+"Ces noms sont éventuellement amenés à changer dans le futur. Ils sont créer "
+"depuis la méthode ``get_name()`` du singleton :ref:``OS <class_OS>``, mais "
+"tous les OS potentiellement retournés ne sont pas des OS sur lesquels Godot "
+"peut fonctionner avec Mono."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
 msgid ""
@@ -305,22 +304,20 @@ msgstr ""
 "selon l'architecture."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
-#, fuzzy
 msgid ""
 "One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
 "architecture."
 msgstr ""
-"Un des ``GODOT_ARM64_V8A`` ou ``GODOT_ARMEABI_V7A`` sur Android seulement, "
-"selon l'architecture."
+"Un de ``GODOT_ARM64`` ou ``GODOT_ARMV7`` sur iOS uniquement en fonction de "
+"l'architecture."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
-#, fuzzy
 msgid ""
 "Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
-"Un des ``GODOT_S3TC``, ``GODOT_ETC``, ou ``GODOT_ETC2`` selon le type de "
-"compression des textures."
+"N’importe lequel de ``GODOT_S3TC``, ``GODOT_ETC``, et ``GODOT_ETC2`` selon "
+"le type de compression des textures."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
 msgid ""
@@ -331,11 +328,10 @@ msgstr ""
 "préfixée : ``foo`` -> ``GODOT_FOO``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
-#, fuzzy
 msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
-"Pour clarifier par l’exemple, voici à quoi ça ressemble dans la `démo "
-"bomber. <https://github.com/godotengine/godot-demo-projects/tree/master/"
-"networking/multiplayer_bomber>`_ :"
+"Pour voir un projet d’exemple, voyez la démo de système d’exploitation de "
+"test : https://github.com/godotengine/godot-demo-projects/tree/master/misc/"
+"os_test"

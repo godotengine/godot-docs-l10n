@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,15 +146,14 @@ msgid "Multiple instances"
 msgstr "Wielokrotne instancje"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
-#, fuzzy
 msgid ""
 "You can add as many instances as you like to a scene, either by using the "
 "\"Instance\" button again, or by clicking on the ball instance and pressing :"
 "kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to duplicate it:"
 msgstr ""
-"Możesz dodać tyle instancji, ile chcesz do sceny, albo ponownie używając "
-"przycisku \"Instancjuj\", albo klikając na instancję piłki i naciskając "
-"\"Duplikat\" (Ctrl-D):"
+"Możesz dodać tyle instancji do sceny ile chcesz; poprzez ponowne użycie "
+"przycisku \"Instancja\", albo klikając na instancję piłki i naciskając skrót "
+"\"Duplikuj\" :kbd:`Ctrl + D` (:kbd:`Cmd + D` na systemach macOS):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
@@ -165,13 +164,12 @@ msgid "Editing instances"
 msgstr "Edytowanie instancji"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
-#, fuzzy
 msgid ""
 "Open the ``Ball`` scene, expand the ``PhysicsMaterial`` by clicking on it, "
 "and set the ``Bounce`` property to ``1``."
 msgstr ""
-"Następnie, rozwiń materiał przez kliknięcie na niego i ustawienie "
-"właściwości \"Obcicie\" na \"1\"."
+"Otwórz scenę ``Ball``, kliknij ``PhysicsMaterial``aby rozwinąć listę "
+"parametrów i ustaw wartość parametru ``Bounce`` na ``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
@@ -184,7 +182,6 @@ msgstr ""
 "wpływ na wszystkie instancje."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:102
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
@@ -193,8 +190,10 @@ msgid ""
 "its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
 "Można również dostosować poszczególne instancje. Ustaw wartość odbicia z "
-"powrotem na ``0.5`` a następnie w scenie ``Main`` wybierz jedną z kul. Ustaw "
-"``odbicie`` na ``1`` i naciśnij \"Odtwórz\"."
+"powrotem na ``0``, a następnie w scenie ``Main`` wybierz jedną z kul. Zasoby "
+"takie jak ``PhysicsMaterial`` domyślnie są współdzielone między instancjami, "
+"potrzebujemy to zmienić. Kliknij na strzałkę w dół i wybierz \"Zrób unikalny"
+"\". Następnie ustaw ``Bounce`` na ``1`` i naciśnij \"Odtwórz\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:110
 msgid ""

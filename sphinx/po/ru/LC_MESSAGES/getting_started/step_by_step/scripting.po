@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,8 +100,8 @@ msgid ""
 "Has vector types built-in (such as Vectors, transforms, etc.), making it "
 "efficient for heavy use of linear algebra."
 msgstr ""
-"Имеет встроенные векторные типы (например,  Vectors, transforms и т. д.), "
-"что делает использование линейной алгебры эффективным."
+"Имеет встроенные векторные типы (например, Vectors, transforms и т. д.), что "
+"делает использование линейной алгебры эффективным."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
 msgid ""
@@ -322,14 +322,13 @@ msgid "The scene tree should look like this:"
 msgstr "Дерево сцены должно выглядеть так:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
-#, fuzzy
 msgid ""
 "Use the 2D editor to position and resize the Button and Label so that they "
 "look like the image below. You can set the text from the Inspector tab."
 msgstr ""
 "Используйте 2D-редактор для позиционирования и изменения размера Button "
 "(Кнопка) и Label (Метка), чтобы они выглядели как на изображении ниже. Вы "
-"можете набрать текст во вкладке \"Inspector\" (Инспектор)."
+"можете задать текст во вкладке \"Inspector\" (Инспектор)."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:124
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
@@ -479,9 +478,9 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
-"Затем,  выберите сигнал \"pressed()\" в разделе \"BaseButton\" и нажмите "
-"кнопку \"Connect...\" (Подключить) в правом нижнем углу (либо двойным "
-"щелчком мышки),после этого откроется диалог создания соединения."
+"Если вы затем выберете сигнал \"pressed()\" в разделе \"BaseButton\" и "
+"нажмёте кнопку \"Присоединить...\" (\"Connect...\") в правом нижнем углу, вы "
+"откроете диалог создания соединения."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:204
 msgid ""
@@ -498,7 +497,7 @@ msgid ""
 "(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
 msgstr ""
 "Внизу диалогового окна указано имя метода, который будет создан. По "
-"умолчанию, имя будет содержать название узла “испускающего” сигнал (в данном "
+"умолчанию, имя будет содержать название узла, посылающего сигнал (в данном "
 "случае “Button”). В результате мы получим "
 "``_on_[EmitterNode]_[signal_name]``."
 
@@ -587,8 +586,9 @@ msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "Кроме того, помните, что узлы ссылаются по имени, а не по типу."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:334
+#, fuzzy
 msgid ""
-"The right-hand panel of the connect dialogue is for binding specific values "
+"The 'advanced' panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""

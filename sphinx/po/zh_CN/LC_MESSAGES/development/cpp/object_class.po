@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,17 @@ msgstr ""
 msgid "Object class"
 msgstr "Object类"
 
-#: ../../docs/development/cpp/object_class.rst:7
+#: ../../docs/development/cpp/object_class.rst:8
+msgid ""
+"This page describes the C++ implementation of objects in Godot. Looking for "
+"the Object class reference? :ref:`Have a look here. <class_Object>`"
+msgstr ""
+
+#: ../../docs/development/cpp/object_class.rst:12
 msgid "General definition"
 msgstr "一般定义"
 
-#: ../../docs/development/cpp/object_class.rst:9
+#: ../../docs/development/cpp/object_class.rst:14
 msgid ""
 ":ref:`Object <class_object>` is the base class for almost everything. Most "
 "classes in Godot inherit directly or indirectly from it. Objects provide "
@@ -35,20 +41,20 @@ msgstr ""
 ":ref:`Object <class_object>` 几乎是所有类的基类。Godot中的大多数类都直接或间"
 "接继承自它。Object对象提供反射和可编辑的属性，声明它们就像使用单个宏一样。"
 
-#: ../../docs/development/cpp/object_class.rst:21
+#: ../../docs/development/cpp/object_class.rst:26
 msgid "This makes Objects gain a lot of functionality, like for example"
 msgstr "这使得Objects获得了很多功能，例如"
 
-#: ../../docs/development/cpp/object_class.rst:31
-#: ../../docs/development/cpp/object_class.rst:89
-#: ../../docs/development/cpp/object_class.rst:254
-#: ../../docs/development/cpp/object_class.rst:270
-#: ../../docs/development/cpp/object_class.rst:291
-#: ../../docs/development/cpp/object_class.rst:310
+#: ../../docs/development/cpp/object_class.rst:36
+#: ../../docs/development/cpp/object_class.rst:94
+#: ../../docs/development/cpp/object_class.rst:259
+#: ../../docs/development/cpp/object_class.rst:275
+#: ../../docs/development/cpp/object_class.rst:296
+#: ../../docs/development/cpp/object_class.rst:315
 msgid "References:"
 msgstr "参考："
 
-#: ../../docs/development/cpp/object_class.rst:33
+#: ../../docs/development/cpp/object_class.rst:38
 msgid ""
 "`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
 "h>`__"
@@ -56,11 +62,11 @@ msgstr ""
 "`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
 "h>`__"
 
-#: ../../docs/development/cpp/object_class.rst:36
+#: ../../docs/development/cpp/object_class.rst:41
 msgid "Registering an Object"
 msgstr "注册对象"
 
-#: ../../docs/development/cpp/object_class.rst:38
+#: ../../docs/development/cpp/object_class.rst:43
 msgid ""
 "ClassDB is a static class that holds the entire list of registered classes "
 "that inherit from Object, as well as dynamic bindings to all their methods "
@@ -69,21 +75,21 @@ msgstr ""
 "ClassDB是一个静态类，其中包含从Object继承的所有已注册类的完整列表，以及对其所"
 "有方法属性和整数常量的动态绑定。"
 
-#: ../../docs/development/cpp/object_class.rst:42
+#: ../../docs/development/cpp/object_class.rst:47
 msgid "Classes are registered by calling:"
 msgstr "通过以下调用来注册类："
 
-#: ../../docs/development/cpp/object_class.rst:48
+#: ../../docs/development/cpp/object_class.rst:53
 msgid ""
 "Registering it will allow the class to be instanced by scripts, code, or "
 "creating them again when deserializing."
 msgstr "注册它将允许通过脚本、代码实例化类，或在反序列化时再次创建它们。"
 
-#: ../../docs/development/cpp/object_class.rst:51
+#: ../../docs/development/cpp/object_class.rst:56
 msgid "Registering as virtual is the same but it can't be instanced."
 msgstr "注册为虚拟是相同的，但它不能实例化。"
 
-#: ../../docs/development/cpp/object_class.rst:57
+#: ../../docs/development/cpp/object_class.rst:62
 msgid ""
 "Object-derived classes can override the static function ``static void "
 "_bind_methods()``. When one class is registered, this static function is "
@@ -95,17 +101,17 @@ msgstr ""
 "时，将调用此静态函数来注册所有对象方法、属性、常量等。它只被调用一次。如果"
 "Object派生类已实例化但尚未注册，则它将自动注册为虚拟。"
 
-#: ../../docs/development/cpp/object_class.rst:64
+#: ../../docs/development/cpp/object_class.rst:69
 msgid ""
 "Inside ``_bind_methods``, there are a couple of things that can be done. "
 "Registering functions is one:"
 msgstr "在 ``_bind_methods`` 里面，有几件事可以做。注册函数是一个："
 
-#: ../../docs/development/cpp/object_class.rst:71
+#: ../../docs/development/cpp/object_class.rst:76
 msgid "Default values for arguments can be passed in reverse order:"
 msgstr "参数的默认值可以按相反的顺序传递："
 
-#: ../../docs/development/cpp/object_class.rst:77
+#: ../../docs/development/cpp/object_class.rst:82
 msgid ""
 "``D_METHOD`` is a macro that converts \"methodname\" to a StringName for "
 "more efficiency. Argument names are used for introspection, but when "
@@ -116,11 +122,11 @@ msgstr ""
 "称用于自我检查，但在发布时进行编译时，宏会忽略它们，因此未使用字符串从而对其"
 "进行了优化。"
 
-#: ../../docs/development/cpp/object_class.rst:82
+#: ../../docs/development/cpp/object_class.rst:87
 msgid "Check ``_bind_methods`` of Control or Object for more examples."
 msgstr "有关更多示例，请查看Control或Object的 ``_bind_methods`` 。"
 
-#: ../../docs/development/cpp/object_class.rst:84
+#: ../../docs/development/cpp/object_class.rst:89
 msgid ""
 "If just adding modules and functionality that is not expected to be "
 "documented as thoroughly, the ``D_METHOD()`` macro can safely be ignored and "
@@ -129,7 +135,7 @@ msgstr ""
 "如果只是添加不希望被彻底记录的模块和功能，可以安全地忽略 ``D_METHOD()`` 宏，"
 "并且为了简洁起见，可以传递传递名称的字符串。"
 
-#: ../../docs/development/cpp/object_class.rst:91
+#: ../../docs/development/cpp/object_class.rst:96
 msgid ""
 "`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
 "class_db.h>`__"
@@ -137,15 +143,15 @@ msgstr ""
 "`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
 "class_db.h>`__"
 
-#: ../../docs/development/cpp/object_class.rst:94
+#: ../../docs/development/cpp/object_class.rst:99
 msgid "Constants"
 msgstr "常量"
 
-#: ../../docs/development/cpp/object_class.rst:96
+#: ../../docs/development/cpp/object_class.rst:101
 msgid "Classes often have enums such as:"
 msgstr "类通常有枚举，例如："
 
-#: ../../docs/development/cpp/object_class.rst:105
+#: ../../docs/development/cpp/object_class.rst:110
 msgid ""
 "For these to work when binding to methods, the enum must be declared "
 "convertible to int, for this a macro is provided:"
@@ -153,37 +159,37 @@ msgstr ""
 "为了使这些在绑定到方法时起作用，枚举必须被声明为可转换为int，为此提供了一个"
 "宏："
 
-#: ../../docs/development/cpp/object_class.rst:112
+#: ../../docs/development/cpp/object_class.rst:117
 msgid "The constants can also be bound inside ``_bind_methods``, by using:"
 msgstr "常量也可以绑定在 ``_bind_methods`` 中，通过使用："
 
-#: ../../docs/development/cpp/object_class.rst:120
+#: ../../docs/development/cpp/object_class.rst:125
 msgid "Properties (set/get)"
 msgstr "属性（设置/获取）"
 
-#: ../../docs/development/cpp/object_class.rst:122
+#: ../../docs/development/cpp/object_class.rst:127
 msgid "Objects export properties, properties are useful for the following:"
 msgstr "对象导出属性，这些属性可用于以下用途："
 
-#: ../../docs/development/cpp/object_class.rst:124
+#: ../../docs/development/cpp/object_class.rst:129
 msgid "Serializing and deserializing the object."
 msgstr "序列化和反序列化对象。"
 
-#: ../../docs/development/cpp/object_class.rst:125
+#: ../../docs/development/cpp/object_class.rst:130
 msgid "Creating a list of editable values for the Object derived class."
 msgstr "为Object派生类创建可编辑值列表。"
 
-#: ../../docs/development/cpp/object_class.rst:127
+#: ../../docs/development/cpp/object_class.rst:132
 msgid ""
 "Properties are usually defined by the PropertyInfo() class. Usually "
 "constructed as:"
 msgstr "属性通常由PropertyInfo()类定义。通常构造为："
 
-#: ../../docs/development/cpp/object_class.rst:134
+#: ../../docs/development/cpp/object_class.rst:139
 msgid "For example:"
 msgstr "例如："
 
-#: ../../docs/development/cpp/object_class.rst:140
+#: ../../docs/development/cpp/object_class.rst:145
 msgid ""
 "This is an integer property, named \"amount\", hint is a range, range goes "
 "from 0 to 49 in steps of 1 (integers). It is only usable for the editor "
@@ -192,11 +198,11 @@ msgstr ""
 "这是一个整数属性，名为 ``amount``，``hint`` 是一个范围，范围从0到49，步长为"
 "1（整数）。它仅适用于编辑器（可视化编辑值），但不会被序列化。"
 
-#: ../../docs/development/cpp/object_class.rst:144
+#: ../../docs/development/cpp/object_class.rst:149
 msgid "Another example:"
 msgstr "另一个示例："
 
-#: ../../docs/development/cpp/object_class.rst:150
+#: ../../docs/development/cpp/object_class.rst:155
 msgid ""
 "This is a string property, can take any string but the editor will only "
 "allow the defined hint ones. Since no usage flags were specified, the "
@@ -206,13 +212,13 @@ msgstr ""
 "未指定使用标志，因此默认值为 ``PROPERTY_USAGE_STORAGE`` 和 "
 "``PROPERTY_USAGE_EDITOR``。"
 
-#: ../../docs/development/cpp/object_class.rst:154
+#: ../../docs/development/cpp/object_class.rst:159
 msgid ""
 "There are plenty of hints and usage flags available in object.h, give them a "
 "check."
 msgstr "在object.h中有很多提示和用法标记，请对其进行检查。"
 
-#: ../../docs/development/cpp/object_class.rst:157
+#: ../../docs/development/cpp/object_class.rst:162
 msgid ""
 "Properties can also work like C# properties and be accessed from script "
 "using indexing, but this usage is generally discouraged, as using functions "
@@ -224,7 +230,7 @@ msgstr ""
 "法，因为使用函数是易读性的首选。许多属性也与类别绑定，例如 ``动画/帧``，除非"
 "使用操作符 ``[]``，否则也无法建立索引。"
 
-#: ../../docs/development/cpp/object_class.rst:163
+#: ../../docs/development/cpp/object_class.rst:168
 msgid ""
 "From ``_bind_methods()``, properties can be created and bound as long as set/"
 "get functions exist. Example:"
@@ -232,15 +238,15 @@ msgstr ""
 "从 ``_bind_methods()`` 开始，只要存在set/get函数，就可以创建和绑定属性。例"
 "如："
 
-#: ../../docs/development/cpp/object_class.rst:170
+#: ../../docs/development/cpp/object_class.rst:175
 msgid "This creates the property using the setter and the getter."
 msgstr "这将使用setter和getter创建属性。"
 
-#: ../../docs/development/cpp/object_class.rst:175
+#: ../../docs/development/cpp/object_class.rst:180
 msgid "Binding properties using ``_set``/``_get``/``_get_property_list``"
 msgstr "使用 ``_set``/``_get``/``_get_property_list`` 绑定属性"
 
-#: ../../docs/development/cpp/object_class.rst:177
+#: ../../docs/development/cpp/object_class.rst:182
 msgid ""
 "An additional method of creating properties exists when more flexibility is "
 "desired (i.e. adding or removing properties on context)."
@@ -248,7 +254,7 @@ msgstr ""
 "当需要更大的灵活性时（即在上下文中添加或删除属性），存在另一种创建属性的方"
 "法。"
 
-#: ../../docs/development/cpp/object_class.rst:180
+#: ../../docs/development/cpp/object_class.rst:185
 msgid ""
 "The following functions can be overridden in an Object derived class, they "
 "are NOT virtual, DO NOT make them virtual, they are called for every "
@@ -257,22 +263,22 @@ msgstr ""
 "可以在Object派生类中重写以下函数，它们不是虚拟的，不要将它们设置为虚拟，它们"
 "会在每次重写时调用，而之前的函数不会失效（多级调用）。"
 
-#: ../../docs/development/cpp/object_class.rst:192
+#: ../../docs/development/cpp/object_class.rst:197
 msgid ""
 "This is also a little less efficient since ``p_property`` must be compared "
 "against the desired names in serial order."
 msgstr "由于 ``p_property`` 必须按顺序与所需的名称进行比较，因此效率也较低。"
 
-#: ../../docs/development/cpp/object_class.rst:196
+#: ../../docs/development/cpp/object_class.rst:201
 msgid "Dynamic casting"
 msgstr "动态转型"
 
-#: ../../docs/development/cpp/object_class.rst:198
+#: ../../docs/development/cpp/object_class.rst:203
 msgid ""
 "Godot provides dynamic casting between Object-derived classes, for example:"
 msgstr "Godot在Object派生类之间提供动态转换，例如："
 
-#: ../../docs/development/cpp/object_class.rst:208
+#: ../../docs/development/cpp/object_class.rst:213
 msgid ""
 "If cast fails, NULL is returned. This system uses RTTI, but it also works "
 "fine (although a bit slower) when RTTI is disabled. This is useful on "
@@ -283,17 +289,17 @@ msgstr ""
 "常工作（虽然有点慢）。这在二进制大小较小的平台上非常有用，例如HTML5或控制台"
 "（具有较小的内存占用）。"
 
-#: ../../docs/development/cpp/object_class.rst:214
+#: ../../docs/development/cpp/object_class.rst:219
 msgid "Signals"
 msgstr "信号"
 
-#: ../../docs/development/cpp/object_class.rst:216
+#: ../../docs/development/cpp/object_class.rst:221
 msgid ""
 "Objects can have a set of signals defined (similar to Delegates in other "
 "languages). Connecting to them is rather easy:"
 msgstr "对象可以定义一组信号（类似于其他语言的代理）。连接它们很容易："
 
-#: ../../docs/development/cpp/object_class.rst:225
+#: ../../docs/development/cpp/object_class.rst:230
 #, fuzzy
 msgid ""
 "The method ``_node_entered_tree`` must be registered to the class using "
@@ -302,17 +308,17 @@ msgstr ""
 "必须使用 ``ClassDB :: register_method`` （之前解释过的）将方法 "
 "``_node_entered_tree`` 注册到类中。"
 
-#: ../../docs/development/cpp/object_class.rst:228
+#: ../../docs/development/cpp/object_class.rst:233
 msgid ""
 "Adding signals to a class is done in ``_bind_methods``, using the "
 "``ADD_SIGNAL`` macro, for example:"
 msgstr "使用 ``ADD_SIGNAL`` 宏在 ``_bind_methods`` 中添加信号到类中，例如："
 
-#: ../../docs/development/cpp/object_class.rst:236
+#: ../../docs/development/cpp/object_class.rst:241
 msgid "References"
 msgstr "参考"
 
-#: ../../docs/development/cpp/object_class.rst:238
+#: ../../docs/development/cpp/object_class.rst:243
 msgid ""
 ":ref:`Reference <class_reference>` inherits from Object and holds a "
 "reference count. It is the base for reference counted object types. "
@@ -321,13 +327,13 @@ msgstr ""
 ":ref:`Reference <class_reference>` 继承自Object并保存引用计数。它是引用计数对"
 "象类型的基础。必须使用Ref<>模板来声明它们。例如："
 
-#: ../../docs/development/cpp/object_class.rst:250
+#: ../../docs/development/cpp/object_class.rst:255
 msgid ""
 "``myref`` is reference counted. It will be freed when no more Ref<> "
 "templates point to it."
 msgstr "``myref`` 是引用计数。当没有更多Ref<>模板指向它时，它将被释放。"
 
-#: ../../docs/development/cpp/object_class.rst:256
+#: ../../docs/development/cpp/object_class.rst:261
 msgid ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
 "reference.h>`__"
@@ -335,11 +341,11 @@ msgstr ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
 "reference.h>`__"
 
-#: ../../docs/development/cpp/object_class.rst:259
+#: ../../docs/development/cpp/object_class.rst:264
 msgid "Resources:"
 msgstr "资源："
 
-#: ../../docs/development/cpp/object_class.rst:261
+#: ../../docs/development/cpp/object_class.rst:266
 msgid ""
 ":ref:`Resource <class_resource>` inherits from Reference, so all resources "
 "are reference counted. Resources can optionally contain a path, which "
@@ -352,11 +358,11 @@ msgstr ""
 "置。这通常由资源加载器完成。没有两个不同的资源可以具有相同的路径，尝试这样做"
 "会导致错误。"
 
-#: ../../docs/development/cpp/object_class.rst:267
+#: ../../docs/development/cpp/object_class.rst:272
 msgid "Resources without a path are fine too."
 msgstr "资源也可以没有路径。"
 
-#: ../../docs/development/cpp/object_class.rst:272
+#: ../../docs/development/cpp/object_class.rst:277
 msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
 "resource.h>`__"
@@ -364,15 +370,15 @@ msgstr ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
 "resource.h>`__"
 
-#: ../../docs/development/cpp/object_class.rst:275
+#: ../../docs/development/cpp/object_class.rst:280
 msgid "Resource loading"
 msgstr "资源加载"
 
-#: ../../docs/development/cpp/object_class.rst:277
+#: ../../docs/development/cpp/object_class.rst:282
 msgid "Resources can be loaded with the ResourceLoader API, like this:"
 msgstr "可以使用ResourceLoader API加载资源，如下所示："
 
-#: ../../docs/development/cpp/object_class.rst:283
+#: ../../docs/development/cpp/object_class.rst:288
 msgid ""
 "If a reference to that resource has been loaded previously and is in memory, "
 "the resource loader will return that reference. This means that there can be "
@@ -381,11 +387,11 @@ msgstr ""
 "如果先前已加载对该资源的引用并且该引用在内存中，则资源加载器将返回该引用。这"
 "意味着只能同时从磁盘上引用的文件加载一个资源。"
 
-#: ../../docs/development/cpp/object_class.rst:288
+#: ../../docs/development/cpp/object_class.rst:293
 msgid "resourceinteractiveloader (TODO)"
 msgstr "resourceinteractiveloader(TODO)"
 
-#: ../../docs/development/cpp/object_class.rst:293
+#: ../../docs/development/cpp/object_class.rst:298
 msgid ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_loader.h>`__"
@@ -393,15 +399,15 @@ msgstr ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_loader.h>`__"
 
-#: ../../docs/development/cpp/object_class.rst:296
+#: ../../docs/development/cpp/object_class.rst:301
 msgid "Resource saving"
 msgstr "资源保存"
 
-#: ../../docs/development/cpp/object_class.rst:298
+#: ../../docs/development/cpp/object_class.rst:303
 msgid "Saving a resource can be done with the resource saver API:"
 msgstr "可以使用资源保存器API保存资源："
 
-#: ../../docs/development/cpp/object_class.rst:304
+#: ../../docs/development/cpp/object_class.rst:309
 msgid ""
 "Instance will be saved. Sub resources that have a path to a file will be "
 "saved as a reference to that resource. Sub resources without a path will be "
@@ -412,7 +418,7 @@ msgstr ""
 "将与保存的资源和分配的子ID捆绑在一起，例如 ``res://someresource.res::1``。这"
 "也有助于在加载时缓存它们。"
 
-#: ../../docs/development/cpp/object_class.rst:312
+#: ../../docs/development/cpp/object_class.rst:317
 msgid ""
 "`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_saver.h>`__"

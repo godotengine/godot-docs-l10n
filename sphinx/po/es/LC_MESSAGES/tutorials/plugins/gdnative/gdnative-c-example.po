@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -237,6 +237,8 @@ msgid ""
 "For any additional API structures we need to loop through our extensions "
 "array and check the type of extension."
 msgstr ""
+"Para cualquier estructura adicional de la API necesitamos hacer un bucle a "
+"través de nuestro array de extensiones y comprobar el tipo de extensión."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:206
 msgid ""
@@ -388,16 +390,15 @@ msgid "On Windows:"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:382
-#, fuzzy
 msgid ""
 "On the Windows build you also end up with a ``libsimple.lib`` library. This "
 "is a library that you can compile into a project to provide access to the "
 "DLL. We get it as a byproduct and we do not need it :) When exporting your "
 "game for release this file will be ignored."
 msgstr ""
-"En la compilación de Windows también se obtiene una biblioteca libsimple."
-"lib. Esta es una biblioteca que puede compilar en un proyecto para "
-"proporcionar acceso a la DLL. Lo recibimos como un bonus y no lo "
+"En la compilación de Windows también tendrás una biblioteca ``libsimple."
+"lib``. Esta es una biblioteca que se puede compilar en un proyecto para "
+"proporcionar acceso a la DLL. La obtenemos como subproducto y no lo "
 "necesitamos :) Al exportar el juego para lanzamiento, este archivo será "
 "ignorado."
 
@@ -436,9 +437,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:413
-#, fuzzy
 msgid "General properties"
-msgstr "Propiedades de los nodos"
+msgstr "Propiedades generales"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:415
 msgid ""
@@ -455,14 +455,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:423
-#, fuzzy
 msgid ""
 "If *Singleton* is enabled, our library is automatically loaded and a "
 "function called ``godot_gdnative_singleton`` is called. We'll leave that for "
 "another tutorial."
 msgstr ""
-"Si singleton es true nuestra librería se carga automáticamente y se llama a "
-"una función llamada godot_singleton_init. Dejaremos eso para otro tutorial."
+"Si *Singleton* está habilitado, nuestra librería se carga automáticamente y "
+"se llama a una función llamada ``godot_gdnative_singleton``. Dejaremos eso "
+"para otro tutorial."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:427
 msgid ""
@@ -492,17 +492,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:444
-#, fuzzy
 msgid ""
 "The *Dynamic Library* column (``entry`` section in the saved file) tells us "
 "for each platform and feature combination which dynamic library has to be "
 "loaded. This also informs the exporter which files need to be exported when "
 "exporting to a specific platform."
 msgstr ""
-"La sección **entry** nos dice para cada combinación de plataforma y "
-"característica qué librería dinámica debe ser cargada. Esto también informa "
-"al exportador de los ficheros que deben exportarse al exportar a una "
-"plataforma específica."
+"La columna *Dinamyc Library* (sección **entry** en el archivo guardado) nos "
+"dice para cada combinación de plataforma y característica qué librería "
+"dinámica debe ser cargada. Esto también informa al exportador los ficheros "
+"que deben exportarse al exportar a una plataforma específica."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:449
 msgid ""
@@ -520,9 +519,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:461
-#, fuzzy
 msgid "Saving the resource"
-msgstr "Consiguiendo el código fuente"
+msgstr "Guardando el recurso"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:463
 msgid ""

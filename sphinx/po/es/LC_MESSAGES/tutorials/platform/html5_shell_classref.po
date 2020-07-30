@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:4
-#, fuzzy
 msgid "HTML5 shell class reference"
-msgstr "Cómo escribir la referencia de la clase"
+msgstr "Referencia de la clase HTML5"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:6
 msgid ""
@@ -29,21 +28,19 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:9
-#, fuzzy
 msgid ""
 "This API is built in an asynchronous manner and requires basic understanding "
 "of `Promises <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/"
 "Using_promises>`__."
 msgstr ""
-"La API está basada en \"promesas\" y requiere una comprensión básica de las "
-"mismas: `Promises <https://developer.mozilla.org/en-US/docs/Web/JavaScript/"
-"Guide/Using_promises>`__."
+"Esta API está construida de modo asíncrono y requiere comprensión básica de "
+"`Promesas <https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/"
+"Usar_promesas>`__."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:13
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:43
-#, fuzzy
 msgid "Engine"
-msgstr "Godot Engine"
+msgstr "Engine"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:15
 msgid ""
@@ -54,9 +51,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:20
-#, fuzzy
 msgid "Static Methods"
-msgstr "Funciones estáticas"
+msgstr "Métodos estáticos"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:23
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:45
@@ -80,18 +76,16 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:63
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:65
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:67
-#, fuzzy
 msgid "void"
-msgstr "**void**"
+msgstr "void"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:25
 msgid "`Engine.unload <#Engine.unload>`__ **(** **)**"
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:27
-#, fuzzy
 msgid "boolean"
-msgstr "bool"
+msgstr "boolean"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:27
 msgid ""
@@ -106,14 +100,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:33
-#, fuzzy
 msgid "Instance Properties"
-msgstr "Propiedades de los nodos"
+msgstr "Propiedades de instancia"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:36
-#, fuzzy
 msgid "Emscripten ``Module``"
-msgstr "Accediendo el módulo Emscripten"
+msgstr "``Módulo`` Emscripten"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:36
 msgid "`engine.rtenv <#engine.rtenv>`__"
@@ -136,6 +128,8 @@ msgid ""
 "`engine.preloadFile <#engine.preloadFile>`__ **(** string\\|ArrayBuffer file "
 "*[, string path ]* **)**"
 msgstr ""
+"`engine.preloadFile <#engine.preloadFile>`__ **(** string\\|ArrayBuffer file "
+"*[, string path ]* **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:49
 msgid ""
@@ -184,28 +178,28 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:65
-#, fuzzy
 msgid ""
 "`engine.setStdoutFunc <#engine.setStdoutFunc>`__ **(** function callback "
 "**)**"
-msgstr "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
+msgstr ""
+"`engine.setStdoutFunc <#engine.setStdoutFunc>`__ **(** function callback "
+"**)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:67
-#, fuzzy
 msgid ""
 "`engine.setStderrFunc <#engine.setStderrFunc>`__ **(** function callback "
 "**)**"
-msgstr "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
+msgstr ""
+"`engine.setStderrFunc <#engine.setStderrFunc>`__ **(** function callback "
+"**)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:72
-#, fuzzy
 msgid "Static Method Descriptions"
-msgstr "Funciones estáticas"
+msgstr "Descripciones de Métodos Estáticos"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:76
-#, fuzzy
 msgid "Load the engine from the specified base path."
-msgstr "Carga el motor desde la ruta indicada."
+msgstr "Carga el motor desde la ruta base indicada."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 #: ../../docs/<rst_epilog>:0
@@ -283,9 +277,8 @@ msgid "Instance Method Descriptions"
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:122
-#, fuzzy
 msgid "Create a new instance of the ``Engine`` class."
-msgstr "Crear una instancia de un tipo base."
+msgstr "Crear una nueva instancia de la clase ``Engine``."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:126
 msgid ""
@@ -300,23 +293,21 @@ msgstr ""
 "inicializado."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:137
-#, fuzzy
 msgid ""
 "Load a file so it is available in the instance's file system once it runs. "
 "Must be called **before** starting the instance."
 msgstr ""
-"Esto carga un archivo para que esté disponible en el sistema de archivos una "
-"vez que la instancia es iniciada. Debe llamarse **antes** de iniciar la "
+"Carga un archivo para que esté disponible en el sistema de archivos una vez "
+"que la instancia es ejecutada. Debe llamarse **antes** de iniciar la "
 "instancia."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:140
-#, fuzzy
 msgid ""
 "If type is ``string``, the file will be loaded from that path.  If type is "
 "``ArrayBuffer`` or a view on one, the buffer will used as the content of the "
 "file."
 msgstr ""
-"Si file es una cadena, el archivo será cargado desde una URL. Si file es un "
+"Si type es ``string``, el archivo será cargado desde esa ruta. Si type es un "
 "``ArrayBuffer`` o una vista de uno, el buffer será usado como el contenido "
 "del archivo."
 
@@ -333,7 +324,6 @@ msgstr ""
 "un contenido del archivo."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:146
-#, fuzzy
 msgid ""
 "Path by which the file will be accessible. Required, if ``file`` is not a "
 "string. If not passed, the path is derived from the URL of the loaded file."
@@ -343,21 +333,16 @@ msgstr ""
 "cargado."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:151
-#, fuzzy
 msgid "Promise that resolves once the file is loaded."
-msgstr ""
-"Devuelve una promesa de que resolverá una vez que el archivo es precargado."
+msgstr "Promesa que resolverá una vez que el archivo es cargado."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:156
-#, fuzzy
 msgid ""
 "Start the instance of the engine, using the passed strings as command line "
 "arguments. :js:meth:`engine.startGame` can be used in typical cases instead."
 msgstr ""
 "Comienza la instancia del motor, pasando la cadena indicada como argumento. "
-"Esto permite un gran control sobre cómo el motor es iniciado, pero "
-"usualmente los otros métodos cuyos nombres comienzan con ``engine.start`` "
-"son más simples y deben usarse en su lugar."
+"Se puede usar :js:meth:`engine.startGame` en casos comunes."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:160
 msgid ""
@@ -371,7 +356,6 @@ msgid "Fails if a canvas cannot be found on the page."
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:165
-#, fuzzy
 msgid "Command line argument."
 msgstr "Parámetros de la línea de comandos."
 
@@ -392,13 +376,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:178
-#, fuzzy
 msgid ""
 "This will load the engine if it is not loaded. The base path of the "
 "executable URL will be used as the engine base path."
 msgstr ""
-"Si el motor no está cargado todavía, la ruta base de la URL indicada será "
-"utilizada para cargar el motor."
+"Esto cargará el motor si no está cargado todavía. La ruta base de la URL del "
+"ejecutable será usada como ruta base del motor."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:181
 msgid "Executable name in a form of URL, omitting filename extension."
@@ -428,26 +411,25 @@ msgstr ""
 "``false`` en caso contrario."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:201
-#, fuzzy
 msgid ""
 "Specify a canvas HTML element to use. By default, the first canvas element "
 "on the page is used for rendering."
 msgstr ""
-"Por defecto, el primer elemento canvas de la página se utiliza para el "
-"renderizado."
+"Especifica un elemento canvas HTML para utilizar. Por defecto, el primer "
+"elemento canvas de la página se utiliza para el renderizado."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:204
 msgid "The canvas element to use."
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
-#, fuzzy
 msgid ""
 "Specifies whether the canvas will be resized to the width and height "
 "specified in the project settings on start. Enabled by default."
 msgstr ""
-"Establece el canvas se redimensionará a la anchura y la altura especificadas "
-"en la configuración del proyecto al inicio."
+"Especifica si el canvas se redimensionará a la anchura y la altura "
+"especificadas en la configuración del proyecto al inicio. Habilitado por "
+"defecto."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:212
 msgid "``true`` if the canvas shall be resized on start, ``false`` otherwise."
@@ -517,15 +499,12 @@ msgstr ""
 "multi-threading)"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:248
-#, fuzzy
 msgid ""
 "The callback function must accept two numeric arguments: the amount of bytes "
 "loaded so far, and the total number of bytes to load."
 msgstr ""
-"Este método es usado para mostrar el progreso de la descarga. La función "
-"callback pasada es llamada con dos números de argumento, el primer argumento "
-"especifica los bytes cargados, el segundo especifica el total de bytes a "
-"cargar."
+"La función callback debe aceptar dos parámetros numéricos: la cantidad de "
+"bytes cargados y el total de bytes a cargar."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:254
 msgid ""

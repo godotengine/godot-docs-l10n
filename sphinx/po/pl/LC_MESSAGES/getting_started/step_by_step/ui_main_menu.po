@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,7 +163,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:89
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:282
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
 msgid "Break down the UI mockup"
 msgstr ""
 
@@ -227,7 +227,21 @@ msgstr ""
 msgid "Prepare the Main Menu scene"
 msgstr "Przygotowanie sceny Menu Główne"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:125
+msgid ""
+"This tutorial is based on a window size of 1366×768. To change the project's "
+"base window size, open **Project > Project Settings** at the top of the "
+"editor then change **Display > Window > Size > Width** to ``1366`` and "
+"**Display > Window > Size > Height** to ``768``."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:130
+msgid ""
+"If you forget to change the window size, anchors and containers may not "
+"behave as expected."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:133
 #, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
@@ -236,7 +250,7 @@ msgstr ""
 "Stwórzmy menu główne. Zrobimy je w jednej scenie. Aby utworzyć pustą scenę, "
 "kliknij menu Scena -> Nowa scena."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
@@ -245,7 +259,7 @@ msgid ""
 "kbd:`Cmd + S` on macOS) to save the scene to the disk. Name it *MainMenu*."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:142
 msgid ""
 "Select the ``MarginContainer`` again, and head to the inspector to define "
 "the margins' size. Scroll down the ``Control`` class, to the ``Custom "
@@ -255,23 +269,23 @@ msgstr ""
 "zdefiniowania rozmiaru marginesów. Przewinąć w dół klasę ``Control`` do "
 "sekcji ``Custom Constants``. Rozwiń go. Ustaw marginesy takie jak poniżej:"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:146
 msgid "Margin Right: *120*"
 msgstr "Prawy Margines: *120*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:137
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:147
 msgid "Margin Top: *80*"
 msgstr ": *80*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:138
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:148
 msgid "Margin Left: *120*"
 msgstr "Margines Lewy: *120*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:139
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:149
 msgid "Margin Bottom: *80*"
 msgstr "Margines Dolny: *80*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
 #, fuzzy
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
@@ -280,11 +294,11 @@ msgstr ""
 "Chcemy, aby kontener pasował do okna. W oknie Widok otwórz menu ``Layout`` i "
 "wybierz ostatnią opcję ``Full Rect``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
 msgid "Add the UI sprites"
 msgstr "Dodaj sprity UI"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:147
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:157
 msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
@@ -292,26 +306,26 @@ msgstr ""
 "Zaznacz ``MarginContainer`` i stwórz elementy interfejsu użytkownika jako "
 "węzły ``TextureRect``. Potrzebujemy:"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
 #, fuzzy
 msgid "the title or logo,"
 msgstr "Tytuł lub logo"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:161
 msgid "the three text options as individual nodes,"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:162
 #, fuzzy
 msgid "the version note,"
 msgstr "Notka o wersji"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:163
 #, fuzzy
 msgid "and the main menu's illustration."
 msgstr "Obraz głównego menu"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 #, fuzzy
 msgid ""
 "Click the **Add Node** button or press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on "
@@ -325,7 +339,7 @@ msgstr ""
 "ENTER. Po wybraniu nowego węzła, naciśnij pięciokrotnie przycisk ``Meta+D``, "
 "aby utworzyć pięć dodatkowych instancji ``TextureRect``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:170
 #, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
@@ -337,12 +351,12 @@ msgstr ""
 "``Wczytaj``. Otworzy się przeglądarka plików, w której można wybrać Sprite "
 "do załadowania do miejsca dla tekstury."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
 #, fuzzy
 msgid "The file browser lets you find and load textures."
 msgstr "Menedżer plików pozwoli tobie znaleźć tekstury"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
 #, fuzzy
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
@@ -356,12 +370,12 @@ msgstr ""
 "oddzielny węzeł. Następnie kliknij dwukrotnie na każdy z węzłów na zakładce "
 "Scena, aby zmienić ich nazwę."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
 #, fuzzy
 msgid "The six nodes with textures loaded."
 msgstr "Sześć węzłów z ustawionymi teksturami"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:190
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
@@ -369,11 +383,11 @@ msgstr ""
 "Jeśli chcesz obsługiwać lokalizację w swojej grze, używaj ``Label`` dla "
 "opcji w menu zamiast ``TextureRect``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:184
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:194
 msgid "Add containers to place UI elements automatically"
 msgstr "Automatyczne dodawanie kontenerów do elementów interfejsu użytkownika"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -386,7 +400,7 @@ msgid ""
 "behavior, I recommend to favor box containers."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:197
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
 msgid ""
 "Select the ``MarginContainer`` and add an ``HBoxContainer``. Then, we need "
 "two containers as children of our ``HBoxContainer``: a ``VBoxContainer`` for "
@@ -398,7 +412,7 @@ msgstr ""
 "``VBoxContainer`` do opcji w menu po lewej stronie i ``CenterContainer`` dla "
 "ilustracji po prawej stronie."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 #, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
@@ -407,7 +421,7 @@ msgstr ""
 "Należy mieć cztery zagnieżdżone kontenery, a węzły TextureRect powinny być "
 "od nich odsunięte"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
 #, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
@@ -420,25 +434,25 @@ msgstr ""
 "je do ``VBoxContainer``. Następnie przeciągnij węzeł ilustracji do "
 "``CenterContainer``. Węzły powinny pozycjonować się automatycznie."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:224
 msgid "Containers automatically place and resize textures"
 msgstr "Kontenery automatycznie umieszczają i skalują tekstury"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:226
 msgid "We're left with two problems to solve:"
 msgstr "Zostały dwa problemy do rozwiązania:"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
 #, fuzzy
 msgid "The characters on the right aren't centered."
 msgstr "Postać po prawej nie jest wycentrowana"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 #, fuzzy
 msgid "There's no space between the logo and the other UI elements."
 msgstr "Nie ma przerw pomiędzy logo i innymi elementami UI"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "
@@ -450,7 +464,7 @@ msgid ""
 "center automatically."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
 #, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
@@ -459,7 +473,7 @@ msgstr ""
 "Węzeł postaci jest wyśrodkowywany w prawej połowie ekranu, gdy tylko "
 "umieścisz go w środku kontenera CenterContainer"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
@@ -470,7 +484,7 @@ msgid ""
 "at all."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:255
 #, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
@@ -479,7 +493,7 @@ msgstr ""
 "Umieść nowy kontener między dwoma pozostałymi węzłami, aby zachować układ "
 "graficzny interfejsu użytkownika"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:248
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -490,7 +504,7 @@ msgid ""
 "and ``Version`` elements."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:256
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:266
 #, fuzzy
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
@@ -499,14 +513,14 @@ msgstr ""
 "W celu wycentrowania węzłów w ``VBoxContainer``, przewiń na górę inspektora "
 "i zmień właściwość ``Alignment`` na ``Center``."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
 #, fuzzy
 msgid "The menu options should center vertically in the UI's left column."
 msgstr ""
 "Opcje menu powinny być umieszczone pionowo w po środku lewej kolumny "
 "interfejsu użytkownika"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:263
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the **Custom Constants** category below **Size Flags**, and click the "
@@ -515,18 +529,18 @@ msgid ""
 "between menu options."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
 #, fuzzy
 msgid "The final interface."
 msgstr "Końcowy interfejs"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:283
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr ""
 "Bez pisania kodu, stworzyliśmy precyzyjny i rozszerzalny ekran menu głównego."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:276
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
 #, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
@@ -538,7 +552,7 @@ msgstr ""
 "menu tu <#>`__ aby porównać je z własnym. W następnym samouczku zostanie "
 "utworzony interfejs użytkownika gry z paskami i licznikami przedmiotów."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:294
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
@@ -546,7 +560,7 @@ msgid ""
 "UI elements."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:289
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press :kbd:`Q` to activate "
@@ -554,7 +568,7 @@ msgid ""
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:295
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:305
 msgid ""
 "You'll notice that although containers move sprites around, they don't scale "
 "them. This is normal. We want the UI system to handle different screen "
@@ -562,7 +576,7 @@ msgid ""
 "resolutions. To do this, Godot scales the entire window up and down."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:301
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:311
 msgid ""
 "You can change the scale mode in the project settings: click **Project > "
 "Project Settings** in the top menu. In the window's left column, look for "

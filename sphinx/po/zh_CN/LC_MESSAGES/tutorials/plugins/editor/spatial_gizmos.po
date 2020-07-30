@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,7 @@ msgstr ""
 msgid "This would be a basic setup:"
 msgstr "这是一个基本设置:"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:57
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:59
 msgid ""
 "For simple gizmos, just inheriting :ref:`EditorSpatialGizmoPlugin "
 "<class_EditorSpatialGizmoPlugin>` is enough. If you want to store some per-"
@@ -81,11 +81,11 @@ msgstr ""
 "件>`就足够了。如果你想为每个变换轴存储一些数据，或者你想将Godot 3.0版本的变换"
 "轴，移植到3.1以上版本中，你应该采用第二种方法。"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:63
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
 msgid "Simple approach"
 msgstr "简单方法"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:67
 msgid ""
 "The first step is to, in our custom gizmo plugin, override the :ref:"
 "`has_gizmo()<class_EditorSpatialGizmoPlugin_method_has_gizmo>` method so "
@@ -94,7 +94,7 @@ msgstr ""
 "第一步，在我们的自定义变换轴插件中，重写:参考:`已有变换轴()<类_编辑器空间变换"
 "轴插件_方法_已有变换轴>` 方法，以便在空间参数为目标类型时返回“真”值。"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:76
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:81
 msgid ""
 "Then we can override methods like :ref:"
 "`redraw()<class_EditorSpatialGizmoPlugin_method_redraw>` or all the handle "
@@ -103,7 +103,7 @@ msgstr ""
 "我们可以重写以下方法:参考:`重绘()<类_编辑器空间变换轴插件_方法_重绘>` 或所有"
 "与句柄相关的方法。"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:107
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:115
 msgid ""
 "Note that we created a material in the `_init` method, and retrieved it in "
 "the `redraw` method using :ref:"
@@ -112,12 +112,12 @@ msgid ""
 "the gizmo (selected and/or editable)."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:112
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:120
 #, fuzzy
 msgid "So the final plugin would look somewhat like this:"
 msgstr "您最后的场景应该是这样的。"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:148
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:161
 msgid ""
 "Note that we just added some handles in the redraw method, but we still need "
 "to implement the rest of handle-related callbacks in :ref:"
@@ -128,11 +128,11 @@ msgstr ""
 "变换轴插件<类_编辑器空间变换轴插件>`中实现其他与句柄相关的回调，以获得正确的"
 "工作句柄。"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:153
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:166
 msgid "Alternative approach"
 msgstr "替代方法"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:155
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:168
 msgid ""
 "In some cases we want to provide our own implementation of :ref:"
 "`EditorSpatialGizmo<class_EditorSpatialGizmo>`, maybe because we want to "
@@ -143,7 +143,7 @@ msgstr ""
 "实现，也许是因为我们想要在每个变换轴中存储一些状态，或者正在移植一个旧的变换"
 "轴插件，而不想经历重写过程。"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:159
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:172
 msgid ""
 "In these cases all we need to do is, in our new gizmo plugin, override :ref:"
 "`create_gizmo()<class_EditorSpatialGizmoPlugin_method_create_gizmo>`, so it "
@@ -154,7 +154,7 @@ msgstr ""
 "（）<类_编辑器空间变换轴插件_方法_创建变换轴>`，因此它返回我们想要实现的目标"
 "空间节点的自定义变换轴。"
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:181
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:197
 #, fuzzy
 msgid ""
 "This way all the gizmo logic and drawing methods can be implemented in a new "
@@ -163,7 +163,7 @@ msgstr ""
 "这样所有的变换轴逻辑和绘图方法都可以在一个新的类中实现扩展：参考：`编辑器空间"
 "变换轴<类_编辑器空间变换轴>`，如下所示："
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:217
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:235
 msgid ""
 "Note that we just added some handles in the redraw method, but we still need "
 "to implement the rest of handle-related callbacks in :ref:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -280,23 +280,21 @@ msgstr ""
 "fonctionner l'AR ou la VR devrait ressembler à ceci :"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:111
-#, fuzzy
 msgid ""
 "And that's all you need to get started with the native mobile interface. "
 "Obviously, you need to add something more into your scene, so there is "
 "something to see, but after that, you can export the game to your phone of "
 "choice, pop it into a viewer and away you go."
 msgstr ""
-"Et c'est tout ce dont vous avez besoin pour commencer. Il est évident que "
-"vous devez ajouter quelque chose de plus dans votre scène, pour qu'il y ait "
-"quelque chose à voir, mais après cela, vous pouvez exporter le jeu vers le "
-"téléphone de votre choix, le faire apparaître dans une visionneuse et c'est "
-"parti."
+"Et c'est tout ce dont vous avez besoin pour commencer à utiliser l'interface "
+"mobile native. Bien sûr, vous devez ajouter quelque chose de plus dans votre "
+"scène, pour qu'il y ait quelque chose à voir, mais après cela, vous pouvez "
+"exporter le jeu vers le téléphone de votre choix, le faire apparaître dans "
+"une visionneuse et c'est parti."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:116
-#, fuzzy
 msgid "Official plugins and resources"
-msgstr "Tutoriels et ressources"
+msgstr "Plugins et ressources officiels"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:118
 msgid ""
@@ -305,75 +303,96 @@ msgid ""
 "are several official plugins available in the `GodotVR Repository <https://"
 "github.com/GodotVR>`_."
 msgstr ""
+"Comme mentionné précédemment, Godot ne prend pas en charge les différents "
+"SDK VR et AR de base, vous avez besoin d'un plugin pour le SDK spécifique "
+"que vous souhaitez utiliser. Il existe plusieurs plugins officiels "
+"disponibles dans le `Répertoire GodotVR <https://github.com/GodotVR>`_."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:122
+#, fuzzy
 msgid ""
 "`Godot Oculus Mobile <https://github.com/GodotVR/godot_oculus_mobile>`_ "
 "provides support for the Oculus Go and Oculus Quest. The Quest will require "
-"additional setup documented `here <doc_developing_for_oculus_quest>`_."
+"additional setup documented in :ref:`doc_developing_for_oculus_quest`."
 msgstr ""
+"`Godot Oculus Mobile <https://github.com/GodotVR/godot_oculus_mobile>`_ "
+"fournit un support pour l'Oculus Go et l'Oculus Quest. Le Quest nécessitera "
+"une configuration supplémentaire documentée `ici "
+"<doc_developing_for_oculus_quest>`_."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:124
+#: ../../docs/tutorials/vr/vr_primer.rst:125
 msgid ""
 "`Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (not to be "
 "confused with OpenXR) supports the OpenVR SDK used by Steam."
 msgstr ""
+"`Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (à ne pas "
+"confondre avec OpenXR) supporte le SDK OpenVR utilisé par Steam."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:126
-#, fuzzy
+#: ../../docs/tutorials/vr/vr_primer.rst:127
 msgid ""
 "`Godot Oculus <https://github.com/GodotVR/godot_oculus>`_ supports the "
 "Oculus SDK (desktop headsets only)."
 msgstr ""
-"`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
-"godot_oculus_mobile>`_"
+"`Godot Oculus <https://github.com/GodotVR/godot_oculus>`_ prend en charge le "
+"kit de développement Oculus (casques de bureau seulement)."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:128
+#: ../../docs/tutorials/vr/vr_primer.rst:129
 msgid ""
 "`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ supports "
 "OpenHMD, an open source API and drivers for headsets."
 msgstr ""
+"`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ supporte "
+"OpenHMD, une API open source et des pilotes pour les casques."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:130
+#: ../../docs/tutorials/vr/vr_primer.rst:131
 msgid ""
 "`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ supports OpenXR, "
 "an open standard for VR and AR software. This plugin is early in "
 "development, only supports Linux and requires extra setup described in the "
 "repository."
 msgstr ""
+"`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ supporte OpenXR, "
+"un standard ouvert pour les logiciels de VR et de AR. Ce plugin en est au "
+"début du développement, ne supporte que Linux et nécessite une configuration "
+"supplémentaire décrite dans le répertoire."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:134
+#: ../../docs/tutorials/vr/vr_primer.rst:135
 msgid "These plugins can be downloaded from GitHub or the Godot Asset Library."
 msgstr ""
+"Ces plugins peuvent être téléchargés à partir de GitHub ou de Godot Asset "
+"Library."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:136
+#: ../../docs/tutorials/vr/vr_primer.rst:137
 msgid "In addition to the plugins, there are several official demos."
-msgstr ""
-
-#: ../../docs/tutorials/vr/vr_primer.rst:138
-#, fuzzy
-msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
-msgstr ""
-"`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
-"godot_oculus_mobile>`_"
+msgstr "En plus des plugins, il existe plusieurs démos officielles."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:139
+msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
+msgstr "`Démo Godot Oculus <https://github.com/GodotVR/godot-oculus-demo>`_."
+
+#: ../../docs/tutorials/vr/vr_primer.rst:140
+#, fuzzy
 msgid ""
 "`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (the "
-"tutorial for this project is `here <doc_vr_starter_tutorial_part_one>`_)"
+"tutorial for this project is :ref:`doc_vr_starter_tutorial_part_one`)."
 msgstr ""
+"`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (le "
+"tutoriel pour ce projet est `ici <doc_vr_starter_tutorial_part_one>`_)"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:141
+#: ../../docs/tutorials/vr/vr_primer.rst:142
 msgid ""
 "`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, which shows "
 "implementations for VR features such as movement and picking up objects."
 msgstr ""
+"`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, qui montre "
+"des implémentations pour des fonctionnalités de VR telles que le mouvement "
+"et la ramassage d'objets."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:145
+#: ../../docs/tutorials/vr/vr_primer.rst:146
 msgid "Other things to consider"
 msgstr "Autres éléments à prendre en considération"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:147
+#: ../../docs/tutorials/vr/vr_primer.rst:148
 msgid ""
 "There are a few other subjects that we need to briefly touch upon in this "
 "primer that are important to know."
@@ -381,8 +400,7 @@ msgstr ""
 "Il y a quelques autres sujets qu'il est important de connaître et que nous "
 "devons aborder brièvement dans cet abécédaire."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:150
-#, fuzzy
+#: ../../docs/tutorials/vr/vr_primer.rst:151
 msgid ""
 "The first are our units. In normal 3D games, you don't have to think a lot "
 "about units. As long as everything is at the same scale, a box sized 1 unit "
@@ -415,7 +433,7 @@ msgstr ""
 "réglant cette valeur sur 10, nous modifions notre système de coordonnées de "
 "sorte que 10 unités = 1 mètre."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:161
+#: ../../docs/tutorials/vr/vr_primer.rst:162
 msgid ""
 "Performance is another thing that needs to be carefully considered. "
 "Especially VR taxes your game a lot more than most people realize. For "
@@ -428,7 +446,7 @@ msgstr ""
 "pour les jeux de bureau, il y a trois facteurs qui rendent la vie très "
 "difficile :"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:165
+#: ../../docs/tutorials/vr/vr_primer.rst:166
 msgid ""
 "You are rendering stereoscopic, two for the price of one. While not exactly "
 "doubling the work load and with things in the pipeline such as supporting "
@@ -441,7 +459,7 @@ msgstr ""
 "nouvelle extension OpenGL MultiView, le rendu des images pour les deux yeux "
 "représente tout de même une charge de travail supplémentaire"
 
-#: ../../docs/tutorials/vr/vr_primer.rst:168
+#: ../../docs/tutorials/vr/vr_primer.rst:169
 msgid ""
 "A normal game will run acceptably on 30fps and ideally manages 60fps. That "
 "gives you a big range to play with between lower end and higher end "
@@ -456,7 +474,7 @@ msgstr ""
 "à 90fps stable afin de vous assurer que vos utilisateurs ne souffrent pas du "
 "mal des transports dès le début."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:172
+#: ../../docs/tutorials/vr/vr_primer.rst:173
 msgid ""
 "The high FOV and related lens distortion effect require many VR experiences "
 "to render at double the resolution. Yes a VIVE may only have a resolution of "
@@ -469,7 +487,7 @@ msgstr ""
 "rendons les deux yeux à 2160x2400. Ce problème est moins important pour la "
 "plupart des applications AR."
 
-#: ../../docs/tutorials/vr/vr_primer.rst:176
+#: ../../docs/tutorials/vr/vr_primer.rst:177
 msgid ""
 "All in all, the workload your GPU has in comparison with a normal 3D game is "
 "a fair amount higher. While things are in the pipeline to improve this, such "

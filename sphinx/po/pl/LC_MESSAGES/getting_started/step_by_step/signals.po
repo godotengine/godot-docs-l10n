@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,18 +36,18 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
-"Sygnały w Godot są odpowednikiem wzorca *obserwatora*. Pozwalają węzłowi na "
-"wysyłanie wiadomości, na które inne węzły mogą nasłuchiwać i reagować.  "
-"Przykładowo, zamiast bez przerwy sprawdzać, czy przycisk jest w momencie "
-"przyciskania, to przycisk może wyemitować sygnał, kiedy zostanie wciśnięty."
+"Sygnały w Godot są odpowiednikiem wzorca *obserwatora*. Pozwalają węzłowi na "
+"wysyłanie \"wiadomości\", które inne węzły mogą odczytywać i na nie "
+"reagować. Przykładowo, zamiast bez przerwy sprawdzać, czy przycisk został "
+"właśnie wciśnięty, to przycisk sam może wyemitować sygnał, kiedy zostanie "
+"wciśnięty."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:17
-#, fuzzy
 msgid ""
 "You can read more about the observer pattern here: https://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"O wzorcu projektowym obserwator, możesz przeczytać więcej tutaj: http://"
+"O wzorcu projektowym \"obserwator\", możesz przeczytać więcej tutaj: https://"
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:19
@@ -75,16 +75,15 @@ msgid "Timer example"
 msgstr "Przykład dla węzła Timer"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:29
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
 "Żeby zobaczyć, jak działają sygnały, użyjmy węzła :ref:`Timer "
-"<class_Timer>`. Utwórz nową scenę z węzłem typu Node oraz jego dwoma węzłami-"
-"dziećmi: węzłem Timer oraz a :ref:`Sprite <class_Sprite>`. W doku sceny, "
-"zmień nazwę węzła z Node na TimerExample."
+"<class_Timer>`. Utwórz nową scenę z węzłem typu Node2D oraz jego dwoma "
+"węzłami-dziećmi: węzłem Timer oraz a :ref:`Sprite <class_Sprite>`. W doku "
+"Sceny, zmień nazwę węzła z Node2D na TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:33
 msgid ""
@@ -126,18 +125,16 @@ msgstr ""
 "osiąga ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:52
-#, fuzzy
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\" at the bottom of "
 "the signals panel. You'll see the following window, where you can define how "
 "you want to connect the signal:"
 msgstr ""
-"Kliknij na sygnał \"timeout()\" i wybierz \"Connect...\". Zobaczysz wtedy "
-"okno, w którym będziesz mógł zdefiniować, w jaki sposób chcesz połączyć "
-"sygnał:"
+"Kliknij na sygnał \"timeout()\" i wybierz \"Połącz...\" na dole panelu z "
+"sygnałami. Zobaczysz wtedy okno, w którym będziesz mógł zdefiniować, w jaki "
+"sposób chcesz połączyć sygnał:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:58
-#, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is "
@@ -145,16 +142,17 @@ msgid ""
 "signal. Select the root node."
 msgstr ""
 "Po lewej stronie znajdują się węzły w Twojej scenie - możesz wybrać węzeł, "
-"na którego sygnał chcesz \"nasłuchiwać\". Zauważ, że węzeł Timer jest "
-"zaznaczony na czerwono - to *nie* jest błąd, tylko podkreślenie, że to jest "
-"węzeł, który emituje sygnał. Wybierz główny węzeł."
+"który chcesz aby \"nasłuchiwał\" na nasz sygnał. Zauważ, że węzeł Timer jest "
+"zaznaczony na niebiesko - to informacja, że jest to węzeł, który emituje ten "
+"sygnał. Wybierz główny węzeł (TimerExample)."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
-"Docelowy węzeł *musi* mieć skrypt, albo otrzymasz informację o błędzie."
+"Docelowy węzeł *musi* mieć dołączony skrypt, w przeciwnym wypadku otrzymasz "
+"informację o błędzie."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:66
 msgid ""
@@ -164,16 +162,20 @@ msgid ""
 "method, as each signal propagation will result in different values for those "
 "extra call arguments."
 msgstr ""
+"Jeżeli rozwiniesz Zaawansowane menu, po prawej stronie zobaczysz, że możesz "
+"przypisać dowolną liczbę argumentów (różnych) typów. To może być użyteczne w "
+"momencie kiedy masz więcej niż jeden sygnał połączony do tej samej metody, "
+"ponieważ każdy dodatkowy argument spowoduje podział na różne wartości dla "
+"każdego sygnału."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:70
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"Na dole okna znajduje się pole \"Metoda w węźle\". Jest to nazwa funkcji w "
+"Na dole okna znajduje się pole \"Metoda odbiorcy\". Jest to nazwa funkcji w "
 "skrypcie docelowego węzła, której chcesz użyć. Domyślnie Godot utworzy tę "
 "funkcję, korzystając z następującej konwencji : "
 "``_on_<nazwa_wezla>_<nazwa_sygnalu>`` . Oczywiście, jeśli chcesz, możesz "
@@ -184,7 +186,8 @@ msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
-"Wybierz \"Connect\" i zobaczysz, że funkcja została utworzona w skrypcie:"
+"Naciśnij przycisk \"Połącz\". Możesz zobaczyć, że funkcja została utworzona "
+"w skrypcie:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:96
 msgid ""
@@ -200,13 +203,13 @@ msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
-"Odtwórz scenę i zauważ, że węzeł Sprite miga z każdą sekundą. Możesz "
+"Odtwórz scenę i zwróć uwagę, że węzeł Sprite miga z każdą sekundą. Można "
 "kontrolować czas migotania przy użyciu właściwości *Czas oczekiwania*, "
 "należącej do węzła Timer."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:125
 msgid "Connecting signals in code"
-msgstr "Podłączanie sygnałów w kodzie"
+msgstr "Podłączanie sygnałów z poziomu kodu"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:127
 msgid ""
@@ -214,9 +217,9 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
-"Możesz także połączyć sygnał z poziomu kodu zamiast w edytorze. To jest "
-"zazwyczaj przydatne podczas tworzenia węzłów w kodzie, ponieważ nie można "
-"ustanowić połączenia dla tego węzła w edytorze."
+"Możesz także połączyć sygnał z poziomu kodu zamiast w edytorze. Jest to "
+"zazwyczaj niezbędne przy korzystaniu z Węzłów tworzonych w kodzie, w takim "
+"przypadku użycie edytora do stworzenia połączenia jest niemożliwe."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
@@ -236,8 +239,8 @@ msgid ""
 msgstr ""
 "Aby dodać połączenie z poziomu kodu, może skorzystać z funkcji ``connect``. "
 "Wstawimy tę funkcję do metody ``_ready()`` po to, żeby połączenie zostało "
-"nawiązane zaraz o po uruchomieniu. Składnia tej funkcji wygląda tak "
-"następująco: ``<wezel_zrodlowy>.connect(<nazwa_sygnalu>, <docelowy_wezel>, "
+"nawiązane zaraz po uruchomieniu. Składnia tej funkcji wygląda następująco: "
+"``<wezel_zrodlowy>.connect(<nazwa_sygnalu>, <docelowy_wezel>, "
 "<nazwa_funkcji_docelowej>)``. Poniżej znajduje się kod dla połączenia węzła "
 "Timer:"
 
@@ -247,7 +250,7 @@ msgstr "Niestandardowe sygnały"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:173
 msgid "You can also declare your own custom signals in Godot:"
-msgstr "W Godot możesz także zadeklarować własne rodzaje sygnałów:"
+msgstr "W Godot możesz także zadeklarować własne niestandardowe sygnały:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:192
 msgid ""
@@ -266,6 +269,8 @@ msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
 msgstr ""
+"\"Sygnał\" może również opcjonalnie deklarować jeden lub więcej argumentów. "
+"Nazwy argumentów umieść w nawiasie rozdzielając je przecinkiem:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:243
 msgid ""
@@ -274,13 +279,18 @@ msgid ""
 "number of arguments when you emit signals. So it's up to you to emit the "
 "correct values."
 msgstr ""
+"Argumenty Sygnału pojawią się w doku Węzłów edytora, Godot może użyć ich aby "
+"wygenerować funkcje zwrotne za ciebie. Jednak wciąż możliwe jest "
+"wyemitowanie dowolnej ilości argumentów emitując sygnał samemu. Aczkolwiek "
+"to na programiście będzie w tedy spoczywała odpowiedzialność za wyemitowanie "
+"poprawnych wartości."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:248
-#, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
-msgstr "Aby wyemitować sygnał poprzez kod, użyj funkcji ``emit_signal``:"
+msgstr ""
+"Aby przekazać wartości dodaj je jako drugi argument funkcji ``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:276
 msgid "Conclusion"
@@ -294,9 +304,9 @@ msgid ""
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
 "Godot ma wiele wbudowanych typów węzłów, które dostarczają sygnałów aby "
-"wykrywać wydarzenia. Na przykład,  :ref:`Area2D <class_Area2D>` "
-"reprezentująca monetę emituje ``body_entered`` sygnał kiedy fizyczne ciało "
-"gracza wchodzi w jej kształt kolizyjny, co daję tobie znać kiedy gracz ją "
+"wykrywać wydarzenia. Na przykład, :ref:`Area2D <class_Area2D>` "
+"reprezentująca monetę emituje sygnał ``body_entered``, kiedy fizyczne ciało "
+"gracza wchodzi w jej kształt kolizyjny, co daję Tobie znać kiedy gracz ją "
 "zebrał."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:283

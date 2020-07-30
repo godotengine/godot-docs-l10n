@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,10 @@ msgid ""
 "prefabs') were added to Unity 2018.3. Nestable prefabs are analogous to "
 "Godot's scenes, and allow a more Godot-like approach to scene organization."
 msgstr ""
+"Dieser Artikel geht auf ältere Versionen von Unity ein. Verschachtelte "
+"Vorlagen ('Nested Prefabs') wurden in Unity 2018.3 hinzugefügt und sind "
+"vergleichbar mit Szenen in Godot, sie erlauben somit eine Godot-ähnliche "
+"Herangehensweise der Szenen-Organisation."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "Differences"
@@ -66,7 +70,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "OS (editor)"
-msgstr ""
+msgstr "Betriebsystem (Editor)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 #, fuzzy
@@ -79,7 +83,7 @@ msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "OS (export)"
-msgstr ""
+msgstr "OS (export)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**Desktop:** Windows, macOS, Linux"
@@ -87,7 +91,7 @@ msgstr "**Desktop:** Windows, macOS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:28
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
-msgstr ""
+msgstr "**Mobile:** Android, iOS, Windows Phone, Tizen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "**Web:** WebAssembly or asm.js"
@@ -98,7 +102,6 @@ msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 msgstr "**Konsolen:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
-#, fuzzy
 msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, PlayStation VR, Gear VR, "
 "HoloLens"
@@ -147,6 +150,8 @@ msgid ""
 ":ref:`Scene tree and nodes <doc_scenes_and_nodes>`, allowing scenes to be "
 "nested and/or inherit other scenes"
 msgstr ""
+"Mittels:ref:`Szenenbaum und Nodes <doc_scenes_and_nodes>`können Szenen in "
+"andere Szenen eingebettet und/oder vererbt werden"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid "Third-party tools"
@@ -534,13 +539,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:145
 msgid "Project organization"
-msgstr ""
+msgstr "Project Organization"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:149
 msgid ""
 "There is no perfect project architecture. Any architecture can be made to "
 "work in either Unity and Godot."
 msgstr ""
+"Es gibt keine perfekte Projekt-Architektur. Jede Architektur kann zum laufen "
+"gebracht werden, sowohl in Unity als auch in Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:152
 msgid ""
@@ -548,6 +555,10 @@ msgid ""
 "folder in the root directory that contains various folders, one per type of "
 "asset: Audio, Graphics, Models, Materials, Scripts, Scenes, and so on."
 msgstr ""
+"Wie auch immer, die gebräuchlichste Architektur für Unity Projekte ist es, "
+"ein Assets Verzeichnis im Hauptverzeichnis zu haben, in dem alle weiteren "
+"Verzeichnisse enthalten sind, jeweils getrennt nach Audio, Grafik, Modelle, "
+"Materialen, Scripte, Szenen, usw."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:155
 msgid ""
@@ -556,10 +567,14 @@ msgid ""
 "project a bit differently. This wiki provides a page for this: :ref:"
 "`doc_project_organization`."
 msgstr ""
+"Da Godot das Aufteilen von Szenen in kleinere Szenen erlaubt, und jede Szene "
+"und Unterszene als eigene Datei innerhalb des Projektes existiert, empfehlen "
+"wir das Projekt etwas anders zu organisieren. Dieser Eintrag führt zu einer "
+"entsprechende Seite: :ref:`doc_project_organization`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:160
 msgid "Where are my prefabs?"
-msgstr ""
+msgstr "Wo sind meine Vorlagen?"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:162
 msgid ""
@@ -579,6 +594,13 @@ msgid ""
 "instances. However, any change you make to the instance will not have any "
 "impact on the 'template' scene."
 msgstr ""
+"Godot bietet keine Vorlagen als solche, aber das Szenensystem bietet die "
+"gleiche funktionalität und ist in einer Baumstruktur aufgebaut. Godot "
+"erlaubt das speichern von einem Teil dieses Baums als Szenen-Datei. Diese "
+"neue Szene kann dann als neues Unterobjekt eines Nodes so oft man möchte "
+"eingefügt werden. Jede Änderung an dieser neuen, separaten Szenenvorlage "
+"wird an allen genutzten Objekten vorgenommen. Im Gegensatz dazu hat eine "
+"Änderung an solch einem Unterobjekt keine Auswirkung auf die VorlagenSzene."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:173
 msgid ""
@@ -635,6 +657,14 @@ msgid ""
 "take long to learn: Between one evening for an experienced programmer and a "
 "week for a complete beginner."
 msgstr ""
+"Godot bietet eine eigene Skriptsprache, :ref:`GDScript <doc_scripting>` "
+"sowie auch Support für :ref:`Visual Script <toc-learn-scripting-"
+"visual_script>` und :ref:`C# <doc_c_sharp>`. GDScript hat einen ähnlichen "
+"Aufbau wie Python, beide sind aber nicht miteinander verwand.Falls du dich "
+"wunderst wieso eine eigene Skriptsprache verwendet wird, siehe hier :ref:"
+"`doc_gdscript` and :ref:`doc_faq`. GDScript ist stark mit der Godot API "
+"verknüpft und ist einfach zu erlernen: etwa einen Abend für einen erfahrenen "
+"Programmierer und eine Woche für einen Anfänger."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:204
 msgid ""
@@ -643,6 +673,10 @@ msgid ""
 "script so that it reacts to the player's controls, and another that controls "
 "its specific game logic."
 msgstr ""
+"Unity erlaubt es mehrere Skripte an ein GameObject anzufügen. Jedes Skript "
+"ist für ein bestimmtes Verhalten des GameObjects zuständig: Zum Beispiel "
+"kann ein Skript auf die Spielereingabe reagieren und ein anderes Skript "
+"steuert die spezielle Spiellogik."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:208
 msgid ""
@@ -651,6 +685,11 @@ msgid ""
 "need to attach more scripts to one node, then you may consider two "
 "solutions, depending on your scene and on what you want to achieve:"
 msgstr ""
+"In Godot kann nur ein Skript pro Node angehängt werden. Es kann entweder ein "
+"externes GDSkript genutzt werden, oder dies wird direkt im entsprechendem "
+"Node eingefügt. Falls es nötig sein sollte mehrere Skripte an einen einzigen "
+"Node zu hängen, hat man zwei Möglichkeiten, abhängig von der Szene und was "
+"man erreichen möchte:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:212
 msgid ""

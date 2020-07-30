@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,7 +174,7 @@ msgid ""
 msgstr "在进入编辑器之前，我们要计划如何基于模型图像嵌套容器。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:89
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:282
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
 msgid "Break down the UI mockup"
 msgstr "分解UI模型"
 
@@ -239,7 +239,21 @@ msgstr ""
 msgid "Prepare the Main Menu scene"
 msgstr "准备主菜单场景"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:125
+msgid ""
+"This tutorial is based on a window size of 1366×768. To change the project's "
+"base window size, open **Project > Project Settings** at the top of the "
+"editor then change **Display > Window > Size > Width** to ``1366`` and "
+"**Display > Window > Size > Height** to ``768``."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:130
+msgid ""
+"If you forget to change the window size, anchors and containers may not "
+"behave as expected."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:133
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
@@ -247,7 +261,7 @@ msgstr ""
 "让我们创建主菜单。我们将在一个单一的场景中构建它。要创建一个空场景，请单击 ``"
 "场景`` 菜单 -> ``新建场景``。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
 #, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
@@ -261,7 +275,7 @@ msgstr ""
 "好起点，因为您经常需要在UI周围填充。按下 ``Meta+S`` 将场景保存到磁盘。把它命"
 "名为 *MainMenu* 。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:142
 msgid ""
 "Select the ``MarginContainer`` again, and head to the inspector to define "
 "the margins' size. Scroll down the ``Control`` class, to the ``Custom "
@@ -271,23 +285,23 @@ msgstr ""
 "动 ``Control`` 类，到 ``Custom Constants（自定义常量）`` 部分。展开它。设置边"
 "距如下："
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:146
 msgid "Margin Right: *120*"
 msgstr "右边距：*120*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:137
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:147
 msgid "Margin Top: *80*"
 msgstr "顶部边距：*80*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:138
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:148
 msgid "Margin Left: *120*"
 msgstr "左边距：*120*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:139
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:149
 msgid "Margin Bottom: *80*"
 msgstr "底部边距：*80*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
@@ -295,35 +309,35 @@ msgstr ""
 "我们希望容器能充满窗口。在视图上方的工具栏中，打开 ``布局（Layout）`` 菜单，"
 "然后选择最后一个选项 ``Full Rect``。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
 msgid "Add the UI sprites"
 msgstr "添加UI精灵"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:147
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:157
 msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
 msgstr ""
 "选择 ``MarginContainer``，并将UI元素创建为 ``TextureRect`` 节点。我们需要："
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
 msgid "the title or logo,"
 msgstr "标题或LOGO；"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:161
 msgid "the three text options as individual nodes,"
 msgstr "三个文本选项，作为单独的节点；"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:162
 msgid "the version note,"
 msgstr "版本注释；"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:163
 #, fuzzy
 msgid "and the main menu's illustration."
 msgstr "和主菜单的插图。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 #, fuzzy
 msgid ""
 "Click the **Add Node** button or press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on "
@@ -336,7 +350,7 @@ msgstr ""
 "入 ``TextureRect`` 以找到相应的节点，然后按 ``Enter`` 键。选中新节点后，按"
 "(Ctrl+D) ``Meta+D`` 五次以创建额外的五个 ``TextureRect`` 实例。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:170
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
 "property and click **[empty] > Load**. A file browser opens and lets you "
@@ -346,11 +360,11 @@ msgstr ""
 "``[empty]`` -> ``Load``。将打开一个文件浏览器，让您选择一个精灵以加载到纹理插"
 "槽中。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
 msgid "The file browser lets you find and load textures."
 msgstr "文件浏览器可以让你查找和加载贴图。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
@@ -362,22 +376,22 @@ msgstr ""
 "本标注，它们分别作为一个单独的节点。然后，双击场景选项卡中的每个节点以重命名"
 "它们。尚未在容器中放置任何东西，因此看起来应该很杂乱。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
 msgid "The six nodes with textures loaded."
 msgstr "六个带贴图的节点已加载。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:190
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
 msgstr ""
 "如果要在游戏中支持本地化，请使用 ``Labels`` 代替菜单项 ``TextureRect``。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:184
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:194
 msgid "Add containers to place UI elements automatically"
 msgstr "添加容器以自动放置UI元素"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
 #, fuzzy
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
@@ -397,7 +411,7 @@ msgstr ""
 "``HBoxContainer`` 只是将自身拆分为具有与子级数目相同的列。尽管您可以禁用拆分"
 "容器的调整大小行为，但还是建议您使用盒式容器。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:197
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
 msgid ""
 "Select the ``MarginContainer`` and add an ``HBoxContainer``. Then, we need "
 "two containers as children of our ``HBoxContainer``: a ``VBoxContainer`` for "
@@ -408,13 +422,13 @@ msgstr ""
 "为 ``HBoxContainer`` 的子容器：一个 ``VBoxContainer`` 用于左边的菜单选项，一"
 "个 ``CenterContainer`` 用于右边的插图。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr "您应该有四个嵌套容器，并且下方有好几个 ``TextureRect`` 贴图节点。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
@@ -424,23 +438,23 @@ msgstr ""
 "在节点树中，选择应该在左侧出现的所有 ``TextureRect`` (贴图)节点：logo，菜单选"
 "项和版本标注。将它们拖放到 ``VBoxContainer`` 中。节点就会自动定位。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:224
 msgid "Containers automatically place and resize textures"
 msgstr "容器自动放置和调整纹理大小"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:226
 msgid "We're left with two problems to solve:"
 msgstr "我们还有两个问题要解决："
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
 msgid "The characters on the right aren't centered."
 msgstr "右边的字符没有居中。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid "There's no space between the logo and the other UI elements."
 msgstr "Logo和其他UI元素之间没有合适的间距。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "
@@ -458,14 +472,14 @@ msgstr ""
 "妨碍其邻居 ``VBoxContainer``。最后，将 ``Characters`` 节点拖放到 "
 "``CenterContainer`` 中。``Characters`` 元素将自动居中。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer."
 msgstr ""
 "将角色节点放置在 ``CenterContainer`` 中后，它将立即在屏幕的右半部分居中。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
 #, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
@@ -482,13 +496,13 @@ msgstr ""
 "（Continue）``，``新游戏（NewGame）`` 和 ``选项（Options）``，并将它们拖放到"
 "新的 ``VBoxContainer`` 中。UI的布局应该几乎不会变化。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:255
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
 msgstr "将新容器放置在其他两个节点之间，以保持UI的布局。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:248
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -504,7 +518,7 @@ msgstr ""
 "（Expand）`` 和 ``填充（Fill）``。容器将扩展以占据所有可用的垂直空间。但它不"
 "会影响到它的邻居， 即 ``Logo`` 和 ``Version`` 元素。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:256
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:266
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the **Alignment** property to **Center**."
@@ -512,11 +526,11 @@ msgstr ""
 "要使节点在 ``VBoxContainer`` 中居中，请滚动到属性检查器的顶部，然后将 "
 "``Alignment`` 属性更改为 ``Center``。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
 msgid "The menu options should center vertically in the UI's left column."
 msgstr "菜单选项应在UI的左边的列式布局中垂直居中。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:263
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the **Custom Constants** category below **Size Flags**, and click the "
@@ -529,16 +543,16 @@ msgstr ""
 "分隔（Separation）`` 参数旁边的字段。设置为30。一旦您按下回车键，``分隔"
 "（Separation）`` 属性就会激活，Godot会在菜单选项之间增加30个像素。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
 msgid "The final interface."
 msgstr "最终界面。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:283
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr "没有一行代码，我们就有了一个精确且响应迅速的主菜单。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:276
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
@@ -549,7 +563,7 @@ msgstr ""
 "ui_main_menu_design.zip>` 以与您自己的进行比较。在下一个教程中，您将创建一个"
 "带有条形和项目计数器的游戏用户界面。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:294
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
@@ -560,7 +574,7 @@ msgstr ""
 "算机显示器具有不同的大小和比例。在Godot中，我们使用容器来控制UI元素的位置和大"
 "小。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:289
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
 #, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
@@ -572,7 +586,7 @@ msgstr ""
 "激活选择模式，选择容器，然后单击并拖动容器的某个角落以调整其大小。UI组件应该"
 "在其中流动。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:295
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:305
 msgid ""
 "You'll notice that although containers move sprites around, they don't scale "
 "them. This is normal. We want the UI system to handle different screen "
@@ -583,7 +597,7 @@ msgstr ""
 "统能够处理不同的屏幕比例，但是我们还需要整个游戏来适应不同的屏幕分辨率。为"
 "此，Godot将上下缩放整个窗口。"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:301
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:311
 msgid ""
 "You can change the scale mode in the project settings: click **Project > "
 "Project Settings** in the top menu. In the window's left column, look for "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
-#, fuzzy
 msgid "Shaders"
-msgstr "Типы Шейдеров"
+msgstr "Шейдеры"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:7
 msgid "Introduction"
@@ -36,14 +35,14 @@ msgid ""
 "they output a final color to the screen and then move on. Accordingly, there "
 "is no way of accessing the color output from the last run of the shader."
 msgstr ""
-"Шейдеры это уникальные программы запускаемые на GPU. Они используются для "
-"определения как обрабатывать данные сеток (позиции вершин, цвета, нормали, "
-"итд.) и рисуют их на экран. Шейдеры не обрабатывают информацию таким же "
-"путём что и обычная программа, поскольку они оптимизированы для запуска на "
-"GPU. Одним из следствий этого является то, что они не сохраняют свои данные "
-"после их запуска; они выводят конечный цвет на экран и двигаются дальше. "
-"Соответственно, нет способа получения цвета вывода из последнего запуска "
-"шейдера."
+"Шейдеры - это уникальные программы запускаемые на GPU. Они используются для "
+"указания на то, как обрабатывать данные полисеток (позиции вершин, цвета, "
+"нормали, и т.д.) и выводить их на экран. Шейдеры обрабатывают информацию не "
+"так, как это делает обычная программа, поскольку они оптимизированы для "
+"запуска на GPU. Одним из следствий этого является то, что они не сохраняют "
+"свои данные после запуска; они выводят конечный цвет на экран и двигаются "
+"дальше. Соответственно, нет способа получения доступа к выводу цвета из "
+"последнего запуска шейдера."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:16
 msgid ""
@@ -56,6 +55,15 @@ msgid ""
 "use it to affect the rendering pipeline. For more advanced shaders, you can "
 "turn this functionality off using a render_mode."
 msgstr ""
+"Godot использует шейдерный язык, очень похожий на GLSL, но с дополнительным "
+"функционалом и немного меньшей гибкостью. Причина этого в том, что Godot "
+"интегрирует встроенный функционал, что делает написание сложных шейдеров "
+"значительно проще. Godot преобразовывает написанный пользователем код "
+"шейдера в собственный код. Таким образом Godot обрабатывает множество "
+"низкоуровневых вещей, о которых не нужно беспокоиться пользователю, и он "
+"способен анализировать ваш шейдерный код и использовать его, влияя на "
+"последовательность процесса визуализации. Для более продвинутых шейдеров вы "
+"можете отключить эту функцию в режиме render_mode."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:23
 msgid ""
@@ -63,65 +71,62 @@ msgid ""
 "Godot. For a detailed reference of the shading language in Godot see the :"
 "ref:`Godot shading language doc<doc_shading_language>`."
 msgstr ""
+"Этот документ предоставляет вам некоторую информацию о шейдерах, характерных "
+"для Godot. Подробные сведения о языке шейдинга в Godot см. в :ref:"
+"`Документации по языку шейдеров Godot<doc_shading_language>`."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:27
-#, fuzzy
 msgid "Shader types"
-msgstr "Типы Шейдеров"
+msgstr "Типы шейдеров"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:29
-#, fuzzy
 msgid ""
 "Instead of supplying a general purpose configuration for all uses (2D, 3D, "
 "particles), Godot shaders must specify what they are intended for. Different "
 "types support different render modes, built-in variables, and processing "
 "functions."
 msgstr ""
-"Вместо того чтобы поддерживать общую конфигурацию, в языке шейдеров Godot "
-"должно быть определено, для чего конкретный шейдер предназначен. В "
-"зависимости от типа, используются  различные опции рендеринга, встроенные "
-"свойства и выполняемые функции."
+"Вместо предоставления конфигурации общего назначения для всех видов "
+"использования (2D, 3D, частицы), шейдеры Godot должны уточнять, для чего они "
+"предназначены. Различные типы поддерживают разные режимы визуализации, "
+"встроенные переменные и функции обработки."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:33
-#, fuzzy
 msgid ""
 "All shaders need to specify their type in the first line, in the following "
 "format:"
 msgstr ""
-"В любом шейдере первая строчка определяет этот тип, в следующем формате:"
+"Все шейдеры должны указать свой тип в первой строке в следующем формате:"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:39
 msgid "Valid types are:"
 msgstr "Поддерживаемые типы:"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:41
-#, fuzzy
 msgid ":ref:`spatial <doc_spatial_shader>`: For 3D rendering."
-msgstr "\"spatial\": Для 3D рендеринга."
+msgstr ":ref:`spatial <doc_spatial_shader>`: Для 3D визуализации."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:42
-#, fuzzy
 msgid ":ref:`canvas_item <doc_canvas_item_shader>`: For 2D rendering."
-msgstr "\"canvas_item\": Для 2D рендеринга."
+msgstr ":ref:`canvas_item <doc_canvas_item_shader>`: Для 2D визуализации."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:43
-#, fuzzy
 msgid ":ref:`particles <doc_particle_shader>`: For particle systems."
-msgstr "\"particles\": Для систем частиц."
+msgstr ":ref:`particles <doc_particle_shader>`: Для систем частиц."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:45
 msgid ""
 "For detailed information on each shading type, see the corresponding "
 "reference document."
 msgstr ""
+"Для получения подробной информации о каждом типе шейдинга смотрите "
+"соответствующий справочный документ."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:48
-#, fuzzy
 msgid "Render modes"
-msgstr "Опции Отрисовки"
+msgstr "Режимы визуализации"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:50
-#, fuzzy
 msgid ""
 "Different shader types support different render modes. They are optional "
 "and, if specified, must be after the *shader_type*. Render modes are used to "
@@ -129,24 +134,28 @@ msgid ""
 "to use the render mode ``unshaded`` to skip the built-in light processor "
 "function."
 msgstr ""
-"Различные шейдерные типы поддерживают различные опции отрисовки. Они "
-"необязательные но, если определены, должны начинаться после ключевого слова "
-"*shader_type*. Пример синтаксиса:"
+"Различные типы шейдеров поддерживают разные режимы визуализации. Они "
+"необязательны, но если они указаны, то должны находиться после слов "
+"*shader_type*. Режимы визуализации используются для изменения способа "
+"обработки встроенного функционала. Например, обычно используется режим "
+"визуализации `` unshaded``, чтобы можно было пропустить встроенную функцию "
+"светового процессора."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:55
 msgid "Render modes are specified underneath the shader type:"
-msgstr ""
+msgstr "Режимы визуализации указываются ниже типа шейдера:"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:62
 msgid ""
 "Each shader type has a different list of render modes available. See the "
 "document for each shader type for a complete list of render modes."
 msgstr ""
+"Каждый тип шейдера имеет свой список доступных режимов визуализации. Полный "
+"список режимов визуализации смотрите в документе по каждому типу шейдера."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:66
-#, fuzzy
 msgid "Processor functions"
-msgstr "Обработка"
+msgstr "Функции процессора"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:68
 msgid ""

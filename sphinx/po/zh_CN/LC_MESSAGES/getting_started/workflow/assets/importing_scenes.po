@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -790,7 +790,8 @@ msgstr ""
 "入的场景中。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
-msgid "Create collisions (-col, -colonly, -convcolonly)"
+#, fuzzy
+msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
 msgstr "创建碰撞体（``-col``、``-colonly``、``-convcolonly``）"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
@@ -802,13 +803,22 @@ msgstr ""
 "加子静态碰撞节点。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:375
+#, fuzzy
+msgid ""
+"Option \"-convcol\" will create a :ref:`class_convexpolygonshape` instead of "
+"a :ref:`class_concavepolygonshape`."
+msgstr ""
+"选项 ``-convcolonly`` 将创建一个 :ref:`class_convexpolygonshape` 而不是一个 :"
+"ref:`class_concavepolygonshape`。"
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:377
 msgid ""
 "However, it is often the case that the visual geometry is too complex or too "
 "un-smooth for collisions, which ends up not working well."
 msgstr ""
 "然而，通常情况下，视觉几何体对于碰撞来说太复杂或太不平滑，最终效果不佳。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:378
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
 msgid ""
 "To solve this, the \"-colonly\" modifier exists, which will remove the mesh "
 "upon import and create a :ref:`class_staticbody` collision instead. This "
@@ -818,15 +828,16 @@ msgstr ""
 "符，该修饰符将在导入时删除网格，并创建一个 :ref:`class_staticbody` 碰撞体。这"
 "有助于将视觉网格与实际碰撞分开。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:382
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
+#, fuzzy
 msgid ""
-"Option \"-convcolonly\" will create a :ref:`class_convexpolygonshape` "
-"instead of a :ref:`class_concavepolygonshape`."
+"Option \"-convcolonly\" works in a similar way but will create a :ref:"
+"`class_convexpolygonshape` instead."
 msgstr ""
 "选项 ``-convcolonly`` 将创建一个 :ref:`class_convexpolygonshape` 而不是一个 :"
 "ref:`class_concavepolygonshape`。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:386
 msgid ""
 "Option \"-colonly\" can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
@@ -837,24 +848,24 @@ msgstr ""
 "撞节点的 :ref:`class_staticbody` 作为子节点。碰撞节点将具有许多预定义的形状之"
 "一，具体取决于Blender的空绘制类型："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:391
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:393
 msgid "Single arrow will create a :ref:`class_rayshape`"
 msgstr "单箭头将创建一个 :ref:`class_rayshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:392
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
 msgid "Cube will create a :ref:`class_boxshape`"
 msgstr "方块将创建一个 :ref:`class_boxshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:393
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:395
 msgid "Image will create a :ref:`class_planeshape`"
 msgstr "图像将创建一个 :ref:`class_planeshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:396
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`"
 msgstr "球体（和其他未列出的）将创建一个 :ref:`class_sphereshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:396
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
 msgid ""
 "For better visibility in Blender's editor, the user can set \"X-Ray\" option "
 "on collision empties and set some distinct color for them in User "
@@ -863,21 +874,21 @@ msgstr ""
 "为了提高Blender编辑器的可见性，用户可以在碰撞空物体上设置 ``X-Ray`` 选项，并"
 "在用户首选项/主题/ 3D视图/空物体中为它们设置不同的颜色。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:400
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
 msgid "Create navigation (-navmesh)"
 msgstr "创建导航（``-navmesh``）"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
 msgid ""
 "A mesh node with this suffix will be converted to a navigation mesh. "
 "Original Mesh node will be removed."
 msgstr "具有此后缀的网格节点将被转换为导航网格。原始网格节点将被删除。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "创建一个 ``VehicleBody`` （``-vehicle``）"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:410
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleBody <class_VehicleBody>` node."
@@ -885,11 +896,11 @@ msgstr ""
 "具有此后缀的网格节点将作为子节点导入到 :ref:`VehicleBody "
 "<class_VehicleBody>` 节点。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "创建一个 ``VehicleWheel`` （``-wheel``）"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:415
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleWheel <class_VehicleWheel>` node."
@@ -897,19 +908,19 @@ msgstr ""
 "具有此后缀的网格节点将作为子节点导入到 :ref:`VehicleWheel "
 "<class_VehicleWheel>` 节点。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:418
 msgid "Rigid Body (-rigid)"
 msgstr "刚体（``-rigid``）"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:418
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:420
 msgid "Creates a rigid body from this mesh."
 msgstr "从这个网格中创建一个刚体。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:421
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
 msgid "Animation loop (-loop, -cycle)"
 msgstr "动画循环（``-loop`` 、``-cycle``）"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "\"loop\" or \"cycle\" will be imported as a Godot Animation with the loop "
@@ -918,7 +929,7 @@ msgstr ""
 "COLLADA文档中以令牌 ``loop`` 或 ``cycle`` 开头或结尾的动画剪辑将作为设置了循"
 "环标志的Godot动画导入。这是区分大小写的，不需要连字符。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:429
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the \"loop\" or \"cycle\" prefix or suffix."

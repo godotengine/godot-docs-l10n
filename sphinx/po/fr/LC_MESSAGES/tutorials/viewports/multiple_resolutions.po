@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -473,9 +473,10 @@ msgid "From scripts"
 msgstr "Depuis les scripts"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:233
+#, fuzzy
 msgid ""
 "To configure stretching at runtime from a script, use the ``get_tree()."
-"set_screen_stretch()`` function (see :ref:`SceneTree.set_screen_stretch() "
+"set_screen_stretch()`` method (see :ref:`SceneTree.set_screen_stretch() "
 "<class_SceneTree_method_set_screen_stretch>`)."
 msgstr ""
 "Pour configurer l'étirement à l'exécution d'un script, utilisez la fonction "
@@ -487,12 +488,13 @@ msgid "Reducing aliasing on downsampling"
 msgstr "Réduction de l'aliasing lors du sous-échantillonnage"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:240
+#, fuzzy
 msgid ""
 "If the game has a very high base resolution (e.g. 3840×2160), aliasing might "
 "appear when downsampling to something considerably lower like 1280×720. "
 "Aliasing can be made less visible by shrinking all images by a factor of 2 "
 "upon loading. This can be done by calling the method below before the game "
-"data is loaded:"
+"data is loaded::"
 msgstr ""
 "Si le jeu a une très haute résolution de base (par exemple 3840×2160), un "
 "aliasing peut apparaître lors du downsampling à quelque chose de "
@@ -501,11 +503,11 @@ msgstr ""
 "Ceci peut être fait en appelant la méthode ci-dessous avant que les données "
 "du jeu ne soient chargées :"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:252
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:249
 msgid "Handling aspect ratios"
 msgstr "Manipulation des rapports d'aspect"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:254
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:251
 msgid ""
 "Once scaling for different resolutions is accounted for, make sure that your "
 "*user interface* also scales for different aspect ratios. This can be done "
@@ -518,11 +520,11 @@ msgstr ""
 "être fait en utilisant :ref:`anchors <doc_size_and_anchors>` et/ou :ref:"
 "`containers <doc_gui_containers>`."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:260
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:257
 msgid "Field of view scaling"
 msgstr "Mise à l'échelle du champ de vision"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:262
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:259
 msgid ""
 "The 3D Camera node's **Keep Aspect** property defaults to the **Keep "
 "Height** scaling mode (also called *Hor+*). This is usually the best value "
@@ -535,7 +537,7 @@ msgstr ""
 "en mode paysage, car les écrans larges utilisent automatiquement un champ de "
 "vision plus large."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:267
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:264
 msgid ""
 "However, if your 3D game is intended to be played in portrait mode, it may "
 "make more sense to use **Keep Width** instead (also called *Vert-*). This "
@@ -547,3 +549,36 @@ msgstr ""
 "*). Ainsi, les smartphones dont le rapport hauteur/largeur est supérieur à "
 "16:9 (par exemple 19:9) utiliseront un champ de vision *plus grand*, ce qui "
 "est plus logique ici."
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:270
+msgid "Scaling 2D and 3D elements differently using Viewports"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:272
+msgid ""
+"Using multiple Viewport nodes, you can have different scales for various "
+"elements. For instance, you can use this to render the 3D world at a low "
+"resolution while keeping 2D elements at the native resolution. This can "
+"improve performance significantly while keeping the HUD and other 2D "
+"elements crisp."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:277
+msgid ""
+"This is done by using the root Viewport node only for 2D elements, then "
+"creating a Viewport node to display the 3D world and displaying it using a "
+"ViewportContainer or TextureRect node. There will effectively be two "
+"viewports in the final project. One upside of using TextureRect over "
+"ViewportContainer is that it allows enable linear filtering. This makes "
+"scaled 3D viewports look better in many cases."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:284
+#, fuzzy
+msgid ""
+"See the `3D viewport scaling demo <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/viewport/3d_scaling>`__ for examples."
+msgstr ""
+"Pour voir un projet d’exemple, voyez la démo de système d’exploitation de "
+"test : https://github.com/godotengine/godot-demo-projects/tree/master/misc/"
+"os_test"

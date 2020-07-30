@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgid ""
 msgstr ""
 "Comme dans toute implémentation de script visuel, chaque nœud a des "
 "propriétés éditables. Dans Godot, cependant, nous évitons de bombarder les "
-"nœuds de contrôles éditables dans un but de lisibilité."
+"nœuds avec trop de contrôles éditables dans un but de lisibilité."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:20
 msgid ""
@@ -230,8 +230,8 @@ msgstr ""
 "aussi être utile. Les méthodes exécutent des actions spécifiques sur les "
 "objets. Dans le cas ci-dessus, la souris peut être déplacée vers une "
 "position en coordonnées locales par rapport au contrôle. Un autre cas "
-"d'utilisation commun est de dépêcher un nœud pour suppression, ce qui se "
-"fait en appelant la méthode *queue_free*."
+"d'utilisation commun la mise en file d'attente d'un nœud pour suppression, "
+"ce qui se fait en appelant la méthode *queue_free*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:109
 msgid ""
@@ -263,15 +263,15 @@ msgid ""
 "The result is that this value can be changed from your script by writing to "
 "a *Data Port*."
 msgstr ""
-"Le résultat est que cette valeur peut être changée de votre script en "
-"écrivant à un *Port de données*."
+"Le résultat est que cette valeur peut être changée depuis votre script en "
+"écrivant vers un *Port de données*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
 msgid ""
 "If instead reading this value is desired, drag the node again but hold :kbd:"
 "`Ctrl` (or :kbd:`Cmd` on macOS). This will create a getter:"
 msgstr ""
-"Si vous voulez lire cette valeur à la place, glissez à nouveau le nœud mais "
+"Si à la place, vous voulez lire cette valeur, glissez à nouveau le nœud mais "
 "pressez la touche :kbd:`Ctrl` (ou :kbd:`Cmd` sur macOS). Cela créera un "
 "getter :"
 
@@ -348,7 +348,7 @@ msgid ""
 msgstr ""
 "Il est également possible de créer vos propres signaux dans un script et de "
 "les utiliser. Pour cela, effectuez les mêmes étapes que pour les variables "
-"de l'étape précédente, à l'exception des *signaux* :"
+"de l'étape précédente, mais cette fois avec *Signals* :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:171
 msgid ""
@@ -446,11 +446,11 @@ msgid ""
 "this node is not used that often because of default input values in *Data "
 "Ports*, but it's good to know it exists."
 msgstr ""
-"La première est \"Constante\" qui vous permet de sélectionner n'importe "
-"quelle valeur de n'importe quel type comme constante, d'un entier (42) à une "
-"chaîne (\"Hello !\"). En général, ce nœud n'est pas souvent utilisé à cause "
-"des valeurs d'entrée par défaut dans les *Ports de données*, mais il est bon "
-"de savoir qu'il existe."
+"Le premier est \"Constant\" qui vous permet de sélectionner n'importe quelle "
+"valeur de n'importe quel type comme constante, d'un entier (42) à une chaîne "
+"(\"Hello !\"). En général, ce nœud n'est pas souvent utilisé à cause des "
+"valeurs d'entrée par défaut dans les *Ports de données*, mais il est bon de "
+"savoir qu'il existe."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:221
 msgid ""
@@ -511,7 +511,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:249
 msgid "Engine Singleton"
-msgstr "Singleton moteur"
+msgstr "Engine Singleton"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
 msgid ""
@@ -558,7 +558,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
-msgstr "Nœud de scène"
+msgstr "Scene Node"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:276
 msgid ""
@@ -610,13 +610,12 @@ msgid ""
 "to get familiar with."
 msgstr ""
 "SceneTree permet nombreuses choses de bas niveau, de régler des options "
-"d'étirement, d'appeler des groupes, de créer des minuteurs ou même de "
-"charger une autre scène. C'est une classe avec qui il est bon de se "
-"familiariser."
+"d'étirement, d'appeler des groupes, de créer des timers ou même de charger "
+"une autre scène. C'est une classe avec qui il est bon de se familiariser."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
-msgstr "Précharger"
+msgstr "Preload"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
 msgid ""
@@ -631,7 +630,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr "Chemin de la ressource"
+msgstr "Chemin de ressource"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -644,7 +643,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
 msgid "Comment"
-msgstr "Commentaire"
+msgstr "Comment"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:315
 msgid ""
@@ -687,7 +686,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
-msgstr "Itérateur"
+msgstr "Iterator"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:341
 msgid ""
@@ -714,7 +713,7 @@ msgstr "Une fois terminé, il passe par le port de séquence \"sortie\"."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:351
 msgid "Return"
-msgstr "Retour"
+msgstr "Return"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:353
 msgid ""
@@ -774,7 +773,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr "Tant que"
+msgstr "While"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:386
 msgid ""
@@ -831,7 +830,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:411
 msgid "Call"
-msgstr "Appel"
+msgstr "Call"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid ""
@@ -895,7 +894,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
-msgstr "Attendre"
+msgstr "Wait"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid ""
@@ -964,7 +963,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:481
 msgid "Expression Node"
-msgstr "Nœud d'expression"
+msgstr "Nœud expression"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid ""

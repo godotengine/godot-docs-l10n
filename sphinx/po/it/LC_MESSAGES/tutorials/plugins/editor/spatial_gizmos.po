@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgstr ""
 msgid "This would be a basic setup:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:57
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:59
 msgid ""
 "For simple gizmos, just inheriting :ref:`EditorSpatialGizmoPlugin "
 "<class_EditorSpatialGizmoPlugin>` is enough. If you want to store some per-"
@@ -69,25 +69,25 @@ msgid ""
 "the second approach."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:63
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
 msgid "Simple approach"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:67
 msgid ""
 "The first step is to, in our custom gizmo plugin, override the :ref:"
 "`has_gizmo()<class_EditorSpatialGizmoPlugin_method_has_gizmo>` method so "
 "that it returns ``true`` when the spatial parameter is of our target type."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:76
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:81
 msgid ""
 "Then we can override methods like :ref:"
 "`redraw()<class_EditorSpatialGizmoPlugin_method_redraw>` or all the handle "
 "related ones."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:107
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:115
 msgid ""
 "Note that we created a material in the `_init` method, and retrieved it in "
 "the `redraw` method using :ref:"
@@ -96,11 +96,11 @@ msgid ""
 "the gizmo (selected and/or editable)."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:112
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:120
 msgid "So the final plugin would look somewhat like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:148
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:161
 msgid ""
 "Note that we just added some handles in the redraw method, but we still need "
 "to implement the rest of handle-related callbacks in :ref:"
@@ -108,11 +108,11 @@ msgid ""
 "working handles."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:153
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:166
 msgid "Alternative approach"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:155
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:168
 msgid ""
 "In some cases we want to provide our own implementation of :ref:"
 "`EditorSpatialGizmo<class_EditorSpatialGizmo>`, maybe because we want to "
@@ -120,7 +120,7 @@ msgid ""
 "plugin and we don't want to go through the rewriting process."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:159
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:172
 msgid ""
 "In these cases all we need to do is, in our new gizmo plugin, override :ref:"
 "`create_gizmo()<class_EditorSpatialGizmoPlugin_method_create_gizmo>`, so it "
@@ -128,13 +128,13 @@ msgid ""
 "target."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:181
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:197
 msgid ""
 "This way all the gizmo logic and drawing methods can be implemented in a new "
 "class extending :ref:`EditorSpatialGizmo<class_EditorSpatialGizmo>`, like so:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:217
+#: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:235
 msgid ""
 "Note that we just added some handles in the redraw method, but we still need "
 "to implement the rest of handle-related callbacks in :ref:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,6 @@ msgstr ""
 "para seguir este tutorial. A pasta `end/` contém o resultado final."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
-#, fuzzy
 msgid ""
 "You can watch this tutorial as a `video on YouTube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
@@ -609,18 +608,20 @@ msgstr ""
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
-"``Align`` property to left and the ``Valign`` property to centre. Then "
+"``Align`` property to left and the ``Valign`` property to center. Then "
 "resize its left edge a bit to add some padding between the left edge of the "
 "``Background`` and the text."
 msgstr ""
 "Vamos alterar as propriedades de alinhamento do ``Number`` para movê-lo para "
 "a esquerda e para o centro do ``Background``. Selecione o nó ``Number``, "
-"altere sua propriedade ``Align`` para left e a propriedade ``VAlign`` para "
-"center. Em seguida, redimensione um pouco a borda esquerda para adicionar um "
-"preenchimento entre a borda esquerda do ``Background`` e o texto."
+"altere sua propriedade ``Align`` para `left`(esquerda) e a propriedade "
+"``VAlign`` para `center`(centro). Em seguida, redimensione um pouco a borda "
+"esquerda para adicionar um preenchimento entre a borda esquerda do "
+"``Background`` e o texto."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
-msgid "The Number node aligned to the left and centre"
+#, fuzzy
+msgid "The Number node aligned to the left and center"
 msgstr "O nó Number alinhado à esquerda e ao centro"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:297
@@ -844,7 +845,6 @@ msgid "Inherit the Bar Scene to build the LifeBar"
 msgstr "Herdar a Cena da Barra para construir a LifeBar"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
@@ -855,7 +855,8 @@ msgstr ""
 "Vá para ``Scene -> New Inherited Scene`` para criar um novo tipo de ``Bar``. "
 "Selecione a cena Bar e abra-a. Você deve ver uma nova aba [não-salva], que é "
 "como a sua ``Bar``, mas com todos os nós exceto a raiz em cinza. Pressione "
-"``Meta + S`` para salvar a nova cena herdada e nomeie-a como ``LifeBar``."
+"``Ctrl+ S``(`Cmd + S` para macOS) para salvar a nova cena herdada e nomeie-a "
+"como ``LifeBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
@@ -974,16 +975,16 @@ msgid "Use this option to create unique copies of the resources for one node"
 msgstr "Use esta opção para criar cópias exclusivas dos recursos para um nó"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
-#, fuzzy
 msgid ""
 "When you duplicate a node from the Scene tree, with :kbd:`Ctrl + D` (:kbd:"
 "`Cmd + D` on macOS), it shares its resources with the original node. You "
 "need to use ``Make Sub-Resources Unique`` before you can tweak the resources "
 "without affecting the source node."
 msgstr ""
-"Quando você duplica um nó da árvore Scene, com ``Meta+D``, ele compartilha "
-"seus recursos com o nó original. Você precisa usar o ``Make Sub-Resources "
-"Unique`` antes de poder ajustar os recursos sem afetar o nó de origem."
+"Quando você duplica um nó da árvore Scene, com ``Ctrl+D``(`Cmd + D` para "
+"macOS), ele compartilha seus recursos com o nó original. Você precisa usar o "
+"``Make Sub-Resources Unique`` antes de poder ajustar os recursos sem afetar "
+"o nó de origem."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:481
 msgid ""
@@ -1079,7 +1080,6 @@ msgid "The bomb counter is the same as the original Counter scene"
 msgstr "O contador da bomba é o mesmo que a cena do Counter original"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``EmeraldCounter`` and save the scene as "
@@ -1092,7 +1092,7 @@ msgid ""
 "keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
-"Vá para ``Cena -> Nova Cena Herdade`` novamente e selecione ``Counter.tscn`` "
+"Vá para ``Cena -> Nova Cena Herdada`` novamente e selecione ``Counter.tscn`` "
 "mais uma vez. Renomeie o nó raiz ``EmeraldCounter`` e salve a cena como "
 "``EmeraldCounter.tscn``. Para este, precisamos principalmente substituir o "
 "ícone da bomba pelo ícone de esmeralda. Na aba Arquivos, arraste o "

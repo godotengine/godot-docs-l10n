@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,7 +67,6 @@ msgstr ""
 "ルダには最終結果が含まれています。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
-#, fuzzy
 msgid ""
 "You can watch this tutorial as a `video on YouTube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
@@ -590,17 +589,18 @@ msgstr "ノードはBackground全体に固定されていますが、位置が�
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
-"``Align`` property to left and the ``Valign`` property to centre. Then "
+"``Align`` property to left and the ``Valign`` property to center. Then "
 "resize its left edge a bit to add some padding between the left edge of the "
 "``Background`` and the text."
 msgstr ""
 "``Number`` の ``Align`` プロパティを変更して、``Background`` の左側と中央に移"
-"動します。 ``Number`` ノードを選択し、その ``Align`` プロパティを ``left`` "
-"に、 ``Valign`` プロパティを ``center`` に変更します。 次に、その左端を少しサ"
-"イズ変更して、 ``Background`` の左端とテキストの間に余白を追加します。"
+"動します。 ``Number`` ノードを選択し、その ``Align`` プロパティを left に、 "
+"``Valign`` プロパティを center に変更します。 次に、その左端を少しサイズ変更"
+"して、 ``Background`` の左端とテキストの間に余白を追加します。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
-msgid "The Number node aligned to the left and centre"
+#, fuzzy
+msgid "The Number node aligned to the left and center"
 msgstr "左中央に揃えられたNumberノード"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:297
@@ -817,7 +817,6 @@ msgid "Inherit the Bar Scene to build the LifeBar"
 msgstr "Barシーンを継承してライフバーを構築する"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
@@ -826,10 +825,10 @@ msgid ""
 "name it ``LifeBar``."
 msgstr ""
 "``シーン → 新しい継承シーン`` に移動して、新しいタイプの ``Bar`` を作成しま"
-"す。\\ ``Bar`` シーンを選択して開きます。新しい [未保存] タブが表示されるはず"
+"す。\\ ``Bar`` シーンを選択して開きます。新しい［未保存］タブが表示されるはず"
 "です。これは ``Bar`` と似ていますが、ルート以外のすべてのノードがグレーで表示"
-"されています。\\ :kbd:`Meta+S` を押して、継承された新しいシーンを保存し、\\ "
-"``LifeBar`` という名前を付けます。"
+"されています。\\ :kbd:`Ctrl + S` (macOSでは :kbd:`Cmd + S`) を押して、継承さ"
+"れた新しいシーンを保存し、\\ ``LifeBar`` という名前を付けます。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
@@ -948,17 +947,16 @@ msgstr ""
 "を作成します"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
-#, fuzzy
 msgid ""
 "When you duplicate a node from the Scene tree, with :kbd:`Ctrl + D` (:kbd:"
 "`Cmd + D` on macOS), it shares its resources with the original node. You "
 "need to use ``Make Sub-Resources Unique`` before you can tweak the resources "
 "without affecting the source node."
 msgstr ""
-":kbd:`Meta + D` を使用してシーンツリーにあるノードを複製するときは、新しい"
-"ノードはリソースを元のノードと共有します。元ノードに影響を与えずにリソースを"
-"微調整するには、\\ ``サブリソースをユニーク化する`` を使用しなければなりませ"
-"ん。"
+":kbd:`Ctrl + D` (macOSでは :kbd:`Cmd + D`), を使用してシーンツリーにあるノー"
+"ドを複製するときは、新しいノードはリソースを元のノードと共有します。元ノード"
+"に影響を与えずにリソースを微調整するには、\\ ``サブリソースをユニーク化する"
+"`` を使用しなければなりません。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:481
 msgid ""
@@ -1051,7 +1049,6 @@ msgid "The bomb counter is the same as the original Counter scene"
 msgstr "爆弾カウンターは元のCounterシーンと同じです"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``EmeraldCounter`` and save the scene as "
@@ -1064,16 +1061,16 @@ msgid ""
 "keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
-"もう一度 ``シーン->新しい継承したシーン`` に移動し、 ``Counter.tscn`` を再度"
-"選択します。ルートノードの名前を ``EmeraldCounter`` に変更し、シーンを "
+"もう一度 ``シーン → 新しい継承したシーン`` に移動し、\\ ``Counter.tscn`` を再"
+"度選択します。ルートノードの名前を ``EmeraldCounter`` に変更し、シーンを "
 "``EmeraldCounter.tscn`` として保存します。このシーンについては、主に爆弾アイ"
-"コンをエメラルドアイコンに置き換える必要があります。「ファイルシステム」タブ"
-"で、 ``emeralds_icon.png`` を ``Icon`` ノードの ``Texture`` スロットにドラッ"
-"グします。 ``Icon`` はすでに ``Background`` ノードの右端に固定されているた"
-"め、その位置を変更でき、 ``EmeraldCounter`` コンテナーでスケーリングおよび再"
-"配置できます。エメラルドアイコンを少しだけ右下に移動します。位置の微調整には"
-"キーボードの矢印キーを使用して下さい。保存を行えば、これですべてのUI要素が完"
-"成しました。"
+"コンをエメラルドアイコンに置き換える必要があります。［ファイルシステム］タブ"
+"で、\\ ``emeralds_icon.png`` を ``Icon`` ノードの ``Texture`` スロットにド"
+"ラッグします。\\ ``Icon`` はすでに ``Background`` ノードの右端に固定されてい"
+"るため、その位置を変更でき、\\ ``EmeraldCounter`` コンテナーによってスケーリ"
+"ングおよび再配置できます。エメラルドアイコンを少しだけ右下に移動します。位置"
+"の微調整にはキーボードの矢印キーを使用して下さい。保存すれば、すべてのUI要素"
+"の完成です。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
 msgid "The emerald counter should look something like this"
@@ -1216,7 +1213,6 @@ msgstr ""
 "zip>`\\ ."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
-#, fuzzy
 msgid ""
 "**A final note about Responsive Design**. If you resize the GUI, you'll see "
 "the nodes move, but the textures and text won't scale. The GUI also has a "
@@ -1231,6 +1227,6 @@ msgstr ""
 "ノードが移動しますが、テクスチャとテキストはスケーリングしません。そしてGUI"
 "は、内部のテクスチャに基づく最小サイズも持ちます。ゲームでは、Webサイトほど柔"
 "軟なインターフェイスは必要ありません。横向きと縦向きの両方をサポートすること"
-"は、ほとんどないでしょう。横向きでは、最も一般的な比率の範囲は 4:3～16:9 で"
-"す。これらは互いに近いため、GUI要素はウィンドウサイズを変更する際に水平方向に"
-"移動するだけで十分です。"
+"は、ほとんどないはずです。どちらか一方になるでしょう。横向きでは、最も一般的"
+"な比率の範囲は 4:3～16:9 です。これらは互いに近いため、GUI要素はウィンドウサ"
+"イズを変更する際に水平方向に移動するだけで十分です。"

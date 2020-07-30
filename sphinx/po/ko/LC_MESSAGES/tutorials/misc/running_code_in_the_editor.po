@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,8 +42,8 @@ msgstr ""
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:13
 msgid ""
 "If you have a cannon that shoots cannonballs affected by physics (gravity), "
-"you can draw cannonball's trajectory in the editor, making level design a "
-"lot easier."
+"you can draw the cannonball's trajectory in the editor, making level design "
+"a lot easier."
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:14
@@ -76,7 +76,8 @@ msgstr "사용하는 법"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:30
 msgid ""
-"To turn a script into a tool, add ``tool`` keyword at the top of your code."
+"To turn a script into a tool, add the keyword ``tool`` at the top of your "
+"code."
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:32
@@ -85,30 +86,32 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:34
-msgid "For example, if you want to execute some code only in editor, use:"
+#, fuzzy
+msgid "For example, if you want to execute some code only in the editor, use:"
 msgstr ""
+"예를 들어, 충돌이 발생한 공간의 지점을 찾으려면 다음과 같이 하면 됩니다:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
-"previous expression:"
+"the same statement:"
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
 msgid ""
-"Pieces of code that are not having any of the 2 conditions above will run "
-"both in editor and in game."
+"Pieces of code do not have either of the 2 conditions above will run both in-"
+"editor and in-game."
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
-msgid "Here is how a ``_process()`` function might look like for you:"
+msgid "Here is how a ``_process()`` function might look for you:"
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
 msgid ""
-"Modifications in editor are permanent. In our case, when we remove the "
-"script, the node will keep its rotation direction. Be careful so that you "
-"don't make unwanted modifications."
+"Modifications in editor are permanent. For example, in the following case, "
+"when we remove the script, the node will keep its rotation. Be careful to "
+"avoid making unwanted modifications."
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:69
@@ -189,6 +192,6 @@ msgstr ""
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "
 "write the code how you want it, and only then add the ``tool`` keyword to "
-"the top. Also make sure you divide your code into part that runs in editor "
-"and part that runs in game. This way you can find your bug easier."
+"the top. Also, make sure to separate code that runs in-editor from code that "
+"runs in-game. This way, you can find bugs more easily."
 msgstr ""

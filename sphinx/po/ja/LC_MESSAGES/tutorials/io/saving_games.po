@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,7 +147,7 @@ msgstr ""
 "ります。ただし、最初にオブジェクトを作成する必要があり、ファイル名と親の値を"
 "使用してそれを実現できます。読み込み関数は次のとおりです:"
 
-#: ../../docs/tutorials/io/saving_games.rst:292
+#: ../../docs/tutorials/io/saving_games.rst:293
 msgid ""
 "Now we can save and load an arbitrary number of objects laid out almost "
 "anywhere across the scene tree! Each object can store different data "
@@ -157,11 +157,11 @@ msgstr ""
 "して読み込むことができます！各オブジェクトは、保存する必要があるデータに応じ"
 "て異なるデータを格納できます。"
 
-#: ../../docs/tutorials/io/saving_games.rst:297
+#: ../../docs/tutorials/io/saving_games.rst:298
 msgid "Some notes"
 msgstr "いくつかの注意事項"
 
-#: ../../docs/tutorials/io/saving_games.rst:299
+#: ../../docs/tutorials/io/saving_games.rst:300
 msgid ""
 "We have glossed over setting up the game state for loading. It's ultimately "
 "up to the project creator where much of this logic goes. This is often "
@@ -173,7 +173,7 @@ msgstr ""
 "雑であり、個々のプロジェクトのニーズに基づいて大幅にカスタマイズする必要があ"
 "ります。"
 
-#: ../../docs/tutorials/io/saving_games.rst:304
+#: ../../docs/tutorials/io/saving_games.rst:305
 msgid ""
 "Additionally, our implementation assumes no Persist objects are children of "
 "other Persist objects. Otherwise, invalid paths would be created. To "

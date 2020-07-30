@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Twórz interfejs z węzłami kontrolującymi"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screens come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -34,11 +33,7 @@ msgstr ""
 "kształtach i rozmiarach. Aby dostarczać na nie grę, musisz obsługiwać różne "
 "rozdzielczości i proporcje ekranu. Trudno jest zbudować interfejsy, które "
 "dostosują się do wszystkich platform. Na szczęście Godot posiada solidne "
-"narzędzia do projektowania i zarządzania takim interfejsem. Aby "
-"zaprojektować interfejs użytkownika, należy użyć węzłów Control. Są to węzły "
-"z zielonymi ikonami w edytorze. Jest ich dziesiątki, aby stworzyć cokolwiek "
-"od pasków życia do złożonych aplikacji. Edytor i wtyczki Godota używają tych "
-"węzłów."
+"narzędzia do projektowania i zarządzania takim interfejsem."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
@@ -51,10 +46,9 @@ msgstr ""
 "Nauczysz się:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
-#, fuzzy
 msgid "The five most useful control nodes to build your games' interface"
 msgstr ""
-"Pięć najbardziej użytecznych węzłów sterujących do budowy interfejsu gier"
+"Pięć najbardziej użytecznych węzłów kontrolnych do budowy interfejsu gier"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
@@ -77,7 +71,7 @@ msgid ""
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
 msgstr ""
 "Aby nauczyć się jak kontrolować interfejs i podłączyć go do innego skryptu, "
-"przeczytaj: ref:`Zbuduj swoje pierwsze UI w Godocie "
+"przeczytaj :ref:`Zbuduj swoje pierwsze UI w Godocie "
 "<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
@@ -99,7 +93,7 @@ msgid ""
 "capabilities. So to make your life easier use Control nodes wherever "
 "possible when building your UIs."
 msgstr ""
-"Controle node'y mają wyjątkowe właściwości, dzięki którym mogą dobrze "
+"Control node'y mają wyjątkowe właściwości, dzięki którym mogą dobrze "
 "współpracować. Inne node'y wizualne, jak Node2D i Sprite, nie posiadają "
 "takich możliwości. Więc by uczynić swoje życie łatwiejszym, korzystaj z "
 "Control node'ów, kiedy tylko możesz przy tworzeniu własnych interfejsów."

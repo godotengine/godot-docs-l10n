@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,10 +45,11 @@ msgstr ""
 "物。 以下是一些用例:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:13
+#, fuzzy
 msgid ""
 "If you have a cannon that shoots cannonballs affected by physics (gravity), "
-"you can draw cannonball's trajectory in the editor, making level design a "
-"lot easier."
+"you can draw the cannonball's trajectory in the editor, making level design "
+"a lot easier."
 msgstr ""
 "如果您有一门大炮发出受物理(重力)影响的炮弹，您可以在编辑器中绘制炮弹的轨迹，"
 "使得关卡设计更容易。"
@@ -86,8 +87,10 @@ msgid "How to use it"
 msgstr "如何使用它"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:30
+#, fuzzy
 msgid ""
-"To turn a script into a tool, add ``tool`` keyword at the top of your code."
+"To turn a script into a tool, add the keyword ``tool`` at the top of your "
+"code."
 msgstr "要将脚本转换为工具，请在代码顶部添加 ``tool`` 关键字。"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:32
@@ -96,30 +99,35 @@ msgid ""
 msgstr "要检查您当前是否在编辑器中，请使用 : ``Engine.editor_hint``。"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:34
-msgid "For example, if you want to execute some code only in editor, use:"
+#, fuzzy
+msgid "For example, if you want to execute some code only in the editor, use:"
 msgstr "例如，如果只想在编辑器中执行某些代码，请使用:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
+#, fuzzy
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
-"previous expression:"
+"the same statement:"
 msgstr "另一方面，如果您只想在游戏中执行代码，只需否定先前的表达式:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
+#, fuzzy
 msgid ""
-"Pieces of code that are not having any of the 2 conditions above will run "
-"both in editor and in game."
+"Pieces of code do not have either of the 2 conditions above will run both in-"
+"editor and in-game."
 msgstr "没有上述任何条件的代码片段将在编辑器和游戏中运行。"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
-msgid "Here is how a ``_process()`` function might look like for you:"
+#, fuzzy
+msgid "Here is how a ``_process()`` function might look for you:"
 msgstr "以下是 ``_process()`` 函数的示例:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
+#, fuzzy
 msgid ""
-"Modifications in editor are permanent. In our case, when we remove the "
-"script, the node will keep its rotation direction. Be careful so that you "
-"don't make unwanted modifications."
+"Modifications in editor are permanent. For example, in the following case, "
+"when we remove the script, the node will keep its rotation. Be careful to "
+"avoid making unwanted modifications."
 msgstr ""
 "编辑器中的修改是永久性的。 在我们的示例中，当我们删除脚本时，节点将保持其旋转"
 "方向。 请注意不要进行不必要的修改。"
@@ -208,11 +216,12 @@ msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:153
+#, fuzzy
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "
 "write the code how you want it, and only then add the ``tool`` keyword to "
-"the top. Also make sure you divide your code into part that runs in editor "
-"and part that runs in game. This way you can find your bug easier."
+"the top. Also, make sure to separate code that runs in-editor from code that "
+"runs in-game. This way, you can find bugs more easily."
 msgstr ""
 "不正确地使用 ``tool`` 可能会产生许多错误。 建议首先按照您想要的方式编写代码，"
 "然后只在顶部添加 ``tool`` 关键字。 还要确保将代码划分为在编辑器中运行的部分和"

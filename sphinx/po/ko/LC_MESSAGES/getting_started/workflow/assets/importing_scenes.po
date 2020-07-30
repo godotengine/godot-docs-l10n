@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -836,7 +836,8 @@ msgstr ""
 "관계없습니다. 가져온 씬에서는 나타나지 않습니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
-msgid "Create collisions (-col, -colonly, -convcolonly)"
+#, fuzzy
+msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
 msgstr "충돌 생성 (-col, -colonly, -convcolonly)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
@@ -848,6 +849,15 @@ msgstr ""
 "같은 기하학을 사용하여 자식 정적 충돌 노드가 추가될 것입니다."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:375
+#, fuzzy
+msgid ""
+"Option \"-convcol\" will create a :ref:`class_convexpolygonshape` instead of "
+"a :ref:`class_concavepolygonshape`."
+msgstr ""
+"\"-convcolonly\" 설정은 :ref:`class_concavepolygonshape` 대신 :ref:"
+"`class_convexpolygonshape`\\ 를 만들 것입니다."
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:377
 msgid ""
 "However, it is often the case that the visual geometry is too complex or too "
 "un-smooth for collisions, which ends up not working well."
@@ -855,7 +865,7 @@ msgstr ""
 "하지만, 시각적인 기하학이 너무 복잡하거나 충돌에 너무 부드럽지 않은 경우, 잘 "
 "작업되지 않을 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:378
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
 msgid ""
 "To solve this, the \"-colonly\" modifier exists, which will remove the mesh "
 "upon import and create a :ref:`class_staticbody` collision instead. This "
@@ -865,15 +875,16 @@ msgstr ""
 "거되고 :ref:`class_staticbody` 충돌이 대신 생성됩니다. 이렇게 하면 시각적 메"
 "시와 실제 충돌을 분리할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:382
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
+#, fuzzy
 msgid ""
-"Option \"-convcolonly\" will create a :ref:`class_convexpolygonshape` "
-"instead of a :ref:`class_concavepolygonshape`."
+"Option \"-convcolonly\" works in a similar way but will create a :ref:"
+"`class_convexpolygonshape` instead."
 msgstr ""
 "\"-convcolonly\" 설정은 :ref:`class_concavepolygonshape` 대신 :ref:"
 "`class_convexpolygonshape`\\ 를 만들 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:386
 msgid ""
 "Option \"-colonly\" can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
@@ -885,26 +896,26 @@ msgstr ""
 "노드는 미리 정의된 모양 중 하나를 가지며, 블렌더의 Empty 형태 타입에 따라 다"
 "릅니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:391
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:393
 msgid "Single arrow will create a :ref:`class_rayshape`"
 msgstr "Single arrow는 :ref:`class_rayshape`\\ 를 만들 것입니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:392
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
 msgid "Cube will create a :ref:`class_boxshape`"
 msgstr "Cube는 :ref:`class_boxshape`\\ 를 만들 것입니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:393
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:395
 msgid "Image will create a :ref:`class_planeshape`"
 msgstr "Image는 :ref:`class_planeshape`\\ 를 만들 것입니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:396
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`"
 msgstr ""
 "Sphere (그리고 나열되지 않은 나머지)는 :ref:`class_sphereshape`\\ 를 만들 것"
 "입니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:396
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
 msgid ""
 "For better visibility in Blender's editor, the user can set \"X-Ray\" option "
 "on collision empties and set some distinct color for them in User "
@@ -914,11 +925,11 @@ msgstr ""
 "User Preferences / Themes / 3D View / Empty에서 뚜렷한 색상을 설정할 수 있습"
 "니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:400
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
 msgid "Create navigation (-navmesh)"
 msgstr "내비게이션 생성 (-navmesh)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
 msgid ""
 "A mesh node with this suffix will be converted to a navigation mesh. "
 "Original Mesh node will be removed."
@@ -926,11 +937,11 @@ msgstr ""
 "이 접미사를 가진 메시 노드는 내비게이션 메시로 변환될 것입니다. 기존 메시 노"
 "드는 삭제될 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "VehicleBody 만들기 (-vehicle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:410
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleBody <class_VehicleBody>` node."
@@ -938,11 +949,11 @@ msgstr ""
 "이 접미사를 가진 메시 노드는 :ref:`VehicleBody <class_VehicleBody>` 노드의 자"
 "식으로 가져오게 됩니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "VehicleWheel 만들기 (-wheel)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:415
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleWheel <class_VehicleWheel>` node."
@@ -950,19 +961,19 @@ msgstr ""
 "이 접미사를 가진 메시 노드는 :ref:`VehicleWheel <class_VehicleWheel>` 노드의 "
 "자식으로 가져오게 됩니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:418
 msgid "Rigid Body (-rigid)"
 msgstr "리지드 바디 (-rigid)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:418
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:420
 msgid "Creates a rigid body from this mesh."
 msgstr "이 메시에서 리지드 바디를 만듭니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:421
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
 msgid "Animation loop (-loop, -cycle)"
 msgstr "애니메이션 루프 (-loop, -cycle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "\"loop\" or \"cycle\" will be imported as a Godot Animation with the loop "
@@ -972,7 +983,7 @@ msgstr ""
 "은 루프 플래그가 설정된 Godot 애니메이션을 가져올 것입니다. 대소문자를 구분하"
 "고 하이픈(-)이 필요하지 않습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:429
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the \"loop\" or \"cycle\" prefix or suffix."

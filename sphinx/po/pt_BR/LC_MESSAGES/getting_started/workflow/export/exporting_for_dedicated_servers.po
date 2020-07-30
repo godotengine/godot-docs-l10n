@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,11 +108,33 @@ msgstr "Exportação para PC"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:38
 #, fuzzy
+msgid "There are two ways to export a project for a server:"
+msgstr "Há algumas coisas para observar:"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:40
+msgid ""
+"Create a Linux/X11 export preset, define a custom Release export template "
+"that points to the server binary then export the project as usual."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:42
+msgid "Export a PCK file only, preferably from a Linux/X11 export preset."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:44
+msgid ""
+"Both methods should result in identical output. The text below describes the "
+"PCK file approach."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:47
+#, fuzzy
 msgid ""
 "Once you've downloaded a server binary, you should export a PCK file "
-"containing your project data. It's recommended to create a Linux export "
-"preset for this purpose. After creating the export preset, click **Export "
-"PCK/ZIP** at the bottom of the Export dialog then choose a destination path."
+"containing your project data. After creating the export preset, click "
+"**Export PCK/ZIP** at the bottom of the Export dialog then choose a "
+"destination path. The **Export With Debug** checkbox in the file dialog has "
+"no bearing on the final PCK file, so you can leave it as-is."
 msgstr ""
 "Assim que o download terminar, você deve exportar um arquivo PCK contendo os "
 "dados do seu projeto. É recomendado criar uma configuração de exportação "
@@ -120,20 +142,21 @@ msgstr ""
 "clique em **Export PCK/ZIP** na parte inferior da caixa de mensagem , depois "
 "escolha o caminho de destino."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:43
-msgid ""
-"The **Export With Debug** checkbox in the file dialog has no bearing on the "
-"final PCK file, so you can leave it as-is."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:46
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:53
 #, fuzzy
 msgid "See :ref:`doc_exporting_projects` for more information."
 msgstr ""
 "Veja :ref:`Executando código no editor <doc_running_code_in_the_editor>` "
 "para mais informações."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:50
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:57
+msgid ""
+"If you're exporting the project from a headless editor, call the headless "
+"editor with the `--export-pack` option while in the project folder to export "
+"only a PCK file."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:63
 msgid ""
 "The PCK file will include resources not normally needed by the server, such "
 "as textures and sounds. This means the PCK file will be larger than it could "
@@ -146,7 +169,7 @@ msgstr ""
 "PCK para uso em servidor, está planejado para uma atualização futura do "
 "Godot."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:55
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:68
 msgid ""
 "On the bright side, this allows the same PCK file to be used both by a "
 "client and dedicated server build. This can be useful if you want to ship a "
@@ -157,12 +180,12 @@ msgstr ""
 "único arquivo que pode ser usado, tanto por cliente, quanto por servidor "
 "dedicado."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:60
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:73
 #, fuzzy
 msgid "Preparing the server distribution"
 msgstr "Preparando o projeto"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:62
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:75
 msgid ""
 "After downloading or compiling a server binary, you should now place it in "
 "the same folder as the PCK file you've exported. The server binary should "
@@ -178,11 +201,11 @@ msgstr ""
 "servidor com um PCK que tem um nome diferente , você pode especificar o "
 "caminho para o arquivo PCK utilizando o argumento ``--main-pack``::"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:72
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:85
 msgid "Next steps"
 msgstr "Próximos passos"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:74
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:87
 msgid ""
 "On Linux, to make your dedicated server restart after a crash or system "
 "reboot, you can `create a systemd service <https://medium.com/@benmorel/"
@@ -196,7 +219,7 @@ msgstr ""
 "permite que você veja os logs do servidor de maneira mais fácil, com rotação "
 "automática de log provida pelo systemd."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:80
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:93
 msgid ""
 "If you have experience with containers, you could also look into wrapping "
 "your dedicated server in a `Docker <https://www.docker.com/>`__ container. "

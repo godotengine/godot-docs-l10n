@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,19 +173,25 @@ msgstr ""
 msgid "**godot_project_to_export** is the name of the Godot project."
 msgstr "**godot_project_to_export**\\ 는 Godot 프로젝트의 이름입니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:67
+#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:66
+msgid ""
+"**godot_project_to_export** must not be the same as "
+"**exported_xcode_project_name** to prevent signing issues in Xcode."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:70
 msgid "Steps to link a Godot project folder to Xcode"
 msgstr "Godot 프로젝트 폴더를 Xcode에 연결하는 단계"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:69
+#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:72
 msgid "Start from an exported iOS project (follow the steps above)."
 msgstr "내보낸 iOS 프로젝트에서 시작합니다 (앞의 단계를 따라야 합니다)."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:70
+#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:73
 msgid "In Finder, drag the Godot project folder into the Xcode file browser."
 msgstr "Finder에서, Godot 프로젝트 폴더를 Xcode 파일 브라우저로 드래그합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:74
+#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:77
 msgid ""
 "3. In the dialog, make sure **Create folder references** is selected. This "
 "means you will be able to continue to edit your Godot project in its current "
@@ -194,16 +200,16 @@ msgstr ""
 "3. 대화 상자에서, **Create folder references**\\ 가 선택되어야 합니다. 이게 "
 "있어야 Godot 프로젝트를 현재 위치에서 계속 편집할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:79
+#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:82
 msgid "See the **godot_project_to_export** folder in the Xcode file browser."
 msgstr "Xcode 파일 브라우저에서 **godot_project_to_export** 폴더를 봅니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:80
+#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:83
 msgid "Delete **exported_xcode_project_name.pck** from the Xcode project."
 msgstr ""
 "Xcode 프로젝트에서 **exported_xcode_project_name.pck**\\ 를 삭제합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:84
+#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:87
 msgid ""
 "6. Open **exported_xcode_project_name-Info.plist** and add a string property "
 "named **godot_path** (this is the real key name) with a value "
@@ -213,7 +219,7 @@ msgstr ""
 "는 문자열 속성을 추가하고 (이것이 진짜 키 이름입니다) "
 "**godot_project_to_export** 값을 줍니다 (이것이 프로젝트의 이름입니다)"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:90
+#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:93
 msgid ""
 "That's it! You can now edit your project in the Godot editor and build it in "
 "Xcode when you want to run it on a device."
@@ -221,11 +227,11 @@ msgstr ""
 "됬습니다! 이제 Godot 편집기에서 프로젝트를 편집할 수 있고 기기에서 실행하고 "
 "싶을 때 Xcode에서 빌드할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:97
 msgid "Services for iOS"
 msgstr "iOS 용 서비스"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:96
+#: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:99
 msgid ""
 "Special iOS services can be used in Godot. Check out the :ref:"
 "`doc_services_for_ios` page."

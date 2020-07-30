@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
-msgstr ""
+msgstr "einen externen Text Editor nutzen"
 
 #: ../../docs/getting_started/editor/external_editor.rst:8
 msgid ""
@@ -34,6 +34,9 @@ msgid ""
 "relevant editor settings via: ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
+"Godot kann mit einem externen Texteditor genutzt werden, z.B. Sublime Text "
+"oder Visual Studio Code. Um dies zu aktivieren gehe in die Editor "
+"Einstellungen unter:``Editor -> Editor Settings -> Text Editor -> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:16
 msgid ""
@@ -49,39 +52,39 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "Is replaced with"
-msgstr ""
+msgstr "wird ersetzt durch"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "``{project}``"
-msgstr ""
+msgstr "``{project}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The absolute path to the project directory"
-msgstr ""
+msgstr "Der absolute Pfad zum Projekt Verzeichnis"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "``{file}``"
-msgstr ""
+msgstr "``{file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The absolute path to the file"
-msgstr ""
+msgstr "Der absolute Pfad zur Datei"
 
 #: ../../docs/getting_started/editor/external_editor.rst:28
 msgid "``{col}``"
-msgstr ""
+msgstr "``{col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:28
 msgid "The column number of the error"
-msgstr ""
+msgstr "Die Spaltennummer des Fehlers"
 
 #: ../../docs/getting_started/editor/external_editor.rst:30
 msgid "``{line}``"
-msgstr ""
+msgstr "``{line}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:30
 msgid "The line number of the error"
-msgstr ""
+msgstr "Die Zeilennummer des Fehlers"
 
 #: ../../docs/getting_started/editor/external_editor.rst:33
 msgid "Some example Exec Flags for various editors include:"
@@ -97,11 +100,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "Geany/Kate"
-msgstr ""
+msgstr "Geany/Kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "``{file} --line {line} --column {col}``"
-msgstr ""
+msgstr "``{file} --line {line} --column {col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "Atom/Sublime Text"
@@ -109,31 +112,31 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "``{file}:{line}``"
-msgstr ""
+msgstr "``{file}:{line}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "JetBrains Rider"
-msgstr ""
+msgstr "JetBrains Rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "``--line {line} {file}``"
-msgstr ""
+msgstr "``--line {line} {file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:44
 msgid "Visual Studio Code"
-msgstr ""
+msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/editor/external_editor.rst:44
 msgid "``{project} --goto {file}:{line}:{col}``"
-msgstr ""
+msgstr "``{project} --goto {file}:{line}:{col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:46
 msgid "Vim (gVim)"
-msgstr ""
+msgstr "Vim (gVim)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:46
 msgid "``\"+call cursor({line}, {col})\" {file}``"
-msgstr ""
+msgstr "``\"+call cursor({line}, {col})\" {file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:49
 msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."

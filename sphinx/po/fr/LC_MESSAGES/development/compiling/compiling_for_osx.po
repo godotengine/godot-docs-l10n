@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,27 +83,30 @@ msgid "Compiling"
 msgstr "Compilation"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:33
-#, fuzzy
 msgid "Start a terminal, go to the root directory of the engine source code."
 msgstr ""
-"Démarrez un terminal, allez dans le dossier racine du code source du moteur "
-"et tapez :"
+"Démarrez un terminal et allez au répertoire racine du code source du moteur."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:35
 msgid "To compile for Intel (x86-64) powered Macs, use::"
-msgstr ""
+msgstr "Pour compiler pour les Macs équipés Intel (x86-64), utilisez :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:39
 msgid ""
 "To compile for Apple Silicon (ARM64) powered Macs, use (only for Godot "
 "3.2.3+)::"
 msgstr ""
+"Pour compiler pour les Macs équipés Apple Silicon (ARM64), utilisez "
+"(uniquement pour Godot 3.2.3+) :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:43
 msgid ""
 "To support both architectures in a single \"Universal 2\" binary, run the "
 "above two commands and then use ``lipo`` to bundle them together::"
 msgstr ""
+"Pour prendre en charge les deux architectures dans un seul binaire "
+"\"Universal 2\", exécutez les deux commandes ci-dessus et utilisez ensuite "
+"``lipo`` pour les regrouper :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:47
 msgid ""
@@ -129,15 +132,14 @@ msgstr ""
 "ou ``_sc_`` dans le dossier ``bin/``."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:57
-#, fuzzy
 msgid ""
 "To create an ``.app`` bundle like in the official builds, you need to use "
 "the template located in ``misc/dist/osx_tools.app``. Typically, for an "
 "optimized editor binary built with ``target=release_debug``::"
 msgstr ""
-"Pour créer un ``.app`` comme dans les builds officielles, vous devez "
+"Pour créer un bundle ``.app`` comme dans les builds officielles, vous devez "
 "utiliser le modèle situé dans ``misc/dist/osx_tools.app``. Typiquement, pour "
-"un éditeur binaire optimisé construit avec ``scons p=osx "
+"un compilation binaire optimisée de l'éditeur avec ``scons p=osx "
 "target=release_debug`` :"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:67

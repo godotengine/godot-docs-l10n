@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,9 +147,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:64
-#, fuzzy
 msgid "Starting the project"
-msgstr "Configurando el proyecto"
+msgstr "Iniciando el proyecto"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:65
 msgid ""
@@ -224,9 +223,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:118
-#, fuzzy
 msgid "Customizing the behavior"
-msgstr "Personalización de la Compilación"
+msgstr "Personalizando el comportamiento"
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:119
 msgid ""
@@ -260,6 +258,12 @@ msgid ""
 "case of the ``ArrayBuffer``, or one of its views, a second argument must be "
 "specified to define an internal path for the loaded resource."
 msgstr ""
+"Si tu proyecto requiere que algunos archivos estén disponibles en el momento "
+"en que se cargan, puedes precargarlos llamando al método :js:meth:`engine."
+"preloadFile` con una ruta a un archivo o proporcionándole un objeto "
+"``ArrayBuffer``. En el caso del ``ArrayBuffer``, o una de sus vistas, se "
+"debe especificar un segundo argumento para definir una ruta interna para el "
+"recurso cargado."
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:137
 msgid "Customizing the presentation"

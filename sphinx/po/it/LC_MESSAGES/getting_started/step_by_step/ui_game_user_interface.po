@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
 msgid "Design the GUI"
-msgstr ""
+msgstr "Progettare la GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
 msgid ""
@@ -28,19 +28,24 @@ msgid ""
 "energy bar, and bomb and emerald counters. By the end of this tutorial, "
 "you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
+"Ora che hai fissato le basi, vedremo come creare un interfaccia utente (GUI) "
+"per il gioco con componenti UI riutilizzabili: una barra della vita, una "
+"dell'energia, una bomba e un contatore degli smeraldi. Arrivato alla fine di "
+"questo tutorial, avrai una GUI per il gioco, pronto per controllarla con "
+"GDScript o VisualScript:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
 msgid "The final result"
-msgstr ""
+msgstr "Il risultato finale"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:15
 msgid "You'll also learn to:"
-msgstr ""
+msgstr "Imparerai anche a:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:17
 msgid "Create flexible UI components"
-msgstr ""
+msgstr "Creare un componente UI flessibile"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:18
 msgid "Use scene inheritance"
@@ -48,7 +53,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:19
 msgid "Build a complex UI"
-msgstr ""
+msgstr "Creare una UI complessa"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:21
 msgid ""
@@ -56,16 +61,22 @@ msgid ""
 "ui_gui_design.zip>` and extract the archive. Import the `start/` project in "
 "Godot to follow this tutorial. The `end/` folder contains the final result."
 msgstr ""
+"Scarica i file del progetto :download:`ui_gui_design.zip <files/"
+"ui_gui_design.zip>` ed estrai l'archivio. Importa il progetto `start/` in "
+"Godot per seguire questo tutorial. La cartella `end/` contiene i risultati "
+"finali."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
 msgid ""
 "You can watch this tutorial as a `video on YouTube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
 msgstr ""
+"Puoi vedere questo tutorial come `video su YouTube <https://www.youtube.com/"
+"watch?v=y1E_y9AIqow>`_."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
 msgid "Breaking down the UI"
-msgstr ""
+msgstr "Scomporre la UI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:30
 msgid ""
@@ -73,29 +84,35 @@ msgid ""
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
 "up to three columns:"
 msgstr ""
+"Andiamo ad analizzare l'UI e pianifichiamo i contenitori che useremo. Come "
+"in :doc:`ui_main_menu`, partiremo con un ``MarginContainer``. Poi, potremo "
+"creare fino a tre colonne:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
 msgid "The life and energy counters on the left"
-msgstr ""
+msgstr "I contatori della vita e dell'energia a sinistra"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:35
 msgid "The life and energy bars"
-msgstr ""
+msgstr "Le barre della vita e dell'energia"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
 msgid "The bomb and emerald counters on the right"
-msgstr ""
+msgstr "I contatori delle bombe e degli smeraldi a destra"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
 "But the bar's label and the gauge are two parts of the same UI element. If "
 "we think of them this way, we're left with two columns:"
 msgstr ""
+"Ma l'etichetta della barra e l'indicatore sono due parti dello stesso "
+"elemento dell'interfaccia utente. Se li pensiamo in questo modo, rimangono "
+"due colonne:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:41
 msgid "The life and energy bars on the left"
-msgstr ""
+msgstr "Le barre della vita e dell'energia a sinistra"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
 msgid ""
@@ -435,13 +452,13 @@ msgstr ""
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
-"``Align`` property to left and the ``Valign`` property to centre. Then "
+"``Align`` property to left and the ``Valign`` property to center. Then "
 "resize its left edge a bit to add some padding between the left edge of the "
 "``Background`` and the text."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
-msgid "The Number node aligned to the left and centre"
+msgid "The Number node aligned to the left and center"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:297

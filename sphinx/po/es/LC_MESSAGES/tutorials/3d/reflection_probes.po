@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:4
 msgid "Reflection probes"
-msgstr "Sondas de reflexión"
+msgstr "Reflection Probe"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:7
 msgid "Introduction"
@@ -32,8 +32,8 @@ msgid ""
 "ambient light for objects inside their area of influence."
 msgstr ""
 "Como se indica en el :ref:`doc_spatial_material`, los objetos pueden mostrar "
-"luz reflejada o difusa. Las sondas de reflexión se utilizan como fuente de "
-"luz reflejada y ambiental para los objetos dentro de su área de influencia."
+"luz reflejada o difusa. Reflection probe se utiliza como fuente de luz "
+"reflejada y ambiental para los objetos dentro de su área de influencia."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:12
 msgid ""
@@ -51,7 +51,7 @@ msgid ""
 "While these probes are an efficient way of storing reflections, they have a "
 "few shortcomings:"
 msgstr ""
-"Si bien estas sondas son una forma eficiente de almacenar los reflejos, "
+"Si bien estos probes son una forma eficiente de almacenar los reflejos, "
 "tienen algunas deficiencias:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:17
@@ -105,12 +105,16 @@ msgid ""
 "This setting changes the reflection from an infinite skybox to reflecting a "
 "box the size of the probe:"
 msgstr ""
+"Este ajuste cambia el reflejo de una skybox infinita por el reflejo de una "
+"caja del tamaño de probe:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:41
 msgid ""
 "Adjusting the box walls may help improve the reflection a bit, but it will "
 "always look best in box shaped rooms."
 msgstr ""
+"Ajustar las paredes de la caja puede ayudar a mejorar un poco el reflejo, "
+"pero siempre se verá mejor en las habitaciones con forma de caja."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:44
 msgid ""
@@ -118,6 +122,9 @@ msgid ""
 "some reason, the room shape or contents occlude the center, it can be "
 "displaced to an empty place by moving the handles in the center:"
 msgstr ""
+"Probe captura los entornos desde el centro del gizmo. Si, por alguna razón, "
+"la forma de la habitación o el contenido ocluyen su centro, puede ser "
+"desplazado a un lugar vacío moviendo los manejadores al centro:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:50
 msgid ""
@@ -126,6 +133,11 @@ msgid ""
 "to save on performance and memory. If you want shadows in the probe, they "
 "can be toggled on/off with the *Enable Shadow* setting:"
 msgstr ""
+"Por defecto, el mapeo de sombras está desactivado al renderizar las sondas "
+"(sólo en la imagen renderizada dentro de la sonda, no en la escena actual). "
+"Esta es una forma sencilla de ahorrar en rendimiento y memoria. Si quieres "
+"sombras en la sonda, pueden ser activadas o desactivadas con el ajuste "
+"*Enable Shadow*:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:57
 msgid ""
@@ -134,10 +146,14 @@ msgid ""
 "around. To keep objects from being rendered in the reflections, use the "
 "*Cull Mask* setting:"
 msgstr ""
+"Por último, toma en cuenta que tal vez no quieras que Reflection Probe "
+"renderice algunos objetos. Un escenario típico es un enemigo dentro de la "
+"habitación que se moverá. Para evitar que los objetos se rendericen en los "
+"reflejos, usa el ajuste de *Cull Mask*:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:65
 msgid "Interior vs exterior"
-msgstr ""
+msgstr "Interior vs exterior"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:67
 msgid ""
@@ -145,12 +161,19 @@ msgid ""
 "that the **Interior** property be enabled. This stops the probe from "
 "rendering the sky and also allows custom ambient lighting settings."
 msgstr ""
+"Si está utilizando sondas de reflexión en un ambiente interior, se "
+"recomienda que la propiedad **Interior** esté activada. Esto impide que la "
+"sonda represente el cielo y también permite ajustes personalizados de "
+"iluminación ambiental."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:73
 msgid ""
 "When probes are set to **Interior**, custom constant ambient lighting can be "
 "specified per probe. Just choose a color and an energy."
 msgstr ""
+"Cuando las sondas están configuradas en **Interior**, se puede especificar "
+"una iluminación ambiental constante personalizada por cada sonda. Sólo "
+"tienes que elegir un color y una energía."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:76
 msgid ""
@@ -158,16 +181,21 @@ msgid ""
 "by tweaking the **Ambient Contribution** property (0.0 means pure ambient "
 "color, while 1.0 means pure diffuse capture)."
 msgstr ""
+"Opcionalmente, puede mezclar esta luz ambiental con la captura difusa de la "
+"sonda ajustando la propiedad **Ambient Contribution** (0.0 significa color "
+"ambiental puro, mientras que 1.0 significa captura difusa pura)."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:81
 msgid "Blending"
-msgstr ""
+msgstr "Blending"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:83
 msgid ""
 "Multiple reflection probes can be used, and Godot will blend them where they "
 "overlap using a smart algorithm:"
 msgstr ""
+"Se pueden utilizar sondas de reflexión múltiple, y Godot las mezclará donde "
+"se superpongan utilizando un algoritmo inteligente:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:87
 msgid ""
@@ -176,6 +204,11 @@ msgid ""
 "when using perfectly mirrored reflections. Normally, scenes have normal "
 "mapping and varying levels of roughness, which can hide this."
 msgstr ""
+"Como pueden ver, esta mezcla nunca es perfecta (después de todo, estos son "
+"reflejos de caja, no reflejos reales), pero estos artefactos sólo son "
+"visibles cuando se utilizan reflejos perfectamente reflejados. Normalmente, "
+"las escenas tienen un mapeo normal y diferentes niveles de rugosidad, que "
+"pueden ocultar esto."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:93
 msgid ""
@@ -184,6 +217,11 @@ msgid ""
 "reflections appear more faithful, while probes are only used as a fallback "
 "when no screen-space information is found:"
 msgstr ""
+"Alternativamente, las Reflection Probes funcionan bien mezcladas con los "
+"Screen Space Reflections para resolver estos problemas. Combinándolas hace "
+"que los reflejos locales parezcan más fieles, mientras que las sondas sólo "
+"se utilizan como una solución alternativa cuando no se encuentra información "
+"sobre el espacio en la pantalla:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:99
 msgid ""
@@ -192,6 +230,11 @@ msgid ""
 "a probe can be marked as *exterior* (so it will get sky reflections) while "
 "on the inside, it can be interior."
 msgstr ""
+"Por último, la mezcla de sondas interiores y exteriores es el enfoque "
+"recomendado cuando se hacen niveles que combinan tanto interiores como "
+"exteriores. Cerca de la puerta, una sonda puede ser marcada como *exterior* "
+"(así obtendrá reflejos del cielo) mientras que en el interior, puede ser "
+"interior."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:104
 msgid "Reflection atlas"
@@ -203,6 +246,9 @@ msgid ""
 "fit into a Reflection Atlas. The size and amount of probes can be customized "
 "in Project Settings -> Quality -> Reflections"
 msgstr ""
+"En la actual implementación del renderizador, todas las sondas son del mismo "
+"tamaño y caben en un Reflection Atlas. El tamaño y la cantidad de sondas se "
+"pueden personalizar en Configuración del proyecto -> Calidad -> Reflections"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:110
 msgid ""
@@ -210,3 +256,6 @@ msgid ""
 "in a scene. This value needs to be increased if you need more reflection "
 "probes."
 msgstr ""
+"El ajuste por defecto de Atlas Subdiv: 8 permitirá hasta 16 sondas de "
+"reflexión en una escena. Este valor debe ser aumentado si se necesitan más "
+"sondas de reflexión."

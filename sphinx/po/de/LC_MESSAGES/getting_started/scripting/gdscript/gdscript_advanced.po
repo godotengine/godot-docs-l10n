@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:4
 msgid "GDScript: An introduction to dynamic languages"
-msgstr ""
+msgstr "GDScript: Eine Einführung in dynamische Programmiersprachen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 msgid "About"
@@ -31,12 +31,17 @@ msgid ""
 "efficiently. It focuses on common cases specific to the language, but also "
 "covers a lot of information on dynamically typed languages."
 msgstr ""
+"Dieses Handbuch soll eine kurze Referenz sein um GDScript effektiver nutzen "
+"zu können. Es zeigt übliche Beispiele speziell dieser Sprache, enthält aber "
+"auch viele Informationen über dynamische Programmiersprachen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:13
 msgid ""
 "It's meant to be especially useful for programmers with little or no "
 "previous experience with dynamically typed languages."
 msgstr ""
+"Dies ist besonders nützlich für Programmierer die bisher nur wenig oder "
+"keine Erfahrung mit dynamischen Programmiersprachen haben."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:17
 msgid "Dynamic nature"
@@ -51,26 +56,29 @@ msgid ""
 "GDScript is a Dynamically Typed language. As such, its main advantages are "
 "that:"
 msgstr ""
+"GDScript ist eine dynamische Programmiersprache und hat damit folgende "
+"Vorteile:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:25
 msgid "The language is simple and easy to learn."
-msgstr ""
+msgstr "Die Sprache kann spielend einfach erlernt werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:26
 msgid "Most code can be written and changed quickly and without hassle."
 msgstr ""
+"Der meiste Code kann schnell und problemlos geschrieben und geändert werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:27
 msgid "Less code written means less errors & mistakes to fix."
-msgstr ""
+msgstr "Weniger Codezeilen bedeuten weniger mögliche Fehler ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:28
 msgid "Easier to read the code (less clutter)."
-msgstr ""
+msgstr "Einfacher den Code zu lesen (weniger verwirrend)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:29
 msgid "No compilation is required to test."
-msgstr ""
+msgstr "Es ist keine kompilierung nötig um den Code zu testen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:30
 msgid "Runtime is tiny."
@@ -82,15 +90,18 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:33
 msgid "While the main disadvantages are:"
-msgstr ""
+msgstr "Während dies die Nachteile sind:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:35
 msgid "Less performance than statically typed languages."
-msgstr ""
+msgstr "Weniger Leistung als statische Programmiersprachen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:36
+#, fuzzy
 msgid "More difficult to refactor (symbols can't be traced)"
 msgstr ""
+"Strukturverbesserungen sind schwieriger (Symbole können nicht verfolgt "
+"werden)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:37
 msgid ""
@@ -118,7 +129,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
-msgstr ""
+msgstr "Variablen & Zuweisungen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:54
 msgid ""
@@ -126,6 +137,9 @@ msgid ""
 "means that their type is not fixed, and is only modified through assignment. "
 "Example:"
 msgstr ""
+"In dynamischen Programmiersprachen sind Variablen nicht Typen gebunden. Das "
+"bedeutet, dass der Typ nicht festgelegt ist, er wird nur durch Zuweisung von "
+"Werten geändert. Beispiel:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:58
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:80
@@ -151,7 +165,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:107
 msgid "Pointers & referencing:"
-msgstr ""
+msgstr "Zeiger & Referenzen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:109
 msgid ""
@@ -240,7 +254,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:245
 msgid "Example of Dictionary:"
-msgstr ""
+msgstr "Beispiel für ein Wörterbuch:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:252
 msgid ""
@@ -264,7 +278,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:319
 msgid "For & while"
-msgstr ""
+msgstr "For & while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:321
 msgid "Iterating in some statically typed languages can be quite complex:"
@@ -366,6 +380,10 @@ msgid ""
 "tunnel, smashing everything on its way. The code for the rock, in a "
 "statically typed language would be something like:"
 msgstr ""
+"Als Beispiel: Stell dir eine Situation vor in der ein Großer Stein einen "
+"Tunnel herunter fällt und alles in seinem Weg beiseite stößt. In einer "
+"statischen Programmiersprache würde der Code für den Stein ungefähr so "
+"aussehen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:484
 msgid ""
@@ -386,6 +404,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:501
+#, fuzzy
 msgid ""
 "And that's it. If the object that hit the big rock has a smash() method, it "
 "will be called. No need for inheritance or polymorphism. Dynamically typed "
@@ -393,21 +412,31 @@ msgid ""
 "not what it inherits or the class type. The definition of Duck Typing should "
 "make this clearer:"
 msgstr ""
+"Und das ist es auch schon. Falls das Objekt, dass den großen Felsen trifft, "
+"eine smash() Methode hat, wird diese aufgerufen. Vererbung oder Polymorphie "
+"ist nicht nötig. Dynamischen Programmiersprachen ist es nur wichtig, dass "
+"die Instanz die gewünschte Methode oder Member hat, nicht was sie vererbt "
+"oder deren Klassentyp. Die Definition von \"Duck Typing\" (Konzept der "
+"objektorientierten Programmierung) macht das deutlicher:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:507
 msgid ""
 "*\"When I see a bird that walks like a duck and swims like a duck and quacks "
 "like a duck, I call that bird a duck\"*"
 msgstr ""
+"*\"Wenn ein Vogel wie eine Ente geht, wie eine Ente schwimmt und wie eine "
+"Ente quakt, dann ist es eine Ente\"*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:510
 msgid "In this case, it translates to:"
-msgstr ""
+msgstr "In diesem Fall lautet es übersetzt:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:512
 msgid ""
 "*\"If the object can be smashed, don't care what it is, just smash it.\"*"
 msgstr ""
+"*\"Falls das Objekt zerstört werden kann, ist es egal was es ist, zerstöre "
+"es einfach\"*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:514
 msgid "Yes, we should call it Hulk typing instead."
@@ -425,3 +454,5 @@ msgstr ""
 msgid ""
 "Then, simply define that method and anything the rock touches can be smashed."
 msgstr ""
+"Dann wird diese Methode einfach definiert und alles was der Fels dann "
+"berührt wird zerstört."

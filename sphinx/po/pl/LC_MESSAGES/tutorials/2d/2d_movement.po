@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,9 +32,10 @@ msgid ""
 "the style of game you're making, you may have special requirements, but in "
 "general the movement in most 2D games is based on a small number of designs."
 msgstr ""
-"Każdy początkujący zadawał pytanie: \"Jak poruszyć moją postać? W zależności "
-"od stylu gry, w której grasz, możesz mieć specjalne wymagania, ale ogólnie "
-"rzecz biorąc ruch w większości gier 2D opiera się na kilku rozwiązaniach."
+"Każdy początkujący zadaje sobie pytanie: \"Jak poruszać moją postacią?\". W "
+"zależności od stylu gry, którą tworzysz, możesz mieć specjalne wymagania co "
+"do sposobu poruszania się twojej postaci, jednak ogólnie rzecz biorąc ruch w "
+"większości gier 2D opiera się na niewielkiej ilości rozwiązań."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:13
 msgid ""
@@ -42,9 +43,9 @@ msgid ""
 "but the principles will apply to other node types (Area2D, RigidBody2D) as "
 "well."
 msgstr ""
-"Do tych przykładów będziemy używać :ref:`KinematicBody2D "
-"<class_KinematicBody2D>`, będzie można zastosować wiedzę również do innych "
-"typów (Area2D, RigidBody2D)."
+"Dla omawianych tu przykładów będziemy używać :ref:`KinematicBody2D "
+"<class_KinematicBody2D>`, ale zdobytą wiedzę równie dobrze zastosować będzie "
+"można do innych typów węzłów (jak Area2D, RigidBody2D)."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:19
 msgid "Setup"
@@ -58,9 +59,10 @@ msgid ""
 "any other 2D image you have."
 msgstr ""
 "Każdy z poniższych przykładów wykorzystuje tę samą konfigurację sceny. "
-"Rozpocznij od ``KinematicBody2D`` z dwojgiem dzieci: ``Sprite`` i "
-"``ColisionShape2D``. Możesz użyć ikony Godota (\"icon.png\") dla tekstury "
-"Sprite'a lub użyć innego obrazu 2D, który posiadasz."
+"Rozpocznijmy od stworzenia ``KinematicBody2D`` z dwojgiem dzieci: ``Sprite`` "
+"i ``ColisionShape2D``. Obojętne czy wybierzesz użycie ikony Godota (\"icon."
+"png\") dla tekstury Sprite'a czy wybierzesz do tego inną posiadaną grafikę "
+"2D."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:25
 msgid ""
@@ -68,11 +70,13 @@ msgid ""
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
 "details):"
 msgstr ""
+"Otwórz ``Projekt -> Ustawienia projektu`` i wybierz zakładkę \"Mapowanie "
+"wejścia\". Dodaj pokazane na poniższym wycinku akcje wejścia (po więcej "
+"szczegółów skocz do :ref:`InputEvent <doc_inputevent>`):"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
-#, fuzzy
 msgid "8-way movement"
-msgstr "8 kierunkowy ruch"
+msgstr "8-mio kierunkowy ruch"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:33
 msgid ""
@@ -81,10 +85,15 @@ msgid ""
 "way movement\" comes from the fact that the player can move diagonally by "
 "pressing two keys at the same time."
 msgstr ""
+"W przypadku tego przykładu chcemy, żeby nasz użytkownik poprzez naciskanie "
+"czterech klawiszy kierunków (góra/lewo/dół/prawo lub W/A/S/D) mógł poruszać "
+"się w wybranych kierunkach. Nazwa \"8-mio kierunkowy ruch\" bierze się stąd, "
+"że gracz może poruszać się na ukos, jeśli przytrzyma odpowiednie dwa "
+"klawisze w tym samym czasie."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:39
 msgid "Add a script to the kinematic body and add the following code:"
-msgstr ""
+msgstr "Do węzła \"KinematicBody2D\" dodaj poniższy skrypt:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:103
 msgid ""
@@ -114,9 +123,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:121
-#, fuzzy
 msgid "Rotation + movement"
-msgstr "Obrót i Ruch"
+msgstr "Obrót i ruch"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:123
 msgid ""
@@ -143,9 +151,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:208
-#, fuzzy
 msgid "Rotation + movement (mouse)"
-msgstr "Obrót i Ruch (myszka)"
+msgstr "Obrót i ruch (myszka)"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:210
 msgid ""

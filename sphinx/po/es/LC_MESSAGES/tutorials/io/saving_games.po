@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:4
 msgid "Saving games"
-msgstr ""
+msgstr "Guardar partidas"
 
 #: ../../docs/tutorials/io/saving_games.rst:7
 msgid "Introduction"
@@ -33,16 +33,24 @@ msgid ""
 "objects. This will allow the save function to scale as the game grows more "
 "complex."
 msgstr ""
+"Guardar partidas puede ser complicado. Por ejemplo, puede ser necesario "
+"almacenar información de varios objetos en varios niveles. Los sistemas "
+"avanzados de guardado de partidas deberían permitir la obtención de "
+"información adicional sobre un número arbitrario de objetos. Esto permitirá "
+"que la función de guardado se amplíe a medida que el juego se vuelva más "
+"complejo."
 
 #: ../../docs/tutorials/io/saving_games.rst:17
 msgid ""
 "If you're looking to save user configuration, you can use the :ref:"
 "`class_ConfigFile` class for this purpose."
 msgstr ""
+"Si quieres guardar la configuración del usuario, puedes usar la clase :ref:"
+"`class_ConfigFile` para este propósito."
 
 #: ../../docs/tutorials/io/saving_games.rst:21
 msgid "Identify persistent objects"
-msgstr ""
+msgstr "Identificar objetos persistentes"
 
 #: ../../docs/tutorials/io/saving_games.rst:23
 msgid ""
@@ -51,6 +59,10 @@ msgid ""
 "tutorial, we will use groups to mark and handle objects to be saved, but "
 "other methods are certainly possible."
 msgstr ""
+"En primer lugar, debemos identificar qué objetos queremos conservar entre "
+"las sesiones de juego y qué información queremos conservar de esos objetos. "
+"Para este tutorial, usaremos grupos para marcar y manejar los objetos a "
+"guardar, pero desde luego existen otros métodos posibles."
 
 #: ../../docs/tutorials/io/saving_games.rst:28
 msgid ""
@@ -58,16 +70,22 @@ msgid ""
 "in the :ref:`doc_scripting_continued` tutorial, we can do this through "
 "either the GUI or script. Let's add the relevant nodes using the GUI:"
 msgstr ""
+"Empezaremos añadiendo los objetos que deseamos guardar al grupo \"Persist\". "
+"Como en el tutorial :ref:`doc_scripting_continued`, podemos hacerlo a través "
+"de la GUI o el script. Añadiremos los nodos relevantes usando la GUI:"
 
 #: ../../docs/tutorials/io/saving_games.rst:34
 msgid ""
 "Once this is done, when we need to save the game, we can get all objects to "
 "save them and then tell them all to save with this script:"
 msgstr ""
+"Una vez hecho esto, cuando necesitemos guardar la partida, podemos hacer que "
+"todos los objetos se salven y luego decirles a todos que se guarden con este "
+"script:"
 
 #: ../../docs/tutorials/io/saving_games.rst:54
 msgid "Serializing"
-msgstr ""
+msgstr "Serialización"
 
 #: ../../docs/tutorials/io/saving_games.rst:56
 msgid ""
@@ -81,23 +99,25 @@ msgid ""
 "will look like this:"
 msgstr ""
 "El siguiente paso es serializar los datos. Esto hace que sea mucho más fácil "
-"de leer y almacenar en el disco. En este caso, estamos asumiendo que cada "
-"miembro del grupo Persist es un nodo instanciado y por lo tanto tiene una "
-"ruta. GDScript tiene funciones de utilidad para esto, como :ref:`to_json() "
-"<class_@GDScript_method_to_json>` y :ref:`parse_json() "
-"<class_@GDScript_parse_json>`, así que usaremos un diccionario. Nuestro nodo "
-"necesita contener una función de guardar que devuelva estos datos. La "
-"función de guardar tendrá el siguiente aspecto:"
+"de leer y almacenar en el disco. En este caso, asumiremos que cada miembro "
+"del grupo Persist es un nodo instanciado y por lo tanto tiene una ruta. "
+"GDScript tiene funciones de ayuda para esto, como :ref:`to_json() "
+"<class_@GDScript_method_to_json>` and :ref:`parse_json() "
+"<class_@GDScript_method_parse_json>`, así que usaremos un diccionario. "
+"Nuestro nodo necesita contener una función de guardado que devuelva estos "
+"datos. La función de guardar tendrá este aspecto:"
 
 #: ../../docs/tutorials/io/saving_games.rst:119
 msgid ""
 "This gives us a dictionary with the style ``{ \"variable_name\":"
 "value_of_variable }``, which will be useful when loading."
 msgstr ""
+"Esto nos da un diccionario con el estilo ``{ \"variable_name\":"
+"value_of_variable }``, que nos será útil al cargar."
 
 #: ../../docs/tutorials/io/saving_games.rst:124
 msgid "Saving and reading data"
-msgstr ""
+msgstr "Guardar y leer datos"
 
 #: ../../docs/tutorials/io/saving_games.rst:126
 msgid ""
@@ -108,6 +128,13 @@ msgid ""
 "and store them in a file. Doing it this way ensures that each line is its "
 "own object, so we have an easy way to pull the data out of the file as well."
 msgstr ""
+"Como se explica en el tutorial de :ref:`doc_filesystem` tutorial, we'll need "
+"to open a file so we can write to it or read from it. Now that we have a way "
+"to call our groups and get their relevant data, let's use :ref:`to_json() "
+"<class_@GDScript_method_to_json>` para convertirlo en una cadena fácilmente "
+"almacenable y guardarla en un archivo. Haciéndolo de esta manera nos "
+"aseguramos de que cada línea sea su propio objeto, así que también tenemos "
+"una manera fácil de sacar los datos del archivo."
 
 #: ../../docs/tutorials/io/saving_games.rst:202
 msgid ""
@@ -117,31 +144,39 @@ msgid ""
 "can use the filename and parent values to achieve that. Here is our load "
 "function:"
 msgstr ""
+"¡Juego guardado! La carga es bastante simple también. Para ello, leeremos "
+"cada línea; usaremos parse_json() para volver a leerla hasta un diccionario, "
+"y luego iteraremos sobre el diccionario para leer nuestros valores. Pero "
+"primero tendremos que crear el objeto y podemos usar el nombre de archivo y "
+"los valores del padre para lograrlo. Aquí está nuestra función de carga:"
 
-#: ../../docs/tutorials/io/saving_games.rst:292
+#: ../../docs/tutorials/io/saving_games.rst:293
 msgid ""
 "Now we can save and load an arbitrary number of objects laid out almost "
 "anywhere across the scene tree! Each object can store different data "
 "depending on what it needs to save."
 msgstr ""
+"Ahora podemos guardar y cargar un número arbitrario de objetos dispuestos "
+"casi en cualquier lugar del árbol de la escena. Cada objeto puede almacenar "
+"diferentes datos dependiendo de lo que necesite guardar."
 
-#: ../../docs/tutorials/io/saving_games.rst:297
+#: ../../docs/tutorials/io/saving_games.rst:298
 msgid "Some notes"
-msgstr ""
+msgstr "Algunas notas"
 
-#: ../../docs/tutorials/io/saving_games.rst:299
+#: ../../docs/tutorials/io/saving_games.rst:300
 msgid ""
 "We have glossed over setting up the game state for loading. It's ultimately "
 "up to the project creator where much of this logic goes. This is often "
 "complicated and will need to be heavily customized based on the needs of the "
 "individual project."
 msgstr ""
-"Hemos pasado por alto la configuración del estado del juego para la carga, "
-"cuánta lógica va allí depende del diseño del juego. Esto suele ser "
-"complicado y necesitaremos personalizar mucho de acuerdo a las necesidades "
-"del proyecto en particular."
+"Hemos pasado por alto la configuración del estado del juego para la carga. "
+"En última instancia, depende del creador del proyecto donde va gran parte de "
+"esta lógica. Esto suele ser complicado y tendrá que ser muy personalizado en "
+"función de las necesidades del proyecto en particular."
 
-#: ../../docs/tutorials/io/saving_games.rst:304
+#: ../../docs/tutorials/io/saving_games.rst:305
 msgid ""
 "Additionally, our implementation assumes no Persist objects are children of "
 "other Persist objects. Otherwise, invalid paths would be created. To "
@@ -151,3 +186,11 @@ msgid ""
 "also need a way to link children to parents as the :ref:`NodePath "
 "<class_nodepath>` will likely be invalid."
 msgstr ""
+"Además, nuestra implementación asume que ningún objeto persistente es hijo "
+"de otro objeto persistente. De lo contrario, se crearían rutas inválidas. "
+"Para acomodar los objetos persistentes anidados, considera guardar los "
+"objetos en etapas. Cargar primero los objetos padre para que estén "
+"disponibles para la llamada :ref:`add_child() <class_node_method_add_child>` "
+"cuando se carguen los objetos hijo. También necesitarás una forma de enlazar "
+"a los hijos con los padres ya que la llamada :ref:`NodePath "
+"<class_nodepath>` probablemente será inválida."

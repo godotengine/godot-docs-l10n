@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,6 +116,8 @@ msgid ""
 "JetBrains Rider comes with bundled MSBuild, so nothing extra is required. "
 "Make sure to set the following preferences:"
 msgstr ""
+"JetBrains Rider 包含了配套的 MSBuild，所以不需要其他额外软件。确保偏好与下列"
+"设定一致："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
 #, fuzzy
@@ -124,11 +126,11 @@ msgstr "在Godot 3.1中："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
 msgid "Mono External Editor to JetBrains Rider"
-msgstr ""
+msgstr "将 Mono External Editor 设置为 JetBrains Rider"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:62
 msgid "Mono Build Tool to JetBrains Mono."
-msgstr ""
+msgstr "将 Mono Build Tool 设置为 JetBrains Mono。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
 msgid "In Rider:"
@@ -587,20 +589,9 @@ msgstr "VS2019 调试配置"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:296
 msgid ""
-"To configure Visual Studio Code for debugging open up a project in Godot. "
-"Click on Project and open the project settings. Scroll down and click on "
-"Debugger Agent under the Mono category. Then turn on the setting \"wait for "
-"debugger.\" Next, copy the port number and open up Visual Studio Code."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:301
-msgid ""
-"You need to download the Mono Debug extension from Microsoft. Then open the "
-"Godot project folder. Go to the run tab and click on create a launch.json "
-"file. Select C# Mono from the dropdown menu. When the launch.json file is "
-"automatically opened, change the port number to the number you copied "
-"previously and save the file. On the run tab, switch the run setting from "
-"launch to attach. Whenever you want to debug, make sure Wait for Debugger is "
-"turned on in Godot, run the project, and run the debugger in Visual Studio "
-"Code."
+"To configure debugging, open Visual Studio Code and download the Mono Debug "
+"extension from Microsoft and the Godot extension by Ignacio. Then open the "
+"Godot project folder in VS Code. Go to the Run tab and click on **create a "
+"launch.json file**. Select **C# Godot** from the dropdown menu. Now, when "
+"you start the debugger in VS Code your Godot project will run."
 msgstr ""

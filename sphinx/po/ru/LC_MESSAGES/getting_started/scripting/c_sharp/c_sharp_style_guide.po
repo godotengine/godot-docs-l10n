@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -293,9 +293,8 @@ msgstr ""
 "соответствии с некоторыми из вышеупомянутых соглашений:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:197
-#, fuzzy
 msgid "Naming conventions"
-msgstr "Соглашения в именовании"
+msgstr "Соглашения об именовании"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:199
 msgid ""
@@ -371,9 +370,8 @@ msgid "Rather than:"
 msgstr "А не:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
-#, fuzzy
 msgid "Member variables"
-msgstr "Доступ к полям"
+msgstr "Переменные-члены"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
 msgid ""
@@ -381,11 +379,13 @@ msgid ""
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
+"Не объявляйте переменные-члены, если они используются только локально в "
+"методе, так как это затрудняет выполнение кода. Вместо этого объявите их как "
+"локальные переменные в теле метода."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
-#, fuzzy
 msgid "Local variables"
-msgstr "Локальные Переменные"
+msgstr "Локальные переменные"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:277
 msgid ""
@@ -393,6 +393,9 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Объявляйте локальные переменные как можно ближе к их первому использованию. "
+"Это облегчает отслеживание кода, не требуя слишком большой прокрутки, чтобы "
+"найти, где была объявлена переменная."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:282
 msgid "Implicitly typed local variables"

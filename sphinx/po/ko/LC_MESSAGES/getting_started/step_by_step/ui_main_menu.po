@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,7 +191,7 @@ msgstr ""
 "획을 세워야 됩니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:89
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:282
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
 msgid "Break down the UI mockup"
 msgstr "UI 모형 파헤치기"
 
@@ -262,7 +262,21 @@ msgstr ""
 msgid "Prepare the Main Menu scene"
 msgstr "메인 메뉴 씬 준비하기"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:123
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:125
+msgid ""
+"This tutorial is based on a window size of 1366×768. To change the project's "
+"base window size, open **Project > Project Settings** at the top of the "
+"editor then change **Display > Window > Size > Width** to ``1366`` and "
+"**Display > Window > Size > Height** to ``768``."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:130
+msgid ""
+"If you forget to change the window size, anchors and containers may not "
+"behave as expected."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:133
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
@@ -270,7 +284,7 @@ msgstr ""
 "메인 메뉴를 만들어봅시다. 하나의 씬에 메뉴를 만들 것입니다. 비어있는 씬을 만"
 "들려면, **씬(Scene) > 새 씬(New Scene)**\\ 을 클릭하세요."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:126
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
 #, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
@@ -285,7 +299,7 @@ msgstr ""
 "것이, UI 주변에 여백을 메꾸어야 하기 때문입니다. ``Control+S`` 를 눌러 씬을 "
 "저장합니다. *MainMenu* 로 이름을 짓습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:132
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:142
 msgid ""
 "Select the ``MarginContainer`` again, and head to the inspector to define "
 "the margins' size. Scroll down the ``Control`` class, to the ``Custom "
@@ -295,23 +309,23 @@ msgstr ""
 "를 정의하세요. ``Control`` 클래스에서, ``Custom Constants`` 섹션으로 창을 내"
 "려보세요. 그것을 펼치세요. 다음과 같이 마진을 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:146
 msgid "Margin Right: *120*"
 msgstr "Margin Right: *120*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:137
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:147
 msgid "Margin Top: *80*"
 msgstr "Margin Top: *80*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:138
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:148
 msgid "Margin Left: *120*"
 msgstr "Margin Left: *120*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:139
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:149
 msgid "Margin Bottom: *80*"
 msgstr "Margin Bottom: *80*"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:141
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
@@ -319,11 +333,11 @@ msgstr ""
 "컨테이너가 창에 맞도록 하고 싶습니다. 뷰포트 위의 툴바에서, **레이아웃"
 "(Layout)** 메뉴를 열고, 마지막 설정을 선택하세요, **사각형 전체(Full Rect)**."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:145
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
 msgid "Add the UI sprites"
 msgstr "UI 스프라이트 추가하기"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:147
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:157
 msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
@@ -331,24 +345,24 @@ msgstr ""
 "``MarginContainer`` 를 선택하고, ``TextureRect`` 노드와 같은 UI 요소들을 만드"
 "세요. 우리는 이것들이 필요합니다:"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
 msgid "the title or logo,"
 msgstr "타이틀이나 로고,"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:161
 msgid "the three text options as individual nodes,"
 msgstr "세 개의 텍스트 설정. 개별의 노드로 됨,"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:162
 msgid "the version note,"
 msgstr "버전 노트,"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:153
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:163
 #, fuzzy
 msgid "and the main menu's illustration."
 msgstr "그리고 메인 메뉴의 삽화."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 #, fuzzy
 msgid ""
 "Click the **Add Node** button or press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on "
@@ -362,7 +376,7 @@ msgstr ""
 "운 노드를 선택하고, ``Meta+D``\\ 를 5 번 눌러 다섯 개의 ``TextureRect`` 인스"
 "턴스를 만드세요."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:170
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
 "property and click **[empty] > Load**. A file browser opens and lets you "
@@ -372,11 +386,11 @@ msgstr ""
 "었음]([empty])`` -> ``불러오기(Load)``\\ 를 클릭하세요. 파일 브라우저가 열리"
 "면 텍스처 슬롯 안에 있는 스프라이트를 불러올 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:166
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
 msgid "The file browser lets you find and load textures."
 msgstr "파일 브라우저에서 불러올 텍스처를 찾을 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:168
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
@@ -389,11 +403,11 @@ msgstr ""
 "후, 씬 탭에서 각 노드를 더블 클릭하고 이름을 바꾸세요. 컨테이너에 아직 아무 "
 "노드도 놓지 않아서 지금은 분명히 노드가 어질러져 있을 것입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
 msgid "The six nodes with textures loaded."
 msgstr "텍스처를 불러온 6 개의 노드."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:180
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:190
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
@@ -401,11 +415,11 @@ msgstr ""
 "게임에 현지화를 지원하고 싶다면, 메뉴 설정에 ``TextureRect`` 대신에 "
 "``Labels`` 을 사용하세요."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:184
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:194
 msgid "Add containers to place UI elements automatically"
 msgstr "컨테이너를 추가하여 UI 요소들을 자동으로 놓기"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
 #, fuzzy
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
@@ -428,7 +442,7 @@ msgstr ""
 "분할 컨테이너가 크기 조절 행동을 비활성화 할 순 있지만, 저는 박스 컨테이너를 "
 "추천합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:197
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
 msgid ""
 "Select the ``MarginContainer`` and add an ``HBoxContainer``. Then, we need "
 "two containers as children of our ``HBoxContainer``: a ``VBoxContainer`` for "
@@ -440,7 +454,7 @@ msgstr ""
 "에 쓸 ``VBoxContainer`` 왼쪽에, 그리고 삽화를 넣을 ``CenterContainer`` 가 오"
 "른쪽에 있어야 합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:204
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
@@ -448,7 +462,7 @@ msgstr ""
 "4 개의 중첩된 컨테이너가 있고, TextureRect 노드가 컨테이너 옆에 있어야 합니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
@@ -460,23 +474,23 @@ msgstr ""
 "``VBoxContainer``\\ 로 드래그 앤 드롭하세요. 노드는 자동으로 위치가 맞춰질 것"
 "입다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:224
 msgid "Containers automatically place and resize textures"
 msgstr "컨테이너가 자동으로 텍스처를 위치시키고 크기를 조정합니다"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:226
 msgid "We're left with two problems to solve:"
 msgstr "우리는 해결해야 할 두 가지 문제가 남았습니다:"
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:218
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
 msgid "The characters on the right aren't centered."
 msgstr "오른쪽의 Characters가 중앙이 아닙니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid "There's no space between the logo and the other UI elements."
 msgstr "로고와 다른 UI 요소들 사이에 공간이 없습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:221
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
 msgid ""
 "To center the characters on the right, first select the ``CenterContainer``. "
 "Then in the Inspector, scroll down to the **Size Flags** category and click "
@@ -496,7 +510,7 @@ msgstr ""
 "\\ 에 드래그 앤 드롭 하세요. Characters의 요소는 자동으로 중앙에 자리 잡을 것"
 "입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:232
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer."
@@ -504,7 +518,7 @@ msgstr ""
 "Characers 노드는 CenterContainer에 배치하자마자 화면의 우측 중앙에 위치하게 "
 "됩니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:235
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
 #, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
@@ -523,14 +537,14 @@ msgstr ""
 "만든 ``VBoxContainer`` 안에 드래그 앤 드롭합니다. UI의 레이아웃은 거의 변경되"
 "지 않아야 합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:255
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
 msgstr ""
 "UI의 레이아웃은 유지하기 위해 두 개의 노드 사이에 새 컨테이너를 놓습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:248
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -547,7 +561,7 @@ msgstr ""
 "수직 공간 전체를 차지하도록 펼쳐집니다. 하지만 주변 노드, ``Logo``\\ 와 "
 "``Version`` 요소들은 차지하지 않습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:256
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:266
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the **Alignment** property to **Center**."
@@ -555,11 +569,11 @@ msgstr ""
 "``VBoxContainer``\\ 에서 노드가 중앙에 있게 하려면, 인스펙터(Inspecter)의 맨 "
 "위로 가서 **Alignment** 속성을 **Center**\\ 로 바꿉니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:261
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
 msgid "The menu options should center vertically in the UI's left column."
 msgstr "메뉴 설정은 UI의 왼쪽 열에서 중앙에 수직으로 있어야 합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:263
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
 "To wrap things up, let's add some separation between the menu options. "
 "Expand the **Custom Constants** category below **Size Flags**, and click the "
@@ -572,17 +586,17 @@ msgstr ""
 "세요. 값은 30으로 설정하세요. 엔터 키를 누르면, **Separation** 속성이 켜지고 "
 "Godot는 메뉴 설정 사이에 30 픽셀을 추가합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
 msgid "The final interface."
 msgstr "최종 인터페이스."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:283
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr ""
 "코드 한 줄도 안 쓰고, 우리는 정확하고 반응하는 메인 메뉴를 갖게 되었습니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:276
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
@@ -594,7 +608,7 @@ msgstr ""
 "있습니다. 다음 튜토리얼에서는, 당신은 막대와 아이템 수 카운터가 있는 게임 사"
 "용자 인터페이스를 만들 것입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:294
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
@@ -605,7 +619,7 @@ msgstr ""
 "는 것을 의미합니다.TV 화면과 컴퓨터는 다른 크기와 비율을 갖습니다. Godot에"
 "서, 우리는 컨테이너를 사용하여 UI 요소들의 크기와 위치를 제어합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:289
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
 #, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
@@ -618,7 +632,7 @@ msgstr ""
 "택하고 컨테이너의 모서리를 클릭하고 드래그 하여 크기를 바꿔보세요. UI 구성 요"
 "소들이 내부에 있어야 합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:295
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:305
 msgid ""
 "You'll notice that although containers move sprites around, they don't scale "
 "them. This is normal. We want the UI system to handle different screen "
@@ -630,7 +644,7 @@ msgstr ""
 "하기를 원하지만, 또한 게임 전체가 다른 화면 해상도에 적응해야 합니다. 이를 위"
 "해, Godot는 창 전체를 위 아래로 크기를 조절합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:301
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:311
 msgid ""
 "You can change the scale mode in the project settings: click **Project > "
 "Project Settings** in the top menu. In the window's left column, look for "

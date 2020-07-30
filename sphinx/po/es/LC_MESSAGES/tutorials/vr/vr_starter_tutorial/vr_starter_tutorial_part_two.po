@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:4
-#, fuzzy
 msgid "VR starter tutorial part 2"
-msgstr "Tutorial VR para principiantes"
+msgstr "Tutorial VR para principiantes parte 2"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:7
 msgid "Introduction"
@@ -94,26 +93,24 @@ msgid "Explaining the Sphere Target code"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:84
-#, fuzzy
 msgid "First, let's go through all the class variables in the script:"
-msgstr "Vamos a repasar cada una de las variables de clase:"
+msgstr "Primero, veamos todas las variables de la clase en el script:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:86
-#, fuzzy
 msgid ""
 "``destroyed``: A variable to track whether the sphere target has been "
 "destroyed."
 msgstr ""
-"``destroyed``: Una variable para verificar si el blanco fue destruido o no."
+"``destroyed``: Una variable para verificar si la esfera usada como blanco "
+"fue destruida."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:87
-#, fuzzy
 msgid ""
 "``destroyed_timer``: A variable to track how long the sphere target has been "
 "destroyed."
 msgstr ""
-"``destroyed_timer``: Una variable para verificar cuánto tiempo a "
-"transcurrido desde que fue destruido."
+"``destroyed_timer``: Una variable usada para verificar cuánto tiempo a "
+"transcurrido desde que la esfera fue destruida."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:88
 msgid ""
@@ -122,11 +119,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:89
-#, fuzzy
 msgid ""
 "``health``: A variable to store the amount of health the sphere target has."
 msgstr ""
-"``turret_health``: La cantidad de vida que tiene la torreta en el momento."
+"``health``: Una variable que guarda la cantidad de salud que tiene el blanco."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:90
 msgid ""
@@ -281,9 +277,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:167
-#, fuzzy
 msgid "Let's go through what this function does real quick:"
-msgstr "Repasemos lo que hace esta función:"
+msgstr "Repasemos rápidamente lo que hace esta función:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:169
 msgid ""
@@ -353,9 +348,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:267
-#, fuzzy
 msgid "Explaining the pistol code"
-msgstr "Cambiar el ícono del archivo"
+msgstr "Explicando el código de la pistola"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:269
 msgid ""
@@ -370,19 +364,18 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:273
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:667
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:849
-#, fuzzy
 msgid "Next, let's look at the class variables:"
-msgstr "Vamos a repasar cada una de las variables de clase:"
+msgstr "A continuación, veamos las variables de la clase:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:275
-#, fuzzy
 msgid ""
 "``flash_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node that is used to simulate muzzle flash on the "
 "pistol."
 msgstr ""
-"``node_flash_one``: Una variable para mantener el primer flash de disparo:"
-"ref:`MeshInstance <class_MeshInstance>`."
+"``flash_mesh``: Una variable para mantener el nodo :ref:`MeshInstance "
+"<class_MeshInstance>` usado para simular el resplandor del disparo en la "
+"pistola."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:276
 msgid ""
@@ -391,22 +384,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:277
-#, fuzzy
 msgid ""
 "``flash_timer``: A variable to hold the amount of time the muzzle flash has "
 "been visible for."
 msgstr ""
-"``fuse_timer``: Una variable para rastrear cuánto tiempo ha estado encendido "
-"el detonador."
+"``flash_timer``: Una variable para mantener el tiempo en que estuvo visible "
+"el flash de la boca del arma."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:278
-#, fuzzy
 msgid ""
 "``laser_sight_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node that acts as the pistol's 'laser sight'."
 msgstr ""
-"``node_flash_one``: Una variable para mantener el primer flash de disparo:"
-"ref:`MeshInstance <class_MeshInstance>`."
+"``laser_sight_mesh``: Una variable que contiene el nodo :ref:`MeshInstance "
+"<class_MeshInstance>` que actúa como 'mira láser' de la pistola."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:279
 msgid ""
@@ -415,14 +406,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:280
-#, fuzzy
 msgid ""
 "``raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node that "
 "is used for calculating the bullet's position and normal when the pistol is "
 "fired."
 msgstr ""
-"``node_raycast``: Una variable para mantener el nodo :ref:`Raycast "
-"<class_Raycast>` junto a la cabeza de la torreta."
+"``raycast``: Una variable que contiene el nodo :ref:`Raycast "
+"<class_Raycast>` que es usado para calcular la posición de la bala y su "
+"normal cuando la pistola es disparada."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:281
 msgid ""
@@ -655,9 +646,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:460
-#, fuzzy
 msgid "Explaining the shotgun code"
-msgstr "Consiguiendo el código fuente"
+msgstr "Explicando el código de la escopeta"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:462
 msgid ""
@@ -667,18 +657,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:465
-#, fuzzy
 msgid "There is only one new class variable:"
-msgstr "Primero, declaramos unas cuantas clases variables:"
+msgstr "Aquí hay solo una nueva variable en la clase:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:467
-#, fuzzy
 msgid ""
 "``raycasts``: A variable to hold the node that has all of the :ref:`Raycast "
 "<class_Raycast>` nodes as its children."
 msgstr ""
-"``node_raycast``: Una variable para mantener el nodo :ref:`Raycast "
-"<class_Raycast>` junto a la cabeza de la torreta."
+"``raycasts``: Una variable para mantener el nodo que tiene todos los nodos :"
+"ref:`Raycast <class_Raycast>` como hijos."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:469
 msgid ""
@@ -873,13 +861,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:669
-#, fuzzy
 msgid ""
 "``bomb_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node that is used for the non-exploded bomb."
 msgstr ""
-"``bomb_mesh``: El :ref:`MeshInstance <class_MeshInstance>` utilizado para el "
-"mesh de la bomba."
+"``bomb_mesh``: Una variable que contiene el nodo :ref:`MeshInstance "
+"<class_MeshInstance>` que es utilizado para la bomba que no ha explotado."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:670
 msgid ""
@@ -888,29 +875,29 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:671
-#, fuzzy
 msgid ""
 "``fuse_timer``: A variable to hold the length of time that has passed since "
 "the bomb's fuse has started to burn."
 msgstr ""
-"``fire_timer``: Una variable para traquear cuanto tiempo ha pasado desde el "
-"ultimo disparo de la torreta."
+"``fuse_timer``: Una variable para guardar cuanto tiempo ha pasado desde que "
+"la mecha de la bomba se encendió."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:672
-#, fuzzy
 msgid ""
 "``explosion_area``: A variable to hold the :ref:`Area <class_Area>` node "
 "used to detect objects within the bomb's explosion."
 msgstr ""
-"``explosion_area``: El nodo :ref:`Area <class_Area>` utilizado para detectar "
-"que nodos se encuentran dentro de la explosión."
+"``explosion_area``: Una variable que contiene el nodo :ref:`Area "
+"<class_Area>` utilizado para detectar los objetos que se encuentran dentro "
+"de la explosión."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:673
-#, fuzzy
 msgid ""
 "``EXPLOSION_DAMAGE``: A constant to define how much damage is applied with "
 "the bomb explodes."
-msgstr "``EXPLOSION_DAMAGE``: La cantidad de daño que hace la explosión."
+msgstr ""
+"``EXPLOSION_DAMAGE``: Una constante que define cuánto daño es aplicado "
+"cuando explota la bomba."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:674
 msgid ""
@@ -920,18 +907,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:675
-#, fuzzy
 msgid ""
 "``explosion_timer`` A variable to hold the length of time that has passed "
 "since the bomb exploded."
 msgstr ""
-"``fire_timer``: Una variable para traquear cuanto tiempo ha pasado desde el "
-"ultimo disparo de la torreta."
+"``explosion_timer``: Una variable que guarda el tiempo que ha pasado desde "
+"que explotó la bomba."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:676
-#, fuzzy
 msgid "``exploded``: A variable to hold whether the bomb has exploded or not."
-msgstr "``explode``: Booleano para detectar si la bomba ha explotado."
+msgstr ""
+"``exploded``: Una variable que guarda el estado de la bomba, si ha explotado "
+"o no."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:677
 msgid ""
@@ -940,22 +927,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:678
-#, fuzzy
 msgid ""
 "``fuse_particles``: A variable to hold a reference to the :ref:`Particles "
 "<class_Particles>` node used for the bomb's fuse."
 msgstr ""
-"``node_raycast``: Una variable para mantener el nodo :ref:`Raycast "
-"<class_Raycast>` junto a la cabeza de la torreta."
+"``fuse_particles``: Una variable para mantener el nodo :ref:`Particles "
+"<class_Particles>` usado para la mecha de la bomba."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:679
-#, fuzzy
 msgid ""
 "``explosion_particles``: A variable to hold a reference to the :ref:"
 "`Particles <class_Particles>` node used for the bomb's explosion."
 msgstr ""
-"``node_raycast``: Una variable para mantener el nodo :ref:`Raycast "
-"<class_Raycast>` junto a la cabeza de la torreta."
+"``explosion_particles``: Una variable para mantener el nodo :ref:`Particles "
+"<class_Particles>` usado para la explosión de la bomba."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:680
 msgid ""
@@ -965,13 +950,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:686
-#, fuzzy
 msgid ""
 "The ``_ready`` function first gets all of the nodes from the bomb scene and "
 "assigns them to their respective class variables for later use."
 msgstr ""
-"Primero, obtenemos todos los nodos y los asignamos a las variables "
-"apropiadas para su uso posterior."
+"La función ``_ready`` obtiene primero todos los nodos de la escena bomba y "
+"los asigna a las respectivas variables para uso posterior."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:688
 msgid ""
@@ -1027,6 +1011,12 @@ msgid ""
 "nodes within the :ref:`Area <class_Area>` node, which is exactly what we are "
 "looking for."
 msgstr ""
+"Entonces necesitamos conseguir todos los nodos :ref:`PhysicsBody "
+"<class_PhysicsBody>` dentro del nodo ``explosion_area``. Para hacer esto, "
+"usamos el ``get_overlapping_bodies`` en un bucle for. La función "
+"``get_overlapping_bodies`` devolverá un array de nodos :ref:`PhysicsBody "
+"<class_PhysicsBody>` dentro del nodo :ref:`Area <class_Area>`, que es "
+"exactamente lo que estamos buscando."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:713
 msgid ""
@@ -1243,9 +1233,8 @@ msgid "Let's go over how this script works!"
 msgstr "Repasemos cómo funciona este sctipt:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:844
-#, fuzzy
 msgid "Explaining the sword code"
-msgstr "Consiguiendo el código fuente"
+msgstr "Explicando el código de la espada"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:846
 msgid ""
@@ -1314,18 +1303,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:875
-#, fuzzy
 msgid ""
 "The ``move_and_collide`` function will return a :ref:`KinematicCollision "
 "<class_KinematicCollision>` class that has all of the information we need "
 "for detecting collisions on the sword. We assign the return value of "
 "``move_and_collide`` to a variable called ``collision_results``."
 msgstr ""
-"Cuando se utiliza ``move_and_collide()`` (mover y colisionar), la función "
-"retorna un objeto del tipo :ref:`KinematicCollision2D "
-"<class_KinematicCollision2D>`, el cual contiene información sobre la "
-"colisión y el cuerpo golpeado. Puedes usar esta información para determinar "
-"la respuesta."
+"La función ``move_and_collide`` retorna un objeto de la clase :ref:"
+"`KinematicCollision <class_KinematicCollision>` que contiene la información "
+"que necesitamos para detectar colisiones con la espada. Asignaremos el valor "
+"de retorno de ``move_and_collide`` a una variable llamada "
+"``collision_results``."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:878
 msgid ""
@@ -1419,11 +1407,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:937
-#, fuzzy
 msgid "Let's go over how this script works real quick."
-msgstr ""
-"Vamos a repasar cómo funciona este script, empezando por las clases de "
-"variables."
+msgstr "Veamos rápidamente cómo funciona este script."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:939
 msgid ""
@@ -1459,14 +1444,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:990
-#, fuzzy
 msgid "Let's quickly go over how this script works."
-msgstr "Hecho esto, repasemos rápidamente lo que hace este script."
+msgstr "Veamos rápidamente cómo funciona este script."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:994
-#, fuzzy
 msgid "Explaining the reset box code"
-msgstr "Consiguiendo el código fuente"
+msgstr "Explicando el código de la caja de reinicio"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:996
 msgid ""

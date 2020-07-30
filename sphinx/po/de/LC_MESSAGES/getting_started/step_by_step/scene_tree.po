@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,6 +199,8 @@ msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
 msgstr ""
+"Dies bedeutet, dass wie schon in vorherigen Tutorials schon gezeigt, es die "
+"_enter_tree() und _ready() callbacks erhält (als auch _exit_tree())."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:100
 msgid ""
@@ -207,10 +209,16 @@ msgid ""
 "receive and send notifications, play sounds, etc. When they are removed from "
 "the *scene tree*, they lose these abilities."
 msgstr ""
+"Sobald Nodes den *Szenenbaum* betreten werden sie aktiv. Sie erhalten Zugang "
+"zu allem, was sie verarbeiten müssen, erhalten Eingabe, zeigen 2D- als auch "
+"3D Grafiken, erhalten und senden Benachrichtigungen, spielen Töne ab, et "
+"cetera. Doch als bald sie vom *Szenenbaum* entfernt werden verlieren sie "
+"jene Fähigkeiten."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:106
+#, fuzzy
 msgid "Tree order"
-msgstr ""
+msgstr "Baumstruktur"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:108
 msgid ""
@@ -219,14 +227,19 @@ msgid ""
 "with a lower rank in the tree order will get notified before the current "
 "node."
 msgstr ""
+"Die meisten Node Tätigkeiten in Godot, wie z.B. 2D Zeichen, Verarbeiten, "
+"oder Benachrichtigungen erhalten, werden nacheinander entsprechend der "
+"Baumstruktur abgearbeitet. Dies hat zur Folge, dass Eltern- als auch "
+"Geschwisterelemente mit einer tiefergelegenen Positionen benachrichtigt "
+"werden vor dem aktuellen Node."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
 msgid "\"Becoming active\" by entering the *Scene Tree*"
-msgstr ""
+msgstr "\"Werden aktiv\" durch das Betreten des *Szenenbaums*"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:118
 msgid "A scene is loaded from disk or created by scripting."
-msgstr ""
+msgstr "Eine Szene wird von der Festplatte geladen oder selbst geskriptet."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:119
 msgid ""
@@ -234,12 +247,18 @@ msgid ""
 "child of the \"root\" Viewport (from SceneTree), or to any child or "
 "grandchild of it."
 msgstr ""
+"Das Root-Node jener Szene (nur ein einziges Root-Element, schon vergessen?) "
+"wird entweder als Kind des \"Root-Viewports\" (vom Szenenbaum), oder als "
+"Kind oder Enkel hinzugefügt."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:122
 msgid ""
 "Every node of the newly added scene, will receive the \"enter_tree\" "
 "notification ( _enter_tree() callback in GDScript) in top-to-bottom order."
 msgstr ""
+"Jedes Node der neu hinzugefügten Szene wird die \"enter_tree\"-"
+"Benachrichtigung (_enter_tree() callback in GDScript) von oben aus abwärts "
+"nach unten erhalten."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:125
 msgid ""
@@ -247,16 +266,22 @@ msgid ""
 "provided for convenience, when a node and all its children are inside the "
 "active scene."
 msgstr ""
+"Eine zusätzliche Mitteilung, \"ready\" ( _ready() Aufruf in GDScript) wird "
+"erstellt, wenn das Node und alle seine Kinder innerhalb der aktiven Szene "
+"sind."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:128
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
 msgstr ""
+"Sobald eine Szene (oder ein Teil davon) entfernt wird, erhalten sie die "
+"\"exit scene\"-Benachrichtigung (_exit_tree() callback in GDScript) in von "
+"unten nach oben gehenden Reihenfolge"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:133
 msgid "Changing current scene"
-msgstr ""
+msgstr "Aktuelle Szene wechseln"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:135
 msgid ""
@@ -264,6 +289,10 @@ msgid ""
 "another one. The simple way to do this is to use the :ref:`SceneTree."
 "change_scene() <class_SceneTree_method_change_scene>` function:"
 msgstr ""
+"Nachdem eine Szene geladen wurde ist es oftmals erwünscht jene Szene "
+"umzutauschen mit einer anderen. Der einfachste Weg dies zu tun ist mittels "
+"der :ref:`SceneTree.change_scene()<class_SceneTree_method_change_scene>` "
+"Funktion:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:153
 msgid ""
@@ -271,6 +300,10 @@ msgid ""
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
 "change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
+"Anstelle Dateipfade zu nutzen kann man auch zum Gebrauch bereite, sogenannte "
+"\"PackedScenes\" verwenden. :ref: `PackedScene <class_PackedScene>` "
+"Ressourcen verwenden die entsprechende Funktion :ref:`SceneTree."
+"change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:174
 msgid ""
@@ -281,3 +314,11 @@ msgid ""
 "(background) loading. This must be done manually using autoloads (see next "
 "chapter) and :ref:`doc_background_loading`."
 msgstr ""
+"Hierbei handelt es sich um die schnellen und einfachen Mittel und Wege "
+"zwischen Szenen zu wechseln, haben aber den Nachteil das Spiel zu verzögern "
+"bis die neue Szene geladen wurde und spielbereit ist. Ab einem gewissen "
+"Punkt ist es wichtig, für dein Spiel richtige Ladescreens, "
+"Fortschrittsbalken etc. zu implementieren. Thread(Hintergrund-) Laden ist "
+"auch möglich.\n"
+"Dies müsste allerdings manuell erledigt werden durch die Nutzung von "
+"Autoloads (siehe nächstes Kapitel) und :ref:`doc_background_loading`."

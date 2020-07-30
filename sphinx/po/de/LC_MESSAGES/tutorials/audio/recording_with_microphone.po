@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:4
 msgid "Recording with microphone"
-msgstr ""
+msgstr "Aufnahmen mittels Mikrofon"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:6
 msgid ""
 "Godot supports in-game audio recording for Windows, macOS, Linux, Android "
 "and iOS."
 msgstr ""
+"Godot unterstützt Audioaufnahmen innerhalb des Spiels unter Windows, macOS, "
+"Linux, Android und iOS."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:9
 msgid ""
@@ -52,7 +54,7 @@ msgid ""
 "``AudioStreamPlayer`` named ``AudioStreamRecord`` is used for recording."
 msgstr ""
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:40
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:41
 msgid ""
 "The audio recording is handled by the :ref:`class_AudioEffectRecord` "
 "resource which has three methods: :ref:`get_recording() "
@@ -62,27 +64,27 @@ msgid ""
 "<class_AudioEffectRecord_method_set_recording_active>`."
 msgstr ""
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:64
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:65
 msgid ""
 "At the start of the demo, the recording effect is not active. When the user "
 "presses the ``RecordButton``, the effect is enabled with "
 "``set_recording_active(true)``."
 msgstr ""
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:68
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:69
 msgid ""
 "On the next button press, as ``effect.is_recording_active()`` is ``true``, "
 "the recorded stream can be stored into the ``recording`` variable by calling "
 "``effect.get_recording()``."
 msgstr ""
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:86
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:87
 msgid ""
 "To playback the recording, you assign the recording as the stream of the "
 "``AudioStreamPlayer`` and call ``play()``."
 msgstr ""
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:97
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:98
 msgid ""
 "To save the recording, you call ``save_to_wav()`` with the path to a file. "
 "In this demo, the path is defined by the user via a ``LineEdit`` input box."

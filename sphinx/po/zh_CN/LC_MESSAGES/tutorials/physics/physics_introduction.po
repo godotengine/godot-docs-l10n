@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,7 +159,7 @@ msgstr ""
 msgid ""
 "In order to detect collisions, at least one ``Shape2D`` must be assigned to "
 "the object."
-msgstr "为了检测碰撞，必须至少为对象分配一个``Shape2D``。"
+msgstr "为了检测碰撞，必须至少为对象分配一个 ``Shape2D`` 。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:64
 msgid ""
@@ -281,7 +281,7 @@ msgid ""
 "assigned in Project Settings -> Layer Names."
 msgstr ""
 "跟踪您正在使用每个图层的内容可能很困难，因此您可能会发现为您正在使用的图层指"
-"定名称很有用。 可以在``项目设置`` ->``图层名称``中指定名称。"
+"定名称很有用。 可以在 ``项目设置`` -> ``图层名称`` 中指定名称。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:126
 msgid "**Example:**"
@@ -305,9 +305,9 @@ msgid ""
 "should interact with. For example, the Player's settings would look like "
 "this:"
 msgstr ""
-"首先命名1-4层``墙``，``游戏角色``，``敌人``和``硬币``，然后使用``图层``属性将"
-"每个节点类型放在其各自的图层中。 然后通过选择应与之交互的图层来设置每个节点的"
-"``Mask``属性。 例如，游戏角色的设置如下所示:"
+"首先命名 1-4 层 ``墙`` ， ``游戏角色`` ， ``敌人`` 和 ``硬币`` ，然后使用 ``"
+"图层`` 属性将每个节点类型放在其各自的图层中。 然后通过选择应与之交互的图层来"
+"设置每个节点的 ``Mask`` 属性。 例如，游戏角色的设置如下所示:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:142
 msgid "Area2D"
@@ -360,19 +360,20 @@ msgid ""
 "``constant_angular_velocity`` properties."
 msgstr ""
 "静态主体是物理引擎不移动的主体。 它参与碰撞检测，但不会响应碰撞而移动。 然"
-"而，它可以使用它的 ``constant_linear_velocity`` 和"
-"``constant_angular_velocity``属性将运动或旋转传递给碰撞体**，好像它正在移动一"
-"样。"
+"而，它可以使用它的 ``constant_linear_velocity`` 和 "
+"``constant_angular_velocity`` 属性将运动或旋转传递给碰撞体，**好像** 它正在移"
+"动一样。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:167
 msgid ""
 "``StaticBody2D`` nodes are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
-msgstr "``StaticBody2D``节点最常用于属于环境的对象或不需要任何动态行为的对象。"
+msgstr ""
+"``StaticBody2D`` 节点最常用于属于环境的对象或不需要任何动态行为的对象。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:170
 msgid "Example uses for ``StaticBody2D``:"
-msgstr "``StaticBody2D``的示例用法:"
+msgstr "``StaticBody2D`` 的示例用法:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:172
 msgid "Platforms (including moving platforms)"
@@ -408,8 +409,8 @@ msgid ""
 "You can modify a rigid body's behavior via  properties such as \"Mass\", "
 "\"Friction\", or \"Bounce\", which can be set in the Inspector."
 msgstr ""
-"您可以通过``质量``，``摩擦力``或``弹跳``等属性修改刚体的行为，这些属性可以在"
-"属性面板中设置。"
+"您可以通过 ``质量``，``摩擦力`` 或 ``弹跳`` 等属性修改刚体的行为，这些属性可"
+"以在属性面板中设置。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:188
 msgid ""
@@ -417,8 +418,8 @@ msgid ""
 "`Project Settings -> Physics`, or by entering an :ref:`Area2D "
 "<class_Area2D>` that is overriding the global physics properties."
 msgstr ""
-"物体的行为也受到``项目设置 ->物理学``中设置的世界属性的影响，或者通过输入覆盖"
-"全局物理属性的 :ref:`Area2D <class_Area2D>` 。"
+"物体的行为也受到 ``项目设置 ->物理学`` 中设置的世界属性的影响，或者通过输入覆"
+"盖全局物理属性的 :ref:`Area2D <class_Area2D>` 。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:192
 #, fuzzy
@@ -481,9 +482,9 @@ msgid ""
 "create RigidBody2Ds and adjust their properties. Stacking, falling, and "
 "bouncing would automatically be calculated by the physics engine."
 msgstr ""
-"使用刚体的一个好处是，可以``免费``获得许多行为而无需编写任何代码。 例如，如果"
-"您正在制作一个带有下降块的``愤怒的小鸟``式游戏，您只需要创建RigidBody2D并调整"
-"它们的属性。 堆叠，下降和弹跳将由物理引擎自动计算。"
+"使用刚体的一个好处是，可以 ``免费`` 获得许多行为而无需编写任何代码。 例如，如"
+"果您正在制作一个带有下降块的 ``愤怒的小鸟`` 式游戏，您只需要创建RigidBody2D并"
+"调整它们的属性。 堆叠，下降和弹跳将由物理引擎自动计算。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:216
 #, fuzzy

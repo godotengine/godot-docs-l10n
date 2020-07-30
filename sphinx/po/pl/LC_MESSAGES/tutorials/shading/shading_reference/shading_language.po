@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1334,8 +1334,9 @@ msgid "Clamp to ``min..max``"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:666
-msgid "vec_type **mix** (float a, float b, float c)"
-msgstr ""
+#, fuzzy
+msgid "float **mix** (float a, float b, float c)"
+msgstr "Przeliczanie radianów na stopnie"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:666
 #, fuzzy
@@ -1487,9 +1488,8 @@ msgid "vec3 **cross** (vec3 a, vec3 b)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:700
-#, fuzzy
-msgid "Cross croduct"
-msgstr "Iloczyn skalarny"
+msgid "Cross product"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:702
 #, fuzzy

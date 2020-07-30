@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,10 +88,11 @@ msgid "Exporting bit flags"
 msgstr "Exportando \"bit flags\""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
+#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
-"values in one property. By using the export hint ``int, FLAGS``, they can be "
-"set from the editor::"
+"values in one property. By using the export hint ``int, FLAGS, ...``, they "
+"can be set from the editor::"
 msgstr ""
 "Los enteros usados como indicadores de bit (o bit flags) pueden guardar "
 "varios valores booleanos ``true``/``false`` en una sola propiedad. Usando el "
@@ -99,25 +100,19 @@ msgstr ""
 "editor:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
+#, fuzzy
 msgid ""
-"Restricting the flags to a certain number of named flags is also possible. "
-"The syntax is similar to the enumeration syntax::"
-msgstr ""
-"También es posible restringir los flags a un número determinado de flags con "
-"nombre. La sintaxis es similar a la sintaxis de enumeración:"
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:156
-msgid ""
-"In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
-"value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
-"defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
+"You must provide a string description for each flag. In this example, "
+"``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
+"``Wind`` corresponds to value 8. Usually, constants should be defined "
+"accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
 "En este ejemplo, ``Fire`` tiene valor 1, ``Water`` tiene valor 2, ``Earth`` "
 "tiene valor 4 y ``Wind`` corresponde al valor 8. Usualmente, las constantes "
 "deberían de definirse acorde a esto (p. ej. const ELEMENT_WIND = 8`` y así "
 "con el resto)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:161
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:155
 msgid ""
 "Export hints are also provided for the physics and render layers defined in "
 "the project settings::"
@@ -125,48 +120,39 @@ msgstr ""
 "Los hints de exportación también se proveen para las capas de física y "
 "renderizado definidas en Ajustes de Proyecto::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:168
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:162
+#, fuzzy
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
-"doubt, boolean variables should be exported instead."
+"doubt, use boolean variables instead."
 msgstr ""
 "Usar bit flags requiere ciertos conocimientos de las operaciones bit a bit. "
 "En caso de duda, se pueden exportar variables booleanas en su lugar."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:172
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
 msgid "Exporting arrays"
 msgstr "Exportando arrays"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:174
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:168
 msgid ""
-"Exporting arrays works, but with an important caveat: while regular arrays "
-"are created local to every class instance, exported arrays are *shared* "
-"between all instances. This means that editing them in one instance will "
-"cause them to change in all other instances. Exported arrays can have "
-"initializers, but they must be constant expressions."
+"Exported arrays can have initializers, but they must be constant expressions."
 msgstr ""
-"Se pueden exportar arreglos pero hay que hacer una pequeña advertencia: "
-"Mientras que los arreglos regulares se crean localmente en cada instancia de "
-"clase, los arreglos exportados *se comparten* entre todas ellas. Esto "
-"significa que editar uno en una instancia hará que cambien los de las otras "
-"instancias. Los arreglos exportados pueden tener inicializadores, pero estos "
-"deben de ser expresiones constantes."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:180
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:170
 msgid ""
 "If the exported array specifies a type which inherits from Resource, the "
 "array values can be set in the inspector by dragging and dropping multiple "
 "files from the FileSystem dock at once."
 msgstr ""
-"Si el arreglo exportado especifica un tipo que hereda deResource, se podrán "
-"asignar valores al arreglo arrastrando y soltando múltiples archivos a la "
-"vez desde el panel de Sistema de Archivos."
+"Si el array exportado especifica un tipo que hereda deResource, se podrán "
+"asignar valores al array arrastrando y soltando múltiples archivos a la vez "
+"desde el panel de Sistema de Archivos."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:220
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:208
 msgid "Setting exported variables from a tool script"
 msgstr "Asignando variables exportadas desde un script en modo tool"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:222
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:210
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
@@ -181,11 +167,11 @@ msgstr ""
 "<class_Object_method_property_list_changed_notify>`después de asignar el "
 "valor a la variable exportada."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:229
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:217
 msgid "Advanced exports"
 msgstr "Exportación avanzada"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:231
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:219
 msgid ""
 "Not every type of export can be provided on the level of the language itself "
 "to avoid unnecessary design complexity. The following describes some more or "
@@ -195,7 +181,7 @@ msgstr ""
 "complejidad innecesaria. Lo siguiente describe las características de export "
 "más comunes que pueden implementarse con una API de bajo nivel."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:235
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:223
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_set() "
@@ -211,7 +197,7 @@ msgstr ""
 "<class_Object_method__get_property_list>` methods as described in :ref:"
 "`doc_accessing_data_or_logic_from_object`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:242
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:230
 msgid ""
 "For binding properties using the above methods in C++, see :ref:"
 "`doc_binding_properties_using_set_get_property_list`."
@@ -219,7 +205,7 @@ msgstr ""
 "Para vincular propiedades usando los métodos mostrados anteriormente en C++, "
 "ver :ref:`doc_binding_properties_using_set_get_property_list`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:245
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:233
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
@@ -227,11 +213,11 @@ msgstr ""
 "El script deberá funcionar en modo ``tool`` para que los métodos mostrados "
 "funcionen en el editor."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:249
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:237
 msgid "Adding script categories"
 msgstr "Agragando categorías de script"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:251
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:239
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
@@ -241,11 +227,11 @@ msgstr ""
 "categoría especial en el inspector para que actúe como separador. Un ejemplo "
 "integrado de esto es la categoría``Script Variables``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:268
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:256
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr "``name`` es el nombre de la categoría que será agregada al inspector;"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:270
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:258
 msgid ""
 "``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
 "a script category specifically, so the type ``TYPE_NIL`` can be ignored as "
@@ -257,15 +243,15 @@ msgstr ""
 "ser ignorado y no se usará para la lógica de scripting, aún así debe ser "
 "definida."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:275
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:263
 msgid "Grouping properties"
 msgstr "Agrupando propiedades"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:277
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:265
 msgid "A list of properties with similar names can be grouped."
 msgstr "Se pueden agrupar listas de propiedades de nombre similar."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:291
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:279
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "
 "collapsible list of properties;"
@@ -273,7 +259,7 @@ msgstr ""
 "``name`` es el nombre del grupo que será mostrado como una lista plegable de "
 "propiedades;"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:294
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:282
 msgid ""
 "every successive property added after the group property will be collapsed "
 "and shortened as determined by the prefix defined via the ``hint_string`` "
@@ -285,7 +271,7 @@ msgstr ""
 "mediante la clave ``hint_string``. Por ejemplo, ``rotate_speed`` será "
 "acortado como ``speed`` en este caso."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:298
+#: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:286
 msgid ""
 "``PROPERTY_USAGE_GROUP`` indicates that the property should be treated as a "
 "script group specifically, so the type ``TYPE_NIL`` can be ignored as it "

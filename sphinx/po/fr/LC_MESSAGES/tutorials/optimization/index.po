@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,3 +20,115 @@ msgstr ""
 #: ../../docs/tutorials/optimization/index.rst:2
 msgid "Optimization"
 msgstr "Optimisation"
+
+#: ../../docs/tutorials/optimization/index.rst:5
+msgid "Introduction"
+msgstr "Introduction"
+
+#: ../../docs/tutorials/optimization/index.rst:7
+msgid ""
+"Godot follows a balanced performance philosophy. In the performance world, "
+"there are always trade-offs, which consist of trading speed for usability "
+"and flexibility. Some practical examples of this are:"
+msgstr ""
+"Godot suit une philosophie de performance équilibrée. Dans le monde de la "
+"performance, il y a toujours des compromis à faire, qui consistent à troquer "
+"la vitesse contre la facilité d'utilisation et la flexibilité. En voici "
+"quelques exemples pratiques :"
+
+#: ../../docs/tutorials/optimization/index.rst:11
+msgid ""
+"Rendering objects efficiently in high amounts is easy, but when a large "
+"scene must be rendered, it can become inefficient. To solve this, visibility "
+"computation must be added to the rendering, which makes rendering less "
+"efficient, but, at the same time, fewer objects are rendered, so efficiency "
+"overall improves."
+msgstr ""
+"Rendre efficacement des objets en grandes quantités est facile, mais "
+"lorsqu'une scène de grande taille doit être rendue, cela peut devenir "
+"inefficace. Pour résoudre ce problème, le calcul de visibilité doit être "
+"ajouté au rendu, ce qui rend le rendu moins efficace, mais, en même temps, "
+"moins d'objets sont rendus, ce qui améliore l'efficacité globale."
+
+#: ../../docs/tutorials/optimization/index.rst:17
+msgid ""
+"Configuring the properties of every material for every object that needs to "
+"be rendered is also slow. To solve this, objects are sorted by material to "
+"reduce the costs, but at the same time sorting has a cost."
+msgstr ""
+"La configuration des propriétés de chaque matériaux pour chaque objet qui "
+"doit être rendu est également lente. Pour résoudre ce problème, les objets "
+"sont triés par matériaux afin de réduire les coûts, mais le tri a également "
+"un coût."
+
+#: ../../docs/tutorials/optimization/index.rst:21
+msgid ""
+"In 3D physics a similar situation happens. The best algorithms to handle "
+"large amounts of physics objects (such as SAP) are slow at insertion/removal "
+"of objects and ray-casting. Algorithms that allow faster insertion and "
+"removal, as well as ray-casting, will not be able to handle as many active "
+"objects."
+msgstr ""
+"En physique 3D, une situation similaire se produit. Les meilleurs "
+"algorithmes pour manipuler de grandes quantités d'objets physiques (tels que "
+"SAP) sont lents à l'insertion/retrait d'objets et au ray-casting. Les "
+"algorithmes qui permettent une insertion, un retrait et un ray-casting plus "
+"rapides, ne seront pas en mesure de traiter autant d'objets actifs."
+
+#: ../../docs/tutorials/optimization/index.rst:27
+#, fuzzy
+msgid ""
+"And there are many more examples of this! Game engines strive to be general "
+"purpose in nature, so balanced algorithms are always favored over algorithms "
+"that might be fast in some situations and slow in others or algorithms that "
+"are fast but make usability more difficult."
+msgstr ""
+"Et il y a bien d'autres exemples ! Les moteurs de jeu s'efforcent d'être "
+"généraliste par nature, donc les algorithmes équilibrés sont toujours "
+"préférés aux algorithmes qui peuvent être rapides dans certaines situations "
+"et lents dans d'autres... ou aux algorithmes qui sont rapides mais rendent "
+"l'utilisation plus difficile."
+
+#: ../../docs/tutorials/optimization/index.rst:32
+#, fuzzy
+msgid ""
+"Godot is not an exception and, while it is designed to have backends "
+"swappable for different algorithms, the default ones prioritize balance and "
+"flexibility over performance."
+msgstr ""
+"Godot n'est pas une exception et, bien qu'il soit conçu pour avoir des "
+"backends interchangeables pour différents algorithmes, ceux par défaut (ou "
+"plutôt les seuls qui sont là pour le moment) privilégient l'équilibre et la "
+"flexibilité par rapport à la performance."
+
+#: ../../docs/tutorials/optimization/index.rst:36
+#, fuzzy
+msgid ""
+"With this clear, the aim of this tutorial section is to explain how to get "
+"the maximum performance out of Godot. While the tutorials can be read in any "
+"order, it is a good idea to start from :ref:`doc_general_optimization`."
+msgstr ""
+"Le but de ce tutoriel est d'expliquer comment tirer le maximum de "
+"performances de Godot."
+
+#: ../../docs/tutorials/optimization/index.rst:41
+#, fuzzy
+msgid "Common"
+msgstr "Commande"
+
+#: ../../docs/tutorials/optimization/index.rst:51
+msgid "CPU"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/index.rst:60
+#, fuzzy
+msgid "GPU"
+msgstr "Interface graphique"
+
+#: ../../docs/tutorials/optimization/index.rst:70
+msgid "2D"
+msgstr "2D"
+
+#: ../../docs/tutorials/optimization/index.rst:79
+msgid "3D"
+msgstr "3D"

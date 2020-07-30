@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -266,9 +266,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:247
-#, fuzzy
 msgid "After that, we declare a single member variable called ``time_passed``."
-msgstr "Чтобы начать объявлять переменные объекта понадобится:"
+msgstr ""
+"После этого мы объявляем единственную переменную с именем ``time_passed``."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:249
 msgid ""
@@ -318,7 +318,7 @@ msgstr ""
 "следит за количеством пройденного времени и высчитывает новую позицию для "
 "нашего Спрайта, используя простые функции синуса и косинуса. Всё, что "
 "остаётся это вызвать ``owner->set_position`` для вызова одного из встроенных "
-"методов нашего Спрайта. Смысл в том, что наш класс это класс контейнер;  "
+"методов нашего Спрайта. Смысл в том, что наш класс это класс контейнер; "
 "``owner`` указывает на текущий узел Спрайта к которому обращается наш "
 "скрипт. В предстоящей версии NativeScript 1.1, ``set_position`` может быть "
 "вызвана напрямую из нашего класса."
@@ -344,7 +344,7 @@ msgid ""
 "Note that we are not using the ``godot`` namespace here, since the three "
 "functions implemented here need to be defined without a namespace."
 msgstr ""
-"Учтите, что  здесь мы не используем  пространства имён``godot`` , поскольку "
+"Учтите, что здесь мы не используем пространства имён``godot`` , поскольку "
 "три функции реализованные здесь функции должны быть объявлены без "
 "пространства имён."
 
@@ -489,9 +489,8 @@ msgid "We're finally ready to run the project:"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:493
-#, fuzzy
 msgid "Adding properties"
-msgstr "Это его редактируемые свойства."
+msgstr "Добавление свойств"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:495
 msgid ""

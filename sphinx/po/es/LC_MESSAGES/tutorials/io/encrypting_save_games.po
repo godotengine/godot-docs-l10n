@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:4
 msgid "Encrypting save games"
-msgstr ""
+msgstr "Encriptar las partidas guardadas"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:7
 msgid "Why?"
@@ -39,6 +39,17 @@ msgid ""
 "spending money on them to extend their experience, and their preferred way "
 "of doing so is through in-app purchases and virtual currency."
 msgstr ""
+"Porque el mundo de hoy no es el mundo de ayer. Una oligarquía capitalista "
+"dirige el mundo y nos obliga a consumir para mantener los engranajes de esta "
+"sociedad podrida. Por lo tanto, el mayor mercado para el consumo de "
+"videojuegos hoy en día es el móvil. Es un mercado de pobres almas obligadas "
+"a consumir compulsivamente contenidos digitales para olvidar la miseria de "
+"su vida cotidiana, los desplazamientos, o cualquier otro breve momento libre "
+"que tengan y que no utilicen para producir bienes o servicios para la clase "
+"dominante. Estos individuos necesitan seguir centrándose en sus videojuegos "
+"(porque no hacerlo les llenará de una tremenda angustia existencial), por lo "
+"que llegan a gastar dinero en ellos para ampliar su experiencia, y su forma "
+"preferida de hacerlo es a través de compras in-app y moneda virtual."
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:25
 msgid ""
@@ -49,16 +60,24 @@ msgid ""
 "them to think, and the tremendous agony of realizing their own irrelevance "
 "would again take over their life."
 msgstr ""
+"Pero, ¿y si alguien encontrara la forma de editar las partidas guardadas y "
+"asignar los objetos y la moneda sin esfuerzo? Eso sería terrible, porque "
+"ayudaría a los jugadores a consumir el contenido mucho más rápido, y por lo "
+"tanto se agotaría antes de lo esperado. Si eso sucede, no tendrán nada que "
+"les impida pensar, y la tremenda agonía de darse cuenta de su propia "
+"irrelevancia se apoderaría nuevamente de su vida."
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:32
 msgid ""
 "No, we definitely do not want that to happen, so let's see how to encrypt "
 "savegames and protect the world order."
 msgstr ""
+"No, definitivamente no queremos que eso suceda, así que veamos cómo "
+"encriptar las partidas guardadas y proteger el orden mundial."
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:36
 msgid "How?"
-msgstr ""
+msgstr "¿Cómo?"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:38
 msgid ""
@@ -66,6 +85,10 @@ msgid ""
 "write data (integers, strings and variants). It also supports encryption. To "
 "create an encrypted file, a passphrase must be provided, like this:"
 msgstr ""
+"La clase :ref:`File <class_File>` puede abrir un archivo en una ubicación y "
+"leer/escribir datos (enteros, cadenas y variantes). También soporta la "
+"encriptación. Para crear un archivo cifrado, se debe proporcionar una "
+"expresión de seguridad, como esta:"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:58
 msgid ""
@@ -73,14 +96,18 @@ msgid ""
 "from sharing savefiles. To solve this, use the device unique id or some "
 "unique user identifier, for example:"
 msgstr ""
+"Esto hará que el archivo sea ilegible para los usuarios, pero aún así no "
+"impedirá que compartan los archivos de guardado. Para resolver esto, utiliza "
+"el id único del dispositivo o algún identificador de usuario único, por "
+"ejemplo:"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:77
 msgid "Note that ``OS.get_unique_id()`` does not work on UWP or HTML5."
-msgstr ""
+msgstr "Ten en cuenta que ``OS.get_unique_id()`` no funciona en UWP o HTML5."
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:79
 msgid "That is all! Thank you for your cooperation, citizen."
-msgstr ""
+msgstr "¡Eso es todo! Gracias por su cooperación, ciudadano."
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:81
 msgid ""

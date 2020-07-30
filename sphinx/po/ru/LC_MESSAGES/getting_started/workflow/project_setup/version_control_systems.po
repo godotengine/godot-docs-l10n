@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,9 +40,8 @@ msgstr ""
 "редакторе в **Проект>Управление Версиями**."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:17
-#, fuzzy
 msgid "Official Git plugin"
-msgstr "Инициализация сети"
+msgstr "Официальный плагин для Git"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:19
 msgid ""
@@ -52,26 +51,37 @@ msgid ""
 "Documentation on how to use the Git plugin can be found `here <https://"
 "github.com/godotengine/godot-git-plugin/wiki>`__."
 msgstr ""
+"Использование Git внутри редактора поддерживается официальным плагином. Вы "
+"можете найти последние релизы `здесь <https://github.com/godotengine/godot-"
+"git-plugin/releases>`__ (он недоступен в библиотеке активов). Документацию "
+"по использованию плагина Git можно найти `здесь <https://github.com/"
+"godotengine/godot-git-plugin/wiki>`__."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:27
 msgid "Files to exclude from VCS"
-msgstr ""
+msgstr "Файлы, исключаемые из VCS"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:29
 msgid "There are some folders Godot creates you should have your VCS ignore:"
 msgstr ""
+"Есть некоторые папки, созданные Godot, которые вы должны игнорировать своими "
+"VCS:"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:31
 msgid ""
 "``.import/``: This folder stores all the files it imports automatically "
 "based on your source assets and their import flags."
 msgstr ""
+"``.import/``: в этой папке хранятся все файлы, которые он импортирует "
+"автоматически на основе ваших исходных ресурсов и их флагов импорта."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:33
 msgid ""
 "``*.translation``: These files are binary imported translations generated "
 "from CSV files."
 msgstr ""
+"``*.translation``: эти файлы представляют собой двоичные импортированные "
+"переводы, сгенерированные из CSV-файлов."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:34
 msgid ""
@@ -79,9 +89,14 @@ msgid ""
 "project, including sensitive information such as Android keystore "
 "credentials."
 msgstr ""
+"``export_presets.cfg``: этот файл содержит все предустановки экспорта для "
+"проекта, включая конфиденциальную информацию, такую как учетные данные "
+"хранилища ключей Android."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:36
 msgid ""
 "``.mono/``: This folder stores automatically-generated Mono files. It only "
 "exists in projects that use the Mono version of Godot."
 msgstr ""
+"``.mono/``: в этой папке хранятся автоматически сгенерированные Mono-файлы. "
+"Он существует только в проектах, использующих Mono-версию Godot."

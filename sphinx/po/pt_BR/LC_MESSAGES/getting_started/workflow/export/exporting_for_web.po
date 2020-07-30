@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,12 +87,11 @@ msgstr ""
 "exportados para HTML5 usam *WebGL 2* quando *GLES3* está selecionado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:34
-#, fuzzy
 msgid ""
 "Using WebGL 2 is not recommended due to its expected removal from Godot "
 "without replacement."
 msgstr ""
-"Não é recomendado usar WebGL 2 visto que é esperado ser removido da Godot."
+"Não é recomendado usar WebGL 2 visto que é esperado ser removido do Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:37
 msgid ""
@@ -110,14 +109,13 @@ msgstr ""
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
 msgstr ""
-"O renderizador WebGL 2 da Godot possui problemas com 3D e não é mais mantido."
+"O renderizador WebGL 2 do Godot possui problemas com 3D e não é mais mantido."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:45
 msgid "Limitations"
 msgstr "Limitações"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:47
-#, fuzzy
 msgid ""
 "For security and privacy reasons, many features that work effortlessly on "
 "native platforms are more complicated on the web platform. Following is a "
@@ -127,7 +125,7 @@ msgstr ""
 "Por motivos de segurança e privacidade, muitas funcionalidades que funcionam "
 "sem problemas nas plataformas nativas são mais complicadas na plataforma "
 "web. A seguir há uma lista das limitações que se deve estar ciente quando "
-"for portar um game da Godot para a web."
+"for portar um game do Godot para a web."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:52
 msgid "Using cookies for data persistence"
@@ -221,8 +219,9 @@ msgid "The HTTP classes have several restrictions on the HTML5 platform:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
+#, fuzzy
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
-msgstr ""
+msgstr "Acessar ou modificar o``StreamPeer`` não é possível"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
 msgid "Threaded/Blocking mode is not available"
@@ -249,7 +248,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:99
 msgid "Exported ``.html`` file must not be reused"
-msgstr "Esse também o ícone que é mostrado na lista de projetos da Godot."
+msgstr "O arquivo `` .html`` exportado não deve ser reutilizado"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid ""
@@ -397,11 +396,15 @@ msgid "Export options"
 msgstr "Opções de exportação"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:172
+#, fuzzy
 msgid ""
 "If a runnable web export template is available, a button appears between the "
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
 "the game in the default browser for testing."
 msgstr ""
+"Se uma exportação executável web está disponível, um botão aparecerá entre "
+"os botões *Pausar cena* e *Jogar Cena editada* no editor para abrir o jogo "
+"rapidamente no seu navegador padrão para teste."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:176
 msgid ""

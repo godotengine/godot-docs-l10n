@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,7 +149,7 @@ msgid ""
 "the main scene of the game:"
 msgstr "首先，我们设置一些变量并用游戏的主场景初始化 ``current_scene`` :"
 
-#: ../../docs/tutorials/io/background_loading.rst:106
+#: ../../docs/tutorials/io/background_loading.rst:107
 #, fuzzy
 msgid ""
 "The function ``goto_scene`` is called from the game when the scene needs to "
@@ -162,7 +162,7 @@ msgstr ""
 "并调用 ``set_process(true)`` 同时在 ``_process`` 回调中启动轮询加载器。 它还"
 "会启动一个“加载”动画，以显示进度条或加载屏幕等。"
 
-#: ../../docs/tutorials/io/background_loading.rst:128
+#: ../../docs/tutorials/io/background_loading.rst:129
 #, fuzzy
 msgid ""
 "``_process`` is where the loader is polled. ``poll`` is called, and then we "
@@ -176,7 +176,7 @@ msgstr ""
 "误。 另请注意，我们跳过一帧(通过 ``wait_frames`` ，在 ``goto_scene`` 函数上设"
 "置)以允许加载屏幕显示。"
 
-#: ../../docs/tutorials/io/background_loading.rst:134
+#: ../../docs/tutorials/io/background_loading.rst:135
 #, fuzzy
 msgid ""
 "Note how we use ``OS.get_ticks_msec`` to control how long we block the "
@@ -189,7 +189,7 @@ msgstr ""
 "能加载速度很快，这意味着我们可以在一帧中调用多次调用 ``poll`` ，有些可能比 "
 "``time_max`` 的值更多，所以请记住我们不可以精确控制时间。"
 
-#: ../../docs/tutorials/io/background_loading.rst:170
+#: ../../docs/tutorials/io/background_loading.rst:172
 msgid ""
 "Some extra helper functions. ``update_progress`` updates a progress bar, or "
 "can also update a paused animation (the animation represents the entire load "
@@ -202,23 +202,23 @@ msgstr ""
 "因为它是一个被加载的场景，所以需要在从加载器获得的资源上调用 "
 "``instance()`` 。"
 
-#: ../../docs/tutorials/io/background_loading.rst:195
+#: ../../docs/tutorials/io/background_loading.rst:199
 msgid "Using multiple threads"
 msgstr "使用多个线程"
 
-#: ../../docs/tutorials/io/background_loading.rst:197
+#: ../../docs/tutorials/io/background_loading.rst:201
 msgid ""
 "ResourceInteractiveLoader can be used from multiple threads. A couple of "
 "things to keep in mind if you attempt it:"
 msgstr ""
 "多个线程可以用在ResourceInteractiveLoader中。 如果您尝试一下，请记住以下几点:"
 
-#: ../../docs/tutorials/io/background_loading.rst:201
+#: ../../docs/tutorials/io/background_loading.rst:205
 #, fuzzy
 msgid "Use a semaphore"
 msgstr "使用信号量"
 
-#: ../../docs/tutorials/io/background_loading.rst:203
+#: ../../docs/tutorials/io/background_loading.rst:207
 #, fuzzy
 msgid ""
 "While your thread waits for the main thread to request a new resource, use a "
@@ -227,11 +227,11 @@ msgstr ""
 "当您的线程等待主线程请求新资源时，使用信号量来休眠(而不是繁忙的循环或类似的东"
 "西)。"
 
-#: ../../docs/tutorials/io/background_loading.rst:207
+#: ../../docs/tutorials/io/background_loading.rst:211
 msgid "Not blocking main thread during the polling"
 msgstr "在轮询期间不阻塞主线程"
 
-#: ../../docs/tutorials/io/background_loading.rst:209
+#: ../../docs/tutorials/io/background_loading.rst:213
 #, fuzzy
 msgid ""
 "If you have a mutex to allow calls from the main thread to your loader "
@@ -246,11 +246,11 @@ msgstr ""
 "的一些资源，这可能需要锁定主线程以获取它们。 如果主线程在您的线程正在等待加载"
 "资源时等待您的互斥锁，则可能会导致死锁。"
 
-#: ../../docs/tutorials/io/background_loading.rst:218
+#: ../../docs/tutorials/io/background_loading.rst:222
 msgid "Example class"
 msgstr "示例类"
 
-#: ../../docs/tutorials/io/background_loading.rst:220
+#: ../../docs/tutorials/io/background_loading.rst:224
 msgid ""
 "You can find an example class for loading resources in threads here: :"
 "download:`resource_queue.gd <files/resource_queue.gd>`. Usage is as follows:"
@@ -258,28 +258,28 @@ msgstr ""
 "您可以在这里找到一个用于在线程中加载资源的示例类: :download:`resource_queue."
 "gd <files / resource_queue.gd>`。 用法如下:"
 
-#: ../../docs/tutorials/io/background_loading.rst:227
+#: ../../docs/tutorials/io/background_loading.rst:231
 msgid "Call after you instance the class to start the thread."
 msgstr "在实例化类之后调用以启动线程。"
 
-#: ../../docs/tutorials/io/background_loading.rst:233
+#: ../../docs/tutorials/io/background_loading.rst:237
 #, fuzzy
 msgid ""
 "Queue a resource. Use optional argument \"p_in_front\" to put it in front of "
 "the queue."
 msgstr "排队资源。 使用可选参数“p_in_front”将其放在队列前面。"
 
-#: ../../docs/tutorials/io/background_loading.rst:240
+#: ../../docs/tutorials/io/background_loading.rst:244
 msgid "Remove a resource from the queue, discarding any loading done."
 msgstr "从队列中删除资源，丢弃任何已完成的加载。"
 
-#: ../../docs/tutorials/io/background_loading.rst:246
+#: ../../docs/tutorials/io/background_loading.rst:250
 #, fuzzy
 msgid ""
 "Returns ``true`` if a resource is fully loaded and ready to be retrieved."
 msgstr "如果资源已完成加载并准备好检索，则返回true。"
 
-#: ../../docs/tutorials/io/background_loading.rst:252
+#: ../../docs/tutorials/io/background_loading.rst:256
 #, fuzzy
 msgid ""
 "Get the progress of a resource. Returns -1 if there was an error (for "
@@ -292,7 +292,7 @@ msgstr ""
 "下返回介于0.0和1.0之间的数字。 主要用于美容目的(更新进度条等)，使用 "
 "``is_ready`` 来查明资源是否实际就绪。"
 
-#: ../../docs/tutorials/io/background_loading.rst:262
+#: ../../docs/tutorials/io/background_loading.rst:266
 #, fuzzy
 msgid ""
 "Returns the fully loaded resource, or ``null`` on error. If the resource is "
@@ -304,11 +304,11 @@ msgstr ""
 "回false)，它将阻塞您的线程并完成加载。 如果资源不在队列中，它将调用"
 "``ResourceLoader :: load``来正常加载它并返回它。"
 
-#: ../../docs/tutorials/io/background_loading.rst:268
+#: ../../docs/tutorials/io/background_loading.rst:272
 msgid "Example:"
 msgstr "示例："
 
-#: ../../docs/tutorials/io/background_loading.rst:298
+#: ../../docs/tutorials/io/background_loading.rst:305
 #, fuzzy
 msgid ""
 "**Note**: this code, in its current form, is not tested in real world "

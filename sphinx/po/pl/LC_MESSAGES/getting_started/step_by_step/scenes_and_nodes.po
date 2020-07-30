@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -301,13 +301,12 @@ msgstr ""
 "na \"Witaj Świecie\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
-#, fuzzy
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit :kbd:`F6`):"
 msgstr ""
-"W porządku, wszystko jest gotowe do otworzenia sceny! Naciśnij przycisk "
-"ODTWÓRZ SCENĘ na górnym pasku (lub naciśnij klawisz F6):"
+"W porządku, wszystko jest gotowe do uruchomienia sceny! Naciśnij przycisk "
+"ODTWÓRZ SCENĘ na górnym pasku (lub naciśnij klawisz :kbd:`F6`):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
 msgid "Aaaand... Oops."
@@ -322,7 +321,6 @@ msgstr ""
 "użyć dowolnej nazwy, np. Witaj.tscn."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:155
-#, fuzzy
 msgid ""
 "And here's when something funny happens. The file dialog is a special file "
 "dialog, and only allows you to save inside the project. The project root is "
@@ -334,11 +332,12 @@ msgid ""
 msgstr ""
 "I właśnie wtedy dzieje się coś ciekawego. Okno dialogowe pliku jest "
 "specjalnym oknem dialogowym pliku i pozwala tylko na zapisanie plików w "
-"folderze projektu. Korzeń projektu to \"res://\", co oznacza \"ścieżkę zasobu"
+"folderze projektu. Korzeń projektu to ``res://``, co oznacza \"ścieżkę zasobu"
 "\". Oznacza to, że pliki mogą być zapisywane tylko wewnątrz projektu. W "
-"przyszłości, wykonując operacje plików w Godot, pamiętaj, że \"res://\" jest "
-"ścieżką zasobów i bez względu na platformę lub lokalizację instalacji, jest "
-"to sposób, aby zlokalizować gdzie pliki zasobów znajdują się wewnątrz gry."
+"przyszłości, wykonując operacje na plikach w Godot, pamiętaj, że ``res://`` "
+"jest ścieżką zasobów i bez względu na platformę lub lokalizację instalacji, "
+"jest to sposób, aby zlokalizować gdzie pliki zasobów znajdują się wewnątrz "
+"gry."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid ""

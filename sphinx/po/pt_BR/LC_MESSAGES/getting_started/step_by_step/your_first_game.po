@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1100,16 +1100,14 @@ msgstr ""
 "Selecione ``Mob.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:782
-#, fuzzy
 msgid ""
 "Next, select the ``Player`` node in the Scene dock, and access the Node dock "
 "on the sidebar. Make sure to have the Signals tab selected in the Node dock."
 msgstr ""
-"Selecione o nó Botão na árvore da cena e selecione o guia \"Nó\". Em "
-"seguida, assegure-se que selecionou \"Sinais\"."
+"Em seguida, selecione o nó do ``Player`` no painel Cena, e acesse o nó na "
+"barra lateral. Certifique-se de selecionar a aba Sinais no Painel de nós."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:785
-#, fuzzy
 msgid ""
 "You should see a list of the signals for the ``Player`` node. Find and "
 "double-click the ``hit`` signal in the list (or right-click it and select "
@@ -1120,12 +1118,14 @@ msgid ""
 "following code to the new function, as well as a ``new_game`` function that "
 "will set everything up for a new game:"
 msgstr ""
-"Em seguida, clique no Jogador e conecte o sinal ``hit``. Queremos criar uma "
-"função chamada ``game_over``, que lidará com tudo o que precisa acontecer "
-"quando um jogo acaba. Digite \"game_over\" na caixa \"Método no Nó\" na "
-"parte inferior da janela \"Conectando Sinal\" e clique \"Conectar\". "
-"Adicione o código a seguir, assim como uma função ``new_game`` (novo jogo) "
-"para definir tudo para um novo jogo:"
+"Você deve ver uma lista de sinais para o nó ``Player``. Em seguida, encontre "
+"e dê dois cliques no sinal ``hit`` da lista (ou clique com o botão direito e "
+"selecione \"Conectar...\"). Isso abrirá a caixa de diálogo de conexão de "
+"sinal. Queremos criar uma função chamada ``game_over``, que lidará com tudo "
+"o que precisa acontecer quando um jogo acaba. Digite \"game_over\" na caixa "
+"\"Método no Nó\" na parte inferior da janela de conexão de sinal e clique em "
+"\"Conectar\". Adicione o código a seguir à nova função, assim como uma "
+"função ``new_game`` (novo jogo) para definir tudo para um novo jogo:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:826
 msgid ""
@@ -1358,7 +1358,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1007
 msgid "ScoreLabel"
-msgstr ""
+msgstr "ScoreLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
 msgid "*Layout* : \"Top Wide\""
@@ -1603,7 +1603,6 @@ msgid "Background"
 msgstr "Plano de fundo"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1258
-#, fuzzy
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1612,22 +1611,21 @@ msgid ""
 "color you like and select \"Layout\" -> \"Full Rect\" so that it covers the "
 "screen."
 msgstr ""
-"O plano de fundo cinza padrão não é muito apelativo, então vamos mudar sua "
-"cor. Uma maneira de fazer isso é usar um nó :ref:`ColorRect "
-"<class_ColorRect>` (\"retângulo colorido\"). Faça ele ser o primeiro nó de "
-"``Principal`` para que ele seja desenhado por trás dos outros nós. "
+"O plano de fundo padrão cor cinza não é muito apelativo, então vamos mudar "
+"sua cor. Uma maneira de fazer isso é usar um Nó :ref:`ColorRect "
+"<class_ColorRect>` (\"retângulo colorido\"). Faça ele ser o primeiro Nó de "
+"``Principal`` para que ele seja desenhado por trás dos outros Nós. "
 "``ColorRect`` tem apenas uma propriedade: ``Color`` (\"cor\"). Escolha uma "
-"cor que goste e, com o mouse, altere as dimensões do ``ColorRect`` para que "
-"cubra a tela."
+"cor que goste e selecione, em \"Layout\", \"Full Rect\" para cobrir toda a "
+"tela."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1264
-#, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``TextureRect`` node instead."
 msgstr ""
-"Você também pode adicionar uma imagem de plano de fundo, se tiver uma, "
-"usando um nó ``Sprite``."
+"Você também pode adicionar uma imagem de plano de fundo, se tiver uma, ao "
+"usar um nó ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1268
 msgid "Sound effects"
@@ -1684,7 +1682,6 @@ msgstr ""
 "fazer isso é usando a propriedade \"Atalho\" do nó ``Button``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1292
-#, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1696,9 +1693,9 @@ msgstr ""
 "Na cena ``HUD``, selecione o ``StartButton`` e encontre a propriedade "
 "*Atalho* no Inspetor. Selecione \"Novo atalho\" e clique no item \"Atalho\". "
 "Uma segunda propriedade *Atalho* aparecerá. Selecione \"New InputEventAction"
-"\" e clique no novo \"InputEvent\". Finalmente, na propriedade Action, "
-"digite o nome \"ui_select\". Este é o evento de entrada padrão associado à "
-"barra de espaço."
+"\" e clique no novo \"InputEventAction\". Finalmente, na propriedade "
+"*Action*, digite o nome \"ui_select\". Este é o evento de entrada padrão "
+"associado à barra de espaço."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1300
 msgid ""

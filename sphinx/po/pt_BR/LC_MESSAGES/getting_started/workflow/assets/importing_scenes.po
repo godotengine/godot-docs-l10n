@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -318,9 +318,8 @@ msgid "Root Scale"
 msgstr "Nome da Raiz"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:118
-#, fuzzy
 msgid "The scale of the root node."
-msgstr "O papel do roteiro"
+msgstr "A escala do nó raiz."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
 msgid "Custom Script"
@@ -421,7 +420,7 @@ msgid ""
 "edited ones and ignore the ones coming from the source scene. This option is "
 "only present if materials are saved as files."
 msgstr ""
-"Uma vez que materiais são editados para usar as ferramentas da Godot, o "
+"Uma vez que materiais são editados para usar as ferramentas do Godot, o "
 "importador vai manter os que foram editados e ignorar os que vieram da cena "
 "inicial. Essa opção está presente somente se os materiais são salvos como "
 "arquivos."
@@ -915,7 +914,8 @@ msgstr ""
 "não importa qual seja o seu tipo. Eles não aparecerão na cena importada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
-msgid "Create collisions (-col, -colonly, -convcolonly)"
+#, fuzzy
+msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
 msgstr "Criar colisões (-col, -colionly, -convcolonly)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
@@ -928,6 +928,15 @@ msgstr ""
 "malha."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:375
+#, fuzzy
+msgid ""
+"Option \"-convcol\" will create a :ref:`class_convexpolygonshape` instead of "
+"a :ref:`class_concavepolygonshape`."
+msgstr ""
+"A opção \"-convcolonly\" criará um :ref:`class_convexpolygonshap` em vez de "
+"um :ref:`class_concavepolygonshape`."
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:377
 msgid ""
 "However, it is often the case that the visual geometry is too complex or too "
 "un-smooth for collisions, which ends up not working well."
@@ -935,7 +944,7 @@ msgstr ""
 "No entanto, muitas vezes é o caso de que a geometria visual é muito complexa "
 "ou muito irregular para colisões, o que acaba não funcionando bem."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:378
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
 msgid ""
 "To solve this, the \"-colonly\" modifier exists, which will remove the mesh "
 "upon import and create a :ref:`class_staticbody` collision instead. This "
@@ -945,15 +954,16 @@ msgstr ""
 "na importação e criará uma colisão de :ref:`class_staticbody` ao invés. Isso "
 "ajuda a malha visual e a colisão atual a serem separadas."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:382
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
+#, fuzzy
 msgid ""
-"Option \"-convcolonly\" will create a :ref:`class_convexpolygonshape` "
-"instead of a :ref:`class_concavepolygonshape`."
+"Option \"-convcolonly\" works in a similar way but will create a :ref:"
+"`class_convexpolygonshape` instead."
 msgstr ""
 "A opção \"-convcolonly\" criará um :ref:`class_convexpolygonshap` em vez de "
 "um :ref:`class_concavepolygonshape`."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:386
 msgid ""
 "Option \"-colonly\" can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
@@ -965,24 +975,24 @@ msgstr ""
 "filho. O nó de colisão terá uma das várias formas predefinidas, dependendo "
 "do tipo de desenho vazio do Blender:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:391
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:393
 msgid "Single arrow will create a :ref:`class_rayshape`"
 msgstr "Seta única criará um :ref:`class_rayshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:392
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
 msgid "Cube will create a :ref:`class_boxshape`"
 msgstr "Cubo criará um :ref:`class_boxshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:393
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:395
 msgid "Image will create a :ref:`class_planeshape`"
 msgstr "Imagem criará um :ref:`class_planeshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:396
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`"
 msgstr "Esfera (e os outros não listados) criarão um :ref:`class_sphereshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:396
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
 msgid ""
 "For better visibility in Blender's editor, the user can set \"X-Ray\" option "
 "on collision empties and set some distinct color for them in User "
@@ -992,11 +1002,11 @@ msgstr ""
 "opção \"X-Ray\" em colisão vazias e definir alguma cor distinta para eles em "
 "User Preferences / Themes / 3D View / Empty."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:400
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
 msgid "Create navigation (-navmesh)"
 msgstr "Criar navegação (-navmesh)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
 msgid ""
 "A mesh node with this suffix will be converted to a navigation mesh. "
 "Original Mesh node will be removed."
@@ -1004,11 +1014,11 @@ msgstr ""
 "Um nó de malha com este sufixo será convertido em uma malha de navegação. O "
 "nó original da Malha será removido."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "Cria um Veículo (-vehicle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:410
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleBody <class_VehicleBody>` node."
@@ -1016,11 +1026,11 @@ msgstr ""
 "Um nó de malha com este sufixo será importado como um filho de um nó :ref:"
 "`VeículoBody <class_VehicleBody>`."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "Crie uma Roda de Veículo (-wheel)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:415
 msgid ""
 "A mesh node with this suffix will be imported as a child to a :ref:"
 "`VehicleWheel <class_VehicleWheel>` node."
@@ -1028,19 +1038,19 @@ msgstr ""
 "Um nó de malha com este sufixo será importado como um filho de um nó :ref:"
 "`VehicleWheel <class_VehicleWheel>`."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:418
 msgid "Rigid Body (-rigid)"
 msgstr "Rigid Body (-rigid)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:418
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:420
 msgid "Creates a rigid body from this mesh."
 msgstr "Cria um corpo rígido a partir desta malha."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:421
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
 msgid "Animation loop (-loop, -cycle)"
 msgstr "Loop de animação (-loop, -cycle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "\"loop\" or \"cycle\" will be imported as a Godot Animation with the loop "
@@ -1050,7 +1060,7 @@ msgstr ""
 "\"loop\" ou \"cycle\" serão importados como uma Animação do Godot com a flag "
 "de loop marcada. Isso é case-sensitive e não requer um hífen."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:429
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the \"loop\" or \"cycle\" prefix or suffix."

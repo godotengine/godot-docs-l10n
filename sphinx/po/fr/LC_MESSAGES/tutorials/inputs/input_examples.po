@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgstr ""
 msgid "Examples:"
 msgstr "Exemples :"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:62
+#: ../../docs/tutorials/inputs/input_examples.rst:63
 msgid ""
 "This gives you the flexibility to mix-and-match the type of input processing "
 "you do."
@@ -85,7 +85,7 @@ msgstr ""
 "Cela vous donne la flexibilité de combiner le type de traitement des entrées "
 "que vous effectuez."
 
-#: ../../docs/tutorials/inputs/input_examples.rst:65
+#: ../../docs/tutorials/inputs/input_examples.rst:66
 msgid ""
 "For the remainder of this tutorial, we'll focus on capturing individual "
 "events in ``_input()``."
@@ -93,11 +93,11 @@ msgstr ""
 "Pour le reste de ce tutoriel, nous allons nous concentrer sur la capture "
 "d'événements individuels dans ``_input()``."
 
-#: ../../docs/tutorials/inputs/input_examples.rst:69
+#: ../../docs/tutorials/inputs/input_examples.rst:70
 msgid "Input events"
 msgstr "Événement d’entrée"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:71
+#: ../../docs/tutorials/inputs/input_examples.rst:72
 msgid ""
 "Input events are objects that inherit from :ref:`InputEvent "
 "<class_InputEvent>`. Depending on the event type, the object will contain "
@@ -109,7 +109,7 @@ msgstr ""
 "propriétés spécifiques liées à cet événement. Pour voir à quoi ressemblent "
 "réellement les événements, ajoutez un nœud et attachez le script suivant :"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:91
+#: ../../docs/tutorials/inputs/input_examples.rst:99
 msgid ""
 "As you press keys, move the mouse, and perform other inputs, you'll see each "
 "event scroll by in the output window. Here's an example of the output:"
@@ -118,7 +118,7 @@ msgstr ""
 "d'autres entrées, vous verrez chaque événement défiler dans la fenêtre de "
 "sortie. Voici un exemple de la sortie :"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:105
+#: ../../docs/tutorials/inputs/input_examples.rst:113
 msgid ""
 "As you can see, the results are very different for the different types of "
 "input. Key events are even printed as their key symbols. For example, let's "
@@ -131,14 +131,14 @@ msgstr ""
 "`InputEventMouseButton <class_InputEventMouseButton>`. Il hérite des classes "
 "suivantes :"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:109
+#: ../../docs/tutorials/inputs/input_examples.rst:118
 msgid ""
 ":ref:`InputEvent <class_InputEvent>` - the base class for all input events"
 msgstr ""
 ":ref:`InputEvent <class_InputEvent>` - la classe de base pour tous les "
 "événements d'entrée"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:110
+#: ../../docs/tutorials/inputs/input_examples.rst:119
 msgid ""
 ":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` - adds the "
 "ability to check if modifiers are pressed, such as :kbd:`Shift` or :kbd:"
@@ -148,7 +148,7 @@ msgstr ""
 "possibilité de vérifier si des modificateurs sont pressés, comme :kbd:"
 "`Shift` ou :kbd:`Alt`."
 
-#: ../../docs/tutorials/inputs/input_examples.rst:111
+#: ../../docs/tutorials/inputs/input_examples.rst:120
 msgid ""
 ":ref:`InputEventMouse <class_InputEventMouse>` - adds mouse event "
 "properties, such as ``position``"
@@ -156,7 +156,7 @@ msgstr ""
 ":ref:`InputEventMouse <class_InputEventMouse>` - ajoute les propriétés des "
 "événements de la souris, comme ``position``"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:112
+#: ../../docs/tutorials/inputs/input_examples.rst:121
 msgid ""
 ":ref:`InputEventMouseButton <class_InputEventMouseButton>` - contains the "
 "index of the button that was pressed, whether it was a double-click, etc."
@@ -164,7 +164,7 @@ msgstr ""
 ":ref:`InputEventMouseButton <class_InputEventMouseButton>` - contient "
 "l'index du bouton qui a été pressé, si c'était un double-clic, etc."
 
-#: ../../docs/tutorials/inputs/input_examples.rst:114
+#: ../../docs/tutorials/inputs/input_examples.rst:123
 msgid ""
 "It's a good idea to keep the class reference open while you're working with "
 "events so you can check the event type's available properties and methods."
@@ -173,7 +173,7 @@ msgstr ""
 "vous travaillez avec des événements afin de pouvoir vérifier les propriétés "
 "et les méthodes disponibles du type d'événement."
 
-#: ../../docs/tutorials/inputs/input_examples.rst:118
+#: ../../docs/tutorials/inputs/input_examples.rst:127
 msgid ""
 "You can encounter errors if you try to access a property on an input type "
 "that doesn't contain it - calling ``position`` on ``InputEventKey`` for "
@@ -184,11 +184,11 @@ msgstr ""
 "``InputEventKey`` par exemple. Pour éviter cela, assurez-vous de tester "
 "d'abord le type d'événement :"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:140
+#: ../../docs/tutorials/inputs/input_examples.rst:149
 msgid "InputMap"
 msgstr "InputMap"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:142
+#: ../../docs/tutorials/inputs/input_examples.rst:151
 msgid ""
 "The :ref:`InputMap <class_InputMap>` is the most flexible way to handle a "
 "variety of inputs. You use this by creating named input *actions*, to which "
@@ -205,11 +205,11 @@ msgstr ""
 "définies. Pour les voir, et pour ajouter les vôtres, ouvrez Projet -> "
 "Paramètres du projet et sélectionnez l'onglet InputMap :"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:152
+#: ../../docs/tutorials/inputs/input_examples.rst:161
 msgid "Capturing actions"
 msgstr "Capturer les actions"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:154
+#: ../../docs/tutorials/inputs/input_examples.rst:163
 msgid ""
 "Once you've defined your actions, you can process them in your scripts using "
 "``is_action_pressed()`` and ``is_action_released()`` by passing the name of "
@@ -219,11 +219,11 @@ msgstr ""
 "scripts en utilisant ``is_action_pressed()`` et ``is_action_released()`` en "
 "passant le nom de l'action que vous recherchez :"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:176
+#: ../../docs/tutorials/inputs/input_examples.rst:185
 msgid "Keyboard events"
 msgstr "Événements clavier"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:178
+#: ../../docs/tutorials/inputs/input_examples.rst:187
 msgid ""
 "Keyboard events are captured in :ref:`InputEventKey <class_InputEventKey>`. "
 "While it's recommended to use input actions instead, there may be cases "
@@ -236,8 +236,8 @@ msgstr ""
 "spécifiquement des événements clavier. Pour cet exemple, vérifions la "
 "touche :kbd:`T` :"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:204
-#: ../../docs/tutorials/inputs/input_examples.rst:242
+#: ../../docs/tutorials/inputs/input_examples.rst:213
+#: ../../docs/tutorials/inputs/input_examples.rst:251
 msgid ""
 "See :ref:`@GlobalScope_KeyList <enum_@GlobalScope_KeyList>` for a list of "
 "scancode constants."
@@ -245,11 +245,11 @@ msgstr ""
 "Voir :ref:`@GlobalScope_KeyList <enum_@GlobalScope_KeyList>` pour une liste "
 "des constantes du scancode."
 
-#: ../../docs/tutorials/inputs/input_examples.rst:208
+#: ../../docs/tutorials/inputs/input_examples.rst:217
 msgid "Keyboard modifiers"
 msgstr "Modificateurs de clavier"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:210
+#: ../../docs/tutorials/inputs/input_examples.rst:219
 msgid ""
 "Modifier properties are inherited from :ref:`InputEventWithModifiers "
 "<class_InputEventWithModifiers>`. This  allows you to check for modifier "
@@ -264,11 +264,11 @@ msgstr ""
 "touche :kbd:`T` est pressée, mais que quelque chose de différent se produise "
 "lorsque c'est :kbd:`Shift + T` :"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:246
+#: ../../docs/tutorials/inputs/input_examples.rst:255
 msgid "Mouse events"
 msgstr "Événements souris"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:248
+#: ../../docs/tutorials/inputs/input_examples.rst:257
 msgid ""
 "Mouse events stem from the :ref:`InputEventMouse <class_InputEventMouse>` "
 "class, and are separated into two types: :ref:`InputEventMouseButton "
@@ -283,11 +283,11 @@ msgstr ""
 "signifie que tous les événements souris contiendront une propriété "
 "``position``."
 
-#: ../../docs/tutorials/inputs/input_examples.rst:254
+#: ../../docs/tutorials/inputs/input_examples.rst:263
 msgid "Mouse buttons"
 msgstr "Boutons de la souris"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:256
+#: ../../docs/tutorials/inputs/input_examples.rst:265
 msgid ""
 "Capturing mouse buttons is very similar to handling key events. :ref:"
 "`@GlobalScope_ButtonList <enum_@GlobalScope_ButtonList>` contains a list of "
@@ -305,11 +305,11 @@ msgstr ""
 "avec les deux ``BUTTON_WHEEL_UP`` et ``BUTTON_WHEEL_DOWN`` étant des "
 "événements séparés."
 
-#: ../../docs/tutorials/inputs/input_examples.rst:291
+#: ../../docs/tutorials/inputs/input_examples.rst:300
 msgid "Mouse motion"
 msgstr "Mouvement de la souris"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:293
+#: ../../docs/tutorials/inputs/input_examples.rst:302
 msgid ""
 ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>` events occur "
 "whenever the mouse moves. You can find the move's distance with the "
@@ -319,7 +319,7 @@ msgstr ""
 "produisent à chaque fois que la souris bouge. Vous pouvez trouver la "
 "distance du mouvement avec la propriété ``relative``."
 
-#: ../../docs/tutorials/inputs/input_examples.rst:297
+#: ../../docs/tutorials/inputs/input_examples.rst:306
 msgid ""
 "Here's an example using mouse events to drag-and-drop a :ref:`Sprite "
 "<class_Sprite>` node:"
@@ -327,11 +327,11 @@ msgstr ""
 "Voici un exemple d'utilisation des événements de la souris pour glisser-"
 "déposer un nœud :ref:`Sprite <class_Sprite>` :"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:355
+#: ../../docs/tutorials/inputs/input_examples.rst:379
 msgid "Touch events"
 msgstr "Événements tactiles"
 
-#: ../../docs/tutorials/inputs/input_examples.rst:357
+#: ../../docs/tutorials/inputs/input_examples.rst:381
 msgid ""
 "If you are using a touchscreen device, you can generate touch events. :ref:"
 "`InputEventScreenTouch <class_InputEventScreenTouch>` is equivalent to a "
@@ -344,7 +344,7 @@ msgstr ""
 "souris, et :ref:`InputEventScreenDrag <class_InputEventScreenDrag>` "
 "fonctionne à peu près de la même manière qu'un mouvement de souris."
 
-#: ../../docs/tutorials/inputs/input_examples.rst:362
+#: ../../docs/tutorials/inputs/input_examples.rst:386
 msgid ""
 "To test your touch events on a non-touchscreen device, open Project Settings "
 "and go to the \"Input Devices/Pointing\" section. Enable \"Emulate Touch "

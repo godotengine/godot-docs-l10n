@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,6 @@ msgstr ""
 "быстрое, что делает его подходящим для данного рабочего процесса."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
-#, fuzzy
 msgid "Command line reference"
 msgstr "Ссылка на командную строку"
 
@@ -101,7 +100,6 @@ msgid "``-e``, ``--editor``"
 msgstr "``-e``, ``--editor``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
-#, fuzzy
 msgid ""
 "Start the editor instead of running the scene (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
@@ -613,7 +611,7 @@ msgid ""
 "scene or else an error will be thrown upon opening."
 msgstr ""
 "Godot может работать с вашей файловой системой и не будет создавать "
-"дополнительные файлы метаданных. Используйте ``rm``  для удаления файла "
+"дополнительные файлы метаданных. Используйте ``rm`` для удаления файла "
 "сцены. Убедитесь, что при открытии не будет никаких ссылок на эту сцену, "
 "иначе произойдет ошибка."
 
@@ -656,7 +654,6 @@ msgid "Exporting"
 msgstr "Экспорт"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:259
-#, fuzzy
 msgid ""
 "Exporting the project from the command line is also supported. This is "
 "especially useful for continuous integration setups. The version of Godot "
@@ -664,10 +661,9 @@ msgid ""
 msgstr ""
 "Также поддерживается экспорт проекта из командной строки. Это особенно "
 "полезно при непрерывной интеграции. Для этого идеально подойдет версия Godot "
-"без головы (сборка сервера, без видео)."
+"в режиме Headless (сборка сервера, без видео)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:268
-#, fuzzy
 msgid ""
 "The platform names recognized by the ``--export`` switch are the same as "
 "displayed in the export wizard of the editor. To get a list of supported "
@@ -693,7 +689,6 @@ msgid "Running a script"
 msgstr "Запуск скрипта"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:280
-#, fuzzy
 msgid ""
 "It is possible to run a simple ``.gd`` script from the command line. This "
 "feature is especially useful in large projects, e.g. for batch conversion of "
@@ -704,7 +699,6 @@ msgstr ""
 "ассетов или пользовательского импорта/экспорта."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:284
-#, fuzzy
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "Скрипт должен наследоваться от SceneTree или MainLoop."
 
@@ -717,10 +711,9 @@ msgid "And how to run it:"
 msgstr "И как запустить его:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
-#, fuzzy
 msgid ""
 "If no ``project.godot`` exists at the path, current path is assumed to be "
 "the current working directory (unless ``--path`` is specified)."
 msgstr ""
-"Если файл project.godot не существует в пути, то текущий путь считается "
-"текущим рабочим каталогом (если не указано ``-path`)."
+"Если файл `` project.godot`` не существует в пути, то текущий путь считается "
+"текущим рабочим каталогом (если не указано ``--path``)."

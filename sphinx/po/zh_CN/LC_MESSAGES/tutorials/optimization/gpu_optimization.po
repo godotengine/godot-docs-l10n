@@ -1,0 +1,502 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:4
+#, fuzzy
+msgid "GPU Optimizations"
+msgstr "优化"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:7
+msgid "Introduction"
+msgstr "简介"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:9
+msgid ""
+"The demand for new graphics features and progress almost guarantees that you "
+"will encounter graphics bottlenecks. Some of these can be CPU side, for "
+"instance in calculations inside the Godot engine to prepare objects for "
+"rendering. Bottlenecks can also occur on the CPU in the graphics driver, "
+"which sorts instructions to pass to the GPU, and in the transfer of these "
+"instructions. And finally bottlenecks also occur on the GPU itself."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:16
+msgid ""
+"Where bottlenecks occur in rendering is highly hardware specific. Mobile "
+"GPUs in particular may struggle with scenes that run easily on desktop."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:19
+msgid ""
+"Understanding and investigating GPU bottlenecks is slightly different to the "
+"situation on the CPU, because often you can only change performance "
+"indirectly, by changing the instructions you give to the GPU, and it may be "
+"more difficult to take measurements. Often the only way of measuring "
+"performance is by examining changes in frame rate."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:26
+msgid "Drawcalls, state changes, and APIs"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:28
+msgid ""
+"The following section is not relevant to end-users, but is useful to provide "
+"background information that is relevant in later sections."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:31
+msgid ""
+"Godot sends instructions to the GPU via a graphics API (OpenGL, GLES2, "
+"GLES3, Vulkan). The communication and driver activity involved can be quite "
+"costly, especially in OpenGL. If we can provide these instructions in a way "
+"that is preferred by the driver and GPU, we can greatly increase performance."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:36
+msgid ""
+"Nearly every API command in OpenGL requires a certain amount of validation, "
+"to make sure the GPU is in the correct state. Even seemingly simple commands "
+"can lead to a flurry of behind the scenes housekeeping. Therefore the name "
+"of the game is reduce these instructions to a bare minimum, and group "
+"together similar objects as much as possible so they can be rendered "
+"together, or with the minimum number of these expensive state changes."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:44
+#, fuzzy
+msgid "2D batching"
+msgstr "搜索"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:46
+msgid ""
+"In 2d, the costs of treating each item individually can be prohibitively "
+"high - there can easily be thousands on screen. This is why 2d batching is "
+"used - multiple similar items are grouped together and rendered in a batch, "
+"via a single drawcall, rather than making a separate drawcall for each item. "
+"In addition this means that state changes, material and texture changes can "
+"be kept to a minimum."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:53
+#, fuzzy
+msgid "For more information on 2D batching see :ref:`doc_batching`."
+msgstr "有关光线烘焙的更多信息，请参阅 :ref:`doc_baked_lightmaps`。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:56
+#, fuzzy
+msgid "3D batching"
+msgstr "搜索"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:58
+msgid ""
+"In 3d, we still aim to minimize draw calls and state changes, however, it "
+"can be more difficult to batch together several objects into a single draw "
+"call. 3d meshes tend to comprise hundreds or thousands of triangles, and "
+"combining large meshes at runtime is prohibitively expensive. The costs of "
+"joining them quickly exceeds any benefits as the number of triangles grows "
+"per mesh. A much better alternative is to join meshes ahead of time (static "
+"meshes in relation to each other). This can either be done by artists, or "
+"programmatically within Godot."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:66
+msgid ""
+"There is also a cost to batching together objects in 3d. Several objects "
+"rendered as one cannot be individually culled. An entire city that is off "
+"screen will still be rendered if it is joined to a single blade of grass "
+"that is on screen. So attempting to batch together 3d objects should take "
+"account of their location and effect on culling. Despite this, the benefits "
+"of joining static objects often outweigh other considerations, especially "
+"for large numbers of low poly objects."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:74
+#, fuzzy
+msgid ""
+"For more information on 3D specific optimizations, see :ref:"
+"`doc_optimizing_3d_performance`."
+msgstr "有关在Godot中暂停的更多信息，请参阅 :ref:`doc_pausing_games`"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:78
+#, fuzzy
+msgid "Reuse Shaders and Materials"
+msgstr "重复使用着色器和材质"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:80
+#, fuzzy
+msgid ""
+"The Godot renderer is a little different to what is out there. It's designed "
+"to minimize GPU state changes as much as possible. :ref:`SpatialMaterial "
+"<class_SpatialMaterial>` does a good job at reusing materials that need "
+"similar shaders but, if custom shaders are used, make sure to reuse them as "
+"much as possible. Godot's priorities are:"
+msgstr ""
+"Godot渲染器与其他的渲染器略有不同。 它旨在尽可能减少GPU状态的变化。 :ref:"
+"`class_SpatialMaterial` 在重用需要类似着色器的材质方面做得很好但是，如果使用"
+"自定义着色器，请确保尽可能多地重用它们。 Godot的优先事项如下:"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:86
+msgid ""
+"**Reusing Materials**: The fewer different materials in the scene, the "
+"faster the rendering will be. If a scene has a huge amount of objects (in "
+"the hundreds or thousands) try reusing the materials or in the worst case "
+"use atlases."
+msgstr ""
+"**重复使用材质**:场景中不同的材质越少，渲染速度就越快。 如果一个场景有大量的"
+"物体(数百或数千)，请尝试重复使用这些材质，或者，在最坏的情况下，使用图集。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:90
+msgid ""
+"**Reusing Shaders**: If materials can't be reused, at least try to re-use "
+"shaders (or SpatialMaterials with different parameters but the same "
+"configuration)."
+msgstr ""
+"**重用着色器**: 如果材质无法重复使用，至少尝试重新使用着色器(或具有不同参数但"
+"配置相同的SpatialMaterials)。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:94
+#, fuzzy
+msgid ""
+"If a scene has, for example, ``20,000`` objects with ``20,000`` different "
+"materials each, rendering will be slow. If the same scene has ``20,000`` "
+"objects, but only uses ``100`` materials, rendering will be much faster."
+msgstr ""
+"例如，如果一个场景有20.000个对象，每个对象有20.000个不同的材质，那么渲染将会"
+"很慢。如果同一场景有20.000个对象，但只使用100个素材，渲染将非常迅速。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:99
+msgid "Pixel cost vs vertex cost"
+msgstr "像素成本vs顶点成本"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:101
+#, fuzzy
+msgid ""
+"You may have heard that the lower the number of polygons in a model, the "
+"faster it will be rendered. This is *really* relative and depends on many "
+"factors."
+msgstr ""
+"人们普遍认为，模型中多边形的数量越少，渲染的速度就越快。这是 *非常* 相对的，"
+"取决于很多因素。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:104
+#, fuzzy
+msgid ""
+"On a modern PC and console, vertex cost is low. GPUs originally only "
+"rendered triangles, so every frame all the vertices:"
+msgstr ""
+"在现代PC和控制台上，顶点成本很低。 GPU最初只渲染三角形，所以所有顶点都是:"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:107
+msgid "Had to be transformed by the CPU (including clipping)."
+msgstr "要被CPU变换(包括剪裁)。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:109
+msgid "Had to be sent to the GPU memory from the main RAM."
+msgstr "要从主RAM发送到GPU内存。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:111
+#, fuzzy
+msgid ""
+"Now all this is handled inside the GPU, so the performance is much higher. "
+"3D artists usually have the wrong feeling about polycount performance "
+"because 3D DCCs (such as Blender, Max, etc.) need to keep geometry in CPU "
+"memory in order for it to be edited, reducing actual performance. Game "
+"engines rely on the GPU more so they can render many triangles much more "
+"efficiently."
+msgstr ""
+"如今，所有这些都是在GPU内部处理的，因此性能非常高。 3D艺术家通常对多计数性能"
+"有错误的感觉，因为3D DCC(例如Blender，Max等)需要将几何保留在CPU内存中以便进行"
+"编辑，从而降低实际性能。 事实上，3D引擎渲染的模型比3D DCC显示模型更加优化。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:117
+msgid ""
+"On mobile devices, the story is different. PC and Console GPUs are brute-"
+"force monsters that can pull as much electricity as they need from the power "
+"grid. Mobile GPUs are limited to a tiny battery, so they need to be a lot "
+"more power efficient."
+msgstr ""
+"在移动设备上又是另一个故事了。 PC和控制台GPU是蛮力的怪物，可以从电网中获取所"
+"需的电量。移动GPU仅限于小型电池，因此它们需要更高的能量使用效率。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:122
+#, fuzzy
+msgid ""
+"To be more efficient, mobile GPUs attempt to avoid *overdraw*. This means, "
+"the same pixel on the screen being rendered more than once. Imagine a town "
+"with several buildings, GPUs don't know what is visible and what is hidden "
+"until they draw it. A house might be drawn and then another house in front "
+"of it (rendering happened twice for the same pixel!). PC GPUs normally don't "
+"care much about this and just throw more pixel processors to the hardware to "
+"increase performance (but this also increases power consumption)."
+msgstr ""
+"为了提高效率，移动GPU试图避免 *透支* 。 这意味着，屏幕上的相同像素被渲染(如，"
+"通过照明计算等)不止一次。 想象一个有几座建筑的小镇，GPU不知道什么是可见的，什"
+"么是隐藏的，直到它们绘制它。 GPU可能会绘制一个房子，然后在它前面的另一个房子"
+"(对于同一个像素渲染两次！)。 PC GPU通常不关心这一点，只是将更多像素处理器投入"
+"硬件以提高性能(但这也增加了功耗)。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:130
+#, fuzzy
+msgid ""
+"Using more power is not an option on mobile so mobile devices use a "
+"technique called \"Tile Based Rendering\" which divides the screen into a "
+"grid. Each cell keeps the list of triangles drawn to it and sorts them by "
+"depth to minimize *overdraw*. This technique improves performance and "
+"reduces power consumption, but takes a toll on vertex performance. As a "
+"result, fewer vertices and triangles can be processed for drawing."
+msgstr ""
+"在移动设备上，提供更多能量不是一种选择，因此使用了一种称为“Tile Based "
+"Rendering(基于图块渲染)”的技术(几乎每个移动硬件都使用它的一种变体)，它将屏幕"
+"划分为网格。 每个单元格保留绘制到它的三角形列表，并按深度对它们进行排序，以最"
+"小化 *重绘* 。 这种技术可以提高性能并降低功耗，但会降低顶点性能。 因此，可以"
+"处理进行绘制更少的顶点和三角形。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:137
+#, fuzzy
+msgid ""
+"Additionally, Tile Based Rendering struggles when there are small objects "
+"with a lot of geometry within a small portion of the screen. This forces "
+"mobile GPUs to put a lot of strain on a single screen tile which "
+"considerably decreases performance as all the other cells must wait for it "
+"to complete in order to display the frame."
+msgstr ""
+"一般来说，这并不是那么糟糕，但在移动设备上有一个必须避免的特殊情况，即在屏幕"
+"的一小部分内具有大量几何形状的小物体。 这迫使移动GPU在单个屏幕单元上用很大的"
+"力气，大大降低了性能(因为所有其他单元必须等待它完成才能显示帧)。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:143
+#, fuzzy
+msgid ""
+"In summary, do not worry about vertex count on mobile, but avoid "
+"concentration of vertices in small parts of the screen. If a character, NPC, "
+"vehicle, etc. is far away (so it looks tiny), use a smaller level of detail "
+"(LOD) model."
+msgstr ""
+"简单地说，不要太担心移动设备上的顶点数量，但要避免在屏幕的小部分中集中顶点。 "
+"例如，如果角色，NPC，车辆等距离较远(因此看起来很小)，请使用细节程度(Level of "
+"detail, LOD) 较小的模型。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:147
+msgid "Pay attention to the additional vertex processing required when using:"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:149
+msgid "Skinning (skeletal animation)"
+msgstr "蒙皮(骨骼动画)"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:150
+msgid "Morphs (shape keys)"
+msgstr "变形(形态键)"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:151
+#, fuzzy
+msgid "Vertex-lit objects (common on mobile)"
+msgstr "顶点照明对象(在移动设备上常见)"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:154
+msgid "Pixel / fragment shaders - fill rate"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:156
+msgid ""
+"In contrast to vertex processing, the costs of fragment shading has "
+"increased dramatically over the years. Screen resolutions have increased "
+"(the area of a 4K screen is ``8,294,400`` pixels, versus ``307,200`` for an "
+"old ``640x480`` VGA screen, that is 27x the area), but also the complexity "
+"of fragment shaders has exploded. Physically based rendering requires "
+"complex calculations for each fragment."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:163
+msgid ""
+"You can test whether a project is fill rate limited quite easily. Turn off "
+"vsync to prevent capping the frames per second, then compare the frames per "
+"second when running with a large window, to running with a postage stamp "
+"sized window (you may also benefit from similarly reducing your shadow map "
+"size if using shadows). Usually you will find the fps increases quite a bit "
+"using a small window, which indicates you are to some extent fill rate "
+"limited. If on the other hand there is little to no increase in fps, then "
+"your bottleneck lies elsewhere."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:172
+msgid ""
+"You can increase performance in a fill rate limited project by reducing the "
+"amount of work the GPU has to do. You can do this by simplifying the shader "
+"(perhaps turn off expensive options if you are using a :ref:`SpatialMaterial "
+"<class_SpatialMaterial>`), or reducing the number and size of textures used."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:177
+msgid "Consider shipping simpler shaders for mobile."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:180
+#, fuzzy
+msgid "Reading textures"
+msgstr "渲染动态纹理"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:182
+msgid ""
+"The other factor in fragment shaders is the cost of reading textures. "
+"Reading textures is an expensive operation (especially reading from several "
+"in a single fragment shader), and also consider the filtering may add "
+"expense to this (trilinear filtering between mipmaps, and averaging). "
+"Reading textures is also expensive in power terms, which is a big issue on "
+"mobiles."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:189
+msgid "Texture compression"
+msgstr "纹理压缩"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:191
+#, fuzzy
+msgid ""
+"Godot compresses textures of 3D models when imported (VRAM compression) by "
+"default. Video RAM compression is not as efficient in size as PNG or JPG "
+"when stored, but increases performance enormously when drawing."
+msgstr ""
+"Godot提供在导入时压缩3D模型的纹理(VRAM压缩)。 视频RAM压缩在存储时的大小不如"
+"PNG或JPG，但在绘制时极大地提高了性能。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:195
+msgid ""
+"This is because the main goal of texture compression is bandwidth reduction "
+"between memory and the GPU."
+msgstr "这是因为纹理压缩的主要目标是在内存和GPU之间减少带宽。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:198
+#, fuzzy
+msgid ""
+"In 3D, the shapes of objects depend more on the geometry than the texture, "
+"so compression is generally not noticeable. In 2D, compression depends more "
+"on shapes inside the textures, so the artifacts resulting from 2D "
+"compression are more noticeable."
+msgstr ""
+"在3D中，对象的形状更多地取决于几何形状而不是纹理，因此压缩通常不明显。 在2D"
+"中，压缩更多地取决于纹理内部的形状，因此压缩产生的伪像更加明显。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:203
+msgid ""
+"As a warning, most Android devices do not support texture compression of "
+"textures with transparency (only opaque), so keep this in mind."
+msgstr ""
+"作为警告，大多数Android设备不支持具有透明度的纹理的纹理压缩(仅不透明)，因此请"
+"记住这一点。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:207
+#, fuzzy
+msgid "Post processing / shadows"
+msgstr "处理停止。"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:209
+msgid ""
+"Post processing effects and shadows can also be expensive in terms of "
+"fragment shading activity. Always test the impact of these on different "
+"hardware."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:212
+msgid ""
+"Reducing the size of shadow maps can increase performance, both in terms of "
+"writing, and reading the maps."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:216
+#, fuzzy
+msgid "Transparency / blending"
+msgstr "透明"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:218
+msgid ""
+"Transparent items present particular problems for rendering efficiency. "
+"Opaque items (especially in 3d) can be essentially rendered in any order and "
+"the Z-buffer will ensure that only the front most objects get shaded. "
+"Transparent or blended objects are different - in most cases they cannot "
+"rely on the Z-buffer and must be rendered in \"painter's order\" (i.e. from "
+"back to front) in order to look correct."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:225
+msgid ""
+"The transparent items are also particularly bad for fill rate, because every "
+"item has to be drawn, even if later transparent items will be drawn on top."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:228
+msgid ""
+"Opaque items don't have to do this. They can usually take advantage of the Z-"
+"buffer by writing to the Z-buffer only first, then only performing the "
+"fragment shader on the 'winning' fragment, the item that is at the front at "
+"a particular pixel."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:233
+msgid ""
+"Transparency is particularly expensive where multiple transparent items "
+"overlap. It is usually better to use as small a transparent area as possible "
+"in order to minimize these fill rate requirements, especially on mobile, "
+"where fill rate is very expensive. Indeed, in many situations, rendering "
+"more complex opaque geometry can end up being faster than using transparency "
+"to \"cheat\"."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:240
+#, fuzzy
+msgid "Multi-Platform Advice"
+msgstr "多平台游戏"
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:242
+msgid ""
+"If you are aiming to release on multiple platforms, test `early` and test "
+"`often` on all your platforms, especially mobile. Developing a game on "
+"desktop but attempting to port to mobile at the last minute is a recipe for "
+"disaster."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:246
+msgid ""
+"In general you should design your game for the lowest common denominator, "
+"then add optional enhancements for more powerful platforms. For example, you "
+"may want to use the GLES2 backend for both desktop and mobile platforms "
+"where you target both."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:252
+msgid "Mobile / tile renderers"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:254
+msgid ""
+"GPUs on mobile devices work in dramatically different ways from GPUs on "
+"desktop. Most mobile devices use tile renderers. Tile renderers split up the "
+"screen into regular sized tiles that fit into super fast cache memory, and "
+"reduce the reads and writes to main memory."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:259
+msgid ""
+"There are some downsides though, it can make certain techniques much more "
+"complicated and expensive to perform. Tiles that rely on the results of "
+"rendering in different tiles or on the results of earlier operations being "
+"preserved can be very slow. Be very careful to test the performance of "
+"shaders, viewport textures and post processing."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -547,7 +547,6 @@ msgstr ""
 "paramètre et retourne la taille du tableau."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:255
-#, fuzzy
 msgid ""
 "If you use an index below 0 or greater than array size - the shader will "
 "crash and break rendering. To prevent this, use ``length()``, ``if``, or "
@@ -556,13 +555,12 @@ msgid ""
 "expression or a simple number, the editor will check its bounds to prevent "
 "this crash."
 msgstr ""
-"Note : Si vous utilisez un indixe inférieur à 0 ou supérieur à la taille du "
-"tableau - le shader va planter et casser le rendu. Pour éviter cela, "
-"utilisez les fonctions ``length()``, ``if``, ou ``clamp()`` pour vous "
-"assurer que l'index est compris entre 0 et la longueur du tableau. Testez et "
-"vérifiez toujours soigneusement votre code. Si vous passez une expression "
-"constante ou un simple nombre, l'éditeur vérifiera ses limites pour éviter "
-"ce plantage."
+"Si vous utilisez un indice inférieur à 0 ou supérieur à la taille du tableau "
+"- le shader va planter et casser le rendu. Pour éviter cela, utilisez les "
+"fonctions ``length()``, ``if``, ou ``clamp()`` pour vous assurer que l'index "
+"est compris entre 0 et la longueur du tableau. Testez et vérifiez toujours "
+"soigneusement votre code. Si vous passez une expression constante ou un "
+"simple nombre, l'éditeur vérifiera ses limites pour éviter ce plantage."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:258
 msgid "Constants"
@@ -1436,7 +1434,8 @@ msgid "Clamp to ``min..max``"
 msgstr "Fixation(clamp) à ``min..max``"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:666
-msgid "vec_type **mix** (float a, float b, float c)"
+#, fuzzy
+msgid "float **mix** (float a, float b, float c)"
 msgstr "vec_type **mix** (float a, float b, float c)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:666
@@ -1573,8 +1572,8 @@ msgid "vec3 **cross** (vec3 a, vec3 b)"
 msgstr "vec3 **cross** (vec3 a, vec3 b)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:700
-msgid "Cross croduct"
-msgstr "Produit vectoriel"
+msgid "Cross product"
+msgstr "Produit Vectoriel"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:702
 msgid "vec_type **normalize** (vec_type x)"

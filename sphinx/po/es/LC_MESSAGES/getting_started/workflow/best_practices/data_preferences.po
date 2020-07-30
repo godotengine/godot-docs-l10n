@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -257,7 +257,6 @@ msgstr ""
 "ordenado."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
-#, fuzzy
 msgid ""
 "Godot implements Dictionary as an ``OrderedHashMap<Variant, Variant>``. The "
 "engine stores a small array (initialized to 2^3 or 8 records) of key-value "
@@ -269,12 +268,13 @@ msgid ""
 "32, etc.) and rebuilds the structure."
 msgstr ""
 "Godot implementa el Dictionary como un ``OrderedHashMap<Variant, Variant>``. "
-"El motor almacena un array gigante (inicializado a 1000 registros) de pares "
-"clave-valor. Cuando uno intenta acceder a un valor, se entrega una clave. "
-"Por lo tanto, la clave es \"hash\", es decir, se convierte en un número. El "
-"\"hash\" se convierte en el índice del array, lo que permite al OHM una "
-"rápida consulta del valor dentro de la \"tabla\" conceptual de claves "
-"asignadas a valores."
+"El motor almacena un array pequeño (inicializado en 2^3, u 8 registros) de "
+"pares clave-valor. Cuando se intenta acceder a un valor, se provee una "
+"clave. Luego *hashea* la clave, es decir, la convierte a un número. El \"hash"
+"\" es usado para calcular el índice del array. Como array, el OHM puede "
+"hacer una consulta rápida del valor dentro de la \"tabla\" de claves mapeada "
+"a valores. Cuando el HashMap se llena, este incrementa su tamaño en "
+"potencias de 2 (o sea, a 16, luego 32, etc.) y reconstruye la estructura."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:113
 msgid ""
@@ -305,9 +305,8 @@ msgstr ""
 "que lleva a..."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:125
-#, fuzzy
 msgid "Maintaining an ever-growing size for the table."
-msgstr "Manteniendo un gran tamaño para la tabla."
+msgstr "Manteniendo un tamaño siempre creciente para la tabla."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:127
 msgid ""
@@ -315,6 +314,10 @@ msgid ""
 "to reduce hash collisions and maintain the speed of accesses. This is why it "
 "constantly increases in size quadratically by powers of 2."
 msgstr ""
+"Los HashMaps permiten mantener los espacios de memoria no utilizados "
+"intercalados en la tabla a propósito para reducir las colisiones de hash y "
+"mantener la velocidad de los accesos. Es por eso que aumenta constantemente "
+"en tamaño cuadráticamente por potencias de 2."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:132
 msgid ""

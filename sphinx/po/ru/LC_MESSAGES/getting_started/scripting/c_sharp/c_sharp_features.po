@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 14:52+0200\n"
+"POT-Creation-Date: 2020-07-30 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -218,6 +218,8 @@ msgid ""
 "Godot has a set of defines that allow you to change your C# code depending "
 "on the environment you are compiling to."
 msgstr ""
+"Godot имеет набор определений, которые позволяют изменять код C# в "
+"зависимости от среды, в которую вы компилируете."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:179
 msgid ""
@@ -225,6 +227,9 @@ msgid ""
 "regenerate your `csproj` file to use this feature (compare "
 "``<DefineConstants>`` with a new 3.2+ project)."
 msgstr ""
+"Если вы создали свой проект до Godot 3.2, вам придется изменить или "
+"регенерировать свой файл `csproj`, чтобы использовать эту функцию (сравните "
+"``<DefineConstants>`` с новым проектом 3.2+)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:184
 msgid "Examples"
@@ -232,27 +237,31 @@ msgstr "Примеры"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:186
 msgid "For example, you can change code based on the platform:"
-msgstr ""
+msgstr "Например, вы можете изменять код в зависимости от платформы:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:203
 msgid ""
 "Or you can detect which engine your code is in, useful for making cross-"
 "engine libraries:"
 msgstr ""
+"Или вы можете определить, в каком движке будет находиться ваш код, что "
+"полезно для создания кросс-движковых библиотек:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:219
 msgid "Full list of defines"
-msgstr ""
+msgstr "Полный список определений"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:221
 msgid "``GODOT`` is always defined for Godot projects."
-msgstr ""
+msgstr "``GODOT`` всегда объявлен в проектах Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:223
 msgid ""
 "One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the "
 "architecture is 64-bit or 32-bit."
 msgstr ""
+"Один из ``GODOT_64`` или ``GODOT_32`` определяется в зависимости от того, "
+"если архитектура будет 64-bit или 32-bit соответственно."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
 msgid ""
@@ -262,49 +271,65 @@ msgid ""
 "``get_name()`` method of the :ref:``OS <class_OS>`` singleton, but not every "
 "possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
+"Один из ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
+"``GODOT_IOS``, ``GODOT_HTML5``, или ``GODOT_SERVER`` определяется в "
+"зависимости от операционной системы. В будущем эти названия могут "
+"измениться. Они создаются из метода ``get_name()`` синглтона :ref:``OS "
+"<class_OS>``, но не каждая возможная ОС, возвращаемая методом, является ОС, "
+"на которой работает Godot с Mono."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
 "export features:"
 msgstr ""
+"При **экспорте** также могут быть определены следующие параметры в "
+"зависимости от особенностей экспорта:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
 msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
 "platform type."
 msgstr ""
+"Один из ``GODOT_PC``, ``GODOT_MOBILE``, или ``GODOT_WEB`` в зависимости от "
+"типа платформы."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
 "depending on the architecture."
 msgstr ""
+"Один из ``GODOT_ARM64_V8A`` или ``GODOT_ARMEABI_V7A`` на Android только в "
+"зависимости от архитектуры."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
 msgid ""
 "One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
 "architecture."
 msgstr ""
+"Один из ``GODOT_ARM64`` или ``GODOT_ARMV7`` на iOS только в зависимости от "
+"архитектуры."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
 msgid ""
 "Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
+"Любой из ``GODOT_S3TC``, ``GODOT_ETC``, и ``GODOT_ETC2`` в зависимости от "
+"типа сжатия текстур."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
 msgid ""
 "Any custom features added in the export menu will be capitalized and "
 "prefixed: ``foo`` -> ``GODOT_FOO``."
 msgstr ""
+"Любые пользовательские функции, добавленные в меню экспорта, будут написаны "
+"заглавными буквами и с префиксом: ``foo`` -> ``GODOT_FOO``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
-#, fuzzy
 msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
-"В дополнение к этой документации Вы также можете посмотреть на различные "
-"`демонстрационные проекты Godot <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Чтобы увидеть пример проекта, см. демонстрационную версию тестирования ОС: "
+"https://github.com/godotengine/godot-demo-projects/tree/master/misc/os_test"
